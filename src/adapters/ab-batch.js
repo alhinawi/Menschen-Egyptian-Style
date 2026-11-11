@@ -54,7 +54,7 @@ let suppressMeaningUntil=0;viewport.addEventListener('touchend',()=>{if(pinching
 $('#lessonNav').onchange=e=>{const target=e.target.value;const n=Number(target.split('#')[1]);flip.turnToPage(n-78);scrollTo(0,0);viewport.scrollLeft=0;history.replaceState(null,'','#'+n)};
 
 // Self-assessment dots: green / yellow / red per line, one choice stored per row.
-for(const row of document.querySelectorAll('.rateRow')){const key='rate-'+row.dataset.rate;const dots=row.querySelectorAll('.rateDot');const apply=v=>dots.forEach(d=>d.classList.toggle('selected',d.dataset.v===v));if(state[key])apply(state[key]);dots.forEach(d=>d.onclick=()=>{const v=d.dataset.v;const off=row.dataset.rateOn===v;row.dataset.rateOn=off?'':v;apply(off?'':v);if(off)delete state[key];else state[key]=v;save()})}
+
 
 return {persistence:{getState:()=>state,update(values){Object.assign(state,values);save()}},exercise:{options:{rejectBlank:false},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
 
