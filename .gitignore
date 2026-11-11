@@ -6,3 +6,5 @@ node_modules/
 private-source/
 test-results/
 .vercel
+
+dist/
