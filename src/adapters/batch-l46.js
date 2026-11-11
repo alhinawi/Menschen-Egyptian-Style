@@ -9,8 +9,6 @@ function mark(el,ok){el.classList.toggle('answerCorrect',ok);el.classList.toggle
 const normalizeAnswer=s=>s.normalize('NFC').toLocaleLowerCase('de').trim().replace(/[.!?]+$/,'').replace(/\s+/g,' ');
 
 // Click-to-mark words (e.g. souvenirs) with a paired check button.
-for(const b of document.querySelectorAll('.markWord'))b.onclick=()=>b.classList.toggle('selectedVerb');
-for(const btn of document.querySelectorAll('[data-check-marks]')){const group=document.querySelector(btn.dataset.checkMarks);btn.onclick=()=>{let ok=true;group.querySelectorAll('.markWord').forEach(b=>{const correct=b.classList.contains('selectedVerb')===(b.dataset.target==='true');if(b.classList.contains('selectedVerb')||b.dataset.target==='true')mark(b,correct);else b.classList.remove('answerCorrect','answerWrong');ok&&=correct});tone(ok);announce(ok);state['done-'+group.id]=ok;save();updateProgress()}}
 function updateProgress(){$('#progress').textContent=Object.entries(state).filter(([k,v])=>k.startsWith('done-')&&v).length+' ✓'}updateProgress();
 
 const soundButton=$('.soundToggle');function soundText(){soundButton.dataset.soundOn=String(soundsOn)}soundText();soundButton.onclick=()=>{soundsOn=!soundsOn;if(soundsOn)unlockBookAudio();state.sounds=soundsOn;save();soundText()};
