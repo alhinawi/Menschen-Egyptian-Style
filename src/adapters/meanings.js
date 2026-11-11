@@ -1,7 +1,9 @@
+import {serviceLifecycle} from './lifecycle';
 import {flushSync} from 'react-dom';
 import {selectionStore} from '../meanings/selectionStore';
 import {meaningStore} from '../meanings/meaningStore';
 export default function mount(){
+const lifecycle=serviceLifecycle(),setTimeout=lifecycle.timeout,requestAnimationFrame=lifecycle.frame;
 /* Local Egyptian Arabic meanings. Pronunciation plays only after a learner taps. */
 return(()=>{
 const names={nicole:'نيكول',paco:'باكو',winfried:'ڤينفريد',wachter:'ڤاختر',rodriguez:'رودريجز',ewa:'إيڤا',wolska:'ڤولسكا',angela:'أنجيلا',merkel:'ميركل',wolfgang:'ڤولفجانج',amadeus:'أماديوس',mozart:'موتسارت',johann:'يوهان',von:'من / ڤون في الأسامي',goethe:'جوته',cleopatra:'كليوباترا',agatha:'أجاثا',christie:'كريستي',mahatma:'مهاتما',gandhi:'غاندي',pablo:'بابلو',picasso:'بيكاسو',mutter:'أم',teresa:'تريزا',riemann:'ريمان',nathalie:'ناتالي',valerie:'ڤاليري',wulf:'ڤولف'};
@@ -68,7 +70,7 @@ const translateSelection=()=>{const text=chosen;selectionStore.update({actionHid
 selectionStore.connect({toggleMode,toggleSelection,translate:translateSelection});
 const stage=document.querySelector('#pageStage');stage.addEventListener('click',e=>{if(selecting)return;const word=e.target.closest('.tapWord'),sentence=e.target.closest('.tapSentence');if(!word&&!sentence)return;e.stopPropagation();if(tapMode==='sentence'||!word)open(word?.dataset.word,sentence?.dataset.phrase||word.dataset.phrase,'sentence');else open(word.dataset.word,sentence?.dataset.phrase||word.dataset.phrase,'word')});stage.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('.tapWord,.tapSentence')){e.preventDefault();e.stopPropagation();e.target.click()}});for(const span of document.querySelectorAll('.tapWord,.tapSentence'))for(const type of ['mousedown','touchstart'])span.addEventListener(type,e=>e.stopPropagation());
 };
-return()=>{activeAudio.pause();activeAudio.removeAttribute('src');meaningStore.connect({});selectionStore.connect({});delete window.openBookMeaning;delete window.initMeanings};
+return()=>{lifecycle.dispose();activeAudio.onended=null;activeAudio.pause();activeAudio.removeAttribute('src');meaningStore.connect({});selectionStore.connect({});delete window.openBookMeaning;delete window.initMeanings};
 })();
 
 }

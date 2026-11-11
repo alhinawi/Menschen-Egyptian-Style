@@ -1,6 +1,6 @@
 # React migration
 
-Status: in progress on `react-migration`. Main and production are unchanged.
+Status: functional React migration on `react-migration`, verified locally. Main and production are unchanged. The milestones below are a chronological implementation log, not outstanding-task lists.
 
 ## Stack
 
@@ -63,3 +63,14 @@ React now owns L1's three standalone checks, click-to-mark verb/souvenir tasks, 
 ## Reader extras milestone
 
 AB13's generated word bank and AB10-12 self-assessment ratings are native React components. Rating select/clear state survives reload. Page choices for AB13-16 are structured data. Audio triggers, cover opening, palette/audio toggles and canvas toolbar clicks now enter through React event handlers and call the existing low-level services. Dedicated word-bank/rating tests and the original suites pass. The standalone build runs from `dist`; the unchanged legacy `vercel.json` still disables builds and serves the repository root. A future approved deployment must explicitly select `npm run build` and `dist`. Do not publish the root shells as if they were a built app.
+
+
+## Final service boundary and verification
+
+React owns all 26 document routes, immutable printed content, reader controls, themes, translation dialogs, exercises, saved fields, custom marking/pick/word-bank tasks, scan practice/vocabulary/original dialogs and self-rating UI. The patched PageFlip library, fold gestures, DOM text-range/artwork geometry, canvas drawing, audio playback and completion effects stay in small lifecycle-mounted services. This is not an iframe wrapper and does not evaluate page scripts at runtime.
+
+Service-owned timers and animation frames are canceled on disposal, including work scheduled after mount. Audio contexts close, active meaning audio stops, event listeners installed during service initialization are removed, and disposal is idempotent. Existing full-document navigation remains deliberate. This is not a claim that hot-swapping a lesson inside an existing React tree is supported; that would require a separate DOM-island/remount test.
+
+Run `npm run build`, `npm test`, then `npm run test:react:all`. The last command runs asset checks, lifecycle tests, all-route smoke, native exercise/custom task checks, Arabic/audio checks, eight original four-width suites and touch/paper-sound regressions. For a quick check, `npm run test:react` runs the L1 four-width smoke suite.
+
+Deployment is not part of this branch's execution approval. The legacy `vercel.json` is unchanged. Do not merge into main or deploy until the owner explicitly approves the cutover and its build/output settings.

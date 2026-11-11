@@ -1,4 +1,6 @@
+import {serviceLifecycle} from './lifecycle';
 export default function mount(){
+const lifecycle=serviceLifecycle(),setTimeout=lifecycle.timeout;
 const $=s=>document.querySelector(s),stage=$('#pageStage'),spread=$('#spread'),viewport=$('#viewport');
 let state={};try{state=JSON.parse(localStorage.getItem('menschen-book-ab-a11-module1')||'{}')}catch{};const save=()=>{try{localStorage.setItem('menschen-book-ab-a11-module1',JSON.stringify(state))}catch{}};
 let audioContext,soundsOn=state.sounds!==false;function tone(correct){if(!soundsOn)return;try{audioContext||=new(window.AudioContext||window.webkitAudioContext)();audioContext.resume();const t=audioContext.currentTime;(correct?[659.25,880]:[293.66,261.63]).forEach((frequency,i)=>{const o=audioContext.createOscillator(),g=audioContext.createGain();o.type='sine';o.frequency.value=frequency;g.gain.setValueAtTime(0,t+i*.12);g.gain.linearRampToValueAtTime(.075,t+i*.12+.025);g.gain.exponentialRampToValueAtTime(.001,t+i*.12+.24);o.connect(g);g.connect(audioContext.destination);o.start(t+i*.12);o.stop(t+i*.12+.26)})}catch{}}
@@ -55,6 +57,6 @@ $('#lessonNav').onchange=e=>location.href=e.target.value;
 
 for(const f of document.querySelectorAll(".batchQuiz"))if(!f.querySelector("[data-answer]"))f.onsubmit=e=>e.preventDefault();
 
-return {persistence:{getState:()=>state,update(values){Object.assign(state,values);save()}},exercise:{options:{rejectBlank:false},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
+return {dispose(){lifecycle.dispose();clearTimeout(toastTimeout);audioContext?.close?.().catch(()=>{})},persistence:{getState:()=>state,update(values){Object.assign(state,values);save()}},exercise:{options:{rejectBlank:false},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
 
 }
