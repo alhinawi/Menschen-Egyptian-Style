@@ -1,4 +1,6 @@
+import {serviceLifecycle} from './lifecycle';
 export default function mount(){
+const lifecycle=serviceLifecycle(),setTimeout=lifecycle.timeout;
 /* Engine for Kursbuch A1.1, lessons 4-6 and module 2. Same patterns as batch.js, own storage key and hash offset. */
 const $=s=>document.querySelector(s),stage=$('#pageStage'),spread=$('#spread'),viewport=$('#viewport');
 let state={};try{state=JSON.parse(localStorage.getItem('menschen-book-kb-a11-4-6')||'{}')}catch{};const save=()=>{try{localStorage.setItem('menschen-book-kb-a11-4-6',JSON.stringify(state))}catch{}};
@@ -58,6 +60,6 @@ if(state.glassesPaint){const im=new Image();im.onload=()=>ctx.drawImage(im,0,0);
 function point(e){const r=canvas.getBoundingClientRect();return [(e.clientX-r.left)*canvas.width/r.width,(e.clientY-r.top)*canvas.height/r.height]}
 canvas.onpointerdown=e=>{e.preventDefault();canvas.setPointerCapture(e.pointerId);drawing=true;ctx.beginPath();ctx.moveTo(...point(e));};canvas.onpointermove=e=>{if(!drawing)return;e.preventDefault();ctx.lineTo(...point(e));ctx.stroke()};const stop=()=>{if(!drawing)return;drawing=false;state.glassesPaint=canvas.toDataURL();save()};canvas.onpointerup=stop;canvas.onpointercancel=stop;$('#clearGlasses').onclick=()=>{ctx.clearRect(0,0,canvas.width,canvas.height);delete state.glassesPaint;save()};}
 
-return {persistence:{getState:()=>state,update(values){Object.assign(state,values);save()}},exercise:{options:{rejectBlank:true},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
+return {dispose(){lifecycle.dispose();clearTimeout(toastTimeout);audioContext?.close?.().catch(()=>{})},persistence:{getState:()=>state,update(values){Object.assign(state,values);save()}},exercise:{options:{rejectBlank:true},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
 
 }

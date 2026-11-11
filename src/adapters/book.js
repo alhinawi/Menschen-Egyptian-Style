@@ -1,4 +1,6 @@
+import {serviceLifecycle} from './lifecycle';
 export default function mount(){
+const lifecycle=serviceLifecycle(),setTimeout=lifecycle.timeout;
 // The printed page order and picture layout remain intact. Controls are live HTML.
 const $=s=>document.querySelector(s),stage=$('#pageStage'),spread=$('#spread'),viewport=$('#viewport');
 const origin=['Woher kommst du? Aus Spanien?','Nein, ich komme aus Mexiko.','Du kommst aus Deutschland, hm?','Aus der Schweiz?','Ich komme aus Österreich.'];
@@ -58,6 +60,6 @@ let suppressMeaningUntil=0;viewport.addEventListener('touchend',()=>{if(pinching
 document.querySelector(".coverOpen").onclick=()=>turn(1);
 window.addEventListener('hashchange',()=>{const h=location.hash.slice(1);if(h==='cover')flip.turnToPage(0);else if(Number(h)>=9&&Number(h)<=12)flip.turnToPage(Number(h)-8)});
 
-return {persistence:{getState:()=>state,update(values){Object.assign(state,values);save()}},exercise:{options:{lessonOne:true,speakerAnswers},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
+return {dispose(){lifecycle.dispose();clearTimeout(toastTimeout);audioContext?.close?.().catch(()=>{})},persistence:{getState:()=>state,update(values){Object.assign(state,values);save()}},exercise:{options:{lessonOne:true,speakerAnswers},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
 
 }

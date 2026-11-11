@@ -1,4 +1,6 @@
+import {serviceLifecycle} from './lifecycle';
 export default function mount(){
+const lifecycle=serviceLifecycle(),setTimeout=lifecycle.timeout;
 const $=s=>document.querySelector(s),stage=$('#pageStage'),spread=$('#spread'),viewport=$('#viewport');
 let state={};try{state=JSON.parse(localStorage.getItem('menschen-book-kb-a12-21-24')||'{}')}catch{};const save=()=>{try{localStorage.setItem('menschen-book-kb-a12-21-24',JSON.stringify(state))}catch{}};
 let audioContext,soundsOn=state.sounds!==false;function tone(correct){if(!soundsOn)return;try{audioContext||=new(window.AudioContext||window.webkitAudioContext)();audioContext.resume();const t=audioContext.currentTime;(correct?[659.25,880]:[293.66,261.63]).forEach((frequency,i)=>{const o=audioContext.createOscillator(),g=audioContext.createGain();o.type='sine';o.frequency.value=frequency;g.gain.setValueAtTime(0,t+i*.12);g.gain.linearRampToValueAtTime(.075,t+i*.12+.025);g.gain.exponentialRampToValueAtTime(.001,t+i*.12+.24);o.connect(g);g.connect(audioContext.destination);o.start(t+i*.12);o.stop(t+i*.12+.26)})}catch{}}
@@ -56,6 +58,6 @@ function jumpPrinted(n){const i=pages.findIndex(p=>p.dataset.page===String(n));i
 document.querySelectorAll('[data-jump]').forEach(a=>a.onclick=e=>{e.preventDefault();jumpPrinted(a.dataset.jump)});window.addEventListener('hashchange',()=>jumpPrinted(location.hash.slice(1)));
 for(const c of document.querySelectorAll('.freeDraw')){const key='draw-'+c.dataset.draw,ctx=c.getContext('2d');ctx.lineWidth=3;ctx.lineCap='round';ctx.strokeStyle='#255b80';if(state[key]){const img=new Image();img.onload=()=>ctx.drawImage(img,0,0);img.src=state[key]}let active=false;const point=e=>{const r=c.getBoundingClientRect();return[(e.clientX-r.left)*c.width/r.width,(e.clientY-r.top)*c.height/r.height]};c.onpointerdown=e=>{e.preventDefault();e.stopPropagation();c.setPointerCapture(e.pointerId);active=true;ctx.beginPath();ctx.moveTo(...point(e))};c.onpointermove=e=>{if(!active)return;e.preventDefault();ctx.lineTo(...point(e));ctx.stroke()};const stop=()=>{if(!active)return;active=false;state[key]=c.toDataURL();save()};c.onpointerup=stop;c.onpointercancel=stop;document.querySelector('[data-clear="'+c.dataset.draw+'"]').onclick=()=>{ctx.clearRect(0,0,c.width,c.height);delete state[key];save()}}
 
-return {persistence:{getState:()=>state,update(values){Object.assign(state,values);save()}},exercise:{options:{rejectBlank:false},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
+return {dispose(){lifecycle.dispose();clearTimeout(toastTimeout);audioContext?.close?.().catch(()=>{})},persistence:{getState:()=>state,update(values){Object.assign(state,values);save()}},exercise:{options:{rejectBlank:false},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
 
 }
