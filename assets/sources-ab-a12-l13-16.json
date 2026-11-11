@@ -1,0 +1,19 @@
+{
+ "part": "Menschen A1.2 Arbeitsbuch · Lektion 13-16 (Modul 5)",
+ "printedPages": "6-35",
+ "scanChunk": {
+  "file": "ab12-p5-40-1c2b02c3.pdf",
+  "note": "global PDF pages 5-40; printed page = chunk page + 2"
+ },
+ "answers": [
+  "16 AB-A1-2 Lsg.pdf (official Hueber Lösungsschlüssel)",
+  "15 AB-A1-2 Trans.pdf (official transcripts)",
+  "ab12-p107-112-3b81cc50.pdf (Lösungsschlüssel zu den Tests)"
+ ],
+ "audio": {
+  "folder": "Drive 1hh0YMSHIZ-42jc0z_gmfBFzB6k56a5J0 (3asfuur@gmail.com)",
+  "files": "Track02-Track17 → assets/ab-a12-cd2-trackNN.mp3; printed marker ▶2 NN = TrackNN"
+ },
+ "crops": "assets/book-crops/ab12-*.png cropped from scan renders at 150dpi",
+ "missing": "none — no films or audio missing in this range"
+}
