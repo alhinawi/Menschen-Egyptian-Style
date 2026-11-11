@@ -55,3 +55,7 @@ Translation-mode, native text-selection mode and selected-text action buttons ar
 ## Printed markup milestone
 
 The original L1 generated tables, all 30 scan-backed workbook page sections, page choices and cover social icons are now structured React content/components. Application source no longer uses `innerHTML`, `outerHTML`, `insertAdjacentHTML` or runtime `eval` (the preserved PageFlip library is excluded from that source audit). Original assets, contact destinations and labels are unchanged. All-route smoke, 17-engine grading, eight legacy suites, selected-text/audio and native gesture/paper-sound checks pass. Full-document navigation remains intentional; the fold and text-geometry services still own their documented DOM islands.
+
+## Custom task milestone
+
+React now owns L1's three standalone checks, click-to-mark verb/souvenir tasks, all 12 AB7-9 pick groups and KB2-3 marking/explanation mode buttons. The original storage/progress/audio effects are called through the quiz service bridge. A new custom-task suite tests wrong/correct answers, required picks, native marks and KB2-3 mark persistence. Multi-pick groups now treat their existing empty `data-multi` attribute as a boolean attribute, fixing the old truthiness check that blocked selecting several required answers. The eight original suites and phone gesture/audio suites remain green. All 8,523 original asset files match their built copies byte for byte; original assets, styles and hosting configuration are unchanged from the backup.

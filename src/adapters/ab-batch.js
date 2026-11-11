@@ -7,9 +7,6 @@ function mark(el,ok){el.classList.toggle('answerCorrect',ok);el.classList.toggle
 
 const normalizeAnswer=s=>s.normalize('NFC').toLocaleLowerCase('de').trim().replace(/[.!?]+$/,'').replace(/\s+/g,' ');
 
-for(const b of document.querySelectorAll('.verbWord'))b.onclick=()=>b.classList.toggle('selectedVerb');
-const checkVerbs=document.querySelector('[data-check-verbs]');
-if(checkVerbs)checkVerbs.onclick=()=>{let ok=true;document.querySelectorAll('.verbWord').forEach(b=>{const correct=b.classList.contains('selectedVerb')===(b.dataset.verb==='true');if(b.classList.contains('selectedVerb')||b.dataset.verb==='true')mark(b,correct);else b.classList.remove('answerCorrect','answerWrong');ok&&=correct});tone(ok);announce(ok);state['done-verbs']=ok;save();updateProgress()};
 function updateProgress(){$('#progress').textContent=Object.entries(state).filter(([k,v])=>k.startsWith('done-')&&v).length+' ✓'}updateProgress();
 
 const soundButton=$('.soundToggle');function soundText(){soundButton.dataset.soundOn=String(soundsOn)}soundText();soundButton.onclick=()=>{soundsOn=!soundsOn;if(soundsOn)unlockBookAudio();state.sounds=soundsOn;save();soundText()};
