@@ -1,0 +1,282 @@
+{
+  "book": "Menschen A1.2 Kursbuch",
+  "branch": "preview/kb-a12-l21-24-actions",
+  "scan_mapping": [
+    {
+      "printed": 49,
+      "pdf_global": 51,
+      "chunk": "kb12-p50-61.pdf",
+      "chunk_page": 2
+    },
+    {
+      "printed": 50,
+      "pdf_global": 52,
+      "chunk": "kb12-p50-61.pdf",
+      "chunk_page": 3
+    },
+    {
+      "printed": 51,
+      "pdf_global": 53,
+      "chunk": "kb12-p50-61.pdf",
+      "chunk_page": 4
+    },
+    {
+      "printed": 52,
+      "pdf_global": 54,
+      "chunk": "kb12-p50-61.pdf",
+      "chunk_page": 5
+    },
+    {
+      "printed": 53,
+      "pdf_global": 55,
+      "chunk": "kb12-p50-61.pdf",
+      "chunk_page": 6
+    },
+    {
+      "printed": 54,
+      "pdf_global": 56,
+      "chunk": "kb12-p50-61.pdf",
+      "chunk_page": 7
+    },
+    {
+      "printed": 55,
+      "pdf_global": 57,
+      "chunk": "kb12-p50-61.pdf",
+      "chunk_page": 8
+    },
+    {
+      "printed": 56,
+      "pdf_global": 58,
+      "chunk": "kb12-p50-61.pdf",
+      "chunk_page": 9
+    },
+    {
+      "printed": 57,
+      "pdf_global": 59,
+      "chunk": "kb12-p50-61.pdf",
+      "chunk_page": 10
+    },
+    {
+      "printed": 58,
+      "pdf_global": 60,
+      "chunk": "kb12-p50-61.pdf",
+      "chunk_page": 11
+    },
+    {
+      "printed": 59,
+      "pdf_global": 61,
+      "chunk": "kb12-p50-61.pdf",
+      "chunk_page": 12
+    },
+    {
+      "printed": 60,
+      "pdf_global": 62,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 1
+    },
+    {
+      "printed": 61,
+      "pdf_global": 63,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 2
+    },
+    {
+      "printed": 62,
+      "pdf_global": 64,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 3
+    },
+    {
+      "printed": 63,
+      "pdf_global": 65,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 4
+    },
+    {
+      "printed": 64,
+      "pdf_global": 66,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 5
+    },
+    {
+      "printed": 65,
+      "pdf_global": 67,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 6
+    },
+    {
+      "printed": 66,
+      "pdf_global": 68,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 7
+    },
+    {
+      "printed": 67,
+      "pdf_global": 69,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 8
+    },
+    {
+      "printed": 68,
+      "pdf_global": 70,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 9
+    },
+    {
+      "printed": 69,
+      "pdf_global": 71,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 10
+    },
+    {
+      "printed": 70,
+      "pdf_global": 72,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 11
+    },
+    {
+      "printed": 71,
+      "pdf_global": 73,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 12
+    },
+    {
+      "printed": 72,
+      "pdf_global": 74,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 13
+    },
+    {
+      "printed": 73,
+      "pdf_global": 75,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 14
+    },
+    {
+      "printed": 75,
+      "pdf_global": 76,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 15
+    },
+    {
+      "printed": 76,
+      "pdf_global": 77,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 16
+    },
+    {
+      "printed": 77,
+      "pdf_global": 78,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 17
+    },
+    {
+      "printed": 78,
+      "pdf_global": 79,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 18
+    },
+    {
+      "printed": 79,
+      "pdf_global": 80,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 19
+    },
+    {
+      "printed": 80,
+      "pdf_global": 81,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 20
+    },
+    {
+      "printed": 81,
+      "pdf_global": 82,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 21
+    },
+    {
+      "printed": 82,
+      "pdf_global": 83,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 22
+    },
+    {
+      "printed": 83,
+      "pdf_global": 84,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 23
+    },
+    {
+      "printed": 84,
+      "pdf_global": 85,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 24
+    },
+    {
+      "printed": 85,
+      "pdf_global": 86,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 25
+    },
+    {
+      "printed": 86,
+      "pdf_global": 87,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 26
+    },
+    {
+      "printed": 87,
+      "pdf_global": 88,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 27
+    },
+    {
+      "printed": 88,
+      "pdf_global": 89,
+      "chunk": "kb12-p62-99.pdf",
+      "chunk_page": 28
+    }
+  ],
+  "skipped": [
+    74
+  ],
+  "answer_sources": {
+    "L21": "10 msn-unterrichtsplan-L21.pdf, pages 1-2",
+    "L22": "11 msn-unterrichtsplan-L22.pdf, pages 1-5",
+    "L23": "12 msn-unterrichtsplan-L23.pdf",
+    "L24": "13 msn-unterrichtsplan-L24.pdf",
+    "Module7-DJ": "Printed reading text page 55",
+    "Module8-reading": "Printed reading text page 69",
+    "Action79": "Printed calendar page 79; prepositions derived from calendar and prompt"
+  },
+  "original_audio": [
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "missing_media": [
+    "Film clips 19-24"
+  ],
+  "unscored": [
+    "All film exercises: no video/official solution supplied",
+    "Song page 72: compare to original CD3.47",
+    "Open speaking, drawing, role-play and writing tasks"
+  ],
+  "notes": [
+    "Page 69 retains the historical textbook opinions and diagram, not a current climate data report.",
+    "Original source contains 125 years for 1890-2005; retained faithfully despite arithmetic mismatch."
+  ]
+}
