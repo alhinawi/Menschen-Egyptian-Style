@@ -11,7 +11,7 @@ for(const b of document.querySelectorAll('.verbWord'))b.onclick=()=>b.classList.
 const checkVerbs=document.querySelector('[data-check-verbs]');
 if(checkVerbs)checkVerbs.onclick=()=>{let ok=true;document.querySelectorAll('.verbWord').forEach(b=>{const correct=b.classList.contains('selectedVerb')===(b.dataset.verb==='true');if(b.classList.contains('selectedVerb')||b.dataset.verb==='true')mark(b,correct);else b.classList.remove('answerCorrect','answerWrong');ok&&=correct});tone(ok);announce(ok);state['done-verbs']=ok;save();updateProgress()};
 function updateProgress(){$('#progress').textContent=Object.entries(state).filter(([k,v])=>k.startsWith('done-')&&v).length+' ✓'}updateProgress();
-for(const [i,el] of [...document.querySelectorAll('input,select,textarea')].filter(e=>e.id!=='pageJump').entries()){const key=el.dataset.note||'field-'+i;if(el.type==='radio')el.checked=state[key]===true;else if(state[key]!==undefined)el.value=state[key];el.addEventListener('input',()=>{state[key]=el.type==='radio'?el.checked:el.value;if(el.type==='radio')document.querySelectorAll(`input[name="${el.name}"]`).forEach(peer=>{if(peer!==el)state['field-'+[...document.querySelectorAll('input,select,textarea')].filter(e=>e.id!=='pageJump').indexOf(peer)]=false});save()})}
+
 const soundButton=$('.soundToggle');function soundText(){soundButton.dataset.soundOn=String(soundsOn)}soundText();soundButton.onclick=()=>{soundsOn=!soundsOn;if(soundsOn)unlockBookAudio();state.sounds=soundsOn;save();soundText()};
 function palette(n){document.body.dataset.palette=n;document.querySelectorAll('.paletteButton').forEach(b=>b.classList.toggle('selected',b.dataset.palette===n));state.palette=n;save()}palette(state.palette||'1');document.querySelectorAll('.paletteButton').forEach(b=>b.onclick=()=>palette(b.dataset.palette));
 const pages=[...document.querySelectorAll('.page')];pages.forEach(p=>{p.hidden=false;p.dataset.density='soft'});let pageIndex=0,scale=1;
@@ -59,6 +59,6 @@ $('#lessonNav').onchange=e=>{const target=e.target.value;const n=Number(target.s
 // Self-assessment dots: green / yellow / red per line, one choice stored per row.
 for(const row of document.querySelectorAll('.rateRow')){const key='rate-'+row.dataset.rate;const dots=row.querySelectorAll('.rateDot');const apply=v=>dots.forEach(d=>d.classList.toggle('selected',d.dataset.v===v));if(state[key])apply(state[key]);dots.forEach(d=>d.onclick=()=>{const v=d.dataset.v;const off=row.dataset.rateOn===v;row.dataset.rateOn=off?'':v;apply(off?'':v);if(off)delete state[key];else state[key]=v;save()})}
 
-return {exercise:{options:{rejectBlank:false},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
+return {persistence:{getState:()=>state,update(values){Object.assign(state,values);save()}},exercise:{options:{rejectBlank:false},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
 
 }

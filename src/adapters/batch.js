@@ -10,7 +10,7 @@ const normalizeAnswer=s=>s.normalize('NFC').toLocaleLowerCase('de').trim().repla
 for(const b of document.querySelectorAll('.verbWord'))b.onclick=()=>b.classList.toggle('selectedVerb');
 const checkVerbs=document.querySelector('[data-check-verbs]');checkVerbs.onclick=()=>{let ok=true;document.querySelectorAll('.verbWord').forEach(b=>{const correct=b.classList.contains('selectedVerb')===(b.dataset.verb==='true');if(b.classList.contains('selectedVerb')||b.dataset.verb==='true')mark(b,correct);else b.classList.remove('answerCorrect','answerWrong');ok&&=correct});tone(ok);announce(ok);state['done-verbs']=ok;save();updateProgress()};
 function updateProgress(){$('#progress').textContent=Object.entries(state).filter(([k,v])=>k.startsWith('done-')&&v).length+' ✓'}updateProgress();
-for(const [i,el] of [...document.querySelectorAll('input,select,textarea')].filter(e=>e.id!=='pageJump').entries()){const key=el.dataset.note||'field-'+i;if(el.type==='radio')el.checked=state[key]===true;else if(state[key]!==undefined)el.value=state[key];el.addEventListener('input',()=>{state[key]=el.type==='radio'?el.checked:el.value;if(el.type==='radio')document.querySelectorAll(`input[name="${el.name}"]`).forEach(peer=>{if(peer!==el)state['field-'+[...document.querySelectorAll('input,select,textarea')].filter(e=>e.id!=='pageJump').indexOf(peer)]=false});save()})}
+
 const soundButton=$('.soundToggle');function soundText(){soundButton.dataset.soundOn=String(soundsOn)}soundText();soundButton.onclick=()=>{soundsOn=!soundsOn;state.sounds=soundsOn;save();soundText()};
 function palette(n){document.body.dataset.palette=n;document.querySelectorAll('.paletteButton').forEach(b=>b.classList.toggle('selected',b.dataset.palette===n));state.palette=n;save()}palette(state.palette||'1');document.querySelectorAll('.paletteButton').forEach(b=>b.onclick=()=>palette(b.dataset.palette));
 const pages=[...document.querySelectorAll('.page')];pages.forEach(p=>{p.hidden=false;p.dataset.density='soft'});let pageIndex=0,scale=1;
@@ -70,6 +70,6 @@ verbText.addEventListener('click',e=>{if(document.body.dataset.textSelection==='
 // The screenplay can be marked without confusing a mark with a translation tap.
 const screenplay=document.querySelector('.screenplay'),scriptMode=document.createElement('button');scriptMode.type='button';scriptMode.className='check';scriptMode.textContent='Verben markieren: aus';screenplay.prepend(scriptMode);let markScript=false;scriptMode.onclick=()=>{markScript=!markScript;scriptMode.textContent='Verben markieren: '+(markScript?'an':'aus')};screenplay.addEventListener('click',e=>{if(!markScript||e.target===scriptMode)return;const word=e.target.closest('.tapWord');if(word){e.stopImmediatePropagation();e.preventDefault();word.classList.toggle('selectedVerb')}},{capture:true});
 
-return {exercise:{options:{rejectBlank:false},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
+return {persistence:{getState:()=>state,update(values){Object.assign(state,values);save()}},exercise:{options:{rejectBlank:false},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
 
 }
