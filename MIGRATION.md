@@ -74,3 +74,9 @@ Service-owned timers and animation frames are canceled on disposal, including wo
 Run `npm run build`, `npm test`, then `npm run test:react:all`. The last command runs asset checks, lifecycle tests, all-route smoke, native exercise/custom task checks, Arabic/audio checks, eight original four-width suites and touch/paper-sound regressions. For a quick check, `npm run test:react` runs the L1 four-width smoke suite.
 
 Deployment is not part of this branch's execution approval. The legacy `vercel.json` is unchanged. Do not merge into main or deploy until the owner explicitly approves the cutover and its build/output settings.
+
+## Prepared production cutover (not yet executed)
+
+The `react/production-cutover` branch adds explicit Vercel settings: Vite, `npm ci`, `npm run build`, output `dist`. It retains the noindex header and disables automatic Git deployments for this preparation branch only. Main stays enabled so the eventual approved PR merge produces one production deployment. Do not also call the deployment API/CLI or click Redeploy for that same merge. Wait for the Git-triggered deployment, then verify its source SHA, READY state, domain assignment and live phone routes/audio/exercises. If the automatic deployment does not appear, inspect the Git checks and deployment list before considering a fallback; never launch a second deployment blindly.
+
+The retained project `menschen-egyptian-style` (`prj_qqHhSLyMZg262HpxERjIHKGag5ld`) owns the verified `almany.vercel.app` domain and tracks main. During preparation on November11 the production alias still referenced `dpl_2pDN4weMFibbDmE46gkDpezPikzn`. No alias or project settings were changed. The cutover PR must not merge until the parent resumes execution after the deployment-limit reset.
