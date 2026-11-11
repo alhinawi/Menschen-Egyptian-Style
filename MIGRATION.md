@@ -59,3 +59,7 @@ The original L1 generated tables, all 30 scan-backed workbook page sections, pag
 ## Custom task milestone
 
 React now owns L1's three standalone checks, click-to-mark verb/souvenir tasks, all 12 AB7-9 pick groups and KB2-3 marking/explanation mode buttons. The original storage/progress/audio effects are called through the quiz service bridge. A new custom-task suite tests wrong/correct answers, required picks, native marks and KB2-3 mark persistence. Multi-pick groups now treat their existing empty `data-multi` attribute as a boolean attribute, fixing the old truthiness check that blocked selecting several required answers. The eight original suites and phone gesture/audio suites remain green. All 8,523 original asset files match their built copies byte for byte; original assets, styles and hosting configuration are unchanged from the backup.
+
+## Reader extras milestone
+
+AB13's generated word bank and AB10-12 self-assessment ratings are native React components. Rating select/clear state survives reload. Page choices for AB13-16 are structured data. Audio triggers, cover opening, palette/audio toggles and canvas toolbar clicks now enter through React event handlers and call the existing low-level services. Dedicated word-bank/rating tests and the original suites pass. The standalone build runs from `dist`; the unchanged legacy `vercel.json` still disables builds and serves the repository root. A future approved deployment must explicitly select `npm run build` and `dist`. Do not publish the root shells as if they were a built app.
