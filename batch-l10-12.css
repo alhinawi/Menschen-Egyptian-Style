@@ -109,3 +109,80 @@
 .dense .festBox img{height:100px}
 .dense .fotoRow img{height:100px}
 .dense .igelGrid .igel{font-size:14px}
+/* Density fixes measured at 390px width, zoom 1 (page height 1515). */
+.p58 .batchBody,.p59 .batchBody,.p63 .batchBody,.p64 .batchBody,.p66 .batchBody{padding-top:10px;padding-bottom:50px}
+.p58 .batchBody>h2,.p59 .batchBody>h2,.p63 .batchBody>h2,.p64 .batchBody>h2,.p66 .batchBody>h2{margin-top:10px;font-size:16px;margin-bottom:6px}
+.p58 .strip{height:70px}
+.p58 .instruction,.p59 .instruction,.p63 .instruction,.p64 .instruction,.p66 .instruction,.p70 .instruction{font-size:13px!important;margin:4px 0!important}
+.p58 .grammar,.p59 .grammar,.p64 .grammar,.p66 .grammar{font-size:13px;margin:3px 0}
+.p58 .grammar td,.p59 .grammar td,.p64 .grammar td,.p66 .grammar td{padding:2px 3px}
+.p58 .assign,.p66 .assign{font-size:13px;padding:2px 0}
+.p58 .assign select,.p66 .assign select{font-size:12px}
+.p58 .bookLines,.p59 .bookLines,.p64 .bookLines,.p66 .bookLines{font-size:13px;line-height:1.3;margin:4px 0 5px 14px}
+.p58 .wordbank,.p59 .wordbank,.p64 .wordbank,.p66 .wordbank{font-size:13px;margin:4px 0}
+.p58 .listen,.p59 .listen,.p66 .listen{margin-bottom:3px}
+.p58 .check,.p59 .check,.p63 .check,.p64 .check,.p66 .check,.p70 .check{margin-top:3px}
+.p58 .fotoRow img,.p59 .fotoRow img{height:60px}
+.p58 .cols2,.p59 .cols2,.p64 .cols2,.p66 .cols2{gap:10px}
+.p58 .batchBody p,.p59 .batchBody p,.p63 .batchBody p,.p66 .batchBody p{font-size:13px;margin:4px 0;line-height:1.35}
+.p59 .igelGrid .igel{font-size:12px;padding:3px 5px}
+.p59 .igelGrid{gap:4px 6px;margin:4px 0}
+.p59 .miniDialog,.p58 .miniDialog,.p64 .miniDialog,.p66 .miniDialog{font-size:12px;padding:4px 8px;margin:4px 0}
+.p59 .fotoRow{gap:5px;margin:4px 0}
+.p59 img{max-height:90px;object-fit:contain}
+.p63 .emails .emailCard{padding:6px 9px;margin:4px 0}
+.p63 .emailCard p{font-size:13px;line-height:1.35;margin:3px 0}
+.p63 .emailSubject{padding-bottom:2px;font-size:13px}
+.p63 .communication{font-size:13px;padding:5px}
+.p64 .notes{min-height:30px;height:34px;font-size:13px}
+.p64 .profile{padding:5px 9px;margin:4px 0 8px}
+.p64 .profile p{font-size:13px;line-height:1.35}
+.p64 .profile h3{font-size:17px;margin-bottom:4px}
+.p66 .festGrid{gap:6px;margin:4px 0}
+.p66 .festBox{padding:4px}
+.p66 .festBox img{height:55px}
+.p66 .festBox p{font-size:12px;margin:2px 0;line-height:1.3}
+.p66 .fotoRow img{height:60px}
+.p66 .seasonGrid img{height:55px}
+.p66 .seasonGrid{margin:4px 0}
+.p70 .filmSplit{gap:8px;margin:4px 0}
+.p70 .batchBody>h2{font-size:15px;margin-top:8px}
+.p70 .grammar{font-size:13px}
+.p70 .grammar td{padding:2px 3px}
+.p70 img{max-height:80px}
+.p70 .assign{font-size:13px;padding:1px 0}
+.p70 .sourceNotice{font-size:12px!important;margin:4px 0!important;padding:5px 8px!important}
+.p63 .emails .emailCard{padding:4px 7px;margin:2px 0}
+.p63 .emailCard p{font-size:12px;line-height:1.28;margin:2px 0}
+.p63 .batchBody>h2{font-size:15px;margin-top:6px;margin-bottom:4px}
+.p63 .cols2{gap:10px}
+.p63 .verbWord{min-height:18px}
+.p63 .emailSubject{font-size:12px;padding-bottom:1px}
+.p59 .grammar{font-size:12px}
+.p59 .grammar td{padding:1px 3px}
+.p59 .bookLines{font-size:12px;margin:3px 0 4px 12px}
+.p67 .batchBody{padding-top:12px}
+.p67 .batchBody>h2{margin-top:10px}
+.p63 .emailCard p{font-size:11px;line-height:1.22;margin:1px 0}
+.p63 .emails .emailCard{padding:3px 6px}
+.p63 .batchBody{padding-top:6px}
+.p63 .instruction{font-size:12px!important;margin:2px 0!important}
+.p63 .batchBody>h2{font-size:14px;margin-top:4px;margin-bottom:2px}
+.p63 .listen{margin-bottom:2px}
+.p59 .igelGrid .igel{font-size:11px;padding:2px 4px}
+.p59 img{max-height:75px}
+.p59 .batchBody>h2{font-size:15px;margin-top:7px;margin-bottom:4px}
+.p63 .emailCard p{font-size:10.5px;line-height:1.18}
+.p63 .communication{font-size:12px;padding:4px;margin:2px 0}
+.p63 .wordbank{font-size:12px;margin:2px 0}
+.p63 .check{margin-top:2px}
+.p63 .emailCard p{font-size:10px;line-height:1.15}
+.p91 .batchBody{padding-top:10px}
+.p91 .boardImg{height:200px}
+.p91 .grammar td{padding:1px 4px;font-size:13px}
+.p91 .miniDialog{font-size:12px;padding:4px 8px;margin:3px 0}
+.p91 .weekTable td{font-size:10px}
+.p63 .strip{height:60px}
+.p63 .pantoImg{height:70px}
+.p63 .grammarNote{font-size:12px;padding:2px 8px}
+.p63 .grammar td{padding:1px 4px;font-size:12px}
