@@ -43,3 +43,7 @@ Kursbuch L1 named-speaker/radio checks and AB13-16 target-radio checks now use t
 ## Field persistence milestone
 
 React now captures field-input events and maintains field state for the 17 non-scan engines, preserving the original field-index/note keys and radio-peer behavior. The shared state object prevents later page saves from overwriting answer edits. Existing persistence regression cases pass after removing the old per-field event listeners.
+
+## Scan-backed workbook milestone
+
+AB17-20 practice forms, declared-answer grading, notes, solution reveal, vocabulary search/filter, pronunciation player and original-page dialog now use React components/state. The 330 answer fields, punctuation exceptions, ungraded notes and original-source limits are unchanged. All eight original regression suites pass, including the complete scan-backed workflow at four widths.
