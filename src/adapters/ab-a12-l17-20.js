@@ -1,7 +1,9 @@
+import {serviceLifecycle} from './lifecycle';
 import {flushSync} from 'react-dom';
 import {scanStore} from '../scan/scanStore';
 export default function mount(){
 'use strict';
+const lifecycle=serviceLifecycle(),setTimeout=lifecycle.timeout;
 const $=s=>document.querySelector(s),data=window.AB1720_PAGES,stage=$('#pageStage'),spread=$('#spread'),viewport=$('#viewport'),storage='menschen-ab-a12-l17-20-v1';
 let state={};try{state=JSON.parse(localStorage.getItem(storage)||'{}')}catch{};const save=()=>{try{localStorage.setItem(storage,JSON.stringify(state))}catch{}};
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -36,5 +38,5 @@ viewport.addEventListener('mousedown',e=>{if(e.button)return;if(zoomed()){mouse=
 function renderPractice(){flushSync(()=>scanStore.refresh(data[pageIndex]))}
 scanStore.connect({getState:()=>state,update(values,clearKey){Object.assign(state,values);if(clearKey)delete state['done-'+clearKey];save();progress()}});
 window.menschenBook=flip;window.menschenPages=pages;window.bookZoom=setZoom;window.bookPage=i=>flip.turnToPage(i);window.bookTurn=turn;window.ab1720={data,renderPractice,storage};
-return()=>scanStore.connect(null);
+return()=>{lifecycle.dispose();clearTimeout(timer);scanStore.connect(null)};
 }
