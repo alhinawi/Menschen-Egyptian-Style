@@ -15,3 +15,9 @@ Other exercises, workbook integration, word pronunciation, natural-voice samples
 ## Material handling
 
 Original book images and recordings are publisher material (Hueber Verlag). Do not make this repository or its assets public. Private access is not a copyright license. Full book PDFs and the full audio library are excluded from git. Only the current lesson's required page images and two MP3s are included in this prototype.
+
+## Book interaction
+
+The preview now opens as a paged paper book, not a continuous feed. Drag inward from the left/right page edge, use page arrows, or use keyboard left/right. Pages turn with perspective, front/back faces and a moving shadow. Original-book pages turn through the same navigation. The live exercise DOM is preserved between turns, so selected answers and notes remain. Page sound is currently absent (silent by default). Reduced-motion preferences skip animation. Long expanded translations/dialogs can scroll inside their page.
+
+`node tests/flip.cjs` runs the book interaction checks and captures a local preview recording. Requires Playwright, Chrome and Playwright's FFmpeg support.
