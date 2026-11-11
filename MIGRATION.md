@@ -35,3 +35,7 @@ Fifteen standard batch engines now use native React form submission, result stat
 ## Meaning dialog milestone
 
 Word/sentence/selected-text dialog rendering, mode buttons, close button, disabled/pending states and Arabic/German text now use a native React component and store. Selection matching and queued pronunciation remain services with unchanged maps. Audio stops on close and cleanup. Original suites plus AB2/AB3/module selected-text audio tests pass.
+
+## Custom grading milestone
+
+Kursbuch L1 named-speaker/radio checks and AB13-16 target-radio checks now use the shared React grading store as well. All 17 non-scan batch engines pass declared-answer checks. The scan-backed AB17-20 practice engine remains separate and is not yet ported.
