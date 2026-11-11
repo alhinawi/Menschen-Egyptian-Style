@@ -1136,6 +1136,2281 @@
       "id": "w158",
       "text": "Buchstaben",
       "type": "word"
+    },
+    {
+      "id": "a11l46s001",
+      "text": "Der Tisch ist schön!",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s002",
+      "text": "Wie heißen die Möbel auf Deutsch?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s003",
+      "text": "Zeigen Sie auf dem Foto und nennen Sie die Wörter.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s004",
+      "text": "Hilfe finden Sie im Bildlexikon auf Seite 26 und 27.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s005",
+      "text": "Wer sagt was? Hören Sie und ordnen Sie zu.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s006",
+      "text": "Sibylle sagt, der Tisch ist …",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s007",
+      "text": "Artur sagt, das Bett ist …",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s008",
+      "text": "Das ist aber teuer!",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s009",
+      "text": "Was passt? Hören Sie das Gespräch weiter und ordnen Sie zu.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s010",
+      "text": "Der Tisch kostet",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s011",
+      "text": "Die Lampe kostet",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s012",
+      "text": "Das ist billig!",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s013",
+      "text": "Das ist teuer!",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s014",
+      "text": "Wer sagt was? Hören Sie noch einmal und kreuzen Sie an.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s015",
+      "text": "Ja, bitte. Wie viel kostet denn der Tisch?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s016",
+      "text": "Brauchen Sie Hilfe?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s017",
+      "text": "Der Tisch kostet 1478 Euro.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s018",
+      "text": "Ja. Das ist zu teuer!",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s019",
+      "text": "Das ist aber sehr teuer!",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s020",
+      "text": "Finden Sie?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s021",
+      "text": "Sie kommt aus Italien. Der Designer heißt Enzo Carotti.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s022",
+      "text": "Was kostet die Lampe?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s023",
+      "text": "Die Lampe kostet nur 119 Euro. Das ist sehr günstig. Ein Sonderangebot.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s024",
+      "text": "Die Lampe ist wirklich sehr schön und nicht teuer!",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s025",
+      "text": "Ordnen Sie die Sätze in b.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s026",
+      "text": "der, das oder die?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s027",
+      "text": "Ordnen Sie die Wörter aus dem Bildlexikon zu.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s028",
+      "text": "Artikeltanz: Hören Sie die Nomen und tanzen Sie.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s029",
+      "text": "Ergänzen Sie die Zahlenschlange. Hören Sie dann und vergleichen Sie.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s030",
+      "text": "Wie viel kostet das?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s031",
+      "text": "Hören Sie und notieren Sie die Preise.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s032",
+      "text": "Gespräche üben: Nach Preisen fragen und Preise nennen. Arbeiten Sie zu zweit auf Seite 79.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s033",
+      "text": "Was kostet die Lampe?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s034",
+      "text": "Was sagt der Verkäufer aus 3b? Kreuzen Sie an. Ergänzen Sie dann die Tabelle.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s035",
+      "text": "Die Lampe kostet 119 Euro.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s036",
+      "text": "kommt aus Italien.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s037",
+      "text": "Puzzle: Was kostet der Schrank? Arbeiten Sie zu zweit auf Seite 79.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s038",
+      "text": "Fridolins Möbel",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s039",
+      "text": "Sehen Sie die Bilder an. Was ist das Problem? Kreuzen Sie an.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s040",
+      "text": "Das Bett ist …",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s041",
+      "text": "zu lang",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s042",
+      "text": "zu kurz",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s043",
+      "text": "Der Stuhl ist …",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s044",
+      "text": "zu klein",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s045",
+      "text": "zu groß",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s046",
+      "text": "Die Lampe ist …",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s047",
+      "text": "zu billig",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s048",
+      "text": "zu teuer",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s049",
+      "text": "Wie finden Sie die Aufgabe?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s050",
+      "text": "zu leicht",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s051",
+      "text": "okay",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s052",
+      "text": "zu schwer",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s053",
+      "text": "Gespräche üben: etwas bewerten. Arbeiten Sie zu zweit auf Seite 80.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s054",
+      "text": "Ergänzen Sie bitte oder danke. Hören Sie dann und vergleichen Sie.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s055",
+      "text": "Brauchen Sie Hilfe? – Ja, bitte.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s056",
+      "text": "Kaffee? – Nein, danke.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s057",
+      "text": "Das macht dann 9 Euro 95, bitte.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s058",
+      "text": "Wie bitte?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s059",
+      "text": "Vielen Dank! – Bitte.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s060",
+      "text": "Wie übersetzen Sie bitte und danke?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s061",
+      "text": "Übersetzen Sie die Gespräche in 10 in Ihre Muttersprache.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s062",
+      "text": "Was ist das? – Das ist ein F.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s063",
+      "text": "Frau Paulig beim Augenarzt",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s064",
+      "text": "Was ist das? Sehen Sie das Foto an, hören Sie und kreuzen Sie an.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s065",
+      "text": "Das ist ein P.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s066",
+      "text": "Das ist ein F.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s067",
+      "text": "Das ist ein T.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s068",
+      "text": "Was sehen Sie hier? Markieren Sie und sprechen Sie.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s069",
+      "text": "Ich glaube, das ist ein P.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s070",
+      "text": "Ja, das glaube ich auch.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s071",
+      "text": "Nein. Das ist ein F.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s072",
+      "text": "Was ist das?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s073",
+      "text": "Lesen Sie den Comic und ergänzen Sie die Tabelle.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s074",
+      "text": "Das ist ein 0.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s075",
+      "text": "Nein. Das ist kein 0.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s076",
+      "text": "Ah! Das ist eine 8.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s077",
+      "text": "Das ist auch keine 8.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s078",
+      "text": "Ist das eine Brille?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s079",
+      "text": "Ja. Das ist eine Brille.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s080",
+      "text": "Wie übersetzen Sie ein/eine – kein/keine? Übersetzen Sie den Comic in Ihre Muttersprache.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s081",
+      "text": "Spielen Sie wie im Comic: Was ist das? Zeichnen Sie Gegenstände aus dem Bildlexikon oder Möbel (Lektion 4) an die Tafel. Die anderen raten.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s082",
+      "text": "Was gehört zusammen?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s083",
+      "text": "Ordnen Sie die Produktinformationen den Brillen zu.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s084",
+      "text": "Lesen Sie den Text in a noch einmal und ergänzen Sie.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s085",
+      "text": "Eine Designerbrille für Frau Paulig",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s086",
+      "text": "Zeichnen Sie eine Brille in das Foto.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s087",
+      "text": "Schreiben Sie eine Produktinformation zu „Ihrer“ Brille. Mischen Sie die Texte und suchen Sie die passende Brille im Kurs.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s088",
+      "text": "Die Brille ist rot und eckig, …",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s089",
+      "text": "Gespräche üben: Produkte beschreiben. Arbeiten Sie auf Seite 84.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s090",
+      "text": "Wie heißt das auf Deutsch?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s091",
+      "text": "Hören Sie und ordnen Sie die Gespräche den Fotos zu.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s092",
+      "text": "Ergänzen Sie das Wort, markieren Sie den richtigen Artikel und das richtige Pronomen und ordnen Sie die Farben zu.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s093",
+      "text": "Das ist ein / eine",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s094",
+      "text": "Wer sagt was? Ordnen Sie zu.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s095",
+      "text": "Entschuldigung, wie heißt das auf Deutsch?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s096",
+      "text": "Wie schreibt man …?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s097",
+      "text": "Kein Problem.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s098",
+      "text": "Das ist eine …",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s099",
+      "text": "Noch einmal, bitte.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s100",
+      "text": "Das ist eine Uhr.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s101",
+      "text": "Gespräche üben: nach Wörtern fragen. Arbeiten Sie zu zweit auf Seite 85.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s102",
+      "text": "Im Internet bestellen",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s103",
+      "text": "Sehen Sie die Produkte und die Bestellung an. Welche Informationen fehlen? Ergänzen Sie.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s104",
+      "text": "Welche Uhr möchten Sie bestellen? Ergänzen Sie die Bestellung und Ihre persönlichen Angaben.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s105",
+      "text": "Ich brauche kein Büro.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s106",
+      "text": "Arbeiten am See",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s107",
+      "text": "Sehen Sie das Foto an und hören Sie. Wie finden Sie diesen Arbeitsplatz?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s108",
+      "text": "sehr schön / sehr praktisch",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s109",
+      "text": "schön, aber nicht praktisch",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s110",
+      "text": "nicht praktisch / nicht schön",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s111",
+      "text": "Der Arbeitsplatz ist sehr schön.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s112",
+      "text": "Ich weiß nicht. Der Arbeitsplatz ist schön, aber …",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s113",
+      "text": "Möchten Sie so arbeiten?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s114",
+      "text": "Lesen Sie die E-Mail, sehen Sie die Fotos an und hören Sie. Ergänzen Sie.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s115",
+      "text": "Der Mann auf den Fotos heißt Christian Schmidt.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s116",
+      "text": "Um 14:00 Uhr ist ein Termin mit",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s117",
+      "text": "Christian Schmidt und C. Lehmann arbeiten bei",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s118",
+      "text": "Sehen Sie die Fotos 2–4 an und hören Sie. Kreuzen Sie an.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s119",
+      "text": "Frau Feser und Herr Brenner sind",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s120",
+      "text": "im Büro.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s121",
+      "text": "am See.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s122",
+      "text": "Sie wollen",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s123",
+      "text": "sprechen.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s124",
+      "text": "Christian Schmidt hat",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s125",
+      "text": "keine Zeit",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s126",
+      "text": "Zeit",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s127",
+      "text": "für Eva.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s128",
+      "text": "Der Arbeitsplatz am See ist",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s129",
+      "text": "praktisch.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s130",
+      "text": "nicht praktisch.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s131",
+      "text": "Wer ist wer? Wer macht was?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s132",
+      "text": "Hören Sie noch einmal und ordnen Sie zu.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s133",
+      "text": "ist die Freundin von Christian Schmidt.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s134",
+      "text": "ist eine Kollegin von Christian Schmidt.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s135",
+      "text": "ist der Chef von Christian Schmidt.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s136",
+      "text": "schreibt eine SMS.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s137",
+      "text": "sucht Rechnungen und Formulare.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s138",
+      "text": "braucht Stifte.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s139",
+      "text": "hat am See nur Stress und geht wieder ins Büro.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s140",
+      "text": "Was sucht Herr Brenner?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s141",
+      "text": "Lesen Sie die SMS und ergänzen Sie die Tabelle.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s142",
+      "text": "Wo sind die Rechnungen? Wo sind die Formulare?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s143",
+      "text": "Wo ist …?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s144",
+      "text": "Wo sind …?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s145",
+      "text": "Wie heißt der Plural?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s146",
+      "text": "Wählen Sie zwei Wörter aus dem Bildlexikon. Suchen Sie die Pluralform im Wörterbuch.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s147",
+      "text": "Sammeln Sie „Ihre“ Wörter im Plural an der Tafel.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s148",
+      "text": "der Stuhl – die Stühle: Finden Sie die Unterschiede. Arbeiten Sie zu zweit auf Seite 83.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s149",
+      "text": "Wo ist denn …?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s150",
+      "text": "Hören Sie das Gespräch mit Frau Feser noch einmal und ergänzen Sie.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s151",
+      "text": "Wo ist denn der Schlüssel?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s152",
+      "text": "Sie haben den Schlüssel doch auch.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s153",
+      "text": "Was suchen Sie? Spielen Sie ähnliche Dialoge.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s154",
+      "text": "Wo ist denn der Laptop?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s155",
+      "text": "Der Laptop? Frau Esebeck hat doch den Laptop.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s156",
+      "text": "Ich habe einen Laptop und zwei Handys.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s157",
+      "text": "Wie viele … haben Sie? Ergänzen Sie die Endungen und füllen Sie dann den Fragebogen aus.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s158",
+      "text": "Wie viele … hat Ihre Partnerin / Ihr Partner? Sprechen Sie.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s159",
+      "text": "Wie viele Drucker hast du?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s160",
+      "text": "Ich habe einen Drucker. Und du?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s161",
+      "text": "Ich habe keinen Drucker. Ich drucke im Büro.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s162",
+      "text": "Am Telefon",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s163",
+      "text": "Ein Anruf bei Christian Schmidt. Ordnen Sie zu.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s164",
+      "text": "sich melden (Person A)",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s165",
+      "text": "sich melden (Person B)",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s166",
+      "text": "sich verabschieden",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s167",
+      "text": "Werfen Sie einer Person den Ball zu. Sie/Er meldet sich (Person A). Dann melden Sie sich (Person B).",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s168",
+      "text": "Wie meldet man sich in anderen Ländern am Telefon? Erzählen Sie.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s169",
+      "text": "In England sagt man keinen Namen, nur die Telefonnummer oder „Hello“.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s170",
+      "text": "In … sagt man den Namen und …",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s171",
+      "text": "Sehen Sie die Fotos an und lesen Sie die Texte. Ordnen Sie zu.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s172",
+      "text": "Was wissen Sie über die Personen? Ergänzen Sie Alter und Beruf.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s173",
+      "text": "ist 25 Jahre alt und arbeitet als Sekretärin.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s174",
+      "text": "Beim Trödler – Was ist richtig? Sehen Sie den Film und kreuzen Sie an.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s175",
+      "text": "Das Bild ist",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s176",
+      "text": "cm groß.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s177",
+      "text": "Das Bild kostet",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s178",
+      "text": "Anne findet das Bild",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s179",
+      "text": "okay.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s180",
+      "text": "zu klein.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s181",
+      "text": "zu teuer.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s182",
+      "text": "König-Ludwig-Souvenirs: Das ist kein König.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s183",
+      "text": "Das ist ein/eine … – Was ist das? Markieren Sie die Souvenirs.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s184",
+      "text": "Mein Drucker braucht Papier. – Sehen Sie den Musikclip und ergänzen Sie die Verben in der passenden Form.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s185",
+      "text": "Haben Sie ein Problem?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s186",
+      "text": "Der Drucker hat kein Papier.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s187",
+      "text": "Ich brauche eine Rechnung.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s188",
+      "text": "Und mein Drucker braucht Papier.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s189",
+      "text": "Ich suche das Papier.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s190",
+      "text": "Aber ich habe kein Papier.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s191",
+      "text": "Ah, hier ist das Papier.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s192",
+      "text": "Oh! Das ist schön. Wir haben kein Problem.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s193",
+      "text": "Lesen Sie den Veranstaltungshinweis und korrigieren Sie die Sätze.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s194",
+      "text": "Der Nachtflohmarkt ist in Dresden.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s195",
+      "text": "Die Waren auf dem Flohmarkt sind neu.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s196",
+      "text": "Der Eintritt kostet 7,– Euro.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s197",
+      "text": "Klassenflohmarkt",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s198",
+      "text": "Wählen Sie einen Gegenstand und schreiben Sie eine Produktbeschreibung wie im Beispiel. Bringen Sie den Gegenstand und die Beschreibung mit in den Kurs.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s199",
+      "text": "Machen Sie einen Flohmarkt im Kurs.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s200",
+      "text": "Hier habe ich einen Kugelschreiber. Er ist sehr praktisch und leicht und er kostet nur 5 Euro.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s201",
+      "text": "Das ist nicht teuer. Das ist ein Sonderangebot. Der Kugelschreiber macht keine Fehler.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s202",
+      "text": "Dann sage ich 3 Euro.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s203",
+      "text": "Sagen wir 4 Euro?",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s204",
+      "text": "Na gut, okay!",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s205",
+      "text": "Was fehlt den Personen? Sehen Sie die Zeichnungen an und ergänzen Sie.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s206",
+      "text": "Hubertus Grille braucht eine Brille.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s207",
+      "text": "Hören Sie das Lied und vergleichen Sie.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46s208",
+      "text": "Hören Sie das Lied noch einmal und singen Sie mit.",
+      "type": "sentence"
+    },
+    {
+      "id": "a11l46w001",
+      "text": "tisch",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w002",
+      "text": "bett",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w003",
+      "text": "sessel",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w004",
+      "text": "lampe",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w005",
+      "text": "stuhl",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w006",
+      "text": "schrank",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w007",
+      "text": "teppich",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w008",
+      "text": "sofa",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w009",
+      "text": "couch",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w010",
+      "text": "möbel",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w011",
+      "text": "adjektive",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w012",
+      "text": "zentimeter",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w013",
+      "text": "schön",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w014",
+      "text": "groß",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w015",
+      "text": "klein",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w016",
+      "text": "lang",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w017",
+      "text": "kurz",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w018",
+      "text": "modern",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w019",
+      "text": "praktisch",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w020",
+      "text": "billig",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w021",
+      "text": "teuer",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w022",
+      "text": "günstig",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w023",
+      "text": "schlecht",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w024",
+      "text": "hübsch",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w025",
+      "text": "neu",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w026",
+      "text": "kostet",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w027",
+      "text": "kosten",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w028",
+      "text": "preis",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w029",
+      "text": "preise",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w030",
+      "text": "euro",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w031",
+      "text": "cent",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w032",
+      "text": "sonderangebot",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w033",
+      "text": "angebot",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w034",
+      "text": "beratungsgespräche",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w035",
+      "text": "bewerten",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w036",
+      "text": "bewerten:",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w037",
+      "text": "designer",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w038",
+      "text": "designerin",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w039",
+      "text": "million",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w040",
+      "text": "tausend",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w041",
+      "text": "diktat",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w042",
+      "text": "puzzle",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w043",
+      "text": "zahlenschlange",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w044",
+      "text": "artikeltanz",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w045",
+      "text": "nominativ",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w046",
+      "text": "akkusativ",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w047",
+      "text": "personalpronomen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w048",
+      "text": "artikel",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w049",
+      "text": "nomen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w050",
+      "text": "plural",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w051",
+      "text": "singular",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w052",
+      "text": "pluralform",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w053",
+      "text": "raten",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w054",
+      "text": "zeichnen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w055",
+      "text": "zeichnungen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w056",
+      "text": "tanzen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w057",
+      "text": "nennen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w058",
+      "text": "zeigen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w059",
+      "text": "muttersprache",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w060",
+      "text": "tabelle",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w061",
+      "text": "wortfelder",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w062",
+      "text": "form",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w063",
+      "text": "endungen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w064",
+      "text": "fragebogen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w065",
+      "text": "brille",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w066",
+      "text": "brillen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w067",
+      "text": "augenarzt",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w068",
+      "text": "farben",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w069",
+      "text": "farbe",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w070",
+      "text": "dinge",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w071",
+      "text": "materialien",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w072",
+      "text": "material",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w073",
+      "text": "formen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w074",
+      "text": "rot",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w075",
+      "text": "blau",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w076",
+      "text": "grün",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w077",
+      "text": "orange",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w078",
+      "text": "braun",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w079",
+      "text": "gelb",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w080",
+      "text": "weiß",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w081",
+      "text": "schwarz",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w082",
+      "text": "dunkelgrün",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w083",
+      "text": "holz",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w084",
+      "text": "papier",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w085",
+      "text": "metall",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w086",
+      "text": "kunststoff",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w087",
+      "text": "plastik",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w088",
+      "text": "glas",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w089",
+      "text": "eckig",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w090",
+      "text": "rund",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w091",
+      "text": "bleistift",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w092",
+      "text": "buch",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w093",
+      "text": "flasche",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w094",
+      "text": "feuerzeug",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w095",
+      "text": "fotoapparat",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w096",
+      "text": "kette",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w097",
+      "text": "kugelschreiber",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w098",
+      "text": "schlüssel",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w099",
+      "text": "tasche",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w100",
+      "text": "uhr",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w101",
+      "text": "regenschirm",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w102",
+      "text": "streichholz",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w103",
+      "text": "geldbörse",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w104",
+      "text": "seife",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w105",
+      "text": "optik",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w106",
+      "text": "frühjahrs-aktion",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w107",
+      "text": "designer-brillen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w108",
+      "text": "super-brillen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w109",
+      "text": "super-preise",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w110",
+      "text": "modell",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w111",
+      "text": "designer-modell",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w112",
+      "text": "verkaufen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w113",
+      "text": "modischen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w114",
+      "text": "frühlings-angebot",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w115",
+      "text": "gläser",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w116",
+      "text": "top-designerin",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w117",
+      "text": "sportlich",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w118",
+      "text": "verschiedenen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w119",
+      "text": "super-preis",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w120",
+      "text": "klassiker",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w121",
+      "text": "gestell",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w122",
+      "text": "leicht",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w123",
+      "text": "kombinationen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w124",
+      "text": "lager",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w125",
+      "text": "brillenmodelle",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w126",
+      "text": "bestellen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w127",
+      "text": "bestellung",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w128",
+      "text": "bestellnummer",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w129",
+      "text": "produktname",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w130",
+      "text": "menge",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w131",
+      "text": "produkte",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w132",
+      "text": "produktinformationen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w133",
+      "text": "produktinformation",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w134",
+      "text": "produktbeschreibung",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w135",
+      "text": "anrede",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w136",
+      "text": "geburtsdatum",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w137",
+      "text": "adresse",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w138",
+      "text": "straße",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w139",
+      "text": "hausnummer",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w140",
+      "text": "ort",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w141",
+      "text": "telefon",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w142",
+      "text": "fax",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w143",
+      "text": "kuckucksuhr",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w144",
+      "text": "wanduhr",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w145",
+      "text": "rückwärts",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w146",
+      "text": "digital",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w147",
+      "text": "augen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w148",
+      "text": "büro",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w149",
+      "text": "see",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w150",
+      "text": "arbeitsplatz",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w151",
+      "text": "telefongespräche",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w152",
+      "text": "telefonstrategien",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w153",
+      "text": "e-mail",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w154",
+      "text": "sms",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w155",
+      "text": "handy",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w156",
+      "text": "handys",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w157",
+      "text": "laptop",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w158",
+      "text": "laptops",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w159",
+      "text": "briefmarke",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w160",
+      "text": "briefmarken",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w161",
+      "text": "rechnung",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w162",
+      "text": "rechnungen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w163",
+      "text": "computer",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w164",
+      "text": "drucker",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w165",
+      "text": "maus",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w166",
+      "text": "mäuse",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w167",
+      "text": "stift",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w168",
+      "text": "stifte",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w169",
+      "text": "notizbuch",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w170",
+      "text": "notizbücher",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w171",
+      "text": "kalender",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w172",
+      "text": "bildschirm",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w173",
+      "text": "bildschirme",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w174",
+      "text": "formular",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w175",
+      "text": "formulare",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w176",
+      "text": "chef",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w177",
+      "text": "termin",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w178",
+      "text": "termine",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w179",
+      "text": "grüße",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w180",
+      "text": "betreff",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w181",
+      "text": "wiederhören",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w182",
+      "text": "melden",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w183",
+      "text": "anruf",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w184",
+      "text": "telefonnummer",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w185",
+      "text": "england",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w186",
+      "text": "zeit",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w187",
+      "text": "stress",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w188",
+      "text": "bücher",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w189",
+      "text": "ringe",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w190",
+      "text": "ring",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w191",
+      "text": "autor",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w192",
+      "text": "psychologie",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w193",
+      "text": "südkorea",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w194",
+      "text": "männeruhr",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w195",
+      "text": "einfach",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w196",
+      "text": "toll",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w197",
+      "text": "cool",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w198",
+      "text": "stück",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w199",
+      "text": "meilling",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w200",
+      "text": "trödler",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w201",
+      "text": "souvenirs",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w202",
+      "text": "könig",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w203",
+      "text": "bierglas",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w204",
+      "text": "teller",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w205",
+      "text": "tasse",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w206",
+      "text": "t-shirt",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w207",
+      "text": "handtuch",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w208",
+      "text": "postkarte",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w209",
+      "text": "puppe",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w210",
+      "text": "schlüsselanhänger",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w211",
+      "text": "musikclip",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w212",
+      "text": "passenden",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w213",
+      "text": "problem",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w214",
+      "text": "flohmarkt",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w215",
+      "text": "nachtflohmarkt",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w216",
+      "text": "veranstaltungshinweis",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w217",
+      "text": "tradition",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w218",
+      "text": "sachsen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w219",
+      "text": "stöbern",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w220",
+      "text": "handeln",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w221",
+      "text": "händler",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w222",
+      "text": "besucher",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w223",
+      "text": "trödel-event",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w224",
+      "text": "kleidung",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w225",
+      "text": "neuware",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w226",
+      "text": "aufbau",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w227",
+      "text": "standpreise",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w228",
+      "text": "meter",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w229",
+      "text": "tische",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w230",
+      "text": "mitbringen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w231",
+      "text": "tierkliniken",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w232",
+      "text": "zentrum-südost",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w233",
+      "text": "geöffnet",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w234",
+      "text": "eintritt",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w235",
+      "text": "frei",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w236",
+      "text": "waren",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w237",
+      "text": "gegenstand",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w238",
+      "text": "beispiel",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w239",
+      "text": "fehler",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w240",
+      "text": "schreibt",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w241",
+      "text": "fehlt",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w242",
+      "text": "klar",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w243",
+      "text": "schnell",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w244",
+      "text": "schwer",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w245",
+      "text": "brauchen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w246",
+      "text": "lernen",
+      "type": "word"
+    },
+    {
+      "id": "a11l46w247",
+      "text": "suchen",
+      "type": "word"
     }
   ]
 }
