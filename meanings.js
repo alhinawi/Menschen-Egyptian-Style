@@ -39,12 +39,13 @@ function selectedUnits(text,range){
  const units=window.BOOK_TEXT_UNITS||[],n=selectionNorm(text);const file=location.pathname.split('/').pop()||'index.html';let candidates=units.filter(u=>u.occurrences.some(o=>o.file===file));
  const page=range?.startContainer?.parentElement?.closest('.page');if(page&&range.endContainer?.parentElement?.closest('.page')===page)candidates=candidates.filter(u=>u.occurrences.some(o=>o.page===page.dataset.page));
  const verb=range?.startContainer?.parentElement?.closest('.verbSentence');if(verb){const unit=candidates.find(u=>selectionNorm(u.text)===selectionNorm(verb.dataset.phrase));if(unit)return [unit]}
- const artwork=range?[...document.querySelectorAll('.artText')].filter(e=>range.intersectsNode(e)&&e.textContent.trim()).map(e=>candidates.find(u=>u.id===e.dataset.unitId)).filter(Boolean):[];if(artwork.length)return artwork;
- const exact=candidates.find(u=>selectionNorm(u.text)===n);if(exact)return [exact];
+ const artwork=range?[...document.querySelectorAll('.artText')].filter(e=>range.intersectsNode(e)&&e.textContent.trim()).map(e=>candidates.find(u=>u.id===e.dataset.unitId)).filter(Boolean):[];
+ const exact=candidates.find(u=>selectionNorm(u.text)===n);if(exact&&!artwork.length)return [exact];
  if(range){const grouped=new Map();for(const pg of document.querySelectorAll('.page')){const walk=document.createTreeWalker(pg,NodeFilter.SHOW_TEXT|NodeFilter.SHOW_ELEMENT);while(walk.nextNode()){const node=walk.currentNode;if(node.nodeType===Node.ELEMENT_NODE&&!node.matches('br,input'))continue;let el=node.nodeType===Node.TEXT_NODE?node.parentElement:node;if(el.closest('button,select,textarea,.n,.sub,.pageNo,.number,.bigN,.feedback,.helper')||(el.matches('input')&&['radio','checkbox'].includes(el.type)))continue;let target=el.matches('input,br')?el.parentElement:el;while(target.parentElement&&target.matches('span,b,strong,i,em,small,a')&&!target.matches('.treePerson>span,.person>div>span,.assign>span'))target=target.parentElement;if(!grouped.has(target))grouped.set(target,{text:'',hit:false});const g=grouped.get(target);g.text+=el.matches('br')?' ':el.matches('input')?'___':node.textContent;if(node.nodeType===Node.TEXT_NODE&&node.textContent.trim()&&range.intersectsNode(node))g.hit=true}}
- const overlap=[];for(const g of grouped.values()){if(!g.hit)continue;const unit=candidates.find(u=>selectionNorm(u.text)===selectionNorm(g.text));if(unit&&!overlap.includes(unit))overlap.push(unit)}if(overlap.length)return overlap;
+ const overlap=[...artwork];for(const g of grouped.values()){if(!g.hit)continue;const unit=candidates.find(u=>selectionNorm(u.text)===selectionNorm(g.text));if(unit&&!overlap.includes(unit))overlap.push(unit)}if(overlap.length)return overlap;
  }
 
+ if(artwork.length)return artwork;
  const containing=candidates.filter(u=>selectionNorm(u.text).includes(n));if(containing.length)return [containing.sort((a,b)=>a.text.length-b.text.length)[0]];
  const hits=candidates.filter(u=>{const t=selectionNorm(u.text);return t.length>2&&n.includes(t)});
  if(hits.length){hits.sort((a,b)=>n.indexOf(selectionNorm(a.text))-n.indexOf(selectionNorm(b.text))||b.text.length-a.text.length);return hits.filter((u,i)=>!hits.some((v,j)=>j!==i&&v.text.length>u.text.length&&selectionNorm(v.text).includes(selectionNorm(u.text))))}
