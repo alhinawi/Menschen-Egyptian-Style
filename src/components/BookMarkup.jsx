@@ -6,12 +6,13 @@ function render(node,key){
  if(typeof node==='string')return node;
  const [tag,attrs,children]=node,props={key};
  for(let [k,v] of Object.entries(attrs)){
-  if(k.startsWith('on')||k==='selected')continue;
+  if(k.startsWith('on')){if(k==='onclick'&&v==='history.back()')props.onClick=()=>history.back();else if(k==='onclick'&&v==="window.open(this.src,'_blank')")props.onClick=e=>window.open(e.currentTarget.src,'_blank','noopener');else if(k==='onchange'&&v==='location.href=this.value')props.onChange=e=>{location.href=e.currentTarget.value};continue}if(k==='selected')continue;
   if(k==='style')props.style=style(v);
   else if(k==='value'&&['input','select','textarea'].includes(tag))props.defaultValue=v;
   else if(k==='checked')props.defaultChecked=true;
   else props[aliases[k]||k]=booleans.has(k)?true:v;
  }
+ if(tag==='select'){const selected=children.filter(n=>Array.isArray(n)&&n[0]==='option'&&'selected' in n[1]).map(n=>n[1].value??n[2].join(''));if(selected.length)props.defaultValue=props.multiple?selected:selected[0]}
  if(tag==='textarea'){props.defaultValue=children.join('');return createElement(tag,props)}
  return createElement(tag,props,...children.map(render));
 }

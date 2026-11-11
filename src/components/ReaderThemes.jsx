@@ -6,7 +6,7 @@ function saved(){let chosen={mode:'light',palette:'1'};try{chosen={...chosen,...
 export function ReaderThemes(){
  const [chosen,setChosen]=useState(saved),[slot,setSlot]=useState(null),dialog=useRef(null);
  const option=options.find(o=>o.id===chosen.id)||options[0];
- useLayoutEffect(()=>{setSlot(document.querySelector('[data-react-theme-slot]'))},[]);
+ useLayoutEffect(()=>{let node=document.querySelector('[data-react-theme-slot]'),owned=false;if(!node){node=document.createElement('span');node.dataset.reactThemeSlot='';(document.querySelector('.controls')||document.querySelector('header')||document.body).append(node);owned=true}setSlot(node);return()=>{if(owned)node.remove()}},[]);
  useLayoutEffect(()=>{document.documentElement.dataset.theme=option.mode;document.documentElement.dataset.readerTheme=option.id;document.body.dataset.palette=chosen.palette;try{localStorage.setItem(storage,JSON.stringify({...chosen,mode:option.mode}))}catch{}window.menschenTheme=()=>({...chosen,mode:option.mode})},[chosen,option]);
  useEffect(()=>{const onStorage=e=>{if(e.key===storage)setChosen(saved())};window.addEventListener('storage',onStorage);return()=>window.removeEventListener('storage',onStorage)},[]);
  const close=()=>dialog.current.close();
