@@ -2,7 +2,7 @@
 (()=>{
 const names={nicole:'نيكول',paco:'باكو',winfried:'ڤينفريد',wachter:'ڤاختر',rodriguez:'رودريجز',ewa:'إيڤا',wolska:'ڤولسكا',angela:'أنجيلا',merkel:'ميركل',wolfgang:'ڤولفجانج',amadeus:'أماديوس',mozart:'موتسارت',johann:'يوهان',von:'من / ڤون في الأسامي',goethe:'جوته',cleopatra:'كليوباترا',agatha:'أجاثا',christie:'كريستي',mahatma:'مهاتما',gandhi:'غاندي',pablo:'بابلو',picasso:'بيكاسو',mutter:'أم',teresa:'تريزا',riemann:'ريمان',nathalie:'ناتالي',valerie:'ڤاليري',wulf:'ڤولف'};
 Object.assign(window.MENSCHEN_WORDS,names);
-const selectionNorm=s=>s.normalize('NFC').replace(/[’]/g,"'").replace(/^\s*(?:[0-9]+|[a-z](?=\s))\s*[.)]?\s*(?=[A-ZÄÖÜ])/,'').toLocaleLowerCase('de').replace(/[^a-zäöüß0-9]+/g,' ').trim();
+const selectionNorm=s=>s.normalize('NFC').replace(/[’]/g,"'").replace(/^\s*(?:[0-9]+|[a-z](?=\s))\s*[.)]?\s*(?=[A-ZÄÖÜ])/,'').toLocaleLowerCase('de').replace(/([a-zäöüß])(\d)/g,'$1 $2').replace(/(\d)([a-zäöüß])/g,'$1 $2').replace(/[^a-zäöüß0-9]+/g,' ').trim();
 const norm=s=>s.normalize('NFC').trim().replace(/[’]/g,"'").replace(/\s+/g,' ').replace(/[.!?…]+$/g,'').toLocaleLowerCase('de');
 const phrases=new Map(Object.entries(window.MENSCHEN_PHRASES).map(([k,v])=>[norm(k),v]));
 const words=window.MENSCHEN_WORDS,records=window.PRONUNCIATION_INDEX||[];
@@ -15,7 +15,7 @@ function open(word,phrase,wanted){activeAudio.pause();current={word:word||'',phr
 window.openBookMeaning=open;
 dialog.querySelector('.meaningClose').onclick=()=>dialog.close();dialog.querySelector('.meaningWord').onclick=()=>{mode='word';refresh(true)};dialog.querySelector('.meaningSentence').onclick=()=>{mode='sentence';refresh(true)};dialog.querySelector('.pronounceButton').onclick=play;dialog.addEventListener('close',()=>activeAudio.pause());dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});
 window.initMeanings=()=>{
-const selector='.page h1,.page h2,.page .instruction,.page .assign>span,.page .dialog,.page .person span,.page .bookDialogue span,.page .gapdialog p,.page .bookLines,.page .speakerTable td:first-child,.page .grammar td,.page .communicationTable td,.page .feelings,.page .communication,.batch p,.batch .profile label,.batch .treePerson span,.batch .opinion label>span,.batch .choiceRows label>span,.batch .corrections span,.batch .nameRiddle span,.batch .grammarNote';
+const selector='.abBody p,.abBody h1,.abBody h2,.abBody h3,.abBody td,.abBody th,.abBody .wordbank,.page h1,.page h2,.page .instruction,.page .assign>span,.page .dialog,.page .person span,.page .bookDialogue span,.page .gapdialog p,.page .bookLines,.page .speakerTable td:first-child,.page .grammar td,.page .communicationTable td,.page .feelings,.page .communication,.batch p,.batch .profile label,.batch .treePerson span,.batch .opinion label>span,.batch .choiceRows label>span,.batch .corrections span,.batch .nameRiddle span,.batch .grammarNote';
 const escape=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
 const phraseRx=new RegExp(Object.keys(window.MENSCHEN_PHRASES).sort((a,b)=>b.length-a.length).map(escape).join('|'),'giu');
 function wordNodes(text,phrase){const out=document.createDocumentFragment();for(const token of text.split(/([A-Za-zÄÖÜäöüß]+(?:[’'-][A-Za-zÄÖÜäöüß]+)*)/)){if(/^[A-Za-zÄÖÜäöüß]/.test(token)&&words[norm(token)]){const span=document.createElement('span');span.className='tapWord';span.textContent=token;span.dataset.word=token;span.dataset.phrase=phrase;span.tabIndex=0;span.setAttribute('role','button');span.setAttribute('aria-label',token+' · Bedeutung');out.append(span)}else out.append(document.createTextNode(token))}return out}
