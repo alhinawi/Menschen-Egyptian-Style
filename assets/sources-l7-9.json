@@ -1,0 +1,34 @@
+{
+  "batch": "kb-a11-l7-9",
+  "pages": "41-56",
+  "aktionsseiten": [83, 86, 87, 89, 90, 93],
+  "scans": {
+    "kursbuch": "kb-L7-9-2a2f64a5.pdf (global pages 43-58 = printed 41-56)",
+    "aktionsseiten": "kb-aktion-p83-93-3a9b9041.pdf (printed 83, 86, 87, 89, 90, 93)"
+  },
+  "driveSources": {
+    "unterrichtsplanL7": "https://drive.google.com/file/d/1hecqRjuET0GWJTQkIGL7WamS96DIYZI9",
+    "unterrichtsplanL8": "https://drive.google.com/file/d/1lD9hcU_DHrJJgQ2WSTsm7SKoby6j_icG",
+    "unterrichtsplanL9": "https://drive.google.com/file/d/1ceYD5fKCX3w6lGe6jPSyv_cYKSqxBHgM",
+    "unterrichtsplanModulplus3": "https://drive.google.com/file/d/11ZBeKFuTi7THjCP1roL4mGzYfu0sXJZH",
+    "transkripte": "https://drive.google.com/file/d/1LtU4ELSvHaw0yyz8C2dDKyb_xtHf9iwt",
+    "kursbuchAudioOrdner": "https://drive.google.com/drive/folders/1qx4x-4etLKQONDOmYXfCvzTKZRXjtt7r"
+  },
+  "audio": {
+    "assets/kb-cd2-track01.mp3": "L7 ex2 (Komplimente, Gespräche 1-3)",
+    "assets/kb-cd2-track02.mp3": "L7 ex8 Andi (Fußball)",
+    "assets/kb-cd2-track03.mp3": "L7 ex8 Paulina (Cello/Musik)",
+    "assets/kb-cd2-track04.mp3": "L7 ex8 Justus (Rad fahren/Natur)",
+    "assets/kb-cd2-track05.mp3": "L8 ex2a (Manuel/Jonas)",
+    "assets/kb-cd2-track06.mp3": "L8 ex5a (Uhrzeiten)",
+    "assets/kb-cd2-track07.mp3": "L9 ex2 (Justus: Essen/Trinken)",
+    "assets/kb-cd2-track08.mp3": "Modul-3 Ausklang: Lied 'Heute ist der Tag!'"
+  },
+  "answerEvidence": "Teacher keys from unterrichtsplan L7/L8/L9/Modulplus3 transcripts and lesson guides; all scanned print regions verified by crop-zoom reads of the page scans.",
+  "notes": [
+    "Labskaus p55: teacher key says 'aus Resten' but the printed text says 'Doch heute macht man Labskaus nicht mehr aus Resten. Man verwendet frische Zutaten.' Answer keyed to the printed text: 'aus frischen Zutaten.'",
+    "Film clips 7-9 (Modul-3 Film-Stationen) were not supplied; only the song audio exists. Printed photo tasks preserved with an Arabic source notice, per L2-3 convention.",
+    "p53 exercise numbering printed as 1, 3, 4 (no exercise 2 in print); preserved as printed.",
+    "Handwritten student annotations in the scans are not printed content and were not reproduced."
+  ]
+}
