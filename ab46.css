@@ -28,7 +28,7 @@ header select{font:12px Arial;border:1px solid #ddd9ce;background:transparent;pa
 .litText{columns:2;column-gap:28px;background:rgba(255,255,255,.92);padding:14px;border-radius:8px;line-height:1.55;font-size:.98em}
 @media (max-width:520px){.litText{columns:1}}
 .floatPhoto{float:right;max-width:120px;margin:0 0 8px 12px;border-radius:6px}
-section.page.batch.p35 .floatPhoto,section.page.batch.p41 .floatPhoto,section.page.batch.p47 .floatPhoto{max-width:110px}
+section.page.batch.p35 .floatPhoto,section.page.batch.p41 .floatPhoto,section.page.batch.p47 .floatPhoto{width:110px;max-width:110px;height:auto;max-height:none;object-fit:contain}
 .page select,.page input{max-width:100%;box-sizing:border-box}
 .introGrid>*,.cols2>*{min-width:0}
 table.grammar{table-layout:auto}
@@ -40,3 +40,5 @@ table.grammar td{overflow-wrap:break-word}
 .abIntro .bookLines{font-size:17px;margin-left:25px}
 .abIntro img.greetings{width:100%;height:auto;max-height:280px;object-fit:contain}
 @media (max-width:550px){.abIntro{padding:20px 18px 50px 18px}}
+.introPhoto{display:block;width:auto;max-width:45%;max-height:240px;height:auto;object-fit:contain;margin:20px 0 0 90px;border-radius:6px}
+@media (max-width:550px){.introPhoto{margin-left:18px;max-width:70%}}
