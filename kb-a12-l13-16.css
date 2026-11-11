@@ -1,0 +1,158 @@
+/* Batch-specific composition for Kursbuch A1.2, lessons 13-16 and module-plus 5. */
+.cropImg{display:block;max-width:100%;max-height:300px;object-fit:contain;margin:6px 0}
+.photoRow{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.photoRow .cropImg{margin:0}
+.fenster{display:flex;flex-direction:column;align-items:center;font:14px Georgia;margin:0}
+.fenster .cropImg{max-height:150px;max-width:150px}
+.fenster figcaption{text-align:center}
+.adGrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}
+.ad{border:1px solid #ddd9ce;background:#fffeed;padding:8px 10px;font:15px/1.4 Arial}
+.ad p{margin:4px 0}
+.ad .cropImg{max-height:120px}
+.blogText{border:1px solid #ddd9ce;background:#fffdf5;padding:10px 14px;margin:10px 0;font:15px/1.45 Arial}
+.blogText h3{font:18px Georgia;margin:2px 0 8px}
+.blogText h4{margin:8px 0 4px}
+.blogText p{margin:6px 0}
+.blogText .cropImg{float:right;max-width:150px;max-height:110px;margin:0 0 6px 8px}
+.checkList{font-size:17px;line-height:1.6;margin:8px 0 8px 20px;padding:0}
+.checkList li{margin:5px 0}
+.infoBox{font:15px/1.5 Arial;color:#4d4435;background:#f4f7cf;border-left:4px solid #c5d200;padding:8px 10px;margin:10px 0}
+.lessonTitle{font:26px/1.3 Georgia;color:#8a7d3c;margin:20px 0 14px}
+.lessonTitle small{font-size:16px}
+.batch .magazine{background:#e8f0c0;color:#242a1e;margin:0 0 20px}
+.batch .magazine h3{font:22px Georgia;color:#3c4a12;margin:0 0 10px}
+.batch .magazine p{font:15px/1.5 Arial;margin:7px 0}
+.batch section{padding:24px 48px 60px 60px}
+.batch section.intro{padding-top:0}
+.batch .grammar{max-width:100%}
+.batch .grammar td{vertical-align:top}
+/* density tuning per printed page */
+.p10 section,.batch section{padding-top:16px}
+.batch h2{margin:14px 0 8px}
+.batch .instruction{margin:6px 0 8px!important}
+.p9 .batchHero,.p13 .batchHero,.p24 .batchHero{height:560px}
+.p24 .batchHero{height:380px}
+.p10{font-size:16px}
+.p10 .grammar{font-size:14px}
+.p10 .grammar td{padding:3px}
+.p10 .cropImg{max-height:110px}
+.p10 .cropImg[src*="stadtplan"]{max-height:250px}
+.p10 .cropImg[src*="car-help"]{max-height:150px;float:right;margin-left:10px}
+.p10 .checkList{font-size:15px}
+.p13 .infoBox{font-size:13px}
+.p14 .cropImg[src*="haus-plan"]{max-height:270px}
+.p14 .cropImg[src*="elena-maria"]{max-height:120px;float:right;margin-left:10px}
+.p14 .grammar{font-size:14px}
+.p14 .grammar td{padding:3px}
+.p14 .cropImg[src*="lex-haus-row"]{max-height:100px}
+.p15 .ad{font-size:12px;padding:6px 8px}
+.p15 .ad .cropImg{max-height:80px}
+.p15 .grammar{font-size:14px}
+.p15 .grammar td{padding:3px}
+.p15 .introGrid{display:block}
+.p15 .cropImg[src*="lex-wohn-row"]{max-height:95px}
+.p15 .infoBox{font-size:13px;margin:6px 0}
+.p15 .bookLines{font-size:15px}
+.p16 .bookLines{font-size:15px}
+.p16 .grammar{font-size:14px}
+.p17 .fenster .cropImg{max-height:110px;max-width:110px}
+.p17 .grammar{font-size:14px}
+.p18 .grammar{font-size:13px}
+.p18 .grammar td{padding:2px 4px}
+.p18 .batchHero{height:280px}
+.p18 .blogText{font-size:13px;padding:8px 10px}
+.p18 .bookLines{font-size:14px}
+.p18 .cropImg[src*="lex-einrichtung-row"]{max-height:85px}
+.p19 .grammar{font-size:14px}
+.p19 .grammar td{padding:3px}
+.p19 .bookLines{font-size:15px}
+.p20 .grammar{font-size:14px}
+.p20 .bookLines{font-size:15px}
+.p21 .magazine p{font-size:13px;line-height:1.35;margin:4px 0}
+.p21 .batchHero{height:290px}
+.p21 .cropImg{max-height:180px}
+.p21 .fenster .cropImg{max-height:100px;max-width:120px}
+.p21 .grammar{font-size:14px}
+.p21 .grammar td{padding:3px}
+.p22 .cropImg{max-height:140px;float:right;margin-left:10px}
+.p22 .checkList{font-size:15px}
+.p22 .infoBox{font-size:12px}
+.p23 .blogText{font-size:13px}
+.p23 .blogText .cropImg{max-height:85px;max-width:120px}
+.p23 .grammar{font-size:14px}
+.p23 .grammar td{padding:3px}
+.p24 .introGrid{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;padding:10px 0}
+.p24 .introGrid p{font-size:14px;line-height:1.4;margin:4px 0}
+.p24 .cropImg[src*="tanzschritte"]{max-height:130px}
+.p26 .grammar{font-size:14px}
+.p26 .grammar td{padding:3px}
+.p26 .cropImg[src*="lex-hotel-row"]{max-height:90px}
+.p26 .cropImg[src*="elevator-small"]{max-height:140px;float:right;margin-left:10px}
+.p26 .cropImg[src*="hotel-cartoon"]{max-height:170px;float:right;margin-left:10px}
+.p26 .checkList{font-size:14px}
+.p27 .ad{font-size:12px;padding:6px 8px}
+.p27 .grammar{font-size:13px}
+.p27 .grammar td{padding:3px}
+.p27 .checkList{font-size:14px}
+.p27 .cropImg[src*="lex-bad-row"]{max-height:90px}
+.p28 .grammar{font-size:14px}
+.p28 .grammar td{padding:3px}
+.p28 .bookLines{font-size:15px}
+.p10 .batchQuiz .grammar{font-size:12px}
+.p10 .batchQuiz .grammar td{padding:2px}
+.p10 .cropImg[src*="stadtplan"]{max-height:220px}
+.p10 .cropImg[src*="car-help"]{max-height:125px}
+.p10 table.grammar:last-child{font-size:13px}
+.p13 .batchHero{height:470px}
+.p13 .introGrid{display:grid;grid-template-columns:1fr 1fr;gap:8px 18px;padding:10px 0}
+.p13 .grammar{font-size:13px}
+.p13 .grammar td{padding:2px}
+.p15 .introGrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:8px 0}
+.p15 .introGrid .bookLines{font-size:14px}
+.p15 .introGrid .infoBox{font-size:12px}
+.p15 .introGrid .grammar{font-size:13px}
+.p15 .batchQuiz .grammar{font-size:13px}
+.p15 .batchQuiz .grammar td{padding:2px}
+.p15 .ad{font-size:11px}
+.p15 section{padding-bottom:30px}
+.p18 .batchQuiz .grammar{font-size:12px}
+.p18 .batchQuiz .grammar td{padding:1px 3px}
+.p18 .blogText{font-size:12px}
+.p18 .batchHero{height:250px}
+.p21 .magazine p{font-size:12px;line-height:1.3;margin:3px 0}
+.p21 .magazine h3{font-size:18px}
+.batch section{padding:14px 40px 34px 48px}
+.batch section.intro{padding-top:0}
+.batch h2{margin:10px 0 6px}
+.p10 .cropImg{max-height:90px}
+.p10 .cropImg[src*="stadtplan"]{max-height:200px}
+.p10 .cropImg[src*="car-help"]{max-height:120px}
+.p15 .bookLines{font-size:12px;line-height:1.35}
+.p15 .batchQuiz select{font-size:11px}
+.p15 .instruction{font-size:15px!important}
+.p18 .batchQuiz .grammar{font-size:11px}
+.p18 .batchQuiz .grammar td{padding:0 3px}
+.p18 .batchQuiz select{font-size:11px}
+.p18 .blogText{font-size:11px}
+.p18 .batchHero{height:220px}
+.p21 .magazine p{font-size:11.5px}
+.p21 .batchHero{height:255px}
+.p21 .fenster .cropImg{max-height:90px;max-width:110px}
+.p15 .ad{line-height:1.3}
+.p15 .ad .cropImg{max-height:60px}
+.p15 .batchQuiz .grammar{font-size:12px}
+.p18 .batchQuiz .grammar{font-size:10px}
+.p18 .blogText{font-size:10.5px}
+.p18 .batchHero{height:190px}
+.p10 h2{margin:8px 0 5px}
+.p10 .cropImg[src*="stadtplan"]{max-height:190px}
+.p15 .batchQuiz .grammar td{padding:1px 2px}
+.p15 .adGrid{gap:5px}
+.p15 .infoBox{font-size:11px;padding:5px 8px}
+.p18 .blogText{font-size:10px}
+.p18 .instruction{font-size:14px!important}
+.p18 .batchHero{height:175px}
+.p18 h2{margin:8px 0 4px}
+.p18 .batchQuiz .grammar{line-height:1.15}
+.p18 .batchQuiz select{padding:2px}
+.p18 .cropImg[src*="lex-einrichtung-row"]{max-height:70px}
