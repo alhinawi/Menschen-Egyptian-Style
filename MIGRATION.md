@@ -51,3 +51,7 @@ AB17-20 practice forms, declared-answer grading, notes, solution reveal, vocabul
 ## Text-selection controls and gesture regression
 
 Translation-mode, native text-selection mode and selected-text action buttons are React components backed by a selection store. Selection matching and transparent artwork-text geometry stay in a focused DOM service so browser selection ranges remain accurate. Native phone touch tests pass at 320/390/430: zoomed panning, stationary held folds, release completion, short-drag return and backward turns. Paper-sound tests confirm trusted-touch audio unlock, audible waveform, short-return sound and mute persistence.
+
+## Printed markup milestone
+
+The original L1 generated tables, all 30 scan-backed workbook page sections, page choices and cover social icons are now structured React content/components. Application source no longer uses `innerHTML`, `outerHTML`, `insertAdjacentHTML` or runtime `eval` (the preserved PageFlip library is excluded from that source audit). Original assets, contact destinations and labels are unchanged. All-route smoke, 17-engine grading, eight legacy suites, selected-text/audio and native gesture/paper-sound checks pass. Full-document navigation remains intentional; the fold and text-geometry services still own their documented DOM islands.
