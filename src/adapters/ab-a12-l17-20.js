@@ -9,7 +9,7 @@ const norm=s=>{const t=String(s).normalize('NFC').toLocaleLowerCase('de').trim()
 let pageIndex=0,scale=1,timer;
 
 function notify(s){const n=$('#notice');n.textContent=s;n.hidden=false;clearTimeout(timer);timer=setTimeout(()=>n.hidden=true,3500)}
-data.forEach(p=>{const s=document.createElement('section');s.className='page';s.dataset.page=p.page;s.setAttribute('aria-label','Arbeitsbuch Seite '+p.page);s.innerHTML='<img class="scan" src="assets/ab-a12-p'+p.page+'.webp" alt="Menschen A1.2 Arbeitsbuch, gedruckte Seite '+p.page+'" draggable="false">';stage.append(s);const o=document.createElement('option');o.value=p.page;o.textContent=p.page+' · '+p.title;$('#pageJump').append(o)});
+
 const pages=[...stage.children];
 const flip=new St.PageFlip(stage,{width:900,height:1220,size:'fixed',usePortrait:true,autoSize:false,drawShadow:true,maxShadowOpacity:.08,flippingTime:360,mobileScrollSupport:true,useMouseEvents:false,clickEventForward:true,disableFlipByClick:true,showPageCorners:false});
 function progress(){$('#progress').textContent=Object.entries(state).filter(([k,v])=>k.startsWith('done-')&&v).length+' ✓'}
