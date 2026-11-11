@@ -1,0 +1,188 @@
+/* Printed-page composition for Kursbuch A1.1, lessons 10-12, module 4 and Aktionsseiten. */
+.batch .strip{width:100%;height:120px;object-fit:contain;display:block;margin:0}
+.batch .strip.tall{height:170px}
+.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;align-items:start}
+.fotoRow{display:grid;gap:10px;margin:8px 0}
+.fotoRow.four{grid-template-columns:repeat(4,1fr)}
+.fotoRow.five{grid-template-columns:repeat(5,1fr)}
+.fotoRow img{width:100%;height:110px;object-fit:contain}
+.fotoRow figure{margin:0;text-align:center}
+.fotoRow figcaption{font:13px Arial;color:#527285}
+.igelGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px 12px;margin:8px 0}
+.igelGrid .igel{font:15px Georgia;border:1px dashed #c9bfa8;padding:5px 8px;background:#fffef6}
+.miniDialog{background:#f5f0e4;border-left:4px solid #d6ca9c;padding:8px 12px;margin:8px 0;font:16px/1.45 Georgia}
+.miniDialog p{margin:4px 0}
+.bigN{display:inline-block;font:700 15px Arial;color:#fff;background:#c8503c;border-radius:50%;width:22px;height:22px;line-height:22px;text-align:center;margin-right:6px}
+.moduleTitle{font:26px Georgia;color:#23406b;margin:2px 0 10px;letter-spacing:.5px}
+.moduleTitle.small{font-size:21px}
+.aktionTitle{font:28px Georgia;color:#8c2f2f;margin:0 0 6px;text-align:right;letter-spacing:2px}
+.kbRef{font:13px Arial;color:#527285;margin:10px 0 4px}
+.lessonBadge{background:#c8503c;color:#fff;font:700 13px Arial;padding:2px 7px;margin:0 3px}
+.taskN{background:#c8503c;color:#fff;font:700 12px Arial;padding:2px 5px;margin-left:3px}
+.partnerTag{background:#3d5a99;color:#fff;font:700 12px Arial;padding:2px 7px;margin-left:8px}
+.calendarCard{border:1px solid #d8cfb8;background:#fffef6;padding:6px;margin:8px 0}
+.calendarCard .cal{font-size:13px;width:100%}
+.calendarCard .cal td,.calendarCard .cal th{padding:2px 4px;border:1px solid #e5ddc8;height:22px}
+.calendarCard .cal th{background:#f4ecd4;font:13px Arial}
+.calNote{font:14px Georgia;margin:4px 0 0}
+.calCols{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.calHead{font:700 14px Arial;background:#f4ecd4;padding:3px 6px}
+.calNotes{font:13px Georgia;color:#444}
+.emailCard{border:1px solid #d8cfb8;background:#fffef6;padding:12px 16px;margin:8px 0}
+.emailSubject{border-bottom:1px solid #d8cfb8;padding-bottom:5px;margin-top:0}
+.emails .emailCard{margin-bottom:14px}
+.pantoImg{width:100%;height:150px;object-fit:contain;display:block;margin:6px 0}
+.festGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0}
+.festBox{border:1px solid #ddd3bd;background:#fffef6;padding:8px}
+.festBox img{width:100%;height:120px;object-fit:contain}
+.assignRow{display:grid;grid-template-columns:1fr 60px;gap:8px;align-items:center;padding:3px 0;font:16px Georgia}
+.smallPortrait2{width:120px;height:auto;object-fit:contain}
+.blogHeader{border-bottom:3px solid #e5b93c;margin-bottom:10px;padding-bottom:4px}
+.blogTitle{font:700 24px Georgia;color:#2d4d2d;margin:0}
+.blogSub{font:14px Arial;color:#667;margin:2px 0 0}
+.blogGrid{display:grid;grid-template-columns:150px 1fr;gap:16px;margin-top:8px}
+.blogLinks{border-right:1px solid #ddd3bd;padding-right:10px}
+.blogLinks a{display:block;font:14px Arial;color:#305486;padding:2px 0;text-decoration:none}
+.blogLinks a.activeLink{font-weight:700;color:#1c3a68}
+.blogPosts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.blogPost{font:14px/1.45 Georgia;border-bottom:1px dotted #c9bfa8;padding-bottom:6px}
+.blogPost h4{margin:0 0 3px;font:700 15px Georgia}
+.blogPhotos{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px}
+.blogPhotos img{width:100%;height:90px;object-fit:cover}
+.comment{font:13px Georgia;background:#f5f0e4;padding:6px 9px;margin:6px 0;border-left:3px solid #c9bfa8}
+.filmSplit{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:8px 0}
+.seasonGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:8px 0}
+.seasonGrid figure{margin:0;text-align:center;font:14px Georgia}
+.seasonGrid img{width:100%;height:95px;object-fit:contain}
+.drawRow{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:8px 0}
+.drawRow figure{margin:0;text-align:center}
+.drawRow img{width:100%;height:95px;object-fit:contain}
+.drawRow select{font-size:12px;width:100%;margin-top:3px}
+.gapForm p{font:16px/2.1 Georgia;margin:6px 0}
+.aktionPage .batchBody{padding-top:14px}
+.weekTable{font-size:12px;width:100%}
+.weekTable th{font:12px Arial;background:#e8f0d8;padding:3px}
+.weekTable td{border:1px solid #d8cfb8;padding:3px;font-size:12px;vertical-align:top;min-width:80px}
+.gapCell input{width:100%;font-size:12px!important}
+.notesInput{border-bottom:1px dashed #999!important;font-size:14px!important;width:90px}
+.diceImg{width:120px;height:90px;object-fit:contain}
+.boardImg{width:100%;height:230px;object-fit:contain;display:block;margin:6px 0}
+.variantRow{display:flex;gap:24px;font:15px Georgia;margin:8px 0}
+.bingoGrid{width:100%;font-size:14px}
+.bingoGrid th{font:700 14px Georgia;background:#f8f3e2;padding:5px;border:1px solid #e0d6bd}
+.bingoGrid td{border:1px solid #e0d6bd;padding:6px;text-align:center}
+.infoBox{float:right;border:1px solid #b8c4d8;background:#f4f7fb;padding:8px 10px;margin:4px 0 8px 12px;font:14px Georgia}
+.infoBox b{font:12px Arial;color:#305486}
+.infoBox .grammar{margin:4px 0 0;font-size:14px}
+.infoBox .grammar td{padding:1px 4px}
+.dictEntry{border:1px solid #d8cfb8;background:#fffef6;padding:8px 10px;font:14px/1.45 Georgia}
+.songTitle{font:22px Georgia;margin:4px 0 8px}
+.songGrid{display:grid;grid-template-columns:150px 1fr;gap:16px;align-items:start}
+.songGrid img{width:150px;height:150px;object-fit:contain}
+.songLyrics{font:14px/1.4 Georgia}
+.songLyrics p{margin:0 0 8px}
+.songGaps{font-size:14px}
+.songGaps td{padding:2px 5px}
+.zuerichText{font:14px/1.45 Georgia;border-top:2px solid #ccc2a8;border-bottom:2px solid #ccc2a8;padding:8px 4px;margin:8px 0}
+.zuerichTitle{font:700 17px Georgia;margin:0 0 6px}
+.footnote{font:12px Georgia;color:#555}
+.sideImg{width:100%;height:150px;object-fit:contain}
+.magazineBody .assign{grid-template-columns:1fr 95px;font-size:15px}
+.magazineBody .assign select{width:95px;font-size:13px}
+.p71 .fotoRow.four img{height:85px}
+.p71 .zuerichText{font-size:13px;line-height:1.4}
+.p71 .cols2{gap:16px}
+.p71 .portraitWide{height:110px}
+.p72 .songLyrics{font-size:13px}
+.p72 .songGaps{font-size:13px}
+.p88 .weekTable td,.p91 .weekTable td{font-size:11px;min-width:70px}
+.p88 .grammar td,.p91 .grammar td,.p94 .grammar td{font-size:14px;padding:3px}
+.p92 .bingoGrid td{padding:4px;font-size:13px}
+.p92 .dictEntry{font-size:13px}
+.p95 .fotoRow.five img{height:80px}
+.p95 .grammar td{font-size:14px;padding:2px 4px}
+.p96 .gapForm p{font-size:14px;line-height:2.0}
+.p96 .calendarCard .cal{font-size:11px}
+.p96 .calendarCard .cal td{height:16px;padding:1px 3px}
+.p96 .sideImg{height:120px}
+.dense .miniDialog{font-size:14px;padding:6px 10px}
+.dense .festBox img{height:100px}
+.dense .fotoRow img{height:100px}
+.dense .igelGrid .igel{font-size:14px}
+/* Density fixes measured at 390px width, zoom 1 (page height 1515). */
+.p58 .batchBody,.p59 .batchBody,.p63 .batchBody,.p64 .batchBody,.p66 .batchBody{padding-top:10px;padding-bottom:50px}
+.p58 .batchBody>h2,.p59 .batchBody>h2,.p63 .batchBody>h2,.p64 .batchBody>h2,.p66 .batchBody>h2{margin-top:10px;font-size:16px;margin-bottom:6px}
+.p58 .strip{height:70px}
+.p58 .instruction,.p59 .instruction,.p63 .instruction,.p64 .instruction,.p66 .instruction,.p70 .instruction{font-size:13px!important;margin:4px 0!important}
+.p58 .grammar,.p59 .grammar,.p64 .grammar,.p66 .grammar{font-size:13px;margin:3px 0}
+.p58 .grammar td,.p59 .grammar td,.p64 .grammar td,.p66 .grammar td{padding:2px 3px}
+.p58 .assign,.p66 .assign{font-size:13px;padding:2px 0}
+.p58 .assign select,.p66 .assign select{font-size:12px}
+.p58 .bookLines,.p59 .bookLines,.p64 .bookLines,.p66 .bookLines{font-size:13px;line-height:1.3;margin:4px 0 5px 14px}
+.p58 .wordbank,.p59 .wordbank,.p64 .wordbank,.p66 .wordbank{font-size:13px;margin:4px 0}
+.p58 .listen,.p59 .listen,.p66 .listen{margin-bottom:3px}
+.p58 .check,.p59 .check,.p63 .check,.p64 .check,.p66 .check,.p70 .check{margin-top:3px}
+.p58 .fotoRow img,.p59 .fotoRow img{height:60px}
+.p58 .cols2,.p59 .cols2,.p64 .cols2,.p66 .cols2{gap:10px}
+.p58 .batchBody p,.p59 .batchBody p,.p63 .batchBody p,.p66 .batchBody p{font-size:13px;margin:4px 0;line-height:1.35}
+.p59 .igelGrid .igel{font-size:12px;padding:3px 5px}
+.p59 .igelGrid{gap:4px 6px;margin:4px 0}
+.p59 .miniDialog,.p58 .miniDialog,.p64 .miniDialog,.p66 .miniDialog{font-size:12px;padding:4px 8px;margin:4px 0}
+.p59 .fotoRow{gap:5px;margin:4px 0}
+.p59 img{max-height:90px;object-fit:contain}
+.p63 .emails .emailCard{padding:6px 9px;margin:4px 0}
+.p63 .emailCard p{font-size:13px;line-height:1.35;margin:3px 0}
+.p63 .emailSubject{padding-bottom:2px;font-size:13px}
+.p63 .communication{font-size:13px;padding:5px}
+.p64 .notes{min-height:30px;height:34px;font-size:13px}
+.p64 .profile{padding:5px 9px;margin:4px 0 8px}
+.p64 .profile p{font-size:13px;line-height:1.35}
+.p64 .profile h3{font-size:17px;margin-bottom:4px}
+.p66 .festGrid{gap:6px;margin:4px 0}
+.p66 .festBox{padding:4px}
+.p66 .festBox img{height:55px}
+.p66 .festBox p{font-size:12px;margin:2px 0;line-height:1.3}
+.p66 .fotoRow img{height:60px}
+.p66 .seasonGrid img{height:55px}
+.p66 .seasonGrid{margin:4px 0}
+.p70 .filmSplit{gap:8px;margin:4px 0}
+.p70 .batchBody>h2{font-size:15px;margin-top:8px}
+.p70 .grammar{font-size:13px}
+.p70 .grammar td{padding:2px 3px}
+.p70 img{max-height:80px}
+.p70 .assign{font-size:13px;padding:1px 0}
+.p70 .sourceNotice{font-size:12px!important;margin:4px 0!important;padding:5px 8px!important}
+.p63 .emails .emailCard{padding:4px 7px;margin:2px 0}
+.p63 .emailCard p{font-size:12px;line-height:1.28;margin:2px 0}
+.p63 .batchBody>h2{font-size:15px;margin-top:6px;margin-bottom:4px}
+.p63 .cols2{gap:10px}
+.p63 .verbWord{min-height:18px}
+.p63 .emailSubject{font-size:12px;padding-bottom:1px}
+.p59 .grammar{font-size:12px}
+.p59 .grammar td{padding:1px 3px}
+.p59 .bookLines{font-size:12px;margin:3px 0 4px 12px}
+.p67 .batchBody{padding-top:12px}
+.p67 .batchBody>h2{margin-top:10px}
+.p63 .emailCard p{font-size:11px;line-height:1.22;margin:1px 0}
+.p63 .emails .emailCard{padding:3px 6px}
+.p63 .batchBody{padding-top:6px}
+.p63 .instruction{font-size:12px!important;margin:2px 0!important}
+.p63 .batchBody>h2{font-size:14px;margin-top:4px;margin-bottom:2px}
+.p63 .listen{margin-bottom:2px}
+.p59 .igelGrid .igel{font-size:11px;padding:2px 4px}
+.p59 img{max-height:75px}
+.p59 .batchBody>h2{font-size:15px;margin-top:7px;margin-bottom:4px}
+.p63 .emailCard p{font-size:10.5px;line-height:1.18}
+.p63 .communication{font-size:12px;padding:4px;margin:2px 0}
+.p63 .wordbank{font-size:12px;margin:2px 0}
+.p63 .check{margin-top:2px}
+.p63 .emailCard p{font-size:10px;line-height:1.15}
+.p91 .batchBody{padding-top:10px}
+.p91 .boardImg{height:200px}
+.p91 .grammar td{padding:1px 4px;font-size:13px}
+.p91 .miniDialog{font-size:12px;padding:4px 8px;margin:3px 0}
+.p91 .weekTable td{font-size:10px}
+.p63 .strip{height:60px}
+.p63 .pantoImg{height:70px}
+.p63 .grammarNote{font-size:12px;padding:2px 8px}
+.p63 .grammar td{padding:1px 4px;font-size:12px}
