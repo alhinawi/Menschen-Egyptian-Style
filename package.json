@@ -7,7 +7,8 @@
     "test": "node tests/content.test.cjs",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "test:react": "node tests/react/foundation.cjs"
+    "test:react": "node tests/react/foundation.cjs",
+    "test:react:all": "node tests/react/run-all.cjs"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^6.3.0",
