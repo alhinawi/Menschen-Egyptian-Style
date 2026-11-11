@@ -8,4 +8,4 @@ export default defineConfig({plugins:[react(),{name:'book-static-assets',closeBu
   if(name==='assets')fs.cpSync(name,'dist/assets',{recursive:true});
   else if(/\.(css|svg|png|jpg|webp|mp3)$/.test(name))fs.copyFileSync(name,path.join('dist',name));
  }
-}}],build:{outDir:'dist',emptyOutDir:true},server:{host:'127.0.0.1'}});
+}}],build:{outDir:'dist',emptyOutDir:true,rolldownOptions:{input:Object.fromEntries(fs.readdirSync('.').filter(n=>n.endsWith('.html')).map(n=>[n,n]))}},server:{host:'127.0.0.1'}});
