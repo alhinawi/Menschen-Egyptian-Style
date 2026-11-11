@@ -1,4 +1,5 @@
 import {createElement, memo} from 'react';
+import {CoverSocials} from './CoverSocials';
 import {SelectionControls} from '../meanings/SelectionControls';
 import {PersistentField} from '../persistence/PersistentFields';
 import {QuizContext,QuizForm,QuizFeedback,AnswerField} from '../exercises/QuizState';
@@ -18,6 +19,7 @@ function render(node,key,formKey=null,quizEnabled=false){
   else if(k==='checked')props.defaultChecked=true;
   else props[aliases[k]||k]=booleans.has(k)?true:v;
  }
+ if(attrs.class?.split(' ').includes('coverSocials'))return createElement(tag,props,createElement(CoverSocials));
  if(tag==='select'){const selected=children.filter(n=>Array.isArray(n)&&n[0]==='option'&&'selected' in n[1]).map(n=>n[1].value??n[2].join(''));if(selected.length)props.defaultValue=props.multiple?selected:selected[0]}
  if(tag==='textarea'){props.defaultValue=children.join('');return createElement(PersistentField,{key,tag,attrs:props,children:[]})}
  if(tag==='form'&&(attrs.class?.split(' ').some(c=>['batchQuiz','simpleQuiz'].includes(c))||['names','speakers'].includes(attrs.id))&&quizEnabled)formKey=attrs['data-key']||attrs.id;
