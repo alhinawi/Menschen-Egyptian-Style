@@ -1,3 +1,5 @@
+import {WordBank} from '../exercises/WordBank';
+import {RatingDot} from '../persistence/RatingDot';
 import {TaskControl,TaskFeedback,TaskMode} from '../exercises/CustomTasks';
 import {createElement, memo} from 'react';
 import {CoverSocials} from './CoverSocials';
@@ -27,6 +29,8 @@ function render(node,key,formKey=null,quizEnabled=false,taskKey=null){
  if(tag==='form'&&(attrs.class?.split(' ').some(c=>['batchQuiz','simpleQuiz'].includes(c))||['names','speakers'].includes(attrs.id))&&quizEnabled)formKey=attrs['data-key']||attrs.id;
  if('data-answer-group' in attrs){taskKey=path;props['data-react-task-id']=path}
  const rendered=children.map((child,i)=>render(child,path+'.'+i,formKey,quizEnabled,taskKey));
+ if(attrs.class?.split(' ').includes('markBank'))return createElement(WordBank,{key,tag,attrs:props,words:children.join('').split('|').map(w=>w.trim()).filter(Boolean)});
+ if(attrs.class?.split(' ').includes('rateDot'))return createElement(RatingDot,{key,tag,attrs:props,children:rendered});
  if(quizEnabled){
   if(['originFeedback','musicFeedback','verbsFeedback'].includes(attrs.id))return createElement(TaskFeedback,{key,tag,attrs:{...props,'data-task-feedback':attrs.id,'data-section-feedback':'true'},children:rendered});
   if(taskKey&&attrs.class?.split(' ').includes('feedback'))return createElement(TaskFeedback,{key,tag,attrs:{...props,'data-task-feedback':taskKey},children:rendered});
@@ -38,7 +42,7 @@ function render(node,key,formKey=null,quizEnabled=false,taskKey=null){
   if(attrs.class?.split(' ').includes('feedback'))return createElement(QuizFeedback,{key,tag,attrs:props,formKey,children:rendered});
   if('data-answer' in attrs)return createElement(AnswerField,{key,tag,attrs:props,answerId:formKey+':'+path,children:rendered});
  }
- if(['prev','next','plus','minus','fit','pageJump','lessonNav'].includes(attrs.id)||attrs.class?.split(' ').includes('soundToggle'))return createElement(ReaderControl,{key,tag,attrs:props,children:rendered});
+ if(['prev','next','plus','minus','fit','pageJump','lessonNav','closeAudio','palette','audioToggle','clearMap'].includes(attrs.id)||attrs.class?.split(' ').some(c=>['soundToggle','listen','coverOpen'].includes(c))||'data-jump' in attrs||'data-color' in attrs)return createElement(ReaderControl,{key,tag,attrs:{...props,'data-react-control-id':path},children:rendered});
  if(attrs.id==='zoomValue')return createElement(ZoomValue,{key,tag,attrs:props,children:rendered});
  if(['input','select'].includes(tag))return createElement(PersistentField,{key,tag,attrs:props,children:rendered});
  return createElement(tag,props,...rendered);

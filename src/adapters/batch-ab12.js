@@ -52,19 +52,9 @@ let suppressMeaningUntil=0;viewport.addEventListener('touchend',()=>{if(pinching
 
 $('#lessonNav').onchange=e=>{const target=e.target.value;if(target==='index.html'){location.href=target;return}const n=Number(target.split('#')[1]);flip.turnToPage(n-6);scrollTo(0,0);viewport.scrollLeft=0;history.replaceState(null,'','#'+n)};
 
-const pageJump=$('#pageJump');pages.forEach((p,i)=>{const o=document.createElement('option');o.value=i;o.textContent='S. '+p.dataset.page;pageJump.append(o)});
 $('#palette').onclick=()=>{const n=String((Number(document.body.dataset.palette||'1')%3)+1);palette(n)};
 $('.audioDock').hidden=true;
 const audioToggle=$('#audioToggle');if(audioToggle)audioToggle.onclick=()=>{const a=$('#audio');if(a.paused)a.play().catch(()=>{});else a.pause()};
-document.querySelectorAll('.markBank').forEach(bank=>{
- const words=bank.textContent.split('|').map(w=>w.trim()).filter(Boolean);bank.textContent='';
- for(const w of words){const s=document.createElement('span');s.className='tapMark';s.textContent=w;s.onclick=()=>s.classList.toggle('marked');bank.append(s)}
- const btn=document.createElement('button');btn.type='button';btn.className='check';btn.textContent='Prüfen ✓';bank.after(btn);
- const fb=document.createElement('p');fb.className='feedback';fb.setAttribute('role','status');btn.after(fb);
- btn.onclick=()=>{const correct=bank.dataset.answer.split('|').map(w=>normalizeAnswer(w));let ok=true;
-  for(const s of bank.querySelectorAll('.tapMark')){const should=correct.includes(normalizeAnswer(s.textContent));const good=s.classList.contains('marked')===should;mark(s,good);ok&&=good}
-  fb.className='feedback '+(ok?'good':'retry');fb.textContent=ok?'✓ Richtig!':'Noch nicht ganz. Hören Sie noch einmal.';tone(ok);announce(ok);state['done-'+bank.dataset.key]=ok;save();updateProgress()};
-});
 
 return {persistence:{getState:()=>state,update(values){Object.assign(state,values);save()}},exercise:{options:{radioTargets:true},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
 
