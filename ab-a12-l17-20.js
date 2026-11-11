@@ -2,7 +2,7 @@
 const $=s=>document.querySelector(s),data=window.AB1720_PAGES,stage=$('#pageStage'),spread=$('#spread'),viewport=$('#viewport'),storage='menschen-ab-a12-l17-20-v1';
 let state={};try{state=JSON.parse(localStorage.getItem(storage)||'{}')}catch{};const save=()=>{try{localStorage.setItem(storage,JSON.stringify(state))}catch{}};
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const norm=s=>String(s).normalize('NFC').toLocaleLowerCase('de').trim().replace(/[.!?]+$/,'').replace(/[„“"']/g,'').replace(/\s*\/\s*/g,'/').replace(/\s+/g,' ');
+const norm=s=>{const t=String(s).normalize('NFC').toLocaleLowerCase('de').trim();if(/^[.!?]+$/.test(t))return t;return t.replace(/[.!?]+$/,'').replace(/[„“"']/g,'').replace(/\s*\/\s*/g,'/').replace(/\s+/g,' ')};
 let pageIndex=0,scale=1,timer;
 $('#audioTracks').after($('.audioDock'));
 $('#practice').addEventListener('close',()=>{$('#audio').pause();$('.audioDock').hidden=true});
