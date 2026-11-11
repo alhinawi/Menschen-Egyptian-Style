@@ -6,7 +6,7 @@ const toast=document.createElement('div');toast.className='answerToast';toast.hi
 function mark(el,ok){el.classList.toggle('answerCorrect',ok);el.classList.toggle('answerWrong',!ok)}function feedback(form,ok){const p=form.querySelector('.feedback');p.className='feedback '+(ok?'good':'retry');p.textContent=ok?'✓ Richtig!':'Noch nicht ganz. Hören Sie noch einmal.';tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress();}
 
 const normalizeAnswer=s=>s.normalize('NFC').toLocaleLowerCase('de').trim().replace(/[.!?]+$/,'').replace(/\s+/g,' ');
-for(const form of document.querySelectorAll('.batchQuiz'))form.onsubmit=e=>{e.preventDefault();const results=[...form.querySelectorAll('[data-answer]')].map(el=>{const v=normalizeAnswer(el.value);const ok=el.dataset.answer.split('|').some(a=>normalizeAnswer(a)===v);mark(el,ok);return ok});feedback(form,results.length>0&&results.every(Boolean));};
+
 for(const b of document.querySelectorAll('.verbWord'))b.onclick=()=>b.classList.toggle('selectedVerb');
 const checkVerbs=document.querySelector('[data-check-verbs]');checkVerbs.onclick=()=>{let ok=true;document.querySelectorAll('.verbWord').forEach(b=>{const correct=b.classList.contains('selectedVerb')===(b.dataset.verb==='true');if(b.classList.contains('selectedVerb')||b.dataset.verb==='true')mark(b,correct);else b.classList.remove('answerCorrect','answerWrong');ok&&=correct});tone(ok);announce(ok);state['done-verbs']=ok;save();updateProgress()};
 function updateProgress(){$('#progress').textContent=Object.entries(state).filter(([k,v])=>k.startsWith('done-')&&v).length+' ✓'}updateProgress();
@@ -69,5 +69,7 @@ document.querySelectorAll('.verbWord').forEach((b,i)=>{b.classList.toggle('selec
 verbText.addEventListener('click',e=>{if(document.body.dataset.textSelection==='true')return;if(document.body.dataset.translationMode!=='sentence')return;const sentence=e.target.closest('.verbSentence');if(!sentence)return;e.stopImmediatePropagation();e.preventDefault();window.openBookMeaning(e.target.closest('.verbWord')?.textContent,sentence.dataset.phrase,'sentence')},{capture:true});
 // The screenplay can be marked without confusing a mark with a translation tap.
 const screenplay=document.querySelector('.screenplay'),scriptMode=document.createElement('button');scriptMode.type='button';scriptMode.className='check';scriptMode.textContent='Verben markieren: aus';screenplay.prepend(scriptMode);let markScript=false;scriptMode.onclick=()=>{markScript=!markScript;scriptMode.textContent='Verben markieren: '+(markScript?'an':'aus')};screenplay.addEventListener('click',e=>{if(!markScript||e.target===scriptMode)return;const word=e.target.closest('.tapWord');if(word){e.stopImmediatePropagation();e.preventDefault();word.classList.toggle('selectedVerb')}},{capture:true});
+
+return {exercise:{options:{rejectBlank:false},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
 
 }
