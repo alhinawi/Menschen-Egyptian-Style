@@ -6,7 +6,7 @@ const toast=document.createElement('div');toast.className='answerToast';toast.hi
 function mark(el,ok){el.classList.toggle('answerCorrect',ok);el.classList.toggle('answerWrong',!ok)}function feedback(form,ok){const p=form.querySelector('.feedback');p.className='feedback '+(ok?'good':'retry');p.textContent=ok?'✓ Richtig!':'Noch nicht ganz. Hören Sie noch einmal.';tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress();}
 
 const normalizeAnswer=s=>s.normalize('NFC').toLocaleLowerCase('de').trim().replace(/[.!?]+$/,'').replace(/\s+/g,' ');
-for(const form of document.querySelectorAll('.batchQuiz'))form.onsubmit=e=>{e.preventDefault();const results=[...form.querySelectorAll('[data-answer]')].map(el=>{const v=normalizeAnswer(el.value);const ok=el.dataset.answer.split('|').some(a=>normalizeAnswer(a)===v);mark(el,ok);return ok});feedback(form,results.length>0&&results.every(Boolean));};
+
 for(const b of document.querySelectorAll('.verbWord'))b.onclick=()=>b.classList.toggle('selectedVerb');
 function updateProgress(){$('#progress').textContent=Object.entries(state).filter(([k,v])=>k.startsWith('done-')&&v).length+' ✓'}updateProgress();
 for(const [i,el] of [...document.querySelectorAll('input,select,textarea')].filter(e=>e.id!=='pageJump').entries()){const key=el.dataset.note||'field-'+i;if(el.type==='radio')el.checked=state[key]===true;else if(state[key]!==undefined)el.value=state[key];el.addEventListener('input',()=>{state[key]=el.type==='radio'?el.checked:el.value;if(el.type==='radio')document.querySelectorAll(`input[name="${el.name}"]`).forEach(peer=>{if(peer!==el)state['field-'+[...document.querySelectorAll('input,select,textarea')].filter(e=>e.id!=='pageJump').indexOf(peer)]=false});save()})}
@@ -55,5 +55,7 @@ $('#lessonNav').onchange=e=>{const target=e.target.value;if(target==='index.html
 function jumpPrinted(n){const i=pages.findIndex(p=>p.dataset.page===String(n));if(i>=0){flip.turnToPage(i);history.replaceState(null,'','#'+n);scrollTo(0,0);viewport.scrollLeft=0}}
 document.querySelectorAll('[data-jump]').forEach(a=>a.onclick=e=>{e.preventDefault();jumpPrinted(a.dataset.jump)});window.addEventListener('hashchange',()=>jumpPrinted(location.hash.slice(1)));
 for(const c of document.querySelectorAll('.freeDraw')){const key='draw-'+c.dataset.draw,ctx=c.getContext('2d');ctx.lineWidth=3;ctx.lineCap='round';ctx.strokeStyle='#255b80';if(state[key]){const img=new Image();img.onload=()=>ctx.drawImage(img,0,0);img.src=state[key]}let active=false;const point=e=>{const r=c.getBoundingClientRect();return[(e.clientX-r.left)*c.width/r.width,(e.clientY-r.top)*c.height/r.height]};c.onpointerdown=e=>{e.preventDefault();e.stopPropagation();c.setPointerCapture(e.pointerId);active=true;ctx.beginPath();ctx.moveTo(...point(e))};c.onpointermove=e=>{if(!active)return;e.preventDefault();ctx.lineTo(...point(e));ctx.stroke()};const stop=()=>{if(!active)return;active=false;state[key]=c.toDataURL();save()};c.onpointerup=stop;c.onpointercancel=stop;document.querySelector('[data-clear="'+c.dataset.draw+'"]').onclick=()=>{ctx.clearRect(0,0,c.width,c.height);delete state[key];save()}}
+
+return {exercise:{options:{rejectBlank:false},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
 
 }

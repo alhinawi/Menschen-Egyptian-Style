@@ -7,7 +7,7 @@ const toast=document.createElement('div');toast.className='answerToast';toast.hi
 function mark(el,ok){el.classList.toggle('answerCorrect',ok);el.classList.toggle('answerWrong',!ok)}function feedback(form,ok){const p=form.querySelector('.feedback');p.className='feedback '+(ok?'good':'retry');p.textContent=ok?'✓ Richtig!':'Noch nicht ganz. Hören Sie noch einmal.';tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress();}
 
 const normalizeAnswer=s=>s.normalize('NFC').toLocaleLowerCase('de').trim().replace(/[.!?]+$/,'').replace(/\s+/g,' ');
-for(const form of document.querySelectorAll('.batchQuiz'))form.onsubmit=e=>{e.preventDefault();const results=[...form.querySelectorAll('[data-answer]')].map(el=>{let v;if(el.classList.contains('radioGroup')){v=el.querySelector('input:checked')?.value||''}else v=el.value;v=normalizeAnswer(v);const ok=v!==''&&el.dataset.answer.split('|').some(a=>normalizeAnswer(a)===v);mark(el,ok);return ok});feedback(form,results.length>0&&results.every(Boolean));};
+
 // Click-to-mark words (e.g. souvenirs) with a paired check button.
 for(const b of document.querySelectorAll('.markWord'))b.onclick=()=>b.classList.toggle('selectedVerb');
 for(const btn of document.querySelectorAll('[data-check-marks]')){const group=document.querySelector(btn.dataset.checkMarks);btn.onclick=()=>{let ok=true;group.querySelectorAll('.markWord').forEach(b=>{const correct=b.classList.contains('selectedVerb')===(b.dataset.target==='true');if(b.classList.contains('selectedVerb')||b.dataset.target==='true')mark(b,correct);else b.classList.remove('answerCorrect','answerWrong');ok&&=correct});tone(ok);announce(ok);state['done-'+group.id]=ok;save();updateProgress()}}
@@ -59,5 +59,7 @@ const canvas=$('#glassesPaint');if(canvas){const ctx=canvas.getContext('2d');let
 if(state.glassesPaint){const im=new Image();im.onload=()=>ctx.drawImage(im,0,0);im.src=state.glassesPaint;}
 function point(e){const r=canvas.getBoundingClientRect();return [(e.clientX-r.left)*canvas.width/r.width,(e.clientY-r.top)*canvas.height/r.height]}
 canvas.onpointerdown=e=>{e.preventDefault();canvas.setPointerCapture(e.pointerId);drawing=true;ctx.beginPath();ctx.moveTo(...point(e));};canvas.onpointermove=e=>{if(!drawing)return;e.preventDefault();ctx.lineTo(...point(e));ctx.stroke()};const stop=()=>{if(!drawing)return;drawing=false;state.glassesPaint=canvas.toDataURL();save()};canvas.onpointerup=stop;canvas.onpointercancel=stop;$('#clearGlasses').onclick=()=>{ctx.clearRect(0,0,canvas.width,canvas.height);delete state.glassesPaint;save()};}
+
+return {exercise:{options:{rejectBlank:true},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
 
 }
