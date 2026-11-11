@@ -17,8 +17,7 @@
       "pronunciation-index",
       "batch-ab12-pronunciation-index",
       "meanings",
-      "batch-ab12",
-      "cover-socials"
+      "batch-ab12"
     ],
     "bodyAttrs": {},
     "reactExercises": true
@@ -58,8 +57,7 @@
       "pronunciation-index",
       "ab-a12-l21-24-pronunciation-index",
       "meanings",
-      "ab-a12-l21-24",
-      "cover-socials"
+      "ab-a12-l21-24"
     ],
     "bodyAttrs": {},
     "reactExercises": true
@@ -88,15 +86,13 @@
       "themes.css"
     ],
     "initializers": [
-      "ab-l10-12-inline-0",
       "glossary",
       "ab-batch-glossary",
       "ab-batch-sentences",
       "pronunciation-index",
       "ab-batch-pronunciation-index",
       "meanings",
-      "ab-batch",
-      "cover-socials"
+      "ab-batch"
     ],
     "bodyAttrs": {},
     "reactExercises": true
@@ -130,8 +126,7 @@
       "pronunciation-index",
       "ab-l7-9-pronunciation-index",
       "meanings",
-      "ab-l7-9",
-      "cover-socials"
+      "ab-l7-9"
     ],
     "bodyAttrs": {},
     "reactExercises": true
@@ -167,8 +162,7 @@
       "ab1-unit-translations",
       "ab1-unit-audio",
       "meanings",
-      "ab1",
-      "cover-socials"
+      "ab1"
     ],
     "bodyAttrs": {},
     "reactExercises": true
@@ -192,8 +186,7 @@
       "ab2-artwork-text",
       "selection-units",
       "meanings",
-      "ab2",
-      "cover-socials"
+      "ab2"
     ],
     "bodyAttrs": {},
     "reactExercises": true
@@ -217,8 +210,7 @@
       "ab3-artwork-text",
       "selection-units",
       "meanings",
-      "ab3",
-      "cover-socials"
+      "ab3"
     ],
     "bodyAttrs": {},
     "reactExercises": true
@@ -243,8 +235,7 @@
       "batch-pronunciation-index",
       "ab46-pronunciation-index",
       "meanings",
-      "ab46",
-      "cover-socials"
+      "ab46"
     ],
     "bodyAttrs": {},
     "reactExercises": true
@@ -268,8 +259,7 @@
       "abm1-artwork-text",
       "selection-units",
       "meanings",
-      "abm1",
-      "cover-socials"
+      "abm1"
     ],
     "bodyAttrs": {},
     "reactExercises": true
@@ -292,8 +282,7 @@
       "unit-translations",
       "unit-audio",
       "meanings",
-      "book",
-      "cover-socials"
+      "book"
     ],
     "bodyAttrs": {},
     "reactExercises": true
@@ -316,8 +305,7 @@
       "pronunciation-index",
       "kb-a12-pronunciation-index",
       "meanings",
-      "kb-a12-l13-16",
-      "cover-socials"
+      "kb-a12-l13-16"
     ],
     "bodyAttrs": {},
     "reactExercises": true
@@ -339,8 +327,7 @@
       "kb-a12-l17-20-sentences",
       "kb-a12-l17-20-pronunciation-index",
       "meanings",
-      "kb-a12-l17-20",
-      "cover-socials"
+      "kb-a12-l17-20"
     ],
     "bodyAttrs": {},
     "reactExercises": true
@@ -378,8 +365,7 @@
       "batch-pronunciation-index",
       "batch-pronunciation-index-l10-12",
       "meanings",
-      "batch-l10-12",
-      "cover-socials"
+      "batch-l10-12"
     ],
     "bodyAttrs": {},
     "reactExercises": true
@@ -405,8 +391,7 @@
       "unit-translations",
       "unit-audio",
       "meanings",
-      "batch",
-      "cover-socials"
+      "batch"
     ],
     "bodyAttrs": {},
     "reactExercises": true
@@ -435,8 +420,7 @@
       "batch-selection-units-l21-24",
       "batch-unit-arabic-l21-24",
       "meanings",
-      "batch-l21-24",
-      "cover-socials"
+      "batch-l21-24"
     ],
     "bodyAttrs": {},
     "reactExercises": true
@@ -459,8 +443,7 @@
       "pronunciation-index",
       "batch-pronunciation-index-46",
       "meanings",
-      "batch-l46",
-      "cover-socials"
+      "batch-l46"
     ],
     "bodyAttrs": {},
     "reactExercises": true
@@ -486,8 +469,7 @@
       "batch-pronunciation-index",
       "batch79-pronunciation-index",
       "meanings",
-      "batch79",
-      "cover-socials"
+      "batch79"
     ],
     "bodyAttrs": {},
     "reactExercises": true
