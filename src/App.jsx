@@ -11,8 +11,9 @@ import translations from './adapters/unit-translations';
 import audio from './adapters/unit-audio';
 import meanings from './adapters/meanings';
 import engine from './adapters/book';
-import themes from './adapters/themes';
+import socials from './adapters/cover-socials';
+import {ReaderThemes,AudioHint,CrossBookNavigation} from './components/ReaderThemes';
 export default function App(){
- useLayoutEffect(()=>mountLesson([glossary,pronunciation,units,artwork,translations,audio,meanings,engine,themes]),[]);
- return <BookMarkup nodes={nodes}/>;
+ useLayoutEffect(()=>mountLesson([glossary,pronunciation,units,artwork,translations,audio,meanings,engine,socials]),[]);
+ return <><BookMarkup nodes={nodes}/><ReaderThemes/><AudioHint/><CrossBookNavigation/></>;
 }
