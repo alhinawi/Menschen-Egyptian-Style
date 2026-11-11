@@ -1,0 +1,1 @@
+window.BOOK_UNIT_AUDIO={"a11unit0596":"assets/pronunciation/a11l23s092.mp3","a11unit0597":"assets/pronunciation/a11l23s093.mp3","a11unit0598":"assets/pronunciation/a11l23s094.mp3","a11unit0599":"assets/pronunciation/a11l23s095.mp3"};
