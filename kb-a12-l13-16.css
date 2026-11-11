@@ -156,3 +156,14 @@
 .p18 .batchQuiz .grammar{line-height:1.15}
 .p18 .batchQuiz select{padding:2px}
 .p18 .cropImg[src*="lex-einrichtung-row"]{max-height:70px}
+.p10 .batchQuiz select{font-size:11px;padding:3px}
+.p10 .cropImg[src*="stadtplan"]{max-height:185px}
+.p10 .cropImg[src*="car-help"]{max-height:105px}
+.p10 .batchQuiz .grammar{font-size:11px;line-height:1.2}
+.p10 .batchQuiz .grammar td{padding:1px 3px}
+.p10 .cropImg[src*="stadtplan"]{max-height:165px}
+.p10 .cropImg{max-height:70px}
+.p10 .cropImg[src*="stadtplan"]{max-height:165px}
+.p10 .cropImg[src*="car-help"]{max-height:105px}
+.p10>table.grammar{font-size:12px}
+.p10>table.grammar td{padding:1px 4px}
