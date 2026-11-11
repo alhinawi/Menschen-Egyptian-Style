@@ -2,14 +2,18 @@ import {createContext,createElement,useContext,useSyncExternalStore} from 'react
 import {flushSync} from 'react-dom';
 export const QuizContext=createContext(null);
 const normalize=s=>String(s).normalize('NFC').toLocaleLowerCase('de').trim().replace(/[.!?]+$/,'').replace(/\s+/g,' ');
-export function evaluateQuiz(form,{rejectBlank=false}={}){
- const fields=[...form.querySelectorAll('[data-answer]')];
+export function evaluateQuiz(form,{rejectBlank=false,radioTargets=false,lessonOne=false,speakerAnswers=[]}={}){
+ if(lessonOne&&form.id==='names'){const statuses=['paco','nicole'].map(name=>{const el=form.querySelector('input[name='+name+']:checked');return{el:el?.closest('label')||form,ok:el?.value===(name==='paco'?'Paco':'Nicole')}});return{ok:statuses.every(s=>s.ok),statuses}}
+ if(lessonOne&&form.id==='speakers'){const data=new FormData(form),statuses=speakerAnswers.map((answer,i)=>({el:form.querySelectorAll('tbody tr')[i],ok:data.get('s'+i)===String(answer)}));return{ok:statuses.every(s=>s.ok),statuses}}
+ const fields=[...form.querySelectorAll('[data-answer]')].filter(el=>!radioTargets||el.type!=='radio');
  const statuses=fields.map(el=>{
   let ok;
   if(el.type==='checkbox')ok=el.checked===(el.dataset.answer==='true');
+  else if(lessonOne)ok=el.value.trim()===el.dataset.answer;
   else{const value=normalize(el.classList.contains('radioGroup')?el.querySelector('input:checked')?.value||'':el.value);ok=(!rejectBlank||value!=='')&&el.dataset.answer.split('|').some(a=>normalize(a)===value)}
   return{el,ok};
  });
+ if(radioTargets){const groups={};for(const el of form.querySelectorAll('input[type=radio]'))(groups[el.name]||=[]).push(el);for(const group of Object.values(groups)){const target=group.find(el=>el.dataset.answer!==undefined),ok=!!target?.checked;for(const el of group){const host=el.closest('label,td')||el;if(el===target||el.checked)statuses.push({el:host,ok:el===target&&ok});else host.classList.remove('answerCorrect','answerWrong')}}}
  const unique=form.dataset.key!=='ab2-t3'||new Set([...form.querySelectorAll('input')].map(i=>normalize(i.value))).size===4;
  return{ok:unique&&statuses.length>0&&statuses.every(s=>s.ok),statuses};
 }

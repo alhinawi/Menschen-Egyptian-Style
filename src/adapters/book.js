@@ -11,9 +11,7 @@ let state={};try{state=JSON.parse(localStorage.getItem('menschen-book-l1')||'{}'
 let audioContext,soundsOn=state.sounds!==false;function tone(correct){if(!soundsOn)return;try{audioContext||=new(window.AudioContext||window.webkitAudioContext)();audioContext.resume();const t=audioContext.currentTime;(correct?[659.25,880]:[293.66,261.63]).forEach((frequency,i)=>{const o=audioContext.createOscillator(),g=audioContext.createGain();o.type='sine';o.frequency.value=frequency;g.gain.setValueAtTime(0,t+i*.12);g.gain.linearRampToValueAtTime(.075,t+i*.12+.025);g.gain.exponentialRampToValueAtTime(.001,t+i*.12+.24);o.connect(g);g.connect(audioContext.destination);o.start(t+i*.12);o.stop(t+i*.12+.26)})}catch{}}
 const toast=document.createElement('div');toast.className='answerToast';toast.hidden=true;toast.setAttribute('role','status');document.body.append(toast);let toastTimeout;function announce(ok){toast.hidden=false;toast.className='answerToast '+(ok?'good':'retry');toast.textContent=ok?'✓ Richtig! · إجابة صح':'Noch einmal versuchen. · جرّب تاني';clearTimeout(toastTimeout);toastTimeout=setTimeout(()=>toast.hidden=true,4000)}
 function mark(el,ok){el.classList.toggle('answerCorrect',ok);el.classList.toggle('answerWrong',!ok)}function feedback(form,ok){const p=form.querySelector('.feedback');p.className='feedback '+(ok?'good':'retry');p.textContent=ok?'✓ Richtig!':'Noch nicht ganz. Hören Sie noch einmal.';tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress();}
-$('#names').onsubmit=e=>{e.preventDefault();const d=new FormData(e.target);let ok=true;for(const [name,answer] of [['paco','Paco'],['nicole','Nicole']]){const chosen=e.target.querySelector(`input[name="${name}"]:checked`);if(chosen)mark(chosen.closest('label'),chosen.value===answer);ok=ok&&d.get(name)===answer;}feedback(e.target,ok)};
-$('#speakers').onsubmit=e=>{e.preventDefault();const d=new FormData(e.target);const results=speakerAnswers.map((n,i)=>{const ok=d.get('s'+i)===String(n);mark(e.target.querySelectorAll('tbody tr')[i],ok);return ok});feedback(e.target,results.every(Boolean));};
-for(const form of document.querySelectorAll('.simpleQuiz'))form.onsubmit=e=>{e.preventDefault();const results=[...form.querySelectorAll('[data-answer]')].map(el=>{const ok=el.value.trim()===el.dataset.answer;mark(el,ok);return ok});feedback(form,results.every(Boolean));};
+
 function sectionCheck(button,root,answers,out){$(button).onclick=()=>{const results=[...document.querySelectorAll(root)].map((e,i)=>{const ok=e.value.trim()===answers[i];mark(e,ok);return ok}),ok=results.every(Boolean);$(out).textContent=ok?'✓ Richtig!':'Noch einmal hören.';$(out).className='helper '+(ok?'good':'retry');tone(ok);announce(ok);state['done-'+button]=ok;save();updateProgress()};}
 sectionCheck('#checkOrigin','#origin select',['Nicole','Paco','Paco','Paco','Nicole'],'#originFeedback');sectionCheck('#checkMusic','#flags select',['1','5','2','4','3'],'#musicFeedback');sectionCheck('#verbs','.verb input',['st','e'],'#verbsFeedback');
 function updateProgress(){$('#progress').textContent=Object.entries(state).filter(([k,v])=>k.startsWith('done-')&&v).length+' ✓'}updateProgress();
@@ -61,5 +59,7 @@ let suppressMeaningUntil=0;viewport.addEventListener('touchend',()=>{if(pinching
 
 document.querySelector(".coverOpen").onclick=()=>turn(1);
 window.addEventListener('hashchange',()=>{const h=location.hash.slice(1);if(h==='cover')flip.turnToPage(0);else if(Number(h)>=9&&Number(h)<=12)flip.turnToPage(Number(h)-8)});
+
+return {exercise:{options:{lessonOne:true,speakerAnswers},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
 
 }
