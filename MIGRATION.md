@@ -23,3 +23,7 @@ The root `vercel.json` is deliberately unchanged. Hosting configuration and any 
 ## All-route rendering milestone
 
 All 26 entry points now render through React, including both books and original-image viewers. Per-route content and compatibility engines are lazy loaded. Existing document URLs remain intact. Eight original browser suites pass through the static production build at four widths. This milestone still uses compatibility engines for exercises and page-fold gestures; it is not the final native-state migration.
+
+## Reader-control milestone
+
+React components now own reader navigation/zoom/select/sound control events and subscribe to a shared reader store. Existing fold/gesture engines are accessed through a small bridge; they no longer install active DOM property handlers on those controls. Zoom text and sound SVGs are rendered by React, avoiding competing writes. The original-viewer controls use the same bridge. All eight original browser suites pass after this change. Exercise marking/persistence and meaning dialogs still need native React ports.
