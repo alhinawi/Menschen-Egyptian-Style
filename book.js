@@ -59,3 +59,4 @@ window.initMeanings();
 let suppressMeaningUntil=0;viewport.addEventListener('touchend',()=>{if(pinching)suppressMeaningUntil=Date.now()+400},{capture:true});stage.addEventListener('click',e=>{if(Date.now()<suppressMeaningUntil)e.stopImmediatePropagation()},{capture:true});
 
 document.querySelector(".coverOpen").onclick=()=>turn(1);
+window.addEventListener('hashchange',()=>{const h=location.hash.slice(1);if(h==='cover')flip.turnToPage(0);else if(Number(h)>=9&&Number(h)<=12)flip.turnToPage(Number(h)-8)});
