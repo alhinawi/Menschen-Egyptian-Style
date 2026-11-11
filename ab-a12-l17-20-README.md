@@ -15,7 +15,7 @@ Entry point: `ab-a12-l17-20.html`. All additions are isolated. No existing app f
 
 This is a scan-backed interactive preview, not the complete selectable-text reconstruction used by the earlier Kursbuch pages. Original printed content, drawings, photos, example answers and order remain visible in the scan. Exercises are entered in a separate per-page practice dialog. The source scans contain handwritten sample answers; these are not erased.
 
-The glossary covers selected vocabulary and sentences, not every printed word. Added word/sentence pronunciation clips are not yet attached. Original exercise recordings are attached. The literature page has no original recording in the supplied materials.
+The glossary covers selected vocabulary and sentences, not every printed word. All 157 glossary word/sentence pronunciation clips are attached as separate study recordings, not original Hueber recordings. Original exercise recordings are attached. The literature page has no original recording in the supplied materials.
 
 ## Answer grounding
 
@@ -34,7 +34,7 @@ Text entry tolerates case, terminal punctuation and repeated whitespace, not arb
 
 ## Verification
 
-Run `node tests/ab-a12-l17-20.cjs` with Playwright and Chrome. Tests cover 320, 390, 430 and 1280px widths, all 30 scans, all 330 checked fields, wrong answers, solution reveal, saved notes, vocabulary search, original image display and audio routing. Existing `npm test` remains unchanged and passes.
+Run `node tests/ab-a12-l17-20.cjs` with Playwright and Chrome. Tests cover 320, 390, 430 and 1280px widths, all 30 scans, all 330 checked fields, wrong answers, solution reveal, saved notes, vocabulary search, original image display and audio routing. All 157 pronunciation assets were checked with ffprobe. Existing `npm test` remains unchanged and passes.
 
 The answer-fill test proves the UI accepts its declared keys. It is not an independent linguistic review of the answer file. Source keys were checked separately during transcription.
 
