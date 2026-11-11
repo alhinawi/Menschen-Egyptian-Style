@@ -1,4 +1,5 @@
 import {createElement, memo} from 'react';
+import {PersistentField} from '../persistence/PersistentFields';
 import {QuizContext,QuizForm,QuizFeedback,AnswerField} from '../exercises/QuizState';
 import {ReaderControl,ZoomValue} from './ReaderControls';
 const aliases={class:'className',for:'htmlFor',tabindex:'tabIndex',readonly:'readOnly',maxlength:'maxLength',colspan:'colSpan',rowspan:'rowSpan',contenteditable:'contentEditable',autoplay:'autoPlay',playsinline:'playsInline',crossorigin:'crossOrigin',srcset:'srcSet',viewbox:'viewBox',spellcheck:'spellCheck',autofocus:'autoFocus'};
@@ -16,7 +17,7 @@ function render(node,key,formKey=null,quizEnabled=false){
   else props[aliases[k]||k]=booleans.has(k)?true:v;
  }
  if(tag==='select'){const selected=children.filter(n=>Array.isArray(n)&&n[0]==='option'&&'selected' in n[1]).map(n=>n[1].value??n[2].join(''));if(selected.length)props.defaultValue=props.multiple?selected:selected[0]}
- if(tag==='textarea'){props.defaultValue=children.join('');return createElement(tag,props)}
+ if(tag==='textarea'){props.defaultValue=children.join('');return createElement(PersistentField,{key,tag,attrs:props,children:[]})}
  if(tag==='form'&&(attrs.class?.split(' ').some(c=>['batchQuiz','simpleQuiz'].includes(c))||['names','speakers'].includes(attrs.id))&&quizEnabled)formKey=attrs['data-key']||attrs.id;
  const rendered=children.map((child,i)=>render(child,path+'.'+i,formKey,quizEnabled));
  if(formKey&&quizEnabled){
@@ -26,6 +27,7 @@ function render(node,key,formKey=null,quizEnabled=false){
  }
  if(['prev','next','plus','minus','fit','pageJump','lessonNav'].includes(attrs.id)||attrs.class?.split(' ').includes('soundToggle'))return createElement(ReaderControl,{key,tag,attrs:props,children:rendered});
  if(attrs.id==='zoomValue')return createElement(ZoomValue,{key,tag,attrs:props,children:rendered});
+ if(['input','select'].includes(tag))return createElement(PersistentField,{key,tag,attrs:props,children:rendered});
  return createElement(tag,props,...rendered);
 }
 // The printed content is immutable. PageFlip and exercise adapters own their
