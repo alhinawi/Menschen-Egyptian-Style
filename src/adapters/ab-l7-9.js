@@ -8,10 +8,6 @@ function mark(el,ok){el.classList.toggle('answerCorrect',ok);el.classList.toggle
 const normalizeAnswer=s=>s.normalize('NFC').toLocaleLowerCase('de').trim().replace(/[.!?]+$/,'').replace(/\s+/g,' ');
 
 // Pick-one and match groups: [data-pick] buttons inside a [data-answer-group] quiz.
-for(const group of document.querySelectorAll('[data-answer-group]')){const buttons=[...group.querySelectorAll('[data-pick]')];
- for(const b of buttons)b.onclick=()=>{if(b.dataset.multi){b.classList.toggle('picked')}else{const scope=b.dataset.scope?group.querySelectorAll(`[data-scope="${b.dataset.scope}"]`):buttons;scope.forEach(x=>{if(x!==b&&x.dataset.scope===b.dataset.scope)x.classList.remove('picked')});b.classList.add('picked')}};
- const check=group.querySelector('.check');if(check)check.onclick=e=>{e.preventDefault();let all=[],anyPicked=false;for(const b of buttons){if(!b.classList.contains('picked'))continue;anyPicked=true;const ok=b.dataset.correct==='true';mark(b,ok);all.push(ok)}for(const b of buttons){if(b.dataset.correct==='true'&&!b.classList.contains('picked')&&b.dataset.required==='true'){mark(b,false);all.push(false)}}
-  const ok=anyPicked&&all.length>0&&all.every(Boolean);const host=group.closest('.batchQuiz')||group;feedback(host,ok)}}
 function updateProgress(){$('#progress').textContent=Object.entries(state).filter(([k,v])=>k.startsWith('done-')&&v).length+' ✓'}updateProgress();
 
 const soundButton=$('.soundToggle');function soundText(){soundButton.dataset.soundOn=String(soundsOn)}soundText();soundButton.onclick=()=>{soundsOn=!soundsOn;if(soundsOn)unlockBookAudio();state.sounds=soundsOn;save();soundText()};
