@@ -31,3 +31,7 @@ React components now own reader navigation/zoom/select/sound control events and 
 ## Exercise grading milestone
 
 Fifteen standard batch engines now use native React form submission, result state, feedback text and declared-answer field styling. Duplicate-answer constraints, checkbox/radio-group rules and existing normalization are preserved. Audio feedback, saved progress and field persistence still use compatibility services. L1 custom exercises, AB13-16 custom radio checks, scan-backed AB17-20 practice and meaning dialogs remain to port. All 15 standard batches pass answer tests, and the eight original regression suites pass.
+
+## Meaning dialog milestone
+
+Word/sentence/selected-text dialog rendering, mode buttons, close button, disabled/pending states and Arabic/German text now use a native React component and store. Selection matching and queued pronunciation remain services with unchanged maps. Audio stops on close and cleanup. Original suites plus AB2/AB3/module selected-text audio tests pass.
