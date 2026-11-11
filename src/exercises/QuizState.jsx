@@ -1,4 +1,5 @@
 import {createContext,createElement,useContext,useSyncExternalStore} from 'react';
+import {PersistentField} from '../persistence/PersistentFields';
 import {flushSync} from 'react-dom';
 export const QuizContext=createContext(null);
 const normalize=s=>String(s).normalize('NFC').toLocaleLowerCase('de').trim().replace(/[.!?]+$/,'').replace(/\s+/g,' ');
@@ -26,4 +27,4 @@ export function createQuizStore(){
 }
 export function QuizForm({attrs,children}){const store=useContext(QuizContext);return createElement('form',{...attrs,onSubmit:e=>{e.preventDefault();flushSync(()=>store.submit(e.currentTarget))}},...children)}
 export function QuizFeedback({tag,attrs,formKey,children}){const store=useContext(QuizContext),snapshot=useSyncExternalStore(store.subscribe,store.getSnapshot,store.getSnapshot);const result=snapshot.results[formKey];return createElement(tag,{...attrs,className:result===undefined?attrs.className:'feedback '+(result?'good':'retry')},result===undefined?children:result?'✓ Richtig!':'Noch nicht ganz. Hören Sie noch einmal.')}
-export function AnswerField({tag,attrs,answerId,children}){const store=useContext(QuizContext),snapshot=useSyncExternalStore(store.subscribe,store.getSnapshot,store.getSnapshot),status=snapshot.fields[answerId];return createElement(tag,{...attrs,'data-react-answer-id':answerId,className:(attrs.className||'')+(status===undefined?'':status?' answerCorrect':' answerWrong')},...children)}
+export function AnswerField({tag,attrs,answerId,children}){const store=useContext(QuizContext),snapshot=useSyncExternalStore(store.subscribe,store.getSnapshot,store.getSnapshot),status=snapshot.fields[answerId],props={...attrs,'data-react-answer-id':answerId,className:(attrs.className||'')+(status===undefined?'':status?' answerCorrect':' answerWrong')};if(['input','select','textarea'].includes(tag))return createElement(PersistentField,{tag,attrs:props,children});return createElement(tag,props,...children)}
