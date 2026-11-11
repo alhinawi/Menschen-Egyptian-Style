@@ -9,7 +9,7 @@ const normalizeAnswer=s=>s.normalize('NFC').toLocaleLowerCase('de').trim().repla
 
 for(const b of document.querySelectorAll('.verbWord'))b.onclick=()=>b.classList.toggle('selectedVerb');
 function updateProgress(){$('#progress').textContent=Object.entries(state).filter(([k,v])=>k.startsWith('done-')&&v).length+' ✓'}updateProgress();
-for(const [i,el] of [...document.querySelectorAll('input,select,textarea')].filter(e=>e.id!=='pageJump').entries()){const key=el.dataset.note||'field-'+i;if(el.type==='radio')el.checked=state[key]===true;else if(state[key]!==undefined)el.value=state[key];el.addEventListener('input',()=>{state[key]=el.type==='radio'?el.checked:el.value;if(el.type==='radio')document.querySelectorAll(`input[name="${el.name}"]`).forEach(peer=>{if(peer!==el)state['field-'+[...document.querySelectorAll('input,select,textarea')].filter(e=>e.id!=='pageJump').indexOf(peer)]=false});save()})}
+
 const soundButton=$('.soundToggle');function soundText(){soundButton.dataset.soundOn=String(soundsOn)}soundText();soundButton.onclick=()=>{soundsOn=!soundsOn;if(soundsOn)unlockBookAudio();state.sounds=soundsOn;save();soundText()};
 function palette(n){document.body.dataset.palette=n;document.querySelectorAll('.paletteButton').forEach(b=>b.classList.toggle('selected',b.dataset.palette===n));state.palette=n;save()}palette(state.palette||'1');document.querySelectorAll('.paletteButton').forEach(b=>b.onclick=()=>palette(b.dataset.palette));
 const pages=[...document.querySelectorAll('.page')];pages.forEach(p=>{p.hidden=false;p.dataset.density='soft'});let pageIndex=0,scale=1;
@@ -56,6 +56,6 @@ function jumpPrinted(n){const i=pages.findIndex(p=>p.dataset.page===String(n));i
 document.querySelectorAll('[data-jump]').forEach(a=>a.onclick=e=>{e.preventDefault();jumpPrinted(a.dataset.jump)});window.addEventListener('hashchange',()=>jumpPrinted(location.hash.slice(1)));
 for(const c of document.querySelectorAll('.freeDraw')){const key='draw-'+c.dataset.draw,ctx=c.getContext('2d');ctx.lineWidth=3;ctx.lineCap='round';ctx.strokeStyle='#255b80';if(state[key]){const img=new Image();img.onload=()=>ctx.drawImage(img,0,0);img.src=state[key]}let active=false;const point=e=>{const r=c.getBoundingClientRect();return[(e.clientX-r.left)*c.width/r.width,(e.clientY-r.top)*c.height/r.height]};c.onpointerdown=e=>{e.preventDefault();e.stopPropagation();c.setPointerCapture(e.pointerId);active=true;ctx.beginPath();ctx.moveTo(...point(e))};c.onpointermove=e=>{if(!active)return;e.preventDefault();ctx.lineTo(...point(e));ctx.stroke()};const stop=()=>{if(!active)return;active=false;state[key]=c.toDataURL();save()};c.onpointerup=stop;c.onpointercancel=stop;document.querySelector('[data-clear="'+c.dataset.draw+'"]').onclick=()=>{ctx.clearRect(0,0,c.width,c.height);delete state[key];save()}}
 
-return {exercise:{options:{rejectBlank:false},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
+return {persistence:{getState:()=>state,update(values){Object.assign(state,values);save()}},exercise:{options:{rejectBlank:false},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
 
 }

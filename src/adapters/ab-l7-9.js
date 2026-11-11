@@ -13,7 +13,7 @@ for(const group of document.querySelectorAll('[data-answer-group]')){const butto
  const check=group.querySelector('.check');if(check)check.onclick=e=>{e.preventDefault();let all=[],anyPicked=false;for(const b of buttons){if(!b.classList.contains('picked'))continue;anyPicked=true;const ok=b.dataset.correct==='true';mark(b,ok);all.push(ok)}for(const b of buttons){if(b.dataset.correct==='true'&&!b.classList.contains('picked')&&b.dataset.required==='true'){mark(b,false);all.push(false)}}
   const ok=anyPicked&&all.length>0&&all.every(Boolean);const host=group.closest('.batchQuiz')||group;feedback(host,ok)}}
 function updateProgress(){$('#progress').textContent=Object.entries(state).filter(([k,v])=>k.startsWith('done-')&&v).length+' ✓'}updateProgress();
-for(const [i,el] of [...document.querySelectorAll('input,select,textarea')].filter(e=>e.id!=='pageJump').entries()){const key=el.dataset.note||'field-'+i;if(el.type==='radio')el.checked=state[key]===true;else if(state[key]!==undefined)el.value=state[key];el.addEventListener('input',()=>{state[key]=el.type==='radio'?el.checked:el.value;if(el.type==='radio')document.querySelectorAll(`input[name="${el.name}"]`).forEach(peer=>{if(peer!==el)state['field-'+[...document.querySelectorAll('input,select,textarea')].filter(e=>e.id!=='pageJump').indexOf(peer)]=false});save()})}
+
 const soundButton=$('.soundToggle');function soundText(){soundButton.dataset.soundOn=String(soundsOn)}soundText();soundButton.onclick=()=>{soundsOn=!soundsOn;if(soundsOn)unlockBookAudio();state.sounds=soundsOn;save();soundText()};
 function palette(n){document.body.dataset.palette=n;document.querySelectorAll('.paletteButton').forEach(b=>b.classList.toggle('selected',b.dataset.palette===n));state.palette=n;save()}palette(state.palette||'1');document.querySelectorAll('.paletteButton').forEach(b=>b.onclick=()=>palette(b.dataset.palette));
 const pages=[...document.querySelectorAll('.page')];pages.forEach(p=>{p.hidden=false;p.dataset.density='soft'});let pageIndex=0,scale=1;
@@ -58,6 +58,6 @@ let suppressMeaningUntil=0;viewport.addEventListener('touchend',()=>{if(pinching
 
 $('#lessonNav').onchange=e=>{const n=Number(e.target.value.split('#')[1]);flip.turnToPage(n-54);scrollTo(0,0);viewport.scrollLeft=0;history.replaceState(null,'','#'+n)};
 
-return {exercise:{options:{rejectBlank:false},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
+return {persistence:{getState:()=>state,update(values){Object.assign(state,values);save()}},exercise:{options:{rejectBlank:false},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
 
 }

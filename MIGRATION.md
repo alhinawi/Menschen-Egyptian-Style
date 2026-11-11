@@ -39,3 +39,7 @@ Word/sentence/selected-text dialog rendering, mode buttons, close button, disabl
 ## Custom grading milestone
 
 Kursbuch L1 named-speaker/radio checks and AB13-16 target-radio checks now use the shared React grading store as well. All 17 non-scan batch engines pass declared-answer checks. The scan-backed AB17-20 practice engine remains separate and is not yet ported.
+
+## Field persistence milestone
+
+React now captures field-input events and maintains field state for the 17 non-scan engines, preserving the original field-index/note keys and radio-peer behavior. The shared state object prevents later page saves from overwriting answer edits. Existing persistence regression cases pass after removing the old per-field event listeners.

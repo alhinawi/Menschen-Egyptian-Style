@@ -15,7 +15,7 @@ function mark(el,ok){el.classList.toggle('answerCorrect',ok);el.classList.toggle
 function sectionCheck(button,root,answers,out){$(button).onclick=()=>{const results=[...document.querySelectorAll(root)].map((e,i)=>{const ok=e.value.trim()===answers[i];mark(e,ok);return ok}),ok=results.every(Boolean);$(out).textContent=ok?'✓ Richtig!':'Noch einmal hören.';$(out).className='helper '+(ok?'good':'retry');tone(ok);announce(ok);state['done-'+button]=ok;save();updateProgress()};}
 sectionCheck('#checkOrigin','#origin select',['Nicole','Paco','Paco','Paco','Nicole'],'#originFeedback');sectionCheck('#checkMusic','#flags select',['1','5','2','4','3'],'#musicFeedback');sectionCheck('#verbs','.verb input',['st','e'],'#verbsFeedback');
 function updateProgress(){$('#progress').textContent=Object.entries(state).filter(([k,v])=>k.startsWith('done-')&&v).length+' ✓'}updateProgress();
-for(const [i,el] of [...document.querySelectorAll('input,select,textarea')].filter(e=>e.id!=='pageJump').entries()){const key=el.dataset.note||'field-'+i;if(el.type==='radio')el.checked=state[key]===true;else if(state[key]!==undefined)el.value=state[key];el.addEventListener('input',()=>{state[key]=el.type==='radio'?el.checked:el.value;if(el.type==='radio')document.querySelectorAll(`input[name="${el.name}"]`).forEach(peer=>{if(peer!==el)state['field-'+[...document.querySelectorAll('input,select,textarea')].filter(e=>e.id!=='pageJump').indexOf(peer)]=false});save()})}
+
 const soundButton=$('.soundToggle');function soundText(){soundButton.dataset.soundOn=String(soundsOn)}soundText();soundButton.onclick=()=>{soundsOn=!soundsOn;if(soundsOn)unlockBookAudio();state.sounds=soundsOn;save();soundText()};
 function palette(n){document.body.dataset.palette=n;document.querySelectorAll('.paletteButton').forEach(b=>b.classList.toggle('selected',b.dataset.palette===n));state.palette=n;save()}palette(state.palette||'1');document.querySelectorAll('.paletteButton').forEach(b=>b.onclick=()=>palette(b.dataset.palette));
 const pages=[...document.querySelectorAll('.page')];pages.forEach(p=>{p.hidden=false;p.dataset.density='soft'});let pageIndex=0,scale=1;
@@ -60,6 +60,6 @@ let suppressMeaningUntil=0;viewport.addEventListener('touchend',()=>{if(pinching
 document.querySelector(".coverOpen").onclick=()=>turn(1);
 window.addEventListener('hashchange',()=>{const h=location.hash.slice(1);if(h==='cover')flip.turnToPage(0);else if(Number(h)>=9&&Number(h)<=12)flip.turnToPage(Number(h)-8)});
 
-return {exercise:{options:{lessonOne:true,speakerAnswers},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
+return {persistence:{getState:()=>state,update(values){Object.assign(state,values);save()}},exercise:{options:{lessonOne:true,speakerAnswers},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
 
 }
