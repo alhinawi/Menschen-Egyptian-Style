@@ -11,7 +11,7 @@ Vite, React and React DOM. The output is static HTML/CSS/JS with local book asse
 - React renders the complete Kursbuch L1 document from structured element data, without iframes or HTML injection.
 - Vite builds the app and copies original assets with unchanged names.
 - A temporary compatibility boundary mounts the existing L1 exercise, pronunciation and page-fold engines. It disposes listeners, timers, audio and generated overlays on unmount.
-- This boundary is **not** the completed React port. Native React reader controls, themes, exercise state and the remaining lesson groups are still to follow.
+- This boundary is **not** the completed React port. Native React reader controls and exercise state are still to follow. Themes, audio hints and cross-book routing are now native React components.
 - Browser checks run against the production build at 320, 390, 430 and 1280 widths.
 
 ## Safety
@@ -19,3 +19,7 @@ Vite, React and React DOM. The output is static HTML/CSS/JS with local book asse
 The remote backup branch `backup/main-before-react-20261111` and tag `backup-main-before-react-20261111` preserve `608edd357d9545bea1c15127d108eb47168abeac`.
 
 The root `vercel.json` is deliberately unchanged. Hosting configuration and any main/production cutover need separate approval. The migration's build command is `npm run build`; output is `dist`.
+
+## All-route rendering milestone
+
+All 26 entry points now render through React, including both books and original-image viewers. Per-route content and compatibility engines are lazy loaded. Existing document URLs remain intact. Eight original browser suites pass through the static production build at four widths. This milestone still uses compatibility engines for exercises and page-fold gestures; it is not the final native-state migration.
