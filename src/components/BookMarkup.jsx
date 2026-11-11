@@ -1,4 +1,5 @@
 import {createElement, memo} from 'react';
+import {SelectionControls} from '../meanings/SelectionControls';
 import {PersistentField} from '../persistence/PersistentFields';
 import {QuizContext,QuizForm,QuizFeedback,AnswerField} from '../exercises/QuizState';
 import {ReaderControl,ZoomValue} from './ReaderControls';
@@ -9,6 +10,7 @@ function render(node,key,formKey=null,quizEnabled=false){
  const path=String(key);
  if(typeof node==='string')return node;
  const [tag,attrs,children]=node,props={key};
+ if(tag==='ReactSelectionControls')return createElement(SelectionControls,{key});
  for(let [k,v] of Object.entries(attrs)){
   if(k.startsWith('on')){if(k==='onclick'&&v==='history.back()')props.onClick=()=>history.back();else if(k==='onclick'&&v==="window.open(this.src,'_blank')")props.onClick=e=>window.open(e.currentTarget.src,'_blank','noopener');else if(k==='onchange'&&v==='location.href=this.value')props.onChange=e=>{location.href=e.currentTarget.value};continue}if(k==='selected')continue;
   if(k==='style')props.style=style(v);

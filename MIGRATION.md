@@ -47,3 +47,7 @@ React now captures field-input events and maintains field state for the 17 non-s
 ## Scan-backed workbook milestone
 
 AB17-20 practice forms, declared-answer grading, notes, solution reveal, vocabulary search/filter, pronunciation player and original-page dialog now use React components/state. The 330 answer fields, punctuation exceptions, ungraded notes and original-source limits are unchanged. All eight original regression suites pass, including the complete scan-backed workflow at four widths.
+
+## Text-selection controls and gesture regression
+
+Translation-mode, native text-selection mode and selected-text action buttons are React components backed by a selection store. Selection matching and transparent artwork-text geometry stay in a focused DOM service so browser selection ranges remain accurate. Native phone touch tests pass at 320/390/430: zoomed panning, stationary held folds, release completion, short-drag return and backward turns. Paper-sound tests confirm trusted-touch audio unlock, audible waveform, short-return sound and mute persistence.
