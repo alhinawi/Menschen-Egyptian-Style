@@ -1,0 +1,1141 @@
+{
+  "language": "de-DE",
+  "instructions": "Neutral native German, clear natural teaching pronunciation. Keep ß. Alternate approved clear voices between clips. Original MP3s remain the exercise recordings. Generate each listed standalone clip as named by id.",
+  "clips": [
+    {
+      "id": "s001",
+      "text": "Hallo!",
+      "type": "sentence"
+    },
+    {
+      "id": "s002",
+      "text": "Sich begrüßen. Sich kennenlernen.",
+      "type": "sentence"
+    },
+    {
+      "id": "s003",
+      "text": "Hören Sie. Wie heißt das Lied?",
+      "type": "sentence"
+    },
+    {
+      "id": "s004",
+      "text": "Welche deutschen Namen kennen Sie noch?",
+      "type": "sentence"
+    },
+    {
+      "id": "s005",
+      "text": "Und wer bist du?",
+      "type": "sentence"
+    },
+    {
+      "id": "s006",
+      "text": "Hören Sie und kreuzen Sie an.",
+      "type": "sentence"
+    },
+    {
+      "id": "s007",
+      "text": "Hallo! Ich heiße Paco. Und wer bist du?",
+      "type": "sentence"
+    },
+    {
+      "id": "s008",
+      "text": "Ich heiße Nicole.",
+      "type": "sentence"
+    },
+    {
+      "id": "s009",
+      "text": "Woher kommst du? Aus Spanien?",
+      "type": "sentence"
+    },
+    {
+      "id": "s010",
+      "text": "Nein, ich komme aus Mexiko.",
+      "type": "sentence"
+    },
+    {
+      "id": "s011",
+      "text": "Du kommst aus Deutschland, hm?",
+      "type": "sentence"
+    },
+    {
+      "id": "s012",
+      "text": "Aus der Schweiz?",
+      "type": "sentence"
+    },
+    {
+      "id": "s013",
+      "text": "Ich komme aus Österreich.",
+      "type": "sentence"
+    },
+    {
+      "id": "s014",
+      "text": "Ich komme aus Mexiko.",
+      "type": "sentence"
+    },
+    {
+      "id": "s015",
+      "text": "Woher kommst du?",
+      "type": "sentence"
+    },
+    {
+      "id": "s016",
+      "text": "Woher kommt die Musik?",
+      "type": "sentence"
+    },
+    {
+      "id": "s017",
+      "text": "Wer sagt was?",
+      "type": "sentence"
+    },
+    {
+      "id": "s018",
+      "text": "Wie geht’s?",
+      "type": "sentence"
+    },
+    {
+      "id": "s019",
+      "text": "Gut, danke!",
+      "type": "sentence"
+    },
+    {
+      "id": "s020",
+      "text": "Und wie geht’s Ihnen?",
+      "type": "sentence"
+    },
+    {
+      "id": "s021",
+      "text": "Auch gut.",
+      "type": "sentence"
+    },
+    {
+      "id": "s022",
+      "text": "Das ist Paco.",
+      "type": "sentence"
+    },
+    {
+      "id": "s023",
+      "text": "Guten Tag, Frau Wachter!",
+      "type": "sentence"
+    },
+    {
+      "id": "s024",
+      "text": "Woher kommen Sie?",
+      "type": "sentence"
+    },
+    {
+      "id": "s025",
+      "text": "Er kommt aus Mexiko.",
+      "type": "sentence"
+    },
+    {
+      "id": "s026",
+      "text": "Auf Wiedersehen, Herr Rodriguez!",
+      "type": "sentence"
+    },
+    {
+      "id": "s027",
+      "text": "du oder Sie?",
+      "type": "sentence"
+    },
+    {
+      "id": "s028",
+      "text": "Gespräche üben",
+      "type": "sentence"
+    },
+    {
+      "id": "s029",
+      "text": "Wie heißt du?",
+      "type": "sentence"
+    },
+    {
+      "id": "s030",
+      "text": "Ich heiße Ewa.",
+      "type": "sentence"
+    },
+    {
+      "id": "s031",
+      "text": "Woher kommst du, Ewa?",
+      "type": "sentence"
+    },
+    {
+      "id": "s032",
+      "text": "Wie heißen Sie?",
+      "type": "sentence"
+    },
+    {
+      "id": "s033",
+      "text": "Ich heiße Ewa Wolska.",
+      "type": "sentence"
+    },
+    {
+      "id": "s034",
+      "text": "Woher kommen Sie, Frau Wolska?",
+      "type": "sentence"
+    },
+    {
+      "id": "s035",
+      "text": "Wer ist das?",
+      "type": "sentence"
+    },
+    {
+      "id": "s036",
+      "text": "Gut, danke.",
+      "type": "sentence"
+    },
+    {
+      "id": "s037",
+      "text": "Wie geht es Ihnen?",
+      "type": "sentence"
+    },
+    {
+      "id": "s038",
+      "text": "Sehr gut, danke!",
+      "type": "sentence"
+    },
+    {
+      "id": "s039",
+      "text": "Es geht.",
+      "type": "sentence"
+    },
+    {
+      "id": "s040",
+      "text": "Nicht so gut.",
+      "type": "sentence"
+    },
+    {
+      "id": "s041",
+      "text": "Nach dem Befinden fragen",
+      "type": "sentence"
+    },
+    {
+      "id": "s042",
+      "text": "Guten Tag, Frau Riemann.",
+      "type": "sentence"
+    },
+    {
+      "id": "s043",
+      "text": "Danke, gut. Und Ihnen?",
+      "type": "sentence"
+    },
+    {
+      "id": "s044",
+      "text": "Hallo, Nathalie! Wie geht’s?",
+      "type": "sentence"
+    },
+    {
+      "id": "s045",
+      "text": "Sehr gut, und dir?",
+      "type": "sentence"
+    },
+    {
+      "id": "s046",
+      "text": "Das Alphabet",
+      "type": "sentence"
+    },
+    {
+      "id": "s047",
+      "text": "Hören Sie das Alphabet und sprechen Sie nach.",
+      "type": "sentence"
+    },
+    {
+      "id": "s048",
+      "text": "Mein Name ist Valerie Wulf.",
+      "type": "sentence"
+    },
+    {
+      "id": "s049",
+      "text": "Wie bitte?",
+      "type": "sentence"
+    },
+    {
+      "id": "s050",
+      "text": "Hallo oder tschüs?",
+      "type": "sentence"
+    },
+    {
+      "id": "s051",
+      "text": "Hallo",
+      "type": "sentence"
+    },
+    {
+      "id": "s052",
+      "text": "Guten Tag",
+      "type": "sentence"
+    },
+    {
+      "id": "s053",
+      "text": "Guten Morgen",
+      "type": "sentence"
+    },
+    {
+      "id": "s054",
+      "text": "Guten Abend",
+      "type": "sentence"
+    },
+    {
+      "id": "s055",
+      "text": "Gute Nacht",
+      "type": "sentence"
+    },
+    {
+      "id": "s056",
+      "text": "Tschüs",
+      "type": "sentence"
+    },
+    {
+      "id": "s057",
+      "text": "Auf Wiedersehen",
+      "type": "sentence"
+    },
+    {
+      "id": "s058",
+      "text": "Auf Wiedersehen!",
+      "type": "sentence"
+    },
+    {
+      "id": "s059",
+      "text": "Grammatik",
+      "type": "sentence"
+    },
+    {
+      "id": "s060",
+      "text": "Kommunikation",
+      "type": "sentence"
+    },
+    {
+      "id": "s061",
+      "text": "Ich kann mich begrüßen und verabschieden.",
+      "type": "sentence"
+    },
+    {
+      "id": "s062",
+      "text": "Ich kann meinen Namen sagen und buchstabieren.",
+      "type": "sentence"
+    },
+    {
+      "id": "s063",
+      "text": "Ich kann nach Namen und Herkunft fragen.",
+      "type": "sentence"
+    },
+    {
+      "id": "s064",
+      "text": "Ich kann andere vorstellen.",
+      "type": "sentence"
+    },
+    {
+      "id": "s065",
+      "text": "Ich kann fragen: Wie geht’s?",
+      "type": "sentence"
+    },
+    {
+      "id": "s066",
+      "text": "Mein Name ist Paco Rodriguez.",
+      "type": "sentence"
+    },
+    {
+      "id": "s067",
+      "text": "Wie geht es dir?",
+      "type": "sentence"
+    },
+    {
+      "id": "s068",
+      "text": "Gut, danke. Und Ihnen? - Auch gut.",
+      "type": "sentence"
+    },
+    {
+      "id": "s069",
+      "text": "Um Wiederholung bitten",
+      "type": "sentence"
+    },
+    {
+      "id": "w001",
+      "text": "hallo",
+      "type": "word"
+    },
+    {
+      "id": "w002",
+      "text": "ich",
+      "type": "word"
+    },
+    {
+      "id": "w003",
+      "text": "bin",
+      "type": "word"
+    },
+    {
+      "id": "w004",
+      "text": "heiße",
+      "type": "word"
+    },
+    {
+      "id": "w005",
+      "text": "heißt",
+      "type": "word"
+    },
+    {
+      "id": "w006",
+      "text": "heißen",
+      "type": "word"
+    },
+    {
+      "id": "w007",
+      "text": "und",
+      "type": "word"
+    },
+    {
+      "id": "w008",
+      "text": "wer",
+      "type": "word"
+    },
+    {
+      "id": "w009",
+      "text": "bist",
+      "type": "word"
+    },
+    {
+      "id": "w010",
+      "text": "du",
+      "type": "word"
+    },
+    {
+      "id": "w011",
+      "text": "sie",
+      "type": "word"
+    },
+    {
+      "id": "w012",
+      "text": "sind",
+      "type": "word"
+    },
+    {
+      "id": "w013",
+      "text": "ist",
+      "type": "word"
+    },
+    {
+      "id": "w014",
+      "text": "das",
+      "type": "word"
+    },
+    {
+      "id": "w015",
+      "text": "ein",
+      "type": "word"
+    },
+    {
+      "id": "w016",
+      "text": "eine",
+      "type": "word"
+    },
+    {
+      "id": "w017",
+      "text": "aus",
+      "type": "word"
+    },
+    {
+      "id": "w018",
+      "text": "der",
+      "type": "word"
+    },
+    {
+      "id": "w019",
+      "text": "dem",
+      "type": "word"
+    },
+    {
+      "id": "w020",
+      "text": "woher",
+      "type": "word"
+    },
+    {
+      "id": "w021",
+      "text": "kommst",
+      "type": "word"
+    },
+    {
+      "id": "w022",
+      "text": "komme",
+      "type": "word"
+    },
+    {
+      "id": "w023",
+      "text": "kommen",
+      "type": "word"
+    },
+    {
+      "id": "w024",
+      "text": "kommt",
+      "type": "word"
+    },
+    {
+      "id": "w025",
+      "text": "nein",
+      "type": "word"
+    },
+    {
+      "id": "w026",
+      "text": "ja",
+      "type": "word"
+    },
+    {
+      "id": "w027",
+      "text": "hm",
+      "type": "word"
+    },
+    {
+      "id": "w028",
+      "text": "wie",
+      "type": "word"
+    },
+    {
+      "id": "w029",
+      "text": "geht",
+      "type": "word"
+    },
+    {
+      "id": "w030",
+      "text": "geht’s",
+      "type": "word"
+    },
+    {
+      "id": "w031",
+      "text": "es",
+      "type": "word"
+    },
+    {
+      "id": "w032",
+      "text": "ihnen",
+      "type": "word"
+    },
+    {
+      "id": "w033",
+      "text": "dir",
+      "type": "word"
+    },
+    {
+      "id": "w034",
+      "text": "gut",
+      "type": "word"
+    },
+    {
+      "id": "w035",
+      "text": "guten",
+      "type": "word"
+    },
+    {
+      "id": "w036",
+      "text": "gute",
+      "type": "word"
+    },
+    {
+      "id": "w037",
+      "text": "Tag",
+      "type": "word"
+    },
+    {
+      "id": "w038",
+      "text": "Morgen",
+      "type": "word"
+    },
+    {
+      "id": "w039",
+      "text": "Abend",
+      "type": "word"
+    },
+    {
+      "id": "w040",
+      "text": "Nacht",
+      "type": "word"
+    },
+    {
+      "id": "w041",
+      "text": "danke",
+      "type": "word"
+    },
+    {
+      "id": "w042",
+      "text": "sehr",
+      "type": "word"
+    },
+    {
+      "id": "w043",
+      "text": "auch",
+      "type": "word"
+    },
+    {
+      "id": "w044",
+      "text": "nicht",
+      "type": "word"
+    },
+    {
+      "id": "w045",
+      "text": "so",
+      "type": "word"
+    },
+    {
+      "id": "w046",
+      "text": "tschüs",
+      "type": "word"
+    },
+    {
+      "id": "w047",
+      "text": "auf",
+      "type": "word"
+    },
+    {
+      "id": "w048",
+      "text": "wiedersehen",
+      "type": "word"
+    },
+    {
+      "id": "w049",
+      "text": "Herr",
+      "type": "word"
+    },
+    {
+      "id": "w050",
+      "text": "Frau",
+      "type": "word"
+    },
+    {
+      "id": "w051",
+      "text": "Name",
+      "type": "word"
+    },
+    {
+      "id": "w052",
+      "text": "Namen",
+      "type": "word"
+    },
+    {
+      "id": "w053",
+      "text": "mein",
+      "type": "word"
+    },
+    {
+      "id": "w054",
+      "text": "meinen",
+      "type": "word"
+    },
+    {
+      "id": "w055",
+      "text": "meine",
+      "type": "word"
+    },
+    {
+      "id": "w056",
+      "text": "dein",
+      "type": "word"
+    },
+    {
+      "id": "w057",
+      "text": "er",
+      "type": "word"
+    },
+    {
+      "id": "w058",
+      "text": "oder",
+      "type": "word"
+    },
+    {
+      "id": "w059",
+      "text": "was",
+      "type": "word"
+    },
+    {
+      "id": "w060",
+      "text": "hören",
+      "type": "word"
+    },
+    {
+      "id": "w061",
+      "text": "sprechen",
+      "type": "word"
+    },
+    {
+      "id": "w062",
+      "text": "nach",
+      "type": "word"
+    },
+    {
+      "id": "w063",
+      "text": "bitte",
+      "type": "word"
+    },
+    {
+      "id": "w064",
+      "text": "buchstabiere",
+      "type": "word"
+    },
+    {
+      "id": "w065",
+      "text": "buchstabieren",
+      "type": "word"
+    },
+    {
+      "id": "w066",
+      "text": "Alphabet",
+      "type": "word"
+    },
+    {
+      "id": "w067",
+      "text": "Lied",
+      "type": "word"
+    },
+    {
+      "id": "w068",
+      "text": "welche",
+      "type": "word"
+    },
+    {
+      "id": "w069",
+      "text": "deutschen",
+      "type": "word"
+    },
+    {
+      "id": "w070",
+      "text": "kennen",
+      "type": "word"
+    },
+    {
+      "id": "w071",
+      "text": "noch",
+      "type": "word"
+    },
+    {
+      "id": "w072",
+      "text": "sich",
+      "type": "word"
+    },
+    {
+      "id": "w073",
+      "text": "begrüßen",
+      "type": "word"
+    },
+    {
+      "id": "w074",
+      "text": "kennenlernen",
+      "type": "word"
+    },
+    {
+      "id": "w075",
+      "text": "Musik",
+      "type": "word"
+    },
+    {
+      "id": "w076",
+      "text": "kreuzen",
+      "type": "word"
+    },
+    {
+      "id": "w077",
+      "text": "an",
+      "type": "word"
+    },
+    {
+      "id": "w078",
+      "text": "sagt",
+      "type": "word"
+    },
+    {
+      "id": "w079",
+      "text": "Gespräche",
+      "type": "word"
+    },
+    {
+      "id": "w080",
+      "text": "üben",
+      "type": "word"
+    },
+    {
+      "id": "w081",
+      "text": "nachsprechen",
+      "type": "word"
+    },
+    {
+      "id": "w082",
+      "text": "Befinden",
+      "type": "word"
+    },
+    {
+      "id": "w083",
+      "text": "fragen",
+      "type": "word"
+    },
+    {
+      "id": "w084",
+      "text": "mich",
+      "type": "word"
+    },
+    {
+      "id": "w085",
+      "text": "verabschieden",
+      "type": "word"
+    },
+    {
+      "id": "w086",
+      "text": "kann",
+      "type": "word"
+    },
+    {
+      "id": "w087",
+      "text": "sagen",
+      "type": "word"
+    },
+    {
+      "id": "w088",
+      "text": "Herkunft",
+      "type": "word"
+    },
+    {
+      "id": "w089",
+      "text": "andere",
+      "type": "word"
+    },
+    {
+      "id": "w090",
+      "text": "vorstellen",
+      "type": "word"
+    },
+    {
+      "id": "w091",
+      "text": "Wiederholung",
+      "type": "word"
+    },
+    {
+      "id": "w092",
+      "text": "bitten",
+      "type": "word"
+    },
+    {
+      "id": "w093",
+      "text": "Grammatik",
+      "type": "word"
+    },
+    {
+      "id": "w094",
+      "text": "Kommunikation",
+      "type": "word"
+    },
+    {
+      "id": "w095",
+      "text": "Mexiko",
+      "type": "word"
+    },
+    {
+      "id": "w096",
+      "text": "Deutschland",
+      "type": "word"
+    },
+    {
+      "id": "w097",
+      "text": "Österreich",
+      "type": "word"
+    },
+    {
+      "id": "w098",
+      "text": "Spanien",
+      "type": "word"
+    },
+    {
+      "id": "w099",
+      "text": "Schweiz",
+      "type": "word"
+    },
+    {
+      "id": "w100",
+      "text": "Türkei",
+      "type": "word"
+    },
+    {
+      "id": "w101",
+      "text": "Iran",
+      "type": "word"
+    },
+    {
+      "id": "w102",
+      "text": "Frankreich",
+      "type": "word"
+    },
+    {
+      "id": "w103",
+      "text": "Wien",
+      "type": "word"
+    },
+    {
+      "id": "w104",
+      "text": "Ägypten",
+      "type": "word"
+    },
+    {
+      "id": "w105",
+      "text": "Großbritannien",
+      "type": "word"
+    },
+    {
+      "id": "w106",
+      "text": "Indien",
+      "type": "word"
+    },
+    {
+      "id": "w107",
+      "text": "Mazedonien",
+      "type": "word"
+    },
+    {
+      "id": "w108",
+      "text": "Begrüßung",
+      "type": "word"
+    },
+    {
+      "id": "w109",
+      "text": "Abschied",
+      "type": "word"
+    },
+    {
+      "id": "w110",
+      "text": "formell",
+      "type": "word"
+    },
+    {
+      "id": "w111",
+      "text": "informell",
+      "type": "word"
+    },
+    {
+      "id": "w112",
+      "text": "Konferenz",
+      "type": "word"
+    },
+    {
+      "id": "w113",
+      "text": "Party",
+      "type": "word"
+    },
+    {
+      "id": "w114",
+      "text": "Ende",
+      "type": "word"
+    },
+    {
+      "id": "w115",
+      "text": "Stunde",
+      "type": "word"
+    },
+    {
+      "id": "w116",
+      "text": "am",
+      "type": "word"
+    },
+    {
+      "id": "w117",
+      "text": "lesen",
+      "type": "word"
+    },
+    {
+      "id": "w118",
+      "text": "Dialog",
+      "type": "word"
+    },
+    {
+      "id": "w119",
+      "text": "richtig",
+      "type": "word"
+    },
+    {
+      "id": "w120",
+      "text": "falsch",
+      "type": "word"
+    },
+    {
+      "id": "w121",
+      "text": "Lernpartner",
+      "type": "word"
+    },
+    {
+      "id": "w122",
+      "text": "notieren",
+      "type": "word"
+    },
+    {
+      "id": "w123",
+      "text": "beide",
+      "type": "word"
+    },
+    {
+      "id": "w124",
+      "text": "Personen",
+      "type": "word"
+    },
+    {
+      "id": "w125",
+      "text": "für",
+      "type": "word"
+    },
+    {
+      "id": "w126",
+      "text": "einen",
+      "type": "word"
+    },
+    {
+      "id": "w127",
+      "text": "wählen",
+      "type": "word"
+    },
+    {
+      "id": "w128",
+      "text": "Antwort",
+      "type": "word"
+    },
+    {
+      "id": "w129",
+      "text": "Antworten",
+      "type": "word"
+    },
+    {
+      "id": "w130",
+      "text": "ergänzen",
+      "type": "word"
+    },
+    {
+      "id": "w131",
+      "text": "vergleichen",
+      "type": "word"
+    },
+    {
+      "id": "w132",
+      "text": "mit",
+      "type": "word"
+    },
+    {
+      "id": "w133",
+      "text": "von",
+      "type": "word"
+    },
+    {
+      "id": "w134",
+      "text": "unten",
+      "type": "word"
+    },
+    {
+      "id": "w135",
+      "text": "oben",
+      "type": "word"
+    },
+    {
+      "id": "w136",
+      "text": "einmal",
+      "type": "word"
+    },
+    {
+      "id": "w137",
+      "text": "versuchen",
+      "type": "word"
+    },
+    {
+      "id": "w138",
+      "text": "erneut",
+      "type": "word"
+    },
+    {
+      "id": "w139",
+      "text": "mir",
+      "type": "word"
+    },
+    {
+      "id": "w140",
+      "text": "wow",
+      "type": "word"
+    },
+    {
+      "id": "w141",
+      "text": "moment",
+      "type": "word"
+    },
+    {
+      "id": "w142",
+      "text": "ach",
+      "type": "word"
+    },
+    {
+      "id": "w143",
+      "text": "ähm",
+      "type": "word"
+    },
+    {
+      "id": "w144",
+      "text": "auswählen",
+      "type": "word"
+    },
+    {
+      "id": "w145",
+      "text": "laut",
+      "type": "word"
+    },
+    {
+      "id": "w146",
+      "text": "geübt",
+      "type": "word"
+    },
+    {
+      "id": "w147",
+      "text": "habe",
+      "type": "word"
+    },
+    {
+      "id": "w148",
+      "text": "Selbstübung",
+      "type": "word"
+    },
+    {
+      "id": "w149",
+      "text": "keine",
+      "type": "word"
+    },
+    {
+      "id": "w150",
+      "text": "automatische",
+      "type": "word"
+    },
+    {
+      "id": "w151",
+      "text": "Aussprachebewertung",
+      "type": "word"
+    },
+    {
+      "id": "w152",
+      "text": "Position",
+      "type": "word"
+    },
+    {
+      "id": "w153",
+      "text": "Aussage",
+      "type": "word"
+    },
+    {
+      "id": "w154",
+      "text": "W-fragen",
+      "type": "word"
+    },
+    {
+      "id": "w155",
+      "text": "sein",
+      "type": "word"
+    },
+    {
+      "id": "w156",
+      "text": "Wörter",
+      "type": "word"
+    },
+    {
+      "id": "w157",
+      "text": "Wort",
+      "type": "word"
+    },
+    {
+      "id": "w158",
+      "text": "Buchstaben",
+      "type": "word"
+    }
+  ]
+}
