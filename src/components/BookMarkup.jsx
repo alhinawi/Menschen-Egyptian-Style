@@ -17,7 +17,7 @@ function render(node,key,formKey=null,quizEnabled=false){
  }
  if(tag==='select'){const selected=children.filter(n=>Array.isArray(n)&&n[0]==='option'&&'selected' in n[1]).map(n=>n[1].value??n[2].join(''));if(selected.length)props.defaultValue=props.multiple?selected:selected[0]}
  if(tag==='textarea'){props.defaultValue=children.join('');return createElement(tag,props)}
- if(tag==='form'&&attrs.class?.split(' ').includes('batchQuiz')&&quizEnabled)formKey=attrs['data-key']||attrs.id;
+ if(tag==='form'&&(attrs.class?.split(' ').some(c=>['batchQuiz','simpleQuiz'].includes(c))||['names','speakers'].includes(attrs.id))&&quizEnabled)formKey=attrs['data-key']||attrs.id;
  const rendered=children.map((child,i)=>render(child,path+'.'+i,formKey,quizEnabled));
  if(formKey&&quizEnabled){
   if(tag==='form')return createElement(QuizForm,{key,attrs:props,children:rendered});
