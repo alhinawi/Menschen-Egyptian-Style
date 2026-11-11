@@ -6,7 +6,7 @@ const toast=document.createElement('div');toast.className='answerToast';toast.hi
 function mark(el,ok){el.classList.toggle('answerCorrect',ok);el.classList.toggle('answerWrong',!ok)}function feedback(form,ok){const p=form.querySelector('.feedback');p.className='feedback '+(ok?'good':'retry');p.textContent=ok?'✓ Richtig!':'Noch nicht ganz. Versuchen Sie es noch einmal.';tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress();}
 
 const normalizeAnswer=s=>s.normalize('NFC').toLocaleLowerCase('de').trim().replace(/[.!?]+$/,'').replace(/\s+/g,' ');
-for(const form of document.querySelectorAll('.batchQuiz'))form.onsubmit=e=>{e.preventDefault();const results=[...form.querySelectorAll('[data-answer]')].map(el=>{const v=normalizeAnswer(el.value);const ok=el.dataset.answer.split('|').some(a=>normalizeAnswer(a)===v);mark(el,ok);return ok});feedback(form,results.length>0&&results.every(Boolean));};
+
 // Pick-one and match groups: [data-pick] buttons inside a [data-answer-group] quiz.
 for(const group of document.querySelectorAll('[data-answer-group]')){const buttons=[...group.querySelectorAll('[data-pick]')];
  for(const b of buttons)b.onclick=()=>{if(b.dataset.multi){b.classList.toggle('picked')}else{const scope=b.dataset.scope?group.querySelectorAll(`[data-scope="${b.dataset.scope}"]`):buttons;scope.forEach(x=>{if(x!==b&&x.dataset.scope===b.dataset.scope)x.classList.remove('picked')});b.classList.add('picked')}};
@@ -57,5 +57,7 @@ window.initMeanings();
 let suppressMeaningUntil=0;viewport.addEventListener('touchend',()=>{if(pinching)suppressMeaningUntil=Date.now()+400},{capture:true});stage.addEventListener('click',e=>{if(Date.now()<suppressMeaningUntil)e.stopImmediatePropagation()},{capture:true});
 
 $('#lessonNav').onchange=e=>{const n=Number(e.target.value.split('#')[1]);flip.turnToPage(n-54);scrollTo(0,0);viewport.scrollLeft=0;history.replaceState(null,'','#'+n)};
+
+return {exercise:{options:{rejectBlank:false},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
 
 }
