@@ -7,8 +7,6 @@ function mark(el,ok){el.classList.toggle('answerCorrect',ok);el.classList.toggle
 
 const normalizeAnswer=s=>s.normalize('NFC').toLocaleLowerCase('de').trim().replace(/[.!?]+$/,'').replace(/\s+/g,' ');
 
-for(const b of document.querySelectorAll('.verbWord'))b.onclick=()=>b.classList.toggle('selectedVerb');
-const checkVerbs=document.querySelector('[data-check-verbs]');checkVerbs.onclick=()=>{let ok=true;document.querySelectorAll('.verbWord').forEach(b=>{const correct=b.classList.contains('selectedVerb')===(b.dataset.verb==='true');if(b.classList.contains('selectedVerb')||b.dataset.verb==='true')mark(b,correct);else b.classList.remove('answerCorrect','answerWrong');ok&&=correct});tone(ok);announce(ok);state['done-verbs']=ok;save();updateProgress()};
 function updateProgress(){$('#progress').textContent=Object.entries(state).filter(([k,v])=>k.startsWith('done-')&&v).length+' ✓'}updateProgress();
 
 const soundButton=$('.soundToggle');function soundText(){soundButton.dataset.soundOn=String(soundsOn)}soundText();soundButton.onclick=()=>{soundsOn=!soundsOn;state.sounds=soundsOn;save();soundText()};
@@ -64,12 +62,10 @@ document.querySelectorAll('[data-color]').forEach(b=>b.onclick=()=>{color=b.data
 const verbText=document.querySelector('.verbText');let group=document.createElement('span');group.className='verbSentence';
 for(const node of [...verbText.childNodes]){group.append(node);if(node.nodeType===Node.TEXT_NODE&&/[.!?]/.test(node.textContent)){group.dataset.phrase=group.textContent.trim();verbText.append(group);group=document.createElement('span');group.className='verbSentence';}}
 if(group.childNodes.length){group.dataset.phrase=group.textContent.trim();verbText.append(group)}
-let explainVerbs=false;const verbMode=document.createElement('button');verbMode.type='button';verbMode.className='check';verbMode.textContent='Modus: Verben markieren';checkVerbs.before(verbMode);verbMode.onclick=()=>{explainVerbs=!explainVerbs;verbMode.textContent=explainVerbs?'Modus: Wörter erklären':'Modus: Verben markieren'};
-document.querySelectorAll('.verbWord').forEach((b,i)=>{b.classList.toggle('selectedVerb',state['verb-'+i]??i===1);b.onclick=()=>{if(document.body.dataset.textSelection==='true')return;if(explainVerbs){window.openBookMeaning(b.textContent,b.closest('.verbSentence').dataset.phrase,'word');return}b.classList.toggle('selectedVerb');state['verb-'+i]=b.classList.contains('selectedVerb');save()}});
 verbText.addEventListener('click',e=>{if(document.body.dataset.textSelection==='true')return;if(document.body.dataset.translationMode!=='sentence')return;const sentence=e.target.closest('.verbSentence');if(!sentence)return;e.stopImmediatePropagation();e.preventDefault();window.openBookMeaning(e.target.closest('.verbWord')?.textContent,sentence.dataset.phrase,'sentence')},{capture:true});
 // The screenplay can be marked without confusing a mark with a translation tap.
-const screenplay=document.querySelector('.screenplay'),scriptMode=document.createElement('button');scriptMode.type='button';scriptMode.className='check';scriptMode.textContent='Verben markieren: aus';screenplay.prepend(scriptMode);let markScript=false;scriptMode.onclick=()=>{markScript=!markScript;scriptMode.textContent='Verben markieren: '+(markScript?'an':'aus')};screenplay.addEventListener('click',e=>{if(!markScript||e.target===scriptMode)return;const word=e.target.closest('.tapWord');if(word){e.stopImmediatePropagation();e.preventDefault();word.classList.toggle('selectedVerb')}},{capture:true});
+const screenplay=document.querySelector('.screenplay');screenplay.addEventListener('click',e=>{if(document.body.dataset.scriptMarking!=='true'||e.target.tagName==='BUTTON')return;const word=e.target.closest('.tapWord');if(word){e.stopImmediatePropagation();e.preventDefault();word.classList.toggle('selectedVerb')}},{capture:true});
 
-return {persistence:{getState:()=>state,update(values){Object.assign(state,values);save()}},exercise:{options:{rejectBlank:false},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
+return {persistence:{getState:()=>state,update(values){Object.assign(state,values);save()}},exercise:{options:{rejectBlank:false,verbState:state,saveVerbSelection(i,value){state['verb-'+i]=value;save()},beforeVerbToggle(b){if(document.body.dataset.textSelection==='true')return true;if(document.body.dataset.verbExplanation==='true'){window.openBookMeaning(b.textContent,b.closest('.verbSentence').dataset.phrase,'word');return true}return false}},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
 
 }
