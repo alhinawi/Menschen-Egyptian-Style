@@ -6,7 +6,7 @@ const toast=document.createElement('div');toast.className='answerToast';toast.hi
 function mark(el,ok){el.classList.toggle('answerCorrect',ok);el.classList.toggle('answerWrong',!ok)}function feedback(form,ok){const p=form.querySelector('.feedback');p.className='feedback '+(ok?'good':'retry');p.textContent=ok?'✓ Richtig!':'Noch nicht ganz. Hören Sie noch einmal.';tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress();}
 
 const normalizeAnswer=s=>s.normalize('NFC').toLocaleLowerCase('de').trim().replace(/[.!?]+$/,'').replace(/\s+/g,' ');
-for(const form of document.querySelectorAll('.batchQuiz'))form.onsubmit=e=>{e.preventDefault();const results=[...form.querySelectorAll('[data-answer]')].map(el=>{const v=normalizeAnswer(el.value);const ok=el.dataset.answer.split('|').some(a=>normalizeAnswer(a)===v);mark(el,ok);return ok});feedback(form,results.length>0&&results.every(Boolean));};
+
 for(const b of document.querySelectorAll('.verbWord'))b.onclick=()=>b.classList.toggle('selectedVerb');
 const checkVerbs=document.querySelector('[data-check-verbs]');
 if(checkVerbs)checkVerbs.onclick=()=>{let ok=true;document.querySelectorAll('.verbWord').forEach(b=>{const correct=b.classList.contains('selectedVerb')===(b.dataset.verb==='true');if(b.classList.contains('selectedVerb')||b.dataset.verb==='true')mark(b,correct);else b.classList.remove('answerCorrect','answerWrong');ok&&=correct});tone(ok);announce(ok);state['done-verbs']=ok;save();updateProgress()};
@@ -58,5 +58,7 @@ $('#lessonNav').onchange=e=>{const target=e.target.value;const n=Number(target.s
 
 // Self-assessment dots: green / yellow / red per line, one choice stored per row.
 for(const row of document.querySelectorAll('.rateRow')){const key='rate-'+row.dataset.rate;const dots=row.querySelectorAll('.rateDot');const apply=v=>dots.forEach(d=>d.classList.toggle('selected',d.dataset.v===v));if(state[key])apply(state[key]);dots.forEach(d=>d.onclick=()=>{const v=d.dataset.v;const off=row.dataset.rateOn===v;row.dataset.rateOn=off?'':v;apply(off?'':v);if(off)delete state[key];else state[key]=v;save()})}
+
+return {exercise:{options:{rejectBlank:false},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
 
 }
