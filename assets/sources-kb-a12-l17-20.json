@@ -1,0 +1,196 @@
+{
+  "book": "Menschen A1.2 Kursbuch",
+  "printedPages": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "pdfGlobalPages": [
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50
+  ],
+  "originalEditionYear": 2012,
+  "scanSources": [
+    {
+      "pages": "printed 29-33",
+      "note": "PDF chunk supplied by the user (global 29-36 = printed 27-34)"
+    },
+    {
+      "pages": "printed 34-48",
+      "note": "PDF chunk supplied by the user (global 36-67)"
+    }
+  ],
+  "audio": [
+    {
+      "file": "kb-a12-cd3-track17.mp3",
+      "sourceName": "17 Lektion 17, 1.mp3",
+      "sourceFolder": "https://drive.google.com/drive/folders/1Sm3GlygC8NYjzF7cbFSAdkoTt88L6882 (Menschen A1.2 > kursbuch audio, account 3asfuur@gmail.com)",
+      "cd": 3,
+      "track": 17,
+      "use": "L17 A1: Anzeige passt"
+    },
+    {
+      "file": "kb-a12-cd3-track18.mp3",
+      "sourceName": "18 Lektion 18, 1b.mp3",
+      "sourceFolder": "https://drive.google.com/drive/folders/1Sm3GlygC8NYjzF7cbFSAdkoTt88L6882 (Menschen A1.2 > kursbuch audio, account 3asfuur@gmail.com)",
+      "cd": 3,
+      "track": 18,
+      "use": "L18 A1b"
+    },
+    {
+      "file": "kb-a12-cd3-track19.mp3",
+      "sourceName": "19 Lektion 18, 2 1.mp3",
+      "sourceFolder": "https://drive.google.com/drive/folders/1Sm3GlygC8NYjzF7cbFSAdkoTt88L6882 (Menschen A1.2 > kursbuch audio, account 3asfuur@gmail.com)",
+      "cd": 3,
+      "track": 19,
+      "use": "L18 A2 Gespräch 1 (Frau Brehm ruft Schwester Angelika an)"
+    },
+    {
+      "file": "kb-a12-cd3-track20.mp3",
+      "sourceName": "20 Lektion 18, 2.mp3",
+      "sourceFolder": "https://drive.google.com/drive/folders/1Sm3GlygC8NYjzF7cbFSAdkoTt88L6882 (Menschen A1.2 > kursbuch audio, account 3asfuur@gmail.com)",
+      "cd": 3,
+      "track": 20,
+      "use": "L18 A2 Gespräch 2 (Frau Brehm kommt nach Hause)"
+    },
+    {
+      "file": "kb-a12-cd3-track21.mp3",
+      "sourceName": "21 Modul 6, 1.mp3",
+      "sourceFolder": "https://drive.google.com/drive/folders/1Sm3GlygC8NYjzF7cbFSAdkoTt88L6882 (Menschen A1.2 > kursbuch audio, account 3asfuur@gmail.com)",
+      "cd": 3,
+      "track": 21,
+      "use": "Modul-Plus 6 Ausklang: Lied Doktor Eisenbarth"
+    },
+    {
+      "file": "kb-a12-cd3-track22.mp3",
+      "sourceName": "22 Modul 6, 2.mp3",
+      "sourceFolder": "https://drive.google.com/drive/folders/1Sm3GlygC8NYjzF7cbFSAdkoTt88L6882 (Menschen A1.2 > kursbuch audio, account 3asfuur@gmail.com)",
+      "cd": 3,
+      "track": 22,
+      "use": "Modul-Plus 6 Ausklang: Melodie/Karaoke"
+    },
+    {
+      "file": "kb-a12-cd3-track23.mp3",
+      "sourceName": "23 Lektion 19, 1a.mp3",
+      "sourceFolder": "https://drive.google.com/drive/folders/1Sm3GlygC8NYjzF7cbFSAdkoTt88L6882 (Menschen A1.2 > kursbuch audio, account 3asfuur@gmail.com)",
+      "cd": 3,
+      "track": 23,
+      "use": "L19 A1a"
+    },
+    {
+      "file": "kb-a12-cd3-track24.mp3",
+      "sourceName": "24 Lektion 19, 2_3.mp3",
+      "sourceFolder": "https://drive.google.com/drive/folders/1Sm3GlygC8NYjzF7cbFSAdkoTt88L6882 (Menschen A1.2 > kursbuch audio, account 3asfuur@gmail.com)",
+      "cd": 3,
+      "track": 24,
+      "use": "L19 A2 + A3b"
+    },
+    {
+      "file": "kb-a12-cd3-track25.mp3",
+      "sourceName": "25 Lektion 19, 6a (1).mp3",
+      "sourceFolder": "https://drive.google.com/drive/folders/1Sm3GlygC8NYjzF7cbFSAdkoTt88L6882 (Menschen A1.2 > kursbuch audio, account 3asfuur@gmail.com)",
+      "cd": 3,
+      "track": 25,
+      "use": "L19 A6a Gespräch 1"
+    },
+    {
+      "file": "kb-a12-cd3-track26.mp3",
+      "sourceName": "26 Lektion 19, 6a (2).mp3",
+      "sourceFolder": "https://drive.google.com/drive/folders/1Sm3GlygC8NYjzF7cbFSAdkoTt88L6882 (Menschen A1.2 > kursbuch audio, account 3asfuur@gmail.com)",
+      "cd": 3,
+      "track": 26,
+      "use": "L19 A6a Gespräch 2"
+    },
+    {
+      "file": "kb-a12-cd3-track27.mp3",
+      "sourceName": "27 Lektion 19, 6a (3).mp3",
+      "sourceFolder": "https://drive.google.com/drive/folders/1Sm3GlygC8NYjzF7cbFSAdkoTt88L6882 (Menschen A1.2 > kursbuch audio, account 3asfuur@gmail.com)",
+      "cd": 3,
+      "track": 27,
+      "use": "L19 A6a Gespräch 3"
+    },
+    {
+      "file": "kb-a12-cd3-track28.mp3",
+      "sourceName": "28 Lektion 19, 8a (1).mp3",
+      "sourceFolder": "https://drive.google.com/drive/folders/1Sm3GlygC8NYjzF7cbFSAdkoTt88L6882 (Menschen A1.2 > kursbuch audio, account 3asfuur@gmail.com)",
+      "cd": 3,
+      "track": 28,
+      "use": "L19 A8a Gespräch 1"
+    },
+    {
+      "file": "kb-a12-cd3-track29.mp3",
+      "sourceName": "29 Lektion 19, 8a (2).mp3",
+      "sourceFolder": "https://drive.google.com/drive/folders/1Sm3GlygC8NYjzF7cbFSAdkoTt88L6882 (Menschen A1.2 > kursbuch audio, account 3asfuur@gmail.com)",
+      "cd": 3,
+      "track": 29,
+      "use": "L19 A8a Gespräch 2"
+    },
+    {
+      "file": "kb-a12-cd3-track30.mp3",
+      "sourceName": "30 Lektion 19, 8a (3).mp3",
+      "sourceFolder": "https://drive.google.com/drive/folders/1Sm3GlygC8NYjzF7cbFSAdkoTt88L6882 (Menschen A1.2 > kursbuch audio, account 3asfuur@gmail.com)",
+      "cd": 3,
+      "track": 30,
+      "use": "L19 A8a Gespräch 3"
+    },
+    {
+      "file": "kb-a12-cd3-track31.mp3",
+      "sourceName": "31 Lektion 20, 2.mp3",
+      "sourceFolder": "https://drive.google.com/drive/folders/1Sm3GlygC8NYjzF7cbFSAdkoTt88L6882 (Menschen A1.2 > kursbuch audio, account 3asfuur@gmail.com)",
+      "cd": 3,
+      "track": 31,
+      "use": "L20 A2"
+    }
+  ],
+  "answerKeys": [
+    {
+      "source": "msn-unterrichtsplan-L17.pdf / L18 / L19 / L20 (Unterrichtsplaner, Drive folder Menschen A1.2 id 1u7qlWQurGdWVhsPGpaXP2hwWPzZOt3aF)",
+      "covers": "L17 A3a-c/A4a/A5, L18 A1b/A2a-b/A3a/A4/A5a, L19 A2/A3a-b/A4b/A6a-b/A8a, L20 A2/A4b/A7a-c/A9a"
+    },
+    {
+      "source": "KB-A1-2 Transkripte (Drive folder Menschen A1.2)",
+      "covers": "listening texts L17 A1, L18 A1b+A2, L19 A1a/A2-3/A6a/A8a, L20 A2; Modul 6 Ausklang = vgl. Kursbuch"
+    },
+    {
+      "source": "derived from page text (no teacher plan for Modul-Plus)",
+      "covers": "MP6 Lesemagazin A1 (a richtig, b richtig, c falsch, d falsch, e falsch), Projekt A2 wish matching; Film-Stationen A3 matching derived from sentence logic (film clips 16-18 not present in the materials)"
+    }
+  ],
+  "missingMedia": "Film-Stationen clips 16-18 (videos) are not in the Drive materials; pages show the printed tasks, clips 1-2 without auto-check.",
+  "notes": "Egyptian Arabic word and sentence meanings authored for this batch (kb-a12-l17-20-glossary.js, kb-a12-l17-20-sentences.js)."
+}
