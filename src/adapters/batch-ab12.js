@@ -6,12 +6,7 @@ const toast=document.createElement('div');toast.className='answerToast';toast.hi
 function mark(el,ok){el.classList.toggle('answerCorrect',ok);el.classList.toggle('answerWrong',!ok)}function feedback(form,ok){const p=form.querySelector('.feedback');p.className='feedback '+(ok?'good':'retry');p.textContent=ok?'✓ Richtig!':'Noch nicht ganz. Hören Sie noch einmal.';tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress();}
 
 const normalizeAnswer=s=>s.normalize('NFC').toLocaleLowerCase('de').trim().replace(/[.!?]+$/,'').replace(/\s+/g,' ');
-for(const form of document.querySelectorAll('.batchQuiz')){
-const check=()=>{const results=[...form.querySelectorAll('[data-answer]')].filter(el=>el.type!=='radio').map(el=>{const v=normalizeAnswer(el.value);const ok=el.dataset.answer.split('|').some(a=>normalizeAnswer(a)===v);mark(el,ok);return ok});
-const radioGroups={};for(const r of form.querySelectorAll('input[type=radio]')){(radioGroups[r.name]||=[]).push(r)}
-for(const g of Object.values(radioGroups)){const target=g.find(r=>r.dataset.answer!==undefined);const ok=!!(target&&target.checked);for(const r of g){const host=r.closest('label,td')||r;if(r===target)mark(host,ok);else if(r.checked)mark(host,false);else host.classList.remove('answerCorrect','answerWrong')}results.push(ok)}
-feedback(form,results.length>0&&results.every(Boolean));};
-form.onsubmit=e=>{e.preventDefault();check()};const btn=form.querySelector('.check');if(btn)btn.onclick=e=>{e.preventDefault();check()};}
+
 function updateProgress(){$('#progress').textContent=Object.entries(state).filter(([k,v])=>k.startsWith('done-')&&v).length+' ✓'}updateProgress();
 for(const [i,el] of [...document.querySelectorAll('input,select,textarea')].filter(e=>e.id!=='pageJump').entries()){const key=el.dataset.note||'field-'+i;if(el.type==='radio')el.checked=state[key]===true;else if(state[key]!==undefined)el.value=state[key];el.addEventListener('input',()=>{state[key]=el.type==='radio'?el.checked:el.value;if(el.type==='radio')document.querySelectorAll(`input[name="${el.name}"]`).forEach(peer=>{if(peer!==el)state['field-'+[...document.querySelectorAll('input,select,textarea')].filter(e=>e.id!=='pageJump').indexOf(peer)]=false});save()})}
 const soundButton=$('.soundToggle');function soundText(){soundButton.dataset.soundOn=String(soundsOn)}soundText();soundButton.onclick=()=>{soundsOn=!soundsOn;if(soundsOn)unlockBookAudio();state.sounds=soundsOn;save();soundText()};
@@ -70,5 +65,7 @@ document.querySelectorAll('.markBank').forEach(bank=>{
   for(const s of bank.querySelectorAll('.tapMark')){const should=correct.includes(normalizeAnswer(s.textContent));const good=s.classList.contains('marked')===should;mark(s,good);ok&&=good}
   fb.className='feedback '+(ok?'good':'retry');fb.textContent=ok?'✓ Richtig!':'Noch nicht ganz. Hören Sie noch einmal.';tone(ok);announce(ok);state['done-'+bank.dataset.key]=ok;save();updateProgress()};
 });
+
+return {exercise:{options:{radioTargets:true},commitResult(form,ok){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
 
 }
