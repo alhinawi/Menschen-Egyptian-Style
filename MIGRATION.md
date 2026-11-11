@@ -27,3 +27,7 @@ All 26 entry points now render through React, including both books and original-
 ## Reader-control milestone
 
 React components now own reader navigation/zoom/select/sound control events and subscribe to a shared reader store. Existing fold/gesture engines are accessed through a small bridge; they no longer install active DOM property handlers on those controls. Zoom text and sound SVGs are rendered by React, avoiding competing writes. The original-viewer controls use the same bridge. All eight original browser suites pass after this change. Exercise marking/persistence and meaning dialogs still need native React ports.
+
+## Exercise grading milestone
+
+Fifteen standard batch engines now use native React form submission, result state, feedback text and declared-answer field styling. Duplicate-answer constraints, checkbox/radio-group rules and existing normalization are preserved. Audio feedback, saved progress and field persistence still use compatibility services. L1 custom exercises, AB13-16 custom radio checks, scan-backed AB17-20 practice and meaning dialogs remain to port. All 15 standard batches pass answer tests, and the eight original regression suites pass.
