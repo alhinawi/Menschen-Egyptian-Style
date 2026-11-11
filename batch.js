@@ -51,7 +51,7 @@ window.initMeanings();
 // A completed swipe must not also open a word-meaning dialog.
 let suppressMeaningUntil=0;viewport.addEventListener('touchend',()=>{if(pinching)suppressMeaningUntil=Date.now()+400},{capture:true});stage.addEventListener('click',e=>{if(Date.now()<suppressMeaningUntil)e.stopImmediatePropagation()},{capture:true});
 
-$('#lessonNav').onchange=e=>{const target=e.target.value;if(target==='index.html'){location.href=target;return}const n=Number(target.split('#')[1]);flip.turnToPage(n-13);scrollTo(0,0);viewport.scrollLeft=0;history.replaceState(null,'','#'+n)};
+$('#lessonNav').onchange=e=>{const target=e.target.value;if(target==='index.html'||target==='ab1.html'){location.href=target;return}const n=Number(target.split('#')[1]);flip.turnToPage(n-13);scrollTo(0,0);viewport.scrollLeft=0;history.replaceState(null,'','#'+n)};
 // Mark the regions of the original Swiss map without changing the printed image.
 const canvas=$('#swissPaint'),ctx=canvas.getContext('2d');let drawing=false,color='#e74b36';ctx.lineCap='round';ctx.lineJoin='round';ctx.lineWidth=14;
 if(state.swissPaint){const im=new Image();im.onload=()=>ctx.drawImage(im,0,0);im.src=state.swissPaint;}
