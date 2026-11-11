@@ -21,3 +21,7 @@ Original book images and recordings are publisher material (Hueber Verlag). Do n
 The preview now opens as a paged paper book, not a continuous feed. Drag inward from the left/right page edge, use page arrows, or use keyboard left/right. Pages turn with perspective, front/back faces and a moving shadow. Original-book pages turn through the same navigation. The live exercise DOM is preserved between turns, so selected answers and notes remain. Page sound is currently absent (silent by default). Reduced-motion preferences skip animation. Long expanded translations/dialogs can scroll inside their page.
 
 `node tests/flip.cjs` runs the book interaction checks and captures a local preview recording. Requires Playwright, Chrome and Playwright's FFmpeg support.
+
+### Fluid curl revision
+
+The rigid CSS leaf has been replaced with a 220-strip cylindrical Canvas surface. Each strip follows its own bent position and light level. Drag position controls curl radius/progress, release velocity can complete a turn, and settling uses requestAnimationFrame with easing. The live exercise DOM returns after the animated surface clears. html2canvas captures the page before a turn; native audio controls are represented by an inert miniature player during the animation only. No book audio is synthesized or altered. Real-phone performance still needs checking; the preview recording itself is 25 fps.
