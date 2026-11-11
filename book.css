@@ -8,3 +8,6 @@ h2{display:block}.n{margin-right:10px;vertical-align:baseline}.p11body{padding-t
 
 /* Allow native two-axis reading when the printed page is wider than the phone. */
 #pageStage{touch-action:pan-y!important}body[data-book-zoomed="true"] #pageStage{touch-action:pan-x pan-y!important}#viewport{overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}body[data-book-zoomed="true"] #viewport{touch-action:pan-x pan-y}body[data-book-zoomed="false"] #viewport{touch-action:pan-y}
+.meaningModeToggle{font-size:11px;font-family:Arial;white-space:nowrap}.tapSentence{border-radius:2px}body[data-translation-mode="sentence"] .tapSentence{cursor:pointer}body[data-translation-mode="sentence"] .tapSentence:hover{background:#eee7cb}body[data-translation-mode="sentence"] .tapSentence .tapWord:hover{text-decoration:none}.meaningGerman{max-height:36vh;overflow:auto}.meaningPopup h3{font-size:23px;line-height:1.4}.meaningPopup .pronounceButton{width:100%;margin-top:10px}.meaningPopup button:disabled{opacity:.5;cursor:default}
+
+.meaningPopup [hidden]{display:none!important}
