@@ -19,7 +19,7 @@ for(const width of [320,390])for(const theme of ['light','dark','paper','sand','
  }
  await mode.click();await selection.click();
  if(width===390&&['light','burgundy','forest'].includes(theme))await p.screenshot({path:`/tmp/fidelity/audio-theme-${theme}-390.png`});
- await markers.first().focus();assert.equal(await markers.first().evaluate(e=>getComputedStyle(e).outlineStyle),'solid');
+ await p.keyboard.press('Tab');await markers.first().focus();assert.equal(await markers.first().evaluate(e=>getComputedStyle(e).outlineStyle),'solid');
  console.log(width,theme,'transparent wrapper / 34px face / readable icon PASS');await p.close();
 }
 }finally{await b.close();server.close()}})().catch(e=>{console.error(e);server.close();process.exitCode=1});
