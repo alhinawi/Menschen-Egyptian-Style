@@ -34,3 +34,5 @@
 .nkFilmDialog{font:18px/1.4 Arial}.nkFilmDialog button{font:18px Arial;min-height:44px;padding:8px 14px}.nkFilmDialog iframe{display:block;flex:none;min-height:220px;background:#171717}.nkFilmDialog a{font:18px Arial;padding:10px}
 
 .nkFilmDialog{position:fixed;z-index:10000;box-sizing:border-box}
+
+.nkCanvas .nkJanArticle{font:17px/1.15 Arial}
