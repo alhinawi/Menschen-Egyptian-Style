@@ -2043,15 +2043,283 @@
    "h": 14
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p96-1a",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 a",
+   "answer": "Jacke",
+   "x": 162,
+   "y": 155,
+   "w": 115,
+   "h": 16
+  },
+  {
+   "id": "p96-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "Rock",
+   "x": 155,
+   "y": 175,
+   "w": 115,
+   "h": 16
+  },
+  {
+   "id": "p96-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "Gürtel",
+   "x": 154,
+   "y": 195,
+   "w": 116,
+   "h": 16
+  },
+  {
+   "id": "p96-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d",
+   "answer": "Strumpfhose",
+   "x": 440,
+   "y": 155,
+   "w": 112,
+   "h": 16
+  },
+  {
+   "id": "p96-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e",
+   "answer": "Haare",
+   "x": 440,
+   "y": 175,
+   "w": 112,
+   "h": 16
+  },
+  {
+   "id": "p96-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 f",
+   "answer": "Mütze",
+   "x": 440,
+   "y": 195,
+   "w": 112,
+   "h": 16
+  },
+  {
+   "id": "p96-2UrlCarla",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 Urlaub Carla",
+   "answer": "Dänemark",
+   "x": 277,
+   "y": 513,
+   "w": 108,
+   "h": 20
+  },
+  {
+   "id": "p96-2UrlHannah",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 Urlaub Hannah",
+   "answer": "Schweden",
+   "x": 390,
+   "y": 513,
+   "w": 108,
+   "h": 20
+  },
+  {
+   "id": "p96-2UrlBeate",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 Urlaub Beate",
+   "answer": "Frankreich",
+   "x": 617,
+   "y": 513,
+   "w": 108,
+   "h": 20
+  },
+  {
+   "id": "p96-2GebJulia",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 Geburtstag Julia",
+   "answer": "9.4.",
+   "x": 504,
+   "y": 541,
+   "w": 108,
+   "h": 20
+  },
+  {
+   "id": "p96-2GebBeate",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 Geburtstag Beate",
+   "answer": "5.2.",
+   "x": 617,
+   "y": 541,
+   "w": 108,
+   "h": 20
+  },
+  {
+   "id": "p96-2träHannah",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 trägt gern Hannah",
+   "answer": "Hosen",
+   "x": 390,
+   "y": 566,
+   "w": 108,
+   "h": 20
+  },
+  {
+   "id": "p96-2träJulia",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 trägt gern Julia",
+   "answer": "Strumpfhosen",
+   "x": 504,
+   "y": 566,
+   "w": 108,
+   "h": 20
+  },
+  {
+   "id": "p96-2träBeate",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 trägt gern Beate",
+   "answer": "Hut",
+   "x": 617,
+   "y": 566,
+   "w": 108,
+   "h": 20
+  },
+  {
+   "id": "p96-2wohCarla",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 wohnt in Carla",
+   "answer": "Hamburg",
+   "x": 277,
+   "y": 589,
+   "w": 108,
+   "h": 20
+  },
+  {
+   "id": "p96-2wohHannah",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 wohnt in Hannah",
+   "answer": "Wien",
+   "x": 390,
+   "y": 589,
+   "w": 108,
+   "h": 20
+  },
+  {
+   "id": "p96-2wohJulia",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 wohnt in Julia",
+   "answer": "Rom",
+   "x": 504,
+   "y": 589,
+   "w": 108,
+   "h": 20
+  },
+  {
+   "id": "p96-2wohBeate",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 wohnt in Beate",
+   "answer": "Bern",
+   "x": 617,
+   "y": 589,
+   "w": 108,
+   "h": 20
+  },
+  {
+   "id": "p96-4a1",
+   "group": "g3",
+   "kind": "text",
+   "label": "4 a 1",
+   "answer": "Weihnachten",
+   "x": 120,
+   "y": 973,
+   "w": 110,
+   "h": 16
+  },
+  {
+   "id": "p96-4a2",
+   "group": "g3",
+   "kind": "text",
+   "label": "4 a 2",
+   "answer": "Jahr",
+   "x": 120,
+   "y": 1010,
+   "w": 108,
+   "h": 16
+  },
+  {
+   "id": "p96-4b",
+   "group": "g3",
+   "kind": "text",
+   "label": "4 b",
+   "answer": "gemacht",
+   "x": 303,
+   "y": 972,
+   "w": 105,
+   "h": 16
+  },
+  {
+   "id": "p96-4c",
+   "group": "g3",
+   "kind": "text",
+   "label": "4 c",
+   "answer": "Gute",
+   "x": 440,
+   "y": 955,
+   "w": 105,
+   "h": 16
+  },
+  {
+   "id": "p96-4d",
+   "group": "g3",
+   "kind": "text",
+   "label": "4 d",
+   "answer": "Glückwunsch",
+   "x": 598,
+   "y": 955,
+   "w": 107,
+   "h": 16
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 2"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 4"
+  }
+ ],
  "review": {
   "status": "partial",
-  "verifiedWords": 291,
-  "totalWords": 291,
   "notes": [
-   "Activation reviewed on a five-page visual sample (71,76,88,98,105): word boxes align with printed text, but these are partial OCR-derived layers. verifiedWords was supplied as the retained-word count by the worker, not an independent word-by-word audit. Some handwriting, symbols, fragments and printed words may be omitted or imperfect. No exercise fields or audio added."
-  ]
+   "Answers from official Hueber Loesungsschluessel AB A1.2 (Wiederholungsstation Wortschatz, Modul 8).",
+   "Ex 2: only cells with information filled (cells without information left empty); ex 2b, ex 3 (matching) not mapped. Handwritten examples not fields."
+  ],
+  "verifiedWords": 291,
+  "totalWords": 291
  }
 }
