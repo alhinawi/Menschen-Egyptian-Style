@@ -118,8 +118,8 @@ export const BookMarkup = memo(function BookMarkup({nodes, quizEnabled = false}:
     const bar = document.querySelector<HTMLElement>('.controls');
     const sync = () => {
       document.body.classList.add('readerSplitControls');
-      document.body.style.setProperty('--reader-header-height', `${header?.getBoundingClientRect().height || 60}px`);
-      document.body.style.setProperty('--reader-controls-height', `${bar?.getBoundingClientRect().height || 56}px`);
+      document.documentElement.style.setProperty('--reader-header-height', `${header?.getBoundingClientRect().height || 60}px`);
+      document.documentElement.style.setProperty('--reader-controls-height', `${bar?.getBoundingClientRect().height || 56}px`);
     };
     const observer = new ResizeObserver(sync);if(header)observer.observe(header);if(bar)observer.observe(bar);sync();
     return () => {observer.disconnect();document.body.classList.remove('readerSplitControls');};
