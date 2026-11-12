@@ -27,6 +27,8 @@ def build(p):
     def _kept(wd):
         cx=wd['x']+wd['w']/2;cy=wd['y']+wd['h']/2
         return any(k[0]<=cx<=k[2] and k[1]<=cy<=k[3] for k in _keep)
+    pe=json.load(open(_kf)).get('pe',0) if os.path.exists(_kf) else 0
+    keep=json.load(open(_kf)).get('keepscan',[]) if os.path.exists(_kf) else []
     for wd in d['words']:
         if _kept(wd):continue
         x,y,w,h=[round(v*S) for v in(wd['x'],wd['y'],wd['w'],wd['h'])]
@@ -48,6 +50,7 @@ def build(p):
             if ok and np.abs(med-paper0).sum()>45:panel=1
         rec={'t':t,'x':wd['x'],'y':wd['y'],'w':wd['w'],'h':wd['h']}
         if wd.get('phrase'):rec['ph']=wd['phrase']
+        if ok and any(k[0]<=wd['x']+wd['w']/2<=k[2] and k[1]<=wd['y']+wd['h']/2<=k[3] for k in keep):ok=False
         if ok and re_has(t):
             bg=med
             box=a[y0:y1,x0:x1].reshape(-1,3)
@@ -60,8 +63,9 @@ def build(p):
             fgc=fg
             if fgc[2]>fgc[0]+35 and fgc[2]>fgc[1]+10:
                 rec['r']=0;words.append(rec);continue
-            work[y0:y1,x0:x1]=bg
+            work[y0:y1,x0:min(W,x1+(int(0.18*h) if pe else 0))]=bg
             rec['c']='#%02x%02x%02x'%tuple(int(max(0,min(255,v))) for v in fg)
+            if fg.max()-fg.min()<40:rec['c']='#201f1d'
             rec['b']=1 if frac>0.34 else 0
             rec['r']=1;rec['pn']=panel
         words.append(rec)
@@ -177,11 +181,29 @@ def apply_overrides(r,p):
     if not os.path.exists(f):return
     o=json.load(open(f))
     r['fields']=list(r['fields'])+o.get('fields',[])
+    r['checks'].update(o.get('checks',{}))
     def hit(b,m):
         return all(abs(b[k]-v)<=m.get('tol',3) for k,v in m.items() if k in('x','cy','w','f'))
     for rng in o.get('sans',[]):
         for b in r['blocks']:
             if rng[0]<=b['cy']<=rng[1] and rng[2]<=b['x']<=rng[3]:b['sa']=1;b['b']=0 if len(rng)>4 and rng[4]==0 else b['b']
+    for m in o.get('setr',[]):
+        for b in r['blocks']:
+            if m['y'][0]<=b['cy']<=m['y'][1] and m['x'][0]<=b['x']<=m['x'][1]:b.update(m['set'])
+    for g,c in o.get('checks',{}).items():r['checks'][g]=c
+    for f in o.get('addfields',[]):r['fields'].append(f)
+    for f in r['fields']:
+        if f['id'] in o.get('fieldadj',{}):f.update(o['fieldadj'][f['id']])
+    if o.get('compact'):r['compact']=o['compact']
+    for m in o.get('split',[]):
+        for b in list(r['blocks']):
+            if hit(b,m):
+                k=m['at'];b2=dict(b);b2['ws']=b['ws'][k:];b['ws']=b['ws'][:k]
+                b2['x']=m['x2'];b2['w']=m['w2'];b['w']=m['w1'];r['blocks'].append(b2)
+    for m in o.get('setws',[]):
+        for b in r['blocks']:
+            if hit(b,m):
+                c=b['ws'][0].get('c');b['ws']=[{'t':t,**({'c':c} if c else {})} for t in m['ws']]
     for m in o.get('drop',[]):
         r['blocks']=[b for b in r['blocks'] if not hit(b,m)]
     for m in o.get('split',[]):
