@@ -10,6 +10,7 @@ import {NativeAB11Next} from '../native-ab11/NativeAB11Next';
 import {NativeAB11} from '../native-ab11/NativeAB11';
 import {NativeKb11} from './NativeKb11';
 import {HybridScan} from './HybridScan';
+import {NativeAB12} from './NativeAB12';
 import {scanData} from '../scan-data/registry';
 import {WordBank} from '../exercises/WordBank';
 import {RatingDot} from '../persistence/RatingDot';
@@ -49,6 +50,7 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   if(tag === 'NativePage')return createElement(NativePage,{key,book:attrs.book,page:attrs.page});
   if(tag === 'NativePilot')return createElement(NativePilot,{key,page:attrs.page});
   if(tag === 'NativeKB12')return createElement(NativeKB12,{key,page:attrs.page});
+  if(tag === 'NativeAB12')return createElement(NativeAB12,{key,page:attrs.page});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['57','58','59'].includes(String(attrs.page)))return createElement(NativeAB11Lesson7Close,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['38','39','40'].includes(String(attrs.page)))return createElement(NativeAB11Next45,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['30','31','32','33','34','35','36','37'].includes(String(attrs.page)))return createElement(NativeAB11Lessons45,{key,page:String(attrs.page)});
