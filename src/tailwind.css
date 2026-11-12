@@ -308,3 +308,11 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 @utility abTaskVerb {
   &.selectedVerb { background: #ffe9a8; border-bottom-color: #b03a2e; font-weight: 700; }
 }
+
+/* Runtime selection spans are inserted after the printed task mounts. */
+@utility kb2124Profile {
+  &.profile p > span:not(.tapWord):not(.tapSentence) { display: inline-block; min-width: 110px; }
+}
+@utility kb2124Verb {
+  &.scriptMarkWord.selectedVerb, &.screenplay .tapWord.selectedVerb { background: #ffeb51; }
+}
