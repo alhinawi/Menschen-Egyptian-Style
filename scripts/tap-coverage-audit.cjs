@@ -15,7 +15,7 @@ const server = http.createServer((req,res)=>{
   } else { res.writeHead(404); res.end('nf'); }
 });
 
-const norm = (s) => (s||'').normalize('NFC').trim().replace(/[’]/g,"'").replace(/\s+/g,' ').replace(/[.!?…]+$/g,'').toLocaleLowerCase('de');
+const norm = (s) => (s||'').normalize('NFC').trim().replace(/[’]/g,"'").replace(/\s+/g,' ').replace(/^[.,:;!?"'„“”‚‘()\[\]{}<>|/\\–—-]+|[.,:;!?"'„“”‚‘()\[\]{}<>|/\\–—-]+$/g,'').replace(/[.!?…]+$/g,'').toLocaleLowerCase('de');
 
 (async()=>{
   await new Promise(r=>server.listen(5199,r));
@@ -66,7 +66,7 @@ const norm = (s) => (s||'').normalize('NFC').trim().replace(/[’]/g,"'").replac
     const records=data.records, filesMap=data.files;
     const audioFor=(mode,text)=>{const r=records.find(r=>r.type===mode&&norm(r.text)===norm(text));return r?filesMap[r.id]:undefined};
     let totals={tapWords:0, wTransOK:0, wAudioRec:0, wAudioMissingFile:0, wTtsOnly:0, phrases:0, pTransOK:0, pAudioRec:0, untapped:0, emptyPages:0, partialPages:0};
-    const missingWords=new Map(), missingPhrases=new Map();
+    const missingWords=new Map(), missingPhrases=new Map(), ttsWords=new Map();
     for(const pg of data.pages){
       if(pg.review==='partial')totals.partialPages++;
       if(!pg.taps.length){totals.emptyPages++; }
@@ -77,7 +77,7 @@ const norm = (s) => (s||'').normalize('NFC').trim().replace(/[’]/g,"'").replac
         const wt=words[norm(t.w)];
         if(wt)totals.wTransOK++; else missingWords.set(norm(t.w),(missingWords.get(norm(t.w))||0)+1);
         const wa=audioFor('word',t.w);
-        if(wa){ if(fs.existsSync(path.join(root,wa))) totals.wAudioRec++; else totals.wAudioMissingFile++; } else totals.wTtsOnly++;
+        if(wa){ if(fs.existsSync(path.join(root,wa))) totals.wAudioRec++; else totals.wAudioMissingFile++; } else { totals.wTtsOnly++; const k=norm(t.w); ttsWords.set(k,(ttsWords.get(k)||0)+1); }
         const pn=norm(t.p);
         if(t.p && !seenP.has(pn)){ seenP.add(pn); totals.phrases++;
           if(phrases.get(pn))totals.pTransOK++; else missingPhrases.set(t.p.slice(0,60),(missingPhrases.get(t.p.slice(0,60))||0)+1);
@@ -86,7 +86,7 @@ const norm = (s) => (s||'').normalize('NFC').trim().replace(/[’]/g,"'").replac
       }
     }
     all.push({file, slug, inits:inits.join(','), pageCount:data.pages.length, dictWords:Object.keys(words).length, dictPhrases:Object.keys(phrases).size??0, recs:records.length, pronunciationFiles:Object.keys(filesMap).length, tts:data.tts, totals,
-      missingWords:[...missingWords.entries()],
+      missingWords:[...missingWords.entries()], ttsWords:[...ttsWords.entries()],
       missingPhrases:[...missingPhrases.entries()], emptyPageIds:data.pages.filter(p=>!p.taps.length).map(p=>p.page)});
     console.log(file, 'pages:',data.pages.length, 'tapWords:',totals.tapWords, 'noTrans:',totals.tapWords-totals.wTransOK, 'ttsOnly:',totals.wTtsOnly, 'untappedTokens:',totals.untapped, 'emptyPages:',totals.emptyPages);
   }
