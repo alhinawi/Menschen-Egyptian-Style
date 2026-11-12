@@ -8,3 +8,4 @@ test-results/
 .vercel
 
 dist/
+src/tailwind.gen.css

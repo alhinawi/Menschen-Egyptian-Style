@@ -6,7 +6,7 @@ import {
   BOOKS, MODULES, findModuleForPage, lessonForPage, lessonUrl,
   levelExtras, levelLessons, modulePages,
 } from '../library-data';
-import '../library-nav.css';
+// Styles: Tailwind utilities (see classNames) + authored shell rules in ../tailwind.css
 
 type Panel = 'nav' | 'pages' | null;
 
@@ -140,54 +140,54 @@ export function LibraryNav({slug}: {slug: string}) {
 
   return <>
     {headerSlot && createPortal(
-      <button type="button" className="lnv-pill" aria-haspopup="dialog" onClick={() => setPanel('nav')}>
-        <span className="lnv-dot"/><span className="lnv-pillText">{pillText}</span><span className="lnv-chev">▾</span>
+      <button type="button" className="lnv-pill flex-auto min-w-0 flex items-center gap-[7px] h-[38px] px-3 py-0 border border-[#ddd6c8] rounded-[10px] bg-[#f6efdd] text-[#344137] font-semibold text-[12.5px] font-[Arial,sans-serif] cursor-pointer whitespace-nowrap max-[480px]:px-2 max-[480px]:gap-[5px] max-[480px]:text-[11px]" aria-haspopup="dialog" onClick={() => setPanel('nav')}>
+        <span className="lnv-dot size-[7px] rounded-full bg-[var(--accent,#713c46)] flex-none max-[480px]:hidden"/><span className="lnv-pillText overflow-hidden text-ellipsis">{pillText}</span><span className="lnv-chev ml-auto text-[#a08c5f] text-[10px]">▾</span>
       </button>, headerSlot)}
     {pageSlot && createPortal(
-      <button type="button" className="lnv-pagePill" aria-haspopup="dialog" aria-label={`Seite wählen, aktuell ${pagePillText === 'Cover' ? 'Cover' : 'Seite ' + pagePillText}`} onClick={() => setPanel('pages')}>
-        {pagePillText}<span className="lnv-chev">▴</span>
+      <button type="button" className="lnv-pagePill flex items-center gap-1.5 h-9 min-w-16 justify-center px-[11px] py-0 border border-[#d3d4cd] rounded-md bg-transparent text-[#344137] font-semibold text-[12px] font-[Arial,sans-serif] cursor-pointer" aria-haspopup="dialog" aria-label={`Seite wählen, aktuell ${pagePillText === 'Cover' ? 'Cover' : 'Seite ' + pagePillText}`} onClick={() => setPanel('pages')}>
+        {pagePillText}<span className="lnv-chev ml-[2px] text-[#a08c5f] text-[9px]!">▴</span>
       </button>, pageSlot)}
     {panel === 'nav' && createPortal(
-      <div className={noAnim ? 'lnv-overlay lnv-noanim' : 'lnv-overlay'} role="dialog" aria-label="Library">
-        <div className="lnv-scrim" onClick={close}/>
-        <aside className="lnv-panelBox">
-          <div className="lnv-head">
-            <span className="lnv-brand">Menschen<b>.</b></span>
-            <button type="button" className="lnv-close" aria-label="Close menu" onClick={close}>×</button>
+      <div className={noAnim ? 'lnv-overlay lnv-noanim fixed inset-0 z-[90]' : 'lnv-overlay fixed inset-0 z-[90]'} role="dialog" aria-label="Library">
+        <div className={`lnv-scrim absolute inset-0 bg-[rgba(24,16,10,.55)] touch-none${noAnim ? '' : ' animate-lnv-fade'}`} onClick={close}/>
+        <aside className={`lnv-panelBox absolute top-0 bottom-0 left-0 h-auto w-[min(322px,86vw)] bg-[#fdfaf2] text-[#2b2620] shadow-[8px_0_32px_rgba(20,12,6,.35)] flex flex-col dark:bg-[#232a26] dark:text-[#e8e2d4]${noAnim ? '' : ' animate-lnv-slide'}`}>
+          <div className="lnv-head flex items-center gap-2.5 px-4 pt-4 pb-3">
+            <span className="lnv-brand font-bold text-[22px] font-[Georgia,serif]">Menschen<b className="text-[var(--accent,#713c46)]">.</b></span>
+            <button type="button" className="lnv-close ml-auto size-8 min-h-8 rounded-full border border-[#ddd2b8] bg-white text-[#6b6152] text-[15px] p-0" aria-label="Close menu" onClick={close}>×</button>
           </div>
-          <div className="lnv-label">CHOOSE YOUR BOOK</div>
+          <div className="lnv-label font-bold text-[10.5px] font-[Arial,sans-serif] tracking-[.16em] text-[#a08c5f] px-4 pt-0.5 pb-2.5">CHOOSE YOUR BOOK</div>
           {BOOKS.map(b => {
             if (b.id === mod.book) {
               return (
-                <div key={b.id} className="lnv-bookcard sel" aria-current="true">
-                  <img src={b.cover} alt=""/>
-                  <span className="lnv-bt">{b.title}<small>{b.subtitle}</small></span>
+                <div key={b.id} className="lnv-bookcard sel flex gap-3 items-center text-left mx-3.5 mb-2.5 p-2.5 rounded-2xl border-[1.5px] border-[#c9a45a] shadow-[0_0_0_1px_#c9a45a,0_6px_16px_rgba(113,60,70,.10)] bg-[#fffdf6] cursor-pointer text-inherit no-underline dark:bg-[#333c36] dark:border-[#c9a45a]" aria-current="true">
+                  <img src={b.cover} alt="" className="w-11 h-[60px] object-cover rounded-md shadow-[0_2px_6px_rgba(0,0,0,.25)] flex-none"/>
+                  <span className="lnv-bt font-bold text-[16.5px] font-[Georgia,serif] flex flex-col gap-0.5">{b.title}<small className="font-normal text-[11px] font-[Arial,sans-serif] text-[#8a7d63] dark:text-[#9aa396]">{b.subtitle}</small></span>
                 </div>
               );
             }
             // Switch straight to the matching Lektion in the other book and
             // keep the library open after the page loads.
             return (
-              <a key={b.id} className="lnv-bookcard" href={lessonUrl(switchTarget(b.id))}
+              <a key={b.id} className="lnv-bookcard flex gap-3 items-center text-left mx-3.5 mb-2.5 p-2.5 rounded-2xl border-[1.5px] border-[#e4d9bd] bg-white cursor-pointer text-inherit no-underline dark:bg-[#2c342f] dark:border-[#43504a] dark:text-[#e8e2d4]" href={lessonUrl(switchTarget(b.id))}
                 onClick={() => { try { sessionStorage.setItem('menschen-libnav', 'open'); } catch {} }}>
-                <img src={b.cover} alt=""/>
-                <span className="lnv-bt">{b.title}<small>{b.subtitle}</small></span>
+                <img src={b.cover} alt="" className="w-11 h-[60px] object-cover rounded-md shadow-[0_2px_6px_rgba(0,0,0,.25)] flex-none"/>
+                <span className="lnv-bt font-bold text-[16.5px] font-[Georgia,serif] flex flex-col gap-0.5">{b.title}<small className="font-normal text-[11px] font-[Arial,sans-serif] text-[#8a7d63] dark:text-[#9aa396]">{b.subtitle}</small></span>
               </a>
             );
           })}
-          <div className="lnv-scroll">
-            <a className="lnv-home" href={mod.book === 'kb' ? 'index.html#cover' : 'ab1.html#abcover'}>Cover</a>
+          <div className="lnv-scroll flex-1 overflow-y-auto overscroll-contain touch-pan-y pb-6">
+            <a className="lnv-home flex items-baseline gap-2.5 mx-5 mt-0.5 mb-1.5 py-[9px] font-bold text-[13.5px] font-[Arial,sans-serif] text-[#3a332b] no-underline border-b border-[#eee3c8] dark:text-[#ddd6c6] dark:border-[#3a443e]" href={mod.book === 'kb' ? 'index.html#cover' : 'ab1.html#abcover'}>Cover</a>
             {levels.map(level => (
               <div key={level}>
-                <div className="lnv-lvl">{bookInfo.title.toUpperCase()} · {level}</div>
+                <div className="lnv-lvl font-extrabold text-[11px] font-[Arial,sans-serif] tracking-[.14em] text-[var(--accent,#713c46)] px-5 pt-3 pb-1.5">{bookInfo.title.toUpperCase()} · {level}</div>
                 {levelLessons(mod.book, level).map(entry => {
                   const isCurrent = entry.slug === slug && currentPage != null && entry.pages.includes(currentPage);
                   return (
-                    <a key={entry.slug + entry.label} className={'lnv-row' + (isCurrent ? ' cur' : '') + (entry.short === 'MP' ? ' mp' : '')}
+                    <a key={entry.slug + entry.label} className={'lnv-row flex items-center gap-[11px] px-5 py-[8.5px] font-normal text-[13.5px] font-[Arial,sans-serif] no-underline dark:text-[#ddd6c6]' + (isCurrent ? ' cur bg-[color-mix(in_srgb,var(--accent,#713c46)_12%,transparent)]' : ' text-[#3a332b]')}
                       href={lessonUrl(entry)}>
-                      <span className="lnv-no">{entry.short === 'MP' ? '✦' : entry.short.replace('L', '')}</span>
-                      <span className="lnv-nm">{entry.label}</span>
-                      <span className="lnv-pp">pp. {entry.pages[0]}–{entry.pages[entry.pages.length - 1]}</span>
+                      <span className={'lnv-no size-[26px] rounded-full border flex items-center justify-center font-bold text-[12px] font-[Georgia,serif] flex-none' + (isCurrent ? ' bg-[var(--accent,#713c46)] border-[var(--accent,#713c46)] text-white' : ' border-[#d8cba4] text-[#6b6152]')}>{entry.short === 'MP' ? '✦' : entry.short.replace('L', '')}</span>
+                      <span className={'lnv-nm' + (isCurrent ? ' font-bold' : '') + (entry.short === 'MP' ? ' text-[#8a7d63] italic' : (isCurrent ? ' text-[var(--accent,#713c46)]' : ''))}>{entry.label}</span>
+                      <span className="lnv-pp ml-auto text-[10.5px] text-[#a2946f] dark:text-[#9aa396]">pp. {entry.pages[0]}–{entry.pages[entry.pages.length - 1]}</span>
                     </a>
                   );
                 })}
@@ -197,21 +197,21 @@ export function LibraryNav({slug}: {slug: string}) {
         </aside>
       </div>, document.body)}
     {panel === 'pages' && createPortal(
-      <div className={noAnim ? 'lnv-overlay lnv-noanim' : 'lnv-overlay'} role="dialog" aria-label="All pages">
-        <div className="lnv-scrim" onClick={close}/>
-        <div className="lnv-sheet">
-          <div className="lnv-grab"/>
-          <div className="lnv-shead">
-            <div className="lnv-st">All pages</div>
-            <div className="lnv-ss">{bookInfo.title} · {mod.level} — jump to any page</div>
+      <div className={noAnim ? 'lnv-overlay lnv-noanim fixed inset-0 z-[90]' : 'lnv-overlay fixed inset-0 z-[90]'} role="dialog" aria-label="All pages">
+        <div className={`lnv-scrim absolute inset-0 bg-[rgba(24,16,10,.55)] touch-none${noAnim ? '' : ' animate-lnv-fade'}`} onClick={close}/>
+        <div className={`lnv-sheet absolute inset-x-0 bottom-0 top-[84px] bg-[#fdfaf2] text-[#2b2620] rounded-t-[22px] shadow-[0_-12px_40px_rgba(20,12,6,.4)] flex flex-col dark:bg-[#232a26] dark:text-[#e8e2d4]${noAnim ? '' : ' animate-lnv-rise'}`}>
+          <div className="lnv-grab w-11 h-[5px] rounded-[3px] bg-[#d8cba4] mx-auto mt-2.5 mb-1 flex-none"/>
+          <div className="lnv-shead px-5 pt-2 pb-2.5 border-b border-[#eee3c8] dark:border-[#3a443e]">
+            <div className="lnv-st font-bold text-[18px] font-[Georgia,serif]">All pages</div>
+            <div className="lnv-ss font-normal text-[11px] font-[Arial,sans-serif] text-[#8a7d63] mt-0.5 dark:text-[#9aa396]">{bookInfo.title} · {mod.level} — jump to any page</div>
           </div>
-          <div className="lnv-sheetscroll">
+          <div className="lnv-sheetscroll flex-1 overflow-y-auto overscroll-contain touch-pan-y pb-7">
             {levelLessons(mod.book, mod.level).map(entry => (
               <div key={entry.slug + entry.label}>
-                <div className={'lnv-psec' + (currentPage != null && entry.pages.includes(currentPage) ? ' cur' : '')}>{entry.label.toUpperCase()}</div>
-                <div className="lnv-pgrid">
+                <div className={'lnv-psec font-extrabold text-[10.5px] font-[Arial,sans-serif] tracking-[.13em] px-5 pt-3 pb-1.5' + (currentPage != null && entry.pages.includes(currentPage) ? ' cur text-[#a5832f] dark:text-[#d4b674] after:content-[""] after:inline-block after:size-1.5 after:rounded-full after:bg-[#c9a45a] after:ml-[7px] after:align-[1px]' : ' text-[var(--accent,#713c46)]')}>{entry.label.toUpperCase()}</div>
+                <div className="lnv-pgrid grid grid-cols-4 gap-2 px-5">
                   {entry.pages.map(p => (
-                    <button type="button" key={p} className={'lnv-pg' + (p === currentPage ? ' cur' : '')}
+                    <button type="button" key={p} className={'lnv-pg h-9 rounded-[9px] border flex items-center justify-center font-semibold text-[12.5px] font-[Arial,sans-serif] cursor-pointer p-0 min-h-9' + (p === currentPage ? ' cur bg-[#c9a45a] border-[#b08d3f] text-[#2b2620] font-extrabold' : ' border-[#ddd2b8] bg-white text-[#4a4234]')}
                       onClick={() => {close(); gotoPage(p);}}>{p}</button>
                   ))}
                 </div>
@@ -219,10 +219,10 @@ export function LibraryNav({slug}: {slug: string}) {
             ))}
             {levelExtras(mod.book, mod.level).map(entry => (
               <div key={entry.slug}>
-                <div className={'lnv-psec' + (currentPage != null && entry.pages.includes(currentPage) ? ' cur' : '')}>EXTRAS</div>
-                <div className="lnv-pgrid">
+                <div className={'lnv-psec font-extrabold text-[10.5px] font-[Arial,sans-serif] tracking-[.13em] px-5 pt-3 pb-1.5' + (currentPage != null && entry.pages.includes(currentPage) ? ' cur text-[#a5832f] dark:text-[#d4b674] after:content-[""] after:inline-block after:size-1.5 after:rounded-full after:bg-[#c9a45a] after:ml-[7px] after:align-[1px]' : ' text-[var(--accent,#713c46)]')}>EXTRAS</div>
+                <div className="lnv-pgrid grid grid-cols-4 gap-2 px-5">
                   {entry.pages.map(p => (
-                    <button type="button" key={p} className={'lnv-pg' + (p === currentPage ? ' cur' : '')}
+                    <button type="button" key={p} className={'lnv-pg h-9 rounded-[9px] border flex items-center justify-center font-semibold text-[12.5px] font-[Arial,sans-serif] cursor-pointer p-0 min-h-9' + (p === currentPage ? ' cur bg-[#c9a45a] border-[#b08d3f] text-[#2b2620] font-extrabold' : ' border-[#ddd2b8] bg-white text-[#4a4234]')}
                       onClick={() => {close(); gotoPage(p);}}>{p}</button>
                   ))}
                 </div>

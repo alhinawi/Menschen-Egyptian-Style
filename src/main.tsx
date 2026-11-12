@@ -2,6 +2,7 @@ import {createRoot} from 'react-dom/client';
 import App from './App';
 import manifest from './lessons/manifest.json';
 import './adapters/page-flip';
+import './tailwind.gen.css';
 import type {LessonConfig, MarkupNode} from './types/book';
 import type {LessonInitializer} from './types/runtime';
 
