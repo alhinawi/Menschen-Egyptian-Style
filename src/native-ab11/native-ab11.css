@@ -15,3 +15,5 @@
 
 .nativeAB11Next .nabPronouns{z-index:0}.nativeAB11Next .nabText,.nativeAB11Next .nabNumber,.nativeAB11Next .nabInput{z-index:1}
 .nativeAB11Next .nabStressChooser{position:absolute;z-index:12;background:#fff8ca;border:2px solid #ab7b18;box-shadow:0 6px 30px #7778;padding:12px;box-sizing:border-box;font:22px Arial}.nativeAB11Next .nabStressChooser button{font:26px Arial;min-width:46px;min-height:48px;margin:4px;border:1px solid #9e8e55;background:white;color:#222}.nativeAB11Next .nabStressChooser>b+button{float:right}
+
+.nativeAB11Next[data-native-ab11-page='13'] .nabConjRow>*{height:27px;padding:2px 4px}.nativeAB11Next[data-native-ab11-page='13'] .nabConjugation>b{padding:3px 5px}
