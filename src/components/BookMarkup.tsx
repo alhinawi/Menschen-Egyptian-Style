@@ -1,3 +1,4 @@
+import {NativeAB11Lesson9Close} from '../native-ab11/NativeAB11Lesson9Close';
 import {ClipMarkers} from './ClipMarkers';
 import {NativePage} from './NativePage';
 import {NativePilot} from './NativePilot';
@@ -53,6 +54,7 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   if(tag === 'NativePage')return createElement(NativePage,{key,book:attrs.book,page:attrs.page});
   if(tag === 'NativePilot')return createElement(NativePilot,{key,page:attrs.page});
   if(tag === 'NativeKB12')return createElement(NativeKB12,{key,page:attrs.page});
+  if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['68','69','70'].includes(String(attrs.page)))return createElement(NativeAB11Lesson9Close,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['65','66','67'].includes(String(attrs.page)))return createElement(NativeAB11Lesson9Start,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['62','63','64'].includes(String(attrs.page)))return createElement(NativeAB11Lesson8Close,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['60','61'].includes(String(attrs.page)))return createElement(NativeAB11Lesson8Start,{key,page:String(attrs.page)});
