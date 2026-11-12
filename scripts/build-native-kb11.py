@@ -32,7 +32,10 @@ def build(p):
     pe=json.load(open(_kf)).get('pe',0) if os.path.exists(_kf) else 0
     keep=json.load(open(_kf)).get('keepscan',[]) if os.path.exists(_kf) else []
     for wd in d['words']:
-        if _kept(wd):continue
+        if _kept(wd):
+            _r={'t':wd['text'],'x':wd['x'],'y':wd['y'],'w':wd['w'],'h':wd['h']}
+            if wd.get('phrase'):_r['ph']=wd['phrase']
+            words.append(_r);continue
         x,y,w,h=[round(v*S) for v in(wd['x'],wd['y'],wd['w'],wd['h'])]
         t=wd['text']
         x0,y0,x1,y1=max(0,x-2),max(0,y-2),min(W,x+w+2),min(H,y+h+2)
