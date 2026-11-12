@@ -10,6 +10,8 @@ const manifest = JSON.parse(fs.readFileSync('src/lessons/manifest.json', 'utf8')
 let routes = Object.entries(manifest).filter(([, v]) => v.themes).map(([k]) => k);
 if (process.argv.includes('--routes')) routes = process.argv[process.argv.indexOf('--routes')+1].split(',');
 const THEMES = ['light', 'dark', 'paper', 'sand', 'forest', 'burgundy', 'ocean', 'midnight', 'slate', 'plum'];
+let themesRun = THEMES;
+if (process.argv.includes('--themes')) themesRun = process.argv[process.argv.indexOf('--themes')+1].split(',');
 const shotDir = process.argv.includes('--screenshots') ? process.argv[process.argv.indexOf('--screenshots') + 1] : null;
 
 const MIME = {'.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.mp3': 'audio/mpeg', '.woff2': 'font/woff2', '.woff': 'font/woff', '.ttf': 'font/ttf'};
@@ -84,7 +86,7 @@ window.__audit = function(){
   const failures = [];
   const audits = [];
   for (const route of routes) {
-    for (const theme of THEMES) {
+    for (const theme of themesRun) {
       const ctx = await browser.newContext({viewport: {width: 390, height: 844}});
       await ctx.addInitScript(t => { try { localStorage.setItem('menschen-site-theme', JSON.stringify({id: t, mode: ['dark','forest','burgundy','ocean','midnight','slate','plum'].includes(t)?'dark':'light', palette: '1'})); localStorage.setItem('menschen-audio-hint-seen-v1','1'); } catch {} }, theme);
       const page = await ctx.newPage();
