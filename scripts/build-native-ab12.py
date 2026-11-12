@@ -308,7 +308,11 @@ def word_styles(d, A, words, drop):
         ink170 = lum < 170
         if float(ink170.mean()) >= 0.004:
             fracs[idx] = float(ink.mean())
-            meds[idx] = np.median(sub[ink170], axis=0).astype(int)
+            satm = (sub.max(2) - sub.min(2) > 40) & (lum < 235)
+            if float(satm.mean()) >= 0.02:
+                meds[idx] = np.median(sub[satm], axis=0).astype(int)
+            else:
+                meds[idx] = np.median(sub[ink170], axis=0).astype(int)
         else:
             fracs[idx] = 0.0
             meds[idx] = None
@@ -323,7 +327,7 @@ def word_styles(d, A, words, drop):
         elif med is not None:
             r, g, b = (int(v) for v in med)
             sat = max(r, g, b) - min(r, g, b)
-            if sat >= 60 and max(r, g, b) > 60:
+            if sat >= 45 and max(r, g, b) > 60:
                 st['c'] = '#%02x%02x%02x' % (r, g, b)
                 if b > r + 20 and b > g + 10:
                     st['h'] = 1  # blue handwritten printed answer
