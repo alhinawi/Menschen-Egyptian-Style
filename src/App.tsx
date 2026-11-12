@@ -10,7 +10,7 @@ import {ReaderThemes, CrossBookNavigation} from './components/ReaderThemes';
 import {LibraryNav} from './components/LibraryNav';
 import {LessonHop} from './components/LessonHop';
 import type {LoadedLesson} from './navigate';
-import {lessonUrl, loadLesson, navigateLesson, registerNavigator, slugFromLocation} from './navigate';
+import {lessonUrl, loadLesson, navigateLesson, registerNavigator, slugFromLocation, slugToFile, applyRouteMeta} from './navigate';
 
 export default function App({initial}: {initial: LoadedLesson}) {
   const [lesson, setLesson] = useState(initial);
@@ -36,6 +36,7 @@ export default function App({initial}: {initial: LoadedLesson}) {
         return;
       }
       const next = await loadLesson(slug);
+      applyRouteMeta(slugToFile[next.config.slug] ?? 'index.html');
       // Tear the old lesson down before the DOM swap: adapters restore the
       // page elements they moved, so React can cleanly unmount the old tree.
       cleanupRef.current?.();
