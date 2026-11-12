@@ -155,10 +155,27 @@ def sans_ctx(a,S,x0,cy,x1,f,paper0):
     return 1 if col.mean()>0.35 else 0
 def re_has(t):
     return any(c.isalnum() for c in t) or t.strip() in ('.',',','!','?',':','–','-','…')
+def apply_overrides(r,p):
+    f=f'{ROOT}/src/native-kb11/overrides/p{p}.json'
+    if not os.path.exists(f):return
+    o=json.load(open(f))
+    def hit(b,m):
+        return all(abs(b[k]-v)<=m.get('tol',3) for k,v in m.items() if k in('x','cy','w','f'))
+    for rng in o.get('sans',[]):
+        for b in r['blocks']:
+            if rng[0]<=b['cy']<=rng[1] and rng[2]<=b['x']<=rng[3]:b['sa']=1;b['b']=0 if len(rng)>4 and rng[4]==0 else b['b']
+    for m in o.get('drop',[]):
+        r['blocks']=[b for b in r['blocks'] if not hit(b,m)]
+    for m in o.get('adj',[]):
+        for b in r['blocks']:
+            if hit(b,m):
+                b['x']+=m.get('dx',0);b['cy']+=m.get('dy',0);b['w']+=m.get('dw',0)
+                if 'f' in m.get('set',{}):b['f']=m['set']['f']
 if __name__=='__main__':
     sel=[int(x) for x in sys.argv[1:]] or PAGES
     os.makedirs(f'{ROOT}/src/native-kb11',exist_ok=True)
     for p in sel:
         r=build(p)
+        apply_overrides(r,p)
         json.dump(r,open(f'{ROOT}/src/native-kb11/p{p}.json','w'),ensure_ascii=False,separators=(',',':'))
         print(p,len(r['words']),len(r['art']),sum(1 for w in r['words'] if w.get('r')))
