@@ -1819,13 +1819,397 @@
    "h": 12
   }
  ],
- "fields": [],
- "audio": [],
- "groups": [],
+ "fields": [
+  {
+   "id": "1z0",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Zeiten 1",
+   "answer": "true",
+   "x": 451,
+   "y": 279,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "1z1",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Zeiten 2",
+   "answer": "true",
+   "x": 451,
+   "y": 312,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "1z2",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Zeiten 3",
+   "answer": "false",
+   "x": 451,
+   "y": 345,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-1t-0",
+   "group": "g1",
+   "kind": "radio",
+   "label": "Termin 1 0",
+   "answer": "false",
+   "name": "1t",
+   "value": "0",
+   "x": 700,
+   "y": 279,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-1t-1",
+   "group": "g1",
+   "kind": "radio",
+   "label": "Termin 2 1",
+   "answer": "false",
+   "name": "1t",
+   "value": "1",
+   "x": 700,
+   "y": 312,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-1t-2",
+   "group": "g1",
+   "kind": "radio",
+   "label": "Termin 3 2",
+   "answer": "true",
+   "name": "1t",
+   "value": "2",
+   "x": 700,
+   "y": 345,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-2a-0",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2a 0",
+   "answer": "false",
+   "name": "2a",
+   "value": "0",
+   "x": 177,
+   "y": 597,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-2a-1",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2a 1",
+   "answer": "false",
+   "name": "2a",
+   "value": "1",
+   "x": 177,
+   "y": 624,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-2a-2",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2a 2",
+   "answer": "true",
+   "name": "2a",
+   "value": "2",
+   "x": 177,
+   "y": 650,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-2b-0",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2b 0",
+   "answer": "false",
+   "name": "2b",
+   "value": "0",
+   "x": 177,
+   "y": 711,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-2b-1",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2b 1",
+   "answer": "false",
+   "name": "2b",
+   "value": "1",
+   "x": 177,
+   "y": 738,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-2b-2",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2b 2",
+   "answer": "true",
+   "name": "2b",
+   "value": "2",
+   "x": 177,
+   "y": 764,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-2c-0",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2c 0",
+   "answer": "true",
+   "name": "2c",
+   "value": "0",
+   "x": 572,
+   "y": 573,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-2c-1",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2c 1",
+   "answer": "false",
+   "name": "2c",
+   "value": "1",
+   "x": 572,
+   "y": 601,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-2c-2",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2c 2",
+   "answer": "false",
+   "name": "2c",
+   "value": "2",
+   "x": 572,
+   "y": 628,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-2d-0",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2d 0",
+   "answer": "true",
+   "name": "2d",
+   "value": "0",
+   "x": 567,
+   "y": 719,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-2d-1",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2d 1",
+   "answer": "false",
+   "name": "2d",
+   "value": "1",
+   "x": 567,
+   "y": 747,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-2d-2",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2d 2",
+   "answer": "false",
+   "name": "2d",
+   "value": "2",
+   "x": 567,
+   "y": 775,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-r0",
+   "group": "g3",
+   "kind": "text",
+   "label": "Regel 0",
+   "answer": "oben",
+   "x": 290,
+   "y": 1283,
+   "w": 74,
+   "h": 22
+  },
+  {
+   "id": "p45-r1",
+   "group": "g3",
+   "kind": "text",
+   "label": "Regel 1",
+   "answer": "unten",
+   "x": 358,
+   "y": 1303,
+   "w": 82,
+   "h": 22
+  },
+  {
+   "id": "p45-3a",
+   "group": "g4",
+   "kind": "text",
+   "label": "3 a",
+   "answer": "?",
+   "x": 828,
+   "y": 967,
+   "w": 26,
+   "h": 22
+  },
+  {
+   "id": "p45-3b",
+   "group": "g4",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "!",
+   "x": 900,
+   "y": 992,
+   "w": 26,
+   "h": 22
+  },
+  {
+   "id": "p45-3c",
+   "group": "g4",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "!",
+   "x": 815,
+   "y": 1019,
+   "w": 26,
+   "h": 22
+  },
+  {
+   "id": "p45-3d",
+   "group": "g4",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "?",
+   "x": 900,
+   "y": 1045,
+   "w": 26,
+   "h": 22
+  },
+  {
+   "id": "p45-3e",
+   "group": "g4",
+   "kind": "text",
+   "label": "3 e",
+   "answer": "!",
+   "x": 870,
+   "y": 1070,
+   "w": 26,
+   "h": 22
+  },
+  {
+   "id": "p45-3f",
+   "group": "g4",
+   "kind": "text",
+   "label": "3 f",
+   "answer": "?",
+   "x": 826,
+   "y": 1097,
+   "w": 26,
+   "h": 22
+  }
+ ],
+ "audio": [
+  {
+   "id": "track19-1",
+   "src": "assets/ab-a12-track19.mp3",
+   "label": "CD2 · Track19",
+   "x": 56,
+   "y": 158,
+   "w": 54,
+   "h": 22
+  },
+  {
+   "id": "track20-2",
+   "src": "assets/ab-a12-track20.mp3",
+   "label": "CD2 · Track20",
+   "x": 56,
+   "y": 505,
+   "w": 54,
+   "h": 22
+  },
+  {
+   "id": "track21-3",
+   "src": "assets/ab-a12-track21.mp3",
+   "label": "CD2 · Track21",
+   "x": 56,
+   "y": 892,
+   "w": 54,
+   "h": 22
+  },
+  {
+   "id": "track22-4",
+   "src": "assets/ab-a12-track22.mp3",
+   "label": "CD2 · Track22",
+   "x": 545,
+   "y": 901,
+   "w": 54,
+   "h": 22
+  },
+  {
+   "id": "track23-5",
+   "src": "assets/ab-a12-track23.mp3",
+   "label": "CD2 · Track23",
+   "x": 582,
+   "y": 1147,
+   "w": 54,
+   "h": 22
+  }
+ ],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Hören 1"
+  },
+  {
+   "id": "g2",
+   "label": "Hören 2"
+  },
+  {
+   "id": "g3",
+   "label": "Aussprache 2"
+  },
+  {
+   "id": "g4",
+   "label": "Aussprache 3"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the official Hueber Loesungsschluessel AB A1.2 (Lektion 18, Training).",
+   "Hören 1 'Zeiten': key says Morgen um 10.00 and Mittwoch um 8.00 are heard; Termin: Mittwoch um 8.00 Uhr. Aussprache 1 (arrow symbols) is not mapped.",
+   "Audio markers 2.19-2.23 mapped from printed CD icons; audio content was not listened to. Boxes placed from the page image; not marked verified."
+  ],
   "verifiedWords": 259,
-  "totalWords": 259,
-  "notes": []
+  "totalWords": 259
  }
 }
