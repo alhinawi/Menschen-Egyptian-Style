@@ -6,8 +6,7 @@
     "themes": true,
     "styles": [
       "book.css",
-      "batch.css",
-      "batch-ab12.css"
+      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -52,8 +51,7 @@
     "themes": true,
     "styles": [
       "book.css",
-      "batch.css",
-      "batch-ab12.css"
+      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -89,8 +87,7 @@
     "themes": true,
     "styles": [
       "book.css",
-      "batch.css",
-      "ab-batch.css"
+      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -123,8 +120,7 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "book.css",
-      "ab-l7-9.css"
+      "book.css"
     ],
     "initializers": [
       "glossary",
@@ -181,8 +177,7 @@
     "themes": true,
     "styles": [
       "book.css",
-      "batch.css",
-      "ab2.css"
+      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -205,8 +200,7 @@
     "themes": true,
     "styles": [
       "book.css",
-      "batch.css",
-      "ab3.css"
+      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -228,8 +222,7 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "book.css",
-      "ab46.css"
+      "book.css"
     ],
     "initializers": [
       "glossary",
@@ -408,8 +401,7 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "book.css",
-      "batch-l21-24.css"
+      "book.css"
     ],
     "initializers": [
       "glossary",
