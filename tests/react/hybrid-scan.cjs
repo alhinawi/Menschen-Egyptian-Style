@@ -31,7 +31,7 @@ const server=http.createServer((req,res)=>{
   const errors=[];p.on('pageerror',e=>errors.push(e.message));
   await p.goto('http://127.0.0.1:5192/l7-9.html#46');
   await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
-  const h=p.locator('.hybridScan');await h.waitFor();
+  const h=p.locator('.hybridScan[data-scan-page="46"]');await h.waitFor();
   assert.equal(await h.locator('input').count(),7);
   const ratio=await h.locator('img').evaluate(i=>{const r=i.getBoundingClientRect();return Math.abs(r.width/r.height-i.naturalWidth/i.naturalHeight)});
   assert(ratio<0.001,'scan aspect ratio changed');
@@ -53,5 +53,14 @@ const server=http.createServer((req,res)=>{
   assert.deepEqual(errors,[]);
   console.log(`${width}px: scan ratio, grading, wrong-answer feedback, saved answers, audio, translation passed`);
   await p.close();
- }}finally{await browser.close();server.close()}
+ }
+ for(const [file,min] of [['l2-3.html',500],['l4-6.html',1000],['ab2.html',400],['kb-a12-l13-16.html',1500]]){
+ const p=await browser.newPage();await p.goto('http://127.0.0.1:5192/'+file);await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
+ assert(await p.locator('.tapWord').count()>=min,file+': normal printed text lost translation');
+ await p.locator('.tapWord').first().evaluate(e=>e.click());assert(await p.locator('.meaningPopup').evaluate(d=>d.open),file+': meaning dialog did not open');
+ console.log(file,await p.locator('.tapWord').count(),'normal-page translation hotspots passed');await p.close();
+ }
+ const p=await browser.newPage();await p.goto('http://127.0.0.1:5192/index.html#9');await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
+ assert(await p.locator('.hybridScan[data-scan-page="9"] .tapWord').count()>=80);assert(await p.locator('.hybridScan[data-scan-page="10"] .tapWord').count()>=100);await p.close();
+ }finally{await browser.close();server.close()}
 })().catch(e=>{console.error(e);server.close();process.exitCode=1});
