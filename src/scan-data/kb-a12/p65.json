@@ -1,0 +1,685 @@
+{
+ "book": "kb-a12",
+ "page": 65,
+ "image": "assets/kb-a12-p65.png",
+ "width": 754,
+ "height": 1025,
+ "words": [
+  {
+   "text": "Das",
+   "x": 100,
+   "y": 721,
+   "w": 23,
+   "h": 11
+  },
+  {
+   "text": "müssen",
+   "x": 129,
+   "y": 721,
+   "w": 50,
+   "h": 11
+  },
+  {
+   "text": "wir",
+   "x": 185,
+   "y": 720,
+   "w": 22,
+   "h": 11
+  },
+  {
+   "text": "unbedingt",
+   "x": 213,
+   "y": 720,
+   "w": 71,
+   "h": 16
+  },
+  {
+   "text": "feiern!",
+   "x": 290,
+   "y": 720,
+   "w": 44,
+   "h": 12
+  },
+  {
+   "text": "a",
+   "x": 77,
+   "y": 752,
+   "w": 6,
+   "h": 7
+  },
+  {
+   "text": "Was",
+   "x": 100,
+   "y": 749,
+   "w": 24,
+   "h": 10
+  },
+  {
+   "text": "ist",
+   "x": 130,
+   "y": 751,
+   "w": 13,
+   "h": 8
+  },
+  {
+   "text": "richtig?",
+   "x": 149,
+   "y": 748,
+   "w": 46,
+   "h": 15
+  },
+  {
+   "text": "Sehen",
+   "x": 200,
+   "y": 748,
+   "w": 35,
+   "h": 11
+  },
+  {
+   "text": "Sie",
+   "x": 241,
+   "y": 749,
+   "w": 17,
+   "h": 10
+  },
+  {
+   "text": "das",
+   "x": 263,
+   "y": 748,
+   "w": 19,
+   "h": 11
+  },
+  {
+   "text": "Foto",
+   "x": 288,
+   "y": 749,
+   "w": 26,
+   "h": 10
+  },
+  {
+   "text": "an,",
+   "x": 319,
+   "y": 752,
+   "w": 18,
+   "h": 9
+  },
+  {
+   "text": "hören",
+   "x": 343,
+   "y": 748,
+   "w": 34,
+   "h": 11
+  },
+  {
+   "text": "Sie",
+   "x": 382,
+   "y": 749,
+   "w": 17,
+   "h": 10
+  },
+  {
+   "text": "und",
+   "x": 405,
+   "y": 748,
+   "w": 21,
+   "h": 11
+  },
+  {
+   "text": "kreuzen",
+   "x": 432,
+   "y": 749,
+   "w": 47,
+   "h": 10
+  },
+  {
+   "text": "Sie",
+   "x": 484,
+   "y": 749,
+   "w": 17,
+   "h": 10
+  },
+  {
+   "text": "an.",
+   "x": 506,
+   "y": 752,
+   "w": 18,
+   "h": 7
+  },
+  {
+   "text": "Nick",
+   "x": 100,
+   "y": 776,
+   "w": 27,
+   "h": 10
+  },
+  {
+   "text": "möchte",
+   "x": 132,
+   "y": 776,
+   "w": 45,
+   "h": 10
+  },
+  {
+   "text": "Alisa",
+   "x": 217,
+   "y": 776,
+   "w": 30,
+   "h": 10
+  },
+  {
+   "text": "zu",
+   "x": 252,
+   "y": 780,
+   "w": 13,
+   "h": 6
+  },
+  {
+   "text": "Isabellas",
+   "x": 271,
+   "y": 776,
+   "w": 51,
+   "h": 10
+  },
+  {
+   "text": "Überraschungsparty",
+   "x": 328,
+   "y": 776,
+   "w": 125,
+   "h": 15
+  },
+  {
+   "text": "einladen.",
+   "x": 458,
+   "y": 776,
+   "w": 53,
+   "h": 10
+  },
+  {
+   "text": "sein",
+   "x": 217,
+   "y": 798,
+   "w": 24,
+   "h": 6
+  },
+  {
+   "text": "Examen",
+   "x": 248,
+   "y": 795,
+   "w": 47,
+   "h": 10
+  },
+  {
+   "text": "mit",
+   "x": 301,
+   "y": 797,
+   "w": 19,
+   "h": 8
+  },
+  {
+   "text": "Alisa",
+   "x": 326,
+   "y": 794,
+   "w": 29,
+   "h": 11
+  },
+  {
+   "text": "feiern.",
+   "x": 361,
+   "y": 794,
+   "w": 35,
+   "h": 11
+  },
+  {
+   "text": "Alisa",
+   "x": 94,
+   "y": 810,
+   "w": 35,
+   "h": 32
+  },
+  {
+   "text": "hat",
+   "x": 218,
+   "y": 821,
+   "w": 18,
+   "h": 11
+  },
+  {
+   "text": "heute",
+   "x": 242,
+   "y": 822,
+   "w": 33,
+   "h": 10
+  },
+  {
+   "text": "Abend",
+   "x": 282,
+   "y": 822,
+   "w": 36,
+   "h": 10
+  },
+  {
+   "text": "Zeit",
+   "x": 324,
+   "y": 823,
+   "w": 22,
+   "h": 9
+  },
+  {
+   "text": "ist",
+   "x": 206,
+   "y": 831,
+   "w": 25,
+   "h": 29
+  },
+  {
+   "text": "heute",
+   "x": 237,
+   "y": 831,
+   "w": 33,
+   "h": 29
+  },
+  {
+   "text": "Abend",
+   "x": 275,
+   "y": 831,
+   "w": 36,
+   "h": 29
+  },
+  {
+   "text": "schon",
+   "x": 313,
+   "y": 831,
+   "w": 37,
+   "h": 29
+  },
+  {
+   "text": "eingeladen",
+   "x": 358,
+   "y": 831,
+   "w": 66,
+   "h": 29
+  },
+  {
+   "text": "Hören",
+   "x": 101,
+   "y": 877,
+   "w": 35,
+   "h": 9
+  },
+  {
+   "text": "Sie",
+   "x": 141,
+   "y": 877,
+   "w": 17,
+   "h": 9
+  },
+  {
+   "text": "noch",
+   "x": 164,
+   "y": 876,
+   "w": 27,
+   "h": 10
+  },
+  {
+   "text": "einmal",
+   "x": 197,
+   "y": 876,
+   "w": 40,
+   "h": 10
+  },
+  {
+   "text": "und",
+   "x": 243,
+   "y": 876,
+   "w": 22,
+   "h": 11
+  },
+  {
+   "text": "korrigieren",
+   "x": 271,
+   "y": 876,
+   "w": 66,
+   "h": 15
+  },
+  {
+   "text": "Sie",
+   "x": 342,
+   "y": 877,
+   "w": 17,
+   "h": 10
+  },
+  {
+   "text": "die",
+   "x": 364,
+   "y": 876,
+   "w": 18,
+   "h": 11
+  },
+  {
+   "text": "Sätze.",
+   "x": 387,
+   "y": 877,
+   "w": 36,
+   "h": 10
+  },
+  {
+   "text": "Alisa",
+   "x": 116,
+   "y": 903,
+   "w": 29,
+   "h": 11
+  },
+  {
+   "text": "hat",
+   "x": 151,
+   "y": 903,
+   "w": 19,
+   "h": 11
+  },
+  {
+   "text": "den",
+   "x": 175,
+   "y": 907,
+   "w": 21,
+   "h": 7
+  },
+  {
+   "text": "Brief",
+   "x": 196,
+   "y": 894,
+   "w": 36,
+   "h": 30
+  },
+  {
+   "text": "von",
+   "x": 236,
+   "y": 907,
+   "w": 18,
+   "h": 7
+  },
+  {
+   "text": "Nick",
+   "x": 264,
+   "y": 904,
+   "w": 26,
+   "h": 10
+  },
+  {
+   "text": "noch",
+   "x": 296,
+   "y": 904,
+   "w": 29,
+   "h": 10
+  },
+  {
+   "text": "nicht",
+   "x": 323,
+   "y": 894,
+   "w": 38,
+   "h": 30
+  },
+  {
+   "text": "gelesen.",
+   "x": 366,
+   "y": 894,
+   "w": 45,
+   "h": 30
+  },
+  {
+   "text": "Gestern",
+   "x": 117,
+   "y": 923,
+   "w": 45,
+   "h": 9
+  },
+  {
+   "text": "hat",
+   "x": 168,
+   "y": 922,
+   "w": 19,
+   "h": 10
+  },
+  {
+   "text": "Isabella",
+   "x": 193,
+   "y": 922,
+   "w": 46,
+   "h": 10
+  },
+  {
+   "text": "ihre",
+   "x": 245,
+   "y": 922,
+   "w": 23,
+   "h": 10
+  },
+  {
+   "text": "Prüfung",
+   "x": 274,
+   "y": 922,
+   "w": 50,
+   "h": 14
+  },
+  {
+   "text": "mit",
+   "x": 329,
+   "y": 925,
+   "w": 20,
+   "h": 7
+  },
+  {
+   "text": "einer",
+   "x": 354,
+   "y": 926,
+   "w": 32,
+   "h": 6
+  },
+  {
+   "text": "Drei",
+   "x": 391,
+   "y": 923,
+   "w": 24,
+   "h": 9
+  },
+  {
+   "text": "bestanden.",
+   "x": 420,
+   "y": 922,
+   "w": 63,
+   "h": 10
+  },
+  {
+   "text": "Überraschungsparty",
+   "x": 141,
+   "y": 940,
+   "w": 125,
+   "h": 14
+  },
+  {
+   "text": "ist",
+   "x": 271,
+   "y": 943,
+   "w": 14,
+   "h": 7
+  },
+  {
+   "text": "im",
+   "x": 291,
+   "y": 944,
+   "w": 14,
+   "h": 6
+  },
+  {
+   "text": "September.",
+   "x": 310,
+   "y": 940,
+   "w": 65,
+   "h": 14
+  },
+  {
+   "text": "Alisa",
+   "x": 117,
+   "y": 958,
+   "w": 28,
+   "h": 10
+  },
+  {
+   "text": "kommt",
+   "x": 151,
+   "y": 958,
+   "w": 41,
+   "h": 10
+  },
+  {
+   "text": "sicher",
+   "x": 193,
+   "y": 948,
+   "w": 41,
+   "h": 30
+  },
+  {
+   "text": "noch",
+   "x": 241,
+   "y": 958,
+   "w": 25,
+   "h": 10
+  },
+  {
+   "text": "heute",
+   "x": 275,
+   "y": 958,
+   "w": 33,
+   "h": 11
+  },
+  {
+   "text": "Abend",
+   "x": 314,
+   "y": 958,
+   "w": 37,
+   "h": 11
+  },
+  {
+   "text": "fünfundsechzig",
+   "x": 564,
+   "y": 986,
+   "w": 86,
+   "h": 13
+  }
+ ],
+ "fields": [
+  {
+   "id": "nick1",
+   "group": "1a",
+   "kind": "radio",
+   "label": "Nick möchte Alisa zu Isabellas Überraschungsparty einladen",
+   "x": 199,
+   "y": 774,
+   "w": 12,
+   "h": 12,
+   "name": "nick",
+   "value": "einladen",
+   "answer": "true"
+  },
+  {
+   "id": "nick2",
+   "group": "1a",
+   "kind": "radio",
+   "label": "Nick möchte sein Examen feiern",
+   "x": 199,
+   "y": 794,
+   "w": 12,
+   "h": 12,
+   "name": "nick",
+   "value": "examen",
+   "answer": "false"
+  },
+  {
+   "id": "alisa1",
+   "group": "1a",
+   "kind": "radio",
+   "label": "Alisa hat heute Abend Zeit",
+   "x": 199,
+   "y": 820,
+   "w": 12,
+   "h": 12,
+   "name": "alisa",
+   "value": "zeit",
+   "answer": "false"
+  },
+  {
+   "id": "alisa2",
+   "group": "1a",
+   "kind": "radio",
+   "label": "Alisa ist heute Abend schon eingeladen",
+   "x": 199,
+   "y": 839,
+   "w": 12,
+   "h": 12,
+   "name": "alisa",
+   "value": "eingeladen",
+   "answer": "true"
+  },
+  {
+   "id": "1b-1",
+   "group": "1b",
+   "kind": "text",
+   "label": "1b-1",
+   "x": 498,
+   "y": 896,
+   "w": 133,
+   "h": 18,
+   "answer": "die E-Mail|E-Mail|Email"
+  },
+  {
+   "id": "1b-2",
+   "group": "1b",
+   "kind": "text",
+   "label": "1b-2",
+   "x": 498,
+   "y": 915,
+   "w": 133,
+   "h": 18,
+   "answer": "Zwei|2"
+  },
+  {
+   "id": "1b-3",
+   "group": "1b",
+   "kind": "text",
+   "label": "1b-3",
+   "x": 498,
+   "y": 933,
+   "w": 133,
+   "h": 18,
+   "answer": "Oktober"
+  }
+ ],
+ "audio": [
+  {
+   "id": "cd3-46",
+   "src": "assets/kb-cd3-track46.mp3",
+   "label": "CD 3 · Track 46",
+   "x": 28,
+   "y": 719,
+   "w": 26,
+   "h": 16
+  }
+ ],
+ "groups": [
+  {
+   "id": "1a",
+   "label": "1a · Einladung"
+  },
+  {
+   "id": "1b",
+   "label": "1b · Sätze korrigieren"
+  }
+ ],
+ "review": {
+  "status": "partial",
+  "verifiedWords": 5,
+  "totalWords": 80,
+  "notes": [
+   "Fields checked against the visible original scan and Hueber official A1 key (2017), Kursbuch lessons 23-24/module 8. Translation boxes are a filtered German OCR draft; full word-by-word proofreading and handwritten sample coverage remain pending. No claim of a fully verified page."
+  ]
+ }
+}
