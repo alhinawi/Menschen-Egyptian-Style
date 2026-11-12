@@ -1315,13 +1315,231 @@
    "h": 13
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p6-b2",
+   "group": "g1",
+   "kind": "text",
+   "label": "Ball 2",
+   "answer": "auf",
+   "x": 561,
+   "y": 427,
+   "w": 136,
+   "h": 24
+  },
+  {
+   "id": "p6-b3",
+   "group": "g1",
+   "kind": "text",
+   "label": "Ball 3",
+   "answer": "in",
+   "x": 561,
+   "y": 453,
+   "w": 136,
+   "h": 24
+  },
+  {
+   "id": "p6-b4",
+   "group": "g1",
+   "kind": "text",
+   "label": "Ball 4",
+   "answer": "unter",
+   "x": 561,
+   "y": 479,
+   "w": 136,
+   "h": 24
+  },
+  {
+   "id": "p6-b5",
+   "group": "g1",
+   "kind": "text",
+   "label": "Ball 5",
+   "answer": "zwischen",
+   "x": 561,
+   "y": 505,
+   "w": 136,
+   "h": 24
+  },
+  {
+   "id": "p6-b7",
+   "group": "g1",
+   "kind": "text",
+   "label": "Ball 7",
+   "answer": "über",
+   "x": 561,
+   "y": 557,
+   "w": 136,
+   "h": 24
+  },
+  {
+   "id": "p6-b9",
+   "group": "g1",
+   "kind": "text",
+   "label": "Ball 9",
+   "answer": "vor",
+   "x": 561,
+   "y": 609,
+   "w": 136,
+   "h": 24
+  },
+  {
+   "id": "p6-r1",
+   "group": "g2",
+   "kind": "text",
+   "label": "1",
+   "answer": "Restaurant",
+   "x": 660,
+   "y": 866,
+   "w": 231,
+   "h": 24
+  },
+  {
+   "id": "p6-r2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2",
+   "answer": "Zentrum",
+   "x": 660,
+   "y": 893,
+   "w": 158,
+   "h": 24
+  },
+  {
+   "id": "p6-r3",
+   "group": "g2",
+   "kind": "text",
+   "label": "3",
+   "answer": "Bahnhof",
+   "x": 660,
+   "y": 918,
+   "w": 158,
+   "h": 24
+  },
+  {
+   "id": "p6-r4",
+   "group": "g2",
+   "kind": "text",
+   "label": "4",
+   "answer": "Bank",
+   "x": 660,
+   "y": 945,
+   "w": 88,
+   "h": 24
+  },
+  {
+   "id": "p6-r5",
+   "group": "g2",
+   "kind": "text",
+   "label": "5",
+   "answer": "Post",
+   "x": 660,
+   "y": 970,
+   "w": 88,
+   "h": 24
+  },
+  {
+   "id": "p6-r6",
+   "group": "g2",
+   "kind": "text",
+   "label": "6",
+   "answer": "Ampel",
+   "x": 660,
+   "y": 996,
+   "w": 88,
+   "h": 24
+  },
+  {
+   "id": "p6-d2",
+   "group": "g3",
+   "kind": "text",
+   "label": "Deutsch 2",
+   "answer": "Zentrum",
+   "x": 178,
+   "y": 1166,
+   "w": 177,
+   "h": 24
+  },
+  {
+   "id": "p6-d3",
+   "group": "g3",
+   "kind": "text",
+   "label": "Deutsch 3",
+   "answer": "Bahnhof",
+   "x": 178,
+   "y": 1196,
+   "w": 177,
+   "h": 24
+  },
+  {
+   "id": "p6-d4",
+   "group": "g3",
+   "kind": "text",
+   "label": "Deutsch 4",
+   "answer": "Bank",
+   "x": 178,
+   "y": 1227,
+   "w": 177,
+   "h": 24
+  },
+  {
+   "id": "p6-d5",
+   "group": "g3",
+   "kind": "text",
+   "label": "Deutsch 5",
+   "answer": "Post",
+   "x": 178,
+   "y": 1256,
+   "w": 177,
+   "h": 24
+  },
+  {
+   "id": "p6-d6",
+   "group": "g3",
+   "kind": "text",
+   "label": "Deutsch 6",
+   "answer": "Ampel",
+   "x": 178,
+   "y": 1286,
+   "w": 177,
+   "h": 24
+  },
+  {
+   "id": "p6-d7",
+   "group": "g3",
+   "kind": "text",
+   "label": "Deutsch 7",
+   "answer": "Café",
+   "x": 178,
+   "y": 1313,
+   "w": 177,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 2"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 3a"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 3b"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the official Hueber key (Menschen A1, Lektion 13 Arbeitsbuch). Handwritten examples not fields.",
+   "Ex 1 (drawing arrows) has no fields.",
+   "Ex 3a: one field per puzzle row, answer is the full word.",
+   "Ex 3b: only the 'Deutsch' column (Hueber key); the 'Meine Sprache' column is individual.",
+   "Boxes placed from word coordinates and checked visually. Not marked verified."
+  ],
   "verifiedWords": 187,
-  "totalWords": 187,
-  "notes": []
+  "totalWords": 187
  }
 }
