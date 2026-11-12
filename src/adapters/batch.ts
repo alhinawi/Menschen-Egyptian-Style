@@ -54,19 +54,22 @@ let suppressMeaningUntil=0;viewport.addEventListener('touchend',()=>{if(pinching
 
 $('#lessonNav').onchange=(e: any)=>{const target=e.target.value;if(target==='index.html'){location.href=target;return}const n=Number(target.split('#')[1]);flip.turnToPage(n-13);scrollTo(0,0);viewport.scrollLeft=0;history.replaceState(null,'','#'+n)};
 // Mark the regions of the original Swiss map without changing the printed image.
-const canvas=$('#swissPaint'),ctx=canvas.getContext('2d');let drawing=false,color='#e74b36';ctx.lineCap='round';ctx.lineJoin='round';ctx.lineWidth=14;
+const canvas=$('#swissPaint');if(canvas){const ctx=canvas.getContext('2d');let drawing=false,color='#e74b36';ctx.lineCap='round';ctx.lineJoin='round';ctx.lineWidth=14;
 if(state.swissPaint){const im=new Image();im.onload=()=>ctx.drawImage(im,0,0);im.src=state.swissPaint;}
 function point(e: PointerEvent){const r=canvas.getBoundingClientRect();return [(e.clientX-r.left)*canvas.width/r.width,(e.clientY-r.top)*canvas.height/r.height]}
 canvas.onpointerdown=(e: any)=>{e.preventDefault();canvas.setPointerCapture(e.pointerId);drawing=true;ctx.strokeStyle=color;ctx.beginPath();ctx.moveTo(...point(e));};canvas.onpointermove=(e: any)=>{if(!drawing)return;e.preventDefault();ctx.lineTo(...point(e));ctx.stroke()};const stop=()=>{if(!drawing)return;drawing=false;state.swissPaint=canvas.toDataURL();save()};canvas.onpointerup=stop;canvas.onpointercancel=stop;
 document.querySelectorAll<HTMLElement>('[data-color]').forEach(b=>b.onclick=()=>{color=b.dataset.color!;document.querySelectorAll<HTMLElement>('[data-color]').forEach(x=>x.style.outline=x===b?'2px solid '+color:'none')});$('#clearMap').onclick=()=>{ctx.clearRect(0,0,canvas.width,canvas.height);delete state.swissPaint;save()};
 
+}
+
 // The verb exercise keeps its marking task, with a separate meaning mode for its text.
-const verbText=document.querySelector<HTMLElement>('.verbText')!;let group=document.createElement('span');group.className='verbSentence';
+const verbText=document.querySelector<HTMLElement>('.verbText');if(verbText){let group=document.createElement('span');group.className='verbSentence';
 for(const node of [...verbText.childNodes]){group.append(node);if(node.nodeType===Node.TEXT_NODE&&/[.!?]/.test(node.textContent!)){group.dataset.phrase=group.textContent.trim();verbText.append(group);group=document.createElement('span');group.className='verbSentence';}}
 if(group.childNodes.length){group.dataset.phrase=group.textContent.trim();verbText.append(group)}
 verbText.addEventListener('click',(e: any)=>{if(document.body.dataset.textSelection==='true')return;if(document.body.dataset.translationMode!=='sentence')return;const sentence=e.target.closest('.verbSentence');if(!sentence)return;e.stopImmediatePropagation();e.preventDefault();window.openBookMeaning(e.target.closest('.verbWord')?.textContent,sentence.dataset.phrase,'sentence')},{capture:true});
+}
 // The screenplay can be marked without confusing a mark with a translation tap.
-const screenplay=document.querySelector<HTMLElement>('.screenplay')!;screenplay.addEventListener('click',(e: any)=>{if(document.body.dataset.scriptMarking!=='true'||e.target.tagName==='BUTTON')return;const word=e.target.closest('.tapWord');if(word){e.stopImmediatePropagation();e.preventDefault();word.classList.toggle('selectedVerb')}},{capture:true});
+const screenplay=document.querySelector<HTMLElement>('.screenplay');screenplay?.addEventListener('click',(e: any)=>{if(document.body.dataset.scriptMarking!=='true'||e.target.tagName==='BUTTON')return;const word=e.target.closest('.tapWord');if(word){e.stopImmediatePropagation();e.preventDefault();word.classList.toggle('selectedVerb')}},{capture:true});
 
 return {dispose(){lifecycle.dispose();clearTimeout(toastTimeout);audioContext?.close?.().catch(()=>{})},persistence:{getState:()=>state,update(values: Record<string, unknown>){Object.assign(state,values);save()}},exercise:{options:{rejectBlank:false,verbState:state,saveVerbSelection(i: string,value: string){state['verb-'+i]=value;save()},beforeVerbToggle(b: HTMLElement){if(document.body.dataset.textSelection==='true')return true;if(document.body.dataset.verbExplanation==='true'){window.openBookMeaning(b.textContent,(b.closest('.verbSentence') as HTMLElement).dataset.phrase,'word');return true}return false}},commitResult(form: any, ok: boolean){tone(ok);announce(ok);state['done-'+(form.dataset.key||form.id)]=ok;save();updateProgress()}}};
 
