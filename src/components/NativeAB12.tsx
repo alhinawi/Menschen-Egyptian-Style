@@ -342,6 +342,59 @@ export function NativeAB12({page}:{page:string}){
   {text(811,1384,160,'neunundfünfzig  |  59','naFooter')}
   {art('modul-tab',1008,1384,64,30)}
  </>}
+ {page==='23'&&<>
+  {art('lesson-tab',971,33,94,86)}
+  <div className="naText naHeadline" style={{left:105,top:89,width:290,fontSize:27.5,letterSpacing:2.2}}><Words text="LERNWORTSCHATZ"/></div>
+  <div className="naHeadRule" style={{left:400,top:112,width:476,borderBottom:'2px solid #f1ae23'}}/>
+  {title('1',100,161,700,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naOB')}
+  {text(144,200,160,'In der Stadt','naBold')}
+  {text(144,225,170,'Bibliothek die, -en','naS21')}{field('23-1-l1',316,223,189,'Bibliothek die, -en übersetzen')}
+  {text(144,251,170,'Geschäft das, -e /','naS21')}
+  {text(155,277,160,'Laden der, \u00a8','naS21')}{field('23-1-l2',316,275,189,'Laden der, \u00a8 übersetzen')}
+  {text(144,303,160,'Hafen der, \u00a8','naS21')}{field('23-1-l3',316,301,189,'Hafen der, \u00a8 übersetzen')}
+  {text(144,329,170,'Jugendherberge','naS21')}
+  {text(155,354,80,'die, -n','naS21')}{field('23-1-l4',316,352,189,'Jugendherberge die, -n übersetzen')}
+  {text(144,380,170,'Kindergarten','naS21')}
+  {text(155,406,80,'der, \u00a8','naS21')}{field('23-1-l5',316,404,189,'Kindergarten der, \u00a8 übersetzen')}
+  {text(144,431,160,'Kirche die, -n','naS21')}{field('23-1-l6',316,429,189,'Kirche die, -n übersetzen')}
+  {text(144,458,160,'Markt der, \u00a8e','naS21')}{field('23-1-l7',316,456,189,'Markt der, \u00a8e übersetzen')}
+  {text(144,483,160,'Park der, -s','naS21')}{field('23-1-l8',316,481,189,'Park der, -s übersetzen')}
+  {text(144,509,170,'Rathaus das, \u00a8er','naS21')}{field('23-1-l9',316,507,189,'Rathaus das, \u00a8er übersetzen')}
+  {text(144,534,170,'Schloss das, \u00a8er','naS21')}{field('23-1-l10',316,532,189,'Schloss das, \u00a8er übersetzen')}
+  {text(144,560,170,'Spielplatz der, \u00a8e','naS21')}{field('23-1-l11',316,558,189,'Spielplatz der, \u00a8e übersetzen')}
+  {text(144,586,160,'Turm der, \u00a8e','naS21')}{field('23-1-l12',316,584,189,'Turm der, \u00a8e übersetzen')}
+  {text(144,639,250,'Weitere wichtige Wörter','naBold')}
+  {text(144,663,170,'Ausländer der, -','naS21')}{field('23-1-l13',316,661,189,'Ausländer der, - übersetzen')}
+  {text(144,689,160,'Blick der, -e','naS21')}{field('23-1-l14',316,687,189,'Blick der, -e übersetzen')}
+  {text(534,201,170,'Mensch der, -en','naS21')}{field('23-1-r1',635,201,235,'Mensch der, -en übersetzen')}
+  {text(534,227,150,'Reisebüro','naS21')}
+  {text(545,258,80,'das, -s','naS21')}{field('23-1-r2',635,249,235,'Reisebüro das, -s übersetzen')}
+  {text(534,279,160,'Rezept das, -e','naS21')}{field('23-1-r3',635,278,235,'Rezept das, -e übersetzen')}
+  {text(534,304,150,'Urlaub der','naS21')}{field('23-1-r3b',635,300,235,'Urlaub der übersetzen')}
+  {text(545,333,200,'CH: Ferien die (Pl.)','naGray naS20')}
+  {text(534,356,150,'Wetter das','naS21')}{field('23-1-r4',635,351,235,'Wetter das übersetzen')}
+  {text(534,394,160,'danken, hat','naS21')}
+  {text(545,420,120,'gedankt','naS21')}{field('23-1-r5',635,416,235,'danken übersetzen')}
+  {text(534,446,160,'fehlen, hat','naS21')}
+  {text(545,472,120,'gefehlt','naS21')}{field('23-1-r6',635,468,235,'fehlen übersetzen')}
+  {text(534,498,160,'gehören, hat','naS21')}
+  {text(545,524,120,'gehört','naS21')}{field('23-1-r7',635,519,235,'gehören übersetzen')}
+  {text(534,562,120,'wichtig','naS21')}{field('23-1-r8',635,557,235,'wichtig übersetzen')}
+  {text(534,601,120,'alle','naS21')}{field('23-1-r9',635,596,235,'alle übersetzen')}
+  {text(534,632,120,'wenig','naS21')}{field('23-1-r10',635,621,235,'wenig übersetzen')}
+  {text(534,654,120,'zu Hause','naS21')}{field('23-1-r11',635,647,235,'zu Hause übersetzen')}
+  {art('tipp',146,744,440,104)}
+  {text(172,751,400,'Sehen Sie den Lernwortschatz „In der Stadt“ an.','naSmall')}
+  {text(172,775,400,'Schließen Sie das Buch.','naSmall')}
+  {text(172,799,400,'Schreiben Sie jetzt die Wörter mit Artikel auf.','naSmall')}
+  {text(172,823,400,'Wie viele Wörter kennen Sie?','naSmall')}
+  {art('handwriting',600,743,125,52)}
+  {title('2',98,895,760,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naOB')}
+  {[931,957,983,1009,1034,1060,1086,1111,1137,1163,1189,1215,1240,1266,1292,1317].map((y,i)=>field('23-2-'+(i+1),150,y,545,'Notizzeile '+(i+1)))}
+  {art('strip',910,132,145,1218)}
+  {text(793,1384,195,'dreiundzwanzig \u00a0|\u00a0 23','naFooter')}
+  {art('modul-tab',999,1379,67,27)}
+ </>}
  {page==='65'&&<>
   {art('lesson-tab',973,55,99,68)}
   <div className="naText naHeadline" style={{left:104,top:84,width:290,fontSize:27.5,letterSpacing:2.2}}><Words text="LERNWORTSCHATZ"/></div>
