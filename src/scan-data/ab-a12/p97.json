@@ -1420,15 +1420,162 @@
    "h": 9
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p97-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "mag Schnee lieber als Wind. Am liebsten mag ich Sonne.",
+   "x": 152,
+   "y": 242,
+   "w": 498,
+   "h": 18
+  },
+  {
+   "id": "p97-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "Daniel ist größer als Simon. Tom ist am größten.",
+   "x": 122,
+   "y": 314,
+   "w": 513,
+   "h": 18
+  },
+  {
+   "id": "p97-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d",
+   "answer": "kostet genauso viel wie das T-Shirt. Der Pullover kostet am meisten.",
+   "x": 186,
+   "y": 380,
+   "w": 464,
+   "h": 18
+  },
+  {
+   "id": "p97-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "Reise",
+   "x": 118,
+   "y": 678,
+   "w": 160,
+   "h": 16
+  },
+  {
+   "id": "p97-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c",
+   "answer": "Geburtstag",
+   "x": 470,
+   "y": 678,
+   "w": 142,
+   "h": 16
+  },
+  {
+   "id": "p97-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d",
+   "answer": "Zahnarzttermin",
+   "x": 392,
+   "y": 695,
+   "w": 160,
+   "h": 16
+  },
+  {
+   "id": "p97-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 e",
+   "answer": "Maiwoche",
+   "x": 118,
+   "y": 714,
+   "w": 140,
+   "h": 16
+  },
+  {
+   "id": "p97-2f1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 f1",
+   "answer": "Treffen",
+   "x": 422,
+   "y": 714,
+   "w": 161,
+   "h": 16
+  },
+  {
+   "id": "p97-2f2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 f2",
+   "answer": "Termine",
+   "x": 275,
+   "y": 733,
+   "w": 163,
+   "h": 16
+  },
+  {
+   "id": "p97-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "würde gern am See grillen.",
+   "x": 152,
+   "y": 934,
+   "w": 368,
+   "h": 18
+  },
+  {
+   "id": "p97-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "würde gern im Meer baden.",
+   "x": 162,
+   "y": 973,
+   "w": 358,
+   "h": 18
+  },
+  {
+   "id": "p97-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "würden gern in den Urlaub fahren.",
+   "x": 152,
+   "y": 1012,
+   "w": 368,
+   "h": 18
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 2"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 3"
+  }
+ ],
  "review": {
   "status": "partial",
-  "verifiedWords": 202,
-  "totalWords": 202,
   "notes": [
-   "Activation reviewed on a five-page visual sample (71,76,88,98,105): word boxes align with printed text, but these are partial OCR-derived layers. verifiedWords was supplied as the retained-word count by the worker, not an independent word-by-word audit. Some handwriting, symbols, fragments and printed words may be omitted or imperfect. No exercise fields or audio added."
-  ]
+   "Answers from official Hueber Loesungsschluessel AB A1.2 (Wiederholungsstation Grammatik, Modul 8).",
+   "Ex 1: answers start after the printed words (Ich / Die Bluse). Ex 2: the key labels the unlabeled blank 'f' (Treffen) and the printed (f) 'g' (Termine); filled in reading order. Handwritten examples not fields."
+  ],
+  "verifiedWords": 202,
+  "totalWords": 202
  }
 }

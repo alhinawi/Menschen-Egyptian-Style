@@ -1973,15 +1973,70 @@
    "h": 9
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p93-s1a",
+   "group": "g1",
+   "kind": "text",
+   "label": "Schreiben 1 Ort und Datum",
+   "answer": "Bielefeld, 15 Juni 20..|Bielefeld, 15. Juni 20..|Bielefeld, 15. Juni 20...",
+   "x": 285,
+   "y": 195,
+   "w": 170,
+   "h": 18
+  },
+  {
+   "id": "p93-s1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "Schreiben 1 Anrede",
+   "answer": "Liebe Studentinnen und Studenten",
+   "x": 120,
+   "y": 214,
+   "w": 265,
+   "h": 18
+  },
+  {
+   "id": "p93-s1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "Schreiben 1 Gruss",
+   "answer": "Viele Grüße",
+   "x": 120,
+   "y": 416,
+   "w": 270,
+   "h": 18
+  },
+  {
+   "id": "p93-a2",
+   "group": "g2",
+   "kind": "text",
+   "label": "Aussprache 2",
+   "answer": "Pause",
+   "x": 140,
+   "y": 949,
+   "w": 75,
+   "h": 18
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Schreiben 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aussprache 2"
+  }
+ ],
  "review": {
   "status": "partial",
-  "verifiedWords": 281,
-  "totalWords": 281,
   "notes": [
-   "Activation reviewed on a five-page visual sample (71,76,88,98,105): word boxes align with printed text, but these are partial OCR-derived layers. verifiedWords was supplied as the retained-word count by the worker, not an independent word-by-word audit. Some handwriting, symbols, fragments and printed words may be omitted or imperfect. No exercise fields or audio added."
-  ]
+   "Answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 24, Training).",
+   "Schreiben 1: the printed word bank reads 'Bielefeld, 15 Juni 20..' while the key has '15. Juni 20...'; both accepted as alternatives. Schreiben 2 and Aussprache 3 (free writing) not mapped."
+  ],
+  "verifiedWords": 281,
+  "totalWords": 281
  }
 }

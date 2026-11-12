@@ -1245,15 +1245,77 @@
    "h": 15
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p80-8b",
+   "group": "g1",
+   "kind": "text",
+   "label": "8 b",
+   "answer": "größer",
+   "x": 138,
+   "y": 268,
+   "w": 167,
+   "h": 22
+  },
+  {
+   "id": "p80-8c",
+   "group": "g1",
+   "kind": "text",
+   "label": "8 c",
+   "answer": "teurer",
+   "x": 138,
+   "y": 291,
+   "w": 167,
+   "h": 22
+  },
+  {
+   "id": "p80-8d",
+   "group": "g1",
+   "kind": "text",
+   "label": "8 d",
+   "answer": "hässlicher",
+   "x": 138,
+   "y": 313,
+   "w": 167,
+   "h": 22
+  },
+  {
+   "id": "p80-8e",
+   "group": "g1",
+   "kind": "text",
+   "label": "8 e",
+   "answer": "länger",
+   "x": 138,
+   "y": 335,
+   "w": 167,
+   "h": 22
+  },
+  {
+   "id": "p80-8f",
+   "group": "g1",
+   "kind": "text",
+   "label": "8 f",
+   "answer": "dünner",
+   "x": 138,
+   "y": 357,
+   "w": 167,
+   "h": 22
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 8"
+  }
+ ],
  "review": {
   "status": "partial",
-  "verifiedWords": 177,
-  "totalWords": 177,
   "notes": [
-   "Activation reviewed on a five-page visual sample (71,76,88,98,105): word boxes align with printed text, but these are partial OCR-derived layers. verifiedWords was supplied as the retained-word count by the worker, not an independent word-by-word audit. Some handwriting, symbols, fragments and printed words may be omitted or imperfect. No exercise fields or audio added."
-  ]
+   "Answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 22).",
+   "Ex 8 columns 'Meine Sprache' and ex 9 (free e-mail) not mapped; handwritten example not a field."
+  ],
+  "verifiedWords": 177,
+  "totalWords": 177
  }
 }

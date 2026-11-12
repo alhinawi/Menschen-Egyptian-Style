@@ -1756,15 +1756,196 @@
    "h": 14
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p78-4b-als",
+   "group": "g1",
+   "kind": "radio",
+   "label": "4 b als",
+   "answer": "false",
+   "name": "4b",
+   "value": "als",
+   "x": 415,
+   "y": 560,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p78-4b-wie",
+   "group": "g1",
+   "kind": "radio",
+   "label": "4 b wie",
+   "answer": "true",
+   "name": "4b",
+   "value": "wie",
+   "x": 470,
+   "y": 560,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p78-4c-als",
+   "group": "g1",
+   "kind": "radio",
+   "label": "4 c als",
+   "answer": "true",
+   "name": "4c",
+   "value": "als",
+   "x": 329,
+   "y": 579,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p78-4c-wie",
+   "group": "g1",
+   "kind": "radio",
+   "label": "4 c wie",
+   "answer": "false",
+   "name": "4c",
+   "value": "wie",
+   "x": 384,
+   "y": 579,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p78-4d-als",
+   "group": "g1",
+   "kind": "radio",
+   "label": "4 d als",
+   "answer": "true",
+   "name": "4d",
+   "value": "als",
+   "x": 307,
+   "y": 618,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p78-4d-wie",
+   "group": "g1",
+   "kind": "radio",
+   "label": "4 d wie",
+   "answer": "false",
+   "name": "4d",
+   "value": "wie",
+   "x": 362,
+   "y": 618,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p78-4e-als",
+   "group": "g1",
+   "kind": "radio",
+   "label": "4 e als",
+   "answer": "false",
+   "name": "4e",
+   "value": "als",
+   "x": 349,
+   "y": 638,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p78-4e-wie",
+   "group": "g1",
+   "kind": "radio",
+   "label": "4 e wie",
+   "answer": "true",
+   "name": "4e",
+   "value": "wie",
+   "x": 404,
+   "y": 638,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p78-5a",
+   "group": "g2",
+   "kind": "text",
+   "label": "5 a",
+   "answer": "besten",
+   "x": 352,
+   "y": 759,
+   "w": 126,
+   "h": 24
+  },
+  {
+   "id": "p78-5b1",
+   "group": "g2",
+   "kind": "text",
+   "label": "5 b 1",
+   "answer": "besser",
+   "x": 288,
+   "y": 817,
+   "w": 117,
+   "h": 24
+  },
+  {
+   "id": "p78-5b2",
+   "group": "g2",
+   "kind": "text",
+   "label": "5 b 2",
+   "answer": "lieber",
+   "x": 497,
+   "y": 837,
+   "w": 113,
+   "h": 24
+  },
+  {
+   "id": "p78-5c1",
+   "group": "g2",
+   "kind": "text",
+   "label": "5 c 1",
+   "answer": "lieber",
+   "x": 458,
+   "y": 902,
+   "w": 117,
+   "h": 24
+  },
+  {
+   "id": "p78-5c2",
+   "group": "g2",
+   "kind": "text",
+   "label": "5 c 2",
+   "answer": "gern",
+   "x": 330,
+   "y": 935,
+   "w": 120,
+   "h": 24
+  },
+  {
+   "id": "p78-5c3",
+   "group": "g2",
+   "kind": "text",
+   "label": "5 c 3",
+   "answer": "liebsten",
+   "x": 392,
+   "y": 973,
+   "w": 113,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 4"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 5"
+  }
+ ],
  "review": {
   "status": "partial",
-  "verifiedWords": 250,
-  "totalWords": 250,
   "notes": [
-   "Activation reviewed on a five-page visual sample (71,76,88,98,105): word boxes align with printed text, but these are partial OCR-derived layers. verifiedWords was supplied as the retained-word count by the worker, not an independent word-by-word audit. Some handwriting, symbols, fragments and printed words may be omitted or imperfect. No exercise fields or audio added."
-  ]
+   "Answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 22).",
+   "Ex 1 (vowel gaps), ex 2 (drawing), ex 3 (marking) not mapped; handwritten examples not fields."
+  ],
+  "verifiedWords": 250,
+  "totalWords": 250
  }
 }

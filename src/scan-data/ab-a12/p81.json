@@ -2064,15 +2064,242 @@
    "h": 10
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p81-1a0",
+   "group": "g1",
+   "kind": "text",
+   "label": "1a Vormittag",
+   "answer": "Nachmittag",
+   "x": 232,
+   "y": 205,
+   "w": 80,
+   "h": 22
+  },
+  {
+   "id": "p81-1a1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1a vor",
+   "answer": "nach",
+   "x": 355,
+   "y": 202,
+   "w": 85,
+   "h": 22
+  },
+  {
+   "id": "p81-1a2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1a mit",
+   "answer": "ohne",
+   "x": 476,
+   "y": 205,
+   "w": 77,
+   "h": 22
+  },
+  {
+   "id": "p81-1a3",
+   "group": "g1",
+   "kind": "text",
+   "label": "1a viele",
+   "answer": "keine",
+   "x": 142,
+   "y": 221,
+   "w": 88,
+   "h": 22
+  },
+  {
+   "id": "p81-1a4",
+   "group": "g1",
+   "kind": "text",
+   "label": "1a heute",
+   "answer": "morgen",
+   "x": 285,
+   "y": 222,
+   "w": 85,
+   "h": 22
+  },
+  {
+   "id": "p81-1a5",
+   "group": "g1",
+   "kind": "text",
+   "label": "1a immer",
+   "answer": "nie",
+   "x": 431,
+   "y": 225,
+   "w": 79,
+   "h": 22
+  },
+  {
+   "id": "p81-1a6",
+   "group": "g1",
+   "kind": "text",
+   "label": "1a oft",
+   "answer": "manchmal",
+   "x": 563,
+   "y": 224,
+   "w": 69,
+   "h": 22
+  },
+  {
+   "id": "p81-1b1-richtig",
+   "group": "g2",
+   "kind": "radio",
+   "label": "1b Nach dem 31. März richtig",
+   "answer": "false",
+   "name": "1b1",
+   "value": "richtig",
+   "x": 473,
+   "y": 375,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p81-1b1-falsch",
+   "group": "g2",
+   "kind": "radio",
+   "label": "1b Nach dem 31. März falsch",
+   "answer": "true",
+   "name": "1b1",
+   "value": "falsch",
+   "x": 522,
+   "y": 375,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p81-1b2-richtig",
+   "group": "g2",
+   "kind": "radio",
+   "label": "1b Vor dem 31. März richtig",
+   "answer": "true",
+   "name": "1b2",
+   "value": "richtig",
+   "x": 473,
+   "y": 395,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p81-1b2-falsch",
+   "group": "g2",
+   "kind": "radio",
+   "label": "1b Vor dem 31. März falsch",
+   "answer": "false",
+   "name": "1b2",
+   "value": "falsch",
+   "x": 522,
+   "y": 395,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p81-2a-richtig",
+   "group": "g3",
+   "kind": "radio",
+   "label": "2a richtig",
+   "answer": "true",
+   "name": "2a",
+   "value": "richtig",
+   "x": 491,
+   "y": 581,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p81-2a-falsch",
+   "group": "g3",
+   "kind": "radio",
+   "label": "2a falsch",
+   "answer": "false",
+   "name": "2a",
+   "value": "falsch",
+   "x": 564,
+   "y": 581,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p81-2b-richtig",
+   "group": "g3",
+   "kind": "radio",
+   "label": "2b richtig",
+   "answer": "false",
+   "name": "2b",
+   "value": "richtig",
+   "x": 572,
+   "y": 717,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p81-2b-falsch",
+   "group": "g3",
+   "kind": "radio",
+   "label": "2b falsch",
+   "answer": "true",
+   "name": "2b",
+   "value": "falsch",
+   "x": 646,
+   "y": 717,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p81-a2-ja",
+   "group": "g4",
+   "kind": "radio",
+   "label": "Aussprache 2 ja",
+   "answer": "true",
+   "name": "a2",
+   "value": "ja",
+   "x": 123,
+   "y": 1016,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p81-a2-nein",
+   "group": "g4",
+   "kind": "radio",
+   "label": "Aussprache 2 nein",
+   "answer": "false",
+   "name": "a2",
+   "value": "nein",
+   "x": 175,
+   "y": 1016,
+   "w": 24,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Lesen 1a"
+  },
+  {
+   "id": "g2",
+   "label": "Lesen 1b"
+  },
+  {
+   "id": "g3",
+   "label": "Lesen 2"
+  },
+  {
+   "id": "g4",
+   "label": "Aussprache 2"
+  }
+ ],
  "review": {
   "status": "partial",
-  "verifiedWords": 294,
-  "totalWords": 294,
   "notes": [
-   "Activation reviewed on a five-page visual sample (71,76,88,98,105): word boxes align with printed text, but these are partial OCR-derived layers. verifiedWords was supplied as the retained-word count by the worker, not an independent word-by-word audit. Some handwriting, symbols, fragments and printed words may be omitted or imperfect. No exercise fields or audio added."
-  ]
+   "Answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 22, Training).",
+   "Lesen 1b: the key names only the true sentence (Vor dem 31. Maerz); the other sentence is therefore falsch.",
+   "Aussprache 1 (marking) and 3 (listen and repeat) not mapped; audio icons not mapped."
+  ],
+  "verifiedWords": 294,
+  "totalWords": 294
  }
 }
