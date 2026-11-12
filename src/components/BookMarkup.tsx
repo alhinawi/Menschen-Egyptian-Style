@@ -39,6 +39,8 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   if (typeof node === 'string') return node;
   const [tag, attrs, children] = node;
   const props: Props = {key};
+  // Legacy adapters still write this marker; it is no longer a toolbar item.
+  if (attrs.id === 'progress') return createElement('span', {key, id: 'progress', hidden: true, 'aria-hidden': true, style: {display: 'none'}});
   if(tag === 'NativePage')return createElement(NativePage,{key,book:attrs.book,page:attrs.page});
   if(tag === 'NativePilot')return createElement(NativePilot,{key,page:attrs.page});
   if(tag === 'NativeKB12')return createElement(NativeKB12,{key,page:attrs.page});
