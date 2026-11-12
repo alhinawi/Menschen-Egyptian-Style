@@ -1,0 +1,1271 @@
+{
+ "book": "kb-a12",
+ "page": 86,
+ "image": "assets/kb-a12-p86.png",
+ "width": 749,
+ "height": 1024,
+ "words": [
+  {
+   "text": "Kleidung",
+   "x": 76,
+   "y": 139,
+   "w": 61,
+   "h": 17
+  },
+  {
+   "text": "beschreiben:",
+   "x": 143,
+   "y": 139,
+   "w": 86,
+   "h": 12
+  },
+  {
+   "text": "Mein",
+   "x": 236,
+   "y": 139,
+   "w": 33,
+   "h": 12
+  },
+  {
+   "text": "blings-Kleidungsstück",
+   "x": 295,
+   "y": 139,
+   "w": 153,
+   "h": 16
+  },
+  {
+   "text": "a",
+   "x": 82,
+   "y": 171,
+   "w": 6,
+   "h": 8
+  },
+  {
+   "text": "Machen",
+   "x": 105,
+   "y": 167,
+   "w": 47,
+   "h": 12
+  },
+  {
+   "text": "Sie",
+   "x": 157,
+   "y": 168,
+   "w": 17,
+   "h": 11
+  },
+  {
+   "text": "Notizen",
+   "x": 180,
+   "y": 168,
+   "w": 47,
+   "h": 10
+  },
+  {
+   "text": "zu",
+   "x": 232,
+   "y": 171,
+   "w": 13,
+   "h": 7
+  },
+  {
+   "text": "den",
+   "x": 251,
+   "y": 167,
+   "w": 21,
+   "h": 11
+  },
+  {
+   "text": "Fragen.",
+   "x": 278,
+   "y": 168,
+   "w": 44,
+   "h": 15
+  },
+  {
+   "text": "Was",
+   "x": 105,
+   "y": 196,
+   "w": 23,
+   "h": 10
+  },
+  {
+   "text": "gefällt",
+   "x": 132,
+   "y": 195,
+   "w": 40,
+   "h": 15
+  },
+  {
+   "text": "mir",
+   "x": 177,
+   "y": 195,
+   "w": 22,
+   "h": 11
+  },
+  {
+   "text": "an",
+   "x": 203,
+   "y": 199,
+   "w": 14,
+   "h": 7
+  },
+  {
+   "text": "dem",
+   "x": 222,
+   "y": 195,
+   "w": 25,
+   "h": 11
+  },
+  {
+   "text": "Kleidungsstück",
+   "x": 253,
+   "y": 195,
+   "w": 93,
+   "h": 15
+  },
+  {
+   "text": "am",
+   "x": 351,
+   "y": 198,
+   "w": 18,
+   "h": 7
+  },
+  {
+   "text": "besten?",
+   "x": 373,
+   "y": 195,
+   "w": 47,
+   "h": 10
+  },
+  {
+   "text": "Wo",
+   "x": 105,
+   "y": 215,
+   "w": 18,
+   "h": 9
+  },
+  {
+   "text": "habe",
+   "x": 128,
+   "y": 213,
+   "w": 28,
+   "h": 11
+  },
+  {
+   "text": "ich",
+   "x": 161,
+   "y": 213,
+   "w": 18,
+   "h": 11
+  },
+  {
+   "text": "es",
+   "x": 183,
+   "y": 217,
+   "w": 12,
+   "h": 7
+  },
+  {
+   "text": "gekauft?",
+   "x": 199,
+   "y": 213,
+   "w": 53,
+   "h": 15
+  },
+  {
+   "text": "War",
+   "x": 105,
+   "y": 233,
+   "w": 24,
+   "h": 9
+  },
+  {
+   "text": "es",
+   "x": 133,
+   "y": 235,
+   "w": 12,
+   "h": 7
+  },
+  {
+   "text": "ein",
+   "x": 149,
+   "y": 232,
+   "w": 19,
+   "h": 10
+  },
+  {
+   "text": "Geschenk?",
+   "x": 173,
+   "y": 231,
+   "w": 64,
+   "h": 11
+  },
+  {
+   "text": "Wie",
+   "x": 105,
+   "y": 250,
+   "w": 22,
+   "h": 11
+  },
+  {
+   "text": "lange",
+   "x": 132,
+   "y": 250,
+   "w": 32,
+   "h": 15
+  },
+  {
+   "text": "habe",
+   "x": 169,
+   "y": 250,
+   "w": 29,
+   "h": 11
+  },
+  {
+   "text": "ich",
+   "x": 203,
+   "y": 250,
+   "w": 17,
+   "h": 11
+  },
+  {
+   "text": "es",
+   "x": 225,
+   "y": 254,
+   "w": 11,
+   "h": 7
+  },
+  {
+   "text": "schon?",
+   "x": 241,
+   "y": 250,
+   "w": 42,
+   "h": 11
+  },
+  {
+   "text": "Wann",
+   "x": 105,
+   "y": 269,
+   "w": 35,
+   "h": 10
+  },
+  {
+   "text": "habe",
+   "x": 145,
+   "y": 268,
+   "w": 28,
+   "h": 11
+  },
+  {
+   "text": "ich",
+   "x": 178,
+   "y": 268,
+   "w": 18,
+   "h": 11
+  },
+  {
+   "text": "es",
+   "x": 201,
+   "y": 272,
+   "w": 11,
+   "h": 7
+  },
+  {
+   "text": "zuletzt",
+   "x": 217,
+   "y": 268,
+   "w": 42,
+   "h": 11
+  },
+  {
+   "text": "angezogen?",
+   "x": 263,
+   "y": 269,
+   "w": 70,
+   "h": 14
+  },
+  {
+   "text": "Was",
+   "x": 105,
+   "y": 287,
+   "w": 23,
+   "h": 10
+  },
+  {
+   "text": "möchte",
+   "x": 134,
+   "y": 286,
+   "w": 44,
+   "h": 11
+  },
+  {
+   "text": "ich",
+   "x": 183,
+   "y": 286,
+   "w": 18,
+   "h": 11
+  },
+  {
+   "text": "noch",
+   "x": 206,
+   "y": 286,
+   "w": 29,
+   "h": 11
+  },
+  {
+   "text": "erzählen?",
+   "x": 240,
+   "y": 286,
+   "w": 60,
+   "h": 11
+  },
+  {
+   "text": "Machen",
+   "x": 105,
+   "y": 323,
+   "w": 46,
+   "h": 11
+  },
+  {
+   "text": "Sie",
+   "x": 156,
+   "y": 323,
+   "w": 17,
+   "h": 11
+  },
+  {
+   "text": "ein",
+   "x": 178,
+   "y": 323,
+   "w": 18,
+   "h": 10
+  },
+  {
+   "text": "Plakat.",
+   "x": 203,
+   "y": 322,
+   "w": 40,
+   "h": 11
+  },
+  {
+   "text": "Machen",
+   "x": 249,
+   "y": 322,
+   "w": 46,
+   "h": 11
+  },
+  {
+   "text": "Sie",
+   "x": 300,
+   "y": 323,
+   "w": 17,
+   "h": 10
+  },
+  {
+   "text": "ein",
+   "x": 322,
+   "y": 326,
+   "w": 18,
+   "h": 7
+  },
+  {
+   "text": "Foto",
+   "x": 346,
+   "y": 323,
+   "w": 27,
+   "h": 10
+  },
+  {
+   "text": "von",
+   "x": 377,
+   "y": 326,
+   "w": 22,
+   "h": 7
+  },
+  {
+   "text": "Ihrem",
+   "x": 405,
+   "y": 322,
+   "w": 34,
+   "h": 11
+  },
+  {
+   "text": "Lieblings-Kleidungsstück",
+   "x": 445,
+   "y": 322,
+   "w": 151,
+   "h": 15
+  },
+  {
+   "text": "und",
+   "x": 602,
+   "y": 322,
+   "w": 22,
+   "h": 11
+  },
+  {
+   "text": "schreiben",
+   "x": 105,
+   "y": 341,
+   "w": 57,
+   "h": 11
+  },
+  {
+   "text": "Sie",
+   "x": 167,
+   "y": 341,
+   "w": 18,
+   "h": 11
+  },
+  {
+   "text": "einen",
+   "x": 189,
+   "y": 341,
+   "w": 33,
+   "h": 11
+  },
+  {
+   "text": "Text.",
+   "x": 226,
+   "y": 342,
+   "w": 30,
+   "h": 10
+  },
+  {
+   "text": "Etwas",
+   "x": 76,
+   "y": 559,
+   "w": 40,
+   "h": 11
+  },
+  {
+   "text": "begründen:",
+   "x": 122,
+   "y": 558,
+   "w": 78,
+   "h": 17
+  },
+  {
+   "text": "Ergänzen",
+   "x": 76,
+   "y": 578,
+   "w": 55,
+   "h": 15
+  },
+  {
+   "text": "Sie",
+   "x": 136,
+   "y": 578,
+   "w": 17,
+   "h": 10
+  },
+  {
+   "text": "Ihre",
+   "x": 159,
+   "y": 577,
+   "w": 23,
+   "h": 11
+  },
+  {
+   "text": "Spalte",
+   "x": 186,
+   "y": 577,
+   "w": 37,
+   "h": 15
+  },
+  {
+   "text": "und",
+   "x": 229,
+   "y": 577,
+   "w": 22,
+   "h": 11
+  },
+  {
+   "text": "fragen",
+   "x": 256,
+   "y": 577,
+   "w": 38,
+   "h": 16
+  },
+  {
+   "text": "Sie",
+   "x": 299,
+   "y": 578,
+   "w": 18,
+   "h": 10
+  },
+  {
+   "text": "dann",
+   "x": 322,
+   "y": 577,
+   "w": 29,
+   "h": 11
+  },
+  {
+   "text": "Ihre",
+   "x": 357,
+   "y": 577,
+   "w": 23,
+   "h": 11
+  },
+  {
+   "text": "Partnerin",
+   "x": 386,
+   "y": 578,
+   "w": 56,
+   "h": 10
+  },
+  {
+   "text": "Ihren",
+   "x": 459,
+   "y": 577,
+   "w": 31,
+   "h": 12
+  },
+  {
+   "text": "Partner.",
+   "x": 496,
+   "y": 578,
+   "w": 47,
+   "h": 11
+  },
+  {
+   "text": "Partnerin",
+   "x": 599,
+   "y": 611,
+   "w": 69,
+   "h": 12
+  },
+  {
+   "text": "Celine",
+   "x": 196,
+   "y": 610,
+   "w": 43,
+   "h": 30
+  },
+  {
+   "text": "Hatte",
+   "x": 82,
+   "y": 651,
+   "w": 29,
+   "h": 9
+  },
+  {
+   "text": "einen",
+   "x": 131,
+   "y": 651,
+   "w": 31,
+   "h": 9
+  },
+  {
+   "text": "schönen",
+   "x": 81,
+   "y": 666,
+   "w": 45,
+   "h": 10
+  },
+  {
+   "text": "Urlaub?",
+   "x": 131,
+   "y": 666,
+   "w": 43,
+   "h": 10
+  },
+  {
+   "text": "wetter",
+   "x": 226,
+   "y": 655,
+   "w": 37,
+   "h": 8
+  },
+  {
+   "text": "war",
+   "x": 267,
+   "y": 657,
+   "w": 21,
+   "h": 6
+  },
+  {
+   "text": "wunderbar",
+   "x": 200,
+   "y": 669,
+   "w": 61,
+   "h": 10
+  },
+  {
+   "text": "Wetter",
+   "x": 333,
+   "y": 651,
+   "w": 36,
+   "h": 9
+  },
+  {
+   "text": "war",
+   "x": 375,
+   "y": 655,
+   "w": 19,
+   "h": 6
+  },
+  {
+   "text": "schlecht",
+   "x": 306,
+   "y": 667,
+   "w": 42,
+   "h": 10
+  },
+  {
+   "text": "War...",
+   "x": 81,
+   "y": 691,
+   "w": 22,
+   "h": 9
+  },
+  {
+   "text": "gestern",
+   "x": 122,
+   "y": 693,
+   "w": 41,
+   "h": 10
+  },
+  {
+   "text": "im",
+   "x": 168,
+   "y": 694,
+   "w": 13,
+   "h": 6
+  },
+  {
+   "text": "Restaurant?",
+   "x": 73,
+   "y": 694,
+   "w": 75,
+   "h": 29
+  },
+  {
+   "text": "das",
+   "x": 333,
+   "y": 698,
+   "w": 17,
+   "h": 10
+  },
+  {
+   "text": "ist",
+   "x": 355,
+   "y": 701,
+   "w": 13,
+   "h": 7
+  },
+  {
+   "text": "zu",
+   "x": 372,
+   "y": 702,
+   "w": 12,
+   "h": 6
+  },
+  {
+   "text": "teuer",
+   "x": 388,
+   "y": 701,
+   "w": 29,
+   "h": 7
+  },
+  {
+   "text": "Wo-",
+   "x": 163,
+   "y": 729,
+   "w": 20,
+   "h": 9
+  },
+  {
+   "text": "im",
+   "x": 139,
+   "y": 744,
+   "w": 13,
+   "h": 9
+  },
+  {
+   "text": "Kino?",
+   "x": 157,
+   "y": 744,
+   "w": 31,
+   "h": 10
+  },
+  {
+   "text": "Hat",
+   "x": 82,
+   "y": 767,
+   "w": 18,
+   "h": 9
+  },
+  {
+   "text": "gestern.",
+   "x": 120,
+   "y": 769,
+   "w": 41,
+   "h": 11
+  },
+  {
+   "text": "Hausaufgaben",
+   "x": 82,
+   "y": 781,
+   "w": 76,
+   "h": 14
+  },
+  {
+   "text": "gemacht?",
+   "x": 80,
+   "y": 797,
+   "w": 53,
+   "h": 14
+  },
+  {
+   "text": "Hatte",
+   "x": 82,
+   "y": 821,
+   "w": 29,
+   "h": 9
+  },
+  {
+   "text": "gestern",
+   "x": 131,
+   "y": 823,
+   "w": 40,
+   "h": 11
+  },
+  {
+   "text": "gute",
+   "x": 80,
+   "y": 839,
+   "w": 24,
+   "h": 10
+  },
+  {
+   "text": "Laune?",
+   "x": 109,
+   "y": 837,
+   "w": 39,
+   "h": 9
+  },
+  {
+   "text": "Hat",
+   "x": 81,
+   "y": 860,
+   "w": 19,
+   "h": 8
+  },
+  {
+   "text": "letzte",
+   "x": 121,
+   "y": 859,
+   "w": 30,
+   "h": 9
+  },
+  {
+   "text": "Woche",
+   "x": 81,
+   "y": 874,
+   "w": 35,
+   "h": 10
+  },
+  {
+   "text": "gearbeitet?",
+   "x": 120,
+   "y": 874,
+   "w": 62,
+   "h": 14
+  },
+  {
+   "text": "ins",
+   "x": 201,
+   "y": 749,
+   "w": 15,
+   "h": 6
+  },
+  {
+   "text": "Theater",
+   "x": 221,
+   "y": 745,
+   "w": 42,
+   "h": 10
+  },
+  {
+   "text": "hat",
+   "x": 226,
+   "y": 822,
+   "w": 18,
+   "h": 10
+  },
+  {
+   "text": "nicht",
+   "x": 249,
+   "y": 822,
+   "w": 28,
+   "h": 10
+  },
+  {
+   "text": "gearbeitet",
+   "x": 200,
+   "y": 838,
+   "w": 56,
+   "h": 13
+  },
+  {
+   "text": "hatte",
+   "x": 333,
+   "y": 783,
+   "w": 28,
+   "h": 9
+  },
+  {
+   "text": "keine",
+   "x": 366,
+   "y": 783,
+   "w": 30,
+   "h": 9
+  },
+  {
+   "text": "Zeit",
+   "x": 400,
+   "y": 784,
+   "w": 20,
+   "h": 8
+  },
+  {
+   "text": "hatte",
+   "x": 334,
+   "y": 867,
+   "w": 28,
+   "h": 9
+  },
+  {
+   "text": "Urlaub",
+   "x": 367,
+   "y": 867,
+   "w": 37,
+   "h": 9
+  },
+  {
+   "text": "Hatte",
+   "x": 122,
+   "y": 907,
+   "w": 32,
+   "h": 9
+  },
+  {
+   "text": "Celine",
+   "x": 159,
+   "y": 906,
+   "w": 38,
+   "h": 11
+  },
+  {
+   "text": "einen",
+   "x": 201,
+   "y": 906,
+   "w": 34,
+   "h": 10
+  },
+  {
+   "text": "schönen",
+   "x": 240,
+   "y": 906,
+   "w": 51,
+   "h": 10
+  },
+  {
+   "text": "Urlaub?",
+   "x": 296,
+   "y": 906,
+   "w": 48,
+   "h": 10
+  },
+  {
+   "text": "Ja,",
+   "x": 120,
+   "y": 925,
+   "w": 16,
+   "h": 12
+  },
+  {
+   "text": "denn",
+   "x": 142,
+   "y": 924,
+   "w": 30,
+   "h": 11
+  },
+  {
+   "text": "das",
+   "x": 177,
+   "y": 924,
+   "w": 19,
+   "h": 11
+  },
+  {
+   "text": "Wetter",
+   "x": 201,
+   "y": 925,
+   "w": 41,
+   "h": 10
+  },
+  {
+   "text": "war",
+   "x": 246,
+   "y": 928,
+   "w": 24,
+   "h": 7
+  },
+  {
+   "text": "wunderbar.",
+   "x": 274,
+   "y": 916,
+   "w": 68,
+   "h": 28
+  },
+  {
+   "text": "Hatte",
+   "x": 350,
+   "y": 925,
+   "w": 32,
+   "h": 10
+  },
+  {
+   "text": "Malte",
+   "x": 388,
+   "y": 924,
+   "w": 34,
+   "h": 11
+  },
+  {
+   "text": "einen",
+   "x": 426,
+   "y": 928,
+   "w": 35,
+   "h": 7
+  },
+  {
+   "text": "schönen",
+   "x": 466,
+   "y": 924,
+   "w": 50,
+   "h": 11
+  },
+  {
+   "text": "Urlaub?",
+   "x": 522,
+   "y": 924,
+   "w": 47,
+   "h": 11
+  },
+  {
+   "text": "Nein,",
+   "x": 122,
+   "y": 943,
+   "w": 32,
+   "h": 11
+  },
+  {
+   "text": "denn",
+   "x": 159,
+   "y": 942,
+   "w": 31,
+   "h": 11
+  },
+  {
+   "text": "das",
+   "x": 195,
+   "y": 942,
+   "w": 19,
+   "h": 11
+  },
+  {
+   "text": "Wetter",
+   "x": 219,
+   "y": 943,
+   "w": 41,
+   "h": 10
+  },
+  {
+   "text": "war",
+   "x": 264,
+   "y": 946,
+   "w": 23,
+   "h": 7
+  },
+  {
+   "text": "schlecht.",
+   "x": 291,
+   "y": 942,
+   "w": 55,
+   "h": 11
+  },
+  {
+   "text": "sechsundachtzig",
+   "x": 76,
+   "y": 989,
+   "w": 92,
+   "h": 13
+  }
+ ],
+ "fields": [
+  {
+   "id": "kleidung-1",
+   "group": "22-7",
+   "kind": "text",
+   "label": "Eigene Notiz · Frage 1",
+   "x": 432,
+   "y": 189,
+   "w": 237,
+   "h": 18
+  },
+  {
+   "id": "kleidung-2",
+   "group": "22-7",
+   "kind": "text",
+   "label": "Eigene Notiz · Frage 2",
+   "x": 343,
+   "y": 207,
+   "w": 326,
+   "h": 18
+  },
+  {
+   "id": "kleidung-3",
+   "group": "22-7",
+   "kind": "text",
+   "label": "Eigene Notiz · Frage 3",
+   "x": 343,
+   "y": 226,
+   "w": 326,
+   "h": 18
+  },
+  {
+   "id": "kleidung-4",
+   "group": "22-7",
+   "kind": "text",
+   "label": "Eigene Notiz · Frage 4",
+   "x": 343,
+   "y": 244,
+   "w": 326,
+   "h": 18
+  },
+  {
+   "id": "kleidung-5",
+   "group": "22-7",
+   "kind": "text",
+   "label": "Eigene Notiz · Frage 5",
+   "x": 343,
+   "y": 263,
+   "w": 326,
+   "h": 18
+  },
+  {
+   "id": "kleidung-6",
+   "group": "22-7",
+   "kind": "text",
+   "label": "Eigene Notiz · Frage 6",
+   "x": 343,
+   "y": 281,
+   "w": 326,
+   "h": 18
+  },
+  {
+   "id": "celine-restaurant",
+   "group": "23-5b",
+   "kind": "text",
+   "label": "celine-restaurant",
+   "x": 200,
+   "y": 687,
+   "w": 98,
+   "h": 33,
+   "answer": "hat nichts im Kühlschrank"
+  },
+  {
+   "id": "malte-kino",
+   "group": "23-5b",
+   "kind": "text",
+   "label": "malte-kino",
+   "x": 306,
+   "y": 725,
+   "w": 123,
+   "h": 32,
+   "answer": "liebt Kinofilme"
+  },
+  {
+   "id": "celine-hausaufgaben",
+   "group": "23-5b",
+   "kind": "text",
+   "label": "celine-hausaufgaben",
+   "x": 200,
+   "y": 764,
+   "w": 98,
+   "h": 45,
+   "answer": "hatte keine Lust"
+  },
+  {
+   "id": "malte-laune",
+   "group": "23-5b",
+   "kind": "text",
+   "label": "malte-laune",
+   "x": 306,
+   "y": 817,
+   "w": 123,
+   "h": 31,
+   "answer": "hat die Prüfung geschafft"
+  },
+  {
+   "id": "celine-arbeit",
+   "group": "23-5b",
+   "kind": "text",
+   "label": "celine-arbeit",
+   "x": 200,
+   "y": 856,
+   "w": 98,
+   "h": 31,
+   "answer": "ihre Kollegin war krank"
+  },
+  {
+   "id": "grund-ich-1",
+   "group": "23-5b-eigen",
+   "kind": "text",
+   "label": "ich · Frage 1",
+   "x": 437,
+   "y": 644,
+   "w": 112,
+   "h": 30
+  },
+  {
+   "id": "grund-partner-1",
+   "group": "23-5b-eigen",
+   "kind": "text",
+   "label": "partner · Frage 1",
+   "x": 559,
+   "y": 644,
+   "w": 111,
+   "h": 30
+  },
+  {
+   "id": "grund-ich-2",
+   "group": "23-5b-eigen",
+   "kind": "text",
+   "label": "ich · Frage 2",
+   "x": 437,
+   "y": 686,
+   "w": 112,
+   "h": 30
+  },
+  {
+   "id": "grund-partner-2",
+   "group": "23-5b-eigen",
+   "kind": "text",
+   "label": "partner · Frage 2",
+   "x": 559,
+   "y": 686,
+   "w": 111,
+   "h": 30
+  },
+  {
+   "id": "grund-ich-3",
+   "group": "23-5b-eigen",
+   "kind": "text",
+   "label": "ich · Frage 3",
+   "x": 437,
+   "y": 725,
+   "w": 112,
+   "h": 30
+  },
+  {
+   "id": "grund-partner-3",
+   "group": "23-5b-eigen",
+   "kind": "text",
+   "label": "partner · Frage 3",
+   "x": 559,
+   "y": 725,
+   "w": 111,
+   "h": 30
+  },
+  {
+   "id": "grund-ich-4",
+   "group": "23-5b-eigen",
+   "kind": "text",
+   "label": "ich · Frage 4",
+   "x": 437,
+   "y": 764,
+   "w": 112,
+   "h": 30
+  },
+  {
+   "id": "grund-partner-4",
+   "group": "23-5b-eigen",
+   "kind": "text",
+   "label": "partner · Frage 4",
+   "x": 559,
+   "y": 764,
+   "w": 111,
+   "h": 30
+  },
+  {
+   "id": "grund-ich-5",
+   "group": "23-5b-eigen",
+   "kind": "text",
+   "label": "ich · Frage 5",
+   "x": 437,
+   "y": 815,
+   "w": 112,
+   "h": 30
+  },
+  {
+   "id": "grund-partner-5",
+   "group": "23-5b-eigen",
+   "kind": "text",
+   "label": "partner · Frage 5",
+   "x": 559,
+   "y": 815,
+   "w": 111,
+   "h": 30
+  },
+  {
+   "id": "grund-ich-6",
+   "group": "23-5b-eigen",
+   "kind": "text",
+   "label": "ich · Frage 6",
+   "x": 437,
+   "y": 855,
+   "w": 112,
+   "h": 30
+  },
+  {
+   "id": "grund-partner-6",
+   "group": "23-5b-eigen",
+   "kind": "text",
+   "label": "partner · Frage 6",
+   "x": 559,
+   "y": 855,
+   "w": 111,
+   "h": 30
+  }
+ ],
+ "audio": [],
+ "groups": [
+  {
+   "id": "22-7",
+   "label": "L22 · Lieblings-Kleidungsstück"
+  },
+  {
+   "id": "23-5b",
+   "label": "L23 · Gründe: Partnerinformation"
+  },
+  {
+   "id": "23-5b-eigen",
+   "label": "L23 · Eigene Gründe und Partnerantworten"
+  }
+ ],
+ "review": {
+  "status": "partial",
+  "verifiedWords": 11,
+  "totalWords": 143,
+  "notes": [
+   "Original scan positions inspected; fixed partner-table answers read directly from the complementary original page. Filtered German OCR is only a draft, with complete word proofreading and handwriting transcription still pending. Personal writing is saved ungraded.",
+   "Complementary partner reasons checked directly against p88 (for86) or p86 (for88). Row1 handwritten example stays intact. Personal reasons are ungraded."
+  ]
+ }
+}

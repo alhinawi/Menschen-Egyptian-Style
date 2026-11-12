@@ -1,0 +1,944 @@
+{
+ "book": "kb-a12",
+ "page": 84,
+ "image": "assets/kb-a12-p84.png",
+ "width": 749,
+ "height": 1024,
+ "words": [
+  {
+   "text": "Personen",
+   "x": 80,
+   "y": 137,
+   "w": 62,
+   "h": 12
+  },
+  {
+   "text": "beschreiben:",
+   "x": 148,
+   "y": 136,
+   "w": 87,
+   "h": 13
+  },
+  {
+   "text": "früher",
+   "x": 247,
+   "y": 137,
+   "w": 37,
+   "h": 12
+  },
+  {
+   "text": "und",
+   "x": 289,
+   "y": 137,
+   "w": 26,
+   "h": 12
+  },
+  {
+   "text": "heute",
+   "x": 321,
+   "y": 137,
+   "w": 39,
+   "h": 12
+  },
+  {
+   "text": "Wie",
+   "x": 109,
+   "y": 165,
+   "w": 23,
+   "h": 11
+  },
+  {
+   "text": "war",
+   "x": 136,
+   "y": 168,
+   "w": 23,
+   "h": 8
+  },
+  {
+   "text": "Simone",
+   "x": 163,
+   "y": 165,
+   "w": 45,
+   "h": 11
+  },
+  {
+   "text": "vor",
+   "x": 212,
+   "y": 169,
+   "w": 20,
+   "h": 7
+  },
+  {
+   "text": "Jahren?",
+   "x": 255,
+   "y": 158,
+   "w": 45,
+   "h": 28
+  },
+  {
+   "text": "Wie",
+   "x": 300,
+   "y": 158,
+   "w": 26,
+   "h": 28
+  },
+  {
+   "text": "ist",
+   "x": 334,
+   "y": 166,
+   "w": 14,
+   "h": 11
+  },
+  {
+   "text": "sie",
+   "x": 353,
+   "y": 166,
+   "w": 16,
+   "h": 11
+  },
+  {
+   "text": "heute?",
+   "x": 374,
+   "y": 166,
+   "w": 41,
+   "h": 11
+  },
+  {
+   "text": "Sprechen",
+   "x": 109,
+   "y": 183,
+   "w": 55,
+   "h": 15
+  },
+  {
+   "text": "Sie",
+   "x": 169,
+   "y": 183,
+   "w": 17,
+   "h": 11
+  },
+  {
+   "text": "mit",
+   "x": 192,
+   "y": 184,
+   "w": 20,
+   "h": 10
+  },
+  {
+   "text": "Ihrer",
+   "x": 218,
+   "y": 183,
+   "w": 28,
+   "h": 12
+  },
+  {
+   "text": "Partnerin",
+   "x": 251,
+   "y": 184,
+   "w": 68,
+   "h": 13
+  },
+  {
+   "text": "Ihrem",
+   "x": 324,
+   "y": 184,
+   "w": 35,
+   "h": 11
+  },
+  {
+   "text": "Partner",
+   "x": 365,
+   "y": 185,
+   "w": 44,
+   "h": 10
+  },
+  {
+   "text": "und",
+   "x": 414,
+   "y": 184,
+   "w": 22,
+   "h": 11
+  },
+  {
+   "text": "notieren",
+   "x": 442,
+   "y": 185,
+   "w": 51,
+   "h": 11
+  },
+  {
+   "text": "Sie.",
+   "x": 498,
+   "y": 185,
+   "w": 21,
+   "h": 11
+  },
+  {
+   "text": "Simone",
+   "x": 191,
+   "y": 221,
+   "w": 48,
+   "h": 10
+  },
+  {
+   "text": "Rech",
+   "x": 244,
+   "y": 220,
+   "w": 30,
+   "h": 11
+  },
+  {
+   "text": "vor",
+   "x": 190,
+   "y": 242,
+   "w": 22,
+   "h": 7
+  },
+  {
+   "text": "Jahren",
+   "x": 234,
+   "y": 238,
+   "w": 46,
+   "h": 14
+  },
+  {
+   "text": "Sckretirin",
+   "x": 178,
+   "y": 258,
+   "w": 67,
+   "h": 30
+  },
+  {
+   "text": "geschieden",
+   "x": 419,
+   "y": 285,
+   "w": 68,
+   "h": 15
+  },
+  {
+   "text": "Innsbruck",
+   "x": 420,
+   "y": 303,
+   "w": 63,
+   "h": 11
+  },
+  {
+   "text": "spazieren",
+   "x": 466,
+   "y": 322,
+   "w": 59,
+   "h": 15
+  },
+  {
+   "text": "braune",
+   "x": 460,
+   "y": 340,
+   "w": 44,
+   "h": 11
+  },
+  {
+   "text": "Haare",
+   "x": 509,
+   "y": 341,
+   "w": 35,
+   "h": 10
+  },
+  {
+   "text": "keine",
+   "x": 559,
+   "y": 340,
+   "w": 33,
+   "h": 12
+  },
+  {
+   "text": "Brille",
+   "x": 598,
+   "y": 341,
+   "w": 33,
+   "h": 11
+  },
+  {
+   "text": "Vor",
+   "x": 124,
+   "y": 385,
+   "w": 21,
+   "h": 10
+  },
+  {
+   "text": "Jahren",
+   "x": 166,
+   "y": 384,
+   "w": 43,
+   "h": 13
+  },
+  {
+   "text": "war",
+   "x": 213,
+   "y": 388,
+   "w": 24,
+   "h": 7
+  },
+  {
+   "text": "Simone",
+   "x": 241,
+   "y": 385,
+   "w": 45,
+   "h": 10
+  },
+  {
+   "text": "Sekretärin.",
+   "x": 291,
+   "y": 384,
+   "w": 69,
+   "h": 11
+  },
+  {
+   "text": "Was",
+   "x": 365,
+   "y": 386,
+   "w": 24,
+   "h": 10
+  },
+  {
+   "text": "ist",
+   "x": 394,
+   "y": 385,
+   "w": 14,
+   "h": 11
+  },
+  {
+   "text": "sie",
+   "x": 412,
+   "y": 386,
+   "w": 16,
+   "h": 10
+  },
+  {
+   "text": "heute?",
+   "x": 433,
+   "y": 385,
+   "w": 41,
+   "h": 11
+  },
+  {
+   "text": "Heute",
+   "x": 125,
+   "y": 403,
+   "w": 35,
+   "h": 10
+  },
+  {
+   "text": "ist",
+   "x": 165,
+   "y": 402,
+   "w": 14,
+   "h": 11
+  },
+  {
+   "text": "sie",
+   "x": 184,
+   "y": 406,
+   "w": 16,
+   "h": 7
+  },
+  {
+   "text": "Yoga-Lehrerin.",
+   "x": 205,
+   "y": 402,
+   "w": 90,
+   "h": 15
+  },
+  {
+   "text": "Früher",
+   "x": 125,
+   "y": 420,
+   "w": 42,
+   "h": 11
+  },
+  {
+   "text": "war",
+   "x": 171,
+   "y": 412,
+   "w": 17,
+   "h": 29
+  },
+  {
+   "text": "Simone",
+   "x": 192,
+   "y": 412,
+   "w": 45,
+   "h": 29
+  },
+  {
+   "text": "Wie",
+   "x": 107,
+   "y": 456,
+   "w": 23,
+   "h": 11
+  },
+  {
+   "text": "war",
+   "x": 134,
+   "y": 460,
+   "w": 23,
+   "h": 7
+  },
+  {
+   "text": "Klaus",
+   "x": 162,
+   "y": 456,
+   "w": 32,
+   "h": 12
+  },
+  {
+   "text": "vor",
+   "x": 198,
+   "y": 460,
+   "w": 20,
+   "h": 8
+  },
+  {
+   "text": "Jahren?",
+   "x": 241,
+   "y": 457,
+   "w": 47,
+   "h": 13
+  },
+  {
+   "text": "Wie",
+   "x": 292,
+   "y": 457,
+   "w": 22,
+   "h": 11
+  },
+  {
+   "text": "ist",
+   "x": 320,
+   "y": 457,
+   "w": 14,
+   "h": 11
+  },
+  {
+   "text": "er",
+   "x": 339,
+   "y": 461,
+   "w": 12,
+   "h": 7
+  },
+  {
+   "text": "heute?",
+   "x": 356,
+   "y": 457,
+   "w": 41,
+   "h": 12
+  },
+  {
+   "text": "Sprechen",
+   "x": 107,
+   "y": 474,
+   "w": 55,
+   "h": 15
+  },
+  {
+   "text": "Sie",
+   "x": 167,
+   "y": 475,
+   "w": 18,
+   "h": 11
+  },
+  {
+   "text": "mit",
+   "x": 190,
+   "y": 475,
+   "w": 20,
+   "h": 11
+  },
+  {
+   "text": "Ihrer",
+   "x": 216,
+   "y": 475,
+   "w": 29,
+   "h": 11
+  },
+  {
+   "text": "Partnerin",
+   "x": 250,
+   "y": 475,
+   "w": 56,
+   "h": 11
+  },
+  {
+   "text": "Ihrem",
+   "x": 323,
+   "y": 475,
+   "w": 34,
+   "h": 12
+  },
+  {
+   "text": "Partner",
+   "x": 363,
+   "y": 476,
+   "w": 45,
+   "h": 11
+  },
+  {
+   "text": "und",
+   "x": 413,
+   "y": 476,
+   "w": 22,
+   "h": 11
+  },
+  {
+   "text": "notieren",
+   "x": 441,
+   "y": 477,
+   "w": 51,
+   "h": 11
+  },
+  {
+   "text": "Sie.",
+   "x": 496,
+   "y": 477,
+   "w": 22,
+   "h": 11
+  },
+  {
+   "text": "Klaus",
+   "x": 189,
+   "y": 511,
+   "w": 36,
+   "h": 11
+  },
+  {
+   "text": "Wecker",
+   "x": 230,
+   "y": 512,
+   "w": 47,
+   "h": 11
+  },
+  {
+   "text": "vor",
+   "x": 189,
+   "y": 533,
+   "w": 21,
+   "h": 8
+  },
+  {
+   "text": "Jahren",
+   "x": 233,
+   "y": 530,
+   "w": 45,
+   "h": 13
+  },
+  {
+   "text": "heute",
+   "x": 388,
+   "y": 523,
+   "w": 47,
+   "h": 28
+  },
+  {
+   "text": "Bürokaufmann",
+   "x": 181,
+   "y": 549,
+   "w": 102,
+   "h": 29
+  },
+  {
+   "text": "verheiratet",
+   "x": 188,
+   "y": 575,
+   "w": 70,
+   "h": 11
+  },
+  {
+   "text": "Luzern",
+   "x": 180,
+   "y": 585,
+   "w": 52,
+   "h": 29
+  },
+  {
+   "text": "tanzen",
+   "x": 189,
+   "y": 614,
+   "w": 42,
+   "h": 9
+  },
+  {
+   "text": "Aussehen:",
+   "x": 106,
+   "y": 620,
+   "w": 62,
+   "h": 20
+  },
+  {
+   "text": "Haare,",
+   "x": 228,
+   "y": 631,
+   "w": 39,
+   "h": 12
+  },
+  {
+   "text": "kein",
+   "x": 273,
+   "y": 630,
+   "w": 26,
+   "h": 11
+  },
+  {
+   "text": "Bart",
+   "x": 304,
+   "y": 631,
+   "w": 26,
+   "h": 10
+  },
+  {
+   "text": "Und",
+   "x": 98,
+   "y": 674,
+   "w": 29,
+   "h": 31
+  },
+  {
+   "text": "Sie?",
+   "x": 129,
+   "y": 674,
+   "w": 29,
+   "h": 31
+  },
+  {
+   "text": "Ergänzen",
+   "x": 164,
+   "y": 674,
+   "w": 53,
+   "h": 31
+  },
+  {
+   "text": "und",
+   "x": 247,
+   "y": 685,
+   "w": 22,
+   "h": 11
+  },
+  {
+   "text": "sprechen",
+   "x": 274,
+   "y": 685,
+   "w": 54,
+   "h": 15
+  },
+  {
+   "text": "Sie",
+   "x": 333,
+   "y": 685,
+   "w": 17,
+   "h": 11
+  },
+  {
+   "text": "mit",
+   "x": 356,
+   "y": 685,
+   "w": 20,
+   "h": 11
+  },
+  {
+   "text": "Ihrer",
+   "x": 382,
+   "y": 685,
+   "w": 28,
+   "h": 12
+  },
+  {
+   "text": "Partnerin",
+   "x": 416,
+   "y": 686,
+   "w": 56,
+   "h": 11
+  },
+  {
+   "text": "Ihrem",
+   "x": 489,
+   "y": 686,
+   "w": 34,
+   "h": 12
+  },
+  {
+   "text": "Partner.",
+   "x": 529,
+   "y": 687,
+   "w": 47,
+   "h": 11
+  },
+  {
+   "text": "Sie",
+   "x": 193,
+   "y": 713,
+   "w": 28,
+   "h": 28
+  },
+  {
+   "text": "vor",
+   "x": 202,
+   "y": 743,
+   "w": 21,
+   "h": 7
+  },
+  {
+   "text": "Jahren",
+   "x": 245,
+   "y": 739,
+   "w": 45,
+   "h": 14
+  },
+  {
+   "text": "heute",
+   "x": 424,
+   "y": 740,
+   "w": 37,
+   "h": 12
+  },
+  {
+   "text": "Beruf/Schule:",
+   "x": 106,
+   "y": 766,
+   "w": 85,
+   "h": 13
+  },
+  {
+   "text": "Hobbys:",
+   "x": 96,
+   "y": 811,
+   "w": 56,
+   "h": 31
+  },
+  {
+   "text": "‚Aussehen:",
+   "x": 105,
+   "y": 839,
+   "w": 61,
+   "h": 11
+  },
+  {
+   "text": "vierundachtzig",
+   "x": 76,
+   "y": 986,
+   "w": 85,
+   "h": 14
+  }
+ ],
+ "fields": [
+  {
+   "id": "simone-1",
+   "group": "19-5a",
+   "kind": "text",
+   "label": "simone-1",
+   "x": 190,
+   "y": 280,
+   "w": 203,
+   "h": 18,
+   "answer": "ledig"
+  },
+  {
+   "id": "simone-2",
+   "group": "19-5a",
+   "kind": "text",
+   "label": "simone-2",
+   "x": 190,
+   "y": 298,
+   "w": 203,
+   "h": 18,
+   "answer": "Stuttgart"
+  },
+  {
+   "id": "simone-3",
+   "group": "19-5a",
+   "kind": "text",
+   "label": "simone-3",
+   "x": 190,
+   "y": 316,
+   "w": 203,
+   "h": 18,
+   "answer": "Musik hören"
+  },
+  {
+   "id": "simone-4",
+   "group": "19-5a",
+   "kind": "text",
+   "label": "simone-4",
+   "x": 190,
+   "y": 334,
+   "w": 203,
+   "h": 18,
+   "answer": "blonde, kurze Haare, Brille|blonde kurze Haare, Brille"
+  },
+  {
+   "id": "klaus-1",
+   "group": "19-5b",
+   "kind": "text",
+   "label": "klaus-1",
+   "x": 399,
+   "y": 571,
+   "w": 196,
+   "h": 18,
+   "answer": "geschieden"
+  },
+  {
+   "id": "klaus-2",
+   "group": "19-5b",
+   "kind": "text",
+   "label": "klaus-2",
+   "x": 399,
+   "y": 589,
+   "w": 196,
+   "h": 18,
+   "answer": "Neu Delhi|Neu-Delhi"
+  },
+  {
+   "id": "klaus-3",
+   "group": "19-5b",
+   "kind": "text",
+   "label": "klaus-3",
+   "x": 399,
+   "y": 607,
+   "w": 196,
+   "h": 18,
+   "answer": "kochen, Fahrrad fahren|kochen und Fahrrad fahren"
+  },
+  {
+   "id": "klaus-4",
+   "group": "19-5b",
+   "kind": "text",
+   "label": "klaus-4",
+   "x": 399,
+   "y": 625,
+   "w": 196,
+   "h": 18,
+   "answer": "lange Haare, Bart"
+  },
+  {
+   "id": "selbst-frueher-1",
+   "group": "19-5c",
+   "kind": "text",
+   "label": "frueher · Beruf/Schule",
+   "x": 202,
+   "y": 761,
+   "w": 204,
+   "h": 18
+  },
+  {
+   "id": "selbst-frueher-2",
+   "group": "19-5c",
+   "kind": "text",
+   "label": "frueher · Familie",
+   "x": 202,
+   "y": 779,
+   "w": 204,
+   "h": 18
+  },
+  {
+   "id": "selbst-frueher-3",
+   "group": "19-5c",
+   "kind": "text",
+   "label": "frueher · Wohnort",
+   "x": 202,
+   "y": 797,
+   "w": 204,
+   "h": 18
+  },
+  {
+   "id": "selbst-frueher-4",
+   "group": "19-5c",
+   "kind": "text",
+   "label": "frueher · Hobbys",
+   "x": 202,
+   "y": 815,
+   "w": 204,
+   "h": 18
+  },
+  {
+   "id": "selbst-frueher-5",
+   "group": "19-5c",
+   "kind": "text",
+   "label": "frueher · Aussehen",
+   "x": 202,
+   "y": 833,
+   "w": 204,
+   "h": 18
+  },
+  {
+   "id": "selbst-heute-1",
+   "group": "19-5c",
+   "kind": "text",
+   "label": "heute · Beruf/Schule",
+   "x": 424,
+   "y": 761,
+   "w": 234,
+   "h": 18
+  },
+  {
+   "id": "selbst-heute-2",
+   "group": "19-5c",
+   "kind": "text",
+   "label": "heute · Familie",
+   "x": 424,
+   "y": 779,
+   "w": 234,
+   "h": 18
+  },
+  {
+   "id": "selbst-heute-3",
+   "group": "19-5c",
+   "kind": "text",
+   "label": "heute · Wohnort",
+   "x": 424,
+   "y": 797,
+   "w": 234,
+   "h": 18
+  },
+  {
+   "id": "selbst-heute-4",
+   "group": "19-5c",
+   "kind": "text",
+   "label": "heute · Hobbys",
+   "x": 424,
+   "y": 815,
+   "w": 234,
+   "h": 18
+  },
+  {
+   "id": "selbst-heute-5",
+   "group": "19-5c",
+   "kind": "text",
+   "label": "heute · Aussehen",
+   "x": 424,
+   "y": 833,
+   "w": 234,
+   "h": 18
+  }
+ ],
+ "audio": [],
+ "groups": [
+  {
+   "id": "19-5a",
+   "label": "L19 · Simone früher und heute"
+  },
+  {
+   "id": "19-5b",
+   "label": "L19 · Klaus früher und heute"
+  },
+  {
+   "id": "19-5c",
+   "label": "L19 · Eigene Person früher und heute"
+  }
+ ],
+ "review": {
+  "status": "partial",
+  "verifiedWords": 14,
+  "totalWords": 103,
+  "notes": [
+   "Original scan positions inspected; fixed partner-table answers read directly from the complementary original page. Filtered German OCR is only a draft, with complete word proofreading and handwriting transcription still pending. Personal writing is saved ungraded.",
+   "Printed profession examples remain unchanged. Paired source: p84 for p81 and p81 for p84."
+  ]
+ }
+}
