@@ -13,6 +13,14 @@ try{for(const width of(process.env.W?[+process.env.W]:[390]))for(const[file,page
  assert.equal(await h.locator('img.nkbArt').count(),data.art.length);
  // word dialog
  await h.locator('.tapWord').first().evaluate(e=>e.click());await p.waitForFunction(()=>document.querySelector('.meaningPopup')?.open,null,{timeout:4000});await p.locator('.meaningPopup').evaluate(e=>e.close());
+ // graded radios: real touch tap on a wrong option, Prüfen marks it red, tapping the right option turns it green
+ {const rad=data.fields.filter(f=>f.kind==='radio'&&f.answer!==undefined);const w=rad.find(f=>f.answer==='false');const c=w&&rad.find(f=>f.name===w.name&&f.answer==='true');
+  if(w&&c){const tap=async f=>{const el=h.locator(`[data-native-field="${f.id}"]`);await el.scrollIntoViewIfNeeded();const bb=await el.boundingBox();await p.touchscreen.tap(bb.x+bb.width/2,bb.y+bb.height/2)};
+   await p.evaluate(()=>localStorage.clear());await p.reload();await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
+   await h.locator('.nkbCheck button').evaluateAll(bs=>bs.forEach(b=>b.click()));assert.equal(await h.locator(`[data-native-field="${c.id}"].bad`).count(),1,pg+' empty row not red');
+   await tap(w);assert.equal(await h.locator(`[data-native-field="${w.id}"]`).isChecked(),true,pg+' wrong tap');
+   await h.locator('.nkbCheck button').evaluateAll(bs=>bs.forEach(b=>b.click()));assert.equal(await h.locator(`[data-native-field="${w.id}"].bad`).count(),1,pg+' wrong not red');
+   await tap(c);await h.locator('.nkbCheck button').evaluateAll(bs=>bs.forEach(b=>b.click()));assert.equal(await h.locator(`[data-native-field="${c.id}"].ok`).count(),1,pg+' right not green');stat.radioTap=(stat.radioTap||0)+1}}
  // fill correct answers
  const ans=data.fields.filter(f=>f.answer!==undefined);
  for(const f of data.fields){const el=h.locator(`[data-native-field="${f.id}"]`);if(f.answer===undefined)continue;
@@ -20,12 +28,6 @@ try{for(const width of(process.env.W?[+process.env.W]:[390]))for(const[file,page
   else if(f.kind==='checkbox'){if(f.answer==='true')await el.evaluate(e=>e.click())}
   else if(f.kind==='select')await el.selectOption(f.answer.split('|')[0]);
   else await el.fill(f.answer.split('|')[0])}
- // graded radios: real touch tap on a wrong option, Prüfen marks it red, tapping the right option turns it green
- {const rad=data.fields.filter(f=>f.kind==='radio'&&f.answer!==undefined);const w=rad.find(f=>f.answer==='false');const c=w&&rad.find(f=>f.name===w.name&&f.answer==='true');
-  if(w&&c){const tap=async f=>{const el=h.locator(`[data-native-field="${f.id}"]`);await el.scrollIntoViewIfNeeded();const bb=await el.boundingBox();await p.touchscreen.tap(bb.x+bb.width/2,bb.y+bb.height/2)};
-   await tap(w);assert.equal(await h.locator(`[data-native-field="${w.id}"]`).isChecked(),true,pg+' wrong tap');
-   await h.locator('.nkbCheck button').evaluateAll(bs=>bs.forEach(b=>b.click()));assert.equal(await h.locator(`[data-native-field="${w.id}"].bad`).count(),1,pg+' wrong not red');
-   await tap(c);await h.locator('.nkbCheck button').evaluateAll(bs=>bs.forEach(b=>b.click()));assert.equal(await h.locator(`[data-native-field="${c.id}"].ok`).count(),1,pg+' right not green');stat.radioTap=(stat.radioTap||0)+1}}
  // every ungraded radio/checkbox/digit box must be a real tappable control, saved through reload
  const un=data.fields.filter(f=>f.answer===undefined&&(f.kind==='radio'||f.kind==='checkbox'));
  for(const f of un.slice(0,40)){const el=h.locator(`[data-native-field="${f.id}"]`);await el.scrollIntoViewIfNeeded();const bb=await el.boundingBox();assert(bb&&bb.width>=10&&bb.height>=7,pg+' tiny '+f.id);await p.touchscreen.tap(bb.x+bb.width/2,bb.y+bb.height/2);assert.equal(await el.isChecked(),true,pg+' tap '+f.id);stat.tapped=(stat.tapped||0)+1}
