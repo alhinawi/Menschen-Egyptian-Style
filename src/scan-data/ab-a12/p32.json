@@ -1077,13 +1077,89 @@
    "h": 19
   }
  ],
- "fields": [],
- "audio": [],
- "groups": [],
+ "fields": [
+  {
+   "id": "p32-9a1",
+   "group": "g1",
+   "kind": "text",
+   "label": "9a1",
+   "answer": "kann ich heute um 16 Uhr nicht kommen",
+   "x": 240,
+   "y": 404,
+   "w": 615,
+   "h": 22
+  },
+  {
+   "id": "p32-9a2",
+   "group": "g1",
+   "kind": "text",
+   "label": "9a2",
+   "answer": "Können wir den Termin verschieben",
+   "x": 305,
+   "y": 469,
+   "w": 535,
+   "h": 22
+  },
+  {
+   "id": "p32-9a3",
+   "group": "g1",
+   "kind": "text",
+   "label": "9a3",
+   "answer": "Haben Sie am Mittwoch Zeit",
+   "x": 195,
+   "y": 518,
+   "w": 645,
+   "h": 22
+  },
+  {
+   "id": "p32-9a4",
+   "group": "g1",
+   "kind": "text",
+   "label": "9a4",
+   "answer": "Ab Freitag bin ich für eine Woche im Urlaub",
+   "x": 195,
+   "y": 559,
+   "w": 645,
+   "h": 22
+  },
+  {
+   "id": "p32-9b",
+   "group": "g1",
+   "kind": "text",
+   "label": "9b",
+   "answer": "geehrter Herr Frei",
+   "x": 232,
+   "y": 926,
+   "w": 276,
+   "h": 22
+  }
+ ],
+ "audio": [
+  {
+   "id": "track15-1",
+   "src": "assets/ab-a12-cd2-track15.mp3",
+   "label": "CD2 · Track15",
+   "x": 50,
+   "y": 1166,
+   "w": 54,
+   "h": 22
+  }
+ ],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 9"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the official Hueber Loesungsschluessel AB A1.2 (Lektion 16, Aufgabe 9).",
+   "9a: the four gaps hold the key sentences (the key prints the first with a leading ellipsis, here after printed 'leider'). 9b: only the salutation gap ('Sehr ___,') is a field; the reply body lines are free writing.",
+   "Ex 10 (match with lines) is not a field. Audio marker 2.15 mapped from the printed CD icon; audio content was not listened to.",
+   "Boxes placed from word coordinates; not marked verified."
+  ],
   "verifiedWords": 153,
-  "totalWords": 153,
-  "notes": []
+  "totalWords": 153
  }
 }
