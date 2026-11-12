@@ -5,7 +5,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -20,6 +19,7 @@
     ],
     "bodyAttrs": {},
     "reactExercises": true,
+    "batchcss": true,
     "bookcss": true
   },
   "ab-a12-l17-20.html": {
@@ -52,7 +52,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -69,6 +68,7 @@
     ],
     "bodyAttrs": {},
     "reactExercises": true,
+    "batchcss": true,
     "bookcss": true
   },
   "ab-a12-original-viewer.html": {
@@ -89,7 +89,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -104,6 +103,7 @@
     ],
     "bodyAttrs": {},
     "reactExercises": true,
+    "batchcss": true,
     "bookcss": true
   },
   "ab-l7-9-viewer.html": {
@@ -157,7 +157,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -173,6 +172,7 @@
     ],
     "bodyAttrs": {},
     "reactExercises": true,
+    "batchcss": true,
     "bookcss": true
   },
   "ab2.html": {
@@ -181,7 +181,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -197,6 +196,7 @@
     ],
     "bodyAttrs": {},
     "reactExercises": true,
+    "batchcss": true,
     "bookcss": true
   },
   "ab3.html": {
@@ -205,7 +205,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -221,6 +220,7 @@
     ],
     "bodyAttrs": {},
     "reactExercises": true,
+    "batchcss": true,
     "bookcss": true
   },
   "ab4-6.html": {
@@ -253,7 +253,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -269,6 +268,7 @@
     ],
     "bodyAttrs": {},
     "reactExercises": true,
+    "batchcss": true,
     "bookcss": true
   },
   "index.html": {
@@ -277,7 +277,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -293,6 +292,7 @@
     ],
     "bodyAttrs": {},
     "reactExercises": true,
+    "batchcss": true,
     "bookcss": true
   },
   "kb-a12-l13-16.html": {
@@ -301,7 +301,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "batch.css",
       "kb-a12-l13-16.css"
     ],
     "initializers": [
@@ -317,6 +316,7 @@
     ],
     "bodyAttrs": {},
     "reactExercises": true,
+    "batchcss": true,
     "bookcss": true
   },
   "kb-a12-l17-20.html": {
@@ -325,7 +325,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "batch.css",
       "kb-a12-l17-20.css"
     ],
     "initializers": [
@@ -340,6 +339,7 @@
     ],
     "bodyAttrs": {},
     "reactExercises": true,
+    "batchcss": true,
     "bookcss": true
   },
   "kb-a12-original-viewer.html": {
@@ -360,7 +360,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "batch.css",
       "batch-l10-12.css"
     ],
     "initializers": [
@@ -379,6 +378,7 @@
     ],
     "bodyAttrs": {},
     "reactExercises": true,
+    "batchcss": true,
     "bookcss": true
   },
   "l2-3.html": {
@@ -387,7 +387,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -406,6 +405,7 @@
     ],
     "bodyAttrs": {},
     "reactExercises": true,
+    "batchcss": true,
     "bookcss": true
   },
   "l21-24.html": {
@@ -442,7 +442,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "batch.css",
       "l4-6.css"
     ],
     "initializers": [
@@ -458,6 +457,7 @@
     ],
     "bodyAttrs": {},
     "reactExercises": true,
+    "batchcss": true,
     "bookcss": true
   },
   "l7-9.html": {
@@ -466,7 +466,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "batch.css",
       "batch79.css"
     ],
     "initializers": [
@@ -485,6 +484,7 @@
     ],
     "bodyAttrs": {},
     "reactExercises": true,
+    "batchcss": true,
     "bookcss": true
   },
   "original-l21-24.html": {
