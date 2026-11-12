@@ -121,3 +121,12 @@ Three more native lesson9 pages bring this lane to48 of95 assigned pages,47 rema
 - Page69 has native speaking cards, saved vocabulary/question notes, selectable pronunciation syllables and original CD1 tracks41-42 through the shared screen-space audio controls. The printed accent example stays fixed; additional personal compounds are saved and ungraded.
 - Page70 retains TEST prompts, article/compound fields, the printed matching example, verb prefixes, centered response circles and the source score table. Fruit answers accept any ordering of the three different fruit names; duplicates fail. Seven closed-task checks across the batch sit below their tasks.
 - Chrome320/390 tests cover correct/wrong checks, changed-feedback reset, saved text/highlights/stress/circles, actual playback of both tracks, meaning dialogs, loaded crops, no selects, collisions and bounds. Typecheck/build, preceding65-67 and hybrid320/390/550 are verified against current integrated main. Actual untouched/filled pixels inspected against scans; dense TEST/pronunciation sections use compressed spacing for checks and full frames.
+
+## Batch 11: AB A1.1 pages 71-73
+
+Three more native pages bring this lane to51 of95 assigned pages,44 remaining. Separate page41-56 remains untouched.
+
+- Page71 has selectable source vocabulary, saved framed translations, personal word groups and word notes, with a contained original illustration strip. Personal work stays ungraded.
+- Page72 keeps the printed Mittwoch and Salat examples, complete unordered day sets, ordered time/daypart fields, a native crossword with aligned LESEN solution column, saved per-row word strikes and native social posts/place fields. Day-set permutations pass; missing days fail.
+- Page73 retains Paul's selectable weekly schedule, saved ungraded writing, native chat verb fields, wrapping sentence-order responses with marked starting words and the source möchte/magst dialogue. Eight closed-task checks sit below the tasks. No source audio markers occur on these pages.
+- Chrome320/390 tests cover right/wrong checks, changed-feedback reset, saved fields and strikes, meaning dialogs, loaded crops, no selects, text/field/image collisions and bounds. Typecheck/build, adjacent68-70 and full hybrid320/390/550 pass. Actual untouched and filled pixels inspected against source scans. Dense review layouts use compressed spacing for visible full field frames and check buttons.
