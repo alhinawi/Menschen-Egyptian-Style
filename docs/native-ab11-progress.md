@@ -37,3 +37,17 @@ Eight additional native React pages: the full ab2 unit and the first two ab3 pag
 - Source answer notes are consulted at runtime for printed closed tasks. p16 task3 explicitly ignores the old guessed item order: the four distinct profession words are accepted in any order. The printed syllable bank establishes **Mechatroniker**, not the older guessed Mechaniker key.
 - Visual review at 320px and 390px includes untouched and filled views. The layout preserves the original page sequence and task/image arrangement; space for check buttons slightly changes vertical spacing. Long answers auto-fit or scroll inside their saved fields.
 - Validation: typecheck, production build, hybrid-scan regression, original six-page native regressions, and the new eight-page normal-click test. The new test covers all correct results, wrong-field/radio feedback, device-local persistence, meaning dialogs, original playable audio, no text/field collisions and page bounds.
+
+## Batch 3: AB A1.1 pages 20-28
+
+Nine more native React pages complete ab3 and the Module 1 review. The cumulative assigned total is 23 of 95 pages, with 72 remaining. Page 29 remains untouched.
+
+- Selectable German text, contained original artwork, controlled saved fields, native family-tree lines/rings, letter-by-letter crossword and endpoint word-search marking. Original images are illustrations only, not page backgrounds.
+- 31 closed-task checks sit below their work. Personal text, vocabulary translations, confidence circles, and the open recap portraits are saved without correctness claims.
+- Crossword lengths come from the printed profession words; its vertical shaded letters spell LEHRER. The first KELLNER row is printed, not editable.
+- Original CD1 tracks 11-13 play from the existing MP3s. Shared word-meaning dialogs and the original secondary scan link remain in place.
+- Recap facts checked against source Kursbuch pages 19, 78 and 82. Page 78 alone does not contain the Helga/Carlos details; their source is page 82. Page 28's two printed example checks remain fixed.
+- Verification: typecheck, production build, hybrid regression, both prior AB native batches, and nine-page normal-click testing at 320px/390px. Tests cover correct/incorrect results, saved text/checkbox/arrow/highlight/crossword states through reload, confidence radios, meaning dialogs, all three playable source audio tracks, complete images, text/field/title collisions and canvas bounds.
+- Actual untouched/filled screenshots were inspected against the source scans. Check controls require modest spacing changes, especially in the compressed self-assessment pages and dense grammar page. The crossword retains native letter cells and source illustrations, with a slightly different vertical rhythm from the scan.
+
+The parallel KB batch moved the hybrid regression fixture to KB57 after KB41-56 became native. Its current fixture and all parallel KB lesson content are preserved in the merge.
