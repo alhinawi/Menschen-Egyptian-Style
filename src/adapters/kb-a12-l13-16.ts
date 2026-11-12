@@ -24,16 +24,19 @@ function turn(direction: number, corner='top'){if(flip.getState()!=='read')retur
 const isControl=(t: any)=>t.closest('input,select,textarea,button,a,audio,label:has(input),[contenteditable],canvas');
 let gesture: any=null,pinching=false,mouse: any=null;
 const zoomed=()=>900*scale>viewport.clientWidth+2;
+// Swipe-turn is only suspended when a horizontal swipe has real pan room
+// (zoomed in). Near-fit zooms with a few px of overflow still turn pages.
+const canPanX=()=>viewport.scrollWidth-viewport.clientWidth>60;
 // Unlock while the initial touch/tap is still a trusted activation. No audible output.
 function unlockBookAudio(){if(!soundsOn)return;try{audioContext||=new(window.AudioContext||window.webkitAudioContext)();if(audioContext.state!=='running')audioContext.resume().catch(()=>{});const source=audioContext.createBufferSource();source.buffer=audioContext.createBuffer(1,1,audioContext.sampleRate);source.connect(audioContext.destination);source.start()}catch{}}
 for(const event of ['touchstart','pointerdown','keydown'])document.addEventListener(event,unlockBookAudio,{capture:true,passive:true});
 async function paperSound(){if(!soundsOn)return;try{audioContext||=new(window.AudioContext||window.webkitAudioContext)();await audioContext.resume();if(!soundsOn||audioContext.state!=='running')return;const duration=.3,t=audioContext.currentTime,b=audioContext.createBuffer(1,Math.ceil(audioContext.sampleRate*duration),audioContext.sampleRate),data=b.getChannelData(0);for(let i=0;i<data.length;i++)data[i]=Math.random()*2-1;const src=audioContext.createBufferSource(),filter=audioContext.createBiquadFilter(),gain=audioContext.createGain();src.buffer=b;filter.type='bandpass';filter.frequency.value=1700;filter.Q.value=.48;gain.gain.setValueAtTime(.001,t);gain.gain.exponentialRampToValueAtTime(.16,t+.045);gain.gain.exponentialRampToValueAtTime(.001,t+duration);src.connect(filter);filter.connect(gain);gain.connect(audioContext.destination);src.start(t);src.stop(t+duration)}catch{}}
 function localPoint(t: {clientX: number; clientY: number}){const r=stage.getBoundingClientRect();return {x:(t.clientX-r.left)/scale,y:Math.max(2,Math.min(1513,(t.clientY-r.top)/scale))}}
 function cancelHeld(){if(!gesture?.held)return;flip.userStop({x:0,y:0},true);flip.getFlipController().stopMove(false);gesture.held=false;}
-function startGesture(t: {clientX: number; clientY: number}){if(flip.getState()!=='read')return null;return {x:t.clientX,y:t.clientY,axis:null,held:false,dir:0};}
+function startGesture(t: {clientX: number; clientY: number}){if(flip.getState()!=='read')return null;return {x:t.clientX,y:t.clientY,axis:null,held:false,dir:0,canPan:canPanX()};}
 function moveGesture(t: {clientX: number; clientY: number}, e: any){if(!gesture||gesture.pinch)return;const g=gesture,dx=t.clientX-g.x,dy=t.clientY-g.y;
  if(!g.axis&&Math.max(Math.abs(dx),Math.abs(dy))>10)g.axis=Math.abs(dx)>Math.abs(dy)*1.4?'horizontal':'vertical';
- if(g.axis!=='horizontal'||zoomed())return; // native scroll owns zoomed panning and vertical reading.
+ if(g.axis!=='horizontal'||g.canPan)return; // native scroll owns zoomed panning and vertical reading.
  if(e.cancelable)e.preventDefault();
  if(!g.held){g.dir=dx<0?1:-1;if(g.dir>0&&pageIndex===pages.length-1||g.dir<0&&pageIndex===0)return;const p=localPoint(t),seed={x:g.dir>0?899:1,y:p.y};if(!flip.getFlipController().start(seed))return;flip.startUserTouch({x:seed.x,y:seed.y});g.held=true;}
  flip.userMove(localPoint(t),true);const pos=flip.getFlipController().getCalculation()?.getPosition(),now=performance.now();if(pos){if(g.lastCalc){const dt=now-g.lastCalc.at;if(dt>0)g.velocity={x:(pos.x-g.lastCalc.x)/dt,y:(pos.y-g.lastCalc.y)/dt,at:now};}g.lastCalc={x:pos.x,y:pos.y,at:now};}
@@ -43,7 +46,7 @@ viewport.addEventListener('touchstart',(e: any)=>{if(e.touches.length===2){cance
 viewport.addEventListener('touchmove',(e: any)=>{if(!gesture)return;if(gesture.pinch&&e.touches.length===2){const[a,b]=e.touches;setZoom(gesture.scale*Math.hypot(a.clientX-b.clientX,a.clientY-b.clientY)/gesture.d);if(e.cancelable)e.preventDefault();return}if(e.touches.length!==1)return;moveGesture(e.touches[0],e);},{passive:false,capture:true});
 viewport.addEventListener('touchend',(e: any)=>{if(e.changedTouches[0])endGesture(e.changedTouches[0]);},{passive:true,capture:true});
 viewport.addEventListener('touchcancel',(e: any)=>{endGesture(e.changedTouches[0]||{clientX:gesture?.x||0,clientY:gesture?.y||0},true);},{passive:true,capture:true});
-viewport.addEventListener('mousedown',(e: any)=>{if(e.button||isControl(e.target)||e.target.closest('.tapWord'))return;if(zoomed()){mouse={pan:true,x:e.clientX,left:viewport.scrollLeft};e.preventDefault();return}gesture=startGesture(e);mouse={pan:false}});
+viewport.addEventListener('mousedown',(e: any)=>{if(e.button||isControl(e.target)||e.target.closest('.tapWord'))return;if(canPanX()){mouse={pan:true,x:e.clientX,left:viewport.scrollLeft};e.preventDefault();return}gesture=startGesture(e);mouse={pan:false}});
 window.addEventListener('mousemove',(e: any)=>{if(!mouse)return;if(mouse.pan){viewport.scrollLeft=mouse.left+mouse.x-e.clientX;return}moveGesture(e,e)});
 window.addEventListener('mouseup',(e: any)=>{if(!mouse)return;if(!mouse.pan)endGesture(e);mouse=null;});
 for(const b of document.querySelectorAll<HTMLElement>('.listen'))b.onclick=()=>{const a=$('#audio');a.src='assets/kb-cd3-track'+b.dataset.track!.padStart(2,'0')+'.mp3';$('.audioDock').hidden=false;a.play().catch(()=>{});};$('#closeAudio').onclick=()=>{$('#audio').pause();$('.audioDock').hidden=true;};
