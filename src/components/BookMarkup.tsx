@@ -1,3 +1,4 @@
+import {ClipMarkers} from './ClipMarkers';
 import {NativePage} from './NativePage';
 import {NativePilot} from './NativePilot';
 import {NativeKB12} from '../native-kb12/NativeKB12';
@@ -41,6 +42,7 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   const props: Props = {key};
   // Legacy adapters still write this marker; it is no longer a toolbar item.
   if (attrs.id === 'progress') return createElement('span', {key, id: 'progress', hidden: true, 'aria-hidden': true, style: {display: 'none'}});
+  if(tag === 'ClipButton')return createElement(ClipMarkers,{key,book:'kb-a11',page:'',number:Number(attrs.number)});
   if(tag === 'NativePage')return createElement(NativePage,{key,book:attrs.book,page:attrs.page});
   if(tag === 'NativePilot')return createElement(NativePilot,{key,page:attrs.page});
   if(tag === 'NativeKB12')return createElement(NativeKB12,{key,page:attrs.page});
