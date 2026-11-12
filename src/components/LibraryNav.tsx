@@ -76,18 +76,42 @@ export function LibraryNav({slug}: {slug: string}) {
     };
   }, [store]);
 
+  // While a panel is open: lock the page behind against scroll chaining and
+  // scroll the list so the current lesson/page is in view.
+  useEffect(() => {
+    if (!panel) return;
+    document.body.classList.add('lnv-lock');
+    const box = document.querySelector<HTMLElement>('.lnv-scroll, .lnv-sheetscroll');
+    const cur = box?.querySelector<HTMLElement>('.lnv-row.cur, .lnv-pg.cur');
+    if (box && cur) {
+      const b = box.getBoundingClientRect(), r = cur.getBoundingClientRect();
+      box.scrollTop += r.top - b.top - box.clientHeight / 2 + r.height / 2;
+    }
+    const overlay = document.querySelector<HTMLElement>('.lnv-overlay');
+    const stop = (e: TouchEvent) => {
+      if (!(e.target as Element | null)?.closest?.('.lnv-panelBox, .lnv-sheet')) e.preventDefault();
+    };
+    overlay?.addEventListener('touchmove', stop, {passive: false});
+    return () => {
+      document.body.classList.remove('lnv-lock');
+      overlay?.removeEventListener('touchmove', stop);
+    };
+  }, [panel]);
+
   if (!mod) return null;
 
   const pages = modulePages(slug);
   const currentToken = pages[Math.min(pageIndex, pages.length - 1)] ?? '';
-  const currentPage = currentToken === 'cover' ? null : Number(currentToken);
+  // Non-numbered pages: book covers and the index how-to page.
+  const special: Record<string, string> = {cover: 'Cover', abcover: 'Cover', howto: 'Guide'};
+  const currentPage = currentToken in special ? null : Number(currentToken);
   const currentLesson = currentPage == null ? null : lessonForPage(mod, currentPage);
   const bookInfo = BOOKS.find(b => b.id === mod.book)!;
   const bookTag = mod.book === 'kb' ? 'KB' : 'AB';
   const pillText = currentPage == null
-    ? `${bookTag} ${mod.level} · Cover`
+    ? `${bookTag} ${mod.level} · ${special[currentToken] ?? 'Cover'}`
     : `${bookTag} ${mod.level} · ${currentLesson?.short ?? 'p.' + currentPage}`;
-  const pagePillText = currentPage == null ? 'Cover' : String(currentPage);
+  const pagePillText = currentPage == null ? (special[currentToken] ?? 'Cover') : String(currentPage);
 
   const close = () => setPanel(null);
 
