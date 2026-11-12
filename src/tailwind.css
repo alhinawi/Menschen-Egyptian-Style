@@ -672,3 +672,12 @@ html[data-theme="dark"] .readerPageNavigation{background:var(--night-paper,#202a
 html:has(body.readerSplitControls){scroll-padding-top:calc(var(--reader-header-height,60px) + 60px);scroll-padding-bottom:calc(var(--reader-controls-height,56px) + 24px)}
 body.readerSplitControls #viewport{scroll-padding-top:calc(var(--reader-header-height,60px) + 60px);scroll-padding-bottom:calc(var(--reader-controls-height,56px) + 24px)}
 body.readerSplitControls .page :is(input,select,textarea,button){scroll-margin-block:8px}
+
+/* Page navigation sits above the tool row inside the bottom bar. */
+body.readerSplitControls .controls{display:flex;flex-direction:column;gap:4px;padding:5px;min-height:104px}
+body.readerSplitControls .readerPageNavigation{position:static;height:44px;padding:0;border:0;background:transparent;display:flex;width:100%;gap:8px}
+body.readerSplitControls .readerToolRow{display:flex;align-items:center;justify-content:center;gap:5px;width:100%}
+body.readerSplitControls .readerToolRow button{min-height:44px;min-width:44px;box-sizing:border-box}
+body.readerSplitControls .readerToolRow .translationControls{gap:5px}
+body.readerSplitControls{padding-top:calc(var(--reader-header-height,60px) + 8px)}
+html:has(body.readerSplitControls),body.readerSplitControls #viewport{scroll-padding-top:calc(var(--reader-header-height,60px) + 8px)}
