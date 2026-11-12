@@ -1,3 +1,4 @@
+import {ClipMarkers} from '../components/ClipMarkers';
 import {useLayoutEffect,useRef,useState} from 'react';
 import './native-kb12.css';
 import {createPortal} from 'react-dom';
@@ -620,6 +621,7 @@ export function NativeKB12({page}:{page:string}){
  {page==='14'&&text(86,679,25,'noch einmal?','nkSide')}
  {page==='15'&&<>{text(78,232,25,'Film','nkSide')}{text(78,521,25,'Spiel & Spaß','nkSide')}{text(78,633,25,'Interessant?','nkSide')}{text(78,1418,25,'Diktat','nkSide')}</>}
  {['16','20'].includes(page)&&<>{text(83,page==='16'?602:242,25,'Beruf','nkSide')}{text(83,840,25,'Audiotraining','nkSide')}{text(83,959,25,'Karaoke','nkSide')}</>}
+ <ClipMarkers book="kb-a12" page={page} native/>
  {page==='17'&&text(83,1268,25,'Interessant?','nkSide')}
  {page==='19'&&<>{text(78,297,25,'Spiel & Spaß','nkSide')}{text(78,1100,25,'Spiel & Spaß','nkSide')}{text(78,1362,25,'Diskutieren','nkSide')}</>}
  {page==='29'&&text(83,1080,25,'Interessant?','nkSide')}
