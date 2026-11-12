@@ -37,5 +37,5 @@ for p in sorted(R.glob('*.html')):
  manifest[p.name]={'slug':slug,'title':s.titl(e.string or e.decode_contents()) if s.title else 'Menschen','reader':reader,'themes':reader and p.name!='ab-a12-l17-20.html','styles':styles,'initializers':initializers,'bodyAttrs':s.body.attrs}
  head=''.join(str(x) for x in s.head.children if getattr(x,'name',None) not in ('script','link'))
  if not s.head.select_one('meta[charset]'):head='<meta charset="utf-8">'+head
- p.write_text('<!doctype html><html lang="de"><head>'+head+'<link rel="icon" href="data:,"></head><body><div id="react-book-root" style="display:contents"></div><script type="module" src="/src/main.jsx"></script></body></html>')
+ p.write_text('<!doctype html><html lang="de"><head>'+head+'<link rel="icon" href="data:,"></head><body><div id="react-book-root" style="display:contents"></div><script type="module" src="/src/main.tsx"></script></body></html>')
 (R/'src/lessons/manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2))
