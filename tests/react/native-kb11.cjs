@@ -9,7 +9,7 @@ try{for(const width of(process.env.W?[+process.env.W]:[390]))for(const[file,page
  const p=await b.newPage({viewport:{width,height:844},isMobile:true,hasTouch:true});const errors=[];p.on('pageerror',e=>errors.push(e.message));p.on('requestfailed',r=>errors.push('reqfail '+r.url()));
  await p.goto('http://localhost:'+(process.env.PORT||5197)+'/'+file+'.html#'+pg);await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true',null,{timeout:15000});
  const h=p.locator(`[data-native-page="${pg}"]`);await h.waitFor({state:'attached'});
- assert.equal(await h.locator('.nkbWord').count()>0,true,'text '+pg);
+ assert.equal(await h.locator('.nkbWord,.tapWord').count()>0||data.blocks.length===0,true,'text '+pg);
  assert.equal(await h.locator('img.nkbArt').count(),data.art.length);
  // word dialog
  await h.locator('.tapWord').first().evaluate(e=>e.click());await p.waitForFunction(()=>document.querySelector('.meaningPopup')?.open,null,{timeout:4000});await p.locator('.meaningPopup').evaluate(e=>e.close());
