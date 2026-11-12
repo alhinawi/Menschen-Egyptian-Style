@@ -1812,13 +1812,323 @@
    "h": 19
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p42-1-1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 Lücke 1",
+   "answer": "schmerzen",
+   "x": 313,
+   "y": 389,
+   "w": 155,
+   "h": 22
+  },
+  {
+   "id": "p42-1-2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 Lücke 2",
+   "answer": "huste",
+   "x": 545,
+   "y": 389,
+   "w": 159,
+   "h": 22
+  },
+  {
+   "id": "p42-1-3",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 Lücke 3",
+   "answer": "Fieber",
+   "x": 495,
+   "y": 415,
+   "w": 151,
+   "h": 22
+  },
+  {
+   "id": "p42-1-4",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 Lücke 4",
+   "answer": "hoch",
+   "x": 366,
+   "y": 441,
+   "w": 139,
+   "h": 22
+  },
+  {
+   "id": "p42-1-5",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 Lücke 5",
+   "answer": "Arme",
+   "x": 191,
+   "y": 466,
+   "w": 154,
+   "h": 22
+  },
+  {
+   "id": "p42-1-6",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 Lücke 6",
+   "answer": "weh",
+   "x": 530,
+   "y": 466,
+   "w": 155,
+   "h": 22
+  },
+  {
+   "id": "p42-1-7",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 Lücke 7",
+   "answer": "bleibe",
+   "x": 466,
+   "y": 518,
+   "w": 154,
+   "h": 22
+  },
+  {
+   "id": "p42-2a",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 a",
+   "answer": "Apotheke",
+   "x": 745,
+   "y": 627,
+   "w": 215,
+   "h": 22
+  },
+  {
+   "id": "p42-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c",
+   "answer": "Rezept",
+   "x": 745,
+   "y": 706,
+   "w": 215,
+   "h": 22
+  },
+  {
+   "id": "p42-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d",
+   "answer": "Praxis",
+   "x": 745,
+   "y": 734,
+   "w": 215,
+   "h": 22
+  },
+  {
+   "id": "p42-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 e",
+   "answer": "Salbe",
+   "x": 745,
+   "y": 784,
+   "w": 215,
+   "h": 22
+  },
+  {
+   "id": "p42-2f",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 f",
+   "answer": "Doktor",
+   "x": 745,
+   "y": 811,
+   "w": 215,
+   "h": 22
+  },
+  {
+   "id": "p42-2g",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 g",
+   "answer": "Medikamente",
+   "x": 745,
+   "y": 836,
+   "w": 215,
+   "h": 22
+  },
+  {
+   "id": "p42-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "Ja, bleiben Sie im Bett.|Bleiben Sie im Bett.",
+   "x": 413,
+   "y": 962,
+   "w": 553,
+   "h": 22
+  },
+  {
+   "id": "p42-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "Ja, nehmen Sie diese Salbe.|Nehmen Sie diese Salbe.",
+   "x": 452,
+   "y": 988,
+   "w": 514,
+   "h": 22
+  },
+  {
+   "id": "p42-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "Ja, holen Sie die Medikamente in der Apotheke ab.|Holen Sie die Medikamente in der Apotheke ab.",
+   "x": 654,
+   "y": 1016,
+   "w": 312,
+   "h": 22
+  },
+  {
+   "id": "p42-4a-Aussage",
+   "group": "g4",
+   "kind": "text",
+   "label": "4a Aussage",
+   "answer": "Ich hole das Rezept in der Praxis ab.",
+   "x": 248,
+   "y": 1231,
+   "w": 552,
+   "h": 22
+  },
+  {
+   "id": "p42-4a-Frage",
+   "group": "g4",
+   "kind": "text",
+   "label": "4a Frage",
+   "answer": "Holst du das Rezept in der Praxis ab?",
+   "x": 310,
+   "y": 1260,
+   "w": 490,
+   "h": 22
+  },
+  {
+   "id": "p42-4a-Imperativ",
+   "group": "g4",
+   "kind": "text",
+   "label": "4a Imperativ",
+   "answer": "Holen Sie das Rezept bitte in der Praxis ab!",
+   "x": 306,
+   "y": 1289,
+   "w": 494,
+   "h": 22
+  },
+  {
+   "id": "p42-4b-Aussage-Position 1",
+   "group": "g4",
+   "kind": "radio",
+   "label": "4b Aussage Position 1",
+   "answer": "false",
+   "name": "4b-Aussage",
+   "value": "Position 1",
+   "x": 841,
+   "y": 1231,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p42-4b-Aussage-Position 2",
+   "group": "g4",
+   "kind": "radio",
+   "label": "4b Aussage Position 2",
+   "answer": "true",
+   "name": "4b-Aussage",
+   "value": "Position 2",
+   "x": 933,
+   "y": 1231,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p42-4b-Frage-Position 1",
+   "group": "g4",
+   "kind": "radio",
+   "label": "4b Frage Position 1",
+   "answer": "true",
+   "name": "4b-Frage",
+   "value": "Position 1",
+   "x": 841,
+   "y": 1259,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p42-4b-Frage-Position 2",
+   "group": "g4",
+   "kind": "radio",
+   "label": "4b Frage Position 2",
+   "answer": "false",
+   "name": "4b-Frage",
+   "value": "Position 2",
+   "x": 933,
+   "y": 1259,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p42-4b-Imperativ-Position 1",
+   "group": "g4",
+   "kind": "radio",
+   "label": "4b Imperativ Position 1",
+   "answer": "true",
+   "name": "4b-Imperativ",
+   "value": "Position 1",
+   "x": 841,
+   "y": 1288,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p42-4b-Imperativ-Position 2",
+   "group": "g4",
+   "kind": "radio",
+   "label": "4b Imperativ Position 2",
+   "answer": "false",
+   "name": "4b-Imperativ",
+   "value": "Position 2",
+   "x": 933,
+   "y": 1288,
+   "w": 24,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 2"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 3"
+  },
+  {
+   "id": "g4",
+   "label": "Aufgabe 4"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the official Hueber Loesungsschluessel AB A1.2 (Lektion 18).",
+   "Ex 1: the word 'Kopf' is printed before blank 1, so its answer is 'schmerzen'. Handwritten examples (1 krank, 2b Tabletten, 3a) are not fields.",
+   "Ex 4b asks to mark the verbs in 4a (not a field); only the Position 1/2 choices are mapped.",
+   "Boxes placed from word coordinates and the page image; not marked verified."
+  ],
   "verifiedWords": 258,
-  "totalWords": 258,
-  "notes": []
+  "totalWords": 258
  }
 }
