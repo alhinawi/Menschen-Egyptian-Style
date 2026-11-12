@@ -91,11 +91,13 @@ export function ReaderControl({tag, attrs, children}: ReaderControlProps) {
   const props: Record<string, any> = {...attrs};
   if (tag === 'select') props.onChange = (e: React.ChangeEvent<Element>) => store.act(attrs['data-react-control-id'] || key, e);
   else props.onClick = (e: React.MouseEvent<Element>) => store.act(attrs['data-react-control-id'] || key, e);
+  if(['prev','next','fit','plus','minus'].includes(key)){props['aria-label']=({prev:'Previous page',next:'Next page',fit:'Fit page',plus:'Zoom in',minus:'Zoom out'} as Record<string,string>)[key];props.title=props['aria-label']}
+  if(attrs.className?.split(' ').includes('coverOpen'))return createElement(tag,props,'Open book ←');
   if (key === 'prev' && snapshot.ready) props.disabled = snapshot.previousDisabled;
   if (key === 'next' && snapshot.ready) props.disabled = snapshot.nextDisabled;
   if (key === 'soundToggle') {
     props['aria-pressed'] = snapshot.soundOn !== false;
-    props['aria-label'] = snapshot.soundOn !== false ? 'Ton ausschalten' : 'Ton einschalten';
+    props['aria-label'] = snapshot.soundOn !== false ? 'Turn sound off' : 'Turn sound on';
     props.title = props['aria-label'];
     return createElement(tag, props, createElement('svg', {viewBox: '0 0 24 24', width: 22, height: 22, 'aria-hidden': true, fill: 'none', stroke: 'currentColor', strokeWidth: 1.8, strokeLinecap: 'round', strokeLinejoin: 'round'}, createElement('path', {d: 'M11 5 6 9H3v6h3l5 4V5Z'}), createElement('path', {className: 'soundWaves', d: 'M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14'}), createElement('path', {className: 'soundSlash', d: 'M3 3l18 18'})));
   }
