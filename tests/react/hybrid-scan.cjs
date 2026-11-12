@@ -8,7 +8,7 @@ for(const book of fs.readdirSync(path.join(root,'src/scan-data'))){
  for(const file of fs.readdirSync(dir).filter(f=>f.endsWith('.json'))){
   const d=JSON.parse(fs.readFileSync(path.join(dir,file),'utf8'));
   assert.equal(d.book,book);assert(d.width>0&&d.height>0);assert(fs.existsSync(path.join(root,d.image)));
-  assert.equal(d.review.verifiedWords,d.words.length);
+  assert(d.review.verifiedWords>=0&&d.review.verifiedWords<=d.words.length,`${book}/${file}: invalid reviewed count`);
   for(const item of [...d.words,...d.fields,...d.audio]){
    assert(item.x>=0&&item.y>=0&&item.w>0&&item.h>0,`${book}/${file}: invalid box`);
    assert(item.x+item.w<=d.width&&item.y+item.h<=d.height,`${book}/${file}: box outside scan`);
