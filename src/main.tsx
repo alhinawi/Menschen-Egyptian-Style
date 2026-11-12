@@ -2,6 +2,7 @@ import {createRoot} from 'react-dom/client';
 import App from './App';
 import './adapters/page-flip';
 import {configs, loadLesson, slugFromLocation} from './navigate';
+import './tailwind.gen.css';
 
 async function start() {
   const config = configs[location.pathname.split('/').pop() || 'index.html'] ?? configs['index.html'];
