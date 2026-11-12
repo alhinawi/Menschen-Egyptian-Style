@@ -49,3 +49,5 @@
 .notesLines.filmGaps input{width:110px}
 .filmGaps label{display:block;margin:5px 0;font:17px/1.5 Georgia}
 .filmGaps input{display:inline-block;width:110px;margin:0 2px}
+.scanPage,.scanPage img{width:100%;height:100%}
+.scanPage img{object-fit:contain;background:#fff;display:block}
