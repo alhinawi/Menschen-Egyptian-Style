@@ -24,7 +24,7 @@ export function HybridScan({data}:{data:ScanData}){
     if(f.kind==='checkbox')return <input {...props} type="checkbox" checked={values[f.id]==='true'} onChange={e=>update(f.id,String(e.target.checked))}/>;
     return <input {...props} type="text" value={values[f.id]||''} onChange={e=>update(f.id,e.target.value)} autoComplete="off" spellCheck={false}/>;
    })}</div>
-   {data.audio.map(a=><button key={a.id} className="hybridAudio" style={box(a)} aria-label={a.label} onClick={()=>{setActiveAudio(a.src);requestAnimationFrame(()=>{if(player.current){player.current.src=a.src;player.current.play().catch(()=>{})}})}}>▶</button>)}
+   {data.audio.map(a=><button key={a.id} type="button" className="hybridAudio" style={box(a)} aria-label={a.label} onClick={()=>{setActiveAudio(a.src);requestAnimationFrame(()=>{if(player.current){player.current.src=a.src;player.current.play().catch(()=>{})}})}}>▶</button>)}
    <div className="hybridTools">{data.groups.map(g=><div key={g.id} className="hybridCheck"><button type="button" onClick={()=>check(g.id)}>{g.label} · Prüfen ✓</button><output aria-live="polite">{data.fields.filter(f=>f.group===g.id).some(f=>results[f.id]!==undefined)?data.fields.filter(f=>f.group===g.id).every(f=>results[f.id])?'✓ Richtig!':'Noch einmal':''}</output></div>)}{data.audio.length>0&&<audio ref={player} controls hidden={!activeAudio}/>}</div>
   </div>
  </div>
