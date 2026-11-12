@@ -1,4 +1,3 @@
-// @ts-nocheck — legacy lesson service ported from the pre-TypeScript build; strict checking returns when this service is rewritten in React.
 export default function mount(){
 /* Egyptian Arabic meanings for Arbeitsbuch A1.1 Lektionen 10-12 + Modul 4 (printed 78-101).
    Keys match the HTML text nodes where the wording differs from the manifest. */
@@ -167,11 +166,11 @@ Object.assign(window.MENSCHEN_PHRASES,{
 "Kelubia: Ach, ich habe lange geschlafen. Dann habe ich eingekauft. Von 15 bis 17 Uhr habe ich Tennis gespielt. Und du? Was hast du heute gemacht?":"كيلوبيا: آه، أنا نمت كتير. وبعدين اشتريت حاجات. ومن 15 لـ 17 لعبت تنس. وإنتي؟ عملتي إيه النهارده؟",
 "NEYLA: Am Vormittag habe ich mit Anna Deutsch gelernt und am Nachmittag habe ich gearbeitet. Jetzt räume ich noch auf, dann gehe ich schlafen.":"نيلا: الصبح ذاكرت ألماني مع آنا والضهر اشتغلت. ودلوقتي برتّب شوية، وبعدها هنام.",
 "Kelubia: Na, dann – gute Nacht!":"كيلوبيا: يبقى كده - تصبحي على خير!",
-"Lernwortschatz — Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.":"كلمات الوحدة - إيه معنى الكلمات دي بلغتك؟ ترجم.",
+
 "Mein Tag: die Arbeit · die Hausaufgabe (machen) · die Pause (machen) · die Zeitung · aufräumen · einladen · kaufen · lachen · lernen · reden · schlafen · täglich · ab · von … bis":"يومي: الشغل · الواجب (يعمل) · البريك / الراحة (ياخد) · الجرنال · يرتّب · يدعي · يشتري · يضحك · يتعلم/يذاكر · يتكلم · ينام · كل يوم · من (ابتداءً من) · من … لحد",
 "Weitere wichtige Wörter: das Baby · das Fahrrad (fahren) · das Geschenk · der Monat · das Paar · die Party · die Reise (Dienstreise / Privatreise) · der Sport · der Wein · denken · meinen · fertig (sein) · interessant · lange · langweilig · letzt- (letzten Freitag / letztes Jahr / letzte Woche) · schwanger · für · … mal (zwei-/drei-/viermal) · Wirklich?":"كلمات مهمة تانية: البيبي · العجلة (يركب) · الهدية · الشهر · الزوجين · الحفلة · الرحلة (رحلة شغل / رحلة شخصية) · الرياضة · النبيت · يفكّر · يقصد · خلصان · ممتع · كتير/طويل · ممِل · اللي فات (الجمعة اللي فاتت / السنة اللي فاتت / الأسبوع اللي فات) · حامل · عشان · … مرة (مرتين / 3 مرات / 4 مرات) · بجد؟",
 "Tipp: Schreiben Sie Sätze. Benutzen Sie neue und alte Wörter":"نصيحة: اكتب جُمل. استخدم كلمات جديدة وقديمة.",
-"Welche Wörter möchten Sie noch lernen? Notieren Sie":"أنهي كلمات كمان عايز تتعلمها؟ سجّلها.",
+
 "Was ist denn hier passiert":"إيه اللي حصل هنا بقى؟",
 "Monate und Jahreszeiten — Ergänzen und vergleichen Sie. Ordnen Sie dann die Bilder zu.":"الشهور وفصول السنة - كمّل وقارن. وبعدين وصّل الصور بأماكنها.",
 "der Winter – Januar, Februar, März · der Frühling – April, Mai, Juni · der Sommer – Juli, August, September · der Herbst – Oktober, November, Dezember":"الشتا - يناير، فبراير، مارس · الربيع - أبريل، مايو، يونيو · الصيف - يوليو، أغسطس، سبتمبر · الخريف - أكتوبر، نوفمبر، ديسمبر",
@@ -239,7 +238,7 @@ Object.assign(window.MENSCHEN_PHRASES,{
 "Wir haben Freunde getroffen.":"قابلنا أصحاب.",
 "Später in der Nacht haben wir auch getanzt.":"متأخر في الليل رقصنا كمان.",
 "Heute ist meine Freundin leider wieder abgefahren.":"النهارده صاحبتي سافرت تاني للأسف.",
-"Schreiben Sie Sätze im Perfekt":"اكتب جُمل بالماضي التام.",
+
 "Lucia ist nach Lübeck gekommen":"لوتشيا جات لوبيك.",
 "Im Juli sind wir nach Hamburg gefahren.":"في يوليو سافرنا هامبورج.",
 "Der Zug ist um 12.30 Uhr abgefahren.":"القطر اتحرك الساعة 12:30.",
@@ -249,13 +248,13 @@ Object.assign(window.MENSCHEN_PHRASES,{
 "nicky1980: Hallo Leute, ich fliege im Sommer nach Deutschland. Wo gibt es ein gutes Reggae-Festival?":"nicky1980: أهلا يا جماعة، أنا مسافر ألمانيا في الصيف بالطيارة. فين فيه مهرجان ريجي كويس؟",
 "SUNSAMMY: Hi nicky, es gibt viele. Ein Fest heißt „Chiemsee Reggae Summer Festival“. Es ist sehr groß, es kommen 30.000 Besucher. Das Festival gibt es seit 15 Jahren und es dauert 3 Tage. Ach ja, und es ist im August.":"SUNSAMMY: هاي يا نيكي، فيه كتير. فيه مهرجان اسمه \"مهرجان بحيرة كيم الصيفي للريجي\". كبير أوي، بيجيله 30.000 زائر. المهرجان موجود من 15 سنة وبيستمر 3 أيام. آه صح، وهو في أغسطس.",
 "nicky1980: Hi und danke, sunsammy! Ich war schon auf dem Festival. Es war wirklich super! Ich habe viele nette Leute getroffen und gute Musik gehört.":"nicky1980: هاي ومتشكر يا sunsammy! أنا كنت في المهرجان ده قبل كده. كان تحفة فعلًا! قابلت ناس لطاف كتير وسمعت مزيكا حلوة.",
-"Lernwortschatz — Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.":"كلمات الوحدة - إيه معنى الكلمات دي بلغتك؟ ترجم.",
+
 "Jahreszeiten: der Frühling · der Sommer · der Herbst · der Winter · im Winter / Frühling …":"فصول السنة: الربيع · الصيف · الخريف · الشتا · في الشتا / في الربيع …",
 "Monate: der Januar · der Februar · der März · der April · der Mai · der Juni · der Juli · der August · der September · der Oktober · der November · der Dezember · im Januar / Februar …":"الشهور: يناير · فبراير · مارس · أبريل · مايو · يونيو · يوليو · أغسطس · سبتمبر · أكتوبر · نوفمبر · ديسمبر · في يناير / فبراير …",
 "Feste und Feiern: das Fest · die Hochzeit · der Karneval (Fasching, Fasnacht) · das Neujahr · das Silvester · anfangen · aufhören · feiern · dauern · gefallen · seit":"المناسبات والاحتفالات: المناسبة · الفرح · الكرنفال (Fasching, Fasnacht) · راس السنة الجديدة · ليلة راس السنة · يبتدي · يخلص · يحتفل · يستمر · يعجب · منذ / من",
 "Weitere wichtige Wörter: das Bier (Weißbier) · die Leute (Plural) · die Person · geben, es gibt · fliegen · springen · studieren · gestern":"كلمات مهمة تانية: البيرة (البيرة البيضا) · الناس (جمع) · الشخص · فيه / موجود · يطير/يسافر بالطيارة · ينط · يدرس في الجامعة · إمبارح",
 "Tipp: Finden Sie internationale Wörter. Man kann sie leicht verstehen. Vergleichen Sie die Wörter mit Ihrer Muttersprache":"نصيحة: لاقي الكلمات الدولية. دي سهل تفهمها. قارن الكلمات بلغتك الأم.",
-"Welche Wörter möchten Sie noch lernen? Notieren Sie":"أنهي كلمات كمان عايز تتعلمها؟ سجّلها.",
+
 "WIEDERHOLUNGSSTATION: WORTSCHATZ":"محطة مراجعة: الكلمات",
 "Ergänzen Sie. (Ü = UE, Ä = AE, Ö = OE":"كمّل. (Ü = UE, Ä = AE, Ö = OE)",
 "Am 31.12. ist Silvester.":"يوم 31.12. ليلة راس السنة.",
