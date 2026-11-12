@@ -43,7 +43,7 @@ export const scanStore = {
     listeners.add(fn);
     return () => {listeners.delete(fn);};
   },
-  connect(next: PersistenceRuntime): () => void {
+  connect(next: PersistenceRuntime | null): () => void {
     runtime = next;
     return () => {runtime = null;};
   },

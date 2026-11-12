@@ -1,4 +1,3 @@
-// @ts-nocheck — legacy lesson service ported from the pre-TypeScript build; strict checking returns when this service is rewritten in React.
 export default function mount(){
 /* Egyptian Arabic meanings for the original lesson 4-6 and module-2 text. */
 Object.assign(window.MENSCHEN_PHRASES,{
@@ -34,7 +33,7 @@ Object.assign(window.MENSCHEN_PHRASES,{
 'Wie viel kostet das?':'ده بكام؟',
 'Hören Sie und notieren Sie die Preise.':'اسمع واكتب الأسعار.',
 'Gespräche üben: Nach Preisen fragen und Preise nennen. Arbeiten Sie zu zweit auf Seite 79.':'تمرين كلام: اسأل عن الأسعار وقول الأسعار. اشتغلوا في اتنين في صفحة ٧٩.',
-'Was kostet die Lampe?':'اللمبة بكام؟',
+
 'Was sagt der Verkäufer aus 3b? Kreuzen Sie an. Ergänzen Sie dann die Tabelle.':'البيّاع في تمرين ٣ب قال إيه؟ علّم صح. وبعدين كمّل الجدول.',
 'Die Lampe kostet 119 Euro.':'اللمبة بـ ١١٩ يورو.',
 'kommt aus Italien.':'جاية من إيطاليا.',
