@@ -1850,7 +1850,12 @@
     }
   ],
   "audio": [],
-  "groups": [],
+  "groups": [
+    {
+      "id": "taskb",
+      "label": "b"
+    }
+  ],
   "review": {
     "status": "verified",
     "notes": [
