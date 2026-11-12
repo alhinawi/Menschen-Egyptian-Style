@@ -1322,15 +1322,217 @@
    "h": 14
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p86-9B",
+   "group": "g1",
+   "kind": "text",
+   "label": "9 B",
+   "answer": "es schneit zu viel",
+   "x": 175,
+   "y": 417,
+   "w": 240,
+   "h": 24
+  },
+  {
+   "id": "p86-9C",
+   "group": "g1",
+   "kind": "text",
+   "label": "9 C",
+   "answer": "er hat gestern lange gefeiert",
+   "x": 500,
+   "y": 339,
+   "w": 220,
+   "h": 22
+  },
+  {
+   "id": "p86-9D",
+   "group": "g1",
+   "kind": "text",
+   "label": "9 D",
+   "answer": "ihr Fahrrad ist kaputt",
+   "x": 500,
+   "y": 417,
+   "w": 227,
+   "h": 24
+  },
+  {
+   "id": "p86-10_0_0",
+   "group": "g2",
+   "kind": "text",
+   "label": "10 Zeile 1 Position 0",
+   "answer": "denn",
+   "x": 172,
+   "y": 537,
+   "w": 83,
+   "h": 20
+  },
+  {
+   "id": "p86-10_0_1",
+   "group": "g2",
+   "kind": "text",
+   "label": "10 Zeile 1 Position 1",
+   "answer": "es",
+   "x": 260,
+   "y": 537,
+   "w": 85,
+   "h": 20
+  },
+  {
+   "id": "p86-10_0_2",
+   "group": "g2",
+   "kind": "text",
+   "label": "10 Zeile 1 Position 2",
+   "answer": "schneit",
+   "x": 350,
+   "y": 537,
+   "w": 83,
+   "h": 20
+  },
+  {
+   "id": "p86-10_0_3",
+   "group": "g2",
+   "kind": "text",
+   "label": "10 Zeile 1 Rest",
+   "answer": "zu viel",
+   "x": 438,
+   "y": 537,
+   "w": 297,
+   "h": 20
+  },
+  {
+   "id": "p86-10_1_0",
+   "group": "g2",
+   "kind": "text",
+   "label": "10 Zeile 2 Position 0",
+   "answer": "denn",
+   "x": 172,
+   "y": 558,
+   "w": 83,
+   "h": 20
+  },
+  {
+   "id": "p86-10_1_1",
+   "group": "g2",
+   "kind": "text",
+   "label": "10 Zeile 2 Position 1",
+   "answer": "er",
+   "x": 260,
+   "y": 558,
+   "w": 85,
+   "h": 20
+  },
+  {
+   "id": "p86-10_1_2",
+   "group": "g2",
+   "kind": "text",
+   "label": "10 Zeile 2 Position 2",
+   "answer": "hat",
+   "x": 350,
+   "y": 558,
+   "w": 83,
+   "h": 20
+  },
+  {
+   "id": "p86-10_1_3",
+   "group": "g2",
+   "kind": "text",
+   "label": "10 Zeile 2 Rest",
+   "answer": "gestern lange gefeiert",
+   "x": 438,
+   "y": 558,
+   "w": 297,
+   "h": 20
+  },
+  {
+   "id": "p86-10_2_0",
+   "group": "g2",
+   "kind": "text",
+   "label": "10 Zeile 3 Position 0",
+   "answer": "denn",
+   "x": 172,
+   "y": 579,
+   "w": 83,
+   "h": 20
+  },
+  {
+   "id": "p86-10_2_1",
+   "group": "g2",
+   "kind": "text",
+   "label": "10 Zeile 3 Position 1",
+   "answer": "ihr Fahrrad",
+   "x": 260,
+   "y": 579,
+   "w": 85,
+   "h": 20
+  },
+  {
+   "id": "p86-10_2_2",
+   "group": "g2",
+   "kind": "text",
+   "label": "10 Zeile 3 Position 2",
+   "answer": "ist",
+   "x": 350,
+   "y": 579,
+   "w": 83,
+   "h": 20
+  },
+  {
+   "id": "p86-10_2_3",
+   "group": "g2",
+   "kind": "text",
+   "label": "10 Zeile 3 Rest",
+   "answer": "kaputt",
+   "x": 438,
+   "y": 579,
+   "w": 297,
+   "h": 20
+  },
+  {
+   "id": "p86-11c",
+   "group": "g3",
+   "kind": "text",
+   "label": "11 c",
+   "answer": "Ella kommt heute nicht in die Disco, denn sie hat morgen eine Prüfung.",
+   "x": 130,
+   "y": 760,
+   "w": 598,
+   "h": 24
+  },
+  {
+   "id": "p86-11d",
+   "group": "g3",
+   "kind": "text",
+   "label": "11 d",
+   "answer": "Mit dem Urlaub hatten wir wirklich Glück, denn das Wetter war ein Traum.",
+   "x": 130,
+   "y": 802,
+   "w": 598,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 9"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 10"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 11"
+  }
+ ],
  "review": {
   "status": "partial",
-  "verifiedWords": 188,
-  "totalWords": 188,
   "notes": [
-   "Activation reviewed on a five-page visual sample (71,76,88,98,105): word boxes align with printed text, but these are partial OCR-derived layers. verifiedWords was supplied as the retained-word count by the worker, not an independent word-by-word audit. Some handwriting, symbols, fragments and printed words may be omitted or imperfect. No exercise fields or audio added."
-  ]
+   "Answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 23).",
+   "Ex 9 C: the answer is placed in the first blank only; the second printed line is left unmapped. Ex 11 b (partly handwritten) and ex 12 (matching lines) not mapped."
+  ],
+  "verifiedWords": 188,
+  "totalWords": 188
  }
 }
