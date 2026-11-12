@@ -6,6 +6,7 @@ import {
   BOOKS, MODULES, findModuleForPage, lessonForPage, lessonUrl,
   levelExtras, levelLessons, modulePages,
 } from '../library-data';
+import {navigateLesson, lessonUrl as spaLessonUrl} from '../navigate';
 import '../library-nav.css';
 
 type Panel = 'nav' | 'pages' | null;
@@ -59,12 +60,15 @@ export function LibraryNav({slug}: {slug: string}) {
     return () => {
       hs?.remove();
       ps?.remove();
+      setHeaderSlot(null);
+      setPageSlot(null);
     };
-  }, []);
+  }, [slug]);
 
   useEffect(() => {
     const jump = document.querySelector<HTMLSelectElement>('#pageJump');
     if (!jump) return;
+    setPageIndex(Number(jump.value) || 0);
     const sync = () => setPageIndex(Number(jump.value) || 0);
     sync();
     window.menschenBook?.on?.('flip', sync);
@@ -74,7 +78,7 @@ export function LibraryNav({slug}: {slug: string}) {
       jump.removeEventListener('change', sync);
       unsubscribe?.();
     };
-  }, [store]);
+  }, [store, slug]);
 
   // While a panel is open: lock the page behind against scroll chaining and
   // scroll the list so the current lesson/page is in view.
@@ -125,7 +129,7 @@ export function LibraryNav({slug}: {slug: string}) {
       }
     } else {
       const target = findModuleForPage(mod.book, mod.level, page);
-      if (target) location.href = `${target.slug}.html#${page}`;
+      if (target) void navigateLesson(target.slug, String(page));
     }
   };
 
@@ -169,14 +173,18 @@ export function LibraryNav({slug}: {slug: string}) {
             // keep the library open after the page loads.
             return (
               <a key={b.id} className="lnv-bookcard" href={lessonUrl(switchTarget(b.id))}
-                onClick={() => { try { sessionStorage.setItem('menschen-libnav', 'open'); } catch {} }}>
+                onClick={e => {
+                  e.preventDefault();
+                  const t = switchTarget(b.id);
+                  void navigateLesson(t.slug, String(t.pages[0]));
+                }}>
                 <img src={b.cover} alt=""/>
                 <span className="lnv-bt">{b.title}<small>{b.subtitle}</small></span>
               </a>
             );
           })}
           <div className="lnv-scroll">
-            <a className="lnv-home" href={mod.book === 'kb' ? 'index.html#cover' : 'ab1.html#abcover'}>Cover</a>
+            <a className="lnv-home" href={mod.book === 'kb' ? 'index.html#cover' : 'ab1.html#abcover'} onClick={e => { e.preventDefault(); void navigateLesson(mod.book === 'kb' ? 'index' : 'ab1', mod.book === 'kb' ? 'cover' : 'abcover'); }}>Cover</a>
             {levels.map(level => (
               <div key={level}>
                 <div className="lnv-lvl">{bookInfo.title.toUpperCase()} · {level}</div>

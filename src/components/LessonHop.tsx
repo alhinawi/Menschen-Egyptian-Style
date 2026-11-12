@@ -1,5 +1,6 @@
 import {useEffect} from 'react';
 import {MODULE_ORDER, MODULES, modulePages} from '../library-data';
+import {navigateLesson} from '../navigate';
 
 const HOP_FLAG = 'menschen-hop';
 const HOP_ZOOM = 'menschen-hop-zoom';
@@ -128,30 +129,46 @@ export function LessonHop({slug}: {slug: string}) {
       }
     }, 1500);
 
-    const depart = (url: string, dir: 1 | -1) => {
+    const depart = (target: {slug: string; token: string} | null, dir: 1 | -1) => {
+      if (!target) return;
       const spread = document.querySelector<HTMLElement>('#spread');
-      sessionStorage.setItem(HOP_FLAG, '1');
-      sessionStorage.setItem(HOP_DIR, String(dir));
       if (spread?.style.zoom) sessionStorage.setItem(HOP_ZOOM, spread.style.zoom);
-      // Finish the page turn, then swap the document under a veil.
+      // Finish the page turn, swap the lesson in-app under a veil, then settle
+      // the new page flat. No document navigation: the shell stays mounted.
       setFlipAngle(FLIP_MAX_DEG, dir, 'complete');
       setTimeout(() => {
         const veil = makeVeil('1', 'auto');
         veil.style.transition = 'none';
         document.body.append(veil);
-        location.assign(url);
+        void (async () => {
+          await navigateLesson(target.slug, target.token);
+          const zoom = Number(sessionStorage.getItem(HOP_ZOOM));
+          sessionStorage.removeItem(HOP_ZOOM);
+          if (zoom > 0) (window as any).bookZoom?.(zoom);
+          setFlipAngle(28, dir, 'none');
+          veil.style.transition = 'opacity .18s ease';
+          veil.style.opacity = '0';
+          requestAnimationFrame(() => {
+            setFlipAngle(0, dir, 'settle');
+            setTimeout(() => { veil.remove(); clearFlip(); }, 320);
+          });
+        })();
       }, 230);
     };
 
+    const hopTarget = (dir: 1 | -1): {slug: string; token: string} | null => {
+      if (dir > 0) return nextSlug && pageIndex() === pageCount() - 1 ? {slug: nextSlug, token: modulePages(nextSlug)[0]} : null;
+      return prevSlug && pageIndex() === 0 && prevTokens.length ? {slug: prevSlug, token: prevTokens[prevTokens.length - 1]} : null;
+    };
     const onClick = (e: MouseEvent) => {
       const btn = (e.target as HTMLElement | null)?.closest?.('#next,#prev') as HTMLButtonElement | null;
       if (!btn) return;
       const dir = btn.id === 'next' ? 1 : -1;
-      const url = hopUrl(dir);
-      if (!url) return;
+      const target = hopTarget(dir);
+      if (!target) return;
       e.preventDefault();
       e.stopImmediatePropagation();
-      depart(url, dir);
+      depart(target, dir);
     };
     document.addEventListener('click', onClick, true);
 
@@ -229,12 +246,12 @@ export function LessonHop({slug}: {slug: string}) {
       const g = gesture;
       gesture = null;
       if (!g || g.axis !== 'horizontal' || !g.dir || zoomed()) return;
-      const url = g.dir > 0 ? (g.canNext ? nextUrl : null) : (g.canPrev ? prevUrl : null);
+      const target = g.dir > 0 ? (g.canNext ? hopTarget(1) : null) : (g.canPrev ? hopTarget(-1) : null);
       if (!g.flipping) return;
-      if (!url) { setFlipAngle(0, g.dir, 'settle'); return; }
+      if (!target) { setFlipAngle(0, g.dir, 'settle'); return; }
       const progress = Math.max((g.dir > 0 ? g.x - x : x - g.x) / viewportWidth(), 0);
       const flick = (g.dir > 0 ? -g.velocity : g.velocity) > FLIP_FLICK_VELOCITY;
-      if (progress > FLIP_COMPLETE_PROGRESS || flick) depart(url, g.dir);
+      if (progress > FLIP_COMPLETE_PROGRESS || flick) depart(target, g.dir);
       else setFlipAngle(0, g.dir, 'settle');
     };
     const gestureCancel = () => {
