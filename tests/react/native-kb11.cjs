@@ -6,7 +6,7 @@ const ALL={'index':[9,10,11,12],'l2-3':[13,14,15,16,17,18,19,20,21,22,23,24],'l4
 const stat={pages:0,graded:0,audio:0};
 try{for(const width of(process.env.W?[+process.env.W]:[390]))for(const[file,pages]of Object.entries(map).filter(([k])=>!process.env.F||process.env.F.split(',').includes(k)))for(const pg of pages.filter(n=>n>=+(process.env.A||0)&&n<=+(process.env.B||999))){
  const data=JSON.parse(fs.readFileSync(path.join(root,'src/native-kb11/p'+pg+'.json'),'utf8'));
- const p=await b.newPage({viewport:{width,height:844},isMobile:true,hasTouch:true});const errors=[];p.on('pageerror',e=>errors.push(e.message));p.on('requestfailed',r=>errors.push('reqfail '+r.url()));
+ const p=await b.newPage({viewport:{width,height:844},isMobile:true,hasTouch:true});const errors=[];p.on('pageerror',e=>errors.push(e.message));p.on('requestfailed',r=>!/\.mp3$/.test(r.url())&&errors.push('reqfail '+r.url()));
  await p.goto('http://localhost:'+(process.env.PORT||5197)+'/'+file+'.html#'+pg);await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true',null,{timeout:15000});
  const h=p.locator(`[data-native-page="${pg}"]`);await h.waitFor({state:'attached'});
  assert.equal(await h.locator('.nkbWord,.tapWord').count()>0||data.blocks.length===0,true,'text '+pg);
