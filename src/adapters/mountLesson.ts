@@ -38,6 +38,10 @@ export function mountLesson(initializers: LessonInitializer[]): LessonDispose {
     window.setTimeout = originalTimeout;
     window.setInterval = originalInterval;
   }
+  // Only nodes the initializers added are torn down; React portals (sidebar,
+  // dialogs) mounted later in the body are left alone so they survive an
+  // in-app lesson swap.
+  const added = [...document.body.children].filter(n => !before.has(n));
   let disposed = false;
   const book = window.menschenBook;
   const dispose = (() => {
@@ -53,7 +57,7 @@ export function mountLesson(initializers: LessonInitializer[]): LessonDispose {
     timeouts.forEach(clearTimeout);
     intervals.forEach(clearInterval);
     book?.destroy?.();
-    [...document.body.children].filter(n => !before.has(n)).forEach(n => n.remove());
+    added.forEach(n => n.remove());
   }) as LessonDispose;
   dispose.exercise = exercise;
   dispose.persistence = persistence;
