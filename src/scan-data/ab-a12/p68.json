@@ -2001,13 +2001,155 @@
    "h": 14
   }
  ],
- "fields": [],
- "audio": [],
- "groups": [],
+ "fields": [
+  {
+   "id": "p68-8b1",
+   "group": "g1",
+   "kind": "text",
+   "label": "8 b 1",
+   "answer": "kann",
+   "x": 162,
+   "y": 174,
+   "w": 101,
+   "h": 24
+  },
+  {
+   "id": "p68-8b2",
+   "group": "g1",
+   "kind": "text",
+   "label": "8 b 2",
+   "answer": "können",
+   "x": 490,
+   "y": 174,
+   "w": 100,
+   "h": 24
+  },
+  {
+   "id": "p68-8c1",
+   "group": "g1",
+   "kind": "text",
+   "label": "8 c 1",
+   "answer": "will",
+   "x": 172,
+   "y": 213,
+   "w": 98,
+   "h": 24
+  },
+  {
+   "id": "p68-8c2",
+   "group": "g1",
+   "kind": "text",
+   "label": "8 c 2",
+   "answer": "darf",
+   "x": 597,
+   "y": 213,
+   "w": 98,
+   "h": 24
+  },
+  {
+   "id": "p68-8d",
+   "group": "g1",
+   "kind": "text",
+   "label": "8 d",
+   "answer": "musst",
+   "x": 160,
+   "y": 252,
+   "w": 99,
+   "h": 24
+  },
+  {
+   "id": "p68-8e1",
+   "group": "g1",
+   "kind": "text",
+   "label": "8 e 1",
+   "answer": "soll",
+   "x": 272,
+   "y": 271,
+   "w": 96,
+   "h": 24
+  },
+  {
+   "id": "p68-8e2",
+   "group": "g1",
+   "kind": "text",
+   "label": "8 e 2",
+   "answer": "will",
+   "x": 524,
+   "y": 271,
+   "w": 96,
+   "h": 24
+  },
+  {
+   "id": "p68-9a",
+   "group": "g2",
+   "kind": "text",
+   "label": "9 a",
+   "answer": "Ich finde das in Ordnung.|Ich finde das in Ordnung",
+   "x": 163,
+   "y": 413,
+   "w": 380,
+   "h": 24
+  },
+  {
+   "id": "p68-9b",
+   "group": "g2",
+   "kind": "text",
+   "label": "9 b",
+   "answer": "Das ist doch gefährlich, oder?|Das ist doch gefährlich, oder",
+   "x": 160,
+   "y": 480,
+   "w": 378,
+   "h": 24
+  },
+  {
+   "id": "p68-9c",
+   "group": "g2",
+   "kind": "text",
+   "label": "9 c",
+   "answer": "Das weiß ich nicht.|Das weiß ich nicht",
+   "x": 163,
+   "y": 565,
+   "w": 377,
+   "h": 24
+  }
+ ],
+ "audio": [
+  {
+   "id": "track30-1",
+   "src": "assets/ab-a12-track30.mp3",
+   "label": "CD2 · Track30",
+   "x": 49,
+   "y": 815,
+   "w": 36,
+   "h": 22
+  },
+  {
+   "id": "track30-2",
+   "src": "assets/ab-a12-track30.mp3",
+   "label": "CD2 · Track30",
+   "x": 49,
+   "y": 914,
+   "w": 36,
+   "h": 22
+  }
+ ],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 8"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 9"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 21, Aufgaben 8, 9).",
+   "Ex 10 (strike-through), 11 and 12 (listening, matching lines) not mapped; audio 2 30 icons mapped, audio not listened to. Handwritten text not fields."
+  ],
   "verifiedWords": 285,
-  "totalWords": 285,
-  "notes": []
+  "totalWords": 285
  }
 }

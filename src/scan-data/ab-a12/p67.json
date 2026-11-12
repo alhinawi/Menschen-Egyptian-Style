@@ -678,7 +678,7 @@
    "h": 10
   },
   {
-   "text": "Musst",
+   "text": "Müsst",
    "x": 237,
    "y": 866,
    "w": 37,
@@ -1329,13 +1329,285 @@
    "h": 9
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p67-5b1",
+   "group": "g1",
+   "kind": "text",
+   "label": "5 b 1",
+   "answer": "darf",
+   "x": 165,
+   "y": 603,
+   "w": 78,
+   "h": 24
+  },
+  {
+   "id": "p67-5b2",
+   "group": "g1",
+   "kind": "text",
+   "label": "5 b 2",
+   "answer": "nicht",
+   "x": 316,
+   "y": 603,
+   "w": 86,
+   "h": 24
+  },
+  {
+   "id": "p67-5c",
+   "group": "g1",
+   "kind": "text",
+   "label": "5 c",
+   "answer": "darfst",
+   "x": 165,
+   "y": 622,
+   "w": 85,
+   "h": 24
+  },
+  {
+   "id": "p67-5d1",
+   "group": "g1",
+   "kind": "text",
+   "label": "5 d 1",
+   "answer": "dürft",
+   "x": 165,
+   "y": 641,
+   "w": 85,
+   "h": 24
+  },
+  {
+   "id": "p67-5d2",
+   "group": "g1",
+   "kind": "text",
+   "label": "5 d 2",
+   "answer": "nicht",
+   "x": 290,
+   "y": 641,
+   "w": 78,
+   "h": 24
+  },
+  {
+   "id": "p67-5e",
+   "group": "g1",
+   "kind": "text",
+   "label": "5 e",
+   "answer": "dürfen",
+   "x": 165,
+   "y": 661,
+   "w": 85,
+   "h": 24
+  },
+  {
+   "id": "p67-5f",
+   "group": "g1",
+   "kind": "text",
+   "label": "5 f",
+   "answer": "müssen",
+   "x": 165,
+   "y": 681,
+   "w": 80,
+   "h": 24
+  },
+  {
+   "id": "p67-7a-muss",
+   "group": "g2",
+   "kind": "radio",
+   "label": "7a muss",
+   "answer": "false",
+   "name": "7a",
+   "value": "muss",
+   "x": 519,
+   "y": 860,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p67-7a-darf",
+   "group": "g2",
+   "kind": "radio",
+   "label": "7a darf",
+   "answer": "true",
+   "name": "7a",
+   "value": "darf",
+   "x": 591,
+   "y": 860,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p67-7b1-Sollst",
+   "group": "g2",
+   "kind": "radio",
+   "label": "7b1 Sollst",
+   "answer": "false",
+   "name": "7b1",
+   "value": "Sollst",
+   "x": 128,
+   "y": 899,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p67-7b1-Willst",
+   "group": "g2",
+   "kind": "radio",
+   "label": "7b1 Willst",
+   "answer": "true",
+   "name": "7b1",
+   "value": "Willst",
+   "x": 201,
+   "y": 899,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p67-7b2-darf",
+   "group": "g2",
+   "kind": "radio",
+   "label": "7b2 darf",
+   "answer": "false",
+   "name": "7b2",
+   "value": "darf",
+   "x": 201,
+   "y": 918,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p67-7b2-muss",
+   "group": "g2",
+   "kind": "radio",
+   "label": "7b2 muss",
+   "answer": "true",
+   "name": "7b2",
+   "value": "muss",
+   "x": 266,
+   "y": 918,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p67-7c-willst",
+   "group": "g2",
+   "kind": "radio",
+   "label": "7c willst",
+   "answer": "false",
+   "name": "7c",
+   "value": "willst",
+   "x": 272,
+   "y": 938,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p67-7c-sollst",
+   "group": "g2",
+   "kind": "radio",
+   "label": "7c sollst",
+   "answer": "true",
+   "name": "7c",
+   "value": "sollst",
+   "x": 350,
+   "y": 938,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p67-7d-Will",
+   "group": "g2",
+   "kind": "radio",
+   "label": "7d Will",
+   "answer": "false",
+   "name": "7d",
+   "value": "Will",
+   "x": 128,
+   "y": 958,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p67-7d-Darf",
+   "group": "g2",
+   "kind": "radio",
+   "label": "7d Darf",
+   "answer": "true",
+   "name": "7d",
+   "value": "Darf",
+   "x": 194,
+   "y": 958,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p67-7e1-darf",
+   "group": "g2",
+   "kind": "radio",
+   "label": "7e1 darf",
+   "answer": "false",
+   "name": "7e1",
+   "value": "darf",
+   "x": 166,
+   "y": 978,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p67-7e1-muss",
+   "group": "g2",
+   "kind": "radio",
+   "label": "7e1 muss",
+   "answer": "true",
+   "name": "7e1",
+   "value": "muss",
+   "x": 231,
+   "y": 978,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p67-7e2-Darfst",
+   "group": "g2",
+   "kind": "radio",
+   "label": "7e2 Darfst",
+   "answer": "false",
+   "name": "7e2",
+   "value": "Darfst",
+   "x": 128,
+   "y": 998,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p67-7e2-Kannst",
+   "group": "g2",
+   "kind": "radio",
+   "label": "7e2 Kannst",
+   "answer": "true",
+   "name": "7e2",
+   "value": "Kannst",
+   "x": 204,
+   "y": 998,
+   "w": 24,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 5"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 7"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 21, Aufgaben 5, 7).",
+   "Ex 5: only blanks with an answer in the key are fields (a is a handwritten example; second blanks of c, e, f are not in the key). Ex 4 table and ex 6 not mapped. 7a first pair is the printed example. Handwritten text not fields."
+  ],
   "verifiedWords": 189,
-  "totalWords": 189,
-  "notes": []
+  "totalWords": 189
  }
 }
