@@ -1,0 +1,8 @@
+import {useSyncExternalStore} from 'react';
+import {createPortal} from 'react-dom';
+import {selectionStore} from './selectionStore';
+
+export function SelectionControls() {
+  const s = useSyncExternalStore(selectionStore.subscribe, selectionStore.getSnapshot, selectionStore.getSnapshot);
+  return <><button className="meaningModeToggle" type="button" lang="ar-EG" aria-pressed={s.mode === 'sentence'} onClick={() => selectionStore.act('toggleMode')}>{s.mode === 'word' ? 'ترجمة: كلمة' : 'ترجمة: جملة'}</button><button className="selectionModeToggle" type="button" lang="ar-EG" aria-pressed={s.selecting} onClick={() => selectionStore.act('toggleSelection')}>{s.selecting ? 'تحديد النص: شغّال' : 'تحديد النص: مقفول'}</button>{createPortal(<button type="button" className="selectionMeaningAction" lang="ar-EG" hidden={s.actionHidden} aria-label={s.actionLabel} onPointerDown={e => e.preventDefault()} onClick={() => selectionStore.act('translate')}>ترجم التحديد واسمعه</button>, document.body)}</>;
+}
