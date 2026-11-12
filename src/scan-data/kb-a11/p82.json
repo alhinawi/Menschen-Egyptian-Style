@@ -1939,7 +1939,12 @@
     }
   ],
   "audio": [],
-  "groups": [],
+  "groups": [
+    {
+      "id": "taska",
+      "label": "a"
+    }
+  ],
   "review": {
     "status": "verified",
     "notes": [
