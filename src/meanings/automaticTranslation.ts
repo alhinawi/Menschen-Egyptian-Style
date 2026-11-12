@@ -8,9 +8,6 @@ export function recordMissingTranslation(text:string,kind:string){
  try{const queue:Missing[]=JSON.parse(localStorage.getItem(missingQueueKey)||'[]');const file=location.pathname.split('/').pop()||'index.html';const jump=document.querySelector('#pageJump') as HTMLSelectElement|null;const page=jump?document.querySelectorAll<HTMLElement>('.page')[Number(jump.value)]?.dataset.page||'':'';
  if(!queue.some(x=>key(x.text)===key(text)&&x.kind===kind&&x.file===file&&x.page===page)){queue.push({text,kind,file,page,firstSeen:new Date().toISOString()});localStorage.setItem(missingQueueKey,JSON.stringify(queue.slice(-3000)))}}catch{/* Private mode or full storage must not stop translation. */}
 }
-export function downloadMissingTranslations(){
- let rows:Missing[]=[];try{rows=JSON.parse(localStorage.getItem(missingQueueKey)||'[]')}catch{}const quote=(s:string)=>'"'+(/^[=+@-]/.test(s)?"'":'')+s.replace(/"/g,'""')+'"';const body='\ufeff'+[['German','Kind','File','Page','First seen'],...rows.map(r=>[r.text,r.kind,r.file,r.page,r.firstSeen])].map(row=>row.map(quote).join(',')).join('\r\n');const url=URL.createObjectURL(new Blob([body],{type:'text/csv;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='missing-egyptian-translations.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
-}
 const inFlight=new Map<string,Promise<string>>();
 const chunks=(text:string)=>{const out:string[]=[];let part='';for(const word of text.split(/\s+/)){if(new TextEncoder().encode(word).length>500)throw new Error('Text too long');const next=part?part+' '+word:word;if(new TextEncoder().encode(next).length>480){out.push(part);part=word}else part=next}if(part)out.push(part);return out};
 export function automaticArabic(text:string):Promise<string>{
