@@ -69,24 +69,6 @@ export function ReaderThemes() {
   return <>{slot && createPortal(<button type="button" className="themesTrigger" aria-haspopup="dialog" aria-controls="themesMenu" aria-label={'Themes: ' + option.name} onClick={() => dialog.current?.showModal()}>◐ Themes</button>, slot)}{createPortal(<dialog ref={dialog} id="themesMenu" className="themesMenu" aria-labelledby="themesTitle" onClick={e => {if (e.target !== dialog.current) return; const r = dialog.current!.getBoundingClientRect(); if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) close();}}><div className="themesHeading"><h2 id="themesTitle">Themes</h2><button className="themesClose" aria-label="Close themes" onClick={close}>×</button></div><p>اختر الشكل اللي يريح عينك</p><div className="themeOptions">{options.map(o => <button key={o.id} data-mode={o.id} aria-pressed={chosen.id === o.id} onClick={() => setChosen(v => ({...v, id: o.id}))}><i style={{background: o.swatch}}/><span>{o.name}</span></button>)}</div></dialog>, document.body)}</>;
 }
 
-const hintKey = 'menschen-audio-hint-seen-v1';
-
-export function AudioHint() {
-  const [hidden, setHidden] = useState(() => {
-    try {return !!localStorage.getItem(hintKey);} catch {return false;}
-  });
-  function close(): void {
-    setHidden(true);
-    try {localStorage.setItem(hintKey, '1');} catch { /* storage may be unavailable */ }
-  }
-  useEffect(() => {
-    const click = (e: MouseEvent) => {if ((e.target as HTMLElement).closest('.listen')) close();};
-    document.addEventListener('click', click);
-    return () => document.removeEventListener('click', click);
-  }, []);
-  return createPortal(<aside className="audioDiscover" dir="rtl" lang="ar-EG" hidden={hidden}><span>اضغط على ▶ في الدرس عشان تسمع صوتيات الكتاب</span><button type="button" aria-label="إخفاء النصيحة" onClick={close}>×</button></aside>, document.body);
-}
-
 export function CrossBookNavigation() {
   useEffect(() => {
     const select = document.querySelector<HTMLSelectElement>('.headerBrand select');
