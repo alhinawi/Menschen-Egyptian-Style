@@ -131,6 +131,7 @@ def build(p):
     for seg in blocks:
         x0=min(w['x'] for w in seg);x1=max(w['x']+w['w'] for w in seg)
         outb.append({'x':x0,'w':x1-x0,'cy':seg[0]['cy'],'f':seg[0]['f'],'b':seg[0]['b'],'sa':sans_ctx(a,S,x0,seg[0]['cy'],x1,seg[0]['f'],paper0),'ws':[{'t':clean_t(w['t']),'c':w['c'],**({'ph':w['ph']} if 'ph' in w else {})} for w in seg]})
+    import sys;sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)));from kb11_punct import restore;restore(outb,p)
     words=[w for w in words if not w.get('r')]
     checks={}
     for g in sorted({f['group'] for f in d['fields'] if f.get('answer') is not None}):
