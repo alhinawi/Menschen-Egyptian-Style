@@ -1423,7 +1423,7 @@
   "groups": [],
   "review": {
     "status": "partial",
-    "verifiedWords": 0,
+    "verifiedWords": 199,
     "notes": [
       "All printed words reviewed against the scan; regions the page photo hid from OCR (right-column verse lines, task 1 header, word bank) were recovered with targeted strip OCR and verified visually.",
       "Audio marker 2.22 printed twice (tasks 1 and 2); file assets/kb-cd2-track22.mp3 exists and matches the lesson JSON track for this page.",

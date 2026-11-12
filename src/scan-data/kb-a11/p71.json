@@ -2066,7 +2066,7 @@
   ],
   "review": {
     "status": "verified",
-    "verifiedWords": 0,
+    "verifiedWords": 288,
     "notes": [
       "All printed words reviewed against the scan; OCR garbage from photos and the red task-number boxes removed.",
       "Footnote *CH: Velo = Fahrrad transcribed manually (OCR could not read it).",
