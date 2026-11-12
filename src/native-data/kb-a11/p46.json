@@ -1,0 +1,805 @@
+{
+  "book": "kb-a11",
+  "page": 46,
+  "width": 1075,
+  "height": 1521,
+  "words": [],
+  "art": [
+    {
+      "src": "assets/book-crops/native-p46-strip.png",
+      "x": 0,
+      "y": 65,
+      "w": 1075,
+      "h": 142,
+      "name": "strip"
+    },
+    {
+      "src": "assets/book-crops/native-p46-karina.png",
+      "x": 205,
+      "y": 292,
+      "w": 247,
+      "h": 178,
+      "name": "karina"
+    },
+    {
+      "src": "assets/book-crops/native-p46-sms.png",
+      "x": 505,
+      "y": 293,
+      "w": 218,
+      "h": 170,
+      "name": "sms"
+    },
+    {
+      "src": "assets/book-crops/native-p46-clocks.png",
+      "x": 170,
+      "y": 1133,
+      "w": 873,
+      "h": 133,
+      "name": "clocks"
+    },
+    {
+      "src": "assets/book-crops/native-p46-card.png",
+      "x": 492,
+      "y": 802,
+      "w": 60,
+      "h": 44,
+      "name": "Karten ziehen"
+    }
+  ],
+  "fields": [
+    {
+      "id": "a1",
+      "group": "task3",
+      "kind": "radio",
+      "name": "a",
+      "value": "yes",
+      "answer": "false",
+      "label": "Karina geht heute Nachmittag mit Manuel ins Schwimmbad.",
+      "x": 316,
+      "y": 486,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "id": "a2",
+      "group": "task3",
+      "kind": "radio",
+      "name": "a",
+      "value": "no",
+      "answer": "true",
+      "label": "Karina geht heute Nachmittag nicht mit Manuel ins Schwimmbad.",
+      "x": 316,
+      "y": 512,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "id": "b1",
+      "group": "task3",
+      "kind": "radio",
+      "name": "b",
+      "value": "long",
+      "answer": "false",
+      "label": "LG = Liebe und Grüße",
+      "x": 316,
+      "y": 551,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "id": "b2",
+      "group": "task3",
+      "kind": "radio",
+      "name": "b",
+      "value": "short",
+      "answer": "true",
+      "label": "LG = Liebe Grüße",
+      "x": 316,
+      "y": 576,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "id": "time3",
+      "group": "task5",
+      "kind": "text",
+      "label": "3: zwanzig nach drei",
+      "answer": "nach",
+      "x": 659,
+      "y": 1272,
+      "w": 46,
+      "h": 24
+    },
+    {
+      "id": "time4",
+      "group": "task5",
+      "kind": "text",
+      "label": "4: fünf vor halb acht",
+      "answer": "vor",
+      "x": 763,
+      "y": 1272,
+      "w": 46,
+      "h": 24
+    },
+    {
+      "id": "time5",
+      "group": "task5",
+      "kind": "text",
+      "label": "5: fünf nach halb elf",
+      "answer": "nach",
+      "x": 901,
+      "y": 1272,
+      "w": 46,
+      "h": 24
+    },
+    {
+      "id": "time2",
+      "group": "task5",
+      "kind": "text",
+      "label": "2: Viertel vor zehn",
+      "x": 514,
+      "y": 1272,
+      "w": 46,
+      "h": 24,
+      "answer": "vor"
+    },
+    {
+      "id": "card1",
+      "group": "open4",
+      "kind": "text",
+      "label": "Karte 1: Wort aus dem Bildlexikon",
+      "x": 850,
+      "y": 770,
+      "w": 94,
+      "h": 43
+    },
+    {
+      "id": "card2",
+      "group": "open4",
+      "kind": "text",
+      "label": "Karte 2: Wort aus dem Bildlexikon",
+      "x": 958,
+      "y": 770,
+      "w": 94,
+      "h": 43
+    }
+  ],
+  "audio": [
+    {
+      "id": "cd2-06",
+      "src": "assets/kb-cd2-track06.mp3",
+      "label": "2.06 · Wie spät ist es?",
+      "x": 108,
+      "y": 1095,
+      "w": 30,
+      "h": 25
+    }
+  ],
+  "groups": [
+    {
+      "id": "task3",
+      "label": "3",
+      "x": 211,
+      "y": 614
+    },
+    {
+      "id": "task5",
+      "label": "5a",
+      "x": 212,
+      "y": 1392
+    }
+  ],
+  "titles": [
+    [
+      "3",
+      175,
+      243
+    ],
+    [
+      "4",
+      175,
+      674
+    ],
+    [
+      "5",
+      175,
+      1059
+    ]
+  ],
+  "review": {
+    "status": "source-reviewed",
+    "sourceNotes": [
+      "Manual native transcription checked against original printed page 46. Original art inspected at source-relative aspect and framing. Correct/wrong checks, persistence, translations and image bounds verified at 320px and 390px. Open writing is saved and is not falsely auto-graded."
+    ]
+  },
+  "panels": [],
+  "shapes": [
+    {
+      "x": 790,
+      "y": 243,
+      "w": 190,
+      "h": 105,
+      "background": "#fff",
+      "border": "3px double #6c99b1"
+    },
+    {
+      "x": 210,
+      "y": 866,
+      "w": 740,
+      "h": 109,
+      "background": "#fffef3",
+      "border": "0"
+    },
+    {
+      "x": 210,
+      "y": 866,
+      "w": 740,
+      "h": 5,
+      "background": "#e6d72e",
+      "border": "0"
+    },
+    {
+      "x": 210,
+      "y": 866,
+      "w": 11,
+      "h": 109,
+      "background": "#e6d72e",
+      "border": "0"
+    },
+    {
+      "x": 529,
+      "y": 988,
+      "w": 310,
+      "h": 66,
+      "background": "#fff",
+      "border": "3px double #6c99b1"
+    }
+  ],
+  "arrows": [
+    [
+      700,
+      606,
+      820,
+      625
+    ],
+    [
+      700,
+      626,
+      820,
+      606
+    ]
+  ],
+  "textBlocks": [
+    {
+      "text": "●",
+      "x": 92,
+      "y": 177,
+      "w": 18,
+      "size": 14,
+      "bold": false,
+      "serif": false,
+      "color": "#5aab28"
+    },
+    {
+      "text": "Kino",
+      "x": 110,
+      "y": 176,
+      "w": 120,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "●",
+      "x": 294,
+      "y": 177,
+      "w": 18,
+      "size": 14,
+      "bold": false,
+      "serif": false,
+      "color": "#5aab28"
+    },
+    {
+      "text": "Theater",
+      "x": 312,
+      "y": 176,
+      "w": 140,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "●",
+      "x": 462,
+      "y": 177,
+      "w": 18,
+      "size": 14,
+      "bold": false,
+      "serif": false,
+      "color": "#5aab28"
+    },
+    {
+      "text": "●",
+      "x": 641,
+      "y": 177,
+      "w": 18,
+      "size": 14,
+      "bold": false,
+      "serif": false,
+      "color": "#5aab28"
+    },
+    {
+      "text": "Café",
+      "x": 659,
+      "y": 176,
+      "w": 120,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "●",
+      "x": 797,
+      "y": 177,
+      "w": 18,
+      "size": 14,
+      "bold": false,
+      "serif": false,
+      "color": "#d92c26"
+    },
+    {
+      "text": "Ausstellung",
+      "x": 815,
+      "y": 176,
+      "w": 180,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "●",
+      "x": 982,
+      "y": 177,
+      "w": 18,
+      "size": 14,
+      "bold": false,
+      "serif": false,
+      "color": "#d92c26"
+    },
+    {
+      "text": "Disco",
+      "x": 1000,
+      "y": 176,
+      "w": 90,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Was ist richtig? Lesen Sie die SMS und kreuzen Sie an.",
+      "x": 217,
+      "y": 243,
+      "w": 770,
+      "size": 21,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Hallo Manuel!\nLeider habe ich doch\nkeine Zeit. Wir sehen\nuns aber bald, okay?\nLG Karina",
+      "x": 558,
+      "y": 320,
+      "w": 165,
+      "size": 14,
+      "bold": false,
+      "serif": false,
+      "rotate": 5
+    },
+    {
+      "text": "sehen",
+      "x": 862,
+      "y": 252,
+      "w": 100,
+      "size": 19,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "ich\ndu\ner/sie",
+      "x": 810,
+      "y": 277,
+      "w": 75,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "sehe\nsiehst\nsieht",
+      "x": 885,
+      "y": 277,
+      "w": 90,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "a   Karina",
+      "x": 210,
+      "y": 486,
+      "w": 104,
+      "size": 20,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "geht heute Nachmittag mit Manuel ins Schwimmbad.",
+      "x": 346,
+      "y": 486,
+      "w": 685,
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "geht heute Nachmittag nicht mit Manuel ins Schwimmbad.",
+      "x": 346,
+      "y": 514,
+      "w": 695,
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "b   LG =",
+      "x": 210,
+      "y": 551,
+      "w": 110,
+      "size": 20,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Liebe und Grüße",
+      "x": 346,
+      "y": 551,
+      "w": 450,
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Liebe Grüße",
+      "x": 346,
+      "y": 579,
+      "w": 450,
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Position 2",
+      "x": 749,
+      "y": 559,
+      "w": 200,
+      "size": 18,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "Ich",
+      "x": 677,
+      "y": 586,
+      "w": 65,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "habe",
+      "x": 750,
+      "y": 586,
+      "w": 65,
+      "size": 17,
+      "bold": false,
+      "serif": true,
+      "color": "#b32632"
+    },
+    {
+      "text": "leider keine Zeit.",
+      "x": 823,
+      "y": 586,
+      "w": 220,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Leider",
+      "x": 677,
+      "y": 627,
+      "w": 70,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "habe",
+      "x": 750,
+      "y": 627,
+      "w": 65,
+      "size": 17,
+      "bold": false,
+      "serif": true,
+      "color": "#b32632"
+    },
+    {
+      "text": "ich keine Zeit.",
+      "x": 823,
+      "y": 627,
+      "w": 220,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Was macht Ihre Partnerin /\nIhr Partner heute Nachmittag?",
+      "x": 217,
+      "y": 674,
+      "w": 720,
+      "size": 21,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "a   Schreiben Sie Karten. Verwenden Sie die Wörter aus dem\n     Bildlexikon der Lektionen 7 und 8.",
+      "x": 183,
+      "y": 742,
+      "w": 790,
+      "size": 20,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "b   Ziehen Sie eine Karte",
+      "x": 183,
+      "y": 820,
+      "w": 340,
+      "size": 20,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "und antworten Sie.",
+      "x": 562,
+      "y": 820,
+      "w": 470,
+      "size": 20,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Hast du heute Nachmittag Zeit?\n\nWarum nicht?",
+      "x": 240,
+      "y": 882,
+      "w": 300,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Nein, leider nicht. / Nein, ich habe leider keine Zeit. /\nNein, leider habe ich keine Zeit.\nHeute Nachmittag gehe ich ins Museum. / Ich gehe heute\nNachmittag ins Museum. / Heute Nachmittag male ich.",
+      "x": 500,
+      "y": 882,
+      "w": 467,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "ins   ● Konzert …\nin    ● eine Ausstellung …",
+      "x": 552,
+      "y": 999,
+      "w": 295,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Wie spät ist es?",
+      "x": 217,
+      "y": 1059,
+      "w": 760,
+      "size": 21,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "a   Hören Sie und ergänzen Sie vor oder nach.",
+      "x": 183,
+      "y": 1094,
+      "w": 790,
+      "size": 20,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Im Gespräch",
+      "x": 212,
+      "y": 1275,
+      "w": 160,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Im Radio /\nFernsehen",
+      "x": 212,
+      "y": 1337,
+      "w": 160,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "halb sechs",
+      "x": 340,
+      "y": 1275,
+      "w": 110,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Viertel",
+      "x": 462,
+      "y": 1275,
+      "w": 115,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "zwanzig",
+      "x": 591,
+      "y": 1275,
+      "w": 115,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "fünf",
+      "x": 720,
+      "y": 1275,
+      "w": 125,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "fünf",
+      "x": 859,
+      "y": 1275,
+      "w": 174,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "fünf Uhr\ndreißig",
+      "x": 340,
+      "y": 1337,
+      "w": 110,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "neun Uhr\nfünfundvierzig",
+      "x": 462,
+      "y": 1337,
+      "w": 115,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "fünfzehn Uhr\nzwanzig",
+      "x": 591,
+      "y": 1337,
+      "w": 115,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "neunzehn Uhr\nfünfundzwanzig",
+      "x": 720,
+      "y": 1337,
+      "w": 125,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "zweiundzwanzig\nUhr fünfunddreißig",
+      "x": 859,
+      "y": 1337,
+      "w": 174,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "",
+      "x": 340,
+      "y": 1306,
+      "w": 110,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "zehn",
+      "x": 462,
+      "y": 1306,
+      "w": 115,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "drei",
+      "x": 591,
+      "y": 1306,
+      "w": 115,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "halb acht",
+      "x": 720,
+      "y": 1306,
+      "w": 125,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "halb elf",
+      "x": 859,
+      "y": 1306,
+      "w": 174,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "b   Uhrzeiten üben: Arbeiten Sie zu zweit auf Seite 80.",
+      "x": 183,
+      "y": 1442,
+      "w": 830,
+      "size": 20,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "46   |   sechsundvierzig",
+      "x": 147,
+      "y": 1500,
+      "w": 300,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Museum",
+      "x": 480,
+      "y": 176,
+      "w": 160,
+      "size": 16
+    }
+  ],
+  "hidePageNumber": true,
+  "taskColor": "#8e0846"
+}
