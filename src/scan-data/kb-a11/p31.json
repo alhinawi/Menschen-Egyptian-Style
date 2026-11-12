@@ -1569,11 +1569,99 @@
   ],
   "fields": [
     {
+      "id": "t6a-2",
+      "group": "t6a",
+      "kind": "text",
+      "label": "Foto Schirm",
+      "answer": "2",
+      "x": 275,
+      "y": 508,
+      "w": 22,
+      "h": 20
+    },
+    {
+      "id": "t6a-3",
+      "group": "t6a",
+      "kind": "text",
+      "label": "Foto Streichholz",
+      "answer": "4",
+      "x": 422,
+      "y": 508,
+      "w": 22,
+      "h": 20
+    },
+    {
+      "id": "t6a-4",
+      "group": "t6a",
+      "kind": "text",
+      "label": "Foto Geldbörse",
+      "answer": "5",
+      "x": 514,
+      "y": 508,
+      "w": 22,
+      "h": 20
+    },
+    {
+      "id": "t6a-5",
+      "group": "t6a",
+      "kind": "text",
+      "label": "Foto Seife",
+      "answer": "3",
+      "x": 664,
+      "y": 505,
+      "w": 22,
+      "h": 20
+    },
+    {
+      "id": "t6b-2",
+      "group": "t6b",
+      "kind": "text",
+      "label": "2 Das ist ein/eine ... (grün)",
+      "answer": "Schirm|Regenschirm",
+      "x": 310,
+      "y": 668,
+      "w": 145,
+      "h": 16
+    },
+    {
+      "id": "t6b-3",
+      "group": "t6b",
+      "kind": "text",
+      "label": "3 Das ist ein/eine ... (gelb)",
+      "answer": "Seife",
+      "x": 310,
+      "y": 688,
+      "w": 145,
+      "h": 16
+    },
+    {
+      "id": "t6b-4",
+      "group": "t6b",
+      "kind": "text",
+      "label": "4 Das ist ein/eine ... (rot)",
+      "answer": "Streichholz",
+      "x": 310,
+      "y": 708,
+      "w": 145,
+      "h": 16
+    },
+    {
+      "id": "t6b-5",
+      "group": "t6b",
+      "kind": "text",
+      "label": "5 Das ist ein/eine ... (blau)",
+      "answer": "Geldbörse|Geldbeutel|Portemonnaie",
+      "x": 310,
+      "y": 728,
+      "w": 145,
+      "h": 16
+    },
+    {
       "id": "t6c-2",
       "group": "t6c",
       "kind": "text",
       "label": "(2) … Uhr.",
-      "answer": "Kein Problem. Das ist eine|Das ist eine",
+      "answer": "Das ist eine",
       "x": 537,
       "y": 868,
       "w": 160,
@@ -1595,10 +1683,32 @@
       "group": "t6c",
       "kind": "text",
       "label": "(4) …",
-      "answer": "Wie schreibt man das|Wie schreibt man",
+      "answer": "Das ist eine Uhr",
       "x": 537,
       "y": 918,
       "w": 250,
+      "h": 18
+    },
+    {
+      "id": "t6c-5",
+      "group": "t6c",
+      "kind": "text",
+      "label": "(5) … Uhr?",
+      "answer": "Wie schreibt man",
+      "x": 200,
+      "y": 925,
+      "w": 185,
+      "h": 18
+    },
+    {
+      "id": "t6c-6",
+      "group": "t6c",
+      "kind": "text",
+      "label": "Bitteschön. (6) …",
+      "answer": "Kein Problem",
+      "x": 625,
+      "y": 984,
+      "w": 165,
       "h": 18
     }
   ],
@@ -1651,6 +1761,14 @@
   ],
   "groups": [
     {
+      "id": "t6a",
+      "label": "6a Gespräche den Fotos zuordnen"
+    },
+    {
+      "id": "t6b",
+      "label": "6b Das Wort ergänzen"
+    },
+    {
       "id": "t6c",
       "label": "6c Wer sagt was?"
     }
@@ -1660,10 +1778,11 @@
     "verifiedWords": 223,
     "totalWords": 223,
     "notes": [
-      "Marker 1.31-35 covers five tracks; the five audio buttons are placed in a row at the marker (estimated placement).",
-      "6a photo circles and 6b word blanks/pronoun/color matching depend on listening tracks 1.31-1.35 and conversation order, so no fields were created there. 6c (5) and (6) blanks are ambiguous from the printed phrase strip, so only (2),(3),(4) got fields.",
-      "Estimated boxes: 'Kette' label, 'Entschuldigung,' and 'Deutsch?' in the (1) script line, 'U – H – R.' letters, INFO box words, task letter 'a' in 6a, 'Produktinformation' (OCR truncated).",
-      "AB markers, vertical tabs (Diktat, Film, Spiel & Spaß, INFO), chapter 5, footer digit 31 and cut-off 'Modul' tab dropped as non-words."
+      "All field answers from the official Hueber answer key (Lektion 5, Kursbuch 6a: 2, 4, 5, 3; 6b: 2 Schirm/Er/gruen, 3 Seife/Sie/gelb, 4 Streichholz/Es/rot, 5 Geldboerse/Sie/blau; 6c: 2 Das ist eine Uhr., 3 Noch einmal, bitte., 4 Das ist eine Uhr., 5 Wie schreibt man Uhr?, 6 Kein Problem.).",
+      "6a photo circle positions and 6b blank spans estimated from the scan; 6b pronoun marking (Er/Es/Sie) and color matching not modeled as fields.",
+      "Marker 1.31-35 covers five tracks; the five audio buttons are stacked vertically in the left margin (estimated placement).",
+      "Estimated boxes: 'Kette' label, 'Entschuldigung,' and 'Deutsch?' in the (1) script line, 'U - H - R.' letters, INFO box words, task letter 'a' in 6a, 'Produktinformation' (OCR truncated).",
+      "AB markers, vertical tabs (Diktat, Film, Spiel & Spass, INFO), chapter 5, footer digit 31 and cut-off 'Modul' tab dropped as non-words."
     ]
   }
 }
