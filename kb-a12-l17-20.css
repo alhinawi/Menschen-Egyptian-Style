@@ -51,3 +51,8 @@
 .filmGaps input{display:inline-block;width:110px;margin:0 2px}
 .scanPage,.scanPage img{width:100%;height:100%}
 .scanPage img{object-fit:contain;background:#fff;display:block}
+/* Tappable hotspots over printed audio markers on scanned pages. */
+.scanPage{position:relative}
+.scanHot{position:absolute;inset:0;margin:auto;max-width:100%;max-height:100%;pointer-events:none}
+.scanListen{position:absolute;pointer-events:auto;background:transparent;border:0;padding:0;margin:0;cursor:pointer;border-radius:4px;-webkit-tap-highlight-color:transparent}
+.scanListen:hover,.scanListen:focus-visible{outline:2px solid rgba(46,111,183,.75);background:rgba(46,111,183,.14)}

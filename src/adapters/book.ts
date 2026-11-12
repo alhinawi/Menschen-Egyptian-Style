@@ -51,7 +51,7 @@ viewport.addEventListener('touchcancel',(e: any)=>{endGesture(e.changedTouches[0
 viewport.addEventListener('mousedown',(e: any)=>{if(e.button||isControl(e.target)||e.target.closest('.tapWord'))return;if(zoomed()){mouse={pan:true,x:e.clientX,left:viewport.scrollLeft};e.preventDefault();return}gesture=startGesture(e);mouse={pan:false}});
 window.addEventListener('mousemove',(e: any)=>{if(!mouse)return;if(mouse.pan){viewport.scrollLeft=mouse.left+mouse.x-e.clientX;return}moveGesture(e,e)});
 window.addEventListener('mouseup',(e: any)=>{if(!mouse)return;if(!mouse.pan)endGesture(e);mouse=null;});
-for(const b of document.querySelectorAll<HTMLElement>('.listen'))b.onclick=()=>{const a=$('#audio');a.src='assets/kb-cd1-track'+b.dataset.track+'.mp3';$('.audioDock').hidden=false;a.play().catch(()=>{});};$('#closeAudio').onclick=()=>{$('#audio').pause();$('.audioDock').hidden=true;};
+for(const b of document.querySelectorAll<HTMLElement>('.listen'))b.onclick=()=>{const a=$('#audio');a.src='assets/kb-cd1-track'+b.dataset.track!.padStart(2,'0')+'.mp3';$('.audioDock').hidden=false;a.play().catch(()=>{});};$('#closeAudio').onclick=()=>{$('#audio').pause();$('.audioDock').hidden=true;};
 window.menschenBook=flip;window.menschenPages=pages;window.bookZoom=setZoom;window.bookPage=(i: number)=>flip.turnToPage(i);window.bookTurn=turn;window.bookSoundState=()=>audioContext?.state;window.bookTouchState=()=>({held:!!gesture?.held,zoomed:zoomed()});
 window.initMeanings();
 // A completed swipe must not also open a word-meaning dialog.
