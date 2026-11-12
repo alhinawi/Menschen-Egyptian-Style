@@ -9,7 +9,7 @@
 .nkbCanvas input[type=text].nkbField:focus,.nkbCanvas select.nkbField:focus{background:#fffce9cc!important;outline:2px solid #26764c}
 .nkbCanvas input[type=radio].nkbField,.nkbCanvas input[type=checkbox].nkbField{appearance:none;-webkit-appearance:none;border-radius:50%!important;cursor:pointer;padding:0!important}
 .nkbCanvas input[type=checkbox].nkbField{border-radius:3px!important}
-.nkbCanvas input[type=radio].nkbField:checked,.nkbCanvas input[type=checkbox].nkbField:checked{background:radial-gradient(circle,#26764c 0 34%,transparent 40%)!important}
+.nkbCanvas input[type=radio].nkbField:checked,.nkbCanvas input[type=checkbox].nkbField:checked{background:radial-gradient(circle closest-side,#26764c 0 42%,transparent 48%)!important}
 .nkbCanvas .nkbField:focus-visible{outline:2px solid #26764c}
 .nkbCanvas .nkbField.ok{outline:2px solid #268250}.nkbCanvas .nkbField.bad{outline:2px solid #bd3838}
 .nkbCanvas .nkbListen{position:absolute;background:transparent;border:0;padding:0;margin:0;cursor:pointer;z-index:4;min-width:0;min-height:0}
