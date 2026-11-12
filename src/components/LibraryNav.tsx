@@ -76,6 +76,28 @@ export function LibraryNav({slug}: {slug: string}) {
     };
   }, [store]);
 
+  // While a panel is open: lock the page behind against scroll chaining and
+  // scroll the list so the current lesson/page is in view.
+  useEffect(() => {
+    if (!panel) return;
+    document.body.classList.add('lnv-lock');
+    const box = document.querySelector<HTMLElement>('.lnv-scroll, .lnv-sheetscroll');
+    const cur = box?.querySelector<HTMLElement>('.lnv-row.cur, .lnv-pg.cur');
+    if (box && cur) {
+      const b = box.getBoundingClientRect(), r = cur.getBoundingClientRect();
+      box.scrollTop += r.top - b.top - box.clientHeight / 2 + r.height / 2;
+    }
+    const overlay = document.querySelector<HTMLElement>('.lnv-overlay');
+    const stop = (e: TouchEvent) => {
+      if (!(e.target as Element | null)?.closest?.('.lnv-panelBox, .lnv-sheet')) e.preventDefault();
+    };
+    overlay?.addEventListener('touchmove', stop, {passive: false});
+    return () => {
+      document.body.classList.remove('lnv-lock');
+      overlay?.removeEventListener('touchmove', stop);
+    };
+  }, [panel]);
+
   if (!mod) return null;
 
   const pages = modulePages(slug);
