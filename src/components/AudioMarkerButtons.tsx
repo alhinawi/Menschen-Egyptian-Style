@@ -37,7 +37,7 @@ export function AudioMarkerButtons(){
    const jump=document.querySelector('#pageJump') as HTMLSelectElement|null;
    const currentPage=jump?document.querySelectorAll<HTMLElement>('.page')[Number(jump.value)]:null;
    const tracks:Track[]=[];
-   const topLimit=Math.max(65,(document.querySelector('.readerPageNavigation')?.getBoundingClientRect().bottom||0)+5);
+   const topLimit=Math.max(65,(document.querySelector('header:not(.page header)')?.getBoundingClientRect().bottom||0)+5);
    const bottomLimit=Math.min(innerHeight-82,(document.querySelector('.controls')?.getBoundingClientRect().top||innerHeight)-5);
    for(const el of document.querySelectorAll<HTMLElement>(audioMarkerSelector)){
     if(el.textContent?.includes('Clip')||el.closest('dialog'))continue;
