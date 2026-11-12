@@ -1,0 +1,233 @@
+{
+  "book": "kb-a11",
+  "page": 56,
+  "width": 1075,
+  "height": 1521,
+  "words": [],
+  "art": [
+    {
+      "src": "assets/book-crops/native-p56-singer.png",
+      "x": 42,
+      "y": 811,
+      "w": 1033,
+      "h": 664,
+      "name": "singer"
+    }
+  ],
+  "fields": [
+    {
+      "id": "st1",
+      "group": "task1",
+      "kind": "text",
+      "label": "Strophe: Tina, wann kann ich dich heute sehen? …",
+      "answer": "4",
+      "x": 194,
+      "y": 375,
+      "w": 26,
+      "h": 26
+    },
+    {
+      "id": "st2",
+      "group": "task1",
+      "kind": "text",
+      "label": "Strophe: Tina, ich möchte dich was fragen: …",
+      "answer": "1",
+      "x": 616,
+      "y": 372,
+      "w": 26,
+      "h": 26
+    },
+    {
+      "id": "st3",
+      "group": "task1",
+      "kind": "text",
+      "label": "Strophe (linke Spalte): Wir können essen, können trinken …",
+      "answer": "2",
+      "x": 221,
+      "y": 526,
+      "w": 26,
+      "h": 26
+    },
+    {
+      "id": "st4",
+      "group": "task1",
+      "kind": "text",
+      "label": "Strophe (rechte Spalte): Wir können essen, können trinken …",
+      "answer": "5",
+      "x": 579,
+      "y": 523,
+      "w": 26,
+      "h": 26
+    },
+    {
+      "id": "st5",
+      "group": "task1",
+      "kind": "text",
+      "label": "Strophe: Tina! Hhmm, Tina! …",
+      "answer": "3",
+      "x": 283,
+      "y": 666,
+      "w": 26,
+      "h": 26
+    },
+    {
+      "id": "st6",
+      "group": "task1",
+      "kind": "text",
+      "label": "Strophe: Tina! Oh, Tina! …",
+      "answer": "6",
+      "x": 698,
+      "y": 663,
+      "w": 26,
+      "h": 26
+    }
+  ],
+  "audio": [
+    {
+      "id": "cd2-08a",
+      "src": "assets/kb-cd2-track08.mp3",
+      "label": "2.08 · Hören Sie das Lied und sortieren Sie die Strophen.",
+      "x": 116,
+      "y": 233,
+      "w": 44,
+      "h": 20
+    },
+    {
+      "id": "cd2-08b",
+      "src": "assets/kb-cd2-track08.mp3",
+      "label": "2.08 · Hören Sie noch einmal und singen Sie mit.",
+      "x": 121,
+      "y": 838,
+      "w": 44,
+      "h": 20
+    }
+  ],
+  "groups": [
+    {
+      "id": "task1",
+      "label": "1",
+      "x": 734,
+      "y": 775
+    }
+  ],
+  "titles": [
+    [
+      "1",
+      179,
+      228
+    ],
+    [
+      "2",
+      179,
+      837
+    ]
+  ],
+  "review": {
+    "status": "source-reviewed",
+    "source": "assets/kb-a11-p56.png",
+    "checks": [
+      "original wording and illustration framing",
+      "native closed-task grading and open-answer persistence",
+      "320/390 mobile geometry and translation taps"
+    ],
+    "notes": "Original track 08 stanza order verified against the recording."
+  },
+  "panels": [],
+  "shapes": [],
+  "taskColor": "#ae2408",
+  "textBlocks": [
+    {
+      "text": "AUSKLANG",
+      "x": 173,
+      "y": 137,
+      "w": 700,
+      "size": 32,
+      "bold": false,
+      "serif": true,
+      "color": "#a99d73"
+    },
+    {
+      "text": "Hören Sie das Lied und sortieren Sie die Strophen.",
+      "x": 220,
+      "y": 228,
+      "w": 822,
+      "size": 20,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Heute ist der Tag!",
+      "x": 208,
+      "y": 287,
+      "w": 720,
+      "size": 45,
+      "bold": true,
+      "serif": true,
+      "color": "#2e6798"
+    },
+    {
+      "text": "Tina, wann kann ich dich heute sehen?\nTina, möchtest du spazieren gehen?\nHhmm, du bist wunderschön!\nHast du heute Zeit?\nIch möchte dich so gerne sehen!",
+      "x": 232,
+      "y": 375,
+      "w": 380,
+      "size": 17,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Tina, ich möchte dich was fragen:\nTina, was machst du heute Abend?\nHhmm, der Tag heute ist so schön!\nSag, hast du Zeit?\nIch möchte dich heute Abend sehen.",
+      "x": 654,
+      "y": 372,
+      "w": 410,
+      "size": 17,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Wir können essen, können trinken.\nMöchtest du noch ein Glas Wein?\nWir können tanzen, können singen,\nkönnen einfach glücklich sein.",
+      "x": 258,
+      "y": 526,
+      "w": 390,
+      "size": 17,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Wir können essen, können trinken.\nMöchtest du noch ein Glas Wein?\nWir können tanzen, können singen,\nkönnen einfach glücklich sein.",
+      "x": 616,
+      "y": 523,
+      "w": 440,
+      "size": 17,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Tina! Hhmm, Tina!\nWie gern ich dich mag!\nIch weiß es ganz genau:\nHeute ist der Tag!",
+      "x": 320,
+      "y": 666,
+      "w": 370,
+      "size": 17,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Tina! Oh, Tina!\nWie gern ich dich mag!\nIch weiß es ganz genau:\nHeute ist der Tag!",
+      "x": 735,
+      "y": 663,
+      "w": 330,
+      "size": 17,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Hören Sie noch einmal und singen Sie mit.",
+      "x": 220,
+      "y": 837,
+      "w": 822,
+      "size": 20,
+      "bold": true,
+      "serif": false
+    }
+  ],
+  "hidePageNumber": true
+}
