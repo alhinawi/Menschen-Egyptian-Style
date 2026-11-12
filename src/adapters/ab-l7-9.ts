@@ -24,7 +24,7 @@ function setZoom(n){scale=Math.max(Math.min(1,innerWidth/900),Math.min(2,n));spr
 function turn(direction,corner='top'){if(flip.getState()!=='read')return;if(direction>0&&pageIndex===pages.length-1||direction<0&&pageIndex===0)return;const settings=flip.getSettings();settings.disableFlipByClick=false;paperSound();if(direction>0)flip.flipNext(corner);else flip.flipPrev(corner);settings.disableFlipByClick=true;}$('#next').onclick=()=>turn(1);$('#prev').onclick=()=>turn(-1);$('#pageJump').onchange=e=>{flip.turnToPage(Number(e.target.value));scrollTo(0,0);viewport.scrollLeft=0};
 
 // The page-flip host defaults to pan-y. CSS switches it to pan-x pan-y when zoomed.
-const isControl=t=>t.closest('input,select,textarea,button,a,audio,label:has(input),[contenteditable],canvas');
+const isControl=t=>t.closest('input,select,textarea,button,a,audio,label:has(input),[contenteditable],canvas,.kbRef');
 let gesture=null,pinching=false,mouse=null;
 const zoomed=()=>900*scale>viewport.clientWidth+2;
 // Unlock while the initial touch/tap is still a trusted activation. No audible output.
@@ -50,6 +50,10 @@ viewport.addEventListener('mousedown',e=>{if(e.button||isControl(e.target)||e.ta
 window.addEventListener('mousemove',e=>{if(!mouse)return;if(mouse.pan){viewport.scrollLeft=mouse.left+mouse.x-e.clientX;return}moveGesture(e,e)});
 window.addEventListener('mouseup',e=>{if(!mouse)return;if(!mouse.pan)endGesture(e);mouse=null;});
 for(const b of document.querySelectorAll('.listen'))b.onclick=()=>{const a=$('#audio');a.src='assets/ab-cd1-track'+b.dataset.track+'.mp3';$('.audioDock').hidden=false;a.play().catch(()=>{});};$('#closeAudio').onclick=()=>{$('#audio').pause();$('.audioDock').hidden=true;};
+// Kursbuch margin references ("▶ KB n") open the matching Kursbuch exercise; when that exercise has a recording, it plays right away.
+const kbSeite={7:{1:41,2:41,3:41,4:42,5:42,6:42,7:43,8:43,9:43,10:44},8:{1:45,2:45,3:46,4:46,5:46,6:47,7:47,8:48},9:{1:49,2:49,3:50,4:50,5:51,6:51,7:51}};
+const kbTrack={7:{8:'02'},8:{5:'06'}};
+for(const ref of document.querySelectorAll('.kbRef')){const m=ref.textContent.match(/▶\s*KB\s*(\d+)/);if(!m)continue;const page=+(ref.closest('[data-page]')?.dataset.page||0),lesson=page>=66?9:page>=60?8:7,ex=String(+m[1]);ref.tabIndex=0;ref.setAttribute('role','button');ref.setAttribute('aria-label','Kursbuch Lektion '+lesson+' · Übung '+m[1]);ref.style.cursor='pointer';const open=()=>{const track=kbTrack[lesson]?.[ex];if(track){const a=$('#audio');a.src='assets/kb-cd2-track'+track+'.mp3';$('.audioDock').hidden=false;a.play().catch(()=>{})}else{const seite=kbSeite[lesson]?.[ex];if(seite)location.href='l7-9.html#'+seite}};ref.onclick=open;ref.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}};}
 window.menschenBook=flip;window.menschenPages=pages;window.bookZoom=setZoom;window.bookPage=i=>flip.turnToPage(i);window.bookTurn=turn;window.bookSoundState=()=>audioContext?.state;
 window.initMeanings();
 // A completed swipe must not also open a word-meaning dialog.
