@@ -183,6 +183,12 @@ def apply_overrides(r,p):
             if rng[0]<=b['cy']<=rng[1] and rng[2]<=b['x']<=rng[3]:b['sa']=1;b['b']=0 if len(rng)>4 and rng[4]==0 else b['b']
     for m in o.get('drop',[]):
         r['blocks']=[b for b in r['blocks'] if not hit(b,m)]
+    for m in o.get('split',[]):
+        for b in list(r['blocks']):
+            if hit(b,m):
+                k=m['at'];end=b['x']+b['w'];nb=json.loads(json.dumps(b))
+                b['ws']=b['ws'][:k];b['w']=m['w1'];nb['ws']=nb['ws'][k:];nb['x']=m['x2'];nb['w']=end-m['x2']
+                r['blocks'].append(nb);break
     for m in o.get('adj',[]):
         for b in r['blocks']:
             if hit(b,m):
