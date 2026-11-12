@@ -1525,13 +1525,174 @@
    "h": 12
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p43-5b",
+   "group": "g1",
+   "kind": "text",
+   "label": "5 b",
+   "answer": "Gehen Sie doch ins Ausland.",
+   "x": 160,
+   "y": 285,
+   "w": 786,
+   "h": 17
+  },
+  {
+   "id": "p43-5c",
+   "group": "g1",
+   "kind": "text",
+   "label": "5 c",
+   "answer": "Lernen Sie doch ein Instrument.",
+   "x": 160,
+   "y": 335,
+   "w": 786,
+   "h": 17
+  },
+  {
+   "id": "p43-5d",
+   "group": "g1",
+   "kind": "text",
+   "label": "5 d",
+   "answer": "Machen Sie doch den Motorradführerschein.",
+   "x": 160,
+   "y": 389,
+   "w": 786,
+   "h": 17
+  },
+  {
+   "id": "p43-5e",
+   "group": "g1",
+   "kind": "text",
+   "label": "5 e",
+   "answer": "Lernen Sie doch noch eine Fremdsprache.",
+   "x": 160,
+   "y": 445,
+   "w": 786,
+   "h": 17
+  },
+  {
+   "id": "p43-7b",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 b",
+   "answer": "Sollst",
+   "x": 408,
+   "y": 767,
+   "w": 102,
+   "h": 22
+  },
+  {
+   "id": "p43-7c",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 c",
+   "answer": "sollen",
+   "x": 418,
+   "y": 794,
+   "w": 102,
+   "h": 22
+  },
+  {
+   "id": "p43-7d",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 d",
+   "answer": "sollt",
+   "x": 244,
+   "y": 818,
+   "w": 96,
+   "h": 22
+  },
+  {
+   "id": "p43-7e",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 e",
+   "answer": "soll",
+   "x": 295,
+   "y": 850,
+   "w": 103,
+   "h": 22
+  },
+  {
+   "id": "p43-7f",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 f",
+   "answer": "sollen",
+   "x": 322,
+   "y": 875,
+   "w": 103,
+   "h": 22
+  },
+  {
+   "id": "p43-9arm",
+   "group": "g3",
+   "kind": "text",
+   "label": "9 arm",
+   "answer": "Arm",
+   "x": 150,
+   "y": 1172,
+   "w": 260,
+   "h": 22
+  },
+  {
+   "id": "p43-9finger",
+   "group": "g3",
+   "kind": "text",
+   "label": "9 finger",
+   "answer": "Finger",
+   "x": 150,
+   "y": 1197,
+   "w": 260,
+   "h": 22
+  },
+  {
+   "id": "p43-9knie",
+   "group": "g3",
+   "kind": "text",
+   "label": "9 knie",
+   "answer": "Knie",
+   "x": 150,
+   "y": 1285,
+   "w": 260,
+   "h": 22
+  },
+  {
+   "id": "p43-9hand",
+   "group": "g3",
+   "kind": "text",
+   "label": "9 hand",
+   "answer": "Hand",
+   "x": 150,
+   "y": 1315,
+   "w": 260,
+   "h": 22
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 5"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 7"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 9"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the official Hueber Loesungsschluessel AB A1.2 (Lektion 18).",
+   "Ex 6 (own problems) and Ex 8 (word search, own drawing and Singular/Plural list) are individual work and not mapped. Ex 9: only the Deutsch blanks keyed as Arm, Finger, Knie, Hand are fields; the 'Meine Sprache' column is individual.",
+   "Handwritten examples (5a, 7a, 6, 8) are not fields. Boxes placed from word coordinates; not marked verified."
+  ],
   "verifiedWords": 217,
-  "totalWords": 217,
-  "notes": []
+  "totalWords": 217
  }
 }
