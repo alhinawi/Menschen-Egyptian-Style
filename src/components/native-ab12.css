@@ -2,7 +2,7 @@
 .naCanvas{position:absolute;left:0;top:50%;transform:translateY(-50%);width:100%;background:#fff;color:#222;font-family:Arial,sans-serif;overflow:hidden}
 .naRect,.naArt,.naLine,.naWord,.naField,.naListen,.naCheck{position:absolute;box-sizing:border-box}
 .naArt{display:block;object-fit:fill;margin:0;padding:0;border:0;pointer-events:none}
-.naWord{line-height:1.15;white-space:pre;margin:0;padding:0}
+.naText{position:absolute;line-height:1.25;white-space:nowrap;margin:0;padding:0}
 .naWord.tapWord{cursor:pointer}
 .naField{padding:0 2px!important;margin:0!important;min-width:0!important;min-height:0!important;max-width:none!important;border:0!important;border-radius:0!important;background:#ffffff2e!important;border-bottom:1px solid #9aa39a!important;color:#173c62!important;line-height:1.1!important;box-shadow:none!important;accent-color:#26764c}
 .naField:focus{background:#fffce9!important;outline:2px solid #26764c!important}
