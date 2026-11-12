@@ -1556,7 +1556,9 @@
       "x": 434,
       "y": 780,
       "w": 22,
-      "h": 22
+      "h": 22,
+      "name": "t1-a",
+      "value": "t1-a-oesterreich"
     },
     {
       "id": "t1-a-deutschland",
@@ -1567,7 +1569,9 @@
       "x": 560,
       "y": 780,
       "w": 22,
-      "h": 22
+      "h": 22,
+      "name": "t1-a",
+      "value": "t1-a-deutschland"
     },
     {
       "id": "t1-b-resten",
@@ -1578,7 +1582,9 @@
       "x": 512,
       "y": 816,
       "w": 22,
-      "h": 22
+      "h": 22,
+      "name": "t1-b",
+      "value": "t1-b-resten"
     },
     {
       "id": "t1-b-frisch",
@@ -1589,7 +1595,9 @@
       "x": 657,
       "y": 815,
       "w": 22,
-      "h": 22
+      "h": 22,
+      "name": "t1-b",
+      "value": "t1-b-frisch"
     },
     {
       "id": "t1-c-keine",
@@ -1600,7 +1608,9 @@
       "x": 493,
       "y": 851,
       "w": 22,
-      "h": 22
+      "h": 22,
+      "name": "t1-c",
+      "value": "t1-c-keine"
     },
     {
       "id": "t1-c-viele",
@@ -1611,7 +1621,9 @@
       "x": 688,
       "y": 851,
       "w": 22,
-      "h": 22
+      "h": 22,
+      "name": "t1-c",
+      "value": "t1-c-viele"
     }
   ],
   "audio": [],
@@ -1629,7 +1641,8 @@
       "All printed words reviewed against the scan at 2x-7x: recipe text, ingredient list, task-1 statements, task-2 instructions and questions, Rezepte-aus-D-A-CH photo title and the printed oval example. PROJEKT-LANDESKUNDE banner, red task numerals, list numbers, ingredient quantities (500/350/3), food icons, photos and footer excluded per policy.",
       "Task 1 a and c answers verified against the official Hueber answer key (a Deutschland, c viele Kartoffeln) and the recipe text.",
       "Task 1 b: the official key says \"b aus Resten\" but the recipe text states the opposite (\"Doch heute macht man Labskaus nicht mehr aus Resten. Man verwendet frische Zutaten.\"). Fields follow the BOOK TEXT (aus frischen Zutaten = true) per owner decision; key conflict likely a misprint in the key.",
-      "Task 2 is free production (choose/research/present a dish); no checkable fields. No audio markers on the page."
+      "Task 2 is free production (choose/research/present a dish); no checkable fields. No audio markers on the page.",
+      "Activation interaction gate added explicit radio names and option values. Each printed question now permits exactly one answer and selection/grading works; previous missing values made the radios unselectable."
     ]
   }
 }
