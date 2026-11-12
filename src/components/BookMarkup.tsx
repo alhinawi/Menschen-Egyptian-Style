@@ -1,5 +1,6 @@
 import {NativePilot} from './NativePilot';
 import {NativeKB12} from '../native-kb12/NativeKB12';
+import {NativeAB11Next} from '../native-ab11/NativeAB11Next';
 import {NativeAB11} from '../native-ab11/NativeAB11';
 import {HybridScan} from './HybridScan';
 import {scanData} from '../scan-data/registry';
@@ -37,6 +38,7 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   const props: Props = {key};
   if(tag === 'NativePilot')return createElement(NativePilot,{key,page:attrs.page});
   if(tag === 'NativeKB12')return createElement(NativeKB12,{key,page:attrs.page});
+  if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['12','13','14','15','16','17','18','19'].includes(String(attrs.page)))return createElement(NativeAB11Next,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['6','7','8','9','10','11'].includes(String(attrs.page)))return createElement(NativeAB11,{key,page:String(attrs.page)});
   if(tag === 'HybridScan'){const data=scanData[attrs.book+':'+attrs.page];return data ? createElement(HybridScan,{key,data}) : null;}
   if (tag === 'ReactTaskMode') return createElement(TaskMode, {key, kind: attrs.kind});
