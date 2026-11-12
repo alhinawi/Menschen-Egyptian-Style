@@ -1,0 +1,1582 @@
+{
+  "book": "kb-a11",
+  "page": 27,
+  "image": "assets/kb-a11-p27.png",
+  "width": 848,
+  "height": 1200,
+  "words": [
+    {
+      "text": "Schrank",
+      "x": 518,
+      "y": 135,
+      "w": 39,
+      "h": 13
+    },
+    {
+      "text": "#125",
+      "x": 94,
+      "y": 199,
+      "w": 25,
+      "h": 8
+    },
+    {
+      "text": "Ergänzen",
+      "x": 166,
+      "y": 194,
+      "w": 68,
+      "h": 17
+    },
+    {
+      "text": "Sie",
+      "x": 239,
+      "y": 194,
+      "w": 22,
+      "h": 13
+    },
+    {
+      "text": "die",
+      "x": 267,
+      "y": 193,
+      "w": 22,
+      "h": 13
+    },
+    {
+      "text": "Zahlenschlange.",
+      "x": 295,
+      "y": 193,
+      "w": 122,
+      "h": 18
+    },
+    {
+      "text": "Hören",
+      "x": 424,
+      "y": 194,
+      "w": 44,
+      "h": 12
+    },
+    {
+      "text": "Sie",
+      "x": 474,
+      "y": 193,
+      "w": 22,
+      "h": 13
+    },
+    {
+      "text": "dann",
+      "x": 502,
+      "y": 193,
+      "w": 36,
+      "h": 13
+    },
+    {
+      "text": "und",
+      "x": 545,
+      "y": 193,
+      "w": 28,
+      "h": 13
+    },
+    {
+      "text": "vergleichen",
+      "x": 579,
+      "y": 193,
+      "w": 87,
+      "h": 18
+    },
+    {
+      "text": "Sie.",
+      "x": 671,
+      "y": 193,
+      "w": 27,
+      "h": 13
+    },
+    {
+      "text": "100",
+      "x": 159,
+      "y": 211,
+      "w": 30,
+      "h": 31
+    },
+    {
+      "text": "200",
+      "x": 258,
+      "y": 211,
+      "w": 31,
+      "h": 31
+    },
+    {
+      "text": "300",
+      "x": 443,
+      "y": 210,
+      "w": 22,
+      "h": 31
+    },
+    {
+      "text": "351",
+      "x": 617,
+      "y": 221,
+      "w": 19,
+      "h": 10
+    },
+    {
+      "text": "(einhundert",
+      "x": 165,
+      "y": 237,
+      "w": 65,
+      "h": 10
+    },
+    {
+      "text": "dreihunderteinundfünfzig",
+      "x": 617,
+      "y": 236,
+      "w": 134,
+      "h": 12
+    },
+    {
+      "text": "651",
+      "x": 418,
+      "y": 262,
+      "w": 20,
+      "h": 11
+    },
+    {
+      "text": "1000",
+      "x": 575,
+      "y": 253,
+      "w": 37,
+      "h": 29
+    },
+    {
+      "text": "10",
+      "x": 703,
+      "y": 262,
+      "w": 12,
+      "h": 10
+    },
+    {
+      "text": "000",
+      "x": 720,
+      "y": 261,
+      "w": 23,
+      "h": 11
+    },
+    {
+      "text": "(ein)tausend",
+      "x": 579,
+      "y": 273,
+      "w": 66,
+      "h": 22
+    },
+    {
+      "text": "zehntausend",
+      "x": 703,
+      "y": 277,
+      "w": 62,
+      "h": 9
+    },
+    {
+      "text": "100",
+      "x": 419,
+      "y": 308,
+      "w": 20,
+      "h": 11
+    },
+    {
+      "text": "000",
+      "x": 444,
+      "y": 308,
+      "w": 22,
+      "h": 11
+    },
+    {
+      "text": "897",
+      "x": 583,
+      "y": 308,
+      "w": 21,
+      "h": 10
+    },
+    {
+      "text": "000",
+      "x": 609,
+      "y": 308,
+      "w": 22,
+      "h": 10
+    },
+    {
+      "text": "achthundertsiebenundneunzigtausend",
+      "x": 583,
+      "y": 323,
+      "w": 195,
+      "h": 12
+    },
+    {
+      "text": "Wie",
+      "x": 165,
+      "y": 344,
+      "w": 28,
+      "h": 12
+    },
+    {
+      "text": "viel",
+      "x": 198,
+      "y": 343,
+      "w": 26,
+      "h": 13
+    },
+    {
+      "text": "kostet",
+      "x": 232,
+      "y": 343,
+      "w": 47,
+      "h": 13
+    },
+    {
+      "text": "das?",
+      "x": 284,
+      "y": 343,
+      "w": 30,
+      "h": 13
+    },
+    {
+      "text": "Hören",
+      "x": 166,
+      "y": 375,
+      "w": 39,
+      "h": 11
+    },
+    {
+      "text": "Sie",
+      "x": 210,
+      "y": 375,
+      "w": 19,
+      "h": 11
+    },
+    {
+      "text": "und",
+      "x": 235,
+      "y": 374,
+      "w": 24,
+      "h": 12
+    },
+    {
+      "text": "notieren",
+      "x": 266,
+      "y": 374,
+      "w": 55,
+      "h": 12
+    },
+    {
+      "text": "Sie",
+      "x": 327,
+      "y": 374,
+      "w": 19,
+      "h": 12
+    },
+    {
+      "text": "die",
+      "x": 351,
+      "y": 374,
+      "w": 19,
+      "h": 12
+    },
+    {
+      "text": "Preise.",
+      "x": 377,
+      "y": 374,
+      "w": 42,
+      "h": 12
+    },
+    {
+      "text": "eine",
+      "x": 703,
+      "y": 372,
+      "w": 20,
+      "h": 6
+    },
+    {
+      "text": "Million",
+      "x": 728,
+      "y": 369,
+      "w": 35,
+      "h": 8
+    },
+    {
+      "text": "b_",
+      "x": 141,
+      "y": 534,
+      "w": 8,
+      "h": 12
+    },
+    {
+      "text": "Gespräche",
+      "x": 166,
+      "y": 534,
+      "w": 67,
+      "h": 16
+    },
+    {
+      "text": "üben:",
+      "x": 239,
+      "y": 533,
+      "w": 36,
+      "h": 13
+    },
+    {
+      "text": "Nach",
+      "x": 282,
+      "y": 534,
+      "w": 32,
+      "h": 12
+    },
+    {
+      "text": "Preisen",
+      "x": 320,
+      "y": 534,
+      "w": 47,
+      "h": 12
+    },
+    {
+      "text": "fragen",
+      "x": 373,
+      "y": 533,
+      "w": 42,
+      "h": 18
+    },
+    {
+      "text": "und",
+      "x": 421,
+      "y": 533,
+      "w": 24,
+      "h": 13
+    },
+    {
+      "text": "Preise",
+      "x": 452,
+      "y": 534,
+      "w": 38,
+      "h": 11
+    },
+    {
+      "text": "nennen.",
+      "x": 496,
+      "y": 538,
+      "w": 53,
+      "h": 7
+    },
+    {
+      "text": "Arbeiten",
+      "x": 166,
+      "y": 554,
+      "w": 56,
+      "h": 12
+    },
+    {
+      "text": "Sie",
+      "x": 228,
+      "y": 554,
+      "w": 19,
+      "h": 12
+    },
+    {
+      "text": "zu",
+      "x": 252,
+      "y": 558,
+      "w": 14,
+      "h": 8
+    },
+    {
+      "text": "zweit",
+      "x": 273,
+      "y": 554,
+      "w": 36,
+      "h": 12
+    },
+    {
+      "text": "auf",
+      "x": 314,
+      "y": 553,
+      "w": 22,
+      "h": 13
+    },
+    {
+      "text": "Seite",
+      "x": 340,
+      "y": 554,
+      "w": 33,
+      "h": 12
+    },
+    {
+      "text": "79.",
+      "x": 378,
+      "y": 555,
+      "w": 18,
+      "h": 11
+    },
+    {
+      "text": "Was",
+      "x": 166,
+      "y": 604,
+      "w": 29,
+      "h": 12
+    },
+    {
+      "text": "kostet",
+      "x": 202,
+      "y": 603,
+      "w": 47,
+      "h": 13
+    },
+    {
+      "text": "die",
+      "x": 254,
+      "y": 603,
+      "w": 23,
+      "h": 13
+    },
+    {
+      "text": "Lampe?",
+      "x": 284,
+      "y": 604,
+      "w": 55,
+      "h": 16
+    },
+    {
+      "text": "a",
+      "x": 142,
+      "y": 638,
+      "w": 6,
+      "h": 8
+    },
+    {
+      "text": "Was",
+      "x": 166,
+      "y": 634,
+      "w": 26,
+      "h": 12
+    },
+    {
+      "text": "sagt",
+      "x": 198,
+      "y": 637,
+      "w": 27,
+      "h": 13
+    },
+    {
+      "text": "der",
+      "x": 231,
+      "y": 626,
+      "w": 19,
+      "h": 29
+    },
+    {
+      "text": "Verkäufer",
+      "x": 255,
+      "y": 633,
+      "w": 65,
+      "h": 12
+    },
+    {
+      "text": "aus",
+      "x": 325,
+      "y": 637,
+      "w": 21,
+      "h": 8
+    },
+    {
+      "text": "3b?",
+      "x": 352,
+      "y": 633,
+      "w": 23,
+      "h": 12
+    },
+    {
+      "text": "Kreuzen",
+      "x": 381,
+      "y": 634,
+      "w": 53,
+      "h": 11
+    },
+    {
+      "text": "Sie",
+      "x": 439,
+      "y": 634,
+      "w": 19,
+      "h": 11
+    },
+    {
+      "text": "an.",
+      "x": 464,
+      "y": 637,
+      "w": 19,
+      "h": 8
+    },
+    {
+      "text": "Ergänzen",
+      "x": 490,
+      "y": 634,
+      "w": 60,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 555,
+      "y": 634,
+      "w": 19,
+      "h": 11
+    },
+    {
+      "text": "dann",
+      "x": 580,
+      "y": 633,
+      "w": 32,
+      "h": 12
+    },
+    {
+      "text": "die",
+      "x": 618,
+      "y": 633,
+      "w": 19,
+      "h": 12
+    },
+    {
+      "text": "Tabelle.",
+      "x": 641,
+      "y": 633,
+      "w": 51,
+      "h": 12
+    },
+    {
+      "text": "Tisch",
+      "x": 647,
+      "y": 662,
+      "w": 42,
+      "h": 11
+    },
+    {
+      "text": "er",
+      "x": 728,
+      "y": 666,
+      "w": 12,
+      "h": 7
+    },
+    {
+      "text": "Die",
+      "x": 167,
+      "y": 685,
+      "w": 20,
+      "h": 11
+    },
+    {
+      "text": "Lampe",
+      "x": 193,
+      "y": 685,
+      "w": 43,
+      "h": 15
+    },
+    {
+      "text": "kostet",
+      "x": 241,
+      "y": 684,
+      "w": 40,
+      "h": 12
+    },
+    {
+      "text": "119",
+      "x": 286,
+      "y": 685,
+      "w": 18,
+      "h": 11
+    },
+    {
+      "text": "Euro.",
+      "x": 310,
+      "y": 685,
+      "w": 34,
+      "h": 11
+    },
+    {
+      "text": "Es",
+      "x": 388,
+      "y": 683,
+      "w": 28,
+      "h": 13
+    },
+    {
+      "text": "kommt",
+      "x": 436,
+      "y": 684,
+      "w": 47,
+      "h": 11
+    },
+    {
+      "text": "aus",
+      "x": 489,
+      "y": 688,
+      "w": 21,
+      "h": 7
+    },
+    {
+      "text": "Italien.",
+      "x": 516,
+      "y": 683,
+      "w": 48,
+      "h": 12
+    },
+    {
+      "text": "Bett",
+      "x": 647,
+      "y": 684,
+      "w": 35,
+      "h": 9
+    },
+    {
+      "text": "Sie",
+      "x": 393,
+      "y": 697,
+      "w": 28,
+      "h": 27
+    },
+    {
+      "text": "Lampe",
+      "x": 647,
+      "y": 704,
+      "w": 50,
+      "h": 13
+    },
+    {
+      "text": "b_",
+      "x": 142,
+      "y": 743,
+      "w": 8,
+      "h": 13
+    },
+    {
+      "text": "Puzzle:",
+      "x": 167,
+      "y": 744,
+      "w": 45,
+      "h": 11
+    },
+    {
+      "text": "Was",
+      "x": 218,
+      "y": 744,
+      "w": 26,
+      "h": 11
+    },
+    {
+      "text": "kostet",
+      "x": 250,
+      "y": 743,
+      "w": 41,
+      "h": 12
+    },
+    {
+      "text": "der",
+      "x": 296,
+      "y": 743,
+      "w": 21,
+      "h": 12
+    },
+    {
+      "text": "Schrank?",
+      "x": 322,
+      "y": 743,
+      "w": 59,
+      "h": 12
+    },
+    {
+      "text": "Arbeiten",
+      "x": 385,
+      "y": 743,
+      "w": 57,
+      "h": 12
+    },
+    {
+      "text": "Sie",
+      "x": 448,
+      "y": 744,
+      "w": 19,
+      "h": 11
+    },
+    {
+      "text": "zu",
+      "x": 472,
+      "y": 747,
+      "w": 15,
+      "h": 8
+    },
+    {
+      "text": "zweit",
+      "x": 492,
+      "y": 744,
+      "w": 37,
+      "h": 11
+    },
+    {
+      "text": "auf",
+      "x": 534,
+      "y": 737,
+      "w": 20,
+      "h": 28
+    },
+    {
+      "text": "Seite",
+      "x": 555,
+      "y": 737,
+      "w": 38,
+      "h": 28
+    },
+    {
+      "text": "79.",
+      "x": 598,
+      "y": 744,
+      "w": 18,
+      "h": 11
+    },
+    {
+      "text": "Fridolins",
+      "x": 167,
+      "y": 792,
+      "w": 66,
+      "h": 14
+    },
+    {
+      "text": "Möbel",
+      "x": 239,
+      "y": 792,
+      "w": 45,
+      "h": 14
+    },
+    {
+      "text": "Sehen",
+      "x": 167,
+      "y": 823,
+      "w": 39,
+      "h": 12
+    },
+    {
+      "text": "Sie",
+      "x": 211,
+      "y": 824,
+      "w": 19,
+      "h": 12
+    },
+    {
+      "text": "die",
+      "x": 235,
+      "y": 823,
+      "w": 20,
+      "h": 12
+    },
+    {
+      "text": "Bilder",
+      "x": 262,
+      "y": 823,
+      "w": 37,
+      "h": 12
+    },
+    {
+      "text": "an.",
+      "x": 304,
+      "y": 827,
+      "w": 20,
+      "h": 8
+    },
+    {
+      "text": "Was",
+      "x": 329,
+      "y": 824,
+      "w": 27,
+      "h": 11
+    },
+    {
+      "text": "ist",
+      "x": 362,
+      "y": 824,
+      "w": 15,
+      "h": 11
+    },
+    {
+      "text": "das",
+      "x": 383,
+      "y": 823,
+      "w": 21,
+      "h": 12
+    },
+    {
+      "text": "Problem?",
+      "x": 410,
+      "y": 823,
+      "w": 60,
+      "h": 12
+    },
+    {
+      "text": "Kreuzen",
+      "x": 477,
+      "y": 824,
+      "w": 52,
+      "h": 11
+    },
+    {
+      "text": "Sie",
+      "x": 535,
+      "y": 824,
+      "w": 19,
+      "h": 11
+    },
+    {
+      "text": "an.",
+      "x": 559,
+      "y": 827,
+      "w": 20,
+      "h": 8
+    },
+    {
+      "text": "b_",
+      "x": 143,
+      "y": 1023,
+      "w": 7,
+      "h": 12
+    },
+    {
+      "text": "Wie",
+      "x": 167,
+      "y": 1024,
+      "w": 25,
+      "h": 11
+    },
+    {
+      "text": "finden",
+      "x": 197,
+      "y": 1023,
+      "w": 41,
+      "h": 12
+    },
+    {
+      "text": "Sie",
+      "x": 244,
+      "y": 1024,
+      "w": 19,
+      "h": 11
+    },
+    {
+      "text": "die",
+      "x": 268,
+      "y": 1023,
+      "w": 20,
+      "h": 12
+    },
+    {
+      "text": "Aufgabe?",
+      "x": 292,
+      "y": 1023,
+      "w": 62,
+      "h": 17
+    },
+    {
+      "text": "zu",
+      "x": 405,
+      "y": 1023,
+      "w": 58,
+      "h": 12
+    },
+    {
+      "text": "okay",
+      "x": 511,
+      "y": 1023,
+      "w": 30,
+      "h": 16
+    },
+    {
+      "text": "zu",
+      "x": 590,
+      "y": 1027,
+      "w": 15,
+      "h": 8
+    },
+    {
+      "text": "schwer",
+      "x": 610,
+      "y": 1023,
+      "w": 47,
+      "h": 12
+    },
+    {
+      "text": "Gespräche",
+      "x": 167,
+      "y": 1072,
+      "w": 76,
+      "h": 18
+    },
+    {
+      "text": "üben:",
+      "x": 249,
+      "y": 1072,
+      "w": 41,
+      "h": 13
+    },
+    {
+      "text": "etwas",
+      "x": 297,
+      "y": 1075,
+      "w": 44,
+      "h": 10
+    },
+    {
+      "text": "bewerten.",
+      "x": 347,
+      "y": 1072,
+      "w": 75,
+      "h": 13
+    },
+    {
+      "text": "Arbeiten",
+      "x": 427,
+      "y": 1072,
+      "w": 66,
+      "h": 13
+    },
+    {
+      "text": "Sie",
+      "x": 498,
+      "y": 1072,
+      "w": 22,
+      "h": 13
+    },
+    {
+      "text": "zu",
+      "x": 526,
+      "y": 1077,
+      "w": 16,
+      "h": 8
+    },
+    {
+      "text": "zweit",
+      "x": 548,
+      "y": 1072,
+      "w": 42,
+      "h": 13
+    },
+    {
+      "text": "auf",
+      "x": 596,
+      "y": 1064,
+      "w": 24,
+      "h": 30
+    },
+    {
+      "text": "Seite",
+      "x": 622,
+      "y": 1064,
+      "w": 40,
+      "h": 30
+    },
+    {
+      "text": "80.",
+      "x": 668,
+      "y": 1072,
+      "w": 23,
+      "h": 12
+    },
+    {
+      "text": "siebenundzwanzig",
+      "x": 661,
+      "y": 1133,
+      "w": 112,
+      "h": 15
+    },
+    {
+      "text": "leicht",
+      "x": 425,
+      "y": 1023,
+      "w": 38,
+      "h": 12
+    },
+    {
+      "text": "Sofa",
+      "x": 155,
+      "y": 131,
+      "w": 28,
+      "h": 12
+    },
+    {
+      "text": "Couch",
+      "x": 188,
+      "y": 131,
+      "w": 40,
+      "h": 12
+    },
+    {
+      "text": "Tisch",
+      "x": 356,
+      "y": 131,
+      "w": 36,
+      "h": 12
+    },
+    {
+      "text": "Teppich",
+      "x": 671,
+      "y": 131,
+      "w": 42,
+      "h": 12
+    },
+    {
+      "text": "898",
+      "x": 502,
+      "y": 378,
+      "w": 24,
+      "h": 11
+    },
+    {
+      "text": "000",
+      "x": 532,
+      "y": 378,
+      "w": 24,
+      "h": 11
+    },
+    {
+      "text": "1",
+      "x": 700,
+      "y": 355,
+      "w": 10,
+      "h": 11
+    },
+    {
+      "text": "000",
+      "x": 715,
+      "y": 355,
+      "w": 26,
+      "h": 11
+    },
+    {
+      "text": "000",
+      "x": 746,
+      "y": 355,
+      "w": 26,
+      "h": 11
+    },
+    {
+      "text": "Preis",
+      "x": 575,
+      "y": 518,
+      "w": 35,
+      "h": 12
+    },
+    {
+      "text": "100",
+      "x": 573,
+      "y": 535,
+      "w": 24,
+      "h": 11
+    },
+    {
+      "text": "Cent",
+      "x": 602,
+      "y": 535,
+      "w": 32,
+      "h": 11
+    },
+    {
+      "text": "=",
+      "x": 640,
+      "y": 535,
+      "w": 10,
+      "h": 8
+    },
+    {
+      "text": "1",
+      "x": 658,
+      "y": 535,
+      "w": 9,
+      "h": 11
+    },
+    {
+      "text": "Euro",
+      "x": 672,
+      "y": 535,
+      "w": 30,
+      "h": 11
+    },
+    {
+      "text": "9,99",
+      "x": 573,
+      "y": 552,
+      "w": 26,
+      "h": 11
+    },
+    {
+      "text": "€",
+      "x": 604,
+      "y": 552,
+      "w": 11,
+      "h": 11
+    },
+    {
+      "text": "=",
+      "x": 622,
+      "y": 552,
+      "w": 10,
+      "h": 8
+    },
+    {
+      "text": "„9",
+      "x": 640,
+      "y": 552,
+      "w": 16,
+      "h": 11
+    },
+    {
+      "text": "Euro",
+      "x": 662,
+      "y": 552,
+      "w": 30,
+      "h": 11
+    },
+    {
+      "text": "99.“",
+      "x": 697,
+      "y": 552,
+      "w": 22,
+      "h": 11
+    },
+    {
+      "text": "0,50",
+      "x": 573,
+      "y": 568,
+      "w": 26,
+      "h": 11
+    },
+    {
+      "text": "€",
+      "x": 604,
+      "y": 568,
+      "w": 11,
+      "h": 11
+    },
+    {
+      "text": "=",
+      "x": 622,
+      "y": 568,
+      "w": 10,
+      "h": 8
+    },
+    {
+      "text": "„50",
+      "x": 640,
+      "y": 568,
+      "w": 22,
+      "h": 11
+    },
+    {
+      "text": "Cent.“",
+      "x": 668,
+      "y": 568,
+      "w": 34,
+      "h": 11
+    },
+    {
+      "text": "Er",
+      "x": 405,
+      "y": 662,
+      "w": 18,
+      "h": 13
+    },
+    {
+      "text": "es",
+      "x": 728,
+      "y": 685,
+      "w": 18,
+      "h": 11
+    },
+    {
+      "text": "Fridolin",
+      "x": 168,
+      "y": 950,
+      "w": 95,
+      "h": 20
+    },
+    {
+      "text": "Das",
+      "x": 330,
+      "y": 868,
+      "w": 30,
+      "h": 13
+    },
+    {
+      "text": "Bett",
+      "x": 365,
+      "y": 866,
+      "w": 28,
+      "h": 13
+    },
+    {
+      "text": "ist...",
+      "x": 397,
+      "y": 865,
+      "w": 30,
+      "h": 13
+    },
+    {
+      "text": "zu",
+      "x": 300,
+      "y": 948,
+      "w": 18,
+      "h": 12
+    },
+    {
+      "text": "lang",
+      "x": 322,
+      "y": 946,
+      "w": 32,
+      "h": 12
+    },
+    {
+      "text": "zu",
+      "x": 365,
+      "y": 950,
+      "w": 18,
+      "h": 12
+    },
+    {
+      "text": "kurz",
+      "x": 387,
+      "y": 948,
+      "w": 34,
+      "h": 12
+    },
+    {
+      "text": "Der",
+      "x": 505,
+      "y": 868,
+      "w": 26,
+      "h": 13
+    },
+    {
+      "text": "Stuhl",
+      "x": 535,
+      "y": 868,
+      "w": 36,
+      "h": 13
+    },
+    {
+      "text": "ist...",
+      "x": 575,
+      "y": 868,
+      "w": 28,
+      "h": 13
+    },
+    {
+      "text": "zu",
+      "x": 503,
+      "y": 952,
+      "w": 18,
+      "h": 12
+    },
+    {
+      "text": "klein",
+      "x": 525,
+      "y": 950,
+      "w": 34,
+      "h": 12
+    },
+    {
+      "text": "zu",
+      "x": 570,
+      "y": 950,
+      "w": 18,
+      "h": 12
+    },
+    {
+      "text": "groß",
+      "x": 592,
+      "y": 948,
+      "w": 36,
+      "h": 12
+    },
+    {
+      "text": "Die",
+      "x": 672,
+      "y": 862,
+      "w": 24,
+      "h": 13
+    },
+    {
+      "text": "Lampe",
+      "x": 700,
+      "y": 860,
+      "w": 45,
+      "h": 13
+    },
+    {
+      "text": "ist...",
+      "x": 748,
+      "y": 858,
+      "w": 30,
+      "h": 13
+    },
+    {
+      "text": "zu",
+      "x": 660,
+      "y": 952,
+      "w": 18,
+      "h": 12
+    },
+    {
+      "text": "billig",
+      "x": 682,
+      "y": 950,
+      "w": 36,
+      "h": 12
+    },
+    {
+      "text": "zu",
+      "x": 725,
+      "y": 952,
+      "w": 18,
+      "h": 12
+    },
+    {
+      "text": "teuer",
+      "x": 747,
+      "y": 950,
+      "w": 38,
+      "h": 12
+    }
+  ],
+  "fields": [
+    {
+      "id": "z200",
+      "group": "task5",
+      "kind": "text",
+      "label": "200",
+      "answer": "zweihundert",
+      "x": 243,
+      "y": 236,
+      "w": 62,
+      "h": 20
+    },
+    {
+      "id": "z300",
+      "group": "task5",
+      "kind": "text",
+      "label": "300",
+      "answer": "dreihundert",
+      "x": 428,
+      "y": 236,
+      "w": 72,
+      "h": 20
+    },
+    {
+      "id": "z651",
+      "group": "task5",
+      "kind": "text",
+      "label": "651",
+      "answer": "sechshunderteinundfünfzig",
+      "x": 403,
+      "y": 288,
+      "w": 72,
+      "h": 20
+    },
+    {
+      "id": "z100000",
+      "group": "task5",
+      "kind": "text",
+      "label": "100 000",
+      "answer": "hunderttausend|einhunderttausend",
+      "x": 403,
+      "y": 333,
+      "w": 88,
+      "h": 20
+    },
+    {
+      "id": "z898000",
+      "group": "task5",
+      "kind": "text",
+      "label": "898 000",
+      "answer": "achthundertachtundneunzigtausend",
+      "x": 488,
+      "y": 403,
+      "w": 90,
+      "h": 20
+    },
+    {
+      "id": "pron-er",
+      "group": "task7a",
+      "kind": "radio",
+      "name": "lampe-pron",
+      "value": "er",
+      "answer": "false",
+      "label": "Die Lampe ... - Er",
+      "x": 383,
+      "y": 658,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "pron-es",
+      "group": "task7a",
+      "kind": "radio",
+      "name": "lampe-pron",
+      "value": "es",
+      "answer": "false",
+      "label": "Die Lampe ... - Es",
+      "x": 383,
+      "y": 680,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "pron-sie",
+      "group": "task7a",
+      "kind": "radio",
+      "name": "lampe-pron",
+      "value": "sie",
+      "answer": "true",
+      "label": "Die Lampe ... - Sie",
+      "x": 383,
+      "y": 703,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "lampe-sie",
+      "group": "task7a",
+      "kind": "text",
+      "label": "Lampe → ...",
+      "answer": "sie",
+      "x": 725,
+      "y": 700,
+      "w": 60,
+      "h": 18
+    },
+    {
+      "id": "bett-lang",
+      "group": "task8a",
+      "kind": "checkbox",
+      "answer": "false",
+      "label": "Das Bett ist zu lang",
+      "x": 288,
+      "y": 945,
+      "w": 14,
+      "h": 14
+    },
+    {
+      "id": "bett-kurz",
+      "group": "task8a",
+      "kind": "checkbox",
+      "answer": "true",
+      "label": "Das Bett ist zu kurz",
+      "x": 355,
+      "y": 948,
+      "w": 14,
+      "h": 14
+    },
+    {
+      "id": "stuhl-klein",
+      "group": "task8a",
+      "kind": "checkbox",
+      "answer": "true",
+      "label": "Der Stuhl ist zu klein",
+      "x": 493,
+      "y": 948,
+      "w": 14,
+      "h": 14
+    },
+    {
+      "id": "stuhl-gross",
+      "group": "task8a",
+      "kind": "checkbox",
+      "answer": "false",
+      "label": "Der Stuhl ist zu groß",
+      "x": 558,
+      "y": 946,
+      "w": 14,
+      "h": 14
+    },
+    {
+      "id": "lampe-billig",
+      "group": "task8a",
+      "kind": "checkbox",
+      "answer": "false",
+      "label": "Die Lampe ist zu billig",
+      "x": 648,
+      "y": 948,
+      "w": 14,
+      "h": 14
+    },
+    {
+      "id": "lampe-teuer",
+      "group": "task8a",
+      "kind": "checkbox",
+      "answer": "true",
+      "label": "Die Lampe ist zu teuer",
+      "x": 713,
+      "y": 948,
+      "w": 14,
+      "h": 14
+    }
+  ],
+  "audio": [
+    {
+      "id": "cd1-25",
+      "src": "assets/kb-cd1-track25.mp3",
+      "label": "1.25 · Zahlenschlange",
+      "x": 94,
+      "y": 196,
+      "w": 30,
+      "h": 13
+    },
+    {
+      "id": "cd1-26",
+      "src": "assets/kb-cd1-track26.mp3",
+      "label": "1.26 · Preise notieren 1",
+      "x": 76,
+      "y": 374,
+      "w": 14,
+      "h": 14
+    },
+    {
+      "id": "cd1-27",
+      "src": "assets/kb-cd1-track27.mp3",
+      "label": "1.27 · Preise notieren 2",
+      "x": 92,
+      "y": 374,
+      "w": 14,
+      "h": 14
+    },
+    {
+      "id": "cd1-28",
+      "src": "assets/kb-cd1-track28.mp3",
+      "label": "1.28 · Preise notieren 3",
+      "x": 108,
+      "y": 374,
+      "w": 14,
+      "h": 14
+    }
+  ],
+  "groups": [
+    {
+      "id": "task5",
+      "label": "5"
+    },
+    {
+      "id": "task7a",
+      "label": "7a"
+    },
+    {
+      "id": "task8a",
+      "label": "8a"
+    }
+  ],
+  "review": {
+    "status": "verified",
+    "verifiedWords": 191,
+    "totalWords": 191,
+    "notes": [
+      "Zahlenschlange blanks verified from the printed number pattern ((ein)hundert, dreihunderteinundfünfzig, (ein)tausend, zehntausend, achthundertsiebenundneunzigtausend, eine Million given): 200=zweihundert, 300=dreihundert, 651=sechshunderteinundfünfzig, 100 000=hunderttausend, 898 000=achthundertachtundneunzigtausend.",
+      "7a radio answer Sie verified from the 3b dialogue on page 26 (Verkäufer says Sie kommt aus Italien) and der/das/die -> er/es/sie; Lampe -> sie field matches the printed Tisch->er, Bett->es examples.",
+      "8a checkboxes verified visually from the cartoons (bed too short for the man, chair too small, lamp price shock 999,-): Bett=zu kurz, Stuhl=zu klein, Lampe=zu teuer. Comic words transcribed manually with estimated boxes; the orange 999,- price tag is only partly legible and was excluded.",
+      "8b feedback radios (zu leicht/okay/zu schwer) are subjective - no fields. Audio markers 1.25 and 1.26-1.28 printed; all files exist (three buttons for 1.26/27/28 at the shared marker)."
+    ]
+  }
+}
