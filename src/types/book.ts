@@ -14,6 +14,12 @@ export interface LessonConfig {
   bookcss?: boolean;
   /** Route used to load batch.css; activates the absorbed batch rules. */
   batchcss?: boolean;
+  /** Route used to load batch-l10-12.css; activates the absorbed rules. */
+  l1012css?: boolean;
+  /** Route used to load batch79.css; activates the absorbed rules. */
+  l79css?: boolean;
+  /** Route used to load l4-6.css; activates the absorbed rules. */
+  l46css?: boolean;
   initializers: string[];
   bodyAttrs?: Record<string, string | string[]>;
   reactExercises?: boolean;
