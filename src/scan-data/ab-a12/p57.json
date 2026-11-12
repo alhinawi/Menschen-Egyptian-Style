@@ -1945,13 +1945,102 @@
    "h": 12
   }
  ],
- "fields": [],
- "audio": [],
- "groups": [],
+ "fields": [
+  {
+   "id": "p57-3r0-1",
+   "group": "g1",
+   "kind": "radio",
+   "label": "row 0 1",
+   "answer": "true",
+   "name": "3r0",
+   "value": "1",
+   "x": 431,
+   "y": 1310,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p57-3r0-2",
+   "group": "g1",
+   "kind": "radio",
+   "label": "row 0 2",
+   "answer": "false",
+   "name": "3r0",
+   "value": "2",
+   "x": 497,
+   "y": 1310,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p57-3r1-1",
+   "group": "g1",
+   "kind": "radio",
+   "label": "row 1 1",
+   "answer": "false",
+   "name": "3r1",
+   "value": "1",
+   "x": 431,
+   "y": 1332,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p57-3r1-2",
+   "group": "g1",
+   "kind": "radio",
+   "label": "row 1 2",
+   "answer": "true",
+   "name": "3r1",
+   "value": "2",
+   "x": 497,
+   "y": 1332,
+   "w": 24,
+   "h": 24
+  }
+ ],
+ "audio": [
+  {
+   "id": "track24-1",
+   "src": "assets/ab-a12-track24.mp3",
+   "label": "CD2 · Track24",
+   "x": 56,
+   "y": 938,
+   "w": 44,
+   "h": 22
+  },
+  {
+   "id": "track25-2",
+   "src": "assets/ab-a12-track25.mp3",
+   "label": "CD2 · Track25",
+   "x": 529,
+   "y": 938,
+   "w": 44,
+   "h": 22
+  },
+  {
+   "id": "track26-3",
+   "src": "assets/ab-a12-track26.mp3",
+   "label": "CD2 · Track26",
+   "x": 573,
+   "y": 1304,
+   "w": 44,
+   "h": 22
+  }
+ ],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aussprache Aufgabe 3"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 19, Training: Aussprache 3).",
+   "Sprechen tasks, accent marking (1), word sorting (2) and listening (4) not mapped; handwritten examples not fields. Audio markers (2 24-26) not mapped."
+  ],
   "verifiedWords": 277,
-  "totalWords": 277,
-  "notes": []
+  "totalWords": 277
  }
 }

@@ -1896,13 +1896,114 @@
    "h": 19
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p56-7b",
+   "group": "g1",
+   "kind": "text",
+   "label": "7 b",
+   "answer": "bekommen",
+   "x": 613,
+   "y": 272,
+   "w": 182,
+   "h": 24
+  },
+  {
+   "id": "p56-7c",
+   "group": "g1",
+   "kind": "text",
+   "label": "7 c",
+   "answer": "gefallen",
+   "x": 430,
+   "y": 297,
+   "w": 170,
+   "h": 24
+  },
+  {
+   "id": "p56-7d",
+   "group": "g1",
+   "kind": "text",
+   "label": "7 d",
+   "answer": "beschwert",
+   "x": 613,
+   "y": 324,
+   "w": 164,
+   "h": 24
+  },
+  {
+   "id": "p56-7e",
+   "group": "g1",
+   "kind": "text",
+   "label": "7 e",
+   "answer": "vergessen",
+   "x": 727,
+   "y": 350,
+   "w": 181,
+   "h": 24
+  },
+  {
+   "id": "p56-7f",
+   "group": "g1",
+   "kind": "text",
+   "label": "7 f",
+   "answer": "gehört",
+   "x": 402,
+   "y": 377,
+   "w": 183,
+   "h": 24
+  },
+  {
+   "id": "p56-9b",
+   "group": "g2",
+   "kind": "text",
+   "label": "9 b",
+   "answer": "Wahnsinn",
+   "x": 190,
+   "y": 1152,
+   "w": 160,
+   "h": 24
+  },
+  {
+   "id": "p56-9c",
+   "group": "g2",
+   "kind": "text",
+   "label": "9 c",
+   "answer": "Echt",
+   "x": 190,
+   "y": 1217,
+   "w": 102,
+   "h": 24
+  },
+  {
+   "id": "p56-9d",
+   "group": "g2",
+   "kind": "text",
+   "label": "9 d",
+   "answer": "Ach komm",
+   "x": 205,
+   "y": 1309,
+   "w": 140,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 7"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 9"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 19).",
+   "Ex 9: partly letter-given gaps, whole answer in one field (Wahnsinn / Echt / Ach komm). Ex 8 individual; handwritten text not fields."
+  ],
   "verifiedWords": 270,
-  "totalWords": 270,
-  "notes": []
+  "totalWords": 270
  }
 }
