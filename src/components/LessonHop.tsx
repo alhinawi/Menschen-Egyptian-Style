@@ -1,12 +1,26 @@
 import {useEffect} from 'react';
 import {MODULE_ORDER, MODULES, modulePages} from '../library-data';
 
+const HOP_FLAG = 'menschen-hop';
+const HOP_ZOOM = 'menschen-hop-zoom';
+const VEIL_BG = '#e8e8e4'; // book.css body background on every module
+
+const lessonJson = import.meta.glob<{default: unknown[]}>('../lessons/*.json');
+
+function makeVeil(opacity: string, pointerEvents: string): HTMLDivElement {
+  const veil = document.createElement('div');
+  veil.style.cssText = `position:fixed;inset:0;z-index:200;background:${VEIL_BG};opacity:${opacity};transition:opacity .16s ease;pointer-events:${pointerEvents}`;
+  return veil;
+}
+
 /**
  * Cross-module page turning. Each module's flip stops at its own first/last
  * page; this lets the arrows and swipe/drag gestures continue into the
  * neighbouring module of the same book (A1.1 into A1.2 included): next at
  * the last page opens the next module's first page, prev at the first page
- * opens the previous module's last page.
+ * opens the previous module's last page. The hop is seamless: the neighbour
+ * is prefetched ahead of time, a veil in the page's own background colour
+ * covers the document swap, and the zoom level carries over.
  */
 export function LessonHop({slug}: {slug: string}) {
   useEffect(() => {
@@ -30,6 +44,67 @@ export function LessonHop({slug}: {slug: string}) {
         ? nextUrl && pageIndex() === pageCount() - 1 ? nextUrl : null
         : prevUrl && pageIndex() === 0 ? prevUrl : null;
 
+    // Arrival from a hop: cover the load with a veil, fade it out once the
+    // book is up, and restore the zoom level the previous page had.
+    if (sessionStorage.getItem(HOP_FLAG)) {
+      sessionStorage.removeItem(HOP_FLAG);
+      const zoom = Number(sessionStorage.getItem(HOP_ZOOM));
+      sessionStorage.removeItem(HOP_ZOOM);
+      const veil = makeVeil('1', 'auto');
+      veil.style.transitionDuration = '.28s';
+      document.body.append(veil);
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        if (zoom > 0) (window as any).bookZoom?.(zoom);
+        veil.style.opacity = '0';
+        setTimeout(() => veil.remove(), 400);
+      }));
+    }
+
+    // Prefetch the neighbouring modules (document + the landing page's
+    // images) so a hop renders immediately.
+    const preloadImages = async (targetSlug: string, token: string) => {
+      try {
+        const loader = lessonJson[`../lessons/${targetSlug}.json`];
+        if (!loader) return;
+        const nodes = (await loader()).default;
+        const srcs: string[] = [];
+        const walk = (n: unknown, collect: boolean) => {
+          if (!Array.isArray(n) || typeof n[0] !== 'string') return;
+          const attrs = n[1];
+          const mine = collect || (attrs != null && typeof attrs === 'object' && !Array.isArray(attrs) && (attrs as Record<string, unknown>)['data-page'] === token);
+          if (mine && n[0] === 'img' && attrs != null && typeof attrs === 'object' && !Array.isArray(attrs) && typeof (attrs as Record<string, unknown>).src === 'string') {
+            srcs.push((attrs as Record<string, unknown>).src as string);
+          }
+          const children = Array.isArray(n[2]) ? n[2] : [];
+          children.forEach((c: unknown) => walk(c, mine));
+        };
+        nodes.forEach(n => walk(n, false));
+        srcs.slice(0, 6).forEach(src => { const img = new Image(); img.src = src; });
+      } catch { /* prefetch is best-effort */ }
+    };
+    const prefetchTimer = window.setTimeout(() => {
+      for (const url of [nextUrl, prevUrl]) {
+        if (!url) continue;
+        const link = document.createElement('link');
+        link.rel = 'prefetch';
+        link.href = url;
+        link.as = 'document';
+        document.head.append(link);
+      }
+      if (nextSlug) preloadImages(nextSlug, modulePages(nextSlug)[0]);
+      if (prevSlug) preloadImages(prevSlug, prevTokens[prevTokens.length - 1]);
+    }, 1500);
+
+    const depart = (url: string) => {
+      const spread = document.querySelector<HTMLElement>('#spread');
+      sessionStorage.setItem(HOP_FLAG, '1');
+      if (spread?.style.zoom) sessionStorage.setItem(HOP_ZOOM, spread.style.zoom);
+      const veil = makeVeil('0', 'auto');
+      document.body.append(veil);
+      requestAnimationFrame(() => { veil.style.opacity = '1'; });
+      setTimeout(() => location.assign(url), 170);
+    };
+
     const onClick = (e: MouseEvent) => {
       const btn = (e.target as HTMLElement | null)?.closest?.('#next,#prev') as HTMLButtonElement | null;
       if (!btn) return;
@@ -37,7 +112,7 @@ export function LessonHop({slug}: {slug: string}) {
       if (!url) return;
       e.preventDefault();
       e.stopImmediatePropagation();
-      location.assign(url);
+      depart(url);
     };
     document.addEventListener('click', onClick, true);
 
@@ -89,7 +164,7 @@ export function LessonHop({slug}: {slug: string}) {
       if (!url) return;
       const progress = g.dir > 0 ? g.x - x : x - g.x;
       const width = document.getElementById('viewport')?.clientWidth ?? innerWidth;
-      if (progress > Math.max(55, width * .24)) location.assign(url);
+      if (progress > Math.max(55, width * .24)) depart(url);
     };
 
     const onTouchStart = (e: TouchEvent) => {
@@ -123,6 +198,7 @@ export function LessonHop({slug}: {slug: string}) {
     window.addEventListener('mouseup', onMouseUp);
 
     return () => {
+      clearTimeout(prefetchTimer);
       document.removeEventListener('click', onClick, true);
       observer.disconnect();
       document.removeEventListener('touchstart', onTouchStart);

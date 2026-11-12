@@ -209,7 +209,7 @@ export function LibraryNav({slug}: {slug: string}) {
           <div className="lnv-sheetscroll">
             {levelLessons(mod.book, mod.level).map(entry => (
               <div key={entry.slug + entry.label}>
-                <div className="lnv-psec">{entry.label.toUpperCase()}</div>
+                <div className={'lnv-psec' + (currentPage != null && entry.pages.includes(currentPage) ? ' cur' : '')}>{entry.label.toUpperCase()}</div>
                 <div className="lnv-pgrid">
                   {entry.pages.map(p => (
                     <button type="button" key={p} className={'lnv-pg' + (p === currentPage ? ' cur' : '')}
@@ -220,7 +220,7 @@ export function LibraryNav({slug}: {slug: string}) {
             ))}
             {levelExtras(mod.book, mod.level).map(entry => (
               <div key={entry.slug}>
-                <div className="lnv-psec">EXTRAS</div>
+                <div className={'lnv-psec' + (currentPage != null && entry.pages.includes(currentPage) ? ' cur' : '')}>EXTRAS</div>
                 <div className="lnv-pgrid">
                   {entry.pages.map(p => (
                     <button type="button" key={p} className={'lnv-pg' + (p === currentPage ? ' cur' : '')}
