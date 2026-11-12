@@ -1,0 +1,932 @@
+{
+  "book": "kb-a11",
+  "page": 51,
+  "image": "assets/kb-a11-p51.png",
+  "width": 1075,
+  "height": 1521,
+  "words": [
+    {
+      "text": "Orange",
+      "x": 180,
+      "y": 186,
+      "w": 40,
+      "h": 16
+    },
+    {
+      "text": "Milch",
+      "x": 305,
+      "y": 182,
+      "w": 30,
+      "h": 11
+    },
+    {
+      "text": "Butter",
+      "x": 424,
+      "y": 176,
+      "w": 36,
+      "h": 16
+    },
+    {
+      "text": "Fisch",
+      "x": 542,
+      "y": 178,
+      "w": 28,
+      "h": 11
+    },
+    {
+      "text": "Tomate",
+      "x": 646,
+      "y": 174,
+      "w": 44,
+      "h": 14
+    },
+    {
+      "text": "Salat",
+      "x": 770,
+      "y": 171,
+      "w": 34,
+      "h": 14
+    },
+    {
+      "text": "Käse",
+      "x": 867,
+      "y": 173,
+      "w": 25,
+      "h": 10
+    },
+    {
+      "text": "Schinken",
+      "x": 492,
+      "y": 415,
+      "w": 70,
+      "h": 16
+    },
+    {
+      "text": "Gespräche",
+      "x": 214,
+      "y": 254,
+      "w": 97,
+      "h": 18
+    },
+    {
+      "text": "üben",
+      "x": 319,
+      "y": 255,
+      "w": 52,
+      "h": 16
+    },
+    {
+      "text": "Möchten",
+      "x": 380,
+      "y": 254,
+      "w": 83,
+      "h": 17
+    },
+    {
+      "text": "Sie",
+      "x": 470,
+      "y": 253,
+      "w": 27,
+      "h": 16
+    },
+    {
+      "text": "noch",
+      "x": 506,
+      "y": 251,
+      "w": 44,
+      "h": 17
+    },
+    {
+      "text": "etwas",
+      "x": 558,
+      "y": 254,
+      "w": 55,
+      "h": 13
+    },
+    {
+      "text": "Arbeiten",
+      "x": 659,
+      "y": 249,
+      "w": 83,
+      "h": 17
+    },
+    {
+      "text": "Sie",
+      "x": 749,
+      "y": 248,
+      "w": 27,
+      "h": 16
+    },
+    {
+      "text": "zu",
+      "x": 784,
+      "y": 251,
+      "w": 21,
+      "h": 12
+    },
+    {
+      "text": "zweit",
+      "x": 813,
+      "y": 246,
+      "w": 53,
+      "h": 17
+    },
+    {
+      "text": "auf",
+      "x": 874,
+      "y": 244,
+      "w": 32,
+      "h": 17
+    },
+    {
+      "text": "Seite",
+      "x": 910,
+      "y": 244,
+      "w": 48,
+      "h": 16
+    },
+    {
+      "text": "Kartoffeleis",
+      "x": 216,
+      "y": 317,
+      "w": 112,
+      "h": 18
+    },
+    {
+      "text": "und",
+      "x": 336,
+      "y": 318,
+      "w": 34,
+      "h": 17
+    },
+    {
+      "text": "Orangenbraten",
+      "x": 379,
+      "y": 318,
+      "w": 144,
+      "h": 18
+    },
+    {
+      "text": "Suchen",
+      "x": 217,
+      "y": 359,
+      "w": 59,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 283,
+      "y": 359,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "die",
+      "x": 314,
+      "y": 358,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "Artikel",
+      "x": 345,
+      "y": 356,
+      "w": 56,
+      "h": 16
+    },
+    {
+      "text": "im",
+      "x": 409,
+      "y": 357,
+      "w": 19,
+      "h": 14
+    },
+    {
+      "text": "Bildlexikon",
+      "x": 437,
+      "y": 355,
+      "w": 92,
+      "h": 16
+    },
+    {
+      "text": "und",
+      "x": 537,
+      "y": 354,
+      "w": 30,
+      "h": 15
+    },
+    {
+      "text": "ergänzen",
+      "x": 575,
+      "y": 354,
+      "w": 76,
+      "h": 20
+    },
+    {
+      "text": "Sie",
+      "x": 658,
+      "y": 352,
+      "w": 29,
+      "h": 15
+    },
+    {
+      "text": "Nomen",
+      "x": 461,
+      "y": 395,
+      "w": 56,
+      "h": 14
+    },
+    {
+      "text": "Nomen",
+      "x": 652,
+      "y": 391,
+      "w": 56,
+      "h": 14
+    },
+    {
+      "text": "das",
+      "x": 247,
+      "y": 417,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "Schinkenbrot",
+      "x": 278,
+      "y": 415,
+      "w": 102,
+      "h": 20
+    },
+    {
+      "text": "der",
+      "x": 461,
+      "y": 417,
+      "w": 25,
+      "h": 16
+    },
+    {
+      "text": "Schinken",
+      "x": 492,
+      "y": 415,
+      "w": 70,
+      "h": 16
+    },
+    {
+      "text": "Brot",
+      "x": 694,
+      "y": 414,
+      "w": 32,
+      "h": 14
+    },
+    {
+      "text": "der",
+      "x": 248,
+      "y": 442,
+      "w": 25,
+      "h": 13
+    },
+    {
+      "text": "Schokoladenkuchen",
+      "x": 279,
+      "y": 439,
+      "w": 154,
+      "h": 16
+    },
+    {
+      "text": "Schokolade",
+      "x": 503,
+      "y": 437,
+      "w": 90,
+      "h": 18
+    },
+    {
+      "text": "Kuchen",
+      "x": 694,
+      "y": 434,
+      "w": 57,
+      "h": 14
+    },
+    {
+      "text": "die",
+      "x": 248,
+      "y": 464,
+      "w": 22,
+      "h": 14
+    },
+    {
+      "text": "Fischsuppe",
+      "x": 277,
+      "y": 463,
+      "w": 84,
+      "h": 18
+    },
+    {
+      "text": "Fisch",
+      "x": 503,
+      "y": 456,
+      "w": 39,
+      "h": 16
+    },
+    {
+      "text": "Suppe",
+      "x": 694,
+      "y": 457,
+      "w": 45,
+      "h": 16
+    },
+    {
+      "text": "Würfeln",
+      "x": 218,
+      "y": 523,
+      "w": 67,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 292,
+      "y": 523,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "und",
+      "x": 324,
+      "y": 521,
+      "w": 30,
+      "h": 16
+    },
+    {
+      "text": "stellen",
+      "x": 362,
+      "y": 521,
+      "w": 54,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 424,
+      "y": 521,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "Ihre",
+      "x": 456,
+      "y": 520,
+      "w": 32,
+      "h": 15
+    },
+    {
+      "text": "Speisekarte",
+      "x": 494,
+      "y": 518,
+      "w": 97,
+      "h": 18
+    },
+    {
+      "text": "zusammen",
+      "x": 597,
+      "y": 519,
+      "w": 95,
+      "h": 14
+    },
+    {
+      "text": "Käse",
+      "x": 561,
+      "y": 585,
+      "w": 42,
+      "h": 16
+    },
+    {
+      "text": "Fisch",
+      "x": 561,
+      "y": 615,
+      "w": 49,
+      "h": 16
+    },
+    {
+      "text": "Zitronen",
+      "x": 561,
+      "y": 646,
+      "w": 80,
+      "h": 16
+    },
+    {
+      "text": "Zwiebel",
+      "x": 562,
+      "y": 677,
+      "w": 71,
+      "h": 16
+    },
+    {
+      "text": "Eier",
+      "x": 563,
+      "y": 707,
+      "w": 39,
+      "h": 16
+    },
+    {
+      "text": "Obst",
+      "x": 563,
+      "y": 737,
+      "w": 41,
+      "h": 16
+    },
+    {
+      "text": "pizza",
+      "x": 677,
+      "y": 585,
+      "w": 49,
+      "h": 15
+    },
+    {
+      "text": "salat",
+      "x": 677,
+      "y": 615,
+      "w": 46,
+      "h": 14
+    },
+    {
+      "text": "suppe",
+      "x": 678,
+      "y": 648,
+      "w": 54,
+      "h": 14
+    },
+    {
+      "text": "eis",
+      "x": 678,
+      "y": 676,
+      "w": 28,
+      "h": 14
+    },
+    {
+      "text": "kuchen",
+      "x": 679,
+      "y": 705,
+      "w": 69,
+      "h": 14
+    },
+    {
+      "text": "reis",
+      "x": 680,
+      "y": 735,
+      "w": 36,
+      "h": 15
+    },
+    {
+      "text": "Was",
+      "x": 251,
+      "y": 1054,
+      "w": 33,
+      "h": 15
+    },
+    {
+      "text": "essen",
+      "x": 291,
+      "y": 1056,
+      "w": 44,
+      "h": 13
+    },
+    {
+      "text": "wir",
+      "x": 342,
+      "y": 1052,
+      "w": 29,
+      "h": 15
+    },
+    {
+      "text": "als",
+      "x": 377,
+      "y": 1051,
+      "w": 22,
+      "h": 16
+    },
+    {
+      "text": "Vorspeise",
+      "x": 406,
+      "y": 1050,
+      "w": 89,
+      "h": 18
+    },
+    {
+      "text": "Fischeis",
+      "x": 319,
+      "y": 1079,
+      "w": 72,
+      "h": 15
+    },
+    {
+      "text": "Laden",
+      "x": 231,
+      "y": 1143,
+      "w": 48,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 286,
+      "y": 1143,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "zwei",
+      "x": 317,
+      "y": 1142,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "Kursteilnehmer/-innen",
+      "x": 363,
+      "y": 1139,
+      "w": 193,
+      "h": 18
+    },
+    {
+      "text": "zum",
+      "x": 564,
+      "y": 1142,
+      "w": 34,
+      "h": 13
+    },
+    {
+      "text": "Essen",
+      "x": 607,
+      "y": 1138,
+      "w": 44,
+      "h": 15
+    },
+    {
+      "text": "ein",
+      "x": 659,
+      "y": 1136,
+      "w": 31,
+      "h": 15
+    },
+    {
+      "text": "Ich",
+      "x": 254,
+      "y": 1181,
+      "w": 27,
+      "h": 15
+    },
+    {
+      "text": "koche",
+      "x": 287,
+      "y": 1180,
+      "w": 49,
+      "h": 16
+    },
+    {
+      "text": "heute",
+      "x": 343,
+      "y": 1180,
+      "w": 47,
+      "h": 15
+    },
+    {
+      "text": "Abend",
+      "x": 397,
+      "y": 1178,
+      "w": 54,
+      "h": 15
+    },
+    {
+      "text": "etwas",
+      "x": 457,
+      "y": 1180,
+      "w": 52,
+      "h": 13
+    },
+    {
+      "text": "Was",
+      "x": 254,
+      "y": 1206,
+      "w": 33,
+      "h": 15
+    },
+    {
+      "text": "kochst",
+      "x": 293,
+      "y": 1205,
+      "w": 56,
+      "h": 15
+    },
+    {
+      "text": "du",
+      "x": 356,
+      "y": 1205,
+      "w": 20,
+      "h": 15
+    },
+    {
+      "text": "denn",
+      "x": 383,
+      "y": 1205,
+      "w": 51,
+      "h": 14
+    },
+    {
+      "text": "Als",
+      "x": 255,
+      "y": 1230,
+      "w": 25,
+      "h": 17
+    },
+    {
+      "text": "Vorspeise",
+      "x": 286,
+      "y": 1231,
+      "w": 80,
+      "h": 16
+    },
+    {
+      "text": "essen",
+      "x": 373,
+      "y": 1233,
+      "w": 45,
+      "h": 12
+    },
+    {
+      "text": "wir",
+      "x": 423,
+      "y": 1230,
+      "w": 29,
+      "h": 14
+    },
+    {
+      "text": "mache",
+      "x": 473,
+      "y": 1228,
+      "w": 55,
+      "h": 15
+    },
+    {
+      "text": "ich",
+      "x": 534,
+      "y": 1227,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "Zwiebeleis",
+      "x": 567,
+      "y": 1226,
+      "w": 94,
+      "h": 15
+    },
+    {
+      "text": "Als",
+      "x": 255,
+      "y": 1255,
+      "w": 25,
+      "h": 17
+    },
+    {
+      "text": "Hauptgericht",
+      "x": 287,
+      "y": 1253,
+      "w": 114,
+      "h": 18
+    },
+    {
+      "text": "Kommst",
+      "x": 430,
+      "y": 1254,
+      "w": 69,
+      "h": 15
+    },
+    {
+      "text": "du",
+      "x": 505,
+      "y": 1253,
+      "w": 30,
+      "h": 15
+    },
+    {
+      "text": "Oh",
+      "x": 290,
+      "y": 1279,
+      "w": 21,
+      "h": 15
+    },
+    {
+      "text": "das",
+      "x": 324,
+      "y": 1282,
+      "w": 27,
+      "h": 14
+    },
+    {
+      "text": "tut",
+      "x": 357,
+      "y": 1283,
+      "w": 25,
+      "h": 13
+    },
+    {
+      "text": "mir",
+      "x": 389,
+      "y": 1281,
+      "w": 30,
+      "h": 14
+    },
+    {
+      "text": "leid",
+      "x": 425,
+      "y": 1279,
+      "w": 36,
+      "h": 15
+    },
+    {
+      "text": "Ich",
+      "x": 469,
+      "y": 1279,
+      "w": 26,
+      "h": 15
+    },
+    {
+      "text": "habe",
+      "x": 502,
+      "y": 1278,
+      "w": 39,
+      "h": 15
+    },
+    {
+      "text": "leider",
+      "x": 548,
+      "y": 1277,
+      "w": 50,
+      "h": 15
+    },
+    {
+      "text": "doch",
+      "x": 604,
+      "y": 1276,
+      "w": 40,
+      "h": 15
+    },
+    {
+      "text": "keine",
+      "x": 256,
+      "y": 1308,
+      "w": 47,
+      "h": 15
+    },
+    {
+      "text": "Zeit",
+      "x": 309,
+      "y": 1307,
+      "w": 37,
+      "h": 14
+    },
+    {
+      "text": "Ja",
+      "x": 292,
+      "y": 1332,
+      "w": 23,
+      "h": 16
+    },
+    {
+      "text": "ich",
+      "x": 322,
+      "y": 1332,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "komme",
+      "x": 354,
+      "y": 1331,
+      "w": 61,
+      "h": 14
+    },
+    {
+      "text": "gern",
+      "x": 421,
+      "y": 1333,
+      "w": 43,
+      "h": 16
+    },
+    {
+      "text": "Vorspeise",
+      "x": 762,
+      "y": 1050,
+      "w": 71,
+      "h": 15
+    },
+    {
+      "text": "oder",
+      "x": 919,
+      "y": 1071,
+      "w": 28,
+      "h": 16
+    },
+    {
+      "text": "Hauptgericht",
+      "x": 759,
+      "y": 1146,
+      "w": 110,
+      "h": 20
+    },
+    {
+      "text": "oder",
+      "x": 917,
+      "y": 1168,
+      "w": 28,
+      "h": 16
+    },
+    {
+      "text": "Dessert",
+      "x": 765,
+      "y": 1250,
+      "w": 55,
+      "h": 15
+    },
+    {
+      "text": "oder",
+      "x": 917,
+      "y": 1267,
+      "w": 29,
+      "h": 15
+    }
+  ],
+  "fields": [
+    {
+      "id": "a1-brot",
+      "group": "task6a",
+      "kind": "text",
+      "label": "das Schinkenbrot = der Schinken + ___ Brot",
+      "answer": "das",
+      "x": 648,
+      "y": 406,
+      "w": 44,
+      "h": 22
+    },
+    {
+      "id": "a2-schokolade",
+      "group": "task6a",
+      "kind": "text",
+      "label": "der Schokoladenkuchen = ___ Schokolade + ...",
+      "answer": "die",
+      "x": 450,
+      "y": 431,
+      "w": 50,
+      "h": 22
+    },
+    {
+      "id": "a3-kuchen",
+      "group": "task6a",
+      "kind": "text",
+      "label": "der Schokoladenkuchen = ... + ___ Kuchen",
+      "answer": "der",
+      "x": 648,
+      "y": 428,
+      "w": 44,
+      "h": 22
+    },
+    {
+      "id": "a4-fisch",
+      "group": "task6a",
+      "kind": "text",
+      "label": "die Fischsuppe = ___ Fisch + ...",
+      "answer": "der",
+      "x": 450,
+      "y": 453,
+      "w": 50,
+      "h": 22
+    },
+    {
+      "id": "a5-suppe",
+      "group": "task6a",
+      "kind": "text",
+      "label": "die Fischsuppe = ... + ___ Suppe",
+      "answer": "die",
+      "x": 648,
+      "y": 450,
+      "w": 44,
+      "h": 22
+    }
+  ],
+  "audio": [],
+  "groups": [
+    {
+      "id": "task6a",
+      "label": "6a"
+    }
+  ],
+  "review": {
+    "status": "verified",
+    "verifiedWords": 121,
+    "totalWords": 121,
+    "notes": [
+      "All printed words reviewed against the scan: photo captions, tasks 5-6, Nomen+Nomen table, dice lists, dialogue and the menu card. Vertical margin labels (Spiel & Spaß, GRAMMATIK, Beruf), AB tags, standalone numbers (Seite 90, list numbers), dice/smiley symbols and the footer are excluded per house style.",
+      "Task 6a article blanks verified: das Brot, die Schokolade, der Kuchen, der Fisch, die Suppe (unambiguous articles; the task says to look them up in the Bildlexikon). The blue-script der before Schinken is the printed example - no field there.",
+      "Hyphenated dice stems printed as Käse- / -pizza etc.; word text keeps the stem without the hyphen.",
+      "The menu card blanks (Vorspeise/Hauptgericht/Dessert ... oder ...) are free-form student answers - no fixed key, so no fields.",
+      "No CD track marker printed on this page; no audio."
+    ]
+  }
+}
