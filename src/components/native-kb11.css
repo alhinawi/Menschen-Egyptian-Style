@@ -24,3 +24,5 @@
 .nkbCanvas .nkbLine.nkbSans:not(.nkbB){font-family:Arial,'Liberation Sans',Helvetica,sans-serif}
 .nkbCanvas input[type=text].nkbField,.nkbCanvas select.nkbField{border:1.5px solid #6f7b72!important;border-radius:3px!important;background:#fffef7b3!important}
 .nkbCanvas .nkbCompact{font-size:1.45cqw}
+
+.nkbCanvas .nkbLine.nkbSB{font-family:'Palatino Linotype',Palatino,'Book Antiqua','Liberation Serif',Georgia,serif;font-weight:700}
