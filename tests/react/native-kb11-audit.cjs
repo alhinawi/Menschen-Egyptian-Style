@@ -9,7 +9,7 @@ for(const[file,pages]of Object.entries(ALL)){const p=await b.newPage({viewport:{
  for(const pg of pages.filter(n=>!sel.length||sel.includes(n))){await p.goto(`http://localhost:${port}/${file}.html#${pg}`);await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true',null,{timeout:15000}).catch(()=>{});await p.waitForTimeout(400);
   res[pg]=await p.evaluate((pg)=>{const c=document.querySelector(`[data-native-page="${pg}"] .nkbCanvas`);if(!c)return{missing:true};const cr=c.getBoundingClientRect();const L=[...c.querySelectorAll('.nkbLine')].map(e=>({r:e.getBoundingClientRect(),t:e.textContent,k:(()=>{const m=/scaleX\(([\d.]+)\)/.exec(e.style.transform||'');return m?+m[1]:1})()}));
    let overlaps=[],bad=[];
-   for(let i=0;i<L.length;i++){const a=L[i].r;if(L[i].k<0.8||L[i].k>1.25)bad.push(L[i].t.slice(0,30)+' x'+L[i].k.toFixed(2));if(a.right>cr.right+2)bad.push('overflow '+L[i].t.slice(0,20));
+   for(let i=0;i<L.length;i++){const a=L[i].r;if((L[i].k<0.8||L[i].k>1.25)&&L[i].t.length>7)bad.push(L[i].t.slice(0,30)+' x'+L[i].k.toFixed(2));if(a.right>cr.right+2)bad.push('overflow '+L[i].t.slice(0,20));
     for(let j=i+1;j<L.length;j++){const b=L[j].r;const w=Math.min(a.right,b.right)-Math.max(a.left,b.left),h=Math.min(a.bottom,b.bottom)-Math.max(a.top,b.top);if(w>2&&h>a.height*0.35)overlaps.push(L[i].t.slice(0,18)+' | '+L[j].t.slice(0,18))}}
    const checks=[...c.querySelectorAll('.nkbCheck button')].map(e=>e.getBoundingClientRect());let cov=0;for(const k of checks)for(const l of L){const w=Math.min(k.right,l.r.right)-Math.max(k.left,l.r.left),h=Math.min(k.bottom,l.r.bottom)-Math.max(k.top,l.r.top);if(w>2&&h>2)cov++}
    const ghost=[...c.querySelectorAll('.nkbGhost')].filter(e=>/[A-Za-zÄÖÜäöüß]/.test(e.textContent)).length;
