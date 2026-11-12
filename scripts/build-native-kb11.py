@@ -205,7 +205,7 @@ def apply_overrides(r,p):
     for m in o.get('setws',[]):
         for b in r['blocks']:
             if hit(b,m):
-                c=b['ws'][0].get('c');b['ws']=[{'t':t,**({'c':c} if c else {})} for t in m['ws']]
+                c=b['ws'][0].get('c');b['ws']=[({**t,**({'c':c} if c else {})} if isinstance(t,dict) else {'t':t,**({'c':c} if c else {})}) for t in m['ws']]
     for m in o.get('drop',[]):
         r['blocks']=[b for b in r['blocks'] if not hit(b,m)]
     for m in o.get('split',[]):
