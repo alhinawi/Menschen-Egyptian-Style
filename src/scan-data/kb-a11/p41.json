@@ -1,0 +1,996 @@
+{
+  "book": "kb-a11",
+  "page": 41,
+  "image": "assets/kb-a11-p41.png",
+  "width": 1075,
+  "height": 1521,
+  "words": [
+    {
+      "text": "Du",
+      "x": 507,
+      "y": 140,
+      "w": 24,
+      "h": 36
+    },
+    {
+      "text": "kannst",
+      "x": 539,
+      "y": 140,
+      "w": 72,
+      "h": 36
+    },
+    {
+      "text": "wirklich",
+      "x": 620,
+      "y": 140,
+      "w": 96,
+      "h": 36
+    },
+    {
+      "text": "toll",
+      "x": 726,
+      "y": 140,
+      "w": 38,
+      "h": 36
+    },
+    {
+      "text": "…!",
+      "x": 773,
+      "y": 140,
+      "w": 29,
+      "h": 36
+    },
+    {
+      "text": "Sehen",
+      "x": 205,
+      "y": 1051,
+      "w": 56,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 268,
+      "y": 1051,
+      "w": 28,
+      "h": 16
+    },
+    {
+      "text": "das",
+      "x": 303,
+      "y": 1051,
+      "w": 31,
+      "h": 16
+    },
+    {
+      "text": "Foto",
+      "x": 343,
+      "y": 1052,
+      "w": 41,
+      "h": 15
+    },
+    {
+      "text": "an.",
+      "x": 392,
+      "y": 1057,
+      "w": 28,
+      "h": 10
+    },
+    {
+      "text": "Was",
+      "x": 427,
+      "y": 1052,
+      "w": 38,
+      "h": 15
+    },
+    {
+      "text": "für",
+      "x": 472,
+      "y": 1051,
+      "w": 28,
+      "h": 16
+    },
+    {
+      "text": "ein",
+      "x": 507,
+      "y": 1051,
+      "w": 28,
+      "h": 16
+    },
+    {
+      "text": "Kompliment",
+      "x": 545,
+      "y": 1053,
+      "w": 117,
+      "h": 16
+    },
+    {
+      "text": "macht",
+      "x": 206,
+      "y": 1076,
+      "w": 58,
+      "h": 16
+    },
+    {
+      "text": "der",
+      "x": 272,
+      "y": 1076,
+      "w": 31,
+      "h": 16
+    },
+    {
+      "text": "Mann",
+      "x": 311,
+      "y": 1078,
+      "w": 51,
+      "h": 14
+    },
+    {
+      "text": "wohl",
+      "x": 370,
+      "y": 1076,
+      "w": 46,
+      "h": 16
+    },
+    {
+      "text": "der",
+      "x": 424,
+      "y": 1076,
+      "w": 31,
+      "h": 16
+    },
+    {
+      "text": "Frau?",
+      "x": 463,
+      "y": 1078,
+      "w": 51,
+      "h": 14
+    },
+    {
+      "text": "Ich",
+      "x": 585,
+      "y": 1099,
+      "w": 22,
+      "h": 12
+    },
+    {
+      "text": "glaube,",
+      "x": 612,
+      "y": 1099,
+      "w": 51,
+      "h": 17
+    },
+    {
+      "text": "er",
+      "x": 669,
+      "y": 1104,
+      "w": 14,
+      "h": 7
+    },
+    {
+      "text": "sagt:",
+      "x": 688,
+      "y": 1103,
+      "w": 32,
+      "h": 13
+    },
+    {
+      "text": "Du",
+      "x": 727,
+      "y": 1100,
+      "w": 18,
+      "h": 11
+    },
+    {
+      "text": "…",
+      "x": 751,
+      "y": 1109,
+      "w": 12,
+      "h": 2
+    },
+    {
+      "text": "Was",
+      "x": 204,
+      "y": 1153,
+      "w": 38,
+      "h": 15
+    },
+    {
+      "text": "passt?",
+      "x": 251,
+      "y": 1155,
+      "w": 58,
+      "h": 16
+    },
+    {
+      "text": "Hören",
+      "x": 318,
+      "y": 1153,
+      "w": 56,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 381,
+      "y": 1152,
+      "w": 28,
+      "h": 16
+    },
+    {
+      "text": "und",
+      "x": 417,
+      "y": 1152,
+      "w": 34,
+      "h": 17
+    },
+    {
+      "text": "kreuzen",
+      "x": 461,
+      "y": 1152,
+      "w": 74,
+      "h": 17
+    },
+    {
+      "text": "Sie",
+      "x": 542,
+      "y": 1153,
+      "w": 28,
+      "h": 16
+    },
+    {
+      "text": "an.",
+      "x": 577,
+      "y": 1158,
+      "w": 28,
+      "h": 11
+    },
+    {
+      "text": "Gespräch",
+      "x": 574,
+      "y": 1182,
+      "w": 63,
+      "h": 16
+    },
+    {
+      "text": "1",
+      "x": 681,
+      "y": 1195,
+      "w": 12,
+      "h": 16
+    },
+    {
+      "text": "2",
+      "x": 736,
+      "y": 1195,
+      "w": 12,
+      "h": 16
+    },
+    {
+      "text": "3",
+      "x": 789,
+      "y": 1195,
+      "w": 12,
+      "h": 16
+    },
+    {
+      "text": "a",
+      "x": 205,
+      "y": 1209,
+      "w": 8,
+      "h": 10
+    },
+    {
+      "text": "Du",
+      "x": 224,
+      "y": 1206,
+      "w": 22,
+      "h": 13
+    },
+    {
+      "text": "kannst",
+      "x": 252,
+      "y": 1204,
+      "w": 59,
+      "h": 15
+    },
+    {
+      "text": "wirklich",
+      "x": 317,
+      "y": 1204,
+      "w": 73,
+      "h": 15
+    },
+    {
+      "text": "toll",
+      "x": 396,
+      "y": 1204,
+      "w": 28,
+      "h": 15
+    },
+    {
+      "text": "kochen.",
+      "x": 431,
+      "y": 1204,
+      "w": 66,
+      "h": 15
+    },
+    {
+      "text": "b",
+      "x": 204,
+      "y": 1241,
+      "w": 10,
+      "h": 16
+    },
+    {
+      "text": "Du",
+      "x": 224,
+      "y": 1243,
+      "w": 22,
+      "h": 13
+    },
+    {
+      "text": "kannst",
+      "x": 252,
+      "y": 1242,
+      "w": 59,
+      "h": 15
+    },
+    {
+      "text": "ja",
+      "x": 316,
+      "y": 1245,
+      "w": 16,
+      "h": 14
+    },
+    {
+      "text": "super",
+      "x": 338,
+      "y": 1247,
+      "w": 46,
+      "h": 15
+    },
+    {
+      "text": "tanzen.",
+      "x": 391,
+      "y": 1244,
+      "w": 63,
+      "h": 15
+    },
+    {
+      "text": "c",
+      "x": 205,
+      "y": 1285,
+      "w": 7,
+      "h": 9
+    },
+    {
+      "text": "Deine",
+      "x": 224,
+      "y": 1280,
+      "w": 47,
+      "h": 15
+    },
+    {
+      "text": "Augen",
+      "x": 278,
+      "y": 1282,
+      "w": 52,
+      "h": 15
+    },
+    {
+      "text": "sind",
+      "x": 337,
+      "y": 1280,
+      "w": 35,
+      "h": 15
+    },
+    {
+      "text": "sehr",
+      "x": 379,
+      "y": 1280,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "schön.",
+      "x": 422,
+      "y": 1280,
+      "w": 53,
+      "h": 15
+    },
+    {
+      "text": "Welches",
+      "x": 204,
+      "y": 1342,
+      "w": 78,
+      "h": 16
+    },
+    {
+      "text": "Gespräch",
+      "x": 290,
+      "y": 1344,
+      "w": 84,
+      "h": 16
+    },
+    {
+      "text": "passt",
+      "x": 384,
+      "y": 1348,
+      "w": 48,
+      "h": 14
+    },
+    {
+      "text": "am",
+      "x": 205,
+      "y": 1373,
+      "w": 26,
+      "h": 10
+    },
+    {
+      "text": "besten",
+      "x": 240,
+      "y": 1367,
+      "w": 62,
+      "h": 16
+    },
+    {
+      "text": "zum",
+      "x": 310,
+      "y": 1373,
+      "w": 39,
+      "h": 10
+    },
+    {
+      "text": "Foto?",
+      "x": 359,
+      "y": 1368,
+      "w": 52,
+      "h": 15
+    },
+    {
+      "text": "Machen",
+      "x": 206,
+      "y": 1393,
+      "w": 63,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 277,
+      "y": 1394,
+      "w": 23,
+      "h": 14
+    },
+    {
+      "text": "eine",
+      "x": 308,
+      "y": 1394,
+      "w": 34,
+      "h": 14
+    },
+    {
+      "text": "Kursstatistik.",
+      "x": 351,
+      "y": 1394,
+      "w": 112,
+      "h": 14
+    },
+    {
+      "text": "Frauen",
+      "x": 581,
+      "y": 1344,
+      "w": 55,
+      "h": 14
+    },
+    {
+      "text": "Männer",
+      "x": 716,
+      "y": 1344,
+      "w": 60,
+      "h": 14
+    },
+    {
+      "text": "Gespräch",
+      "x": 581,
+      "y": 1379,
+      "w": 70,
+      "h": 14
+    },
+    {
+      "text": "1",
+      "x": 682,
+      "y": 1379,
+      "w": 8,
+      "h": 14
+    },
+    {
+      "text": "2",
+      "x": 705,
+      "y": 1379,
+      "w": 8,
+      "h": 14
+    },
+    {
+      "text": "3",
+      "x": 728,
+      "y": 1379,
+      "w": 8,
+      "h": 14
+    },
+    {
+      "text": "Hören:",
+      "x": 866,
+      "y": 1004,
+      "w": 48,
+      "h": 12
+    },
+    {
+      "text": "Aussagen",
+      "x": 920,
+      "y": 1004,
+      "w": 62,
+      "h": 16
+    },
+    {
+      "text": "zu",
+      "x": 989,
+      "y": 1008,
+      "w": 14,
+      "h": 8
+    },
+    {
+      "text": "Freizeitaktivitäten",
+      "x": 866,
+      "y": 1025,
+      "w": 125,
+      "h": 12
+    },
+    {
+      "text": "Sprechen:",
+      "x": 865,
+      "y": 1057,
+      "w": 72,
+      "h": 17
+    },
+    {
+      "text": "Komplimente",
+      "x": 945,
+      "y": 1057,
+      "w": 90,
+      "h": 16
+    },
+    {
+      "text": "machen:",
+      "x": 866,
+      "y": 1078,
+      "w": 56,
+      "h": 12
+    },
+    {
+      "text": "Du",
+      "x": 929,
+      "y": 1080,
+      "w": 15,
+      "h": 11
+    },
+    {
+      "text": "kannst",
+      "x": 950,
+      "y": 1078,
+      "w": 40,
+      "h": 12
+    },
+    {
+      "text": "super",
+      "x": 996,
+      "y": 1083,
+      "w": 33,
+      "h": 12
+    },
+    {
+      "text": "tanzen!;",
+      "x": 865,
+      "y": 1101,
+      "w": 50,
+      "h": 12
+    },
+    {
+      "text": "über",
+      "x": 922,
+      "y": 1100,
+      "w": 29,
+      "h": 12
+    },
+    {
+      "text": "Hobbys/Fä-",
+      "x": 957,
+      "y": 1100,
+      "w": 77,
+      "h": 17
+    },
+    {
+      "text": "higkeiten",
+      "x": 866,
+      "y": 1122,
+      "w": 63,
+      "h": 17
+    },
+    {
+      "text": "sprechen:",
+      "x": 936,
+      "y": 1122,
+      "w": 64,
+      "h": 17
+    },
+    {
+      "text": "Mein",
+      "x": 1006,
+      "y": 1122,
+      "w": 30,
+      "h": 11
+    },
+    {
+      "text": "Hobby",
+      "x": 866,
+      "y": 1144,
+      "w": 38,
+      "h": 17
+    },
+    {
+      "text": "ist",
+      "x": 909,
+      "y": 1144,
+      "w": 14,
+      "h": 12
+    },
+    {
+      "text": "tanzen.,",
+      "x": 929,
+      "y": 1147,
+      "w": 49,
+      "h": 10
+    },
+    {
+      "text": "Ich",
+      "x": 985,
+      "y": 1144,
+      "w": 17,
+      "h": 12
+    },
+    {
+      "text": "kann",
+      "x": 1008,
+      "y": 1144,
+      "w": 28,
+      "h": 12
+    },
+    {
+      "text": "gut",
+      "x": 864,
+      "y": 1169,
+      "w": 21,
+      "h": 13
+    },
+    {
+      "text": "singen.;",
+      "x": 890,
+      "y": 1166,
+      "w": 48,
+      "h": 17
+    },
+    {
+      "text": "um",
+      "x": 945,
+      "y": 1170,
+      "w": 19,
+      "h": 8
+    },
+    {
+      "text": "etwas",
+      "x": 971,
+      "y": 1169,
+      "w": 39,
+      "h": 8
+    },
+    {
+      "text": "bit-",
+      "x": 1016,
+      "y": 1165,
+      "w": 22,
+      "h": 12
+    },
+    {
+      "text": "ten:",
+      "x": 865,
+      "y": 1191,
+      "w": 26,
+      "h": 8
+    },
+    {
+      "text": "Kann",
+      "x": 899,
+      "y": 1188,
+      "w": 29,
+      "h": 11
+    },
+    {
+      "text": "ich",
+      "x": 934,
+      "y": 1187,
+      "w": 16,
+      "h": 12
+    },
+    {
+      "text": "telefonieren?;",
+      "x": 957,
+      "y": 1185,
+      "w": 83,
+      "h": 20
+    },
+    {
+      "text": "sich",
+      "x": 865,
+      "y": 1209,
+      "w": 25,
+      "h": 12
+    },
+    {
+      "text": "bedanken:",
+      "x": 898,
+      "y": 1209,
+      "w": 69,
+      "h": 12
+    },
+    {
+      "text": "Oh,",
+      "x": 973,
+      "y": 1209,
+      "w": 20,
+      "h": 14
+    },
+    {
+      "text": "danke!",
+      "x": 1000,
+      "y": 1209,
+      "w": 39,
+      "h": 12
+    },
+    {
+      "text": "Wortfeld:",
+      "x": 865,
+      "y": 1240,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "text": "Freizeitaktivi-",
+      "x": 943,
+      "y": 1240,
+      "w": 94,
+      "h": 12
+    },
+    {
+      "text": "täten",
+      "x": 865,
+      "y": 1263,
+      "w": 35,
+      "h": 12
+    },
+    {
+      "text": "Grammatik:",
+      "x": 865,
+      "y": 1294,
+      "w": 86,
+      "h": 12
+    },
+    {
+      "text": "Modalverb",
+      "x": 959,
+      "y": 1294,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "text": "können;",
+      "x": 866,
+      "y": 1316,
+      "w": 48,
+      "h": 15
+    },
+    {
+      "text": "Satzklammer:",
+      "x": 919,
+      "y": 1316,
+      "w": 92,
+      "h": 12
+    },
+    {
+      "text": "Du",
+      "x": 1018,
+      "y": 1317,
+      "w": 14,
+      "h": 11
+    },
+    {
+      "text": "kannst",
+      "x": 866,
+      "y": 1338,
+      "w": 40,
+      "h": 12
+    },
+    {
+      "text": "super",
+      "x": 911,
+      "y": 1342,
+      "w": 33,
+      "h": 13
+    },
+    {
+      "text": "Gitarre",
+      "x": 949,
+      "y": 1338,
+      "w": 42,
+      "h": 12
+    },
+    {
+      "text": "spielen.",
+      "x": 996,
+      "y": 1338,
+      "w": 46,
+      "h": 17
+    },
+    {
+      "text": "einundvierzig",
+      "x": 865,
+      "y": 1421,
+      "w": 109,
+      "h": 18
+    }
+  ],
+  "fields": [
+    {
+      "id": "t2a1",
+      "group": "t2",
+      "kind": "radio",
+      "name": "t2a",
+      "value": "1",
+      "label": "a Du kannst wirklich toll kochen. - Gespräch 1",
+      "answer": "false",
+      "x": 674,
+      "y": 1204,
+      "w": 16,
+      "h": 16
+    },
+    {
+      "id": "t2a2",
+      "group": "t2",
+      "kind": "radio",
+      "name": "t2a",
+      "value": "2",
+      "label": "a Du kannst wirklich toll kochen. - Gespräch 2",
+      "answer": "false",
+      "x": 729,
+      "y": 1204,
+      "w": 16,
+      "h": 16
+    },
+    {
+      "id": "t2a3",
+      "group": "t2",
+      "kind": "radio",
+      "name": "t2a",
+      "value": "3",
+      "label": "a Du kannst wirklich toll kochen. - Gespräch 3",
+      "answer": "true",
+      "x": 782,
+      "y": 1204,
+      "w": 16,
+      "h": 16
+    },
+    {
+      "id": "t2b1",
+      "group": "t2",
+      "kind": "radio",
+      "name": "t2b",
+      "value": "1",
+      "label": "b Du kannst ja super tanzen. - Gespräch 1",
+      "answer": "true",
+      "x": 674,
+      "y": 1242,
+      "w": 16,
+      "h": 16
+    },
+    {
+      "id": "t2b2",
+      "group": "t2",
+      "kind": "radio",
+      "name": "t2b",
+      "value": "2",
+      "label": "b Du kannst ja super tanzen. - Gespräch 2",
+      "answer": "false",
+      "x": 729,
+      "y": 1242,
+      "w": 16,
+      "h": 16
+    },
+    {
+      "id": "t2b3",
+      "group": "t2",
+      "kind": "radio",
+      "name": "t2b",
+      "value": "3",
+      "label": "b Du kannst ja super tanzen. - Gespräch 3",
+      "answer": "false",
+      "x": 782,
+      "y": 1242,
+      "w": 16,
+      "h": 16
+    },
+    {
+      "id": "t2c1",
+      "group": "t2",
+      "kind": "radio",
+      "name": "t2c",
+      "value": "1",
+      "label": "c Deine Augen sind sehr schön. - Gespräch 1",
+      "answer": "false",
+      "x": 674,
+      "y": 1280,
+      "w": 16,
+      "h": 16
+    },
+    {
+      "id": "t2c2",
+      "group": "t2",
+      "kind": "radio",
+      "name": "t2c",
+      "value": "2",
+      "label": "c Deine Augen sind sehr schön. - Gespräch 2",
+      "answer": "true",
+      "x": 729,
+      "y": 1280,
+      "w": 16,
+      "h": 16
+    },
+    {
+      "id": "t2c3",
+      "group": "t2",
+      "kind": "radio",
+      "name": "t2c",
+      "value": "3",
+      "label": "c Deine Augen sind sehr schön. - Gespräch 3",
+      "answer": "false",
+      "x": 782,
+      "y": 1280,
+      "w": 16,
+      "h": 16
+    }
+  ],
+  "audio": [
+    {
+      "id": "t2",
+      "src": "assets/kb-cd2-track01.mp3",
+      "label": "2 Was passt? Hören Sie und kreuzen Sie an.",
+      "x": 112,
+      "y": 1155,
+      "w": 26,
+      "h": 18
+    }
+  ],
+  "groups": [
+    {
+      "id": "t2",
+      "label": "2 Was passt?"
+    }
+  ],
+  "review": {
+    "status": "partial",
+    "verifiedWords": 120,
+    "totalWords": 120,
+    "notes": [
+      "Task 2 answers from the official Hueber answer key (Lektion 7 Kursbuch 2: 1b 2c 3a) - Gespräch 1 = b, Gespräch 2 = c, Gespräch 3 = a.",
+      "Title 'Du kannst wirklich toll ...!' sits on the photo and was missed by OCR; boxes estimated from the rendered page. Radio circle boxes and Gespräch column labels 1/2/3 estimated from the rendered page. Kursstatistik tally example (script font): only Frauen/Männer/Gespräch and row digits kept, boxes estimated; tally marks dropped as handwriting marks.",
+      "Right sidebar (white on blue) transcribed via crop + invert OCR; hyphenation splits kept as printed (Hobbys/Fä-higkeiten, bit-ten, Freizeitaktivi-täten).",
+      "Task 1 and 3 have no audio markers. Vertical 'noch einmal?' tab and footer digit 41 dropped as non-words."
+    ]
+  }
+}
