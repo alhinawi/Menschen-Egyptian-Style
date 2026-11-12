@@ -1672,13 +1672,159 @@
    "h": 12
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p37-6b",
+   "group": "g1",
+   "kind": "text",
+   "label": "6 b",
+   "answer": "wollen",
+   "x": 515,
+   "y": 235,
+   "w": 125,
+   "h": 22
+  },
+  {
+   "id": "p37-6c",
+   "group": "g1",
+   "kind": "text",
+   "label": "6 c",
+   "answer": "will",
+   "x": 390,
+   "y": 288,
+   "w": 102,
+   "h": 22
+  },
+  {
+   "id": "p37-6d",
+   "group": "g1",
+   "kind": "text",
+   "label": "6 d",
+   "answer": "wollen",
+   "x": 337,
+   "y": 312,
+   "w": 125,
+   "h": 22
+  },
+  {
+   "id": "p37-6e",
+   "group": "g1",
+   "kind": "text",
+   "label": "6 e",
+   "answer": "willst",
+   "x": 243,
+   "y": 364,
+   "w": 115,
+   "h": 22
+  },
+  {
+   "id": "p37-8b",
+   "group": "g2",
+   "kind": "text",
+   "label": "8 b",
+   "answer": "geschafft",
+   "x": 175,
+   "y": 901,
+   "w": 213,
+   "h": 22
+  },
+  {
+   "id": "p37-8c",
+   "group": "g2",
+   "kind": "text",
+   "label": "8 c",
+   "answer": "verdienen",
+   "x": 175,
+   "y": 929,
+   "w": 213,
+   "h": 22
+  },
+  {
+   "id": "p37-8d",
+   "group": "g2",
+   "kind": "text",
+   "label": "8 d",
+   "answer": "Motorrad",
+   "x": 280,
+   "y": 955,
+   "w": 212,
+   "h": 22
+  },
+  {
+   "id": "p37-8e",
+   "group": "g2",
+   "kind": "text",
+   "label": "8 e",
+   "answer": "Europa",
+   "x": 175,
+   "y": 980,
+   "w": 213,
+   "h": 22
+  },
+  {
+   "id": "p37-8f",
+   "group": "g2",
+   "kind": "text",
+   "label": "8 f",
+   "answer": "Führerschein",
+   "x": 175,
+   "y": 1006,
+   "w": 213,
+   "h": 22
+  },
+  {
+   "id": "p37-8g",
+   "group": "g2",
+   "kind": "text",
+   "label": "8 g",
+   "answer": "reisen",
+   "x": 175,
+   "y": 1032,
+   "w": 213,
+   "h": 22
+  },
+  {
+   "id": "p37-8h",
+   "group": "g2",
+   "kind": "text",
+   "label": "8 h",
+   "answer": "Leute",
+   "x": 175,
+   "y": 1058,
+   "w": 213,
+   "h": 22
+  },
+  {
+   "id": "p37-8i",
+   "group": "g2",
+   "kind": "text",
+   "label": "8 i",
+   "answer": "heiraten",
+   "x": 305,
+   "y": 1084,
+   "w": 220,
+   "h": 22
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 6"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 8"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the official Hueber Loesungsschluessel AB A1.2 (Lektion 17).",
+   "Ex 7 (word-order sentences) is not mapped: several orders are correct and the key gives one. Ex 6a and 8a are handwritten examples. Ex 9 is free writing.",
+   "Boxes placed from word coordinates; not marked verified."
+  ],
   "verifiedWords": 238,
-  "totalWords": 238,
-  "notes": []
+  "totalWords": 238
  }
 }
