@@ -61,7 +61,7 @@ export interface BookInfo {
 
 export const BOOKS: BookInfo[] = [
   {id: 'kb', title: 'Kursbuch', subtitle: 'Coursebook · 24 Lektionen', cover: 'assets/kb-a11-cover.jpg'},
-  {id: 'ab', title: 'Arbeitsbuch', subtitle: 'Workbook · 24 Lektionen', cover: 'assets/ab-a11-p30.png'},
+  {id: 'ab', title: 'Arbeitsbuch', subtitle: 'Workbook · 24 Lektionen', cover: 'assets/ab-a11-cover.jpg'},
 ];
 
 export interface LessonEntry extends LessonInfo {
