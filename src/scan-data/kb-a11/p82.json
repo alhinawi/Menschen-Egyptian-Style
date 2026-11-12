@@ -1,0 +1,1952 @@
+{
+  "book": "kb-a11",
+  "page": 82,
+  "image": "assets/kb-a11-p82.png",
+  "width": 1072,
+  "height": 1516,
+  "words": [
+    {
+      "text": "Stellen",
+      "x": 159,
+      "y": 278,
+      "w": 65,
+      "h": 18
+    },
+    {
+      "text": "Sie",
+      "x": 231,
+      "y": 278,
+      "w": 28,
+      "h": 16
+    },
+    {
+      "text": "andere",
+      "x": 266,
+      "y": 276,
+      "w": 65,
+      "h": 17
+    },
+    {
+      "text": "Personen",
+      "x": 339,
+      "y": 276,
+      "w": 85,
+      "h": 15
+    },
+    {
+      "text": "vor.",
+      "x": 432,
+      "y": 278,
+      "w": 35,
+      "h": 11
+    },
+    {
+      "text": "a",
+      "x": 170,
+      "y": 323,
+      "w": 8,
+      "h": 10
+    },
+    {
+      "text": "Ihre",
+      "x": 202,
+      "y": 317,
+      "w": 32,
+      "h": 16
+    },
+    {
+      "text": "Partnerin",
+      "x": 242,
+      "y": 316,
+      "w": 77,
+      "h": 16
+    },
+    {
+      "text": "/",
+      "x": 327,
+      "y": 316,
+      "w": 8,
+      "h": 17
+    },
+    {
+      "text": "Ihr",
+      "x": 343,
+      "y": 314,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "Partner",
+      "x": 373,
+      "y": 315,
+      "w": 62,
+      "h": 13
+    },
+    {
+      "text": "liest",
+      "x": 442,
+      "y": 312,
+      "w": 35,
+      "h": 14
+    },
+    {
+      "text": "Ihnen",
+      "x": 484,
+      "y": 310,
+      "w": 47,
+      "h": 16
+    },
+    {
+      "text": "drei",
+      "x": 538,
+      "y": 309,
+      "w": 31,
+      "h": 15
+    },
+    {
+      "text": "Texte",
+      "x": 575,
+      "y": 309,
+      "w": 45,
+      "h": 14
+    },
+    {
+      "text": "vor.",
+      "x": 626,
+      "y": 312,
+      "w": 30,
+      "h": 10
+    },
+    {
+      "text": "Hören",
+      "x": 202,
+      "y": 343,
+      "w": 49,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 258,
+      "y": 342,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "und",
+      "x": 290,
+      "y": 340,
+      "w": 30,
+      "h": 16
+    },
+    {
+      "text": "kreuzen",
+      "x": 328,
+      "y": 340,
+      "w": 65,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 400,
+      "y": 338,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "an:",
+      "x": 431,
+      "y": 342,
+      "w": 24,
+      "h": 10
+    },
+    {
+      "text": "richtig",
+      "x": 464,
+      "y": 336,
+      "w": 55,
+      "h": 21
+    },
+    {
+      "text": "oder",
+      "x": 526,
+      "y": 335,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "falsch?",
+      "x": 569,
+      "y": 333,
+      "w": 58,
+      "h": 16
+    },
+    {
+      "text": "10",
+      "x": 373,
+      "y": 642,
+      "w": 16,
+      "h": 14
+    },
+    {
+      "text": "11",
+      "x": 375,
+      "y": 694,
+      "w": 14,
+      "h": 12
+    },
+    {
+      "text": "12",
+      "x": 375,
+      "y": 718,
+      "w": 16,
+      "h": 14
+    },
+    {
+      "text": "13",
+      "x": 376,
+      "y": 743,
+      "w": 15,
+      "h": 14
+    },
+    {
+      "text": "14",
+      "x": 376,
+      "y": 769,
+      "w": 17,
+      "h": 13
+    },
+    {
+      "text": "15",
+      "x": 378,
+      "y": 794,
+      "w": 15,
+      "h": 13
+    },
+    {
+      "text": "richtig",
+      "x": 741,
+      "y": 357,
+      "w": 47,
+      "h": 17
+    },
+    {
+      "text": "Sonja",
+      "x": 396,
+      "y": 389,
+      "w": 46,
+      "h": 20
+    },
+    {
+      "text": "Wilkens",
+      "x": 448,
+      "y": 387,
+      "w": 68,
+      "h": 15
+    },
+    {
+      "text": "ist",
+      "x": 522,
+      "y": 387,
+      "w": 21,
+      "h": 14
+    },
+    {
+      "text": "Krankenschwester.",
+      "x": 550,
+      "y": 383,
+      "w": 161,
+      "h": 17
+    },
+    {
+      "text": "Sie",
+      "x": 396,
+      "y": 415,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "ist",
+      "x": 427,
+      "y": 414,
+      "w": 21,
+      "h": 14
+    },
+    {
+      "text": "33",
+      "x": 454,
+      "y": 414,
+      "w": 16,
+      "h": 13
+    },
+    {
+      "text": "Jahre",
+      "x": 476,
+      "y": 412,
+      "w": 46,
+      "h": 18
+    },
+    {
+      "text": "alt.",
+      "x": 529,
+      "y": 411,
+      "w": 27,
+      "h": 14
+    },
+    {
+      "text": "Sie",
+      "x": 397,
+      "y": 439,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "ist",
+      "x": 427,
+      "y": 439,
+      "w": 21,
+      "h": 14
+    },
+    {
+      "text": "verheiratet.",
+      "x": 453,
+      "y": 437,
+      "w": 101,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 397,
+      "y": 465,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "hat",
+      "x": 427,
+      "y": 463,
+      "w": 28,
+      "h": 15
+    },
+    {
+      "text": "keine",
+      "x": 461,
+      "y": 463,
+      "w": 47,
+      "h": 14
+    },
+    {
+      "text": "Kinder.",
+      "x": 515,
+      "y": 460,
+      "w": 61,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 398,
+      "y": 490,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "wohnt",
+      "x": 428,
+      "y": 488,
+      "w": 55,
+      "h": 15
+    },
+    {
+      "text": "in",
+      "x": 489,
+      "y": 488,
+      "w": 17,
+      "h": 14
+    },
+    {
+      "text": "Leipzig.",
+      "x": 513,
+      "y": 486,
+      "w": 65,
+      "h": 20
+    },
+    {
+      "text": "Bo",
+      "x": 400,
+      "y": 541,
+      "w": 19,
+      "h": 14
+    },
+    {
+      "text": "Martinson",
+      "x": 426,
+      "y": 539,
+      "w": 89,
+      "h": 15
+    },
+    {
+      "text": "kommt",
+      "x": 521,
+      "y": 537,
+      "w": 61,
+      "h": 15
+    },
+    {
+      "text": "aus",
+      "x": 588,
+      "y": 540,
+      "w": 26,
+      "h": 10
+    },
+    {
+      "text": "Norwegen.",
+      "x": 621,
+      "y": 536,
+      "w": 91,
+      "h": 18
+    },
+    {
+      "text": "Er",
+      "x": 400,
+      "y": 566,
+      "w": 18,
+      "h": 14
+    },
+    {
+      "text": "wohnt",
+      "x": 424,
+      "y": 564,
+      "w": 55,
+      "h": 15
+    },
+    {
+      "text": "in",
+      "x": 485,
+      "y": 564,
+      "w": 17,
+      "h": 14
+    },
+    {
+      "text": "Essen.",
+      "x": 509,
+      "y": 564,
+      "w": 51,
+      "h": 13
+    },
+    {
+      "text": "Er",
+      "x": 401,
+      "y": 591,
+      "w": 18,
+      "h": 14
+    },
+    {
+      "text": "ist",
+      "x": 425,
+      "y": 590,
+      "w": 21,
+      "h": 14
+    },
+    {
+      "text": "51",
+      "x": 452,
+      "y": 590,
+      "w": 14,
+      "h": 14
+    },
+    {
+      "text": "Jahre",
+      "x": 471,
+      "y": 588,
+      "w": 47,
+      "h": 18
+    },
+    {
+      "text": "alt.",
+      "x": 525,
+      "y": 587,
+      "w": 27,
+      "h": 15
+    },
+    {
+      "text": "Er",
+      "x": 401,
+      "y": 617,
+      "w": 18,
+      "h": 13
+    },
+    {
+      "text": "hat",
+      "x": 425,
+      "y": 615,
+      "w": 28,
+      "h": 14
+    },
+    {
+      "text": "drei",
+      "x": 459,
+      "y": 614,
+      "w": 34,
+      "h": 15
+    },
+    {
+      "text": "Kinder.",
+      "x": 500,
+      "y": 612,
+      "w": 61,
+      "h": 16
+    },
+    {
+      "text": "Er",
+      "x": 402,
+      "y": 642,
+      "w": 18,
+      "h": 13
+    },
+    {
+      "text": "arbeitet",
+      "x": 426,
+      "y": 640,
+      "w": 67,
+      "h": 15
+    },
+    {
+      "text": "als",
+      "x": 499,
+      "y": 638,
+      "w": 22,
+      "h": 15
+    },
+    {
+      "text": "Journalist.",
+      "x": 527,
+      "y": 636,
+      "w": 92,
+      "h": 19
+    },
+    {
+      "text": "Peter",
+      "x": 403,
+      "y": 693,
+      "w": 43,
+      "h": 13
+    },
+    {
+      "text": "und",
+      "x": 452,
+      "y": 689,
+      "w": 33,
+      "h": 16
+    },
+    {
+      "text": "Franziska",
+      "x": 492,
+      "y": 688,
+      "w": 83,
+      "h": 16
+    },
+    {
+      "text": "sind",
+      "x": 581,
+      "y": 686,
+      "w": 36,
+      "h": 16
+    },
+    {
+      "text": "28",
+      "x": 624,
+      "y": 687,
+      "w": 17,
+      "h": 13
+    },
+    {
+      "text": "und",
+      "x": 647,
+      "y": 685,
+      "w": 33,
+      "h": 15
+    },
+    {
+      "text": "27.",
+      "x": 687,
+      "y": 686,
+      "w": 18,
+      "h": 13
+    },
+    {
+      "text": "Sie",
+      "x": 403,
+      "y": 717,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "sind",
+      "x": 434,
+      "y": 715,
+      "w": 35,
+      "h": 15
+    },
+    {
+      "text": "geschieden.",
+      "x": 475,
+      "y": 713,
+      "w": 99,
+      "h": 22
+    },
+    {
+      "text": "Sie",
+      "x": 404,
+      "y": 742,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "wohnen",
+      "x": 434,
+      "y": 740,
+      "w": 69,
+      "h": 15
+    },
+    {
+      "text": "in",
+      "x": 509,
+      "y": 740,
+      "w": 17,
+      "h": 14
+    },
+    {
+      "text": "Wolfsburg.",
+      "x": 532,
+      "y": 737,
+      "w": 91,
+      "h": 20
+    },
+    {
+      "text": "Sie",
+      "x": 405,
+      "y": 767,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "arbeiten",
+      "x": 435,
+      "y": 766,
+      "w": 72,
+      "h": 15
+    },
+    {
+      "text": "bei",
+      "x": 512,
+      "y": 764,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "VW.",
+      "x": 543,
+      "y": 764,
+      "w": 33,
+      "h": 14
+    },
+    {
+      "text": "Sie",
+      "x": 405,
+      "y": 792,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "haben",
+      "x": 435,
+      "y": 791,
+      "w": 52,
+      "h": 15
+    },
+    {
+      "text": "zwei",
+      "x": 494,
+      "y": 790,
+      "w": 38,
+      "h": 15
+    },
+    {
+      "text": "Kinder.",
+      "x": 538,
+      "y": 788,
+      "w": 62,
+      "h": 16
+    },
+    {
+      "text": "b",
+      "x": 184,
+      "y": 872,
+      "w": 9,
+      "h": 15
+    },
+    {
+      "text": "Lesen",
+      "x": 215,
+      "y": 873,
+      "w": 44,
+      "h": 14
+    },
+    {
+      "text": "Sie",
+      "x": 267,
+      "y": 871,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "nun",
+      "x": 298,
+      "y": 875,
+      "w": 30,
+      "h": 10
+    },
+    {
+      "text": "Ihrer",
+      "x": 337,
+      "y": 869,
+      "w": 39,
+      "h": 15
+    },
+    {
+      "text": "Partnerin",
+      "x": 384,
+      "y": 867,
+      "w": 78,
+      "h": 16
+    },
+    {
+      "text": "/",
+      "x": 469,
+      "y": 867,
+      "w": 9,
+      "h": 17
+    },
+    {
+      "text": "Ihrem",
+      "x": 485,
+      "y": 865,
+      "w": 47,
+      "h": 15
+    },
+    {
+      "text": "Partner",
+      "x": 541,
+      "y": 866,
+      "w": 61,
+      "h": 13
+    },
+    {
+      "text": "die",
+      "x": 602,
+      "y": 858,
+      "w": 32,
+      "h": 26
+    },
+    {
+      "text": "Texte",
+      "x": 639,
+      "y": 858,
+      "w": 42,
+      "h": 26
+    },
+    {
+      "text": "vor.",
+      "x": 690,
+      "y": 865,
+      "w": 30,
+      "h": 10
+    },
+    {
+      "text": "Verstehen",
+      "x": 214,
+      "y": 896,
+      "w": 84,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 305,
+      "y": 895,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "ein",
+      "x": 335,
+      "y": 894,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "Wort",
+      "x": 366,
+      "y": 894,
+      "w": 42,
+      "h": 14
+    },
+    {
+      "text": "nicht?",
+      "x": 416,
+      "y": 892,
+      "w": 51,
+      "h": 15
+    },
+    {
+      "text": "Hilfe",
+      "x": 475,
+      "y": 890,
+      "w": 39,
+      "h": 16
+    },
+    {
+      "text": "finden",
+      "x": 521,
+      "y": 889,
+      "w": 52,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 580,
+      "y": 888,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "im",
+      "x": 612,
+      "y": 888,
+      "w": 19,
+      "h": 14
+    },
+    {
+      "text": "Variante:",
+      "x": 225,
+      "y": 1339,
+      "w": 65,
+      "h": 14
+    },
+    {
+      "text": "Machen",
+      "x": 227,
+      "y": 1363,
+      "w": 63,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 297,
+      "y": 1362,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "zu",
+      "x": 328,
+      "y": 1366,
+      "w": 18,
+      "h": 10
+    },
+    {
+      "text": "zweit",
+      "x": 354,
+      "y": 1360,
+      "w": 46,
+      "h": 15
+    },
+    {
+      "text": "ähnliche",
+      "x": 407,
+      "y": 1358,
+      "w": 71,
+      "h": 16
+    },
+    {
+      "text": "zusammen.",
+      "x": 226,
+      "y": 1392,
+      "w": 95,
+      "h": 11
+    },
+    {
+      "text": "zweiundachtzig",
+      "x": 188,
+      "y": 1453,
+      "w": 122,
+      "h": 17
+    },
+    {
+      "text": "oder",
+      "x": 739,
+      "y": 884,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "im",
+      "x": 783,
+      "y": 884,
+      "w": 19,
+      "h": 14
+    },
+    {
+      "text": "Wörterbuch.",
+      "x": 809,
+      "y": 880,
+      "w": 105,
+      "h": 17
+    },
+    {
+      "text": "Aufgaben",
+      "x": 484,
+      "y": 1356,
+      "w": 79,
+      "h": 22
+    },
+    {
+      "text": "und",
+      "x": 572,
+      "y": 1355,
+      "w": 30,
+      "h": 16
+    },
+    {
+      "text": "arbeiten",
+      "x": 609,
+      "y": 1354,
+      "w": 69,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 686,
+      "y": 1353,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "mit",
+      "x": 717,
+      "y": 1352,
+      "w": 28,
+      "h": 15
+    },
+    {
+      "text": "einem",
+      "x": 752,
+      "y": 1351,
+      "w": 50,
+      "h": 15
+    },
+    {
+      "text": "anderen",
+      "x": 810,
+      "y": 1349,
+      "w": 66,
+      "h": 15
+    },
+    {
+      "text": "Paar",
+      "x": 885,
+      "y": 1349,
+      "w": 35,
+      "h": 14
+    },
+    {
+      "text": "Helga",
+      "x": 379,
+      "y": 943,
+      "w": 48,
+      "h": 21
+    },
+    {
+      "text": "Stiemer",
+      "x": 433,
+      "y": 943,
+      "w": 66,
+      "h": 15
+    },
+    {
+      "text": "ist",
+      "x": 505,
+      "y": 942,
+      "w": 20,
+      "h": 14
+    },
+    {
+      "text": "67",
+      "x": 531,
+      "y": 942,
+      "w": 17,
+      "h": 13
+    },
+    {
+      "text": "und",
+      "x": 554,
+      "y": 939,
+      "w": 33,
+      "h": 16
+    },
+    {
+      "text": "Rentnerin.",
+      "x": 594,
+      "y": 938,
+      "w": 92,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 693,
+      "y": 937,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "ist",
+      "x": 723,
+      "y": 936,
+      "w": 21,
+      "h": 14
+    },
+    {
+      "text": "verheiratet",
+      "x": 749,
+      "y": 934,
+      "w": 97,
+      "h": 15
+    },
+    {
+      "text": "und",
+      "x": 852,
+      "y": 932,
+      "w": 34,
+      "h": 15
+    },
+    {
+      "text": "hat",
+      "x": 891,
+      "y": 931,
+      "w": 29,
+      "h": 15
+    },
+    {
+      "text": "drei",
+      "x": 925,
+      "y": 930,
+      "w": 34,
+      "h": 15
+    },
+    {
+      "text": "Kinder.",
+      "x": 380,
+      "y": 968,
+      "w": 61,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 448,
+      "y": 968,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "wohnt",
+      "x": 478,
+      "y": 966,
+      "w": 56,
+      "h": 16
+    },
+    {
+      "text": "in",
+      "x": 540,
+      "y": 966,
+      "w": 17,
+      "h": 14
+    },
+    {
+      "text": "München.",
+      "x": 563,
+      "y": 964,
+      "w": 86,
+      "h": 16
+    },
+    {
+      "text": "Carlos",
+      "x": 382,
+      "y": 1069,
+      "w": 51,
+      "h": 16
+    },
+    {
+      "text": "kommt",
+      "x": 439,
+      "y": 1069,
+      "w": 61,
+      "h": 14
+    },
+    {
+      "text": "aus",
+      "x": 506,
+      "y": 1072,
+      "w": 27,
+      "h": 10
+    },
+    {
+      "text": "Spanien",
+      "x": 540,
+      "y": 1066,
+      "w": 68,
+      "h": 20
+    },
+    {
+      "text": "und",
+      "x": 614,
+      "y": 1064,
+      "w": 34,
+      "h": 15
+    },
+    {
+      "text": "wohnt",
+      "x": 653,
+      "y": 1063,
+      "w": 56,
+      "h": 15
+    },
+    {
+      "text": "in",
+      "x": 714,
+      "y": 1063,
+      "w": 18,
+      "h": 14
+    },
+    {
+      "text": "Kiel.",
+      "x": 738,
+      "y": 1061,
+      "w": 38,
+      "h": 15
+    },
+    {
+      "text": "Er",
+      "x": 783,
+      "y": 1062,
+      "w": 19,
+      "h": 13
+    },
+    {
+      "text": "ist",
+      "x": 808,
+      "y": 1060,
+      "w": 20,
+      "h": 14
+    },
+    {
+      "text": "23",
+      "x": 835,
+      "y": 1060,
+      "w": 17,
+      "h": 14
+    },
+    {
+      "text": "Jahre",
+      "x": 857,
+      "y": 1058,
+      "w": 47,
+      "h": 18
+    },
+    {
+      "text": "alt",
+      "x": 911,
+      "y": 1057,
+      "w": 22,
+      "h": 15
+    },
+    {
+      "text": "und",
+      "x": 939,
+      "y": 1051,
+      "w": 33,
+      "h": 27
+    },
+    {
+      "text": "studiert",
+      "x": 383,
+      "y": 1095,
+      "w": 68,
+      "h": 15
+    },
+    {
+      "text": "an",
+      "x": 457,
+      "y": 1098,
+      "w": 21,
+      "h": 11
+    },
+    {
+      "text": "der",
+      "x": 483,
+      "y": 1093,
+      "w": 28,
+      "h": 15
+    },
+    {
+      "text": "Universität.",
+      "x": 517,
+      "y": 1091,
+      "w": 102,
+      "h": 16
+    },
+    {
+      "text": "Er",
+      "x": 627,
+      "y": 1091,
+      "w": 18,
+      "h": 13
+    },
+    {
+      "text": "ist",
+      "x": 651,
+      "y": 1090,
+      "w": 20,
+      "h": 14
+    },
+    {
+      "text": "nicht",
+      "x": 677,
+      "y": 1087,
+      "w": 46,
+      "h": 16
+    },
+    {
+      "text": "verheiratet",
+      "x": 728,
+      "y": 1086,
+      "w": 97,
+      "h": 16
+    },
+    {
+      "text": "und",
+      "x": 831,
+      "y": 1083,
+      "w": 33,
+      "h": 16
+    },
+    {
+      "text": "hat",
+      "x": 869,
+      "y": 1083,
+      "w": 29,
+      "h": 15
+    },
+    {
+      "text": "keine",
+      "x": 903,
+      "y": 1082,
+      "w": 47,
+      "h": 15
+    },
+    {
+      "text": "Kinder.",
+      "x": 384,
+      "y": 1120,
+      "w": 61,
+      "h": 15
+    },
+    {
+      "text": "Astrid",
+      "x": 385,
+      "y": 1220,
+      "w": 52,
+      "h": 16
+    },
+    {
+      "text": "und",
+      "x": 444,
+      "y": 1219,
+      "w": 33,
+      "h": 16
+    },
+    {
+      "text": "Norbert",
+      "x": 483,
+      "y": 1218,
+      "w": 67,
+      "h": 16
+    },
+    {
+      "text": "sind",
+      "x": 556,
+      "y": 1216,
+      "w": 36,
+      "h": 16
+    },
+    {
+      "text": "nicht",
+      "x": 598,
+      "y": 1216,
+      "w": 46,
+      "h": 15
+    },
+    {
+      "text": "verheiratet,",
+      "x": 648,
+      "y": 1214,
+      "w": 102,
+      "h": 16
+    },
+    {
+      "text": "sie",
+      "x": 758,
+      "y": 1213,
+      "w": 22,
+      "h": 14
+    },
+    {
+      "text": "sind",
+      "x": 786,
+      "y": 1210,
+      "w": 36,
+      "h": 16
+    },
+    {
+      "text": "geschieden.",
+      "x": 827,
+      "y": 1209,
+      "w": 99,
+      "h": 22
+    },
+    {
+      "text": "Astrid",
+      "x": 926,
+      "y": 1203,
+      "w": 60,
+      "h": 30
+    },
+    {
+      "text": "lebt",
+      "x": 385,
+      "y": 1246,
+      "w": 33,
+      "h": 15
+    },
+    {
+      "text": "in",
+      "x": 424,
+      "y": 1246,
+      "w": 18,
+      "h": 14
+    },
+    {
+      "text": "Hannover",
+      "x": 448,
+      "y": 1246,
+      "w": 84,
+      "h": 14
+    },
+    {
+      "text": "und",
+      "x": 538,
+      "y": 1242,
+      "w": 33,
+      "h": 16
+    },
+    {
+      "text": "Norbert",
+      "x": 577,
+      "y": 1241,
+      "w": 68,
+      "h": 16
+    },
+    {
+      "text": "und",
+      "x": 650,
+      "y": 1239,
+      "w": 33,
+      "h": 16
+    },
+    {
+      "text": "die",
+      "x": 690,
+      "y": 1239,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "Kinder",
+      "x": 721,
+      "y": 1237,
+      "w": 59,
+      "h": 16
+    },
+    {
+      "text": "leben",
+      "x": 785,
+      "y": 1236,
+      "w": 47,
+      "h": 16
+    },
+    {
+      "text": "in",
+      "x": 837,
+      "y": 1236,
+      "w": 18,
+      "h": 14
+    },
+    {
+      "text": "Hamburg.",
+      "x": 862,
+      "y": 1234,
+      "w": 83,
+      "h": 20
+    },
+    {
+      "text": "Astrid",
+      "x": 951,
+      "y": 1231,
+      "w": 52,
+      "h": 16
+    },
+    {
+      "text": "ist",
+      "x": 387,
+      "y": 1273,
+      "w": 21,
+      "h": 14
+    },
+    {
+      "text": "32",
+      "x": 414,
+      "y": 1272,
+      "w": 17,
+      "h": 14
+    },
+    {
+      "text": "und",
+      "x": 438,
+      "y": 1270,
+      "w": 32,
+      "h": 16
+    },
+    {
+      "text": "Norbert",
+      "x": 477,
+      "y": 1269,
+      "w": 67,
+      "h": 15
+    },
+    {
+      "text": "ist",
+      "x": 550,
+      "y": 1268,
+      "w": 21,
+      "h": 15
+    },
+    {
+      "text": "37",
+      "x": 577,
+      "y": 1268,
+      "w": 16,
+      "h": 15
+    },
+    {
+      "text": "Jahre",
+      "x": 598,
+      "y": 1266,
+      "w": 47,
+      "h": 19
+    },
+    {
+      "text": "alt.",
+      "x": 652,
+      "y": 1265,
+      "w": 26,
+      "h": 16
+    },
+    {
+      "text": "1",
+      "x": 379,
+      "y": 389,
+      "w": 8,
+      "h": 13
+    },
+    {
+      "text": "2",
+      "x": 379,
+      "y": 415,
+      "w": 8,
+      "h": 13
+    },
+    {
+      "text": "3",
+      "x": 379,
+      "y": 439,
+      "w": 8,
+      "h": 13
+    },
+    {
+      "text": "4",
+      "x": 379,
+      "y": 465,
+      "w": 8,
+      "h": 13
+    },
+    {
+      "text": "5",
+      "x": 379,
+      "y": 490,
+      "w": 8,
+      "h": 13
+    },
+    {
+      "text": "6",
+      "x": 379,
+      "y": 541,
+      "w": 8,
+      "h": 13
+    },
+    {
+      "text": "7",
+      "x": 379,
+      "y": 566,
+      "w": 8,
+      "h": 13
+    },
+    {
+      "text": "8",
+      "x": 379,
+      "y": 591,
+      "w": 8,
+      "h": 13
+    },
+    {
+      "text": "9",
+      "x": 379,
+      "y": 617,
+      "w": 8,
+      "h": 13
+    },
+    {
+      "text": "Bildlexikon",
+      "x": 639,
+      "y": 885,
+      "w": 91,
+      "h": 16
+    },
+    {
+      "text": "falsch",
+      "x": 849,
+      "y": 357,
+      "w": 41,
+      "h": 13
+    }
+  ],
+  "fields": [
+    {
+      "id": "a1r",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a1",
+      "value": "richtig",
+      "answer": "true",
+      "label": "Sonja Wilkens ist Krankenschwester.",
+      "x": 760,
+      "y": 387,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a1f",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a1",
+      "value": "falsch",
+      "answer": "false",
+      "label": "Sonja Wilkens ist Krankenschwester.",
+      "x": 852,
+      "y": 387,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a2r",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a2",
+      "value": "richtig",
+      "answer": "false",
+      "label": "Sie ist 33 Jahre alt.",
+      "x": 760,
+      "y": 413,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a2f",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a2",
+      "value": "falsch",
+      "answer": "true",
+      "label": "Sie ist 33 Jahre alt.",
+      "x": 852,
+      "y": 413,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a3r",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a3",
+      "value": "richtig",
+      "answer": "false",
+      "label": "Sie ist verheiratet.",
+      "x": 760,
+      "y": 437,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a3f",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a3",
+      "value": "falsch",
+      "answer": "true",
+      "label": "Sie ist verheiratet.",
+      "x": 852,
+      "y": 437,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a4r",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a4",
+      "value": "richtig",
+      "answer": "false",
+      "label": "Sie hat keine Kinder.",
+      "x": 760,
+      "y": 463,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a4f",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a4",
+      "value": "falsch",
+      "answer": "true",
+      "label": "Sie hat keine Kinder.",
+      "x": 852,
+      "y": 463,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a5r",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a5",
+      "value": "richtig",
+      "answer": "true",
+      "label": "Sie wohnt in Leipzig.",
+      "x": 760,
+      "y": 488,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a5f",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a5",
+      "value": "falsch",
+      "answer": "false",
+      "label": "Sie wohnt in Leipzig.",
+      "x": 852,
+      "y": 488,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a6r",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a6",
+      "value": "richtig",
+      "answer": "false",
+      "label": "Bo Martinson kommt aus Norwegen.",
+      "x": 760,
+      "y": 539,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a6f",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a6",
+      "value": "falsch",
+      "answer": "true",
+      "label": "Bo Martinson kommt aus Norwegen.",
+      "x": 852,
+      "y": 539,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a7r",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a7",
+      "value": "richtig",
+      "answer": "true",
+      "label": "Er wohnt in Essen.",
+      "x": 760,
+      "y": 564,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a7f",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a7",
+      "value": "falsch",
+      "answer": "false",
+      "label": "Er wohnt in Essen.",
+      "x": 852,
+      "y": 564,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a8r",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a8",
+      "value": "richtig",
+      "answer": "false",
+      "label": "Er ist 51 Jahre alt.",
+      "x": 760,
+      "y": 589,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a8f",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a8",
+      "value": "falsch",
+      "answer": "true",
+      "label": "Er ist 51 Jahre alt.",
+      "x": 852,
+      "y": 589,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a9r",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a9",
+      "value": "richtig",
+      "answer": "false",
+      "label": "Er hat drei Kinder.",
+      "x": 760,
+      "y": 615,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a9f",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a9",
+      "value": "falsch",
+      "answer": "true",
+      "label": "Er hat drei Kinder.",
+      "x": 852,
+      "y": 615,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a10r",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a10",
+      "value": "richtig",
+      "answer": "false",
+      "label": "Er arbeitet als Journalist.",
+      "x": 760,
+      "y": 640,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a10f",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a10",
+      "value": "falsch",
+      "answer": "true",
+      "label": "Er arbeitet als Journalist.",
+      "x": 852,
+      "y": 640,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a11r",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a11",
+      "value": "richtig",
+      "answer": "false",
+      "label": "Peter und Franziska sind 28 und 27.",
+      "x": 760,
+      "y": 691,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a11f",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a11",
+      "value": "falsch",
+      "answer": "true",
+      "label": "Peter und Franziska sind 28 und 27.",
+      "x": 852,
+      "y": 691,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a12r",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a12",
+      "value": "richtig",
+      "answer": "false",
+      "label": "Sie sind geschieden.",
+      "x": 760,
+      "y": 716,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a12f",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a12",
+      "value": "falsch",
+      "answer": "true",
+      "label": "Sie sind geschieden.",
+      "x": 852,
+      "y": 716,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a13r",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a13",
+      "value": "richtig",
+      "answer": "true",
+      "label": "Sie wohnen in Wolfsburg.",
+      "x": 760,
+      "y": 741,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a13f",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a13",
+      "value": "falsch",
+      "answer": "false",
+      "label": "Sie wohnen in Wolfsburg.",
+      "x": 852,
+      "y": 741,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a14r",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a14",
+      "value": "richtig",
+      "answer": "true",
+      "label": "Sie arbeiten bei VW.",
+      "x": 760,
+      "y": 767,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a14f",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a14",
+      "value": "falsch",
+      "answer": "false",
+      "label": "Sie arbeiten bei VW.",
+      "x": 852,
+      "y": 767,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a15r",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a15",
+      "value": "richtig",
+      "answer": "false",
+      "label": "Sie haben zwei Kinder.",
+      "x": 760,
+      "y": 792,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "a15f",
+      "group": "taska",
+      "kind": "radio",
+      "name": "a15",
+      "value": "falsch",
+      "answer": "true",
+      "label": "Sie haben zwei Kinder.",
+      "x": 852,
+      "y": 792,
+      "w": 18,
+      "h": 18
+    }
+  ],
+  "audio": [],
+  "groups": [],
+  "review": {
+    "status": "verified",
+    "notes": [
+      "All printed words reviewed against the scan; statement numbers 1-9 and the falsch column header recovered manually.",
+      "Task a richtig/falsch answers verified from the printed partner texts on page 78 (Partner A): Sonja 32/nicht verheiratet/ein Kind/Leipzig; Bo aus Schweden/50/zwei Kinder/Ingenieur/Essen; Peter+Franziska 28 und 25/nicht verheiratet/Wolfsburg/VW/keine Kinder.",
+      "No audio marker printed on page."
+    ],
+    "verifiedWords": 220
+  }
+}
