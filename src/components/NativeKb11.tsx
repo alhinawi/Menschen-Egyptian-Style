@@ -1,3 +1,4 @@
+import {ClipMarkers} from './ClipMarkers';
 import {useLayoutEffect,useRef,useState} from 'react';
 import type {CSSProperties} from 'react';
 import './native-kb11.css';
@@ -34,6 +35,7 @@ function Inner({data}:{data:NativePage}){
     if(f.kind==='checkbox')return <input {...common} type="checkbox" checked={v[f.id]==='true'} onChange={e=>set(f.id,String(e.target.checked))}/>;
     if(f.kind==='select')return <select {...common} value={v[f.id]||''} onChange={e=>set(f.id,e.target.value)}><option value=""/>{f.options?.map(o=><option key={o.value} value={o.value}>{o.label}</option>)}</select>;
     return <input {...common} type="text" autoComplete="off" value={v[f.id]||''} onChange={e=>set(f.id,e.target.value)} style={{...pos(f.x,f.y,f.w,f.h),fontSize:Math.min(f.h*0.8,22)/W*100+'cqw'}}/>})}
+   <ClipMarkers book="kb-a11" page={data.page}/>
    {data.audio.map(a=><button key={a.id} className="nkbListen" style={pos(a.x,a.y,a.w,a.h)} aria-label={a.label||('Originalaudio '+a.id)} onClick={()=>play(a.id)}/>)}
    {groups.map(g=><div key={g} className="nkbCheck" style={checkPos(g)}><button onClick={()=>grade(g)}>Prüfen ✓</button><output>{data.fields.filter(f=>f.group===g&&f.answer!==undefined).every(f=>res[f.id]!==undefined)?(data.fields.filter(f=>f.group===g&&f.answer!==undefined).every(f=>res[f.id])?'✓ Richtig!':'Noch einmal'):''}</output></div>)}
   </div>
