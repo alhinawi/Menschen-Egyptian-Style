@@ -401,8 +401,7 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "book.css",
-      "batch-l21-24.css"
+      "book.css"
     ],
     "initializers": [
       "glossary",
