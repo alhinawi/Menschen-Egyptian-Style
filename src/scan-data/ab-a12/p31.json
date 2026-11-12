@@ -1959,13 +1959,379 @@
    "h": 12
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p31-6a1-nach einem",
+   "group": "g1",
+   "kind": "radio",
+   "label": "6 a (1) nach einem",
+   "answer": "false",
+   "name": "6a1",
+   "value": "nach einem",
+   "x": 299,
+   "y": 522,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p31-6a1-für ein",
+   "group": "g1",
+   "kind": "radio",
+   "label": "6 a (1) für ein",
+   "answer": "true",
+   "name": "6a1",
+   "value": "für ein",
+   "x": 446,
+   "y": 522,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p31-6a2-nach",
+   "group": "g1",
+   "kind": "radio",
+   "label": "6 a (2) nach",
+   "answer": "false",
+   "name": "6a2",
+   "value": "nach",
+   "x": 832,
+   "y": 523,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p31-6a2-vor",
+   "group": "g1",
+   "kind": "radio",
+   "label": "6 a (2) vor",
+   "answer": "true",
+   "name": "6a2",
+   "value": "vor",
+   "x": 166,
+   "y": 552,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p31-6b-für",
+   "group": "g1",
+   "kind": "radio",
+   "label": "6 b für",
+   "answer": "false",
+   "name": "6b",
+   "value": "für",
+   "x": 300,
+   "y": 575,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p31-6b-nach",
+   "group": "g1",
+   "kind": "radio",
+   "label": "6 b nach",
+   "answer": "true",
+   "name": "6b",
+   "value": "nach",
+   "x": 362,
+   "y": 575,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p31-6c-nach",
+   "group": "g1",
+   "kind": "radio",
+   "label": "6 c nach",
+   "answer": "false",
+   "name": "6c",
+   "value": "nach",
+   "x": 324,
+   "y": 597,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p31-6c-in",
+   "group": "g1",
+   "kind": "radio",
+   "label": "6 c in",
+   "answer": "true",
+   "name": "6c",
+   "value": "in",
+   "x": 409,
+   "y": 597,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p31-6d1-in",
+   "group": "g1",
+   "kind": "radio",
+   "label": "6 d (1) in",
+   "answer": "false",
+   "name": "6d1",
+   "value": "in",
+   "x": 274,
+   "y": 623,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p31-6d1-vor",
+   "group": "g1",
+   "kind": "radio",
+   "label": "6 d (1) vor",
+   "answer": "true",
+   "name": "6d1",
+   "value": "vor",
+   "x": 335,
+   "y": 623,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p31-6d2-In",
+   "group": "g1",
+   "kind": "radio",
+   "label": "6 d (2) In",
+   "answer": "true",
+   "name": "6d2",
+   "value": "In",
+   "x": 265,
+   "y": 653,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p31-6d2-Für",
+   "group": "g1",
+   "kind": "radio",
+   "label": "6 d (2) Für",
+   "answer": "false",
+   "name": "6d2",
+   "value": "Für",
+   "x": 329,
+   "y": 653,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p31-6e-nach dem",
+   "group": "g1",
+   "kind": "radio",
+   "label": "6 e nach dem",
+   "answer": "true",
+   "name": "6e",
+   "value": "nach dem",
+   "x": 305,
+   "y": 702,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p31-6e-für den",
+   "group": "g1",
+   "kind": "radio",
+   "label": "6 e für den",
+   "answer": "false",
+   "name": "6e",
+   "value": "für den",
+   "x": 430,
+   "y": 702,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p31-7b",
+   "group": "g2",
+   "kind": "text",
+   "label": "7b",
+   "answer": "em",
+   "x": 234,
+   "y": 851,
+   "w": 38,
+   "h": 22
+  },
+  {
+   "id": "p31-7c",
+   "group": "g2",
+   "kind": "text",
+   "label": "7c",
+   "answer": "er",
+   "x": 246,
+   "y": 872,
+   "w": 50,
+   "h": 22
+  },
+  {
+   "id": "p31-7d",
+   "group": "g2",
+   "kind": "text",
+   "label": "7d",
+   "answer": "er",
+   "x": 503,
+   "y": 822,
+   "w": 49,
+   "h": 22
+  },
+  {
+   "id": "p31-7e",
+   "group": "g2",
+   "kind": "text",
+   "label": "7e",
+   "answer": "en",
+   "x": 515,
+   "y": 852,
+   "w": 50,
+   "h": 22
+  },
+  {
+   "id": "p31-7f",
+   "group": "g2",
+   "kind": "text",
+   "label": "7f",
+   "answer": "em",
+   "x": 515,
+   "y": 872,
+   "w": 53,
+   "h": 22
+  },
+  {
+   "id": "p31-7g",
+   "group": "g2",
+   "kind": "text",
+   "label": "7g",
+   "answer": "er",
+   "x": 800,
+   "y": 823,
+   "w": 50,
+   "h": 22
+  },
+  {
+   "id": "p31-7h",
+   "group": "g2",
+   "kind": "text",
+   "label": "7h",
+   "answer": "em",
+   "x": 808,
+   "y": 853,
+   "w": 50,
+   "h": 22
+  },
+  {
+   "id": "p31-8b",
+   "group": "g3",
+   "kind": "text",
+   "label": "8b",
+   "answer": "von",
+   "x": 482,
+   "y": 1091,
+   "w": 84,
+   "h": 22
+  },
+  {
+   "id": "p31-8c",
+   "group": "g3",
+   "kind": "text",
+   "label": "8c",
+   "answer": "bis",
+   "x": 650,
+   "y": 1092,
+   "w": 82,
+   "h": 22
+  },
+  {
+   "id": "p31-8d",
+   "group": "g3",
+   "kind": "text",
+   "label": "8d",
+   "answer": "Nach|nach",
+   "x": 152,
+   "y": 1115,
+   "w": 178,
+   "h": 22
+  },
+  {
+   "id": "p31-8e",
+   "group": "g3",
+   "kind": "text",
+   "label": "8e",
+   "answer": "am",
+   "x": 642,
+   "y": 1117,
+   "w": 93,
+   "h": 22
+  },
+  {
+   "id": "p31-8f",
+   "group": "g3",
+   "kind": "text",
+   "label": "8f",
+   "answer": "Um|um",
+   "x": 245,
+   "y": 1167,
+   "w": 87,
+   "h": 22
+  },
+  {
+   "id": "p31-8g",
+   "group": "g3",
+   "kind": "text",
+   "label": "8g",
+   "answer": "vor",
+   "x": 420,
+   "y": 1194,
+   "w": 90,
+   "h": 22
+  },
+  {
+   "id": "p31-8h",
+   "group": "g3",
+   "kind": "text",
+   "label": "8h",
+   "answer": "um",
+   "x": 285,
+   "y": 1218,
+   "w": 90,
+   "h": 22
+  },
+  {
+   "id": "p31-8i",
+   "group": "g3",
+   "kind": "text",
+   "label": "8i",
+   "answer": "nach",
+   "x": 734,
+   "y": 1221,
+   "w": 92,
+   "h": 22
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 6"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 7"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 8"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the official Hueber Loesungsschluessel AB A1.2 (Lektion 16, Aufgaben 6-8).",
+   "Ex 5 (write the dialogue) is free writing and not a field. 7a and 8a are printed/handwritten examples.",
+   "Ex 7: only the word ending is typed (em/er/en). Ex 8 gaps stand before the printed (b)-(i) labels; the key lists the preposition for each.",
+   "Radio circles and gaps placed from the scan; not marked verified."
+  ],
   "verifiedWords": 279,
-  "totalWords": 279,
-  "notes": []
+  "totalWords": 279
  }
 }
