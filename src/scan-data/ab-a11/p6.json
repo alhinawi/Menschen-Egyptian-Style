@@ -755,7 +755,7 @@
    "h": 15
   },
   {
-   "text": "Wer",
+   "text": "wer",
    "x": 662,
    "y": 997,
    "w": 31,
@@ -1019,6 +1019,20 @@
    "y": 1372,
    "w": 42,
    "h": 15
+  },
+  {
+   "text": "du?",
+   "x": 278,
+   "y": 990,
+   "w": 50,
+   "h": 24
+  },
+  {
+   "text": "du?",
+   "x": 828,
+   "y": 1040,
+   "w": 36,
+   "h": 24
   }
  ],
  "fields": [
@@ -1397,6 +1411,259 @@
    "y": 858,
    "w": 100,
    "h": 28
+  },
+  {
+   "id": "u4-a1",
+   "group": "u4",
+   "kind": "text",
+   "label": "4a blank 1",
+   "answer": "ich",
+   "x": 295,
+   "y": 955,
+   "w": 55,
+   "h": 28
+  },
+  {
+   "id": "u4-a2",
+   "group": "u4",
+   "kind": "text",
+   "label": "4a blank 2",
+   "answer": "Wie",
+   "x": 578,
+   "y": 962,
+   "w": 250,
+   "h": 26
+  },
+  {
+   "id": "u4-a3",
+   "group": "u4",
+   "kind": "text",
+   "label": "4a blank 3",
+   "answer": "heiße",
+   "x": 290,
+   "y": 1012,
+   "w": 255,
+   "h": 28
+  },
+  {
+   "id": "u4-a4",
+   "group": "u4",
+   "kind": "text",
+   "label": "4a blank 4",
+   "answer": "woher",
+   "x": 290,
+   "y": 1040,
+   "w": 260,
+   "h": 28
+  },
+  {
+   "id": "u4-a5",
+   "group": "u4",
+   "kind": "text",
+   "label": "4a blank 5",
+   "answer": "du",
+   "x": 215,
+   "y": 1065,
+   "w": 275,
+   "h": 28
+  },
+  {
+   "id": "u4-a6",
+   "group": "u4",
+   "kind": "text",
+   "label": "4a blank 6",
+   "answer": "komme",
+   "x": 375,
+   "y": 1088,
+   "w": 275,
+   "h": 28
+  },
+  {
+   "id": "u4-b1",
+   "group": "u4",
+   "kind": "text",
+   "label": "4b blank 1",
+   "answer": "und",
+   "x": 840,
+   "y": 962,
+   "w": 125,
+   "h": 26
+  },
+  {
+   "id": "u4-b2",
+   "group": "u4",
+   "kind": "text",
+   "label": "4b blank 2",
+   "answer": "bist",
+   "x": 700,
+   "y": 990,
+   "w": 120,
+   "h": 26
+  },
+  {
+   "id": "u4-b3",
+   "group": "u4",
+   "kind": "text",
+   "label": "4b blank 3",
+   "answer": "Ich",
+   "x": 657,
+   "y": 1012,
+   "w": 128,
+   "h": 28
+  },
+  {
+   "id": "u4-b4",
+   "group": "u4",
+   "kind": "text",
+   "label": "4b blank 4",
+   "answer": "kommst",
+   "x": 760,
+   "y": 1040,
+   "w": 125,
+   "h": 28
+  },
+  {
+   "id": "u4-b5",
+   "group": "u4",
+   "kind": "text",
+   "label": "4b blank 5",
+   "answer": "aus",
+   "x": 760,
+   "y": 1065,
+   "w": 125,
+   "h": 28
+  },
+  {
+   "id": "u5-A",
+   "group": "u5",
+   "kind": "select",
+   "label": "A Brandenburger Tor",
+   "answer": "Deutschland",
+   "options": [
+    {
+     "value": "Deutschland",
+     "label": "Deutschland"
+    },
+    {
+     "value": "Frankreich",
+     "label": "Frankreich"
+    },
+    {
+     "value": "Österreich",
+     "label": "Österreich"
+    },
+    {
+     "value": "die Schweiz",
+     "label": "die Schweiz"
+    },
+    {
+     "value": "die Türkei",
+     "label": "die Türkei"
+    }
+   ],
+   "x": 224,
+   "y": 1392,
+   "w": 77,
+   "h": 26
+  },
+  {
+   "id": "u5-B",
+   "group": "u5",
+   "kind": "select",
+   "label": "B Eiffelturm",
+   "answer": "Frankreich",
+   "options": [
+    {
+     "value": "Deutschland",
+     "label": "Deutschland"
+    },
+    {
+     "value": "Frankreich",
+     "label": "Frankreich"
+    },
+    {
+     "value": "Österreich",
+     "label": "Österreich"
+    },
+    {
+     "value": "die Schweiz",
+     "label": "die Schweiz"
+    },
+    {
+     "value": "die Türkei",
+     "label": "die Türkei"
+    }
+   ],
+   "x": 397,
+   "y": 1392,
+   "w": 80,
+   "h": 26
+  },
+  {
+   "id": "u5-D",
+   "group": "u5",
+   "kind": "select",
+   "label": "D Matterhorn",
+   "answer": "die Schweiz",
+   "options": [
+    {
+     "value": "Deutschland",
+     "label": "Deutschland"
+    },
+    {
+     "value": "Frankreich",
+     "label": "Frankreich"
+    },
+    {
+     "value": "Österreich",
+     "label": "Österreich"
+    },
+    {
+     "value": "die Schweiz",
+     "label": "die Schweiz"
+    },
+    {
+     "value": "die Türkei",
+     "label": "die Türkei"
+    }
+   ],
+   "x": 685,
+   "y": 1392,
+   "w": 130,
+   "h": 26
+  },
+  {
+   "id": "u5-E",
+   "group": "u5",
+   "kind": "select",
+   "label": "E Hagia Sophia",
+   "answer": "die Türkei",
+   "options": [
+    {
+     "value": "Deutschland",
+     "label": "Deutschland"
+    },
+    {
+     "value": "Frankreich",
+     "label": "Frankreich"
+    },
+    {
+     "value": "Österreich",
+     "label": "Österreich"
+    },
+    {
+     "value": "die Schweiz",
+     "label": "die Schweiz"
+    },
+    {
+     "value": "die Türkei",
+     "label": "die Türkei"
+    }
+   ],
+   "x": 888,
+   "y": 1394,
+   "w": 116,
+   "h": 26
   }
  ],
  "audio": [],
@@ -1412,16 +1679,25 @@
   {
    "id": "u3",
    "label": "Übung 3 · Ordnen Sie zu"
+  },
+  {
+   "id": "u4",
+   "label": "Übung 4 · Ergänzen Sie"
+  },
+  {
+   "id": "u5",
+   "label": "Übung 5 · Länder"
   }
  ],
  "review": {
-  "status": "partial",
-  "verifiedWords": 145,
-  "totalWords": 145,
+  "status": "verified",
+  "verifiedWords": 147,
+  "totalWords": 147,
   "notes": [
-   "words verified against scan; handwriting excluded; footer/margin/vertical labels excluded",
-   "U1-U3 fields placed (rules detected programmatically + grid-verified); U4/U5 fields pending next pass",
-   "no audio tracks on this page"
+   "all words verified against scan pixels; handwriting and margin/footer/vertical labels excluded",
+   "all 5 exercises: fields placed on detected rules + grid-verified crops; answers from AB A1.1 Lösungsschlüssel",
+   "U2 circle y-centers read from 2x grid crop; U5 photo C is the printed example (no field)",
+   "no audio on this page"
   ]
  }
 }
