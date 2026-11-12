@@ -1,4 +1,3 @@
-// @ts-nocheck — legacy lesson service ported from the pre-TypeScript build; strict checking returns when this service is rewritten in React.
 export default function mount(){
 /* Egyptian Arabic sentence translations for Arbeitsbuch A1.1, Lektionen 7-9. */
 Object.assign(window.MENSCHEN_PHRASES,{
@@ -212,7 +211,7 @@ Object.assign(window.MENSCHEN_PHRASES,{
 'Ich kann Schach spielen.':'بعرف ألعب شطرنج.',
 'Ich kann gut Schach spielen.':'بعرف ألعب شطرنج كويس.',
 'Ich kann sehr gut Schach spielen.':'بعرف ألعب شطرنج كويس اوي.',
-'Was machst du in der Freizeit?':'بتعمل إيه في وقت فراغك؟',
+
 'Hörst du gern Musik?':'بتحب تسمع مزيكا؟',
 'Oh ja. Ich liebe Musik.':'أيوه. أنا بحب المزيكا موت.',
 'Singst du gern?':'بتحب تغني؟',
@@ -301,7 +300,7 @@ Object.assign(window.MENSCHEN_PHRASES,{
 'Leider kann ich nicht kommen.':'للأسف مش أقدر أجي.',
 'Am Wochenende fahre ich nach Wien.':'في الويك إند مسافر فيينا.',
 'Am Sonntag kann ich nicht kommen.':'يوم الحد مش أقدر أجي.',
-'Kann ich mal telefonieren?':'ممكن أعمل مكالمة؟',
+
 'Kann ich dich mal sprechen?':'ممكن أكلمك؟',
 'Was macht Paul diese Woche?':'بول هيعمل إيه الأسبوع ده؟',
 'Am Montag geht Paul um halb neun mit Jan ins Kino.':'يوم الاثنين بول رايح الساعة تمانية ونص السينما مع يان.',
@@ -442,7 +441,7 @@ Object.assign(window.MENSCHEN_PHRASES,{
 'ja, gern':'أيوه، بحب',
 'nein, danke':'لأ، شكر',
 'Bitte schön.':'اتفضل.',
-'Das weiß ich noch nicht.':'لسه مش عارف.',
+
 'Ich weiß nicht.':'مش عارف.',
 'Ich freue mich sehr.':'أنا مبسوط اوي.',
 'Ich freue mich auch sehr auf das Sommercamp!':'وأنا كمان متحمس اوي للمخيم الصيفي!',
@@ -527,7 +526,7 @@ Object.assign(window.MENSCHEN_PHRASES,{
 'Lesen Sie die E-Mails':'اقرا الإيميلات',
 'Was essen und trinken die Personen?':'الناس بتاكل وتشرب إيه؟',
 'Schreiben Sie die Rechnung':'اكتب الفاتورة',
-'Wie spät ist es?':'الساعة كام؟',
+
 'Wie heißen die Wörter?':'الكلمات اسمها إيه؟',
 'Wie heißen die Artikel?':'أدوات التعريف إيه؟',
 'Bilden Sie neue Wörter':'كوّن كلمات جديدة',
