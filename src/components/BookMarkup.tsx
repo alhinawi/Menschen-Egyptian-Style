@@ -15,7 +15,7 @@ import {scanData} from '../scan-data/registry';
 import {WordBank} from '../exercises/WordBank';
 import {RatingDot} from '../persistence/RatingDot';
 import {TaskControl, TaskFeedback, TaskMode} from '../exercises/CustomTasks';
-import {createElement, memo, Fragment, useLayoutEffect} from 'react';
+import {createElement, memo, useLayoutEffect} from 'react';
 import type {ReactNode} from 'react';
 import {CoverSocials} from './CoverSocials';
 import {SelectionControls} from '../meanings/SelectionControls';
@@ -127,8 +127,7 @@ export const BookMarkup = memo(function BookMarkup({nodes, quizEnabled = false}:
     return () => {observer.disconnect();document.body.classList.remove('readerSplitControls');};
   }, [nodes]);
   return <>{nodes.map((node, i) => {
-    if (typeof node !== 'string' && node[1].class === 'controls') return render([node[0],node[1],node[2].filter(child => !navigation.includes(child))], i, null, quizEnabled);
-    if (typeof node !== 'string' && node[0] === 'header' && navigation.length) return <Fragment key={i}>{render(node, i, null, quizEnabled)}<nav className="readerPageNavigation" aria-label="Page navigation">{navigation.map((child, n) => render(child, `page-nav-${n}`, null, quizEnabled))}</nav></Fragment>;
+    if (typeof node !== 'string' && node[1].class === 'controls') return <nav key={i} className="controls"><div className="readerPageNavigation" aria-label="Page navigation">{navigation.map((child, n) => render(child, `page-nav-${n}`, null, quizEnabled))}</div><div className="readerToolRow">{node[2].filter(child => !navigation.includes(child)).map((child,n) => render(child, `bottom-tool-${n}`, null, quizEnabled))}</div></nav>;
     return render(node, i, null, quizEnabled);
   })}</>;
 });
