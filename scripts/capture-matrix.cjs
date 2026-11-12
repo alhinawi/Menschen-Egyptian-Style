@@ -30,9 +30,11 @@ const server = http.createServer((req, res) => {
         await p.addInitScript(([t, m]) => {
           try { localStorage.setItem('menschen-site-theme', JSON.stringify({id: t, mode: m, palette: '1'})); } catch {}
         }, [theme, modeOf(theme)]);
+        const shotPath = path.join(outdir, page.replace('.html', '') + '__' + theme + '.png');
+        if (process.env.RESUME && fs.existsSync(shotPath)) continue;
         await p.goto('http://127.0.0.1:5190/' + page);
         await p.waitForTimeout(250);
-        await p.screenshot({path: path.join(outdir, page.replace('.html', '') + '__' + theme + '.png')});
+        await p.screenshot({path: shotPath});
       }
       console.log('captured', page);
     }
