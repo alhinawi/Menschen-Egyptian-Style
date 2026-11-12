@@ -22,11 +22,18 @@ export function LibraryNav({slug}: {slug: string}) {
   const store = useContext(ReaderContext) as ReaderStore | null;
   const [panel, setPanel] = useState<Panel>(() => {
     const wanted = new URLSearchParams(location.search).get('lnv');
-    return wanted === 'nav' || wanted === 'pages' ? wanted : null;
+    if (wanted === 'nav' || wanted === 'pages') return wanted;
+    // A book switch in the library asks the next page to reopen it.
+    try {
+      if (sessionStorage.getItem('menschen-libnav') === 'open') {
+        sessionStorage.removeItem('menschen-libnav');
+        return 'nav';
+      }
+    } catch {}
+    return null;
   });
   // Screenshot/test hook: ?lnv= renders the final state without entry animation.
   const noAnim = new URLSearchParams(location.search).has('lnv');
-  const [book, setBook] = useState<'kb' | 'ab'>(mod?.book ?? 'kb');
   const [headerSlot, setHeaderSlot] = useState<HTMLElement | null>(null);
   const [pageSlot, setPageSlot] = useState<HTMLElement | null>(null);
   const [pageIndex, setPageIndex] = useState(0);
@@ -99,11 +106,17 @@ export function LibraryNav({slug}: {slug: string}) {
   };
 
   const levels: Array<'A1.1' | 'A1.2'> = ['A1.1', 'A1.2'];
-  const selectedBook = BOOKS.find(b => b.id === book)!;
+  // Tapping the other book's card switches straight to the matching
+  // Lektion there (same level, same lesson when it exists).
+  const switchTarget = (target: 'kb' | 'ab') => {
+    const candidates = levelLessons(target, mod.level);
+    const match = currentLesson ? candidates.find(l => l.label === currentLesson.label) : null;
+    return (match ?? candidates[0])!;
+  };
 
   return <>
     {headerSlot && createPortal(
-      <button type="button" className="lnv-pill" aria-haspopup="dialog" onClick={() => {setBook(mod.book); setPanel('nav');}}>
+      <button type="button" className="lnv-pill" aria-haspopup="dialog" onClick={() => setPanel('nav')}>
         <span className="lnv-dot"/><span className="lnv-pillText">{pillText}</span><span className="lnv-chev">▾</span>
       </button>, headerSlot)}
     {pageSlot && createPortal(
@@ -119,22 +132,32 @@ export function LibraryNav({slug}: {slug: string}) {
             <button type="button" className="lnv-close" aria-label="Close menu" onClick={close}>×</button>
           </div>
           <div className="lnv-label">CHOOSE YOUR BOOK</div>
-          {BOOKS.map(b => (
-            <button type="button" key={b.id}
-              className={'lnv-bookcard' + (b.id === book ? ' sel' : '')}
-              aria-pressed={b.id === book}
-              onClick={() => setBook(b.id)}>
-              <img src={b.cover} alt=""/>
-              <span className="lnv-bt">{b.title}<small>{b.subtitle}</small></span>
-              <span className="lnv-cardchev">{b.id === book ? '▾' : '›'}</span>
-            </button>
-          ))}
+          {BOOKS.map(b => {
+            if (b.id === mod.book) {
+              return (
+                <div key={b.id} className="lnv-bookcard sel" aria-current="true">
+                  <img src={b.cover} alt=""/>
+                  <span className="lnv-bt">{b.title}<small>{b.subtitle}</small></span>
+                </div>
+              );
+            }
+            // Switch straight to the matching Lektion in the other book and
+            // keep the library open after the page loads.
+            return (
+              <a key={b.id} className="lnv-bookcard" href={lessonUrl(switchTarget(b.id))}
+                onClick={() => { try { sessionStorage.setItem('menschen-libnav', 'open'); } catch {} }}>
+                <img src={b.cover} alt=""/>
+                <span className="lnv-bt">{b.title}<small>{b.subtitle}</small></span>
+                <span className="lnv-cardchev">›</span>
+              </a>
+            );
+          })}
           <div className="lnv-scroll">
-            <a className="lnv-home" href="index.html#cover">Cover<small>الغلاف · البداية</small></a>
+            <a className="lnv-home" href={mod.book === 'kb' ? 'index.html#cover' : 'ab1.html#6'}>Cover</a>
             {levels.map(level => (
               <div key={level}>
-                <div className="lnv-lvl">{selectedBook.title.toUpperCase()} · {level}</div>
-                {levelLessons(book, level).map(entry => {
+                <div className="lnv-lvl">{bookInfo.title.toUpperCase()} · {level}</div>
+                {levelLessons(mod.book, level).map(entry => {
                   const isCurrent = entry.slug === slug && currentPage != null && entry.pages.includes(currentPage);
                   return (
                     <a key={entry.slug + entry.label} className={'lnv-row' + (isCurrent ? ' cur' : '') + (entry.short === 'MP' ? ' mp' : '')}
