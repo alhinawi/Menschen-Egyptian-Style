@@ -1,0 +1,937 @@
+{
+ "book": "kb-a12",
+ "page": 82,
+ "image": "assets/kb-a12-p82.png",
+ "width": 749,
+ "height": 1024,
+ "words": [
+  {
+   "text": "Über",
+   "x": 76,
+   "y": 136,
+   "w": 33,
+   "h": 14
+  },
+  {
+   "text": "Wünsche",
+   "x": 113,
+   "y": 138,
+   "w": 62,
+   "h": 12
+  },
+  {
+   "text": "und",
+   "x": 180,
+   "y": 138,
+   "w": 26,
+   "h": 12
+  },
+  {
+   "text": "Pläne",
+   "x": 212,
+   "y": 138,
+   "w": 37,
+   "h": 12
+  },
+  {
+   "text": "sprechen",
+   "x": 254,
+   "y": 138,
+   "w": 61,
+   "h": 16
+  },
+  {
+   "text": "a",
+   "x": 82,
+   "y": 170,
+   "w": 7,
+   "h": 7
+  },
+  {
+   "text": "Arbeiten",
+   "x": 105,
+   "y": 166,
+   "w": 53,
+   "h": 11
+  },
+  {
+   "text": "Sie",
+   "x": 162,
+   "y": 166,
+   "w": 18,
+   "h": 11
+  },
+  {
+   "text": "mit",
+   "x": 185,
+   "y": 166,
+   "w": 21,
+   "h": 11
+  },
+  {
+   "text": "dem",
+   "x": 210,
+   "y": 166,
+   "w": 25,
+   "h": 11
+  },
+  {
+   "text": "Wörterbuch",
+   "x": 240,
+   "y": 166,
+   "w": 72,
+   "h": 11
+  },
+  {
+   "text": "und",
+   "x": 317,
+   "y": 166,
+   "w": 23,
+   "h": 11
+  },
+  {
+   "text": "notieren",
+   "x": 345,
+   "y": 166,
+   "w": 51,
+   "h": 11
+  },
+  {
+   "text": "Sie.",
+   "x": 401,
+   "y": 167,
+   "w": 22,
+   "h": 10
+  },
+  {
+   "text": "unbedingt",
+   "x": 291,
+   "y": 300,
+   "w": 57,
+   "h": 14
+  },
+  {
+   "text": "noch",
+   "x": 352,
+   "y": 300,
+   "w": 27,
+   "h": 10
+  },
+  {
+   "text": "Was",
+   "x": 81,
+   "y": 320,
+   "w": 21,
+   "h": 9
+  },
+  {
+   "text": "willst",
+   "x": 106,
+   "y": 319,
+   "w": 32,
+   "h": 10
+  },
+  {
+   "text": "du",
+   "x": 141,
+   "y": 319,
+   "w": 14,
+   "h": 9
+  },
+  {
+   "text": "beruflich",
+   "x": 158,
+   "y": 318,
+   "w": 52,
+   "h": 11
+  },
+  {
+   "text": "machen?",
+   "x": 214,
+   "y": 319,
+   "w": 49,
+   "h": 10
+  },
+  {
+   "text": "auf",
+   "x": 286,
+   "y": 328,
+   "w": 22,
+   "h": 29
+  },
+  {
+   "text": "keinen",
+   "x": 307,
+   "y": 328,
+   "w": 36,
+   "h": 29
+  },
+  {
+   "text": "Fall",
+   "x": 355,
+   "y": 337,
+   "w": 20,
+   "h": 10
+  },
+  {
+   "text": "unbedingt",
+   "x": 291,
+   "y": 374,
+   "w": 56,
+   "h": 13
+  },
+  {
+   "text": "noch",
+   "x": 352,
+   "y": 374,
+   "w": 26,
+   "h": 10
+  },
+  {
+   "text": "Welche",
+   "x": 81,
+   "y": 385,
+   "w": 39,
+   "h": 9
+  },
+  {
+   "text": "Pläne/Wünsche",
+   "x": 125,
+   "y": 385,
+   "w": 86,
+   "h": 11
+  },
+  {
+   "text": "hast",
+   "x": 216,
+   "y": 385,
+   "w": 22,
+   "h": 9
+  },
+  {
+   "text": "du",
+   "x": 242,
+   "y": 385,
+   "w": 14,
+   "h": 9
+  },
+  {
+   "text": "für",
+   "x": 81,
+   "y": 400,
+   "w": 17,
+   "h": 10
+  },
+  {
+   "text": "deine",
+   "x": 102,
+   "y": 400,
+   "w": 30,
+   "h": 10
+  },
+  {
+   "text": "Familie?",
+   "x": 137,
+   "y": 400,
+   "w": 47,
+   "h": 10
+  },
+  {
+   "text": "auf",
+   "x": 286,
+   "y": 402,
+   "w": 17,
+   "h": 28
+  },
+  {
+   "text": "keinen",
+   "x": 309,
+   "y": 402,
+   "w": 34,
+   "h": 28
+  },
+  {
+   "text": "Fall",
+   "x": 355,
+   "y": 411,
+   "w": 19,
+   "h": 10
+  },
+  {
+   "text": "unbedingt",
+   "x": 290,
+   "y": 448,
+   "w": 57,
+   "h": 13
+  },
+  {
+   "text": "noch",
+   "x": 352,
+   "y": 448,
+   "w": 26,
+   "h": 9
+  },
+  {
+   "text": "Welche",
+   "x": 81,
+   "y": 458,
+   "w": 39,
+   "h": 10
+  },
+  {
+   "text": "Pläne/Wünsche",
+   "x": 125,
+   "y": 458,
+   "w": 86,
+   "h": 12
+  },
+  {
+   "text": "hast",
+   "x": 215,
+   "y": 458,
+   "w": 23,
+   "h": 10
+  },
+  {
+   "text": "du",
+   "x": 242,
+   "y": 458,
+   "w": 14,
+   "h": 10
+  },
+  {
+   "text": "für",
+   "x": 81,
+   "y": 474,
+   "w": 17,
+   "h": 10
+  },
+  {
+   "text": "deine",
+   "x": 102,
+   "y": 474,
+   "w": 30,
+   "h": 10
+  },
+  {
+   "text": "Freizeit?",
+   "x": 137,
+   "y": 475,
+   "w": 47,
+   "h": 9
+  },
+  {
+   "text": "auf",
+   "x": 290,
+   "y": 484,
+   "w": 19,
+   "h": 10
+  },
+  {
+   "text": "keinen",
+   "x": 312,
+   "y": 485,
+   "w": 38,
+   "h": 9
+  },
+  {
+   "text": "Fall",
+   "x": 355,
+   "y": 485,
+   "w": 20,
+   "h": 9
+  },
+  {
+   "text": "unbedingt",
+   "x": 290,
+   "y": 522,
+   "w": 58,
+   "h": 13
+  },
+  {
+   "text": "noch",
+   "x": 352,
+   "y": 521,
+   "w": 26,
+   "h": 11
+  },
+  {
+   "text": "Was",
+   "x": 81,
+   "y": 541,
+   "w": 21,
+   "h": 9
+  },
+  {
+   "text": "willst",
+   "x": 106,
+   "y": 540,
+   "w": 31,
+   "h": 10
+  },
+  {
+   "text": "du",
+   "x": 141,
+   "y": 540,
+   "w": 13,
+   "h": 10
+  },
+  {
+   "text": "lernen?",
+   "x": 159,
+   "y": 540,
+   "w": 42,
+   "h": 10
+  },
+  {
+   "text": "auf",
+   "x": 281,
+   "y": 549,
+   "w": 27,
+   "h": 29
+  },
+  {
+   "text": "keinen",
+   "x": 307,
+   "y": 549,
+   "w": 35,
+   "h": 29
+  },
+  {
+   "text": "Fall",
+   "x": 355,
+   "y": 558,
+   "w": 20,
+   "h": 10
+  },
+  {
+   "text": "unbedingt",
+   "x": 290,
+   "y": 595,
+   "w": 58,
+   "h": 14
+  },
+  {
+   "text": "noch",
+   "x": 352,
+   "y": 595,
+   "w": 26,
+   "h": 10
+  },
+  {
+   "text": "Was",
+   "x": 81,
+   "y": 615,
+   "w": 21,
+   "h": 8
+  },
+  {
+   "text": "willst",
+   "x": 106,
+   "y": 613,
+   "w": 31,
+   "h": 11
+  },
+  {
+   "text": "du",
+   "x": 141,
+   "y": 613,
+   "w": 14,
+   "h": 10
+  },
+  {
+   "text": "im",
+   "x": 159,
+   "y": 617,
+   "w": 14,
+   "h": 6
+  },
+  {
+   "text": "Urlaub",
+   "x": 178,
+   "y": 614,
+   "w": 38,
+   "h": 10
+  },
+  {
+   "text": "machen?",
+   "x": 220,
+   "y": 614,
+   "w": 49,
+   "h": 10
+  },
+  {
+   "text": "auf",
+   "x": 290,
+   "y": 632,
+   "w": 19,
+   "h": 10
+  },
+  {
+   "text": "keinen",
+   "x": 312,
+   "y": 632,
+   "w": 38,
+   "h": 10
+  },
+  {
+   "text": "Fall",
+   "x": 355,
+   "y": 632,
+   "w": 19,
+   "h": 10
+  },
+  {
+   "text": "unbedingt",
+   "x": 290,
+   "y": 669,
+   "w": 57,
+   "h": 14
+  },
+  {
+   "text": "noch",
+   "x": 352,
+   "y": 669,
+   "w": 26,
+   "h": 10
+  },
+  {
+   "text": "Du",
+   "x": 81,
+   "y": 680,
+   "w": 14,
+   "h": 9
+  },
+  {
+   "text": "hast",
+   "x": 99,
+   "y": 680,
+   "w": 23,
+   "h": 9
+  },
+  {
+   "text": "viel",
+   "x": 126,
+   "y": 680,
+   "w": 20,
+   "h": 9
+  },
+  {
+   "text": "Geld.",
+   "x": 150,
+   "y": 680,
+   "w": 28,
+   "h": 9
+  },
+  {
+   "text": "Was",
+   "x": 182,
+   "y": 681,
+   "w": 22,
+   "h": 8
+  },
+  {
+   "text": "willst",
+   "x": 208,
+   "y": 680,
+   "w": 31,
+   "h": 9
+  },
+  {
+   "text": "du",
+   "x": 243,
+   "y": 680,
+   "w": 13,
+   "h": 9
+  },
+  {
+   "text": "kaufen?",
+   "x": 81,
+   "y": 695,
+   "w": 43,
+   "h": 10
+  },
+  {
+   "text": "auf",
+   "x": 290,
+   "y": 706,
+   "w": 19,
+   "h": 10
+  },
+  {
+   "text": "keinen",
+   "x": 312,
+   "y": 706,
+   "w": 38,
+   "h": 10
+  },
+  {
+   "text": "Fall",
+   "x": 355,
+   "y": 706,
+   "w": 19,
+   "h": 10
+  },
+  {
+   "text": "hlen",
+   "x": 314,
+   "y": 749,
+   "w": 25,
+   "h": 11
+  },
+  {
+   "text": "Sie.",
+   "x": 344,
+   "y": 750,
+   "w": 21,
+   "h": 10
+  },
+  {
+   "text": "Haben",
+   "x": 371,
+   "y": 749,
+   "w": 38,
+   "h": 12
+  },
+  {
+   "text": "Sie",
+   "x": 413,
+   "y": 750,
+   "w": 18,
+   "h": 11
+  },
+  {
+   "text": "etwas",
+   "x": 435,
+   "y": 752,
+   "w": 36,
+   "h": 9
+  },
+  {
+   "text": "gemeinsam?",
+   "x": 475,
+   "y": 750,
+   "w": 76,
+   "h": 15
+  },
+  {
+   "text": "Was",
+   "x": 121,
+   "y": 778,
+   "w": 24,
+   "h": 10
+  },
+  {
+   "text": "willst",
+   "x": 149,
+   "y": 777,
+   "w": 35,
+   "h": 11
+  },
+  {
+   "text": "du",
+   "x": 188,
+   "y": 777,
+   "w": 15,
+   "h": 11
+  },
+  {
+   "text": "beruflich",
+   "x": 208,
+   "y": 776,
+   "w": 56,
+   "h": 12
+  },
+  {
+   "text": "unbedingt",
+   "x": 269,
+   "y": 777,
+   "w": 63,
+   "h": 15
+  },
+  {
+   "text": "noch",
+   "x": 337,
+   "y": 777,
+   "w": 29,
+   "h": 11
+  },
+  {
+   "text": "machen?",
+   "x": 371,
+   "y": 777,
+   "w": 55,
+   "h": 11
+  },
+  {
+   "text": "Ich",
+   "x": 122,
+   "y": 795,
+   "w": 18,
+   "h": 11
+  },
+  {
+   "text": "will",
+   "x": 145,
+   "y": 795,
+   "w": 23,
+   "h": 11
+  },
+  {
+   "text": "unbedingt",
+   "x": 173,
+   "y": 795,
+   "w": 63,
+   "h": 15
+  },
+  {
+   "text": "noch",
+   "x": 241,
+   "y": 795,
+   "w": 30,
+   "h": 11
+  },
+  {
+   "text": "Schauspielerin",
+   "x": 275,
+   "y": 795,
+   "w": 92,
+   "h": 15
+  },
+  {
+   "text": "werden.",
+   "x": 371,
+   "y": 795,
+   "w": 50,
+   "h": 11
+  },
+  {
+   "text": "Und",
+   "x": 122,
+   "y": 813,
+   "w": 24,
+   "h": 11
+  },
+  {
+   "text": "was",
+   "x": 151,
+   "y": 817,
+   "w": 22,
+   "h": 7
+  },
+  {
+   "text": "willst",
+   "x": 177,
+   "y": 813,
+   "w": 35,
+   "h": 11
+  },
+  {
+   "text": "du",
+   "x": 217,
+   "y": 813,
+   "w": 15,
+   "h": 11
+  },
+  {
+   "text": "auf",
+   "x": 236,
+   "y": 813,
+   "w": 21,
+   "h": 11
+  },
+  {
+   "text": "keinen",
+   "x": 261,
+   "y": 813,
+   "w": 42,
+   "h": 11
+  },
+  {
+   "text": "Fall",
+   "x": 308,
+   "y": 813,
+   "w": 22,
+   "h": 11
+  },
+  {
+   "text": "machen?",
+   "x": 335,
+   "y": 813,
+   "w": 55,
+   "h": 11
+  },
+  {
+   "text": "Ich",
+   "x": 122,
+   "y": 831,
+   "w": 18,
+   "h": 11
+  },
+  {
+   "text": "will",
+   "x": 145,
+   "y": 831,
+   "w": 23,
+   "h": 11
+  },
+  {
+   "text": "auf",
+   "x": 173,
+   "y": 827,
+   "w": 19,
+   "h": 23
+  },
+  {
+   "text": "keinen",
+   "x": 192,
+   "y": 827,
+   "w": 39,
+   "h": 23
+  },
+  {
+   "text": "Fall",
+   "x": 245,
+   "y": 832,
+   "w": 22,
+   "h": 10
+  }
+ ],
+ "fields": [
+  {
+   "id": "wunsch-0",
+   "group": "17-6b",
+   "kind": "text",
+   "label": "Beruf · unbedingt noch",
+   "x": 407,
+   "y": 289,
+   "w": 271,
+   "h": 31
+  },
+  {
+   "id": "wunsch-1",
+   "group": "17-6b",
+   "kind": "text",
+   "label": "Beruf · auf keinen Fall",
+   "x": 407,
+   "y": 327,
+   "w": 271,
+   "h": 31
+  },
+  {
+   "id": "wunsch-2",
+   "group": "17-6b",
+   "kind": "text",
+   "label": "Familie · unbedingt noch",
+   "x": 407,
+   "y": 362,
+   "w": 271,
+   "h": 31
+  },
+  {
+   "id": "wunsch-3",
+   "group": "17-6b",
+   "kind": "text",
+   "label": "Familie · auf keinen Fall",
+   "x": 407,
+   "y": 401,
+   "w": 271,
+   "h": 31
+  },
+  {
+   "id": "wunsch-4",
+   "group": "17-6b",
+   "kind": "text",
+   "label": "Freizeit · unbedingt noch",
+   "x": 407,
+   "y": 437,
+   "w": 271,
+   "h": 31
+  },
+  {
+   "id": "wunsch-5",
+   "group": "17-6b",
+   "kind": "text",
+   "label": "Freizeit · auf keinen Fall",
+   "x": 407,
+   "y": 475,
+   "w": 271,
+   "h": 31
+  },
+  {
+   "id": "wunsch-6",
+   "group": "17-6b",
+   "kind": "text",
+   "label": "Lernen · unbedingt noch",
+   "x": 407,
+   "y": 511,
+   "w": 271,
+   "h": 31
+  },
+  {
+   "id": "wunsch-7",
+   "group": "17-6b",
+   "kind": "text",
+   "label": "Lernen · auf keinen Fall",
+   "x": 407,
+   "y": 550,
+   "w": 271,
+   "h": 31
+  },
+  {
+   "id": "wunsch-8",
+   "group": "17-6b",
+   "kind": "text",
+   "label": "Urlaub · unbedingt noch",
+   "x": 407,
+   "y": 586,
+   "w": 271,
+   "h": 31
+  },
+  {
+   "id": "wunsch-9",
+   "group": "17-6b",
+   "kind": "text",
+   "label": "Urlaub · auf keinen Fall",
+   "x": 407,
+   "y": 624,
+   "w": 271,
+   "h": 31
+  },
+  {
+   "id": "wunsch-10",
+   "group": "17-6b",
+   "kind": "text",
+   "label": "Kaufen · unbedingt noch",
+   "x": 407,
+   "y": 660,
+   "w": 271,
+   "h": 31
+  },
+  {
+   "id": "wunsch-11",
+   "group": "17-6b",
+   "kind": "text",
+   "label": "Kaufen · auf keinen Fall",
+   "x": 407,
+   "y": 698,
+   "w": 271,
+   "h": 31
+  }
+ ],
+ "audio": [],
+ "groups": [
+  {
+   "id": "17-6b",
+   "label": "L17 · Wünsche und Pläne"
+  }
+ ],
+ "review": {
+  "status": "partial",
+  "verifiedWords": 14,
+  "totalWords": 113,
+  "notes": [
+   "Original scan positions inspected; fixed partner-table answers read directly from the complementary original page. Filtered German OCR is only a draft, with complete word proofreading and handwriting transcription still pending. Personal writing is saved ungraded."
+  ]
+ }
+}
