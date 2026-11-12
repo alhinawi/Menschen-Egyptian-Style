@@ -1896,13 +1896,326 @@
    "h": 18
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p40-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 (b)",
+   "answer": "Führerschein",
+   "x": 170,
+   "y": 270,
+   "w": 230,
+   "h": 24
+  },
+  {
+   "id": "p40-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 (c)",
+   "answer": "Sängerin",
+   "x": 208,
+   "y": 294,
+   "w": 232,
+   "h": 24
+  },
+  {
+   "id": "p40-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 (d)",
+   "answer": "Geld",
+   "x": 698,
+   "y": 297,
+   "w": 232,
+   "h": 24
+  },
+  {
+   "id": "p40-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 (e)",
+   "answer": "Welt",
+   "x": 563,
+   "y": 323,
+   "w": 233,
+   "h": 24
+  },
+  {
+   "id": "p40-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 (f)",
+   "answer": "Wunsch",
+   "x": 296,
+   "y": 348,
+   "w": 232,
+   "h": 24
+  },
+  {
+   "id": "p40-1g",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 (g)",
+   "answer": "Fremdsprachen",
+   "x": 276,
+   "y": 374,
+   "w": 234,
+   "h": 24
+  },
+  {
+   "id": "p40-r2b-mit",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 b mit",
+   "answer": "true",
+   "name": "r2b",
+   "value": "mit",
+   "x": 702,
+   "y": 503,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p40-r2b-ohne",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 b ohne",
+   "answer": "false",
+   "name": "r2b",
+   "value": "ohne",
+   "x": 788,
+   "y": 503,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p40-r2c-mit",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 c mit",
+   "answer": "false",
+   "name": "r2c",
+   "value": "mit",
+   "x": 566,
+   "y": 555,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p40-r2c-ohne",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 c ohne",
+   "answer": "true",
+   "name": "r2c",
+   "value": "ohne",
+   "x": 654,
+   "y": 555,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p40-r2d-mit",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 d mit",
+   "answer": "true",
+   "name": "r2d",
+   "value": "mit",
+   "x": 404,
+   "y": 606,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p40-r2d-ohne",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 d ohne",
+   "answer": "false",
+   "name": "r2d",
+   "value": "ohne",
+   "x": 493,
+   "y": 606,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p40-r2e-mit",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 e mit",
+   "answer": "false",
+   "name": "r2e",
+   "value": "mit",
+   "x": 394,
+   "y": 633,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p40-r2e-ohne",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 e ohne",
+   "answer": "true",
+   "name": "r2e",
+   "value": "ohne",
+   "x": 482,
+   "y": 633,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p40-2b-end",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b Endung",
+   "answer": "er",
+   "x": 221,
+   "y": 530,
+   "w": 41,
+   "h": 24
+  },
+  {
+   "id": "p40-2c-end",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c Endung",
+   "answer": "e",
+   "x": 786,
+   "y": 556,
+   "w": 40,
+   "h": 24
+  },
+  {
+   "id": "p40-2d-end",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d Endung",
+   "answer": "em",
+   "x": 616,
+   "y": 607,
+   "w": 39,
+   "h": 24
+  },
+  {
+   "id": "p40-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "wollt ihr heiraten",
+   "x": 280,
+   "y": 788,
+   "w": 365,
+   "h": 24
+  },
+  {
+   "id": "p40-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "wollen Sie lernen",
+   "x": 412,
+   "y": 839,
+   "w": 373,
+   "h": 24
+  },
+  {
+   "id": "p40-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "willst du werden",
+   "x": 255,
+   "y": 892,
+   "w": 370,
+   "h": 24
+  },
+  {
+   "id": "p40-4a",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 a",
+   "answer": "auf keinen Fall",
+   "x": 674,
+   "y": 1023,
+   "w": 226,
+   "h": 24
+  },
+  {
+   "id": "p40-4b",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 b",
+   "answer": "vielleicht",
+   "x": 498,
+   "y": 1047,
+   "w": 348,
+   "h": 24
+  },
+  {
+   "id": "p40-4c",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 c",
+   "answer": "unbedingt",
+   "x": 488,
+   "y": 1073,
+   "w": 272,
+   "h": 24
+  },
+  {
+   "id": "p40-4d",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 d",
+   "answer": "auf keinen Fall",
+   "x": 530,
+   "y": 1099,
+   "w": 260,
+   "h": 24
+  },
+  {
+   "id": "p40-4e",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 e",
+   "answer": "unbedingt",
+   "x": 327,
+   "y": 1125,
+   "w": 361,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 2"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 3"
+  },
+  {
+   "id": "g4",
+   "label": "Aufgabe 4"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the printed key (Lektion 17, p106). Handwritten examples on the scan (1a, 2a, 3a) are not fields.",
+   "Ex 2: the ending is only needed for b, c, d; item e needs none ('ohne sein'), so it has only the mit/ohne choice. Ending fields accept the ending only.",
+   "Boxes placed from word coordinates and checked visually. Not marked verified: word list not fully proofread."
+  ],
   "verifiedWords": 270,
-  "totalWords": 270,
-  "notes": []
+  "totalWords": 270
  }
 }
