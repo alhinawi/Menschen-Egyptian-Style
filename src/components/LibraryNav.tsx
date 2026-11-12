@@ -184,7 +184,7 @@ export function LibraryNav({slug}: {slug: string}) {
             );
           })}
           <div className="lnv-scroll flex-1 overflow-y-auto overscroll-contain touch-pan-y pb-6">
-            <a className="lnv-home flex items-baseline gap-2.5 mx-5 mt-0.5 mb-1.5 py-[9px] font-bold text-[13.5px] font-[Arial,sans-serif] text-[#3a332b] no-underline border-b border-[#eee3c8] dark:text-[#ddd6c6] dark:border-[#3a443e]" href={mod.book === 'kb' ? 'index.html#cover' : 'ab1.html#abcover'} onClick={e => { e.preventDefault(); void navigateLesson(mod.book === 'kb' ? 'index' : 'ab1', mod.book === 'kb' ? 'cover' : 'abcover'); }}>Cover</a>
+            <a className="lnv-home flex items-baseline gap-2.5 mx-5 mt-0.5 mb-1.5 py-[9px] font-bold text-[13.5px] font-[Arial,sans-serif] text-[#3a332b] no-underline border-b border-[#eee3c8] dark:text-[#ddd6c6] dark:border-[#3a443e]" href={mod.book === 'kb' ? 'index.html#cover' : 'ab1.html#abcover'} onClick={e => { e.preventDefault(); void navigateLesson(mod.book === 'kb' ? 'index' : 'ab1', mod.book === 'kb' ? 'cover' : 'abcover'); }}>Umschlag</a>
             {levels.map(level => (
               <div key={level}>
                 <div className="lnv-lvl font-extrabold text-[11px] font-[Arial,sans-serif] tracking-[.14em] text-[var(--accent,#713c46)] px-5 pt-3 pb-1.5">{bookInfo.title.toUpperCase()} · {level}</div>
@@ -205,16 +205,16 @@ export function LibraryNav({slug}: {slug: string}) {
         </aside>
       </div>, document.body)}
     {panel === 'pages' && createPortal(
-      <div className={noAnim ? 'lnv-overlay lnv-noanim fixed inset-0 z-[90]' : 'lnv-overlay fixed inset-0 z-[90]'} role="dialog" aria-label="All pages">
+      <div className={noAnim ? 'lnv-overlay lnv-noanim fixed inset-0 z-[90]' : 'lnv-overlay fixed inset-0 z-[90]'} role="dialog" aria-label="Alle Seiten">
         <div className={`lnv-scrim absolute inset-0 bg-[rgba(24,16,10,.55)] touch-none${noAnim ? '' : ' animate-lnv-fade'}`} onClick={close}/>
         <div className={`lnv-sheet absolute inset-x-0 bottom-0 top-[84px] bg-[#fdfaf2] text-[#2b2620] rounded-t-[22px] shadow-[0_-12px_40px_rgba(20,12,6,.4)] flex flex-col dark:bg-[#232a26] dark:text-[#e8e2d4]${noAnim ? '' : ' animate-lnv-rise'}`}>
           <div className="lnv-grab w-11 h-[5px] rounded-[3px] bg-[#d8cba4] mx-auto mt-2.5 mb-1 flex-none"/>
           <div className="lnv-shead px-5 pt-2 pb-2.5 border-b border-[#eee3c8] dark:border-[#3a443e]">
-            <div className="lnv-st font-bold text-[18px] font-[Georgia,serif]">All pages</div>
-            <div className="lnv-ss font-normal text-[11px] font-[Arial,sans-serif] text-[#8a7d63] mt-0.5 dark:text-[#9aa396]">{bookInfo.title} · {mod.level} — jump to any page</div>
+            <div className="lnv-st font-bold text-[18px] font-[Georgia,serif]">Alle Seiten</div>
+            <div className="lnv-ss font-normal text-[11px] font-[Arial,sans-serif] text-[#8a7d63] mt-0.5 dark:text-[#9aa396]">{bookInfo.title} · {mod.level} - direkt zur Seite springen</div>
           </div>
           <div className="lnv-sheetscroll flex-1 overflow-y-auto overscroll-contain touch-pan-y pb-7">
-            {slug === 'l21-24' && <div className="flex flex-col gap-2 px-5 py-3">{['imprint', 'inside-back-cover', 'back-cover'].map(token => <button type="button" key={token} className="lnv-pg h-9 rounded-md border" onClick={() => {close(); const idx = [...document.querySelectorAll<HTMLElement>('.page')].findIndex(p => p.dataset.page === token); const jump = document.querySelector<HTMLSelectElement>('#pageJump'); if (jump && idx >= 0) {jump.value = String(idx); jump.dispatchEvent(new Event('change', {bubbles: true}));}}}>{special[token]} (unnumbered)</button>)}</div>}
+            {slug === 'l21-24' && <div className="flex flex-col gap-2 px-5 py-3">{['imprint', 'inside-back-cover', 'back-cover'].map(token => <button type="button" key={token} className="lnv-pg h-9 rounded-md border" onClick={() => {close(); const idx = [...document.querySelectorAll<HTMLElement>('.page')].findIndex(p => p.dataset.page === token); const jump = document.querySelector<HTMLSelectElement>('#pageJump'); if (jump && idx >= 0) {jump.value = String(idx); jump.dispatchEvent(new Event('change', {bubbles: true}));}}}>{special[token]} (ohne Seitenzahl)</button>)}</div>}
             {levelLessons(mod.book, mod.level).map(entry => (
               <div key={entry.slug + entry.label}>
                 <div className={'lnv-psec font-extrabold text-[10.5px] font-[Arial,sans-serif] tracking-[.13em] px-5 pt-3 pb-1.5' + (currentPage != null && entry.pages.includes(currentPage) ? ' cur text-[#a5832f] dark:text-[#d4b674] after:content-[""] after:inline-block after:size-1.5 after:rounded-full after:bg-[#c9a45a] after:ml-[7px] after:align-[1px]' : ' text-[var(--accent,#713c46)]')}>{entry.label.toUpperCase()}</div>
