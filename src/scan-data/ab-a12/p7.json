@@ -1266,13 +1266,159 @@
    "h": 12
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p7-4b",
+   "group": "g1",
+   "kind": "text",
+   "label": "b",
+   "answer": "dem",
+   "x": 510,
+   "y": 259,
+   "w": 75,
+   "h": 24
+  },
+  {
+   "id": "p7-4c1",
+   "group": "g1",
+   "kind": "text",
+   "label": "c1",
+   "answer": "dem",
+   "x": 648,
+   "y": 282,
+   "w": 77,
+   "h": 24
+  },
+  {
+   "id": "p7-4c2",
+   "group": "g1",
+   "kind": "text",
+   "label": "c2",
+   "answer": "der",
+   "x": 815,
+   "y": 282,
+   "w": 75,
+   "h": 24
+  },
+  {
+   "id": "p7-4d",
+   "group": "g1",
+   "kind": "text",
+   "label": "d",
+   "answer": "der",
+   "x": 695,
+   "y": 308,
+   "w": 75,
+   "h": 24
+  },
+  {
+   "id": "p7-4e",
+   "group": "g1",
+   "kind": "text",
+   "label": "e",
+   "answer": "der",
+   "x": 705,
+   "y": 334,
+   "w": 75,
+   "h": 24
+  },
+  {
+   "id": "p7-5b1",
+   "group": "g2",
+   "kind": "text",
+   "label": "b1",
+   "answer": "zwischen der",
+   "x": 366,
+   "y": 604,
+   "w": 109,
+   "h": 24
+  },
+  {
+   "id": "p7-5b2",
+   "group": "g2",
+   "kind": "text",
+   "label": "b2",
+   "answer": "dem",
+   "x": 585,
+   "y": 604,
+   "w": 115,
+   "h": 24
+  },
+  {
+   "id": "p7-5c",
+   "group": "g2",
+   "kind": "text",
+   "label": "c",
+   "answer": "hinter der",
+   "x": 447,
+   "y": 694,
+   "w": 113,
+   "h": 24
+  },
+  {
+   "id": "p7-5d",
+   "group": "g2",
+   "kind": "text",
+   "label": "d",
+   "answer": "an der",
+   "x": 380,
+   "y": 786,
+   "w": 115,
+   "h": 24
+  },
+  {
+   "id": "p7-5e",
+   "group": "g2",
+   "kind": "text",
+   "label": "e",
+   "answer": "auf der",
+   "x": 358,
+   "y": 875,
+   "w": 112,
+   "h": 24
+  },
+  {
+   "id": "p7-5f",
+   "group": "g2",
+   "kind": "text",
+   "label": "f",
+   "answer": "im",
+   "x": 366,
+   "y": 964,
+   "w": 109,
+   "h": 24
+  },
+  {
+   "id": "p7-5g",
+   "group": "g2",
+   "kind": "text",
+   "label": "g",
+   "answer": "vor der",
+   "x": 375,
+   "y": 1054,
+   "w": 110,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 4"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 5"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the official Hueber key (Menschen A1, Lektion 13 Arbeitsbuch). Handwritten examples (4a, 5a) not fields.",
+   "Ex 6 (drawing) has no fields.",
+   "Boxes placed from word coordinates and checked visually. Not marked verified."
+  ],
   "verifiedWords": 180,
-  "totalWords": 180,
-  "notes": []
+  "totalWords": 180
  }
 }
