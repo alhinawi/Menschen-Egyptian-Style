@@ -1,3 +1,4 @@
+import {LineMatching} from '../exercises/LineMatching';
 import {scanData} from '../scan-data/registry';
 import {useLayoutEffect,useRef,useState} from 'react';
 import './native-ab11.css';
@@ -24,7 +25,7 @@ export function NativeAB11Next({page}:{page:string}){
  const endingStyle=(id:string)=>{const m=(v['mark-'+id]||'').split(':').map(Number),ctx=document.createElement('canvas').getContext('2d');if(m.length!==2||!ctx)return {};ctx.font="20px 'Times New Roman'";const a=4+ctx.measureText((v[id]||'').slice(0,m[0])).width,b=4+ctx.measureText((v[id]||'').slice(0,m[1])).width;return {backgroundImage:`linear-gradient(to right,transparent ${a}px,#fff066 ${a}px,#fff066 ${b}px,transparent ${b}px)`}};
  const keyAnswers=(group:string)=>Object.fromEntries(data.fields.filter(f=>f.group===group&&f.answer!==undefined&&f.kind!=='radio').map(f=>[f.id,f.answer!]));
  const checkGroup=(group:string,x:number,y:number)=>check(group,x,y,keyAnswers(group));
- const match=(id:string,left:string[],right:string[],x:number,y:number,rx:number,gap:number,example?:[number,number])=><><svg className="nabLines" width="1075" height="1521" aria-hidden="true">{left.map((_,i)=>{const val=example?.[0]===i?example[1]:v[id+'-'+i];return val===undefined?null:<path key={i} d={`M${x+230} ${py(y+i*gap)+14} C${x+330} ${py(y+i*gap)+14},${rx-100} ${py(y+Number(val)*gap)+14},${rx-4} ${py(y+Number(val)*gap)+14}`}/>})}</svg>{left.map((s,i)=><button key={i} className={'nabMatch '+(active===id+'-'+i?'isActive':'')} style={{left:x,top:py(y+i*gap),width:240}} disabled={example?.[0]===i} onClick={()=>A(id+'-'+i)} aria-label={id+' links '+i+' '+s}>{s}</button>)}{right.map((s,i)=><button key={i} className="nabMatch" style={{left:rx,top:py(y+i*gap),width:440}} onClick={()=>{if(active.startsWith(id+'-')){set(active,''+i);A('')}}} aria-label={id+' rechts '+i+' '+s}>{s}</button>)}</>;
+ const match=(id:string,left:string[],right:string[],x:number,y:number,rx:number,gap:number,example?:[number,number])=><LineMatching id={id} left={left} right={right} values={v} onMatch={set} leftX={x} rightX={rx} leftWidth={230} rightWidth={440} ys={left.map((_,i)=>py(y+i*gap))} rightYs={right.map((_,i)=>py(y+i*gap))} example={example}/>;
  const multi=(id:string,x:number,y:number,w:number,h:number,label:string)=>open(id,x,y,w,h,label);
  return <div className="nativeAB11 nativeAB11Next" ref={host} data-native-ab11-page={page}><div className="nabCanvas" style={{transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='12'&&<>
