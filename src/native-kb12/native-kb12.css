@@ -36,3 +36,28 @@
 .nkFilmDialog{position:fixed;z-index:10000;box-sizing:border-box}
 
 .nkCanvas .nkJanArticle{font:17px/1.15 Arial}
+[data-native-kb12="25"] .nkHeroTitle{font-size:40px}
+[data-native-kb12="25"] .nkLesson,[data-native-kb12="27"] .nkLesson,[data-native-kb12="28"] .nkLesson{background:#84ab22}
+.nkOpen{position:absolute;box-sizing:border-box;border:1px solid #c8c7a7;background:#fffff8;color:#305687;font:19px/1.25 Arial;padding:5px;resize:none}
+.nkOpen::placeholder{color:#587ba0;opacity:.8}
+.nkMarkBank{position:absolute;font:20px/1.35 Arial;background:#fff9d7;padding:7px}
+.nkMarkBank button{font:inherit;color:inherit;border:0;background:none;padding:0 3px;cursor:pointer;text-align:left}
+.nkMarkBank button:after{content:' | ';color:#aaa}.nkMarkBank button.selected{background:#f5db62;text-decoration:underline}
+.nkMail{position:absolute;box-sizing:border-box;border-top:8px solid #dce8e9;border-bottom:1px solid #ccc;background:#fafcf6;padding:12px 15px;font:19px/1.22 Arial;white-space:pre-line}
+.nkMail b{display:block;color:#597d79}
+.nkCanvas .nkBlue{color:#356289}
+[data-native-kb12="26"] .nkTitle b,[data-native-kb12="27"] .nkTitle b,[data-native-kb12="28"] .nkTitle b{background:#89ae29}
+.nkCanvas .nkMarkBank{font:18px/1.25 Arial}
+.nkCanvas .nkMarkBank button{display:inline!important;width:auto!important;min-width:0!important;max-width:none!important;min-height:0!important;font:inherit!important;line-height:inherit!important;padding:0 3px!important;margin:0!important;border:0!important;border-radius:0!important}
+[data-native-kb12="26"] .nkTitle{font-size:21px}
+[data-native-kb12="26"] .nkText:not(.nkTitle):not(.nkFooter):not(.nkModuleFooter):not(.nkSmall){font-size:19px}
+.nkCanvas .nkL16Communication{font:17px/1.15 Arial}
+.nkCanvas .nkL16Communication h3{font:bold 17px/1.1 Arial;padding:4px!important}
+.nkCanvas .nkL16Communication p{font:17px/1.15 Arial;margin:5px}
+.nkCanvas .nkMailMark{display:inline!important;font:inherit!important;line-height:inherit!important;width:auto!important;min-width:0!important;min-height:0!important;background:transparent;border:0;padding:0!important;margin:0!important;border-radius:0!important;color:inherit}
+.nkCanvas .nkMailMark.selected{background:#ffe68b;text-decoration:underline}
+.nkCanvas .nkVocabLabel{font:18px/1.15 Arial!important;text-align:center;white-space:nowrap!important}
+.nkCanvas .nkMarkBank span[role=button]{display:inline;cursor:pointer;box-decoration-break:clone;-webkit-box-decoration-break:clone;padding:0 1px;line-height:1.4}
+.nkCanvas .nkMarkBank span[role=button]:after{content:' | ';background:#fff9d7;color:#a7a18b}
+.nkCanvas .nkMarkBank span.selected{background:#f5db62;text-decoration:none}
+[data-native-kb12="27"] [data-native-field^="7b-"]{height:28px!important}
