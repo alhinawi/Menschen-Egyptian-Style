@@ -17,3 +17,7 @@
 .nativeAB11Next .nabStressChooser{position:absolute;z-index:12;background:#fff8ca;border:2px solid #ab7b18;box-shadow:0 6px 30px #7778;padding:12px;box-sizing:border-box;font:22px Arial}.nativeAB11Next .nabStressChooser button{font:26px Arial;min-width:46px;min-height:48px;margin:4px;border:1px solid #9e8e55;background:white;color:#222}.nativeAB11Next .nabStressChooser>b+button{float:right}
 
 .nativeAB11Next[data-native-ab11-page='13'] .nabConjRow>*{height:27px;padding:2px 4px}.nativeAB11Next[data-native-ab11-page='13'] .nabConjugation>b{padding:3px 5px}
+/* Visible answer frames requested for all native Arbeitsbuch A1.1 controls. */
+.nativeAB11 .nabCanvas .nabInput,.nativeAB11Next .nabCanvas .nabConjRow>input,.nativeAB11Next .nabCanvas .nabForeignRow>input,.nativeAB11Next .nabCanvas .nabStressTable textarea,.nativeAB11 .nabCanvas .nabTable input{border:1px solid #8b9586!important;border-radius:2px!important;background-color:#fffef5!important;box-sizing:border-box}
+.nativeAB11 .nabCanvas .nabArrow{border:1px solid #8b9586!important;border-radius:2px!important}
+.nativeAB11 .nabCanvas .nabCircle{border-radius:50%!important}
