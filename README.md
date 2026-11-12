@@ -1,38 +1,75 @@
-# Menschen
+# Menschen. — the interactive German coursebook
 
-German learning preview: A1.1 Kursbuch Lektion 1, tasks 1-11.
+The Hueber **Menschen A1** books, alive in the browser: flip the real pages, hear the
+original audio, and tap any word or sentence for its meaning in Egyptian Arabic.
 
-## Run
+**Live:** https://almany.vercel.app
 
-`npm run dev`, then open http://127.0.0.1:5173.
+## What's inside
 
-This is a static app. On Vercel, import the GitHub repository, choose **Other** as the framework, and serve the repository root. There is no required build step, backend, API key or environment variable. The HTML loads local JavaScript, fonts, images and MP3 files from `assets/`.
+- **Both books, both levels** — Kursbuch A1.1 + A1.2 and Arbeitsbuch A1.1 + A1.2,
+  24 lessons each, plus Modul-Plus pages.
+- **Real page flip** — the book behaves like paper: drag from anywhere and the page
+  follows your finger (powered by `page-flip`), with smooth SPA navigation between
+  lessons, books, cover and guide.
+- **Original audio** — the book's own CD tracks for every listening task, plus
+  per-word and per-sentence pronunciation.
+- **Tap-to-translate, Egyptian Arabic** — tap any word for its meaning بالمصري, or
+  switch the translation mode from word to full sentence. A selection-lock button
+  (تحديد النص) lets you select any passage and translate + hear it.
+- **Self-checking exercises** — answer, press **Prüfen ✓**, and get instant feedback;
+  correct answers turn green.
+- **Ten reader themes** — light and dark palettes (Light, Paper, Sand, Dark, Forest,
+  Burgundy, Ocean, Midnight, Slate, Plum), tuned for contrast in every theme.
+- **Library sidebar** — jump between books, lessons, covers and the guide from one sheet.
+- **Original viewer** — leaf through the printed pages as scanned, per book.
+- **دليل الاستخدام** — an Egyptian-Arabic guide page (إزاي تستخدم الكتاب) built into every book.
+- Answers, notes and reading progress are saved on the current device only.
 
-## Included
+## Screenshots
 
-- 21 learning/reference pages covering tasks 1-11 and grammar/communication.
-- Seven original page scans: Kursbuch pp.9-12 and linked action pages 73, 75, 77.
-- Original CD 1 tracks 02-10. No substituted synthetic exercise audio.
-- Answer checks grounded in the supplied teacher guide and transcripts.
-- Open speaking activities are self-practice, without automatic speech grading.
-- Egyptian Arabic translations can be toggled on/off.
-- Answers, notes and progress are saved on the current browser/device only.
-- One-page portrait layout and two-page desktop layout with soft corner page turns.
+| Cover | Guide | Lesson | Lesson (Midnight theme) |
+| --- | --- | --- | --- |
+| ![Cover](docs/screenshots/cover.webp) | ![Guide](docs/screenshots/howto.webp) | ![Lesson](docs/screenshots/lesson.webp) | ![Lesson in a dark theme](docs/screenshots/lesson-dark.webp) |
 
-The generated word/sentence pronunciation feature and Arbeitsbuch lesson are not included in this version. There are no student accounts, server-side progress, access codes or payments.
+| Tap-to-translate | Prüfen self-check | Library |
+| --- | --- | --- |
+| ![Translation popup](docs/screenshots/popup.webp) | ![Prüfen feedback](docs/screenshots/pruefen.webp) | ![Library sidebar](docs/screenshots/library.webp) |
 
-## Hosting and access
+## Stack
 
-The owner's selected hosting mode is an unlisted link without a password. `noindex,nofollow,noarchive` and `robots.txt` discourage indexing; they are not access control. Anyone with the deployed link can open or share it. No sitemap is supplied.
+React 19 · TypeScript · Vite 8 · `page-flip` · hand-tuned CSS (per-lesson stylesheets
++ a theme layer) · Playwright for visual checks. No backend, no accounts, no tracking.
 
-Connect this private GitHub repository directly to Vercel. Do not upload or deploy from a separate one-off source. No deployment has been performed as part of this commit.
+## Develop
 
-## Materials and licenses
+```bash
+npm install
+npm run dev        # http://127.0.0.1:5173
+npm run build      # -> dist/
+npm run preview    # serve the build locally
+npm test           # content checks
+npm run test:react # component foundation checks
+npm run typecheck  # tsc --noEmit
+```
 
-Original textbook images and recordings belong to Hueber Verlag. A private repository or unlisted link is not a copyright license. Do not make this repository public. Full-book PDFs and unrelated audio are excluded; only this lesson's required page images and recordings are included.
+## Project structure
 
-StPageFlip is MIT licensed; the bundled license is in `assets/page-flip-LICENSE.txt`. Noto Naskh Arabic and IBM Plex Sans Arabic are self-hosted under SIL Open Font License 1.1, included in `assets/`. Decorative paper/wood textures are local SVG assets.
+- `*.html` (repo root) — one Vite entry per book/lesson route (26 routes).
+- `src/` — the app: `components/` (book markup renderer, cover socials, reader themes,
+  library nav), `lessons/*.json` (lesson markup as JSON node tuples), `meanings/`
+  (tap-to-translate, selection controls), `adapters/` (per-book routing/persistence),
+  `scan/` (original viewer + vocabulary), `exercises/`, `persistence/`.
+- `assets/` — fonts, images, cover art, OG cards and the original audio.
+- `themes.css`, `book.css`, per-lesson `*.css` — the visual layer.
+- `tests/` — content and answer-key checks.
 
-## Verification
+## Rights
 
-`npm test` checks the content manifest/assets. Local Playwright checks in `tests/full-lesson.cjs` cover the 28-page structure, mobile/desktop navigation, answer persistence and JavaScript errors. `tests/all-answers.cjs` exercises the source-grounded answer keys. Test scripts require local Chrome and Playwright; they are not required on Vercel.
+All rights to the original book, audio and artwork belong to their owners
+(**Hueber Verlag**). This is a personal, educational study companion: the site is
+`noindex,nofollow,noarchive`, unlisted, and carries no ads, accounts or payments.
+
+## Author
+
+Made by **Mohamed Alhinawi** · https://almany.vercel.app
