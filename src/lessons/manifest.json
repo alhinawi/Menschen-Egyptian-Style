@@ -163,7 +163,6 @@
     "styles": [
       "book.css",
       "batch.css",
-      "ab1.css",
       "themes.css"
     ],
     "initializers": [
