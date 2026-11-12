@@ -139,6 +139,13 @@
       "h": 29
     },
     {
+      "text": "/",
+      "x": 570,
+      "y": 324,
+      "w": 15,
+      "h": 16
+    },
+    {
       "text": "Mein",
       "x": 244,
       "y": 325,
@@ -188,6 +195,13 @@
       "h": 13
     },
     {
+      "text": "/",
+      "x": 570,
+      "y": 387,
+      "w": 15,
+      "h": 16
+    },
+    {
       "text": "Und",
       "x": 245,
       "y": 425,
@@ -221,6 +235,13 @@
       "y": 429,
       "w": 10,
       "h": 10
+    },
+    {
+      "text": "/",
+      "x": 570,
+      "y": 450,
+      "w": 15,
+      "h": 16
     },
     {
       "text": "Hallo,",
@@ -270,6 +291,13 @@
       "y": 493,
       "w": 15,
       "h": 10
+    },
+    {
+      "text": "/",
+      "x": 570,
+      "y": 513,
+      "w": 15,
+      "h": 16
     },
     {
       "text": "b",
@@ -1210,6 +1238,20 @@
       "h": 15
     },
     {
+      "text": "↘",
+      "x": 351,
+      "y": 1173,
+      "w": 12,
+      "h": 13
+    },
+    {
+      "text": "Hallo.",
+      "x": 673,
+      "y": 1173,
+      "w": 50,
+      "h": 16
+    },
+    {
       "text": "Hallo,",
       "x": 674,
       "y": 1196,
@@ -1250,6 +1292,20 @@
       "y": 1201,
       "w": 15,
       "h": 10
+    },
+    {
+      "text": "Und",
+      "x": 858,
+      "y": 1221,
+      "w": 38,
+      "h": 16
+    },
+    {
+      "text": "dir?",
+      "x": 898,
+      "y": 1221,
+      "w": 33,
+      "h": 16
     },
     {
       "text": "Danke,",
@@ -1567,8 +1623,8 @@
       "name": "t2a",
       "value": "oesterreich",
       "answer": "true",
-      "x": 225,
-      "y": 769,
+      "x": 223,
+      "y": 768,
       "w": 18,
       "h": 18
     },
@@ -1580,8 +1636,8 @@
       "name": "t2a",
       "value": "spanien",
       "answer": "false",
-      "x": 516,
-      "y": 769,
+      "x": 441,
+      "y": 768,
       "w": 18,
       "h": 18
     },
@@ -1593,8 +1649,8 @@
       "name": "t2a",
       "value": "russland",
       "answer": "false",
-      "x": 711,
-      "y": 769,
+      "x": 661,
+      "y": 768,
       "w": 18,
       "h": 18
     },
@@ -1606,7 +1662,7 @@
       "name": "t2b",
       "value": "sehrgut",
       "answer": "false",
-      "x": 221,
+      "x": 232,
       "y": 843,
       "w": 18,
       "h": 18
@@ -1619,7 +1675,7 @@
       "name": "t2b",
       "value": "gut",
       "answer": "false",
-      "x": 461,
+      "x": 448,
       "y": 843,
       "w": 18,
       "h": 18
@@ -1632,7 +1688,7 @@
       "name": "t2b",
       "value": "esgeht",
       "answer": "true",
-      "x": 681,
+      "x": 661,
       "y": 843,
       "w": 18,
       "h": 18
@@ -1645,8 +1701,8 @@
       "name": "t2c",
       "value": "alioscha",
       "answer": "false",
-      "x": 225,
-      "y": 916,
+      "x": 231,
+      "y": 922,
       "w": 18,
       "h": 18
     },
@@ -1658,8 +1714,8 @@
       "name": "t2c",
       "value": "aliosha",
       "answer": "false",
-      "x": 454,
-      "y": 916,
+      "x": 447,
+      "y": 922,
       "w": 18,
       "h": 18
     },
@@ -1671,8 +1727,8 @@
       "name": "t2c",
       "value": "aljoscha",
       "answer": "true",
-      "x": 663,
-      "y": 916,
+      "x": 664,
+      "y": 922,
       "w": 18,
       "h": 18
     },
@@ -1898,9 +1954,9 @@
       "id": "au1-audio-06",
       "src": "assets/ab-cd1-track06.mp3",
       "label": "CD 1 · Track 06",
-      "x": 110,
+      "x": 88,
       "y": 1086,
-      "w": 60,
+      "w": 65,
       "h": 14
     },
     {
@@ -1932,11 +1988,11 @@
     }
   ],
   "review": {
-    "status": "partial",
-    "verifiedWords": 0,
-    "totalWords": 206,
+    "status": "verified",
+    "verifiedWords": 214,
+    "totalWords": 214,
     "notes": [
-      "Fields placed from rule/circle detection + Lsg; overlay visual check still pending before verified.",
+      "Words, field boxes and audio icons verified against 150dpi render overlay.",
       "T1a item 1 is the printed example (Wie heißt du? / Mein Name ist Miguel Munoz. = words); only its second answer line is a field.",
       "Übung 2 icon is the single printed range glyph \"▶ 1 03-05\"; represented as three audio entries (tracks 03/04/05) stacked at the icon.",
       "Aussprache 1 (track 06) is listen-and-repeat: no fields. Arrow answers use select down=↘ up=↗.",
