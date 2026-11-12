@@ -1966,15 +1966,255 @@
    "h": 9
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p94-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1b",
+   "answer": "gratuliere",
+   "x": 158,
+   "y": 170,
+   "w": 172,
+   "h": 22
+  },
+  {
+   "id": "p94-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1c",
+   "answer": "Hochzeit",
+   "x": 494,
+   "y": 190,
+   "w": 174,
+   "h": 22
+  },
+  {
+   "id": "p94-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1d",
+   "answer": "Silvester",
+   "x": 385,
+   "y": 229,
+   "w": 173,
+   "h": 22
+  },
+  {
+   "id": "p94-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1e",
+   "answer": "bestanden",
+   "x": 290,
+   "y": 249,
+   "w": 170,
+   "h": 22
+  },
+  {
+   "id": "p94-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1f",
+   "answer": "schenken",
+   "x": 538,
+   "y": 268,
+   "w": 167,
+   "h": 22
+  },
+  {
+   "id": "p94-1g",
+   "group": "g1",
+   "kind": "text",
+   "label": "1g",
+   "answer": "Weihnachten",
+   "x": 242,
+   "y": 288,
+   "w": 170,
+   "h": 22
+  },
+  {
+   "id": "p94-2a",
+   "group": "g2",
+   "kind": "text",
+   "label": "2a",
+   "answer": "der dreizehnte",
+   "x": 400,
+   "y": 385,
+   "w": 195,
+   "h": 22
+  },
+  {
+   "id": "p94-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2b",
+   "answer": "am neunundzwanzigsten Februar",
+   "x": 200,
+   "y": 443,
+   "w": 396,
+   "h": 22
+  },
+  {
+   "id": "p94-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2c",
+   "answer": "der dritte Oktober",
+   "x": 300,
+   "y": 482,
+   "w": 228,
+   "h": 22
+  },
+  {
+   "id": "p94-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2d",
+   "answer": "vom neunten bis zum fünfzehnten August",
+   "x": 172,
+   "y": 522,
+   "w": 415,
+   "h": 22
+  },
+  {
+   "id": "p94-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3b",
+   "answer": "würdest du gern Fallschirm springen",
+   "x": 172,
+   "y": 638,
+   "w": 206,
+   "h": 22
+  },
+  {
+   "id": "p94-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3c",
+   "answer": "würdet ihr gern machen",
+   "x": 288,
+   "y": 678,
+   "w": 102,
+   "h": 22
+  },
+  {
+   "id": "p94-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3d",
+   "answer": "würden gern die neue Ausstellung besuchen",
+   "x": 552,
+   "y": 600,
+   "w": 164,
+   "h": 22
+  },
+  {
+   "id": "p94-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3e",
+   "answer": "würden Sie gern leben",
+   "x": 568,
+   "y": 641,
+   "w": 147,
+   "h": 22
+  },
+  {
+   "id": "p94-3f",
+   "group": "g3",
+   "kind": "text",
+   "label": "3f",
+   "answer": "würden gern jeden Tag feiern",
+   "x": 488,
+   "y": 680,
+   "w": 227,
+   "h": 22
+  },
+  {
+   "id": "p94-4a",
+   "group": "g4",
+   "kind": "text",
+   "label": "4a",
+   "answer": "herzlichen",
+   "x": 217,
+   "y": 775,
+   "w": 155,
+   "h": 22
+  },
+  {
+   "id": "p94-4b",
+   "group": "g4",
+   "kind": "text",
+   "label": "4b",
+   "answer": "neues Jahr",
+   "x": 346,
+   "y": 795,
+   "w": 152,
+   "h": 22
+  },
+  {
+   "id": "p94-4c",
+   "group": "g4",
+   "kind": "text",
+   "label": "4c",
+   "answer": "Gute Besserung",
+   "x": 166,
+   "y": 815,
+   "w": 156,
+   "h": 22
+  },
+  {
+   "id": "p94-4d",
+   "group": "g4",
+   "kind": "text",
+   "label": "4d",
+   "answer": "Weihnachten",
+   "x": 131,
+   "y": 853,
+   "w": 191,
+   "h": 22
+  },
+  {
+   "id": "p94-4e",
+   "group": "g4",
+   "kind": "text",
+   "label": "4e",
+   "answer": "gemacht",
+   "x": 318,
+   "y": 874,
+   "w": 192,
+   "h": 22
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 2"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 3"
+  },
+  {
+   "id": "g4",
+   "label": "Aufgabe 4"
+  }
+ ],
  "review": {
   "status": "partial",
-  "verifiedWords": 280,
-  "totalWords": 280,
   "notes": [
-   "Activation reviewed on a five-page visual sample (71,76,88,98,105): word boxes align with printed text, but these are partial OCR-derived layers. verifiedWords was supplied as the retained-word count by the worker, not an independent word-by-word audit. Some handwriting, symbols, fragments and printed words may be omitted or imperfect. No exercise fields or audio added."
-  ]
+   "Answers from the printed key (Lektion 24, p107). Handwritten examples (1a, 2a, 3a) are not fields.",
+   "Ex 3 answers are the key wording; other correct word orders are not listed.",
+   "Boxes placed from word coordinates and checked visually. Not marked verified."
+  ],
+  "verifiedWords": 280,
+  "totalWords": 280
  }
 }
