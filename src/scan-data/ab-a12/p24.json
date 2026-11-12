@@ -1399,13 +1399,196 @@
    "h": 20
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p24-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1b",
+   "answer": "eine Kirche",
+   "x": 195,
+   "y": 237,
+   "w": 303,
+   "h": 22
+  },
+  {
+   "id": "p24-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1c",
+   "answer": "ein Schloss",
+   "x": 195,
+   "y": 265,
+   "w": 303,
+   "h": 22
+  },
+  {
+   "id": "p24-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1d",
+   "answer": "ein Turm",
+   "x": 195,
+   "y": 289,
+   "w": 303,
+   "h": 22
+  },
+  {
+   "id": "p24-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1e",
+   "answer": "ein Hafen",
+   "x": 566,
+   "y": 208,
+   "w": 304,
+   "h": 22
+  },
+  {
+   "id": "p24-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1f",
+   "answer": "eine Bibliothek",
+   "x": 566,
+   "y": 237,
+   "w": 304,
+   "h": 22
+  },
+  {
+   "id": "p24-1g",
+   "group": "g1",
+   "kind": "text",
+   "label": "1g",
+   "answer": "eine Post",
+   "x": 566,
+   "y": 265,
+   "w": 304,
+   "h": 22
+  },
+  {
+   "id": "p24-1h",
+   "group": "g1",
+   "kind": "text",
+   "label": "1h",
+   "answer": "ein Spielplatz",
+   "x": 566,
+   "y": 293,
+   "w": 304,
+   "h": 22
+  },
+  {
+   "id": "p24-3l",
+   "group": "g2",
+   "kind": "text",
+   "label": "Lösungswort",
+   "answer": "Zürich",
+   "x": 770,
+   "y": 948,
+   "w": 110,
+   "h": 22
+  },
+  {
+   "id": "p24-4a",
+   "group": "g3",
+   "kind": "text",
+   "label": "4a",
+   "answer": "Urlaub",
+   "x": 240,
+   "y": 1130,
+   "w": 238,
+   "h": 22
+  },
+  {
+   "id": "p24-4b",
+   "group": "g3",
+   "kind": "text",
+   "label": "4b",
+   "answer": "Bergen",
+   "x": 340,
+   "y": 1157,
+   "w": 248,
+   "h": 22
+  },
+  {
+   "id": "p24-4c",
+   "group": "g3",
+   "kind": "text",
+   "label": "4c",
+   "answer": "Wetter",
+   "x": 346,
+   "y": 1182,
+   "w": 248,
+   "h": 22
+  },
+  {
+   "id": "p24-4d",
+   "group": "g3",
+   "kind": "text",
+   "label": "4d",
+   "answer": "Meer",
+   "x": 522,
+   "y": 1207,
+   "w": 248,
+   "h": 22
+  },
+  {
+   "id": "p24-4e",
+   "group": "g3",
+   "kind": "text",
+   "label": "4e",
+   "answer": "Dom",
+   "x": 636,
+   "y": 1235,
+   "w": 248,
+   "h": 22
+  },
+  {
+   "id": "p24-4f",
+   "group": "g3",
+   "kind": "text",
+   "label": "4f",
+   "answer": "Wochen",
+   "x": 286,
+   "y": 1299,
+   "w": 226,
+   "h": 22
+  },
+  {
+   "id": "p24-4g",
+   "group": "g3",
+   "kind": "text",
+   "label": "4g",
+   "answer": "Hause",
+   "x": 668,
+   "y": 1307,
+   "w": 228,
+   "h": 22
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 3 Lösung"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 4"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the official Hueber Loesungsschluessel AB A1.2 (Wiederholungsstation Wortschatz).",
+   "Ex 1a is the handwritten example. Ex 2 (connect lines) and the Ex 3 crossword grid are not fields; only the Lösungswort blank is (ZÜRICH per key).",
+   "Boxes placed from word coordinates; not marked verified."
+  ],
   "verifiedWords": 199,
-  "totalWords": 199,
-  "notes": []
+  "totalWords": 199
  }
 }
