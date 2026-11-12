@@ -83,3 +83,12 @@ Three native lesson7 closing pages bring this lane to37 of95 assigned pages,58 r
 - Page58 preserves the source TEST anagrams, weekly schedule, verb prompts, sentence-order prompts, compliment letter hints and score table. Five closed checks accept sentence variants with valid changed emphasis.
 - Page59 has native selectable vocabulary, visible framed saved translation fields, personal notes and a contained original illustration strip. No correctness claim for personal writing or translations.
 - Chrome320/390 normal-click tests cover six correct/wrong checks, feedback reset, persistence of fields/radios/question and stress marks, source audio via the shared chooser, meaning dialogs, loaded images, no dropdown replacements, collisions and bounds. Typecheck/build and hybrid regression pass. Actual untouched/filled pixels inspected against the source scans; dense pronunciation/TEST spacing is compressed to fit checks and full input frames.
+
+## Batch 7: AB A1.1 pages 60-61
+
+Two lesson8 opening pages bring this lane to39 of95 assigned pages,56 remaining. Page41-56 remains outside this lane.
+
+- Native selectable source word snake, saved endpoint highlights, nine contained original picture crops, native SMS frames, source email prompts and wrapping saved word-order responses. Extra nonsense highlights fail; the source SCHWIMMBAD example is fixed.
+- Native digital clock displays, informal/formal time fields, source conversation and illustration, weekday table and ungraded personal translations. Common equivalent informal times are accepted.
+- Seven closed checks sit below tasks. Chrome320/390 tests cover right/wrong results, stale feedback reset, saved text/highlights/translations through reload, loaded images, meaning dialogs, collision/bounds checks and absence of replacement selects. Source has no audio markers on these two pages. Typecheck/build and adjacent native/hybrid regressions run on integrated current main; actual untouched/filled screenshots inspected against the scans.
+- Check buttons and full input frames compress the vertical spacing. Long sentence rewrites use wrapping fields rather than shrinking text to an unreadable size.
