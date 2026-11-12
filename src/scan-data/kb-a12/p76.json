@@ -1,0 +1,1003 @@
+{
+ "book": "kb-a12",
+ "page": 76,
+ "image": "assets/kb-a12-p76.png",
+ "width": 749,
+ "height": 1024,
+ "words": [
+  {
+   "text": "Häuser",
+   "x": 76,
+   "y": 134,
+   "w": 47,
+   "h": 11
+  },
+  {
+   "text": "beschreiben:",
+   "x": 128,
+   "y": 133,
+   "w": 87,
+   "h": 13
+  },
+  {
+   "text": "Mein",
+   "x": 222,
+   "y": 135,
+   "w": 33,
+   "h": 11
+  },
+  {
+   "text": "Traumhaus",
+   "x": 260,
+   "y": 135,
+   "w": 76,
+   "h": 13
+  },
+  {
+   "text": "Das",
+   "x": 79,
+   "y": 191,
+   "w": 17,
+   "h": 9
+  },
+  {
+   "text": "Haus",
+   "x": 101,
+   "y": 191,
+   "w": 26,
+   "h": 9
+  },
+  {
+   "text": "steht",
+   "x": 132,
+   "y": 191,
+   "w": 27,
+   "h": 10
+  },
+  {
+   "text": "a",
+   "x": 82,
+   "y": 165,
+   "w": 6,
+   "h": 7
+  },
+  {
+   "text": "Wie",
+   "x": 104,
+   "y": 162,
+   "w": 23,
+   "h": 11
+  },
+  {
+   "text": "sieht",
+   "x": 132,
+   "y": 162,
+   "w": 30,
+   "h": 11
+  },
+  {
+   "text": "Ihr",
+   "x": 167,
+   "y": 162,
+   "w": 17,
+   "h": 11
+  },
+  {
+   "text": "Traumhaus",
+   "x": 187,
+   "y": 162,
+   "w": 67,
+   "h": 12
+  },
+  {
+   "text": "aus?",
+   "x": 259,
+   "y": 164,
+   "w": 26,
+   "h": 10
+  },
+  {
+   "text": "Kreuzen",
+   "x": 291,
+   "y": 164,
+   "w": 48,
+   "h": 11
+  },
+  {
+   "text": "Sie",
+   "x": 344,
+   "y": 165,
+   "w": 17,
+   "h": 10
+  },
+  {
+   "text": "an",
+   "x": 366,
+   "y": 168,
+   "w": 14,
+   "h": 7
+  },
+  {
+   "text": "oder",
+   "x": 385,
+   "y": 165,
+   "w": 27,
+   "h": 11
+  },
+  {
+   "text": "ergänzen",
+   "x": 417,
+   "y": 166,
+   "w": 55,
+   "h": 14
+  },
+  {
+   "text": "Sie.",
+   "x": 477,
+   "y": 166,
+   "w": 21,
+   "h": 11
+  },
+  {
+   "text": "wald",
+   "x": 438,
+   "y": 202,
+   "w": 38,
+   "h": 37
+  },
+  {
+   "text": "Vor",
+   "x": 77,
+   "y": 261,
+   "w": 18,
+   "h": 9
+  },
+  {
+   "text": "dem",
+   "x": 99,
+   "y": 261,
+   "w": 23,
+   "h": 9
+  },
+  {
+   "text": "Im",
+   "x": 77,
+   "y": 338,
+   "w": 13,
+   "h": 9
+  },
+  {
+   "text": "Garten",
+   "x": 95,
+   "y": 338,
+   "w": 37,
+   "h": 9
+  },
+  {
+   "text": "gibt",
+   "x": 136,
+   "y": 338,
+   "w": 21,
+   "h": 13
+  },
+  {
+   "text": "es",
+   "x": 162,
+   "y": 341,
+   "w": 10,
+   "h": 7
+  },
+  {
+   "text": "Das",
+   "x": 76,
+   "y": 415,
+   "w": 17,
+   "h": 9
+  },
+  {
+   "text": "Haus",
+   "x": 99,
+   "y": 415,
+   "w": 26,
+   "h": 9
+  },
+  {
+   "text": "ist",
+   "x": 130,
+   "y": 415,
+   "w": 12,
+   "h": 10
+  },
+  {
+   "text": "viele",
+   "x": 91,
+   "y": 525,
+   "w": 26,
+   "h": 9
+  },
+  {
+   "text": "große",
+   "x": 121,
+   "y": 525,
+   "w": 31,
+   "h": 13
+  },
+  {
+   "text": "Fenster",
+   "x": 157,
+   "y": 526,
+   "w": 40,
+   "h": 9
+  },
+  {
+   "text": "Balkone",
+   "x": 286,
+   "y": 527,
+   "w": 43,
+   "h": 10
+  },
+  {
+   "text": "eine",
+   "x": 426,
+   "y": 529,
+   "w": 23,
+   "h": 9
+  },
+  {
+   "text": "Terrasse",
+   "x": 454,
+   "y": 530,
+   "w": 45,
+   "h": 9
+  },
+  {
+   "text": "Neben",
+   "x": 74,
+   "y": 569,
+   "w": 34,
+   "h": 10
+  },
+  {
+   "text": "dem",
+   "x": 112,
+   "y": 569,
+   "w": 23,
+   "h": 10
+  },
+  {
+   "text": "Haus",
+   "x": 140,
+   "y": 571,
+   "w": 26,
+   "h": 9
+  },
+  {
+   "text": "steht...",
+   "x": 171,
+   "y": 570,
+   "w": 34,
+   "h": 10
+  },
+  {
+   "text": "eine",
+   "x": 81,
+   "y": 592,
+   "w": 31,
+   "h": 28
+  },
+  {
+   "text": "Garage",
+   "x": 118,
+   "y": 592,
+   "w": 36,
+   "h": 28
+  },
+  {
+   "text": "ein",
+   "x": 254,
+   "y": 607,
+   "w": 16,
+   "h": 6
+  },
+  {
+   "text": "Stall",
+   "x": 275,
+   "y": 604,
+   "w": 24,
+   "h": 10
+  },
+  {
+   "text": "Ich",
+   "x": 73,
+   "y": 646,
+   "w": 16,
+   "h": 10
+  },
+  {
+   "text": "wohne",
+   "x": 94,
+   "y": 647,
+   "w": 36,
+   "h": 10
+  },
+  {
+   "text": "dort",
+   "x": 135,
+   "y": 647,
+   "w": 22,
+   "h": 10
+  },
+  {
+   "text": "allein",
+   "x": 79,
+   "y": 671,
+   "w": 42,
+   "h": 28
+  },
+  {
+   "text": "mit",
+   "x": 253,
+   "y": 684,
+   "w": 18,
+   "h": 7
+  },
+  {
+   "text": "meiner",
+   "x": 276,
+   "y": 685,
+   "w": 40,
+   "h": 7
+  },
+  {
+   "text": "Familie",
+   "x": 320,
+   "y": 682,
+   "w": 41,
+   "h": 10
+  },
+  {
+   "text": "mit",
+   "x": 425,
+   "y": 684,
+   "w": 18,
+   "h": 9
+  },
+  {
+   "text": "meinen",
+   "x": 448,
+   "y": 687,
+   "w": 41,
+   "h": 7
+  },
+  {
+   "text": "Freunden",
+   "x": 494,
+   "y": 685,
+   "w": 53,
+   "h": 10
+  },
+  {
+   "text": "Was",
+   "x": 71,
+   "y": 717,
+   "w": 21,
+   "h": 9
+  },
+  {
+   "text": "ist",
+   "x": 97,
+   "y": 719,
+   "w": 13,
+   "h": 7
+  },
+  {
+   "text": "Ihnen",
+   "x": 115,
+   "y": 716,
+   "w": 32,
+   "h": 10
+  },
+  {
+   "text": "noch",
+   "x": 152,
+   "y": 717,
+   "w": 27,
+   "h": 10
+  },
+  {
+   "text": "wichtig?",
+   "x": 71,
+   "y": 732,
+   "w": 47,
+   "h": 13
+  },
+  {
+   "text": "Mein",
+   "x": 361,
+   "y": 775,
+   "w": 26,
+   "h": 8
+  },
+  {
+   "text": "Traumhaus",
+   "x": 391,
+   "y": 775,
+   "w": 58,
+   "h": 9
+  },
+  {
+   "text": "steht",
+   "x": 453,
+   "y": 776,
+   "w": 25,
+   "h": 9
+  },
+  {
+   "text": "in",
+   "x": 483,
+   "y": 776,
+   "w": 9,
+   "h": 9
+  },
+  {
+   "text": "den",
+   "x": 497,
+   "y": 776,
+   "w": 18,
+   "h": 9
+  },
+  {
+   "text": "b_",
+   "x": 74,
+   "y": 780,
+   "w": 7,
+   "h": 11
+  },
+  {
+   "text": "Beschreiben",
+   "x": 97,
+   "y": 781,
+   "w": 72,
+   "h": 11
+  },
+  {
+   "text": "Sie",
+   "x": 174,
+   "y": 782,
+   "w": 18,
+   "h": 11
+  },
+  {
+   "text": "Ihr",
+   "x": 197,
+   "y": 782,
+   "w": 17,
+   "h": 11
+  },
+  {
+   "text": "Haus.",
+   "x": 219,
+   "y": 783,
+   "w": 33,
+   "h": 10
+  },
+  {
+   "text": "Bergen.",
+   "x": 375,
+   "y": 791,
+   "w": 34,
+   "h": 11
+  },
+  {
+   "text": "Vor",
+   "x": 417,
+   "y": 791,
+   "w": 17,
+   "h": 8
+  },
+  {
+   "text": "dem",
+   "x": 438,
+   "y": 791,
+   "w": 21,
+   "h": 9
+  },
+  {
+   "text": "Haus",
+   "x": 464,
+   "y": 792,
+   "w": 24,
+   "h": 8
+  },
+  {
+   "text": "Ihre",
+   "x": 97,
+   "y": 799,
+   "w": 23,
+   "h": 11
+  },
+  {
+   "text": "Partnerin",
+   "x": 125,
+   "y": 800,
+   "w": 56,
+   "h": 11
+  },
+  {
+   "text": "Ihr",
+   "x": 199,
+   "y": 800,
+   "w": 16,
+   "h": 11
+  },
+  {
+   "text": "Partner",
+   "x": 220,
+   "y": 801,
+   "w": 45,
+   "h": 11
+  },
+  {
+   "text": "zeichnet.",
+   "x": 270,
+   "y": 801,
+   "w": 56,
+   "h": 12
+  },
+  {
+   "text": "Machen",
+   "x": 96,
+   "y": 845,
+   "w": 46,
+   "h": 11
+  },
+  {
+   "text": "Sie",
+   "x": 147,
+   "y": 846,
+   "w": 10,
+   "h": 10
+  },
+  {
+   "text": "eine",
+   "x": 169,
+   "y": 846,
+   "w": 24,
+   "h": 11
+  },
+  {
+   "text": "Ausstellung.",
+   "x": 194,
+   "y": 846,
+   "w": 80,
+   "h": 16
+  },
+  {
+   "text": "Welches",
+   "x": 95,
+   "y": 863,
+   "w": 49,
+   "h": 11
+  },
+  {
+   "text": "Haus",
+   "x": 150,
+   "y": 856,
+   "w": 28,
+   "h": 29
+  },
+  {
+   "text": "gefällt",
+   "x": 178,
+   "y": 856,
+   "w": 44,
+   "h": 29
+  },
+  {
+   "text": "Ihnen",
+   "x": 228,
+   "y": 864,
+   "w": 34,
+   "h": 12
+  },
+  {
+   "text": "am",
+   "x": 267,
+   "y": 869,
+   "w": 17,
+   "h": 7
+  },
+  {
+   "text": "besten?",
+   "x": 290,
+   "y": 865,
+   "w": 47,
+   "h": 11
+  },
+  {
+   "text": "sechsundsiebzig",
+   "x": 64,
+   "y": 983,
+   "w": 89,
+   "h": 14
+  }
+ ],
+ "fields": [
+  {
+   "id": "wahl-0-0",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "am Meer",
+   "x": 78,
+   "y": 213,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "wahl-0-1",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "in den Bergen",
+   "x": 241,
+   "y": 213,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "wahl-0-2",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "im Wald",
+   "x": 413,
+   "y": 213,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "wahl-0-3",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "anderer Ort",
+   "x": 612,
+   "y": 213,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "eigen-0",
+   "group": "14-9",
+   "kind": "text",
+   "label": "Eigene Ergänzung: 1",
+   "x": 631,
+   "y": 212,
+   "w": 105,
+   "h": 20
+  },
+  {
+   "id": "wahl-1-0",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "ein Swimmingpool",
+   "x": 77,
+   "y": 291,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "wahl-1-1",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "ein Fußballplatz",
+   "x": 217,
+   "y": 291,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "wahl-1-2",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "ein Freizeitpark",
+   "x": 411,
+   "y": 291,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "wahl-1-3",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "anderes vor dem Haus",
+   "x": 610,
+   "y": 291,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "eigen-1",
+   "group": "14-9",
+   "kind": "text",
+   "label": "Eigene Ergänzung: 2",
+   "x": 631,
+   "y": 290,
+   "w": 105,
+   "h": 20
+  },
+  {
+   "id": "wahl-2-0",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "viele Blumen",
+   "x": 76,
+   "y": 368,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "wahl-2-1",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "viele Bäume",
+   "x": 239,
+   "y": 368,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "wahl-2-2",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "ein Fluss",
+   "x": 411,
+   "y": 368,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "wahl-2-3",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "anderes im Garten",
+   "x": 609,
+   "y": 368,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "eigen-2",
+   "group": "14-9",
+   "kind": "text",
+   "label": "Eigene Ergänzung: 3",
+   "x": 631,
+   "y": 367,
+   "w": 105,
+   "h": 20
+  },
+  {
+   "id": "wahl-3-0",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "eine alte Fabrik",
+   "x": 75,
+   "y": 446,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "wahl-3-1",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "ein Leuchtturm",
+   "x": 256,
+   "y": 446,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "wahl-3-2",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "ein altes Bauernhaus",
+   "x": 410,
+   "y": 446,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "wahl-3-3",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "anderer Haustyp",
+   "x": 609,
+   "y": 446,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "eigen-3",
+   "group": "14-9",
+   "kind": "text",
+   "label": "Eigene Ergänzung: 4",
+   "x": 631,
+   "y": 445,
+   "w": 105,
+   "h": 20
+  },
+  {
+   "id": "wahl-4-0",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "viele große Fenster",
+   "x": 74,
+   "y": 524,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "wahl-4-1",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "viele Balkone",
+   "x": 237,
+   "y": 524,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "wahl-4-2",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "eine Terrasse",
+   "x": 409,
+   "y": 524,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "wahl-4-3",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "andere Ausstattung",
+   "x": 608,
+   "y": 524,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "eigen-4",
+   "group": "14-9",
+   "kind": "text",
+   "label": "Eigene Ergänzung: 5",
+   "x": 631,
+   "y": 523,
+   "w": 105,
+   "h": 20
+  },
+  {
+   "id": "wahl-5-0",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "eine Garage",
+   "x": 73,
+   "y": 601,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "wahl-5-1",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "ein Stall",
+   "x": 236,
+   "y": 601,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "wahl-5-2",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "ein Zelt",
+   "x": 408,
+   "y": 601,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "wahl-5-3",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "anderes neben dem Haus",
+   "x": 607,
+   "y": 601,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "eigen-5",
+   "group": "14-9",
+   "kind": "text",
+   "label": "Eigene Ergänzung: 6",
+   "x": 631,
+   "y": 600,
+   "w": 105,
+   "h": 20
+  },
+  {
+   "id": "wahl-6-0",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "allein",
+   "x": 72,
+   "y": 678,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "wahl-6-1",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "mit meiner Familie",
+   "x": 235,
+   "y": 678,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "wahl-6-2",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "mit meinen Freunden",
+   "x": 407,
+   "y": 678,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "wahl-6-3",
+   "group": "14-9",
+   "kind": "checkbox",
+   "label": "andere Mitbewohner",
+   "x": 606,
+   "y": 678,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "id": "eigen-6",
+   "group": "14-9",
+   "kind": "text",
+   "label": "Eigene Ergänzung: 7",
+   "x": 631,
+   "y": 677,
+   "w": 105,
+   "h": 20
+  },
+  {
+   "id": "wichtig",
+   "group": "14-9",
+   "kind": "text",
+   "label": "Was ist Ihnen noch wichtig?",
+   "x": 234,
+   "y": 718,
+   "w": 502,
+   "h": 23
+  }
+ ],
+ "audio": [],
+ "groups": [
+  {
+   "id": "14-9",
+   "label": "L14 · Mein Traumhaus"
+  }
+ ],
+ "review": {
+  "status": "partial",
+  "verifiedWords": 16,
+  "totalWords": 88,
+  "notes": [
+   "Interactive fields checked against the original printed scan. Fixed answers use Hueber 2017 A1 key or the complementary printed partner table as specified below. The filtered OCR word layer still needs complete proofreading; only manually read exercise headings count as verified.",
+   "All house selections are subjective, deliberately ungraded checkboxes; no option is labelled right/wrong. The printed drawing sample is unchanged."
+  ]
+ }
+}
