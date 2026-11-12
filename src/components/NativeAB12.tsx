@@ -23,7 +23,7 @@ export function NativeAB12({page}:{page:string}){
  const hand=(x:number,y:number,w:number,t:string)=><div className="naText naHand" style={{left:x,top:y,width:w}}><Words text={t}/></div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}"}</style><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='89'&&<>
   {art('lesson-tab',738,18,62,75)}
   {text(75,63,300,'LERNWORTSCHATZ','naHeadline')}
@@ -135,7 +135,7 @@ export function NativeAB12({page}:{page:string}){
   {field('p30-1e',232,413,189,'Antwort 1e')}
   {text(429,414,200,'. Vielen Dank!','naDlg naNw')}
   {art('rezeption',636,250,414,226)}
-  {check('30-1',190,446,{'p30-1a':'brauche Ihre Hilfe','p30-1b':'funktioniert nicht','p30-1c':'kümmere','p30-1d':'sofort','p30-1e':'ist sehr nett'})}
+  {check('30-1',190,444,{'p30-1a':'brauche Ihre Hilfe','p30-1b':'funktioniert nicht','p30-1c':'kümmere','p30-1d':'sofort','p30-1e':'ist sehr nett'})}
   {kb(78,490,'KB 5')}
   {title('2',130,482,760,'Was bedeuten die Bilder im Hotel? Ordnen Sie zu.','naGB')}
   <div className="naSide" style={{left:75,top:520}}>WÖRTER</div>
@@ -150,10 +150,10 @@ export function NativeAB12({page}:{page:string}){
   {([['p30-2d',384,679,154,'Bild d'],['p30-2g',595,679,155,'Bild g'],['p30-2j',816,682,149,'Bild j'],['p30-2b',160,821,157,'Bild b'],['p30-2e',384,821,154,'Bild e'],['p30-2h',595,824,155,'Bild h'],['p30-2k',816,825,149,'Bild k'],['p30-2c',160,975,157,'Bild c'],['p30-2f',384,977,154,'Bild f'],['p30-2i',595,979,155,'Bild i'],['p30-2l',816,980,149,'Bild l']] as [string,number,number,number,string][]).map(([id,x,y,w,l])=>field(id,x,y,w,l))}
   {check('30-2',160,1011,{'p30-2b':'der Aufzug','p30-2c':'das Telefon','p30-2d':'die Internetverbindung','p30-2e':'das Radio','p30-2f':'das Restaurant','p30-2g':'die Dusche','p30-2h':'die Klimaanlage','p30-2i':'das Schwimmbad','p30-2j':'der Föhn','p30-2k':'die Minibar','p30-2l':'der Tennisplatz'})}
   {kb(78,1052,'KB 5')}
-  {title('3',130,1044,820,'Was haben Sie auf einer Reise in Ihrem KOFFER? Finden Sie Wörter.','naGB')}
+  {title('3',130,1058,820,'Was haben Sie auf einer Reise in Ihrem KOFFER? Finden Sie Wörter.','naGB')}
   <div className="naSide" style={{left:75,top:1090}}>WÖRTER</div>
-  {(['K','O','F','F','E','R'] as string[]).map((l,i)=>{const y=Math.round(1076+i*25.8);return <div key={i}>{text(374,y,26,l,'naLet')}{i!==2&&field('p30-3-'+i,398,y-5,205,'KOFFER-Zeile '+(i+1))}{i!==2&&field('p30-3-l'+i,160,y-5,205,'KOFFER-Zeile '+(i+1)+' links')}</div>})}
-  {art('foehn',386,1122,104,32)}
+  {(['K','O','F','F','E','R'] as string[]).map((l,i)=>{const y=Math.round(1090+i*25.8);return <div key={i}>{text(374,y,26,l,'naLet')}{i!==2&&field('p30-3-'+i,398,y-5,205,'KOFFER-Zeile '+(i+1))}{i!==2&&field('p30-3-l'+i,160,y-5,205,'KOFFER-Zeile '+(i+1)+' links')}</div>})}
+  {art('foehn',386,1136,104,32)}
   {kb(78,1278,'KB 5')}
   {title('4',130,1270,900,'Machen Sie ein Rätsel für Ihre Partnerin / Ihren Partner wie in 3 zu einem Thema aus den Lektionen 13–15.','naGB')}
   {text(55,1298,26,'●','naOpt')}
