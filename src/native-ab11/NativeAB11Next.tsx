@@ -74,7 +74,7 @@ export function NativeAB11Next({page}:{page:string}){
  {title('8',1010,'Ergänzen Sie und markieren Sie die Endungen.','KB 3d','Strukturen entdecken')}
  <div className="nabConjugation" style={{left:209,top:py(1050)}}><b/><>{['machen','leben','wohnen','arbeiten','haben','sein'].map(s=><b key={s}>{s}</b>)}</>{['ich','du','er/sie','wir','ihr','sie/Sie'].map((s,r)=><div className="nabConjRow" key={s}><span>{s}</span>{['machen','leben','wohnen','arbeiten','haben','sein'].map((verb,c)=>{const given=({ '0-0':'mache','1-3':'arbeitest','1-4':'hast','2-0':'macht','2-3':'arbeitet','2-4':'hat','2-5':'ist','3-1':'leben','4-2':'wohnt','5-2':'wohnen','5-5':'sind'} as Record<string,string>)[r+'-'+c],id='u8-'+['ich','du','ersie','wir','ihr','sieSie'][r]+'-'+verb;return given?<span key={verb}>{given}</span>:<input key={verb} data-native-field={id} aria-label={'8 '+s+' '+verb} value={v[id]||''} onChange={e=>set(id,e.target.value)} onSelect={e=>{const t=e.currentTarget;if(t.selectionStart!==t.selectionEnd)set('mark-'+id,t.selectionStart+':'+t.selectionEnd)}} style={endingStyle(id)} className={v['mark-'+id]?'hasEnding':''}/>})}</div>)}</div>
  {checkGroup('u8',202,1256)}
- {title('9',1296,'Ergänzen Sie die Verben in der richtigen Form.','KB 3d')}
+ {title('9',1307,'Ergänzen Sie die Verben in der richtigen Form.','KB 3d')}
  {text(209,1336,760,'a  Was machst (machen) du beruflich?')}
  {text(209,1364,53,'b  Ich')}{field('u9-b1',268,1361,110,'9b sein')}{text(384,1364,200,'(sein) Studentin und')}{field('u9-b2',592,1361,110,'9b haben')}{text(709,1364,350,'(haben) einen Job als Verkäuferin.')}
  {text(209,1392,51,'c  Wo')}{field('u9-c',268,1389,110,'9c wohnen')}{text(384,1392,410,'(wohnen) ihr?')}
@@ -143,7 +143,7 @@ export function NativeAB11Next({page}:{page:string}){
  {title('5',1135,'Welche Antwort passt? Kreuzen Sie an.','','Kommunikation')}
  {['Wo arbeitest du?','Und woher kommen Sie?','Was machen Sie gerade?','Wie alt sind die Kinder?','Wo arbeiten Sie?'].map((s,i)=>{const x=i<2?202:i<4?492:829,y=1175+(i%2&&i<4?121:0);return <div key={s}>{text(x,y,i===4?215:310,String.fromCharCode(97+i)+'  ▪  '+s,'nabSmall')}{[0,1].map(j=><div key={j}>{choice('u5-'+i,''+j,x+29,y+28+j*41,'5'+String.fromCharCode(97+i)+' Antwort '+(j+1))}{text(x+63,y+32+j*41,i===4?150:260,[['Als IT-Spezialist.','Bei EASY COMPUTER.'],['Aus Frankreich.','In Frankreich.'],['Ich glaube, sie macht eine\nAusbildung als Friseurin.','Ich mache eine Ausbildung\nals Friseurin.'],['Zwei, drei und fünf.','Sie ist zehn.'],['In Frankfurt.','Aus Frankfurt.']][i][j],'nabSmall')}</div>)}</div>})}
  {check('u5',202,1412,{'u5-0':'1','u5-1':'0','u5-2':'1','u5-3':'0','u5-4':'0'})}
- {text(492,1457,520,'Wörter: 0-7 🔴 · 8-11 🟡 · 12-14 🟢\nStrukturen: 0-4 🔴 · 5-6 🟡 · 7-8 🟢\nKommunikation: 0-2 🔴 · 3 🟡 · 4-5 🟢','nabSmall')}
+ <div className="nabScore" style={{left:492,top:1410}}><b>Wörter</b><b>Strukturen</b><b>Kommunikation</b>{[['0-7 Punkte','0-4 Punkte','0-2 Punkte'],['8-11 Punkte','5-6 Punkte','3 Punkte'],['12-14 Punkte','7-8 Punkte','4-5 Punkte']].map((row,r)=>row.map((label,c)=><div key={r+'-'+c}><i style={{background:['#d71a13','#edce09','#2c9d27'][r]}}/>{label}</div>))}</div>
  </>}
  {page==='17'&&<>
  {head('LERNWORTSCHATZ')}<div className="nabModule">2</div>
@@ -174,16 +174,16 @@ export function NativeAB11Next({page}:{page:string}){
  {checkRule('u2',202,656,()=>[['u2-janein',['Ist das dein Mann?','Ist deine Schwester verheiratet?','Hast du Kinder?']],['u2-wfragen',['Wer ist das?','Das sind meine Eltern.','Wie heißt deine Schwester?','Meine Schwester hat zwei Kinder.','Was ist deine Mutter von Beruf?']]].every(([id,list])=>{const actual=(v[id as string]||'').split(/[,?!.]+/).map(norm).filter(Boolean);return (list as string[]).every(s=>actual.includes(norm(s)))&&actual.length===(list as string[]).length}))}
  {title('3',692,'Schreiben Sie Sätze.','KB 4')}
  {text(209,727,616,'a  wer / das / ist   Wer ist das?','nabExample')}
- {['das / Frau / ist / deine','das / nein / Schwester / ist / meine','verheiratet / du / bist','geschieden / nicht / bin / ich'].map((s,i)=>{const x=[444,580,427,523][i];return <div key={s}>{text(209,753+i*29,x-216,String.fromCharCode(98+i)+'  '+s)}{field('u3-'+String.fromCharCode(98+i),x,751+i*29,1000-x,'3'+String.fromCharCode(98+i)+' Satz')}</div>})}{checkGroup('u3',202,860)}
- {title('4',895,'Aussagen und Fragen','KB 4')}{text(209,930,713,'Machen Sie Übungen wie in 3. Ihre Partnerin / Ihr Partner schreibt Sätze.','nabTitle')}{multi('partner-saetze',209,960,695,44,'4 eigene Sätze')}
+ {['das / Frau / ist / deine','das / nein / Schwester / ist / meine','verheiratet / du / bist','geschieden / nicht / bin / ich'].map((s,i)=>{const x=[444,580,427,523][i];return <div key={s}>{text(209,753+i*29,x-216,String.fromCharCode(98+i)+'  '+s)}{field('u3-'+String.fromCharCode(98+i),x,751+i*29,1000-x,'3'+String.fromCharCode(98+i)+' Satz')}</div>})}{checkGroup('u3',202,866)}
+ {title('4',915,'Aussagen und Fragen','KB 4')}{text(209,950,713,'Machen Sie Übungen wie in 3. Ihre Partnerin / Ihr Partner schreibt Sätze.','nabTitle')}{multi('partner-saetze',209,985,695,35,'4 eigene Sätze')}
  {title('5',1034,'Kreuzen Sie an.','KB 5','Kommunikation')}
  {img('rings',420,1071,34,23)}{img('children',470,1105,50,38)}{img('rings2',504,1139,43,25)}{img('flag',583,1173,53,35)}
  {['Ist Lisa geschieden?','Sind das deine Kinder?','Vroni ist nicht verheiratet.','Roberto kommt nicht aus Spanien.'].map((s,i)=><div key={s}>{text(209,1071+i*34,430,String.fromCharCode(97+i)+'  '+s)}{i===0?text(676,1071,222,'☑ Ja.      ◯ Nein.'): <>{choice('u5-'+String.fromCharCode(97+i),i===1?'Ja':'Doch',678,1067+i*34,'5'+String.fromCharCode(97+i)+' ja doch')}{text(706,1071+i*34,65,i===1?'Ja.':'Doch.')}{choice('u5-'+String.fromCharCode(97+i),'Nein',779,1067+i*34,'5'+String.fromCharCode(97+i)+' Nein')}{text(806,1071+i*34,90,'Nein.')}</>}</div>)}
  {check('u5',202,1197,{'u5-b':'Nein','u5-c':'Doch','u5-d':'Nein'})}
  {title('6',1232,'Ergänzen Sie ja, nein oder doch.','KB 5','Kommunikation')}
  {text(209,1267,722,'a  Ist deine Schwester verheiratet?  Ja, meine Schwester ist verheiratet.')}
- {['Leben deine Eltern in Kiel?','Du studierst nicht, oder?','Deine Schwester ist auch Schauspielerin, oder?','Deine Frau heißt nicht Sandra, oder?'].map((s,i)=>{const x=[512,491,744,638][i],y=[1295,1324,1353,1411][i];return <div key={s}>{text(209,y,x-216,String.fromCharCode(98+i)+'  '+s)}{field('u6-'+String.fromCharCode(98+i),x,y-3,88,'6'+String.fromCharCode(98+i))}{text(i===2?750:x+94,i===2?y+24:y,i===2?285:1040-x-94,[', meine Eltern leben nicht in Kiel.',', ich studiere Physik.',', sie ist auch Schauspielerin.',', sie heißt Sandra.'][i])}</div>})}
- {checkGroup('u6',202,1445)}
+ {['Leben deine Eltern in Kiel?','Du studierst nicht, oder?','Deine Schwester ist auch Schauspielerin, oder?','Deine Frau heißt nicht Sandra, oder?'].map((s,i)=>{const x=[512,491,744,638][i],y=[1295,1324,1353,1422][i];return <div key={s}>{text(209,y,x-216,String.fromCharCode(98+i)+'  '+s)}{field('u6-'+String.fromCharCode(98+i),x,y-3,88,'6'+String.fromCharCode(98+i))}{text(i===2?750:x+94,i===2?y+24:y,i===2?285:1040-x-94,[', meine Eltern leben nicht in Kiel.',', ich studiere Physik.',', sie ist auch Schauspielerin.',', sie heißt Sandra.'][i])}</div>})}
+ {checkGroup('u6',202,1459)}
  </>}
  {page==='19'&&<>
  {head('BASISTRAINING')}<div className="nabModule">3</div>
@@ -217,6 +217,6 @@ export function NativeAB11Next({page}:{page:string}){
  {['Wie heiße ich?','Wie heißt meine Mutter?','Wie heißt mein Opa?'].map((s,i)=><div key={s}>{text(202,1450+i*30,265,String.fromCharCode(97+i)+'  '+s)}{field('u10-'+String.fromCharCode(97+i),478,1447+i*30,273,'10'+String.fromCharCode(97+i))}</div>)}
  {checkGroup('u10',815,1490)}
  </>}
- {text(Number(page)%2?991:50,1485,80,'Modul 1','nabFooter')}{text(Number(page)%2?920:130,1485,500,page+' | '+({'12':'zwölf','13':'dreizehn','14':'vierzehn','15':'fünfzehn','16':'sechzehn','17':'siebzehn','18':'achtzehn','19':'neunzehn'} as Record<string,string>)[page],'nabFooter')}
+ {text(Number(page)%2?991:50,1485,80,'Modul 1','nabFooter')}{text(Number(page)%2?810:130,1485,175,Number(page)%2?({'13':'dreizehn','15':'fünfzehn','17':'siebzehn','19':'neunzehn'} as Record<string,string>)[page]+' | '+page:page+' | '+({'12':'zwölf','14':'vierzehn','16':'sechzehn','18':'achtzehn'} as Record<string,string>)[page],'nabFooter')}
  </div><audio ref={audio} className="nabPlayer" controls hidden={!track} aria-label="Originalaudio Arbeitsbuch"/></div>;
 }
