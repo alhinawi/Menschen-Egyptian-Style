@@ -1,0 +1,1499 @@
+{
+  "book": "kb-a11",
+  "page": 64,
+  "image": "assets/kb-a11-p64.png",
+  "width": 1072,
+  "height": 1518,
+  "words": [
+    {
+      "text": "Was",
+      "x": 198,
+      "y": 239,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "haben",
+      "x": 244,
+      "y": 237,
+      "w": 56,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 308,
+      "y": 236,
+      "w": 27,
+      "h": 16
+    },
+    {
+      "text": "gestern",
+      "x": 342,
+      "y": 233,
+      "w": 70,
+      "h": 27
+    },
+    {
+      "text": "gemacht",
+      "x": 420,
+      "y": 231,
+      "w": 92,
+      "h": 28
+    },
+    {
+      "text": "Machen",
+      "x": 201,
+      "y": 277,
+      "w": 63,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 271,
+      "y": 277,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "Notizen",
+      "x": 303,
+      "y": 276,
+      "w": 71,
+      "h": 14
+    },
+    {
+      "text": "Hausaufgaben",
+      "x": 206,
+      "y": 314,
+      "w": 108,
+      "h": 21
+    },
+    {
+      "text": "machen",
+      "x": 322,
+      "y": 313,
+      "w": 58,
+      "h": 15
+    },
+    {
+      "text": "auf·räumen",
+      "x": 396,
+      "y": 311,
+      "w": 87,
+      "h": 16
+    },
+    {
+      "text": "frühstücken",
+      "x": 499,
+      "y": 310,
+      "w": 92,
+      "h": 15
+    },
+    {
+      "text": "fern·sehen",
+      "x": 205,
+      "y": 340,
+      "w": 80,
+      "h": 16
+    },
+    {
+      "text": "schlafen",
+      "x": 301,
+      "y": 338,
+      "w": 63,
+      "h": 16
+    },
+    {
+      "text": "ein·kaufen",
+      "x": 371,
+      "y": 336,
+      "w": 99,
+      "h": 18
+    },
+    {
+      "text": "telefonieren",
+      "x": 476,
+      "y": 335,
+      "w": 93,
+      "h": 15
+    },
+    {
+      "text": "arbeiten",
+      "x": 206,
+      "y": 365,
+      "w": 64,
+      "h": 15
+    },
+    {
+      "text": "eine",
+      "x": 285,
+      "y": 365,
+      "w": 32,
+      "h": 14
+    },
+    {
+      "text": "Pause",
+      "x": 325,
+      "y": 365,
+      "w": 42,
+      "h": 13
+    },
+    {
+      "text": "machen",
+      "x": 375,
+      "y": 362,
+      "w": 59,
+      "h": 15
+    },
+    {
+      "text": "Deutsch",
+      "x": 450,
+      "y": 361,
+      "w": 60,
+      "h": 15
+    },
+    {
+      "text": "lernen",
+      "x": 518,
+      "y": 361,
+      "w": 47,
+      "h": 14
+    },
+    {
+      "text": "lesen",
+      "x": 207,
+      "y": 391,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "kochen",
+      "x": 260,
+      "y": 390,
+      "w": 54,
+      "h": 15
+    },
+    {
+      "text": "essen",
+      "x": 330,
+      "y": 393,
+      "w": 41,
+      "h": 10
+    },
+    {
+      "text": "an·rufen",
+      "x": 378,
+      "y": 386,
+      "w": 82,
+      "h": 19
+    },
+    {
+      "text": "Freunde",
+      "x": 466,
+      "y": 386,
+      "w": 61,
+      "h": 15
+    },
+    {
+      "text": "treffen",
+      "x": 534,
+      "y": 384,
+      "w": 52,
+      "h": 15
+    },
+    {
+      "text": "ein·laden",
+      "x": 592,
+      "y": 384,
+      "w": 72,
+      "h": 15
+    },
+    {
+      "text": "im",
+      "x": 682,
+      "y": 384,
+      "w": 18,
+      "h": 14
+    },
+    {
+      "text": "Internet",
+      "x": 708,
+      "y": 384,
+      "w": 62,
+      "h": 13
+    },
+    {
+      "text": "surfen",
+      "x": 778,
+      "y": 380,
+      "w": 47,
+      "h": 15
+    },
+    {
+      "text": "Musik",
+      "x": 841,
+      "y": 380,
+      "w": 44,
+      "h": 15
+    },
+    {
+      "text": "hören",
+      "x": 893,
+      "y": 379,
+      "w": 43,
+      "h": 14
+    },
+    {
+      "text": "Fußball",
+      "x": 208,
+      "y": 415,
+      "w": 56,
+      "h": 18
+    },
+    {
+      "text": "Tennis",
+      "x": 268,
+      "y": 415,
+      "w": 54,
+      "h": 18
+    },
+    {
+      "text": "spielen",
+      "x": 355,
+      "y": 414,
+      "w": 53,
+      "h": 19
+    },
+    {
+      "text": "singen",
+      "x": 423,
+      "y": 413,
+      "w": 49,
+      "h": 19
+    },
+    {
+      "text": "malen",
+      "x": 489,
+      "y": 411,
+      "w": 45,
+      "h": 15
+    },
+    {
+      "text": "fotografieren",
+      "x": 541,
+      "y": 409,
+      "w": 107,
+      "h": 21
+    },
+    {
+      "text": "tanzen",
+      "x": 656,
+      "y": 409,
+      "w": 60,
+      "h": 16
+    },
+    {
+      "text": "Verwenden",
+      "x": 202,
+      "y": 465,
+      "w": 93,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 302,
+      "y": 465,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "die",
+      "x": 333,
+      "y": 464,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "Notizen",
+      "x": 366,
+      "y": 464,
+      "w": 65,
+      "h": 14
+    },
+    {
+      "text": "und",
+      "x": 440,
+      "y": 462,
+      "w": 29,
+      "h": 15
+    },
+    {
+      "text": "schreiben",
+      "x": 478,
+      "y": 461,
+      "w": 79,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 565,
+      "y": 461,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "Sätze",
+      "x": 595,
+      "y": 461,
+      "w": 50,
+      "h": 14
+    },
+    {
+      "text": "Geben",
+      "x": 204,
+      "y": 516,
+      "w": 50,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 261,
+      "y": 516,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "Ihrer",
+      "x": 293,
+      "y": 515,
+      "w": 39,
+      "h": 14
+    },
+    {
+      "text": "Partnerin",
+      "x": 340,
+      "y": 514,
+      "w": 77,
+      "h": 15
+    },
+    {
+      "text": "Ihrem",
+      "x": 441,
+      "y": 513,
+      "w": 47,
+      "h": 15
+    },
+    {
+      "text": "Partner",
+      "x": 497,
+      "y": 513,
+      "w": 61,
+      "h": 13
+    },
+    {
+      "text": "Ihre",
+      "x": 566,
+      "y": 511,
+      "w": 31,
+      "h": 15
+    },
+    {
+      "text": "Sätze",
+      "x": 604,
+      "y": 511,
+      "w": 50,
+      "h": 14
+    },
+    {
+      "text": "Sie",
+      "x": 204,
+      "y": 542,
+      "w": 24,
+      "h": 17
+    },
+    {
+      "text": "Er",
+      "x": 232,
+      "y": 542,
+      "w": 23,
+      "h": 17
+    },
+    {
+      "text": "korrigiert",
+      "x": 263,
+      "y": 541,
+      "w": 80,
+      "h": 20
+    },
+    {
+      "text": "Ihren",
+      "x": 351,
+      "y": 540,
+      "w": 41,
+      "h": 14
+    },
+    {
+      "text": "Text",
+      "x": 399,
+      "y": 540,
+      "w": 35,
+      "h": 14
+    },
+    {
+      "text": "Rechtschreibung",
+      "x": 450,
+      "y": 534,
+      "w": 124,
+      "h": 20
+    },
+    {
+      "text": "Grammatik",
+      "x": 601,
+      "y": 534,
+      "w": 106,
+      "h": 20
+    },
+    {
+      "text": "7:00",
+      "x": 761,
+      "y": 248,
+      "w": 39,
+      "h": 14
+    },
+    {
+      "text": "frühstücken",
+      "x": 806,
+      "y": 246,
+      "w": 81,
+      "h": 19
+    },
+    {
+      "text": "9:00",
+      "x": 762,
+      "y": 274,
+      "w": 38,
+      "h": 14
+    },
+    {
+      "text": "Ich",
+      "x": 231,
+      "y": 612,
+      "w": 19,
+      "h": 12
+    },
+    {
+      "text": "habe",
+      "x": 258,
+      "y": 611,
+      "w": 30,
+      "h": 12
+    },
+    {
+      "text": "um",
+      "x": 296,
+      "y": 613,
+      "w": 16,
+      "h": 9
+    },
+    {
+      "text": "sieben",
+      "x": 320,
+      "y": 608,
+      "w": 40,
+      "h": 14
+    },
+    {
+      "text": "Uhr",
+      "x": 368,
+      "y": 607,
+      "w": 27,
+      "h": 13
+    },
+    {
+      "text": "gefrühstückt",
+      "x": 402,
+      "y": 603,
+      "w": 92,
+      "h": 17
+    },
+    {
+      "text": "Von",
+      "x": 231,
+      "y": 632,
+      "w": 22,
+      "h": 13
+    },
+    {
+      "text": "neun",
+      "x": 261,
+      "y": 636,
+      "w": 27,
+      "h": 9
+    },
+    {
+      "text": "bis",
+      "x": 297,
+      "y": 630,
+      "w": 16,
+      "h": 14
+    },
+    {
+      "text": "zwölf",
+      "x": 320,
+      "y": 629,
+      "w": 38,
+      "h": 19
+    },
+    {
+      "text": "habe",
+      "x": 366,
+      "y": 629,
+      "w": 30,
+      "h": 12
+    },
+    {
+      "text": "ich",
+      "x": 404,
+      "y": 628,
+      "w": 19,
+      "h": 12
+    },
+    {
+      "text": "gearbeitet",
+      "x": 425,
+      "y": 623,
+      "w": 78,
+      "h": 28
+    },
+    {
+      "text": "temporale",
+      "x": 176,
+      "y": 819,
+      "w": 82,
+      "h": 20
+    },
+    {
+      "text": "Präpositionen",
+      "x": 264,
+      "y": 818,
+      "w": 113,
+      "h": 19
+    },
+    {
+      "text": "von",
+      "x": 383,
+      "y": 821,
+      "w": 29,
+      "h": 9
+    },
+    {
+      "text": "bis",
+      "x": 437,
+      "y": 816,
+      "w": 26,
+      "h": 16
+    },
+    {
+      "text": "ab",
+      "x": 470,
+      "y": 816,
+      "w": 17,
+      "h": 14
+    },
+    {
+      "text": "Wann",
+      "x": 187,
+      "y": 851,
+      "w": 52,
+      "h": 12
+    },
+    {
+      "text": "Von",
+      "x": 252,
+      "y": 851,
+      "w": 29,
+      "h": 12
+    },
+    {
+      "text": "9",
+      "x": 287,
+      "y": 851,
+      "w": 8,
+      "h": 12
+    },
+    {
+      "text": "Uhr",
+      "x": 301,
+      "y": 849,
+      "w": 29,
+      "h": 13
+    },
+    {
+      "text": "bis",
+      "x": 452,
+      "y": 847,
+      "w": 20,
+      "h": 13
+    },
+    {
+      "text": "10",
+      "x": 479,
+      "y": 847,
+      "w": 15,
+      "h": 14
+    },
+    {
+      "text": "Uhr",
+      "x": 500,
+      "y": 846,
+      "w": 28,
+      "h": 14
+    },
+    {
+      "text": "Ab",
+      "x": 253,
+      "y": 893,
+      "w": 19,
+      "h": 13
+    },
+    {
+      "text": "9",
+      "x": 278,
+      "y": 891,
+      "w": 10,
+      "h": 12
+    },
+    {
+      "text": "Uhr",
+      "x": 292,
+      "y": 893,
+      "w": 29,
+      "h": 13
+    },
+    {
+      "text": "jetzt",
+      "x": 248,
+      "y": 932,
+      "w": 29,
+      "h": 14
+    },
+    {
+      "text": "9",
+      "x": 359,
+      "y": 930,
+      "w": 9,
+      "h": 12
+    },
+    {
+      "text": "Uhr",
+      "x": 372,
+      "y": 929,
+      "w": 25,
+      "h": 11
+    },
+    {
+      "text": "über",
+      "x": 565,
+      "y": 813,
+      "w": 36,
+      "h": 14
+    },
+    {
+      "text": "Vergangenes",
+      "x": 607,
+      "y": 815,
+      "w": 102,
+      "h": 17
+    },
+    {
+      "text": "sprechen",
+      "x": 715,
+      "y": 810,
+      "w": 73,
+      "h": 19
+    },
+    {
+      "text": "Was",
+      "x": 566,
+      "y": 846,
+      "w": 29,
+      "h": 11
+    },
+    {
+      "text": "hast",
+      "x": 601,
+      "y": 844,
+      "w": 32,
+      "h": 13
+    },
+    {
+      "text": "du",
+      "x": 639,
+      "y": 844,
+      "w": 18,
+      "h": 13
+    },
+    {
+      "text": "heute",
+      "x": 663,
+      "y": 843,
+      "w": 43,
+      "h": 13
+    },
+    {
+      "text": "gestern",
+      "x": 724,
+      "y": 846,
+      "w": 56,
+      "h": 15
+    },
+    {
+      "text": "letzten",
+      "x": 577,
+      "y": 867,
+      "w": 52,
+      "h": 13
+    },
+    {
+      "text": "Montag",
+      "x": 636,
+      "y": 867,
+      "w": 57,
+      "h": 16
+    },
+    {
+      "text": "letzte",
+      "x": 711,
+      "y": 864,
+      "w": 42,
+      "h": 13
+    },
+    {
+      "text": "Woche",
+      "x": 759,
+      "y": 863,
+      "w": 50,
+      "h": 13
+    },
+    {
+      "text": "gemacht",
+      "x": 597,
+      "y": 887,
+      "w": 72,
+      "h": 19
+    },
+    {
+      "text": "Von",
+      "x": 848,
+      "y": 841,
+      "w": 28,
+      "h": 12
+    },
+    {
+      "text": "neun",
+      "x": 883,
+      "y": 844,
+      "w": 38,
+      "h": 9
+    },
+    {
+      "text": "bis",
+      "x": 926,
+      "y": 839,
+      "w": 21,
+      "h": 13
+    },
+    {
+      "text": "eins",
+      "x": 953,
+      "y": 839,
+      "w": 30,
+      "h": 13
+    },
+    {
+      "text": "habe",
+      "x": 990,
+      "y": 837,
+      "w": 35,
+      "h": 13
+    },
+    {
+      "text": "ich",
+      "x": 1032,
+      "y": 837,
+      "w": 21,
+      "h": 13
+    },
+    {
+      "text": "gearbeitet",
+      "x": 858,
+      "y": 861,
+      "w": 81,
+      "h": 19
+    },
+    {
+      "text": "Ich",
+      "x": 849,
+      "y": 883,
+      "w": 23,
+      "h": 13
+    },
+    {
+      "text": "habe",
+      "x": 878,
+      "y": 883,
+      "w": 35,
+      "h": 13
+    },
+    {
+      "text": "eine",
+      "x": 920,
+      "y": 883,
+      "w": 31,
+      "h": 12
+    },
+    {
+      "text": "E-Mail",
+      "x": 958,
+      "y": 881,
+      "w": 48,
+      "h": 14
+    },
+    {
+      "text": "geschrieben",
+      "x": 858,
+      "y": 904,
+      "w": 96,
+      "h": 20
+    },
+    {
+      "text": "Perfekt",
+      "x": 179,
+      "y": 975,
+      "w": 58,
+      "h": 14
+    },
+    {
+      "text": "mit",
+      "x": 244,
+      "y": 975,
+      "w": 29,
+      "h": 13
+    },
+    {
+      "text": "haben",
+      "x": 279,
+      "y": 974,
+      "w": 47,
+      "h": 14
+    },
+    {
+      "text": "Verb",
+      "x": 179,
+      "y": 1006,
+      "w": 36,
+      "h": 13
+    },
+    {
+      "text": "haben",
+      "x": 440,
+      "y": 1002,
+      "w": 48,
+      "h": 13
+    },
+    {
+      "text": "Partizip",
+      "x": 541,
+      "y": 1001,
+      "w": 65,
+      "h": 17
+    },
+    {
+      "text": "…-t/-en",
+      "x": 600,
+      "y": 1001,
+      "w": 73,
+      "h": 15
+    },
+    {
+      "text": "regelmäßig",
+      "x": 180,
+      "y": 1034,
+      "w": 92,
+      "h": 23
+    },
+    {
+      "text": "machen",
+      "x": 307,
+      "y": 1033,
+      "w": 68,
+      "h": 20
+    },
+    {
+      "text": "er",
+      "x": 440,
+      "y": 1034,
+      "w": 16,
+      "h": 15
+    },
+    {
+      "text": "sie",
+      "x": 460,
+      "y": 1034,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "hat",
+      "x": 490,
+      "y": 1033,
+      "w": 24,
+      "h": 13
+    },
+    {
+      "text": "gemacht",
+      "x": 541,
+      "y": 1031,
+      "w": 65,
+      "h": 19
+    },
+    {
+      "text": "auch",
+      "x": 694,
+      "y": 1029,
+      "w": 30,
+      "h": 14
+    },
+    {
+      "text": "so",
+      "x": 731,
+      "y": 1033,
+      "w": 17,
+      "h": 8
+    },
+    {
+      "text": "sagen",
+      "x": 753,
+      "y": 1033,
+      "w": 41,
+      "h": 14
+    },
+    {
+      "text": "gesagt",
+      "x": 815,
+      "y": 1030,
+      "w": 51,
+      "h": 15
+    },
+    {
+      "text": "arbeiten",
+      "x": 873,
+      "y": 1026,
+      "w": 64,
+      "h": 14
+    },
+    {
+      "text": "gearbeitet",
+      "x": 957,
+      "y": 1024,
+      "w": 82,
+      "h": 19
+    },
+    {
+      "text": "unregelmäßig",
+      "x": 181,
+      "y": 1065,
+      "w": 114,
+      "h": 23
+    },
+    {
+      "text": "schreiben",
+      "x": 316,
+      "y": 1064,
+      "w": 73,
+      "h": 20
+    },
+    {
+      "text": "er",
+      "x": 440,
+      "y": 1065,
+      "w": 16,
+      "h": 15
+    },
+    {
+      "text": "sie",
+      "x": 460,
+      "y": 1065,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "hat",
+      "x": 490,
+      "y": 1063,
+      "w": 25,
+      "h": 13
+    },
+    {
+      "text": "geschrieben",
+      "x": 541,
+      "y": 1061,
+      "w": 92,
+      "h": 19
+    },
+    {
+      "text": "auch",
+      "x": 695,
+      "y": 1060,
+      "w": 30,
+      "h": 13
+    },
+    {
+      "text": "so",
+      "x": 731,
+      "y": 1064,
+      "w": 17,
+      "h": 9
+    },
+    {
+      "text": "essen",
+      "x": 754,
+      "y": 1063,
+      "w": 40,
+      "h": 9
+    },
+    {
+      "text": "gegessen",
+      "x": 814,
+      "y": 1062,
+      "w": 71,
+      "h": 15
+    },
+    {
+      "text": "trinken",
+      "x": 891,
+      "y": 1056,
+      "w": 58,
+      "h": 14
+    },
+    {
+      "text": "getrunken",
+      "x": 969,
+      "y": 1054,
+      "w": 84,
+      "h": 19
+    },
+    {
+      "text": "trennbar",
+      "x": 181,
+      "y": 1096,
+      "w": 72,
+      "h": 20
+    },
+    {
+      "text": "auf·räumen",
+      "x": 317,
+      "y": 1096,
+      "w": 90,
+      "h": 14
+    },
+    {
+      "text": "er",
+      "x": 441,
+      "y": 1095,
+      "w": 16,
+      "h": 15
+    },
+    {
+      "text": "sie",
+      "x": 461,
+      "y": 1095,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "hat",
+      "x": 491,
+      "y": 1094,
+      "w": 24,
+      "h": 13
+    },
+    {
+      "text": "aufgeräumt",
+      "x": 543,
+      "y": 1093,
+      "w": 89,
+      "h": 18
+    },
+    {
+      "text": "auch",
+      "x": 695,
+      "y": 1090,
+      "w": 30,
+      "h": 13
+    },
+    {
+      "text": "so",
+      "x": 732,
+      "y": 1095,
+      "w": 17,
+      "h": 8
+    },
+    {
+      "text": "einkaufen",
+      "x": 755,
+      "y": 1088,
+      "w": 77,
+      "h": 14
+    },
+    {
+      "text": "eingekauft",
+      "x": 853,
+      "y": 1084,
+      "w": 87,
+      "h": 23
+    },
+    {
+      "text": "an·rufen",
+      "x": 318,
+      "y": 1119,
+      "w": 65,
+      "h": 15
+    },
+    {
+      "text": "er",
+      "x": 441,
+      "y": 1118,
+      "w": 16,
+      "h": 15
+    },
+    {
+      "text": "sie",
+      "x": 461,
+      "y": 1118,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "hat",
+      "x": 491,
+      "y": 1117,
+      "w": 24,
+      "h": 13
+    },
+    {
+      "text": "angerufen",
+      "x": 543,
+      "y": 1115,
+      "w": 79,
+      "h": 19
+    },
+    {
+      "text": "auch",
+      "x": 696,
+      "y": 1113,
+      "w": 30,
+      "h": 13
+    },
+    {
+      "text": "so",
+      "x": 732,
+      "y": 1117,
+      "w": 17,
+      "h": 8
+    },
+    {
+      "text": "einladen",
+      "x": 755,
+      "y": 1112,
+      "w": 66,
+      "h": 14
+    },
+    {
+      "text": "eingeladen",
+      "x": 842,
+      "y": 1110,
+      "w": 88,
+      "h": 19
+    },
+    {
+      "text": "fernsehen",
+      "x": 937,
+      "y": 1108,
+      "w": 76,
+      "h": 14
+    },
+    {
+      "text": "ferngesehen",
+      "x": 707,
+      "y": 1134,
+      "w": 98,
+      "h": 19
+    },
+    {
+      "text": "Verben",
+      "x": 182,
+      "y": 1178,
+      "w": 56,
+      "h": 14
+    },
+    {
+      "text": "auf",
+      "x": 245,
+      "y": 1177,
+      "w": 27,
+      "h": 14
+    },
+    {
+      "text": "-ieren",
+      "x": 193,
+      "y": 1201,
+      "w": 44,
+      "h": 12
+    },
+    {
+      "text": "telefonieren",
+      "x": 318,
+      "y": 1175,
+      "w": 94,
+      "h": 14
+    },
+    {
+      "text": "er",
+      "x": 442,
+      "y": 1175,
+      "w": 16,
+      "h": 15
+    },
+    {
+      "text": "sie",
+      "x": 462,
+      "y": 1175,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "hat",
+      "x": 492,
+      "y": 1173,
+      "w": 25,
+      "h": 13
+    },
+    {
+      "text": "telefoniert",
+      "x": 544,
+      "y": 1172,
+      "w": 82,
+      "h": 14
+    },
+    {
+      "text": "auch",
+      "x": 697,
+      "y": 1170,
+      "w": 30,
+      "h": 13
+    },
+    {
+      "text": "so",
+      "x": 733,
+      "y": 1174,
+      "w": 17,
+      "h": 8
+    },
+    {
+      "text": "fotografieren",
+      "x": 757,
+      "y": 1168,
+      "w": 100,
+      "h": 19
+    },
+    {
+      "text": "fotografiert",
+      "x": 877,
+      "y": 1166,
+      "w": 92,
+      "h": 19
+    },
+    {
+      "text": "Perfekt",
+      "x": 183,
+      "y": 1244,
+      "w": 59,
+      "h": 14
+    },
+    {
+      "text": "im",
+      "x": 248,
+      "y": 1245,
+      "w": 21,
+      "h": 13
+    },
+    {
+      "text": "Satz",
+      "x": 276,
+      "y": 1245,
+      "w": 33,
+      "h": 13
+    },
+    {
+      "text": "Aussage",
+      "x": 184,
+      "y": 1274,
+      "w": 62,
+      "h": 22
+    },
+    {
+      "text": "Ab",
+      "x": 331,
+      "y": 1274,
+      "w": 19,
+      "h": 13
+    },
+    {
+      "text": "9",
+      "x": 356,
+      "y": 1274,
+      "w": 8,
+      "h": 13
+    },
+    {
+      "text": "Uhr",
+      "x": 370,
+      "y": 1273,
+      "w": 29,
+      "h": 13
+    },
+    {
+      "text": "habe",
+      "x": 434,
+      "y": 1270,
+      "w": 35,
+      "h": 20
+    },
+    {
+      "text": "ich",
+      "x": 505,
+      "y": 1271,
+      "w": 22,
+      "h": 13
+    },
+    {
+      "text": "gearbeitet",
+      "x": 669,
+      "y": 1268,
+      "w": 82,
+      "h": 19
+    },
+    {
+      "text": "W-Frage",
+      "x": 178,
+      "y": 1305,
+      "w": 68,
+      "h": 21
+    },
+    {
+      "text": "Was",
+      "x": 332,
+      "y": 1305,
+      "w": 29,
+      "h": 12
+    },
+    {
+      "text": "hast",
+      "x": 429,
+      "y": 1300,
+      "w": 37,
+      "h": 20
+    },
+    {
+      "text": "du",
+      "x": 505,
+      "y": 1301,
+      "w": 18,
+      "h": 13
+    },
+    {
+      "text": "sonst",
+      "x": 529,
+      "y": 1304,
+      "w": 39,
+      "h": 10
+    },
+    {
+      "text": "noch",
+      "x": 574,
+      "y": 1299,
+      "w": 37,
+      "h": 13
+    },
+    {
+      "text": "gemacht",
+      "x": 669,
+      "y": 1297,
+      "w": 73,
+      "h": 19
+    },
+    {
+      "text": "Ja-/Nein-Frage",
+      "x": 184,
+      "y": 1336,
+      "w": 119,
+      "h": 17
+    },
+    {
+      "text": "Hast",
+      "x": 436,
+      "y": 1330,
+      "w": 33,
+      "h": 20
+    },
+    {
+      "text": "du",
+      "x": 505,
+      "y": 1331,
+      "w": 19,
+      "h": 13
+    },
+    {
+      "text": "Frau",
+      "x": 530,
+      "y": 1332,
+      "w": 33,
+      "h": 12
+    },
+    {
+      "text": "Dr.",
+      "x": 571,
+      "y": 1331,
+      "w": 20,
+      "h": 11
+    },
+    {
+      "text": "Weber",
+      "x": 597,
+      "y": 1329,
+      "w": 47,
+      "h": 14
+    },
+    {
+      "text": "angerufen",
+      "x": 671,
+      "y": 1327,
+      "w": 86,
+      "h": 20
+    }
+  ],
+  "fields": [],
+  "audio": [],
+  "groups": [],
+  "review": {
+    "status": "verified",
+    "verifiedWords": 211,
+    "totalWords": 211,
+    "notes": [
+      "All printed words reviewed at 2x-4x (tesseract + connected-component pixel measurement): task 8 heading, 8a instruction and the 4-line highlighted verb bank (interpunct forms auf·räumen, fern·sehen, ein·kaufen, an·rufen, ein·laden kept as printed; Freunde treffen/ein·laden and Fußball/Tennis split at slashes), 8b, 8c (Sie/Er and Rechtschreibung/Grammatik split at slashes), the printed notebook scrap (7:00 frühstücken / 9:00 …), the printed blue-script example (Ich habe um sieben Uhr gefrühstückt. Von neun bis zwölf habe ich gearbeitet.), the GRAMMATIK box (temporale Präpositionen von … bis, ab; Von 9 Uhr bis 10 Uhr; Ab 9 Uhr; jetzt 9 Uhr - missing numerals re-measured; arrows/x marks excluded as graphics), the KOMMUNIKATION box (über Vergangenes sprechen + both example blocks), the Perfekt-mit-haben table (er/sie split at slashes in all 4 rows; header token …-t/-en kept as printed; all auch-so examples), and the Perfekt-im-Satz table (row label Ja-/Nein-Frage kept; empty first cell of the Ja-/Nein-Frage row is by design).",
+      "No fields: no blanks, lines or circles printed. No audio markers.",
+      "Excluded per policy: gold SCHREIBTRAINING/GRAMMATIK/KOMMUNIKATION banners, red lesson numeral 11, red task numeral 8, task letters a/b/c, Film/Audiotraining margin tabs, spiral binding graphic, ellipses, dashes, footer (vierundsechzig/64), Modul-4 tab."
+    ]
+  }
+}
