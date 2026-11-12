@@ -230,13 +230,6 @@
    "h": 15
   },
   {
-   "text": "a",
-   "x": 323,
-   "y": 340,
-   "w": 17,
-   "h": 0
-  },
-  {
    "text": "Punkte",
    "x": 929,
    "y": 328,
@@ -1915,8 +1908,8 @@
  "groups": [],
  "review": {
   "status": "partial",
-  "verifiedWords": 272,
-  "totalWords": 272,
+  "verifiedWords": 271,
+  "totalWords": 271,
   "notes": []
  }
 }
