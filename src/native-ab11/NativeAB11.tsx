@@ -1,3 +1,4 @@
+import {LineMatching} from '../exercises/LineMatching';
 import {useLayoutEffect,useRef,useState} from 'react';
 import './native-ab11.css';
 const norm=(s:string)=>s.normalize('NFC').toLocaleLowerCase('de').trim().replace(/[.,!?;:’']/g,'').replace(/\s+/g,' ');
@@ -32,9 +33,7 @@ export function NativeAB11({page}:{page:string}){
  {['Ja, ich komme aus Deutschland.\nUnd woher kommst du, Roberto? Aus Portugal?','Aus Brasilien? Wow!','Ich heiße Melanie.','Nein, ich komme aus Brasilien.','Hallo! Ich heiße Roberto, und wer bist du?','Und woher kommst du? Aus Deutschland?'].map((s,i)=>{const y=[485,537,562,587,613,639][i];return <div key={i}>{field('2-'+i,214,y-3,28,'2 Satz '+(i+1),'nabCircle')}{text(247,y,450,s)}</div>})}
  {check('2',215,671,{'2-0':'4','2-1':'6','2-2':'2','2-3':'5','2-4':'1','2-5':'3'})}
  {title('3',708,'Ordnen Sie zu.','KB 3')}
- <svg className="nabLines" width="1075" height="1521" aria-hidden="true"><path d="M278 752 C400 752,320 830,443 830"/>{Object.entries(v).filter(([k])=>k.startsWith('3-')).map(([k,val])=><path key={k} d={`M400 ${750+Number(k.slice(2))*26} C422 ${750+Number(k.slice(2))*26},420 ${750+Number(val)*26},446 ${750+Number(val)*26}`}/>)}</svg>
- {['Wie','Ich heiße','Woher','Ich komme','Wer','Ich'].map((s,i)=><button key={s} className={'nabMatch '+(active===''+i?'isActive':'')} style={{left:237,top:737+i*26,width:162}} onClick={()=>A(''+i)} disabled={i===0} aria-label={'3 links '+String.fromCharCode(97+i)+' '+s}>{String.fromCharCode(97+i)}  {s}</button>)}
- {['bin Pedro.','kommst du?','aus der Schweiz.','heißt du?','bist du?','Sandra.'].map((s,i)=><button key={s} className="nabMatch" style={{left:449,top:737+i*26,width:210}} onClick={()=>{if(active&&active!=='0'){set('3-'+active,''+i);A('')}}} aria-label={'3 rechts '+s}>{s}</button>)}
+ <LineMatching id="3" left={['a  Wie','b  Ich heiße','c  Woher','d  Ich komme','e  Wer','f  Ich']} right={['bin Pedro.','kommst du?','aus der Schweiz.','heißt du?','bist du?','Sandra.']} values={v} onMatch={set} leftX={237} rightX={449} leftWidth={156} rightWidth={210} ys={Array.from({length:6},(_,i)=>737+i*26)} example={[0,3]}/>
  {check('3',215,900,{'3-1':'5','3-2':'1','3-3':'2','3-4':'4','3-5':'0'})}
  {title('4',935,'Ergänzen Sie.','KB 3')}
  {text(214,979,330,'a  ■  Hallo! Ich bin Simon.')}{field('4-wie',473,979,95,'4a Wie')}{text(258,1005,160,'heißt du?')}
