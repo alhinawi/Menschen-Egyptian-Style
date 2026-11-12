@@ -9,7 +9,8 @@ export function NativePilot({page}:{page:string}){
  const img=(name:string,x:number,y:number,w:number,h:number)=><img className="npArt" src={`assets/book-crops/native-p${page}-${name}.png`} alt={`Originalabbildung ${name}`} style={{left:x,top:y,width:w,height:h}}/>;
  const field=(id:string,x:number,y:number,w:number,label:string)=><input className="npInput" style={{left:x,top:y,width:w}} aria-label={label} data-native-field={id} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
  const choice=(id:string,value:string,x:number,y:number,label:string)=><input type="radio" className="npRadio" style={{left:x,top:y}} name={key+'-'+id} aria-label={label} checked={v[id]===value} onChange={()=>set(id,value)}/>;
- const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="npCheck" style={{left:x,top:y}}><button onClick={()=>G({...graded,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(s=>s.toLocaleLowerCase('de')===(v[k]||'').trim().toLocaleLowerCase('de')))})}>Prüfen ✓</button><output>{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const normalize=(s:string)=>s.normalize('NFC').trim().toLocaleLowerCase('de').replace(/[.!?]+$/,'').replace(/\s+/g,' ');
+ const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="npCheck" style={{left:x,top:y}}><button onClick={()=>G({...graded,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(s=>normalize(s)===normalize(v[k]||'')))})}>Prüfen ✓</button><output>{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,s:string)=><div className="npText npTitle" style={{left:x,top:y,width:w}}><b className="npNum">{n}</b><Words text={s}/></div>;
  const audio=(track:string,x:number,y:number)=><audio ref={player} controls aria-label={'Originalaudio '+track} src={'assets/kb-cd2-track'+track+'.mp3'} style={{position:'absolute',left:x,top:y,width:360,height:36}}/>;
  return <div className="nativePilot" data-native-page={page}><div className="npCanvas">
@@ -37,17 +38,18 @@ export function NativePilot({page}:{page:string}){
   {text(160,635,850,'b  Was machen die anderen Personen? Suchen Sie die Wörter im Bildlexikon und schreiben Sie.','npTitle')}
   {field('4b',196,699,715,'Andere Personen: Tätigkeiten')}
   {text(110,755,30,'AB','npAB')}{title('5',146,750,780,'Schreiben Sie die Sätze in die Tabelle.')}{text(192,780,650,'Verwenden Sie die passende Form von können.','npTitle')}
-  {['a  können - wirklich super - du - Gitarre - spielen','b  ihr - können - gut - tanzen?','c  Ski fahren - Sie - aber toll - können','d  können - Tennis - spielen - ja super - er','e  sie - Schach - können - spielen?'].map((s,i)=>text(194,817+i*28,570,s))}
+  {['a  können - wirklich super - du - Gitarre - spielen','b  ihr - können - gut - tanzen?','c  Ski fahren - Sie - aber toll - können','d  können - Tennis - spielen - ja super - er','e  Schach - Sie - können - spielen?'].map((s,i)=>text(194,817+i*28,570,s))}
   {text(720,780,270,'können\nich          kann\ndu           kannst\ner/sie/es    kann\nwir          können\nihr          könnt\nsie/Sie      können','npGrammar')}
-  {text(210,965,490,'Du  |  kannst  |  wirklich super Gitarre  |  spielen.\n     |  Könnt  |  ihr gut  |  tanzen?','npHand')}
+  {[['Du','kannst','wirklich super Gitarre','spielen.'],['','Könnt','ihr gut','tanzen?'],['Sie','können','aber toll Ski','fahren.'],['Er','kann','ja super Tennis','spielen.'],['','Können','Sie Schach','spielen?']].map((row,r)=><div key={'sentence'+r}>{row.map((answer,c)=>answer?<input key={c} className="npInput npSentenceCell" style={{left:[194,273,367,599][c],top:956+r*23,width:[75,90,228,91][c]}} aria-label={`Aufgabe 5 Satz ${String.fromCharCode(97+r)}, Spalte ${c+1}`} data-native-field={`satz${r}-${c}`} value={v[`satz${r}-${c}`]||''} onChange={e=>set(`satz${r}-${c}`,e.target.value)}/>:null)}</div>)}
+  {check('5',194,1080,Object.fromEntries([['Du','kannst','wirklich super Gitarre','spielen.'],['','Könnt','ihr gut','tanzen?'],['Sie','können','aber toll Ski','fahren.'],['Er','kann','ja super Tennis','spielen.'],['','Können','Sie Schach','spielen?']].flatMap((row,r)=>row.flatMap((a,c)=>a?[[`satz${r}-${c}`,a]]:[]))))}
   {text(700,965,330,'Du kannst wirklich sehr gut Gitarre spielen.\nKannst du das noch einmal sagen?','npGrammar')}
-  {text(110,1045,30,'AB','npAB')}{title('6',146,1040,780,'Ich kann ein bisschen Schach spielen.')}{text(160,1080,850,'a  Ordnen Sie die Wörter.','npTitle')}{text(195,1115,830,'ein bisschen | gar nicht | toll / sehr gut / super | nicht | gut | nicht so gut','npBank')}
-  {text(205,1165,210,'☺ toll / sehr gut / super','npHand')}
-  {['gut','ein bisschen','nicht so gut','nicht','gar nicht'].map((a,i)=>field('skala'+i,420+i*107,1164,i===2?105:98,'Skala '+(i+1)))}
-  {check('6a',205,1205,{skala0:'gut',skala1:'ein bisschen',skala2:'nicht so gut',skala3:'nicht',skala4:'gar nicht'})}
-  {text(160,1260,860,'b  Wer kann was? Arbeiten Sie auf Seite 83. Ihre Partnerin / Ihr Partner arbeitet auf Seite 86.','npTitle')}
-  {text(160,1312,850,'c  Was können Sie gut / gar nicht? Sprechen Sie.','npTitle')}{text(195,1344,820,'kochen | singen | malen | Schach spielen | Ski fahren | Fußball spielen | backen | Gitarre spielen | …','npBank')}
-  {text(195,1390,830,'■ Ich kann ein bisschen Schach spielen. Und du?\n▲ Ich kann nicht gut Schach spielen. Aber ich kann gut malen.')}
+  {text(110,1135,30,'AB','npAB')}{title('6',146,1130,780,'Ich kann ein bisschen Schach spielen.')}{text(160,1166,850,'a  Ordnen Sie die Wörter.','npTitle')}{text(195,1200,830,'ein bisschen | gar nicht | toll / sehr gut / super | nicht | gut | nicht so gut','npBank')}
+  {text(205,1238,210,'☺ toll / sehr gut / super','npHand')}
+  {['gut','ein bisschen','nicht so gut','nicht','gar nicht'].map((a,i)=>field('skala'+i,420+i*107,1237,i===2?105:98,'Skala '+(i+1)))}
+  {check('6a',205,1277,{skala0:'gut',skala1:'ein bisschen',skala2:'nicht so gut',skala3:'nicht',skala4:'gar nicht'})}
+  {text(160,1330,860,'b  Wer kann was? Arbeiten Sie auf Seite 83. Ihre Partnerin / Ihr Partner arbeitet auf Seite 86.','npTitle')}
+  {text(160,1390,850,'c  Was können Sie gut / gar nicht? Sprechen Sie.','npTitle')}{text(195,1423,820,'kochen | singen | malen | Schach spielen | Ski fahren | Fußball spielen | backen | Gitarre spielen | …','npBank')}
+  {text(195,1464,830,'■ Ich kann ein bisschen Schach spielen. Und du?\n▲ Ich kann nicht gut Schach spielen. Aber ich kann gut malen.')}
  </>}
  {page==='55'&&<>
   {text(520,135,520,'PROJEKT LANDESKUNDE','npModule')}
@@ -68,6 +70,6 @@ export function NativePilot({page}:{page:string}){
   {text(260,1400,430,'Mein Gericht heißt Käsefondue. Es kommt aus der Schweiz. Du brauchst: Käse, Wein und Brot.','npSpeech')}
   {img('recipe',729,1072,217,293)}
  </>}
- {text(842,1470,220,({41:'einundvierzig',42:'zweiundvierzig',55:'fünfundfünfzig'} as Record<string,string>)[page]+' | '+page,'npFooter')}
+ {text(842,page==='42'?1510:1470,220,({41:'einundvierzig',42:'zweiundvierzig',55:'fünfundfünfzig'} as Record<string,string>)[page]+' | '+page,'npFooter')}
  </div><div className="nativeAudioBelow">{page==='41'?audio('01',0,0):null}<span>{page==='41'?'Originalaudio · ':''}Antworten werden gespeichert</span></div></div>
 }
