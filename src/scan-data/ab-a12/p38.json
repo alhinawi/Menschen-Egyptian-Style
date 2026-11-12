@@ -2435,13 +2435,273 @@
    "h": 20
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p38-10a-susanne-uni",
+   "group": "g1",
+   "kind": "radio",
+   "label": "susanne uni uni",
+   "answer": "false",
+   "name": "10a-susanne",
+   "value": "uni",
+   "x": 523,
+   "y": 272,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p38-10a-susanne-urlaub",
+   "group": "g1",
+   "kind": "radio",
+   "label": "susanne urlaub urlaub",
+   "answer": "false",
+   "name": "10a-susanne",
+   "value": "urlaub",
+   "x": 523,
+   "y": 298,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p38-10a-susanne-ausland",
+   "group": "g1",
+   "kind": "radio",
+   "label": "susanne ausland ausland",
+   "answer": "true",
+   "name": "10a-susanne",
+   "value": "ausland",
+   "x": 523,
+   "y": 323,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p38-10a-georg-uni",
+   "group": "g1",
+   "kind": "radio",
+   "label": "georg uni uni",
+   "answer": "false",
+   "name": "10a-georg",
+   "value": "uni",
+   "x": 631,
+   "y": 272,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p38-10a-georg-urlaub",
+   "group": "g1",
+   "kind": "radio",
+   "label": "georg urlaub urlaub",
+   "answer": "true",
+   "name": "10a-georg",
+   "value": "urlaub",
+   "x": 631,
+   "y": 298,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p38-10a-georg-ausland",
+   "group": "g1",
+   "kind": "radio",
+   "label": "georg ausland ausland",
+   "answer": "false",
+   "name": "10a-georg",
+   "value": "ausland",
+   "x": 631,
+   "y": 323,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p38-10a-marianne-uni",
+   "group": "g1",
+   "kind": "radio",
+   "label": "marianne uni uni",
+   "answer": "true",
+   "name": "10a-marianne",
+   "value": "uni",
+   "x": 740,
+   "y": 272,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p38-10a-marianne-urlaub",
+   "group": "g1",
+   "kind": "radio",
+   "label": "marianne urlaub urlaub",
+   "answer": "false",
+   "name": "10a-marianne",
+   "value": "urlaub",
+   "x": 740,
+   "y": 298,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p38-10a-marianne-ausland",
+   "group": "g1",
+   "kind": "radio",
+   "label": "marianne ausland ausland",
+   "answer": "false",
+   "name": "10a-marianne",
+   "value": "ausland",
+   "x": 740,
+   "y": 323,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p38-10b-1-richtig",
+   "group": "g2",
+   "kind": "radio",
+   "label": "10b 1 richtig richtig",
+   "answer": "false",
+   "name": "10b-1",
+   "value": "richtig",
+   "x": 849,
+   "y": 1230,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p38-10b-1-falsch",
+   "group": "g2",
+   "kind": "radio",
+   "label": "10b 1 falsch falsch",
+   "answer": "true",
+   "name": "10b-1",
+   "value": "falsch",
+   "x": 916,
+   "y": 1230,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p38-10b-2-richtig",
+   "group": "g2",
+   "kind": "radio",
+   "label": "10b 2 richtig richtig",
+   "answer": "false",
+   "name": "10b-2",
+   "value": "richtig",
+   "x": 849,
+   "y": 1255,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p38-10b-2-falsch",
+   "group": "g2",
+   "kind": "radio",
+   "label": "10b 2 falsch falsch",
+   "answer": "true",
+   "name": "10b-2",
+   "value": "falsch",
+   "x": 916,
+   "y": 1255,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p38-10b-3-richtig",
+   "group": "g2",
+   "kind": "radio",
+   "label": "10b 3 richtig richtig",
+   "answer": "true",
+   "name": "10b-3",
+   "value": "richtig",
+   "x": 849,
+   "y": 1282,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p38-10b-3-falsch",
+   "group": "g2",
+   "kind": "radio",
+   "label": "10b 3 falsch falsch",
+   "answer": "false",
+   "name": "10b-3",
+   "value": "falsch",
+   "x": 916,
+   "y": 1282,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p38-10b-4-richtig",
+   "group": "g2",
+   "kind": "radio",
+   "label": "10b 4 richtig richtig",
+   "answer": "false",
+   "name": "10b-4",
+   "value": "richtig",
+   "x": 849,
+   "y": 1307,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p38-10b-4-falsch",
+   "group": "g2",
+   "kind": "radio",
+   "label": "10b 4 falsch falsch",
+   "answer": "true",
+   "name": "10b-4",
+   "value": "falsch",
+   "x": 916,
+   "y": 1307,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p38-10b-5-richtig",
+   "group": "g2",
+   "kind": "radio",
+   "label": "10b 5 richtig richtig",
+   "answer": "true",
+   "name": "10b-5",
+   "value": "richtig",
+   "x": 849,
+   "y": 1333,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p38-10b-5-falsch",
+   "group": "g2",
+   "kind": "radio",
+   "label": "10b 5 falsch falsch",
+   "answer": "false",
+   "name": "10b-5",
+   "value": "falsch",
+   "x": 916,
+   "y": 1333,
+   "w": 24,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 10a"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 10b"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the official Hueber Loesungsschluessel AB A1.2 (Lektion 17, Aufgabe 10).",
+   "Boxes placed from word coordinates and checked on the overlay; not marked verified."
+  ],
   "verifiedWords": 347,
-  "totalWords": 347,
-  "notes": []
+  "totalWords": 347
  }
 }
