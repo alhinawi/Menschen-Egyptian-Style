@@ -108,7 +108,7 @@ export function NativeAB12({page}:{page:string}){
  {page==='52'&&<>
   <div className="naBand52"/>
   {text(129,70,320,'RÜCKBLICK','naHeadline')}
-  {text(126,158,480,'Wählen Sie eine Aufgabe zu Lektion','naSec naNw naSecX')}
+  {text(126,158,480,'Wählen Sie eine Aufgabe zu Lektion','naSec naNw')}
   {gl(508,161,'17','#74c655')}
   <div className="naGRule" style={{left:540,top:186,width:438,height:3,background:'#b5d8b2'}}/>
   {art('mag1',70,216,56,52)}
@@ -133,7 +133,7 @@ export function NativeAB12({page}:{page:string}){
   {field('52-t2-b2',230,574,770,'Eigene Idee 2','naFieldBlank')}
   {field('52-t2-b3',167,606,833,'Eigene Idee 3','naFieldBlank')}
   {field('52-t2-b4',167,634,833,'Eigene Idee 4','naFieldBlank')}
-  {text(120,689,480,'Wählen Sie eine Aufgabe zu Lektion','naSec naNw naSecX')}
+  {text(120,689,480,'Wählen Sie eine Aufgabe zu Lektion','naSec naNw')}
   {gl(502,692,'18','#5a9d97')}
   <div className="naGRule" style={{left:534,top:717,width:432,height:3,background:'#a0c4ca'}}/>
   {art('mag2',70,744,56,52)}
