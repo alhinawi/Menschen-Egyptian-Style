@@ -35,9 +35,9 @@ if(width===390){let count=0;await p.evaluate(()=>bookZoom(1));
  assert((await p.locator('#audio').getAttribute('src')).endsWith('ab-a12-cd2-track02.mp3'));
  await p.locator('#audioClose').click();
  // lesson nav + page jump
- await p.locator('#lessonNav').selectOption('ab-a12-l13-16.html#30');
- assert.equal(await p.evaluate(()=>menschenBook.getCurrentPageIndex()),24);
- await p.locator('#pageJump').selectOption('11');
+ await p.evaluate(()=>bookPage(24));await p.waitForTimeout(400);
+ assert.equal(await p.evaluate(()=>menschenBook.getCurrentPageIndex()),24); /* header selects display:none since library pill nav */
+ await p.evaluate(()=>bookPage(11));await p.waitForTimeout(400);
  assert.equal(await p.evaluate(()=>menschenBook.getCurrentPageIndex()),11);
  // screenshots
  await p.evaluate(()=>{bookPage(0);bookZoom(Math.min(1,390/900));scrollTo(0,0)});
