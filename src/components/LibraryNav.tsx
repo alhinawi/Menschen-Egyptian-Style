@@ -80,7 +80,7 @@ export function LibraryNav({slug}: {slug: string}) {
   const pillText = currentPage == null
     ? `${bookTag} ${mod.level} · Cover`
     : `${bookTag} ${mod.level} · ${currentLesson?.short ?? 'p.' + currentPage}`;
-  const pagePillText = currentPage == null ? 'Cover' : `Seite ${currentPage}`;
+  const pagePillText = currentPage == null ? 'Cover' : String(currentPage);
 
   const close = () => setPanel(null);
 
@@ -107,7 +107,7 @@ export function LibraryNav({slug}: {slug: string}) {
         <span className="lnv-dot"/><span className="lnv-pillText">{pillText}</span><span className="lnv-chev">▾</span>
       </button>, headerSlot)}
     {pageSlot && createPortal(
-      <button type="button" className="lnv-pagePill" aria-haspopup="dialog" onClick={() => setPanel('pages')}>
+      <button type="button" className="lnv-pagePill" aria-haspopup="dialog" aria-label={`Seite wählen, aktuell ${pagePillText === 'Cover' ? 'Cover' : 'Seite ' + pagePillText}`} onClick={() => setPanel('pages')}>
         {pagePillText}<span className="lnv-chev">▴</span>
       </button>, pageSlot)}
     {panel === 'nav' && createPortal(
