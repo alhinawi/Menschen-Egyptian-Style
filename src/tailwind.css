@@ -263,6 +263,7 @@ html[data-theme="dark"] .page .abBanner,html[data-theme="dark"] .page .anzeige.b
 .page .messageCard .from{color:#6f6248}
 .helpBanner{color:#414c39}
 .meaningPopup small,.page .bookNo{color:#5f6a60}
+.meaningPopup .audioPending{display:block;margin-top:6px;color:#8a6d3b}
 /* Sidebar nav chevrons and cover gold type deepened to AA. */
 .coverEyebrow,.coverSmall,.coverOwner p,.howtoEyebrow{color:#866d38!important}
 .coverCopy{color:#7d6c52!important}
