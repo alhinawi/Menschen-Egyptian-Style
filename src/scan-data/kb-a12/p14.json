@@ -1,0 +1,1834 @@
+{
+ "book": "kb-a12",
+ "page": 14,
+ "image": "assets/kb-a12-p14.png",
+ "width": 1100,
+ "height": 1504,
+ "words": [
+  {
+   "text": "Treppe",
+   "x": 848,
+   "y": 108,
+   "w": 41,
+   "h": 17
+  },
+  {
+   "text": "Garage",
+   "x": 1026,
+   "y": 110,
+   "w": 41,
+   "h": 15
+  },
+  {
+   "text": "Haus",
+   "x": 96,
+   "y": 111,
+   "w": 35,
+   "h": 14
+  },
+  {
+   "text": "Garten",
+   "x": 300,
+   "y": 111,
+   "w": 50,
+   "h": 14
+  },
+  {
+   "text": "Blume",
+   "x": 528,
+   "y": 111,
+   "w": 48,
+   "h": 14
+  },
+  {
+   "text": "Baum",
+   "x": 696,
+   "y": 111,
+   "w": 42,
+   "h": 14
+  },
+  {
+   "text": "3",
+   "x": 126,
+   "y": 178,
+   "w": 37,
+   "h": 25
+  },
+  {
+   "text": "heißen",
+   "x": 219,
+   "y": 183,
+   "w": 67,
+   "h": 18
+  },
+  {
+   "text": "die",
+   "x": 294,
+   "y": 183,
+   "w": 31,
+   "h": 18
+  },
+  {
+   "text": "Wie",
+   "x": 173,
+   "y": 184,
+   "w": 38,
+   "h": 17
+  },
+  {
+   "text": "Zimmer?",
+   "x": 332,
+   "y": 184,
+   "w": 89,
+   "h": 17
+  },
+  {
+   "text": "AB",
+   "x": 98,
+   "y": 191,
+   "w": 14,
+   "h": 9
+  },
+  {
+   "text": "die",
+   "x": 292,
+   "y": 211,
+   "w": 26,
+   "h": 16
+  },
+  {
+   "text": "Buchstaben.",
+   "x": 327,
+   "y": 211,
+   "w": 108,
+   "h": 17
+  },
+  {
+   "text": "Notieren",
+   "x": 174,
+   "y": 212,
+   "w": 78,
+   "h": 15
+  },
+  {
+   "text": "Sie",
+   "x": 259,
+   "y": 212,
+   "w": 26,
+   "h": 16
+  },
+  {
+   "text": "|",
+   "x": 502,
+   "y": 246,
+   "w": 11,
+   "h": 32
+  },
+  {
+   "text": "Wohnzimmer",
+   "x": 395,
+   "y": 251,
+   "w": 120,
+   "h": 18
+  },
+  {
+   "text": "Kinderzimmer",
+   "x": 223,
+   "y": 252,
+   "w": 116,
+   "h": 16
+  },
+  {
+   "text": "|",
+   "x": 345,
+   "y": 252,
+   "w": 3,
+   "h": 17
+  },
+  {
+   "text": "|",
+   "x": 444,
+   "y": 287,
+   "w": 16,
+   "h": 30
+  },
+  {
+   "text": "Küche",
+   "x": 223,
+   "y": 292,
+   "w": 49,
+   "h": 16
+  },
+  {
+   "text": "|",
+   "x": 279,
+   "y": 292,
+   "w": 2,
+   "h": 17
+  },
+  {
+   "text": "Arbeitszimmer",
+   "x": 322,
+   "y": 292,
+   "w": 137,
+   "h": 17
+  },
+  {
+   "text": "|",
+   "x": 331,
+   "y": 326,
+   "w": 16,
+   "h": 32
+  },
+  {
+   "text": "Schlafzimmer",
+   "x": 222,
+   "y": 332,
+   "w": 120,
+   "h": 18
+  },
+  {
+   "text": "Bad",
+   "x": 392,
+   "y": 332,
+   "w": 28,
+   "h": 16
+  },
+  {
+   "text": "|",
+   "x": 428,
+   "y": 332,
+   "w": 2,
+   "h": 18
+  },
+  {
+   "text": "|",
+   "x": 289,
+   "y": 372,
+   "w": 2,
+   "h": 18
+  },
+  {
+   "text": "Flur",
+   "x": 341,
+   "y": 372,
+   "w": 30,
+   "h": 16
+  },
+  {
+   "text": "|",
+   "x": 378,
+   "y": 372,
+   "w": 2,
+   "h": 18
+  },
+  {
+   "text": "Toilette",
+   "x": 205,
+   "y": 373,
+   "w": 77,
+   "h": 15
+  },
+  {
+   "text": "Erdgeschoss",
+   "x": 222,
+   "y": 412,
+   "w": 99,
+   "h": 22
+  },
+  {
+   "text": "|",
+   "x": 327,
+   "y": 412,
+   "w": 3,
+   "h": 18
+  },
+  {
+   "text": "Stock",
+   "x": 432,
+   "y": 413,
+   "w": 44,
+   "h": 15
+  },
+  {
+   "text": "erster",
+   "x": 378,
+   "y": 417,
+   "w": 47,
+   "h": 11
+  },
+  {
+   "text": "4",
+   "x": 126,
+   "y": 607,
+   "w": 36,
+   "h": 25
+  },
+  {
+   "text": "Elena,",
+   "x": 174,
+   "y": 612,
+   "w": 60,
+   "h": 20
+  },
+  {
+   "text": "Maria",
+   "x": 243,
+   "y": 612,
+   "w": 57,
+   "h": 17
+  },
+  {
+   "text": "und",
+   "x": 309,
+   "y": 612,
+   "w": 37,
+   "h": 18
+  },
+  {
+   "text": "„Glückstadt“.",
+   "x": 355,
+   "y": 612,
+   "w": 135,
+   "h": 21
+  },
+  {
+   "text": "Sie",
+   "x": 567,
+   "y": 612,
+   "w": 29,
+   "h": 18
+  },
+  {
+   "text": "und",
+   "x": 605,
+   "y": 612,
+   "w": 36,
+   "h": 18
+  },
+  {
+   "text": "kreuzen",
+   "x": 651,
+   "y": 612,
+   "w": 79,
+   "h": 18
+  },
+  {
+   "text": "Hören",
+   "x": 500,
+   "y": 613,
+   "w": 59,
+   "h": 17
+  },
+  {
+   "text": "Sie",
+   "x": 737,
+   "y": 613,
+   "w": 30,
+   "h": 17
+  },
+  {
+   "text": "an.",
+   "x": 775,
+   "y": 619,
+   "w": 30,
+   "h": 11
+  },
+  {
+   "text": "AB",
+   "x": 98,
+   "y": 641,
+   "w": 14,
+   "h": 9
+  },
+  {
+   "text": "spielen",
+   "x": 445,
+   "y": 653,
+   "w": 64,
+   "h": 22
+  },
+  {
+   "text": "ein",
+   "x": 516,
+   "y": 654,
+   "w": 28,
+   "h": 15
+  },
+  {
+   "text": "Computerspiel.",
+   "x": 551,
+   "y": 654,
+   "w": 135,
+   "h": 22
+  },
+  {
+   "text": "Elena",
+   "x": 198,
+   "y": 667,
+   "w": 49,
+   "h": 16
+  },
+  {
+   "text": "und",
+   "x": 254,
+   "y": 667,
+   "w": 35,
+   "h": 16
+  },
+  {
+   "text": "Maria",
+   "x": 296,
+   "y": 667,
+   "w": 53,
+   "h": 16
+  },
+  {
+   "text": "noch einmal?",
+   "x": 92,
+   "y": 670,
+   "w": 14,
+   "h": 80
+  },
+  {
+   "text": "a",
+   "x": 173,
+   "y": 672,
+   "w": 9,
+   "h": 11
+  },
+  {
+   "text": "wohnen",
+   "x": 445,
+   "y": 680,
+   "w": 73,
+   "h": 16
+  },
+  {
+   "text": "auch",
+   "x": 524,
+   "y": 680,
+   "w": 43,
+   "h": 16
+  },
+  {
+   "text": "Glückstadt.",
+   "x": 599,
+   "y": 680,
+   "w": 101,
+   "h": 17
+  },
+  {
+   "text": "in",
+   "x": 574,
+   "y": 681,
+   "w": 18,
+   "h": 15
+  },
+  {
+   "text": "Single",
+   "x": 445,
+   "y": 721,
+   "w": 55,
+   "h": 21
+  },
+  {
+   "text": "und",
+   "x": 507,
+   "y": 721,
+   "w": 35,
+   "h": 15
+  },
+  {
+   "text": "hat",
+   "x": 548,
+   "y": 721,
+   "w": 30,
+   "h": 15
+  },
+  {
+   "text": "keine",
+   "x": 585,
+   "y": 721,
+   "w": 48,
+   "h": 16
+  },
+  {
+   "text": "Kinder.",
+   "x": 641,
+   "y": 721,
+   "w": 65,
+   "h": 16
+  },
+  {
+   "text": "b",
+   "x": 173,
+   "y": 734,
+   "w": 9,
+   "h": 16
+  },
+  {
+   "text": "Otto",
+   "x": 198,
+   "y": 735,
+   "w": 37,
+   "h": 15
+  },
+  {
+   "text": "ist",
+   "x": 241,
+   "y": 735,
+   "w": 22,
+   "h": 15
+  },
+  {
+   "text": "geschieden",
+   "x": 444,
+   "y": 747,
+   "w": 100,
+   "h": 22
+  },
+  {
+   "text": "und",
+   "x": 551,
+   "y": 748,
+   "w": 35,
+   "h": 16
+  },
+  {
+   "text": "hat",
+   "x": 592,
+   "y": 748,
+   "w": 30,
+   "h": 16
+  },
+  {
+   "text": "Kinder.",
+   "x": 676,
+   "y": 748,
+   "w": 65,
+   "h": 16
+  },
+  {
+   "text": "|",
+   "x": 95,
+   "y": 749,
+   "w": 15,
+   "h": 3
+  },
+  {
+   "text": "zwei",
+   "x": 628,
+   "y": 749,
+   "w": 41,
+   "h": 15
+  },
+  {
+   "text": "Nachbarin.",
+   "x": 498,
+   "y": 787,
+   "w": 100,
+   "h": 17
+  },
+  {
+   "text": "Ottos",
+   "x": 445,
+   "y": 789,
+   "w": 45,
+   "h": 15
+  },
+  {
+   "text": "Vanilla",
+   "x": 197,
+   "y": 801,
+   "w": 65,
+   "h": 15
+  },
+  {
+   "text": "ist",
+   "x": 269,
+   "y": 802,
+   "w": 21,
+   "h": 15
+  },
+  {
+   "text": "c",
+   "x": 173,
+   "y": 806,
+   "w": 8,
+   "h": 10
+  },
+  {
+   "text": "Ottos",
+   "x": 445,
+   "y": 815,
+   "w": 45,
+   "h": 15
+  },
+  {
+   "text": "Frau.",
+   "x": 498,
+   "y": 816,
+   "w": 45,
+   "h": 14
+  },
+  {
+   "text": "GRAMMATIK",
+   "x": 618,
+   "y": 850,
+   "w": 12,
+   "h": 60
+  },
+  {
+   "text": "Genitiv",
+   "x": 651,
+   "y": 851,
+   "w": 64,
+   "h": 14
+  },
+  {
+   "text": "d",
+   "x": 173,
+   "y": 854,
+   "w": 9,
+   "h": 16
+  },
+  {
+   "text": "Elena",
+   "x": 198,
+   "y": 854,
+   "w": 49,
+   "h": 16
+  },
+  {
+   "text": "und",
+   "x": 254,
+   "y": 854,
+   "w": 35,
+   "h": 16
+  },
+  {
+   "text": "Maria",
+   "x": 296,
+   "y": 855,
+   "w": 53,
+   "h": 15
+  },
+  {
+   "text": "eine",
+   "x": 445,
+   "y": 855,
+   "w": 38,
+   "h": 15
+  },
+  {
+   "text": "Frau.",
+   "x": 490,
+   "y": 856,
+   "w": 45,
+   "h": 14
+  },
+  {
+   "text": "Ottos",
+   "x": 651,
+   "y": 874,
+   "w": 41,
+   "h": 14
+  },
+  {
+   "text": "Nachbarin",
+   "x": 699,
+   "y": 874,
+   "w": 86,
+   "h": 14
+  },
+  {
+   "text": "braucht",
+   "x": 321,
+   "y": 881,
+   "w": 72,
+   "h": 16
+  },
+  {
+   "text": "keine",
+   "x": 444,
+   "y": 881,
+   "w": 50,
+   "h": 16
+  },
+  {
+   "text": "Otto",
+   "x": 279,
+   "y": 882,
+   "w": 37,
+   "h": 15
+  },
+  {
+   "text": "Frau.",
+   "x": 501,
+   "y": 883,
+   "w": 46,
+   "h": 14
+  },
+  {
+   "text": "meinen:",
+   "x": 198,
+   "y": 886,
+   "w": 73,
+   "h": 11
+  },
+  {
+   "text": "die",
+   "x": 651,
+   "y": 896,
+   "w": 24,
+   "h": 15
+  },
+  {
+   "text": "Nachbarin",
+   "x": 682,
+   "y": 897,
+   "w": 86,
+   "h": 14
+  },
+  {
+   "text": "Otto",
+   "x": 808,
+   "y": 898,
+   "w": 34,
+   "h": 14
+  },
+  {
+   "text": "von",
+   "x": 773,
+   "y": 902,
+   "w": 30,
+   "h": 9
+  },
+  {
+   "text": "5",
+   "x": 126,
+   "y": 941,
+   "w": 36,
+   "h": 25
+  },
+  {
+   "text": "Und",
+   "x": 174,
+   "y": 946,
+   "w": 39,
+   "h": 17
+  },
+  {
+   "text": "rechts",
+   "x": 223,
+   "y": 946,
+   "w": 61,
+   "h": 17
+  },
+  {
+   "text": "Wohnzimmer.",
+   "x": 372,
+   "y": 946,
+   "w": 140,
+   "h": 18
+  },
+  {
+   "text": "ist",
+   "x": 293,
+   "y": 947,
+   "w": 25,
+   "h": 17
+  },
+  {
+   "text": "sein",
+   "x": 325,
+   "y": 947,
+   "w": 40,
+   "h": 17
+  },
+  {
+   "text": "AB",
+   "x": 97,
+   "y": 954,
+   "w": 15,
+   "h": 9
+  },
+  {
+   "text": "Hören",
+   "x": 174,
+   "y": 988,
+   "w": 52,
+   "h": 16
+  },
+  {
+   "text": "Sie",
+   "x": 233,
+   "y": 988,
+   "w": 26,
+   "h": 16
+  },
+  {
+   "text": "einmal",
+   "x": 316,
+   "y": 988,
+   "w": 59,
+   "h": 16
+  },
+  {
+   "text": "und",
+   "x": 384,
+   "y": 988,
+   "w": 32,
+   "h": 16
+  },
+  {
+   "text": "ergänzen",
+   "x": 424,
+   "y": 989,
+   "w": 81,
+   "h": 21
+  },
+  {
+   "text": "Sie",
+   "x": 512,
+   "y": 989,
+   "w": 25,
+   "h": 15
+  },
+  {
+   "text": "sein,",
+   "x": 544,
+   "y": 989,
+   "w": 37,
+   "h": 18
+  },
+  {
+   "text": "seine",
+   "x": 589,
+   "y": 989,
+   "w": 40,
+   "h": 16
+  },
+  {
+   "text": "oder",
+   "x": 635,
+   "y": 989,
+   "w": 39,
+   "h": 16
+  },
+  {
+   "text": "seinen.",
+   "x": 681,
+   "y": 989,
+   "w": 55,
+   "h": 16
+  },
+  {
+   "text": "a",
+   "x": 140,
+   "y": 993,
+   "w": 9,
+   "h": 11
+  },
+  {
+   "text": "Da",
+   "x": 198,
+   "y": 1028,
+   "w": 24,
+   "h": 16
+  },
+  {
+   "text": "oben",
+   "x": 226,
+   "y": 1028,
+   "w": 36,
+   "h": 16
+  },
+  {
+   "text": "ist",
+   "x": 266,
+   "y": 1028,
+   "w": 20,
+   "h": 16
+  },
+  {
+   "text": "sein",
+   "x": 290,
+   "y": 1028,
+   "w": 32,
+   "h": 16
+  },
+  {
+   "text": "Balkon.",
+   "x": 336,
+   "y": 1028,
+   "w": 67,
+   "h": 16
+  },
+  {
+   "text": "Und",
+   "x": 412,
+   "y": 1028,
+   "w": 30,
+   "h": 16
+  },
+  {
+   "text": "da",
+   "x": 446,
+   "y": 1028,
+   "w": 20,
+   "h": 16
+  },
+  {
+   "text": "hinten",
+   "x": 470,
+   "y": 1028,
+   "w": 50,
+   "h": 16
+  },
+  {
+   "text": "ist",
+   "x": 524,
+   "y": 1028,
+   "w": 20,
+   "h": 16
+  },
+  {
+   "text": "1",
+   "x": 173,
+   "y": 1030,
+   "w": 6,
+   "h": 14
+  },
+  {
+   "text": "Garage",
+   "x": 671,
+   "y": 1030,
+   "w": 60,
+   "h": 16
+  },
+  {
+   "text": "–",
+   "x": 735,
+   "y": 1030,
+   "w": 12,
+   "h": 16
+  },
+  {
+   "text": "und",
+   "x": 751,
+   "y": 1030,
+   "w": 32,
+   "h": 16
+  },
+  {
+   "text": "Auto.",
+   "x": 937,
+   "y": 1032,
+   "w": 47,
+   "h": 14
+  },
+  {
+   "text": "Und",
+   "x": 197,
+   "y": 1055,
+   "w": 37,
+   "h": 16
+  },
+  {
+   "text": "findest",
+   "x": 458,
+   "y": 1055,
+   "w": 62,
+   "h": 16
+  },
+  {
+   "text": "du",
+   "x": 526,
+   "y": 1055,
+   "w": 22,
+   "h": 16
+  },
+  {
+   "text": "2",
+   "x": 173,
+   "y": 1056,
+   "w": 8,
+   "h": 14
+  },
+  {
+   "text": "Haus?",
+   "x": 358,
+   "y": 1056,
+   "w": 53,
+   "h": 15
+  },
+  {
+   "text": "Wie",
+   "x": 417,
+   "y": 1056,
+   "w": 34,
+   "h": 15
+  },
+  {
+   "text": "Ottos",
+   "x": 555,
+   "y": 1057,
+   "w": 46,
+   "h": 14
+  },
+  {
+   "text": "Haus?",
+   "x": 608,
+   "y": 1057,
+   "w": 53,
+   "h": 15
+  },
+  {
+   "text": "finde",
+   "x": 364,
+   "y": 1082,
+   "w": 46,
+   "h": 16
+  },
+  {
+   "text": "ich",
+   "x": 417,
+   "y": 1082,
+   "w": 27,
+   "h": 16
+  },
+  {
+   "text": "schön.",
+   "x": 451,
+   "y": 1082,
+   "w": 57,
+   "h": 16
+  },
+  {
+   "text": "Aber",
+   "x": 515,
+   "y": 1082,
+   "w": 54,
+   "h": 16
+  },
+  {
+   "text": "3",
+   "x": 173,
+   "y": 1083,
+   "w": 8,
+   "h": 14
+  },
+  {
+   "text": "Haus",
+   "x": 310,
+   "y": 1083,
+   "w": 45,
+   "h": 16
+  },
+  {
+   "text": "ich",
+   "x": 792,
+   "y": 1083,
+   "w": 27,
+   "h": 16
+  },
+  {
+   "text": "nicht",
+   "x": 826,
+   "y": 1083,
+   "w": 47,
+   "h": 16
+  },
+  {
+   "text": "Garten",
+   "x": 680,
+   "y": 1084,
+   "w": 61,
+   "h": 15
+  },
+  {
+   "text": "mag",
+   "x": 748,
+   "y": 1089,
+   "w": 37,
+   "h": 16
+  },
+  {
+   "text": "so.",
+   "x": 880,
+   "y": 1089,
+   "w": 22,
+   "h": 11
+  },
+  {
+   "text": "denn",
+   "x": 266,
+   "y": 1109,
+   "w": 46,
+   "h": 15
+  },
+  {
+   "text": "Was",
+   "x": 197,
+   "y": 1110,
+   "w": 35,
+   "h": 14
+  },
+  {
+   "text": "ist",
+   "x": 238,
+   "y": 1110,
+   "w": 22,
+   "h": 14
+  },
+  {
+   "text": "mit",
+   "x": 319,
+   "y": 1110,
+   "w": 31,
+   "h": 15
+  },
+  {
+   "text": "Ottos",
+   "x": 357,
+   "y": 1110,
+   "w": 45,
+   "h": 15
+  },
+  {
+   "text": "Frau?",
+   "x": 410,
+   "y": 1110,
+   "w": 66,
+   "h": 15
+  },
+  {
+   "text": "–",
+   "x": 482,
+   "y": 1110,
+   "w": 12,
+   "h": 15
+  },
+  {
+   "text": "hat",
+   "x": 701,
+   "y": 1110,
+   "w": 29,
+   "h": 16
+  },
+  {
+   "text": "keine",
+   "x": 737,
+   "y": 1110,
+   "w": 49,
+   "h": 16
+  },
+  {
+   "text": "Frau?",
+   "x": 600,
+   "y": 1111,
+   "w": 45,
+   "h": 16
+  },
+  {
+   "text": "Otto",
+   "x": 657,
+   "y": 1111,
+   "w": 37,
+   "h": 15
+  },
+  {
+   "text": "Frau.",
+   "x": 794,
+   "y": 1112,
+   "w": 45,
+   "h": 14
+  },
+  {
+   "text": "Aber",
+   "x": 196,
+   "y": 1135,
+   "w": 42,
+   "h": 16
+  },
+  {
+   "text": "sind",
+   "x": 332,
+   "y": 1136,
+   "w": 39,
+   "h": 15
+  },
+  {
+   "text": "denn",
+   "x": 377,
+   "y": 1136,
+   "w": 46,
+   "h": 16
+  },
+  {
+   "text": "dann",
+   "x": 429,
+   "y": 1136,
+   "w": 46,
+   "h": 15
+  },
+  {
+   "text": "Kinder?",
+   "x": 599,
+   "y": 1136,
+   "w": 71,
+   "h": 16
+  },
+  {
+   "text": "5",
+   "x": 173,
+   "y": 1137,
+   "w": 7,
+   "h": 14
+  },
+  {
+   "text": "von",
+   "x": 244,
+   "y": 1141,
+   "w": 33,
+   "h": 10
+  },
+  {
+   "text": "wem",
+   "x": 284,
+   "y": 1141,
+   "w": 42,
+   "h": 10
+  },
+  {
+   "text": "b",
+   "x": 140,
+   "y": 1188,
+   "w": 10,
+   "h": 16
+  },
+  {
+   "text": "Ergänzen",
+   "x": 173,
+   "y": 1189,
+   "w": 81,
+   "h": 22
+  },
+  {
+   "text": "Sie.",
+   "x": 261,
+   "y": 1189,
+   "w": 32,
+   "h": 16
+  },
+  {
+   "text": "Nominativ",
+   "x": 198,
+   "y": 1234,
+   "w": 104,
+   "h": 28
+  },
+  {
+   "text": "Akkusativ",
+   "x": 369,
+   "y": 1238,
+   "w": 88,
+   "h": 15
+  },
+  {
+   "text": "oben",
+   "x": 740,
+   "y": 1240,
+   "w": 40,
+   "h": 14
+  },
+  {
+   "text": "ist...",
+   "x": 235,
+   "y": 1258,
+   "w": 40,
+   "h": 14
+  },
+  {
+   "text": "ist",
+   "x": 235,
+   "y": 1258,
+   "w": 18,
+   "h": 14
+  },
+  {
+   "text": "…",
+   "x": 257,
+   "y": 1258,
+   "w": 16,
+   "h": 14
+  },
+  {
+   "text": "Ich",
+   "x": 371,
+   "y": 1258,
+   "w": 25,
+   "h": 14
+  },
+  {
+   "text": "Da",
+   "x": 209,
+   "y": 1259,
+   "w": 20,
+   "h": 13
+  },
+  {
+   "text": "mag",
+   "x": 402,
+   "y": 1263,
+   "w": 33,
+   "h": 15
+  },
+  {
+   "text": "…",
+   "x": 441,
+   "y": 1269,
+   "w": 14,
+   "h": 3
+  },
+  {
+   "text": "Balkon.",
+   "x": 504,
+   "y": 1283,
+   "w": 61,
+   "h": 15
+  },
+  {
+   "text": "seinen",
+   "x": 370,
+   "y": 1284,
+   "w": 54,
+   "h": 14
+  },
+  {
+   "text": "hinten",
+   "x": 778,
+   "y": 1295,
+   "w": 45,
+   "h": 14
+  },
+  {
+   "text": "sein",
+   "x": 229,
+   "y": 1307,
+   "w": 32,
+   "h": 13
+  },
+  {
+   "text": "Haus.",
+   "x": 505,
+   "y": 1308,
+   "w": 43,
+   "h": 13
+  },
+  {
+   "text": "seine",
+   "x": 360,
+   "y": 1322,
+   "w": 50,
+   "h": 15
+  },
+  {
+   "text": "vorn",
+   "x": 654,
+   "y": 1324,
+   "w": 34,
+   "h": 14
+  },
+  {
+   "text": "GRAMMATIK",
+   "x": 176,
+   "y": 1330,
+   "w": 12,
+   "h": 60
+  },
+  {
+   "text": "Garage.",
+   "x": 504,
+   "y": 1330,
+   "w": 59,
+   "h": 19
+  },
+  {
+   "text": "Da",
+   "x": 210,
+   "y": 1364,
+   "w": 20,
+   "h": 14
+  },
+  {
+   "text": "sind",
+   "x": 234,
+   "y": 1364,
+   "w": 30,
+   "h": 14
+  },
+  {
+   "text": "…",
+   "x": 268,
+   "y": 1364,
+   "w": 16,
+   "h": 14
+  },
+  {
+   "text": "Ich",
+   "x": 371,
+   "y": 1364,
+   "w": 25,
+   "h": 14
+  },
+  {
+   "text": "mag",
+   "x": 402,
+   "y": 1364,
+   "w": 24,
+   "h": 14
+  },
+  {
+   "text": "…",
+   "x": 430,
+   "y": 1369,
+   "w": 25,
+   "h": 15
+  },
+  {
+   "text": "unten",
+   "x": 730,
+   "y": 1379,
+   "w": 44,
+   "h": 14
+  },
+  {
+   "text": "Kinder.",
+   "x": 504,
+   "y": 1387,
+   "w": 59,
+   "h": 14
+  },
+  {
+   "text": "seine",
+   "x": 370,
+   "y": 1388,
+   "w": 41,
+   "h": 13
+  },
+  {
+   "text": "Modul",
+   "x": 12,
+   "y": 1444,
+   "w": 40,
+   "h": 14
+  },
+  {
+   "text": "5",
+   "x": 56,
+   "y": 1444,
+   "w": 12,
+   "h": 14
+  },
+  {
+   "text": "|",
+   "x": 136,
+   "y": 1444,
+   "w": 2,
+   "h": 17
+  },
+  {
+   "text": "vierzehn",
+   "x": 154,
+   "y": 1445,
+   "w": 73,
+   "h": 14
+  },
+  {
+   "text": "14",
+   "x": 103,
+   "y": 1447,
+   "w": 16,
+   "h": 12
+  }
+ ],
+ "fields": [
+  {
+   "id": "3-W",
+   "group": "task3",
+   "kind": "text",
+   "label": "Wohnzimmer",
+   "answer": "G",
+   "x": 351,
+   "y": 247,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "3-K",
+   "group": "task3",
+   "kind": "text",
+   "label": "Küche",
+   "answer": "F",
+   "x": 178,
+   "y": 288,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "3-A",
+   "group": "task3",
+   "kind": "text",
+   "label": "Arbeitszimmer",
+   "answer": "D",
+   "x": 285,
+   "y": 288,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "3-S",
+   "group": "task3",
+   "kind": "text",
+   "label": "Schlafzimmer",
+   "answer": "B",
+   "x": 178,
+   "y": 328,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "3-B",
+   "group": "task3",
+   "kind": "text",
+   "label": "Bad",
+   "answer": "C",
+   "x": 346,
+   "y": 328,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "3-T",
+   "group": "task3",
+   "kind": "text",
+   "label": "Toilette",
+   "answer": "E",
+   "x": 176,
+   "y": 368,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "3-F",
+   "group": "task3",
+   "kind": "text",
+   "label": "Flur",
+   "answer": "H",
+   "x": 295,
+   "y": 368,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "3-E",
+   "group": "task3",
+   "kind": "text",
+   "label": "Erdgeschoss",
+   "answer": "J",
+   "x": 176,
+   "y": 408,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "3-1",
+   "group": "task3",
+   "kind": "text",
+   "label": "erster Stock",
+   "answer": "I",
+   "x": 334,
+   "y": 408,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "4a-1",
+   "group": "task4",
+   "kind": "radio",
+   "label": "Elena und Maria: spielen ein Computerspiel.",
+   "answer": "true",
+   "x": 415,
+   "y": 649,
+   "w": 24,
+   "h": 24,
+   "name": "4a",
+   "value": "spielen ein Computerspiel."
+  },
+  {
+   "id": "4a-2",
+   "group": "task4",
+   "kind": "radio",
+   "label": "Elena und Maria: wohnen auch in Glückstadt.",
+   "answer": "false",
+   "x": 415,
+   "y": 676,
+   "w": 24,
+   "h": 24,
+   "name": "4a",
+   "value": "wohnen auch in Glückstadt."
+  },
+  {
+   "id": "4b-1",
+   "group": "task4",
+   "kind": "radio",
+   "label": "Otto ist: Single und hat keine Kinder.",
+   "answer": "true",
+   "x": 415,
+   "y": 716,
+   "w": 24,
+   "h": 24,
+   "name": "4b",
+   "value": "Single und hat keine Kinder."
+  },
+  {
+   "id": "4b-2",
+   "group": "task4",
+   "kind": "radio",
+   "label": "Otto ist: geschieden und hat zwei Kinder.",
+   "answer": "false",
+   "x": 415,
+   "y": 743,
+   "w": 24,
+   "h": 24,
+   "name": "4b",
+   "value": "geschieden und hat zwei Kinder."
+  },
+  {
+   "id": "4c-1",
+   "group": "task4",
+   "kind": "radio",
+   "label": "Vanilla ist: Ottos Nachbarin.",
+   "answer": "true",
+   "x": 415,
+   "y": 783,
+   "w": 24,
+   "h": 24,
+   "name": "4c",
+   "value": "Ottos Nachbarin."
+  },
+  {
+   "id": "4c-2",
+   "group": "task4",
+   "kind": "radio",
+   "label": "Vanilla ist: Ottos Frau.",
+   "answer": "false",
+   "x": 415,
+   "y": 810,
+   "w": 24,
+   "h": 24,
+   "name": "4c",
+   "value": "Ottos Frau."
+  },
+  {
+   "id": "4d-1",
+   "group": "task4",
+   "kind": "radio",
+   "label": "Otto braucht: eine Frau.",
+   "answer": "true",
+   "x": 415,
+   "y": 850,
+   "w": 24,
+   "h": 24,
+   "name": "4d",
+   "value": "eine Frau."
+  },
+  {
+   "id": "4d-2",
+   "group": "task4",
+   "kind": "radio",
+   "label": "Otto braucht: keine Frau.",
+   "answer": "false",
+   "x": 415,
+   "y": 876,
+   "w": 24,
+   "h": 24,
+   "name": "4d",
+   "value": "keine Frau."
+  },
+  {
+   "id": "5a-1a",
+   "group": "task5a",
+   "kind": "text",
+   "label": "Und da hinten ist ___ Garage",
+   "answer": "seine",
+   "x": 592,
+   "y": 1030,
+   "w": 74,
+   "h": 22
+  },
+  {
+   "id": "5a-1b",
+   "group": "task5a",
+   "kind": "text",
+   "label": "und ___ Auto",
+   "answer": "sein",
+   "x": 857,
+   "y": 1030,
+   "w": 73,
+   "h": 22
+  },
+  {
+   "id": "5a-2",
+   "group": "task5a",
+   "kind": "text",
+   "label": "Und ___ Haus?",
+   "answer": "sein",
+   "x": 234,
+   "y": 1040,
+   "w": 120,
+   "h": 22
+  },
+  {
+   "id": "5a-3a",
+   "group": "task5a",
+   "kind": "text",
+   "label": "___ Haus finde ich schön.",
+   "answer": "Sein",
+   "x": 198,
+   "y": 1071,
+   "w": 96,
+   "h": 22
+  },
+  {
+   "id": "5a-3b",
+   "group": "task5a",
+   "kind": "text",
+   "label": "Aber ___ Garten mag ich nicht so.",
+   "answer": "seinen",
+   "x": 581,
+   "y": 1071,
+   "w": 97,
+   "h": 22
+  },
+  {
+   "id": "5a-4",
+   "group": "task5a",
+   "kind": "text",
+   "label": "___ Frau?",
+   "answer": "Seine",
+   "x": 510,
+   "y": 1095,
+   "w": 90,
+   "h": 22
+  },
+  {
+   "id": "5a-5",
+   "group": "task5a",
+   "kind": "text",
+   "label": "Aber von wem sind denn dann ___ Kinder?",
+   "answer": "seine",
+   "x": 480,
+   "y": 1120,
+   "w": 113,
+   "h": 22
+  },
+  {
+   "id": "5b-1",
+   "group": "task5b",
+   "kind": "text",
+   "label": "Nominativ: Da ist ___ Balkon",
+   "answer": "sein",
+   "x": 228,
+   "y": 1271,
+   "w": 132,
+   "h": 22
+  },
+  {
+   "id": "5b-2",
+   "group": "task5b",
+   "kind": "text",
+   "label": "Akkusativ: Ich mag ___ Haus",
+   "answer": "sein",
+   "x": 378,
+   "y": 1299,
+   "w": 126,
+   "h": 22
+  },
+  {
+   "id": "5b-3",
+   "group": "task5b",
+   "kind": "text",
+   "label": "Nominativ: Da ist ___ Garage",
+   "answer": "seine",
+   "x": 198,
+   "y": 1322,
+   "w": 156,
+   "h": 22
+  },
+  {
+   "id": "5b-4",
+   "group": "task5b",
+   "kind": "text",
+   "label": "Nominativ: Da sind ___ Kinder",
+   "answer": "seine",
+   "x": 284,
+   "y": 1367,
+   "w": 76,
+   "h": 22
+  }
+ ],
+ "audio": [
+  {
+   "id": "t3-06",
+   "src": "assets/kb-cd3-track06.mp3",
+   "label": "▶ 3 06 (Aufgabe 4)",
+   "x": 70,
+   "y": 612,
+   "w": 45,
+   "h": 26
+  },
+  {
+   "id": "t3-06-5a",
+   "src": "assets/kb-cd3-track06.mp3",
+   "label": "▶ 3 06 (Aufgabe 5a)",
+   "x": 70,
+   "y": 986,
+   "w": 45,
+   "h": 26
+  }
+ ],
+ "groups": [
+  {
+   "id": "task3",
+   "label": "Aufgabe 3: Wie heißen die Zimmer?"
+  },
+  {
+   "id": "task4",
+   "label": "Aufgabe 4: Elena, Maria und „Glückstadt“"
+  },
+  {
+   "id": "task5a",
+   "label": "Aufgabe 5a"
+  },
+  {
+   "id": "task5b",
+   "label": "Aufgabe 5b"
+  }
+ ],
+ "review": {
+  "status": "verified",
+  "notes": [
+   "Aufgabe 3: Kinderzimmer is the printed example (letter A); the other nine rooms take a letter field (answers from lesson JSON).",
+   "Aufgabe 4: radio per statement pair; answers from lesson JSON.",
+   "5a: \"sein\" before Balkon in item 1 is a printed example (no field); blank answers from lesson JSON.",
+   "5b: blue sein/seinen/seine in the right column are printed examples; blanks take the left-column answers from lesson JSON.",
+   "Room-image letters A-J inside the house picture are image content (not words)."
+  ],
+  "verifiedWords": 207,
+  "totalWords": 207
+ }
+}
