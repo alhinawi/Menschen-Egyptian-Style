@@ -1,1 +1,524 @@
-{"ab-a12-l13-16.html":{"slug":"ab-a12-l13-16","title":"Menschen A1.2 · Arbeitsbuch Lektion 13–16","reader":true,"themes":true,"styles":["book.css","batch.css"],"initializers":["glossary","batch-ab12-glossary","batch-ab12-sentences","pronunciation-index","batch-ab12-pronunciation-index","gapfill-pronunciation-index","meanings","batch-ab12"],"bodyAttrs":{},"reactExercises":true},"ab-a12-l17-20.html":{"slug":"ab-a12-l17-20","title":"Menschen A1.2 · Arbeitsbuch 17-20","reader":true,"themes":false,"styles":["ab-a12-l17-20.css"],"initializers":["glossary","batch-ab12-glossary","batch-ab12-sentences","pronunciation-index","batch-ab12-pronunciation-index","gapfill-pronunciation-index","meanings","ab-a12-l17-20-data","ab-a12-l17-20-vocab","ab-a12-l17-20"],"bodyAttrs":{},"reactExercises":false},"ab-a12-l21-24.html":{"slug":"ab-a12-l21-24","title":"Menschen · Arbeitsbuch A1.2 Lektion 21–24","reader":true,"themes":true,"styles":["book.css","batch.css"],"initializers":["glossary","batch-glossary","ab-a12-l21-24-glossary","batch-sentences","ab-a12-l21-24-sentences","pronunciation-index","ab-a12-l21-24-pronunciation-index","gapfill-pronunciation-index","meanings","ab-a12-l21-24"],"bodyAttrs":{},"reactExercises":true},"ab-a12-original-viewer.html":{"slug":"ab-a12-original-viewer","title":"Originalbuch","reader":false,"themes":false,"styles":[],"initializers":["ab-a12-original-viewer-inline-0"],"bodyAttrs":{},"reactExercises":false},"ab-l10-12.html":{"slug":"ab-l10-12","title":"Menschen · Arbeitsbuch Lektion 10–12","reader":true,"themes":true,"styles":["book.css","batch.css"],"initializers":["glossary","ab-batch-glossary","ab-batch-sentences","pronunciation-index","ab-batch-pronunciation-index","gapfill-pronunciation-index","meanings","ab-batch"],"bodyAttrs":{},"reactExercises":true},"ab-l7-9-viewer.html":{"slug":"ab-l7-9-viewer","title":"Arbeitsbuch (Original)","reader":false,"themes":false,"styles":[],"initializers":["ab-l7-9-viewer-inline-0"],"bodyAttrs":{},"reactExercises":false},"ab-l7-9.html":{"slug":"ab-l7-9","title":"Menschen Arbeitsbuch · Lektion 7–9","reader":true,"themes":true,"styles":["book.css"],"initializers":["glossary","ab-l7-9-glossary","ab-l7-9-sentences","pronunciation-index","ab-l7-9-pronunciation-index","gapfill-pronunciation-index","meanings","ab-l7-9"],"bodyAttrs":{},"reactExercises":true},"ab-original-viewer.html":{"slug":"ab-original-viewer","title":"Originalbuch · Arbeitsbuch","reader":false,"themes":false,"styles":[],"initializers":["ab-original-viewer-inline-0"],"bodyAttrs":{},"reactExercises":false},"ab1.html":{"slug":"ab1","title":"Menschen · Arbeitsbuch A1.1 · Lektion 1","reader":true,"themes":true,"styles":["book.css","batch.css"],"initializers":["glossary","pronunciation-index","ab1-artwork-text","selection-units","ab1-unit-translations","ab1-unit-audio","gapfill-pronunciation-index","meanings","ab1"],"bodyAttrs":{},"reactExercises":true},"ab2.html":{"slug":"ab2","title":"Menschen · Arbeitsbuch A1.1 · Lektion 2","reader":true,"themes":true,"styles":["book.css","batch.css"],"initializers":["glossary","pronunciation-index","ab1-unit-translations","ab1-unit-audio","ab2-artwork-text","selection-units","gapfill-pronunciation-index","meanings","ab2"],"bodyAttrs":{},"reactExercises":true},"ab3.html":{"slug":"ab3","title":"Menschen · Arbeitsbuch A1.1 · Lektion 3","reader":true,"themes":true,"styles":["book.css","batch.css"],"initializers":["glossary","pronunciation-index","ab1-unit-translations","ab1-unit-audio","ab3-artwork-text","selection-units","gapfill-pronunciation-index","meanings","ab3"],"bodyAttrs":{},"reactExercises":true},"ab4-6.html":{"slug":"ab4-6","title":"Menschen · Arbeitsbuch Lektion 4–6","reader":true,"themes":true,"styles":["book.css"],"initializers":["glossary","batch-glossary","ab46-glossary","batch-sentences","ab46-sentences","pronunciation-index","batch-pronunciation-index","ab46-pronunciation-index","gapfill-pronunciation-index","meanings","ab46"],"bodyAttrs":{},"reactExercises":true},"abm1.html":{"slug":"abm1","title":"Menschen · Arbeitsbuch A1.1 · Lektion 3","reader":true,"themes":true,"styles":["book.css","batch.css"],"initializers":["glossary","pronunciation-index","ab1-unit-translations","ab1-unit-audio","abm1-artwork-text","selection-units","gapfill-pronunciation-index","meanings","abm1"],"bodyAttrs":{},"reactExercises":true},"index.html":{"slug":"index","title":"Menschen · Lektion 1","reader":true,"themes":true,"styles":["book.css","batch.css"],"initializers":["glossary","pronunciation-index","selection-units","artwork-text","unit-translations","unit-audio","gapfill-pronunciation-index","meanings","book"],"bodyAttrs":{},"reactExercises":true},"kb-a12-l13-16.html":{"slug":"kb-a12-l13-16","title":"Menschen A1.2 · Lektion 13–16","reader":true,"themes":true,"styles":["book.css","batch.css","kb-a12-l13-16.css"],"initializers":["glossary","kb-a12-glossary","kb-a12-sentences","pronunciation-index","kb-a12-pronunciation-index","gapfill-pronunciation-index","meanings","kb-a12-l13-16"],"bodyAttrs":{},"reactExercises":true},"kb-a12-l17-20.html":{"slug":"kb-a12-l17-20","title":"Menschen A1.2 · Lektion 17–20","reader":true,"themes":true,"styles":["book.css","batch.css","kb-a12-l17-20.css"],"initializers":["glossary","kb-a12-l17-20-glossary","kb-a12-l17-20-sentences","kb-a12-l17-20-pronunciation-index","gapfill-pronunciation-index","meanings","kb-a12-l17-20"],"bodyAttrs":{},"reactExercises":true},"kb-a12-original-viewer.html":{"slug":"kb-a12-original-viewer","title":"Originalbuch","reader":false,"themes":false,"styles":[],"initializers":["kb-a12-original-viewer-inline-0"],"bodyAttrs":{},"reactExercises":false},"l10-12.html":{"slug":"l10-12","title":"Menschen · Lektion 10–12","reader":true,"themes":true,"styles":["book.css","batch.css","batch-l10-12.css"],"initializers":["glossary","batch-glossary","batch-glossary-l10-12","batch-sentences","batch-sentences-l10-12","pronunciation-index","batch-pronunciation-index","batch-pronunciation-index-l10-12","gapfill-pronunciation-index","meanings","batch-l10-12"],"bodyAttrs":{},"reactExercises":true},"l2-3.html":{"slug":"l2-3","title":"Menschen · Lektion 2–3","reader":true,"themes":true,"styles":["book.css","batch.css"],"initializers":["glossary","batch-glossary","batch-sentences","pronunciation-index","batch-pronunciation-index","selection-units","artwork-text","unit-translations","unit-audio","gapfill-pronunciation-index","meanings","batch"],"bodyAttrs":{},"reactExercises":true},"l21-24.html":{"slug":"l21-24","title":"Menschen · A1.2 · Lektion 21-24 & Aktionsseiten","reader":true,"themes":true,"styles":["book.css","batch-l21-24.css"],"initializers":["glossary","batch-glossary-l21-24","batch-sentences-l21-24","pronunciation-index","batch-pronunciation-index-l21-24","selection-units","artwork-text","unit-translations","unit-audio","batch-unit-audio-l21-24","batch-selection-units-l21-24","batch-unit-arabic-l21-24","gapfill-pronunciation-index","meanings","batch-l21-24"],"bodyAttrs":{},"reactExercises":true},"l4-6.html":{"slug":"l4-6","title":"Menschen · Lektion 4–6","reader":true,"themes":true,"styles":["book.css","batch.css","l4-6.css"],"initializers":["glossary","batch-glossary-46","batch-sentences-46","pronunciation-index","batch-pronunciation-index-46","gapfill-pronunciation-index","meanings","batch-l46"],"bodyAttrs":{},"reactExercises":true},"l7-9.html":{"slug":"l7-9","title":"Menschen · Lektion 7–9","reader":true,"themes":true,"styles":["book.css","batch.css","batch79.css"],"initializers":["glossary","batch-glossary","batch-sentences","batch79-glossary","batch79-sentences","pronunciation-index","batch-pronunciation-index","batch79-pronunciation-index","gapfill-pronunciation-index","meanings","batch79"],"bodyAttrs":{},"reactExercises":true},"original-l21-24.html":{"slug":"original-l21-24","title":"Originalbuch","reader":false,"themes":false,"styles":[],"initializers":["original-l21-24-inline-0"],"bodyAttrs":{},"reactExercises":false},"original-viewer-a12.html":{"slug":"original-viewer-a12","title":"Originalbuch","reader":false,"themes":false,"styles":[],"initializers":["original-viewer-a12-inline-0"],"bodyAttrs":{},"reactExercises":false},"original-viewer-ab.html":{"slug":"original-viewer-ab","title":"Originalbuch","reader":false,"themes":false,"styles":[],"initializers":["original-viewer-ab-inline-0"],"bodyAttrs":{},"reactExercises":false},"original-viewer.html":{"slug":"original-viewer","title":"Originalbuch","reader":false,"themes":false,"styles":[],"initializers":["original-viewer-inline-0"],"bodyAttrs":{},"reactExercises":false}}
+{
+  "ab-a12-l13-16.html": {
+    "slug": "ab-a12-l13-16",
+    "title": "Menschen A1.2 · Arbeitsbuch Lektion 13–16",
+    "reader": true,
+    "themes": true,
+    "styles": [
+      "book.css",
+      "batch.css"
+    ],
+    "initializers": [
+      "glossary",
+      "batch-ab12-glossary",
+      "batch-ab12-sentences",
+      "pronunciation-index",
+      "batch-ab12-pronunciation-index",
+      "gapfill-pronunciation-index",
+      "meanings",
+      "batch-ab12"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true
+  },
+  "ab-a12-l17-20.html": {
+    "slug": "ab-a12-l17-20",
+    "title": "Menschen A1.2 · Arbeitsbuch 17-20",
+    "reader": true,
+    "themes": false,
+    "styles": [
+      "ab-a12-l17-20.css"
+    ],
+    "initializers": [
+      "glossary",
+      "batch-ab12-glossary",
+      "batch-ab12-sentences",
+      "pronunciation-index",
+      "batch-ab12-pronunciation-index",
+      "gapfill-pronunciation-index",
+      "meanings",
+      "ab-a12-l17-20-data",
+      "ab-a12-l17-20-vocab",
+      "ab-a12-l17-20"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": false
+  },
+  "ab-a12-l21-24.html": {
+    "slug": "ab-a12-l21-24",
+    "title": "Menschen · Arbeitsbuch A1.2 Lektion 21–24",
+    "reader": true,
+    "themes": true,
+    "styles": [
+      "book.css",
+      "batch.css"
+    ],
+    "initializers": [
+      "glossary",
+      "batch-glossary",
+      "ab-a12-l21-24-glossary",
+      "batch-sentences",
+      "ab-a12-l21-24-sentences",
+      "pronunciation-index",
+      "ab-a12-l21-24-pronunciation-index",
+      "gapfill-pronunciation-index",
+      "meanings",
+      "ab-a12-l21-24"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true
+  },
+  "ab-a12-original-viewer.html": {
+    "slug": "ab-a12-original-viewer",
+    "title": "Originalbuch",
+    "reader": false,
+    "themes": false,
+    "styles": [],
+    "initializers": [
+      "ab-a12-original-viewer-inline-0"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": false
+  },
+  "ab-l10-12.html": {
+    "slug": "ab-l10-12",
+    "title": "Menschen · Arbeitsbuch Lektion 10–12",
+    "reader": true,
+    "themes": true,
+    "styles": [
+      "book.css",
+      "batch.css"
+    ],
+    "initializers": [
+      "glossary",
+      "ab-batch-glossary",
+      "ab-batch-sentences",
+      "pronunciation-index",
+      "ab-batch-pronunciation-index",
+      "gapfill-pronunciation-index",
+      "meanings",
+      "ab-batch"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true
+  },
+  "ab-l7-9-viewer.html": {
+    "slug": "ab-l7-9-viewer",
+    "title": "Arbeitsbuch (Original)",
+    "reader": false,
+    "themes": false,
+    "styles": [],
+    "initializers": [
+      "ab-l7-9-viewer-inline-0"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": false
+  },
+  "ab-l7-9.html": {
+    "slug": "ab-l7-9",
+    "title": "Menschen Arbeitsbuch · Lektion 7–9",
+    "reader": true,
+    "themes": true,
+    "styles": [
+      "book.css"
+    ],
+    "initializers": [
+      "glossary",
+      "ab-l7-9-glossary",
+      "ab-l7-9-sentences",
+      "pronunciation-index",
+      "ab-l7-9-pronunciation-index",
+      "gapfill-pronunciation-index",
+      "meanings",
+      "ab-l7-9"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true
+  },
+  "ab-original-viewer.html": {
+    "slug": "ab-original-viewer",
+    "title": "Originalbuch · Arbeitsbuch",
+    "reader": false,
+    "themes": false,
+    "styles": [],
+    "initializers": [
+      "ab-original-viewer-inline-0"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": false
+  },
+  "ab1.html": {
+    "slug": "ab1",
+    "title": "Menschen · Arbeitsbuch A1.1 · Lektion 1",
+    "reader": true,
+    "themes": true,
+    "styles": [
+      "book.css",
+      "batch.css"
+    ],
+    "initializers": [
+      "glossary",
+      "pronunciation-index",
+      "ab1-artwork-text",
+      "selection-units",
+      "ab1-unit-translations",
+      "ab1-unit-audio",
+      "gapfill-pronunciation-index",
+      "meanings",
+      "ab1"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true
+  },
+  "ab2.html": {
+    "slug": "ab2",
+    "title": "Menschen · Arbeitsbuch A1.1 · Lektion 2",
+    "reader": true,
+    "themes": true,
+    "styles": [
+      "book.css",
+      "batch.css"
+    ],
+    "initializers": [
+      "glossary",
+      "pronunciation-index",
+      "ab1-unit-translations",
+      "ab1-unit-audio",
+      "ab2-artwork-text",
+      "selection-units",
+      "gapfill-pronunciation-index",
+      "meanings",
+      "ab2"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true
+  },
+  "ab3.html": {
+    "slug": "ab3",
+    "title": "Menschen · Arbeitsbuch A1.1 · Lektion 3",
+    "reader": true,
+    "themes": true,
+    "styles": [
+      "book.css",
+      "batch.css"
+    ],
+    "initializers": [
+      "glossary",
+      "pronunciation-index",
+      "ab1-unit-translations",
+      "ab1-unit-audio",
+      "ab3-artwork-text",
+      "selection-units",
+      "gapfill-pronunciation-index",
+      "meanings",
+      "ab3"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true
+  },
+  "ab4-6.html": {
+    "slug": "ab4-6",
+    "title": "Menschen · Arbeitsbuch Lektion 4–6",
+    "reader": true,
+    "themes": true,
+    "styles": [
+      "book.css"
+    ],
+    "initializers": [
+      "glossary",
+      "batch-glossary",
+      "ab46-glossary",
+      "batch-sentences",
+      "ab46-sentences",
+      "pronunciation-index",
+      "batch-pronunciation-index",
+      "ab46-pronunciation-index",
+      "gapfill-pronunciation-index",
+      "meanings",
+      "ab46"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true
+  },
+  "abm1.html": {
+    "slug": "abm1",
+    "title": "Menschen · Arbeitsbuch A1.1 · Lektion 3",
+    "reader": true,
+    "themes": true,
+    "styles": [
+      "book.css",
+      "batch.css"
+    ],
+    "initializers": [
+      "glossary",
+      "pronunciation-index",
+      "ab1-unit-translations",
+      "ab1-unit-audio",
+      "abm1-artwork-text",
+      "selection-units",
+      "gapfill-pronunciation-index",
+      "meanings",
+      "abm1"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true
+  },
+  "index.html": {
+    "slug": "index",
+    "title": "Menschen · Lektion 1",
+    "reader": true,
+    "themes": true,
+    "styles": [
+      "book.css",
+      "batch.css"
+    ],
+    "initializers": [
+      "glossary",
+      "pronunciation-index",
+      "selection-units",
+      "artwork-text",
+      "unit-translations",
+      "unit-audio",
+      "gapfill-pronunciation-index",
+      "meanings",
+      "book"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true
+  },
+  "kb-a12-l13-16.html": {
+    "slug": "kb-a12-l13-16",
+    "title": "Menschen A1.2 · Lektion 13–16",
+    "reader": true,
+    "themes": true,
+    "styles": [
+      "book.css",
+      "batch.css",
+      "kb-a12-l13-16.css"
+    ],
+    "initializers": [
+      "glossary",
+      "kb-a12-glossary",
+      "kb-a12-sentences",
+      "pronunciation-index",
+      "kb-a12-pronunciation-index",
+      "gapfill-pronunciation-index",
+      "meanings",
+      "kb-a12-l13-16"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true
+  },
+  "kb-a12-l17-20.html": {
+    "slug": "kb-a12-l17-20",
+    "title": "Menschen A1.2 · Lektion 17–20",
+    "reader": true,
+    "themes": true,
+    "styles": [
+      "book.css",
+      "batch.css",
+      "kb-a12-l17-20.css"
+    ],
+    "initializers": [
+      "glossary",
+      "kb-a12-l17-20-glossary",
+      "kb-a12-l17-20-sentences",
+      "kb-a12-l17-20-pronunciation-index",
+      "gapfill-pronunciation-index",
+      "meanings",
+      "kb-a12-l17-20"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true
+  },
+  "kb-a12-original-viewer.html": {
+    "slug": "kb-a12-original-viewer",
+    "title": "Originalbuch",
+    "reader": false,
+    "themes": false,
+    "styles": [],
+    "initializers": [
+      "kb-a12-original-viewer-inline-0"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": false
+  },
+  "l10-12.html": {
+    "slug": "l10-12",
+    "title": "Menschen · Lektion 10–12",
+    "reader": true,
+    "themes": true,
+    "styles": [
+      "book.css",
+      "batch.css",
+      "batch-l10-12.css"
+    ],
+    "initializers": [
+      "glossary",
+      "batch-glossary",
+      "batch-glossary-l10-12",
+      "batch-sentences",
+      "batch-sentences-l10-12",
+      "pronunciation-index",
+      "batch-pronunciation-index",
+      "batch-pronunciation-index-l10-12",
+      "gapfill-pronunciation-index",
+      "meanings",
+      "batch-l10-12"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true
+  },
+  "l2-3.html": {
+    "slug": "l2-3",
+    "title": "Menschen · Lektion 2–3",
+    "reader": true,
+    "themes": true,
+    "styles": [
+      "book.css",
+      "batch.css"
+    ],
+    "initializers": [
+      "glossary",
+      "batch-glossary",
+      "batch-sentences",
+      "pronunciation-index",
+      "batch-pronunciation-index",
+      "selection-units",
+      "artwork-text",
+      "unit-translations",
+      "unit-audio",
+      "gapfill-pronunciation-index",
+      "meanings",
+      "batch"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true
+  },
+  "l21-24.html": {
+    "slug": "l21-24",
+    "title": "Menschen · A1.2 · Lektion 21-24 & Aktionsseiten",
+    "reader": true,
+    "themes": true,
+    "styles": [
+      "book.css",
+      "batch-l21-24.css"
+    ],
+    "initializers": [
+      "glossary",
+      "batch-glossary-l21-24",
+      "batch-sentences-l21-24",
+      "pronunciation-index",
+      "batch-pronunciation-index-l21-24",
+      "selection-units",
+      "artwork-text",
+      "unit-translations",
+      "unit-audio",
+      "batch-unit-audio-l21-24",
+      "batch-selection-units-l21-24",
+      "batch-unit-arabic-l21-24",
+      "gapfill-pronunciation-index",
+      "meanings",
+      "batch-l21-24"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true
+  },
+  "l4-6.html": {
+    "slug": "l4-6",
+    "title": "Menschen · Lektion 4–6",
+    "reader": true,
+    "themes": true,
+    "styles": [
+      "book.css",
+      "batch.css",
+      "l4-6.css"
+    ],
+    "initializers": [
+      "glossary",
+      "batch-glossary-46",
+      "batch-sentences-46",
+      "pronunciation-index",
+      "batch-pronunciation-index-46",
+      "gapfill-pronunciation-index",
+      "meanings",
+      "batch-l46"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true
+  },
+  "l7-9.html": {
+    "slug": "l7-9",
+    "title": "Menschen · Lektion 7–9",
+    "reader": true,
+    "themes": true,
+    "styles": [
+      "book.css",
+      "batch.css",
+      "batch79.css"
+    ],
+    "initializers": [
+      "glossary",
+      "batch-glossary",
+      "batch-sentences",
+      "batch79-glossary",
+      "batch79-sentences",
+      "pronunciation-index",
+      "batch-pronunciation-index",
+      "batch79-pronunciation-index",
+      "gapfill-pronunciation-index",
+      "meanings",
+      "batch79"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true
+  },
+  "original-l21-24.html": {
+    "slug": "original-l21-24",
+    "title": "Originalbuch",
+    "reader": false,
+    "themes": false,
+    "styles": [],
+    "initializers": [
+      "original-l21-24-inline-0"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": false
+  },
+  "original-viewer-a12.html": {
+    "slug": "original-viewer-a12",
+    "title": "Originalbuch",
+    "reader": false,
+    "themes": false,
+    "styles": [],
+    "initializers": [
+      "original-viewer-a12-inline-0"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": false
+  },
+  "original-viewer-ab.html": {
+    "slug": "original-viewer-ab",
+    "title": "Originalbuch",
+    "reader": false,
+    "themes": false,
+    "styles": [],
+    "initializers": [
+      "original-viewer-ab-inline-0"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": false
+  },
+  "original-viewer.html": {
+    "slug": "original-viewer",
+    "title": "Originalbuch",
+    "reader": false,
+    "themes": false,
+    "styles": [],
+    "initializers": [
+      "original-viewer-inline-0"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": false
+  }
+}
