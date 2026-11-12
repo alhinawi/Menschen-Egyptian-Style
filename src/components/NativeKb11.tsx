@@ -1,3 +1,4 @@
+import {LineMatching} from '../exercises/LineMatching';
 import {ClipMarkers} from './ClipMarkers';
 import {useLayoutEffect,useRef,useState} from 'react';
 import type {CSSProperties} from 'react';
@@ -35,6 +36,7 @@ function Inner({data}:{data:NativePage}){
     if(f.kind==='checkbox')return <input {...common} type="checkbox" checked={v[f.id]==='true'} onChange={e=>set(f.id,String(e.target.checked))}/>;
     if(f.kind==='select')return <select {...common} style={{...pos(f.x,f.y,f.w,f.h),fontSize:Math.min(f.h*0.72,22)/W*100+'cqw'}} value={v[f.id]||''} onChange={e=>set(f.id,e.target.value)}><option value=""/>{f.options?.map(o=><option key={o.value} value={o.value}>{o.label}</option>)}</select>;
     return <input {...common} type="text" autoComplete="off" maxLength={f.maxlen||undefined} inputMode={f.maxlen===1?"numeric":undefined} value={v[f.id]||''} onChange={e=>set(f.id,e.target.value)} style={{...pos(f.x,f.y,f.w,f.h),fontSize:Math.min(f.h*0.8,22)/W*100+'cqw'}}/>})}
+   {String(data.page)==='14'&&<><div className="nkbMatchingMask" style={{...pos(180,321,325,91),background:'#fff',position:'absolute',zIndex:8}}/><LineMatching id="task2a" left={['Ich bin','Ich arbeite als','Ich arbeite bei']} right={['Journalistin.','X-Media.','Historikerin.']} values={v} onMatch={set} leftX={184} rightX={365} leftWidth={135} rightWidth={140} ys={[330,356,382]} width={W} height={H} fontSize={21} example={[0,2]}/><div className="nkbCheck" style={{left:'53%',top:'25.5%'}}><button onClick={()=>setRes(r=>({...r,task2a:v['task2a-1']==='0'&&v['task2a-2']==='1'}))}>Prüfen ✓</button><output>{res.task2a===undefined?'':res.task2a?'✓ Richtig!':'Noch einmal'}</output></div></>}
    <ClipMarkers book="kb-a11" page={data.page}/>
    {data.audio.map(a=><button key={a.id} data-audio-src={a.src} className="nkbListen" style={pos(a.x,a.y,a.w,a.h)} aria-label={a.label||('Originalaudio '+a.id)} onClick={()=>play(a.id)}/>)}
    {groups.map(g=><div key={g} className={"nkbCheck"+(data.compact?.includes(g)?" nkbCompact":"")} style={checkPos(g)}><button onClick={()=>grade(g)}>Prüfen ✓</button><output>{data.fields.filter(f=>f.group===g&&f.answer!==undefined).every(f=>res[f.id]!==undefined)?(data.fields.filter(f=>f.group===g&&f.answer!==undefined).every(f=>res[f.id])?'✓ Richtig!':'Noch einmal'):''}</output></div>)}
