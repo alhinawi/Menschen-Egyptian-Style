@@ -342,5 +342,62 @@ export function NativeAB12({page}:{page:string}){
   {text(811,1384,160,'neunundfünfzig  |  59','naFooter')}
   {art('modul-tab',1008,1384,64,30)}
  </>}
+ {page==='65'&&<>
+  {art('lesson-tab',973,55,99,68)}
+  <div className="naText naHeadline" style={{left:104,top:84,width:290,fontSize:27.5,letterSpacing:2.2}}><Words text="LERNWORTSCHATZ"/></div>
+  <div className="naHeadRule" style={{left:396,top:111,width:509,borderBottom:'2px solid #8b2a78'}}/>
+  {title('1',100,160,700,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naPB')}
+  {text(144,195,160,'Im Haushalt','naBold')}
+  {text(531,197,240,'Weitere wichtige Wörter','naBold')}
+  {text(144,223,160,'Abfall der, ¨e','naS21')}{field('65-1-l1',316,221,189,'Abfall der, ¨e übersetzen')}
+  {text(144,249,160,'Boden der, ¨','naS21')}{field('65-1-l2',316,247,189,'Boden der, ¨ übersetzen')}
+  {text(144,274,160,'Geschirr das','naS21')}{field('65-1-l3',327,273,178,'Geschirr das übersetzen')}
+  {text(144,300,160,'Haushalt der','naS21')}{field('65-1-l4',345,299,160,'Haushalt der übersetzen')}
+  {text(144,326,160,'Ordnung die /','naS21')}
+  {text(156,352,160,'Unordnung die','naS21')}{field('65-1-l5',319,350,186,'Ordnung Unordnung übersetzen')}
+  {text(144,376,160,'Spülmaschine','naS21')}
+  {text(155,404,80,'die, -n','naS21')}{field('65-1-l6',345,402,160,'Spülmaschine die, -n übersetzen')}
+  {text(154,432,360,'CH: Abwaschmaschine die, -n','naGray naS20')}
+  {text(144,455,160,'Wäsche die','naS21')}{field('65-1-l7',315,453,190,'Wäsche die übersetzen')}
+  {text(144,494,200,'ab·trocknen, hat','naS21')}
+  {text(155,517,160,'abgetrocknet','naS21')}{field('65-1-l8',315,518,190,'abtrocknen übersetzen')}
+  {text(144,545,200,'ab·waschen, hat','naS21')}
+  {text(155,569,160,'abgewaschen','naS21')}{field('65-1-l9',342,570,163,'abwaschen übersetzen')}
+  {text(143,597,230,'spülen, hat gespült','naS21')}
+  {text(155,623,170,'Geschirr spülen','naS21')}{field('65-1-l10',322,621,183,'spülen übersetzen')}
+  {text(154,652,430,'CH: den Abwasch machen oder abwaschen','naGray naS19')}
+  {text(143,675,190,'waschen, hat','naS21')}
+  {text(153,700,160,'gewaschen')}{field('65-1-l11',314,698,191,'waschen übersetzen')}
+  {text(143,739,160,'ordentlich','naS21')}{field('65-1-l12',314,737,191,'ordentlich übersetzen')}
+  {text(143,765,160,'sauber','naS21')}{field('65-1-l13',314,763,191,'sauber übersetzen')}
+  {text(143,791,160,'schmutzig','naS21')}{field('65-1-l14',315,789,190,'schmutzig übersetzen')}
+  {text(531,225,150,'Anruf der, -e')}{field('65-1-r1',675,222,197,'Anruf der, -e übersetzen')}
+  {text(531,250,200,'Anrufbeantworter')}
+  {text(542,277,80,'der, -')}{field('65-1-r2',675,274,197,'Anrufbeantworter der, - übersetzen')}
+  {text(531,303,150,'Antwort die,')}
+  {text(542,329,60,'-en')}{field('65-1-r3',675,326,197,'Antwort die, -en übersetzen')}
+  {text(532,353,150,'Brief der, -e')}{field('65-1-r4',675,351,197,'Brief der, -e übersetzen')}
+  {text(531,379,150,'Größe die, -n')}{field('65-1-r5',675,377,197,'Größe die, -n übersetzen')}
+  {text(532,405,150,'Information die,')}
+  {text(542,437,60,'-en')}{field('65-1-r6',675,429,197,'Information die, -en übersetzen')}
+  {text(531,470,120,'auf sein')}{field('65-1-r7',675,467,197,'auf sein übersetzen')}
+  {text(542,497,150,'CH: offen sein','naGray')}
+  {text(531,522,150,'hassen, hat')}
+  {text(541,545,120,'gehasst')}{field('65-1-r8',675,545,197,'hassen übersetzen')}
+  {text(530,573,190,'zu·machen, hat')}
+  {text(542,599,120,'zugemacht')}{field('65-1-r9',675,596,197,'zumachen übersetzen')}
+  {text(531,637,120,'fertig')}{field('65-1-r10',675,635,197,'fertig übersetzen')}
+  {text(530,668,120,'ganz')}{field('65-1-r11',675,660,197,'ganz übersetzen')}
+  {text(530,689,120,'schnell')}{field('65-1-r12',675,686,197,'schnell übersetzen')}
+  {art('tipp',313,837,295,52)}
+  {text(347,844,255,'Suchen Sie Wörter mit gleicher','naSmall')}
+  {text(347,867,255,'oder ähnlicher Bedeutung.','naSmall')}
+  {art('handwriting',640,805,155,40)}
+  {title('2',98,921,760,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naPB')}
+  {[956,982,1008,1034,1060,1085,1111,1137,1163,1189,1215,1240,1266,1292,1317].map((y,i)=>field('65-2-'+(i+1),140,y,730,'Notizzeile '+(i+1)))}
+  {art('strip',908,128,164,1243)}
+  {text(803,1384,180,'fünfundsechzig \u00a0|\u00a0 65','naFooter')}
+  {art('modul-tab',992,1388,80,27)}
+ </>}
  </div><audio ref={player} className="naPlayer"/></div>;
 }
