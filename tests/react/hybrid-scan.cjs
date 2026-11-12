@@ -38,7 +38,12 @@ const server=http.createServer((req,res)=>{
   assert.equal(await h.locator('input').count(),data.fields.length);
   const ratio=await h.locator('img').evaluate(i=>{const r=i.getBoundingClientRect();return Math.abs(r.width/r.height-i.naturalWidth/i.naturalHeight)});
   assert(ratio<0.001,'scan aspect ratio changed');
-  for(const f of data.fields.filter(f=>f.answer==='true'))await h.locator('[data-field-id="'+f.id+'"]').check({force:true});
+  for(const f of data.fields.filter(f=>f.answer==='true')){
+   const field=h.locator('[data-field-id="'+f.id+'"]');await field.scrollIntoViewIfNeeded();
+   assert(await field.evaluate(e=>{const r=e.getBoundingClientRect();return document.elementFromPoint(r.x+r.width/2,r.y+r.height/2)===e}),`${width}px ${f.id}: fixed bar blocks the radio`);
+   await field.check();
+  }
+  if(width===550)await p.screenshot({path:'/tmp/fidelity/radio-fixed-550.png'});
   for(const button of await h.locator('.hybridCheck button').all()){await button.evaluate(e=>e.scrollIntoView({block:'center'}));await button.click();}
   for(const text of await h.locator('output').allTextContents())assert.equal(text,'✓ Richtig!');
   await h.locator('[data-field-id=a-flughafen]').check({force:true});

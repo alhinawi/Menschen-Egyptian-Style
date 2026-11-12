@@ -667,3 +667,8 @@ body.readerSplitControls .controls{min-height:56px;flex-wrap:nowrap;gap:5px}
 body.readerSplitControls .controls .translationControls button{padding:5px 7px;font-size:11px}
 body.readerSplitControls .controls .themesTrigger{padding:5px 7px;font-size:11px}
 html[data-theme="dark"] .readerPageNavigation{background:var(--night-paper,#202a25);border-color:#718276}
+
+/* Native focus/scroll-to-field must account for the fixed reader bars. */
+html:has(body.readerSplitControls){scroll-padding-top:calc(var(--reader-header-height,60px) + 60px);scroll-padding-bottom:calc(var(--reader-controls-height,56px) + 24px)}
+body.readerSplitControls #viewport{scroll-padding-top:calc(var(--reader-header-height,60px) + 60px);scroll-padding-bottom:calc(var(--reader-controls-height,56px) + 24px)}
+body.readerSplitControls .page :is(input,select,textarea,button){scroll-margin-block:8px}
