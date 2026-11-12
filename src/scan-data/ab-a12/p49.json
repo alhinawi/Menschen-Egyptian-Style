@@ -1595,13 +1595,163 @@
    "h": 12
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p49-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "nach",
+   "x": 490,
+   "y": 244,
+   "w": 120,
+   "h": 22
+  },
+  {
+   "id": "p49-1c1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c1",
+   "answer": "für",
+   "x": 252,
+   "y": 295,
+   "w": 112,
+   "h": 22
+  },
+  {
+   "id": "p49-1c2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c2",
+   "answer": "am",
+   "x": 626,
+   "y": 296,
+   "w": 107,
+   "h": 22
+  },
+  {
+   "id": "p49-1d1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d1",
+   "answer": "vor",
+   "x": 488,
+   "y": 326,
+   "w": 120,
+   "h": 22
+  },
+  {
+   "id": "p49-1d2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d2",
+   "answer": "um",
+   "x": 240,
+   "y": 348,
+   "w": 122,
+   "h": 22
+  },
+  {
+   "id": "p49-3-1",
+   "group": "g2",
+   "kind": "text",
+   "label": "3 Lücke 1",
+   "answer": "willst",
+   "x": 428,
+   "y": 796,
+   "w": 117,
+   "h": 22
+  },
+  {
+   "id": "p49-3-2",
+   "group": "g2",
+   "kind": "text",
+   "label": "3 Lücke 2",
+   "answer": "will",
+   "x": 540,
+   "y": 822,
+   "w": 90,
+   "h": 22
+  },
+  {
+   "id": "p49-3-3",
+   "group": "g2",
+   "kind": "text",
+   "label": "3 Lücke 3",
+   "answer": "wollen",
+   "x": 326,
+   "y": 848,
+   "w": 119,
+   "h": 22
+  },
+  {
+   "id": "p49-3-4",
+   "group": "g2",
+   "kind": "text",
+   "label": "3 Lücke 4",
+   "answer": "wollen",
+   "x": 481,
+   "y": 925,
+   "w": 119,
+   "h": 22
+  },
+  {
+   "id": "p49-4b",
+   "group": "g3",
+   "kind": "text",
+   "label": "4 b",
+   "answer": "ich soll die Handtücher in Zimmer 311 bringen.",
+   "x": 553,
+   "y": 1269,
+   "w": 413,
+   "h": 22
+  },
+  {
+   "id": "p49-4c",
+   "group": "g3",
+   "kind": "text",
+   "label": "4 c",
+   "answer": "ich soll für Frau Holler einen Termin beim Friseur vereinbaren.",
+   "x": 553,
+   "y": 1297,
+   "w": 413,
+   "h": 22
+  },
+  {
+   "id": "p49-4d",
+   "group": "g3",
+   "kind": "text",
+   "label": "4 d",
+   "answer": "ich soll Ordnung in Zimmer 235 machen.",
+   "x": 553,
+   "y": 1323,
+   "w": 413,
+   "h": 22
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 3"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 4"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the official Hueber Loesungsschluessel AB A1.2 (Wiederholungsstation Grammatik, L16-18).",
+   "Ex 2 (ohne/mit + article, split blanks) is not mapped. Ex 4: key line for b reads 'Zimmer in 311' (typo); the page says 'Zimmer 311', so the page wording is used.",
+   "Handwritten examples are not fields. Boxes placed from word coordinates; not marked verified."
+  ],
   "verifiedWords": 227,
-  "totalWords": 227,
-  "notes": []
+  "totalWords": 227
  }
 }
