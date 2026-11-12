@@ -19,6 +19,8 @@ def build(p):
     # dark scanner border connected to the image edge is not part of the page
     dark=lum<95;dl,dn=ndi.label(dark);edge=set(np.unique(np.concatenate([dl[0],dl[-1],dl[:,0],dl[:,-1]])))-{0}
     paper0=np.median(a.reshape(-1,3),axis=0)
+    _pf=f'{ROOT}/src/native-kb11/overrides/p{p}.json'
+    if os.path.exists(_pf) and json.load(open(_pf)).get('paper0'):paper0=np.array(json.load(open(_pf))['paper0'],dtype=float)
     for i in edge:
         m=dl==i
         if False:work[ndi.binary_dilation(m,iterations=6)]=paper0
