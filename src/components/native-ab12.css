@@ -5,7 +5,7 @@
 .naCanvas .naSmall{font-size:18px}
 .naCanvas .naCenter{text-align:center}
 .naCanvas .naArt{position:absolute;object-fit:contain!important;max-width:none!important;max-height:none!important;margin:0!important;border:0!important;display:block}
-.naCanvas .naTitle{position:absolute;font:bold 23px/1.25 Arial,sans-serif;display:block}
+.naCanvas .naTitle{position:absolute;font:bold 23px/1.25 FiraSans,'Trebuchet MS',sans-serif;display:block}
 .naTitle>b{display:inline-block;margin-right:12px;background:#2a4f9e;color:#fff;min-width:34px;height:27px;text-align:center;font:bold 24px/27px Georgia}
 .naCanvas .naField{position:absolute;height:27px!important;min-width:0!important;min-height:0!important;max-width:none!important;box-sizing:border-box;font:20px 'Times New Roman'!important;background:transparent!important;border:0!important;border-bottom:1.5px solid #9aa3ab!important;border-radius:0!important;margin:0!important;padding:0 2px!important;color:#224777!important;z-index:3}
 .naCanvas .naRule{position:absolute;height:0;border-bottom:1.5px solid #9aa3ab}
@@ -29,7 +29,7 @@
 .naCanvas .naTitle{font-size:23px}
 .naCanvas .naTitle.naGB b{background:#a6ca03}
 .naCanvas .naKB{position:absolute;font:bold 13px Arial,sans-serif;color:#4357ad}
-.naCanvas .naOpt{color:#335b98;font-family:Verdana,sans-serif;font-size:15px;letter-spacing:0}
+.naCanvas .naOpt{color:#335b98;font-family:FiraSans,'Trebuchet MS',sans-serif;font-size:15px;letter-spacing:0}
 .naCanvas .naStrike{text-decoration:line-through}
 .naCanvas .naSq{position:absolute;color:#4357ad;font-size:21px}
 .naCanvas .naTri{position:absolute;color:#7ab317;font-size:21px}
