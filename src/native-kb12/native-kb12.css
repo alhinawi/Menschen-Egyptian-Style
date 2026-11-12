@@ -8,3 +8,5 @@
 .nkCanvas .nkRoute{position:absolute;z-index:2;touch-action:none}.nkCanvas .nkDrawTools{position:absolute;display:flex;gap:10px;z-index:4}.nkDrawTools button{font:16px Arial;padding:5px 8px;border:1px solid #8ba5b3;background:#fafdf9;min-height:30px}
 
 .nkCanvas .nkSide{font:12px Arial;writing-mode:vertical-rl;transform:rotate(180deg);color:#5b5d39}.nkCanvas .nkCommunication{font-size:18.5px}.nkCanvas .nkCommunication section{margin-bottom:10px}
+
+.nkCanvas .nkCompact{font-size:20px;line-height:1.15}.nkCanvas .nkAside{font-size:16px;line-height:1.17}
