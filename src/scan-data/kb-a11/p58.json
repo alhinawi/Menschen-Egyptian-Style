@@ -1,0 +1,2115 @@
+{
+  "book": "kb-a11",
+  "page": 58,
+  "image": "assets/kb-a11-p58.png",
+  "width": 1075,
+  "height": 1521,
+  "words": [
+    {
+      "text": "Bahnhof",
+      "x": 97,
+      "y": 191,
+      "w": 47,
+      "h": 11
+    },
+    {
+      "text": "Flughafen",
+      "x": 229,
+      "y": 190,
+      "w": 56,
+      "h": 15
+    },
+    {
+      "text": "S-Bahn",
+      "x": 370,
+      "y": 190,
+      "w": 39,
+      "h": 10
+    },
+    {
+      "text": "Taxi",
+      "x": 510,
+      "y": 190,
+      "w": 21,
+      "h": 10
+    },
+    {
+      "text": "Bus",
+      "x": 637,
+      "y": 189,
+      "w": 18,
+      "h": 9
+    },
+    {
+      "text": "Zug",
+      "x": 767,
+      "y": 188,
+      "w": 21,
+      "h": 13
+    },
+    {
+      "text": "Straßenbahn",
+      "x": 873,
+      "y": 186,
+      "w": 72,
+      "h": 11
+    },
+    {
+      "text": "U-Bahn",
+      "x": 991,
+      "y": 185,
+      "w": 40,
+      "h": 10
+    },
+    {
+      "text": "Ich",
+      "x": 195,
+      "y": 263,
+      "w": 26,
+      "h": 16
+    },
+    {
+      "text": "bin",
+      "x": 231,
+      "y": 263,
+      "w": 28,
+      "h": 16
+    },
+    {
+      "text": "jetzt",
+      "x": 266,
+      "y": 263,
+      "w": 47,
+      "h": 22
+    },
+    {
+      "text": "Hören",
+      "x": 196,
+      "y": 303,
+      "w": 49,
+      "h": 14
+    },
+    {
+      "text": "Sie",
+      "x": 252,
+      "y": 303,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "und",
+      "x": 283,
+      "y": 302,
+      "w": 30,
+      "h": 15
+    },
+    {
+      "text": "ordnen",
+      "x": 321,
+      "y": 302,
+      "w": 58,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 386,
+      "y": 302,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "die",
+      "x": 417,
+      "y": 301,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "Fotos",
+      "x": 450,
+      "y": 302,
+      "w": 44,
+      "h": 14
+    },
+    {
+      "text": "den",
+      "x": 501,
+      "y": 301,
+      "w": 29,
+      "h": 15
+    },
+    {
+      "text": "Sätzen",
+      "x": 537,
+      "y": 301,
+      "w": 55,
+      "h": 14
+    },
+    {
+      "text": "in",
+      "x": 601,
+      "y": 301,
+      "w": 14,
+      "h": 14
+    },
+    {
+      "text": "b",
+      "x": 623,
+      "y": 300,
+      "w": 9,
+      "h": 15
+    },
+    {
+      "text": "zu",
+      "x": 639,
+      "y": 306,
+      "w": 24,
+      "h": 9
+    },
+    {
+      "text": "Was",
+      "x": 194,
+      "y": 341,
+      "w": 33,
+      "h": 14
+    },
+    {
+      "text": "ist",
+      "x": 235,
+      "y": 341,
+      "w": 20,
+      "h": 14
+    },
+    {
+      "text": "richtig",
+      "x": 263,
+      "y": 340,
+      "w": 64,
+      "h": 20
+    },
+    {
+      "text": "Kreuzen",
+      "x": 335,
+      "y": 341,
+      "w": 66,
+      "h": 14
+    },
+    {
+      "text": "Sie",
+      "x": 408,
+      "y": 340,
+      "w": 23,
+      "h": 14
+    },
+    {
+      "text": "an",
+      "x": 439,
+      "y": 344,
+      "w": 24,
+      "h": 10
+    },
+    {
+      "text": "Foto",
+      "x": 819,
+      "y": 348,
+      "w": 27,
+      "h": 10
+    },
+    {
+      "text": "Der",
+      "x": 218,
+      "y": 380,
+      "w": 29,
+      "h": 14
+    },
+    {
+      "text": "Mann",
+      "x": 253,
+      "y": 380,
+      "w": 49,
+      "h": 13
+    },
+    {
+      "text": "telefoniert",
+      "x": 309,
+      "y": 377,
+      "w": 91,
+      "h": 16
+    },
+    {
+      "text": "mit",
+      "x": 407,
+      "y": 378,
+      "w": 29,
+      "h": 14
+    },
+    {
+      "text": "seiner",
+      "x": 477,
+      "y": 378,
+      "w": 52,
+      "h": 14
+    },
+    {
+      "text": "Tochter",
+      "x": 535,
+      "y": 376,
+      "w": 68,
+      "h": 16
+    },
+    {
+      "text": "seiner",
+      "x": 644,
+      "y": 377,
+      "w": 52,
+      "h": 14
+    },
+    {
+      "text": "Mutter",
+      "x": 703,
+      "y": 377,
+      "w": 63,
+      "h": 13
+    },
+    {
+      "text": "Der",
+      "x": 219,
+      "y": 405,
+      "w": 29,
+      "h": 14
+    },
+    {
+      "text": "Mann",
+      "x": 254,
+      "y": 404,
+      "w": 42,
+      "h": 14
+    },
+    {
+      "text": "ist",
+      "x": 300,
+      "y": 404,
+      "w": 30,
+      "h": 14
+    },
+    {
+      "text": "zu",
+      "x": 368,
+      "y": 404,
+      "w": 23,
+      "h": 14
+    },
+    {
+      "text": "Hause",
+      "x": 397,
+      "y": 403,
+      "w": 47,
+      "h": 15
+    },
+    {
+      "text": "bei",
+      "x": 498,
+      "y": 402,
+      "w": 26,
+      "h": 15
+    },
+    {
+      "text": "Verena",
+      "x": 529,
+      "y": 403,
+      "w": 64,
+      "h": 14
+    },
+    {
+      "text": "Der",
+      "x": 219,
+      "y": 430,
+      "w": 28,
+      "h": 14
+    },
+    {
+      "text": "Mann",
+      "x": 254,
+      "y": 430,
+      "w": 50,
+      "h": 13
+    },
+    {
+      "text": "steigt",
+      "x": 309,
+      "y": 429,
+      "w": 47,
+      "h": 16
+    },
+    {
+      "text": "in",
+      "x": 397,
+      "y": 428,
+      "w": 18,
+      "h": 14
+    },
+    {
+      "text": "die",
+      "x": 420,
+      "y": 426,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "U-Bahn",
+      "x": 452,
+      "y": 427,
+      "w": 63,
+      "h": 15
+    },
+    {
+      "text": "in",
+      "x": 556,
+      "y": 428,
+      "w": 18,
+      "h": 14
+    },
+    {
+      "text": "die",
+      "x": 579,
+      "y": 428,
+      "w": 25,
+      "h": 14
+    },
+    {
+      "text": "S-Bahn",
+      "x": 610,
+      "y": 426,
+      "w": 62,
+      "h": 16
+    },
+    {
+      "text": "ein",
+      "x": 693,
+      "y": 427,
+      "w": 32,
+      "h": 14
+    },
+    {
+      "text": "Der",
+      "x": 219,
+      "y": 456,
+      "w": 29,
+      "h": 14
+    },
+    {
+      "text": "Mann",
+      "x": 254,
+      "y": 455,
+      "w": 49,
+      "h": 14
+    },
+    {
+      "text": "kommt",
+      "x": 309,
+      "y": 453,
+      "w": 60,
+      "h": 16
+    },
+    {
+      "text": "in",
+      "x": 410,
+      "y": 453,
+      "w": 18,
+      "h": 15
+    },
+    {
+      "text": "München",
+      "x": 434,
+      "y": 452,
+      "w": 81,
+      "h": 16
+    },
+    {
+      "text": "in",
+      "x": 556,
+      "y": 453,
+      "w": 18,
+      "h": 15
+    },
+    {
+      "text": "Essen",
+      "x": 580,
+      "y": 452,
+      "w": 47,
+      "h": 15
+    },
+    {
+      "text": "an",
+      "x": 650,
+      "y": 457,
+      "w": 22,
+      "h": 10
+    },
+    {
+      "text": "A",
+      "x": 210,
+      "y": 497,
+      "w": 16,
+      "h": 18
+    },
+    {
+      "text": "B",
+      "x": 490,
+      "y": 495,
+      "w": 16,
+      "h": 18
+    },
+    {
+      "text": "C",
+      "x": 771,
+      "y": 493,
+      "w": 16,
+      "h": 18
+    },
+    {
+      "text": "Ich",
+      "x": 198,
+      "y": 679,
+      "w": 26,
+      "h": 16
+    },
+    {
+      "text": "steige",
+      "x": 233,
+      "y": 679,
+      "w": 57,
+      "h": 22
+    },
+    {
+      "text": "jetzt",
+      "x": 296,
+      "y": 679,
+      "w": 47,
+      "h": 16
+    },
+    {
+      "text": "in",
+      "x": 351,
+      "y": 679,
+      "w": 16,
+      "h": 16
+    },
+    {
+      "text": "die",
+      "x": 375,
+      "y": 678,
+      "w": 28,
+      "h": 16
+    },
+    {
+      "text": "U-Bahn",
+      "x": 413,
+      "y": 678,
+      "w": 66,
+      "h": 17
+    },
+    {
+      "text": "ein",
+      "x": 487,
+      "y": 678,
+      "w": 32,
+      "h": 16
+    },
+    {
+      "text": "Hören",
+      "x": 199,
+      "y": 719,
+      "w": 49,
+      "h": 14
+    },
+    {
+      "text": "Sie",
+      "x": 255,
+      "y": 718,
+      "w": 22,
+      "h": 15
+    },
+    {
+      "text": "noch",
+      "x": 281,
+      "y": 718,
+      "w": 45,
+      "h": 15
+    },
+    {
+      "text": "einmal",
+      "x": 332,
+      "y": 718,
+      "w": 55,
+      "h": 15
+    },
+    {
+      "text": "und",
+      "x": 199,
+      "y": 744,
+      "w": 30,
+      "h": 15
+    },
+    {
+      "text": "sortieren",
+      "x": 236,
+      "y": 744,
+      "w": 75,
+      "h": 14
+    },
+    {
+      "text": "Sie",
+      "x": 318,
+      "y": 744,
+      "w": 29,
+      "h": 15
+    },
+    {
+      "text": "Ja",
+      "x": 222,
+      "y": 783,
+      "w": 22,
+      "h": 16
+    },
+    {
+      "text": "dann",
+      "x": 251,
+      "y": 782,
+      "w": 44,
+      "h": 15
+    },
+    {
+      "text": "rufe",
+      "x": 301,
+      "y": 781,
+      "w": 34,
+      "h": 15
+    },
+    {
+      "text": "ich",
+      "x": 342,
+      "y": 781,
+      "w": 26,
+      "h": 15
+    },
+    {
+      "text": "dich",
+      "x": 374,
+      "y": 781,
+      "w": 36,
+      "h": 15
+    },
+    {
+      "text": "an",
+      "x": 223,
+      "y": 812,
+      "w": 25,
+      "h": 10
+    },
+    {
+      "text": "In",
+      "x": 224,
+      "y": 833,
+      "w": 18,
+      "h": 13
+    },
+    {
+      "text": "vierzig",
+      "x": 247,
+      "y": 833,
+      "w": 59,
+      "h": 20
+    },
+    {
+      "text": "Minuten",
+      "x": 312,
+      "y": 832,
+      "w": 73,
+      "h": 14
+    },
+    {
+      "text": "komme",
+      "x": 223,
+      "y": 857,
+      "w": 62,
+      "h": 15
+    },
+    {
+      "text": "ich",
+      "x": 291,
+      "y": 857,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "zu",
+      "x": 323,
+      "y": 862,
+      "w": 19,
+      "h": 10
+    },
+    {
+      "text": "Hause",
+      "x": 349,
+      "y": 858,
+      "w": 49,
+      "h": 13
+    },
+    {
+      "text": "an",
+      "x": 223,
+      "y": 888,
+      "w": 25,
+      "h": 10
+    },
+    {
+      "text": "Ja",
+      "x": 223,
+      "y": 910,
+      "w": 22,
+      "h": 16
+    },
+    {
+      "text": "den",
+      "x": 252,
+      "y": 908,
+      "w": 31,
+      "h": 15
+    },
+    {
+      "text": "Koffer",
+      "x": 290,
+      "y": 907,
+      "w": 51,
+      "h": 16
+    },
+    {
+      "text": "habe",
+      "x": 347,
+      "y": 907,
+      "w": 39,
+      "h": 15
+    },
+    {
+      "text": "ich",
+      "x": 393,
+      "y": 907,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "und",
+      "x": 224,
+      "y": 933,
+      "w": 33,
+      "h": 15
+    },
+    {
+      "text": "die",
+      "x": 263,
+      "y": 933,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "Tasche",
+      "x": 294,
+      "y": 933,
+      "w": 56,
+      "h": 15
+    },
+    {
+      "text": "auch",
+      "x": 356,
+      "y": 932,
+      "w": 45,
+      "h": 15
+    },
+    {
+      "text": "Nein",
+      "x": 224,
+      "y": 959,
+      "w": 45,
+      "h": 16
+    },
+    {
+      "text": "nein",
+      "x": 277,
+      "y": 959,
+      "w": 43,
+      "h": 16
+    },
+    {
+      "text": "ich",
+      "x": 327,
+      "y": 958,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "bin",
+      "x": 358,
+      "y": 957,
+      "w": 28,
+      "h": 15
+    },
+    {
+      "text": "noch",
+      "x": 224,
+      "y": 983,
+      "w": 41,
+      "h": 15
+    },
+    {
+      "text": "nicht",
+      "x": 272,
+      "y": 983,
+      "w": 45,
+      "h": 15
+    },
+    {
+      "text": "zu",
+      "x": 323,
+      "y": 988,
+      "w": 19,
+      "h": 9
+    },
+    {
+      "text": "Hause",
+      "x": 349,
+      "y": 984,
+      "w": 55,
+      "h": 13
+    },
+    {
+      "text": "Ergänzen",
+      "x": 480,
+      "y": 718,
+      "w": 76,
+      "h": 20
+    },
+    {
+      "text": "Sie",
+      "x": 563,
+      "y": 717,
+      "w": 29,
+      "h": 15
+    },
+    {
+      "text": "Hören",
+      "x": 601,
+      "y": 717,
+      "w": 49,
+      "h": 14
+    },
+    {
+      "text": "Sie",
+      "x": 479,
+      "y": 743,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "dann",
+      "x": 510,
+      "y": 742,
+      "w": 41,
+      "h": 15
+    },
+    {
+      "text": "noch",
+      "x": 559,
+      "y": 742,
+      "w": 38,
+      "h": 15
+    },
+    {
+      "text": "einmal",
+      "x": 605,
+      "y": 741,
+      "w": 61,
+      "h": 15
+    },
+    {
+      "text": "Achtung",
+      "x": 483,
+      "y": 781,
+      "w": 67,
+      "h": 20
+    },
+    {
+      "text": "Bahnsteig",
+      "x": 564,
+      "y": 780,
+      "w": 78,
+      "h": 20
+    },
+    {
+      "text": "Halt",
+      "x": 485,
+      "y": 806,
+      "w": 32,
+      "h": 15
+    },
+    {
+      "text": "Vorsicht",
+      "x": 530,
+      "y": 805,
+      "w": 65,
+      "h": 15
+    },
+    {
+      "text": "Am",
+      "x": 502,
+      "y": 845,
+      "w": 28,
+      "h": 13
+    },
+    {
+      "text": "2",
+      "x": 700,
+      "y": 844,
+      "w": 8,
+      "h": 13
+    },
+    {
+      "text": "fährt",
+      "x": 503,
+      "y": 868,
+      "w": 44,
+      "h": 16
+    },
+    {
+      "text": "gerade",
+      "x": 552,
+      "y": 868,
+      "w": 56,
+      "h": 21
+    },
+    {
+      "text": "die",
+      "x": 615,
+      "y": 868,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "U2",
+      "x": 646,
+      "y": 869,
+      "w": 21,
+      "h": 14
+    },
+    {
+      "text": "ein",
+      "x": 674,
+      "y": 868,
+      "w": 31,
+      "h": 15
+    },
+    {
+      "text": "Bitte",
+      "x": 504,
+      "y": 895,
+      "w": 39,
+      "h": 14
+    },
+    {
+      "text": "Nächster",
+      "x": 504,
+      "y": 919,
+      "w": 76,
+      "h": 15
+    },
+    {
+      "text": "Innsbrucker",
+      "x": 504,
+      "y": 944,
+      "w": 104,
+      "h": 15
+    },
+    {
+      "text": "Ring",
+      "x": 615,
+      "y": 944,
+      "w": 43,
+      "h": 20
+    },
+    {
+      "text": "Achtung",
+      "x": 503,
+      "y": 971,
+      "w": 60,
+      "h": 23
+    },
+    {
+      "text": "Bitte",
+      "x": 571,
+      "y": 970,
+      "w": 39,
+      "h": 14
+    },
+    {
+      "text": "zurück-",
+      "x": 617,
+      "y": 968,
+      "w": 64,
+      "h": 15
+    },
+    {
+      "text": "bleiben",
+      "x": 503,
+      "y": 994,
+      "w": 68,
+      "h": 15
+    },
+    {
+      "text": "Hören",
+      "x": 762,
+      "y": 716,
+      "w": 49,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 818,
+      "y": 715,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "noch",
+      "x": 849,
+      "y": 714,
+      "w": 39,
+      "h": 15
+    },
+    {
+      "text": "einmal",
+      "x": 895,
+      "y": 714,
+      "w": 55,
+      "h": 16
+    },
+    {
+      "text": "und",
+      "x": 959,
+      "y": 714,
+      "w": 29,
+      "h": 15
+    },
+    {
+      "text": "ergänzen",
+      "x": 761,
+      "y": 741,
+      "w": 76,
+      "h": 20
+    },
+    {
+      "text": "Sie",
+      "x": 844,
+      "y": 741,
+      "w": 29,
+      "h": 14
+    },
+    {
+      "text": "ein",
+      "x": 766,
+      "y": 780,
+      "w": 23,
+      "h": 14
+    },
+    {
+      "text": "an",
+      "x": 800,
+      "y": 780,
+      "w": 20,
+      "h": 16
+    },
+    {
+      "text": "fern",
+      "x": 835,
+      "y": 778,
+      "w": 28,
+      "h": 16
+    },
+    {
+      "text": "Ach",
+      "x": 784,
+      "y": 816,
+      "w": 36,
+      "h": 17
+    },
+    {
+      "text": "vielleicht",
+      "x": 827,
+      "y": 816,
+      "w": 81,
+      "h": 15
+    },
+    {
+      "text": "kaufe",
+      "x": 785,
+      "y": 841,
+      "w": 46,
+      "h": 15
+    },
+    {
+      "text": "ich",
+      "x": 838,
+      "y": 841,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "noch",
+      "x": 870,
+      "y": 841,
+      "w": 40,
+      "h": 15
+    },
+    {
+      "text": "was",
+      "x": 784,
+      "y": 872,
+      "w": 31,
+      "h": 10
+    },
+    {
+      "text": "Siehst",
+      "x": 785,
+      "y": 904,
+      "w": 51,
+      "h": 15
+    },
+    {
+      "text": "du",
+      "x": 842,
+      "y": 904,
+      "w": 21,
+      "h": 15
+    },
+    {
+      "text": "noch",
+      "x": 870,
+      "y": 904,
+      "w": 41,
+      "h": 15
+    },
+    {
+      "text": "ein",
+      "x": 785,
+      "y": 930,
+      "w": 20,
+      "h": 15
+    },
+    {
+      "text": "bisschen",
+      "x": 812,
+      "y": 930,
+      "w": 60,
+      "h": 15
+    },
+    {
+      "text": "Rufst",
+      "x": 786,
+      "y": 993,
+      "w": 44,
+      "h": 15
+    },
+    {
+      "text": "du",
+      "x": 836,
+      "y": 993,
+      "w": 21,
+      "h": 15
+    },
+    {
+      "text": "mich",
+      "x": 864,
+      "y": 992,
+      "w": 42,
+      "h": 15
+    },
+    {
+      "text": "morgen",
+      "x": 912,
+      "y": 997,
+      "w": 64,
+      "h": 16
+    },
+    {
+      "text": "mal",
+      "x": 786,
+      "y": 1018,
+      "w": 31,
+      "h": 15
+    },
+    {
+      "text": "Ergänzen",
+      "x": 201,
+      "y": 1072,
+      "w": 86,
+      "h": 21
+    },
+    {
+      "text": "Sie",
+      "x": 294,
+      "y": 1071,
+      "w": 33,
+      "h": 16
+    },
+    {
+      "text": "Hören",
+      "x": 337,
+      "y": 1071,
+      "w": 55,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 400,
+      "y": 1070,
+      "w": 27,
+      "h": 16
+    },
+    {
+      "text": "dann",
+      "x": 434,
+      "y": 1070,
+      "w": 46,
+      "h": 16
+    },
+    {
+      "text": "noch",
+      "x": 490,
+      "y": 1069,
+      "w": 44,
+      "h": 16
+    },
+    {
+      "text": "einmal",
+      "x": 542,
+      "y": 1069,
+      "w": 63,
+      "h": 17
+    },
+    {
+      "text": "und",
+      "x": 614,
+      "y": 1068,
+      "w": 35,
+      "h": 17
+    },
+    {
+      "text": "vergleichen",
+      "x": 656,
+      "y": 1068,
+      "w": 110,
+      "h": 23
+    },
+    {
+      "text": "Sie",
+      "x": 774,
+      "y": 1068,
+      "w": 33,
+      "h": 16
+    },
+    {
+      "text": "Notieren",
+      "x": 201,
+      "y": 1097,
+      "w": 73,
+      "h": 14
+    },
+    {
+      "text": "Sie",
+      "x": 280,
+      "y": 1097,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "auch",
+      "x": 311,
+      "y": 1096,
+      "w": 38,
+      "h": 15
+    },
+    {
+      "text": "die",
+      "x": 357,
+      "y": 1096,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "Infinitive",
+      "x": 390,
+      "y": 1096,
+      "w": 82,
+      "h": 15
+    },
+    {
+      "text": "an",
+      "x": 204,
+      "y": 1139,
+      "w": 17,
+      "h": 10
+    },
+    {
+      "text": "an",
+      "x": 237,
+      "y": 1140,
+      "w": 18,
+      "h": 10
+    },
+    {
+      "text": "ein",
+      "x": 269,
+      "y": 1135,
+      "w": 23,
+      "h": 14
+    },
+    {
+      "text": "ein",
+      "x": 307,
+      "y": 1135,
+      "w": 23,
+      "h": 14
+    },
+    {
+      "text": "fern",
+      "x": 345,
+      "y": 1134,
+      "w": 30,
+      "h": 15
+    },
+    {
+      "text": "kaufe",
+      "x": 392,
+      "y": 1133,
+      "w": 41,
+      "h": 15
+    },
+    {
+      "text": "komme",
+      "x": 448,
+      "y": 1133,
+      "w": 56,
+      "h": 15
+    },
+    {
+      "text": "rufe",
+      "x": 509,
+      "y": 1133,
+      "w": 40,
+      "h": 17
+    },
+    {
+      "text": "siehst",
+      "x": 564,
+      "y": 1133,
+      "w": 45,
+      "h": 15
+    },
+    {
+      "text": "steige",
+      "x": 623,
+      "y": 1133,
+      "w": 47,
+      "h": 19
+    },
+    {
+      "text": "Ich",
+      "x": 224,
+      "y": 1173,
+      "w": 26,
+      "h": 15
+    },
+    {
+      "text": "steige",
+      "x": 256,
+      "y": 1174,
+      "w": 42,
+      "h": 23
+    },
+    {
+      "text": "jetzt",
+      "x": 302,
+      "y": 1173,
+      "w": 39,
+      "h": 20
+    },
+    {
+      "text": "in",
+      "x": 347,
+      "y": 1173,
+      "w": 17,
+      "h": 14
+    },
+    {
+      "text": "die",
+      "x": 370,
+      "y": 1172,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "U-Bahn",
+      "x": 402,
+      "y": 1171,
+      "w": 63,
+      "h": 15
+    },
+    {
+      "text": "einsteigen",
+      "x": 740,
+      "y": 1169,
+      "w": 70,
+      "h": 21
+    },
+    {
+      "text": "In",
+      "x": 224,
+      "y": 1199,
+      "w": 18,
+      "h": 14
+    },
+    {
+      "text": "vierzig",
+      "x": 247,
+      "y": 1198,
+      "w": 58,
+      "h": 14
+    },
+    {
+      "text": "Minuten",
+      "x": 312,
+      "y": 1198,
+      "w": 74,
+      "h": 14
+    },
+    {
+      "text": "ich",
+      "x": 503,
+      "y": 1197,
+      "w": 26,
+      "h": 15
+    },
+    {
+      "text": "zu",
+      "x": 535,
+      "y": 1202,
+      "w": 19,
+      "h": 10
+    },
+    {
+      "text": "Hause",
+      "x": 561,
+      "y": 1198,
+      "w": 50,
+      "h": 14
+    },
+    {
+      "text": "Ja",
+      "x": 222,
+      "y": 1225,
+      "w": 23,
+      "h": 16
+    },
+    {
+      "text": "dann",
+      "x": 252,
+      "y": 1223,
+      "w": 43,
+      "h": 15
+    },
+    {
+      "text": "ich",
+      "x": 412,
+      "y": 1222,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "dich",
+      "x": 444,
+      "y": 1222,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "Ach",
+      "x": 223,
+      "y": 1249,
+      "w": 37,
+      "h": 17
+    },
+    {
+      "text": "vielleicht",
+      "x": 266,
+      "y": 1248,
+      "w": 81,
+      "h": 15
+    },
+    {
+      "text": "ich",
+      "x": 464,
+      "y": 1247,
+      "w": 26,
+      "h": 15
+    },
+    {
+      "text": "noch",
+      "x": 496,
+      "y": 1247,
+      "w": 42,
+      "h": 16
+    },
+    {
+      "text": "was",
+      "x": 543,
+      "y": 1252,
+      "w": 31,
+      "h": 10
+    },
+    {
+      "text": "du",
+      "x": 334,
+      "y": 1273,
+      "w": 22,
+      "h": 15
+    },
+    {
+      "text": "noch",
+      "x": 362,
+      "y": 1273,
+      "w": 41,
+      "h": 15
+    },
+    {
+      "text": "ein",
+      "x": 409,
+      "y": 1274,
+      "w": 27,
+      "h": 14
+    },
+    {
+      "text": "bisschen",
+      "x": 441,
+      "y": 1272,
+      "w": 73,
+      "h": 15
+    },
+    {
+      "text": "an",
+      "x": 230,
+      "y": 1327,
+      "w": 16,
+      "h": 14
+    },
+    {
+      "text": "rufen",
+      "x": 250,
+      "y": 1327,
+      "w": 44,
+      "h": 14
+    },
+    {
+      "text": "Ich",
+      "x": 347,
+      "y": 1326,
+      "w": 23,
+      "h": 14
+    },
+    {
+      "text": "rufe",
+      "x": 405,
+      "y": 1326,
+      "w": 31,
+      "h": 14
+    },
+    {
+      "text": "dich",
+      "x": 461,
+      "y": 1326,
+      "w": 33,
+      "h": 14
+    },
+    {
+      "text": "an",
+      "x": 536,
+      "y": 1330,
+      "w": 23,
+      "h": 10
+    },
+    {
+      "text": "Rufst",
+      "x": 406,
+      "y": 1347,
+      "w": 40,
+      "h": 15
+    },
+    {
+      "text": "du",
+      "x": 461,
+      "y": 1348,
+      "w": 19,
+      "h": 14
+    },
+    {
+      "text": "mich",
+      "x": 486,
+      "y": 1348,
+      "w": 37,
+      "h": 14
+    },
+    {
+      "text": "an",
+      "x": 537,
+      "y": 1348,
+      "w": 26,
+      "h": 13
+    },
+    {
+      "text": "Wann",
+      "x": 346,
+      "y": 1371,
+      "w": 44,
+      "h": 12
+    },
+    {
+      "text": "rufst",
+      "x": 410,
+      "y": 1369,
+      "w": 37,
+      "h": 14
+    },
+    {
+      "text": "du",
+      "x": 461,
+      "y": 1370,
+      "w": 20,
+      "h": 13
+    },
+    {
+      "text": "mich",
+      "x": 483,
+      "y": 1370,
+      "w": 42,
+      "h": 13
+    },
+    {
+      "text": "an",
+      "x": 537,
+      "y": 1370,
+      "w": 26,
+      "h": 13
+    },
+    {
+      "text": "auch",
+      "x": 230,
+      "y": 1392,
+      "w": 31,
+      "h": 14
+    },
+    {
+      "text": "so",
+      "x": 267,
+      "y": 1397,
+      "w": 17,
+      "h": 9
+    },
+    {
+      "text": "ein",
+      "x": 290,
+      "y": 1393,
+      "w": 22,
+      "h": 14
+    },
+    {
+      "text": "steigen",
+      "x": 316,
+      "y": 1393,
+      "w": 50,
+      "h": 14
+    },
+    {
+      "text": "fern",
+      "x": 385,
+      "y": 1393,
+      "w": 26,
+      "h": 14
+    },
+    {
+      "text": "sehen",
+      "x": 415,
+      "y": 1393,
+      "w": 45,
+      "h": 14
+    }
+  ],
+  "fields": [
+    {
+      "id": "f3a-1",
+      "group": "task3a",
+      "kind": "text",
+      "label": "3a: Der Mann telefoniert mit seiner Tochter. - Foto",
+      "answer": "A",
+      "x": 819,
+      "y": 374,
+      "w": 56,
+      "h": 20
+    },
+    {
+      "id": "f3a-2",
+      "group": "task3a",
+      "kind": "text",
+      "label": "3a: Der Mann ist zu Hause. - Foto",
+      "answer": "C",
+      "x": 819,
+      "y": 410,
+      "w": 56,
+      "h": 16
+    },
+    {
+      "id": "f3a-3",
+      "group": "task3a",
+      "kind": "text",
+      "label": "3a: Er steigt in die U-Bahn ein. - Foto",
+      "answer": "B",
+      "x": 819,
+      "y": 435,
+      "w": 56,
+      "h": 16
+    },
+    {
+      "id": "f3a-4",
+      "group": "task3a",
+      "kind": "text",
+      "label": "3a: Der Mann kommt in München an. - Foto",
+      "answer": "A",
+      "x": 819,
+      "y": 460,
+      "w": 56,
+      "h": 16
+    },
+    {
+      "id": "f3b-1a",
+      "group": "task3b",
+      "kind": "radio",
+      "label": "3b-1: Der Mann telefoniert mit ... - seiner Tochter",
+      "answer": "true",
+      "x": 451,
+      "y": 374,
+      "w": 19,
+      "h": 18
+    },
+    {
+      "id": "f3b-1b",
+      "group": "task3b",
+      "kind": "radio",
+      "label": "3b-1: Der Mann telefoniert mit ... - seiner Mutter",
+      "answer": "false",
+      "x": 624,
+      "y": 373,
+      "w": 17,
+      "h": 18
+    },
+    {
+      "id": "f3b-2a",
+      "group": "task3b",
+      "kind": "radio",
+      "label": "3b-2: Der Mann ist ... - zu Hause",
+      "answer": "true",
+      "x": 346,
+      "y": 400,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "f3b-2b",
+      "group": "task3b",
+      "kind": "radio",
+      "label": "3b-2: Der Mann ist ... - bei Verena",
+      "answer": "false",
+      "x": 474,
+      "y": 399,
+      "w": 17,
+      "h": 18
+    },
+    {
+      "id": "f3b-3a",
+      "group": "task3b",
+      "kind": "radio",
+      "label": "3b-3: Er steigt ... ein - in die U-Bahn",
+      "answer": "true",
+      "x": 371,
+      "y": 425,
+      "w": 19,
+      "h": 18
+    },
+    {
+      "id": "f3b-3b",
+      "group": "task3b",
+      "kind": "radio",
+      "label": "3b-3: Er steigt ... ein - in die S-Bahn",
+      "answer": "false",
+      "x": 531,
+      "y": 424,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "f3b-4a",
+      "group": "task3b",
+      "kind": "radio",
+      "label": "3b-4: Der Mann kommt ... an - in München",
+      "answer": "true",
+      "x": 385,
+      "y": 450,
+      "w": 19,
+      "h": 18
+    },
+    {
+      "id": "f3b-4b",
+      "group": "task3b",
+      "kind": "radio",
+      "label": "3b-4: Der Mann kommt ... an - in Essen",
+      "answer": "false",
+      "x": 531,
+      "y": 450,
+      "w": 18,
+      "h": 17
+    },
+    {
+      "id": "f4a-1",
+      "group": "task4a",
+      "kind": "text",
+      "label": "4a: Ja, dann rufe ich dich an. - Reihenfolge",
+      "answer": "4",
+      "x": 199,
+      "y": 781,
+      "w": 17,
+      "h": 17
+    },
+    {
+      "id": "f4a-2",
+      "group": "task4a",
+      "kind": "text",
+      "label": "4a: In vierzig Minuten komme ich zu Hause an. - Reihenfolge",
+      "answer": "3",
+      "x": 199,
+      "y": 831,
+      "w": 17,
+      "h": 17
+    },
+    {
+      "id": "f4a-3",
+      "group": "task4a",
+      "kind": "text",
+      "label": "4a: Ja, den Koffer habe ich und die Tasche auch. - Reihenfolge",
+      "answer": "2",
+      "x": 199,
+      "y": 907,
+      "w": 17,
+      "h": 17
+    },
+    {
+      "id": "f4b-1",
+      "group": "task4b",
+      "kind": "text",
+      "label": "4b-1: Am ___ 2 fährt gerade die U2 ein.",
+      "answer": "Bahnsteig",
+      "x": 534,
+      "y": 842,
+      "w": 163,
+      "h": 18
+    },
+    {
+      "id": "f4b-2",
+      "group": "task4b",
+      "kind": "text",
+      "label": "4b-2: Bitte ___!",
+      "answer": "Vorsicht",
+      "x": 547,
+      "y": 896,
+      "w": 145,
+      "h": 18
+    },
+    {
+      "id": "f4b-3",
+      "group": "task4b",
+      "kind": "text",
+      "label": "4b-3: Nächster ___ Innsbrucker Ring.",
+      "answer": "Halt",
+      "x": 583,
+      "y": 917,
+      "w": 116,
+      "h": 18
+    },
+    {
+      "id": "f4c-1",
+      "group": "task4c",
+      "kind": "text",
+      "label": "4c-1: Ach, vielleicht kaufe ich noch was ___.",
+      "answer": "ein",
+      "x": 819,
+      "y": 866,
+      "w": 74,
+      "h": 20
+    },
+    {
+      "id": "f4c-2",
+      "group": "task4c",
+      "kind": "text",
+      "label": "4c-2: Siehst du noch ein bisschen ___?",
+      "answer": "fern",
+      "x": 784,
+      "y": 950,
+      "w": 74,
+      "h": 24
+    },
+    {
+      "id": "f4c-3",
+      "group": "task4c",
+      "kind": "text",
+      "label": "4c-3: Rufst du mich morgen mal ___?",
+      "answer": "an",
+      "x": 821,
+      "y": 1016,
+      "w": 73,
+      "h": 20
+    },
+    {
+      "id": "f5-a",
+      "group": "task5",
+      "kind": "text",
+      "label": "5a: Ich steige jetzt in die U-Bahn ___.",
+      "answer": "ein",
+      "x": 468,
+      "y": 1171,
+      "w": 73,
+      "h": 18
+    },
+    {
+      "id": "f5-b1",
+      "group": "task5",
+      "kind": "text",
+      "label": "5b: In vierzig Minuten ___ ich zu Hause ___.",
+      "answer": "komme",
+      "x": 389,
+      "y": 1197,
+      "w": 111,
+      "h": 18
+    },
+    {
+      "id": "f5-b2",
+      "group": "task5",
+      "kind": "text",
+      "label": "5b: In vierzig Minuten ___ ich zu Hause ___.",
+      "answer": "an",
+      "x": 614,
+      "y": 1196,
+      "w": 74,
+      "h": 18
+    },
+    {
+      "id": "f5-b3",
+      "group": "task5",
+      "kind": "text",
+      "label": "5b: Infinitiv",
+      "answer": "ankommen",
+      "x": 738,
+      "y": 1195,
+      "w": 163,
+      "h": 20
+    },
+    {
+      "id": "f5-c1",
+      "group": "task5",
+      "kind": "text",
+      "label": "5c: Ja, dann ___ ich dich ___.",
+      "answer": "rufe",
+      "x": 298,
+      "y": 1222,
+      "w": 111,
+      "h": 18
+    },
+    {
+      "id": "f5-c2",
+      "group": "task5",
+      "kind": "text",
+      "label": "5c: Ja, dann ___ ich dich ___.",
+      "answer": "an",
+      "x": 484,
+      "y": 1222,
+      "w": 73,
+      "h": 18
+    },
+    {
+      "id": "f5-c3",
+      "group": "task5",
+      "kind": "text",
+      "label": "5c: Infinitiv",
+      "answer": "anrufen",
+      "x": 738,
+      "y": 1220,
+      "w": 163,
+      "h": 20
+    },
+    {
+      "id": "f5-d1",
+      "group": "task5",
+      "kind": "text",
+      "label": "5d: Ach, vielleicht ___ ich noch was ___.",
+      "answer": "kaufe",
+      "x": 351,
+      "y": 1246,
+      "w": 110,
+      "h": 18
+    },
+    {
+      "id": "f5-d2",
+      "group": "task5",
+      "kind": "text",
+      "label": "5d: Ach, vielleicht ___ ich noch was ___.",
+      "answer": "ein",
+      "x": 578,
+      "y": 1247,
+      "w": 73,
+      "h": 18
+    },
+    {
+      "id": "f5-d3",
+      "group": "task5",
+      "kind": "text",
+      "label": "5d: Infinitiv",
+      "answer": "einkaufen",
+      "x": 738,
+      "y": 1244,
+      "w": 164,
+      "h": 19
+    },
+    {
+      "id": "f5-e1",
+      "group": "task5",
+      "kind": "text",
+      "label": "5e: ___ du noch ein bisschen ___?",
+      "answer": "Siehst",
+      "x": 221,
+      "y": 1272,
+      "w": 110,
+      "h": 18
+    },
+    {
+      "id": "f5-e2",
+      "group": "task5",
+      "kind": "text",
+      "label": "5e: ___ du noch ein bisschen ___?",
+      "answer": "fern",
+      "x": 518,
+      "y": 1272,
+      "w": 73,
+      "h": 18
+    },
+    {
+      "id": "f5-e3",
+      "group": "task5",
+      "kind": "text",
+      "label": "5e: Infinitiv",
+      "answer": "fernsehen",
+      "x": 739,
+      "y": 1270,
+      "w": 164,
+      "h": 20
+    }
+  ],
+  "audio": [
+    {
+      "id": "cd2-11",
+      "src": "assets/kb-cd2-track11.mp3",
+      "label": "2.11 · Ich bin jetzt …",
+      "x": 96,
+      "y": 264,
+      "w": 56,
+      "h": 22
+    },
+    {
+      "id": "cd2-12",
+      "src": "assets/kb-cd2-track12.mp3",
+      "label": "2.12 · Hören Sie noch einmal und sortieren Sie.",
+      "x": 96,
+      "y": 716,
+      "w": 62,
+      "h": 22
+    },
+    {
+      "id": "cd2-13",
+      "src": "assets/kb-cd2-track13.mp3",
+      "label": "2.13 · Ergänzen Sie. Hören Sie dann noch einmal.",
+      "x": 403,
+      "y": 714,
+      "w": 56,
+      "h": 22
+    },
+    {
+      "id": "cd2-14",
+      "src": "assets/kb-cd2-track14.mp3",
+      "label": "2.14 · Hören Sie noch einmal und ergänzen Sie.",
+      "x": 683,
+      "y": 713,
+      "w": 56,
+      "h": 22
+    },
+    {
+      "id": "cd2-15",
+      "src": "assets/kb-cd2-track15.mp3",
+      "label": "2.15 · Ergänzen Sie. Hören Sie dann noch einmal und vergleichen Sie.",
+      "x": 140,
+      "y": 1062,
+      "w": 56,
+      "h": 24
+    }
+  ],
+  "groups": [
+    {
+      "id": "task3a",
+      "label": "3a"
+    },
+    {
+      "id": "task3b",
+      "label": "3b"
+    },
+    {
+      "id": "task4a",
+      "label": "4a"
+    },
+    {
+      "id": "task4b",
+      "label": "4b"
+    },
+    {
+      "id": "task4c",
+      "label": "4c"
+    },
+    {
+      "id": "task5",
+      "label": "5"
+    }
+  ],
+  "review": {
+    "status": "partial",
+    "verifiedWords": 235,
+    "totalWords": 235,
+    "notes": [
+      "All printed words reviewed against the scan at 2x-8x (tesseract + connected-component pixel measurement): top photo-strip labels, task 3/4 headings, all instructions, word banks, 3b statement rows, 4a/4b/4c items, task 5 items and the GRAMMATIK box (an|rufen, ein|steigen, fern|sehen split at the pipe; line-break hyphen \"zurück-\" kept as printed).",
+      "Excluded per policy: red task numerals, item numerals/letters (1-4, a-e, circled 1 example), AB margin tabs, ellipsis, arrows, footer. Platform number \"2\" in \"Am Bahnsteig 2\" kept as sentence content. Previous-owner blue handwriting \"A, C\" on Foto row 1 excluded. Printed blue-script examples kept as words with no fields: 4b-4 \"Achtung!\", 5a \"steige\" and \"(einsteigen)\".",
+      "3b answers verified via audio 2.11 transcript and Hueber key (1 seiner Tochter, 2 zu Hause, 3 in die U-Bahn, 4 in München). 4a order 4;3;2 via key and audio 2.12 (item 4 is the printed example). 4b Bahnsteig/Vorsicht/Halt and 4c ein/fern/an via key, confirmed by audio 2.13 (U-Bahn announcements) and 2.14. Task 5 answers via key, confirmed by audio 2.15 dialogue.",
+      "PARTIAL reason - 3a Foto row 1: the Hueber key lists only 2=C, 3=B, 4=A and the book prints no example letter for sentence 1. Answer A filled by inference: in audio 2.11 the call to the daughter (\"Tschüss, mein Kind\") happens at the station = photo A. All other 33 field answers are key/audio-verified.",
+      "All 5 audio files (2.11-2.15) verified playable with transcripts matching the printed exercises."
+    ]
+  }
+}
