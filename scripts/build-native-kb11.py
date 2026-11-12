@@ -181,6 +181,7 @@ def apply_overrides(r,p):
     if not os.path.exists(f):return
     o=json.load(open(f))
     r['fields']=list(r['fields'])+o.get('fields',[])
+    r['checks'].update(o.get('checks',{}))
     def hit(b,m):
         return all(abs(b[k]-v)<=m.get('tol',3) for k,v in m.items() if k in('x','cy','w','f'))
     for rng in o.get('sans',[]):
