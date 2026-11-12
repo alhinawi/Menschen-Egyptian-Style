@@ -1,0 +1,1165 @@
+{
+  "book": "kb-a11",
+  "page": 56,
+  "image": "assets/kb-a11-p56.png",
+  "width": 1075,
+  "height": 1521,
+  "words": [
+    {
+      "text": "Hören",
+      "x": 217,
+      "y": 230,
+      "w": 55,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 280,
+      "y": 229,
+      "w": 28,
+      "h": 16
+    },
+    {
+      "text": "das",
+      "x": 315,
+      "y": 228,
+      "w": 31,
+      "h": 16
+    },
+    {
+      "text": "Lied",
+      "x": 355,
+      "y": 227,
+      "w": 36,
+      "h": 17
+    },
+    {
+      "text": "und",
+      "x": 400,
+      "y": 227,
+      "w": 35,
+      "h": 16
+    },
+    {
+      "text": "sortieren",
+      "x": 443,
+      "y": 227,
+      "w": 86,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 537,
+      "y": 226,
+      "w": 28,
+      "h": 16
+    },
+    {
+      "text": "die",
+      "x": 572,
+      "y": 225,
+      "w": 28,
+      "h": 17
+    },
+    {
+      "text": "Strophen",
+      "x": 607,
+      "y": 224,
+      "w": 94,
+      "h": 23
+    },
+    {
+      "text": "Heute",
+      "x": 207,
+      "y": 290,
+      "w": 112,
+      "h": 80
+    },
+    {
+      "text": "ist",
+      "x": 336,
+      "y": 293,
+      "w": 56,
+      "h": 43
+    },
+    {
+      "text": "der",
+      "x": 406,
+      "y": 290,
+      "w": 67,
+      "h": 45
+    },
+    {
+      "text": "Tag",
+      "x": 483,
+      "y": 290,
+      "w": 84,
+      "h": 59
+    },
+    {
+      "text": "Tina",
+      "x": 229,
+      "y": 381,
+      "w": 34,
+      "h": 14
+    },
+    {
+      "text": "wann",
+      "x": 270,
+      "y": 381,
+      "w": 38,
+      "h": 12
+    },
+    {
+      "text": "kann",
+      "x": 316,
+      "y": 378,
+      "w": 34,
+      "h": 13
+    },
+    {
+      "text": "ich",
+      "x": 358,
+      "y": 378,
+      "w": 19,
+      "h": 13
+    },
+    {
+      "text": "dich",
+      "x": 384,
+      "y": 378,
+      "w": 30,
+      "h": 13
+    },
+    {
+      "text": "heute",
+      "x": 422,
+      "y": 378,
+      "w": 39,
+      "h": 13
+    },
+    {
+      "text": "sehen",
+      "x": 467,
+      "y": 377,
+      "w": 48,
+      "h": 13
+    },
+    {
+      "text": "Tina",
+      "x": 231,
+      "y": 406,
+      "w": 34,
+      "h": 13
+    },
+    {
+      "text": "möchtest",
+      "x": 272,
+      "y": 404,
+      "w": 64,
+      "h": 13
+    },
+    {
+      "text": "du",
+      "x": 343,
+      "y": 404,
+      "w": 17,
+      "h": 13
+    },
+    {
+      "text": "spazieren",
+      "x": 367,
+      "y": 404,
+      "w": 69,
+      "h": 16
+    },
+    {
+      "text": "gehen",
+      "x": 442,
+      "y": 402,
+      "w": 50,
+      "h": 18
+    },
+    {
+      "text": "Hhmm",
+      "x": 232,
+      "y": 430,
+      "w": 53,
+      "h": 15
+    },
+    {
+      "text": "du",
+      "x": 292,
+      "y": 429,
+      "w": 17,
+      "h": 13
+    },
+    {
+      "text": "bist",
+      "x": 317,
+      "y": 429,
+      "w": 24,
+      "h": 12
+    },
+    {
+      "text": "wunderschön",
+      "x": 347,
+      "y": 428,
+      "w": 103,
+      "h": 13
+    },
+    {
+      "text": "Hast",
+      "x": 233,
+      "y": 456,
+      "w": 31,
+      "h": 12
+    },
+    {
+      "text": "du",
+      "x": 270,
+      "y": 455,
+      "w": 17,
+      "h": 13
+    },
+    {
+      "text": "heute",
+      "x": 294,
+      "y": 455,
+      "w": 40,
+      "h": 13
+    },
+    {
+      "text": "Zeit",
+      "x": 340,
+      "y": 455,
+      "w": 33,
+      "h": 12
+    },
+    {
+      "text": "Ich",
+      "x": 233,
+      "y": 481,
+      "w": 20,
+      "h": 13
+    },
+    {
+      "text": "möchte",
+      "x": 260,
+      "y": 480,
+      "w": 53,
+      "h": 13
+    },
+    {
+      "text": "dich",
+      "x": 319,
+      "y": 479,
+      "w": 30,
+      "h": 13
+    },
+    {
+      "text": "so",
+      "x": 356,
+      "y": 482,
+      "w": 15,
+      "h": 12
+    },
+    {
+      "text": "gerne",
+      "x": 376,
+      "y": 483,
+      "w": 40,
+      "h": 14
+    },
+    {
+      "text": "sehen",
+      "x": 423,
+      "y": 478,
+      "w": 46,
+      "h": 13
+    },
+    {
+      "text": "Tina",
+      "x": 654,
+      "y": 379,
+      "w": 34,
+      "h": 14
+    },
+    {
+      "text": "ich",
+      "x": 695,
+      "y": 377,
+      "w": 20,
+      "h": 13
+    },
+    {
+      "text": "möchte",
+      "x": 722,
+      "y": 377,
+      "w": 53,
+      "h": 13
+    },
+    {
+      "text": "dich",
+      "x": 782,
+      "y": 376,
+      "w": 30,
+      "h": 13
+    },
+    {
+      "text": "was",
+      "x": 818,
+      "y": 378,
+      "w": 27,
+      "h": 12
+    },
+    {
+      "text": "fragen",
+      "x": 851,
+      "y": 375,
+      "w": 48,
+      "h": 17
+    },
+    {
+      "text": "Tina",
+      "x": 655,
+      "y": 404,
+      "w": 34,
+      "h": 14
+    },
+    {
+      "text": "was",
+      "x": 696,
+      "y": 405,
+      "w": 27,
+      "h": 12
+    },
+    {
+      "text": "machst",
+      "x": 730,
+      "y": 402,
+      "w": 50,
+      "h": 14
+    },
+    {
+      "text": "du",
+      "x": 786,
+      "y": 402,
+      "w": 17,
+      "h": 13
+    },
+    {
+      "text": "heute",
+      "x": 810,
+      "y": 402,
+      "w": 39,
+      "h": 13
+    },
+    {
+      "text": "Abend",
+      "x": 855,
+      "y": 400,
+      "w": 54,
+      "h": 13
+    },
+    {
+      "text": "Hhmm",
+      "x": 656,
+      "y": 429,
+      "w": 53,
+      "h": 14
+    },
+    {
+      "text": "der",
+      "x": 717,
+      "y": 428,
+      "w": 22,
+      "h": 13
+    },
+    {
+      "text": "Tag",
+      "x": 744,
+      "y": 429,
+      "w": 24,
+      "h": 16
+    },
+    {
+      "text": "heute",
+      "x": 774,
+      "y": 427,
+      "w": 40,
+      "h": 13
+    },
+    {
+      "text": "ist",
+      "x": 820,
+      "y": 427,
+      "w": 14,
+      "h": 12
+    },
+    {
+      "text": "so",
+      "x": 840,
+      "y": 429,
+      "w": 15,
+      "h": 12
+    },
+    {
+      "text": "schön",
+      "x": 861,
+      "y": 426,
+      "w": 46,
+      "h": 13
+    },
+    {
+      "text": "Sag",
+      "x": 656,
+      "y": 455,
+      "w": 28,
+      "h": 17
+    },
+    {
+      "text": "hast",
+      "x": 692,
+      "y": 453,
+      "w": 27,
+      "h": 13
+    },
+    {
+      "text": "du",
+      "x": 726,
+      "y": 453,
+      "w": 17,
+      "h": 13
+    },
+    {
+      "text": "Zeit",
+      "x": 750,
+      "y": 453,
+      "w": 33,
+      "h": 13
+    },
+    {
+      "text": "Ich",
+      "x": 657,
+      "y": 479,
+      "w": 20,
+      "h": 13
+    },
+    {
+      "text": "möchte",
+      "x": 684,
+      "y": 478,
+      "w": 53,
+      "h": 13
+    },
+    {
+      "text": "dich",
+      "x": 743,
+      "y": 478,
+      "w": 30,
+      "h": 13
+    },
+    {
+      "text": "heute",
+      "x": 781,
+      "y": 478,
+      "w": 39,
+      "h": 13
+    },
+    {
+      "text": "Abend",
+      "x": 825,
+      "y": 476,
+      "w": 48,
+      "h": 13
+    },
+    {
+      "text": "sehen",
+      "x": 879,
+      "y": 476,
+      "w": 45,
+      "h": 13
+    },
+    {
+      "text": "Wir",
+      "x": 257,
+      "y": 530,
+      "w": 27,
+      "h": 12
+    },
+    {
+      "text": "können",
+      "x": 290,
+      "y": 529,
+      "w": 53,
+      "h": 13
+    },
+    {
+      "text": "essen",
+      "x": 350,
+      "y": 532,
+      "w": 42,
+      "h": 11
+    },
+    {
+      "text": "können",
+      "x": 400,
+      "y": 528,
+      "w": 53,
+      "h": 13
+    },
+    {
+      "text": "trinken",
+      "x": 459,
+      "y": 527,
+      "w": 55,
+      "h": 14
+    },
+    {
+      "text": "Möchtest",
+      "x": 259,
+      "y": 555,
+      "w": 65,
+      "h": 13
+    },
+    {
+      "text": "du",
+      "x": 331,
+      "y": 554,
+      "w": 17,
+      "h": 13
+    },
+    {
+      "text": "noch",
+      "x": 355,
+      "y": 553,
+      "w": 34,
+      "h": 13
+    },
+    {
+      "text": "ein",
+      "x": 396,
+      "y": 554,
+      "w": 21,
+      "h": 12
+    },
+    {
+      "text": "Glas",
+      "x": 424,
+      "y": 553,
+      "w": 32,
+      "h": 13
+    },
+    {
+      "text": "Wein",
+      "x": 461,
+      "y": 553,
+      "w": 45,
+      "h": 13
+    },
+    {
+      "text": "Wir",
+      "x": 259,
+      "y": 581,
+      "w": 26,
+      "h": 12
+    },
+    {
+      "text": "können",
+      "x": 292,
+      "y": 580,
+      "w": 52,
+      "h": 13
+    },
+    {
+      "text": "tanzen",
+      "x": 351,
+      "y": 582,
+      "w": 52,
+      "h": 12
+    },
+    {
+      "text": "können",
+      "x": 410,
+      "y": 579,
+      "w": 53,
+      "h": 13
+    },
+    {
+      "text": "singen",
+      "x": 470,
+      "y": 579,
+      "w": 50,
+      "h": 17
+    },
+    {
+      "text": "können",
+      "x": 259,
+      "y": 605,
+      "w": 53,
+      "h": 13
+    },
+    {
+      "text": "einfach",
+      "x": 319,
+      "y": 603,
+      "w": 52,
+      "h": 13
+    },
+    {
+      "text": "glücklich",
+      "x": 378,
+      "y": 602,
+      "w": 65,
+      "h": 18
+    },
+    {
+      "text": "sein",
+      "x": 449,
+      "y": 604,
+      "w": 32,
+      "h": 12
+    },
+    {
+      "text": "Wir",
+      "x": 615,
+      "y": 527,
+      "w": 26,
+      "h": 12
+    },
+    {
+      "text": "können",
+      "x": 648,
+      "y": 525,
+      "w": 53,
+      "h": 13
+    },
+    {
+      "text": "essen",
+      "x": 708,
+      "y": 528,
+      "w": 42,
+      "h": 11
+    },
+    {
+      "text": "können",
+      "x": 757,
+      "y": 524,
+      "w": 53,
+      "h": 13
+    },
+    {
+      "text": "trinken",
+      "x": 817,
+      "y": 523,
+      "w": 54,
+      "h": 14
+    },
+    {
+      "text": "Möchtest",
+      "x": 617,
+      "y": 550,
+      "w": 66,
+      "h": 13
+    },
+    {
+      "text": "du",
+      "x": 688,
+      "y": 550,
+      "w": 17,
+      "h": 14
+    },
+    {
+      "text": "noch",
+      "x": 713,
+      "y": 550,
+      "w": 34,
+      "h": 13
+    },
+    {
+      "text": "ein",
+      "x": 753,
+      "y": 550,
+      "w": 21,
+      "h": 12
+    },
+    {
+      "text": "Glas",
+      "x": 782,
+      "y": 549,
+      "w": 32,
+      "h": 14
+    },
+    {
+      "text": "Wein",
+      "x": 818,
+      "y": 549,
+      "w": 45,
+      "h": 13
+    },
+    {
+      "text": "Wir",
+      "x": 616,
+      "y": 577,
+      "w": 27,
+      "h": 12
+    },
+    {
+      "text": "können",
+      "x": 649,
+      "y": 576,
+      "w": 53,
+      "h": 13
+    },
+    {
+      "text": "tanzen",
+      "x": 709,
+      "y": 578,
+      "w": 52,
+      "h": 11
+    },
+    {
+      "text": "können",
+      "x": 768,
+      "y": 575,
+      "w": 53,
+      "h": 13
+    },
+    {
+      "text": "singen",
+      "x": 828,
+      "y": 575,
+      "w": 50,
+      "h": 16
+    },
+    {
+      "text": "können",
+      "x": 617,
+      "y": 602,
+      "w": 53,
+      "h": 13
+    },
+    {
+      "text": "einfach",
+      "x": 677,
+      "y": 600,
+      "w": 53,
+      "h": 13
+    },
+    {
+      "text": "glücklich",
+      "x": 735,
+      "y": 599,
+      "w": 66,
+      "h": 18
+    },
+    {
+      "text": "sein",
+      "x": 808,
+      "y": 600,
+      "w": 32,
+      "h": 13
+    },
+    {
+      "text": "Tina",
+      "x": 317,
+      "y": 671,
+      "w": 34,
+      "h": 13
+    },
+    {
+      "text": "Hhmm",
+      "x": 360,
+      "y": 670,
+      "w": 53,
+      "h": 15
+    },
+    {
+      "text": "Tina",
+      "x": 418,
+      "y": 670,
+      "w": 35,
+      "h": 13
+    },
+    {
+      "text": "Wie",
+      "x": 318,
+      "y": 696,
+      "w": 30,
+      "h": 13
+    },
+    {
+      "text": "gern",
+      "x": 354,
+      "y": 699,
+      "w": 31,
+      "h": 14
+    },
+    {
+      "text": "ich",
+      "x": 392,
+      "y": 695,
+      "w": 20,
+      "h": 13
+    },
+    {
+      "text": "dich",
+      "x": 418,
+      "y": 694,
+      "w": 30,
+      "h": 13
+    },
+    {
+      "text": "mag",
+      "x": 455,
+      "y": 695,
+      "w": 34,
+      "h": 17
+    },
+    {
+      "text": "Ich",
+      "x": 320,
+      "y": 720,
+      "w": 20,
+      "h": 14
+    },
+    {
+      "text": "weiß",
+      "x": 347,
+      "y": 720,
+      "w": 35,
+      "h": 13
+    },
+    {
+      "text": "es",
+      "x": 387,
+      "y": 723,
+      "w": 14,
+      "h": 12
+    },
+    {
+      "text": "ganz",
+      "x": 407,
+      "y": 725,
+      "w": 34,
+      "h": 13
+    },
+    {
+      "text": "genau",
+      "x": 448,
+      "y": 724,
+      "w": 47,
+      "h": 14
+    },
+    {
+      "text": "Heute",
+      "x": 320,
+      "y": 747,
+      "w": 43,
+      "h": 12
+    },
+    {
+      "text": "ist",
+      "x": 370,
+      "y": 747,
+      "w": 15,
+      "h": 12
+    },
+    {
+      "text": "der",
+      "x": 390,
+      "y": 745,
+      "w": 23,
+      "h": 13
+    },
+    {
+      "text": "Tag",
+      "x": 417,
+      "y": 746,
+      "w": 28,
+      "h": 17
+    },
+    {
+      "text": "Tina",
+      "x": 734,
+      "y": 666,
+      "w": 35,
+      "h": 13
+    },
+    {
+      "text": "Oh",
+      "x": 775,
+      "y": 665,
+      "w": 27,
+      "h": 16
+    },
+    {
+      "text": "Tina",
+      "x": 808,
+      "y": 665,
+      "w": 34,
+      "h": 13
+    },
+    {
+      "text": "Wie",
+      "x": 735,
+      "y": 692,
+      "w": 30,
+      "h": 12
+    },
+    {
+      "text": "gern",
+      "x": 770,
+      "y": 694,
+      "w": 32,
+      "h": 14
+    },
+    {
+      "text": "ich",
+      "x": 808,
+      "y": 690,
+      "w": 21,
+      "h": 14
+    },
+    {
+      "text": "dich",
+      "x": 834,
+      "y": 689,
+      "w": 31,
+      "h": 14
+    },
+    {
+      "text": "mag",
+      "x": 872,
+      "y": 690,
+      "w": 34,
+      "h": 17
+    },
+    {
+      "text": "Ich",
+      "x": 736,
+      "y": 716,
+      "w": 21,
+      "h": 14
+    },
+    {
+      "text": "weiß",
+      "x": 763,
+      "y": 716,
+      "w": 35,
+      "h": 14
+    },
+    {
+      "text": "es",
+      "x": 804,
+      "y": 718,
+      "w": 14,
+      "h": 12
+    },
+    {
+      "text": "ganz",
+      "x": 824,
+      "y": 719,
+      "w": 34,
+      "h": 13
+    },
+    {
+      "text": "genau",
+      "x": 864,
+      "y": 719,
+      "w": 48,
+      "h": 14
+    },
+    {
+      "text": "Heute",
+      "x": 736,
+      "y": 742,
+      "w": 43,
+      "h": 13
+    },
+    {
+      "text": "ist",
+      "x": 787,
+      "y": 742,
+      "w": 14,
+      "h": 12
+    },
+    {
+      "text": "der",
+      "x": 807,
+      "y": 741,
+      "w": 23,
+      "h": 14
+    },
+    {
+      "text": "Tag",
+      "x": 834,
+      "y": 741,
+      "w": 28,
+      "h": 16
+    },
+    {
+      "text": "Hören",
+      "x": 224,
+      "y": 837,
+      "w": 52,
+      "h": 14
+    },
+    {
+      "text": "Sie",
+      "x": 282,
+      "y": 836,
+      "w": 26,
+      "h": 16
+    },
+    {
+      "text": "noch",
+      "x": 315,
+      "y": 835,
+      "w": 42,
+      "h": 16
+    },
+    {
+      "text": "einmal",
+      "x": 363,
+      "y": 834,
+      "w": 59,
+      "h": 17
+    },
+    {
+      "text": "und",
+      "x": 430,
+      "y": 833,
+      "w": 33,
+      "h": 16
+    },
+    {
+      "text": "singen",
+      "x": 470,
+      "y": 834,
+      "w": 58,
+      "h": 21
+    },
+    {
+      "text": "Sie",
+      "x": 534,
+      "y": 833,
+      "w": 26,
+      "h": 16
+    },
+    {
+      "text": "mit",
+      "x": 567,
+      "y": 833,
+      "w": 35,
+      "h": 15
+    }
+  ],
+  "fields": [
+    {
+      "id": "st1",
+      "group": "task1",
+      "kind": "text",
+      "label": "Strophe: Tina, wann kann ich dich heute sehen? …",
+      "answer": "4",
+      "x": 194,
+      "y": 375,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "st2",
+      "group": "task1",
+      "kind": "text",
+      "label": "Strophe: Tina, ich möchte dich was fragen: …",
+      "answer": "1",
+      "x": 616,
+      "y": 372,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "st3",
+      "group": "task1",
+      "kind": "text",
+      "label": "Strophe (linke Spalte): Wir können essen, können trinken …",
+      "answer": "2",
+      "x": 221,
+      "y": 526,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "st4",
+      "group": "task1",
+      "kind": "text",
+      "label": "Strophe (rechte Spalte): Wir können essen, können trinken …",
+      "answer": "5",
+      "x": 579,
+      "y": 523,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "st5",
+      "group": "task1",
+      "kind": "text",
+      "label": "Strophe: Tina! Hhmm, Tina! …",
+      "answer": "3",
+      "x": 283,
+      "y": 666,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "st6",
+      "group": "task1",
+      "kind": "text",
+      "label": "Strophe: Tina! Oh, Tina! …",
+      "answer": "6",
+      "x": 698,
+      "y": 663,
+      "w": 22,
+      "h": 22
+    }
+  ],
+  "audio": [
+    {
+      "id": "cd2-08a",
+      "src": "assets/kb-cd2-track08.mp3",
+      "label": "2.08 · Hören Sie das Lied und sortieren Sie die Strophen.",
+      "x": 116,
+      "y": 233,
+      "w": 44,
+      "h": 20
+    },
+    {
+      "id": "cd2-08b",
+      "src": "assets/kb-cd2-track08.mp3",
+      "label": "2.08 · Hören Sie noch einmal und singen Sie mit.",
+      "x": 121,
+      "y": 838,
+      "w": 44,
+      "h": 20
+    }
+  ],
+  "groups": [
+    {
+      "id": "task1",
+      "label": "1"
+    }
+  ],
+  "review": {
+    "status": "verified",
+    "verifiedWords": 150,
+    "totalWords": 150,
+    "notes": [
+      "All printed words reviewed against the scan: task headers, script title and all six stanzas. Red task numerals, photos and footer excluded per policy.",
+      "Strophe order verified two ways: audio 2.08 transcript (Tina-ich-möchte > Wir-können > Tina-Tina > Tina-wann > Wir-können > Tina-oh-Tina) and the official Hueber answer key (1, 4, 5, 6 named; 2 and 3 by elimination, matching the audio).",
+      "Two stanzas share the first line \"Wir können essen, können trinken\" - disambiguated by column in the labels.",
+      "Previous-owner circled numbers 2 and 3 in the left column are correct but excluded as handwriting; the printed circles beneath still get fields.",
+      "Both audio markers reference track 2.08 (task 2 is listen-again); file assets/kb-cd2-track08.mp3 verified playable with matching transcript."
+    ]
+  }
+}
