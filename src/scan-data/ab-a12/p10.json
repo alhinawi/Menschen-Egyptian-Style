@@ -2197,13 +2197,462 @@
    "h": 14
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p10-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1b",
+   "answer": "Post",
+   "x": 552,
+   "y": 302,
+   "w": 144,
+   "h": 24
+  },
+  {
+   "id": "p10-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1c",
+   "answer": "Bahnhof",
+   "x": 715,
+   "y": 328,
+   "w": 169,
+   "h": 24
+  },
+  {
+   "id": "p10-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1d",
+   "answer": "Stadtmitte",
+   "x": 806,
+   "y": 354,
+   "w": 145,
+   "h": 24
+  },
+  {
+   "id": "p10-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1e",
+   "answer": "Bank",
+   "x": 553,
+   "y": 380,
+   "w": 147,
+   "h": 24
+  },
+  {
+   "id": "p10-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1f",
+   "answer": "Stadtplan",
+   "x": 520,
+   "y": 431,
+   "w": 174,
+   "h": 24
+  },
+  {
+   "id": "p10-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "b",
+   "answer": "biegen",
+   "x": 677,
+   "y": 561,
+   "w": 116,
+   "h": 24
+  },
+  {
+   "id": "p10-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "c",
+   "answer": "links",
+   "x": 359,
+   "y": 586,
+   "w": 127,
+   "h": 24
+  },
+  {
+   "id": "p10-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "d",
+   "answer": "Kilometer",
+   "x": 760,
+   "y": 588,
+   "w": 120,
+   "h": 24
+  },
+  {
+   "id": "p10-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "e",
+   "answer": "rechts",
+   "x": 620,
+   "y": 613,
+   "w": 100,
+   "h": 24
+  },
+  {
+   "id": "p10-2f",
+   "group": "g2",
+   "kind": "text",
+   "label": "f",
+   "answer": "Brücke",
+   "x": 543,
+   "y": 638,
+   "w": 157,
+   "h": 24
+  },
+  {
+   "id": "p10-2g",
+   "group": "g2",
+   "kind": "text",
+   "label": "g",
+   "answer": "Ampel",
+   "x": 833,
+   "y": 638,
+   "w": 97,
+   "h": 24
+  },
+  {
+   "id": "p10-r3b-hinter",
+   "group": "g3",
+   "kind": "radio",
+   "label": "3 b hinter",
+   "answer": "false",
+   "name": "r3b",
+   "value": "hinter",
+   "x": 304,
+   "y": 815,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p10-r3b-neben",
+   "group": "g3",
+   "kind": "radio",
+   "label": "3 b neben",
+   "answer": "true",
+   "name": "r3b",
+   "value": "neben",
+   "x": 409,
+   "y": 815,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p10-3bt",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b Artikel",
+   "answer": "er",
+   "x": 526,
+   "y": 816,
+   "w": 54,
+   "h": 24
+  },
+  {
+   "id": "p10-r3c-vor",
+   "group": "g3",
+   "kind": "radio",
+   "label": "3 c vor",
+   "answer": "true",
+   "name": "r3c",
+   "value": "vor",
+   "x": 316,
+   "y": 840,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p10-r3c-auf",
+   "group": "g3",
+   "kind": "radio",
+   "label": "3 c auf",
+   "answer": "false",
+   "name": "r3c",
+   "value": "auf",
+   "x": 394,
+   "y": 840,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p10-3ct",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c Artikel",
+   "answer": "em",
+   "x": 488,
+   "y": 841,
+   "w": 52,
+   "h": 24
+  },
+  {
+   "id": "p10-r3d-in",
+   "group": "g3",
+   "kind": "radio",
+   "label": "3 d in",
+   "answer": "true",
+   "name": "r3d",
+   "value": "in",
+   "x": 307,
+   "y": 866,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p10-r3d-an",
+   "group": "g3",
+   "kind": "radio",
+   "label": "3 d an",
+   "answer": "false",
+   "name": "r3d",
+   "value": "an",
+   "x": 374,
+   "y": 866,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p10-3dt",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d Artikel",
+   "answer": "er",
+   "x": 460,
+   "y": 867,
+   "w": 52,
+   "h": 24
+  },
+  {
+   "id": "p10-r3e-vor",
+   "group": "g3",
+   "kind": "radio",
+   "label": "3 e vor",
+   "answer": "false",
+   "name": "r3e",
+   "value": "vor",
+   "x": 342,
+   "y": 893,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p10-r3e-hinter",
+   "group": "g3",
+   "kind": "radio",
+   "label": "3 e hinter",
+   "answer": "true",
+   "name": "r3e",
+   "value": "hinter",
+   "x": 421,
+   "y": 893,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p10-3et",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e Artikel",
+   "answer": "er",
+   "x": 540,
+   "y": 894,
+   "w": 55,
+   "h": 24
+  },
+  {
+   "id": "p10-r3f-über",
+   "group": "g3",
+   "kind": "radio",
+   "label": "3 f über",
+   "answer": "true",
+   "name": "r3f",
+   "value": "über",
+   "x": 314,
+   "y": 918,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p10-r3f-an",
+   "group": "g3",
+   "kind": "radio",
+   "label": "3 f an",
+   "answer": "false",
+   "name": "r3f",
+   "value": "an",
+   "x": 403,
+   "y": 918,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p10-3ft",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 f Artikel",
+   "answer": "er",
+   "x": 488,
+   "y": 919,
+   "w": 57,
+   "h": 24
+  },
+  {
+   "id": "p10-4a",
+   "group": "g4",
+   "kind": "text",
+   "label": "1a",
+   "answer": "Können",
+   "x": 209,
+   "y": 1024,
+   "w": 136,
+   "h": 24
+  },
+  {
+   "id": "p10-4b",
+   "group": "g4",
+   "kind": "text",
+   "label": "1b",
+   "answer": "helfen",
+   "x": 495,
+   "y": 1024,
+   "w": 130,
+   "h": 24
+  },
+  {
+   "id": "p10-4c",
+   "group": "g4",
+   "kind": "text",
+   "label": "1c",
+   "answer": "suche",
+   "x": 713,
+   "y": 1025,
+   "w": 92,
+   "h": 24
+  },
+  {
+   "id": "p10-4d",
+   "group": "g4",
+   "kind": "text",
+   "label": "1d",
+   "answer": "Fahren",
+   "x": 302,
+   "y": 1050,
+   "w": 113,
+   "h": 24
+  },
+  {
+   "id": "p10-4e",
+   "group": "g4",
+   "kind": "text",
+   "label": "1e",
+   "answer": "sehen",
+   "x": 756,
+   "y": 1053,
+   "w": 102,
+   "h": 24
+  },
+  {
+   "id": "p10-4f1",
+   "group": "g4",
+   "kind": "text",
+   "label": "1f1",
+   "answer": "Sehr",
+   "x": 210,
+   "y": 1102,
+   "w": 80,
+   "h": 24
+  },
+  {
+   "id": "p10-4f2",
+   "group": "g4",
+   "kind": "text",
+   "label": "1f2",
+   "answer": "nett",
+   "x": 299,
+   "y": 1102,
+   "w": 81,
+   "h": 24
+  },
+  {
+   "id": "p10-4g",
+   "group": "g4",
+   "kind": "text",
+   "label": "2a",
+   "answer": "fragen",
+   "x": 382,
+   "y": 1140,
+   "w": 126,
+   "h": 24
+  },
+  {
+   "id": "p10-4h1",
+   "group": "g4",
+   "kind": "text",
+   "label": "2b1",
+   "answer": "Tut",
+   "x": 210,
+   "y": 1166,
+   "w": 58,
+   "h": 24
+  },
+  {
+   "id": "p10-4h2",
+   "group": "g4",
+   "kind": "text",
+   "label": "2b2",
+   "answer": "leid",
+   "x": 307,
+   "y": 1166,
+   "w": 83,
+   "h": 24
+  },
+  {
+   "id": "p10-4i",
+   "group": "g4",
+   "kind": "text",
+   "label": "2c",
+   "answer": "Trotzdem",
+   "x": 210,
+   "y": 1192,
+   "w": 180,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 2"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 3"
+  },
+  {
+   "id": "g4",
+   "label": "Aufgabe 4"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the printed key (Lektion 13, p106). Handwritten examples are not fields.",
+   "Ex 4: one field per printed letter-gap fragment; the answer is the full word from the key.",
+   "Boxes placed from word coordinates and checked visually. Not marked verified."
+  ],
   "verifiedWords": 313,
-  "totalWords": 313,
-  "notes": []
+  "totalWords": 313
  }
 }
