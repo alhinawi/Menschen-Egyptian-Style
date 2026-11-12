@@ -41,13 +41,13 @@ export function NativeAB11({page}:{page:string}){
  {text(635,1057,121,'■  Und woher')}{field('4-kommst',760,1057,125,'4b kommst')}{text(889,1057,55,'du?')}
  {text(635,1083,120,'▲  Ich komme')}{field('4-aus',760,1083,125,'4b aus')}{text(889,1083,150,'der Schweiz.')}
  {check('4',215,1168,{'4-wie':'Wie','4-heisse':'heiße','4-woher':'woher','4-du':'du','4-komme':'komme','4-und':'und','4-bist':'bist','4-ich':'Ich','4-kommst':'kommst','4-aus':'aus'})}
- {title('5',1178,'Länder','KB 4','Wörter')}{text(211,1216,515,'a  Welches Land passt? Ordnen Sie zu.','nabTitle')}{text(525,1216,490,'Deutschland | Frankreich | Österreich | die Schweiz | die Türkei','nabBank')}
+ {title('5',1178,'Länder','KB 4','Wörter')}{text(211,1216,310,'a  Welches Land passt? Ordnen Sie zu.','nabSmallTitle')}{text(530,1216,490,'Deutschland | Frankreich | Österreich | die Schweiz | die Türkei','nabBank nabLanderBank')}
  {img('landmarks',215,1250,811,111)}
- {['Brandenburger Tor','Eiffelturm','Stephansdom','Matterhorn','Hagia Sophia'].map((s,i)=><div key={s}>{text(220+i*166,1369,155,s,'nabCaption')}{i===2?text(220+i*166,1394,155,'Österreich','nabExample'):field('5-'+i,220+i*166,1394,150,'5 '+s)}</div>)}
+ {['Brandenburger Tor','Eiffelturm','Stephansdom','Matterhorn','Hagia Sophia'].map((s,i)=><div key={s}>{text([230,415,534,705,908][i],1369,[155,100,145,150,150][i],s,'nabCaption')}{i===2?text(545,1394,110,'Österreich','nabExample'):field('5-'+i,[224,397,545,685,888][i],1394,[125,105,110,140,140][i],'5 '+s)}</div>)}
  {check('5',215,1433,{'5-0':'Deutschland','5-1':'Frankreich','5-3':'die Schweiz|Schweiz','5-4':'die Türkei|Türkei'})}
  </>}
  {page==='7'&&<>
- {head('BASISTRAINING')}<div className="nabModule">1</div>{img('usa',749,140,221,190)}{text(170,209,650,'b  Suchen Sie typische Fotos und schreiben Sie die Länder-\nnamen auf Kärtchen. Ihre Partnerin / Ihr Partner ordnet zu.','nabTitle')}{open('5b',203,283,565,54,'5b Ländernamen auf Kärtchen')}
+ {head('BASISTRAINING')}<div className="nabModule">1</div>{img('usa',749,140,221,190)}{text(170,209,30,'b','nabTitle')}{text(203,209,610,'Suchen Sie typische Fotos und schreiben Sie die Länder-\nnamen auf Kärtchen. Ihre Partnerin / Ihr Partner ordnet zu.','nabSmallTitle')}
  {title('6',300,'du oder Sie?','KB 6a','Kommunikation')}{text(170,341,450,'a  Ordnen Sie zu.','nabTitle')}
  {img('du-sie',194,362,787,97)}{text(202,480,100,'du: 1,','nabExample')}{field('6-du',275,480,127,'6a du')}{text(599,480,80,'Sie:')}{field('6-sie',640,480,173,'6a Sie')}{check('6a',202,517,{'6-du':'3','6-sie':'2, 4|2,4|2 und 4'})}
  {text(170,537,810,'b  du oder Sie? Ergänzen und vergleichen Sie.','nabTitle')}
@@ -59,16 +59,16 @@ export function NativeAB11({page}:{page:string}){
  {text(590,761,285,'d  Frau Klein, woher kommen')}{choice('7-d','du',874,761,'7d du')}{text(907,761,43,'du')}{choice('7-d','Sie',950,761,'7d Sie')}{text(983,761,62,'Sie?')}
  {text(590,787,192,'e  Woher kommst')}{choice('7-e','du',784,787,'7e du')}{text(817,787,45,'du,')}{choice('7-e','Sie',865,787,'7e Sie')}{text(898,787,130,'Sie, Shema?')}
  {check('7',202,843,{'7-b':'du','7-c':'du','7-d':'Sie','7-e':'du'})}
- {title('8',869,'Ergänzen Sie.','KB 6a')}
+ {title('8',878,'Ergänzen Sie.','KB 6a')}
  {text(202,914,720,'a  ■  Woher kommst du?')}{text(225,940,165,'▲  Ich komm')}{field('8-a1',353,940,42,'8a Endung komme 1')}{text(400,940,490,'aus Spanien. Und du?')}
  {text(225,966,163,'■  Ich komm')}{field('8-a2',353,966,42,'8a Endung komme 2')}{text(400,966,360,'aus dem Iran.')}
  {text(202,992,200,'b  ■  Hallo. Ich heiß')}{field('8-b1',398,992,42,'8b Endung heiße 1')}{text(444,992,205,'Maria. Und wie heiß')}{field('8-b2',647,992,42,'8b Endung heißt')}{text(693,992,75,'du?')}
  {text(225,1018,150,'▲  Ich heiß')}{field('8-b3',343,1018,42,'8b Endung heiße 2')}{text(390,1018,180,'Michael.')}
  {text(202,1044,390,'c  ■  Guten Tag, Frau Matard. Woher komm')}{field('8-c1',621,1044,42,'8c Endung kommen')}{text(670,1044,330,'Sie? Aus Frankreich?')}
  {text(225,1070,205,'▲  Nein, ich komm')}{field('8-c2',423,1070,42,'8c Endung komme')}{text(470,1070,280,'aus der Schweiz.')}
- {check('8',202,1107,{'8-a1':'e','8-a2':'e','8-b1':'e','8-b2':'t','8-b3':'e','8-c1':'en','8-c2':'e'})}
- {title('9',1141,'Schreiben Sie Sätze zu den Fotos.','KB 6c')}
- {img('person-a',202,1178,133,184)}{img('person-b',495,1178,133,184)}{img('person-c',645,1178,120,184)}{img('person-d',797,1178,133,184)}{text(350,1205,135,'Das ist Philipp Lahm. Er kommt aus Deutschland.','nabExample')}
+ {check('8',202,1098,{'8-a1':'e','8-a2':'e','8-b1':'e','8-b2':'t','8-b3':'e','8-c1':'en','8-c2':'e'})}
+ {title('9',1129,'Schreiben Sie Sätze zu den Fotos.','KB 6c')}
+ {img('person-a',202,1156,133,184)}{img('person-b',495,1156,133,184)}{img('person-c',645,1156,120,184)}{img('person-d',797,1156,133,184)}{text(350,1183,135,'Das ist Philipp\nLahm. Er\nkommt aus\nDeutschland.','nabExample')}
  {text(215,1369,180,'Philipp Lahm,\nDeutschland','nabCaption')}{text(500,1369,160,'Wolfgang Amadeus\nMozart, Österreich','nabCaption')}{text(650,1369,140,'Prinz Felipe,\nSpanien','nabCaption')}{text(801,1369,140,'Martina Hingis,\nSchweiz','nabCaption')}
  {open('9',202,1414,785,60,'9 Sätze zu den Fotos')}
  </>}
