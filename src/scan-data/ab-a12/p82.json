@@ -2267,15 +2267,381 @@
    "h": 10
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p82-1a",
+   "group": "g1",
+   "kind": "text",
+   "label": "1a",
+   "answer": "Jacke",
+   "x": 527,
+   "y": 158,
+   "w": 57,
+   "h": 22
+  },
+  {
+   "id": "p82-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1b",
+   "answer": "Socken",
+   "x": 436,
+   "y": 174,
+   "w": 80,
+   "h": 22
+  },
+  {
+   "id": "p82-1c1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1c1",
+   "answer": "Gürtel",
+   "x": 474,
+   "y": 194,
+   "w": 80,
+   "h": 22
+  },
+  {
+   "id": "p82-1c2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1c2",
+   "answer": "Hose",
+   "x": 626,
+   "y": 194,
+   "w": 46,
+   "h": 22
+  },
+  {
+   "id": "p82-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1d",
+   "answer": "Kleid",
+   "x": 496,
+   "y": 213,
+   "w": 61,
+   "h": 22
+  },
+  {
+   "id": "p82-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1e",
+   "answer": "Pullover",
+   "x": 472,
+   "y": 233,
+   "w": 104,
+   "h": 22
+  },
+  {
+   "id": "p82-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1f",
+   "answer": "Bluse",
+   "x": 538,
+   "y": 252,
+   "w": 54,
+   "h": 22
+  },
+  {
+   "id": "p82-1g",
+   "group": "g1",
+   "kind": "text",
+   "label": "1g",
+   "answer": "Hut",
+   "x": 346,
+   "y": 271,
+   "w": 34,
+   "h": 22
+  },
+  {
+   "id": "p82-2a1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2a1",
+   "answer": "größer",
+   "x": 372,
+   "y": 349,
+   "w": 90,
+   "h": 22
+  },
+  {
+   "id": "p82-2a2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2a2",
+   "answer": "am größten",
+   "x": 575,
+   "y": 349,
+   "w": 75,
+   "h": 22
+  },
+  {
+   "id": "p82-2b1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2b1",
+   "answer": "gern",
+   "x": 235,
+   "y": 388,
+   "w": 137,
+   "h": 22
+  },
+  {
+   "id": "p82-2b2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2b2",
+   "answer": "am besten",
+   "x": 442,
+   "y": 388,
+   "w": 138,
+   "h": 22
+  },
+  {
+   "id": "p82-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2c",
+   "answer": "älter",
+   "x": 355,
+   "y": 408,
+   "w": 110,
+   "h": 22
+  },
+  {
+   "id": "p82-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2d",
+   "answer": "am liebsten",
+   "x": 292,
+   "y": 427,
+   "w": 128,
+   "h": 22
+  },
+  {
+   "id": "p82-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2e",
+   "answer": "besser",
+   "x": 233,
+   "y": 447,
+   "w": 129,
+   "h": 22
+  },
+  {
+   "id": "p82-2f",
+   "group": "g2",
+   "kind": "text",
+   "label": "2f",
+   "answer": "lieber",
+   "x": 268,
+   "y": 466,
+   "w": 130,
+   "h": 22
+  },
+  {
+   "id": "p82-r3b-als",
+   "group": "g3",
+   "kind": "radio",
+   "label": "3 b als",
+   "answer": "true",
+   "name": "r3b",
+   "value": "als",
+   "x": 298,
+   "y": 559,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p82-r3b-wie",
+   "group": "g3",
+   "kind": "radio",
+   "label": "3 b wie",
+   "answer": "false",
+   "name": "r3b",
+   "value": "wie",
+   "x": 353,
+   "y": 559,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p82-r3c-als",
+   "group": "g3",
+   "kind": "radio",
+   "label": "3 c als",
+   "answer": "false",
+   "name": "r3c",
+   "value": "als",
+   "x": 315,
+   "y": 579,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p82-r3c-wie",
+   "group": "g3",
+   "kind": "radio",
+   "label": "3 c wie",
+   "answer": "true",
+   "name": "r3c",
+   "value": "wie",
+   "x": 375,
+   "y": 579,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p82-r3d-als",
+   "group": "g3",
+   "kind": "radio",
+   "label": "3 d als",
+   "answer": "true",
+   "name": "r3d",
+   "value": "als",
+   "x": 348,
+   "y": 598,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p82-r3d-wie",
+   "group": "g3",
+   "kind": "radio",
+   "label": "3 d wie",
+   "answer": "false",
+   "name": "r3d",
+   "value": "wie",
+   "x": 403,
+   "y": 598,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p82-r3e-als",
+   "group": "g3",
+   "kind": "radio",
+   "label": "3 e als",
+   "answer": "false",
+   "name": "r3e",
+   "value": "als",
+   "x": 340,
+   "y": 618,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p82-r3e-wie",
+   "group": "g3",
+   "kind": "radio",
+   "label": "3 e wie",
+   "answer": "true",
+   "name": "r3e",
+   "value": "wie",
+   "x": 400,
+   "y": 618,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p82-4a",
+   "group": "g4",
+   "kind": "text",
+   "label": "4a",
+   "answer": "viel praktischer",
+   "x": 346,
+   "y": 767,
+   "w": 234,
+   "h": 22
+  },
+  {
+   "id": "p82-4b",
+   "group": "g4",
+   "kind": "text",
+   "label": "4b",
+   "answer": "am besten",
+   "x": 305,
+   "y": 785,
+   "w": 232,
+   "h": 22
+  },
+  {
+   "id": "p82-4c",
+   "group": "g4",
+   "kind": "text",
+   "label": "4c",
+   "answer": "total schön",
+   "x": 447,
+   "y": 803,
+   "w": 236,
+   "h": 22
+  },
+  {
+   "id": "p82-4d",
+   "group": "g4",
+   "kind": "text",
+   "label": "4d",
+   "answer": "wahnsinnig teuer",
+   "x": 218,
+   "y": 838,
+   "w": 237,
+   "h": 22
+  },
+  {
+   "id": "p82-4e",
+   "group": "g4",
+   "kind": "text",
+   "label": "4e",
+   "answer": "fast täglich",
+   "x": 218,
+   "y": 857,
+   "w": 237,
+   "h": 22
+  },
+  {
+   "id": "p82-4f",
+   "group": "g4",
+   "kind": "text",
+   "label": "4f",
+   "answer": "wie langweilig",
+   "x": 378,
+   "y": 875,
+   "w": 234,
+   "h": 22
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 2"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 3"
+  },
+  {
+   "id": "g4",
+   "label": "Aufgabe 4"
+  }
+ ],
  "review": {
   "status": "partial",
-  "verifiedWords": 323,
-  "totalWords": 323,
   "notes": [
-   "Activation reviewed on a five-page visual sample (71,76,88,98,105): word boxes align with printed text, but these are partial OCR-derived layers. verifiedWords was supplied as the retained-word count by the worker, not an independent word-by-word audit. Some handwriting, symbols, fragments and printed words may be omitted or imperfect. No exercise fields or audio added."
-  ]
+   "Answers from the printed key (Lektion 22, p107). Handwritten examples (1a Mütze, 2a groß, 3a) are not fields.",
+   "Ex 1: one field per printed letter-gap fragment; the answer is the full word from the key.",
+   "Boxes placed from word coordinates and checked visually. Not marked verified."
+  ],
+  "verifiedWords": 323,
+  "totalWords": 323
  }
 }

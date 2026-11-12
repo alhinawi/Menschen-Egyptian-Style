@@ -1854,13 +1854,197 @@
    "h": 18
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p46-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 (b)",
+   "answer": "Rücken|ücken",
+   "x": 598,
+   "y": 202,
+   "w": 90,
+   "h": 24
+  },
+  {
+   "id": "p46-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 (c)",
+   "answer": "Augen|ugen",
+   "x": 272,
+   "y": 229,
+   "w": 76,
+   "h": 24
+  },
+  {
+   "id": "p46-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 (d)",
+   "answer": "Beine|eine",
+   "x": 395,
+   "y": 229,
+   "w": 76,
+   "h": 24
+  },
+  {
+   "id": "p46-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 (e)",
+   "answer": "Füße|üße",
+   "x": 521,
+   "y": 229,
+   "w": 54,
+   "h": 24
+  },
+  {
+   "id": "p46-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 (f)",
+   "answer": "Hände|ände",
+   "x": 634,
+   "y": 229,
+   "w": 75,
+   "h": 24
+  },
+  {
+   "id": "p46-1g",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 (g)",
+   "answer": "Ohren|hren",
+   "x": 762,
+   "y": 227,
+   "w": 68,
+   "h": 24
+  },
+  {
+   "id": "p46-1h",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 (h)",
+   "answer": "Finger|inger",
+   "x": 214,
+   "y": 256,
+   "w": 94,
+   "h": 24
+  },
+  {
+   "id": "p46-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "Nehmen Sie eine Tablette und trinken Sie viel Tee.",
+   "x": 282,
+   "y": 436,
+   "w": 533,
+   "h": 24
+  },
+  {
+   "id": "p46-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c",
+   "answer": "Bleiben Sie zu Hause und sagen Sie alle Termine ab.",
+   "x": 229,
+   "y": 487,
+   "w": 586,
+   "h": 24
+  },
+  {
+   "id": "p46-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d",
+   "answer": "Essen Sie Obst und machen Sie Sport.",
+   "x": 254,
+   "y": 537,
+   "w": 561,
+   "h": 24
+  },
+  {
+   "id": "p46-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "sollt",
+   "x": 357,
+   "y": 668,
+   "w": 90,
+   "h": 24
+  },
+  {
+   "id": "p46-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "soll",
+   "x": 233,
+   "y": 694,
+   "w": 90,
+   "h": 24
+  },
+  {
+   "id": "p46-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "Soll|soll",
+   "x": 200,
+   "y": 720,
+   "w": 90,
+   "h": 24
+  },
+  {
+   "id": "p46-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e",
+   "answer": "sollen",
+   "x": 240,
+   "y": 747,
+   "w": 90,
+   "h": 24
+  },
+  {
+   "id": "p46-3f",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 f",
+   "answer": "sollst",
+   "x": 228,
+   "y": 772,
+   "w": 91,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 2"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 3"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the printed key (Lektion 18, p106). Handwritten examples (1a, 2a, 3a) are not fields.",
+   "Ex 1 answers accept the word with or without the printed first letter.",
+   "Ex 4 (free writing, key text partly garbled) has no fields yet.",
+   "Boxes placed from word coordinates and checked visually. Not marked verified."
+  ],
   "verifiedWords": 264,
-  "totalWords": 264,
-  "notes": []
+  "totalWords": 264
  }
 }

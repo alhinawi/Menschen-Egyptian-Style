@@ -2099,15 +2099,265 @@
    "h": 10
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p88-1a",
+   "group": "g1",
+   "kind": "text",
+   "label": "1a",
+   "answer": "regnet",
+   "x": 405,
+   "y": 185,
+   "w": 85,
+   "h": 22
+  },
+  {
+   "id": "p88-1b1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1b1",
+   "answer": "scheint",
+   "x": 186,
+   "y": 205,
+   "w": 95,
+   "h": 22
+  },
+  {
+   "id": "p88-1b2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1b2",
+   "answer": "warm",
+   "x": 398,
+   "y": 205,
+   "w": 92,
+   "h": 22
+  },
+  {
+   "id": "p88-1c1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1c1",
+   "answer": "Himmel",
+   "x": 260,
+   "y": 224,
+   "w": 90,
+   "h": 22
+  },
+  {
+   "id": "p88-1c2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1c2",
+   "answer": "Wolken",
+   "x": 478,
+   "y": 224,
+   "w": 97,
+   "h": 22
+  },
+  {
+   "id": "p88-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1d",
+   "answer": "Sturm",
+   "x": 462,
+   "y": 244,
+   "w": 98,
+   "h": 22
+  },
+  {
+   "id": "p88-1e1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1e1",
+   "answer": "neblig",
+   "x": 250,
+   "y": 263,
+   "w": 93,
+   "h": 22
+  },
+  {
+   "id": "p88-1e2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1e2",
+   "answer": "Grad",
+   "x": 436,
+   "y": 265,
+   "w": 99,
+   "h": 22
+  },
+  {
+   "id": "p88-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2b",
+   "answer": "kostenlos",
+   "x": 600,
+   "y": 390,
+   "w": 112,
+   "h": 22
+  },
+  {
+   "id": "p88-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2c",
+   "answer": "wolkenlos",
+   "x": 375,
+   "y": 410,
+   "w": 125,
+   "h": 22
+  },
+  {
+   "id": "p88-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2d",
+   "answer": "farblos",
+   "x": 408,
+   "y": 430,
+   "w": 117,
+   "h": 22
+  },
+  {
+   "id": "p88-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2e",
+   "answer": "arbeitslos",
+   "x": 400,
+   "y": 449,
+   "w": 115,
+   "h": 22
+  },
+  {
+   "id": "p88-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3b",
+   "answer": "denn unsere Oma ist krank",
+   "x": 458,
+   "y": 565,
+   "w": 264,
+   "h": 22
+  },
+  {
+   "id": "p88-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3c",
+   "answer": "denn der Aufzug funktioniert nicht",
+   "x": 348,
+   "y": 604,
+   "w": 374,
+   "h": 22
+  },
+  {
+   "id": "p88-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3d",
+   "answer": "denn er hat eine neue Wohnung gefunden",
+   "x": 310,
+   "y": 643,
+   "w": 412,
+   "h": 22
+  },
+  {
+   "id": "p88-4a",
+   "group": "g4",
+   "kind": "text",
+   "label": "4a",
+   "answer": "ich habe Geburtstag",
+   "x": 417,
+   "y": 789,
+   "w": 305,
+   "h": 22
+  },
+  {
+   "id": "p88-4b",
+   "group": "g4",
+   "kind": "text",
+   "label": "4b",
+   "answer": "deine Partys sind immer lustig",
+   "x": 320,
+   "y": 828,
+   "w": 402,
+   "h": 22
+  },
+  {
+   "id": "p88-4c",
+   "group": "g4",
+   "kind": "text",
+   "label": "4c",
+   "answer": "ich schreibe am Montag eine Prüfung",
+   "x": 398,
+   "y": 847,
+   "w": 324,
+   "h": 22
+  },
+  {
+   "id": "p88-4d",
+   "group": "g4",
+   "kind": "text",
+   "label": "4d",
+   "answer": "ich arbeite am Wochenende",
+   "x": 238,
+   "y": 867,
+   "w": 227,
+   "h": 22
+  },
+  {
+   "id": "p88-4e",
+   "group": "g4",
+   "kind": "text",
+   "label": "4e",
+   "answer": "ich backe gern",
+   "x": 434,
+   "y": 886,
+   "w": 288,
+   "h": 22
+  },
+  {
+   "id": "p88-4f",
+   "group": "g4",
+   "kind": "text",
+   "label": "4f",
+   "answer": "der Schnee ist traumhaft",
+   "x": 480,
+   "y": 906,
+   "w": 242,
+   "h": 22
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 2"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 3"
+  },
+  {
+   "id": "g4",
+   "label": "Aufgabe 4"
+  }
+ ],
  "review": {
   "status": "partial",
-  "verifiedWords": 299,
-  "totalWords": 299,
   "notes": [
-   "Activation reviewed on a five-page visual sample (71,76,88,98,105): word boxes align with printed text, but these are partial OCR-derived layers. verifiedWords was supplied as the retained-word count by the worker, not an independent word-by-word audit. Some handwriting, symbols, fragments and printed words may be omitted or imperfect. No exercise fields or audio added."
-  ]
+   "Answers from the printed key (Lektion 23, p107). Handwritten examples (1a Gewitter, 2a fehlerlos, 3a) are not fields.",
+   "Boxes placed from word coordinates and checked visually. Not marked verified."
+  ],
+  "verifiedWords": 299,
+  "totalWords": 299
  }
 }
