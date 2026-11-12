@@ -1,0 +1,717 @@
+{
+ "book": "kb-a12",
+ "page": 45,
+ "image": "assets/kb-a12-p45.png",
+ "width": 1209,
+ "height": 1642,
+ "words": [
+  {
+   "text": "sehen",
+   "x": 164,
+   "y": 1149,
+   "w": 64,
+   "h": 19
+  },
+  {
+   "text": "Sie",
+   "x": 237,
+   "y": 1150,
+   "w": 31,
+   "h": 18
+  },
+  {
+   "text": "das",
+   "x": 277,
+   "y": 1149,
+   "w": 36,
+   "h": 19
+  },
+  {
+   "text": "Foto",
+   "x": 323,
+   "y": 1151,
+   "w": 48,
+   "h": 17
+  },
+  {
+   "text": "an.",
+   "x": 380,
+   "y": 1156,
+   "w": 33,
+   "h": 12
+  },
+  {
+   "text": "Was",
+   "x": 420,
+   "y": 1152,
+   "w": 44,
+   "h": 17
+  },
+  {
+   "text": "meinen",
+   "x": 474,
+   "y": 1151,
+   "w": 79,
+   "h": 18
+  },
+  {
+   "text": "Sie:",
+   "x": 562,
+   "y": 1151,
+   "w": 39,
+   "h": 18
+  },
+  {
+   "text": "Was",
+   "x": 609,
+   "y": 1153,
+   "w": 43,
+   "h": 16
+  },
+  {
+   "text": "macht",
+   "x": 662,
+   "y": 1151,
+   "w": 68,
+   "h": 19
+  },
+  {
+   "text": "das",
+   "x": 738,
+   "y": 1151,
+   "w": 36,
+   "h": 19
+  },
+  {
+   "text": "Mädchen",
+   "x": 165,
+   "y": 1178,
+   "w": 98,
+   "h": 19
+  },
+  {
+   "text": "gerade?",
+   "x": 272,
+   "y": 1179,
+   "w": 86,
+   "h": 25
+  },
+  {
+   "text": "32",
+   "x": 76,
+   "y": 1259,
+   "w": 19,
+   "h": 10
+  },
+  {
+   "text": "Was",
+   "x": 162,
+   "y": 1253,
+   "w": 43,
+   "h": 17
+  },
+  {
+   "text": "ist",
+   "x": 215,
+   "y": 1252,
+   "w": 27,
+   "h": 18
+  },
+  {
+   "text": "richtig?",
+   "x": 252,
+   "y": 1252,
+   "w": 85,
+   "h": 26
+  },
+  {
+   "text": "Hören",
+   "x": 347,
+   "y": 1253,
+   "w": 65,
+   "h": 17
+  },
+  {
+   "text": "Sie",
+   "x": 420,
+   "y": 1253,
+   "w": 32,
+   "h": 18
+  },
+  {
+   "text": "und",
+   "x": 462,
+   "y": 1253,
+   "w": 39,
+   "h": 18
+  },
+  {
+   "text": "kreuzen",
+   "x": 512,
+   "y": 1253,
+   "w": 86,
+   "h": 19
+  },
+  {
+   "text": "Sie",
+   "x": 607,
+   "y": 1254,
+   "w": 31,
+   "h": 18
+  },
+  {
+   "text": "an.",
+   "x": 647,
+   "y": 1260,
+   "w": 33,
+   "h": 12
+  },
+  {
+   "text": "Line",
+   "x": 165,
+   "y": 1298,
+   "w": 40,
+   "h": 16
+  },
+  {
+   "text": "1",
+   "x": 163,
+   "y": 1328,
+   "w": 6,
+   "h": 14
+  },
+  {
+   "text": "hatte",
+   "x": 190,
+   "y": 1326,
+   "w": 50,
+   "h": 17
+  },
+  {
+   "text": "heute",
+   "x": 248,
+   "y": 1326,
+   "w": 55,
+   "h": 17
+  },
+  {
+   "text": "einen",
+   "x": 360,
+   "y": 1328,
+   "w": 54,
+   "h": 16
+  },
+  {
+   "text": "schlechten",
+   "x": 423,
+   "y": 1327,
+   "w": 105,
+   "h": 17
+  },
+  {
+   "text": "einen",
+   "x": 586,
+   "y": 1329,
+   "w": 54,
+   "h": 16
+  },
+  {
+   "text": "guten",
+   "x": 647,
+   "y": 1333,
+   "w": 56,
+   "h": 18
+  },
+  {
+   "text": "Tag.",
+   "x": 731,
+   "y": 1330,
+   "w": 37,
+   "h": 22
+  },
+  {
+   "text": "2",
+   "x": 164,
+   "y": 1357,
+   "w": 8,
+   "h": 15
+  },
+  {
+   "text": "schreibt",
+   "x": 190,
+   "y": 1355,
+   "w": 78,
+   "h": 17
+  },
+  {
+   "text": "einen",
+   "x": 326,
+   "y": 1357,
+   "w": 54,
+   "h": 16
+  },
+  {
+   "text": "Brief.",
+   "x": 390,
+   "y": 1356,
+   "w": 51,
+   "h": 17
+  },
+  {
+   "text": "Tagebuch.",
+   "x": 499,
+   "y": 1357,
+   "w": 96,
+   "h": 23
+  },
+  {
+   "text": "3",
+   "x": 164,
+   "y": 1386,
+   "w": 7,
+   "h": 15
+  },
+  {
+   "text": "soll",
+   "x": 207,
+   "y": 1381,
+   "w": 44,
+   "h": 30
+  },
+  {
+   "text": "sollnicht",
+   "x": 309,
+   "y": 1385,
+   "w": 92,
+   "h": 17
+  },
+  {
+   "text": "runterkommen.",
+   "x": 430,
+   "y": 1386,
+   "w": 156,
+   "h": 17
+  },
+  {
+   "text": "Schreiben",
+   "x": 163,
+   "y": 1456,
+   "w": 108,
+   "h": 18
+  },
+  {
+   "text": "Sie",
+   "x": 279,
+   "y": 1456,
+   "w": 32,
+   "h": 19
+  },
+  {
+   "text": "Tagebuch",
+   "x": 318,
+   "y": 1456,
+   "w": 102,
+   "h": 26
+  },
+  {
+   "text": "oder",
+   "x": 430,
+   "y": 1457,
+   "w": 50,
+   "h": 19
+  },
+  {
+   "text": "haben",
+   "x": 489,
+   "y": 1457,
+   "w": 64,
+   "h": 19
+  },
+  {
+   "text": "Sie",
+   "x": 562,
+   "y": 1458,
+   "w": 32,
+   "h": 18
+  },
+  {
+   "text": "früher",
+   "x": 603,
+   "y": 1457,
+   "w": 69,
+   "h": 19
+  },
+  {
+   "text": "Tagebuch",
+   "x": 161,
+   "y": 1485,
+   "w": 104,
+   "h": 26
+  },
+  {
+   "text": "geschrieben?",
+   "x": 273,
+   "y": 1486,
+   "w": 146,
+   "h": 25
+  },
+  {
+   "text": "Erzählen",
+   "x": 429,
+   "y": 1486,
+   "w": 94,
+   "h": 19
+  },
+  {
+   "text": "Sie.",
+   "x": 532,
+   "y": 1487,
+   "w": 38,
+   "h": 18
+  },
+  {
+   "text": "fünfundvierzig",
+   "x": 913,
+   "y": 1578,
+   "w": 136,
+   "h": 21
+  },
+  {
+   "text": "45",
+   "x": 1088,
+   "y": 1581,
+   "w": 19,
+   "h": 13
+  },
+  {
+   "text": "Komm",
+   "x": 648,
+   "y": 88,
+   "w": 92,
+   "h": 50
+  },
+  {
+   "text": "sofort",
+   "x": 762,
+   "y": 88,
+   "w": 137,
+   "h": 50
+  },
+  {
+   "text": "runter!",
+   "x": 923,
+   "y": 88,
+   "w": 160,
+   "h": 50
+  },
+  {
+   "text": "Sprechen:",
+   "x": 926,
+   "y": 1096,
+   "w": 92,
+   "h": 21
+  },
+  {
+   "text": "Bitten",
+   "x": 1028,
+   "y": 1096,
+   "w": 61,
+   "h": 21
+  },
+  {
+   "text": "und",
+   "x": 1100,
+   "y": 1096,
+   "w": 31,
+   "h": 21
+  },
+  {
+   "text": "Aufforderungen:",
+   "x": 926,
+   "y": 1121,
+   "w": 122,
+   "h": 21
+  },
+  {
+   "text": "Deck",
+   "x": 1057,
+   "y": 1121,
+   "w": 33,
+   "h": 21
+  },
+  {
+   "text": "bitte",
+   "x": 1097,
+   "y": 1121,
+   "w": 41,
+   "h": 21
+  },
+  {
+   "text": "den",
+   "x": 926,
+   "y": 1149,
+   "w": 25,
+   "h": 21
+  },
+  {
+   "text": "Tisch.",
+   "x": 960,
+   "y": 1149,
+   "w": 50,
+   "h": 21
+  },
+  {
+   "text": "Lesen:",
+   "x": 926,
+   "y": 1186,
+   "w": 58,
+   "h": 21
+  },
+  {
+   "text": "Tagebucheintrag",
+   "x": 995,
+   "y": 1186,
+   "w": 146,
+   "h": 21
+  },
+  {
+   "text": "Schreiben:",
+   "x": 926,
+   "y": 1225,
+   "w": 106,
+   "h": 21
+  },
+  {
+   "text": "E-Mail",
+   "x": 1043,
+   "y": 1225,
+   "w": 64,
+   "h": 21
+  },
+  {
+   "text": "Wortfeld:",
+   "x": 926,
+   "y": 1261,
+   "w": 81,
+   "h": 21
+  },
+  {
+   "text": "Aktivitäten",
+   "x": 1017,
+   "y": 1261,
+   "w": 99,
+   "h": 21
+  },
+  {
+   "text": "im",
+   "x": 1125,
+   "y": 1261,
+   "w": 18,
+   "h": 21
+  },
+  {
+   "text": "Haushalt",
+   "x": 926,
+   "y": 1287,
+   "w": 80,
+   "h": 21
+  },
+  {
+   "text": "Grammatik:",
+   "x": 926,
+   "y": 1325,
+   "w": 106,
+   "h": 21
+  },
+  {
+   "text": "Imperativ",
+   "x": 1043,
+   "y": 1325,
+   "w": 95,
+   "h": 21
+  },
+  {
+   "text": "(du/ihr):",
+   "x": 926,
+   "y": 1351,
+   "w": 75,
+   "h": 21
+  },
+  {
+   "text": "Mach",
+   "x": 1009,
+   "y": 1351,
+   "w": 33,
+   "h": 21
+  },
+  {
+   "text": "dein",
+   "x": 1051,
+   "y": 1351,
+   "w": 33,
+   "h": 21
+  },
+  {
+   "text": "Bett!;",
+   "x": 1092,
+   "y": 1351,
+   "w": 50,
+   "h": 21
+  },
+  {
+   "text": "Personalpronomen",
+   "x": 926,
+   "y": 1378,
+   "w": 170,
+   "h": 21
+  },
+  {
+   "text": "im",
+   "x": 1108,
+   "y": 1378,
+   "w": 21,
+   "h": 21
+  },
+  {
+   "text": "Akkusativ:",
+   "x": 926,
+   "y": 1404,
+   "w": 81,
+   "h": 21
+  },
+  {
+   "text": "mich,",
+   "x": 1015,
+   "y": 1404,
+   "w": 40,
+   "h": 21
+  },
+  {
+   "text": "dich,",
+   "x": 1064,
+   "y": 1404,
+   "w": 40,
+   "h": 21
+  },
+  {
+   "text": "ihn,",
+   "x": 1112,
+   "y": 1404,
+   "w": 32,
+   "h": 21
+  },
+  {
+   "text": "...",
+   "x": 926,
+   "y": 1430,
+   "w": 22,
+   "h": 21
+  }
+ ],
+ "fields": [
+  {
+   "id": "2-1-0",
+   "group": "task2",
+   "kind": "radio",
+   "label": "Line hatte heute einen ... Tag schlechten",
+   "answer": "true",
+   "x": 330,
+   "y": 1324,
+   "w": 24,
+   "h": 24,
+   "name": "2-1",
+   "value": "schlechten"
+  },
+  {
+   "id": "2-1-1",
+   "group": "task2",
+   "kind": "radio",
+   "label": "Line hatte heute einen ... Tag guten",
+   "answer": "false",
+   "x": 555,
+   "y": 1324,
+   "w": 24,
+   "h": 24,
+   "name": "2-1",
+   "value": "guten"
+  },
+  {
+   "id": "2-2-0",
+   "group": "task2",
+   "kind": "radio",
+   "label": "Line schreibt ... Brief",
+   "answer": "false",
+   "x": 296,
+   "y": 1353,
+   "w": 24,
+   "h": 24,
+   "name": "2-2",
+   "value": "Brief"
+  },
+  {
+   "id": "2-2-1",
+   "group": "task2",
+   "kind": "radio",
+   "label": "Line schreibt ... Tagebuch",
+   "answer": "true",
+   "x": 469,
+   "y": 1353,
+   "w": 24,
+   "h": 24,
+   "name": "2-2",
+   "value": "Tagebuch"
+  },
+  {
+   "id": "2-3-0",
+   "group": "task2",
+   "kind": "radio",
+   "label": "Line ... runterkommen soll",
+   "answer": "true",
+   "x": 189,
+   "y": 1383,
+   "w": 24,
+   "h": 24,
+   "name": "2-3",
+   "value": "soll"
+  },
+  {
+   "id": "2-3-1",
+   "group": "task2",
+   "kind": "radio",
+   "label": "Line ... runterkommen soll nicht",
+   "answer": "false",
+   "x": 279,
+   "y": 1383,
+   "w": 24,
+   "h": 24,
+   "name": "2-3",
+   "value": "soll nicht"
+  }
+ ],
+ "audio": [
+  {
+   "id": "cd3-31-0",
+   "src": "assets/kb-a12-cd3-track31.mp3",
+   "label": "CD 3, Track 31",
+   "x": 55,
+   "y": 1250,
+   "w": 55,
+   "h": 28
+  }
+ ],
+ "groups": [
+  {
+   "id": "task2",
+   "label": "Aufgabe 2"
+  }
+ ],
+ "review": {
+  "status": "partial",
+  "verifiedWords": 0,
+  "totalWords": 86,
+  "notes": [
+   "German OCR word boxes added on the original scan. Exercise fields and audio-marker positions checked against the printed page; the complete word layer still needs an independent word-by-word audit.",
+   "Official key L20 KB 2: einen schlechten; Tagebuch; soll. Tasks 1 and 3 are open speaking, not graded. CD3 31 mapped from the printed icon, not independently listened to."
+  ]
+ }
+}
