@@ -1,0 +1,2106 @@
+{
+  "book": "kb-a11",
+  "page": 34,
+  "image": "assets/kb-a11-p34.png",
+  "width": 848,
+  "height": 1200,
+  "words": [
+    {
+      "text": "Laptop",
+      "x": 84,
+      "y": 144,
+      "w": 34,
+      "h": 12
+    },
+    {
+      "text": "E-Mail",
+      "x": 191,
+      "y": 142,
+      "w": 36,
+      "h": 12
+    },
+    {
+      "text": "Handy",
+      "x": 306,
+      "y": 140,
+      "w": 28,
+      "h": 13
+    },
+    {
+      "text": "SMS",
+      "x": 393,
+      "y": 140,
+      "w": 20,
+      "h": 13
+    },
+    {
+      "text": "Briefmarke",
+      "x": 489,
+      "y": 138,
+      "w": 48,
+      "h": 13
+    },
+    {
+      "text": "Rechnung",
+      "x": 591,
+      "y": 138,
+      "w": 55,
+      "h": 12
+    },
+    {
+      "text": "Telefon",
+      "x": 739,
+      "y": 136,
+      "w": 36,
+      "h": 12
+    },
+    {
+      "text": "Lesen",
+      "x": 142,
+      "y": 202,
+      "w": 40,
+      "h": 11
+    },
+    {
+      "text": "Sie",
+      "x": 188,
+      "y": 200,
+      "w": 22,
+      "h": 13
+    },
+    {
+      "text": "die",
+      "x": 215,
+      "y": 199,
+      "w": 23,
+      "h": 13
+    },
+    {
+      "text": "E-Mail,",
+      "x": 245,
+      "y": 199,
+      "w": 50,
+      "h": 15
+    },
+    {
+      "text": "sehen",
+      "x": 302,
+      "y": 198,
+      "w": 42,
+      "h": 13
+    },
+    {
+      "text": "Sie",
+      "x": 350,
+      "y": 198,
+      "w": 22,
+      "h": 13
+    },
+    {
+      "text": "die",
+      "x": 377,
+      "y": 200,
+      "w": 20,
+      "h": 12
+    },
+    {
+      "text": "Fotos",
+      "x": 402,
+      "y": 199,
+      "w": 38,
+      "h": 12
+    },
+    {
+      "text": "an",
+      "x": 446,
+      "y": 201,
+      "w": 15,
+      "h": 9
+    },
+    {
+      "text": "und",
+      "x": 467,
+      "y": 199,
+      "w": 25,
+      "h": 12
+    },
+    {
+      "text": "hören",
+      "x": 498,
+      "y": 199,
+      "w": 40,
+      "h": 12
+    },
+    {
+      "text": "Sie.",
+      "x": 543,
+      "y": 199,
+      "w": 24,
+      "h": 12
+    },
+    {
+      "text": "Ergänzen",
+      "x": 573,
+      "y": 199,
+      "w": 60,
+      "h": 12
+    },
+    {
+      "text": "Sie.",
+      "x": 639,
+      "y": 199,
+      "w": 24,
+      "h": 12
+    },
+    {
+      "text": "Christian",
+      "x": 145,
+      "y": 231,
+      "w": 60,
+      "h": 12
+    },
+    {
+      "text": "Schmidt",
+      "x": 210,
+      "y": 231,
+      "w": 52,
+      "h": 12
+    },
+    {
+      "text": "Hierholtzer",
+      "x": 269,
+      "y": 229,
+      "w": 75,
+      "h": 13
+    },
+    {
+      "text": "Brenner",
+      "x": 350,
+      "y": 228,
+      "w": 53,
+      "h": 13
+    },
+    {
+      "text": "PR-Media",
+      "x": 414,
+      "y": 228,
+      "w": 55,
+      "h": 12
+    },
+    {
+      "text": "Leitgeb",
+      "x": 145,
+      "y": 252,
+      "w": 51,
+      "h": 12
+    },
+    {
+      "text": "Frau",
+      "x": 203,
+      "y": 252,
+      "w": 24,
+      "h": 10
+    },
+    {
+      "text": "Hintze",
+      "x": 234,
+      "y": 252,
+      "w": 39,
+      "h": 10
+    },
+    {
+      "text": "C.",
+      "x": 285,
+      "y": 250,
+      "w": 11,
+      "h": 11
+    },
+    {
+      "text": "Lehmann",
+      "x": 303,
+      "y": 249,
+      "w": 55,
+      "h": 12
+    },
+    {
+      "text": "a",
+      "x": 143,
+      "y": 286,
+      "w": 6,
+      "h": 7
+    },
+    {
+      "text": "Der",
+      "x": 162,
+      "y": 283,
+      "w": 22,
+      "h": 10
+    },
+    {
+      "text": "Mann",
+      "x": 189,
+      "y": 282,
+      "w": 39,
+      "h": 10
+    },
+    {
+      "text": "auf",
+      "x": 233,
+      "y": 280,
+      "w": 22,
+      "h": 12
+    },
+    {
+      "text": "den",
+      "x": 259,
+      "y": 280,
+      "w": 25,
+      "h": 11
+    },
+    {
+      "text": "Fotos",
+      "x": 289,
+      "y": 281,
+      "w": 33,
+      "h": 10
+    },
+    {
+      "text": "heißt",
+      "x": 328,
+      "y": 278,
+      "w": 35,
+      "h": 13
+    },
+    {
+      "text": "Christian",
+      "x": 368,
+      "y": 280,
+      "w": 50,
+      "h": 12
+    },
+    {
+      "text": "Schmidt.",
+      "x": 423,
+      "y": 279,
+      "w": 50,
+      "h": 13
+    },
+    {
+      "text": "b",
+      "x": 142,
+      "y": 312,
+      "w": 8,
+      "h": 11
+    },
+    {
+      "text": "Um",
+      "x": 162,
+      "y": 312,
+      "w": 22,
+      "h": 11
+    },
+    {
+      "text": "14:00",
+      "x": 189,
+      "y": 312,
+      "w": 33,
+      "h": 11
+    },
+    {
+      "text": "Uhr",
+      "x": 227,
+      "y": 310,
+      "w": 25,
+      "h": 12
+    },
+    {
+      "text": "ist",
+      "x": 258,
+      "y": 313,
+      "w": 15,
+      "h": 9
+    },
+    {
+      "text": "ein",
+      "x": 278,
+      "y": 310,
+      "w": 21,
+      "h": 12
+    },
+    {
+      "text": "Termin",
+      "x": 304,
+      "y": 310,
+      "w": 48,
+      "h": 11
+    },
+    {
+      "text": "mit",
+      "x": 358,
+      "y": 309,
+      "w": 23,
+      "h": 11
+    },
+    {
+      "text": "c",
+      "x": 143,
+      "y": 346,
+      "w": 6,
+      "h": 7
+    },
+    {
+      "text": "Christian",
+      "x": 162,
+      "y": 341,
+      "w": 62,
+      "h": 12
+    },
+    {
+      "text": "Schmidt",
+      "x": 230,
+      "y": 340,
+      "w": 55,
+      "h": 12
+    },
+    {
+      "text": "und",
+      "x": 290,
+      "y": 339,
+      "w": 26,
+      "h": 12
+    },
+    {
+      "text": "C.",
+      "x": 321,
+      "y": 340,
+      "w": 7,
+      "h": 11
+    },
+    {
+      "text": "Lehmann",
+      "x": 338,
+      "y": 339,
+      "w": 63,
+      "h": 11
+    },
+    {
+      "text": "arbeiten",
+      "x": 407,
+      "y": 338,
+      "w": 56,
+      "h": 12
+    },
+    {
+      "text": "bei",
+      "x": 162,
+      "y": 361,
+      "w": 19,
+      "h": 12
+    },
+    {
+      "text": "Betreff:",
+      "x": 686,
+      "y": 242,
+      "w": 26,
+      "h": 9
+    },
+    {
+      "text": "Achtung!",
+      "x": 716,
+      "y": 242,
+      "w": 36,
+      "h": 9
+    },
+    {
+      "text": "Termine!",
+      "x": 756,
+      "y": 242,
+      "w": 36,
+      "h": 9
+    },
+    {
+      "text": "Neu!",
+      "x": 796,
+      "y": 242,
+      "w": 20,
+      "h": 9
+    },
+    {
+      "text": "Normaler",
+      "x": 695,
+      "y": 261,
+      "w": 44,
+      "h": 9
+    },
+    {
+      "text": "Text",
+      "x": 742,
+      "y": 261,
+      "w": 20,
+      "h": 9
+    },
+    {
+      "text": "Variable",
+      "x": 780,
+      "y": 261,
+      "w": 36,
+      "h": 9
+    },
+    {
+      "text": "Breite",
+      "x": 818,
+      "y": 261,
+      "w": 27,
+      "h": 9
+    },
+    {
+      "text": "Hallo",
+      "x": 686,
+      "y": 280,
+      "w": 23,
+      "h": 12
+    },
+    {
+      "text": "Herr",
+      "x": 711,
+      "y": 280,
+      "w": 19,
+      "h": 12
+    },
+    {
+      "text": "Schmidt,",
+      "x": 732,
+      "y": 282,
+      "w": 33,
+      "h": 8
+    },
+    {
+      "text": "Sie",
+      "x": 686,
+      "y": 309,
+      "w": 14,
+      "h": 10
+    },
+    {
+      "text": "haben",
+      "x": 701,
+      "y": 309,
+      "w": 25,
+      "h": 10
+    },
+    {
+      "text": "heute",
+      "x": 727,
+      "y": 309,
+      "w": 25,
+      "h": 10
+    },
+    {
+      "text": "drei",
+      "x": 751,
+      "y": 309,
+      "w": 15,
+      "h": 9
+    },
+    {
+      "text": "neue",
+      "x": 768,
+      "y": 309,
+      "w": 19,
+      "h": 9
+    },
+    {
+      "text": "Termine:",
+      "x": 789,
+      "y": 309,
+      "w": 34,
+      "h": 9
+    },
+    {
+      "text": "–",
+      "x": 685,
+      "y": 332,
+      "w": 9,
+      "h": 2
+    },
+    {
+      "text": "Firma",
+      "x": 694,
+      "y": 332,
+      "w": 26,
+      "h": 10
+    },
+    {
+      "text": "Hierholtzer",
+      "x": 718,
+      "y": 332,
+      "w": 45,
+      "h": 10
+    },
+    {
+      "text": "(14",
+      "x": 765,
+      "y": 334,
+      "w": 13,
+      "h": 8
+    },
+    {
+      "text": "Uhr)",
+      "x": 781,
+      "y": 334,
+      "w": 17,
+      "h": 9
+    },
+    {
+      "text": "–",
+      "x": 685,
+      "y": 349,
+      "w": 6,
+      "h": 2
+    },
+    {
+      "text": "Firma",
+      "x": 691,
+      "y": 345,
+      "w": 26,
+      "h": 10
+    },
+    {
+      "text": "Leitgeb",
+      "x": 717,
+      "y": 345,
+      "w": 32,
+      "h": 10
+    },
+    {
+      "text": "(16",
+      "x": 751,
+      "y": 347,
+      "w": 13,
+      "h": 9
+    },
+    {
+      "text": "Uhr)",
+      "x": 768,
+      "y": 347,
+      "w": 17,
+      "h": 9
+    },
+    {
+      "text": "–",
+      "x": 687,
+      "y": 364,
+      "w": 5,
+      "h": 2
+    },
+    {
+      "text": "Firma",
+      "x": 693,
+      "y": 361,
+      "w": 25,
+      "h": 10
+    },
+    {
+      "text": "PR-Media,",
+      "x": 719,
+      "y": 361,
+      "w": 47,
+      "h": 10
+    },
+    {
+      "text": "Frau",
+      "x": 766,
+      "y": 361,
+      "w": 19,
+      "h": 9
+    },
+    {
+      "text": "Hintze",
+      "x": 787,
+      "y": 361,
+      "w": 25,
+      "h": 9
+    },
+    {
+      "text": "(17",
+      "x": 813,
+      "y": 359,
+      "w": 13,
+      "h": 9
+    },
+    {
+      "text": "Schöne",
+      "x": 685,
+      "y": 383,
+      "w": 31,
+      "h": 10
+    },
+    {
+      "text": "Grüße",
+      "x": 716,
+      "y": 383,
+      "w": 28,
+      "h": 10
+    },
+    {
+      "text": "C.",
+      "x": 685,
+      "y": 409,
+      "w": 12,
+      "h": 10
+    },
+    {
+      "text": "Lehmann",
+      "x": 697,
+      "y": 411,
+      "w": 37,
+      "h": 8
+    },
+    {
+      "text": "Brenner",
+      "x": 685,
+      "y": 423,
+      "w": 34,
+      "h": 13
+    },
+    {
+      "text": "IT-Consulting",
+      "x": 719,
+      "y": 423,
+      "w": 55,
+      "h": 13
+    },
+    {
+      "text": "Sehen",
+      "x": 144,
+      "y": 430,
+      "w": 44,
+      "h": 13
+    },
+    {
+      "text": "Sie",
+      "x": 194,
+      "y": 430,
+      "w": 22,
+      "h": 12
+    },
+    {
+      "text": "die",
+      "x": 221,
+      "y": 429,
+      "w": 23,
+      "h": 13
+    },
+    {
+      "text": "Fotos",
+      "x": 251,
+      "y": 430,
+      "w": 40,
+      "h": 11
+    },
+    {
+      "text": "2–4",
+      "x": 297,
+      "y": 429,
+      "w": 28,
+      "h": 12
+    },
+    {
+      "text": "an",
+      "x": 331,
+      "y": 432,
+      "w": 17,
+      "h": 9
+    },
+    {
+      "text": "und",
+      "x": 355,
+      "y": 427,
+      "w": 27,
+      "h": 13
+    },
+    {
+      "text": "hören",
+      "x": 389,
+      "y": 427,
+      "w": 43,
+      "h": 13
+    },
+    {
+      "text": "Sie.",
+      "x": 437,
+      "y": 427,
+      "w": 27,
+      "h": 12
+    },
+    {
+      "text": "Kreuzen",
+      "x": 471,
+      "y": 427,
+      "w": 60,
+      "h": 12
+    },
+    {
+      "text": "Sie",
+      "x": 537,
+      "y": 425,
+      "w": 21,
+      "h": 13
+    },
+    {
+      "text": "an.",
+      "x": 564,
+      "y": 429,
+      "w": 22,
+      "h": 9
+    },
+    {
+      "text": "a",
+      "x": 145,
+      "y": 465,
+      "w": 7,
+      "h": 8
+    },
+    {
+      "text": "Frau",
+      "x": 164,
+      "y": 462,
+      "w": 29,
+      "h": 10
+    },
+    {
+      "text": "Feser",
+      "x": 198,
+      "y": 462,
+      "w": 34,
+      "h": 10
+    },
+    {
+      "text": "und",
+      "x": 237,
+      "y": 460,
+      "w": 25,
+      "h": 12
+    },
+    {
+      "text": "Herr",
+      "x": 267,
+      "y": 461,
+      "w": 30,
+      "h": 10
+    },
+    {
+      "text": "Brenner",
+      "x": 302,
+      "y": 460,
+      "w": 48,
+      "h": 11
+    },
+    {
+      "text": "sind",
+      "x": 354,
+      "y": 460,
+      "w": 26,
+      "h": 11
+    },
+    {
+      "text": "im",
+      "x": 426,
+      "y": 458,
+      "w": 16,
+      "h": 11
+    },
+    {
+      "text": "Büro.",
+      "x": 448,
+      "y": 458,
+      "w": 34,
+      "h": 11
+    },
+    {
+      "text": "am",
+      "x": 520,
+      "y": 461,
+      "w": 20,
+      "h": 7
+    },
+    {
+      "text": "See.",
+      "x": 544,
+      "y": 457,
+      "w": 25,
+      "h": 11
+    },
+    {
+      "text": "b",
+      "x": 145,
+      "y": 481,
+      "w": 8,
+      "h": 12
+    },
+    {
+      "text": "Sie",
+      "x": 164,
+      "y": 482,
+      "w": 25,
+      "h": 11
+    },
+    {
+      "text": "wollen",
+      "x": 193,
+      "y": 482,
+      "w": 38,
+      "h": 11
+    },
+    {
+      "text": "Christian",
+      "x": 269,
+      "y": 479,
+      "w": 61,
+      "h": 12
+    },
+    {
+      "text": "Schmidt",
+      "x": 335,
+      "y": 478,
+      "w": 53,
+      "h": 12
+    },
+    {
+      "text": "Frau",
+      "x": 427,
+      "y": 479,
+      "w": 29,
+      "h": 10
+    },
+    {
+      "text": "Esebeck",
+      "x": 462,
+      "y": 477,
+      "w": 50,
+      "h": 12
+    },
+    {
+      "text": "sprechen.",
+      "x": 530,
+      "y": 476,
+      "w": 63,
+      "h": 16
+    },
+    {
+      "text": "c",
+      "x": 146,
+      "y": 505,
+      "w": 6,
+      "h": 8
+    },
+    {
+      "text": "Christian",
+      "x": 164,
+      "y": 501,
+      "w": 61,
+      "h": 12
+    },
+    {
+      "text": "Schmidt",
+      "x": 230,
+      "y": 500,
+      "w": 54,
+      "h": 12
+    },
+    {
+      "text": "hat",
+      "x": 289,
+      "y": 499,
+      "w": 22,
+      "h": 12
+    },
+    {
+      "text": "keine",
+      "x": 348,
+      "y": 498,
+      "w": 35,
+      "h": 12
+    },
+    {
+      "text": "Zeit",
+      "x": 388,
+      "y": 498,
+      "w": 25,
+      "h": 11
+    },
+    {
+      "text": "Zeit",
+      "x": 445,
+      "y": 498,
+      "w": 31,
+      "h": 11
+    },
+    {
+      "text": "für",
+      "x": 494,
+      "y": 496,
+      "w": 20,
+      "h": 12
+    },
+    {
+      "text": "Eva.",
+      "x": 519,
+      "y": 497,
+      "w": 26,
+      "h": 11
+    },
+    {
+      "text": "d",
+      "x": 146,
+      "y": 523,
+      "w": 7,
+      "h": 11
+    },
+    {
+      "text": "Der",
+      "x": 164,
+      "y": 521,
+      "w": 22,
+      "h": 11
+    },
+    {
+      "text": "Arbeitsplatz",
+      "x": 191,
+      "y": 520,
+      "w": 80,
+      "h": 16
+    },
+    {
+      "text": "am",
+      "x": 276,
+      "y": 523,
+      "w": 19,
+      "h": 8
+    },
+    {
+      "text": "See",
+      "x": 301,
+      "y": 521,
+      "w": 25,
+      "h": 11
+    },
+    {
+      "text": "ist",
+      "x": 329,
+      "y": 521,
+      "w": 20,
+      "h": 11
+    },
+    {
+      "text": "praktisch.",
+      "x": 379,
+      "y": 519,
+      "w": 66,
+      "h": 12
+    },
+    {
+      "text": "nicht",
+      "x": 477,
+      "y": 519,
+      "w": 40,
+      "h": 12
+    },
+    {
+      "text": "praktisch.",
+      "x": 522,
+      "y": 519,
+      "w": 66,
+      "h": 12
+    },
+    {
+      "text": "Wer",
+      "x": 147,
+      "y": 591,
+      "w": 30,
+      "h": 11
+    },
+    {
+      "text": "ist",
+      "x": 183,
+      "y": 590,
+      "w": 18,
+      "h": 12
+    },
+    {
+      "text": "wer?",
+      "x": 206,
+      "y": 590,
+      "w": 36,
+      "h": 12
+    },
+    {
+      "text": "Wer",
+      "x": 247,
+      "y": 590,
+      "w": 30,
+      "h": 11
+    },
+    {
+      "text": "macht",
+      "x": 283,
+      "y": 588,
+      "w": 46,
+      "h": 13
+    },
+    {
+      "text": "was?",
+      "x": 334,
+      "y": 588,
+      "w": 36,
+      "h": 12
+    },
+    {
+      "text": "Hören",
+      "x": 148,
+      "y": 611,
+      "w": 39,
+      "h": 11
+    },
+    {
+      "text": "Sie",
+      "x": 192,
+      "y": 610,
+      "w": 19,
+      "h": 12
+    },
+    {
+      "text": "noch",
+      "x": 217,
+      "y": 609,
+      "w": 31,
+      "h": 12
+    },
+    {
+      "text": "einmal",
+      "x": 254,
+      "y": 609,
+      "w": 44,
+      "h": 12
+    },
+    {
+      "text": "und",
+      "x": 304,
+      "y": 608,
+      "w": 24,
+      "h": 13
+    },
+    {
+      "text": "ordnen",
+      "x": 334,
+      "y": 608,
+      "w": 46,
+      "h": 12
+    },
+    {
+      "text": "Sie",
+      "x": 385,
+      "y": 608,
+      "w": 19,
+      "h": 12
+    },
+    {
+      "text": "zu.",
+      "x": 410,
+      "y": 612,
+      "w": 19,
+      "h": 7
+    },
+    {
+      "text": "Christian",
+      "x": 148,
+      "y": 637,
+      "w": 56,
+      "h": 9
+    },
+    {
+      "text": "Schmidt",
+      "x": 209,
+      "y": 636,
+      "w": 49,
+      "h": 10
+    },
+    {
+      "text": "=",
+      "x": 264,
+      "y": 640,
+      "w": 7,
+      "h": 3
+    },
+    {
+      "text": "C,",
+      "x": 276,
+      "y": 635,
+      "w": 10,
+      "h": 11
+    },
+    {
+      "text": "Frau",
+      "x": 292,
+      "y": 635,
+      "w": 26,
+      "h": 9
+    },
+    {
+      "text": "Feser",
+      "x": 324,
+      "y": 635,
+      "w": 24,
+      "h": 9
+    },
+    {
+      "text": "=",
+      "x": 361,
+      "y": 639,
+      "w": 7,
+      "h": 3
+    },
+    {
+      "text": "F,",
+      "x": 374,
+      "y": 634,
+      "w": 7,
+      "h": 11
+    },
+    {
+      "text": "Eva",
+      "x": 387,
+      "y": 634,
+      "w": 20,
+      "h": 9
+    },
+    {
+      "text": "=",
+      "x": 410,
+      "y": 639,
+      "w": 7,
+      "h": 3
+    },
+    {
+      "text": "E,",
+      "x": 421,
+      "y": 634,
+      "w": 12,
+      "h": 11
+    },
+    {
+      "text": "Herr",
+      "x": 439,
+      "y": 633,
+      "w": 28,
+      "h": 10
+    },
+    {
+      "text": "Brenner",
+      "x": 473,
+      "y": 633,
+      "w": 62,
+      "h": 9
+    },
+    {
+      "text": "=",
+      "x": 540,
+      "y": 638,
+      "w": 8,
+      "h": 3
+    },
+    {
+      "text": "B",
+      "x": 553,
+      "y": 633,
+      "w": 9,
+      "h": 10
+    },
+    {
+      "text": "a",
+      "x": 148,
+      "y": 665,
+      "w": 7,
+      "h": 7
+    },
+    {
+      "text": "E",
+      "x": 167,
+      "y": 662,
+      "w": 10,
+      "h": 12
+    },
+    {
+      "text": "ist",
+      "x": 194,
+      "y": 661,
+      "w": 16,
+      "h": 11
+    },
+    {
+      "text": "die",
+      "x": 215,
+      "y": 660,
+      "w": 20,
+      "h": 12
+    },
+    {
+      "text": "Freundin",
+      "x": 240,
+      "y": 659,
+      "w": 62,
+      "h": 12
+    },
+    {
+      "text": "von",
+      "x": 307,
+      "y": 663,
+      "w": 25,
+      "h": 7
+    },
+    {
+      "text": "Christian",
+      "x": 337,
+      "y": 658,
+      "w": 62,
+      "h": 12
+    },
+    {
+      "text": "Schmidt.",
+      "x": 404,
+      "y": 657,
+      "w": 56,
+      "h": 13
+    },
+    {
+      "text": "b",
+      "x": 148,
+      "y": 681,
+      "w": 7,
+      "h": 12
+    },
+    {
+      "text": "ist",
+      "x": 194,
+      "y": 681,
+      "w": 16,
+      "h": 11
+    },
+    {
+      "text": "eine",
+      "x": 215,
+      "y": 681,
+      "w": 28,
+      "h": 11
+    },
+    {
+      "text": "Kollegin",
+      "x": 249,
+      "y": 679,
+      "w": 55,
+      "h": 16
+    },
+    {
+      "text": "von",
+      "x": 308,
+      "y": 683,
+      "w": 25,
+      "h": 8
+    },
+    {
+      "text": "Christian",
+      "x": 338,
+      "y": 679,
+      "w": 62,
+      "h": 11
+    },
+    {
+      "text": "Schmidt.",
+      "x": 406,
+      "y": 677,
+      "w": 59,
+      "h": 12
+    },
+    {
+      "text": "c",
+      "x": 148,
+      "y": 701,
+      "w": 6,
+      "h": 10
+    },
+    {
+      "text": "ist",
+      "x": 195,
+      "y": 701,
+      "w": 16,
+      "h": 11
+    },
+    {
+      "text": "der",
+      "x": 216,
+      "y": 700,
+      "w": 21,
+      "h": 12
+    },
+    {
+      "text": "Chef",
+      "x": 242,
+      "y": 699,
+      "w": 30,
+      "h": 12
+    },
+    {
+      "text": "von",
+      "x": 276,
+      "y": 703,
+      "w": 24,
+      "h": 8
+    },
+    {
+      "text": "Christian",
+      "x": 306,
+      "y": 699,
+      "w": 62,
+      "h": 12
+    },
+    {
+      "text": "Schmidt.",
+      "x": 373,
+      "y": 698,
+      "w": 60,
+      "h": 12
+    },
+    {
+      "text": "d",
+      "x": 149,
+      "y": 721,
+      "w": 7,
+      "h": 11
+    },
+    {
+      "text": "schreibt",
+      "x": 195,
+      "y": 720,
+      "w": 54,
+      "h": 12
+    },
+    {
+      "text": "eine",
+      "x": 254,
+      "y": 720,
+      "w": 28,
+      "h": 11
+    },
+    {
+      "text": "SMS.",
+      "x": 287,
+      "y": 720,
+      "w": 32,
+      "h": 11
+    },
+    {
+      "text": "e",
+      "x": 149,
+      "y": 741,
+      "w": 6,
+      "h": 9
+    },
+    {
+      "text": "sucht",
+      "x": 195,
+      "y": 739,
+      "w": 36,
+      "h": 12
+    },
+    {
+      "text": "Rechnungen",
+      "x": 237,
+      "y": 739,
+      "w": 83,
+      "h": 16
+    },
+    {
+      "text": "und",
+      "x": 325,
+      "y": 738,
+      "w": 26,
+      "h": 12
+    },
+    {
+      "text": "Formulare",
+      "x": 357,
+      "y": 737,
+      "w": 69,
+      "h": 12
+    },
+    {
+      "text": "f",
+      "x": 150,
+      "y": 760,
+      "w": 5,
+      "h": 12
+    },
+    {
+      "text": "braucht",
+      "x": 195,
+      "y": 759,
+      "w": 53,
+      "h": 13
+    },
+    {
+      "text": "Stifte.",
+      "x": 253,
+      "y": 759,
+      "w": 40,
+      "h": 12
+    },
+    {
+      "text": "g",
+      "x": 149,
+      "y": 785,
+      "w": 7,
+      "h": 12
+    },
+    {
+      "text": "hat",
+      "x": 196,
+      "y": 780,
+      "w": 22,
+      "h": 11
+    },
+    {
+      "text": "am",
+      "x": 223,
+      "y": 784,
+      "w": 19,
+      "h": 7
+    },
+    {
+      "text": "See",
+      "x": 247,
+      "y": 780,
+      "w": 21,
+      "h": 11
+    },
+    {
+      "text": "nur",
+      "x": 274,
+      "y": 783,
+      "w": 24,
+      "h": 7
+    },
+    {
+      "text": "Stress",
+      "x": 303,
+      "y": 780,
+      "w": 38,
+      "h": 10
+    },
+    {
+      "text": "und",
+      "x": 347,
+      "y": 778,
+      "w": 25,
+      "h": 12
+    },
+    {
+      "text": "geht",
+      "x": 377,
+      "y": 777,
+      "w": 29,
+      "h": 17
+    },
+    {
+      "text": "wieder",
+      "x": 411,
+      "y": 777,
+      "w": 46,
+      "h": 12
+    },
+    {
+      "text": "ins",
+      "x": 462,
+      "y": 777,
+      "w": 19,
+      "h": 11
+    },
+    {
+      "text": "Büro.",
+      "x": 487,
+      "y": 777,
+      "w": 35,
+      "h": 11
+    },
+    {
+      "text": "Was",
+      "x": 150,
+      "y": 850,
+      "w": 30,
+      "h": 12
+    },
+    {
+      "text": "sucht",
+      "x": 186,
+      "y": 849,
+      "w": 41,
+      "h": 13
+    },
+    {
+      "text": "Herr",
+      "x": 234,
+      "y": 849,
+      "w": 33,
+      "h": 12
+    },
+    {
+      "text": "Brenner?",
+      "x": 273,
+      "y": 848,
+      "w": 67,
+      "h": 12
+    },
+    {
+      "text": "Lesen",
+      "x": 152,
+      "y": 871,
+      "w": 35,
+      "h": 11
+    },
+    {
+      "text": "Sie",
+      "x": 193,
+      "y": 870,
+      "w": 18,
+      "h": 12
+    },
+    {
+      "text": "die",
+      "x": 217,
+      "y": 869,
+      "w": 19,
+      "h": 12
+    },
+    {
+      "text": "SMS",
+      "x": 241,
+      "y": 870,
+      "w": 28,
+      "h": 11
+    },
+    {
+      "text": "und",
+      "x": 275,
+      "y": 868,
+      "w": 24,
+      "h": 12
+    },
+    {
+      "text": "ergänzen",
+      "x": 305,
+      "y": 869,
+      "w": 60,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 370,
+      "y": 868,
+      "w": 19,
+      "h": 11
+    },
+    {
+      "text": "die",
+      "x": 394,
+      "y": 867,
+      "w": 20,
+      "h": 12
+    },
+    {
+      "text": "Tabelle.",
+      "x": 418,
+      "y": 866,
+      "w": 50,
+      "h": 13
+    },
+    {
+      "text": "Wo",
+      "x": 171,
+      "y": 977,
+      "w": 15,
+      "h": 9
+    },
+    {
+      "text": "sind",
+      "x": 190,
+      "y": 977,
+      "w": 20,
+      "h": 10
+    },
+    {
+      "text": "die",
+      "x": 213,
+      "y": 977,
+      "w": 16,
+      "h": 10
+    },
+    {
+      "text": "Rechnungen?",
+      "x": 171,
+      "y": 991,
+      "w": 68,
+      "h": 13
+    },
+    {
+      "text": "Wo",
+      "x": 171,
+      "y": 1006,
+      "w": 15,
+      "h": 9
+    },
+    {
+      "text": "sind",
+      "x": 190,
+      "y": 1007,
+      "w": 20,
+      "h": 9
+    },
+    {
+      "text": "die",
+      "x": 213,
+      "y": 1007,
+      "w": 15,
+      "h": 9
+    },
+    {
+      "text": "Formulare?",
+      "x": 171,
+      "y": 1020,
+      "w": 55,
+      "h": 11
+    },
+    {
+      "text": "Brenner",
+      "x": 171,
+      "y": 1035,
+      "w": 38,
+      "h": 10
+    },
+    {
+      "text": "Wo",
+      "x": 357,
+      "y": 917,
+      "w": 20,
+      "h": 10
+    },
+    {
+      "text": "ist",
+      "x": 380,
+      "y": 917,
+      "w": 15,
+      "h": 10
+    },
+    {
+      "text": "...",
+      "x": 400,
+      "y": 917,
+      "w": 18,
+      "h": 10
+    },
+    {
+      "text": "Wo",
+      "x": 492,
+      "y": 915,
+      "w": 20,
+      "h": 11
+    },
+    {
+      "text": "sind",
+      "x": 516,
+      "y": 915,
+      "w": 22,
+      "h": 11
+    },
+    {
+      "text": "...",
+      "x": 545,
+      "y": 915,
+      "w": 14,
+      "h": 10
+    },
+    {
+      "text": "der",
+      "x": 368,
+      "y": 942,
+      "w": 19,
+      "h": 11
+    },
+    {
+      "text": "Schlüssel",
+      "x": 392,
+      "y": 941,
+      "w": 55,
+      "h": 11
+    },
+    {
+      "text": "das",
+      "x": 369,
+      "y": 959,
+      "w": 18,
+      "h": 11
+    },
+    {
+      "text": "Formular",
+      "x": 393,
+      "y": 959,
+      "w": 56,
+      "h": 10
+    },
+    {
+      "text": "die",
+      "x": 369,
+      "y": 976,
+      "w": 17,
+      "h": 11
+    },
+    {
+      "text": "Rechnung",
+      "x": 392,
+      "y": 976,
+      "w": 60,
+      "h": 14
+    },
+    {
+      "text": "die",
+      "x": 504,
+      "y": 940,
+      "w": 17,
+      "h": 11
+    },
+    {
+      "text": "Schlüssel",
+      "x": 545,
+      "y": 939,
+      "w": 54,
+      "h": 11
+    },
+    {
+      "text": "die",
+      "x": 504,
+      "y": 957,
+      "w": 18,
+      "h": 11
+    },
+    {
+      "text": "Formulare",
+      "x": 546,
+      "y": 956,
+      "w": 62,
+      "h": 11
+    },
+    {
+      "text": "Rechnungen",
+      "x": 546,
+      "y": 974,
+      "w": 75,
+      "h": 14
+    },
+    {
+      "text": "Modul",
+      "x": 48,
+      "y": 1144,
+      "w": 32,
+      "h": 12
+    },
+    {
+      "text": "2",
+      "x": 83,
+      "y": 1144,
+      "w": 9,
+      "h": 12
+    },
+    {
+      "text": "vierunddreißig",
+      "x": 144,
+      "y": 1140,
+      "w": 93,
+      "h": 15
+    }
+  ],
+  "fields": [
+    {
+      "id": "t2b",
+      "group": "t2",
+      "kind": "text",
+      "label": "Um 14:00 Uhr ist ein Termin mit ...",
+      "answer": "Hierholtzer",
+      "x": 390,
+      "y": 306,
+      "w": 130,
+      "h": 18
+    },
+    {
+      "id": "t2c",
+      "group": "t2",
+      "kind": "text",
+      "label": "Christian Schmidt und C. Lehmann arbeiten bei ...",
+      "answer": "Brenner|Brenner IT-Consulting",
+      "x": 190,
+      "y": 356,
+      "w": 290,
+      "h": 18
+    },
+    {
+      "id": "t3a-buero",
+      "group": "t3a",
+      "kind": "radio",
+      "label": "im Büro.",
+      "name": "t3a",
+      "value": "im Büro",
+      "answer": "true",
+      "x": 406,
+      "y": 456,
+      "w": 16,
+      "h": 16
+    },
+    {
+      "id": "t3a-see",
+      "group": "t3a",
+      "kind": "radio",
+      "label": "am See.",
+      "name": "t3a",
+      "value": "am See",
+      "answer": "false",
+      "x": 504,
+      "y": 456,
+      "w": 16,
+      "h": 16
+    },
+    {
+      "id": "t3b-schmidt",
+      "group": "t3b",
+      "kind": "radio",
+      "label": "Christian Schmidt",
+      "name": "t3b",
+      "value": "Christian Schmidt",
+      "answer": "true",
+      "x": 250,
+      "y": 478,
+      "w": 16,
+      "h": 16
+    },
+    {
+      "id": "t3b-esebeck",
+      "group": "t3b",
+      "kind": "radio",
+      "label": "Frau Esebeck",
+      "name": "t3b",
+      "value": "Frau Esebeck",
+      "answer": "false",
+      "x": 414,
+      "y": 478,
+      "w": 16,
+      "h": 16
+    },
+    {
+      "id": "t3c-keine",
+      "group": "t3c",
+      "kind": "radio",
+      "label": "keine Zeit",
+      "name": "t3c",
+      "value": "keine Zeit",
+      "answer": "true",
+      "x": 330,
+      "y": 497,
+      "w": 16,
+      "h": 16
+    },
+    {
+      "id": "t3c-zeit",
+      "group": "t3c",
+      "kind": "radio",
+      "label": "Zeit für Eva.",
+      "name": "t3c",
+      "value": "Zeit für Eva",
+      "answer": "false",
+      "x": 427,
+      "y": 497,
+      "w": 16,
+      "h": 16
+    },
+    {
+      "id": "t3d-praktisch",
+      "group": "t3d",
+      "kind": "radio",
+      "label": "praktisch.",
+      "name": "t3d",
+      "value": "praktisch",
+      "answer": "false",
+      "x": 363,
+      "y": 518,
+      "w": 16,
+      "h": 16
+    },
+    {
+      "id": "t3d-nicht",
+      "group": "t3d",
+      "kind": "radio",
+      "label": "nicht praktisch.",
+      "name": "t3d",
+      "value": "nicht praktisch",
+      "answer": "true",
+      "x": 459,
+      "y": 518,
+      "w": 16,
+      "h": 16
+    },
+    {
+      "id": "t4b",
+      "group": "t4",
+      "kind": "text",
+      "label": "ist eine Kollegin von Christian Schmidt",
+      "answer": "F",
+      "x": 162,
+      "y": 677,
+      "w": 26,
+      "h": 16
+    },
+    {
+      "id": "t4c",
+      "group": "t4",
+      "kind": "text",
+      "label": "ist der Chef von Christian Schmidt",
+      "answer": "B",
+      "x": 162,
+      "y": 697,
+      "w": 26,
+      "h": 16
+    },
+    {
+      "id": "t4d",
+      "group": "t4",
+      "kind": "text",
+      "label": "schreibt eine SMS",
+      "answer": "B",
+      "x": 162,
+      "y": 717,
+      "w": 26,
+      "h": 16
+    },
+    {
+      "id": "t4e",
+      "group": "t4",
+      "kind": "text",
+      "label": "sucht Rechnungen und Formulare",
+      "answer": "B",
+      "x": 162,
+      "y": 737,
+      "w": 26,
+      "h": 16
+    },
+    {
+      "id": "t4f",
+      "group": "t4",
+      "kind": "text",
+      "label": "braucht Stifte",
+      "answer": "F",
+      "x": 162,
+      "y": 757,
+      "w": 26,
+      "h": 16
+    },
+    {
+      "id": "t4g",
+      "group": "t4",
+      "kind": "text",
+      "label": "hat am See nur Stress und geht wieder ins Büro",
+      "answer": "C",
+      "x": 162,
+      "y": 776,
+      "w": 26,
+      "h": 16
+    },
+    {
+      "id": "t5-rechnungen",
+      "group": "t5",
+      "kind": "text",
+      "label": "Wo sind ...? Rechnungen",
+      "answer": "die",
+      "x": 497,
+      "y": 972,
+      "w": 45,
+      "h": 14
+    }
+  ],
+  "audio": [
+    {
+      "id": "t2",
+      "src": "assets/kb-cd1-track37.mp3",
+      "label": "1.37",
+      "x": 68,
+      "y": 198,
+      "w": 45,
+      "h": 22
+    },
+    {
+      "id": "t3",
+      "src": "assets/kb-cd1-track38.mp3",
+      "label": "1.38",
+      "x": 68,
+      "y": 428,
+      "w": 45,
+      "h": 22
+    },
+    {
+      "id": "t4",
+      "src": "assets/kb-cd1-track38.mp3",
+      "label": "1.38",
+      "x": 68,
+      "y": 588,
+      "w": 45,
+      "h": 22
+    }
+  ],
+  "groups": [
+    {
+      "id": "t2",
+      "label": "2 E-Mail lesen und ergänzen"
+    },
+    {
+      "id": "t3a",
+      "label": "3a Frau Feser und Herr Brenner sind ..."
+    },
+    {
+      "id": "t3b",
+      "label": "3b Sie wollen ... sprechen"
+    },
+    {
+      "id": "t3c",
+      "label": "3c Christian Schmidt hat ..."
+    },
+    {
+      "id": "t3d",
+      "label": "3d Der Arbeitsplatz am See ist ..."
+    },
+    {
+      "id": "t4",
+      "label": "4 Wer ist wer? Wer macht was?"
+    },
+    {
+      "id": "t5",
+      "label": "5 Was sucht Herr Brenner?"
+    }
+  ],
+  "review": {
+    "status": "partial",
+    "verifiedWords": 260,
+    "totalWords": 260,
+    "notes": [
+      "All field answers from the official Hueber answer key (Lektion 6 Kursbuch: 2b Hierholtzer, 2c Brenner; 3a im Büro, 3b Christian Schmidt, 3c keine Zeit, 3d nicht praktisch; 4b F, 4c B, 4d B, 4e B, 4f F, 4g C; 5 die).",
+      "Tasks 3 and 4 share printed track marker 1.38: one audio button per marker.",
+      "Vocab strip, email body and table words verified via cropped OCR; some boxes normalized/estimated: task 2 header tail, email toolbar labels Normaler Text/Variable Breite, email line punctuation row, legend symbols E,/=,B, footer Modul 2 tab, radio circle positions.",
+      "The email's third appointment line ends '(17 Uhr)' but 'Uhr)' is cut off at the scan edge - word omitted, not guessed.",
+      "The two printed 'die' answers in the Wo-sind column (Schlüssel, Formulare) are printed on the page; only the Rechnungen row has a blank, so only one field exists for task 5 (key answer: die).",
+      "Colored vocab dots, photo numbers 1-4, phone keyboard letters, GRAMMATIK/noch einmal? tabs, footer digit 34 dropped as non-words."
+    ]
+  }
+}
