@@ -15,17 +15,24 @@ const phrases=new Map(Object.entries(window.MENSCHEN_PHRASES).map(([k,v])=>[norm
 const words=window.MENSCHEN_WORDS,records=window.PRONUNCIATION_INDEX||[];
 const dialog=document.querySelector('.meaningPopup');
 let current,mode='word',tapMode='word';try{tapMode=localStorage.getItem('menschen-translation-mode')||'word'}catch{}
-const activeAudio=new Audio();let audioPath,audioQueue=[],queueAt=0;activeAudio.onended=()=>{if(++queueAt<audioQueue.length){activeAudio.src=audioQueue[queueAt];activeAudio.play().catch(()=>{})}};
-function play(){activeAudio.pause();if(!audioPath)return;audioQueue=current?.selectionParts?current.selectionParts.flatMap(p=>p.audio||[]):[audioPath];queueAt=0;activeAudio.src=audioQueue[0];activeAudio.play().catch(()=>{meaningStore.update({pendingHidden:false,pending:'التسجيل مشتغلش. اضغط اسمع النطق عشان تجرّب تاني.'})})}
+const activeAudio=new Audio();// Free fallback: browser speech synthesis (German) for texts that have no recording yet.
+const ttsAvailable=()=>typeof window.speechSynthesis!=='undefined'&&typeof SpeechSynthesisUtterance!=='undefined';
+const ttsStop=()=>{if(ttsAvailable())speechSynthesis.cancel()};
+function speak(text){if(!ttsAvailable()||!text)return false;ttsStop();const u=new SpeechSynthesisUtterance(text);u.lang='de-DE';const voices=speechSynthesis.getVoices().filter(v=>/^de([-_]|$)/i.test(v.lang));const pref=voices.find(v=>/^de[-_]de$/i.test(v.lang))||voices[0];if(pref)u.voice=pref;u.rate=0.95;speechSynthesis.speak(u);return true}
+let audioPath,audioQueue=[],queueAt=0;activeAudio.onended=()=>{if(++queueAt<audioQueue.length){activeAudio.src=audioQueue[queueAt];activeAudio.play().catch(()=>{})}};
+function play(){activeAudio.pause();ttsStop();
+ if(current?.selectionParts){const parts=current.selectionParts;if(parts.every(p=>p.audio?.length)){audioQueue=parts.flatMap(p=>p.audio||[]);queueAt=0;activeAudio.src=audioQueue[0];activeAudio.play().catch(()=>{meaningStore.update({pendingHidden:false,pending:'التسجيل مشتغلش. اضغط اسمع النطق عشان تجرّب تاني.'})});return}if(speak(parts.map(p=>p.text).join(' ')))return;audioQueue=parts.flatMap(p=>p.audio||[]);if(!audioQueue.length)return;queueAt=0;activeAudio.src=audioQueue[0];activeAudio.play().catch(()=>{});return}
+ if(!audioPath){speak(current?(mode==='sentence'?current.phrase:current.word):'');return}
+ audioQueue=[audioPath];queueAt=0;activeAudio.src=audioQueue[0];activeAudio.play().catch(()=>{meaningStore.update({pendingHidden:false,pending:'التسجيل مشتغلش. اضغط اسمع النطق عشان تجرّب تاني.'})})}
 function refresh(autoplay=false){
  let view;
- if(current?.selectionParts){const parts=current.selectionParts;audioPath=parts.flatMap(p=>p.audio||[])[0];view={german:parts.map(p=>p.text).join('\n\n'),arabic:parts.map(p=>p.arabic||'الجزء ده لسه ناقص من الترجمة.').join('\n\n'),wordDisabled:true,sentenceDisabled:true,mode:'sentence',audioDisabled:!audioPath,pendingHidden:parts.every(p=>p.audio?.length),pending:'بعض أجزاء التحديد لسه ناقصها تسجيل. هنشغّل الأجزاء الجاهزة.'};}
- else{const text=mode==='sentence'?current.phrase:current.word;const translated=mode==='sentence'?phrases.get(norm(text)):words[norm(text)];const record=records.find(r=>r.type===mode&&norm(r.text)===norm(text));audioPath=window.PRONUNCIATION_FILES?.[record?.id];view={german:text,arabic:translated||'ترجمة الجملة دي لسه بتتراجع.',sentenceDisabled:!phrases.has(norm(current.phrase)),wordDisabled:!current.word,mode,audioDisabled:!audioPath,pendingHidden:!!audioPath,pending:mode==='sentence'?'نطق الجملة دي لسه بيتجهّز. التسجيلات الأصلية شغّالة جوّه التمارين.':'نطق الكلمة دي لسه بيتجهّز. تقدر تختار الجملة لو نطقها جاهز.'};}
+ if(current?.selectionParts){const parts=current.selectionParts;audioPath=parts.flatMap(p=>p.audio||[])[0];view={german:parts.map(p=>p.text).join('\n\n'),arabic:parts.map(p=>p.arabic||'الجزء ده لسه ناقص من الترجمة.').join('\n\n'),wordDisabled:true,sentenceDisabled:true,mode:'sentence',audioDisabled:!audioPath&&!ttsAvailable(),pendingHidden:parts.every(p=>p.audio?.length)||ttsAvailable(),pending:'بعض أجزاء التحديد لسه ناقصها تسجيل. هنشغّل الأجزاء الجاهزة.'};}
+ else{const text=mode==='sentence'?current.phrase:current.word;const translated=mode==='sentence'?phrases.get(norm(text)):words[norm(text)];const record=records.find(r=>r.type===mode&&norm(r.text)===norm(text));audioPath=window.PRONUNCIATION_FILES?.[record?.id];view={german:text,arabic:translated||'ترجمة الجملة دي لسه بتتراجع.',sentenceDisabled:!phrases.has(norm(current.phrase)),wordDisabled:!current.word,mode,audioDisabled:!audioPath&&!ttsAvailable(),pendingHidden:!!audioPath||ttsAvailable(),pending:mode==='sentence'?'نطق الجملة دي لسه بيتجهّز. التسجيلات الأصلية شغّالة جوّه التمارين.':'نطق الكلمة دي لسه بيتجهّز. تقدر تختار الجملة لو نطقها جاهز.'};}
  flushSync(()=>meaningStore.update(view));if(autoplay)play();}
 
-function open(word,phrase,wanted){activeAudio.pause();current={word:word||'',phrase};mode=wanted;refresh();if(!dialog.open)dialog.showModal();play()}
+function open(word,phrase,wanted){activeAudio.pause();ttsStop();current={word:word||'',phrase};mode=wanted;refresh();if(!dialog.open)dialog.showModal();play()}
 window.openBookMeaning=open;
-meaningStore.connect({word(){mode='word';refresh(true)},sentence(){mode='sentence';refresh(true)},play,pause:()=>activeAudio.pause()});
+meaningStore.connect({word(){mode='word';refresh(true)},sentence(){mode='sentence';refresh(true)},play,pause:()=>{activeAudio.pause();ttsStop()}});
 window.initMeanings=()=>{
 const selector='.abBody p,.abBody h1,.abBody h2,.abBody h3,.abBody td,.abBody th,.abBody .wordbank,.page h1,.page h2,.page .instruction,.page .assign>span,.page .dialog,.page .person span,.page .bookDialogue span,.page .gapdialog p,.page .bookLines,.page .speakerTable td:first-child,.page .grammar td,.page .communicationTable td,.page .feelings,.page .communication,.batch p,.batch .profile label,.batch .treePerson span,.batch .opinion label>span,.batch .choiceRows label>span,.batch .corrections span,.batch .nameRiddle span,.batch .grammarNote';
 const escape=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
@@ -66,12 +73,12 @@ function selectedUnits(text,range){
 }
 const translateSelection=()=>{const text=chosen;selectionStore.update({actionHidden:true});if(!text)return;let matched=selectedUnits(text,chosenRange);let parts=matched.map(u=>{const base=compose(u.text)||{text:u.text,arabic:u.arabic,audio:[u.audio].filter(Boolean)};return {text:u.text,arabic:window.BOOK_UNIT_ARABIC?.[u.id]||base.arabic||'الجزء ده لسه ناقص من الترجمة.',audio:window.BOOK_UNIT_AUDIO?.[u.id]?[window.BOOK_UNIT_AUDIO[u.id]]:base.audio||[]}});if(!parts.length){const composed=compose(text);if(composed)parts=[composed]}
  if(!parts.length)parts=[{text,arabic:'التحديد ده لسه ناقص من الترجمة. بنكمّل كل النصوص المطبوعة، بما فيها التعليمات.',audio:[]}];
- activeAudio.pause();current={selectionParts:parts};mode='sentence';refresh();if(!dialog.open)dialog.showModal();play();window.getSelection()?.removeAllRanges()};
+ activeAudio.pause();ttsStop();current={selectionParts:parts};mode='sentence';refresh();if(!dialog.open)dialog.showModal();play();window.getSelection()?.removeAllRanges()};
 
 selectionStore.connect({toggleMode,toggleSelection,translate:translateSelection});
 const stage=document.querySelector('#pageStage');stage.addEventListener('click',e=>{if(selecting)return;const word=e.target.closest('.tapWord'),sentence=e.target.closest('.tapSentence');if(!word&&!sentence)return;e.stopPropagation();if(tapMode==='sentence'||!word)open(word?.dataset.word,sentence?.dataset.phrase||word.dataset.phrase,'sentence');else open(word.dataset.word,sentence?.dataset.phrase||word.dataset.phrase,'word')});stage.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('.tapWord,.tapSentence')){e.preventDefault();e.stopPropagation();e.target.click()}});for(const span of document.querySelectorAll('.tapWord,.tapSentence'))for(const type of ['mousedown','touchstart'])span.addEventListener(type,e=>e.stopPropagation());
 };
-return()=>{lifecycle.dispose();activeAudio.onended=null;activeAudio.pause();activeAudio.removeAttribute('src');meaningStore.connect({});selectionStore.connect({});delete window.openBookMeaning;delete window.initMeanings};
+return()=>{lifecycle.dispose();activeAudio.onended=null;activeAudio.pause();ttsStop();activeAudio.removeAttribute('src');meaningStore.connect({});selectionStore.connect({});delete window.openBookMeaning;delete window.initMeanings};
 })();
 
 }
