@@ -1294,15 +1294,88 @@
    "h": 14
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p72-3_0",
+   "group": "g1",
+   "kind": "text",
+   "label": "Ampelmann 1",
+   "answer": "stehen bleiben",
+   "x": 500,
+   "y": 713,
+   "w": 195,
+   "h": 24
+  },
+  {
+   "id": "p72-3_1",
+   "group": "g1",
+   "kind": "text",
+   "label": "Ampelmann 2",
+   "answer": "dürfen",
+   "x": 192,
+   "y": 732,
+   "w": 196,
+   "h": 24
+  },
+  {
+   "id": "p72-3_2",
+   "group": "g1",
+   "kind": "text",
+   "label": "Ampelmann 3",
+   "answer": "Fahrradfahrer",
+   "x": 132,
+   "y": 752,
+   "w": 196,
+   "h": 24
+  },
+  {
+   "id": "p72-3_3",
+   "group": "g1",
+   "kind": "text",
+   "label": "Ampelmann 4",
+   "answer": "achten",
+   "x": 466,
+   "y": 752,
+   "w": 89,
+   "h": 24
+  },
+  {
+   "id": "p72-3_4",
+   "group": "g1",
+   "kind": "text",
+   "label": "Ampelmann 5",
+   "answer": "schiebt",
+   "x": 428,
+   "y": 868,
+   "w": 197,
+   "h": 24
+  },
+  {
+   "id": "p72-3_5",
+   "group": "g1",
+   "kind": "text",
+   "label": "Ampelmann 6",
+   "answer": "trägt",
+   "x": 192,
+   "y": 888,
+   "w": 194,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 3 Ampelmann"
+  }
+ ],
  "review": {
   "status": "partial",
-  "verifiedWords": 184,
-  "totalWords": 184,
   "notes": [
-   "Activation reviewed on a five-page visual sample (71,76,88,98,105): word boxes align with printed text, but these are partial OCR-derived layers. verifiedWords was supplied as the retained-word count by the worker, not an independent word-by-word audit. Some handwriting, symbols, fragments and printed words may be omitted or imperfect. No exercise fields or audio added."
-  ]
+   "Answers from official Hueber Loesungsschluessel AB A1.2 (Wiederholungsstation Wortschatz 3, in blank order).",
+   "Ex 1 (table sorting) and ex 2 (strike-through) not mapped; handwritten examples not fields."
+  ],
+  "verifiedWords": 184,
+  "totalWords": 184
  }
 }

@@ -1245,13 +1245,147 @@
    "h": 15
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p66-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "zu Fuß gehen",
+   "x": 270,
+   "y": 255,
+   "w": 283,
+   "h": 24
+  },
+  {
+   "id": "p66-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "einen Helm tragen",
+   "x": 305,
+   "y": 301,
+   "w": 280,
+   "h": 24
+  },
+  {
+   "id": "p66-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d",
+   "answer": "Hunde nicht mitkommen",
+   "x": 308,
+   "y": 349,
+   "w": 277,
+   "h": 24
+  },
+  {
+   "id": "p66-2m3",
+   "group": "g2",
+   "kind": "text",
+   "label": "müssen er/es/sie",
+   "answer": "muss",
+   "x": 488,
+   "y": 502,
+   "w": 117,
+   "h": 24
+  },
+  {
+   "id": "p66-2m4",
+   "group": "g2",
+   "kind": "text",
+   "label": "müssen wir",
+   "answer": "müssen",
+   "x": 488,
+   "y": 524,
+   "w": 117,
+   "h": 24
+  },
+  {
+   "id": "p66-2m6",
+   "group": "g2",
+   "kind": "text",
+   "label": "müssen sie/Sie",
+   "answer": "müssen",
+   "x": 488,
+   "y": 569,
+   "w": 117,
+   "h": 24
+  },
+  {
+   "id": "p66-2d2",
+   "group": "g2",
+   "kind": "text",
+   "label": "dürfen du",
+   "answer": "darfst",
+   "x": 616,
+   "y": 479,
+   "w": 119,
+   "h": 24
+  },
+  {
+   "id": "p66-2d3",
+   "group": "g2",
+   "kind": "text",
+   "label": "dürfen er/es/sie",
+   "answer": "darf",
+   "x": 616,
+   "y": 502,
+   "w": 119,
+   "h": 24
+  },
+  {
+   "id": "p66-2d4",
+   "group": "g2",
+   "kind": "text",
+   "label": "dürfen wir",
+   "answer": "dürfen",
+   "x": 616,
+   "y": 524,
+   "w": 119,
+   "h": 24
+  },
+  {
+   "id": "p66-2d5",
+   "group": "g2",
+   "kind": "text",
+   "label": "dürfen ihr",
+   "answer": "dürft",
+   "x": 616,
+   "y": 546,
+   "w": 119,
+   "h": 24
+  },
+  {
+   "id": "p66-2d6",
+   "group": "g2",
+   "kind": "text",
+   "label": "dürfen sie/Sie",
+   "answer": "dürfen",
+   "x": 616,
+   "y": 569,
+   "w": 119,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 2 Tabelle"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 21, Aufgaben 1, 2).",
+   "Ex 3 (word order sentences) not mapped: several word orders possible. Handwritten examples not fields."
+  ],
   "verifiedWords": 177,
-  "totalWords": 177,
-  "notes": []
+  "totalWords": 177
  }
 }

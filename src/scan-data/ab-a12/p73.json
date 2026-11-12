@@ -1693,15 +1693,320 @@
    "h": 9
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p73-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "waren",
+   "x": 483,
+   "y": 188,
+   "w": 57,
+   "h": 24
+  },
+  {
+   "id": "p73-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "war",
+   "x": 228,
+   "y": 203,
+   "w": 57,
+   "h": 24
+  },
+  {
+   "id": "p73-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d",
+   "answer": "hatten",
+   "x": 394,
+   "y": 203,
+   "w": 56,
+   "h": 24
+  },
+  {
+   "id": "p73-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e",
+   "answer": "hatten",
+   "x": 458,
+   "y": 220,
+   "w": 57,
+   "h": 24
+  },
+  {
+   "id": "p73-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 f",
+   "answer": "war",
+   "x": 258,
+   "y": 236,
+   "w": 54,
+   "h": 24
+  },
+  {
+   "id": "p73-1g",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 g",
+   "answer": "hatten",
+   "x": 175,
+   "y": 252,
+   "w": 57,
+   "h": 24
+  },
+  {
+   "id": "p73-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "gefallen",
+   "x": 332,
+   "y": 427,
+   "w": 108,
+   "h": 24
+  },
+  {
+   "id": "p73-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c",
+   "answer": "bekommen",
+   "x": 285,
+   "y": 447,
+   "w": 107,
+   "h": 24
+  },
+  {
+   "id": "p73-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d",
+   "answer": "bezahlt",
+   "x": 282,
+   "y": 466,
+   "w": 130,
+   "h": 24
+  },
+  {
+   "id": "p73-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 e",
+   "answer": "erkannt",
+   "x": 349,
+   "y": 485,
+   "w": 111,
+   "h": 24
+  },
+  {
+   "id": "p73-2f",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 f",
+   "answer": "verstanden",
+   "x": 337,
+   "y": 505,
+   "w": 123,
+   "h": 24
+  },
+  {
+   "id": "p73-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "sie",
+   "x": 487,
+   "y": 592,
+   "w": 73,
+   "h": 24
+  },
+  {
+   "id": "p73-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "ihn",
+   "x": 385,
+   "y": 632,
+   "w": 93,
+   "h": 24
+  },
+  {
+   "id": "p73-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "es",
+   "x": 398,
+   "y": 653,
+   "w": 72,
+   "h": 24
+  },
+  {
+   "id": "p73-3e1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e 1",
+   "answer": "dich",
+   "x": 322,
+   "y": 671,
+   "w": 133,
+   "h": 24
+  },
+  {
+   "id": "p73-3e2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e 2",
+   "answer": "ihn",
+   "x": 538,
+   "y": 671,
+   "w": 102,
+   "h": 24
+  },
+  {
+   "id": "p73-5s0",
+   "group": "g4",
+   "kind": "text",
+   "label": "5 Singular 1",
+   "answer": "Trockne bitte das Geschirr ab.",
+   "x": 112,
+   "y": 916,
+   "w": 200,
+   "h": 20
+  },
+  {
+   "id": "p73-5p0",
+   "group": "g4",
+   "kind": "text",
+   "label": "5 Plural 1",
+   "answer": "Trocknet bitte das Geschirr ab.",
+   "x": 318,
+   "y": 916,
+   "w": 200,
+   "h": 20
+  },
+  {
+   "id": "p73-5s1",
+   "group": "g4",
+   "kind": "text",
+   "label": "5 Singular 2",
+   "answer": "Räum bitte die Küche auf.",
+   "x": 112,
+   "y": 938,
+   "w": 200,
+   "h": 20
+  },
+  {
+   "id": "p73-5p1",
+   "group": "g4",
+   "kind": "text",
+   "label": "5 Plural 2",
+   "answer": "Räumt bitte die Küche auf.",
+   "x": 318,
+   "y": 938,
+   "w": 200,
+   "h": 20
+  },
+  {
+   "id": "p73-5s2",
+   "group": "g4",
+   "kind": "text",
+   "label": "5 Singular 3",
+   "answer": "Mach bitte die Musik leise.",
+   "x": 112,
+   "y": 961,
+   "w": 200,
+   "h": 20
+  },
+  {
+   "id": "p73-5p2",
+   "group": "g4",
+   "kind": "text",
+   "label": "5 Plural 3",
+   "answer": "Macht bitte die Musik leise.",
+   "x": 318,
+   "y": 961,
+   "w": 200,
+   "h": 20
+  },
+  {
+   "id": "p73-5s3",
+   "group": "g4",
+   "kind": "text",
+   "label": "5 Singular 4",
+   "answer": "Vergiss bitte den Schlüssel nicht.",
+   "x": 112,
+   "y": 983,
+   "w": 200,
+   "h": 20
+  },
+  {
+   "id": "p73-5p3",
+   "group": "g4",
+   "kind": "text",
+   "label": "5 Plural 4",
+   "answer": "Vergesst bitte den Schlüssel nicht.",
+   "x": 318,
+   "y": 983,
+   "w": 200,
+   "h": 20
+  },
+  {
+   "id": "p73-5s4",
+   "group": "g4",
+   "kind": "text",
+   "label": "5 Singular 5",
+   "answer": "Deck bitte den Tisch.",
+   "x": 112,
+   "y": 1006,
+   "w": 200,
+   "h": 20
+  },
+  {
+   "id": "p73-5p4",
+   "group": "g4",
+   "kind": "text",
+   "label": "5 Plural 5",
+   "answer": "Deckt bitte den Tisch.",
+   "x": 318,
+   "y": 1006,
+   "w": 200,
+   "h": 20
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 2"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 3"
+  },
+  {
+   "id": "g4",
+   "label": "Aufgabe 5"
+  }
+ ],
  "review": {
   "status": "partial",
-  "verifiedWords": 241,
-  "totalWords": 241,
   "notes": [
-   "Activation reviewed on a five-page visual sample (71,76,88,98,105): word boxes align with printed text, but these are partial OCR-derived layers. verifiedWords was supplied as the retained-word count by the worker, not an independent word-by-word audit. Some handwriting, symbols, fragments and printed words may be omitted or imperfect. No exercise fields or audio added."
-  ]
+   "Answers from official Hueber Loesungsschluessel AB A1.2 (Wiederholungsstation Grammatik 1, 2, 3, 5).",
+   "Ex 4 (free sentences) not mapped; handwritten examples not fields. Ex 5: only the empty rows, answers exactly as in the key."
+  ],
+  "verifiedWords": 241,
+  "totalWords": 241
  }
 }
