@@ -76,3 +76,5 @@
 /* p54 density */
 .batch table.frame td{padding:4px 6px}
 header .headerBrand{min-width:0;flex:1}header .headerBrand select{min-width:0;max-width:130px;width:100%}header .headerBrand b{flex:none}
+.scanPage,.scanPage img{width:100%;height:100%}
+.scanPage img{object-fit:contain;background:#fff;display:block}
