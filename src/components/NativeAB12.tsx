@@ -26,40 +26,82 @@ export function NativeAB12({page}:{page:string}){
  return <div className="nativeAB12" ref={root} data-native-ab12={page}><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='89'&&<>
   {art('lesson-tab',738,18,62,75)}
-  {text(75,64,300,'LERNWORTSCHATZ','naHeadline')}
+  {text(75,63,300,'LERNWORTSCHATZ','naHeadline')}
   <div className="naHeadRule" style={{left:388,top:78,width:270}}/>
   {title('1',78,116,540,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naRB naNw')}
-  {text(96,148,160,'Wetter','naWHead')}
-  {text(105,171,140,'Wetter das')}
-  {([['Gewitter das, -',195],['Grad das, -e',213],['Nebel der',233],['Regen der',254],['Schnee der',272],['Sonne die, -n',293],['Sturm der, ¨e',312],['Wind der, -e',331],['Wolke die, -n',350]] as [string,number][]).map(([t,y],i)=>
-   <div key={i}>{text(105,y-2,140,t)}{field('89-1-w'+i,220,y-7,127,t+' übersetzen')}</div>)}
-  {([['regnen, hat',379],['geregnet',398],['schneien, hat',418],['geschneit',436],['scheinen, hat',457],['geschienen',476]] as [string,number][]).map(([t,y],i)=>
-   <div key={i}>{text(105,y-2,140,t)}{i%2===1&&field('89-1-v'+i,220,y-7,127,'Partizip übersetzen')}</div>)}
-  {([['kühl',506],['neblig',525],['sonnig',544],['warm',569],['windig',584]] as [string,number][]).map(([t,y],i)=>
-   <div key={i}>{text(105,y-2,140,t)}{field('89-1-a'+i,220,y-7,127,t+' übersetzen')}</div>)}
-  {text(396,150,240,'Himmelsrichtungen','naWHead')}
-  {text(397,170,220,'Himmelsrichtung')}
-  {text(397,190,100,'die, -en')}
-  {field('89-1-h0',460,185,133,'Himmelsrichtung übersetzen')}
-  {([['Norden der',214],['Süden der',233],['Osten der',254],['Westen der',273]] as [string,number][]).map(([t,y],i)=>
-   <div key={i}>{text(396,y-2,100,t)}{field('89-1-h'+(i+1),460,y-7,133,t+' übersetzen')}</div>)}
-  {text(396,307,240,'Weitere wichtige Wörter','naWHead')}
-  {([['Dach das, ¨er',331],['Frühjahr das, -e',350],['Glas das, ¨er',370],['Glück das',389],['Himmel der',409],['Laune die, -n',429]] as [string,number][]).map(([t,y],i)=>
-   <div key={i}>{text(396,y-2,110,t)}{field('89-1-x'+i,460,y-7,133,t+' übersetzen')}</div>)}
-  {text(396,445,110,'Reiseführer')}
-  {field('89-1-x6',460,440,133,'Reiseführer übersetzen')}
-  {text(414,465,60,'der, -')}
-  {field('89-1-x7',460,452,133,'Reiseführer der übersetzen')}
-  {text(396,486,110,'Traum der, ¨e')}
-  {field('89-1-x8',460,481,133,'Traum übersetzen')}
+  {text(96,145,160,'Wetter','naWHead')}
+  {text(396,145,240,'Himmelsrichtungen','naWHead')}
+  {text(396,303,240,'Weitere wichtige Wörter','naWHead')}
+  {text(105,168,150,'Wetter das')}
+  {text(105,187,150,'Gewitter das, -')}
+  {field('89-1-l1',234,187,144,'Gewitter das, - übersetzen')}
+  {text(105,206,150,'Grad das, -e')}
+  {field('89-1-l2',234,206,144,'Grad das, -e übersetzen')}
+  {text(105,226,150,'Nebel der')}
+  {field('89-1-l3',234,226,144,'Nebel der übersetzen')}
+  {text(105,245,150,'Regen der')}
+  {field('89-1-l4',234,245,144,'Regen der übersetzen')}
+  {text(105,265,150,'Schnee der')}
+  {field('89-1-l5',234,265,144,'Schnee der übersetzen')}
+  {text(105,284,150,'Sonne die, -n')}
+  {field('89-1-l6',234,284,144,'Sonne die, -n übersetzen')}
+  {text(105,304,150,'Sturm der, ¨e')}
+  {field('89-1-l7',234,304,144,'Sturm der, ¨e übersetzen')}
+  {text(105,324,150,'Wind der, -e')}
+  {field('89-1-l8',234,324,144,'Wind der, -e übersetzen')}
+  {text(105,343,150,'Wolke die, -n')}
+  {field('89-1-l9',234,343,144,'Wolke die, -n übersetzen')}
+  {text(105,373,150,'regnen, hat')}
+  {text(114,392,150,'geregnet')}
+  {field('89-1-l11',234,392,144,'geregnet übersetzen')}
+  {text(105,412,150,'schneien, hat')}
+  {text(114,431,150,'geschneit')}
+  {field('89-1-l13',234,431,144,'geschneit übersetzen')}
+  {text(105,451,150,'scheinen, hat')}
+  {text(114,470,150,'geschienen')}
+  {field('89-1-l15',234,470,144,'geschienen übersetzen')}
+  {text(105,500,150,'kühl')}
+  {field('89-1-l16',234,500,144,'kühl übersetzen')}
+  {text(105,519,150,'neblig')}
+  {field('89-1-l17',234,519,144,'neblig übersetzen')}
+  {text(105,538,150,'sonnig')}
+  {field('89-1-l18',234,538,144,'sonnig übersetzen')}
+  {text(397,168,150,'Himmelsrichtung')}
+  {text(406,187,150,'die, -en')}
+  {field('89-1-r1',505,187,148,'die, -en übersetzen')}
+  {text(396,207,150,'Norden der')}
+  {field('89-1-r2',505,207,148,'Norden der übersetzen')}
+  {text(396,227,150,'Süden der')}
+  {field('89-1-r3',505,227,148,'Süden der übersetzen')}
+  {text(396,246,150,'Osten der')}
+  {field('89-1-r4',505,246,148,'Osten der übersetzen')}
+  {text(396,265,150,'Westen der')}
+  {field('89-1-r5',505,265,148,'Westen der übersetzen')}
+  {text(396,324,150,'Dach das, ¨er')}
+  {field('89-1-r6',505,324,148,'Dach das, ¨er übersetzen')}
+  {text(396,344,150,'Frühjahr das, -e')}
+  {field('89-1-r7',505,344,148,'Frühjahr das, -e übersetzen')}
+  {text(396,363,150,'Glas das, ¨er')}
+  {field('89-1-r8',505,363,148,'Glas das, ¨er übersetzen')}
+  {text(396,383,150,'Glück das')}
+  {field('89-1-r9',505,383,148,'Glück das übersetzen')}
+  {text(396,402,150,'Himmel der')}
+  {field('89-1-r10',505,402,148,'Himmel der übersetzen')}
+  {text(396,422,150,'Laune die, -n')}
+  {field('89-1-r11',505,422,148,'Laune die, -n übersetzen')}
+  {text(396,441,150,'Reiseführer')}
+  {text(405,461,150,'der, -')}
+  {field('89-1-r13',505,461,148,'der, - übersetzen')}
+  {text(396,480,150,'Traum der, ¨e')}
+  {field('89-1-r14',505,480,148,'Traum der, ¨e übersetzen')}
   {art('tipp',433,545,136,42)}
-  {text(461,551,110,'Suchen Sie','naSmall')}
-  {text(461,569,130,'Wortfamilien.','naSmall')}
+  {text(461,550,110,'Suchen Sie','naSmall')}
+  {text(461,568,130,'Wortfamilien.','naSmall')}
   {art('handwriting',360,605,265,60)}
   {art('strip',665,95,140,915)}
   {title('2',78,686,540,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naRB naNw')}
   {[713,732,752,772,791,811,830,849,869,888,908,927,947,966,986,1005].map((y,i)=>field('89-2-'+i,102,y,525,'Notizzeile '+(i+1)))}
-  {text(598,1047,150,'neunundachtzig  |  89','naFooter')}
+  {text(598,1046,150,'neunundachtzig  |  89','naFooter')}
   {art('modul-tab',722,1038,50,24)}
  </>}
  {page==='30'&&<>
@@ -73,25 +115,25 @@ export function NativeAB12({page}:{page:string}){
   {text(167,250,22,'■','naSq')}
   {text(189,252,40,'Was','naDlg naNw')}
   {art('hand1',225,246,240,40)}
-  {rule(472,271,116)}
+  {rule(462,271,126)}
   {text(591,252,20,'?','naDlg')}
   {text(167,276,22,'▲','naTri')}
-  {text(190,277,32,'Ich','naDlg naNw')}
+  {text(190,273,32,'Ich','naDlg naNw')}
   {field('p30-1a',221,270,291,'Antwort 1a')}
-  {text(516,277,16,'.','naDlg')}
-  {text(190,304,400,'Die Klimaanlage in meinem Zimmer','naDlg naNw')}
+  {text(516,273,16,'.','naDlg')}
+  {text(190,299,400,'Die Klimaanlage in meinem Zimmer','naDlg naNw')}
   {field('p30-1b',188,321,399,'Antwort 1b')}
   {text(593,334,16,'.','naDlg')}
-  {text(167,366,22,'■','naSq')}
-  {text(189,368,200,'Das tut mir leid. Ich','naDlg naNw')}
+  {text(167,361,22,'■','naSq')}
+  {text(189,361,200,'Das tut mir leid. Ich','naDlg naNw')}
   {field('p30-1c',372,361,188,'Antwort 1c')}
-  {text(189,392,60,'mich','naDlg naNw')}
+  {text(189,388,60,'mich','naDlg naNw')}
   {field('p30-1d',252,386,178,'Antwort 1d')}
-  {text(438,394,90,'darum.','naDlg naNw')}
-  {text(167,420,22,'▲','naTri')}
-  {text(189,421,40,'Das','naDlg naNw')}
+  {text(438,390,90,'darum.','naDlg naNw')}
+  {text(167,414,22,'▲','naTri')}
+  {text(189,414,40,'Das','naDlg naNw')}
   {field('p30-1e',232,413,189,'Antwort 1e')}
-  {text(429,421,200,'. Vielen Dank!','naDlg naNw')}
+  {text(429,414,200,'. Vielen Dank!','naDlg naNw')}
   {art('rezeption',636,250,414,226)}
   {check('30-1',190,446,{'p30-1a':'brauche Ihre Hilfe','p30-1b':'funktioniert nicht','p30-1c':'kümmere','p30-1d':'sofort','p30-1e':'ist sehr nett'})}
   {kb(78,490,'KB 5')}
@@ -110,8 +152,8 @@ export function NativeAB12({page}:{page:string}){
   {kb(78,1052,'KB 5')}
   {title('3',130,1044,820,'Was haben Sie auf einer Reise in Ihrem KOFFER? Finden Sie Wörter.','naGB')}
   <div className="naSide" style={{left:75,top:1090}}>WÖRTER</div>
-  {(['K','O','F','F','E','R'] as string[]).map((l,i)=>{const y=1086+i*27;return <div key={i}>{text(374,y,26,l,'naLet')}{i!==2&&field('p30-3-'+i,398,y-7,205,'KOFFER-Zeile '+(i+1))}{i!==2&&field('p30-3-l'+i,160,y-7,205,'KOFFER-Zeile '+(i+1)+' links')}</div>})}
-  {art('foehn',386,1130,104,32)}
+  {(['K','O','F','F','E','R'] as string[]).map((l,i)=>{const y=Math.round(1076+i*25.8);return <div key={i}>{text(374,y,26,l,'naLet')}{i!==2&&field('p30-3-'+i,398,y-5,205,'KOFFER-Zeile '+(i+1))}{i!==2&&field('p30-3-l'+i,160,y-5,205,'KOFFER-Zeile '+(i+1)+' links')}</div>})}
+  {art('foehn',386,1122,104,32)}
   {kb(78,1278,'KB 5')}
   {title('4',130,1270,900,'Machen Sie ein Rätsel für Ihre Partnerin / Ihren Partner wie in 3 zu einem Thema aus den Lektionen 13–15.','naGB')}
   {text(55,1298,26,'●','naOpt')}
@@ -121,28 +163,83 @@ export function NativeAB12({page}:{page:string}){
  </>}
  {page==='59'&&<>
   {art('lesson-tab',980,32,86,88)}
-  {text(112,86,290,'LERNWORTSCHATZ','naHeadline')}
+  {text(112,84,290,'LERNWORTSCHATZ','naHeadline')}
   <div className="naHeadRule" style={{left:400,top:100,width:360}}/>
   {title('1',107,158,700,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.')}
   <div className="naSide" style={{left:78,top:300}}>WÖRTER</div>
-  {text(152,200,160,'Aussehen','naBold')}
-  {([['Bart der, ¨e',231],['Haar das, -e',256],['blond',293],['dick',319],['dünn',345],['glatt',371],['grau',402],['hübsch',422],['schlank',448]] as [string,number][]).map(([t,y],i)=>
-   <div key={i}>{text(154,y+2,170,t)}{field('59-1-a'+i,326,y-5,192,t+' übersetzen')}</div>)}
-  {text(154,500,160,'Charakter','naBold')}
-  {([['freundlich/',526],['unfreundlich',552],['fröhlich',577],['glücklich/',603],['unglücklich',629],['komisch',655],['seltsam',681],['sympathisch/',706],['unsympathisch',732],['traurig',759]] as [string,number][]).map(([t,y],i)=>
-   <div key={i}>{text(155,y+2,180,t)}{[1,2,4,5,6,8,9].includes(i)&&field('59-1-c'+i,326,y-5,192,t.replace('/','')+' übersetzen')}</div>)}
-  {text(539,200,300,'Weitere wichtige Wörter','naBold')}
-  {([['Bäckerei die,',229,534],['-en',260,549],['Hausfrau die,',280,534],['-en',312,549],['beschweren (sich),',345,533],['hat sich',371,545],['beschwert',396,544],['erkennen, hat',422,534],['erkannt',448,545],['geboren sein,',474,533],['ist geboren',500,545],['vergessen,',531,533],['du vergisst,',551,545],['er vergisst,',578,545],['hat vergessen',603,545],['gleich',641,534],['laut',667,534],['ledig',693,534]] as [string,number,number][]).map(([t,y,x],i)=>
-   <div key={i}>{text(x,y+2,240,t)}</div>)}
-  {[260,312,396,448,500,603,641,667,693].map((y,i)=>field('59-1-w'+i,686,+y-5,198,'Übersetzung '+(i+1)))}
+  {text(152,196,160,'Aussehen','naBold')}
+  {text(154,225,170,'Bart der, ¨e')}
+  {field('59-1-aBar',326,221,192,'Bart der, ¨e übersetzen')}
+  {text(154,251,170,'Haar das, -e')}
+  {field('59-1-aHaa',326,247,192,'Haar das, -e übersetzen')}
+  {text(154,290,170,'blond')}
+  {field('59-1-ablo',326,286,192,'blond übersetzen')}
+  {text(154,316,170,'dick')}
+  {field('59-1-adic',326,312,192,'dick übersetzen')}
+  {text(154,342,170,'dünn')}
+  {field('59-1-adün',326,338,192,'dünn übersetzen')}
+  {text(154,368,170,'glatt')}
+  {field('59-1-agla',326,364,192,'glatt übersetzen')}
+  {text(154,394,170,'grau')}
+  {field('59-1-agra',326,390,192,'grau übersetzen')}
+  {text(154,419,170,'hübsch')}
+  {field('59-1-ahüb',326,415,192,'hübsch übersetzen')}
+  {text(154,445,170,'schlank')}
+  {field('59-1-asch',326,441,192,'schlank übersetzen')}
+  {text(154,496,160,'Charakter','naBold')}
+  {text(155,523,180,'freundlich/')}
+  {text(166,548,180,'unfreundlich')}
+  {field('59-1-cunfr',326,544,192,'unfreundlich übersetzen')}
+  {text(155,574,180,'fröhlich')}
+  {field('59-1-cfröh',326,570,192,'fröhlich übersetzen')}
+  {text(155,600,180,'glücklich/')}
+  {text(166,626,180,'unglücklich')}
+  {field('59-1-cungl',326,622,192,'unglücklich übersetzen')}
+  {text(155,652,180,'komisch')}
+  {field('59-1-ckomi',326,648,192,'komisch übersetzen')}
+  {text(155,678,180,'seltsam')}
+  {field('59-1-cselt',326,674,192,'seltsam übersetzen')}
+  {text(155,703,180,'sympathisch/')}
+  {text(166,729,180,'unsympathisch')}
+  {field('59-1-cunsy',326,725,206,'unsympathisch übersetzen')}
+  {text(155,755,180,'traurig')}
+  {field('59-1-ctrau',326,751,206,'traurig übersetzen')}
+  {text(539,196,300,'Weitere wichtige Wörter','naBold')}
+  {text(541,225,240,'Bäckerei die,')}
+  {text(551,251,240,'-en')}
+  {field('59-1-w265',686,247,198,'-en Übersetzung')}
+  {text(541,277,240,'Hausfrau die,')}
+  {text(551,303,240,'-en')}
+  {field('59-1-w317',686,299,198,'-en Übersetzung')}
+  {text(540,340,240,'beschweren (sich),')}
+  {text(552,366,240,'hat sich')}
+  {text(552,392,240,'beschwert')}
+  {field('59-1-w406',686,388,198,'beschwert Übersetzung')}
+  {text(541,419,240,'erkennen, hat')}
+  {text(552,445,240,'erkannt')}
+  {field('59-1-w459',686,441,198,'erkannt Übersetzung')}
+  {text(540,471,240,'geboren sein,')}
+  {text(552,496,240,'ist geboren')}
+  {field('59-1-w510',686,492,198,'ist geboren Übersetzung')}
+  {text(540,522,240,'vergessen,')}
+  {text(552,548,240,'du vergisst,')}
+  {text(552,574,240,'er vergisst,')}
+  {text(552,600,240,'hat vergessen')}
+  {field('59-1-w614',686,596,198,'hat vergessen Übersetzung')}
+  {text(540,638,240,'gleich')}
+  {field('59-1-w652',686,634,198,'gleich Übersetzung')}
+  {text(540,664,240,'laut')}
+  {field('59-1-w678',686,660,198,'laut Übersetzung')}
+  {text(540,690,240,'ledig')}
+  {field('59-1-w704',686,686,198,'ledig Übersetzung')}
   {art('strip',912,120,160,1240)}
   {art('tipprule',230,810,236,20)}
   {art('tipp',198,826,68,48)}
-  {text(267,837,220,'Machen Sie Wortbilder.','naSmall')}
+  {text(267,835,220,'Machen Sie Wortbilder.','naSmall')}
   {art('handwriting',470,748,320,130)}
   {title('2',107,916,700,'Welche Wörter möchten Sie noch lernen? Notieren Sie.')}
   {[0,1,2,3,4,5,6,7,8,9,10,11,12].map(i=>field('59-2-'+i,155,955+i*26,600,'Notizzeile '+(i+1)))}
-  {text(811,1386,160,'neunundfünfzig  |  59','naFooter')}
+  {text(811,1384,160,'neunundfünfzig  |  59','naFooter')}
   {art('modul-tab',1008,1384,64,30)}
  </>}
  </div><audio ref={player} className="naPlayer"/></div>;
