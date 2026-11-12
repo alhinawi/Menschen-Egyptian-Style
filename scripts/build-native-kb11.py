@@ -46,6 +46,9 @@ def build(p):
             if ink.sum()>3:
                 fg=np.median(box[dist>=np.percentile(dist[ink],60)],axis=0)
             else:fg=np.array([30,30,30])
+            fgc=fg
+            if fgc[2]>fgc[0]+35 and fgc[2]>fgc[1]+10:
+                rec['r']=0;words.append(rec);continue
             work[y0:y1,x0:x1]=bg
             rec['c']='#%02x%02x%02x'%tuple(int(max(0,min(255,v))) for v in fg)
             rec['b']=1 if frac>0.34 else 0
@@ -103,21 +106,39 @@ def build(p):
             if 'ph' not in w and len(L['ws'])>1:w['ph']=txt
             w['l']=li
             if med and w.get('r'):w['f']=round(med,1);w['cy']=round(statistics.median([x['y']+x['h']/2 for x in L['ws']]),1)
+    blocks=[]
+    for L in lines:
+        rr=sorted([w for w in L['ws'] if w.get('r')],key=lambda w:w['x'])
+        seg=[]
+        for w in rr:
+            if seg and w['x']-(seg[-1]['x']+seg[-1]['w'])>max(w['f'],seg[-1]['f'])*1.1:
+                blocks.append(seg);seg=[]
+            seg.append(w)
+        if seg:blocks.append(seg)
+    outb=[]
+    for seg in blocks:
+        x0=min(w['x'] for w in seg);x1=max(w['x']+w['w'] for w in seg)
+        outb.append({'x':x0,'w':x1-x0,'cy':seg[0]['cy'],'f':seg[0]['f'],'b':seg[0]['b'],'ws':[{'t':w['t'],'c':w['c'],**({'ph':w['ph']} if 'ph' in w else {})} for w in seg]})
+    words=[w for w in words if not w.get('r')]
     checks={}
     for g in sorted({f['group'] for f in d['fields'] if f.get('answer') is not None}):
         fs=[f for f in d['fields'] if f['group']==g]
         yb=max(f['y']+f['h'] for f in fs);xm=min(f['x'] for f in fs)
         bw,bh=128,42
-        blockers=[(r['x'],r['y'],r['w'],r['h']) for r in words]+[(f['x'],f['y'],f['w'],f['h']) for f in d['fields']]+[(q['x'],q['y'],q['w'],q['h']) for q in out if q['w']>60 and q['h']>40]
-        best=None
-        for dy in range(2,220,3):
-            for x in [xm]+list(range(40,d['width']-bw-20,40)):
-                x=min(x,d['width']-bw-10);y=yb+dy
-                if y+bh>d['height']:continue
-                if all(x+bw<=bx or bx+bw_<=x or y+bh<=by or by+bh_<=y for bx,by,bw_,bh_ in blockers):best=(x,y);break
-            if best:break
+        blockers=[(r['x'],r['y'],r['w'],r['h']) for r in words]+[(w['x'],w['cy']-w['f']*0.6,w['w'],w['f']*1.2) for w in outb]+[(f['x'],f['y'],f['w'],f['h']) for f in d['fields']]+[(q['x'],q['y'],q['w'],q['h']) for q in out if q['w']>60 and q['h']>40]
+        lowest=max(fs,key=lambda f:f['y']+f['h']);ax=min(f['x'] for f in fs if abs(f['y']-lowest['y'])<12);ay=lowest['y']+lowest['h']
+        gx1=max(f['x']+f['w'] for f in fs if abs(f['y']-lowest['y'])<12)
+        cands=[]
+        for x in range(10,d['width']-bw-5,6):
+            for y in range(int(ay-bh),int(ay+160),4):
+                if y<0 or y+bh>d['height']:continue
+                dist=abs(y-(ay+4))*1.2+min(abs(x-ax),abs(x-gx1-6))
+                cands.append((dist,x,y))
+        cands.sort();best=None
+        for dist,x,y in cands:
+            if all(x+bw<=bx or bx+bw_<=x or y+bh<=by or by+bh_<=y for bx,by,bw_,bh_ in blockers):best=(x,y);break
         checks[g]=list(best or (min(xm,d['width']-bw-10),min(yb+6,d['height']-bh)))
-    return {'checks':checks,'book':'kb-a11','page':p,'w':d['width'],'h':d['height'],'words':words,'art':out,
+    return {'blocks':outb,'checks':checks,'book':'kb-a11','page':p,'w':d['width'],'h':d['height'],'words':words,'art':out,
             'paper':'#%02x%02x%02x'%tuple(int(v) for v in paper),'fields':d['fields'],'audio':d['audio'],'review':d['review']}
 def re_has(t):
     return any(c.isalnum() for c in t) or t.strip() in ('.',',','!','?',':','–','-','…')
