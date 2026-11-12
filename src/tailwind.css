@@ -84,6 +84,11 @@ html[data-theme="dark"] .lnv-pg.cur {
   & .vocabCols h3 { margin: 10px 0; }
   & .vocabCols p { display: flex; align-items: center; gap: 8px; justify-content: space-between; }
   & .vocabCols input { width: 125px !important; flex-shrink: 0; }
+  /* later ab1.css block: narrower vocab columns variant (same selectors in
+     ab2/ab3 runtime css win ties there; abm1 has no vocabCols markup) */
+  & .vocabCols { width: 610px; font-size: 16px; }
+  & .vocabCols input { width: 100px !important; }
+  & .vocabCols p { gap: 5px; }
   & .audioTracks { display: flex; gap: 25px; }
   & .internalNote { font: 18px/1.7 Arial; color: #777; }
   & .check { margin-top: 5px; }
