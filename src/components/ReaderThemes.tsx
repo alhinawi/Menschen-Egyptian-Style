@@ -84,7 +84,7 @@ export function AudioHint() {
     document.addEventListener('click', click);
     return () => document.removeEventListener('click', click);
   }, []);
-  return createPortal(<aside className="audioDiscover" dir="rtl" lang="ar-EG" hidden={hidden}><span>اضغط ▶ في الدرس عشان تسمع صوتيات الكتاب</span><button type="button" aria-label="إخفاء النصيحة" onClick={close}>×</button></aside>, document.body);
+  return createPortal(<aside className="audioDiscover" dir="rtl" lang="ar-EG" hidden={hidden}><span>اضغط على ▶ في الدرس عشان تسمع صوتيات الكتاب</span><button type="button" aria-label="إخفاء النصيحة" onClick={close}>×</button></aside>, document.body);
 }
 
 export function CrossBookNavigation() {
