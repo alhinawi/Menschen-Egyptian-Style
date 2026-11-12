@@ -1,0 +1,1885 @@
+{
+  "book": "kb-a11",
+  "page": 70,
+  "image": "assets/kb-a11-p70.png",
+  "width": 1072,
+  "height": 1518,
+  "words": [
+    {
+      "text": "Clips",
+      "x": 504,
+      "y": 155,
+      "w": 44,
+      "h": 25
+    },
+    {
+      "text": "10-12",
+      "x": 555,
+      "y": 156,
+      "w": 55,
+      "h": 18
+    },
+    {
+      "text": "Mein",
+      "x": 205,
+      "y": 244,
+      "w": 46,
+      "h": 16
+    },
+    {
+      "text": "Weg",
+      "x": 257,
+      "y": 245,
+      "w": 41,
+      "h": 21
+    },
+    {
+      "text": "ins",
+      "x": 306,
+      "y": 243,
+      "w": 26,
+      "h": 16
+    },
+    {
+      "text": "Büro",
+      "x": 341,
+      "y": 244,
+      "w": 43,
+      "h": 15
+    },
+    {
+      "text": "Was",
+      "x": 408,
+      "y": 244,
+      "w": 38,
+      "h": 15
+    },
+    {
+      "text": "ist",
+      "x": 454,
+      "y": 242,
+      "w": 23,
+      "h": 16
+    },
+    {
+      "text": "richtig",
+      "x": 486,
+      "y": 242,
+      "w": 73,
+      "h": 23
+    },
+    {
+      "text": "Sehen",
+      "x": 566,
+      "y": 241,
+      "w": 56,
+      "h": 17
+    },
+    {
+      "text": "Sie",
+      "x": 629,
+      "y": 241,
+      "w": 27,
+      "h": 16
+    },
+    {
+      "text": "die",
+      "x": 663,
+      "y": 241,
+      "w": 28,
+      "h": 16
+    },
+    {
+      "text": "Reportage",
+      "x": 700,
+      "y": 242,
+      "w": 96,
+      "h": 21
+    },
+    {
+      "text": "und",
+      "x": 804,
+      "y": 239,
+      "w": 34,
+      "h": 17
+    },
+    {
+      "text": "kreuzen",
+      "x": 848,
+      "y": 239,
+      "w": 74,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 929,
+      "y": 238,
+      "w": 27,
+      "h": 16
+    },
+    {
+      "text": "an",
+      "x": 964,
+      "y": 244,
+      "w": 28,
+      "h": 10
+    },
+    {
+      "text": "a",
+      "x": 204,
+      "y": 284,
+      "w": 10,
+      "h": 14
+    },
+    {
+      "text": "Hanna",
+      "x": 227,
+      "y": 284,
+      "w": 56,
+      "h": 13
+    },
+    {
+      "text": "wohnt",
+      "x": 289,
+      "y": 282,
+      "w": 55,
+      "h": 15
+    },
+    {
+      "text": "in",
+      "x": 351,
+      "y": 283,
+      "w": 16,
+      "h": 14
+    },
+    {
+      "text": "Weßling",
+      "x": 374,
+      "y": 281,
+      "w": 74,
+      "h": 21
+    },
+    {
+      "text": "b",
+      "x": 203,
+      "y": 308,
+      "w": 10,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 227,
+      "y": 309,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "arbeitet",
+      "x": 258,
+      "y": 308,
+      "w": 67,
+      "h": 15
+    },
+    {
+      "text": "in",
+      "x": 331,
+      "y": 308,
+      "w": 17,
+      "h": 14
+    },
+    {
+      "text": "Weßling",
+      "x": 354,
+      "y": 306,
+      "w": 75,
+      "h": 21
+    },
+    {
+      "text": "c",
+      "x": 204,
+      "y": 334,
+      "w": 10,
+      "h": 14
+    },
+    {
+      "text": "Sie",
+      "x": 227,
+      "y": 334,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "hat",
+      "x": 258,
+      "y": 333,
+      "w": 28,
+      "h": 15
+    },
+    {
+      "text": "kein",
+      "x": 291,
+      "y": 333,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "Auto",
+      "x": 335,
+      "y": 334,
+      "w": 44,
+      "h": 13
+    },
+    {
+      "text": "d",
+      "x": 205,
+      "y": 359,
+      "w": 10,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 228,
+      "y": 359,
+      "w": 23,
+      "h": 14
+    },
+    {
+      "text": "steigt",
+      "x": 258,
+      "y": 359,
+      "w": 46,
+      "h": 20
+    },
+    {
+      "text": "in",
+      "x": 311,
+      "y": 359,
+      "w": 16,
+      "h": 14
+    },
+    {
+      "text": "Weßling",
+      "x": 334,
+      "y": 357,
+      "w": 70,
+      "h": 21
+    },
+    {
+      "text": "in",
+      "x": 410,
+      "y": 358,
+      "w": 17,
+      "h": 14
+    },
+    {
+      "text": "die",
+      "x": 433,
+      "y": 357,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "S-Bahn",
+      "x": 465,
+      "y": 357,
+      "w": 59,
+      "h": 15
+    },
+    {
+      "text": "ein",
+      "x": 530,
+      "y": 357,
+      "w": 31,
+      "h": 14
+    },
+    {
+      "text": "e",
+      "x": 205,
+      "y": 385,
+      "w": 10,
+      "h": 14
+    },
+    {
+      "text": "Am",
+      "x": 227,
+      "y": 385,
+      "w": 28,
+      "h": 13
+    },
+    {
+      "text": "Hauptbahnhof",
+      "x": 263,
+      "y": 382,
+      "w": 125,
+      "h": 22
+    },
+    {
+      "text": "steigt",
+      "x": 393,
+      "y": 383,
+      "w": 46,
+      "h": 20
+    },
+    {
+      "text": "sie",
+      "x": 445,
+      "y": 383,
+      "w": 21,
+      "h": 14
+    },
+    {
+      "text": "um",
+      "x": 474,
+      "y": 387,
+      "w": 31,
+      "h": 10
+    },
+    {
+      "text": "f",
+      "x": 206,
+      "y": 408,
+      "w": 8,
+      "h": 12
+    },
+    {
+      "text": "Um",
+      "x": 228,
+      "y": 411,
+      "w": 28,
+      "h": 13
+    },
+    {
+      "text": "Viertel",
+      "x": 263,
+      "y": 408,
+      "w": 58,
+      "h": 15
+    },
+    {
+      "text": "vor",
+      "x": 327,
+      "y": 414,
+      "w": 27,
+      "h": 10
+    },
+    {
+      "text": "acht",
+      "x": 361,
+      "y": 408,
+      "w": 36,
+      "h": 15
+    },
+    {
+      "text": "kommt",
+      "x": 403,
+      "y": 408,
+      "w": 60,
+      "h": 15
+    },
+    {
+      "text": "sie",
+      "x": 469,
+      "y": 408,
+      "w": 22,
+      "h": 14
+    },
+    {
+      "text": "im",
+      "x": 498,
+      "y": 408,
+      "w": 21,
+      "h": 14
+    },
+    {
+      "text": "Büro",
+      "x": 526,
+      "y": 408,
+      "w": 39,
+      "h": 13
+    },
+    {
+      "text": "an",
+      "x": 572,
+      "y": 412,
+      "w": 25,
+      "h": 9
+    },
+    {
+      "text": "Martins",
+      "x": 206,
+      "y": 471,
+      "w": 74,
+      "h": 16
+    },
+    {
+      "text": "Tag",
+      "x": 286,
+      "y": 471,
+      "w": 32,
+      "h": 21
+    },
+    {
+      "text": "Sehen",
+      "x": 342,
+      "y": 469,
+      "w": 55,
+      "h": 17
+    },
+    {
+      "text": "Sie",
+      "x": 405,
+      "y": 470,
+      "w": 27,
+      "h": 16
+    },
+    {
+      "text": "das",
+      "x": 440,
+      "y": 469,
+      "w": 31,
+      "h": 16
+    },
+    {
+      "text": "Videotagebuch",
+      "x": 476,
+      "y": 468,
+      "w": 150,
+      "h": 23
+    },
+    {
+      "text": "ordnen",
+      "x": 633,
+      "y": 468,
+      "w": 67,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 707,
+      "y": 468,
+      "w": 27,
+      "h": 16
+    },
+    {
+      "text": "zu",
+      "x": 742,
+      "y": 473,
+      "w": 21,
+      "h": 11
+    },
+    {
+      "text": "und",
+      "x": 772,
+      "y": 467,
+      "w": 34,
+      "h": 16
+    },
+    {
+      "text": "erzählen",
+      "x": 814,
+      "y": 466,
+      "w": 81,
+      "h": 17
+    },
+    {
+      "text": "Sie",
+      "x": 903,
+      "y": 466,
+      "w": 27,
+      "h": 16
+    },
+    {
+      "text": "dann",
+      "x": 937,
+      "y": 465,
+      "w": 53,
+      "h": 16
+    },
+    {
+      "text": "aufräumen",
+      "x": 211,
+      "y": 509,
+      "w": 82,
+      "h": 15
+    },
+    {
+      "text": "und",
+      "x": 301,
+      "y": 509,
+      "w": 27,
+      "h": 15
+    },
+    {
+      "text": "sauber",
+      "x": 336,
+      "y": 509,
+      "w": 50,
+      "h": 14
+    },
+    {
+      "text": "machen",
+      "x": 393,
+      "y": 509,
+      "w": 58,
+      "h": 15
+    },
+    {
+      "text": "einen",
+      "x": 467,
+      "y": 509,
+      "w": 42,
+      "h": 14
+    },
+    {
+      "text": "Spaziergang",
+      "x": 516,
+      "y": 509,
+      "w": 94,
+      "h": 20
+    },
+    {
+      "text": "machen",
+      "x": 617,
+      "y": 507,
+      "w": 58,
+      "h": 15
+    },
+    {
+      "text": "frühstücken",
+      "x": 691,
+      "y": 507,
+      "w": 92,
+      "h": 15
+    },
+    {
+      "text": "und",
+      "x": 791,
+      "y": 506,
+      "w": 27,
+      "h": 15
+    },
+    {
+      "text": "Zeitung",
+      "x": 826,
+      "y": 506,
+      "w": 61,
+      "h": 19
+    },
+    {
+      "text": "lesen",
+      "x": 894,
+      "y": 505,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "zu",
+      "x": 211,
+      "y": 541,
+      "w": 16,
+      "h": 9
+    },
+    {
+      "text": "Abend",
+      "x": 233,
+      "y": 535,
+      "w": 48,
+      "h": 15
+    },
+    {
+      "text": "essen",
+      "x": 288,
+      "y": 540,
+      "w": 41,
+      "h": 10
+    },
+    {
+      "text": "kochen",
+      "x": 345,
+      "y": 534,
+      "w": 54,
+      "h": 15
+    },
+    {
+      "text": "schlafen",
+      "x": 415,
+      "y": 533,
+      "w": 62,
+      "h": 15
+    },
+    {
+      "text": "Silvia",
+      "x": 492,
+      "y": 534,
+      "w": 40,
+      "h": 15
+    },
+    {
+      "text": "anrufen",
+      "x": 540,
+      "y": 533,
+      "w": 59,
+      "h": 15
+    },
+    {
+      "text": "Silvia",
+      "x": 614,
+      "y": 533,
+      "w": 41,
+      "h": 15
+    },
+    {
+      "text": "im",
+      "x": 662,
+      "y": 533,
+      "w": 17,
+      "h": 14
+    },
+    {
+      "text": "Rosengarten",
+      "x": 688,
+      "y": 534,
+      "w": 95,
+      "h": 19
+    },
+    {
+      "text": "treffen",
+      "x": 790,
+      "y": 531,
+      "w": 53,
+      "h": 15
+    },
+    {
+      "text": "Jenga",
+      "x": 857,
+      "y": 533,
+      "w": 42,
+      "h": 18
+    },
+    {
+      "text": "spielen",
+      "x": 907,
+      "y": 530,
+      "w": 52,
+      "h": 20
+    },
+    {
+      "text": "bis",
+      "x": 205,
+      "y": 573,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "9:30",
+      "x": 235,
+      "y": 574,
+      "w": 33,
+      "h": 14
+    },
+    {
+      "text": "Uhr",
+      "x": 275,
+      "y": 573,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "bis",
+      "x": 206,
+      "y": 598,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "10:00",
+      "x": 236,
+      "y": 599,
+      "w": 41,
+      "h": 14
+    },
+    {
+      "text": "Uhr",
+      "x": 284,
+      "y": 598,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "Croissants",
+      "x": 324,
+      "y": 595,
+      "w": 80,
+      "h": 29
+    },
+    {
+      "text": "backen",
+      "x": 406,
+      "y": 595,
+      "w": 56,
+      "h": 29
+    },
+    {
+      "text": "Zeitung",
+      "x": 462,
+      "y": 595,
+      "w": 60,
+      "h": 29
+    },
+    {
+      "text": "holen",
+      "x": 522,
+      "y": 595,
+      "w": 48,
+      "h": 29
+    },
+    {
+      "text": "Kaffee",
+      "x": 570,
+      "y": 595,
+      "w": 53,
+      "h": 29
+    },
+    {
+      "text": "machen",
+      "x": 623,
+      "y": 595,
+      "w": 54,
+      "h": 29
+    },
+    {
+      "text": "von",
+      "x": 206,
+      "y": 628,
+      "w": 31,
+      "h": 10
+    },
+    {
+      "text": "10:00",
+      "x": 243,
+      "y": 624,
+      "w": 41,
+      "h": 14
+    },
+    {
+      "text": "Uhr",
+      "x": 291,
+      "y": 623,
+      "w": 32,
+      "h": 15
+    },
+    {
+      "text": "bis",
+      "x": 329,
+      "y": 623,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "11:00",
+      "x": 359,
+      "y": 623,
+      "w": 39,
+      "h": 14
+    },
+    {
+      "text": "Uhr",
+      "x": 405,
+      "y": 622,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "von",
+      "x": 206,
+      "y": 654,
+      "w": 31,
+      "h": 10
+    },
+    {
+      "text": "11:00",
+      "x": 243,
+      "y": 649,
+      "w": 39,
+      "h": 14
+    },
+    {
+      "text": "Uhr",
+      "x": 289,
+      "y": 648,
+      "w": 32,
+      "h": 15
+    },
+    {
+      "text": "bis",
+      "x": 327,
+      "y": 648,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "13:00",
+      "x": 357,
+      "y": 649,
+      "w": 41,
+      "h": 14
+    },
+    {
+      "text": "Uhr",
+      "x": 404,
+      "y": 647,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "um",
+      "x": 207,
+      "y": 679,
+      "w": 27,
+      "h": 10
+    },
+    {
+      "text": "13:00",
+      "x": 240,
+      "y": 675,
+      "w": 41,
+      "h": 14
+    },
+    {
+      "text": "Uhr",
+      "x": 287,
+      "y": 673,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "um",
+      "x": 207,
+      "y": 704,
+      "w": 26,
+      "h": 10
+    },
+    {
+      "text": "14:00",
+      "x": 240,
+      "y": 700,
+      "w": 42,
+      "h": 14
+    },
+    {
+      "text": "Uhr",
+      "x": 288,
+      "y": 699,
+      "w": 36,
+      "h": 15
+    },
+    {
+      "text": "von",
+      "x": 206,
+      "y": 730,
+      "w": 31,
+      "h": 10
+    },
+    {
+      "text": "14:00",
+      "x": 244,
+      "y": 725,
+      "w": 42,
+      "h": 14
+    },
+    {
+      "text": "Uhr",
+      "x": 292,
+      "y": 724,
+      "w": 32,
+      "h": 15
+    },
+    {
+      "text": "bis",
+      "x": 330,
+      "y": 724,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "16:30",
+      "x": 360,
+      "y": 725,
+      "w": 40,
+      "h": 14
+    },
+    {
+      "text": "Uhr",
+      "x": 407,
+      "y": 723,
+      "w": 36,
+      "h": 15
+    },
+    {
+      "text": "von",
+      "x": 207,
+      "y": 755,
+      "w": 31,
+      "h": 10
+    },
+    {
+      "text": "16:30",
+      "x": 244,
+      "y": 751,
+      "w": 40,
+      "h": 14
+    },
+    {
+      "text": "Uhr",
+      "x": 291,
+      "y": 749,
+      "w": 32,
+      "h": 15
+    },
+    {
+      "text": "bis",
+      "x": 329,
+      "y": 749,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "18:00",
+      "x": 359,
+      "y": 750,
+      "w": 41,
+      "h": 14
+    },
+    {
+      "text": "Uhr",
+      "x": 406,
+      "y": 749,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "reden",
+      "x": 456,
+      "y": 750,
+      "w": 39,
+      "h": 13
+    },
+    {
+      "text": "Wasser",
+      "x": 507,
+      "y": 750,
+      "w": 49,
+      "h": 12
+    },
+    {
+      "text": "trinken",
+      "x": 557,
+      "y": 746,
+      "w": 61,
+      "h": 23
+    },
+    {
+      "text": "einkaufen",
+      "x": 620,
+      "y": 746,
+      "w": 71,
+      "h": 23
+    },
+    {
+      "text": "von",
+      "x": 207,
+      "y": 780,
+      "w": 31,
+      "h": 10
+    },
+    {
+      "text": "18:00",
+      "x": 244,
+      "y": 776,
+      "w": 41,
+      "h": 14
+    },
+    {
+      "text": "Uhr",
+      "x": 292,
+      "y": 774,
+      "w": 32,
+      "h": 15
+    },
+    {
+      "text": "bis",
+      "x": 329,
+      "y": 774,
+      "w": 23,
+      "h": 14
+    },
+    {
+      "text": "18:30",
+      "x": 360,
+      "y": 775,
+      "w": 40,
+      "h": 13
+    },
+    {
+      "text": "Uhr",
+      "x": 406,
+      "y": 774,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "um",
+      "x": 208,
+      "y": 805,
+      "w": 27,
+      "h": 10
+    },
+    {
+      "text": "18.30",
+      "x": 249,
+      "y": 801,
+      "w": 40,
+      "h": 14
+    },
+    {
+      "text": "Uhr",
+      "x": 288,
+      "y": 799,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "von",
+      "x": 207,
+      "y": 830,
+      "w": 31,
+      "h": 10
+    },
+    {
+      "text": "19:00",
+      "x": 245,
+      "y": 826,
+      "w": 41,
+      "h": 14
+    },
+    {
+      "text": "Uhr",
+      "x": 292,
+      "y": 824,
+      "w": 32,
+      "h": 15
+    },
+    {
+      "text": "bis",
+      "x": 330,
+      "y": 824,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "21:00",
+      "x": 360,
+      "y": 824,
+      "w": 41,
+      "h": 14
+    },
+    {
+      "text": "Uhr",
+      "x": 408,
+      "y": 824,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "Gestern",
+      "x": 906,
+      "y": 797,
+      "w": 54,
+      "h": 12
+    },
+    {
+      "text": "hat",
+      "x": 965,
+      "y": 796,
+      "w": 23,
+      "h": 12
+    },
+    {
+      "text": "Martin",
+      "x": 892,
+      "y": 818,
+      "w": 49,
+      "h": 12
+    },
+    {
+      "text": "bis",
+      "x": 947,
+      "y": 817,
+      "w": 19,
+      "h": 13
+    },
+    {
+      "text": "halb",
+      "x": 972,
+      "y": 817,
+      "w": 31,
+      "h": 13
+    },
+    {
+      "text": "zehn",
+      "x": 888,
+      "y": 839,
+      "w": 34,
+      "h": 12
+    },
+    {
+      "text": "geschlafen",
+      "x": 926,
+      "y": 838,
+      "w": 80,
+      "h": 18
+    },
+    {
+      "text": "Dann",
+      "x": 919,
+      "y": 862,
+      "w": 37,
+      "h": 11
+    },
+    {
+      "text": "Das",
+      "x": 210,
+      "y": 888,
+      "w": 31,
+      "h": 15
+    },
+    {
+      "text": "war",
+      "x": 248,
+      "y": 892,
+      "w": 36,
+      "h": 11
+    },
+    {
+      "text": "so",
+      "x": 291,
+      "y": 892,
+      "w": 19,
+      "h": 11
+    },
+    {
+      "text": "schön",
+      "x": 318,
+      "y": 886,
+      "w": 60,
+      "h": 16
+    },
+    {
+      "text": "Sehen",
+      "x": 404,
+      "y": 886,
+      "w": 55,
+      "h": 17
+    },
+    {
+      "text": "Sie",
+      "x": 467,
+      "y": 886,
+      "w": 28,
+      "h": 16
+    },
+    {
+      "text": "die",
+      "x": 502,
+      "y": 885,
+      "w": 28,
+      "h": 16
+    },
+    {
+      "text": "Diashow",
+      "x": 539,
+      "y": 885,
+      "w": 80,
+      "h": 17
+    },
+    {
+      "text": "und",
+      "x": 627,
+      "y": 884,
+      "w": 34,
+      "h": 17
+    },
+    {
+      "text": "ergänzen",
+      "x": 669,
+      "y": 885,
+      "w": 86,
+      "h": 22
+    },
+    {
+      "text": "Sie",
+      "x": 762,
+      "y": 884,
+      "w": 33,
+      "h": 16
+    },
+    {
+      "text": "am",
+      "x": 211,
+      "y": 926,
+      "w": 25,
+      "h": 16
+    },
+    {
+      "text": "Freitag",
+      "x": 244,
+      "y": 927,
+      "w": 53,
+      "h": 19
+    },
+    {
+      "text": "Annas",
+      "x": 311,
+      "y": 927,
+      "w": 46,
+      "h": 14
+    },
+    {
+      "text": "Geburtstagsfeier",
+      "x": 364,
+      "y": 925,
+      "w": 137,
+      "h": 21
+    },
+    {
+      "text": "Betriebsfeier",
+      "x": 508,
+      "y": 924,
+      "w": 98,
+      "h": 15
+    },
+    {
+      "text": "Faschingsfest",
+      "x": 622,
+      "y": 923,
+      "w": 104,
+      "h": 21
+    },
+    {
+      "text": "Führerscheinprüfung",
+      "x": 741,
+      "y": 922,
+      "w": 163,
+      "h": 21
+    },
+    {
+      "text": "geschafft",
+      "x": 213,
+      "y": 951,
+      "w": 73,
+      "h": 21
+    },
+    {
+      "text": "im",
+      "x": 300,
+      "y": 950,
+      "w": 16,
+      "h": 13
+    },
+    {
+      "text": "Winter",
+      "x": 323,
+      "y": 950,
+      "w": 45,
+      "h": 14
+    },
+    {
+      "text": "vor",
+      "x": 373,
+      "y": 950,
+      "w": 25,
+      "h": 13
+    },
+    {
+      "text": "20",
+      "x": 404,
+      "y": 950,
+      "w": 18,
+      "h": 13
+    },
+    {
+      "text": "Jahren",
+      "x": 428,
+      "y": 950,
+      "w": 48,
+      "h": 14
+    },
+    {
+      "text": "in",
+      "x": 506,
+      "y": 951,
+      "w": 13,
+      "h": 14
+    },
+    {
+      "text": "der",
+      "x": 526,
+      "y": 950,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "Firma",
+      "x": 558,
+      "y": 950,
+      "w": 41,
+      "h": 14
+    },
+    {
+      "text": "langweilig",
+      "x": 615,
+      "y": 949,
+      "w": 80,
+      "h": 21
+    },
+    {
+      "text": "lustig",
+      "x": 710,
+      "y": 948,
+      "w": 50,
+      "h": 21
+    },
+    {
+      "text": "Leipzig",
+      "x": 767,
+      "y": 948,
+      "w": 55,
+      "h": 20
+    },
+    {
+      "text": "letzten",
+      "x": 836,
+      "y": 948,
+      "w": 53,
+      "h": 14
+    },
+    {
+      "text": "Mai",
+      "x": 897,
+      "y": 948,
+      "w": 26,
+      "h": 14
+    },
+    {
+      "text": "Österreich",
+      "x": 214,
+      "y": 975,
+      "w": 80,
+      "h": 17
+    },
+    {
+      "text": "toll",
+      "x": 309,
+      "y": 976,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "vor",
+      "x": 348,
+      "y": 981,
+      "w": 24,
+      "h": 9
+    },
+    {
+      "text": "einem",
+      "x": 379,
+      "y": 977,
+      "w": 47,
+      "h": 14
+    },
+    {
+      "text": "Jahr",
+      "x": 431,
+      "y": 976,
+      "w": 32,
+      "h": 17
+    },
+    {
+      "text": "A",
+      "x": 216,
+      "y": 1014,
+      "w": 9,
+      "h": 12
+    },
+    {
+      "text": "B",
+      "x": 436,
+      "y": 1013,
+      "w": 7,
+      "h": 12
+    },
+    {
+      "text": "C",
+      "x": 646,
+      "y": 1011,
+      "w": 9,
+      "h": 12
+    },
+    {
+      "text": "D",
+      "x": 863,
+      "y": 1010,
+      "w": 8,
+      "h": 12
+    },
+    {
+      "text": "A",
+      "x": 370,
+      "y": 1180,
+      "w": 9,
+      "h": 11
+    },
+    {
+      "text": "B",
+      "x": 526,
+      "y": 1179,
+      "w": 7,
+      "h": 16
+    },
+    {
+      "text": "C",
+      "x": 681,
+      "y": 1180,
+      "w": 10,
+      "h": 13
+    },
+    {
+      "text": "D",
+      "x": 836,
+      "y": 1176,
+      "w": 9,
+      "h": 16
+    },
+    {
+      "text": "Welches",
+      "x": 217,
+      "y": 1200,
+      "w": 67,
+      "h": 14
+    },
+    {
+      "text": "Fest",
+      "x": 290,
+      "y": 1202,
+      "w": 40,
+      "h": 13
+    },
+    {
+      "text": "Wo",
+      "x": 211,
+      "y": 1250,
+      "w": 40,
+      "h": 20
+    },
+    {
+      "text": "Wann",
+      "x": 211,
+      "y": 1289,
+      "w": 62,
+      "h": 29
+    },
+    {
+      "text": "Wie",
+      "x": 218,
+      "y": 1354,
+      "w": 31,
+      "h": 14
+    },
+    {
+      "text": "war",
+      "x": 254,
+      "y": 1358,
+      "w": 32,
+      "h": 9
+    },
+    {
+      "text": "es",
+      "x": 290,
+      "y": 1354,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "im",
+      "x": 373,
+      "y": 1296,
+      "w": 13,
+      "h": 8
+    },
+    {
+      "text": "Winter",
+      "x": 394,
+      "y": 1291,
+      "w": 48,
+      "h": 14
+    },
+    {
+      "text": "vor",
+      "x": 450,
+      "y": 1295,
+      "w": 20,
+      "h": 9
+    },
+    {
+      "text": "20",
+      "x": 478,
+      "y": 1292,
+      "w": 22,
+      "h": 13
+    },
+    {
+      "text": "Jahren",
+      "x": 371,
+      "y": 1313,
+      "w": 46,
+      "h": 14
+    }
+  ],
+  "fields": [
+    {
+      "id": "f1-a",
+      "group": "task1",
+      "kind": "checkbox",
+      "label": "1-a: Hanna wohnt in Weßling.",
+      "answer": "true",
+      "x": 643,
+      "y": 279,
+      "w": 17,
+      "h": 18
+    },
+    {
+      "id": "f1-b",
+      "group": "task1",
+      "kind": "checkbox",
+      "label": "1-b: Sie arbeitet in Weßling.",
+      "answer": "false",
+      "x": 643,
+      "y": 305,
+      "w": 17,
+      "h": 17
+    },
+    {
+      "id": "f1-c",
+      "group": "task1",
+      "kind": "checkbox",
+      "label": "1-c: Sie hat kein Auto.",
+      "answer": "false",
+      "x": 643,
+      "y": 330,
+      "w": 17,
+      "h": 18
+    },
+    {
+      "id": "f1-d",
+      "group": "task1",
+      "kind": "checkbox",
+      "label": "1-d: Sie steigt in Weßling in die S-Bahn ein.",
+      "answer": "true",
+      "x": 643,
+      "y": 355,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "f1-e",
+      "group": "task1",
+      "kind": "checkbox",
+      "label": "1-e: Am Hauptbahnhof steigt sie um.",
+      "answer": "true",
+      "x": 643,
+      "y": 380,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "f1-f",
+      "group": "task1",
+      "kind": "checkbox",
+      "label": "1-f: Um Viertel vor acht kommt sie im Büro an.",
+      "answer": "false",
+      "x": 643,
+      "y": 406,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "f2-r1",
+      "group": "task2",
+      "kind": "text",
+      "label": "2: bis 9:30 Uhr",
+      "answer": "schlafen",
+      "x": 330,
+      "y": 571,
+      "w": 449,
+      "h": 16
+    },
+    {
+      "id": "f2-r3",
+      "group": "task2",
+      "kind": "text",
+      "label": "2: von 10:00 Uhr bis 11:00 Uhr",
+      "answer": "frühstücken und Zeitung lesen",
+      "x": 454,
+      "y": 623,
+      "w": 325,
+      "h": 16
+    },
+    {
+      "id": "f2-r4",
+      "group": "task2",
+      "kind": "text",
+      "label": "2: von 11:00 Uhr bis 13:00 Uhr",
+      "answer": "aufräumen und sauber machen",
+      "x": 484,
+      "y": 649,
+      "w": 295,
+      "h": 16
+    },
+    {
+      "id": "f2-r5",
+      "group": "task2",
+      "kind": "text",
+      "label": "2: um 13:00 Uhr",
+      "answer": "Silvia anrufen",
+      "x": 337,
+      "y": 675,
+      "w": 442,
+      "h": 16
+    },
+    {
+      "id": "f2-r6",
+      "group": "task2",
+      "kind": "text",
+      "label": "2: um 14:00 Uhr",
+      "answer": "Silvia im Rosengarten treffen",
+      "x": 338,
+      "y": 700,
+      "w": 441,
+      "h": 16
+    },
+    {
+      "id": "f2-r7",
+      "group": "task2",
+      "kind": "text",
+      "label": "2: von 14:00 Uhr bis 16:30 Uhr",
+      "answer": "einen Spaziergang machen",
+      "x": 456,
+      "y": 725,
+      "w": 323,
+      "h": 16
+    },
+    {
+      "id": "f2-r9",
+      "group": "task2",
+      "kind": "text",
+      "label": "2: von 18:00 Uhr bis 18:30 Uhr",
+      "answer": "kochen",
+      "x": 456,
+      "y": 776,
+      "w": 324,
+      "h": 16
+    },
+    {
+      "id": "f2-r10",
+      "group": "task2",
+      "kind": "text",
+      "label": "2: um 18.30 Uhr",
+      "answer": "zu Abend essen",
+      "x": 338,
+      "y": 801,
+      "w": 442,
+      "h": 16
+    },
+    {
+      "id": "f2-r11",
+      "group": "task2",
+      "kind": "text",
+      "label": "2: von 19:00 Uhr bis 21:00 Uhr",
+      "answer": "Jenga spielen",
+      "x": 458,
+      "y": 826,
+      "w": 322,
+      "h": 16
+    },
+    {
+      "id": "f3-A-fest",
+      "group": "task3",
+      "kind": "text",
+      "label": "3-A: Welches Fest?",
+      "answer": "Faschingsfest",
+      "x": 360,
+      "y": 1198,
+      "w": 145,
+      "h": 38
+    },
+    {
+      "id": "f3-A-wo",
+      "group": "task3",
+      "kind": "text",
+      "label": "3-A: Wo?",
+      "answer": "Österreich",
+      "x": 360,
+      "y": 1246,
+      "w": 145,
+      "h": 36
+    },
+    {
+      "id": "f3-A-wie",
+      "group": "task3",
+      "kind": "text",
+      "label": "3-A: Wie war es?",
+      "answer": "lustig",
+      "x": 360,
+      "y": 1346,
+      "w": 145,
+      "h": 42
+    },
+    {
+      "id": "f3-B-fest",
+      "group": "task3",
+      "kind": "text",
+      "label": "3-B: Welches Fest?",
+      "answer": "Annas Geburtstagsfeier",
+      "x": 515,
+      "y": 1198,
+      "w": 145,
+      "h": 38
+    },
+    {
+      "id": "f3-B-wo",
+      "group": "task3",
+      "kind": "text",
+      "label": "3-B: Wo?",
+      "answer": "Leipzig",
+      "x": 515,
+      "y": 1246,
+      "w": 145,
+      "h": 36
+    },
+    {
+      "id": "f3-B-wann",
+      "group": "task3",
+      "kind": "text",
+      "label": "3-B: Wann?",
+      "answer": "letzten Mai",
+      "x": 515,
+      "y": 1291,
+      "w": 145,
+      "h": 45
+    },
+    {
+      "id": "f3-B-wie",
+      "group": "task3",
+      "kind": "text",
+      "label": "3-B: Wie war es?",
+      "answer": "toll",
+      "x": 515,
+      "y": 1346,
+      "w": 145,
+      "h": 42
+    },
+    {
+      "id": "f3-C-fest",
+      "group": "task3",
+      "kind": "text",
+      "label": "3-C: Welches Fest?",
+      "answer": "Betriebsfeier",
+      "x": 670,
+      "y": 1198,
+      "w": 145,
+      "h": 38
+    },
+    {
+      "id": "f3-C-wo",
+      "group": "task3",
+      "kind": "text",
+      "label": "3-C: Wo?",
+      "answer": "in der Firma",
+      "x": 670,
+      "y": 1246,
+      "w": 145,
+      "h": 36
+    },
+    {
+      "id": "f3-C-wann",
+      "group": "task3",
+      "kind": "text",
+      "label": "3-C: Wann?",
+      "answer": "am Freitag",
+      "x": 670,
+      "y": 1291,
+      "w": 145,
+      "h": 45
+    },
+    {
+      "id": "f3-C-wie",
+      "group": "task3",
+      "kind": "text",
+      "label": "3-C: Wie war es?",
+      "answer": "langweilig",
+      "x": 670,
+      "y": 1346,
+      "w": 145,
+      "h": 42
+    },
+    {
+      "id": "f3-D-fest",
+      "group": "task3",
+      "kind": "text",
+      "label": "3-D: Welches Fest?",
+      "answer": "Führerscheinprüfung geschafft",
+      "x": 825,
+      "y": 1198,
+      "w": 180,
+      "h": 38
+    },
+    {
+      "id": "f3-D-wann",
+      "group": "task3",
+      "kind": "text",
+      "label": "3-D: Wann?",
+      "answer": "vor einem Jahr",
+      "x": 825,
+      "y": 1291,
+      "w": 180,
+      "h": 45
+    }
+  ],
+  "audio": [],
+  "groups": [
+    {
+      "id": "task1",
+      "label": "1"
+    },
+    {
+      "id": "task2",
+      "label": "2"
+    },
+    {
+      "id": "task3",
+      "label": "3"
+    }
+  ],
+  "review": {
+    "status": "verified",
+    "verifiedWords": 220,
+    "totalWords": 220,
+    "notes": [
+      "FILM-STATIONEN (Clips 10-12). All printed words reviewed at 2x: blue \"Clips 10-12\" label, task 1 heading + statements a-f (letters recovered via 4x zoom), task 2 heading + green bank, all 11 schedule time labels (times recovered via 2x zoom OCR: 9:30/10:00/10:00-11:00/11:00-13:00/13:00/14:00/14:00-16:30/16:30-18:00/18:00-18:30/18.30/19:00-21:00), printed handwriting examples (Croissants backen, Zeitung holen, Kaffee machen / reden, Wasser trinken, einkaufen - Wasser recovered via 4x zoom), speech-bubble example (Gestern hat Martin bis halb zehn geschlafen. Dann ...), task 3 heading + green bank (im Winter vor 20 Jahren split from merged OCR), photo corner letters A-D, table column letters A-D and row labels, handwriting example cell im Winter vor 20 Jahren (the \"20\" recovered via 8x zoom).",
+      "Fields: task 1 = 6 checkbox circles (answers key-verified, Film-Stationen 1: Richtig a, d, e; circles via CC ring detection at threshold 228). Task 2 = 9 write-in schedule blanks (answers key-verified, Film-Stationen 2; rows \"bis 10:00 Uhr\" and \"von 16:30 Uhr bis 18:00 Uhr\" carry printed handwriting examples, so no fields there; blank lines via CC line detection). Task 3 = 13 write-in table cells (answers key-verified, Film-Stationen 3: A Faschingsfest/Oesterreich/(example)/lustig, B Annas Geburtstagsfeier/Leipzig/letzten Mai/toll, C Betriebsfeier/in der Firma/am Freitag/langweilig, D Fuehrerscheinpruefung geschafft/vor einem Jahr). A-Wann carries the printed handwriting example (im Winter vor 20 Jahren); the D-Wo and D-Wie cells carry printed \"no entry\" dash lines and have no key answers, so they are not fields.",
+      "DVD clips 10-12 have no playable assets in the app; clip markers (Clip 10/11/12) excluded from words and audio, consistent with earlier Film-Stationen pages.",
+      "Excluded per policy: gold FILM-STATIONEN outline header, red task numerals 1/2/3, photos and photo frames, bank separator bars, footer (Modul 4 tab, 70, siebzig), facing-page bleed."
+    ]
+  }
+}
