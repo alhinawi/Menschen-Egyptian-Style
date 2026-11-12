@@ -654,7 +654,16 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   .controls{gap:6px;padding:6px 5px}
   .controls button,.controls select{min-height:44px;box-sizing:border-box}
   .controls>button,.controls>[data-react-theme-slot]>button{min-width:44px}
-  .controls .translationControls{flex-basis:100%;gap:8px}
+  .controls .translationControls{flex-basis:auto;gap:5px}
   .controls .translationControls button{white-space:nowrap;padding:5px 10px}
 }
 
+
+.readerPageNavigation{position:fixed;z-index:30;top:var(--reader-header-height,60px);left:0;right:0;display:flex;justify-content:center;align-items:center;gap:8px;padding:4px;background:#fffefa;border-bottom:1px solid #d7d7ce;height:52px;box-sizing:border-box}
+.readerPageNavigation button{min-width:44px;min-height:44px;box-sizing:border-box}
+body.readerSplitControls{padding-top:calc(var(--reader-header-height,60px) + 60px);padding-bottom:calc(var(--reader-controls-height,56px) + 32px)}
+body.readerSplitControls .helpBanner{bottom:var(--reader-controls-height,56px)}
+body.readerSplitControls .controls{min-height:56px;flex-wrap:nowrap;gap:5px}
+body.readerSplitControls .controls .translationControls button{padding:5px 7px;font-size:11px}
+body.readerSplitControls .controls .themesTrigger{padding:5px 7px;font-size:11px}
+html[data-theme="dark"] .readerPageNavigation{background:var(--night-paper,#202a25);border-color:#718276}
