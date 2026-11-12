@@ -186,3 +186,8 @@
 .p63 .pantoImg{height:70px}
 .p63 .grammarNote{font-size:12px;padding:2px 8px}
 .p63 .grammar td{padding:1px 4px;font-size:12px}
+.p66 .batchBody .festBox{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:flex-start;padding:6px 8px}
+.p66 .festBox b{width:100%}
+.p66 .batchBody .festBox img{width:38%;height:auto;object-fit:cover}
+.p66 .festBox p{flex:1;min-width:170px;font-size:13px;line-height:1.35;margin:0}
+.p66 .assignRow{display:flex;flex-wrap:wrap;gap:2px 14px;align-items:center;font-size:14px}
