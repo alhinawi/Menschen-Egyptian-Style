@@ -109,5 +109,27 @@
     "alt": "Handschriftliches Beispiel"
    }
   ]
+ },
+ "6": {
+  "cropsRemove": [
+   {
+    "x": 430,
+    "y": 1102,
+    "w": 148,
+    "h": 28
+   }
+  ],
+  "rectsAdd": [
+   {
+    "x": 145,
+    "y": 1098,
+    "w": 923,
+    "h": 34,
+    "c": "#efe7cb"
+   }
+  ],
+  "prefill": {
+   "p6-d7": "Caf\u00e9"
+  }
  }
 }

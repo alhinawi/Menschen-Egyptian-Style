@@ -15,7 +15,7 @@ export function NativeAB12({page}:{page:string}){
  const data=nativeAB12Pages[page];
  const key='native-ab12-'+page;
  const player=useRef<HTMLAudioElement>(null);
- const [v,S]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return {}}});
+ const [v,S]=useState<Record<string,string>>(()=>{let s:Record<string,string>={};try{s=JSON.parse(localStorage.getItem(key)||'{}')}catch{};return {...(data?.prefill||{}),...s}});
  const [results,setResults]=useState<Record<string,boolean>>({});
  const [activeTrack,setActiveTrack]=useState('');
  const lines=useMemo<Line[]>(()=>{
@@ -35,7 +35,7 @@ export function NativeAB12({page}:{page:string}){
    L.ws.sort((a,b)=>a.x-b.x);
    const lh=L.ws.map(w=>w.h).sort((a,b)=>a-b);
    const med=lh[Math.floor(lh.length/2)]||mode;
-   L.fs=med>mode*1.9?med*1.1:Math.min(Math.max(med*1.3,mode*0.9),mode*1.45);
+   L.fs=med>mode*1.9?med*0.95:Math.min(Math.max(med*0.95,mode*0.85),mode*1.3);
   }
   // cap font by the vertical gap to the next line that shares x-space
   for(let i=0;i<out.length;i++){
@@ -85,9 +85,13 @@ export function NativeAB12({page}:{page:string}){
      run.push(w);
     }
     flush();
-    const fs=L.fs/W*100+'cqw';
     const lh=(L.bottom-L.top)/W*100+'cqw';
-    return <div key={'ln'+li}>{frags.map((f,fi)=><div key={fi} className="naText" style={{left:f.x/W*100+'%',top:L.top/H*100+'%',fontSize:fs,lineHeight:lh}}>{f.run.map((w,j)=><span key={j}>{j>0?' ':''}{wordSpan(w,'w'+li+'-'+fi+'-'+j)}</span>)}</div>)}</div>;
+    return <div key={'ln'+li}>{frags.map((f,fi)=>{
+     const span=f.run[f.run.length-1].x+f.run[f.run.length-1].w-f.x;
+     const chars=f.run.reduce((a,w)=>a+w.text.length+1,0);
+     const ffs=Math.min(L.fs,span/Math.max(chars*0.55,1));
+     return <div key={fi} className="naText" style={{left:f.x/W*100+'%',top:L.top/H*100+'%',fontSize:ffs/W*100+'cqw',lineHeight:lh}}>{f.run.map((w,j)=><span key={j}>{j>0?' ':''}{wordSpan(w,'w'+li+'-'+fi+'-'+j)}</span>)}</div>;
+    })}</div>;
    })}
    {scan.fields.map(f=>{
     const res=results[f.id];

@@ -68,7 +68,7 @@ def find_crops(d, A, words):
         sub = A[w['y']:w['y'] + w['h'], w['x']:w['x'] + w['w']]
         if sub.size:
             sl = 0.299 * sub[..., 0] + 0.587 * sub[..., 1] + 0.114 * sub[..., 2]
-            if float((sl < 120).mean()) < 0.02:
+            if float((sl < 170).mean()) < 0.004:
                 continue
         cy, cx = int((w['y'] + w['h'] / 2) // cs), int((w['x'] + w['w'] / 2) // cs)
         if 0 <= cy < ny and 0 <= cx < nx:
@@ -267,7 +267,7 @@ def find_crops(d, A, words):
         if sub.size == 0:
             continue
         sl = 0.299 * sub[..., 0] + 0.587 * sub[..., 1] + 0.114 * sub[..., 2]
-        if float((sl < 120).mean()) >= 0.02:
+        if float((sl < 170).mean()) >= 0.004:
             continue
         py0, py1 = max(0, y0 - 8), min(A.shape[0], y1 + 8)
         px0, px1 = max(0, x0 - 8), min(A.shape[1], x1 + 8)
@@ -305,7 +305,7 @@ def word_styles(d, A, words, drop):
             continue
         lum = 0.299 * sub[..., 0] + 0.587 * sub[..., 1] + 0.114 * sub[..., 2]
         ink = lum < 120
-        fracs[idx] = float(ink.mean())
+        fracs[idx] = float(ink.mean()) if float((lum < 170).mean()) >= 0.004 else 0.0
         px = sub[ink]
         meds[idx] = np.median(px, axis=0).astype(int) if len(px) else None
     base = float(np.median([f for f in fracs.values()])) if fracs else 0.15
@@ -394,8 +394,14 @@ def build(p):
         data['wordStyle'].update(po['wordStyle'])
     if po.get('checks'):
         data['checks'].update(po['checks'])
+    if po.get('cropsRemove'):
+        def _cm(c, r):
+            return abs(c['x']-r['x'])<14 and abs(c['y']-r['y'])<14 and abs(c['w']-r['w'])<14 and abs(c['h']-r['h'])<14
+        data['crops'] = [c for c in data['crops'] if not any(_cm(c, r) for r in po['cropsRemove'])]
     if po.get('rectsAdd'):
         data['rects'] += po['rectsAdd']
+    if po.get('prefill'):
+        data['prefill'] = po['prefill']
     if po.get('wordsAdd'):
         data['wordsAdd'] = po['wordsAdd']
     if po.get('audioAdd'):
