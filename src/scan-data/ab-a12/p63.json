@@ -1819,13 +1819,72 @@
    "h": 12
   }
  ],
- "fields": [],
- "audio": [],
- "groups": [],
+ "fields": [
+  {
+   "id": "p63-L1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "Lesen 2. Punkt",
+   "answer": "B",
+   "x": 410,
+   "y": 783,
+   "w": 30,
+   "h": 24
+  },
+  {
+   "id": "p63-L1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "Lesen 3. Punkt",
+   "answer": "F",
+   "x": 473,
+   "y": 828,
+   "w": 30,
+   "h": 24
+  }
+ ],
+ "audio": [
+  {
+   "id": "track27-1",
+   "src": "assets/ab-a12-track27.mp3",
+   "label": "CD2 · Track27",
+   "x": 57,
+   "y": 1046,
+   "w": 44,
+   "h": 22
+  },
+  {
+   "id": "track28-2",
+   "src": "assets/ab-a12-track28.mp3",
+   "label": "CD2 · Track28",
+   "x": 87,
+   "y": 1338,
+   "w": 44,
+   "h": 22
+  },
+  {
+   "id": "track29-3",
+   "src": "assets/ab-a12-track29.mp3",
+   "label": "CD2 · Track29",
+   "x": 634,
+   "y": 1338,
+   "w": 44,
+   "h": 22
+  }
+ ],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Lesen Aufgabe 1"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 20, Training Lesen 1: B, F).",
+   "Satzmelodie arrow tasks (Aussprache 1, 2) not mapped as fields; audio 2 27-29 icons mapped, audio content not verified by listening. Handwritten text not fields."
+  ],
   "verifiedWords": 259,
-  "totalWords": 259,
-  "notes": []
+  "totalWords": 259
  }
 }

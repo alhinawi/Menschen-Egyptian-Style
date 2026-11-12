@@ -1119,13 +1119,217 @@
    "h": 18
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p60-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "wäscht das Geschirr ab",
+   "x": 300,
+   "y": 244,
+   "w": 305,
+   "h": 24
+  },
+  {
+   "id": "p60-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "trocknet das Geschirr ab",
+   "x": 285,
+   "y": 270,
+   "w": 320,
+   "h": 24
+  },
+  {
+   "id": "p60-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d",
+   "answer": "putzt die Fenster",
+   "x": 306,
+   "y": 296,
+   "w": 299,
+   "h": 24
+  },
+  {
+   "id": "p60-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e",
+   "answer": "wischt den Boden",
+   "x": 230,
+   "y": 323,
+   "w": 375,
+   "h": 24
+  },
+  {
+   "id": "p60-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 f",
+   "answer": "bringt den Müll raus|bringt den Abfall raus",
+   "x": 222,
+   "y": 349,
+   "w": 383,
+   "h": 24
+  },
+  {
+   "id": "p60-2t1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 Tim 1",
+   "answer": "Bring|bring",
+   "x": 180,
+   "y": 690,
+   "w": 105,
+   "h": 24
+  },
+  {
+   "id": "p60-2t2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 Tim 2",
+   "answer": "raus",
+   "x": 375,
+   "y": 690,
+   "w": 95,
+   "h": 24
+  },
+  {
+   "id": "p60-2c1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 Carla 1",
+   "answer": "Räum|räum",
+   "x": 200,
+   "y": 799,
+   "w": 105,
+   "h": 24
+  },
+  {
+   "id": "p60-2c2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 Carla 2",
+   "answer": "auf",
+   "x": 200,
+   "y": 824,
+   "w": 100,
+   "h": 24
+  },
+  {
+   "id": "p60-2c3",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 Carla 3",
+   "answer": "Wasch|wasch",
+   "x": 200,
+   "y": 850,
+   "w": 105,
+   "h": 24
+  },
+  {
+   "id": "p60-2tc1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 Tim und Carla 1",
+   "answer": "Putzt|putzt",
+   "x": 592,
+   "y": 672,
+   "w": 103,
+   "h": 24
+  },
+  {
+   "id": "p60-2tc2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 Tim und Carla 2",
+   "answer": "Geht|geht",
+   "x": 592,
+   "y": 699,
+   "w": 103,
+   "h": 24
+  },
+  {
+   "id": "p60-2tc3",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 Tim und Carla 3",
+   "answer": "schickt|Schickt",
+   "x": 630,
+   "y": 724,
+   "w": 105,
+   "h": 24
+  },
+  {
+   "id": "p60-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "Sei nicht traurig|sei nicht traurig",
+   "x": 490,
+   "y": 1047,
+   "w": 470,
+   "h": 24
+  },
+  {
+   "id": "p60-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "Räum bitte die Küche auf|räum bitte die Küche auf",
+   "x": 555,
+   "y": 1098,
+   "w": 405,
+   "h": 24
+  },
+  {
+   "id": "p60-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "Hilf mir bitte kurz|hilf mir bitte kurz",
+   "x": 370,
+   "y": 1147,
+   "w": 590,
+   "h": 24
+  },
+  {
+   "id": "p60-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e",
+   "answer": "Seid bitte nicht so laut|seid bitte nicht so laut",
+   "x": 358,
+   "y": 1199,
+   "w": 602,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 2"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 3"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 20).",
+   "Ex 1 f key: 'bringt den Müll/Abfall raus' (both accepted). Ex 2: key gives Bring...raus / Räum...auf / Wasch / Putzt / Geht / schickt. Ex 3: key answers only (other imperative word orders not accepted). Handwritten examples not fields."
+  ],
   "verifiedWords": 159,
-  "totalWords": 159,
-  "notes": []
+  "totalWords": 159
  }
 }

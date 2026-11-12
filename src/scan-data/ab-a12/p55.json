@@ -1063,13 +1063,77 @@
    "h": 12
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p55-5b",
+   "group": "g1",
+   "kind": "text",
+   "label": "5 b",
+   "answer": "unfreundlich",
+   "x": 346,
+   "y": 289,
+   "w": 160,
+   "h": 24
+  },
+  {
+   "id": "p55-5c",
+   "group": "g1",
+   "kind": "text",
+   "label": "5 c",
+   "answer": "unsympathisch",
+   "x": 346,
+   "y": 316,
+   "w": 160,
+   "h": 24
+  },
+  {
+   "id": "p55-5d",
+   "group": "g1",
+   "kind": "text",
+   "label": "5 d",
+   "answer": "dünn",
+   "x": 430,
+   "y": 340,
+   "w": 164,
+   "h": 24
+  },
+  {
+   "id": "p55-5e1",
+   "group": "g1",
+   "kind": "text",
+   "label": "5 e 1",
+   "answer": "unglücklich|traurig",
+   "x": 341,
+   "y": 367,
+   "w": 162,
+   "h": 24
+  },
+  {
+   "id": "p55-5e2",
+   "group": "g1",
+   "kind": "text",
+   "label": "5 e 2",
+   "answer": "unglücklich|traurig",
+   "x": 530,
+   "y": 367,
+   "w": 163,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 5"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 19).",
+   "Ex 5e: two blanks, key gives 'unglücklich, traurig' in either order. Ex 6 (marking, table) is not mapped; handwritten examples not fields."
+  ],
   "verifiedWords": 151,
-  "totalWords": 151,
-  "notes": []
+  "totalWords": 151
  }
 }
