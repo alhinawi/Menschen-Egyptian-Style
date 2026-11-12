@@ -50,17 +50,22 @@
 .lnv-pagePill {
   display: flex;
   align-items: center;
-  gap: 8px;
-  height: 40px;
-  min-width: 110px;
+  gap: 6px;
+  height: 36px;
+  min-width: 64px;
   justify-content: center;
-  padding: 0 16px;
-  border: 1px solid #ddd6c8;
-  border-radius: 20px;
-  background: #fff;
+  padding: 0 11px;
+  border: 1px solid #d3d4cd;
+  border-radius: 6px;
+  background: transparent;
   color: #344137;
-  font: 700 13px Arial, sans-serif;
+  font: 600 12px Arial, sans-serif;
   cursor: pointer;
+}
+
+.lnv-pagePill .lnv-chev {
+  margin-left: 2px;
+  font-size: 9px;
 }
 
 .lnv-overlay {
