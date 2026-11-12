@@ -214,6 +214,8 @@ export function LibraryNav({slug}: {slug: string}) {
             <div className="lnv-ss font-normal text-[11px] font-[Arial,sans-serif] text-[#8a7d63] mt-0.5 dark:text-[#9aa396]">{bookInfo.title} · {mod.level} - jump to any page</div>
           </div>
           <div className="lnv-sheetscroll flex-1 overflow-y-auto overscroll-contain touch-pan-y pb-7">
+            {mod.level === 'A1.1' && <div className="px-5 pt-3"><button type="button" aria-current={currentToken === (mod.book === 'kb' ? 'cover' : 'abcover') ? 'page' : undefined} className={'lnv-pg h-10 min-w-20 px-4 rounded-md border' + (currentToken === (mod.book === 'kb' ? 'cover' : 'abcover') ? ' cur bg-[#c9a45a] border-[#b08d3f] text-[#2b2620] font-extrabold' : '')} onClick={()=>{close();void navigateLesson(mod.book === 'kb' ? 'index' : 'ab1',mod.book === 'kb' ? 'cover' : 'abcover')}}>Cover</button></div>}
+
             {slug === 'l21-24' && <div className="flex flex-col gap-2 px-5 py-3">{['imprint', 'inside-back-cover', 'back-cover'].map(token => <button type="button" key={token} className="lnv-pg h-9 rounded-md border" onClick={() => {close(); const idx = [...document.querySelectorAll<HTMLElement>('.page')].findIndex(p => p.dataset.page === token); const jump = document.querySelector<HTMLSelectElement>('#pageJump'); if (jump && idx >= 0) {jump.value = String(idx); jump.dispatchEvent(new Event('change', {bubbles: true}));}}}>{special[token]} (unnumbered)</button>)}</div>}
             {levelLessons(mod.book, mod.level).map(entry => (
               <div key={entry.slug + entry.label}>
