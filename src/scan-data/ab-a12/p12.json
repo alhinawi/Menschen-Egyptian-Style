@@ -1154,7 +1154,7 @@
    "h": 21
   },
   {
-   "text": "ergänzt",
+   "text": "erganzt",
    "x": 545,
    "y": 1025,
    "w": 75,
@@ -1462,13 +1462,267 @@
    "h": 14
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p12-1-0",
+   "group": "g1",
+   "kind": "text",
+   "label": "Fenster",
+   "answer": "Fenster",
+   "x": 153,
+   "y": 289,
+   "w": 190,
+   "h": 24
+  },
+  {
+   "id": "p12-1-1",
+   "group": "g1",
+   "kind": "text",
+   "label": "Baum",
+   "answer": "Baum",
+   "x": 153,
+   "y": 341,
+   "w": 190,
+   "h": 24
+  },
+  {
+   "id": "p12-1-2",
+   "group": "g1",
+   "kind": "text",
+   "label": "Garage",
+   "answer": "Garage",
+   "x": 153,
+   "y": 401,
+   "w": 190,
+   "h": 24
+  },
+  {
+   "id": "p12-1-3",
+   "group": "g1",
+   "kind": "text",
+   "label": "Haus",
+   "answer": "Haus",
+   "x": 762,
+   "y": 222,
+   "w": 189,
+   "h": 24
+  },
+  {
+   "id": "p12-1-4",
+   "group": "g1",
+   "kind": "text",
+   "label": "Treppe",
+   "answer": "Treppe",
+   "x": 762,
+   "y": 344,
+   "w": 189,
+   "h": 24
+  },
+  {
+   "id": "p12-1-5",
+   "group": "g1",
+   "kind": "text",
+   "label": "Garten",
+   "answer": "Garten",
+   "x": 762,
+   "y": 404,
+   "w": 189,
+   "h": 24
+  },
+  {
+   "id": "p12-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "b",
+   "answer": "Kinderzimmer",
+   "x": 515,
+   "y": 573,
+   "w": 300,
+   "h": 24
+  },
+  {
+   "id": "p12-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "c",
+   "answer": "Flur",
+   "x": 175,
+   "y": 630,
+   "w": 304,
+   "h": 24
+  },
+  {
+   "id": "p12-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "d",
+   "answer": "Wohnzimmer",
+   "x": 355,
+   "y": 677,
+   "w": 305,
+   "h": 24
+  },
+  {
+   "id": "p12-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "e",
+   "answer": "Schlafzimmer",
+   "x": 640,
+   "y": 704,
+   "w": 305,
+   "h": 24
+  },
+  {
+   "id": "p12-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "b",
+   "answer": "Maximilians Haus",
+   "x": 698,
+   "y": 832,
+   "w": 267,
+   "h": 24
+  },
+  {
+   "id": "p12-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "c",
+   "answer": "Maximilians Nachbar",
+   "x": 560,
+   "y": 883,
+   "w": 300,
+   "h": 24
+  },
+  {
+   "id": "p12-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "d",
+   "answer": "Maximilians Nachbarin",
+   "x": 665,
+   "y": 911,
+   "w": 300,
+   "h": 24
+  },
+  {
+   "id": "p12-5b1",
+   "group": "g4",
+   "kind": "text",
+   "label": "5b Was sucht Otto?",
+   "answer": "Seine Schlüssel",
+   "x": 175,
+   "y": 1270,
+   "w": 235,
+   "h": 24
+  },
+  {
+   "id": "p12-5b2",
+   "group": "g4",
+   "kind": "text",
+   "label": "5b Wo sind Ottos Sachen?",
+   "answer": "Seine Schlüssel",
+   "x": 459,
+   "y": 1270,
+   "w": 229,
+   "h": 24
+  },
+  {
+   "id": "p12-5c1",
+   "group": "g4",
+   "kind": "text",
+   "label": "5c Was sucht Otto?",
+   "answer": "Sein Handy",
+   "x": 175,
+   "y": 1300,
+   "w": 235,
+   "h": 24
+  },
+  {
+   "id": "p12-5c2",
+   "group": "g4",
+   "kind": "text",
+   "label": "5c Wo sind Ottos Sachen?",
+   "answer": "Sein Handy",
+   "x": 459,
+   "y": 1300,
+   "w": 229,
+   "h": 24
+  },
+  {
+   "id": "p12-5d1",
+   "group": "g4",
+   "kind": "text",
+   "label": "5d Was sucht Otto?",
+   "answer": "Seine Brille",
+   "x": 175,
+   "y": 1323,
+   "w": 235,
+   "h": 24
+  },
+  {
+   "id": "p12-5d2",
+   "group": "g4",
+   "kind": "text",
+   "label": "5d Wo sind Ottos Sachen?",
+   "answer": "Seine Brille",
+   "x": 459,
+   "y": 1323,
+   "w": 229,
+   "h": 24
+  },
+  {
+   "id": "p12-5e1",
+   "group": "g4",
+   "kind": "text",
+   "label": "5e Was sucht Otto?",
+   "answer": "Seinen Kugelschreiber",
+   "x": 175,
+   "y": 1352,
+   "w": 235,
+   "h": 24
+  },
+  {
+   "id": "p12-5e2",
+   "group": "g4",
+   "kind": "text",
+   "label": "5e Wo sind Ottos Sachen?",
+   "answer": "Sein Kugelschreiber",
+   "x": 459,
+   "y": 1352,
+   "w": 229,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 2"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 3"
+  },
+  {
+   "id": "g4",
+   "label": "Aufgabe 5"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the official Hueber key (Menschen A1, Lektion 14 Arbeitsbuch). Handwritten examples (1 Balkon, 2a, 3a, 5a) are not fields.",
+   "Ex 1: house labels assigned top to bottom as listed in the key (left: Fenster, Baum, Garage; right: Haus, Treppe, Garten).",
+   "Ex 4 is free writing (no fields).",
+   "Boxes placed from word coordinates and checked visually. Not marked verified."
+  ],
   "verifiedWords": 208,
-  "totalWords": 208,
-  "notes": []
+  "totalWords": 208
  }
 }
