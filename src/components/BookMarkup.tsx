@@ -35,7 +35,7 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   const [tag, attrs, children] = node;
   const props: Props = {key};
   if(tag === 'NativePilot')return createElement(NativePilot,{key,page:attrs.page});
-  if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['6','7'].includes(String(attrs.page)))return createElement(NativeAB11,{key,page:String(attrs.page)});
+  if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['6','7','8','9','10','11'].includes(String(attrs.page)))return createElement(NativeAB11,{key,page:String(attrs.page)});
   if(tag === 'HybridScan'){const data=scanData[attrs.book+':'+attrs.page];return data ? createElement(HybridScan,{key,data}) : null;}
   if (tag === 'ReactTaskMode') return createElement(TaskMode, {key, kind: attrs.kind});
   if (tag === 'ReactSelectionControls') return createElement(SelectionControls, {key});
