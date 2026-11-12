@@ -41,5 +41,4 @@ html[data-reader-theme="sand"] .page:not(.bookCover) small{color:#465248}
 html[data-theme="dark"] .howtoPage{background:#fffefa!important;color:#2c302b!important}
 .coverCopy{margin-top:auto;padding-top:18px;font:15px Georgia,serif;letter-spacing:1px;color:#a8937a!important;text-align:center;line-height:1.6;max-width:560px}
 
-.howtoNote{margin-top:auto;border-top:1px solid #d9c9a3;padding-top:16px;font-size:16px;color:#713c46;text-align:center}
-.howtoNote b{color:#ac8c48}
+.howtoList .playIcon{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:#713c46;color:#fff;font-size:11px;line-height:1;vertical-align:middle;margin:0 2px}
