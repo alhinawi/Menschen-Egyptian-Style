@@ -1644,13 +1644,333 @@
    "h": 12
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p25-1a",
+   "group": "g1",
+   "kind": "text",
+   "label": "1a",
+   "answer": "unter",
+   "x": 540,
+   "y": 476,
+   "w": 110,
+   "h": 22
+  },
+  {
+   "id": "p25-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1b",
+   "answer": "über",
+   "x": 334,
+   "y": 500,
+   "w": 116,
+   "h": 22
+  },
+  {
+   "id": "p25-1c1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1c1",
+   "answer": "Neben|neben",
+   "x": 170,
+   "y": 528,
+   "w": 112,
+   "h": 22
+  },
+  {
+   "id": "p25-1c2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1c2",
+   "answer": "em",
+   "x": 304,
+   "y": 528,
+   "w": 51,
+   "h": 22
+  },
+  {
+   "id": "p25-1c3",
+   "group": "g1",
+   "kind": "text",
+   "label": "1c3",
+   "answer": "am",
+   "x": 722,
+   "y": 528,
+   "w": 116,
+   "h": 22
+  },
+  {
+   "id": "p25-1d1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1d1",
+   "answer": "Vor",
+   "x": 170,
+   "y": 553,
+   "w": 127,
+   "h": 22
+  },
+  {
+   "id": "p25-1d2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1d2",
+   "answer": "em",
+   "x": 317,
+   "y": 553,
+   "w": 51,
+   "h": 22
+  },
+  {
+   "id": "p25-1d3",
+   "group": "g1",
+   "kind": "text",
+   "label": "1d3",
+   "answer": "Im",
+   "x": 535,
+   "y": 553,
+   "w": 87,
+   "h": 22
+  },
+  {
+   "id": "p25-1e1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1e1",
+   "answer": "auf",
+   "x": 480,
+   "y": 579,
+   "w": 115,
+   "h": 22
+  },
+  {
+   "id": "p25-1e2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1e2",
+   "answer": "em",
+   "x": 618,
+   "y": 579,
+   "w": 50,
+   "h": 22
+  },
+  {
+   "id": "p25-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2b",
+   "answer": "Seine",
+   "x": 175,
+   "y": 707,
+   "w": 110,
+   "h": 22
+  },
+  {
+   "id": "p25-2c1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2c1",
+   "answer": "Ihr",
+   "x": 485,
+   "y": 733,
+   "w": 115,
+   "h": 22
+  },
+  {
+   "id": "p25-2c2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2c2",
+   "answer": "ihre",
+   "x": 792,
+   "y": 733,
+   "w": 113,
+   "h": 22
+  },
+  {
+   "id": "p25-2c3",
+   "group": "g2",
+   "kind": "text",
+   "label": "2c3",
+   "answer": "ihren",
+   "x": 470,
+   "y": 758,
+   "w": 115,
+   "h": 22
+  },
+  {
+   "id": "p25-2d1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2d1",
+   "answer": "Ihre",
+   "x": 440,
+   "y": 784,
+   "w": 115,
+   "h": 22
+  },
+  {
+   "id": "p25-2d2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2d2",
+   "answer": "Ihre",
+   "x": 283,
+   "y": 810,
+   "w": 115,
+   "h": 22
+  },
+  {
+   "id": "p25-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3b",
+   "answer": "Others",
+   "x": 358,
+   "y": 940,
+   "w": 152,
+   "h": 22
+  },
+  {
+   "id": "p25-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3c",
+   "answer": "Sophies",
+   "x": 245,
+   "y": 964,
+   "w": 150,
+   "h": 22
+  },
+  {
+   "id": "p25-3d1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3d1",
+   "answer": "Pauls",
+   "x": 320,
+   "y": 990,
+   "w": 150,
+   "h": 22
+  },
+  {
+   "id": "p25-3d2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3d2",
+   "answer": "Sophies",
+   "x": 518,
+   "y": 990,
+   "w": 152,
+   "h": 22
+  },
+  {
+   "id": "p25-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3e",
+   "answer": "Kerners",
+   "x": 342,
+   "y": 1016,
+   "w": 153,
+   "h": 22
+  },
+  {
+   "id": "p25-4b1",
+   "group": "g4",
+   "kind": "text",
+   "label": "4b1",
+   "answer": "euch",
+   "x": 445,
+   "y": 1170,
+   "w": 100,
+   "h": 22
+  },
+  {
+   "id": "p25-4b2",
+   "group": "g4",
+   "kind": "text",
+   "label": "4b2",
+   "answer": "uns",
+   "x": 330,
+   "y": 1195,
+   "w": 110,
+   "h": 22
+  },
+  {
+   "id": "p25-4c1",
+   "group": "g4",
+   "kind": "text",
+   "label": "4c1",
+   "answer": "Ihnen",
+   "x": 352,
+   "y": 1221,
+   "w": 120,
+   "h": 22
+  },
+  {
+   "id": "p25-4c2",
+   "group": "g4",
+   "kind": "text",
+   "label": "4c2",
+   "answer": "mir",
+   "x": 305,
+   "y": 1247,
+   "w": 135,
+   "h": 22
+  },
+  {
+   "id": "p25-4d1",
+   "group": "g4",
+   "kind": "text",
+   "label": "4d1",
+   "answer": "dir",
+   "x": 758,
+   "y": 1273,
+   "w": 142,
+   "h": 22
+  },
+  {
+   "id": "p25-4d2",
+   "group": "g4",
+   "kind": "text",
+   "label": "4d2",
+   "answer": "mir",
+   "x": 330,
+   "y": 1323,
+   "w": 150,
+   "h": 22
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 2"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 3"
+  },
+  {
+   "id": "g4",
+   "label": "Aufgabe 4"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the official Hueber Loesungsschluessel AB A1.2 (Wiederholungsstation Grammatik).",
+   "Ex 1: the key gives whole words (neben dem, am; Vor dem, Im; auf dem); where the page prints a bare 'd' before the blank, only the ending (em) is entered. Sentence-initial 'Neben dem' follows the page (capital), key prints it lowercase.",
+   "Ex 4a first blank has no key answer (only the handwritten example ihr) so it is not a field.",
+   "Boxes placed from word coordinates; not marked verified."
+  ],
   "verifiedWords": 234,
-  "totalWords": 234,
-  "notes": []
+  "totalWords": 234
  }
 }
