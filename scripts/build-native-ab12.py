@@ -305,16 +305,20 @@ def word_styles(d, A, words, drop):
             continue
         lum = 0.299 * sub[..., 0] + 0.587 * sub[..., 1] + 0.114 * sub[..., 2]
         ink = lum < 120
-        fracs[idx] = float(ink.mean()) if float((lum < 170).mean()) >= 0.004 else 0.0
-        px = sub[ink]
-        meds[idx] = np.median(px, axis=0).astype(int) if len(px) else None
+        ink170 = lum < 170
+        if float(ink170.mean()) >= 0.004:
+            fracs[idx] = float(ink.mean())
+            meds[idx] = np.median(sub[ink170], axis=0).astype(int)
+        else:
+            fracs[idx] = 0.0
+            meds[idx] = None
     base = float(np.median([f for f in fracs.values()])) if fracs else 0.15
     styles = {}
     for idx, frac in fracs.items():
         med = meds[idx]
         w = words[idx]
         st = {}
-        if frac < 0.02:
+        if med is None:
             st['c'] = '#ffffff'  # white text on a colored band
         elif med is not None:
             r, g, b = (int(v) for v in med)
