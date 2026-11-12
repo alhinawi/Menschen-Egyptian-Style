@@ -18,3 +18,21 @@
 .nkCanvas .nkRed{color:#b55049}.nkDativ{border-collapse:collapse;width:100%;background:#f3fbfd;font:21px/1.3 Georgia}.nkDativ td,.nkDativ th{border:1px solid #c5e3ea;padding:7px;text-align:left}.nkBlog{position:absolute;background:#cce8f1;border:3px solid #86b1be;box-sizing:border-box;font:17px/1.2 Arial}.nkCanvas .nkBlog>header{position:static!important;display:block!important;height:33px!important;padding:3px 35px!important;box-shadow:none!important;min-height:0!important;background:#86c0dc;color:white;font:bold 25px Arial}.nkBlogMain{position:absolute;left:36px;top:45px;width:592px;padding:14px 16px;background:white;box-sizing:border-box}.nkBlogMain h2{font:30px Georgia;margin:0 0 20px}.nkBlogMain>img{float:left;width:215px;height:248px;margin:0 12px 6px 0;object-fit:contain}.nkBlogMain>p{font:17px/1.25 Arial!important;margin:0!important;padding:0!important}.nkBlogMain h4{clear:both;border-top:1px solid #abc;font: bold 17px Arial;color:#347d9c;padding:10px 0!important;margin:10px 0!important}.nkBlogMain .nkBlogComment{font:14px/1.2 Arial!important;white-space:pre-line;margin-bottom:10px!important}.nkBlog .nkDate{position:absolute;right:22px;top:30px;font:12px Arial}.nkBlogAdRail{position:absolute;left:640px;top:45px;width:142px;height:591px;object-fit:contain!important;max-height:none!important;max-width:none!important}.nkBlogLinks{position:absolute;left:790px;top:45px;width:204px;white-space:pre-line;font:15px/1.25 Arial;color:#4d5ca7}.nkBlogLinks h3{font:21px Arial;margin:0 0 12px;color:white;background:#88c4dc}.nkBlogLinks img{width:204px;height:424px;object-fit:contain;margin:10px 0 0!important;max-height:none!important}
 
 .nkCanvas .nkTiny{font-size:16px;line-height:1}.nkCanvas .nkBlogMain h2{font:30px Georgia!important}.nkCanvas .nkBlogMain h4{font:bold 17px Arial!important}
+
+.nkPaper{position:absolute;background:#fafafa;box-shadow:2px 3px 5px #aaa}.nkCanvas .nkMagazineTitle{font:bold 27px Arial;background:#adb736;color:white}.nkCanvas .nkMagazineSub{font:25px Arial;background:#c6c94e;color:white}.nkCanvas .nkArticle{font:20px/1.32 Arial;white-space:pre-line}.nkCanvas .nkClip{font:12px Arial;color:#328eaa}.nkJanBlog{position:absolute;background:#fafaf5;border:3px solid #aac1c9}.nkCanvas .nkJanTitle{font:italic 31px Georgia;color:#e48200;background:#fff6af}.nkCanvas .nkBlogBold{font:bold 18px/1.25 Arial}.nkCanvas .nkJanArticle{font:18px/1.25 Arial;white-space:pre-line}.nkCanvas .nkJanComment{font:16px/1.2 Arial;white-space:pre-line;border-top:1px solid #9ab}.nkCanvas .nkSong{font:21px/1.3 Arial;white-space:pre-line}
+
+.nkJanBlog .nkArt{max-width:none!important;max-height:none!important}
+
+.nkCanvas .nkArticle{font:18px/1.15 Arial}.nkWriting[open]{background:#fffef2;border:1px solid #b7b18b;padding:8px;transform:translateY(-260px)}
+
+.nkCanvas .nkSong{font:21px/1.27 Arial}.nkCanvas .nkJanComment{font:15px/1.15 Arial}
+
+.nkCanvas .nkLineNo{font:14px Arial;color:#aaa}
+
+.nkFilmDialog{position:absolute;inset:0;z-index:100;background:#fffdf6;display:flex;flex-direction:column;justify-content:center;gap:12px;padding:12px}.nkFilmDialog iframe{width:100%;aspect-ratio:16/9;border:0}.nkFilmDialog button{align-self:flex-end}.nkFilmDialog a{font:16px Arial;color:#24537c}
+
+.nkFilmDialog{font:18px/1.4 Arial}.nkFilmDialog button{font:18px Arial;min-height:44px;padding:8px 14px}.nkFilmDialog iframe{display:block;flex:none;min-height:220px;background:#171717}.nkFilmDialog a{font:18px Arial;padding:10px}
+
+.nkFilmDialog{position:fixed;z-index:10000;box-sizing:border-box}
+
+.nkCanvas .nkJanArticle{font:17px/1.15 Arial}
