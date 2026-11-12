@@ -1,0 +1,964 @@
+{
+  "book": "kb-a11",
+  "page": 52,
+  "width": 1075,
+  "height": 1521,
+  "words": [],
+  "art": [
+    {
+      "src": "assets/book-crops/native-p52-menu1.png",
+      "x": 216,
+      "y": 346,
+      "w": 144,
+      "h": 102,
+      "name": "menu1"
+    },
+    {
+      "src": "assets/book-crops/native-p52-menu2.png",
+      "x": 738,
+      "y": 344,
+      "w": 145,
+      "h": 103,
+      "name": "menu2"
+    },
+    {
+      "src": "assets/book-crops/native-p52-menu3.png",
+      "x": 216,
+      "y": 474,
+      "w": 144,
+      "h": 102,
+      "name": "menu3"
+    },
+    {
+      "src": "assets/book-crops/native-p52-menu4.png",
+      "x": 738,
+      "y": 473,
+      "w": 146,
+      "h": 103,
+      "name": "menu4"
+    },
+    {
+      "src": "assets/book-crops/native-p52-menu5.png",
+      "x": 216,
+      "y": 602,
+      "w": 144,
+      "h": 101,
+      "name": "menu5"
+    },
+    {
+      "src": "assets/book-crops/native-p52-menu6.png",
+      "x": 739,
+      "y": 601,
+      "w": 145,
+      "h": 101,
+      "name": "menu6"
+    }
+  ],
+  "fields": [],
+  "audio": [],
+  "groups": [],
+  "titles": [
+    [
+      "7",
+      162,
+      220
+    ]
+  ],
+  "review": {
+    "status": "source-reviewed-reference",
+    "sourceNotes": [
+      "Manually transcribed from the original printed page into native coherent text blocks; punctuation, native labels and illustrated framing reviewed at full reading scale.",
+      "Reference and open speaking/discussion tasks only: no fixed-answer grading or synthetic answer controls."
+    ]
+  },
+  "panels": [],
+  "shapes": [
+    {
+      "x": 194,
+      "y": 293,
+      "w": 711,
+      "h": 434,
+      "background": "#ffffee",
+      "border": "3px solid #e6df14"
+    },
+    {
+      "x": 217,
+      "y": 460,
+      "w": 664,
+      "h": 1,
+      "background": "#cac9b7",
+      "border": "none"
+    },
+    {
+      "x": 217,
+      "y": 589,
+      "w": 664,
+      "h": 1,
+      "background": "#cac9b7",
+      "border": "none"
+    },
+    {
+      "x": 155,
+      "y": 876,
+      "w": 380,
+      "h": 25,
+      "background": "#f5efc8",
+      "border": "none"
+    },
+    {
+      "x": 155,
+      "y": 1136,
+      "w": 380,
+      "h": 25,
+      "background": "#f5efc8",
+      "border": "none"
+    },
+    {
+      "x": 155,
+      "y": 1213,
+      "w": 380,
+      "h": 25,
+      "background": "#f5efc8",
+      "border": "none"
+    },
+    {
+      "x": 548,
+      "y": 876,
+      "w": 507,
+      "h": 25,
+      "background": "#f5efc8",
+      "border": "none"
+    },
+    {
+      "x": 548,
+      "y": 1181,
+      "w": 507,
+      "h": 25,
+      "background": "#f5efc8",
+      "border": "none"
+    },
+    {
+      "x": 155,
+      "y": 876,
+      "w": 380,
+      "h": 252,
+      "background": "transparent",
+      "border": "1px solid #ddd9c9"
+    },
+    {
+      "x": 155,
+      "y": 1136,
+      "w": 380,
+      "h": 64,
+      "background": "transparent",
+      "border": "1px solid #ddd9c9"
+    },
+    {
+      "x": 155,
+      "y": 1213,
+      "w": 380,
+      "h": 112,
+      "background": "transparent",
+      "border": "1px solid #ddd9c9"
+    },
+    {
+      "x": 548,
+      "y": 876,
+      "w": 507,
+      "h": 291,
+      "background": "transparent",
+      "border": "1px solid #ddd9c9"
+    },
+    {
+      "x": 548,
+      "y": 1181,
+      "w": 507,
+      "h": 167,
+      "background": "transparent",
+      "border": "1px solid #ddd9c9"
+    },
+    {
+      "x": 155,
+      "y": 937,
+      "w": 380,
+      "h": 1,
+      "background": "#cac9b7",
+      "border": "none"
+    },
+    {
+      "x": 155,
+      "y": 970,
+      "w": 380,
+      "h": 1,
+      "background": "#cac9b7",
+      "border": "none"
+    },
+    {
+      "x": 155,
+      "y": 1000,
+      "w": 380,
+      "h": 1,
+      "background": "#cac9b7",
+      "border": "none"
+    },
+    {
+      "x": 155,
+      "y": 1031,
+      "w": 380,
+      "h": 1,
+      "background": "#cac9b7",
+      "border": "none"
+    },
+    {
+      "x": 155,
+      "y": 1061,
+      "w": 380,
+      "h": 1,
+      "background": "#cac9b7",
+      "border": "none"
+    },
+    {
+      "x": 155,
+      "y": 1092,
+      "w": 380,
+      "h": 1,
+      "background": "#cac9b7",
+      "border": "none"
+    },
+    {
+      "x": 155,
+      "y": 1124,
+      "w": 380,
+      "h": 1,
+      "background": "#cac9b7",
+      "border": "none"
+    },
+    {
+      "x": 548,
+      "y": 1011,
+      "w": 507,
+      "h": 1,
+      "background": "#cac9b7",
+      "border": "none"
+    },
+    {
+      "x": 548,
+      "y": 1110,
+      "w": 507,
+      "h": 1,
+      "background": "#cac9b7",
+      "border": "none"
+    },
+    {
+      "x": 788,
+      "y": 904,
+      "w": 1,
+      "h": 261,
+      "background": "#cac9b7",
+      "border": "none"
+    },
+    {
+      "x": 844,
+      "y": 1205,
+      "w": 1,
+      "h": 143,
+      "background": "#cac9b7",
+      "border": "none"
+    }
+  ],
+  "module": {
+    "n": "9",
+    "x": 34,
+    "y": 117
+  },
+  "textBlocks": [
+    {
+      "x": 150,
+      "y": 156,
+      "w": 800,
+      "text": "MINI-PROJEKT",
+      "size": 32,
+      "bold": false,
+      "serif": true,
+      "color": "#a99e72"
+    },
+    {
+      "x": 196,
+      "y": 221,
+      "w": 820,
+      "text": "Typische Gerichte aus den deutschsprachigen Ländern",
+      "size": 21,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "x": 159,
+      "y": 260,
+      "w": 750,
+      "text": "a   Lesen Sie die Speisekarte und wählen Sie Ihre Favoriten.",
+      "size": 19,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "x": 218,
+      "y": 309,
+      "w": 600,
+      "text": "Speisekarte",
+      "size": 25,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "x": 380,
+      "y": 345,
+      "w": 270,
+      "text": "Vorspeise",
+      "size": 20,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "x": 380,
+      "y": 382,
+      "w": 270,
+      "text": "Leberknödelsuppe",
+      "size": 19,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "x": 590,
+      "y": 382,
+      "w": 128,
+      "text": "Hamburger\nAalsuppe",
+      "size": 19,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "x": 380,
+      "y": 472,
+      "w": 270,
+      "text": "Hauptspeise",
+      "size": 20,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "x": 380,
+      "y": 510,
+      "w": 220,
+      "text": "Zürcher\nGeschnetzeltes\nmit Rösti",
+      "size": 19,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "x": 576,
+      "y": 510,
+      "w": 140,
+      "text": "Wiener Schnitzel\n(aus Kalbfleisch)\nmit Kartoffelsalat",
+      "size": 18,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "x": 380,
+      "y": 600,
+      "w": 270,
+      "text": "Dessert",
+      "size": 20,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "x": 380,
+      "y": 640,
+      "w": 220,
+      "text": "Apfelstrudel\nmit Vanilleeis",
+      "size": 19,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "x": 600,
+      "y": 640,
+      "w": 124,
+      "text": "Rote Grütze\nmit Sahne",
+      "size": 18,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "x": 159,
+      "y": 766,
+      "w": 820,
+      "text": "b   Was sind die Favoriten in Ihrem Kurs? Machen Sie eine Statistik.",
+      "size": 19,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "x": 151,
+      "y": 831,
+      "w": 400,
+      "text": "GRAMMATIK",
+      "size": 32,
+      "bold": false,
+      "serif": true,
+      "color": "#a99e72"
+    },
+    {
+      "x": 548,
+      "y": 831,
+      "w": 510,
+      "text": "KOMMUNIKATION",
+      "size": 32,
+      "bold": false,
+      "serif": true,
+      "color": "#a99e72"
+    },
+    {
+      "x": 162,
+      "y": 879,
+      "w": 370,
+      "text": "Verb: Konjugation",
+      "size": 19,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "x": 274,
+      "y": 908,
+      "w": 110,
+      "text": "mögen",
+      "size": 19,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "x": 400,
+      "y": 908,
+      "w": 130,
+      "text": "„möchte“",
+      "size": 19,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "x": 162,
+      "y": 942,
+      "w": 100,
+      "text": "ich",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 274,
+      "y": 942,
+      "w": 110,
+      "text": "mag",
+      "size": 19,
+      "bold": false,
+      "serif": true,
+      "color": "#a21c2b"
+    },
+    {
+      "x": 400,
+      "y": 942,
+      "w": 125,
+      "text": "möchte",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 162,
+      "y": 973,
+      "w": 100,
+      "text": "du",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 274,
+      "y": 973,
+      "w": 110,
+      "text": "magst",
+      "size": 19,
+      "bold": false,
+      "serif": true,
+      "color": "#a21c2b"
+    },
+    {
+      "x": 400,
+      "y": 973,
+      "w": 125,
+      "text": "möchtest",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 162,
+      "y": 1004,
+      "w": 100,
+      "text": "er/es/sie",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 274,
+      "y": 1004,
+      "w": 110,
+      "text": "mag",
+      "size": 19,
+      "bold": false,
+      "serif": true,
+      "color": "#a21c2b"
+    },
+    {
+      "x": 400,
+      "y": 1004,
+      "w": 125,
+      "text": "möchte",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 162,
+      "y": 1035,
+      "w": 100,
+      "text": "wir",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 274,
+      "y": 1035,
+      "w": 110,
+      "text": "mögen",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 400,
+      "y": 1035,
+      "w": 125,
+      "text": "möchten",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 162,
+      "y": 1066,
+      "w": 100,
+      "text": "ihr",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 274,
+      "y": 1066,
+      "w": 110,
+      "text": "mögt",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 400,
+      "y": 1066,
+      "w": 125,
+      "text": "möchtet",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 162,
+      "y": 1097,
+      "w": 100,
+      "text": "sie/Sie",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 274,
+      "y": 1097,
+      "w": 110,
+      "text": "mögen",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 400,
+      "y": 1097,
+      "w": 125,
+      "text": "möchten",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 162,
+      "y": 1138,
+      "w": 370,
+      "text": "„möchte“ im Satz",
+      "size": 19,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "x": 163,
+      "y": 1169,
+      "w": 60,
+      "text": "Ich",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 226,
+      "y": 1169,
+      "w": 100,
+      "text": "möchte",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 334,
+      "y": 1169,
+      "w": 100,
+      "text": "etwas",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 447,
+      "y": 1169,
+      "w": 80,
+      "text": "essen.",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 162,
+      "y": 1215,
+      "w": 370,
+      "text": "Wortbildung: Nomen + Nomen",
+      "size": 18,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "x": 188,
+      "y": 1247,
+      "w": 106,
+      "text": "Schoko-\nladenkuchen",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 325,
+      "y": 1247,
+      "w": 87,
+      "text": "Schoko-\nlade",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 418,
+      "y": 1247,
+      "w": 20,
+      "text": "+",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 469,
+      "y": 1247,
+      "w": 65,
+      "text": "Kuchen",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 188,
+      "y": 1300,
+      "w": 106,
+      "text": "Fischsuppe",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 325,
+      "y": 1300,
+      "w": 87,
+      "text": "Fisch",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 418,
+      "y": 1300,
+      "w": 20,
+      "text": "+",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 469,
+      "y": 1300,
+      "w": 65,
+      "text": "Suppe",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 556,
+      "y": 879,
+      "w": 490,
+      "text": "über Essen/Essgewohnheiten sprechen",
+      "size": 18,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "x": 556,
+      "y": 910,
+      "w": 226,
+      "text": "Was isst du gern zum Früh-\n  stück?",
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 799,
+      "y": 910,
+      "w": 250,
+      "text": "Ich esse gern Käsebrötchen/...\n  zum Frühstück. Und du?\n\nIch mag keinen Käse/..., aber\n  Müsli/... esse ich gern.",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 556,
+      "y": 1020,
+      "w": 226,
+      "text": "Wann frühstückst du?",
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 799,
+      "y": 1020,
+      "w": 246,
+      "text": "In der Woche frühstücke ich\n  schon um sechs Uhr. Am Wo-\n  chenende/Sonntag frühstücke\n  ich oft erst um elf Uhr.",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 556,
+      "y": 1116,
+      "w": 226,
+      "text": "Was essen wir als Vorspeise/\n  Hauptgericht/Dessert?",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 799,
+      "y": 1116,
+      "w": 250,
+      "text": "Als Vorspeise essen wir Suppe.",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 556,
+      "y": 1184,
+      "w": 490,
+      "text": "beim Essen",
+      "size": 18,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "x": 556,
+      "y": 1216,
+      "w": 280,
+      "text": "Möchten Sie einen Kaffee/...?",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 852,
+      "y": 1216,
+      "w": 195,
+      "text": "Oh ja! Bitte. / Ja, gern.",
+      "size": 16,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 556,
+      "y": 1250,
+      "w": 280,
+      "text": "Möchten Sie noch etwas Suppe/...?",
+      "size": 16,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 852,
+      "y": 1250,
+      "w": 195,
+      "text": "Nein, danke!",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 556,
+      "y": 1283,
+      "w": 280,
+      "text": "Guten Appetit!",
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 852,
+      "y": 1283,
+      "w": 194,
+      "text": "Danke, ebenfalls/gleich-\n  falls.\n... schmeckt sehr gut.",
+      "size": 16,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 155,
+      "y": 1457,
+      "w": 400,
+      "text": "52  |  zweiundfünfzig",
+      "size": 16,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "AB",
+      "x": 122,
+      "y": 223,
+      "w": 120,
+      "size": 12,
+      "rotate": 0
+    },
+    {
+      "text": "interessant?",
+      "x": 130,
+      "y": 339,
+      "w": 120,
+      "size": 12,
+      "rotate": -90
+    },
+    {
+      "text": "Audiotraining",
+      "x": 130,
+      "y": 883,
+      "w": 120,
+      "size": 12,
+      "rotate": -90
+    },
+    {
+      "text": "Karaoke",
+      "x": 130,
+      "y": 1004,
+      "w": 120,
+      "size": 12,
+      "rotate": -90
+    },
+    {
+      "text": "der",
+      "x": 163,
+      "y": 1247,
+      "w": 25,
+      "size": 17,
+      "serif": true,
+      "color": "#ac1b2c"
+    },
+    {
+      "text": "die",
+      "x": 300,
+      "y": 1247,
+      "w": 25,
+      "size": 17,
+      "serif": true,
+      "color": "#ac1b2c"
+    },
+    {
+      "text": "der",
+      "x": 444,
+      "y": 1247,
+      "w": 25,
+      "size": 17,
+      "serif": true,
+      "color": "#ac1b2c"
+    },
+    {
+      "text": "die",
+      "x": 163,
+      "y": 1300,
+      "w": 25,
+      "size": 17,
+      "serif": true,
+      "color": "#ac1b2c"
+    },
+    {
+      "text": "der",
+      "x": 300,
+      "y": 1300,
+      "w": 25,
+      "size": 17,
+      "serif": true,
+      "color": "#ac1b2c"
+    },
+    {
+      "text": "die",
+      "x": 444,
+      "y": 1300,
+      "w": 25,
+      "size": 17,
+      "serif": true,
+      "color": "#ac1b2c"
+    }
+  ],
+  "taskColor": "#a6103c",
+  "hidePageNumber": true
+}
