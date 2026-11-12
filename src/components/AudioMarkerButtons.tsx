@@ -31,21 +31,26 @@ export function AudioMarkerButtons(){
  const dialog=useRef<HTMLDialogElement>(null);
  useEffect(()=>{
   let frame=0,previous='';
+  const proxied=new Map<HTMLElement,string|null>();
   const update=()=>{
    frame=0;
    const jump=document.querySelector('#pageJump') as HTMLSelectElement|null;
    const currentPage=jump?document.querySelectorAll<HTMLElement>('.page')[Number(jump.value)]:null;
    const tracks:Track[]=[];
+   const topLimit=Math.max(65,(document.querySelector('.readerPageNavigation')?.getBoundingClientRect().bottom||0)+5);
+   const bottomLimit=Math.min(innerHeight-82,(document.querySelector('.controls')?.getBoundingClientRect().top||innerHeight)-5);
    for(const el of document.querySelectorAll<HTMLElement>(audioMarkerSelector)){
     if(el.textContent?.includes('Clip')||el.closest('dialog'))continue;
     const page=el.closest<HTMLElement>('.page');
-    if(!page||currentPage&&page!==currentPage)continue;
+    if(!page)continue;
+    if(!proxied.has(el)){proxied.set(el,el.getAttribute('tabindex'));el.dataset.audioProxied='true';el.tabIndex=-1}
+    if(currentPage&&page!==currentPage)continue;
     const r=el.getBoundingClientRect(),p=page.getBoundingClientRect();
-    if(!r.width||!r.height||getComputedStyle(el).visibility==='hidden'||p.right<20||p.left>innerWidth-20||r.bottom<64||r.top>innerHeight-85)continue;
+    if(!r.width||!r.height||getComputedStyle(el).visibility==='hidden'||p.right<20||p.left>innerWidth-20||r.bottom<topLimit||r.top>bottomLimit)continue;
     const label=el.getAttribute('aria-label')||el.title||el.textContent?.trim()||'Originalaudio';
     const source=el.dataset.audioSrc||el.dataset.src||'';
     const track=source.match(/track(\d+)/)?.[1]||label.match(/(?:Originalaudio|Audio)\s*(?:\d\s+)?(\d{1,3})/i)?.[1]||el.textContent?.match(/\d+/g)?.pop()||'';
-    tracks.push({el,label,track,y:Math.max(65,r.top+r.height/2-22),page:page.dataset.page||''});
+    tracks.push({el,label,track,y:Math.max(topLimit,r.top+r.height/2-22),page:page.dataset.page||''});
    }
    tracks.sort((a,b)=>a.y-b.y);
    const out:Marker[]=[];
@@ -65,7 +70,7 @@ export function AudioMarkerButtons(){
     const xs=[m.x,Math.max(0,m.x-3),...(pageLeft>=48?[pageLeft-46]:[])];
     let found=false;
     for(let distance=0;distance<=120&&!found;distance+=2)for(const dy of distance?[ -distance,distance ]:[0]){
-     for(const x of xs){const y=origin+dy;if(y<65||y+44>innerHeight-82)continue;
+     for(const x of xs){const y=origin+dy;if(y<topLimit||y+44>bottomLimit)continue;
       if([...obstacles,...placed].some(r=>intersects(x,y,r)))continue;
       m.x=x;m.y=y;found=true;break;
      }if(found)break;
@@ -74,7 +79,7 @@ export function AudioMarkerButtons(){
      const page=m.tracks[0].el.closest('.page')!.getBoundingClientRect();
      const x=Math.min(innerWidth-44,page.right-44);
      for(let distance=0;distance<=120&&!found;distance+=2)for(const dy of distance?[-distance,distance]:[0]){
-      const y=origin+dy;if(y<65||y+44>innerHeight-82)continue;
+      const y=origin+dy;if(y<topLimit||y+44>bottomLimit)continue;
       if([...obstacles,...placed].some(r=>intersects(x,y,r)))continue;
       m.x=x;m.y=y;found=true;break;
      }
@@ -89,12 +94,12 @@ export function AudioMarkerButtons(){
   observer.observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['style','class','open']});
   window.addEventListener('resize',queue);window.addEventListener('scroll',queue,true);
   const timer=setInterval(queue,300);queue();
-  return()=>{observer.disconnect();window.removeEventListener('resize',queue);window.removeEventListener('scroll',queue,true);clearInterval(timer);cancelAnimationFrame(frame)};
+  return()=>{observer.disconnect();window.removeEventListener('resize',queue);window.removeEventListener('scroll',queue,true);clearInterval(timer);cancelAnimationFrame(frame);for(const[el,tab]of proxied){delete el.dataset.audioProxied;if(tab===null)el.removeAttribute('tabindex');else el.setAttribute('tabindex',tab)}};
  },[]);
  const play=(t:Track)=>{if(t.el.isConnected)t.el.click()};
  const choose=(m:Marker)=>{if(m.tracks.length===1){play(m.tracks[0]);return}setChoices(m.tracks);dialog.current?.showModal()};
  return createPortal(<>
-  {markers.map((m,i)=><button key={i} type="button" className="largeAudioMarker" data-large-audio aria-label={m.tracks.length===1?m.tracks[0].label:`${m.tracks.length} Audios auswählen`} title={m.tracks.map(t=>t.label).join(' · ')} style={{left:m.x,top:m.y}} onClick={()=>choose(m)}><span className="largeAudioFace"><Play/><span>{m.tracks.length>1?`${m.tracks.length} ♪`:m.tracks[0].track}</span></span></button>)}
+  {markers.map((m,i)=><button key={i} type="button" className="largeAudioMarker" data-large-audio aria-label={m.tracks.length===1?m.tracks[0].label:`${m.tracks.length} Audios auswählen`} title={m.tracks.map(t=>t.label).join(' · ')} style={{left:m.x,top:m.y}} onClick={()=>choose(m)}><span className="largeAudioFace"><Play/></span></button>)}
   <dialog className="audioTrackChooser" ref={dialog} onClose={()=>setChoices([])} aria-label="Originalaudio auswählen">
    <div className="audioTrackChooserHead"><strong>Originalaudio</strong><button type="button" aria-label="Schließen" onClick={()=>dialog.current?.close()}>✕</button></div>
    <p>Audio auswählen</p>
