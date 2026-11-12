@@ -51,3 +51,15 @@ Nine more native React pages complete ab3 and the Module 1 review. The cumulativ
 - Actual untouched/filled screenshots were inspected against the source scans. Check controls require modest spacing changes, especially in the compressed self-assessment pages and dense grammar page. The crossword retains native letter cells and source illustrations, with a slightly different vertical rhythm from the scan.
 
 The parallel KB batch moved the hybrid regression fixture to KB57 after KB41-56 became native. Its current fixture and all parallel KB lesson content are preserved in the merge.
+
+## Batch 4: AB A1.1 pages 30-37
+
+Eight additional native pages begin lessons 4 and 5. The assigned total is now 31 of 95 pages, with 64 remaining. Page 29 and the parallel lesson 7-9 work are unchanged.
+
+- Selectable source text, contained original illustration crops, visible full field frames, saved fields/radios/highlights, native matching lines, and numbered object-picture controls.
+- 29 closed checks below their tasks. The SMS continuation, translations, vocabulary notes and own drawing are saved without right/wrong claims. Drawing has a clear action and survives reload; its pointer events do not turn the page.
+- Source CD1 tracks 14-22 are playable in their original files. The Original link and shared meaning dialog remain available.
+- Source corrections: page 31 uses the printed 17 000, not the inherited 1700 typo. Page 32's coffee response is the printed Vielen Dank, not the inherited Danke, gut answer. The printed X choice and S solution example disagree in the source; both remain printed examples, and neither is graded. Page 34's TEST answers follow the printed words and grammar rather than an absent answer-key section.
+- Pronunciation long/short vowel marks are native text decorations. Page 36 preserves printed letter hints and its fixed Feuerzeug example. Page 37 uses image-backed endpoints and connecting lines rather than replacement dropdowns.
+- Validation: typecheck, production build, hybrid regression and prior 23-page native regressions; Chrome normal-click tests at 320px and 390px cover correct/incorrect feedback, feedback clearing, persistence, original audio, meaning dialogs, drawings, source images, absence of replacement selects, collisions and canvas bounds.
+- Untouched and filled mobile screenshots were inspected against the source. Checks and visible frames change vertical spacing; dense pronunciation, price and TEST sections are more compressed than the scan. The long written price uses a wrapping saved field rather than unreadably shrinking the entire answer.
