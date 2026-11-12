@@ -1,0 +1,54 @@
+/* Tailwind utilities only - no preflight, so legacy book pages keep their
+   reset-free rendering. Utilities are unlayered: they must beat bare element
+   rules like book.css's `button{}`, while unconverted areas never carry
+   utility classes, and equal-specificity legacy class rules still win by
+   loading later (runtime-injected after the bundle). */
+@import "tailwindcss/theme";
+@import "tailwindcss/utilities";
+
+/* Automatic candidate detection found nothing in this layout; scan explicitly. */
+@source "./**/*.{ts,tsx}";
+@source "../*.html";
+@source "./lessons/**/*.json";
+
+/* The reader's dark mode is html[data-theme="dark"], used as `dark:` variant. */
+@custom-variant dark (&:where(html[data-theme="dark"] *));
+
+@theme {
+  --animate-lnv-fade: lnv-fade .18s ease-out;
+  --animate-lnv-slide: lnv-slide .22s ease-out;
+  --animate-lnv-rise: lnv-rise .22s ease-out;
+  @keyframes lnv-fade { from { opacity: 0; } }
+  @keyframes lnv-slide { from { transform: translateX(-40px); opacity: 0; } }
+  @keyframes lnv-rise { from { transform: translateY(40px); opacity: 0; } }
+}
+
+/* Shell leftovers that style markup outside the React tree (kept as authored
+   CSS, not utilities, because the targets live in lesson JSON/header html). */
+.headerBrand > select,
+#lessonNav,
+#pageJump {
+  display: none !important;
+}
+.lnv-headerSlot,
+.lnv-pageSlot {
+  display: contents;
+}
+/* While a library panel is open the page behind must not scroll. */
+body.lnv-lock {
+  overflow: hidden;
+}
+
+/* Dark look for the library buttons. Kept as authored (unlayered) CSS because
+   themes.css's generic unlayered dark :is(button,...) rule beats layered
+   utilities; non-button library elements use dark: utilities directly. */
+html[data-theme="dark"] :is(.lnv-pill, .lnv-pagePill, .lnv-close, .lnv-pg) {
+  background: #2c342f;
+  border-color: #43504a;
+  color: #e8e2d4;
+}
+html[data-theme="dark"] .lnv-pg.cur {
+  background: #c9a45a;
+  border-color: #d4b674;
+  color: #232a26;
+}
