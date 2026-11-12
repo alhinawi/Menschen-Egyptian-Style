@@ -2162,13 +2162,271 @@
    "h": 19
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p22-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "b",
+   "answer": "Kindergarten|der Kindergarten",
+   "x": 756,
+   "y": 275,
+   "w": 209,
+   "h": 24
+  },
+  {
+   "id": "p22-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "c",
+   "answer": "Jugendherberge|die Jugendherberge",
+   "x": 545,
+   "y": 299,
+   "w": 420,
+   "h": 24
+  },
+  {
+   "id": "p22-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "d",
+   "answer": "Turm|der Turm",
+   "x": 463,
+   "y": 325,
+   "w": 502,
+   "h": 24
+  },
+  {
+   "id": "p22-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "e",
+   "answer": "Bibliothek|die Bibliothek",
+   "x": 628,
+   "y": 351,
+   "w": 337,
+   "h": 24
+  },
+  {
+   "id": "p22-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "f",
+   "answer": "Park|der Park",
+   "x": 558,
+   "y": 377,
+   "w": 407,
+   "h": 24
+  },
+  {
+   "id": "p22-r2b-dir",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 b dir",
+   "answer": "true",
+   "name": "r2b",
+   "value": "dir",
+   "x": 456,
+   "y": 541,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p22-r2b-ihnen",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 b ihnen",
+   "answer": "false",
+   "name": "r2b",
+   "value": "ihnen",
+   "x": 540,
+   "y": 541,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p22-r2c-ihm",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 c ihm",
+   "answer": "false",
+   "name": "r2c",
+   "value": "ihm",
+   "x": 291,
+   "y": 568,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p22-r2c-Ihnen",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 c Ihnen",
+   "answer": "true",
+   "name": "r2c",
+   "value": "Ihnen",
+   "x": 375,
+   "y": 568,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p22-r2d-uns",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 d uns",
+   "answer": "false",
+   "name": "r2d",
+   "value": "uns",
+   "x": 187,
+   "y": 642,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p22-r2d-euch",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 d euch",
+   "answer": "true",
+   "name": "r2d",
+   "value": "euch",
+   "x": 267,
+   "y": 642,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p22-r2e-ihm",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 e ihm",
+   "answer": "true",
+   "name": "r2e",
+   "value": "ihm",
+   "x": 646,
+   "y": 672,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p22-r2e-ihr",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 e ihr",
+   "answer": "false",
+   "name": "r2e",
+   "value": "ihr",
+   "x": 730,
+   "y": 672,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p22-r2f-euch",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 f euch",
+   "answer": "false",
+   "name": "r2f",
+   "value": "euch",
+   "x": 300,
+   "y": 696,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p22-r2f-mir",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 f mir",
+   "answer": "true",
+   "name": "r2f",
+   "value": "mir",
+   "x": 391,
+   "y": 696,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p22-3a",
+   "group": "g3",
+   "kind": "text",
+   "label": "a",
+   "answer": "Hier ist",
+   "x": 415,
+   "y": 898,
+   "w": 268,
+   "h": 24
+  },
+  {
+   "id": "p22-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "b",
+   "answer": "gefällt mir gut",
+   "x": 184,
+   "y": 946,
+   "w": 270,
+   "h": 24
+  },
+  {
+   "id": "p22-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "c",
+   "answer": "das ist schon okay",
+   "x": 428,
+   "y": 994,
+   "w": 232,
+   "h": 24
+  },
+  {
+   "id": "p22-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "d",
+   "answer": "das ist nicht so toll",
+   "x": 184,
+   "y": 1042,
+   "w": 270,
+   "h": 24
+  },
+  {
+   "id": "p22-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "e",
+   "answer": "Hier gibt es viele",
+   "x": 184,
+   "y": 1066,
+   "w": 270,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 2"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 3"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the printed key (Lektion 15, p106). Handwritten example (1a, 2a) not a field.",
+   "Ex 1: the key lists the nouns without article; both the bare noun and the noun with its grammatical article are accepted.",
+   "Boxes placed from word coordinates and checked visually. Not marked verified."
+  ],
   "verifiedWords": 308,
-  "totalWords": 308,
-  "notes": []
+  "totalWords": 308
  }
 }

@@ -1000,7 +1000,7 @@
    "h": 14
   },
   {
-   "text": "Wörle.",
+   "text": "Worle.",
    "x": 725,
    "y": 555,
    "w": 56,
@@ -1056,7 +1056,7 @@
    "h": 14
   },
   {
-   "text": "Wörle",
+   "text": "Worle",
    "x": 456,
    "y": 580,
    "w": 51,
@@ -2393,13 +2393,266 @@
    "h": 14
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p16-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "b",
+   "answer": "Wohnung",
+   "x": 399,
+   "y": 273,
+   "w": 173,
+   "h": 24
+  },
+  {
+   "id": "p16-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "c",
+   "answer": "Toilette",
+   "x": 232,
+   "y": 298,
+   "w": 180,
+   "h": 24
+  },
+  {
+   "id": "p16-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "d",
+   "answer": "Schlafzimmer",
+   "x": 518,
+   "y": 298,
+   "w": 182,
+   "h": 24
+  },
+  {
+   "id": "p16-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "e",
+   "answer": "Wohnzimmer",
+   "x": 302,
+   "y": 324,
+   "w": 182,
+   "h": 24
+  },
+  {
+   "id": "p16-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "f",
+   "answer": "Kinderzimmer",
+   "x": 502,
+   "y": 350,
+   "w": 213,
+   "h": 24
+  },
+  {
+   "id": "p16-1g",
+   "group": "g1",
+   "kind": "text",
+   "label": "g",
+   "answer": "Garten",
+   "x": 524,
+   "y": 377,
+   "w": 181,
+   "h": 24
+  },
+  {
+   "id": "p16-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "b",
+   "answer": "ihre",
+   "x": 302,
+   "y": 502,
+   "w": 103,
+   "h": 24
+  },
+  {
+   "id": "p16-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "c",
+   "answer": "ihr",
+   "x": 216,
+   "y": 527,
+   "w": 106,
+   "h": 24
+  },
+  {
+   "id": "p16-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "d",
+   "answer": "Seine",
+   "x": 720,
+   "y": 528,
+   "w": 105,
+   "h": 24
+  },
+  {
+   "id": "p16-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "e",
+   "answer": "sein",
+   "x": 874,
+   "y": 555,
+   "w": 81,
+   "h": 24
+  },
+  {
+   "id": "p16-2f",
+   "group": "g2",
+   "kind": "text",
+   "label": "f",
+   "answer": "seinen",
+   "x": 790,
+   "y": 581,
+   "w": 105,
+   "h": 24
+  },
+  {
+   "id": "p16-2g",
+   "group": "g2",
+   "kind": "text",
+   "label": "g",
+   "answer": "ihre",
+   "x": 722,
+   "y": 607,
+   "w": 104,
+   "h": 24
+  },
+  {
+   "id": "p16-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3b",
+   "answer": "Marias",
+   "x": 276,
+   "y": 734,
+   "w": 116,
+   "h": 24
+  },
+  {
+   "id": "p16-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3c",
+   "answer": "Wolfgangs",
+   "x": 672,
+   "y": 710,
+   "w": 116,
+   "h": 24
+  },
+  {
+   "id": "p16-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3d",
+   "answer": "Carlas",
+   "x": 617,
+   "y": 737,
+   "w": 116,
+   "h": 24
+  },
+  {
+   "id": "p16-4a",
+   "group": "g4",
+   "kind": "text",
+   "label": "a",
+   "answer": "es ist sehr schön hier",
+   "x": 250,
+   "y": 925,
+   "w": 715,
+   "h": 24
+  },
+  {
+   "id": "p16-4b",
+   "group": "g4",
+   "kind": "text",
+   "label": "b",
+   "answer": "mag ich gar nicht",
+   "x": 645,
+   "y": 982,
+   "w": 320,
+   "h": 24
+  },
+  {
+   "id": "p16-4c",
+   "group": "g4",
+   "kind": "text",
+   "label": "c",
+   "answer": "die Idee ist cool",
+   "x": 312,
+   "y": 1035,
+   "w": 653,
+   "h": 24
+  },
+  {
+   "id": "p16-4d",
+   "group": "g4",
+   "kind": "text",
+   "label": "d",
+   "answer": "sieht wirklich toll aus",
+   "x": 378,
+   "y": 1057,
+   "w": 587,
+   "h": 24
+  },
+  {
+   "id": "p16-4e",
+   "group": "g4",
+   "kind": "text",
+   "label": "e",
+   "answer": "sie sind hässlich",
+   "x": 596,
+   "y": 1141,
+   "w": 369,
+   "h": 24
+  },
+  {
+   "id": "p16-4f",
+   "group": "g4",
+   "kind": "text",
+   "label": "f",
+   "answer": "das ist langweilig",
+   "x": 328,
+   "y": 1187,
+   "w": 627,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 2"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 3"
+  },
+  {
+   "id": "g4",
+   "label": "Aufgabe 4"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the printed key (Lektion 14, p106). Handwritten examples are not fields.",
+   "Ex 1: the word-search marking itself is not a field; only the gap answers are.",
+   "Boxes placed from word coordinates and checked visually. Not marked verified."
+  ],
   "verifiedWords": 341,
-  "totalWords": 341,
-  "notes": []
+  "totalWords": 341
  }
 }
