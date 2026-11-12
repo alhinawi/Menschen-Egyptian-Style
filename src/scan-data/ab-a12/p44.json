@@ -2344,13 +2344,185 @@
    "h": 19
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p44-10c",
+   "group": "g1",
+   "kind": "text",
+   "label": "10 c",
+   "answer": "habe Bauchschmerzen",
+   "x": 221,
+   "y": 258,
+   "w": 367,
+   "h": 22
+  },
+  {
+   "id": "p44-10d",
+   "group": "g1",
+   "kind": "text",
+   "label": "10 d",
+   "answer": "Arm tut weh",
+   "x": 236,
+   "y": 285,
+   "w": 352,
+   "h": 22
+  },
+  {
+   "id": "p44-10e",
+   "group": "g1",
+   "kind": "text",
+   "label": "10 e",
+   "answer": "habe Kopfschmerzen",
+   "x": 221,
+   "y": 310,
+   "w": 367,
+   "h": 22
+  },
+  {
+   "id": "p44-10f",
+   "group": "g1",
+   "kind": "text",
+   "label": "10 f",
+   "answer": "Augen tun weh",
+   "x": 245,
+   "y": 334,
+   "w": 343,
+   "h": 22
+  },
+  {
+   "id": "p44-11-1",
+   "group": "g2",
+   "kind": "text",
+   "label": "11 Lücke 1",
+   "answer": "gegen Stress",
+   "x": 345,
+   "y": 570,
+   "w": 283,
+   "h": 22
+  },
+  {
+   "id": "p44-11-2",
+   "group": "g2",
+   "kind": "text",
+   "label": "11 Lücke 2",
+   "answer": "viel Sport",
+   "x": 285,
+   "y": 594,
+   "w": 205,
+   "h": 22
+  },
+  {
+   "id": "p44-11-3",
+   "group": "g2",
+   "kind": "text",
+   "label": "11 Lücke 3",
+   "answer": "hilft",
+   "x": 540,
+   "y": 595,
+   "w": 205,
+   "h": 22
+  },
+  {
+   "id": "p44-11-4",
+   "group": "g2",
+   "kind": "text",
+   "label": "11 Lücke 4",
+   "answer": "schaffe ich nicht",
+   "x": 632,
+   "y": 621,
+   "w": 334,
+   "h": 22
+  },
+  {
+   "id": "p44-11-5",
+   "group": "g2",
+   "kind": "text",
+   "label": "11 Lücke 5",
+   "answer": "einen Tipp",
+   "x": 482,
+   "y": 647,
+   "w": 202,
+   "h": 22
+  },
+  {
+   "id": "p44-11-6",
+   "group": "g2",
+   "kind": "text",
+   "label": "11 Lücke 6",
+   "answer": "einen Kräutertee",
+   "x": 508,
+   "y": 672,
+   "w": 334,
+   "h": 22
+  },
+  {
+   "id": "p44-12a",
+   "group": "g3",
+   "kind": "checkbox",
+   "label": "12 a",
+   "answer": "false",
+   "x": 733,
+   "y": 1238,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p44-12b",
+   "group": "g3",
+   "kind": "checkbox",
+   "label": "12 b",
+   "answer": "false",
+   "x": 733,
+   "y": 1262,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p44-12c",
+   "group": "g3",
+   "kind": "checkbox",
+   "label": "12 c",
+   "answer": "true",
+   "x": 733,
+   "y": 1288,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p44-12d",
+   "group": "g3",
+   "kind": "checkbox",
+   "label": "12 d",
+   "answer": "true",
+   "x": 733,
+   "y": 1314,
+   "w": 24,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 10"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 11"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 12"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the official Hueber Loesungsschluessel AB A1.2 (Lektion 18).",
+   "Ex 10: the blank follows the printed 'Ich/Mein/Meine' start. Handwritten examples (10a, 10b) are not fields. Ex 12 checkboxes: key says richtig c, d.",
+   "Boxes placed from word coordinates; not marked verified."
+  ],
   "verifiedWords": 334,
-  "totalWords": 334,
-  "notes": []
+  "totalWords": 334
  }
 }
