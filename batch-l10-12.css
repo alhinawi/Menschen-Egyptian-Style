@@ -191,3 +191,5 @@
 .p66 .batchBody .festBox img{width:47%;height:auto;object-fit:cover;border-radius:4px}
 .p66 .festBox p{flex:1;min-width:150px;font-size:12.5px;line-height:1.3;margin:0}
 .p66 .assignRow{display:flex;flex-wrap:wrap;gap:2px 14px;align-items:center;font-size:14px}
+.scanPage,.scanPage img{width:100%;height:100%}
+.scanPage img{object-fit:contain;background:#fff;display:block}
