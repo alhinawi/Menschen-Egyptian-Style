@@ -102,3 +102,13 @@ Three more lesson8 pages bring this lane to42 of95 assigned pages,53 remaining. 
 - Page64 retains source TEST prompts, native clock table and score table, framed fields and wrapping word-order responses. Place answers do not duplicate the printed im/ins/eine/einer articles. Gallery and exhibition are both accepted for the open place clue; common daypart variants are accepted.
 - Thirteen closed checks. Source tracks37-40 play through normal shared screen-space audio controls/chooser. Correct/wrong checks, feedback reset, saved fields/radios/highlights/stress/drawing, meaning, images, collisions/bounds and no replacement selects pass in Chrome320/390. Typecheck/build, full hybrid320/390/550 and preceding60-61 suite pass.
 - Actual untouched/filled pixels were inspected against scans. Dense TEST/listening sections have compressed vertical spacing for checks and visible frames. Open work remains saved, never falsely graded.
+
+## Batch 9: AB A1.1 pages 65-67
+
+Three more native pages bring this lane to45 of95 assigned pages,50 remaining. Separate page41-56 remains untouched.
+
+- Page65 has native selectable vocabulary, saved framed translations and own word-series/word notes, with a contained original illustration strip. Personal translations and writing stay ungraded.
+- Page66 retains the original food pictures, printed letter hints and survey, saved translations, a saved drawing and labels, and native mögen/essen fields. Jan's preference sentences remain saved open writing rather than a brittle ordered answer list.
+- Page67 has source dialogue ordering, schon/erst, möchte forms and centered response circles. Six closed checks across66-67 sit below the tasks. No source audio markers occur on these pages.
+- Chrome320/390 tests cover correct and wrong answers, changed-feedback reset, persistence of fields/circles/drawing, meaning dialogs, loaded crops, text and field/image collisions, bounds and no replacement selects. Typecheck/build, adjacent62-64 and full hybrid320/390/550 regressions pass.
+- Actual untouched/filled pixels at320/390 were inspected against scans. Dense sections use compressed spacing for full frames and checks; the title stays readable and the vocabulary fields do not overlap the illustration strip.
