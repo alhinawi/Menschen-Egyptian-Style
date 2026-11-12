@@ -28,13 +28,19 @@ def build(p):
         t=wd['text']
         x0,y0,x1,y1=max(0,x-2),max(0,y-2),min(W,x+w+2),min(H,y+h+2)
         ring=np.concatenate([a[max(0,y0-3):y0,x0:x1].reshape(-1,3),a[y1:y1+3,x0:x1].reshape(-1,3),a[y0:y1,max(0,x0-3):x0].reshape(-1,3),a[y0:y1,x1:x1+3].reshape(-1,3)])
-        ok=False
+        ok=False;panel=0
         box0=a[y0:y1,x0:x1].reshape(-1,3)
+        ringp=np.concatenate([a[max(0,y0-4):y0,x0:x1].reshape(-1,3),a[y1:y1+4,x0:x1].reshape(-1,3),a[y0:y1,max(0,x0-4):x0].reshape(-1,3),a[y0:y1,x1:x1+4].reshape(-1,3)])
+        med=None
         if len(box0)>0:
-            med=np.median(box0,axis=0);ok=float((np.abs(box0-med).sum(axis=1)<70).mean())>0.6
-            # big titles/logos and strongly coloured panels stay as artwork
-            if h>=34:ok=False
-            if np.abs(med-paper0).sum()>150:ok=False
+            m1=np.median(box0,axis=0);ok1=float((np.abs(box0-m1).sum(axis=1)<70).mean())>0.6
+            if len(ringp)>8:
+                m2=np.median(ringp,axis=0);ok2=float((np.abs(ringp-m2).sum(axis=1)<60).mean())>0.6
+            else:ok2=False;m2=m1
+            if ok2:ok=True;med=m2
+            elif ok1:ok=True;med=m1
+            if ok and (h>=34 or np.abs(med-paper0).sum()>150):ok=False
+            if ok and np.abs(med-paper0).sum()>45:panel=1
         rec={'t':t,'x':wd['x'],'y':wd['y'],'w':wd['w'],'h':wd['h']}
         if wd.get('phrase'):rec['ph']=wd['phrase']
         if ok and re_has(t):
@@ -52,7 +58,7 @@ def build(p):
             work[y0:y1,x0:x1]=bg
             rec['c']='#%02x%02x%02x'%tuple(int(max(0,min(255,v))) for v in fg)
             rec['b']=1 if frac>0.34 else 0
-            rec['r']=1
+            rec['r']=1;rec['pn']=panel
         words.append(rec)
     # artwork components from erased copy
     paper=np.median(work.reshape(-1,3),axis=0)
@@ -118,7 +124,7 @@ def build(p):
     outb=[]
     for seg in blocks:
         x0=min(w['x'] for w in seg);x1=max(w['x']+w['w'] for w in seg)
-        outb.append({'x':x0,'w':x1-x0,'cy':seg[0]['cy'],'f':seg[0]['f'],'b':seg[0]['b'],'ws':[{'t':w['t'],'c':w['c'],**({'ph':w['ph']} if 'ph' in w else {})} for w in seg]})
+        outb.append({'x':x0,'w':x1-x0,'cy':seg[0]['cy'],'f':seg[0]['f'],'b':seg[0]['b'],'sa':sans_ctx(a,S,x0,seg[0]['cy'],x1,seg[0]['f'],paper0),'ws':[{'t':w['t'],'c':w['c'],**({'ph':w['ph']} if 'ph' in w else {})} for w in seg]})
     words=[w for w in words if not w.get('r')]
     checks={}
     for g in sorted({f['group'] for f in d['fields'] if f.get('answer') is not None}):
@@ -140,6 +146,13 @@ def build(p):
         checks[g]=list(best or (min(xm,d['width']-bw-10),min(yb+6,d['height']-bh)))
     return {'blocks':outb,'checks':checks,'book':'kb-a11','page':p,'w':d['width'],'h':d['height'],'words':words,'art':out,
             'paper':'#%02x%02x%02x'%tuple(int(v) for v in paper),'fields':d['fields'],'audio':d['audio'],'review':d['review']}
+def sans_ctx(a,S,x0,cy,x1,f,paper0):
+    X0=int(max(0,(x0-30)*S));X1=int(min(a.shape[1],(x1+30)*S));Y0=int(max(0,(cy-f*2.2)*S));Y1=int(min(a.shape[0],(cy+f*2.2)*S))
+    reg=a[Y0:Y1,X0:X1].reshape(-1,3).astype(int)
+    if len(reg)==0:return 0
+    sat=reg.max(axis=1)-reg.min(axis=1)
+    col=(sat>28)&(np.abs(reg-paper0).sum(axis=1)>60)
+    return 1 if col.mean()>0.35 else 0
 def re_has(t):
     return any(c.isalnum() for c in t) or t.strip() in ('.',',','!','?',':','–','-','…')
 if __name__=='__main__':
