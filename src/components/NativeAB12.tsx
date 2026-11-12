@@ -14,11 +14,12 @@ export function NativeAB12({page}:{page:string}){
  const set=(id:string,v:string)=>{const n={...values,[id]:v};sv(n);localStorage.setItem(key,JSON.stringify(n))};
  const text=(x:number,y:number,w:number,t:string,cls='')=><div className={'naText '+cls} style={{left:x,top:y,width:w}}><Words text={t}/></div>;
  const art=(name:string,x:number,y:number,w:number,h:number)=><img className="naArt" src={`assets/book-crops/native-ab12-p${page}-${name}.png`} alt={'Originalillustration '+name} style={{left:x,top:y,width:w,height:h}}/>;
- const field=(id:string,x:number,y:number,w:number,label:string)=><input className="naField" aria-label={label} data-native-field={id} style={{left:x,top:y,width:w}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
+ const field=(id:string,x:number,y:number,w:number,label:string,cls='')=><input className={'naField '+cls} aria-label={label} data-native-field={id} style={{left:x,top:y,width:w}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
  const rule=(x:number,y:number,w:number)=><div className="naRule" style={{left:x,top:y,width:w}}/>;
  const dot=(id:string,value:string,x:number,y:number,label:string,checkbox=false)=><input className="naDot" type={checkbox?'checkbox':'radio'} aria-label={label} name={key+'-'+id} checked={checkbox?values[id]==='true':values[id]===value} onChange={e=>set(id,checkbox?String(e.target.checked):value)} style={{left:x,top:y}}/>;
  const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><button onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}>Prüfen ✓</button><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,t:string,cls='')=><div className={'naTitle '+cls} style={{left:x,top:y,width:w}}><b>{n}</b><Words text={t}/></div>;
+ const gl=(x:number,y:number,t:string,bg?:string)=><div className="naGL" style={{left:x,top:y,...(bg?{background:bg}:{})}}>{t}</div>;
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const hand=(x:number,y:number,w:number,t:string)=><div className="naText naHand" style={{left:x,top:y,width:w}}><Words text={t}/></div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
@@ -103,6 +104,54 @@ export function NativeAB12({page}:{page:string}){
   {[713,732,752,772,791,811,830,849,869,888,908,927,947,966,986,1005].map((y,i)=>field('89-2-'+i,102,y,525,'Notizzeile '+(i+1)))}
   {text(598,1046,150,'neunundachtzig  |  89','naFooter')}
   {art('modul-tab',722,1038,50,24)}
+ </>}
+ {page==='52'&&<>
+  <div className="naBand52"/>
+  {text(129,70,320,'RÜCKBLICK','naHeadline')}
+  {text(126,158,480,'Wählen Sie eine Aufgabe zu Lektion','naSec naNw naSecX')}
+  {gl(508,161,'17','#74c655')}
+  <div className="naGRule" style={{left:540,top:186,width:438,height:3,background:'#b5d8b2'}}/>
+  {art('mag1',70,216,56,52)}
+  {title('1',125,225,780,'Lesen Sie noch einmal Ihre Pläne im Kursbuch auf Seite 31 (Aufgabe 6).','naRB naNw')}
+  {text(165,254,430,'Wann wollen Sie was machen? Schreiben Sie.','naD20')}
+  {text(167,291,340,'Im August / Im Sommer ...','naD20')}
+  {text(167,316,250,'In zwei Jahren ...','naD20')}
+  {text(167,341,250,'In zehn Jahren ...','naD20')}
+  {text(167,374,60,'...','naD20')}
+  {art('hand1',448,302,388,76)}
+  {field('52-t1-a1',230,371,770,'Eigener Satz 1','naFieldBlank')}
+  {field('52-t1-a2',167,404,833,'Eigener Satz 2','naFieldBlank')}
+  {field('52-t1-a3',167,429,820,'Eigener Satz 3','naFieldBlank')}
+  {art('pen1',72,448,56,50)}
+  {title('2',122,459,830,'Sie haben 100 000 € gewonnen. Was machen Sie? Schreiben Sie.','naRB naNw')}
+  {text(166,498,140,'Reisen?','naD20')}
+  {text(165,523,140,'Hobbys?','naD20')}
+  {text(163,551,140,'Auto?','naD20')}
+  {text(163,578,60,'...','naD20')}
+  {art('hand23',318,520,200,60)}
+  {field('52-t2-b1',260,495,740,'Eigene Idee 1','naFieldBlank')}
+  {field('52-t2-b2',230,574,770,'Eigene Idee 2','naFieldBlank')}
+  {field('52-t2-b3',167,606,833,'Eigene Idee 3','naFieldBlank')}
+  {field('52-t2-b4',167,634,833,'Eigene Idee 4','naFieldBlank')}
+  {text(120,689,480,'Wählen Sie eine Aufgabe zu Lektion','naSec naNw naSecX')}
+  {gl(502,692,'18','#5a9d97')}
+  <div className="naGRule" style={{left:534,top:717,width:432,height:3,background:'#a0c4ca'}}/>
+  {art('mag2',70,744,56,52)}
+  {title('1',119,756,850,'Lesen Sie noch einmal den Ratgeber im Kursbuch auf Seite 35 und notieren Sie.','naRB naNw')}
+  {text(162,795,295,'Diese Körperteile stehen im Text:','naD20 naNw')}
+  {field('52-t3-c1',456,793,510,'Körperteile im Text')}
+  {text(161,821,350,'Diese Körperteile stehen nicht im Text:','naD20 naNw')}
+  {field('52-t3-c2',510,820,456,'Körperteile nicht im Text')}
+  {art('pen2',70,872,56,52)}
+  {title('2',117,884,830,'Was machen Sie gegen Stress? Machen Sie Notizen und schreiben\nSie dann einen Ratgeber.','naRB naPre')}
+  {text(159,949,170,'Gegen Stress hilft:','naD19 naNw')}
+  {field('52-t4-d1',322,950,644,'Gegen Stress hilft')}
+  {art('hand4',150,986,395,102)}
+  {field('52-t4-d2',167,1100,833,'Eigener Ratgeber 1','naFieldBlank')}
+  {field('52-t4-d3',167,1132,833,'Eigener Ratgeber 2','naFieldBlank')}
+  {field('52-t4-d4',167,1164,833,'Eigener Ratgeber 3','naFieldBlank')}
+  {art('modul',0,1388,72,24)}
+  {text(96,1388,175,'52 \u00a0|\u00a0 zweiundfünfzig','naFooter naFoot52')}
  </>}
  {page==='30'&&<>
   {art('header',0,0,1072,102)}
