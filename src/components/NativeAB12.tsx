@@ -35,7 +35,19 @@ export function NativeAB12({page}:{page:string}){
    L.ws.sort((a,b)=>a.x-b.x);
    const lh=L.ws.map(w=>w.h).sort((a,b)=>a-b);
    const med=lh[Math.floor(lh.length/2)]||mode;
-   L.fs=Math.min(med*1.14,mode*2.3);
+   L.fs=med>mode*1.9?med*1.1:Math.min(Math.max(med*1.3,mode*0.9),mode*1.45);
+  }
+  // cap font by the vertical gap to the next line that shares x-space
+  for(let i=0;i<out.length;i++){
+   const L=out[i];
+   const x0=Math.min(...L.ws.map(w=>w.x)),x1=Math.max(...L.ws.map(w=>w.x+w.w));
+   for(let j=i+1;j<out.length;j++){
+    const N=out[j];
+    if(N.top>=L.bottom-1){
+     const nx0=Math.min(...N.ws.map(w=>w.x)),nx1=Math.max(...N.ws.map(w=>w.x+w.w));
+     if(nx0<x1&&nx1>x0){L.fs=Math.min(L.fs,Math.max(6,(N.top-L.top)*0.92));break}
+    }
+   }
   }
   return out;
  },[scan,data]);
@@ -73,7 +85,8 @@ export function NativeAB12({page}:{page:string}){
     }
     flush();
     const fs=L.fs/W*100+'cqw';
-    return <div key={'ln'+li}>{frags.map((f,fi)=><div key={fi} className="naText" style={{left:f.x/W*100+'%',top:f.y/H*100+'%',fontSize:fs}}>{f.run.map((w,j)=><span key={j}>{j>0?' ':''}{wordSpan(w,'w'+li+'-'+fi+'-'+j)}</span>)}</div>)}</div>;
+    const lh=(L.bottom-L.top)/W*100+'cqw';
+    return <div key={'ln'+li}>{frags.map((f,fi)=><div key={fi} className="naText" style={{left:f.x/W*100+'%',top:L.top/H*100+'%',fontSize:fs,lineHeight:lh}}>{f.run.map((w,j)=><span key={j}>{j>0?' ':''}{wordSpan(w,'w'+li+'-'+fi+'-'+j)}</span>)}</div>)}</div>;
    })}
    {scan.fields.map(f=>{
     const res=results[f.id];
@@ -88,9 +101,17 @@ export function NativeAB12({page}:{page:string}){
     const done=answered.some(f=>results[f.id]!==undefined);
     const allRight=answered.every(f=>results[f.id]);
     let box=data.checks[g.id];
-    if(!box){const x=Math.min(...answered.map(f=>f.x));const y=Math.max(...answered.map(f=>f.y+f.h))+10;box={x,y,w:150,h:40}}
-    const overlaps=scan.words.some((w,i)=>!drop.has(i)&&w.x<box.x+box.w&&w.x+w.w>box.x&&w.y<box.y+box.h&&w.y+w.h>box.y);
-    if(overlaps){const last=answered.reduce((a,b)=>a.y>b.y?a:b);box={x:Math.min(W-160,last.x+last.w+14),y:Math.max(4,last.y+last.h-40),w:150,h:40}}
+    if(!box){
+     const gy0=Math.min(...answered.map(f=>f.y))-30,gy1=Math.max(...answered.map(f=>f.y+f.h));
+     const near=scan.words.filter((w,i)=>!drop.has(i)&&w.y<gy1+40&&w.y+w.h>gy0);
+     const bottom=Math.max(gy1,...near.map(w=>w.y+w.h));
+     box={x:Math.min(Math.min(...answered.map(f=>f.x)),W-170),y:bottom+8,w:150,h:40};
+     for(let t=0;t<12;t++){
+      const hit=scan.words.find((w,i)=>!drop.has(i)&&w.x<box.x+box.w&&w.x+w.w>box.x&&w.y<box.y+box.h&&w.y+w.h>box.y);
+      if(!hit)break;
+      box={...box,y:hit.y+hit.h+6};
+     }
+    }
     return <div key={g.id} className="naCheck" style={bx(box)}><button type="button" onClick={()=>check(g.id)}>Prüfen ✓</button><output aria-live="polite">{done?(allRight?'✓ Richtig!':'Noch einmal'):''}</output></div>;
    })}
   </div>
