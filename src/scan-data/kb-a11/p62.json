@@ -1696,7 +1696,9 @@
       "x": 469,
       "y": 1198,
       "w": 18,
-      "h": 19
+      "h": 19,
+      "name": "f5a-1",
+      "value": "f5a-1a"
     },
     {
       "id": "f5a-1b",
@@ -1707,7 +1709,9 @@
       "x": 546,
       "y": 1197,
       "w": 18,
-      "h": 19
+      "h": 19,
+      "name": "f5a-1",
+      "value": "f5a-1b"
     },
     {
       "id": "f5a-2a",
@@ -1718,7 +1722,9 @@
       "x": 448,
       "y": 1223,
       "w": 19,
-      "h": 19
+      "h": 19,
+      "name": "f5a-2",
+      "value": "f5a-2a"
     },
     {
       "id": "f5a-2b",
@@ -1729,7 +1735,9 @@
       "x": 571,
       "y": 1222,
       "w": 18,
-      "h": 19
+      "h": 19,
+      "name": "f5a-2",
+      "value": "f5a-2b"
     },
     {
       "id": "f5a-3a",
@@ -1740,7 +1748,9 @@
       "x": 433,
       "y": 1249,
       "w": 18,
-      "h": 18
+      "h": 18,
+      "name": "f5a-3",
+      "value": "f5a-3a"
     },
     {
       "id": "f5a-3b",
@@ -1751,7 +1761,9 @@
       "x": 583,
       "y": 1247,
       "w": 18,
-      "h": 19
+      "h": 19,
+      "name": "f5a-3",
+      "value": "f5a-3b"
     },
     {
       "id": "f5a-4a",
@@ -1762,7 +1774,9 @@
       "x": 488,
       "y": 1274,
       "w": 19,
-      "h": 18
+      "h": 18,
+      "name": "f5a-4",
+      "value": "f5a-4a"
     },
     {
       "id": "f5a-4b",
@@ -1773,7 +1787,9 @@
       "x": 639,
       "y": 1271,
       "w": 19,
-      "h": 19
+      "h": 19,
+      "name": "f5a-4",
+      "value": "f5a-4b"
     },
     {
       "id": "f5a-5a",
@@ -1784,7 +1800,9 @@
       "x": 346,
       "y": 1301,
       "w": 19,
-      "h": 18
+      "h": 18,
+      "name": "f5a-5",
+      "value": "f5a-5a"
     },
     {
       "id": "f5a-5b",
@@ -1795,7 +1813,9 @@
       "x": 512,
       "y": 1298,
       "w": 19,
-      "h": 19
+      "h": 19,
+      "name": "f5a-5",
+      "value": "f5a-5b"
     },
     {
       "id": "f5a-6a",
@@ -1806,7 +1826,9 @@
       "x": 367,
       "y": 1326,
       "w": 19,
-      "h": 18
+      "h": 18,
+      "name": "f5a-6",
+      "value": "f5a-6a"
     },
     {
       "id": "f5a-6b",
@@ -1817,7 +1839,9 @@
       "x": 537,
       "y": 1323,
       "w": 19,
-      "h": 19
+      "h": 19,
+      "name": "f5a-6",
+      "value": "f5a-6b"
     }
   ],
   "audio": [],
@@ -1835,7 +1859,8 @@
       "All printed words reviewed at 2x-4x (tesseract on zoomed crops + connected-component pixel measurement): Bildlexikon captions (interpunct forms fern·sehen, ein·kaufen, auf·räumen kept as printed), task 3 heading and instruction, the full Terminkalender graphic (red stamp \"MONTAG 3. JUNI\" - slightly rotated, boxes approximate; printed time column 9-21 Uhr; printed blue-script entries Büro, 13:15 Uhr Essen bei Barbara, ab 16:00 Uhr Cello üben, bis 20:30 Uhr Orchesterprobe; Notizen block with all five blue-script notes), the phone-call example dialogue, the GRAMMATIK mini-box (von 9 Uhr bis 13 Uhr / ab 9 Uhr / jetzt 9 Uhr; arrows and x timeline marks excluded as graphics), task 4 heading and instruction, task 5 heading and 5a instruction (page reference \"63\" kept as a word), and all six 5a rows.",
       "Excluded per policy: AB margin tabs, red task numerals 3/4/5, item numerals 1-6, photo strip and photo of Anja, spiral binding, calendar doodles (cello, chairs, gift), footer (zweiundsechzig/62), Modul-4 tab, GRAMMATIK vertical tab, bullet squares/triangles, ellipses.",
       "5a answers verified against the official Hueber key (Lektion 11, Kursbuch 5a): 1 bekommt, 2 ein Paar, 3 Dienstreise, 4 nicht so gut, 5 am Vormittag, 6 eine Freundin. One correct option per row, so radios in one group task5a (same convention as p58 task3b).",
-      "No audio markers on the page."
+      "No audio markers on the page.",
+      "Integration gate supplied explicit radio question names and option values for task5a. Answers and coordinates unchanged."
     ]
   }
 }
