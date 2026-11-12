@@ -2,6 +2,8 @@ import {ClipMarkers} from './ClipMarkers';
 import {NativePage} from './NativePage';
 import {NativePilot} from './NativePilot';
 import {NativeKB12} from '../native-kb12/NativeKB12';
+import {NativeAB11Lesson9Start} from '../native-ab11/NativeAB11Lesson9Start';
+import {NativeAB11Lesson8Close} from '../native-ab11/NativeAB11Lesson8Close';
 import {NativeAB11Lesson8Start} from '../native-ab11/NativeAB11Lesson8Start';
 import {NativeAB11Lesson7Close} from '../native-ab11/NativeAB11Lesson7Close';
 import {NativeAB11Next45} from '../native-ab11/NativeAB11Next45';
@@ -16,7 +18,7 @@ import {scanData} from '../scan-data/registry';
 import {WordBank} from '../exercises/WordBank';
 import {RatingDot} from '../persistence/RatingDot';
 import {TaskControl, TaskFeedback, TaskMode} from '../exercises/CustomTasks';
-import {createElement, memo, Fragment, useLayoutEffect} from 'react';
+import {createElement, memo, useLayoutEffect} from 'react';
 import type {ReactNode} from 'react';
 import {CoverSocials} from './CoverSocials';
 import {SelectionControls} from '../meanings/SelectionControls';
@@ -51,6 +53,8 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   if(tag === 'NativePage')return createElement(NativePage,{key,book:attrs.book,page:attrs.page});
   if(tag === 'NativePilot')return createElement(NativePilot,{key,page:attrs.page});
   if(tag === 'NativeKB12')return createElement(NativeKB12,{key,page:attrs.page});
+  if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['65','66','67'].includes(String(attrs.page)))return createElement(NativeAB11Lesson9Start,{key,page:String(attrs.page)});
+  if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['62','63','64'].includes(String(attrs.page)))return createElement(NativeAB11Lesson8Close,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['60','61'].includes(String(attrs.page)))return createElement(NativeAB11Lesson8Start,{key,page:String(attrs.page)});
   if(tag === 'NativeAB12')return createElement(NativeAB12,{key,page:attrs.page});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['57','58','59'].includes(String(attrs.page)))return createElement(NativeAB11Lesson7Close,{key,page:String(attrs.page)});
@@ -129,8 +133,7 @@ export const BookMarkup = memo(function BookMarkup({nodes, quizEnabled = false}:
     return () => {observer.disconnect();document.body.classList.remove('readerSplitControls');};
   }, [nodes]);
   return <>{nodes.map((node, i) => {
-    if (typeof node !== 'string' && node[1].class === 'controls') return render([node[0],node[1],node[2].filter(child => !navigation.includes(child))], i, null, quizEnabled);
-    if (typeof node !== 'string' && node[0] === 'header' && navigation.length) return <Fragment key={i}>{render(node, i, null, quizEnabled)}<nav className="readerPageNavigation" aria-label="Page navigation">{navigation.map((child, n) => render(child, `page-nav-${n}`, null, quizEnabled))}</nav></Fragment>;
+    if (typeof node !== 'string' && node[1].class === 'controls') return <nav key={i} className="controls"><div className="readerPageNavigation" aria-label="Page navigation">{navigation.map((child, n) => render(child, `page-nav-${n}`, null, quizEnabled))}</div><div className="readerToolRow">{node[2].filter(child => !navigation.includes(child)).map((child,n) => render(child, `bottom-tool-${n}`, null, quizEnabled))}</div></nav>;
     return render(node, i, null, quizEnabled);
   })}</>;
 });
