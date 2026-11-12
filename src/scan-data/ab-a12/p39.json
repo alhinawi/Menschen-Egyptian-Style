@@ -1694,12 +1694,31 @@
   }
  ],
  "fields": [],
- "audio": [],
- "groups": [],
+ "audio": [
+  {
+   "id": "track18-1",
+   "src": "assets/ab-a12-track18.mp3",
+   "label": "CD2 · Track18",
+   "x": 24,
+   "y": 1013,
+   "w": 54,
+   "h": 22
+  }
+ ],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aussprache"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Audio marker 2.18 mapped from the printed CD icon; audio content was not listened to.",
+   "Training: Schreiben (free writing) and Aussprache 1/2 (stress marking, own-language words) are not mapped as fields.",
+   "Not marked verified."
+  ],
   "verifiedWords": 241,
-  "totalWords": 241,
-  "notes": []
+  "totalWords": 241
  }
 }
