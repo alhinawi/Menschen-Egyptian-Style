@@ -130,7 +130,7 @@ def build(p):
     outb=[]
     for seg in blocks:
         x0=min(w['x'] for w in seg);x1=max(w['x']+w['w'] for w in seg)
-        outb.append({'x':x0,'w':x1-x0,'cy':seg[0]['cy'],'f':seg[0]['f'],'b':seg[0]['b'],'sa':sans_ctx(a,S,x0,seg[0]['cy'],x1,seg[0]['f'],paper0),'ws':[{'t':w['t'],'c':w['c'],**({'ph':w['ph']} if 'ph' in w else {})} for w in seg]})
+        outb.append({'x':x0,'w':x1-x0,'cy':seg[0]['cy'],'f':seg[0]['f'],'b':seg[0]['b'],'sa':sans_ctx(a,S,x0,seg[0]['cy'],x1,seg[0]['f'],paper0),'ws':[{'t':clean_t(w['t']),'c':w['c'],**({'ph':w['ph']} if 'ph' in w else {})} for w in seg]})
     words=[w for w in words if not w.get('r')]
     checks={}
     for g in sorted({f['group'] for f in d['fields'] if f.get('answer') is not None}):
@@ -159,6 +159,11 @@ def sans_ctx(a,S,x0,cy,x1,f,paper0):
     sat=reg.max(axis=1)-reg.min(axis=1)
     col=(sat>28)&(np.abs(reg-paper0).sum(axis=1)>60)
     return 1 if col.mean()>0.35 else 0
+def clean_t(t):
+    import re
+    t=re.sub(r'^[\u201a,]+(?=[A-Za-zÄÖÜäöüß])','',t)
+    t=re.sub(r'([.!?])\1+$',r'\1',t)
+    return t
 def re_has(t):
     return any(c.isalnum() for c in t) or t.strip() in ('.',',','!','?',':','–','-','…')
 def apply_overrides(r,p):
