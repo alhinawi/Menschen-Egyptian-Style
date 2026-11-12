@@ -5,17 +5,20 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "test": "node tests/content.test.cjs",
-    "build": "vite build",
+    "build": "tailwindcss -i src/tailwind.css -o src/tailwind.gen.css --minify && vite build",
     "preview": "vite preview --host 127.0.0.1",
     "test:react": "node tests/react/foundation.cjs",
     "test:react:all": "node tests/react/run-all.cjs",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "tailwind:watch": "tailwindcss -i src/tailwind.css -o src/tailwind.gen.css --watch"
   },
   "devDependencies": {
+    "@tailwindcss/cli": "^4.3.5",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.3.0",
     "playwright": "^1.65.0",
+    "tailwindcss": "^4.3.5",
     "typescript": "^5.9.3",
     "vite": "^8.3.8"
   },
