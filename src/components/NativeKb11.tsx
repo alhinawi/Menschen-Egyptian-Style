@@ -37,7 +37,7 @@ function Inner({data}:{data:NativePage}){
     return <input {...common} type="text" autoComplete="off" maxLength={f.maxlen||undefined} inputMode={f.maxlen===1?"numeric":undefined} value={v[f.id]||''} onChange={e=>set(f.id,e.target.value)} style={{...pos(f.x,f.y,f.w,f.h),fontSize:Math.min(f.h*0.8,22)/W*100+'cqw'}}/>})}
    <ClipMarkers book="kb-a11" page={data.page}/>
    {data.audio.map(a=><button key={a.id} data-audio-src={a.src} className="nkbListen" style={pos(a.x,a.y,a.w,a.h)} aria-label={a.label||('Originalaudio '+a.id)} onClick={()=>play(a.id)}/>)}
-   {groups.map(g=><div key={g} className="nkbCheck" style={checkPos(g)}><button onClick={()=>grade(g)}>Prüfen ✓</button><output>{data.fields.filter(f=>f.group===g&&f.answer!==undefined).every(f=>res[f.id]!==undefined)?(data.fields.filter(f=>f.group===g&&f.answer!==undefined).every(f=>res[f.id])?'✓ Richtig!':'Noch einmal'):''}</output></div>)}
+   {groups.map(g=><div key={g} className={"nkbCheck"+(data.compact?.includes(g)?" nkbCompact":"")} style={checkPos(g)}><button onClick={()=>grade(g)}>Prüfen ✓</button><output>{data.fields.filter(f=>f.group===g&&f.answer!==undefined).every(f=>res[f.id]!==undefined)?(data.fields.filter(f=>f.group===g&&f.answer!==undefined).every(f=>res[f.id])?'✓ Richtig!':'Noch einmal'):''}</output></div>)}
   </div>
   {data.audio.length>0&&<div className="nkbAudio">{data.audio.map(a=><label key={a.id}><span>{a.label||a.id}</span><audio ref={el=>{players.current[a.id]=el}} controls preload="none" src={a.src}/></label>)}</div>}
  </div>;
