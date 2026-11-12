@@ -23,7 +23,12 @@ def build(p):
         m=dl==i
         if False:work[ndi.binary_dilation(m,iterations=6)]=paper0
     words=[];
+    _kf=f'{ROOT}/src/native-kb11/overrides/p{p}.json';_keep=json.load(open(_kf)).get('keep',[]) if os.path.exists(_kf) else []
+    def _kept(wd):
+        cx=wd['x']+wd['w']/2;cy=wd['y']+wd['h']/2
+        return any(k[0]<=cx<=k[2] and k[1]<=cy<=k[3] for k in _keep)
     for wd in d['words']:
+        if _kept(wd):continue
         x,y,w,h=[round(v*S) for v in(wd['x'],wd['y'],wd['w'],wd['h'])]
         t=wd['text']
         x0,y0,x1,y1=max(0,x-2),max(0,y-2),min(W,x+w+2),min(H,y+h+2)
