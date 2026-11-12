@@ -2113,26 +2113,7 @@
    "h": 24
   }
  ],
- "audio": [
-  {
-   "id": "track30-1",
-   "src": "assets/ab-a12-track30.mp3",
-   "label": "CD2 · Track30",
-   "x": 49,
-   "y": 815,
-   "w": 36,
-   "h": 22
-  },
-  {
-   "id": "track30-2",
-   "src": "assets/ab-a12-track30.mp3",
-   "label": "CD2 · Track30",
-   "x": 49,
-   "y": 914,
-   "w": 36,
-   "h": 22
-  }
- ],
+ "audio": [],
  "groups": [
   {
    "id": "g1",
@@ -2147,7 +2128,8 @@
   "status": "partial",
   "notes": [
    "Answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 21, Aufgaben 8, 9).",
-   "Ex 10 (strike-through), 11 and 12 (listening, matching lines) not mapped; audio 2 30 icons mapped, audio not listened to. Handwritten text not fields."
+   "Ex 10 (strike-through), 11 and 12 (listening, matching lines) not mapped; audio 2 30 icons mapped, audio not listened to. Handwritten text not fields.",
+   "Audio markers for icon 2 30 removed: no matching track file exists in assets (ab-a12-track30.mp3 missing)."
   ],
   "verifiedWords": 285,
   "totalWords": 285
