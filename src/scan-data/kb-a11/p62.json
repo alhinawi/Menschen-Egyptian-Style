@@ -1,0 +1,1841 @@
+{
+  "book": "kb-a11",
+  "page": 62,
+  "image": "assets/kb-a11-p62.png",
+  "width": 1072,
+  "height": 1518,
+  "words": [
+    {
+      "text": "Hausaufgaben",
+      "x": 92,
+      "y": 183,
+      "w": 80,
+      "h": 16
+    },
+    {
+      "text": "machen",
+      "x": 178,
+      "y": 182,
+      "w": 43,
+      "h": 12
+    },
+    {
+      "text": "E-Mails",
+      "x": 250,
+      "y": 181,
+      "w": 41,
+      "h": 13
+    },
+    {
+      "text": "schreiben",
+      "x": 295,
+      "y": 180,
+      "w": 56,
+      "h": 13
+    },
+    {
+      "text": "fern·sehen",
+      "x": 432,
+      "y": 177,
+      "w": 60,
+      "h": 20
+    },
+    {
+      "text": "ein·kaufen",
+      "x": 626,
+      "y": 174,
+      "w": 68,
+      "h": 20
+    },
+    {
+      "text": "schlafen",
+      "x": 804,
+      "y": 173,
+      "w": 52,
+      "h": 18
+    },
+    {
+      "text": "auf·räumen",
+      "x": 970,
+      "y": 169,
+      "w": 66,
+      "h": 21
+    },
+    {
+      "text": "Was",
+      "x": 212,
+      "y": 244,
+      "w": 38,
+      "h": 14
+    },
+    {
+      "text": "macht",
+      "x": 258,
+      "y": 241,
+      "w": 59,
+      "h": 17
+    },
+    {
+      "text": "Anja",
+      "x": 322,
+      "y": 241,
+      "w": 43,
+      "h": 22
+    },
+    {
+      "text": "heute",
+      "x": 374,
+      "y": 240,
+      "w": 64,
+      "h": 16
+    },
+    {
+      "text": "Lesen",
+      "x": 214,
+      "y": 270,
+      "w": 44,
+      "h": 13
+    },
+    {
+      "text": "Sie",
+      "x": 265,
+      "y": 268,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "den",
+      "x": 296,
+      "y": 267,
+      "w": 29,
+      "h": 15
+    },
+    {
+      "text": "Terminkalender",
+      "x": 331,
+      "y": 265,
+      "w": 134,
+      "h": 16
+    },
+    {
+      "text": "Spielen",
+      "x": 473,
+      "y": 265,
+      "w": 59,
+      "h": 21
+    },
+    {
+      "text": "Sie",
+      "x": 539,
+      "y": 265,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "dann",
+      "x": 570,
+      "y": 264,
+      "w": 40,
+      "h": 15
+    },
+    {
+      "text": "ein",
+      "x": 618,
+      "y": 264,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "Telefongespräch",
+      "x": 649,
+      "y": 261,
+      "w": 135,
+      "h": 22
+    },
+    {
+      "text": "mit",
+      "x": 792,
+      "y": 261,
+      "w": 28,
+      "h": 14
+    },
+    {
+      "text": "Anja",
+      "x": 826,
+      "y": 260,
+      "w": 43,
+      "h": 20
+    },
+    {
+      "text": "MONTAG",
+      "x": 266,
+      "y": 364,
+      "w": 82,
+      "h": 22
+    },
+    {
+      "text": "3.",
+      "x": 380,
+      "y": 364,
+      "w": 26,
+      "h": 20
+    },
+    {
+      "text": "JUNI",
+      "x": 414,
+      "y": 362,
+      "w": 44,
+      "h": 20
+    },
+    {
+      "text": "Termine",
+      "x": 258,
+      "y": 403,
+      "w": 77,
+      "h": 15
+    },
+    {
+      "text": "9",
+      "x": 262,
+      "y": 434,
+      "w": 7,
+      "h": 10
+    },
+    {
+      "text": "Uhr",
+      "x": 269,
+      "y": 433,
+      "w": 22,
+      "h": 11
+    },
+    {
+      "text": "10",
+      "x": 265,
+      "y": 456,
+      "w": 12,
+      "h": 10
+    },
+    {
+      "text": "Uhr",
+      "x": 281,
+      "y": 455,
+      "w": 18,
+      "h": 11
+    },
+    {
+      "text": "11",
+      "x": 265,
+      "y": 478,
+      "w": 10,
+      "h": 10
+    },
+    {
+      "text": "Uhr",
+      "x": 282,
+      "y": 477,
+      "w": 18,
+      "h": 11
+    },
+    {
+      "text": "12",
+      "x": 266,
+      "y": 501,
+      "w": 12,
+      "h": 10
+    },
+    {
+      "text": "Uhr",
+      "x": 282,
+      "y": 499,
+      "w": 18,
+      "h": 11
+    },
+    {
+      "text": "13",
+      "x": 267,
+      "y": 523,
+      "w": 12,
+      "h": 10
+    },
+    {
+      "text": "Uhr",
+      "x": 283,
+      "y": 522,
+      "w": 18,
+      "h": 11
+    },
+    {
+      "text": "14",
+      "x": 267,
+      "y": 545,
+      "w": 12,
+      "h": 10
+    },
+    {
+      "text": "Uhr",
+      "x": 284,
+      "y": 544,
+      "w": 18,
+      "h": 11
+    },
+    {
+      "text": "15",
+      "x": 268,
+      "y": 567,
+      "w": 12,
+      "h": 10
+    },
+    {
+      "text": "Uhr",
+      "x": 285,
+      "y": 566,
+      "w": 18,
+      "h": 11
+    },
+    {
+      "text": "16",
+      "x": 269,
+      "y": 590,
+      "w": 12,
+      "h": 10
+    },
+    {
+      "text": "Uhr",
+      "x": 285,
+      "y": 587,
+      "w": 18,
+      "h": 16
+    },
+    {
+      "text": "17",
+      "x": 269,
+      "y": 611,
+      "w": 12,
+      "h": 10
+    },
+    {
+      "text": "Uhr",
+      "x": 286,
+      "y": 611,
+      "w": 18,
+      "h": 10
+    },
+    {
+      "text": "18",
+      "x": 270,
+      "y": 635,
+      "w": 12,
+      "h": 10
+    },
+    {
+      "text": "Uhr",
+      "x": 287,
+      "y": 634,
+      "w": 17,
+      "h": 10
+    },
+    {
+      "text": "19",
+      "x": 271,
+      "y": 658,
+      "w": 12,
+      "h": 10
+    },
+    {
+      "text": "Uhr",
+      "x": 287,
+      "y": 657,
+      "w": 17,
+      "h": 11
+    },
+    {
+      "text": "20",
+      "x": 270,
+      "y": 680,
+      "w": 14,
+      "h": 11
+    },
+    {
+      "text": "Uhr",
+      "x": 288,
+      "y": 679,
+      "w": 18,
+      "h": 12
+    },
+    {
+      "text": "21",
+      "x": 271,
+      "y": 703,
+      "w": 12,
+      "h": 10
+    },
+    {
+      "text": "Uhr",
+      "x": 289,
+      "y": 701,
+      "w": 18,
+      "h": 11
+    },
+    {
+      "text": "Büro",
+      "x": 342,
+      "y": 452,
+      "w": 52,
+      "h": 16
+    },
+    {
+      "text": "13:15",
+      "x": 350,
+      "y": 517,
+      "w": 38,
+      "h": 12
+    },
+    {
+      "text": "Uhr",
+      "x": 392,
+      "y": 518,
+      "w": 21,
+      "h": 10
+    },
+    {
+      "text": "Essen",
+      "x": 419,
+      "y": 517,
+      "w": 28,
+      "h": 11
+    },
+    {
+      "text": "bei",
+      "x": 454,
+      "y": 518,
+      "w": 13,
+      "h": 9
+    },
+    {
+      "text": "Barbara",
+      "x": 474,
+      "y": 516,
+      "w": 38,
+      "h": 11
+    },
+    {
+      "text": "ab",
+      "x": 334,
+      "y": 588,
+      "w": 10,
+      "h": 9
+    },
+    {
+      "text": "16:00",
+      "x": 352,
+      "y": 582,
+      "w": 34,
+      "h": 14
+    },
+    {
+      "text": "Uhr",
+      "x": 393,
+      "y": 585,
+      "w": 21,
+      "h": 9
+    },
+    {
+      "text": "Cello",
+      "x": 420,
+      "y": 584,
+      "w": 26,
+      "h": 10
+    },
+    {
+      "text": "üben",
+      "x": 452,
+      "y": 584,
+      "w": 20,
+      "h": 9
+    },
+    {
+      "text": "bis",
+      "x": 353,
+      "y": 655,
+      "w": 12,
+      "h": 10
+    },
+    {
+      "text": "20:30",
+      "x": 372,
+      "y": 654,
+      "w": 38,
+      "h": 11
+    },
+    {
+      "text": "Uhr",
+      "x": 415,
+      "y": 653,
+      "w": 20,
+      "h": 10
+    },
+    {
+      "text": "Orchesterprobe",
+      "x": 441,
+      "y": 651,
+      "w": 81,
+      "h": 11
+    },
+    {
+      "text": "Notizen",
+      "x": 262,
+      "y": 738,
+      "w": 83,
+      "h": 23
+    },
+    {
+      "text": "Dr.",
+      "x": 280,
+      "y": 774,
+      "w": 15,
+      "h": 11
+    },
+    {
+      "text": "Weber",
+      "x": 303,
+      "y": 773,
+      "w": 36,
+      "h": 10
+    },
+    {
+      "text": "anrufen",
+      "x": 346,
+      "y": 770,
+      "w": 48,
+      "h": 16
+    },
+    {
+      "text": "Nora",
+      "x": 282,
+      "y": 798,
+      "w": 23,
+      "h": 10
+    },
+    {
+      "text": "und",
+      "x": 312,
+      "y": 796,
+      "w": 17,
+      "h": 10
+    },
+    {
+      "text": "Marc",
+      "x": 335,
+      "y": 796,
+      "w": 30,
+      "h": 10
+    },
+    {
+      "text": "anrufen",
+      "x": 371,
+      "y": 794,
+      "w": 38,
+      "h": 15
+    },
+    {
+      "text": "Firma",
+      "x": 276,
+      "y": 818,
+      "w": 36,
+      "h": 18
+    },
+    {
+      "text": "Bergmair",
+      "x": 315,
+      "y": 816,
+      "w": 54,
+      "h": 23
+    },
+    {
+      "text": "Küchenschrank",
+      "x": 387,
+      "y": 817,
+      "w": 83,
+      "h": 11
+    },
+    {
+      "text": "fertig",
+      "x": 469,
+      "y": 811,
+      "w": 47,
+      "h": 23
+    },
+    {
+      "text": "Geschenk",
+      "x": 283,
+      "y": 844,
+      "w": 59,
+      "h": 11
+    },
+    {
+      "text": "für",
+      "x": 348,
+      "y": 842,
+      "w": 15,
+      "h": 15
+    },
+    {
+      "text": "Tante",
+      "x": 369,
+      "y": 842,
+      "w": 29,
+      "h": 11
+    },
+    {
+      "text": "Betti",
+      "x": 404,
+      "y": 840,
+      "w": 28,
+      "h": 12
+    },
+    {
+      "text": "kaufen",
+      "x": 439,
+      "y": 839,
+      "w": 35,
+      "h": 15
+    },
+    {
+      "text": "Wein",
+      "x": 283,
+      "y": 868,
+      "w": 26,
+      "h": 10
+    },
+    {
+      "text": "für",
+      "x": 316,
+      "y": 867,
+      "w": 16,
+      "h": 15
+    },
+    {
+      "text": "die",
+      "x": 338,
+      "y": 867,
+      "w": 16,
+      "h": 10
+    },
+    {
+      "text": "Party",
+      "x": 353,
+      "y": 865,
+      "w": 40,
+      "h": 17
+    },
+    {
+      "text": "kaufen",
+      "x": 395,
+      "y": 864,
+      "w": 35,
+      "h": 15
+    },
+    {
+      "text": "Hallo",
+      "x": 781,
+      "y": 311,
+      "w": 44,
+      "h": 15
+    },
+    {
+      "text": "Anja",
+      "x": 831,
+      "y": 311,
+      "w": 44,
+      "h": 19
+    },
+    {
+      "text": "was",
+      "x": 780,
+      "y": 342,
+      "w": 30,
+      "h": 10
+    },
+    {
+      "text": "machst",
+      "x": 818,
+      "y": 336,
+      "w": 61,
+      "h": 15
+    },
+    {
+      "text": "du",
+      "x": 885,
+      "y": 335,
+      "w": 20,
+      "h": 15
+    },
+    {
+      "text": "gerade",
+      "x": 780,
+      "y": 362,
+      "w": 65,
+      "h": 21
+    },
+    {
+      "text": "Ich",
+      "x": 782,
+      "y": 387,
+      "w": 26,
+      "h": 15
+    },
+    {
+      "text": "frühstücke",
+      "x": 815,
+      "y": 386,
+      "w": 91,
+      "h": 16
+    },
+    {
+      "text": "gerade",
+      "x": 781,
+      "y": 412,
+      "w": 61,
+      "h": 21
+    },
+    {
+      "text": "Um",
+      "x": 850,
+      "y": 413,
+      "w": 28,
+      "h": 13
+    },
+    {
+      "text": "Viertel",
+      "x": 885,
+      "y": 411,
+      "w": 57,
+      "h": 15
+    },
+    {
+      "text": "vor",
+      "x": 948,
+      "y": 415,
+      "w": 27,
+      "h": 9
+    },
+    {
+      "text": "neun",
+      "x": 982,
+      "y": 415,
+      "w": 43,
+      "h": 10
+    },
+    {
+      "text": "gehe",
+      "x": 781,
+      "y": 438,
+      "w": 39,
+      "h": 20
+    },
+    {
+      "text": "ich",
+      "x": 827,
+      "y": 437,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "ins",
+      "x": 859,
+      "y": 442,
+      "w": 24,
+      "h": 9
+    },
+    {
+      "text": "Und",
+      "x": 783,
+      "y": 475,
+      "w": 34,
+      "h": 15
+    },
+    {
+      "text": "was",
+      "x": 824,
+      "y": 480,
+      "w": 30,
+      "h": 10
+    },
+    {
+      "text": "machst",
+      "x": 861,
+      "y": 474,
+      "w": 61,
+      "h": 15
+    },
+    {
+      "text": "du",
+      "x": 928,
+      "y": 473,
+      "w": 20,
+      "h": 15
+    },
+    {
+      "text": "heute",
+      "x": 955,
+      "y": 473,
+      "w": 48,
+      "h": 15
+    },
+    {
+      "text": "noch",
+      "x": 784,
+      "y": 506,
+      "w": 46,
+      "h": 10
+    },
+    {
+      "text": "Ich",
+      "x": 784,
+      "y": 526,
+      "w": 26,
+      "h": 15
+    },
+    {
+      "text": "rufe",
+      "x": 817,
+      "y": 525,
+      "w": 34,
+      "h": 16
+    },
+    {
+      "text": "heute",
+      "x": 858,
+      "y": 525,
+      "w": 47,
+      "h": 15
+    },
+    {
+      "text": "noch",
+      "x": 912,
+      "y": 524,
+      "w": 41,
+      "h": 15
+    },
+    {
+      "text": "Frau",
+      "x": 960,
+      "y": 525,
+      "w": 38,
+      "h": 14
+    },
+    {
+      "text": "Dr.",
+      "x": 785,
+      "y": 553,
+      "w": 22,
+      "h": 13
+    },
+    {
+      "text": "Weber",
+      "x": 814,
+      "y": 551,
+      "w": 52,
+      "h": 15
+    },
+    {
+      "text": "an",
+      "x": 873,
+      "y": 555,
+      "w": 20,
+      "h": 10
+    },
+    {
+      "text": "Heute",
+      "x": 923,
+      "y": 551,
+      "w": 49,
+      "h": 13
+    },
+    {
+      "text": "Abend",
+      "x": 978,
+      "y": 548,
+      "w": 54,
+      "h": 15
+    },
+    {
+      "text": "habe",
+      "x": 784,
+      "y": 576,
+      "w": 39,
+      "h": 15
+    },
+    {
+      "text": "ich",
+      "x": 830,
+      "y": 576,
+      "w": 26,
+      "h": 15
+    },
+    {
+      "text": "von",
+      "x": 861,
+      "y": 580,
+      "w": 32,
+      "h": 10
+    },
+    {
+      "text": "sechs",
+      "x": 899,
+      "y": 575,
+      "w": 43,
+      "h": 15
+    },
+    {
+      "text": "bis",
+      "x": 948,
+      "y": 574,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "halb",
+      "x": 978,
+      "y": 573,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "neun",
+      "x": 785,
+      "y": 607,
+      "w": 43,
+      "h": 10
+    },
+    {
+      "text": "Orchesterprobe",
+      "x": 834,
+      "y": 599,
+      "w": 135,
+      "h": 20
+    },
+    {
+      "text": "von",
+      "x": 792,
+      "y": 656,
+      "w": 28,
+      "h": 10
+    },
+    {
+      "text": "9",
+      "x": 826,
+      "y": 653,
+      "w": 8,
+      "h": 13
+    },
+    {
+      "text": "Uhr",
+      "x": 839,
+      "y": 651,
+      "w": 30,
+      "h": 14
+    },
+    {
+      "text": "bis",
+      "x": 976,
+      "y": 649,
+      "w": 22,
+      "h": 14
+    },
+    {
+      "text": "13",
+      "x": 1003,
+      "y": 650,
+      "w": 14,
+      "h": 13
+    },
+    {
+      "text": "Uhr",
+      "x": 1023,
+      "y": 648,
+      "w": 27,
+      "h": 14
+    },
+    {
+      "text": "ab",
+      "x": 794,
+      "y": 695,
+      "w": 16,
+      "h": 14
+    },
+    {
+      "text": "9",
+      "x": 815,
+      "y": 696,
+      "w": 8,
+      "h": 13
+    },
+    {
+      "text": "Uhr",
+      "x": 829,
+      "y": 695,
+      "w": 30,
+      "h": 14
+    },
+    {
+      "text": "jetzt",
+      "x": 793,
+      "y": 736,
+      "w": 30,
+      "h": 16
+    },
+    {
+      "text": "9",
+      "x": 902,
+      "y": 734,
+      "w": 7,
+      "h": 11
+    },
+    {
+      "text": "Uhr",
+      "x": 914,
+      "y": 733,
+      "w": 25,
+      "h": 12
+    },
+    {
+      "text": "Was",
+      "x": 223,
+      "y": 988,
+      "w": 38,
+      "h": 15
+    },
+    {
+      "text": "machen",
+      "x": 269,
+      "y": 985,
+      "w": 71,
+      "h": 17
+    },
+    {
+      "text": "Sie",
+      "x": 348,
+      "y": 985,
+      "w": 27,
+      "h": 16
+    },
+    {
+      "text": "heute",
+      "x": 383,
+      "y": 984,
+      "w": 54,
+      "h": 16
+    },
+    {
+      "text": "nach",
+      "x": 445,
+      "y": 983,
+      "w": 43,
+      "h": 16
+    },
+    {
+      "text": "dem",
+      "x": 496,
+      "y": 983,
+      "w": 39,
+      "h": 16
+    },
+    {
+      "text": "Deutschkurs",
+      "x": 545,
+      "y": 981,
+      "w": 127,
+      "h": 17
+    },
+    {
+      "text": "Sehen",
+      "x": 224,
+      "y": 1013,
+      "w": 49,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 280,
+      "y": 1013,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "das",
+      "x": 311,
+      "y": 1012,
+      "w": 26,
+      "h": 15
+    },
+    {
+      "text": "Bildlexikon",
+      "x": 346,
+      "y": 1010,
+      "w": 91,
+      "h": 16
+    },
+    {
+      "text": "zwei",
+      "x": 445,
+      "y": 1010,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "Minuten",
+      "x": 491,
+      "y": 1010,
+      "w": 70,
+      "h": 14
+    },
+    {
+      "text": "lang",
+      "x": 569,
+      "y": 1008,
+      "w": 34,
+      "h": 21
+    },
+    {
+      "text": "an",
+      "x": 610,
+      "y": 1013,
+      "w": 25,
+      "h": 10
+    },
+    {
+      "text": "Schließen",
+      "x": 642,
+      "y": 1006,
+      "w": 80,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 730,
+      "y": 1007,
+      "w": 23,
+      "h": 14
+    },
+    {
+      "text": "dann",
+      "x": 760,
+      "y": 1006,
+      "w": 41,
+      "h": 15
+    },
+    {
+      "text": "Ihr",
+      "x": 810,
+      "y": 1005,
+      "w": 22,
+      "h": 15
+    },
+    {
+      "text": "Buch",
+      "x": 840,
+      "y": 1004,
+      "w": 45,
+      "h": 15
+    },
+    {
+      "text": "Ihre",
+      "x": 225,
+      "y": 1038,
+      "w": 32,
+      "h": 15
+    },
+    {
+      "text": "Kursleiterin",
+      "x": 264,
+      "y": 1037,
+      "w": 98,
+      "h": 16
+    },
+    {
+      "text": "Ihr",
+      "x": 386,
+      "y": 1036,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "Kursleiter",
+      "x": 416,
+      "y": 1035,
+      "w": 81,
+      "h": 15
+    },
+    {
+      "text": "nennt",
+      "x": 505,
+      "y": 1038,
+      "w": 49,
+      "h": 12
+    },
+    {
+      "text": "die",
+      "x": 561,
+      "y": 1034,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "Tätigkeiten",
+      "x": 591,
+      "y": 1033,
+      "w": 101,
+      "h": 21
+    },
+    {
+      "text": "Machen",
+      "x": 700,
+      "y": 1031,
+      "w": 64,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 771,
+      "y": 1031,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "das",
+      "x": 802,
+      "y": 1030,
+      "w": 27,
+      "h": 15
+    },
+    {
+      "text": "heute",
+      "x": 837,
+      "y": 1030,
+      "w": 55,
+      "h": 15
+    },
+    {
+      "text": "Dann",
+      "x": 225,
+      "y": 1064,
+      "w": 41,
+      "h": 14
+    },
+    {
+      "text": "stehen",
+      "x": 274,
+      "y": 1062,
+      "w": 55,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 336,
+      "y": 1062,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "auf",
+      "x": 367,
+      "y": 1061,
+      "w": 30,
+      "h": 15
+    },
+    {
+      "text": "Was",
+      "x": 224,
+      "y": 1126,
+      "w": 38,
+      "h": 15
+    },
+    {
+      "text": "hast",
+      "x": 271,
+      "y": 1124,
+      "w": 40,
+      "h": 16
+    },
+    {
+      "text": "du",
+      "x": 318,
+      "y": 1123,
+      "w": 22,
+      "h": 17
+    },
+    {
+      "text": "heute",
+      "x": 349,
+      "y": 1123,
+      "w": 54,
+      "h": 16
+    },
+    {
+      "text": "gemacht",
+      "x": 409,
+      "y": 1122,
+      "w": 93,
+      "h": 23
+    },
+    {
+      "text": "Lesen",
+      "x": 227,
+      "y": 1166,
+      "w": 44,
+      "h": 13
+    },
+    {
+      "text": "Sie",
+      "x": 278,
+      "y": 1164,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "die",
+      "x": 309,
+      "y": 1163,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "E-Mails",
+      "x": 342,
+      "y": 1162,
+      "w": 59,
+      "h": 15
+    },
+    {
+      "text": "auf",
+      "x": 408,
+      "y": 1161,
+      "w": 27,
+      "h": 15
+    },
+    {
+      "text": "Seite",
+      "x": 441,
+      "y": 1162,
+      "w": 41,
+      "h": 15
+    },
+    {
+      "text": "63",
+      "x": 489,
+      "y": 1162,
+      "w": 19,
+      "h": 14
+    },
+    {
+      "text": "und",
+      "x": 515,
+      "y": 1160,
+      "w": 30,
+      "h": 15
+    },
+    {
+      "text": "kreuzen",
+      "x": 554,
+      "y": 1160,
+      "w": 64,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 625,
+      "y": 1160,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "an",
+      "x": 656,
+      "y": 1164,
+      "w": 25,
+      "h": 10
+    },
+    {
+      "text": "Was",
+      "x": 688,
+      "y": 1159,
+      "w": 33,
+      "h": 14
+    },
+    {
+      "text": "meinen",
+      "x": 729,
+      "y": 1158,
+      "w": 60,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 796,
+      "y": 1157,
+      "w": 33,
+      "h": 14
+    },
+    {
+      "text": "Anja",
+      "x": 249,
+      "y": 1201,
+      "w": 40,
+      "h": 16
+    },
+    {
+      "text": "ist",
+      "x": 294,
+      "y": 1205,
+      "w": 21,
+      "h": 12
+    },
+    {
+      "text": "schwanger",
+      "x": 321,
+      "y": 1201,
+      "w": 90,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 421,
+      "y": 1200,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "hat",
+      "x": 477,
+      "y": 1198,
+      "w": 45,
+      "h": 15
+    },
+    {
+      "text": "bekommt",
+      "x": 570,
+      "y": 1198,
+      "w": 80,
+      "h": 15
+    },
+    {
+      "text": "ein",
+      "x": 673,
+      "y": 1197,
+      "w": 26,
+      "h": 14
+    },
+    {
+      "text": "Baby",
+      "x": 706,
+      "y": 1196,
+      "w": 42,
+      "h": 20
+    },
+    {
+      "text": "Michi",
+      "x": 250,
+      "y": 1227,
+      "w": 48,
+      "h": 15
+    },
+    {
+      "text": "und",
+      "x": 305,
+      "y": 1226,
+      "w": 32,
+      "h": 15
+    },
+    {
+      "text": "Anja",
+      "x": 344,
+      "y": 1225,
+      "w": 40,
+      "h": 15
+    },
+    {
+      "text": "sind",
+      "x": 384,
+      "y": 1225,
+      "w": 42,
+      "h": 15
+    },
+    {
+      "text": "ein",
+      "x": 452,
+      "y": 1224,
+      "w": 40,
+      "h": 15
+    },
+    {
+      "text": "Paar",
+      "x": 507,
+      "y": 1225,
+      "w": 39,
+      "h": 13
+    },
+    {
+      "text": "Kollegen",
+      "x": 596,
+      "y": 1222,
+      "w": 78,
+      "h": 16
+    },
+    {
+      "text": "Michi",
+      "x": 250,
+      "y": 1252,
+      "w": 48,
+      "h": 15
+    },
+    {
+      "text": "ist",
+      "x": 305,
+      "y": 1252,
+      "w": 20,
+      "h": 14
+    },
+    {
+      "text": "auf",
+      "x": 332,
+      "y": 1250,
+      "w": 27,
+      "h": 15
+    },
+    {
+      "text": "einer",
+      "x": 363,
+      "y": 1251,
+      "w": 44,
+      "h": 14
+    },
+    {
+      "text": "Dienstreise",
+      "x": 459,
+      "y": 1249,
+      "w": 99,
+      "h": 15
+    },
+    {
+      "text": "Privatreise",
+      "x": 608,
+      "y": 1248,
+      "w": 96,
+      "h": 14
+    },
+    {
+      "text": "Michi",
+      "x": 251,
+      "y": 1277,
+      "w": 48,
+      "h": 15
+    },
+    {
+      "text": "findet",
+      "x": 306,
+      "y": 1276,
+      "w": 50,
+      "h": 15
+    },
+    {
+      "text": "seine",
+      "x": 363,
+      "y": 1277,
+      "w": 42,
+      "h": 14
+    },
+    {
+      "text": "Arbeit",
+      "x": 412,
+      "y": 1275,
+      "w": 53,
+      "h": 15
+    },
+    {
+      "text": "interessant",
+      "x": 514,
+      "y": 1275,
+      "w": 100,
+      "h": 14
+    },
+    {
+      "text": "nicht",
+      "x": 664,
+      "y": 1272,
+      "w": 44,
+      "h": 15
+    },
+    {
+      "text": "so",
+      "x": 715,
+      "y": 1277,
+      "w": 16,
+      "h": 9
+    },
+    {
+      "text": "gut",
+      "x": 737,
+      "y": 1275,
+      "w": 33,
+      "h": 16
+    },
+    {
+      "text": "Anja",
+      "x": 250,
+      "y": 1302,
+      "w": 40,
+      "h": 15
+    },
+    {
+      "text": "hat",
+      "x": 290,
+      "y": 1302,
+      "w": 30,
+      "h": 15
+    },
+    {
+      "text": "am",
+      "x": 347,
+      "y": 1301,
+      "w": 49,
+      "h": 15
+    },
+    {
+      "text": "Vormittag",
+      "x": 403,
+      "y": 1301,
+      "w": 86,
+      "h": 19
+    },
+    {
+      "text": "am",
+      "x": 546,
+      "y": 1303,
+      "w": 18,
+      "h": 12
+    },
+    {
+      "text": "Nachmittag",
+      "x": 569,
+      "y": 1298,
+      "w": 100,
+      "h": 20
+    },
+    {
+      "text": "gearbeitet",
+      "x": 691,
+      "y": 1297,
+      "w": 91,
+      "h": 21
+    },
+    {
+      "text": "Barbara",
+      "x": 251,
+      "y": 1328,
+      "w": 66,
+      "h": 15
+    },
+    {
+      "text": "ist",
+      "x": 324,
+      "y": 1328,
+      "w": 20,
+      "h": 14
+    },
+    {
+      "text": "eine",
+      "x": 392,
+      "y": 1327,
+      "w": 35,
+      "h": 14
+    },
+    {
+      "text": "Freundin",
+      "x": 435,
+      "y": 1325,
+      "w": 78,
+      "h": 15
+    },
+    {
+      "text": "eine",
+      "x": 562,
+      "y": 1325,
+      "w": 35,
+      "h": 14
+    },
+    {
+      "text": "Kollegin",
+      "x": 605,
+      "y": 1323,
+      "w": 69,
+      "h": 20
+    },
+    {
+      "text": "von",
+      "x": 697,
+      "y": 1328,
+      "w": 30,
+      "h": 9
+    },
+    {
+      "text": "Anja",
+      "x": 734,
+      "y": 1322,
+      "w": 43,
+      "h": 20
+    }
+  ],
+  "fields": [
+    {
+      "id": "f5a-1a",
+      "group": "task5a",
+      "kind": "radio",
+      "label": "5a-1: Anja ist schwanger. Sie ... ein Baby. - hat",
+      "answer": "false",
+      "x": 469,
+      "y": 1198,
+      "w": 18,
+      "h": 19
+    },
+    {
+      "id": "f5a-1b",
+      "group": "task5a",
+      "kind": "radio",
+      "label": "5a-1: Anja ist schwanger. Sie ... ein Baby. - bekommt",
+      "answer": "true",
+      "x": 546,
+      "y": 1197,
+      "w": 18,
+      "h": 19
+    },
+    {
+      "id": "f5a-2a",
+      "group": "task5a",
+      "kind": "radio",
+      "label": "5a-2: Michi und Anja sind ... - ein Paar",
+      "answer": "true",
+      "x": 448,
+      "y": 1223,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "id": "f5a-2b",
+      "group": "task5a",
+      "kind": "radio",
+      "label": "5a-2: Michi und Anja sind ... - Kollegen",
+      "answer": "false",
+      "x": 571,
+      "y": 1222,
+      "w": 18,
+      "h": 19
+    },
+    {
+      "id": "f5a-3a",
+      "group": "task5a",
+      "kind": "radio",
+      "label": "5a-3: Michi ist auf einer ... - Dienstreise",
+      "answer": "true",
+      "x": 433,
+      "y": 1249,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "f5a-3b",
+      "group": "task5a",
+      "kind": "radio",
+      "label": "5a-3: Michi ist auf einer ... - Privatreise",
+      "answer": "false",
+      "x": 583,
+      "y": 1247,
+      "w": 18,
+      "h": 19
+    },
+    {
+      "id": "f5a-4a",
+      "group": "task5a",
+      "kind": "radio",
+      "label": "5a-4: Michi findet seine Arbeit ... - interessant",
+      "answer": "false",
+      "x": 488,
+      "y": 1274,
+      "w": 19,
+      "h": 18
+    },
+    {
+      "id": "f5a-4b",
+      "group": "task5a",
+      "kind": "radio",
+      "label": "5a-4: Michi findet seine Arbeit ... - nicht so gut",
+      "answer": "true",
+      "x": 639,
+      "y": 1271,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "id": "f5a-5a",
+      "group": "task5a",
+      "kind": "radio",
+      "label": "5a-5: Anja hat ... gearbeitet. - am Vormittag",
+      "answer": "true",
+      "x": 346,
+      "y": 1301,
+      "w": 19,
+      "h": 18
+    },
+    {
+      "id": "f5a-5b",
+      "group": "task5a",
+      "kind": "radio",
+      "label": "5a-5: Anja hat ... gearbeitet. - am Nachmittag",
+      "answer": "false",
+      "x": 512,
+      "y": 1298,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "id": "f5a-6a",
+      "group": "task5a",
+      "kind": "radio",
+      "label": "5a-6: Barbara ist ... von Anja. - eine Freundin",
+      "answer": "true",
+      "x": 367,
+      "y": 1326,
+      "w": 19,
+      "h": 18
+    },
+    {
+      "id": "f5a-6b",
+      "group": "task5a",
+      "kind": "radio",
+      "label": "5a-6: Barbara ist ... von Anja. - eine Kollegin",
+      "answer": "false",
+      "x": 537,
+      "y": 1323,
+      "w": 19,
+      "h": 19
+    }
+  ],
+  "audio": [],
+  "groups": [
+    {
+      "id": "task5a",
+      "label": "5a"
+    }
+  ],
+  "review": {
+    "status": "verified",
+    "verifiedWords": 240,
+    "totalWords": 240,
+    "notes": [
+      "All printed words reviewed at 2x-4x (tesseract on zoomed crops + connected-component pixel measurement): Bildlexikon captions (interpunct forms fern·sehen, ein·kaufen, auf·räumen kept as printed), task 3 heading and instruction, the full Terminkalender graphic (red stamp \"MONTAG 3. JUNI\" - slightly rotated, boxes approximate; printed time column 9-21 Uhr; printed blue-script entries Büro, 13:15 Uhr Essen bei Barbara, ab 16:00 Uhr Cello üben, bis 20:30 Uhr Orchesterprobe; Notizen block with all five blue-script notes), the phone-call example dialogue, the GRAMMATIK mini-box (von 9 Uhr bis 13 Uhr / ab 9 Uhr / jetzt 9 Uhr; arrows and x timeline marks excluded as graphics), task 4 heading and instruction, task 5 heading and 5a instruction (page reference \"63\" kept as a word), and all six 5a rows.",
+      "Excluded per policy: AB margin tabs, red task numerals 3/4/5, item numerals 1-6, photo strip and photo of Anja, spiral binding, calendar doodles (cello, chairs, gift), footer (zweiundsechzig/62), Modul-4 tab, GRAMMATIK vertical tab, bullet squares/triangles, ellipses.",
+      "5a answers verified against the official Hueber key (Lektion 11, Kursbuch 5a): 1 bekommt, 2 ein Paar, 3 Dienstreise, 4 nicht so gut, 5 am Vormittag, 6 eine Freundin. One correct option per row, so radios in one group task5a (same convention as p58 task3b).",
+      "No audio markers on the page."
+    ]
+  }
+}
