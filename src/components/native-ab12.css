@@ -1,20 +1,20 @@
 .nativeAB12{position:relative;width:100%;height:100%;background:white;color:#252723;container-type:size}
 .naCanvas{position:absolute;left:50%;top:calc(50% - 19px);transform-origin:center;background:#fff;font-family:Georgia,'Times New Roman',serif}
-.naCanvas .naText{position:absolute;font-size:22px;line-height:1.27;white-space:pre-line;margin:0;padding:0}
-.naCanvas .naBold{font-family:Arial,sans-serif;font-weight:bold;font-size:22px;line-height:1.3}
+.naCanvas .naText{position:absolute;font-size:22px;line-height:1.27;white-space:pre-line;margin:0;padding:0;font-family:'Times New Roman',Times,serif}
+.naCanvas .naBold{font-family:'Times New Roman',Times,serif;font-weight:bold;font-size:22px;line-height:1.3}
 .naCanvas .naSmall{font-size:18px}
 .naCanvas .naCenter{text-align:center}
 .naCanvas .naArt{position:absolute;object-fit:contain!important;max-width:none!important;max-height:none!important;margin:0!important;border:0!important;display:block}
 .naCanvas .naTitle{position:absolute;font:bold 23px/1.25 Arial,sans-serif;display:block}
 .naTitle>b{display:inline-block;margin-right:12px;background:#2a4f9e;color:#fff;min-width:34px;height:27px;text-align:center;font:bold 24px/27px Georgia}
-.naCanvas .naField{position:absolute;height:27px!important;min-width:0!important;min-height:0!important;max-width:none!important;box-sizing:border-box;font:21px Georgia!important;background:transparent!important;border:0!important;border-bottom:1.5px solid #9aa3ab!important;border-radius:0!important;margin:0!important;padding:0 2px!important;color:#224777!important;z-index:3}
+.naCanvas .naField{position:absolute;height:27px!important;min-width:0!important;min-height:0!important;max-width:none!important;box-sizing:border-box;font:20px 'Times New Roman'!important;background:transparent!important;border:0!important;border-bottom:1.5px solid #9aa3ab!important;border-radius:0!important;margin:0!important;padding:0 2px!important;color:#224777!important;z-index:3}
 .naCanvas .naRule{position:absolute;height:0;border-bottom:1.5px solid #9aa3ab}
 .naCanvas .naDot{position:absolute;appearance:none;width:24px!important;height:24px!important;min-width:0!important;min-height:0!important;border:2px solid #c7bd8a!important;border-radius:50%!important;background:white!important;margin:0!important;padding:0!important;box-sizing:border-box;cursor:pointer;z-index:3}
 .naCanvas .naDot:checked{background:radial-gradient(circle at center,#26764c 0 36%,white 42%)!important}
 .naCanvas .naDot:focus-visible{outline:3px solid #26764c;outline-offset:2px}
 .naCanvas .naCheck{position:absolute;display:flex;align-items:center;gap:12px;z-index:4}
-.naCanvas .naCheck button{font:14px Arial;border:1px solid #8a9f83;border-radius:4px;background:#fffdf1;color:#29583c;padding:1px 8px;min-height:22px}
-.naCanvas .naCheck output{font:14px Arial;color:#29583c;background:white}
+.naCanvas .naCheck button{font:18px Arial;border:1px solid #8a9f83;border-radius:4px;background:#fffdf1;color:#29583c;padding:4px 12px;min-height:31px}
+.naCanvas .naCheck output{font:18px Arial;color:#29583c;background:white}
 .naCanvas .naAudio{position:absolute;border:0!important;background:white;color:#2c7d9e;font:12px Arial!important;padding:0!important;min-height:25px!important;z-index:4}
 .naCanvas .naHand{color:#335b98;font-style:italic}
 .naCanvas .naHeadline{font:30px Georgia;color:#333;letter-spacing:1px}
@@ -27,23 +27,25 @@
 .naCanvas .naHeadline{font-size:34px;letter-spacing:3px;color:#4a4a45}
 .naCanvas .naHeadRule{border-bottom:2px solid #4357ad}
 .naCanvas .naTitle{font-size:23px}
-.naTitle>b{border-left:3px solid #c33523}
 .naCanvas .naTitle.naGB b{background:#a6ca03}
 .naCanvas .naKB{position:absolute;font:bold 13px Arial,sans-serif;color:#4357ad}
-.naCanvas .naOpt{color:#335b98;font-family:Arial,sans-serif;font-size:17px;letter-spacing:-0.3px}
+.naCanvas .naOpt{color:#335b98;font-family:Verdana,sans-serif;font-size:15px;letter-spacing:0}
 .naCanvas .naStrike{text-decoration:line-through}
 .naCanvas .naSq{position:absolute;color:#4357ad;font-size:17px}
 .naCanvas .naTri{position:absolute;color:#7ab317;font-size:16px}
-.naCanvas .naLet{font-weight:bold;font-size:24px}
+.naCanvas .naLet{font-family:'Times New Roman',Times,serif;font-weight:bold;font-size:21px}
 .naCanvas .naNw{white-space:nowrap}
 .naCanvas .naD19{font-size:19px}
 .naCanvas .naTitle.naRB b{background:#c33523}
-.naCanvas.naNarrow .naText{font-size:17px}
-.naCanvas.naNarrow .naBold{font-size:17px}
-.naCanvas.naNarrow .naSmall{font-size:14px}
+.naCanvas.naNarrow .naText{font-size:16px}
+.naCanvas.naNarrow .naBold{font-size:16px}
+.naCanvas.naNarrow .naSmall{font-size:13px}
 .naCanvas.naNarrow .naTitle{font-size:17px}
 .naCanvas.naNarrow .naHeadline{font-size:26px;letter-spacing:2px}
 .naCanvas.naNarrow .naKB{font-size:10px}
 .naCanvas.naNarrow .naSide{font-size:9px}
 .naCanvas.naNarrow .naFooter{font-size:13px}
 .naCanvas.naNarrow .naHand{font-size:17px}
+.naCanvas .naDlg{font-family:'Times New Roman',Times,serif;font-size:22px;letter-spacing:-0.4px}
+.naCanvas.naNarrow .naField{height:20px!important;font:15px 'Times New Roman'!important}
+.naCanvas.naNarrow .naWHead{position:absolute;font:bold 19px/1.1 'Times New Roman',serif;white-space:nowrap}
