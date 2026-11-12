@@ -538,7 +538,7 @@
    "h": 9
   },
   {
-   "text": "lösen.",
+   "text": "lésen.",
    "x": 894,
    "y": 400,
    "w": 45,
@@ -1882,13 +1882,109 @@
    "h": 12
   }
  ],
- "fields": [],
- "audio": [],
- "groups": [],
+ "fields": [
+  {
+   "id": "p15-pl0",
+   "group": "g1",
+   "kind": "text",
+   "label": "Plural 0",
+   "answer": "Bäder",
+   "x": 305,
+   "y": 1202,
+   "w": 95,
+   "h": 22
+  },
+  {
+   "id": "p15-pl1",
+   "group": "g1",
+   "kind": "text",
+   "label": "Plural 1",
+   "answer": "Wälder",
+   "x": 305,
+   "y": 1232,
+   "w": 95,
+   "h": 22
+  },
+  {
+   "id": "p15-pl2",
+   "group": "g1",
+   "kind": "text",
+   "label": "Plural 2",
+   "answer": "Gärten",
+   "x": 305,
+   "y": 1261,
+   "w": 95,
+   "h": 22
+  },
+  {
+   "id": "p15-pl3",
+   "group": "g1",
+   "kind": "text",
+   "label": "Plural 3",
+   "answer": "Häuser",
+   "x": 555,
+   "y": 1202,
+   "w": 95,
+   "h": 22
+  },
+  {
+   "id": "p15-pl4",
+   "group": "g1",
+   "kind": "text",
+   "label": "Plural 4",
+   "answer": "Bäume",
+   "x": 555,
+   "y": 1232,
+   "w": 95,
+   "h": 22
+  },
+  {
+   "id": "p15-pl5",
+   "group": "g1",
+   "kind": "text",
+   "label": "Plural 5",
+   "answer": "Räume",
+   "x": 555,
+   "y": 1261,
+   "w": 95,
+   "h": 22
+  }
+ ],
+ "audio": [
+  {
+   "id": "track8-1",
+   "src": "assets/ab-a12-cd2-track08.mp3",
+   "label": "CD2 · Track08",
+   "x": 62,
+   "y": 1327,
+   "w": 54,
+   "h": 22
+  },
+  {
+   "id": "track9-2",
+   "src": "assets/ab-a12-cd2-track09.mp3",
+   "label": "CD2 · Track09",
+   "x": 672,
+   "y": 1134,
+   "w": 54,
+   "h": 22
+  }
+ ],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Plural mit ä und äu"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Plural gaps filled with the plurals (Bäder, Wälder, Gärten, Häuser, Bäume, Räume); they match the printed poem on the same page.",
+   "Ex 2 (table), 'Wohnung 1/2/3' choice and handwritten notes have no key answers and are not fields.",
+   "Audio markers 2.08 and 2.09 mapped from printed CD icons; audio content was not listened to.",
+   "Boxes placed from word coordinates; not marked verified."
+  ],
   "verifiedWords": 268,
-  "totalWords": 268,
-  "notes": []
+  "totalWords": 268
  }
 }

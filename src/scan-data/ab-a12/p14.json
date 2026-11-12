@@ -1707,13 +1707,155 @@
    "h": 14
   }
  ],
- "fields": [],
- "audio": [],
- "groups": [],
+ "fields": [
+  {
+   "id": "p14-10b",
+   "group": "g2",
+   "kind": "text",
+   "label": "10 b",
+   "answer": "vermietet",
+   "x": 788,
+   "y": 661,
+   "w": 137,
+   "h": 22
+  },
+  {
+   "id": "p14-10c",
+   "group": "g2",
+   "kind": "text",
+   "label": "10 c",
+   "answer": "möbliert",
+   "x": 730,
+   "y": 687,
+   "w": 210,
+   "h": 22
+  },
+  {
+   "id": "p14-10d",
+   "group": "g2",
+   "kind": "text",
+   "label": "10 d",
+   "answer": "Vermieterin",
+   "x": 175,
+   "y": 738,
+   "w": 203,
+   "h": 22
+  },
+  {
+   "id": "p14-10e",
+   "group": "g2",
+   "kind": "text",
+   "label": "10 e",
+   "answer": "Anzeige",
+   "x": 740,
+   "y": 765,
+   "w": 200,
+   "h": 22
+  },
+  {
+   "id": "p14-10f",
+   "group": "g2",
+   "kind": "text",
+   "label": "10 f",
+   "answer": "Miete",
+   "x": 235,
+   "y": 814,
+   "w": 178,
+   "h": 22
+  },
+  {
+   "id": "p14-10g",
+   "group": "g2",
+   "kind": "text",
+   "label": "10 g",
+   "answer": "bezahlt",
+   "x": 271,
+   "y": 840,
+   "w": 206,
+   "h": 22
+  },
+  {
+   "id": "p14-101",
+   "group": "g2",
+   "kind": "text",
+   "label": "10 1",
+   "answer": "Licht",
+   "x": 657,
+   "y": 840,
+   "w": 209,
+   "h": 22
+  },
+  {
+   "id": "p14-102",
+   "group": "g2",
+   "kind": "text",
+   "label": "10 2",
+   "answer": "Wasser",
+   "x": 172,
+   "y": 866,
+   "w": 206,
+   "h": 22
+  },
+  {
+   "id": "p14-103",
+   "group": "g2",
+   "kind": "text",
+   "label": "10 3",
+   "answer": "Müll",
+   "x": 425,
+   "y": 866,
+   "w": 205,
+   "h": 22
+  }
+ ],
+ "audio": [
+  {
+   "id": "track7-1",
+   "src": "assets/ab-a12-cd2-track07.mp3",
+   "label": "CD2 · Track07",
+   "x": 55,
+   "y": 952,
+   "w": 54,
+   "h": 22
+  },
+  {
+   "id": "track7-2",
+   "src": "assets/ab-a12-cd2-track07.mp3",
+   "label": "CD2 · Track07",
+   "x": 55,
+   "y": 1188,
+   "w": 54,
+   "h": 22
+  }
+ ],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 9"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 10"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 11"
+  },
+  {
+   "id": "g4",
+   "label": "Aufgabe 12"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the official Hueber key (Menschen A1, Lektion 14 Arbeitsbuch). Handwritten examples (9a, 10a) are not fields.",
+   "Ex 10: the word-search marking is not a field; only gap answers are.",
+   "Ex 11: key lists the 450 EUR / 55 m2 ad and ex 12 'leer' agrees (unfurnished).",
+   "Audio markers 2.07 mapped from the printed CD icons to the existing track file; audio content was not listened to.",
+   "Boxes placed from word coordinates and checked visually. Not marked verified."
+  ],
   "verifiedWords": 243,
-  "totalWords": 243,
-  "notes": []
+  "totalWords": 243
  }
 }
