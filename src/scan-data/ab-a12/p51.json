@@ -1539,13 +1539,111 @@
    "h": 12
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p51-s1",
+   "group": "g1",
+   "kind": "text",
+   "label": "Selbsteinschätzung 1",
+   "answer": "in",
+   "x": 376,
+   "y": 225,
+   "w": 102,
+   "h": 22
+  },
+  {
+   "id": "p51-s2",
+   "group": "g1",
+   "kind": "text",
+   "label": "Selbsteinschätzung 2",
+   "answer": "Vor",
+   "x": 128,
+   "y": 245,
+   "w": 122,
+   "h": 22
+  },
+  {
+   "id": "p51-s3",
+   "group": "g1",
+   "kind": "text",
+   "label": "Selbsteinschätzung 3",
+   "answer": "nach",
+   "x": 226,
+   "y": 269,
+   "w": 120,
+   "h": 22
+  },
+  {
+   "id": "p51-s4",
+   "group": "g1",
+   "kind": "text",
+   "label": "Selbsteinschätzung 4",
+   "answer": "Für",
+   "x": 497,
+   "y": 342,
+   "w": 135,
+   "h": 22
+  },
+  {
+   "id": "p51-s5",
+   "group": "g1",
+   "kind": "text",
+   "label": "Selbsteinschätzung 5",
+   "answer": "Ich will unbedingt Sängerin werden.",
+   "x": 128,
+   "y": 441,
+   "w": 652,
+   "h": 22
+  },
+  {
+   "id": "p51-s6",
+   "group": "g1",
+   "kind": "text",
+   "label": "Selbsteinschätzung 6",
+   "answer": "ohne mein Handy",
+   "x": 236,
+   "y": 509,
+   "w": 326,
+   "h": 22
+  },
+  {
+   "id": "p51-s7",
+   "group": "g1",
+   "kind": "text",
+   "label": "Selbsteinschätzung 7",
+   "answer": "mit meinem Laptop",
+   "x": 236,
+   "y": 533,
+   "w": 330,
+   "h": 22
+  },
+  {
+   "id": "p51-s8",
+   "group": "g1",
+   "kind": "text",
+   "label": "Selbsteinschätzung 8",
+   "answer": "Er soll zum Arzt gehen.",
+   "x": 378,
+   "y": 702,
+   "w": 411,
+   "h": 22
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Selbsteinschätzung"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the official Hueber Loesungsschluessel AB A1.2 (Selbsteinschätzung Modul 6).",
+   "Self-rating circles, the 'jemanden auffordern' blanks (page and key wording differ), the Üben/Wiederholen line, and the Rückblick sorting and e-mail tasks are not mapped.",
+   "Boxes placed from word coordinates; not marked verified."
+  ],
   "verifiedWords": 219,
-  "totalWords": 219,
-  "notes": []
+  "totalWords": 219
  }
 }
