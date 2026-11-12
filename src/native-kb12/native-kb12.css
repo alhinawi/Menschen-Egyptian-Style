@@ -82,3 +82,6 @@
 .nkProfileColumn h3{font:bold 21px Georgia;color:#b58d25;margin:0 0 5px}
 .nkProfileColumn img{float:right;position:static!important;width:80px!important;height:99px!important;object-fit:contain;margin:0 0 5px 9px!important}
 .nkCanvas .nkConjugation{font:16px/1.08 Arial}
+.nkCanvas .nkGreen{background:#388369}.nkCanvas .nkTeaTitle{font-size:39px}.nkHerbal{position:absolute;box-sizing:border-box;background:#e8f5fb;border:5px double #355c9c;border-radius:24px}.nkCanvas .nkHerbalTitle{font-size:40px}.nkCanvas .nkHerbalText{font:18px/1.22 Georgia}.nkCanvas .nkHerbalBadge{border-radius:50%;background:#ae3522;color:#f2deb7;text-align:center;font:17px/1.2 Georgia;padding:20px;box-sizing:border-box;height:150px}.nkCanvas .nkFigure{background:#fffef6;border:1px solid #d6d9c9}.nkCanvas .nkTeaSummary{font-size:17px;line-height:1.13}.nkCanvas .nkTeaSummary h3{font-size:18px}.nkCanvas .nkTeaSummary section{margin-bottom:7px}
+.nkCanvas .nkHealthDiscussion{font:16px/1.1 Georgia}
+.nkCanvas .nkHerbalText{font:17px/1.15 Georgia}
