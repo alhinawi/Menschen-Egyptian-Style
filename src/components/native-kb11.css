@@ -26,3 +26,4 @@
 .nkbCanvas .nkbCompact{font-size:1.45cqw}
 
 .nkbCanvas .nkbLine.nkbSB{font-family:'Palatino Linotype',Palatino,'Book Antiqua','Liberation Serif',Georgia,serif;font-weight:700}
+.nkbCanvas select.nkbField[data-native-field=geschieden],.nkbCanvas select.nkbField[data-native-field=Kind],.nkbCanvas select.nkbField[data-native-field=verheiratet],.nkbCanvas select.nkbField[data-native-field=Single]{border-radius:50%!important;appearance:none;-webkit-appearance:none;text-align:center;text-align-last:center;padding:0!important;width:22px!important;height:22px!important}
