@@ -153,6 +153,57 @@ export function NativeAB12({page}:{page:string}){
   {art('modul',0,1388,72,24)}
   {text(96,1388,175,'52 \u00a0|\u00a0 zweiundfünfzig','naFooter naFoot52')}
  </>}
+ {page==='83'&&<>
+  {art('lesson-tab',723,25,78,97)}
+  <div className="naText naHeadline" style={{left:69,top:63,width:230,fontSize:21,letterSpacing:1.5}}><Words text="LERNWORTSCHATZ"/></div>
+  <div className="naHeadRule" style={{left:311,top:85,width:339,borderBottom:'2px solid #dc2a27'}}/>
+  {title('1',65,123,560,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naRB naNw')}
+  {text(99,151,160,'Kleidung','naWHead')}
+  {text(391,151,240,'Weitere wichtige Wörter','naWHead')}
+  {([['Kleidung die',169],['Bluse die, -n',188],['Jacke die, -n',208],['Gürtel der, -',228],['Hemd das, -en',247],['Hose die, -n',266],['Hut der, ¨e',286],['Kleid das, -er',305],['Mantel der, ¨',325],['Mütze die, -n',344]] as [string,number][]).map(([t,y],i)=>
+   <div key={t}>{text(99,y,150,t)}{field('83-1-l'+(i+1),228,y,144,t+' übersetzen')}</div>)}
+  {text(107,367,150,'A: Haube die, -n','naGray')}
+  {text(107,387,150,'CH: Kappe die, -n','naGray')}
+  {text(99,403,150,'Pullover der, -')}{field('83-1-l11',228,403,144,'Pullover der, - übersetzen')}
+  {text(99,422,150,'Rock der, ¨e')}{field('83-1-l12',228,422,144,'Rock der, ¨e übersetzen')}
+  {text(107,445,170,'CH: auch: der Jupe, -s','naGray')}
+  {text(99,461,150,'Schuh der, -e')}{field('83-1-l13',228,461,144,'Schuh der, -e übersetzen')}
+  {text(99,481,150,'Socke die, -n')}{field('83-1-l14',228,481,144,'Socke die, -n übersetzen')}
+  {text(99,500,150,'Strumpf der, ¨e')}{field('83-1-l15',228,500,144,'Strumpf der, ¨e übersetzen')}
+  {text(107,523,200,'CH: Strumpfhose die, -n oder','naGray')}
+  {text(107,543,150,'Kniesocke die,-n','naGray')}
+  {text(99,560,150,'Strumpfhose')}
+  {text(108,578,150,'die, -n')}{field('83-1-l16',228,578,144,'Strumpfhose die, -n übersetzen')}
+  {text(99,597,150,'T-Shirt das, -s')}{field('83-1-l17',228,597,144,'T-Shirt das, -s übersetzen')}
+  {text(391,169,150,'Text der, -e')}{field('83-1-r1',500,169,148,'Text der, -e übersetzen')}
+  {text(391,199,150,'an·haben, hat')}
+  {text(400,218,150,'angehabt')}{field('83-1-r2',500,218,148,'anhaben übersetzen')}
+  {text(391,240,150,'an·ziehen, hat')}
+  {text(400,259,150,'angezogen')}{field('83-1-r3',500,257,148,'anziehen übersetzen')}
+  {text(391,279,150,'erzählen, hat')}
+  {text(400,296,150,'erzählt')}{field('83-1-r4',500,296,148,'erzählen übersetzen')}
+  {text(391,325,150,'klug')}{field('83-1-r5',500,325,148,'klug übersetzen')}
+  {text(391,355,150,'als')}{field('83-1-r6',500,355,148,'als übersetzen')}
+  {text(400,374,150,'schöner als')}{field('83-1-r7',500,374,148,'schöner als übersetzen')}
+  {text(391,394,150,'(genau)so wie')}{field('83-1-r8',500,394,148,'(genau)so wie übersetzen')}
+  {text(391,413,150,'(genau)so schön')}
+  {text(400,433,150,'wie')}{field('83-1-r9',500,433,148,'(genau)so schön wie übersetzen')}
+  {text(391,452,150,'zuletzt')}{field('83-1-r10',500,452,148,'zuletzt übersetzen')}
+  {text(391,471,150,'zurzeit')}{field('83-1-r11',500,471,148,'zurzeit übersetzen')}
+  {text(391,500,150,'Klasse!')}{field('83-1-r12',500,500,148,'Klasse! übersetzen')}
+  {text(400,523,150,'A/CH: Super!','naGray')}
+  {text(391,540,150,'Toll!')}{field('83-1-r13',500,540,148,'Toll! übersetzen')}
+  {art('tipp',246,646,168,56)}
+  {text(273,650,140,'Schneiden Sie Bilder','naSmall naNw')}
+  {text(273,669,140,'aus und ergänzen Sie','naSmall naNw')}
+  {text(273,687,130,'die Kleidung.','naSmall naNw')}
+  {art('scissors',414,608,137,85)}
+  {art('strip',648,100,157,920)}
+  {title('2',65,737,560,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naRB naNw')}
+  {[763,783,802,822,841,861,880,900,919,939,958,977,997].map((y,i)=>field('83-2-'+i,98,y,550,'Notizzeile '+(i+1)))}
+  {text(600,1049,135,'dreiundachtzig \u00a0|\u00a0 83','naFooter')}
+  {art('modul-tab',738,1048,66,26)}
+ </>}
  {page==='30'&&<>
   {art('header',0,0,1072,102)}
   {kb(78,178,'KB 4')}
