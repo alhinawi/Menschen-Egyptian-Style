@@ -308,8 +308,10 @@ def word_styles(d, A, words, drop):
         ink170 = lum < 170
         if float(ink170.mean()) >= 0.004:
             fracs[idx] = float(ink.mean())
-            satm = (sub.max(2) - sub.min(2) > 40) & (lum < 235)
-            if float(satm.mean()) >= 0.02:
+            satm = (sub.max(2) - sub.min(2) > 40) & (lum < 190)
+            if float(ink.mean()) >= 0.05:
+                meds[idx] = np.median(sub[ink], axis=0).astype(int)
+            elif float(satm.mean()) >= 0.02:
                 meds[idx] = np.median(sub[satm], axis=0).astype(int)
             else:
                 meds[idx] = np.median(sub[ink170], axis=0).astype(int)

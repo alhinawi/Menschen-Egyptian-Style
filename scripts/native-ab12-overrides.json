@@ -108,6 +108,23 @@
     "h": 34,
     "alt": "Handschriftliches Beispiel"
    }
+  ],
+  "rectsAdd": [
+   {
+    "x": 60,
+    "y": 1100,
+    "w": 1000,
+    "h": 34,
+    "c": "#efe9d2"
+   }
+  ],
+  "cropsRemove": [
+   {
+    "x": 214,
+    "y": 1102,
+    "w": 220,
+    "h": 52
+   }
   ]
  },
  "6": {
