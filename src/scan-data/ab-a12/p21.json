@@ -1448,13 +1448,389 @@
    "h": 12
   }
  ],
- "fields": [],
- "audio": [],
- "groups": [],
+ "fields": [
+  {
+   "id": "p21-a1_1-e",
+   "group": "g1",
+   "kind": "radio",
+   "label": "Nr. 1 e",
+   "answer": "true",
+   "name": "a1_1",
+   "value": "e",
+   "x": 181,
+   "y": 1098,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p21-a1_1-i",
+   "group": "g1",
+   "kind": "radio",
+   "label": "Nr. 1 i",
+   "answer": "false",
+   "name": "a1_1",
+   "value": "i",
+   "x": 229,
+   "y": 1098,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p21-a1_2-e",
+   "group": "g1",
+   "kind": "radio",
+   "label": "Nr. 2 e",
+   "answer": "true",
+   "name": "a1_2",
+   "value": "e",
+   "x": 181,
+   "y": 1123,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p21-a1_2-i",
+   "group": "g1",
+   "kind": "radio",
+   "label": "Nr. 2 i",
+   "answer": "false",
+   "name": "a1_2",
+   "value": "i",
+   "x": 229,
+   "y": 1123,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p21-a1_3-e",
+   "group": "g1",
+   "kind": "radio",
+   "label": "Nr. 3 e",
+   "answer": "false",
+   "name": "a1_3",
+   "value": "e",
+   "x": 181,
+   "y": 1149,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p21-a1_3-i",
+   "group": "g1",
+   "kind": "radio",
+   "label": "Nr. 3 i",
+   "answer": "true",
+   "name": "a1_3",
+   "value": "i",
+   "x": 229,
+   "y": 1149,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p21-a1_4-e",
+   "group": "g1",
+   "kind": "radio",
+   "label": "Nr. 4 e",
+   "answer": "false",
+   "name": "a1_4",
+   "value": "e",
+   "x": 326,
+   "y": 1098,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p21-a1_4-i",
+   "group": "g1",
+   "kind": "radio",
+   "label": "Nr. 4 i",
+   "answer": "true",
+   "name": "a1_4",
+   "value": "i",
+   "x": 372,
+   "y": 1098,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p21-a1_5-e",
+   "group": "g1",
+   "kind": "radio",
+   "label": "Nr. 5 e",
+   "answer": "false",
+   "name": "a1_5",
+   "value": "e",
+   "x": 326,
+   "y": 1123,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p21-a1_5-i",
+   "group": "g1",
+   "kind": "radio",
+   "label": "Nr. 5 i",
+   "answer": "true",
+   "name": "a1_5",
+   "value": "i",
+   "x": 372,
+   "y": 1123,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p21-a1_6-e",
+   "group": "g1",
+   "kind": "radio",
+   "label": "Nr. 6 e",
+   "answer": "true",
+   "name": "a1_6",
+   "value": "e",
+   "x": 326,
+   "y": 1149,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p21-a1_6-i",
+   "group": "g1",
+   "kind": "radio",
+   "label": "Nr. 6 i",
+   "answer": "false",
+   "name": "a1_6",
+   "value": "i",
+   "x": 372,
+   "y": 1149,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p21-a1_7-e",
+   "group": "g1",
+   "kind": "radio",
+   "label": "Nr. 7 e",
+   "answer": "false",
+   "name": "a1_7",
+   "value": "e",
+   "x": 472,
+   "y": 1098,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p21-a1_7-i",
+   "group": "g1",
+   "kind": "radio",
+   "label": "Nr. 7 i",
+   "answer": "true",
+   "name": "a1_7",
+   "value": "i",
+   "x": 518,
+   "y": 1098,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p21-a1_8-e",
+   "group": "g1",
+   "kind": "radio",
+   "label": "Nr. 8 e",
+   "answer": "false",
+   "name": "a1_8",
+   "value": "e",
+   "x": 472,
+   "y": 1123,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p21-a1_8-i",
+   "group": "g1",
+   "kind": "radio",
+   "label": "Nr. 8 i",
+   "answer": "true",
+   "name": "a1_8",
+   "value": "i",
+   "x": 518,
+   "y": 1123,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p21-a1_9-e",
+   "group": "g1",
+   "kind": "radio",
+   "label": "Nr. 9 e",
+   "answer": "false",
+   "name": "a1_9",
+   "value": "e",
+   "x": 472,
+   "y": 1149,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p21-a1_9-i",
+   "group": "g1",
+   "kind": "radio",
+   "label": "Nr. 9 i",
+   "answer": "true",
+   "name": "a1_9",
+   "value": "i",
+   "x": 518,
+   "y": 1149,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p21-g1",
+   "group": "g2",
+   "kind": "text",
+   "label": "Lücke 1",
+   "answer": "ie",
+   "x": 839,
+   "y": 1042,
+   "w": 37,
+   "h": 22
+  },
+  {
+   "id": "p21-g2",
+   "group": "g2",
+   "kind": "text",
+   "label": "Lücke 2",
+   "answer": "ih",
+   "x": 711,
+   "y": 1069,
+   "w": 39,
+   "h": 22
+  },
+  {
+   "id": "p21-g3",
+   "group": "g2",
+   "kind": "text",
+   "label": "Lücke 3",
+   "answer": "ie",
+   "x": 781,
+   "y": 1069,
+   "w": 31,
+   "h": 22
+  },
+  {
+   "id": "p21-g4",
+   "group": "g2",
+   "kind": "text",
+   "label": "Lücke 4",
+   "answer": "ie",
+   "x": 879,
+   "y": 1069,
+   "w": 36,
+   "h": 22
+  },
+  {
+   "id": "p21-g5",
+   "group": "g2",
+   "kind": "text",
+   "label": "Lücke 5",
+   "answer": "ie",
+   "x": 891,
+   "y": 1095,
+   "w": 29,
+   "h": 22
+  },
+  {
+   "id": "p21-g6",
+   "group": "g2",
+   "kind": "text",
+   "label": "Lücke 6",
+   "answer": "i",
+   "x": 730,
+   "y": 1121,
+   "w": 36,
+   "h": 22
+  },
+  {
+   "id": "p21-g7",
+   "group": "g2",
+   "kind": "text",
+   "label": "Lücke 7",
+   "answer": "i",
+   "x": 866,
+   "y": 1121,
+   "w": 35,
+   "h": 22
+  },
+  {
+   "id": "p21-g8",
+   "group": "g2",
+   "kind": "text",
+   "label": "Lücke 8",
+   "answer": "ie",
+   "x": 696,
+   "y": 1146,
+   "w": 36,
+   "h": 22
+  },
+  {
+   "id": "p21-g9",
+   "group": "g2",
+   "kind": "text",
+   "label": "Lücke 9",
+   "answer": "ie",
+   "x": 842,
+   "y": 1146,
+   "w": 35,
+   "h": 22
+  }
+ ],
+ "audio": [
+  {
+   "id": "track12-1",
+   "src": "assets/ab-a12-cd2-track12.mp3",
+   "label": "CD2 · Track12",
+   "x": 46,
+   "y": 1008,
+   "w": 54,
+   "h": 22
+  },
+  {
+   "id": "track13-2",
+   "src": "assets/ab-a12-cd2-track13.mp3",
+   "label": "CD2 · Track13",
+   "x": 46,
+   "y": 1212,
+   "w": 54,
+   "h": 22
+  },
+  {
+   "id": "track14-3",
+   "src": "assets/ab-a12-cd2-track14.mp3",
+   "label": "CD2 · Track14",
+   "x": 599,
+   "y": 1196,
+   "w": 54,
+   "h": 22
+  }
+ ],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aussprache 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aussprache 3"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the official Hueber Loesungsschluessel AB A1.2 (Lektion 15, Training: Aussprache). Training: Sprechen is free speaking/notes and has no fields.",
+   "Aussprache 1: e = 1, 2, 6; i = 3, 4, 5, 7, 8, 9. Aussprache 3: 9 gap fragments (ie/ih/i); the key lists the full words.",
+   "Audio markers 2.12, 2.13, 2.14 mapped from the printed CD icons; audio content was not listened to.",
+   "Boxes placed from word coordinates and a zoomed crop; not marked verified."
+  ],
   "verifiedWords": 206,
-  "totalWords": 206,
-  "notes": []
+  "totalWords": 206
  }
 }

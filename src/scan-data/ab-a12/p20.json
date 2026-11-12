@@ -1966,13 +1966,287 @@
    "h": 18
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p20-9b-uns",
+   "group": "g1",
+   "kind": "radio",
+   "label": "9 b uns",
+   "answer": "true",
+   "name": "9b",
+   "value": "uns",
+   "x": 780,
+   "y": 247,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-9b-euch",
+   "group": "g1",
+   "kind": "radio",
+   "label": "9 b euch",
+   "answer": "false",
+   "name": "9b",
+   "value": "euch",
+   "x": 866,
+   "y": 247,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-9b-ihnen",
+   "group": "g1",
+   "kind": "radio",
+   "label": "9 b ihnen",
+   "answer": "false",
+   "name": "9b",
+   "value": "ihnen",
+   "x": 184,
+   "y": 268,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-9c-uns",
+   "group": "g1",
+   "kind": "radio",
+   "label": "9 c uns",
+   "answer": "false",
+   "name": "9c",
+   "value": "uns",
+   "x": 556,
+   "y": 296,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-9c-euch",
+   "group": "g1",
+   "kind": "radio",
+   "label": "9 c euch",
+   "answer": "true",
+   "name": "9c",
+   "value": "euch",
+   "x": 646,
+   "y": 296,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-9c-ihnen",
+   "group": "g1",
+   "kind": "radio",
+   "label": "9 c ihnen",
+   "answer": "false",
+   "name": "9c",
+   "value": "ihnen",
+   "x": 748,
+   "y": 296,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-9d-dir",
+   "group": "g1",
+   "kind": "radio",
+   "label": "9 d dir",
+   "answer": "false",
+   "name": "9d",
+   "value": "dir",
+   "x": 540,
+   "y": 321,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-9d-ihm",
+   "group": "g1",
+   "kind": "radio",
+   "label": "9 d ihm",
+   "answer": "true",
+   "name": "9d",
+   "value": "ihm",
+   "x": 631,
+   "y": 321,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-9d-ihr",
+   "group": "g1",
+   "kind": "radio",
+   "label": "9 d ihr",
+   "answer": "false",
+   "name": "9d",
+   "value": "ihr",
+   "x": 726,
+   "y": 321,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-9e-dir",
+   "group": "g1",
+   "kind": "radio",
+   "label": "9 e dir",
+   "answer": "true",
+   "name": "9e",
+   "value": "dir",
+   "x": 558,
+   "y": 348,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-9e-ihm",
+   "group": "g1",
+   "kind": "radio",
+   "label": "9 e ihm",
+   "answer": "false",
+   "name": "9e",
+   "value": "ihm",
+   "x": 649,
+   "y": 348,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-9e-euch",
+   "group": "g1",
+   "kind": "radio",
+   "label": "9 e euch",
+   "answer": "false",
+   "name": "9e",
+   "value": "euch",
+   "x": 744,
+   "y": 348,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-10b",
+   "group": "g2",
+   "kind": "text",
+   "label": "10b",
+   "answer": "dir",
+   "x": 722,
+   "y": 483,
+   "w": 128,
+   "h": 22
+  },
+  {
+   "id": "p20-10c",
+   "group": "g2",
+   "kind": "text",
+   "label": "10c",
+   "answer": "uns",
+   "x": 675,
+   "y": 503,
+   "w": 130,
+   "h": 22
+  },
+  {
+   "id": "p20-10d",
+   "group": "g2",
+   "kind": "text",
+   "label": "10d",
+   "answer": "mir",
+   "x": 690,
+   "y": 531,
+   "w": 118,
+   "h": 22
+  },
+  {
+   "id": "p20-10e",
+   "group": "g2",
+   "kind": "text",
+   "label": "10e",
+   "answer": "ihr",
+   "x": 790,
+   "y": 588,
+   "w": 115,
+   "h": 22
+  },
+  {
+   "id": "p20-10f",
+   "group": "g2",
+   "kind": "text",
+   "label": "10f",
+   "answer": "ihnen",
+   "x": 186,
+   "y": 666,
+   "w": 130,
+   "h": 22
+  },
+  {
+   "id": "p20-11a",
+   "group": "g3",
+   "kind": "text",
+   "label": "11a",
+   "answer": "4",
+   "x": 872,
+   "y": 1232,
+   "w": 105,
+   "h": 22
+  },
+  {
+   "id": "p20-11b",
+   "group": "g3",
+   "kind": "text",
+   "label": "11b",
+   "answer": "1",
+   "x": 872,
+   "y": 1259,
+   "w": 105,
+   "h": 22
+  },
+  {
+   "id": "p20-11c",
+   "group": "g3",
+   "kind": "text",
+   "label": "11c",
+   "answer": "6",
+   "x": 872,
+   "y": 1289,
+   "w": 105,
+   "h": 22
+  },
+  {
+   "id": "p20-11d",
+   "group": "g3",
+   "kind": "text",
+   "label": "11d",
+   "answer": "3",
+   "x": 872,
+   "y": 1318,
+   "w": 105,
+   "h": 22
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 9"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 10"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 11"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the official Hueber Loesungsschluessel AB A1.2 (Lektion 15, Aufgaben 9-11).",
+   "9a is the printed example (ihr). 10a is a handwritten example.",
+   "Ex 11 numbers refer to the printed circled ad numbers 1-6.",
+   "Boxes placed from word coordinates; not marked verified."
+  ],
   "verifiedWords": 280,
-  "totalWords": 280,
-  "notes": []
+  "totalWords": 280
  }
 }
