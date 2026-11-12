@@ -84,7 +84,13 @@
   position: absolute;
   inset: 0;
   background: rgba(24, 16, 10, .55);
+  touch-action: none;
   animation: lnv-fade .18s ease-out;
+}
+
+/* While a library panel is open the page behind must not scroll. */
+body.lnv-lock {
+  overflow: hidden;
 }
 
 @keyframes lnv-fade {
@@ -196,6 +202,8 @@
   flex: 1;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
   padding-bottom: 24px;
 }
 
@@ -320,6 +328,8 @@
   flex: 1;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
   padding-bottom: 28px;
 }
 
