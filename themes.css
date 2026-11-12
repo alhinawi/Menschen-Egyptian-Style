@@ -42,3 +42,26 @@ html[data-theme="dark"] .howtoPage{background:#fffefa!important;color:#2c302b!im
 .coverCopy{margin-top:auto;padding-top:18px;font:15px Georgia,serif;letter-spacing:1px;color:#a8937a!important;text-align:center;line-height:1.6;max-width:560px}
 
 .howtoList .playIcon{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:#713c46;color:#fff;font-size:11px;line-height:1;vertical-align:middle;margin:0 2px}
+
+/* WCAG AA contrast fixes: readable text in every theme. */
+/* Dark themes: the book's light cards (cream/yellow/white boxes) keep dark text instead of inheriting the night ink. */
+html[data-theme="dark"] .page :is(.anzeige:not(.blue),.yellowBox,.poem.yellow,.poem.blue,.poem.hand,.klosterBox,.adjGrid,.wishPerson,.adBox,.diary,.notiz,.merke,.menuCard,.letterSnake,.messageCard,.regelBox,.tippBox,.reading,.postcard,.invite,.roleDialog,.projectPoster,.missingMedia,.orangeBox,.infoBox){color:#2b2922}
+html[data-theme="dark"] .page .wordPieces span,html[data-theme="dark"] .page .wordbank em{color:#2b2922}
+html[data-theme="dark"] .page :is(.abBody th,table.frame th){color:#2b2922}
+html[data-theme="dark"] .page .messageCard .from{color:#57534a}
+html[data-theme="dark"] .page .abBanner,html[data-theme="dark"] .page .anzeige.blue{color:#fff}
+/* Colored banners: white text, background deepened so the white meets AA. */
+.page .abBanner{color:#fff}
+.page .abBanner.l10{background:#c73a6f}
+.page .abBanner.l11{background:#b8388c}
+.page .abBanner.l12{background:#ad6018}
+.page .anzeige.blue{color:#fff}
+.page.kb12 .introContent aside{background:#1179a3}
+/* Blue asides and red number chips: restore the authored white text the theme rules overrode. */
+.page :is(.blueAside,.introGrid46 aside),.page :is(.blueAside,.introGrid46 aside) b{color:#fff}
+.page .abTaskHead .n{color:#fff}
+/* Muted meta text deepened to AA on light themes. */
+.page :is(.kbRef,.moduleTag,.footNote){color:#6f6a5c}
+.page .messageCard .from{color:#6f6248}
+.helpBanner{color:#414c39}
+.meaningPopup small,.page .bookNo{color:#5f6a60}
