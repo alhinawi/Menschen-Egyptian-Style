@@ -48,7 +48,7 @@ viewport.addEventListener('touchcancel',(e: any)=>{endGesture(e.changedTouches[0
 viewport.addEventListener('mousedown',(e: any)=>{if(e.button||isControl(e.target)||e.target.closest('.tapWord'))return;if(zoomed()){mouse={pan:true,x:e.clientX,left:viewport.scrollLeft};e.preventDefault();return}gesture=startGesture(e);mouse={pan:false}});
 window.addEventListener('mousemove',(e: any)=>{if(!mouse)return;if(mouse.pan){viewport.scrollLeft=mouse.left+mouse.x-e.clientX;return}moveGesture(e,e)});
 window.addEventListener('mouseup',(e: any)=>{if(!mouse)return;if(!mouse.pan)endGesture(e);mouse=null;});
-for(const b of document.querySelectorAll<HTMLElement>('.listen'))b.onclick=()=>{const a=$('#audio');a.src='assets/ab-cd1-track'+b.dataset.track+'.mp3';$('.audioDock').hidden=false;a.play().catch(()=>{});};$('#closeAudio').onclick=()=>{$('#audio').pause();$('.audioDock').hidden=true;};
+for(const b of document.querySelectorAll<HTMLElement>('.listen'))b.onclick=()=>{const a=$('#audio');a.src='assets/ab-cd1-track'+b.dataset.track!.padStart(2,'0')+'.mp3';$('.audioDock').hidden=false;a.play().catch(()=>{});};$('#closeAudio').onclick=()=>{$('#audio').pause();$('.audioDock').hidden=true;};
 // Kursbuch margin references ("▶ KB n") open the matching Kursbuch exercise; when that exercise has a recording, it plays right away.
 const kbSeite={7:{1:41,2:41,3:41,4:42,5:42,6:42,7:43,8:43,9:43,10:44},8:{1:45,2:45,3:46,4:46,5:46,6:47,7:47,8:48},9:{1:49,2:49,3:50,4:50,5:51,6:51,7:51}};
 const kbTrack={7:{8:'02'},8:{5:'06'}};
