@@ -111,6 +111,34 @@
    "h": 9
   },
   {
+   "text": "c",
+   "x": 186,
+   "y": 367,
+   "w": 9,
+   "h": 15
+  },
+  {
+   "text": "r",
+   "x": 310,
+   "y": 366,
+   "w": 11,
+   "h": 12
+  },
+  {
+   "text": "d",
+   "x": 186,
+   "y": 392,
+   "w": 9,
+   "h": 14
+  },
+  {
+   "text": "G",
+   "x": 205,
+   "y": 391,
+   "w": 14,
+   "h": 14
+  },
+  {
    "text": "e",
    "x": 597,
    "y": 314,
@@ -118,32 +146,39 @@
    "h": 9
   },
   {
-   "text": "BA",
+   "text": "N",
+   "x": 688,
+   "y": 311,
+   "w": 13,
+   "h": 13
+  },
+  {
+   "text": "f",
    "x": 598,
-   "y": 333,
-   "w": 72,
-   "h": 18
-  },
-  {
-   "text": "ce",
-   "x": 197,
-   "y": 361,
+   "y": 340,
    "w": 8,
-   "h": 32
+   "h": 15
   },
   {
-   "text": "8",
+   "text": "A",
+   "x": 616,
+   "y": 338,
+   "w": 13,
+   "h": 14
+  },
+  {
+   "text": "g",
    "x": 597,
    "y": 364,
    "w": 10,
    "h": 16
   },
   {
-   "text": "dG",
-   "x": 186,
-   "y": 392,
-   "w": 33,
-   "h": 14
+   "text": "s",
+   "x": 638,
+   "y": 362,
+   "w": 11,
+   "h": 12
   },
   {
    "text": "Ruths",
@@ -223,6 +258,13 @@
    "h": 15
   },
   {
+   "text": "1",
+   "x": 190,
+   "y": 529,
+   "w": 10,
+   "h": 16
+  },
+  {
    "text": "Peter:",
    "x": 213,
    "y": 532,
@@ -258,11 +300,11 @@
    "h": 15
   },
   {
-   "text": "Marianne",
-   "x": 817,
-   "y": 523,
-   "w": 68,
-   "h": 11
+   "text": "2",
+   "x": 190,
+   "y": 554,
+   "w": 10,
+   "h": 16
   },
   {
    "text": "Jakob:",
@@ -307,11 +349,18 @@
    "h": 14
   },
   {
-   "text": "_",
-   "x": 558,
-   "y": 547,
-   "w": 5,
-   "h": 30
+   "text": ".",
+   "x": 652,
+   "y": 559,
+   "w": 6,
+   "h": 6
+  },
+  {
+   "text": "3",
+   "x": 190,
+   "y": 580,
+   "w": 10,
+   "h": 16
   },
   {
    "text": "Marianne:",
@@ -328,18 +377,32 @@
    "h": 15
   },
   {
-   "text": "istmeine___",
-   "x": 358,
-   "y": 578,
-   "w": 118,
-   "h": 16
+   "text": "ist",
+   "x": 356,
+   "y": 579,
+   "w": 20,
+   "h": 14
   },
   {
-   "text": "_-",
-   "x": 759,
-   "y": 567,
-   "w": 11,
-   "h": 26
+   "text": "meine",
+   "x": 382,
+   "y": 579,
+   "w": 45,
+   "h": 14
+  },
+  {
+   "text": ".",
+   "x": 612,
+   "y": 587,
+   "w": 6,
+   "h": 6
+  },
+  {
+   "text": "4",
+   "x": 190,
+   "y": 606,
+   "w": 10,
+   "h": 16
   },
   {
    "text": "Peter:",
@@ -349,11 +412,39 @@
    "h": 13
   },
   {
-   "text": "_-",
-   "x": 531,
-   "y": 612,
-   "w": 68,
+   "text": "Marianne",
+   "x": 270,
+   "y": 607,
+   "w": 75,
+   "h": 15
+  },
+  {
+   "text": "ist",
+   "x": 351,
+   "y": 607,
+   "w": 21,
+   "h": 14
+  },
+  {
+   "text": "meine",
+   "x": 378,
+   "y": 607,
+   "w": 45,
+   "h": 14
+  },
+  {
+   "text": ".",
+   "x": 602,
+   "y": 615,
+   "w": 6,
    "h": 6
+  },
+  {
+   "text": "5",
+   "x": 190,
+   "y": 631,
+   "w": 10,
+   "h": 16
   },
   {
    "text": "Ruth:",
@@ -384,6 +475,20 @@
    "h": 14
   },
   {
+   "text": ".",
+   "x": 566,
+   "y": 639,
+   "w": 6,
+   "h": 6
+  },
+  {
+   "text": "6",
+   "x": 190,
+   "y": 656,
+   "w": 10,
+   "h": 16
+  },
+  {
    "text": "Katharina:",
    "x": 215,
    "y": 657,
@@ -391,25 +496,18 @@
    "h": 15
   },
   {
-   "text": "Mein_",
-   "x": 314,
+   "text": "Mein",
+   "x": 313,
    "y": 656,
-   "w": 44,
+   "w": 38,
    "h": 14
   },
   {
-   "text": "_____",
-   "x": 388,
-   "y": 670,
-   "w": 44,
-   "h": 1
-  },
-  {
    "text": "heißt",
-   "x": 444,
-   "y": 652,
-   "w": 45,
-   "h": 16
+   "x": 432,
+   "y": 656,
+   "w": 40,
+   "h": 14
   },
   {
    "text": "Peter.",
@@ -419,18 +517,53 @@
    "h": 13
   },
   {
-   "text": "£",
-   "x": 798,
-   "y": 652,
-   "w": 10,
-   "h": 2
+   "text": "Franz",
+   "x": 648,
+   "y": 523,
+   "w": 48,
+   "h": 15
   },
   {
-   "text": "Kath:",
-   "x": 740,
-   "y": 679,
+   "text": "Marianne",
+   "x": 817,
+   "y": 523,
+   "w": 68,
+   "h": 11
+  },
+  {
+   "text": "Katharina",
+   "x": 733,
+   "y": 677,
+   "w": 62,
+   "h": 15
+  },
+  {
+   "text": "Peter",
+   "x": 915,
+   "y": 678,
+   "w": 38,
+   "h": 15
+  },
+  {
+   "text": "Ruth",
+   "x": 735,
+   "y": 847,
    "w": 33,
    "h": 13
+  },
+  {
+   "text": "Justus",
+   "x": 839,
+   "y": 845,
+   "w": 43,
+   "h": 14
+  },
+  {
+   "text": "Jakob",
+   "x": 957,
+   "y": 848,
+   "w": 45,
+   "h": 15
   },
   {
    "text": "b",
@@ -566,7 +699,7 @@
    "h": 16
   },
   {
-   "text": "‚Ausbildung",
+   "text": "Ausbildung",
    "x": 549,
    "y": 733,
    "w": 81,
@@ -622,53 +755,74 @@
    "h": 15
   },
   {
-   "text": "Ichbin9",
+   "text": "1",
+   "x": 185,
+   "y": 804,
+   "w": 12,
+   "h": 18
+  },
+  {
+   "text": "Ich",
    "x": 301,
    "y": 807,
-   "w": 82,
+   "w": 27,
+   "h": 15
+  },
+  {
+   "text": "bin",
+   "x": 333,
+   "y": 807,
+   "w": 29,
+   "h": 15
+  },
+  {
+   "text": "19",
+   "x": 367,
+   "y": 807,
+   "w": 25,
+   "h": 16
+  },
+  {
+   "text": "(a)",
+   "x": 516,
+   "y": 803,
+   "w": 24,
+   "h": 15
+  },
+  {
+   "text": "und",
+   "x": 544,
+   "y": 803,
+   "w": 23,
    "h": 15
   },
   {
    "text": "mache",
-   "x": 301,
-   "y": 832,
-   "w": 55,
+   "x": 297,
+   "y": 831,
+   "w": 42,
    "h": 15
   },
   {
    "text": "eine",
-   "x": 362,
-   "y": 832,
-   "w": 36,
-   "h": 14
+   "x": 343,
+   "y": 831,
+   "w": 30,
+   "h": 15
   },
   {
-   "text": "__",
-   "x": 404,
-   "y": 847,
-   "w": 29,
-   "h": 1
+   "text": "(b).",
+   "x": 534,
+   "y": 822,
+   "w": 32,
+   "h": 18
   },
   {
-   "text": "i",
-   "x": 489,
-   "y": 821,
-   "w": 4,
-   "h": 1
-  },
-  {
-   "text": "_b).",
-   "x": 503,
-   "y": 828,
-   "w": 60,
-   "h": 19
-  },
-  {
-   "text": "Ruth",
-   "x": 735,
-   "y": 847,
-   "w": 33,
-   "h": 13
+   "text": "2",
+   "x": 185,
+   "y": 866,
+   "w": 12,
+   "h": 18
   },
   {
    "text": "Ich",
@@ -699,18 +853,25 @@
    "h": 16
   },
   {
+   "text": "(c)",
+   "x": 560,
+   "y": 861,
+   "w": 26,
+   "h": 16
+  },
+  {
+   "text": "in",
+   "x": 594,
+   "y": 861,
+   "w": 16,
+   "h": 15
+  },
+  {
    "text": "Köln.",
    "x": 614,
    "y": 864,
    "w": 44,
    "h": 16
-  },
-  {
-   "text": "|",
-   "x": 293,
-   "y": 907,
-   "w": 1,
-   "h": 3
   },
   {
    "text": "Ich",
@@ -762,11 +923,46 @@
    "h": 19
   },
   {
-   "text": "(ch",
-   "x": 704,
+   "text": "3",
+   "x": 185,
+   "y": 931,
+   "w": 12,
+   "h": 18
+  },
+  {
+   "text": "Ich",
+   "x": 304,
+   "y": 933,
+   "w": 27,
+   "h": 15
+  },
+  {
+   "text": "(e)",
+   "x": 469,
+   "y": 930,
+   "w": 20,
+   "h": 18
+  },
+  {
+   "text": "zwei",
+   "x": 496,
+   "y": 930,
+   "w": 38,
+   "h": 17
+  },
+  {
+   "text": "(f).",
+   "x": 672,
+   "y": 926,
+   "w": 25,
+   "h": 18
+  },
+  {
+   "text": "Ich",
+   "x": 705,
    "y": 926,
    "w": 26,
-   "h": 16
+   "h": 15
   },
   {
    "text": "bin",
@@ -790,9 +986,9 @@
    "h": 18
   },
   {
-   "text": "ale",
+   "text": "alt,",
    "x": 847,
-   "y": 924,
+   "y": 923,
    "w": 27,
    "h": 17
   },
@@ -818,11 +1014,88 @@
    "h": 15
   },
   {
-   "text": "_",
-   "x": 600,
-   "y": 971,
-   "w": 4,
-   "h": 1
+   "text": "(h).",
+   "x": 779,
+   "y": 949,
+   "w": 32,
+   "h": 17
+  },
+  {
+   "text": "Berufe.",
+   "x": 191,
+   "y": 1028,
+   "w": 60,
+   "h": 19
+  },
+  {
+   "text": "Lösen",
+   "x": 258,
+   "y": 1028,
+   "w": 50,
+   "h": 19
+  },
+  {
+   "text": "Sie",
+   "x": 312,
+   "y": 1028,
+   "w": 28,
+   "h": 19
+  },
+  {
+   "text": "das",
+   "x": 346,
+   "y": 1028,
+   "w": 30,
+   "h": 19
+  },
+  {
+   "text": "Rätsel.",
+   "x": 382,
+   "y": 1028,
+   "w": 55,
+   "h": 19
+  },
+  {
+   "text": "a",
+   "x": 204,
+   "y": 1078,
+   "w": 12,
+   "h": 14
+  },
+  {
+   "text": "b",
+   "x": 324,
+   "y": 1075,
+   "w": 12,
+   "h": 14
+  },
+  {
+   "text": "c",
+   "x": 476,
+   "y": 1075,
+   "w": 12,
+   "h": 14
+  },
+  {
+   "text": "d",
+   "x": 617,
+   "y": 1075,
+   "w": 12,
+   "h": 14
+  },
+  {
+   "text": "e",
+   "x": 761,
+   "y": 1104,
+   "w": 12,
+   "h": 14
+  },
+  {
+   "text": "f",
+   "x": 870,
+   "y": 1217,
+   "w": 12,
+   "h": 14
   },
   {
    "text": "Lösungswort:",
@@ -832,43 +1105,400 @@
    "h": 19
   },
   {
-   "text": "MN",
-   "x": 51,
-   "y": 1454,
-   "w": 59,
-   "h": 17
+   "text": "a",
+   "x": 245,
+   "y": 1249,
+   "w": 11,
+   "h": 14
   },
   {
-   "text": "24",
-   "x": 138,
-   "y": 1458,
-   "w": 17,
-   "h": 12
+   "text": "K",
+   "x": 284,
+   "y": 1251,
+   "w": 14,
+   "h": 16
   },
   {
-   "text": "|",
-   "x": 171,
-   "y": 1456,
-   "w": 2,
+   "text": "E",
+   "x": 317,
+   "y": 1250,
+   "w": 12,
+   "h": 16
+  },
+  {
+   "text": "L",
+   "x": 349,
+   "y": 1249,
+   "w": 11,
+   "h": 16
+  },
+  {
+   "text": "L",
+   "x": 373,
+   "y": 1247,
+   "w": 11,
+   "h": 16
+  },
+  {
+   "text": "N",
+   "x": 396,
+   "y": 1246,
+   "w": 14,
+   "h": 16
+  },
+  {
+   "text": "E",
+   "x": 425,
+   "y": 1246,
+   "w": 13,
+   "h": 16
+  },
+  {
+   "text": "R",
+   "x": 451,
+   "y": 1245,
+   "w": 14,
+   "h": 16
+  },
+  {
+   "text": "b",
+   "x": 299,
+   "y": 1276,
+   "w": 11,
+   "h": 14
+  },
+  {
+   "text": "c",
+   "x": 274,
+   "y": 1302,
+   "w": 11,
+   "h": 14
+  },
+  {
+   "text": "d",
+   "x": 262,
+   "y": 1322,
+   "w": 11,
+   "h": 14
+  },
+  {
+   "text": "e",
+   "x": 222,
+   "y": 1348,
+   "w": 11,
+   "h": 14
+  },
+  {
+   "text": "f",
+   "x": 272,
+   "y": 1374,
+   "w": 11,
+   "h": 14
+  },
+  {
+   "text": "T",
+   "x": 292,
+   "y": 339,
+   "w": 13,
    "h": 15
-  },
-  {
-   "text": "vierundzwanzig",
-   "x": 189,
-   "y": 1455,
-   "w": 125,
-   "h": 18
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "u1-b",
+   "group": "u1",
+   "kind": "text",
+   "label": "Begrüßung b",
+   "answer": "Guten Tag",
+   "x": 205,
+   "y": 338,
+   "w": 210,
+   "h": 24
+  },
+  {
+   "id": "u1-c",
+   "group": "u1",
+   "kind": "text",
+   "label": "Begrüßung c",
+   "answer": "Guten Morgen",
+   "x": 205,
+   "y": 363,
+   "w": 225,
+   "h": 24
+  },
+  {
+   "id": "u1-d",
+   "group": "u1",
+   "kind": "text",
+   "label": "Begrüßung d",
+   "answer": "Guten Abend",
+   "x": 219,
+   "y": 388,
+   "w": 195,
+   "h": 24
+  },
+  {
+   "id": "u1-e",
+   "group": "u1",
+   "kind": "text",
+   "label": "Abschied e",
+   "answer": "Gute Nacht",
+   "x": 608,
+   "y": 302,
+   "w": 165,
+   "h": 22
+  },
+  {
+   "id": "u1-f",
+   "group": "u1",
+   "kind": "text",
+   "label": "Abschied f",
+   "answer": "Auf Wiedersehen",
+   "x": 628,
+   "y": 323,
+   "w": 340,
+   "h": 22
+  },
+  {
+   "id": "u1-g",
+   "group": "u1",
+   "kind": "text",
+   "label": "Abschied g",
+   "answer": "Tschüs|Tschüss",
+   "x": 612,
+   "y": 345,
+   "w": 120,
+   "h": 22
+  },
+  {
+   "id": "u2a-2",
+   "group": "u2a",
+   "kind": "text",
+   "label": "Jakob: Franz und Marianne sind meine …",
+   "answer": "Großeltern",
+   "x": 552,
+   "y": 545,
+   "w": 100,
+   "h": 23
+  },
+  {
+   "id": "u2a-3",
+   "group": "u2a",
+   "kind": "text",
+   "label": "Marianne: Ruth ist meine …",
+   "answer": "Enkelin",
+   "x": 430,
+   "y": 572,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "u2a-4",
+   "group": "u2a",
+   "kind": "text",
+   "label": "Peter: Marianne ist meine …",
+   "answer": "Mutter",
+   "x": 437,
+   "y": 594,
+   "w": 163,
+   "h": 23
+  },
+  {
+   "id": "u2a-5",
+   "group": "u2a",
+   "kind": "text",
+   "label": "Ruth: Franz ist mein …",
+   "answer": "Opa|Großvater",
+   "x": 400,
+   "y": 612,
+   "w": 165,
+   "h": 23
+  },
+  {
+   "id": "u2a-6",
+   "group": "u2a",
+   "kind": "text",
+   "label": "Katharina: Mein … heißt Peter.",
+   "answer": "(Ehe-)Mann|Mann|Ehemann",
+   "x": 360,
+   "y": 634,
+   "w": 68,
+   "h": 23
+  },
+  {
+   "id": "u2b-a",
+   "group": "u2b",
+   "kind": "text",
+   "label": "Ich bin 19 … (a)",
+   "answer": "Jahre alt",
+   "x": 394,
+   "y": 800,
+   "w": 118,
+   "h": 23
+  },
+  {
+   "id": "u2b-b",
+   "group": "u2b",
+   "kind": "text",
+   "label": "mache eine … (b)",
+   "answer": "Ausbildung",
+   "x": 376,
+   "y": 824,
+   "w": 155,
+   "h": 23
+  },
+  {
+   "id": "u2b-c",
+   "group": "u2b",
+   "kind": "text",
+   "label": "Ich bin 23 und … (c) in Köln.",
+   "answer": "wohne",
+   "x": 428,
+   "y": 860,
+   "w": 130,
+   "h": 23
+  },
+  {
+   "id": "u2b-d",
+   "group": "u2b",
+   "kind": "text",
+   "label": "Ich … (d) als Journalist.",
+   "answer": "arbeite",
+   "x": 506,
+   "y": 882,
+   "w": 134,
+   "h": 23
+  },
+  {
+   "id": "u2b-e",
+   "group": "u2b",
+   "kind": "text",
+   "label": "Ich … (e) zwei",
+   "answer": "habe",
+   "x": 333,
+   "y": 923,
+   "w": 132,
+   "h": 23
+  },
+  {
+   "id": "u2b-f",
+   "group": "u2b",
+   "kind": "text",
+   "label": "zwei … (f)",
+   "answer": "Geschwister",
+   "x": 536,
+   "y": 919,
+   "w": 132,
+   "h": 23
+  },
+  {
+   "id": "u2b-g",
+   "group": "u2b",
+   "kind": "text",
+   "label": "… (g) und Sekretärin",
+   "answer": "geschieden",
+   "x": 214,
+   "y": 949,
+   "w": 217,
+   "h": 23
+  },
+  {
+   "id": "u2b-h",
+   "group": "u2b",
+   "kind": "text",
+   "label": "Sekretärin … (h)",
+   "answer": "von Beruf",
+   "x": 596,
+   "y": 949,
+   "w": 180,
+   "h": 23
+  },
+  {
+   "id": "u3-b",
+   "group": "u3",
+   "kind": "text",
+   "label": "Rätsel b (Foto b)",
+   "answer": "Mechatroniker",
+   "x": 314,
+   "y": 1268,
+   "w": 500,
+   "h": 28
+  },
+  {
+   "id": "u3-c",
+   "group": "u3",
+   "kind": "text",
+   "label": "Rätsel c (Foto c)",
+   "answer": "Schauspielerin",
+   "x": 289,
+   "y": 1294,
+   "w": 500,
+   "h": 28
+  },
+  {
+   "id": "u3-d",
+   "group": "u3",
+   "kind": "text",
+   "label": "Rätsel d (Foto d)",
+   "answer": "Verkäufer",
+   "x": 277,
+   "y": 1320,
+   "w": 500,
+   "h": 28
+  },
+  {
+   "id": "u3-e",
+   "group": "u3",
+   "kind": "text",
+   "label": "Rätsel e (Foto e)",
+   "answer": "Friseur",
+   "x": 237,
+   "y": 1346,
+   "w": 500,
+   "h": 28
+  },
+  {
+   "id": "u3-f",
+   "group": "u3",
+   "kind": "text",
+   "label": "Rätsel f (Foto f)",
+   "answer": "Krankenschwester",
+   "x": 287,
+   "y": 1372,
+   "w": 500,
+   "h": 28
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "u1",
+   "label": "1 Sich begrüßen und sich verabschieden? Ergänzen Sie."
+  },
+  {
+   "id": "u2a",
+   "label": "2a Sehen Sie den Stammbaum an und ergänzen Sie."
+  },
+  {
+   "id": "u2b",
+   "label": "2b Was machen Jakob, Justus und Ruth? Ordnen Sie zu."
+  },
+  {
+   "id": "u3",
+   "label": "3 Berufe. Lösen Sie das Rätsel."
+  }
+ ],
  "review": {
-  "status": "partial",
-  "verifiedWords": 0,
-  "totalWords": 122,
+  "status": "verified",
+  "verifiedWords": 171,
+  "totalWords": 171,
   "notes": [
-   "draft: unverified OCR, no fields/audio yet"
+   "Answers from AB Lösungsschlüssel (Wiederholungsstation: Wortschatz).",
+   "U1 rows are letter-dash puzzles; one text field per row (full phrase).",
+   "U2a item 1 'Sohn.' is a printed blue-ink example - no field.",
+   "U3 row a 'KELLNER' is the filled example (blue letters) - no field. Lösungswort column not covered by the key - no field for it.",
+   "Stammbaum person names are printed photo captions; kept as words. Photos themselves excluded.",
+   "Some boxes estimated from zooms (cursive/ink, given letters in U1 dash rows, Ü3 grid)."
   ]
  }
 }
