@@ -35,7 +35,7 @@ export function usePersistenceController(): PersistenceController {
         for (const el of list) {
           const value = saved[key(el, list)];
           if (el instanceof HTMLInputElement && (el.type === 'radio' || el.type === 'checkbox')) el.checked = value === true;
-          else if (value !== undefined) el.value = value as string;
+          else if (typeof value === 'string') el.value = value;
         }
         dispatch(saved);
         return () => {runtime = null;};

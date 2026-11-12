@@ -30,27 +30,28 @@ const server=http.createServer((req,res)=>{
  try{for(const width of [320,390,550]){
   const p=await browser.newPage({viewport:{width,height:900},isMobile:true,hasTouch:true});
   const errors=[];p.on('pageerror',e=>errors.push(e.message));
-  await p.goto('http://127.0.0.1:5192/l7-9.html#46');
+  // p41–56 are now native. Keep hybrid coverage on the unconverted next lesson.
+  const data=require('../../src/scan-data/kb-a11/p57.json');
+  await p.goto('http://127.0.0.1:5192/l10-12.html#57');
   await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
-  const h=p.locator('.hybridScan[data-scan-page="46"]');await h.waitFor();
-  assert.equal(await h.locator('input').count(),7);
+  const h=p.locator('.hybridScan[data-scan-page="57"]');await h.waitFor();
+  assert.equal(await h.locator('input').count(),data.fields.length);
   const ratio=await h.locator('img').evaluate(i=>{const r=i.getBoundingClientRect();return Math.abs(r.width/r.height-i.naturalWidth/i.naturalHeight)});
   assert(ratio<0.001,'scan aspect ratio changed');
-  const radio=h.locator('[data-field-id=a2]');await radio.check({force:true});
-  await h.locator('[data-field-id=b2]').check({force:true});
-  for(const [id,value]of [['time3','nach'],['time4','vor'],['time5','nach']])await h.locator(`[data-field-id=${id}]`).fill(value);
+  for(const f of data.fields.filter(f=>f.answer==='true'))await h.locator('[data-field-id="'+f.id+'"]').check({force:true});
   for(const button of await h.locator('.hybridCheck button').all()){await button.evaluate(e=>e.scrollIntoView({block:'center'}));await button.click();}
-  assert.deepEqual(await h.locator('output').allTextContents(),['✓ Richtig!','✓ Richtig!']);
-  await h.locator('[data-field-id=time3]').fill('vor');
-  await h.locator('.hybridCheck button').nth(1).evaluate(e=>e.scrollIntoView({block:'center'}));await h.locator('.hybridCheck button').nth(1).click();
-  assert.equal(await h.locator('output').nth(1).textContent(),'Noch einmal');
+  for(const text of await h.locator('output').allTextContents())assert.equal(text,'✓ Richtig!');
+  await h.locator('[data-field-id=a-flughafen]').check({force:true});
+  await h.locator('.hybridCheck button').first().click();
+  assert.equal(await h.locator('output').first().textContent(),'Noch einmal');
   await p.reload();await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
-  assert.equal(await h.locator('[data-field-id=time3]').inputValue(),'vor');assert(await h.locator('[data-field-id=a2]').isChecked());
-  await h.locator('.hybridAudio').evaluate(e=>e.scrollIntoView({block:'center'}));await h.locator('.hybridAudio').click();
-  await p.waitForFunction(()=>{const a=document.querySelector('.hybridScan[data-scan-page="46"] .hybridTools audio');return a&&!a.paused&&a.readyState>0});
-  assert.equal(await h.locator('.hybridTools audio').getAttribute('src'),'assets/kb-cd2-track06.mp3');
-  await h.locator('.hybridWord[data-word=Theater]').evaluate(e=>e.scrollIntoView({block:'center'}));await h.locator('.hybridWord[data-word=Theater]').click();
-  await p.waitForFunction(()=>document.body.innerText.includes('مسرح'));
+  assert(await h.locator('[data-field-id=a-flughafen]').isChecked());
+  // Isolate the original handler; large screen-space targets have their own phone suite.
+  await h.locator('.hybridAudio').first().evaluate(e=>e.click());
+  await p.waitForFunction(()=>{const a=document.querySelector('.hybridScan[data-scan-page="57"] .hybridTools audio');return a&&!a.paused&&a.readyState>0});
+  assert.equal(await h.locator('.hybridTools audio').getAttribute('src'),data.audio[0].src);
+  await h.locator('.tapWord').first().evaluate(e=>e.click());
+  assert(await p.locator('.meaningPopup').evaluate(d=>d.open));
   assert.deepEqual(errors,[]);
   console.log(`${width}px: scan ratio, grading, wrong-answer feedback, saved answers, audio, translation passed`);
   await p.close();
@@ -62,6 +63,6 @@ const server=http.createServer((req,res)=>{
  console.log(file,await p.locator('.tapWord').count(),'normal-page translation hotspots passed');await p.close();
  }
  const p=await browser.newPage();await p.goto('http://127.0.0.1:5192/index.html#9');await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
- assert(await p.locator('.hybridScan[data-scan-page="9"] .tapWord').count()>=80);assert(await p.locator('.hybridScan[data-scan-page="10"] .tapWord').count()>=100);await p.close();
+ for(const [n,min] of [[9,80],[10,100],[11,100]]){assert(await p.locator(`[data-scan-page="${n}"] .tapWord, [data-native-page="${n}"] .tapWord`).count()>=min,`p${n}: tap words missing`)}await p.close();
  }finally{await browser.close();server.close()}
 })().catch(e=>{console.error(e);server.close();process.exitCode=1});

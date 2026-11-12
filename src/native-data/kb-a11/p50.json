@@ -1,0 +1,863 @@
+{
+  "book": "kb-a11",
+  "page": 50,
+  "width": 1075,
+  "height": 1521,
+  "words": [],
+  "art": [
+    {
+      "src": "assets/book-crops/native-p50-strip.png",
+      "x": 0,
+      "y": 65,
+      "w": 1075,
+      "h": 108,
+      "name": "strip"
+    },
+    {
+      "src": "assets/book-crops/native-p50-comic.png",
+      "x": 145,
+      "y": 765,
+      "w": 710,
+      "h": 363,
+      "name": "comic"
+    }
+  ],
+  "fields": [
+    {
+      "id": "b1",
+      "group": "task4b",
+      "kind": "text",
+      "label": "Bitte sehr!",
+      "answer": "Oh, vielen Dank.|Vielen Dank.",
+      "x": 562,
+      "y": 1300,
+      "w": 345,
+      "h": 23
+    },
+    {
+      "id": "b2",
+      "group": "task4b",
+      "kind": "text",
+      "label": "Guten Appetit!",
+      "answer": "Danke, ebenfalls.|Danke.",
+      "x": 562,
+      "y": 1323,
+      "w": 345,
+      "h": 23
+    },
+    {
+      "id": "b3",
+      "group": "task4b",
+      "kind": "text",
+      "label": "Möchten Sie noch etwas Wurstsuppe?",
+      "answer": "Nein, danke.|Nein, danke!",
+      "x": 562,
+      "y": 1346,
+      "w": 345,
+      "h": 23
+    },
+    {
+      "id": "b4",
+      "group": "task4b",
+      "kind": "text",
+      "label": "Möchten Sie einen Kaffee?",
+      "answer": "Oh ja! Bitte!|Ja, bitte!|Ja bitte",
+      "x": 562,
+      "y": 1369,
+      "w": 345,
+      "h": 23
+    },
+    {
+      "id": "open-ich-woche",
+      "kind": "text",
+      "group": "open",
+      "x": 411,
+      "y": 366,
+      "w": 128,
+      "h": 44,
+      "label": "Mein Frühstück in der Woche"
+    },
+    {
+      "id": "open-partner-woche",
+      "kind": "text",
+      "group": "open",
+      "x": 643,
+      "y": 366,
+      "w": 190,
+      "h": 44,
+      "label": "Frühstück der Partnerin/des Partners in der Woche"
+    },
+    {
+      "id": "open-ich-wochenende",
+      "kind": "text",
+      "group": "open",
+      "x": 411,
+      "y": 430,
+      "w": 128,
+      "h": 44,
+      "label": "Mein Frühstück am Wochenende"
+    },
+    {
+      "id": "open-partner-wochenende",
+      "kind": "text",
+      "group": "open",
+      "x": 643,
+      "y": 430,
+      "w": 190,
+      "h": 44,
+      "label": "Frühstück der Partnerin/des Partners am Wochenende"
+    },
+    {
+      "id": "zeit-ich-woche",
+      "kind": "text",
+      "group": "open",
+      "x": 547,
+      "y": 366,
+      "w": 77,
+      "h": 44,
+      "label": "Mein Frühstück in der Woche - Wann?"
+    },
+    {
+      "id": "zeit-partner-woche",
+      "kind": "text",
+      "group": "open",
+      "x": 843,
+      "y": 366,
+      "w": 130,
+      "h": 44,
+      "label": "Frühstück der Partnerin/des Partners in der Woche - Wann?"
+    },
+    {
+      "id": "zeit-ich-wochenende",
+      "kind": "text",
+      "group": "open",
+      "x": 547,
+      "y": 430,
+      "w": 77,
+      "h": 44,
+      "label": "Mein Frühstück am Wochenende - Wann?"
+    },
+    {
+      "id": "zeit-partner-wochenende",
+      "kind": "text",
+      "group": "open",
+      "x": 843,
+      "y": 430,
+      "w": 130,
+      "h": 44,
+      "label": "Frühstück der Partnerin/des Partners am Wochenende - Wann?"
+    },
+    {
+      "id": "open4a1",
+      "group": "task4a",
+      "kind": "text",
+      "label": "4a Frage 1: eigene Antwort",
+      "x": 495,
+      "y": 1147,
+      "w": 215,
+      "h": 25,
+      "answer": "Nein|Nein, er kennt keine Wurstsuppe"
+    },
+    {
+      "id": "open4a2",
+      "group": "task4a",
+      "kind": "text",
+      "label": "4a Frage 2: eigene Antwort",
+      "x": 495,
+      "y": 1174,
+      "w": 215,
+      "h": 25,
+      "answer": "Nicht gut|Die Suppe schmeckt nicht gut|schlecht"
+    },
+    {
+      "id": "open4a3",
+      "group": "task4a",
+      "kind": "text",
+      "label": "4a Frage 3: eigene Antwort",
+      "x": 495,
+      "y": 1201,
+      "w": 215,
+      "h": 25,
+      "answer": "Nein|Nein, er trinkt keinen Kaffee"
+    }
+  ],
+  "audio": [],
+  "groups": [
+    {
+      "id": "task4b",
+      "label": "4b",
+      "x": 167,
+      "y": 1415
+    },
+    {
+      "id": "task4a",
+      "label": "4a",
+      "x": 892,
+      "y": 1203
+    }
+  ],
+  "titles": [
+    [
+      "3",
+      123,
+      248
+    ],
+    [
+      "4",
+      123,
+      695
+    ]
+  ],
+  "review": {
+    "status": "source-reviewed",
+    "source": "assets/kb-a11-p50.png",
+    "checks": [
+      "original wording and illustration framing",
+      "native closed-task grading and open-answer persistence",
+      "320/390 mobile geometry and translation taps"
+    ],
+    "notes": "Closed answers checked against the official Hueber key."
+  },
+  "panels": [],
+  "shapes": [
+    {
+      "x": 166,
+      "y": 362,
+      "w": 812,
+      "h": 1,
+      "background": "#596ba5",
+      "border": "0"
+    },
+    {
+      "x": 166,
+      "y": 422,
+      "w": 812,
+      "h": 1,
+      "background": "#596ba5",
+      "border": "0"
+    },
+    {
+      "x": 398,
+      "y": 309,
+      "w": 1,
+      "h": 170,
+      "background": "#596ba5",
+      "border": "0"
+    },
+    {
+      "x": 630,
+      "y": 309,
+      "w": 1,
+      "h": 170,
+      "background": "#596ba5",
+      "border": "0"
+    },
+    {
+      "x": 740,
+      "y": 592,
+      "w": 177,
+      "h": 96,
+      "background": "#fff",
+      "border": "3px double #6c99b1"
+    },
+    {
+      "x": 166,
+      "y": 1287,
+      "w": 762,
+      "h": 115,
+      "background": "#fffef3",
+      "border": "0"
+    },
+    {
+      "x": 166,
+      "y": 1287,
+      "w": 762,
+      "h": 5,
+      "background": "#e7d925",
+      "border": "0"
+    },
+    {
+      "x": 166,
+      "y": 1287,
+      "w": 11,
+      "h": 115,
+      "background": "#e7d925",
+      "border": "0"
+    }
+  ],
+  "textBlocks": [
+    {
+      "text": "●",
+      "x": 57,
+      "y": 179,
+      "w": 17,
+      "size": 12,
+      "bold": false,
+      "serif": false,
+      "color": "#d92c26"
+    },
+    {
+      "text": "Kartoffel",
+      "x": 73,
+      "y": 177,
+      "w": 130,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "●",
+      "x": 178,
+      "y": 179,
+      "w": 17,
+      "size": 12,
+      "bold": false,
+      "serif": false,
+      "color": "#d92c26"
+    },
+    {
+      "text": "Schokolade",
+      "x": 194,
+      "y": 177,
+      "w": 130,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "●",
+      "x": 326,
+      "y": 179,
+      "w": 17,
+      "size": 12,
+      "bold": false,
+      "serif": false,
+      "color": "#2182aa"
+    },
+    {
+      "text": "Kuchen",
+      "x": 342,
+      "y": 177,
+      "w": 130,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "●",
+      "x": 471,
+      "y": 179,
+      "w": 17,
+      "size": 12,
+      "bold": false,
+      "serif": false,
+      "color": "#d92c26"
+    },
+    {
+      "text": "Suppe",
+      "x": 487,
+      "y": 177,
+      "w": 130,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "●",
+      "x": 579,
+      "y": 179,
+      "w": 17,
+      "size": 12,
+      "bold": false,
+      "serif": false,
+      "color": "#2182aa"
+    },
+    {
+      "text": "Apfel",
+      "x": 595,
+      "y": 177,
+      "w": 130,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "●",
+      "x": 704,
+      "y": 179,
+      "w": 17,
+      "size": 12,
+      "bold": false,
+      "serif": false,
+      "color": "#2182aa"
+    },
+    {
+      "text": "Tee",
+      "x": 720,
+      "y": 177,
+      "w": 130,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "●",
+      "x": 826,
+      "y": 179,
+      "w": 17,
+      "size": 12,
+      "bold": false,
+      "serif": false,
+      "color": "#2182aa"
+    },
+    {
+      "text": "Braten",
+      "x": 842,
+      "y": 177,
+      "w": 130,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "●",
+      "x": 953,
+      "y": 179,
+      "w": 17,
+      "size": 12,
+      "bold": false,
+      "serif": false,
+      "color": "#6aad24"
+    },
+    {
+      "text": "Brot",
+      "x": 969,
+      "y": 177,
+      "w": 130,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Was essen Sie gern zum Frühstück?",
+      "x": 164,
+      "y": 248,
+      "w": 855,
+      "size": 21,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Interviewen Sie Ihre Partnerin / Ihren Partner und notieren Sie.",
+      "x": 164,
+      "y": 276,
+      "w": 850,
+      "size": 19,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Ich\nWas? Wann?",
+      "x": 417,
+      "y": 310,
+      "w": 210,
+      "size": 20,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "Meine Partnerin / Mein Partner\nWas? Wann?",
+      "x": 646,
+      "y": 310,
+      "w": 380,
+      "size": 20,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "in der Woche\n(Montag – Freitag)",
+      "x": 166,
+      "y": 371,
+      "w": 229,
+      "size": 20,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "am Wochenende\n(Samstag + Sonntag)",
+      "x": 166,
+      "y": 435,
+      "w": 229,
+      "size": 20,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "■",
+      "x": 166,
+      "y": 500,
+      "w": 24,
+      "size": 17,
+      "bold": false,
+      "serif": false,
+      "color": "#2050a4"
+    },
+    {
+      "text": "Was isst du gern zum Frühstück?",
+      "x": 190,
+      "y": 500,
+      "w": 600,
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "▲",
+      "x": 166,
+      "y": 527,
+      "w": 24,
+      "size": 17,
+      "bold": false,
+      "serif": false,
+      "color": "#1ca741"
+    },
+    {
+      "text": "Käsebrötchen. Und du?",
+      "x": 190,
+      "y": 527,
+      "w": 600,
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "■",
+      "x": 166,
+      "y": 554,
+      "w": 24,
+      "size": 17,
+      "bold": false,
+      "serif": false,
+      "color": "#2050a4"
+    },
+    {
+      "text": "Ich mag keinen Käse, aber Müsli esse ich sehr gern.\nUnd wann frühstückst du?",
+      "x": 190,
+      "y": 554,
+      "w": 600,
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "▲",
+      "x": 166,
+      "y": 607,
+      "w": 24,
+      "size": 17,
+      "bold": false,
+      "serif": false,
+      "color": "#1ca741"
+    },
+    {
+      "text": "In der Woche frühstücke ich schon um sechs.\nAber am Sonntag frühstücke ich oft erst um elf Uhr.",
+      "x": 190,
+      "y": 607,
+      "w": 600,
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "mögen",
+      "x": 778,
+      "y": 485,
+      "w": 170,
+      "size": 19,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "ich\ndu\ner/sie",
+      "x": 713,
+      "y": 510,
+      "w": 90,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "mag\nmagst\nmag",
+      "x": 792,
+      "y": 510,
+      "w": 105,
+      "size": 18,
+      "bold": false,
+      "serif": true,
+      "color": "#b22e36"
+    },
+    {
+      "text": "essen",
+      "x": 817,
+      "y": 600,
+      "w": 90,
+      "size": 19,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "ich\ndu\ner/sie",
+      "x": 760,
+      "y": 625,
+      "w": 90,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "esse\nisst\nisst",
+      "x": 838,
+      "y": 625,
+      "w": 90,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Eine Einladung",
+      "x": 164,
+      "y": 695,
+      "w": 855,
+      "size": 21,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "a   Lesen Sie den Comic. Beantworten Sie die Fragen. Was meinen Sie?",
+      "x": 160,
+      "y": 732,
+      "w": 850,
+      "size": 19,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Oh, vielen Dank.",
+      "x": 360,
+      "y": 783,
+      "w": 115,
+      "size": 12,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Bitte sehr!",
+      "x": 344,
+      "y": 911,
+      "w": 100,
+      "size": 12,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Was ist das?",
+      "x": 488,
+      "y": 772,
+      "w": 115,
+      "size": 12,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Das ist Wurst-\nsuppe. Mögen Sie\nWurstsuppe?",
+      "x": 508,
+      "y": 798,
+      "w": 135,
+      "size": 12,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Ah … ich\nweiß nicht.",
+      "x": 526,
+      "y": 865,
+      "w": 100,
+      "size": 12,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Guten Appetit!",
+      "x": 702,
+      "y": 781,
+      "w": 128,
+      "size": 12,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Danke,\nebenfalls.",
+      "x": 717,
+      "y": 812,
+      "w": 90,
+      "size": 12,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Möchten\nSie noch etwas\nWurstsuppe?",
+      "x": 327,
+      "y": 969,
+      "w": 132,
+      "size": 12,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Nein, danke.",
+      "x": 396,
+      "y": 1089,
+      "w": 108,
+      "size": 12,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Möchten Sie einen\nKaffee?",
+      "x": 495,
+      "y": 955,
+      "w": 145,
+      "size": 12,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Oh ja!\nBitte!",
+      "x": 510,
+      "y": 1071,
+      "w": 90,
+      "size": 12,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Tomatenkaffee\noder Kartoffelkaffee?",
+      "x": 651,
+      "y": 966,
+      "w": 166,
+      "size": 12,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "1  Kennt Fridolin Wurstsuppe?",
+      "x": 166,
+      "y": 1150,
+      "w": 430,
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "2  Wie schmeckt die Suppe?",
+      "x": 166,
+      "y": 1177,
+      "w": 430,
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "3  Trinkt Fridolin einen Kaffee?",
+      "x": 166,
+      "y": 1204,
+      "w": 430,
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "„möchte“",
+      "x": 800,
+      "y": 1144,
+      "w": 200,
+      "size": 19,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "ich\ndu\ner/sie",
+      "x": 729,
+      "y": 1172,
+      "w": 100,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "möchte\nmöchtest\nmöchte",
+      "x": 810,
+      "y": 1172,
+      "w": 200,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "b   Lesen Sie den Comic noch einmal und ergänzen Sie die passenden Antworten.",
+      "x": 160,
+      "y": 1250,
+      "w": 850,
+      "size": 19,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Bitte sehr!",
+      "x": 197,
+      "y": 1303,
+      "w": 360,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Guten Appetit!",
+      "x": 197,
+      "y": 1326,
+      "w": 360,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Möchten Sie noch etwas Wurstsuppe?",
+      "x": 197,
+      "y": 1349,
+      "w": 360,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Möchten Sie einen Kaffee?",
+      "x": 197,
+      "y": 1372,
+      "w": 360,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "50   |   fünfzig",
+      "x": 100,
+      "y": 1500,
+      "w": 300,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    }
+  ],
+  "hidePageNumber": true,
+  "taskColor": "#8e0846"
+}

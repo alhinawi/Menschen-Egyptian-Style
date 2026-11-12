@@ -1,0 +1,747 @@
+{
+  "book": "kb-a11",
+  "page": 48,
+  "width": 1075,
+  "height": 1521,
+  "words": [],
+  "art": [],
+  "fields": [
+    {
+      "id": "a-hoeflich",
+      "group": "task8a",
+      "kind": "radio",
+      "name": "a",
+      "value": "höflich",
+      "answer": "false",
+      "label": "Die E-Mail ist höflich.",
+      "x": 326,
+      "y": 311,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "id": "a-unhoeflich",
+      "group": "task8a",
+      "kind": "radio",
+      "name": "a",
+      "value": "unhöflich",
+      "answer": "true",
+      "label": "Die E-Mail ist unhöflich.",
+      "x": 426,
+      "y": 311,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "id": "b-gruesse",
+      "group": "task8b",
+      "kind": "text",
+      "label": "Liebe Grüße",
+      "answer": "5",
+      "x": 192,
+      "y": 453,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "id": "b-leider",
+      "group": "task8b",
+      "kind": "text",
+      "label": "leider kann ich doch nicht kommen.",
+      "answer": "2",
+      "x": 366,
+      "y": 453,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "id": "b-vielleicht",
+      "group": "task8b",
+      "kind": "text",
+      "label": "Vielleicht können wir morgen Abend ins Theater gehen?",
+      "answer": "4",
+      "x": 761,
+      "y": 453,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "id": "b-zeit",
+      "group": "task8b",
+      "kind": "text",
+      "label": "Ich habe keine Zeit.",
+      "answer": "3",
+      "x": 572,
+      "y": 484,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "id": "open-email",
+      "kind": "text",
+      "group": "open",
+      "x": 603,
+      "y": 627,
+      "w": 390,
+      "h": 150,
+      "label": "8c: Einladung, Zusage oder Absage schreiben"
+    },
+    {
+      "id": "rewrite-email",
+      "group": "open8b",
+      "kind": "text",
+      "label": "8b: Die E-Mail neu schreiben",
+      "x": 400,
+      "y": 527,
+      "w": 600,
+      "h": 48
+    }
+  ],
+  "audio": [],
+  "groups": [
+    {
+      "id": "task8a",
+      "label": "8a",
+      "x": 192,
+      "y": 354
+    },
+    {
+      "id": "task8b",
+      "label": "8b",
+      "x": 192,
+      "y": 524
+    }
+  ],
+  "titles": [
+    [
+      "8",
+      149,
+      230
+    ]
+  ],
+  "review": {
+    "status": "source-reviewed",
+    "sourceNotes": [
+      "Manual native transcription checked against original printed page 48. Original art inspected at source-relative aspect and framing. Correct/wrong checks, persistence, translations and image bounds verified at 320px and 390px. Open writing is saved and is not falsely auto-graded."
+    ]
+  },
+  "panels": [],
+  "shapes": [
+    {
+      "x": 601,
+      "y": 197,
+      "w": 362,
+      "h": 145,
+      "background": "#fff",
+      "border": "1px solid #b9c0be"
+    },
+    {
+      "x": 191,
+      "y": 451,
+      "w": 810,
+      "h": 59,
+      "background": "#fffbc6",
+      "border": "0"
+    },
+    {
+      "x": 210,
+      "y": 618,
+      "w": 340,
+      "h": 163,
+      "background": "#fffef3",
+      "border": "0"
+    },
+    {
+      "x": 210,
+      "y": 618,
+      "w": 340,
+      "h": 5,
+      "background": "#e6d72e",
+      "border": "0"
+    },
+    {
+      "x": 210,
+      "y": 618,
+      "w": 11,
+      "h": 163,
+      "background": "#e6d72e",
+      "border": "0"
+    },
+    {
+      "x": 158,
+      "y": 880,
+      "w": 400,
+      "h": 122,
+      "background": "#fff",
+      "border": "1px solid #d8d6c7"
+    },
+    {
+      "x": 158,
+      "y": 880,
+      "w": 400,
+      "h": 27,
+      "background": "#f5efc8",
+      "border": "0"
+    },
+    {
+      "x": 338,
+      "y": 907,
+      "w": 1,
+      "h": 95,
+      "background": "#cac9b7",
+      "border": "0"
+    },
+    {
+      "x": 158,
+      "y": 1014,
+      "w": 400,
+      "h": 153,
+      "background": "#fff",
+      "border": "1px solid #d8d6c7"
+    },
+    {
+      "x": 158,
+      "y": 1014,
+      "w": 400,
+      "h": 27,
+      "background": "#f5efc8",
+      "border": "0"
+    },
+    {
+      "x": 574,
+      "y": 880,
+      "w": 478,
+      "h": 139,
+      "background": "#fff",
+      "border": "1px solid #d8d6c7"
+    },
+    {
+      "x": 574,
+      "y": 880,
+      "w": 478,
+      "h": 27,
+      "background": "#f5efc8",
+      "border": "0"
+    },
+    {
+      "x": 784,
+      "y": 907,
+      "w": 1,
+      "h": 112,
+      "background": "#cac9b7",
+      "border": "0"
+    },
+    {
+      "x": 574,
+      "y": 1031,
+      "w": 478,
+      "h": 166,
+      "background": "#fff",
+      "border": "1px solid #d8d6c7"
+    },
+    {
+      "x": 574,
+      "y": 1031,
+      "w": 478,
+      "h": 27,
+      "background": "#f5efc8",
+      "border": "0"
+    },
+    {
+      "x": 784,
+      "y": 1058,
+      "w": 1,
+      "h": 139,
+      "background": "#cac9b7",
+      "border": "0"
+    },
+    {
+      "x": 574,
+      "y": 1209,
+      "w": 478,
+      "h": 66,
+      "background": "#fff",
+      "border": "1px solid #d8d6c7"
+    },
+    {
+      "x": 574,
+      "y": 1209,
+      "w": 478,
+      "h": 27,
+      "background": "#f5efc8",
+      "border": "0"
+    },
+    {
+      "x": 574,
+      "y": 1287,
+      "w": 478,
+      "h": 109,
+      "background": "#fff",
+      "border": "1px solid #d8d6c7"
+    },
+    {
+      "x": 574,
+      "y": 1287,
+      "w": 478,
+      "h": 27,
+      "background": "#f5efc8",
+      "border": "0"
+    },
+    {
+      "x": 709,
+      "y": 1314,
+      "w": 1,
+      "h": 82,
+      "background": "#cac9b7",
+      "border": "0"
+    },
+    {
+      "x": 574,
+      "y": 1408,
+      "w": 478,
+      "h": 72,
+      "background": "#fff",
+      "border": "1px solid #d8d6c7"
+    },
+    {
+      "x": 574,
+      "y": 1408,
+      "w": 478,
+      "h": 27,
+      "background": "#f5efc8",
+      "border": "0"
+    },
+    {
+      "x": 757,
+      "y": 1435,
+      "w": 1,
+      "h": 45,
+      "background": "#cac9b7",
+      "border": "0"
+    }
+  ],
+  "module": {
+    "n": "8",
+    "x": 34,
+    "y": 117
+  },
+  "arrows": [
+    [
+      204,
+      1104,
+      348,
+      1128
+    ],
+    [
+      204,
+      1128,
+      348,
+      1104
+    ]
+  ],
+  "textBlocks": [
+    {
+      "text": "SCHREIBTRAINING",
+      "x": 148,
+      "y": 173,
+      "w": 720,
+      "size": 31,
+      "bold": false,
+      "serif": true,
+      "color": "#a99d73"
+    },
+    {
+      "text": "Absagen",
+      "x": 188,
+      "y": 230,
+      "w": 680,
+      "size": 23,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Betreff: Heute\n\nTimo!\nKomme doch nicht.\nKeine Zeit!\nSina",
+      "x": 618,
+      "y": 209,
+      "w": 328,
+      "size": 17,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "a   Lesen Sie die E-Mail und kreuzen Sie an.",
+      "x": 159,
+      "y": 270,
+      "w": 443,
+      "size": 19,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Die E-Mail ist",
+      "x": 191,
+      "y": 313,
+      "w": 163,
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "höflich.",
+      "x": 355,
+      "y": 313,
+      "w": 100,
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "unhöflich.",
+      "x": 456,
+      "y": 313,
+      "w": 135,
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "b   Sortieren Sie die Wendungen. Schreiben Sie dann die E-Mail neu.",
+      "x": 159,
+      "y": 411,
+      "w": 850,
+      "size": 19,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Liebe Grüße",
+      "x": 221,
+      "y": 455,
+      "w": 150,
+      "size": 17,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "leider kann ich doch nicht kommen.",
+      "x": 395,
+      "y": 455,
+      "w": 360,
+      "size": 17,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Vielleicht können wir morgen",
+      "x": 790,
+      "y": 455,
+      "w": 265,
+      "size": 17,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Ich habe keine Zeit.",
+      "x": 601,
+      "y": 486,
+      "w": 330,
+      "size": 17,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Abend ins Theater gehen? | ① Lieber Timo, |",
+      "x": 192,
+      "y": 486,
+      "w": 390,
+      "size": 17,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "c   Laden Sie Ihre Partnerin / Ihren Partner ein. Sie/Er sagt schriftlich zu oder ab.",
+      "x": 159,
+      "y": 582,
+      "w": 850,
+      "size": 19,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Liebe/r …\nHast du am … Zeit? / Kannst du am …?\nMarkus und Svenja kommen um …\n  zum Essen / zum Kaffee.\nKommst du auch? / Hast du auch Zeit?\nLiebe/Herzliche Grüße",
+      "x": 238,
+      "y": 630,
+      "w": 329,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "GRAMMATIK",
+      "x": 158,
+      "y": 837,
+      "w": 400,
+      "size": 30,
+      "bold": false,
+      "serif": true,
+      "color": "#a99d73"
+    },
+    {
+      "text": "KOMMUNIKATION",
+      "x": 574,
+      "y": 837,
+      "w": 478,
+      "size": 30,
+      "bold": false,
+      "serif": true,
+      "color": "#a99d73"
+    },
+    {
+      "text": "temporale Präpositionen am, um",
+      "x": 166,
+      "y": 884,
+      "w": 384,
+      "size": 18,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "am   + Wochentage/\n        Tageszeiten\num   + Uhrzeiten",
+      "x": 166,
+      "y": 916,
+      "w": 175,
+      "size": 16,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "am Dienstag / am Abend\n! in der Nacht\n\num drei Uhr",
+      "x": 347,
+      "y": 916,
+      "w": 203,
+      "size": 16,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Verbposition im Satz",
+      "x": 166,
+      "y": 1018,
+      "w": 384,
+      "size": 18,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "",
+      "x": 166,
+      "y": 1050,
+      "w": 190,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Position 2",
+      "x": 252,
+      "y": 1052,
+      "w": 220,
+      "size": 18,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "Leider",
+      "x": 170,
+      "y": 1083,
+      "w": 90,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "habe",
+      "x": 252,
+      "y": 1083,
+      "w": 70,
+      "size": 17,
+      "bold": false,
+      "serif": true,
+      "color": "#ae2430"
+    },
+    {
+      "text": "ich doch keine Zeit.",
+      "x": 339,
+      "y": 1083,
+      "w": 227,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Ich",
+      "x": 170,
+      "y": 1130,
+      "w": 90,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "habe",
+      "x": 252,
+      "y": 1130,
+      "w": 70,
+      "size": 17,
+      "bold": false,
+      "serif": true,
+      "color": "#ae2430"
+    },
+    {
+      "text": "leider doch keine Zeit.",
+      "x": 339,
+      "y": 1130,
+      "w": 227,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "sich verabreden",
+      "x": 582,
+      "y": 884,
+      "w": 462,
+      "size": 18,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "Hast du heute Abend /\nam … Zeit?\nKannst du heute Abend /\nam …?",
+      "x": 582,
+      "y": 916,
+      "w": 205,
+      "size": 16,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Ja, klar.\nDas weiß ich noch nicht.\nVielleicht.\nHeute Abend / Am … habe ich\nleider keine Zeit.",
+      "x": 793,
+      "y": 916,
+      "w": 251,
+      "size": 16,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "einen Vorschlag machen und darauf reagieren",
+      "x": 582,
+      "y": 1035,
+      "w": 462,
+      "size": 18,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "Gehen wir ins Kino / …?\nVielleicht können wir\nmorgen Abend in(s) …\ngehen?\nLust auf Schwimmbad?",
+      "x": 582,
+      "y": 1067,
+      "w": 205,
+      "size": 16,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Gute Idee! / Okay!\nNein, leider nicht. Ich habe keine\nZeit.\nTut mir leid, ich habe keine Lust.\nIch kann leider nicht. Ich gehe …",
+      "x": 793,
+      "y": 1067,
+      "w": 251,
+      "size": 16,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Verabredungen absagen",
+      "x": 582,
+      "y": 1213,
+      "w": 462,
+      "size": 18,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "Ich kann leider doch nicht kommen.",
+      "x": 582,
+      "y": 1245,
+      "w": 450,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "einen Zeitpunkt angeben",
+      "x": 582,
+      "y": 1291,
+      "w": 462,
+      "size": 18,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "Wann denn?",
+      "x": 582,
+      "y": 1323,
+      "w": 130,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Am Dienstag / Abend / Mittwochabend / …\num … Uhr.\nUm drei / halb vier.",
+      "x": 718,
+      "y": 1323,
+      "w": 326,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Uhrzeit",
+      "x": 582,
+      "y": 1412,
+      "w": 462,
+      "size": 18,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "Wie spät ist es? /\nWie viel Uhr ist es?",
+      "x": 582,
+      "y": 1444,
+      "w": 178,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Es ist Viertel vor drei / halb sechs.",
+      "x": 766,
+      "y": 1444,
+      "w": 278,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "48   |   achtundvierzig",
+      "x": 136,
+      "y": 1500,
+      "w": 300,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    }
+  ],
+  "hidePageNumber": true,
+  "taskColor": "#8e0846"
+}

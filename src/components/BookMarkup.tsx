@@ -1,10 +1,20 @@
+import {ClipMarkers} from './ClipMarkers';
+import {NativePage} from './NativePage';
+import {NativePilot} from './NativePilot';
+import {NativeKB12} from '../native-kb12/NativeKB12';
+import {NativeAB11Next45} from '../native-ab11/NativeAB11Next45';
+import {NativeAB11Lessons45} from '../native-ab11/NativeAB11Lessons45';
+import {NativeAB11Module1} from '../native-ab11/NativeAB11Module1';
+import {NativeAB11Next} from '../native-ab11/NativeAB11Next';
+import {NativeAB11} from '../native-ab11/NativeAB11';
+import {NativeKb11} from './NativeKb11';
 import {HybridScan} from './HybridScan';
 import {NativeAB12} from './NativeAB12';
 import {scanData} from '../scan-data/registry';
 import {WordBank} from '../exercises/WordBank';
 import {RatingDot} from '../persistence/RatingDot';
 import {TaskControl, TaskFeedback, TaskMode} from '../exercises/CustomTasks';
-import {createElement, memo} from 'react';
+import {createElement, memo, Fragment, useLayoutEffect} from 'react';
 import type {ReactNode} from 'react';
 import {CoverSocials} from './CoverSocials';
 import {SelectionControls} from '../meanings/SelectionControls';
@@ -33,7 +43,19 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   if (typeof node === 'string') return node;
   const [tag, attrs, children] = node;
   const props: Props = {key};
+  // Legacy adapters still write this marker; it is no longer a toolbar item.
+  if (attrs.id === 'progress') return createElement('span', {key, id: 'progress', hidden: true, 'aria-hidden': true, style: {display: 'none'}});
+  if(tag === 'ClipButton')return createElement(ClipMarkers,{key,book:'kb-a11',page:'',number:Number(attrs.number)});
+  if(tag === 'NativePage')return createElement(NativePage,{key,book:attrs.book,page:attrs.page});
+  if(tag === 'NativePilot')return createElement(NativePilot,{key,page:attrs.page});
+  if(tag === 'NativeKB12')return createElement(NativeKB12,{key,page:attrs.page});
   if(tag === 'NativeAB12')return createElement(NativeAB12,{key,page:attrs.page});
+  if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['38','39','40'].includes(String(attrs.page)))return createElement(NativeAB11Next45,{key,page:String(attrs.page)});
+  if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['30','31','32','33','34','35','36','37'].includes(String(attrs.page)))return createElement(NativeAB11Lessons45,{key,page:String(attrs.page)});
+  if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['20','21','22','23','24','25','26','27','28'].includes(String(attrs.page)))return createElement(NativeAB11Module1,{key,page:String(attrs.page)});
+  if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['12','13','14','15','16','17','18','19'].includes(String(attrs.page)))return createElement(NativeAB11Next,{key,page:String(attrs.page)});
+  if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['6','7','8','9','10','11'].includes(String(attrs.page)))return createElement(NativeAB11,{key,page:String(attrs.page)});
+  if(tag === 'NativeKb11')return createElement(NativeKb11,{key,page:attrs.page});
   if(tag === 'HybridScan'){const data=scanData[attrs.book+':'+attrs.page];return data ? createElement(HybridScan,{key,data}) : null;}
   if (tag === 'ReactTaskMode') return createElement(TaskMode, {key, kind: attrs.kind});
   if (tag === 'ReactSelectionControls') return createElement(SelectionControls, {key});
@@ -88,5 +110,23 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
 // The printed content is immutable. PageFlip and exercise adapters own their
 // documented DOM islands until their React ports replace those adapters.
 export const BookMarkup = memo(function BookMarkup({nodes, quizEnabled = false}: {nodes: MarkupNode[]; quizEnabled?: boolean}) {
-  return <>{nodes.map((node, i) => render(node, i, null, quizEnabled))}</>;
+  const controls = nodes.find(node => Array.isArray(node) && node[1].class === 'controls');
+  const navigation = controls && typeof controls !== 'string' ? controls[2].filter(node => Array.isArray(node) && ['prev', 'pageJump', 'next'].includes(node[1].id)) : [];
+  useLayoutEffect(() => {
+    if (!navigation.length) return;
+    const header = document.querySelector<HTMLElement>('header:not(.page header)');
+    const bar = document.querySelector<HTMLElement>('.controls');
+    const sync = () => {
+      document.body.classList.add('readerSplitControls');
+      document.body.style.setProperty('--reader-header-height', `${header?.getBoundingClientRect().height || 60}px`);
+      document.body.style.setProperty('--reader-controls-height', `${bar?.getBoundingClientRect().height || 56}px`);
+    };
+    const observer = new ResizeObserver(sync);if(header)observer.observe(header);if(bar)observer.observe(bar);sync();
+    return () => {observer.disconnect();document.body.classList.remove('readerSplitControls');};
+  }, [nodes]);
+  return <>{nodes.map((node, i) => {
+    if (typeof node !== 'string' && node[1].class === 'controls') return render([node[0],node[1],node[2].filter(child => !navigation.includes(child))], i, null, quizEnabled);
+    if (typeof node !== 'string' && node[0] === 'header' && navigation.length) return <Fragment key={i}>{render(node, i, null, quizEnabled)}<nav className="readerPageNavigation" aria-label="Page navigation">{navigation.map((child, n) => render(child, `page-nav-${n}`, null, quizEnabled))}</nav></Fragment>;
+    return render(node, i, null, quizEnabled);
+  })}</>;
 });

@@ -1,0 +1,854 @@
+{
+  "book": "kb-a11",
+  "page": 44,
+  "width": 1075,
+  "height": 1521,
+  "words": [],
+  "art": [
+    {
+      "src": "assets/book-crops/native-p44-feuerzeug.png",
+      "x": 477,
+      "y": 282,
+      "w": 54,
+      "h": 53,
+      "name": "feuerzeug"
+    },
+    {
+      "src": "assets/book-crops/native-p44-rauchen.png",
+      "x": 480,
+      "y": 342,
+      "w": 51,
+      "h": 38,
+      "name": "rauchen"
+    },
+    {
+      "src": "assets/book-crops/native-p44-auto.png",
+      "x": 475,
+      "y": 396,
+      "w": 85,
+      "h": 32,
+      "name": "auto"
+    },
+    {
+      "src": "assets/book-crops/native-p44-karten.png",
+      "x": 866,
+      "y": 390,
+      "w": 74,
+      "h": 51,
+      "name": "karten"
+    },
+    {
+      "src": "assets/book-crops/native-p44-comic.png",
+      "x": 518,
+      "y": 544,
+      "w": 529,
+      "h": 270,
+      "name": "comic"
+    },
+    {
+      "src": "assets/book-crops/native-p44-dice0.png",
+      "x": 185,
+      "y": 441,
+      "w": 141,
+      "h": 32,
+      "name": "Würfel 1"
+    },
+    {
+      "src": "assets/book-crops/native-p44-dice1.png",
+      "x": 185,
+      "y": 544,
+      "w": 74,
+      "h": 32,
+      "name": "Würfel 2"
+    },
+    {
+      "src": "assets/book-crops/native-p44-dice2.png",
+      "x": 185,
+      "y": 619,
+      "w": 112,
+      "h": 31,
+      "name": "Würfel 3"
+    }
+  ],
+  "fields": [],
+  "audio": [],
+  "groups": [],
+  "titles": [
+    [
+      "10",
+      139,
+      228
+    ]
+  ],
+  "review": {
+    "status": "source-reviewed-reference",
+    "sourceNotes": [
+      "Manually transcribed from the original printed page into native coherent text blocks; punctuation, native labels and illustrated framing reviewed at full reading scale.",
+      "Reference and open speaking/discussion tasks only: no fixed-answer grading or synthetic answer controls."
+    ]
+  },
+  "decorations": [],
+  "panels": [],
+  "shapes": [
+    {
+      "x": 138,
+      "y": 889,
+      "w": 390,
+      "h": 25,
+      "background": "#f5efc8",
+      "border": "none"
+    },
+    {
+      "x": 552,
+      "y": 887,
+      "w": 484,
+      "h": 25,
+      "background": "#f5efc8",
+      "border": "none"
+    },
+    {
+      "x": 553,
+      "y": 996,
+      "w": 483,
+      "h": 25,
+      "background": "#f5efc8",
+      "border": "none"
+    },
+    {
+      "x": 553,
+      "y": 1094,
+      "w": 483,
+      "h": 25,
+      "background": "#f5efc8",
+      "border": "none"
+    },
+    {
+      "x": 553,
+      "y": 1378,
+      "w": 483,
+      "h": 25,
+      "background": "#f5efc8",
+      "border": "none"
+    },
+    {
+      "x": 139,
+      "y": 948,
+      "w": 389,
+      "h": 1,
+      "background": "#cac9b7",
+      "border": "none"
+    },
+    {
+      "x": 139,
+      "y": 979,
+      "w": 389,
+      "h": 1,
+      "background": "#cac9b7",
+      "border": "none"
+    },
+    {
+      "x": 139,
+      "y": 1010,
+      "w": 389,
+      "h": 1,
+      "background": "#cac9b7",
+      "border": "none"
+    },
+    {
+      "x": 139,
+      "y": 1041,
+      "w": 389,
+      "h": 1,
+      "background": "#cac9b7",
+      "border": "none"
+    },
+    {
+      "x": 139,
+      "y": 1072,
+      "w": 389,
+      "h": 1,
+      "background": "#cac9b7",
+      "border": "none"
+    },
+    {
+      "x": 139,
+      "y": 1104,
+      "w": 389,
+      "h": 1,
+      "background": "#cac9b7",
+      "border": "none"
+    },
+    {
+      "x": 139,
+      "y": 1134,
+      "w": 389,
+      "h": 1,
+      "background": "#cac9b7",
+      "border": "none"
+    },
+    {
+      "x": 138,
+      "y": 889,
+      "w": 390,
+      "h": 245,
+      "background": "transparent",
+      "border": "1px solid #e1dec6"
+    },
+    {
+      "x": 138,
+      "y": 1148,
+      "w": 390,
+      "h": 165,
+      "background": "transparent",
+      "border": "1px solid #e1dec6"
+    },
+    {
+      "x": 552,
+      "y": 887,
+      "w": 484,
+      "h": 83,
+      "background": "transparent",
+      "border": "1px solid #e1dec6"
+    },
+    {
+      "x": 552,
+      "y": 995,
+      "w": 484,
+      "h": 80,
+      "background": "transparent",
+      "border": "1px solid #e1dec6"
+    },
+    {
+      "x": 552,
+      "y": 1094,
+      "w": 484,
+      "h": 266,
+      "background": "transparent",
+      "border": "1px solid #e1dec6"
+    },
+    {
+      "x": 552,
+      "y": 1378,
+      "w": 484,
+      "h": 61,
+      "background": "transparent",
+      "border": "1px solid #e1dec6"
+    },
+    {
+      "x": 553,
+      "y": 1171,
+      "w": 483,
+      "h": 1,
+      "background": "#cac9b7",
+      "border": "none"
+    },
+    {
+      "x": 553,
+      "y": 1225,
+      "w": 483,
+      "h": 1,
+      "background": "#cac9b7",
+      "border": "none"
+    },
+    {
+      "x": 553,
+      "y": 1304,
+      "w": 483,
+      "h": 1,
+      "background": "#cac9b7",
+      "border": "none"
+    },
+    {
+      "x": 710,
+      "y": 1120,
+      "w": 1,
+      "h": 240,
+      "background": "#cac9b7",
+      "border": "none"
+    }
+  ],
+  "module": {
+    "n": "7",
+    "x": 34,
+    "y": 117,
+    "color": "#173580"
+  },
+  "textBlocks": [
+    {
+      "x": 126,
+      "y": 181,
+      "w": 850,
+      "text": "SPRECHTRAINING",
+      "size": 31,
+      "bold": false,
+      "serif": true,
+      "color": "#a99e72"
+    },
+    {
+      "x": 178,
+      "y": 228,
+      "w": 430,
+      "text": "Um etwas bitten",
+      "size": 21,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "x": 139,
+      "y": 265,
+      "w": 480,
+      "text": "a   Arbeiten Sie zu zweit. Würfeln Sie eine Antwort.\n    Fragen und antworten Sie dann.",
+      "size": 18,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "x": 169,
+      "y": 327,
+      "w": 310,
+      "text": "1  ■ Kann ich mal telefonieren?",
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 169,
+      "y": 365,
+      "w": 310,
+      "text": "2  ■ Kann ich hier rauchen?",
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 169,
+      "y": 403,
+      "w": 310,
+      "text": "3  ■ Kann ich das Auto haben?",
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 650,
+      "y": 261,
+      "w": 380,
+      "text": "b   Warum können Sie noch bitten?\n    Schreiben Sie vier Fragen auf Karten.",
+      "size": 18,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "x": 723,
+      "y": 337,
+      "w": 168,
+      "text": "Kann ich das\nFeuerzeug haben?",
+      "size": 16,
+      "bold": false,
+      "serif": false,
+      "color": "#3154a7"
+    },
+    {
+      "x": 670,
+      "y": 420,
+      "w": 185,
+      "text": "Legen Sie die Karten\nauf einen Stapel.",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 650,
+      "y": 479,
+      "w": 390,
+      "text": "c   Spielen Sie zu viert. Ziehen Sie Karten.\n    Fragen und antworten Sie dann.",
+      "size": 18,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "x": 212,
+      "y": 475,
+      "w": 310,
+      "text": "Ja, klar. / Ja, natürlich. /\n   Ja, gern.",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 212,
+      "y": 575,
+      "w": 310,
+      "text": "Nicht so gern.",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 212,
+      "y": 657,
+      "w": 310,
+      "text": "Nein, das geht leider nicht. /\n   Nein, tut mir leid.",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 133,
+      "y": 853,
+      "w": 410,
+      "text": "GRAMMATIK",
+      "size": 31,
+      "bold": false,
+      "serif": true,
+      "color": "#a99e72"
+    },
+    {
+      "x": 552,
+      "y": 853,
+      "w": 490,
+      "text": "KOMMUNIKATION",
+      "size": 31,
+      "bold": false,
+      "serif": true,
+      "color": "#a99e72"
+    },
+    {
+      "x": 143,
+      "y": 892,
+      "w": 380,
+      "text": "Modalverb können: Konjugation",
+      "size": 18,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "x": 246,
+      "y": 922,
+      "w": 190,
+      "text": "können",
+      "size": 19,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "x": 143,
+      "y": 952,
+      "w": 100,
+      "text": "ich",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 247,
+      "y": 952,
+      "w": 250,
+      "text": "kann",
+      "size": 19,
+      "bold": false,
+      "serif": true,
+      "color": "#a21c2b"
+    },
+    {
+      "x": 143,
+      "y": 983,
+      "w": 100,
+      "text": "du",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 247,
+      "y": 983,
+      "w": 250,
+      "text": "kannst",
+      "size": 19,
+      "bold": false,
+      "serif": true,
+      "color": "#a21c2b"
+    },
+    {
+      "x": 143,
+      "y": 1014,
+      "w": 100,
+      "text": "er/sie",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 247,
+      "y": 1014,
+      "w": 250,
+      "text": "kann",
+      "size": 19,
+      "bold": false,
+      "serif": true,
+      "color": "#a21c2b"
+    },
+    {
+      "x": 143,
+      "y": 1045,
+      "w": 100,
+      "text": "wir",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 247,
+      "y": 1045,
+      "w": 250,
+      "text": "können",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 143,
+      "y": 1076,
+      "w": 100,
+      "text": "ihr",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 247,
+      "y": 1076,
+      "w": 250,
+      "text": "könnt",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 143,
+      "y": 1107,
+      "w": 100,
+      "text": "sie/Sie",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 247,
+      "y": 1107,
+      "w": 250,
+      "text": "können",
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 143,
+      "y": 1151,
+      "w": 380,
+      "text": "Modalverben: Satzklammer",
+      "size": 18,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "x": 143,
+      "y": 1183,
+      "w": 88,
+      "text": "Aussage",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 226,
+      "y": 1183,
+      "w": 70,
+      "text": "Du",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 300,
+      "y": 1183,
+      "w": 75,
+      "text": "kannst",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 379,
+      "y": 1183,
+      "w": 103,
+      "text": "wirklich\nsuper\nGitarre",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 478,
+      "y": 1183,
+      "w": 55,
+      "text": "spielen.",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 143,
+      "y": 1258,
+      "w": 90,
+      "text": "Frage/\nBitte",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 226,
+      "y": 1258,
+      "w": 75,
+      "text": "Kannst",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 307,
+      "y": 1258,
+      "w": 104,
+      "text": "du das noch\neinmal",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 435,
+      "y": 1258,
+      "w": 95,
+      "text": "sagen?",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 560,
+      "y": 890,
+      "w": 475,
+      "text": "Komplimente machen und sich bedanken",
+      "size": 18,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "x": 560,
+      "y": 924,
+      "w": 475,
+      "text": "Sie können ja/wirklich/aber/toll/super/sehr gut tanzen ...",
+      "size": 16,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 560,
+      "y": 955,
+      "w": 475,
+      "text": "Vielen Dank! / Oh, danke! / Danke sehr! / Herzlichen Dank.",
+      "size": 16,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 560,
+      "y": 999,
+      "w": 475,
+      "text": "Fähigkeiten",
+      "size": 18,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "x": 560,
+      "y": 1031,
+      "w": 475,
+      "text": "Ich kann (gar) nicht / nicht so gut / ein bisschen / (sehr)\n  gut singen/...",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 560,
+      "y": 1097,
+      "w": 475,
+      "text": "über Hobbys sprechen",
+      "size": 18,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "x": 560,
+      "y": 1130,
+      "w": 157,
+      "text": "Was sind deine\n  Hobbys?",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 715,
+      "y": 1130,
+      "w": 321,
+      "text": "Meine Hobbys sind ... und ...\nMein Hobby ist ...",
+      "size": 16,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 560,
+      "y": 1180,
+      "w": 157,
+      "text": "Was machst du in\n  der Freizeit?",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 715,
+      "y": 1180,
+      "w": 321,
+      "text": "Ich ... gern. Das macht Spaß.\nIch liebe ...",
+      "size": 16,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 560,
+      "y": 1235,
+      "w": 157,
+      "text": "Fährst du gern\n  Ski/Rad/...?",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 715,
+      "y": 1235,
+      "w": 321,
+      "text": "Nein, ich kann nicht Ski/Rad/... fahren.\nNein, ich fahre nicht gern Ski/Rad/...\nIch lese gern und treffe Freunde.",
+      "size": 16,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 560,
+      "y": 1310,
+      "w": 157,
+      "text": "Wie oft gehst du\n  ins Kino ...?",
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 715,
+      "y": 1310,
+      "w": 321,
+      "text": "Ich gehe oft/manchmal/nie ins Kino.\nMein Lieblingsfilm/Lieblings-... ist ...",
+      "size": 16,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 560,
+      "y": 1381,
+      "w": 475,
+      "text": "um etwas bitten",
+      "size": 18,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "x": 560,
+      "y": 1412,
+      "w": 475,
+      "text": "Kann ich mal telefonieren / hier rauchen?",
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 73,
+      "y": 1456,
+      "w": 400,
+      "text": "Modul 3    44  |  vierundvierzig",
+      "size": 16,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "x": 194,
+      "y": 475,
+      "w": 25,
+      "text": "▲",
+      "size": 18,
+      "color": "#1ca33f"
+    },
+    {
+      "x": 194,
+      "y": 575,
+      "w": 25,
+      "text": "▲",
+      "size": 18,
+      "color": "#1ca33f"
+    },
+    {
+      "x": 194,
+      "y": 657,
+      "w": 25,
+      "text": "▲",
+      "size": 18,
+      "color": "#1ca33f"
+    },
+    {
+      "x": 608,
+      "y": 550,
+      "w": 180,
+      "text": "Kann ich das Feuer-\nzeug haben?",
+      "size": 18,
+      "serif": true
+    },
+    {
+      "x": 883,
+      "y": 652,
+      "w": 57,
+      "text": "Ja,\ngern.",
+      "size": 18,
+      "serif": true
+    },
+    {
+      "text": "AB",
+      "x": 96,
+      "y": 235,
+      "w": 120,
+      "size": 12,
+      "rotate": 0
+    },
+    {
+      "text": "Audiotraining",
+      "x": 110,
+      "y": 880,
+      "w": 120,
+      "size": 12,
+      "rotate": -90
+    },
+    {
+      "text": "Karaoke",
+      "x": 110,
+      "y": 1015,
+      "w": 120,
+      "size": 12,
+      "rotate": -90
+    }
+  ],
+  "hidePageNumber": true
+}
