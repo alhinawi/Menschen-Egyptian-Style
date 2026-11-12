@@ -1462,6 +1462,8 @@
   "status": "partial",
   "verifiedWords": 207,
   "totalWords": 207,
-  "notes": []
+  "notes": [
+   "Activation reviewed on a five-page visual sample (71,76,88,98,105): word boxes align with printed text, but these are partial OCR-derived layers. verifiedWords was supplied as the retained-word count by the worker, not an independent word-by-word audit. Some handwriting, symbols, fragments and printed words may be omitted or imperfect. No exercise fields or audio added."
+  ]
  }
 }
