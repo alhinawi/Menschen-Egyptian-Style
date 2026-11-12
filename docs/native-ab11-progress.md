@@ -139,3 +139,11 @@ Three more native pages bring this lane to54 of95 assigned pages,41 remaining. S
 - Original hobby, food and person illustrations are contained crops. Selectable source examples remain visible, including the correct printed11 Uhr weekend entry. No source audio markers occur on these pages.
 - Page75's Rückblick activities, ability notes and person text and page76's calendar, weekend, shopping list and three-course menu are saved open writing, never falsely graded.
 - Chrome320/390 tests cover correct/wrong grammar checks, changed-feedback reset, all saved fields/confidence choices, meaning dialogs, loaded crops, no replacement selects, collisions and bounds. Typecheck/build, preceding71-73 and full hybrid320/390/550 pass. Actual untouched/filled pixels inspected against source scans; self-assessment/review spacing is compressed for visible full field frames and checks.
+
+## Batch 13: AB A1.1 pages 77-78
+
+Two more native pages bring this lane to56 of95 assigned pages,39 remaining. Separate page41-56 remains untouched.
+
+- Page77's complete literature story is selectable native text in two columns, with one contained source restaurant illustration. It is reading, not a falsely graded exercise. The source photo background is not used as a primary page scan.
+- Page78 has source transit dialogue prompts, the printed Flughafen/ankommen/einkaufen examples, original contained verb pictures, saved native verb fields and selectable native messages. Verb marking is saved and checked alongside the infinitives; missed verbs and extra non-verb marks fail. The printed kaufe/ein example remains fixed. No source audio markers occur on these pages.
+- Three closed checks sit below the tasks. Chrome320/390 tests cover right/wrong fields, changed-feedback reset, correct and extra word marks, saved fields/marks through reload, meaning dialogs, loaded art, no replacement selects, text/field/message/story/art collisions and bounds. Typecheck/build and full hybrid320/390/550 pass, with adjacent74-76 checked on the integrated branch. Actual untouched/filled pixels inspected against source scans. Page78 uses compressed spacing for full field frames and checks; the literature retains native source text rather than scan-primary treatment.
