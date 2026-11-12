@@ -4,3 +4,6 @@
 .mCanvas .mScore{grid-template-rows:20px repeat(3,20px);line-height:20px}.mCanvas .mOpen{outline-color:#53739e}.nativeAB11Module1[data-native-ab11-page='20'] .mField{outline-color:#53739e}
 .mCanvas .mTreeField .mField{background:#fff7a7!important;border-bottom-color:#d3bd46!important;box-shadow:0 0 0 6px #fffbd0}.mCanvas .mParagraph{position:absolute;font:17px/1.3 'Times New Roman',serif}.mInlineChoice button{border:0;background:transparent;font:inherit;min-height:0;margin:0;padding:0;color:inherit}.mInlineChoice .marked{background:#fff16b}
 .mCrossRow>span{border:1px solid #ddd;width:24px;height:20px;text-align:center;box-sizing:border-box;font:19px/20px Arial;color:#315e9f}.mCrossRow>span.solution{background:#dff9fb}
+/* Match the visible answer-frame treatment across the native AB pages. */
+.nativeAB11Module1 .mCanvas .mField{border:1px solid #8b9586!important;border-radius:2px!important;background-color:#fffef5!important}
+.nativeAB11Module1 .mCanvas .mArrow{border:1px solid #8b9586!important;border-radius:2px!important}
