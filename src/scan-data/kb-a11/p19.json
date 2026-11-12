@@ -1,0 +1,935 @@
+{
+  "book": "kb-a11",
+  "page": 19,
+  "image": "assets/kb-a11-p19.png",
+  "width": 1072,
+  "height": 1516,
+  "words": [
+    {
+      "text": "Marks",
+      "x": 211,
+      "y": 249,
+      "w": 57,
+      "h": 16
+    },
+    {
+      "text": "Familie",
+      "x": 276,
+      "y": 249,
+      "w": 69,
+      "h": 16
+    },
+    {
+      "text": "Sehen",
+      "x": 210,
+      "y": 288,
+      "w": 49,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 266,
+      "y": 288,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "das",
+      "x": 297,
+      "y": 287,
+      "w": 27,
+      "h": 16
+    },
+    {
+      "text": "Bildlexikon",
+      "x": 332,
+      "y": 287,
+      "w": 92,
+      "h": 15
+    },
+    {
+      "text": "an",
+      "x": 432,
+      "y": 292,
+      "w": 18,
+      "h": 10
+    },
+    {
+      "text": "und",
+      "x": 459,
+      "y": 287,
+      "w": 30,
+      "h": 15
+    },
+    {
+      "text": "hören",
+      "x": 497,
+      "y": 287,
+      "w": 47,
+      "h": 15
+    },
+    {
+      "text": "Sie.",
+      "x": 551,
+      "y": 287,
+      "w": 30,
+      "h": 15
+    },
+    {
+      "text": "Ergänzen",
+      "x": 589,
+      "y": 287,
+      "w": 76,
+      "h": 20
+    },
+    {
+      "text": "Sie",
+      "x": 672,
+      "y": 287,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "dann",
+      "x": 703,
+      "y": 286,
+      "w": 41,
+      "h": 15
+    },
+    {
+      "text": "die",
+      "x": 752,
+      "y": 286,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "Familienmitglieder.",
+      "x": 785,
+      "y": 285,
+      "w": 163,
+      "h": 21
+    },
+    {
+      "text": "Carl",
+      "x": 300,
+      "y": 352,
+      "w": 30,
+      "h": 14
+    },
+    {
+      "text": "Poppenreuther",
+      "x": 337,
+      "y": 352,
+      "w": 114,
+      "h": 14
+    },
+    {
+      "text": "Helga",
+      "x": 660,
+      "y": 351,
+      "w": 42,
+      "h": 14
+    },
+    {
+      "text": "Poppenreuther",
+      "x": 709,
+      "y": 351,
+      "w": 114,
+      "h": 14
+    },
+    {
+      "text": "Plural",
+      "x": 877,
+      "y": 420,
+      "w": 50,
+      "h": 14
+    },
+    {
+      "text": "meine",
+      "x": 877,
+      "y": 442,
+      "w": 47,
+      "h": 13
+    },
+    {
+      "text": "Eltern",
+      "x": 932,
+      "y": 441,
+      "w": 47,
+      "h": 14
+    },
+    {
+      "text": "deine",
+      "x": 877,
+      "y": 463,
+      "w": 41,
+      "h": 14
+    },
+    {
+      "text": "Großeltern",
+      "x": 931,
+      "y": 463,
+      "w": 84,
+      "h": 14
+    },
+    {
+      "text": "Bernd",
+      "x": 379,
+      "y": 516,
+      "w": 45,
+      "h": 14
+    },
+    {
+      "text": "Poppenreuther",
+      "x": 430,
+      "y": 516,
+      "w": 114,
+      "h": 18
+    },
+    {
+      "text": "Olga",
+      "x": 750,
+      "y": 515,
+      "w": 33,
+      "h": 18
+    },
+    {
+      "text": "Poppenreuther",
+      "x": 789,
+      "y": 514,
+      "w": 115,
+      "h": 19
+    },
+    {
+      "text": "Carl",
+      "x": 156,
+      "y": 659,
+      "w": 28,
+      "h": 12
+    },
+    {
+      "text": "und",
+      "x": 190,
+      "y": 659,
+      "w": 27,
+      "h": 12
+    },
+    {
+      "text": "Helga",
+      "x": 223,
+      "y": 659,
+      "w": 40,
+      "h": 17
+    },
+    {
+      "text": "Poppenreuther",
+      "x": 139,
+      "y": 681,
+      "w": 106,
+      "h": 17
+    },
+    {
+      "text": "sind",
+      "x": 251,
+      "y": 680,
+      "w": 30,
+      "h": 13
+    },
+    {
+      "text": "meine",
+      "x": 144,
+      "y": 703,
+      "w": 43,
+      "h": 12
+    },
+    {
+      "text": "Großeltern.",
+      "x": 193,
+      "y": 702,
+      "w": 81,
+      "h": 13
+    },
+    {
+      "text": "Angelica",
+      "x": 804,
+      "y": 716,
+      "w": 65,
+      "h": 19
+    },
+    {
+      "text": "Ich",
+      "x": 641,
+      "y": 845,
+      "w": 22,
+      "h": 12
+    },
+    {
+      "text": "bin",
+      "x": 668,
+      "y": 845,
+      "w": 23,
+      "h": 12
+    },
+    {
+      "text": "Helga.",
+      "x": 698,
+      "y": 844,
+      "w": 43,
+      "h": 18
+    },
+    {
+      "text": "Mein",
+      "x": 747,
+      "y": 845,
+      "w": 36,
+      "h": 12
+    },
+    {
+      "text": "Sohn",
+      "x": 789,
+      "y": 844,
+      "w": 35,
+      "h": 13
+    },
+    {
+      "text": "Was",
+      "x": 213,
+      "y": 856,
+      "w": 33,
+      "h": 14
+    },
+    {
+      "text": "sagen",
+      "x": 253,
+      "y": 860,
+      "w": 46,
+      "h": 16
+    },
+    {
+      "text": "andere",
+      "x": 307,
+      "y": 855,
+      "w": 56,
+      "h": 15
+    },
+    {
+      "text": "Familienmitglieder?",
+      "x": 372,
+      "y": 854,
+      "w": 165,
+      "h": 22
+    },
+    {
+      "text": "Spielen",
+      "x": 213,
+      "y": 880,
+      "w": 60,
+      "h": 21
+    },
+    {
+      "text": "Sie",
+      "x": 280,
+      "y": 881,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "Helga,",
+      "x": 312,
+      "y": 880,
+      "w": 51,
+      "h": 21
+    },
+    {
+      "text": "Bernd",
+      "x": 372,
+      "y": 880,
+      "w": 47,
+      "h": 15
+    },
+    {
+      "text": "oder",
+      "x": 426,
+      "y": 880,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "Angelica.",
+      "x": 469,
+      "y": 880,
+      "w": 77,
+      "h": 21
+    },
+    {
+      "text": "Enkel.",
+      "x": 668,
+      "y": 887,
+      "w": 44,
+      "h": 13
+    },
+    {
+      "text": "Er",
+      "x": 719,
+      "y": 888,
+      "w": 15,
+      "h": 12
+    },
+    {
+      "text": "heißt",
+      "x": 739,
+      "y": 887,
+      "w": 38,
+      "h": 13
+    },
+    {
+      "text": "Schreiben",
+      "x": 213,
+      "y": 954,
+      "w": 93,
+      "h": 17
+    },
+    {
+      "text": "Sie",
+      "x": 314,
+      "y": 955,
+      "w": 27,
+      "h": 16
+    },
+    {
+      "text": "vier",
+      "x": 348,
+      "y": 955,
+      "w": 37,
+      "h": 16
+    },
+    {
+      "text": "Namen",
+      "x": 393,
+      "y": 956,
+      "w": 65,
+      "h": 15
+    },
+    {
+      "text": "auf",
+      "x": 466,
+      "y": 954,
+      "w": 32,
+      "h": 17
+    },
+    {
+      "text": "einen",
+      "x": 503,
+      "y": 954,
+      "w": 52,
+      "h": 17
+    },
+    {
+      "text": "Zettel.",
+      "x": 563,
+      "y": 954,
+      "w": 63,
+      "h": 16
+    },
+    {
+      "text": "Wer",
+      "x": 213,
+      "y": 982,
+      "w": 33,
+      "h": 14
+    },
+    {
+      "text": "sind",
+      "x": 252,
+      "y": 981,
+      "w": 34,
+      "h": 15
+    },
+    {
+      "text": "die",
+      "x": 294,
+      "y": 981,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "Personen?",
+      "x": 327,
+      "y": 982,
+      "w": 84,
+      "h": 14
+    },
+    {
+      "text": "Die",
+      "x": 419,
+      "y": 981,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "anderen",
+      "x": 451,
+      "y": 981,
+      "w": 67,
+      "h": 15
+    },
+    {
+      "text": "raten.",
+      "x": 526,
+      "y": 984,
+      "w": 49,
+      "h": 12
+    },
+    {
+      "text": "Kollege/Kollegin",
+      "x": 219,
+      "y": 1019,
+      "w": 127,
+      "h": 21
+    },
+    {
+      "text": "Freund/Freundin",
+      "x": 363,
+      "y": 1019,
+      "w": 131,
+      "h": 18
+    },
+    {
+      "text": "Partner/Partnerin",
+      "x": 511,
+      "y": 1019,
+      "w": 137,
+      "h": 17
+    },
+    {
+      "text": "Ist",
+      "x": 237,
+      "y": 1058,
+      "w": 21,
+      "h": 14
+    },
+    {
+      "text": "Ewa",
+      "x": 265,
+      "y": 1058,
+      "w": 34,
+      "h": 14
+    },
+    {
+      "text": "deine",
+      "x": 305,
+      "y": 1057,
+      "w": 46,
+      "h": 15
+    },
+    {
+      "text": "Schwester?",
+      "x": 357,
+      "y": 1057,
+      "w": 95,
+      "h": 15
+    },
+    {
+      "text": "deine",
+      "x": 694,
+      "y": 1056,
+      "w": 46,
+      "h": 14
+    },
+    {
+      "text": "Freundin?",
+      "x": 747,
+      "y": 1055,
+      "w": 88,
+      "h": 15
+    },
+    {
+      "text": "Nein,",
+      "x": 237,
+      "y": 1083,
+      "w": 45,
+      "h": 16
+    },
+    {
+      "text": "Ewa",
+      "x": 290,
+      "y": 1083,
+      "w": 33,
+      "h": 14
+    },
+    {
+      "text": "ist",
+      "x": 330,
+      "y": 1083,
+      "w": 20,
+      "h": 14
+    },
+    {
+      "text": "nicht",
+      "x": 356,
+      "y": 1082,
+      "w": 45,
+      "h": 15
+    },
+    {
+      "text": "meine",
+      "x": 408,
+      "y": 1082,
+      "w": 52,
+      "h": 15
+    },
+    {
+      "text": "Schwester.",
+      "x": 466,
+      "y": 1082,
+      "w": 90,
+      "h": 15
+    },
+    {
+      "text": "Ja,",
+      "x": 636,
+      "y": 1083,
+      "w": 23,
+      "h": 16
+    },
+    {
+      "text": "das",
+      "x": 666,
+      "y": 1081,
+      "w": 27,
+      "h": 15
+    },
+    {
+      "text": "ist",
+      "x": 699,
+      "y": 1082,
+      "w": 21,
+      "h": 14
+    },
+    {
+      "text": "richtig.",
+      "x": 726,
+      "y": 1081,
+      "w": 62,
+      "h": 20
+    },
+    {
+      "text": "Ewa",
+      "x": 796,
+      "y": 1082,
+      "w": 34,
+      "h": 13
+    },
+    {
+      "text": "ist",
+      "x": 836,
+      "y": 1081,
+      "w": 20,
+      "h": 14
+    },
+    {
+      "text": "meine",
+      "x": 863,
+      "y": 1081,
+      "w": 52,
+      "h": 14
+    },
+    {
+      "text": "Freundin.",
+      "x": 922,
+      "y": 1080,
+      "w": 84,
+      "h": 15
+    },
+    {
+      "text": "Familiengeschichten",
+      "x": 215,
+      "y": 1156,
+      "w": 196,
+      "h": 23
+    },
+    {
+      "text": "Interviewen",
+      "x": 215,
+      "y": 1183,
+      "w": 100,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 322,
+      "y": 1183,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "Ihre",
+      "x": 354,
+      "y": 1182,
+      "w": 31,
+      "h": 15
+    },
+    {
+      "text": "Partnerin",
+      "x": 394,
+      "y": 1183,
+      "w": 77,
+      "h": 14
+    },
+    {
+      "text": "Ihren",
+      "x": 495,
+      "y": 1182,
+      "w": 42,
+      "h": 15
+    },
+    {
+      "text": "Partner",
+      "x": 546,
+      "y": 1184,
+      "w": 61,
+      "h": 13
+    },
+    {
+      "text": "über",
+      "x": 614,
+      "y": 1182,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "ein",
+      "x": 658,
+      "y": 1182,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "Familienmitglied",
+      "x": 691,
+      "y": 1181,
+      "w": 142,
+      "h": 21
+    },
+    {
+      "text": "und",
+      "x": 842,
+      "y": 1181,
+      "w": 30,
+      "h": 15
+    },
+    {
+      "text": "machen",
+      "x": 880,
+      "y": 1181,
+      "w": 64,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 214,
+      "y": 1208,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "Notizen.",
+      "x": 246,
+      "y": 1208,
+      "w": 72,
+      "h": 15
+    },
+    {
+      "text": "Name",
+      "x": 220,
+      "y": 1246,
+      "w": 52,
+      "h": 16
+    },
+    {
+      "text": "Wie",
+      "x": 237,
+      "y": 1285,
+      "w": 31,
+      "h": 14
+    },
+    {
+      "text": "heißt",
+      "x": 274,
+      "y": 1284,
+      "w": 46,
+      "h": 15
+    },
+    {
+      "text": "dein",
+      "x": 326,
+      "y": 1284,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "Bruder?",
+      "x": 370,
+      "y": 1284,
+      "w": 67,
+      "h": 15
+    },
+    {
+      "text": "Er",
+      "x": 238,
+      "y": 1311,
+      "w": 17,
+      "h": 13
+    },
+    {
+      "text": "heißt",
+      "x": 261,
+      "y": 1309,
+      "w": 46,
+      "h": 15
+    },
+    {
+      "text": "Miguel.",
+      "x": 313,
+      "y": 1309,
+      "w": 63,
+      "h": 21
+    },
+    {
+      "text": "Was",
+      "x": 237,
+      "y": 1336,
+      "w": 33,
+      "h": 13
+    },
+    {
+      "text": "ist",
+      "x": 277,
+      "y": 1335,
+      "w": 20,
+      "h": 14
+    },
+    {
+      "text": "er",
+      "x": 303,
+      "y": 1340,
+      "w": 17,
+      "h": 9
+    },
+    {
+      "text": "von",
+      "x": 325,
+      "y": 1340,
+      "w": 31,
+      "h": 9
+    },
+    {
+      "text": "Beruf?",
+      "x": 363,
+      "y": 1334,
+      "w": 55,
+      "h": 15
+    },
+    {
+      "text": "neunzehn",
+      "x": 906,
+      "y": 1435,
+      "w": 77,
+      "h": 14
+    }
+  ],
+  "fields": [
+    {
+      "id": "carl",
+      "group": "familie",
+      "kind": "text",
+      "label": "Carl · Mark sagt",
+      "answer": "mein Großvater|mein Opa",
+      "x": 284,
+      "y": 370,
+      "w": 184,
+      "h": 23
+    },
+    {
+      "id": "helga",
+      "group": "familie",
+      "kind": "text",
+      "label": "Helga · Mark sagt",
+      "answer": "meine Großmutter|meine Oma",
+      "x": 647,
+      "y": 370,
+      "w": 184,
+      "h": 23
+    },
+    {
+      "id": "bernd",
+      "group": "familie",
+      "kind": "text",
+      "label": "Bernd · Mark sagt",
+      "answer": "mein Vater",
+      "x": 365,
+      "y": 534,
+      "w": 185,
+      "h": 23
+    },
+    {
+      "id": "olga",
+      "group": "familie",
+      "kind": "text",
+      "label": "Olga · Mark sagt",
+      "answer": "meine Mutter",
+      "x": 733,
+      "y": 534,
+      "w": 183,
+      "h": 23
+    },
+    {
+      "id": "eltern",
+      "group": "familie",
+      "kind": "text",
+      "label": "Bernd und Olga · Mark sagt",
+      "answer": "meine Eltern",
+      "x": 522,
+      "y": 609,
+      "w": 211,
+      "h": 23
+    },
+    {
+      "id": "angelica",
+      "group": "familie",
+      "kind": "text",
+      "label": "Angelica · Mark sagt",
+      "answer": "meine Schwester",
+      "x": 743,
+      "y": 734,
+      "w": 180,
+      "h": 23
+    }
+  ],
+  "groups": [
+    {
+      "id": "familie",
+      "label": "6a · Marks Familie"
+    }
+  ],
+  "audio": [
+    {
+      "id": "track20",
+      "src": "assets/kb-cd1-track20.mp3",
+      "label": "CD1 · Track 20",
+      "x": 119,
+      "y": 287,
+      "w": 16,
+      "h": 18
+    }
+  ],
+  "review": {
+    "status": "partial",
+    "verifiedWords": 119,
+    "notes": [
+      "Reviewed main printed text against scan; top family picture dictionary and handwriting/script examples still need additional word boxes. Some table words and merged OCR omitted.",
+      "Six family relationship blanks use the printed family-tree lines and Mark as reference, not legacy HTML or guessed listening keys. Grandparents model is printed and left unchanged. Speaking, interview notes and role-play not implemented."
+    ]
+  }
+}
