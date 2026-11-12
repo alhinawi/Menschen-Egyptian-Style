@@ -105,15 +105,15 @@ export function LibraryNav({slug}: {slug: string}) {
   if (!mod) return null;
 
   const pages = modulePages(slug);
-  const currentToken = pages[Math.min(pageIndex, pages.length - 1)] ?? '';
+  const currentToken = document.querySelectorAll<HTMLElement>('.page')[pageIndex]?.dataset.page ?? pages[Math.min(pageIndex, pages.length - 1)] ?? '';
   // Non-numbered pages: book covers and the index how-to page.
-  const special: Record<string, string> = {cover: 'Cover', abcover: 'Cover', howto: 'Guide'};
+  const special: Record<string, string> = {cover: 'Cover', abcover: 'Cover', howto: 'Guide', imprint: 'Imprint', 'inside-back-cover': 'Inside back cover', 'back-cover': 'Back cover'};
   const currentPage = currentToken in special ? null : Number(currentToken);
   const currentLesson = currentPage == null ? null : lessonForPage(mod, currentPage);
   const bookInfo = BOOKS.find(b => b.id === mod.book)!;
   const bookTag = mod.book === 'kb' ? 'KB' : 'AB';
   const pillText = currentPage == null
-    ? `${bookTag} ${mod.level} · ${special[currentToken] ?? 'Cover'}`
+    ? (['imprint', 'inside-back-cover', 'back-cover'].includes(currentToken) ? (currentToken === 'inside-back-cover' ? 'Inside cover' : special[currentToken]) : `${bookTag} ${mod.level} · ${special[currentToken] ?? 'Cover'}`)
     : `${bookTag} ${mod.level} · ${currentLesson?.short ?? 'p.' + currentPage}`;
   const pagePillText = currentPage == null ? (special[currentToken] ?? 'Cover') : String(currentPage);
 
@@ -214,6 +214,7 @@ export function LibraryNav({slug}: {slug: string}) {
             <div className="lnv-ss font-normal text-[11px] font-[Arial,sans-serif] text-[#8a7d63] mt-0.5 dark:text-[#9aa396]">{bookInfo.title} · {mod.level} — jump to any page</div>
           </div>
           <div className="lnv-sheetscroll flex-1 overflow-y-auto overscroll-contain touch-pan-y pb-7">
+            {slug === 'l21-24' && <div className="flex flex-col gap-2 px-5 py-3">{['imprint', 'inside-back-cover', 'back-cover'].map(token => <button type="button" key={token} className="lnv-pg h-9 rounded-md border" onClick={() => {close(); const idx = [...document.querySelectorAll<HTMLElement>('.page')].findIndex(p => p.dataset.page === token); const jump = document.querySelector<HTMLSelectElement>('#pageJump'); if (jump && idx >= 0) {jump.value = String(idx); jump.dispatchEvent(new Event('change', {bubbles: true}));}}}>{special[token]} (unnumbered)</button>)}</div>}
             {levelLessons(mod.book, mod.level).map(entry => (
               <div key={entry.slug + entry.label}>
                 <div className={'lnv-psec font-extrabold text-[10.5px] font-[Arial,sans-serif] tracking-[.13em] px-5 pt-3 pb-1.5' + (currentPage != null && entry.pages.includes(currentPage) ? ' cur text-[#a5832f] dark:text-[#d4b674] after:content-[""] after:inline-block after:size-1.5 after:rounded-full after:bg-[#c9a45a] after:ml-[7px] after:align-[1px]' : ' text-[var(--accent,#713c46)]')}>{entry.label.toUpperCase()}</div>
