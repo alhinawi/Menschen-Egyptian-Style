@@ -18,7 +18,7 @@ export function HybridScan({data}:{data:ScanData}){
  return <div className="hybridScan" data-scan-book={data.book} data-scan-page={data.page} data-review-status={data.review.status}>
   <div className="hybridCanvas" style={{aspectRatio:`${data.width}/${data.height}`,'--scan-ratio':data.width/data.height,'--hybrid-tool-space':data.audio.length||data.fields.some(f=>f.answer!==undefined)?toolSpace+'px':'0px'} as CSSProperties}>
    <img className="hybridImage" src={data.image} alt={`Originalbuch Seite ${data.page}`} draggable={false}/>
-   <div className="hybridWords">{data.words.map((w,i)=><span key={i} className="hybridWord tapWord" data-word={w.text} data-phrase={w.phrase||w.text} role="button" tabIndex={0} aria-label={`${w.text} · Bedeutung`} style={box(w)}>{w.text}</span>)}</div>
+   <div className="hybridWords">{data.words.map((w,i)=>/[A-Za-zÄÖÜäöüß]/.test(w.text)?<span key={i} className="hybridWord tapWord" data-word={w.text} data-phrase={w.phrase||w.text} role="button" tabIndex={0} aria-label={`${w.text} · Bedeutung`} style={box(w)}>{w.text}</span>:<span key={i} className="hybridWord" style={box(w)}>{w.text}</span>)}</div>
    <div className="hybridFields">{data.fields.map(f=>{
     const className='hybridField '+(results[f.id]===undefined?'':results[f.id]?'hybridCorrect':'hybridWrong');
     const props={key:f.id,className,style:box(f),'aria-label':f.label,'data-field-id':f.id};
