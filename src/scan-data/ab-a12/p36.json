@@ -1504,13 +1504,315 @@
    "h": 19
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p36-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "abschließen",
+   "x": 335,
+   "y": 325,
+   "w": 198,
+   "h": 22
+  },
+  {
+   "id": "p36-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "anmelden",
+   "x": 171,
+   "y": 372,
+   "w": 213,
+   "h": 22
+  },
+  {
+   "id": "p36-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d",
+   "answer": "haben",
+   "x": 675,
+   "y": 299,
+   "w": 215,
+   "h": 22
+  },
+  {
+   "id": "p36-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e",
+   "answer": "schaffen",
+   "x": 748,
+   "y": 325,
+   "w": 206,
+   "h": 22
+  },
+  {
+   "id": "p36-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 f",
+   "answer": "bekommen",
+   "x": 623,
+   "y": 372,
+   "w": 198,
+   "h": 22
+  },
+  {
+   "id": "p36-2b0",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "Anzeige",
+   "x": 690,
+   "y": 545,
+   "w": 224,
+   "h": 22
+  },
+  {
+   "id": "p36-2b1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "Sprachenschule",
+   "x": 530,
+   "y": 570,
+   "w": 227,
+   "h": 22
+  },
+  {
+   "id": "p36-2c2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c",
+   "answer": "Studienplatz",
+   "x": 578,
+   "y": 598,
+   "w": 227,
+   "h": 22
+  },
+  {
+   "id": "p36-2d3",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d",
+   "answer": "Ausbildung",
+   "x": 346,
+   "y": 648,
+   "w": 227,
+   "h": 22
+  },
+  {
+   "id": "p36-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "Ohne",
+   "x": 190,
+   "y": 777,
+   "w": 102,
+   "h": 22
+  },
+  {
+   "id": "p36-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "Ohne",
+   "x": 487,
+   "y": 804,
+   "w": 103,
+   "h": 22
+  },
+  {
+   "id": "p36-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "Mit",
+   "x": 190,
+   "y": 829,
+   "w": 100,
+   "h": 22
+  },
+  {
+   "id": "p36-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e",
+   "answer": "mit",
+   "x": 335,
+   "y": 855,
+   "w": 105,
+   "h": 22
+  },
+  {
+   "id": "p36-4b-einem",
+   "group": "g4",
+   "kind": "radio",
+   "label": "4 b einem",
+   "answer": "false",
+   "name": "4b",
+   "value": "einem",
+   "x": 255,
+   "y": 980,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p36-4b-einen",
+   "group": "g4",
+   "kind": "radio",
+   "label": "4 b einen",
+   "answer": "true",
+   "name": "4b",
+   "value": "einen",
+   "x": 359,
+   "y": 980,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p36-4c-meiner",
+   "group": "g4",
+   "kind": "radio",
+   "label": "4 c meiner",
+   "answer": "true",
+   "name": "4c",
+   "value": "meiner",
+   "x": 503,
+   "y": 1006,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p36-4c-meine",
+   "group": "g4",
+   "kind": "radio",
+   "label": "4 c meine",
+   "answer": "false",
+   "name": "4c",
+   "value": "meine",
+   "x": 615,
+   "y": 1006,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p36-4d-meinem",
+   "group": "g4",
+   "kind": "radio",
+   "label": "4 d meinem",
+   "answer": "false",
+   "name": "4d",
+   "value": "meinem",
+   "x": 256,
+   "y": 1032,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p36-4d-mein",
+   "group": "g4",
+   "kind": "radio",
+   "label": "4 d mein",
+   "answer": "true",
+   "name": "4d",
+   "value": "mein",
+   "x": 377,
+   "y": 1032,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p36-50",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 du",
+   "answer": "i",
+   "x": 279,
+   "y": 1191,
+   "w": 15,
+   "h": 22
+  },
+  {
+   "id": "p36-51",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 er/sie",
+   "answer": "i",
+   "x": 279,
+   "y": 1218,
+   "w": 15,
+   "h": 22
+  },
+  {
+   "id": "p36-52",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 wir",
+   "answer": "e",
+   "x": 279,
+   "y": 1254,
+   "w": 15,
+   "h": 22
+  },
+  {
+   "id": "p36-53",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 ihr",
+   "answer": "e",
+   "x": 279,
+   "y": 1282,
+   "w": 15,
+   "h": 22
+  },
+  {
+   "id": "p36-54",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 sie/Sie",
+   "answer": "e",
+   "x": 279,
+   "y": 1306,
+   "w": 15,
+   "h": 22
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 2"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 3"
+  },
+  {
+   "id": "g4",
+   "label": "Aufgabe 4"
+  },
+  {
+   "id": "g5",
+   "label": "Aufgabe 5"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the official Hueber Loesungsschluessel AB A1.2 (Lektion 17).",
+   "Ex 4a is the printed example and Ex 1a/2a/3a/5 'ich' are handwritten/printed examples, not fields. The letter-grid in Ex 1 is not mapped.",
+   "Boxes placed from word coordinates; not marked verified."
+  ],
   "verifiedWords": 214,
-  "totalWords": 214,
-  "notes": []
+  "totalWords": 214
  }
 }
