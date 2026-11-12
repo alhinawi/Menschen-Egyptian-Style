@@ -31,21 +31,21 @@
    "x": 282,
    "y": 250,
    "w": 42,
-   "h": 16
+   "h": 15
   },
   {
    "text": "Aufgabe",
    "x": 331,
-   "y": 248,
+   "y": 247,
    "w": 81,
-   "h": 23
+   "h": 24
   },
   {
    "text": "zu",
    "x": 421,
    "y": 254,
    "w": 23,
-   "h": 10
+   "h": 9
   },
   {
    "text": "Lektion",
@@ -55,25 +55,25 @@
    "h": 17
   },
   {
-   "text": "Q",
-   "x": 126,
-   "y": 301,
-   "w": 19,
-   "h": 19
+   "text": "2",
+   "x": 536,
+   "y": 245,
+   "w": 17,
+   "h": 18
   },
   {
    "text": "Was",
    "x": 201,
    "y": 302,
    "w": 37,
-   "h": 15
+   "h": 14
   },
   {
    "text": "ist",
    "x": 246,
-   "y": 301,
+   "y": 300,
    "w": 23,
-   "h": 15
+   "h": 16
   },
   {
    "text": "richtig?",
@@ -101,14 +101,14 @@
    "x": 472,
    "y": 303,
    "w": 21,
-   "h": 11
+   "h": 10
   },
   {
    "text": "und",
    "x": 502,
-   "y": 297,
+   "y": 296,
    "w": 34,
-   "h": 16
+   "h": 17
   },
   {
    "text": "vergleichen",
@@ -127,9 +127,9 @@
   {
    "text": "mit",
    "x": 693,
-   "y": 295,
+   "y": 294,
    "w": 32,
-   "h": 15
+   "h": 16
   },
   {
    "text": "dem",
@@ -147,31 +147,31 @@
   },
   {
    "text": "auf",
-   "x": 859,
-   "y": 287,
-   "w": 35,
-   "h": 29
+   "x": 861,
+   "y": 289,
+   "w": 40,
+   "h": 22
   },
   {
    "text": "Seite",
-   "x": 898,
-   "y": 291,
-   "w": 57,
-   "h": 16
+   "x": 901,
+   "y": 289,
+   "w": 54,
+   "h": 22
   },
   {
    "text": "78.",
    "x": 962,
-   "y": 292,
+   "y": 291,
    "w": 27,
    "h": 15
   },
   {
    "text": "Helga",
-   "x": 544,
-   "y": 330,
-   "w": 59,
-   "h": 33
+   "x": 557,
+   "y": 338,
+   "w": 46,
+   "h": 21
   },
   {
    "text": "Stiemer",
@@ -183,9 +183,9 @@
   {
    "text": "Carlos",
    "x": 701,
-   "y": 337,
+   "y": 336,
    "w": 51,
-   "h": 15
+   "h": 16
   },
   {
    "text": "Sonja",
@@ -196,23 +196,23 @@
   },
   {
    "text": "Bo",
-   "x": 841,
-   "y": 330,
-   "w": 33,
-   "h": 33
+   "x": 855,
+   "y": 336,
+   "w": 19,
+   "h": 13
   },
   {
    "text": "Martinson",
-   "x": 874,
+   "x": 880,
    "y": 334,
-   "w": 95,
-   "h": 16
+   "w": 89,
+   "h": 15
   },
   {
    "text": "a",
    "x": 211,
    "y": 379,
-   "w": 8,
+   "w": 7,
    "h": 9
   },
   {
@@ -227,27 +227,13 @@
    "x": 261,
    "y": 373,
    "w": 70,
-   "h": 15
+   "h": 14
   },
   {
    "text": "nicht.",
    "x": 338,
    "y": 372,
    "w": 48,
-   "h": 15
-  },
-  {
-   "text": "x",
-   "x": 555,
-   "y": 369,
-   "w": 10,
-   "h": 14
-  },
-  {
-   "text": "x",
-   "x": 701,
-   "y": 367,
-   "w": 9,
    "h": 14
   },
   {
@@ -260,7 +246,7 @@
   {
    "text": "Sie",
    "x": 231,
-   "y": 405,
+   "y": 404,
    "w": 23,
    "h": 14
   },
@@ -276,70 +262,70 @@
    "x": 303,
    "y": 403,
    "w": 44,
-   "h": 15
+   "h": 14
   },
   {
    "text": "verheiratet.",
    "x": 353,
    "y": 402,
    "w": 100,
-   "h": 15
+   "h": 14
   },
   {
    "text": "c",
    "x": 212,
-   "y": 440,
-   "w": 7,
-   "h": 9
+   "y": 439,
+   "w": 6,
+   "h": 10
   },
   {
    "text": "Sie",
    "x": 231,
-   "y": 436,
+   "y": 435,
    "w": 24,
-   "h": 13
+   "h": 14
   },
   {
    "text": "kommen",
-   "x": 262,
+   "x": 261,
    "y": 434,
-   "w": 72,
+   "w": 73,
    "h": 14
   },
   {
    "text": "nicht",
    "x": 341,
-   "y": 433,
+   "y": 432,
    "w": 44,
-   "h": 14
+   "h": 15
   },
   {
    "text": "aus",
    "x": 391,
    "y": 437,
    "w": 27,
-   "h": 10
+   "h": 9
   },
   {
    "text": "Deutschland.",
    "x": 425,
-   "y": 431,
+   "y": 430,
    "w": 109,
-   "h": 15
+   "h": 16
   },
   {
    "text": "d",
    "x": 212,
-   "y": 465,
-   "w": 9,
-   "h": 14
+   "y": 464,
+   "w": 8,
+   "h": 15
   },
   {
    "text": "Er",
-   "x": 232,
+   "x": 233,
    "y": 466,
-   "w": 18,
-   "h": 13
+   "w": 17,
+   "h": 12
   },
   {
    "text": "hat",
@@ -350,24 +336,24 @@
   },
   {
    "text": "keine",
-   "x": 290,
+   "x": 289,
    "y": 464,
-   "w": 45,
+   "w": 46,
    "h": 14
   },
   {
    "text": "Kinder.",
    "x": 342,
-   "y": 463,
+   "y": 462,
    "w": 60,
-   "h": 14
+   "h": 15
   },
   {
    "text": "e",
    "x": 212,
    "y": 500,
    "w": 7,
-   "h": 10
+   "h": 9
   },
   {
    "text": "Er",
@@ -381,20 +367,20 @@
    "x": 256,
    "y": 494,
    "w": 54,
-   "h": 15
+   "h": 14
   },
   {
    "text": "in",
    "x": 317,
-   "y": 495,
+   "y": 494,
    "w": 16,
-   "h": 13
+   "h": 14
   },
   {
    "text": "Essen.",
-   "x": 340,
+   "x": 341,
    "y": 495,
-   "w": 50,
+   "w": 49,
    "h": 13
   },
   {
@@ -402,20 +388,20 @@
    "x": 213,
    "y": 525,
    "w": 7,
-   "h": 15
+   "h": 14
   },
   {
    "text": "Sie",
    "x": 233,
-   "y": 526,
+   "y": 525,
    "w": 23,
-   "h": 14
+   "h": 15
   },
   {
    "text": "wohnt",
    "x": 263,
    "y": 524,
-   "w": 54,
+   "w": 53,
    "h": 15
   },
   {
@@ -433,23 +419,16 @@
    "h": 19
   },
   {
-   "text": "M",
-   "x": 122,
-   "y": 578,
-   "w": 27,
-   "h": 27
-  },
-  {
    "text": "Wählen",
    "x": 205,
-   "y": 579,
+   "y": 578,
    "w": 70,
-   "h": 16
+   "h": 17
   },
   {
    "text": "Sie",
    "x": 283,
-   "y": 579,
+   "y": 578,
    "w": 27,
    "h": 16
   },
@@ -463,16 +442,16 @@
   {
    "text": "Kursteilnehmerin",
    "x": 366,
-   "y": 576,
+   "y": 575,
    "w": 167,
-   "h": 17
+   "h": 18
   },
   {
    "text": "/",
-   "x": 541,
-   "y": 576,
+   "x": 540,
+   "y": 577,
    "w": 10,
-   "h": 19
+   "h": 16
   },
   {
    "text": "einen",
@@ -484,16 +463,16 @@
   {
    "text": "Kursteilnehmer",
    "x": 620,
-   "y": 573,
+   "y": 572,
    "w": 148,
-   "h": 17
+   "h": 18
   },
   {
    "text": "oder",
    "x": 775,
-   "y": 572,
+   "y": 571,
    "w": 43,
-   "h": 16
+   "h": 17
   },
   {
    "text": "einen",
@@ -519,7 +498,7 @@
   {
    "text": "Sie",
    "x": 440,
-   "y": 602,
+   "y": 601,
    "w": 27,
    "h": 16
   },
@@ -535,14 +514,14 @@
    "x": 516,
    "y": 599,
    "w": 99,
-   "h": 18
+   "h": 17
   },
   {
    "text": "und",
    "x": 621,
    "y": 599,
    "w": 35,
-   "h": 17
+   "h": 16
   },
   {
    "text": "schreiben",
@@ -554,9 +533,9 @@
   {
    "text": "Sie",
    "x": 763,
-   "y": 598,
+   "y": 597,
    "w": 27,
-   "h": 15
+   "h": 16
   },
   {
    "text": "einen",
@@ -573,58 +552,30 @@
    "h": 15
   },
   {
-   "text": "RN",
-   "x": 309,
-   "y": 651,
-   "w": 27,
-   "h": 8
+   "text": "STECKBRIEF",
+   "x": 209,
+   "y": 643,
+   "w": 185,
+   "h": 24
   },
   {
-   "text": "-",
-   "x": 534,
-   "y": 670,
-   "w": 1,
-   "h": 3
-  },
-  {
-   "text": "Das",
-   "x": 502,
-   "y": 670,
-   "w": 23,
-   "h": 14
-  },
-  {
-   "text": "ist",
-   "x": 534,
-   "y": 671,
-   "w": 16,
-   "h": 14
-  },
-  {
-   "text": "kommt",
-   "x": 523,
-   "y": 697,
-   "w": 46,
-   "h": 13
-  },
-  {
-   "text": "aus",
-   "x": 576,
-   "y": 701,
-   "w": 18,
-   "h": 10
+   "text": "Vorname:",
+   "x": 216,
+   "y": 690,
+   "w": 74,
+   "h": 24
   },
   {
    "text": "Familienname:",
    "x": 226,
    "y": 718,
    "w": 102,
-   "h": 14
+   "h": 13
   },
   {
    "text": "Herkunft:",
    "x": 227,
-   "y": 743,
+   "y": 742,
    "w": 66,
    "h": 14
   },
@@ -632,7 +583,7 @@
    "text": "Wohnort:",
    "x": 226,
    "y": 769,
-   "w": 66,
+   "w": 67,
    "h": 13
   },
   {
@@ -640,33 +591,89 @@
    "x": 228,
    "y": 793,
    "w": 41,
-   "h": 15
+   "h": 14
   },
   {
    "text": "Alter:",
    "x": 228,
-   "y": 820,
+   "y": 819,
    "w": 38,
-   "h": 13
+   "h": 14
   },
   {
    "text": "Familienstand:",
    "x": 230,
-   "y": 843,
+   "y": 842,
    "w": 102,
-   "h": 15
+   "h": 16
   },
   {
    "text": "Kinder:",
    "x": 230,
    "y": 870,
    "w": 50,
-   "h": 14
+   "h": 13
+  },
+  {
+   "text": "Das",
+   "x": 501,
+   "y": 672,
+   "w": 30,
+   "h": 15
+  },
+  {
+   "text": "ist",
+   "x": 535,
+   "y": 672,
+   "w": 20,
+   "h": 15
+  },
+  {
+   "text": "…",
+   "x": 560,
+   "y": 675,
+   "w": 16,
+   "h": 6
+  },
+  {
+   "text": "…",
+   "x": 501,
+   "y": 698,
+   "w": 16,
+   "h": 6
+  },
+  {
+   "text": "kommt",
+   "x": 523,
+   "y": 697,
+   "w": 46,
+   "h": 12
+  },
+  {
+   "text": "aus",
+   "x": 576,
+   "y": 700,
+   "w": 18,
+   "h": 11
+  },
+  {
+   "text": "…",
+   "x": 600,
+   "y": 701,
+   "w": 16,
+   "h": 6
+  },
+  {
+   "text": "…",
+   "x": 501,
+   "y": 724,
+   "w": 16,
+   "h": 6
   },
   {
    "text": "Wählen",
    "x": 169,
-   "y": 963,
+   "y": 962,
    "w": 77,
    "h": 17
   },
@@ -680,113 +687,99 @@
   {
    "text": "eine",
    "x": 291,
-   "y": 963,
+   "y": 962,
    "w": 42,
    "h": 16
   },
   {
    "text": "Aufgabe",
    "x": 341,
-   "y": 961,
+   "y": 960,
    "w": 81,
    "h": 23
   },
   {
    "text": "zu",
    "x": 430,
-   "y": 967,
+   "y": 962,
    "w": 23,
-   "h": 10
+   "h": 12
   },
   {
    "text": "Lektion",
-   "x": 462,
-   "y": 960,
-   "w": 76,
-   "h": 16
+   "x": 458,
+   "y": 959,
+   "w": 77,
+   "h": 17
   },
   {
-   "text": "El",
-   "x": 545,
+   "text": "3",
+   "x": 540,
    "y": 958,
-   "w": 18,
-   "h": 19
-  },
-  {
-   "text": "Q",
-   "x": 136,
-   "y": 1010,
-   "w": 18,
-   "h": 19
-  },
-  {
-   "text": "BEI",
-   "x": 169,
-   "y": 1008,
-   "w": 32,
-   "h": 21
+   "w": 17,
+   "h": 18
   },
   {
    "text": "Lesen",
    "x": 212,
-   "y": 1011,
+   "y": 1010,
    "w": 51,
    "h": 15
   },
   {
    "text": "Sie",
    "x": 270,
-   "y": 1009,
+   "y": 1008,
    "w": 27,
    "h": 16
   },
   {
    "text": "den",
    "x": 305,
-   "y": 1008,
+   "y": 1007,
    "w": 33,
-   "h": 16
+   "h": 17
   },
   {
    "text": "Stammbaum",
    "x": 346,
-   "y": 1007,
+   "y": 1006,
    "w": 118,
    "h": 17
   },
   {
    "text": "im",
    "x": 474,
-   "y": 1007,
+   "y": 1006,
    "w": 21,
-   "h": 15
+   "h": 16
   },
   {
    "text": "Kursbuch",
    "x": 505,
-   "y": 1005,
+   "y": 1004,
    "w": 88,
-   "h": 17
+   "h": 18
   },
   {
    "text": "auf",
-   "x": 601,
-   "y": 1004,
+   "x": 591,
+   "y": 1002,
    "w": 32,
-   "h": 17
+   "h": 20
   },
   {
    "text": "Seite",
-   "x": 638,
-   "y": 1004,
-   "w": 47,
+   "x": 627,
+   "y": 1003,
+   "w": 58,
    "h": 17
   },
   {
    "text": "19.",
-   "x": 693,
-   "y": 1005,
-   "w": 24,
+   "x": 690,
+   "y": 1004,
+   "w": 26,
    "h": 15
   },
   {
@@ -794,26 +787,26 @@
    "x": 724,
    "y": 1004,
    "w": 37,
-   "h": 15
+   "h": 14
   },
   {
    "text": "sagt",
    "x": 769,
-   "y": 1006,
-   "w": 40,
+   "y": 1005,
+   "w": 39,
    "h": 19
   },
   {
    "text": "Olga?",
    "x": 806,
-   "y": 997,
+   "y": 1003,
    "w": 62,
-   "h": 31
+   "h": 17
   },
   {
    "text": "„Ich",
    "x": 212,
-   "y": 1049,
+   "y": 1048,
    "w": 35,
    "h": 17
   },
@@ -821,132 +814,167 @@
    "text": "bin",
    "x": 253,
    "y": 1048,
-   "w": 28,
-   "h": 15
+   "w": 27,
+   "h": 14
   },
   {
    "text": "Olga.",
    "x": 287,
-   "y": 1048,
+   "y": 1047,
    "w": 41,
-   "h": 20
+   "h": 21
   },
   {
    "text": "Das",
    "x": 336,
-   "y": 1049,
+   "y": 1048,
    "w": 28,
    "h": 13
   },
   {
    "text": "ist",
    "x": 371,
-   "y": 1048,
+   "y": 1047,
    "w": 20,
    "h": 14
   },
   {
    "text": "mein",
    "x": 397,
-   "y": 1047,
+   "y": 1046,
    "w": 44,
-   "h": 14
+   "h": 15
   },
   {
    "text": "Mann.",
    "x": 447,
-   "y": 1048,
+   "y": 1047,
    "w": 54,
    "h": 13
+  },
+  {
+   "text": "Er",
+   "x": 510,
+   "y": 1046,
+   "w": 17,
+   "h": 13
+  },
+  {
+   "text": "heißt",
+   "x": 533,
+   "y": 1044,
+   "w": 46,
+   "h": 15
+  },
+  {
+   "text": ".",
+   "x": 765,
+   "y": 1048,
+   "w": 5,
+   "h": 6
   },
   {
    "text": "Ich",
    "x": 213,
    "y": 1086,
    "w": 26,
-   "h": 15
+   "h": 14
   },
   {
    "text": "habe",
    "x": 245,
-   "y": 1086,
+   "y": 1085,
    "w": 39,
    "h": 15
   },
   {
    "text": "zwei",
    "x": 292,
-   "y": 1086,
+   "y": 1085,
    "w": 37,
-   "h": 14
+   "h": 15
   },
   {
-   "text": "u",
-   "x": 411,
-   "y": 1100,
-   "w": 8,
-   "h": 1
+   "text": ".",
+   "x": 458,
+   "y": 1088,
+   "w": 5,
+   "h": 6
   },
   {
    "text": "Meine",
    "x": 213,
-   "y": 1125,
+   "y": 1124,
    "w": 52,
-   "h": 14
+   "h": 15
   },
   {
    "text": "Tochter",
    "x": 271,
    "y": 1123,
    "w": 64,
+   "h": 15
+  },
+  {
+   "text": "und",
+   "x": 625,
+   "y": 1118,
+   "w": 30,
    "h": 16
   },
   {
-   "text": "M",
-   "x": 131,
-   "y": 1211,
-   "w": 26,
-   "h": 26
+   "text": "mein",
+   "x": 677,
+   "y": 1119,
+   "w": 43,
+   "h": 14
+  },
+  {
+   "text": "“",
+   "x": 520,
+   "y": 1148,
+   "w": 10,
+   "h": 14
   },
   {
    "text": "Ihre",
    "x": 215,
-   "y": 1212,
+   "y": 1211,
    "w": 36,
    "h": 16
   },
   {
    "text": "Familie.",
    "x": 260,
-   "y": 1211,
+   "y": 1210,
    "w": 75,
-   "h": 16
+   "h": 17
   },
   {
    "text": "Was",
    "x": 342,
-   "y": 1212,
+   "y": 1211,
    "w": 37,
    "h": 14
   },
   {
    "text": "sagt",
    "x": 387,
-   "y": 1214,
+   "y": 1213,
    "w": 39,
    "h": 18
   },
   {
    "text": "Ihre",
    "x": 435,
-   "y": 1209,
+   "y": 1208,
    "w": 37,
    "h": 16
   },
   {
    "text": "Mutter",
    "x": 481,
-   "y": 1210,
+   "y": 1209,
    "w": 67,
    "h": 15
   },
@@ -955,61 +983,68 @@
    "x": 555,
    "y": 1209,
    "w": 10,
-   "h": 19
+   "h": 16
   },
   {
    "text": "Ihr",
    "x": 574,
    "y": 1207,
    "w": 26,
-   "h": 17
+   "h": 16
   },
   {
    "text": "Bruder",
    "x": 608,
-   "y": 1207,
+   "y": 1206,
    "w": 64,
    "h": 16
   },
   {
-   "text": "...?",
+   "text": "…?",
    "x": 680,
-   "y": 1207,
+   "y": 1208,
    "w": 28,
-   "h": 15
+   "h": 16
   },
   {
    "text": "Schreiben",
    "x": 714,
-   "y": 1205,
+   "y": 1204,
    "w": 94,
    "h": 17
   },
   {
    "text": "Sie.",
    "x": 815,
-   "y": 1205,
+   "y": 1204,
    "w": 33,
    "h": 16
   },
   {
    "text": "Ich",
    "x": 233,
-   "y": 1293,
+   "y": 1292,
    "w": 20,
    "h": 12
   },
   {
    "text": "heiße",
    "x": 261,
-   "y": 1291,
+   "y": 1290,
    "w": 38,
    "h": 17
   },
   {
+   "text": "…",
+   "x": 305,
+   "y": 1294,
+   "w": 16,
+   "h": 6
+  },
+  {
    "text": "Das",
    "x": 233,
-   "y": 1317,
+   "y": 1316,
    "w": 23,
    "h": 14
   },
@@ -1018,53 +1053,376 @@
    "x": 265,
    "y": 1316,
    "w": 16,
-   "h": 15
+   "h": 14
   },
   {
    "text": "mein/meine",
    "x": 289,
-   "y": 1314,
+   "y": 1313,
    "w": 77,
    "h": 18
   },
   {
-   "text": "Sie/er",
+   "text": "…",
+   "x": 372,
+   "y": 1317,
+   "w": 16,
+   "h": 6
+  },
+  {
+   "text": "Sie/Er",
    "x": 234,
    "y": 1341,
-   "w": 49,
-   "h": 18
-  },
-  {
-   "text": "28",
-   "x": 148,
-   "y": 1457,
-   "w": 16,
-   "h": 12
-  },
-  {
-   "text": "|",
-   "x": 180,
-   "y": 1455,
-   "w": 2,
-   "h": 15
-  },
-  {
-   "text": "achtundzwanzig",
-   "x": 199,
-   "y": 1455,
-   "w": 127,
+   "w": 48,
    "h": 17
+  },
+  {
+   "text": "…",
+   "x": 290,
+   "y": 1345,
+   "w": 16,
+   "h": 6
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "t-a-helga",
+   "group": "t1",
+   "kind": "checkbox",
+   "label": "Sie arbeiten nicht. – Helga Stiemer",
+   "answer": "true",
+   "x": 609,
+   "y": 370,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "t-a-carlos",
+   "group": "t1",
+   "kind": "checkbox",
+   "label": "Sie arbeiten nicht. – Carlos",
+   "answer": "true",
+   "x": 722,
+   "y": 370,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "t-a-sonja",
+   "group": "t1",
+   "kind": "checkbox",
+   "label": "Sie arbeiten nicht. – Sonja",
+   "answer": "false",
+   "x": 799,
+   "y": 370,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "t-a-bo",
+   "group": "t1",
+   "kind": "checkbox",
+   "label": "Sie arbeiten nicht. – Bo Martinson",
+   "answer": "false",
+   "x": 919,
+   "y": 370,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "t-b-helga",
+   "group": "t1",
+   "kind": "checkbox",
+   "label": "Sie sind nicht verheiratet. – Helga Stiemer",
+   "answer": "false",
+   "x": 609,
+   "y": 401,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "t-b-carlos",
+   "group": "t1",
+   "kind": "checkbox",
+   "label": "Sie sind nicht verheiratet. – Carlos",
+   "answer": "true",
+   "x": 722,
+   "y": 401,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "t-b-sonja",
+   "group": "t1",
+   "kind": "checkbox",
+   "label": "Sie sind nicht verheiratet. – Sonja",
+   "answer": "true",
+   "x": 799,
+   "y": 401,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "t-b-bo",
+   "group": "t1",
+   "kind": "checkbox",
+   "label": "Sie sind nicht verheiratet. – Bo Martinson",
+   "answer": "false",
+   "x": 919,
+   "y": 401,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "t-c-helga",
+   "group": "t1",
+   "kind": "checkbox",
+   "label": "Sie kommen nicht aus Deutschland. – Helga Stiemer",
+   "answer": "false",
+   "x": 609,
+   "y": 431,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "t-c-carlos",
+   "group": "t1",
+   "kind": "checkbox",
+   "label": "Sie kommen nicht aus Deutschland. – Carlos",
+   "answer": "true",
+   "x": 722,
+   "y": 431,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "t-c-sonja",
+   "group": "t1",
+   "kind": "checkbox",
+   "label": "Sie kommen nicht aus Deutschland. – Sonja",
+   "answer": "false",
+   "x": 799,
+   "y": 431,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "t-c-bo",
+   "group": "t1",
+   "kind": "checkbox",
+   "label": "Sie kommen nicht aus Deutschland. – Bo Martinson",
+   "answer": "true",
+   "x": 919,
+   "y": 431,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "t-d-helga",
+   "group": "t1",
+   "kind": "checkbox",
+   "label": "Er hat keine Kinder. – Helga Stiemer",
+   "answer": "false",
+   "x": 609,
+   "y": 462,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "t-d-carlos",
+   "group": "t1",
+   "kind": "checkbox",
+   "label": "Er hat keine Kinder. – Carlos",
+   "answer": "true",
+   "x": 722,
+   "y": 462,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "t-d-sonja",
+   "group": "t1",
+   "kind": "checkbox",
+   "label": "Er hat keine Kinder. – Sonja",
+   "answer": "false",
+   "x": 799,
+   "y": 462,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "t-d-bo",
+   "group": "t1",
+   "kind": "checkbox",
+   "label": "Er hat keine Kinder. – Bo Martinson",
+   "answer": "false",
+   "x": 919,
+   "y": 462,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "t-e-helga",
+   "group": "t1",
+   "kind": "checkbox",
+   "label": "Er wohnt in Essen. – Helga Stiemer",
+   "answer": "false",
+   "x": 609,
+   "y": 493,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "t-e-carlos",
+   "group": "t1",
+   "kind": "checkbox",
+   "label": "Er wohnt in Essen. – Carlos",
+   "answer": "false",
+   "x": 722,
+   "y": 493,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "t-e-sonja",
+   "group": "t1",
+   "kind": "checkbox",
+   "label": "Er wohnt in Essen. – Sonja",
+   "answer": "false",
+   "x": 799,
+   "y": 493,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "t-e-bo",
+   "group": "t1",
+   "kind": "checkbox",
+   "label": "Er wohnt in Essen. – Bo Martinson",
+   "answer": "true",
+   "x": 919,
+   "y": 493,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "t-f-helga",
+   "group": "t1",
+   "kind": "checkbox",
+   "label": "Sie wohnt in Leipzig. – Helga Stiemer",
+   "answer": "false",
+   "x": 609,
+   "y": 524,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "t-f-carlos",
+   "group": "t1",
+   "kind": "checkbox",
+   "label": "Sie wohnt in Leipzig. – Carlos",
+   "answer": "false",
+   "x": 722,
+   "y": 524,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "t-f-sonja",
+   "group": "t1",
+   "kind": "checkbox",
+   "label": "Sie wohnt in Leipzig. – Sonja",
+   "answer": "true",
+   "x": 799,
+   "y": 524,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "t-f-bo",
+   "group": "t1",
+   "kind": "checkbox",
+   "label": "Sie wohnt in Leipzig. – Bo Martinson",
+   "answer": "false",
+   "x": 919,
+   "y": 524,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "o-1",
+   "group": "r31",
+   "kind": "text",
+   "label": "Er heißt … .",
+   "answer": "Bernd",
+   "x": 582,
+   "y": 1040,
+   "w": 180,
+   "h": 23
+  },
+  {
+   "id": "o-2",
+   "group": "r31",
+   "kind": "text",
+   "label": "Ich habe zwei … .",
+   "answer": "Kinder",
+   "x": 333,
+   "y": 1080,
+   "w": 122,
+   "h": 23
+  },
+  {
+   "id": "o-3",
+   "group": "r31",
+   "kind": "text",
+   "label": "Meine Tochter … und mein",
+   "answer": "heißt Angelica",
+   "x": 344,
+   "y": 1118,
+   "w": 272,
+   "h": 23
+  },
+  {
+   "id": "o-4",
+   "group": "r31",
+   "kind": "text",
+   "label": "… “",
+   "answer": "Sohn heißt Mark",
+   "x": 212,
+   "y": 1143,
+   "w": 305,
+   "h": 23
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "t1",
+   "label": "Rückblick L2 Ü1 · Was ist richtig? Kreuzen Sie an und vergleichen Sie mit dem Kursbuch auf Seite 78."
+  },
+  {
+   "id": "r22",
+   "label": "Rückblick L2 Ü2 · Wählen Sie eine Kursteilnehmerin / einen Kursteilnehmer oder einen Prominenten. Ergänzen Sie den Steckbrief und schreiben Sie einen Text."
+  },
+  {
+   "id": "r31",
+   "label": "Rückblick L3 Ü1 · Lesen Sie den Stammbaum im Kursbuch auf Seite 19. Was sagt Olga?"
+  },
+  {
+   "id": "r32",
+   "label": "Rückblick L3 Ü2 · Ihre Familie. Was sagt Ihre Mutter / Ihr Bruder …? Schreiben Sie."
+  }
+ ],
  "review": {
-  "status": "partial",
-  "verifiedWords": 0,
-  "totalWords": 150,
+  "status": "verified",
+  "verifiedWords": 154,
+  "totalWords": 154,
   "notes": [
-   "draft: unverified OCR, no fields/audio yet"
+   "Table answers derived from KB Seite 78 person texts (Helga Stiemer: Rentnerin, verheiratet, 3 Kinder, Muenchen; Carlos: aus Spanien, studiert in Kiel, nicht verheiratet, keine Kinder; Sonja Wilkens: Krankenschwester, nicht verheiratet, 1 Kind, Leipzig; Bo Martinson: aus Schweden, Ingenieur, verheiratet, 2 Kinder, Essen) - AB key lists no X positions; exercise says compare with KB p78.",
+   "The two blue X marks in row a (Helga, Carlos) are the used copy owner's ink - excluded from words; they match the derived answers.",
+   "Rückblick L2 Ü2 and L3 Ü2: individuelle Loesung per key - no fields. Blue cursive starters ('Das ist … / … kommt aus …', 'Ich heiße …' etc.) are printed examples, kept as words.",
+   "Olga text answers from AB key (Bernd; Kinder; heißt Angelica; Sohn heißt Mark).",
+   "Some boxes estimated (cursive starters, Lektion tabs 2/3, '19.')."
   ]
  }
 }
