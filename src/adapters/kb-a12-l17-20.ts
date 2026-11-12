@@ -21,7 +21,7 @@ function setZoom(n: number){scale=Math.max(Math.min(1,innerWidth/900),Math.min(2
 function turn(direction: number, corner='top'){if(flip.getState()!=='read')return;if(direction>0&&pageIndex===pages.length-1||direction<0&&pageIndex===0)return;const settings=flip.getSettings();settings.disableFlipByClick=false;paperSound();if(direction>0)flip.flipNext(corner);else flip.flipPrev(corner);settings.disableFlipByClick=true;}$('#next').onclick=()=>turn(1);$('#prev').onclick=()=>turn(-1);$('#pageJump').onchange=(e: any)=>{flip.turnToPage(Number(e.target.value));scrollTo(0,0);viewport.scrollLeft=0};
 
 // The page-flip host defaults to pan-y. CSS switches it to pan-x pan-y when zoomed.
-const isControl=(t: any)=>t.closest('input,select,textarea,button,a,audio,label:has(input),[contenteditable],canvas');
+const isControl=(t: any)=>t.closest('input,select,textarea,button,a,audio,label:has(input),[contenteditable],canvas,.nkRoute');
 let gesture: any=null,pinching=false,mouse: any=null;
 const zoomed=()=>900*scale>viewport.clientWidth+2;
 // Swipe-turn is only suspended when a horizontal swipe has real pan room
