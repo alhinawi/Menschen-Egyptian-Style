@@ -1196,15 +1196,77 @@
    "h": 9
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p87-2b",
+   "group": "g1",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "schmutzig",
+   "x": 497,
+   "y": 501,
+   "w": 151,
+   "h": 20
+  },
+  {
+   "id": "p87-2c",
+   "group": "g1",
+   "kind": "text",
+   "label": "2 c",
+   "answer": "kalt",
+   "x": 497,
+   "y": 521,
+   "w": 151,
+   "h": 20
+  },
+  {
+   "id": "p87-2d",
+   "group": "g1",
+   "kind": "text",
+   "label": "2 d",
+   "answer": "nicht wieder",
+   "x": 497,
+   "y": 541,
+   "w": 151,
+   "h": 20
+  },
+  {
+   "id": "p87-2e",
+   "group": "g1",
+   "kind": "text",
+   "label": "2 e",
+   "answer": "schön",
+   "x": 497,
+   "y": 561,
+   "w": 151,
+   "h": 20
+  },
+  {
+   "id": "p87-2f",
+   "group": "g1",
+   "kind": "text",
+   "label": "2 f",
+   "answer": "Portugal",
+   "x": 497,
+   "y": 581,
+   "w": 151,
+   "h": 20
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Hören 2"
+  }
+ ],
  "review": {
   "status": "partial",
-  "verifiedWords": 170,
-  "totalWords": 170,
   "notes": [
-   "Activation reviewed on a five-page visual sample (71,76,88,98,105): word boxes align with printed text, but these are partial OCR-derived layers. verifiedWords was supplied as the retained-word count by the worker, not an independent word-by-word audit. Some handwriting, symbols, fragments and printed words may be omitted or imperfect. No exercise fields or audio added."
-  ]
+   "Answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 23, Training Hören 2).",
+   "Audio icons 2 37 / 2 38 / 2 39 not mapped: no matching track files exist in assets. Aussprache radios not mapped (key unclear)."
+  ],
+  "verifiedWords": 170,
+  "totalWords": 170
  }
 }
