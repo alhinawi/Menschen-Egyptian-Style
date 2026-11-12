@@ -12,3 +12,4 @@ html body .page [data-audio-proxied="true"]{opacity:0!important;pointer-events:n
 html[data-reader-theme="paper"] .largeAudioFace{background:#f2e5ca}
 html[data-reader-theme="sand"] .largeAudioFace{background:#e8d9bd}
 html[data-theme="dark"] .largeAudioMarker .largeAudioFace{background:var(--night-control,#29372f);color:#f9fbff;border-color:var(--night-detail,#a8d4f1)}
+.largeAudioMarker .largeAudioFace,.largeAudioMarker .largeAudioFace *{pointer-events:none}
