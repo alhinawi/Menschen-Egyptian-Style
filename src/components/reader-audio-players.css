@@ -1,0 +1,16 @@
+audio[data-reader-audio-source]{display:none!important}
+.readerAudioPanel{width:min(100%,640px);box-sizing:border-box;margin:12px auto;padding:0 10px;display:grid;gap:10px}
+.readerAudioPanel:empty{display:none}
+.readerAudioPlayer{background:#fffefa;border:1px solid #c7d4c7;border-radius:10px;padding:10px 12px;color:#315a4a;font:13px Arial;box-sizing:border-box;min-width:0}
+.readerAudioHeading{display:flex;justify-content:space-between;gap:10px;align-items:center;min-height:24px}
+.readerAudioHeading output{font-variant-numeric:tabular-nums;white-space:nowrap}
+.readerAudioTransport{display:flex;align-items:center;gap:12px}
+.readerAudioTransport button{flex:none;width:44px;height:44px;min-height:44px;padding:0;border:1px solid #789784;border-radius:50%;background:#eaf2e9;color:#315a4a;font:16px Arial}
+.readerAudioTransport input[type=range]{appearance:none;-webkit-appearance:none;flex:1;min-width:0;height:44px;margin:0;background:transparent;cursor:pointer;touch-action:none}
+.readerAudioTransport input[type=range]::-webkit-slider-runnable-track{height:5px;border-radius:5px;background:#a1bca8}
+.readerAudioTransport input[type=range]::-webkit-slider-thumb{appearance:none;-webkit-appearance:none;width:22px;height:22px;border:2px solid white;border-radius:50%;background:#315a4a;margin-top:-8.5px;box-shadow:0 0 0 1px #789784}
+.readerAudioTransport input[type=range]:focus-visible{outline:2px solid #315a4a;outline-offset:1px}
+html[data-theme=dark] .readerAudioPlayer{background:var(--night-paper,#202a25);color:var(--night-ink,#f9fbff);border-color:var(--night-detail,#a8d4f1)}
+html[data-theme=dark] .readerAudioTransport button{background:var(--night-control,#29372f);color:#f9fbff;border-color:var(--night-detail,#a8d4f1)}
+html[data-theme=dark] .readerAudioTransport input[type=range]::-webkit-slider-thumb{background:var(--night-accent,#d0efdb);border-color:var(--night-paper,#202a25)}
+.nkbAudio:has(audio[data-reader-audio-source]){visibility:hidden}
