@@ -40,6 +40,7 @@
 .naCanvas .naNw{white-space:nowrap}
 .naCanvas .naD19{font-size:19px}
 .naCanvas .naTitle.naRB b{background:#c33523}
+.naCanvas .naTitle.naPB b{background:#7b0c69}
 .naCanvas.naNarrow .naText{font-size:16px}
 .naCanvas.naNarrow .naBold{font-size:16px}
 .naCanvas.naNarrow .naSmall{font-size:13px}
@@ -60,3 +61,6 @@
 .naCanvas .naPre{white-space:pre-line}
 .naCanvas .naFoot52{color:#707070}
 .naCanvas .naGray{color:#8a8a8a}
+.naCanvas .naText.naS21{font-size:21px}
+.naCanvas .naText.naS20{font-size:20px}
+.naCanvas .naText.naS19{font-size:19px}
