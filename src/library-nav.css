@@ -164,6 +164,7 @@ body.lnv-lock {
   cursor: pointer;
   color: inherit;
   font: inherit;
+  text-decoration: none;
 }
 
 .lnv-bookcard.sel {

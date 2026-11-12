@@ -172,7 +172,6 @@ export function LibraryNav({slug}: {slug: string}) {
                 onClick={() => { try { sessionStorage.setItem('menschen-libnav', 'open'); } catch {} }}>
                 <img src={b.cover} alt=""/>
                 <span className="lnv-bt">{b.title}<small>{b.subtitle}</small></span>
-                <span className="lnv-cardchev">›</span>
               </a>
             );
           })}
