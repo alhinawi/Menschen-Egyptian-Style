@@ -6,67 +6,18 @@
  "height": 1521,
  "words": [
   {
-   "text": "KB",
-   "x": 116,
-   "y": 308,
-   "w": 13,
-   "h": 8
-  },
-  {
-   "text": "Kommunikation",
-   "x": 135,
-   "y": 346,
-   "w": 9,
-   "h": 99
-  },
-  {
-   "text": "«8",
-   "x": 116,
-   "y": 877,
-   "w": 12,
-   "h": 9
-  },
-  {
-   "text": "KB",
-   "x": 115,
-   "y": 1130,
-   "w": 13,
-   "h": 9
-  },
-  {
-   "text": "Kommunikarıon",
-   "x": 134,
-   "y": 734,
-   "w": 9,
-   "h": 99
-  },
-  {
-   "text": "©",
-   "x": 133,
-   "y": 699,
-   "w": 12,
-   "h": 9
-  },
-  {
-   "text": "STRUKTUREN",
-   "x": 133,
-   "y": 911,
-   "w": 10,
-   "h": 73
-  },
-  {
-   "text": "STRUKTUREN",
-   "x": 133,
-   "y": 1164,
-   "w": 9,
-   "h": 74
-  },
-  {
    "text": "BASISTRAINING",
    "x": 164,
    "y": 151,
    "w": 235,
    "h": 23
+  },
+  {
+   "text": "b",
+   "x": 173,
+   "y": 213,
+   "w": 9,
+   "h": 15
   },
   {
    "text": "Suchen",
@@ -139,13 +90,6 @@
    "h": 16
   },
   {
-   "text": "namen",
-   "x": 204,
-   "y": 244,
-   "w": 55,
-   "h": 10
-  },
-  {
    "text": "auf",
    "x": 266,
    "y": 238,
@@ -167,20 +111,6 @@
    "h": 15
   },
   {
-   "text": "Partnerin",
-   "x": 430,
-   "y": 240,
-   "w": 77,
-   "h": 15
-  },
-  {
-   "text": "/",
-   "x": 515,
-   "y": 241,
-   "w": 9,
-   "h": 17
-  },
-  {
    "text": "Ihr",
    "x": 532,
    "y": 239,
@@ -188,18 +118,32 @@
    "h": 16
   },
   {
-   "text": "Partner",
-   "x": 562,
-   "y": 241,
-   "w": 61,
-   "h": 14
-  },
-  {
    "text": "ordnet",
    "x": 630,
    "y": 239,
    "w": 56,
    "h": 16
+  },
+  {
+   "text": "namen",
+   "x": 204,
+   "y": 244,
+   "w": 55,
+   "h": 10
+  },
+  {
+   "text": "Partnerin",
+   "x": 430,
+   "y": 240,
+   "w": 77,
+   "h": 15
+  },
+  {
+   "text": "Partner",
+   "x": 562,
+   "y": 241,
+   "w": 61,
+   "h": 14
   },
   {
    "text": "zu.",
@@ -258,10 +202,45 @@
    "h": 10
   },
   {
-   "text": "du.oder",
+   "text": "du:",
+   "x": 198,
+   "y": 480,
+   "w": 38,
+   "h": 20
+  },
+  {
+   "text": "1,",
+   "x": 243,
+   "y": 480,
+   "w": 28,
+   "h": 20
+  },
+  {
+   "text": "Sie:",
+   "x": 600,
+   "y": 480,
+   "w": 40,
+   "h": 20
+  },
+  {
+   "text": "b",
+   "x": 172,
+   "y": 529,
+   "w": 10,
+   "h": 15
+  },
+  {
+   "text": "du",
    "x": 203,
    "y": 529,
-   "w": 61,
+   "w": 19,
+   "h": 15
+  },
+  {
+   "text": "oder",
+   "x": 229,
+   "y": 529,
+   "w": 43,
    "h": 15
   },
   {
@@ -304,14 +283,14 @@
    "x": 201,
    "y": 556,
    "w": 74,
-   "h": 34
+   "h": 22
   },
   {
    "text": "Englisch",
    "x": 329,
    "y": 557,
    "w": 80,
-   "h": 34
+   "h": 22
   },
   {
    "text": "Meine",
@@ -351,9 +330,16 @@
   {
    "text": "du",
    "x": 198,
-   "y": 587,
+   "y": 590,
    "w": 32,
-   "h": 34
+   "h": 20
+  },
+  {
+   "text": "Sie",
+   "x": 201,
+   "y": 621,
+   "w": 32,
+   "h": 20
   },
   {
    "text": "you",
@@ -361,13 +347,6 @@
    "y": 603,
    "w": 27,
    "h": 13
-  },
-  {
-   "text": "Sie",
-   "x": 204,
-   "y": 618,
-   "w": 29,
-   "h": 34
   },
   {
    "text": "you",
@@ -447,6 +426,13 @@
    "h": 15
   },
   {
+   "text": "Sie,",
+   "x": 474,
+   "y": 734,
+   "w": 36,
+   "h": 16
+  },
+  {
    "text": "c",
    "x": 593,
    "y": 739,
@@ -510,13 +496,6 @@
    "h": 15
   },
   {
-   "text": "Frau",
-   "x": 619,
-   "y": 761,
-   "w": 37,
-   "h": 13
-  },
-  {
    "text": "Klein,",
    "x": 662,
    "y": 759,
@@ -536,6 +515,13 @@
    "y": 759,
    "w": 72,
    "h": 15
+  },
+  {
+   "text": "Frau",
+   "x": 619,
+   "y": 761,
+   "w": 37,
+   "h": 13
   },
   {
    "text": "du",
@@ -678,6 +664,13 @@
    "h": 17
   },
   {
+   "text": "a",
+   "x": 202,
+   "y": 912,
+   "w": 11,
+   "h": 14
+  },
+  {
    "text": "Woher",
    "x": 248,
    "y": 910,
@@ -699,45 +692,87 @@
    "h": 15
   },
   {
-   "text": "Ichkomm",
+   "text": "Ich",
    "x": 249,
    "y": 935,
-   "w": 85,
+   "w": 25,
    "h": 15
   },
   {
-   "text": "___",
-   "x": 357,
-   "y": 952,
-   "w": 8,
-   "h": 1
+   "text": "komm",
+   "x": 281,
+   "y": 935,
+   "w": 53,
+   "h": 15
+  },
+  {
+   "text": "Spanien.",
+   "x": 412,
+   "y": 936,
+   "w": 73,
+   "h": 20
   },
   {
    "text": "Und",
    "x": 493,
    "y": 936,
-   "w": 35,
-   "h": 15
+   "w": 34,
+   "h": 14
   },
   {
    "text": "du?",
    "x": 534,
    "y": 936,
    "w": 30,
+   "h": 14
+  },
+  {
+   "text": "aus",
+   "x": 378,
+   "y": 941,
+   "w": 27,
+   "h": 9
+  },
+  {
+   "text": "Ich",
+   "x": 249,
+   "y": 960,
+   "w": 26,
    "h": 15
   },
   {
-   "text": "Ichkomm___ausdem",
-   "x": 249,
+   "text": "komm",
+   "x": 281,
    "y": 960,
-   "w": 198,
-   "h": 18
+   "w": 53,
+   "h": 15
+  },
+  {
+   "text": "aus",
+   "x": 378,
+   "y": 966,
+   "w": 27,
+   "h": 9
+  },
+  {
+   "text": "dem",
+   "x": 412,
+   "y": 961,
+   "w": 35,
+   "h": 14
   },
   {
    "text": "Iran.",
    "x": 454,
    "y": 962,
    "w": 41,
+   "h": 13
+  },
+  {
+   "text": "b",
+   "x": 202,
+   "y": 987,
+   "w": 9,
    "h": 14
   },
   {
@@ -755,46 +790,46 @@
    "h": 14
   },
   {
-   "text": "heiß___",
+   "text": "heiß",
    "x": 338,
    "y": 985,
-   "w": 76,
-   "h": 18
+   "w": 38,
+   "h": 15
   },
   {
    "text": "Maria.",
    "x": 420,
    "y": 987,
    "w": 55,
-   "h": 14
+   "h": 13
   },
   {
    "text": "Und",
    "x": 483,
    "y": 986,
-   "w": 34,
-   "h": 15
+   "w": 33,
+   "h": 14
   },
   {
    "text": "wie",
    "x": 523,
    "y": 987,
    "w": 30,
-   "h": 14
+   "h": 13
   },
   {
-   "text": "heiß_",
+   "text": "heiß",
    "x": 559,
    "y": 986,
-   "w": 76,
-   "h": 18
+   "w": 38,
+   "h": 14
   },
   {
    "text": "du?",
    "x": 641,
    "y": 987,
    "w": 29,
-   "h": 15
+   "h": 13
   },
   {
    "text": "Ich",
@@ -804,25 +839,32 @@
    "h": 14
   },
   {
-   "text": "heiß___",
+   "text": "heiß",
    "x": 281,
    "y": 1011,
-   "w": 73,
-   "h": 17
+   "w": 38,
+   "h": 14
   },
   {
    "text": "Michael.",
-   "x": 363,
+   "x": 364,
    "y": 1011,
-   "w": 72,
-   "h": 15
+   "w": 65,
+   "h": 14
+  },
+  {
+   "text": "c",
+   "x": 202,
+   "y": 1039,
+   "w": 9,
+   "h": 14
   },
   {
    "text": "Guten",
    "x": 248,
    "y": 1037,
-   "w": 50,
-   "h": 14
+   "w": 49,
+   "h": 13
   },
   {
    "text": "Tag,",
@@ -835,64 +877,57 @@
    "text": "Frau",
    "x": 345,
    "y": 1038,
-   "w": 38,
-   "h": 13
+   "w": 36,
+   "h": 12
   },
   {
    "text": "Matard.",
    "x": 390,
    "y": 1037,
-   "w": 66,
-   "h": 15
+   "w": 60,
+   "h": 13
   },
   {
    "text": "Woher",
    "x": 463,
    "y": 1037,
    "w": 55,
-   "h": 15
+   "h": 13
   },
   {
    "text": "komm",
    "x": 525,
    "y": 1037,
-   "w": 52,
-   "h": 15
-  },
-  {
-   "text": "___",
-   "x": 582,
-   "y": 1054,
-   "w": 30,
-   "h": 1
+   "w": 51,
+   "h": 13
   },
   {
    "text": "Sie?",
    "x": 622,
    "y": 1038,
    "w": 33,
-   "h": 15
+   "h": 12
   },
   {
    "text": "Aus",
-   "x": 661,
+   "x": 662,
    "y": 1039,
-   "w": 29,
-   "h": 14
+   "w": 28,
+   "h": 11
   },
   {
    "text": "Frankreich?",
    "x": 698,
    "y": 1038,
    "w": 103,
-   "h": 15
+   "h": 12
   },
   {
    "text": "Nein,",
    "x": 248,
    "y": 1062,
    "w": 45,
-   "h": 17
+   "h": 14
   },
   {
    "text": "ich",
@@ -902,39 +937,32 @@
    "h": 14
   },
   {
-   "text": "komm____",
+   "text": "komm",
    "x": 333,
    "y": 1062,
-   "w": 73,
-   "h": 18
+   "w": 51,
+   "h": 14
   },
   {
    "text": "aus",
    "x": 429,
    "y": 1068,
    "w": 27,
-   "h": 9
+   "h": 8
   },
   {
    "text": "der",
    "x": 463,
    "y": 1062,
    "w": 27,
-   "h": 15
+   "h": 14
   },
   {
    "text": "Schweiz.",
    "x": 496,
    "y": 1063,
-   "w": 74,
-   "h": 14
-  },
-  {
-   "text": "[FD",
-   "x": 156,
-   "y": 1118,
-   "w": 35,
-   "h": 24
+   "w": 69,
+   "h": 13
   },
   {
    "text": "Schreiben",
@@ -980,59 +1008,59 @@
   },
   {
    "text": "Das",
-   "x": 350,
-   "y": 1187,
-   "w": 24,
-   "h": 14
+   "x": 348,
+   "y": 1185,
+   "w": 28,
+   "h": 16
   },
   {
    "text": "ist",
-   "x": 382,
-   "y": 1186,
-   "w": 17,
-   "h": 15
+   "x": 384,
+   "y": 1184,
+   "w": 30,
+   "h": 16
   },
   {
-   "text": "Philip",
-   "x": 406,
-   "y": 1185,
-   "w": 42,
-   "h": 22
+   "text": "Philipp",
+   "x": 404,
+   "y": 1183,
+   "w": 62,
+   "h": 24
   },
   {
    "text": "Lahm.",
-   "x": 351,
-   "y": 1212,
-   "w": 35,
-   "h": 14
+   "x": 349,
+   "y": 1209,
+   "w": 52,
+   "h": 16
   },
   {
    "text": "Er",
-   "x": 398,
-   "y": 1211,
-   "w": 19,
-   "h": 14
+   "x": 404,
+   "y": 1209,
+   "w": 30,
+   "h": 16
   },
   {
    "text": "kommt",
-   "x": 351,
-   "y": 1237,
-   "w": 46,
-   "h": 15
+   "x": 349,
+   "y": 1235,
+   "w": 58,
+   "h": 16
   },
   {
    "text": "aus",
-   "x": 404,
-   "y": 1240,
-   "w": 19,
-   "h": 11
+   "x": 410,
+   "y": 1237,
+   "w": 28,
+   "h": 14
   },
   {
-   "text": "Destschland,",
-   "x": 351,
-   "y": 1262,
-   "w": 82,
-   "h": 15
+   "text": "Deutschland.",
+   "x": 349,
+   "y": 1260,
+   "w": 98,
+   "h": 16
   },
   {
    "text": "Philipp",
@@ -1093,9 +1121,9 @@
   {
    "text": "Deutschland",
    "x": 191,
-   "y": 1361,
+   "y": 1372,
    "w": 88,
-   "h": 31
+   "h": 15
   },
   {
    "text": "Mozart,",
@@ -1124,38 +1152,276 @@
    "y": 1373,
    "w": 50,
    "h": 11
-  },
-  {
-   "text": "sieben",
-   "x": 929,
-   "y": 1432,
-   "w": 49,
-   "h": 13
-  },
-  {
-   "text": "|",
-   "x": 994,
-   "y": 1432,
-   "w": 2,
-   "h": 15
-  },
-  {
-   "text": "7",
-   "x": 1012,
-   "y": 1434,
-   "w": 7,
-   "h": 11
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "u6a-du",
+   "group": "u6a",
+   "kind": "text",
+   "label": "6a du",
+   "answer": "3",
+   "x": 275,
+   "y": 480,
+   "w": 128,
+   "h": 24
+  },
+  {
+   "id": "u6a-sie",
+   "group": "u6a",
+   "kind": "text",
+   "label": "6a Sie",
+   "answer": "2, 4|2,4|2 und 4",
+   "x": 639,
+   "y": 480,
+   "w": 172,
+   "h": 24
+  },
+  {
+   "id": "u7-b-du",
+   "group": "u7",
+   "kind": "radio",
+   "label": "7b du",
+   "name": "u7-b",
+   "value": "du",
+   "answer": "true",
+   "x": 211,
+   "y": 795,
+   "w": 26,
+   "h": 26
+  },
+  {
+   "id": "u7-b-sie",
+   "group": "u7",
+   "kind": "radio",
+   "label": "7b Sie",
+   "name": "u7-b",
+   "value": "Sie",
+   "answer": "false",
+   "x": 289,
+   "y": 795,
+   "w": 26,
+   "h": 26
+  },
+  {
+   "id": "u7-c-du",
+   "group": "u7",
+   "kind": "radio",
+   "label": "7c du",
+   "name": "u7-c",
+   "value": "du",
+   "answer": "true",
+   "x": 812,
+   "y": 721,
+   "w": 26,
+   "h": 26
+  },
+  {
+   "id": "u7-c-sie",
+   "group": "u7",
+   "kind": "radio",
+   "label": "7c Sie",
+   "name": "u7-c",
+   "value": "Sie",
+   "answer": "false",
+   "x": 882,
+   "y": 721,
+   "w": 26,
+   "h": 26
+  },
+  {
+   "id": "u7-d-du",
+   "group": "u7",
+   "kind": "radio",
+   "label": "7d du",
+   "name": "u7-d",
+   "value": "du",
+   "answer": "false",
+   "x": 856,
+   "y": 747,
+   "w": 26,
+   "h": 26
+  },
+  {
+   "id": "u7-d-sie",
+   "group": "u7",
+   "kind": "radio",
+   "label": "7d Sie",
+   "name": "u7-d",
+   "value": "Sie",
+   "answer": "true",
+   "x": 926,
+   "y": 747,
+   "w": 26,
+   "h": 26
+  },
+  {
+   "id": "u7-e-du",
+   "group": "u7",
+   "kind": "radio",
+   "label": "7e du",
+   "name": "u7-e",
+   "value": "du",
+   "answer": "true",
+   "x": 759,
+   "y": 772,
+   "w": 26,
+   "h": 26
+  },
+  {
+   "id": "u7-e-sie",
+   "group": "u7",
+   "kind": "radio",
+   "label": "7e Sie",
+   "name": "u7-e",
+   "value": "Sie",
+   "answer": "false",
+   "x": 835,
+   "y": 772,
+   "w": 26,
+   "h": 26
+  },
+  {
+   "id": "u8-a1",
+   "group": "u8",
+   "kind": "text",
+   "label": "8a blank 1",
+   "answer": "e|komme",
+   "x": 336,
+   "y": 938,
+   "w": 46,
+   "h": 24
+  },
+  {
+   "id": "u8-a2",
+   "group": "u8",
+   "kind": "text",
+   "label": "8a blank 2",
+   "answer": "e|komme",
+   "x": 336,
+   "y": 963,
+   "w": 46,
+   "h": 24
+  },
+  {
+   "id": "u8-b1",
+   "group": "u8",
+   "kind": "text",
+   "label": "8b blank 1",
+   "answer": "e|heiße",
+   "x": 380,
+   "y": 986,
+   "w": 38,
+   "h": 24
+  },
+  {
+   "id": "u8-b2",
+   "group": "u8",
+   "kind": "text",
+   "label": "8b blank 2",
+   "answer": "t|heißt",
+   "x": 601,
+   "y": 986,
+   "w": 38,
+   "h": 24
+  },
+  {
+   "id": "u8-b3",
+   "group": "u8",
+   "kind": "text",
+   "label": "8b blank 3",
+   "answer": "e|heiße",
+   "x": 323,
+   "y": 1011,
+   "w": 38,
+   "h": 24
+  },
+  {
+   "id": "u8-c1",
+   "group": "u8",
+   "kind": "text",
+   "label": "8c blank 1",
+   "answer": "en|kommen",
+   "x": 580,
+   "y": 1037,
+   "w": 38,
+   "h": 24
+  },
+  {
+   "id": "u8-c2",
+   "group": "u8",
+   "kind": "text",
+   "label": "8c blank 2",
+   "answer": "e|komme",
+   "x": 388,
+   "y": 1062,
+   "w": 38,
+   "h": 24
+  },
+  {
+   "id": "u9-b",
+   "group": "u9",
+   "kind": "text",
+   "label": "9 Foto B",
+   "answer": "Das ist Wolfgang Amadeus Mozart. Er kommt aus Österreich.",
+   "x": 495,
+   "y": 1392,
+   "w": 133,
+   "h": 48
+  },
+  {
+   "id": "u9-c",
+   "group": "u9",
+   "kind": "text",
+   "label": "9 Foto C",
+   "answer": "Das ist Prinz Felipe. Er kommt aus Spanien.",
+   "x": 645,
+   "y": 1392,
+   "w": 120,
+   "h": 48
+  },
+  {
+   "id": "u9-d",
+   "group": "u9",
+   "kind": "text",
+   "label": "9 Foto D",
+   "answer": "Das ist Martina Hingis. Sie kommt aus der Schweiz.",
+   "x": 797,
+   "y": 1392,
+   "w": 130,
+   "h": 44
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "u6a",
+   "label": "Übung 6a · Ordnen Sie zu"
+  },
+  {
+   "id": "u7",
+   "label": "Übung 7 · Kreuzen Sie an"
+  },
+  {
+   "id": "u8",
+   "label": "Übung 8 · Ergänzen Sie"
+  },
+  {
+   "id": "u9",
+   "label": "Übung 9 · Sätze zu den Fotos"
+  }
+ ],
  "review": {
-  "status": "partial",
-  "verifiedWords": 0,
-  "totalWords": 163,
+  "status": "verified",
+  "verifiedWords": 164,
+  "totalWords": 164,
   "notes": [
-   "draft: unverified OCR, no fields/audio yet"
+   "all words verified against scan pixels (overlay pass); handwriting/student marks, vertical side labels, footer and exercise-number icons excluded; printed blue examples kept as words (7a X example, 8a \"st\", 9 \"Das ist Philipp...\")",
+   "U6a: printed \"du: 1,\" - du field covers only the free rule (answer 3); Sie rule detected at x637-813 (answer 2, 4)",
+   "U7: item a is the printed example (Sie pre-marked, Lsg omits a) - fields only b-e; answers b du, c du, d Sie, e du (Lsg)",
+   "U8: blanks measured from cleaned OCR word gaps + rule detection; 8a row 1 \"kommst\" is the printed example; endings + full forms accepted",
+   "U6b Individuelle Lösung (own-language table) - no fields; U9 has no printed rules - fields placed in the blank band under each caption, answers from Lsg",
+   "no audio on this page"
   ]
  }
 }
