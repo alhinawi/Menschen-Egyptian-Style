@@ -7,9 +7,9 @@
  "words": [
   {
    "text": "WIEDERHOLUNGSSTATION:",
-   "x": 160,
+   "x": 161,
    "y": 149,
-   "w": 498,
+   "w": 497,
    "h": 29
   },
   {
@@ -20,67 +20,39 @@
    "h": 27
   },
   {
-   "text": "Was",
-   "x": 203,
-   "y": 234,
-   "w": 38,
-   "h": 15
-  },
-  {
-   "text": "ist",
-   "x": 249,
-   "y": 233,
-   "w": 24,
-   "h": 16
-  },
-  {
-   "text": "im",
-   "x": 281,
-   "y": 233,
-   "w": 21,
+   "text": "Sie.",
+   "x": 749,
+   "y": 231,
+   "w": 34,
    "h": 16
   },
   {
    "text": "Schrank?",
    "x": 310,
    "y": 232,
-   "w": 85,
+   "w": 86,
    "h": 17
-  },
-  {
-   "text": "Was",
-   "x": 401,
-   "y": 234,
-   "w": 38,
-   "h": 14
-  },
-  {
-   "text": "ist",
-   "x": 447,
-   "y": 232,
-   "w": 23,
-   "h": 16
   },
   {
    "text": "nicht",
    "x": 479,
    "y": 232,
-   "w": 49,
-   "h": 16
+   "w": 48,
+   "h": 17
   },
   {
    "text": "im",
    "x": 536,
    "y": 232,
-   "w": 21,
+   "w": 22,
    "h": 16
   },
   {
    "text": "Schrank?",
    "x": 565,
-   "y": 231,
+   "y": 232,
    "w": 86,
-   "h": 17
+   "h": 16
   },
   {
    "text": "Notieren",
@@ -90,46 +62,60 @@
    "h": 16
   },
   {
-   "text": "Sie.",
-   "x": 749,
-   "y": 231,
-   "w": 34,
+   "text": "ist",
+   "x": 249,
+   "y": 233,
+   "w": 23,
+   "h": 17
+  },
+  {
+   "text": "im",
+   "x": 281,
+   "y": 233,
+   "w": 21,
    "h": 16
   },
   {
-   "text": "Uhr",
-   "x": 211,
-   "y": 272,
-   "w": 27,
+   "text": "Was",
+   "x": 401,
+   "y": 233,
+   "w": 38,
+   "h": 15
+  },
+  {
+   "text": "ist",
+   "x": 447,
+   "y": 233,
+   "w": 23,
+   "h": 16
+  },
+  {
+   "text": "Was",
+   "x": 203,
+   "y": 234,
+   "w": 38,
    "h": 15
   },
   {
    "text": "|",
-   "x": 244,
-   "y": 272,
+   "x": 232,
+   "y": 267,
+   "w": 14,
+   "h": 27
+  },
+  {
+   "text": "|",
+   "x": 501,
+   "y": 267,
+   "w": 14,
+   "h": 27
+  },
+  {
+   "text": "|",
+   "x": 705,
+   "y": 270,
    "w": 1,
-   "h": 16
-  },
-  {
-   "text": "Schlüssel",
-   "x": 252,
-   "y": 272,
-   "w": 76,
-   "h": 15
-  },
-  {
-   "text": "|",
-   "x": 320,
-   "y": 266,
-   "w": 16,
-   "h": 29
-  },
-  {
-   "text": "Handy",
-   "x": 337,
-   "y": 271,
-   "w": 48,
-   "h": 20
+   "h": 17
   },
   {
    "text": "|",
@@ -139,32 +125,11 @@
    "h": 17
   },
   {
-   "text": "Tasche",
-   "x": 398,
-   "y": 271,
-   "w": 51,
-   "h": 15
-  },
-  {
-   "text": "|",
-   "x": 455,
-   "y": 271,
-   "w": 2,
-   "h": 16
-  },
-  {
-   "text": "Britte",
+   "text": "Brille",
    "x": 463,
    "y": 271,
    "w": 48,
-   "h": 16
-  },
-  {
-   "text": "|",
-   "x": 504,
-   "y": 266,
-   "w": 10,
-   "h": 29
+   "h": 17
   },
   {
    "text": "Flaschen",
@@ -177,36 +142,92 @@
    "text": "|",
    "x": 590,
    "y": 271,
-   "w": 2,
-   "h": 16
+   "w": 1,
+   "h": 17
   },
   {
    "text": "Regenschirm",
-   "x": 600,
-   "y": 270,
-   "w": 106,
-   "h": 21
+   "x": 599,
+   "y": 271,
+   "w": 97,
+   "h": 20
+  },
+  {
+   "text": "Uhr",
+   "x": 210,
+   "y": 272,
+   "w": 35,
+   "h": 17
+  },
+  {
+   "text": "Schlüssel",
+   "x": 252,
+   "y": 272,
+   "w": 68,
+   "h": 15
   },
   {
    "text": "|",
-   "x": 692,
-   "y": 266,
-   "w": 16,
-   "h": 29
+   "x": 327,
+   "y": 272,
+   "w": 1,
+   "h": 16
+  },
+  {
+   "text": "Handy",
+   "x": 336,
+   "y": 272,
+   "w": 48,
+   "h": 20
+  },
+  {
+   "text": "Tasche",
+   "x": 398,
+   "y": 272,
+   "w": 51,
+   "h": 14
+  },
+  {
+   "text": "|",
+   "x": 455,
+   "y": 272,
+   "w": 1,
+   "h": 16
+  },
+  {
+   "text": "|",
+   "x": 262,
+   "y": 293,
+   "w": 14,
+   "h": 27
+  },
+  {
+   "text": "|",
+   "x": 388,
+   "y": 293,
+   "w": 14,
+   "h": 27
+  },
+  {
+   "text": "Briefmarken",
+   "x": 408,
+   "y": 296,
+   "w": 92,
+   "h": 15
+  },
+  {
+   "text": "Bleistifte",
+   "x": 510,
+   "y": 296,
+   "w": 77,
+   "h": 17
   },
   {
    "text": "Bücher",
    "x": 211,
    "y": 297,
-   "w": 60,
-   "h": 16
-  },
-  {
-   "text": "|",
-   "x": 260,
-   "y": 292,
-   "w": 15,
-   "h": 29
+   "w": 59,
+   "h": 17
   },
   {
    "text": "Kugelschreiber",
@@ -217,38 +238,24 @@
   },
   {
    "text": "|",
-   "x": 388,
-   "y": 292,
-   "w": 15,
-   "h": 29
-  },
-  {
-   "text": "Briefmarken",
-   "x": 407,
-   "y": 296,
-   "w": 93,
-   "h": 15
-  },
-  {
-   "text": "|",
    "x": 507,
-   "y": 296,
-   "w": 2,
+   "y": 297,
+   "w": 1,
    "h": 16
   },
   {
-   "text": "Bteistifte",
-   "x": 515,
-   "y": 296,
-   "w": 72,
-   "h": 15
+   "text": "ist",
+   "x": 539,
+   "y": 335,
+   "w": 20,
+   "h": 14
   },
   {
-   "text": "Da",
-   "x": 205,
-   "y": 337,
-   "w": 20,
-   "h": 13
+   "text": "Brille",
+   "x": 640,
+   "y": 335,
+   "w": 38,
+   "h": 14
   },
   {
    "text": "ist",
@@ -258,32 +265,32 @@
    "h": 14
   },
   {
-   "text": "Daist",
+   "text": "Da",
    "x": 512,
-   "y": 335,
-   "w": 47,
+   "y": 336,
+   "w": 20,
    "h": 14
   },
   {
    "text": "keine",
    "x": 594,
-   "y": 337,
-   "w": 38,
-   "h": 13
-  },
-  {
-   "text": "Brille",
-   "x": 640,
-   "y": 335,
-   "w": 39,
+   "y": 336,
+   "w": 42,
    "h": 16
   },
   {
    "text": "Da",
-   "x": 206,
-   "y": 450,
+   "x": 205,
+   "y": 337,
    "w": 20,
-   "h": 13
+   "h": 14
+  },
+  {
+   "text": ".",
+   "x": 465,
+   "y": 347,
+   "w": 3,
+   "h": 3
   },
   {
    "text": "sind",
@@ -293,226 +300,219 @@
    "h": 15
   },
   {
+   "text": "sind",
+   "x": 540,
+   "y": 448,
+   "w": 35,
+   "h": 15
+  },
+  {
+   "text": "Da",
+   "x": 205,
+   "y": 450,
+   "w": 20,
+   "h": 13
+  },
+  {
+   "text": "Da",
+   "x": 512,
+   "y": 450,
+   "w": 21,
+   "h": 13
+  },
+  {
+   "text": "keine",
+   "x": 594,
+   "y": 452,
+   "w": 45,
+   "h": 16
+  },
+  {
+   "text": "Bleistifte",
+   "x": 645,
+   "y": 452,
+   "w": 55,
+   "h": 16
+  },
+  {
    "text": "Mein",
    "x": 206,
    "y": 548,
    "w": 46,
-   "h": 16
+   "h": 17
   },
   {
    "text": "Schreibtisch",
    "x": 259,
    "y": 548,
    "w": 117,
-   "h": 16
-  },
-  {
-   "text": "a",
-   "x": 175,
-   "y": 591,
-   "w": 8,
-   "h": 11
-  },
-  {
-   "text": "Ergänzen",
-   "x": 207,
-   "y": 587,
-   "w": 76,
-   "h": 21
+   "h": 17
   },
   {
    "text": "Sie.",
    "x": 290,
    "y": 587,
-   "w": 29,
+   "w": 30,
    "h": 15
   },
   {
-   "text": "Ich",
-   "x": 206,
-   "y": 625,
-   "w": 28,
-   "h": 15
+   "text": "Erganzen",
+   "x": 207,
+   "y": 588,
+   "w": 76,
+   "h": 20
+  },
+  {
+   "text": "a",
+   "x": 175,
+   "y": 592,
+   "w": 8,
+   "h": 11
   },
   {
    "text": "habe",
    "x": 241,
    "y": 625,
-   "w": 42,
+   "w": 41,
    "h": 15
+  },
+  {
+   "text": "Ich",
+   "x": 206,
+   "y": 626,
+   "w": 28,
+   "h": 14
   },
   {
    "text": "...",
    "x": 291,
-   "y": 636,
+   "y": 637,
    "w": 14,
-   "h": 4
+   "h": 3
   },
   {
-   "text": "ein",
-   "x": 407,
-   "y": 656,
-   "w": 20,
-   "h": 11
+   "text": "Stift,",
+   "x": 545,
+   "y": 649,
+   "w": 50,
+   "h": 19
   },
   {
-   "text": "____",
-   "x": 789,
-   "y": 665,
-   "w": 62,
-   "h": 1
+   "text": "Flasche,",
+   "x": 715,
+   "y": 649,
+   "w": 66,
+   "h": 17
   },
   {
    "text": "Rechnung",
-   "x": 858,
-   "y": 648,
-   "w": 84,
-   "h": 21
+   "x": 857,
+   "y": 649,
+   "w": 85,
+   "h": 20
   },
   {
    "text": "und",
    "x": 948,
-   "y": 648,
+   "y": 649,
    "w": 33,
    "h": 15
   },
   {
-   "text": "Brille.",
-   "x": 274,
-   "y": 675,
-   "w": 51,
-   "h": 15
-  },
-  {
-   "text": "b",
-   "x": 176,
-   "y": 725,
-   "w": 9,
-   "h": 15
-  },
-  {
-   "text": "Welcher",
-   "x": 191,
-   "y": 721,
-   "w": 74,
-   "h": 29
-  },
-  {
-   "text": "Tisch",
-   "x": 271,
-   "y": 725,
-   "w": 49,
-   "h": 15
-  },
-  {
-   "text": "passt",
-   "x": 329,
-   "y": 729,
-   "w": 41,
+   "text": "Schliissel,",
+   "x": 320,
+   "y": 650,
+   "w": 81,
    "h": 17
   },
   {
-   "text": "zu",
-   "x": 377,
-   "y": 731,
-   "w": 18,
-   "h": 9
+   "text": "ein",
+   "x": 408,
+   "y": 651,
+   "w": 19,
+   "h": 17
   },
   {
-   "text": "dem",
-   "x": 403,
-   "y": 725,
-   "w": 34,
-   "h": 15
+   "text": "Feuerzeug,",
+   "x": 433,
+   "y": 652,
+   "w": 89,
+   "h": 19
   },
   {
-   "text": "Text",
-   "x": 443,
-   "y": 726,
-   "w": 35,
+   "text": "/",
+   "x": 258,
+   "y": 654,
+   "w": 5,
    "h": 14
   },
   {
-   "text": "in",
-   "x": 485,
-   "y": 726,
-   "w": 14,
+   "text": "Brille.",
+   "x": 274,
+   "y": 676,
+   "w": 51,
    "h": 14
   },
   {
-   "text": "a?",
-   "x": 507,
-   "y": 726,
-   "w": 17,
+   "text": "A",
+   "x": 233,
+   "y": 765,
+   "w": 12,
    "h": 14
-  },
-  {
-   "text": "Kreuzen",
-   "x": 532,
-   "y": 726,
-   "w": 67,
-   "h": 14
-  },
-  {
-   "text": "Sie",
-   "x": 606,
-   "y": 725,
-   "w": 23,
-   "h": 15
-  },
-  {
-   "text": "an.",
-   "x": 637,
-   "y": 730,
-   "w": 24,
-   "h": 10
-  },
-  {
-   "text": "_",
-   "x": 921,
-   "y": 776,
-   "w": 10,
-   "h": 2
-  },
-  {
-   "text": "(",
-   "x": 818,
-   "y": 778,
-   "w": 63,
-   "h": 55
-  },
-  {
-   "text": "X",
-   "x": 888,
-   "y": 791,
-   "w": 32,
-   "h": 54
   },
   {
    "text": "B",
    "x": 525,
    "y": 765,
-   "w": 9,
-   "h": 13
+   "w": 12,
+   "h": 14
   },
   {
-   "text": "IT",
-   "x": 547,
-   "y": 772,
-   "w": 99,
-   "h": 16
+   "text": "C",
+   "x": 797,
+   "y": 765,
+   "w": 12,
+   "h": 14
   },
   {
-   "text": "Mein",
-   "x": 208,
-   "y": 926,
-   "w": 45,
+   "text": "Artikel",
+   "x": 510,
+   "y": 925,
+   "w": 64,
    "h": 17
   },
   {
-   "text": "Zimmer.",
-   "x": 261,
+   "text": "und",
+   "x": 584,
+   "y": 925,
+   "w": 35,
+   "h": 17
+  },
+  {
+   "text": "Personalpronomen.",
+   "x": 627,
+   "y": 925,
+   "w": 184,
+   "h": 22
+  },
+  {
+   "text": "die",
+   "x": 475,
    "y": 926,
+   "w": 28,
+   "h": 17
+  },
+  {
+   "text": "Mein",
+   "x": 207,
+   "y": 927,
+   "w": 46,
+   "h": 16
+  },
+  {
+   "text": "Zimmer.",
+   "x": 262,
+   "y": 927,
    "w": 77,
    "h": 16
   },
@@ -526,100 +526,37 @@
   {
    "text": "Sie",
    "x": 441,
-   "y": 926,
+   "y": 927,
    "w": 27,
    "h": 16
   },
   {
-   "text": "die",
-   "x": 475,
-   "y": 926,
-   "w": 29,
-   "h": 16
-  },
-  {
-   "text": "Artikel",
-   "x": 510,
-   "y": 925,
-   "w": 64,
-   "h": 17
-  },
-  {
-   "text": "und",
-   "x": 584,
-   "y": 925,
-   "w": 34,
-   "h": 17
-  },
-  {
-   "text": "Personalpronomen.",
-   "x": 628,
-   "y": 925,
-   "w": 183,
-   "h": 22
-  },
-  {
-   "text": "Das",
-   "x": 207,
-   "y": 967,
-   "w": 28,
-   "h": 14
-  },
-  {
-   "text": "ist",
-   "x": 242,
-   "y": 966,
-   "w": 20,
-   "h": 15
-  },
-  {
-   "text": "mein",
-   "x": 268,
-   "y": 966,
-   "w": 43,
-   "h": 15
-  },
-  {
-   "text": "Zimmer.",
-   "x": 318,
-   "y": 966,
-   "w": 69,
-   "h": 14
-  },
-  {
-   "text": "£<",
-   "x": 394,
-   "y": 966,
-   "w": 17,
-   "h": 17
-  },
-  {
-   "text": "(a)",
-   "x": 418,
-   "y": 965,
+   "text": "(b)",
+   "x": 738,
+   "y": 964,
    "w": 21,
    "h": 17
   },
   {
-   "text": "ist",
-   "x": 446,
-   "y": 966,
+   "text": "schön.",
+   "x": 793,
+   "y": 964,
+   "w": 53,
+   "h": 15
+  },
+  {
+   "text": "(c)",
+   "x": 973,
+   "y": 964,
+   "w": 19,
+   "h": 17
+  },
+  {
+   "text": "(a)",
+   "x": 419,
+   "y": 965,
    "w": 20,
-   "h": 14
-  },
-  {
-   "text": "nicht",
-   "x": 473,
-   "y": 965,
-   "w": 44,
-   "h": 15
-  },
-  {
-   "text": "sehr",
-   "x": 524,
-   "y": 965,
-   "w": 36,
-   "h": 15
+   "h": 18
   },
   {
    "text": "groß,",
@@ -632,43 +569,127 @@
    "text": "aber",
    "x": 615,
    "y": 965,
-   "w": 37,
+   "w": 36,
    "h": 15
   },
   {
-   "text": "__",
-   "x": 712,
-   "y": 981,
-   "w": 18,
-   "h": 1
-  },
-  {
-   "text": "(b)",
-   "x": 739,
-   "y": 964,
-   "w": 20,
-   "h": 17
-  },
-  {
    "text": "ist",
-   "x": 767,
-   "y": 965,
+   "x": 242,
+   "y": 966,
    "w": 20,
    "h": 14
   },
   {
-   "text": "schön.",
-   "x": 793,
-   "y": 964,
-   "w": 53,
+   "text": "mein",
+   "x": 269,
+   "y": 966,
+   "w": 43,
+   "h": 14
+  },
+  {
+   "text": "Zimmer.",
+   "x": 318,
+   "y": 966,
+   "w": 69,
+   "h": 14
+  },
+  {
+   "text": "Es",
+   "x": 393,
+   "y": 966,
+   "w": 18,
+   "h": 17
+  },
+  {
+   "text": "ist",
+   "x": 446,
+   "y": 966,
+   "w": 20,
+   "h": 14
+  },
+  {
+   "text": "nicht",
+   "x": 473,
+   "y": 966,
+   "w": 45,
+   "h": 14
+  },
+  {
+   "text": "sehr",
+   "x": 524,
+   "y": 966,
+   "w": 36,
+   "h": 14
+  },
+  {
+   "text": "ist",
+   "x": 767,
+   "y": 966,
+   "w": 21,
+   "h": 14
+  },
+  {
+   "text": "Das",
+   "x": 207,
+   "y": 968,
+   "w": 27,
+   "h": 13
+  },
+  {
+   "text": "brauche",
+   "x": 790,
+   "y": 989,
+   "w": 68,
    "h": 15
   },
   {
-   "text": "_(e)",
-   "x": 953,
-   "y": 963,
-   "w": 39,
+   "text": "(e)",
+   "x": 971,
+   "y": 989,
+   "w": 20,
+   "h": 17
+  },
+  {
+   "text": "(d)",
+   "x": 545,
+   "y": 990,
+   "w": 20,
    "h": 18
+  },
+  {
+   "text": "alt",
+   "x": 595,
+   "y": 990,
+   "w": 22,
+   "h": 15
+  },
+  {
+   "text": "und",
+   "x": 623,
+   "y": 990,
+   "w": 32,
+   "h": 15
+  },
+  {
+   "text": "klein,",
+   "x": 661,
+   "y": 990,
+   "w": 48,
+   "h": 17
+  },
+  {
+   "text": "aber",
+   "x": 718,
+   "y": 990,
+   "w": 35,
+   "h": 15
+  },
+  {
+   "text": "ich",
+   "x": 760,
+   "y": 990,
+   "w": 25,
+   "h": 14
   },
   {
    "text": "Sofa",
@@ -678,15 +699,8 @@
    "h": 15
   },
   {
-   "text": "ist",
-   "x": 248,
-   "y": 992,
-   "w": 21,
-   "h": 14
-  },
-  {
    "text": "nicht",
-   "x": 275,
+   "x": 274,
    "y": 991,
    "w": 45,
    "h": 15
@@ -702,127 +716,29 @@
    "text": "modern.",
    "x": 368,
    "y": 991,
-   "w": 71,
-   "h": 14
-  },
-  {
-   "text": "__",
-   "x": 446,
-   "y": 1007,
-   "w": 30,
-   "h": 1
-  },
-  {
-   "text": "(d)",
-   "x": 539,
-   "y": 990,
-   "w": 22,
+   "w": 81,
    "h": 17
+  },
+  {
+   "text": "ist",
+   "x": 248,
+   "y": 992,
+   "w": 21,
+   "h": 14
   },
   {
    "text": "ist",
    "x": 568,
-   "y": 991,
-   "w": 21,
-   "h": 14
-  },
-  {
-   "text": "alt",
-   "x": 595,
-   "y": 990,
-   "w": 22,
-   "h": 15
-  },
-  {
-   "text": "und",
-   "x": 623,
-   "y": 990,
-   "w": 33,
-   "h": 15
-  },
-  {
-   "text": "klein,",
-   "x": 662,
-   "y": 990,
-   "w": 48,
-   "h": 16
-  },
-  {
-   "text": "aber",
-   "x": 717,
-   "y": 990,
-   "w": 36,
-   "h": 15
-  },
-  {
-   "text": "ich",
-   "x": 760,
-   "y": 989,
-   "w": 25,
-   "h": 15
-  },
-  {
-   "text": "(e)",
-   "x": 971,
-   "y": 988,
-   "w": 21,
-   "h": 18
-  },
-  {
-   "text": "Couch.",
-   "x": 207,
-   "y": 1016,
-   "w": 55,
-   "h": 15
-  },
-  {
-   "text": "Undich",
-   "x": 270,
-   "y": 1016,
-   "w": 66,
-   "h": 15
-  },
-  {
-   "text": "(£)",
-   "x": 507,
-   "y": 1015,
-   "w": 18,
-   "h": 17
-  },
-  {
-   "text": "Schrank.",
-   "x": 532,
-   "y": 1015,
-   "w": 75,
-   "h": 15
-  },
-  {
-   "text": "_(g)",
-   "x": 794,
-   "y": 1014,
-   "w": 34,
-   "h": 21
-  },
-  {
-   "text": "ist",
-   "x": 836,
-   "y": 1015,
+   "y": 992,
    "w": 20,
    "h": 14
   },
   {
-   "text": "groß",
-   "x": 861,
+   "text": "(g)",
+   "x": 808,
    "y": 1014,
-   "w": 38,
-   "h": 21
-  },
-  {
-   "text": "und",
-   "x": 906,
-   "y": 1014,
-   "w": 32,
-   "h": 15
+   "w": 20,
+   "h": 22
   },
   {
    "text": "nicht",
@@ -832,17 +748,87 @@
    "h": 15
   },
   {
-   "text": "so",
+   "text": "(f)",
+   "x": 506,
+   "y": 1015,
+   "w": 19,
+   "h": 17
+  },
+  {
+   "text": "Schrank.",
+   "x": 532,
+   "y": 1015,
+   "w": 74,
+   "h": 15
+  },
+  {
+   "text": "groß",
+   "x": 861,
+   "y": 1015,
+   "w": 38,
+   "h": 20
+  },
+  {
+   "text": "und",
+   "x": 906,
+   "y": 1015,
+   "w": 32,
+   "h": 14
+  },
+  {
+   "text": "Couch.",
    "x": 207,
-   "y": 1046,
-   "w": 16,
-   "h": 10
+   "y": 1016,
+   "w": 55,
+   "h": 15
+  },
+  {
+   "text": "Und",
+   "x": 269,
+   "y": 1016,
+   "w": 35,
+   "h": 15
+  },
+  {
+   "text": "ich",
+   "x": 311,
+   "y": 1016,
+   "w": 26,
+   "h": 15
+  },
+  {
+   "text": "habe",
+   "x": 343,
+   "y": 1016,
+   "w": 38,
+   "h": 15
+  },
+  {
+   "text": "ist",
+   "x": 836,
+   "y": 1016,
+   "w": 20,
+   "h": 14
+  },
+  {
+   "text": "(i)",
+   "x": 816,
+   "y": 1039,
+   "w": 17,
+   "h": 18
+  },
+  {
+   "text": "praktisch.",
+   "x": 867,
+   "y": 1040,
+   "w": 85,
+   "h": 20
   },
   {
    "text": "schön,",
-   "x": 229,
+   "x": 230,
    "y": 1041,
-   "w": 54,
+   "w": 53,
    "h": 17
   },
   {
@@ -861,7 +847,7 @@
   },
   {
    "text": "brauche",
-   "x": 364,
+   "x": 363,
    "y": 1041,
    "w": 68,
    "h": 15
@@ -869,93 +855,44 @@
   {
    "text": "(h)",
    "x": 557,
-   "y": 1040,
-   "w": 23,
+   "y": 1041,
+   "w": 22,
    "h": 17
   },
   {
    "text": "Schrank.",
    "x": 587,
-   "y": 1040,
+   "y": 1041,
    "w": 74,
    "h": 15
   },
   {
    "text": "Und",
-   "x": 683,
-   "y": 1040,
-   "w": 20,
+   "x": 669,
+   "y": 1041,
+   "w": 34,
    "h": 15
-  },
-  {
-   "text": "_",
-   "x": 712,
-   "y": 1056,
-   "w": 11,
-   "h": 1
-  },
-  {
-   "text": "(i)",
-   "x": 816,
-   "y": 1039,
-   "w": 17,
-   "h": 17
   },
   {
    "text": "ist",
    "x": 841,
-   "y": 1040,
+   "y": 1041,
    "w": 20,
    "h": 14
   },
   {
-   "text": "praktisch.",
-   "x": 867,
-   "y": 1039,
-   "w": 85,
-   "h": 21
+   "text": "so",
+   "x": 207,
+   "y": 1047,
+   "w": 16,
+   "h": 9
   },
   {
-   "text": "___(j}}",
-   "x": 285,
-   "y": 1066,
-   "w": 57,
-   "h": 21
-  },
-  {
-   "text": "Lampe",
-   "x": 351,
-   "y": 1068,
-   "w": 53,
-   "h": 18
-  },
-  {
-   "text": "finde",
-   "x": 412,
-   "y": 1066,
-   "w": 42,
-   "h": 15
-  },
-  {
-   "text": "ich",
-   "x": 461,
-   "y": 1066,
-   "w": 25,
-   "h": 15
-  },
-  {
-   "text": "wirklich",
-   "x": 492,
-   "y": 1066,
-   "w": 73,
-   "h": 15
-  },
-  {
-   "text": "ist",
-   "x": 764,
-   "y": 1066,
-   "w": 20,
-   "h": 14
+   "text": "(k)",
+   "x": 735,
+   "y": 1065,
+   "w": 21,
+   "h": 17
   },
   {
    "text": "modern",
@@ -968,306 +905,797 @@
    "text": "und",
    "x": 862,
    "y": 1065,
-   "w": 33,
-   "h": 14
+   "w": 32,
+   "h": 15
   },
   {
    "text": "schön!",
    "x": 901,
    "y": 1065,
    "w": 53,
-   "h": 14
+   "h": 15
   },
   {
-   "text": "Jetzt",
-   "x": 206,
-   "y": 1093,
-   "w": 40,
-   "h": 16
-  },
-  {
-   "text": "brauche",
-   "x": 252,
-   "y": 1091,
-   "w": 67,
-   "h": 16
-  },
-  {
-   "text": "ich",
+   "text": "(j)",
    "x": 326,
-   "y": 1091,
-   "w": 25,
-   "h": 15
-  },
-  {
-   "text": "noch",
-   "x": 358,
-   "y": 1091,
-   "w": 40,
-   "h": 15
-  },
-  {
-   "text": "Computer,",
-   "x": 534,
-   "y": 1092,
-   "w": 85,
-   "h": 19
-  },
-  {
-   "text": "Teppich.",
-   "x": 207,
-   "y": 1117,
-   "w": 70,
-   "h": 20
-  },
-  {
-   "text": "Dann",
-   "x": 286,
-   "y": 1119,
-   "w": 44,
-   "h": 13
+   "y": 1066,
+   "w": 17,
+   "h": 21
   },
   {
    "text": "finde",
-   "x": 337,
-   "y": 1116,
-   "w": 42,
-   "h": 16
+   "x": 411,
+   "y": 1066,
+   "w": 43,
+   "h": 15
   },
   {
    "text": "ich",
-   "x": 386,
-   "y": 1117,
-   "w": 25,
+   "x": 460,
+   "y": 1066,
+   "w": 26,
    "h": 15
-  },
-  {
-   "text": "mein",
-   "x": 418,
-   "y": 1117,
-   "w": 42,
-   "h": 15
-  },
-  {
-   "text": "Zimmer",
-   "x": 467,
-   "y": 1117,
-   "w": 66,
-   "h": 14
   },
   {
    "text": "wirklich",
-   "x": 539,
-   "y": 1116,
-   "w": 73,
+   "x": 492,
+   "y": 1066,
+   "w": 72,
    "h": 15
   },
   {
-   "text": "schön!",
-   "x": 618,
-   "y": 1116,
-   "w": 53,
-   "h": 15
+   "text": "ist",
+   "x": 764,
+   "y": 1067,
+   "w": 20,
+   "h": 14
+  },
+  {
+   "text": "Lampe",
+   "x": 350,
+   "y": 1068,
+   "w": 54,
+   "h": 19
+  },
+  {
+   "text": "super!",
+   "x": 571,
+   "y": 1068,
+   "w": 51,
+   "h": 19
   },
   {
    "text": "(m)",
    "x": 732,
    "y": 1090,
    "w": 27,
-   "h": 17
-  },
-  {
-   "text": "Bild",
-   "x": 767,
-   "y": 1090,
-   "w": 33,
-   "h": 15
+   "h": 18
   },
   {
    "text": "und",
    "x": 806,
    "y": 1090,
-   "w": 32,
-   "h": 15
+   "w": 40,
+   "h": 18
   },
   {
-   "text": "Markieren",
-   "x": 208,
-   "y": 1178,
-   "w": 96,
+   "text": "(n)",
+   "x": 975,
+   "y": 1090,
+   "w": 20,
+   "h": 18
+  },
+  {
+   "text": "(l)",
+   "x": 510,
+   "y": 1091,
+   "w": 17,
    "h": 17
   },
   {
-   "text": "Sie",
-   "x": 311,
-   "y": 1179,
-   "w": 28,
-   "h": 16
+   "text": "Bild",
+   "x": 767,
+   "y": 1091,
+   "w": 33,
+   "h": 14
   },
   {
-   "text": "das",
-   "x": 346,
-   "y": 1178,
-   "w": 31,
-   "h": 16
+   "text": "brauche",
+   "x": 251,
+   "y": 1092,
+   "w": 68,
+   "h": 15
+  },
+  {
+   "text": "ich",
+   "x": 326,
+   "y": 1092,
+   "w": 25,
+   "h": 15
+  },
+  {
+   "text": "noch",
+   "x": 357,
+   "y": 1092,
+   "w": 40,
+   "h": 15
+  },
+  {
+   "text": "Jetzt",
+   "x": 206,
+   "y": 1093,
+   "w": 40,
+   "h": 17
+  },
+  {
+   "text": "Computer,",
+   "x": 535,
+   "y": 1093,
+   "w": 84,
+   "h": 19
+  },
+  {
+   "text": "Teppich.",
+   "x": 207,
+   "y": 1117,
+   "w": 71,
+   "h": 21
+  },
+  {
+   "text": "finde",
+   "x": 336,
+   "y": 1117,
+   "w": 43,
+   "h": 15
+  },
+  {
+   "text": "ich",
+   "x": 385,
+   "y": 1117,
+   "w": 26,
+   "h": 15
+  },
+  {
+   "text": "wirklich",
+   "x": 540,
+   "y": 1117,
+   "w": 72,
+   "h": 15
+  },
+  {
+   "text": "schön!",
+   "x": 618,
+   "y": 1117,
+   "w": 53,
+   "h": 14
+  },
+  {
+   "text": "mein",
+   "x": 417,
+   "y": 1118,
+   "w": 43,
+   "h": 14
+  },
+  {
+   "text": "Zimmer",
+   "x": 467,
+   "y": 1118,
+   "w": 66,
+   "h": 14
+  },
+  {
+   "text": "Dann",
+   "x": 285,
+   "y": 1119,
+   "w": 45,
+   "h": 13
+  },
+  {
+   "text": "Tabelle.",
+   "x": 889,
+   "y": 1177,
+   "w": 72,
+   "h": 17
   },
   {
    "text": "Wortende.",
    "x": 383,
    "y": 1178,
-   "w": 99,
-   "h": 16
+   "w": 100,
+   "h": 17
   },
   {
    "text": "Ordnen",
    "x": 491,
    "y": 1178,
    "w": 68,
+   "h": 17
+  },
+  {
+   "text": "und",
+   "x": 631,
+   "y": 1178,
+   "w": 35,
+   "h": 17
+  },
+  {
+   "text": "Sie",
+   "x": 767,
+   "y": 1178,
+   "w": 27,
+   "h": 16
+  },
+  {
+   "text": "dann",
+   "x": 802,
+   "y": 1178,
+   "w": 46,
+   "h": 16
+  },
+  {
+   "text": "die",
+   "x": 856,
+   "y": 1178,
+   "w": 28,
+   "h": 16
+  },
+  {
+   "text": "Markieren",
+   "x": 208,
+   "y": 1179,
+   "w": 96,
+   "h": 16
+  },
+  {
+   "text": "Sie",
+   "x": 311,
+   "y": 1179,
+   "w": 27,
+   "h": 16
+  },
+  {
+   "text": "das",
+   "x": 347,
+   "y": 1179,
+   "w": 30,
    "h": 16
   },
   {
    "text": "Sie",
    "x": 566,
-   "y": 1178,
-   "w": 28,
+   "y": 1179,
+   "w": 27,
    "h": 16
+  },
+  {
+   "text": "ergänzen",
+   "x": 674,
+   "y": 1179,
+   "w": 86,
+   "h": 22
   },
   {
    "text": "zu",
    "x": 601,
    "y": 1184,
    "w": 21,
-   "h": 10
-  },
-  {
-   "text": "und",
-   "x": 631,
-   "y": 1177,
-   "w": 34,
-   "h": 17
-  },
-  {
-   "text": "ergänzen",
-   "x": 673,
-   "y": 1178,
-   "w": 86,
-   "h": 22
-  },
-  {
-   "text": "Sie",
-   "x": 767,
-   "y": 1177,
-   "w": 27,
-   "h": 16
-  },
-  {
-   "text": "dann",
-   "x": 801,
-   "y": 1177,
-   "w": 47,
-   "h": 16
-  },
-  {
-   "text": "die",
-   "x": 844,
-   "y": 1172,
-   "w": 38,
-   "h": 32
-  },
-  {
-   "text": "Tabelle.",
-   "x": 882,
-   "y": 1176,
-   "w": 79,
-   "h": 17
+   "h": 11
   },
   {
    "text": "HANDYSBRIEFMARKENTISCHBÜROTERMINEDRUCKERSTUHLSCHRÄNKEBILDTEPPICHE",
    "x": 207,
-   "y": 1215,
-   "w": 760,
+   "y": 1216,
+   "w": 759,
    "h": 18
   },
   {
-   "text": "FLASCHENKETTEUHRENRINGBUCHGELDBÖRSENRECHNUNGSTIFTELAMPENPROBLEM",
-   "x": 208,
-   "y": 1241,
-   "w": 746,
+   "text": "PROBLEM",
+   "x": 866,
+   "y": 1239,
+   "w": 92,
+   "h": 27
+  },
+  {
+   "text": "FLASCHENKETTEUHRENRINGBUCHGELDBÖRSENRECHNUNGSTIFTELAMPEN",
+   "x": 207,
+   "y": 1242,
+   "w": 747,
    "h": 17
   },
   {
    "text": "FORMULAREBRILLEFEUERZEUGESEIFE",
    "x": 208,
-   "y": 1269,
+   "y": 1270,
    "w": 339,
-   "h": 15
+   "h": 14
   },
   {
    "text": "Singular",
-   "x": 206,
-   "y": 1300,
-   "w": 80,
-   "h": 36
+   "x": 215,
+   "y": 1309,
+   "w": 71,
+   "h": 25
   },
   {
    "text": "Plural",
    "x": 378,
-   "y": 1311,
+   "y": 1312,
    "w": 50,
    "h": 14
   },
   {
-   "text": "dag",
-   "x": 215,
-   "y": 1338,
-   "w": 22,
-   "h": 14
+   "text": "das",
+   "x": 210,
+   "y": 1335,
+   "w": 27,
+   "h": 23
+  },
+  {
+   "text": "Handy",
+   "x": 378,
+   "y": 1335,
+   "w": 47,
+   "h": 27
   },
   {
    "text": "Handy",
    "x": 245,
-   "y": 1338,
+   "y": 1336,
    "w": 41,
-   "h": 21
-  },
-  {
-   "text": "Handus",
-   "x": 378,
-   "y": 1338,
-   "w": 47,
-   "h": 21
-  },
-  {
-   "text": "neunundvierzig",
-   "x": 849,
-   "y": 1432,
-   "w": 123,
-   "h": 18
+   "h": 27
   },
   {
    "text": "|",
    "x": 988,
-   "y": 1431,
+   "y": 1432,
    "w": 1,
    "h": 15
+  },
+  {
+   "text": "neunundvierzig",
+   "x": 849,
+   "y": 1433,
+   "w": 123,
+   "h": 18
   },
   {
    "text": "49",
    "x": 1006,
    "y": 1433,
-   "w": 16,
+   "w": 17,
    "h": 12
+  },
+  {
+   "text": "Modul 2",
+   "x": 1042,
+   "y": 1433,
+   "w": 30,
+   "h": 14,
+   "phrase": "tab"
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "g1-ist-pos-1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 Da ist ...",
+   "answer": "ein Schlüssel|eine Uhr",
+   "x": 287,
+   "y": 336,
+   "w": 180,
+   "h": 16
+  },
+  {
+   "id": "g1-ist-pos-2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 Da ist ...",
+   "answer": "ein Schlüssel|eine Uhr",
+   "x": 287,
+   "y": 360,
+   "w": 180,
+   "h": 16
+  },
+  {
+   "id": "g1-ist-neg-1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 Da ist nicht ...",
+   "answer": "kein Handy|keine Tasche|kein Regenschirm",
+   "x": 592,
+   "y": 359,
+   "w": 180,
+   "h": 16
+  },
+  {
+   "id": "g1-ist-neg-2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 Da ist nicht ...",
+   "answer": "kein Handy|keine Tasche|kein Regenschirm",
+   "x": 592,
+   "y": 385,
+   "w": 180,
+   "h": 16
+  },
+  {
+   "id": "g1-ist-neg-3",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 Da ist nicht ...",
+   "answer": "kein Handy|keine Tasche|kein Regenschirm",
+   "x": 592,
+   "y": 410,
+   "w": 180,
+   "h": 16
+  },
+  {
+   "id": "g1-sind-pos-1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 Da sind ...",
+   "answer": "Bücher|Kugelschreiber",
+   "x": 287,
+   "y": 449,
+   "w": 180,
+   "h": 16
+  },
+  {
+   "id": "g1-sind-pos-2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 Da sind ...",
+   "answer": "Bücher|Kugelschreiber",
+   "x": 287,
+   "y": 474,
+   "w": 180,
+   "h": 16
+  },
+  {
+   "id": "g1-sind-neg-1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 Da sind nicht ...",
+   "answer": "keine Flaschen|keine Briefmarken",
+   "x": 593,
+   "y": 473,
+   "w": 179,
+   "h": 16
+  },
+  {
+   "id": "g1-sind-neg-2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 Da sind nicht ...",
+   "answer": "keine Flaschen|keine Briefmarken",
+   "x": 593,
+   "y": 498,
+   "w": 179,
+   "h": 16
+  },
+  {
+   "id": "g2a-schluessel",
+   "group": "g2",
+   "kind": "text",
+   "label": "2a: ___/___ Schlüssel",
+   "answer": "einen|keinen",
+   "x": 203,
+   "y": 651,
+   "w": 113,
+   "h": 16
+  },
+  {
+   "id": "g2a-stift",
+   "group": "g2",
+   "kind": "text",
+   "label": "2a: ___ Stift",
+   "answer": "einen",
+   "x": 460,
+   "y": 650,
+   "w": 65,
+   "h": 16
+  },
+  {
+   "id": "g2a-flasche",
+   "group": "g2",
+   "kind": "text",
+   "label": "2a: ___ Flasche",
+   "answer": "eine",
+   "x": 650,
+   "y": 652,
+   "w": 62,
+   "h": 16
+  },
+  {
+   "id": "g2a-rechnung",
+   "group": "g2",
+   "kind": "text",
+   "label": "2a: ___ Rechnung",
+   "answer": "eine",
+   "x": 792,
+   "y": 651,
+   "w": 62,
+   "h": 16
+  },
+  {
+   "id": "g2a-brille",
+   "group": "g2",
+   "kind": "text",
+   "label": "2a: ___ Brille",
+   "answer": "eine",
+   "x": 203,
+   "y": 676,
+   "w": 67,
+   "h": 16
+  },
+  {
+   "id": "g2b-A",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2b: Welcher Tisch passt?",
+   "name": "g2b",
+   "value": "A",
+   "answer": "false",
+   "x": 205,
+   "y": 762,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "g2b-B",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2b: Welcher Tisch passt?",
+   "name": "g2b",
+   "value": "B",
+   "answer": "false",
+   "x": 497,
+   "y": 762,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "g2b-C",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2b: Welcher Tisch passt?",
+   "name": "g2b",
+   "value": "C",
+   "answer": "true",
+   "x": 775,
+   "y": 762,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "g3-b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 (b)",
+   "answer": "es",
+   "x": 657,
+   "y": 965,
+   "w": 78,
+   "h": 16
+  },
+  {
+   "id": "g3-c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 (c)",
+   "answer": "Das",
+   "x": 852,
+   "y": 965,
+   "w": 117,
+   "h": 16
+  },
+  {
+   "id": "g3-d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 (d)",
+   "answer": "Es",
+   "x": 450,
+   "y": 991,
+   "w": 85,
+   "h": 16
+  },
+  {
+   "id": "g3-e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 (e)",
+   "answer": "eine",
+   "x": 790,
+   "y": 990,
+   "w": 178,
+   "h": 16
+  },
+  {
+   "id": "g3-f",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 (f)",
+   "answer": "einen",
+   "x": 391,
+   "y": 1016,
+   "w": 111,
+   "h": 16
+  },
+  {
+   "id": "g3-g",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 (g)",
+   "answer": "Er",
+   "x": 612,
+   "y": 1015,
+   "w": 193,
+   "h": 16
+  },
+  {
+   "id": "g3-h",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 (h)",
+   "answer": "einen",
+   "x": 436,
+   "y": 1041,
+   "w": 117,
+   "h": 16
+  },
+  {
+   "id": "g3-i",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 (i)",
+   "answer": "er",
+   "x": 710,
+   "y": 1040,
+   "w": 103,
+   "h": 16
+  },
+  {
+   "id": "g3-j",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 (j)",
+   "answer": "Die",
+   "x": 205,
+   "y": 1067,
+   "w": 117,
+   "h": 16
+  },
+  {
+   "id": "g3-k",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 (k)",
+   "answer": "Sie",
+   "x": 627,
+   "y": 1066,
+   "w": 105,
+   "h": 16
+  },
+  {
+   "id": "g3-l",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 (l)",
+   "answer": "einen",
+   "x": 401,
+   "y": 1092,
+   "w": 105,
+   "h": 16
+  },
+  {
+   "id": "g3-m",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 (m)",
+   "answer": "ein",
+   "x": 625,
+   "y": 1091,
+   "w": 104,
+   "h": 16
+  },
+  {
+   "id": "g3-n",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 (n)",
+   "answer": "einen",
+   "x": 850,
+   "y": 1091,
+   "w": 105,
+   "h": 16
+  },
+  {
+   "id": "g4-s1",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Buchstabensalat Zeile 1",
+   "answer": "HANDYS BRIEFMARKEN TISCH BÜRO TERMINE DRUCKER STUHL SCHRÄNKE BILD TEPPICHE",
+   "x": 207,
+   "y": 1212,
+   "w": 760,
+   "h": 22
+  },
+  {
+   "id": "g4-s2",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Buchstabensalat Zeile 2",
+   "answer": "FLASCHEN KETTE UHREN RINGBUCH GELDBÖRSEN RECHNUNG STIFTE LAMPEN PROBLEM",
+   "x": 207,
+   "y": 1238,
+   "w": 760,
+   "h": 22
+  },
+  {
+   "id": "g4-s3",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Buchstabensalat Zeile 3",
+   "answer": "FORMULARE BRILLE FEUERZEUGE SEIFE",
+   "x": 208,
+   "y": 1266,
+   "w": 340,
+   "h": 22
+  },
+  {
+   "id": "g4-tab-sg",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Tabelle: Singular",
+   "answer": "die Briefmarke|der Tisch|das Büro|der Termin|der Drucker|der Stuhl|der Schrank|das Bild|der Teppich|die Flasche|die Kette|die Uhr|das Ringbuch|die Geldbörse|die Rechnung|der Stift|die Lampe|das Problem|das Formular|die Brille|das Feuerzeug|die Seife",
+   "x": 210,
+   "y": 1364,
+   "w": 158,
+   "h": 20
+  },
+  {
+   "id": "g4-tab-pl",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Tabelle: Plural",
+   "answer": "die Briefmarken|die Tische|die Büros|die Termine|die Drucker|die Stühle|die Schränke|die Bilder|die Teppiche|die Flaschen|die Ketten|die Uhren|die Ringbücher|die Geldbörsen|die Rechnungen|die Stifte|die Lampen|die Probleme|die Formulare|die Brillen|die Feuerzeuge|die Seifen",
+   "x": 380,
+   "y": 1364,
+   "w": 155,
+   "h": 20
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "1 Was ist im Schrank? Was ist nicht im Schrank? Notieren Sie."
+  },
+  {
+   "id": "g2",
+   "label": "2 Mein Schreibtisch"
+  },
+  {
+   "id": "g3",
+   "label": "3 Mein Zimmer. Ergänzen Sie die Artikel und Personalpronomen."
+  },
+  {
+   "id": "g4",
+   "label": "4 Markieren Sie das Wortende. Ordnen Sie zu und ergänzen Sie dann die Tabelle."
+  }
+ ],
  "review": {
-  "status": "partial",
-  "verifiedWords": 0,
-  "totalWords": 179,
+  "status": "verified",
+  "verifiedWords": 181,
+  "totalWords": 181,
   "notes": [
-   "draft: unverified OCR, no fields/audio yet"
+   "Answers per key (Wiederholungsstation Grammatik 1-4).",
+   "1: answers unordered within each block, so all block answers are given as |-separated alternatives on every line of the block; keine Brille / keine Bleistifte are printed blue examples (no fields).",
+   "2a: the ___/___ blank before Schluessel is a printed einen/keinen choice (answer einen|keinen); the key lists the other four: Stift=einen, Flasche/Rechnung/Brille=eine. 2b answer C per key.",
+   "3a is a printed blue example (Es), no field.",
+   "4: the letter salad is modeled as one text field per printed line, answer = the words of that line in order; the printed table has only one empty row, so its two cells accept any remaining pair as |-separated alternatives; example row das Handy/Handys printed blue."
   ]
  }
 }
