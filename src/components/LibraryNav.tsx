@@ -80,14 +80,16 @@ export function LibraryNav({slug}: {slug: string}) {
 
   const pages = modulePages(slug);
   const currentToken = pages[Math.min(pageIndex, pages.length - 1)] ?? '';
-  const currentPage = currentToken === 'cover' ? null : Number(currentToken);
+  // Non-numbered pages: book covers and the index how-to page.
+  const special: Record<string, string> = {cover: 'Cover', abcover: 'Cover', howto: 'Guide'};
+  const currentPage = currentToken in special ? null : Number(currentToken);
   const currentLesson = currentPage == null ? null : lessonForPage(mod, currentPage);
   const bookInfo = BOOKS.find(b => b.id === mod.book)!;
   const bookTag = mod.book === 'kb' ? 'KB' : 'AB';
   const pillText = currentPage == null
-    ? `${bookTag} ${mod.level} · Cover`
+    ? `${bookTag} ${mod.level} · ${special[currentToken] ?? 'Cover'}`
     : `${bookTag} ${mod.level} · ${currentLesson?.short ?? 'p.' + currentPage}`;
-  const pagePillText = currentPage == null ? 'Cover' : String(currentPage);
+  const pagePillText = currentPage == null ? (special[currentToken] ?? 'Cover') : String(currentPage);
 
   const close = () => setPanel(null);
 
