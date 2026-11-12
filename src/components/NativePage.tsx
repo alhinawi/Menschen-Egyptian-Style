@@ -1,7 +1,7 @@
 import {useLayoutEffect,useRef,useState} from 'react';
 import type {ScanData,ScanWord,ScanBox} from '../scan-data/schema';
 import './native-page.css';
-interface NativeData extends Omit<ScanData,'words'|'groups'|'image'> {words:(ScanWord&{fontSize?:number;bold?:boolean;color?:string})[];groups:{id:string;label:string;x:number;y:number}[];art:(ScanBox&{src:string;name:string})[];titles:[string,number,number][];panels?:ScanBox[];shapes?:(ScanBox&{background:string;border:string})[];arrows?:number[][];hidePageNumber?:boolean;textBlocks?:{text:string;x:number;y:number;w:number;size?:number;bold?:boolean;color?:string;serif?:boolean;rotate?:number}[];module?:{n:string;x:number;y:number;color?:string};taskColor?:string;decorations?:{text:string;x:number;y:number;fontSize:number}[]}
+interface NativeData extends Omit<ScanData,'words'|'groups'|'image'> {words:(ScanWord&{fontSize?:number;bold?:boolean;color?:string})[];groups:{id:string;label:string;x:number;y:number}[];art:(ScanBox&{src:string;name:string})[];titles:[string,number,number][];panels?:ScanBox[];shapes?:(ScanBox&{background:string;border:string;radius?:string})[];arrows?:number[][];hidePageNumber?:boolean;textBlocks?:{text:string;x:number;y:number;w:number;size?:number;bold?:boolean;color?:string;serif?:boolean;rotate?:number}[];module?:{n:string;x:number;y:number;color?:string};taskColor?:string;decorations?:{text:string;x:number;y:number;fontSize:number}[]}
 const dataFiles=import.meta.glob('../native-data/*/*.json',{eager:true,import:'default'}) as Record<string,NativeData>;
 const records=Object.fromEntries(Object.values(dataFiles).map(d=>[d.book+':'+d.page,d]));
 const norm=(x:string)=>x.normalize('NFC').trim().toLocaleLowerCase('de').replace(/[.!?]+$/,'').replace(/\s+/g,' ');
@@ -14,7 +14,7 @@ function NativePageContent({d}:{d:NativeData}){
  const check=(id:string)=>{const fs=d.fields.filter(f=>f.group===id&&f.answer!==undefined);R({...result,...Object.fromEntries(fs.map(f=>{const v=f.kind==='radio'?String(values[f.name||f.id]===f.value):f.kind==='checkbox'?String(values[f.id]==='true'):norm(values[f.id]||'');return [f.id,f.answer!.split('|').some(a=>norm(a)===v)]}))})};
  return <div className="nativePage" ref={host} data-native-book={d.book} data-native-page={d.page}><div ref={canvas} className="nativePageCanvas" style={{width:d.width,height:d.height}}>
  {d.panels?.map((p,i)=><div key={'panel'+i} className="nativePanel" style={box(p)}/>)}
- {d.shapes?.map((a,i)=><div key={'shape'+i} style={{position:'absolute',...box(a),background:a.background,border:a.border,boxSizing:'border-box'}}/>)}
+ {d.shapes?.map((a,i)=><div key={'shape'+i} style={{position:'absolute',...box(a),background:a.background,border:a.border,borderRadius:a.radius,boxSizing:'border-box'}}/>)}
  {d.art.map(a=><img key={a.src} className="nativeArt" src={a.src} style={box(a)} alt={'Originalabbildung '+a.name}/>)}
  {d.page===53&&<><div className="nativeWebBar"/><div className="nativeWebSidebar"/></>}
  {d.decorations?.map((z,i)=><span key={'deco'+i} style={{position:'absolute',left:z.x,top:z.y,fontSize:z.fontSize}}>{z.text}</span>)}

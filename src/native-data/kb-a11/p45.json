@@ -1,0 +1,299 @@
+{
+  "book": "kb-a11",
+  "page": 45,
+  "width": 1075,
+  "height": 1521,
+  "words": [],
+  "art": [
+    {
+      "src": "assets/book-crops/native-p45-hero.png",
+      "x": 65,
+      "y": 76,
+      "w": 1010,
+      "h": 960,
+      "name": "hero"
+    },
+    {
+      "src": "assets/book-crops/native-p45-manuel.png",
+      "x": 177,
+      "y": 1218,
+      "w": 81,
+      "h": 116,
+      "name": "manuel"
+    },
+    {
+      "src": "assets/book-crops/native-p45-jonas.png",
+      "x": 754,
+      "y": 1240,
+      "w": 81,
+      "h": 118,
+      "name": "jonas"
+    }
+  ],
+  "fields": [
+    {
+      "id": "2a-schwimmbad",
+      "group": "2a",
+      "kind": "text",
+      "label": "Wer sagt: Gehen wir ins Schwimmbad?",
+      "answer": "Manuel",
+      "x": 355,
+      "y": 1257,
+      "w": 150,
+      "h": 22
+    },
+    {
+      "id": "2a-kino",
+      "group": "2a",
+      "kind": "text",
+      "label": "Wer sagt: Gehen wir ins Kino?",
+      "answer": "Jonas",
+      "x": 573,
+      "y": 1312,
+      "w": 140,
+      "h": 22
+    },
+    {
+      "id": "2a-vier",
+      "group": "2a",
+      "kind": "text",
+      "label": "Wer sagt: Heute Nachmittag um vier?",
+      "answer": "Manuel und Jonas|beide|Manuel, Jonas|Manuel/Jonas",
+      "x": 324,
+      "y": 1336,
+      "w": 220,
+      "h": 22
+    }
+  ],
+  "audio": [
+    {
+      "id": "t2",
+      "src": "assets/kb-cd2-track05.mp3",
+      "label": "2a Was sagt Manuel? Was sagt Jonas? Hören Sie und ordnen Sie zu.",
+      "x": 119,
+      "y": 1188,
+      "w": 36,
+      "h": 14
+    }
+  ],
+  "groups": [
+    {
+      "id": "2a",
+      "label": "2a",
+      "x": 590,
+      "y": 1354
+    }
+  ],
+  "titles": [
+    [
+      "1",
+      168,
+      1077
+    ],
+    [
+      "2",
+      168,
+      1140
+    ]
+  ],
+  "review": {
+    "status": "source-reviewed",
+    "sourceNotes": [
+      "Native wording transcribed from original scan; source hero full frame retained. Original audio directly transcribed to verify every fixed-answer field. Open prompts not assigned fixed answers."
+    ]
+  },
+  "panels": [],
+  "shapes": [
+    {
+      "x": 866,
+      "y": 1002,
+      "w": 209,
+      "h": 412,
+      "background": "#159fc2",
+      "border": "0"
+    },
+    {
+      "x": 322,
+      "y": 1221,
+      "w": 282,
+      "h": 33,
+      "background": "#fffef3",
+      "border": "1px solid #e5dba1",
+      "radius": "50%"
+    },
+    {
+      "x": 535,
+      "y": 1276,
+      "w": 204,
+      "h": 33,
+      "background": "#fffef3",
+      "border": "1px solid #e5dba1",
+      "radius": "50%"
+    },
+    {
+      "x": 283,
+      "y": 1299,
+      "w": 270,
+      "h": 33,
+      "background": "#fffef3",
+      "border": "1px solid #e5dba1",
+      "radius": "50%"
+    }
+  ],
+  "module": {
+    "n": "8",
+    "x": 1013,
+    "y": 117
+  },
+  "textBlocks": [
+    {
+      "text": "Kein Problem. Ich habe Zeit!",
+      "x": 478,
+      "y": 153,
+      "w": 534,
+      "size": 35,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Sehen Sie das Foto an. Was schreibt Karina? Was meinen Sie?",
+      "x": 211,
+      "y": 1077,
+      "w": 640,
+      "size": 21,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Manuel oder Jonas?",
+      "x": 211,
+      "y": 1140,
+      "w": 600,
+      "size": 22,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "a   Was sagt Manuel? Was sagt Jonas? Hören Sie und ordnen Sie zu.",
+      "x": 186,
+      "y": 1177,
+      "w": 670,
+      "size": 20,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Manuel",
+      "x": 184,
+      "y": 1340,
+      "w": 120,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Jonas",
+      "x": 764,
+      "y": 1361,
+      "w": 100,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Gehen wir ins Schwimmbad?",
+      "x": 328,
+      "y": 1225,
+      "w": 270,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Gehen wir ins Kino?",
+      "x": 541,
+      "y": 1280,
+      "w": 192,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Heute Nachmittag um vier.",
+      "x": 289,
+      "y": 1303,
+      "w": 258,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "b   Karina hat ein Problem. Was macht sie jetzt wohl?",
+      "x": 186,
+      "y": 1396,
+      "w": 660,
+      "size": 20,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "■",
+      "x": 217,
+      "y": 1434,
+      "w": 20,
+      "size": 18,
+      "bold": false,
+      "serif": false,
+      "color": "#21458d"
+    },
+    {
+      "text": "Ich glaube, sie geht mit Manuel ins Schwimmbad.",
+      "x": 242,
+      "y": 1434,
+      "w": 600,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "▲",
+      "x": 217,
+      "y": 1460,
+      "w": 20,
+      "size": 18,
+      "bold": false,
+      "serif": false,
+      "color": "#29983d"
+    },
+    {
+      "text": "Nein, das glaube ich nicht. Ich glaube, …",
+      "x": 242,
+      "y": 1460,
+      "w": 600,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Sprechen: sich verabreden: Hast du am Nachmittag Zeit?; einen Vorschlag machen und darauf reagieren: Gehen wir ins Kino?\nLesen: SMS, Chat\nSchreiben: Einladung/Absage\nWortfelder: Tageszeiten, Wochentage, Uhrzeiten, Freizeitaktivitäten\nGrammatik: Verbposition im Satz: Heute Abend habe ich keine Zeit.; temporale Präpositionen am, um",
+      "x": 879,
+      "y": 1020,
+      "w": 184,
+      "size": 16,
+      "bold": false,
+      "serif": false,
+      "color": "#fff"
+    },
+    {
+      "text": "fünfundvierzig   |   45",
+      "x": 867,
+      "y": 1500,
+      "w": 195,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    }
+  ],
+  "hidePageNumber": true,
+  "taskColor": "#8e0846"
+}
