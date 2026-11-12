@@ -41,13 +41,6 @@
    "h": 11
   },
   {
-   "text": "...?",
-   "x": 339,
-   "y": 167,
-   "w": 31,
-   "h": 16
-  },
-  {
    "text": "Lesen",
    "x": 153,
    "y": 207,
@@ -1252,7 +1245,7 @@
    "h": 14
   },
   {
-   "text": "„Schönblick“?",
+   "text": "„Schonblick“?",
    "x": 438,
    "y": 1071,
    "w": 121,
@@ -1791,13 +1784,137 @@
    "h": 14
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p8-8a",
+   "group": "g1",
+   "kind": "text",
+   "label": "a",
+   "answer": "bin nicht von hier",
+   "x": 232,
+   "y": 803,
+   "w": 311,
+   "h": 24
+  },
+  {
+   "id": "p8-8b",
+   "group": "g1",
+   "kind": "text",
+   "label": "b",
+   "answer": "ist sehr nett",
+   "x": 349,
+   "y": 867,
+   "w": 298,
+   "h": 24
+  },
+  {
+   "id": "p8-8c",
+   "group": "g1",
+   "kind": "text",
+   "label": "c",
+   "answer": "Trotzdem: Dankeschön",
+   "x": 268,
+   "y": 932,
+   "w": 302,
+   "h": 24
+  },
+  {
+   "id": "p8-8d",
+   "group": "g1",
+   "kind": "text",
+   "label": "d",
+   "answer": "sehen Sie schon",
+   "x": 588,
+   "y": 1010,
+   "w": 284,
+   "h": 24
+  },
+  {
+   "id": "p8-8e1",
+   "group": "g1",
+   "kind": "text",
+   "label": "e1",
+   "answer": "ist ganz in der Nähe",
+   "x": 265,
+   "y": 1100,
+   "w": 305,
+   "h": 24
+  },
+  {
+   "id": "p8-8e2",
+   "group": "g1",
+   "kind": "text",
+   "label": "e2",
+   "answer": "Wenden Sie hier",
+   "x": 587,
+   "y": 1100,
+   "w": 285,
+   "h": 24
+  },
+  {
+   "id": "p8-9b",
+   "group": "g2",
+   "kind": "text",
+   "label": "b",
+   "answer": "helfen",
+   "x": 318,
+   "y": 1254,
+   "w": 257,
+   "h": 24
+  },
+  {
+   "id": "p8-9c",
+   "group": "g2",
+   "kind": "text",
+   "label": "c",
+   "answer": "das Hotel „Marienhof“|das Hotel Marienhof",
+   "x": 280,
+   "y": 1280,
+   "w": 255,
+   "h": 24
+  },
+  {
+   "id": "p8-9d",
+   "group": "g2",
+   "kind": "text",
+   "label": "d",
+   "answer": "Frage",
+   "x": 218,
+   "y": 1305,
+   "w": 257,
+   "h": 24
+  },
+  {
+   "id": "p8-9e",
+   "group": "g2",
+   "kind": "text",
+   "label": "e",
+   "answer": "Moment",
+   "x": 322,
+   "y": 1331,
+   "w": 263,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 8"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 9"
+  }
+ ],
  "review": {
   "status": "partial",
-  "verifiedWords": 255,
-  "totalWords": 255,
-  "notes": []
+  "notes": [
+   "Answers from the official Hueber key (Menschen A1, Lektion 13 Arbeitsbuch). Handwritten examples not fields.",
+   "Ex 7 is free writing (no fields). Ex 8 answers are the key sentences.",
+   "Boxes placed from word coordinates and checked visually. Not marked verified."
+  ],
+  "verifiedWords": 254,
+  "totalWords": 254
  }
 }
