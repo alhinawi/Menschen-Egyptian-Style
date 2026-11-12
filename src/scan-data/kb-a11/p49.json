@@ -1,0 +1,955 @@
+{
+  "book": "kb-a11",
+  "page": 49,
+  "image": "assets/kb-a11-p49.png",
+  "width": 1075,
+  "height": 1521,
+  "words": [
+    {
+      "text": "Ich",
+      "x": 360,
+      "y": 152,
+      "w": 52,
+      "h": 40
+    },
+    {
+      "text": "möchte",
+      "x": 429,
+      "y": 152,
+      "w": 130,
+      "h": 40
+    },
+    {
+      "text": "was",
+      "x": 572,
+      "y": 152,
+      "w": 64,
+      "h": 40
+    },
+    {
+      "text": "essen",
+      "x": 651,
+      "y": 152,
+      "w": 104,
+      "h": 40
+    },
+    {
+      "text": "Onkel",
+      "x": 771,
+      "y": 152,
+      "w": 102,
+      "h": 40
+    },
+    {
+      "text": "Harry",
+      "x": 888,
+      "y": 152,
+      "w": 122,
+      "h": 40
+    },
+    {
+      "text": "Sehen",
+      "x": 234,
+      "y": 1085,
+      "w": 56,
+      "h": 17
+    },
+    {
+      "text": "Sie",
+      "x": 298,
+      "y": 1084,
+      "w": 27,
+      "h": 16
+    },
+    {
+      "text": "das",
+      "x": 333,
+      "y": 1084,
+      "w": 31,
+      "h": 16
+    },
+    {
+      "text": "Foto",
+      "x": 372,
+      "y": 1084,
+      "w": 42,
+      "h": 14
+    },
+    {
+      "text": "an",
+      "x": 422,
+      "y": 1087,
+      "w": 28,
+      "h": 11
+    },
+    {
+      "text": "Was",
+      "x": 235,
+      "y": 1113,
+      "w": 33,
+      "h": 14
+    },
+    {
+      "text": "haben",
+      "x": 276,
+      "y": 1111,
+      "w": 49,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 332,
+      "y": 1110,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "im",
+      "x": 364,
+      "y": 1110,
+      "w": 19,
+      "h": 14
+    },
+    {
+      "text": "Kühlschrank",
+      "x": 392,
+      "y": 1107,
+      "w": 112,
+      "h": 16
+    },
+    {
+      "text": "Hilfe",
+      "x": 512,
+      "y": 1105,
+      "w": 38,
+      "h": 16
+    },
+    {
+      "text": "finden",
+      "x": 557,
+      "y": 1104,
+      "w": 52,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 617,
+      "y": 1104,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "im",
+      "x": 649,
+      "y": 1104,
+      "w": 19,
+      "h": 14
+    },
+    {
+      "text": "Bildlexikon",
+      "x": 676,
+      "y": 1101,
+      "w": 92,
+      "h": 16
+    },
+    {
+      "text": "oder",
+      "x": 776,
+      "y": 1099,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "im",
+      "x": 237,
+      "y": 1138,
+      "w": 19,
+      "h": 14
+    },
+    {
+      "text": "Wörterbuch",
+      "x": 262,
+      "y": 1135,
+      "w": 105,
+      "h": 17
+    },
+    {
+      "text": "fast",
+      "x": 237,
+      "y": 1174,
+      "w": 47,
+      "h": 18
+    },
+    {
+      "text": "immer",
+      "x": 293,
+      "y": 1175,
+      "w": 58,
+      "h": 13
+    },
+    {
+      "text": "oft",
+      "x": 430,
+      "y": 1169,
+      "w": 24,
+      "h": 22
+    },
+    {
+      "text": "manchmal",
+      "x": 549,
+      "y": 1167,
+      "w": 95,
+      "h": 16
+    },
+    {
+      "text": "fast",
+      "x": 696,
+      "y": 1164,
+      "w": 47,
+      "h": 18
+    },
+    {
+      "text": "nie",
+      "x": 751,
+      "y": 1165,
+      "w": 27,
+      "h": 14
+    },
+    {
+      "text": "Ich",
+      "x": 614,
+      "y": 1257,
+      "w": 21,
+      "h": 12
+    },
+    {
+      "text": "habe",
+      "x": 641,
+      "y": 1257,
+      "w": 33,
+      "h": 12
+    },
+    {
+      "text": "immer",
+      "x": 679,
+      "y": 1257,
+      "w": 47,
+      "h": 11
+    },
+    {
+      "text": "Milch",
+      "x": 733,
+      "y": 1254,
+      "w": 40,
+      "h": 13
+    },
+    {
+      "text": "im",
+      "x": 779,
+      "y": 1254,
+      "w": 18,
+      "h": 12
+    },
+    {
+      "text": "Kühlschrank",
+      "x": 658,
+      "y": 1274,
+      "w": 95,
+      "h": 16
+    },
+    {
+      "text": "Was",
+      "x": 239,
+      "y": 1289,
+      "w": 38,
+      "h": 15
+    },
+    {
+      "text": "ist",
+      "x": 285,
+      "y": 1287,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "richtig",
+      "x": 316,
+      "y": 1286,
+      "w": 73,
+      "h": 22
+    },
+    {
+      "text": "Hören",
+      "x": 241,
+      "y": 1315,
+      "w": 49,
+      "h": 14
+    },
+    {
+      "text": "Sie",
+      "x": 297,
+      "y": 1314,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "und",
+      "x": 328,
+      "y": 1312,
+      "w": 30,
+      "h": 16
+    },
+    {
+      "text": "kreuzen",
+      "x": 367,
+      "y": 1312,
+      "w": 65,
+      "h": 14
+    },
+    {
+      "text": "Sie",
+      "x": 439,
+      "y": 1310,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "an",
+      "x": 470,
+      "y": 1314,
+      "w": 24,
+      "h": 10
+    },
+    {
+      "text": "Tim",
+      "x": 263,
+      "y": 1353,
+      "w": 32,
+      "h": 13
+    },
+    {
+      "text": "hat",
+      "x": 302,
+      "y": 1352,
+      "w": 28,
+      "h": 14
+    },
+    {
+      "text": "Hunger",
+      "x": 458,
+      "y": 1350,
+      "w": 66,
+      "h": 18
+    },
+    {
+      "text": "Durst",
+      "x": 659,
+      "y": 1342,
+      "w": 50,
+      "h": 16
+    },
+    {
+      "text": "Tim",
+      "x": 264,
+      "y": 1378,
+      "w": 32,
+      "h": 14
+    },
+    {
+      "text": "mag",
+      "x": 303,
+      "y": 1381,
+      "w": 35,
+      "h": 15
+    },
+    {
+      "text": "keinen",
+      "x": 458,
+      "y": 1374,
+      "w": 59,
+      "h": 14
+    },
+    {
+      "text": "Schinken",
+      "x": 523,
+      "y": 1371,
+      "w": 84,
+      "h": 16
+    },
+    {
+      "text": "keinen",
+      "x": 658,
+      "y": 1369,
+      "w": 59,
+      "h": 15
+    },
+    {
+      "text": "Käse",
+      "x": 724,
+      "y": 1368,
+      "w": 42,
+      "h": 14
+    },
+    {
+      "text": "keine",
+      "x": 824,
+      "y": 1365,
+      "w": 46,
+      "h": 15
+    },
+    {
+      "text": "Schokolade",
+      "x": 877,
+      "y": 1362,
+      "w": 100,
+      "h": 16
+    },
+    {
+      "text": "Onkel",
+      "x": 265,
+      "y": 1402,
+      "w": 48,
+      "h": 16
+    },
+    {
+      "text": "Harry",
+      "x": 321,
+      "y": 1403,
+      "w": 49,
+      "h": 18
+    },
+    {
+      "text": "hat",
+      "x": 376,
+      "y": 1400,
+      "w": 28,
+      "h": 14
+    },
+    {
+      "text": "keinen",
+      "x": 459,
+      "y": 1398,
+      "w": 58,
+      "h": 14
+    },
+    {
+      "text": "Schinken",
+      "x": 524,
+      "y": 1396,
+      "w": 84,
+      "h": 16
+    },
+    {
+      "text": "keinen",
+      "x": 659,
+      "y": 1394,
+      "w": 58,
+      "h": 15
+    },
+    {
+      "text": "Käse",
+      "x": 725,
+      "y": 1393,
+      "w": 42,
+      "h": 13
+    },
+    {
+      "text": "keine",
+      "x": 825,
+      "y": 1390,
+      "w": 46,
+      "h": 15
+    },
+    {
+      "text": "Schokolade",
+      "x": 878,
+      "y": 1387,
+      "w": 100,
+      "h": 17
+    },
+    {
+      "text": "Tim",
+      "x": 265,
+      "y": 1429,
+      "w": 33,
+      "h": 13
+    },
+    {
+      "text": "isst",
+      "x": 304,
+      "y": 1428,
+      "w": 28,
+      "h": 14
+    },
+    {
+      "text": "ein",
+      "x": 460,
+      "y": 1424,
+      "w": 26,
+      "h": 14
+    },
+    {
+      "text": "Schinkenbrot",
+      "x": 493,
+      "y": 1421,
+      "w": 120,
+      "h": 17
+    },
+    {
+      "text": "ein",
+      "x": 660,
+      "y": 1420,
+      "w": 26,
+      "h": 14
+    },
+    {
+      "text": "Käsebrot",
+      "x": 694,
+      "y": 1417,
+      "w": 77,
+      "h": 15
+    },
+    {
+      "text": "ein",
+      "x": 826,
+      "y": 1416,
+      "w": 26,
+      "h": 14
+    },
+    {
+      "text": "Stück",
+      "x": 859,
+      "y": 1413,
+      "w": 46,
+      "h": 16
+    },
+    {
+      "text": "Kuchen",
+      "x": 912,
+      "y": 1412,
+      "w": 69,
+      "h": 15
+    },
+    {
+      "text": "Hören",
+      "x": 892,
+      "y": 1014,
+      "w": 49,
+      "h": 12
+    },
+    {
+      "text": "Gespräch",
+      "x": 947,
+      "y": 1011,
+      "w": 60,
+      "h": 18
+    },
+    {
+      "text": "über",
+      "x": 1014,
+      "y": 1011,
+      "w": 29,
+      "h": 12
+    },
+    {
+      "text": "Vorlieben",
+      "x": 891,
+      "y": 1035,
+      "w": 64,
+      "h": 13
+    },
+    {
+      "text": "beim",
+      "x": 961,
+      "y": 1034,
+      "w": 32,
+      "h": 12
+    },
+    {
+      "text": "Essen",
+      "x": 1000,
+      "y": 1034,
+      "w": 36,
+      "h": 11
+    },
+    {
+      "text": "Sprechen",
+      "x": 892,
+      "y": 1064,
+      "w": 72,
+      "h": 17
+    },
+    {
+      "text": "über",
+      "x": 971,
+      "y": 1063,
+      "w": 29,
+      "h": 13
+    },
+    {
+      "text": "Essge",
+      "x": 1007,
+      "y": 1064,
+      "w": 42,
+      "h": 15
+    },
+    {
+      "text": "wohnheiten",
+      "x": 893,
+      "y": 1086,
+      "w": 80,
+      "h": 12
+    },
+    {
+      "text": "sprechen",
+      "x": 981,
+      "y": 1085,
+      "w": 64,
+      "h": 16
+    },
+    {
+      "text": "Ich",
+      "x": 894,
+      "y": 1109,
+      "w": 16,
+      "h": 11
+    },
+    {
+      "text": "esse",
+      "x": 916,
+      "y": 1112,
+      "w": 22,
+      "h": 8
+    },
+    {
+      "text": "gern",
+      "x": 944,
+      "y": 1111,
+      "w": 26,
+      "h": 12
+    },
+    {
+      "text": "Müsli",
+      "x": 975,
+      "y": 1107,
+      "w": 33,
+      "h": 11
+    },
+    {
+      "text": "zum",
+      "x": 1015,
+      "y": 1110,
+      "w": 24,
+      "h": 8
+    },
+    {
+      "text": "Frühstück",
+      "x": 894,
+      "y": 1128,
+      "w": 62,
+      "h": 13
+    },
+    {
+      "text": "beim",
+      "x": 963,
+      "y": 1128,
+      "w": 33,
+      "h": 13
+    },
+    {
+      "text": "Essen",
+      "x": 1003,
+      "y": 1128,
+      "w": 42,
+      "h": 13
+    },
+    {
+      "text": "Möchten",
+      "x": 894,
+      "y": 1152,
+      "w": 53,
+      "h": 12
+    },
+    {
+      "text": "Sie",
+      "x": 953,
+      "y": 1152,
+      "w": 15,
+      "h": 11
+    },
+    {
+      "text": "Kaffee",
+      "x": 975,
+      "y": 1150,
+      "w": 37,
+      "h": 17
+    },
+    {
+      "text": "oder",
+      "x": 1017,
+      "y": 1149,
+      "w": 25,
+      "h": 12
+    },
+    {
+      "text": "Tee",
+      "x": 1047,
+      "y": 1149,
+      "w": 24,
+      "h": 11
+    },
+    {
+      "text": "Lesen",
+      "x": 896,
+      "y": 1182,
+      "w": 44,
+      "h": 11
+    },
+    {
+      "text": "Comic",
+      "x": 947,
+      "y": 1180,
+      "w": 41,
+      "h": 13
+    },
+    {
+      "text": "Wortfeld",
+      "x": 895,
+      "y": 1209,
+      "w": 71,
+      "h": 14
+    },
+    {
+      "text": "Lebensmittel",
+      "x": 972,
+      "y": 1207,
+      "w": 87,
+      "h": 15
+    },
+    {
+      "text": "und",
+      "x": 896,
+      "y": 1232,
+      "w": 24,
+      "h": 13
+    },
+    {
+      "text": "Speisen",
+      "x": 926,
+      "y": 1231,
+      "w": 51,
+      "h": 17
+    },
+    {
+      "text": "Grammatik",
+      "x": 896,
+      "y": 1259,
+      "w": 87,
+      "h": 14
+    },
+    {
+      "text": "Konjugation",
+      "x": 990,
+      "y": 1258,
+      "w": 83,
+      "h": 18
+    },
+    {
+      "text": "mögen",
+      "x": 896,
+      "y": 1284,
+      "w": 42,
+      "h": 13
+    },
+    {
+      "text": "möchte",
+      "x": 942,
+      "y": 1284,
+      "w": 62,
+      "h": 13
+    },
+    {
+      "text": "Wortbil",
+      "x": 1012,
+      "y": 1284,
+      "w": 58,
+      "h": 13
+    },
+    {
+      "text": "dung",
+      "x": 898,
+      "y": 1305,
+      "w": 34,
+      "h": 13
+    },
+    {
+      "text": "Nomen",
+      "x": 938,
+      "y": 1306,
+      "w": 46,
+      "h": 10
+    },
+    {
+      "text": "Nomen",
+      "x": 1006,
+      "y": 1304,
+      "w": 51,
+      "h": 10
+    },
+    {
+      "text": "der",
+      "x": 899,
+      "y": 1327,
+      "w": 16,
+      "h": 12
+    },
+    {
+      "text": "Tomatensalat",
+      "x": 921,
+      "y": 1325,
+      "w": 81,
+      "h": 13
+    }
+  ],
+  "fields": [
+    {
+      "id": "a-durst",
+      "group": "task2",
+      "kind": "checkbox",
+      "label": "Tim hat Durst.",
+      "answer": "false",
+      "x": 631,
+      "y": 1348,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "b-schinken",
+      "group": "task2",
+      "kind": "checkbox",
+      "label": "Tim mag keinen Schinken.",
+      "answer": "true",
+      "x": 431,
+      "y": 1370,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "b-kaese",
+      "group": "task2",
+      "kind": "checkbox",
+      "label": "Tim mag keinen Käse.",
+      "answer": "true",
+      "x": 631,
+      "y": 1367,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "b-schoko",
+      "group": "task2",
+      "kind": "checkbox",
+      "label": "Tim mag keine Schokolade.",
+      "answer": "false",
+      "x": 794,
+      "y": 1362,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "c-schinken",
+      "group": "task2",
+      "kind": "checkbox",
+      "label": "Onkel Harry hat keinen Schinken.",
+      "answer": "false",
+      "x": 431,
+      "y": 1395,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "c-kaese",
+      "group": "task2",
+      "kind": "checkbox",
+      "label": "Onkel Harry hat keinen Käse.",
+      "answer": "false",
+      "x": 631,
+      "y": 1390,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "c-schoko",
+      "group": "task2",
+      "kind": "checkbox",
+      "label": "Onkel Harry hat keine Schokolade.",
+      "answer": "true",
+      "x": 794,
+      "y": 1385,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "d-schinkenbrot",
+      "group": "task2",
+      "kind": "checkbox",
+      "label": "Tim isst ein Schinkenbrot.",
+      "answer": "false",
+      "x": 431,
+      "y": 1418,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "d-kaesebrot",
+      "group": "task2",
+      "kind": "checkbox",
+      "label": "Tim isst ein Käsebrot.",
+      "answer": "false",
+      "x": 631,
+      "y": 1413,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "d-kuchen",
+      "group": "task2",
+      "kind": "checkbox",
+      "label": "Tim isst ein Stück Kuchen.",
+      "answer": "true",
+      "x": 794,
+      "y": 1408,
+      "w": 22,
+      "h": 22
+    }
+  ],
+  "audio": [
+    {
+      "id": "cd2-07",
+      "src": "assets/kb-cd2-track07.mp3",
+      "label": "2.07 · Was ist richtig?",
+      "x": 140,
+      "y": 1296,
+      "w": 55,
+      "h": 26
+    }
+  ],
+  "groups": [
+    {
+      "id": "task2",
+      "label": "2"
+    }
+  ],
+  "review": {
+    "status": "verified",
+    "verifiedWords": 115,
+    "totalWords": 115,
+    "notes": [
+      "All printed words reviewed against the scan: photo quote, blue sidebar summary, frequency table, oval example and all task-2 rows. Cut-off sliver of the previous page at the left edge excluded.",
+      "Task 2 answers verified by listening to track 2.07: Tim rejects Schinken and Käse, wants Schokolade (Harry has none), eats ein Stück Kuchen. The X before Hunger in row a is the printed example - no field there.",
+      "Handwritten Milch under (fast) immer in task 1 is the scanned copy owner handwriting, not book text - excluded.",
+      "Audio marker 2.07 printed on page; file assets/kb-cd2-track07.mp3 exists.",
+      "Note: the old l7-9 lesson markup for printed page 49 does not match the scan (it carries fabricated Lektion-8 vocab-table content) - this record follows the scan only."
+    ]
+  }
+}
