@@ -23,3 +23,4 @@
 .nkbCanvas .nkbLine{position:absolute;white-space:nowrap;width:max-content;font-family:'Palatino Linotype',Palatino,'Book Antiqua','Liberation Serif',Georgia,serif;margin:0;padding:0}.nkbCanvas .nkbLine.nkbB{font-family:Arial,'Liberation Sans',Helvetica,sans-serif;font-weight:700}.nkbCanvas .nkbLine .tapWord{cursor:pointer;touch-action:manipulation}
 .nkbCanvas .nkbLine.nkbSans:not(.nkbB){font-family:Arial,'Liberation Sans',Helvetica,sans-serif}
 .nkbCanvas input[type=text].nkbField,.nkbCanvas select.nkbField{border:1.5px solid #6f7b72!important;border-radius:3px!important;background:#fffef7b3!important}
+.nkbCanvas .nkbCompact{font-size:1.45cqw}
