@@ -1,0 +1,491 @@
+{
+  "book": "kb-a11",
+  "page": 53,
+  "width": 1075,
+  "height": 1521,
+  "words": [],
+  "art": [
+    {
+      "src": "assets/book-crops/native-p53-profile.png",
+      "x": 183,
+      "y": 354,
+      "w": 186,
+      "h": 181,
+      "name": "profile"
+    },
+    {
+      "src": "assets/book-crops/native-p53-sport.png",
+      "x": 860,
+      "y": 394,
+      "w": 160,
+      "h": 148,
+      "name": "sport"
+    },
+    {
+      "src": "assets/book-crops/native-p53-food.png",
+      "x": 860,
+      "y": 614,
+      "w": 165,
+      "h": 209,
+      "name": "food"
+    },
+    {
+      "src": "assets/book-crops/native-p53-film.png",
+      "x": 860,
+      "y": 926,
+      "w": 167,
+      "h": 161,
+      "name": "film"
+    }
+  ],
+  "fields": [
+    {
+      "id": "t1-heute",
+      "group": "task1",
+      "kind": "text",
+      "label": "Heute - Samstag, 29. Mai (Frauen-Ausflug)",
+      "answer": "Nur für Frauen!|Nur für Frauen",
+      "x": 415,
+      "y": 410,
+      "w": 322,
+      "h": 24
+    },
+    {
+      "id": "t2-morgen",
+      "group": "task1",
+      "kind": "text",
+      "label": "Morgen - Sonntag, 30. Mai (Musikfrühstück)",
+      "answer": "Frühstück mit Musik",
+      "x": 418,
+      "y": 659,
+      "w": 322,
+      "h": 24
+    },
+    {
+      "id": "t3-juni",
+      "group": "task1",
+      "kind": "text",
+      "label": "Juni - Donnerstag, 3. Juni (Tivoli-Film)",
+      "answer": "Endlich wieder Kino!|Endlich wieder Kino",
+      "x": 422,
+      "y": 950,
+      "w": 322,
+      "h": 24
+    },
+    {
+      "id": "open-wochenende",
+      "kind": "text",
+      "group": "open",
+      "x": 220,
+      "y": 1415,
+      "w": 795,
+      "h": 60,
+      "label": "Mein Wochenend-Blog"
+    },
+    {
+      "id": "open-warum",
+      "group": "open3",
+      "kind": "text",
+      "label": "3: Was möchten Sie mit Anja machen? Warum?",
+      "x": 220,
+      "y": 1336,
+      "w": 500,
+      "h": 32
+    }
+  ],
+  "audio": [],
+  "groups": [
+    {
+      "id": "task1",
+      "label": "1",
+      "x": 900,
+      "y": 1220
+    }
+  ],
+  "titles": [
+    [
+      "1",
+      179,
+      1185
+    ],
+    [
+      "3",
+      179,
+      1280
+    ],
+    [
+      "4",
+      179,
+      1380
+    ]
+  ],
+  "review": {
+    "status": "source-reviewed",
+    "source": "assets/kb-a11-p53.png",
+    "checks": [
+      "original wording and illustration framing",
+      "native closed-task grading and open-answer persistence",
+      "320/390 mobile geometry and translation taps"
+    ],
+    "notes": "Closed answers checked against the official Hueber key."
+  },
+  "panels": [],
+  "shapes": [
+    {
+      "x": 170,
+      "y": 237,
+      "w": 850,
+      "h": 38,
+      "background": "#b6447d",
+      "border": "0"
+    },
+    {
+      "x": 170,
+      "y": 275,
+      "w": 850,
+      "h": 32,
+      "background": "#95064b",
+      "border": "0"
+    },
+    {
+      "x": 170,
+      "y": 307,
+      "w": 230,
+      "h": 835,
+      "background": "#fff9fc",
+      "border": "0"
+    },
+    {
+      "x": 400,
+      "y": 307,
+      "w": 620,
+      "h": 835,
+      "background": "#fff",
+      "border": "0"
+    },
+    {
+      "x": 402,
+      "y": 330,
+      "w": 187,
+      "h": 30,
+      "background": "#95064b",
+      "border": "0"
+    },
+    {
+      "x": 176,
+      "y": 700,
+      "w": 214,
+      "h": 29,
+      "background": "#95064b",
+      "border": "0"
+    },
+    {
+      "x": 900,
+      "y": 554,
+      "w": 92,
+      "h": 24,
+      "background": "#d5488f",
+      "border": "0"
+    },
+    {
+      "x": 900,
+      "y": 855,
+      "w": 92,
+      "h": 24,
+      "background": "#d5488f",
+      "border": "0"
+    },
+    {
+      "x": 900,
+      "y": 1088,
+      "w": 92,
+      "h": 24,
+      "background": "#d5488f",
+      "border": "0"
+    },
+    {
+      "x": 220,
+      "y": 1223,
+      "w": 670,
+      "h": 27,
+      "background": "#fffbc6",
+      "border": "0"
+    },
+    {
+      "x": 754,
+      "y": 1265,
+      "w": 290,
+      "h": 92,
+      "background": "#fffef3",
+      "border": "1px solid #ece7b8",
+      "radius": "50%"
+    }
+  ],
+  "taskColor": "#ae2408",
+  "textBlocks": [
+    {
+      "text": "LESEMAGAZIN",
+      "x": 720,
+      "y": 140,
+      "w": 330,
+      "size": 31,
+      "bold": false,
+      "serif": true,
+      "color": "#a99d73"
+    },
+    {
+      "text": "BINGOBABY",
+      "x": 854,
+      "y": 242,
+      "w": 165,
+      "size": 24,
+      "bold": true,
+      "serif": false,
+      "color": "#fff"
+    },
+    {
+      "text": "STARTSEITE   |   PROFIL   |   MEIN KONTO",
+      "x": 408,
+      "y": 282,
+      "w": 610,
+      "size": 18,
+      "bold": false,
+      "serif": false,
+      "color": "#fff"
+    },
+    {
+      "text": "VERANSTALTUNGEN",
+      "x": 414,
+      "y": 336,
+      "w": 185,
+      "size": 15,
+      "bold": false,
+      "serif": false,
+      "color": "#fff"
+    },
+    {
+      "text": "Anja Ebner",
+      "x": 199,
+      "y": 559,
+      "w": 210,
+      "size": 19,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "└ Meine Seite bearbeiten",
+      "x": 199,
+      "y": 591,
+      "w": 210,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "WILLKOMMEN\nNEUES",
+      "x": 197,
+      "y": 647,
+      "w": 210,
+      "size": 17,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "VERANSTALTUNGEN",
+      "x": 197,
+      "y": 707,
+      "w": 205,
+      "size": 15,
+      "bold": false,
+      "serif": false,
+      "color": "#fff"
+    },
+    {
+      "text": "FOTOS\nFREUNDE\n└ 22 Freunde sind online",
+      "x": 197,
+      "y": 737,
+      "w": 210,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Heute",
+      "x": 416,
+      "y": 385,
+      "w": 400,
+      "size": 19,
+      "bold": true,
+      "serif": false,
+      "color": "#95064b"
+    },
+    {
+      "text": "Samstag, 29. Mai, 14:30 Uhr",
+      "x": 417,
+      "y": 435,
+      "w": 438,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Möchtest Du grillen, schwimmen und Beachvolleyball\nspielen? Marlene, Gisi, Vera und ich machen heute\neinen Frauen-Ausflug. Wir fahren mit dem Rad zum\n„Seebad“. Hast Du Zeit? Ja? Na dann: Warum kommst\nDu nicht auch? Na los!",
+      "x": 417,
+      "y": 455,
+      "w": 438,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Morgen",
+      "x": 416,
+      "y": 634,
+      "w": 400,
+      "size": 19,
+      "bold": true,
+      "serif": false,
+      "color": "#95064b"
+    },
+    {
+      "text": "Sonntag, 30. Mai, Start: 10 Uhr, Ende: ???",
+      "x": 417,
+      "y": 684,
+      "w": 438,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Was machst Du am Sonntag um 10 Uhr? Schlafen?\nLesen? Im Internet surfen? Oder schön frühstücken?\nWir machen nämlich wieder ein „Musikfrühstück“ bei\nuns im Garten. Andi (Gitarre), Verena (Flöte) und ich\n(Cello) machen Musik (Klassik & Jazz). Es gibt Brötchen,\nMarmelade, Honig, Wurst, Käse, Obst, Kaffee, Tee, Milch\nund Orangensaft. Wer möchte ein Ei? Bitte melden!",
+      "x": 417,
+      "y": 702,
+      "w": 438,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Juni",
+      "x": 416,
+      "y": 925,
+      "w": 400,
+      "size": 19,
+      "bold": true,
+      "serif": false,
+      "color": "#95064b"
+    },
+    {
+      "text": "Donnerstag, 3. Juni, 20 Uhr",
+      "x": 417,
+      "y": 975,
+      "w": 438,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Einmal im Jahr kommt im „Tivoli“ mein absoluter Lieb-\nlingsfilm: „Haben und Nichthaben“ mit Humphrey\nBogart und Lauren Bacall. Magst Du ihn auch so gern?\nDann sehen wir uns heute Abend um 20 Uhr im „Tivoli“,\nokay? Ich freue mich schon!",
+      "x": 417,
+      "y": 994,
+      "w": 438,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Ich komme",
+      "x": 911,
+      "y": 558,
+      "w": 88,
+      "size": 13,
+      "bold": false,
+      "serif": false,
+      "color": "#fff"
+    },
+    {
+      "text": "Ich komme",
+      "x": 911,
+      "y": 859,
+      "w": 88,
+      "size": 13,
+      "bold": false,
+      "serif": false,
+      "color": "#fff"
+    },
+    {
+      "text": "Ich komme",
+      "x": 911,
+      "y": 1092,
+      "w": 88,
+      "size": 13,
+      "bold": false,
+      "serif": false,
+      "color": "#fff"
+    },
+    {
+      "text": "Welche Überschrift passt zu den Veranstaltungen? Lesen und ergänzen Sie.",
+      "x": 220,
+      "y": 1185,
+      "w": 822,
+      "size": 20,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Frühstück mit Musik | Nur für Frauen! | Endlich wieder Kino!",
+      "x": 225,
+      "y": 1227,
+      "w": 680,
+      "size": 18,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Ausflug, Musikfrühstück oder Film?",
+      "x": 220,
+      "y": 1280,
+      "w": 822,
+      "size": 20,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Was möchten Sie mit Anja machen? Warum?",
+      "x": 220,
+      "y": 1306,
+      "w": 630,
+      "size": 20,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Ich fahre gern Rad. Ich\nmöchte mit Anja einen\nAusflug machen.",
+      "x": 790,
+      "y": 1280,
+      "w": 235,
+      "size": 16,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Und Sie? Was machen Sie am Wochenende? Schreiben Sie Ihren Blog.",
+      "x": 220,
+      "y": 1380,
+      "w": 822,
+      "size": 20,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "dreiundfünfzig   |   53",
+      "x": 872,
+      "y": 1500,
+      "w": 260,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    }
+  ],
+  "hidePageNumber": true
+}
