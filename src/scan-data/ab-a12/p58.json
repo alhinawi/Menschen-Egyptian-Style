@@ -1938,13 +1938,288 @@
    "h": 19
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p58-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1b",
+   "answer": "urze|kurze",
+   "x": 647,
+   "y": 232,
+   "w": 73,
+   "h": 24
+  },
+  {
+   "id": "p58-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1c",
+   "answer": "aare|Haare",
+   "x": 845,
+   "y": 232,
+   "w": 62,
+   "h": 24
+  },
+  {
+   "id": "p58-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1d",
+   "answer": "übsch|hübsch",
+   "x": 338,
+   "y": 256,
+   "w": 90,
+   "h": 24
+  },
+  {
+   "id": "p58-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1e",
+   "answer": "art|Bart",
+   "x": 578,
+   "y": 309,
+   "w": 44,
+   "h": 24
+  },
+  {
+   "id": "p58-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1f",
+   "answer": "ocken|Locken",
+   "x": 330,
+   "y": 334,
+   "w": 84,
+   "h": 24
+  },
+  {
+   "id": "p58-2a",
+   "group": "g2",
+   "kind": "text",
+   "label": "2a",
+   "answer": "Hattest",
+   "x": 190,
+   "y": 437,
+   "w": 126,
+   "h": 24
+  },
+  {
+   "id": "p58-2b1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2b1",
+   "answer": "Ist",
+   "x": 448,
+   "y": 465,
+   "w": 122,
+   "h": 24
+  },
+  {
+   "id": "p58-2b2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2b2",
+   "answer": "war",
+   "x": 239,
+   "y": 490,
+   "w": 126,
+   "h": 24
+  },
+  {
+   "id": "p58-2c1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2c1",
+   "answer": "war",
+   "x": 272,
+   "y": 541,
+   "w": 128,
+   "h": 24
+  },
+  {
+   "id": "p58-2c2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2c2",
+   "answer": "bin",
+   "x": 668,
+   "y": 542,
+   "w": 129,
+   "h": 24
+  },
+  {
+   "id": "p58-2d1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2d1",
+   "answer": "wart",
+   "x": 236,
+   "y": 568,
+   "w": 129,
+   "h": 24
+  },
+  {
+   "id": "p58-2d2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2d2",
+   "answer": "hatten",
+   "x": 703,
+   "y": 569,
+   "w": 129,
+   "h": 24
+  },
+  {
+   "id": "p58-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3b",
+   "answer": "gekommen",
+   "x": 422,
+   "y": 736,
+   "w": 181,
+   "h": 24
+  },
+  {
+   "id": "p58-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3c",
+   "answer": "vergessen",
+   "x": 373,
+   "y": 761,
+   "w": 182,
+   "h": 24
+  },
+  {
+   "id": "p58-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3d",
+   "answer": "gesagt",
+   "x": 287,
+   "y": 787,
+   "w": 181,
+   "h": 24
+  },
+  {
+   "id": "p58-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3e",
+   "answer": "entschuldigt",
+   "x": 519,
+   "y": 813,
+   "w": 181,
+   "h": 24
+  },
+  {
+   "id": "p58-3f",
+   "group": "g3",
+   "kind": "text",
+   "label": "3f",
+   "answer": "getanzt",
+   "x": 468,
+   "y": 839,
+   "w": 182,
+   "h": 24
+  },
+  {
+   "id": "p58-3g",
+   "group": "g3",
+   "kind": "text",
+   "label": "3g",
+   "answer": "erkannt",
+   "x": 437,
+   "y": 865,
+   "w": 180,
+   "h": 24
+  },
+  {
+   "id": "p58-4a",
+   "group": "g4",
+   "kind": "text",
+   "label": "4a",
+   "answer": "Ach was!|Ach was",
+   "x": 252,
+   "y": 967,
+   "w": 113,
+   "h": 24
+  },
+  {
+   "id": "p58-4b",
+   "group": "g4",
+   "kind": "text",
+   "label": "4b",
+   "answer": "Echt|Echt?",
+   "x": 183,
+   "y": 1046,
+   "w": 67,
+   "h": 24
+  },
+  {
+   "id": "p58-4c",
+   "group": "g4",
+   "kind": "text",
+   "label": "4c",
+   "answer": "Ach komm!|Ach komm",
+   "x": 183,
+   "y": 1096,
+   "w": 137,
+   "h": 24
+  },
+  {
+   "id": "p58-4d",
+   "group": "g4",
+   "kind": "text",
+   "label": "4d",
+   "answer": "Wahnsinn!|Wahnsinn",
+   "x": 183,
+   "y": 1148,
+   "w": 142,
+   "h": 24
+  },
+  {
+   "id": "p58-4e",
+   "group": "g4",
+   "kind": "text",
+   "label": "4e",
+   "answer": "Ach du liebe Zeit!|Ach du liebe Zeit",
+   "x": 183,
+   "y": 1175,
+   "w": 264,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 2"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 3"
+  },
+  {
+   "id": "g4",
+   "label": "Aufgabe 4"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the printed key (Lektion 19, p106). Handwritten examples (1a, 3a, 2a-style) are not fields.",
+   "Ex 1 and ex 4 are partly printed words; answers accept the full word (with or without the printed first letters/punctuation).",
+   "Boxes placed from word coordinates and checked visually. Not marked verified."
+  ],
   "verifiedWords": 276,
-  "totalWords": 276,
-  "notes": []
+  "totalWords": 276
  }
 }

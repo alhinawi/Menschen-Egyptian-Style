@@ -2176,13 +2176,319 @@
    "h": 8
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p70-1a",
+   "group": "g1",
+   "kind": "text",
+   "label": "1a",
+   "answer": "grillen",
+   "x": 460,
+   "y": 186,
+   "w": 165,
+   "h": 22
+  },
+  {
+   "id": "p70-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1b",
+   "answer": "tragen",
+   "x": 637,
+   "y": 205,
+   "w": 90,
+   "h": 22
+  },
+  {
+   "id": "p70-1c1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1c1",
+   "answer": "schieben",
+   "x": 378,
+   "y": 224,
+   "w": 62,
+   "h": 22
+  },
+  {
+   "id": "p70-1c2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1c2",
+   "answer": "achten",
+   "x": 556,
+   "y": 224,
+   "w": 66,
+   "h": 22
+  },
+  {
+   "id": "p70-1c3",
+   "group": "g1",
+   "kind": "text",
+   "label": "1c3",
+   "answer": "nehmen",
+   "x": 214,
+   "y": 244,
+   "w": 62,
+   "h": 22
+  },
+  {
+   "id": "p70-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1d",
+   "answer": "hupen",
+   "x": 552,
+   "y": 264,
+   "w": 68,
+   "h": 22
+  },
+  {
+   "id": "p70-r2b-dürfen",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 b dürfen",
+   "answer": "true",
+   "name": "r2b",
+   "value": "dürfen",
+   "x": 178,
+   "y": 352,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p70-r2b-wollen",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 b wollen",
+   "answer": "false",
+   "name": "r2b",
+   "value": "wollen",
+   "x": 256,
+   "y": 352,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p70-r2c-wollen",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 c wollen",
+   "answer": "false",
+   "name": "r2c",
+   "value": "wollen",
+   "x": 198,
+   "y": 374,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p70-r2c-können",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 c können",
+   "answer": "true",
+   "name": "r2c",
+   "value": "können",
+   "x": 282,
+   "y": 374,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p70-r2d-dürfen",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 d dürfen",
+   "answer": "false",
+   "name": "r2d",
+   "value": "dürfen",
+   "x": 295,
+   "y": 393,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p70-r2d-müssen",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 d müssen",
+   "answer": "true",
+   "name": "r2d",
+   "value": "müssen",
+   "x": 374,
+   "y": 393,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p70-r2e-können",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 e können",
+   "answer": "true",
+   "name": "r2e",
+   "value": "können",
+   "x": 198,
+   "y": 411,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p70-r2e-müssen",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 e müssen",
+   "answer": "false",
+   "name": "r2e",
+   "value": "müssen",
+   "x": 283,
+   "y": 411,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p70-r2f-dürfen",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 f dürfen",
+   "answer": "true",
+   "name": "r2f",
+   "value": "dürfen",
+   "x": 114,
+   "y": 431,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p70-r2f-müssen",
+   "group": "g2",
+   "kind": "radio",
+   "label": "2 f müssen",
+   "answer": "false",
+   "name": "r2f",
+   "value": "müssen",
+   "x": 193,
+   "y": 431,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p70-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3b",
+   "answer": "müsst",
+   "x": 196,
+   "y": 514,
+   "w": 104,
+   "h": 22
+  },
+  {
+   "id": "p70-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3c",
+   "answer": "muss",
+   "x": 530,
+   "y": 534,
+   "w": 95,
+   "h": 22
+  },
+  {
+   "id": "p70-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3d",
+   "answer": "Dürfen|dürfen",
+   "x": 163,
+   "y": 552,
+   "w": 85,
+   "h": 22
+  },
+  {
+   "id": "p70-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3e",
+   "answer": "müssen",
+   "x": 484,
+   "y": 592,
+   "w": 94,
+   "h": 22
+  },
+  {
+   "id": "p70-4a",
+   "group": "g4",
+   "kind": "text",
+   "label": "4a",
+   "answer": "Das ist falsch.|Das ist falsch",
+   "x": 180,
+   "y": 734,
+   "w": 272,
+   "h": 22
+  },
+  {
+   "id": "p70-4b",
+   "group": "g4",
+   "kind": "text",
+   "label": "4b",
+   "answer": "Das ist ja wirklich sehr gefährlich, oder?",
+   "x": 180,
+   "y": 782,
+   "w": 540,
+   "h": 22
+  },
+  {
+   "id": "p70-4c",
+   "group": "g4",
+   "kind": "text",
+   "label": "4c",
+   "answer": "Das finde ich gar nicht gut.|Das finde ich gar nicht gut",
+   "x": 180,
+   "y": 820,
+   "w": 540,
+   "h": 22
+  },
+  {
+   "id": "p70-4d",
+   "group": "g4",
+   "kind": "text",
+   "label": "4d",
+   "answer": "Diese Regel ist in Ordnung.|Diese Regel ist in Ordnung",
+   "x": 180,
+   "y": 859,
+   "w": 540,
+   "h": 22
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 2"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 3"
+  },
+  {
+   "id": "g4",
+   "label": "Aufgabe 4"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the printed key (Lektion 21, p107). Handwritten examples (1a 'baden', 2a, 3a) are not fields.",
+   "Ex 4 answers are the key sentences chosen from the printed box.",
+   "Boxes placed from word coordinates and checked visually. Not marked verified."
+  ],
   "verifiedWords": 310,
-  "totalWords": 310,
-  "notes": []
+  "totalWords": 310
  }
 }

@@ -1903,13 +1903,310 @@
    "h": 19
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p64-1-Waesche",
+   "group": "g1",
+   "kind": "text",
+   "label": "1-Waesche",
+   "answer": "aufhängen",
+   "x": 267,
+   "y": 268,
+   "w": 173,
+   "h": 24
+  },
+  {
+   "id": "p64-1-Geschirr",
+   "group": "g1",
+   "kind": "text",
+   "label": "1-Geschirr",
+   "answer": "abtrocknen",
+   "x": 279,
+   "y": 294,
+   "w": 204,
+   "h": 24
+  },
+  {
+   "id": "p64-1-Muell",
+   "group": "g1",
+   "kind": "text",
+   "label": "1-Muell",
+   "answer": "rausbringen",
+   "x": 250,
+   "y": 320,
+   "w": 200,
+   "h": 24
+  },
+  {
+   "id": "p64-1-Bett",
+   "group": "g1",
+   "kind": "text",
+   "label": "1-Bett",
+   "answer": "machen",
+   "x": 642,
+   "y": 242,
+   "w": 198,
+   "h": 24
+  },
+  {
+   "id": "p64-1-Boden",
+   "group": "g1",
+   "kind": "text",
+   "label": "1-Boden",
+   "answer": "wischen",
+   "x": 664,
+   "y": 268,
+   "w": 176,
+   "h": 24
+  },
+  {
+   "id": "p64-1-Tisch",
+   "group": "g1",
+   "kind": "text",
+   "label": "1-Tisch",
+   "answer": "decken",
+   "x": 655,
+   "y": 294,
+   "w": 200,
+   "h": 24
+  },
+  {
+   "id": "p64-2a",
+   "group": "g2",
+   "kind": "text",
+   "label": "2a",
+   "answer": "putz",
+   "x": 612,
+   "y": 449,
+   "w": 100,
+   "h": 24
+  },
+  {
+   "id": "p64-2b1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2b1",
+   "answer": "räumt",
+   "x": 561,
+   "y": 527,
+   "w": 104,
+   "h": 24
+  },
+  {
+   "id": "p64-2b2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2b2",
+   "answer": "aus",
+   "x": 832,
+   "y": 527,
+   "w": 104,
+   "h": 24
+  },
+  {
+   "id": "p64-2b3",
+   "group": "g2",
+   "kind": "text",
+   "label": "2b3",
+   "answer": "deckt",
+   "x": 188,
+   "y": 553,
+   "w": 102,
+   "h": 24
+  },
+  {
+   "id": "p64-2b4",
+   "group": "g2",
+   "kind": "text",
+   "label": "2b4",
+   "answer": "vergesst",
+   "x": 570,
+   "y": 553,
+   "w": 108,
+   "h": 24
+  },
+  {
+   "id": "p64-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2c",
+   "answer": "Sei",
+   "x": 568,
+   "y": 605,
+   "w": 104,
+   "h": 24
+  },
+  {
+   "id": "p64-2d1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2d1",
+   "answer": "spült",
+   "x": 628,
+   "y": 656,
+   "w": 104,
+   "h": 24
+  },
+  {
+   "id": "p64-2d2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2d2",
+   "answer": "bringt",
+   "x": 188,
+   "y": 682,
+   "w": 102,
+   "h": 24
+  },
+  {
+   "id": "p64-2d3",
+   "group": "g2",
+   "kind": "text",
+   "label": "2d3",
+   "answer": "raus",
+   "x": 391,
+   "y": 682,
+   "w": 100,
+   "h": 24
+  },
+  {
+   "id": "p64-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3b",
+   "answer": "Euch",
+   "x": 703,
+   "y": 812,
+   "w": 52,
+   "h": 24
+  },
+  {
+   "id": "p64-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3c",
+   "answer": "ihn",
+   "x": 418,
+   "y": 837,
+   "w": 54,
+   "h": 24
+  },
+  {
+   "id": "p64-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3d",
+   "answer": "uns",
+   "x": 595,
+   "y": 863,
+   "w": 53,
+   "h": 24
+  },
+  {
+   "id": "p64-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3e",
+   "answer": "dich",
+   "x": 620,
+   "y": 889,
+   "w": 52,
+   "h": 24
+  },
+  {
+   "id": "p64-3f",
+   "group": "g3",
+   "kind": "text",
+   "label": "3f",
+   "answer": "sie",
+   "x": 650,
+   "y": 915,
+   "w": 52,
+   "h": 24
+  },
+  {
+   "id": "p64-4b",
+   "group": "g4",
+   "kind": "text",
+   "label": "4b",
+   "answer": "Kommt bitte um 10 Uhr|Kommt bitte um 10 Uhr!",
+   "x": 438,
+   "y": 1047,
+   "w": 532,
+   "h": 24
+  },
+  {
+   "id": "p64-4c",
+   "group": "g4",
+   "kind": "text",
+   "label": "4c",
+   "answer": "Sei bitte so nett",
+   "x": 358,
+   "y": 1071,
+   "w": 377,
+   "h": 24
+  },
+  {
+   "id": "p64-4d",
+   "group": "g4",
+   "kind": "text",
+   "label": "4d",
+   "answer": "Macht bitte das Fenster zu|Macht bitte das Fenster zu!",
+   "x": 423,
+   "y": 1097,
+   "w": 547,
+   "h": 24
+  },
+  {
+   "id": "p64-4e",
+   "group": "g4",
+   "kind": "text",
+   "label": "4e",
+   "answer": "Sprecht bitte auf den Anrufbeantworter|Sprecht bitte auf den Anrufbeantworter!",
+   "x": 190,
+   "y": 1149,
+   "w": 780,
+   "h": 24
+  },
+  {
+   "id": "p64-4f",
+   "group": "g4",
+   "kind": "text",
+   "label": "4f",
+   "answer": "Mach bitte Kaffee|Mach bitte Kaffee!",
+   "x": 382,
+   "y": 1173,
+   "w": 588,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 2"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 3"
+  },
+  {
+   "id": "g4",
+   "label": "Aufgabe 4"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the printed key (Lektion 20, p106). Handwritten examples (1a, 2a, 3a, 4a) are not fields.",
+   "Ex 4: printed '!' follows the blank, answers accept with or without it. Item e continues on the line below the prompt; box placed on that line.",
+   "Boxes placed from word coordinates and checked visually. Not marked verified."
+  ],
   "verifiedWords": 271,
-  "totalWords": 271,
-  "notes": []
+  "totalWords": 271
  }
 }
