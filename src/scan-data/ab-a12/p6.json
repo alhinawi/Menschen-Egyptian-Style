@@ -1056,13 +1056,6 @@
    "h": 19
   },
   {
-   "text": "b",
-   "x": 114,
-   "y": 1065,
-   "w": 9,
-   "h": 16
-  },
-  {
    "text": "Ergänzen",
    "x": 146,
    "y": 1067,
@@ -1327,8 +1320,8 @@
  "groups": [],
  "review": {
   "status": "partial",
-  "verifiedWords": 188,
-  "totalWords": 188,
+  "verifiedWords": 187,
+  "totalWords": 187,
   "notes": []
  }
 }
