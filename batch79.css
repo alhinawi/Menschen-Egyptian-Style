@@ -28,3 +28,9 @@
 .p42 .batchBody{padding:10px 24px 30px 50px}.p42 .greetings{max-height:100px}.p42 .wideArt{max-height:95px}.p42 .choiceRows label,.p42 .assign{font-size:13px!important;padding:1px 0}.p42 .check{margin-top:3px;padding:5px}.p42 .wordbank{font-size:12px;margin:4px 0;line-height:1.35}.p42 .dense .bookLines{line-height:1.3}.p42 .scaleRow{font-size:14px;gap:5px;margin:6px 0}.p42 .scaleRow select{min-width:90px;font-size:12px}
 .p47 .batchBody{padding:8px 24px 30px 50px}.p47 .greetings{max-height:85px}.p47 .chatCard{font-size:12px;padding:6px 10px;line-height:1.25;margin:5px 0}.p47 .chatCard p{margin:2px 0}.p47 .choiceRows label{font-size:12px;margin:2px 0;grid-template-columns:1fr 130px}.p47 .choiceRows select{font-size:11px;padding:3px}.p47 .wideArt{max-height:80px}.p47 .wordbank{font-size:11px;margin:3px 0}.p47 .weekRow{font-size:12px;line-height:1.8;margin:5px 0}.p47 .weekRow input{width:70px!important;font-size:11px!important}.p47 .assign{font-size:12px!important}.p47 .assign select{width:95px;font-size:11px}.p47 .corrections label{font-size:12px;padding:1px 0}.p47 .corrections input{font-size:11px!important}.p47 .dense .bookLines{font-size:12px!important;line-height:1.25}.p47 .check{margin-top:3px;padding:4px}.p47 .grammarNote{font-size:12px}.p47 .actionLink{font-size:11px;padding:4px 8px}
 .p47 .choiceRows{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}.p47 .choiceRows label{grid-template-columns:1fr 110px;font-size:11px}.p47 .choiceRows label>span{line-height:1.25}
+
+.page.p46>.scanPage{width:100%;height:100%;padding:0}.page.p46>.scanPage img{display:block;width:100%;height:100%;object-fit:contain;margin:0}
+
+.page.p53>.scanPage{width:100%;height:100%;padding:0}.page.p53>.scanPage img{display:block;width:100%;height:100%;object-fit:contain;margin:0}
+
+.page.p50>.scanPage,.page.p51>.scanPage{width:100%;height:100%;padding:0}.page.p50>.scanPage img,.page.p51>.scanPage img{display:block;width:100%;height:100%;object-fit:contain;margin:0}
