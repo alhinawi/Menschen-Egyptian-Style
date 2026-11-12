@@ -52,3 +52,87 @@ html[data-theme="dark"] .lnv-pg.cur {
   border-color: #d4b674;
   color: #232a26;
 }
+
+/* --- abm1.css conversion (CLEANUP lane) -----------------------------------
+   abBody: the generic Arbeitsbuch body pattern shared verbatim by ab1/ab2/ab3/
+   abm1 runtime css. Values below are byte-identical to ab1.css's generic
+   block; those lessons' runtime css defines the same selectors and loads
+   after this bundle, so it wins every tie - no other lesson's rendering
+   changes. abm1-only deltas (border-box inputs, minmax cols) are deliberately
+   NOT here; they live in abm1Body. */
+@utility abBody {
+  padding: 35px 58px 65px 108px;
+  font: 18px/1.45 Georgia, serif;
+  & h1 { font: 27px Georgia, serif; letter-spacing: 1px; border-bottom: 2px solid #e9d625; margin: 12px 0 25px; }
+  & h2 { font: 700 19px/1.4 Arial; margin: 12px 0 10px; }
+  & form { margin: 17px 0 22px; }
+  & p { margin: 7px 0; }
+  & input { border: 0; border-bottom: 1px dotted #6c8d9b; background: #fffef5; font: 18px Georgia; color: #234d70; max-width: 100%; padding: 2px 4px; height: 28px; }
+  & select { font: 17px Georgia; min-width: 58px; max-width: 100%; }
+  & .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+  & .originalArt { max-width: 100%; display: block; max-height: 225px; object-fit: contain; }
+  & > img { width: 100%; margin: 0 0 24px; }
+  & .wordbank { font-size: 17px; margin: 8px 0; }
+  & table { border-collapse: collapse; width: 100%; font-size: 18px; }
+  & td, & th { padding: 5px; border: 1px dotted #c6d9d0; }
+  & th { background: #fffacb; text-align: left; }
+  & .writing { width: 100%; height: 90px; background: repeating-linear-gradient(transparent, transparent 28px, #ccc 29px, transparent 30px); border: 0; font: 20px/30px Georgia; resize: vertical; }
+  & aside { background: #fffad3; color: #333; font: 17px/1.5 Georgia; padding: 12px; border: 2px solid #b49b4e; margin: 15px 0; }
+  & .wordSnake { font-size: 14px; overflow-wrap: anywhere; }
+  & .vocabCols { columns: 2; column-gap: 30px; font-size: 17px; }
+  & .vocabCols section { break-inside: avoid; margin: 10px 0 22px; }
+  & .vocabCols h3 { margin: 10px 0; }
+  & .vocabCols p { display: flex; align-items: center; gap: 8px; justify-content: space-between; }
+  & .vocabCols input { width: 125px !important; flex-shrink: 0; }
+  & .audioTracks { display: flex; gap: 25px; }
+  & .internalNote { font: 18px/1.7 Arial; color: #777; }
+  & .check { margin-top: 5px; }
+  & .n { min-width: 27px; }
+  & .countryAnswers { display: grid; grid-template-columns: repeat(5, 1fr); gap: 7px; font-size: 16px; }
+  & .countryAnswers input { width: 125px !important; }
+  & .countryAnswers p { margin: 0; }
+  & .vocabArts { position: absolute; right: 22px; top: 170px; width: 110px; display: flex; flex-direction: column; gap: 35px; }
+  & .vocabArts img { width: 110px; height: 85px; object-fit: contain; display: block; }
+  & .vocabArts input { width: 110px; }
+  & .listen { display: block; font: 12px Arial; margin: 8px 0; }
+}
+
+/* abm1-only variant of abBody. Added as an extra class on abm1's abBody divs;
+   the &.abBody compound selectors (0,2,x) guarantee these deltas beat the
+   shared abBody utility (0,1,x) regardless of bundle order. */
+@utility abm1Body {
+  &.abBody { font-size: 16px; line-height: 1.3; padding-top: 25px; }
+  &.abBody h1 { font-size: 23px; }
+  &.abBody h2 { font-size: 18px; }
+  &.abBody form { margin: 12px 0; }
+  &.abBody input { box-sizing: border-box; }
+  &.abBody .cols { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  &.abBody .cols > * { min-width: 0; }
+  &.abBody .cols input { max-width: 100%; }
+}
+
+/* abm1-only components (absent from every other lesson JSON). */
+@utility reflection {
+  position: relative;
+  padding-right: 100px;
+  margin: 14px 0;
+  & h3 { font: bold 17px Arial; margin: 7px 0; }
+  &.reflection input:not([type="radio"]) { height: 24px; font-size: 16px; }
+}
+@utility selfRate {
+  position: absolute;
+  right: -10px;
+  top: 0;
+  display: flex;
+  gap: 8px;
+  &.selfRate label { display: flex; flex-direction: column; align-items: center; font: 14px Arial; font-size: 0; }
+  &.selfRate input { width: 16px; height: 16px; }
+  & label::before { content: ''; display: block; width: 15px; height: 15px; border-radius: 50%; background: #58a139; margin-bottom: 4px; }
+  & label:nth-child(2)::before { background: #e6b829; }
+  & label:nth-child(3)::before { background: #d54937; }
+}
+@utility threeCols {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
