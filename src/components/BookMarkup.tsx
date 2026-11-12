@@ -1,5 +1,6 @@
 import {NativePilot} from './NativePilot';
 import {NativeKB12} from '../native-kb12/NativeKB12';
+import {NativeKb11} from './NativeKb11';
 import {HybridScan} from './HybridScan';
 import {scanData} from '../scan-data/registry';
 import {WordBank} from '../exercises/WordBank';
@@ -36,6 +37,7 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   const props: Props = {key};
   if(tag === 'NativePilot')return createElement(NativePilot,{key,page:attrs.page});
   if(tag === 'NativeKB12')return createElement(NativeKB12,{key,page:attrs.page});
+  if(tag === 'NativeKb11')return createElement(NativeKb11,{key,page:attrs.page});
   if(tag === 'HybridScan'){const data=scanData[attrs.book+':'+attrs.page];return data ? createElement(HybridScan,{key,data}) : null;}
   if (tag === 'ReactTaskMode') return createElement(TaskMode, {key, kind: attrs.kind});
   if (tag === 'ReactSelectionControls') return createElement(SelectionControls, {key});
