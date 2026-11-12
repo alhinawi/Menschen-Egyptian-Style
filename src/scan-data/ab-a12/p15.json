@@ -1885,7 +1885,7 @@
  "fields": [
   {
    "id": "p15-pl0",
-   "group": "g1",
+   "group": "g3",
    "kind": "text",
    "label": "Plural 0",
    "answer": "Bäder",
@@ -1896,7 +1896,7 @@
   },
   {
    "id": "p15-pl1",
-   "group": "g1",
+   "group": "g3",
    "kind": "text",
    "label": "Plural 1",
    "answer": "Wälder",
@@ -1907,7 +1907,7 @@
   },
   {
    "id": "p15-pl2",
-   "group": "g1",
+   "group": "g3",
    "kind": "text",
    "label": "Plural 2",
    "answer": "Gärten",
@@ -1918,7 +1918,7 @@
   },
   {
    "id": "p15-pl3",
-   "group": "g1",
+   "group": "g3",
    "kind": "text",
    "label": "Plural 3",
    "answer": "Häuser",
@@ -1929,7 +1929,7 @@
   },
   {
    "id": "p15-pl4",
-   "group": "g1",
+   "group": "g3",
    "kind": "text",
    "label": "Plural 4",
    "answer": "Bäume",
@@ -1940,13 +1940,85 @@
   },
   {
    "id": "p15-pl5",
-   "group": "g1",
+   "group": "g3",
    "kind": "text",
    "label": "Plural 5",
    "answer": "Räume",
    "x": 555,
    "y": 1261,
    "w": 95,
+   "h": 22
+  },
+  {
+   "id": "p15-l1a",
+   "group": "g1",
+   "kind": "text",
+   "label": "Größe",
+   "answer": "3-4|3 bis 4",
+   "x": 265,
+   "y": 243,
+   "w": 148,
+   "h": 22
+  },
+  {
+   "id": "p15-l1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "Miete",
+   "answer": "1000",
+   "x": 265,
+   "y": 272,
+   "w": 148,
+   "h": 22
+  },
+  {
+   "id": "p15-l1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "Ab wann",
+   "answer": "1. April",
+   "x": 265,
+   "y": 297,
+   "w": 148,
+   "h": 22
+  },
+  {
+   "id": "p15-r2b-1",
+   "group": "g2",
+   "kind": "radio",
+   "label": "Wohnung 1",
+   "answer": "false",
+   "name": "r2b",
+   "value": "1",
+   "x": 261,
+   "y": 981,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p15-r2b-2",
+   "group": "g2",
+   "kind": "radio",
+   "label": "Wohnung 2",
+   "answer": "false",
+   "name": "r2b",
+   "value": "2",
+   "x": 314,
+   "y": 981,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p15-r2b-3",
+   "group": "g2",
+   "kind": "radio",
+   "label": "Wohnung 3",
+   "answer": "true",
+   "name": "r2b",
+   "value": "3",
+   "x": 374,
+   "y": 981,
+   "w": 22,
    "h": 22
   }
  ],
@@ -1973,6 +2045,14 @@
  "groups": [
   {
    "id": "g1",
+   "label": "Lesen 1"
+  },
+  {
+   "id": "g2",
+   "label": "Lesen 2b"
+  },
+  {
+   "id": "g3",
    "label": "Plural mit ä und äu"
   }
  ],
@@ -1980,7 +2060,7 @@
   "status": "partial",
   "notes": [
    "Plural gaps filled with the plurals (Bäder, Wälder, Gärten, Häuser, Bäume, Räume); they match the printed poem on the same page.",
-   "Ex 2 (table), 'Wohnung 1/2/3' choice and handwritten notes have no key answers and are not fields.",
+   "Lesen 1 answers follow the key (3-4 Zimmer, max. 1000 EUR, ab 1. April). Ex 2a table has conflicting printed example, so not a field. Handwritten notes and handwritten notes have no key answers and are not fields.",
    "Audio markers 2.08 and 2.09 mapped from printed CD icons; audio content was not listened to.",
    "Boxes placed from word coordinates; not marked verified."
   ],
