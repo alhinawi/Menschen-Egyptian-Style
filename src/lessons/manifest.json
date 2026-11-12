@@ -15,6 +15,7 @@
       "pronunciation-index",
       "batch-ab12-pronunciation-index",
       "gapfill-pronunciation-index",
+      "base-vocab",
       "meanings",
       "batch-ab12"
     ],
@@ -36,6 +37,7 @@
       "pronunciation-index",
       "batch-ab12-pronunciation-index",
       "gapfill-pronunciation-index",
+      "base-vocab",
       "meanings",
       "ab-a12-l17-20-data",
       "ab-a12-l17-20-vocab",
@@ -62,6 +64,7 @@
       "pronunciation-index",
       "ab-a12-l21-24-pronunciation-index",
       "gapfill-pronunciation-index",
+      "base-vocab",
       "meanings",
       "ab-a12-l21-24"
     ],
@@ -96,6 +99,7 @@
       "pronunciation-index",
       "ab-batch-pronunciation-index",
       "gapfill-pronunciation-index",
+      "base-vocab",
       "meanings",
       "ab-batch"
     ],
@@ -129,6 +133,7 @@
       "pronunciation-index",
       "ab-l7-9-pronunciation-index",
       "gapfill-pronunciation-index",
+      "base-vocab",
       "meanings",
       "ab-l7-9"
     ],
@@ -164,6 +169,7 @@
       "ab1-unit-translations",
       "ab1-unit-audio",
       "gapfill-pronunciation-index",
+      "base-vocab",
       "meanings",
       "ab1"
     ],
@@ -187,6 +193,7 @@
       "ab2-artwork-text",
       "selection-units",
       "gapfill-pronunciation-index",
+      "base-vocab",
       "meanings",
       "ab2"
     ],
@@ -210,6 +217,7 @@
       "ab3-artwork-text",
       "selection-units",
       "gapfill-pronunciation-index",
+      "base-vocab",
       "meanings",
       "ab3"
     ],
@@ -234,6 +242,7 @@
       "batch-pronunciation-index",
       "ab46-pronunciation-index",
       "gapfill-pronunciation-index",
+      "base-vocab",
       "meanings",
       "ab46"
     ],
@@ -257,6 +266,7 @@
       "abm1-artwork-text",
       "selection-units",
       "gapfill-pronunciation-index",
+      "base-vocab",
       "meanings",
       "abm1"
     ],
@@ -280,6 +290,7 @@
       "unit-translations",
       "unit-audio",
       "gapfill-pronunciation-index",
+      "base-vocab",
       "meanings",
       "book"
     ],
@@ -303,6 +314,7 @@
       "pronunciation-index",
       "kb-a12-pronunciation-index",
       "gapfill-pronunciation-index",
+      "base-vocab",
       "meanings",
       "kb-a12-l13-16"
     ],
@@ -325,6 +337,7 @@
       "kb-a12-l17-20-sentences",
       "kb-a12-l17-20-pronunciation-index",
       "gapfill-pronunciation-index",
+      "base-vocab",
       "meanings",
       "kb-a12-l17-20"
     ],
@@ -363,6 +376,7 @@
       "batch-pronunciation-index",
       "batch-pronunciation-index-l10-12",
       "gapfill-pronunciation-index",
+      "base-vocab",
       "meanings",
       "batch-l10-12"
     ],
@@ -389,6 +403,7 @@
       "unit-translations",
       "unit-audio",
       "gapfill-pronunciation-index",
+      "base-vocab",
       "meanings",
       "batch"
     ],
@@ -417,6 +432,7 @@
       "batch-selection-units-l21-24",
       "batch-unit-arabic-l21-24",
       "gapfill-pronunciation-index",
+      "base-vocab",
       "meanings",
       "batch-l21-24"
     ],
@@ -440,6 +456,7 @@
       "pronunciation-index",
       "batch-pronunciation-index-46",
       "gapfill-pronunciation-index",
+      "base-vocab",
       "meanings",
       "batch-l46"
     ],
@@ -466,6 +483,7 @@
       "batch-pronunciation-index",
       "batch79-pronunciation-index",
       "gapfill-pronunciation-index",
+      "base-vocab",
       "meanings",
       "batch79"
     ],
