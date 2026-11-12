@@ -49,3 +49,5 @@ Nine more native React pages complete ab3 and the Module 1 review. The cumulativ
 - Recap facts checked against source Kursbuch pages 19, 78 and 82. Page 78 alone does not contain the Helga/Carlos details; their source is page 82. Page 28's two printed example checks remain fixed.
 - Verification: typecheck, production build, hybrid regression, both prior AB native batches, and nine-page normal-click testing at 320px/390px. Tests cover correct/incorrect results, saved text/checkbox/arrow/highlight/crossword states through reload, confidence radios, meaning dialogs, all three playable source audio tracks, complete images, text/field/title collisions and canvas bounds.
 - Actual untouched/filled screenshots were inspected against the source scans. Check controls require modest spacing changes, especially in the compressed self-assessment pages and dense grammar page. The crossword retains native letter cells and source illustrations, with a slightly different vertical rhythm from the scan.
+
+The hybrid regression fixture moved from KB46 to KB56 after the parallel lesson-8 batch made KB46 native. No KB lesson content was changed by this AB batch.
