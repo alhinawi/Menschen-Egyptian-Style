@@ -1668,6 +1668,127 @@
       "y": 699,
       "w": 150,
       "h": 22
+    },
+    {
+      "id": "t2a-b",
+      "group": "t2a",
+      "kind": "text",
+      "label": "2a B Name",
+      "answer": "Paco Rodríguez|Paco Rodriguez",
+      "x": 215,
+      "y": 894,
+      "w": 240,
+      "h": 18
+    },
+    {
+      "id": "t2a-c",
+      "group": "t2a",
+      "kind": "text",
+      "label": "2a C Name",
+      "answer": "Mark Poppenreuther",
+      "x": 215,
+      "y": 919,
+      "w": 240,
+      "h": 18
+    },
+    {
+      "id": "t2a-d",
+      "group": "t2a",
+      "kind": "text",
+      "label": "2a D Name",
+      "answer": "Markus Bäuerlein|Markus Baeuerlein",
+      "x": 215,
+      "y": 944,
+      "w": 240,
+      "h": 18
+    },
+    {
+      "id": "t2a-e",
+      "group": "t2a",
+      "kind": "text",
+      "label": "2a E Name",
+      "answer": "Barbara Meinhardt-Bäuerlein|Barbara Meinhardt-Baeuerlein",
+      "x": 215,
+      "y": 969,
+      "w": 240,
+      "h": 18
+    },
+    {
+      "id": "t2a-f",
+      "group": "t2a",
+      "kind": "text",
+      "label": "2a F Name",
+      "answer": "Olga Poppenreuther",
+      "x": 215,
+      "y": 994,
+      "w": 240,
+      "h": 18
+    },
+    {
+      "id": "t2b-2",
+      "group": "t2b",
+      "kind": "text",
+      "label": "Lösung Buchstabe 2",
+      "answer": "A",
+      "x": 240,
+      "y": 1246,
+      "w": 20,
+      "h": 16
+    },
+    {
+      "id": "t2b-3",
+      "group": "t2b",
+      "kind": "text",
+      "label": "Lösung Buchstabe 3",
+      "answer": "M",
+      "x": 266,
+      "y": 1246,
+      "w": 20,
+      "h": 16
+    },
+    {
+      "id": "t2b-4",
+      "group": "t2b",
+      "kind": "text",
+      "label": "Lösung Buchstabe 4",
+      "answer": "B",
+      "x": 292,
+      "y": 1246,
+      "w": 20,
+      "h": 16
+    },
+    {
+      "id": "t2b-5",
+      "group": "t2b",
+      "kind": "text",
+      "label": "Lösung Buchstabe 5",
+      "answer": "U",
+      "x": 318,
+      "y": 1246,
+      "w": 20,
+      "h": 16
+    },
+    {
+      "id": "t2b-6",
+      "group": "t2b",
+      "kind": "text",
+      "label": "Lösung Buchstabe 6",
+      "answer": "R",
+      "x": 344,
+      "y": 1246,
+      "w": 20,
+      "h": 16
+    },
+    {
+      "id": "t2b-7",
+      "group": "t2b",
+      "kind": "text",
+      "label": "Lösung Buchstabe 7",
+      "answer": "G",
+      "x": 370,
+      "y": 1246,
+      "w": 20,
+      "h": 16
     }
   ],
   "audio": [
@@ -1685,6 +1806,14 @@
     {
       "id": "task3",
       "label": "3"
+    },
+    {
+      "id": "t2a",
+      "label": "2a Wer ist wer?"
+    },
+    {
+      "id": "t2b",
+      "label": "2b Wie heißt die Stadt?"
     }
   ],
   "review": {
@@ -1692,10 +1821,9 @@
     "verifiedWords": 217,
     "totalWords": 217,
     "notes": [
-      "Task 3 map blanks: 13 country fields with answers verified from the printed country codes plus the word list on the page (Deutschland is the struck-through printed example). Liechtenstein (FL) has no blank line printed on the map, so no field for it.",
-      "Leader-line tracing verified on zoomed crops: right side DK=Dänemark, PL=Polen, CZ=Tschechien, A=Österreich, SK=Slowakei, H=Ungarn, SLO=Slowenien; left side NL, B, L(uxemburg), F, CH, I.",
-      "Task 2a names B-F and the 2b solution word omitted: answers depend on Lektion 1-3 people; only B=Paco is confirmed from pages 10-12/21, C-F could not be verified reliably. Needs a follow-up pass with the p9-20 page data.",
-      "Audio 1.21 printed on page; file assets/kb-cd1-track21.mp3 exists. Map city names and country codes transcribed from zoomed crops; some label boxes estimated."
+      "2a names (B Paco Rodríguez, C Mark Poppenreuther, D Markus Bäuerlein, E Barbara Meinhardt-Bäuerlein, F Olga Poppenreuther) and 2b solution (HAMBURG) from the official Hueber answer key (Ausklang 2a/2b). 2a/2b blank boxes estimated from row positions.",
+      "Map leader-line answers confirmed by the key (Ausklang 3); FL/Liechtenstein is in the printed word bank but no blank leader line for it could be located on the scan, so there is no field for it.",
+      "Estimated boxes: script-font printed example Sven Henkenjohann, map labels; see leader-line crops in earlier review."
     ]
   }
 }

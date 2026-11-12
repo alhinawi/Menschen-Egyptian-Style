@@ -1250,6 +1250,372 @@
       "y": 335,
       "w": 28,
       "h": 17
+    },
+    {
+      "id": "t3b-b-v",
+      "group": "t3b",
+      "kind": "radio",
+      "label": "b - Verkäufer",
+      "name": "t3b-b",
+      "value": "verkaeufer",
+      "answer": "true",
+      "x": 709,
+      "y": 437,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "t3b-b-s",
+      "group": "t3b",
+      "kind": "radio",
+      "label": "b - Sibylle",
+      "name": "t3b-b",
+      "value": "sibylle",
+      "answer": "false",
+      "x": 769,
+      "y": 437,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "t3b-c-v",
+      "group": "t3b",
+      "kind": "radio",
+      "label": "c - Verkäufer",
+      "name": "t3b-c",
+      "value": "verkaeufer",
+      "answer": "true",
+      "x": 709,
+      "y": 457,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "t3b-c-s",
+      "group": "t3b",
+      "kind": "radio",
+      "label": "c - Sibylle",
+      "name": "t3b-c",
+      "value": "sibylle",
+      "answer": "false",
+      "x": 769,
+      "y": 457,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "t3b-d-v",
+      "group": "t3b",
+      "kind": "radio",
+      "label": "d - Verkäufer",
+      "name": "t3b-d",
+      "value": "verkaeufer",
+      "answer": "false",
+      "x": 709,
+      "y": 476,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "t3b-d-s",
+      "group": "t3b",
+      "kind": "radio",
+      "label": "d - Sibylle",
+      "name": "t3b-d",
+      "value": "sibylle",
+      "answer": "true",
+      "x": 769,
+      "y": 476,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "t3b-e-v",
+      "group": "t3b",
+      "kind": "radio",
+      "label": "e - Verkäufer",
+      "name": "t3b-e",
+      "value": "verkaeufer",
+      "answer": "false",
+      "x": 709,
+      "y": 495,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "t3b-e-s",
+      "group": "t3b",
+      "kind": "radio",
+      "label": "e - Sibylle",
+      "name": "t3b-e",
+      "value": "sibylle",
+      "answer": "true",
+      "x": 769,
+      "y": 495,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "t3b-f-v",
+      "group": "t3b",
+      "kind": "radio",
+      "label": "f - Verkäufer",
+      "name": "t3b-f",
+      "value": "verkaeufer",
+      "answer": "true",
+      "x": 709,
+      "y": 515,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "t3b-f-s",
+      "group": "t3b",
+      "kind": "radio",
+      "label": "f - Sibylle",
+      "name": "t3b-f",
+      "value": "sibylle",
+      "answer": "false",
+      "x": 769,
+      "y": 515,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "t3b-g-v",
+      "group": "t3b",
+      "kind": "radio",
+      "label": "g - Verkäufer",
+      "name": "t3b-g",
+      "value": "verkaeufer",
+      "answer": "true",
+      "x": 709,
+      "y": 542,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "t3b-g-s",
+      "group": "t3b",
+      "kind": "radio",
+      "label": "g - Sibylle",
+      "name": "t3b-g",
+      "value": "sibylle",
+      "answer": "false",
+      "x": 769,
+      "y": 542,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "t3b-h-v",
+      "group": "t3b",
+      "kind": "radio",
+      "label": "h - Verkäufer",
+      "name": "t3b-h",
+      "value": "verkaeufer",
+      "answer": "false",
+      "x": 709,
+      "y": 576,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "t3b-h-s",
+      "group": "t3b",
+      "kind": "radio",
+      "label": "h - Sibylle",
+      "name": "t3b-h",
+      "value": "sibylle",
+      "answer": "true",
+      "x": 769,
+      "y": 576,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "t3b-i-v",
+      "group": "t3b",
+      "kind": "radio",
+      "label": "i - Verkäufer",
+      "name": "t3b-i",
+      "value": "verkaeufer",
+      "answer": "true",
+      "x": 709,
+      "y": 600,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "t3b-i-s",
+      "group": "t3b",
+      "kind": "radio",
+      "label": "i - Sibylle",
+      "name": "t3b-i",
+      "value": "sibylle",
+      "answer": "false",
+      "x": 769,
+      "y": 600,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "t3b-j-v",
+      "group": "t3b",
+      "kind": "radio",
+      "label": "j - Verkäufer",
+      "name": "t3b-j",
+      "value": "verkaeufer",
+      "answer": "false",
+      "x": 709,
+      "y": 640,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "t3b-j-s",
+      "group": "t3b",
+      "kind": "radio",
+      "label": "j - Sibylle",
+      "name": "t3b-j",
+      "value": "sibylle",
+      "answer": "true",
+      "x": 769,
+      "y": 640,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "t3c-a",
+      "group": "t3c",
+      "kind": "text",
+      "label": "Reihenfolge a",
+      "answer": "2",
+      "x": 388,
+      "y": 417,
+      "w": 22,
+      "h": 16
+    },
+    {
+      "id": "t3c-c",
+      "group": "t3c",
+      "kind": "text",
+      "label": "Reihenfolge c",
+      "answer": "3",
+      "x": 388,
+      "y": 457,
+      "w": 22,
+      "h": 16
+    },
+    {
+      "id": "t3c-d",
+      "group": "t3c",
+      "kind": "text",
+      "label": "Reihenfolge d",
+      "answer": "6",
+      "x": 388,
+      "y": 476,
+      "w": 22,
+      "h": 16
+    },
+    {
+      "id": "t3c-e",
+      "group": "t3c",
+      "kind": "text",
+      "label": "Reihenfolge e",
+      "answer": "4",
+      "x": 388,
+      "y": 495,
+      "w": 22,
+      "h": 16
+    },
+    {
+      "id": "t3c-f",
+      "group": "t3c",
+      "kind": "text",
+      "label": "Reihenfolge f",
+      "answer": "5",
+      "x": 388,
+      "y": 515,
+      "w": 22,
+      "h": 16
+    },
+    {
+      "id": "t3c-g",
+      "group": "t3c",
+      "kind": "text",
+      "label": "Reihenfolge g",
+      "answer": "9",
+      "x": 388,
+      "y": 542,
+      "w": 22,
+      "h": 16
+    },
+    {
+      "id": "t3c-h",
+      "group": "t3c",
+      "kind": "text",
+      "label": "Reihenfolge h",
+      "answer": "7",
+      "x": 388,
+      "y": 576,
+      "w": 22,
+      "h": 16
+    },
+    {
+      "id": "t3c-i",
+      "group": "t3c",
+      "kind": "text",
+      "label": "Reihenfolge i",
+      "answer": "8",
+      "x": 388,
+      "y": 600,
+      "w": 22,
+      "h": 16
+    },
+    {
+      "id": "t3c-j",
+      "group": "t3c",
+      "kind": "text",
+      "label": "Reihenfolge j",
+      "answer": "10",
+      "x": 388,
+      "y": 640,
+      "w": 22,
+      "h": 16
+    },
+    {
+      "id": "t4a-der",
+      "group": "t4a",
+      "kind": "text",
+      "label": "der-Wörter",
+      "answer": "der Stuhl, der Tisch, der Schrank, der Teppich|Stuhl, Tisch, Schrank, Teppich|Stuhl Tisch Schrank Teppich",
+      "x": 280,
+      "y": 902,
+      "w": 380,
+      "h": 16
+    },
+    {
+      "id": "t4a-das",
+      "group": "t4a",
+      "kind": "text",
+      "label": "das-Wörter",
+      "answer": "das Bild, das Sofa|Bild, Sofa|Bild Sofa",
+      "x": 280,
+      "y": 925,
+      "w": 380,
+      "h": 16
+    },
+    {
+      "id": "t4a-die",
+      "group": "t4a",
+      "kind": "text",
+      "label": "die-Wörter",
+      "answer": "die Couch|Couch",
+      "x": 280,
+      "y": 948,
+      "w": 380,
+      "h": 16
     }
   ],
   "audio": [
@@ -1276,6 +1642,18 @@
     {
       "id": "task3a",
       "label": "3a"
+    },
+    {
+      "id": "t3b",
+      "label": "3b Wer sagt was? Verkäufer/Sibylle"
+    },
+    {
+      "id": "t3c",
+      "label": "3c Sätze ordnen"
+    },
+    {
+      "id": "t4a",
+      "label": "4a definiter Artikel"
     }
   ],
   "review": {
@@ -1283,9 +1661,8 @@
     "verifiedWords": 173,
     "totalWords": 173,
     "notes": [
-      "3a letter blanks verified from page content: tag A=1.478 Euro (printed example answer A for the Tisch) so Tisch -> D (Das ist teuer!), Lampe -> B (119 Euro) -> C (Das ist billig!), matching the printed dialogue in 3b.",
-      "3b radio circles (Verkäufer/Sibylle) are listening answers - not verifiable from the page, no fields. Task 3c ordering and task 4a open Bildlexikon sorting have no fixed answers on page.",
-      "Price tags read from zoomed crop (A: € 1.478,-, B: € 119,- on orange sticker); boxes approximate (rotated). Audio 1.23 and 1.24 printed, files exist. Bildlexikon strip labels (Bett, Bild, Sessel, Lampe, Stuhl) and footprint labels der/das/die added manually."
+      "3b (Verkäufer: b, c, f, g, i; Sibylle: a, d, e, h, j), 3c (a 2, c 3, d 6, e 4, f 5, g 9, h 7, i 8, j 10; b=1 printed) and 4a (der Stuhl/Tisch/Schrank/Teppich, das Bild/Sofa, die Couch) from the official Hueber answer key (Lektion 4, Kursbuch 3b/3c/4a). 3a answers (1 D, 2 B C) confirmed by the key.",
+      "Radio/checkbox and order-number boxes estimated from row positions; 4a line boxes estimated."
     ]
   }
 }

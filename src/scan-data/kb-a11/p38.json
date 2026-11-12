@@ -1,0 +1,1339 @@
+{
+  "book": "kb-a11",
+  "page": 38,
+  "image": "assets/kb-a11-p38.png",
+  "width": 848,
+  "height": 1200,
+  "words": [
+    {
+      "text": "FILM-STATIONEN",
+      "x": 125,
+      "y": 116,
+      "w": 248,
+      "h": 22
+    },
+    {
+      "text": "Clips",
+      "x": 394,
+      "y": 125,
+      "w": 34,
+      "h": 14
+    },
+    {
+      "text": "4–6",
+      "x": 434,
+      "y": 124,
+      "w": 29,
+      "h": 14
+    },
+    {
+      "text": "Beim",
+      "x": 156,
+      "y": 192,
+      "w": 36,
+      "h": 12
+    },
+    {
+      "text": "Trödler",
+      "x": 197,
+      "y": 191,
+      "w": 54,
+      "h": 13
+    },
+    {
+      "text": "–",
+      "x": 257,
+      "y": 199,
+      "w": 8,
+      "h": 2
+    },
+    {
+      "text": "Was",
+      "x": 270,
+      "y": 193,
+      "w": 30,
+      "h": 11
+    },
+    {
+      "text": "ist",
+      "x": 306,
+      "y": 192,
+      "w": 19,
+      "h": 12
+    },
+    {
+      "text": "richtig?",
+      "x": 331,
+      "y": 192,
+      "w": 58,
+      "h": 18
+    },
+    {
+      "text": "Sehen",
+      "x": 394,
+      "y": 192,
+      "w": 45,
+      "h": 13
+    },
+    {
+      "text": "Sie",
+      "x": 444,
+      "y": 192,
+      "w": 22,
+      "h": 13
+    },
+    {
+      "text": "den",
+      "x": 472,
+      "y": 192,
+      "w": 26,
+      "h": 13
+    },
+    {
+      "text": "Film",
+      "x": 506,
+      "y": 192,
+      "w": 30,
+      "h": 13
+    },
+    {
+      "text": "und",
+      "x": 544,
+      "y": 192,
+      "w": 27,
+      "h": 13
+    },
+    {
+      "text": "kreuzen",
+      "x": 578,
+      "y": 192,
+      "w": 59,
+      "h": 13
+    },
+    {
+      "text": "Sie",
+      "x": 642,
+      "y": 192,
+      "w": 22,
+      "h": 13
+    },
+    {
+      "text": "an.",
+      "x": 670,
+      "y": 196,
+      "w": 22,
+      "h": 9
+    },
+    {
+      "text": "a",
+      "x": 155,
+      "y": 227,
+      "w": 7,
+      "h": 7
+    },
+    {
+      "text": "Das",
+      "x": 174,
+      "y": 224,
+      "w": 22,
+      "h": 10
+    },
+    {
+      "text": "Bild",
+      "x": 201,
+      "y": 224,
+      "w": 26,
+      "h": 10
+    },
+    {
+      "text": "ist",
+      "x": 232,
+      "y": 224,
+      "w": 17,
+      "h": 10
+    },
+    {
+      "text": "35",
+      "x": 266,
+      "y": 224,
+      "w": 15,
+      "h": 10
+    },
+    {
+      "text": "x",
+      "x": 283,
+      "y": 227,
+      "w": 7,
+      "h": 8
+    },
+    {
+      "text": "43",
+      "x": 292,
+      "y": 224,
+      "w": 15,
+      "h": 10
+    },
+    {
+      "text": "53",
+      "x": 340,
+      "y": 224,
+      "w": 15,
+      "h": 10
+    },
+    {
+      "text": "x",
+      "x": 357,
+      "y": 227,
+      "w": 7,
+      "h": 8
+    },
+    {
+      "text": "45",
+      "x": 366,
+      "y": 224,
+      "w": 15,
+      "h": 10
+    },
+    {
+      "text": "53",
+      "x": 414,
+      "y": 224,
+      "w": 15,
+      "h": 10
+    },
+    {
+      "text": "x",
+      "x": 431,
+      "y": 227,
+      "w": 7,
+      "h": 8
+    },
+    {
+      "text": "43",
+      "x": 440,
+      "y": 224,
+      "w": 15,
+      "h": 10
+    },
+    {
+      "text": "cm",
+      "x": 481,
+      "y": 227,
+      "w": 16,
+      "h": 8
+    },
+    {
+      "text": "groß.",
+      "x": 496,
+      "y": 225,
+      "w": 42,
+      "h": 12
+    },
+    {
+      "text": "b",
+      "x": 155,
+      "y": 252,
+      "w": 7,
+      "h": 12
+    },
+    {
+      "text": "Das",
+      "x": 174,
+      "y": 254,
+      "w": 22,
+      "h": 10
+    },
+    {
+      "text": "Bild",
+      "x": 202,
+      "y": 252,
+      "w": 26,
+      "h": 12
+    },
+    {
+      "text": "kostet",
+      "x": 233,
+      "y": 252,
+      "w": 41,
+      "h": 12
+    },
+    {
+      "text": "20",
+      "x": 303,
+      "y": 254,
+      "w": 15,
+      "h": 10
+    },
+    {
+      "text": "Euro.",
+      "x": 323,
+      "y": 254,
+      "w": 34,
+      "h": 11
+    },
+    {
+      "text": "15",
+      "x": 375,
+      "y": 254,
+      "w": 15,
+      "h": 10
+    },
+    {
+      "text": "Euro.",
+      "x": 406,
+      "y": 254,
+      "w": 34,
+      "h": 11
+    },
+    {
+      "text": "10",
+      "x": 471,
+      "y": 254,
+      "w": 12,
+      "h": 11
+    },
+    {
+      "text": "Euro.",
+      "x": 489,
+      "y": 254,
+      "w": 34,
+      "h": 11
+    },
+    {
+      "text": "c",
+      "x": 155,
+      "y": 287,
+      "w": 6,
+      "h": 7
+    },
+    {
+      "text": "Anne",
+      "x": 173,
+      "y": 284,
+      "w": 35,
+      "h": 10
+    },
+    {
+      "text": "findet",
+      "x": 214,
+      "y": 282,
+      "w": 40,
+      "h": 12
+    },
+    {
+      "text": "das",
+      "x": 259,
+      "y": 283,
+      "w": 21,
+      "h": 11
+    },
+    {
+      "text": "Bild",
+      "x": 286,
+      "y": 283,
+      "w": 26,
+      "h": 11
+    },
+    {
+      "text": "okay.",
+      "x": 341,
+      "y": 283,
+      "w": 33,
+      "h": 16
+    },
+    {
+      "text": "zu",
+      "x": 405,
+      "y": 287,
+      "w": 15,
+      "h": 8
+    },
+    {
+      "text": "klein.",
+      "x": 425,
+      "y": 283,
+      "w": 38,
+      "h": 12
+    },
+    {
+      "text": "zu",
+      "x": 494,
+      "y": 287,
+      "w": 15,
+      "h": 8
+    },
+    {
+      "text": "teuer.",
+      "x": 514,
+      "y": 286,
+      "w": 37,
+      "h": 9
+    },
+    {
+      "text": "cm",
+      "x": 172,
+      "y": 328,
+      "w": 17,
+      "h": 10
+    },
+    {
+      "text": "=",
+      "x": 193,
+      "y": 330,
+      "w": 10,
+      "h": 6
+    },
+    {
+      "text": "Zentimeter",
+      "x": 208,
+      "y": 328,
+      "w": 62,
+      "h": 10
+    },
+    {
+      "text": "König-Ludwig-Souvenirs:",
+      "x": 156,
+      "y": 433,
+      "w": 189,
+      "h": 14
+    },
+    {
+      "text": "Das",
+      "x": 352,
+      "y": 432,
+      "w": 24,
+      "h": 12
+    },
+    {
+      "text": "ist",
+      "x": 383,
+      "y": 431,
+      "w": 18,
+      "h": 13
+    },
+    {
+      "text": "kein",
+      "x": 408,
+      "y": 431,
+      "w": 30,
+      "h": 13
+    },
+    {
+      "text": "König.",
+      "x": 446,
+      "y": 432,
+      "w": 47,
+      "h": 17
+    },
+    {
+      "text": "Das",
+      "x": 156,
+      "y": 453,
+      "w": 22,
+      "h": 11
+    },
+    {
+      "text": "ist",
+      "x": 184,
+      "y": 452,
+      "w": 16,
+      "h": 12
+    },
+    {
+      "text": "ein/eine",
+      "x": 205,
+      "y": 452,
+      "w": 55,
+      "h": 14
+    },
+    {
+      "text": "...",
+      "x": 265,
+      "y": 456,
+      "w": 15,
+      "h": 8
+    },
+    {
+      "text": "–",
+      "x": 287,
+      "y": 459,
+      "w": 8,
+      "h": 2
+    },
+    {
+      "text": "Was",
+      "x": 299,
+      "y": 453,
+      "w": 27,
+      "h": 11
+    },
+    {
+      "text": "ist",
+      "x": 332,
+      "y": 452,
+      "w": 15,
+      "h": 12
+    },
+    {
+      "text": "das?",
+      "x": 353,
+      "y": 452,
+      "w": 28,
+      "h": 12
+    },
+    {
+      "text": "Markieren",
+      "x": 387,
+      "y": 452,
+      "w": 66,
+      "h": 12
+    },
+    {
+      "text": "Sie",
+      "x": 459,
+      "y": 453,
+      "w": 19,
+      "h": 11
+    },
+    {
+      "text": "die",
+      "x": 483,
+      "y": 452,
+      "w": 20,
+      "h": 12
+    },
+    {
+      "text": "Souvenirs.",
+      "x": 508,
+      "y": 453,
+      "w": 68,
+      "h": 11
+    },
+    {
+      "text": "Bleistift",
+      "x": 178,
+      "y": 491,
+      "w": 54,
+      "h": 12
+    },
+    {
+      "text": "Bierglas",
+      "x": 258,
+      "y": 494,
+      "w": 56,
+      "h": 12
+    },
+    {
+      "text": "Teller",
+      "x": 353,
+      "y": 494,
+      "w": 44,
+      "h": 12
+    },
+    {
+      "text": "Ring",
+      "x": 445,
+      "y": 492,
+      "w": 30,
+      "h": 12
+    },
+    {
+      "text": "Tasse",
+      "x": 122,
+      "y": 523,
+      "w": 45,
+      "h": 11
+    },
+    {
+      "text": "Kette",
+      "x": 201,
+      "y": 525,
+      "w": 41,
+      "h": 11
+    },
+    {
+      "text": "Regenschirm",
+      "x": 272,
+      "y": 525,
+      "w": 98,
+      "h": 13
+    },
+    {
+      "text": "T-Shirt",
+      "x": 390,
+      "y": 532,
+      "w": 46,
+      "h": 12
+    },
+    {
+      "text": "Tasche",
+      "x": 145,
+      "y": 563,
+      "w": 50,
+      "h": 12
+    },
+    {
+      "text": "Feuerzeug",
+      "x": 222,
+      "y": 559,
+      "w": 72,
+      "h": 13
+    },
+    {
+      "text": "Buch",
+      "x": 329,
+      "y": 564,
+      "w": 39,
+      "h": 12
+    },
+    {
+      "text": "Schlüsselanhänger",
+      "x": 418,
+      "y": 566,
+      "w": 126,
+      "h": 13
+    },
+    {
+      "text": "Handtuch",
+      "x": 153,
+      "y": 591,
+      "w": 66,
+      "h": 12
+    },
+    {
+      "text": "Kugelschreiber",
+      "x": 254,
+      "y": 591,
+      "w": 101,
+      "h": 13
+    },
+    {
+      "text": "Postkarte",
+      "x": 422,
+      "y": 595,
+      "w": 63,
+      "h": 12
+    },
+    {
+      "text": "König",
+      "x": 227,
+      "y": 624,
+      "w": 38,
+      "h": 12
+    },
+    {
+      "text": "Uhr",
+      "x": 297,
+      "y": 620,
+      "w": 32,
+      "h": 12
+    },
+    {
+      "text": "Puppe",
+      "x": 383,
+      "y": 625,
+      "w": 40,
+      "h": 12
+    },
+    {
+      "text": "Mein",
+      "x": 156,
+      "y": 700,
+      "w": 36,
+      "h": 13
+    },
+    {
+      "text": "Drucker",
+      "x": 200,
+      "y": 700,
+      "w": 58,
+      "h": 13
+    },
+    {
+      "text": "braucht",
+      "x": 264,
+      "y": 700,
+      "w": 59,
+      "h": 14
+    },
+    {
+      "text": "Papier.",
+      "x": 330,
+      "y": 702,
+      "w": 49,
+      "h": 13
+    },
+    {
+      "text": "–",
+      "x": 385,
+      "y": 708,
+      "w": 9,
+      "h": 2
+    },
+    {
+      "text": "Sehen",
+      "x": 399,
+      "y": 701,
+      "w": 44,
+      "h": 13
+    },
+    {
+      "text": "Sie",
+      "x": 449,
+      "y": 701,
+      "w": 22,
+      "h": 13
+    },
+    {
+      "text": "den",
+      "x": 476,
+      "y": 701,
+      "w": 27,
+      "h": 13
+    },
+    {
+      "text": "Musikclip",
+      "x": 510,
+      "y": 702,
+      "w": 73,
+      "h": 14
+    },
+    {
+      "text": "und",
+      "x": 156,
+      "y": 720,
+      "w": 27,
+      "h": 13
+    },
+    {
+      "text": "ergänzen",
+      "x": 189,
+      "y": 721,
+      "w": 69,
+      "h": 17
+    },
+    {
+      "text": "Sie",
+      "x": 263,
+      "y": 721,
+      "w": 22,
+      "h": 13
+    },
+    {
+      "text": "die",
+      "x": 285,
+      "y": 721,
+      "w": 26,
+      "h": 12
+    },
+    {
+      "text": "Verben",
+      "x": 317,
+      "y": 721,
+      "w": 51,
+      "h": 12
+    },
+    {
+      "text": "in",
+      "x": 376,
+      "y": 721,
+      "w": 13,
+      "h": 13
+    },
+    {
+      "text": "der",
+      "x": 396,
+      "y": 721,
+      "w": 24,
+      "h": 13
+    },
+    {
+      "text": "passenden",
+      "x": 426,
+      "y": 721,
+      "w": 77,
+      "h": 18
+    },
+    {
+      "text": "Form.",
+      "x": 511,
+      "y": 722,
+      "w": 42,
+      "h": 12
+    },
+    {
+      "text": "brauchen",
+      "x": 160,
+      "y": 752,
+      "w": 55,
+      "h": 12
+    },
+    {
+      "text": "haben",
+      "x": 228,
+      "y": 752,
+      "w": 36,
+      "h": 12
+    },
+    {
+      "text": "sein",
+      "x": 276,
+      "y": 752,
+      "w": 24,
+      "h": 12
+    },
+    {
+      "text": "suchen",
+      "x": 312,
+      "y": 752,
+      "w": 42,
+      "h": 12
+    },
+    {
+      "text": "Haben",
+      "x": 173,
+      "y": 783,
+      "w": 31,
+      "h": 12
+    },
+    {
+      "text": "Sie",
+      "x": 209,
+      "y": 783,
+      "w": 19,
+      "h": 11
+    },
+    {
+      "text": "ein",
+      "x": 233,
+      "y": 782,
+      "w": 21,
+      "h": 12
+    },
+    {
+      "text": "Problem?",
+      "x": 260,
+      "y": 782,
+      "w": 61,
+      "h": 12
+    },
+    {
+      "text": "Der",
+      "x": 173,
+      "y": 802,
+      "w": 23,
+      "h": 11
+    },
+    {
+      "text": "Drucker",
+      "x": 202,
+      "y": 801,
+      "w": 53,
+      "h": 12
+    },
+    {
+      "text": "kein",
+      "x": 413,
+      "y": 802,
+      "w": 29,
+      "h": 12
+    },
+    {
+      "text": "Papier.",
+      "x": 448,
+      "y": 803,
+      "w": 44,
+      "h": 15
+    },
+    {
+      "text": "Ich",
+      "x": 173,
+      "y": 823,
+      "w": 18,
+      "h": 11
+    },
+    {
+      "text": "eine",
+      "x": 353,
+      "y": 822,
+      "w": 28,
+      "h": 12
+    },
+    {
+      "text": "Rechnung.",
+      "x": 386,
+      "y": 822,
+      "w": 68,
+      "h": 16
+    },
+    {
+      "text": "Und",
+      "x": 174,
+      "y": 841,
+      "w": 27,
+      "h": 12
+    },
+    {
+      "text": "mein",
+      "x": 206,
+      "y": 842,
+      "w": 34,
+      "h": 11
+    },
+    {
+      "text": "Drucker",
+      "x": 246,
+      "y": 842,
+      "w": 63,
+      "h": 13
+    },
+    {
+      "text": "Papier.",
+      "x": 458,
+      "y": 842,
+      "w": 44,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 326,
+      "y": 862,
+      "w": 19,
+      "h": 12
+    },
+    {
+      "text": "ein",
+      "x": 351,
+      "y": 862,
+      "w": 20,
+      "h": 12
+    },
+    {
+      "text": "Problem?",
+      "x": 377,
+      "y": 862,
+      "w": 61,
+      "h": 12
+    },
+    {
+      "text": "Ich",
+      "x": 173,
+      "y": 882,
+      "w": 21,
+      "h": 11
+    },
+    {
+      "text": "das",
+      "x": 353,
+      "y": 882,
+      "w": 21,
+      "h": 12
+    },
+    {
+      "text": "Papier.",
+      "x": 380,
+      "y": 883,
+      "w": 42,
+      "h": 15
+    },
+    {
+      "text": "Ich",
+      "x": 173,
+      "y": 902,
+      "w": 18,
+      "h": 11
+    },
+    {
+      "text": "eine",
+      "x": 353,
+      "y": 902,
+      "w": 28,
+      "h": 12
+    },
+    {
+      "text": "Rechnung.",
+      "x": 386,
+      "y": 902,
+      "w": 71,
+      "h": 16
+    },
+    {
+      "text": "Aber",
+      "x": 173,
+      "y": 923,
+      "w": 30,
+      "h": 11
+    },
+    {
+      "text": "ich",
+      "x": 207,
+      "y": 923,
+      "w": 17,
+      "h": 11
+    },
+    {
+      "text": "kein",
+      "x": 387,
+      "y": 922,
+      "w": 29,
+      "h": 12
+    },
+    {
+      "text": "Papier.",
+      "x": 422,
+      "y": 923,
+      "w": 45,
+      "h": 15
+    },
+    {
+      "text": "Ah,",
+      "x": 173,
+      "y": 941,
+      "w": 22,
+      "h": 14
+    },
+    {
+      "text": "hier",
+      "x": 201,
+      "y": 941,
+      "w": 27,
+      "h": 12
+    },
+    {
+      "text": "das",
+      "x": 386,
+      "y": 942,
+      "w": 22,
+      "h": 11
+    },
+    {
+      "text": "Papier.",
+      "x": 413,
+      "y": 942,
+      "w": 45,
+      "h": 16
+    },
+    {
+      "text": "Oh!",
+      "x": 173,
+      "y": 963,
+      "w": 25,
+      "h": 11
+    },
+    {
+      "text": "Das",
+      "x": 203,
+      "y": 963,
+      "w": 25,
+      "h": 11
+    },
+    {
+      "text": "schön.",
+      "x": 395,
+      "y": 962,
+      "w": 43,
+      "h": 12
+    },
+    {
+      "text": "Wir",
+      "x": 180,
+      "y": 984,
+      "w": 31,
+      "h": 11
+    },
+    {
+      "text": "kein",
+      "x": 369,
+      "y": 982,
+      "w": 30,
+      "h": 11
+    },
+    {
+      "text": "Problem.",
+      "x": 404,
+      "y": 982,
+      "w": 59,
+      "h": 12
+    },
+    {
+      "text": "Modul",
+      "x": 48,
+      "y": 1138,
+      "w": 34,
+      "h": 12
+    },
+    {
+      "text": "2",
+      "x": 86,
+      "y": 1138,
+      "w": 9,
+      "h": 12
+    },
+    {
+      "text": "achtunddreißig",
+      "x": 144,
+      "y": 1132,
+      "w": 94,
+      "h": 15
+    }
+  ],
+  "fields": [
+    {
+      "id": "t1a-3543",
+      "group": "t1a",
+      "kind": "radio",
+      "label": "35 x 43",
+      "name": "t1a",
+      "value": "35 x 43",
+      "answer": "false",
+      "x": 250,
+      "y": 222,
+      "w": 14,
+      "h": 14
+    },
+    {
+      "id": "t1a-5345",
+      "group": "t1a",
+      "kind": "radio",
+      "label": "53 x 45",
+      "name": "t1a",
+      "value": "53 x 45",
+      "answer": "false",
+      "x": 324,
+      "y": 222,
+      "w": 14,
+      "h": 14
+    },
+    {
+      "id": "t1a-5343",
+      "group": "t1a",
+      "kind": "radio",
+      "label": "53 x 43",
+      "name": "t1a",
+      "value": "53 x 43",
+      "answer": "true",
+      "x": 398,
+      "y": 222,
+      "w": 14,
+      "h": 14
+    },
+    {
+      "id": "t1b-20",
+      "group": "t1b",
+      "kind": "radio",
+      "label": "20 Euro.",
+      "name": "t1b",
+      "value": "20 Euro",
+      "answer": "false",
+      "x": 287,
+      "y": 250,
+      "w": 14,
+      "h": 14
+    },
+    {
+      "id": "t1b-15",
+      "group": "t1b",
+      "kind": "radio",
+      "label": "15 Euro.",
+      "name": "t1b",
+      "value": "15 Euro",
+      "answer": "false",
+      "x": 359,
+      "y": 250,
+      "w": 14,
+      "h": 14
+    },
+    {
+      "id": "t1b-10",
+      "group": "t1b",
+      "kind": "radio",
+      "label": "10 Euro.",
+      "name": "t1b",
+      "value": "10 Euro",
+      "answer": "true",
+      "x": 455,
+      "y": 250,
+      "w": 14,
+      "h": 14
+    },
+    {
+      "id": "t1c-okay",
+      "group": "t1c",
+      "kind": "radio",
+      "label": "okay.",
+      "name": "t1c",
+      "value": "okay",
+      "answer": "true",
+      "x": 326,
+      "y": 282,
+      "w": 14,
+      "h": 14
+    },
+    {
+      "id": "t1c-klein",
+      "group": "t1c",
+      "kind": "radio",
+      "label": "zu klein.",
+      "name": "t1c",
+      "value": "zu klein",
+      "answer": "false",
+      "x": 389,
+      "y": 283,
+      "w": 14,
+      "h": 14
+    },
+    {
+      "id": "t1c-teuer",
+      "group": "t1c",
+      "kind": "radio",
+      "label": "zu teuer.",
+      "name": "t1c",
+      "value": "zu teuer",
+      "answer": "false",
+      "x": 479,
+      "y": 283,
+      "w": 14,
+      "h": 14
+    },
+    {
+      "id": "t3-1",
+      "group": "t3",
+      "kind": "text",
+      "label": "Der Drucker ... kein Papier.",
+      "answer": "hat",
+      "x": 260,
+      "y": 800,
+      "w": 148,
+      "h": 16
+    },
+    {
+      "id": "t3-2",
+      "group": "t3",
+      "kind": "text",
+      "label": "Ich ... eine Rechnung.",
+      "answer": "brauche",
+      "x": 200,
+      "y": 820,
+      "w": 148,
+      "h": 16
+    },
+    {
+      "id": "t3-3",
+      "group": "t3",
+      "kind": "text",
+      "label": "Und mein Drucker ... Papier.",
+      "answer": "braucht",
+      "x": 315,
+      "y": 839,
+      "w": 138,
+      "h": 16
+    },
+    {
+      "id": "t3-4",
+      "group": "t3",
+      "kind": "text",
+      "label": "... Sie ein Problem?",
+      "answer": "Haben",
+      "x": 173,
+      "y": 859,
+      "w": 148,
+      "h": 16
+    },
+    {
+      "id": "t3-5",
+      "group": "t3",
+      "kind": "text",
+      "label": "Ich ... das Papier.",
+      "answer": "suche",
+      "x": 200,
+      "y": 879,
+      "w": 148,
+      "h": 16
+    },
+    {
+      "id": "t3-6",
+      "group": "t3",
+      "kind": "text",
+      "label": "Ich ... eine Rechnung. (2)",
+      "answer": "brauche",
+      "x": 200,
+      "y": 899,
+      "w": 148,
+      "h": 16
+    },
+    {
+      "id": "t3-7",
+      "group": "t3",
+      "kind": "text",
+      "label": "Aber ich ... kein Papier.",
+      "answer": "habe",
+      "x": 232,
+      "y": 919,
+      "w": 150,
+      "h": 16
+    },
+    {
+      "id": "t3-8",
+      "group": "t3",
+      "kind": "text",
+      "label": "Ah, hier ... das Papier.",
+      "answer": "ist",
+      "x": 232,
+      "y": 938,
+      "w": 149,
+      "h": 16
+    },
+    {
+      "id": "t3-9",
+      "group": "t3",
+      "kind": "text",
+      "label": "Oh! Das ... schön.",
+      "answer": "ist",
+      "x": 232,
+      "y": 959,
+      "w": 158,
+      "h": 16
+    },
+    {
+      "id": "t3-10",
+      "group": "t3",
+      "kind": "text",
+      "label": "Wir ... kein Problem.",
+      "answer": "haben",
+      "x": 217,
+      "y": 980,
+      "w": 148,
+      "h": 16
+    }
+  ],
+  "audio": [],
+  "groups": [
+    {
+      "id": "t1a",
+      "label": "1a Das Bild ist ... cm groß"
+    },
+    {
+      "id": "t1b",
+      "label": "1b Das Bild kostet ..."
+    },
+    {
+      "id": "t1c",
+      "label": "1c Anne findet das Bild ..."
+    },
+    {
+      "id": "t3",
+      "label": "3 Verben ergänzen"
+    }
+  ],
+  "review": {
+    "status": "partial",
+    "verifiedWords": 153,
+    "totalWords": 153,
+    "notes": [
+      "All field answers from the official Hueber answer key (Lektion 6 Film-Stationen: 1a 53 x 43 cm, 1b 10 Euro, 1c okay; 3: hat, brauche, braucht, Haben, suche, brauche, habe, ist, ist, haben).",
+      "Task 2 (Markieren Sie die Souvenirs; key: Tasche, T-Shirt, Puppe, Postkarte) is a marking task with no blanks - not modeled as fields, word cloud only.",
+      "Souvenir word cloud verified via cropped OCR. Estimated boxes: cm = Zentimeter info box, radio circles, task 3 blanks (blank widths estimated from render), footer Modul 2 tab.",
+      "Clip 4/5/6 markers are video references, no audio files exist for them, so no audio buttons. Colored cloud dots, speaker squares/triangles, ruler graphic text, footer digit 38 dropped as non-words."
+    ]
+  }
+}
