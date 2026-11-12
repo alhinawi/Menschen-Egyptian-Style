@@ -5,8 +5,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "book.css",
-      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -20,7 +18,9 @@
       "batch-ab12"
     ],
     "bodyAttrs": {},
-    "reactExercises": true
+    "reactExercises": true,
+    "batchcss": true,
+    "bookcss": true
   },
   "ab-a12-l17-20.html": {
     "slug": "ab-a12-l17-20",
@@ -52,8 +52,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "book.css",
-      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -69,7 +67,9 @@
       "ab-a12-l21-24"
     ],
     "bodyAttrs": {},
-    "reactExercises": true
+    "reactExercises": true,
+    "batchcss": true,
+    "bookcss": true
   },
   "ab-a12-original-viewer.html": {
     "slug": "ab-a12-original-viewer",
@@ -89,8 +89,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "book.css",
-      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -104,7 +102,9 @@
       "ab-batch"
     ],
     "bodyAttrs": {},
-    "reactExercises": true
+    "reactExercises": true,
+    "batchcss": true,
+    "bookcss": true
   },
   "ab-l7-9-viewer.html": {
     "slug": "ab-l7-9-viewer",
@@ -123,9 +123,7 @@
     "title": "Menschen Arbeitsbuch · Lektion 7–9",
     "reader": true,
     "themes": true,
-    "styles": [
-      "book.css"
-    ],
+    "styles": [],
     "initializers": [
       "glossary",
       "ab-l7-9-glossary",
@@ -138,7 +136,8 @@
       "ab-l7-9"
     ],
     "bodyAttrs": {},
-    "reactExercises": true
+    "reactExercises": true,
+    "bookcss": true
   },
   "ab-original-viewer.html": {
     "slug": "ab-original-viewer",
@@ -158,8 +157,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "book.css",
-      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -174,7 +171,9 @@
       "ab1"
     ],
     "bodyAttrs": {},
-    "reactExercises": true
+    "reactExercises": true,
+    "batchcss": true,
+    "bookcss": true
   },
   "ab2.html": {
     "slug": "ab2",
@@ -182,8 +181,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "book.css",
-      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -198,7 +195,9 @@
       "ab2"
     ],
     "bodyAttrs": {},
-    "reactExercises": true
+    "reactExercises": true,
+    "batchcss": true,
+    "bookcss": true
   },
   "ab3.html": {
     "slug": "ab3",
@@ -206,8 +205,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "book.css",
-      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -222,16 +219,16 @@
       "ab3"
     ],
     "bodyAttrs": {},
-    "reactExercises": true
+    "reactExercises": true,
+    "batchcss": true,
+    "bookcss": true
   },
   "ab4-6.html": {
     "slug": "ab4-6",
     "title": "Menschen · Arbeitsbuch Lektion 4–6",
     "reader": true,
     "themes": true,
-    "styles": [
-      "book.css"
-    ],
+    "styles": [],
     "initializers": [
       "glossary",
       "batch-glossary",
@@ -247,7 +244,8 @@
       "ab46"
     ],
     "bodyAttrs": {},
-    "reactExercises": true
+    "reactExercises": true,
+    "bookcss": true
   },
   "abm1.html": {
     "slug": "abm1",
@@ -255,8 +253,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "book.css",
-      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -271,7 +267,9 @@
       "abm1"
     ],
     "bodyAttrs": {},
-    "reactExercises": true
+    "reactExercises": true,
+    "batchcss": true,
+    "bookcss": true
   },
   "index.html": {
     "slug": "index",
@@ -279,8 +277,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "book.css",
-      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -295,7 +291,9 @@
       "book"
     ],
     "bodyAttrs": {},
-    "reactExercises": true
+    "reactExercises": true,
+    "batchcss": true,
+    "bookcss": true
   },
   "kb-a12-l13-16.html": {
     "slug": "kb-a12-l13-16",
@@ -303,8 +301,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "book.css",
-      "batch.css",
       "kb-a12-l13-16.css"
     ],
     "initializers": [
@@ -319,7 +315,9 @@
       "kb-a12-l13-16"
     ],
     "bodyAttrs": {},
-    "reactExercises": true
+    "reactExercises": true,
+    "batchcss": true,
+    "bookcss": true
   },
   "kb-a12-l17-20.html": {
     "slug": "kb-a12-l17-20",
@@ -327,8 +325,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "book.css",
-      "batch.css",
       "kb-a12-l17-20.css"
     ],
     "initializers": [
@@ -342,7 +338,9 @@
       "kb-a12-l17-20"
     ],
     "bodyAttrs": {},
-    "reactExercises": true
+    "reactExercises": true,
+    "batchcss": true,
+    "bookcss": true
   },
   "kb-a12-original-viewer.html": {
     "slug": "kb-a12-original-viewer",
@@ -362,8 +360,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "book.css",
-      "batch.css",
       "batch-l10-12.css"
     ],
     "initializers": [
@@ -381,7 +377,9 @@
       "batch-l10-12"
     ],
     "bodyAttrs": {},
-    "reactExercises": true
+    "reactExercises": true,
+    "batchcss": true,
+    "bookcss": true
   },
   "l2-3.html": {
     "slug": "l2-3",
@@ -389,8 +387,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "book.css",
-      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -408,16 +404,16 @@
       "batch"
     ],
     "bodyAttrs": {},
-    "reactExercises": true
+    "reactExercises": true,
+    "batchcss": true,
+    "bookcss": true
   },
   "l21-24.html": {
     "slug": "l21-24",
     "title": "Menschen · A1.2 · Lektion 21-24 & Aktionsseiten",
     "reader": true,
     "themes": true,
-    "styles": [
-      "book.css"
-    ],
+    "styles": [],
     "initializers": [
       "glossary",
       "batch-glossary-l21-24",
@@ -437,7 +433,8 @@
       "batch-l21-24"
     ],
     "bodyAttrs": {},
-    "reactExercises": true
+    "reactExercises": true,
+    "bookcss": true
   },
   "l4-6.html": {
     "slug": "l4-6",
@@ -445,8 +442,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "book.css",
-      "batch.css",
       "l4-6.css"
     ],
     "initializers": [
@@ -461,7 +456,9 @@
       "batch-l46"
     ],
     "bodyAttrs": {},
-    "reactExercises": true
+    "reactExercises": true,
+    "batchcss": true,
+    "bookcss": true
   },
   "l7-9.html": {
     "slug": "l7-9",
@@ -469,8 +466,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "book.css",
-      "batch.css",
       "batch79.css"
     ],
     "initializers": [
@@ -488,7 +483,9 @@
       "batch79"
     ],
     "bodyAttrs": {},
-    "reactExercises": true
+    "reactExercises": true,
+    "batchcss": true,
+    "bookcss": true
   },
   "original-l21-24.html": {
     "slug": "original-l21-24",

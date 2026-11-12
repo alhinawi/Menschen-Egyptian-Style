@@ -1,0 +1,511 @@
+{
+  "book": "kb-a11",
+  "page": 49,
+  "width": 1075,
+  "height": 1521,
+  "words": [],
+  "art": [
+    {
+      "src": "assets/book-crops/native-p49-hero.png",
+      "x": 65,
+      "y": 76,
+      "w": 1010,
+      "h": 967,
+      "name": "hero"
+    }
+  ],
+  "fields": [
+    {
+      "id": "a-durst",
+      "group": "task2",
+      "kind": "checkbox",
+      "label": "Tim hat Durst.",
+      "answer": "false",
+      "x": 632,
+      "y": 1375,
+      "w": 20,
+      "h": 20
+    },
+    {
+      "id": "b-schinken",
+      "group": "task2",
+      "kind": "checkbox",
+      "label": "Tim mag keinen Schinken.",
+      "answer": "true",
+      "x": 432,
+      "y": 1404,
+      "w": 20,
+      "h": 20
+    },
+    {
+      "id": "b-kaese",
+      "group": "task2",
+      "kind": "checkbox",
+      "label": "Tim mag keinen Käse.",
+      "answer": "true",
+      "x": 632,
+      "y": 1404,
+      "w": 20,
+      "h": 20
+    },
+    {
+      "id": "b-schoko",
+      "group": "task2",
+      "kind": "checkbox",
+      "label": "Tim mag keine Schokolade.",
+      "answer": "false",
+      "x": 826,
+      "y": 1404,
+      "w": 20,
+      "h": 20
+    },
+    {
+      "id": "c-schinken",
+      "group": "task2",
+      "kind": "checkbox",
+      "label": "Onkel Harry hat keinen Schinken.",
+      "answer": "false",
+      "x": 432,
+      "y": 1433,
+      "w": 20,
+      "h": 20
+    },
+    {
+      "id": "c-kaese",
+      "group": "task2",
+      "kind": "checkbox",
+      "label": "Onkel Harry hat keinen Käse.",
+      "answer": "false",
+      "x": 632,
+      "y": 1433,
+      "w": 20,
+      "h": 20
+    },
+    {
+      "id": "c-schoko",
+      "group": "task2",
+      "kind": "checkbox",
+      "label": "Onkel Harry hat keine Schokolade.",
+      "answer": "true",
+      "x": 826,
+      "y": 1433,
+      "w": 20,
+      "h": 20
+    },
+    {
+      "id": "d-schinkenbrot",
+      "group": "task2",
+      "kind": "checkbox",
+      "label": "Tim isst ein Schinkenbrot.",
+      "answer": "false",
+      "x": 432,
+      "y": 1462,
+      "w": 20,
+      "h": 20
+    },
+    {
+      "id": "d-kaesebrot",
+      "group": "task2",
+      "kind": "checkbox",
+      "label": "Tim isst ein Käsebrot.",
+      "answer": "false",
+      "x": 632,
+      "y": 1462,
+      "w": 20,
+      "h": 20
+    },
+    {
+      "id": "d-kuchen",
+      "group": "task2",
+      "kind": "checkbox",
+      "label": "Tim isst ein Stück Kuchen.",
+      "answer": "true",
+      "x": 826,
+      "y": 1462,
+      "w": 20,
+      "h": 20
+    },
+    {
+      "id": "open-immer",
+      "kind": "text",
+      "group": "open",
+      "x": 230,
+      "y": 1214,
+      "w": 160,
+      "h": 35,
+      "label": "Was ist fast immer im Kühlschrank?"
+    },
+    {
+      "id": "open-oft",
+      "kind": "text",
+      "group": "open",
+      "x": 410,
+      "y": 1214,
+      "w": 105,
+      "h": 35,
+      "label": "Was ist oft im Kühlschrank?"
+    },
+    {
+      "id": "open-manchmal",
+      "kind": "text",
+      "group": "open",
+      "x": 538,
+      "y": 1214,
+      "w": 130,
+      "h": 35,
+      "label": "Was ist manchmal im Kühlschrank?"
+    },
+    {
+      "id": "open-nie",
+      "kind": "text",
+      "group": "open",
+      "x": 693,
+      "y": 1214,
+      "w": 110,
+      "h": 35,
+      "label": "Was ist fast nie im Kühlschrank?"
+    }
+  ],
+  "audio": [
+    {
+      "id": "cd2-07",
+      "src": "assets/kb-cd2-track07.mp3",
+      "label": "2.07 · Was ist richtig?",
+      "x": 100,
+      "y": 1307,
+      "w": 55,
+      "h": 26
+    }
+  ],
+  "groups": [
+    {
+      "id": "task2",
+      "label": "2",
+      "x": 225,
+      "y": 1488
+    }
+  ],
+  "titles": [
+    [
+      "1",
+      170,
+      1084
+    ],
+    [
+      "2",
+      170,
+      1306
+    ]
+  ],
+  "review": {
+    "status": "source-reviewed",
+    "sourceNotes": [
+      "Native wording transcribed from original scan; source hero full frame retained. Original audio directly transcribed to verify every fixed-answer field. Open prompts not assigned fixed answers."
+    ]
+  },
+  "panels": [],
+  "shapes": [
+    {
+      "x": 882,
+      "y": 1002,
+      "w": 193,
+      "h": 344,
+      "background": "#159fc2",
+      "border": "0"
+    },
+    {
+      "x": 222,
+      "y": 1208,
+      "w": 580,
+      "h": 1,
+      "background": "#5c81a4",
+      "border": "0"
+    },
+    {
+      "x": 400,
+      "y": 1198,
+      "w": 1,
+      "h": 65,
+      "background": "#5c81a4",
+      "border": "0"
+    },
+    {
+      "x": 525,
+      "y": 1198,
+      "w": 1,
+      "h": 65,
+      "background": "#5c81a4",
+      "border": "0"
+    },
+    {
+      "x": 680,
+      "y": 1198,
+      "w": 1,
+      "h": 65,
+      "background": "#5c81a4",
+      "border": "0"
+    },
+    {
+      "x": 600,
+      "y": 1250,
+      "w": 245,
+      "h": 49,
+      "background": "#fffef3",
+      "border": "1px solid #e5dba1",
+      "radius": "50%"
+    }
+  ],
+  "module": {
+    "n": "9",
+    "x": 1013,
+    "y": 117
+  },
+  "textBlocks": [
+    {
+      "text": "Ich möchte was essen, Onkel Harry.",
+      "x": 357,
+      "y": 153,
+      "w": 660,
+      "size": 35,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Sehen Sie das Foto an.",
+      "x": 213,
+      "y": 1084,
+      "w": 620,
+      "size": 21,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Was haben Sie im Kühlschrank? Hilfe finden Sie im Bildlexikon oder\nim Wörterbuch.",
+      "x": 232,
+      "y": 1114,
+      "w": 620,
+      "size": 19,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "(fast) immer",
+      "x": 232,
+      "y": 1181,
+      "w": 160,
+      "size": 19,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "oft",
+      "x": 422,
+      "y": 1181,
+      "w": 100,
+      "size": 19,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "manchmal",
+      "x": 547,
+      "y": 1181,
+      "w": 140,
+      "size": 19,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "(fast) nie",
+      "x": 699,
+      "y": 1181,
+      "w": 130,
+      "size": 19,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "Ich habe immer Milch im\nKühlschrank.",
+      "x": 620,
+      "y": 1258,
+      "w": 215,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Was ist richtig?",
+      "x": 213,
+      "y": 1306,
+      "w": 600,
+      "size": 22,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Hören Sie und kreuzen Sie an.",
+      "x": 232,
+      "y": 1338,
+      "w": 650,
+      "size": 20,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "a   Tim hat",
+      "x": 232,
+      "y": 1376,
+      "w": 200,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "b   Tim mag",
+      "x": 232,
+      "y": 1405,
+      "w": 200,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "c   Onkel Harry hat",
+      "x": 232,
+      "y": 1434,
+      "w": 200,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "d   Tim isst",
+      "x": 232,
+      "y": 1463,
+      "w": 200,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "☒ Hunger.",
+      "x": 432,
+      "y": 1376,
+      "w": 190,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Durst.",
+      "x": 658,
+      "y": 1376,
+      "w": 210,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "keinen Schinken.",
+      "x": 458,
+      "y": 1405,
+      "w": 210,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "keinen Käse.",
+      "x": 658,
+      "y": 1405,
+      "w": 210,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "keine Schokolade.",
+      "x": 852,
+      "y": 1405,
+      "w": 210,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "keinen Schinken.",
+      "x": 458,
+      "y": 1434,
+      "w": 210,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "keinen Käse.",
+      "x": 658,
+      "y": 1434,
+      "w": 210,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "keine Schokolade.",
+      "x": 852,
+      "y": 1434,
+      "w": 210,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "ein Schinkenbrot.",
+      "x": 458,
+      "y": 1463,
+      "w": 210,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "ein Käsebrot.",
+      "x": 658,
+      "y": 1463,
+      "w": 210,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "ein Stück Kuchen.",
+      "x": 852,
+      "y": 1463,
+      "w": 210,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Hören: Gespräch über Vorlieben beim Essen\nSprechen: über Essgewohnheiten sprechen: Ich esse gern Müsli zum Frühstück.; beim Essen: Möchten Sie Kaffee oder Tee?\nLesen: Comic\nWortfeld: Lebensmittel und Speisen\nGrammatik: Konjugation mögen, „möchte“; Wortbildung Nomen + Nomen: der Tomatensalat",
+      "x": 894,
+      "y": 1020,
+      "w": 168,
+      "size": 15,
+      "bold": false,
+      "serif": false,
+      "color": "#fff"
+    },
+    {
+      "text": "neunundvierzig   |   49",
+      "x": 868,
+      "y": 1500,
+      "w": 195,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    }
+  ],
+  "hidePageNumber": true,
+  "taskColor": "#8e0846"
+}

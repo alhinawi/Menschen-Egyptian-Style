@@ -1,0 +1,835 @@
+{
+  "book": "kb-a11",
+  "page": 51,
+  "width": 1075,
+  "height": 1521,
+  "words": [],
+  "art": [
+    {
+      "src": "assets/book-crops/native-p51-strip.png",
+      "x": 0,
+      "y": 65,
+      "w": 1020,
+      "h": 106,
+      "name": "strip"
+    },
+    {
+      "src": "assets/book-crops/native-p51-machine.png",
+      "x": 160,
+      "y": 563,
+      "w": 915,
+      "h": 464,
+      "name": "machine"
+    },
+    {
+      "src": "assets/book-crops/native-p51-die.png",
+      "name": "Würfel zwei",
+      "x": 255,
+      "y": 1074,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "src": "assets/book-crops/native-p51-die.png",
+      "name": "Würfel zwei",
+      "x": 288,
+      "y": 1074,
+      "w": 24,
+      "h": 24
+    }
+  ],
+  "fields": [
+    {
+      "id": "a1-brot",
+      "group": "task6a",
+      "kind": "text",
+      "label": "das Schinkenbrot = der Schinken + ___ Brot",
+      "answer": "das",
+      "x": 710,
+      "y": 411,
+      "w": 44,
+      "h": 22
+    },
+    {
+      "id": "a2-schokolade",
+      "group": "task6a",
+      "kind": "text",
+      "label": "der Schokoladenkuchen = ___ Schokolade + ...",
+      "answer": "die",
+      "x": 460,
+      "y": 436,
+      "w": 50,
+      "h": 22
+    },
+    {
+      "id": "a3-kuchen",
+      "group": "task6a",
+      "kind": "text",
+      "label": "der Schokoladenkuchen = ... + ___ Kuchen",
+      "answer": "der",
+      "x": 710,
+      "y": 436,
+      "w": 44,
+      "h": 22
+    },
+    {
+      "id": "a4-fisch",
+      "group": "task6a",
+      "kind": "text",
+      "label": "die Fischsuppe = ___ Fisch + ...",
+      "answer": "der",
+      "x": 460,
+      "y": 461,
+      "w": 50,
+      "h": 22
+    },
+    {
+      "id": "a5-suppe",
+      "group": "task6a",
+      "kind": "text",
+      "label": "die Fischsuppe = ... + ___ Suppe",
+      "answer": "die",
+      "x": 710,
+      "y": 461,
+      "w": 44,
+      "h": 22
+    },
+    {
+      "id": "open-vorspeise",
+      "kind": "text",
+      "group": "open",
+      "x": 754,
+      "y": 1080,
+      "w": 187,
+      "h": 24,
+      "label": "Meine Vorspeise"
+    },
+    {
+      "id": "open-hauptgericht",
+      "kind": "text",
+      "group": "open",
+      "x": 754,
+      "y": 1192,
+      "w": 187,
+      "h": 24,
+      "label": "Mein Hauptgericht"
+    },
+    {
+      "id": "open-dessert",
+      "kind": "text",
+      "group": "open",
+      "x": 754,
+      "y": 1300,
+      "w": 187,
+      "h": 24,
+      "label": "Mein Dessert"
+    },
+    {
+      "id": "a0-schinken",
+      "group": "task6a",
+      "kind": "text",
+      "label": "Schinken",
+      "x": 460,
+      "y": 411,
+      "w": 50,
+      "h": 24,
+      "answer": "der"
+    },
+    {
+      "id": "open-vorspeise-alternative",
+      "kind": "text",
+      "group": "open",
+      "x": 754,
+      "y": 1115,
+      "w": 187,
+      "h": 24,
+      "label": "Meine Vorspeise Alternative"
+    },
+    {
+      "id": "open-hauptgericht-alternative",
+      "kind": "text",
+      "group": "open",
+      "x": 754,
+      "y": 1227,
+      "w": 187,
+      "h": 24,
+      "label": "Mein Hauptgericht Alternative"
+    },
+    {
+      "id": "open-dessert-alternative",
+      "kind": "text",
+      "group": "open",
+      "x": 754,
+      "y": 1335,
+      "w": 187,
+      "h": 24,
+      "label": "Mein Dessert Alternative"
+    }
+  ],
+  "audio": [],
+  "groups": [
+    {
+      "id": "task6a",
+      "label": "6a",
+      "x": 851,
+      "y": 495
+    }
+  ],
+  "titles": [
+    [
+      "5",
+      173,
+      250
+    ],
+    [
+      "6",
+      173,
+      311
+    ]
+  ],
+  "review": {
+    "status": "source-reviewed",
+    "source": "assets/kb-a11-p51.png",
+    "checks": [
+      "original wording and illustration framing",
+      "native closed-task grading and open-answer persistence",
+      "320/390 mobile geometry and translation taps"
+    ],
+    "notes": "Closed answers checked against the official Hueber key."
+  },
+  "panels": [],
+  "shapes": [
+    {
+      "x": 735,
+      "y": 1044,
+      "w": 260,
+      "h": 352,
+      "background": "#fff",
+      "border": "1px solid #c2c2c2"
+    }
+  ],
+  "textBlocks": [
+    {
+      "text": "●",
+      "x": 167,
+      "y": 179,
+      "w": 17,
+      "size": 12,
+      "bold": false,
+      "serif": false,
+      "color": "#d92c26"
+    },
+    {
+      "text": "Orange",
+      "x": 183,
+      "y": 177,
+      "w": 140,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "●",
+      "x": 295,
+      "y": 179,
+      "w": 17,
+      "size": 12,
+      "bold": false,
+      "serif": false,
+      "color": "#d92c26"
+    },
+    {
+      "text": "Milch",
+      "x": 311,
+      "y": 177,
+      "w": 140,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "●",
+      "x": 410,
+      "y": 179,
+      "w": 17,
+      "size": 12,
+      "bold": false,
+      "serif": false,
+      "color": "#d92c26"
+    },
+    {
+      "text": "Butter",
+      "x": 426,
+      "y": 177,
+      "w": 140,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "●",
+      "x": 525,
+      "y": 179,
+      "w": 17,
+      "size": 12,
+      "bold": false,
+      "serif": false,
+      "color": "#2182aa"
+    },
+    {
+      "text": "Fisch",
+      "x": 541,
+      "y": 177,
+      "w": 140,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "●",
+      "x": 646,
+      "y": 179,
+      "w": 17,
+      "size": 12,
+      "bold": false,
+      "serif": false,
+      "color": "#d92c26"
+    },
+    {
+      "text": "Tomate",
+      "x": 662,
+      "y": 177,
+      "w": 140,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "●",
+      "x": 751,
+      "y": 179,
+      "w": 17,
+      "size": 12,
+      "bold": false,
+      "serif": false,
+      "color": "#d92c26"
+    },
+    {
+      "text": "Salat",
+      "x": 767,
+      "y": 177,
+      "w": 140,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "●",
+      "x": 849,
+      "y": 179,
+      "w": 17,
+      "size": 12,
+      "bold": false,
+      "serif": false,
+      "color": "#2182aa"
+    },
+    {
+      "text": "Käse",
+      "x": 865,
+      "y": 177,
+      "w": 140,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "●",
+      "x": 947,
+      "y": 179,
+      "w": 17,
+      "size": 12,
+      "bold": false,
+      "serif": false,
+      "color": "#2182aa"
+    },
+    {
+      "text": "Schinken",
+      "x": 963,
+      "y": 177,
+      "w": 140,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Gespräche üben: Möchten Sie noch etwas …? Arbeiten Sie zu zweit auf Seite 90.",
+      "x": 214,
+      "y": 250,
+      "w": 855,
+      "size": 21,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Kartoffeleis und Orangenbraten",
+      "x": 214,
+      "y": 311,
+      "w": 855,
+      "size": 21,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "a   Suchen Sie die Artikel im Bildlexikon und ergänzen Sie.",
+      "x": 185,
+      "y": 350,
+      "w": 850,
+      "size": 19,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "das Schinkenbrot",
+      "x": 246,
+      "y": 413,
+      "w": 245,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "der Schokoladenkuchen",
+      "x": 246,
+      "y": 438,
+      "w": 245,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "die Fischsuppe",
+      "x": 246,
+      "y": 463,
+      "w": 245,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Schinken",
+      "x": 514,
+      "y": 413,
+      "w": 180,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "+",
+      "x": 680,
+      "y": 413,
+      "w": 50,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Schokolade",
+      "x": 514,
+      "y": 438,
+      "w": 180,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "+",
+      "x": 680,
+      "y": 438,
+      "w": 50,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Fisch",
+      "x": 514,
+      "y": 463,
+      "w": 180,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "+",
+      "x": 680,
+      "y": 463,
+      "w": 50,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Brot",
+      "x": 760,
+      "y": 413,
+      "w": 200,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Kuchen",
+      "x": 760,
+      "y": 438,
+      "w": 200,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Suppe",
+      "x": 760,
+      "y": 463,
+      "w": 200,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "b   Würfeln Sie und stellen Sie Ihre Speisekarte zusammen.",
+      "x": 185,
+      "y": 529,
+      "w": 850,
+      "size": 19,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Käse-",
+      "x": 560,
+      "y": 582,
+      "w": 145,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "-pizza",
+      "x": 684,
+      "y": 582,
+      "w": 105,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Fisch-",
+      "x": 560,
+      "y": 612,
+      "w": 145,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "-salat",
+      "x": 684,
+      "y": 612,
+      "w": 105,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Zitronen-",
+      "x": 560,
+      "y": 642,
+      "w": 145,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "-suppe",
+      "x": 684,
+      "y": 642,
+      "w": 105,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Zwiebel-",
+      "x": 560,
+      "y": 672,
+      "w": 145,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "-eis",
+      "x": 684,
+      "y": 672,
+      "w": 105,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Eier-",
+      "x": 560,
+      "y": 702,
+      "w": 145,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "-kuchen",
+      "x": 684,
+      "y": 702,
+      "w": 105,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Obst-",
+      "x": 560,
+      "y": 732,
+      "w": 145,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "-reis",
+      "x": 684,
+      "y": 732,
+      "w": 105,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "■",
+      "x": 226,
+      "y": 1047,
+      "w": 23,
+      "size": 17,
+      "bold": false,
+      "serif": false,
+      "color": "#2050a4"
+    },
+    {
+      "text": "Was essen wir als Vorspeise?",
+      "x": 255,
+      "y": 1047,
+      "w": 450,
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "▲",
+      "x": 226,
+      "y": 1074,
+      "w": 23,
+      "size": 17,
+      "bold": false,
+      "serif": false,
+      "color": "#1ca741"
+    },
+    {
+      "text": "Fischeis.",
+      "x": 324,
+      "y": 1074,
+      "w": 400,
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "c   Laden Sie zwei Kursteilnehmer/-innen zum Essen ein.",
+      "x": 199,
+      "y": 1139,
+      "w": 800,
+      "size": 19,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "■",
+      "x": 230,
+      "y": 1180,
+      "w": 23,
+      "size": 17,
+      "bold": false,
+      "serif": false,
+      "color": "#2050a4"
+    },
+    {
+      "text": "Ich koche heute Abend etwas.",
+      "x": 255,
+      "y": 1180,
+      "w": 465,
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "▲",
+      "x": 230,
+      "y": 1208,
+      "w": 23,
+      "size": 17,
+      "bold": false,
+      "serif": false,
+      "color": "#1ca741"
+    },
+    {
+      "text": "Was kochst du denn?",
+      "x": 255,
+      "y": 1208,
+      "w": 465,
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "■",
+      "x": 230,
+      "y": 1236,
+      "w": 23,
+      "size": 17,
+      "bold": false,
+      "serif": false,
+      "color": "#2050a4"
+    },
+    {
+      "text": "Als Vorspeise essen wir / mache ich Zwiebeleis. /\nAls Hauptgericht … Kommst du?",
+      "x": 255,
+      "y": 1236,
+      "w": 465,
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "▲",
+      "x": 230,
+      "y": 1290,
+      "w": 23,
+      "size": 17,
+      "bold": false,
+      "serif": false,
+      "color": "#1ca741"
+    },
+    {
+      "text": "☹ Oh, das tut mir leid. Ich habe leider doch\n   keine Zeit. /\n☺ Ja, ich komme gern.",
+      "x": 255,
+      "y": 1290,
+      "w": 465,
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Vorspeise",
+      "x": 765,
+      "y": 1056,
+      "w": 200,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Hauptgericht",
+      "x": 765,
+      "y": 1168,
+      "w": 200,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Dessert",
+      "x": 765,
+      "y": 1276,
+      "w": 200,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "einundfünfzig   |   51",
+      "x": 875,
+      "y": 1497,
+      "w": 250,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Nomen 1",
+      "x": 459,
+      "y": 388,
+      "w": 180,
+      "size": 18,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "+",
+      "x": 680,
+      "y": 388,
+      "w": 30,
+      "size": 18,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "Nomen 2",
+      "x": 710,
+      "y": 388,
+      "w": 180,
+      "size": 18,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "oder",
+      "x": 946,
+      "y": 1080,
+      "w": 45,
+      "size": 15,
+      "serif": true
+    },
+    {
+      "text": "oder",
+      "x": 946,
+      "y": 1192,
+      "w": 45,
+      "size": 15,
+      "serif": true
+    },
+    {
+      "text": "oder",
+      "x": 946,
+      "y": 1300,
+      "w": 45,
+      "size": 15,
+      "serif": true
+    }
+  ],
+  "hidePageNumber": true,
+  "taskColor": "#8e0846",
+  "module": {
+    "n": "9",
+    "x": 1025,
+    "y": 99,
+    "color": "#8e0846"
+  }
+}

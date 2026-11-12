@@ -1,0 +1,28 @@
+.page.nativeKbPage{padding:0!important;overflow:hidden}
+.nkb{position:relative;width:100%;height:100%;container-type:size;background:#fff}
+.nkb>.nkbCanvas{position:absolute;left:50%;top:calc(50% - var(--nkb-tool,0px)/2);transform:translate(-50%,-50%);width:min(100cqw,calc((100cqh - var(--nkb-tool,0px))*var(--ratio)));container-type:inline-size;background:var(--paper,#fdfcf8);color:#222;overflow:hidden}
+.nkbCanvas .nkbArt{position:absolute;display:block;object-fit:fill;max-width:none!important;max-height:none!important;margin:0!important;border:0!important;pointer-events:none;user-select:none}
+.nkbCanvas .nkbWord{position:absolute;white-space:nowrap;overflow:visible;font-family:'Palatino Linotype',Palatino,'Book Antiqua','Liberation Serif',Georgia,serif;display:block;margin:0;padding:0;box-sizing:border-box;touch-action:manipulation;cursor:pointer}
+.nkbCanvas .nkbGhost{color:transparent;font-size:1px}
+.nkbCanvas .nkbWord:focus-visible{outline:2px solid #b88124}
+.nkbCanvas .nkbField{position:absolute;box-sizing:border-box;margin:0!important;padding:0 2px!important;min-width:0!important;min-height:0!important;max-width:none!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;color:#173c62!important;font-family:Arial,sans-serif;line-height:1!important;accent-color:#26764c;z-index:3}
+.nkbCanvas input[type=text].nkbField:focus,.nkbCanvas select.nkbField:focus{background:#fffce9cc!important;outline:2px solid #26764c}
+.nkbCanvas input[type=radio].nkbField,.nkbCanvas input[type=checkbox].nkbField{appearance:none;-webkit-appearance:none;border-radius:50%!important;cursor:pointer;padding:0!important}
+.nkbCanvas input[type=checkbox].nkbField{border-radius:3px!important}
+.nkbCanvas input[type=radio].nkbField:checked,.nkbCanvas input[type=checkbox].nkbField:checked{background:radial-gradient(circle closest-side,#26764c 0 42%,transparent 48%)!important}
+.nkbCanvas .nkbField:focus-visible{outline:2px solid #26764c}
+.nkbCanvas .nkbField.ok{outline:2px solid #268250}.nkbCanvas .nkbField.bad{outline:2px solid #bd3838}
+.nkbCanvas .nkbListen{position:absolute;background:transparent;border:0;padding:0;margin:0;cursor:pointer;z-index:4;min-width:0;min-height:0}
+.nkbCanvas .nkbListen:focus-visible{outline:3px solid #2e91be}
+.nkbCanvas .nkbCheck{position:absolute;display:flex;gap:8px;align-items:center;z-index:6;font-size:1.9cqw}
+.nkbCanvas .nkbCheck button{font:inherit;padding:.2em .7em;min-height:0;border:1px solid #819c86;border-radius:4px;background:#fffff6;color:#28553c}
+.nkbCanvas .nkbCheck output{font:inherit;color:#28553c;background:#fffffa;padding:0 4px}
+.nkbAudio{position:absolute;left:0;right:0;bottom:0;display:flex;flex-wrap:wrap;gap:6px 12px;justify-content:center;padding:4px 8px;background:#fffdf4;font:12px Arial,sans-serif;color:#555;z-index:7;height:46px;box-sizing:border-box;overflow:auto}
+.nkbAudio label{display:flex;align-items:center;gap:6px}.nkbAudio audio{height:28px;max-width:180px}
+.nkbCanvas .nkbWord.nkbB{font-family:Arial,'Liberation Sans',Helvetica,sans-serif}
+.nkbCanvas .nkbLine{position:absolute;white-space:nowrap;width:max-content;font-family:'Palatino Linotype',Palatino,'Book Antiqua','Liberation Serif',Georgia,serif;margin:0;padding:0}.nkbCanvas .nkbLine.nkbB{font-family:Arial,'Liberation Sans',Helvetica,sans-serif;font-weight:700}.nkbCanvas .nkbLine .tapWord{cursor:pointer;touch-action:manipulation}
+.nkbCanvas .nkbLine.nkbSans:not(.nkbB){font-family:Arial,'Liberation Sans',Helvetica,sans-serif}
+.nkbCanvas input[type=text].nkbField,.nkbCanvas select.nkbField{border:1.5px solid #6f7b72!important;border-radius:3px!important;background:#fffef7b3!important}
+.nkbCanvas .nkbCompact{font-size:1.45cqw}
+
+.nkbCanvas .nkbLine.nkbSB{font-family:'Palatino Linotype',Palatino,'Book Antiqua','Liberation Serif',Georgia,serif;font-weight:700}
