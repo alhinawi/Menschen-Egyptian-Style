@@ -60,6 +60,12 @@ def build(p):
             rec['b']=1 if frac>0.34 else 0
             rec['r']=1;rec['pn']=panel
         words.append(rec)
+    _of=f'{ROOT}/src/native-kb11/overrides/p{p}.json'
+    if os.path.exists(_of):
+        for bx in json.load(open(_of)).get('erase',[]):
+            X0,Y0,X1,Y1=[int(v*S) for v in bx]
+            ring=np.concatenate([work[max(0,Y0-3):Y0,X0:X1].reshape(-1,3),work[Y1:Y1+3,X0:X1].reshape(-1,3)])
+            work[Y0:Y1,X0:X1]=np.median(ring,axis=0)
     # artwork components from erased copy
     paper=np.median(work.reshape(-1,3),axis=0)
     diff=np.abs(work-paper).sum(axis=2)
@@ -170,7 +176,7 @@ def apply_overrides(r,p):
         for b in r['blocks']:
             if hit(b,m):
                 b['x']+=m.get('dx',0);b['cy']+=m.get('dy',0);b['w']+=m.get('dw',0)
-                if 'f' in m.get('set',{}):b['f']=m['set']['f']
+                b.update(m.get('set',{}))
 if __name__=='__main__':
     sel=[int(x) for x in sys.argv[1:]] or PAGES
     os.makedirs(f'{ROOT}/src/native-kb11',exist_ok=True)
