@@ -42,3 +42,5 @@ table.grammar td{overflow-wrap:break-word}
 @media (max-width:550px){.abIntro{padding:20px 18px 50px 18px}}
 .introPhoto{display:block;width:auto;max-width:45%;max-height:240px;height:auto;object-fit:contain;margin:20px 0 0 90px;border-radius:6px}
 @media (max-width:550px){.introPhoto{margin-left:18px;max-width:70%}}
+.scanPage,.scanPage img{width:100%;height:100%}
+.scanPage img{object-fit:contain;background:#fff;display:block}

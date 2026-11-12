@@ -92,7 +92,7 @@ export function modulePages(slug: string): string[] {
   const mod = MODULES[slug];
   if (!mod) return [];
   const pages = mod.lessons.flatMap(l => l.pages).concat(mod.extras).map(String);
-  return slug === 'index' ? ['cover', ...pages] : pages;
+  return slug === 'index' || slug === 'ab1' ? ['cover', ...pages] : pages;
 }
 
 export function lessonUrl(entry: LessonEntry): string {
