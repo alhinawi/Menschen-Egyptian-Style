@@ -191,6 +191,8 @@ def apply_overrides(r,p):
             if m['y'][0]<=b['cy']<=m['y'][1] and m['x'][0]<=b['x']<=m['x'][1]:b.update(m['set'])
     for g,c in o.get('checks',{}).items():r['checks'][g]=c
     for f in o.get('addfields',[]):r['fields'].append(f)
+    for f in r['fields']:
+        if f['id'] in o.get('fieldadj',{}):f.update(o['fieldadj'][f['id']])
     if o.get('compact'):r['compact']=o['compact']
     for m in o.get('split',[]):
         for b in list(r['blocks']):
