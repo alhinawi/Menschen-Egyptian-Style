@@ -30,27 +30,26 @@ const server=http.createServer((req,res)=>{
  try{for(const width of [320,390,550]){
   const p=await browser.newPage({viewport:{width,height:900},isMobile:true,hasTouch:true});
   const errors=[];p.on('pageerror',e=>errors.push(e.message));
-  await p.goto('http://127.0.0.1:5192/l7-9.html#46');
+  await p.goto('http://127.0.0.1:5192/l7-9.html#56');
   await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
-  const h=p.locator('.hybridScan[data-scan-page="46"]');await h.waitFor();
-  assert.equal(await h.locator('input').count(),7);
+  // Page 46 is now native React. Page 56 remains the hybrid regression fixture.
+  const h=p.locator('.hybridScan[data-scan-page="56"]');await h.waitFor();
+  assert.equal(await h.locator('input').count(),6);
   const ratio=await h.locator('img').evaluate(i=>{const r=i.getBoundingClientRect();return Math.abs(r.width/r.height-i.naturalWidth/i.naturalHeight)});
   assert(ratio<0.001,'scan aspect ratio changed');
-  const radio=h.locator('[data-field-id=a2]');await radio.check({force:true});
-  await h.locator('[data-field-id=b2]').check({force:true});
-  for(const [id,value]of [['time3','nach'],['time4','vor'],['time5','nach']])await h.locator(`[data-field-id=${id}]`).fill(value);
+  for(const [id,value]of [['st1','4'],['st2','1'],['st3','2'],['st4','5'],['st5','3'],['st6','6']])await h.locator(`[data-field-id=${id}]`).fill(value);
   for(const button of await h.locator('.hybridCheck button').all()){await button.evaluate(e=>e.scrollIntoView({block:'center'}));await button.click();}
-  assert.deepEqual(await h.locator('output').allTextContents(),['✓ Richtig!','✓ Richtig!']);
-  await h.locator('[data-field-id=time3]').fill('vor');
-  await h.locator('.hybridCheck button').nth(1).evaluate(e=>e.scrollIntoView({block:'center'}));await h.locator('.hybridCheck button').nth(1).click();
-  assert.equal(await h.locator('output').nth(1).textContent(),'Noch einmal');
+  assert.deepEqual(await h.locator('output').allTextContents(),['✓ Richtig!']);
+  await h.locator('[data-field-id=st1]').fill('falsch');
+  await h.locator('.hybridCheck button').nth(0).evaluate(e=>e.scrollIntoView({block:'center'}));await h.locator('.hybridCheck button').nth(0).click();
+  assert.equal(await h.locator('output').nth(0).textContent(),'Noch einmal');
   await p.reload();await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
-  assert.equal(await h.locator('[data-field-id=time3]').inputValue(),'vor');assert(await h.locator('[data-field-id=a2]').isChecked());
-  await h.locator('.hybridAudio').evaluate(e=>e.scrollIntoView({block:'center'}));await h.locator('.hybridAudio').click();
-  await p.waitForFunction(()=>{const a=document.querySelector('.hybridScan[data-scan-page="46"] .hybridTools audio');return a&&!a.paused&&a.readyState>0});
-  assert.equal(await h.locator('.hybridTools audio').getAttribute('src'),'assets/kb-cd2-track06.mp3');
-  await h.locator('.hybridWord[data-word=Theater]').evaluate(e=>e.scrollIntoView({block:'center'}));await h.locator('.hybridWord[data-word=Theater]').click();
-  await p.waitForFunction(()=>document.body.innerText.includes('مسرح'));
+  assert.equal(await h.locator('[data-field-id=st1]').inputValue(),'falsch');
+  await h.locator('.hybridAudio').first().evaluate(e=>e.scrollIntoView({block:'center'}));await h.locator('.hybridAudio').first().click();
+  await p.waitForFunction(()=>{const a=document.querySelector('.hybridScan[data-scan-page="56"] .hybridTools audio');return a&&!a.paused&&a.readyState>0});
+  assert.equal(await h.locator('.hybridTools audio').getAttribute('src'),'assets/kb-cd2-track08.mp3');
+  await h.locator('.hybridWord[data-word=sehen]').first().evaluate(e=>e.scrollIntoView({block:'center'}));await h.locator('.hybridWord[data-word=sehen]').first().click();
+  await p.waitForFunction(()=>document.querySelector('.meaningPopup')?.open);
   assert.deepEqual(errors,[]);
   console.log(`${width}px: scan ratio, grading, wrong-answer feedback, saved answers, audio, translation passed`);
   await p.close();
