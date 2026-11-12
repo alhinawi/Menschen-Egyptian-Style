@@ -37,3 +37,13 @@
 .naCanvas .naLet{font-weight:bold;font-size:24px}
 .naCanvas .naNw{white-space:nowrap}
 .naCanvas .naD19{font-size:19px}
+.naCanvas .naTitle.naRB b{background:#c33523}
+.naCanvas.naNarrow .naText{font-size:17px}
+.naCanvas.naNarrow .naBold{font-size:17px}
+.naCanvas.naNarrow .naSmall{font-size:14px}
+.naCanvas.naNarrow .naTitle{font-size:17px}
+.naCanvas.naNarrow .naHeadline{font-size:26px;letter-spacing:2px}
+.naCanvas.naNarrow .naKB{font-size:10px}
+.naCanvas.naNarrow .naSide{font-size:9px}
+.naCanvas.naNarrow .naFooter{font-size:13px}
+.naCanvas.naNarrow .naHand{font-size:17px}

@@ -23,7 +23,39 @@ export function NativeAB12({page}:{page:string}){
  const hand=(x:number,y:number,w:number,t:string)=><div className="naText naHand" style={{left:x,top:y,width:w}}><Words text={t}/></div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
+ {page==='89'&&<>
+  {art('lesson-tab',738,18,62,75)}
+  {text(75,64,300,'LERNWORTSCHATZ','naHeadline')}
+  <div className="naHeadRule" style={{left:388,top:78,width:270}}/>
+  {title('1',78,116,540,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naRB naNw')}
+  {text(96,150,140,'Wetter','naBold')}
+  {text(105,173,140,'Wetter das')}
+  {([['Gewitter das, -',195],['Grad das, -e',213],['Nebel der',233],['Regen der',254],['Schnee der',272],['Sonne die, -n',293],['Sturm der, ¨e',312],['Wind der, -e',331],['Wolke die, -n',350]] as [string,number][]).map(([t,y],i)=>
+   <div key={i}>{text(105,y,140,t)}{field('89-1-w'+i,220,y+12,127,t+' übersetzen')}</div>)}
+  {([['regnen, hat',379],['geregnet',398],['schneien, hat',418],['geschneit',436],['scheinen, hat',457],['geschienen',476]] as [string,number][]).map(([t,y],i)=>
+   <div key={i}>{text(105,y,140,t)}{i%2===1&&field('89-1-v'+i,220,y+12,127,'Partizip übersetzen')}</div>)}
+  {([['kühl',506],['neblig',525],['sonnig',544],['warm',569],['windig',584]] as [string,number][]).map(([t,y],i)=>
+   <div key={i}>{text(105,y,140,t)}{field('89-1-a'+i,220,y+12,127,t+' übersetzen')}</div>)}
+  {text(396,152,220,'Himmelsrichtungen','naBold')}
+  {text(397,172,220,'Himmelsrichtung')}
+  {text(397,192,100,'die, -en')}
+  {field('89-1-h0',460,204,133,'Himmelsrichtung übersetzen')}
+  {([['Norden der',214],['Süden der',233],['Osten der',254],['Westen der',273]] as [string,number][]).map(([t,y],i)=>
+   <div key={i}>{text(396,y,100,t)}{field('89-1-h'+(i+1),460,y+12,133,t+' übersetzen')}</div>)}
+  {text(396,309,220,'Weitere wichtige Wörter','naBold')}
+  {([['Dach das, ¨er',331],['Frühjahr das, -e',350],['Glas das, ¨er',370],['Glück das',389],['Himmel der',409],['Laune die, -n',429],['Reiseführer der, -',447],['Traum der, ¨e',488]] as [string,number][]).map(([t,y],i)=>
+   <div key={i}>{text(396,y,110,t)}{field('89-1-x'+i,460,y+12,133,t+' übersetzen')}</div>)}
+  {art('tipp',433,545,136,42)}
+  {text(461,551,110,'Suchen Sie','naSmall')}
+  {text(461,569,130,'Wortfamilien.','naSmall')}
+  {art('handwriting',360,605,265,60)}
+  {art('strip',665,95,140,915)}
+  {title('2',78,686,540,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naRB naNw')}
+  {[733,752,772,792,811,831,850,869,889,908,928,947,967,986,1006,1025].map((y,i)=>field('89-2-'+i,102,y,525,'Notizzeile '+(i+1)))}
+  {text(598,1047,150,'neunundachtzig  |  89','naFooter')}
+  {art('modul-tab',722,1038,50,24)}
+ </>}
  {page==='30'&&<>
   {art('header',0,0,1072,102)}
   {kb(78,178,'KB 4')}
