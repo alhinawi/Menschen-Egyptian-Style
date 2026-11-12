@@ -104,6 +104,16 @@
     "man",
     "…?"
    ]
+  },
+  {
+   "x": 428,
+   "cy": 606,
+   "tol": 2,
+   "ws": [
+    "Straße",
+    "/",
+    "Hausnummer:"
+   ]
   }
  ],
  "erase": [
@@ -206,14 +216,62 @@
   [
    638,
    358,
-   795,
+   758,
    379
   ],
   [
    638,
    379,
-   795,
+   758,
    393
+  ],
+  [
+   460,
+   595,
+   474,
+   614
+  ],
+  [
+   205,
+   652,
+   224,
+   672
+  ],
+  [
+   258,
+   674,
+   268,
+   692
+  ],
+  [
+   222,
+   600,
+   231,
+   614
+  ],
+  [
+   215,
+   640,
+   224,
+   654
+  ],
+  [
+   472,
+   621,
+   482,
+   634
+  ],
+  [
+   464,
+   661,
+   474,
+   674
+  ],
+  [
+   442,
+   680,
+   454,
+   694
   ]
  ],
  "checks": {
@@ -241,6 +299,244 @@
    "ws": [
     "/"
    ]
+  }
+ ],
+ "adj": [
+  {
+   "x": 545,
+   "cy": 295.5,
+   "tol": 2,
+   "set": {
+    "f": 15.3,
+    "b": 0
+   }
+  },
+  {
+   "x": 185,
+   "cy": 648,
+   "tol": 2,
+   "set": {
+    "f": 12.4
+   }
+  },
+  {
+   "x": 185,
+   "cy": 668,
+   "tol": 2,
+   "set": {
+    "f": 12.4
+   }
+  },
+  {
+   "x": 428,
+   "cy": 686.5,
+   "tol": 2,
+   "set": {
+    "f": 12.4
+   }
+  },
+  {
+   "x": 428,
+   "cy": 666,
+   "tol": 2,
+   "set": {
+    "f": 12.4
+   }
+  }
+ ],
+ "addfields": [
+  {
+   "id": "t7b-bestellnummer",
+   "group": "t7b",
+   "kind": "text",
+   "label": "Bestellnummer",
+   "x": 206,
+   "y": 527,
+   "w": 100,
+   "h": 19
+  },
+  {
+   "id": "t7b-produktname",
+   "group": "t7b",
+   "kind": "text",
+   "label": "Produktname",
+   "x": 318,
+   "y": 527,
+   "w": 136,
+   "h": 19
+  },
+  {
+   "id": "t7b-farbe",
+   "group": "t7b",
+   "kind": "text",
+   "label": "Farbe",
+   "x": 465,
+   "y": 527,
+   "w": 62,
+   "h": 19
+  },
+  {
+   "id": "t7b-material",
+   "group": "t7b",
+   "kind": "text",
+   "label": "Material",
+   "x": 541,
+   "y": 527,
+   "w": 60,
+   "h": 19
+  },
+  {
+   "id": "t7b-menge",
+   "group": "t7b",
+   "kind": "text",
+   "label": "Menge",
+   "x": 611,
+   "y": 527,
+   "w": 72,
+   "h": 19
+  },
+  {
+   "id": "t7b-preis",
+   "group": "t7b",
+   "kind": "text",
+   "label": "Preis",
+   "x": 685,
+   "y": 527,
+   "w": 68,
+   "h": 19
+  },
+  {
+   "id": "t7b-frau",
+   "group": "t7b",
+   "kind": "checkbox",
+   "label": "Anrede Frau",
+   "x": 236,
+   "y": 595,
+   "w": 22,
+   "h": 18
+  },
+  {
+   "id": "t7b-herr",
+   "group": "t7b",
+   "kind": "checkbox",
+   "label": "Anrede Herr",
+   "x": 282,
+   "y": 595,
+   "w": 22,
+   "h": 18
+  },
+  {
+   "id": "t7b-vorname",
+   "group": "t7b",
+   "kind": "text",
+   "label": "Vorname",
+   "x": 241,
+   "y": 618,
+   "w": 172,
+   "h": 15
+  },
+  {
+   "id": "t7b-name",
+   "group": "t7b",
+   "kind": "text",
+   "label": "Name",
+   "x": 241,
+   "y": 638,
+   "w": 172,
+   "h": 15
+  },
+  {
+   "id": "t7b-email",
+   "group": "t7b",
+   "kind": "text",
+   "label": "E-Mail",
+   "x": 241,
+   "y": 657,
+   "w": 172,
+   "h": 15
+  },
+  {
+   "id": "t7b-gebtag",
+   "group": "t7b",
+   "kind": "text",
+   "label": "Geburtsdatum Tag",
+   "x": 268,
+   "y": 675,
+   "w": 23,
+   "h": 21,
+   "maxlen": 2
+  },
+  {
+   "id": "t7b-gebmonat",
+   "group": "t7b",
+   "kind": "text",
+   "label": "Geburtsdatum Monat",
+   "x": 302,
+   "y": 675,
+   "w": 22,
+   "h": 21,
+   "maxlen": 2
+  },
+  {
+   "id": "t7b-gebjahr",
+   "group": "t7b",
+   "kind": "text",
+   "label": "Geburtsdatum Jahr",
+   "x": 336,
+   "y": 675,
+   "w": 80,
+   "h": 21,
+   "maxlen": 4
+  },
+  {
+   "id": "t7b-strasse",
+   "group": "t7b",
+   "kind": "text",
+   "label": "Straße und Hausnummer",
+   "x": 548,
+   "y": 593,
+   "w": 196,
+   "h": 15
+  },
+  {
+   "id": "t7b-plzort",
+   "group": "t7b",
+   "kind": "text",
+   "label": "PLZ und Ort",
+   "x": 548,
+   "y": 616,
+   "w": 196,
+   "h": 15
+  },
+  {
+   "id": "t7b-land",
+   "group": "t7b",
+   "kind": "text",
+   "label": "Land",
+   "x": 548,
+   "y": 638,
+   "w": 196,
+   "h": 15
+  },
+  {
+   "id": "t7b-telefon",
+   "group": "t7b",
+   "kind": "text",
+   "label": "Telefon",
+   "x": 548,
+   "y": 658,
+   "w": 196,
+   "h": 15
+  },
+  {
+   "id": "t7b-fax",
+   "group": "t7b",
+   "kind": "text",
+   "label": "Fax",
+   "x": 548,
+   "y": 678,
+   "w": 196,
+   "h": 15
   }
  ]
 }
