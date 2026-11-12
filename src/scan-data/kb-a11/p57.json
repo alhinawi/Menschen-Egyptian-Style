@@ -2,8 +2,8 @@
   "book": "kb-a11",
   "page": 57,
   "image": "assets/kb-a11-p57.png",
-  "width": 1075,
-  "height": 1521,
+  "width": 1072,
+  "height": 1518,
   "words": [
     {
       "text": "Ich",
@@ -618,7 +618,9 @@
       "x": 258,
       "y": 1282,
       "w": 22,
-      "h": 22
+      "h": 22,
+      "name": "a",
+      "value": "a-flughafen"
     },
     {
       "id": "a-bahnhof",
@@ -629,7 +631,9 @@
       "x": 258,
       "y": 1319,
       "w": 22,
-      "h": 22
+      "h": 22,
+      "name": "a",
+      "value": "a-bahnhof"
     },
     {
       "id": "b-aus",
@@ -640,7 +644,9 @@
       "x": 533,
       "y": 1280,
       "w": 22,
-      "h": 22
+      "h": 22,
+      "name": "b",
+      "value": "b-aus"
     },
     {
       "id": "b-ein",
@@ -651,7 +657,9 @@
       "x": 533,
       "y": 1317,
       "w": 22,
-      "h": 22
+      "h": 22,
+      "name": "b",
+      "value": "b-ein"
     }
   ],
   "audio": [
@@ -687,7 +695,9 @@
     "notes": [
       "All printed words reviewed against the scan at 2x-8x: photo headline, both task instructions, caption \"Ein Kind singt.\", all options and the blue sidebar summary (Sprechen/Wortfelder/Grammatik, hyphenation kept as printed). Red task numerals, big photo and footer excluded per policy.",
       "Task 2 answers verified two ways: audio 2.10 transcript (station announcement \"Bitte nicht einsteigen. Dieser Zug endet hier.\") and the official Hueber key (a Am Bahnhof, b Er steigt aus).",
-      "Task 1 (sounds, open question) has no checkable fields. Audio 2.09 and 2.10 files verified playable with matching transcripts."
+      "Task 1 (sounds, open question) has no checkable fields. Audio 2.09 and 2.10 files verified playable with matching transcripts.",
+      "Activation gate corrected declared image size to actual tracked PNG 1072×1518. Raw pixel word/field coordinates inspected on the actual scan and retained.",
+      "Activation interaction gate added explicit radio names and option values. Each printed question now permits exactly one answer and selection/grading works; previous missing values made the radios unselectable."
     ]
   }
 }
