@@ -7,8 +7,7 @@
     "styles": [
       "book.css",
       "batch.css",
-      "batch-ab12.css",
-      "themes.css"
+      "batch-ab12.css"
     ],
     "initializers": [
       "glossary",
@@ -54,8 +53,7 @@
     "styles": [
       "book.css",
       "batch.css",
-      "batch-ab12.css",
-      "themes.css"
+      "batch-ab12.css"
     ],
     "initializers": [
       "glossary",
@@ -92,8 +90,7 @@
     "styles": [
       "book.css",
       "batch.css",
-      "ab-batch.css",
-      "themes.css"
+      "ab-batch.css"
     ],
     "initializers": [
       "glossary",
@@ -127,8 +124,7 @@
     "themes": true,
     "styles": [
       "book.css",
-      "ab-l7-9.css",
-      "themes.css"
+      "ab-l7-9.css"
     ],
     "initializers": [
       "glossary",
@@ -162,8 +158,7 @@
     "themes": true,
     "styles": [
       "book.css",
-      "batch.css",
-      "themes.css"
+      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -187,8 +182,7 @@
     "styles": [
       "book.css",
       "batch.css",
-      "ab2.css",
-      "themes.css"
+      "ab2.css"
     ],
     "initializers": [
       "glossary",
@@ -212,8 +206,7 @@
     "styles": [
       "book.css",
       "batch.css",
-      "ab3.css",
-      "themes.css"
+      "ab3.css"
     ],
     "initializers": [
       "glossary",
@@ -236,8 +229,7 @@
     "themes": true,
     "styles": [
       "book.css",
-      "ab46.css",
-      "themes.css"
+      "ab46.css"
     ],
     "initializers": [
       "glossary",
@@ -262,8 +254,7 @@
     "themes": true,
     "styles": [
       "book.css",
-      "batch.css",
-      "themes.css"
+      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -286,8 +277,7 @@
     "themes": true,
     "styles": [
       "book.css",
-      "batch.css",
-      "themes.css"
+      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -311,8 +301,7 @@
     "styles": [
       "book.css",
       "batch.css",
-      "kb-a12-l13-16.css",
-      "themes.css"
+      "kb-a12-l13-16.css"
     ],
     "initializers": [
       "glossary",
@@ -335,8 +324,7 @@
     "styles": [
       "book.css",
       "batch.css",
-      "kb-a12-l17-20.css",
-      "themes.css"
+      "kb-a12-l17-20.css"
     ],
     "initializers": [
       "glossary",
@@ -370,8 +358,7 @@
     "styles": [
       "book.css",
       "batch.css",
-      "batch-l10-12.css",
-      "themes.css"
+      "batch-l10-12.css"
     ],
     "initializers": [
       "glossary",
@@ -396,8 +383,7 @@
     "themes": true,
     "styles": [
       "book.css",
-      "batch.css",
-      "themes.css"
+      "batch.css"
     ],
     "initializers": [
       "glossary",
@@ -423,8 +409,7 @@
     "themes": true,
     "styles": [
       "book.css",
-      "batch-l21-24.css",
-      "themes.css"
+      "batch-l21-24.css"
     ],
     "initializers": [
       "glossary",
@@ -454,8 +439,7 @@
     "styles": [
       "book.css",
       "batch.css",
-      "l4-6.css",
-      "themes.css"
+      "l4-6.css"
     ],
     "initializers": [
       "glossary",
@@ -478,8 +462,7 @@
     "styles": [
       "book.css",
       "batch.css",
-      "batch79.css",
-      "themes.css"
+      "batch79.css"
     ],
     "initializers": [
       "glossary",
