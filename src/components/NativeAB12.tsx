@@ -63,15 +63,16 @@ export function NativeAB12({page}:{page:string}){
  const rules=data.lines.filter(l=>!removedLines.some(r=>Math.abs(r.x-l.x)<12&&Math.abs(r.y-l.y)<12&&Math.abs(r.w-l.w)<12&&Math.abs(r.h-l.h)<12));
  const wordSpan=(w:W,keyPref:string)=>{
   const i=scan.words.indexOf(w);
-  const st=i>=0?data.wordStyle[String(i)]||{}:{};
+  const st=i>=0?data.wordStyle[String(i)]||{}:(w as W&{style?:Record<string,string>}).style||{};
   const tap=/\p{L}/u.test(w.text);
-  return <span key={keyPref} className={tap?'tapWord':undefined} role={tap?'button':undefined} tabIndex={tap?0:undefined} data-word={tap?cleanWord(w.text):undefined} data-phrase={w.phrase||w.text} aria-label={tap?`${w.text} · Bedeutung`:undefined} style={{color:st.c,fontWeight:st.b?700:undefined}}>{w.text}</span>;
+  const cls=(tap?'tapWord':'')+(st.h?' naHand':'');
+  return <span key={keyPref} className={cls||undefined} role={tap?'button':undefined} tabIndex={tap?0:undefined} data-word={tap?cleanWord(w.text):undefined} data-phrase={w.phrase||w.text} aria-label={tap?`${w.text} · Bedeutung`:undefined} style={{color:st.c,fontWeight:st.b?700:undefined}}>{w.text}</span>;
  };
  return <div className="nativeAB12" data-native-book="ab-a12" data-native-page={page}>
   <div className="naCanvas" style={{aspectRatio:`${W}/${H}`}}>
    {data.rects.map((r,i)=><div key={'r'+i} className="naRect" style={{...bx(r),background:r.c}}/>)}
    {data.crops.map((c,i)=><img key={'c'+i} className="naArt" src={c.src} alt={c.alt} draggable={false} style={bx(c)}/>)}
-   {rules.map((l,i)=><div key={'l'+i} className="naLine" style={{...bx(l),background:l.c||'#7a7a7a'}}/>)}
+   {rules.map((l,i)=><div key={'l'+i} className="naLine" style={{...bx(l),height:Math.min(l.h,3)/H*100+'%',background:l.c||'#d3d7d3'}}/>)}
    {lines.map((L,li)=>{
     // cut the line into fragments wherever a field sits between two words
     const flds=scan.fields.filter(f=>{const c=f.y+f.h/2;return c>=L.top-2&&c<L.bottom+2});
@@ -100,14 +101,24 @@ export function NativeAB12({page}:{page:string}){
     const answered=scan.fields.filter(f=>f.group===g.id&&f.answer!==undefined);
     const done=answered.some(f=>results[f.id]!==undefined);
     const allRight=answered.every(f=>results[f.id]);
-    let box=data.checks[g.id];
+    const gy0=Math.min(...answered.map(f=>f.y))-30,gy1=Math.max(...answered.map(f=>f.y+f.h));
+    const cwords=(scan.words.filter((_,i)=>!drop.has(i)) as W[]).concat((data.wordsAdd||[]) as W[]);
+    const near=cwords.filter(w=>w.y<gy1+15&&w.y+w.h>gy0);
+    const bottom=Math.max(gy1,...near.map(w=>w.y+w.h));
+    const fx=Math.min(...answered.map(f=>f.x));
+    const lastX=Math.max(...answered.map(f=>f.x+f.w));
+    const hits=(b:{x:number;y:number;w:number;h:number})=>cwords.some(w=>w.x<b.x+b.w-6&&w.x+w.w>b.x+6&&w.y<b.y+b.h&&w.y+w.h>b.y);
+    const cands=[
+     {x:Math.min(W-170,lastX+14),y:Math.max(4,gy1-40)},
+     {x:Math.min(fx,W-170),y:bottom+6},
+     {x:W-170,y:bottom+6},
+    ];
+    let box:{x:number;y:number;w:number;h:number}|null=null;
+    for(const c of cands){const b={...c,w:150,h:40};if(!hits(b)){box=b;break}}
     if(!box){
-     const gy0=Math.min(...answered.map(f=>f.y))-30,gy1=Math.max(...answered.map(f=>f.y+f.h));
-     const near=scan.words.filter((w,i)=>!drop.has(i)&&w.y<gy1+40&&w.y+w.h>gy0);
-     const bottom=Math.max(gy1,...near.map(w=>w.y+w.h));
-     box={x:Math.min(Math.min(...answered.map(f=>f.x)),W-170),y:bottom+8,w:150,h:40};
+     box={x:Math.min(fx,W-170),y:bottom+6,w:150,h:40};
      for(let t=0;t<12;t++){
-      const hit=scan.words.find((w,i)=>!drop.has(i)&&w.x<box.x+box.w&&w.x+w.w>box.x&&w.y<box.y+box.h&&w.y+w.h>box.y);
+      const hit=cwords.find(w=>w.x<box!.x+box!.w&&w.x+w.w>box!.x&&w.y<box!.y+box!.h&&w.y+w.h>box!.y);
       if(!hit)break;
       box={...box,y:hit.y+hit.h+6};
      }
