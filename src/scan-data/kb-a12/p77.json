@@ -1,0 +1,634 @@
+{
+ "book": "kb-a12",
+ "page": 77,
+ "image": "assets/kb-a12-p77.png",
+ "width": 754,
+ "height": 1025,
+ "words": [
+  {
+   "text": "AKTIONSSEITEN",
+   "x": 441,
+   "y": 56,
+   "w": 228,
+   "h": 21
+  },
+  {
+   "text": "Urlaubsorte",
+   "x": 68,
+   "y": 133,
+   "w": 82,
+   "h": 12
+  },
+  {
+   "text": "bewerten",
+   "x": 155,
+   "y": 133,
+   "w": 65,
+   "h": 12
+  },
+  {
+   "text": "Wem",
+   "x": 238,
+   "y": 135,
+   "w": 33,
+   "h": 10
+  },
+  {
+   "text": "gefällt",
+   "x": 276,
+   "y": 133,
+   "w": 46,
+   "h": 17
+  },
+  {
+   "text": "was?",
+   "x": 326,
+   "y": 135,
+   "w": 34,
+   "h": 11
+  },
+  {
+   "text": "Fragen",
+   "x": 68,
+   "y": 153,
+   "w": 40,
+   "h": 15
+  },
+  {
+   "text": "Sie",
+   "x": 112,
+   "y": 153,
+   "w": 18,
+   "h": 11
+  },
+  {
+   "text": "Ihre",
+   "x": 135,
+   "y": 152,
+   "w": 24,
+   "h": 12
+  },
+  {
+   "text": "Partnerin",
+   "x": 164,
+   "y": 153,
+   "w": 56,
+   "h": 11
+  },
+  {
+   "text": "Ihren",
+   "x": 238,
+   "y": 153,
+   "w": 30,
+   "h": 11
+  },
+  {
+   "text": "Partner",
+   "x": 274,
+   "y": 154,
+   "w": 45,
+   "h": 10
+  },
+  {
+   "text": "und",
+   "x": 324,
+   "y": 153,
+   "w": 22,
+   "h": 11
+  },
+  {
+   "text": "ergänzen",
+   "x": 351,
+   "y": 157,
+   "w": 55,
+   "h": 7
+  },
+  {
+   "text": "Sie",
+   "x": 411,
+   "y": 154,
+   "w": 18,
+   "h": 10
+  },
+  {
+   "text": "die",
+   "x": 433,
+   "y": 153,
+   "w": 19,
+   "h": 11
+  },
+  {
+   "text": "fehlenden",
+   "x": 457,
+   "y": 153,
+   "w": 60,
+   "h": 11
+  },
+  {
+   "text": "Informationen.",
+   "x": 523,
+   "y": 153,
+   "w": 92,
+   "h": 11
+  },
+  {
+   "text": "Wo",
+   "x": 113,
+   "y": 181,
+   "w": 19,
+   "h": 10
+  },
+  {
+   "text": "macht",
+   "x": 136,
+   "y": 180,
+   "w": 38,
+   "h": 11
+  },
+  {
+   "text": "Peter",
+   "x": 180,
+   "y": 181,
+   "w": 31,
+   "h": 10
+  },
+  {
+   "text": "oft",
+   "x": 215,
+   "y": 180,
+   "w": 17,
+   "h": 11
+  },
+  {
+   "text": "Urlaub?",
+   "x": 237,
+   "y": 180,
+   "w": 48,
+   "h": 11
+  },
+  {
+   "text": "In",
+   "x": 114,
+   "y": 199,
+   "w": 12,
+   "h": 10
+  },
+  {
+   "text": "Frankreich.",
+   "x": 132,
+   "y": 198,
+   "w": 71,
+   "h": 11
+  },
+  {
+   "text": "m",
+   "x": 96,
+   "y": 220,
+   "w": 8,
+   "h": 7
+  },
+  {
+   "text": "Was",
+   "x": 113,
+   "y": 218,
+   "w": 24,
+   "h": 9
+  },
+  {
+   "text": "gefällt",
+   "x": 141,
+   "y": 216,
+   "w": 40,
+   "h": 15
+  },
+  {
+   "text": "ihm",
+   "x": 185,
+   "y": 216,
+   "w": 24,
+   "h": 11
+  },
+  {
+   "text": "in",
+   "x": 214,
+   "y": 217,
+   "w": 13,
+   "h": 10
+  },
+  {
+   "text": "Frankreich",
+   "x": 232,
+   "y": 217,
+   "w": 68,
+   "h": 11
+  },
+  {
+   "text": "besonders?",
+   "x": 304,
+   "y": 217,
+   "w": 68,
+   "h": 11
+  },
+  {
+   "text": "Ihm",
+   "x": 114,
+   "y": 235,
+   "w": 24,
+   "h": 10
+  },
+  {
+   "text": "gefallen",
+   "x": 142,
+   "y": 234,
+   "w": 50,
+   "h": 16
+  },
+  {
+   "text": "die",
+   "x": 197,
+   "y": 235,
+   "w": 18,
+   "h": 11
+  },
+  {
+   "text": "Schlösser",
+   "x": 220,
+   "y": 235,
+   "w": 57,
+   "h": 11
+  },
+  {
+   "text": "besonders",
+   "x": 281,
+   "y": 235,
+   "w": 61,
+   "h": 11
+  },
+  {
+   "text": "gut.",
+   "x": 346,
+   "y": 238,
+   "w": 24,
+   "h": 12
+  },
+  {
+   "text": "Peter",
+   "x": 66,
+   "y": 390,
+   "w": 33,
+   "h": 30
+  },
+  {
+   "text": "Frankreich",
+   "x": 236,
+   "y": 391,
+   "w": 66,
+   "h": 29
+  },
+  {
+   "text": "die",
+   "x": 460,
+   "y": 401,
+   "w": 16,
+   "h": 10
+  },
+  {
+   "text": "Schlösser",
+   "x": 480,
+   "y": 401,
+   "w": 52,
+   "h": 10
+  },
+  {
+   "text": "Saskia",
+   "x": 63,
+   "y": 428,
+   "w": 44,
+   "h": 29
+  },
+  {
+   "text": "Schweiz",
+   "x": 242,
+   "y": 437,
+   "w": 43,
+   "h": 10
+  },
+  {
+   "text": "Familie",
+   "x": 73,
+   "y": 474,
+   "w": 41,
+   "h": 10
+  },
+  {
+   "text": "Müller",
+   "x": 119,
+   "y": 474,
+   "w": 37,
+   "h": 10
+  },
+  {
+   "text": "Italien",
+   "x": 235,
+   "y": 465,
+   "w": 44,
+   "h": 29
+  },
+  {
+   "text": "die",
+   "x": 460,
+   "y": 475,
+   "w": 16,
+   "h": 10
+  },
+  {
+   "text": "Märkte",
+   "x": 481,
+   "y": 474,
+   "w": 39,
+   "h": 11
+  },
+  {
+   "text": "Frau",
+   "x": 73,
+   "y": 512,
+   "w": 24,
+   "h": 9
+  },
+  {
+   "text": "Neumann",
+   "x": 102,
+   "y": 512,
+   "w": 54,
+   "h": 9
+  },
+  {
+   "text": "Herr",
+   "x": 73,
+   "y": 549,
+   "w": 25,
+   "h": 9
+  },
+  {
+   "text": "Hansen",
+   "x": 102,
+   "y": 549,
+   "w": 41,
+   "h": 9
+  },
+  {
+   "text": "Wien",
+   "x": 231,
+   "y": 539,
+   "w": 39,
+   "h": 28
+  },
+  {
+   "text": "der",
+   "x": 460,
+   "y": 549,
+   "w": 17,
+   "h": 9
+  },
+  {
+   "text": "Dom",
+   "x": 482,
+   "y": 550,
+   "w": 24,
+   "h": 8
+  },
+  {
+   "text": "Silvia",
+   "x": 72,
+   "y": 585,
+   "w": 31,
+   "h": 10
+  },
+  {
+   "text": "und",
+   "x": 108,
+   "y": 585,
+   "w": 20,
+   "h": 10
+  },
+  {
+   "text": "Andre",
+   "x": 133,
+   "y": 585,
+   "w": 33,
+   "h": 10
+  },
+  {
+   "text": "Len",
+   "x": 64,
+   "y": 613,
+   "w": 28,
+   "h": 28
+  },
+  {
+   "text": "Athen",
+   "x": 233,
+   "y": 613,
+   "w": 42,
+   "h": 28
+  },
+  {
+   "text": "die",
+   "x": 460,
+   "y": 613,
+   "w": 15,
+   "h": 28
+  },
+  {
+   "text": "Cafös",
+   "x": 480,
+   "y": 613,
+   "w": 28,
+   "h": 28
+  },
+  {
+   "text": "Anna",
+   "x": 72,
+   "y": 660,
+   "w": 29,
+   "h": 9
+  },
+  {
+   "text": "Sie",
+   "x": 72,
+   "y": 697,
+   "w": 16,
+   "h": 9
+  },
+  {
+   "text": "Ihre",
+   "x": 73,
+   "y": 733,
+   "w": 22,
+   "h": 9
+  },
+  {
+   "text": "Partnerin",
+   "x": 100,
+   "y": 733,
+   "w": 52,
+   "h": 9
+  },
+  {
+   "text": "Ihr",
+   "x": 166,
+   "y": 733,
+   "w": 17,
+   "h": 9
+  },
+  {
+   "text": "Partner",
+   "x": 188,
+   "y": 734,
+   "w": 41,
+   "h": 8
+  },
+  {
+   "text": "siebenundsiebzig",
+   "x": 577,
+   "y": 983,
+   "w": 95,
+   "h": 14
+  }
+ ],
+ "fields": [
+  {
+   "id": "saskia",
+   "group": "15-5c",
+   "kind": "text",
+   "label": "saskia",
+   "x": 461,
+   "y": 428,
+   "w": 205,
+   "h": 24,
+   "answer": "die Berge|Berge"
+  },
+  {
+   "id": "neumann-ort",
+   "group": "15-5c",
+   "kind": "text",
+   "label": "neumann-ort",
+   "x": 242,
+   "y": 502,
+   "w": 209,
+   "h": 24,
+   "answer": "Paris"
+  },
+  {
+   "id": "neumann-was",
+   "group": "15-5c",
+   "kind": "text",
+   "label": "neumann-was",
+   "x": 461,
+   "y": 502,
+   "w": 205,
+   "h": 24,
+   "answer": "die Geschäfte|Geschäfte"
+  },
+  {
+   "id": "silvia-ort",
+   "group": "15-5c",
+   "kind": "text",
+   "label": "silvia-ort",
+   "x": 242,
+   "y": 577,
+   "w": 209,
+   "h": 24,
+   "answer": "Schweden"
+  },
+  {
+   "id": "silvia-was",
+   "group": "15-5c",
+   "kind": "text",
+   "label": "silvia-was",
+   "x": 461,
+   "y": 577,
+   "w": 205,
+   "h": 24,
+   "answer": "das Meer|Meer"
+  },
+  {
+   "id": "anna-ort",
+   "group": "15-5c",
+   "kind": "text",
+   "label": "anna-ort",
+   "x": 242,
+   "y": 653,
+   "w": 209,
+   "h": 24,
+   "answer": "Kanada"
+  },
+  {
+   "id": "anna-was",
+   "group": "15-5c",
+   "kind": "text",
+   "label": "anna-was",
+   "x": 461,
+   "y": 653,
+   "w": 205,
+   "h": 24,
+   "answer": "die Menschen|Menschen"
+  },
+  {
+   "id": "sie-ort",
+   "group": "15-5c",
+   "kind": "text",
+   "label": "sie · ort",
+   "x": 242,
+   "y": 691,
+   "w": 205,
+   "h": 23
+  },
+  {
+   "id": "sie-was",
+   "group": "15-5c",
+   "kind": "text",
+   "label": "sie · was",
+   "x": 461,
+   "y": 691,
+   "w": 205,
+   "h": 23
+  },
+  {
+   "id": "partner-ort",
+   "group": "15-5c",
+   "kind": "text",
+   "label": "partner · ort",
+   "x": 242,
+   "y": 729,
+   "w": 205,
+   "h": 23
+  },
+  {
+   "id": "partner-was",
+   "group": "15-5c",
+   "kind": "text",
+   "label": "partner · was",
+   "x": 461,
+   "y": 729,
+   "w": 205,
+   "h": 23
+  }
+ ],
+ "audio": [],
+ "groups": [
+  {
+   "id": "15-5c",
+   "label": "L15 · Urlaubsorte (Partner B)"
+  }
+ ],
+ "review": {
+  "status": "partial",
+  "verifiedWords": 17,
+  "totalWords": 70,
+  "notes": [
+   "Interactive fields checked against the original printed scan. Fixed answers use Hueber 2017 A1 key or the complementary printed partner table as specified below. The filtered OCR word layer still needs complete proofreading; only manually read exercise headings count as verified.",
+   "Fixed missing information is verified from complementary Partner A table on printed p73. The handwritten Schweiz example is preserved."
+  ]
+ }
+}
