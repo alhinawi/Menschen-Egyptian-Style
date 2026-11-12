@@ -1,3 +1,4 @@
+import {NativePage} from './NativePage';
 import {NativePilot} from './NativePilot';
 import {NativeKB12} from '../native-kb12/NativeKB12';
 import {NativeAB11} from '../native-ab11/NativeAB11';
@@ -36,6 +37,7 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   if (typeof node === 'string') return node;
   const [tag, attrs, children] = node;
   const props: Props = {key};
+  if(tag === 'NativePage')return createElement(NativePage,{key,book:attrs.book,page:attrs.page});
   if(tag === 'NativePilot')return createElement(NativePilot,{key,page:attrs.page});
   if(tag === 'NativeKB12')return createElement(NativeKB12,{key,page:attrs.page});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['6','7','8','9','10','11'].includes(String(attrs.page)))return createElement(NativeAB11,{key,page:String(attrs.page)});
