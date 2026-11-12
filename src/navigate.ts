@@ -81,3 +81,27 @@ export async function navigateLesson(slug: string, token?: string, opts: {replac
   if (handler) return handler(slug, token, opts);
   location.assign(lessonUrl(slug, token));
 }
+
+/** Per-route document meta, applied on boot and on in-app navigation. */
+import routeMeta from './route-meta.json';
+type RouteMeta = {title: string; ogTitle: string; description: string; ogImage: string};
+const metas = routeMeta as unknown as Record<string, RouteMeta>;
+export function applyRouteMeta(file: string): void {
+  const m = metas[file] ?? metas['index.html'];
+  if (!m) return;
+  const url = 'https://almany.vercel.app/' + (file === 'index.html' ? '' : file);
+  const image = 'https://almany.vercel.app/' + m.ogImage;
+  document.title = m.title;
+  const set = (selector: string, value: string) => {
+    document.head.querySelector(selector)?.setAttribute('content', value);
+  };
+  set('meta[name="description"]', m.description);
+  set('meta[property="og:title"]', m.ogTitle);
+  set('meta[property="og:description"]', m.description);
+  set('meta[property="og:url"]', url);
+  set('meta[property="og:image"]', image);
+  set('meta[name="twitter:title"]', m.ogTitle);
+  set('meta[name="twitter:description"]', m.description);
+  set('meta[name="twitter:image"]', image);
+  document.head.querySelector('link[rel="canonical"]')?.setAttribute('href', url);
+}
