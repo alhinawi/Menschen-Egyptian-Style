@@ -1,0 +1,34 @@
+const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=require('node:fs'),{spawn}=require('node:child_process');
+const server=spawn(process.execPath,['node_modules/vite/bin/vite.js','--host','127.0.0.1','--port','5190'],{stdio:'inherit'});
+const source=fs.readFileSync('src/native-ab11/NativeAB11.tsx','utf8');
+const sections=source.split(/ \{page==='(\d+)'&&<>/);const specs={};
+for(let i=1;i<sections.length;i+=2){specs[sections[i]]=[...sections[i+1].matchAll(/check\('([^']+)',\d+,\d+,(\{[^}]+\})\)/g)].map(m=>({id:m[1],answers:Function('return ('+m[2]+')')()}))}
+(async()=>{let b;try{for(let i=0;i<60;i++){try{if((await fetch('http://127.0.0.1:5190')).ok)break}catch{}await new Promise(r=>setTimeout(r,200))}b=await chromium.launch({executablePath:'/usr/bin/google-chrome-stable',args:['--no-sandbox']});
+for(const width of [320,390])for(const n of [6,7,8,9,10,11]){
+ const p=await b.newPage({viewport:{width,height:900},isMobile:true,hasTouch:true});p.setDefaultTimeout(5000);const errors=[];p.on('pageerror',e=>errors.push(e.message));await p.goto(`http://127.0.0.1:5190/ab1.html#${n}`);await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');const h=p.locator(`[data-native-ab11-page="${n}"]`);
+ assert.equal(await h.locator('select').count(),0);assert(await p.locator('#originalLink').count());
+ for(const task of specs[n]){
+  for(const [id,answer]of Object.entries(task.answers)){
+   const value=answer.split('|')[0];const f=h.locator(`[data-native-field="${id}"]`);
+   if(await f.count())await f.fill(value);
+   else if(id.startsWith('3-')&&n===6){const left=['Wie','Ich heiße','Woher','Ich komme','Wer','Ich'][Number(id.slice(2))],right=['bin Pedro.','kommst du?','aus der Schweiz.','heißt du?','bist du?','Sandra.'][Number(value)];await h.locator(`[aria-label="3 links ${String.fromCharCode(97+Number(id.slice(2)))} ${left}"]`).click();await h.locator(`[aria-label="3 rechts ${right}"]`).click()}
+   else if(id.startsWith('15-mark-'))await h.locator(`[aria-label="15 markieren ${id.slice(8)}"]`).click();
+   else if(id.startsWith('au')){const a=h.locator(`[data-native-arrow="${id}"]`);await a.click();if(value==='up')await a.click()}
+   else{const radios=h.locator(`input[name="native-ab11-${n}-${id}"]`);const labels=await radios.evaluateAll(es=>es.map(e=>e.getAttribute('aria-label')));const label=labels.find(l=>l.endsWith(' '+value)||l.toLowerCase().endsWith(' '+({oesterreich:'Österreich',sehrgut:'Sehr gut',esgeht:'Es geht'}[value]||value).toLowerCase()));assert(label,`${n}/${id}/${value}: no matching radio`);await h.locator(`input[name="native-ab11-${n}-${id}"][aria-label="${label}"]`).check()}
+  }
+  const check=h.locator(`[data-native-task="${task.id}"]`);await check.locator('button').click();assert.equal(await check.locator('output').textContent(),'✓ Richtig!',`${n}/${task.id}: correct answer not accepted`);
+  const editable=Object.keys(task.answers).find(id=>!id.startsWith('15-mark-'));
+  const f=h.locator(`[data-native-field="${editable}"]`);if(await f.count()){await f.fill('falsch');await check.locator('button').click();assert.equal(await check.locator('output').textContent(),'Noch einmal');await f.fill(task.answers[editable].split('|')[0]);await check.locator('button').click()}
+ }
+ if(n===10){for(const [i,s]of ['Guten Morgen','Guten Abend','Gute Nacht','Auf Wiedersehen'].entries())await h.locator(`[data-native-field="1-g${i+1}"]`).fill(s);await h.locator('[data-native-task="1"] button').click();assert.equal(await h.locator('[data-native-task="1"] output').textContent(),'✓ Richtig!');await h.locator('[data-native-field="1-g2"]').fill('Guten Morgen');await h.locator('[data-native-task="1"] button').click();assert.equal(await h.locator('[data-native-task="1"] output').textContent(),'Noch einmal');await h.locator('[data-native-field="1-g2"]').fill('Guten Abend');
+  const pairs=[['Sind Sie Frau Rode?','Nein, mein Name ist Koch.'],['Wie geht\'s?','Sehr gut. Und dir?'],['Ich komme aus Italien, und du?','Aus der Türkei.'],['Hallo, ich heiße Oborowski.','Wie bitte? Obolanski?']];for(const [i,pair]of pairs.entries())for(const [j,s]of pair.entries())await h.locator(`[data-native-field="5-${i+2}${j?'b':'a'}"]`).fill(s);await h.locator('[data-native-task="5"] button').click();assert.equal(await h.locator('[data-native-task="5"] output').textContent(),'✓ Richtig!')
+ }
+ if(n===8){const f=h.locator('[data-native-field="10-du-kommen"]');await f.focus();await p.keyboard.press('Home');for(let i=0;i<4;i++)await p.keyboard.press('ArrowRight');await p.keyboard.down('Shift');await p.keyboard.press('ArrowRight');await p.keyboard.press('ArrowRight');await p.keyboard.up('Shift');await f.blur();assert((await f.getAttribute('style')).includes('#ffea54'),'selected verb ending must stay highlighted')}
+ if(n===11){assert.equal(await h.locator('.nabCheck').count(),0);await h.locator('[data-native-field="wort-l0"]').fill('أهلا');await h.locator('[data-native-field="eigene-woerter"]').fill('Meine eigenen Wörter');await p.reload();await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');assert.equal(await h.locator('[data-native-field="wort-l0"]').inputValue(),'أهلا');assert.equal(await h.locator('[data-native-field="eigene-woerter"]').inputValue(),'Meine eigenen Wörter')}
+ for(const a of await h.locator('.nabListen').all()){await a.click();await p.waitForFunction(n=>{const a=document.querySelector(`[data-native-ab11-page="${n}"] .nabPlayer`);return a&&!a.paused&&a.readyState>0},n);assert((await h.locator('.nabPlayer').getAttribute('src')).startsWith('assets/ab-cd1-track'));await h.locator('.nabPlayer').evaluate(a=>a.pause())}
+ if(width===390)await h.screenshot({path:`/downloads/ab11-filled-${n}-390.png`});
+ const collisions=await h.evaluate(h=>{const out=[];for(const f of h.querySelectorAll('.nabInput')){const a=f.getBoundingClientRect();for(const w of h.querySelectorAll('.nabText .tapWord')){const b=w.getBoundingClientRect();if(Math.min(a.right,b.right)-Math.max(a.left,b.left)>1&&Math.min(a.bottom,b.bottom)-Math.max(a.top,b.top)>2)out.push([f.getAttribute('data-native-field'),w.textContent])}}return out});assert.deepEqual(collisions,[],`${n}: text swallowed by a field`);
+ const overflow=await h.evaluate(h=>{const c=h.querySelector('.nabCanvas');return [...c.querySelectorAll('input,textarea,.nabArt,.nabCheck,.nabArrow,.nabOption')].filter(e=>e.offsetTop+e.offsetHeight>1521||e.offsetLeft+e.offsetWidth>1075).map(e=>e.outerHTML.slice(0,120))});assert.deepEqual(overflow,[]);
+ assert.deepEqual(errors,[]);console.log(width,n,`${specs[n].length+(n===10?2:0)} closed tasks: normal clicks, correct/wrong feedback, no scan-primary, no clipped fields; all original audio playable`);await p.close();
+}
+}finally{if(b)await b.close();server.kill()}})().catch(e=>{console.error(e);process.exitCode=1});
