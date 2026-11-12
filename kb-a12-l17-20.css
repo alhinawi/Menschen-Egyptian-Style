@@ -46,3 +46,6 @@
 .p37 .magazineGrid>img{object-fit:contain}
 /* Keep the free-writing field fully on the printed opener after integration. */
 .p29 .batchHero{height:750px;object-fit:contain}
+.notesLines.filmGaps input{width:110px}
+.filmGaps label{display:block;margin:5px 0;font:17px/1.5 Georgia}
+.filmGaps input{display:inline-block;width:110px;margin:0 2px}
