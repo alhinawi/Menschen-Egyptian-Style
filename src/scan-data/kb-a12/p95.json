@@ -1,0 +1,657 @@
+{
+ "book": "kb-a12",
+ "page": 95,
+ "image": "assets/kb-a12-p95.png",
+ "width": 1473,
+ "height": 2000,
+ "words": [
+  {
+   "text": "Seite",
+   "x": 132,
+   "y": 213,
+   "w": 47,
+   "h": 16
+  },
+  {
+   "text": "Reihe",
+   "x": 239,
+   "y": 211,
+   "w": 53,
+   "h": 18
+  },
+  {
+   "text": "von",
+   "x": 298,
+   "y": 217,
+   "w": 36,
+   "h": 11
+  },
+  {
+   "text": "links",
+   "x": 341,
+   "y": 211,
+   "w": 47,
+   "h": 18
+  },
+  {
+   "text": "iStockphoto/BenGoode;",
+   "x": 419,
+   "y": 210,
+   "w": 226,
+   "h": 25
+  },
+  {
+   "text": "fotolia/Composer;",
+   "x": 677,
+   "y": 210,
+   "w": 173,
+   "h": 24
+  },
+  {
+   "text": "iStockphoto/Inga",
+   "x": 882,
+   "y": 210,
+   "w": 167,
+   "h": 23
+  },
+  {
+   "text": "Nielsen;",
+   "x": 1057,
+   "y": 209,
+   "w": 79,
+   "h": 20
+  },
+  {
+   "text": "Reihe",
+   "x": 1167,
+   "y": 209,
+   "w": 53,
+   "h": 18
+  },
+  {
+   "text": "von",
+   "x": 1227,
+   "y": 214,
+   "w": 36,
+   "h": 12
+  },
+  {
+   "text": "links",
+   "x": 147,
+   "y": 241,
+   "w": 48,
+   "h": 17
+  },
+  {
+   "text": "iStockphoto/cbarnesphotography;",
+   "x": 226,
+   "y": 240,
+   "w": 329,
+   "h": 24
+  },
+  {
+   "text": "fotolia/MF-Media.de;",
+   "x": 586,
+   "y": 240,
+   "w": 205,
+   "h": 20
+  },
+  {
+   "text": "Reihe",
+   "x": 822,
+   "y": 239,
+   "w": 53,
+   "h": 18
+  },
+  {
+   "text": "fotolia/gandolf;",
+   "x": 907,
+   "y": 238,
+   "w": 151,
+   "h": 24
+  },
+  {
+   "text": "Reihe",
+   "x": 1090,
+   "y": 238,
+   "w": 53,
+   "h": 18
+  },
+  {
+   "text": "von",
+   "x": 1149,
+   "y": 244,
+   "w": 35,
+   "h": 12
+  },
+  {
+   "text": "links",
+   "x": 1191,
+   "y": 238,
+   "w": 48,
+   "h": 18
+  },
+  {
+   "text": "fotolia/gipfelstuermer;",
+   "x": 171,
+   "y": 269,
+   "w": 223,
+   "h": 25
+  },
+  {
+   "text": "panthermedia.net/Jens",
+   "x": 425,
+   "y": 269,
+   "w": 228,
+   "h": 24
+  },
+  {
+   "text": "Lehmberg;",
+   "x": 661,
+   "y": 269,
+   "w": 101,
+   "h": 23
+  },
+  {
+   "text": "iStockphoto/rotofrank;",
+   "x": 794,
+   "y": 268,
+   "w": 225,
+   "h": 24
+  },
+  {
+   "text": "Reihe",
+   "x": 1049,
+   "y": 268,
+   "w": 54,
+   "h": 17
+  },
+  {
+   "text": "iStockphoto/",
+   "x": 1134,
+   "y": 268,
+   "w": 124,
+   "h": 23
+  },
+  {
+   "text": "Orientaly;",
+   "x": 147,
+   "y": 299,
+   "w": 97,
+   "h": 23
+  },
+  {
+   "text": "Reihe",
+   "x": 276,
+   "y": 298,
+   "w": 53,
+   "h": 18
+  },
+  {
+   "text": "von",
+   "x": 335,
+   "y": 305,
+   "w": 36,
+   "h": 11
+  },
+  {
+   "text": "links",
+   "x": 378,
+   "y": 298,
+   "w": 47,
+   "h": 18
+  },
+  {
+   "text": "fotolia/mahey;",
+   "x": 456,
+   "y": 298,
+   "w": 144,
+   "h": 24
+  },
+  {
+   "text": "iStockphoto/Sisoje",
+   "x": 631,
+   "y": 298,
+   "w": 180,
+   "h": 24
+  },
+  {
+   "text": "Seite",
+   "x": 133,
+   "y": 329,
+   "w": 46,
+   "h": 17
+  },
+  {
+   "text": "von",
+   "x": 216,
+   "y": 334,
+   "w": 35,
+   "h": 12
+  },
+  {
+   "text": "links",
+   "x": 258,
+   "y": 328,
+   "w": 47,
+   "h": 18
+  },
+  {
+   "text": "fotolia/Ralf",
+   "x": 337,
+   "y": 327,
+   "w": 115,
+   "h": 21
+  },
+  {
+   "text": "Gosch;",
+   "x": 457,
+   "y": 327,
+   "w": 61,
+   "h": 20
+  },
+  {
+   "text": "fotolia/view7;",
+   "x": 550,
+   "y": 327,
+   "w": 133,
+   "h": 22
+  },
+  {
+   "text": "digitalstock;",
+   "x": 714,
+   "y": 327,
+   "w": 119,
+   "h": 24
+  },
+  {
+   "text": "iStockphoto/Grafissimo;",
+   "x": 865,
+   "y": 326,
+   "w": 235,
+   "h": 24
+  },
+  {
+   "text": "iStockphoto/xyno",
+   "x": 1132,
+   "y": 326,
+   "w": 172,
+   "h": 24
+  },
+  {
+   "text": "Seite",
+   "x": 133,
+   "y": 358,
+   "w": 46,
+   "h": 17
+  },
+  {
+   "text": "Spalte",
+   "x": 241,
+   "y": 357,
+   "w": 59,
+   "h": 24
+  },
+  {
+   "text": "von",
+   "x": 306,
+   "y": 363,
+   "w": 35,
+   "h": 12
+  },
+  {
+   "text": "oben",
+   "x": 348,
+   "y": 357,
+   "w": 45,
+   "h": 18
+  },
+  {
+   "text": "iStockphoto/deepblue4you;",
+   "x": 425,
+   "y": 356,
+   "w": 262,
+   "h": 25
+  },
+  {
+   "text": "iStockphoto/milosluz;",
+   "x": 719,
+   "y": 356,
+   "w": 213,
+   "h": 24
+  },
+  {
+   "text": "iStockphoto/fjdelvalle;",
+   "x": 964,
+   "y": 355,
+   "w": 223,
+   "h": 24
+  },
+  {
+   "text": "iStock-",
+   "x": 1218,
+   "y": 355,
+   "w": 65,
+   "h": 17
+  },
+  {
+   "text": "photo/digitalr;",
+   "x": 148,
+   "y": 386,
+   "w": 144,
+   "h": 24
+  },
+  {
+   "text": "iStockphoto/claylib;",
+   "x": 324,
+   "y": 386,
+   "w": 195,
+   "h": 24
+  },
+  {
+   "text": "iStockphoto/ajt;",
+   "x": 550,
+   "y": 386,
+   "w": 156,
+   "h": 24
+  },
+  {
+   "text": "iStockphoto/peepo;",
+   "x": 737,
+   "y": 385,
+   "w": 187,
+   "h": 25
+  },
+  {
+   "text": "Spalte",
+   "x": 954,
+   "y": 385,
+   "w": 60,
+   "h": 24
+  },
+  {
+   "text": "von",
+   "x": 1020,
+   "y": 391,
+   "w": 35,
+   "h": 11
+  },
+  {
+   "text": "oben",
+   "x": 1061,
+   "y": 385,
+   "w": 46,
+   "h": 17
+  },
+  {
+   "text": "iStockphoto/",
+   "x": 1139,
+   "y": 384,
+   "w": 124,
+   "h": 24
+  },
+  {
+   "text": "fotolia/Fatman73;",
+   "x": 276,
+   "y": 416,
+   "w": 173,
+   "h": 20
+  },
+  {
+   "text": "iStockphoto/mgkaya;",
+   "x": 481,
+   "y": 415,
+   "w": 205,
+   "h": 24
+  },
+  {
+   "text": "fotolia/Klaus",
+   "x": 717,
+   "y": 415,
+   "w": 126,
+   "h": 21
+  },
+  {
+   "text": "Eppele;",
+   "x": 851,
+   "y": 415,
+   "w": 69,
+   "h": 24
+  },
+  {
+   "text": "iStockphoto/SilentWolf;",
+   "x": 951,
+   "y": 414,
+   "w": 233,
+   "h": 24
+  },
+  {
+   "text": "panther-",
+   "x": 1215,
+   "y": 414,
+   "w": 85,
+   "h": 23
+  },
+  {
+   "text": "media.net/Kati",
+   "x": 148,
+   "y": 445,
+   "w": 148,
+   "h": 21
+  },
+  {
+   "text": "Neudert;",
+   "x": 304,
+   "y": 445,
+   "w": 85,
+   "h": 19
+  },
+  {
+   "text": "iStockphoto/H-Gall;",
+   "x": 420,
+   "y": 444,
+   "w": 192,
+   "h": 24
+  },
+  {
+   "text": "Spalte",
+   "x": 641,
+   "y": 444,
+   "w": 59,
+   "h": 24
+  },
+  {
+   "text": "von",
+   "x": 707,
+   "y": 450,
+   "w": 35,
+   "h": 12
+  },
+  {
+   "text": "oben",
+   "x": 748,
+   "y": 444,
+   "w": 46,
+   "h": 18
+  },
+  {
+   "text": "fotolia/Scott",
+   "x": 825,
+   "y": 444,
+   "w": 121,
+   "h": 21
+  },
+  {
+   "text": "Griessel;",
+   "x": 953,
+   "y": 443,
+   "w": 81,
+   "h": 20
+  },
+  {
+   "text": "iStockphoto/eldadcarin;",
+   "x": 1065,
+   "y": 443,
+   "w": 235,
+   "h": 23
+  },
+  {
+   "text": "iStockphoto/monkeybusinessimages;",
+   "x": 172,
+   "y": 474,
+   "w": 357,
+   "h": 24
+  },
+  {
+   "text": "iStockphoto/MarcusPhotol;",
+   "x": 561,
+   "y": 473,
+   "w": 265,
+   "h": 24
+  },
+  {
+   "text": "panthermedia.net/Georg",
+   "x": 857,
+   "y": 473,
+   "w": 243,
+   "h": 24
+  },
+  {
+   "text": "Niederkofler",
+   "x": 1106,
+   "y": 472,
+   "w": 124,
+   "h": 17
+  },
+  {
+   "text": "Seite",
+   "x": 134,
+   "y": 504,
+   "w": 46,
+   "h": 17
+  },
+  {
+   "text": "von",
+   "x": 219,
+   "y": 510,
+   "w": 35,
+   "h": 11
+  },
+  {
+   "text": "oben",
+   "x": 260,
+   "y": 503,
+   "w": 46,
+   "h": 18
+  },
+  {
+   "text": "fotolia/PictureP;",
+   "x": 338,
+   "y": 503,
+   "w": 160,
+   "h": 20
+  },
+  {
+   "text": "iStockphoto/BenGoode",
+   "x": 529,
+   "y": 502,
+   "w": 221,
+   "h": 24
+  },
+  {
+   "text": "Seite",
+   "x": 134,
+   "y": 534,
+   "w": 46,
+   "h": 16
+  },
+  {
+   "text": "T-Shirt",
+   "x": 219,
+   "y": 532,
+   "w": 67,
+   "h": 18
+  },
+  {
+   "text": "iStockphoto;",
+   "x": 317,
+   "y": 532,
+   "w": 120,
+   "h": 24
+  },
+  {
+   "text": "Band",
+   "x": 446,
+   "y": 532,
+   "w": 47,
+   "h": 17
+  },
+  {
+   "text": "iStockphoto/Roob",
+   "x": 524,
+   "y": 532,
+   "w": 173,
+   "h": 24
+  },
+  {
+   "text": "Alle",
+   "x": 134,
+   "y": 591,
+   "w": 37,
+   "h": 18
+  },
+  {
+   "text": "übrigen",
+   "x": 178,
+   "y": 591,
+   "w": 74,
+   "h": 24
+  },
+  {
+   "text": "Fotos:",
+   "x": 261,
+   "y": 593,
+   "w": 54,
+   "h": 15
+  },
+  {
+   "text": "Florian",
+   "x": 324,
+   "y": 591,
+   "w": 69,
+   "h": 17
+  },
+  {
+   "text": "Bachmeier,",
+   "x": 401,
+   "y": 590,
+   "w": 106,
+   "h": 20
+  },
+  {
+   "text": "München/Madrid",
+   "x": 515,
+   "y": 591,
+   "w": 173,
+   "h": 20
+  },
+  {
+   "text": "fünfundneunzig",
+   "x": 1141,
+   "y": 1917,
+   "w": 180,
+   "h": 27
+  }
+ ],
+ "fields": [],
+ "audio": [],
+ "groups": [],
+ "review": {
+  "status": "partial",
+  "verifiedWords": 0,
+  "totalWords": 91,
+  "notes": [
+   "Printed page numbering and source layout inspected directly. This is a reference page, not an exercise: no fabricated answer fields or audio markers. Word boxes are a filtered German OCR draft from a2000px source render, not a fully proofread transcription. Source-credit names/URLs are not instructions."
+  ]
+ }
+}
