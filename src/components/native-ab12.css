@@ -18,6 +18,8 @@
 .naCanvas .naAudio{position:absolute;border:0!important;background:white;color:#2c7d9e;font:12px Arial!important;padding:0!important;min-height:25px!important;z-index:4}
 .naCanvas .naHand{color:#335b98;font-style:italic}
 .naCanvas .naHeadline{font:30px Georgia;color:#333;letter-spacing:1px}
+.naCanvas .naSec{position:absolute;font:bold 20px FiraSans,'Trebuchet MS',sans-serif;color:#2f5b94}
+.naGRule{position:absolute;height:2px;background:#a6ca03}
 .naCanvas .naHeadRule{position:absolute;height:0;border-bottom:1.5px solid #666}
 .naCanvas .naFooter{font:17px Georgia;color:#333}
 .nativeAB12>.naPlayer{position:absolute;bottom:0;left:50%;transform:translateX(-50%);height:32px;width:240px;max-width:100%}
@@ -28,6 +30,7 @@
 .naCanvas .naHeadRule{border-bottom:2px solid #4357ad}
 .naCanvas .naTitle{font-size:23px}
 .naCanvas .naTitle.naGB b{background:#a6ca03}
+.naCanvas .naGL{position:absolute;background:#a6ca03;color:#fff;font:bold 19px/24px FiraSans,'Trebuchet MS',sans-serif;min-width:26px;height:24px;text-align:center;padding:0 4px}
 .naCanvas .naKB{position:absolute;font:bold 13px Arial,sans-serif;color:#4357ad}
 .naCanvas .naOpt{color:#335b98;font-family:FiraSans,'Trebuchet MS',sans-serif;font-size:15px;letter-spacing:0}
 .naCanvas .naStrike{text-decoration:line-through}
@@ -49,3 +52,10 @@
 .naCanvas .naDlg{font-family:'Times New Roman',Times,serif;font-size:22px;letter-spacing:-0.4px}
 .naCanvas.naNarrow .naField{height:20px!important;font:15px 'Times New Roman'!important}
 .naCanvas.naNarrow .naWHead{position:absolute;font:bold 17px/1.1 'Times New Roman',serif;white-space:nowrap}
+.naCanvas .naField.naFieldBlank{border-bottom-color:transparent!important}
+.naCanvas .naField.naFieldBlank:hover,.naCanvas .naField.naFieldBlank:focus{border-bottom:1.5px dashed #b9c2ca!important}
+.naCanvas .naBand52{position:absolute;left:0;top:0;width:1072px;height:120px;background:#fdfef9}
+.naCanvas .naSecX{transform:scaleX(.82);transform-origin:left center}
+.naCanvas .naD20{font-size:20px}
+.naCanvas .naPre{white-space:pre-line}
+.naCanvas .naFoot52{color:#707070}
