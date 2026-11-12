@@ -1,0 +1,30 @@
+import {useEffect,useState} from 'react';
+import {createPortal} from 'react-dom';
+import './reader-audio-players.css';
+const time=(n:number)=>Number.isFinite(n)?`${Math.floor(n/60)}:${String(Math.floor(n%60)).padStart(2,'0')}`:'0:00';
+function Player({audio}:{audio:HTMLAudioElement}){
+ const [state,setState]=useState({time:audio.currentTime,duration:audio.duration,paused:audio.paused});
+ useEffect(()=>{const sync=()=>setState({time:audio.currentTime,duration:audio.duration,paused:audio.paused});const events=['timeupdate','durationchange','loadedmetadata','play','pause','ended','seeked'];events.forEach(e=>audio.addEventListener(e,sync));audio.preload='metadata';sync();return()=>events.forEach(e=>audio.removeEventListener(e,sync))},[audio]);
+ const src=audio.getAttribute('src')||audio.querySelector('source')?.getAttribute('src')||'';
+ const track=src.match(/cd(\d+)-track(\d+)/i);
+ const label=track?`CD${track[1]} · Track ${track[2]}`:audio.getAttribute('aria-label')||'Originalaudio';
+ const duration=Number.isFinite(state.duration)?state.duration:0;
+ return <section className="readerAudioPlayer" aria-label={label}>
+  <div className="readerAudioHeading"><strong>{label}</strong><output aria-label="Playback time">{time(state.time)} / {time(duration)}</output></div>
+  <div className="readerAudioTransport"><button type="button" aria-label={state.paused?'Play '+label:'Pause '+label} onClick={()=>{if(audio.paused){document.querySelectorAll('audio').forEach(a=>{if(a!==audio)a.pause()});void audio.play()}else audio.pause()}}>{state.paused?'▶':'Ⅱ'}</button><input type="range" aria-label={'Seek '+label} min={0} max={duration||1} step={0.1} value={Math.min(state.time,duration||1)} disabled={!duration} onChange={e=>{audio.currentTime=Number(e.target.value);setState(s=>({...s,time:Number(e.target.value)}))}}/></div>
+ </section>;
+}
+export function ReaderAudioPlayers(){
+ const [slot,setSlot]=useState<HTMLElement|null>(null),[audios,setAudios]=useState<HTMLAudioElement[]>([]);
+ useEffect(()=>{
+  let host:HTMLElement|null=null;const marked=new Set<HTMLAudioElement>();
+  const update=()=>{
+   const viewport=document.querySelector('#viewport');if(viewport&&!host){host=document.createElement('div');host.className='readerAudioPanel';viewport.insertAdjacentElement('afterend',host);setSlot(host)}
+   const jump=document.querySelector<HTMLSelectElement>('#pageJump');const page=jump?document.querySelectorAll('.page')[Number(jump.value)]:null;
+   const next=page?[...page.querySelectorAll<HTMLAudioElement>('audio')].filter(a=>a.getAttribute('src')||a.querySelector('source[src]')):[];
+   next.forEach(a=>{a.dataset.readerAudioSource='true';marked.add(a)});
+   setAudios(old=>old.length===next.length&&old.every((a,i)=>a===next[i])?old:next);
+  };update();const timer=setInterval(update,250);return()=>{clearInterval(timer);host?.remove();marked.forEach(a=>delete a.dataset.readerAudioSource)};
+ },[]);
+ return slot?createPortal(audios.map((audio,i)=><Player key={audio.getAttribute('src')||i} audio={audio}/>),slot):null;
+}
