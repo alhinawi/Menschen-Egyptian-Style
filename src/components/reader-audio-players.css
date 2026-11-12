@@ -14,3 +14,22 @@ html[data-theme=dark] .readerAudioPlayer{background:var(--night-paper,#202a25);c
 html[data-theme=dark] .readerAudioTransport button{background:var(--night-control,#29372f);color:#f9fbff;border-color:var(--night-detail,#a8d4f1)}
 html[data-theme=dark] .readerAudioTransport input[type=range]::-webkit-slider-thumb{background:var(--night-accent,#d0efdb);border-color:var(--night-paper,#202a25)}
 .nkbAudio:has(audio[data-reader-audio-source]){visibility:hidden}
+
+.readerActiveAudio{position:fixed;z-index:36;bottom:var(--reader-controls-height,104px);left:0;right:0;padding:5px 10px;background:#fffefa;box-sizing:border-box;border-top:1px solid #c7d4c7;box-shadow:0 -3px 12px #0001}
+.readerActiveAudio .readerAudioPlayer{max-width:620px;margin:auto;padding:6px 12px;border-radius:8px}
+.readerActiveAudio .readerAudioHeading{padding-right:34px}
+.readerActiveClose{position:absolute;right:12px;top:4px;width:44px;height:44px;padding:0!important;font-size:24px!important;border:0!important;background:transparent!important;color:inherit;cursor:pointer}
+body.readerSplitControls.hasActiveAudio{padding-bottom:calc(var(--reader-controls-height,104px) + var(--active-audio-height,96px) + 32px)}
+html:has(body.hasActiveAudio),body.hasActiveAudio #viewport{scroll-padding-bottom:calc(var(--reader-controls-height,104px) + var(--active-audio-height,96px) + 24px)}
+html[data-theme=dark] .readerActiveAudio{background:var(--night-paper,#202a25);color:var(--night-ink,#f9fbff);border-color:var(--night-detail,#a8d4f1)}
+button[data-reader-reset]{background:#b4232d!important;color:#fff!important;border:1px solid #b4232d!important;box-shadow:none!important}
+button[data-reader-reset]:hover{background:#941d26!important;border-color:#941d26!important}
+button[data-reader-reset]:focus-visible{outline:3px solid #ef9aa0;outline-offset:2px}
+html[data-theme=dark] button[data-reader-reset]{background:#ffb5bd!important;color:#570c18!important;border-color:#ffb5bd!important}
+html[data-theme=dark] button[data-reader-reset]:hover{background:#ffcbd0!important;border-color:#ffcbd0!important}
+
+output[data-reader-reset]{color:#b4232d!important;font-weight:700}
+html[data-theme=dark] output[data-reader-reset]{color:#b4232d!important}
+.hasActiveAudio .readerAudioPanel{display:none}
+.readerActiveClose{color:#315a4a!important}
+html[data-theme=dark] .readerActiveClose{color:#f9fbff!important}

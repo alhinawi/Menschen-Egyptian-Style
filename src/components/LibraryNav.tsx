@@ -152,14 +152,14 @@ export function LibraryNav({slug}: {slug: string}) {
         {pagePillText}<span className="lnv-chev ml-[2px] text-[#75623a] dark:text-[#c9b489] text-[9px]!">▴</span>
       </button>, pageSlot)}
     {panel === 'nav' && createPortal(
-      <div className={noAnim ? 'lnv-overlay lnv-noanim fixed inset-0 z-[90]' : 'lnv-overlay fixed inset-0 z-[90]'} role="dialog" aria-label="Library">
+      <div className={noAnim ? 'lnv-overlay lnv-noanim fixed inset-0 z-[90]' : 'lnv-overlay fixed inset-0 z-[90]'} role="dialog" aria-label="Bibliothek">
         <div className={`lnv-scrim absolute inset-0 bg-[rgba(24,16,10,.55)] touch-none${noAnim ? '' : ' animate-lnv-fade'}`} onClick={close}/>
         <aside className={`lnv-panelBox absolute top-0 bottom-0 left-0 h-auto w-[min(322px,86vw)] bg-[#fdfaf2] text-[#2b2620] shadow-[8px_0_32px_rgba(20,12,6,.35)] flex flex-col dark:bg-[#232a26] dark:text-[#e8e2d4]${noAnim ? '' : ' animate-lnv-slide'}`}>
           <div className="lnv-head flex items-center gap-2.5 px-4 pt-4 pb-3">
             <span className="lnv-brand font-bold text-[22px] font-[Georgia,serif]">Menschen<b className="text-[var(--accent,#713c46)]">.</b></span>
-            <button type="button" className="lnv-close ml-auto size-8 min-h-8 rounded-full border border-[#ddd2b8] bg-white text-[#6b6152] text-[15px] p-0" aria-label="Close menu" onClick={close}>×</button>
+            <button type="button" className="lnv-close ml-auto size-8 min-h-8 rounded-full border border-[#ddd2b8] bg-white text-[#6b6152] text-[15px] p-0" aria-label="Menü schließen" onClick={close}>×</button>
           </div>
-          <div className="lnv-label font-bold text-[10.5px] font-[Arial,sans-serif] tracking-[.16em] text-[#a08c5f] px-4 pt-0.5 pb-2.5">CHOOSE YOUR BOOK</div>
+          <div className="lnv-label font-bold text-[10.5px] font-[Arial,sans-serif] tracking-[.16em] text-[#a08c5f] px-4 pt-0.5 pb-2.5">BUCH AUSWÄHLEN</div>
           {BOOKS.map(b => {
             if (b.id === mod.book) {
               return (

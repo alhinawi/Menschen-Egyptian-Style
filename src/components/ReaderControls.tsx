@@ -95,7 +95,7 @@ export function ReaderControl({tag, attrs, children}: ReaderControlProps) {
   if (key === 'next' && snapshot.ready) props.disabled = snapshot.nextDisabled;
   if (key === 'soundToggle') {
     props['aria-pressed'] = snapshot.soundOn !== false;
-    props['aria-label'] = snapshot.soundOn !== false ? 'Turn sound off' : 'Turn sound on';
+    props['aria-label'] = snapshot.soundOn !== false ? 'Ton ausschalten' : 'Ton einschalten';
     props.title = props['aria-label'];
     return createElement(tag, props, createElement('svg', {viewBox: '0 0 24 24', width: 22, height: 22, 'aria-hidden': true, fill: 'none', stroke: 'currentColor', strokeWidth: 1.8, strokeLinecap: 'round', strokeLinejoin: 'round'}, createElement('path', {d: 'M11 5 6 9H3v6h3l5 4V5Z'}), createElement('path', {className: 'soundWaves', d: 'M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14'}), createElement('path', {className: 'soundSlash', d: 'M3 3l18 18'})));
   }
