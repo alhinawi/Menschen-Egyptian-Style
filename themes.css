@@ -39,6 +39,5 @@ html[data-reader-theme="sand"] .page:not(.bookCover) small{color:#465248}
 .howtoList li::before{content:counter(howto);position:absolute;right:0;top:0;width:58px;height:58px;border:1.5px solid #ac8c48;border-radius:50%;display:grid;place-items:center;font:26px Georgia,serif;color:#ac8c48}
 .howtoList b{display:block;font:700 34px/1.3 'Noto Naskh Arabic',serif;color:#39352b}
 .howtoList p{font:28px/1.55 'Noto Naskh Arabic',serif;color:#6a6f75;margin:4px 0 0}
-.howtoName{margin-top:auto;font:18px Georgia,serif;letter-spacing:4px;color:#ac8c48}
 html[data-theme="dark"] .howtoPage{background:#fffefa!important;color:#2c302b!important}
 .coverCopy{margin-top:auto;padding-top:18px;font:15px Georgia,serif;letter-spacing:1px;color:#a8937a!important;text-align:center;line-height:1.6;max-width:560px}
