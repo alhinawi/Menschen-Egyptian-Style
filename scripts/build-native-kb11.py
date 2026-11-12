@@ -183,6 +183,11 @@ def apply_overrides(r,p):
             if hit(b,m):
                 b['x']+=m.get('dx',0);b['cy']+=m.get('dy',0);b['w']+=m.get('dw',0)
                 b.update(m.get('set',{}))
+                if 'text' in m:
+                    tk=m['text'].split()
+                    if len(tk)>len(b['ws']):tk=tk[:len(b['ws'])-1]+[' '.join(tk[len(b['ws'])-1:])]
+                    if len(tk)==len(b['ws']):
+                        for w,t in zip(b['ws'],tk):w['t']=t
 if __name__=='__main__':
     sel=[int(x) for x in sys.argv[1:]] or PAGES
     os.makedirs(f'{ROOT}/src/native-kb11',exist_ok=True)
