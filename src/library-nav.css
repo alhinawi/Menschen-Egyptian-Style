@@ -102,6 +102,7 @@ body.lnv-lock {
   top: 0;
   bottom: 0;
   left: 0;
+  height: auto; /* beat book.css's generic aside{height:max-content} */
   width: min(322px, 86vw);
   background: #fdfaf2;
   color: #2b2620;
