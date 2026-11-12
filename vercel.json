@@ -1,1 +1,23 @@
-{"framework":null,"buildCommand":null,"outputDirectory":".","headers":[{"source":"/(.*)","headers":[{"key":"X-Robots-Tag","value":"noindex, nofollow, noarchive"}]}]}
+{
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow, noarchive"
+        }
+      ]
+    }
+  ],
+  "installCommand": "npm ci",
+  "git": {
+    "deploymentEnabled": {
+      "main": true,
+      "react/production-cutover": false
+    }
+  }
+}
