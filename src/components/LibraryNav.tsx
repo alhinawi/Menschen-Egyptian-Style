@@ -153,7 +153,7 @@ export function LibraryNav({slug}: {slug: string}) {
             );
           })}
           <div className="lnv-scroll">
-            <a className="lnv-home" href={mod.book === 'kb' ? 'index.html#cover' : 'ab1.html#6'}>Cover</a>
+            <a className="lnv-home" href={mod.book === 'kb' ? 'index.html#cover' : 'ab1.html#abcover'}>Cover</a>
             {levels.map(level => (
               <div key={level}>
                 <div className="lnv-lvl">{bookInfo.title.toUpperCase()} · {level}</div>
