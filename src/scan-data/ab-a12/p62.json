@@ -1658,13 +1658,92 @@
    "h": 20
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p62-7b",
+   "group": "g1",
+   "kind": "text",
+   "label": "7 b",
+   "answer": "uns|mich",
+   "x": 462,
+   "y": 283,
+   "w": 76,
+   "h": 24
+  },
+  {
+   "id": "p62-7c",
+   "group": "g1",
+   "kind": "text",
+   "label": "7 c",
+   "answer": "Sie",
+   "x": 660,
+   "y": 282,
+   "w": 58,
+   "h": 24
+  },
+  {
+   "id": "p62-7d",
+   "group": "g1",
+   "kind": "text",
+   "label": "7 d",
+   "answer": "sie|Sie",
+   "x": 818,
+   "y": 285,
+   "w": 57,
+   "h": 24
+  },
+  {
+   "id": "p62-8b",
+   "group": "g2",
+   "kind": "text",
+   "label": "8 b",
+   "answer": "bring ihn bitte runter|Bring ihn bitte runter",
+   "x": 241,
+   "y": 592,
+   "w": 271,
+   "h": 24
+  },
+  {
+   "id": "p62-8c",
+   "group": "g2",
+   "kind": "text",
+   "label": "8 c",
+   "answer": "putz sie bitte|Putz sie bitte",
+   "x": 698,
+   "y": 477,
+   "w": 198,
+   "h": 24
+  },
+  {
+   "id": "p62-8d",
+   "group": "g2",
+   "kind": "text",
+   "label": "8 d",
+   "answer": "mach es zu|Mach es zu",
+   "x": 698,
+   "y": 567,
+   "w": 204,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 7"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 8"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 20, Aufgaben 7, 8). 7b key accepts uns/mich.",
+   "Ex 9 (reading ads, free writing) not mapped; handwritten examples not fields."
+  ],
   "verifiedWords": 236,
-  "totalWords": 236,
-  "notes": []
+  "totalWords": 236
  }
 }

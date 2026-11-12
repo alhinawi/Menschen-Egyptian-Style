@@ -1224,13 +1224,132 @@
    "h": 12
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p61-6ichD",
+   "group": "g1",
+   "kind": "text",
+   "label": "ich Dativ",
+   "answer": "mir",
+   "x": 410,
+   "y": 1023,
+   "w": 135,
+   "h": 24
+  },
+  {
+   "id": "p61-6duA",
+   "group": "g1",
+   "kind": "text",
+   "label": "du Akkusativ",
+   "answer": "dich",
+   "x": 280,
+   "y": 1052,
+   "w": 115,
+   "h": 24
+  },
+  {
+   "id": "p61-6duD",
+   "group": "g1",
+   "kind": "text",
+   "label": "du Dativ",
+   "answer": "dir",
+   "x": 410,
+   "y": 1052,
+   "w": 135,
+   "h": 24
+  },
+  {
+   "id": "p61-6erA",
+   "group": "g1",
+   "kind": "text",
+   "label": "er Akkusativ",
+   "answer": "ihn",
+   "x": 280,
+   "y": 1084,
+   "w": 115,
+   "h": 24
+  },
+  {
+   "id": "p61-6sieA",
+   "group": "g1",
+   "kind": "text",
+   "label": "sie Akkusativ",
+   "answer": "sie",
+   "x": 280,
+   "y": 1142,
+   "w": 115,
+   "h": 24
+  },
+  {
+   "id": "p61-6sieD",
+   "group": "g1",
+   "kind": "text",
+   "label": "sie Dativ",
+   "answer": "ihr",
+   "x": 410,
+   "y": 1142,
+   "w": 135,
+   "h": 24
+  },
+  {
+   "id": "p61-6wirA",
+   "group": "g1",
+   "kind": "text",
+   "label": "wir Akkusativ",
+   "answer": "uns",
+   "x": 280,
+   "y": 1169,
+   "w": 115,
+   "h": 24
+  },
+  {
+   "id": "p61-6ihrA",
+   "group": "g1",
+   "kind": "text",
+   "label": "ihr Akkusativ",
+   "answer": "euch",
+   "x": 280,
+   "y": 1200,
+   "w": 115,
+   "h": 24
+  },
+  {
+   "id": "p61-6SieA",
+   "group": "g1",
+   "kind": "text",
+   "label": "sie/Sie Akkusativ",
+   "answer": "sie",
+   "x": 285,
+   "y": 1230,
+   "w": 47,
+   "h": 24
+  },
+  {
+   "id": "p61-6SieD",
+   "group": "g1",
+   "kind": "text",
+   "label": "sie/Sie Dativ",
+   "answer": "Ihnen",
+   "x": 465,
+   "y": 1230,
+   "w": 80,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 6 Tabelle"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 20, Aufgabe 6). Only the empty table cells are fields.",
+   "Ex 5 (colour marking) and ex 4 (free cards) not mapped; handwritten examples not fields."
+  ],
   "verifiedWords": 174,
-  "totalWords": 174,
-  "notes": []
+  "totalWords": 174
  }
 }
