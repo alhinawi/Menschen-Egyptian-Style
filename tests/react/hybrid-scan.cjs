@@ -15,7 +15,7 @@ for(const book of fs.readdirSync(path.join(root,'src/scan-data'))){
    assert(item.x+item.w<=d.width&&item.y+item.h<=d.height,`${book}/${file}: box outside scan`);
   }
   assert.equal(new Set(d.fields.map(f=>f.id)).size,d.fields.length);
-  for(const f of d.fields)assert(d.groups.some(g=>g.id===f.group),`${file}: unknown group`);
+  for(const f of d.fields){assert(d.groups.some(g=>g.id===f.group),`${file}: unknown group`);if(f.kind==='radio'){assert(f.name&&f.value,`${book}/${file}: radio requires name and value`);assert(['true','false'].includes(f.answer),`${book}/${file}: radio requires boolean answer`);}}
   for(const a of d.audio)assert(fs.existsSync(path.join(root,a.src)),`${file}: missing audio`);
  }
 }
