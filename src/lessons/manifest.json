@@ -264,7 +264,6 @@
     "styles": [
       "book.css",
       "batch.css",
-      "abm1.css",
       "themes.css"
     ],
     "initializers": [
