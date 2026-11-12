@@ -13,6 +13,13 @@
       "h": 11
     },
     {
+      "text": "Museum",
+      "x": 432,
+      "y": 174,
+      "w": 47,
+      "h": 10
+    },
+    {
       "text": "Was",
       "x": 209,
       "y": 248,
@@ -125,11 +132,25 @@
       "h": 13
     },
     {
-      "text": "Hallo",
-      "x": 566,
-      "y": 324,
+      "text": "Leider",
+      "x": 565,
+      "y": 342,
+      "w": 33,
+      "h": 12
+    },
+    {
+      "text": "habe",
+      "x": 601,
+      "y": 345,
       "w": 27,
       "h": 12
+    },
+    {
+      "text": "ich",
+      "x": 632,
+      "y": 349,
+      "w": 15,
+      "h": 10
     },
     {
       "text": "doch",
@@ -139,24 +160,17 @@
       "h": 12
     },
     {
-      "text": "keine",
-      "x": 563,
-      "y": 358,
-      "w": 29,
-      "h": 13
-    },
-    {
-      "text": "okay",
-      "x": 642,
-      "y": 372,
-      "w": 34,
-      "h": 27
+      "text": "Karina",
+      "x": 235,
+      "y": 489,
+      "w": 57,
+      "h": 15
     },
     {
       "text": "geht",
-      "x": 343,
+      "x": 319,
       "y": 488,
-      "w": 37,
+      "w": 61,
       "h": 21
     },
     {
@@ -265,6 +279,13 @@
       "h": 13
     },
     {
+      "text": "Grüße",
+      "x": 395,
+      "y": 577,
+      "w": 50,
+      "h": 14
+    },
+    {
       "text": "keine",
       "x": 866,
       "y": 583,
@@ -279,6 +300,13 @@
       "h": 13
     },
     {
+      "text": "Was",
+      "x": 212,
+      "y": 641,
+      "w": 38,
+      "h": 14
+    },
+    {
       "text": "macht",
       "x": 258,
       "y": 639,
@@ -286,11 +314,32 @@
       "h": 16
     },
     {
+      "text": "Ihre",
+      "x": 325,
+      "y": 638,
+      "w": 37,
+      "h": 17
+    },
+    {
       "text": "Partnerin",
       "x": 371,
       "y": 638,
       "w": 89,
       "h": 17
+    },
+    {
+      "text": "Leider",
+      "x": 676,
+      "y": 628,
+      "w": 48,
+      "h": 14
+    },
+    {
+      "text": "habe",
+      "x": 748,
+      "y": 628,
+      "w": 36,
+      "h": 13
     },
     {
       "text": "ich",
@@ -314,6 +363,13 @@
       "h": 12
     },
     {
+      "text": "Ihr",
+      "x": 214,
+      "y": 664,
+      "w": 26,
+      "h": 16
+    },
+    {
       "text": "Partner",
       "x": 248,
       "y": 666,
@@ -333,6 +389,13 @@
       "y": 664,
       "w": 123,
       "h": 22
+    },
+    {
+      "text": "Schreiben",
+      "x": 213,
+      "y": 703,
+      "w": 82,
+      "h": 16
     },
     {
       "text": "Sie",
@@ -370,6 +433,13 @@
       "h": 15
     },
     {
+      "text": "Wörter",
+      "x": 563,
+      "y": 703,
+      "w": 59,
+      "h": 14
+    },
+    {
       "text": "aus",
       "x": 628,
       "y": 707,
@@ -382,6 +452,13 @@
       "y": 701,
       "w": 35,
       "h": 16
+    },
+    {
+      "text": "malen",
+      "x": 886,
+      "y": 703,
+      "w": 36,
+      "h": 14
     },
     {
       "text": "Bildlexikon",
@@ -412,6 +489,20 @@
       "h": 16
     },
     {
+      "text": "Museum",
+      "x": 773,
+      "y": 726,
+      "w": 53,
+      "h": 13
+    },
+    {
+      "text": "Ziehen",
+      "x": 213,
+      "y": 779,
+      "w": 56,
+      "h": 15
+    },
+    {
       "text": "Sie",
       "x": 276,
       "y": 779,
@@ -423,6 +514,20 @@
       "x": 307,
       "y": 779,
       "w": 35,
+      "h": 15
+    },
+    {
+      "text": "Karte",
+      "x": 350,
+      "y": 780,
+      "w": 44,
+      "h": 14
+    },
+    {
+      "text": "und",
+      "x": 475,
+      "y": 778,
+      "w": 30,
       "h": 15
     },
     {
@@ -466,6 +571,20 @@
       "y": 831,
       "w": 87,
       "h": 18
+    },
+    {
+      "text": "Zeit",
+      "x": 443,
+      "y": 832,
+      "w": 35,
+      "h": 12
+    },
+    {
+      "text": "Nein",
+      "x": 500,
+      "y": 832,
+      "w": 39,
+      "h": 14
     },
     {
       "text": "leider",
@@ -515,6 +634,13 @@
       "y": 829,
       "w": 40,
       "h": 13
+    },
+    {
+      "text": "Zeit",
+      "x": 860,
+      "y": 830,
+      "w": 32,
+      "h": 12
     },
     {
       "text": "Nein",
@@ -685,18 +811,18 @@
       "h": 12
     },
     {
-      "text": "Ausstellung",
-      "x": 618,
-      "y": 974,
-      "w": 89,
-      "h": 18
-    },
-    {
       "text": "Wie",
       "x": 214,
       "y": 993,
       "w": 35,
       "h": 16
+    },
+    {
+      "text": "spät",
+      "x": 256,
+      "y": 994,
+      "w": 41,
+      "h": 21
     },
     {
       "text": "ist",
@@ -713,6 +839,13 @@
       "h": 15
     },
     {
+      "text": "Hören",
+      "x": 216,
+      "y": 1033,
+      "w": 48,
+      "h": 14
+    },
+    {
       "text": "Sie",
       "x": 271,
       "y": 1032,
@@ -725,6 +858,13 @@
       "y": 1032,
       "w": 30,
       "h": 15
+    },
+    {
+      "text": "ergänzen",
+      "x": 341,
+      "y": 1032,
+      "w": 76,
+      "h": 20
     },
     {
       "text": "Sie",
@@ -762,6 +902,13 @@
       "h": 13
     },
     {
+      "text": "Gespräch",
+      "x": 244,
+      "y": 1221,
+      "w": 78,
+      "h": 21
+    },
+    {
       "text": "halb",
       "x": 342,
       "y": 1224,
@@ -783,11 +930,25 @@
       "h": 12
     },
     {
+      "text": "vor",
+      "x": 513,
+      "y": 1227,
+      "w": 22,
+      "h": 11
+    },
+    {
       "text": "zwanzig",
       "x": 591,
       "y": 1215,
       "w": 56,
       "h": 30
+    },
+    {
+      "text": "fünf",
+      "x": 723,
+      "y": 1222,
+      "w": 30,
+      "h": 13
     },
     {
       "text": "zehn",
@@ -802,6 +963,13 @@
       "y": 1244,
       "w": 35,
       "h": 25
+    },
+    {
+      "text": "halb",
+      "x": 722,
+      "y": 1248,
+      "w": 31,
+      "h": 12
     },
     {
       "text": "acht",
@@ -825,6 +993,13 @@
       "h": 18
     },
     {
+      "text": "fünf",
+      "x": 342,
+      "y": 1287,
+      "w": 31,
+      "h": 13
+    },
+    {
       "text": "Uhr",
       "x": 378,
       "y": 1287,
@@ -846,6 +1021,13 @@
       "h": 12
     },
     {
+      "text": "fünfzehn",
+      "x": 591,
+      "y": 1286,
+      "w": 65,
+      "h": 13
+    },
+    {
       "text": "Uhr",
       "x": 662,
       "y": 1286,
@@ -860,11 +1042,39 @@
       "h": 12
     },
     {
+      "text": "Uhr",
+      "x": 798,
+      "y": 1286,
+      "w": 27,
+      "h": 12
+    },
+    {
+      "text": "zweiundzwanzig",
+      "x": 861,
+      "y": 1285,
+      "w": 117,
+      "h": 16
+    },
+    {
       "text": "Fernsehen",
       "x": 216,
       "y": 1310,
       "w": 89,
       "h": 15
+    },
+    {
+      "text": "dreißig",
+      "x": 342,
+      "y": 1312,
+      "w": 50,
+      "h": 17
+    },
+    {
+      "text": "fünfundvierzig",
+      "x": 461,
+      "y": 1312,
+      "w": 108,
+      "h": 17
     },
     {
       "text": "zwanzig",
@@ -874,11 +1084,39 @@
       "h": 16
     },
     {
+      "text": "fünfundzwanzig",
+      "x": 723,
+      "y": 1310,
+      "w": 116,
+      "h": 17
+    },
+    {
       "text": "Uhr",
       "x": 862,
       "y": 1310,
       "w": 26,
       "h": 13
+    },
+    {
+      "text": "fünfunddreißig",
+      "x": 894,
+      "y": 1309,
+      "w": 109,
+      "h": 17
+    },
+    {
+      "text": "Uhrzeiten",
+      "x": 217,
+      "y": 1361,
+      "w": 82,
+      "h": 15
+    },
+    {
+      "text": "üben",
+      "x": 307,
+      "y": 1360,
+      "w": 46,
+      "h": 15
     },
     {
       "text": "Arbeiten",
@@ -921,6 +1159,13 @@
       "y": 1359,
       "w": 41,
       "h": 16
+    },
+    {
+      "text": "sechsundvierzig",
+      "x": 201,
+      "y": 1438,
+      "w": 124,
+      "h": 19
     }
   ],
   "fields": [
@@ -1033,9 +1278,9 @@
   ],
   "review": {
     "status": "partial",
-    "verifiedWords": 131,
+    "verifiedWords": 166,
     "notes": [
-      "Ordinary high-confidence printed word boxes reviewed; tilted SMS, handwritten words and clock table require manual transcription.",
+      "Printed instruction/dialogue/table word boxes reviewed against scan using German OCR. Partial: tilted SMS, top vocabulary strip, handwriting, grammar diagram and small clock-face labels still need manual word boxes.",
       "All seven answer controls on page implemented (four radios in task3, three text blanks in task5a; handwritten vor is a printed example, not a blank). Open partner-speaking activities have no fixed-answer grading.",
       "Audio track2.06 is printed on page; file exists."
     ]
