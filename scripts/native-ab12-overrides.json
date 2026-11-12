@@ -72,5 +72,42 @@
     "text": "rden"
    }
   ]
+ },
+ "100": {
+  "dropAdd": [
+   78
+  ],
+  "rectsAdd": [
+   {
+    "x": 366,
+    "y": 540,
+    "w": 28,
+    "h": 20,
+    "c": "#a21a18"
+   }
+  ],
+  "wordsAdd": [
+   {
+    "x": 368,
+    "y": 542,
+    "w": 24,
+    "h": 16,
+    "text": "24",
+    "style": {
+     "c": "#ffffff"
+    }
+   }
+  ]
+ },
+ "43": {
+  "cropsAdd": [
+   {
+    "x": 130,
+    "y": 634,
+    "w": 285,
+    "h": 34,
+    "alt": "Handschriftliches Beispiel"
+   }
+  ]
  }
 }
