@@ -7,11 +7,13 @@ export interface MeaningSnapshot {
   audioDisabled: boolean;
   pendingHidden: boolean;
   pending: string;
+  machine: boolean;
+  machineState: 'idle'|'loading'|'done'|'error';
 }
 
 type ActionMap = Record<string, (() => void) | undefined>;
 
-const initial: MeaningSnapshot = {german: '', arabic: '', mode: 'word', wordDisabled: true, sentenceDisabled: true, audioDisabled: true, pendingHidden: true, pending: ''};
+const initial: MeaningSnapshot = {german: '', arabic: '', mode: 'word', wordDisabled: true, sentenceDisabled: true, audioDisabled: true, pendingHidden: true, pending: '', machine:false, machineState:'idle'};
 let snapshot = initial, actions: ActionMap = {}, listeners = new Set<() => void>();
 
 export const meaningStore = {

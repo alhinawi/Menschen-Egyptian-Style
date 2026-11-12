@@ -3,14 +3,14 @@ import './native-pilot.css';
 function Words({text}:{text:string}){return <>{text.split(/(\s+)/).map((w,i)=>/\S/.test(w)?<span key={i} className="tapWord" role="button" tabIndex={0} data-phrase={text} data-word={w.replace(/^[.,!?„"()]+|[.,!?“"()]+$/g,'')}>{w}</span>:w)}</>}
 export function NativePilot({page}:{page:string}){
  const key='native-pilot-kb11-'+page;const player=useRef<HTMLAudioElement>(null);
- const [v,S]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return {}}});const [graded,G]=useState<Record<string,boolean>>({});
- const set=(id:string,value:string)=>{const next={...v,[id]:value};S(next);localStorage.setItem(key,JSON.stringify(next))};
+ const [v,S]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return {}}});const [graded,G]=useState<Record<string,boolean>>({});const [res,R]=useState<Record<string,boolean>>({});
+ const set=(id:string,value:string)=>{R(r=>{if(!(id in r))return r;const n={...r};delete n[id];return n});const next={...v,[id]:value};S(next);localStorage.setItem(key,JSON.stringify(next))};
  const text=(x:number,y:number,w:number,s:string,cls='')=><div className={'npText '+cls} style={{left:x,top:y,width:w}}><Words text={s}/></div>;
  const img=(name:string,x:number,y:number,w:number,h:number)=><img className="npArt" src={`assets/book-crops/native-p${page}-${name}.png`} alt={`Originalabbildung ${name}`} style={{left:x,top:y,width:w,height:h}}/>;
- const field=(id:string,x:number,y:number,w:number,label:string)=><input className="npInput" style={{left:x,top:y,width:w}} aria-label={label} data-native-field={id} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
- const choice=(id:string,value:string,x:number,y:number,label:string)=><input type="radio" className="npRadio" style={{left:x,top:y}} name={key+'-'+id} aria-label={label} checked={v[id]===value} onChange={()=>set(id,value)}/>;
+ const field=(id:string,x:number,y:number,w:number,label:string)=><input className={'npInput'+(id in res?(res[id]?' npCorrect':' npWrong'):'')} style={{left:x,top:y,width:w}} aria-label={label} data-native-field={id} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
+ const choice=(id:string,value:string,x:number,y:number,label:string)=><input type="radio" className={'npRadio'+(id in res?(res[id]?(v[id]===value?' npCorrect':''):' npWrong'):'')} style={{left:x,top:y}} name={key+'-'+id} aria-label={label} checked={v[id]===value} onChange={()=>set(id,value)}/>;
  const normalize=(s:string)=>s.normalize('NFC').trim().toLocaleLowerCase('de').replace(/[.!?]+$/,'').replace(/\s+/g,' ');
- const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="npCheck" style={{left:x,top:y}}><button onClick={()=>G({...graded,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(s=>normalize(s)===normalize(v[k]||'')))})}>Prüfen ✓</button><output>{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="npCheck" style={{left:x,top:y}}><button onClick={()=>{const each=Object.fromEntries(Object.entries(answers).map(([k,a])=>[k,a.split('|').some(s=>normalize(s)===normalize(v[k]||''))]));R({...res,...each});G({...graded,[id]:Object.values(each).every(Boolean)})}}>Prüfen ✓</button><output>{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,s:string)=><div className="npText npTitle" style={{left:x,top:y,width:w}}><b className="npNum">{n}</b><Words text={s}/></div>;
  const audio=(track:string,x:number,y:number)=><audio ref={player} controls aria-label={'Originalaudio '+track} src={'assets/kb-cd2-track'+track+'.mp3'} style={{position:'absolute',left:x,top:y,width:360,height:36}}/>;
  return <div className="nativePilot" data-native-page={page}><div className="npCanvas">

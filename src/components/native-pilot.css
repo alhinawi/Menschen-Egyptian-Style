@@ -4,3 +4,5 @@
 .npCanvas .npListen{position:absolute;background:white;color:#28799e;border:0;padding:0;font:12px Arial;cursor:pointer;z-index:6;min-height:24px}.npCanvas .npAB{font-size:11px;color:#2e91be}
 
 .npCanvas .npSentenceCell{height:22px!important;font-size:15px!important}.nativePilot[data-native-page="42"] .npFooter{font-size:10px;line-height:1}
+
+.npInput.npCorrect{outline:2px solid #26764c;background:#e9f6ee}.npInput.npWrong{outline:2px solid #bd3838;background:#fdecec}.npRadio.npCorrect{outline:2px solid #26764c;border-radius:50%}.npRadio.npWrong{outline:2px solid #bd3838;border-radius:50%}
