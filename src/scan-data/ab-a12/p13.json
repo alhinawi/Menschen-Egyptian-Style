@@ -1539,13 +1539,421 @@
    "h": 12
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p13-6a0",
+   "group": "g1",
+   "kind": "text",
+   "label": "6a 1",
+   "answer": "sein",
+   "x": 160,
+   "y": 370,
+   "w": 102,
+   "h": 22
+  },
+  {
+   "id": "p13-6a1",
+   "group": "g1",
+   "kind": "text",
+   "label": "6a 2",
+   "answer": "ihr",
+   "x": 160,
+   "y": 396,
+   "w": 102,
+   "h": 22
+  },
+  {
+   "id": "p13-6a2",
+   "group": "g1",
+   "kind": "text",
+   "label": "6a 3",
+   "answer": "sein",
+   "x": 447,
+   "y": 354,
+   "w": 88,
+   "h": 22
+  },
+  {
+   "id": "p13-6a3",
+   "group": "g1",
+   "kind": "text",
+   "label": "6a 4",
+   "answer": "ihr",
+   "x": 447,
+   "y": 374,
+   "w": 90,
+   "h": 22
+  },
+  {
+   "id": "p13-6a4",
+   "group": "g1",
+   "kind": "text",
+   "label": "6a 5",
+   "answer": "ihr",
+   "x": 447,
+   "y": 405,
+   "w": 86,
+   "h": 22
+  },
+  {
+   "id": "p13-6a5",
+   "group": "g1",
+   "kind": "text",
+   "label": "6a 6",
+   "answer": "sein",
+   "x": 735,
+   "y": 376,
+   "w": 103,
+   "h": 22
+  },
+  {
+   "id": "p13-6b01",
+   "group": "g2",
+   "kind": "text",
+   "label": "6b maskulin Nom sein",
+   "answer": "sein Schirm",
+   "x": 459,
+   "y": 549,
+   "w": 164,
+   "h": 24
+  },
+  {
+   "id": "p13-6b03",
+   "group": "g2",
+   "kind": "text",
+   "label": "6b maskulin Akk sein",
+   "answer": "seinen Schirm",
+   "x": 805,
+   "y": 549,
+   "w": 161,
+   "h": 24
+  },
+  {
+   "id": "p13-6b10",
+   "group": "g2",
+   "kind": "text",
+   "label": "6b neutral Nom ihr",
+   "answer": "ihr Fahrrad",
+   "x": 289,
+   "y": 577,
+   "w": 160,
+   "h": 24
+  },
+  {
+   "id": "p13-6b11",
+   "group": "g2",
+   "kind": "text",
+   "label": "6b neutral Nom sein",
+   "answer": "sein Fahrrad",
+   "x": 459,
+   "y": 577,
+   "w": 164,
+   "h": 24
+  },
+  {
+   "id": "p13-6b12",
+   "group": "g2",
+   "kind": "text",
+   "label": "6b neutral Akk ihr",
+   "answer": "ihr Fahrrad",
+   "x": 634,
+   "y": 577,
+   "w": 161,
+   "h": 24
+  },
+  {
+   "id": "p13-6b13",
+   "group": "g2",
+   "kind": "text",
+   "label": "6b neutral Akk sein",
+   "answer": "sein Fahrrad",
+   "x": 805,
+   "y": 577,
+   "w": 161,
+   "h": 24
+  },
+  {
+   "id": "p13-6b20",
+   "group": "g2",
+   "kind": "text",
+   "label": "6b feminin Nom ihr",
+   "answer": "ihre Tasche",
+   "x": 289,
+   "y": 605,
+   "w": 160,
+   "h": 24
+  },
+  {
+   "id": "p13-6b21",
+   "group": "g2",
+   "kind": "text",
+   "label": "6b feminin Nom sein",
+   "answer": "seine Tasche",
+   "x": 459,
+   "y": 605,
+   "w": 164,
+   "h": 24
+  },
+  {
+   "id": "p13-6b22",
+   "group": "g2",
+   "kind": "text",
+   "label": "6b feminin Akk ihr",
+   "answer": "ihre Tasche",
+   "x": 634,
+   "y": 605,
+   "w": 161,
+   "h": 24
+  },
+  {
+   "id": "p13-6b23",
+   "group": "g2",
+   "kind": "text",
+   "label": "6b feminin Akk sein",
+   "answer": "seine Tasche",
+   "x": 805,
+   "y": 605,
+   "w": 161,
+   "h": 24
+  },
+  {
+   "id": "p13-6b30",
+   "group": "g2",
+   "kind": "text",
+   "label": "6b Plural Nom ihr",
+   "answer": "ihre Kinder",
+   "x": 289,
+   "y": 634,
+   "w": 160,
+   "h": 24
+  },
+  {
+   "id": "p13-6b31",
+   "group": "g2",
+   "kind": "text",
+   "label": "6b Plural Nom sein",
+   "answer": "seine Kinder",
+   "x": 459,
+   "y": 634,
+   "w": 164,
+   "h": 24
+  },
+  {
+   "id": "p13-6b32",
+   "group": "g2",
+   "kind": "text",
+   "label": "6b Plural Akk ihr",
+   "answer": "ihre Kinder",
+   "x": 634,
+   "y": 634,
+   "w": 161,
+   "h": 24
+  },
+  {
+   "id": "p13-6b33",
+   "group": "g2",
+   "kind": "text",
+   "label": "6b Plural Akk sein",
+   "answer": "seine Kinder",
+   "x": 805,
+   "y": 634,
+   "w": 161,
+   "h": 24
+  },
+  {
+   "id": "p13-7b",
+   "group": "g3",
+   "kind": "text",
+   "label": "7 b",
+   "answer": "seine",
+   "x": 580,
+   "y": 811,
+   "w": 105,
+   "h": 22
+  },
+  {
+   "id": "p13-7c",
+   "group": "g3",
+   "kind": "text",
+   "label": "7 c",
+   "answer": "Ihre",
+   "x": 440,
+   "y": 837,
+   "w": 108,
+   "h": 22
+  },
+  {
+   "id": "p13-7d",
+   "group": "g3",
+   "kind": "text",
+   "label": "7 d",
+   "answer": "ihr",
+   "x": 330,
+   "y": 862,
+   "w": 106,
+   "h": 22
+  },
+  {
+   "id": "p13-7e",
+   "group": "g3",
+   "kind": "text",
+   "label": "7 e",
+   "answer": "ihr",
+   "x": 292,
+   "y": 887,
+   "w": 86,
+   "h": 22
+  },
+  {
+   "id": "p13-7f",
+   "group": "g3",
+   "kind": "text",
+   "label": "7 f",
+   "answer": "sein",
+   "x": 292,
+   "y": 913,
+   "w": 104,
+   "h": 22
+  },
+  {
+   "id": "p13-7g",
+   "group": "g3",
+   "kind": "text",
+   "label": "7 g",
+   "answer": "sein",
+   "x": 802,
+   "y": 915,
+   "w": 103,
+   "h": 22
+  },
+  {
+   "id": "p13-7h",
+   "group": "g3",
+   "kind": "text",
+   "label": "7 h",
+   "answer": "Seine",
+   "x": 292,
+   "y": 965,
+   "w": 104,
+   "h": 22
+  },
+  {
+   "id": "p13-7i",
+   "group": "g3",
+   "kind": "text",
+   "label": "7 i",
+   "answer": "ihren",
+   "x": 516,
+   "y": 991,
+   "w": 102,
+   "h": 22
+  },
+  {
+   "id": "p13-7j",
+   "group": "g3",
+   "kind": "text",
+   "label": "7 j",
+   "answer": "ihre",
+   "x": 755,
+   "y": 991,
+   "w": 101,
+   "h": 22
+  },
+  {
+   "id": "p13-8n0",
+   "group": "g4",
+   "kind": "text",
+   "label": "8 Nominativ 1",
+   "answer": "ein",
+   "x": 172,
+   "y": 1269,
+   "w": 54,
+   "h": 22
+  },
+  {
+   "id": "p13-8a0",
+   "group": "g4",
+   "kind": "text",
+   "label": "8 Akkusativ 1",
+   "answer": "ein",
+   "x": 313,
+   "y": 1269,
+   "w": 53,
+   "h": 22
+  },
+  {
+   "id": "p13-8n1",
+   "group": "g4",
+   "kind": "text",
+   "label": "8 Nominativ 2",
+   "answer": "hre",
+   "x": 172,
+   "y": 1294,
+   "w": 54,
+   "h": 22
+  },
+  {
+   "id": "p13-8a1",
+   "group": "g4",
+   "kind": "text",
+   "label": "8 Akkusativ 2",
+   "answer": "hre",
+   "x": 313,
+   "y": 1294,
+   "w": 53,
+   "h": 22
+  },
+  {
+   "id": "p13-8n2",
+   "group": "g4",
+   "kind": "text",
+   "label": "8 Nominativ 3",
+   "answer": "eine",
+   "x": 172,
+   "y": 1327,
+   "w": 54,
+   "h": 22
+  },
+  {
+   "id": "p13-8a2",
+   "group": "g4",
+   "kind": "text",
+   "label": "8 Akkusativ 3",
+   "answer": "eine",
+   "x": 313,
+   "y": 1327,
+   "w": 53,
+   "h": 22
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 6a"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 6b"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 7"
+  },
+  {
+   "id": "g4",
+   "label": "Aufgabe 8"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the official Hueber key (Menschen A1, Lektion 14 Arbeitsbuch). Handwritten examples are not fields.",
+   "Ex 6a/8: the blank holds only the stem printed before the ending (e.g. 'sein' before printed 'e Kinder').",
+   "Ex 8: only the German columns are fields; the 'Meine Sprache' columns are individual.",
+   "Boxes placed from word coordinates and checked visually. Not marked verified."
+  ],
   "verifiedWords": 219,
-  "totalWords": 219,
-  "notes": []
+  "totalWords": 219
  }
 }
