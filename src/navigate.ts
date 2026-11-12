@@ -69,7 +69,7 @@ export function lessonUrl(slug: string, token?: string): string {
 
 export function slugFromLocation(): string {
   const file = location.pathname.split('/').pop() || 'index.html';
-  return fileToSlug[file] ?? 'index';
+  return fileToSlug[file] ?? fileToSlug[file + '.html'] ?? 'index';
 }
 
 // The App registers the live handler; without one (should not happen on a
