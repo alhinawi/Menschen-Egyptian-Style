@@ -727,7 +727,7 @@
    "h": 16
   },
   {
-   "text": "Gehören",
+   "text": "Gehéren",
    "x": 256,
    "y": 588,
    "w": 72,
@@ -748,7 +748,7 @@
    "h": 16
   },
   {
-   "text": "Dörte?",
+   "text": "Dérte?",
    "x": 459,
    "y": 592,
    "w": 56,
@@ -853,7 +853,7 @@
    "h": 20
   },
   {
-   "text": "Dörte.",
+   "text": "Dérte.",
    "x": 436,
    "y": 617,
    "w": 51,
@@ -1399,7 +1399,7 @@
    "h": 14
   },
   {
-   "text": "Übung",
+   "text": "Ubung",
    "x": 183,
    "y": 945,
    "w": 56,
@@ -2008,13 +2008,405 @@
    "h": 12
   }
  ],
- "fields": [],
- "audio": [],
- "groups": [],
+ "fields": [
+  {
+   "id": "p19-5b",
+   "group": "g1",
+   "kind": "text",
+   "label": "5b",
+   "answer": "nicht so teuer",
+   "x": 642,
+   "y": 376,
+   "w": 201,
+   "h": 22
+  },
+  {
+   "id": "p19-5c",
+   "group": "g1",
+   "kind": "text",
+   "label": "5c",
+   "answer": "ein Theater",
+   "x": 642,
+   "y": 400,
+   "w": 201,
+   "h": 22
+  },
+  {
+   "id": "p19-5d",
+   "group": "g1",
+   "kind": "text",
+   "label": "5d",
+   "answer": "in einem Bahnhof",
+   "x": 642,
+   "y": 426,
+   "w": 201,
+   "h": 22
+  },
+  {
+   "id": "p19-5e",
+   "group": "g1",
+   "kind": "text",
+   "label": "5e",
+   "answer": "tanzen",
+   "x": 642,
+   "y": 451,
+   "w": 201,
+   "h": 22
+  },
+  {
+   "id": "p19-6a2-gefällt",
+   "group": "g2",
+   "kind": "radio",
+   "label": "6 a (2) gefällt",
+   "answer": "false",
+   "name": "6a2",
+   "value": "gefällt",
+   "x": 689,
+   "y": 536,
+   "w": 62,
+   "h": 26
+  },
+  {
+   "id": "p19-6a2-gefallen",
+   "group": "g2",
+   "kind": "radio",
+   "label": "6 a (2) gefallen",
+   "answer": "true",
+   "name": "6a2",
+   "value": "gefallen",
+   "x": 765,
+   "y": 536,
+   "w": 76,
+   "h": 26
+  },
+  {
+   "id": "p19-6b1-Gehört",
+   "group": "g2",
+   "kind": "radio",
+   "label": "6 b (1) Gehört",
+   "answer": "false",
+   "name": "6b1",
+   "value": "Gehört",
+   "x": 174,
+   "y": 580,
+   "w": 65,
+   "h": 26
+  },
+  {
+   "id": "p19-6b1-Gehören",
+   "group": "g2",
+   "kind": "radio",
+   "label": "6 b (1) Gehören",
+   "answer": "true",
+   "name": "6b1",
+   "value": "Gehören",
+   "x": 253,
+   "y": 580,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "p19-6b2-gehört",
+   "group": "g2",
+   "kind": "radio",
+   "label": "6 b (2) gehört",
+   "answer": "true",
+   "name": "6b2",
+   "value": "gehört",
+   "x": 271,
+   "y": 608,
+   "w": 64,
+   "h": 26
+  },
+  {
+   "id": "p19-6b2-gehören",
+   "group": "g2",
+   "kind": "radio",
+   "label": "6 b (2) gehören",
+   "answer": "false",
+   "name": "6b2",
+   "value": "gehören",
+   "x": 348,
+   "y": 608,
+   "w": 77,
+   "h": 26
+  },
+  {
+   "id": "p19-6c-hilft",
+   "group": "g2",
+   "kind": "radio",
+   "label": "6 c hilft",
+   "answer": "true",
+   "name": "6c",
+   "value": "hilft",
+   "x": 213,
+   "y": 658,
+   "w": 48,
+   "h": 26
+  },
+  {
+   "id": "p19-6c-helfen",
+   "group": "g2",
+   "kind": "radio",
+   "label": "6 c helfen",
+   "answer": "false",
+   "name": "6c",
+   "value": "helfen",
+   "x": 269,
+   "y": 658,
+   "w": 64,
+   "h": 26
+  },
+  {
+   "id": "p19-6d-hilft",
+   "group": "g2",
+   "kind": "radio",
+   "label": "6 d hilft",
+   "answer": "false",
+   "name": "6d",
+   "value": "hilft",
+   "x": 821,
+   "y": 692,
+   "w": 45,
+   "h": 26
+  },
+  {
+   "id": "p19-6d-helfen",
+   "group": "g2",
+   "kind": "radio",
+   "label": "6 d helfen",
+   "answer": "true",
+   "name": "6d",
+   "value": "helfen",
+   "x": 881,
+   "y": 692,
+   "w": 60,
+   "h": 26
+  },
+  {
+   "id": "p19-6e1-Schmeckt",
+   "group": "g2",
+   "kind": "radio",
+   "label": "6 e (1) Schmeckt",
+   "answer": "true",
+   "name": "6e1",
+   "value": "Schmeckt",
+   "x": 171,
+   "y": 736,
+   "w": 90,
+   "h": 26
+  },
+  {
+   "id": "p19-6e1-Schmecken",
+   "group": "g2",
+   "kind": "radio",
+   "label": "6 e (1) Schmecken",
+   "answer": "false",
+   "name": "6e1",
+   "value": "Schmecken",
+   "x": 269,
+   "y": 736,
+   "w": 106,
+   "h": 26
+  },
+  {
+   "id": "p19-6e2-schmeckt",
+   "group": "g2",
+   "kind": "radio",
+   "label": "6 e (2) schmeckt",
+   "answer": "false",
+   "name": "6e2",
+   "value": "schmeckt",
+   "x": 756,
+   "y": 743,
+   "w": 87,
+   "h": 26
+  },
+  {
+   "id": "p19-6e2-schmecken",
+   "group": "g2",
+   "kind": "radio",
+   "label": "6 e (2) schmecken",
+   "answer": "true",
+   "name": "6e2",
+   "value": "schmecken",
+   "x": 858,
+   "y": 743,
+   "w": 101,
+   "h": 26
+  },
+  {
+   "id": "p19-7a",
+   "group": "g3",
+   "kind": "text",
+   "label": "7a",
+   "answer": "gehört",
+   "x": 268,
+   "y": 928,
+   "w": 104,
+   "h": 22
+  },
+  {
+   "id": "p19-7b",
+   "group": "g3",
+   "kind": "text",
+   "label": "7b",
+   "answer": "hilft",
+   "x": 268,
+   "y": 954,
+   "w": 104,
+   "h": 22
+  },
+  {
+   "id": "p19-7c",
+   "group": "g3",
+   "kind": "text",
+   "label": "7c",
+   "answer": "schmeckt",
+   "x": 268,
+   "y": 980,
+   "w": 92,
+   "h": 22
+  },
+  {
+   "id": "p19-7d",
+   "group": "g3",
+   "kind": "text",
+   "label": "7d",
+   "answer": "gefallen",
+   "x": 695,
+   "y": 906,
+   "w": 128,
+   "h": 22
+  },
+  {
+   "id": "p19-7e",
+   "group": "g3",
+   "kind": "text",
+   "label": "7e",
+   "answer": "gehören",
+   "x": 695,
+   "y": 932,
+   "w": 128,
+   "h": 22
+  },
+  {
+   "id": "p19-7f",
+   "group": "g3",
+   "kind": "text",
+   "label": "7f",
+   "answer": "helfen",
+   "x": 695,
+   "y": 957,
+   "w": 128,
+   "h": 22
+  },
+  {
+   "id": "p19-7g",
+   "group": "g3",
+   "kind": "text",
+   "label": "7g",
+   "answer": "schmecken",
+   "x": 695,
+   "y": 983,
+   "w": 128,
+   "h": 22
+  },
+  {
+   "id": "p19-8b",
+   "group": "g4",
+   "kind": "text",
+   "label": "8b",
+   "answer": "danken",
+   "x": 208,
+   "y": 1128,
+   "w": 129,
+   "h": 22
+  },
+  {
+   "id": "p19-8c",
+   "group": "g4",
+   "kind": "text",
+   "label": "8c",
+   "answer": "helfen",
+   "x": 312,
+   "y": 1154,
+   "w": 124,
+   "h": 22
+  },
+  {
+   "id": "p19-8d",
+   "group": "g4",
+   "kind": "text",
+   "label": "8d",
+   "answer": "gefallen",
+   "x": 490,
+   "y": 1183,
+   "w": 122,
+   "h": 22
+  },
+  {
+   "id": "p19-8e",
+   "group": "g4",
+   "kind": "text",
+   "label": "8e",
+   "answer": "Gehört",
+   "x": 170,
+   "y": 1209,
+   "w": 125,
+   "h": 22
+  },
+  {
+   "id": "p19-8f",
+   "group": "g4",
+   "kind": "text",
+   "label": "8f",
+   "answer": "Schmeckt",
+   "x": 170,
+   "y": 1233,
+   "w": 125,
+   "h": 22
+  }
+ ],
+ "audio": [
+  {
+   "id": "track11-1",
+   "src": "assets/ab-a12-cd2-track11.mp3",
+   "label": "CD2 · Track11",
+   "x": 50,
+   "y": 311,
+   "w": 54,
+   "h": 22
+  }
+ ],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 5"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 6"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 7"
+  },
+  {
+   "id": "g4",
+   "label": "Aufgabe 8"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the official Hueber Loesungsschluessel AB A1.2 (Lektion 15, Aufgaben 5-8).",
+   "Ex 6: radio boxes sit over the printed word choices; 6a first choice is the printed example, only the second is a field. Ex 7: only the verb blanks are fields.",
+   "Audio marker 2.11 mapped from the printed CD icon; audio content was not listened to.",
+   "Handwritten examples (5a viele, 7 gefällt, 8a gefällt) are not fields. Ex 4 has no key answer.",
+   "Boxes placed from word coordinates; not marked verified."
+  ],
   "verifiedWords": 286,
-  "totalWords": 286,
-  "notes": []
+  "totalWords": 286
  }
 }
