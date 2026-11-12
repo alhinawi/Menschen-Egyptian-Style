@@ -1021,13 +1021,6 @@
    "h": 8
   },
   {
-   "text": "10",
-   "x": 625,
-   "y": 950,
-   "w": 0,
-   "h": 2
-  },
-  {
    "text": "können",
    "x": 310,
    "y": 972,
@@ -1516,13 +1509,6 @@
    "y": 1086,
    "w": 31,
    "h": 9
-  },
-  {
-   "text": "is",
-   "x": 625,
-   "y": 1088,
-   "w": 0,
-   "h": 2
   },
   {
    "text": "auf",
@@ -2507,7 +2493,7 @@
   "notes": [
    "3a: printed blue example 1 eine Anzeige lesen captured as words, no field (example); icon strip captions captured, icons are graphics; no audio on page (reading task); answers from official Hueber key (3a 2-anmelden 3-schaffen 4-bekommen 5-abschliessen; 3b 1f 2f 3f 4r; 3c Fabian 1,6 Cherry 3,5 Lisa 2,4)"
   ],
-  "verifiedWords": 287,
-  "totalWords": 287
+  "verifiedWords": 285,
+  "totalWords": 285
  }
 }
