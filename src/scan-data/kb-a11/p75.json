@@ -1,0 +1,470 @@
+{
+  "book": "kb-a11",
+  "page": 75,
+  "image": "assets/kb-a11-p75.png",
+  "width": 848,
+  "height": 1200,
+  "words": [
+    {
+      "text": "AKTIONSSEITEN",
+      "x": 528,
+      "y": 128,
+      "w": 250,
+      "h": 23
+    },
+    {
+      "text": "Bekannte",
+      "x": 123,
+      "y": 218,
+      "w": 70,
+      "h": 13
+    },
+    {
+      "text": "Persönlichkeiten",
+      "x": 200,
+      "y": 217,
+      "w": 126,
+      "h": 14
+    },
+    {
+      "text": "Wer",
+      "x": 122,
+      "y": 240,
+      "w": 26,
+      "h": 11
+    },
+    {
+      "text": "ist",
+      "x": 154,
+      "y": 239,
+      "w": 16,
+      "h": 12
+    },
+    {
+      "text": "das?",
+      "x": 175,
+      "y": 238,
+      "w": 28,
+      "h": 12
+    },
+    {
+      "text": "Und",
+      "x": 209,
+      "y": 238,
+      "w": 26,
+      "h": 12
+    },
+    {
+      "text": "woher",
+      "x": 240,
+      "y": 238,
+      "w": 42,
+      "h": 12
+    },
+    {
+      "text": "kommt",
+      "x": 288,
+      "y": 238,
+      "w": 46,
+      "h": 12
+    },
+    {
+      "text": "er/sie?",
+      "x": 339,
+      "y": 238,
+      "w": 45,
+      "h": 13
+    },
+    {
+      "text": "Fragen",
+      "x": 123,
+      "y": 260,
+      "w": 44,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 172,
+      "y": 259,
+      "w": 19,
+      "h": 12
+    },
+    {
+      "text": "Ihre",
+      "x": 197,
+      "y": 259,
+      "w": 25,
+      "h": 11
+    },
+    {
+      "text": "Partnerin",
+      "x": 229,
+      "y": 258,
+      "w": 61,
+      "h": 12
+    },
+    {
+      "text": "/",
+      "x": 295,
+      "y": 259,
+      "w": 7,
+      "h": 13
+    },
+    {
+      "text": "Ihren",
+      "x": 308,
+      "y": 258,
+      "w": 34,
+      "h": 12
+    },
+    {
+      "text": "Partner",
+      "x": 348,
+      "y": 258,
+      "w": 49,
+      "h": 11
+    },
+    {
+      "text": "und",
+      "x": 402,
+      "y": 257,
+      "w": 24,
+      "h": 12
+    },
+    {
+      "text": "ergänzen",
+      "x": 432,
+      "y": 257,
+      "w": 60,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 498,
+      "y": 256,
+      "w": 19,
+      "h": 12
+    },
+    {
+      "text": "die",
+      "x": 531,
+      "y": 256,
+      "w": 11,
+      "h": 12
+    },
+    {
+      "text": "fehlenden",
+      "x": 547,
+      "y": 255,
+      "w": 65,
+      "h": 12
+    },
+    {
+      "text": "Informationen.",
+      "x": 619,
+      "y": 254,
+      "w": 101,
+      "h": 13
+    },
+    {
+      "text": "Wer",
+      "x": 173,
+      "y": 290,
+      "w": 26,
+      "h": 11
+    },
+    {
+      "text": "ist",
+      "x": 204,
+      "y": 289,
+      "w": 16,
+      "h": 11
+    },
+    {
+      "text": "das?",
+      "x": 225,
+      "y": 288,
+      "w": 28,
+      "h": 12
+    },
+    {
+      "text": "Das",
+      "x": 174,
+      "y": 310,
+      "w": 22,
+      "h": 11
+    },
+    {
+      "text": "ist",
+      "x": 201,
+      "y": 309,
+      "w": 16,
+      "h": 12
+    },
+    {
+      "text": "Angela",
+      "x": 222,
+      "y": 308,
+      "w": 46,
+      "h": 16
+    },
+    {
+      "text": "Merkel.",
+      "x": 273,
+      "y": 308,
+      "w": 50,
+      "h": 12
+    },
+    {
+      "text": "Woher",
+      "x": 329,
+      "y": 308,
+      "w": 43,
+      "h": 11
+    },
+    {
+      "text": "kommt",
+      "x": 377,
+      "y": 307,
+      "w": 48,
+      "h": 12
+    },
+    {
+      "text": "sie?",
+      "x": 430,
+      "y": 307,
+      "w": 24,
+      "h": 11
+    },
+    {
+      "text": "Sie",
+      "x": 174,
+      "y": 329,
+      "w": 19,
+      "h": 11
+    },
+    {
+      "text": "kommt",
+      "x": 197,
+      "y": 328,
+      "w": 48,
+      "h": 12
+    },
+    {
+      "text": "aus",
+      "x": 250,
+      "y": 332,
+      "w": 21,
+      "h": 8
+    },
+    {
+      "text": "Deutschland.",
+      "x": 277,
+      "y": 327,
+      "w": 87,
+      "h": 12
+    },
+    {
+      "text": "kommt",
+      "x": 490,
+      "y": 368,
+      "w": 45,
+      "h": 11
+    },
+    {
+      "text": "aus",
+      "x": 540,
+      "y": 372,
+      "w": 21,
+      "h": 7
+    },
+    {
+      "text": "‚Angela",
+      "x": 253,
+      "y": 415,
+      "w": 41,
+      "h": 14
+    },
+    {
+      "text": "Merkel",
+      "x": 299,
+      "y": 414,
+      "w": 42,
+      "h": 11
+    },
+    {
+      "text": "Österreich",
+      "x": 495,
+      "y": 481,
+      "w": 63,
+      "h": 11
+    },
+    {
+      "text": "‚Johann",
+      "x": 254,
+      "y": 552,
+      "w": 45,
+      "h": 13
+    },
+    {
+      "text": "Wolfgang",
+      "x": 303,
+      "y": 552,
+      "w": 57,
+      "h": 15
+    },
+    {
+      "text": "von",
+      "x": 364,
+      "y": 553,
+      "w": 22,
+      "h": 10
+    },
+    {
+      "text": "Goethe",
+      "x": 391,
+      "y": 551,
+      "w": 41,
+      "h": 11
+    },
+    {
+      "text": "Ägypten",
+      "x": 497,
+      "y": 618,
+      "w": 49,
+      "h": 15
+    },
+    {
+      "text": "‚Agatha",
+      "x": 256,
+      "y": 690,
+      "w": 42,
+      "h": 14
+    },
+    {
+      "text": "Christie",
+      "x": 303,
+      "y": 689,
+      "w": 47,
+      "h": 11
+    },
+    {
+      "text": "Indien",
+      "x": 499,
+      "y": 756,
+      "w": 39,
+      "h": 11
+    },
+    {
+      "text": "Pablo",
+      "x": 258,
+      "y": 827,
+      "w": 31,
+      "h": 11
+    },
+    {
+      "text": "Picasso",
+      "x": 294,
+      "y": 827,
+      "w": 42,
+      "h": 10
+    },
+    {
+      "text": "Mazedonien",
+      "x": 501,
+      "y": 894,
+      "w": 72,
+      "h": 10
+    },
+    {
+      "text": "Auflösung",
+      "x": 129,
+      "y": 967,
+      "w": 72,
+      "h": 17
+    },
+    {
+      "text": "zu",
+      "x": 206,
+      "y": 971,
+      "w": 15,
+      "h": 8
+    },
+    {
+      "text": "Seite",
+      "x": 226,
+      "y": 967,
+      "w": 35,
+      "h": 12
+    },
+    {
+      "text": "20:",
+      "x": 267,
+      "y": 967,
+      "w": 21,
+      "h": 11
+    },
+    {
+      "text": "fünfundsiebzig",
+      "x": 698,
+      "y": 1143,
+      "w": 93,
+      "h": 15
+    },
+    {
+      "text": "Partner",
+      "x": 662,
+      "y": 218,
+      "w": 50,
+      "h": 13
+    },
+    {
+      "text": "A",
+      "x": 717,
+      "y": 218,
+      "w": 12,
+      "h": 13
+    },
+    {
+      "text": "Basel",
+      "x": 356,
+      "y": 983,
+      "w": 28,
+      "h": 8
+    },
+    {
+      "text": "Zürich",
+      "x": 429,
+      "y": 985,
+      "w": 30,
+      "h": 8
+    },
+    {
+      "text": "Bern",
+      "x": 373,
+      "y": 1022,
+      "w": 24,
+      "h": 8
+    },
+    {
+      "text": "Genf",
+      "x": 303,
+      "y": 1084,
+      "w": 26,
+      "h": 8
+    }
+  ],
+  "fields": [],
+  "audio": [],
+  "groups": [],
+  "review": {
+    "status": "verified",
+    "verifiedWords": 0,
+    "notes": [
+      "All printed words reviewed against the scan.",
+      "Blue cursive Deutschland in row a is a pen annotation on the scan, not printed text - excluded.",
+      "Table blanks are partner-information gaps: answers live on the Partner B page, not printed here - no fields.",
+      "Swiss map city labels (Basel, Zürich, Bern, Genf) added manually from the scan. No audio marker printed."
+    ]
+  }
+}
