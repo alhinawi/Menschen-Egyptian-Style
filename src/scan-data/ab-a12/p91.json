@@ -1686,15 +1686,240 @@
    "h": 9
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p91-4a",
+   "group": "g1",
+   "kind": "text",
+   "label": "4 a",
+   "answer": "um",
+   "x": 466,
+   "y": 186,
+   "w": 62,
+   "h": 16
+  },
+  {
+   "id": "p91-4b1",
+   "group": "g1",
+   "kind": "text",
+   "label": "4 b1",
+   "answer": "am",
+   "x": 227,
+   "y": 222,
+   "w": 63,
+   "h": 16
+  },
+  {
+   "id": "p91-4b2",
+   "group": "g1",
+   "kind": "text",
+   "label": "4 b2",
+   "answer": "von",
+   "x": 440,
+   "y": 222,
+   "w": 60,
+   "h": 16
+  },
+  {
+   "id": "p91-4b3",
+   "group": "g1",
+   "kind": "text",
+   "label": "4 b3",
+   "answer": "bis",
+   "x": 572,
+   "y": 222,
+   "w": 60,
+   "h": 16
+  },
+  {
+   "id": "p91-4c1",
+   "group": "g1",
+   "kind": "text",
+   "label": "4 c1",
+   "answer": "Im",
+   "x": 126,
+   "y": 259,
+   "w": 59,
+   "h": 16
+  },
+  {
+   "id": "p91-4c2",
+   "group": "g1",
+   "kind": "text",
+   "label": "4 c2",
+   "answer": "vom",
+   "x": 405,
+   "y": 259,
+   "w": 60,
+   "h": 16
+  },
+  {
+   "id": "p91-4c3",
+   "group": "g1",
+   "kind": "text",
+   "label": "4 c3",
+   "answer": "bis",
+   "x": 513,
+   "y": 259,
+   "w": 62,
+   "h": 16
+  },
+  {
+   "id": "p91-4d",
+   "group": "g1",
+   "kind": "text",
+   "label": "4 d",
+   "answer": "Nach",
+   "x": 126,
+   "y": 279,
+   "w": 60,
+   "h": 16
+  },
+  {
+   "id": "p91-4e",
+   "group": "g1",
+   "kind": "text",
+   "label": "4 e",
+   "answer": "In",
+   "x": 126,
+   "y": 299,
+   "w": 60,
+   "h": 16
+  },
+  {
+   "id": "p91-4f1",
+   "group": "g1",
+   "kind": "text",
+   "label": "4 f1",
+   "answer": "Ab",
+   "x": 126,
+   "y": 337,
+   "w": 62,
+   "h": 16
+  },
+  {
+   "id": "p91-4f2",
+   "group": "g1",
+   "kind": "text",
+   "label": "4 f2",
+   "answer": "für",
+   "x": 296,
+   "y": 337,
+   "w": 61,
+   "h": 16
+  },
+  {
+   "id": "p91-5a",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "5 a",
+   "answer": "false",
+   "x": 518,
+   "y": 412,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p91-5b",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "5 b",
+   "answer": "true",
+   "x": 518,
+   "y": 431,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p91-5c",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "5 c",
+   "answer": "true",
+   "x": 518,
+   "y": 451,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p91-5d",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "5 d",
+   "answer": "false",
+   "x": 518,
+   "y": 470,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p91-7a",
+   "group": "g3",
+   "kind": "text",
+   "label": "7 a",
+   "answer": "Neujahr",
+   "x": 108,
+   "y": 862,
+   "w": 154,
+   "h": 20
+  },
+  {
+   "id": "p91-7b",
+   "group": "g3",
+   "kind": "text",
+   "label": "7 b",
+   "answer": "Hochzeit",
+   "x": 133,
+   "y": 982,
+   "w": 112,
+   "h": 18
+  },
+  {
+   "id": "p91-7c",
+   "group": "g3",
+   "kind": "text",
+   "label": "7 c",
+   "answer": "Prüfungen",
+   "x": 436,
+   "y": 857,
+   "w": 154,
+   "h": 18
+  },
+  {
+   "id": "p91-7d",
+   "group": "g3",
+   "kind": "text",
+   "label": "7 d",
+   "answer": "Einweihungsparty",
+   "x": 436,
+   "y": 987,
+   "w": 259,
+   "h": 20
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 4"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 5"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 7"
+  }
+ ],
  "review": {
   "status": "partial",
-  "verifiedWords": 240,
-  "totalWords": 240,
   "notes": [
-   "Activation reviewed on a five-page visual sample (71,76,88,98,105): word boxes align with printed text, but these are partial OCR-derived layers. verifiedWords was supplied as the retained-word count by the worker, not an independent word-by-word audit. Some handwriting, symbols, fragments and printed words may be omitted or imperfect. No exercise fields or audio added."
-  ]
+   "Answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 24).",
+   "Ex 5 (listening, checkbox: key says richtig b, c) and ex 7 filled from key. Audio icons 2 40-43 / 2 44 not mapped (no such track files). Ex 6 (numbering, vowel gaps) not mapped.",
+   "Handwritten example not a field."
+  ],
+  "verifiedWords": 240,
+  "totalWords": 240
  }
 }

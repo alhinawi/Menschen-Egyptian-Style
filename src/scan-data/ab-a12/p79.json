@@ -909,15 +909,110 @@
    "h": 9
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p79-60",
+   "group": "g1",
+   "kind": "text",
+   "label": "6 b 1",
+   "answer": "kleiner",
+   "x": 205,
+   "y": 395,
+   "w": 115,
+   "h": 24
+  },
+  {
+   "id": "p79-61",
+   "group": "g1",
+   "kind": "text",
+   "label": "6 b 2",
+   "answer": "kleinsten",
+   "x": 455,
+   "y": 395,
+   "w": 115,
+   "h": 24
+  },
+  {
+   "id": "p79-62",
+   "group": "g1",
+   "kind": "text",
+   "label": "6 c 3",
+   "answer": "ältesten",
+   "x": 217,
+   "y": 454,
+   "w": 115,
+   "h": 24
+  },
+  {
+   "id": "p79-63",
+   "group": "g1",
+   "kind": "text",
+   "label": "6 c 4",
+   "answer": "modernsten",
+   "x": 470,
+   "y": 454,
+   "w": 107,
+   "h": 24
+  },
+  {
+   "id": "p79-64",
+   "group": "g1",
+   "kind": "text",
+   "label": "6 d 5",
+   "answer": "am meisten",
+   "x": 225,
+   "y": 512,
+   "w": 115,
+   "h": 24
+  },
+  {
+   "id": "p79-65",
+   "group": "g1",
+   "kind": "text",
+   "label": "6 d 6",
+   "answer": "billigsten",
+   "x": 382,
+   "y": 512,
+   "w": 113,
+   "h": 24
+  },
+  {
+   "id": "p79-66",
+   "group": "g1",
+   "kind": "text",
+   "label": "6 d 7",
+   "answer": "mehr",
+   "x": 250,
+   "y": 570,
+   "w": 115,
+   "h": 24
+  },
+  {
+   "id": "p79-67",
+   "group": "g1",
+   "kind": "text",
+   "label": "6 e 8",
+   "answer": "schöner",
+   "x": 132,
+   "y": 590,
+   "w": 116,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 6"
+  }
+ ],
  "review": {
   "status": "partial",
-  "verifiedWords": 129,
-  "totalWords": 129,
   "notes": [
-   "Activation reviewed on a five-page visual sample (71,76,88,98,105): word boxes align with printed text, but these are partial OCR-derived layers. verifiedWords was supplied as the retained-word count by the worker, not an independent word-by-word audit. Some handwriting, symbols, fragments and printed words may be omitted or imperfect. No exercise fields or audio added."
-  ]
+   "Answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 22).",
+   "Ex 7 (adjective table) not mapped: row/column order not unambiguous; handwritten examples not fields."
+  ],
+  "verifiedWords": 129,
+  "totalWords": 129
  }
 }

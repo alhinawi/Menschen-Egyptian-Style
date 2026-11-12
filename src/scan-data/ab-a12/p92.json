@@ -1357,15 +1357,114 @@
    "h": 15
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p92-8b",
+   "group": "g1",
+   "kind": "text",
+   "label": "8 b",
+   "answer": "Frohes neues Jahr.",
+   "x": 557,
+   "y": 177,
+   "w": 171,
+   "h": 18
+  },
+  {
+   "id": "p92-8c",
+   "group": "g1",
+   "kind": "text",
+   "label": "8 c",
+   "answer": "Gut gemacht.",
+   "x": 557,
+   "y": 196,
+   "w": 171,
+   "h": 18
+  },
+  {
+   "id": "p92-8d",
+   "group": "g1",
+   "kind": "text",
+   "label": "8 d",
+   "answer": "Alles Gute",
+   "x": 557,
+   "y": 215,
+   "w": 171,
+   "h": 18
+  },
+  {
+   "id": "p92-8e",
+   "group": "g1",
+   "kind": "text",
+   "label": "8 e",
+   "answer": "Frohe Weihnachten.",
+   "x": 557,
+   "y": 234,
+   "w": 171,
+   "h": 18
+  },
+  {
+   "id": "p92-11Ich",
+   "group": "g2",
+   "kind": "text",
+   "label": "11 Ich",
+   "answer": "würde",
+   "x": 243,
+   "y": 549,
+   "w": 122,
+   "h": 18
+  },
+  {
+   "id": "p92-11Er_Es_Sie",
+   "group": "g2",
+   "kind": "text",
+   "label": "11 Er/Es/Sie",
+   "answer": "würde",
+   "x": 243,
+   "y": 588,
+   "w": 122,
+   "h": 18
+  },
+  {
+   "id": "p92-11Wir",
+   "group": "g2",
+   "kind": "text",
+   "label": "11 Wir",
+   "answer": "würden",
+   "x": 243,
+   "y": 607,
+   "w": 122,
+   "h": 18
+  },
+  {
+   "id": "p92-11Sie_Sie",
+   "group": "g2",
+   "kind": "text",
+   "label": "11 Sie/Sie",
+   "answer": "würden",
+   "x": 243,
+   "y": 646,
+   "w": 122,
+   "h": 18
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 8"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 11"
+  }
+ ],
  "review": {
   "status": "partial",
-  "verifiedWords": 193,
-  "totalWords": 193,
   "notes": [
-   "Activation reviewed on a five-page visual sample (71,76,88,98,105): word boxes align with printed text, but these are partial OCR-derived layers. verifiedWords was supplied as the retained-word count by the worker, not an independent word-by-word audit. Some handwriting, symbols, fragments and printed words may be omitted or imperfect. No exercise fields or audio added."
-  ]
+   "Answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 24).",
+   "Ex 10 (matching), ex 12 (two-line answers) and the right column of ex 11 not mapped. Handwritten examples not fields."
+  ],
+  "verifiedWords": 193,
+  "totalWords": 193
  }
 }
