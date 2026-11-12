@@ -1,7 +1,7 @@
 export default function mount(){
 /* Egyptian Arabic sentence meanings for Lektion 7-9 (Modul 3). */
 Object.assign(window.MENSCHEN_PHRASES,{
- "Menschen · Lektion 7–9": "مانشين · الدروس من 7 لـ 9",
+ "Menschen · Lektion 7–9": "مينشن · الدروس من 7 لـ 9",
  "Sehen Sie das Foto an. Was für ein Kompliment macht der Mann wohl der Frau?": "بص على الصورة. ترى الراجل هيقول للست مجاملة إيه؟",
  "Ich glaube, er sagt: „Du …": "أنا أظن إنه بيقول: «إنتِ …",
  "Was passt? Hören Sie und kreuzen Sie an.": "إيه اللي يناسب؟ اسمع وعلّم على الإجابة الصح.",

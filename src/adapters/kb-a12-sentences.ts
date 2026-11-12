@@ -22,7 +22,7 @@ Object.assign(window.MENSCHEN_PHRASES,{
 'Tut mir leid, meine Uhr ist kaputt.':'أنا آسف، ساعتي خربانة.',
 'Kein Problem!':'مش مشكلة!',
 'Schade.':'يا خسارة.',
-'Hast Du Lust?':'عندك نية؟ / تحب؟'
+'Hast Du Lust?':'عندك نفس؟'
 });
 
 }
