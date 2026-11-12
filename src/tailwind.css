@@ -293,3 +293,18 @@ html[data-theme="dark"] .page .corrections46 s{color:#b9b9a8}
   &[aria-pressed="false"] .soundSlash { display: block; }
   &[aria-pressed="false"] .soundWaves { display: none; }
 }
+
+/* Global text-size lock, previously repeated identically in per-lesson css. */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+
+/* AB L7-9 option controls keep their printed-circle and checked states. */
+@utility ab79Pick {
+  &::before { content: '○ '; color: #666; }
+  &.picked::before { content: '● '; color: #274a8c; }
+  &.answerCorrect { background: #e0f0df; }
+  &.answerWrong { background: #f8d1c8; }
+}
+/* AB L10-12 markable words. The selected state is set after a task click. */
+@utility abTaskVerb {
+  &.selectedVerb { background: #ffe9a8; border-bottom-color: #b03a2e; font-weight: 700; }
+}
