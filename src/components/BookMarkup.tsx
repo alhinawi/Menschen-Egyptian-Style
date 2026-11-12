@@ -1,3 +1,4 @@
+import {NativePilot} from './NativePilot';
 import {HybridScan} from './HybridScan';
 import {scanData} from '../scan-data/registry';
 import {WordBank} from '../exercises/WordBank';
@@ -32,6 +33,7 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   if (typeof node === 'string') return node;
   const [tag, attrs, children] = node;
   const props: Props = {key};
+  if(tag === 'NativePilot')return createElement(NativePilot,{key,page:attrs.page});
   if(tag === 'HybridScan'){const data=scanData[attrs.book+':'+attrs.page];return data ? createElement(HybridScan,{key,data}) : null;}
   if (tag === 'ReactTaskMode') return createElement(TaskMode, {key, kind: attrs.kind});
   if (tag === 'ReactSelectionControls') return createElement(SelectionControls, {key});
