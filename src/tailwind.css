@@ -316,3 +316,62 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 @utility kb2124Verb {
   &.scriptMarkWord.selectedVerb, &.screenplay .tapWord.selectedVerb { background: #ffeb51; }
 }
+
+/* The old standalone HTML owned these layouts inline. Keep one shared,
+   scoped Tailwind component so SPA entrypoints and lesson styles cannot lose it. */
+@utility originalViewer {
+  position: fixed; inset: 0; z-index: 100;
+  display: flex; flex-direction: column;
+  height: 100dvh; overflow: hidden;
+  background: #f3efe5; color: #354738;
+  font: 14px/1.4 Arial, sans-serif;
+  color-scheme: light;
+  &, & * { box-sizing: border-box; }
+  & > header {
+    flex: 0 0 auto; min-height: 76px;
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    padding: 10px 12px; padding-top: max(10px, env(safe-area-inset-top));
+    background: #fffefa; border-bottom: 1px solid #d8c8a6;
+  }
+  & > header > div { flex: 1; min-width: 0; text-align: center; }
+  & > header b { font: 600 23px/1.15 Georgia, serif; color: #354738; }
+  & > header span { display: inline-block; font: 11px/1.4 Arial, sans-serif; color: #746a58; margin-top: 4px; }
+  & button {
+    appearance: none; cursor: pointer; touch-action: manipulation;
+    display: inline-flex; align-items: center; justify-content: center;
+    min-width: 40px; min-height: 40px; padding: 8px 11px;
+    border: 1px solid #d8c8a6; border-radius: 6px;
+    background: #fffefa; color: #354738; font: 13px/1.2 Arial, sans-serif;
+  }
+  & button:hover { background: #f1e9d8; border-color: #b79a67; }
+  & button:focus-visible { outline: 2px solid #713c46; outline-offset: 2px; }
+  & button:disabled { opacity: .38; cursor: default; }
+  & > header button { flex: 0 0 42px; font-size: 22px; padding: 5px; }
+  & #canvas {
+    flex: 1 1 auto; min-height: 0; width: 100%;
+    overflow: auto; touch-action: none; overscroll-behavior: none;
+    background: #e7e2d7;
+  }
+  & #paper {
+    display: block; max-width: none; width: 100%; height: auto; margin: 0;
+    user-select: none; -webkit-user-drag: none;
+  }
+  & > footer {
+    flex: 0 0 auto; background: #fffefa; border-top: 1px solid #d8c8a6;
+    padding: 10px 12px; padding-bottom: max(10px, env(safe-area-inset-bottom));
+    box-shadow: 0 -3px 20px #4537230a;
+  }
+  & .zoomRow { display: flex; align-items: center; justify-content: center; gap: 6px; }
+  & .zoomRow span { min-width: 43px; text-align: center; font-size: 12px; font-variant-numeric: tabular-nums; }
+  & .pageRow { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 8px; }
+  & .pageRow span { font-size: 12px; font-variant-numeric: tabular-nums; }
+  & #fit { background: #713c46; color: #fffefa; border-color: #713c46; }
+  & #fit:hover { background: #5e3039; }
+  & .hint {
+    position: absolute; bottom: calc(116px + env(safe-area-inset-bottom));
+    left: 50%; transform: translateX(-50%); max-width: calc(100% - 24px);
+    white-space: nowrap; background: #fffefae8; color: #746a58;
+    border: 1px solid #d8c8a6; border-radius: 20px; padding: 6px 10px;
+    font-size: 10px; pointer-events: none; transition: opacity .2s;
+  }
+}
