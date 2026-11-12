@@ -290,6 +290,8 @@ def build(p):
         data['wordStyle'].update(po['wordStyle'])
     if po.get('checks'):
         data['checks'].update(po['checks'])
+    if po.get('wordsAdd'):
+        data['wordsAdd'] = po['wordsAdd']
     if po.get('audioAdd'):
         data['audioAdd'] = po['audioAdd']
     if po.get('linesAdd'):

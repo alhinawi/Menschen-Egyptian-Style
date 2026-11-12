@@ -21,7 +21,7 @@ export function NativeAB12({page}:{page:string}){
  const lines=useMemo<Line[]>(()=>{
   if(!scan||!data)return[];
   const drop=new Set(data.drop);
-  const words=scan.words.filter((_,i)=>!drop.has(i)) as W[];
+  const words=(scan.words.filter((_,i)=>!drop.has(i)) as W[]).concat((data.wordsAdd||[]) as W[]);
   const hs=words.map(w=>w.h).sort((a,b)=>a-b);
   const mode=hs[Math.floor(hs.length/2)]||20;
   const sorted=[...words].sort((a,b)=>a.y-b.y);
@@ -63,7 +63,7 @@ export function NativeAB12({page}:{page:string}){
  const rules=data.lines.filter(l=>!removedLines.some(r=>Math.abs(r.x-l.x)<12&&Math.abs(r.y-l.y)<12&&Math.abs(r.w-l.w)<12&&Math.abs(r.h-l.h)<12));
  const wordSpan=(w:W,keyPref:string)=>{
   const i=scan.words.indexOf(w);
-  const st=data.wordStyle[String(i)]||{};
+  const st=i>=0?data.wordStyle[String(i)]||{}:{};
   const tap=/\p{L}/u.test(w.text);
   return <span key={keyPref} className={tap?'tapWord':undefined} role={tap?'button':undefined} tabIndex={tap?0:undefined} data-word={tap?cleanWord(w.text):undefined} data-phrase={w.phrase||w.text} aria-label={tap?`${w.text} · Bedeutung`:undefined} style={{color:st.c,fontWeight:st.b?700:undefined}}>{w.text}</span>;
  };
