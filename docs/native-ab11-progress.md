@@ -74,3 +74,12 @@ Three more native pages finish lesson 5's main work and TEST. The cumulative ass
 - Eleven closed-task checks sit below their work. Color painting, marked words, forms, radios, matching, stress choices and open notes persist across reload. The word-meaning dialog and secondary Original link remain available.
 - Verification: typecheck/build, hybrid regression, all eight previous lesson4/5 pages and the three-page Chrome320/390 suite. Correct and wrong answers, changed-feedback clearing, saved controls, all three actual playable audio files, loaded art, no replacement selects, text/field collisions and bounds are asserted. Native untouched and filled screenshots at both widths were inspected against scans.
 - Layout caveat: check buttons and frame borders require slightly compressed spacing in dense TEST/pronunciation sections. Original illustration crops are contained, never scan-primary.
+
+## Batch 6: AB A1.1 pages 57-59
+
+Three native lesson7 closing pages bring this lane to37 of95 assigned pages,58 remaining. The separate page41-56 lane is untouched.
+
+- Source email text and markable questions, saved personal notes/reply, native pronunciation examples and selectable stress words. One closed rule check; CD1 tracks34-36 remain original playable MP3s.
+- Page58 preserves the source TEST anagrams, weekly schedule, verb prompts, sentence-order prompts, compliment letter hints and score table. Five closed checks accept sentence variants with valid changed emphasis.
+- Page59 has native selectable vocabulary, visible framed saved translation fields, personal notes and a contained original illustration strip. No correctness claim for personal writing or translations.
+- Chrome320/390 normal-click tests cover six correct/wrong checks, feedback reset, persistence of fields/radios/question and stress marks, source audio via the shared chooser, meaning dialogs, loaded images, no dropdown replacements, collisions and bounds. Typecheck/build and hybrid regression pass. Actual untouched/filled pixels inspected against the source scans; dense pronunciation/TEST spacing is compressed to fit checks and full input frames.
