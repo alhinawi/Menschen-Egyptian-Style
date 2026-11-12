@@ -1,4 +1,5 @@
 import {HybridScan} from './HybridScan';
+import {NativeAB12} from './NativeAB12';
 import {scanData} from '../scan-data/registry';
 import {WordBank} from '../exercises/WordBank';
 import {RatingDot} from '../persistence/RatingDot';
@@ -32,6 +33,7 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   if (typeof node === 'string') return node;
   const [tag, attrs, children] = node;
   const props: Props = {key};
+  if(tag === 'NativeAB12')return createElement(NativeAB12,{key,page:attrs.page});
   if(tag === 'HybridScan'){const data=scanData[attrs.book+':'+attrs.page];return data ? createElement(HybridScan,{key,data}) : null;}
   if (tag === 'ReactTaskMode') return createElement(TaskMode, {key, kind: attrs.kind});
   if (tag === 'ReactSelectionControls') return createElement(SelectionControls, {key});
