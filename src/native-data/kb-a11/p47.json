@@ -1,0 +1,1073 @@
+{
+  "book": "kb-a11",
+  "page": 47,
+  "width": 1075,
+  "height": 1521,
+  "words": [],
+  "art": [
+    {
+      "src": "assets/book-crops/native-p47-strip.png",
+      "x": 0,
+      "y": 65,
+      "w": 1013,
+      "h": 101,
+      "name": "strip"
+    },
+    {
+      "src": "assets/book-crops/native-p47-chatphotos.png",
+      "x": 500,
+      "y": 322,
+      "w": 112,
+      "h": 112,
+      "name": "chatphotos"
+    },
+    {
+      "src": "assets/book-crops/native-p47-daytimes.png",
+      "x": 209,
+      "y": 1302,
+      "w": 609,
+      "h": 61,
+      "name": "daytimes"
+    }
+  ],
+  "fields": [
+    {
+      "id": "a1",
+      "group": "task6a",
+      "kind": "text",
+      "label": "Manuel und Tamara gehen ins",
+      "answer": "Kino",
+      "x": 690,
+      "y": 588,
+      "w": 200,
+      "h": 22
+    },
+    {
+      "id": "a2",
+      "group": "task6a",
+      "kind": "text",
+      "label": "Manuel trifft Tamara heute um",
+      "answer": "vier Uhr|vier",
+      "x": 693,
+      "y": 648,
+      "w": 200,
+      "h": 22
+    },
+    {
+      "id": "t2",
+      "group": "task7a",
+      "kind": "text",
+      "label": "Woche 18, Tag 2 (nach Montag)",
+      "answer": "Dienstag",
+      "x": 398,
+      "y": 1233,
+      "w": 100,
+      "h": 22
+    },
+    {
+      "id": "t4",
+      "group": "task7a",
+      "kind": "text",
+      "label": "Woche 18, Tag 4 (nach Mittwoch)",
+      "answer": "Donnerstag",
+      "x": 602,
+      "y": 1233,
+      "w": 100,
+      "h": 22
+    },
+    {
+      "id": "t5",
+      "group": "task7a",
+      "kind": "text",
+      "label": "Woche 18, Tag 5",
+      "answer": "Freitag",
+      "x": 704,
+      "y": 1233,
+      "w": 100,
+      "h": 22
+    },
+    {
+      "id": "t6",
+      "group": "task7a",
+      "kind": "text",
+      "label": "Woche 18, Tag 6",
+      "answer": "Samstag",
+      "x": 806,
+      "y": 1233,
+      "w": 100,
+      "h": 22
+    },
+    {
+      "id": "t7",
+      "group": "task7a",
+      "kind": "text",
+      "label": "Woche 18, Tag 7",
+      "answer": "Sonntag",
+      "x": 908,
+      "y": 1233,
+      "w": 100,
+      "h": 22
+    },
+    {
+      "id": "vormittag",
+      "group": "task7b",
+      "kind": "select",
+      "label": "der Vormittag",
+      "answer": "B",
+      "options": [
+        {
+          "value": "A",
+          "label": "A"
+        },
+        {
+          "value": "B",
+          "label": "B"
+        },
+        {
+          "value": "C",
+          "label": "C"
+        },
+        {
+          "value": "D",
+          "label": "D"
+        },
+        {
+          "value": "E",
+          "label": "E"
+        },
+        {
+          "value": "F",
+          "label": "F"
+        }
+      ],
+      "x": 208,
+      "y": 1380,
+      "w": 34,
+      "h": 22
+    },
+    {
+      "id": "abend",
+      "group": "task7b",
+      "kind": "select",
+      "label": "der Abend",
+      "answer": "E",
+      "options": [
+        {
+          "value": "A",
+          "label": "A"
+        },
+        {
+          "value": "B",
+          "label": "B"
+        },
+        {
+          "value": "C",
+          "label": "C"
+        },
+        {
+          "value": "D",
+          "label": "D"
+        },
+        {
+          "value": "E",
+          "label": "E"
+        },
+        {
+          "value": "F",
+          "label": "F"
+        }
+      ],
+      "x": 404,
+      "y": 1380,
+      "w": 34,
+      "h": 22
+    },
+    {
+      "id": "nachmittag",
+      "group": "task7b",
+      "kind": "select",
+      "label": "der Nachmittag",
+      "answer": "D",
+      "options": [
+        {
+          "value": "A",
+          "label": "A"
+        },
+        {
+          "value": "B",
+          "label": "B"
+        },
+        {
+          "value": "C",
+          "label": "C"
+        },
+        {
+          "value": "D",
+          "label": "D"
+        },
+        {
+          "value": "E",
+          "label": "E"
+        },
+        {
+          "value": "F",
+          "label": "F"
+        }
+      ],
+      "x": 568,
+      "y": 1380,
+      "w": 34,
+      "h": 22
+    },
+    {
+      "id": "nacht",
+      "group": "task7b",
+      "kind": "select",
+      "label": "die Nacht",
+      "answer": "F",
+      "options": [
+        {
+          "value": "A",
+          "label": "A"
+        },
+        {
+          "value": "B",
+          "label": "B"
+        },
+        {
+          "value": "C",
+          "label": "C"
+        },
+        {
+          "value": "D",
+          "label": "D"
+        },
+        {
+          "value": "E",
+          "label": "E"
+        },
+        {
+          "value": "F",
+          "label": "F"
+        }
+      ],
+      "x": 209,
+      "y": 1408,
+      "w": 34,
+      "h": 22
+    },
+    {
+      "id": "mittag",
+      "group": "task7b",
+      "kind": "select",
+      "label": "der Mittag",
+      "answer": "C",
+      "options": [
+        {
+          "value": "A",
+          "label": "A"
+        },
+        {
+          "value": "B",
+          "label": "B"
+        },
+        {
+          "value": "C",
+          "label": "C"
+        },
+        {
+          "value": "D",
+          "label": "D"
+        },
+        {
+          "value": "E",
+          "label": "E"
+        },
+        {
+          "value": "F",
+          "label": "F"
+        }
+      ],
+      "x": 404,
+      "y": 1408,
+      "w": 34,
+      "h": 22
+    },
+    {
+      "id": "vorschlag",
+      "group": "task6b",
+      "kind": "text",
+      "label": "Weitere Vorschläge, eine Wendung je Zeile",
+      "x": 221,
+      "y": 950,
+      "w": 278,
+      "h": 70,
+      "answer": "Gehen wir ins Kino?\nLust auf …?",
+      "unordered": true
+    },
+    {
+      "id": "ja",
+      "group": "task6b",
+      "kind": "text",
+      "label": "Weitere Reaktionen: ☺  Ja, klar.",
+      "x": 588,
+      "y": 871,
+      "w": 408,
+      "h": 40,
+      "answer": "Gute Idee!\nOkay.",
+      "unordered": true
+    },
+    {
+      "id": "nein",
+      "group": "task6b",
+      "kind": "text",
+      "label": "Weitere Reaktionen: ☹  Ich kann leider nicht. Ich gehe …",
+      "x": 588,
+      "y": 935,
+      "w": 408,
+      "h": 40,
+      "answer": "Tut mir leid, ich habe keine Lust.\nHeute Abend habe ich leider keine Zeit.",
+      "unordered": true
+    },
+    {
+      "id": "vielleicht",
+      "group": "task6b",
+      "kind": "text",
+      "label": "Weitere Reaktionen: ☹  Vielleicht.",
+      "x": 588,
+      "y": 999,
+      "w": 408,
+      "h": 40,
+      "answer": "Das weiß ich noch nicht.",
+      "unordered": true
+    },
+    {
+      "id": "t1",
+      "group": "task7a",
+      "kind": "text",
+      "label": "Woche 18, Tag 1",
+      "x": 296,
+      "y": 1233,
+      "w": 100,
+      "h": 24,
+      "answer": "Montag"
+    },
+    {
+      "id": "t3",
+      "group": "task7a",
+      "kind": "text",
+      "label": "Woche 18, Tag 3",
+      "x": 500,
+      "y": 1233,
+      "w": 100,
+      "h": 24,
+      "answer": "Mittwoch"
+    },
+    {
+      "id": "morgen",
+      "group": "task7b",
+      "kind": "text",
+      "label": "der Morgen: Bildbuchstabe",
+      "answer": "A",
+      "x": 605,
+      "y": 1408,
+      "w": 32,
+      "h": 24
+    }
+  ],
+  "audio": [],
+  "groups": [
+    {
+      "id": "task6a",
+      "label": "6a",
+      "x": 694,
+      "y": 681
+    },
+    {
+      "id": "task7a",
+      "label": "7a",
+      "x": 850,
+      "y": 1265
+    },
+    {
+      "id": "task7b",
+      "label": "7b",
+      "x": 210,
+      "y": 1440
+    },
+    {
+      "id": "task6b",
+      "label": "6b",
+      "x": 211,
+      "y": 1037
+    }
+  ],
+  "titles": [
+    [
+      "6",
+      165,
+      251
+    ],
+    [
+      "7",
+      165,
+      1130
+    ]
+  ],
+  "review": {
+    "status": "source-reviewed",
+    "sourceNotes": [
+      "Manual native transcription checked against original printed page 47. Original art inspected at source-relative aspect and framing. Correct/wrong checks, persistence, translations and image bounds verified at 320px and 390px. Open writing is saved and is not falsely auto-graded."
+    ]
+  },
+  "panels": [],
+  "shapes": [
+    {
+      "x": 719,
+      "y": 410,
+      "w": 266,
+      "h": 117,
+      "background": "#fff",
+      "border": "3px double #6c99b1"
+    },
+    {
+      "x": 209,
+      "y": 771,
+      "w": 800,
+      "h": 74,
+      "background": "#fffbc6",
+      "border": "0"
+    },
+    {
+      "x": 209,
+      "y": 850,
+      "w": 300,
+      "h": 193,
+      "background": "#fff",
+      "border": "1px solid #d8d6c7"
+    },
+    {
+      "x": 550,
+      "y": 850,
+      "w": 459,
+      "h": 193,
+      "background": "#fff",
+      "border": "1px solid #d8d6c7"
+    },
+    {
+      "x": 210,
+      "y": 1200,
+      "w": 800,
+      "h": 24,
+      "background": "#fffbc6",
+      "border": "0"
+    },
+    {
+      "x": 807,
+      "y": 1370,
+      "w": 250,
+      "h": 84,
+      "background": "#fffef3",
+      "border": "1px solid #e5dba1",
+      "radius": "45%"
+    }
+  ],
+  "textBlocks": [
+    {
+      "text": "●",
+      "x": 124,
+      "y": 176,
+      "w": 18,
+      "size": 14,
+      "bold": false,
+      "serif": false,
+      "color": "#5aab28"
+    },
+    {
+      "text": "Schwimmbad",
+      "x": 142,
+      "y": 175,
+      "w": 180,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "●",
+      "x": 315,
+      "y": 176,
+      "w": 18,
+      "size": 14,
+      "bold": false,
+      "serif": false,
+      "color": "#5aab28"
+    },
+    {
+      "text": "Konzert",
+      "x": 333,
+      "y": 175,
+      "w": 140,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "●",
+      "x": 495,
+      "y": 176,
+      "w": 18,
+      "size": 14,
+      "bold": false,
+      "serif": false,
+      "color": "#d92c26"
+    },
+    {
+      "text": "Kneipe",
+      "x": 513,
+      "y": 175,
+      "w": 120,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "●",
+      "x": 656,
+      "y": 176,
+      "w": 18,
+      "size": 14,
+      "bold": false,
+      "serif": false,
+      "color": "#5aab28"
+    },
+    {
+      "text": "Restaurant",
+      "x": 674,
+      "y": 175,
+      "w": 150,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "●",
+      "x": 851,
+      "y": 176,
+      "w": 18,
+      "size": 14,
+      "bold": false,
+      "serif": false,
+      "color": "#d92c26"
+    },
+    {
+      "text": "Bar",
+      "x": 869,
+      "y": 175,
+      "w": 100,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Was macht Manuel heute Nachmittag?",
+      "x": 204,
+      "y": 251,
+      "w": 800,
+      "size": 22,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "a   Lesen Sie den Chat und ergänzen Sie.",
+      "x": 174,
+      "y": 290,
+      "w": 820,
+      "size": 20,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "ManuXL:",
+      "x": 219,
+      "y": 331,
+      "w": 100,
+      "size": 16,
+      "bold": true,
+      "serif": false,
+      "color": "#17479b"
+    },
+    {
+      "text": "Was machst du heute\nNachmittag?",
+      "x": 291,
+      "y": 331,
+      "w": 340,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "tami_92:",
+      "x": 219,
+      "y": 383,
+      "w": 100,
+      "size": 16,
+      "bold": true,
+      "serif": false,
+      "color": "#6caf23"
+    },
+    {
+      "text": "Weiß ich noch nicht.",
+      "x": 291,
+      "y": 383,
+      "w": 340,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "ManuXL:",
+      "x": 219,
+      "y": 413,
+      "w": 100,
+      "size": 16,
+      "bold": true,
+      "serif": false,
+      "color": "#17479b"
+    },
+    {
+      "text": "Lust auf Schwimmbad?",
+      "x": 291,
+      "y": 413,
+      "w": 340,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "tami_92:",
+      "x": 219,
+      "y": 443,
+      "w": 100,
+      "size": 16,
+      "bold": true,
+      "serif": false,
+      "color": "#6caf23"
+    },
+    {
+      "text": "Nö. Keine Lust. ☹",
+      "x": 291,
+      "y": 443,
+      "w": 340,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "ManuXL:",
+      "x": 219,
+      "y": 473,
+      "w": 100,
+      "size": 16,
+      "bold": true,
+      "serif": false,
+      "color": "#17479b"
+    },
+    {
+      "text": "Gehen wir ins Kino?",
+      "x": 291,
+      "y": 473,
+      "w": 340,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "tami_92:",
+      "x": 219,
+      "y": 503,
+      "w": 100,
+      "size": 16,
+      "bold": true,
+      "serif": false,
+      "color": "#6caf23"
+    },
+    {
+      "text": "Gute Idee! ☺ Wann denn?",
+      "x": 291,
+      "y": 503,
+      "w": 340,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "ManuXL:",
+      "x": 219,
+      "y": 533,
+      "w": 100,
+      "size": 16,
+      "bold": true,
+      "serif": false,
+      "color": "#17479b"
+    },
+    {
+      "text": "Um zwei, um vier oder um sechs?",
+      "x": 291,
+      "y": 533,
+      "w": 340,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "tami_92:",
+      "x": 219,
+      "y": 563,
+      "w": 100,
+      "size": 16,
+      "bold": true,
+      "serif": false,
+      "color": "#6caf23"
+    },
+    {
+      "text": "Sechs Uhr ist zu spät. Heute Abend habe\nich keine Zeit. Gehen wir um vier?",
+      "x": 291,
+      "y": 563,
+      "w": 340,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "ManuXL:",
+      "x": 219,
+      "y": 615,
+      "w": 100,
+      "size": 16,
+      "bold": true,
+      "serif": false,
+      "color": "#17479b"
+    },
+    {
+      "text": "Okay. Dann bis vier!",
+      "x": 291,
+      "y": 615,
+      "w": 340,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "tami_92:",
+      "x": 219,
+      "y": 645,
+      "w": 100,
+      "size": 16,
+      "bold": true,
+      "serif": false,
+      "color": "#6caf23"
+    },
+    {
+      "text": "Ja, bis dann! ☺",
+      "x": 291,
+      "y": 645,
+      "w": 340,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Wann?",
+      "x": 748,
+      "y": 323,
+      "w": 250,
+      "size": 20,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "um drei Uhr / halb vier / …",
+      "x": 748,
+      "y": 353,
+      "w": 290,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "wissen",
+      "x": 817,
+      "y": 421,
+      "w": 160,
+      "size": 20,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "ich\ndu\ner/sie",
+      "x": 742,
+      "y": 453,
+      "w": 90,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "weiß\nweißt\nweiß",
+      "x": 837,
+      "y": 453,
+      "w": 140,
+      "size": 18,
+      "bold": false,
+      "serif": true,
+      "color": "#ac2331"
+    },
+    {
+      "text": "1  Manuel und Tamara gehen ins",
+      "x": 676,
+      "y": 560,
+      "w": 370,
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "2  Manuel trifft Tamara heute um",
+      "x": 676,
+      "y": 620,
+      "w": 370,
+      "size": 19,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "b   Etwas vorschlagen und darauf reagieren. Was passt? Ordnen Sie zu.",
+      "x": 174,
+      "y": 734,
+      "w": 850,
+      "size": 20,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Gehen wir ins Kino? | Vielleicht. | Gute Idee! | Vielleicht können wir morgen Abend ins Theater\ngehen. | Tut mir leid, ich habe keine Lust. | Ich kann leider nicht. Ich gehe … | Das weiß ich\nnoch nicht. | Okay. | Ja, klar. | Heute Abend habe ich leider keine Zeit. | Lust auf …?",
+      "x": 214,
+      "y": 776,
+      "w": 790,
+      "size": 16,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "etwas vorschlagen:",
+      "x": 222,
+      "y": 870,
+      "w": 280,
+      "size": 17,
+      "bold": false,
+      "serif": true,
+      "color": "#225192"
+    },
+    {
+      "text": "Vielleicht können wir morgen\nAbend ins Theater gehen.",
+      "x": 222,
+      "y": 896,
+      "w": 280,
+      "size": 16,
+      "bold": false,
+      "serif": true,
+      "color": "#225192"
+    },
+    {
+      "text": "☺  Ja, klar.",
+      "x": 562,
+      "y": 850,
+      "w": 435,
+      "size": 16,
+      "bold": false,
+      "serif": true,
+      "color": "#225192"
+    },
+    {
+      "text": "☹  Ich kann leider nicht. Ich gehe …",
+      "x": 562,
+      "y": 914,
+      "w": 435,
+      "size": 16,
+      "bold": false,
+      "serif": true,
+      "color": "#225192"
+    },
+    {
+      "text": "☹  Vielleicht.",
+      "x": 562,
+      "y": 978,
+      "w": 435,
+      "size": 16,
+      "bold": false,
+      "serif": true,
+      "color": "#225192"
+    },
+    {
+      "text": "c   Verabreden Sie sich im Chat. Arbeiten Sie zu zweit auf Seite 87.",
+      "x": 174,
+      "y": 1083,
+      "w": 850,
+      "size": 19,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Am Montagabend spiele ich Fußball.",
+      "x": 204,
+      "y": 1130,
+      "w": 800,
+      "size": 22,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "a   Ergänzen Sie die Wochentage.",
+      "x": 174,
+      "y": 1166,
+      "w": 850,
+      "size": 19,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Mittwoch | Montag | Sonntag | Samstag | Dienstag | Donnerstag | Freitag",
+      "x": 214,
+      "y": 1202,
+      "w": 790,
+      "size": 17,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Woche 18",
+      "x": 210,
+      "y": 1236,
+      "w": 87,
+      "size": 17,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "b   Tageszeiten. Ordnen Sie zu.",
+      "x": 174,
+      "y": 1270,
+      "w": 650,
+      "size": 19,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "der Vormittag",
+      "x": 245,
+      "y": 1380,
+      "w": 190,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "der Abend",
+      "x": 442,
+      "y": 1380,
+      "w": 160,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "der Nachmittag",
+      "x": 605,
+      "y": 1380,
+      "w": 230,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "die Nacht",
+      "x": 245,
+      "y": 1408,
+      "w": 190,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "der Mittag",
+      "x": 442,
+      "y": 1408,
+      "w": 160,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "der Morgen",
+      "x": 635,
+      "y": 1408,
+      "w": 200,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Wann?",
+      "x": 879,
+      "y": 1300,
+      "w": 160,
+      "size": 18,
+      "bold": true,
+      "serif": true
+    },
+    {
+      "text": "am Dienstag/Abend/…\n! in der Nacht",
+      "x": 879,
+      "y": 1326,
+      "w": 178,
+      "size": 16,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "c   Gespräche üben: sich verabreden. Arbeiten Sie zu zweit auf den Seiten 89 und 93.",
+      "x": 174,
+      "y": 1470,
+      "w": 850,
+      "size": 16,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "d   Welcher Tag ist Ihr Lieblingstag? Was ist Ihre Lieblingstageszeit? Was machen Sie da?",
+      "x": 174,
+      "y": 1493,
+      "w": 875,
+      "size": 16,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Mein Lieblingstag ist der Mittwoch.\nBesonders der Abend. Am Mittwoch-\nabend tanze ich Salsa.",
+      "x": 827,
+      "y": 1383,
+      "w": 230,
+      "size": 13,
+      "bold": false,
+      "serif": true
+    }
+  ],
+  "hidePageNumber": true,
+  "taskColor": "#8e0846",
+  "module": {
+    "n": "8",
+    "x": 1015,
+    "y": 99,
+    "color": "#8e0846"
+  }
+}

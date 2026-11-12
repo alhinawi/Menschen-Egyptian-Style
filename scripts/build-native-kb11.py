@@ -60,6 +60,12 @@ def build(p):
             rec['b']=1 if frac>0.34 else 0
             rec['r']=1;rec['pn']=panel
         words.append(rec)
+    _of=f'{ROOT}/src/native-kb11/overrides/p{p}.json'
+    if os.path.exists(_of):
+        for bx in json.load(open(_of)).get('erase',[]):
+            X0,Y0,X1,Y1=[int(v*S) for v in bx]
+            ring=np.concatenate([work[max(0,Y0-3):Y0,X0:X1].reshape(-1,3),work[Y1:Y1+3,X0:X1].reshape(-1,3)])
+            work[Y0:Y1,X0:X1]=np.median(ring,axis=0)
     # artwork components from erased copy
     paper=np.median(work.reshape(-1,3),axis=0)
     diff=np.abs(work-paper).sum(axis=2)
@@ -124,7 +130,7 @@ def build(p):
     outb=[]
     for seg in blocks:
         x0=min(w['x'] for w in seg);x1=max(w['x']+w['w'] for w in seg)
-        outb.append({'x':x0,'w':x1-x0,'cy':seg[0]['cy'],'f':seg[0]['f'],'b':seg[0]['b'],'sa':sans_ctx(a,S,x0,seg[0]['cy'],x1,seg[0]['f'],paper0),'ws':[{'t':w['t'],'c':w['c'],**({'ph':w['ph']} if 'ph' in w else {})} for w in seg]})
+        outb.append({'x':x0,'w':x1-x0,'cy':seg[0]['cy'],'f':seg[0]['f'],'b':seg[0]['b'],'sa':sans_ctx(a,S,x0,seg[0]['cy'],x1,seg[0]['f'],paper0),'ws':[{'t':clean_t(w['t']),'c':w['c'],**({'ph':w['ph']} if 'ph' in w else {})} for w in seg]})
     words=[w for w in words if not w.get('r')]
     checks={}
     for g in sorted({f['group'] for f in d['fields'] if f.get('answer') is not None}):
@@ -153,6 +159,11 @@ def sans_ctx(a,S,x0,cy,x1,f,paper0):
     sat=reg.max(axis=1)-reg.min(axis=1)
     col=(sat>28)&(np.abs(reg-paper0).sum(axis=1)>60)
     return 1 if col.mean()>0.35 else 0
+def clean_t(t):
+    import re
+    t=re.sub(r'^[\u201a,]+(?=[A-Za-zÄÖÜäöüß])','',t)
+    t=re.sub(r'([.!?])\1+$',r'\1',t)
+    return t
 def re_has(t):
     return any(c.isalnum() for c in t) or t.strip() in ('.',',','!','?',':','–','-','…')
 def apply_overrides(r,p):
@@ -170,7 +181,7 @@ def apply_overrides(r,p):
         for b in r['blocks']:
             if hit(b,m):
                 b['x']+=m.get('dx',0);b['cy']+=m.get('dy',0);b['w']+=m.get('dw',0)
-                if 'f' in m.get('set',{}):b['f']=m['set']['f']
+                b.update(m.get('set',{}))
 if __name__=='__main__':
     sel=[int(x) for x in sys.argv[1:]] or PAGES
     os.makedirs(f'{ROOT}/src/native-kb11',exist_ok=True)
