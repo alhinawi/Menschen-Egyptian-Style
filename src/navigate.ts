@@ -38,6 +38,7 @@ async function ensureStyles(config: LessonConfig) {
     document.head.append(el);
   })));
   for (const [href, el] of loadedStyles) el.disabled = !wanted.has(href);
+  document.documentElement.toggleAttribute('data-bookcss', !!config.bookcss);
 }
 
 const appliedAttrs = new Set<string>();

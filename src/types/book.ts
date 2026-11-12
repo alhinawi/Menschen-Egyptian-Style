@@ -10,6 +10,8 @@ export interface LessonConfig {
   reader?: boolean;
   themes?: boolean;
   styles: string[];
+  /** Route used to load book.css; activates the absorbed book rules. */
+  bookcss?: boolean;
   initializers: string[];
   bodyAttrs?: Record<string, string | string[]>;
   reactExercises?: boolean;
