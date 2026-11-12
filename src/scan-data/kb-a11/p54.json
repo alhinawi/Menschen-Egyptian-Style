@@ -1,0 +1,1346 @@
+{
+  "book": "kb-a11",
+  "page": 54,
+  "image": "assets/kb-a11-p54.png",
+  "width": 1075,
+  "height": 1521,
+  "words": [
+    {
+      "text": "Clips",
+      "x": 501,
+      "y": 153,
+      "w": 46,
+      "h": 22
+    },
+    {
+      "text": "Mein",
+      "x": 201,
+      "y": 244,
+      "w": 46,
+      "h": 18
+    },
+    {
+      "text": "Hobby",
+      "x": 257,
+      "y": 243,
+      "w": 61,
+      "h": 23
+    },
+    {
+      "text": "ist",
+      "x": 325,
+      "y": 243,
+      "w": 23,
+      "h": 16
+    },
+    {
+      "text": "Inlineskaten",
+      "x": 357,
+      "y": 241,
+      "w": 124,
+      "h": 18
+    },
+    {
+      "text": "Sehen",
+      "x": 201,
+      "y": 270,
+      "w": 49,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 257,
+      "y": 270,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "die",
+      "x": 288,
+      "y": 270,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "Reportage",
+      "x": 321,
+      "y": 270,
+      "w": 84,
+      "h": 19
+    },
+    {
+      "text": "und",
+      "x": 413,
+      "y": 267,
+      "w": 30,
+      "h": 16
+    },
+    {
+      "text": "korrigieren",
+      "x": 452,
+      "y": 267,
+      "w": 92,
+      "h": 21
+    },
+    {
+      "text": "Sie",
+      "x": 551,
+      "y": 266,
+      "w": 30,
+      "h": 14
+    },
+    {
+      "text": "a",
+      "x": 202,
+      "y": 314,
+      "w": 9,
+      "h": 10
+    },
+    {
+      "text": "Lilian",
+      "x": 225,
+      "y": 309,
+      "w": 50,
+      "h": 15
+    },
+    {
+      "text": "ist",
+      "x": 281,
+      "y": 309,
+      "w": 21,
+      "h": 14
+    },
+    {
+      "text": "37",
+      "x": 308,
+      "y": 309,
+      "w": 16,
+      "h": 14
+    },
+    {
+      "text": "Jahre",
+      "x": 329,
+      "y": 307,
+      "w": 47,
+      "h": 18
+    },
+    {
+      "text": "alt",
+      "x": 383,
+      "y": 306,
+      "w": 27,
+      "h": 15
+    },
+    {
+      "text": "b",
+      "x": 203,
+      "y": 338,
+      "w": 9,
+      "h": 12
+    },
+    {
+      "text": "Sie",
+      "x": 225,
+      "y": 335,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "wohnt",
+      "x": 255,
+      "y": 333,
+      "w": 55,
+      "h": 15
+    },
+    {
+      "text": "in",
+      "x": 316,
+      "y": 333,
+      "w": 17,
+      "h": 14
+    },
+    {
+      "text": "Wien",
+      "x": 340,
+      "y": 333,
+      "w": 48,
+      "h": 14
+    },
+    {
+      "text": "c",
+      "x": 203,
+      "y": 362,
+      "w": 9,
+      "h": 12
+    },
+    {
+      "text": "Sie",
+      "x": 225,
+      "y": 360,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "ist",
+      "x": 256,
+      "y": 360,
+      "w": 21,
+      "h": 14
+    },
+    {
+      "text": "Friseurin",
+      "x": 283,
+      "y": 358,
+      "w": 79,
+      "h": 15
+    },
+    {
+      "text": "von",
+      "x": 368,
+      "y": 360,
+      "w": 31,
+      "h": 12
+    },
+    {
+      "text": "Beruf",
+      "x": 406,
+      "y": 356,
+      "w": 50,
+      "h": 16
+    },
+    {
+      "text": "d",
+      "x": 203,
+      "y": 387,
+      "w": 9,
+      "h": 12
+    },
+    {
+      "text": "In",
+      "x": 226,
+      "y": 386,
+      "w": 18,
+      "h": 13
+    },
+    {
+      "text": "der",
+      "x": 250,
+      "y": 384,
+      "w": 27,
+      "h": 14
+    },
+    {
+      "text": "Freizeit",
+      "x": 285,
+      "y": 384,
+      "w": 65,
+      "h": 15
+    },
+    {
+      "text": "skatet",
+      "x": 356,
+      "y": 383,
+      "w": 51,
+      "h": 15
+    },
+    {
+      "text": "Lilian",
+      "x": 414,
+      "y": 382,
+      "w": 50,
+      "h": 15
+    },
+    {
+      "text": "nicht",
+      "x": 470,
+      "y": 381,
+      "w": 45,
+      "h": 15
+    },
+    {
+      "text": "gern",
+      "x": 520,
+      "y": 385,
+      "w": 43,
+      "h": 15
+    },
+    {
+      "text": "e",
+      "x": 203,
+      "y": 411,
+      "w": 9,
+      "h": 12
+    },
+    {
+      "text": "Lilian",
+      "x": 226,
+      "y": 410,
+      "w": 50,
+      "h": 15
+    },
+    {
+      "text": "skatet",
+      "x": 283,
+      "y": 409,
+      "w": 51,
+      "h": 14
+    },
+    {
+      "text": "schon",
+      "x": 340,
+      "y": 408,
+      "w": 49,
+      "h": 15
+    },
+    {
+      "text": "vier",
+      "x": 394,
+      "y": 408,
+      "w": 34,
+      "h": 14
+    },
+    {
+      "text": "Jahre",
+      "x": 433,
+      "y": 407,
+      "w": 52,
+      "h": 18
+    },
+    {
+      "text": "f",
+      "x": 204,
+      "y": 435,
+      "w": 7,
+      "h": 15
+    },
+    {
+      "text": "Lilian",
+      "x": 227,
+      "y": 435,
+      "w": 50,
+      "h": 15
+    },
+    {
+      "text": "übt",
+      "x": 283,
+      "y": 434,
+      "w": 28,
+      "h": 15
+    },
+    {
+      "text": "sehr",
+      "x": 317,
+      "y": 433,
+      "w": 36,
+      "h": 15
+    },
+    {
+      "text": "oft",
+      "x": 359,
+      "y": 433,
+      "w": 29,
+      "h": 15
+    },
+    {
+      "text": "g",
+      "x": 203,
+      "y": 462,
+      "w": 9,
+      "h": 16
+    },
+    {
+      "text": "Oliver",
+      "x": 227,
+      "y": 460,
+      "w": 51,
+      "h": 15
+    },
+    {
+      "text": "macht",
+      "x": 284,
+      "y": 459,
+      "w": 53,
+      "h": 16
+    },
+    {
+      "text": "das",
+      "x": 344,
+      "y": 459,
+      "w": 27,
+      "h": 15
+    },
+    {
+      "text": "Skaten",
+      "x": 377,
+      "y": 458,
+      "w": 58,
+      "h": 15
+    },
+    {
+      "text": "keinen",
+      "x": 430,
+      "y": 459,
+      "w": 48,
+      "h": 16
+    },
+    {
+      "text": "Spaß",
+      "x": 506,
+      "y": 458,
+      "w": 45,
+      "h": 16
+    },
+    {
+      "text": "auch",
+      "x": 558,
+      "y": 458,
+      "w": 28,
+      "h": 15
+    },
+    {
+      "text": "Was",
+      "x": 204,
+      "y": 549,
+      "w": 38,
+      "h": 14
+    },
+    {
+      "text": "macht",
+      "x": 251,
+      "y": 547,
+      "w": 59,
+      "h": 16
+    },
+    {
+      "text": "ihr",
+      "x": 318,
+      "y": 546,
+      "w": 26,
+      "h": 16
+    },
+    {
+      "text": "heute",
+      "x": 352,
+      "y": 546,
+      "w": 54,
+      "h": 16
+    },
+    {
+      "text": "Abend",
+      "x": 412,
+      "y": 544,
+      "w": 70,
+      "h": 17
+    },
+    {
+      "text": "Was",
+      "x": 506,
+      "y": 545,
+      "w": 38,
+      "h": 15
+    },
+    {
+      "text": "passt",
+      "x": 553,
+      "y": 543,
+      "w": 58,
+      "h": 22
+    },
+    {
+      "text": "Sehen",
+      "x": 205,
+      "y": 574,
+      "w": 49,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 262,
+      "y": 574,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "die",
+      "x": 293,
+      "y": 573,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "Kurzinterviews",
+      "x": 326,
+      "y": 572,
+      "w": 127,
+      "h": 15
+    },
+    {
+      "text": "und",
+      "x": 461,
+      "y": 570,
+      "w": 30,
+      "h": 16
+    },
+    {
+      "text": "verbinden",
+      "x": 498,
+      "y": 569,
+      "w": 84,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 590,
+      "y": 569,
+      "w": 29,
+      "h": 15
+    },
+    {
+      "text": "a",
+      "x": 207,
+      "y": 643,
+      "w": 8,
+      "h": 10
+    },
+    {
+      "text": "Das",
+      "x": 230,
+      "y": 639,
+      "w": 28,
+      "h": 13
+    },
+    {
+      "text": "Paar",
+      "x": 265,
+      "y": 638,
+      "w": 41,
+      "h": 13
+    },
+    {
+      "text": "b",
+      "x": 206,
+      "y": 663,
+      "w": 9,
+      "h": 14
+    },
+    {
+      "text": "Der",
+      "x": 230,
+      "y": 664,
+      "w": 28,
+      "h": 13
+    },
+    {
+      "text": "Mann",
+      "x": 265,
+      "y": 664,
+      "w": 54,
+      "h": 13
+    },
+    {
+      "text": "c",
+      "x": 207,
+      "y": 694,
+      "w": 7,
+      "h": 9
+    },
+    {
+      "text": "Die",
+      "x": 230,
+      "y": 689,
+      "w": 26,
+      "h": 14
+    },
+    {
+      "text": "Frau",
+      "x": 264,
+      "y": 689,
+      "w": 43,
+      "h": 13
+    },
+    {
+      "text": "vielleicht",
+      "x": 401,
+      "y": 609,
+      "w": 81,
+      "h": 15
+    },
+    {
+      "text": "in",
+      "x": 488,
+      "y": 609,
+      "w": 17,
+      "h": 13
+    },
+    {
+      "text": "eine",
+      "x": 512,
+      "y": 609,
+      "w": 35,
+      "h": 14
+    },
+    {
+      "text": "Disco",
+      "x": 555,
+      "y": 608,
+      "w": 43,
+      "h": 14
+    },
+    {
+      "text": "gehen",
+      "x": 603,
+      "y": 606,
+      "w": 52,
+      "h": 21
+    },
+    {
+      "text": "Freunde",
+      "x": 402,
+      "y": 634,
+      "w": 70,
+      "h": 15
+    },
+    {
+      "text": "besuchen",
+      "x": 478,
+      "y": 633,
+      "w": 80,
+      "h": 15
+    },
+    {
+      "text": "essen",
+      "x": 402,
+      "y": 663,
+      "w": 45,
+      "h": 14
+    },
+    {
+      "text": "Musik",
+      "x": 403,
+      "y": 685,
+      "w": 52,
+      "h": 15
+    },
+    {
+      "text": "hören",
+      "x": 460,
+      "y": 685,
+      "w": 51,
+      "h": 15
+    },
+    {
+      "text": "zu",
+      "x": 403,
+      "y": 714,
+      "w": 19,
+      "h": 12
+    },
+    {
+      "text": "einem",
+      "x": 428,
+      "y": 711,
+      "w": 52,
+      "h": 14
+    },
+    {
+      "text": "Fußballspiel",
+      "x": 487,
+      "y": 709,
+      "w": 104,
+      "h": 20
+    },
+    {
+      "text": "gehen",
+      "x": 597,
+      "y": 708,
+      "w": 51,
+      "h": 21
+    },
+    {
+      "text": "vielleicht",
+      "x": 403,
+      "y": 735,
+      "w": 81,
+      "h": 15
+    },
+    {
+      "text": "ins",
+      "x": 490,
+      "y": 736,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "Kino",
+      "x": 522,
+      "y": 735,
+      "w": 39,
+      "h": 14
+    },
+    {
+      "text": "gehen",
+      "x": 567,
+      "y": 734,
+      "w": 51,
+      "h": 21
+    },
+    {
+      "text": "Mein",
+      "x": 211,
+      "y": 839,
+      "w": 45,
+      "h": 16
+    },
+    {
+      "text": "Lieblingsrestaurant",
+      "x": 266,
+      "y": 837,
+      "w": 193,
+      "h": 22
+    },
+    {
+      "text": "der",
+      "x": 467,
+      "y": 835,
+      "w": 31,
+      "h": 17
+    },
+    {
+      "text": "Gasthof",
+      "x": 505,
+      "y": 833,
+      "w": 76,
+      "h": 17
+    },
+    {
+      "text": "Birner",
+      "x": 587,
+      "y": 834,
+      "w": 59,
+      "h": 16
+    },
+    {
+      "text": "in",
+      "x": 653,
+      "y": 833,
+      "w": 16,
+      "h": 16
+    },
+    {
+      "text": "Wien",
+      "x": 677,
+      "y": 832,
+      "w": 48,
+      "h": 16
+    },
+    {
+      "text": "Was",
+      "x": 750,
+      "y": 832,
+      "w": 38,
+      "h": 15
+    },
+    {
+      "text": "essen",
+      "x": 795,
+      "y": 834,
+      "w": 50,
+      "h": 14
+    },
+    {
+      "text": "Tina",
+      "x": 851,
+      "y": 830,
+      "w": 41,
+      "h": 16
+    },
+    {
+      "text": "und",
+      "x": 211,
+      "y": 863,
+      "w": 34,
+      "h": 17
+    },
+    {
+      "text": "Lukas",
+      "x": 255,
+      "y": 863,
+      "w": 62,
+      "h": 17
+    },
+    {
+      "text": "Sehen",
+      "x": 324,
+      "y": 862,
+      "w": 62,
+      "h": 17
+    },
+    {
+      "text": "Sie",
+      "x": 387,
+      "y": 862,
+      "w": 27,
+      "h": 16
+    },
+    {
+      "text": "die",
+      "x": 422,
+      "y": 861,
+      "w": 28,
+      "h": 16
+    },
+    {
+      "text": "Reportage",
+      "x": 459,
+      "y": 862,
+      "w": 96,
+      "h": 20
+    },
+    {
+      "text": "und",
+      "x": 564,
+      "y": 859,
+      "w": 34,
+      "h": 17
+    },
+    {
+      "text": "kreuzen",
+      "x": 607,
+      "y": 859,
+      "w": 74,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 689,
+      "y": 857,
+      "w": 28,
+      "h": 16
+    },
+    {
+      "text": "an",
+      "x": 724,
+      "y": 860,
+      "w": 28,
+      "h": 14
+    },
+    {
+      "text": "Getränke",
+      "x": 231,
+      "y": 921,
+      "w": 75,
+      "h": 15
+    },
+    {
+      "text": "Bier",
+      "x": 257,
+      "y": 958,
+      "w": 32,
+      "h": 14
+    },
+    {
+      "text": "Wasser",
+      "x": 256,
+      "y": 988,
+      "w": 56,
+      "h": 14
+    },
+    {
+      "text": "Apfelsaft",
+      "x": 257,
+      "y": 1018,
+      "w": 71,
+      "h": 19
+    },
+    {
+      "text": "Kaffee",
+      "x": 259,
+      "y": 1049,
+      "w": 49,
+      "h": 15
+    },
+    {
+      "text": "Speisen",
+      "x": 234,
+      "y": 1099,
+      "w": 60,
+      "h": 19
+    },
+    {
+      "text": "Currywurst",
+      "x": 260,
+      "y": 1134,
+      "w": 88,
+      "h": 19
+    },
+    {
+      "text": "mit",
+      "x": 355,
+      "y": 1134,
+      "w": 25,
+      "h": 12
+    },
+    {
+      "text": "Pommes",
+      "x": 387,
+      "y": 1133,
+      "w": 65,
+      "h": 14
+    },
+    {
+      "text": "frites",
+      "x": 458,
+      "y": 1132,
+      "w": 39,
+      "h": 14
+    },
+    {
+      "text": "Wiener",
+      "x": 259,
+      "y": 1165,
+      "w": 59,
+      "h": 14
+    },
+    {
+      "text": "Schnitzel",
+      "x": 325,
+      "y": 1164,
+      "w": 72,
+      "h": 15
+    },
+    {
+      "text": "mit",
+      "x": 403,
+      "y": 1165,
+      "w": 25,
+      "h": 12
+    },
+    {
+      "text": "Pommes",
+      "x": 435,
+      "y": 1163,
+      "w": 65,
+      "h": 14
+    },
+    {
+      "text": "frites",
+      "x": 507,
+      "y": 1162,
+      "w": 40,
+      "h": 14
+    },
+    {
+      "text": "Wiener",
+      "x": 259,
+      "y": 1196,
+      "w": 59,
+      "h": 14
+    },
+    {
+      "text": "Schnitzel",
+      "x": 326,
+      "y": 1194,
+      "w": 71,
+      "h": 14
+    },
+    {
+      "text": "mit",
+      "x": 404,
+      "y": 1195,
+      "w": 26,
+      "h": 12
+    },
+    {
+      "text": "Erdäpfelsalat",
+      "x": 436,
+      "y": 1193,
+      "w": 101,
+      "h": 19
+    },
+    {
+      "text": "Gulasch",
+      "x": 261,
+      "y": 1226,
+      "w": 63,
+      "h": 15
+    },
+    {
+      "text": "mit",
+      "x": 331,
+      "y": 1227,
+      "w": 25,
+      "h": 13
+    },
+    {
+      "text": "Knödel",
+      "x": 364,
+      "y": 1224,
+      "w": 54,
+      "h": 14
+    },
+    {
+      "text": "Matjes",
+      "x": 259,
+      "y": 1257,
+      "w": 55,
+      "h": 15
+    },
+    {
+      "text": "in",
+      "x": 320,
+      "y": 1258,
+      "w": 13,
+      "h": 13
+    },
+    {
+      "text": "Sahnesause",
+      "x": 342,
+      "y": 1256,
+      "w": 86,
+      "h": 15
+    },
+    {
+      "text": "mit",
+      "x": 435,
+      "y": 1256,
+      "w": 25,
+      "h": 12
+    },
+    {
+      "text": "Pellkartoffeln",
+      "x": 467,
+      "y": 1253,
+      "w": 104,
+      "h": 15
+    },
+    {
+      "text": "Grünkohl",
+      "x": 262,
+      "y": 1287,
+      "w": 76,
+      "h": 15
+    },
+    {
+      "text": "mit",
+      "x": 345,
+      "y": 1288,
+      "w": 25,
+      "h": 12
+    },
+    {
+      "text": "Kassler",
+      "x": 377,
+      "y": 1287,
+      "w": 55,
+      "h": 14
+    },
+    {
+      "text": "und",
+      "x": 438,
+      "y": 1286,
+      "w": 29,
+      "h": 14
+    },
+    {
+      "text": "süßen",
+      "x": 474,
+      "y": 1285,
+      "w": 44,
+      "h": 15
+    },
+    {
+      "text": "Kartoffeln",
+      "x": 525,
+      "y": 1284,
+      "w": 78,
+      "h": 15
+    },
+    {
+      "text": "Zürcher",
+      "x": 263,
+      "y": 1319,
+      "w": 62,
+      "h": 14
+    },
+    {
+      "text": "Geschnetzeltes",
+      "x": 331,
+      "y": 1317,
+      "w": 116,
+      "h": 15
+    },
+    {
+      "text": "mit",
+      "x": 455,
+      "y": 1318,
+      "w": 25,
+      "h": 12
+    },
+    {
+      "text": "Rösti",
+      "x": 487,
+      "y": 1316,
+      "w": 39,
+      "h": 14
+    },
+    {
+      "text": "Schweinebraten",
+      "x": 263,
+      "y": 1349,
+      "w": 122,
+      "h": 15
+    },
+    {
+      "text": "mit",
+      "x": 393,
+      "y": 1349,
+      "w": 25,
+      "h": 13
+    },
+    {
+      "text": "Rotkohl",
+      "x": 425,
+      "y": 1347,
+      "w": 62,
+      "h": 14
+    },
+    {
+      "text": "und",
+      "x": 494,
+      "y": 1346,
+      "w": 29,
+      "h": 14
+    },
+    {
+      "text": "Knödel",
+      "x": 530,
+      "y": 1345,
+      "w": 56,
+      "h": 14
+    }
+  ],
+  "fields": [
+    {
+      "id": "t1-a",
+      "group": "task1",
+      "kind": "text",
+      "label": "a: Lilian ist 37 Jahre alt.",
+      "answer": "27",
+      "x": 418,
+      "y": 308,
+      "w": 170,
+      "h": 26
+    },
+    {
+      "id": "t1-b",
+      "group": "task1",
+      "kind": "text",
+      "label": "b: Sie wohnt in Wien.",
+      "answer": "München",
+      "x": 396,
+      "y": 332,
+      "w": 170,
+      "h": 26
+    },
+    {
+      "id": "t1-c",
+      "group": "task1",
+      "kind": "text",
+      "label": "c: Sie ist Friseurin von Beruf.",
+      "answer": "Schauspielerin",
+      "x": 470,
+      "y": 358,
+      "w": 170,
+      "h": 26
+    },
+    {
+      "id": "t1-d",
+      "group": "task1",
+      "kind": "text",
+      "label": "d: In der Freizeit skatet Lilian nicht gern.",
+      "answer": "skatet gern",
+      "x": 571,
+      "y": 383,
+      "w": 150,
+      "h": 26
+    },
+    {
+      "id": "t1-e",
+      "group": "task1",
+      "kind": "text",
+      "label": "e: Lilian skatet schon vier Jahre.",
+      "answer": "fünf Jahre",
+      "x": 497,
+      "y": 409,
+      "w": 170,
+      "h": 26
+    },
+    {
+      "id": "t1-f",
+      "group": "task1",
+      "kind": "text",
+      "label": "f: Lilian übt sehr oft.",
+      "answer": "nicht so oft",
+      "x": 399,
+      "y": 433,
+      "w": 180,
+      "h": 26
+    },
+    {
+      "id": "g-bier",
+      "group": "task3",
+      "kind": "checkbox",
+      "label": "Bier",
+      "answer": "false",
+      "x": 229,
+      "y": 954,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "g-wasser",
+      "group": "task3",
+      "kind": "checkbox",
+      "label": "Wasser",
+      "answer": "true",
+      "x": 229,
+      "y": 985,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "g-apfelsaft",
+      "group": "task3",
+      "kind": "checkbox",
+      "label": "Apfelsaft",
+      "answer": "false",
+      "x": 229,
+      "y": 1016,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "g-kaffee",
+      "group": "task3",
+      "kind": "checkbox",
+      "label": "Kaffee",
+      "answer": "false",
+      "x": 229,
+      "y": 1047,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "s-currywurst",
+      "group": "task3",
+      "kind": "checkbox",
+      "label": "Currywurst mit Pommes frites",
+      "answer": "false",
+      "x": 229,
+      "y": 1132,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "s-schnitzel-pommes",
+      "group": "task3",
+      "kind": "checkbox",
+      "label": "Wiener Schnitzel mit Pommes frites",
+      "answer": "true",
+      "x": 229,
+      "y": 1162,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "s-schnitzel-erdapfel",
+      "group": "task3",
+      "kind": "checkbox",
+      "label": "Wiener Schnitzel mit Erdäpfelsalat",
+      "answer": "false",
+      "x": 229,
+      "y": 1193,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "s-gulasch",
+      "group": "task3",
+      "kind": "checkbox",
+      "label": "Gulasch mit Knödel",
+      "answer": "true",
+      "x": 229,
+      "y": 1223,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "s-matjes",
+      "group": "task3",
+      "kind": "checkbox",
+      "label": "Matjes in Sahnesause mit Pellkartoffeln",
+      "answer": "false",
+      "x": 229,
+      "y": 1254,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "s-gruenkohl",
+      "group": "task3",
+      "kind": "checkbox",
+      "label": "Grünkohl mit Kassler und süßen Kartoffeln",
+      "answer": "false",
+      "x": 229,
+      "y": 1285,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "s-zuercher",
+      "group": "task3",
+      "kind": "checkbox",
+      "label": "Zürcher Geschnetzeltes mit Rösti",
+      "answer": "false",
+      "x": 229,
+      "y": 1316,
+      "w": 22,
+      "h": 22
+    },
+    {
+      "id": "s-schweinebraten",
+      "group": "task3",
+      "kind": "checkbox",
+      "label": "Schweinebraten mit Rotkohl und Knödel",
+      "answer": "false",
+      "x": 229,
+      "y": 1346,
+      "w": 22,
+      "h": 22
+    }
+  ],
+  "audio": [],
+  "groups": [
+    {
+      "id": "task1",
+      "label": "1"
+    },
+    {
+      "id": "task3",
+      "label": "3"
+    }
+  ],
+  "review": {
+    "status": "verified",
+    "verifiedWords": 159,
+    "totalWords": 159,
+    "notes": [
+      "All printed words reviewed against the scan at 2x/3x/4x: header label, all task-1 sentences a-g, task-2 items and options, task-3 drink/dish lists. Gold FILM-STATIONEN banner, red task numerals, DVD clip markers (Clip 7/8/9), photos and footer excluded per policy.",
+      "Task 1 and task 3 answers verified against the official Hueber answer key (Lösungen Menschen A1, Modul 3 Film-Stationen): 1 a 27, b München, c Schauspielerin, d skatet gern, e fünf Jahre, f nicht so oft; 3 Wasser, Wiener Schnitzel mit Pommes frites, Gulasch mit Knödel.",
+      "Task 1 g is the printed example (strike-through on \"keinen\" plus blue script \"auch\"); no field.",
+      "Task 2 (verbinden Sie) has no printed blanks, so no fields; key: a Das Paar - essen, Musik hören, vielleicht ins Kino gehen; b Der Mann - zu einem Fußballspiel gehen; c Die Frau - vielleicht in eine Disco gehen.",
+      "DVD clips 7-9 have no playable assets in the app; clip markers excluded from words and audio.",
+      "Book prints \"Sahnesause\" (sic). Previous-owner pencil line a->Freunde besuchen excluded."
+    ]
+  }
+}
