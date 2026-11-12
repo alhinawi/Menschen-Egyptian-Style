@@ -6,66 +6,52 @@
  "height": 1517,
  "words": [
   {
-   "text": "WIEDERHOLUNGSSTATION:",
-   "x": 151,
-   "y": 163,
-   "w": 498,
-   "h": 33
-  },
-  {
    "text": "WORTSCHATZ",
    "x": 663,
    "y": 159,
    "w": 245,
-   "h": 31
+   "h": 30
   },
   {
-   "text": "Mein",
-   "x": 194,
-   "y": 251,
-   "w": 45,
-   "h": 16
+   "text": "WIEDERHOLUNGSSTATION:",
+   "x": 151,
+   "y": 163,
+   "w": 499,
+   "h": 33
   },
   {
    "text": "Zimmer",
    "x": 247,
-   "y": 250,
-   "w": 74,
+   "y": 251,
+   "w": 73,
+   "h": 16
+  },
+  {
+   "text": "Mein",
+   "x": 194,
+   "y": 252,
+   "w": 45,
    "h": 16
   },
   {
    "text": "Ergänzen",
-   "x": 194,
+   "x": 195,
    "y": 290,
    "w": 76,
-   "h": 21
+   "h": 20
   },
   {
    "text": "Sie.",
    "x": 277,
-   "y": 289,
-   "w": 30,
-   "h": 15
+   "y": 290,
+   "w": 29,
+   "h": 14
   },
   {
-   "text": "Bilden",
-   "x": 197,
-   "y": 490,
-   "w": 58,
-   "h": 17
-  },
-  {
-   "text": "Sie",
-   "x": 262,
-   "y": 490,
-   "w": 28,
-   "h": 16
-  },
-  {
-   "text": "Wörter",
-   "x": 296,
-   "y": 490,
-   "w": 67,
+   "text": "Sie.",
+   "x": 506,
+   "y": 487,
+   "w": 34,
    "h": 16
   },
   {
@@ -77,185 +63,52 @@
   },
   {
    "text": "ergänzen",
-   "x": 413,
-   "y": 488,
+   "x": 414,
+   "y": 489,
    "w": 86,
    "h": 22
   },
   {
-   "text": "Sie.",
-   "x": 507,
-   "y": 487,
-   "w": 33,
-   "h": 16
+   "text": "Sie",
+   "x": 262,
+   "y": 490,
+   "w": 27,
+   "h": 17
   },
   {
-   "text": "num",
-   "x": 203,
-   "y": 535,
-   "w": 32,
-   "h": 9
+   "text": "Bilden",
+   "x": 197,
+   "y": 491,
+   "w": 58,
+   "h": 17
   },
   {
-   "text": "|",
-   "x": 242,
-   "y": 529,
-   "w": 2,
-   "h": 16
-  },
-  {
-   "text": "mar",
-   "x": 251,
-   "y": 529,
-   "w": 72,
-   "h": 16
-  },
-  {
-   "text": "|",
-   "x": 281,
-   "y": 518,
-   "w": 12,
-   "h": 32
-  },
-  {
-   "text": "Na",
-   "x": 292,
-   "y": 529,
-   "w": 22,
-   "h": 16
-  },
-  {
-   "text": "|",
-   "x": 313,
-   "y": 518,
-   "w": 12,
-   "h": 32
-  },
-  {
-   "text": "Haus",
-   "x": 327,
-   "y": 518,
-   "w": 38,
-   "h": 32
-  },
-  {
-   "text": "|",
-   "x": 373,
-   "y": 528,
-   "w": 2,
-   "h": 16
-  },
-  {
-   "text": "Re",
-   "x": 382,
-   "y": 527,
-   "w": 15,
+   "text": "Wörter",
+   "x": 295,
+   "y": 491,
+   "w": 68,
    "h": 15
   },
   {
    "text": "|",
-   "x": 406,
-   "y": 527,
-   "w": 2,
-   "h": 16
-  },
-  {
-   "text": "ke",
-   "x": 409,
-   "y": 518,
-   "w": 22,
-   "h": 32
-  },
-  {
-   "text": "|",
-   "x": 437,
-   "y": 527,
-   "w": 2,
-   "h": 16
-  },
-  {
-   "text": "Ort",
-   "x": 446,
-   "y": 518,
-   "w": 25,
-   "h": 32
-  },
-  {
-   "text": "|",
-   "x": 477,
-   "y": 526,
-   "w": 1,
-   "h": 16
-  },
-  {
-   "text": "zahl",
-   "x": 485,
-   "y": 518,
-   "w": 30,
-   "h": 32
-  },
-  {
-   "text": "|",
-   "x": 522,
-   "y": 526,
-   "w": 2,
-   "h": 16
-  },
-  {
-   "text": "me",
-   "x": 529,
-   "y": 518,
-   "w": 22,
-   "h": 32
-  },
-  {
-   "text": "|",
-   "x": 559,
-   "y": 525,
-   "w": 2,
-   "h": 16
-  },
-  {
-   "text": "Post",
-   "x": 564,
-   "y": 518,
-   "w": 29,
-   "h": 32
-  },
-  {
-   "text": "|",
-   "x": 601,
-   "y": 525,
-   "w": 8,
-   "h": 16
-  },
-  {
-   "text": "mer",
-   "x": 616,
-   "y": 518,
-   "w": 22,
-   "h": 32
-  },
-  {
-   "text": "|",
-   "x": 644,
-   "y": 524,
-   "w": 9,
-   "h": 16
-  },
-  {
-   "text": "Stra",
-   "x": 659,
-   "y": 518,
-   "w": 22,
-   "h": 32
-  },
-  {
-   "text": "|",
-   "x": 687,
-   "y": 523,
+   "x": 367,
+   "y": 520,
    "w": 10,
-   "h": 16
+   "h": 29
+  },
+  {
+   "text": "|",
+   "x": 553,
+   "y": 520,
+   "w": 10,
+   "h": 29
+  },
+  {
+   "text": "|",
+   "x": 740,
+   "y": 520,
+   "w": 5,
+   "h": 29
   },
   {
    "text": "Brief",
@@ -266,94 +119,199 @@
   },
   {
    "text": "|",
-   "x": 740,
-   "y": 518,
-   "w": 11,
-   "h": 32
+   "x": 696,
+   "y": 523,
+   "w": 1,
+   "h": 17
   },
   {
    "text": "leit",
    "x": 756,
-   "y": 522,
+   "y": 523,
    "w": 24,
+   "h": 14
+  },
+  {
+   "text": "me",
+   "x": 530,
+   "y": 525,
+   "w": 31,
+   "h": 17
+  },
+  {
+   "text": "|",
+   "x": 607,
+   "y": 525,
+   "w": 1,
+   "h": 17
+  },
+  {
+   "text": "|",
+   "x": 651,
+   "y": 525,
+   "w": 2,
+   "h": 16
+  },
+  {
+   "text": "Stra",
+   "x": 659,
+   "y": 525,
+   "w": 30,
+   "h": 14
+  },
+  {
+   "text": "zahl",
+   "x": 486,
+   "y": 526,
+   "w": 30,
    "h": 15
   },
   {
-   "text": "BB",
-   "x": 560,
-   "y": 565,
-   "w": 355,
-   "h": 71
+   "text": "|",
+   "x": 522,
+   "y": 526,
+   "w": 1,
+   "h": 16
+  },
+  {
+   "text": "|",
+   "x": 477,
+   "y": 527,
+   "w": 1,
+   "h": 16
+  },
+  {
+   "text": "Post",
+   "x": 569,
+   "y": 527,
+   "w": 32,
+   "h": 13
+  },
+  {
+   "text": "Haus",
+   "x": 331,
+   "y": 528,
+   "w": 44,
+   "h": 16
+  },
+  {
+   "text": "ße",
+   "x": 383,
+   "y": 528,
+   "w": 17,
+   "h": 15
+  },
+  {
+   "text": "|",
+   "x": 406,
+   "y": 528,
+   "w": 1,
+   "h": 16
+  },
+  {
+   "text": "ke",
+   "x": 415,
+   "y": 528,
+   "w": 16,
+   "h": 14
+  },
+  {
+   "text": "|",
+   "x": 438,
+   "y": 528,
+   "w": 1,
+   "h": 16
+  },
+  {
+   "text": "Ort",
+   "x": 447,
+   "y": 528,
+   "w": 24,
+   "h": 14
+  },
+  {
+   "text": "mar",
+   "x": 251,
+   "y": 529,
+   "w": 24,
+   "h": 16
+  },
+  {
+   "text": "|",
+   "x": 278,
+   "y": 529,
+   "w": 1,
+   "h": 16
+  },
+  {
+   "text": "Na",
+   "x": 284,
+   "y": 529,
+   "w": 20,
+   "h": 15
+  },
+  {
+   "text": "|",
+   "x": 307,
+   "y": 529,
+   "w": 1,
+   "h": 16
+  },
+  {
+   "text": "|",
+   "x": 242,
+   "y": 530,
+   "w": 1,
+   "h": 16
+  },
+  {
+   "text": "mer",
+   "x": 616,
+   "y": 530,
+   "w": 29,
+   "h": 9
+  },
+  {
+   "text": "num",
+   "x": 202,
+   "y": 535,
+   "w": 32,
+   "h": 9
   },
   {
    "text": "Name",
-   "x": 742,
-   "y": 654,
-   "w": 45,
-   "h": 26
-  },
-  {
-   "text": "__",
-   "x": 790,
-   "y": 671,
-   "w": 18,
-   "h": 1
-  },
-  {
-   "text": "Lukas",
-   "x": 489,
-   "y": 692,
-   "w": 39,
-   "h": 13
+   "x": 748,
+   "y": 655,
+   "w": 35,
+   "h": 14
   },
   {
    "text": "Gerstmeier",
    "x": 534,
    "y": 692,
    "w": 76,
-   "h": 12
-  },
-  {
-   "text": "_—",
-   "x": 667,
-   "y": 668,
-   "w": 21,
-   "h": 42
-  },
-  {
-   "text": "u",
-   "x": 211,
-   "y": 735,
-   "w": 84,
-   "h": 2
-  },
-  {
-   "text": "Be",
-   "x": 311,
-   "y": 734,
-   "w": 79,
-   "h": 1
-  },
-  {
-   "text": "Max-Gutmann-Str.",
-   "x": 489,
-   "y": 717,
-   "w": 148,
    "h": 13
   },
   {
-   "text": "88",
-   "x": 624,
-   "y": 706,
-   "w": 24,
-   "h": 31
+   "text": "Lukas",
+   "x": 488,
+   "y": 693,
+   "w": 40,
+   "h": 12
   },
   {
-   "text": "23567",
-   "x": 489,
-   "y": 744,
-   "w": 36,
-   "h": 11
+   "text": "88",
+   "x": 623,
+   "y": 717,
+   "w": 14,
+   "h": 12
+  },
+  {
+   "text": "Max-Gutmann-Str.",
+   "x": 488,
+   "y": 718,
+   "w": 129,
+   "h": 12
   },
   {
    "text": "Lübeck",
@@ -363,25 +321,39 @@
    "h": 13
   },
   {
-   "text": "Was",
-   "x": 200,
-   "y": 820,
-   "w": 38,
-   "h": 15
+   "text": "23567",
+   "x": 489,
+   "y": 744,
+   "w": 36,
+   "h": 12
   },
   {
-   "text": "passt",
-   "x": 246,
-   "y": 821,
-   "w": 48,
-   "h": 19
+   "text": "durch.",
+   "x": 665,
+   "y": 812,
+   "w": 61,
+   "h": 17
   },
   {
-   "text": "nicht?",
-   "x": 303,
-   "y": 817,
-   "w": 58,
+   "text": "falsche",
+   "x": 538,
+   "y": 814,
+   "w": 66,
+   "h": 17
+  },
+  {
+   "text": "das",
+   "x": 500,
+   "y": 815,
+   "w": 31,
    "h": 16
+  },
+  {
+   "text": "Wort",
+   "x": 610,
+   "y": 815,
+   "w": 48,
+   "h": 14
   },
   {
    "text": "Streichen",
@@ -392,129 +364,31 @@
   },
   {
    "text": "Sie",
-   "x": 466,
-   "y": 815,
+   "x": 465,
+   "y": 816,
    "w": 27,
    "h": 16
   },
   {
-   "text": "das",
-   "x": 500,
-   "y": 815,
-   "w": 31,
-   "h": 16
-  },
-  {
-   "text": "falsche",
-   "x": 538,
-   "y": 813,
-   "w": 66,
+   "text": "nicht?",
+   "x": 303,
+   "y": 817,
+   "w": 59,
    "h": 17
   },
   {
-   "text": "Wort",
-   "x": 610,
-   "y": 814,
-   "w": 48,
-   "h": 15
-  },
-  {
-   "text": "durch.",
-   "x": 665,
-   "y": 812,
-   "w": 60,
-   "h": 17
-  },
-  {
-   "text": "a",
-   "x": 201,
-   "y": 863,
-   "w": 9,
-   "h": 9
-  },
-  {
-   "text": "Kollege",
-   "x": 225,
-   "y": 857,
-   "w": 60,
-   "h": 20
-  },
-  {
-   "text": "-",
-   "x": 291,
-   "y": 865,
-   "w": 10,
-   "h": 2
-  },
-  {
-   "text": "Sekretärin",
-   "x": 307,
-   "y": 856,
-   "w": 90,
-   "h": 15
-  },
-  {
-   "text": "-",
-   "x": 403,
-   "y": 864,
-   "w": 10,
-   "h": 2
-  },
-  {
-   "text": "Feuerzeug",
-   "x": 419,
-   "y": 856,
-   "w": 86,
-   "h": 18
-  },
-  {
-   "text": "-",
-   "x": 511,
-   "y": 862,
-   "w": 9,
-   "h": 2
-  },
-  {
-   "text": "Chef",
-   "x": 527,
-   "y": 853,
-   "w": 38,
-   "h": 16
-  },
-  {
-   "text": "c",
-   "x": 624,
-   "y": 857,
-   "w": 7,
-   "h": 10
-  },
-  {
-   "text": "Kalender",
-   "x": 647,
-   "y": 851,
-   "w": 76,
-   "h": 16
-  },
-  {
-   "text": "-",
-   "x": 730,
-   "y": 859,
-   "w": 9,
-   "h": 2
-  },
-  {
-   "text": "Termin",
-   "x": 745,
-   "y": 851,
-   "w": 62,
+   "text": "Was",
+   "x": 200,
+   "y": 820,
+   "w": 37,
    "h": 14
   },
   {
-   "text": "-",
-   "x": 813,
-   "y": 858,
-   "w": 9,
-   "h": 2
+   "text": "passt",
+   "x": 246,
+   "y": 821,
+   "w": 48,
+   "h": 19
   },
   {
    "text": "Flasche",
@@ -524,13 +398,6 @@
    "h": 15
   },
   {
-   "text": "-",
-   "x": 897,
-   "y": 857,
-   "w": 10,
-   "h": 2
-  },
-  {
    "text": "Zeit",
    "x": 914,
    "y": 849,
@@ -538,25 +405,130 @@
    "h": 14
   },
   {
-   "text": "b",
-   "x": 201,
-   "y": 882,
-   "w": 9,
+   "text": "Chef",
+   "x": 527,
+   "y": 850,
+   "w": 38,
+   "h": 25
+  },
+  {
+   "text": "Kalender",
+   "x": 647,
+   "y": 851,
+   "w": 76,
    "h": 16
   },
   {
-   "text": "Computer",
-   "x": 225,
-   "y": 883,
-   "w": 82,
-   "h": 19
+   "text": "Termin",
+   "x": 745,
+   "y": 851,
+   "w": 62,
+   "h": 14
   },
   {
-   "text": "-",
-   "x": 313,
-   "y": 890,
+   "text": "Sekretärin",
+   "x": 308,
+   "y": 856,
+   "w": 90,
+   "h": 15
+  },
+  {
+   "text": "Feuerzeug",
+   "x": 419,
+   "y": 857,
+   "w": 87,
+   "h": 17
+  },
+  {
+   "text": "Kollege",
+   "x": 225,
+   "y": 858,
+   "w": 60,
+   "h": 20
+  },
+  {
+   "text": "—",
+   "x": 813,
+   "y": 858,
    "w": 10,
    "h": 2
+  },
+  {
+   "text": "—",
+   "x": 898,
+   "y": 858,
+   "w": 9,
+   "h": 1
+  },
+  {
+   "text": "—",
+   "x": 729,
+   "y": 860,
+   "w": 10,
+   "h": 2
+  },
+  {
+   "text": "a",
+   "x": 202,
+   "y": 863,
+   "w": 8,
+   "h": 9
+  },
+  {
+   "text": "—",
+   "x": 511,
+   "y": 863,
+   "w": 10,
+   "h": 2
+  },
+  {
+   "text": "—",
+   "x": 403,
+   "y": 864,
+   "w": 9,
+   "h": 2
+  },
+  {
+   "text": "—",
+   "x": 291,
+   "y": 866,
+   "w": 10,
+   "h": 1
+  },
+  {
+   "text": "Kunststoff",
+   "x": 852,
+   "y": 873,
+   "w": 89,
+   "h": 16
+  },
+  {
+   "text": "Metall",
+   "x": 776,
+   "y": 875,
+   "w": 54,
+   "h": 15
+  },
+  {
+   "text": "Holz",
+   "x": 716,
+   "y": 876,
+   "w": 37,
+   "h": 15
+  },
+  {
+   "text": "Brille",
+   "x": 647,
+   "y": 877,
+   "w": 47,
+   "h": 15
+  },
+  {
+   "text": "Bildschirm",
+   "x": 419,
+   "y": 880,
+   "w": 94,
+   "h": 15
   },
   {
    "text": "Drucker",
@@ -566,151 +538,116 @@
    "h": 15
   },
   {
-   "text": "-",
-   "x": 403,
-   "y": 889,
-   "w": 10,
-   "h": 2
-  },
-  {
-   "text": "Bildschirm",
-   "x": 420,
-   "y": 879,
-   "w": 93,
-   "h": 16
-  },
-  {
-   "text": "-",
-   "x": 519,
-   "y": 887,
-   "w": 9,
-   "h": 2
-  },
-  {
-   "text": "d",
-   "x": 624,
-   "y": 877,
+   "text": "b",
+   "x": 201,
+   "y": 883,
    "w": 9,
    "h": 15
   },
   {
-   "text": "Brille",
-   "x": 648,
-   "y": 876,
-   "w": 45,
-   "h": 16
-  },
-  {
-   "text": "-",
-   "x": 700,
-   "y": 885,
-   "w": 9,
-   "h": 2
-  },
-  {
-   "text": "Holz",
-   "x": 716,
-   "y": 875,
-   "w": 37,
-   "h": 16
-  },
-  {
-   "text": "-",
-   "x": 760,
+   "text": "Computer",
+   "x": 225,
    "y": 884,
-   "w": 9,
-   "h": 2
+   "w": 82,
+   "h": 18
   },
   {
-   "text": "Metall",
-   "x": 776,
-   "y": 874,
-   "w": 53,
-   "h": 16
-  },
-  {
-   "text": "-",
-   "x": 836,
-   "y": 883,
+   "text": "—",
+   "x": 759,
+   "y": 884,
    "w": 10,
    "h": 2
   },
   {
-   "text": "Kunststoff",
-   "x": 853,
-   "y": 872,
-   "w": 88,
-   "h": 17
+   "text": "—",
+   "x": 836,
+   "y": 884,
+   "w": 9,
+   "h": 1
   },
   {
-   "text": "Schlüssel",
-   "x": 218,
-   "y": 903,
-   "w": 84,
-   "h": 29
+   "text": "—",
+   "x": 700,
+   "y": 886,
+   "w": 9,
+   "h": 1
   },
   {
-   "text": "Sonderangebot",
-   "x": 647,
-   "y": 901,
-   "w": 126,
-   "h": 21
+   "text": "—",
+   "x": 519,
+   "y": 888,
+   "w": 9,
+   "h": 1
+  },
+  {
+   "text": "—",
+   "x": 403,
+   "y": 889,
+   "w": 10,
+   "h": 1
   },
   {
    "text": "-",
-   "x": 772,
-   "y": 893,
-   "w": 12,
-   "h": 33
+   "x": 313,
+   "y": 891,
+   "w": 10,
+   "h": 1
+  },
+  {
+   "text": "Hilfe",
+   "x": 911,
+   "y": 895,
+   "w": 50,
+   "h": 25
   },
   {
    "text": "Preis",
-   "x": 786,
+   "x": 796,
    "y": 901,
-   "w": 50,
+   "w": 40,
    "h": 14
-  },
-  {
-   "text": "-",
-   "x": 843,
-   "y": 908,
-   "w": 9,
-   "h": 2
   },
   {
    "text": "Euro",
    "x": 859,
    "y": 901,
-   "w": 39,
-   "h": 13
+   "w": 38,
+   "h": 14
+  },
+  {
+   "text": "Sonderangebot",
+   "x": 648,
+   "y": 902,
+   "w": 126,
+   "h": 20
+  },
+  {
+   "text": "Schlüssel",
+   "x": 225,
+   "y": 904,
+   "w": 77,
+   "h": 25
   },
   {
    "text": "-",
    "x": 904,
-   "y": 907,
-   "w": 10,
-   "h": 2
+   "y": 908,
+   "w": 9,
+   "h": 1
   },
   {
-   "text": "Hilfe",
-   "x": 921,
-   "y": 897,
-   "w": 41,
-   "h": 16
+   "text": "—",
+   "x": 780,
+   "y": 909,
+   "w": 9,
+   "h": 1
   },
   {
-   "text": "EU",
-   "x": 161,
-   "y": 968,
-   "w": 33,
-   "h": 21
-  },
-  {
-   "text": "Ergänzen",
-   "x": 204,
-   "y": 970,
-   "w": 86,
-   "h": 22
+   "text": "—",
+   "x": 843,
+   "y": 909,
+   "w": 9,
+   "h": 1
   },
   {
    "text": "Sie.",
@@ -720,6 +657,34 @@
    "h": 16
   },
   {
+   "text": "Ergänzen",
+   "x": 204,
+   "y": 971,
+   "w": 86,
+   "h": 22
+  },
+  {
+   "text": "a",
+   "x": 204,
+   "y": 1000,
+   "w": 10,
+   "h": 14
+  },
+  {
+   "text": "f",
+   "x": 629,
+   "y": 1000,
+   "w": 10,
+   "h": 14
+  },
+  {
+   "text": "billig",
+   "x": 700,
+   "y": 1002,
+   "w": 45,
+   "h": 20
+  },
+  {
    "text": "nicht",
    "x": 650,
    "y": 1003,
@@ -727,39 +692,81 @@
    "h": 15
   },
   {
-   "text": "billig",
-   "x": 700,
-   "y": 1002,
-   "w": 44,
-   "h": 20
+   "text": "braun",
+   "x": 375,
+   "y": 1013,
+   "w": 45,
+   "h": 13
+  },
+  {
+   "text": "b",
+   "x": 204,
+   "y": 1026,
+   "w": 10,
+   "h": 14
+  },
+  {
+   "text": "g",
+   "x": 629,
+   "y": 1026,
+   "w": 10,
+   "h": 14
   },
   {
    "text": "nicht",
    "x": 651,
    "y": 1028,
-   "w": 44,
+   "w": 45,
    "h": 15
   },
   {
    "text": "rund",
-   "x": 701,
-   "y": 1027,
-   "w": 41,
+   "x": 702,
+   "y": 1028,
+   "w": 40,
    "h": 15
   },
   {
+   "text": "c",
+   "x": 204,
+   "y": 1052,
+   "w": 10,
+   "h": 14
+  },
+  {
+   "text": "h",
+   "x": 629,
+   "y": 1052,
+   "w": 10,
+   "h": 14
+  },
+  {
    "text": "nicht",
-   "x": 650,
-   "y": 1053,
+   "x": 651,
+   "y": 1054,
    "w": 45,
    "h": 15
   },
   {
    "text": "lang",
    "x": 701,
-   "y": 1053,
+   "y": 1054,
    "w": 37,
-   "h": 20
+   "h": 19
+  },
+  {
+   "text": "d",
+   "x": 204,
+   "y": 1078,
+   "w": 10,
+   "h": 14
+  },
+  {
+   "text": "i",
+   "x": 629,
+   "y": 1078,
+   "w": 10,
+   "h": 14
   },
   {
    "text": "nicht",
@@ -776,6 +783,20 @@
    "h": 11
   },
   {
+   "text": "e",
+   "x": 204,
+   "y": 1104,
+   "w": 10,
+   "h": 14
+  },
+  {
+   "text": "j",
+   "x": 629,
+   "y": 1104,
+   "w": 10,
+   "h": 14
+  },
+  {
    "text": "nicht",
    "x": 651,
    "y": 1104,
@@ -785,72 +806,37 @@
   {
    "text": "schön",
    "x": 702,
-   "y": 1103,
+   "y": 1104,
    "w": 48,
    "h": 15
   },
   {
-   "text": "nicht",
-   "x": 651,
-   "y": 1129,
-   "w": 45,
-   "h": 15
-  },
-  {
    "text": "schwer",
-   "x": 703,
+   "x": 702,
    "y": 1129,
    "w": 59,
+   "h": 14
+  },
+  {
+   "text": "k",
+   "x": 629,
+   "y": 1130,
+   "w": 10,
+   "h": 14
+  },
+  {
+   "text": "nicht",
+   "x": 651,
+   "y": 1130,
+   "w": 45,
    "h": 15
   },
   {
    "text": "Zahlenrätsel",
    "x": 205,
-   "y": 1182,
-   "w": 119,
+   "y": 1183,
+   "w": 118,
    "h": 18
-  },
-  {
-   "text": "a",
-   "x": 176,
-   "y": 1228,
-   "w": 8,
-   "h": 10
-  },
-  {
-   "text": "Welche",
-   "x": 207,
-   "y": 1222,
-   "w": 59,
-   "h": 16
-  },
-  {
-   "text": "Zahlen",
-   "x": 273,
-   "y": 1222,
-   "w": 56,
-   "h": 15
-  },
-  {
-   "text": "hören",
-   "x": 338,
-   "y": 1221,
-   "w": 46,
-   "h": 15
-  },
-  {
-   "text": "Sie?",
-   "x": 391,
-   "y": 1221,
-   "w": 33,
-   "h": 15
-  },
-  {
-   "text": "Kreuzen",
-   "x": 432,
-   "y": 1221,
-   "w": 66,
-   "h": 14
   },
   {
    "text": "Sie",
@@ -860,11 +846,116 @@
    "h": 15
   },
   {
+   "text": "Zahlen",
+   "x": 274,
+   "y": 1222,
+   "w": 55,
+   "h": 16
+  },
+  {
+   "text": "hören",
+   "x": 338,
+   "y": 1222,
+   "w": 46,
+   "h": 15
+  },
+  {
+   "text": "Sie?",
+   "x": 391,
+   "y": 1222,
+   "w": 32,
+   "h": 15
+  },
+  {
+   "text": "Kreuzen",
+   "x": 432,
+   "y": 1222,
+   "w": 66,
+   "h": 14
+  },
+  {
+   "text": "Welche",
+   "x": 207,
+   "y": 1223,
+   "w": 60,
+   "h": 15
+  },
+  {
    "text": "an.",
    "x": 536,
    "y": 1224,
-   "w": 25,
+   "w": 24,
    "h": 10
+  },
+  {
+   "text": "a",
+   "x": 176,
+   "y": 1229,
+   "w": 8,
+   "h": 10
+  },
+  {
+   "text": "3391",
+   "x": 763,
+   "y": 1251,
+   "w": 32,
+   "h": 22
+  },
+  {
+   "text": "333910",
+   "x": 906,
+   "y": 1252,
+   "w": 50,
+   "h": 20
+  },
+  {
+   "text": "25821",
+   "x": 834,
+   "y": 1253,
+   "w": 42,
+   "h": 12
+  },
+  {
+   "text": "312",
+   "x": 454,
+   "y": 1255,
+   "w": 30,
+   "h": 22
+  },
+  {
+   "text": "4567",
+   "x": 532,
+   "y": 1255,
+   "w": 35,
+   "h": 22
+  },
+  {
+   "text": "120712",
+   "x": 679,
+   "y": 1255,
+   "w": 48,
+   "h": 12
+  },
+  {
+   "text": "120012",
+   "x": 601,
+   "y": 1256,
+   "w": 50,
+   "h": 13
+  },
+  {
+   "text": "68678",
+   "x": 374,
+   "y": 1258,
+   "w": 45,
+   "h": 14
+  },
+  {
+   "text": "65678",
+   "x": 300,
+   "y": 1260,
+   "w": 42,
+   "h": 13
   },
   {
    "text": "890777",
@@ -874,207 +965,81 @@
    "h": 12
   },
   {
-   "text": "65678",
-   "x": 300,
-   "y": 1259,
-   "w": 42,
-   "h": 13
-  },
-  {
-   "text": "68678",
-   "x": 376,
-   "y": 1259,
-   "w": 42,
-   "h": 12
-  },
-  {
-   "text": "312",
-   "x": 463,
-   "y": 1258,
-   "w": 21,
-   "h": 12
-  },
-  {
-   "text": "4567",
-   "x": 533,
-   "y": 1257,
-   "w": 34,
-   "h": 12
-  },
-  {
-   "text": "120012",
-   "x": 601,
-   "y": 1256,
-   "w": 50,
-   "h": 12
-  },
-  {
-   "text": "120712",
-   "x": 678,
-   "y": 1254,
-   "w": 48,
-   "h": 13
-  },
-  {
-   "text": "3391",
-   "x": 763,
-   "y": 1254,
-   "w": 32,
-   "h": 12
-  },
-  {
-   "text": "25821",
-   "x": 835,
-   "y": 1252,
-   "w": 41,
-   "h": 13
-  },
-  {
-   "text": "333910",
-   "x": 907,
-   "y": 1251,
-   "w": 49,
-   "h": 13
-  },
-  {
    "text": "H",
-   "x": 240,
-   "y": 1307,
-   "w": 11,
-   "h": 13
+   "x": 238,
+   "y": 1300,
+   "w": 13,
+   "h": 15
   },
   {
-   "text": "v",
-   "x": 317,
-   "y": 1307,
-   "w": 10,
-   "h": 11
+   "text": "V",
+   "x": 315,
+   "y": 1300,
+   "w": 13,
+   "h": 15
   },
   {
    "text": "A",
-   "x": 393,
-   "y": 1306,
-   "w": 10,
-   "h": 12
+   "x": 392,
+   "y": 1300,
+   "w": 13,
+   "h": 15
   },
   {
    "text": "E",
-   "x": 470,
-   "y": 1305,
-   "w": 8,
-   "h": 12
+   "x": 463,
+   "y": 1300,
+   "w": 13,
+   "h": 15
   },
   {
    "text": "Y",
-   "x": 545,
-   "y": 1304,
-   "w": 10,
-   "h": 12
+   "x": 543,
+   "y": 1300,
+   "w": 13,
+   "h": 15
   },
   {
-   "text": "Ss",
-   "x": 623,
-   "y": 1303,
-   "w": 7,
-   "h": 12
+   "text": "S",
+   "x": 620,
+   "y": 1300,
+   "w": 13,
+   "h": 15
   },
   {
    "text": "D",
-   "x": 699,
-   "y": 1302,
-   "w": 9,
-   "h": 12
+   "x": 697,
+   "y": 1300,
+   "w": 13,
+   "h": 15
   },
   {
    "text": "L",
-   "x": 776,
-   "y": 1301,
-   "w": 8,
-   "h": 19
+   "x": 778,
+   "y": 1300,
+   "w": 13,
+   "h": 15
   },
   {
-   "text": "z",
-   "x": 851,
+   "text": "T",
+   "x": 849,
    "y": 1300,
-   "w": 9,
-   "h": 12
+   "w": 13,
+   "h": 15
   },
   {
    "text": "N",
-   "x": 927,
-   "y": 1298,
-   "w": 10,
-   "h": 12
-  },
-  {
-   "text": "b",
-   "x": 178,
-   "y": 1362,
-   "w": 9,
+   "x": 925,
+   "y": 1300,
+   "w": 13,
    "h": 15
   },
   {
-   "text": "Ordnen",
-   "x": 208,
-   "y": 1361,
-   "w": 60,
-   "h": 16
-  },
-  {
-   "text": "Sie",
-   "x": 276,
-   "y": 1361,
-   "w": 23,
-   "h": 15
-  },
-  {
-   "text": "die",
-   "x": 306,
-   "y": 1360,
-   "w": 25,
-   "h": 16
-  },
-  {
-   "text": "Buchstaben",
-   "x": 339,
-   "y": 1359,
-   "w": 96,
-   "h": 16
-  },
-  {
-   "text": "der",
-   "x": 442,
-   "y": 1359,
+   "text": "das",
+   "x": 808,
+   "y": 1354,
    "w": 27,
    "h": 15
-  },
-  {
-   "text": "angekreuzten",
-   "x": 475,
-   "y": 1358,
-   "w": 114,
-   "h": 21
-  },
-  {
-   "text": "Felder",
-   "x": 598,
-   "y": 1356,
-   "w": 50,
-   "h": 16
-  },
-  {
-   "text": "X",
-   "x": 659,
-   "y": 1358,
-   "w": 10,
-   "h": 14
-  },
-  {
-   "text": "und",
-   "x": 681,
-   "y": 1355,
-   "w": 30,
-   "h": 16
   },
   {
    "text": "finden",
@@ -1088,28 +1053,92 @@
    "x": 777,
    "y": 1355,
    "w": 24,
-   "h": 14
-  },
-  {
-   "text": "das",
-   "x": 808,
-   "y": 1354,
-   "w": 27,
    "h": 15
   },
   {
    "text": "Lösungswort.",
    "x": 843,
-   "y": 1354,
+   "y": 1355,
    "w": 112,
-   "h": 20
+   "h": 19
   },
   {
-   "text": "\"48",
-   "x": 116,
-   "y": 1451,
-   "w": 46,
+   "text": "und",
+   "x": 681,
+   "y": 1356,
+   "w": 30,
+   "h": 16
+  },
+  {
+   "text": "Felder",
+   "x": 598,
+   "y": 1357,
+   "w": 50,
    "h": 15
+  },
+  {
+   "text": "angekreuzten",
+   "x": 475,
+   "y": 1358,
+   "w": 113,
+   "h": 21
+  },
+  {
+   "text": "X",
+   "x": 659,
+   "y": 1358,
+   "w": 10,
+   "h": 15
+  },
+  {
+   "text": "der",
+   "x": 442,
+   "y": 1359,
+   "w": 27,
+   "h": 15
+  },
+  {
+   "text": "Buchstaben",
+   "x": 339,
+   "y": 1360,
+   "w": 95,
+   "h": 16
+  },
+  {
+   "text": "die",
+   "x": 306,
+   "y": 1361,
+   "w": 24,
+   "h": 15
+  },
+  {
+   "text": "b",
+   "x": 178,
+   "y": 1362,
+   "w": 9,
+   "h": 15
+  },
+  {
+   "text": "Ordnen",
+   "x": 208,
+   "y": 1362,
+   "w": 61,
+   "h": 15
+  },
+  {
+   "text": "Sie",
+   "x": 276,
+   "y": 1362,
+   "w": 24,
+   "h": 14
+  },
+  {
+   "text": "Modul 2",
+   "x": 60,
+   "y": 1443,
+   "w": 60,
+   "h": 14,
+   "phrase": "tab"
   },
   {
    "text": "|",
@@ -1121,20 +1150,699 @@
   {
    "text": "achtundvierzig",
    "x": 197,
-   "y": 1451,
+   "y": 1452,
    "w": 117,
-   "h": 18
+   "h": 17
+  },
+  {
+   "text": "48",
+   "x": 146,
+   "y": 1454,
+   "w": 17,
+   "h": 12
   }
  ],
- "fields": [],
- "audio": [],
- "groups": [],
+ "fields": [
+  {
+   "id": "w1-l1",
+   "group": "w1",
+   "kind": "text",
+   "label": "1 Mein Zimmer: das Bild",
+   "answer": "das Bild",
+   "x": 195,
+   "y": 316,
+   "w": 195,
+   "h": 16
+  },
+  {
+   "id": "w1-l2",
+   "group": "w1",
+   "kind": "text",
+   "label": "1 Mein Zimmer: die Uhr",
+   "answer": "die Uhr",
+   "x": 195,
+   "y": 345,
+   "w": 195,
+   "h": 16
+  },
+  {
+   "id": "w1-l3",
+   "group": "w1",
+   "kind": "text",
+   "label": "1 Mein Zimmer: das Bett",
+   "answer": "das Bett",
+   "x": 195,
+   "y": 374,
+   "w": 195,
+   "h": 16
+  },
+  {
+   "id": "w1-l4",
+   "group": "w1",
+   "kind": "text",
+   "label": "1 Mein Zimmer: das Handy",
+   "answer": "das Handy",
+   "x": 195,
+   "y": 403,
+   "w": 195,
+   "h": 16
+  },
+  {
+   "id": "w1-l5",
+   "group": "w1",
+   "kind": "text",
+   "label": "1 Mein Zimmer: der Teppich",
+   "answer": "der Teppich",
+   "x": 195,
+   "y": 431,
+   "w": 195,
+   "h": 16
+  },
+  {
+   "id": "w1-r1",
+   "group": "w1",
+   "kind": "text",
+   "label": "1 Mein Zimmer: der Bildschirm",
+   "answer": "der Bildschirm",
+   "x": 815,
+   "y": 229,
+   "w": 180,
+   "h": 16
+  },
+  {
+   "id": "w1-r2",
+   "group": "w1",
+   "kind": "text",
+   "label": "1 Mein Zimmer: der Drucker",
+   "answer": "der Drucker",
+   "x": 815,
+   "y": 261,
+   "w": 180,
+   "h": 16
+  },
+  {
+   "id": "w1-r3",
+   "group": "w1",
+   "kind": "text",
+   "label": "1 Mein Zimmer: der Tisch",
+   "answer": "der Tisch",
+   "x": 815,
+   "y": 307,
+   "w": 180,
+   "h": 16
+  },
+  {
+   "id": "w1-r4",
+   "group": "w1",
+   "kind": "text",
+   "label": "1 Mein Zimmer: der Schrank",
+   "answer": "der Schrank",
+   "x": 815,
+   "y": 340,
+   "w": 180,
+   "h": 16
+  },
+  {
+   "id": "w1-r5",
+   "group": "w1",
+   "kind": "text",
+   "label": "1 Mein Zimmer: die Tasche",
+   "answer": "die Tasche",
+   "x": 815,
+   "y": 385,
+   "w": 180,
+   "h": 16
+  },
+  {
+   "id": "w1-r6",
+   "group": "w1",
+   "kind": "text",
+   "label": "1 Mein Zimmer: der Stuhl",
+   "answer": "der Stuhl",
+   "x": 815,
+   "y": 412,
+   "w": 180,
+   "h": 16
+  },
+  {
+   "id": "w2-briefmarke",
+   "group": "w2",
+   "kind": "text",
+   "label": "2 Briefmarke",
+   "answer": "Briefmarke",
+   "x": 737,
+   "y": 582,
+   "w": 181,
+   "h": 16
+  },
+  {
+   "id": "w2-strasse",
+   "group": "w2",
+   "kind": "text",
+   "label": "2 Straße",
+   "answer": "Straße",
+   "x": 210,
+   "y": 689,
+   "w": 182,
+   "h": 16
+  },
+  {
+   "id": "w2-hausnummer",
+   "group": "w2",
+   "kind": "text",
+   "label": "2 Hausnummer",
+   "answer": "Hausnummer",
+   "x": 733,
+   "y": 695,
+   "w": 176,
+   "h": 16
+  },
+  {
+   "id": "w2-plz",
+   "group": "w2",
+   "kind": "text",
+   "label": "2 Postleitzahl",
+   "answer": "Postleitzahl",
+   "x": 210,
+   "y": 720,
+   "w": 183,
+   "h": 16
+  },
+  {
+   "id": "w2-ort",
+   "group": "w2",
+   "kind": "text",
+   "label": "2 Ort",
+   "answer": "Ort",
+   "x": 733,
+   "y": 734,
+   "w": 167,
+   "h": 16
+  },
+  {
+   "id": "w3-b-computer",
+   "group": "w3",
+   "kind": "radio",
+   "label": "3b: Was passt nicht?",
+   "name": "w3-b",
+   "value": "Computer",
+   "answer": "false",
+   "x": 223,
+   "y": 882,
+   "w": 86,
+   "h": 22
+  },
+  {
+   "id": "w3-b-drucker",
+   "group": "w3",
+   "kind": "radio",
+   "label": "3b: Was passt nicht?",
+   "name": "w3-b",
+   "value": "Drucker",
+   "answer": "false",
+   "x": 328,
+   "y": 879,
+   "w": 71,
+   "h": 19
+  },
+  {
+   "id": "w3-b-bildschirm",
+   "group": "w3",
+   "kind": "radio",
+   "label": "3b: Was passt nicht?",
+   "name": "w3-b",
+   "value": "Bildschirm",
+   "answer": "false",
+   "x": 417,
+   "y": 878,
+   "w": 98,
+   "h": 19
+  },
+  {
+   "id": "w3-b-schlüssel",
+   "group": "w3",
+   "kind": "radio",
+   "label": "3b: Was passt nicht?",
+   "name": "w3-b",
+   "value": "Schlüssel",
+   "answer": "true",
+   "x": 223,
+   "y": 902,
+   "w": 81,
+   "h": 22
+  },
+  {
+   "id": "w3-c-kalender",
+   "group": "w3",
+   "kind": "radio",
+   "label": "3c: Was passt nicht?",
+   "name": "w3-c",
+   "value": "Kalender",
+   "answer": "false",
+   "x": 645,
+   "y": 849,
+   "w": 80,
+   "h": 20
+  },
+  {
+   "id": "w3-c-termin",
+   "group": "w3",
+   "kind": "radio",
+   "label": "3c: Was passt nicht?",
+   "name": "w3-c",
+   "value": "Termin",
+   "answer": "false",
+   "x": 743,
+   "y": 849,
+   "w": 66,
+   "h": 18
+  },
+  {
+   "id": "w3-c-flasche",
+   "group": "w3",
+   "kind": "radio",
+   "label": "3c: Was passt nicht?",
+   "name": "w3-c",
+   "value": "Flasche",
+   "answer": "true",
+   "x": 827,
+   "y": 847,
+   "w": 66,
+   "h": 19
+  },
+  {
+   "id": "w3-c-zeit",
+   "group": "w3",
+   "kind": "radio",
+   "label": "3c: Was passt nicht?",
+   "name": "w3-c",
+   "value": "Zeit",
+   "answer": "false",
+   "x": 912,
+   "y": 847,
+   "w": 36,
+   "h": 18
+  },
+  {
+   "id": "w3-d-brille",
+   "group": "w3",
+   "kind": "radio",
+   "label": "3d: Was passt nicht?",
+   "name": "w3-d",
+   "value": "Brille",
+   "answer": "true",
+   "x": 645,
+   "y": 875,
+   "w": 51,
+   "h": 19
+  },
+  {
+   "id": "w3-d-holz",
+   "group": "w3",
+   "kind": "radio",
+   "label": "3d: Was passt nicht?",
+   "name": "w3-d",
+   "value": "Holz",
+   "answer": "false",
+   "x": 714,
+   "y": 874,
+   "w": 41,
+   "h": 19
+  },
+  {
+   "id": "w3-d-metall",
+   "group": "w3",
+   "kind": "radio",
+   "label": "3d: Was passt nicht?",
+   "name": "w3-d",
+   "value": "Metall",
+   "answer": "false",
+   "x": 774,
+   "y": 873,
+   "w": 58,
+   "h": 19
+  },
+  {
+   "id": "w3-d-kunststoff",
+   "group": "w3",
+   "kind": "radio",
+   "label": "3d: Was passt nicht?",
+   "name": "w3-d",
+   "value": "Kunststoff",
+   "answer": "false",
+   "x": 850,
+   "y": 871,
+   "w": 93,
+   "h": 20
+  },
+  {
+   "id": "w3-e-sonderangebot",
+   "group": "w3",
+   "kind": "radio",
+   "label": "3e: Was passt nicht?",
+   "name": "w3-e",
+   "value": "Sonderangebot",
+   "answer": "false",
+   "x": 646,
+   "y": 900,
+   "w": 130,
+   "h": 20
+  },
+  {
+   "id": "w3-e-preis",
+   "group": "w3",
+   "kind": "radio",
+   "label": "3e: Was passt nicht?",
+   "name": "w3-e",
+   "value": "Preis",
+   "answer": "false",
+   "x": 794,
+   "y": 899,
+   "w": 44,
+   "h": 18
+  },
+  {
+   "id": "w3-e-euro",
+   "group": "w3",
+   "kind": "radio",
+   "label": "3e: Was passt nicht?",
+   "name": "w3-e",
+   "value": "Euro",
+   "answer": "false",
+   "x": 857,
+   "y": 899,
+   "w": 42,
+   "h": 18
+  },
+  {
+   "id": "w3-e-hilfe",
+   "group": "w3",
+   "kind": "radio",
+   "label": "3e: Was passt nicht?",
+   "name": "w3-e",
+   "value": "Hilfe",
+   "answer": "true",
+   "x": 909,
+   "y": 893,
+   "w": 54,
+   "h": 22
+  },
+  {
+   "id": "w4-b",
+   "group": "w4",
+   "kind": "text",
+   "label": "4b: Farbe",
+   "answer": "rot",
+   "x": 370,
+   "y": 1031,
+   "w": 125,
+   "h": 16
+  },
+  {
+   "id": "w4-c",
+   "group": "w4",
+   "kind": "text",
+   "label": "4c: Farbe",
+   "answer": "schwarz",
+   "x": 370,
+   "y": 1056,
+   "w": 125,
+   "h": 16
+  },
+  {
+   "id": "w4-d",
+   "group": "w4",
+   "kind": "text",
+   "label": "4d: Farbe",
+   "answer": "blau",
+   "x": 370,
+   "y": 1082,
+   "w": 125,
+   "h": 16
+  },
+  {
+   "id": "w4-e",
+   "group": "w4",
+   "kind": "text",
+   "label": "4e: Farbe",
+   "answer": "gelb",
+   "x": 370,
+   "y": 1107,
+   "w": 125,
+   "h": 16
+  },
+  {
+   "id": "w4-f",
+   "group": "w4",
+   "kind": "text",
+   "label": "4f: nicht billig",
+   "answer": "teuer",
+   "x": 790,
+   "y": 1000,
+   "w": 128,
+   "h": 16
+  },
+  {
+   "id": "w4-g",
+   "group": "w4",
+   "kind": "text",
+   "label": "4g: nicht rund",
+   "answer": "eckig",
+   "x": 790,
+   "y": 1025,
+   "w": 128,
+   "h": 16
+  },
+  {
+   "id": "w4-h",
+   "group": "w4",
+   "kind": "text",
+   "label": "4h: nicht lang",
+   "answer": "kurz",
+   "x": 790,
+   "y": 1050,
+   "w": 128,
+   "h": 16
+  },
+  {
+   "id": "w4-i",
+   "group": "w4",
+   "kind": "text",
+   "label": "4i: nicht teuer",
+   "answer": "billig",
+   "x": 790,
+   "y": 1076,
+   "w": 128,
+   "h": 16
+  },
+  {
+   "id": "w4-j",
+   "group": "w4",
+   "kind": "text",
+   "label": "4j: nicht schön",
+   "answer": "hässlich",
+   "x": 790,
+   "y": 1101,
+   "w": 128,
+   "h": 16
+  },
+  {
+   "id": "w4-k",
+   "group": "w4",
+   "kind": "text",
+   "label": "4k: nicht schwer",
+   "answer": "leicht",
+   "x": 790,
+   "y": 1126,
+   "w": 128,
+   "h": 16
+  },
+  {
+   "id": "w5a-H",
+   "group": "w5",
+   "kind": "radio",
+   "label": "5a: 890 777",
+   "name": "w5a",
+   "value": "H",
+   "answer": "true",
+   "x": 236,
+   "y": 1286,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "w5a-V",
+   "group": "w5",
+   "kind": "radio",
+   "label": "5a: 65 678",
+   "name": "w5a",
+   "value": "V",
+   "answer": "false",
+   "x": 313,
+   "y": 1286,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "w5a-A",
+   "group": "w5",
+   "kind": "radio",
+   "label": "5a: 68 678",
+   "name": "w5a",
+   "value": "A",
+   "answer": "true",
+   "x": 390,
+   "y": 1286,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "w5a-E",
+   "group": "w5",
+   "kind": "radio",
+   "label": "5a: 312",
+   "name": "w5a",
+   "value": "E",
+   "answer": "false",
+   "x": 461,
+   "y": 1286,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "w5a-Y",
+   "group": "w5",
+   "kind": "radio",
+   "label": "5a: 4 567",
+   "name": "w5a",
+   "value": "Y",
+   "answer": "true",
+   "x": 541,
+   "y": 1286,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "w5a-S",
+   "group": "w5",
+   "kind": "radio",
+   "label": "5a: 120 012",
+   "name": "w5a",
+   "value": "S",
+   "answer": "false",
+   "x": 618,
+   "y": 1286,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "w5a-D",
+   "group": "w5",
+   "kind": "radio",
+   "label": "5a: 120 712",
+   "name": "w5a",
+   "value": "D",
+   "answer": "true",
+   "x": 695,
+   "y": 1286,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "w5a-L",
+   "group": "w5",
+   "kind": "radio",
+   "label": "5a: 3 391",
+   "name": "w5a",
+   "value": "L",
+   "answer": "false",
+   "x": 771,
+   "y": 1286,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "w5a-T",
+   "group": "w5",
+   "kind": "radio",
+   "label": "5a: 25 821",
+   "name": "w5a",
+   "value": "T",
+   "answer": "false",
+   "x": 847,
+   "y": 1286,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "w5a-N",
+   "group": "w5",
+   "kind": "radio",
+   "label": "5a: 333 910",
+   "name": "w5a",
+   "value": "N",
+   "answer": "true",
+   "x": 923,
+   "y": 1286,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "w5-b",
+   "group": "w5",
+   "kind": "text",
+   "label": "5b: Lösungswort",
+   "answer": "HANDY",
+   "x": 208,
+   "y": 1389,
+   "w": 125,
+   "h": 16
+  }
+ ],
+ "audio": [
+  {
+   "id": "a1",
+   "src": "assets/ab-cd1-track33.mp3",
+   "label": "1 33",
+   "x": 115,
+   "y": 1175,
+   "w": 55,
+   "h": 22
+  }
+ ],
+ "groups": [
+  {
+   "id": "w1",
+   "label": "1 Mein Zimmer. Ergänzen Sie."
+  },
+  {
+   "id": "w2",
+   "label": "2 Bilden Sie Wörter und ergänzen Sie."
+  },
+  {
+   "id": "w3",
+   "label": "3 Was passt nicht? Streichen Sie das falsche Wort durch."
+  },
+  {
+   "id": "w4",
+   "label": "4 Ergänzen Sie."
+  },
+  {
+   "id": "w5",
+   "label": "5 Zahlenrätsel"
+  }
+ ],
  "review": {
-  "status": "partial",
-  "verifiedWords": 0,
-  "totalWords": 160,
+  "status": "verified",
+  "verifiedWords": 165,
+  "totalWords": 165,
   "notes": [
-   "draft: unverified OCR, no fields/audio yet"
+   "Answers per key (Wiederholungsstation Wortschatz 1-5).",
+   "1: key order mapped left column top-to-bottom (Bild, Uhr, Bett, Handy, Teppich) then right column top-to-bottom (Bildschirm, Drucker, Tisch, Schrank, Tasche, Stuhl); matches leader-line layout.",
+   "2: Name is a printed blue example (no field); Strasse/Hausnummer and Postleitzahl/Ort share address lines - left line = first part, right line = second part.",
+   "3a is a printed struck-through example (Feuerzeug), no fields; 3b-e modeled as one radio per word, odd word = true.",
+   "4a is a printed blue example (braun), no field.",
+   "5a: heard numbers per Loesungswort HANDY (890777, 68678, 4567, 120712, 333910 marked); 5b one text field over the dash row, answer HANDY."
   ]
  }
 }
