@@ -1,0 +1,628 @@
+{
+  "book": "kb-a11",
+  "page": 33,
+  "image": "assets/kb-a11-p33.png",
+  "width": 848,
+  "height": 1200,
+  "words": [
+    {
+      "text": "Ich",
+      "x": 462,
+      "y": 115,
+      "w": 44,
+      "h": 24
+    },
+    {
+      "text": "brauche",
+      "x": 515,
+      "y": 114,
+      "w": 113,
+      "h": 25
+    },
+    {
+      "text": "kein",
+      "x": 639,
+      "y": 113,
+      "w": 62,
+      "h": 24
+    },
+    {
+      "text": "Büro.",
+      "x": 712,
+      "y": 115,
+      "w": 73,
+      "h": 22
+    },
+    {
+      "text": "Arbeiten",
+      "x": 172,
+      "y": 843,
+      "w": 65,
+      "h": 13
+    },
+    {
+      "text": "am",
+      "x": 244,
+      "y": 848,
+      "w": 21,
+      "h": 8
+    },
+    {
+      "text": "See",
+      "x": 271,
+      "y": 844,
+      "w": 24,
+      "h": 12
+    },
+    {
+      "text": "a",
+      "x": 149,
+      "y": 879,
+      "w": 6,
+      "h": 8
+    },
+    {
+      "text": "Sehen",
+      "x": 173,
+      "y": 875,
+      "w": 39,
+      "h": 11
+    },
+    {
+      "text": "Sie",
+      "x": 218,
+      "y": 875,
+      "w": 18,
+      "h": 11
+    },
+    {
+      "text": "das",
+      "x": 242,
+      "y": 874,
+      "w": 21,
+      "h": 12
+    },
+    {
+      "text": "Foto",
+      "x": 270,
+      "y": 875,
+      "w": 28,
+      "h": 11
+    },
+    {
+      "text": "an",
+      "x": 304,
+      "y": 878,
+      "w": 14,
+      "h": 8
+    },
+    {
+      "text": "und",
+      "x": 325,
+      "y": 873,
+      "w": 23,
+      "h": 13
+    },
+    {
+      "text": "hören",
+      "x": 355,
+      "y": 874,
+      "w": 37,
+      "h": 11
+    },
+    {
+      "text": "Sie.",
+      "x": 398,
+      "y": 874,
+      "w": 23,
+      "h": 11
+    },
+    {
+      "text": "Wie",
+      "x": 172,
+      "y": 895,
+      "w": 25,
+      "h": 11
+    },
+    {
+      "text": "finden",
+      "x": 203,
+      "y": 894,
+      "w": 41,
+      "h": 12
+    },
+    {
+      "text": "Sie",
+      "x": 249,
+      "y": 895,
+      "w": 19,
+      "h": 11
+    },
+    {
+      "text": "diesen",
+      "x": 274,
+      "y": 894,
+      "w": 41,
+      "h": 12
+    },
+    {
+      "text": "Arbeitsplatz?",
+      "x": 320,
+      "y": 893,
+      "w": 88,
+      "h": 17
+    },
+    {
+      "text": "sehr",
+      "x": 179,
+      "y": 949,
+      "w": 25,
+      "h": 10
+    },
+    {
+      "text": "schön",
+      "x": 209,
+      "y": 949,
+      "w": 34,
+      "h": 10
+    },
+    {
+      "text": "/",
+      "x": 248,
+      "y": 949,
+      "w": 8,
+      "h": 10
+    },
+    {
+      "text": "sehr",
+      "x": 179,
+      "y": 969,
+      "w": 25,
+      "h": 10
+    },
+    {
+      "text": "praktisch",
+      "x": 209,
+      "y": 969,
+      "w": 50,
+      "h": 10
+    },
+    {
+      "text": "schön,",
+      "x": 285,
+      "y": 949,
+      "w": 34,
+      "h": 10
+    },
+    {
+      "text": "aber",
+      "x": 323,
+      "y": 949,
+      "w": 26,
+      "h": 10
+    },
+    {
+      "text": "nicht",
+      "x": 285,
+      "y": 969,
+      "w": 26,
+      "h": 10
+    },
+    {
+      "text": "praktisch",
+      "x": 315,
+      "y": 969,
+      "w": 50,
+      "h": 10
+    },
+    {
+      "text": "nicht",
+      "x": 395,
+      "y": 949,
+      "w": 26,
+      "h": 10
+    },
+    {
+      "text": "praktisch",
+      "x": 425,
+      "y": 949,
+      "w": 50,
+      "h": 10
+    },
+    {
+      "text": "/",
+      "x": 478,
+      "y": 949,
+      "w": 8,
+      "h": 10
+    },
+    {
+      "text": "nicht",
+      "x": 395,
+      "y": 969,
+      "w": 26,
+      "h": 10
+    },
+    {
+      "text": "schön",
+      "x": 425,
+      "y": 969,
+      "w": 30,
+      "h": 10
+    },
+    {
+      "text": "Der",
+      "x": 192,
+      "y": 1006,
+      "w": 22,
+      "h": 10
+    },
+    {
+      "text": "Arbeitsplatz",
+      "x": 219,
+      "y": 1004,
+      "w": 82,
+      "h": 16
+    },
+    {
+      "text": "ist",
+      "x": 307,
+      "y": 1007,
+      "w": 15,
+      "h": 8
+    },
+    {
+      "text": "sehr",
+      "x": 328,
+      "y": 1004,
+      "w": 28,
+      "h": 11
+    },
+    {
+      "text": "schön.",
+      "x": 361,
+      "y": 1003,
+      "w": 42,
+      "h": 12
+    },
+    {
+      "text": "Ich",
+      "x": 193,
+      "y": 1025,
+      "w": 20,
+      "h": 11
+    },
+    {
+      "text": "weiß",
+      "x": 218,
+      "y": 1024,
+      "w": 32,
+      "h": 12
+    },
+    {
+      "text": "nicht.",
+      "x": 255,
+      "y": 1024,
+      "w": 39,
+      "h": 12
+    },
+    {
+      "text": "Der",
+      "x": 301,
+      "y": 1025,
+      "w": 21,
+      "h": 11
+    },
+    {
+      "text": "Arbeitsplatz",
+      "x": 328,
+      "y": 1024,
+      "w": 81,
+      "h": 15
+    },
+    {
+      "text": "ist",
+      "x": 415,
+      "y": 1026,
+      "w": 16,
+      "h": 9
+    },
+    {
+      "text": "schön,",
+      "x": 436,
+      "y": 1023,
+      "w": 42,
+      "h": 13
+    },
+    {
+      "text": "aber",
+      "x": 484,
+      "y": 1023,
+      "w": 28,
+      "h": 11
+    },
+    {
+      "text": "b",
+      "x": 150,
+      "y": 1065,
+      "w": 7,
+      "h": 11
+    },
+    {
+      "text": "Möchten",
+      "x": 175,
+      "y": 1064,
+      "w": 57,
+      "h": 12
+    },
+    {
+      "text": "Sie",
+      "x": 238,
+      "y": 1065,
+      "w": 18,
+      "h": 11
+    },
+    {
+      "text": "so",
+      "x": 262,
+      "y": 1068,
+      "w": 13,
+      "h": 8
+    },
+    {
+      "text": "arbeiten?",
+      "x": 281,
+      "y": 1064,
+      "w": 62,
+      "h": 12
+    },
+    {
+      "text": "Hören:",
+      "x": 693,
+      "y": 803,
+      "w": 38,
+      "h": 12
+    },
+    {
+      "text": "Telefongespräche",
+      "x": 735,
+      "y": 803,
+      "w": 105,
+      "h": 12
+    },
+    {
+      "text": "Sprechen:",
+      "x": 693,
+      "y": 830,
+      "w": 55,
+      "h": 12
+    },
+    {
+      "text": "Telefon-",
+      "x": 752,
+      "y": 830,
+      "w": 55,
+      "h": 12
+    },
+    {
+      "text": "strategien:",
+      "x": 693,
+      "y": 846,
+      "w": 60,
+      "h": 12
+    },
+    {
+      "text": "Hier",
+      "x": 758,
+      "y": 846,
+      "w": 24,
+      "h": 12
+    },
+    {
+      "text": "ist",
+      "x": 786,
+      "y": 846,
+      "w": 16,
+      "h": 12
+    },
+    {
+      "text": "...;",
+      "x": 806,
+      "y": 846,
+      "w": 14,
+      "h": 12
+    },
+    {
+      "text": "Auf",
+      "x": 824,
+      "y": 846,
+      "w": 20,
+      "h": 12
+    },
+    {
+      "text": "Wiederhören.",
+      "x": 693,
+      "y": 864,
+      "w": 80,
+      "h": 12
+    },
+    {
+      "text": "Lesen:",
+      "x": 693,
+      "y": 890,
+      "w": 38,
+      "h": 12
+    },
+    {
+      "text": "E-Mail",
+      "x": 736,
+      "y": 890,
+      "w": 42,
+      "h": 12
+    },
+    {
+      "text": "und",
+      "x": 782,
+      "y": 890,
+      "w": 24,
+      "h": 12
+    },
+    {
+      "text": "SMS",
+      "x": 810,
+      "y": 890,
+      "w": 28,
+      "h": 12
+    },
+    {
+      "text": "Wortfelder:",
+      "x": 693,
+      "y": 916,
+      "w": 62,
+      "h": 12
+    },
+    {
+      "text": "Büro;",
+      "x": 760,
+      "y": 916,
+      "w": 32,
+      "h": 12
+    },
+    {
+      "text": "Computer",
+      "x": 693,
+      "y": 932,
+      "w": 55,
+      "h": 12
+    },
+    {
+      "text": "Grammatik:",
+      "x": 693,
+      "y": 958,
+      "w": 62,
+      "h": 12
+    },
+    {
+      "text": "Singular",
+      "x": 760,
+      "y": 958,
+      "w": 45,
+      "h": 12
+    },
+    {
+      "text": "–",
+      "x": 810,
+      "y": 958,
+      "w": 10,
+      "h": 8
+    },
+    {
+      "text": "Plural:",
+      "x": 693,
+      "y": 974,
+      "w": 36,
+      "h": 12
+    },
+    {
+      "text": "ein",
+      "x": 733,
+      "y": 974,
+      "w": 16,
+      "h": 12
+    },
+    {
+      "text": "Handy",
+      "x": 753,
+      "y": 974,
+      "w": 38,
+      "h": 12
+    },
+    {
+      "text": "–",
+      "x": 795,
+      "y": 974,
+      "w": 10,
+      "h": 8
+    },
+    {
+      "text": "drei",
+      "x": 810,
+      "y": 974,
+      "w": 22,
+      "h": 12
+    },
+    {
+      "text": "Handys;",
+      "x": 693,
+      "y": 990,
+      "w": 42,
+      "h": 12
+    },
+    {
+      "text": "Akkusativ:",
+      "x": 740,
+      "y": 990,
+      "w": 55,
+      "h": 12
+    },
+    {
+      "text": "Ich",
+      "x": 800,
+      "y": 990,
+      "w": 18,
+      "h": 12
+    },
+    {
+      "text": "habe",
+      "x": 693,
+      "y": 1006,
+      "w": 30,
+      "h": 12
+    },
+    {
+      "text": "einen",
+      "x": 727,
+      "y": 1006,
+      "w": 30,
+      "h": 12
+    },
+    {
+      "text": "Laptop.",
+      "x": 762,
+      "y": 1006,
+      "w": 45,
+      "h": 12
+    },
+    {
+      "text": "dreiunddreißig",
+      "x": 688,
+      "y": 1131,
+      "w": 93,
+      "h": 15
+    }
+  ],
+  "fields": [],
+  "audio": [
+    {
+      "id": "t1a",
+      "src": "assets/kb-cd1-track36.mp3",
+      "label": "1.36",
+      "x": 105,
+      "y": 870,
+      "w": 45,
+      "h": 22
+    }
+  ],
+  "groups": [],
+  "review": {
+    "status": "partial",
+    "verifiedWords": 85,
+    "totalWords": 85,
+    "notes": [
+      "Lernziele sidebar is white-on-blue: text verified via cropped inverted OCR, but all sidebar boxes are estimated from the render.",
+      "Opinion column words under the smilies (sehr schön/sehr praktisch; schön, aber nicht praktisch; nicht praktisch/nicht schön) are only partially covered by OCR; boxes for the missing rows estimated from the render.",
+      "No blanks on this page, so no fields. Audio button for printed track marker 1.36 (Arbeitsplatz opinions).",
+      "Chapter number 6, smilies, bullet squares/triangles, footer digit 33 and AB tab dropped as non-words."
+    ]
+  }
+}
