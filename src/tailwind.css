@@ -640,3 +640,13 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .batchQuiz input:not([type=radio]):not([type=checkbox]):not([type=range]),.batchQuiz select,.assign select,.assign input:not([type=radio]):not([type=checkbox]){border:1.5px solid #6f7b72;border-radius:4px;background:#fffef7;padding:3px 6px;box-sizing:border-box;color:#243b6b}
 .batchQuiz input:not([type=radio]):not([type=checkbox]):focus,.batchQuiz select:focus,.assign select:focus{outline:2px solid #26764c;outline-offset:1px}
 .batchQuiz select,.assign select{border:1.5px solid #6f7b72!important;border-radius:4px!important;background-color:#fffef7!important}
+
+/* Keep the related translation controls together on narrow readers. */
+.controls .translationControls{display:inline-flex;align-items:center;justify-content:center;gap:8px;flex-wrap:nowrap}
+@media(max-width:550px){
+  .controls{gap:6px;padding:6px 5px}
+  .controls button,.controls select{min-height:44px;box-sizing:border-box}
+  .controls>button,.controls>[data-react-theme-slot]>button{min-width:44px}
+  .controls .translationControls{flex-basis:100%;gap:8px}
+  .controls .translationControls button{white-space:nowrap;padding:5px 10px}
+}
