@@ -61,3 +61,24 @@
 .nkCanvas .nkMarkBank span[role=button]:after{content:' | ';background:#fff9d7;color:#a7a18b}
 .nkCanvas .nkMarkBank span.selected{background:#f5db62;text-decoration:none}
 [data-native-kb12="27"] [data-native-field^="7b-"]{height:28px!important}
+[data-native-kb12="29"] .nkHeroTitle{font-size:38px;height:64px;line-height:64px!important}
+[data-native-kb12="29"] .nkLesson,[data-native-kb12="31"] .nkLesson,[data-native-kb12="32"] .nkLesson{background:#85ab2e}
+[data-native-kb12="29"] .nkTitle b,[data-native-kb12="30"] .nkTitle b,[data-native-kb12="31"] .nkTitle b,[data-native-kb12="32"] .nkTitle b{background:#85ab2e}
+.nkAd{position:absolute;box-shadow:1px 2px 4px #bbb}.nkAdBlue{background:#6581b2;color:white}
+.nkCanvas .nkTinyLabel{font:15px/1.15 Arial!important;white-space:normal!important}
+.nkCanvas .nkPuzzleLabel{font:21px Georgia;background:#d9f0f5;border-radius:7px;padding:4px 8px}
+.nkCanvas .nkReadingRow{font:20px/1.12 Georgia}
+.nkCanvas .nkPopText{font:18px/1.16 Arial;color:#fff1ba}
+.nkCanvas .nkPopSide{font:24px Arial;color:white;writing-mode:vertical-rl;transform:rotate(180deg)}
+.nkPopIntro .nkBold{color:white}
+.nkCanvas .nkProfileBanner{font:bold 24px Georgia;background:#d19b23;color:#fff5cc;padding:6px}
+.nkCanvas .nkProfileName{font:bold 21px Georgia;color:#b58d25}
+.nkCanvas .nkProfileText{font:19px/1.22 Georgia}
+.nkCanvas .nkPoem{font:22px/1.3 Georgia;padding:12px;text-align:center;border-radius:5px;box-sizing:border-box}
+.nkCanvas .nkPoem1{background:#fff9ad;font-style:italic}.nkCanvas .nkPoem2{background:#d8f5fb;font-family:Arial}.nkCanvas .nkPoem3{background:repeating-linear-gradient(#fafef6,#fafef6 17px,#dbeaf0 18px);border:1px solid #bdd2d4;font-family:Arial}
+.nkCanvas .nkInstruction{font:21px/1.22 Georgia}
+.nkCanvas .nkPopText{font:17px/1.12 Arial}
+.nkProfileColumn{position:absolute;font:19px/1.22 Georgia}
+.nkProfileColumn h3{font:bold 21px Georgia;color:#b58d25;margin:0 0 5px}
+.nkProfileColumn img{float:right;position:static!important;width:80px!important;height:99px!important;object-fit:contain;margin:0 0 5px 9px!important}
+.nkCanvas .nkConjugation{font:16px/1.08 Arial}
