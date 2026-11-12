@@ -1,4 +1,3 @@
-// @ts-nocheck — legacy lesson service ported from the pre-TypeScript build; strict checking returns when this service is rewritten in React.
 export default function mount(){
 /* Egyptian Arabic sentence meanings for lessons 17-20 and module-plus 6. */
 Object.assign(window.MENSCHEN_PHRASES,{
@@ -120,7 +119,7 @@ Object.assign(window.MENSCHEN_PHRASES,{
 'Deckt den Tisch!':'جهزوا الترابيزة!',
 'Vergiss deine Hausaufgaben nicht!':'متنساش واجباتك!',
 'Bringt den Müll raus!':'انزلوا الزبالة!',
-'Räumt die Spülmaschine aus!':'فضّوا غسالة الأطباق!',
+
 'Mach dein Bett!':'رتّب سريرك!',
 'Wer hat das beste Gedächtnis?':'مين عنده أقوى ذاكرة؟',
 'Putzt bitte die Fenster.':'نضّفوا الشبابيك لو سمحتوا.',
@@ -137,7 +136,7 @@ Object.assign(window.MENSCHEN_PHRASES,{
 'Spül (bitte) das Geschirr!':'اغسل الأطباق (لو سمحت)!',
 'Komm (bitte) sofort runter da!':'انزل (لو سمحت) حالًا!',
 'Sei doch so lieb und ...':'بقى حبيبي و...',
-'Ruf ihn doch bitte zurück.':'رد عليه بقى لو سمحت.',
+
 'Ich komme um 10 Uhr an. Holst du mich bitte ab?':'أنا هوصل الساعة 10. ممكن تيجي تاخدني؟',
 'Putz es doch bitte!':'نضّفه بقى لو سمحت!',
 'Hier spricht Doktor Eisenbarth.':'معاك دكتور آيزنبارت.',

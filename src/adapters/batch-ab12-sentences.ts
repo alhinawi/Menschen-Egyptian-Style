@@ -1,4 +1,3 @@
-// @ts-nocheck — legacy lesson service ported from the pre-TypeScript build; strict checking returns when this service is rewritten in React.
 export default function mount(){
 /* Egyptian Arabic sentence meanings for A1.2 Arbeitsbuch Lektion 13-16. */
 Object.assign(window.MENSCHEN_PHRASES,{
@@ -128,7 +127,7 @@ Object.assign(window.MENSCHEN_PHRASES,{
 'Spiel. Bitten Sie eine Mitspielerin / einen Mitspieler.':'لعبة. اطلب من زميلك في اللعبة.',
 'Schreiben Sie kurze Gespräche mit den Wörtern aus 2 und sprechen Sie auch vor dem Spiegel.':'اكتب حوارات قصيرة بكلمات تمرين 2 واتكلم قدام المراية كمان.',
 'Im Hotel. Ergänzen Sie.':'في الفندق. كمّل.',
-'Können Sie mir helfen?':'تقدر تساعدني؟',
+
 'Es gibt keine Seife in der Dusche.':'مفيش صابون في الدوش.',
 'Wie dumm! Das tut mir leid.':'يا سلام على الغباء! متأسف جدًا.',
 'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.':'الكلمات دي إيه بلغتك؟ ترجمها.',
