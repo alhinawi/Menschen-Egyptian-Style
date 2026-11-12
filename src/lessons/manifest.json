@@ -360,7 +360,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "batch-l10-12.css"
     ],
     "initializers": [
       "glossary",
@@ -379,6 +378,7 @@
     "bodyAttrs": {},
     "reactExercises": true,
     "batchcss": true,
+    "l1012css": true,
     "bookcss": true
   },
   "l2-3.html": {
@@ -442,7 +442,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "l4-6.css"
     ],
     "initializers": [
       "glossary",
@@ -458,6 +457,7 @@
     "bodyAttrs": {},
     "reactExercises": true,
     "batchcss": true,
+    "l46css": true,
     "bookcss": true
   },
   "l7-9.html": {
@@ -466,7 +466,6 @@
     "reader": true,
     "themes": true,
     "styles": [
-      "batch79.css"
     ],
     "initializers": [
       "glossary",
@@ -485,6 +484,7 @@
     "bodyAttrs": {},
     "reactExercises": true,
     "batchcss": true,
+    "l79css": true,
     "bookcss": true
   },
   "original-l21-24.html": {
