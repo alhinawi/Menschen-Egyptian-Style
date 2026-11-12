@@ -1,2 +1,0 @@
-let snapshot={page:null,vocabulary:[],values:{},revision:0},runtime=null,listeners=new Set();
-export const scanStore={getSnapshot:()=>snapshot,subscribe(fn){listeners.add(fn);return()=>listeners.delete(fn)},connect(next){runtime=next;return()=>{runtime=null}},refresh(page){snapshot={...snapshot,page,vocabulary:window.AB1720_VOCAB||[],values:{...runtime.getState()},revision:snapshot.revision+1};listeners.forEach(fn=>fn())},save(updates,clearKey){runtime.update(updates,clearKey);snapshot={...snapshot,values:{...runtime.getState()}};listeners.forEach(fn=>fn())}};
