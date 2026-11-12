@@ -412,13 +412,6 @@
    "h": 15
   },
   {
-   "text": "__",
-   "x": 711,
-   "y": 462,
-   "w": 2,
-   "h": 0
-  },
-  {
    "text": "der,",
    "x": 581,
    "y": 498,
@@ -1481,8 +1474,8 @@
  "groups": [],
  "review": {
   "status": "verified",
-  "verifiedWords": 210,
-  "totalWords": 210,
+  "verifiedWords": 209,
+  "totalWords": 209,
   "notes": [
    "Lernwortschatz L9: translation rules are personal (Wie heissen die Woerter in Ihrer Sprache?) - no fields, same as p59/p65.",
    "TIPP 'Lernen Sie Woerter in Gruppen.' body included; blue cursive word-map example (die Orange / Obst / der Apfel / die Zitrone) is a printed publisher example, kept as words.",

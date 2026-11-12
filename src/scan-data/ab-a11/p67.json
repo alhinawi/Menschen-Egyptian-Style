@@ -307,13 +307,6 @@
    "h": 9
   },
   {
-   "text": "__",
-   "x": 465,
-   "y": 472,
-   "w": 16,
-   "h": 0
-  },
-  {
    "text": "Wurst",
    "x": 487,
    "y": 457,
@@ -1926,8 +1919,8 @@
  ],
  "review": {
   "status": "verified",
-  "verifiedWords": 243,
-  "totalWords": 243,
+  "verifiedWords": 242,
+  "totalWords": 242,
   "notes": [
    "Ü5 first blank (mögt ihr) printed cursive example; Ü6 a (schon) and Ü7 a (möchtet) printed examples",
    "Ü8 radios: correct option per answer key (a Danke gleichfalls, b Nein nicht so gern, c Ja gern, d Sehr gut danke)"
