@@ -63,3 +63,14 @@ Eight additional native pages begin lessons 4 and 5. The assigned total is now 3
 - Pronunciation long/short vowel marks are native text decorations. Page 36 preserves printed letter hints and its fixed Feuerzeug example. Page 37 uses image-backed endpoints and connecting lines rather than replacement dropdowns.
 - Validation: typecheck, production build, hybrid regression and prior 23-page native regressions; Chrome normal-click tests at 320px and 390px cover correct/incorrect feedback, feedback clearing, persistence, original audio, meaning dialogs, drawings, source images, absence of replacement selects, collisions and canvas bounds.
 - Untouched and filled mobile screenshots were inspected against the source. Checks and visible frames change vertical spacing; dense pronunciation, price and TEST sections are more compressed than the scan. The long written price uses a wrapping saved field rather than unreadably shrinking the entire answer.
+
+## Batch 5: AB A1.1 pages 38-40
+
+Three more native pages finish lesson 5's main work and TEST. The cumulative assigned total is 34 of 95 pages, with 61 remaining. The separate lesson 7-9/page41-56 lane remains untouched by this batch.
+
+- Page 38 has source letter hints, native color-painting controls and shape examples, saved product descriptions, and line matching. The interchangeable Wie endpoints accept either valid order. Product descriptions are open writing and are never graded against the old single-sentence metadata examples, which contain errors.
+- Page 39 has a native form diagram, source portrait, a saved customer card with centered title circles, source accent examples, selectable sentence-stress words and CD1 tracks23-25. Audio tests use the shared screen-space buttons and grouped-track chooser, not hidden/tiny markers.
+- Page 40 has selectable letter endpoints and saved highlights for the original word snake. Closed category entries accept either item order. Extra nonsense highlights do not pass. Source TEST grammar and letter hints remain intact.
+- Eleven closed-task checks sit below their work. Color painting, marked words, forms, radios, matching, stress choices and open notes persist across reload. The word-meaning dialog and secondary Original link remain available.
+- Verification: typecheck/build, hybrid regression, all eight previous lesson4/5 pages and the three-page Chrome320/390 suite. Correct and wrong answers, changed-feedback clearing, saved controls, all three actual playable audio files, loaded art, no replacement selects, text/field collisions and bounds are asserted. Native untouched and filled screenshots at both widths were inspected against scans.
+- Layout caveat: check buttons and frame borders require slightly compressed spacing in dense TEST/pronunciation sections. Original illustration crops are contained, never scan-primary.
