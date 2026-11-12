@@ -1,0 +1,2240 @@
+{
+ "book": "kb-a12",
+ "page": 42,
+ "image": "assets/kb-a12-p42.png",
+ "width": 1200,
+ "height": 1641,
+ "words": [
+  {
+   "text": "EB:",
+   "x": 944,
+   "y": 184,
+   "w": 38,
+   "h": 26
+  },
+  {
+   "text": "»324",
+   "x": 68,
+   "y": 203,
+   "w": 39,
+   "h": 32
+  },
+  {
+   "text": "Hören",
+   "x": 175,
+   "y": 208,
+   "w": 65,
+   "h": 18
+  },
+  {
+   "text": "Sie",
+   "x": 248,
+   "y": 207,
+   "w": 33,
+   "h": 19
+  },
+  {
+   "text": "das",
+   "x": 288,
+   "y": 207,
+   "w": 37,
+   "h": 19
+  },
+  {
+   "text": "Gespräch",
+   "x": 334,
+   "y": 207,
+   "w": 99,
+   "h": 26
+  },
+  {
+   "text": "weiter",
+   "x": 441,
+   "y": 207,
+   "w": 73,
+   "h": 19
+  },
+  {
+   "text": "und",
+   "x": 523,
+   "y": 207,
+   "w": 40,
+   "h": 19
+  },
+  {
+   "text": "kreuzen",
+   "x": 573,
+   "y": 207,
+   "w": 87,
+   "h": 19
+  },
+  {
+   "text": "Sie",
+   "x": 668,
+   "y": 208,
+   "w": 32,
+   "h": 18
+  },
+  {
+   "text": "an.",
+   "x": 709,
+   "y": 214,
+   "w": 33,
+   "h": 12
+  },
+  {
+   "text": "3",
+   "x": 92,
+   "y": 257,
+   "w": 11,
+   "h": 26
+  },
+  {
+   "text": "a",
+   "x": 174,
+   "y": 258,
+   "w": 10,
+   "h": 11
+  },
+  {
+   "text": "Die",
+   "x": 201,
+   "y": 253,
+   "w": 31,
+   "h": 16
+  },
+  {
+   "text": "beiden",
+   "x": 238,
+   "y": 252,
+   "w": 67,
+   "h": 17
+  },
+  {
+   "text": "sprechen",
+   "x": 312,
+   "y": 252,
+   "w": 90,
+   "h": 24
+  },
+  {
+   "text": "über",
+   "x": 408,
+   "y": 252,
+   "w": 45,
+   "h": 17
+  },
+  {
+   "text": "einen",
+   "x": 511,
+   "y": 253,
+   "w": 56,
+   "h": 16
+  },
+  {
+   "text": "Freund.",
+   "x": 574,
+   "y": 253,
+   "w": 77,
+   "h": 17
+  },
+  {
+   "text": "die",
+   "x": 709,
+   "y": 253,
+   "w": 30,
+   "h": 17
+  },
+  {
+   "text": "Party.",
+   "x": 747,
+   "y": 255,
+   "w": 56,
+   "h": 22
+  },
+  {
+   "text": "3",
+   "x": 92,
+   "y": 284,
+   "w": 11,
+   "h": 18
+  },
+  {
+   "text": "b",
+   "x": 173,
+   "y": 281,
+   "w": 11,
+   "h": 18
+  },
+  {
+   "text": "Die",
+   "x": 201,
+   "y": 282,
+   "w": 31,
+   "h": 17
+  },
+  {
+   "text": "beiden",
+   "x": 238,
+   "y": 281,
+   "w": 67,
+   "h": 18
+  },
+  {
+   "text": "kennen",
+   "x": 312,
+   "y": 281,
+   "w": 75,
+   "h": 18
+  },
+  {
+   "text": "Walter",
+   "x": 393,
+   "y": 282,
+   "w": 67,
+   "h": 17
+  },
+  {
+   "text": "schon",
+   "x": 518,
+   "y": 281,
+   "w": 57,
+   "h": 18
+  },
+  {
+   "text": "lange.",
+   "x": 582,
+   "y": 282,
+   "w": 58,
+   "h": 23
+  },
+  {
+   "text": "noch",
+   "x": 699,
+   "y": 282,
+   "w": 49,
+   "h": 17
+  },
+  {
+   "text": "gar",
+   "x": 754,
+   "y": 288,
+   "w": 32,
+   "h": 18
+  },
+  {
+   "text": "nicht.",
+   "x": 793,
+   "y": 282,
+   "w": 58,
+   "h": 18
+  },
+  {
+   "text": "3",
+   "x": 91,
+   "y": 307,
+   "w": 12,
+   "h": 27
+  },
+  {
+   "text": "c",
+   "x": 173,
+   "y": 317,
+   "w": 9,
+   "h": 11
+  },
+  {
+   "text": "OSie",
+   "x": 202,
+   "y": 310,
+   "w": 56,
+   "h": 19
+  },
+  {
+   "text": "Walter",
+   "x": 450,
+   "y": 310,
+   "w": 65,
+   "h": 18
+  },
+  {
+   "text": "im",
+   "x": 523,
+   "y": 312,
+   "w": 25,
+   "h": 16
+  },
+  {
+   "text": "Schwimmbad.",
+   "x": 555,
+   "y": 310,
+   "w": 139,
+   "h": 18
+  },
+  {
+   "text": "2",
+   "x": 88,
+   "y": 340,
+   "w": 19,
+   "h": 4
+  },
+  {
+   "text": "d",
+   "x": 173,
+   "y": 340,
+   "w": 12,
+   "h": 17
+  },
+  {
+   "text": "Sie haben ihn",
+   "x": 200,
+   "y": 339,
+   "w": 138,
+   "h": 18
+  },
+  {
+   "text": "Ö)",
+   "x": 371,
+   "y": 339,
+   "w": 6,
+   "h": 1
+  },
+  {
+   "text": "in",
+   "x": 395,
+   "y": 341,
+   "w": 20,
+   "h": 16
+  },
+  {
+   "text": "letzter",
+   "x": 422,
+   "y": 340,
+   "w": 65,
+   "h": 17
+  },
+  {
+   "text": "Zeit",
+   "x": 494,
+   "y": 341,
+   "w": 38,
+   "h": 16
+  },
+  {
+   "text": "oft",
+   "x": 539,
+   "y": 339,
+   "w": 28,
+   "h": 18
+  },
+  {
+   "text": "gesehen.",
+   "x": 572,
+   "y": 340,
+   "w": 86,
+   "h": 24
+  },
+  {
+   "text": "lange",
+   "x": 717,
+   "y": 340,
+   "w": 53,
+   "h": 24
+  },
+  {
+   "text": "nicht",
+   "x": 777,
+   "y": 340,
+   "w": 53,
+   "h": 18
+  },
+  {
+   "text": "gesehen.",
+   "x": 836,
+   "y": 341,
+   "w": 85,
+   "h": 23
+  },
+  {
+   "text": "So",
+   "x": 172,
+   "y": 413,
+   "w": 26,
+   "h": 17
+  },
+  {
+   "text": "war",
+   "x": 200,
+   "y": 407,
+   "w": 46,
+   "h": 30
+  },
+  {
+   "text": "Walter",
+   "x": 245,
+   "y": 407,
+   "w": 73,
+   "h": 30
+  },
+  {
+   "text": "früher.",
+   "x": 336,
+   "y": 411,
+   "w": 75,
+   "h": 19
+  },
+  {
+   "text": "a",
+   "x": 138,
+   "y": 462,
+   "w": 9,
+   "h": 12
+  },
+  {
+   "text": "Wer",
+   "x": 173,
+   "y": 458,
+   "w": 40,
+   "h": 16
+  },
+  {
+   "text": "sagt",
+   "x": 220,
+   "y": 460,
+   "w": 40,
+   "h": 21
+  },
+  {
+   "text": "was?",
+   "x": 267,
+   "y": 458,
+   "w": 48,
+   "h": 16
+  },
+  {
+   "text": "Ordnen",
+   "x": 323,
+   "y": 456,
+   "w": 70,
+   "h": 18
+  },
+  {
+   "text": "Sie",
+   "x": 400,
+   "y": 457,
+   "w": 29,
+   "h": 18
+  },
+  {
+   "text": "zu",
+   "x": 436,
+   "y": 463,
+   "w": 22,
+   "h": 11
+  },
+  {
+   "text": "(F",
+   "x": 467,
+   "y": 455,
+   "w": 19,
+   "h": 22
+  },
+  {
+   "text": "Frau",
+   "x": 516,
+   "y": 458,
+   "w": 41,
+   "h": 16
+  },
+  {
+   "text": "M",
+   "x": 584,
+   "y": 458,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "text": "Mann).",
+   "x": 631,
+   "y": 456,
+   "w": 69,
+   "h": 21
+  },
+  {
+   "text": "Walter",
+   "x": 201,
+   "y": 500,
+   "w": 66,
+   "h": 18
+  },
+  {
+   "text": "war",
+   "x": 273,
+   "y": 507,
+   "w": 38,
+   "h": 11
+  },
+  {
+   "text": "ein",
+   "x": 318,
+   "y": 502,
+   "w": 31,
+   "h": 16
+  },
+  {
+   "text": "bisschen",
+   "x": 355,
+   "y": 500,
+   "w": 86,
+   "h": 18
+  },
+  {
+   "text": "dick.",
+   "x": 448,
+   "y": 501,
+   "w": 46,
+   "h": 17
+  },
+  {
+   "text": "Er",
+   "x": 202,
+   "y": 532,
+   "w": 21,
+   "h": 15
+  },
+  {
+   "text": "hatte",
+   "x": 229,
+   "y": 530,
+   "w": 52,
+   "h": 17
+  },
+  {
+   "text": "einen",
+   "x": 288,
+   "y": 531,
+   "w": 57,
+   "h": 16
+  },
+  {
+   "text": "Bart.",
+   "x": 352,
+   "y": 532,
+   "w": 47,
+   "h": 15
+  },
+  {
+   "text": "Er",
+   "x": 202,
+   "y": 561,
+   "w": 21,
+   "h": 15
+  },
+  {
+   "text": "hatte",
+   "x": 229,
+   "y": 559,
+   "w": 52,
+   "h": 17
+  },
+  {
+   "text": "keine",
+   "x": 288,
+   "y": 559,
+   "w": 54,
+   "h": 17
+  },
+  {
+   "text": "Brille.",
+   "x": 350,
+   "y": 559,
+   "w": 60,
+   "h": 17
+  },
+  {
+   "text": "Walter",
+   "x": 735,
+   "y": 501,
+   "w": 66,
+   "h": 18
+  },
+  {
+   "text": "hatte",
+   "x": 808,
+   "y": 501,
+   "w": 52,
+   "h": 18
+  },
+  {
+   "text": "keinen",
+   "x": 866,
+   "y": 502,
+   "w": 69,
+   "h": 17
+  },
+  {
+   "text": "Bauch.",
+   "x": 943,
+   "y": 502,
+   "w": 65,
+   "h": 17
+  },
+  {
+   "text": "Er",
+   "x": 735,
+   "y": 532,
+   "w": 22,
+   "h": 16
+  },
+  {
+   "text": "hatte",
+   "x": 764,
+   "y": 530,
+   "w": 51,
+   "h": 18
+  },
+  {
+   "text": "keinen",
+   "x": 822,
+   "y": 530,
+   "w": 69,
+   "h": 18
+  },
+  {
+   "text": "Bart.",
+   "x": 898,
+   "y": 533,
+   "w": 48,
+   "h": 15
+  },
+  {
+   "text": "Er",
+   "x": 735,
+   "y": 562,
+   "w": 22,
+   "h": 15
+  },
+  {
+   "text": "hatte",
+   "x": 763,
+   "y": 560,
+   "w": 52,
+   "h": 17
+  },
+  {
+   "text": "eine",
+   "x": 822,
+   "y": 561,
+   "w": 42,
+   "h": 16
+  },
+  {
+   "text": "Brille.",
+   "x": 872,
+   "y": 560,
+   "w": 60,
+   "h": 17
+  },
+  {
+   "text": "interessant?",
+   "x": 91,
+   "y": 463,
+   "w": 12,
+   "h": 72
+  },
+  {
+   "text": "»324",
+   "x": 67,
+   "y": 667,
+   "w": 39,
+   "h": 12
+  },
+  {
+   "text": "b",
+   "x": 138,
+   "y": 661,
+   "w": 11,
+   "h": 17
+  },
+  {
+   "text": "Hören",
+   "x": 174,
+   "y": 662,
+   "w": 57,
+   "h": 16
+  },
+  {
+   "text": "Sie",
+   "x": 239,
+   "y": 662,
+   "w": 28,
+   "h": 17
+  },
+  {
+   "text": "noch",
+   "x": 276,
+   "y": 661,
+   "w": 45,
+   "h": 17
+  },
+  {
+   "text": "einmal",
+   "x": 330,
+   "y": 661,
+   "w": 65,
+   "h": 17
+  },
+  {
+   "text": "und",
+   "x": 404,
+   "y": 661,
+   "w": 35,
+   "h": 18
+  },
+  {
+   "text": "ergänzen",
+   "x": 447,
+   "y": 662,
+   "w": 89,
+   "h": 24
+  },
+  {
+   "text": "Sie",
+   "x": 544,
+   "y": 662,
+   "w": 28,
+   "h": 17
+  },
+  {
+   "text": "die",
+   "x": 579,
+   "y": 661,
+   "w": 30,
+   "h": 18
+  },
+  {
+   "text": "Tabelle.",
+   "x": 614,
+   "y": 661,
+   "w": 74,
+   "h": 18
+  },
+  {
+   "text": "Präsens",
+   "x": 310,
+   "y": 707,
+   "w": 71,
+   "h": 15
+  },
+  {
+   "text": "Präteritum",
+   "x": 400,
+   "y": 707,
+   "w": 104,
+   "h": 15
+  },
+  {
+   "text": "Präsens",
+   "x": 523,
+   "y": 707,
+   "w": 72,
+   "h": 15
+  },
+  {
+   "text": "Präteritum",
+   "x": 626,
+   "y": 707,
+   "w": 104,
+   "h": 15
+  },
+  {
+   "text": "sein",
+   "x": 357,
+   "y": 727,
+   "w": 49,
+   "h": 30
+  },
+  {
+   "text": "haben",
+   "x": 573,
+   "y": 731,
+   "w": 57,
+   "h": 16
+  },
+  {
+   "text": "ich",
+   "x": 213,
+   "y": 756,
+   "w": 27,
+   "h": 16
+  },
+  {
+   "text": "bin",
+   "x": 308,
+   "y": 756,
+   "w": 30,
+   "h": 16
+  },
+  {
+   "text": "habe",
+   "x": 522,
+   "y": 756,
+   "w": 42,
+   "h": 16
+  },
+  {
+   "text": "hatte",
+   "x": 625,
+   "y": 757,
+   "w": 47,
+   "h": 15
+  },
+  {
+   "text": "du",
+   "x": 213,
+   "y": 781,
+   "w": 22,
+   "h": 16
+  },
+  {
+   "text": "bist",
+   "x": 297,
+   "y": 777,
+   "w": 45,
+   "h": 30
+  },
+  {
+   "text": "hast",
+   "x": 522,
+   "y": 777,
+   "w": 39,
+   "h": 30
+  },
+  {
+   "text": "hattest",
+   "x": 626,
+   "y": 782,
+   "w": 62,
+   "h": 15
+  },
+  {
+   "text": "er/es/sie",
+   "x": 213,
+   "y": 807,
+   "w": 78,
+   "h": 18
+  },
+  {
+   "text": "ist",
+   "x": 310,
+   "y": 807,
+   "w": 21,
+   "h": 15
+  },
+  {
+   "text": "hat",
+   "x": 522,
+   "y": 806,
+   "w": 30,
+   "h": 16
+  },
+  {
+   "text": "wir",
+   "x": 212,
+   "y": 832,
+   "w": 31,
+   "h": 15
+  },
+  {
+   "text": "sind",
+   "x": 298,
+   "y": 827,
+   "w": 49,
+   "h": 30
+  },
+  {
+   "text": "waren",
+   "x": 390,
+   "y": 827,
+   "w": 65,
+   "h": 30
+  },
+  {
+   "text": "haben",
+   "x": 522,
+   "y": 831,
+   "w": 55,
+   "h": 16
+  },
+  {
+   "text": "3",
+   "x": 180,
+   "y": 856,
+   "w": 6,
+   "h": 24
+  },
+  {
+   "text": "ihr",
+   "x": 213,
+   "y": 856,
+   "w": 27,
+   "h": 16
+  },
+  {
+   "text": "seid",
+   "x": 310,
+   "y": 852,
+   "w": 34,
+   "h": 31
+  },
+  {
+   "text": "wart",
+   "x": 390,
+   "y": 853,
+   "w": 50,
+   "h": 30
+  },
+  {
+   "text": "habt",
+   "x": 512,
+   "y": 852,
+   "w": 48,
+   "h": 31
+  },
+  {
+   "text": "hattet",
+   "x": 625,
+   "y": 857,
+   "w": 54,
+   "h": 16
+  },
+  {
+   "text": "sie/Sie",
+   "x": 213,
+   "y": 882,
+   "w": 59,
+   "h": 18
+  },
+  {
+   "text": "sind",
+   "x": 309,
+   "y": 881,
+   "w": 38,
+   "h": 16
+  },
+  {
+   "text": "waren",
+   "x": 388,
+   "y": 878,
+   "w": 67,
+   "h": 27
+  },
+  {
+   "text": "haben",
+   "x": 511,
+   "y": 877,
+   "w": 66,
+   "h": 28
+  },
+  {
+   "text": "hatten",
+   "x": 625,
+   "y": 882,
+   "w": 59,
+   "h": 16
+  },
+  {
+   "text": "Sie",
+   "x": 172,
+   "y": 951,
+   "w": 33,
+   "h": 19
+  },
+  {
+   "text": "sieht",
+   "x": 213,
+   "y": 951,
+   "w": 55,
+   "h": 19
+  },
+  {
+   "text": "wirklich",
+   "x": 276,
+   "y": 951,
+   "w": 91,
+   "h": 19
+  },
+  {
+   "text": "sympathisch",
+   "x": 376,
+   "y": 951,
+   "w": 139,
+   "h": 27
+  },
+  {
+   "text": "aus.",
+   "x": 524,
+   "y": 958,
+   "w": 44,
+   "h": 13
+  },
+  {
+   "text": "a",
+   "x": 136,
+   "y": 1002,
+   "w": 10,
+   "h": 12
+  },
+  {
+   "text": "Arbeiten",
+   "x": 173,
+   "y": 996,
+   "w": 84,
+   "h": 18
+  },
+  {
+   "text": "Sie",
+   "x": 264,
+   "y": 997,
+   "w": 29,
+   "h": 17
+  },
+  {
+   "text": "zu",
+   "x": 300,
+   "y": 1003,
+   "w": 22,
+   "h": 11
+  },
+  {
+   "text": "zweit.",
+   "x": 330,
+   "y": 997,
+   "w": 60,
+   "h": 17
+  },
+  {
+   "text": "Suchen",
+   "x": 398,
+   "y": 996,
+   "w": 69,
+   "h": 18
+  },
+  {
+   "text": "Sie",
+   "x": 475,
+   "y": 997,
+   "w": 29,
+   "h": 17
+  },
+  {
+   "text": "eine",
+   "x": 511,
+   "y": 997,
+   "w": 41,
+   "h": 17
+  },
+  {
+   "text": "Person",
+   "x": 561,
+   "y": 998,
+   "w": 63,
+   "h": 17
+  },
+  {
+   "text": "aus",
+   "x": 173,
+   "y": 1031,
+   "w": 32,
+   "h": 12
+  },
+  {
+   "text": "und",
+   "x": 213,
+   "y": 1025,
+   "w": 35,
+   "h": 18
+  },
+  {
+   "text": "beschreiben",
+   "x": 258,
+   "y": 1025,
+   "w": 115,
+   "h": 18
+  },
+  {
+   "text": "Sie",
+   "x": 381,
+   "y": 1026,
+   "w": 29,
+   "h": 18
+  },
+  {
+   "text": "die",
+   "x": 417,
+   "y": 1026,
+   "w": 29,
+   "h": 18
+  },
+  {
+   "text": "Person",
+   "x": 456,
+   "y": 1028,
+   "w": 62,
+   "h": 16
+  },
+  {
+   "text": "Ihrer",
+   "x": 528,
+   "y": 1026,
+   "w": 46,
+   "h": 18
+  },
+  {
+   "text": "Partnerin",
+   "x": 174,
+   "y": 1055,
+   "w": 90,
+   "h": 17
+  },
+  {
+   "text": "Ihrem",
+   "x": 292,
+   "y": 1055,
+   "w": 55,
+   "h": 18
+  },
+  {
+   "text": "Partner.",
+   "x": 356,
+   "y": 1056,
+   "w": 76,
+   "h": 17
+  },
+  {
+   "text": "Sie/Er",
+   "x": 440,
+   "y": 1056,
+   "w": 61,
+   "h": 21
+  },
+  {
+   "text": "rät:",
+   "x": 509,
+   "y": 1056,
+   "w": 33,
+   "h": 17
+  },
+  {
+   "text": "Wer",
+   "x": 172,
+   "y": 1085,
+   "w": 39,
+   "h": 16
+  },
+  {
+   "text": "ist",
+   "x": 219,
+   "y": 1085,
+   "w": 24,
+   "h": 16
+  },
+  {
+   "text": "das?",
+   "x": 250,
+   "y": 1084,
+   "w": 42,
+   "h": 18
+  },
+  {
+   "text": "Hilfe",
+   "x": 301,
+   "y": 1084,
+   "w": 45,
+   "h": 18
+  },
+  {
+   "text": "finden",
+   "x": 354,
+   "y": 1084,
+   "w": 61,
+   "h": 18
+  },
+  {
+   "text": "Sie",
+   "x": 423,
+   "y": 1085,
+   "w": 28,
+   "h": 17
+  },
+  {
+   "text": "im",
+   "x": 460,
+   "y": 1085,
+   "w": 22,
+   "h": 17
+  },
+  {
+   "text": "Bildlexikon.",
+   "x": 492,
+   "y": 1084,
+   "w": 114,
+   "h": 18
+  },
+  {
+   "text": "spiel",
+   "x": 90,
+   "y": 1047,
+   "w": 15,
+   "h": 28
+  },
+  {
+   "text": "Spaß",
+   "x": 90,
+   "y": 1000,
+   "w": 16,
+   "h": 28
+  },
+  {
+   "text": "w",
+   "x": 171,
+   "y": 1133,
+   "w": 13,
+   "h": 12
+  },
+  {
+   "text": "Bart",
+   "x": 330,
+   "y": 1130,
+   "w": 42,
+   "h": 16
+  },
+  {
+   "text": "und",
+   "x": 379,
+   "y": 1129,
+   "w": 38,
+   "h": 17
+  },
+  {
+   "text": "ist",
+   "x": 425,
+   "y": 1129,
+   "w": 24,
+   "h": 17
+  },
+  {
+   "text": "ein",
+   "x": 456,
+   "y": 1130,
+   "w": 30,
+   "h": 16
+  },
+  {
+   "text": "bisschen",
+   "x": 492,
+   "y": 1129,
+   "w": 86,
+   "h": 17
+  },
+  {
+   "text": "dick.",
+   "x": 585,
+   "y": 1129,
+   "w": 47,
+   "h": 17
+  },
+  {
+   "text": "4",
+   "x": 172,
+   "y": 1163,
+   "w": 13,
+   "h": 11
+  },
+  {
+   "text": "Ich",
+   "x": 199,
+   "y": 1157,
+   "w": 31,
+   "h": 18
+  },
+  {
+   "text": "glaube,",
+   "x": 236,
+   "y": 1157,
+   "w": 71,
+   "h": 24
+  },
+  {
+   "text": "das",
+   "x": 315,
+   "y": 1158,
+   "w": 31,
+   "h": 17
+  },
+  {
+   "text": "ist",
+   "x": 354,
+   "y": 1158,
+   "w": 24,
+   "h": 17
+  },
+  {
+   "text": "Walter",
+   "x": 385,
+   "y": 1158,
+   "w": 66,
+   "h": 17
+  },
+  {
+   "text": "Backes.",
+   "x": 458,
+   "y": 1158,
+   "w": 71,
+   "h": 17
+  },
+  {
+   "text": "b",
+   "x": 136,
+   "y": 1216,
+   "w": 11,
+   "h": 17
+  },
+  {
+   "text": "Sind",
+   "x": 172,
+   "y": 1216,
+   "w": 41,
+   "h": 17
+  },
+  {
+   "text": "die",
+   "x": 222,
+   "y": 1216,
+   "w": 29,
+   "h": 17
+  },
+  {
+   "text": "Wörter",
+   "x": 258,
+   "y": 1217,
+   "w": 68,
+   "h": 16
+  },
+  {
+   "text": "positiv",
+   "x": 335,
+   "y": 1216,
+   "w": 66,
+   "h": 24
+  },
+  {
+   "text": "oder",
+   "x": 445,
+   "y": 1216,
+   "w": 44,
+   "h": 18
+  },
+  {
+   "text": "negativ",
+   "x": 497,
+   "y": 1217,
+   "w": 73,
+   "h": 23
+  },
+  {
+   "text": "Ordnen",
+   "x": 172,
+   "y": 1245,
+   "w": 70,
+   "h": 18
+  },
+  {
+   "text": "Sie",
+   "x": 250,
+   "y": 1245,
+   "w": 28,
+   "h": 18
+  },
+  {
+   "text": "zu.",
+   "x": 286,
+   "y": 1251,
+   "w": 29,
+   "h": 12
+  },
+  {
+   "text": "Film",
+   "x": 90,
+   "y": 1226,
+   "w": 11,
+   "h": 24
+  },
+  {
+   "text": "sympathisch",
+   "x": 206,
+   "y": 1289,
+   "w": 113,
+   "h": 24
+  },
+  {
+   "text": "Ö",
+   "x": 337,
+   "y": 1288,
+   "w": 21,
+   "h": 20
+  },
+  {
+   "text": "nett",
+   "x": 365,
+   "y": 1294,
+   "w": 38,
+   "h": 13
+  },
+  {
+   "text": "glücklich",
+   "x": 447,
+   "y": 1289,
+   "w": 80,
+   "h": 24
+  },
+  {
+   "text": "O",
+   "x": 178,
+   "y": 1317,
+   "w": 21,
+   "h": 21
+  },
+  {
+   "text": "uninteressant",
+   "x": 207,
+   "y": 1319,
+   "w": 124,
+   "h": 17
+  },
+  {
+   "text": "unsympathisch",
+   "x": 377,
+   "y": 1319,
+   "w": 136,
+   "h": 23
+  },
+  {
+   "text": "komisch",
+   "x": 561,
+   "y": 1319,
+   "w": 72,
+   "h": 17
+  },
+  {
+   "text": "freundlich",
+   "x": 206,
+   "y": 1347,
+   "w": 91,
+   "h": 19
+  },
+  {
+   "text": "seltsam",
+   "x": 344,
+   "y": 1348,
+   "w": 66,
+   "h": 17
+  },
+  {
+   "text": "unfreundlich",
+   "x": 457,
+   "y": 1348,
+   "w": 115,
+   "h": 17
+  },
+  {
+   "text": "interessant",
+   "x": 619,
+   "y": 1349,
+   "w": 100,
+   "h": 17
+  },
+  {
+   "text": "fröhlich",
+   "x": 207,
+   "y": 1377,
+   "w": 70,
+   "h": 17
+  },
+  {
+   "text": "O",
+   "x": 295,
+   "y": 1375,
+   "w": 21,
+   "h": 21
+  },
+  {
+   "text": "langweilig",
+   "x": 324,
+   "y": 1377,
+   "w": 92,
+   "h": 24
+  },
+  {
+   "text": "unglücklich/traurig",
+   "x": 462,
+   "y": 1377,
+   "w": 186,
+   "h": 24
+  },
+  {
+   "text": "O",
+   "x": 656,
+   "y": 1376,
+   "w": 21,
+   "h": 21
+  },
+  {
+   "text": "hübsch",
+   "x": 684,
+   "y": 1378,
+   "w": 63,
+   "h": 17
+  },
+  {
+   "text": "sympathisch",
+   "x": 238,
+   "y": 1461,
+   "w": 113,
+   "h": 22
+  },
+  {
+   "text": "unsympathisch",
+   "x": 425,
+   "y": 1461,
+   "w": 138,
+   "h": 22
+  },
+  {
+   "text": "GRAMMATIK",
+   "x": 176,
+   "y": 1434,
+   "w": 7,
+   "h": 62
+  },
+  {
+   "text": "42",
+   "x": 95,
+   "y": 1585,
+   "w": 19,
+   "h": 13
+  },
+  {
+   "text": "zweiundvierzig",
+   "x": 154,
+   "y": 1583,
+   "w": 139,
+   "h": 22
+  },
+  {
+   "text": "Bart",
+   "x": 76,
+   "y": 119,
+   "w": 41,
+   "h": 18
+  },
+  {
+   "text": "lange",
+   "x": 188,
+   "y": 119,
+   "w": 41,
+   "h": 18
+  },
+  {
+   "text": "Haare",
+   "x": 238,
+   "y": 119,
+   "w": 41,
+   "h": 18
+  },
+  {
+   "text": "kurze",
+   "x": 366,
+   "y": 119,
+   "w": 43,
+   "h": 18
+  },
+  {
+   "text": "Haare",
+   "x": 419,
+   "y": 119,
+   "w": 43,
+   "h": 18
+  },
+  {
+   "text": "blonde",
+   "x": 543,
+   "y": 119,
+   "w": 56,
+   "h": 18
+  },
+  {
+   "text": "Haare",
+   "x": 609,
+   "y": 119,
+   "w": 47,
+   "h": 18
+  },
+  {
+   "text": "braune",
+   "x": 726,
+   "y": 119,
+   "w": 57,
+   "h": 18
+  },
+  {
+   "text": "Haare",
+   "x": 793,
+   "y": 119,
+   "w": 47,
+   "h": 18
+  },
+  {
+   "text": "schwarze",
+   "x": 891,
+   "y": 119,
+   "w": 76,
+   "h": 18
+  },
+  {
+   "text": "Haare",
+   "x": 976,
+   "y": 119,
+   "w": 47,
+   "h": 18
+  },
+  {
+   "text": "graue",
+   "x": 1085,
+   "y": 119,
+   "w": 48,
+   "h": 18
+  },
+  {
+   "text": "Haare",
+   "x": 1142,
+   "y": 119,
+   "w": 48,
+   "h": 18
+  },
+  {
+   "text": "Udo",
+   "x": 875,
+   "y": 962,
+   "w": 31,
+   "h": 18
+  },
+  {
+   "text": "Linde",
+   "x": 916,
+   "y": 962,
+   "w": 51,
+   "h": 18
+  },
+  {
+   "text": "Angela",
+   "x": 1015,
+   "y": 962,
+   "w": 57,
+   "h": 18
+  },
+  {
+   "text": "Mai",
+   "x": 1081,
+   "y": 962,
+   "w": 28,
+   "h": 18
+  },
+  {
+   "text": "Mark",
+   "x": 995,
+   "y": 1116,
+   "w": 34,
+   "h": 18
+  },
+  {
+   "text": "Klein",
+   "x": 1036,
+   "y": 1116,
+   "w": 42,
+   "h": 18
+  },
+  {
+   "text": "Kristin",
+   "x": 1104,
+   "y": 1153,
+   "w": 51,
+   "h": 18
+  },
+  {
+   "text": "Stein",
+   "x": 1162,
+   "y": 1153,
+   "w": 36,
+   "h": 18
+  },
+  {
+   "text": "Walter",
+   "x": 1034,
+   "y": 1220,
+   "w": 55,
+   "h": 18
+  },
+  {
+   "text": "Backes",
+   "x": 1098,
+   "y": 1220,
+   "w": 55,
+   "h": 18
+  },
+  {
+   "text": "Jens",
+   "x": 899,
+   "y": 1243,
+   "w": 34,
+   "h": 18
+  },
+  {
+   "text": "Vogel",
+   "x": 941,
+   "y": 1243,
+   "w": 42,
+   "h": 18
+  },
+  {
+   "text": "Hannes",
+   "x": 678,
+   "y": 1248,
+   "w": 69,
+   "h": 18
+  },
+  {
+   "text": "Zeman",
+   "x": 758,
+   "y": 1248,
+   "w": 57,
+   "h": 18
+  },
+  {
+   "text": "Helga",
+   "x": 784,
+   "y": 1289,
+   "w": 44,
+   "h": 18
+  },
+  {
+   "text": "Döring",
+   "x": 836,
+   "y": 1289,
+   "w": 52,
+   "h": 18
+  }
+ ],
+ "fields": [
+  {
+   "id": "2a-0",
+   "group": "task2",
+   "kind": "radio",
+   "label": "Die beiden sprechen über Freund",
+   "answer": "true",
+   "x": 479,
+   "y": 249,
+   "w": 24,
+   "h": 24,
+   "name": "2a",
+   "value": "Freund"
+  },
+  {
+   "id": "2a-1",
+   "group": "task2",
+   "kind": "radio",
+   "label": "Die beiden sprechen über Party",
+   "answer": "false",
+   "x": 678,
+   "y": 249,
+   "w": 24,
+   "h": 24,
+   "name": "2a",
+   "value": "Party"
+  },
+  {
+   "id": "2b-0",
+   "group": "task2",
+   "kind": "radio",
+   "label": "Die beiden kennen Walter lange",
+   "answer": "true",
+   "x": 487,
+   "y": 279,
+   "w": 24,
+   "h": 24,
+   "name": "2b",
+   "value": "lange"
+  },
+  {
+   "id": "2b-1",
+   "group": "task2",
+   "kind": "radio",
+   "label": "Die beiden kennen Walter nicht",
+   "answer": "false",
+   "x": 669,
+   "y": 279,
+   "w": 24,
+   "h": 24,
+   "name": "2b",
+   "value": "nicht"
+  },
+  {
+   "id": "2c-0",
+   "group": "task2",
+   "kind": "radio",
+   "label": "Wer war mit Walter im Schwimmbad? Sie",
+   "answer": "true",
+   "x": 200,
+   "y": 309,
+   "w": 24,
+   "h": 24,
+   "name": "2c",
+   "value": "Sie"
+  },
+  {
+   "id": "2c-1",
+   "group": "task2",
+   "kind": "radio",
+   "label": "Wer war mit Walter im Schwimmbad? Er",
+   "answer": "false",
+   "x": 284,
+   "y": 309,
+   "w": 24,
+   "h": 24,
+   "name": "2c",
+   "value": "Er"
+  },
+  {
+   "id": "2d-0",
+   "group": "task2",
+   "kind": "radio",
+   "label": "Sie haben ihn oft gesehen",
+   "answer": "false",
+   "x": 364,
+   "y": 338,
+   "w": 24,
+   "h": 24,
+   "name": "2d",
+   "value": "oft gesehen"
+  },
+  {
+   "id": "2d-1",
+   "group": "task2",
+   "kind": "radio",
+   "label": "Sie haben ihn lange nicht gesehen",
+   "answer": "true",
+   "x": 684,
+   "y": 338,
+   "w": 24,
+   "h": 24,
+   "name": "2d",
+   "value": "lange nicht gesehen"
+  },
+  {
+   "id": "3a-left",
+   "group": "task3a",
+   "kind": "select",
+   "label": "Wer sagt das? F=Frau / M=Mann",
+   "answer": "F",
+   "x": 170,
+   "y": 497,
+   "w": 31,
+   "h": 31,
+   "options": [
+    {
+     "value": "F",
+     "label": "F"
+    },
+    {
+     "value": "M",
+     "label": "M"
+    }
+   ]
+  },
+  {
+   "id": "3a-right",
+   "group": "task3a",
+   "kind": "select",
+   "label": "Wer sagt das? F=Frau / M=Mann",
+   "answer": "M",
+   "x": 701,
+   "y": 497,
+   "w": 31,
+   "h": 31,
+   "options": [
+    {
+     "value": "F",
+     "label": "F"
+    },
+    {
+     "value": "M",
+     "label": "M"
+    }
+   ]
+  },
+  {
+   "id": "ich-war",
+   "group": "task3b",
+   "kind": "text",
+   "label": "ich-war",
+   "answer": "war",
+   "x": 398,
+   "y": 749,
+   "w": 82,
+   "h": 26
+  },
+  {
+   "id": "du-warst",
+   "group": "task3b",
+   "kind": "text",
+   "label": "du-warst",
+   "answer": "warst",
+   "x": 398,
+   "y": 775,
+   "w": 82,
+   "h": 26
+  },
+  {
+   "id": "er-war",
+   "group": "task3b",
+   "kind": "text",
+   "label": "er-war",
+   "answer": "war",
+   "x": 398,
+   "y": 800,
+   "w": 82,
+   "h": 26
+  },
+  {
+   "id": "er-hatte",
+   "group": "task3b",
+   "kind": "text",
+   "label": "er-hatte",
+   "answer": "hatte",
+   "x": 624,
+   "y": 800,
+   "w": 65,
+   "h": 26
+  },
+  {
+   "id": "wir-hatten",
+   "group": "task3b",
+   "kind": "text",
+   "label": "wir-hatten",
+   "answer": "hatten",
+   "x": 624,
+   "y": 826,
+   "w": 65,
+   "h": 26
+  },
+  {
+   "id": "4b-nett",
+   "group": "task4b",
+   "kind": "select",
+   "label": "nett",
+   "answer": "+",
+   "x": 336,
+   "y": 1286,
+   "w": 25,
+   "h": 25,
+   "options": [
+    {
+     "value": "+",
+     "label": "+"
+    },
+    {
+     "value": "-",
+     "label": "-"
+    }
+   ]
+  },
+  {
+   "id": "4b-glücklich",
+   "group": "task4b",
+   "kind": "select",
+   "label": "glücklich",
+   "answer": "+",
+   "x": 419,
+   "y": 1286,
+   "w": 25,
+   "h": 25,
+   "options": [
+    {
+     "value": "+",
+     "label": "+"
+    },
+    {
+     "value": "-",
+     "label": "-"
+    }
+   ]
+  },
+  {
+   "id": "4b-uninteressant",
+   "group": "task4b",
+   "kind": "select",
+   "label": "uninteressant",
+   "answer": "-",
+   "x": 175,
+   "y": 1316,
+   "w": 25,
+   "h": 25,
+   "options": [
+    {
+     "value": "+",
+     "label": "+"
+    },
+    {
+     "value": "-",
+     "label": "-"
+    }
+   ]
+  },
+  {
+   "id": "4b-unsympathisch",
+   "group": "task4b",
+   "kind": "select",
+   "label": "unsympathisch",
+   "answer": "-",
+   "x": 349,
+   "y": 1316,
+   "w": 25,
+   "h": 25,
+   "options": [
+    {
+     "value": "+",
+     "label": "+"
+    },
+    {
+     "value": "-",
+     "label": "-"
+    }
+   ]
+  },
+  {
+   "id": "4b-freundlich",
+   "group": "task4b",
+   "kind": "select",
+   "label": "freundlich",
+   "answer": "+",
+   "x": 175,
+   "y": 1344,
+   "w": 25,
+   "h": 25,
+   "options": [
+    {
+     "value": "+",
+     "label": "+"
+    },
+    {
+     "value": "-",
+     "label": "-"
+    }
+   ]
+  },
+  {
+   "id": "4b-seltsam",
+   "group": "task4b",
+   "kind": "select",
+   "label": "seltsam",
+   "answer": "-",
+   "x": 301,
+   "y": 1344,
+   "w": 25,
+   "h": 25,
+   "options": [
+    {
+     "value": "+",
+     "label": "+"
+    },
+    {
+     "value": "-",
+     "label": "-"
+    }
+   ]
+  },
+  {
+   "id": "4b-unfreundlich",
+   "group": "task4b",
+   "kind": "select",
+   "label": "unfreundlich",
+   "answer": "-",
+   "x": 412,
+   "y": 1344,
+   "w": 25,
+   "h": 25,
+   "options": [
+    {
+     "value": "+",
+     "label": "+"
+    },
+    {
+     "value": "-",
+     "label": "-"
+    }
+   ]
+  },
+  {
+   "id": "4b-interessant",
+   "group": "task4b",
+   "kind": "select",
+   "label": "interessant",
+   "answer": "+",
+   "x": 589,
+   "y": 1344,
+   "w": 25,
+   "h": 25,
+   "options": [
+    {
+     "value": "+",
+     "label": "+"
+    },
+    {
+     "value": "-",
+     "label": "-"
+    }
+   ]
+  },
+  {
+   "id": "4b-fröhlich",
+   "group": "task4b",
+   "kind": "select",
+   "label": "fröhlich",
+   "answer": "+",
+   "x": 177,
+   "y": 1374,
+   "w": 25,
+   "h": 25,
+   "options": [
+    {
+     "value": "+",
+     "label": "+"
+    },
+    {
+     "value": "-",
+     "label": "-"
+    }
+   ]
+  },
+  {
+   "id": "4b-langweilig",
+   "group": "task4b",
+   "kind": "select",
+   "label": "langweilig",
+   "answer": "-",
+   "x": 284,
+   "y": 1374,
+   "w": 25,
+   "h": 25,
+   "options": [
+    {
+     "value": "+",
+     "label": "+"
+    },
+    {
+     "value": "-",
+     "label": "-"
+    }
+   ]
+  },
+  {
+   "id": "4b-unglücklich-traurig",
+   "group": "task4b",
+   "kind": "select",
+   "label": "unglücklich-traurig",
+   "answer": "-",
+   "x": 432,
+   "y": 1374,
+   "w": 25,
+   "h": 25,
+   "options": [
+    {
+     "value": "+",
+     "label": "+"
+    },
+    {
+     "value": "-",
+     "label": "-"
+    }
+   ]
+  },
+  {
+   "id": "4b-hübsch",
+   "group": "task4b",
+   "kind": "select",
+   "label": "hübsch",
+   "answer": "+",
+   "x": 653,
+   "y": 1374,
+   "w": 25,
+   "h": 25,
+   "options": [
+    {
+     "value": "+",
+     "label": "+"
+    },
+    {
+     "value": "-",
+     "label": "-"
+    }
+   ]
+  }
+ ],
+ "audio": [
+  {
+   "id": "cd3-24-0",
+   "src": "assets/kb-a12-cd3-track24.mp3",
+   "label": "CD 3, Track 24",
+   "x": 63,
+   "y": 205,
+   "w": 55,
+   "h": 27
+  },
+  {
+   "id": "cd3-24-1",
+   "src": "assets/kb-a12-cd3-track24.mp3",
+   "label": "CD 3, Track 24",
+   "x": 63,
+   "y": 657,
+   "w": 55,
+   "h": 27
+  }
+ ],
+ "groups": [
+  {
+   "id": "task2",
+   "label": "Aufgabe 2"
+  },
+  {
+   "id": "task3a",
+   "label": "Aufgabe 3a"
+  },
+  {
+   "id": "task3b",
+   "label": "Aufgabe 3b"
+  },
+  {
+   "id": "task4b",
+   "label": "Aufgabe 4b"
+  }
+ ],
+ "review": {
+  "status": "partial",
+  "verifiedWords": 0,
+  "totalWords": 247,
+  "notes": [
+   "German OCR word boxes added on the original scan. Exercise fields and audio-marker positions checked against the printed page; the complete word layer still needs an independent word-by-word audit.",
+   "Official key L19 KB 2: Freund; schon lange; Sie; lange nicht gesehen. 3a left Frau/right Mann; 3b war/warst/war/hatte/hatten. 4b signs match the official positive/negative lists; sympathisch, unsympathisch and komisch are already printed examples. Open person description has no fixed answer."
+  ]
+ }
+}
