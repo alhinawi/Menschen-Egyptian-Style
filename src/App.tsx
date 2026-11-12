@@ -6,7 +6,7 @@ import {QuizContext, createQuizStore} from './exercises/QuizState';
 import {ReaderContext, createReaderStore} from './components/ReaderControls';
 import {BookMarkup} from './components/BookMarkup';
 import {mountLesson} from './adapters/mountLesson';
-import {ReaderThemes, AudioHint, CrossBookNavigation} from './components/ReaderThemes';
+import {ReaderThemes, CrossBookNavigation} from './components/ReaderThemes';
 import {LibraryNav} from './components/LibraryNav';
 import {LessonHop} from './components/LessonHop';
 import type {LessonConfig, MarkupNode} from './types/book';
@@ -36,5 +36,5 @@ export default function App({nodes, initializers, config}: AppProps) {
       dispose();
     };
   }, [initializers]);
-  return <ReaderContext.Provider value={reader}>{config.slug === 'ab-a12-l17-20' && <ScanDialogs/>}{config.initializers.includes('meanings') && <MeaningDialog/>}<PersistenceContext.Provider value={persistence}><QuizContext.Provider value={quizzes}><div style={{display: 'contents'}} onInputCapture={e => persistence.input(e.target as HTMLInputElement)}><BookMarkup nodes={nodes} quizEnabled={config.reactExercises}/></div></QuizContext.Provider></PersistenceContext.Provider>{config.themes && <><ReaderThemes/><AudioHint/><CrossBookNavigation/></>}{config.reader && <><LibraryNav slug={config.slug}/><LessonHop slug={config.slug}/></>}</ReaderContext.Provider>;
+  return <ReaderContext.Provider value={reader}>{config.slug === 'ab-a12-l17-20' && <ScanDialogs/>}{config.initializers.includes('meanings') && <MeaningDialog/>}<PersistenceContext.Provider value={persistence}><QuizContext.Provider value={quizzes}><div style={{display: 'contents'}} onInputCapture={e => persistence.input(e.target as HTMLInputElement)}><BookMarkup nodes={nodes} quizEnabled={config.reactExercises}/></div></QuizContext.Provider></PersistenceContext.Provider>{config.themes && <><ReaderThemes/><CrossBookNavigation/></>}{config.reader && <><LibraryNav slug={config.slug}/><LessonHop slug={config.slug}/></>}</ReaderContext.Provider>;
 }
