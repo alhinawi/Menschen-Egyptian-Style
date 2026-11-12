@@ -1,0 +1,901 @@
+{
+  "book": "kb-a11",
+  "page": 61,
+  "image": "assets/kb-a11-p61.png",
+  "width": 1072,
+  "height": 1518,
+  "words": [
+    {
+      "text": "Was",
+      "x": 492,
+      "y": 163,
+      "w": 68,
+      "h": 27
+    },
+    {
+      "text": "hast",
+      "x": 574,
+      "y": 159,
+      "w": 76,
+      "h": 31
+    },
+    {
+      "text": "du",
+      "x": 663,
+      "y": 158,
+      "w": 44,
+      "h": 31
+    },
+    {
+      "text": "heute",
+      "x": 719,
+      "y": 157,
+      "w": 100,
+      "h": 31
+    },
+    {
+      "text": "gemacht",
+      "x": 831,
+      "y": 156,
+      "w": 150,
+      "h": 38
+    },
+    {
+      "text": "Sehen",
+      "x": 222,
+      "y": 1079,
+      "w": 55,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 285,
+      "y": 1079,
+      "w": 27,
+      "h": 16
+    },
+    {
+      "text": "das",
+      "x": 319,
+      "y": 1078,
+      "w": 31,
+      "h": 16
+    },
+    {
+      "text": "Foto",
+      "x": 359,
+      "y": 1080,
+      "w": 41,
+      "h": 14
+    },
+    {
+      "text": "an",
+      "x": 408,
+      "y": 1084,
+      "w": 28,
+      "h": 10
+    },
+    {
+      "text": "Fahren",
+      "x": 445,
+      "y": 1078,
+      "w": 63,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 516,
+      "y": 1078,
+      "w": 27,
+      "h": 15
+    },
+    {
+      "text": "auch",
+      "x": 550,
+      "y": 1077,
+      "w": 44,
+      "h": 16
+    },
+    {
+      "text": "gern",
+      "x": 602,
+      "y": 1082,
+      "w": 42,
+      "h": 17
+    },
+    {
+      "text": "Fahrrad",
+      "x": 654,
+      "y": 1075,
+      "w": 82,
+      "h": 16
+    },
+    {
+      "text": "Wie",
+      "x": 222,
+      "y": 1106,
+      "w": 30,
+      "h": 15
+    },
+    {
+      "text": "oft",
+      "x": 260,
+      "y": 1105,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "und",
+      "x": 292,
+      "y": 1105,
+      "w": 30,
+      "h": 15
+    },
+    {
+      "text": "wohin",
+      "x": 329,
+      "y": 1105,
+      "w": 61,
+      "h": 15
+    },
+    {
+      "text": "täglich",
+      "x": 226,
+      "y": 1144,
+      "w": 53,
+      "h": 21
+    },
+    {
+      "text": "zwei-",
+      "x": 294,
+      "y": 1144,
+      "w": 42,
+      "h": 15
+    },
+    {
+      "text": "bis",
+      "x": 342,
+      "y": 1143,
+      "w": 21,
+      "h": 16
+    },
+    {
+      "text": "dreimal",
+      "x": 369,
+      "y": 1143,
+      "w": 58,
+      "h": 16
+    },
+    {
+      "text": "in",
+      "x": 433,
+      "y": 1143,
+      "w": 15,
+      "h": 14
+    },
+    {
+      "text": "der",
+      "x": 454,
+      "y": 1142,
+      "w": 25,
+      "h": 16
+    },
+    {
+      "text": "Woche",
+      "x": 483,
+      "y": 1142,
+      "w": 53,
+      "h": 16
+    },
+    {
+      "text": "nur",
+      "x": 551,
+      "y": 1147,
+      "w": 26,
+      "h": 13
+    },
+    {
+      "text": "am",
+      "x": 582,
+      "y": 1147,
+      "w": 23,
+      "h": 12
+    },
+    {
+      "text": "Wochenende",
+      "x": 610,
+      "y": 1141,
+      "w": 101,
+      "h": 17
+    },
+    {
+      "text": "fast",
+      "x": 725,
+      "y": 1140,
+      "w": 30,
+      "h": 16
+    },
+    {
+      "text": "nie",
+      "x": 761,
+      "y": 1140,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "nie",
+      "x": 799,
+      "y": 1140,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "zum",
+      "x": 227,
+      "y": 1174,
+      "w": 33,
+      "h": 10
+    },
+    {
+      "text": "Einkaufen",
+      "x": 267,
+      "y": 1168,
+      "w": 77,
+      "h": 16
+    },
+    {
+      "text": "zur",
+      "x": 358,
+      "y": 1173,
+      "w": 25,
+      "h": 10
+    },
+    {
+      "text": "Arbeit",
+      "x": 387,
+      "y": 1168,
+      "w": 49,
+      "h": 16
+    },
+    {
+      "text": "ins",
+      "x": 450,
+      "y": 1168,
+      "w": 22,
+      "h": 15
+    },
+    {
+      "text": "Café",
+      "x": 478,
+      "y": 1167,
+      "w": 34,
+      "h": 16
+    },
+    {
+      "text": "Schwimmbad",
+      "x": 522,
+      "y": 1167,
+      "w": 95,
+      "h": 16
+    },
+    {
+      "text": "Kino",
+      "x": 627,
+      "y": 1168,
+      "w": 44,
+      "h": 17
+    },
+    {
+      "text": "Also",
+      "x": 246,
+      "y": 1207,
+      "w": 39,
+      "h": 16
+    },
+    {
+      "text": "ich",
+      "x": 293,
+      "y": 1206,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "fahre",
+      "x": 325,
+      "y": 1206,
+      "w": 44,
+      "h": 15
+    },
+    {
+      "text": "sehr",
+      "x": 376,
+      "y": 1206,
+      "w": 36,
+      "h": 14
+    },
+    {
+      "text": "gern",
+      "x": 418,
+      "y": 1211,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "Fahrrad",
+      "x": 464,
+      "y": 1205,
+      "w": 71,
+      "h": 15
+    },
+    {
+      "text": "Ich",
+      "x": 544,
+      "y": 1205,
+      "w": 25,
+      "h": 14
+    },
+    {
+      "text": "fahre",
+      "x": 577,
+      "y": 1204,
+      "w": 44,
+      "h": 15
+    },
+    {
+      "text": "täglich",
+      "x": 628,
+      "y": 1204,
+      "w": 57,
+      "h": 20
+    },
+    {
+      "text": "zur",
+      "x": 692,
+      "y": 1209,
+      "w": 27,
+      "h": 9
+    },
+    {
+      "text": "Arbeit",
+      "x": 726,
+      "y": 1203,
+      "w": 52,
+      "h": 14
+    },
+    {
+      "text": "und",
+      "x": 246,
+      "y": 1232,
+      "w": 31,
+      "h": 15
+    },
+    {
+      "text": "zum",
+      "x": 285,
+      "y": 1237,
+      "w": 34,
+      "h": 9
+    },
+    {
+      "text": "Einkaufen",
+      "x": 328,
+      "y": 1231,
+      "w": 91,
+      "h": 15
+    },
+    {
+      "text": "Wirklich",
+      "x": 246,
+      "y": 1257,
+      "w": 83,
+      "h": 15
+    },
+    {
+      "text": "Ich",
+      "x": 337,
+      "y": 1257,
+      "w": 25,
+      "h": 14
+    },
+    {
+      "text": "fahre",
+      "x": 369,
+      "y": 1256,
+      "w": 44,
+      "h": 15
+    },
+    {
+      "text": "nie",
+      "x": 421,
+      "y": 1257,
+      "w": 25,
+      "h": 14
+    },
+    {
+      "text": "Fahrrad",
+      "x": 454,
+      "y": 1255,
+      "w": 72,
+      "h": 15
+    },
+    {
+      "text": "Ich",
+      "x": 535,
+      "y": 1255,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "habe",
+      "x": 567,
+      "y": 1255,
+      "w": 39,
+      "h": 15
+    },
+    {
+      "text": "gar",
+      "x": 612,
+      "y": 1260,
+      "w": 27,
+      "h": 15
+    },
+    {
+      "text": "kein",
+      "x": 645,
+      "y": 1254,
+      "w": 36,
+      "h": 14
+    },
+    {
+      "text": "Fahrrad",
+      "x": 689,
+      "y": 1253,
+      "w": 72,
+      "h": 15
+    },
+    {
+      "text": "Sehen",
+      "x": 224,
+      "y": 1319,
+      "w": 55,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 287,
+      "y": 1319,
+      "w": 27,
+      "h": 15
+    },
+    {
+      "text": "das",
+      "x": 321,
+      "y": 1318,
+      "w": 31,
+      "h": 16
+    },
+    {
+      "text": "Foto",
+      "x": 361,
+      "y": 1320,
+      "w": 41,
+      "h": 14
+    },
+    {
+      "text": "an",
+      "x": 410,
+      "y": 1324,
+      "w": 21,
+      "h": 10
+    },
+    {
+      "text": "und",
+      "x": 440,
+      "y": 1317,
+      "w": 34,
+      "h": 16
+    },
+    {
+      "text": "hören",
+      "x": 484,
+      "y": 1317,
+      "w": 53,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 544,
+      "y": 1317,
+      "w": 33,
+      "h": 16
+    },
+    {
+      "text": "Wer",
+      "x": 224,
+      "y": 1347,
+      "w": 32,
+      "h": 13
+    },
+    {
+      "text": "ist",
+      "x": 264,
+      "y": 1346,
+      "w": 20,
+      "h": 14
+    },
+    {
+      "text": "Anja",
+      "x": 289,
+      "y": 1346,
+      "w": 46,
+      "h": 20
+    },
+    {
+      "text": "Was",
+      "x": 341,
+      "y": 1346,
+      "w": 33,
+      "h": 13
+    },
+    {
+      "text": "meinen",
+      "x": 382,
+      "y": 1345,
+      "w": 60,
+      "h": 14
+    },
+    {
+      "text": "Sie",
+      "x": 450,
+      "y": 1345,
+      "w": 32,
+      "h": 14
+    },
+    {
+      "text": "Alter",
+      "x": 605,
+      "y": 1314,
+      "w": 38,
+      "h": 15
+    },
+    {
+      "text": "29",
+      "x": 655,
+      "y": 1313,
+      "w": 20,
+      "h": 17
+    },
+    {
+      "text": "Beruf",
+      "x": 606,
+      "y": 1334,
+      "w": 41,
+      "h": 20
+    },
+    {
+      "text": "Hobby",
+      "x": 608,
+      "y": 1357,
+      "w": 37,
+      "h": 20
+    },
+    {
+      "text": "Kinder",
+      "x": 609,
+      "y": 1378,
+      "w": 49,
+      "h": 14
+    },
+    {
+      "text": "Ich",
+      "x": 742,
+      "y": 1367,
+      "w": 21,
+      "h": 12
+    },
+    {
+      "text": "glaube",
+      "x": 769,
+      "y": 1366,
+      "w": 50,
+      "h": 17
+    },
+    {
+      "text": "Anja",
+      "x": 826,
+      "y": 1366,
+      "w": 32,
+      "h": 16
+    },
+    {
+      "text": "ist",
+      "x": 864,
+      "y": 1366,
+      "w": 16,
+      "h": 11
+    },
+    {
+      "text": "29",
+      "x": 886,
+      "y": 1365,
+      "w": 15,
+      "h": 12
+    },
+    {
+      "text": "Jahre",
+      "x": 905,
+      "y": 1363,
+      "w": 39,
+      "h": 22
+    },
+    {
+      "text": "alt",
+      "x": 766,
+      "y": 1388,
+      "w": 17,
+      "h": 12
+    },
+    {
+      "text": "und",
+      "x": 790,
+      "y": 1387,
+      "w": 26,
+      "h": 12
+    },
+    {
+      "text": "arbeitet",
+      "x": 822,
+      "y": 1387,
+      "w": 55,
+      "h": 12
+    },
+    {
+      "text": "als",
+      "x": 884,
+      "y": 1386,
+      "w": 18,
+      "h": 12
+    },
+    {
+      "text": "Sprechen",
+      "x": 877,
+      "y": 1021,
+      "w": 72,
+      "h": 18
+    },
+    {
+      "text": "über",
+      "x": 956,
+      "y": 1021,
+      "w": 29,
+      "h": 13
+    },
+    {
+      "text": "Vergan-",
+      "x": 989,
+      "y": 1022,
+      "w": 52,
+      "h": 16
+    },
+    {
+      "text": "genes",
+      "x": 876,
+      "y": 1048,
+      "w": 39,
+      "h": 13
+    },
+    {
+      "text": "sprechen",
+      "x": 921,
+      "y": 1043,
+      "w": 64,
+      "h": 17
+    },
+    {
+      "text": "Was",
+      "x": 992,
+      "y": 1043,
+      "w": 24,
+      "h": 11
+    },
+    {
+      "text": "hast",
+      "x": 1021,
+      "y": 1042,
+      "w": 26,
+      "h": 12
+    },
+    {
+      "text": "du",
+      "x": 877,
+      "y": 1065,
+      "w": 14,
+      "h": 13
+    },
+    {
+      "text": "gestern",
+      "x": 895,
+      "y": 1068,
+      "w": 45,
+      "h": 14
+    },
+    {
+      "text": "gemacht",
+      "x": 944,
+      "y": 1064,
+      "w": 59,
+      "h": 17
+    },
+    {
+      "text": "Lesen",
+      "x": 878,
+      "y": 1098,
+      "w": 44,
+      "h": 12
+    },
+    {
+      "text": "Terminkalender",
+      "x": 928,
+      "y": 1096,
+      "w": 108,
+      "h": 14
+    },
+    {
+      "text": "E-Mail",
+      "x": 879,
+      "y": 1118,
+      "w": 40,
+      "h": 13
+    },
+    {
+      "text": "Schreiben",
+      "x": 878,
+      "y": 1150,
+      "w": 78,
+      "h": 13
+    },
+    {
+      "text": "einen",
+      "x": 961,
+      "y": 1150,
+      "w": 37,
+      "h": 12
+    },
+    {
+      "text": "Tages-",
+      "x": 1003,
+      "y": 1151,
+      "w": 42,
+      "h": 16
+    },
+    {
+      "text": "ablauf",
+      "x": 878,
+      "y": 1171,
+      "w": 42,
+      "h": 13
+    },
+    {
+      "text": "beschreiben",
+      "x": 925,
+      "y": 1171,
+      "w": 80,
+      "h": 13
+    },
+    {
+      "text": "Wortfelder",
+      "x": 878,
+      "y": 1203,
+      "w": 85,
+      "h": 13
+    },
+    {
+      "text": "Alltagsakti-",
+      "x": 969,
+      "y": 1203,
+      "w": 77,
+      "h": 17
+    },
+    {
+      "text": "vitäten",
+      "x": 878,
+      "y": 1226,
+      "w": 48,
+      "h": 12
+    },
+    {
+      "text": "Grammatik",
+      "x": 879,
+      "y": 1256,
+      "w": 86,
+      "h": 14
+    },
+    {
+      "text": "Perfekt",
+      "x": 972,
+      "y": 1256,
+      "w": 48,
+      "h": 13
+    },
+    {
+      "text": "mit",
+      "x": 1026,
+      "y": 1256,
+      "w": 23,
+      "h": 12
+    },
+    {
+      "text": "haben",
+      "x": 879,
+      "y": 1279,
+      "w": 41,
+      "h": 14
+    },
+    {
+      "text": "temporale",
+      "x": 925,
+      "y": 1278,
+      "w": 68,
+      "h": 17
+    },
+    {
+      "text": "Präposi-",
+      "x": 1000,
+      "y": 1278,
+      "w": 53,
+      "h": 17
+    },
+    {
+      "text": "tionen",
+      "x": 879,
+      "y": 1301,
+      "w": 44,
+      "h": 12
+    },
+    {
+      "text": "von",
+      "x": 928,
+      "y": 1304,
+      "w": 21,
+      "h": 9
+    },
+    {
+      "text": "bis",
+      "x": 973,
+      "y": 1300,
+      "w": 20,
+      "h": 14
+    },
+    {
+      "text": "ab",
+      "x": 1000,
+      "y": 1300,
+      "w": 14,
+      "h": 12
+    }
+  ],
+  "fields": [],
+  "audio": [
+    {
+      "id": "cd2-17",
+      "src": "assets/kb-cd2-track17.mp3",
+      "label": "2.17 · Sehen Sie das Foto an und hören Sie.",
+      "x": 136,
+      "y": 1325,
+      "w": 33,
+      "h": 13
+    }
+  ],
+  "groups": [],
+  "review": {
+    "status": "verified",
+    "verifiedWords": 124,
+    "totalWords": 124,
+    "notes": [
+      "Lektion 11 opener (audio 2.17 announcement: \"Lektion 11. Was hast du heute gemacht? Aufgabe 2.\"). All printed words reviewed at 2x-6x: photo-band title (OCR on cropped title strip), task 1 heading, green-highlighted word bank (Café/Schwimmbad/Kino compound split at slashes via connected components), printed bullet examples (blue square / green triangle), task 2 heading, printed blue-script notes (Alter: 29 / Beruf: / Hobby: / Kinder: - printed book font, same style as p58 examples; uniform aligned italic, not previous-owner handwriting), green speech-bubble example \"Ich glaube, Anja ist 29 Jahre alt und arbeitet als ...\" (the 29 re-measured from a 6x crop), and the white-on-blue lesson-goals sidebar (inverted-luminance OCR; line-break hyphens Vergan-/Tages-/Alltagsakti-/Präposi- kept as printed).",
+      "No fields: tasks 1-2 are open speaking/listening prompts; the word bank and blue-script blanks (Beruf/Hobby/Kinder) have no printed lines or boxes. The ▶2.17 marker box measured at (136,1325,33,13) via connected components.",
+      "Excluded per policy: red lesson numeral (right edge, clipped by scan; audio confirms Lektion 11), red task numerals 1/2, photos, bullets, ellipsis, slashes, footer (einundsechzig/61), Modul tab.",
+      "Audio 2.17 (assets/kb-cd2-track17.mp3, 2:13) verified playable; the captured transcript intro matches the lesson and exercise."
+    ]
+  }
+}

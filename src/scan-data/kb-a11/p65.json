@@ -1,0 +1,824 @@
+{
+  "book": "kb-a11",
+  "page": 65,
+  "image": "assets/kb-a11-p65.png",
+  "width": 1072,
+  "height": 1518,
+  "words": [
+    {
+      "text": "Was",
+      "x": 511,
+      "y": 162,
+      "w": 68,
+      "h": 27
+    },
+    {
+      "text": "ist",
+      "x": 594,
+      "y": 166,
+      "w": 44,
+      "h": 23
+    },
+    {
+      "text": "denn",
+      "x": 650,
+      "y": 157,
+      "w": 90,
+      "h": 32
+    },
+    {
+      "text": "hier",
+      "x": 752,
+      "y": 157,
+      "w": 74,
+      "h": 31
+    },
+    {
+      "text": "passiert",
+      "x": 862,
+      "y": 159,
+      "w": 136,
+      "h": 36
+    },
+    {
+      "text": "Sehen",
+      "x": 216,
+      "y": 1076,
+      "w": 55,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 279,
+      "y": 1076,
+      "w": 27,
+      "h": 16
+    },
+    {
+      "text": "das",
+      "x": 313,
+      "y": 1076,
+      "w": 31,
+      "h": 16
+    },
+    {
+      "text": "Foto",
+      "x": 353,
+      "y": 1077,
+      "w": 41,
+      "h": 15
+    },
+    {
+      "text": "an",
+      "x": 402,
+      "y": 1082,
+      "w": 21,
+      "h": 10
+    },
+    {
+      "text": "und",
+      "x": 432,
+      "y": 1076,
+      "w": 34,
+      "h": 16
+    },
+    {
+      "text": "hören",
+      "x": 476,
+      "y": 1076,
+      "w": 53,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 537,
+      "y": 1076,
+      "w": 33,
+      "h": 16
+    },
+    {
+      "text": "Was",
+      "x": 577,
+      "y": 1077,
+      "w": 38,
+      "h": 14
+    },
+    {
+      "text": "ist",
+      "x": 623,
+      "y": 1076,
+      "w": 23,
+      "h": 16
+    },
+    {
+      "text": "hier",
+      "x": 654,
+      "y": 1076,
+      "w": 37,
+      "h": 16
+    },
+    {
+      "text": "passiert",
+      "x": 699,
+      "y": 1076,
+      "w": 85,
+      "h": 22
+    },
+    {
+      "text": "Was",
+      "x": 215,
+      "y": 1103,
+      "w": 37,
+      "h": 14
+    },
+    {
+      "text": "meinen",
+      "x": 261,
+      "y": 1102,
+      "w": 68,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 337,
+      "y": 1102,
+      "w": 37,
+      "h": 15
+    },
+    {
+      "text": "Geburtstag",
+      "x": 221,
+      "y": 1141,
+      "w": 86,
+      "h": 20
+    },
+    {
+      "text": "Hochzeit",
+      "x": 322,
+      "y": 1141,
+      "w": 68,
+      "h": 14
+    },
+    {
+      "text": "Silvester",
+      "x": 405,
+      "y": 1141,
+      "w": 66,
+      "h": 14
+    },
+    {
+      "text": "Karneval",
+      "x": 486,
+      "y": 1141,
+      "w": 64,
+      "h": 14
+    },
+    {
+      "text": "Ich",
+      "x": 619,
+      "y": 1123,
+      "w": 21,
+      "h": 12
+    },
+    {
+      "text": "glaube",
+      "x": 645,
+      "y": 1123,
+      "w": 51,
+      "h": 17
+    },
+    {
+      "text": "die",
+      "x": 702,
+      "y": 1123,
+      "w": 21,
+      "h": 12
+    },
+    {
+      "text": "Leute",
+      "x": 730,
+      "y": 1124,
+      "w": 38,
+      "h": 11
+    },
+    {
+      "text": "haben",
+      "x": 773,
+      "y": 1122,
+      "w": 43,
+      "h": 12
+    },
+    {
+      "text": "Geburtstag",
+      "x": 647,
+      "y": 1144,
+      "w": 77,
+      "h": 17
+    },
+    {
+      "text": "gefeiert",
+      "x": 728,
+      "y": 1144,
+      "w": 60,
+      "h": 17
+    },
+    {
+      "text": "Wann",
+      "x": 215,
+      "y": 1203,
+      "w": 53,
+      "h": 15
+    },
+    {
+      "text": "haben",
+      "x": 278,
+      "y": 1202,
+      "w": 56,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 341,
+      "y": 1202,
+      "w": 27,
+      "h": 16
+    },
+    {
+      "text": "das",
+      "x": 376,
+      "y": 1202,
+      "w": 31,
+      "h": 16
+    },
+    {
+      "text": "letzte",
+      "x": 415,
+      "y": 1202,
+      "w": 54,
+      "h": 16
+    },
+    {
+      "text": "Mal",
+      "x": 478,
+      "y": 1202,
+      "w": 33,
+      "h": 16
+    },
+    {
+      "text": "gefeiert",
+      "x": 518,
+      "y": 1201,
+      "w": 86,
+      "h": 23
+    },
+    {
+      "text": "Erzählen",
+      "x": 613,
+      "y": 1201,
+      "w": 81,
+      "h": 16
+    },
+    {
+      "text": "Sie",
+      "x": 701,
+      "y": 1202,
+      "w": 34,
+      "h": 16
+    },
+    {
+      "text": "Wann",
+      "x": 215,
+      "y": 1243,
+      "w": 61,
+      "h": 13
+    },
+    {
+      "text": "gestern",
+      "x": 303,
+      "y": 1246,
+      "w": 57,
+      "h": 16
+    },
+    {
+      "text": "letzte",
+      "x": 377,
+      "y": 1242,
+      "w": 43,
+      "h": 14
+    },
+    {
+      "text": "Woche",
+      "x": 426,
+      "y": 1242,
+      "w": 51,
+      "h": 14
+    },
+    {
+      "text": "letzten",
+      "x": 493,
+      "y": 1242,
+      "w": 52,
+      "h": 14
+    },
+    {
+      "text": "Monat",
+      "x": 554,
+      "y": 1243,
+      "w": 49,
+      "h": 13
+    },
+    {
+      "text": "Was",
+      "x": 208,
+      "y": 1265,
+      "w": 52,
+      "h": 21
+    },
+    {
+      "text": "Geburtstag",
+      "x": 305,
+      "y": 1267,
+      "w": 85,
+      "h": 20
+    },
+    {
+      "text": "Hochzeit",
+      "x": 406,
+      "y": 1267,
+      "w": 68,
+      "h": 14
+    },
+    {
+      "text": "Silvester",
+      "x": 488,
+      "y": 1267,
+      "w": 66,
+      "h": 14
+    },
+    {
+      "text": "Karneval",
+      "x": 570,
+      "y": 1266,
+      "w": 64,
+      "h": 14
+    },
+    {
+      "text": "Wo",
+      "x": 208,
+      "y": 1290,
+      "w": 42,
+      "h": 21
+    },
+    {
+      "text": "auf",
+      "x": 304,
+      "y": 1291,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "der",
+      "x": 335,
+      "y": 1292,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "Straße",
+      "x": 365,
+      "y": 1291,
+      "w": 50,
+      "h": 15
+    },
+    {
+      "text": "im",
+      "x": 431,
+      "y": 1293,
+      "w": 17,
+      "h": 13
+    },
+    {
+      "text": "Restaurant",
+      "x": 456,
+      "y": 1293,
+      "w": 83,
+      "h": 13
+    },
+    {
+      "text": "zu",
+      "x": 554,
+      "y": 1297,
+      "w": 16,
+      "h": 9
+    },
+    {
+      "text": "Hause",
+      "x": 579,
+      "y": 1293,
+      "w": 45,
+      "h": 12
+    },
+    {
+      "text": "Ich",
+      "x": 240,
+      "y": 1329,
+      "w": 26,
+      "h": 15
+    },
+    {
+      "text": "habe",
+      "x": 272,
+      "y": 1329,
+      "w": 40,
+      "h": 15
+    },
+    {
+      "text": "letzte",
+      "x": 318,
+      "y": 1329,
+      "w": 47,
+      "h": 15
+    },
+    {
+      "text": "Woche",
+      "x": 371,
+      "y": 1329,
+      "w": 55,
+      "h": 14
+    },
+    {
+      "text": "Geburtstag",
+      "x": 433,
+      "y": 1329,
+      "w": 92,
+      "h": 20
+    },
+    {
+      "text": "gefeiert",
+      "x": 530,
+      "y": 1329,
+      "w": 71,
+      "h": 21
+    },
+    {
+      "text": "Wir",
+      "x": 239,
+      "y": 1356,
+      "w": 31,
+      "h": 14
+    },
+    {
+      "text": "haben",
+      "x": 276,
+      "y": 1355,
+      "w": 51,
+      "h": 15
+    },
+    {
+      "text": "im",
+      "x": 334,
+      "y": 1355,
+      "w": 21,
+      "h": 14
+    },
+    {
+      "text": "Restaurant",
+      "x": 363,
+      "y": 1356,
+      "w": 93,
+      "h": 13
+    },
+    {
+      "text": "gefeiert",
+      "x": 461,
+      "y": 1354,
+      "w": 71,
+      "h": 21
+    },
+    {
+      "text": "Es",
+      "x": 541,
+      "y": 1356,
+      "w": 16,
+      "h": 13
+    },
+    {
+      "text": "hat",
+      "x": 564,
+      "y": 1354,
+      "w": 28,
+      "h": 15
+    },
+    {
+      "text": "viel",
+      "x": 597,
+      "y": 1354,
+      "w": 30,
+      "h": 15
+    },
+    {
+      "text": "Spaß",
+      "x": 635,
+      "y": 1354,
+      "w": 40,
+      "h": 20
+    },
+    {
+      "text": "gemacht",
+      "x": 680,
+      "y": 1354,
+      "w": 77,
+      "h": 20
+    },
+    {
+      "text": "Wir",
+      "x": 239,
+      "y": 1381,
+      "w": 31,
+      "h": 14
+    },
+    {
+      "text": "haben",
+      "x": 276,
+      "y": 1380,
+      "w": 51,
+      "h": 15
+    },
+    {
+      "text": "viel",
+      "x": 333,
+      "y": 1380,
+      "w": 30,
+      "h": 14
+    },
+    {
+      "text": "getanzt",
+      "x": 370,
+      "y": 1384,
+      "w": 64,
+      "h": 16
+    },
+    {
+      "text": "und",
+      "x": 440,
+      "y": 1380,
+      "w": 32,
+      "h": 14
+    },
+    {
+      "text": "gelacht",
+      "x": 478,
+      "y": 1380,
+      "w": 67,
+      "h": 21
+    },
+    {
+      "text": "Hören",
+      "x": 873,
+      "y": 1023,
+      "w": 48,
+      "h": 12
+    },
+    {
+      "text": "Interviews",
+      "x": 928,
+      "y": 1023,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "text": "Sprechen",
+      "x": 872,
+      "y": 1054,
+      "w": 72,
+      "h": 17
+    },
+    {
+      "text": "über",
+      "x": 951,
+      "y": 1054,
+      "w": 29,
+      "h": 13
+    },
+    {
+      "text": "Feste",
+      "x": 986,
+      "y": 1055,
+      "w": 34,
+      "h": 12
+    },
+    {
+      "text": "und",
+      "x": 872,
+      "y": 1076,
+      "w": 24,
+      "h": 13
+    },
+    {
+      "text": "Reisen",
+      "x": 904,
+      "y": 1076,
+      "w": 42,
+      "h": 12
+    },
+    {
+      "text": "sprechen",
+      "x": 952,
+      "y": 1075,
+      "w": 64,
+      "h": 17
+    },
+    {
+      "text": "Das",
+      "x": 872,
+      "y": 1099,
+      "w": 20,
+      "h": 11
+    },
+    {
+      "text": "Oktoberfest",
+      "x": 898,
+      "y": 1098,
+      "w": 71,
+      "h": 17
+    },
+    {
+      "text": "gibt",
+      "x": 974,
+      "y": 1098,
+      "w": 24,
+      "h": 17
+    },
+    {
+      "text": "es",
+      "x": 1004,
+      "y": 1102,
+      "w": 11,
+      "h": 8
+    },
+    {
+      "text": "seit",
+      "x": 872,
+      "y": 1120,
+      "w": 21,
+      "h": 12
+    },
+    {
+      "text": "Er",
+      "x": 927,
+      "y": 1120,
+      "w": 11,
+      "h": 11
+    },
+    {
+      "text": "ist",
+      "x": 943,
+      "y": 1120,
+      "w": 14,
+      "h": 12
+    },
+    {
+      "text": "nach",
+      "x": 963,
+      "y": 1119,
+      "w": 28,
+      "h": 12
+    },
+    {
+      "text": "München",
+      "x": 871,
+      "y": 1141,
+      "w": 56,
+      "h": 12
+    },
+    {
+      "text": "geflogen",
+      "x": 931,
+      "y": 1141,
+      "w": 56,
+      "h": 17
+    },
+    {
+      "text": "Lesen",
+      "x": 873,
+      "y": 1174,
+      "w": 44,
+      "h": 11
+    },
+    {
+      "text": "Informations-",
+      "x": 924,
+      "y": 1172,
+      "w": 92,
+      "h": 13
+    },
+    {
+      "text": "texte",
+      "x": 872,
+      "y": 1198,
+      "w": 34,
+      "h": 9
+    },
+    {
+      "text": "Wortfelder",
+      "x": 872,
+      "y": 1226,
+      "w": 85,
+      "h": 13
+    },
+    {
+      "text": "Jahres-",
+      "x": 962,
+      "y": 1226,
+      "w": 47,
+      "h": 15
+    },
+    {
+      "text": "zeiten",
+      "x": 872,
+      "y": 1249,
+      "w": 46,
+      "h": 13
+    },
+    {
+      "text": "Monate",
+      "x": 925,
+      "y": 1249,
+      "w": 50,
+      "h": 11
+    },
+    {
+      "text": "Grammatik",
+      "x": 872,
+      "y": 1280,
+      "w": 87,
+      "h": 12
+    },
+    {
+      "text": "Perfekt",
+      "x": 966,
+      "y": 1279,
+      "w": 47,
+      "h": 13
+    },
+    {
+      "text": "mit",
+      "x": 873,
+      "y": 1302,
+      "w": 22,
+      "h": 12
+    },
+    {
+      "text": "sein",
+      "x": 901,
+      "y": 1302,
+      "w": 28,
+      "h": 13
+    },
+    {
+      "text": "temporale",
+      "x": 935,
+      "y": 1301,
+      "w": 68,
+      "h": 16
+    },
+    {
+      "text": "Präposition",
+      "x": 873,
+      "y": 1323,
+      "w": 76,
+      "h": 17
+    },
+    {
+      "text": "im",
+      "x": 956,
+      "y": 1323,
+      "w": 13,
+      "h": 12
+    }
+  ],
+  "fields": [],
+  "audio": [
+    {
+      "id": "cd2-18",
+      "src": "assets/kb-cd2-track18.mp3",
+      "label": "2.18 · Sehen Sie das Foto an und hören Sie.",
+      "x": 126,
+      "y": 1083,
+      "w": 32,
+      "h": 10
+    }
+  ],
+  "groups": [],
+  "review": {
+    "status": "verified",
+    "verifiedWords": 113,
+    "totalWords": 113,
+    "notes": [
+      "Lektion 12 opener (audio 2.18 announcement: \"Lektion 12. Was ist denn hier passiert? Aufgabe 1.\"). All printed words reviewed at 2x: photo-band title (OCR on cropped title strip), task 1 heading, green bank (Geburtstag/Hochzeit/Silvester/Karneval), green speech-bubble example (Ich glaube, die Leute haben Geburtstag gefeiert.), task 2 heading, the Wann/Was/Wo word table, both example bullets, and the white-on-blue lesson-goals sidebar (inverted-luminance OCR; line-break hyphens Informations-/Jahres- kept as printed).",
+      "No fields: tasks 1-2 are open speaking/listening prompts; the Wann/Was/Wo table cells are printed word banks, not blanks. ▶2.18 marker box measured via connected components.",
+      "Excluded per policy: orange clipped lesson numeral top-right, red task numerals 1/2, photos, facing-page bleed at the left edge, bullets, ellipses, footer (fünfundsechzig/65), Modul tab.",
+      "Audio 2.18 (assets/kb-cd2-track18.mp3, 0:30) verified playable; captured transcript intro matches lesson and exercise."
+    ]
+  }
+}
