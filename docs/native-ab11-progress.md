@@ -112,3 +112,12 @@ Three more native pages bring this lane to45 of95 assigned pages,50 remaining. S
 - Page67 has source dialogue ordering, schon/erst, möchte forms and centered response circles. Six closed checks across66-67 sit below the tasks. No source audio markers occur on these pages.
 - Chrome320/390 tests cover correct and wrong answers, changed-feedback reset, persistence of fields/circles/drawing, meaning dialogs, loaded crops, text and field/image collisions, bounds and no replacement selects. Typecheck/build, adjacent62-64 and full hybrid320/390/550 regressions pass.
 - Actual untouched/filled pixels at320/390 were inspected against scans. Dense sections use compressed spacing for full frames and checks; the title stays readable and the vocabulary fields do not overlap the illustration strip.
+
+## Batch 10: AB A1.1 pages 68-70
+
+Three more native lesson9 pages bring this lane to48 of95 assigned pages,47 remaining. Page41-56 remains outside this lane.
+
+- Page68 has contained source illustrations, native compound words, a selectable native restaurant menu, saved menu highlights and receipt notes, and native category fields instead of dropdown replacements. The printed Fisch mit Reis example stays highlighted initially. The source Obstsalat price is blank and stays blank.
+- Page69 has native speaking cards, saved vocabulary/question notes, selectable pronunciation syllables and original CD1 tracks41-42 through the shared screen-space audio controls. The printed accent example stays fixed; additional personal compounds are saved and ungraded.
+- Page70 retains TEST prompts, article/compound fields, the printed matching example, verb prefixes, centered response circles and the source score table. Fruit answers accept any ordering of the three different fruit names; duplicates fail. Seven closed-task checks across the batch sit below their tasks.
+- Chrome320/390 tests cover correct/wrong checks, changed-feedback reset, saved text/highlights/stress/circles, actual playback of both tracks, meaning dialogs, loaded crops, no selects, collisions and bounds. Typecheck/build, preceding65-67 and hybrid320/390/550 are verified against current integrated main. Actual untouched/filled pixels inspected against scans; dense TEST/pronunciation sections use compressed spacing for checks and full frames.
