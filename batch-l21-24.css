@@ -1,5 +1,0 @@
-/* Remaining runtime-only rules. Shared dialog rules will move with the dialog conversion. */
-.meaningPopup .meaningHeader{display:flex;justify-content:space-between;align-items:center;gap:8px}
-.meaningPopup .meaningModes{display:flex;gap:6px}
-.meaningPopup .meaningModes button.selected{background:#713c46;color:#fff}
-.meaningPopup .audioPending{display:block;margin-top:6px;color:#8a6d3b}
