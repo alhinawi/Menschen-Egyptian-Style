@@ -1,0 +1,848 @@
+{
+  "book": "kb-a11",
+  "page": 43,
+  "width": 1075,
+  "height": 1521,
+  "words": [],
+  "art": [
+    {
+      "src": "assets/book-crops/native-p43-strip.png",
+      "x": 0,
+      "y": 65,
+      "w": 1075,
+      "h": 145,
+      "name": "strip"
+    },
+    {
+      "src": "assets/book-crops/native-p43-speaker.png",
+      "x": 785,
+      "y": 214,
+      "w": 234,
+      "h": 198,
+      "name": "speaker"
+    },
+    {
+      "src": "assets/book-crops/native-p43-hobby1.png",
+      "x": 210,
+      "y": 572,
+      "w": 280,
+      "h": 208,
+      "name": "hobby1"
+    },
+    {
+      "src": "assets/book-crops/native-p43-hobby2.png",
+      "x": 516,
+      "y": 570,
+      "w": 274,
+      "h": 208,
+      "name": "hobby2"
+    },
+    {
+      "src": "assets/book-crops/native-p43-hobby3.png",
+      "x": 825,
+      "y": 567,
+      "w": 130,
+      "h": 211,
+      "name": "hobby3"
+    }
+  ],
+  "fields": [
+    {
+      "id": "t8a-foto1",
+      "group": "t8a",
+      "kind": "text",
+      "label": "Foto 1 (Fußball) - Text Nr.",
+      "answer": "1",
+      "x": 221,
+      "y": 575,
+      "w": 25,
+      "h": 25
+    },
+    {
+      "id": "t8a-foto2",
+      "group": "t8a",
+      "kind": "text",
+      "label": "Foto 2 (Rad fahren) - Text Nr.",
+      "answer": "3",
+      "x": 531,
+      "y": 570,
+      "w": 25,
+      "h": 25
+    },
+    {
+      "id": "t8a-foto3",
+      "group": "t8a",
+      "kind": "text",
+      "label": "Foto 3 (Cello) - Text Nr.",
+      "answer": "2",
+      "x": 832,
+      "y": 575,
+      "w": 25,
+      "h": 25
+    },
+    {
+      "id": "t8b-spazieren",
+      "group": "t8b",
+      "kind": "text",
+      "label": "Oft gehe ich spazieren. - Text Nr.",
+      "answer": "3",
+      "x": 403,
+      "y": 867,
+      "w": 23,
+      "h": 23
+    },
+    {
+      "id": "t8b-hoere-musik",
+      "group": "t8b",
+      "kind": "text",
+      "label": "Ich höre gern Musik. - Text Nr.",
+      "answer": "2",
+      "x": 651,
+      "y": 867,
+      "w": 23,
+      "h": 23
+    },
+    {
+      "id": "t8b-natur",
+      "group": "t8b",
+      "kind": "text",
+      "label": "Ich liebe die Natur. - Text Nr.",
+      "answer": "3",
+      "x": 211,
+      "y": 898,
+      "w": 23,
+      "h": 23
+    },
+    {
+      "id": "t8b-liebe-musik",
+      "group": "t8b",
+      "kind": "text",
+      "label": "Ich liebe Musik. - Text Nr.",
+      "answer": "2",
+      "x": 427,
+      "y": 898,
+      "w": 23,
+      "h": 23
+    },
+    {
+      "id": "t8b-ausfluege",
+      "group": "t8b",
+      "kind": "text",
+      "label": "Ich mache sehr gern Ausflüge. - Text Nr.",
+      "answer": "3",
+      "x": 643,
+      "y": 898,
+      "w": 23,
+      "h": 23
+    },
+    {
+      "id": "t8b-fussball",
+      "group": "t8b",
+      "kind": "text",
+      "label": "Mein Hobby ist Fußball. - Text Nr.",
+      "answer": "1",
+      "x": 211,
+      "y": 929,
+      "w": 23,
+      "h": 23
+    },
+    {
+      "id": "t8b-komponist",
+      "group": "t8b",
+      "kind": "text",
+      "label": "Mein Lieblingskomponist ist Johann Sebastian Bach. - Text Nr.",
+      "answer": "2",
+      "x": 473,
+      "y": 929,
+      "w": 23,
+      "h": 23
+    }
+  ],
+  "audio": [
+    {
+      "id": "t8-track02",
+      "src": "assets/kb-cd2-track02.mp3",
+      "label": "8 Mein Hobby ist ... - Text 1 (2.02)",
+      "x": 98,
+      "y": 520,
+      "w": 24,
+      "h": 16
+    },
+    {
+      "id": "t8-track03",
+      "src": "assets/kb-cd2-track03.mp3",
+      "label": "8 Mein Hobby ist ... - Text 2 (2.03)",
+      "x": 98,
+      "y": 540,
+      "w": 24,
+      "h": 16
+    },
+    {
+      "id": "t8-track04",
+      "src": "assets/kb-cd2-track04.mp3",
+      "label": "8 Mein Hobby ist ... - Text 3 (2.04)",
+      "x": 98,
+      "y": 560,
+      "w": 24,
+      "h": 16
+    }
+  ],
+  "groups": [
+    {
+      "id": "t8a",
+      "label": "8a Welches Foto passt?",
+      "x": 215,
+      "y": 788
+    },
+    {
+      "id": "t8b",
+      "label": "8b Hören Sie noch einmal und ordnen Sie zu",
+      "x": 215,
+      "y": 969
+    }
+  ],
+  "titles": [
+    [
+      "7",
+      164,
+      249
+    ],
+    [
+      "8",
+      164,
+      510
+    ],
+    [
+      "9",
+      164,
+      1432
+    ]
+  ],
+  "review": {
+    "status": "source-reviewed",
+    "sourceNotes": [
+      "Manually transcribed from assets/kb-a11-p43.png; complete original photo/cartoon crops kept. Original relative arrangement, circle number fields, native vocabulary captions. Direct listening to original tracks 02/03/04 verified all keys. 8b example 1 is printed, not an input."
+    ]
+  },
+  "panels": [],
+  "shapes": [
+    {
+      "x": 646,
+      "y": 425,
+      "w": 355,
+      "h": 82,
+      "background": "#fffff7",
+      "border": "0"
+    },
+    {
+      "x": 646,
+      "y": 425,
+      "w": 355,
+      "h": 6,
+      "background": "#e6d72e",
+      "border": "0"
+    },
+    {
+      "x": 646,
+      "y": 425,
+      "w": 12,
+      "h": 82,
+      "background": "#e6d72e",
+      "border": "0"
+    },
+    {
+      "x": 761,
+      "y": 441,
+      "w": 1,
+      "h": 59,
+      "background": "#aaa",
+      "border": "0"
+    },
+    {
+      "x": 848,
+      "y": 441,
+      "w": 1,
+      "h": 59,
+      "background": "#aaa",
+      "border": "0"
+    },
+    {
+      "x": 214,
+      "y": 1055,
+      "w": 800,
+      "h": 225,
+      "background": "#fffef4",
+      "border": "0"
+    },
+    {
+      "x": 214,
+      "y": 1055,
+      "w": 800,
+      "h": 6,
+      "background": "#e6d72e",
+      "border": "0"
+    },
+    {
+      "x": 214,
+      "y": 1055,
+      "w": 12,
+      "h": 225,
+      "background": "#e6d72e",
+      "border": "0"
+    },
+    {
+      "x": 216,
+      "y": 1302,
+      "w": 335,
+      "h": 100,
+      "background": "#fff",
+      "border": "3px double #6c99b1"
+    },
+    {
+      "x": 568,
+      "y": 1302,
+      "w": 338,
+      "h": 70,
+      "background": "#fff",
+      "border": "3px double #6c99b1"
+    },
+    {
+      "x": 621,
+      "y": 1314,
+      "w": 211,
+      "h": 16,
+      "background": "linear-gradient(to right,#fff,#e58082)",
+      "border": "0"
+    }
+  ],
+  "textBlocks": [
+    {
+      "text": "Fußball spielen",
+      "x": 124,
+      "y": 177,
+      "w": 145,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "malen",
+      "x": 280,
+      "y": 177,
+      "w": 90,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "backen",
+      "x": 405,
+      "y": 177,
+      "w": 110,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Musik hören",
+      "x": 536,
+      "y": 177,
+      "w": 120,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "spazieren gehen",
+      "x": 660,
+      "y": 177,
+      "w": 145,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Schach spielen",
+      "x": 808,
+      "y": 177,
+      "w": 145,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Rad fahren",
+      "x": 951,
+      "y": 177,
+      "w": 110,
+      "size": 15,
+      "bold": false,
+      "serif": false
+    },
+    {
+      "text": "Komplimente machen",
+      "x": 205,
+      "y": 249,
+      "w": 540,
+      "size": 23,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "Arbeiten Sie zu viert. Spielen Sie ein Hobby vor.\nDie anderen machen Komplimente. Bedanken Sie sich dann.",
+      "x": 205,
+      "y": 284,
+      "w": 690,
+      "size": 20,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "■",
+      "x": 205,
+      "y": 351,
+      "w": 20,
+      "size": 19,
+      "bold": false,
+      "serif": false,
+      "color": "#21458d"
+    },
+    {
+      "text": "Du kannst ja toll singen!",
+      "x": 231,
+      "y": 350,
+      "w": 540,
+      "size": 20,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "●",
+      "x": 205,
+      "y": 378,
+      "w": 20,
+      "size": 19,
+      "bold": false,
+      "serif": false,
+      "color": "#a70968"
+    },
+    {
+      "text": "Du kannst wirklich toll singen!",
+      "x": 231,
+      "y": 377,
+      "w": 540,
+      "size": 20,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "▲",
+      "x": 205,
+      "y": 405,
+      "w": 20,
+      "size": 19,
+      "bold": false,
+      "serif": false,
+      "color": "#2e9a42"
+    },
+    {
+      "text": "Vielen Dank! / Oh, danke! / Danke sehr! /\nHerzlichen Dank.",
+      "x": 231,
+      "y": 404,
+      "w": 560,
+      "size": 20,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "KOMMUNIKATION",
+      "x": 648,
+      "y": 496,
+      "w": 105,
+      "size": 8,
+      "bold": true,
+      "serif": false,
+      "rotate": -90
+    },
+    {
+      "text": "Du kannst",
+      "x": 674,
+      "y": 442,
+      "w": 110,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "ja\naber\nwirklich",
+      "x": 773,
+      "y": 442,
+      "w": 90,
+      "size": 18,
+      "bold": false,
+      "serif": true,
+      "color": "#a51f29"
+    },
+    {
+      "text": "toll/super singen!",
+      "x": 855,
+      "y": 442,
+      "w": 158,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Mein Hobby ist …",
+      "x": 205,
+      "y": 510,
+      "w": 600,
+      "size": 23,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "a   Hören Sie. Welches Foto passt?",
+      "x": 177,
+      "y": 550,
+      "w": 750,
+      "size": 20,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "b   Hören Sie noch einmal und ordnen Sie zu.",
+      "x": 177,
+      "y": 833,
+      "w": 820,
+      "size": 20,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "① Das macht Spaß!",
+      "x": 211,
+      "y": 871,
+      "w": 240,
+      "size": 20,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Oft gehe ich spazieren.",
+      "x": 430,
+      "y": 871,
+      "w": 250,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Ich höre gern Musik.",
+      "x": 678,
+      "y": 871,
+      "w": 300,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Ich liebe die Natur.",
+      "x": 238,
+      "y": 902,
+      "w": 240,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Ich liebe Musik.",
+      "x": 454,
+      "y": 902,
+      "w": 220,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Ich mache sehr gern Ausflüge.",
+      "x": 670,
+      "y": 902,
+      "w": 365,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Mein Hobby ist Fußball.",
+      "x": 238,
+      "y": 933,
+      "w": 330,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Mein Lieblingskomponist ist Johann Sebastian Bach.",
+      "x": 500,
+      "y": 933,
+      "w": 560,
+      "size": 18,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "c   Was machen Sie gern in der Freizeit? Sprechen Sie.",
+      "x": 177,
+      "y": 1020,
+      "w": 860,
+      "size": 20,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "KOMMUNIKATION",
+      "x": 216,
+      "y": 1262,
+      "w": 120,
+      "size": 8,
+      "bold": true,
+      "serif": false,
+      "rotate": -90
+    },
+    {
+      "text": "Was sind deine Hobbys?",
+      "x": 247,
+      "y": 1068,
+      "w": 354,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Meine Hobbys sind … und …\nMein Hobby ist …",
+      "x": 563,
+      "y": 1068,
+      "w": 460,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Was machst du in der Freizeit?",
+      "x": 247,
+      "y": 1117,
+      "w": 354,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Ich … gern. Das macht Spaß.\nIch liebe …",
+      "x": 563,
+      "y": 1117,
+      "w": 460,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Fährst du gern Ski/Rad/…?",
+      "x": 247,
+      "y": 1166,
+      "w": 354,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Nein, ich kann nicht Ski/Rad/… fahren.\nNein, ich fahre nicht gern Ski/Rad/…",
+      "x": 563,
+      "y": 1166,
+      "w": 460,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Liest du gern … / Triffst du gern …?",
+      "x": 247,
+      "y": 1215,
+      "w": 354,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Ich lese gern und treffe Freunde.",
+      "x": 563,
+      "y": 1215,
+      "w": 460,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Wie oft gehst du ins Kino/Theater/…?",
+      "x": 247,
+      "y": 1244,
+      "w": 354,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Ich gehe oft/manchmal/nie ins Kino/Theater/…\nMein Lieblingsfilm/Lieblings-… ist …",
+      "x": 563,
+      "y": 1244,
+      "w": 460,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "\nich\ndu\ner/sie",
+      "x": 239,
+      "y": 1312,
+      "w": 75,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "fahren\nfahre\nfährst\nfährt",
+      "x": 316,
+      "y": 1312,
+      "w": 85,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "lesen\nlese\nliest\nliest",
+      "x": 401,
+      "y": 1312,
+      "w": 80,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "treffen\ntreffe\ntriffst\ntrifft",
+      "x": 479,
+      "y": 1312,
+      "w": 80,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "INFO",
+      "x": 547,
+      "y": 1398,
+      "w": 35,
+      "size": 7,
+      "bold": false,
+      "serif": false,
+      "color": "#6394a6",
+      "rotate": -90
+    },
+    {
+      "text": "0%",
+      "x": 586,
+      "y": 1311,
+      "w": 50,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "100%",
+      "x": 836,
+      "y": 1311,
+      "w": 65,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "nie, fast nie, manchmal, oft, immer",
+      "x": 585,
+      "y": 1340,
+      "w": 325,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "INFO",
+      "x": 901,
+      "y": 1367,
+      "w": 35,
+      "size": 7,
+      "bold": false,
+      "serif": false,
+      "color": "#6394a6",
+      "rotate": -90
+    },
+    {
+      "text": "Gespräche üben: Wer macht was wie oft? Arbeiten Sie auf Seite 81.",
+      "x": 205,
+      "y": 1432,
+      "w": 830,
+      "size": 21,
+      "bold": true,
+      "serif": false
+    },
+    {
+      "text": "dreiundvierzig   |   43",
+      "x": 874,
+      "y": 1500,
+      "w": 180,
+      "size": 17,
+      "bold": false,
+      "serif": true
+    },
+    {
+      "text": "Diktat",
+      "x": 143,
+      "y": 325,
+      "w": 100,
+      "size": 10,
+      "bold": false,
+      "serif": false,
+      "rotate": -90
+    },
+    {
+      "text": "Film",
+      "x": 144,
+      "y": 585,
+      "w": 100,
+      "size": 10,
+      "bold": false,
+      "serif": false,
+      "rotate": -90
+    },
+    {
+      "text": "Spiel & Spaß",
+      "x": 146,
+      "y": 1015,
+      "w": 100,
+      "size": 10,
+      "bold": false,
+      "serif": false,
+      "rotate": -90
+    },
+    {
+      "text": "Interessant?",
+      "x": 148,
+      "y": 1511,
+      "w": 100,
+      "size": 10,
+      "bold": false,
+      "serif": false,
+      "rotate": -90
+    }
+  ],
+  "hidePageNumber": true
+}
