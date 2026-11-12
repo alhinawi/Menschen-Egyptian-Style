@@ -39,6 +39,7 @@ viewport.addEventListener('touchend',(e: any)=>{if(e.changedTouches[0])endGestur
 viewport.addEventListener('mousedown',(e: any)=>{if(e.button)return;if(canPanX()){mouse={pan:true,x:e.clientX,left:viewport.scrollLeft};e.preventDefault();return}gesture=startGesture(e);mouse={pan:false}});window.addEventListener('mousemove',(e: any)=>{if(!mouse)return;if(mouse.pan){viewport.scrollLeft=mouse.left+mouse.x-e.clientX;return}moveGesture(e,e)});window.addEventListener('mouseup',(e: any)=>{if(!mouse)return;if(!mouse.pan)endGesture(e);mouse=null});
 function renderPractice(){flushSync(()=>scanStore.refresh(data[pageIndex]))}
 scanStore.connect({getState:()=>state,update(values,clearKey){Object.assign(state,values);if(clearKey)delete state['done-'+clearKey];save();progress()}});
+window.initMeanings?.();
 window.menschenBook=flip;window.menschenPages=pages;window.bookZoom=setZoom;window.bookPage=(i: number)=>flip.turnToPage(i);window.bookTurn=turn;window.ab1720={data,renderPractice,storage};
 return()=>{lifecycle.dispose();clearTimeout(timer);scanStore.connect(null)};
 }

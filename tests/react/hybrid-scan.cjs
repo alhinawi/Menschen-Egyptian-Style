@@ -8,6 +8,7 @@ for(const book of fs.readdirSync(path.join(root,'src/scan-data'))){
  for(const file of fs.readdirSync(dir).filter(f=>f.endsWith('.json'))){
   const d=JSON.parse(fs.readFileSync(path.join(dir,file),'utf8'));
   assert.equal(d.book,book);assert(d.width>0&&d.height>0);assert(fs.existsSync(path.join(root,d.image)));
+  const png=fs.readFileSync(path.join(root,d.image));assert.equal(png.readUInt32BE(16),d.width,`${book}/${file}: wrong image width`);assert.equal(png.readUInt32BE(20),d.height,`${book}/${file}: wrong image height`);
   assert(d.review.verifiedWords>=0&&d.review.verifiedWords<=d.words.length,`${book}/${file}: invalid reviewed count`);
   for(const item of [...d.words,...d.fields,...d.audio]){
    assert(item.x>=0&&item.y>=0&&item.w>0&&item.h>0,`${book}/${file}: invalid box`);
@@ -38,17 +39,17 @@ const server=http.createServer((req,res)=>{
   const radio=h.locator('[data-field-id=a2]');await radio.check({force:true});
   await h.locator('[data-field-id=b2]').check({force:true});
   for(const [id,value]of [['time3','nach'],['time4','vor'],['time5','nach']])await h.locator(`[data-field-id=${id}]`).fill(value);
-  for(const button of await h.locator('.hybridCheck button').all())await button.click({force:true});
+  for(const button of await h.locator('.hybridCheck button').all()){await button.evaluate(e=>e.scrollIntoView({block:'center'}));await button.click();}
   assert.deepEqual(await h.locator('output').allTextContents(),['✓ Richtig!','✓ Richtig!']);
   await h.locator('[data-field-id=time3]').fill('vor');
-  await h.locator('.hybridCheck button').nth(1).click({force:true});
+  await h.locator('.hybridCheck button').nth(1).evaluate(e=>e.scrollIntoView({block:'center'}));await h.locator('.hybridCheck button').nth(1).click();
   assert.equal(await h.locator('output').nth(1).textContent(),'Noch einmal');
   await p.reload();await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
-  assert.equal(await p.locator('[data-field-id=time3]').inputValue(),'vor');assert(await p.locator('[data-field-id=a2]').isChecked());
-  await p.locator('.hybridAudio').click({force:true});
-  await p.waitForFunction(()=>{const a=document.querySelector('.hybridTools audio');return a&&!a.paused&&a.readyState>0});
-  assert.equal(await p.locator('.hybridTools audio').getAttribute('src'),'assets/kb-cd2-track06.mp3');
-  await p.locator('.hybridWord[data-word=Theater]').click({force:true});
+  assert.equal(await h.locator('[data-field-id=time3]').inputValue(),'vor');assert(await h.locator('[data-field-id=a2]').isChecked());
+  await h.locator('.hybridAudio').evaluate(e=>e.scrollIntoView({block:'center'}));await h.locator('.hybridAudio').click();
+  await p.waitForFunction(()=>{const a=document.querySelector('.hybridScan[data-scan-page="46"] .hybridTools audio');return a&&!a.paused&&a.readyState>0});
+  assert.equal(await h.locator('.hybridTools audio').getAttribute('src'),'assets/kb-cd2-track06.mp3');
+  await h.locator('.hybridWord[data-word=Theater]').evaluate(e=>e.scrollIntoView({block:'center'}));await h.locator('.hybridWord[data-word=Theater]').click();
   await p.waitForFunction(()=>document.body.innerText.includes('مسرح'));
   assert.deepEqual(errors,[]);
   console.log(`${width}px: scan ratio, grading, wrong-answer feedback, saved answers, audio, translation passed`);

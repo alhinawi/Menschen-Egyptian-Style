@@ -32,6 +32,13 @@
       "ab-a12-l17-20.css"
     ],
     "initializers": [
+      "glossary",
+      "batch-ab12-glossary",
+      "batch-ab12-sentences",
+      "pronunciation-index",
+      "batch-ab12-pronunciation-index",
+      "gapfill-pronunciation-index",
+      "meanings",
       "ab-a12-l17-20-data",
       "ab-a12-l17-20-vocab",
       "ab-a12-l17-20"
