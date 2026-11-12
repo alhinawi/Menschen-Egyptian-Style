@@ -17,14 +17,14 @@ export function NativeKB12({page}:{page:string}){
  return <div className="nativeKB12" ref={root} data-native-kb12={page}><div className="nkCanvas" style={{transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='9'&&<>
   {art('hero',0,0,1100,1000)}{text(390,43,625,'Wir suchen das Hotel Maritim.','nkHeroTitle')}{text(1015,38,85,'13','nkLesson')}
-  <aside className="nkAside" style={{left:834,top:996,width:220,height:300}}><Words text={'Hören: Wegbeschreibung\n\nSprechen: Wegbeschreibung: An der Ampel fahren Sie nach links.; jemanden um Hilfe bitten: Entschuldigung. Eine Frage bitte …\n\nWortfeld: Institutionen und Plätze in der Stadt\nGrammatik: lokale Präpositionen + Dativ: Wo? - Vor dem Restaurant.'}/></aside>
+  <aside className="nkAside" style={{left:834,top:996,width:220,height:345}}><Words text={'Hören: Wegbeschreibung\nSprechen: Wegbeschreibung: An der Ampel fahren Sie nach links.; jemanden um Hilfe bitten: Entschuldigung. Eine Frage bitte …\nWortfeld: Institutionen und Plätze in der Stadt\nGrammatik: lokale Präpositionen + Dativ: Wo? - Vor dem Restaurant.'}/></aside>
   {audio('assets/kb-cd3-track01.mp3',48,1044,'3 01')}{title('1',105,1042,680,'Im Auto')}
-  {text(118,1080,690,'a  Sehen Sie das Foto an, hören Sie und kreuzen Sie an. Was ist richtig?','nkBold')}
-  {['Die beiden suchen etwas.','Die Frau sagt, der Stadtplan stimmt.','Die Frau macht den Navigator an.'].map((t,i)=><div key={t}>{text(149,1124+i*27,400,`${i+1}  ${t}`)}{dot('1a-'+i,'',535,1126+i*27,t,true)}</div>)}
-  {check('1a',150,1211,{'1a-0':'true','1a-1':'true','1a-2':'false'})}
-  {text(118,1257,685,'b  Hören Sie noch einmal. Wer sagt das? Die Frau (F), der Navigator (N) oder keiner (k)?','nkBold')}
-  {['Nach 600 Metern bitte rechts abbiegen. ↱','Fahr geradeaus weiter! ↑','Bitte links abbiegen. ↰','Bitte wenden Sie. ↴','Fahr zurück! ↧'].map((t,i)=><div key={t}>{text(149,1314+i*27,455,`${i+1}  ${t}`)}{i===0?text(599,1314,35,'N','nkHand'):field('1b-'+i,594,1312+i*27,30,t,true)}</div>)}
-  {check('1b',150,1452,{'1b-1':'F','1b-2':'k','1b-3':'N','1b-4':'k'})}{text(660,1380,210,'1000 Meter (m) =\n1 Kilometer (km)','nkInfo')}
+  {text(118,1080,690,'a  Sehen Sie das Foto an, hören Sie und kreuzen Sie an. Was ist richtig?','nkBold nkCompact')}
+  {['Die beiden suchen etwas.','Die Frau sagt, der Stadtplan stimmt.','Die Frau macht den Navigator an.'].map((t,i)=><div key={t}>{text(149,1140+i*25,400,`${i+1}  ${t}`)}{dot('1a-'+i,'',535,1140+i*25,t,true)}</div>)}
+  {check('1a',150,1220,{'1a-0':'true','1a-1':'true','1a-2':'false'})}
+  {text(118,1266,685,'b  Hören Sie noch einmal. Wer sagt das? Die Frau (F), der Navigator (N) oder keiner (k)?','nkBold nkCompact')}
+  {['Nach 600 Metern bitte rechts abbiegen. ↱','Fahr geradeaus weiter! ↑','Bitte links abbiegen. ↰','Bitte wenden Sie. ↴','Fahr zurück! ↧'].map((t,i)=><div key={t}>{text(149,1335+i*25,455,`${i+1}  ${t}`)}{i===0?text(599,1335,35,'N','nkHand'):field('1b-'+i,594,1333+i*25,30,t,true)}</div>)}
+  {check('1b',150,1465,{'1b-1':'F','1b-2':'k','1b-3':'N','1b-4':'k'})}{text(660,1380,210,'1000 Meter (m) =\n1 Kilometer (km)','nkInfo')}
  </>}
  {page==='10'&&<>
   {art('vocab',0,0,1100,105)}{['auf','an','neben','vor','hinter'].map((t,i)=>text(85+i*218,108,120,t,'nkCenter nkSmall'))}
