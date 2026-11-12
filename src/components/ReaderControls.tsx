@@ -91,6 +91,8 @@ export function ReaderControl({tag, attrs, children}: ReaderControlProps) {
   const props: Record<string, any> = {...attrs};
   if (tag === 'select') props.onChange = (e: React.ChangeEvent<Element>) => store.act(attrs['data-react-control-id'] || key, e);
   else props.onClick = (e: React.MouseEvent<Element>) => store.act(attrs['data-react-control-id'] || key, e);
+  if(['prev','next','fit','plus','minus'].includes(key)){props['aria-label']=({prev:'Previous page',next:'Next page',fit:'Fit page',plus:'Zoom in',minus:'Zoom out'} as Record<string,string>)[key];props.title=props['aria-label']}
+  if(attrs.className?.split(' ').includes('coverOpen'))return createElement(tag,props,'Open book ←');
   if (key === 'prev' && snapshot.ready) props.disabled = snapshot.previousDisabled;
   if (key === 'next' && snapshot.ready) props.disabled = snapshot.nextDisabled;
   if (key === 'soundToggle') {

@@ -1,0 +1,5 @@
+.sharedMatching{position:absolute;inset:0;pointer-events:none;isolation:isolate;container-type:inline-size;overflow:visible;z-index:9}
+.sharedMatching .sharedMatchItem{position:absolute;z-index:1;pointer-events:auto;box-sizing:border-box;background:transparent!important;color:#222!important;border:0!important;box-shadow:none!important;border-radius:0!important;margin:0!important;min-height:0!important;min-width:0!important;padding:0;text-align:left;font-family:'Times New Roman',serif;white-space:nowrap;line-height:24px;cursor:pointer}
+.sharedMatching .sharedMatchItem.selected{outline:2px solid #cf5f26!important;outline-offset:1px}
+.sharedMatching .sharedMatchItem:disabled{opacity:1;cursor:default}
+.sharedMatching .sharedMatchLines{position:absolute;inset:0;width:100%;height:100%;z-index:2;overflow:visible;pointer-events:none}

@@ -130,3 +130,12 @@ Three more native pages bring this lane to51 of95 assigned pages,44 remaining. S
 - Page72 keeps the printed Mittwoch and Salat examples, complete unordered day sets, ordered time/daypart fields, a native crossword with aligned LESEN solution column, saved per-row word strikes and native social posts/place fields. Day-set permutations pass; missing days fail.
 - Page73 retains Paul's selectable weekly schedule, saved ungraded writing, native chat verb fields, wrapping sentence-order responses with marked starting words and the source möchte/magst dialogue. Eight closed-task checks sit below the tasks. No source audio markers occur on these pages.
 - Chrome320/390 tests cover right/wrong checks, changed-feedback reset, saved fields and strikes, meaning dialogs, loaded crops, no selects, text/field/image collisions and bounds. Typecheck/build, adjacent68-70 and full hybrid320/390/550 pass. Actual untouched and filled pixels inspected against source scans. Dense review layouts use compressed spacing for visible full field frames and check buttons.
+
+## Batch 12: AB A1.1 pages 74-76
+
+Three more native pages bring this lane to54 of95 assigned pages,41 remaining. Separate page41-56 remains untouched.
+
+- Pages74-75 retain native self-assessment headings, source sentence prompts, saved centered green/yellow/red confidence circles and full framed responses. Page74's flexible personal dialogues, hobbies and preferences stay ungraded rather than requiring the metadata's arbitrary wording. Page75's four fixed grammar/word-formation tasks have checks below the work.
+- Original hobby, food and person illustrations are contained crops. Selectable source examples remain visible, including the correct printed11 Uhr weekend entry. No source audio markers occur on these pages.
+- Page75's Rückblick activities, ability notes and person text and page76's calendar, weekend, shopping list and three-course menu are saved open writing, never falsely graded.
+- Chrome320/390 tests cover correct/wrong grammar checks, changed-feedback reset, all saved fields/confidence choices, meaning dialogs, loaded crops, no replacement selects, collisions and bounds. Typecheck/build, preceding71-73 and full hybrid320/390/550 pass. Actual untouched/filled pixels inspected against source scans; self-assessment/review spacing is compressed for visible full field frames and checks.

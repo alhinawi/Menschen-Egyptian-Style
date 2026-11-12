@@ -148,7 +148,7 @@ export function LibraryNav({slug}: {slug: string}) {
         <span className="lnv-dot size-[7px] rounded-full bg-[var(--accent,#713c46)] flex-none max-[480px]:hidden"/><span className="lnv-pillText overflow-hidden text-ellipsis">{pillText}</span><span className="lnv-chev ml-auto text-[#75623a] dark:text-[#c9b489] text-[10px]">▾</span>
       </button>, headerSlot)}
     {pageSlot && createPortal(
-      <button type="button" className="lnv-pagePill flex items-center gap-1.5 h-9 min-w-16 justify-center px-[11px] py-0 border border-[#d3d4cd] rounded-md bg-transparent text-[#344137] font-semibold text-[12px] font-[Arial,sans-serif] cursor-pointer" aria-haspopup="dialog" aria-label={`Seite wählen, aktuell ${pagePillText === 'Cover' ? 'Cover' : 'Seite ' + pagePillText}`} onClick={() => setPanel('pages')}>
+      <button type="button" className="lnv-pagePill flex items-center gap-1.5 h-9 min-w-16 justify-center px-[11px] py-0 border border-[#d3d4cd] rounded-md bg-transparent text-[#344137] font-semibold text-[12px] font-[Arial,sans-serif] cursor-pointer" aria-haspopup="dialog" aria-label={`Choose page, current page ${pagePillText === 'Cover' ? 'Cover' : 'Seite ' + pagePillText}`} onClick={() => setPanel('pages')}>
         {pagePillText}<span className="lnv-chev ml-[2px] text-[#75623a] dark:text-[#c9b489] text-[9px]!">▴</span>
       </button>, pageSlot)}
     {panel === 'nav' && createPortal(
@@ -211,9 +211,11 @@ export function LibraryNav({slug}: {slug: string}) {
           <div className="lnv-grab w-11 h-[5px] rounded-[3px] bg-[#d8cba4] mx-auto mt-2.5 mb-1 flex-none"/>
           <div className="lnv-shead px-5 pt-2 pb-2.5 border-b border-[#eee3c8] dark:border-[#3a443e]">
             <div className="lnv-st font-bold text-[18px] font-[Georgia,serif]">All pages</div>
-            <div className="lnv-ss font-normal text-[11px] font-[Arial,sans-serif] text-[#8a7d63] mt-0.5 dark:text-[#9aa396]">{bookInfo.title} · {mod.level} — jump to any page</div>
+            <div className="lnv-ss font-normal text-[11px] font-[Arial,sans-serif] text-[#8a7d63] mt-0.5 dark:text-[#9aa396]">{bookInfo.title} · {mod.level} - jump to any page</div>
           </div>
           <div className="lnv-sheetscroll flex-1 overflow-y-auto overscroll-contain touch-pan-y pb-7">
+            {mod.level === 'A1.1' && <div className="px-5 pt-3"><button type="button" aria-current={currentToken === (mod.book === 'kb' ? 'cover' : 'abcover') ? 'page' : undefined} className={'lnv-pg h-10 min-w-20 px-4 rounded-md border' + (currentToken === (mod.book === 'kb' ? 'cover' : 'abcover') ? ' cur bg-[#c9a45a] border-[#b08d3f] text-[#2b2620] font-extrabold' : '')} onClick={()=>{close();void navigateLesson(mod.book === 'kb' ? 'index' : 'ab1',mod.book === 'kb' ? 'cover' : 'abcover')}}>Cover</button></div>}
+
             {slug === 'l21-24' && <div className="flex flex-col gap-2 px-5 py-3">{['imprint', 'inside-back-cover', 'back-cover'].map(token => <button type="button" key={token} className="lnv-pg h-9 rounded-md border" onClick={() => {close(); const idx = [...document.querySelectorAll<HTMLElement>('.page')].findIndex(p => p.dataset.page === token); const jump = document.querySelector<HTMLSelectElement>('#pageJump'); if (jump && idx >= 0) {jump.value = String(idx); jump.dispatchEvent(new Event('change', {bubbles: true}));}}}>{special[token]} (unnumbered)</button>)}</div>}
             {levelLessons(mod.book, mod.level).map(entry => (
               <div key={entry.slug + entry.label}>
