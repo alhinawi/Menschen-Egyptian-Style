@@ -1,0 +1,1893 @@
+{
+  "book": "kb-a11",
+  "page": 67,
+  "image": "assets/kb-a11-p67.png",
+  "width": 1072,
+  "height": 1518,
+  "words": [
+    {
+      "text": "September",
+      "x": 153,
+      "y": 141,
+      "w": 69,
+      "h": 22
+    },
+    {
+      "text": "Oktober",
+      "x": 292,
+      "y": 142,
+      "w": 72,
+      "h": 15
+    },
+    {
+      "text": "November",
+      "x": 418,
+      "y": 142,
+      "w": 57,
+      "h": 15
+    },
+    {
+      "text": "Dezember",
+      "x": 667,
+      "y": 140,
+      "w": 55,
+      "h": 15
+    },
+    {
+      "text": "Januar",
+      "x": 805,
+      "y": 141,
+      "w": 37,
+      "h": 11
+    },
+    {
+      "text": "Februar",
+      "x": 934,
+      "y": 139,
+      "w": 42,
+      "h": 11
+    },
+    {
+      "text": "Herbst",
+      "x": 293,
+      "y": 161,
+      "w": 38,
+      "h": 16
+    },
+    {
+      "text": "Winter",
+      "x": 804,
+      "y": 159,
+      "w": 39,
+      "h": 10
+    },
+    {
+      "text": "Warst",
+      "x": 211,
+      "y": 236,
+      "w": 55,
+      "h": 15
+    },
+    {
+      "text": "du",
+      "x": 273,
+      "y": 234,
+      "w": 22,
+      "h": 16
+    },
+    {
+      "text": "schon",
+      "x": 304,
+      "y": 234,
+      "w": 54,
+      "h": 16
+    },
+    {
+      "text": "mal",
+      "x": 367,
+      "y": 234,
+      "w": 32,
+      "h": 16
+    },
+    {
+      "text": "in",
+      "x": 408,
+      "y": 234,
+      "w": 17,
+      "h": 16
+    },
+    {
+      "text": "Deutschland",
+      "x": 435,
+      "y": 233,
+      "w": 117,
+      "h": 17
+    },
+    {
+      "text": "auf",
+      "x": 560,
+      "y": 232,
+      "w": 32,
+      "h": 17
+    },
+    {
+      "text": "einem",
+      "x": 597,
+      "y": 233,
+      "w": 57,
+      "h": 16
+    },
+    {
+      "text": "großen",
+      "x": 661,
+      "y": 232,
+      "w": 66,
+      "h": 23
+    },
+    {
+      "text": "Fest",
+      "x": 737,
+      "y": 233,
+      "w": 47,
+      "h": 15
+    },
+    {
+      "text": "a",
+      "x": 180,
+      "y": 279,
+      "w": 8,
+      "h": 10
+    },
+    {
+      "text": "Was",
+      "x": 211,
+      "y": 275,
+      "w": 33,
+      "h": 13
+    },
+    {
+      "text": "ist",
+      "x": 252,
+      "y": 274,
+      "w": 20,
+      "h": 14
+    },
+    {
+      "text": "richtig",
+      "x": 280,
+      "y": 273,
+      "w": 64,
+      "h": 21
+    },
+    {
+      "text": "Hören",
+      "x": 352,
+      "y": 273,
+      "w": 49,
+      "h": 14
+    },
+    {
+      "text": "Sie",
+      "x": 408,
+      "y": 273,
+      "w": 23,
+      "h": 15
+    },
+    {
+      "text": "die",
+      "x": 438,
+      "y": 272,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "Interviews",
+      "x": 471,
+      "y": 273,
+      "w": 87,
+      "h": 14
+    },
+    {
+      "text": "und",
+      "x": 567,
+      "y": 272,
+      "w": 30,
+      "h": 15
+    },
+    {
+      "text": "kreuzen",
+      "x": 605,
+      "y": 272,
+      "w": 64,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 677,
+      "y": 272,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "an",
+      "x": 708,
+      "y": 276,
+      "w": 24,
+      "h": 10
+    },
+    {
+      "text": "Henry",
+      "x": 385,
+      "y": 312,
+      "w": 52,
+      "h": 18
+    },
+    {
+      "text": "ist",
+      "x": 444,
+      "y": 311,
+      "w": 20,
+      "h": 14
+    },
+    {
+      "text": "vor",
+      "x": 470,
+      "y": 316,
+      "w": 27,
+      "h": 9
+    },
+    {
+      "text": "drei",
+      "x": 503,
+      "y": 310,
+      "w": 33,
+      "h": 14
+    },
+    {
+      "text": "Monaten",
+      "x": 544,
+      "y": 312,
+      "w": 75,
+      "h": 13
+    },
+    {
+      "text": "nach",
+      "x": 626,
+      "y": 309,
+      "w": 40,
+      "h": 15
+    },
+    {
+      "text": "Hamburg",
+      "x": 674,
+      "y": 309,
+      "w": 78,
+      "h": 20
+    },
+    {
+      "text": "gekommen",
+      "x": 757,
+      "y": 309,
+      "w": 98,
+      "h": 21
+    },
+    {
+      "text": "Henry",
+      "x": 385,
+      "y": 338,
+      "w": 52,
+      "h": 18
+    },
+    {
+      "text": "ist",
+      "x": 444,
+      "y": 337,
+      "w": 20,
+      "h": 14
+    },
+    {
+      "text": "letztes",
+      "x": 470,
+      "y": 336,
+      "w": 54,
+      "h": 15
+    },
+    {
+      "text": "Jahr",
+      "x": 530,
+      "y": 335,
+      "w": 38,
+      "h": 18
+    },
+    {
+      "text": "im",
+      "x": 575,
+      "y": 336,
+      "w": 21,
+      "h": 14
+    },
+    {
+      "text": "Oktober",
+      "x": 603,
+      "y": 335,
+      "w": 66,
+      "h": 15
+    },
+    {
+      "text": "zum",
+      "x": 676,
+      "y": 340,
+      "w": 35,
+      "h": 10
+    },
+    {
+      "text": "Oktoberfest",
+      "x": 718,
+      "y": 334,
+      "w": 97,
+      "h": 16
+    },
+    {
+      "text": "geflogen",
+      "x": 821,
+      "y": 333,
+      "w": 76,
+      "h": 21
+    },
+    {
+      "text": "Er",
+      "x": 385,
+      "y": 363,
+      "w": 18,
+      "h": 13
+    },
+    {
+      "text": "hat",
+      "x": 409,
+      "y": 361,
+      "w": 28,
+      "h": 15
+    },
+    {
+      "text": "viele",
+      "x": 443,
+      "y": 361,
+      "w": 40,
+      "h": 14
+    },
+    {
+      "text": "nette",
+      "x": 490,
+      "y": 365,
+      "w": 43,
+      "h": 10
+    },
+    {
+      "text": "Leute",
+      "x": 540,
+      "y": 362,
+      "w": 45,
+      "h": 13
+    },
+    {
+      "text": "getroffen",
+      "x": 591,
+      "y": 360,
+      "w": 83,
+      "h": 21
+    },
+    {
+      "text": "Er",
+      "x": 386,
+      "y": 388,
+      "w": 17,
+      "h": 13
+    },
+    {
+      "text": "möchte",
+      "x": 410,
+      "y": 386,
+      "w": 62,
+      "h": 15
+    },
+    {
+      "text": "dieses",
+      "x": 478,
+      "y": 386,
+      "w": 49,
+      "h": 14
+    },
+    {
+      "text": "Jahr",
+      "x": 533,
+      "y": 386,
+      "w": 38,
+      "h": 18
+    },
+    {
+      "text": "wieder",
+      "x": 577,
+      "y": 386,
+      "w": 58,
+      "h": 15
+    },
+    {
+      "text": "zum",
+      "x": 642,
+      "y": 391,
+      "w": 35,
+      "h": 9
+    },
+    {
+      "text": "Oktoberfest",
+      "x": 684,
+      "y": 384,
+      "w": 98,
+      "h": 16
+    },
+    {
+      "text": "fahren",
+      "x": 788,
+      "y": 384,
+      "w": 62,
+      "h": 15
+    },
+    {
+      "text": "Carmela",
+      "x": 233,
+      "y": 450,
+      "w": 69,
+      "h": 15
+    },
+    {
+      "text": "und",
+      "x": 308,
+      "y": 450,
+      "w": 32,
+      "h": 15
+    },
+    {
+      "text": "Benito",
+      "x": 348,
+      "y": 450,
+      "w": 54,
+      "h": 14
+    },
+    {
+      "text": "studieren",
+      "x": 408,
+      "y": 449,
+      "w": 81,
+      "h": 15
+    },
+    {
+      "text": "in",
+      "x": 496,
+      "y": 450,
+      "w": 17,
+      "h": 14
+    },
+    {
+      "text": "Flensburg",
+      "x": 520,
+      "y": 449,
+      "w": 87,
+      "h": 20
+    },
+    {
+      "text": "Sie",
+      "x": 233,
+      "y": 476,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "waren",
+      "x": 263,
+      "y": 481,
+      "w": 53,
+      "h": 9
+    },
+    {
+      "text": "im",
+      "x": 322,
+      "y": 476,
+      "w": 21,
+      "h": 14
+    },
+    {
+      "text": "März",
+      "x": 351,
+      "y": 476,
+      "w": 42,
+      "h": 14
+    },
+    {
+      "text": "bei",
+      "x": 399,
+      "y": 475,
+      "w": 25,
+      "h": 15
+    },
+    {
+      "text": "Rock",
+      "x": 431,
+      "y": 475,
+      "w": 34,
+      "h": 15
+    },
+    {
+      "text": "am",
+      "x": 471,
+      "y": 480,
+      "w": 21,
+      "h": 9
+    },
+    {
+      "text": "Ring",
+      "x": 498,
+      "y": 475,
+      "w": 37,
+      "h": 19
+    },
+    {
+      "text": "Das",
+      "x": 234,
+      "y": 502,
+      "w": 27,
+      "h": 13
+    },
+    {
+      "text": "Festival",
+      "x": 269,
+      "y": 501,
+      "w": 64,
+      "h": 15
+    },
+    {
+      "text": "hat",
+      "x": 340,
+      "y": 500,
+      "w": 27,
+      "h": 15
+    },
+    {
+      "text": "ihnen",
+      "x": 374,
+      "y": 500,
+      "w": 50,
+      "h": 14
+    },
+    {
+      "text": "gut",
+      "x": 429,
+      "y": 504,
+      "w": 27,
+      "h": 17
+    },
+    {
+      "text": "gefallen",
+      "x": 462,
+      "y": 499,
+      "w": 74,
+      "h": 21
+    },
+    {
+      "text": "Im",
+      "x": 234,
+      "y": 528,
+      "w": 22,
+      "h": 13
+    },
+    {
+      "text": "September",
+      "x": 263,
+      "y": 526,
+      "w": 89,
+      "h": 20
+    },
+    {
+      "text": "fahren",
+      "x": 359,
+      "y": 525,
+      "w": 56,
+      "h": 15
+    },
+    {
+      "text": "sie",
+      "x": 422,
+      "y": 526,
+      "w": 22,
+      "h": 14
+    },
+    {
+      "text": "nach",
+      "x": 450,
+      "y": 525,
+      "w": 41,
+      "h": 15
+    },
+    {
+      "text": "Berlin",
+      "x": 498,
+      "y": 525,
+      "w": 57,
+      "h": 15
+    },
+    {
+      "text": "Wohin",
+      "x": 470,
+      "y": 583,
+      "w": 61,
+      "h": 13
+    },
+    {
+      "text": "München",
+      "x": 237,
+      "y": 605,
+      "w": 71,
+      "h": 13
+    },
+    {
+      "text": "Deutschland",
+      "x": 329,
+      "y": 605,
+      "w": 94,
+      "h": 13
+    },
+    {
+      "text": "nach",
+      "x": 471,
+      "y": 604,
+      "w": 36,
+      "h": 13
+    },
+    {
+      "text": "München/Deutschland",
+      "x": 514,
+      "y": 603,
+      "w": 177,
+      "h": 16
+    },
+    {
+      "text": "fahren",
+      "x": 697,
+      "y": 603,
+      "w": 51,
+      "h": 14
+    },
+    {
+      "text": "die",
+      "x": 237,
+      "y": 627,
+      "w": 22,
+      "h": 13
+    },
+    {
+      "text": "Schweiz",
+      "x": 265,
+      "y": 627,
+      "w": 61,
+      "h": 13
+    },
+    {
+      "text": "die",
+      "x": 345,
+      "y": 627,
+      "w": 22,
+      "h": 13
+    },
+    {
+      "text": "Türkei",
+      "x": 373,
+      "y": 626,
+      "w": 49,
+      "h": 13
+    },
+    {
+      "text": "in",
+      "x": 471,
+      "y": 627,
+      "w": 15,
+      "h": 12
+    },
+    {
+      "text": "die",
+      "x": 492,
+      "y": 626,
+      "w": 22,
+      "h": 13
+    },
+    {
+      "text": "Schweiz/Türkei",
+      "x": 520,
+      "y": 625,
+      "w": 119,
+      "h": 16
+    },
+    {
+      "text": "der",
+      "x": 237,
+      "y": 649,
+      "w": 25,
+      "h": 13
+    },
+    {
+      "text": "Iran",
+      "x": 268,
+      "y": 650,
+      "w": 32,
+      "h": 12
+    },
+    {
+      "text": "in",
+      "x": 471,
+      "y": 648,
+      "w": 14,
+      "h": 12
+    },
+    {
+      "text": "den",
+      "x": 489,
+      "y": 648,
+      "w": 24,
+      "h": 12
+    },
+    {
+      "text": "Iran",
+      "x": 517,
+      "y": 648,
+      "w": 41,
+      "h": 13
+    },
+    {
+      "text": "b",
+      "x": 183,
+      "y": 715,
+      "w": 9,
+      "h": 15
+    },
+    {
+      "text": "Lesen",
+      "x": 215,
+      "y": 716,
+      "w": 44,
+      "h": 13
+    },
+    {
+      "text": "Sie",
+      "x": 266,
+      "y": 715,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "die",
+      "x": 297,
+      "y": 714,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "Sätze",
+      "x": 328,
+      "y": 715,
+      "w": 45,
+      "h": 14
+    },
+    {
+      "text": "in",
+      "x": 380,
+      "y": 715,
+      "w": 14,
+      "h": 14
+    },
+    {
+      "text": "4a",
+      "x": 402,
+      "y": 716,
+      "w": 20,
+      "h": 13
+    },
+    {
+      "text": "noch",
+      "x": 431,
+      "y": 714,
+      "w": 38,
+      "h": 15
+    },
+    {
+      "text": "einmal",
+      "x": 477,
+      "y": 714,
+      "w": 55,
+      "h": 15
+    },
+    {
+      "text": "und",
+      "x": 541,
+      "y": 713,
+      "w": 30,
+      "h": 15
+    },
+    {
+      "text": "ergänzen",
+      "x": 578,
+      "y": 714,
+      "w": 76,
+      "h": 20
+    },
+    {
+      "text": "Sie",
+      "x": 661,
+      "y": 713,
+      "w": 29,
+      "h": 15
+    },
+    {
+      "text": "geflogen",
+      "x": 218,
+      "y": 753,
+      "w": 66,
+      "h": 20
+    },
+    {
+      "text": "ist",
+      "x": 291,
+      "y": 752,
+      "w": 35,
+      "h": 16
+    },
+    {
+      "text": "ist",
+      "x": 334,
+      "y": 753,
+      "w": 18,
+      "h": 14
+    },
+    {
+      "text": "gekommen",
+      "x": 366,
+      "y": 752,
+      "w": 85,
+      "h": 20
+    },
+    {
+      "text": "Perfekt",
+      "x": 246,
+      "y": 803,
+      "w": 58,
+      "h": 14
+    },
+    {
+      "text": "mit",
+      "x": 311,
+      "y": 804,
+      "w": 28,
+      "h": 13
+    },
+    {
+      "text": "sein",
+      "x": 346,
+      "y": 804,
+      "w": 30,
+      "h": 13
+    },
+    {
+      "text": "ich",
+      "x": 657,
+      "y": 803,
+      "w": 21,
+      "h": 13
+    },
+    {
+      "text": "bin",
+      "x": 684,
+      "y": 803,
+      "w": 24,
+      "h": 13
+    },
+    {
+      "text": "er",
+      "x": 719,
+      "y": 804,
+      "w": 14,
+      "h": 13
+    },
+    {
+      "text": "ist",
+      "x": 738,
+      "y": 804,
+      "w": 16,
+      "h": 13
+    },
+    {
+      "text": "gewesen",
+      "x": 793,
+      "y": 807,
+      "w": 79,
+      "h": 14
+    },
+    {
+      "text": "ich",
+      "x": 666,
+      "y": 825,
+      "w": 17,
+      "h": 16
+    },
+    {
+      "text": "er",
+      "x": 700,
+      "y": 825,
+      "w": 14,
+      "h": 16
+    },
+    {
+      "text": "war",
+      "x": 719,
+      "y": 830,
+      "w": 28,
+      "h": 8
+    },
+    {
+      "text": "kommen",
+      "x": 246,
+      "y": 834,
+      "w": 66,
+      "h": 13
+    },
+    {
+      "text": "er",
+      "x": 338,
+      "y": 838,
+      "w": 15,
+      "h": 9
+    },
+    {
+      "text": "fliegen",
+      "x": 241,
+      "y": 853,
+      "w": 57,
+      "h": 23
+    },
+    {
+      "text": "fahren",
+      "x": 246,
+      "y": 876,
+      "w": 51,
+      "h": 14
+    },
+    {
+      "text": "ist",
+      "x": 384,
+      "y": 877,
+      "w": 18,
+      "h": 12
+    },
+    {
+      "text": "gefahren",
+      "x": 427,
+      "y": 875,
+      "w": 69,
+      "h": 19
+    },
+    {
+      "text": "gehen",
+      "x": 245,
+      "y": 898,
+      "w": 46,
+      "h": 19
+    },
+    {
+      "text": "ist",
+      "x": 383,
+      "y": 898,
+      "w": 19,
+      "h": 14
+    },
+    {
+      "text": "gegangen",
+      "x": 427,
+      "y": 902,
+      "w": 72,
+      "h": 14
+    },
+    {
+      "text": "Perfekt",
+      "x": 216,
+      "y": 953,
+      "w": 68,
+      "h": 17
+    },
+    {
+      "text": "üben",
+      "x": 292,
+      "y": 953,
+      "w": 52,
+      "h": 17
+    },
+    {
+      "text": "Was",
+      "x": 351,
+      "y": 954,
+      "w": 38,
+      "h": 15
+    },
+    {
+      "text": "hat",
+      "x": 397,
+      "y": 953,
+      "w": 31,
+      "h": 16
+    },
+    {
+      "text": "Marc",
+      "x": 436,
+      "y": 954,
+      "w": 46,
+      "h": 15
+    },
+    {
+      "text": "letzte",
+      "x": 490,
+      "y": 952,
+      "w": 54,
+      "h": 17
+    },
+    {
+      "text": "Woche",
+      "x": 550,
+      "y": 952,
+      "w": 63,
+      "h": 17
+    },
+    {
+      "text": "gemacht",
+      "x": 619,
+      "y": 949,
+      "w": 92,
+      "h": 27
+    },
+    {
+      "text": "Arbeiten",
+      "x": 216,
+      "y": 980,
+      "w": 72,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 294,
+      "y": 980,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "auf",
+      "x": 325,
+      "y": 979,
+      "w": 27,
+      "h": 16
+    },
+    {
+      "text": "Seite",
+      "x": 358,
+      "y": 980,
+      "w": 41,
+      "h": 15
+    },
+    {
+      "text": "88.",
+      "x": 406,
+      "y": 981,
+      "w": 25,
+      "h": 14
+    },
+    {
+      "text": "Ihre",
+      "x": 439,
+      "y": 979,
+      "w": 31,
+      "h": 15
+    },
+    {
+      "text": "Partnerin",
+      "x": 479,
+      "y": 979,
+      "w": 77,
+      "h": 15
+    },
+    {
+      "text": "Ihr",
+      "x": 580,
+      "y": 978,
+      "w": 22,
+      "h": 15
+    },
+    {
+      "text": "Partner",
+      "x": 610,
+      "y": 980,
+      "w": 61,
+      "h": 14
+    },
+    {
+      "text": "arbeitet",
+      "x": 678,
+      "y": 978,
+      "w": 67,
+      "h": 15
+    },
+    {
+      "text": "auf",
+      "x": 752,
+      "y": 977,
+      "w": 28,
+      "h": 16
+    },
+    {
+      "text": "Seite",
+      "x": 784,
+      "y": 978,
+      "w": 41,
+      "h": 15
+    },
+    {
+      "text": "91.",
+      "x": 833,
+      "y": 978,
+      "w": 17,
+      "h": 15
+    },
+    {
+      "text": "Mein",
+      "x": 217,
+      "y": 1042,
+      "w": 45,
+      "h": 16
+    },
+    {
+      "text": "Top-Party-Erlebnis",
+      "x": 268,
+      "y": 1041,
+      "w": 177,
+      "h": 23
+    },
+    {
+      "text": "a",
+      "x": 185,
+      "y": 1086,
+      "w": 8,
+      "h": 10
+    },
+    {
+      "text": "Schreiben",
+      "x": 216,
+      "y": 1080,
+      "w": 82,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 305,
+      "y": 1081,
+      "w": 23,
+      "h": 14
+    },
+    {
+      "text": "Stichpunkte",
+      "x": 335,
+      "y": 1080,
+      "w": 102,
+      "h": 21
+    },
+    {
+      "text": "auf",
+      "x": 445,
+      "y": 1079,
+      "w": 27,
+      "h": 15
+    },
+    {
+      "text": "einen",
+      "x": 478,
+      "y": 1080,
+      "w": 45,
+      "h": 15
+    },
+    {
+      "text": "Zettel",
+      "x": 530,
+      "y": 1079,
+      "w": 56,
+      "h": 16
+    },
+    {
+      "text": "getanzt",
+      "x": 220,
+      "y": 1123,
+      "w": 60,
+      "h": 16
+    },
+    {
+      "text": "gesungen",
+      "x": 294,
+      "y": 1124,
+      "w": 73,
+      "h": 15
+    },
+    {
+      "text": "gefeiert",
+      "x": 382,
+      "y": 1118,
+      "w": 61,
+      "h": 21
+    },
+    {
+      "text": "gegessen",
+      "x": 458,
+      "y": 1123,
+      "w": 69,
+      "h": 15
+    },
+    {
+      "text": "getrunken",
+      "x": 542,
+      "y": 1118,
+      "w": 79,
+      "h": 20
+    },
+    {
+      "text": "Musik",
+      "x": 222,
+      "y": 1144,
+      "w": 44,
+      "h": 15
+    },
+    {
+      "text": "gehört",
+      "x": 273,
+      "y": 1144,
+      "w": 51,
+      "h": 20
+    },
+    {
+      "text": "Freunde",
+      "x": 340,
+      "y": 1144,
+      "w": 61,
+      "h": 15
+    },
+    {
+      "text": "getroffen",
+      "x": 407,
+      "y": 1143,
+      "w": 72,
+      "h": 20
+    },
+    {
+      "text": "Was",
+      "x": 655,
+      "y": 1023,
+      "w": 42,
+      "h": 17
+    },
+    {
+      "text": "Oktoberfest",
+      "x": 856,
+      "y": 1023,
+      "w": 87,
+      "h": 14
+    },
+    {
+      "text": "Wo",
+      "x": 666,
+      "y": 1049,
+      "w": 31,
+      "h": 17
+    },
+    {
+      "text": "München",
+      "x": 856,
+      "y": 1049,
+      "w": 61,
+      "h": 13
+    },
+    {
+      "text": "Wann",
+      "x": 658,
+      "y": 1072,
+      "w": 52,
+      "h": 23
+    },
+    {
+      "text": "letztes",
+      "x": 857,
+      "y": 1074,
+      "w": 46,
+      "h": 14
+    },
+    {
+      "text": "Jahr",
+      "x": 911,
+      "y": 1074,
+      "w": 35,
+      "h": 13
+    },
+    {
+      "text": "Herbst",
+      "x": 955,
+      "y": 1074,
+      "w": 47,
+      "h": 14
+    },
+    {
+      "text": "Wie",
+      "x": 666,
+      "y": 1100,
+      "w": 28,
+      "h": 14
+    },
+    {
+      "text": "dorthin",
+      "x": 700,
+      "y": 1100,
+      "w": 50,
+      "h": 14
+    },
+    {
+      "text": "gekommen",
+      "x": 751,
+      "y": 1096,
+      "w": 87,
+      "h": 29
+    },
+    {
+      "text": "geflogen",
+      "x": 847,
+      "y": 1097,
+      "w": 63,
+      "h": 28
+    },
+    {
+      "text": "Was",
+      "x": 658,
+      "y": 1123,
+      "w": 35,
+      "h": 23
+    },
+    {
+      "text": "gemacht",
+      "x": 693,
+      "y": 1122,
+      "w": 75,
+      "h": 28
+    },
+    {
+      "text": "mit",
+      "x": 857,
+      "y": 1124,
+      "w": 22,
+      "h": 14
+    },
+    {
+      "text": "Freunden",
+      "x": 885,
+      "y": 1124,
+      "w": 62,
+      "h": 14
+    },
+    {
+      "text": "etwas",
+      "x": 955,
+      "y": 1124,
+      "w": 40,
+      "h": 14
+    },
+    {
+      "text": "getrunken",
+      "x": 854,
+      "y": 1150,
+      "w": 75,
+      "h": 20
+    },
+    {
+      "text": "gesungen",
+      "x": 936,
+      "y": 1153,
+      "w": 65,
+      "h": 17
+    },
+    {
+      "text": "b",
+      "x": 186,
+      "y": 1194,
+      "w": 9,
+      "h": 15
+    },
+    {
+      "text": "Mischen",
+      "x": 217,
+      "y": 1194,
+      "w": 67,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 292,
+      "y": 1194,
+      "w": 24,
+      "h": 14
+    },
+    {
+      "text": "die",
+      "x": 323,
+      "y": 1193,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "Zettel",
+      "x": 355,
+      "y": 1193,
+      "w": 55,
+      "h": 15
+    },
+    {
+      "text": "Jeder",
+      "x": 416,
+      "y": 1193,
+      "w": 44,
+      "h": 18
+    },
+    {
+      "text": "Teilnehmer",
+      "x": 465,
+      "y": 1193,
+      "w": 93,
+      "h": 15
+    },
+    {
+      "text": "liest",
+      "x": 217,
+      "y": 1219,
+      "w": 35,
+      "h": 15
+    },
+    {
+      "text": "einen",
+      "x": 258,
+      "y": 1224,
+      "w": 45,
+      "h": 10
+    },
+    {
+      "text": "Zettel",
+      "x": 311,
+      "y": 1219,
+      "w": 49,
+      "h": 15
+    },
+    {
+      "text": "vor",
+      "x": 363,
+      "y": 1217,
+      "w": 35,
+      "h": 32
+    },
+    {
+      "text": "Die",
+      "x": 407,
+      "y": 1219,
+      "w": 25,
+      "h": 14
+    },
+    {
+      "text": "anderen",
+      "x": 439,
+      "y": 1218,
+      "w": 66,
+      "h": 15
+    },
+    {
+      "text": "raten",
+      "x": 514,
+      "y": 1222,
+      "w": 49,
+      "h": 11
+    },
+    {
+      "text": "Wer",
+      "x": 216,
+      "y": 1246,
+      "w": 33,
+      "h": 14
+    },
+    {
+      "text": "hat",
+      "x": 256,
+      "y": 1245,
+      "w": 27,
+      "h": 15
+    },
+    {
+      "text": "das",
+      "x": 290,
+      "y": 1244,
+      "w": 27,
+      "h": 15
+    },
+    {
+      "text": "geschrieben",
+      "x": 323,
+      "y": 1242,
+      "w": 110,
+      "h": 25
+    },
+    {
+      "text": "Meine",
+      "x": 658,
+      "y": 1228,
+      "w": 43,
+      "h": 12
+    },
+    {
+      "text": "Person",
+      "x": 708,
+      "y": 1228,
+      "w": 46,
+      "h": 12
+    },
+    {
+      "text": "war",
+      "x": 760,
+      "y": 1231,
+      "w": 26,
+      "h": 8
+    },
+    {
+      "text": "auf",
+      "x": 792,
+      "y": 1226,
+      "w": 24,
+      "h": 13
+    },
+    {
+      "text": "dem",
+      "x": 820,
+      "y": 1226,
+      "w": 29,
+      "h": 12
+    },
+    {
+      "text": "Oktoberfest",
+      "x": 855,
+      "y": 1225,
+      "w": 82,
+      "h": 13
+    },
+    {
+      "text": "in",
+      "x": 943,
+      "y": 1226,
+      "w": 14,
+      "h": 12
+    },
+    {
+      "text": "München",
+      "x": 649,
+      "y": 1249,
+      "w": 71,
+      "h": 12
+    },
+    {
+      "text": "Das",
+      "x": 727,
+      "y": 1250,
+      "w": 23,
+      "h": 11
+    },
+    {
+      "text": "war",
+      "x": 756,
+      "y": 1252,
+      "w": 27,
+      "h": 8
+    },
+    {
+      "text": "letztes",
+      "x": 788,
+      "y": 1248,
+      "w": 45,
+      "h": 13
+    },
+    {
+      "text": "Jahr",
+      "x": 838,
+      "y": 1247,
+      "w": 32,
+      "h": 15
+    },
+    {
+      "text": "im",
+      "x": 876,
+      "y": 1248,
+      "w": 17,
+      "h": 12
+    },
+    {
+      "text": "Herbst",
+      "x": 899,
+      "y": 1247,
+      "w": 46,
+      "h": 12
+    },
+    {
+      "text": "Besondere",
+      "x": 218,
+      "y": 1307,
+      "w": 97,
+      "h": 16
+    },
+    {
+      "text": "Aktivitäten",
+      "x": 321,
+      "y": 1306,
+      "w": 117,
+      "h": 16
+    },
+    {
+      "text": "Hast",
+      "x": 447,
+      "y": 1308,
+      "w": 42,
+      "h": 14
+    },
+    {
+      "text": "du",
+      "x": 496,
+      "y": 1306,
+      "w": 22,
+      "h": 16
+    },
+    {
+      "text": "schon",
+      "x": 527,
+      "y": 1306,
+      "w": 54,
+      "h": 16
+    },
+    {
+      "text": "einmal",
+      "x": 589,
+      "y": 1305,
+      "w": 63,
+      "h": 16
+    },
+    {
+      "text": "Arbeiten",
+      "x": 217,
+      "y": 1333,
+      "w": 72,
+      "h": 15
+    },
+    {
+      "text": "Sie",
+      "x": 296,
+      "y": 1333,
+      "w": 24,
+      "h": 15
+    },
+    {
+      "text": "zu",
+      "x": 326,
+      "y": 1338,
+      "w": 18,
+      "h": 9
+    },
+    {
+      "text": "zweit",
+      "x": 352,
+      "y": 1333,
+      "w": 46,
+      "h": 14
+    },
+    {
+      "text": "auf",
+      "x": 405,
+      "y": 1332,
+      "w": 28,
+      "h": 16
+    },
+    {
+      "text": "Seite",
+      "x": 438,
+      "y": 1333,
+      "w": 41,
+      "h": 15
+    },
+    {
+      "text": "95.",
+      "x": 486,
+      "y": 1333,
+      "w": 25,
+      "h": 14
+    }
+  ],
+  "fields": [
+    {
+      "id": "f4a-1a",
+      "group": "task4a",
+      "kind": "checkbox",
+      "label": "4a-1: Henry ist vor drei Monaten nach Hamburg gekommen.",
+      "answer": "true",
+      "x": 919,
+      "y": 307,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "f4a-1b",
+      "group": "task4a",
+      "kind": "checkbox",
+      "label": "4a-1: Henry ist letztes Jahr im Oktober zum Oktoberfest geflogen.",
+      "answer": "false",
+      "x": 919,
+      "y": 332,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "f4a-1c",
+      "group": "task4a",
+      "kind": "checkbox",
+      "label": "4a-1: Er hat viele nette Leute getroffen.",
+      "answer": "true",
+      "x": 919,
+      "y": 358,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "f4a-1d",
+      "group": "task4a",
+      "kind": "checkbox",
+      "label": "4a-1: Er möchte dieses Jahr wieder zum Oktoberfest fahren.",
+      "answer": "true",
+      "x": 919,
+      "y": 382,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "id": "f4a-2a",
+      "group": "task4a",
+      "kind": "checkbox",
+      "label": "4a-2: Carmela und Benito studieren in Flensburg.",
+      "answer": "false",
+      "x": 634,
+      "y": 447,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "f4a-2b",
+      "group": "task4a",
+      "kind": "checkbox",
+      "label": "4a-2: Sie waren im März bei Rock am Ring.",
+      "answer": "false",
+      "x": 634,
+      "y": 473,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "f4a-2c",
+      "group": "task4a",
+      "kind": "checkbox",
+      "label": "4a-2: Das Festival hat ihnen gut gefallen.",
+      "answer": "true",
+      "x": 634,
+      "y": 498,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "id": "f4a-2d",
+      "group": "task4a",
+      "kind": "checkbox",
+      "label": "4a-2: Im September fahren sie nach Berlin.",
+      "answer": "false",
+      "x": 634,
+      "y": 523,
+      "w": 18,
+      "h": 19
+    },
+    {
+      "id": "f4b-1",
+      "group": "task4b",
+      "kind": "text",
+      "label": "4b: kommen er ... - Hilfsverb",
+      "answer": "ist",
+      "x": 350,
+      "y": 834,
+      "w": 32,
+      "h": 16
+    },
+    {
+      "id": "f4b-2",
+      "group": "task4b",
+      "kind": "text",
+      "label": "4b: kommen er ist ... - Partizip",
+      "answer": "gekommen",
+      "x": 438,
+      "y": 834,
+      "w": 64,
+      "h": 16
+    },
+    {
+      "id": "f4b-3",
+      "group": "task4b",
+      "kind": "text",
+      "label": "4b: fliegen ... - Hilfsverb",
+      "answer": "ist",
+      "x": 381,
+      "y": 855,
+      "w": 36,
+      "h": 17
+    },
+    {
+      "id": "f4b-4",
+      "group": "task4b",
+      "kind": "text",
+      "label": "4b: fliegen ist ... - Partizip",
+      "answer": "geflogen",
+      "x": 438,
+      "y": 855,
+      "w": 64,
+      "h": 17
+    }
+  ],
+  "audio": [
+    {
+      "id": "cd2-20",
+      "src": "assets/kb-cd2-track20.mp3",
+      "label": "2.20 · Interview 1 (Henry)",
+      "x": 105,
+      "y": 280,
+      "w": 24,
+      "h": 9
+    },
+    {
+      "id": "cd2-21",
+      "src": "assets/kb-cd2-track21.mp3",
+      "label": "2.21 · Interview 2 (Carmela und Benito)",
+      "x": 130,
+      "y": 280,
+      "w": 24,
+      "h": 9
+    }
+  ],
+  "groups": [
+    {
+      "id": "task4a",
+      "label": "4a"
+    },
+    {
+      "id": "task4b",
+      "label": "4b"
+    }
+  ],
+  "review": {
+    "status": "verified",
+    "verifiedWords": 244,
+    "totalWords": 244,
+    "notes": [
+      "Lektion 12 tasks 4-7 headers + seasons banner (September-Februar, Herbst, Winter). All printed words reviewed at 2x: task 4 heading, 4a instruction and all 8 interview statements, INFO box Wohin? (in-den-Iran merged token split at spaces), 4b instruction + green bank (geflogen/ist/ist/gekommen), Perfekt-mit-sein grammar table and ich bin/er ist ... gewesen = ich/er war frame, task 5 (Seite 88/91 numerals recovered via 4x zoom OCR), task 6 heading, 6a instruction + green bank, blue handwriting Zettel example (Was/Wo/Wann/Wie dorthin gekommen/Was gemacht + answers), green speech-bubble example, 6b instruction, task 7 (Seite 95 numeral via 4x zoom).",
+      "Fields: 4a = 8 checkbox circles (two per statement column), answers key-verified (official Hueber key: richtig 1a/1c/1d, 2c) and interview 1 additionally confirmed by audio 2.20 transcript (vor drei Monaten nach Hamburg gekommen; letztes Jahr im September nach München geflogen - hence 1b false; tausend nette Leute getroffen; dieses Jahr wieder zum Oktoberfest). Interview 2 (2.21) plays (1:04) but the capture returned only the intro announcement; answers rest on the official key.",
+      "4b = 4 write-in blanks in the grammar table (kommen er ist gekommen / fliegen ist geflogen), answers key-verified (KB L12 4b: ist gekommen, ist geflogen) and matching the printed bank. Blank boxes measured via connected-component line detection. Circle boxes via CC ring detection at threshold 228.",
+      "Excluded per policy: red task numerals 4/5/6/7, clipped lesson numeral 12 top-right, AB/Beruf/Diktat/Spiel & Spaß/noch einmal? margin labels, GRAMMATIK/INFO frame labels, photos, banner artwork, facing-page bleed, footer (siebenundsechzig/67, Modul tab).",
+      "Audio: marker reads ▶2.20-21 (single printed marker); two audio entries share its span (cd2-20 left half, cd2-21 right half). Both files exist and play."
+    ]
+  }
+}
