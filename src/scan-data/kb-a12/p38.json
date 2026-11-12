@@ -1,0 +1,2025 @@
+{
+ "book": "kb-a12",
+ "page": 38,
+ "image": "assets/kb-a12-p38.png",
+ "width": 1200,
+ "height": 1641,
+ "words": [
+  {
+   "text": "FILM-STATIONEN",
+   "x": 132,
+   "y": 94,
+   "w": 364,
+   "h": 32
+  },
+  {
+   "text": "Clips",
+   "x": 527,
+   "y": 104,
+   "w": 50,
+   "h": 30
+  },
+  {
+   "text": "16–18",
+   "x": 586,
+   "y": 106,
+   "w": 64,
+   "h": 20
+  },
+  {
+   "text": "kann",
+   "x": 229,
+   "y": 203,
+   "w": 52,
+   "h": 19
+  },
+  {
+   "text": "für",
+   "x": 331,
+   "y": 203,
+   "w": 34,
+   "h": 20
+  },
+  {
+   "text": "ich",
+   "x": 291,
+   "y": 204,
+   "w": 31,
+   "h": 19
+  },
+  {
+   "text": "Sie",
+   "x": 371,
+   "y": 204,
+   "w": 32,
+   "h": 19
+  },
+  {
+   "text": "Sehen",
+   "x": 490,
+   "y": 204,
+   "w": 66,
+   "h": 19
+  },
+  {
+   "text": "1",
+   "x": 139,
+   "y": 205,
+   "w": 14,
+   "h": 18
+  },
+  {
+   "text": "Was",
+   "x": 175,
+   "y": 205,
+   "w": 44,
+   "h": 17
+  },
+  {
+   "text": "tun?",
+   "x": 411,
+   "y": 205,
+   "w": 51,
+   "h": 18
+  },
+  {
+   "text": "Sie",
+   "x": 564,
+   "y": 205,
+   "w": 32,
+   "h": 18
+  },
+  {
+   "text": "den",
+   "x": 604,
+   "y": 205,
+   "w": 39,
+   "h": 18
+  },
+  {
+   "text": "Film",
+   "x": 654,
+   "y": 205,
+   "w": 45,
+   "h": 18
+  },
+  {
+   "text": "und",
+   "x": 710,
+   "y": 205,
+   "w": 40,
+   "h": 19
+  },
+  {
+   "text": "Sie.",
+   "x": 868,
+   "y": 206,
+   "w": 39,
+   "h": 19
+  },
+  {
+   "text": "ergänzen",
+   "x": 759,
+   "y": 207,
+   "w": 101,
+   "h": 25
+  },
+  {
+   "text": "Clip",
+   "x": 68,
+   "y": 208,
+   "w": 26,
+   "h": 14
+  },
+  {
+   "text": "16",
+   "x": 96,
+   "y": 208,
+   "w": 15,
+   "h": 14
+  },
+  {
+   "text": "▶",
+   "x": 54,
+   "y": 210,
+   "w": 11,
+   "h": 13
+  },
+  {
+   "text": "-",
+   "x": 471,
+   "y": 215,
+   "w": 12,
+   "h": 3
+  },
+  {
+   "text": "Alfons",
+   "x": 202,
+   "y": 248,
+   "w": 62,
+   "h": 18
+  },
+  {
+   "text": "Brunner",
+   "x": 272,
+   "y": 249,
+   "w": 80,
+   "h": 20
+  },
+  {
+   "text": "ist",
+   "x": 356,
+   "y": 249,
+   "w": 32,
+   "h": 20
+  },
+  {
+   "text": "Jahre",
+   "x": 552,
+   "y": 250,
+   "w": 55,
+   "h": 20
+  },
+  {
+   "text": "alt.",
+   "x": 614,
+   "y": 250,
+   "w": 31,
+   "h": 17
+  },
+  {
+   "text": "a",
+   "x": 175,
+   "y": 255,
+   "w": 10,
+   "h": 11
+  },
+  {
+   "text": "b",
+   "x": 174,
+   "y": 278,
+   "w": 12,
+   "h": 17
+  },
+  {
+   "text": "Nach",
+   "x": 203,
+   "y": 278,
+   "w": 50,
+   "h": 18
+  },
+  {
+   "text": "der",
+   "x": 259,
+   "y": 278,
+   "w": 32,
+   "h": 18
+  },
+  {
+   "text": "Schule",
+   "x": 298,
+   "y": 278,
+   "w": 65,
+   "h": 18
+  },
+  {
+   "text": "Elektroinstallateur",
+   "x": 437,
+   "y": 278,
+   "w": 195,
+   "h": 20
+  },
+  {
+   "text": "hat",
+   "x": 370,
+   "y": 279,
+   "w": 33,
+   "h": 17
+  },
+  {
+   "text": "er",
+   "x": 410,
+   "y": 285,
+   "w": 20,
+   "h": 11
+  },
+  {
+   "text": "Seit",
+   "x": 202,
+   "y": 308,
+   "w": 37,
+   "h": 17
+  },
+  {
+   "text": "Jahren",
+   "x": 404,
+   "y": 308,
+   "w": 69,
+   "h": 20
+  },
+  {
+   "text": "arbeitet",
+   "x": 480,
+   "y": 308,
+   "w": 78,
+   "h": 17
+  },
+  {
+   "text": "als",
+   "x": 709,
+   "y": 309,
+   "w": 25,
+   "h": 17
+  },
+  {
+   "text": "Herr",
+   "x": 566,
+   "y": 310,
+   "w": 45,
+   "h": 15
+  },
+  {
+   "text": "Brunner",
+   "x": 619,
+   "y": 310,
+   "w": 83,
+   "h": 16
+  },
+  {
+   "text": "c",
+   "x": 175,
+   "y": 313,
+   "w": 9,
+   "h": 11
+  },
+  {
+   "text": "bei",
+   "x": 332,
+   "y": 337,
+   "w": 30,
+   "h": 17
+  },
+  {
+   "text": "der",
+   "x": 369,
+   "y": 337,
+   "w": 32,
+   "h": 17
+  },
+  {
+   "text": "Hausmeister",
+   "x": 203,
+   "y": 338,
+   "w": 123,
+   "h": 16
+  },
+  {
+   "text": "Firma.",
+   "x": 409,
+   "y": 338,
+   "w": 63,
+   "h": 16
+  },
+  {
+   "text": "d",
+   "x": 175,
+   "y": 366,
+   "w": 11,
+   "h": 17
+  },
+  {
+   "text": "kümmert",
+   "x": 230,
+   "y": 366,
+   "w": 93,
+   "h": 17
+  },
+  {
+   "text": "sich",
+   "x": 330,
+   "y": 366,
+   "w": 39,
+   "h": 17
+  },
+  {
+   "text": "die",
+   "x": 415,
+   "y": 366,
+   "w": 29,
+   "h": 17
+  },
+  {
+   "text": "das",
+   "x": 617,
+   "y": 367,
+   "w": 32,
+   "h": 17
+  },
+  {
+   "text": "Er",
+   "x": 203,
+   "y": 368,
+   "w": 20,
+   "h": 15
+  },
+  {
+   "text": "Wasser",
+   "x": 656,
+   "y": 369,
+   "w": 68,
+   "h": 15
+  },
+  {
+   "text": "um",
+   "x": 376,
+   "y": 373,
+   "w": 31,
+   "h": 10
+  },
+  {
+   "text": "und",
+   "x": 202,
+   "y": 395,
+   "w": 38,
+   "h": 17
+  },
+  {
+   "text": "den",
+   "x": 247,
+   "y": 395,
+   "w": 36,
+   "h": 17
+  },
+  {
+   "text": "Strom.",
+   "x": 290,
+   "y": 397,
+   "w": 65,
+   "h": 16
+  },
+  {
+   "text": "repariert",
+   "x": 228,
+   "y": 424,
+   "w": 95,
+   "h": 19
+  },
+  {
+   "text": "Er",
+   "x": 202,
+   "y": 425,
+   "w": 20,
+   "h": 17
+  },
+  {
+   "text": "und",
+   "x": 487,
+   "y": 425,
+   "w": 38,
+   "h": 17
+  },
+  {
+   "text": "Türen.",
+   "x": 532,
+   "y": 426,
+   "w": 63,
+   "h": 16
+  },
+  {
+   "text": "e",
+   "x": 175,
+   "y": 430,
+   "w": 9,
+   "h": 11
+  },
+  {
+   "text": "f",
+   "x": 175,
+   "y": 453,
+   "w": 8,
+   "h": 17
+  },
+  {
+   "text": "schneidet",
+   "x": 230,
+   "y": 454,
+   "w": 96,
+   "h": 17
+  },
+  {
+   "text": "Büsche",
+   "x": 499,
+   "y": 454,
+   "w": 68,
+   "h": 18
+  },
+  {
+   "text": "Er",
+   "x": 203,
+   "y": 455,
+   "w": 20,
+   "h": 16
+  },
+  {
+   "text": "und",
+   "x": 574,
+   "y": 455,
+   "w": 39,
+   "h": 17
+  },
+  {
+   "text": "Hecken.",
+   "x": 621,
+   "y": 455,
+   "w": 77,
+   "h": 17
+  },
+  {
+   "text": "arbeitet",
+   "x": 228,
+   "y": 482,
+   "w": 85,
+   "h": 19
+  },
+  {
+   "text": "Er",
+   "x": 202,
+   "y": 483,
+   "w": 20,
+   "h": 17
+  },
+  {
+   "text": "von",
+   "x": 320,
+   "y": 483,
+   "w": 38,
+   "h": 18
+  },
+  {
+   "text": "bis",
+   "x": 518,
+   "y": 484,
+   "w": 30,
+   "h": 18
+  },
+  {
+   "text": "g",
+   "x": 173,
+   "y": 489,
+   "w": 12,
+   "h": 17
+  },
+  {
+   "text": "immer",
+   "x": 202,
+   "y": 513,
+   "w": 65,
+   "h": 17
+  },
+  {
+   "text": "bis",
+   "x": 473,
+   "y": 514,
+   "w": 30,
+   "h": 18
+  },
+  {
+   "text": "Von",
+   "x": 676,
+   "y": 515,
+   "w": 37,
+   "h": 16
+  },
+  {
+   "text": "von",
+   "x": 273,
+   "y": 519,
+   "w": 37,
+   "h": 11
+  },
+  {
+   "text": "IHHENIHREEG",
+   "x": 381,
+   "y": 531,
+   "w": 79,
+   "h": 2
+  },
+  {
+   "text": "bis",
+   "x": 368,
+   "y": 542,
+   "w": 30,
+   "h": 18
+  },
+  {
+   "text": "hat",
+   "x": 554,
+   "y": 542,
+   "w": 32,
+   "h": 17
+  },
+  {
+   "text": "Mittagspause.",
+   "x": 620,
+   "y": 544,
+   "w": 136,
+   "h": 22
+  },
+  {
+   "text": "er",
+   "x": 593,
+   "y": 548,
+   "w": 20,
+   "h": 12
+  },
+  {
+   "text": "h",
+   "x": 174,
+   "y": 570,
+   "w": 13,
+   "h": 17
+  },
+  {
+   "text": "Arbeit",
+   "x": 239,
+   "y": 570,
+   "w": 63,
+   "h": 18
+  },
+  {
+   "text": "Die",
+   "x": 202,
+   "y": 571,
+   "w": 30,
+   "h": 17
+  },
+  {
+   "text": "macht",
+   "x": 309,
+   "y": 571,
+   "w": 62,
+   "h": 19
+  },
+  {
+   "text": "ihm",
+   "x": 376,
+   "y": 571,
+   "w": 38,
+   "h": 19
+  },
+  {
+   "text": "2",
+   "x": 139,
+   "y": 639,
+   "w": 14,
+   "h": 18
+  },
+  {
+   "text": "Clip",
+   "x": 68,
+   "y": 642,
+   "w": 26,
+   "h": 14
+  },
+  {
+   "text": "17",
+   "x": 96,
+   "y": 642,
+   "w": 15,
+   "h": 14
+  },
+  {
+   "text": "Ich",
+   "x": 176,
+   "y": 642,
+   "w": 31,
+   "h": 19
+  },
+  {
+   "text": "will",
+   "x": 216,
+   "y": 642,
+   "w": 40,
+   "h": 19
+  },
+  {
+   "text": "Sehen",
+   "x": 315,
+   "y": 642,
+   "w": 65,
+   "h": 19
+  },
+  {
+   "text": "die",
+   "x": 429,
+   "y": 642,
+   "w": 33,
+   "h": 20
+  },
+  {
+   "text": "Sie",
+   "x": 389,
+   "y": 643,
+   "w": 32,
+   "h": 18
+  },
+  {
+   "text": "Welchen",
+   "x": 599,
+   "y": 643,
+   "w": 93,
+   "h": 19
+  },
+  {
+   "text": "finden",
+   "x": 796,
+   "y": 643,
+   "w": 69,
+   "h": 20
+  },
+  {
+   "text": "▶",
+   "x": 54,
+   "y": 644,
+   "w": 11,
+   "h": 13
+  },
+  {
+   "text": "Reportage.",
+   "x": 472,
+   "y": 644,
+   "w": 119,
+   "h": 25
+  },
+  {
+   "text": "Wunsch",
+   "x": 700,
+   "y": 644,
+   "w": 86,
+   "h": 18
+  },
+  {
+   "text": "Sie",
+   "x": 873,
+   "y": 644,
+   "w": 33,
+   "h": 19
+  },
+  {
+   "text": "welchen",
+   "x": 967,
+   "y": 644,
+   "w": 91,
+   "h": 19
+  },
+  {
+   "text": "gut,",
+   "x": 913,
+   "y": 648,
+   "w": 45,
+   "h": 23
+  },
+  {
+   "text": ">clip17",
+   "x": 55,
+   "y": 649,
+   "w": 53,
+   "h": 15
+  },
+  {
+   "text": "-",
+   "x": 295,
+   "y": 653,
+   "w": 13,
+   "h": 3
+  },
+  {
+   "text": "…",
+   "x": 266,
+   "y": 657,
+   "w": 20,
+   "h": 4
+  },
+  {
+   "text": "finden",
+   "x": 174,
+   "y": 671,
+   "w": 70,
+   "h": 19
+  },
+  {
+   "text": "nicht",
+   "x": 293,
+   "y": 671,
+   "w": 58,
+   "h": 19
+  },
+  {
+   "text": "Sie",
+   "x": 252,
+   "y": 672,
+   "w": 32,
+   "h": 18
+  },
+  {
+   "text": "gut?",
+   "x": 358,
+   "y": 673,
+   "w": 50,
+   "h": 25
+  },
+  {
+   "text": "auf",
+   "x": 174,
+   "y": 745,
+   "w": 33,
+   "h": 18
+  },
+  {
+   "text": "keinen",
+   "x": 213,
+   "y": 746,
+   "w": 68,
+   "h": 17
+  },
+  {
+   "text": "Fall",
+   "x": 289,
+   "y": 746,
+   "w": 36,
+   "h": 17
+  },
+  {
+   "text": "dick",
+   "x": 332,
+   "y": 746,
+   "w": 41,
+   "h": 17
+  },
+  {
+   "text": "werden",
+   "x": 380,
+   "y": 746,
+   "w": 74,
+   "h": 17
+  },
+  {
+   "text": "endlich",
+   "x": 174,
+   "y": 775,
+   "w": 74,
+   "h": 17
+  },
+  {
+   "text": "wieder",
+   "x": 255,
+   "y": 775,
+   "w": 68,
+   "h": 17
+  },
+  {
+   "text": "ohne",
+   "x": 330,
+   "y": 775,
+   "w": 48,
+   "h": 17
+  },
+  {
+   "text": "Krücken",
+   "x": 386,
+   "y": 775,
+   "w": 83,
+   "h": 18
+  },
+  {
+   "text": "gehen",
+   "x": 475,
+   "y": 776,
+   "w": 59,
+   "h": 23
+  },
+  {
+   "text": "machen",
+   "x": 264,
+   "y": 804,
+   "w": 78,
+   "h": 18
+  },
+  {
+   "text": "Karriere",
+   "x": 174,
+   "y": 805,
+   "w": 83,
+   "h": 17
+  },
+  {
+   "text": "für",
+   "x": 300,
+   "y": 833,
+   "w": 31,
+   "h": 18
+  },
+  {
+   "text": "ein",
+   "x": 173,
+   "y": 834,
+   "w": 31,
+   "h": 16
+  },
+  {
+   "text": "machen",
+   "x": 415,
+   "y": 834,
+   "w": 78,
+   "h": 17
+  },
+  {
+   "text": "Fest",
+   "x": 213,
+   "y": 835,
+   "w": 37,
+   "h": 16
+  },
+  {
+   "text": "Frauen",
+   "x": 339,
+   "y": 836,
+   "w": 68,
+   "h": 15
+  },
+  {
+   "text": "nur",
+   "x": 257,
+   "y": 839,
+   "w": 36,
+   "h": 12
+  },
+  {
+   "text": "nicht",
+   "x": 173,
+   "y": 863,
+   "w": 53,
+   "h": 17
+  },
+  {
+   "text": "werden",
+   "x": 418,
+   "y": 863,
+   "w": 74,
+   "h": 17
+  },
+  {
+   "text": "wie",
+   "x": 233,
+   "y": 864,
+   "w": 34,
+   "h": 16
+  },
+  {
+   "text": "meine",
+   "x": 274,
+   "y": 864,
+   "w": 61,
+   "h": 16
+  },
+  {
+   "text": "Mutter",
+   "x": 343,
+   "y": 865,
+   "w": 69,
+   "h": 15
+  },
+  {
+   "text": "arbeiten",
+   "x": 240,
+   "y": 892,
+   "w": 83,
+   "h": 17
+  },
+  {
+   "text": "und",
+   "x": 330,
+   "y": 892,
+   "w": 38,
+   "h": 17
+  },
+  {
+   "text": "viel",
+   "x": 375,
+   "y": 892,
+   "w": 36,
+   "h": 17
+  },
+  {
+   "text": "wenig",
+   "x": 173,
+   "y": 893,
+   "w": 60,
+   "h": 22
+  },
+  {
+   "text": "Geld",
+   "x": 419,
+   "y": 893,
+   "w": 43,
+   "h": 17
+  },
+  {
+   "text": "verdienen",
+   "x": 467,
+   "y": 893,
+   "w": 101,
+   "h": 17
+  },
+  {
+   "text": "dem",
+   "x": 214,
+   "y": 921,
+   "w": 42,
+   "h": 17
+  },
+  {
+   "text": "durch",
+   "x": 305,
+   "y": 921,
+   "w": 58,
+   "h": 18
+  },
+  {
+   "text": "fahren",
+   "x": 448,
+   "y": 921,
+   "w": 66,
+   "h": 18
+  },
+  {
+   "text": "mit",
+   "x": 173,
+   "y": 922,
+   "w": 35,
+   "h": 16
+  },
+  {
+   "text": "Zug",
+   "x": 263,
+   "y": 923,
+   "w": 35,
+   "h": 22
+  },
+  {
+   "text": "Europa",
+   "x": 371,
+   "y": 923,
+   "w": 69,
+   "h": 22
+  },
+  {
+   "text": "Model",
+   "x": 173,
+   "y": 950,
+   "w": 60,
+   "h": 17
+  },
+  {
+   "text": "werden",
+   "x": 240,
+   "y": 950,
+   "w": 75,
+   "h": 17
+  },
+  {
+   "text": "werden",
+   "x": 280,
+   "y": 979,
+   "w": 74,
+   "h": 18
+  },
+  {
+   "text": "Tierärztin",
+   "x": 173,
+   "y": 980,
+   "w": 100,
+   "h": 16
+  },
+  {
+   "text": "Und",
+   "x": 173,
+   "y": 1023,
+   "w": 41,
+   "h": 17
+  },
+  {
+   "text": "welchen",
+   "x": 221,
+   "y": 1023,
+   "w": 83,
+   "h": 17
+  },
+  {
+   "text": "Wunsch",
+   "x": 310,
+   "y": 1023,
+   "w": 79,
+   "h": 18
+  },
+  {
+   "text": "haben",
+   "x": 396,
+   "y": 1023,
+   "w": 60,
+   "h": 18
+  },
+  {
+   "text": "Sie?",
+   "x": 463,
+   "y": 1024,
+   "w": 39,
+   "h": 17
+  },
+  {
+   "text": "mir",
+   "x": 263,
+   "y": 1095,
+   "w": 37,
+   "h": 18
+  },
+  {
+   "text": "Sehen",
+   "x": 382,
+   "y": 1095,
+   "w": 65,
+   "h": 19
+  },
+  {
+   "text": "die",
+   "x": 495,
+   "y": 1095,
+   "w": 34,
+   "h": 19
+  },
+  {
+   "text": "Das",
+   "x": 174,
+   "y": 1096,
+   "w": 37,
+   "h": 17
+  },
+  {
+   "text": "Sie",
+   "x": 455,
+   "y": 1096,
+   "w": 32,
+   "h": 18
+  },
+  {
+   "text": "und",
+   "x": 660,
+   "y": 1096,
+   "w": 40,
+   "h": 19
+  },
+  {
+   "text": "ordnen",
+   "x": 709,
+   "y": 1096,
+   "w": 78,
+   "h": 20
+  },
+  {
+   "text": "Reportage",
+   "x": 539,
+   "y": 1097,
+   "w": 112,
+   "h": 25
+  },
+  {
+   "text": "Sie",
+   "x": 795,
+   "y": 1097,
+   "w": 32,
+   "h": 19
+  },
+  {
+   "text": "tut",
+   "x": 218,
+   "y": 1098,
+   "w": 36,
+   "h": 15
+  },
+  {
+   "text": "3",
+   "x": 139,
+   "y": 1099,
+   "w": 14,
+   "h": 18
+  },
+  {
+   "text": "gut.",
+   "x": 307,
+   "y": 1099,
+   "w": 46,
+   "h": 22
+  },
+  {
+   "text": "Clip",
+   "x": 68,
+   "y": 1102,
+   "w": 26,
+   "h": 14
+  },
+  {
+   "text": "18",
+   "x": 96,
+   "y": 1102,
+   "w": 15,
+   "h": 14
+  },
+  {
+   "text": "▶",
+   "x": 54,
+   "y": 1104,
+   "w": 11,
+   "h": 13
+  },
+  {
+   "text": "zu.",
+   "x": 836,
+   "y": 1104,
+   "w": 32,
+   "h": 12
+  },
+  {
+   "text": "-",
+   "x": 362,
+   "y": 1105,
+   "w": 12,
+   "h": 4
+  },
+  {
+   "text": "für",
+   "x": 445,
+   "y": 1140,
+   "w": 30,
+   "h": 18
+  },
+  {
+   "text": "mich",
+   "x": 483,
+   "y": 1141,
+   "w": 49,
+   "h": 17
+  },
+  {
+   "text": "nicht",
+   "x": 539,
+   "y": 1141,
+   "w": 53,
+   "h": 17
+  },
+  {
+   "text": "nur",
+   "x": 599,
+   "y": 1147,
+   "w": 36,
+   "h": 11
+  },
+  {
+   "text": "a",
+   "x": 172,
+   "y": 1154,
+   "w": 11,
+   "h": 18
+  },
+  {
+   "text": "Ich",
+   "x": 198,
+   "y": 1154,
+   "w": 31,
+   "h": 18
+  },
+  {
+   "text": "gehe",
+   "x": 234,
+   "y": 1154,
+   "w": 45,
+   "h": 18
+  },
+  {
+   "text": "Sport.",
+   "x": 445,
+   "y": 1171,
+   "w": 58,
+   "h": 22
+  },
+  {
+   "text": "b",
+   "x": 171,
+   "y": 1198,
+   "w": 11,
+   "h": 18
+  },
+  {
+   "text": "Ich",
+   "x": 199,
+   "y": 1198,
+   "w": 31,
+   "h": 18
+  },
+  {
+   "text": "laufe",
+   "x": 237,
+   "y": 1198,
+   "w": 49,
+   "h": 18
+  },
+  {
+   "text": "nicht",
+   "x": 445,
+   "y": 1214,
+   "w": 52,
+   "h": 17
+  },
+  {
+   "text": "sehr",
+   "x": 504,
+   "y": 1214,
+   "w": 43,
+   "h": 17
+  },
+  {
+   "text": "schnell.",
+   "x": 554,
+   "y": 1214,
+   "w": 76,
+   "h": 18
+  },
+  {
+   "text": "Ich",
+   "x": 199,
+   "y": 1242,
+   "w": 31,
+   "h": 17
+  },
+  {
+   "text": "arbeite",
+   "x": 238,
+   "y": 1242,
+   "w": 68,
+   "h": 18
+  },
+  {
+   "text": "c",
+   "x": 172,
+   "y": 1248,
+   "w": 8,
+   "h": 11
+  },
+  {
+   "text": "Computer.",
+   "x": 481,
+   "y": 1259,
+   "w": 100,
+   "h": 22
+  },
+  {
+   "text": "am",
+   "x": 445,
+   "y": 1264,
+   "w": 29,
+   "h": 11
+  },
+  {
+   "text": "d",
+   "x": 172,
+   "y": 1286,
+   "w": 11,
+   "h": 17
+  },
+  {
+   "text": "bis",
+   "x": 333,
+   "y": 1286,
+   "w": 27,
+   "h": 18
+  },
+  {
+   "text": "Von",
+   "x": 198,
+   "y": 1288,
+   "w": 38,
+   "h": 15
+  },
+  {
+   "text": "morgens",
+   "x": 243,
+   "y": 1292,
+   "w": 83,
+   "h": 18
+  },
+  {
+   "text": "auch",
+   "x": 445,
+   "y": 1302,
+   "w": 46,
+   "h": 16
+  },
+  {
+   "text": "Meditation.",
+   "x": 499,
+   "y": 1302,
+   "w": 115,
+   "h": 17
+  },
+  {
+   "text": "abends",
+   "x": 198,
+   "y": 1315,
+   "w": 68,
+   "h": 18
+  },
+  {
+   "text": "ich",
+   "x": 326,
+   "y": 1315,
+   "w": 29,
+   "h": 18
+  },
+  {
+   "text": "sitze",
+   "x": 273,
+   "y": 1320,
+   "w": 45,
+   "h": 13
+  },
+  {
+   "text": "Elektronikfirma",
+   "x": 531,
+   "y": 1345,
+   "w": 160,
+   "h": 18
+  },
+  {
+   "text": "in",
+   "x": 445,
+   "y": 1346,
+   "w": 19,
+   "h": 16
+  },
+  {
+   "text": "einer",
+   "x": 471,
+   "y": 1346,
+   "w": 52,
+   "h": 17
+  },
+  {
+   "text": "Man",
+   "x": 200,
+   "y": 1348,
+   "w": 40,
+   "h": 18
+  },
+  {
+   "text": "soll",
+   "x": 248,
+   "y": 1348,
+   "w": 36,
+   "h": 18
+  },
+  {
+   "text": "e",
+   "x": 172,
+   "y": 1350,
+   "w": 11,
+   "h": 17
+  },
+  {
+   "text": "hier",
+   "x": 444,
+   "y": 1374,
+   "w": 41,
+   "h": 18
+  },
+  {
+   "text": "Wien.",
+   "x": 519,
+   "y": 1377,
+   "w": 56,
+   "h": 15
+  },
+  {
+   "text": "in",
+   "x": 492,
+   "y": 1381,
+   "w": 20,
+   "h": 11
+  },
+  {
+   "text": "f",
+   "x": 171,
+   "y": 1403,
+   "w": 9,
+   "h": 17
+  },
+  {
+   "text": "Joggen",
+   "x": 197,
+   "y": 1405,
+   "w": 67,
+   "h": 22
+  },
+  {
+   "text": "ist",
+   "x": 271,
+   "y": 1408,
+   "w": 24,
+   "h": 12
+  },
+  {
+   "text": "oder",
+   "x": 495,
+   "y": 1418,
+   "w": 44,
+   "h": 18
+  },
+  {
+   "text": "drei",
+   "x": 546,
+   "y": 1418,
+   "w": 39,
+   "h": 18
+  },
+  {
+   "text": "zwei",
+   "x": 444,
+   "y": 1419,
+   "w": 44,
+   "h": 17
+  },
+  {
+   "text": "Mal",
+   "x": 593,
+   "y": 1419,
+   "w": 36,
+   "h": 17
+  },
+  {
+   "text": "pro",
+   "x": 636,
+   "y": 1425,
+   "w": 33,
+   "h": 17
+  },
+  {
+   "text": "Es",
+   "x": 198,
+   "y": 1448,
+   "w": 25,
+   "h": 16
+  },
+  {
+   "text": "ist",
+   "x": 228,
+   "y": 1448,
+   "w": 22,
+   "h": 16
+  },
+  {
+   "text": "Woche",
+   "x": 444,
+   "y": 1448,
+   "w": 64,
+   "h": 17
+  },
+  {
+   "text": "joggen.",
+   "x": 514,
+   "y": 1449,
+   "w": 71,
+   "h": 22
+  },
+  {
+   "text": "g",
+   "x": 170,
+   "y": 1453,
+   "w": 11,
+   "h": 17
+  },
+  {
+   "text": "viel",
+   "x": 442,
+   "y": 1491,
+   "w": 37,
+   "h": 18
+  },
+  {
+   "text": "machen.",
+   "x": 547,
+   "y": 1492,
+   "w": 83,
+   "h": 17
+  },
+  {
+   "text": "Sport",
+   "x": 487,
+   "y": 1493,
+   "w": 53,
+   "h": 22
+  },
+  {
+   "text": "WEM",
+   "x": 0,
+   "y": 1576,
+   "w": 79,
+   "h": 23
+  },
+  {
+   "text": "Modul",
+   "x": 22,
+   "y": 1578,
+   "w": 48,
+   "h": 20
+  },
+  {
+   "text": "6",
+   "x": 72,
+   "y": 1578,
+   "w": 12,
+   "h": 20
+  },
+  {
+   "text": "|",
+   "x": 134,
+   "y": 1579,
+   "w": 2,
+   "h": 17
+  },
+  {
+   "text": "achtunddreißig",
+   "x": 155,
+   "y": 1580,
+   "w": 139,
+   "h": 21
+  },
+  {
+   "text": "38",
+   "x": 97,
+   "y": 1581,
+   "w": 18,
+   "h": 14
+  }
+ ],
+ "fields": [
+  {
+   "id": "t1-a1",
+   "group": "task1",
+   "kind": "text",
+   "label": "1 a",
+   "answer": "48",
+   "x": 445,
+   "y": 248,
+   "w": 105,
+   "h": 22
+  },
+  {
+   "id": "t1-b1",
+   "group": "task1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "gelernt",
+   "x": 628,
+   "y": 277,
+   "w": 120,
+   "h": 22
+  },
+  {
+   "id": "t1-c1",
+   "group": "task1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "16",
+   "x": 243,
+   "y": 307,
+   "w": 155,
+   "h": 22
+  },
+  {
+   "id": "t1-d1",
+   "group": "task1",
+   "kind": "text",
+   "label": "1 d",
+   "answer": "Heizung",
+   "x": 448,
+   "y": 366,
+   "w": 165,
+   "h": 22
+  },
+  {
+   "id": "t1-e1",
+   "group": "task1",
+   "kind": "text",
+   "label": "1 e",
+   "answer": "Fenster",
+   "x": 325,
+   "y": 424,
+   "w": 158,
+   "h": 22
+  },
+  {
+   "id": "t1-f1",
+   "group": "task1",
+   "kind": "text",
+   "label": "1 f",
+   "answer": "Bäume",
+   "x": 330,
+   "y": 453,
+   "w": 160,
+   "h": 22
+  },
+  {
+   "id": "t1-g1",
+   "group": "task1",
+   "kind": "text",
+   "label": "1 g",
+   "answer": "Montag",
+   "x": 353,
+   "y": 484,
+   "w": 160,
+   "h": 22
+  },
+  {
+   "id": "t1-g2",
+   "group": "task1",
+   "kind": "text",
+   "label": "1 g",
+   "answer": "Freitag",
+   "x": 548,
+   "y": 484,
+   "w": 145,
+   "h": 22
+  },
+  {
+   "id": "t1-g3",
+   "group": "task1",
+   "kind": "text",
+   "label": "1 g",
+   "answer": "8",
+   "x": 310,
+   "y": 514,
+   "w": 160,
+   "h": 22
+  },
+  {
+   "id": "t1-g4",
+   "group": "task1",
+   "kind": "text",
+   "label": "1 g",
+   "answer": "16 Uhr",
+   "x": 503,
+   "y": 514,
+   "w": 168,
+   "h": 22
+  },
+  {
+   "id": "t1-g5",
+   "group": "task1",
+   "kind": "text",
+   "label": "1 g",
+   "answer": "12",
+   "x": 200,
+   "y": 544,
+   "w": 165,
+   "h": 22
+  },
+  {
+   "id": "t1-g6",
+   "group": "task1",
+   "kind": "text",
+   "label": "1 g",
+   "answer": "12.30 Uhr",
+   "x": 398,
+   "y": 544,
+   "w": 158,
+   "h": 22
+  },
+  {
+   "id": "t1-h1",
+   "group": "task1",
+   "kind": "text",
+   "label": "1 h",
+   "answer": "Spaß",
+   "x": 418,
+   "y": 571,
+   "w": 162,
+   "h": 22
+  },
+  {
+   "id": "t3-b",
+   "group": "task3",
+   "kind": "select",
+   "label": "3 b",
+   "answer": "nicht sehr schnell.",
+   "options": [
+    {
+     "value": "für mich nicht nur Sport.",
+     "label": "für mich nicht nur Sport."
+    },
+    {
+     "value": "nicht sehr schnell.",
+     "label": "nicht sehr schnell."
+    },
+    {
+     "value": "am Computer.",
+     "label": "am Computer."
+    },
+    {
+     "value": "auch Meditation.",
+     "label": "auch Meditation."
+    },
+    {
+     "value": "in einer Elektronikfirma hier in Wien.",
+     "label": "in einer Elektronikfirma hier in Wien."
+    },
+    {
+     "value": "zwei oder drei Mal pro Woche joggen.",
+     "label": "zwei oder drei Mal pro Woche joggen."
+    },
+    {
+     "value": "viel Sport machen.",
+     "label": "viel Sport machen."
+    }
+   ],
+   "x": 415,
+   "y": 1195,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "t3-c",
+   "group": "task3",
+   "kind": "select",
+   "label": "3 c",
+   "answer": "in einer Elektronikfirma hier in Wien.",
+   "options": [
+    {
+     "value": "für mich nicht nur Sport.",
+     "label": "für mich nicht nur Sport."
+    },
+    {
+     "value": "nicht sehr schnell.",
+     "label": "nicht sehr schnell."
+    },
+    {
+     "value": "am Computer.",
+     "label": "am Computer."
+    },
+    {
+     "value": "auch Meditation.",
+     "label": "auch Meditation."
+    },
+    {
+     "value": "in einer Elektronikfirma hier in Wien.",
+     "label": "in einer Elektronikfirma hier in Wien."
+    },
+    {
+     "value": "zwei oder drei Mal pro Woche joggen.",
+     "label": "zwei oder drei Mal pro Woche joggen."
+    },
+    {
+     "value": "viel Sport machen.",
+     "label": "viel Sport machen."
+    }
+   ],
+   "x": 415,
+   "y": 1239,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "t3-d",
+   "group": "task3",
+   "kind": "select",
+   "label": "3 d",
+   "answer": "am Computer.",
+   "options": [
+    {
+     "value": "für mich nicht nur Sport.",
+     "label": "für mich nicht nur Sport."
+    },
+    {
+     "value": "nicht sehr schnell.",
+     "label": "nicht sehr schnell."
+    },
+    {
+     "value": "am Computer.",
+     "label": "am Computer."
+    },
+    {
+     "value": "auch Meditation.",
+     "label": "auch Meditation."
+    },
+    {
+     "value": "in einer Elektronikfirma hier in Wien.",
+     "label": "in einer Elektronikfirma hier in Wien."
+    },
+    {
+     "value": "zwei oder drei Mal pro Woche joggen.",
+     "label": "zwei oder drei Mal pro Woche joggen."
+    },
+    {
+     "value": "viel Sport machen.",
+     "label": "viel Sport machen."
+    }
+   ],
+   "x": 415,
+   "y": 1285,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "t3-e",
+   "group": "task3",
+   "kind": "select",
+   "label": "3 e",
+   "answer": "viel Sport machen.",
+   "options": [
+    {
+     "value": "für mich nicht nur Sport.",
+     "label": "für mich nicht nur Sport."
+    },
+    {
+     "value": "nicht sehr schnell.",
+     "label": "nicht sehr schnell."
+    },
+    {
+     "value": "am Computer.",
+     "label": "am Computer."
+    },
+    {
+     "value": "auch Meditation.",
+     "label": "auch Meditation."
+    },
+    {
+     "value": "in einer Elektronikfirma hier in Wien.",
+     "label": "in einer Elektronikfirma hier in Wien."
+    },
+    {
+     "value": "zwei oder drei Mal pro Woche joggen.",
+     "label": "zwei oder drei Mal pro Woche joggen."
+    },
+    {
+     "value": "viel Sport machen.",
+     "label": "viel Sport machen."
+    }
+   ],
+   "x": 415,
+   "y": 1347,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "t3-f",
+   "group": "task3",
+   "kind": "select",
+   "label": "3 f",
+   "answer": "auch Meditation.",
+   "options": [
+    {
+     "value": "für mich nicht nur Sport.",
+     "label": "für mich nicht nur Sport."
+    },
+    {
+     "value": "nicht sehr schnell.",
+     "label": "nicht sehr schnell."
+    },
+    {
+     "value": "am Computer.",
+     "label": "am Computer."
+    },
+    {
+     "value": "auch Meditation.",
+     "label": "auch Meditation."
+    },
+    {
+     "value": "in einer Elektronikfirma hier in Wien.",
+     "label": "in einer Elektronikfirma hier in Wien."
+    },
+    {
+     "value": "zwei oder drei Mal pro Woche joggen.",
+     "label": "zwei oder drei Mal pro Woche joggen."
+    },
+    {
+     "value": "viel Sport machen.",
+     "label": "viel Sport machen."
+    }
+   ],
+   "x": 415,
+   "y": 1402,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "t3-g",
+   "group": "task3",
+   "kind": "select",
+   "label": "3 g",
+   "answer": "für mich nicht nur Sport.",
+   "options": [
+    {
+     "value": "für mich nicht nur Sport.",
+     "label": "für mich nicht nur Sport."
+    },
+    {
+     "value": "nicht sehr schnell.",
+     "label": "nicht sehr schnell."
+    },
+    {
+     "value": "am Computer.",
+     "label": "am Computer."
+    },
+    {
+     "value": "auch Meditation.",
+     "label": "auch Meditation."
+    },
+    {
+     "value": "in einer Elektronikfirma hier in Wien.",
+     "label": "in einer Elektronikfirma hier in Wien."
+    },
+    {
+     "value": "zwei oder drei Mal pro Woche joggen.",
+     "label": "zwei oder drei Mal pro Woche joggen."
+    },
+    {
+     "value": "viel Sport machen.",
+     "label": "viel Sport machen."
+    }
+   ],
+   "x": 415,
+   "y": 1445,
+   "w": 24,
+   "h": 24
+  }
+ ],
+ "audio": [],
+ "groups": [
+  {
+   "id": "task1",
+   "label": "Aufgabe 1: Was kann ich für Sie tun? – Sehen Sie den Film und ergänzen Sie (Clip 16)"
+  },
+  {
+   "id": "task3",
+   "label": "Aufgabe 3: Das tut mir gut. – Sehen Sie die Reportage und ordnen Sie zu (Clip 18)"
+  }
+ ],
+ "review": {
+  "status": "verified",
+  "notes": [
+   "Aufgabe 1 answers from official Hueber key (L18 Film-Stationen 1).",
+   "Aufgabe 2: opinion task (welchen Wunsch finden Sie gut?), no correct answers, no fields; circles are graphics.",
+   "Aufgabe 3: a is the printed example (line drawn to „zwei oder drei Mal pro Woche joggen.“), no control; b-g selects with key answers (Film-Stationen 3).",
+   "Clip markers are DVD/film references, no audio entries."
+  ],
+  "verifiedWords": 229,
+  "totalWords": 229
+ }
+}
