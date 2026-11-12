@@ -40,6 +40,9 @@ async function ensureStyles(config: LessonConfig) {
   for (const [href, el] of loadedStyles) el.disabled = !wanted.has(href);
   document.documentElement.toggleAttribute('data-bookcss', !!config.bookcss);
   document.documentElement.toggleAttribute('data-batchcss', !!config.batchcss);
+  document.documentElement.toggleAttribute('data-l1012css', !!config.l1012css);
+  document.documentElement.toggleAttribute('data-l79css', !!config.l79css);
+  document.documentElement.toggleAttribute('data-l46css', !!config.l46css);
 }
 
 const appliedAttrs = new Set<string>();
