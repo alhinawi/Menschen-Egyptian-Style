@@ -1518,13 +1518,278 @@
    "h": 14
   }
  ],
- "fields": [],
- "audio": [],
- "groups": [],
+ "fields": [
+  {
+   "id": "p18-nKirche",
+   "group": "g1",
+   "kind": "text",
+   "label": "Kirche",
+   "answer": "3",
+   "x": 154,
+   "y": 253,
+   "w": 26,
+   "h": 26
+  },
+  {
+   "id": "p18-nSpielplatz",
+   "group": "g1",
+   "kind": "text",
+   "label": "Spielplatz",
+   "answer": "2",
+   "x": 249,
+   "y": 253,
+   "w": 26,
+   "h": 26
+  },
+  {
+   "id": "p18-nWald",
+   "group": "g1",
+   "kind": "text",
+   "label": "Wald",
+   "answer": "6",
+   "x": 491,
+   "y": 253,
+   "w": 26,
+   "h": 26
+  },
+  {
+   "id": "p18-nMeer",
+   "group": "g1",
+   "kind": "text",
+   "label": "Meer",
+   "answer": "5",
+   "x": 573,
+   "y": 253,
+   "w": 26,
+   "h": 26
+  },
+  {
+   "id": "p18-nCafé",
+   "group": "g1",
+   "kind": "text",
+   "label": "Café",
+   "answer": "7",
+   "x": 664,
+   "y": 253,
+   "w": 26,
+   "h": 26
+  },
+  {
+   "id": "p18-nHafen",
+   "group": "g1",
+   "kind": "text",
+   "label": "Hafen",
+   "answer": "4",
+   "x": 739,
+   "y": 253,
+   "w": 26,
+   "h": 26
+  },
+  {
+   "id": "p18-dCafé",
+   "group": "g2",
+   "kind": "text",
+   "label": "Café",
+   "answer": "Café",
+   "x": 170,
+   "y": 374,
+   "w": 270,
+   "h": 22
+  },
+  {
+   "id": "p18-dHafen",
+   "group": "g2",
+   "kind": "text",
+   "label": "Hafen",
+   "answer": "Hafen",
+   "x": 170,
+   "y": 403,
+   "w": 270,
+   "h": 22
+  },
+  {
+   "id": "p18-dFlughafen",
+   "group": "g2",
+   "kind": "text",
+   "label": "Flughafen",
+   "answer": "Flughafen",
+   "x": 170,
+   "y": 436,
+   "w": 270,
+   "h": 22
+  },
+  {
+   "id": "p18-dKirche",
+   "group": "g2",
+   "kind": "text",
+   "label": "Kirche",
+   "answer": "Kirche",
+   "x": 170,
+   "y": 465,
+   "w": 270,
+   "h": 22
+  },
+  {
+   "id": "p18-dSpielplatz",
+   "group": "g2",
+   "kind": "text",
+   "label": "Spielplatz",
+   "answer": "Spielplatz",
+   "x": 170,
+   "y": 524,
+   "w": 270,
+   "h": 22
+  },
+  {
+   "id": "p18-2b",
+   "group": "g3",
+   "kind": "text",
+   "label": "2b",
+   "answer": "Rathaus",
+   "x": 187,
+   "y": 884,
+   "w": 206,
+   "h": 22
+  },
+  {
+   "id": "p18-2c",
+   "group": "g3",
+   "kind": "text",
+   "label": "2c",
+   "answer": "Jugendherberge",
+   "x": 448,
+   "y": 780,
+   "w": 203,
+   "h": 22
+  },
+  {
+   "id": "p18-2d",
+   "group": "g3",
+   "kind": "text",
+   "label": "2d",
+   "answer": "Kino",
+   "x": 448,
+   "y": 884,
+   "w": 203,
+   "h": 22
+  },
+  {
+   "id": "p18-2e",
+   "group": "g3",
+   "kind": "text",
+   "label": "2e",
+   "answer": "Bäume",
+   "x": 694,
+   "y": 780,
+   "w": 201,
+   "h": 22
+  },
+  {
+   "id": "p18-2f",
+   "group": "g3",
+   "kind": "text",
+   "label": "2f",
+   "answer": "Berge",
+   "x": 694,
+   "y": 884,
+   "w": 201,
+   "h": 22
+  },
+  {
+   "id": "p18-3b",
+   "group": "g4",
+   "kind": "text",
+   "label": "3b",
+   "answer": "in einer Bibliothek.",
+   "x": 654,
+   "y": 1047,
+   "w": 346,
+   "h": 22
+  },
+  {
+   "id": "p18-3c",
+   "group": "g4",
+   "kind": "text",
+   "label": "3c",
+   "answer": "in einem Schloss.",
+   "x": 654,
+   "y": 1123,
+   "w": 346,
+   "h": 22
+  },
+  {
+   "id": "p18-3d",
+   "group": "g4",
+   "kind": "text",
+   "label": "3d",
+   "answer": "in einem Park.",
+   "x": 654,
+   "y": 1179,
+   "w": 346,
+   "h": 22
+  },
+  {
+   "id": "p18-3f",
+   "group": "g4",
+   "kind": "text",
+   "label": "3f",
+   "answer": "auf einem Turm.",
+   "x": 654,
+   "y": 1281,
+   "w": 346,
+   "h": 22
+  },
+  {
+   "id": "p18-3g",
+   "group": "g4",
+   "kind": "text",
+   "label": "3g",
+   "answer": "in einem Fluss.",
+   "x": 654,
+   "y": 1332,
+   "w": 346,
+   "h": 22
+  }
+ ],
+ "audio": [
+  {
+   "id": "track10-1",
+   "src": "assets/ab-a12-cd2-track10.mp3",
+   "label": "CD2 · Track10",
+   "x": 50,
+   "y": 222,
+   "w": 54,
+   "h": 22
+  }
+ ],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 1a"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 1b"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 2"
+  },
+  {
+   "id": "g4",
+   "label": "Aufgabe 3"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the official Hueber Loesungsschluessel AB A1.2 (Lektion 15).",
+   "1a: numbers typed into the circles; Flughafen=1 is printed in the book.",
+   "1b: full German word for each row; printed hint letters sit under the field. Ex 3 e skipped (handwritten start overlaps the line); ex 3 a is the printed example.",
+   "Audio marker 2.10 mapped from the printed CD icon; audio content was not listened to.",
+   "Boxes placed from word coordinates; not marked verified."
+  ],
   "verifiedWords": 216,
-  "totalWords": 216,
-  "notes": []
+  "totalWords": 216
  }
 }
