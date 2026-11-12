@@ -46,7 +46,8 @@ const server=http.createServer((req,res)=>{
   assert.equal(await h.locator('output').first().textContent(),'Noch einmal');
   await p.reload();await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
   assert(await h.locator('[data-field-id=a-flughafen]').isChecked());
-  await h.locator('.hybridAudio').first().click({force:true});
+  // Isolate the original handler; large screen-space targets have their own phone suite.
+  await h.locator('.hybridAudio').first().evaluate(e=>e.click());
   await p.waitForFunction(()=>{const a=document.querySelector('.hybridScan[data-scan-page="57"] .hybridTools audio');return a&&!a.paused&&a.readyState>0});
   assert.equal(await h.locator('.hybridTools audio').getAttribute('src'),data.audio[0].src);
   await h.locator('.tapWord').first().evaluate(e=>e.click());
