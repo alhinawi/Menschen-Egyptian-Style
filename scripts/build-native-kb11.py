@@ -23,7 +23,12 @@ def build(p):
         m=dl==i
         if False:work[ndi.binary_dilation(m,iterations=6)]=paper0
     words=[];
+    _kf=f'{ROOT}/src/native-kb11/overrides/p{p}.json';_keep=json.load(open(_kf)).get('keep',[]) if os.path.exists(_kf) else []
+    def _kept(wd):
+        cx=wd['x']+wd['w']/2;cy=wd['y']+wd['h']/2
+        return any(k[0]<=cx<=k[2] and k[1]<=cy<=k[3] for k in _keep)
     for wd in d['words']:
+        if _kept(wd):continue
         x,y,w,h=[round(v*S) for v in(wd['x'],wd['y'],wd['w'],wd['h'])]
         t=wd['text']
         x0,y0,x1,y1=max(0,x-2),max(0,y-2),min(W,x+w+2),min(H,y+h+2)
@@ -131,6 +136,7 @@ def build(p):
     for seg in blocks:
         x0=min(w['x'] for w in seg);x1=max(w['x']+w['w'] for w in seg)
         outb.append({'x':x0,'w':x1-x0,'cy':seg[0]['cy'],'f':seg[0]['f'],'b':seg[0]['b'],'sa':sans_ctx(a,S,x0,seg[0]['cy'],x1,seg[0]['f'],paper0),'ws':[{'t':clean_t(w['t']),'c':w['c'],**({'ph':w['ph']} if 'ph' in w else {})} for w in seg]})
+    import sys;sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)));from kb11_punct import restore;restore(outb,p)
     words=[w for w in words if not w.get('r')]
     checks={}
     for g in sorted({f['group'] for f in d['fields'] if f.get('answer') is not None}):
@@ -177,11 +183,22 @@ def apply_overrides(r,p):
             if rng[0]<=b['cy']<=rng[1] and rng[2]<=b['x']<=rng[3]:b['sa']=1;b['b']=0 if len(rng)>4 and rng[4]==0 else b['b']
     for m in o.get('drop',[]):
         r['blocks']=[b for b in r['blocks'] if not hit(b,m)]
+    for m in o.get('split',[]):
+        for b in list(r['blocks']):
+            if hit(b,m):
+                k=m['at'];end=b['x']+b['w'];nb=json.loads(json.dumps(b))
+                b['ws']=b['ws'][:k];b['w']=m['w1'];nb['ws']=nb['ws'][k:];nb['x']=m['x2'];nb['w']=end-m['x2']
+                r['blocks'].append(nb);break
     for m in o.get('adj',[]):
         for b in r['blocks']:
             if hit(b,m):
                 b['x']+=m.get('dx',0);b['cy']+=m.get('dy',0);b['w']+=m.get('dw',0)
                 b.update(m.get('set',{}))
+                if 'text' in m:
+                    tk=m['text'].split()
+                    if len(tk)>len(b['ws']):tk=tk[:len(b['ws'])-1]+[' '.join(tk[len(b['ws'])-1:])]
+                    if len(tk)==len(b['ws']):
+                        for w,t in zip(b['ws'],tk):w['t']=t
 if __name__=='__main__':
     sel=[int(x) for x in sys.argv[1:]] or PAGES
     os.makedirs(f'{ROOT}/src/native-kb11',exist_ok=True)
