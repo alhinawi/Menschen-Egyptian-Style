@@ -16,6 +16,7 @@ export interface NaPage {
   audioAdd?:NaAudio[];
   linesRemove?:NaBox[];
   wordsAdd?:NaWordAdd[];
+  prefill?:Record<string,string>;
 }
 const files=import.meta.glob('./pages/*.json',{eager:true,import:'default'}) as Record<string,NaPage>;
 export const nativeAB12Pages:Record<string,NaPage>=Object.fromEntries(Object.values(files).map(d=>[String(d.page),d]));
