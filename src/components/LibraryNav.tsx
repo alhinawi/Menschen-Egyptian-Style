@@ -145,11 +145,11 @@ export function LibraryNav({slug}: {slug: string}) {
   return <>
     {headerSlot && createPortal(
       <button type="button" className="lnv-pill flex-auto min-w-0 flex items-center gap-[7px] h-[38px] px-3 py-0 leading-[normal] border border-[#ddd6c8] rounded-[10px] bg-[#f6efdd] text-[#344137] font-semibold text-[12.5px] font-[Arial,sans-serif] cursor-pointer whitespace-nowrap max-[480px]:px-2 max-[480px]:gap-[5px] max-[480px]:text-[11px]" aria-haspopup="dialog" onClick={() => setPanel('nav')}>
-        <span className="lnv-dot size-[7px] rounded-full bg-[var(--accent,#713c46)] flex-none max-[480px]:hidden"/><span className="lnv-pillText overflow-hidden text-ellipsis">{pillText}</span><span className="lnv-chev ml-auto text-[#a08c5f] text-[10px]">▾</span>
+        <span className="lnv-dot size-[7px] rounded-full bg-[var(--accent,#713c46)] flex-none max-[480px]:hidden"/><span className="lnv-pillText overflow-hidden text-ellipsis">{pillText}</span><span className="lnv-chev ml-auto text-[#75623a] dark:text-[#c9b489] text-[10px]">▾</span>
       </button>, headerSlot)}
     {pageSlot && createPortal(
       <button type="button" className="lnv-pagePill flex items-center gap-1.5 h-9 min-w-16 justify-center px-[11px] py-0 border border-[#d3d4cd] rounded-md bg-transparent text-[#344137] font-semibold text-[12px] font-[Arial,sans-serif] cursor-pointer" aria-haspopup="dialog" aria-label={`Seite wählen, aktuell ${pagePillText === 'Cover' ? 'Cover' : 'Seite ' + pagePillText}`} onClick={() => setPanel('pages')}>
-        {pagePillText}<span className="lnv-chev ml-[2px] text-[#a08c5f] text-[9px]!">▴</span>
+        {pagePillText}<span className="lnv-chev ml-[2px] text-[#75623a] dark:text-[#c9b489] text-[9px]!">▴</span>
       </button>, pageSlot)}
     {panel === 'nav' && createPortal(
       <div className={noAnim ? 'lnv-overlay lnv-noanim fixed inset-0 z-[90]' : 'lnv-overlay fixed inset-0 z-[90]'} role="dialog" aria-label="Library">
