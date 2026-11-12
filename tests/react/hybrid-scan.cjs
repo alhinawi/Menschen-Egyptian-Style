@@ -46,7 +46,8 @@ const server=http.createServer((req,res)=>{
   assert.equal(await h.locator('output').first().textContent(),'Noch einmal');
   await p.reload();await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
   assert(await h.locator('[data-field-id=a-flughafen]').isChecked());
-  await h.locator('.hybridAudio').first().click({force:true});
+  // Isolate the original handler; large screen-space targets have their own phone suite.
+  await h.locator('.hybridAudio').first().evaluate(e=>e.click());
   await p.waitForFunction(()=>{const a=document.querySelector('.hybridScan[data-scan-page="57"] .hybridTools audio');return a&&!a.paused&&a.readyState>0});
   assert.equal(await h.locator('.hybridTools audio').getAttribute('src'),data.audio[0].src);
   await h.locator('.tapWord').first().evaluate(e=>e.click());
@@ -62,6 +63,6 @@ const server=http.createServer((req,res)=>{
  console.log(file,await p.locator('.tapWord').count(),'normal-page translation hotspots passed');await p.close();
  }
  const p=await browser.newPage();await p.goto('http://127.0.0.1:5192/index.html#9');await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
- assert(await p.locator('.hybridScan[data-scan-page="9"] .tapWord').count()>=80);assert(await p.locator('.hybridScan[data-scan-page="10"] .tapWord').count()>=100);await p.close();
+ for(const [n,min] of [[9,80],[10,100],[11,100]]){assert(await p.locator(`[data-scan-page="${n}"] .tapWord, [data-native-page="${n}"] .tapWord`).count()>=min,`p${n}: tap words missing`)}await p.close();
  }finally{await browser.close();server.close()}
 })().catch(e=>{console.error(e);server.close();process.exitCode=1});
