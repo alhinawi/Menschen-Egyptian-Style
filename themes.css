@@ -41,7 +41,7 @@ html[data-reader-theme="sand"] .page:not(.bookCover) small{color:#465248}
 html[data-theme="dark"] .howtoPage{background:#fffefa!important;color:#2c302b!important}
 .coverCopy{margin-top:auto;padding-top:18px;font:15px Georgia,serif;letter-spacing:1px;color:#a8937a!important;text-align:center;line-height:1.6;max-width:560px}
 
-.howtoList .playIcon{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:#713c46;color:#fff;font-size:11px;line-height:1;vertical-align:middle;margin:0 2px}
+.howtoList .playIcon{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:#713c46!important;color:#fffefa!important;font-size:13px;line-height:1;vertical-align:middle;margin:0 4px;padding-left:2px;box-shadow:0 0 0 1.5px #5d2f38,0 1px 3px #00000030}
 
 /* WCAG AA contrast fixes: readable text in every theme. */
 /* Dark themes: the book's light cards (cream/yellow/white boxes) keep dark text instead of inheriting the night ink. */
