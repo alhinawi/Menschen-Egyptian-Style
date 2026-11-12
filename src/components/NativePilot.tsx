@@ -35,12 +35,12 @@ export function NativePilot({page}:{page:string}){
   {['Sie können aber toll Ski fahren.','Du kannst wirklich sehr gut Gitarre spielen.','Wow! Du kannst ja super tanzen.','Du kannst wirklich gut Tennis spielen.'].map((s,i)=><div key={s}>{i===0?text(794,326,35,'1'):field('kompliment'+i,794,326+i*68,35,'Bildnummer: '+s)}{text(838,326+i*68,210,s)}</div>)}
   {check('4a',160,581,{kompliment1:'5',kompliment2:'10',kompliment3:'8'})}
   {text(160,635,850,'b  Was machen die anderen Personen? Suchen Sie die Wörter im Bildlexikon und schreiben Sie.','npTitle')}
-  {field('4b',196,690,715,'Andere Personen: Tätigkeiten')}
-  {text(110,705,30,'AB','npAB')}{title('5',146,700,780,'Schreiben Sie die Sätze in die Tabelle.')}{text(192,730,650,'Verwenden Sie die passende Form von können.','npTitle')}
-  {['a  können - wirklich super - du - Gitarre - spielen','b  ihr - können - gut - tanzen?','c  Ski fahren - Sie - aber toll - können','d  können - Tennis - spielen - ja super - er','e  sie - Schach - können - spielen?'].map((s,i)=>text(194,767+i*28,570,s))}
-  {text(720,730,270,'können\nich          kann\ndu           kannst\ner/sie/es    kann\nwir          können\nihr          könnt\nsie/Sie      können','npGrammar')}
-  {text(210,915,490,'Du  |  kannst  |  wirklich super Gitarre  |  spielen.\n     |  Könnt  |  ihr gut  |  tanzen?','npHand')}
-  {text(700,915,330,'Du kannst wirklich sehr gut Gitarre spielen.\nKannst du das noch einmal sagen?','npGrammar')}
+  {field('4b',196,699,715,'Andere Personen: Tätigkeiten')}
+  {text(110,755,30,'AB','npAB')}{title('5',146,750,780,'Schreiben Sie die Sätze in die Tabelle.')}{text(192,780,650,'Verwenden Sie die passende Form von können.','npTitle')}
+  {['a  können - wirklich super - du - Gitarre - spielen','b  ihr - können - gut - tanzen?','c  Ski fahren - Sie - aber toll - können','d  können - Tennis - spielen - ja super - er','e  sie - Schach - können - spielen?'].map((s,i)=>text(194,817+i*28,570,s))}
+  {text(720,780,270,'können\nich          kann\ndu           kannst\ner/sie/es    kann\nwir          können\nihr          könnt\nsie/Sie      können','npGrammar')}
+  {text(210,965,490,'Du  |  kannst  |  wirklich super Gitarre  |  spielen.\n     |  Könnt  |  ihr gut  |  tanzen?','npHand')}
+  {text(700,965,330,'Du kannst wirklich sehr gut Gitarre spielen.\nKannst du das noch einmal sagen?','npGrammar')}
   {text(110,1045,30,'AB','npAB')}{title('6',146,1040,780,'Ich kann ein bisschen Schach spielen.')}{text(160,1080,850,'a  Ordnen Sie die Wörter.','npTitle')}{text(195,1115,830,'ein bisschen | gar nicht | toll / sehr gut / super | nicht | gut | nicht so gut','npBank')}
   {text(205,1165,210,'☺ toll / sehr gut / super','npHand')}
   {['gut','ein bisschen','nicht so gut','nicht','gar nicht'].map((a,i)=>field('skala'+i,420+i*107,1164,i===2?105:98,'Skala '+(i+1)))}
