@@ -2,8 +2,8 @@
   "book": "kb-a11",
   "page": 58,
   "image": "assets/kb-a11-p58.png",
-  "width": 1075,
-  "height": 1521,
+  "width": 1072,
+  "height": 1518,
   "words": [
     {
       "text": "Bahnhof",
@@ -1705,7 +1705,9 @@
       "x": 451,
       "y": 374,
       "w": 19,
-      "h": 18
+      "h": 18,
+      "name": "f3b-1",
+      "value": "f3b-1a"
     },
     {
       "id": "f3b-1b",
@@ -1716,7 +1718,9 @@
       "x": 624,
       "y": 373,
       "w": 17,
-      "h": 18
+      "h": 18,
+      "name": "f3b-1",
+      "value": "f3b-1b"
     },
     {
       "id": "f3b-2a",
@@ -1727,7 +1731,9 @@
       "x": 346,
       "y": 400,
       "w": 18,
-      "h": 18
+      "h": 18,
+      "name": "f3b-2",
+      "value": "f3b-2a"
     },
     {
       "id": "f3b-2b",
@@ -1738,7 +1744,9 @@
       "x": 474,
       "y": 399,
       "w": 17,
-      "h": 18
+      "h": 18,
+      "name": "f3b-2",
+      "value": "f3b-2b"
     },
     {
       "id": "f3b-3a",
@@ -1749,7 +1757,9 @@
       "x": 371,
       "y": 425,
       "w": 19,
-      "h": 18
+      "h": 18,
+      "name": "f3b-3",
+      "value": "f3b-3a"
     },
     {
       "id": "f3b-3b",
@@ -1760,7 +1770,9 @@
       "x": 531,
       "y": 424,
       "w": 18,
-      "h": 18
+      "h": 18,
+      "name": "f3b-3",
+      "value": "f3b-3b"
     },
     {
       "id": "f3b-4a",
@@ -1771,7 +1783,9 @@
       "x": 385,
       "y": 450,
       "w": 19,
-      "h": 18
+      "h": 18,
+      "name": "f3b-4",
+      "value": "f3b-4a"
     },
     {
       "id": "f3b-4b",
@@ -1782,7 +1796,9 @@
       "x": 531,
       "y": 450,
       "w": 18,
-      "h": 17
+      "h": 17,
+      "name": "f3b-4",
+      "value": "f3b-4b"
     },
     {
       "id": "f4a-1",
@@ -2109,7 +2125,9 @@
       "Excluded per policy: red task numerals, item numerals/letters (1-4, a-e, circled 1 example), AB margin tabs, ellipsis, arrows, footer. Platform number \"2\" in \"Am Bahnsteig 2\" kept as sentence content. Previous-owner blue handwriting \"A, C\" on Foto row 1 excluded. Printed blue-script examples kept as words with no fields: 4b-4 \"Achtung!\", 5a \"steige\" and \"(einsteigen)\".",
       "3b answers verified via audio 2.11 transcript and Hueber key (1 seiner Tochter, 2 zu Hause, 3 in die U-Bahn, 4 in München). 4a order 4;3;2 via key and audio 2.12 (item 4 is the printed example). 4b Bahnsteig/Vorsicht/Halt and 4c ein/fern/an via key, confirmed by audio 2.13 (U-Bahn announcements) and 2.14. Task 5 answers via key, confirmed by audio 2.15 dialogue.",
       "PARTIAL reason - 3a Foto row 1: the Hueber key lists only 2=C, 3=B, 4=A and the book prints no example letter for sentence 1. Answer A filled by inference: in audio 2.11 the call to the daughter (\"Tschüss, mein Kind\") happens at the station = photo A. All other 33 field answers are key/audio-verified.",
-      "All 5 audio files (2.11-2.15) verified playable with transcripts matching the printed exercises."
+      "All 5 audio files (2.11-2.15) verified playable with transcripts matching the printed exercises.",
+      "Activation gate corrected declared image size to actual tracked PNG 1072×1518. Raw pixel word/field coordinates inspected on the actual scan and retained.",
+      "Activation interaction gate added explicit radio names and option values. Each printed question now permits exactly one answer and selection/grading works; previous missing values made the radios unselectable."
     ]
   }
 }
