@@ -1,7 +1,7 @@
 {
  "book": "ab-a12",
  "page": 66,
- "image": "/assets/ab12-scan/p066.png",
+ "image": "assets/ab12-scan/p066.png",
  "width": 807,
  "height": 1094,
  "words": [
@@ -146,10 +146,17 @@
    "h": 12
   },
   {
-   "text": "stehen bleiben",
+   "text": "stehen",
    "x": 409,
    "y": 166,
-   "w": 92,
+   "w": 39,
+   "h": 12
+  },
+  {
+   "text": "bleiben",
+   "x": 455,
+   "y": 166,
+   "w": 46,
    "h": 12
   },
   {
@@ -1243,8 +1250,8 @@
  "groups": [],
  "review": {
   "status": "partial",
-  "verifiedWords": 176,
-  "totalWords": 176,
+  "verifiedWords": 177,
+  "totalWords": 177,
   "notes": []
  }
 }
