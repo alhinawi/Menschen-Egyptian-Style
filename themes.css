@@ -70,3 +70,11 @@ html[data-theme="dark"] .page .abBanner,html[data-theme="dark"] .page .anzeige.b
 html[data-theme="dark"] .lnv-pill .lnv-chev,html[data-theme="dark"] .lnv-pagePill .lnv-chev{color:#c9b489}
 .coverEyebrow,.coverSmall,.coverOwner p,.howtoEyebrow{color:#866d38!important}
 .coverCopy{color:#7d6c52!important}
+
+/* Dark themes: answer fields and diagrams stay visible (no dark-on-dark). */
+html[data-theme="dark"] .page :is(input,textarea){background-color:#f7f1e2!important;color:#2b2922!important;-webkit-text-fill-color:#2b2922!important;border:1px solid #a99a77!important}
+html[data-theme="dark"] .page :is(input,textarea)::placeholder{color:#7a715c!important;-webkit-text-fill-color:#7a715c!important}
+html[data-theme="dark"] .page select{background-color:#f7f1e2!important;color:#2b2922!important;-webkit-text-fill-color:#2b2922!important;border:1px solid #a99a77!important;background-image:linear-gradient(45deg,transparent 50%,#5c5233 50%),linear-gradient(135deg,#5c5233 50%,transparent 50%)!important}
+html[data-theme="dark"] .page .ownTree>img{background:#fffefa;border-radius:4px}
+html[data-theme="dark"] .page :is(input,textarea):is(.isCorrect,.correct){background-color:#dff0e2!important;border-color:#4e8964!important}
+html[data-theme="dark"] .page :is(input,textarea):is(.isWrong,.wrong){background-color:#fbe4de!important;border-color:#b56d67!important}
