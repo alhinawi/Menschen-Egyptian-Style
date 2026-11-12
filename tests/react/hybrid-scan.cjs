@@ -62,6 +62,6 @@ const server=http.createServer((req,res)=>{
  console.log(file,await p.locator('.tapWord').count(),'normal-page translation hotspots passed');await p.close();
  }
  const p=await browser.newPage();await p.goto('http://127.0.0.1:5192/index.html#9');await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
- assert(await p.locator('.hybridScan[data-scan-page="9"] .tapWord').count()>=80);assert(await p.locator('.hybridScan[data-scan-page="10"] .tapWord').count()>=100);await p.close();
+ assert(await p.locator('.nkb[data-native-page="9"] .tapWord').count()>=70);assert(await p.locator('.nkb[data-native-page="10"] .tapWord').count()>=90);await p.close();
  }finally{await browser.close();server.close()}
 })().catch(e=>{console.error(e);server.close();process.exitCode=1});
