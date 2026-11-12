@@ -44,7 +44,7 @@ export function mountLesson(initializers: LessonInitializer[]): LessonDispose {
     if (disposed) return;
     disposed = true;
     disposers.reverse().forEach(fn => fn());
-    document.querySelectorAll('audio').forEach(a => {
+    document.querySelectorAll<HTMLAudioElement>('audio').forEach(a => {
       a.pause();
       a.removeAttribute('src');
       a.load();
