@@ -1455,13 +1455,177 @@
    "h": 12
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p27-s1a",
+   "group": "g1",
+   "kind": "text",
+   "label": "s1a",
+   "answer": "neben",
+   "x": 203,
+   "y": 384,
+   "w": 189,
+   "h": 22
+  },
+  {
+   "id": "p27-s1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "s1b",
+   "answer": "dem",
+   "x": 398,
+   "y": 384,
+   "w": 70,
+   "h": 22
+  },
+  {
+   "id": "p27-s2a",
+   "group": "g1",
+   "kind": "text",
+   "label": "s2a",
+   "answer": "zwischen",
+   "x": 203,
+   "y": 408,
+   "w": 189,
+   "h": 22
+  },
+  {
+   "id": "p27-s2b",
+   "group": "g1",
+   "kind": "text",
+   "label": "s2b",
+   "answer": "den",
+   "x": 398,
+   "y": 408,
+   "w": 76,
+   "h": 22
+  },
+  {
+   "id": "p27-v1",
+   "group": "g1",
+   "kind": "text",
+   "label": "v1",
+   "answer": "Ottos|seine",
+   "x": 400,
+   "y": 481,
+   "w": 170,
+   "h": 22
+  },
+  {
+   "id": "p27-v2",
+   "group": "g1",
+   "kind": "text",
+   "label": "v2",
+   "answer": "Vanillas|Ihr",
+   "x": 384,
+   "y": 506,
+   "w": 114,
+   "h": 22
+  },
+  {
+   "id": "p27-v3",
+   "group": "g1",
+   "kind": "text",
+   "label": "v3",
+   "answer": "Vanillas|Ihren",
+   "x": 140,
+   "y": 528,
+   "w": 105,
+   "h": 22
+  },
+  {
+   "id": "p27-p1a",
+   "group": "g1",
+   "kind": "text",
+   "label": "p1a",
+   "answer": "gefällt",
+   "x": 433,
+   "y": 625,
+   "w": 207,
+   "h": 22
+  },
+  {
+   "id": "p27-p1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "p1b",
+   "answer": "mir",
+   "x": 645,
+   "y": 625,
+   "w": 128,
+   "h": 22
+  },
+  {
+   "id": "p27-p2a",
+   "group": "g1",
+   "kind": "text",
+   "label": "p2a",
+   "answer": "gehört",
+   "x": 433,
+   "y": 649,
+   "w": 207,
+   "h": 22
+  },
+  {
+   "id": "p27-p2b",
+   "group": "g1",
+   "kind": "text",
+   "label": "p2b",
+   "answer": "dir",
+   "x": 645,
+   "y": 649,
+   "w": 128,
+   "h": 22
+  },
+  {
+   "id": "p27-p3a",
+   "group": "g1",
+   "kind": "text",
+   "label": "p3a",
+   "answer": "danken",
+   "x": 433,
+   "y": 673,
+   "w": 207,
+   "h": 22
+  },
+  {
+   "id": "p27-p3b",
+   "group": "g1",
+   "kind": "text",
+   "label": "p3b",
+   "answer": "dir",
+   "x": 645,
+   "y": 673,
+   "w": 128,
+   "h": 22
+  },
+  {
+   "id": "p27-p4",
+   "group": "g1",
+   "kind": "text",
+   "label": "p4",
+   "answer": "helfen ihnen",
+   "x": 505,
+   "y": 696,
+   "w": 265,
+   "h": 22
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Das kann ich"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the official Hueber Loesungsschluessel AB A1.2 (Selbsteinschätzung Modul 5).",
+   "Self-rating circles, free-writing lines and the Rückblick tasks are not fields. Possessive gaps accept both key variants.",
+   "Boxes placed from word coordinates; not marked verified."
+  ],
   "verifiedWords": 207,
-  "totalWords": 207,
-  "notes": []
+  "totalWords": 207
  }
 }

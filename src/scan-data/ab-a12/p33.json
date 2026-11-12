@@ -1280,13 +1280,175 @@
    "h": 17
   }
  ],
- "fields": [],
- "audio": [],
- "groups": [],
+ "fields": [
+  {
+   "id": "p33-a2_1",
+   "group": "g1",
+   "kind": "text",
+   "label": "Lücke 1",
+   "answer": "o",
+   "x": 166,
+   "y": 1280,
+   "w": 39,
+   "h": 22
+  },
+  {
+   "id": "p33-a2_2",
+   "group": "g1",
+   "kind": "text",
+   "label": "Lücke 2",
+   "answer": "o",
+   "x": 283,
+   "y": 1280,
+   "w": 38,
+   "h": 22
+  },
+  {
+   "id": "p33-a2_3",
+   "group": "g1",
+   "kind": "text",
+   "label": "Lücke 3",
+   "answer": "u",
+   "x": 377,
+   "y": 1280,
+   "w": 43,
+   "h": 22
+  },
+  {
+   "id": "p33-a2_4",
+   "group": "g1",
+   "kind": "text",
+   "label": "Lücke 4",
+   "answer": "u",
+   "x": 441,
+   "y": 1280,
+   "w": 38,
+   "h": 22
+  },
+  {
+   "id": "p33-a2_5",
+   "group": "g1",
+   "kind": "text",
+   "label": "Lücke 5",
+   "answer": "u",
+   "x": 166,
+   "y": 1305,
+   "w": 34,
+   "h": 22
+  },
+  {
+   "id": "p33-a2_6",
+   "group": "g1",
+   "kind": "text",
+   "label": "Lücke 6",
+   "answer": "u",
+   "x": 267,
+   "y": 1305,
+   "w": 34,
+   "h": 22
+  },
+  {
+   "id": "p33-a2_7",
+   "group": "g1",
+   "kind": "text",
+   "label": "Lücke 7",
+   "answer": "o",
+   "x": 405,
+   "y": 1305,
+   "w": 24,
+   "h": 22
+  },
+  {
+   "id": "p33-a2_8",
+   "group": "g1",
+   "kind": "text",
+   "label": "Lücke 8",
+   "answer": "u",
+   "x": 505,
+   "y": 1305,
+   "w": 34,
+   "h": 22
+  },
+  {
+   "id": "p33-a2_9",
+   "group": "g1",
+   "kind": "text",
+   "label": "Lücke 9",
+   "answer": "o",
+   "x": 166,
+   "y": 1330,
+   "w": 36,
+   "h": 22
+  },
+  {
+   "id": "p33-a2_10",
+   "group": "g1",
+   "kind": "text",
+   "label": "Lücke 10",
+   "answer": "u",
+   "x": 254,
+   "y": 1330,
+   "w": 36,
+   "h": 22
+  },
+  {
+   "id": "p33-a2_11",
+   "group": "g1",
+   "kind": "text",
+   "label": "Lücke 11",
+   "answer": "o",
+   "x": 367,
+   "y": 1330,
+   "w": 37,
+   "h": 22
+  },
+  {
+   "id": "p33-a2_12",
+   "group": "g1",
+   "kind": "text",
+   "label": "Lücke 12",
+   "answer": "u",
+   "x": 482,
+   "y": 1330,
+   "w": 36,
+   "h": 22
+  }
+ ],
+ "audio": [
+  {
+   "id": "track16-1",
+   "src": "assets/ab-a12-cd2-track16.mp3",
+   "label": "CD2 · Track16",
+   "x": 42,
+   "y": 1067,
+   "w": 54,
+   "h": 22
+  },
+  {
+   "id": "track17-2",
+   "src": "assets/ab-a12-cd2-track17.mp3",
+   "label": "CD2 · Track17",
+   "x": 573,
+   "y": 1067,
+   "w": 54,
+   "h": 22
+  }
+ ],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aussprache 2"
+  }
+ ],
  "review": {
   "status": "partial",
+  "notes": [
+   "Answers from the official Hueber Loesungsschluessel AB A1.2 (Lektion 16, Training: Aussprache 2).",
+   "Aussprache 1 (count o/u) is not a field: the key's counts do not add up to the 'four words' per item on the page, so they are not entered. Training: Sprechen and 2.3 are free speaking.",
+   "Audio markers 2.16 and 2.17 mapped from the printed CD icons; audio content was not listened to.",
+   "Boxes placed from a zoomed crop; not marked verified."
+  ],
   "verifiedWords": 182,
-  "totalWords": 182,
-  "notes": []
+  "totalWords": 182
  }
 }
