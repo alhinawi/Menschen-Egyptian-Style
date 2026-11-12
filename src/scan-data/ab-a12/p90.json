@@ -1392,15 +1392,196 @@
    "h": 14
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p90-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "Wald",
+   "x": 538,
+   "y": 234,
+   "w": 112,
+   "h": 16
+  },
+  {
+   "id": "p90-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "zufrieden",
+   "x": 387,
+   "y": 252,
+   "w": 108,
+   "h": 16
+  },
+  {
+   "id": "p90-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d",
+   "answer": "grillen",
+   "x": 545,
+   "y": 266,
+   "w": 110,
+   "h": 16
+  },
+  {
+   "id": "p90-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e",
+   "answer": "Wetter",
+   "x": 262,
+   "y": 284,
+   "w": 118,
+   "h": 16
+  },
+  {
+   "id": "p90-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 f",
+   "answer": "Getränke",
+   "x": 403,
+   "y": 284,
+   "w": 137,
+   "h": 16
+  },
+  {
+   "id": "p90-1g",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 g",
+   "answer": "vergessen",
+   "x": 328,
+   "y": 316,
+   "w": 112,
+   "h": 16
+  },
+  {
+   "id": "p90-1h",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 h",
+   "answer": "Fluss",
+   "x": 247,
+   "y": 334,
+   "w": 115,
+   "h": 16
+  },
+  {
+   "id": "p90-1i",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 i",
+   "answer": "gebt",
+   "x": 245,
+   "y": 364,
+   "w": 113,
+   "h": 16
+  },
+  {
+   "id": "p90-1j",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 j",
+   "answer": "Bescheid",
+   "x": 524,
+   "y": 363,
+   "w": 112,
+   "h": 16
+  },
+  {
+   "id": "p90-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "der siebte Zwölfte|der siebte Dezember",
+   "x": 185,
+   "y": 558,
+   "w": 533,
+   "h": 22
+  },
+  {
+   "id": "p90-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c",
+   "answer": "der fünfzehnte Erste|der fünfzehnte Januar",
+   "x": 185,
+   "y": 579,
+   "w": 533,
+   "h": 22
+  },
+  {
+   "id": "p90-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d",
+   "answer": "der achtundzwanzigste Fünfte|der achtundzwanzigste Mai",
+   "x": 185,
+   "y": 599,
+   "w": 533,
+   "h": 22
+  },
+  {
+   "id": "p90-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "Am sechsundzwanzigsten Oktober",
+   "x": 124,
+   "y": 932,
+   "w": 591,
+   "h": 20
+  },
+  {
+   "id": "p90-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "Am dritten Oktober",
+   "x": 124,
+   "y": 965,
+   "w": 591,
+   "h": 20
+  },
+  {
+   "id": "p90-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "Vom vierundzwanzigsten bis zum sechsundzwanzigsten Dezember",
+   "x": 124,
+   "y": 1004,
+   "w": 591,
+   "h": 20
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aufgabe 1"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 2"
+  },
+  {
+   "id": "g3",
+   "label": "Aufgabe 3"
+  }
+ ],
  "review": {
   "status": "partial",
-  "verifiedWords": 198,
-  "totalWords": 198,
   "notes": [
-   "Activation reviewed on a five-page visual sample (71,76,88,98,105): word boxes align with printed text, but these are partial OCR-derived layers. verifiedWords was supplied as the retained-word count by the worker, not an independent word-by-word audit. Some handwriting, symbols, fragments and printed words may be omitted or imperfect. No exercise fields or audio added."
-  ]
+   "Answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 24).",
+   "Ex 3 answers written without the final period printed after the line.",
+   "Handwritten examples not fields."
+  ],
+  "verifiedWords": 198,
+  "totalWords": 198
  }
 }
