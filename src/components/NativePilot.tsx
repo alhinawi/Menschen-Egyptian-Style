@@ -1,3 +1,4 @@
+import {CheckButton} from './CheckButton';
 import {usePageReset} from '../exercises/usePageReset';
 import {useRef,useState} from 'react';
 import './native-pilot.css';
@@ -12,7 +13,7 @@ export function NativePilot({page}:{page:string}){
  const field=(id:string,x:number,y:number,w:number,label:string)=><input className={'npInput'+(id in res?(res[id]?' npCorrect':' npWrong'):'')} style={{left:x,top:y,width:w}} aria-label={label} data-native-field={id} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
  const choice=(id:string,value:string,x:number,y:number,label:string)=><input type="radio" className={'npRadio'+(id in res?(res[id]?(v[id]===value?' npCorrect':''):' npWrong'):'')} style={{left:x,top:y}} name={key+'-'+id} aria-label={label} checked={v[id]===value} onChange={()=>set(id,value)}/>;
  const normalize=(s:string)=>s.normalize('NFC').trim().toLocaleLowerCase('de').replace(/[.!?]+$/,'').replace(/\s+/g,' ');
- const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="npCheck" style={{left:x,top:y}}><button onClick={()=>{const each=Object.fromEntries(Object.entries(answers).map(([k,a])=>[k,a.split('|').some(s=>normalize(s)===normalize(v[k]||''))]));R({...res,...each});G({...graded,[id]:Object.values(each).every(Boolean)})}}>Prüfen ✓</button><output>{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="npCheck" style={{left:x,top:y}}><CheckButton onClick={()=>{const each=Object.fromEntries(Object.entries(answers).map(([k,a])=>[k,a.split('|').some(s=>normalize(s)===normalize(v[k]||''))]));R({...res,...each});G({...graded,[id]:Object.values(each).every(Boolean)})}}></CheckButton><output>{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,s:string)=><div className="npText npTitle" style={{left:x,top:y,width:w}}><b className="npNum">{n}</b><Words text={s}/></div>;
  const audio=(track:string,x:number,y:number)=><audio ref={player} controls aria-label={'Originalaudio '+track} src={'assets/kb-cd2-track'+track+'.mp3'} style={{position:'absolute',left:x,top:y,width:360,height:36}}/>;
  return <div className="nativePilot" data-native-page={page}><div className="npCanvas">

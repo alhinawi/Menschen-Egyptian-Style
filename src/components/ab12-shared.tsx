@@ -1,3 +1,4 @@
+import {CheckButton} from './CheckButton';
 import {usePageReset} from '../exercises/usePageReset';
 import {PageImage} from './PageImage';
 import {useLayoutEffect,useRef,useState} from 'react';
@@ -58,7 +59,7 @@ export function AB12Canvas({page,width:W,height:H,children}:{page:string;width:n
  const area=(id:string,x:number,y:number,w:number,h:number,label:string)=><textarea className="naField naArea" aria-label={label} data-native-field={id} style={{left:x,top:y,width:w,height:h}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
  const rule=(x:number,y:number,w:number)=><div className="naRule" style={{left:x,top:y,width:w}}/>;
  const dot=(id:string,value:string,x:number,y:number,label:string,checkbox=false)=><input className="naDot" type={checkbox?'checkbox':'radio'} aria-label={label} name={key+'-'+id} checked={checkbox?values[id]==='true':values[id]===value} onChange={e=>set(id,checkbox?String(e.target.checked):value)} style={{left:x,top:y}}/>;
- const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><button onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}>Prüfen ✓</button><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,t:string,cls='')=><div className={'naTitle2 '+cls} style={{left:x,top:y,width:w}}><b>{n}</b><span><Words text={t}/></span></div>;
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const side=(x:number,y:number,t:string)=><div className="naSide" style={{left:x,top:y}}>{t}</div>;

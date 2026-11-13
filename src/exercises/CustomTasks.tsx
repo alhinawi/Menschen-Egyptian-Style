@@ -1,3 +1,4 @@
+import {CheckButton} from '../components/CheckButton';
 import {createElement, useContext, useSyncExternalStore, useState, useEffect} from 'react';
 import type {ReactNode} from 'react';
 import {QuizContext} from './QuizState';
@@ -31,6 +32,7 @@ export function TaskControl({tag, attrs, children}: {tag: string; attrs: Attrs; 
     if (attrs['data-pick'] !== undefined || (attrs.className as string | undefined)?.split(' ').some(c => ['verbWord', 'markWord'].includes(c))) store.toggleTask(e.currentTarget);
     else store.checkTask(e.currentTarget);
   };
+  if(tag==='button'&&children.some(c=>typeof c==='string'&&c.includes('Prüfen')))return createElement(CheckButton,props);
   return createElement(tag, props, ...children);
 }
 
