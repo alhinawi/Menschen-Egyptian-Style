@@ -22,6 +22,7 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  const head=(s:string,ruleX:number,ruleY:number,x=143,y=138)=><>{txt(x,y,740,s,'mHeader')}<div className="mHRule" style={{left:ruleX,top:ruleY,width:900-ruleX}}/></>;
  const data=scanData['ab-a11:'+page];
  const answers=(group:string)=>Object.fromEntries(data.fields.filter(fl=>fl.group===group&&fl.kind!=='radio'&&fl.kind!=='checkbox'&&fl.answer!==undefined).map(fl=>[fl.id,fl.answer!]));
+ const save=(id:string,x:number,y:number)=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:true})}/><output aria-live="polite">{id in graded?'Gespeichert':''}</output></div>;
  const check=(id:string,x:number,y:number,expected=answers(id))=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:Object.entries(expected).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const rule=(id:string,x:number,y:number,test:()=>boolean)=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:test()})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const markS=(x:number,y:number)=><div className="mText mMark" style={{left:x,top:Y(y),width:16}}><span className="mSq">■</span></div>;
@@ -260,6 +261,8 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  <div className="mText mTipp" style={{left:195,top:860,width:400}}><Words s={'Sie lesen den Satz:\n„Wir '}/><span className="mHi"><Words s="steigen"/></span><Words s=" dann in Flensburg in den Bus "/><span className="mHi"><Words s="um"/></span><Words s={'.“\nSie verstehen „steigen“ nicht und suchen im Wörterbuch.\nAchten Sie auch auf das Satzende.\nSuchen Sie „umsteigen“ im Wörterbuch.'}/></div>
  {title('2',1001,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','',132)}
  {open('u2-notes',170,1018,600,156,'2 Eigene Wörter')}
+ {save('u1',640,903)}
+ {save('u2',650,1001)}
  {art('tab',844,84,57,67)}
  {art('photos',794,168,107,1010)}
  </>}
