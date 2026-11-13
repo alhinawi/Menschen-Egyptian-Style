@@ -1,0 +1,8 @@
+.nkCanvas .nkwPageTitle{position:absolute;font:38px Georgia,'Times New Roman',serif;letter-spacing:1.5px;color:#252723;white-space:nowrap}
+.nkCanvas .nkwBanner{position:absolute;background:#9f2e0c}
+.nkCanvas .nkwIntro{position:absolute;font-size:16px;line-height:1.27;white-space:nowrap;color:#252723}
+.nkCanvas .nkwEntry{position:absolute;font-size:16px;line-height:1.27;white-space:nowrap;color:#252723}
+.nkCanvas .nkwEntry .nkwIt{font-style:italic}
+.nkCanvas .nkwNum{position:absolute;top:3px;font-style:normal;font-size:12px}
+.nkCanvas .nkwCredit{position:absolute;font-size:16px;line-height:1.27;white-space:nowrap;color:#252723}
+.nkCanvas .nkwFooter{position:absolute;white-space:nowrap}
