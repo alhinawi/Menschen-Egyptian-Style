@@ -1,18 +1,18 @@
 import {AB12Canvas,AB12Helpers} from '../ab12-shared';
 
 function P72(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,title,kb,side,audio,strike,head,foot,tab,modTab,box,rect,values,set}=h;const D='naDroid72';return <>
-  {ln(94,56,590,24,'WIEDERHOLUNGSSTATION: WORTSCHATZ',{cls:'naHdr72'})}
+  {ln(94,56,590,25,'WIEDERHOLUNGSSTATION: WORTSCHATZ',{cls:'naHdr72'})}
   {box('1',94,124,'#c80e04')}  {rn(125,126,444,15,[{t:'Ergänzen Sie die Vokale (a, e, i, o, ö, u, ü) und ordnen Sie zu.',b:1}],{fam:'fira'})}
   {rect(124,154,349,19,'#fbf9d4')}
-  {ln(127,156,38,13,'glcklch',{c:'#4d5f8c',cls:'naBank72 naSk72'})}
-  {ln(181,156,36,13,'schlnk',{c:'#4d5f8c',cls:'naBank72'})}
-  {ln(231,156,23,13,'blnd',{c:'#4d5f8c',cls:'naBank72'})}
-  {ln(267,156,21,13,'trrg',{c:'#4d5f8c',cls:'naBank72'})}
-  {ln(301,156,35,13,'kmsch',{c:'#4d5f8c',cls:'naBank72'})}
-  {ln(350,156,18,13,'dck',{c:'#4d5f8c',cls:'naBank72'})}
-  {ln(381,156,41,13,'frndlch',{c:'#4d5f8c',cls:'naBank72'})}
-  {ln(436,156,32,13,'hbsch',{c:'#4d5f8c',cls:'naBank72'})}
-  {[174,223,260,294,343,374,428].map(x=>ln(x,156,3,13,'|',{cls:'naPipe72'}))}
+  {ln(127,156,38,13,'glcklch',{c:'#475570',cls:'naBank72 naSk72'})}
+  {ln(181,156,36,13,'schlnk',{c:'#475570',cls:'naBank72'})}
+  {ln(231,156,23,13,'blnd',{c:'#475570',cls:'naBank72'})}
+  {ln(267,156,21,13,'trrg',{c:'#475570',cls:'naBank72'})}
+  {ln(301,156,35,13,'kmsch',{c:'#475570',cls:'naBank72'})}
+  {ln(350,156,18,13,'dck',{c:'#475570',cls:'naBank72'})}
+  {ln(381,156,41,13,'frndlch',{c:'#475570',cls:'naBank72'})}
+  {ln(436,156,32,13,'hbsch',{c:'#475570',cls:'naBank72'})}
+  {[174,223,260,294,343,374,428].map(x=>ln(x,156,4,13,'|',{cls:'naPipe72'}))}
   {art('ue-hand',133,155,15,13)}
   {field('p72-1-w1i',138,150,9,'1 glücklich i','naFieldBlank')}
   {field('p72-1-w2a',203,150,10,'1 schlank a','naFieldBlank')}
@@ -25,7 +25,7 @@ function P72(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {field('p72-1-w7eu',388,150,14,'1 freundlich eu','naFieldBlank')}
   {field('p72-1-w7i',406,150,8,'1 freundlich i','naFieldBlank')}
   {field('p72-1-w8ue',443,150,10,'1 hübsch ü','naFieldBlank')}
-  {rect(124,181,578,23,'#e0dab6')}
+  {rect(124,181,578,23,'#eae5c4')}
   {ln(130,185,58,13,'Aussehen',{cls:'naTbl72'})}
   {ln(420,185,63,13,'Charakter',{cls:'naTbl72'})}
   {[204,227,249,271,293].map(y=><div key={'tr'+y} className='naRule' style={{left:124,top:y,width:578,borderBottom:'1px solid #dcd8c8'}}/>)}
@@ -51,19 +51,19 @@ function P72(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {art('p4',525,536,82,113)}
   {art('p5',629,532,113,114)}
   {rect(125,671,437,16,'#fbfbdb')}
-  {ln(128,672,38,14,'dürfen',{c:'#4d5f8c',cls:'naStrip72'})}
+  {ln(128,672,38,13.5,'dürfen',{c:'#3f526f',cls:'naStrip72'})}
   {ln(172,672,3,14,'|',{fam:'fira',c:'#576f99'})}
-  {ln(179,672,42,14,'schiebt',{c:'#4d5f8c',cls:'naStrip72'})}
+  {ln(179,672,42,13.5,'schiebt',{c:'#3f526f',cls:'naStrip72'})}
   {ln(229,672,3,14,'|',{fam:'fira',c:'#576f99'})}
-  {ln(235,672,79,14,'Fahrradfahrer',{c:'#4d5f8c',cls:'naStrip72'})}
+  {ln(235,672,79,13.5,'Fahrradfahrer',{c:'#3f526f',cls:'naStrip72'})}
   {ln(320,672,3,14,'|',{fam:'fira',c:'#576f99'})}
-  {ln(328,672,86,14,'stehen bleiben',{c:'#4d5f8c',cls:'naStrip72'})}
+  {ln(328,672,86,13.5,'stehen bleiben',{c:'#3f526f',cls:'naStrip72'})}
   {ln(421,672,3,14,'|',{fam:'fira',c:'#576f99'})}
-  {ln(427,672,39,14,'Regeln',{c:'#4d5f8c',cls:'naStrip72 naStrikeBlue72'})}
+  {ln(427,672,39,13.5,'Regeln',{c:'#3f526f',cls:'naStrip72 naStrikeBlue72'})}
   {ln(472,672,3,14,'|',{fam:'fira',c:'#576f99'})}
-  {ln(479,672,28,14,'trägt',{c:'#4d5f8c',cls:'naStrip72'})}
+  {ln(479,672,28,13.5,'trägt',{c:'#3f526f',cls:'naStrip72'})}
   {ln(512,672,3,14,'|',{fam:'fira',c:'#576f99'})}
-  {ln(519,672,39,14,'achten',{c:'#4d5f8c',cls:'naStrip72'})}
+  {ln(519,672,39,13.5,'achten',{c:'#3f526f',cls:'naStrip72'})}
   <div className='naRule' style={{left:500,top:725,width:195,borderBottom:'1px solid #c6c6ce'}}/>
   <div className='naRule' style={{left:193,top:744,width:195,borderBottom:'1px solid #c6c6ce'}}/>
   <div className='naRule' style={{left:132,top:763,width:194,borderBottom:'1px solid #c6c6ce'}}/>
