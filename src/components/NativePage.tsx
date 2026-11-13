@@ -1,3 +1,4 @@
+import {PageImage} from './PageImage';
 import {usePageReset} from '../exercises/usePageReset';
 import {useLayoutEffect,useRef,useState} from 'react';
 import {createPortal} from 'react-dom';
@@ -20,7 +21,7 @@ function NativePageContent({d}:{d:NativeData}){
  return <div className="nativePage" ref={host} data-native-book={d.book} data-native-page={d.page}><div ref={canvas} className="nativePageCanvas" style={{width:d.width,height:d.height}}>
  {d.panels?.map((p,i)=><div key={'panel'+i} className="nativePanel" style={box(p)}/>)}
  {d.shapes?.map((a,i)=><div key={'shape'+i} style={{position:'absolute',...box(a),background:a.background,border:a.border,borderRadius:a.radius,boxSizing:'border-box'}}/>)}
- {d.art.map(a=><img key={a.src} className="nativeArt" src={a.src} style={box(a)} alt={'Originalabbildung '+a.name}/>)}
+ {d.art.map(a=><PageImage key={a.src} className="nativeArt" src={a.src} style={box(a)} alt={'Originalabbildung '+a.name}/>)}
  {d.decorations?.map((z,i)=><span key={'deco'+i} style={{position:'absolute',left:z.x,top:z.y,fontSize:z.fontSize}}>{z.text}</span>)}
  {d.arrows&&<svg className="nativeArrows" width={d.width} height={d.height}><defs><marker id={'arrow'+d.page} markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#333"/></marker></defs>{d.arrows.map(([x1,y1,x2,y2],i)=><line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="#333" strokeWidth="1.5" markerEnd={'url(#arrow'+d.page+')'}/>)}</svg>}
  {d.module&&<span className="nativeModule" style={{left:d.module.x,top:d.module.y,background:d.module.color}}>{d.module.n}</span>}
