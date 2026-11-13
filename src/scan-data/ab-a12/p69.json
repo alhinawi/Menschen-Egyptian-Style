@@ -2169,9 +2169,82 @@
    "h": 9
   }
  ],
- "fields": [],
- "audio": [],
- "groups": [],
+ "fields": [
+  {
+   "id": "p69-a2-lang",
+   "group": "confidence-p69-a2",
+   "kind": "radio",
+   "answer": "false",
+   "label": "Aussprache 2: sind lang.",
+   "name": "a2",
+   "value": "lang",
+   "x": 135,
+   "y": 932,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "p69-a2-kurz",
+   "group": "confidence-p69-a2",
+   "kind": "radio",
+   "answer": "false",
+   "label": "Aussprache 2: sind kurz.",
+   "name": "a2",
+   "value": "kurz",
+   "x": 135,
+   "y": 951,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "p69-a2-langOderKurz",
+   "group": "confidence-p69-a2",
+   "kind": "radio",
+   "answer": "true",
+   "label": "Aussprache 2: koennen lang oder kurz sein.",
+   "name": "a2",
+   "value": "langOderKurz",
+   "x": 135,
+   "y": 970,
+   "w": 16,
+   "h": 16
+  }
+ ],
+ "audio": [
+  {
+   "id": "track31-1",
+   "src": "assets/ab-cd2-track31.mp3",
+   "label": "CD2 · Track31",
+   "x": 71,
+   "y": 834,
+   "w": 44,
+   "h": 22
+  },
+  {
+   "id": "track32-2",
+   "src": "assets/ab-cd2-track32.mp3",
+   "label": "CD2 · Track32",
+   "x": 40,
+   "y": 884,
+   "w": 44,
+   "h": 22
+  },
+  {
+   "id": "track33-3",
+   "src": "assets/ab-cd2-track33.mp3",
+   "label": "CD2 · Track33",
+   "x": 446,
+   "y": 749,
+   "w": 44,
+   "h": 22
+  }
+ ],
+ "groups": [
+  {
+   "id": "confidence-p69-a2",
+   "label": "Aussprache 2"
+  }
+ ],
  "review": {
   "status": "partial",
   "verifiedWords": 309,
