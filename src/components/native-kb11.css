@@ -79,3 +79,13 @@
 
 .nkb[data-native-page="38"] input[type=checkbox].nkbField{appearance:none;-webkit-appearance:none;border-radius:3px}
 .nkb[data-native-page="38"] input[type=checkbox].nkbField:checked{background:rgba(255,224,51,.55)!important}
+
+/* Outline-only choice marks leave the printed word completely visible. */
+.nkbCanvas input[type=radio].nkbCircleOption{border:1.4px solid transparent!important;border-radius:50%!important;outline-offset:0;background:transparent!important;z-index:5}
+.nkbCanvas input[type=radio].nkbCircleOption:checked{border-color:#245b9b!important;background:transparent!important}
+.nkbCanvas input[type=radio].nkbCircleOption.ok:checked{border-color:#268250!important;outline:0}
+.nkbCanvas input[type=radio].nkbCircleOption.bad:checked{border-color:#bd3838!important;outline:0}
+.nkb[data-native-page="31"] select.nkbField[data-native-field^="t6a-"]{border:1px solid #8fb0aa!important;border-radius:50%!important;text-align:center;padding:0!important;appearance:none;-webkit-appearance:none;font-family:Georgia,serif}
+.nkb31Pairing .sharedMatchItem{background:transparent!important;border:0!important}
+.nkb31Pairing .sharedMatchItem.selected{outline:1px dotted #245b9b}
+.page .nkb[data-native-page="31"] .nkbCanvas input[type=radio].nkbCircleOption:checked{background-image:none!important;background-color:transparent!important;background:transparent!important}
