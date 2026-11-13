@@ -1,4 +1,5 @@
 import {KB11P42Answers} from './KB11P42Answers';
+import {NativeWritingPanel} from './NativeWritingPanel';
 import {CheckButton} from './CheckButton';
 import {PageImage} from './PageImage';
 import {usePageReset} from '../exercises/usePageReset';
@@ -53,6 +54,7 @@ function Inner({data}:{data:NativePage}){
  const sloppyHit=(ev:Event)=>{const t=ev.target as HTMLElement;if(t.closest('.nkbField,.nkbCheck,.nkbListen,.nkbWord,button,a,input,select,textarea,audio'))return null;const e=ev as MouseEvent;return nearRing(e.clientX,e.clientY)};
  return <div className="nkb" data-native-page={data.page} data-native-book="kb-a11" style={{'--paper':data.paper||'#fdfcf8','--ratio':W/H,'--nkb-tool':data.audio.length?'46px':'0px'} as CSSProperties}>
   {String(data.page)==='42'&&<KB11P42Answers values={v} onChange={set}/>}
+  {data.panel&&<NativeWritingPanel page={String(data.page)} storageKey={key} sections={data.panel} values={v} onChange={set}/>}
   <div className="nkbCanvas" ref={root} style={{aspectRatio:`${W}/${H}`}}>
    {data.art.map((a,i)=><PageImage key={i} className="nkbArt" src={a.src} alt="" draggable={false} style={pos(a.x,a.y,a.w,a.h)}/>)}
    {(data.blocks||[]).map((bl,i)=><div key={'b'+i} className={'nkbLine'+(bl.sb?' nkbSB':bl.b?' nkbB':'')+(bl.sa?' nkbSans':'')} data-tw={bl.w} data-rot={(bl as any).rot||undefined} data-nf={(bl as any).nf?'1':undefined} style={{left:bl.x/W*100+'%',top:(bl.cy-bl.f*0.62)/H*100+'%',fontSize:bl.f/W*100+'cqw',lineHeight:1.24}}>{bl.ws.map((w,j)=>{const tap=/[A-Za-zÄÖÜäöüß]/.test(w.t);return <span key={j}>{j>0?' ':''}<span {...(tap?{className:'tapWord',role:'button',tabIndex:0,'data-word':w.t.replace(/^[.,!?„"()]+|[.,!?“"()\u2009]+$/g,''),'data-phrase':w.ph||w.t}:(w.t==='–'?{className:'nkbDash'}:{}))} style={{color:w.c,background:(w as any).hi?'linear-gradient(transparent 10%,#fff538 10% 90%,transparent 90%)':undefined,fontStyle:(w as any).i?'italic':undefined}}>{(w as any).parts?((w as any).parts as {t:string;c?:string;b?:number}[]).map((q,k)=><span key={k} style={{color:q.c,fontWeight:q.b?700:undefined}}>{q.t}</span>):w.t}</span></span>})}</div>)}

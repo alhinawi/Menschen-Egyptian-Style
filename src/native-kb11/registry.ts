@@ -1,7 +1,9 @@
 export interface NativeWord{t:string;x:number;y:number;w:number;h:number;ph?:string;c?:string;b?:number;r?:number;f?:number;cy?:number;l?:number}
 export interface NativeBlock{x:number;w:number;cy:number;f:number;b:number;sa?:number;sb?:number;ws:{t:string;c?:string;ph?:string}[]}
 export interface NativeField{id:string;group:string;kind:'text'|'radio'|'checkbox'|'select';label:string;answer?:string;name?:string;value?:string;x:number;y:number;w:number;h:number;options?:{value:string;label:string}[];maxlen?:number;circle?:boolean}
-export interface NativePage{book:string;page:number;w:number;h:number;words:NativeWord[];blocks:NativeBlock[];art:{src:string;x:number;y:number;w:number;h:number}[];fields:NativeField[];audio:{id:string;src:string;label:string;x:number;y:number;w:number;h:number;task?:string}[];paper?:string;checks?:Record<string,number[]>;compact?:string[];review:{status:string;notes:string[]}}
+export interface NativePanelField{id:string;label:string;answer?:string;placeholder?:string;textarea?:boolean;pre?:string}
+export interface NativePanelSection{id:string;title:string;hint?:string;neutral?:boolean;fields:NativePanelField[]}
+export interface NativePage{book:string;page:number;w:number;h:number;words:NativeWord[];blocks:NativeBlock[];art:{src:string;x:number;y:number;w:number;h:number}[];fields:NativeField[];audio:{id:string;src:string;label:string;x:number;y:number;w:number;h:number;task?:string}[];paper?:string;checks?:Record<string,number[]>;compact?:string[];panel?:NativePanelSection[];review:{status:string;notes:string[]}}
 const files = import.meta.glob<NativePage>('./p*.json', {import: 'default'});
 export const kb11Pages: Record<string, NativePage> = {};
 const pending = new Map<string, Promise<void>>();
