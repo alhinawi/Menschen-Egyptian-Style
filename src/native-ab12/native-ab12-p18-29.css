@@ -6,3 +6,9 @@
 .naCanvas .naTRule{position:absolute;height:0;border-bottom:1px solid #e0dcc8}
 .naCanvas .naBankB{font-weight:bold;color:#1f3a6d}
 .naCanvas .naBank{font-family:FiraSans,'Trebuchet MS',sans-serif;font-size:15px;color:#335b98;position:absolute;white-space:nowrap;letter-spacing:.5px}
+.naCanvas .naText.naBold{font-weight:bold}
+.naCanvas .naText.naBlue{color:#1b6bab}
+.naCanvas .naText.naHead{font-size:30px;letter-spacing:6px;color:#6f6f6f}
+.naCanvas .naHeadRule{position:absolute;height:3px;background:#f6c90e}
+.naCanvas .naHl{background:#fcee21;padding:0 1px}
+.naCanvas .naText{white-space:nowrap}

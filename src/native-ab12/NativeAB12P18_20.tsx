@@ -19,6 +19,7 @@ export function NativeAB12P18_20({page}:{page:string}){
  const art=(name:string,x:number,y:number,w:number,h:number)=><img className="naArt" src={`assets/book-crops/native-ab12-p${page}-${name}.png`} alt={'Originalillustration '+name} style={{left:x,top:y,width:w,height:h}}/>;
  const field=(id:string,x:number,y:number,w:number,label:string,cls='')=><input className={'naField '+cls} aria-label={label} data-native-field={id} style={{left:x,top:y,width:w}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
  const rule=(x:number,y:number,w:number)=><div className="naRule" style={{left:x,top:y,width:w}}/>;
+ const dot=(id:string,value:string,x:number,y:number,label:string)=><input type="radio" className="naDot" name={key+'-'+id} aria-label={label} data-native-field={id} style={{left:x,top:y}} checked={values[id]===value} onChange={()=>set(id,value)}/>;
  const circle=(id:string,x:number,y:number,label:string)=><input className="naCNum" aria-label={label} data-native-field={id} style={{left:x,top:y}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false} inputMode="numeric" maxLength={1}/>;
  const check=(id:string,x:number,y:number,answers:Record<string,string>,cls='')=><div className={'naCheck '+cls} data-check={id} style={{left:x,top:y}}><button onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}>Prüfen ✓</button><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,t:string,cls='')=><div className={'naTitle '+cls} style={{left:x,top:y,width:w}}><b>{n}</b><Words text={t}/></div>;
@@ -172,6 +173,151 @@ export function NativeAB12P18_20({page}:{page:string}){
   {check('g4',160,1358,{'p18-3b':'in einer Bibliothek.','p18-3c':'in einem Schloss.','p18-3d':'in einem Park.','p18-3e':'Markt','p18-3f':'auf einem Turm.','p18-3g':'in einem Fluss.'})}
   {art('modul-tab',0,1380,92,42)}
   {text(100,1392,200,'18  |  achtzehn','naFooter naNw')}
+ </>}
+ {page==='19'&&<>
+  {text(120,55,270,'BASISTRAINING','naHead')}
+  <div className="naHeadRule" style={{left:368,top:93,width:617}}/>
+  {art('tab15',986,14,85,104)}
+  {kb(70,166,'KB 3')}
+  {art('pair-icon',52,190,50,26)}
+  {kb(70,295,'KB 4')}
+  <div className="naSide" style={{left:92,top:353,fontSize:10,letterSpacing:1}}>HÖREN</div>
+  {kb(70,501,'KB 5')}
+  <div className="naSide" style={{left:92,top:534,fontSize:10,letterSpacing:1}}>STRUKTUREN</div>
+  {kb(70,836,'KB 5')}
+  <div className="naSide" style={{left:86,top:863,fontSize:10,letterSpacing:1,whiteSpace:'pre-line'}}>{'STRUKTUREN\nENTDECKEN'}</div>
+  {kb(70,1067,'KB 5')}
+  <div className="naSide" style={{left:92,top:1098,fontSize:10,letterSpacing:1}}>WÖRTER</div>
+  {title('4',120,154,600,'Wo bin ich?','naOB naNw')}
+  {text(152,198,20,'a','naBold')}
+  {text(182,198,270,'Schreiben Sie Aufgaben wie in')}
+  {text(452,198,20,'3:','naBlue naBold')}
+  {text(475,198,310,'Was sehen Sie? Was machen Sie dort?')}
+  {text(152,224,20,'b','naBold')}
+  {text(181,224,520,'Tauschen Sie mit Ihrer Partnerin / Ihrem Partner. Sie/Er rät.')}
+  {audio('assets/ab-a12-cd2-track11.mp3',55,316,'2 11')}
+  {title('5',120,284,700,'Hören Sie Marlenes Podcast. Was ist falsch? Korrigieren Sie.','naOB naNw')}
+  {text(152,324,20,'a','naBold')}
+  {text(181,324,215,'In Giesing haben früher')}
+  {text(402,324,55,'keine','naBlue')}
+  {text(455,324,110,'Arbeiter gewohnt.')}
+  {art('viele',636,322,84,38)}
+  {text(152,350,20,'b','naBold')}
+  {text(181,350,430,'In Giesing sind die Wohnungen sehr teuer.')}
+  {field('p19-5b',642,346,201,'Korrektur 5b')}
+  {text(152,376,20,'c','naBold')}
+  {text(180,376,430,'Es gibt in Giesing ein Kino, aber kein Theater.')}
+  {field('p19-5c',642,372,201,'Korrektur 5c')}
+  {text(152,402,20,'d','naBold')}
+  {text(180,402,430,'Das Kulturzentrum ist in einer Kirche.')}
+  {field('p19-5d',642,398,201,'Korrektur 5d')}
+  {text(152,428,20,'e','naBold')}
+  {text(179,428,430,'Im Kulturzentrum kann man nicht tanzen.')}
+  {field('p19-5e',642,424,201,'Korrektur 5e')}
+  {check('g5',870,350,{'p19-5b':'nicht so teuer','p19-5c':'ein Theater','p19-5d':'in einem Bahnhof','p19-5e':'tanzen'},'naCheckCol')}
+  {title('6',120,490,700,'Was passt? Markieren Sie.','naOB naNw')}
+  {text(152,530,20,'a','naBold')}
+  {text(177,530,44,'Wie')}
+  <div className="naText" style={{left:221,top:530,width:62}}><span className="naHl"><Words text="gefällt"/></span></div>
+  {text(283,530,406,'/ gefallen dir der Stadtteil? – Toll, besonders')}
+  {dot('6a2','gefällt',689,533,'gefällt (6a)')}
+  {text(719,533,62,'gefällt')}
+  {text(785,533,12,'/')}
+  {dot('6a2','gefallen',798,533,'gefallen (6a)')}
+  {text(828,533,76,'gefallen')}
+  {text(912,533,60,'mir die')}
+  {text(177,552,60,'Cafés.')}
+  {text(152,582,20,'b','naBold')}
+  {dot('6b1','Gehört',174,582,'Gehört (6b)')}
+  {text(204,582,65,'Gehört')}
+  {text(272,582,12,'/')}
+  {dot('6b1','Gehören',284,582,'Gehören (6b)')}
+  {text(314,582,78,'Gehören')}
+  {text(400,582,530,'die Schlüssel Dörte? – Nein, das sind meine. Aber der')}
+  {text(177,608,90,'dem Tisch')}
+  {dot('6b2','gehört',271,608,'gehört (6b)')}
+  {text(301,608,64,'gehört')}
+  {text(368,608,12,'/')}
+  {dot('6b2','gehören',379,608,'gehören (6b)')}
+  {text(409,608,77,'gehören')}
+  {text(492,608,60,'Dörte.')}
+  {text(152,634,20,'c','naBold')}
+  {text(180,634,620,'Du kannst das Rezept nicht lesen? Dann brauchst du eine neue Brille.')}
+  {text(177,661,30,'Die')}
+  {dot('6c','hilft',210,661,'hilft (6c)')}
+  {text(240,661,48,'hilft')}
+  {text(292,661,12,'/')}
+  {dot('6c','helfen',303,661,'helfen (6c)')}
+  {text(333,661,55,'helfen')}
+  {text(392,661,40,'dir.')}
+  {text(152,688,20,'d','naBold')}
+  {text(180,688,630,'Clemens möchte Deutsch lernen und macht viele Übungen. Die Übungen')}
+  {dot('6d','hilft',818,688,'hilft (6d)')}
+  {text(848,688,48,'hilft')}
+  {text(899,688,12,'/')}
+  {dot('6d','helfen',910,688,'helfen (6d)')}
+  {text(940,688,55,'helfen')}
+  {text(177,714,40,'ihm.')}
+  {text(152,742,20,'e','naBold')}
+  {dot('6e1','Schmeckt',172,742,'Schmeckt (6e)')}
+  {text(202,742,88,'Schmeckt')}
+  {text(293,742,12,'/')}
+  {dot('6e1','Schmecken',304,742,'Schmecken (6e)')}
+  {text(334,742,101,'Schmecken')}
+  {text(443,742,360,'dir der Salat? – Nein, aber die Kartoffeln')}
+  {dot('6e2','schmeckt',174,768,'schmeckt (6e)')}
+  {text(204,768,87,'schmeckt')}
+  {text(294,768,12,'/')}
+  {dot('6e2','schmecken',305,768,'schmecken (6e)')}
+  {text(335,768,101,'schmecken')}
+  {text(444,768,110,'mir sehr gut.')}
+  {check('g6',152,806,{'6a2':'gefallen','6b1':'Gehören','6b2':'gehört','6c':'hilft','6d':'helfen','6e1':'Schmeckt','6e2':'schmecken'},'naCheckCol')}
+  {title('7',120,826,850,'Ergänzen Sie die passenden Verben aus 6 in der richtigen Form.','naOB naNw')}
+  {text(152,888,110,'Der Stadtteil')}
+  {art('gefaellt7',266,872,146,44)}
+  {text(152,917,116,'Der Schlüssel')}
+  {field('p19-7a',268,917,104,'Verb 7a')}
+  {text(152,940,100,'Die Übung')}
+  {field('p19-7b',268,943,104,'Verb 7b')}
+  {text(152,968,100,'Der Salat')}
+  {field('p19-7c',268,971,92,'Verb 7c')}
+  {['mir.','dir.','ihm/ihr.','uns.','euch.','Ihnen/Ihnen.'].map((t,i)=>text(416,867+[0,21,50,73,101,128][i],100,t))}
+  {text(574,888,125,'Die Stadtteile')}
+  {field('p19-7d',695,890,128,'Verb 7d')}
+  {text(574,917,125,'Die Schlüssel')}
+  {field('p19-7e',695,919,128,'Verb 7e')}
+  {text(574,940,125,'Die Übungen')}
+  {field('p19-7f',695,945,128,'Verb 7f')}
+  {text(574,968,125,'Die Salate')}
+  {field('p19-7g',695,971,128,'Verb 7g')}
+  {['mir.','dir.','ihm/ihr.','uns.','euch.','Ihnen/Ihnen.'].map((t,i)=>text(845,867+[0,21,50,73,101,128][i],100,t))}
+  {check('g7',940,900,{'p19-7a':'gehört','p19-7b':'hilft','p19-7c':'schmeckt','p19-7d':'gefallen','p19-7e':'gehören','p19-7f':'helfen','p19-7g':'schmecken'},'naCheckCol')}
+  {title('8',120,1057,900,'Ergänzen Sie gehören/gefallen/danken/helfen/schmecken in der richtigen Form.','naOB naNw')}
+  {text(146,1099,20,'a','naBold')}
+  {text(170,1099,150,'Welcher Stadtteil')}
+  {art('gefaellt8',322,1092,56,38)}
+  {text(383,1099,330,'dir besonders gut? — Ich mag das Lehel.')}
+  {text(146,1126,20,'b','naBold')}
+  {text(170,1126,36,'Wir')}
+  {field('p19-8b',208,1122,129,'Verb 8b')}
+  {text(341,1126,390,'dir für deine Hilfe. — Ich habe euch gern geholfen.')}
+  {text(146,1152,20,'c','naBold')}
+  {text(170,1152,140,'Kann ich Ihnen')}
+  {field('p19-8c',312,1148,124,'Verb 8c')}
+  {text(443,1152,140,'? — Nein, danke.')}
+  {text(146,1179,20,'d','naBold')}
+  {text(170,1179,315,'Die vielen Kneipen und Restaurants')}
+  {field('p19-8d',490,1175,122,'Verb 8d')}
+  {text(625,1179,110,'mir sehr gut.')}
+  {text(146,1206,20,'e','naBold')}
+  {field('p19-8e',170,1202,125,'Verb 8e')}
+  {text(302,1206,360,'dir das Buch? — Nein, das ist nicht mein Buch.')}
+  {text(146,1232,20,'f','naBold')}
+  {field('p19-8f',170,1228,125,'Verb 8f')}
+  {text(302,1232,500,'euch der Kuchen? — Ja, sehr gut. Können wir das Rezept haben?')}
+  {check('g8',146,1270,{'p19-8b':'danken','p19-8c':'helfen','p19-8d':'gefallen','p19-8e':'Gehört','p19-8f':'Schmeckt'},'naCheckCol')}
+  {text(830,1392,140,'neunzehn  |  19','naFooter naNw')}
+  {art('modul',978,1386,93,36)}
  </>}
  </div><audio ref={player} className="naPlayer"/></div>;
 }
