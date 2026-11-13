@@ -1,3 +1,4 @@
+import {CheckButton} from './CheckButton';
 import {PageImage} from './PageImage';
 import {NativeAB11Test88} from '../native-ab11/NativeAB11Test88';
 import {AB11LineMatching88} from '../exercises/AB11LineMatching88';
@@ -22,6 +23,7 @@ import {NativeAB11} from '../native-ab11/NativeAB11';
 import {NativeKb11} from './NativeKb11';
 import {HybridScan} from './HybridScan';
 import {NativeAB12} from './NativeAB12';
+import {NativeAB12L23} from '../native-ab12-l2324/NativeAB12L23';
 import {NativeAB12P66to71} from './ab12-ranges/NativeAB12P66';
 import {NativeAB12P18_20} from '../native-ab12/NativeAB12P18_20';
 import {NativeAB12Lesson13} from '../native-ab12/NativeAB12Lesson13';
@@ -77,9 +79,10 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['60','61'].includes(String(attrs.page)))return createElement(NativeAB11Lesson8Start,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a12' && hasRangePage(String(attrs.page)))return createElement(NativeAB12Range,{key,page:String(attrs.page)});
   if(tag === 'NativeAB12')return createElement(NativeAB12,{key,page:attrs.page});
+  if(tag === 'NativeAB12L23')return createElement(NativeAB12L23,{key,page:attrs.page});
   if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['66'].includes(String(attrs.page)))return createElement(NativeAB12P66to71,{key,page:String(attrs.page)});
   if(tag === 'NativeAB12L13')return createElement(NativeAB12Lesson13,{key,page:attrs.page});
-  if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['18','19','20'].includes(String(attrs.page)))return createElement(NativeAB12P18_20,{key,page:String(attrs.page)});
+  if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['18','19'].includes(String(attrs.page)))return createElement(NativeAB12P18_20,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['57','58','59'].includes(String(attrs.page)))return createElement(NativeAB11Lesson7Close,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['38','39','40'].includes(String(attrs.page)))return createElement(NativeAB11Next45,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['30','31','32','33','34','35','36','37'].includes(String(attrs.page)))return createElement(NativeAB11Lessons45,{key,page:String(attrs.page)});
@@ -135,6 +138,7 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   if (['prev', 'next', 'plus', 'minus', 'fit', 'pageJump', 'lessonNav', 'closeAudio', 'palette', 'audioToggle', 'clearMap'].includes(attrs.id) || attrs.class?.split(' ').some(c => ['soundToggle', 'listen', 'coverOpen'].includes(c)) || 'data-jump' in attrs || 'data-color' in attrs) return createElement(ReaderControl, {key, tag, attrs: {...props, 'data-react-control-id': path}, children: rendered});
   if (attrs.id === 'zoomValue') return createElement(ZoomValue, {key, tag, attrs: props, children: rendered});
   if (['input', 'select'].includes(tag)) return createElement(PersistentField, {key, tag, attrs: props, children: rendered});
+  if(tag==='button'&&children.some(c=>typeof c==='string'&&c.includes('Prüfen')))return createElement(CheckButton,props);
   return createElement(tag, props, ...rendered);
 }
 

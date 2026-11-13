@@ -11,6 +11,21 @@ const server=http.createServer((req,res)=>{
  await new Promise(r=>server.listen(5297,'127.0.0.1',r));
  const browser=await chromium.launch({executablePath:'/usr/bin/google-chrome-stable',args:['--no-sandbox']});
  try{
+  {
+   const p=await browser.newPage();await p.goto('http://127.0.0.1:5297/ab-a12-l13-16.html#20');
+   await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
+   await p.locator('.hybridScan[data-scan-page="20"]').waitFor();
+   assert(await p.locator('.hybridScan[data-scan-page="20"] input').count()>0,'unconverted p20 must remain usable');
+   await p.close();console.log('p20: unconverted page preserved as HybridScan');
+  }
+  for(const no of [86,87,88]){
+   const p=await browser.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
+   await p.goto('http://127.0.0.1:5297/ab-a12-l21-24.html#'+no);
+   await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
+   await p.locator('.hybridScan[data-scan-page="'+no+'"]').waitFor();
+   assert(await p.locator('.hybridScan[data-scan-page="'+no+'"] input').count()>0,'unconverted p'+no+' must remain usable');
+   await p.close();console.log('p'+no+': unconverted page preserved as HybridScan');
+  }
   for(const width of [320,390]){
    // Page 18: wrong-answer feedback, full grading, saved answers.
    {
@@ -42,21 +57,21 @@ const server=http.createServer((req,res)=>{
     await p.goto('http://127.0.0.1:5297/ab-a12-l13-16.html#19');
     await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
     const h=p.locator('[data-native-ab12="19"]');await h.waitFor();
-    await h.getByRole('radio',{name:'gefällt (6a)',exact:true}).check();
+    await h.getByRole('button',{name:'gefällt (6a)',exact:true}).click();
     await h.locator('[data-check="g6"] button').click();
     assert.equal(await h.locator('[data-check="g6"] output').textContent(),'Noch einmal','19: incomplete/wrong marking not flagged');
     const fields={'p19-5b':'nicht so teuer','p19-5c':'ein Theater','p19-5d':'in einem Bahnhof','p19-5e':'tanzen','p19-7a':'gehört','p19-7b':'hilft','p19-7c':'schmeckt','p19-7d':'gefallen','p19-7e':'gehören','p19-7f':'helfen','p19-7g':'schmecken','p19-8b':'danken','p19-8c':'helfen','p19-8d':'gefallen','p19-8e':'Gehört','p19-8f':'Schmeckt'};
     for(const [id,v] of Object.entries(fields))await h.locator('[data-native-field="'+id+'"]').fill(v);
-    for(const name of ['gefallen (6a)','Gehören (6b)','gehört (6b)','hilft (6c)','helfen (6d)','Schmeckt (6e)','schmecken (6e)'])await h.getByRole('radio',{name,exact:true}).check();
+    for(const name of ['gefallen (6a)','Gehören (6b)','gehört (6b)','hilft (6c)','helfen (6d)','Schmeckt (6e)','schmecken (6e)'])await h.getByRole('button',{name,exact:true}).click();
     for(const b of await h.locator('.naCheck button').all()){await b.scrollIntoViewIfNeeded();await b.click();}
     for(const t of await h.locator('.naCheck output').allTextContents())assert.equal(t,'✓ Richtig!','19: grading failed');
     await h.locator('.naAudio').first().click();
     await p.waitForFunction(()=>{const a=document.querySelector('[data-native-ab12="19"] .naPlayer')||document.querySelector('audio.naPlayer');return a&&!a.paused},null,{timeout:5000}).catch(()=>{throw new Error('19: audio did not play')});
     await p.reload();await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
-    assert(await h.getByRole('radio',{name:'gefallen (6a)',exact:true}).isChecked(),'19: radio mark not saved');
+    assert.equal(await h.getByRole('button',{name:'gefallen (6a)',exact:true}).getAttribute('aria-pressed'),'true','19: mark not saved');
     assert.equal(await h.locator('[data-native-field="p19-8f"]').inputValue(),'Schmeckt','19: field answer not saved');
     assert.deepEqual(errors,[],'19: page errors');
-    console.log(`${width}px p19: radio marking, grading, wrong-answer feedback, audio, saved answers passed`);
+    console.log(`${width}px p19: word marking, grading, wrong-answer feedback, audio, saved answers passed`);
     await p.close();
    }
   }

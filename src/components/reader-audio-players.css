@@ -41,3 +41,7 @@ body.hasActiveAudio{padding-bottom:calc(var(--reader-controls-height,56px) + var
 .readerPlayerClose{position:absolute;right:0;top:0;width:40px;height:44px;padding:0!important;font-size:24px!important;border:0!important;background:transparent!important;color:inherit;cursor:pointer}
 .readerActiveAudio .readerAudioPlayer{padding-right:44px}
 .readerActiveAudio .readerAudioHeading{padding-right:0}
+
+/* One permanent player lives below the page; no hide button or floating copy. */
+.readerAudioPlayer{padding-right:12px}
+.readerAudioPanel{display:grid!important}
