@@ -52,3 +52,31 @@
 .naCanvas .naTitle.naS15{font-size:15px;line-height:1.2}
 .naCanvas .naTitle.naS15>b{min-width:17px;height:17px;font:bold 12px/17px Georgia;margin-right:9px}
 .naCanvas .naText.naColH{font-family:FiraSans,'Trebuchet MS',sans-serif;font-size:10.5px;color:#333;text-align:center}
+
+.naCanvas .naTestHead{position:absolute;font:400 24px 'Times New Roman',serif;letter-spacing:4px;color:#555;white-space:nowrap}
+.naCanvas .naSideT{position:absolute;font:11px FiraSans,sans-serif;letter-spacing:1.5px;writing-mode:vertical-rl;transform:rotate(180deg);color:#717b9c;white-space:nowrap}
+.naCanvas .naText.naCue{font-family:DroidSerif,Georgia,serif;font-size:11px;color:#444}
+.naCanvas .naText.naFoot88{font-family:DroidSerif,Georgia,serif;font-size:12px;color:#777}
+.naCanvas .naPts{position:absolute;font:10px FiraSans,sans-serif;letter-spacing:1px;color:#333;text-transform:uppercase;white-space:nowrap}
+.naCanvas .naBltSq{position:absolute;width:9px;height:9px;border-radius:2px}
+.naCanvas .naBltTr{position:absolute;width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:9px solid}
+.naCanvas .naBltCi{position:absolute;width:9px;height:9px;border-radius:50%}
+.naCanvas .naScore{position:absolute;background:#fbf8ed;border:1px solid #ddd5b8}
+.naCanvas .naScoreH{position:absolute;background:#e9e4c9;border-bottom:1px solid #ddd5b8}
+.naCanvas .naText.naScoreT{font:bold 12px FiraSans,sans-serif;color:#333}
+.naCanvas .naText.naScoreR{font:12px FiraSans,sans-serif;color:#333}
+.naCanvas .naSDot{position:absolute;width:14px;height:14px;border-radius:4px;box-shadow:inset 0 2px 3px rgba(255,255,255,.55),inset 0 -2px 3px rgba(0,0,0,.25)}
+.naCanvas .naSDR{background:#e50705}.naCanvas .naSDY{background:#fbef04}.naCanvas .naSDG{background:#64c301}
+.naCanvas .naTestRule{position:absolute;height:0;border-top:1.5px solid #a52d4c}
+
+.naCanvas .naText.naBk88{font-size:13.6px;letter-spacing:normal}
+.naCanvas .naText.naBk88 span[role=button]{padding:0}
+.naCanvas .naRule.naRuleT{border-bottom-width:1px}
+@font-face{font-family:FiraSans;src:url('/assets/fonts/firasans-latin-500.ttf') format('truetype');font-weight:500;font-display:swap}
+.naCanvas .naBank88{position:absolute;font:500 13px FiraSans,'Trebuchet MS',sans-serif;color:#2c3d63;white-space:nowrap}
+.naCanvas .naBank88b{position:absolute;font:500 14px FiraSans,'Trebuchet MS',sans-serif;color:#2c3d63;white-space:nowrap}
+.naCanvas .naText.naCue88{position:absolute;font-family:DroidSerif,Georgia,serif;font-size:12px;color:#444;white-space:nowrap}
+.naCanvas .naText.naBk88m{letter-spacing:-0.15px}
+.naCanvas .naText.naBk88l{letter-spacing:-0.1px}
+
+.naCanvas .naText .naPrd,.naCanvas .naText.naPrd{color:#1e1e20}
