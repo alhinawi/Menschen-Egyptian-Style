@@ -1,3 +1,4 @@
+import {CheckButton} from '../components/CheckButton';
 import {useLayoutEffect,useRef,useState} from 'react';
 import {usePageReset} from '../exercises/usePageReset';
 import {LineMatching} from '../exercises/LineMatching';
@@ -38,7 +39,7 @@ export function NativeAB12Range({page}:{page:string}){
    case 'a':return <img key={n} className="naArt" src={`assets/book-crops/native-ab12-p${page}-${it.n}.png`} alt={it.alt||('Originalillustration '+it.n)} style={{left:it.x,top:it.y,width:it.w,height:it.h}}/>;
    case 'ti':return <div key={n} className="naRTitle" style={{left:it.x,top:it.y}}><span className="naRBadge" style={{width:it.bw||27,height:it.bh||27,background:it.col,lineHeight:(it.bh||27)+'px'}}>{it.n}</span></div>;
    case 'd':return <input key={n} className={'naDot naRDot'+(it.lt?' naRDotL':'')} type={it.cb?'checkbox':'radio'} aria-label={it.l} name={key+'-'+(it.name||it.id)} checked={it.cb?values[it.id]==='true':values[it.id]===it.v} onChange={e=>set(it.id,it.cb?String(e.target.checked):it.v)} style={{left:it.x,top:it.y,width:it.s||24,height:it.s||24}}/>;
-   case 'chk':return <div key={n} className="naCheck" style={{left:it.x,top:it.y}}><button onClick={()=>grade(it.g)}>Prüfen ✓</button><output aria-live="polite">{it.g in results?(results[it.g]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+   case 'chk':return <div key={n} className="naCheck" style={{left:it.x,top:it.y}}><CheckButton onClick={()=>grade(it.g)}></CheckButton><output aria-live="polite">{it.g in results?(results[it.g]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
    case 'bx':return <div key={n} className="naRBx" style={{left:it.x,top:it.y,width:it.w,height:it.h,background:it.bg,border:it.bd?('1.5px solid '+it.bd):undefined,boxSizing:'border-box'}}/>;
    case 'w':return <button key={n} type="button" className={'naRWord'+(values[it.id]==='1'?' on':'')} aria-pressed={values[it.id]==='1'} aria-label={'Durchstreichen: '+it.l} style={{left:it.x-3,top:it.y-21,width:it.w+6,height:27}} onClick={()=>set(it.id,values[it.id]==='1'?'0':'1')}/>;
    case 'au':return <button key={n} className="naAudio naRAudio" style={{left:it.x,top:it.y,width:it.w,height:it.h}} aria-label={'Originalaudio '+it.l+' abspielen'} onClick={()=>{if(player.current){player.current.src=it.src;player.current.play().catch(()=>{})}}}>{it.n?<img src={`assets/book-crops/native-ab12-p${page}-${it.n}.png`} alt="" style={{width:'100%',height:'100%',display:'block'}}/>:'▶ '+it.l}</button>;
