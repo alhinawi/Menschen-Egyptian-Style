@@ -194,6 +194,7 @@ def apply_overrides(r,p):
     r['fields']=[x for x in r['fields'] if x['id'] not in o.get('dropfields',[])]
     r['checks'].update(o.get('checks',{}))
     if o.get('neutral'):r['neutral']=o['neutral']
+    for a in r['audio']:a.update(o.get('audioadj',{}).get(a['id'],{}))
     def hit(b,m):
         return all(abs(b[k]-v)<=m.get('tol',3) for k,v in m.items() if k in('x','cy','w','f'))
     for rng in o.get('sans',[]):
