@@ -28,6 +28,7 @@ export function usePersistenceController(): PersistenceController {
           if(el instanceof HTMLInputElement&&(el.type==='radio'||el.type==='checkbox'))el.checked=false;
           else el.value='';
         }
+        for(const el of page.querySelectorAll<HTMLElement>('[data-rating-key]')){const ratingKey='rate-'+el.dataset.ratingKey;updates[ratingKey]=undefined;document.dispatchEvent(new CustomEvent('reader-rating',{detail:{key:ratingKey,value:''}}))}
         for(const form of page.querySelectorAll<HTMLFormElement>('form'))updates['done-'+(form.dataset.key||form.id)]=undefined;
         for(const el of page.querySelectorAll<HTMLElement>('[data-key]'))updates['done-'+el.dataset.key]=undefined;
         runtime?.update(updates);dispatch(updates);const progress=document.querySelector('#progress');if(progress&&/^\d+ ✓$/.test(progress.textContent||''))progress.textContent=Object.entries(runtime?.getState()||{}).filter(([k,v])=>k.startsWith('done-')&&v===true).length+' ✓';
