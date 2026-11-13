@@ -7,13 +7,13 @@ for(const scan of await p.locator('.hybridScan').all()){
  assert(data,file+' scan-data '+book+':'+pg);if(!data.groups.length)continue;
  const radios={};
  for(const f of data.fields){
-  const loc=scan.locator('[data-field-id='+f.id+']');
+  const loc=scan.locator('[data-field-id='+JSON.stringify(f.id)+']');
   if(f.kind==='radio'){if(f.answer.split('|').includes('true'))radios[f.name||f.id]=f.id}
   else if(f.kind==='checkbox'){await loc.evaluate((e,want)=>{if(e.checked!==want)e.click()},f.answer.split('|').includes('true'))}
   else if(f.kind==='select')await loc.selectOption(f.answer.split('|')[0]);
   else await loc.fill(f.answer.split('|')[0]);
  }
- for(const id of Object.values(radios))await scan.locator('[data-field-id='+id+']').evaluate(e=>e.click());
+ for(const id of Object.values(radios))await scan.locator('[data-field-id='+JSON.stringify(id)+']').evaluate(e=>e.click());
  for(const btn of await scan.locator('.hybridCheck button').all())await btn.evaluate(b=>b.click());
  const outs=await scan.locator('.hybridCheck output').allTextContents();
  assert(outs.length>0&&outs.every(t=>t.includes('Richtig')),file+' scan '+pg+' grading: '+outs.join(','));
