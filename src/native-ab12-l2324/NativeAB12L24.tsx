@@ -9,6 +9,8 @@ export function NativeAB12L24({page}:{page:string}){
  const sect98=(y:number,t:string,tag:string)=><div className="naText naSect98" style={{left:78,top:y}}><Words text={t}/> <span className="naTag98">{tag}</span></div>;
  const conf99=(id:string,y:number)=><>{[0,1,2].map(cc=>c.dot(id,''+cc,646.6+cc*28.9,y,'Selbsteinschätzung '+id+' '+['gut','mittel','noch nicht'][cc],false,'naDot99'))}</>;
  const mix102=(x:number,y:number,w:number,segs:[string,(boolean|number)?][],fs=12.5)=><div className="naText naCell102 naNw" style={{left:x,top:y,width:w,fontSize:fs}}>{segs.map((s,i)=>s[1]?<span key={i} className="naRed102">{s[0]}</span>:<Words key={i} text={s[0]}/>)}</div>;
+ const mix103=(x:number,y:number,w:number,segs:[string,(boolean|number)?][],fs=12.5)=><div className="naText naCell103 naNw" style={{left:x,top:y,width:w,fontSize:fs}}>{segs.map((s,i)=>s[1]===1?<span key={i} className="naRed103">{s[0]}</span>:s[1]===2?<span key={i} className="naBold103">{s[0]}</span>:s[1]===3?<span key={i} className="naBold103 naIt103">{s[0]}</span>:s[1]===4?<span key={i} className="naIt103">{s[0]}</span>:<Words key={i} text={s[0]}/>)}</div>;
+ const tx103=(x:number,y:number,b:number,t:string,cls='naCell103 naNw',fs=12.5)=>text(x,y,w102(t,fs),t,cls,fs);
  const tx102=(x:number,y:number,b:number,t:string,cls='naCell102 naNw',fs=12.5)=>text(x,y,w102(t,fs),t,cls,fs);
  const w102=(t:string,fs:number)=>t.length*fs*0.6+10;
  const sect99=(y:number,t:string,tag:string)=><div className="naText naSect99" style={{left:78,top:y}}><Words text={t}/> <span className="naTag99">{tag}</span></div>;
@@ -403,6 +405,79 @@ export function NativeAB12L24({page}:{page:string}){
   {tx102(81,996.45,1009.5,'indirekt:','naColH102 naNw')}
   {mix102(81,1014.95,330,[['Schwester Angelika sagt, ich '],['soll',1],[' dir diesen Tee '],['geben.',1]])}
   {text(37,1050,20,'102','naFoot102 naNw',13.5)}{text(68,1050,6,'|','naFoot102 naNw',13.5)}{text(82,1050,80,'hundertzwei','naFoot102 naNw',13.5)}
+ </>}
+ {page==='103'&&<>
+  <div className="naBand103" style={{left:81.7,top:119.9,width:156.5,height:26}}/>
+  {tx103(89,123.7,137,'Modalverb wollen','naBandT103 naNw',12.3)}{tx103(213,123.7,137,'L17','naLT103 naNw',12.5)}
+  <div className="naBand103" style={{left:257,top:119.9,width:150,height:26}}/>
+  {tx103(265,125.9,139,'Modalverb sollen','naBandT103 naNw',12.1)}{tx103(384,125.7,139,'L18','naLT103 naNw',12.5)}
+  <div className="naBand103" style={{left:420.5,top:119.9,width:254,height:26}}/>
+  {tx103(428,127.6,141,'Modalverben dürfen und müssen','naBandT103 naNw',12.2)}{tx103(648,129.7,143,'L21','naLT103 naNw',12.5)}
+  <svg className="naGrid103" viewBox="0 0 807 1094" aria-hidden="true">
+   <rect x="80.2" y="145.9" width="1" height="129.8"/><rect x="159.4" y="145.9" width="1" height="129.8"/><rect x="237.6" y="145.9" width="1" height="129.8"/>
+   {[164.3,186.8,208.8,230.8,253.2,275.7].map(y=><rect key={'t1ah'+y} x="80.2" y={y} width="157.4" height="1"/>)}
+   <rect x="258" y="145.9" width="1" height="131.8"/><rect x="332.8" y="145.9" width="1" height="131.8"/><rect x="406" y="145.9" width="1" height="131.8"/>
+   {[166.3,188.3,211.3,233.3,255.7,277.7].map(y=><rect key={'t1bh'+y} x="258" y={y} width="148" height="1"/>)}
+   <rect x="421.4" y="145.9" width="1" height="156.8"/><rect x="505.6" y="145.9" width="1" height="156.8"/><rect x="581.3" y="145.9" width="1" height="156.8"/><rect x="659.6" y="145.9" width="1" height="156.8"/>
+   {[168.8,191.3,213.8,236.3,258.2,280.2,302.7].map(y=><rect key={'t1ch'+y} x="421.4" y={y} width="238.2" height="1"/>)}
+   <rect x="78.7" y="342.7" width="1" height="153.8"/><rect x="197.8" y="342.7" width="1" height="153.8"/><rect x="315.3" y="342.7" width="1" height="153.8"/><rect x="433.9" y="342.7" width="1" height="153.8"/><rect x="552.5" y="342.7" width="1" height="153.8"/><rect x="669.5" y="342.7" width="1" height="153.8"/>
+   {[363.1,385.6,408.1,430.1,452.5,475,496.5].map(y=><rect key={'prh'+y} x="78.7" y={y} width="590.8" height="1"/>)}
+   <rect x="77.7" y="538.5" width="1" height="147"/><rect x="274" y="538.5" width="1" height="90.5"/><rect x="472.7" y="538.5" width="1" height="90.5"/><rect x="668" y="538.5" width="1" height="147"/>
+   {[538.5,562,584,607,629,685.5].map(y=><rect key={'peh'+y} x="77.7" y={y} width="590.3" height="1"/>)}
+   <rect x="77" y="727.3" width="1" height="132.8"/><rect x="272" y="727.3" width="1" height="132.8"/><rect x="470.3" y="727.3" width="1" height="132.8"/><rect x="667.5" y="727.3" width="1" height="132.8"/>
+   {[748.3,770.7,792.7,815.7,837.2].map(y=><rect key={'wuh'+y} x="77" y={y} width="393.3" height="1"/>)}
+   <rect x="77" y="860.1" width="590.5" height="1"/>
+  </svg>
+  {tx103(88,145.7,159,'ich')}{tx103(166.4,145.7,159,'will','naRed103 naNw')}
+  {tx103(88,168.2,181.5,'du')}{tx103(166.4,168.2,181.5,'willst','naRed103 naNw')}
+  {tx103(88,191.2,204.5,'er/sie/es')}{tx103(165.4,191.2,204.5,'will','naRed103 naNw')}
+  {tx103(88,213.2,226.5,'wir')}{tx103(165.4,213.2,226.5,'wollen','naRed103 naNw')}
+  {tx103(88,234.7,248,'ihr')}{tx103(164.4,234.7,248,'wollt','naRed103 naNw')}
+  {tx103(88,259.2,272.5,'sie/Sie')}{tx103(164.4,259.2,272.5,'wollen','naRed103 naNw')}
+  {tx103(263.5,147.2,160.5,'ich')}{tx103(339.7,147.2,160.5,'soll','naRed103 naNw')}
+  {tx103(263.5,171.2,184.5,'du')}{tx103(338.7,171.2,184.5,'sollst','naRed103 naNw')}
+  {tx103(263.5,193.7,207,'er/es/sie')}{tx103(338.7,193.7,207,'soll','naRed103 naNw')}
+  {tx103(263.5,216.2,229.5,'wir')}{tx103(338.7,216.2,229.5,'sollen','naRed103 naNw')}
+  {tx103(263.5,238.2,251.5,'ihr')}{tx103(337.7,238.2,251.5,'sollt','naRed103 naNw')}
+  {tx103(263.5,260.7,274,'sie/Sie')}{tx103(337.7,260.7,274,'sollen','naRed103 naNw')}
+  {tx103(514,150,163,'dürfen','naColH103 naNw')}{tx103(591,151,164,'müssen','naColH103 naNw')}
+  {tx103(427.5,169.7,183,'ich')}{tx103(511.7,169.7,183,'darf','naRed103 naNw')}{tx103(588.8,170.7,184,'muss','naRed103 naNw')}
+  {tx103(427.5,191.7,205,'du')}{tx103(511.7,192.7,206,'darfst','naRed103 naNw')}{tx103(587.8,192.7,206,'musst','naRed103 naNw')}
+  {tx103(427.5,215.2,228.5,'er/es/sie')}{tx103(511.7,215.2,228.5,'darf','naRed103 naNw')}{tx103(587.8,215.2,228.5,'muss','naRed103 naNw')}
+  {tx103(427.5,238.2,251.5,'wir')}{tx103(510.7,238.2,251.5,'dürfen','naRed103 naNw')}{tx103(587.8,238.2,251.5,'müssen','naRed103 naNw')}
+  {tx103(427.5,259.2,272.5,'ihr')}{tx103(510.7,259.2,272.5,'dürft','naRed103 naNw')}{tx103(586.8,259.2,272.5,'müsst','naRed103 naNw')}
+  {tx103(427.5,284.2,297.5,'sie/Sie')}{tx103(509.7,284.2,297.5,'dürfen','naRed103 naNw')}{tx103(586.8,284.2,297.5,'müssen','naRed103 naNw')}
+  <div className="naBand103" style={{left:79.7,top:316.8,width:592.5,height:26}}/>
+  {tx103(87,320.6,334,'Präteritum: sein und haben','naBandT103 naNw',12.2)}{tx103(272,320.7,334,'L19','naLT103 naNw',12.5)}
+  {tx103(204.2,344.2,357,'Präsens','naColH103 naNw')}{tx103(322.8,344.2,357,'Präteritum','naColH103 naNw')}
+  {tx103(441.4,344.2,357,'Präsens','naColH103 naNw')}{tx103(559.9,344.2,357,'Präteritum','naColH103 naNw')}
+  {tx103(85.5,365.2,379,'ich')}{tx103(203.2,365.2,379,'bin')}{tx103(322.8,365.2,379,'war','naRed103 naNw')}{tx103(441.4,365.2,379,'habe')}{tx103(559.9,365.2,379,'hatte','naRed103 naNw')}
+  {tx103(85.5,388.7,402,'du')}{tx103(203.2,388.7,402,'bist')}{tx103(322.8,388.7,402,'warst','naRed103 naNw')}{tx103(441.4,388.7,402,'hast')}{tx103(559.9,388.7,402,'hattest','naRed103 naNw')}
+  {tx103(85.5,410.1,424.5,'er/es/sie')}{tx103(203.2,410.1,424.5,'ist')}{tx103(322.8,410.1,424.5,'war','naRed103 naNw')}{tx103(441.4,410.1,424.5,'hat')}{tx103(559.9,410.1,424.5,'hatte','naRed103 naNw')}
+  {tx103(85.5,432.5,446,'wir')}{tx103(203.2,432.5,446,'sind')}{tx103(322.8,432.5,446,'waren','naRed103 naNw')}{tx103(441.4,432.5,446,'haben')}{tx103(559.9,432.5,446,'hatten','naRed103 naNw')}
+  {tx103(85.5,455.8,469,'ihr')}{tx103(203.2,455.8,469,'seid')}{tx103(322.8,455.8,469,'wart','naRed103 naNw')}{tx103(441.4,455.8,469,'habt')}{tx103(559.9,455.8,469,'hattet','naRed103 naNw')}
+  {tx103(85.5,477.4,491.5,'sie/Sie')}{tx103(203.2,477.4,491.5,'sind')}{tx103(322.8,477.4,491.5,'waren','naRed103 naNw')}{tx103(441.4,477.4,491.5,'haben')}{tx103(559.9,477.4,491.5,'hatten','naRed103 naNw')}
+  <div className="naBand103" style={{left:77.7,top:515.5,width:591.5,height:25}}/>
+  {tx103(84,520.4,534,'Perfekt: nicht trennbare Verben','naBandT103 naNw',12.4)}{tx103(301,520.7,534,'L19','naLT103 naNw',12.5)}
+  {tx103(83.7,542.3,557,'Infinitiv','naColH103 naNw')}{tx103(281.9,542.3,556,'Präsens (heute)','naColH103 naNw')}
+  {tx103(479.2,542.3,557,'Perfekt (früher)','naColH103 naNw')}
+  {tx103(481,567,581,'haben +be/ge/ver...en/t','naRedB103 naNw')}
+  {tx103(82.7,585.7,599,'erkennen')}{tx103(279.5,587.4,602,'er/sie erkennt')}{mix103(478.5,591.2,180,[['er/sie '],['hat erkannt',1]])}
+  {tx103(82.7,608.7,622,'bekommen')}{tx103(279.5,610.2,624,'er/sie bekommt')}{mix103(478.5,612.5,180,[['er/sie '],['hat bekommen',1]])}
+  {mix103(82.7,629.7,505,[['auch so: ',4],['gefallen – gefallen, vergessen – vergessen, entschuldigen – entschuldigt,']])}
+  {tx103(128,648.2,661.5,'beschweren – beschwert')}
+  {mix103(82,665.2,230,[['auch so nach: ',4],['ent-, emp-, miss-, zer-']])}
+  <div className="naBand103" style={{left:75.7,top:703.3,width:591.5,height:24}}/>
+  {tx103(82,707.4,721,'Wünsche: Konjunktiv II','naBandT103 naNw',12.4)}{tx103(249,707.7,721,'L24','naLT103 naNw',12.5)}
+  {tx103(81.7,727.6,742,'ich')}{tx103(279,727.6,742,'würde','naRed103 naNw')}
+  {tx103(80.7,751.5,764.5,'du')}{tx103(280.2,751.5,764.5,'würdest','naRed103 naNw')}
+  {tx103(80.7,772.8,788,'er/es/sie')}{tx103(279,772.8,788,'würde','naRed103 naNw')}
+  {tx103(80.7,796.1,809,'wir')}{tx103(278,796.1,809,'würden','naRed103 naNw')}
+  {tx103(80.7,818.5,831.5,'ihr')}{tx103(278,818.5,831.5,'würdet','naRed103 naNw')}
+  {tx103(80.7,841.5,855,'sie/Sie')}{tx103(278,841.5,855,'würden','naRed103 naNw')}
+  {mix103(475.2,783.2,190,[['gern mit dir '],['feiern',1]])}
+  {text(637.2,1050.0,80,'hundertdrei','naFoot103 naNw',13)}{text(720.8,1051,4,'|','naFoot103 naNw',13)}{text(736.8,1051.1,20,'103','naFootD103 naNw',13)}
+
  </>}
  {page==='97'&&<>
   {text(71.7,54,580,'WIEDERHOLUNGSSTATION: GRAMMATIK','naHead97 naNw',28.5)}
