@@ -33,3 +33,6 @@ html[data-theme=dark] output[data-reader-reset]{color:#b4232d!important}
 .hasActiveAudio .readerAudioPanel{display:none}
 .readerActiveClose{color:#315a4a!important}
 html[data-theme=dark] .readerActiveClose{color:#f9fbff!important}
+
+html:has(body.hasActiveAudio),body.hasActiveAudio #viewport{scroll-padding-bottom:calc(var(--reader-controls-height,56px) + var(--active-audio-height,108px) + 16px)}
+body.hasActiveAudio{padding-bottom:calc(var(--reader-controls-height,56px) + var(--active-audio-height,108px) + 24px)}
