@@ -79,6 +79,25 @@ type KeyedPage={book:string;page:number;fields:ScanField[]};
 const nativeFiles=import.meta.glob('../native-data/*/*.json',{eager:true,import:'default'}) as Record<string,KeyedPage>;
 const normText=(x:string)=>x.normalize('NFC').toLocaleLowerCase('de').replace(/[„“”"’'‚‘]/g,'').trim().replace(/[.!?…]+$/,'').replace(/\s+/g,' ').trim();
 const normSet=(x:string)=>x.split(/[\n;]+/).map(normText).filter(Boolean).sort().join('\n');
+// Fixed-list answer mode for exercises whose official key is a closed set of items.
+// "set:a;;b;;c" = the value, split on commas, semicolons or line breaks, must contain exactly
+// the key items, in any order ("|" still separates accepted spellings inside one item).
+// "..." and "…" are equivalent. An empty value never matches. Answers without the prefix
+// return null and callers keep the exact-match logic.
+export function answerMatchMode(answer:string,rawValue:string):boolean|null{
+ if(!answer.startsWith('set:'))return null;
+ const ell=(x:string)=>x.replace(/\.{3,}/g,'…');
+ const key=answer.slice(4).split(';;').map(a=>a.split('|').map(v=>normText(ell(v))).filter(Boolean)).filter(a=>a.length);
+ const got=rawValue.split(/[,;\n]+/).map(v=>normText(ell(v))).filter(Boolean);
+ if(got.length!==key.length)return false;
+ const used=new Array<boolean>(key.length).fill(false);
+ for(const g of got){
+  const i=key.findIndex((alts,j)=>!used[j]&&alts.includes(g));
+  if(i<0)return false;
+  used[i]=true;
+ }
+ return true;
+}
 const pageSources=(page:string)=>[...Object.entries(scanData).filter(([k])=>k.endsWith(':'+page)).map(([,d])=>d as KeyedPage),...Object.values(nativeFiles).filter(d=>String(d.page)===page)];
 const fieldEls=(root:ParentNode,id:string)=>[...root.querySelectorAll<HTMLElement>('[data-native-field]')].filter(e=>e.dataset.nativeField===id);
 const registry=new WeakMap<HTMLButtonElement,Record<string,string>>();
@@ -118,6 +137,8 @@ function isRight(f:ScanField,el:HTMLElement){
  if(el instanceof HTMLSelectElement){const picked=[el.value,el.selectedOptions[0]?.textContent||''].map(normText);return answer.split('|').some(a=>picked.includes(normText(a)))}
  const value=el.dataset.value??(el instanceof HTMLButtonElement?(el.textContent||''):((el as HTMLInputElement).value||''));
  if(f.unordered)return normSet(answer)===normSet(value);
+ const mode=answerMatchMode(answer,value);
+ if(mode!==null)return mode;
  return answer.split('|').some(a=>normText(a)===normText(value));
 }
 function isToggle(el:HTMLElement){return el instanceof HTMLInputElement&&(el.type==='radio'||el.type==='checkbox')}

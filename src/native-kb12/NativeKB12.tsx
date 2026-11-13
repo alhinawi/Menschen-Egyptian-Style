@@ -1,4 +1,5 @@
 import {CheckButton} from '../components/CheckButton';
+import {answerMatchMode} from '../components/check-feedback';
 import {PageImage} from '../components/PageImage';
 import {usePageReset} from '../exercises/usePageReset';
 import {LineMatching} from '../exercises/LineMatching';
@@ -23,9 +24,17 @@ export function NativeKB12({page}:{page:string}){
  const dot=(id:string,value:string,x:number,y:number,label:string,checkbox=false)=><input className="nkDot" type={checkbox?'checkbox':'radio'} aria-label={label} data-value={value} name={key+'-'+id} checked={checkbox?values[id]==='true':values[id]===value} onChange={e=>set(id,checkbox?String(e.target.checked):value)} style={{left:x,top:y}}/>;
  const mail=(id:string,t:string)=><>{t.split(/(\b(?:für|nach|vor|in)\b)/gi).map((part,i)=>/^(für|nach|vor|in)$/i.test(part)?<button key={i} className={'nkMailMark '+(values[id+'-'+i]==='true'?'selected':'')} aria-label={'Markieren: '+part} aria-pressed={values[id+'-'+i]==='true'} onClick={()=>set(id+'-'+i,String(values[id+'-'+i]!=='true'))}>{part}</button>:<Words key={i} text={part}/>)}</>;
  const mark20=(t:string)=><button className={'nkDiaryMark '+(values['mark-'+t]==='true'?'selected':'')} aria-label={'Markieren: '+t} aria-pressed={values['mark-'+t]==='true'} onClick={()=>set('mark-'+t,String(values['mark-'+t]!=='true'))}>{t}</button>;
- const NOBOX=new Set(["oft","p11:den Weg beschreiben","p11:den Weg nicht kennen","Wie ist das Wetter? Hörbeispiel 1", "Wie ist das Wetter? Hörbeispiel 2", "Was machen Sie gerade? Hörbeispiel 2", "Was machen Sie gerade? Hörbeispiel 3", "Was machen Sie gerade? Hörbeispiel 4", "Mein Urlaub: Ort?", "Hannes: Wetter?", "Mein Urlaub: Aktivitäten?", "Hannes: Aktivitäten?", "Fest zu Gutes/Frohes neues Jahr!", "Fest zu Frohe Weihnachten!"]);
+ const NOBOX=new Set(["oft","Wie ist das Wetter? Hörbeispiel 1", "Wie ist das Wetter? Hörbeispiel 2", "Was machen Sie gerade? Hörbeispiel 2", "Was machen Sie gerade? Hörbeispiel 3", "Was machen Sie gerade? Hörbeispiel 4", "Mein Urlaub: Ort?", "Hannes: Wetter?", "Mein Urlaub: Aktivitäten?", "Hannes: Aktivitäten?", "Fest zu Gutes/Frohes neues Jahr!", "Fest zu Frohe Weihnachten!"]);
  const open=(id:string,x:number,y:number,w:number,h:number,label:string,placeholder='')=>NOBOX.has(label)?null:<textarea className="nkOpen" aria-label={label} style={{left:x,top:y,width:w,height:h}} value={values[id]||''} placeholder={placeholder} onChange={e=>set(id,e.target.value)}/>;
- const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="nkCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))||(((page==='64'&&k==='7a-2')||(page==='67'&&k.startsWith('4a-')))&&normalize(v).split(/\s*[,;]\s*/).sort().join('|')===normalize(values[k]||'').split(/\s*[,;]\s*/).sort().join('|'))))})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const check=(id:string,x:number,y:number,answers:Record<string,string>)=>{
+  const graded=Object.entries(answers).every(([k,a])=>{
+   const mode=answerMatchMode(a,values[k]||'');
+   if(mode!==null)return mode;
+   return a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))||(((page==='64'&&k==='7a-2')||(page==='67'&&k.startsWith('4a-')))&&normalize(v).split(/\s*[,;]\s*/).sort().join('|')===normalize(values[k]||'').split(/\s*[,;]\s*/).sort().join('|')));
+  });
+  return <div className="nkCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:graded})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ };
+ const save=(id:string,x:number,y:number)=><div className="nkCheck" data-save={id} style={{left:x,top:y}}><CheckButton onClick={()=>sr({...results,['save-'+id]:true})}></CheckButton><output aria-live="polite">{results['save-'+id]?'Gespeichert':''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,t:string)=><div className="nkTitle" style={{left:x,top:y,width:w}}><b>{n}</b><Words text={t}/></div>;
  const clip=(n:number,y:number)=><button className="nkAudio" style={{left:40,top:y}} onClick={()=>sf(({13:'fi8siL2PgPE',14:'R_zKkuFByzM',15:'ify1e7g_Dpc',16:'QyJQytmYVvw',17:'C__8IoATxD8',18:'uyeIHkUXUJo'} as Record<number,string>)[n])}>▶ Clip {n}</button>;
  const audio=(src:string,x:number,y:number,label:string,displayLabel?:string,task?:string)=><button className="nkAudio" data-task={task} style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {displayLabel||label}</button>;
@@ -91,7 +100,7 @@ export function NativeKB12({page}:{page:string}){
   {art('vocab',0,0,1100,103)}{['zwischen','über','unter','in'].map((t,i)=>text(113+i*238,108,120,t,'nkCenter nkSmall'))}{text(1015,43,85,'13','nkLesson')}
   {audio('assets/kb-cd3-track03.mp3',48,183,'3 03',undefined,'5')}{title('5',105,179,870,'Wo ist das Hotel?')}
   {text(117,223,870,'a  Hören Sie das Gespräch weiter.\n    Tragen Sie den Weg und das Hotel in den Plan in 3 ein.','nkBold')}
-  {field('5a-route',154,281,810,'Weg und Hotel: Notizen für den Plan in 3')}
+  {field('5a-route',154,281,700,'Weg und Hotel: Notizen für den Plan in 3')}{save('5a',865,281)}
   {text(117,321,870,'b  Hören Sie noch einmal und kreuzen Sie an.','nkBold')}
   {['Das ist in','Ach, das „Maritim“ ist','Ja, zwischen','Dann kommen Sie unter','An','Vor','An'].map((t,i)=>{const y=365+i*29;const opts=[['der','die'],['in das','im'],['dem','der'],['eine','einer'],['der','die'],['dem','das'],['die','den']][i];const suffix=['Stadtmitte.','Zentrum?','Bahnhof und dem Dom.','Brücke durch.','Ampel fahren Sie nach links.','Restaurant fahren Sie nach rechts.','Cafés fahren Sie vorbei.'][i];const x=[290,400,320,427,230,235,230][i];return <div key={i}>{text(150,y,x-154,`${i+1}  ${t}`)}{opts.map((o,j)=><div key={o}>{dot('5b-'+i,o,x+j*102,y,o+': '+t)}{text(x+30+j*102,y,75,o)}</div>)}{text(x+210,y,500,suffix)}</div>})}
   {check('5b',150,576,{'5b-0':'der','5b-1':'im','5b-2':'dem','5b-3':'einer','5b-4':'der','5b-5':'dem','5b-6':'den'})}
@@ -105,7 +114,9 @@ export function NativeKB12({page}:{page:string}){
   {title('6',105,902,920,'Wo ist Laura? Arbeiten Sie auf Seite 73.')}
   {title('7',105,958,920,'Wegbeschreibungen. Ordnen Sie zu.')}
   {text(150,1002,850,'Entschuldigung! | Ich bin auch fremd hier. | Können Sie mir helfen? | … einen/zwei/… Kilometer geradeaus. Und dann sehen Sie schon … | Wo ist denn hier …? | Kennen Sie …? | Wenden Sie. | Das ist in der Nähe (von) … | Ich suche … | Trotzdem: Dankeschön! | Tut mir leid. Ich bin nicht von hier. | Sie biegen rechts/links ab. | Sie fahren/gehen geradeaus / nach rechts / nach links. | … die nächste Straße rechts/links. | Sehr nett! Vielen Dank!','nkBank')}
-  {['nach dem Weg fragen','sich bedanken','den Weg beschreiben','den Weg nicht kennen'].map((t,i)=><div key={t}>{text(153+i*211,1155,205,t,'nkHand nkSmall')}{NOBOX.has('p11:'+t)?null:<textarea className="nkOpen" style={{left:[159,364,0,0][i],top:[1191,1257,0,0][i],width:[188,205,0,0][i],height:[60,48,0,0][i]}} aria-label={t} value={values['7-'+i]||(i===0?'Entschuldigung! …':'')} onChange={e=>set('7-'+i,e.target.value)}/>}</div>)}
+  {['nach dem Weg fragen','sich bedanken','den Weg beschreiben','den Weg nicht kennen'].map((t,i)=>text(153+i*211,1155,205,t,'nkHand nkSmall'))}
+  {[[159,188],[364,195],[575,195],[786,195]].map(([x,w],i)=><textarea key={i} className="nkOpen" data-native-field={'7-'+i} style={{left:x,top:1191,width:w,height:60}} aria-label={['nach dem Weg fragen','sich bedanken','den Weg beschreiben','den Weg nicht kennen'][i]} placeholder={i===0?'Entschuldigung! …':''} value={values['7-'+i]||''} onChange={e=>set('7-'+i,e.target.value)}/>)}
+  {check('7',157,1265,{'7-0':'set:Können Sie mir helfen?;;Wo ist denn hier …?;;Kennen Sie …?;;Ich suche …','7-1':'set:Trotzdem: Dankeschön!;;Sehr nett! Vielen Dank!','7-2':'set:… einen/zwei/… Kilometer geradeaus. Und dann sehen Sie schon …;;Wenden Sie.;;Das ist in der Nähe (von) …;;Sie biegen rechts/links ab.;;Sie fahren/gehen geradeaus / nach rechts / nach links.;;… die nächste Straße rechts/links.','7-3':'set:Ich bin auch fremd hier.;;Tut mir leid. Ich bin nicht von hier.'})}
   {title('8',105,1344,630,'Einen Weg beschreiben: Wie gut ist Ihr Gedächtnis?')}{text(148,1400,530,'Arbeiten Sie zu zweit auf Seite 74.','nkBold')}
   {art('turns',760,1270,277,195)}
  </>}
