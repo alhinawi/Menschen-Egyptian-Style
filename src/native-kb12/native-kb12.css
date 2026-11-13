@@ -140,3 +140,4 @@
 .nkCanvas .nkInlineExample{display:inline-block;box-sizing:border-box;width:27px;height:27px;border:1px solid #a5b09d;border-radius:50%;text-align:center;line-height:25px;color:#335b98;font-style:italic;vertical-align:middle}
 .nkCanvas .nkSigns input{width:25px!important;height:25px!important;border-radius:50%!important;text-align:center!important}
 .nkCanvas .nkSigns input{appearance:none!important;min-height:0!important;min-width:0!important;margin:0!important;padding:0!important;border:1px solid #a9af9e!important;background:#fffef4!important;font:20px/23px Georgia!important;box-sizing:border-box!important;flex:none}
+.nkRules tbody tr:first-child textarea{height:101px!important}.nkRules tbody tr:first-child td{padding-bottom:56px}
