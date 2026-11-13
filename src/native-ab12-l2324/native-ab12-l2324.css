@@ -112,7 +112,7 @@
 .naCanvas .naText.naLet5{font-size:15px!important}
 .naCanvas .naText.naLet7{font-size:15px!important}
 .naCanvas .naText.naLet6{font-family:FiraSans,'Trebuchet MS',sans-serif;font-weight:700;color:#5d78b3;font-size:13px;font-style:normal;letter-spacing:0}
-[data-native-ab12="91"] .naBank88{font-size:12.4px}
+[data-native-ab12="91"] .naBank88{font-size:12.4px;color:#435980}
 
 [data-native-ab12="91"] .naBookSerif{letter-spacing:0!important}
 [data-native-ab12="91"] .naBank88{font-weight:500}
@@ -123,3 +123,4 @@
 [data-native-ab12="91"] .naTblH{border-top:1px solid #e2e3d5}
 [data-native-ab12="91"] .naTblHead{background:#ede8d2}
 [data-native-ab12="91"] .naField{border-bottom-width:1px!important;border-bottom-color:#d3d9d3!important}
+.naCanvas .naText.naEx4t{font-size:13.7px!important}
