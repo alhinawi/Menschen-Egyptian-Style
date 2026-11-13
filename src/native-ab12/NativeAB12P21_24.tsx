@@ -10,7 +10,7 @@ function Words({text}:{text:string}){return <>{text.split(/(\s+)/).map((w,i)=>/\
 const normalize=(s:string)=>s.normalize('NFC').trim().toLocaleLowerCase('de').replace(/[.!?]+$/,'').replace(/\s+/g,' ');
 
 export function NativeAB12P21_24({page}:{page:string}){
- const W=1071,H=page==='21'?1447:1452;
+ const W=1071,H=(page==='21'||page==='25')?1447:1452;
  const root=useRef<HTMLDivElement>(null),player=useRef<HTMLAudioElement>(null);
  const [scale,ss]=useState(.6);const key='native-ab12-'+page;
  const [values,sv]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return {}}});
@@ -341,6 +341,134 @@ export function NativeAB12P21_24({page}:{page:string}){
   {check('g3',958,1345,{'p24-4a':'Urlaub','p24-4b':'Bergen','p24-4c':'Wetter','p24-4d':'Meer','p24-4e':'Dom','p24-4f':'Wochen','p24-4g':'Hause'})}
   {art('modul-tab',0,1384,86,30)}
   {text(76,1392,200,'24 | vierundzwanzig','naFooter naNw')}
+ </>}
+ {page==='25'&&<>
+  {text(102,68,790,'WIEDERHOLUNGSSTATION: GRAMMATIK','naHead2 naH38')}
+  {art('tabs',973,40,96,81)}
+  {art('house',100,105,515,228)}
+  {title('1',105,405,795,'Sehen Sie das Bild an und ergänzen Sie die Präpositionen und den Artikel, wo nötig.','naRB naT18 naLS3')}
+  {stext(146,476,14,'a')}
+  {stext(171,472,168,'Frau Kerner wohnt')}
+  {art('neben',344,475,42,18)}
+  {stext(389,472,145,'Herrn Rahn und')}
+  {field('p25-1a',540,465,115,'1a')}
+  {stext(661,472,150,'Familie Burlach.')}
+  {stext(146,502,14,'b')}
+  {stext(171,498,96,'Frau Other wohnt')}
+  {field('p25-1b',333,491,117,'1b')}
+  {stext(455,498,150,'Familie Burlach.')}
+  {stext(146,528,14,'c')}
+  {field('p25-1c1',170,516,116,'1c1')}
+  {stext(290,524,14,'d')}
+  {field('p25-1c2',302,516,51,'1c2')}
+  {stext(359,524,165,'Haus ist ein Baum.')}
+  {stext(530,524,186,'Die Fahrräder stehen')}
+  {field('p25-1c3',722,517,115,'1c3')}
+  {stext(843,524,60,'Baum.')}
+  {stext(146,553,14,'d')}
+  {field('p25-1d1',170,541,128,'1d1')}
+  {stext(303,549,14,'d')}
+  {field('p25-1d2',315,542,51,'1d2')}
+  {stext(372,549,155,'Baum ist ein Zelt.')}
+  {field('p25-1d3',531,543,92,'1d3')}
+  {stext(628,549,232,'Zelt sind Sophie und Paul.')}
+  {stext(146,583,14,'e')}
+  {stext(171,577,305,'Herr und Frau Burlach sitzen gern')}
+  {field('p25-1e1',480,569,117,'1e1')}
+  {stext(600,577,14,'d')}
+  {field('p25-1e2',612,569,52,'1e2')}
+  {stext(670,577,70,'Balkon.')}
+  {check('g1',958,577,{'p25-1a':'unter','p25-1b':'über|ueber','p25-1c1':'Neben|neben','p25-1c2':'em','p25-1c3':'am','p25-1d1':'Vor','p25-1d2':'em','p25-1d3':'Im','p25-1e1':'auf','p25-1e2':'em'})}
+  {title('2',105,637,900,'Ergänzen Sie die Possessivartikel.','naRB naT18')}
+  {stext(146,683,14,'a')}
+  {stext(171,678,530,'Herr Rahn wohnt im Erdgeschoss. Er wohnt allein und liebt')}
+  {art('seine',704,681,38,19)}
+  {stext(746,678,75,'Blumen.')}
+  {stext(146,708,14,'b')}
+  {field('p25-2b',170,696,116,'2b')}
+  {stext(292,705,470,'Nachbarin, Frau Kerner, wohnt auch im Erdgeschoss.')}
+  {stext(146,735,14,'c')}
+  {stext(171,730,310,'Im 1. Stock wohnt Familie Burlach.')}
+  {field('p25-2c1',485,723,117,'2c1')}
+  {stext(607,730,180,'Sohn heißt Paul und')}
+  {field('p25-2c2',792,723,110,'2c2')}
+  {stext(170,756,295,'Tochter Sophie. Die Eltern finden')}
+  {field('p25-2c3',470,749,115,'2c3')}
+  {stext(591,756,165,'Balkon sehr schön.')}
+  {stext(146,786,14,'d')}
+  {stext(171,782,265,'Frau Other wohnt im 2. Stock.')}
+  {field('p25-2d1',442,774,106,'2d1')}
+  {stext(562,782,362,'Wohnung ist sehr groß und sie vermietet')}
+  {stext(170,808,110,'ein Zimmer.')}
+  {field('p25-2d2',283,799,115,'2d2')}
+  {stext(404,808,250,'Mieterin heißt Frau Reimer.')}
+  {check('g2',958,808,{'p25-2b':'Seine','p25-2c1':'Ihr','p25-2c2':'ihre','p25-2c3':'ihren','p25-2d1':'Ihre','p25-2d2':'Ihre'})}
+  {title('3',105,869,900,'Wer ist wer? Ergänzen Sie die Namen.','naRB naT18')}
+  {stext(146,915,14,'a')}
+  {stext(170,909,232,'Sophie ist Herrn und Frau')}
+  {art('burlachs',406,911,63,21)}
+  {stext(471,909,72,'Tochter.')}
+  {stext(146,940,14,'b')}
+  {stext(171,936,182,'Frau Reimer ist Frau')}
+  {field('p25-3b',358,929,155,'3b')}
+  {stext(518,936,85,'Mieterin.')}
+  {stext(146,966,14,'c')}
+  {stext(170,960,68,'Paul ist')}
+  {field('p25-3c',241,954,154,'3c')}
+  {stext(401,960,68,'Bruder.')}
+  {stext(146,990,14,'d')}
+  {stext(171,986,142,'Frau Burlach ist')}
+  {field('p25-3d1',317,980,155,'3d1')}
+  {stext(477,986,36,'und')}
+  {field('p25-3d2',517,980,154,'3d2')}
+  {stext(677,988,68,'Mutter.')}
+  {stext(146,1017,14,'e')}
+  {stext(171,1012,160,'Herr Rahn ist Frau')}
+  {field('p25-3e',341,1006,155,'3e')}
+  {stext(502,1012,80,'Nachbar.')}
+  {check('g3',958,1012,{'p25-3b':'Others','p25-3c':'Sophies','p25-3d1':'Pauls','p25-3d2':'Sophies','p25-3e':'Kerners'})}
+  {title('4',105,1075,900,'Ergänzen Sie das Pronomen.','naRB naT18')}
+  {stext(146,1120,14,'a')}
+  <span className="naSqB" style={{left:170,top:1123}}/>
+  {stext(189,1116,442,'Frau Neuner hat heute viel Arbeit und wenig Zeit.')}
+  {stext(638,1116,100,'Können Sie')}
+  {stext(823,1116,115,'bitte helfen?')}
+  <div className="naRule" style={{left:742,top:1136,width:77}}/>
+  <span className="naTriG" style={{left:171,top:1149}}/>
+  {stext(187,1142,200,'Ja, natürlich helfe ich')}
+  {art('ihr',389,1143,24,19)}
+  {stext(146,1166,14,'b')}
+  <span className="naSqB" style={{left:170,top:1174}}/>
+  {stext(187,1166,250,'Johanna und Martin, gefällt')}
+  {field('p25-4b1',444,1161,102,'4b1')}
+  {stext(551,1166,200,'denn mein Sofa nicht?')}
+  <span className="naTriG" style={{left:171,top:1201}}/>
+  {stext(189,1191,132,'Doch, es gefällt')}
+  {field('p25-4b2',327,1186,116,'4b2')}
+  {stext(444,1191,8,'.')}
+  {stext(146,1223,14,'c')}
+  <span className="naSqB" style={{left:170,top:1226}}/>
+  {stext(188,1217,158,'Gehört das Handy')}
+  {field('p25-4c1',350,1212,122,'4c1')}
+  {stext(476,1217,170,', Herr Kleinschmid?')}
+  <span className="naTriG" style={{left:171,top:1252}}/>
+  {stext(187,1243,112,'Ja, es gehört')}
+  {field('p25-4c2',300,1237,159,'4c2')}
+  {stext(459,1243,8,'.')}
+  {stext(146,1269,14,'d')}
+  <span className="naSqB" style={{left:170,top:1277}}/>
+  {stext(189,1269,500,'Ich finde das Schloss Schönbrunn in Wien sehr schön.','naS19')}
+  {stext(670,1269,88,'Gefällt es','naS19')}
+  {field('p25-4d1',756,1264,148,'4d1')}
+  {stext(189,1294,132,'nicht, Juliane?')}
+  <span className="naTriG" style={{left:171,top:1329}}/>
+  {stext(189,1319,132,'Doch, es gefällt')}
+  {field('p25-4d2',327,1314,156,'4d2')}
+  {stext(491,1319,430,', aber ich finde Schlösser ein bisschen langweilig.')}
+  {check('g4',958,1342,{'p25-4b1':'euch','p25-4b2':'uns','p25-4c1':'Ihnen','p25-4c2':'mir','p25-4d1':'dir','p25-4d2':'mir'})}
+  {text(797,1383,135,'fünfundzwanzig','naFooter naNw')}
+  {text(943,1383,35,'| 25','naFooter naNw')}
+  {art('modul',993,1388,57,21)}
  </>}
  </div><audio ref={player} className="naPlayer"/></div>;
 }

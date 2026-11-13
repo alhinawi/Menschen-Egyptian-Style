@@ -40,3 +40,13 @@
 [data-native-ab12="24"] .naCanvas .naField.naDashU{border-bottom:none!important;background-color:transparent!important;background-image:repeating-linear-gradient(90deg,#abadad 0 8px,rgba(0,0,0,0) 8px 15px)!important;background-size:100% 1.3px!important;background-position:left bottom!important;background-repeat:no-repeat!important}
 [data-native-ab12="24"] .naCanvas .naText.naF192{font-size:19.2px!important}
 [data-native-ab12="24"] .naCanvas .naField.naLow{height:23px!important}
+[data-native-ab12="25"] .naCanvas .naSqB{position:absolute;width:10px;height:10px;background:#123995}
+[data-native-ab12="25"] .naCanvas .naTriG{position:absolute;width:0;height:0;border-left:5.5px solid transparent;border-right:5.5px solid transparent;border-bottom:10px solid #2aad3b}
+[data-native-ab12="25"] .naCanvas .naSans2{font-size:20px!important;margin-top:-2px}
+[data-native-ab12="25"] .naCanvas .naText.naH38{letter-spacing:2.4px!important}
+[data-native-ab12="25"] .naCanvas .naTitle{padding-left:46px;text-indent:-46px}
+[data-native-ab12="25"] .naCanvas .naTitle.naLS3{letter-spacing:.35px!important}
+[data-native-ab12="25"] .naCanvas .naField{border-bottom-color:#c9ced2!important}
+[data-native-ab12="25"] .naCanvas .naRule{border-bottom-color:#c9ced2!important}
+[data-native-ab12="25"] .naCanvas .naSans2.naS19{font-size:19px!important}
+[data-native-ab12="25"] .naCanvas .naText.naFooter.naNw{letter-spacing:-1px!important}
