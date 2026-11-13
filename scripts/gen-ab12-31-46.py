@@ -37,22 +37,27 @@ def line_color(img, x, y, w, h):
 
 
 def group_lines(words):
+    if not words:
+        return []
+    pitch = max(16.0, sorted(w['h'] for w in words)[len(words) // 2] * 1.5)
     ws = sorted(words, key=lambda w: (w['y'] + w['h'] / 2, w['x']))
     lines = []
     for w in ws:
         cy = w['y'] + w['h'] / 2
-        placed = False
+        best = None
         for ln in lines:
-            mh = max(12, ln['h'])
-            if ln['y0'] - 0.45 * mh <= cy <= ln['y1'] + 0.45 * mh:
-                ln['words'].append(w)
-                ln['y0'] = min(ln['y0'], w['y'])
-                ln['y1'] = max(ln['y1'], w['y'] + w['h'])
-                ln['h'] = sorted([x['h'] for x in ln['words']])[len(ln['words']) // 2]
-                placed = True
-                break
-        if not placed:
-            lines.append({'words': [w], 'y0': w['y'], 'y1': w['y'] + w['h'], 'h': w['h']})
+            d = abs(cy - ln['cy'])
+            if d <= 0.45 * pitch and (best is None or d < best[0]):
+                best = (d, ln)
+        if best is None:
+            lines.append({'words': [w], 'y0': w['y'], 'y1': w['y'] + w['h'], 'h': w['h'], 'cy': cy})
+        else:
+            ln = best[1]
+            ln['words'].append(w)
+            ln['y0'] = min(ln['y0'], w['y'])
+            ln['y1'] = max(ln['y1'], w['y'] + w['h'])
+            ln['cy'] = sum(x['y'] + x['h'] / 2 for x in ln['words']) / len(ln['words'])
+            ln['h'] = sorted([x['h'] for x in ln['words']])[len(ln['words']) // 2]
     for ln in lines:
         ln['words'].sort(key=lambda w: w['x'])
     lines.sort(key=lambda ln: ln['y0'])

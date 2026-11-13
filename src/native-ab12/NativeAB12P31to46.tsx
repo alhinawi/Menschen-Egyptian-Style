@@ -177,74 +177,54 @@ export function NativeAB12P31to46({page}:{page:string}){
   {art('modul-tab',988,1384,80,32)}
  </>}
  {page==='32'&&<>
-  {art('1',166,242,727,54)}
-  {art('2',164,791,721,55)}
+  {art('1',166,242,727,118)}
+  {art('2',164,791,721,119)}
+  {rect(166,740,800,44,'#faf9ce')}
   {lin(376,108,607,5,'#bdd444')}
-  {lin(243,312,650,5,'#b9b8bd')}
-  {lin(601,333,255,3,'#c4c6c8')}
-  {lin(323,334,277,3,'#bfbfc1')}
-  {lin(514,418,342,2,'#c1c1d0')}
-  {lin(294,420,119,2,'#7a7a7a')}
-  {lin(660,484,193,3,'#bfbdcf')}
-  {lin(426,485,233,2,'#7a7a7a')}
-  {lin(426,529,427,2,'#c3c0c9')}
-  {lin(195,531,218,2,'#c3c3c6')}
-  {lin(504,573,353,2,'#c3c0c6')}
-  {lin(240,863,487,4,'#b9bcbd')}
-  {lin(731,865,154,3,'#bbbfc0')}
-  {lin(339,884,546,5,'#bcc1c6')}
-  {lin(230,938,283,5,'#c0c1c9')}
-  {lin(193,963,349,2,'#c5c4c8')}
-  {lin(609,965,248,3,'#bebec2')}
-  {lin(193,990,250,2,'#c4c4ce')}
-  {lin(505,992,352,3,'#c2c1c5')}
-  {lin(298,1018,114,2,'#7a7a7a')}
-  {lin(421,1018,436,4,'#c2c2c3')}
-  {lin(192,1045,665,5,'#c1c2c5')}
-  {lin(193,1072,542,4,'#c2c3c6')}
-  {lin(1067,1248,4,203,'#bbc5c7')}
+  {lin(232,940,274,2,'#c4c4ce')}
+  {lin(192,964,665,2,'#c2c3c6')}
+  {lin(192,991,665,2,'#c2c3c6')}
+  {lin(192,1018,665,2,'#c2c3c6')}
+  {lin(192,1045,665,2,'#c2c3c6')}
+  {lin(192,1072,665,2,'#c2c3c6')}
+  {lin(192,1097,665,2,'#c2c3c6')}
   {text(128,80,241,'BASISTRAINING','naHeadline naNw')}
-  {text(169,155,258,'Einen Termin verschieben.','naNw')}
-  {text(136,195,242,'a Ergänzen Sie die E-Mail.','naNw')}
-  {text(219,290,110,'Von: p.frei@gmx.de','naNw')}
-  {text(225,311,139,'An: chriswinter@aol.com','naS20 naNw')}
-  {text(208,329,115,'Betreff: Termin heute','naNw')}
-  {text(195,371,183,'Sehr geehrte Frau Winter,','naNw')}
-  {text(195,397,46,'leider (heute','naNw')}
-  {text(246,397,247,'um 16 Uhr nicht kommen können)','naNw')}
-  {text(195,440,624,'Wir haben ein Problem mit der Internetverbindung in der Firma und ich warte auf den','naNw')}
-  {text(194,465,73,'Techniker.','naNw')}
-  {text(195,487,212,'(Termin verschieben können)','naNw')}
-  {text(196,531,161,'(Mittwoch Zeit haben)','naNw')}
-  {text(196,566,302,'(ab Freitag für eine Woche im Urlaub sein)','naBold naNw')}
-  {text(196,603,178,'Mit freundlichen Grüßen','naNw')}
-  {text(196,626,67,'Peter Frei','naNw')}
-  {text(135,698,289,'b Antworten Sie auf die E-Mail.','naNw')}
-  {text(171,736,789,'kein Problem | natürlich Termin verschieben können | Mittwoch Zeit haben | passt 15 Uhr? | Grüße','naNw')}
-  {text(217,838,145,'Von: Chriswinter@aol.com','naS20 naNw')}
-  {text(223,859,103,'An: p.frei@gmx.de','naNw')}
-  {text(206,875,133,'Betreff: Re: Termin heute','naBold naNw')}
-  {text(165,1137,489,'Hören Sie das Telefongespräch und ordnen Sie zu.','naNw')}
-  {text(188,1177,114,'Heute um elf','naNw')}
-  {text(515,1177,394,'muss Stefan Kollegen am Flughafen abholen.','naNw')}
-  {text(188,1203,144,'In zwei Stunden','naNw')}
-  {text(515,1203,198,'hat Nina eine Sitzung.','naNw')}
-  {text(186,1229,211,'Am Donnerstag um drei','naNw')}
-  {text(515,1229,260,'am Freitag um 14.30 Uhr Zeit.','naNw')}
-  {text(187,1255,151,'Nach der Sitzung','naNw')}
-  {text(515,1255,189,'hat Stefan keine Zeit.','naNw')}
-  {text(186,1281,97,'Am Freitag','naNw')}
-  {text(515,1281,310,'muss Nina einen Kollegen anrufen.','naNw')}
-  {text(186,1306,91,'Stefan hat','naNw')}
-  {text(515,1306,324,'hat Nina nach dem Mittagessen Zeit.','naNw')}
+  {kb(80,163,'KB 8')}
+  {title('9',130,158,760,'Einen Termin verschieben.','naGB')}
+  <div className="naSide" style={{left:87,top:169,color:'#879cbb'}}>SCHREIBEN</div>
+  {stext(136,199,14,'a',{color:'#4357ad'},'naBold naNw')}
+  {text(169,195,210,'Ergänzen Sie die E-Mail.','naBold naNw')}
+  {text(195,371,190,'Sehr geehrte Frau Winter,','naNw')}
+  {text(195,397,45,'leider','naBold naNw')}
+  {stext(195,421,310,'(heute um 16 Uhr nicht kommen können)',{color:'#6e7373'},'naNw')}
+  {text(195,440,660,'Wir haben ein Problem mit der Internetverbindung in der Firma und ich warte auf den','naNw')}
+  {text(194,465,80,'Techniker.','naNw')}
+  {stext(195,487,220,'(Termin verschieben können)',{color:'#6e7373'},'naNw')}
+  {stext(196,531,170,'(Mittwoch Zeit haben)',{color:'#6e7373'},'naNw')}
+  {stext(196,566,310,'(ab Freitag für eine Woche im Urlaub sein)',{color:'#6e7373'},'naNw')}
+  {text(196,603,185,'Mit freundlichen Grüßen','naNw')}
+  {text(196,626,70,'Peter Frei','naNw')}
+  {stext(135,698,14,'b',{color:'#4357ad'},'naBold naNw')}
+  {text(165,699,265,'Antworten Sie auf die E-Mail.','naBold naNw')}
+  {stext(171,739,800,'kein Problem | natürlich Termin verschieben können | Mittwoch Zeit haben | passt 15 Uhr? | Grüße',{color:'#56617d'},'naSmall naNw')}
+  {text(165,920,42,'Sehr','naNw')}
+  {text(508,920,14,',','naNw')}
+  {kb(80,1138,'KB 8')}
+  {title('10',126,1140,780,'Hören Sie das Telefongespräch und ordnen Sie zu.','naGB')}
+  <div className="naSide" style={{left:92,top:1196,color:'#879cbb'}}>HÖREN</div>
+  {audio('assets/ab-a12-cd2-track15.mp3',64,1170,'CD2 · Track15')}
+  {art('modul-tab',0,1384,82,32)}
   {text(97,1392,176,'32 | zweiunddreißig','naFooter')}
-  {field('p32-9a1',240,395,615,'9a1')}
-  {field('p32-9a2',305,460,535,'9a2')}
-  {field('p32-9a3',195,509,645,'9a3')}
-  {field('p32-9a4',195,550,645,'9a4')}
-  {field('p32-9b',232,917,276,'9b')}
-  {audio('assets/ab-a12-cd2-track15.mp3',50,1166,'CD2 · Track15')}
-  {check('32-1',195,958,{'p32-9a1':'kann ich heute um 16 Uhr nicht kommen','p32-9a2':'Können wir den Termin verschieben','p32-9a3':'Haben Sie am Mittwoch Zeit','p32-9a4':'Ab Freitag bin ich für eine Woche im Urlaub','p32-9b':'geehrter Herr Frei'})}
+  {field('p32-9a1',245,393,605,'9a1')}
+  {text(853,404,16,'.','naNw')}
+  {field('p32-9a2',305,459,545,'9a2')}
+  {text(853,470,16,'?','naNw')}
+  {field('p32-9a3',195,503,655,'9a3')}
+  {text(853,518,16,'?','naNw')}
+  {field('p32-9a4',195,547,655,'9a4')}
+  {text(853,560,16,'.','naNw')}
+  {field('p32-9b',232,913,274,'9b')}
+  {check('32-1',700,1110,{'p32-9a1':'kann ich heute um 16 Uhr nicht kommen','p32-9a2':'Können wir den Termin verschieben','p32-9a3':'Haben Sie am Mittwoch Zeit','p32-9a4':'Ab Freitag bin ich für eine Woche im Urlaub','p32-9b':'geehrter Herr Frei'})}
  </>}
  {page==='33'&&<>
   {art('0',982,44,85,78)}
@@ -481,8 +461,22 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(544,326,61,'Ihnen?','naNw')}
   {text(146,352,95,'Gast der, ¨e','naNw')}
   {text(532,352,85,'pünktlich','naNw')}
-  {text(145,378,172,'Verbindung Wecker Handtuch Heizung Klimaanlage bindung die, die Internetver- -n der, die, das, - die, -en ¨er -en','naNw')}
-  {text(531,378,229,'Weitere Sitzung Stunde Angst Leben Kurs Angst Spanischkurs) der, die, das haben die, die, wichtige -e ¨e -n (Tanz-/ -en Wörter','naNw')}
+  {text(146,378,157,'Handtuch das, ¨er','naNw')}
+  {text(531,393,229,'Weitere wichtige Wörter','naNw')}
+  {text(146,404,142,'Heizung die, -en','naNw')}
+  {text(532,418,107,'Angst die, ¨e','naNw')}
+  {text(146,429,109,'Klimaanlage','naBold naNw')}
+  {text(157,444,54,'die, -n','naNw')}
+  {text(543,444,107,'Angst haben','naNw')}
+  {text(533,470,166,'Kurs der, -e (Tanz-/','naNw')}
+  {text(145,481,172,'Verbindung die, -en','naNw')}
+  {text(157,495,140,'die Internetver-','naNw')}
+  {text(543,495,123,'Spanischkurs)','naNw')}
+  {text(532,521,84,'Leben das','naNw')}
+  {text(156,533,74,'bindung','naBold naNw')}
+  {text(145,547,113,'Wecker der, -','naNw')}
+  {text(531,547,136,'Sitzung die, -en','naNw')}
+  {text(531,573,121,'Stunde die, -n','naNw')}
   {text(145,597,120,'Beschwerden','naNw')}
   {text(542,597,80,'die halbe','naNw')}
   {text(146,623,129,'Bescheid sagen','naNw')}
@@ -513,12 +507,21 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(530,932,33,'kalt','naBold naNw')}
   {text(144,958,50,'sofort','naBold naNw')}
   {text(530,958,48,'lustig','naBold naNw')}
-  {text(143,985,76,'Termine','naNw')}
   {text(530,985,65,'seltsam','naNw')}
-  {text(145,1011,67,'Lust die','naNw')}
+  {text(143,997,76,'Termine','naNw')}
   {text(530,1011,52,'sicher','naNw')}
-  {text(144,1037,158,'Termine hat vereinbaren, vereinbart Lust abgesagt haben ab-sagen, hat','naNw')}
-  {text(530,1037,126,'nichts selbst Sehr Mit Sehr Grüßen freundlichen geehrte geehrter /','naNw')}
+  {text(145,1022,67,'Lust die','naNw')}
+  {text(530,1037,53,'nichts','naNw')}
+  {text(156,1048,94,'Lust haben','naNw')}
+  {text(530,1062,49,'selbst','naNw')}
+  {text(144,1074,158,'Termine ab-sagen,','naBold naNw')}
+  {text(530,1088,126,'Sehr geehrte /','naNw')}
+  {text(155,1100,108,'hat abgesagt','naBold naNw')}
+  {text(541,1114,120,'Sehr geehrter','naBold naNw')}
+  {text(155,1125,147,'vereinbaren, hat','naNw')}
+  {text(530,1139,151,'Mit freundlichen','naNw')}
+  {text(155,1151,93,'vereinbart','naNw')}
+  {text(542,1165,64,'Grüßen','naNw')}
   {text(541,1193,182,'CH: Freundliche Grüsse','naS20 naNw')}
   {text(176,1210,192,'Schreiben Sie Zettel und','naNw')}
   {text(176,1232,165,'hängen Sie die Zettel','naNw')}
@@ -593,8 +596,9 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(164,1158,26,'ich','naNw')}
   {text(262,1158,52,'werde','naNw')}
   {text(164,1184,21,'du','naNw')}
-  {text(156,1208,58,'wir er/sie','naBold naNw')}
+  {text(164,1208,50,'er/sie','naBold naNw')}
   {text(379,1208,75,'Sängerin','naBold naNw')}
+  {text(156,1247,37,'wir','naBold naNw')}
   {text(165,1275,26,'ihr','naNw')}
   {text(164,1299,58,'sie/Sie','naBold naNw')}
   {text(99,1399,182,'36 | sechsunddreißig','naFooter')}
@@ -693,7 +697,9 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(140,715,7,'f','naNw')}
   {text(164,731,451,'(Jan / vielleicht / werden / Liedermacher / wollen)','naNw')}
   {text(141,805,240,'Ergänzen Sie die Wörter.','naNw')}
-  {text(140,843,720,'Im Sie Sommer hatte große hat Angst Sofia ihre vor der (a) Prüfung. (BLUGASIDNU) Aber zum Glück als hat Friseurin sie die Prüfung abgeschlossen.','naNw')}
+  {text(140,843,254,'Im Sommer hat Sofia ihre (a)','naNw')}
+  {text(478,843,382,'(BLUGASIDNU) als Friseurin abgeschlossen.','naNw')}
+  {text(140,870,655,'Sie hatte große Angst vor der Prüfung. Aber zum Glück hat sie die Prüfung','naNw')}
   {text(140,894,21,'(b)','naNw')}
   {text(394,894,383,'(SCHEFGATEF). Jetzt möchte sie endlich Geld','naNw')}
   {text(140,922,20,'(c)','naNw')}
@@ -817,21 +823,27 @@ export function NativeAB12P31to46({page}:{page:string}){
   {lin(308,1266,159,3,'#bdbfbf')}
   {lin(345,1293,123,2,'#bebec2')}
   {text(102,81,347,'TRAINING: SCHREIBEN','naHeadline naNw')}
-  {text(97,151,782,'1 Lesen Beitrag Sie von Fabios Alina Beitrag. im Forum. Lesen Sie dann die Notizen und ergänzen Sie den','naNw')}
-  {text(157,245,538,'Beruf Ich gehe oder noch Traumberuf? zur Schule, aber ich will unbedingt Musiker werden.','naNw')}
-  {text(791,245,96,'Fabio, 7. Juli','naNw')}
+  {text(97,151,782,'1 Lesen Sie Fabios Beitrag. Lesen Sie dann die Notizen und ergänzen Sie den','naNw')}
+  {text(144,182,277,'Beitrag von Alina im Forum.','naNw')}
+  {text(157,245,205,'Beruf oder Traumberuf?','naBold naNw')}
+  {text(158,274,537,'Ich gehe noch zur Schule, aber ich will unbedingt Musiker werden.','naNw')}
+  {text(791,274,96,'Fabio, 7. Juli','naNw')}
   {text(157,300,621,'Wie ist es bei euch? Was macht ihr? Gefällt es euch? Ist das euer Traumberuf?','naNw')}
   {text(156,326,531,'Was wollt ihr unbedingt noch machen? Schickt mir eure Beiträge.','naNw')}
-  {text(155,540,21,'Ich','naNw')}
   {text(786,540,95,'Alina, 7. Juli','naNw')}
+  {text(155,558,21,'Ich','naNw')}
   {text(155,584,51,'Das ist','naNw')}
   {text(531,584,293,'Ich mache jeden Tag das Gleiche. Ich','naNw')}
-  {text(154,613,21,'ich','naNw')}
-  {text(443,613,449,'und ich Ich spiele in meiner Freizeit Theater. Vielleicht Eigentlich will','naNw')}
+  {text(443,613,57,'und ich','naNw')}
+  {text(779,613,113,'Eigentlich will','naNw')}
+  {text(154,635,21,'ich','naNw')}
+  {text(479,635,374,'Ich spiele in meiner Freizeit Theater. Vielleicht','naNw')}
   {text(153,661,311,'melde ich mich nächstes Jahr bei einer','naNw')}
   {text(708,661,24,'an.','naNw')}
-  {text(135,736,279,'zu Machen den Fragen Sie wie und in 1 schreiben Notizen','naNw')}
-  {text(478,736,484,'Sie machen haben Sie Probleme Notizen. beim Machen Schreiben? Sie Sätze Sammeln aus Ihren Sie Notizen. Ideen und','naNw')}
+  {text(137,736,277,'Machen Sie wie in 1 Notizen','naNw')}
+  {text(478,736,484,'Sie haben Probleme beim Schreiben? Sammeln Sie Ideen und','naNw')}
+  {text(135,762,285,'zu den Fragen und schreiben','naNw')}
+  {text(479,762,457,'machen Sie Notizen. Machen Sie Sätze aus Ihren Notizen.','naNw')}
   {text(135,788,259,'Sie dann einen Beitrag ins','naNw')}
   {text(479,788,480,'Nach dem Schreiben: Lesen Sie Ihren Text noch dreimal und','naNw')}
   {text(136,815,67,'Forum.','naNw')}
@@ -840,13 +852,20 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(478,860,322,'2. Lesen: Hat das Verb die richtige Form?','naNw')}
   {text(478,882,364,'3. Lesen: Sind die Wörter richtig geschrieben?','naNw')}
   {text(92,941,581,'TRAINING: AUSSPRACHE Internationale Wörter','naBold naNw')}
-  {text(134,1008,419,'Hören a international Sie und markieren meine Sprache Sie den / andere Wortakzent. Sprachen','naNw')}
-  {text(655,1008,280,'Sprache Ergänzen oder Sie die in einer Wörter anderen in Ihrer','naNw')}
-  {text(133,1079,122,'c komponieren interessant','naNw')}
-  {text(654,1079,246,'Sprache. hier den Wortakzent. Markieren Sie auch','naNw')}
+  {text(134,1008,450,'Hören Sie und markieren Sie den Wortakzent.','naNw')}
+  {text(311,1028,242,'meine Sprache / andere Sprachen','naNw')}
+  {text(656,1028,279,'Ergänzen Sie die Wörter in Ihrer','naNw')}
+  {text(134,1053,140,'a international','naNw')}
+  {text(655,1053,261,'Sprache oder in einer anderen','naNw')}
+  {text(654,1079,246,'Sprache. Markieren Sie auch','naNw')}
+  {text(156,1084,116,'komponieren','naNw')}
+  {text(655,1084,182,'hier den Wortakzent.','naNw')}
+  {text(133,1116,122,'c interessant','naS20 naNw')}
   {text(133,1137,75,'d Musik','naNw')}
-  {text(133,1142,85,'f Instrument elegant','naNw')}
-  {text(608,1142,335,'2 Wie kennen viele Sie? internationale Notieren Sie Wörter und','naNw')}
+  {text(165,1142,53,'elegant','naNw')}
+  {text(608,1142,360,'2 Wie viele internationale Wörter','naNw')}
+  {text(133,1167,123,'f Instrument','naNw')}
+  {text(654,1167,289,'kennen Sie? Notieren Sie und','naNw')}
   {text(131,1207,93,'g Technik','naNw')}
   {text(653,1207,238,'sprechen Sie die Wörter.','naNw')}
   {text(132,1241,106,'h studieren','naNw')}
@@ -1052,8 +1071,8 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(141,508,116,'Sängerin die,','naNw')}
   {text(527,508,129,'Wunsch der, ¨e','naNw')}
   {text(152,539,39,'-nen','naSmall naNw')}
-  {text(142,548,92,'Star der, -s','naNw')}
   {text(527,548,116,'heiraten, hat','naNw')}
+  {text(142,560,92,'Star der, -s','naNw')}
   {text(538,574,90,'geheiratet','naBold naNw')}
   {text(142,598,150,'ab-schließen, hat','naNw')}
   {text(527,598,151,'laufen, du läufst,','naNw')}
@@ -1073,12 +1092,14 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(527,777,101,'putzen, hat','naNw')}
   {text(141,805,155,'werden, du wirst,','naNw')}
   {text(538,805,66,'geputzt','naNw')}
-  {text(153,831,111,'er ist wird, geworden','naNw')}
+  {text(153,831,68,'er wird,','naNw')}
   {text(528,831,42,'ohne','naNw')}
+  {text(154,857,110,'ist geworden','naBold naNw')}
   {text(141,883,143,'wollen, ich will,','naNw')}
   {text(153,908,151,'du willst, er will,','naNw')}
   {text(153,934,99,'hat gewollt','naBold naNw')}
-  {text(142,968,133,'unbedingt auf keinen Fall','naNw')}
+  {text(142,968,89,'unbedingt','naBold naNw')}
+  {text(142,998,133,'auf keinen Fall','naNw')}
   {text(97,1096,587,'2 Welche Wörter möchten Sie noch lernen? Notieren Sie.','naNw')}
   {text(818,1392,160,'einundvierzig | 41','naFooter')}
  </>}
@@ -1196,8 +1217,9 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(101,84,240,'BASISTRAINING','naHeadline naNw')}
   {text(140,158,339,'Schreiben Sie Ratschläge mit doch.','naNw')}
   {text(143,185,566,'Ihr Nachbar arbeitet ein halbes Jahr nicht. Geben Sie Ratschläge!','naNw')}
-  {text(166,235,190,'(durch Europa reisen)','naNw')}
-  {text(465,235,235,'Soll soll ich ich um zu die Hause Welt bleiben? segeln oder','naNw')}
+  {text(465,235,235,'Soll ich um die Welt segeln oder','naNw')}
+  {text(166,249,190,'(durch Europa reisen)','naNw')}
+  {text(488,249,189,'soll ich zu Hause bleiben?','naNw')}
   {text(166,301,172,'(ins Ausland gehen)','naNw')}
   {text(141,332,7,'c','naSmall naNw')}
   {text(166,352,210,'(ein Instrument lernen)','naNw')}
@@ -1369,7 +1391,8 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(169,275,94,'Morgen, um','naNw')}
   {text(168,307,183,'Mittwoch, um 8.00 Uhr','naNw')}
   {text(167,340,265,'Mittwoch, von 10.00 bis 12.00 Uhr','naNw')}
-  {text(190,391,637,'wichtige Was ist beim Wörter. Hören Lesen wichtig? Sie dann Lesen die Sie Antworten. die Fragen Alle genau Antworten und markieren können Sie im Text','naNw')}
+  {text(191,391,596,'Was ist beim Hören wichtig? Lesen Sie die Fragen genau und markieren Sie','naNw')}
+  {text(190,413,637,'wichtige Wörter. Lesen Sie dann die Antworten. Alle Antworten können im Text','naNw')}
   {text(189,435,391,'vorkommen, aber achten Sie genau auf die Frage.','naNw')}
   {text(112,494,657,'2 Was ist richtig? Kreuzen Sie an. Sie hören jeden Text zweimal.','naNw')}
   {text(157,540,319,'a Wann kann Frau Huber vielleicht','naNw')}
@@ -1377,16 +1400,25 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(572,540,212,'Was funktioniert nicht?','naNw')}
   {text(179,566,148,'wieder arbeiten?','naNw')}
   {text(598,566,108,'Der Drucker.','naNw')}
-  {text(205,591,179,'Morgen Morgen Heute Nachmittag. Vormittag. Nachmittag.','naBold naNw')}
-  {text(597,591,193,'Die Das Internetverbindung. E-Mail-Programm.','naBold naNw')}
+  {text(206,591,164,'Heute Nachmittag.','naBold naNw')}
+  {text(598,591,192,'Das E-Mail-Programm.','naBold naNw')}
+  {text(205,619,164,'Morgen Vormittag.','naBold naNw')}
+  {text(597,619,214,'Die Internetverbindung.','naBold naNw')}
+  {text(205,645,179,'Morgen Nachmittag.','naBold naNw')}
   {text(154,682,10,'b','naNw')}
   {text(178,682,377,'Wo genau treffen sich Lea und David? d','naNw')}
   {text(569,682,361,'Wann können Sie in die Praxis kommen?','naNw')}
-  {text(204,708,100,'An In Im der der Hotel. Bar. Uni.','naNw')}
-  {text(594,708,323,'Am Am Am Mittwochvormittag Dienstagabend Donnerstagmorgen um 18.00 um um 7. 9.00 Uhr. 00 Uhr. Uhr.','naNw')}
+  {text(204,708,100,'An der Uni.','naNw')}
+  {text(595,708,288,'Am Dienstagabend um 18.00 Uhr.','naNw')}
+  {text(205,735,80,'Im Hotel.','naNw')}
+  {text(594,735,321,'Am Donnerstagmorgen um 7. 00 Uhr.','naNw')}
+  {text(204,760,91,'In der Bar.','naNw')}
+  {text(594,760,323,'Am Mittwochvormittag um 9.00 Uhr.','naNw')}
   {text(112,827,663,'TRAINING: AUSSPRACHE Satzmelodie in Imperativ-Sätzen','naBold naNw')}
-  {text(107,881,315,'1 die Hören Satzmelodie: Sie und ergänzen Sie','naNw')}
-  {text(601,881,353,'3 Satzzeichen: Hören Sie und ? ergänzen oder ! Sie das','naNw')}
+  {text(107,881,315,'1 Hören Sie und ergänzen Sie','naNw')}
+  {text(601,881,353,'3 Hören Sie und ergänzen Sie das','naNw')}
+  {text(152,912,161,'die Satzmelodie:','naNw')}
+  {text(646,912,203,'Satzzeichen: ? oder !','naNw')}
   {text(152,953,166,'a Trinken Sie Tee?','naNw')}
   {text(669,953,153,'Haben Sie Husten','naNw')}
   {text(176,979,206,'Nehmen Sie Vitamin C?','naNw')}
@@ -1405,9 +1437,9 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(643,1166,160,'sprechen Sie nach.','naNw')}
   {text(150,1210,194,'Ergänzen Sie oder','naNw')}
   {text(182,1251,270,'Die Satzmelodie geht bei Ja-/Nein-','naNw')}
-  {text(152,1273,125,'REGEL und Fragen Ratschlägen nach','naNw')}
-  {text(318,1273,36,'nach','naNw')}
+  {text(152,1273,125,'REGEL Fragen nach','naNw')}
   {text(370,1273,77,'bei Bitten','naNw')}
+  {text(181,1295,173,'und Ratschlägen nach','naNw')}
   {text(810,1394,171,'fünfundvierzig | 45','naFooter')}
   {dot('1z0','true',451,279,'Zeiten 1',true)}
   {dot('1z1','true',451,312,'Zeiten 2',true)}
@@ -1475,7 +1507,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(863,220,84,'und Knie,','naNw')}
   {text(156,249,58,'zehn F','naNw')}
   {text(311,249,177,'(h) und viele Zähne.','naNw')}
-  {text(919,249,45,'PUNKTE','naNw')}
+  {text(919,267,45,'PUNKTE','naSmall naNw')}
   {text(110,310,464,'2 Viele Ratschläge. Was sagen die Personen?','naNw')}
   {text(156,352,653,'a Der Arzt sagt, ich soll in die Apotheke gehen und Medikamente kaufen.','naNw')}
   {text(180,382,42,'Arzt:','naNw')}
