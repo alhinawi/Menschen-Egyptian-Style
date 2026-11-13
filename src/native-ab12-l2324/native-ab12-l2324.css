@@ -93,3 +93,34 @@
 .naCanvas .naText.naT90txt span[role=button]{padding:0}
 .naCanvas .naStrikeU{position:relative;display:inline}
 .naCanvas .naStrikeU:after{content:'';position:absolute;left:0;right:0;top:64%;height:1.5px;background:#5b84bd;transform:rotate(-0.8deg);border-radius:1px;pointer-events:none}
+/* p91 page-scoped */
+[data-native-ab12="91"] .naText span[role=button]{padding:0}
+[data-native-ab12="91"] .naTitle.naRB b{background:#f55e02}
+.naCanvas .naDot.naDotR91{width:13px!important;height:13px!important;border-width:1.5px!important}
+[data-native-ab12="91"] .naField.naCirc91{border:1.2px solid #6a6a6a!important;border-radius:50%!important;text-align:center;padding:0!important;font-size:12px!important;height:16px!important;width:16px}
+.naCanvas .naGap91{background:transparent;letter-spacing:4.9px;font-size:13px;padding:0 0 0 3px;height:20px}
+.naCanvas .naDash91{position:absolute;height:0;border-bottom:1px solid #807971;width:7px}
+.naCanvas .naFix91{position:absolute;font:14px DroidSerif,Georgia,serif;color:#222}
+.naCanvas .naTblHL91{opacity:.45}
+[data-native-ab12="91"] .naTblCell{font-family:DroidSerif,Georgia,serif}
+[data-native-ab12="91"] .naTblCell.naTblCellS{font-size:13px!important}
+.naCanvas .naText.naIt91{font-style:italic}
+[data-native-ab12="91"] .naField.naCirc91{border:1px solid #c9cdc0!important}
+[data-native-ab12="91"] .naDot.naDotR91{border-width:1px!important;border-color:#d3d6c8!important}
+
+.naCanvas .naText.naLet4{font-size:19px!important}
+.naCanvas .naText.naLet5{font-size:15px!important}
+.naCanvas .naText.naLet7{font-size:15px!important}
+.naCanvas .naText.naLet6{font-family:FiraSans,'Trebuchet MS',sans-serif;font-weight:700;color:#5d78b3;font-size:13px;font-style:normal;letter-spacing:0}
+[data-native-ab12="91"] .naBank88{font-size:12.4px;color:#435980}
+
+[data-native-ab12="91"] .naBookSerif{letter-spacing:0!important}
+[data-native-ab12="91"] .naBank88{font-weight:500}
+.naCanvas .naPipe91{color:#8a7f4a;font-weight:400}
+.naCanvas .naText.naEng91{font-size:13px!important}
+[data-native-ab12="91"] .naTblBox{border:1px solid #e2e3d5}
+[data-native-ab12="91"] .naTblV{border-left:1px solid #e2e3d5}
+[data-native-ab12="91"] .naTblH{border-top:1px solid #e2e3d5}
+[data-native-ab12="91"] .naTblHead{background:#ede8d2}
+[data-native-ab12="91"] .naField{border-bottom-width:1px!important;border-bottom-color:#d3d9d3!important}
+.naCanvas .naText.naEx4t{font-size:13.7px!important}
