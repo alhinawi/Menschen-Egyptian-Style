@@ -6,7 +6,9 @@ type Props = {
   set: (id: string, value: string) => void;
   x: number;
   /** Top of each former one-line field, in page units. The first and last define the line pitch. */
-  tops: number[];
+  tops?: number[];
+  /** Alternative to tops: y of each PRINTED rule in the page background (text sits just above it). */
+  ruleYs?: number[];
   w: number;
   label: string;
   /** Ids of the former one-line fields: their saved text is merged into the first load of the new textarea. */
@@ -19,7 +21,8 @@ type Props = {
 };
 
 /** One multi-line free-writing textarea whose line height equals the rule spacing, so text sits on the ruled lines. */
-export function LinedArea({id, values, set, x, tops, w, label, legacyIds = [], rules = true, boxH = 27, className = ''}: Props) {
+export function LinedArea({id, values, set, x, tops: topsIn, ruleYs, w, label, legacyIds = [], rules = true, boxH = 27, className = ''}: Props) {
+  const tops = topsIn ?? (ruleYs ?? []).map(y => y + 1 - boxH);
   const n = tops.length;
   const pitch = n > 1 ? (tops[n - 1] - tops[0]) / (n - 1) : boxH;
   const top = tops[0] + boxH - pitch;
