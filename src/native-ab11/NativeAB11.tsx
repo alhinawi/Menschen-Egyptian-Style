@@ -163,7 +163,7 @@ export function NativeAB11({page}:{page:string}){
  {text(202,484,125,'■  Und der')}{choice('2-1b','Familienname',325,481,'2 Familienname')}{text(359,484,200,'Familienname')}{choice('2-1b','Vorname',225,507,'2 Vorname')}{text(259,510,200,'Vorname?')}{text(202,538,280,'▲  Wachter.')}
  {choice('2-2a','Woher',602,429,'2 Woher')}{text(636,431,85,'Woher')}{choice('2-2a','Wie',727,429,'2 Wie')}{text(761,431,55,'Wie')}{text(825,431,180,'kommst du?')}
  {choice('2-2b','Aus',602,455,'2 Aus')}{text(636,458,50,'Aus')}{choice('2-2b','Aus dem',689,455,'2 Aus dem')}{text(723,458,114,'Aus dem')}{text(840,458,180,'Österreich.')}
- {text(575,484,82,'■  Und')}{choice('2-2c','was',663,481,'2 was')}{text(697,484,47,'was')}{choice('2-2c','wie',683,481,'2 wie')}{text(785,484,235,'wie  geht es dir?')}
+ {text(575,484,82,'■  Und')}{choice('2-2c','was',663,481,'2 was')}{text(697,484,47,'was')}{choice('2-2c','wie',750,481,'2 wie')}{text(785,484,235,'wie  geht es dir?')}
  {choice('2-2d','Nein',602,507,'2 Nein')}{text(636,510,72,'Nein.')}{choice('2-2d','Sehr gut',710,507,'2 Sehr gut')}{text(744,510,200,'Sehr gut!')}
  {check('2',202,567,{'2-1a':'bin','2-1b':'Familienname','2-2a':'Woher','2-2b':'Aus','2-2c':'wie','2-2d':'Sehr gut'})}
  {text(910,572,140,'/ 6 Punkte','nabPoints')}{title('3',605,'Ergänzen Sie die Verben in der richtigen Form.','','Strukturen')}
