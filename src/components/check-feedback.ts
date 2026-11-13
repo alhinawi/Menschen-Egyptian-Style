@@ -17,6 +17,7 @@ const soundBytes = [errorSound,successSound].map(url=>fetch(url).then(response=>
 }).catch(()=>null));
 const soundBuffers = new Map<boolean,Promise<AudioBuffer | null>>();
 async function sound(correct: boolean) {
+ if(document.querySelector<HTMLElement>('.soundToggle')?.dataset.soundOn==='false')return;
  try {
   const context=audio;
   if(!context)return;
