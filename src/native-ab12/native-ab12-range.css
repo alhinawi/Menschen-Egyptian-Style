@@ -96,3 +96,9 @@
 .nativeAB12 .naRCanvas .naRMk{position:absolute;background:transparent;border:0;border-bottom:3px solid transparent;border-radius:2px;cursor:pointer;padding:0}
 .nativeAB12 .naRCanvas .naRMk.b{border-bottom-color:#6596c4}
 .nativeAB12 .naRCanvas .naRMk.g{border-bottom-color:#69bb58}
+
+/* ---- p54/p55 r2 additions ---- */
+@font-face{font-family:FiraC;src:url('/assets/fonts/firasanscond-latin-400.ttf') format('truetype');font-weight:400;font-display:swap}
+.nativeAB12[data-native-ab12="55"] .naRCanvas .naText.naR.naFiraC{font-family:FiraC,FiraSans,sans-serif!important}
+.nativeAB12[data-native-ab12="54"] .naRCanvas .naRDot{border:1.5px solid #c6c1b4!important}
+.nativeAB12[data-native-ab12="54"] .naRCanvas .naText .naStrike54{text-decoration:line-through;text-decoration-color:#696c97;text-decoration-thickness:1.5px}
