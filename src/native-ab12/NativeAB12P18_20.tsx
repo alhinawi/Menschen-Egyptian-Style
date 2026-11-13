@@ -64,27 +64,11 @@ export function NativeAB12P18_20({page}:{page:string}){
   {text(159,341,200,'Deutsch','naTh')}
   {text(451,341,150,'Englisch','naTh')}
   {text(648,341,320,'Meine Sprache oder andere Sprachen','naTh naNw')}
-  {[395,425,455,484,513,543].map(y=><div key={y} className="naTRule" style={{left:150,top:y,width:825}}/>)}
-  {art('hint-1',155,368,290,26)}
-  {art('hint-2',155,397,290,26)}
-  {art('hint-3',155,427,290,26)}
-  {art('hint-4',155,457,290,26)}
-  {art('hand-meer',155,486,290,26)}
-  {art('hint-6',155,515,290,26)}
-  {art('hand-wald',155,545,290,26)}
-  {field('p18-dCafé',158,368,275,'café auf Deutsch','naFieldBlank')}
-  {field('p18-dHafen',158,397,275,'harbour auf Deutsch','naFieldBlank')}
-  {field('p18-dFlughafen',158,427,275,'airport auf Deutsch','naFieldBlank')}
-  {field('p18-dKirche',158,457,275,'church auf Deutsch','naFieldBlank')}
-  {field('p18-dSpielplatz',158,515,275,'playground auf Deutsch','naFieldBlank')}
-  {text(451,370,150,'café')}
-  {text(451,399,150,'harbour')}
-  {text(451,432,150,'airport')}
-  {text(451,461,150,'church')}
-  {text(451,496,150,'sea')}
-  {text(451,520,150,'playground')}
-  {text(451,550,150,'forest')}
-  {[368,397,427,457,486,515,545].map((y,i)=>field('p18-ms'+(i+1),650,y,315,'Meine Sprache Zeile '+(i+1),'naFieldBlank'))}
+  {[395.5,425,454.5,484,513.5,543].map(y=><div key={y} className="naTRule" style={{left:150,top:y,width:825}}/>)}
+  {['café','harbour','airport','church','sea','playground','forest'].map((word,i)=>text(451,366+i*29.5,170,word,'naTableEnglish'))}
+  {['hint-1','hint-2','hint-3','hint-4','hand-meer','hint-6','hand-wald'].map((name,i)=>art(name+'-clean',159,368+i*29.5,282,26))}
+  {['p18-dCafé','p18-dHafen','p18-dFlughafen','p18-dKirche',null,'p18-dSpielplatz',null].map((id,i)=>id?field(id,158,367+i*29.5,275,'Deutsch Zeile '+(i+1),'naFieldBlank'):null)}
+  {Array.from({length:7},(_,i)=>field('p18-ms'+(i+1),650,367+i*29.5,315,'Meine Sprache Zeile '+(i+1),'naFieldBlank'))}
   {check('g2',150,577,{'p18-dCafé':'Café','p18-dHafen':'Hafen','p18-dFlughafen':'Flughafen','p18-dKirche':'Kirche','p18-dSpielplatz':'Spielplatz'},'naCheckSm')}
   {kb(78,610,'KB 3')}
   {title('2',125,606,600,'Was ist das? Ergänzen Sie.','naOB naNw')}
