@@ -2,7 +2,7 @@ import {useEffect,useRef,useState} from 'react';
 import {createPortal} from 'react-dom';
 import './audio-marker-buttons.css';
 
-type Track={el:HTMLElement;label:string;track:string;y:number;page:string};
+type Track={el:HTMLElement;label:string;track:string;y:number;cx:number;page:string};
 type Marker={x:number;y:number;tracks:Track[]};
 export const audioMarkerSelector='.hybridAudio,.nativeAudioMarker,.nkbListen,.nkAudio,.npListen,.nabListen,.mListen,.listen';
 const Play=()=> <svg width="16" height="16" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 3 17 10 6 17Z" fill="currentColor"/></svg>;
@@ -51,7 +51,7 @@ export function AudioMarkerButtons(){
     const label=el.getAttribute('aria-label')||el.title||el.textContent?.trim()||'Originalaudio';
     const source=el.dataset.audioSrc||el.dataset.src||'';
     const track=source.match(/track(\d+)/)?.[1]||label.match(/(?:Originalaudio|Audio)\s*(?:\d\s+)?(\d{1,3})/i)?.[1]||el.textContent?.match(/\d+/g)?.pop()||'';
-    tracks.push({el,label,track,y:r.top+sy+r.height/2-22,page:page.dataset.page||''});
+    tracks.push({el,label,track,y:r.top+sy+r.height/2-22,cx:r.left+sx+r.width/2-22,page:page.dataset.page||''});
    }
    tracks.sort((a,b)=>a.y-b.y);
    const out:Marker[]=[];
@@ -59,33 +59,81 @@ export function AudioMarkerButtons(){
     const last=out[out.length-1];
     // One margin button for nearby tracks. Never push a button onto another task.
     if(last&&t.y-last.tracks[last.tracks.length-1].y<46){last.tracks.push(t);continue}
-    const p=t.el.closest('.page')!.getBoundingClientRect();
-    out.push({x:Math.max(2,p.left+sx+3),y:t.y,tracks:[t]});
+    // Pin the circle to its printed play marker (source button centre), so it
+    // keeps the same anchor at every zoom level instead of the page margin.
+    out.push({x:t.cx,y:t.y,tracks:[t]});
    }
-   // Search the nearest clear spot in the outer margin. Glyph rectangles include
-   // task numbers, not just exercise prose; fields and checking buttons count too.
+   // Pinned means pinned: the circle stays on its printed marker at every
+   // zoom level; nothing displaces it onto neighbouring art or text. The one
+   // exception is the viewport edge: when the printed marker sits in the
+   // cut-off page margin, the circle moves to the nearest spot with no printed
+   // ink under it (never onto text); if there is no such spot nearby, the page
+   // is panned sideways just enough that the revealed empty margin holds the
+   // circle on its own row.
    const obstacles=(currentPage?audioTextObstacles(currentPage):[]).map(o=>({left:o.left+sx,right:o.right+sx,top:o.top+sy,bottom:o.bottom+sy}));
+   const spread=currentPage?.closest<HTMLElement>('[style*="zoom"]')||currentPage?.parentElement||null;
+   const pan0=spread&&spread.style.marginLeft.endsWith('px')?parseFloat(spread.style.marginLeft)||0:0;
+   const blocked=(x:number,y:number,extra:Obstacle[])=>[...obstacles,...extra].some(r=>intersects(x,y,r));
    const placed:Obstacle[]=[];
+   let panNeed=0;
    for(const m of out){
-    const origin=m.y;const pr=m.tracks[0].el.closest('.page')!.getBoundingClientRect();
-    const pageLeft=pr.left+sx,topBound=pr.top+sy+2,bottomBound=pr.bottom+sy-2;
-    const xs=[m.x,Math.max(0,m.x-3),...(pageLeft>=48?[pageLeft-46]:[])];
+    const minX=sx+2,maxX=sx+window.innerWidth-46;
+    // An anchor is an edge case when it could not be centred on screen without
+    // the pan currently applied (pan0 keeps earlier edge decisions stable).
+    const unpanned=m.x-pan0;
+    if(unpanned>=minX&&unpanned<=maxX){
+     m.x=Math.min(Math.max(m.x,minX),Math.max(minX,maxX));
+     // The printed marker may share its band with other ink (a module tag in
+     // the margin); if so, slide to the nearest ink-free spot on the column.
+     if(blocked(m.x,m.y,placed)){
+      for(let d=3;d<=42;d+=3){
+       const dy=[-d,d].find(dy=>!blocked(m.x,m.y+dy,placed));
+       if(dy!==undefined){m.y=m.y+dy;break}
+      }
+     }
+     placed.push({left:m.x-2,right:m.x+46,top:m.y-2,bottom:m.y+46});
+     continue;
+    }
+    const dir=unpanned<minX?1:-1;
+    const edgeX=dir===1?minX:maxX;
+    m.x=edgeX;
+    // Decide in the stable un-panned frame (pan0 stripped): the circle stays
+    // at edgeX and the base frame is the pan=0 layout, so the same decision
+    // is reached whether or not the pan is currently applied.
+    // Markers do not move with the pan (only the spread does), so placed
+    // circles stay in viewport coords; only the printed ink shifts. The pan
+    // is a margin inside the zoomed spread, so the on-screen shift is
+    // marginLeft x zoom.
+    const zf=spread?parseFloat(spread.style.zoom)||1:1;
+    const shift=pan0*zf;
+    const docObs=obstacles.map(r=>({left:r.left-shift,right:r.right-shift,top:r.top,bottom:r.bottom}));
+    const docPlaced=placed;
+    const blockedDoc=(x:number,y:number)=>[...docObs,...docPlaced].some(r=>intersects(x,y,r));
+    if(!blockedDoc(edgeX,m.y)){placed.push({left:m.x-2,right:m.x+46,top:m.y-2,bottom:m.y+46});continue}
+    // Slide along the margin to the nearest ink-free spot, smallest move
+    // first; never onto text or another marker.
     let found=false;
-    for(let distance=0;distance<=120&&!found;distance+=2)for(const dy of distance?[ -distance,distance ]:[0]){
-     for(const x of xs){const y=origin+dy;if(y<topBound||y+44>bottomBound)continue;
-      if([...obstacles,...placed].some(r=>intersects(x,y,r)))continue;
-      m.x=x;m.y=y;found=true;break;
-     }if(found)break;
+    for(let d=3;d<=56&&!found;d+=3)for(const dy of[-d,d]){
+     if(!blockedDoc(edgeX,m.y+dy)){m.y=m.y+dy;found=true;break}
     }
     if(!found){
-     const x=pr.right+sx-46;
-     for(let distance=0;distance<=120&&!found;distance+=2)for(const dy of distance?[-distance,distance]:[0]){
-      const y=origin+dy;if(y<topBound||y+44>bottomBound)continue;
-      if([...obstacles,...placed].some(r=>intersects(x,y,r)))continue;
-      m.x=x;m.y=y;found=true;break;
+     // Last resort: pan the page just enough that the revealed empty margin
+     // holds the circle; a pan that drags other ink back under the circle is
+     // skipped.
+     const band=docObs.filter(r=>m.y<r.bottom&&m.y+44>r.top);
+     const cands=band.map(r=>dir===1?(edgeX+44-r.left)/zf:(edgeX-r.right)/zf).filter(c=>dir===1?c>0:c<0).sort((a,b)=>Math.abs(a)-Math.abs(b));
+     for(const c of cands){
+      if(Math.abs(c*zf)>140)break;
+      if(band.every(r=>r.right+c*zf<=edgeX||r.left+c*zf>=edgeX+44)){panNeed=dir===1?Math.max(panNeed,c):Math.min(panNeed,c);break}
      }
     }
     placed.push({left:m.x-2,right:m.x+46,top:m.y-2,bottom:m.y+46});
+   }
+   if(spread){
+    // panNeed is recomputed every tick on the un-panned basis, so it is
+    // stable while needed and clears itself once no marker needs it.
+    if(panNeed!==0)spread.style.marginLeft=panNeed+'px';
+    else spread.style.marginLeft='';
    }
    const sig=out.map(m=>[m.x.toFixed(1),m.y.toFixed(1),...m.tracks.map(t=>t.page+t.label+t.track)]).join('|');
    if(sig!==previous){previous=sig;setMarkers(out)}
