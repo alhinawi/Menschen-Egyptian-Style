@@ -47,7 +47,7 @@ for a in [(733,757,163,557),(758,781,163,410),(783,806,163,370),(806,832,163,530
  text='Achtung: Wir (= Paula, Susi und drei Katzen)' if a[0]==806 else 'paula.patent@t-online.de' if a[0]==878 else None
  line(*a,text=text,c='naFiraB' if a[0]==733 else 'naFiraR')
 # Tilted ad lines: actual rotation, never horizontal scaling.
-for a,text in [((866,897,470,805),'Kannst du kochen? Magst du Partys?'),((891,922,470,903),'Wir sind eine lustige WG und feiern gern zusammen.'),((908,945,470,958),'Ihr auch? Suchen noch zwei Mitbewohner (ca. 20-30 Jahre)'),((936,971,470,830),'für Zimmer (350,- €); wg-kontakt@web.de')]:
+for a,text in [((866,897,470,805),'Kannst du kochen? Magst du Partys?'),((891,922,470,903),'Wir sind eine lustige WG und feiern gern zusammen.'),((908,945,470,958),'Ihr auch? Suchen noch zwei Mitbewohner (ca. 20–30 Jahre)'),((936,971,470,830),'für Zimmer (350,– €); wg-kontakt@web.de')]:
  it=line(*a,text=text,c='naFiraB' if a[0]==866 else 'naFiraR');it['c']+=' p62Tilt';it['x']=474;it['y']={866:895,891:919,908:943,936:967}[a[0]]
 # Printed sample form uses a real self-hosted regular italic face.
 for a in [(1130,1159,175,232),(1160,1184,185,300),(1160,1184,465,520),(1160,1187,680,890),(1186,1208,185,350),(1210,1236,185,343),(1236,1261,185,244),(1288,1310,185,288),(1315,1342,185,545)]:
@@ -75,6 +75,15 @@ try:off=json.load(open(REPO+'/scripts/n62/offsets.json'))
 except FileNotFoundError:off={}
 for n,it in enumerate(items):
  if str(n) in off:it['x']+=off[str(n)][0];it['y']+=off[str(n)][1]
+# r2: consistent first-ad body face, scan email indent, and measured form/row ink.
+for n in range(47,53):items[n]['s']=17.2
+items[52]['x']=164
+items[57].update(x=190,y=1151,s=15.5)
+items[60]['x']+=3
+items[26]['y']-=2
+items[34]['y']+=1
+items[38]['y']+=1
+items[16]['y']-=4
 Image.fromarray(a).save(REPO+'/assets/book-crops/native-ab12-p62-bg.png')
 write_spec(P,{'w':s['width'],'h':s['height'],'items':[{'k':'a','n':'bg','x':0,'y':0,'w':s['width'],'h':s['height'],'alt':'Seite 62 Hintergrund'}]+items})
 json.dump(bands,open('/tmp/p62-bands.json','w'));print('p62',len(items))
