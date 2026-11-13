@@ -30,8 +30,8 @@ const specs=Object.fromEntries(pages.map(n=>[n,JSON.parse(fs.readFileSync(`src/n
   if(dots.length){const d=dots[0];const el=h.locator(`input[aria-label="${d.l}"]`);await el.check({force:true});assert(await el.isChecked());
    const d2=dots.find(x=>x.id===d.id&&x.v!==d.v);if(d2){await h.locator(`input[aria-label="${d2.l}"]`).check({force:true});assert(!(await el.isChecked()),'radio exclusive')}}
   const free=spec.items.find(i=>i.k==='f'&&!i.g);
-  if(free){const f=h.locator(`[data-native-field="${free.id}"]`);await f.fill('Test');await p.reload();await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true',null,{timeout:30000});
-   assert.equal(await h.locator(`[data-native-field="${free.id}"]`).inputValue(),'Test','saved value after reload')}
+  if(free){const f=h.locator(`[data-native-field="${free.id}"]`);await f.fill('Test');const exp='Test'.slice(0,free.max||99);await p.reload();await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true',null,{timeout:30000});
+   assert.equal(await h.locator(`[data-native-field="${free.id}"]`).inputValue(),exp,'saved value after reload')}
   assert.deepEqual(errors,[]);
   console.log(width,n,`${chks.length} checks, ${dots.length} marks: grading, wrong answers, radios, saved reload ok`);
   await p.close();
