@@ -21,3 +21,22 @@
 .nativeAB11 .nabCanvas .nabInput,.nativeAB11Next .nabCanvas .nabConjRow>input,.nativeAB11Next .nabCanvas .nabForeignRow>input,.nativeAB11Next .nabCanvas .nabStressTable textarea,.nativeAB11 .nabCanvas .nabTable input{border:1px solid #8b9586!important;border-radius:2px!important;background-color:#fffef5!important;box-sizing:border-box}
 .nativeAB11 .nabCanvas .nabArrow{border:1px solid #8b9586!important;border-radius:2px!important}
 .nativeAB11 .nabCanvas .nabCircle{border-radius:50%!important}
+.mCanvas .mHelp{position:absolute;pointer-events:none;max-width:none;mix-blend-mode:multiply}
+.mCanvas .mSq,.mCanvas .mTri{display:inline-block;vertical-align:baseline}.mCanvas .mSq{width:.5em;height:.5em;background:#1f3f94;margin-right:.1em}.mCanvas .mTri{width:0;height:0;border-left:.3em solid transparent;border-right:.3em solid transparent;border-bottom:.55em solid #3a9a2a;margin-right:.1em}
+.nativeAB11Lesson7Close .mCanvas .p58Day{line-height:26px}
+.nativeAB11Lesson7Close[data-native-ab11-page='57'] .mCanvas .mText.mTitle{font-size:17px}
+.nativeAB11Lesson7Close[data-native-ab11-page='57'] .mCanvas .mText.mSmall{font-size:15px}
+.nativeAB11Lesson7Close[data-native-ab11-page='57'] .mCanvas .mQuestion{font-size:15px;line-height:20px}
+.nativeAB11Lesson7Close[data-native-ab11-page='57'] .mCanvas .mText.mEmailHeader{font:10px/16px Arial}
+.nativeAB11Lesson7Close[data-native-ab11-page='57'] .mCanvas .mText.mEmailBody{font:11px/1.35 Arial;color:#000}
+.nativeAB11Lesson7Close[data-native-ab11-page='57'] .mCanvas .mStressSentence{font-size:15px}
+.nativeAB11Lesson7Close[data-native-ab11-page='57'] .mCanvas .mText.mStrong{font-weight:700;font-size:14px}
+.nativeAB11Lesson7Close .mCanvas .mQInline{border:0;background:transparent;padding:0;margin:0;min-height:0;font:inherit;cursor:pointer;text-align:left;color:inherit}
+.nativeAB11Lesson7Close .mCanvas .mQInline.marked{background:#fff386}
+.nativeAB11Lesson7Close .mCanvas .mEmailBody .mQuestionExample{font-size:inherit;background:#fff386}
+.nativeAB11Lesson7Close .mCanvas .mText.mEmailBody{white-space:normal}
+.nativeAB11Lesson7Close .mCanvas .mEmailHeader>div:not(:last-child){border-bottom:1px dotted #bdb9a1}
+.nativeAB11Lesson7Close[data-native-ab11-page='57'] .mCanvas .mText.mTitle20{font-size:20px}
+.nativeAB11Lesson7Close[data-native-ab11-page='57'] .mCanvas .mText.mRuleTitle{font:700 14px Georgia}
+.nativeAB11Lesson7Close[data-native-ab11-page='57'] .mCanvas .mPrintedStress{font-size:18px;line-height:21px}
+.nativeAB11Lesson7Close[data-native-ab11-page='57'] .mCanvas .mPrintedStress>div{min-height:21px}
