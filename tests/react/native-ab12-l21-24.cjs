@@ -220,5 +220,92 @@ for(const width of[320,390]){
  assert.equal(await p.evaluate(()=>localStorage.getItem('native-ab12-71')),null,'reset clears storage');
  console.log(width,'p71 interaction/persist/reset PASS');
  await p.close();
+ // page 72: Wiederholungsstation Wortschatz - vowel gaps, sort table, strike rows, text gaps; grading, persistence, reset
+ p=await openPage(b,width,'72');
+ const pg72=p.locator('.page[data-page="72"]');
+ assert.equal(await pg72.locator('.nativeAB12[data-native-ab12="72"]').count(),1,'native p72 rendered');
+ assert.equal(await pg72.locator('[data-native-field]').count(),24,'24 fields (11 vowels + 7 table cells + 6 text gaps)');
+ for(const id of['p72-1-w1i','p72-1-w8ue','p72-1-a1','p72-1-c4','p72-3_0','p72-3_5'])assert.equal(await pg72.locator('[data-native-field="'+id+'"]').count(),1,'field '+id);
+ // g1 wrong then right (vowels + sort table with alternatives)
+ await pg72.locator('[data-native-field="p72-1-w1i"]').fill('x');
+ await pg72.locator('[data-check="g1"] button').click();
+ assert.match((await pg72.locator('[data-check="g1"] output').textContent())||'',/Noch einmal/,'g1 wrong graded');
+ for(const[id,v]of[['p72-1-w1i','i'],['p72-1-w2a','a'],['p72-1-w3o','o'],['p72-1-w4au','au'],['p72-1-w4i','i'],['p72-1-w5o','o'],['p72-1-w5i','i'],['p72-1-w6i','i'],['p72-1-w7eu','eu'],['p72-1-w7i','i'],['p72-1-w8ue','ü'],['p72-1-a1','schlank'],['p72-1-a2','blond'],['p72-1-a3','dick'],['p72-1-a4','hübsch'],['p72-1-c2','traurig'],['p72-1-c3','komisch'],['p72-1-c4','freundlich']])await pg72.locator('[data-native-field="'+id+'"]').fill(v);
+ await pg72.locator('[data-check="g1"] button').click();
+ assert.match((await pg72.locator('[data-check="g1"] output').textContent())||'',/Richtig/,'g1 correct graded');
+ // g2 strike rows: wrong then right
+ await pg72.getByRole('button',{name:'s-b streichen aufräumen'}).click();await p.keyboard.press('Escape');
+ await pg72.locator('[data-check="g2"] button').click();
+ assert.match((await pg72.locator('[data-check="g2"] output').textContent())||'',/Noch einmal/,'g2 wrong graded');
+ await pg72.getByRole('button',{name:'s-b streichen rausbringen'}).click();await p.keyboard.press('Escape');
+ await pg72.getByRole('button',{name:'s-c streichen spülen'}).click();await p.keyboard.press('Escape');
+ await pg72.getByRole('button',{name:'s-d streichen wischen'}).click();await p.keyboard.press('Escape');
+ await pg72.getByRole('button',{name:'s-e streichen kochen'}).click();await p.keyboard.press('Escape');
+ await pg72.getByRole('button',{name:'s-f streichen backen'}).click();await p.keyboard.press('Escape');
+ await pg72.locator('[data-check="g2"] button').click();
+ assert.match((await pg72.locator('[data-check="g2"] output').textContent())||'',/Richtig/,'g2 correct graded');
+ // g3 text gaps: wrong then right
+ await pg72.locator('[data-native-field="p72-3_0"]').fill('x');
+ await pg72.locator('[data-check="g3"] button').click();
+ assert.match((await pg72.locator('[data-check="g3"] output').textContent())||'',/Noch einmal/,'g3 wrong graded');
+ for(const[id,v]of[['p72-3_0','stehen bleiben'],['p72-3_1','dürfen'],['p72-3_2','Fahrradfahrer'],['p72-3_3','achten'],['p72-3_4','schiebt'],['p72-3_5','trägt']])await pg72.locator('[data-native-field="'+id+'"]').fill(v);
+ await pg72.locator('[data-check="g3"] button').click();
+ assert.match((await pg72.locator('[data-check="g3"] output').textContent())||'',/Richtig/,'g3 correct graded');
+ // saved-reload
+ await p.reload();await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');await p.evaluate(()=>window.bookPage([...document.querySelectorAll('.page')].findIndex(e=>e.dataset.page==='72')));await p.waitForTimeout(350);
+ assert.equal(await p.locator('.page[data-page="72"] [data-native-field="p72-1-w1i"]').inputValue(),'i','saved vowel field reloaded');
+ assert.equal(await p.evaluate(()=>JSON.parse(localStorage.getItem('native-ab12-72')||'{}')['s-b']),'rausbringen','saved strike reloaded');
+ // reset clears
+ await p.locator('.pageResetTrigger').click();await p.getByRole('button',{name:'Reset',exact:true}).click();
+ assert.equal(await p.locator('.page[data-page="72"] [data-native-field="p72-1-w1i"]').inputValue(),'','reset clears field');
+ assert.equal(await p.evaluate(()=>localStorage.getItem('native-ab12-72')),null,'reset clears storage');
+ console.log(width,'p72 interaction/grade/persist/reset PASS');
+ await p.close();
+ // page 73: Wiederholungsstation Grammatik - letter gaps, letter-grid marking, pronoun notes, imperative table
+ p=await openPage(b,width,'73');
+ const pg73=p.locator('.page[data-page="73"]');
+ assert.equal(await pg73.locator('.nativeAB12[data-native-ab12="73"]').count(),1,'native p73 rendered');
+ assert.equal(await pg73.locator('[data-native-field]').count(),26,'26 fields (6 haben/sein + 5 verbs + 5 pronouns + 10 imperatives)');
+ for(const id of['p73-1b','p73-1g','p73-2b','p73-2f','p73-3b','p73-3e2','p73-5s0','p73-5p4'])assert.equal(await pg73.locator('[data-native-field="'+id+'"]').count(),1,'field '+id);
+ // g1 wrong then right
+ await pg73.locator('[data-native-field="p73-1b"]').fill('x');
+ await pg73.locator('[data-check="g1"] button').click();
+ assert.match((await pg73.locator('[data-check="g1"] output').textContent())||'',/Noch einmal/,'g1 wrong graded');
+ for(const[id,v]of[['p73-1b','waren'],['p73-1c','war'],['p73-1d','hatten'],['p73-1e','hatten'],['p73-1f','war'],['p73-1g','hatten']])await pg73.locator('[data-native-field="'+id+'"]').fill(v);
+ await pg73.locator('[data-check="g1"] button').click();
+ assert.match((await pg73.locator('[data-check="g1"] output').textContent())||'',/Richtig/,'g1 correct graded');
+ // g2 letter grid + gaps: wrong then right
+ await pg73.getByRole('button',{name:'2 Buchstabe 1 K'}).click();
+ for(const[id,v]of[['p73-2b','gefallen'],['p73-2c','bekommen'],['p73-2d','bezahlt'],['p73-2e','erkannt'],['p73-2f','verstanden']])await pg73.locator('[data-native-field="'+id+'"]').fill(v);
+ await pg73.locator('[data-check="g2"] button').click();
+ assert.match((await pg73.locator('[data-check="g2"] output').textContent())||'',/Noch einmal/,'g2 wrong graded');
+ await pg73.getByRole('button',{name:'2 Buchstabe 1 K'}).click();
+ for(const n of[21,22,23,24,25,26,31,32,33,34,35,36,37,38,43,44,45,46,47,48,49,50,57,58,59,60,61,62,63,64,70,71,72,73,74,75,76,77])await pg73.locator('button[aria-label^="2 Buchstabe '+n+' "]').click();
+ await pg73.locator('[data-check="g2"] button').click();
+ assert.match((await pg73.locator('[data-check="g2"] output').textContent())||'',/Richtig/,'g2 correct graded');
+ // g3 pronouns: wrong then right
+ await pg73.locator('[data-native-field="p73-3b"]').fill('x');
+ await pg73.locator('[data-check="g3"] button').click();
+ assert.match((await pg73.locator('[data-check="g3"] output').textContent())||'',/Noch einmal/,'g3 wrong graded');
+ for(const[id,v]of[['p73-3b','sie'],['p73-3c','ihn'],['p73-3d','es'],['p73-3e1','dich'],['p73-3e2','ihn']])await pg73.locator('[data-native-field="'+id+'"]').fill(v);
+ await pg73.locator('[data-check="g3"] button').click();
+ assert.match((await pg73.locator('[data-check="g3"] output').textContent())||'',/Richtig/,'g3 correct graded');
+ // g4 imperatives: wrong then right
+ await pg73.locator('[data-native-field="p73-5s0"]').fill('x');
+ await pg73.locator('[data-check="g4"] button').click();
+ assert.match((await pg73.locator('[data-check="g4"] output').textContent())||'',/Noch einmal/,'g4 wrong graded');
+ for(const[id,v]of[['p73-5s0','Trockne bitte das Geschirr ab.'],['p73-5p0','Trocknet bitte das Geschirr ab.'],['p73-5s1','Räum bitte die Küche auf.'],['p73-5p1','Räumt bitte die Küche auf.'],['p73-5s2','Mach bitte die Musik leise.'],['p73-5p2','Macht bitte die Musik leise.'],['p73-5s3','Vergiss bitte den Schlüssel nicht.'],['p73-5p3','Vergesst bitte den Schlüssel nicht.'],['p73-5s4','Deck bitte den Tisch.'],['p73-5p4','Deckt bitte den Tisch.']])await pg73.locator('[data-native-field="'+id+'"]').fill(v);
+ await pg73.locator('[data-check="g4"] button').click();
+ assert.match((await pg73.locator('[data-check="g4"] output').textContent())||'',/Richtig/,'g4 correct graded');
+ // saved-reload
+ await p.reload();await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');await p.evaluate(()=>window.bookPage([...document.querySelectorAll('.page')].findIndex(e=>e.dataset.page==='73')));await p.waitForTimeout(350);
+ assert.equal(await p.locator('.page[data-page="73"] [data-native-field="p73-1b"]').inputValue(),'waren','saved letter field reloaded');
+ assert.equal(await p.evaluate(()=>JSON.parse(localStorage.getItem('native-ab12-73')||'{}')['p73-2-mark']),'20,21,22,23,24,25,30,31,32,33,34,35,36,37,42,43,44,45,46,47,48,49,56,57,58,59,60,61,62,63,69,70,71,72,73,74,75,76','saved grid marks reloaded');
+ // reset clears
+ await p.locator('.pageResetTrigger').click();await p.getByRole('button',{name:'Reset',exact:true}).click();
+ assert.equal(await p.locator('.page[data-page="73"] [data-native-field="p73-1b"]').inputValue(),'','reset clears field');
+ assert.equal(await p.evaluate(()=>localStorage.getItem('native-ab12-73')),null,'reset clears storage');
+ console.log(width,'p73 interaction/grade/persist/reset PASS');
+ await p.close();
 }
 }finally{await b.close();server.close()}})().catch(e=>{console.error(e);server.close();process.exitCode=1});
