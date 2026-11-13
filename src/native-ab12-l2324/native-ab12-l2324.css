@@ -100,5 +100,10 @@
 [data-native-ab12="91"] .naField.naCirc91{border:1.2px solid #6a6a6a!important;border-radius:50%!important;text-align:center;padding:0!important;font-size:12px!important;height:16px!important;width:16px}
 .naCanvas .naGap91{background:transparent;letter-spacing:4.9px;font-size:13px;padding:0 0 0 3px;height:20px}
 .naCanvas .naDash91{position:absolute;height:0;border-bottom:1.5px solid #4a5a75;width:7px}
-.naCanvas .naFix91{position:absolute;font:14px 'Droid Serif',serif;color:#222}
+.naCanvas .naFix91{position:absolute;font:14px DroidSerif,Georgia,serif;color:#222}
 .naCanvas .naTblHL91{opacity:.45}
+[data-native-ab12="91"] .naTblCell{font-family:DroidSerif,Georgia,serif}
+[data-native-ab12="91"] .naTblCell.naTblCellS{font-size:12px}
+.naCanvas .naText.naIt91{font-style:italic}
+[data-native-ab12="91"] .naField.naCirc91{border:1px solid #c9cdc0!important}
+[data-native-ab12="91"] .naDot.naDotR91{border-width:1px!important;border-color:#d3d6c8!important}
