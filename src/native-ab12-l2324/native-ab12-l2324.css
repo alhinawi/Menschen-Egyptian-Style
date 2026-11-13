@@ -131,3 +131,7 @@
 .naCanvas .naBlue{color:#2a5ea8}
 [data-native-ab12="92"] .naRule{border-bottom:1px solid #c4c4c8}
 .naCanvas .naText.naLet92{font:700 13px FiraSans,'Trebuchet MS',sans-serif;letter-spacing:0;color:#222}
+[data-native-ab12="92"] .naTitle.naRB b{background:#f55e02}
+[data-native-ab12="92"] .naBasisL{font-size:28px;font-weight:400;letter-spacing:0;color:#4e4d44;transform:scaleX(0.86);transform-origin:left top}
+.naCanvas .naStrike92{text-decoration:line-through}
+[data-native-ab12="92"] .naBank92{letter-spacing:0.4px}
