@@ -425,5 +425,129 @@ export function NativeAB12L23({page}:{page:string}){
   {art('modul8-tab',0,1047,48,20)}
   <div className="naText naFoot88" style={{left:52,top:1047,width:200}}>90&nbsp;&nbsp;|&nbsp;&nbsp;neunzig</div>
  </>}
+ {page==='91'&&<>
+  <div className="naBasis" style={{left:78,top:50}}>BASISTRAINING</div>
+  <div className="naRuleP" style={{left:263,top:80,width:455,background:'#e6742a'}}/>
+  <div className="naRedL" style={{left:728,top:28,width:71,height:58,background:'#f55e02'}}>24</div>
+  {kb(32,124,'KB 3')}
+  <div className="naSide naSideB" style={{left:56,top:160}}>STRUKTUREN</div>
+  {title('4',55,119,640,'Ordnen Sie zu.','naRB naNw')}
+  <div className="naBank" style={{left:102,top:146,width:620,height:24,background:'#f5f9df'}}/>
+  <div className="naBank88" style={{left:111,top:149}}><Words text="ab | "/><span className="naStrikeB"><Words text="am"/></span><Words text=" | am | bis | bis | für | nach | im | in | um | vom | von"/></div>
+  {text(109,177,16,'a')}<div className="naText naS14 naNw" style={{left:127,top:177,width:340}}><span className="naStrikeB naBankInk"><Words text="Am"/></span><Words text=" Mittwoch hat Isabella Prüfung. Wir treffen uns"/></div>
+  {field('91-4a',464,175,62,'4 a um')}
+  {text(530,177,185,'17.00 Uhr vor der Schule und','naS14 naNw')}
+  {text(126,198,130,'wollen ihr gratulieren.','naS14 naNw')}
+  {text(108,217,16,'b')}{text(127,217,95,'Frau Stern hat','naS14 naNw')}
+  {field('91-4b1',226,213,61,'4 b1 am')}
+  {text(292,217,140,'17. August Geburtstag.','naS14 naNw')}
+  {field('91-4b2',437,213,62,'4 b2 von')}
+  {text(503,217,60,'15.00 Uhr','naS14 naNw')}
+  {field('91-4b3',568,213,62,'4 b3 bis')}
+  {text(634,217,75,'16.00 Uhr','naS14 naNw')}
+  {text(126,237,290,'gibt es in ihrem Büro Kaffee und Kuchen.','naS14 naNw')}
+  {text(108,256,16,'c')}
+  {field('91-4c1',125,252,62,'4 c1 Im')}
+  {text(189,256,210,'Juli hat Herr Bellmann Urlaub,','naS14 naNw')}
+  {field('91-4c2',402,252,62,'4 c2 vom')}
+  {text(467,256,45,'5. Juli','naS14 naNw')}
+  {field('91-4c3',510,252,62,'4 c3 bis')}
+  {text(576,256,90,'zum 19. Juli.','naS14 naNw')}
+  {text(108,275,16,'d')}
+  {field('91-4d',125,271,62,'4 d Nach')}
+  {text(190,275,340,'dem Urlaub zieht er dann mit seiner Familie um.','naS14 naNw')}
+  {text(108,294,16,'e')}
+  {field('91-4e',125,290,62,'4 e In')}
+  {text(190,294,520,'vier Wochen ist schon wieder Weihnachten. Und ich habe noch keine','naS14 naNw')}
+  {text(126,315,100,'Geschenke.','naS14 naNw')}
+  {text(108,333,16,'f')}
+  {field('91-4f1',125,329,63,'4 f1 Ab')}
+  {text(191,333,100,'Montag bin ich','naS14 naNw')}
+  {field('91-4f2',294,329,62,'4 f2 für')}
+  {text(360,333,150,'drei Wochen im Urlaub.','naS14 naNw')}
+  {check('91-4',640,330,{'91-4a':'um','91-4b1':'am','91-4b2':'von','91-4b3':'bis','91-4c1':'Im|im','91-4c2':'vom','91-4c3':'bis','91-4d':'Nach|nach','91-4e':'In|in','91-4f1':'Ab|ab','91-4f2':'für'})}
+  {kb(32,387,'KB 3')}
+  <div className="naSide naSideB" style={{left:56,top:437}}>HÖREN</div>
+  {title('5',55,382,640,'Was ist richtig? Hören Sie und kreuzen Sie an.','naRB naNw')}
+  <button className="naAudio" style={{left:20,top:398}} aria-label="Originalaudio 2 40–43 abspielen" onClick={()=>{const p=c.player.current;if(!p)return;const seq=['assets/ab-cd2-track40.mp3','assets/ab-cd2-track41.mp3','assets/ab-cd2-track42.mp3','assets/ab-cd2-track43.mp3'];let i=0;p.onended=()=>{i+=1;if(i<seq.length){p.src=seq[i];p.play().catch(()=>{})}else{p.onended=null}};p.src=seq[0];p.play().catch(()=>{})}}>▶ 2 40–43</button>
+  {text(109,412,16,'a')}{text(126,412,380,'Am 23. August kann man die Praxis wieder besuchen.','naS14 naNw')}
+  {text(109,432,16,'b')}{text(126,432,300,'Luisa schafft es sicher um 15.30 Uhr.','naS14 naNw')}
+  {text(109,452,16,'c')}{text(126,452,380,'Der Anrufer wartet noch 10 Minuten vor dem Kino.','naS14 naNw')}
+  {text(109,472,16,'d')}{text(126,472,260,'Michi hat am Sonntag keine Zeit.','naS14 naNw')}
+  {dot('91-5a','true',519,414,'5 a richtig',true,'naDotR91')}
+  {dot('91-5b','true',519,434,'5 b richtig',true,'naDotR91')}
+  {dot('91-5c','true',519,454,'5 c richtig',true,'naDotR91')}
+  {dot('91-5d','true',519,473,'5 d richtig',true,'naDotR91')}
+  {check('91-5',560,445,{'91-5a':'false','91-5b':'true','91-5c':'true','91-5d':'false'})}
+  {kb(32,523,'KB 3')}
+  <div className="naSide naSideB" style={{left:56,top:576}}>WÖRTER</div>
+  {title('6',55,518,640,'Was feiern die Personen?','naRB naNw')}
+  {audio('assets/ab-cd2-track44.mp3',17,546,'2 44')}
+  {text(85,549,16,'a')}{text(110,549,230,'Hören Sie und nummerieren Sie.','naS14 naNw')}
+  {field('91-6a-ostern',107,576,18,'6 a Ostern Nummer','naFieldBlank naCirc91')}
+  {text(128,576,60,'Ostern','naS14 naNw')}
+  {art('circ1',192,579,24,15)}
+  {text(209,576,85,'Geburtstag','naS14 naNw')}
+  {field('91-6a-weihnachten',297,576,18,'6 a Weihnachten Nummer','naFieldBlank naCirc91')}
+  {text(316,576,100,'Weihnachten','naS14 naNw')}
+  {field('91-6a-silvester',421,576,18,'6 a Silvester Nummer','naFieldBlank naCirc91')}
+  {text(441,576,70,'Silvester','naS14 naNw')}
+  {check('91-6a',560,573,{'91-6a-ostern':'4','91-6a-weihnachten':'3','91-6a-silvester':'2'})}
+  {text(85,617,16,'b')}<div className="naText naS14 naNw" style={{left:110,top:617,width:280}}><Words text="Ergänzen Sie aus "/><span className="naBlue naIt">a</span><Words text=" und vergleichen Sie."/></div>
+  {art('globe',57,614,34,32)}
+  <div className="naTblBox" style={{left:102,top:640,width:616,height:114}}/>
+  <div className="naTblHead" style={{left:103,top:641,width:614,height:21}}/>
+  <div className="naTblH" style={{left:102,top:662,width:616}}/>
+  <div className="naTblH naTblHL91" style={{left:102,top:684,width:616}}/>
+  <div className="naTblH naTblHL91" style={{left:102,top:706,width:616}}/>
+  <div className="naTblH naTblHL91" style={{left:102,top:729,width:616}}/>
+  <div className="naTblV" style={{left:286,top:640,height:114}}/>
+  <div className="naTblV" style={{left:458,top:640,height:114}}/>
+  <div className="naTblCell naTblCellS" style={{left:109,top:643}}>Deutsch</div>
+  <div className="naTblCell naTblCellS" style={{left:293,top:643}}>Englisch</div>
+  <div className="naTblCell naTblCellS" style={{left:465,top:643}}>Meine Sprache oder andere Sprachen</div>
+  {([['91-6b-r1','Weihnachten',3,'h',681,'Deutsch Zeile 1'],['91-6b-r2','Geburtstag',7,'t',703,'Deutsch Zeile 2'],['91-6b-r3','Ostern',2,'t',726,'Deutsch Zeile 3'],['91-6b-r4','Silvester',3,'v',748,'Deutsch Zeile 4']] as [string,string,number,string,number,string][]).map(([id,ans,fi,fl,by,lb])=>{
+    const els=[...ans.split('').map((ch,i)=><div key={'d'+i} className="naDash91" style={{left:114+i*11.2,top:by}}/>)];
+    els.push(<div key="fl" className="naFix91" style={{left:113+fi*11.2,top:by-14}}>{fl}</div>);
+    els.push(<span key="f">{field(id,110,by-18,ans.length*11.2+8,lb,'naFieldBlank naGap91')}</span>);
+    return els;
+  })}
+  {text(287,666,100,'Christmas','naS14 naNw')}
+  {text(287,689,100,'birthday','naS14 naNw')}
+  {text(287,712,100,'Easter','naS14 naNw')}
+  {text(287,734,130,"New Year's Eve",'naS14 naNw')}
+  {field('91-6b-n1',465,663,240,'Meine Sprache Zeile 1','naFieldBlank')}
+  {field('91-6b-n2',465,685,240,'Meine Sprache Zeile 2','naFieldBlank')}
+  {field('91-6b-n3',465,707,240,'Meine Sprache Zeile 3','naFieldBlank')}
+  {field('91-6b-n4',465,730,240,'Meine Sprache Zeile 4','naFieldBlank')}
+  {check('91-6b',620,758,{'91-6b-r1':'Weihnachten','91-6b-r2':'Geburtstag','91-6b-r3':'Ostern','91-6b-r4':'Silvester'})}
+  {kb(32,796,'KB 4')}
+  {title('7',55,790,640,'Was ist das? Ergänzen Sie.','naRB naNw')}
+  <div className="naSide naSideB" style={{left:56,top:831}}>WÖRTER</div>
+  {text(110,840,190,'Der erste Tag des Jahres heißt','naS14 naNw')}
+  {field('91-7a',108,862,154,'7 a Neujahr')}
+  {text(266,865,10,'.','naS14')}
+  {art('sekt',302,822,107,71)}
+  {text(109,919,230,'Holger und Katrin wollen im','naS14 naNw')}
+  {text(109,938,220,'Mai heiraten. Sie haben die','naS14 naNw')}
+  {text(108,958,220,'ganze Familie und viele Freunde','naS14 naNw')}
+  {text(109,978,22,'zur','naS14 naNw')}
+  {field('91-7b',133,980,112,'7 b Hochzeit')}
+  {text(254,978,90,'eingeladen.','naS14 naNw')}
+  {art('rings',310,908,94,72)}
+  {text(433,840,110,'Tobias hat seine','naS14 naNw')}
+  {field('91-7c',436,857,154,'7 c Prüfungen')}
+  {text(592,861,90,'bestanden!','naS14 naNw')}
+  {text(434,881,170,'Das möchte er groß feiern.','naS14 naNw')}
+  {art('grad',652,808,86,70)}
+  {text(434,939,150,'Wir haben neue Nachbarn.','naS14 naNw')}
+  {text(433,958,230,'Am Wochenende machen sie eine','naS14 naNw')}
+  {field('91-7d',436,985,259,'7 d Einweihungsparty')}
+  {text(699,990,10,'.','naS14')}
+  {art('boxes',655,905,105,93)}
+  {check('91-7',640,1006,{'91-7a':'Neujahr','91-7b':'Hochzeit','91-7c':'Prüfungen','91-7d':'Einweihungsparty'})}
+  {art('modul8-tab',742,1043,65,25)}
+  <div className="naText naFooter" style={{left:420,top:1045,width:310,textAlign:'right'}}>einundneunzig&nbsp;&nbsp;|&nbsp;&nbsp;91</div>
+ </>}
  </Canvas>;
 }
