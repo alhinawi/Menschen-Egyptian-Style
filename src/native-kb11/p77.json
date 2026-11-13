@@ -256,7 +256,12 @@
       ]
     }
   ],
-  "checks": {},
+  "checks": {
+    "task1": [
+      640,
+      300
+    ]
+  },
   "book": "kb-a11",
   "page": 77,
   "w": 848,
@@ -536,7 +541,8 @@
       "y": 475,
       "w": 225,
       "h": 24,
-      "ul": 1
+      "ul": 1,
+      "answer": "Österreich|Osterreich"
     },
     {
       "id": "t1-c1",
@@ -547,7 +553,8 @@
       "y": 544,
       "w": 225,
       "h": 24,
-      "ul": 1
+      "ul": 1,
+      "answer": "Johann Wolfgang von Goethe"
     },
     {
       "id": "t1-d2",
@@ -558,7 +565,8 @@
       "y": 612,
       "w": 225,
       "h": 24,
-      "ul": 1
+      "ul": 1,
+      "answer": "Ägypten|Agypten"
     },
     {
       "id": "t1-e1",
@@ -569,7 +577,8 @@
       "y": 681,
       "w": 225,
       "h": 24,
-      "ul": 1
+      "ul": 1,
+      "answer": "Agatha Christie"
     },
     {
       "id": "t1-f2",
@@ -580,7 +589,8 @@
       "y": 750,
       "w": 225,
       "h": 24,
-      "ul": 1
+      "ul": 1,
+      "answer": "Indien"
     },
     {
       "id": "t1-g1",
@@ -591,7 +601,8 @@
       "y": 818,
       "w": 225,
       "h": 24,
-      "ul": 1
+      "ul": 1,
+      "answer": "Pablo Picasso"
     },
     {
       "id": "t1-h2",
@@ -602,7 +613,8 @@
       "y": 886,
       "w": 225,
       "h": 24,
-      "ul": 1
+      "ul": 1,
+      "answer": "Mazedonien"
     }
   ],
   "audio": [],
