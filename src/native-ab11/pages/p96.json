@@ -1,0 +1,1022 @@
+{
+  "page": 96,
+  "width": 901,
+  "height": 1275,
+  "items": [
+    {
+      "k": "text",
+      "x": 114,
+      "y": 117,
+      "t": "WIEDERHOLUNGSSTATION: WORTSCHATZ",
+      "s": 31,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "badge",
+      "t": "1",
+      "x": 114,
+      "y": 195,
+      "w": 27,
+      "h": 19
+    },
+    {
+      "k": "text",
+      "x": 150,
+      "y": 191,
+      "t": "Ergänzen Sie.",
+      "s": 18,
+      "font": "sans",
+      "b": true
+    },
+    {
+      "k": "text",
+      "x": 150,
+      "y": 225,
+      "t": "Am 31.12. ist",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "art",
+      "src": "assets/native-ab11/p96-silvester.png",
+      "x": 243,
+      "y": 214,
+      "w": 253,
+      "h": 31
+    },
+    {
+      "k": "text",
+      "x": 501,
+      "y": 225,
+      "t": ".",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "text",
+      "x": 151,
+      "y": 258,
+      "t": "Er arbeitet am Montag",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "text",
+      "x": 414,
+      "y": 258,
+      "t": "7:30 Uhr bis 16 Uhr.",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "field",
+      "id": "u1-0",
+      "x": 321,
+      "y": 251,
+      "w": 84,
+      "h": 27,
+      "group": "u1",
+      "answer": "von",
+      "cells": 3
+    },
+    {
+      "k": "text",
+      "x": 152,
+      "y": 290,
+      "t": "An einer Universität kann man",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "text",
+      "x": 640,
+      "y": 290,
+      "t": ".",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "field",
+      "id": "u1-1",
+      "x": 385,
+      "y": 283,
+      "w": 252,
+      "h": 27,
+      "group": "u1",
+      "answer": "studieren",
+      "cells": 9
+    },
+    {
+      "k": "text",
+      "x": 153,
+      "y": 322,
+      "t": "Hier kommt der Zug an:",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "text",
+      "x": 531,
+      "y": 322,
+      "t": ".",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "field",
+      "id": "u1-2",
+      "x": 332,
+      "y": 315,
+      "w": 196,
+      "h": 27,
+      "group": "u1",
+      "answer": "Bahnhof",
+      "cells": 7
+    },
+    {
+      "k": "text",
+      "x": 154,
+      "y": 354,
+      "t": "Nach dem Winter kommt der",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "text",
+      "x": 629,
+      "y": 354,
+      "t": ".",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "field",
+      "id": "u1-3",
+      "x": 372,
+      "y": 347,
+      "w": 252,
+      "h": 27,
+      "group": "u1",
+      "answer": "Fruehling",
+      "cells": 9
+    },
+    {
+      "k": "text",
+      "x": 154,
+      "y": 386,
+      "t": "Juli,",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "text",
+      "x": 365,
+      "y": 386,
+      "t": ", September.",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "field",
+      "id": "u1-4",
+      "x": 191,
+      "y": 379,
+      "w": 168,
+      "h": 27,
+      "group": "u1",
+      "answer": "August",
+      "cells": 6
+    },
+    {
+      "k": "text",
+      "x": 155,
+      "y": 418,
+      "t": "Die S-Bahn fährt jeden Tag. Sie fährt",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "text",
+      "x": 659,
+      "y": 418,
+      "t": ".",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "field",
+      "id": "u1-5",
+      "x": 430,
+      "y": 411,
+      "w": 224,
+      "h": 27,
+      "group": "u1",
+      "answer": "taeglich",
+      "cells": 8
+    },
+    {
+      "k": "text",
+      "x": 156,
+      "y": 450,
+      "t": "Der 1. Monat im Jahr heißt",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "text",
+      "x": 532,
+      "y": 450,
+      "t": ".",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "field",
+      "id": "u1-6",
+      "x": 357,
+      "y": 443,
+      "w": 168,
+      "h": 27,
+      "group": "u1",
+      "answer": "Januar",
+      "cells": 6
+    },
+    {
+      "k": "text",
+      "x": 157,
+      "y": 482,
+      "t": "Die Zeitung ist nicht interessant, sie ist",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "text",
+      "x": 734,
+      "y": 482,
+      "t": ".",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "field",
+      "id": "u1-7",
+      "x": 451,
+      "y": 475,
+      "w": 280,
+      "h": 27,
+      "group": "u1",
+      "answer": "langweilig",
+      "cells": 10
+    },
+    {
+      "k": "text",
+      "x": 158,
+      "y": 514,
+      "t": "Kai ist erst zwei Monate alt. Er ist noch ein",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "text",
+      "x": 597,
+      "y": 514,
+      "t": ".",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "field",
+      "id": "u1-8",
+      "x": 478,
+      "y": 507,
+      "w": 112,
+      "h": 27,
+      "group": "u1",
+      "answer": "Baby",
+      "cells": 4
+    },
+    {
+      "k": "text",
+      "x": 158,
+      "y": 546,
+      "t": "Bitte",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "text",
+      "x": 433,
+      "y": 546,
+      "t": "an der Bahnsteigkante!",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "field",
+      "id": "u1-9",
+      "x": 199,
+      "y": 539,
+      "w": 224,
+      "h": 27,
+      "group": "u1",
+      "answer": "Vorsicht",
+      "cells": 8
+    },
+    {
+      "k": "text",
+      "x": 159,
+      "y": 578,
+      "t": "Das Jahr hat 12",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "text",
+      "x": 448,
+      "y": 578,
+      "t": ".",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "field",
+      "id": "u1-10",
+      "x": 275,
+      "y": 571,
+      "w": 168,
+      "h": 27,
+      "group": "u1",
+      "answer": "Monate",
+      "cells": 6
+    },
+    {
+      "k": "text",
+      "x": 160,
+      "y": 610,
+      "t": "Peter hat viel gearbeitet. Jetzt macht er eine",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "text",
+      "x": 631,
+      "y": 610,
+      "t": ".",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "field",
+      "id": "u1-11",
+      "x": 486,
+      "y": 603,
+      "w": 140,
+      "h": 27,
+      "group": "u1",
+      "answer": "Pause",
+      "cells": 5
+    },
+    {
+      "k": "text",
+      "x": 160,
+      "y": 642,
+      "t": "Heute ist Sonntag,",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "text",
+      "x": 499,
+      "y": 642,
+      "t": "war Samstag.",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "field",
+      "id": "u1-12",
+      "x": 297,
+      "y": 635,
+      "w": 196,
+      "h": 27,
+      "group": "u1",
+      "answer": "gestern",
+      "cells": 7
+    },
+    {
+      "k": "text",
+      "x": 160,
+      "y": 674,
+      "t": "Silvi hat Geburtstag. Ich muss noch ein",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "text",
+      "x": 681,
+      "y": 674,
+      "t": "kaufen.",
+      "s": 15,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "field",
+      "id": "u1-13",
+      "x": 452,
+      "y": 667,
+      "w": 224,
+      "h": 27,
+      "group": "u1",
+      "answer": "Geschenk",
+      "cells": 8
+    },
+    {
+      "k": "text",
+      "x": 677,
+      "y": 215,
+      "t": "Ü = UE, Ä = AE, Ö = OE",
+      "s": 12,
+      "font": "serif",
+      "b": false
+    },
+    {
+      "k": "art",
+      "src": "assets/native-ab11/p96-spring.png",
+      "x": 671,
+      "y": 264,
+      "w": 175,
+      "h": 123
+    },
+    {
+      "k": "art",
+      "src": "assets/native-ab11/p96-station.png",
+      "x": 668,
+      "y": 511,
+      "w": 177,
+      "h": 120
+    },
+    {
+      "k": "check",
+      "group": "u1",
+      "x": 748,
+      "y": 676,
+      "w": 120,
+      "h": 20
+    },
+    {
+      "k": "badge",
+      "t": "2",
+      "x": 127,
+      "y": 724,
+      "w": 27,
+      "h": 19
+    },
+    {
+      "k": "text",
+      "x": 165,
+      "y": 719,
+      "t": "Verkehr und Reisen",
+      "s": 19,
+      "font": "sans",
+      "b": true
+    },
+    {
+      "k": "text",
+      "x": 138,
+      "y": 757,
+      "t": "a",
+      "s": 17,
+      "font": "sans",
+      "b": true
+    },
+    {
+      "k": "text",
+      "x": 165,
+      "y": 754,
+      "t": "Markieren Sie noch zehn Wörter.",
+      "s": 16,
+      "font": "sans",
+      "b": true
+    },
+    {
+      "k": "snake",
+      "x": 165,
+      "y": 786,
+      "w": 680,
+      "h": 46
+    },
+    {
+      "k": "check",
+      "group": "u2a",
+      "x": 742,
+      "y": 824,
+      "w": 120,
+      "h": 20
+    },
+    {
+      "k": "text",
+      "x": 139,
+      "y": 850,
+      "t": "b",
+      "s": 17,
+      "font": "sans",
+      "b": true
+    },
+    {
+      "k": "text",
+      "x": 165,
+      "y": 849,
+      "t": "Ergänzen Sie die Wörter aus a.",
+      "s": 16,
+      "font": "sans",
+      "b": true
+    },
+    {
+      "k": "highlight",
+      "x": 166,
+      "y": 877,
+      "w": 667,
+      "h": 26
+    },
+    {
+      "k": "text",
+      "x": 171,
+      "y": 878,
+      "t": "der",
+      "s": 16,
+      "font": "serif",
+      "b": true
+    },
+    {
+      "k": "dot",
+      "x": 205,
+      "y": 887,
+      "w": 6,
+      "h": 6,
+      "color": "#0879bc"
+    },
+    {
+      "k": "line",
+      "x": 167,
+      "y": 902,
+      "w": 1,
+      "h": 103,
+      "color": "#dddcca"
+    },
+    {
+      "k": "field",
+      "id": "u2b-der0",
+      "x": 171,
+      "y": 903,
+      "w": 213,
+      "h": 25,
+      "group": "u2b",
+      "answer": "",
+      "col": "der"
+    },
+    {
+      "k": "field",
+      "id": "u2b-der1",
+      "x": 171,
+      "y": 928,
+      "w": 213,
+      "h": 25,
+      "group": "u2b",
+      "answer": "",
+      "col": "der"
+    },
+    {
+      "k": "field",
+      "id": "u2b-der2",
+      "x": 171,
+      "y": 953,
+      "w": 213,
+      "h": 25,
+      "group": "u2b",
+      "answer": "",
+      "col": "der"
+    },
+    {
+      "k": "field",
+      "id": "u2b-der3",
+      "x": 171,
+      "y": 978,
+      "w": 213,
+      "h": 25,
+      "group": "u2b",
+      "answer": "",
+      "col": "der"
+    },
+    {
+      "k": "text",
+      "x": 393,
+      "y": 878,
+      "t": "das",
+      "s": 16,
+      "font": "serif",
+      "b": true
+    },
+    {
+      "k": "dot",
+      "x": 427,
+      "y": 887,
+      "w": 6,
+      "h": 6,
+      "color": "#54af31"
+    },
+    {
+      "k": "line",
+      "x": 389,
+      "y": 902,
+      "w": 1,
+      "h": 103,
+      "color": "#dddcca"
+    },
+    {
+      "k": "field",
+      "id": "u2b-das1",
+      "x": 393,
+      "y": 928,
+      "w": 213,
+      "h": 25,
+      "group": "u2b",
+      "answer": "",
+      "col": "das"
+    },
+    {
+      "k": "field",
+      "id": "u2b-das2",
+      "x": 393,
+      "y": 953,
+      "w": 213,
+      "h": 25,
+      "group": "u2b",
+      "answer": "",
+      "col": "das"
+    },
+    {
+      "k": "field",
+      "id": "u2b-das3",
+      "x": 393,
+      "y": 978,
+      "w": 213,
+      "h": 25,
+      "group": "u2b",
+      "answer": "",
+      "col": "das"
+    },
+    {
+      "k": "text",
+      "x": 615,
+      "y": 878,
+      "t": "die",
+      "s": 16,
+      "font": "serif",
+      "b": true
+    },
+    {
+      "k": "dot",
+      "x": 649,
+      "y": 887,
+      "w": 6,
+      "h": 6,
+      "color": "#df2023"
+    },
+    {
+      "k": "line",
+      "x": 611,
+      "y": 902,
+      "w": 1,
+      "h": 103,
+      "color": "#dddcca"
+    },
+    {
+      "k": "field",
+      "id": "u2b-die0",
+      "x": 615,
+      "y": 903,
+      "w": 213,
+      "h": 25,
+      "group": "u2b",
+      "answer": "",
+      "col": "die"
+    },
+    {
+      "k": "field",
+      "id": "u2b-die1",
+      "x": 615,
+      "y": 928,
+      "w": 213,
+      "h": 25,
+      "group": "u2b",
+      "answer": "",
+      "col": "die"
+    },
+    {
+      "k": "field",
+      "id": "u2b-die2",
+      "x": 615,
+      "y": 953,
+      "w": 213,
+      "h": 25,
+      "group": "u2b",
+      "answer": "",
+      "col": "die"
+    },
+    {
+      "k": "field",
+      "id": "u2b-die3",
+      "x": 615,
+      "y": 978,
+      "w": 213,
+      "h": 25,
+      "group": "u2b",
+      "answer": "",
+      "col": "die"
+    },
+    {
+      "k": "line",
+      "x": 167,
+      "y": 927,
+      "w": 668,
+      "h": 1,
+      "color": "#e1e0cb"
+    },
+    {
+      "k": "line",
+      "x": 167,
+      "y": 952,
+      "w": 668,
+      "h": 1,
+      "color": "#e1e0cb"
+    },
+    {
+      "k": "line",
+      "x": 167,
+      "y": 977,
+      "w": 668,
+      "h": 1,
+      "color": "#e1e0cb"
+    },
+    {
+      "k": "line",
+      "x": 167,
+      "y": 1002,
+      "w": 668,
+      "h": 1,
+      "color": "#e1e0cb"
+    },
+    {
+      "k": "line",
+      "x": 835,
+      "y": 902,
+      "w": 1,
+      "h": 101,
+      "color": "#dddcca"
+    },
+    {
+      "k": "art",
+      "src": "assets/native-ab11/p96-flugzeug.png",
+      "x": 391,
+      "y": 903,
+      "w": 56,
+      "h": 23
+    },
+    {
+      "k": "check",
+      "group": "u2b",
+      "x": 716,
+      "y": 1007,
+      "w": 120,
+      "h": 20
+    },
+    {
+      "k": "badge",
+      "t": "3",
+      "x": 135,
+      "y": 1042,
+      "w": 27,
+      "h": 19
+    },
+    {
+      "k": "text",
+      "x": 169,
+      "y": 1037,
+      "t": "Was passt? Ordnen Sie zu und schreiben Sie.",
+      "s": 18,
+      "font": "sans",
+      "b": true
+    },
+    {
+      "k": "highlight",
+      "x": 172,
+      "y": 1072,
+      "w": 562,
+      "h": 20
+    },
+    {
+      "k": "highlight",
+      "x": 172,
+      "y": 1094,
+      "w": 426,
+      "h": 20
+    },
+    {
+      "k": "text",
+      "x": 175,
+      "y": 1072,
+      "t": "ein Geschenk | die Zeitung | Deutsch | das Zimmer | ein Bier | nach Madrid | ein Fest |",
+      "s": 14.3,
+      "font": "sans",
+      "b": false
+    },
+    {
+      "k": "text",
+      "x": 175,
+      "y": 1094,
+      "t": "lesen | bekommen | aufräumen | trinken | fliegen | lernen | feiern",
+      "s": 14.3,
+      "font": "sans",
+      "b": false
+    },
+    {
+      "k": "line",
+      "x": 176,
+      "y": 1083,
+      "w": 88,
+      "h": 1,
+      "color": "#385895"
+    },
+    {
+      "k": "line",
+      "x": 219,
+      "y": 1105,
+      "w": 73,
+      "h": 1,
+      "color": "#385895"
+    },
+    {
+      "k": "line",
+      "x": 172,
+      "y": 1143,
+      "w": 668,
+      "h": 1,
+      "color": "#92968e"
+    },
+    {
+      "k": "line",
+      "x": 172,
+      "y": 1165,
+      "w": 668,
+      "h": 1,
+      "color": "#92968e"
+    },
+    {
+      "k": "art",
+      "src": "assets/native-ab11/p96-geschenk.png",
+      "x": 175,
+      "y": 1125,
+      "w": 157,
+      "h": 18
+    },
+    {
+      "k": "field",
+      "id": "u3-0",
+      "x": 334,
+      "y": 1120,
+      "w": 164,
+      "h": 23,
+      "group": "u3",
+      "answer": "",
+      "phrase": true
+    },
+    {
+      "k": "field",
+      "id": "u3-1",
+      "x": 502,
+      "y": 1120,
+      "w": 164,
+      "h": 23,
+      "group": "u3",
+      "answer": "",
+      "phrase": true
+    },
+    {
+      "k": "field",
+      "id": "u3-2",
+      "x": 670,
+      "y": 1120,
+      "w": 164,
+      "h": 23,
+      "group": "u3",
+      "answer": "",
+      "phrase": true
+    },
+    {
+      "k": "field",
+      "id": "u3-3",
+      "x": 175,
+      "y": 1144,
+      "w": 217,
+      "h": 23,
+      "group": "u3",
+      "answer": "",
+      "phrase": true
+    },
+    {
+      "k": "field",
+      "id": "u3-4",
+      "x": 397,
+      "y": 1144,
+      "w": 217,
+      "h": 23,
+      "group": "u3",
+      "answer": "",
+      "phrase": true
+    },
+    {
+      "k": "field",
+      "id": "u3-5",
+      "x": 619,
+      "y": 1144,
+      "w": 217,
+      "h": 23,
+      "group": "u3",
+      "answer": "",
+      "phrase": true
+    },
+    {
+      "k": "check",
+      "group": "u3",
+      "x": 714,
+      "y": 1173,
+      "w": 120,
+      "h": 20
+    },
+    {
+      "k": "art",
+      "src": "assets/native-ab11/p96-modul.png",
+      "x": 16,
+      "y": 1198,
+      "w": 92,
+      "h": 24
+    },
+    {
+      "k": "text",
+      "x": 118,
+      "y": 1204,
+      "t": "96",
+      "s": 14,
+      "font": "sans",
+      "b": false
+    },
+    {
+      "k": "line",
+      "x": 146,
+      "y": 1204,
+      "w": 1,
+      "h": 16,
+      "color": "#333"
+    },
+    {
+      "k": "text",
+      "x": 160,
+      "y": 1203,
+      "t": "sechsundneunzig",
+      "s": 14,
+      "font": "serif",
+      "b": false
+    }
+  ]
+}

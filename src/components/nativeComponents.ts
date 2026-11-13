@@ -9,6 +9,7 @@ import {loadScanPages, scanData} from '../scan-data/registry';
 const loaders = {
   NativeAB11P93: () => import('../native-ab11/NativeAB11P93').then(m => m.NativeAB11P93),
   NativeAB11P94: () => import('../native-ab11/NativeAB11P94').then(m => m.NativeAB11P94),
+  NativeAB11P96: () => import('../native-ab11/NativeAB11P96').then(m => m.NativeAB11P96),
   NativeAB11P91: () => import('../native-ab11/NativeAB11P91').then(m => m.NativeAB11P91),
   NativeAB11P92: () => import('../native-ab11/NativeAB11P92').then(m => m.NativeAB11P92),
   NativeAB12P31to46: () => import('../native-ab12/NativeAB12P31to46').then(m => m.NativeAB12P31to46),
@@ -73,6 +74,7 @@ function pick(name: Name, props: Record<string, any>) { return {name, props}; }
 function select(tag: string, attrs: MarkupAttrs) {
   if(tag === 'NativeAB11P93')return pick('NativeAB11P93',{});
   if(tag === 'NativeAB11P94')return pick('NativeAB11P94',{});
+  if(tag === 'NativeAB11P96')return pick('NativeAB11P96',{});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && String(attrs.page)==='91')return pick('NativeAB11P91',{});
   if(tag === 'NativeAB11P91')return pick('NativeAB11P91',{});
   if(tag === 'NativeAB11P92')return pick('NativeAB11P92',{});
