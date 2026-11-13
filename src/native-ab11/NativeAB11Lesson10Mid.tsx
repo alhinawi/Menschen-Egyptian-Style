@@ -248,11 +248,11 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {check('u4',620,1160)}
  </>}
  {page==='83'&&<>
- {head('LERNWORTSCHATZ',362,153,125,133)}
+ {head('LERNWORTSCHATZ',362,151.5,125,133)}
  {title('1',196,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','',132)}
  {txt(158,229,320,'Verkehr und Reisen','mVocabHead')}{txt(480,229,290,'Weitere wichtige Wörter','mVocabHead')}
  {([['l1',253,'Bahnhof der,',266],['l3',319,'Bus der, -se',330],['l4',339,'Halt der, -e/-s',351],['l5',360,'Haltestelle die, -n',373],['l6',381,'Flughafen der,',394],['l7',403,'Flugzeug das, -e',415],['l8',424,'Gepäck das',436],['l9',445,'Gleis das, -e',457],['l10',466,'Koffer der, -',478],['l11',487,'S-Bahn die, -en',500],['l12',508,'Straßenbahn die,\n  -en auch: Tram die, -s',521],['l13',552,'Taxi das, -s',565],['l14',572,'U-Bahn die, -en',585],['l15',593,'Verkehrsmittel\n  das, -',627],['l16',637,'Zug der,',650],['l17',668,'ab·fahren, du\n  fährst ab,\n  er fährt ab',722],['l18',731,'ab·holen',744],['l19',752,'an·kommen',765],['l20',775,'aus·steigen',786],['l21',796,'ein·steigen',807],['l22',817,'um·steigen',829]] as [string,number,string,number][]).map(([id,y,s,ry])=><span key={id}>{txt(159,y,282,s,'mVocab')}{f('v-'+id,300,ry-20,154,'Übersetzung: '+s.split(/[\n ]/)[0])}</span>)}
- {art('uml1',256.5,257,13.5,10)}{art('uml6',253.5,384.3,20,12.2)}{art('uml16',223,639,13.5,10)}
+ {art('uml1',256.5,257,13.5,10)}{art('uml6',269.4,383.6,8.7,10.9)}{art('uml16',223.8,641.7,12.35,8.7)}
  <div className="mText mVocab" style={{left:159,top:275,width:282}}><Words s="Bahnsteig der, -e"/><span className="mVocabCH">{'\n  CH: das Perron, -s'}</span></div>{f('v-l2',300,268,154,'Übersetzung: Bahnsteig')}
  {([['r1',253,'Minute die, -n',264],['r2',275,'Vorsicht die',288],['r3',299,'zu Hause',312],['r4',315,'Entschuldigen\n  Sie.',352],['r5',368,'an·rufen',381],['r6',389,'bekommen',402],['r7',406,'ein·kaufen',419],['r8',432,'fern·sehen, du\n  siehst fern,\n  er sieht fern',487],['r9',496,'mit·bringen',509],['r10',517,'nehmen, du\n  nimmst, er nimmt',531],['r11',570,'also\n  also dann',606],['r12',615,'gerade',628],['r13',634,'nächste',647],['r14',666,'viel',679],['r15',689,'auf\n  auf Gleis 10',721],['r16',731,'bis\n  Bis bald!',765]] as [string,number,string,number][]).map(([id,y,s,ry])=><span key={id}>{txt(481,y,290,s,'mVocab')}{f('v-'+id,600,ry-20,157,'Übersetzung: '+s.split(/[\n ]/)[0])}</span>)}
  <div className="mTippBar" style={{left:167,top:851,width:12,height:95}}><span>TIPP</span></div>
