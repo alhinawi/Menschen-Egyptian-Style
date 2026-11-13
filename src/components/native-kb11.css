@@ -33,3 +33,6 @@
 .nkbCanvas input[type=text].nkbField.nkbUl:focus{background:#fffce9aa!important;border-bottom:2px solid #26764c!important;outline:0}
 .nkbCanvas input[type=text].nkbField.nkbUl.ok{border-bottom-color:#26764c!important}.nkbCanvas input[type=text].nkbField.nkbUl.bad{border-bottom:2px solid #c0392b!important}
 .nkbCanvas input[type=text][data-native-field="t2"].nkbField.nkbUl{border-bottom:1px solid #6a8aa0!important}
+
+.nkbCanvas select.nkbField{background-image:none!important;padding:0!important;text-align:center;text-align-last:center;appearance:none;-webkit-appearance:none}
+.nkbCanvas select.nkbField[data-native-field=geschieden],.nkbCanvas select.nkbField[data-native-field=Kind],.nkbCanvas select.nkbField[data-native-field=verheiratet],.nkbCanvas select.nkbField[data-native-field=Single]{width:2.0465cqw!important;height:2.0465cqw!important}
