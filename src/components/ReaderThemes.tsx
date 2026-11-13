@@ -1,5 +1,6 @@
 import {useEffect, useLayoutEffect, useRef, useState} from 'react';
 import {createPortal} from 'react-dom';
+import {navigateHref} from '../navigate';
 
 const storage = 'menschen-site-theme';
 
@@ -74,10 +75,13 @@ export function CrossBookNavigation() {
     const select = document.querySelector<HTMLSelectElement>('.headerBrand select');
     if (!select) return;
     const change = (e: Event) => {
-      const url = new URL((e.target as HTMLSelectElement).value, location.href);
+      const value = (e.target as HTMLSelectElement).value;
+      const url = new URL(value, location.href);
+      // Same-file targets stay with the lesson's own adapter (page flip);
+      // anything crossing to another lesson/book swaps in-app, no reload.
       if (url.pathname !== location.pathname) {
         e.stopImmediatePropagation();
-        location.href = url.href;
+        void navigateHref(value);
       }
     };
     select.addEventListener('change', change, true);
