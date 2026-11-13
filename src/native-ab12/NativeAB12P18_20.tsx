@@ -360,24 +360,24 @@ export function NativeAB12P18_20({page}:{page:string}){
   {text(547,450,120,'– Danke, gut.','naF21')}
   {text(161,475,12,'b')}
   {text(186,475,530,'Maria, kommst du? – Ja, Pedro, ich komme gleich und helfe','naF21')}
-  {field('p20-10b',722,483,128,'10b')}
+  {field('p20-10b',722,471,125,'10b')}
   {text(855,475,8,'.')}
   {text(162,502,12,'c')}
   {text(185,502,490,'Wir haben Probleme mit den Hausaufgaben. Kannst du','naF21')}
-  {field('p20-10c',675,503,130,'10c')}
+  {field('p20-10c',676,496,129,'10c')}
   {text(810,502,160,'helfen? – Ja, klar.','naF21')}
   {text(162,527,12,'d')}
   {text(186,527,500,'Pedro, sind das deine Bücher? – Nein, sie gehören nicht','naF21')}
-  {field('p20-10d',690,531,118,'10d')}
+  {field('p20-10d',683,523,128,'10d')}
   {text(812,527,8,'.')}
   {text(185,553,170,'Sie gehören Maria.','naF21')}
   {text(162,580,12,'e')}
   {text(185,579,600,'Was machst du? – Ich schreibe eine Postkarte an Sandra und danke','naF21')}
-  {field('p20-10e',790,588,115,'10e')}
+  {field('p20-10e',785,575,122,'10e')}
   {text(185,604,170,'für die Einladung.','naF21')}
   {text(162,630,12,'f')}
   {text(186,630,660,'Hast du am Sonntag Zeit? – Nein, Peter und Anja ziehen um und ich helfe','naF21')}
-  {field('p20-10f',186,666,130,'10f')}
+  {field('p20-10f',184,649,129,'10f')}
   {text(322,664,8,'.')}
   {check('g2',950,600,{'p20-10b':'dir','p20-10c':'uns','p20-10d':'mir','p20-10e':'ihr','p20-10f':'ihnen'},'naCheckCol')}
   {kb(78,724,'KB 7')}
