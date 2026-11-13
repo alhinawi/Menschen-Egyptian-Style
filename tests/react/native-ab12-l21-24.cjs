@@ -395,5 +395,21 @@ for(const width of[320,390]){
  assert.equal(await pg77.locator('.naArt').count(),2,'scene + band crops');
  console.log(width,'p77 render PASS');
  await p.close();
+ // page 79: ex7 adjective table - 25 graded blanks with per-column tolerant matching, per-exercise check
+ p=await openPage(b,width,'79');
+ const pg79=p.locator('.page[data-page="79"]');
+ assert.equal(await pg79.locator('.nativeAB12[data-native-ab12="79"]').count(),1,'native p79 rendered');
+ assert.equal(await pg79.locator('[data-native-field]').count(),33,'33 fields (8 ex6 + 25 ex7)');
+ assert.equal(await pg79.locator('.naCheck').count(),2,'2 per-exercise checks (ex6 g1, ex7 g2)');
+ const chk79=pg79.locator('.naCheck').nth(1);
+ await pg79.locator('[data-native-field="p79-68"]').fill('klein');
+ await chk79.locator('button').click();
+ assert.ok((await chk79.locator('output').textContent()).includes('Noch einmal'),'g2 incomplete rejected');
+ const ans79={'p79-68':'lustig','p79-69':'billig','p79-70':'klein','p79-71':'kleiner','p79-72':'schneller','p79-73':'billiger','p79-74':'lustiger','p79-75':'am billigsten','p79-76':'am schnellsten','p79-77':'am kleinsten','p79-78':'am lustigsten','p79-79':'jung','p79-80':'klug','p79-81':'jünger','p79-82':'klüger','p79-83':'am jüngsten','p79-84':'am klügsten','p79-85':'leicht','p79-86':'leichter','p79-87':'am leichtesten','p79-88':'gern','p79-89':'viel','p79-90':'lieber','p79-91':'am meisten','p79-92':'am besten'};
+ for(const[id,v]of Object.entries(ans79))await pg79.locator('[data-native-field="'+id+'"]').fill(v);
+ await chk79.locator('button').click();
+ assert.ok((await chk79.locator('output').textContent()).includes('Richtig'),'g2 correct accepted (order inside column free)');
+ console.log(width,'p79 ex7 inputs/check PASS');
+ await p.close();
 }
 }finally{await b.close();server.close()}})().catch(e=>{console.error(e);server.close();process.exitCode=1});

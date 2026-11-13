@@ -997,6 +997,281 @@
    "y": 590,
    "w": 116,
    "h": 24
+  },
+  {
+   "id": "p79-68",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 1, Komparativ +",
+   "answer": "klein|lustig|billig",
+   "x": 103,
+   "y": 757,
+   "w": 155,
+   "h": 24
+  },
+  {
+   "id": "p79-69",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 1, Komparativ +",
+   "answer": "klein|lustig|billig",
+   "x": 103,
+   "y": 777,
+   "w": 155,
+   "h": 24
+  },
+  {
+   "id": "p79-70",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 1, Komparativ +",
+   "answer": "klein|lustig|billig",
+   "x": 103,
+   "y": 796,
+   "w": 155,
+   "h": 24
+  },
+  {
+   "id": "p79-71",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 1, Komparativ ++",
+   "answer": "schneller|kleiner|lustiger|billiger",
+   "x": 319,
+   "y": 738,
+   "w": 156,
+   "h": 24
+  },
+  {
+   "id": "p79-72",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 1, Komparativ ++",
+   "answer": "schneller|kleiner|lustiger|billiger",
+   "x": 319,
+   "y": 757,
+   "w": 156,
+   "h": 24
+  },
+  {
+   "id": "p79-73",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 1, Komparativ ++",
+   "answer": "schneller|kleiner|lustiger|billiger",
+   "x": 319,
+   "y": 777,
+   "w": 156,
+   "h": 24
+  },
+  {
+   "id": "p79-74",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 1, Komparativ ++",
+   "answer": "schneller|kleiner|lustiger|billiger",
+   "x": 319,
+   "y": 796,
+   "w": 156,
+   "h": 24
+  },
+  {
+   "id": "p79-75",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 1, Superlativ +++",
+   "answer": "am schnellsten|am kleinsten|am lustigsten|am billigsten",
+   "x": 532,
+   "y": 738,
+   "w": 151,
+   "h": 24
+  },
+  {
+   "id": "p79-76",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 1, Superlativ +++",
+   "answer": "am schnellsten|am kleinsten|am lustigsten|am billigsten",
+   "x": 532,
+   "y": 757,
+   "w": 151,
+   "h": 24
+  },
+  {
+   "id": "p79-77",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 1, Superlativ +++",
+   "answer": "am schnellsten|am kleinsten|am lustigsten|am billigsten",
+   "x": 532,
+   "y": 777,
+   "w": 151,
+   "h": 24
+  },
+  {
+   "id": "p79-78",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 1, Superlativ +++",
+   "answer": "am schnellsten|am kleinsten|am lustigsten|am billigsten",
+   "x": 532,
+   "y": 796,
+   "w": 151,
+   "h": 24
+  },
+  {
+   "id": "p79-79",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 2, Komparativ +",
+   "answer": "klug|jung",
+   "x": 103,
+   "y": 845,
+   "w": 155,
+   "h": 24
+  },
+  {
+   "id": "p79-80",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 2, Komparativ +",
+   "answer": "klug|jung",
+   "x": 103,
+   "y": 865,
+   "w": 155,
+   "h": 24
+  },
+  {
+   "id": "p79-81",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 2, Komparativ ++",
+   "answer": "klüger|jünger",
+   "x": 319,
+   "y": 845,
+   "w": 156,
+   "h": 24
+  },
+  {
+   "id": "p79-82",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 2, Komparativ ++",
+   "answer": "klüger|jünger",
+   "x": 319,
+   "y": 865,
+   "w": 156,
+   "h": 24
+  },
+  {
+   "id": "p79-83",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 2, Superlativ +++",
+   "answer": "am klügsten|am jüngsten",
+   "x": 532,
+   "y": 845,
+   "w": 151,
+   "h": 24
+  },
+  {
+   "id": "p79-84",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 2, Superlativ +++",
+   "answer": "am klügsten|am jüngsten",
+   "x": 532,
+   "y": 865,
+   "w": 151,
+   "h": 24
+  },
+  {
+   "id": "p79-85",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 3, Komparativ +",
+   "answer": "leicht",
+   "x": 103,
+   "y": 913,
+   "w": 155,
+   "h": 24
+  },
+  {
+   "id": "p79-86",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 3, Komparativ ++",
+   "answer": "leichter",
+   "x": 319,
+   "y": 913,
+   "w": 156,
+   "h": 24
+  },
+  {
+   "id": "p79-87",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 3, Superlativ +++",
+   "answer": "am leichtesten",
+   "x": 532,
+   "y": 913,
+   "w": 151,
+   "h": 24
+  },
+  {
+   "id": "p79-88",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 4, Komparativ +",
+   "answer": "viel|gern",
+   "x": 103,
+   "y": 962,
+   "w": 155,
+   "h": 24
+  },
+  {
+   "id": "p79-89",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 4, Komparativ +",
+   "answer": "viel|gern",
+   "x": 103,
+   "y": 981,
+   "w": 155,
+   "h": 24
+  },
+  {
+   "id": "p79-90",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 4, Komparativ ++",
+   "answer": "lieber",
+   "x": 319,
+   "y": 981,
+   "w": 156,
+   "h": 24
+  },
+  {
+   "id": "p79-91",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 4, Superlativ +++",
+   "answer": "am besten|am meisten",
+   "x": 532,
+   "y": 942,
+   "w": 151,
+   "h": 24
+  },
+  {
+   "id": "p79-92",
+   "group": "g2",
+   "kind": "text",
+   "label": "7 Gruppe 4, Superlativ +++",
+   "answer": "am besten|am meisten",
+   "x": 532,
+   "y": 962,
+   "w": 151,
+   "h": 24
   }
  ],
  "audio": [],
@@ -1004,13 +1279,17 @@
   {
    "id": "g1",
    "label": "Aufgabe 6"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 7"
   }
  ],
  "review": {
   "status": "partial",
   "notes": [
    "Answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 22).",
-   "Ex 7 (adjective table) not mapped: row/column order not unambiguous; handwritten examples not fields."
+   "Ex 7 (adjective table) mapped: 25 blanks, answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 22 Basistraining 7); order inside a column free (per-field alternatives). Handwritten examples (schnell, gut) stay ink, not fields."
   ],
   "verifiedWords": 129,
   "totalWords": 129
