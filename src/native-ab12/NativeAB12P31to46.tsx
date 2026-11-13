@@ -33,7 +33,7 @@ export function NativeAB12P31to46({page}:{page:string}){
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-500.ttf') format('truetype');font-weight:500;font-display:swap}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}${SC('.naText')},${SC('.naBold')},${SC('.naLet')},${SC('.naDlg')},${SC('.naField')}{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12='31'] .naTitle,[data-native-ab12='32'] .naTitle,[data-native-ab12='33'] .naTitle,[data-native-ab12='34'] .naTitle,[data-native-ab12='35'] .naTitle,[data-native-ab12='36'] .naTitle,[data-native-ab12='37'] .naTitle,[data-native-ab12='38'] .naTitle,[data-native-ab12='39'] .naTitle,[data-native-ab12='40'] .naTitle,[data-native-ab12='42'] .naTitle,[data-native-ab12='43'] .naTitle,[data-native-ab12='44'] .naTitle,[data-native-ab12='45'] .naTitle,[data-native-ab12='46'] .naTitle{font-family:FiraSans,sans-serif!important;letter-spacing:0!important}${SC('.naText')},${SC('.naBold')},${SC('.naLet')},${SC('.naDlg')}{font-size:20px!important}${SC('.naTitle')}{font-size:21px!important}${SC('.naText.naS20')}{font-size:18px!important}${SC('.naSmall')}{font-size:16.5px!important}${SC('.naD19')}{font-size:17.5px!important}${SC('.naField')}{font-size:19px!important}${SC('.naUrl')}{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='41'] .naModul{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='41'] .naTitle.naGB b{background:#69bb58!important}[data-native-ab12='41'] .naTitle{font-family:FiraSans,sans-serif!important;font-size:22px!important;letter-spacing:0!important}[data-native-ab12='41'] .naText,[data-native-ab12='41'] .naBold{font-size:17px!important}[data-native-ab12='41'] .naBold{font-weight:600}[data-native-ab12='41'] .naField{font-size:17px!important}[data-native-ab12='41'] .naGray{font-size:13px!important;color:#7c7c80!important;letter-spacing:0!important}[data-native-ab12='38'] .naS14{font-size:14px!important}[data-native-ab12='39'] .naForum{font-family:FiraSans,sans-serif!important;font-size:19px!important;color:#17141c;letter-spacing:0!important}[data-native-ab12='39'] .naForumT{font-family:FiraSans,sans-serif!important;font-weight:700;font-size:20px!important;color:#2a457f;letter-spacing:0!important}[data-native-ab12='39'] .naRedD{font-family:FiraSans,sans-serif!important;font-weight:700;font-size:18px!important;color:#a9261c;letter-spacing:0!important}[data-native-ab12='39'] .naForumB{font-size:17px!important}[data-native-ab12='39'] .naF175{font-size:17.5px!important}[data-native-ab12='39'] .naBoxFade39{position:absolute;background:linear-gradient(180deg,#efe9f7 0%,#b6c9ef 55%,#ccd5fd 100%)}[data-native-ab12='39'] .naTippBar{position:absolute;background:#bf932c;color:#fff;font:bold 10px FiraSans,sans-serif;writing-mode:vertical-rl;transform:rotate(180deg);display:flex;align-items:center;justify-content:center}[data-native-ab12='39'] .naGrIt{font-family:DroidSerif,Georgia,serif!important;font-style:italic;font-size:20px!important;color:#565a57!important;letter-spacing:0!important}[data-native-ab12='39'] .naS19{font-size:19.4px!important}[data-native-ab12='39'] .naTrain39{font-family:DroidSerif,Georgia,serif!important;font-size:29px!important;letter-spacing:0!important;color:#565a57}[data-native-ab12='39'] .naTrain39b{letter-spacing:1.2px!important}[data-native-ab12='39'] .naGrIt{font-size:19px!important}[data-native-ab12='39'] .naT39{font-family:FiraSans,sans-serif!important;font-weight:500;font-size:22px!important;letter-spacing:0!important;color:#17141c}[data-native-ab12='39'] .naT39a{font-family:FiraSans,sans-serif!important;font-weight:600;font-size:20.8px!important;letter-spacing:0.3px!important;color:#17141c}[data-native-ab12='39'] .naT39b{font-family:FiraSans,sans-serif!important;font-weight:600;font-size:21px!important;letter-spacing:0!important;color:#17141c}[data-native-ab12='39'] .naField.naFieldLite{border-bottom:1px solid #e3e6e9!important}[data-native-ab12='39'] .naMS39{font-family:DroidSerif,Georgia,serif!important;font-style:italic;font-size:14px!important;color:#666!important;letter-spacing:0!important}[data-native-ab12='39'] .naErga39{font-family:FiraSans,sans-serif!important;font-weight:400;font-size:19px!important;color:#222;letter-spacing:0!important}[data-native-ab12='39'] .naRow39{font-family:DroidSerif,Georgia,serif!important;font-size:20px!important;color:#4d4b47;letter-spacing:0!important}[data-native-ab12='39'] .naT39L{font-family:FiraSans,sans-serif!important;font-weight:600;font-size:22px!important;letter-spacing:0!important;color:#17141c;position:absolute}[data-native-ab12='39'] .naT39L1{font-size:22.5px!important}[data-native-ab12='39'] .naT39b1{font-size:21.5px!important}[data-native-ab12='39'] .naTipp39{font-family:DroidSerif,Georgia,serif!important;font-size:16.1px!important;letter-spacing:0!important;color:#2b2b2b}[data-native-ab12='39'] .naTitle.naGB b{background:#77c06c!important}[data-native-ab12='35'] .naFooter,[data-native-ab12='36'] .naFooter,[data-native-ab12='37'] .naFooter,[data-native-ab12='38'] .naFooter,[data-native-ab12='39'] .naFooter{font-family:DroidSerif,Georgia,serif!important;font-size:16.3px!important;letter-spacing:0!important;color:#252723}[data-native-ab12='36'] .naS19,[data-native-ab12='37'] .naS19{font-size:19.4px!important}[data-native-ab12='31'] .naHeadline,[data-native-ab12='32'] .naHeadline,[data-native-ab12='33'] .naHeadline,[data-native-ab12='34'] .naHeadline,[data-native-ab12='35'] .naHeadline,[data-native-ab12='36'] .naHeadline,[data-native-ab12='37'] .naHeadline,[data-native-ab12='38'] .naHeadline{font-size:30px!important;letter-spacing:0!important;color:#5f6460}[data-native-ab12='35'] .naSansB,[data-native-ab12='36'] .naSansB,[data-native-ab12='37'] .naSansB,[data-native-ab12='38'] .naSansB{font-family:FiraSans,sans-serif!important;font-weight:700;letter-spacing:0!important}[data-native-ab12='35'] .naUml,[data-native-ab12='36'] .naUml,[data-native-ab12='37'] .naUml,[data-native-ab12='38'] .naUml{font-size:72%;letter-spacing:0;margin-right:-2px}[data-native-ab12='35'] .naUmlRow{font-size:19.4px!important}[data-native-ab12='35'] .naUmlWrap{position:relative}[data-native-ab12='35'] .naUmlMark{position:absolute;left:-1px;top:5px;font-size:58%;letter-spacing:0;line-height:1}[data-native-ab12='35'] .naText:not(.naHand){color:#3d3d3d}[data-native-ab12='36'] .naF188{font-size:18.8px!important}[data-native-ab12='36'] .naF182{font-size:18.2px!important}[data-native-ab12='37'] .naF180{font-size:18px!important}[data-native-ab12='35'] .naF190{font-size:19px!important}[data-native-ab12='35'] .naMod,[data-native-ab12='36'] .naMod,[data-native-ab12='37'] .naMod,[data-native-ab12='38'] .naMod{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='38'] .naBio{font-size:17.5px!important;letter-spacing:-0.55px!important}[data-native-ab12='38'] .naJ{white-space:normal;text-align:justify;text-align-last:justify}[data-native-ab12='40'] .naFooter{font-family:DroidSerif,Georgia,serif!important;font-size:16.3px!important;letter-spacing:0!important;color:#252723}[data-native-ab12='40'] .naT40{font-family:FiraSans,sans-serif!important;font-weight:600;font-size:21px!important;letter-spacing:0!important;color:#17141c}[data-native-ab12='40'] .naTitle.naGB b{min-width:32px!important;height:20px!important;line-height:20px!important;font-size:15px!important;background:#77c06c!important}[data-native-ab12='40'] .naDot{width:17px!important;height:17px!important}[data-native-ab12='40'] .naField{border-bottom:1.5px solid #ccd1d6!important}[data-native-ab12='40'] .naBank40{font-family:FiraSansCond,FiraSans,sans-serif!important;font-size:19px!important;letter-spacing:0!important;color:#3a4c7a}[data-native-ab12='40'] .naEvalH40{font-family:FiraSans,sans-serif!important;font-weight:700;font-size:18px!important;letter-spacing:0!important}[data-native-ab12='40'] .naEvalC40{font-family:DroidSerif,Georgia,serif!important;font-size:16px!important;letter-spacing:0!important;color:#505050}[data-native-ab12='40'] .naF190{font-size:19px!important}[data-native-ab12='40'] .naF196{font-size:19.6px!important}`}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-500.ttf') format('truetype');font-weight:500;font-display:swap}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}${SC('.naText')},${SC('.naBold')},${SC('.naLet')},${SC('.naDlg')},${SC('.naField')}{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12='31'] .naTitle,[data-native-ab12='32'] .naTitle,[data-native-ab12='33'] .naTitle,[data-native-ab12='34'] .naTitle,[data-native-ab12='35'] .naTitle,[data-native-ab12='36'] .naTitle,[data-native-ab12='37'] .naTitle,[data-native-ab12='38'] .naTitle,[data-native-ab12='39'] .naTitle,[data-native-ab12='40'] .naTitle,[data-native-ab12='42'] .naTitle,[data-native-ab12='43'] .naTitle,[data-native-ab12='44'] .naTitle,[data-native-ab12='45'] .naTitle,[data-native-ab12='46'] .naTitle{font-family:FiraSans,sans-serif!important;letter-spacing:0!important}${SC('.naText')},${SC('.naBold')},${SC('.naLet')},${SC('.naDlg')}{font-size:20px!important}${SC('.naTitle')}{font-size:21px!important}${SC('.naText.naS20')}{font-size:18px!important}${SC('.naSmall')}{font-size:16.5px!important}${SC('.naD19')}{font-size:17.5px!important}${SC('.naField')}{font-size:19px!important}${SC('.naUrl')}{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='41'] .naModul{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='41'] .naCanvas .naText.naHeadline{font-family:DroidSerif,Georgia,serif!important;font-size:29px!important;letter-spacing:0.3px!important;color:#6a726f!important}[data-native-ab12='41'] .naTitle.naGB b{min-width:32px!important;height:20px!important;line-height:20px!important;font-size:15px!important;background:#72c261!important;top:-3px;font-size:19px!important;line-height:20px!important}[data-native-ab12='41'] .naTitle.naGB b::before{left:-3px;top:-2px;width:calc(100% - 2px);height:3px}[data-native-ab12='41'] .naTitle.naGB b::after{left:-3px;top:-2px;width:3px;height:calc(100% + 2px)}[data-native-ab12='41'] .naTitle{font-family:FiraSans,sans-serif!important;font-size:22px!important;letter-spacing:0!important}[data-native-ab12='41'] .naText,[data-native-ab12='41'] .naBold{font-size:17px!important}[data-native-ab12='41'] .naBold{font-weight:600}[data-native-ab12='41'] .naField{font-size:17px!important}[data-native-ab12='41'] .naGray{font-size:15px!important;color:#7c7c80!important;letter-spacing:0!important}[data-native-ab12='38'] .naS14{font-size:14px!important}[data-native-ab12='39'] .naForum{font-family:FiraSans,sans-serif!important;font-size:19px!important;color:#17141c;letter-spacing:0!important}[data-native-ab12='39'] .naForumT{font-family:FiraSans,sans-serif!important;font-weight:700;font-size:20px!important;color:#2a457f;letter-spacing:0!important}[data-native-ab12='39'] .naRedD{font-family:FiraSans,sans-serif!important;font-weight:700;font-size:18px!important;color:#a9261c;letter-spacing:0!important}[data-native-ab12='39'] .naForumB{font-size:17px!important}[data-native-ab12='39'] .naF175{font-size:17.5px!important}[data-native-ab12='39'] .naBoxFade39{position:absolute;background:linear-gradient(180deg,#efe9f7 0%,#b6c9ef 55%,#ccd5fd 100%)}[data-native-ab12='39'] .naTippBar{position:absolute;background:#bf932c;color:#fff;font:bold 10px FiraSans,sans-serif;writing-mode:vertical-rl;transform:rotate(180deg);display:flex;align-items:center;justify-content:center}[data-native-ab12='39'] .naGrIt{font-family:DroidSerif,Georgia,serif!important;font-style:italic;font-size:20px!important;color:#565a57!important;letter-spacing:0!important}[data-native-ab12='39'] .naS19{font-size:19.4px!important}[data-native-ab12='39'] .naTrain39{font-family:DroidSerif,Georgia,serif!important;font-size:29px!important;letter-spacing:0!important;color:#565a57}[data-native-ab12='39'] .naTrain39b{letter-spacing:1.2px!important}[data-native-ab12='39'] .naGrIt{font-size:19px!important}[data-native-ab12='39'] .naT39{font-family:FiraSans,sans-serif!important;font-weight:500;font-size:22px!important;letter-spacing:0!important;color:#17141c}[data-native-ab12='39'] .naT39a{font-family:FiraSans,sans-serif!important;font-weight:600;font-size:20.8px!important;letter-spacing:0.3px!important;color:#17141c}[data-native-ab12='39'] .naT39b{font-family:FiraSans,sans-serif!important;font-weight:600;font-size:21px!important;letter-spacing:0!important;color:#17141c}[data-native-ab12='39'] .naField.naFieldLite{border-bottom:1px solid #e3e6e9!important}[data-native-ab12='39'] .naMS39{font-family:DroidSerif,Georgia,serif!important;font-style:italic;font-size:14px!important;color:#666!important;letter-spacing:0!important}[data-native-ab12='39'] .naErga39{font-family:FiraSans,sans-serif!important;font-weight:400;font-size:19px!important;color:#222;letter-spacing:0!important}[data-native-ab12='39'] .naRow39{font-family:DroidSerif,Georgia,serif!important;font-size:20px!important;color:#4d4b47;letter-spacing:0!important}[data-native-ab12='39'] .naT39L{font-family:FiraSans,sans-serif!important;font-weight:600;font-size:22px!important;letter-spacing:0!important;color:#17141c;position:absolute}[data-native-ab12='39'] .naT39L1{font-size:22.5px!important}[data-native-ab12='39'] .naT39b1{font-size:21.5px!important}[data-native-ab12='39'] .naTipp39{font-family:DroidSerif,Georgia,serif!important;font-size:16.1px!important;letter-spacing:0!important;color:#2b2b2b}[data-native-ab12='39'] .naTitle.naGB b{background:#77c06c!important}[data-native-ab12='35'] .naFooter,[data-native-ab12='36'] .naFooter,[data-native-ab12='37'] .naFooter,[data-native-ab12='38'] .naFooter,[data-native-ab12='39'] .naFooter{font-family:DroidSerif,Georgia,serif!important;font-size:16.3px!important;letter-spacing:0!important;color:#252723}[data-native-ab12='36'] .naS19,[data-native-ab12='37'] .naS19{font-size:19.4px!important}[data-native-ab12='31'] .naHeadline,[data-native-ab12='32'] .naHeadline,[data-native-ab12='33'] .naHeadline,[data-native-ab12='34'] .naHeadline,[data-native-ab12='35'] .naHeadline,[data-native-ab12='36'] .naHeadline,[data-native-ab12='37'] .naHeadline,[data-native-ab12='38'] .naHeadline{font-size:30px!important;letter-spacing:0!important;color:#5f6460}[data-native-ab12='35'] .naSansB,[data-native-ab12='36'] .naSansB,[data-native-ab12='37'] .naSansB,[data-native-ab12='38'] .naSansB{font-family:FiraSans,sans-serif!important;font-weight:700;letter-spacing:0!important}[data-native-ab12='35'] .naUml,[data-native-ab12='36'] .naUml,[data-native-ab12='37'] .naUml,[data-native-ab12='38'] .naUml{font-size:72%;letter-spacing:0;margin-right:-2px}[data-native-ab12='35'] .naUmlRow{font-size:19.4px!important}[data-native-ab12='35'] .naUmlWrap{position:relative}[data-native-ab12='35'] .naUmlMark{position:absolute;left:-1px;top:5px;font-size:58%;letter-spacing:0;line-height:1}[data-native-ab12='35'] .naText:not(.naHand){color:#3d3d3d}[data-native-ab12='36'] .naF188{font-size:18.8px!important}[data-native-ab12='36'] .naF182{font-size:18.2px!important}[data-native-ab12='37'] .naF180{font-size:18px!important}[data-native-ab12='35'] .naF190{font-size:19px!important}[data-native-ab12='35'] .naMod,[data-native-ab12='36'] .naMod,[data-native-ab12='37'] .naMod,[data-native-ab12='38'] .naMod{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='38'] .naBio{font-size:17.5px!important;letter-spacing:-0.55px!important}[data-native-ab12='38'] .naJ{white-space:normal;text-align:justify;text-align-last:justify}[data-native-ab12='40'] .naFooter{font-family:DroidSerif,Georgia,serif!important;font-size:16.3px!important;letter-spacing:0!important;color:#252723}[data-native-ab12='40'] .naT40{font-family:FiraSans,sans-serif!important;font-weight:600;font-size:21px!important;letter-spacing:0!important;color:#17141c}[data-native-ab12='40'] .naTitle.naGB b{min-width:32px!important;height:20px!important;line-height:20px!important;font-size:15px!important;background:#77c06c!important}[data-native-ab12='40'] .naDot{width:17px!important;height:17px!important}[data-native-ab12='40'] .naField{border-bottom:1.5px solid #ccd1d6!important}[data-native-ab12='40'] .naBank40{font-family:FiraSansCond,FiraSans,sans-serif!important;font-size:19px!important;letter-spacing:0!important;color:#3a4c7a}[data-native-ab12='40'] .naEvalH40{font-family:FiraSans,sans-serif!important;font-weight:700;font-size:18px!important;letter-spacing:0!important}[data-native-ab12='40'] .naEvalC40{font-family:DroidSerif,Georgia,serif!important;font-size:16px!important;letter-spacing:0!important;color:#505050}[data-native-ab12='40'] .naF190{font-size:19px!important}[data-native-ab12='40'] .naF196{font-size:19.6px!important}`}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='31'&&<>
   {art('0',982,42,85,78)}
   {lin(354,107,605,6,'#a6ca03')}
@@ -1222,39 +1222,39 @@ export function NativeAB12P31to46({page}:{page:string}){
   {art('0',913,4,155,1390)}
   {art('2',539,906,251,138)}
   {lin(0,0,8,462,'#d8dfe5')}
-  {lin(389,111,456,3,'#84c284')}
-  {lin(312,249,189,2,'#c4c2ca')}
-  {lin(312,274,135,2,'#c1bfcb')}
-  {lin(312,300,163,2,'#bfbec3')}
-  {lin(313,352,191,2,'#bbc1c1')}
-  {lin(671,249,196,2,'#c2c0c8')}
-  {lin(671,300,196,2,'#c1bfc9')}
-  {lin(672,352,189,2,'#bbc6b7')}
-  {lin(313,377,128,2,'#c6c2c8')}
-  {lin(313,403,190,2,'#bebacd')}
-  {lin(672,403,196,2,'#c3c3c0')}
-  {lin(313,429,191,2,'#bebfc2')}
-  {lin(673,429,196,2,'#c1c7c8')}
-  {lin(313,481,191,2,'#b7b8bc')}
-  {lin(673,481,196,2,'#b6b8bc')}
-  {lin(313,506,191,2,'#c1c4c4')}
-  {lin(673,507,196,2,'#bbb9be')}
-  {lin(673,533,196,2,'#babbc3')}
-  {lin(313,558,191,2,'#b7b9ba')}
-  {lin(313,584,191,2,'#bebcc2')}
-  {lin(673,597,196,2,'#bbbbbe')}
-  {lin(313,648,191,2,'#c0b6cc')}
-  {lin(673,674,196,2,'#b5b5ba')}
-  {lin(314,700,190,2,'#bac0bd')}
-  {lin(313,751,191,2,'#c3c6bb')}
-  {lin(673,777,196,2,'#acb4b4')}
-  {lin(313,803,191,2,'#b8babf')}
-  {lin(673,829,196,2,'#b7bcc0')}
-  {lin(673,867,196,2,'#b6bbbc')}
-  {lin(313,881,190,2,'#b9bec0')}
-  {lin(313,957,191,2,'#b4c2b4')}
-  {lin(314,996,190,2,'#babdca')}
-  {lin(313,1022,191,2,'#adadb1')}
+  {lin(395,111,450,2,'#97d18b')}
+  {lin(312,248,189,2,'#d0d2d8')}
+  {lin(312,274,189,2,'#d0d2d8')}
+  {lin(312,300,189,2,'#d0d2d8')}
+  {lin(313,352,191,2,'#d0d2d8')}
+  {lin(671,249,196,2,'#d0d2d8')}
+  {lin(671,300,196,2,'#d0d2d8')}
+  {lin(672,352,172,2,'#d0d2d8')}
+  {lin(313,377,190,2,'#d0d2d8')}
+  {lin(313,403,190,2,'#d0d2d8')}
+  {lin(672,403,196,2,'#d0d2d8')}
+  {lin(313,429,191,2,'#d0d2d8')}
+  {lin(673,429,196,2,'#d0d2d8')}
+  {lin(313,481,191,2,'#d0d2d8')}
+  {lin(673,481,196,2,'#d0d2d8')}
+  {lin(313,506,191,2,'#d0d2d8')}
+  {lin(673,507,196,2,'#d0d2d8')}
+  {lin(673,533,196,2,'#d0d2d8')}
+  {lin(313,558,191,2,'#d0d2d8')}
+  {lin(313,584,191,2,'#d0d2d8')}
+  {lin(673,597,196,2,'#d0d2d8')}
+  {lin(313,648,191,2,'#d0d2d8')}
+  {lin(673,674,196,2,'#d0d2d8')}
+  {lin(314,700,190,2,'#d0d2d8')}
+  {lin(313,751,191,2,'#d0d2d8')}
+  {lin(673,777,196,2,'#d0d2d8')}
+  {lin(313,803,191,2,'#d0d2d8')}
+  {lin(673,828,196,2,'#d0d2d8')}
+  {lin(673,867,196,2,'#d0d2d8')}
+  {lin(313,881,190,2,'#d0d2d8')}
+  {lin(313,957,191,2,'#d0d2d8')}
+  {lin(314,999,190,2,'#d0d2d8')}
+  {lin(313,1022,191,2,'#d0d2d8')}
   {lin(142,1164,727,2,'#b8bbbc')}
   {lin(142,1190,727,2,'#bcbfc0')}
   {lin(142,1216,727,2,'#c1bfc7')}
@@ -1266,65 +1266,65 @@ export function NativeAB12P31to46({page}:{page:string}){
   {[249,274,300,352,378,403,429,481,507,558,584,648,700,752,803,881,958,997,1023].map((y,i)=>field('p41-1-l'+(i+1),314,y-19,185,'1 links Zeile '+(i+1),'naFieldBlank'))}
   {[249,300,352,404,429,481,507,533,597,674,778,829,867].map((y,i)=>field('p41-1-r'+(i+1),674,y-19,190,'1 rechts Zeile '+(i+1),'naFieldBlank'))}
   {[1164,1190,1216,1242,1268,1293,1319,1344].map((y,i)=>field('p41-2-'+(i+1),144,y-19,720,'2 Notizzeile '+(i+1),'naFieldBlank'))}
-  {text(100,84,281,'LERNWORTSCHATZ','naHeadline naNw')}
-  {title('1',98,156,760,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naGB')}
-  {text(140,196,105,'Ausbildung','naBold naNw')}
-  {text(526,196,228,'Weitere wichtige Wörter','naBold naNw')}
-  {text(140,224,165,'Ausbildung die, -en','naNw')}
-  {text(527,224,109,'Europa (das)','naNw')}
-  {text(140,250,104,'Ausland das','naNw')}
-  {text(527,250,116,'Führerschein','naNw')}
-  {text(141,276,122,'Chance die, -n','naNw')}
-  {text(538,276,52,'der, -e','naNw')}
-  {text(141,300,123,'Fremdsprache','naNw')}
-  {text(528,300,100,'Instrument','naNw')}
-  {text(152,328,54,'die, -n','naNw')}
-  {text(538,328,53,'das, -e','naNw')}
-  {text(141,353,71,'Geld das','naNw')}
-  {text(528,353,100,'Kreditkarte','naNw')}
-  {text(142,379,124,'Politiker der, -','naNw')}
-  {text(538,379,55,'die, -n','naNw')}
-  {text(142,405,141,'Prüfung die, -en','naNw')}
-  {text(528,405,105,'Lied das, -er','naNw')}
-  {text(152,431,199,'eine Prüfung schaffen,','naNw')}
-  {text(528,431,120,'Motorrad das,','naNw')}
-  {text(538,457,40,'¨er','naNw')}
-  {text(153,457,112,'hat geschafft','naBold naNw')}
-  {text(141,482,109,'Sänger der, -','naNw')}
-  {text(527,482,72,'Welt die','naNw')}
-  {text(141,508,116,'Sängerin die,','naNw')}
-  {text(527,508,129,'Wunsch der, ¨e','naNw')}
-  {text(152,539,39,'-nen','naSmall naNw')}
-  {text(527,548,116,'heiraten, hat','naNw')}
-  {text(142,560,92,'Star der, -s','naNw')}
-  {text(538,574,90,'geheiratet','naBold naNw')}
-  {text(142,598,150,'ab-schließen, hat','naNw')}
-  {text(527,598,151,'laufen, du läufst,','naNw')}
-  {text(153,622,121,'abgeschlossen','naNw')}
-  {text(539,622,70,'er läuft,','naNw')}
-  {text(153,650,141,'eine Ausbildung','naBold naNw')}
-  {text(539,650,102,'ist gelaufen','naBold naNw')}
-  {text(153,676,101,'abschließen','naNw')}
-  {text(538,678,206,'A/CH: rennen, ist gerannt','naNw naGray')}
-  {text(142,700,133,'an· melden, hat','naNw')}
-  {text(538,702,220,'(laufen = (zu Fuss) gehen)','naNw naGray')}
-  {text(153,726,101,'angemeldet','naNw')}
-  {text(528,726,87,'reisen, ist','naNw')}
-  {text(141,752,130,'verdienen, hat','naNw')}
-  {text(538,752,59,'gereist','naNw')}
-  {text(152,777,75,'verdient','naNw')}
-  {text(527,777,101,'putzen, hat','naNw')}
-  {text(141,805,155,'werden, du wirst,','naNw')}
-  {text(538,805,66,'geputzt','naNw')}
-  {text(153,831,68,'er wird,','naNw')}
-  {text(528,831,42,'ohne','naNw')}
-  {text(154,857,110,'ist geworden','naBold naNw')}
-  {text(141,883,143,'wollen, ich will,','naNw')}
-  {text(153,908,151,'du willst, er will,','naNw')}
-  {text(153,934,99,'hat gewollt','naBold naNw')}
-  {text(142,968,89,'unbedingt','naBold naNw')}
-  {text(142,998,133,'auf keinen Fall','naNw')}
-  {title('2',100,1100,760,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naGB')}
+  {text(98,83,281,'LERNWORTSCHATZ','naHeadline naNw')}
+  {title('1',98,164,760,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naGB')}
+  {text(140,201,105,'Ausbildung','naBold naNw')}
+  {text(526,201,228,'Weitere wichtige Wörter','naBold naNw')}
+  {text(140,227,165,'Ausbildung die, -en','naNw')}
+  {text(527,227,109,'Europa (das)','naNw')}
+  {text(140,253,104,'Ausland das','naNw')}
+  {text(527,254,116,'Führerschein','naNw')}
+  {text(141,279,122,'Chance die, -n','naNw')}
+  {text(538,285,52,'der, -e','naNw')}
+  {text(141,306,123,'Fremdsprache','naNw')}
+  {text(528,311,100,'Instrument','naNw')}
+  {text(152,336,54,'die, -n','naNw')}
+  {text(538,337,53,'das, -e','naNw')}
+  {text(141,356,71,'Geld das','naNw')}
+  {text(528,358,100,'Kreditkarte','naNw')}
+  {text(142,382,124,'Politiker der, -','naNw')}
+  {text(538,388,55,'die, -n','naNw')}
+  {text(142,409,141,'Prüfung die, -en','naNw')}
+  {text(528,410,105,'Lied das, -er','naNw')}
+  {text(152,434,199,'eine Prüfung schaffen,','naNw')}
+  {text(528,435,120,'Motorrad das,','naNw')}
+  {text(538,466,40,'¨er','naNw')}
+  {text(153,460,112,'hat geschafft','naNw')}
+  {text(141,486,109,'Sänger der, -','naNw')}
+  {text(527,487,72,'Welt die','naNw')}
+  {text(141,512,116,'Sängerin die,','naNw')}
+  {text(527,513,129,'Wunsch der, ¨e','naNw')}
+  {text(152,542,39,'-nen','naSmall naNw')}
+  {text(527,550,116,'heiraten, hat','naNw')}
+  {text(142,568,92,'Star der, -s','naNw')}
+  {text(538,579,90,'geheiratet','naNw')}
+  {text(142,601,150,'ab·schließen, hat','naNw')}
+  {text(527,607,151,'laufen, du läufst,','naNw')}
+  {text(153,627,121,'abgeschlossen','naNw')}
+  {text(539,632,70,'er läuft,','naNw')}
+  {text(153,653,141,'eine Ausbildung','naNw')}
+  {text(539,656,102,'ist gelaufen','naNw')}
+  {text(153,679,101,'abschließen','naNw')}
+  {text(538,680,206,'A/CH: rennen, ist gerannt','naNw naGray')}
+  {text(142,705,133,'an·melden, hat','naNw')}
+  {text(538,705,220,'(laufen = (zu Fuss) gehen)','naNw naGray')}
+  {text(153,736,101,'angemeldet','naNw')}
+  {text(528,736,87,'reisen, ist','naNw')}
+  {text(141,761,130,'verdienen, hat','naNw')}
+  {text(538,761,59,'gereist','naNw')}
+  {text(152,787,75,'verdient','naNw')}
+  {text(527,787,101,'putzen, hat','naNw')}
+  {text(141,813,155,'werden, du wirst,','naNw')}
+  {text(538,813,66,'geputzt','naNw')}
+  {text(153,839,68,'er wird,','naNw')}
+  {text(528,852,42,'ohne','naNw')}
+  {text(154,865,110,'ist geworden','naNw')}
+  {text(141,890,143,'wollen, ich will,','naNw')}
+  {text(153,916,151,'du willst, er will,','naNw')}
+  {text(153,942,99,'hat gewollt','naNw')}
+  {text(142,980,89,'unbedingt','naNw')}
+  {text(142,1001,133,'auf keinen Fall','naNw')}
+  {title('2',100,1106,760,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naGB')}
   {rect(994,1391,78,19,'#cbc3a4')}
   {stext(999,1392,68,'Modul 6',{color:'#fff',fontSize:'13px'},'naModul naNw')}
   {text(818,1392,113,'einundvierzig','naFooter')}
