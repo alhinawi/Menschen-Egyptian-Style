@@ -1369,7 +1369,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(166,799,10,'f','naNw')}{text(191,799,255,'Ein anderes Wort für „Arzt“.','naNw')}
   {text(166,825,10,'g','naNw')}{text(191,825,400,'So heißen Tabletten, Salben und vieles mehr.','naNw')}
   {lin(738,691,225,1,'#b0b2ae')}
-  {art('h2',738,675,69,15)}
+  {art('h2',738,675,69,16)}
   {kb(85,896,'KB 3')}
   {title('3',124,890,760,'Was sagt der Arzt? Schreiben Sie im Imperativ.','naGB')}
   <div className="naSide naSide42" style={{left:96,top:933}}>STRUKTUREN</div>
@@ -1380,16 +1380,16 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(166,1006,10,'d','naNw')}{text(190,1006,460,'Soll ich die Medikamente in der Apotheke abholen?','naNw')}
   {kb(85,1078,'KB 3')}
   {title('4',124,1071,760,'Aussagen, Fragen und Imperativsätze','naGB')}
-  <div className="naSide naSide42" style={{left:78,top:1111}}>ENTDECKEN</div>
-  <div className="naSide naSide42" style={{left:98,top:1118}}>STRUKTUREN</div>
+  <div className="naSide naSide42" style={{left:78,top:1118}}>STRUKTUREN</div>
+  <div className="naSide naSide42" style={{left:98,top:1111}}>ENTDECKEN</div>
   {text(135,1109,14,'a','naEx4b naNw')}
   {text(167,1109,210,'Ordnen Sie die Sätze zu.','naEx4 naNw')}
   {rect(170,1151,614,21,'#fffbdd')}
   {rect(170,1172,353,23,'#fffbdd')}
   {text(173,1146,611,'Holst du das Rezept in der Praxis ab? | Ich hole das Rezept in der Praxis ab. |','naBank42 naNw')}
   {text(173,1174,346,'Holen Sie das Rezept bitte in der Praxis ab!','naBank42 naNw')}
-  {text(821,1203,57,'Position 1','naEvalC42 naNw')}
-  {text(911,1203,69,'Position 2','naEvalC42 naNw')}
+  {text(821,1205,57,'Position 1','naEvalC42 naNw')}
+  {text(911,1205,69,'Position 2','naEvalC42 naNw')}
   {text(165,1228,72,'Aussage:','naNw')}
   {text(164,1253,135,'Ja-/Nein-Frage:','naNw')}
   {text(166,1279,126,'Imperativsatz:','naNw')}
@@ -1420,12 +1420,12 @@ export function NativeAB12P31to46({page}:{page:string}){
   {field('p42-4a-Aussage',244,1220,557,'4a Aussage')}
   {field('p42-4a-Frage',306,1246,499,'4a Frage')}
   {field('p42-4a-Imperativ',299,1272,503,'4a Imperativ')}
-  {dot('4b-Aussage','Position 1',846,1229,'4b Aussage Position 1')}
-  {dot('4b-Aussage','Position 2',937,1229,'4b Aussage Position 2')}
-  {dot('4b-Frage','Position 1',846,1255,'4b Frage Position 1')}
-  {dot('4b-Frage','Position 2',937,1255,'4b Frage Position 2')}
-  {dot('4b-Imperativ','Position 1',846,1281,'4b Imperativ Position 1')}
-  {dot('4b-Imperativ','Position 2',937,1281,'4b Imperativ Position 2')}
+  {dot('4b-Aussage','Position 1',846,1231,'4b Aussage Position 1')}
+  {dot('4b-Aussage','Position 2',937,1231,'4b Aussage Position 2')}
+  {dot('4b-Frage','Position 1',846,1257,'4b Frage Position 1')}
+  {dot('4b-Frage','Position 2',937,1257,'4b Frage Position 2')}
+  {dot('4b-Imperativ','Position 1',846,1283,'4b Imperativ Position 1')}
+  {dot('4b-Imperativ','Position 2',937,1283,'4b Imperativ Position 2')}
   {check('42-1',960,544,{'p42-1-1':'schmerzen','p42-1-2':'huste','p42-1-3':'Fieber','p42-1-4':'hoch','p42-1-5':'Arme','p42-1-6':'weh','p42-1-7':'bleibe'})}
   {check('42-2',972,860,{'p42-2a':'Apotheke','p42-2c':'Rezept','p42-2d':'Praxis','p42-2e':'Salbe','p42-2f':'Doktor','p42-2g':'Medikamente'})}
   {check('42-3',975,1040,{'p42-3b':'Ja, bleiben Sie im Bett.|Bleiben Sie im Bett.','p42-3c':'Ja, nehmen Sie diese Salbe.|Nehmen Sie diese Salbe.','p42-3d':'Ja, holen Sie die Medikamente in der Apotheke ab.|Holen Sie die Medikamente in der Apotheke ab.'})}
