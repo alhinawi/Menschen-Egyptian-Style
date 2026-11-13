@@ -1,4 +1,5 @@
 import {usePageReset} from '../exercises/usePageReset';
+import {PageImage} from './PageImage';
 import {useLayoutEffect,useRef,useState} from 'react';
 import type {ReactNode} from 'react';
 import './native-ab12.css';
@@ -52,7 +53,7 @@ export function AB12Canvas({page,width:W,height:H,children}:{page:string;width:n
  const line=(x:number,y:number,w:number,fs:number,t:string,opts:LineOpts={})=><div className={'naFit '+(opts.cls||'')} data-w={w} style={{left:x,top:y,width:w,fontSize:fs,fontWeight:opts.b?700:400,fontStyle:opts.i?'italic':'normal',color:opts.c,background:opts.bg,fontFamily:fam(opts.fam),letterSpacing:opts.ls}}><span className="naFitI"><Words text={t}/></span></div>;
  const runs=(x:number,y:number,w:number,fs:number,parts:RunPart[],opts:LineOpts={})=><div className={'naFit '+(opts.cls||'')} data-w={w} style={{left:x,top:y,width:w,fontSize:fs,color:opts.c,fontFamily:fam(opts.fam),letterSpacing:opts.ls}}><span className="naFitI">{parts.map((p,i)=>typeof p==='string'?<Words key={i} text={p}/>:<span key={i} style={{fontWeight:p.b?700:400,color:p.c,background:p.bg,fontStyle:p.i?'italic':'normal'}}><Words text={p.t}/></span>)}</span></div>;
  const wl=(y:number,fs:number,words:WlWord[],opts:LineOpts={})=>{const phrase=words.map(w=>w.t).join(' ');return <>{words.map((wd,i)=>{const word=wd.t.replace(/^[^\p{L}]+|[^\p{L}]+$/gu,'');return <span key={i} className="naW" data-w={wd.w} style={{left:wd.x,top:Math.round((y-fs*ASC)*10)/10,fontSize:fs,fontWeight:(wd.b||opts.b)?700:400,fontStyle:opts.i?'italic':'normal',color:wd.c||opts.c,background:wd.bg,fontFamily:fam(opts.fam),textDecoration:wd.s?'line-through':undefined}}>{/\p{L}/u.test(wd.t)?<span className="tapWord" role="button" tabIndex={0} data-word={word} data-phrase={phrase}>{wd.t}</span>:wd.t}</span>})}</>};
- const art=(name:string,x:number,y:number,w:number,h:number)=><img className="naArt" src={`assets/book-crops/native-ab12-p${page}-${name}.png`} alt={'Originalillustration '+name} style={{left:x,top:y,width:w,height:h}}/>;
+ const art=(name:string,x:number,y:number,w:number,h:number)=><PageImage className="naArt" src={`assets/book-crops/native-ab12-p${page}-${name}.png`} alt={'Originalillustration '+name} style={{left:x,top:y,width:w,height:h}}/>;
  const field=(id:string,x:number,y:number,w:number,label:string,cls='')=><input className={'naField '+cls} aria-label={label} data-native-field={id} style={{left:x,top:y,width:w}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
  const area=(id:string,x:number,y:number,w:number,h:number,label:string)=><textarea className="naField naArea" aria-label={label} data-native-field={id} style={{left:x,top:y,width:w,height:h}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
  const rule=(x:number,y:number,w:number)=><div className="naRule" style={{left:x,top:y,width:w}}/>;
