@@ -27,12 +27,12 @@ def field(fid, g, ans):
 RINGPOS = {'p54-3b-traurig':(422,979),'p54-3b-langweilig':(542,979),
  'p54-3c-interessant':(652,1006),'p54-3c-glücklich':(807,1005),
  'p54-3d-unfreundlich':(734,1032),'p54-3d-fröhlich':(195,1056),
- 'p54-3e-glatt':(376,1106),'p54-3e-schlank':(473,1108),
+ 'p54-3e-glatt':(371,1106),'p54-3e-schlank':(473,1108),
  'p54-3f-seltsam':(435,1134),'p54-3f-dick':(557,1134)}   # detected scan ring centers
 def radio(fid, name, correct):
     f = F[fid]
     cx, cy = RINGPOS.get(fid, (f['x']+12, f['y']+12))
-    items.append({'k':'d','id':fid,'v':'1','name':name,'a':correct,'x':cx-8,'y':cy-8,'s':17,'l':f['label'],'g':'g3'})
+    items.append({'k':'d','id':fid,'v':'1','name':name,'a':correct,'x':cx-9,'y':cy-9,'s':18,'l':f['label'],'g':'g3'})
 
 def emit_line(y, breaks=(), tol=10, label=True, s=None, **kw):
     """Emit runs for one printed line; breaks = (x0,x1) zones (fields/radios/handwriting)
@@ -91,12 +91,12 @@ _bank='hatte | hat | hatten | war | hat | ist | hatte | hat | haben | waren | ha
 SBANK = round(best_size(_bank,FIRA400,552,lo=13,hi=24)*0.97,1)   # stroke removed: refit (render ends at scan 722)
 items.append({'k':'t','x':169,'y':236,'t':'','s':SBANK,'c':'naBank54','col':'#696c97',
  'segs':[{'t':'hatte','c':'naStrike54'},{'t':' | '},{'t':'hat','c':'naStrike54'},{'t':' | hatten | war | hat | ist | hatte | hat | haben | waren | hatte'}]})
-t(193,391,'Früher …',c='naDB',col='#4d4b4a',s=19.5)
-t(551,391,'Heute …',c='naDB',col='#4d4b4a',s=19.5)
+t(193,390,'Früher …',c='naDB',col='#353331',s=19.5)
+t(551,390,'Heute …',c='naDB',col='#353331',s=19.5)
 # rows hand-placed word-per-word at scan ink x, one size (scan body ~18.3 PIL -> 17.7 browser)
 S1 = 17.7
 for x,ly,lab in [(165,415,'a'),(164,468,'b'),(164,493,'c'),(165,518,'d'),(164,544,'e')]:
-    t(x,ly,lab,s=15,col='#828185')
+    t(x,ly,lab,s=18.5,col='#434240')   # scan letters: core ink ~#40, ascender ~14-16px
 for ly,pairs in [(415,[(233,'Herbert'),(308,'Locken'),(375,'und'),(415,'seine')]),
                  (441,[(189,'Haare'),(355,'lang.')]),
                  (468,[(297,'er'),(320,'sehr'),(363,'dünn.')]),
@@ -124,9 +124,9 @@ items.append({'k':'t','x':166,'y':641,'t':'','s':21.0,'c':'naFiraM','col':DARK,
   'segs':[{'t':'Ergänzen Sie '},{'t':'haben oder sein','i':1,'w':400},{'t':' im Präteritum.'}]})
 t(164,678,'Schau mal, hier sind Fotos von früher:',s=17.9)
 emit_line(687, breaks=[(195,247)], s=18.0)    # Das [hw waren] (a) mein Bruder...
-RULES2 = {'p54-2b':(180,729,113,'war'),'p54-2c':(405,729,129,'war'),'p54-2d':(814,730,129,'war'),
- 'p54-2e':(335,755,129,'hatte'),'p54-2f':(705,756,129,'war'),'p54-2g':(599,781,84,'waren'),
- 'p54-2h':(244,806,130,'hatten'),'p54-2i':(822,808,110,'war'),'p54-2j':(619,833,82,'waren')}
+RULES2 = {'p54-2b':(164,729,122,'war'),'p54-2c':(405,729,129,'war'),'p54-2d':(814,730,129,'war'),
+ 'p54-2e':(335,755,129,'hatte'),'p54-2f':(705,756,129,'war'),'p54-2g':(599,781,128,'waren'),
+ 'p54-2h':(244,806,130,'hatten'),'p54-2i':(822,808,129,'war'),'p54-2j':(619,833,90,'waren')}   # all re-measured from scan rule ink
 for fid,(x,ry,w,ans) in RULES2.items():
     items.append({'k':'f','id':fid,'x':x,'y':ry,'w':w,'l':F[fid]['label'],'a':ans,'g':'g2'})
 for ly, fids in [(711,['p54-2b','p54-2c','p54-2d']),
