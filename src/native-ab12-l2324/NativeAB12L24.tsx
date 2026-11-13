@@ -1,4 +1,5 @@
 import {useNativeCanvas,Canvas,Words} from './shared';
+import {LinedArea} from '../components/LinedArea';
 import {LineMatching} from '../exercises/LineMatching';
 
 export function NativeAB12L24({page}:{page:string}){
@@ -196,6 +197,60 @@ export function NativeAB12L24({page}:{page:string}){
   {text(114.6,1002.2,20,'…','naYel99 naNw')}
   <div className="naText naFoot99 naNw" style={{left:597,top:1050,width:141}}>neunundneunzig&nbsp;|&nbsp;99</div>
   <div className="naText naBadge99" style={{left:749.2,top:1052,width:46.8,height:14}}>Modul 8</div>
+ </>}
+ {page==='100'&&<>
+  {text(81.5,50.3,165,'RÜCKBLICK','naHead100 naNw',28.5)}
+  {text(80.5,121.9,290,'Wählen Sie eine Aufgabe zu Lektion','naWahl100 naNw')}
+  <div className="naText naLsn100" style={{left:370,top:125,width:21.5,height:13.5}}>23</div>
+  <div className="naRuleR100" style={{left:392,top:138.2,width:334}}/>
+  {art('icon1',46,165,32,31)}
+  <div className="naText naNum100" style={{left:84.5,top:172.5,width:15,height:15}}>1</div>
+  {text(112.5,170.9,592,'Lesen Sie noch einmal die Blogbeiträge im Kursbuch auf Seite 62 und ergänzen','naAufg100 naNw',16.3)}
+  {text(112.5,191.2,110,'Sie die Tabelle.','naAufg100 naNw',16.3)}
+  <div className="naTabF100" style={{left:112,top:219,width:620,height:23}}/>
+  <svg className="naPipeSvg100" viewBox="0 0 807 1094"><rect x="112" y="219" width="1" height="89"/><rect x="287.5" y="219" width="1" height="89"/><rect x="450" y="219" width="1" height="89"/><rect x="572.5" y="219" width="1" height="89"/><rect x="732" y="219" width="1" height="89"/><rect x="112" y="242" width="620" height="1"/><rect x="112" y="263.5" width="620" height="1"/><rect x="112" y="308" width="620" height="1"/></svg>
+  {text(293,221.5,105,'Tom und Hanna','naTabH100 naNw',12.1)}
+  {text(456,221.5,95,'Familie Encke','naTabH100 naNw',12.1)}
+  {text(579,221.5,155,'Beat, Karla und Franca','naTabH100 naNw',12.1)}
+  {text(118,244.9,150,'Wo waren die Personen?','naQ100 naNw',12.5)}
+  {text(118,269.9,160,'Was waren die Probleme? /','naQ100 naNw',12.5)}
+  {text(118,286.9,100,'Was ist passiert?','naQ100 naNw',12.5)}
+  {art('hw1',291,245,48,16)}
+  {art('hw2',291,268,156,35)}
+  {field('100-1ew',455.5,243,109,'1 Familie Encke Ort','naFieldBlank')}
+  {field('100-1bw',578,243,147,'1 Beat Karla Franca Ort','naFieldBlank')}
+  <LinedArea id="100-1ep" values={c.values} set={set} x={455.5} tops={[266,286]} w={109} label="1 Familie Encke Probleme" rules={false} boxH={20} className="naFieldBlank"/>
+  <LinedArea id="100-1bp" values={c.values} set={set} x={578} tops={[266,286]} w={147} label="1 Beat Karla Franca Probleme" rules={false} boxH={20} className="naFieldBlank"/>
+  {check('100-1',742,247.5,{'100-1ew':'Schwarzwald|im Schwarzwald','100-1ep':'Es war sehr windig. Nach fünf Minuten war das Hausdach total kaputt|Ein Sturm hat das Hausdach kaputt gemacht','100-1bw':'Ostsee|an der Ostsee|die Ostsee','100-1bp':'Es war fünf Tage lang sehr neblig und kalt|Es war fünf Tage lang neblig und kalt|Es war neblig und kalt'})}
+  {art('icon2',40,331,38,32)}
+  <div className="naText naNum100" style={{left:84.5,top:337.5,width:15,height:15}}>2</div>
+  {text(112.5,335.9,540,'Ins Wasser gefallen? Schreiben Sie einen Beitrag in einem Blog zu einem','naAufg100 naNw',16.3)}
+  {text(112.5,355.7,495,'Problemurlaub. Machen Sie zuerst Notizen zu folgenden Punkten:','naAufg100 naNw',16.3)}
+  {art('notes',123.5,398,166,68)}
+  {text(80.5,539.9,290,'Wählen Sie eine Aufgabe zu Lektion','naWahl100 naNw')}
+  <div className="naText naLsn100" style={{left:369.5,top:544,width:21.5,height:13.5}}>24</div>
+  <div className="naRuleR100" style={{left:392,top:557.2,width:332}}/>
+  {art('icon3',45,583,31,31)}
+  <div className="naText naNum100" style={{left:83.5,top:590.5,width:15,height:15}}>1</div>
+  {text(112.5,589.9,590,'Lesen Sie noch einmal den Tagebucheintrag von Alisa im Kursbuch auf Seite 66','naAufg100 naNw',16.3)}
+  {text(112.5,609.2,245,'und beantworten Sie die Fragen.','naAufg100 naNw',16.3)}
+  {text(110.5,639.3,8,'a','naQ100 naNw',15)}{text(129,639.3,155,'Was hat Alisa gefeiert?','naQ100 naNw',14)}{field('100-2a',293.5,633.9,420.5,'1 a')}
+  {text(110.5,658.3,8,'b','naQ100 naNw',15)}{text(129,658.3,150,'Wann hat sie gefeiert?','naQ100 naNw',14)}{field('100-2b',293.5,653.9,420.5,'1 b')}
+  {text(110.5,677.3,8,'c','naQ100 naNw',15)}{text(129,677.3,135,'Wo hat sie gefeiert?','naQ100 naNw',14)}{field('100-2c',293.5,673.9,420.5,'1 c')}
+  {text(110.5,697.3,8,'d','naQ100 naNw',15)}{text(129,697.3,140,'Wer hat mitgefeiert?','naQ100 naNw',14)}{field('100-2d',293.5,692.9,420.5,'1 d')}
+  {check('100-2',742,667.5,{'100-2a':'Alisa hat den Heiligen Abend gefeiert|den Heiligen Abend|Heiligen Abend|Weihnachten','100-2b':'Am 24.12.|24.12.|am 24. Dezember|24. Dezember','100-2c':'Sie hat bei Tante Lissy gefeiert|bei Tante Lissy','100-2d':'Ihre Mutter, ihr Vater, ihr Bruder und seine Freundin haben mitgefeiert|Mama, Papa, Holger und Katrin|Mama, Papa, Holger und Katrin haben mitgefeiert'})}
+  {art('icon4',40,739,38,32)}
+  <div className="naText naNum100" style={{left:83,top:746,width:15,height:15}}>2</div>
+  {text(112.5,744.9,520,'Was haben Sie zuletzt gefeiert? Schreiben Sie einen Tagebucheintrag.','naAufg100 naNw',16.3)}
+  {text(112.5,764.2,205,'Machen Sie zuerst Notizen.','naAufg100 naNw',16.3)}
+  <div className="naDash100" style={{left:110,top:804.2}}/>{text(123,793.7,160,'Was haben Sie gefeiert?','naQ100 naNw',14)}
+  <div className="naDash100" style={{left:110,top:823.2}}/>{text(123,812.7,165,'Wann haben Sie gefeiert?','naQ100 naNw',14)}
+  <div className="naDash100" style={{left:110,top:843.2}}/>{text(123,832.7,150,'Wo haben Sie gefeiert?','naQ100 naNw',14)}
+  <div className="naDash100" style={{left:110,top:862.2}}/>{text(123,851.7,140,'Wer hat mitgefeiert?','naQ100 naNw',14)}
+  <div className="naDash100" style={{left:110,top:881.2}}/>{text(123,871.7,160,'Was haben Sie gemacht?','naQ100 naNw',14)}
+  <div className="naDash100" style={{left:110,top:901.2}}/>{text(123,890.7,340,'Was hat Ihnen besonders gefallen / nicht gefallen?','naQ100 naNw',15)}
+  <div className="naText naBadge100" style={{left:3,top:1050.5,width:43.5,height:13}}>Modul 8</div>
+  {text(56.7,1047.5,20,'100','naFoot100 naNw',13.5)}{text(86.9,1047.5,4,'|','naFoot100 naNw',13.5)}{text(100.9,1047.5,50,'hundert','naFoot100 naNw',13.5)}
  </>}
  {page==='97'&&<>
   {text(71.7,54,580,'WIEDERHOLUNGSSTATION: GRAMMATIK','naHead97 naNw',28.5)}
