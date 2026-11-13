@@ -1,8 +1,9 @@
 import {useNativeCanvas,Canvas,Words} from './shared';
+import {LineMatching} from '../exercises/LineMatching';
 
 export function NativeAB12L23({page}:{page:string}){
  const c=useNativeCanvas(page);
- const {text,art,field,rule,dot,check,title,kb,hand,audio}=c;
+ const {text,art,field,rule,dot,check,title,kb,hand,audio}=c;const set=c.set;
  return <Canvas page={page} root={c.root} player={c.player} scale={c.scale}>
  {page==='84'&&<>
   {art('hero',8,30,742,60)}
@@ -145,6 +146,75 @@ export function NativeAB12L23({page}:{page:string}){
   {check('85-8',118,1030,{'85-8-a':'wolkenlos','85-8-b':'arbeitslos','85-8-c':'farblos'})}
   {art('modul-tab',740,1043,68,20)}
   <div className="naText naFooter" style={{left:420,top:1046,width:310,textAlign:'right'}}>fünfundachtzig&nbsp;&nbsp;|&nbsp;&nbsp;85</div>
+ </>}
+ {page==='86'&&<>
+  <div className="naBasisL" style={{left:90,top:51}}>BASISTRAINING</div>
+  <div className="naRuleP" style={{left:277,top:72,width:451}}/>
+  {kb(59,136,'KB 5')}
+  {title('9',88,124,620,'Ordnen Sie zu.','naRB naNw')}
+  <div className="naSide naSideB naSideC" style={{left:60,top:155}}>STRUKTUREN</div>
+  <div className="naBank" style={{left:120,top:150,width:600,height:24}}/>
+  <div className="naText naNw naBankInk" style={{left:124,top:152,width:600}}><Words text="er hat gestern lange gefeiert | es schneit zu viel | ihr Fahrrad ist kaputt | "/><span className="naStrikeB"><Words text="sie fahren morgen in"/></span></div>
+  <div className="naText naNw naBankInk" style={{left:124,top:173,width:200}}><span className="naStrikeB"><Words text="den Urlaub"/></span></div>
+  {art('imgA',119,206,156,78)}
+  {art('imgB',284,206,160,78)}
+  {art('imgC',456,206,153,78)}
+  {art('imgD',625,206,147,78)}
+  {text(119,327,16,'A','naNw naBookSerif')}{text(140,327,310,'Luca und Alina suchen den Reiseführer,','naNw naBookSerif')}
+  {art('ex9a',138,344,230,20)}
+  {text(119,375,16,'B','naNw naBookSerif')}{text(140,375,240,'Herr Brunner muss noch','naNw naBookSerif')}
+  {text(140,393,300,'ein paar Stunden in München bleiben,','naNw naBookSerif')}
+  {text(139,414,33,'denn','naNw naBookSerif')}{field('86-9-b',175,411,240,'9 B')}{text(419,414,10,'.')}
+  {text(451,326,14,'C','naNw naBookSerif')}{text(469,326,170,'Urs ist heute sehr müde,','naNw naBookSerif')}
+  {text(468,346,33,'denn','naNw naBookSerif')}{field('86-9-c',500,343,220,'9 C')}{text(724,346,10,'.')}
+  {text(451,393,14,'D','naNw naBookSerif')}{text(468,393,260,'Sandra kommt heute nicht pünktlich,','naNw naBookSerif')}
+  {text(468,415,33,'denn','naNw naBookSerif')}{field('86-9-d',500,411,227,'9 D')}{text(731,415,10,'.')}
+  {check('86-9',640,442,{'86-9-b':'es schneit zu viel','86-9-c':'er hat gestern lange gefeiert','86-9-d':'ihr Fahrrad ist kaputt'})}
+  {kb(59,470,'KB 5')}
+  <div className="naTitle naRB naNw" style={{left:88,top:466,width:640}}><b>10</b><Words text="Ergänzen Sie die Sätze aus "/><span className="naBlue">9</span><Words text="."/></div>
+  <div className="naSide naSideB naSideC" style={{left:48,top:492}}>STRUKTUREN</div>
+  <div className="naSide naSideB naSideC" style={{left:62,top:492}}>ENTDECKEN</div>
+  <div className="naTblBox" style={{left:130,top:488,width:605,height:111}}/>
+  <div className="naTblHead" style={{left:131,top:489,width:603,height:24}}/>
+  <div className="naTblH" style={{left:130,top:513,width:605}}/>
+  <div className="naTblH" style={{left:130,top:537,width:605}}/>
+  <div className="naTblH" style={{left:130,top:557,width:605}}/>
+  <div className="naTblH" style={{left:130,top:578,width:605}}/>
+  <div className="naTblV" style={{left:172,top:489,height:48}}/>
+  <div className="naTblV" style={{left:255,top:488,height:111}}/>
+  <div className="naTblV" style={{left:345,top:488,height:111}}/>
+  <div className="naTblV" style={{left:433,top:488,height:111}}/>
+  <div className="naTblCell naTblCellS" style={{left:174,top:496}}>Position 0</div>
+  <div className="naTblCell naTblCellS" style={{left:262,top:496}}>Position 1</div>
+  <div className="naTblCell naTblCellS" style={{left:351,top:496}}>Position 2</div>
+  {text(140,520,30,'…')}
+  {art('ex10ex',170,518,540,38)}
+  {field('86-10-r1c0',172,537,83,'10 Zeile 1 Position 0','naFieldNL')}{field('86-10-r1c1',260,537,85,'10 Zeile 1 Position 1','naFieldNL')}{field('86-10-r1c2',350,537,83,'10 Zeile 1 Position 2','naFieldNL')}{field('86-10-r1c3',438,537,297,'10 Zeile 1 Rest','naFieldNL')}
+  {field('86-10-r2c0',172,558,83,'10 Zeile 2 Position 0','naFieldNL')}{field('86-10-r2c1',260,558,85,'10 Zeile 2 Position 1','naFieldNL')}{field('86-10-r2c2',350,558,83,'10 Zeile 2 Position 2','naFieldNL')}{field('86-10-r2c3',438,558,297,'10 Zeile 2 Rest','naFieldNL')}
+  {field('86-10-r3c0',172,579,83,'10 Zeile 3 Position 0','naFieldNL')}{field('86-10-r3c1',260,579,85,'10 Zeile 3 Position 1','naFieldNL')}{field('86-10-r3c2',350,579,83,'10 Zeile 3 Position 2','naFieldNL')}{field('86-10-r3c3',438,579,297,'10 Zeile 3 Rest','naFieldNL')}
+  {check('86-10',620,608,{'86-10-r1c0':'denn','86-10-r1c1':'es','86-10-r1c2':'schneit','86-10-r1c3':'zu viel','86-10-r2c0':'denn','86-10-r2c1':'er','86-10-r2c2':'hat','86-10-r2c3':'gestern lange gefeiert','86-10-r3c0':'denn','86-10-r3c1':'ihr Fahrrad','86-10-r3c2':'ist','86-10-r3c3':'kaputt'})}
+  {kb(59,640,'KB 5')}
+  {title('11',88,630,640,'Schreiben Sie die Sätze mit denn.','naRB naNw')}
+  <div className="naSide naSideB naSideC" style={{left:60,top:662}}>STRUKTUREN</div>
+  {text(121,657,16,'a','naNw naBookSerif')}{text(140,657,480,'Ich kann leider nicht kommen. Ich habe einen Termin beim Zahnarzt.','naNw naBookSerif')}
+  {art('ex11a',130,684,480,13)}
+  {text(121,697,16,'b','naNw naBookSerif')}{text(140,697,560,'In dem Haus kann man nicht mehr wohnen. Nach dem Sturm war das Dach kaputt.','naNw naBookSerif')}
+  {art('ex11b',128,714,87,18)}{rule(137,733,591)}{text(728,718,10,'.')}
+  {text(121,735,16,'c','naNw naBookSerif')}{text(139,735,480,'Ella kommt heute nicht mit in die Disco. Sie hat morgen eine Prüfung.','naNw naBookSerif')}
+  {field('86-11-c',130,751,598,'11 c')}{text(729,753,10,'.')}
+  {text(121,775,16,'d','naNw naBookSerif')}{text(139,775,560,'Mit dem Urlaub hatten wir wirklich Glück. Das Wetter war ein Traum.','naNw naBookSerif')}
+  {field('86-11-d',130,790,598,'11 d')}{text(729,793,10,'.')}
+  {check('86-11',620,816,{'86-11-c':'Ella kommt heute nicht in die Disco, denn sie hat morgen eine Prüfung|Ella kommt heute nicht mit in die Disco, denn sie hat morgen eine Prüfung','86-11-d':'Mit dem Urlaub hatten wir wirklich Glück, denn das Wetter war ein Traum'})}
+  {kb(59,851,'KB 5')}
+  {title('12',88,843,640,'Verbinden Sie.','naRB naNw')}
+  <div className="naSide naSideB naSideC" style={{left:60,top:884}}>STRUKTUREN</div>
+  {text(121,870,16,'a','naNw naBookSerif')}{text(121,890,16,'b','naNw naBookSerif')}{text(121,911,16,'c','naNw naBookSerif')}{text(121,931,16,'d','naNw naBookSerif')}
+  <svg className="naEx12Ex" viewBox="0 0 807 1094" aria-hidden="true"><path d="M330 883 C372 883 380 923 390 923" fill="none" stroke="#5b84bd" strokeWidth="2"/><path d="M423 923 L463 923" fill="none" stroke="#5b84bd" strokeWidth="2"/></svg>
+  <LineMatching id="86-12" left={['Soll ich das Kleid nehmen','Am See darf man nicht grillen','Ich mache gern Urlaub am Meer,','Der Techniker muss kommen,']} right={['denn','aber','oder','und']} values={c.values} onMatch={set} leftX={138} rightX={352} leftWidth={220} rightWidth={75} ys={[870,890,911,931]} width={807} height={1094} fontSize={13.5} multiple={true}/>
+  <LineMatching id="86-12r" left={['denn','aber','oder','und']} right={['die Spülmaschine funktioniert nicht.','am liebsten bin ich in den Bergen.','findest du den Rock schöner?','Baden ist auch verboten.']} values={c.values} onMatch={set} leftX={433} rightX={430} leftWidth={6} rightWidth={280} ys={[870,890,911,931]} width={807} height={1094} fontSize={13.5} multiple={true}/>
+  {check('86-12',620,960,{'86-12-0':'2|','86-12-1':'3','86-12-2':'1','86-12-3':'0','86-12r-0':'0','86-12r-1':'1','86-12r-2':'2|','86-12r-3':'3'})}
+  {art('modul-tab',8,1049,60,16)}
+  {text(76,1050,200,'86  |  sechsundachtzig','naFooter')}
  </>}
  </Canvas>;
 }
