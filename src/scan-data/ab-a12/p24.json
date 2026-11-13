@@ -1590,5 +1590,55 @@
   ],
   "verifiedWords": 199,
   "totalWords": 199
- }
+ },
+ "matchings": [
+  {
+   "id": "task2",
+   "group": "gx",
+   "left": [
+    "Garage",
+    "Arbeitszimmer",
+    "Bad",
+    "Schlafzimmer",
+    "Garten",
+    "Wohnzimmer",
+    "Küche"
+   ],
+   "right": [
+    "Couch",
+    "Toilette",
+    "Computer",
+    "Kühlschrank",
+    "Auto",
+    "Blumen",
+    "Bett"
+   ],
+   "leftX": 169,
+   "leftWidth": 140,
+   "rightX": 358,
+   "rightWidth": 160,
+   "ys": [
+    382,
+    408,
+    438,
+    459,
+    486,
+    511,
+    538
+   ],
+   "fontSize": 20,
+   "example": [
+    4,
+    5
+   ],
+   "masks": [
+    {
+     "x": 165,
+     "y": 382,
+     "w": 410,
+     "h": 180
+    }
+   ]
+  }
+ ]
 }
