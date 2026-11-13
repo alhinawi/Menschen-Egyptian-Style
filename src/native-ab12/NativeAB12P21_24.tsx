@@ -39,9 +39,9 @@ export function NativeAB12P21_24({page}:{page:string}){
   {art('photo3',708,222,124,102)}
   {art('photo4',846,227,142,102)}
   <div className="naTipBox" style={{left:391,top:370,width:605,height:91}}/>
-  {text(425,381,560,'Sie möchten nicht nur mit einem Wort antworten? Machen Sie sich','naSmall')}
+  {text(425,382,560,'Sie möchten nicht nur mit einem Wort antworten? Machen Sie sich','naSmall')}
   {text(425,404,560,'erst Notizen: Was mache ich wo in meinem Stadtteil? So wiederholen Sie','naSmall')}
-  {text(425,425,560,'wichtige Informationen und planen Ihre Aussage. Das Sprechen ist','naSmall')}
+  {text(425,426,560,'wichtige Informationen und planen Ihre Aussage. Das Sprechen ist','naSmall')}
   {text(425,447,560,'dann leichter.','naSmall')}
   {title('2',104,511,900,'Arbeiten Sie zu dritt. Schreiben Sie einen Fragebogen. Sprechen und notieren Sie.','naOB naLS')}
   {text(170,566,300,'Was brauchen Sie in Ihrem Stadtteil?','naD19 naItalic')}
@@ -79,33 +79,33 @@ export function NativeAB12P21_24({page}:{page:string}){
   {[7,8,9].map(n=><span key={'e'+n}>{dot('p21-a1_'+n,'e',472,1098+(n-7)*25.5,'Zeile '+n+' e')}{dot('p21-a1_'+n,'i',518,1098+(n-7)*25.5,'Zeile '+n+' i')}</span>)}
   {check('g1',160,1178,{'p21-a1_1':'e','p21-a1_2':'e','p21-a1_3':'i','p21-a1_4':'i','p21-a1_5':'i','p21-a1_6':'e','p21-a1_7':'i','p21-a1_8':'i','p21-a1_9':'i'},'naCheckSm')}
   {title('3',617,997,430,'Ergänzen Sie „i“, „ih“, „ie“.','naOB naLS')}
-  {text(663,1047,12,'a','naS20')}
-  {text(687,1041,150,'Marlene lebt in G','naS20')}
-  {field('p21-g1',839,1042,37,'a G...sing')}
-  {text(878,1046,80,'sing. Das','naS20')}
-  {text(687,1068,20,'ist','naS20')}
-  {field('p21-g2',711,1069,39,'a ist ...r')}
-  {text(753,1068,25,'r L','naS20')}
-  {field('p21-g3',781,1069,31,'a L...blingsviertel')}
-  {text(816,1068,62,'blingsv','naS20')}
-  {field('p21-g4',879,1069,36,'a blingsv...rtel')}
-  {text(918,1068,40,'rtel.','naS20')}
-  {text(664,1093,12,'b','naS20')}
-  {text(688,1093,192,'Die Wohnung ist möbl','naS20')}
-  {field('p21-g5',891,1095,29,'b möbl...rt')}
-  {text(921,1093,25,'rt.','naS20')}
-  {text(663,1120,12,'c','naS20')}
-  {text(688,1120,42,'Im K','naS20')}
-  {field('p21-g6',730,1121,36,'c K...no')}
-  {text(769,1124,97,'no sehen w','naS20')}
-  {field('p21-g7',866,1121,35,'c w...r')}
-  {text(907,1124,12,'r','naS20')}
-  {text(687,1144,12,'v','naS20')}
-  {field('p21-g8',696,1146,36,'c v...le')}
-  {text(736,1144,106,'le schöne Sp','naS20')}
-  {field('p21-g9',842,1146,35,'c Sp...lfilme')}
-  {text(882,1144,60,'lfilme.','naS20')}
-  {check('g2',955,1085,{'p21-g1':'ie','p21-g2':'ih','p21-g3':'ie','p21-g4':'ie','p21-g5':'ie','p21-g6':'i','p21-g7':'i','p21-g8':'ie','p21-g9':'ie'},'naCheckSm')}
+  {text(663,1044,12,'a','naS20')}
+  {text(687,1044,150,'Marlene lebt in G','naS20')}
+  {field('p21-g1',839,1033,37,'a G...sing')}
+  {text(878,1044,80,'sing. Das','naS20')}
+  {text(687,1070,20,'ist','naS20')}
+  {field('p21-g2',711,1059,39,'a ist ...r')}
+  {text(753,1070,25,'r L','naS20')}
+  {field('p21-g3',781,1059,31,'a L...blingsviertel')}
+  {text(816,1070,62,'blingsv','naS20')}
+  {field('p21-g4',879,1059,36,'a blingsv...rtel')}
+  {text(918,1070,40,'rtel.','naS20')}
+  {text(664,1096,12,'b','naS20')}
+  {text(688,1096,192,'Die Wohnung ist möbl','naS20')}
+  {field('p21-g5',891,1085,29,'b möbl...rt')}
+  {text(921,1096,25,'rt.','naS20')}
+  {text(663,1121,12,'c','naS20')}
+  {text(688,1121,42,'Im K','naS20')}
+  {field('p21-g6',730,1110,36,'c K...no')}
+  {text(769,1121,97,'no sehen w','naS20')}
+  {field('p21-g7',866,1110,35,'c w...r')}
+  {text(907,1121,12,'r','naS20')}
+  {text(687,1147,12,'v','naS20')}
+  {field('p21-g8',696,1136,36,'c v...le')}
+  {text(736,1147,106,'le schöne Sp','naS20')}
+  {field('p21-g9',842,1136,35,'c Sp...lfilme')}
+  {text(882,1147,60,'lfilme.','naS20')}
+  {check('g2',958,1138,{'p21-g1':'ie','p21-g2':'ih','p21-g3':'ie','p21-g4':'ie','p21-g5':'ie','p21-g6':'i','p21-g7':'i','p21-g8':'ie','p21-g9':'ie'},'naCheckSm')}
   {audio('assets/ab-a12-cd2-track13.mp3',46,1212,'2 13')}
   {title('2',107,1206,480,'Hören Sie und sprechen Sie nach.','naOB naLS')}
   {text(154,1250,80,'See','naF21')}
@@ -126,92 +126,92 @@ export function NativeAB12P21_24({page}:{page:string}){
   {title('1',118,158,900,'In der Stadt. Ordnen und Ergänzen Sie die Wörter mit Artikel.','naRB naLS')}
   {art('scramble',160,196,665,42)}
   {text(166,247,12,'a')}
-  {text(190,244,320,'Hier kann man Kleidung einkaufen.')}
+  {text(190,244,320,'Hier kann man Kleidung einkaufen.','naTk')}
   {art('hand-ex',524,244,110,30)}
   {text(165,268,12,'b')}
-  {text(190,270,560,'Hier lernen und spielen kleine Kinder von Montag bis Freitag.','naS20')}
-  {field('p22-1b',756,275,209,'b Ort')}
+  {text(190,270,560,'Hier lernen und spielen kleine Kinder von Montag bis Freitag.','naTk')}
+  {field('p22-1b',756,265,209,'b Ort')}
   {text(165,299,12,'c')}
-  {text(190,296,355,'Hier kann man schlafen, es ist günstig.','naS20')}
-  {field('p22-1c',545,299,420,'c Ort')}
+  {text(190,296,355,'Hier kann man schlafen, es ist günstig.','naTk')}
+  {field('p22-1c',545,290,420,'c Ort')}
   {text(165,320,12,'d')}
-  {text(190,322,275,'Hier gibt es sehr viele Treppen.','naS20')}
-  {field('p22-1d',463,325,502,'d Ort')}
+  {text(190,322,275,'Hier gibt es sehr viele Treppen.','naTk')}
+  {field('p22-1d',463,316,502,'d Ort')}
   {text(165,351,12,'e')}
-  {text(190,348,430,'Hier kann man Bücher lesen, aber nicht kaufen.')}
-  {field('p22-1e',628,351,337,'e Ort')}
+  {text(190,348,430,'Hier kann man Bücher lesen, aber nicht kaufen.','naTk')}
+  {field('p22-1e',628,343,337,'e Ort')}
   {text(166,372,12,'f')}
-  {text(189,374,360,'Hier ist es grün und es gibt viele Bäume.','naS20')}
-  {field('p22-1f',558,377,407,'f Ort')}
+  {text(189,374,360,'Hier ist es grün und es gibt viele Bäume.','naTk')}
+  {field('p22-1f',558,368,407,'f Ort')}
   <div className="naRule" style={{left:879,top:413,width:26}}/>
   {text(906,404,70,'/ 10 Punkte','naS13')}
   {check('g1',700,240,{'p22-1b':'Kindergarten|der Kindergarten','p22-1c':'Jugendherberge|die Jugendherberge','p22-1d':'Turm|der Turm','p22-1e':'Bibliothek|die Bibliothek','p22-1f':'Park|der Park'},'naCheckSm')}
   {title('2',117,442,900,'Wie heißen die Personalpronomen? Kreuzen Sie an.','naRB naLS')}
   {text(165,493,12,'a')}
-  {text(189,490,540,'Daniel und Julia, wie findet ihr Berlin? – Super, es gefällt')}
+  {text(189,490,540,'Daniel und Julia, wie findet ihr Berlin? – Super, es gefällt','naTk')}
   {art('ex2a-x',716,484,32,32)}
   {text(747,495,40,'uns')}
   <div className="naDotPrint" style={{left:800,top:492}}/>
   {text(828,492,60,'Ihnen')}
   {text(188,515,160,'wirklich gut hier.')}
   {text(164,539,12,'b')}
-  {text(189,542,265,'Das Auto ist ja toll. Gehört es')}
+  {text(189,542,265,'Das Auto ist ja toll. Gehört es','naTk')}
   {dot('p22-r2b','dir',456,541,'b dir')}
   {text(483,540,50,'dir')}
   {dot('p22-r2b','ihnen',540,541,'b ihnen')}
   {text(567,543,65,'ihnen?')}
   {text(634,543,350,'– Leider nicht, es gehört meinem Chef.')}
   {text(164,570,12,'c')}
-  {text(189,567,95,'Kann ich')}
+  {text(189,567,95,'Kann ich','naTk')}
   {dot('p22-r2c','ihm',291,568,'c ihm')}
   {text(318,568,45,'ihm')}
   {dot('p22-r2c','Ihnen',375,568,'c Ihnen')}
   {text(402,568,60,'Ihnen')}
-  {text(471,568,460,'helfen, Herr Thalmann? – Ja bitte, meine Tasche ist')}
+  {text(471,568,460,'helfen, Herr Thalmann? – Ja bitte, meine Tasche ist','naTk')}
   {text(188,593,90,'so schwer.')}
   {text(164,617,12,'d')}
-  {text(189,619,760,'Emma und ich haben für Sie eingekauft, Frau Roth. – Das ist aber nett. Ich danke')}
+  {text(189,619,760,'Emma und ich haben für Sie eingekauft, Frau Roth. – Das ist aber nett. Ich danke','naTk')}
   {dot('p22-r2d','uns',187,642,'d uns')}
   {text(214,643,35,'uns')}
   {dot('p22-r2d','euch',267,642,'d euch')}
   {text(294,645,50,'euch.')}
   {text(164,674,12,'e')}
-  {text(188,671,455,'Wie findet dein Sohn die neue Firma? – Es gefällt')}
+  {text(188,671,455,'Wie findet dein Sohn die neue Firma? – Es gefällt','naTk')}
   {dot('p22-r2e','ihm',646,672,'e ihm')}
   {text(673,672,45,'ihm')}
   {dot('p22-r2e','ihr',730,672,'e ihr')}
   {text(757,673,35,'ihr')}
   {text(807,673,120,'sehr gut dort.')}
   {text(164,694,12,'f')}
-  {text(188,697,105,'Kannst du')}
+  {text(188,697,105,'Kannst du','naTk')}
   {dot('p22-r2f','euch',300,696,'f euch')}
   {text(327,697,55,'euch')}
   {dot('p22-r2f','mir',391,696,'f mir')}
   {text(418,698,40,'mir')}
-  {text(472,697,460,'bei der Aufgabe helfen? – Ja Max, ich komme gleich.')}
+  {text(472,697,460,'bei der Aufgabe helfen? – Ja Max, ich komme gleich.','naTk')}
   <div className="naRule" style={{left:879,top:737,width:26}}/>
   {text(906,728,65,'/ 5 Punkte','naS13')}
-  {check('g2',880,510,{'p22-r2b':'dir','p22-r2c':'Ihnen','p22-r2d':'euch','p22-r2e':'ihm','p22-r2f':'mir'},'naCheckSm')}
+  {check('g2',170,724,{'p22-r2b':'dir','p22-r2c':'Ihnen','p22-r2d':'euch','p22-r2e':'ihm','p22-r2f':'mir'},'naCheckSm')}
   {title('3',116,765,900,'Ergänzen Sie die E-Mail.','naRB naLS')}
   <div className="naBandCream" style={{left:164,top:812,width:682,height:24}}/>
   {text(170,813,680,'Hier gibt es viele | das ist nicht so toll | gefällt mir gut | Hier ist | das ist schon okay','naD19')}
   {text(184,873,110,'Hallo Freunde,','naD19')}
   {text(184,897,230,'seit August bin ich in Frankfurt.','naD19')}
-  {field('p22-3a',415,898,268,'E-Mail a')}
-  {text(689,896,25,'(a)','naD19')}
+  {field('p22-3a',415,885,268,'E-Mail a')}
+  {text(689,897,25,'(a)','naSmall naMk')}
   {text(184,921,380,'eine Schule für Krankenschwestern. Die Ausbildung','naD19')}
-  {field('p22-3b',184,946,270,'E-Mail b')}
-  {text(459,944,190,'(b) und macht viel Spaß. Ich','naD19')}
+  {field('p22-3b',184,934,270,'E-Mail b')}
+  {text(459,944,190,'(b) und macht viel Spaß. Ich','naD19 naTkB')}
   {text(184,968,500,'wohne in der Mozartallee 134. Mein Zimmer ist klein und gemütlich.','naD19')}
   {text(185,993,240,'Es hat nur 15 Quadratmeter, aber','naD19')}
-  {field('p22-3c',428,994,232,'E-Mail c')}
-  {text(666,992,30,'(c).','naD19')}
+  {field('p22-3c',428,982,232,'E-Mail c')}
+  {text(666,993,30,'(c).','naSmall naMk')}
   {text(185,1016,460,'Leider habe ich keine Küche. Ich koche in meinem Zimmer und','naD19')}
-  {field('p22-3d',184,1042,270,'E-Mail d')}
-  {text(459,1040,25,'(d).','naD19')}
+  {field('p22-3d',184,1030,270,'E-Mail d')}
+  {text(459,1041,25,'(d).','naSmall naMk')}
   {text(486,1039,220,'Aber das Viertel hier ist super.','naD19')}
-  {field('p22-3e',184,1066,270,'E-Mail e')}
-  {text(460,1064,25,'(e)','naD19')}
+  {field('p22-3e',184,1055,270,'E-Mail e')}
+  {text(460,1065,25,'(e)','naSmall naMk')}
   {text(482,1064,220,'Kneipen und Restaurants und','naD19')}
   {text(184,1090,170,'es ist immer etwas los.','naD19')}
   {text(185,1123,210,'Liebe Grüße nach Innsbruck','naD19')}
