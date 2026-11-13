@@ -1,3 +1,4 @@
+import {CheckButton} from './CheckButton';
 import {PageImage} from './PageImage';
 import {NativeAB11Test88} from '../native-ab11/NativeAB11Test88';
 import {AB11LineMatching88} from '../exercises/AB11LineMatching88';
@@ -84,7 +85,7 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['66'].includes(String(attrs.page)))return createElement(NativeAB12P66to71,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['67'].includes(String(attrs.page)))return createElement(NativeAB12P67,{key,page:String(attrs.page)});
   if(tag === 'NativeAB12L13')return createElement(NativeAB12Lesson13,{key,page:attrs.page});
-  if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['18','19','20'].includes(String(attrs.page)))return createElement(NativeAB12P18_20,{key,page:String(attrs.page)});
+  if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['18','19'].includes(String(attrs.page)))return createElement(NativeAB12P18_20,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['57','58','59'].includes(String(attrs.page)))return createElement(NativeAB11Lesson7Close,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['38','39','40'].includes(String(attrs.page)))return createElement(NativeAB11Next45,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['30','31','32','33','34','35','36','37'].includes(String(attrs.page)))return createElement(NativeAB11Lessons45,{key,page:String(attrs.page)});
@@ -140,6 +141,7 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   if (['prev', 'next', 'plus', 'minus', 'fit', 'pageJump', 'lessonNav', 'closeAudio', 'palette', 'audioToggle', 'clearMap'].includes(attrs.id) || attrs.class?.split(' ').some(c => ['soundToggle', 'listen', 'coverOpen'].includes(c)) || 'data-jump' in attrs || 'data-color' in attrs) return createElement(ReaderControl, {key, tag, attrs: {...props, 'data-react-control-id': path}, children: rendered});
   if (attrs.id === 'zoomValue') return createElement(ZoomValue, {key, tag, attrs: props, children: rendered});
   if (['input', 'select'].includes(tag)) return createElement(PersistentField, {key, tag, attrs: props, children: rendered});
+  if(tag==='button'&&children.some(c=>typeof c==='string'&&c.includes('Prüfen')))return createElement(CheckButton,props);
   return createElement(tag, props, ...rendered);
 }
 
