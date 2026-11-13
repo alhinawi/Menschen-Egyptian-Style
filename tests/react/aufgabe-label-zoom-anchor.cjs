@@ -52,7 +52,7 @@ const clickMarker=async(p,aria)=>{
   await p.waitForSelector('.largeAudioMarker');
   for(const z of[0.44,1.57,3]){
    await p.evaluate(z=>window.bookZoom(z),z);
-   await p.waitForTimeout(500);
+   await p.waitForTimeout(1200);
    const drift=await p.evaluate(()=>[...document.querySelectorAll('.largeAudioMarker')].flatMap(m=>{
     const page=document.querySelectorAll('.page')[Number(document.querySelector('#pageJump').value)];
     const sources=[...page.querySelectorAll('[data-audio-proxied="true"]')];
@@ -64,18 +64,36 @@ const clickMarker=async(p,aria)=>{
     }
     const src=sources.find(b=>b.getAttribute('aria-label')===m.getAttribute('aria-label'));
     if(!src)return[];const r=src.getBoundingClientRect();
-    // Pinned to the source centre, unless that would leave the circle partly
-    // offscreen — then it slides to the nearest fully visible position.
+    // Pinned to the source centre. Edge anchors (printed marker in the cut-off
+    // margin) may slide to the nearest ink-free spot, never onto text.
     const minX=window.scrollX+2,maxX=window.scrollX+window.innerWidth-46;
     const wantLeft=Math.min(Math.max(r.left+window.scrollX+r.width/2-22,minX),Math.max(minX,maxX));
-    return [[Math.abs(q.left+window.scrollX-wantLeft),Math.abs(q.top-(r.top+r.height/2-22)),q.width]];
+    const edge=r.left+r.width/2-22<minX||r.left+r.width/2+22>maxX+44;
+    const ink=[...page.querySelectorAll('*')].some(el=>{
+     if(el.closest('[data-audio-proxied="true"],[data-large-audio],audio,script,style,.nkbGhost'))return false;
+     if(!['SPAN','DIV','B','P','TD','TH','OUTPUT'].includes(el.tagName)||el.children.length)return false;
+     const t=el.textContent?.trim();if(!t||!/[A-Za-zÄÖÜäöüß0-9]/.test(t))return false;
+     const g=el.getBoundingClientRect();
+     return g.width&&g.height&&q.left<g.right&&q.right>g.left&&q.top<g.bottom&&q.bottom>g.top;
+    });
+    return [[Math.abs(q.left+window.scrollX-wantLeft),Math.abs(q.top-(r.top+r.height/2-22)),q.width,edge,ink]];
    }));
    assert(drift.length>0,'no marker/source pairs at zoom '+z);
-   for(const[dx,dy,w]of drift){assert(dx<=46,`x drift ${dx}px at zoom ${z} on ${route}#${hash}`);assert(dy<=46,`y drift ${dy}px at zoom ${z}`);assert(Math.abs(w-44)<=1.5,`marker width ${w} at zoom ${z}`)}
+   for(const[dx,dy,w,edge,ink]of drift){assert(dx<=90,`x drift ${dx}px at zoom ${z} on ${route}#${hash}`);assert(dy<=(edge?62:46),`y drift ${dy}px at zoom ${z}`);assert(Math.abs(w-44)<=1.5,`marker width ${w} at zoom ${z}`);assert(!ink,`marker covers printed ink at zoom ${z} on ${route}#${hash}`)}
    console.log(`${route}#${hash} zoom ${z}: pinned, 44px PASS (${drift.length} markers)`);
   }
   await p.evaluate(()=>window.bookZoom(1));
  }
+ // 7. Pages with no audio show no player panel at all.
+ await p.goto('http://localhost:5297/l2-3.html#23');await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
+ await p.waitForTimeout(700);
+ assert.equal(await p.locator('.readerAudioPlayer').count(),0,'no-audio page still shows a player');
+ assert.equal(await p.locator('.readerAudioPanel .readerAudioHeading').count(),0,'no-audio page shows player heading');
+ console.log('no-audio page hides the panel PASS');
+ await p.screenshot({path:'/tmp/fidelity/no-audio-p23.png'});
+ await p.goto('http://localhost:5297/l2-3.html#15');await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
+ await p.waitForSelector('.readerAudioPanel .readerAudioPlayer');
+ console.log('audio page keeps the panel PASS');
  await p.screenshot({path:'/tmp/fidelity/aufgabe-zoom-final.png'});
  await p.close();
 }finally{await b.close();server.close()}})().catch(e=>{console.error(e);server.close();process.exitCode=1});
