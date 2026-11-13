@@ -178,11 +178,12 @@
   },
   {
    "k": "t",
-   "x": 154,
-   "y": 506,
+   "x": 155,
+   "y": 504,
    "t": "Markieren Sie die trennbaren Verben blau und die nicht trennbaren Verben grün.",
-   "s": 17.4,
-   "col": "#171614"
+   "s": 18.5,
+   "c": "naRSans",
+   "col": "#2a2a28"
   },
   {
    "k": "r",

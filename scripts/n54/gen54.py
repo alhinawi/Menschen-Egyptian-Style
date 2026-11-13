@@ -34,7 +34,7 @@ def radio(fid, name, correct):
     cx, cy = RINGPOS.get(fid, (f['x']+12, f['y']+12))
     items.append({'k':'d','id':fid,'v':'1','name':name,'a':correct,'x':cx-9,'y':cy-9,'s':18,'l':f['label'],'g':'g3'})
 
-def emit_line(y, breaks=(), tol=10, label=True, s=None, **kw):
+def emit_line(y, breaks=(), tol=10, label=True, s=None, group_targets=None, **kw):
     """Emit runs for one printed line; breaks = (x0,x1) zones (fields/radios/handwriting)
     that split runs. Row label a-f emitted grey when label=True.
     s='auto': one uniform size for the whole line, fitted so word runs + break
@@ -43,7 +43,7 @@ def emit_line(y, breaks=(), tol=10, label=True, s=None, **kw):
     for w in words:
         tx = w['text']
         if label and w['x'] < 180 and tx.rstrip('.').lower() in ('a','b','c','d','e','f','c'):
-            t(w['x'], word_baseline(w), {'C':'c'}.get(tx,tx), s=15, col='#828185')
+            t(w['x'], word_baseline(w), {'C':'c'}.get(tx,tx), s=18.5, col='#434240')   # match bg-surviving letters
             continue
         w['_skip'] = False
     groups, cur = [], []
@@ -66,10 +66,11 @@ def emit_line(y, breaks=(), tol=10, label=True, s=None, **kw):
             us = best_size(txt, DROID, max(20, x1-x0-bw), lo=13, hi=24)
     allws = [w for g in groups for w in g]
     rb = line_baseline(allws) if allws else 0   # ONE baseline for the whole row
-    for g in groups:
+    for gi, g in enumerate(groups):
         x0 = g[0]['x']; x1 = max(w['x']+w['w'] for w in g)
         txt = ' '.join(w['text'] for w in g).replace('Haare,','Haare.').replace('Brille,','Brille.')
-        t(x0, rb, txt, s=us, target=None if us else x1-x0, **kw)
+        gt = group_targets[gi] if group_targets else None
+        t(x0, rb, txt, s=None if gt else us, target=gt or (None if us else x1-x0), **kw)
 
 def ln_words(y, tol=10):
     return [w for w in sorted([w for w in WORDS if abs(w['y']-y)<=tol], key=lambda w:w['x']) if w['x']>=160]
@@ -81,35 +82,41 @@ for w in WORDS:
     R.append((w['x']-2, w['y']-2, w['x']+w['w']+2, w['y']+w['h']+3))
 for f in scan['fields']:
     R.append((f['x']-2, f['y']-2, f['x']+f['w']+2, f['y']+f['h']+3))
+for cx, cy in RINGPOS.values():   # fully erase the original printed rings (ghost prevention)
+    R.append((cx-14, cy-14, cx+14, cy+14))
 make_bg(P, R, f'{REPO}/assets/book-crops/native-ab12-p54-bg.png')
 items.append({'k':'a','n':'bg','x':0,'y':0,'w':W,'h':H,'alt':'Seite 54 Hintergrund'})
 
 DARK='#1d1d1b'
 # ---------- ex 1 ----------
 t(166,196,'Das war Herbert früher. Das ist er heute. Ordnen Sie zu.',c='naFiraM',col=DARK,target=552,path=FIRA)
-_bank='hatte | hat | hatten | war | hat | ist | hatte | hat | haben | waren | hatte'
-SBANK = round(best_size(_bank,FIRA400,552,lo=13,hi=24)*0.97,1)   # stroke removed: refit (render ends at scan 722)
-items.append({'k':'t','x':169,'y':236,'t':'','s':SBANK,'c':'naBank54','col':'#696c97',
- 'segs':[{'t':'hatte','c':'naStrike54'},{'t':' | '},{'t':'hat','c':'naStrike54'},{'t':' | hatten | war | hat | ist | hatte | hat | haben | waren | hatte'}]})
-t(193,390,'Früher …',c='naDB',col='#353331',s=19.5)
-t(551,390,'Heute …',c='naDB',col='#353331',s=19.5)
+SBANK = round(best_size('hatte',FIRA400,45,lo=13,hi=24),1)   # 16.5
+BANKCOL = '#5e6174'   # scan dark-quartile ink (94,97,116)
+for bx, bw, struck in [(170,'hatte',1),(227,'hat',1),(269,'hatten',0),(336,'war',0),(381,'hat',0),(422,'ist',0),
+                       (457,'hatte',0),(514,'hat',0),(555,'haben',0),(617,'waren',0),(682,'hatte',0)]:
+    t(bx, 236, bw, s=SBANK, c='naBank54'+(' naStrike54' if struck else ''), col=BANKCOL)
+for px_ in (220,261,329,373,414,448,506,546,610,673):   # thin dark navy pipes at scan ink x
+    items.append({'k':'r','x':px_,'y':220,'w':2,'h':17,'col':BANKCOL})
+t(188,390,'Früher …',c='naDB',col='#353331',s=17.8)   # scan ink 188-276
+t(552,390,'Heute …',c='naDB',col='#353331',s=17.7)   # scan ink 552-630
 # rows hand-placed word-per-word at scan ink x, one size (scan body ~18.3 PIL -> 17.7 browser)
 S1 = 17.7
 for x,ly,lab in [(165,415,'a'),(164,468,'b'),(164,493,'c'),(165,518,'d'),(164,544,'e')]:
     t(x,ly,lab,s=18.5,col='#434240')   # scan letters: core ink ~#40, ascender ~14-16px
-for ly,pairs in [(415,[(233,'Herbert'),(308,'Locken'),(375,'und'),(415,'seine')]),
-                 (441,[(189,'Haare'),(355,'lang.')]),
-                 (468,[(297,'er'),(320,'sehr'),(363,'dünn.')]),
-                 (493,[(297,'er'),(320,'eine'),(364,'Brille.')]),
-                 (518,[(297,'er'),(320,'einen'),(376,'Bart.')]),
-                 (544,[(297,'er'),(320,'und'),(360,'seine'),(412,'Freundin')]),
-                 (569,[(227,'nur Fahrräder.')]),
-                 (415,[(579,'er'),(602,'kurze'),(658,'Haare.')]),
-                 (468,[(660,'er'),(683,'ein'),(716,'bisschen'),(797,'dick.')]),
-                 (493,[(660,'er'),(682,'keine'),(737,'Brille.')]),
-                 (518,[(660,'er'),(683,'keinen'),(750,'Bart.')]),
-                 (544,[(660,'er'),(683,'und'),(723,'seine'),(774,'Frau'),(820,'ein'),(853,'Auto.')])]:
-    for x,txt in pairs: t(x,ly,txt,s=S1)
+# per-word sizes fitted so each word's render width == its scan ink width (clamped 16.4-17.4)
+for ly,pairs in [(415,[(233,'Herbert',17.3),(308,'Locken',16.6),(375,'und',16.4),(415,'seine',16.9)]),
+                 (441,[(189,'Haare',16.4),(355,'lang.',16.7)]),
+                 (468,[(297,'er',16.4),(320,'sehr',16.4),(363,'dünn.',17.0)]),
+                 (493,[(297,'er',16.4),(320,'eine',16.4),(364,'Brille.',17.0)]),
+                 (518,[(297,'er',16.4),(320,'einen',17.2),(376,'Bart.',16.4)]),
+                 (544,[(297,'er',16.4),(320,'und',16.4),(360,'seine',16.9),(412,'Freundin',17.3)]),
+                 (569,[(188,'nur Fahrräder.',17.7)]),   # scan ink 188-317
+                 (415,[(579,'er',16.4),(602,'kurze',16.8),(658,'Haare.',16.5)]),
+                 (468,[(660,'er',16.4),(683,'ein',16.4),(716,'bisschen',17.4),(797,'dick.',16.6)]),
+                 (493,[(660,'er',16.4),(682,'keine',16.9),(737,'Brille.',17.0)]),
+                 (518,[(660,'er',16.4),(683,'keinen',17.3),(750,'Bart.',16.4)]),
+                 (544,[(660,'er',16.4),(683,'und',16.4),(723,'seine',16.9),(774,'Frau',16.4),(820,'ein',16.4),(853,'Auto.',16.4)])]:
+    for x,txt,ws in pairs: t(x,ly,txt,s=ws)
 # field rules measured from scan ink (y = printed rule, x/w = rule extent)
 RULES1 = {'p54-1f0':(246,444,101,'waren'),'p54-1f1':(188,470,101,'war'),'p54-1h0':(551,471,101,'ist'),
  'p54-1f2':(188,496,102,'hatte'),'p54-1h1':(551,497,101,'hat'),
@@ -123,7 +130,7 @@ items.append({'k':'chk','g':'g1','x':950,'y':552})
 items.append({'k':'t','x':166,'y':641,'t':'','s':21.0,'c':'naFiraM','col':DARK,
   'segs':[{'t':'Ergänzen Sie '},{'t':'haben oder sein','i':1,'w':400},{'t':' im Präteritum.'}]})
 t(164,678,'Schau mal, hier sind Fotos von früher:',s=17.9)
-emit_line(687, breaks=[(195,247)], s=18.0)    # Das [hw waren] (a) mein Bruder...
+emit_line(687, breaks=[(195,247)], s=18.0, group_targets=[27,None])    # Das(fit to scan 28px) [hw waren] (a) mein Bruder...
 RULES2 = {'p54-2b':(164,729,122,'war'),'p54-2c':(405,729,129,'war'),'p54-2d':(814,730,129,'war'),
  'p54-2e':(335,755,129,'hatte'),'p54-2f':(705,756,129,'war'),'p54-2g':(599,781,128,'waren'),
  'p54-2h':(244,806,130,'hatten'),'p54-2i':(822,808,129,'war'),'p54-2j':(619,833,90,'waren')}   # all re-measured from scan rule ink
