@@ -96,10 +96,10 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  <div className="mText" style={{left:165,top:761,width:520}}><span className="mTr">▲</span><Words s="  Hallo Mike, wie geht's?"/></div>
  <div className="mText" style={{left:165,top:783,width:560}}><span className="mSq">■</span><Words s="  Gut, danke. Ich bin nächste Woche in München und möchte dich gern besuchen."/></div>
  <div className="mText mExample" style={{left:181,top:805,width:200}}>Hast du Zeit?</div>
- <div className="mText" style={{left:165,top:826,width:120}}><span className="mTr">▲</span><Words s="  Ja natürlich!"/></div>{f('u9-q1',275,821,555)}
+ <div className="mText" style={{left:165,top:826,width:120}}><span className="mTr">▲</span><Words s="  Ja natürlich!"/></div>{f('u9-q1',296,821,534)}
  <div className="mText" style={{left:165,top:848,width:300}}><span className="mSq">■</span><Words s="  Am Mittwoch, um 20:50 Uhr."/></div>
  <div className="mText" style={{left:165,top:868,width:16}}><span className="mTr">▲</span></div>{f('u9-q2',181,864,650)}
- <div className="mText" style={{left:165,top:890,width:275}}><span className="mSq">■</span><Words s="  Ja. Ich komme am Ostbahnhof an."/></div>{f('u9-q3',438,889,390)}
+ <div className="mText" style={{left:165,top:890,width:275}}><span className="mSq">■</span><Words s="  Ja. Ich komme am Ostbahnhof an."/></div>{f('u9-q3',444,889,384)}
  <div className="mText" style={{left:165,top:911,width:560}}><span className="mTr">▲</span><Words s="  Na klar, gern. Ich arbeite bis 20 Uhr. Dann hole ich dich ab."/></div>
  <div className="mText" style={{left:165,top:932,width:300}}><span className="mSq">■</span><Words s="  Danke, dann bis Mittwoch!"/></div>
  {check('u9',167,954)}
