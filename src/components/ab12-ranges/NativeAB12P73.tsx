@@ -4,12 +4,13 @@ const R1='KALDEVERGESSENFAGUERKENNENLÜTAGEFALLENEDERBEKOMMENZUTERVERSTEHEN';
 const R2='REDASBEZAHLENZUTAS';
 const FIXED=new Set([5,6,7,8,9,10,11,12,13]); // VERGESSEN printed example
 const EXPECT=[20,21,22,23,24,25,30,31,32,33,34,35,36,37,42,43,44,45,46,47,48,49,56,57,58,59,60,61,62,63,69,70,71,72,73,74,75,76].join(',');
-const gx=(i:number,p:number)=>Math.round(106+p*i);
+const C1=[111.5,121,130,138.5,148,157,166,175.5,184.5,193.5,201.5,209,217,227,236.5,245,254,264,273.5,282.5,292.5,301.5,311,322,332,342,351.5,360.5,370,378.5,387.5,397,405,412.5,422.5,430.5,438.5,448.5,458.5,467.5,476.5,485.5,495,503.5,512.5,520.5,532.5,545.5,556.5,566,575.5,585,594.5,603.5,612,620.5,630.5,639,647.5,655.5,664.5,673.5,684,693.5];
+const C2=[111,120.5,129.5,138.5,147.5,156,165,173,181.5,192.5,202.5,210.5,219.5,229,239,247,255.5,265.5];
 
 function P73(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,check,box,modTab,values,set}=h;const D='naDroid73';
  const marked=new Set((values['p73-2-mark']||'').split(',').filter(Boolean).map(Number));
  const toggle=(i:number)=>{if(FIXED.has(i))return;const s=new Set(marked);if(s.has(i))s.delete(i);else s.add(i);set('p73-2-mark',[...s].sort((a,b)=>a-b).join(','))};
- const gridRow=(txt:string,off:number,y:number,pitch:number)=><>{[...txt].map((ch,k)=>{const i=off+k;const fx=FIXED.has(i);return <button key={i} className={'naGridL73'+(fx?' fix':(marked.has(i)?' mrk':''))} style={{left:gx(k,pitch)-1,top:y,width:12,height:20,minWidth:0,minHeight:0,padding:0,lineHeight:'20px'}} aria-label={'2 Buchstabe '+(i+1)+' '+ch} onClick={()=>toggle(i)}>{ch}</button>})}</>;
+ const gridRow=(txt:string,off:number,y:number,C:number[])=><>{[...txt].map((ch,k)=>{const i=off+k;const fx=FIXED.has(i);const w=Math.min(12,(k>0?C[k]-C[k-1]:12),(k<C.length-1?C[k+1]-C[k]:12))-0.5;return <button key={i} className={'naGridL73'+(fx?' fix':(marked.has(i)?' mrk':''))} style={{left:C[k]-w/2,top:y,width:w,height:20,minWidth:0,minHeight:0,padding:0,lineHeight:'20px'}} aria-label={'2 Buchstabe '+(i+1)+' '+ch} onClick={()=>toggle(i)}>{ch}</button>})}</>;
  return <>
   {art('topbars',733,28,46,64)}
   {ln(73,59,584,25,'WIEDERHOLUNGSSTATION: GRAMMATIK',{cls:'naHdr73'})}
@@ -40,13 +41,13 @@ function P73(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,check,box,modTab
   {art('smiley',314,251,17,14)}
   {ln(129,269,62,13,'Viele Grüße',{cls:'naLetter73'})}
   {ln(129,285,32,13,'Tanja',{cls:'naLetter73'})}
-  {[[483,199,57],[228,213,57],[394,214,56],[458,238,57],[258,245,54],[175,262,57]].map(([x,y,w])=><div key={'u1'+x} className='naRule' style={{left:x,top:y,width:w,borderBottom:'1px solid #9aa4b5'}}/>)}
+  {[[483,199,57],[228,213,57],[394,214,56],[458,230,57],[258,245,54],[175,262,57]].map(([x,y,w])=><div key={'u1'+x} className='naRule' style={{left:x,top:y,width:w,borderBottom:'1px solid #9aa4b5'}}/>)}
   {[[332,445,108],[285,464,107],[282,484,130],[349,503,111],[337,523,123]].map(([x,y,w])=><div key={'u2'+x} className='naRule' style={{left:x,top:y,width:w,borderBottom:'1px solid #9aa4b5'}}/>)}
   {check('g1',600,252,{'p73-1b':'waren','p73-1c':'war','p73-1d':'hatten','p73-1e':'hatten','p73-1f':'war','p73-1g':'hatten'})}
   {box('2',94,330,'#c80e04')}  {rn(125,332,600,15,[{t:'Markieren Sie die Verben und ergänzen Sie dann die Verben in der richtigen Form.',b:1}],{fam:'fira'})}
   <div className='naGridBand73'/>
-  {gridRow(R1,0,356,9.23)}
-  {gridRow(R2,64,376,9.03)}
+  {gridRow(R1,0,355,C1)}
+  {gridRow(R2,64,374,C2)}
   {check('g2',712,382,{'p73-2-mark':EXPECT,'p73-2b':'gefallen','p73-2c':'bekommen','p73-2d':'bezahlt','p73-2e':'erkannt','p73-2f':'verstanden'})}
   {ln(108,409,8,13,'a',{cls:D})}{ln(126,409,283,13,'Entschuldigung! Ich habe den Termin total',{cls:D})}
   {art('vergessen-hand',414,410,54,18)}
@@ -66,7 +67,7 @@ function P73(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,check,box,modTab
   {field('p73-3b',487,586,73,'3 b','naFieldBlank')}
   {ln(108,633,8,13,'c',{cls:D})}<div className='naNoteBand73' style={{left:138,top:627,width:562,height:23}}/>{art('n3c',141,629,444,19)}
   {field('p73-3c',385,625,93,'3 c','naFieldBlank')}
-  {ln(108,653,8,13,'d',{cls:D})}<div className='naNoteBand73' style={{left:138,top:646,width:562,height:26}}/>{art('n3d',141,648,339,23)}
+  {ln(108,653,8,13,'d',{cls:D})}<div className='naNoteBand73' style={{left:138,top:646,width:562,height:26}}/>{art('n3d',141,647,361,27)}
   {field('p73-3d',398,646,72,'3 d','naFieldBlank')}
   {ln(108,672,8,13,'e',{cls:D})}<div className='naNoteBand73' style={{left:138,top:661,width:562,height:28}}/>{art('n3e',142,663,560,25)}
   {field('p73-3e1',322,665,133,'3 e 1','naFieldBlank')}{field('p73-3e2',538,665,102,'3 e 2','naFieldBlank')}
@@ -86,7 +87,7 @@ function P73(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,check,box,modTab
   {ln(581,749,4,16,'|',{cls:'naPipe73'})}
   {ln(589,750,72,13,'Musik hören',{c:'#3f4c75',cls:'naStrip73'})}
   {art('flug-hand',106,776,227,22)}
-  {box('5',94,827,'#c80e04')}  {rn(125,829,300,15,[{t:'Schreiben Sie Sätze mit ',b:1},{t:'bitte',b:1,i:1},{t:' im Imperativ.',b:1}],{fam:'fira'})}
+  {box('5',94,827,'#c80e04')}  {rn(125,829,300,15,[{t:'Schreiben Sie Sätze mit ',b:1},{t:'bitte',i:1},{t:' im Imperativ.',b:1}],{fam:'fira'})}
   <div className='naBand73'/>
   {art('icon1',179,847,29,39)}
   {art('icons3',376,847,57,39)}
