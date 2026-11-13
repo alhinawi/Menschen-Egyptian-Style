@@ -10,13 +10,13 @@ const server=http.createServer((q,r)=>{let f=path.join(root,'dist',decodeURIComp
  const b=await chromium.launch({executablePath:'/usr/bin/google-chrome-stable',args:['--no-sandbox']});
  const errors=[];
  try{
-  let p=await b.newPage({viewport:{width:1150,height:1700}});
+  let p=await b.newPage({viewport:{width:1150,height:1701}});
   p.on('pageerror',e=>errors.push(e.message));
   await p.goto(`http://127.0.0.1:5234/ab-a12-l17-20.html#${page}`);
   await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true',{timeout:30000});
   const h=p.locator(`[data-native-ab12="${page}"]`);
   await h.waitFor({timeout:15000});
-  await p.addStyleTag({content:'.nativeAB12{width:1072px!important;height:1500px!important}html,body,.page,main,#viewport,#root,[class*=reader]{max-width:none!important}.stf__parent,.stf__wrapper,.stf__item,section.page{width:1072px!important;height:1500px!important;min-width:1072px!important;overflow:visible!important}'}).catch(()=>{});
+  await p.addStyleTag({content:'.nativeAB12{width:1072px!important;height:1500px!important}.naCanvas{transform:none!important;left:0!important;top:0!important}html,body,.page,main,#viewport,#root,[class*=reader]{max-width:none!important}.stf__parent,.stf__wrapper,.stf__item,section.page{width:1072px!important;height:1500px!important;min-width:1072px!important;overflow:visible!important}'}).catch(()=>{});
   await p.waitForTimeout(900);
   await h.locator('.naCanvas').screenshot({path:out+'-full.png'});
   await p.close();
