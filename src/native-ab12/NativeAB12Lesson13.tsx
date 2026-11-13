@@ -644,5 +644,80 @@ export function NativeAB12Lesson13({page}:{page:string}){
   <div className="naModul10" style={{left:0,top:1394,width:72,height:23,lineHeight:'23px',background:'#ded6b0',fontWeight:400}}>Modul 5</div>
   <div className="naText naFooter naNw" style={{left:78,top:1396,width:160,whiteSpace:'pre'}}><b>{'14  |  '}</b><span className="naFz14">vierzehn</span></div>
  </>}
+ {page==='15'&&<>
+  {art('hdr-lesen',118,86,275,30)}
+  {art('hdr-rule1',396,106,589,8)}
+  {art('tab14',988,36,83,78)}
+  {badge9('1',117,163)}
+  {text(164,162,745,'Lesen Sie die E-Mail und notieren Sie: Was für eine Wohnung sucht Stefan?','naYT naNw')}
+  {art('hand-wohnung',182,212,114,34)}
+  {art('hand-groesse',182,236,67,29)}{field('15-1a',265,230,148,'Größe')}{art('h-zimmer',415,236,66,22)}
+  {art('hand-miete',182,262,64,38)}{field('15-1b',265,256,148,'Miete')}{art('h-euro',414,262,25,22)}
+  {art('hand-abwann',182,288,78,25)}{field('15-1c',265,281,148,'Ab wann')}
+  {check('15-1',1010,428,{'15-1a':'3-4|3 bis 4','15-1b':'1000','15-1c':'1. April'})}
+  {text(550,223,462,'Liebe Leute! Hilfe!!!','naMailS15 naNw')}
+  {text(550,243,462,'Wir suchen dringend eine 3 bis 4-Zimmer-Wohnung (ca. 100 m²)','naMailS15 naNw')}
+  {text(550,268,462,'ab 1. April. Die Wohnung sollte maximal 1000 Euro inkl. Neben-','naMailS15 naNw')}
+  {text(550,291,462,'kosten kosten. Hat jemand einen Tipp? Dann meldet Euch doch','naMailS15 naNw')}
+  {text(550,319,462,'bitte so schnell wie möglich.','naMailS15 naNw')}
+  {text(550,342,300,'Grüße von Stefan','naMailS15 naNw')}
+  {art('tipp',697,345,310,78)}
+  {badge9('2',120,406)}
+  {text(164,404,320,'Was antworten Stefans Freunde?','naYT naNw')}
+  {text(130,445,16,'a','naLet15')}
+  {text(193,444,745,'Lesen Sie und markieren Sie die wichtigen Informationen. Ergänzen Sie dann die Tabelle.','naInstrB15 naNw')}
+  {art('note1',149,466,452,185)}
+  {art('sms',629,466,287,171)}
+  {art('circ3',238,623,33,33)}
+  {text(276,655,702,'Lieber Stefan,','naChris15 naNw')}
+  {text(276,683,702,'ich habe den ultimativen Tipp für Dich! Die Nachbarn von meiner Schwester ziehen nach England','naChris15 naNw')}
+  {text(276,705,702,'und suchen dringend einen Nachmieter zum 1. April. Tolle 4-Zimmer-Wohnung mit Südbalkon.','naChris15 naNw')}
+  {text(276,731,702,'Die Wohnung kostet nur 700 € + Nebenkosten. Ruf meine Schwester am besten heute noch an.','naChris15 naNw')}
+  {text(276,750,200,'LG Chris','naChris15 naNw')}
+  <div className="naBand15" style={{left:164,top:806,width:844,height:31}}/>
+  <div className="naLine15" style={{left:163,top:836,width:845,height:1}}/><div className="naLine15" style={{left:163,top:865,width:845,height:1}}/><div className="naLine15" style={{left:163,top:895,width:845,height:1}}/><div className="naLine15" style={{left:163,top:924,width:845,height:1}}/>
+  <div className="naLine15" style={{left:163,top:806,width:1,height:119}}/><div className="naLine15" style={{left:355,top:806,width:1,height:119}}/><div className="naLine15" style={{left:601,top:806,width:1,height:119}}/><div className="naLine15" style={{left:796,top:806,width:1,height:119}}/><div className="naLine15" style={{left:1007,top:806,width:1,height:119}}/>
+  {text(362,810,240,'Wohnung 1 (Notizzettel)','naTh15 naNw')}{text(609,810,190,'Wohnung 2 (SMS)','naTh15 naNw')}{text(804,810,208,'Wohnung 3 (E-Mail)','naTh15 naNw')}
+  {text(171,840,180,'Größe?','naTd15 naNw')}{text(171,870,180,'Miete pro Monat?','naTd15 naNw')}{text(171,900,180,'Ab wann?','naTd15 naNw')}
+  {art('slash',464,869,16,26)}
+  {text(131,946,16,'b','naLet15')}
+  {text(163,947,450,'Welche Wohnung passt am besten? Kreuzen Sie an.','naInstrB15 naNw')}
+  {text(163,986,95,'Wohnung','naMail15 naNw')}
+  {dot('15-2b','1',261,989,'Wohnung 1')}{text(285,986,14,'1','naMail15 naNw')}
+  {dot('15-2b','2',316,989,'Wohnung 2')}{text(342,986,14,'2','naMail15 naNw')}
+  {dot('15-2b','3',375,989,'Wohnung 3')}{text(400,986,14,'3','naMail15 naNw')}
+  {check('15-2b',1010,986,{'15-2b':'3'})}
+  {art('hdr-aus',118,1057,602,32)}
+  {art('hdr-rule2',722,1079,253,6)}
+  {badge9('1',121,1129)}
+  {text(164,1127,300,'Ergänzen Sie den Plural.','naYT naNw')}
+  <div className="naBand15" style={{left:164,top:1163,width:244,height:30}}/><div className="naBand15" style={{left:415,top:1163,width:238,height:30}}/>
+  <div className="naLine15" style={{left:163,top:1194,width:492,height:1}}/><div className="naLine15" style={{left:163,top:1224,width:492,height:1}}/><div className="naLine15" style={{left:163,top:1253,width:492,height:1}}/><div className="naLine15" style={{left:163,top:1278,width:492,height:1}}/>
+  <div className="naLine15" style={{left:163,top:1163,width:1,height:115}}/><div className="naLine15" style={{left:269,top:1163,width:1,height:115}}/><div className="naLine15" style={{left:409,top:1163,width:1,height:115}}/><div className="naLine15" style={{left:415,top:1163,width:1,height:115}}/><div className="naLine15" style={{left:514,top:1163,width:1,height:115}}/><div className="naLine15" style={{left:654,top:1163,width:1,height:115}}/>
+  <div className="naText naTh15b naNw" style={{left:171,top:1172,width:70}}>a <span className="naArr15"></span> ä</div><div className="naText naTh15b naNw" style={{left:424,top:1172,width:84}}>au <span className="naArr15"></span> äu</div>
+  {text(171,1201,95,'das Bad','naTd15 naNw')}{text(277,1201,30,'die','naTd15 naNw')}{field('15-a1-bad',305,1191,95,'Plural Bad')}
+  {text(423,1201,90,'das Haus','naTd15 naNw')}{text(522,1201,30,'die','naTd15 naNw')}{field('15-a1-haus',555,1191,95,'Plural Haus')}
+  {text(171,1231,95,'der Wald','naTd15 naNw')}{text(277,1231,30,'die','naTd15 naNw')}{field('15-a1-wald',305,1221,95,'Plural Wald')}
+  {text(423,1231,90,'der Baum','naTd15 naNw')}{text(522,1231,30,'die','naTd15 naNw')}{field('15-a1-baum',555,1221,95,'Plural Baum')}
+  {text(171,1260,95,'der Garten','naTd15 naNw')}{text(277,1260,30,'die','naTd15 naNw')}{field('15-a1-garten',305,1250,95,'Plural Garten')}
+  {text(423,1260,90,'der Raum','naTd15 naNw')}{text(522,1260,30,'die','naTd15 naNw')}{field('15-a1-raum',555,1250,95,'Plural Raum')}
+  {check('15-a1',670,1255,{'15-a1-bad':'Bäder','15-a1-wald':'Wälder','15-a1-garten':'Gärten','15-a1-haus':'Häuser','15-a1-baum':'Bäume','15-a1-raum':'Räume'})}
+  {audio('assets/ab-a12-cd2-track08.mp3',62,1327,'2 08')}
+  {badge9('2',121,1322)}
+  {text(165,1320,665,'Hören Sie die Wörter aus 1 und sprechen Sie nach.','naYT naNw')}
+  {audio('assets/ab-a12-cd2-track09.mp3',672,1134,'2 09')}
+  {badge9('3',720,1128)}
+  {text(766,1127,245,'Hören Sie das Gedicht','naYT naNw')}
+  {text(766,1153,245,'und sprechen Sie dann.','naYT naNw')}
+  {text(766,1192,160,'Mein Traumhaus','naMail15 naNw')}
+  {text(766,1218,160,'viele Räume,','naMail15 naNw')}
+  {text(766,1246,160,'zwei Bäder','naMail15 naNw')}
+  {text(766,1271,160,'und Aufzug,','naMail15 naNw')}
+  {text(766,1297,160,'im Garten','naMail15 naNw')}
+  {text(766,1320,160,'Bäume.','naMail15 naNw')}
+  {text(766,1347,160,'Alles ganz neu!','naMail15 naNw')}
+  <div className="naModul10" style={{left:1010,top:1389,width:61,height:17,lineHeight:'17px',background:'#dfd6af',fontWeight:400}}>Modul 5</div>
+  <div className="naText naFooter naNw" style={{left:870,top:1388,width:127,whiteSpace:'pre'}}><span className="naFz15">{'fünfzehn  |  15'}</span></div>
+ </>}
  </div><audio ref={player} className="naPlayer"/></div>;
 }
