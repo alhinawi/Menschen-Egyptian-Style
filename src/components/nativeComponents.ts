@@ -8,6 +8,7 @@ import {loadScanPages, scanData} from '../scan-data/registry';
 // legacy adapters bind their controls in the first layout effect.
 const loaders = {
   NativeAB12P31to46: () => import('../native-ab12/NativeAB12P31to46').then(m => m.NativeAB12P31to46),
+  NativeAB12P80: () => import('../native-ab12/NativeAB12P80').then(m => m.NativeAB12P80),
   NativeAB12L23: () => import('../native-ab12-l2324/NativeAB12L23').then(m => m.NativeAB12L23),
   NativeAB12L24: () => import('../native-ab12-l2324/NativeAB12L24').then(m => m.NativeAB12L24),
   NativeAB11Test88: () => import('../native-ab11/NativeAB11Test88').then(m => m.NativeAB11Test88),
@@ -79,6 +80,7 @@ function select(tag: string, attrs: MarkupAttrs) {
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['60','61'].includes(String(attrs.page)))return pick('NativeAB11Lesson8Start',{page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a12' && rangePages.has(String(attrs.page)))return pick('NativeAB12Range',{page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a12' && Number(attrs.page)>=31 && Number(attrs.page)<=46 && !rangePages.has(String(attrs.page)))return pick('NativeAB12P31to46',{page:String(attrs.page)});
+  if(tag === 'HybridScan' && attrs.book==='ab-a12' && String(attrs.page)==='80')return pick('NativeAB12P80',{page:'80'});
   if(tag === 'NativeAB12L23')return pick('NativeAB12L23',{page:attrs.page});
   if(tag === 'NativeAB12L24')return pick('NativeAB12L24',{page:attrs.page});
   if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['96','97','98','99','100','101','102'].includes(String(attrs.page)))return pick('NativeAB12L24',{page:String(attrs.page)});
