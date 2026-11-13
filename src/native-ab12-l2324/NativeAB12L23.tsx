@@ -286,11 +286,11 @@ export function NativeAB12L23({page}:{page:string}){
   <div className="naBank" style={{left:111,top:153,width:457,height:19}}/>
   <div className="naBank88" style={{left:115,top:155}}><Words text="Wolken | scheint | Sturm | neblig | Grad | "/><span className="naStrikeB"><Words text="Gewitter"/></span><Words text=" | regnet | Himmel | warm"/></div>
   {text(111,184,16,'a','naBookSerif naBk88')}{text(130,183,155,'In Frankfurt gibt es ein','naBookSerif naBk88 naNw',14.2)}
-  {art('hand1a',288,185,58,13)}{ruleT(290,198,54)}{text(350,183,55,'und es','naBookSerif naBk88 naNw',13.4)}{field('88-1a',396,178,97,'1 a')}{text(495,183,10,'.','naBookSerif naBk88 naNw')}
-  {text(111,204,16,'b','naBookSerif naBk88')}{text(130,203,55,'In Köln','naBookSerif naBk88 naNw',14)}{field('88-1b1',183,198,96,'1 b1')}{text(284,203,115,'die Sonne, es ist','naBookSerif naBk88 naNw',14)}{field('88-1b2',395,198,96,'1 b2')}{text(493,203,10,'.','naBookSerif naBk88 naNw')}
-  {text(111,223,16,'c','naBookSerif naBk88')}{text(130,222,125,'In Dresden ist der','naBookSerif naBk88 naNw',14)}{field('88-1c1',252,217,97,'1 c1')}{text(354,222,122,'blau, es gibt keine','naBookSerif naBk88 naNw',13.9)}{field('88-1c2',477,217,97,'1 c2')}{text(576,221,10,'.','naBookSerif naBk88 naNw')}
-  {text(111,243,16,'d','naBookSerif naBk88')}{text(130,242,330,'In München ist es sehr windig, es gibt bald einen','naBookSerif naBk88 naNw',14.1)}{field('88-1d',460,237,97,'1 d')}{text(558,241,10,'.','naBookSerif naBk88 naNw')}
-  {text(111,262,16,'e','naBookSerif naBk88')}{text(130,262,115,'In Hamburg ist es','naBookSerif naBk88 naNw',13.9)}{field('88-1e1',251,256,98,'1 e1')}{text(349,262,90,', es hat nur 3','naBookSerif naBk88 naNw',13.9)}{field('88-1e2',439,256,96,'1 e2')}{text(537,261,10,'.','naBookSerif naBk88 naNw')}
+  {art('hand1a',288,185,58,13)}{ruleT(290,198,54)}{text(350,183,55,'und es','naBookSerif naBk88 naNw',13.4)}{field('88-1a',396,178,97,'1 a')}{text(495,183,10,'.','naBookSerif naBk88 naNw naPrd')}
+  {text(111,204,16,'b','naBookSerif naBk88')}{text(130,203,55,'In Köln','naBookSerif naBk88 naNw',14)}{field('88-1b1',183,198,96,'1 b1')}{text(284,203,115,'die Sonne, es ist','naBookSerif naBk88 naNw',14)}{field('88-1b2',395,198,96,'1 b2')}{text(493,203,10,'.','naBookSerif naBk88 naNw naPrd')}
+  {text(111,223,16,'c','naBookSerif naBk88')}{text(130,222,125,'In Dresden ist der','naBookSerif naBk88 naNw',14)}{field('88-1c1',252,217,97,'1 c1')}{text(354,222,122,'blau, es gibt keine','naBookSerif naBk88 naNw',13.9)}{field('88-1c2',477,217,97,'1 c2')}{text(576,221,10,'.','naBookSerif naBk88 naNw naPrd')}
+  {text(111,243,16,'d','naBookSerif naBk88')}{text(130,242,330,'In München ist es sehr windig, es gibt bald einen','naBookSerif naBk88 naNw',14.1)}{field('88-1d',460,237,97,'1 d')}{text(558,241,10,'.','naBookSerif naBk88 naNw naPrd')}
+  {text(111,262,16,'e','naBookSerif naBk88')}{text(130,262,115,'In Hamburg ist es','naBookSerif naBk88 naNw',13.9)}{field('88-1e1',251,256,98,'1 e1')}{text(349,262,90,', es hat nur 3','naBookSerif naBk88 naNw',13.9)}{field('88-1e2',439,256,96,'1 e2')}{text(537,261,10,'.','naBookSerif naBk88 naNw naPrd')}
   <div className="naPts" style={{left:640,top:262}}>_ / 8 Punkte</div>
   {check('88-1',640,282,{'88-1a':'regnet','88-1b1':'scheint','88-1b2':'warm','88-1c1':'Himmel','88-1c2':'Wolken','88-1d':'Sturm','88-1e1':'neblig','88-1e2':'Grad'})}
   <div className="naSideT" style={{left:55,top:343}}>STRUKTUREN</div>
@@ -298,23 +298,23 @@ export function NativeAB12L23({page}:{page:string}){
   <div className="naBank" style={{left:111,top:338,width:255,height:18}}/>
   <div className="naBank88" style={{left:115,top:340}}><Words text="kosten- | wolken- | arbeits- | "/><span className="naStrikeB"><Words text="fehler-"/></span><Words text=" | farb-"/></div>
   {text(111,369,16,'a','naBookSerif naBk88')}{text(130,369,82,'Mein Test ist','naBookSerif naBk88 naNw',14)}
-  {art('hand2a',216,369,51,18)}{ruleT(226,394,53)}{text(266,369,10,'.','naBookSerif naBk88 naNw')}{text(274,369,240,'Ich habe keinen Fehler gemacht!','naBookSerif naBk88 naNw',14)}
-  {text(111,388,16,'b','naBookSerif naBk88')}{text(130,387,468,'Man kann im Zentrum parken, aber es ist teuer. Hinter der Post ist es','naBookSerif naBk88 naNw',14)}{field('88-2b',596,383,124,'2 b')}{text(722,387,10,'.','naBookSerif naBk88 naNw')}
-  {text(111,409,16,'c','naBookSerif naBk88')}{text(130,408,245,'Das Wetter ist schön, der Himmel ist','naBookSerif naBk88 naNw',14)}{field('88-2c',376,402,116,'2 c')}{text(494,406,10,'.','naBookSerif naBk88 naNw')}
-  {text(111,428,16,'d','naBookSerif naBk88')}{text(130,427,278,'Es regnet seit Stunden. Alles ist grau und','naBookSerif naBk88 naNw',14.1)}{field('88-2d',407,421,116,'2 d')}{text(525,425,10,'.','naBookSerif naBk88 naNw')}
-  {text(111,446,16,'e','naBookSerif naBk88')}{text(129,445,266,'Thomas hat keinen Job mehr, er ist jetzt','naBookSerif naBk88 naNw',14.1)}{field('88-2e',400,441,116,'2 e')}{text(518,444,10,'.','naBookSerif naBk88 naNw')}
+  {art('hand2a',216,369,51,18)}{ruleT(226,394,53)}{text(266,369,10,'.','naBookSerif naBk88 naNw naPrd')}{text(274,369,240,'Ich habe keinen Fehler gemacht!','naBookSerif naBk88 naNw',14)}
+  {text(111,388,16,'b','naBookSerif naBk88')}{text(130,387,468,'Man kann im Zentrum parken, aber es ist teuer. Hinter der Post ist es','naBookSerif naBk88 naNw',14)}{field('88-2b',596,383,124,'2 b')}{text(722,387,10,'.','naBookSerif naBk88 naNw naPrd')}
+  {text(111,409,16,'c','naBookSerif naBk88')}{text(130,408,245,'Das Wetter ist schön, der Himmel ist','naBookSerif naBk88 naNw',14)}{field('88-2c',376,402,116,'2 c')}{text(494,406,10,'.','naBookSerif naBk88 naNw naPrd')}
+  {text(111,428,16,'d','naBookSerif naBk88')}{text(130,427,278,'Es regnet seit Stunden. Alles ist grau und','naBookSerif naBk88 naNw',14.1)}{field('88-2d',407,421,116,'2 d')}{text(525,425,10,'.','naBookSerif naBk88 naNw naPrd')}
+  {text(111,446,16,'e','naBookSerif naBk88')}{text(129,445,266,'Thomas hat keinen Job mehr, er ist jetzt','naBookSerif naBk88 naNw',14.1)}{field('88-2e',400,441,116,'2 e')}{text(518,444,10,'.','naBookSerif naBk88 naNw naPrd')}
   <div className="naPts" style={{left:640,top:447}}>_ / 4 Punkte</div>
   {check('88-2',640,467,{'88-2b':'kostenlos','88-2c':'wolkenlos','88-2d':'farblos','88-2e':'arbeitslos'})}
   <div className="naSideT" style={{left:55,top:527}}>STRUKTUREN</div>
   {title('3',68,493,640,'Schreiben Sie Sätze mit denn.','naRB naNw naS15')}
   {text(111,524,16,'a','naBookSerif naBk88')}{text(131,524,195,'Ich gehe heute zum Zahnarzt,','naBookSerif naBk88 naNw',14)}
-  {art('hand3a',330,525,136,14)}{ruleT(333,539,130)}{text(465,524,10,'.','naBookSerif naBk88 naNw')}
+  {art('hand3a',330,525,136,14)}{ruleT(333,539,130)}{text(465,524,10,'.','naBookSerif naBk88 naNw naPrd')}
   {text(130,544,150,'(ich / Zahnweh haben)','naCue88',13.5)}
-  {text(111,564,16,'b','naBookSerif naBk88')}{text(130,563,325,'Wir fahren am Samstag zu den Großeltern, denn','naBookSerif naBk88 naNw',13.8)}{field('88-3b',456,558,264,'3 b')}{text(720,562,10,'.','naBookSerif naBk88 naNw')}
+  {text(111,564,16,'b','naBookSerif naBk88')}{text(130,563,325,'Wir fahren am Samstag zu den Großeltern, denn','naBookSerif naBk88 naNw',13.8)}{field('88-3b',456,558,264,'3 b')}{text(720,562,10,'.','naBookSerif naBk88 naNw naPrd')}
   {text(130,583,170,'(unsere Oma / krank sein)','naCue88',13.3)}
-  {text(111,602,16,'c','naBookSerif naBk88')}{text(129,602,215,'Wir müssen zu Fuß gehen, denn','naBookSerif naBk88 naNw',13.8)}{field('88-3c',346,597,374,'3 c')}{text(722,600,10,'.','naBookSerif naBk88 naNw')}
+  {text(111,602,16,'c','naBookSerif naBk88')}{text(129,602,215,'Wir müssen zu Fuß gehen, denn','naBookSerif naBk88 naNw',13.8)}{field('88-3c',346,597,374,'3 c')}{text(722,600,10,'.','naBookSerif naBk88 naNw naPrd')}
   {text(130,622,185,'(der Aufzug / nicht funktionieren)','naCue88',13.7)}
-  {text(111,641,16,'d','naBookSerif naBk88')}{text(130,640,175,'Niko macht ein Fest, denn','naBookSerif naBk88 naNw',14.1)}{field('88-3d',308,636,412,'3 d')}{text(720,639,10,'.','naBookSerif naBk88 naNw')}
+  {text(111,641,16,'d','naBookSerif naBk88')}{text(130,640,175,'Niko macht ein Fest, denn','naBookSerif naBk88 naNw',14.1)}{field('88-3d',308,636,412,'3 d')}{text(720,639,10,'.','naBookSerif naBk88 naNw naPrd')}
   {text(130,661,195,'(er / Wohnung gefunden haben)','naCue88',13.4)}
   <div className="naPts" style={{left:640,top:662}}>_ / 3 Punkte</div>
   {check('88-3',640,682,{'88-3b':'denn unsere Oma ist krank|unsere Oma ist krank','88-3c':'denn der Aufzug funktioniert nicht|der Aufzug funktioniert nicht','88-3d':'denn er hat eine neue Wohnung gefunden|er hat eine neue Wohnung gefunden'})}
@@ -323,18 +323,18 @@ export function NativeAB12L23({page}:{page:string}){
   <div className="naBank" style={{left:111,top:737,width:596,height:42}}/>
   <div className="naBank88b" style={{left:115,top:739}}><Words text="ich arbeite am Wochenende | der Schnee ist traumhaft | ich backe gern | deine Partys sind immer"/></div>
   <div className="naBank88b" style={{left:115,top:759,fontSize:13.5}}><Words text="lustig | ich schreibe am Montag eine Prüfung | ich habe Geburtstag"/></div>
-  {text(112,786,300,'Hallo, ich mache am Freitag eine Party, denn','naBookSerif naBk88 naNw',14)}{field('88-4a',415,782,305,'4 a')}{text(721,785,10,'.','naBookSerif naBk88 naNw')}
+  {text(112,786,300,'Hallo, ich mache am Freitag eine Party, denn','naBookSerif naBk88 naNw',14)}{field('88-4a',415,782,305,'4 a')}{text(721,785,10,'.','naBookSerif naBk88 naNw naPrd')}
   {text(112,807,140,'Könnt ihr kommen?','naBookSerif naBk88 naNw',14)}
   <div className="naBltSq" style={{left:110,top:831,background:'#053594'}}/>
-  {text(130,826,190,'Klar, ich komme gern, denn','naBookSerif naBk88 naNw',14)}{field('88-4b',318,821,402,'4 b')}{text(721,823,10,'.','naBookSerif naBk88 naNw')}
+  {text(130,826,190,'Klar, ich komme gern, denn','naBookSerif naBk88 naNw',14)}{field('88-4b',318,821,402,'4 b')}{text(721,823,10,'.','naBookSerif naBk88 naNw naPrd')}
   <div className="naBltTr" style={{left:111,top:851,borderBottomColor:'#20ac4f'}}/>
-  {text(130,844,265,'Leider nein. Ich muss viel lernen, denn','naBookSerif naBk88 naNw',14)}{field('88-4c',395,840,324,'4 c')}{text(721,842,10,'.','naBookSerif naBk88 naNw')}
+  {text(130,844,265,'Leider nein. Ich muss viel lernen, denn','naBookSerif naBk88 naNw',14)}{field('88-4c',395,840,324,'4 c')}{text(721,842,10,'.','naBookSerif naBk88 naNw naPrd')}
   <div className="naBltCi" style={{left:111,top:870,background:'#a40265'}}/>
   {text(130,865,105,'Nur kurz, denn','naBookSerif naBk88 naNw',14)}{field('88-4d',236,860,229,'4 d')}{text(471,865,270,'und muss am Samstag früh aufstehen.','naBookSerif naBk88 naNw',14)}
   <div className="naBltTr" style={{left:111,top:890,borderBottomColor:'#f7ae0a'}}/>
-  {text(129,883,300,'Tolle Idee. Ich bringe zwei Kuchen mit, denn','naBookSerif naBk88 naNw',14)}{field('88-4e',432,879,287,'4 e')}{text(721,881,10,'.','naBookSerif naBk88 naNw')}
+  {text(129,883,300,'Tolle Idee. Ich bringe zwei Kuchen mit, denn','naBookSerif naBk88 naNw',14)}{field('88-4e',432,879,287,'4 e')}{text(721,881,10,'.','naBookSerif naBk88 naNw naPrd')}
   <div className="naBltSq" style={{left:110,top:909,background:'#df0702'}}/>
-  {text(130,903,345,'Ich weiß nicht. Vielleicht gehe ich Ski fahren, denn','naBookSerif naBk88 naNw',14.2)}{field('88-4f',478,899,242,'4 f')}{text(721,902,10,'.','naBookSerif naBk88 naNw')}
+  {text(130,903,345,'Ich weiß nicht. Vielleicht gehe ich Ski fahren, denn','naBookSerif naBk88 naNw',14.2)}{field('88-4f',478,899,242,'4 f')}{text(721,902,10,'.','naBookSerif naBk88 naNw naPrd')}
   <div className="naPts" style={{left:640,top:928}}>_ / 6 Punkte</div>
   {check('88-4',640,950,{'88-4a':'ich habe Geburtstag','88-4b':'deine Partys sind immer lustig','88-4c':'ich schreibe am Montag eine Prüfung','88-4d':'ich arbeite am Wochenende','88-4e':'ich backe gern','88-4f':'der Schnee ist traumhaft'})}
   <div className="naScore" style={{left:205,top:932,width:373,height:106}}/>
