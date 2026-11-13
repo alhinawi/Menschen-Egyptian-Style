@@ -2,7 +2,7 @@ import {useEffect,useRef,useState} from 'react';
 import {createPortal} from 'react-dom';
 import './audio-marker-buttons.css';
 
-type Track={el:HTMLElement;label:string;track:string;y:number;page:string};
+type Track={el:HTMLElement;label:string;track:string;y:number;cx:number;page:string};
 type Marker={x:number;y:number;tracks:Track[]};
 export const audioMarkerSelector='.hybridAudio,.nativeAudioMarker,.nkbListen,.nkAudio,.npListen,.nabListen,.mListen,.listen';
 const Play=()=> <svg width="16" height="16" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 3 17 10 6 17Z" fill="currentColor"/></svg>;
@@ -51,7 +51,7 @@ export function AudioMarkerButtons(){
     const label=el.getAttribute('aria-label')||el.title||el.textContent?.trim()||'Originalaudio';
     const source=el.dataset.audioSrc||el.dataset.src||'';
     const track=source.match(/track(\d+)/)?.[1]||label.match(/(?:Originalaudio|Audio)\s*(?:\d\s+)?(\d{1,3})/i)?.[1]||el.textContent?.match(/\d+/g)?.pop()||'';
-    tracks.push({el,label,track,y:r.top+sy+r.height/2-22,page:page.dataset.page||''});
+    tracks.push({el,label,track,y:r.top+sy+r.height/2-22,cx:r.left+sx+r.width/2-22,page:page.dataset.page||''});
    }
    tracks.sort((a,b)=>a.y-b.y);
    const out:Marker[]=[];
@@ -59,34 +59,15 @@ export function AudioMarkerButtons(){
     const last=out[out.length-1];
     // One margin button for nearby tracks. Never push a button onto another task.
     if(last&&t.y-last.tracks[last.tracks.length-1].y<46){last.tracks.push(t);continue}
-    const p=t.el.closest('.page')!.getBoundingClientRect();
-    out.push({x:Math.max(2,p.left+sx+3),y:t.y,tracks:[t]});
+    // Pin the circle to its printed play marker (source button centre), so it
+    // keeps the same anchor at every zoom level instead of the page margin.
+    // Only when the anchor itself sits outside the viewport does the circle
+    // slide to the nearest visible edge.
+    const minX=sx+2,maxX=sx+window.innerWidth-46;
+    out.push({x:Math.min(Math.max(t.cx,minX),Math.max(minX,maxX)),y:t.y,tracks:[t]});
    }
-   // Search the nearest clear spot in the outer margin. Glyph rectangles include
-   // task numbers, not just exercise prose; fields and checking buttons count too.
-   const obstacles=(currentPage?audioTextObstacles(currentPage):[]).map(o=>({left:o.left+sx,right:o.right+sx,top:o.top+sy,bottom:o.bottom+sy}));
-   const placed:Obstacle[]=[];
-   for(const m of out){
-    const origin=m.y;const pr=m.tracks[0].el.closest('.page')!.getBoundingClientRect();
-    const pageLeft=pr.left+sx,topBound=pr.top+sy+2,bottomBound=pr.bottom+sy-2;
-    const xs=[m.x,Math.max(0,m.x-3),...(pageLeft>=48?[pageLeft-46]:[])];
-    let found=false;
-    for(let distance=0;distance<=120&&!found;distance+=2)for(const dy of distance?[ -distance,distance ]:[0]){
-     for(const x of xs){const y=origin+dy;if(y<topBound||y+44>bottomBound)continue;
-      if([...obstacles,...placed].some(r=>intersects(x,y,r)))continue;
-      m.x=x;m.y=y;found=true;break;
-     }if(found)break;
-    }
-    if(!found){
-     const x=pr.right+sx-46;
-     for(let distance=0;distance<=120&&!found;distance+=2)for(const dy of distance?[-distance,distance]:[0]){
-      const y=origin+dy;if(y<topBound||y+44>bottomBound)continue;
-      if([...obstacles,...placed].some(r=>intersects(x,y,r)))continue;
-      m.x=x;m.y=y;found=true;break;
-     }
-    }
-    placed.push({left:m.x-2,right:m.x+46,top:m.y-2,bottom:m.y+46});
-   }
+   // Pinned means pinned: the circle stays on its printed marker at every
+   // zoom level; nothing displaces it onto neighbouring art or text.
    const sig=out.map(m=>[m.x.toFixed(1),m.y.toFixed(1),...m.tracks.map(t=>t.page+t.label+t.track)]).join('|');
    if(sig!==previous){previous=sig;setMarkers(out)}
   };
