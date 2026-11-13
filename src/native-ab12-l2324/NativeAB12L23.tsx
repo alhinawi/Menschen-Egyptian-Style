@@ -5,6 +5,7 @@ export function NativeAB12L23({page}:{page:string}){
  const c=useNativeCanvas(page);
  const {text,art,field,rule,ruleT,dot,check,title,kb,hand,audio}=c;const set=c.set;
  const ruleS=(x0:number,y0:number,x1:number,y1:number)=>{const dx=x1-x0,dy=y1-y0;return <div className="naRule naRuleT" style={{left:x0,top:y0,width:Math.hypot(dx,dy),transform:`rotate(${Math.atan2(dy,dx)}rad)`,transformOrigin:'0 50%'}}/>};
+ const ruleC=(x0:number,y0:number,x1:number,y1:number,col:string)=>{const dx=x1-x0,dy=y1-y0;return <div style={{position:'absolute',left:x0,top:y0,width:Math.hypot(dx,dy),height:0,borderBottom:`1.5px solid ${col}`,transform:`rotate(${Math.atan2(dy,dx)}rad)`,transformOrigin:'0 50%'}}/>};
  return <Canvas page={page} root={c.root} player={c.player} scale={c.scale}>
  {page==='84'&&<>
   {art('hero',8,30,742,60)}
@@ -359,44 +360,45 @@ export function NativeAB12L23({page}:{page:string}){
   <div className="naBank" style={{left:119,top:155,width:576,height:19}}/>
   <div className="naBank88" style={{left:124,top:159}}><Words text="Bescheid | Fluss | geben | Getränke | grillen | vergessen | Wald | Wetter | "/><span className="naStrikeU"><Words text="wunderbar"/></span><Words text=" | zufrieden"/></div>
   <div className="naStrip90" style={{left:120,top:195,width:573,height:10}}/>
-  {text(146,222,32,'Hallo!','naBookSerif naBk90 naNw',12.5)}
-  {text(146,236,60,'Ist es nicht','naBookSerif naBk90 naNw')}
-  <div className="naText naBookSerif naBk90 naNw" style={{left:207,top:238,width:56,fontSize:10.5}}><span className="naStrikeB"><Words text="wunderbar"/></span></div>
-  {text(265,236,266,'(a)? Für die Wochenenden haben wir ein Haus im','naBookSerif naBk90 naNw')}
-  {field('90-1b',535,225,120,'1 b')}{text(652,234,20,'(b)','naBookSerif naBk90 naNw')}
-  {text(145,252,236,'gefunden. Was für ein Glück! Wir sind super','naBookSerif naBk90 naNw')}
-  {field('90-1c',381,249,117,'1 c')}{text(504,252,18,'(c).','naBookSerif naBk90 naNw')}
-  {text(146,266,390,'Am Freitag, den 1. April würden wir das gern mit Euch feiern. Wir wollen','naBookSerif naBk90 naNw')}
-  {field('90-1d',539,263,117,'1 d')}{text(660,266,20,'(d).','naBookSerif naBk90 naNw')}
-  {text(146,282,115,'Hoffentlich spielt das','naBookSerif naBk90 naNw')}
-  {field('90-1e',262,282,123,'1 e')}{text(384,284,38,'(e) mit.','naBookSerif naBk90 naNw')}
-  {field('90-1f',424,275,114,'1 f')}{text(544,282,100,'(f) und Grillfleisch','naBookSerif naBk90 naNw')}
-  {text(146,300,246,'kaufen wir. Aber bringt doch bitte Salate mit!','naBookSerif naBk90 naNw')}
-  {text(147,314,175,'Und Zelte und Schlafsäcke nicht','naBookSerif naBk90 naNw')}
+  {ruleC(121,210.3,693,205.3,'#9e9fb0')}
+  {text(146,222,32,'Hallo!','naBk90 naNw',11.5)}
+  {text(146,236,60,'Ist es nicht','naBk90 naNw')}
+  {art('hand-1a',200,238,72,12)}
+  {text(265,236,266,'(a)? Für die Wochenenden haben wir ein Haus im','naBk90 naNw')}
+  {field('90-1b',535,225,120,'1 b')}{text(652,234,20,'(b)','naBk90 naNw')}
+  {text(145,252,236,'gefunden. Was für ein Glück! Wir sind super','naBk90 naNw')}
+  {field('90-1c',381,249,117,'1 c')}{text(504,252,18,'(c).','naBk90 naNw')}
+  {text(146,266,390,'Am Freitag, den 1. April würden wir das gern mit Euch feiern. Wir wollen','naBk90 naNw')}
+  {field('90-1d',539,263,117,'1 d')}{text(660,266,20,'(d).','naBk90 naNw')}
+  {text(146,282,115,'Hoffentlich spielt das','naBk90 naNw')}
+  {field('90-1e',262,282,123,'1 e')}{text(384,284,38,'(e) mit.','naBk90 naNw')}
+  {field('90-1f',424,275,114,'1 f')}{text(544,282,100,'(f) und Grillfleisch','naBk90 naNw')}
+  {text(146,300,246,'kaufen wir. Aber bringt doch bitte Salate mit!','naBk90 naNw',11.9)}
+  {text(147,314,175,'Und Zelte und Schlafsäcke nicht','naBk90 naNw')}
   {field('90-1g',325,311,120,'1 g','naFieldNL')}{ruleS(325,326.4,445,336)}
-  {text(444,314,240,'(g)! Ihr könnt auch Badesachen mitbringen.','naBookSerif naBk90 naNw')}
-  {text(147,331,95,'Es gibt dort einen','naBookSerif naBk90 naNw')}
-  {field('90-1h',247,324,115,'1 h')}{text(366,331,84,'(h) in der Nähe,','naBookSerif naBk90 naNw')}
-  {text(147,363,91,'Kommt Ihr? Bitte','naBookSerif naBk90 naNw')}
-  {field('90-1i',242,355,120,'1 i')}{text(361,363,160,'(i) uns doch bis zum 15. März','naBookSerif naBk90 naNw')}
-  {field('90-1j',521,353,114,'1 j')}{text(640,363,20,'(j).','naBookSerif naBk88 naNw')}
-  {text(147,381,82,'Alisa und Leon','naBookSerif naBk90 naNw')}
-  {text(147,410,352,'P.S.„Wohin soll ich denn kommen?“ werdet Ihr Euch jetzt fragen.','naBookSerif naBk90 naNw',11.3)}
-  {text(147,426,320,'Ganz einfach: Die Wegbeschreibung findet Ihr im Anhang.','naBookSerif naBk90 naNw',11.3)}
+  {text(444,314,240,'(g)! Ihr könnt auch Badesachen mitbringen.','naBk90 naNw',12.0)}
+  {text(147,331,95,'Es gibt dort einen','naBk90 naNw')}
+  {field('90-1h',247,324,115,'1 h')}{text(366,331,84,'(h) in der Nähe,','naBk90 naNw')}
+  {text(147,363,91,'Kommt Ihr? Bitte','naBk90 naNw')}
+  {field('90-1i',242,355,120,'1 i')}{text(361,363,160,'(i) uns doch bis zum 15. März','naBk90 naNw')}
+  {field('90-1j',521,353,114,'1 j')}{text(634,363,20,'(j).','naBk90 naNw',11.5)}
+  {text(147,381,82,'Alisa und Leon','naBk90 naNw')}
+  {text(147,410,352,'P.S.„Wohin soll ich denn kommen?“, werdet Ihr Euch jetzt fragen.','naBk90 naNw',12.1)}
+  {text(147,426,320,'Ganz einfach: Die Wegbeschreibung findet Ihr im Anhang.','naBk90 naNw',12.2)}
   {check('90-1',640,376,{'90-1b':'Wald','90-1c':'zufrieden','90-1d':'grillen','90-1e':'Wetter','90-1f':'Getränke','90-1g':'vergessen','90-1h':'Fluss','90-1i':'gebt','90-1j':'Bescheid'})}
   {kb(53,483,'KB 3')}
   <div className="naNum90" style={{left:83,top:476}}>2</div>
   {text(118,479,265,'Welcher Tag ist heute? Notieren Sie.','naT90txt naNw',16.1)}
   <div className="naSide naSideB" style={{left:61,top:510}}>STRUKTUREN</div>
   {text(115,508,85,'Heute ist …','naBookSerif naBk88 naNw',14)}
-  {text(113,540,12,'a','naBookSerif naBk88',11)}{text(131,540,36,'03.09.','naBookSerif naBk88 naNw',11)}
-  {art('hand-2a',182,542,242,14)}
+  {text(113,540,12,'a','naSans90 naNw',14)}{text(131,540,36,'03.09.','naSans90 naNw',14)}
+  {art('hand-2a',182,541,244,19)}
   {ruleS(185,552.8,718,564.7)}
-  {text(113,558,12,'b','naBookSerif naBk88',11)}{text(131,558,36,'07.12.','naBookSerif naBk88 naNw',11)}
+  {text(113,558,12,'b','naSans90 naNw',14)}{text(131,558,36,'07.12.','naSans90 naNw',14)}
   {field('90-2b',183,552,531,'2 b','naFieldNL')}{ruleS(183,572.2,714,584.1)}
-  {text(113,579,12,'c','naBookSerif naBk88',11)}{text(131,579,36,'15.01.','naBookSerif naBk88 naNw',11)}
+  {text(113,579,12,'c','naSans90 naNw',14)}{text(131,579,36,'15.01.','naSans90 naNw',14.6)}
   {field('90-2c',180,572,534,'2 c','naFieldNL')}{ruleS(180,592.4,714,603.2)}
-  {text(113,597,12,'d','naBookSerif naBk88',11)}{text(131,597,36,'28.05.','naBookSerif naBk88 naNw',11)}
+  {text(113,597,12,'d','naSans90 naNw',14)}{text(131,597,36,'28.05.','naSans90 naNw',14)}
   {field('90-2d',180,591,534,'2 d','naFieldNL')}{ruleS(180,611.0,714,623.2)}
   {check('90-2',645,628,{'90-2b':'der siebte Zwölfte|der siebte Dezember','90-2c':'der fünfzehnte Erste|der fünfzehnte Januar','90-2d':'der achtundzwanzigste Fünfte|der achtundzwanzigste Mai'})}
   {kb(50,649,'KB 3')}
