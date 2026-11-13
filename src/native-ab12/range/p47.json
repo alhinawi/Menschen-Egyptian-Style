@@ -892,6 +892,20 @@
    "t": "siebenundvierzig  |  47",
    "s": 19,
    "col": "#555"
+  },
+  {
+   "k": "chk",
+   "g": "47-1",
+   "neutral": true,
+   "x": 730,
+   "y": 158
+  },
+  {
+   "k": "chk",
+   "g": "47-2",
+   "neutral": true,
+   "x": 161,
+   "y": 1360
   }
  ]
 }
