@@ -91,8 +91,9 @@
 .nativeAB12[data-native-ab12="76"] .naFoot76{font-family:ABDroid69,Georgia,serif!important;letter-spacing:-0.35px;color:#1f1c1e;line-height:1.35}
 .nativeAB12[data-native-ab12="76"] .naTblHdr76{font-family:FiraSans,'Trebuchet MS',sans-serif!important;letter-spacing:0;color:#1f1c1e}
 .nativeAB12[data-native-ab12="76"] .naArea{border-bottom:0!important}
-/* p77: LITERATUR spread - Fira dialogue on white panel, Droid accents */
-.nativeAB12[data-native-ab12="77"] .naW{color:#2b3540}
+/* p77: LITERATUR spread - Fira Condensed dialogue on white panel, Droid accents */
+@font-face{font-family:ABFiraCond77;src:url('/assets/fonts/firasanscond-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
+.nativeAB12[data-native-ab12="77"] .naW{font-family:ABFiraCond77,'Fira Sans Condensed',FiraSans,sans-serif!important;color:#2b3540}
 .nativeAB12[data-native-ab12="77"] .naLit77{font-family:ABDroid69,Georgia,serif!important;letter-spacing:2.5px;color:#ffffff}
 .nativeAB12[data-native-ab12="77"] .naDroid77{font-family:ABDroid69,Georgia,serif!important;letter-spacing:-0.35px;color:#f2f2f2}
 .nativeAB12[data-native-ab12="77"] .naModTab{background:#d8d0ab!important;color:#26262e}
