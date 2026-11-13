@@ -37,7 +37,6 @@
 .naCanvas .naTitle.naT18{font-size:18px!important}
 .naCanvas .naText.naF185{font-size:18.5px!important}
 [data-native-ab12="24"] .naCanvas .naField{border-bottom-color:#7d858f!important}
-[data-native-ab12="24"] .naCanvas .naField.naDashU{border-bottom:none!important;background-color:transparent!important;background-image:repeating-linear-gradient(90deg,#7d858f 0 7px,rgba(0,0,0,0) 7px 14px)!important;background-size:100% 1.3px!important;background-position:left bottom!important;background-repeat:no-repeat!important}
+[data-native-ab12="24"] .naCanvas .naField.naDashU{border-bottom:none!important;background-color:transparent!important;background-image:repeating-linear-gradient(90deg,#abadad 0 8px,rgba(0,0,0,0) 8px 15px)!important;background-size:100% 1.3px!important;background-position:left bottom!important;background-repeat:no-repeat!important}
 [data-native-ab12="24"] .naCanvas .naText.naF192{font-size:19.2px!important}
-[data-native-ab12="24"] .naCanvas .naSans2.naW5{font-weight:500!important}
 [data-native-ab12="24"] .naCanvas .naField.naLow{height:23px!important}
