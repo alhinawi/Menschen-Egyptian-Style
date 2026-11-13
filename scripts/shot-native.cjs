@@ -12,7 +12,7 @@ const server=http.createServer((req,res)=>{
  const page=process.argv[2];
  const sel=process.argv[3]||`[data-page="${page}"]`;
  const out=process.argv[4]||`/tmp/shot-p${page}`;
- const html=+page<=35?'ab-a12-l13-16.html':'ab-a12-l17-20.html';
+ const html=+page<=35?'ab-a12-l13-16.html':+page<=65?'ab-a12-l17-20.html':'ab-a12-l21-24.html';
  await new Promise(r=>server.listen(5199,'127.0.0.1',r));
  const browser=await chromium.launch({executablePath:'/usr/bin/google-chrome-stable',args:['--no-sandbox']});
  try{
