@@ -1253,7 +1253,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {lin(673,867,196,2,'#d0d2d8')}
   {lin(313,881,190,2,'#d0d2d8')}
   {lin(313,957,191,2,'#d0d2d8')}
-  {lin(314,996,190,2,'#d0d2d8')}
+  {lin(314,999,190,2,'#d0d2d8')}
   {lin(313,1022,191,2,'#d0d2d8')}
   {lin(142,1164,727,2,'#b8bbbc')}
   {lin(142,1190,727,2,'#bcbfc0')}
@@ -1297,13 +1297,13 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(152,542,39,'-nen','naSmall naNw')}
   {text(527,550,116,'heiraten, hat','naNw')}
   {text(142,568,92,'Star der, -s','naNw')}
-  {text(538,581,90,'geheiratet','naNw')}
+  {text(538,579,90,'geheiratet','naNw')}
   {text(142,601,150,'ab·schließen, hat','naNw')}
   {text(527,607,151,'laufen, du läufst,','naNw')}
   {text(153,627,121,'abgeschlossen','naNw')}
-  {text(539,628,70,'er läuft,','naNw')}
+  {text(539,632,70,'er läuft,','naNw')}
   {text(153,653,141,'eine Ausbildung','naNw')}
-  {text(539,653,102,'ist gelaufen','naNw')}
+  {text(539,656,102,'ist gelaufen','naNw')}
   {text(153,679,101,'abschließen','naNw')}
   {text(538,680,206,'A/CH: rennen, ist gerannt','naNw naGray')}
   {text(142,705,133,'an·melden, hat','naNw')}
@@ -1322,7 +1322,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(141,890,143,'wollen, ich will,','naNw')}
   {text(153,916,151,'du willst, er will,','naNw')}
   {text(153,942,99,'hat gewollt','naNw')}
-  {text(142,977,89,'unbedingt','naNw')}
+  {text(142,980,89,'unbedingt','naNw')}
   {text(142,1001,133,'auf keinen Fall','naNw')}
   {title('2',100,1106,760,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naGB')}
   {rect(994,1391,78,19,'#cbc3a4')}
