@@ -1,4 +1,5 @@
 import {usePageReset} from '../exercises/usePageReset';
+import {LinedArea} from '../components/LinedArea';
 import {useLayoutEffect,useRef,useState} from 'react';
 import {PageImage} from '../components/PageImage';
 import {CheckButton} from '../components/CheckButton';
@@ -1266,7 +1267,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {lin(143,1344,727,2,'#bfc0c2')}
   {[249,274,300,352,378,403,429,481,507,558,584,648,700,752,803,881,958,997,1023].map((y,i)=>field('p41-1-l'+(i+1),314,y-19,185,'1 links Zeile '+(i+1),'naFieldBlank'))}
   {[249,300,352,404,429,481,507,533,597,674,778,829,867].map((y,i)=>field('p41-1-r'+(i+1),674,y-19,190,'1 rechts Zeile '+(i+1),'naFieldBlank'))}
-  {[1164,1190,1216,1242,1268,1293,1319,1344].map((y,i)=>field('p41-2-'+(i+1),144,y-19,720,'2 Notizzeile '+(i+1),'naFieldBlank'))}
+  <LinedArea id="p41-2-text" values={values} set={set} x={144} tops={[1145,1171,1197,1223,1249,1274,1300,1325]} w={720} rules={false} label="2 Notizen" legacyIds={['p41-2-1','p41-2-2','p41-2-3','p41-2-4','p41-2-5','p41-2-6','p41-2-7','p41-2-8']} className="naFieldBlank"/>
   {text(98,83,281,'LERNWORTSCHATZ','naHeadline naNw')}
   {title('1',98,164,760,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naGB')}
   {text(140,201,105,'Ausbildung','naBold naNw')}
