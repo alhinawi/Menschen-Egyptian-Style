@@ -1,3 +1,4 @@
+import {CheckButton} from '../components/CheckButton';
 import {PageImage} from '../components/PageImage';
 import {usePageReset} from '../exercises/usePageReset';
 import {useLayoutEffect,useRef,useState} from 'react';
@@ -17,12 +18,14 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  const f=(id:string,x:number,y:number,w:number,label=id)=>{const ctx=document.createElement('canvas').getContext('2d');if(ctx)ctx.font="16px 'Times New Roman'";const size=Math.max(11,Math.min(16,16*(w-6)/(ctx?.measureText(v[id]||'').width||1)));return <input className="mField" data-native-field={id} aria-label={label} style={{left:x,top:Y(y),width:w,fontSize:size}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>};
  const open=(id:string,x:number,y:number,w:number,h:number,label=id)=><textarea className="mField mOpen" data-native-field={id} aria-label={label} style={{left:x,top:Y(y),width:w,'--mopen-height':h+'px'} as React.CSSProperties} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
  const art=(name:string,x:number,y:number,w:number,h:number)=><PageImage className="mArt" alt={'Originalabbildung '+name} src={`assets/native-ab11/p${page}-${name}.png`} style={{left:x,top:Y(y),width:w,height:h}}/>;
- const title=(n:string,y:number,s:string,kb='',x=149)=><>{kb&&txt(104,y+5,40,kb,'mKB')}<div className="mNumber" style={{left:x,top:Y(y)}}>{n}</div>{txt(x+35,y,700,s,'mTitle')}</>;
+ const title=(n:string,y:number,s:string,kb='',x=149)=><>{kb&&txt(x-42,y+5,40,kb,'mKB')}<div className="mNumber" style={{left:x,top:Y(y)}}>{n}</div>{txt(x+35,y,700,s,'mTitle')}</>;
  const head=(s:string,ruleX:number,ruleY:number,x=143,y=138)=><>{txt(x,y,740,s,'mHeader')}<div className="mHRule" style={{left:ruleX,top:ruleY,width:900-ruleX}}/></>;
  const data=scanData['ab-a11:'+page];
  const answers=(group:string)=>Object.fromEntries(data.fields.filter(fl=>fl.group===group&&fl.kind!=='radio'&&fl.kind!=='checkbox'&&fl.answer!==undefined).map(fl=>[fl.id,fl.answer!]));
- const check=(id:string,x:number,y:number,expected=answers(id))=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><button onClick={()=>G({...graded,[id]:Object.entries(expected).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}>Prüfen ✓</button><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
- const rule=(id:string,x:number,y:number,test:()=>boolean)=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><button onClick={()=>G({...graded,[id]:test()})}>Prüfen ✓</button><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const check=(id:string,x:number,y:number,expected=answers(id))=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:Object.entries(expected).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const rule=(id:string,x:number,y:number,test:()=>boolean)=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:test()})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const markS=(x:number,y:number)=><div className="mText mMark" style={{left:x,top:Y(y),width:16}}><span className="mSq">■</span></div>;
+ const markT=(x:number,y:number)=><div className="mText mMark" style={{left:x,top:Y(y),width:16}}><span className="mTr">▲</span></div>;
  const listen=(n:string,x:number,y:number)=><button className="mListen" aria-label={'Originalaudio 1 '+n} style={{left:x,top:Y(y)}} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+parseInt(n)+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
  const radioG=(fid:string,group:string,val:string,x:number,y:number,label:string)=><input className="mRadio" data-native-radio={fid} type="radio" name={'native-ab11-'+page+'-'+group} aria-label={label} style={{left:x,top:Y(y)}} checked={v[group]===val} onChange={()=>set(group,val)}/>;
  const side=(s:string,y:number)=><div className="nabSide" style={{left:100,top:Y(y)}}>{s}</div>;
@@ -40,7 +43,7 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {txt(177,318,36,'e  '+sq)}{f('u4-e1',212,318,88)}{txt(311,318,170,'ich bitte einen Kaffee')}{txt(486,318,220,'______? (bekommen)')}
  {txt(177,339,36,'f  '+sq)}{txt(211,339,75,'Vielleicht')}{f('u4-f1',291,335,84)}{txt(383,339,250,'ich am Samstag meine Freundin')}{f('u4-f2',639,335,76)}{txt(721,339,120,'. (mitbringen)')}
  {txt(177,361,36,'g  '+sq)}{txt(211,361,95,'Am Sonntag')}{f('u4-g1',310,363,77)}{txt(394,361,175,'ich erst um 12 Uhr')}{txt(575,361,80,'______.')}{txt(650,361,120,'(frühstücken)')}
- {check('u4',177,392)}
+ {check('u4',177,384)}
  {title('5',419,'Schreiben Sie eigene Sätze wie in 4 und tauschen Sie mit Ihrer\nPartnerin / Ihrem Partner.','KB 5')}
  {open('u5-own',177,468,660,46,'5 eigene Sätze')}
  {title('6',525,'Schreiben Sie Sätze.')}
@@ -87,16 +90,16 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {check('u8',161,608)}
  {title('9',641,'Mike in München, Teil 1','KB 7',125)}
  {txt(161,679,300,'Ordnen Sie die Fragen zu.','mTitle')}
- <div className="mText mBank" style={{left:161,top:705,width:560}}><Words s="Wann kommst du? | Holst du mich ab? | Nimmst du den Zug? | "/><span className="mStruck">Hast du Zeit?</span></div>
+ <div className="mText mBank" style={{left:161,top:705,width:480,fontSize:14}}><Words s="Wann kommst du? | Holst du mich ab? | Nimmst du den Zug? | "/><span className="mStruck">Hast du Zeit?</span></div>
  {art('man',695,556,202,218)}
  <div className="mText" style={{left:165,top:740,width:520}}><span className="mSq">■</span><Words s="  Hallo Tom, hier ist Mike."/></div>
  <div className="mText" style={{left:165,top:761,width:520}}><span className="mTr">▲</span><Words s="  Hallo Mike, wie geht's?"/></div>
  <div className="mText" style={{left:165,top:783,width:560}}><span className="mSq">■</span><Words s="  Gut, danke. Ich bin nächste Woche in München und möchte dich gern besuchen."/></div>
  <div className="mText mExample" style={{left:181,top:805,width:200}}>Hast du Zeit?</div>
- <div className="mText" style={{left:165,top:826,width:120}}><span className="mTr">▲</span><Words s="  Ja natürlich!"/></div>{f('u9-q1',275,821,555)}
+ <div className="mText" style={{left:165,top:826,width:120}}><span className="mTr">▲</span><Words s="  Ja natürlich!"/></div>{f('u9-q1',296,821,534)}
  <div className="mText" style={{left:165,top:848,width:300}}><span className="mSq">■</span><Words s="  Am Mittwoch, um 20:50 Uhr."/></div>
  <div className="mText" style={{left:165,top:868,width:16}}><span className="mTr">▲</span></div>{f('u9-q2',181,864,650)}
- <div className="mText" style={{left:165,top:890,width:275}}><span className="mSq">■</span><Words s="  Ja. Ich komme am Ostbahnhof an."/></div>{f('u9-q3',438,889,390)}
+ <div className="mText" style={{left:165,top:890,width:275}}><span className="mSq">■</span><Words s="  Ja. Ich komme am Ostbahnhof an."/></div>{f('u9-q3',444,889,384)}
  <div className="mText" style={{left:165,top:911,width:560}}><span className="mTr">▲</span><Words s="  Na klar, gern. Ich arbeite bis 20 Uhr. Dann hole ich dich ab."/></div>
  <div className="mText" style={{left:165,top:932,width:300}}><span className="mSq">■</span><Words s="  Danke, dann bis Mittwoch!"/></div>
  {check('u9',167,954)}
@@ -123,7 +126,7 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {radioG('u2-3a','u2-3','a',621,704,'Satz 3a')}{radioG('u2-3b','u2-3','b',621,726,'Satz 3b')}
  <div className="mTipBox" style={{left:687,top:555,width:168,height:105}}><div className="mTipLabel">TIPP</div><div className="mTipText"><Words s="Achten Sie auf Zahlen und Uhrzeiten. Am Bahnhof/Flughafen … müssen Sie Zahlen und Zeiten richtig verstehen."/></div></div>
  {listen('44-46',93,773)}{txt(179,768,600,'b  Hören Sie noch einmal. Welche Sätze sind richtig? Kreuzen Sie in a an.','mTitle')}
- {rule('g2',621,742,()=>v['u2-1']==='b'&&v['u2-2']==='b'&&v['u2-3']==='b')}
+ {rule('g2',700,700,()=>v['u2-1']==='b'&&v['u2-2']==='b'&&v['u2-3']==='b')}
  {txt(140,829,300,'TRAINING:  AUSSPRACHE','mHeader')}{txt(554,835,240,'Wortakzent bei trennbaren Verben','mScript2')}<div className="mHRule" style={{left:832,top:841,width:67}}/>
  {listen('47',93,881)}{title('1',876,'Hören Sie und markieren Sie den\nWortakzent.','',154)}
  <div className="mText" style={{left:182,top:932,width:280}}>fahren – <u>ab</u>fahren | kommen –<br/><u>an</u>kommen | kaufen – <u>ein</u>kaufen |<br/>sehen – <u>fern</u>sehen | bringen –<br/><u>mit</u>bringen</div>
@@ -136,6 +139,74 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  <div className="mText" style={{left:614,top:932,width:220}}>Ich <u>nehme</u> heut' den Zug.<br/><u>Ein</u>steigen<br/><u>Aus</u>steigen<br/><u>Um</u>steigen<br/>Vorsicht an Gleis <u>sieben</u>!</div>
  <div className="mText" style={{left:614,top:1044,width:220}}>Ich <u>nehme</u> heut' den Zug.<br/><u>Ab</u>fahren<br/><u>An</u>kommen<br/><u>An</u>rufen<br/>Holst du mich bitte <u>ab</u>?</div>
  </>}
- {Number(page)%2?txt(690,({79:1209,81:1193,83:1205,85:1204,87:1211} as Record<string,number>)[page]||1208,180,footerW[page]+' | '+page,'mFooter'):<>{txt(48,({80:1211,82:1208,84:1212,86:1206} as Record<string,number>)[page]||1208,60,'Modul 4','mFooter mFooterTab')}{txt(112,({80:1211,82:1208,84:1212,86:1206} as Record<string,number>)[page]||1208,170,page+' | '+footerW[page],'mFooter')}</>}
+ {page==='82'&&<>
+ {txt(110,140,80,'TEST','mHeader')}
+ <div className="mHRule" style={{left:174,top:156,width:636}}/>
+ {side('WÖRTER',236)}{side('WÖRTER',363)}{side('STRUKTUREN',533)}{side('KOMMUNIKATION',819)}
+ {title('1',198,'Wie heißen die Wörter?','',118)}
+ <div className="mText mBig" style={{left:148,top:235,width:420}}><span className="mStruck" style={{color:'#315e9f'}}>hafen</span><Words s=" | stelle | bahn | steig | hof | zeug"/></div>
+ {txt(145,266,18,'a','mBig')}{txt(164,266,80,'Straßen','mBig')}{f('u1-a',243,264,102)}
+ {txt(144,288,18,'b','mBig')}{txt(164,288,44,'Flug','mBig')}<div className="mText mExample" style={{left:200,top:288,width:32}}><span className="mStruck">hafen</span></div>{txt(230,288,14,'/','mBig')}{txt(243,288,48,'Flug','mBig')}{f('u1-b',291,286,105)}
+ {txt(461,266,18,'c','mBig')}{txt(481,266,40,'Bahn','mBig')}{f('u1-c1',522,264,102)}{txt(638,266,14,'/','mBig')}{txt(658,266,40,'Bahn','mBig')}{f('u1-c2',698,264,102)}
+ {txt(462,288,18,'d','mBig')}{txt(481,288,42,'Halte','mBig')}{f('u1-d',522,286,131)}
+ {txt(742,288,80,'_ / 5 Punkte','mPunkte')}
+ {check('t1',660,303)}
+ {title('2',325,'Ordnen Sie zu.','',118)}
+ <div className="mText" style={{left:150,top:362,width:440}}><Words s="Gleis | Koffer | U-Bahn | "/><span className="mStruck" style={{color:'#315e9f'}}>Gepäck</span><Words s=" | Taxi | Halt | Zug"/></div>
+ {txt(145,398,16,'a')}{markS(163,396)}<div className="mText" style={{left:179,top:395,width:330}}><Words s="Guten Tag, Herr Baltaci. Haben Sie"/></div>
+ {markT(163,414)}<div className="mText mExample" style={{left:181,top:413,width:80}}>Gepäck?</div><div className="mExRule" style={{left:179,top:432,width:72}}/>
+ {markT(163,438)}<div className="mText" style={{left:179,top:437,width:72}}><Words s="Ja, zwei"/></div>{f('u2-a',251,432,76)}{txt(333,437,100,'und die Tasche.')}
+ {txt(144,457,16,'b')}{markS(163,458)}<div className="mText" style={{left:179,top:457,width:75}}><Words s="Nächster"/></div>{f('u2-b',254,455,91)}{txt(351,457,90,'Königsplatz.')}
+ {txt(466,398,16,'c')}{markS(484,396)}<div className="mText" style={{left:500,top:395,width:100}}><Words s="Wo fährt der"/></div>{f('u2-c1',596,391,69)}{txt(669,395,140,'nach Stuttgart ab?')}
+ {markT(484,414)}<div className="mText" style={{left:500,top:413,width:32}}><Words s="Auf"/></div>{f('u2-c2',532,410,64)}{txt(600,413,22,'17.')}
+ {txt(466,437,16,'d')}{markS(484,438)}<div className="mText" style={{left:500,top:437,width:300}}><Words s="Es ist schon sehr spät. Jetzt fährt"/></div>
+ {txt(500,457,45,'keine')}{f('u2-d1',544,452,65)}{txt(612,457,45,'mehr.')}
+ {markT(484,479)}<div className="mText" style={{left:500,top:478,width:160}}><Words s="Dann nehmen wir ein"/></div>{f('u2-d2',654,472,145)}{txt(801,478,15,'.')}
+ {txt(743,503,80,'_ / 6 Punkte','mPunkte')}
+ {check('t2',655,501)}
+ {title('3',500,'Ergänzen Sie das Gespräch.','',118)}
+ {markS(148,534)}<div className="mText" style={{left:165,top:531,width:440}}><Words s="Guten Morgen Ella, hier ist Karin. Wo bist du?"/></div>
+ {markT(148,553)}<div className="mText" style={{left:165,top:552,width:120}}><Words s="Hallo Karin. Ich"/></div><div className="mText mExample" style={{left:283,top:552,width:185}}>steige gerade in den Zug ein</div><div className="mExRule" style={{left:283,top:571,width:177}}/>{txt(470,552,28,'(a).')}{txt(500,552,240,'(einsteigen/in den Zug /gerade)')}
+ {markS(148,575)}<div className="mText" style={{left:165,top:574,width:55}}><Words s="Wann"/></div>{f('u3-b',218,567,269)}{txt(496,574,40,'(b)?')}{txt(533,574,130,'(du/ankommen)')}
+ {markT(148,597)}<div className="mText" style={{left:165,top:596,width:520}}><Words s="Um 09.35 Uhr am Ostbahnhof und um 09.45 Uhr am Hauptbahnhof."/></div>
+ {markS(148,619)}<div className="mText" style={{left:165,top:618,width:90}}><Words s="Kannst du"/></div>{f('u3-c',254,609,363)}{txt(629,618,30,'(c)?')}
+ {txt(166,637,270,'(aussteigen/am Hauptbahnhof/bitte)')}
+ {txt(166,659,28,'Ich')}{f('u3-d',196,652,302)}{txt(504,659,30,'(d).')}{txt(534,659,110,'(abholen/dich)')}
+ {markT(148,682)}<div className="mText" style={{left:165,top:681,width:200}}><Words s="Super, vielen Dank."/></div>
+ {markS(148,704)}<div className="mText" style={{left:165,top:703,width:40}}><Words s="Jetzt"/></div>{f('u3-e',203,694,549)}{txt(759,703,25,'(e),')}
+ {txt(166,722,480,'(einkaufen/ich/Brötchen) dann können wir zusammen frühstücken.')}
+ {markT(148,746)}<div className="mText" style={{left:165,top:745,width:280}}><Words s="Gute Idee. Also dann, bis bald."/></div>
+ {txt(743,745,80,'_ / 8 Punkte','mPunkte')}
+ {check('t3',590,745)}
+ {title('4',780,'Schreiben Sie vier Gespräche.','',118)}
+ <div className="mText" style={{left:151,top:818,width:570}}><Words s="Nehmt ihr ein Taxi? | "/><span className="mStruck" style={{color:'#315e9f'}}>Wo fährt der Zug nach Köln ab?</span><Words s=" | Ich habe leider keine Zeit. | Am"/></div>
+ <div className="mText" style={{left:151,top:839,width:580}}><Words s="Rathausplatz. | Um 09:45 Uhr. | Nein, die U-Bahn. | "/><span className="mStruck" style={{color:'#315e9f'}}>Auf Gleis 15.</span><Words s=" | Holst du mich ab? |"/></div>
+ {txt(151,862,320,'Wann kommt der Zug an? | Wo steigst du um?')}
+ {markS(148,891)}<div className="mText mExample" style={{left:166,top:891,width:300}}>Wo fährt der Zug nach Köln ab?</div><div className="mExRule" style={{left:163,top:910,width:295}}/>
+ {markT(148,913)}<div className="mText mExample" style={{left:166,top:913,width:200}}>Auf Gleis 15.</div><div className="mExRule" style={{left:163,top:932,width:295}}/>
+ {markS(148,941)}{f('u4-l1',163,941,295)}{markT(148,963)}{f('u4-l2',163,963,295)}
+ {markS(148,993)}{f('u4-l3',163,993,295)}{markT(148,1014)}{f('u4-l4',163,1014,295)}
+ {markS(503,888)}{f('u4-r1',520,888,295)}{markT(503,909)}{f('u4-r2',520,909,295)}
+ {markS(503,939)}{f('u4-r3',520,939,295)}{markT(503,960)}{f('u4-r4',520,960,295)}
+ {txt(743,1023,80,'_ / 4 Punkte','mPunkte')}
+ {check('t4',640,988)}
+ <div className="mScore mScore82" style={{left:139,top:1056}}><b>Wörter</b><b>Strukturen</b><b>Kommunikation</b>{[['0–5','0–4','0–2'],['6–8','5–6','3'],['9–11','7–8','4']].map((row,r)=>row.map((s,c)=><div key={r+'-'+c}><i style={{background:['#d71910','#edcf00','#3b9e24'][r]}}/>{s} Punkte</div>))}</div>
+ {txt(357,1174,200,'www.hueber.de/menschen/lernen','mScoreLink')}
+ </>}
+ {page==='83'&&<>
+ {head('LERNWORTSCHATZ',362,153,125,133)}
+ {title('1',196,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','',132)}
+ {txt(158,229,320,'Verkehr und Reisen','mVocabHead')}{txt(480,229,290,'Weitere wichtige Wörter','mVocabHead')}
+ {([['l1',253,'Bahnhof der, -e',266],['l3',319,'Bus der, -se',330],['l4',339,'Halt der, -e/-s',351],['l5',360,'Haltestelle die, -n',373],['l6',381,'Flughafen der, -¨e',394],['l7',403,'Flugzeug das, -e',415],['l8',424,'Gepäck das',436],['l9',445,'Gleis das, -e',457],['l10',466,'Koffer der, -',478],['l11',487,'S-Bahn die, -en',500],['l12',508,'Straßenbahn die,\n  -en auch: Tram die, -s',521],['l13',552,'Taxi das, -s',565],['l14',572,'U-Bahn die, -en',585],['l15',593,'Verkehrsmittel\n  das, -',627],['l16',637,'Zug der, -¨e',650],['l17',668,'ab·fahren, du\n  fährst ab,\n  er fährt ab',722],['l18',731,'ab·holen',744],['l19',752,'an·kommen',765],['l20',775,'aus·steigen',786],['l21',796,'ein·steigen',807],['l22',817,'um·steigen',829]] as [string,number,string,number][]).map(([id,y,s,ry])=><span key={id}>{txt(159,y,282,s)}{f('v-'+id,300,ry-20,154,'Übersetzung: '+s.split(/[\n ]/)[0])}</span>)}
+ <div className="mText" style={{left:159,top:275,width:282}}><Words s="Bahnsteig der, -e"/><span className="mVocabCH">{'\n  CH: das Perron, -s'}</span></div>{f('v-l2',300,268,154,'Übersetzung: Bahnsteig')}
+ {([['r1',253,'Minute die, -n',264],['r2',275,'Vorsicht die',288],['r3',299,'zu Hause',312],['r4',315,'Entschuldigen\n  Sie.',352],['r5',368,'an·rufen',381],['r6',389,'bekommen',402],['r7',406,'ein·kaufen',419],['r8',432,'fern·sehen, du\n  siehst fern,\n  er sieht fern',487],['r9',496,'mit·bringen',509],['r10',517,'nehmen, du\n  nimmst, er nimmt',531],['r11',570,'also\n  also dann',606],['r12',615,'gerade',628],['r13',634,'nächste',647],['r14',666,'viel',679],['r15',689,'auf\n  auf Gleis 10',721],['r16',731,'bis\n  Bis bald!',765]] as [string,number,string,number][]).map(([id,y,s,ry])=><span key={id}>{txt(481,y,290,s)}{f('v-'+id,600,ry-20,157,'Übersetzung: '+s.split(/[\n ]/)[0])}</span>)}
+ <div className="mTippBar" style={{left:167,top:851,width:12,height:95}}><span>TIPP</span></div>
+ <div className="mTippRule" style={{left:167,top:851,width:415,height:4}}/>
+ <div className="mText mTipp" style={{left:195,top:860,width:400}}><Words s={'Sie lesen den Satz:\n„Wir '}/><span className="mHi"><Words s="steigen"/></span><Words s=" dann in Flensburg in den Bus "/><span className="mHi"><Words s="um"/></span><Words s={'.“\nSie verstehen „steigen“ nicht und suchen im Wörterbuch.\nAchten Sie auch auf das Satzende.\nSuchen Sie „umsteigen“ im Wörterbuch.'}/></div>
+ {title('2',1001,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','',132)}
+ {open('u2-notes',170,1016,600,156,'2 Eigene Wörter')}
+ {art('photos',794,168,107,1010)}
+ </>}
+ {Number(page)%2?<>{<div className="mText mFooter" style={{left:708,top:({79:1207,81:1191,83:1203,85:1202,87:1209} as Record<string,number>)[page]||1208,width:180}}><Words s={footerW[page]}/><b className="mFooterB">{'  |  '+page}</b></div>}{txt(869,(({79:1207,81:1191,83:1203,85:1202,87:1209} as Record<string,number>)[page]||1208)-13,60,'Modul 4','mFooter mFooterTab mFooterTabOdd')}</>:<>{txt(48,({80:1209,82:1206,84:1210,86:1204} as Record<string,number>)[page]||1208,60,'Modul 4','mFooter mFooterTab')}{txt(112,({80:1209,82:1206,84:1210,86:1204} as Record<string,number>)[page]||1208,170,page+' | '+footerW[page],'mFooter')}</>}
  </div><audio className="nabPlayer" ref={audio} controls hidden={!track} aria-label="Originalaudio Arbeitsbuch"/></div>;
 }

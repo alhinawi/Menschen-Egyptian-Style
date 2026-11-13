@@ -1895,9 +1895,95 @@
    "y": 987,
    "w": 259,
    "h": 20
+  },
+  {
+   "id": "p91-6a-ostern",
+   "group": "g4",
+   "kind": "text",
+   "label": "6 a Ostern",
+   "x": 108,
+   "y": 579,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "p91-6a-geburtstag",
+   "group": "g4",
+   "kind": "text",
+   "label": "6 a Geburtstag",
+   "x": 197,
+   "y": 579,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "p91-6a-weihnachten",
+   "group": "g4",
+   "kind": "text",
+   "label": "6 a Weihnachten",
+   "x": 294,
+   "y": 579,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "p91-6a-silvester",
+   "group": "g4",
+   "kind": "text",
+   "label": "6 a Silvester",
+   "x": 422,
+   "y": 579,
+   "w": 16,
+   "h": 16
   }
  ],
- "audio": [],
+ "audio": [
+  {
+   "id": "track40-1",
+   "src": "assets/ab-cd2-track40.mp3",
+   "label": "CD2 · Track40",
+   "x": 17,
+   "y": 400,
+   "w": 44,
+   "h": 22
+  },
+  {
+   "id": "track41-2",
+   "src": "assets/ab-cd2-track41.mp3",
+   "label": "CD2 · Track41",
+   "x": 17,
+   "y": 424,
+   "w": 44,
+   "h": 22
+  },
+  {
+   "id": "track42-3",
+   "src": "assets/ab-cd2-track42.mp3",
+   "label": "CD2 · Track42",
+   "x": 17,
+   "y": 448,
+   "w": 44,
+   "h": 22
+  },
+  {
+   "id": "track43-4",
+   "src": "assets/ab-cd2-track43.mp3",
+   "label": "CD2 · Track43",
+   "x": 17,
+   "y": 472,
+   "w": 44,
+   "h": 22
+  },
+  {
+   "id": "track44-5",
+   "src": "assets/ab-cd2-track44.mp3",
+   "label": "CD2 · Track44",
+   "x": 17,
+   "y": 546,
+   "w": 44,
+   "h": 22
+  }
+ ],
  "groups": [
   {
    "id": "g1",
@@ -1910,6 +1996,10 @@
   {
    "id": "g3",
    "label": "Aufgabe 7"
+  },
+  {
+   "id": "g4",
+   "label": "Aufgabe 6 a"
   }
  ],
  "review": {

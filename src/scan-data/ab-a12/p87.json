@@ -1251,13 +1251,189 @@
    "y": 581,
    "w": 151,
    "h": 20
+  },
+  {
+   "id": "p87-a1r1-1",
+   "group": "confidence-p87-a1",
+   "kind": "radio",
+   "label": "Aussprache 1 Reihe 1 Wort 1",
+   "name": "a1r1",
+   "value": "1",
+   "x": 136,
+   "y": 776,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "p87-a1r1-2",
+   "group": "confidence-p87-a1",
+   "kind": "radio",
+   "label": "Aussprache 1 Reihe 1 Wort 2",
+   "name": "a1r1",
+   "value": "2",
+   "x": 191,
+   "y": 776,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "p87-a1r2-1",
+   "group": "confidence-p87-a1",
+   "kind": "radio",
+   "label": "Aussprache 1 Reihe 2 Wort 1",
+   "name": "a1r2",
+   "value": "1",
+   "x": 136,
+   "y": 796,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "p87-a1r2-2",
+   "group": "confidence-p87-a1",
+   "kind": "radio",
+   "label": "Aussprache 1 Reihe 2 Wort 2",
+   "name": "a1r2",
+   "value": "2",
+   "x": 191,
+   "y": 796,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "p87-a1r3-1",
+   "group": "confidence-p87-a1",
+   "kind": "radio",
+   "label": "Aussprache 1 Reihe 3 Wort 1",
+   "name": "a1r3",
+   "value": "1",
+   "x": 136,
+   "y": 815,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "p87-a1r3-2",
+   "group": "confidence-p87-a1",
+   "kind": "radio",
+   "label": "Aussprache 1 Reihe 3 Wort 2",
+   "name": "a1r3",
+   "value": "2",
+   "x": 191,
+   "y": 815,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "p87-a1r4-1",
+   "group": "confidence-p87-a1",
+   "kind": "radio",
+   "label": "Aussprache 1 Reihe 4 Wort 1",
+   "name": "a1r4",
+   "value": "1",
+   "x": 136,
+   "y": 834,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "p87-a1r4-2",
+   "group": "confidence-p87-a1",
+   "kind": "radio",
+   "label": "Aussprache 1 Reihe 4 Wort 2",
+   "name": "a1r4",
+   "value": "2",
+   "x": 191,
+   "y": 834,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "p87-a1r5-1",
+   "group": "confidence-p87-a1",
+   "kind": "radio",
+   "label": "Aussprache 1 Reihe 5 Wort 1",
+   "name": "a1r5",
+   "value": "1",
+   "x": 136,
+   "y": 854,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "p87-a1r5-2",
+   "group": "confidence-p87-a1",
+   "kind": "radio",
+   "label": "Aussprache 1 Reihe 5 Wort 2",
+   "name": "a1r5",
+   "value": "2",
+   "x": 191,
+   "y": 854,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "p87-a1r6-1",
+   "group": "confidence-p87-a1",
+   "kind": "radio",
+   "label": "Aussprache 1 Reihe 6 Wort 1",
+   "name": "a1r6",
+   "value": "1",
+   "x": 136,
+   "y": 873,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "p87-a1r6-2",
+   "group": "confidence-p87-a1",
+   "kind": "radio",
+   "label": "Aussprache 1 Reihe 6 Wort 2",
+   "name": "a1r6",
+   "value": "2",
+   "x": 191,
+   "y": 873,
+   "w": 16,
+   "h": 16
   }
  ],
- "audio": [],
+ "audio": [
+  {
+   "id": "track37-1",
+   "src": "assets/ab-cd2-track37.mp3",
+   "label": "CD2 · Track37",
+   "x": 26,
+   "y": 452,
+   "w": 42,
+   "h": 22
+  },
+  {
+   "id": "track38-2",
+   "src": "assets/ab-cd2-track38.mp3",
+   "label": "CD2 · Track38",
+   "x": 26,
+   "y": 727,
+   "w": 42,
+   "h": 22
+  },
+  {
+   "id": "track39-3",
+   "src": "assets/ab-cd2-track39.mp3",
+   "label": "CD2 · Track39",
+   "x": 26,
+   "y": 922,
+   "w": 42,
+   "h": 22
+  }
+ ],
  "groups": [
   {
    "id": "g1",
    "label": "Hören 2"
+  },
+  {
+   "id": "confidence-p87-a1",
+   "label": "Aussprache 1"
   }
  ],
  "review": {

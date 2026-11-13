@@ -11,7 +11,45 @@ const server=http.createServer((req,res)=>{
  await new Promise(r=>server.listen(5297,'127.0.0.1',r));
  const browser=await chromium.launch({executablePath:'/usr/bin/google-chrome-stable',args:['--no-sandbox']});
  try{
+  {
+   const p=await browser.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
+   await p.goto('http://127.0.0.1:5297/ab-a12-l21-24.html#86');
+   await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
+   await p.locator('[data-native-ab12="86"]').waitFor();
+   await p.close();console.log('p86: native L23 page renders');
+  }
+  for(const no of [87,88]){
+   const p=await browser.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
+   await p.goto('http://127.0.0.1:5297/ab-a12-l21-24.html#'+no);
+   await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
+   await p.locator('.hybridScan[data-scan-page="'+no+'"]').waitFor();
+   assert(await p.locator('.hybridScan[data-scan-page="'+no+'"] input').count()>0,'unconverted p'+no+' must remain usable');
+   await p.close();console.log('p'+no+': unconverted page preserved as HybridScan');
+  }
   for(const width of [320,390]){
+   // Page 20: radio triples, text fields, table fields, grading, saved answers.
+   {
+    const p=await browser.newPage({viewport:{width,height:844},isMobile:true,hasTouch:true});
+    const errors=[];p.on('pageerror',e=>errors.push(e.message));
+    await p.goto('http://127.0.0.1:5297/ab-a12-l13-16.html#20');
+    await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
+    const h=p.locator('[data-native-ab12="20"]');await h.waitFor();
+    await h.getByRole('radio',{name:'9b euch',exact:true}).click();
+    await h.locator('[data-check="g1"] button').click();
+    assert.equal(await h.locator('[data-check="g1"] output').textContent(),'Noch einmal','20: wrong radio not flagged');
+    for(const name of ['9b uns','9c euch','9d ihm','9e dir'])await h.getByRole('radio',{name,exact:true}).click();
+    const fields={'p20-10b':'dir','p20-10c':'uns','p20-10d':'mir','p20-10e':'ihr','p20-10f':'ihnen','p20-11a':'4','p20-11b':'1','p20-11c':'6','p20-11d':'3'};
+    for(const [id,v] of Object.entries(fields))await h.locator('[data-native-field="'+id+'"]').fill(v);
+    for(const b of await h.locator('.naCheck button').all()){await b.scrollIntoViewIfNeeded();await b.click();}
+    for(const t of await h.locator('.naCheck output').allTextContents())assert.equal(t,'✓ Richtig!','20: grading failed');
+    await p.reload();await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
+    assert(await h.getByRole('radio',{name:'9b uns',exact:true}).isChecked(),'20: radio not saved');
+    assert.equal(await h.locator('[data-native-field="p20-11d"]').inputValue(),'3','20: field answer not saved');
+    assert.deepEqual(errors,[],'20: page errors');
+    console.log(`${width}px p20: radio grading, wrong-answer feedback, text/table fields, saved answers passed`);
+    await p.close();
+   }
+
    // Page 18: wrong-answer feedback, full grading, saved answers.
    {
     const p=await browser.newPage({viewport:{width,height:844},isMobile:true,hasTouch:true});

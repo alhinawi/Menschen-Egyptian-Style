@@ -15,3 +15,27 @@
 .naCanvas .naRect{position:absolute;z-index:1}
 .naCanvas .naW{position:absolute;white-space:pre;line-height:1;margin:0;padding:0;transform-origin:left top;z-index:2}
 .naCanvas .naW span[role=button]{display:inline;cursor:pointer}
+.nativeAB12[data-native-ab12="67"] .naDot{width:10px!important;height:10px!important;border-width:1px!important}
+
+/* p69: printed radio circles 16px; single-letter blanks centered */
+.nativeAB12[data-native-ab12="69"] .naDot{width:16px!important;height:16px!important;border-width:1.5px!important}
+.nativeAB12[data-native-ab12="69"] .naFieldBlank{text-align:center}
+
+/* p69: book body face is Droid Serif (AB A1.2 scan), not Times */
+@font-face{font-family:ABDroid69;src:url('/assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}
+.nativeAB12[data-native-ab12="69"] .naW{font-family:ABDroid69,Georgia,serif!important;letter-spacing:-0.35px}
+.nativeAB12[data-native-ab12="69"] .naDroid69{font-family:ABDroid69,Georgia,serif!important;letter-spacing:-0.35px}
+.nativeAB12[data-native-ab12="69"] .naField{font-family:ABDroid69,Georgia,serif!important}
+
+/* p70: printed radio circles 14px paler olive; blanks centered; Droid Serif body like p69 */
+.nativeAB12[data-native-ab12="70"] .naDot{width:14px!important;height:14px!important;border-width:1.5px!important;border-color:#d2d3b8!important}
+.nativeAB12[data-native-ab12="70"] .naFieldBlank{text-align:center}
+.nativeAB12[data-native-ab12="70"] .naW{font-family:ABDroid69,Georgia,serif!important;letter-spacing:-0.35px}
+.nativeAB12[data-native-ab12="70"] .naField{font-family:ABDroid69,Georgia,serif!important}
+.nativeAB12[data-native-ab12="70"] .naDroid70{font-family:ABDroid69,Georgia,serif!important;letter-spacing:-0.35px}
+
+/* p71: Droid Serif body like p69/70; writing-line fields in book face */
+.nativeAB12[data-native-ab12="71"] .naW{font-family:ABDroid69,Georgia,serif!important;letter-spacing:-0.35px}
+.nativeAB12[data-native-ab12="71"] .naField{font-family:ABDroid69,Georgia,serif!important}
+.nativeAB12[data-native-ab12="71"] .naDroid71{font-family:ABDroid69,Georgia,serif!important;letter-spacing:-0.35px}
+.nativeAB12[data-native-ab12="71"] .naDroid71{color:#1f1c1e}

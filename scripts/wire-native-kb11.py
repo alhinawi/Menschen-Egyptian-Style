@@ -4,7 +4,7 @@ import json,sys,os
 ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 pages={str(int(x)) for x in sys.argv[1:]}
 done=set()
-for f in ['index','l2-3','l4-6','l10-12']:
+for f in ['index','l2-3','l4-6','l7-9','l10-12']:
     path=f'{ROOT}/src/lessons/{f}.json';d=json.load(open(path))
     def walk(n):
         if isinstance(n,list) and len(n)==3 and isinstance(n[0],str) and isinstance(n[1],dict):

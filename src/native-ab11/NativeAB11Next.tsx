@@ -1,3 +1,4 @@
+import {CheckButton} from '../components/CheckButton';
 import {PageImage} from '../components/PageImage';
 import {usePageReset} from '../exercises/usePageReset';
 import {LineMatching} from '../exercises/LineMatching';
@@ -20,8 +21,8 @@ export function NativeAB11Next({page}:{page:string}){
  const open=(id:string,x:number,y:number,w:number,h:number,label:string)=><textarea className="nabInput nabOpen" style={{left:x,top:py(y),width:w,height:h,'--native-open-height':h+'px'} as React.CSSProperties} aria-label={label} data-native-field={id} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
  const choice=(id:string,value:string,x:number,y:number,label:string)=><input type="radio" className="nabRadio" style={{left:x,top:py(y)}} name={key+'-'+id} aria-label={label} checked={v[id]===value} onChange={()=>set(id,value)}/>;
  const listen=(n:string,x:number,y:number)=><button className="nabListen" style={{left:x,top:py(y)}} aria-label={'Originalaudio 1 '+n} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+n.padStart(2,'0')+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
- const checkRule=(id:string,x:number,y:number,validate:()=>boolean)=><div className="nabCheck" style={{left:x,top:py(y)}} data-native-task={id}><button onClick={()=>G({...graded,[id]:validate()})}>Prüfen ✓</button><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
- const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="nabCheck" style={{left:x,top:py(y)}} data-native-task={id}><button onClick={()=>G({...graded,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}>Prüfen ✓</button><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const checkRule=(id:string,x:number,y:number,validate:()=>boolean)=><div className="nabCheck" style={{left:x,top:py(y)}} data-native-task={id}><CheckButton onClick={()=>G({...graded,[id]:validate()})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="nabCheck" style={{left:x,top:py(y)}} data-native-task={id}><CheckButton onClick={()=>G({...graded,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const title=(n:string,y:number,s:string,kb:string,side='Strukturen')=><>{text(130,y+7,40,kb,'nabKB')}<div className="nabNumber" style={{left:170,top:py(y)}}>{n}</div>{text(212,y,810,s,'nabTitle')}<div className="nabSide" style={{left:141,top:py(y+45)}}>{side}</div></>;
  const head=(s:string)=><>{text(160,142,750,s,'nabHeader')}<div className="nabHeaderLine"/></>;
  const data=scanData['ab-a11:'+page];
@@ -91,7 +92,7 @@ export function NativeAB11Next({page}:{page:string}){
  {page==='14'&&<>
  {head('BASISTRAINING')}
  {title('10',238,'Markieren Sie und notieren Sie die Zahlen.','KB 4','Wörter')}
- <div className="nabNumberSnake" style={{left:202,top:282,width:780}}>{['neunzehn','fünfundachtzig','zwanzig','sechsunddreißig','acht','drei','siebenundsiebzig','sechzehn','neun','dreiundzwanzig'].map((s,i)=><button key={s} className={i===0||v['number-'+i]?'marked':''} onClick={()=>set('number-'+i,v['number-'+i]?'':'true')} aria-label={'10 Zahl markieren '+s}>{s}{i===5?<br/>:null}</button>)}</div>
+ <div className="nabNumberSnake" style={{left:202,top:282,width:780}}>{['neunzehn','fünfundachtzig','zwanzig','sechsunddreißig','acht','drei','siebenundsiebzig','sechzehn','neun','dreiundzwanzig'].map((s,i)=><span key={s}><button className={i===0||v['number-'+i]?'marked':''} onClick={()=>set('number-'+i,v['number-'+i]?'':'true')} aria-label={'10 Zahl markieren '+s}>{s}</button>{i===5?<br/>:null}</span>)}</div>
  {text(202,340,50,'19,','nabExample')}{field('u10-zahlen',252,337,600,'10 Zahlen notieren')}{checkGroup('u10',202,381)}
  {title('11',422,'Wie ist die Telefonnummer? Hören Sie und kreuzen Sie an.','KB 4','Wörter')}{listen('08',112,460)}
  {['030 / 52 79 91 36','0171 / 85 67 03 25','06391 / 32 44 67','08233 / 25 38 57'].map((s,i)=><div key={s}>{text(202,470+i*31,24,String.fromCharCode(97+i))}{choice('u11-'+i,'l',231,466+i*31,'11'+String.fromCharCode(97+i)+' links')}{text(266,470+i*31,210,s)}{choice('u11-'+i,'r',495,466+i*31,'11'+String.fromCharCode(97+i)+' rechts')}{text(530,470+i*31,250,['030 / 52 79 91 63','0171 / 58 67 02 25','06391 / 32 44 57','08233 / 52 36 59'][i])}</div>)}
