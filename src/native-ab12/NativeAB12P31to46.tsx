@@ -1700,10 +1700,10 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(710,255,177,'zum Termin kommen?','naHl45 naNw')}
   {text(169,278,180,'Morgen, um 10.00 Uhr','naNw naF172')}
   {text(168,310,183,'Mittwoch, um 8.00 Uhr','naNw naF172')}
-  {text(167,343,265,'Mittwoch, von 10.00 bis 12.00 Uhr','naNw naF172')}
-  {text(191,394,596,'Was ist beim Hören wichtig? Lesen Sie die Fragen genau und markieren Sie','naNw naTip45')}
-  {text(190,415,637,'wichtige Wörter. Lesen Sie dann die Antworten. Alle Antworten können im Text','naNw naTip45')}
-  {text(189,437,391,'vorkommen, aber achten Sie genau auf die Frage.','naNw naTip45')}
+  {text(167,345,265,'Mittwoch, von 10.00 bis 12.00 Uhr','naNw naF172')}
+  {text(191,402,596,'Was ist beim Hören wichtig? Lesen Sie die Fragen genau und markieren Sie','naNw naTip45')}
+  {text(190,423,637,'wichtige Wörter. Lesen Sie dann die Antworten. Alle Antworten können im Text','naNw naTip45')}
+  {text(189,445,391,'vorkommen, aber achten Sie genau auf die Frage.','naNw naTip45')}
   {title('2',115,503,770,'Was ist richtig? Kreuzen Sie an. Sie hören jeden Text zweimal.','naGB naTls60 naNw')}
   {text(157,548,10,'a','naLet45 naNw')}
   {text(180,544,300,'Wann kann Frau Huber vielleicht','naNw')}
@@ -1777,7 +1777,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {art('arrd2',280,1222,13,13)}
   {text(300,1214,45,'oder','naT45 naNw')}
   {art('arru2',349,1223,28,14)}
-  {art('tiprule',158,386,682,13)}
+  {art('tiprule',158,381,682,17)}
   {art('tiptab',156,385,14,70)}
   {art('regelbar',140,1236,360,20)}
   {art('regelv',145,1281,22,36)}
@@ -1822,7 +1822,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {audio('assets/ab-a12-track21.mp3',59,889,'2 21')}
   {audio('assets/ab-a12-track22.mp3',552,897,'2 22')}
   {audio('assets/ab-a12-track23.mp3',588,1147,'2 23')}
-  {check('45-1',962,390,{'1z0':'true','1z1':'true','1z2':'false','1t':'2'})}
+  {check('45-1',962,420,{'1z0':'true','1z1':'true','1z2':'false','1t':'2'})}
   {check('45-2',177,792,{'2a':'2','2b':'2','2c':'0','2d':'0'})}
   {check('45-3',290,1335,{'p45-r0':'oben','p45-r1':'unten'})}
   {check('45-4',948,1104,{'p45-3a':'?','p45-3b':'!','p45-3c':'!','p45-3d':'?','p45-3e':'!','p45-3f':'?'})}
