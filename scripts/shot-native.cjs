@@ -22,14 +22,14 @@ const server=http.createServer((req,res)=>{
   await p.goto(`http://127.0.0.1:5199/${html}#${page}`);
   await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
   const el=p.locator(sel).first();await el.waitFor({timeout:15000});
-  await el.scrollIntoViewIfNeeded();await p.waitForTimeout(400);
+  await el.scrollIntoViewIfNeeded();try{await p.evaluate(()=>document.fonts.ready.then(()=>1))}catch(e){}await p.waitForTimeout(600);
   await el.screenshot({path:out+'-full.png'});
   await p.close();
   p=await browser.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
   p.on('pageerror',e=>errors.push(e.message));
   await p.goto(`http://127.0.0.1:5199/${html}#${page}`);
   await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
-  const el2=p.locator(sel).first();await el2.scrollIntoViewIfNeeded();await p.waitForTimeout(400);
+  const el2=p.locator(sel).first();await el2.scrollIntoViewIfNeeded();try{await p.evaluate(()=>document.fonts.ready.then(()=>1))}catch(e){}await p.waitForTimeout(600);
   await el2.screenshot({path:out+'-390.png'});
   if(errors.length)console.log('PAGEERRORS',errors.slice(0,5));
   await p.close();
