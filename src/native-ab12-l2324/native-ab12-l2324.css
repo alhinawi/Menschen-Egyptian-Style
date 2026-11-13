@@ -68,3 +68,8 @@
 .naCanvas .naSDot{position:absolute;width:14px;height:14px;border-radius:4px;box-shadow:inset 0 2px 3px rgba(255,255,255,.55),inset 0 -2px 3px rgba(0,0,0,.25)}
 .naCanvas .naSDR{background:#e50705}.naCanvas .naSDY{background:#fbef04}.naCanvas .naSDG{background:#64c301}
 .naCanvas .naTestRule{position:absolute;height:0;border-top:1.5px solid #a52d4c}
+
+.naCanvas .naText.naBk88{font-size:13.6px;letter-spacing:-0.05px}
+.naCanvas .naBank88{position:absolute;font:14px FiraSans,'Trebuchet MS',sans-serif;color:#324468;white-space:nowrap}
+.naCanvas .naText.naBk88m{letter-spacing:-0.15px}
+.naCanvas .naText.naBk88l{letter-spacing:-0.1px}
