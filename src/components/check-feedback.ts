@@ -84,6 +84,7 @@ const fieldEls=(root:ParentNode,id:string)=>[...root.querySelectorAll<HTMLElemen
 const registry=new WeakMap<HTMLButtonElement,Record<string,string>>();
 export function registerCheckAnswers(button:HTMLButtonElement,answers?:Record<string,string>){if(answers)registry.set(button,answers);else registry.delete(button)}
 interface Item{field:ScanField;els:HTMLElement[];radios?:HTMLInputElement[]}
+const radioFieldEls=(root:ParentNode,f:ScanField)=>{const els=fieldEls(root,f.id);if(els.length||f.kind!=='radio')return els;const tagged=[...root.querySelectorAll<HTMLElement>('[data-native-radio]')].filter(e=>e.dataset.nativeRadio===f.id);if(tagged.length)return tagged;const name=f.name||f.id;return [...root.querySelectorAll<HTMLInputElement>('input[type=radio]')].filter(r=>r.name.endsWith('-'+name)&&/(^|-)\d+$/.test(r.name.slice(0,-(name.length+1)))&&(r.dataset.value??r.dataset.val)===f.value)}
 function keyedFields(button:HTMLButtonElement){
  const root=button.closest<HTMLElement>('.page')||document.body;
  const pageNo=root.dataset.page||button.closest<HTMLElement>('[data-native-page]')?.dataset.nativePage||'';
@@ -106,7 +107,7 @@ function keyedFields(button:HTMLButtonElement){
  const group=holder?.dataset.nativeTask||holder?.dataset.nativeCheck||'';
  let best:Item[]=[];
  for(const src of pageSources(pageNo)){
-  const found=src.fields.filter(f=>f.answer!==undefined&&(!group||f.group===group)).map(field=>({field,els:fieldEls(root,field.id)})).filter(x=>x.els.length);
+  const found=src.fields.filter(f=>f.answer!==undefined&&(!group||f.group===group)).map(field=>({field,els:radioFieldEls(root,field)})).filter(x=>x.els.length);
   if(found.length>best.length)best=found;
  }
  return {root,pageNo,items:best};
@@ -115,7 +116,7 @@ function isRight(f:ScanField,el:HTMLElement){
  const answer=f.answer!;
  if(el instanceof HTMLInputElement&&(el.type==='radio'||el.type==='checkbox'))return el.checked===(normText(answer)==='true');
  if(el instanceof HTMLSelectElement){const picked=[el.value,el.selectedOptions[0]?.textContent||''].map(normText);return answer.split('|').some(a=>picked.includes(normText(a)))}
- const value=(el as HTMLInputElement).value||'';
+ const value=el instanceof HTMLButtonElement?(el.textContent||''):((el as HTMLInputElement).value||'');
  if(f.unordered)return normSet(answer)===normSet(value);
  return answer.split('|').some(a=>normText(a)===normText(value));
 }
@@ -128,7 +129,16 @@ export function markCheckFields(button:HTMLButtonElement,correct:boolean){
  let marked=0;
  for(const it of items)for(const el of [...it.els,...(it.radios||[])])el.removeAttribute('data-check-mark');
  const set=(el:HTMLElement,ok:boolean)=>{el.setAttribute('data-check-mark',ok?'ok':'bad');marked++};
+ const radioItems=items.filter(i=>i.field.kind==='radio'&&!i.radios?.length);
+ const byName=new Map<string,Item[]>();
+ for(const it of radioItems){const k=it.field.name||it.field.id;byName.set(k,[...(byName.get(k)||[]),it])}
+ for(const group of byName.values()){
+  const picked=group.find(it=>(it.els[0] as HTMLInputElement).checked);
+  if(!picked)group.forEach(it=>it.els.forEach(el=>set(el,false)));
+  else picked.els.forEach(el=>set(el,correct||normText(picked.field.answer!)==='true'));
+ }
  for(const {field,els,radios} of items){
+  if(field.kind==='radio'&&!radios?.length)continue;
   for(const el of els){
    const ok=correct||isRight(field,el);
    if(ok&&isToggle(el)&&!(el as HTMLInputElement).checked)continue;
