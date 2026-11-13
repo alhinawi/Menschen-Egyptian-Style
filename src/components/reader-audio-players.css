@@ -42,9 +42,6 @@ body.hasActiveAudio{padding-bottom:calc(var(--reader-controls-height,56px) + var
 .readerActiveAudio .readerAudioPlayer{padding-right:44px}
 .readerActiveAudio .readerAudioHeading{padding-right:0}
 
-/* Reserve audio space only while a player is visible. */
-body.readerSplitControls:not(.hasActiveAudio):not(:has(.readerAudioPanel .readerAudioPlayer)){padding-bottom:var(--reader-controls-height,56px)}
-html:has(body.readerSplitControls:not(.hasActiveAudio):not(:has(.readerAudioPanel .readerAudioPlayer))),body.readerSplitControls:not(.hasActiveAudio):not(:has(.readerAudioPanel .readerAudioPlayer)) #viewport{scroll-padding-bottom:var(--reader-controls-height,56px)}
-/* A short page ends with its hint and toolbar, without a viewport-sized spacer. */
-body.readerSplitControls:not(.hasActiveAudio):not(:has(.readerAudioPanel .readerAudioPlayer)){padding-bottom:0}
-body.readerSplitControls:not(.hasActiveAudio):not(:has(.readerAudioPanel .readerAudioPlayer)) .controls{position:sticky;bottom:0;left:auto;right:auto}
+/* One permanent player lives below the page; no hide button or floating copy. */
+.readerAudioPlayer{padding-right:12px}
+.readerAudioPanel{display:grid!important}
