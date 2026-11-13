@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build native page data for KB A1.1 from scan-data + original page scans.
 Text is rebuilt as real DOM text at the scanned word boxes; non-text artwork is cropped from the scan at exact framing."""
-import json,sys,os,statistics
+import json,sys,os,statistics,subprocess
 import numpy as np
 from PIL import Image,ImageFont
 from scipy import ndimage as ndi
@@ -243,4 +243,6 @@ if __name__=='__main__':
         r=build(p)
         apply_overrides(r,p)
         json.dump(r,open(f'{ROOT}/src/native-kb11/p{p}.json','w'),ensure_ascii=False,separators=(',',':'))
+        if p==24:
+            subprocess.run([sys.executable,os.path.join(ROOT,'scripts/deskew-kb11-p24.py')],check=True)
         print(p,len(r['words']),len(r['art']),sum(1 for w in r['words'] if w.get('r')))
