@@ -158,7 +158,7 @@
    "k": "t",
    "t": "zurück.",
    "x": 600,
-   "y": 327,
+   "y": 323,
    "s": 16,
    "col": "#383838",
    "c": "naFiraR"
@@ -243,7 +243,7 @@
    "k": "t",
    "t": "ausgeräumt?",
    "x": 192,
-   "y": 470,
+   "y": 468,
    "s": 18,
    "col": "#383838"
   },
@@ -307,7 +307,7 @@
    "k": "t",
    "t": "Nein.",
    "x": 193,
-   "y": 491,
+   "y": 492,
    "s": 18,
    "col": "#383838"
   },
@@ -339,7 +339,7 @@
    "k": "t",
    "t": "Dann",
    "x": 193,
-   "y": 517,
+   "y": 518,
    "s": 18,
    "col": "#383838"
   },
@@ -415,7 +415,7 @@
    "t": "Dann bist du vielleicht unsere",
    "x": 165,
    "y": 776,
-   "s": 17.0,
+   "s": 17.2,
    "col": "#383838",
    "c": "naFiraR"
   },
@@ -424,7 +424,7 @@
    "t": "perfekte Mitbewohnerin!",
    "x": 165,
    "y": 800,
-   "s": 17.0,
+   "s": 17.2,
    "col": "#383838",
    "c": "naFiraR"
   },
@@ -433,7 +433,7 @@
    "t": "Achtung: Wir (= Paula, Susi und drei Katzen)",
    "x": 164,
    "y": 824,
-   "s": 18.0,
+   "s": 17.2,
    "col": "#383838",
    "c": "naFiraR"
   },
@@ -442,7 +442,7 @@
    "t": "sind nicht sehr ordentlich, aber sehr sympathisch",
    "x": 164,
    "y": 848,
-   "s": 17.0,
+   "s": 17.2,
    "col": "#383838",
    "c": "naFiraR"
   },
@@ -451,16 +451,16 @@
    "t": "Schreib uns bitte:",
    "x": 164,
    "y": 872,
-   "s": 17.0,
+   "s": 17.2,
    "col": "#383838",
    "c": "naFiraR"
   },
   {
    "k": "t",
    "t": "paula.patent@t-online.de",
-   "x": 173,
+   "x": 164,
    "y": 895,
-   "s": 16.0,
+   "s": 17.2,
    "col": "#383838",
    "c": "naFiraR"
   },
@@ -484,16 +484,16 @@
   },
   {
    "k": "t",
-   "t": "Ihr auch? Suchen noch zwei Mitbewohner (ca. 20-30 Jahre)",
+   "t": "Ihr auch? Suchen noch zwei Mitbewohner (ca. 20–30 Jahre)",
    "x": 474,
    "y": 943,
-   "s": 18.0,
+   "s": 17.5,
    "col": "#383838",
    "c": "naFiraR p62Tilt"
   },
   {
    "k": "t",
-   "t": "für Zimmer (350,- €); wg-kontakt@web.de",
+   "t": "für Zimmer (350,– €); wg-kontakt@web.de",
    "x": 474,
    "y": 967,
    "s": 18.0,
@@ -503,9 +503,9 @@
   {
    "k": "t",
    "t": "Hallo",
-   "x": 180,
-   "y": 1154,
-   "s": 18.5,
+   "x": 190,
+   "y": 1151,
+   "s": 15.5,
    "col": "#383838",
    "c": "naDI"
   },
@@ -530,7 +530,7 @@
   {
    "k": "t",
    "t": "Jahre alt und ich suche ein",
-   "x": 681,
+   "x": 684,
    "y": 1180,
    "s": 16.0,
    "col": "#383838",
