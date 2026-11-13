@@ -2172,7 +2172,7 @@
  "fields": [
   {
    "id": "p69-a2-lang",
-   "group": "g1",
+   "group": "confidence-p69-a2",
    "kind": "radio",
    "label": "Aussprache 2: sind lang.",
    "name": "a2",
@@ -2184,7 +2184,7 @@
   },
   {
    "id": "p69-a2-kurz",
-   "group": "g1",
+   "group": "confidence-p69-a2",
    "kind": "radio",
    "label": "Aussprache 2: sind kurz.",
    "name": "a2",
@@ -2196,7 +2196,7 @@
   },
   {
    "id": "p69-a2-langOderKurz",
-   "group": "g1",
+   "group": "confidence-p69-a2",
    "kind": "radio",
    "label": "Aussprache 2: koennen lang oder kurz sein.",
    "name": "a2",
@@ -2238,7 +2238,7 @@
  ],
  "groups": [
   {
-   "id": "g1",
+   "id": "confidence-p69-a2",
    "label": "Aussprache 2"
   }
  ],

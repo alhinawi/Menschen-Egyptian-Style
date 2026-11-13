@@ -1254,7 +1254,7 @@
   },
   {
    "id": "p87-a1r1-1",
-   "group": "g2",
+   "group": "confidence-p87-a1",
    "kind": "radio",
    "label": "Aussprache 1 Reihe 1 Wort 1",
    "name": "a1r1",
@@ -1266,7 +1266,7 @@
   },
   {
    "id": "p87-a1r1-2",
-   "group": "g2",
+   "group": "confidence-p87-a1",
    "kind": "radio",
    "label": "Aussprache 1 Reihe 1 Wort 2",
    "name": "a1r1",
@@ -1278,7 +1278,7 @@
   },
   {
    "id": "p87-a1r2-1",
-   "group": "g2",
+   "group": "confidence-p87-a1",
    "kind": "radio",
    "label": "Aussprache 1 Reihe 2 Wort 1",
    "name": "a1r2",
@@ -1290,7 +1290,7 @@
   },
   {
    "id": "p87-a1r2-2",
-   "group": "g2",
+   "group": "confidence-p87-a1",
    "kind": "radio",
    "label": "Aussprache 1 Reihe 2 Wort 2",
    "name": "a1r2",
@@ -1302,7 +1302,7 @@
   },
   {
    "id": "p87-a1r3-1",
-   "group": "g2",
+   "group": "confidence-p87-a1",
    "kind": "radio",
    "label": "Aussprache 1 Reihe 3 Wort 1",
    "name": "a1r3",
@@ -1314,7 +1314,7 @@
   },
   {
    "id": "p87-a1r3-2",
-   "group": "g2",
+   "group": "confidence-p87-a1",
    "kind": "radio",
    "label": "Aussprache 1 Reihe 3 Wort 2",
    "name": "a1r3",
@@ -1326,7 +1326,7 @@
   },
   {
    "id": "p87-a1r4-1",
-   "group": "g2",
+   "group": "confidence-p87-a1",
    "kind": "radio",
    "label": "Aussprache 1 Reihe 4 Wort 1",
    "name": "a1r4",
@@ -1338,7 +1338,7 @@
   },
   {
    "id": "p87-a1r4-2",
-   "group": "g2",
+   "group": "confidence-p87-a1",
    "kind": "radio",
    "label": "Aussprache 1 Reihe 4 Wort 2",
    "name": "a1r4",
@@ -1350,7 +1350,7 @@
   },
   {
    "id": "p87-a1r5-1",
-   "group": "g2",
+   "group": "confidence-p87-a1",
    "kind": "radio",
    "label": "Aussprache 1 Reihe 5 Wort 1",
    "name": "a1r5",
@@ -1362,7 +1362,7 @@
   },
   {
    "id": "p87-a1r5-2",
-   "group": "g2",
+   "group": "confidence-p87-a1",
    "kind": "radio",
    "label": "Aussprache 1 Reihe 5 Wort 2",
    "name": "a1r5",
@@ -1374,7 +1374,7 @@
   },
   {
    "id": "p87-a1r6-1",
-   "group": "g2",
+   "group": "confidence-p87-a1",
    "kind": "radio",
    "label": "Aussprache 1 Reihe 6 Wort 1",
    "name": "a1r6",
@@ -1386,7 +1386,7 @@
   },
   {
    "id": "p87-a1r6-2",
-   "group": "g2",
+   "group": "confidence-p87-a1",
    "kind": "radio",
    "label": "Aussprache 1 Reihe 6 Wort 2",
    "name": "a1r6",
@@ -1432,7 +1432,7 @@
    "label": "Hören 2"
   },
   {
-   "id": "g2",
+   "id": "confidence-p87-a1",
    "label": "Aussprache 1"
   }
  ],
