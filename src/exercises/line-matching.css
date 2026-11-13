@@ -6,4 +6,7 @@
 
 .sharedMatching .sharedMatchItem{touch-action:none;user-select:none;-webkit-user-select:none}
 
+@font-face{font-family:LMDroid;src:url('/assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}
 .lmHideLeft .sharedMatchItem:not([data-match-right]){color:transparent!important}
+.lmHideRight .sharedMatchItem[data-match-right]{color:transparent!important}
+.sharedMatching.lmScanFont .sharedMatchItem{font-family:LMDroid,Georgia,serif}

@@ -4,11 +4,13 @@
 .naCanvas .naText.naItalic{font-style:italic}
 .naCanvas .naTRule.naTLine{border-bottom-color:#cfe0d8}
 .naCanvas .naTCol.naTLine{border-left-color:#cfe0d8}
-.naCanvas .naTitle.naRB b{background:#cc1409}
 .naCanvas .naText.naS20{font-size:20px}
 .naCanvas .naText.naS17{font-size:17px}
 .naCanvas .naText.naS16{font-size:16px}
-.naCanvas .naText.naHead2{font-size:30px;letter-spacing:6px;color:#6f6f6f}
+.naCanvas .naText.naHead2{font-family:DroidSerif,Georgia,serif!important;color:#545556!important}
+.naCanvas .naText.naH30{font-size:29px!important;letter-spacing:1.2px!important}
+.naCanvas .naText.naH24{font-size:25.5px!important;letter-spacing:3px!important}
+.naCanvas .naText.naH27{font-size:27px!important;letter-spacing:2.7px!important}
 .naCanvas .naTitle.naLS{letter-spacing:.55px}
 .naCanvas .naTitle.naLS3{letter-spacing:.3px}
 .naCanvas .naTitle.naLS{letter-spacing:-.1px}
