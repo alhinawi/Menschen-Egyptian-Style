@@ -29,3 +29,31 @@
 .naCanvas .naText.naF17{font-size:17.3px!important}
 .naCanvas .naText.naPkt{font-family:FiraSans,Arial,sans-serif!important;font-weight:700;font-size:11px!important;letter-spacing:1.2px;color:#222;text-transform:uppercase}
 .naCanvas .naRule{border-color:#222}
+.naCanvas .naText.naH38{font-size:34.5px!important;letter-spacing:2.2px!important;color:#2d2b25!important}
+.naCanvas .naSans2.naSpkR{color:#b25a63!important;font-weight:500;font-size:16.5px}
+.naCanvas .naSans2.naSpkB{color:#3c5686!important;font-weight:500;font-size:16.5px}
+.naCanvas .naSans2.naDlgB{color:#3c5686!important}
+.naCanvas .naULine{display:inline-block;height:13px;border-bottom:1.5px solid #7d858f;margin:0 1px}
+.naCanvas .naTitle.naT18{font-size:18px!important}
+.naCanvas .naText.naF185{font-size:18.5px!important}
+[data-native-ab12="24"] .naCanvas .naField{border-bottom-color:#7d858f!important}
+[data-native-ab12="24"] .naCanvas .naField.naDashU{border-bottom:none!important;background-color:transparent!important;background-image:repeating-linear-gradient(90deg,#abadad 0 8px,rgba(0,0,0,0) 8px 15px)!important;background-size:100% 1.3px!important;background-position:left bottom!important;background-repeat:no-repeat!important}
+[data-native-ab12="24"] .naCanvas .naText.naF192{font-size:19.2px!important}
+[data-native-ab12="24"] .naCanvas .naField.naLow{height:23px!important}
+[data-native-ab12="25"] .naCanvas .naSqB{position:absolute;width:10px;height:10px;background:#123995}
+[data-native-ab12="25"] .naCanvas .naTriG{position:absolute;width:0;height:0;border-left:5.5px solid transparent;border-right:5.5px solid transparent;border-bottom:10px solid #2aad3b}
+[data-native-ab12="25"] .naCanvas .naSans2{font-family:DroidSerif,Georgia,serif!important;font-size:18.5px!important;margin-top:-2px;letter-spacing:0!important}
+[data-native-ab12="25"] .naCanvas .naText.naH38{letter-spacing:2.4px!important}
+[data-native-ab12="25"] .naCanvas .naTitle{padding-left:46px;text-indent:-46px}
+[data-native-ab12="25"] .naCanvas .naTitle.naT18{font-size:21px!important;letter-spacing:0!important;word-spacing:0!important}
+[data-native-ab12="25"] .naCanvas .naTitle.naRB>b{min-width:32px;width:32px;height:20px;line-height:20px;font-size:18px;position:relative;top:-1px}
+[data-native-ab12="25"] .naCanvas .naField{border-bottom-color:#c9ced2!important}
+[data-native-ab12="25"] .naCanvas .naRule{border-bottom-color:#c9ced2!important}
+[data-native-ab12="25"] .naCanvas .naSans2.naS19{font-size:18.6px!important}
+[data-native-ab12="25"] .naCanvas .naText.naFooter{font-size:16.5px!important;letter-spacing:0!important}
+[data-native-ab12="25"] .naCanvas .naText.naFooter.naFB{font-weight:700!important}
+[data-native-ab12="25"] .naCanvas .naTitle>b{text-indent:0!important}
+
+@font-face{font-family:ABDroidSans;src:url('/assets/fonts/droid-sans-700.woff2') format('woff2');font-weight:700;font-display:swap}
+[data-native-ab12="25"] .naCanvas .naTitle.naT18{font-family:ABDroidSans,FiraSans,sans-serif!important;font-weight:700!important}
+

@@ -10,7 +10,7 @@ function Words({text}:{text:string}){return <>{text.split(/(\s+)/).map((w,i)=>/\
 const normalize=(s:string)=>s.normalize('NFC').trim().toLocaleLowerCase('de').replace(/[.!?]+$/,'').replace(/\s+/g,' ');
 
 export function NativeAB12P21_24({page}:{page:string}){
- const W=1071,H=page==='21'?1447:1452;
+ const W=1071,H=(page==='21'||page==='25')?1447:1452;
  const root=useRef<HTMLDivElement>(null),player=useRef<HTMLAudioElement>(null);
  const [scale,ss]=useState(.6);const key='native-ab12-'+page;
  const [values,sv]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return {}}});
@@ -21,6 +21,7 @@ export function NativeAB12P21_24({page}:{page:string}){
  const text=(x:number,y:number,w:number,t:string,cls='')=><div className={'naText '+cls} style={{left:x,top:y,width:w}}><Words text={t}/></div>;
  const art=(name:string,x:number,y:number,w:number,h:number)=><PageImage className="naArt" src={`assets/book-crops/native-ab12-p${page}-${name}.png`} alt={'Originalillustration '+name} style={{left:x,top:y,width:w,height:h}}/>;
  const stext=(x:number,y:number,w:number,t:string,cls='')=><div className={'naSans2 '+cls} style={{left:x,top:y,width:w}}><Words text={t}/></div>;
+ const rich=(x:number,y:number,w:number,parts:(string|number)[],cls='')=><div className={'naText '+cls} style={{left:x,top:y,width:w}}>{parts.map((p,i)=>typeof p==='string'?<Words key={i} text={p}/>:<span key={i} className="naULine" style={{width:p}}/>)}</div>;
  const field=(id:string,x:number,y:number,w:number,label:string,cls='')=><input className={'naField '+cls} aria-label={label} data-native-field={id} style={{left:x,top:y,width:w}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
  const dot=(id:string,value:string,x:number,y:number,label:string,cls='')=><input type="radio" className={'naDot '+cls} name={key+'-'+id} aria-label={label} data-native-field={id} style={{left:x,top:y}} checked={values[id]===value} onChange={()=>set(id,value)}/>;
  const check=(id:string,x:number,y:number,answers:Record<string,string>,cls='')=><div className={'naCheck '+cls} data-check={id} style={{left:x,top:y}}><CheckButton onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
@@ -226,6 +227,248 @@ export function NativeAB12P21_24({page}:{page:string}){
   {text(441,1357,240,'www.hueber.de/menschen/lernen','naUrl naNw')}
   {art('modul-tab',0,1384,86,30)}
   {text(93,1395,190,'22 | zweiundzwanzig','naFooter naNw')}
+ </>}
+ {page==='24'&&<>
+  {text(134,66,790,'WIEDERHOLUNGSSTATION: WORTSCHATZ','naHead2 naH38')}
+  {title('1',131,161,900,'In der Stadt. Was ist das? Notieren Sie.','naRB naT18')}
+  {text(171,196,15,'a')}
+  {art('eine-bank-script',185,200,85,28)}
+  {text(171,221,15,'b')}
+  {field('p24-1b',195,215,303,'1b')}
+  {text(171,248,15,'c')}
+  {field('p24-1c',195,242,303,'1c')}
+  {text(171,272,15,'d')}
+  {field('p24-1d',195,266,303,'1d')}
+  {text(540,202,15,'e')}
+  {field('p24-1e',566,196,304,'1e')}
+  {text(540,228,15,'f')}
+  {field('p24-1f',566,222,304,'1f')}
+  {text(538,254,15,'g')}
+  {field('p24-1g',566,248,304,'1g')}
+  {text(538,280,15,'h')}
+  {field('p24-1h',566,274,304,'1h')}
+  {text(891,184,15,'a')}
+  {art('a-bank-bild',905,183,47,65)}
+  {text(974,139,15,'b')}
+  {art('b-kirche',985,140,57,88)}
+  {text(897,258,15,'c')}
+  {art('c-schloss',908,258,87,82)}
+  {text(651,326,15,'d')}
+  {art('d-turm',662,338,44,62)}
+  {text(743,336,15,'e')}
+  {art('e-hafen',760,335,118,70)}
+  {text(687,404,15,'f')}
+  {art('f-bibliothek',700,412,110,66)}
+  {text(936,364,15,'g')}
+  {art('g-post',952,355,76,75)}
+  {text(846,416,15,'h')}
+  {art('h-spielplatz',830,436,102,54)}
+  {check('g1',878,306,{'p24-1b':'eine Kirche|Kirche|die Kirche','p24-1c':'ein Schloss|Schloss|das Schloss','p24-1d':'ein Turm|Turm|der Turm','p24-1e':'ein Hafen|Hafen|der Hafen','p24-1f':'eine Bibliothek|Bibliothek|die Bibliothek','p24-1g':'eine Post|Post|die Post','p24-1h':'ein Spielplatz|Spielplatz|der Spielplatz'})}
+  {title('2',128,342,900,'Was passt zusammen? Ordnen Sie zu.','naRB naT18')}
+  {text(167,380,140,'Garage','naF185')}
+  {text(166,406,140,'Arbeitszimmer','naF185')}
+  {text(166,431,140,'Bad','naF185')}
+  {text(165,457,140,'Schlafzimmer','naF185')}
+  {text(165,482,140,'Garten','naF185')}
+  {text(164,508,140,'Wohnzimmer','naF185')}
+  {text(165,534,140,'Küche','naF185')}
+  {text(396,384,160,'Couch','naF185')}
+  {text(395,410,160,'Toilette','naF185')}
+  {text(395,435,160,'Computer','naF185')}
+  {text(395,461,160,'Kühlschrank','naF185')}
+  {text(394,486,160,'Auto','naF185')}
+  {text(394,512,160,'Blumen','naF185')}
+  {text(394,537,160,'Bett','naF185')}
+  {art('ex2-curve',238,490,156,41)}
+  {title('3',123,600,900,'Wo wohnt Charlotte? Lösen Sie das Rätsel.','naRB naT18')}
+  {rich(160,636,520,['Charlotte wohnt in der Stadtmitte, direkt im ',48,' (1) ',38,'.'])}
+  {rich(160,662,520,['Ihre Wohnung ist im 3. ',22,' (4) ',34,' und hat 45 m².'])}
+  {rich(160,688,520,['Charlotte hat zwei Zimmer mit ',28,' (2) ',42,' und Bad.'])}
+  {rich(160,714,520,['Ihr Vermieter ist sehr nett und die ',26,' (3) ',36,' ist günstig.'])}
+  {rich(160,740,520,['Neben ihr wohnt Frau Thiele, das ist ihre ',40,' (5) ',36,'.'])}
+  {art('kreuzwort',158,780,417,182)}
+  {text(591,920,75,'Lösung:')}
+  {text(667,920,300,'Charlotte wohnt in der','naF192')}
+  {text(663,952,110,'Schweiz, in')}
+  {field('p24-3l',773,941,98,'Lösungswort','naDashU')}
+  {text(878,950,15,'.')}
+  {check('g2',905,939,{'p24-3l':'Zürich|Zuerich'})}
+  {title('4',115,1000,900,'Ergänzen Sie das Gespräch.','naRB naT18')}
+  <div className="naBandCream" style={{left:156,top:1040,width:509,height:32}}/>
+  {stext(162,1039,58,'Urlaub','naBankT')}{stext(220,1039,8,'|','naBankT')}
+  {stext(231,1039,58,'Wetter','naBankT')}{stext(290,1039,8,'|','naBankT')}
+  {stext(300,1039,44,'Meer','naBankT')}{stext(344,1039,8,'|','naBankT')}
+  {art('gruesse-strike',349,1038,60,34)}
+  {stext(407,1039,8,'|','naBankT')}{stext(417,1039,34,'Dom','naBankT')}{stext(456,1039,8,'|','naBankT')}
+  {stext(466,1039,62,'Wochen','naBankT')}{stext(534,1039,8,'|','naBankT')}
+  {stext(545,1039,48,'Hause','naBankT')}{stext(598,1039,8,'|','naBankT')}
+  {stext(608,1039,52,'Bergen','naBankT')}
+  {stext(171,1082,50,'ARISA:','naSpkR')}
+  {stext(233,1082,130,'Hallo Uli, schöne','')}
+  {art('gruesse-script',371,1085,57,28)}
+  {stext(426,1082,90,'aus Italien!')}
+  {stext(172,1106,45,'Uli91:','naSpkB')}
+  {stext(233,1106,250,'Aus Italien? Was machst du dort?','naDlgB')}
+  {stext(170,1128,50,'ARISA:','naSpkR')}
+  {field('p24-4a',232,1127,243,'4a','naLow')}
+  {stext(481,1128,30,'(a)!','')}
+  {art('emoji',510,1124,44,40)}
+  {stext(233,1150,110,'Ich war in den','')}
+  {field('p24-4b',341,1153,244,'4b','naLow')}
+  {stext(591,1150,360,'(b), in den Dolomiten. Jetzt bin ich an der Adria.','')}
+  {stext(170,1174,45,'Uli91:','naSpkB')}
+  {stext(231,1174,115,'Toll! Wie ist das','naDlgB')}
+  {field('p24-4c',349,1176,243,'4c','naLow')}
+  {stext(598,1174,70,'(c) dort?','naDlgB')}
+  {stext(169,1198,50,'ARISA:','naSpkR')}
+  {stext(232,1198,290,'Sehr warm! Ich schwimme jeden Tag im','')}
+  {field('p24-4d',524,1201,243,'4d','naLow')}
+  {stext(773,1198,30,'(d).','')}
+  {stext(231,1222,405,'Morgen fahre ich weiter nach Mailand, ich möchte den','')}
+  {field('p24-4e',670,1230,212,'4e','naLow')}
+  {stext(888,1222,70,'(e) sehen.','')}
+  {stext(169,1246,45,'Uli91:','naSpkB')}
+  {stext(230,1246,200,'Sprichst du Italienisch?','naDlgB')}
+  {stext(167,1269,50,'ARISA:','naSpkR')}
+  {stext(230,1269,140,'Sí, naturalmente …','')}
+  {stext(230,1299,60,'In zwei','')}
+  {field('p24-4f',290,1295,220,'4f','naLow')}
+  {stext(516,1299,220,'(f) bin ich wieder zu','')}
+  {field('p24-4g',680,1304,213,'4g','naLow')}
+  {stext(899,1299,70,'(g). Ciao!','')}
+  {stext(167,1323,45,'Uli91:','naSpkB')}
+  {stext(228,1323,200,'Tschüs und viel Spaß!','naDlgB')}
+  {check('g3',958,1345,{'p24-4a':'Urlaub','p24-4b':'Bergen','p24-4c':'Wetter','p24-4d':'Meer','p24-4e':'Dom','p24-4f':'Wochen','p24-4g':'Hause'})}
+  {art('modul-tab',0,1384,86,30)}
+  {text(76,1392,200,'24 | vierundzwanzig','naFooter naNw')}
+ </>}
+ {page==='25'&&<>
+  {text(102,68,790,'WIEDERHOLUNGSSTATION: GRAMMATIK','naHead2 naH38')}
+  {art('tabs',973,40,96,81)}
+  {art('house',95,108,517,270)}
+  {title('1',105,405,795,'Sehen Sie das Bild an und ergänzen Sie die Präpositionen und den Artikel, wo nötig.','naRB naT18 naLS3 naT1x')}
+  {stext(146,472,14,'a')}
+  {stext(171,472,168,'Frau Kerner wohnt')}
+  {art('neben',344,475,41,19)}
+  {stext(389,472,145,'Herrn Rahn und')}
+  {field('p25-1a',540,465,115,'1a')}
+  {stext(661,472,150,'Familie Burlach.')}
+  {stext(146,498,14,'b')}
+  {stext(171,498,96,'Frau Other wohnt')}
+  {field('p25-1b',333,491,117,'1b')}
+  {stext(455,498,150,'Familie Burlach.')}
+  {stext(146,524,14,'c')}
+  {field('p25-1c1',170,516,116,'1c1')}
+  {stext(290,524,14,'d')}
+  {field('p25-1c2',302,516,51,'1c2')}
+  {stext(359,524,165,'Haus ist ein Baum.')}
+  {stext(530,524,186,'Die Fahrräder stehen')}
+  {field('p25-1c3',722,517,115,'1c3')}
+  {stext(843,524,60,'Baum.')}
+  {stext(146,549,14,'d')}
+  {field('p25-1d1',170,541,128,'1d1')}
+  {stext(303,549,14,'d')}
+  {field('p25-1d2',315,542,51,'1d2')}
+  {stext(372,549,155,'Baum ist ein Zelt.')}
+  {field('p25-1d3',531,543,92,'1d3')}
+  {stext(628,549,232,'Zelt sind Sophie und Paul.')}
+  {stext(146,579,14,'e')}
+  {stext(171,577,305,'Herr und Frau Burlach sitzen gern')}
+  {field('p25-1e1',480,569,117,'1e1')}
+  {stext(600,577,14,'d')}
+  {field('p25-1e2',612,569,52,'1e2')}
+  {stext(670,577,70,'Balkon.')}
+  {check('g1',958,577,{'p25-1a':'unter','p25-1b':'über|ueber','p25-1c1':'Neben|neben','p25-1c2':'em','p25-1c3':'am','p25-1d1':'Vor','p25-1d2':'em','p25-1d3':'Im','p25-1e1':'auf','p25-1e2':'em'})}
+  {title('2',105,637,900,'Ergänzen Sie die Possessivartikel.','naRB naT18')}
+  {stext(146,679,14,'a')}
+  {stext(171,678,530,'Herr Rahn wohnt im Erdgeschoss. Er wohnt allein und liebt')}
+  {art('seine',703,681,39,19)}
+  {stext(746,678,75,'Blumen.')}
+  {stext(146,704,14,'b')}
+  {field('p25-2b',170,696,116,'2b')}
+  {stext(292,705,470,'Nachbarin, Frau Kerner, wohnt auch im Erdgeschoss.')}
+  {stext(146,731,14,'c')}
+  {stext(171,730,310,'Im 1. Stock wohnt Familie Burlach.')}
+  {field('p25-2c1',485,723,117,'2c1')}
+  {stext(607,730,180,'Sohn heißt Paul und')}
+  {field('p25-2c2',792,723,110,'2c2')}
+  {stext(170,756,295,'Tochter Sophie. Die Eltern finden')}
+  {field('p25-2c3',470,749,115,'2c3')}
+  {stext(591,756,165,'Balkon sehr schön.')}
+  {stext(146,782,14,'d')}
+  {stext(171,782,265,'Frau Other wohnt im 2. Stock.')}
+  {field('p25-2d1',442,774,106,'2d1')}
+  {stext(562,782,362,'Wohnung ist sehr groß und sie vermietet')}
+  {stext(170,808,110,'ein Zimmer.')}
+  {field('p25-2d2',283,799,115,'2d2')}
+  {stext(404,808,250,'Mieterin heißt Frau Reimer.')}
+  {check('g2',958,808,{'p25-2b':'Seine','p25-2c1':'Ihr','p25-2c2':'ihre','p25-2c3':'ihren','p25-2d1':'Ihre','p25-2d2':'Ihre'})}
+  {title('3',105,869,900,'Wer ist wer? Ergänzen Sie die Namen.','naRB naT18')}
+  {stext(146,911,14,'a')}
+  {stext(170,909,232,'Sophie ist Herrn und Frau')}
+  {art('burlachs',405,912,63,20)}
+  {stext(471,909,72,'Tochter.')}
+  {stext(146,936,14,'b')}
+  {stext(171,936,182,'Frau Reimer ist Frau')}
+  {field('p25-3b',358,929,155,'3b')}
+  {stext(518,936,85,'Mieterin.')}
+  {stext(146,962,14,'c')}
+  {stext(170,960,68,'Paul ist')}
+  {field('p25-3c',241,954,154,'3c')}
+  {stext(401,960,68,'Bruder.')}
+  {stext(146,986,14,'d')}
+  {stext(171,986,142,'Frau Burlach ist')}
+  {field('p25-3d1',317,980,155,'3d1')}
+  {stext(477,986,36,'und')}
+  {field('p25-3d2',517,980,154,'3d2')}
+  {stext(677,988,68,'Mutter.')}
+  {stext(146,1013,14,'e')}
+  {stext(171,1012,160,'Herr Rahn ist Frau')}
+  {field('p25-3e',341,1006,155,'3e')}
+  {stext(502,1012,80,'Nachbar.')}
+  {check('g3',958,1012,{'p25-3b':'Others','p25-3c':'Sophies','p25-3d1':'Pauls','p25-3d2':'Sophies','p25-3e':'Kerners'})}
+  {title('4',105,1075,900,'Ergänzen Sie das Pronomen.','naRB naT18')}
+  {stext(146,1116,14,'a')}
+  <span className="naSqB" style={{left:170,top:1123}}/>
+  {stext(189,1116,442,'Frau Neuner hat heute viel Arbeit und wenig Zeit.')}
+  {stext(638,1116,100,'Können Sie')}
+  {stext(823,1116,115,'bitte helfen?')}
+  <div className="naRule" style={{left:742,top:1136,width:77}}/>
+  <span className="naTriG" style={{left:171,top:1149}}/>
+  {stext(187,1142,200,'Ja, natürlich helfe ich')}
+  {art('ihr',388,1144,27,19)}
+  {stext(146,1162,14,'b')}
+  <span className="naSqB" style={{left:170,top:1174}}/>
+  {stext(187,1166,250,'Johanna und Martin, gefällt')}
+  {field('p25-4b1',444,1161,102,'4b1')}
+  {stext(551,1166,200,'denn mein Sofa nicht?')}
+  <span className="naTriG" style={{left:171,top:1201}}/>
+  {stext(189,1191,132,'Doch, es gefällt')}
+  {field('p25-4b2',327,1186,116,'4b2')}
+  {stext(444,1191,8,'.')}
+  {stext(146,1219,14,'c')}
+  <span className="naSqB" style={{left:170,top:1226}}/>
+  {stext(188,1217,158,'Gehört das Handy')}
+  {field('p25-4c1',350,1212,122,'4c1')}
+  {stext(476,1217,170,', Herr Kleinschmid?')}
+  <span className="naTriG" style={{left:171,top:1252}}/>
+  {stext(187,1243,112,'Ja, es gehört')}
+  {field('p25-4c2',300,1237,159,'4c2')}
+  {stext(459,1243,8,'.')}
+  {stext(146,1265,14,'d')}
+  <span className="naSqB" style={{left:170,top:1277}}/>
+  {stext(189,1269,500,'Ich finde das Schloss Schönbrunn in Wien sehr schön.','naS19')}
+  {stext(671,1269,88,'Gefällt es','naS19')}
+  {field('p25-4d1',756,1264,148,'4d1')}
+  {stext(189,1294,132,'nicht, Juliane?')}
+  <span className="naTriG" style={{left:171,top:1329}}/>
+  {stext(189,1319,132,'Doch, es gefällt')}
+  {field('p25-4d2',327,1314,156,'4d2')}
+  {stext(491,1319,430,', aber ich finde Schlösser ein bisschen langweilig.')}
+  {check('g4',958,1319,{'p25-4b1':'euch','p25-4b2':'uns','p25-4c1':'Ihnen','p25-4c2':'mir','p25-4d1':'dir','p25-4d2':'mir'})}
+  {text(797,1386,135,'fünfundzwanzig','naFooter naNw')}
+  {text(943,1386,35,'| 25','naFooter naNw naFB')}
+  {art('modul',991,1386,74,25)}
  </>}
  </div><audio ref={player} className="naPlayer"/></div>;
 }

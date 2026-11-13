@@ -73,6 +73,8 @@
 .naCanvas .naText.naBk88 span[role=button]{padding:0}
 .naCanvas .naRule.naRuleT{border-bottom-width:1px}
 @font-face{font-family:FiraSans;src:url('/assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:FiraSans;src:url('/assets/fonts/firasans-latin-500.ttf') format('truetype');font-weight:500;font-display:swap}
+@font-face{font-family:FiraSans;src:url('/assets/fonts/firasans-latin-600.woff2') format('woff2');font-weight:600;font-display:swap}
 .naCanvas .naBank88{position:absolute;font:13px FiraSans,'Trebuchet MS',sans-serif;color:#2c3d63;white-space:nowrap}
 .naCanvas .naBank88b{position:absolute;font:14px FiraSans,'Trebuchet MS',sans-serif;color:#2c3d63;white-space:nowrap}
 .naCanvas .naText.naCue88{position:absolute;font-family:DroidSerif,Georgia,serif;font-size:12px;color:#444;white-space:nowrap}
@@ -124,3 +126,139 @@
 [data-native-ab12="91"] .naTblHead{background:#ede8d2}
 [data-native-ab12="91"] .naField{border-bottom-width:1px!important;border-bottom-color:#d3d9d3!important}
 .naCanvas .naText.naEx4t{font-size:13.7px!important}
+[data-native-ab12="92"] .naBookSerif{letter-spacing:0!important}
+.naCanvas .naDotP92{position:absolute;width:9px;height:9px;border-radius:50%}
+.naCanvas .naBank92{font-size:12.4px;font-weight:400;color:#4b5d85}
+.naCanvas .naPipe92{color:#777356;font-weight:400}
+.naCanvas .naBlue{color:#2a5ea8}
+[data-native-ab12="92"] .naRule{border-bottom:1px solid #c4c4c8}
+.naCanvas .naText.naLet92{font:400 14px DroidSerif,Georgia,serif;letter-spacing:0;color:#1a1a1a}
+[data-native-ab12="92"] .naTitle.naRB b{background:#f96906;min-width:26px;width:26px;height:18px;line-height:18px;font:600 16px/18px FiraSans,sans-serif;margin-right:8px;position:relative;top:-3px;box-shadow:inset 0 2px 0 #c02838,inset 2px 0 0 #c02838}
+[data-native-ab12="92"] .naBasisL{font-size:25.5px;font-weight:400;letter-spacing:-0.9px;color:#4e4d44}
+.naCanvas .naStrike92{text-decoration:line-through}
+[data-native-ab12="92"] .naBank92{font-size:13px;color:#2b3a73}
+.naCanvas .naText.naEx10r{font-size:13.1px!important}
+
+/* p93 page-scoped */
+[data-native-ab12="93"] .naBookSerif{letter-spacing:0!important}
+[data-native-ab12="93"] .naTitle.naRB b{background:#f75c16;min-width:26px;width:26px;height:18px;line-height:18px;font:600 16px/18px FiraSans,sans-serif;margin-right:8px;position:relative;top:-3px;box-shadow:inset 0 2px 0 #c02838,inset 2px 0 0 #c02838}
+.naCanvas .naTrainHead93{font-family:DroidSerif,Georgia,serif;font-size:22.1px;letter-spacing:0.85px;color:#434642}
+.naCanvas .naBank93{font-size:13.4px;color:#2b3a73;font-weight:400}
+.naCanvas .naText.naInst93{font-family:FiraSans,'Trebuchet MS',sans-serif;font-size:14px}
+.naCanvas .naText.naInst93b{font-family:FiraSans,'Trebuchet MS',sans-serif;font-size:14px;font-weight:400}
+.naCanvas .naText.naNeu93{font-family:FiraSans,'Trebuchet MS',sans-serif;font-style:italic;font-size:15.5px;color:#5a5a5a}
+.naCanvas .naText.naIt93{font-family:DroidSerif,Georgia,serif;font-style:italic;font-size:12.3px;color:#1c1c19}
+.naCanvas .naText.naTippT93{font-size:12.6px}
+.naCanvas .naText.naItL1{font-size:11.3px}
+.naCanvas .naText.naItL2{font-size:11.3px}
+.naCanvas .naText.naItL3{font-size:11.2px}
+.naCanvas .naText.naItL4{font-size:12.4px}
+.naCanvas .naText.naItL5{font-size:11.5px}
+.naCanvas .naText.naItL6{font-size:11.3px}
+.naCanvas .naText.naItL7{font-size:11.4px}
+.naCanvas .naText.naItL8{font-size:10.9px}
+.naCanvas .naText.naItL9{font-size:11.8px}
+.naCanvas .naText.naTpL1{font-size:12.2px}
+.naCanvas .naText.naTpL2{font-size:12px}
+.naCanvas .naText.naTpL3{font-size:12px}
+.naCanvas .naText.naTpL4{font-size:11.9px}
+.naCanvas .naText.naTpL5{font-size:11.9px}
+.naCanvas .naText.naTpL6{font-size:11.8px}
+.naCanvas .naText.naTpL7{font-size:11.4px}
+.naCanvas .naText.naTpL8{font-size:11.9px}
+.naCanvas .naText.naTpL9{font-size:11.9px}
+.naCanvas .naText.naDash93{font-family:DroidSerif,Georgia,serif;font-size:13.3px}
+.naCanvas .naText.naRegelT93{font-size:12.1px}
+.naCanvas .naRegelBox93{position:absolute;background:#fcfcfc;box-shadow:inset 0 3px 0 #d8dde1,inset 0 -1px 0 #eaeaea}
+.naCanvas .naRegelTab93{position:absolute;background:#adb2b9}
+.naCanvas .naTipp.naRegelLbl93{color:#45484d}
+.naCanvas .naDashRule93{position:absolute;width:9px;border-bottom:1px solid #2b2b2b}
+[data-native-ab12="93"] .naCanvas .naTitle{font-size:16.6px}
+.naCanvas .naText.naZung93{font-size:13.3px}
+[data-native-ab12="93"] .naTipGold93{background:#be9617}
+[data-native-ab12="93"] .naField{border-bottom:1px solid #c4c4c8!important}
+[data-native-ab12="94"] .naBookSerif{letter-spacing:0!important}
+[data-native-ab12="94"] .naTitle.naRB b{background:#f97a2f;min-width:26px;width:26px;height:18px;line-height:18px;font:600 16px/18px FiraSans,sans-serif;margin-right:8px;position:relative;top:-3px;box-shadow:inset 0 2px 0 #d5783b,inset 2px 0 0 #d06849}
+[data-native-ab12="94"] .naField{border-bottom:1px solid #c4c4c8!important}
+[data-native-ab12="94"] .naSDot{width:15px;height:15px}
+[data-native-ab12="94"] .naSDR{background:#cb391e}
+[data-native-ab12="94"] .naSDY{background:#e4d725}
+[data-native-ab12="94"] .naSDG{background:#69ba26}
+[data-native-ab12="94"] .naCanvas .naText.naScoreH94{font:700 12.6px DroidSerif,Georgia,serif;color:#14100c}
+[data-native-ab12="94"] .naTestHead94{letter-spacing:1px}
+[data-native-ab12="94"] .naCanvas .naText.naScoreR94{font:12px DroidSerif,Georgia,serif;color:#2c2e2d}
+[data-native-ab12="94"] .naCanvas .naText.naCue94{font-family:DroidSerif,Georgia,serif;color:#252723;letter-spacing:0;white-space:nowrap}
+[data-native-ab12="94"] .naCanvas .naText.naCue94 span[role=button]{padding:0}
+[data-native-ab12="94"] .naTestRule94{position:absolute;height:1.5px;background:linear-gradient(90deg,#f0701a,#f08a20)}
+[data-native-ab12="96"] .naBookSerif{letter-spacing:0!important}
+[data-native-ab12="96"] .naField{border-bottom:1px solid #c4c4c8!important}
+[data-native-ab12="96"] .naCanvas .naText.naHead96{font-family:DroidSerif,Georgia,serif;color:#0f0e11;letter-spacing:0}
+[data-native-ab12="96"] .naCanvas .naText.naHead96 span[role=button]{padding:0}
+[data-native-ab12="96"] .naCanvas .naTitle.naT96{font-size:16.6px}
+[data-native-ab12="96"] .naTitle.naRB b{background:linear-gradient(180deg,#b30d03,#9a0300);min-width:22px;width:22px;height:15px;line-height:15px;font:700 11px/15px FiraSans,sans-serif;margin-right:8px;position:relative;top:-3px;box-shadow:inset 0 2px 0 #c34a3a,inset 2px 0 0 #a8182e}
+[data-native-ab12="96"] .naCanvas .naText.naInstr96{font-family:FiraSans,sans-serif;font-weight:700;color:#202026}
+[data-native-ab12="96"] .naCanvas .naText.naInstr96 span[role=button]{padding:0}
+[data-native-ab12="96"] .naCanvas .naText.naLab96{font-family:FiraSans,sans-serif;font-weight:700;color:#1c2178}
+[data-native-ab12="96"] .naCanvas .naText.naQ96{font-style:italic}
+[data-native-ab12="96"] .naCanvas .naText.naLab4b96{font-weight:700;color:#2c2e2d}
+[data-native-ab12="96"] .naCard96{position:absolute;background:#f9fdff;border-radius:6px}
+[data-native-ab12="96"] .naCanvas .naText.naFoot88{color:#2c2e2d}
+@font-face{font-family:FiraSansCond;src:url('/assets/fonts/firasanscond-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
+[data-native-ab12="96"] .naCanvas .naText.naSMS96{font-family:FiraSansCond,FiraSans,sans-serif;color:#2f363a}
+[data-native-ab12="96"] .naCanvas .naText.naSMS96 span[role=button]{padding:0}
+[data-native-ab12="96"] .naCanvas .naText.naTbL96{font-weight:700}
+[data-native-ab12="96"] .naCanvas .naField.naCell96{border-bottom:none!important}
+[data-native-ab12="96"] .sharedMatching.lm96 .sharedMatchItem{color:#252723!important}
+
+[data-native-ab12="96"] .naCanvas .naText.naTbL96 span[role=button]{padding:0}
+[data-native-ab12="96"] .naCanvas .naText.naLab96 span[role=button]{padding:0}
+[data-native-ab12="97"] .naBookSerif{letter-spacing:0!important}
+[data-native-ab12="97"] .naField{border-bottom:1px solid #c4c4c8!important}
+[data-native-ab12="97"] .naCanvas .naText.naHead97{font-family:DroidSerif,Georgia,serif;color:#0f0e11;letter-spacing:0}
+[data-native-ab12="97"] .naCanvas .naText.naHead97 span[role=button]{padding:0}
+[data-native-ab12="97"] .naCanvas .naTitle.naT97{font-size:16.6px}
+[data-native-ab12="97"] .naTitle.naRB b{background:linear-gradient(180deg,#b30d03,#9a0300);min-width:23px;width:23px;height:14px;line-height:14px;font:700 15px/14px FiraSans,sans-serif;margin-left:1.3px;margin-right:6.7px;position:relative;top:-1.5px;box-shadow:inset 0 2px 0 #c34a3a,inset 2px 0 0 #a8182e}
+[data-native-ab12="97"] .naCanvas .naText.naTitleL97{font-family:FiraSans,sans-serif;font-weight:700;color:#1a191b;font-size:16.6px}
+[data-native-ab12="97"] .naCanvas .naText.naTitleL97 span[role=button]{padding:0}
+[data-native-ab12="97"] .naCanvas .naText.naBank97{font-family:FiraSans,sans-serif;font-weight:400;color:#1f2566;letter-spacing:0}
+[data-native-ab12="97"] .naCanvas .naText.naBank97 span[role=button]{padding:0}
+[data-native-ab12="97"] .naCanvas .naText.naLink97{color:#313e6a}
+[data-native-ab12="97"] .naCanvas .naText.naLink97 span[role=button]{padding:0}
+[data-native-ab12="97"] .naCard97{position:absolute;background:#fff;box-shadow:0 3px 5px 1px rgba(72,82,102,.35),0 -2px 4px rgba(72,82,102,.28)}
+[data-native-ab12="97"] .naHl97{position:absolute;background:#ffffda}
+[data-native-ab12="97"] .naCalG97{position:absolute;background:#e5f1c9}
+[data-native-ab12="97"] .naCanvas .naText.naFoot88{color:#2c2e2d}
+[data-native-ab12="97"] .naCanvas .naText.naMail97{font-family:FiraSans,sans-serif;font-weight:400;color:#0f0e11;letter-spacing:0}
+[data-native-ab12="97"] .naCanvas .naText.naMail97 span[role=button]{padding:0}
+[data-native-ab12="97"] .naCanvas .naText.naNam97{font-family:DroidSerif,Georgia,serif;font-weight:400;color:#0f0e11;letter-spacing:0}
+[data-native-ab12="97"] .naCanvas .naText.naNam97 span[role=button]{padding:0}
+[data-native-ab12="97"] .naStrike97{position:absolute;height:1px;background:rgba(25,53,131,.8)}
+[data-native-ab12="97"] .naPipeSvg97{position:absolute;left:0;top:0;width:807px;height:1094px;pointer-events:none}
+[data-native-ab12="97"] .naPipeSvg97 rect{fill:rgb(80,72,70)}
+
+[data-native-ab12="97"] .naCanvas .naArt[src*="hand-feier"]{opacity:.82}
+[data-native-ab12="97"] .naExRule97{position:absolute;background:#c8cdd4}
+[data-native-ab12="98"] .naCanvas .naField{border-bottom:1px solid #c4c4c8!important;font-family:DroidSerif,Georgia,serif;font-size:12.5px;color:#17476f}
+[data-native-ab12="98"] .naCanvas .naText.naBody98{font-size:12.5px;letter-spacing:normal}
+[data-native-ab12="98"] .naCanvas .naText.naBody98 span[role=button]{padding:0}
+[data-native-ab12="98"] .naCanvas .naText.naHead98{font-family:DroidSerif,Georgia,serif;font-weight:400;color:#2a2a2b;letter-spacing:1.35px}
+[data-native-ab12="98"] .naCanvas .naText.naHead98 span[role=button]{padding:0}
+[data-native-ab12="98"] .naCanvas .naText.naKann98{font-family:ABDroidSans,FiraSans,sans-serif;font-weight:700;font-size:16.2px;color:#333d90}
+[data-native-ab12="98"] .naCanvas .naText.naKann98 span[role=button]{padding:0}
+[data-native-ab12="98"] .naCanvas .naText.naKenn98{font-family:FiraSans,sans-serif;font-weight:600;font-size:16px;color:#333d90}
+[data-native-ab12="98"] .naCanvas .naText.naKenn98 span[role=button]{padding:0}
+[data-native-ab12="98"] .naCanvas .naText.naSect98{font-family:DroidSerif,Georgia,serif;font-weight:700;font-size:13.5px;color:#1e2214;position:absolute;white-space:nowrap}
+[data-native-ab12="98"] .naCanvas .naText.naSect98 span[role=button]{padding:0}
+[data-native-ab12="98"] .naCanvas .naText.naSect98 .naTag98{font-weight:400;font-size:12.5px}
+[data-native-ab12="98"] .naCanvas .naText.naMark98{font-family:FiraSans,sans-serif;font-size:15.5px;color:#1c2089;line-height:1}
+[data-native-ab12="98"] .naCanvas .naText.naTri98{font-family:FiraSans,sans-serif;font-size:15.5px;color:#26a646;line-height:1}
+[data-native-ab12="98"] .naCanvas .naText.naCirc98{font-family:FiraSans,sans-serif;font-size:15.5px;color:#9c1629;line-height:1}
+[data-native-ab12="98"] .naCanvas .naDot.naDot98{width:14px!important;height:14px!important;border-width:1.2px!important;border-color:#dcd8c2!important}
+[data-native-ab12="98"] .naCanvas .naDot.naDot98:checked{background:radial-gradient(circle,#246e45 0 36%,#fff 44%)!important}
+
+[data-native-ab12="98"] .naCanvas .naText.naBadge98{font-family:FiraSansCond,FiraSans,sans-serif;font-weight:400;font-size:10px;color:#fff;background:#e0d8b4;line-height:17px;text-align:center;letter-spacing:0.3px}
+[data-native-ab12="98"] .naCanvas .naText.naFoot98{font-family:DroidSerif,Georgia,serif;font-size:12.5px;color:#36393b}
+[data-native-ab12="98"] .naCanvas .naText.naFoot98 b{font-weight:700}
+[data-native-ab12="98"] .naCanvas .naSq98{position:absolute;background:#1b1f8b}
+[data-native-ab12="98"] .naCanvas .naTr98{position:absolute;width:0;height:0;border-left:3.5px solid transparent;border-right:3.5px solid transparent;border-bottom:8px solid #26a646}
+[data-native-ab12="98"] .naCanvas .naCi98{position:absolute;border-radius:50%;background:#9c1629}
