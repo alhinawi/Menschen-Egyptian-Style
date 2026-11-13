@@ -16,3 +16,7 @@ input:is([type=radio],[type=checkbox])[data-check-mark="ok"]{outline:1.5px solid
 input:is([type=radio],[type=checkbox])[data-check-mark="bad"]{outline:1.5px solid #c62f2f;outline-offset:0;--answer-mark:#bd3838!important}
 html[data-theme=dark] :is(input,select,textarea)[data-check-mark="ok"]:not([type=radio]):not([type=checkbox]){background-color:#dff0e2!important;border-color:#4e8964!important;color:#14301f!important}
 html[data-theme=dark] :is(input,select,textarea)[data-check-mark="bad"]:not([type=radio]):not([type=checkbox]){background-color:#fbe4de!important;border-color:#c62f2f!important;color:#5a1010!important}
+
+/* Button-based pitch and syllable fields get the same non-layout-changing marks. */
+:is(button,[data-native-field].mSyllables)[data-check-mark="ok"]{outline:1.5px solid #2f7d4f;outline-offset:0;background-color:#e1f2e4!important;color:#14301f!important}
+:is(button,[data-native-field].mSyllables)[data-check-mark="bad"]{outline:1.5px solid #c62f2f;outline-offset:0;background-color:#fde4e1!important;color:#5a1010!important}

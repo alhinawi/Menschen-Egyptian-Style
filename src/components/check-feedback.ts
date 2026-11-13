@@ -116,14 +116,14 @@ function isRight(f:ScanField,el:HTMLElement){
  const answer=f.answer!;
  if(el instanceof HTMLInputElement&&(el.type==='radio'||el.type==='checkbox'))return el.checked===(normText(answer)==='true');
  if(el instanceof HTMLSelectElement){const picked=[el.value,el.selectedOptions[0]?.textContent||''].map(normText);return answer.split('|').some(a=>picked.includes(normText(a)))}
- const value=el instanceof HTMLButtonElement?(el.textContent||''):((el as HTMLInputElement).value||'');
+ const value=el.dataset.value??(el instanceof HTMLButtonElement?(el.textContent||''):((el as HTMLInputElement).value||''));
  if(f.unordered)return normSet(answer)===normSet(value);
  return answer.split('|').some(a=>normText(a)===normText(value));
 }
 function isToggle(el:HTMLElement){return el instanceof HTMLInputElement&&(el.type==='radio'||el.type==='checkbox')}
 export function clearCheckMarks(root:ParentNode=document){root.querySelectorAll('[data-check-mark]').forEach(e=>e.removeAttribute('data-check-mark'))}
 export function clearGroupMarks(button:HTMLButtonElement){for(const it of keyedFields(button).items)for(const el of [...it.els,...(it.radios||[])])el.removeAttribute('data-check-mark')}
-export function markCheckFields(button:HTMLButtonElement,correct:boolean){
+export function markCheckFields(button:HTMLButtonElement,_correct:boolean){
  const {pageNo,items}=keyedFields(button);
  if(!items.length)return 0;
  let marked=0;
@@ -135,12 +135,12 @@ export function markCheckFields(button:HTMLButtonElement,correct:boolean){
  for(const group of byName.values()){
   const picked=group.find(it=>(it.els[0] as HTMLInputElement).checked);
   if(!picked)group.forEach(it=>it.els.forEach(el=>set(el,false)));
-  else picked.els.forEach(el=>set(el,correct||normText(picked.field.answer!)==='true'));
+  else picked.els.forEach(el=>set(el,normText(picked.field.answer!)==='true'));
  }
  for(const {field,els,radios} of items){
   if(field.kind==='radio'&&!radios?.length)continue;
   for(const el of els){
-   const ok=correct||isRight(field,el);
+   const ok=isRight(field,el);
    if(ok&&isToggle(el)&&!(el as HTMLInputElement).checked)continue;
    set(el,ok);
   }
@@ -151,11 +151,11 @@ export function markCheckFields(button:HTMLButtonElement,correct:boolean){
    const key=(x:string)=>normText(x).split(/\s*[,;]\s*/).sort().join('|');
    if(radios.every(r=>r.type==='checkbox')){
     // Single tick boxes: right when the box state matches the key ("true" = ticked).
-    for(const r of radios){const ok=r.checked===(normText(answer)==='true');if(ok&&!r.checked)continue;set(r,correct||ok)}
+    for(const r of radios){const ok=r.checked===(normText(answer)==='true');if(ok&&!r.checked)continue;set(r,ok)}
    }else{
     const picked=radios.find(r=>r.checked);
     if(!picked)radios.forEach(r=>set(r,false));
-    else{const v=picked.dataset.value||'';set(picked,correct||alts.some(a=>normText(a)===normText(v)||(sorted&&key(a)===key(v))))}
+    else{const v=picked.dataset.value||'';set(picked,alts.some(a=>normText(a)===normText(v)||(sorted&&key(a)===key(v))))}
    }
   }
  }
@@ -163,7 +163,7 @@ export function markCheckFields(button:HTMLButtonElement,correct:boolean){
 }
 if(typeof document!=='undefined'&&!(window as typeof window&{__checkMarkClear?:boolean}).__checkMarkClear){
  (window as typeof window&{__checkMarkClear?:boolean}).__checkMarkClear=true;
- const clear=(e:Event)=>{const t=e.target as HTMLElement|null;if(!t||!t.closest||!t.closest('.page'))return;t.removeAttribute('data-check-mark');if(t instanceof HTMLInputElement&&t.type==='radio'&&t.name)document.querySelectorAll<HTMLInputElement>('input[type=radio]').forEach(r=>{if(r.name===t.name)r.removeAttribute('data-check-mark')})};
+ const clear=(e:Event)=>{const t=e.target as HTMLElement|null;if(!t||!t.closest||!t.closest('.page'))return;t.removeAttribute('data-check-mark');t.closest('[data-native-field]')?.removeAttribute('data-check-mark');if(t instanceof HTMLInputElement&&t.type==='radio'&&t.name)document.querySelectorAll<HTMLInputElement>('input[type=radio]').forEach(r=>{if(r.name===t.name)r.removeAttribute('data-check-mark')})};
  document.addEventListener('input',clear,true);document.addEventListener('change',clear,true);
 }
 const feedbackSelector='output,.feedback,[data-task-feedback],[role="status"]';
@@ -207,7 +207,7 @@ export function beginCheckFeedback(button:HTMLButtonElement): () => void {
   finish();button.dataset.checkFeedback=correct?'success':'error';
   markCheckFields(button,correct);
   sound(correct);if(correct)fireworks();
-  button.dispatchEvent(new CustomEvent('check-feedback',{bubbles:true,detail:{correct}}));
+  button.dispatchEvent(new CustomEvent('check-feedback',{bubbles:true,detail:{correct,answers:registry.get(button)??Object.fromEntries(keyedFields(button).items.map(i=>[i.field.id,i.field.answer]))}}));
  };
  const observer=new MutationObserver(()=>{cancelAnimationFrame(frame);frame=requestAnimationFrame(evaluate)});
  observer.observe(scope,{childList:true,subtree:true,characterData:true});
