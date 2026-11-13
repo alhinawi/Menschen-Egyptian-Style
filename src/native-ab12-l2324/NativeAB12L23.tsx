@@ -554,7 +554,7 @@ export function NativeAB12L23({page}:{page:string}){
   <div className="naText naFooter" style={{left:420,top:1045,width:310,textAlign:'right'}}>einundneunzig&nbsp;&nbsp;|&nbsp;&nbsp;91</div>
  </>}
  {page==='92'&&<>
-  <div className="naBasisL" style={{left:90,top:51}}>BASISTRAINING</div>
+  <div className="naBasisL" style={{left:89,top:58}}>BASISTRAINING</div>
   <div className="naRuleP" style={{left:274,top:82,width:454,background:'#e6742a'}}/>
   {kb(55,131,'KB 4')}
   <div className="naSide naSideB" style={{left:60,top:160}}>KOMMUNIKATION</div>
@@ -571,7 +571,9 @@ export function NativeAB12L23({page}:{page:string}){
   {field('92-8e',558,225,168,'8 e Frohe Weihnachten')}
   {check('92-8',736,236,{'92-8b':'Frohes neues Jahr.|Frohes neues Jahr','92-8c':'Gut gemacht.|Gut gemacht','92-8d':'Alles Gute|Alles Gute.','92-8e':'Frohe Weihnachten.|Frohe Weihnachten'})}
   {kb(55,286,'KB 4')}
-  <div className="naText naTitle naRB" style={{left:84,top:275,width:600,paddingLeft:34,textIndent:-34}}><b>9</b><Words text="Schreiben Sie eigene Aufgaben wie in "/><span className="naBlue">8</span><Words text=" und tauschen Sie mit Ihrer Partnerin / Ihrem Partner."/></div>
+  <div className="naText naTitle naRB" style={{left:84,top:275}}><b>9</b></div>
+  <div className="naText naTitle naRB naNw" style={{left:118,top:275,width:540}}><Words text="Schreiben Sie eigene Aufgaben wie in "/><span className="naBlue">8</span><Words text=" und tauschen Sie mit Ihrer"/></div>
+  <div className="naText naTitle naRB naNw" style={{left:118,top:293,width:300}}><Words text="Partnerin / Ihrem Partner."/></div>
   <div className="naDotP92" style={{left:44,top:301,background:'#02acf2'}}/>
   <div className="naDotP92" style={{left:63,top:301,background:'#0088c1'}}/>
   {kb(55,354,'KB 5')}
@@ -583,7 +585,7 @@ export function NativeAB12L23({page}:{page:string}){
   <div id="ex10-left-d">{text(116,456,16,'d','naBookSerif')}{text(135,454,280,'Am Freitag spielt unsere Lieblingsband in','naBookSerif naEx4t naNw')}{text(134,473,250,'Berlin und es gibt keine Tickets mehr.','naBookSerif naEx4t naNw')}</div>
   <div id="ex10-right-1">{text(485,368,220,'Ich würde ihr gern ein Motorrad','naBookSerif naEx4t naNw')}{text(493,388,70,'schenken.','naBookSerif naEx4t naNw')}</div>
   <div id="ex10-right-2">{text(485,405,95,'Wie schade!','naBookSerif naEx4t naNw')}</div>
-  <div id="ex10-right-3">{text(573,405,160,'Wir würden gern zum','naBookSerif naEx4t naNw')}{text(493,423,100,'Konzert gehen.','naBookSerif naEx4t naNw')}</div>
+  <div id="ex10-right-3">{text(568,405,160,'Wir würden gern zum','naBookSerif naEx4t naNw')}{text(493,423,100,'Konzert gehen.','naBookSerif naEx4t naNw')}</div>
   <div id="ex10-right-4">{text(485,446,215,'Aber er würde gern den Führer-','naBookSerif naEx4t naNw')}{text(493,466,110,'schein machen.','naBookSerif naEx4t naNw')}</div>
   <div id="ex10-right-5">{text(485,486,225,'Sie würden gern eine CD machen.','naBookSerif naEx4t naNw')}</div>
   {kb(55,530,'KB 5')}
@@ -597,6 +599,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(116,610,34,'Wir','naBookSerif naNw')}
   {text(116,629,22,'Ihr','naBookSerif naNw')}
   {text(235,627,56,'würdet','naBookSerif naNw')}
+  <div className="naText" style={{left:415,top:550,width:1,height:118,background:'#e6e6da'}}/>
   {text(116,649,48,'Sie/Sie','naBookSerif naNw')}
   {field('92-11ich',241,545,125,'11 Ich würde')}
   {field('92-11er',241,584,125,'11 Er/Es/Sie würde')}
@@ -611,15 +614,15 @@ export function NativeAB12L23({page}:{page:string}){
   <div className="naSide naSideB" style={{left:60,top:718}}>STRUKTUREN</div>
   {title('12',82,693,640,'Was sagen die Personen? Schreiben Sie.','naRB naNw')}
   <div className="naBank" style={{left:115,top:723,width:478,height:19,background:'#f9f9df'}}/>
-  <div className="naBank88 naBank92" style={{left:119,top:725}}><Words text="im Wald wohnen "/><span className="naPipe92">|</span><Words text=" in den Süden fahren "/><span className="naPipe92">|</span><Words text=" jeden Tag grillen "/><span className="naPipe92">|</span><Words text=" viel Geld verdienen"/></div>
+  <div className="naBank88 naBank92" style={{left:119,top:725}}><Words text="im Wald wohnen "/><span className="naPipe92">|</span> <span className="naStrike92"><Words text="in den Süden fahren"/></span> <span className="naPipe92">|</span><Words text=" jeden Tag grillen "/><span className="naPipe92">|</span><Words text=" viel Geld verdienen"/></div>
   {art('pica',215,771,161,75)}
   {art('picb',281,884,118,76)}
   {art('picc',585,769,128,87)}
   {art('picd',588,876,127,84)}
   {text(114,756,16,'a','naLet92')}{rule(113,787,130)}{rule(113,807,82)}{art('ex12a',112,758,161,54)}
   {text(114,858,16,'b','naLet92')}{rule(113,885,130)}{rule(113,905,130)}
-  {text(441,759,16,'c','naLet92')}{rule(446,790,124)}{rule(446,810,124)}
-  {text(440,858,16,'d','naLet92')}{rule(441,887,57)}{rule(441,907,123)}
+  {text(441,759,16,'c','naLet92')}{rule(440,790,130)}{rule(440,810,130)}
+  {text(440,858,16,'d','naLet92')}{rule(439,887,130)}{rule(439,907,130)}
   {art('modul8-tab',0,1044,52,20)}
   {text(62,1049,140,'92  |  zweiundneunzig','naFooter')}
  </>}
