@@ -70,8 +70,8 @@ function P68(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {field('p68-9b',153,486,386,'9 b','naFieldBlank')}
   {field('p68-9c',151,574,393,'9 c','naFieldBlank')}
   {modTab(1,1043,'Modul 7')}
-  {check('g1',668,289,{'8b1':'kann','8b2':'können','8c1':'will','8c2':'darf','8d':'musst','8e1':'soll','8e2':'will'})}
-  {check('g2',640,564,{'9a':'Ich finde das in Ordnung.|Ich finde das in Ordnung','9b':'Das ist doch gefährlich, oder?|Das ist doch gefährlich, oder','9c':'Das weiß ich nicht.|Das weiß ich nicht'})}
+  {check('g1',668,289,{'p68-8b1':'kann','p68-8b2':'können','p68-8c1':'will','p68-8c2':'darf','p68-8d':'musst','p68-8e1':'soll','p68-8e2':'will'})}
+  {check('g2',640,564,{'p68-9a':'Ich finde das in Ordnung.|Ich finde das in Ordnung','p68-9b':'Das ist doch gefährlich, oder?|Das ist doch gefährlich, oder','p68-9c':'Das weiß ich nicht.|Das weiß ich nicht'})}
 </>}
 
 export function NativeAB12P68({page}:{page:string}){
