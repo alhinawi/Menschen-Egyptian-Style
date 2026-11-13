@@ -1543,11 +1543,11 @@ export function NativeAB12P31to46({page}:{page:string}){
   {field('p43-5c',164,325,784,'5 c')}
   {field('p43-5d',164,377,784,'5 d')}
   {field('p43-5e',164,428,784,'5 e')}
-  {field('p43-7b',414,765,96,'7 b')}
-  {field('p43-7c',424,792,96,'7 c')}
-  {field('p43-7d',250,816,90,'7 d')}
-  {field('p43-7e',301,848,97,'7 e')}
-  {field('p43-7f',328,873,97,'7 f')}
+  {field('p43-7b',414,764,96,'7 b')}
+  {field('p43-7c',424,790,96,'7 c')}
+  {field('p43-7d',250,815,90,'7 d')}
+  {field('p43-7e',301,841,97,'7 e')}
+  {field('p43-7f',328,867,97,'7 f')}
   {field('p43-9arm',150,1165,260,'9 arm','naNoRule43')}
   {field('p43-9finger',150,1194,260,'9 finger','naNoRule43')}
   {field('p43-9knie',150,1283,260,'9 knie','naNoRule43')}
