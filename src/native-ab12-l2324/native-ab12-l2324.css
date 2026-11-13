@@ -126,6 +126,8 @@
 .naCanvas .naText.naEx4t{font-size:13.7px!important}
 [data-native-ab12="92"] .naBookSerif{letter-spacing:0!important}
 .naCanvas .naDotP92{position:absolute;width:9px;height:9px;border-radius:50%}
-.naCanvas .naText.naWurd92{font-weight:700}
-.naCanvas .naBank92{font-size:12.4px;font-weight:500;color:#4b5d85}
+.naCanvas .naBank92{font-size:12.4px;font-weight:400;color:#4b5d85}
 .naCanvas .naPipe92{color:#777356;font-weight:400}
+.naCanvas .naBlue{color:#2a5ea8}
+[data-native-ab12="92"] .naRule{border-bottom:1px solid #c4c4c8}
+.naCanvas .naText.naLet92{font:700 13px FiraSans,'Trebuchet MS',sans-serif;letter-spacing:0;color:#222}
