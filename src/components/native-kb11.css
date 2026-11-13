@@ -62,3 +62,5 @@
 .nkb:is([data-native-page="57"],[data-native-page="58"],[data-native-page="59"],[data-native-page="60"],[data-native-page="61"],[data-native-page="62"],[data-native-page="63"],[data-native-page="64"],[data-native-page="65"]) .nkbLine.nkbB{font-weight:500}
 .nkb[data-native-page="58"] .nkbCanvas input[type=text].nkbField[data-native-field^="f4a-"]{border-radius:50%!important;border:1.6px solid #d8c68c!important;background:transparent!important;text-align:center;padding:0!important}
 .nkb[data-native-page="59"] .nkbCanvas input[type=text].nkbField[data-native-field^="f7b-"]{border-radius:50%!important;border:1.6px solid #d8c68c!important;background:transparent!important;text-align:center;padding:0!important}
+
+.nkbCanvas select.nkbField[data-native-field=geschieden],.nkbCanvas select.nkbField[data-native-field=Kind],.nkbCanvas select.nkbField[data-native-field=verheiratet],.nkbCanvas select.nkbField[data-native-field=Single]{width:1.5cqw!important;height:1.5cqw!important;border:1px solid #8fb0cc!important;font-size:.9cqw!important}
