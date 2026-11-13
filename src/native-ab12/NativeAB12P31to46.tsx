@@ -799,7 +799,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   <div className="naSide" style={{left:69,top:203,whiteSpace:'nowrap'}}>STRUKTUREN</div>
   {text(140,199,66,'a Also ich','naNw')}
   {text(240,197,32,'will','naHand naD19 naNw')}
-  {text(272,199,290,'dieses Jahr zu Hause bleiben!','naNw')}
+  {text(282,199,280,'dieses Jahr zu Hause bleiben!','naNw')}
   {text(140,225,375,'b Aber meine Freunde Theresa und Boris','naNw')}
   {text(648,225,22,'im','naNw')}
   {text(165,251,271,'Urlaub nach Schweden fahren.','naNw')}
@@ -831,7 +831,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   <div className="naSide" style={{left:56,top:863,whiteSpace:'nowrap'}}>WÖRTER</div>
   {text(420,846,85,'Ausbildung','naHand naD19 naNw')}
   {text(140,843,254,'Im Sommer hat Sofia ihre (a)','naNw')}
-  {text(512,843,382,'(BLUGASIDNU) als Friseurin abgeschlossen.','naNw')}
+  {text(522,843,372,'(BLUGASIDNU) als Friseurin abgeschlossen.','naNw')}
   {text(140,870,655,'Sie hatte große Angst vor der Prüfung. Aber zum Glück hat sie die Prüfung','naNw')}
   {text(140,894,21,'(b)','naNw')}
   {text(394,894,383,'(SCHEFGATEF). Jetzt möchte sie endlich Geld','naNw')}
@@ -851,7 +851,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(530,1076,277,'(RITAHENE) und Kinder haben.','naNw')}
   {kb(78,1149,'KB 6')}
   {title('9',130,1140,580,'Was sind Ihre Wünsche? Schreiben Sie 4–5 Sätze wie in ','naGB naNw')}
-  {stext(688,1140,28,'8.',{color:'#3f6491',fontWeight:700},'naTitle naNw')}
+  {stext(702,1140,28,'8.',{color:'#3f6491',fontWeight:700},'naTitle naNw')}
   {art('partner',30,1168,72,34)}
   {text(140,1170,412,'Ihre Partnerin / Ihr Partner ergänzt die Wörter.','naNw')}
   {text(178,1240,220,'Ich möchte gern nach China','naHand naD19 naNw')}
@@ -871,7 +871,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {field('p37-8h',175,1049,213,'8 h')}
   {field('p37-8i',305,1075,220,'8 i')}
   {check('37-1',1000,165,{'p37-6b':'wollen','p37-6c':'will','p37-6d':'wollen','p37-6e':'willst'})}
-  {check('37-2',175,1116,{'p37-8b':'geschafft','p37-8c':'verdienen','p37-8d':'Motorrad','p37-8e':'Europa','p37-8f':'Führerschein','p37-8g':'reisen','p37-8h':'Leute','p37-8i':'heiraten'})}
+  {check('37-2',1000,1116,{'p37-8b':'geschafft','p37-8c':'verdienen','p37-8d':'Motorrad','p37-8e':'Europa','p37-8f':'Führerschein','p37-8g':'reisen','p37-8h':'Leute','p37-8i':'heiraten'})}
  </>}
  {page==='38'&&<>
   {art('1',845,500,117,129)}
