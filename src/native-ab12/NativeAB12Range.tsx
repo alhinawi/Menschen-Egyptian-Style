@@ -37,7 +37,7 @@ export function NativeAB12Range({page}:{page:string}){
   switch(it.k){
    case 't':return <div key={n} className={'naText naR '+(it.c||'')+(it.b?' naRBold':'')+(it.i?' naRIt':'')} style={{left:it.x,top:it.y-.84*(it.s||dfs),fontSize:it.s||dfs,color:it.col,['--naRs' as any]:(it.s||dfs)+'px'}}><Fit it={it}/></div>;
    case 'f':return <input key={n} className={'naField naRField'+(it.c?' '+it.c:'')} aria-label={it.l} data-native-field={it.id} maxLength={it.max}  style={{left:it.x,top:it.y-(it.hh||27),width:it.w,height:it.hh||27,...(it.bc?{borderBottomColor:it.bc+'!important'}:{})}} value={values[it.id]||''} onChange={e=>set(it.id,e.target.value)} autoComplete="off" spellCheck={false}/>;
-   case 'fa':return <LinedArea key={n} id={it.id} values={values} set={set} x={it.x} tops={it.ys.map((y:number)=>y-27)} w={it.w} label={it.l} legacyIds={it.legacy} className="naRField"/>;
+   case 'fa':return <LinedArea key={n} id={it.id} values={values} set={set} x={it.x} tops={it.ys.map((y:number)=>y-27)} w={it.w} label={it.l} legacyIds={it.legacy} rules={it.rules} className="naRField"/>;
    case 'r':return <div key={n} className="naRRule" style={{left:it.x,top:it.y,width:it.w,height:it.h||2,background:it.col}}/>;
    case 'a':return <PageImage key={n} className="naArt" src={`assets/book-crops/native-ab12-p${page}-${it.n}.png`} alt={it.alt||('Originalillustration '+it.n)} style={{left:it.x,top:it.y,width:it.w,height:it.h}}/>;
    case 'ti':return <div key={n} className="naRTitle" style={{left:it.x,top:it.y}}><span className="naRBadge" style={{width:it.bw||27,height:it.bh||27,background:it.col,lineHeight:(it.bh||27)+'px'}}>{it.n}</span></div>;

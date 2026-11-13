@@ -1,0 +1,739 @@
+{
+ "w": 1072,
+ "h": 1453,
+ "items": [
+  {
+   "k": "a",
+   "n": "bg",
+   "x": 0,
+   "y": 0,
+   "w": 1072,
+   "h": 1453,
+   "alt": "Seite 62 Hintergrund"
+  },
+  {
+   "k": "t",
+   "t": "BASISTRAINING",
+   "x": 110,
+   "y": 113,
+   "s": 31.2,
+   "col": "#555555"
+  },
+  {
+   "k": "t",
+   "t": "Ergänzen Sie die Pronomen im Akkusativ.",
+   "x": 151,
+   "y": 183,
+   "s": 21.5,
+   "col": "#383838",
+   "c": "naFiraB"
+  },
+  {
+   "k": "t",
+   "t": "Schreiben Sie Sätze im Imperativ und mit Pronomen.",
+   "x": 149,
+   "y": 403,
+   "s": 21.5,
+   "col": "#383838",
+   "c": "naFiraB"
+  },
+  {
+   "k": "t",
+   "t": "Sie suchen ein Zimmer in einer WG.",
+   "x": 148,
+   "y": 674,
+   "s": 21.5,
+   "col": "#383838",
+   "c": "naFiraB"
+  },
+  {
+   "k": "t",
+   "t": "Heute Abend kommt",
+   "x": 167,
+   "y": 252,
+   "s": 16,
+   "col": "#383838",
+   "c": "naFiraR"
+  },
+  {
+   "k": "t",
+   "t": "Oma. Das Bad ist nicht",
+   "x": 166,
+   "y": 276,
+   "s": 16,
+   "col": "#383838",
+   "c": "naFiraR"
+  },
+  {
+   "k": "t",
+   "t": "sauber. Kannst du",
+   "x": 166,
+   "y": 299,
+   "s": 16,
+   "col": "#383838",
+   "c": "naFiraR"
+  },
+  {
+   "k": "t",
+   "t": "bitte putzen?",
+   "x": 166,
+   "y": 323,
+   "s": 16,
+   "col": "#383838",
+   "c": "naFiraR"
+  },
+  {
+   "k": "t",
+   "t": "Hi Carola, kommst du",
+   "x": 383,
+   "y": 252,
+   "s": 16,
+   "col": "#383838",
+   "c": "naFiraR"
+  },
+  {
+   "k": "t",
+   "t": "heute Abend zum",
+   "x": 383,
+   "y": 276,
+   "s": 16,
+   "col": "#383838",
+   "c": "naFiraR"
+  },
+  {
+   "k": "t",
+   "t": "Essen? Ruf",
+   "x": 383,
+   "y": 300,
+   "s": 16,
+   "col": "#383838",
+   "c": "naFiraR"
+  },
+  {
+   "k": "t",
+   "t": "bitte an. Hannes und Pia",
+   "x": 383,
+   "y": 323,
+   "s": 16,
+   "col": "#383838",
+   "c": "naFiraR"
+  },
+  {
+   "k": "t",
+   "t": "Hallo Frau Gruber,",
+   "x": 600,
+   "y": 252,
+   "s": 16,
+   "col": "#383838",
+   "c": "naFiraR"
+  },
+  {
+   "k": "t",
+   "t": "danke für Ihren Anruf.",
+   "x": 600,
+   "y": 276,
+   "s": 16,
+   "col": "#383838",
+   "c": "naFiraR"
+  },
+  {
+   "k": "t",
+   "t": "Ich rufe",
+   "x": 600,
+   "y": 299,
+   "s": 16,
+   "col": "#383838",
+   "c": "naFiraR"
+  },
+  {
+   "k": "t",
+   "t": "später",
+   "x": 721,
+   "y": 300,
+   "s": 16,
+   "col": "#383838",
+   "c": "naFiraR"
+  },
+  {
+   "k": "t",
+   "t": "zurück.",
+   "x": 600,
+   "y": 323,
+   "s": 16,
+   "col": "#383838",
+   "c": "naFiraR"
+  },
+  {
+   "k": "t",
+   "t": "Anna kommt um 18.23",
+   "x": 817,
+   "y": 253,
+   "s": 16,
+   "col": "#383838",
+   "c": "naFiraR"
+  },
+  {
+   "k": "t",
+   "t": "Uhr an. Kannst du",
+   "x": 818,
+   "y": 276,
+   "s": 16,
+   "col": "#383838",
+   "c": "naFiraR"
+  },
+  {
+   "k": "t",
+   "t": "am Bahnhof",
+   "x": 880,
+   "y": 300,
+   "s": 16,
+   "col": "#383838",
+   "c": "naFiraR"
+  },
+  {
+   "k": "t",
+   "t": "abholen?",
+   "x": 817,
+   "y": 324,
+   "s": 16,
+   "col": "#383838",
+   "c": "naFiraR"
+  },
+  {
+   "k": "t",
+   "t": "a",
+   "x": 167,
+   "y": 226,
+   "s": 18,
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "t": "b",
+   "x": 382,
+   "y": 225,
+   "s": 18,
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "t": "c",
+   "x": 601,
+   "y": 226,
+   "s": 18,
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "t": "d",
+   "x": 816,
+   "y": 227,
+   "s": 18,
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "t": "Hast du die Spülmaschine schon",
+   "x": 193,
+   "y": 441,
+   "s": 18,
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "t": "ausgeräumt?",
+   "x": 192,
+   "y": 468,
+   "s": 18,
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "t": "Hast du schon den Müll runtergebracht?",
+   "x": 192,
+   "y": 558,
+   "s": 18,
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "t": "Hast du die Küche geputzt?",
+   "x": 643,
+   "y": 442,
+   "s": 18,
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "t": "Hast du das Fenster zugemacht?",
+   "x": 642,
+   "y": 533,
+   "s": 18,
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "t": "a",
+   "x": 150,
+   "y": 438,
+   "s": 18,
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "t": "b",
+   "x": 149,
+   "y": 554,
+   "s": 18,
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "t": "c",
+   "x": 600,
+   "y": 439,
+   "s": 18,
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "t": "d",
+   "x": 599,
+   "y": 530,
+   "s": 18,
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "t": "Nein.",
+   "x": 193,
+   "y": 492,
+   "s": 18,
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "t": "Nein.",
+   "x": 193,
+   "y": 582,
+   "s": 18,
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "t": "Nein.",
+   "x": 643,
+   "y": 468,
+   "s": 18,
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "t": "Nein.",
+   "x": 643,
+   "y": 560,
+   "s": 18,
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "t": "Dann",
+   "x": 193,
+   "y": 518,
+   "s": 18,
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "t": "Dann",
+   "x": 193,
+   "y": 608,
+   "s": 18,
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "t": "Dann",
+   "x": 643,
+   "y": 494,
+   "s": 18,
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "t": "Dann",
+   "x": 643,
+   "y": 586,
+   "s": 18,
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "t": "Lesen Sie die Anzeigen.",
+   "x": 150,
+   "y": 712,
+   "s": 19,
+   "col": "#383838",
+   "c": "naFiraM"
+  },
+  {
+   "k": "t",
+   "t": "Wählen Sie eine Anzeige und schreiben Sie eine Antwort zu folgenden Punkten:",
+   "x": 147,
+   "y": 1023,
+   "s": 19,
+   "col": "#383838",
+   "c": "naFiraM"
+  },
+  {
+   "k": "t",
+   "t": "Wer sind Sie? Was studieren/arbeiten Sie? Wie sind Sie? Was machen Sie gern /",
+   "x": 147,
+   "y": 1049,
+   "s": 18,
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "t": "nicht so gern im Haushalt?",
+   "x": 147,
+   "y": 1074,
+   "s": 18,
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "t": "Du suchst ein Zimmer und du liebst Katzen?",
+   "x": 165,
+   "y": 752,
+   "s": 19.0,
+   "col": "#383838",
+   "c": "naFiraB"
+  },
+  {
+   "k": "t",
+   "t": "Dann bist du vielleicht unsere",
+   "x": 165,
+   "y": 776,
+   "s": 17.2,
+   "col": "#383838",
+   "c": "naFiraR"
+  },
+  {
+   "k": "t",
+   "t": "perfekte Mitbewohnerin!",
+   "x": 165,
+   "y": 800,
+   "s": 17.2,
+   "col": "#383838",
+   "c": "naFiraR"
+  },
+  {
+   "k": "t",
+   "t": "Achtung: Wir (= Paula, Susi und drei Katzen)",
+   "x": 164,
+   "y": 824,
+   "s": 17.2,
+   "col": "#383838",
+   "c": "naFiraR"
+  },
+  {
+   "k": "t",
+   "t": "sind nicht sehr ordentlich, aber sehr sympathisch",
+   "x": 164,
+   "y": 848,
+   "s": 17.2,
+   "col": "#383838",
+   "c": "naFiraR"
+  },
+  {
+   "k": "t",
+   "t": "Schreib uns bitte:",
+   "x": 164,
+   "y": 872,
+   "s": 17.2,
+   "col": "#383838",
+   "c": "naFiraR"
+  },
+  {
+   "k": "t",
+   "t": "paula.patent@t-online.de",
+   "x": 164,
+   "y": 895,
+   "s": 17.2,
+   "col": "#383838",
+   "c": "naFiraR"
+  },
+  {
+   "k": "t",
+   "t": "Kannst du kochen? Magst du Partys?",
+   "x": 474,
+   "y": 895,
+   "s": 19.0,
+   "col": "#383838",
+   "c": "naFiraB p62Tilt"
+  },
+  {
+   "k": "t",
+   "t": "Wir sind eine lustige WG und feiern gern zusammen.",
+   "x": 474,
+   "y": 919,
+   "s": 17.5,
+   "col": "#383838",
+   "c": "naFiraR p62Tilt"
+  },
+  {
+   "k": "t",
+   "t": "Ihr auch? Suchen noch zwei Mitbewohner (ca. 20–30 Jahre)",
+   "x": 474,
+   "y": 943,
+   "s": 17.5,
+   "col": "#383838",
+   "c": "naFiraR p62Tilt"
+  },
+  {
+   "k": "t",
+   "t": "für Zimmer (350,– €); wg-kontakt@web.de",
+   "x": 474,
+   "y": 967,
+   "s": 18.0,
+   "col": "#383838",
+   "c": "naFiraR p62Tilt"
+  },
+  {
+   "k": "t",
+   "t": "Hallo",
+   "x": 190,
+   "y": 1151,
+   "s": 15.5,
+   "col": "#383838",
+   "c": "naDI"
+  },
+  {
+   "k": "t",
+   "t": "mein Name ist",
+   "x": 188,
+   "y": 1177,
+   "s": 15.5,
+   "col": "#383838",
+   "c": "naDI"
+  },
+  {
+   "k": "t",
+   "t": "ich bin",
+   "x": 467,
+   "y": 1178,
+   "s": 15.5,
+   "col": "#383838",
+   "c": "naDI"
+  },
+  {
+   "k": "t",
+   "t": "Jahre alt und ich suche ein",
+   "x": 684,
+   "y": 1180,
+   "s": 16.0,
+   "col": "#383838",
+   "c": "naDI"
+  },
+  {
+   "k": "t",
+   "t": "Zimmer in einer WG.",
+   "x": 187,
+   "y": 1203,
+   "s": 15.5,
+   "col": "#383838",
+   "c": "naDI"
+  },
+  {
+   "k": "t",
+   "t": "Ich studiere/arbeite",
+   "x": 188,
+   "y": 1229,
+   "s": 16.0,
+   "col": "#383838",
+   "c": "naDI"
+  },
+  {
+   "k": "t",
+   "t": "Ich bin",
+   "x": 187,
+   "y": 1255,
+   "s": 15.5,
+   "col": "#383838",
+   "c": "naDI"
+  },
+  {
+   "k": "t",
+   "t": "Im Haushalt",
+   "x": 187,
+   "y": 1307,
+   "s": 16.0,
+   "col": "#383838",
+   "c": "naDI"
+  },
+  {
+   "k": "t",
+   "t": "Vielleicht wollt Ihr mich ja mal kennenlernen?",
+   "x": 187,
+   "y": 1333,
+   "s": 16.0,
+   "col": "#383838",
+   "c": "naDI"
+  },
+  {
+   "k": "f",
+   "id": "p62-7b",
+   "x": 462,
+   "y": 301,
+   "w": 73,
+   "hh": 22,
+   "c": "sl",
+   "l": "7 b",
+   "a": "uns|mich",
+   "g": "g1"
+  },
+  {
+   "k": "f",
+   "id": "p62-7c",
+   "x": 660,
+   "y": 300,
+   "w": 55,
+   "hh": 22,
+   "c": "sl",
+   "l": "7 c",
+   "a": "Sie",
+   "g": "g1"
+  },
+  {
+   "k": "f",
+   "id": "p62-7d",
+   "x": 818,
+   "y": 303,
+   "w": 54,
+   "hh": 22,
+   "c": "sl",
+   "l": "7 d",
+   "a": "sie|Sie",
+   "g": "g1"
+  },
+  {
+   "k": "f",
+   "id": "p62-8b",
+   "x": 241,
+   "y": 610,
+   "w": 268,
+   "hh": 22,
+   "c": "sl",
+   "l": "8 b",
+   "a": "bring ihn bitte runter|Bring ihn bitte runter",
+   "g": "g2"
+  },
+  {
+   "k": "f",
+   "id": "p62-8c",
+   "x": 698,
+   "y": 495,
+   "w": 195,
+   "hh": 22,
+   "c": "sl",
+   "l": "8 c",
+   "a": "putz sie bitte|Putz sie bitte",
+   "g": "g2"
+  },
+  {
+   "k": "f",
+   "id": "p62-8d",
+   "x": 698,
+   "y": 585,
+   "w": 201,
+   "hh": 22,
+   "c": "sl",
+   "l": "8 d",
+   "a": "mach es zu|Mach es zu",
+   "g": "g2"
+  },
+  {
+   "k": "chk",
+   "g": "g1",
+   "x": 960,
+   "y": 347
+  },
+  {
+   "k": "chk",
+   "g": "g2",
+   "x": 940,
+   "y": 615
+  },
+  {
+   "k": "f",
+   "id": "p62-9b-0",
+   "x": 233,
+   "y": 1155,
+   "w": 155,
+   "hh": 21,
+   "c": "sl",
+   "l": "9 b freies Schreiben 1"
+  },
+  {
+   "k": "f",
+   "id": "p62-9b-1",
+   "x": 301,
+   "y": 1181,
+   "w": 155,
+   "hh": 21,
+   "c": "sl",
+   "l": "9 b freies Schreiben 2"
+  },
+  {
+   "k": "f",
+   "id": "p62-9b-2",
+   "x": 521,
+   "y": 1181,
+   "w": 157,
+   "hh": 21,
+   "c": "sl",
+   "l": "9 b freies Schreiben 3"
+  },
+  {
+   "k": "f",
+   "id": "p62-9b-3",
+   "x": 343,
+   "y": 1234,
+   "w": 541,
+   "hh": 21,
+   "c": "sl",
+   "l": "9 b freies Schreiben 4"
+  },
+  {
+   "k": "f",
+   "id": "p62-9b-4",
+   "x": 243,
+   "y": 1260,
+   "w": 641,
+   "hh": 21,
+   "c": "sl",
+   "l": "9 b freies Schreiben 5"
+  },
+  {
+   "k": "f",
+   "id": "p62-9b-5",
+   "x": 189,
+   "y": 1286,
+   "w": 695,
+   "hh": 21,
+   "c": "sl",
+   "l": "9 b freies Schreiben 6"
+  },
+  {
+   "k": "f",
+   "id": "p62-9b-6",
+   "x": 287,
+   "y": 1312,
+   "w": 597,
+   "hh": 21,
+   "c": "sl",
+   "l": "9 b freies Schreiben 7"
+  }
+ ]
+}
