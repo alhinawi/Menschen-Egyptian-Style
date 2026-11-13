@@ -67,7 +67,7 @@ function P68(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {field('p68-9b',153,486,386,'9 b','naFieldBlank')}
   {field('p68-9c',151,574,393,'9 c','naFieldBlank')}
   {modTab(1,1043,'Modul 7')}
-  {<LineMatching id='p68-12' left={['Person 1','Person 2','Person 3','Person 4']} right={['Warum muss es immer Regeln geben?','Ich kann mein Handy nicht ausmachen. Ich habe eine kleine Tochter.','Ich finde, es gibt hier zu viele Regeln.','Ich kann mit Handys nicht gut arbeiten.']} values={values} onMatch={set} leftX={121} rightX={218} leftWidth={51} rightWidth={480} ys={[919,939,959,979]} rightYs={[919,939,958,977]} width={807} height={1094} fontSize={14} example={[0,3]}/>}
+  {<LineMatching id='p68-12' left={['Person 1','Person 2','Person 3','Person 4']} right={['Warum muss es immer Regeln geben?','Ich kann mein Handy nicht ausmachen. Ich habe eine kleine Tochter.','Ich finde, es gibt hier zu viele Regeln.','Ich kann mit Handys nicht gut arbeiten.']} values={values} onMatch={set} leftX={121} rightX={218} leftWidth={58} rightWidth={480} ys={[919,939,959,979]} rightYs={[919,939,958,977]} width={807} height={1094} fontSize={14} example={[0,3]}/>}
   {check('g1',668,289,{'p68-8b1':'kann','p68-8b2':'können','p68-8c1':'will','p68-8c2':'darf','p68-8d':'musst','p68-8e1':'soll','p68-8e2':'will'})}
   {check('g2',640,564,{'p68-9a':'Ich finde das in Ordnung.|Ich finde das in Ordnung','p68-9b':'Das ist doch gefährlich, oder?|Das ist doch gefährlich, oder','p68-9c':'Das weiß ich nicht.|Das weiß ich nicht'})}
 </>}
