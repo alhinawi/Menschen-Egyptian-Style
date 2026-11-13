@@ -124,3 +124,8 @@
 [data-native-ab12="91"] .naTblHead{background:#ede8d2}
 [data-native-ab12="91"] .naField{border-bottom-width:1px!important;border-bottom-color:#d3d9d3!important}
 .naCanvas .naText.naEx4t{font-size:13.7px!important}
+[data-native-ab12="92"] .naBookSerif{letter-spacing:0!important}
+.naCanvas .naDotP92{position:absolute;width:9px;height:9px;border-radius:50%}
+.naCanvas .naText.naWurd92{font-weight:700}
+.naCanvas .naBank92{font-size:12.4px;font-weight:500;color:#4b5d85}
+.naCanvas .naPipe92{color:#777356;font-weight:400}
