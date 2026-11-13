@@ -11,6 +11,13 @@ const server=http.createServer((req,res)=>{
  await new Promise(r=>server.listen(5297,'127.0.0.1',r));
  const browser=await chromium.launch({executablePath:'/usr/bin/google-chrome-stable',args:['--no-sandbox']});
  try{
+  {
+   const p=await browser.newPage();await p.goto('http://127.0.0.1:5297/ab-a12-l13-16.html#20');
+   await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
+   await p.locator('.hybridScan[data-scan-page="20"]').waitFor();
+   assert(await p.locator('.hybridScan[data-scan-page="20"] input').count()>0,'unconverted p20 must remain usable');
+   await p.close();console.log('p20: unconverted page preserved as HybridScan');
+  }
   for(const width of [320,390]){
    // Page 18: wrong-answer feedback, full grading, saved answers.
    {
