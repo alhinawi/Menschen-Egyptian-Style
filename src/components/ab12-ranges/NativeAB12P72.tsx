@@ -36,13 +36,13 @@ function P72(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {[229,251,273].map((y,i)=>field('p72-1-c'+(i+2),420,y,270,'1 Charakter Zeile '+(i+2),'naFieldBlank'))}
   {check('g1',655,300,{'p72-1-w1i':'i','p72-1-w2a':'a','p72-1-w3o':'o','p72-1-w4au':'au','p72-1-w4i':'i','p72-1-w5o':'o','p72-1-w5i':'i','p72-1-w6i':'i','p72-1-w7eu':'eu','p72-1-w7i':'i','p72-1-w8ue':'ü','p72-1-a1':'schlank|blond|dick|hübsch','p72-1-a2':'schlank|blond|dick|hübsch','p72-1-a3':'schlank|blond|dick|hübsch','p72-1-a4':'schlank|blond|dick|hübsch','p72-1-c2':'traurig|komisch|freundlich','p72-1-c3':'traurig|komisch|freundlich','p72-1-c4':'traurig|komisch|freundlich'})}
   {box('2',94,330,'#c80e04')}  {rn(125,332,407,15,[{t:'Was passt nicht? Streichen Sie das falsche Wort durch.',b:1}],{fam:'fira'})}
-  {[['a',361,'Wäsche:',55],['b',381,'Zimmer:',57],['c',401,'Tisch:',39],['d',420,'Geschirr:',61],['e',439,'Bad:',30],['f',462,'Boden:',46]].map(([l,y,t,w])=><div key={'e2'+l}>{ln(125,y as number,8,14,l as string,{cls:D})}{ln(142,y as number,w as number,14,t as string,{cls:D})}</div>)}
+  {[['a',361,'Wäsche:',55],['b',381,'Zimmer:',57],['c',401,'Tisch:',39],['d',420,'Geschirr:',61],['e',439,'Bad:',30],['f',459,'Boden:',46]].map(([l,y,t,w])=><div key={'e2'+l}>{ln(125,y as number,6,14,l as string,{cls:D})}{ln(142,y as number,w as number,14,t as string,{cls:D})}</div>)}
   {strike('s-a',216,358,['abtrocknen','bügeln','aufhängen'],' – ','abtrocknen')}
   {strike('s-b',217,378,['aufräumen','rausbringen','staubsaugen'])}
   {strike('s-c',217,398,['decken','spülen','putzen'])}
   {strike('s-d',217,417,['abwaschen','abtrocknen','wischen'])}
   {strike('s-e',217,436,['kochen','putzen','aufräumen'])}
-  {strike('s-f',217,459,['staubsaugen','backen','wischen'])}
+  {strike('s-f',217,456,['staubsaugen','backen','wischen'])}
   {check('g2',650,466,{'s-b':'rausbringen','s-c':'spülen','s-d':'wischen','s-e':'kochen','s-f':'backen'})}
   {box('3',94,504,'#c80e04')}  {rn(125,506,297,15,[{t:'Der Ampelmann. Ergänzen Sie den Text.',b:1}],{fam:'fira'})}
   {art('p1',124,535,75,114)}
@@ -58,7 +58,7 @@ function P72(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {ln(427,672,39,14,'Regeln',{c:'#3a4d6e',cls:'naStrip72 naStrikeBlue72'})}
   {ln(479,672,28,14,'trägt',{c:'#3a4d6e',cls:'naStrip72'})}
   {ln(519,672,39,14,'achten',{c:'#3a4d6e',cls:'naStrip72'})}
-  {[172,227,320,420,471,512].map(x=>ln(x,669,4,13.5,'|',{cls:'naPipe72b'}))}
+  {[172,227,320,420,471,512].map(x=>ln(x,671,4,20,'|',{cls:'naPipe72b'}))}
   <div className='naRule' style={{left:500,top:725,width:195,borderBottom:'1px solid #c6c6ce'}}/>
   <div className='naRule' style={{left:193,top:744,width:195,borderBottom:'1px solid #c6c6ce'}}/>
   <div className='naRule' style={{left:132,top:763,width:194,borderBottom:'1px solid #c6c6ce'}}/>
@@ -76,7 +76,7 @@ function P72(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {field('p72-3_2',132,744,196,'3 Lücke 3','naFieldBlank')}
   {ln(331,751,129,15,'müssen auf Ampeln',{cls:D})}
   {field('p72-3_3',466,744,89,'3 Lücke 4','naFieldBlank')}
-  {ln(558,751,118,15,'– und natürlich',{cls:D})}
+  {ln(558,751,106,15,'– und natürlich',{cls:D})}
   {ln(132,770,104,15,'auch Fußgänger.',{cls:D})}
   {ln(133,789,359,15,'Die Ampeln für Fußgänger sehen aber besonders aus:',{cls:D})}
   {ln(132,809,545,15,'Sie haben einen „Ampelmann“. Dieser Ampelmann ist in Deutschland sehr bekannt.',{cls:D})}
