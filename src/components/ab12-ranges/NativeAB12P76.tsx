@@ -2,12 +2,12 @@ import {AB12Canvas,AB12Helpers} from '../ab12-shared';
 
 const BLUE='#003080';
 const MG='#a060a0';
-const TB='#d5d1b2';
+const TB='#eeebd7';
 const TY='#f2eac4';
 
 function P76(h:AB12Helpers){const {line:ln,wl,art,area,rect}=h;const D='naDroid76';
  return <>
-  {ln(92,61,161,27.5,'RÜCKBLICK',{cls:'naRb76'})}
+  {ln(92,61,164,27,'RÜCKBLICK',{cls:'naRb76'})}
 
   {/* Lektion 20 */}
   {ln(91,126,283,17.5,'Wählen Sie eine Aufgabe zu Lektion',{b:1,c:BLUE,cls:D})}
@@ -19,19 +19,19 @@ function P76(h:AB12Helpers){const {line:ln,wl,art,area,rect}=h;const D='naDroid7
   {ln(124,173,575,16,'Lesen Sie noch einmal im Kursbuch auf Seite 48 die E-Mail von Gert (Aufgabe 9).',{b:1,cls:D})}
   {ln(99,206,8,14.5,'a',{b:1,cls:D})}
   {ln(123,207,332,14.5,'Was macht Gert gern? Was kann er gut? Wie ist er?',{cls:D})}
-  {art('hw1',116,230,96,30)}
+  {art('hw1',116,230,116,30)}
   {ln(100,272,9,14.5,'b',{b:1,cls:D})}
   {ln(124,274,561,14.5,'Die perfekte Mitbewohnerin / Der perfekte Mitbewohner. Schreiben Sie zu folgenden',{cls:D})}
   {ln(124,290,57,14.5,'Punkten:',{cls:D})}
   {ln(123,322,104,15,'• Wie ist sie/er?',{cls:D})}
   {ln(123,342,221,15,'• Was macht sie/er gern und gut?',{cls:D})}
   {ln(123,361,153,15,'• Was macht sie/er oft?',{cls:D})}
-  {art('hw2',116,384,266,28)}
+  {art('hw2',116,384,286,28)}
 
   {art('m2',50,430,70,36)}
   {ln(122,437,577,16,'Wie ist eine NICHT perfekte Mitbewohnerin / ein NICHT perfekter Mitbewohner?',{b:1,cls:D})}
   {ln(122,454,103,16,'Schreiben Sie.',{b:1,cls:D})}
-  {art('hw3',116,482,281,30)}
+  {art('hw3',116,482,298,30)}
 
   {/* Lektion 21 */}
   {ln(91,544,283,17.5,'Wählen Sie eine Aufgabe zu Lektion',{b:1,c:BLUE,cls:D})}
@@ -41,7 +41,7 @@ function P76(h:AB12Helpers){const {line:ln,wl,art,area,rect}=h;const D='naDroid7
 
   {art('m3',56,586,64,30)}
   {ln(122,594,535,16.5,'Sehen Sie noch einmal das Bild im Kursbuch auf Seite 51 (Aufgabe 6) an',{b:1,cls:D})}
-  {ln(122,612,330,13,'und wählen Sie zwei Personen. Ergänzen Sie die Tabelle.',{b:1,cls:D})}
+  {ln(122,610,420,16.5,'und wählen Sie zwei Personen. Ergänzen Sie die Tabelle.',{b:1,cls:D})}
 
   {/* Tabelle 1 */}
   {rect(122,641,615,24,TY)}
@@ -68,7 +68,7 @@ function P76(h:AB12Helpers){const {line:ln,wl,art,area,rect}=h;const D='naDroid7
 
   {art('m4',48,848,70,38)}
   {ln(121,852,515,16.7,'Sie wohnen in einer WG oder wollen ein Zimmer in einer WG mieten.',{b:1,cls:D})}
-  {ln(121,878,400,13,'Notieren Sie: Welche Regeln gibt es? Welche Regeln akzeptieren Sie?',{b:1,cls:D})}
+  {ln(121,875,451,16.7,'Notieren Sie: Welche Regeln gibt es? Welche Regeln akzeptieren Sie?',{b:1,cls:D})}
 
   {/* Tabelle 2 */}
   {rect(122,904,615,22,TY)}
@@ -86,7 +86,7 @@ function P76(h:AB12Helpers){const {line:ln,wl,art,area,rect}=h;const D='naDroid7
   {area('p76-t2-r2-c3',535,983,198,25,'Tabelle 2 weitere Regel Verhalten')}
 
   {art('badge',0,1048,62,24)}
-  {wl(1067,12,[{x:70,w:14,t:'76',b:1}])}
+  {wl(1067,12,[{x:70,w:14,t:'76'}])}
   {rect(95,1056,1,12,'#202020')}
   {ln(109,1056,95,13,'sechsundsiebzig',{cls:'naFoot76'})}
  </>;
