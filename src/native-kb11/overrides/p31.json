@@ -35,7 +35,11 @@
     "ist",
     "ein",
     "/",
-    "eine"
+    {
+     "t": "eine",
+     "c": "#201f1d",
+     "hi": true
+    }
    ]
   },
   {
@@ -156,6 +160,19 @@
     "H",
     "–",
     "R."
+   ]
+  },
+  {
+   "x": 546,
+   "cy": 657,
+   "tol": 0,
+   "ws": [
+    {
+     "t": "Sie",
+     "c": "#201f1d",
+     "hi": true
+    },
+    "ist"
    ]
   }
  ],
@@ -426,10 +443,10 @@
    "value": "ein",
    "answer": "false",
    "label": "6b 1 article: ein",
-   "x": 233,
-   "y": 647,
-   "w": 25,
-   "h": 20
+   "x": 232.82,
+   "y": 645,
+   "w": 23.89,
+   "h": 24
   },
   {
    "id": "t6b-article-1-eine",
@@ -440,10 +457,10 @@
    "value": "eine",
    "answer": "true",
    "label": "6b 1 article: eine",
-   "x": 265,
-   "y": 647,
-   "w": 33,
-   "h": 20
+   "x": 265.37,
+   "y": 645,
+   "w": 31.11,
+   "h": 24
   },
   {
    "id": "t6b-pronoun-1-Er",
@@ -455,9 +472,9 @@
    "answer": "false",
    "label": "6b 1 pronoun: Er",
    "x": 485,
-   "y": 647,
-   "w": 19,
-   "h": 20
+   "y": 645,
+   "w": 18.8,
+   "h": 24
   },
   {
    "id": "t6b-pronoun-1-Es",
@@ -469,9 +486,9 @@
    "answer": "false",
    "label": "6b 1 pronoun: Es",
    "x": 515,
-   "y": 647,
-   "w": 19,
-   "h": 20
+   "y": 645,
+   "w": 17.5,
+   "h": 24
   },
   {
    "id": "t6b-pronoun-1-Sie",
@@ -483,9 +500,9 @@
    "answer": "true",
    "label": "6b 1 pronoun: Sie",
    "x": 544,
-   "y": 647,
+   "y": 645,
    "w": 25,
-   "h": 20
+   "h": 24
   },
   {
    "id": "t6b-article-2-ein",
@@ -496,10 +513,10 @@
    "value": "ein",
    "answer": "true",
    "label": "6b 2 article: ein",
-   "x": 235,
-   "y": 667,
-   "w": 25,
-   "h": 20
+   "x": 235.3,
+   "y": 665,
+   "w": 24.9,
+   "h": 24
   },
   {
    "id": "t6b-article-2-eine",
@@ -510,10 +527,10 @@
    "value": "eine",
    "answer": "false",
    "label": "6b 2 article: eine",
-   "x": 269,
-   "y": 667,
-   "w": 33,
-   "h": 20
+   "x": 269.5,
+   "y": 665,
+   "w": 32.5,
+   "h": 24
   },
   {
    "id": "t6b-pronoun-2-Er",
@@ -525,9 +542,9 @@
    "answer": "true",
    "label": "6b 2 pronoun: Er",
    "x": 485,
-   "y": 667,
-   "w": 19,
-   "h": 20
+   "y": 665,
+   "w": 18.8,
+   "h": 24
   },
   {
    "id": "t6b-pronoun-2-Es",
@@ -539,9 +556,9 @@
    "answer": "false",
    "label": "6b 2 pronoun: Es",
    "x": 512,
-   "y": 667,
-   "w": 19,
-   "h": 20
+   "y": 665,
+   "w": 19.7,
+   "h": 24
   },
   {
    "id": "t6b-pronoun-2-Sie",
@@ -553,9 +570,9 @@
    "answer": "false",
    "label": "6b 2 pronoun: Sie",
    "x": 545,
-   "y": 667,
+   "y": 665,
    "w": 25,
-   "h": 20
+   "h": 24
   },
   {
    "id": "t6b-article-3-ein",
@@ -566,10 +583,10 @@
    "value": "ein",
    "answer": "false",
    "label": "6b 3 article: ein",
-   "x": 235,
-   "y": 687,
-   "w": 25,
-   "h": 20
+   "x": 235.3,
+   "y": 685,
+   "w": 24.9,
+   "h": 24
   },
   {
    "id": "t6b-article-3-eine",
@@ -580,10 +597,10 @@
    "value": "eine",
    "answer": "true",
    "label": "6b 3 article: eine",
-   "x": 269,
-   "y": 687,
-   "w": 33,
-   "h": 20
+   "x": 269.5,
+   "y": 685,
+   "w": 32.5,
+   "h": 24
   },
   {
    "id": "t6b-pronoun-3-Er",
@@ -595,9 +612,9 @@
    "answer": "false",
    "label": "6b 3 pronoun: Er",
    "x": 485,
-   "y": 687,
-   "w": 19,
-   "h": 20
+   "y": 685,
+   "w": 18.8,
+   "h": 24
   },
   {
    "id": "t6b-pronoun-3-Es",
@@ -608,10 +625,10 @@
    "value": "Es",
    "answer": "false",
    "label": "6b 3 pronoun: Es",
-   "x": 515,
-   "y": 687,
-   "w": 19,
-   "h": 20
+   "x": 516,
+   "y": 685,
+   "w": 17.5,
+   "h": 24
   },
   {
    "id": "t6b-pronoun-3-Sie",
@@ -623,9 +640,9 @@
    "answer": "true",
    "label": "6b 3 pronoun: Sie",
    "x": 545,
-   "y": 687,
+   "y": 685,
    "w": 25,
-   "h": 20
+   "h": 24
   },
   {
    "id": "t6b-article-4-ein",
@@ -636,10 +653,10 @@
    "value": "ein",
    "answer": "true",
    "label": "6b 4 article: ein",
-   "x": 235,
-   "y": 707,
-   "w": 25,
-   "h": 20
+   "x": 235.3,
+   "y": 705,
+   "w": 24.9,
+   "h": 24
   },
   {
    "id": "t6b-article-4-eine",
@@ -650,10 +667,10 @@
    "value": "eine",
    "answer": "false",
    "label": "6b 4 article: eine",
-   "x": 269,
-   "y": 707,
-   "w": 33,
-   "h": 20
+   "x": 269.5,
+   "y": 705,
+   "w": 32.5,
+   "h": 24
   },
   {
    "id": "t6b-pronoun-4-Er",
@@ -665,9 +682,9 @@
    "answer": "false",
    "label": "6b 4 pronoun: Er",
    "x": 485,
-   "y": 707,
-   "w": 19,
-   "h": 20
+   "y": 705,
+   "w": 18.8,
+   "h": 24
   },
   {
    "id": "t6b-pronoun-4-Es",
@@ -679,9 +696,9 @@
    "answer": "true",
    "label": "6b 4 pronoun: Es",
    "x": 512,
-   "y": 707,
-   "w": 19,
-   "h": 20
+   "y": 705,
+   "w": 19.7,
+   "h": 24
   },
   {
    "id": "t6b-pronoun-4-Sie",
@@ -693,9 +710,9 @@
    "answer": "false",
    "label": "6b 4 pronoun: Sie",
    "x": 545,
-   "y": 707,
+   "y": 705,
    "w": 25,
-   "h": 20
+   "h": 24
   },
   {
    "id": "t6b-article-5-ein",
@@ -706,10 +723,10 @@
    "value": "ein",
    "answer": "false",
    "label": "6b 5 article: ein",
-   "x": 235,
-   "y": 727,
-   "w": 25,
-   "h": 20
+   "x": 235.3,
+   "y": 725,
+   "w": 24.9,
+   "h": 24
   },
   {
    "id": "t6b-article-5-eine",
@@ -720,10 +737,10 @@
    "value": "eine",
    "answer": "true",
    "label": "6b 5 article: eine",
-   "x": 269,
-   "y": 727,
-   "w": 33,
-   "h": 20
+   "x": 269.5,
+   "y": 725,
+   "w": 32.5,
+   "h": 24
   },
   {
    "id": "t6b-pronoun-5-Er",
@@ -735,9 +752,9 @@
    "answer": "false",
    "label": "6b 5 pronoun: Er",
    "x": 485,
-   "y": 727,
-   "w": 19,
-   "h": 20
+   "y": 725,
+   "w": 18.8,
+   "h": 24
   },
   {
    "id": "t6b-pronoun-5-Es",
@@ -748,10 +765,10 @@
    "value": "Es",
    "answer": "false",
    "label": "6b 5 pronoun: Es",
-   "x": 515,
-   "y": 727,
-   "w": 19,
-   "h": 20
+   "x": 516,
+   "y": 725,
+   "w": 17.5,
+   "h": 24
   },
   {
    "id": "t6b-pronoun-5-Sie",
@@ -763,9 +780,9 @@
    "answer": "true",
    "label": "6b 5 pronoun: Sie",
    "x": 545,
-   "y": 727,
+   "y": 725,
    "w": 25,
-   "h": 20
+   "h": 24
   }
  ]
 }
