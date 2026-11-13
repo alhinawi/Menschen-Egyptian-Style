@@ -947,9 +947,9 @@
    "id": "frage-3",
    "kind": "text",
    "group": "fragen",
-   "x": 480,
+   "x": 498,
    "y": 566,
-   "w": 383,
+   "w": 365,
    "h": 26,
    "label": "Frage 3",
    "ul": 1
