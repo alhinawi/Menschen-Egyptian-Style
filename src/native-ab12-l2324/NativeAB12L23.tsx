@@ -8,7 +8,7 @@ export function NativeAB12L23({page}:{page:string}){
   {art('hero',8,30,742,60)}
   {kb(58,136,'KB 3')}
   {title('1',88,124,620,'Ordnen Sie zu.','naRB naNw')}
-  <div className="naSide naSideB" style={{left:64,top:168}}>WÖRTER</div>
+  <div className="naSide naSideB" style={{left:64,top:165}}>WÖRTER</div>
   <div className="naBank" style={{left:122,top:162,width:592,height:22}}/>
   <div className="naBank" style={{left:122,top:186,width:592,height:20}}/>
   <div className="naText naS14 naNw" style={{left:124,top:164,width:600}}><Words text="Die Sonne scheint. | "/><span className="naStrikeB"><Words text="Es wird bald sehr windig."/></span><Words text=" | Es ist bewölkt. | Es ist kühl. | Es ist schön warm. |"/></div>
@@ -25,7 +25,7 @@ export function NativeAB12L23({page}:{page:string}){
   {field('84-1-b2',339,336,151,'Foto B Zeile 2')}
   {field('84-1-c1',557,316,151,'Foto C Zeile 1')}
   {field('84-1-c2',557,336,151,'Foto C Zeile 2')}
-  {check('84-1',121,359,{'84-1-a1':'Die Sonne scheint|Es ist schön warm|Man sieht nicht viele Wolken','84-1-a2':'Die Sonne scheint|Es ist schön warm|Man sieht nicht viele Wolken','84-1-a3':'Die Sonne scheint|Es ist schön warm|Man sieht nicht viele Wolken','84-1-b1':'Es ist bewölkt|Es ist kühl','84-1-b2':'Es ist bewölkt|Es ist kühl','84-1-c1':'Es regnet schon lange|Es gibt bald ein Gewitter','84-1-c2':'Es regnet schon lange|Es gibt bald ein Gewitter'})}
+  {check('84-1',714,344,{'84-1-a1':'Die Sonne scheint|Es ist schön warm|Man sieht nicht viele Wolken','84-1-a2':'Die Sonne scheint|Es ist schön warm|Man sieht nicht viele Wolken','84-1-a3':'Die Sonne scheint|Es ist schön warm|Man sieht nicht viele Wolken','84-1-b1':'Es ist bewölkt|Es ist kühl','84-1-b2':'Es ist bewölkt|Es ist kühl','84-1-c1':'Es regnet schon lange|Es gibt bald ein Gewitter','84-1-c2':'Es regnet schon lange|Es gibt bald ein Gewitter'})}
   {kb(58,380,'KB 3')}
   {title('2',88,376,620,'Ergänzen Sie.','naRB naNw')}
   <div className="naSide naSideB" style={{left:64,top:404}}>WÖRTER</div>
@@ -37,7 +37,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(121,504,16,'d')}{text(140,504,255,'Die Kinder können nicht schlafen. Es','naS14 naNw')}{field('84-2-d1',391,501,78,'2 d donnert')}{text(475,504,90,'(tnnored) und','naS14 naNw')}{field('84-2-d2',572,501,78,'2 d blitzt')}{text(655,504,60,'(iltbtz).','naS14 naNw')}
   {text(121,524,16,'e')}{text(140,524,260,'Morgen wird das Wetter super. Es wird','naS14 naNw')}{field('84-2-e1',401,520,71,'2 e sonnig')}{text(478,524,240,'(gionns) und wir bekommen','naS14 naNw')}
   {text(140,544,30,'25','naS14')}{field('84-2-e2',157,540,78,'2 e Grad')}{text(245,544,60,'(drag).','naS14 naNw')}
-  {check('84-2',140,563,{'84-2-a':'Nebel','84-2-b1':'Schnee','84-2-b2':'schneien','84-2-c':'Wind','84-2-d1':'donnert','84-2-d2':'blitzt','84-2-e1':'sonnig','84-2-e2':'Grad'})}
+  {check('84-2',640,538,{'84-2-a':'Nebel','84-2-b1':'Schnee','84-2-b2':'schneien','84-2-c':'Wind','84-2-d1':'donnert','84-2-d2':'blitzt','84-2-e1':'sonnig','84-2-e2':'Grad'})}
   {kb(58,584,'KB 3')}
   <div className="naTitle naRB" style={{left:88,top:579,width:660}}><b>3</b><Words text="Suchen Sie Wetterwörter in "/><span className="naBlue">1</span><Words text=" und "/><span className="naBlue">2</span><Words text=" und im Kursbuch."/></div>
   <div className="naSide naSideB" style={{left:64,top:590}}>WÖRTER</div>
