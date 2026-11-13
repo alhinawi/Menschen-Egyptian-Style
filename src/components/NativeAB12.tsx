@@ -30,7 +30,7 @@ export function NativeAB12({page}:{page:string}){
  const hand=(x:number,y:number,w:number,t:string)=><div className="naText naHand" style={{left:x,top:y,width:w}}><Words text={t}/></div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}${SCP('.naTitle')}{font-family:FiraSans,sans-serif!important;letter-spacing:0!important;font-size:21px!important}${SCP('.naText')},${SCP('.naBold')},${SCP('.naLet')},${SCP('.naDlg')}{font-family:DroidSerif,Georgia,serif!important;font-size:20px!important;letter-spacing:-0.65px}${SCP('.naField')}{font-family:DroidSerif,Georgia,serif!important;font-size:19px!important;letter-spacing:-0.65px}${SCP('.naText.naS20')}{font-size:18px!important}${SCP('.naSmall')}{font-size:16.5px!important}${SCP('.naD19')}{font-size:17.5px!important}${SCP('.naUrl')}{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='52'] .naText,[data-native-ab12='52'] .naBold,[data-native-ab12='52'] .naLet,[data-native-ab12='52'] .naDlg,[data-native-ab12='52'] .naField{letter-spacing:0!important}[data-native-ab12='52'] .naTitle{font-size:22px!important}[data-native-ab12='52'] .naFoot52{font-size:17px!important}`}</style><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}${SCP('.naTitle')}{font-family:FiraSans,sans-serif!important;letter-spacing:0!important;font-size:21px!important}${SCP('.naText')},${SCP('.naBold')},${SCP('.naLet')},${SCP('.naDlg')}{font-family:DroidSerif,Georgia,serif!important;font-size:20px!important;letter-spacing:-0.65px}${SCP('.naField')}{font-family:DroidSerif,Georgia,serif!important;font-size:19px!important;letter-spacing:-0.65px}${SCP('.naText.naS20')}{font-size:18px!important}${SCP('.naSmall')}{font-size:16.5px!important}${SCP('.naD19')}{font-size:17.5px!important}${SCP('.naUrl')}{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='52'] .naText,[data-native-ab12='52'] .naBold,[data-native-ab12='52'] .naLet,[data-native-ab12='52'] .naDlg,[data-native-ab12='52'] .naField{letter-spacing:0!important}[data-native-ab12='52'] .naTitle{font-size:22px!important}[data-native-ab12='52'] .naFoot52{font-size:17px!important;color:#202020!important}[data-native-ab12='52'] .naTitle.naRB b{top:-3px}`}</style><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='89'&&<>
   {art('lesson-tab',738,18,62,75)}
   {text(75,63,300,'LERNWORTSCHATZ','naHeadline')}
@@ -117,7 +117,7 @@ export function NativeAB12({page}:{page:string}){
   {text(126,158,480,'Wählen Sie eine Aufgabe zu Lektion','naSec naNw')}
   {gl(508,161,'17','#74c655')}
   <div className="naGRule" style={{left:540,top:186,width:438,height:3,background:'#b5d8b2'}}/>
-  {art('mag1',70,216,56,52)}
+  {art('mag1',70,216,54,52)}
   {title('1',125,225,780,'Lesen Sie noch einmal Ihre Pläne im Kursbuch auf Seite 31 (Aufgabe 6).','naRB naNw')}
   {text(165,254,430,'Wann wollen Sie was machen? Schreiben Sie.','naD20')}
   {text(167,291,340,'Im August / Im Sommer ...','naD20')}
@@ -128,7 +128,7 @@ export function NativeAB12({page}:{page:string}){
   {field('52-t1-a1',230,371,770,'Eigener Satz 1','naFieldBlank')}
   {field('52-t1-a2',167,404,833,'Eigener Satz 2','naFieldBlank')}
   {field('52-t1-a3',167,429,820,'Eigener Satz 3','naFieldBlank')}
-  {art('pen1',72,448,56,50)}
+  {art('pen1',72,448,49,50)}
   {title('2',122,459,830,'Sie haben 100 000 € gewonnen. Was machen Sie? Schreiben Sie.','naRB naNw')}
   {text(166,498,140,'Reisen?','naD20')}
   {text(165,523,140,'Hobbys?','naD20')}
@@ -142,13 +142,13 @@ export function NativeAB12({page}:{page:string}){
   {text(120,689,480,'Wählen Sie eine Aufgabe zu Lektion','naSec naNw')}
   {gl(502,692,'18','#5a9d97')}
   <div className="naGRule" style={{left:534,top:717,width:432,height:3,background:'#a0c4ca'}}/>
-  {art('mag2',70,744,56,52)}
+  {art('mag2',70,744,48,52)}
   {title('1',119,756,850,'Lesen Sie noch einmal den Ratgeber im Kursbuch auf Seite 35 und notieren Sie.','naRB naNw')}
   {text(162,795,295,'Diese Körperteile stehen im Text:','naD20 naNw')}
   {field('52-t3-c1',456,793,510,'Körperteile im Text')}
   {text(161,821,350,'Diese Körperteile stehen nicht im Text:','naD20 naNw')}
   {field('52-t3-c2',510,820,456,'Körperteile nicht im Text')}
-  {art('pen2',70,872,56,52)}
+  {art('pen2',70,872,46,52)}
   {title('2',117,884,830,'Was machen Sie gegen Stress? Machen Sie Notizen und schreiben\nSie dann einen Ratgeber.','naRB naPre')}
   {text(159,949,170,'Gegen Stress hilft:','naD19 naNw')}
   {field('52-t4-d1',322,950,644,'Gegen Stress hilft')}
