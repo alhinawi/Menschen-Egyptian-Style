@@ -5,6 +5,7 @@ import type {PersistenceRuntime} from '../types/runtime';
 type FieldElement = HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement;
 
 export interface PersistenceController {
+  resetPage(page: HTMLElement): void;
   read(key: string): unknown;
   update(values: Record<string, unknown>): void;
   connect(next?: PersistenceRuntime): () => void;
@@ -20,6 +21,17 @@ export function usePersistenceController(): PersistenceController {
     const fields = (): FieldElement[] => [...document.querySelectorAll<FieldElement>('input,select,textarea')].filter(el => el.id !== 'pageJump');
     const key = (el: FieldElement, list: FieldElement[]): string => el.dataset.note || 'field-' + list.indexOf(el);
     return {
+      resetPage(page) {
+        const list=fields(), updates:Record<string,unknown>={};
+        for(const el of list.filter(el=>page.contains(el))){
+          updates[key(el,list)]=undefined;
+          if(el instanceof HTMLInputElement&&(el.type==='radio'||el.type==='checkbox'))el.checked=false;
+          else el.value='';
+        }
+        for(const form of page.querySelectorAll<HTMLFormElement>('form'))updates['done-'+(form.dataset.key||form.id)]=undefined;
+        for(const el of page.querySelectorAll<HTMLElement>('[data-key]'))updates['done-'+el.dataset.key]=undefined;
+        runtime?.update(updates);dispatch(updates);const progress=document.querySelector('#progress');if(progress&&/^\d+ ✓$/.test(progress.textContent||''))progress.textContent=Object.entries(runtime?.getState()||{}).filter(([k,v])=>k.startsWith('done-')&&v===true).length+' ✓';
+      },
       read(key) {
         return runtime?.getState()[key];
       },

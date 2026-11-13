@@ -1,3 +1,4 @@
+import {usePageReset} from '../exercises/usePageReset';
 import {LineMatching} from '../exercises/LineMatching';
 import {ClipMarkers} from './ClipMarkers';
 import {useLayoutEffect,useRef,useState} from 'react';
@@ -18,6 +19,7 @@ function Inner({data}:{data:NativePage}){
  const players=useRef<Record<string,HTMLAudioElement|null>>({});
  const W=data.w,H=data.h;
  const pos=(x:number,y:number,w:number,h:number):CSSProperties=>({left:x/W*100+'%',top:y/H*100+'%',width:w/W*100+'%',height:h/H*100+'%'});
+ usePageReset(data.page,key,()=>{setV({});setRes({})});
  const set=(id:string,val:string)=>{const n={...v,[id]:val};setV(n);try{localStorage.setItem(key,JSON.stringify(n))}catch{}};
  const groups=[...new Set(data.fields.filter(f=>f.answer!==undefined).map(f=>f.group))];
  const grade=(g:string)=>{const n:Record<string,boolean>={};for(const f of data.fields.filter(f=>f.group===g&&f.answer!==undefined)){const cur=f.kind==='radio'?String(v[f.name||f.id]===f.value):f.kind==='checkbox'?String(v[f.id]==='true'):norm(v[f.id]||'');n[f.id]=f.answer!.split('|').some(a=>norm(a)===cur)||(f.kind==='text'&&!!(f as any).kw&&(cur.length>0)&&((f as any).kw as string[]).every(k=>k.split('|').some(x=>cur.includes(norm(x)))))}setRes(r=>({...r,...n}))};
