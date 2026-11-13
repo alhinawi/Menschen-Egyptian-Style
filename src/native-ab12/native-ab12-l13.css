@@ -25,27 +25,40 @@
 .naCanvas .naText.naTitleTxt2{font:bold 17px FiraSans,'Trebuchet MS',sans-serif}
 .naCanvas .naModul9b{position:absolute;background:#eff0c4;color:#6b6644;font:12px/20px Arial;text-align:center}
 @font-face{font-family:DroidSerif;src:url('/assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}
-.naCanvas .naText.naTrain{font:30px DroidSerif,Georgia,serif;color:#3f3f3e}
-.naCanvas .naText.naTrainIt{font:italic 18px DroidSerif,Georgia,serif;color:#666}
+/* counter the leaked global [data-native-ab12] rule from p21-24 (owners fixing upstream); scoped to pages 6-9 only */
+[data-native-ab12="6"] .naCanvas .naText,[data-native-ab12="7"] .naCanvas .naText,[data-native-ab12="8"] .naCanvas .naText,[data-native-ab12="9"] .naCanvas .naText{font-family:'Times New Roman',Times,serif!important;letter-spacing:normal!important}
+[data-native-ab12="6"] .naCanvas .naS20,[data-native-ab12="7"] .naCanvas .naS20,[data-native-ab12="8"] .naCanvas .naS20{font-size:20px!important}
+[data-native-ab12="6"] .naCanvas .naS19,[data-native-ab12="7"] .naCanvas .naS19,[data-native-ab12="8"] .naCanvas .naS19{font-size:19px!important}
+[data-native-ab12="6"] .naCanvas .naS18,[data-native-ab12="7"] .naCanvas .naS18,[data-native-ab12="8"] .naCanvas .naS18{font-size:18px!important}
+[data-native-ab12="6"] .naCanvas .naS16,[data-native-ab12="7"] .naCanvas .naS16,[data-native-ab12="8"] .naCanvas .naS16{font-size:16px!important}
+[data-native-ab12="6"] .naCanvas .naLet13,[data-native-ab12="7"] .naCanvas .naLet13,[data-native-ab12="8"] .naCanvas .naLet13{font-size:20px!important}
+[data-native-ab12="6"] .naCanvas .naDash,[data-native-ab12="7"] .naCanvas .naDash,[data-native-ab12="8"] .naCanvas .naDash{letter-spacing:1px!important}
+[data-native-ab12="6"] .naCanvas .naBold,[data-native-ab12="7"] .naCanvas .naBold,[data-native-ab12="8"] .naCanvas .naBold{font-family:'Times New Roman',Times,serif!important;letter-spacing:normal!important}
+[data-native-ab12="6"] .naCanvas .naHeadline,[data-native-ab12="7"] .naCanvas .naHeadline,[data-native-ab12="8"] .naCanvas .naHeadline{font-family:Georgia!important;font-size:34px!important;letter-spacing:3px!important}
+[data-native-ab12="6"] .naCanvas .naTitle,[data-native-ab12="7"] .naCanvas .naTitle,[data-native-ab12="8"] .naCanvas .naTitle{font-family:FiraSans,'Trebuchet MS',sans-serif!important;font-size:23px!important;letter-spacing:normal!important}
+[data-native-ab12="6"] .naCanvas .naTitle.naYB,[data-native-ab12="7"] .naCanvas .naTitle.naYB,[data-native-ab12="8"] .naCanvas .naTitle.naYB{font-size:19px!important}
+[data-native-ab12="6"] .naCanvas .naField,[data-native-ab12="7"] .naCanvas .naField,[data-native-ab12="8"] .naCanvas .naField,[data-native-ab12="9"] .naCanvas .naField{font-family:'Times New Roman',Times,serif!important;letter-spacing:normal!important}
+.naCanvas .naText.naTrain{font:30px DroidSerif,Georgia,serif!important;color:#3f3f3e;letter-spacing:0!important}
+.naCanvas .naText.naTrainIt{font:italic 18px DroidSerif,Georgia,serif!important;color:#666;letter-spacing:0!important}
 .naCanvas .naBand9{position:absolute;background:#fcfbd0}
 .naCanvas .naW9{position:absolute;background:transparent;border:0!important;padding:0;font:15.6px/24px DroidSerif,Georgia,serif!important;color:#3a5375;height:24px;cursor:pointer;z-index:3;min-height:0!important;text-align:left}
 .naCanvas .naW9.on{background:#fcf26e}
 .naCanvas .naW9m{position:absolute;background:#fcf26e;font:15.6px/19px DroidSerif,Georgia,serif;color:#3a5375;padding:0 0 0 3px;height:19px;z-index:2;text-align:left}
-.naCanvas .naText.naSep9{color:#8ba3b5;font:15.6px DroidSerif,Georgia,serif}
-.naCanvas .naText.naWord9{font:15.6px DroidSerif,Georgia,serif;color:#3a5375}
+.naCanvas .naText.naSep9{color:#8ba3b5;font:15.6px DroidSerif,Georgia,serif!important;letter-spacing:0!important}
+.naCanvas .naText.naWord9{font:15.6px DroidSerif,Georgia,serif!important;color:#3a5375;letter-spacing:0!important}
 .naCanvas .naTipBar{position:absolute;background:#c09614}
 .naCanvas .naTipTab{position:absolute;background:#c09614;color:#2e1508}
 .naCanvas .naTipTab span{position:absolute;bottom:3px;left:2px;writing-mode:vertical-rl;transform:rotate(180deg);font:bold 9px Arial;letter-spacing:1px}
-.naCanvas .naText.naTipT{color:#202014;font:16.5px DroidSerif,Georgia,serif}
+.naCanvas .naText.naTipT{color:#202014;font:16.5px DroidSerif,Georgia,serif!important;letter-spacing:0!important}
 .naCanvas .naRegelBar{position:absolute;background:#dde2ea}
 .naCanvas .naRegelStrip{position:absolute;background:#dde2ea;color:#203332}
 .naCanvas .naRegelStrip span{position:absolute;bottom:5px;left:2.5px;writing-mode:vertical-rl;transform:rotate(180deg);font:bold 9px Arial;letter-spacing:1px}
-.naCanvas .naText.naEx9{font:17px DroidSerif,Georgia,serif;color:#1a1a12}
-.naCanvas .naField.naFld9{height:20px!important;font:17px DroidSerif,Georgia,serif!important;padding:0!important;border-bottom:1px solid #b8b4ac!important;text-align:center;color:#224777!important}
+.naCanvas .naText.naEx9{font:17px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
+.naCanvas .naField.naFld9{height:20px!important;font:17px DroidSerif,Georgia,serif!important;letter-spacing:0!important;padding:0!important;border-bottom:1px solid #b8b4ac!important;text-align:center;color:#224777!important}
 .naCanvas .naField.naFld9L{text-align:left;padding:0 0 0 2px!important}
-.naCanvas .naText.naYT{font:bold 19px FiraSans,'Trebuchet MS',sans-serif}
-.naCanvas .naText.naYT21{font-size:21px}
+.naCanvas .naText.naYT{font:bold 19px FiraSans,'Trebuchet MS',sans-serif!important;letter-spacing:0!important}
+.naCanvas .naText.naYT21{font-size:21px!important}
 .naCanvas .naBadge9{position:absolute;background:#fae800;color:#fff;font:bold 17px/20px DroidSerif,Georgia,serif;text-align:center;z-index:2}
 .naCanvas .naBadgeRT{position:absolute;background:#e31e24;z-index:2}
 .naCanvas .naBadgeRL{position:absolute;background:#e31e24;z-index:2}
-.naCanvas .naText.naLet9{color:#1a1a12;font:17px DroidSerif,Georgia,serif}
+.naCanvas .naText.naLet9{color:#1a1a12;font:17px DroidSerif,Georgia,serif!important;letter-spacing:0!important}
