@@ -42,8 +42,8 @@
 .naCanvas .naText.naTrainIt{font:italic 18px DroidSerif,Georgia,serif!important;color:#666;letter-spacing:0!important}
 .naCanvas .naBand9{position:absolute;background:#fcfbd0}
 .naCanvas .naW9{position:absolute;background:transparent;border:0!important;padding:0;font:17px/24px FiraSans,'Trebuchet MS',sans-serif!important;color:#3a5375;height:24px;cursor:pointer;z-index:3;min-height:0!important;text-align:left}
-.naCanvas .naW9.on{background:#fcf26e}
-.naCanvas .naW9m{position:absolute;background:#fcf26e;font:17px/19px FiraSans,'Trebuchet MS',sans-serif;color:#3a5375;padding:0 0 0 3px;height:19px;z-index:2;text-align:left}
+.naCanvas .naW9.on{background:#fff35c}
+.naCanvas .naW9m{position:absolute;background:#fff35c;font:17px/19px FiraSans,'Trebuchet MS',sans-serif;color:#3a5375;padding:0 0 0 3px;height:19px;z-index:2;text-align:left}
 .naCanvas .naText.naSep9{color:#8ba3b5;font:17px FiraSans,'Trebuchet MS',sans-serif!important;letter-spacing:0!important}
 .naCanvas .naText.naWord9{font:17px FiraSans,'Trebuchet MS',sans-serif!important;color:#3a5375;letter-spacing:0!important}
 .naCanvas .naTipBar{position:absolute;background:#c09614}
@@ -93,7 +93,8 @@
 [data-native-ab12="10"] .naCanvas .naText.naEx10{font:18px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0.2px!important;word-spacing:2.2px}
 [data-native-ab12="10"] .naCanvas .naText.naWord10,[data-native-ab12="10"] .naCanvas .naText.naSep10{font-family:FiraSans,'Trebuchet MS',sans-serif!important;font-size:17px!important;letter-spacing:0!important}
 [data-native-ab12="10"] .naCanvas .naDot{width:18px!important;height:18px!important;border:2px solid #c0c3af!important}
-.naCanvas .naPipe9{position:absolute;width:1.5px;height:16px;background:#8a8566}
+.naCanvas .naPipe9{position:absolute;width:1.5px;height:16px;background:#3a5375}
+.naCanvas .naBand9w{position:absolute;background:#fcfcf0}
 .naCanvas .naStrike9{position:absolute;background:#3a5375;z-index:3}
 .naCanvas .naStrike10{position:absolute;background:#2a3c6e;z-index:3}
 .naCanvas .naModul10{position:absolute;background:#c0b988;color:#fff;font:bold 13px/26px FiraSans,'Trebuchet MS',sans-serif;text-align:center;letter-spacing:.5px;z-index:2}
