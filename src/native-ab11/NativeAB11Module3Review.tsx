@@ -1,4 +1,6 @@
+import {PageImage} from '../components/PageImage';
 import {usePageReset} from '../exercises/usePageReset';
+import {LineMatching} from '../exercises/LineMatching';
 import {useLayoutEffect,useRef,useState} from 'react';
 import {scanData} from '../scan-data/registry';
 import './native-ab11.css';
@@ -16,7 +18,7 @@ export function NativeAB11Module3Review({page}:{page:string}){
  const hints:Record<string,string>={};
  const f=(id:string,x:number,y:number,w:number,label=id)=>{const ctx=document.createElement('canvas').getContext('2d');if(ctx)ctx.font="18px 'Times New Roman'";const size=Math.max(10,Math.min(18,18*(w-5)/(ctx?.measureText(v[id]||'').width||1)));return <input placeholder={hints[id]} className="mField" data-native-field={id} aria-label={label} style={{left:x,top:Y(y),width:w,height:22*sy,fontSize:size}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>};
  const open=(id:string,x:number,y:number,w:number,h:number,label=id)=><textarea className="mField mOpen" data-native-field={id} aria-label={label} style={{left:x,top:Y(y),width:w,height:h*sy,'--mopen-height':h*sy+'px'} as React.CSSProperties} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
- const art=(name:string,x:number,y:number,w:number,h:number)=><img className="mArt" alt={'Originalabbildung '+name} src={`assets/native-ab11/p${page}-${name}.png`} style={{left:x,top:Y(y),width:w,height:h*sy}}/>;
+ const art=(name:string,x:number,y:number,w:number,h:number)=><PageImage className="mArt" alt={'Originalabbildung '+name} src={`assets/native-ab11/p${page}-${name}.png`} style={{left:x,top:Y(y),width:w,height:h*sy}}/>;
  const title=(n:string,y:number,s:string,kb='',x=132,w=700)=><>{kb&&txt(96,y+5,34,kb,'mKB')}<div className={'mNumber '+''} style={{left:x,top:Y(y)}}>{n}</div>{txt(x+35,y,w-35,s,'mTitle')}</>;
  const head=(s:string)=><>{txt(132,135,740,s,'mHeader')}<div className="mRule"/></>;
  const data=scanData['ab-a11:'+page];
@@ -60,8 +62,9 @@ export function NativeAB11Module3Review({page}:{page:string}){
  {art('paint',620,755,93,89)}{art('cigarette',729,755,98,84)}{art('pot',660,845,87,98)}{art('pool',737,885,107,105)}{art('food',603,970,133,65)}{check('u3',168,1049)}
  {title('4',1100,'Was passt nicht? Streichen Sie das falsche Wort durch.')}{strike('u4-a',168,1145,['Kuchen','Schokolade','Salat','Eis'],'Salat')}{strike('u4-b',168,1184,['Schinken','Sahne','Wurst','Braten'])}{strike('u4-c',520,1145,['Brötchen','Orange','Zitrone','Apfel'])}{strike('u4-d',520,1184,['Kartoffel','Tomate','Zwiebel','Käse'])}{rule('u4',168,1232,()=>v['u4-b']==='Sahne'&&v['u4-c']==='Brötchen'&&v['u4-d']==='Käse')}
  {title('5',1283,'Welcher Ort passt? Ordnen Sie zu.')}
- {[['a','cheche','Gehe am Samstag zur Ü30 Party. Tanz und Musik bis morgens.'],['b','Waldbad','Das Waldbad hat jetzt bis 20 Uhr geöffnet!'],['c','Krissy007','Bin heute in Ricks Café. Happy Hour ab 18 Uhr. Alle Cocktails nur 4,90 Euro.'],['d','sixtus','Neuer Film mit George Clooney! Wer geht am Donnerstagabend mit?'],['e','joschasauer','Ich besuche mit Michelle die Ausstellung „Picasso und Co.“! Ist super!!']].map((r,i)=>{const y=1330+i*92;return <span key={r[0]}>{txt(168,y,20,r[0],'mSmall')}{txt(193,y,610,r[1],'mUser')}{txt(193,y+29,646,r[2],'mSmall')}{i===0?txt(665,y+58,174,'Disco','mExample'):f('u5-'+r[0],665,y+56,174)}</span>})}
- {txt(193,1790,450,'Kino | Bar | Disco | Museum | Schwimmbad','mBank')}{check('u5',168,1838)}
+ {[['a','cheche','Gehe am Samstag zur Ü30 Party. Tanz und Musik bis morgens.'],['b','Waldbad','Das Waldbad hat jetzt bis 20 Uhr geöffnet!'],['c','Krissy007','Bin heute in Ricks Café. Happy Hour ab 18 Uhr. Alle Cocktails nur 4,90 Euro.'],['d','sixtus','Neuer Film mit George Clooney! Wer geht am Donnerstagabend mit?'],['e','joschasauer','Ich besuche mit Michelle die Ausstellung „Picasso und Co“. Ist super!!']].map((r,i)=>{const y=1330+i*92;return <span key={r[0]}>{txt(168,y,20,r[0],'mSmall')}{<div className="mText" style={{left:193,top:Y(y)+28,width:515,fontSize:14}}><Words s={r[2]}/></div>}</span>})}
+ <LineMatching id="u5match" left={['cheche','Waldbad','Krissy007','sixtus','joschasauer']} right={['Kino','Bar','Disco','Museum','Schwimmbad']} values={v} onMatch={set} leftX={193} rightX={714} leftWidth={510} rightWidth={160} ys={[1330,1422,1514,1606,1698].map(Y)} width={901} height={1275} fontSize={18} example={[0,2]}/>
+ {rule('u5',168,1838,()=>[2,4,1,0,3].every((r,i)=>i===0||v['u5match-'+i]===''+r))}
  </>}
  {page==='73'&&<>
  {head('WIEDERHOLUNGSSTATION: GRAMMATIK')}{title('1',211,'Was macht Paul diese Woche? Schreiben Sie.')}
