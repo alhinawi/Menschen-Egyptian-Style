@@ -1,0 +1,12 @@
+/* AB A1.2 Lektion 23/24 + Modul 8 native pages: page-specific helpers */
+.naCanvas .naStrikeB{position:relative;display:inline}
+.naCanvas .naStrikeB:after{content:'';position:absolute;left:-3px;right:-3px;top:58%;height:2px;background:#3a6ea5;transform:rotate(-1.5deg);border-radius:2px;pointer-events:none}
+.naCanvas .naBank{position:absolute;background:#fcf9dd}
+.naCanvas .naTblHead{position:absolute;background:#f0ead6}
+.naCanvas .naTblBox{position:absolute;border:1.5px solid #c6c0a8;box-sizing:border-box}
+.naCanvas .naTblV{position:absolute;width:0;border-left:1.5px solid #c6c0a8}
+.naCanvas .naTblH{position:absolute;height:0;border-top:1.5px solid #c6c0a8}
+.naCanvas .naTblCell{position:absolute;font:bold 17px 'Times New Roman',serif;color:#252723}
+.naCanvas .naPencil{color:#7a7a72;font-style:italic}
+.naCanvas .naSideB{color:#576a95}
+.naCanvas .naText.naS14{font-size:14px}
