@@ -4,7 +4,8 @@
 .nativeAB11Lesson10Mid .mCanvas .mText.mSmall{font-size:14px}
 .nativeAB11Lesson10Mid .mCanvas .mText.mFooter{font-size:12px}
 .nativeAB11Lesson10Mid .mCanvas .mText.mScript2{font:italic 20px Georgia;color:#333}
-.nativeAB11Lesson10Mid .mCanvas .mField{height:20px!important;font-size:16px}
+.nativeAB11.nativeAB11Lesson10Mid .mCanvas .mField{height:20px!important;font-size:16px;border:0!important;border-bottom:1px solid #aaa!important;border-radius:0!important;background:transparent!important}
+.nativeAB11.nativeAB11Lesson10Mid .mCanvas .mTitle{font-family:FiraSans,Arial,sans-serif}
 .nativeAB11Lesson10Mid .mCanvas .mOpen{font-size:15px;line-height:22px!important}
 .nativeAB11Lesson10Mid .mCanvas .mNumber{background:#fb0200;border:0}
 .nativeAB11Lesson10Mid .mCanvas .mRadio{width:15px!important;height:15px!important}
