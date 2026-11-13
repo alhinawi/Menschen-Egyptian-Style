@@ -27,7 +27,7 @@ export function NativeAB12P18_20({page}:{page:string}){
  const check=(id:string,x:number,y:number,answers:Record<string,string>,cls='')=><div className={'naCheck '+cls} data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,t:string,cls='')=><div className={'naTitle '+cls} style={{left:x,top:y,width:w}}><b>{n}</b><Words text={t}/></div>;
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
- const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
+ const audio=(src:string,x:number,y:number,label:string,task?:string)=><button className="naAudio" data-task={task} style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
  return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-500.ttf') format('truetype');font-weight:500}"}</style><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='18'&&<>
@@ -37,7 +37,7 @@ export function NativeAB12P18_20({page}:{page:string}){
   {kb(78,160,'KB 3')}
   {title('1',116,180,600,'Wo sind die Personen?','naOB naNw')}
   <div className="naSide" style={{left:55,top:225}}>WÖRTER</div>
-  {audio('assets/ab-a12-cd2-track10.mp3',38,216,'2 10')}
+  {audio('assets/ab-a12-cd2-track10.mp3',38,216,'2 10','1')}
   {art('globe',70,240,42,42)}
   {text(125,216,20,'a','naExL')}
   {text(158,218,400,'Hören Sie und nummerieren Sie.','naIns')}
@@ -185,7 +185,7 @@ export function NativeAB12P18_20({page}:{page:string}){
   {text(476,198,310,'Was sehen Sie? Was machen Sie dort?','naS188')}
   {text(156,224,20,'b','naS19')}
   {text(181,224,520,'Tauschen Sie mit Ihrer Partnerin / Ihrem Partner. Sie/Er rät.','naS194')}
-  {audio('assets/ab-a12-cd2-track11.mp3',55,316,'2 11')}
+  {audio('assets/ab-a12-cd2-track11.mp3',55,316,'2 11','5')}
   {title('5',120,284,700,'Hören Sie Marlenes Podcast. Was ist falsch? Korrigieren Sie.','naOB naNw')}
   {text(155,324,20,'a','naS19')}
   {text(181,324,215,'In Giesing haben früher','naS19')}
