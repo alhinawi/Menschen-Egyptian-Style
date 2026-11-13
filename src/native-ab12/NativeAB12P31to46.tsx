@@ -765,7 +765,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {check('36-1',171,404,{'p36-1b':'abschließen','p36-1c':'anmelden','p36-1d':'haben','p36-1e':'schaffen','p36-1f':'bekommen'})}
   {check('36-2',346,680,{'p36-2b0':'Anzeige','p36-2b1':'Sprachenschule','p36-2c2':'Studienplatz','p36-2d3':'Ausbildung'})}
   {check('36-3',190,887,{'p36-3b':'Ohne','p36-3c':'Ohne','p36-3d':'Mit','p36-3e':'mit'})}
-  {check('36-4',188,1085,{'4b':'einen','4c':'meiner','4d':'mein'})}
+  {check('36-4',488,1055,{'4b':'einen','4c':'meiner','4d':'mein'})}
   {check('36-5',279,1338,{'p36-50':'i','p36-51':'i','p36-52':'e','p36-53':'e','p36-54':'e'})}
  </>}
  {page==='37'&&<>
