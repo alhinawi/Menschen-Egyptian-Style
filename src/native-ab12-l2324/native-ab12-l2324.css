@@ -344,3 +344,35 @@
 [data-native-ab12="103"] .naCanvas .naText.naRedB103{font-family:DroidSerifB,DroidSerif,Georgia,serif;font-weight:700;color:#b8261a}
 [data-native-ab12="103"] .naCanvas .naText .naBold103{font-family:DroidSerifB,DroidSerif,Georgia,serif;font-weight:700}
 [data-native-ab12="103"] .naCanvas .naText .naIt103{font-style:italic}
+[data-native-ab12="104"] .naCanvas .naText.naHead104{font-family:DroidSerif,Georgia,serif;font-weight:400;color:#0f0e11;letter-spacing:0}
+[data-native-ab12="104"] .naCanvas .naText.naSecH104{font-family:FiraSans,sans-serif;font-weight:700;color:#101014}
+[data-native-ab12="104"] .naCanvas .naBand104{position:absolute;background:#eee9ce}
+[data-native-ab12="104"] .naCanvas .naText.naBandT104{font-family:DroidSerifB,DroidSerif,Georgia,serif;font-weight:700;color:#0c0a07}
+[data-native-ab12="104"] .naCanvas .naText.naLT104{font-family:DroidSerif,Georgia,serif;font-weight:400;color:#26221a}
+[data-native-ab12="104"] .naCanvas .naText.naColH104{font-family:DroidSerifB,DroidSerif,Georgia,serif;font-weight:700;color:#1a1610}
+[data-native-ab12="104"] .naCanvas .naGrid104{position:absolute;left:0;top:0;width:807px;height:1094px;pointer-events:none}
+[data-native-ab12="104"] .naCanvas .naGrid104 rect{fill:#dff0f7}
+[data-native-ab12="104"] .naCanvas .naText.naCell104{font-family:DroidSerif,Georgia,serif;font-weight:400;color:#33373d}
+[data-native-ab12="104"] .naCanvas .naText.naRed104{font-family:DroidSerif,Georgia,serif;font-weight:400;color:#b8261a}
+[data-native-ab12="104"] .naCanvas .naText .naRed104{color:#b8261a}
+[data-native-ab12="104"] .naCanvas .naText .naBold104{font-family:DroidSerifB,DroidSerif,Georgia,serif;font-weight:700}
+[data-native-ab12="104"] .naCanvas .naText.naIt104{font-style:italic}
+[data-native-ab12="104"] .naCanvas .naText .naIt104{font-style:italic}
+[data-native-ab12="104"] .naCanvas .naText.naGrn104{font-family:DroidSerif,Georgia,serif;font-weight:700;color:#99c905}
+[data-native-ab12="104"] .naCanvas .naBul104{position:absolute}
+[data-native-ab12="104"] .naCanvas .naMark104{position:absolute;background:#fdf0c8}
+[data-native-ab12="104"] .naCanvas .naText.naFoot104{font-family:DroidSerif,Georgia,serif;font-size:13.5px;color:#36393b}
+@font-face{font-family:PalSerif;src:url('/assets/fonts/texgyrepagella-regular.otf') format('opentype');font-weight:400;font-display:swap}
+@font-face{font-family:PalSerif;src:url('/assets/fonts/texgyrepagella-bold.otf') format('opentype');font-weight:700;font-display:swap}
+@font-face{font-family:PalSerif;src:url('/assets/fonts/texgyrepagella-italic.otf') format('opentype');font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:PalSerif;src:url('/assets/fonts/texgyrepagella-bolditalic.otf') format('opentype');font-weight:700;font-style:italic;font-display:swap}
+[data-native-ab12="104"] .naCanvas .naText.naHead104{font-family:PalSerif,Palatino,Georgia,serif;font-weight:400;color:#050505;letter-spacing:0}
+[data-native-ab12="104"] .naCanvas .naText.naBandT104{font-family:PalSerif,Palatino,Georgia,serif;font-weight:700;color:#0c0a07}
+[data-native-ab12="104"] .naCanvas .naText.naLT104{font-family:PalSerif,Palatino,Georgia,serif;font-weight:400;color:#26221a}
+[data-native-ab12="104"] .naCanvas .naText.naColH104{font-family:PalSerif,Palatino,Georgia,serif;font-weight:700;color:#100d08}
+[data-native-ab12="104"] .naCanvas .naText.naCell104{font-family:PalSerif,Palatino,Georgia,serif;font-weight:700;color:#0d0f12}
+[data-native-ab12="104"] .naCanvas .naText.naRed104{font-family:PalSerif,Palatino,Georgia,serif;font-weight:700;color:#b8261a}
+[data-native-ab12="104"] .naCanvas .naText .naRed104{color:#b8261a}
+[data-native-ab12="104"] .naCanvas .naText .naBold104{font-family:PalSerif,Palatino,Georgia,serif;font-weight:700}
+[data-native-ab12="104"] .naCanvas .naText.naGrn104{font-family:PalSerif,Palatino,Georgia,serif;font-weight:700;color:#99c905}
+[data-native-ab12="104"] .naCanvas .naText.naFoot104{font-family:PalSerif,Palatino,Georgia,serif;font-weight:400;font-size:13.5px;color:#111213}
