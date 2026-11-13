@@ -195,6 +195,7 @@
 [data-native-ab12="16"] .naCanvas .naText.naYT{font-size:21.4px!important}
 [data-native-ab12="16"] .naCanvas .naSide13{z-index:5;position:absolute;writing-mode:vertical-rl;transform:rotate(180deg);font:bold 9.5px FiraSans,'Trebuchet MS',sans-serif;color:#3d5a94;letter-spacing:1.5px;white-space:nowrap}
 [data-native-ab12="16"] .naCanvas .naText.naMail16{font:18px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
+[data-native-ab12="16"] .naCanvas .naField{border-bottom:2px solid #b5b9bd!important}
 [data-native-ab12="16"] .naCanvas .naText.naSnake16{font:17.5px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
 [data-native-ab12="16"] .naCanvas .naHl16{background:#ffed00}
 [data-native-ab12="16"] .naCanvas .naBand16{position:absolute;background:#ffffe0}
