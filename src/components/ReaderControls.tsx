@@ -27,6 +27,12 @@ export function createReaderStore(): ReaderStore {
     handlers = new Map<string, DomHandler>(),
     restore: Array<[Element, string, DomHandler | null]> = [];
   function publish(): void {
+    // Keep the URL aligned with the rendered page, not the entry deep link.
+    // Every adapter restores an explicit hash before its saved page on reload.
+    const index=window.menschenBook?.getCurrentPageIndex?.();
+    const token=typeof index==='number'?document.querySelectorAll<HTMLElement>('.page')[index]?.dataset.page:undefined;
+    if(token && location.hash.slice(1)!==token)history.replaceState(history.state,'',location.pathname+location.search+'#'+token);
+
     const next: ReaderSnapshot = {
       ready: true,
       zoom: (document.querySelector('#zoomValue') as HTMLElement | null)?.dataset.zoom || document.querySelector('#zoomValue')?.textContent || '',
