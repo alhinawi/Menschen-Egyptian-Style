@@ -296,7 +296,7 @@ export function NativeAB12L23({page}:{page:string}){
   <div className="naSideT" style={{left:55,top:343}}>STRUKTUREN</div>
   {title('2',68,309,640,'Bilden Sie Wörter mit -los und ergänzen Sie.','naRB naNw naS15')}
   <div className="naBank" style={{left:111,top:338,width:255,height:18}}/>
-  <div className="naBank88" style={{left:115,top:340}}><Words text="kosten- | wolken- | arbeits- | "/><span className="naStrikeB"><Words text="fehler-"/></span><Words text=" | farb-"/></div>
+  <div className="naBank88" style={{left:115,top:340,fontSize:12.6}}><Words text="kosten- | wolken- | arbeits- | "/><span className="naStrikeB"><Words text="fehler-"/></span><Words text=" | farb-"/></div>
   {text(111,369,16,'a','naBookSerif naBk88')}{text(130,369,82,'Mein Test ist','naBookSerif naBk88 naNw',14)}
   {art('hand2a',216,369,51,18)}{ruleT(218,383,46)}{text(266,369,10,'.','naBookSerif naBk88 naNw naPrd')}{text(274,369,240,'Ich habe keinen Fehler gemacht!','naBookSerif naBk88 naNw',14)}
   {text(111,388,16,'b','naBookSerif naBk88')}{text(130,387,468,'Man kann im Zentrum parken, aber es ist teuer. Hinter der Post ist es','naBookSerif naBk88 naNw',14)}{field('88-2b',596,383,124,'2 b')}{text(722,387,10,'.','naBookSerif naBk88 naNw naPrd')}
@@ -321,7 +321,7 @@ export function NativeAB12L23({page}:{page:string}){
   <div className="naSideT" style={{left:52,top:741}}>KOMMUNIKATION</div>
   {title('4',68,707,640,'Ordnen Sie zu.','naRB naNw naS15')}
   <div className="naBank" style={{left:111,top:737,width:596,height:42}}/>
-  <div className="naBank88b" style={{left:115,top:739}}><Words text="ich arbeite am Wochenende | der Schnee ist traumhaft | ich backe gern | deine Partys sind immer"/></div>
+  <div className="naBank88b" style={{left:115,top:739,fontSize:13.3}}><Words text="ich arbeite am Wochenende | der Schnee ist traumhaft | ich backe gern | deine Partys sind immer"/></div>
   <div className="naBank88b" style={{left:115,top:759,fontSize:13.5}}><Words text="lustig | ich schreibe am Montag eine Prüfung | ich habe Geburtstag"/></div>
   {text(112,786,300,'Hallo, ich mache am Freitag eine Party, denn','naBookSerif naBk88 naNw',14)}{field('88-4a',415,782,305,'4 a')}{text(721,785,10,'.','naBookSerif naBk88 naNw naPrd')}
   {text(112,807,140,'Könnt ihr kommen?','naBookSerif naBk88 naNw',14)}
