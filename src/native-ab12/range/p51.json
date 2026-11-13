@@ -1,894 +1,894 @@
 {
-"w": 1072,
-"h": 1449,
-"items": [
-{
-"k": "a",
-"n": "tab",
-"x": 974,
-"y": 36,
-"w": 98,
-"h": 90,
-"alt": "Lektionsreiter"
-},
-{
-"k": "t",
-"x": 104,
-"y": 108,
-"w": 431,
-"t": "SELBSTEINSCHÄTZUNG",
-"s": 40,
-"col": "#1a1a18",
-"c": "naHead"
-},
-{
-"k": "a",
-"n": "dkich",
-"x": 558,
-"y": 76,
-"w": 197,
-"h": 37,
-"alt": "Handschrift-Beispiel"
-},
-{
-"k": "a",
-"n": "lights",
-"x": 850,
-"y": 154,
-"w": 116,
-"h": 36,
-"alt": "Ampel"
-},
-{
-"k": "t",
-"x": 106,
-"y": 181,
-"w": 152,
-"t": "Ich kann auch ...",
-"b": true,
-"c": "naRSans",
-"s": 20,
-"col": "#3f4a9c"
-},
-{
-"k": "t",
-"x": 107,
-"y": 211,
-"w": 578,
-"t": "... einen Zeitpunkt angeben (temporale Präpositionen: vor, nach, in):",
-"b": true,
-"col": "#333",
-"s": 17.5
-},
-{
-"k": "t",
-"x": 699,
-"y": 211,
-"w": 22,
-"t": "L16",
-"s": 14
-},
-{
-"k": "t",
-"x": 106,
-"y": 330,
-"w": 475,
-"t": "... einen Zeitraum angeben (temporale Präposition: für):",
-"b": true,
-"col": "#333",
-"s": 17.5
-},
-{
-"k": "t",
-"x": 594,
-"y": 330,
-"w": 23,
-"t": "L16",
-"s": 14
-},
-{
-"k": "t",
-"x": 106,
-"y": 402,
-"w": 429,
-"t": "... über meine Pläne sprechen (Modalverb: wollen):",
-"b": true,
-"col": "#333",
-"s": 17.5
-},
-{
-"k": "t",
-"x": 548,
-"y": 402,
-"w": 22,
-"t": "L17",
-"s": 14
-},
-{
-"k": "t",
-"x": 106,
-"y": 498,
-"w": 484,
-"t": "... sagen, wie ich etwas mache (Präpositionen: ohne, mit):",
-"b": true,
-"col": "#333",
-"s": 17.5
-},
-{
-"k": "t",
-"x": 604,
-"y": 498,
-"w": 21,
-"t": "L17",
-"s": 14
-},
-{
-"k": "t",
-"x": 106,
-"y": 594,
-"w": 309,
-"t": "... jemanden auffordern (Imperativ):",
-"b": true,
-"col": "#333",
-"s": 17.5
-},
-{
-"k": "t",
-"x": 429,
-"y": 594,
-"w": 22,
-"t": "L18",
-"s": 14
-},
-{
-"k": "t",
-"x": 106,
-"y": 689,
-"w": 338,
-"t": "... Ratschläge geben (Modalverb: sollen):",
-"b": true,
-"col": "#333",
-"s": 17.5
-},
-{
-"k": "t",
-"x": 457,
-"y": 689,
-"w": 23,
-"t": "L18",
-"s": 14
-},
-{
-"k": "t",
-"x": 130,
-"y": 234,
-"w": 241,
-"t": "Der Techniker kann leider erst",
-"s": 16
-},
-{
-"k": "t",
-"x": 483,
-"y": 234,
-"w": 179,
-"t": "einer Stunde kommen.",
-"s": 16
-},
-{
-"k": "t",
-"x": 255,
-"y": 259,
-"w": 535,
-"t": "dem Mittagessen habe ich keine Zeit. Aber wir können uns gern am",
-"s": 16
-},
-{
-"k": "t",
-"x": 130,
-"y": 283,
-"w": 91,
-"t": "Nachmittag",
-"s": 16
-},
-{
-"k": "t",
-"x": 353,
-"y": 283,
-"w": 198,
-"t": "der Mittagspause treffen.",
-"s": 16
-},
-{
-"k": "t",
-"x": 153,
-"y": 354,
-"w": 307,
-"t": "Für wie lange fährst du in den Urlaub?",
-"s": 16
-},
-{
-"k": "t",
-"x": 639,
-"y": 354,
-"w": 103,
-"t": "drei Wochen.",
-"s": 16
-},
-{
-"k": "t",
-"x": 129,
-"y": 426,
-"w": 364,
-"t": "wollen / ich / Sängerin / werden / unbedingt:",
-"s": 16
-},
-{
-"k": "t",
-"x": 130,
-"y": 521,
-"w": 100,
-"t": "Ich fahre nie",
-"s": 16
-},
-{
-"k": "t",
-"x": 568,
-"y": 521,
-"w": 233,
-"t": "in den Urlaub. (ohne, Handy)",
-"s": 16
-},
-{
-"k": "t",
-"x": 130,
-"y": 545,
-"w": 100,
-"t": "Ich fahre nie",
-"s": 16
-},
-{
-"k": "t",
-"x": 578,
-"y": 545,
-"w": 223,
-"t": "in den Urlaub. (mit, Laptop)",
-"s": 16
-},
-{
-"k": "t",
-"x": 409,
-"y": 618,
-"w": 79,
-"t": "viel Obst!",
-"s": 16
-},
-{
-"k": "t",
-"x": 129,
-"y": 713,
-"w": 239,
-"t": "er / sollen / gehen / zum Arzt:",
-"s": 16
-},
-{
-"k": "t",
-"x": 798,
-"y": 452,
-"w": 0,
-"t": "."
-},
-{
-"k": "t",
-"x": 590,
-"y": 644,
-"w": 0,
-"t": "!"
-},
-{
-"k": "a",
-"n": "tri",
-"x": 127,
-"y": 343,
-"w": 14,
-"h": 13,
-"alt": "Dreieck"
-},
-{
-"k": "a",
-"n": "sq",
-"x": 469,
-"y": 340,
-"w": 14,
-"h": 14,
-"alt": "Quadrat"
-},
-{
-"k": "a",
-"n": "pic-obst",
-"x": 503,
-"y": 571,
-"w": 53,
-"h": 62,
-"alt": "Frau mit Obst"
-},
-{
-"k": "a",
-"n": "pic-doc",
-"x": 610,
-"y": 598,
-"w": 69,
-"h": 68,
-"alt": "Mann am Bett"
-},
-{
-"k": "t",
-"x": 105,
-"y": 761,
-"w": 364,
-"t": "Üben / Wiederholen möchte ich noch ...",
-"b": true,
-"c": "naRSans",
-"s": 20,
-"col": "#3f4a9c"
-},
-{
-"k": "f",
-"id": "p51-a1",
-"x": 377,
-"y": 236,
-"w": 100,
-"l": "Eingabe a1"
-},
-{
-"k": "f",
-"id": "p51-a2",
-"x": 128,
-"y": 260,
-"w": 122,
-"l": "Eingabe a2"
-},
-{
-"k": "f",
-"id": "p51-a3",
-"x": 226,
-"y": 284,
-"w": 121,
-"l": "Eingabe a3"
-},
-{
-"k": "f",
-"id": "p51-a4",
-"x": 493,
-"y": 357,
-"w": 141,
-"l": "Eingabe a4"
-},
-{
-"k": "f",
-"id": "p51-a5",
-"x": 128,
-"y": 452,
-"w": 668,
-"l": "Eingabe a5"
-},
-{
-"k": "f",
-"id": "p51-a6",
-"x": 236,
-"y": 524,
-"w": 326,
-"l": "Eingabe a6"
-},
-{
-"k": "f",
-"id": "p51-a7",
-"x": 236,
-"y": 547,
-"w": 336,
-"l": "Eingabe a7"
-},
-{
-"k": "f",
-"id": "p51-a8",
-"x": 128,
-"y": 620,
-"w": 272,
-"l": "Eingabe a8"
-},
-{
-"k": "f",
-"id": "p51-a9",
-"x": 128,
-"y": 644,
-"w": 454,
-"l": "Eingabe a9"
-},
-{
-"k": "f",
-"id": "p51-a10",
-"x": 375,
-"y": 716,
-"w": 415,
-"l": "Eingabe a10"
-},
-{
-"k": "f",
-"id": "p51-a11",
-"x": 104,
-"y": 795,
-"w": 677,
-"l": "Eingabe a11"
-},
-{
-"k": "t",
-"x": 107,
-"y": 884,
-"w": 169,
-"t": "RÜCKBLICK",
-"s": 30,
-"col": "#4a4a45",
-"c": "naHead naRThin"
-},
-{
-"k": "t",
-"x": 104,
-"y": 942,
-"w": 376,
-"t": "Wählen Sie eine Aufgabe zu Lektion",
-"b": true,
-"col": "#3f4a9c",
-"s": 17.5
-},
-{
-"k": "a",
-"n": "l16",
-"x": 486,
-"y": 924,
-"w": 32,
-"h": 23,
-"alt": "Lektion 16"
-},
-{
-"k": "f",
-"id": "p51-lekt",
-"x": 521,
-"y": 944,
-"w": 438,
-"l": "Lektion wählen"
-},
-{
-"k": "a",
-"n": "mag",
-"x": 67,
-"y": 987,
-"w": 40,
-"h": 25,
-"alt": "Lupe"
-},
-{
-"k": "a",
-"n": "b1",
-"x": 103,
-"y": 987,
-"w": 35,
-"h": 25,
-"alt": "Aufgabe 1"
-},
-{
-"k": "t",
-"x": 148,
-"y": 1007,
-"w": 657,
-"t": "Lesen Sie noch einmal die E-Mail an Fred im Kursbuch auf Seite 27.",
-"b": true,
-"c": "naRSans",
-"s": 21,
-"col": "#222"
-},
-{
-"k": "t",
-"x": 147,
-"y": 1032,
-"w": 246,
-"t": "Sortieren Sie Freds Antwort.",
-"s": 17,
-"c": "naRSansR",
-"col": "#222"
-},
-{
-"k": "t",
-"x": 179,
-"y": 1071,
-"w": 523,
-"t": "Leider habe ich vor dem Tanzkurs einen Termin an der Uni.",
-"s": 16
-},
-{
-"k": "t",
-"x": 177,
-"y": 1097,
-"w": 261,
-"t": "vielen Dank für Deine E-Mail.",
-"s": 16
-},
-{
-"k": "t",
-"x": 180,
-"y": 1123,
-"w": 431,
-"t": "Ich lade Dich zum Essen in meiner Wohnung ein.",
-"s": 16
-},
-{
-"k": "t",
-"x": 178,
-"y": 1148,
-"w": 145,
-"t": "Viele Grüße Fred",
-"s": 16
-},
-{
-"k": "t",
-"x": 178,
-"y": 1174,
-"w": 301,
-"t": "Aber nach dem Kurs habe ich Zeit.",
-"s": 16
-},
-{
-"k": "t",
-"x": 179,
-"y": 1200,
-"w": 98,
-"t": "Liebe Gitta,",
-"s": 16
-},
-{
-"k": "t",
-"x": 179,
-"y": 1226,
-"w": 118,
-"t": "Hast Du Lust?",
-"s": 16
-},
-{
-"k": "f",
-"id": "p51-o0",
-"x": 150,
-"y": 1074,
-"w": 18,
-"l": "Reihenfolge 1",
-"c": "naRCirc",
-"hh": 18,
-"max": 1
-},
-{
-"k": "f",
-"id": "p51-o1",
-"x": 150,
-"y": 1099,
-"w": 18,
-"l": "Reihenfolge 2",
-"c": "naRCirc",
-"hh": 18,
-"max": 1
-},
-{
-"k": "f",
-"id": "p51-o2",
-"x": 150,
-"y": 1125,
-"w": 18,
-"l": "Reihenfolge 3",
-"c": "naRCirc",
-"hh": 18,
-"max": 1
-},
-{
-"k": "f",
-"id": "p51-o3",
-"x": 150,
-"y": 1151,
-"w": 18,
-"l": "Reihenfolge 4",
-"c": "naRCirc",
-"hh": 18,
-"max": 1
-},
-{
-"k": "f",
-"id": "p51-o4",
-"x": 150,
-"y": 1177,
-"w": 18,
-"l": "Reihenfolge 5",
-"c": "naRCirc",
-"hh": 18,
-"max": 1
-},
-{
-"k": "a",
-"n": "ex1",
-"x": 149,
-"y": 1183,
-"w": 19,
-"h": 20,
-"alt": "Beispiel 1"
-},
-{
-"k": "f",
-"id": "p51-o6",
-"x": 150,
-"y": 1228,
-"w": 18,
-"l": "Reihenfolge 7",
-"c": "naRCirc",
-"hh": 18,
-"max": 1
-},
-{
-"k": "a",
-"n": "hand",
-"x": 60,
-"y": 1278,
-"w": 29,
-"h": 22,
-"alt": "Schreiben"
-},
-{
-"k": "a",
-"n": "b2",
-"x": 102,
-"y": 1270,
-"w": 36,
-"h": 25,
-"alt": "Aufgabe 2"
-},
-{
-"k": "t",
-"x": 145,
-"y": 1290,
-"w": 254,
-"t": "Schreiben Sie eine E-Mail.",
-"b": true,
-"c": "naRSans",
-"s": 21,
-"col": "#222"
-},
-{
-"k": "t",
-"x": 147,
-"y": 1329,
-"w": 748,
-"t": "Eine Freundin hat Sie am Samstag zum Abendessen eingeladen. Sie haben keine Zeit.",
-"s": 16
-},
-{
-"k": "t",
-"x": 147,
-"y": 1355,
-"w": 523,
-"t": "Sagen Sie warum und machen Sie einen anderen Vorschlag.",
-"s": 16
-},
-{
-"k": "a",
-"n": "modul",
-"x": 996,
-"y": 1388,
-"w": 76,
-"h": 26,
-"alt": "Modul 6"
-},
-{
-"k": "t",
-"x": 811,
-"y": 1406,
-"w": 115,
-"t": "einundfünfzig",
-"c": "naRSansR",
-"s": 16,
-"col": "#555"
-},
-{
-"k": "t",
-"x": 942,
-"y": 1407,
-"w": 2,
-"t": "|",
-"c": "naRSansR",
-"s": 16,
-"col": "#555"
-},
-{
-"k": "t",
-"x": 961,
-"y": 1406,
-"w": 15,
-"t": "51",
-"c": "naRSansR",
-"s": 16,
-"col": "#555"
-},
-{
-"k": "d",
-"id": "p51-s1",
-"v": "g",
-"x": 859,
-"y": 195,
-"l": "Selbsteinschätzung 1 grün",
-"s": 19,
-"lt": 1
-},
-{
-"k": "d",
-"id": "p51-s1",
-"v": "y",
-"x": 898,
-"y": 195,
-"l": "Selbsteinschätzung 1 gelb",
-"s": 19,
-"lt": 1
-},
-{
-"k": "d",
-"id": "p51-s1",
-"v": "r",
-"x": 937,
-"y": 195,
-"l": "Selbsteinschätzung 1 rot",
-"s": 19,
-"lt": 1
-},
-{
-"k": "d",
-"id": "p51-s2",
-"v": "g",
-"x": 859,
-"y": 314,
-"l": "Selbsteinschätzung 2 grün",
-"s": 19,
-"lt": 1
-},
-{
-"k": "d",
-"id": "p51-s2",
-"v": "y",
-"x": 898,
-"y": 314,
-"l": "Selbsteinschätzung 2 gelb",
-"s": 19,
-"lt": 1
-},
-{
-"k": "d",
-"id": "p51-s2",
-"v": "r",
-"x": 937,
-"y": 314,
-"l": "Selbsteinschätzung 2 rot",
-"s": 19,
-"lt": 1
-},
-{
-"k": "d",
-"id": "p51-s3",
-"v": "g",
-"x": 859,
-"y": 386,
-"l": "Selbsteinschätzung 3 grün",
-"s": 19,
-"lt": 1
-},
-{
-"k": "d",
-"id": "p51-s3",
-"v": "y",
-"x": 898,
-"y": 386,
-"l": "Selbsteinschätzung 3 gelb",
-"s": 19,
-"lt": 1
-},
-{
-"k": "d",
-"id": "p51-s3",
-"v": "r",
-"x": 937,
-"y": 386,
-"l": "Selbsteinschätzung 3 rot",
-"s": 19,
-"lt": 1
-},
-{
-"k": "d",
-"id": "p51-s4",
-"v": "g",
-"x": 859,
-"y": 482,
-"l": "Selbsteinschätzung 4 grün",
-"s": 19,
-"lt": 1
-},
-{
-"k": "d",
-"id": "p51-s4",
-"v": "y",
-"x": 898,
-"y": 482,
-"l": "Selbsteinschätzung 4 gelb",
-"s": 19,
-"lt": 1
-},
-{
-"k": "d",
-"id": "p51-s4",
-"v": "r",
-"x": 937,
-"y": 482,
-"l": "Selbsteinschätzung 4 rot",
-"s": 19,
-"lt": 1
-},
-{
-"k": "d",
-"id": "p51-s5",
-"v": "g",
-"x": 859,
-"y": 578,
-"l": "Selbsteinschätzung 5 grün",
-"s": 19,
-"lt": 1
-},
-{
-"k": "d",
-"id": "p51-s5",
-"v": "y",
-"x": 898,
-"y": 578,
-"l": "Selbsteinschätzung 5 gelb",
-"s": 19,
-"lt": 1
-},
-{
-"k": "d",
-"id": "p51-s5",
-"v": "r",
-"x": 937,
-"y": 578,
-"l": "Selbsteinschätzung 5 rot",
-"s": 19,
-"lt": 1
-},
-{
-"k": "d",
-"id": "p51-s6",
-"v": "g",
-"x": 859,
-"y": 673,
-"l": "Selbsteinschätzung 6 grün",
-"s": 19,
-"lt": 1
-},
-{
-"k": "d",
-"id": "p51-s6",
-"v": "y",
-"x": 898,
-"y": 673,
-"l": "Selbsteinschätzung 6 gelb",
-"s": 19,
-"lt": 1
-},
-{
-"k": "d",
-"id": "p51-s6",
-"v": "r",
-"x": 937,
-"y": 673,
-"l": "Selbsteinschätzung 6 rot",
-"s": 19,
-"lt": 1
-}
-]
+ "w": 1072,
+ "h": 1449,
+ "items": [
+  {
+   "k": "a",
+   "n": "tab",
+   "x": 974,
+   "y": 36,
+   "w": 98,
+   "h": 90,
+   "alt": "Lektionsreiter"
+  },
+  {
+   "k": "t",
+   "x": 104,
+   "y": 108,
+   "w": 431,
+   "t": "SELBSTEINSCHÄTZUNG",
+   "s": 40,
+   "col": "#1a1a18",
+   "c": "naHead"
+  },
+  {
+   "k": "a",
+   "n": "dkich",
+   "x": 558,
+   "y": 76,
+   "w": 197,
+   "h": 37,
+   "alt": "Handschrift-Beispiel"
+  },
+  {
+   "k": "a",
+   "n": "lights",
+   "x": 850,
+   "y": 154,
+   "w": 116,
+   "h": 36,
+   "alt": "Ampel"
+  },
+  {
+   "k": "t",
+   "x": 106,
+   "y": 181,
+   "w": 152,
+   "t": "Ich kann auch ...",
+   "b": true,
+   "c": "naRSans",
+   "s": 20,
+   "col": "#3f4a9c"
+  },
+  {
+   "k": "t",
+   "x": 107,
+   "y": 211,
+   "w": 578,
+   "t": "... einen Zeitpunkt angeben (temporale Präpositionen: vor, nach, in):",
+   "b": true,
+   "col": "#333",
+   "s": 17.5
+  },
+  {
+   "k": "t",
+   "x": 699,
+   "y": 211,
+   "w": 22,
+   "t": "L16",
+   "s": 17.5
+  },
+  {
+   "k": "t",
+   "x": 106,
+   "y": 330,
+   "w": 475,
+   "t": "... einen Zeitraum angeben (temporale Präposition: für):",
+   "b": true,
+   "col": "#333",
+   "s": 17.5
+  },
+  {
+   "k": "t",
+   "x": 594,
+   "y": 330,
+   "w": 23,
+   "t": "L16",
+   "s": 17.5
+  },
+  {
+   "k": "t",
+   "x": 106,
+   "y": 402,
+   "w": 429,
+   "t": "... über meine Pläne sprechen (Modalverb: wollen):",
+   "b": true,
+   "col": "#333",
+   "s": 17.5
+  },
+  {
+   "k": "t",
+   "x": 548,
+   "y": 402,
+   "w": 22,
+   "t": "L17",
+   "s": 17.5
+  },
+  {
+   "k": "t",
+   "x": 106,
+   "y": 498,
+   "w": 484,
+   "t": "... sagen, wie ich etwas mache (Präpositionen: ohne, mit):",
+   "b": true,
+   "col": "#333",
+   "s": 17.5
+  },
+  {
+   "k": "t",
+   "x": 604,
+   "y": 498,
+   "w": 21,
+   "t": "L17",
+   "s": 17.5
+  },
+  {
+   "k": "t",
+   "x": 106,
+   "y": 594,
+   "w": 309,
+   "t": "... jemanden auffordern (Imperativ):",
+   "b": true,
+   "col": "#333",
+   "s": 17.5
+  },
+  {
+   "k": "t",
+   "x": 429,
+   "y": 594,
+   "w": 22,
+   "t": "L18",
+   "s": 17.5
+  },
+  {
+   "k": "t",
+   "x": 106,
+   "y": 689,
+   "w": 338,
+   "t": "... Ratschläge geben (Modalverb: sollen):",
+   "b": true,
+   "col": "#333",
+   "s": 17.5
+  },
+  {
+   "k": "t",
+   "x": 457,
+   "y": 689,
+   "w": 23,
+   "t": "L18",
+   "s": 17.5
+  },
+  {
+   "k": "t",
+   "x": 130,
+   "y": 234,
+   "w": 241,
+   "t": "Der Techniker kann leider erst",
+   "s": 16
+  },
+  {
+   "k": "t",
+   "x": 483,
+   "y": 234,
+   "w": 179,
+   "t": "einer Stunde kommen.",
+   "s": 16
+  },
+  {
+   "k": "t",
+   "x": 255,
+   "y": 259,
+   "w": 535,
+   "t": "dem Mittagessen habe ich keine Zeit. Aber wir können uns gern am",
+   "s": 16
+  },
+  {
+   "k": "t",
+   "x": 130,
+   "y": 283,
+   "w": 91,
+   "t": "Nachmittag",
+   "s": 16
+  },
+  {
+   "k": "t",
+   "x": 353,
+   "y": 283,
+   "w": 198,
+   "t": "der Mittagspause treffen.",
+   "s": 16
+  },
+  {
+   "k": "t",
+   "x": 153,
+   "y": 354,
+   "w": 307,
+   "t": "Für wie lange fährst du in den Urlaub?",
+   "s": 16
+  },
+  {
+   "k": "t",
+   "x": 639,
+   "y": 354,
+   "w": 103,
+   "t": "drei Wochen.",
+   "s": 16
+  },
+  {
+   "k": "t",
+   "x": 129,
+   "y": 426,
+   "w": 364,
+   "t": "wollen / ich / Sängerin / werden / unbedingt:",
+   "s": 16
+  },
+  {
+   "k": "t",
+   "x": 130,
+   "y": 521,
+   "w": 100,
+   "t": "Ich fahre nie",
+   "s": 16
+  },
+  {
+   "k": "t",
+   "x": 568,
+   "y": 521,
+   "w": 233,
+   "t": "in den Urlaub. (ohne, Handy)",
+   "s": 16
+  },
+  {
+   "k": "t",
+   "x": 130,
+   "y": 545,
+   "w": 100,
+   "t": "Ich fahre nie",
+   "s": 16
+  },
+  {
+   "k": "t",
+   "x": 578,
+   "y": 545,
+   "w": 223,
+   "t": "in den Urlaub. (mit, Laptop)",
+   "s": 16
+  },
+  {
+   "k": "t",
+   "x": 409,
+   "y": 618,
+   "w": 79,
+   "t": "viel Obst!",
+   "s": 16
+  },
+  {
+   "k": "t",
+   "x": 129,
+   "y": 713,
+   "w": 239,
+   "t": "er / sollen / gehen / zum Arzt:",
+   "s": 16
+  },
+  {
+   "k": "t",
+   "x": 798,
+   "y": 452,
+   "w": 0,
+   "t": "."
+  },
+  {
+   "k": "t",
+   "x": 590,
+   "y": 644,
+   "w": 0,
+   "t": "!"
+  },
+  {
+   "k": "a",
+   "n": "tri",
+   "x": 127,
+   "y": 343,
+   "w": 14,
+   "h": 13,
+   "alt": "Dreieck"
+  },
+  {
+   "k": "a",
+   "n": "sq",
+   "x": 469,
+   "y": 340,
+   "w": 14,
+   "h": 14,
+   "alt": "Quadrat"
+  },
+  {
+   "k": "a",
+   "n": "pic-obst",
+   "x": 503,
+   "y": 571,
+   "w": 53,
+   "h": 62,
+   "alt": "Frau mit Obst"
+  },
+  {
+   "k": "a",
+   "n": "pic-doc",
+   "x": 610,
+   "y": 598,
+   "w": 69,
+   "h": 68,
+   "alt": "Mann am Bett"
+  },
+  {
+   "k": "t",
+   "x": 105,
+   "y": 761,
+   "w": 364,
+   "t": "Üben / Wiederholen möchte ich noch ...",
+   "b": true,
+   "c": "naRSans",
+   "s": 20,
+   "col": "#3f4a9c"
+  },
+  {
+   "k": "f",
+   "id": "p51-a1",
+   "x": 377,
+   "y": 236,
+   "w": 100,
+   "l": "Eingabe a1"
+  },
+  {
+   "k": "f",
+   "id": "p51-a2",
+   "x": 128,
+   "y": 260,
+   "w": 122,
+   "l": "Eingabe a2"
+  },
+  {
+   "k": "f",
+   "id": "p51-a3",
+   "x": 226,
+   "y": 284,
+   "w": 121,
+   "l": "Eingabe a3"
+  },
+  {
+   "k": "f",
+   "id": "p51-a4",
+   "x": 493,
+   "y": 357,
+   "w": 141,
+   "l": "Eingabe a4"
+  },
+  {
+   "k": "f",
+   "id": "p51-a5",
+   "x": 128,
+   "y": 452,
+   "w": 668,
+   "l": "Eingabe a5"
+  },
+  {
+   "k": "f",
+   "id": "p51-a6",
+   "x": 236,
+   "y": 524,
+   "w": 326,
+   "l": "Eingabe a6"
+  },
+  {
+   "k": "f",
+   "id": "p51-a7",
+   "x": 236,
+   "y": 547,
+   "w": 336,
+   "l": "Eingabe a7"
+  },
+  {
+   "k": "f",
+   "id": "p51-a8",
+   "x": 128,
+   "y": 620,
+   "w": 272,
+   "l": "Eingabe a8"
+  },
+  {
+   "k": "f",
+   "id": "p51-a9",
+   "x": 128,
+   "y": 644,
+   "w": 454,
+   "l": "Eingabe a9"
+  },
+  {
+   "k": "f",
+   "id": "p51-a10",
+   "x": 375,
+   "y": 716,
+   "w": 415,
+   "l": "Eingabe a10"
+  },
+  {
+   "k": "f",
+   "id": "p51-a11",
+   "x": 104,
+   "y": 795,
+   "w": 677,
+   "l": "Eingabe a11"
+  },
+  {
+   "k": "t",
+   "x": 107,
+   "y": 884,
+   "w": 169,
+   "t": "RÜCKBLICK",
+   "s": 30,
+   "col": "#4a4a45",
+   "c": "naHead naRThin"
+  },
+  {
+   "k": "t",
+   "x": 104,
+   "y": 942,
+   "w": 376,
+   "t": "Wählen Sie eine Aufgabe zu Lektion",
+   "b": true,
+   "col": "#3f4a9c",
+   "s": 17.5
+  },
+  {
+   "k": "a",
+   "n": "l16",
+   "x": 486,
+   "y": 924,
+   "w": 32,
+   "h": 23,
+   "alt": "Lektion 16"
+  },
+  {
+   "k": "f",
+   "id": "p51-lekt",
+   "x": 521,
+   "y": 944,
+   "w": 438,
+   "l": "Lektion wählen"
+  },
+  {
+   "k": "a",
+   "n": "mag",
+   "x": 67,
+   "y": 987,
+   "w": 40,
+   "h": 25,
+   "alt": "Lupe"
+  },
+  {
+   "k": "a",
+   "n": "b1",
+   "x": 103,
+   "y": 987,
+   "w": 35,
+   "h": 25,
+   "alt": "Aufgabe 1"
+  },
+  {
+   "k": "t",
+   "x": 148,
+   "y": 1007,
+   "w": 657,
+   "t": "Lesen Sie noch einmal die E-Mail an Fred im Kursbuch auf Seite 27.",
+   "b": true,
+   "c": "naRSans",
+   "s": 21,
+   "col": "#222"
+  },
+  {
+   "k": "t",
+   "x": 147,
+   "y": 1032,
+   "w": 246,
+   "t": "Sortieren Sie Freds Antwort.",
+   "s": 17,
+   "c": "naRSansR",
+   "col": "#222"
+  },
+  {
+   "k": "t",
+   "x": 179,
+   "y": 1071,
+   "w": 523,
+   "t": "Leider habe ich vor dem Tanzkurs einen Termin an der Uni.",
+   "s": 16
+  },
+  {
+   "k": "t",
+   "x": 177,
+   "y": 1097,
+   "w": 261,
+   "t": "vielen Dank für Deine E-Mail.",
+   "s": 16
+  },
+  {
+   "k": "t",
+   "x": 180,
+   "y": 1123,
+   "w": 431,
+   "t": "Ich lade Dich zum Essen in meiner Wohnung ein.",
+   "s": 16
+  },
+  {
+   "k": "t",
+   "x": 178,
+   "y": 1148,
+   "w": 145,
+   "t": "Viele Grüße Fred",
+   "s": 16
+  },
+  {
+   "k": "t",
+   "x": 178,
+   "y": 1174,
+   "w": 301,
+   "t": "Aber nach dem Kurs habe ich Zeit.",
+   "s": 16
+  },
+  {
+   "k": "t",
+   "x": 179,
+   "y": 1200,
+   "w": 98,
+   "t": "Liebe Gitta,",
+   "s": 16
+  },
+  {
+   "k": "t",
+   "x": 179,
+   "y": 1226,
+   "w": 118,
+   "t": "Hast Du Lust?",
+   "s": 16
+  },
+  {
+   "k": "f",
+   "id": "p51-o0",
+   "x": 150,
+   "y": 1074,
+   "w": 18,
+   "l": "Reihenfolge 1",
+   "c": "naRCirc",
+   "hh": 18,
+   "max": 1
+  },
+  {
+   "k": "f",
+   "id": "p51-o1",
+   "x": 150,
+   "y": 1099,
+   "w": 18,
+   "l": "Reihenfolge 2",
+   "c": "naRCirc",
+   "hh": 18,
+   "max": 1
+  },
+  {
+   "k": "f",
+   "id": "p51-o2",
+   "x": 150,
+   "y": 1125,
+   "w": 18,
+   "l": "Reihenfolge 3",
+   "c": "naRCirc",
+   "hh": 18,
+   "max": 1
+  },
+  {
+   "k": "f",
+   "id": "p51-o3",
+   "x": 150,
+   "y": 1151,
+   "w": 18,
+   "l": "Reihenfolge 4",
+   "c": "naRCirc",
+   "hh": 18,
+   "max": 1
+  },
+  {
+   "k": "f",
+   "id": "p51-o4",
+   "x": 150,
+   "y": 1177,
+   "w": 18,
+   "l": "Reihenfolge 5",
+   "c": "naRCirc",
+   "hh": 18,
+   "max": 1
+  },
+  {
+   "k": "a",
+   "n": "ex1",
+   "x": 149,
+   "y": 1183,
+   "w": 19,
+   "h": 20,
+   "alt": "Beispiel 1"
+  },
+  {
+   "k": "f",
+   "id": "p51-o6",
+   "x": 150,
+   "y": 1228,
+   "w": 18,
+   "l": "Reihenfolge 7",
+   "c": "naRCirc",
+   "hh": 18,
+   "max": 1
+  },
+  {
+   "k": "a",
+   "n": "hand",
+   "x": 60,
+   "y": 1278,
+   "w": 29,
+   "h": 22,
+   "alt": "Schreiben"
+  },
+  {
+   "k": "a",
+   "n": "b2",
+   "x": 102,
+   "y": 1270,
+   "w": 36,
+   "h": 25,
+   "alt": "Aufgabe 2"
+  },
+  {
+   "k": "t",
+   "x": 145,
+   "y": 1290,
+   "w": 254,
+   "t": "Schreiben Sie eine E-Mail.",
+   "b": true,
+   "c": "naRSans",
+   "s": 21,
+   "col": "#222"
+  },
+  {
+   "k": "t",
+   "x": 147,
+   "y": 1329,
+   "w": 748,
+   "t": "Eine Freundin hat Sie am Samstag zum Abendessen eingeladen. Sie haben keine Zeit.",
+   "s": 16
+  },
+  {
+   "k": "t",
+   "x": 147,
+   "y": 1355,
+   "w": 523,
+   "t": "Sagen Sie warum und machen Sie einen anderen Vorschlag.",
+   "s": 16
+  },
+  {
+   "k": "a",
+   "n": "modul",
+   "x": 996,
+   "y": 1388,
+   "w": 76,
+   "h": 26,
+   "alt": "Modul 6"
+  },
+  {
+   "k": "t",
+   "x": 811,
+   "y": 1406,
+   "w": 115,
+   "t": "einundfünfzig",
+   "c": "naRSansR",
+   "s": 16,
+   "col": "#555"
+  },
+  {
+   "k": "t",
+   "x": 942,
+   "y": 1407,
+   "w": 2,
+   "t": "|",
+   "c": "naRSansR",
+   "s": 16,
+   "col": "#555"
+  },
+  {
+   "k": "t",
+   "x": 961,
+   "y": 1406,
+   "w": 15,
+   "t": "51",
+   "c": "naRSansR",
+   "s": 16,
+   "col": "#555"
+  },
+  {
+   "k": "d",
+   "id": "p51-s1",
+   "v": "g",
+   "x": 859,
+   "y": 195,
+   "l": "Selbsteinschätzung 1 grün",
+   "s": 19,
+   "lt": 1
+  },
+  {
+   "k": "d",
+   "id": "p51-s1",
+   "v": "y",
+   "x": 898,
+   "y": 195,
+   "l": "Selbsteinschätzung 1 gelb",
+   "s": 19,
+   "lt": 1
+  },
+  {
+   "k": "d",
+   "id": "p51-s1",
+   "v": "r",
+   "x": 937,
+   "y": 195,
+   "l": "Selbsteinschätzung 1 rot",
+   "s": 19,
+   "lt": 1
+  },
+  {
+   "k": "d",
+   "id": "p51-s2",
+   "v": "g",
+   "x": 859,
+   "y": 314,
+   "l": "Selbsteinschätzung 2 grün",
+   "s": 19,
+   "lt": 1
+  },
+  {
+   "k": "d",
+   "id": "p51-s2",
+   "v": "y",
+   "x": 898,
+   "y": 314,
+   "l": "Selbsteinschätzung 2 gelb",
+   "s": 19,
+   "lt": 1
+  },
+  {
+   "k": "d",
+   "id": "p51-s2",
+   "v": "r",
+   "x": 937,
+   "y": 314,
+   "l": "Selbsteinschätzung 2 rot",
+   "s": 19,
+   "lt": 1
+  },
+  {
+   "k": "d",
+   "id": "p51-s3",
+   "v": "g",
+   "x": 859,
+   "y": 386,
+   "l": "Selbsteinschätzung 3 grün",
+   "s": 19,
+   "lt": 1
+  },
+  {
+   "k": "d",
+   "id": "p51-s3",
+   "v": "y",
+   "x": 898,
+   "y": 386,
+   "l": "Selbsteinschätzung 3 gelb",
+   "s": 19,
+   "lt": 1
+  },
+  {
+   "k": "d",
+   "id": "p51-s3",
+   "v": "r",
+   "x": 937,
+   "y": 386,
+   "l": "Selbsteinschätzung 3 rot",
+   "s": 19,
+   "lt": 1
+  },
+  {
+   "k": "d",
+   "id": "p51-s4",
+   "v": "g",
+   "x": 859,
+   "y": 482,
+   "l": "Selbsteinschätzung 4 grün",
+   "s": 19,
+   "lt": 1
+  },
+  {
+   "k": "d",
+   "id": "p51-s4",
+   "v": "y",
+   "x": 898,
+   "y": 482,
+   "l": "Selbsteinschätzung 4 gelb",
+   "s": 19,
+   "lt": 1
+  },
+  {
+   "k": "d",
+   "id": "p51-s4",
+   "v": "r",
+   "x": 937,
+   "y": 482,
+   "l": "Selbsteinschätzung 4 rot",
+   "s": 19,
+   "lt": 1
+  },
+  {
+   "k": "d",
+   "id": "p51-s5",
+   "v": "g",
+   "x": 859,
+   "y": 578,
+   "l": "Selbsteinschätzung 5 grün",
+   "s": 19,
+   "lt": 1
+  },
+  {
+   "k": "d",
+   "id": "p51-s5",
+   "v": "y",
+   "x": 898,
+   "y": 578,
+   "l": "Selbsteinschätzung 5 gelb",
+   "s": 19,
+   "lt": 1
+  },
+  {
+   "k": "d",
+   "id": "p51-s5",
+   "v": "r",
+   "x": 937,
+   "y": 578,
+   "l": "Selbsteinschätzung 5 rot",
+   "s": 19,
+   "lt": 1
+  },
+  {
+   "k": "d",
+   "id": "p51-s6",
+   "v": "g",
+   "x": 859,
+   "y": 673,
+   "l": "Selbsteinschätzung 6 grün",
+   "s": 19,
+   "lt": 1
+  },
+  {
+   "k": "d",
+   "id": "p51-s6",
+   "v": "y",
+   "x": 898,
+   "y": 673,
+   "l": "Selbsteinschätzung 6 gelb",
+   "s": 19,
+   "lt": 1
+  },
+  {
+   "k": "d",
+   "id": "p51-s6",
+   "v": "r",
+   "x": 937,
+   "y": 673,
+   "l": "Selbsteinschätzung 6 rot",
+   "s": 19,
+   "lt": 1
+  }
+ ]
 }
