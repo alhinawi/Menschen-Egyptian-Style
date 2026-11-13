@@ -1,3 +1,5 @@
+import successSound from '../assets/feedback/ok06_sparkle.mp3?url';
+import errorSound from '../assets/feedback/err04_double.mp3?url';
 // User-triggered grading feedback, shared by every compact check control.
 let audio: AudioContext | undefined;
 let stopEffect: (() => void) | undefined;
@@ -9,22 +11,26 @@ function readyAudio() {
   if (audio.state === 'suspended') void audio.resume().catch(() => {});
  } catch { /* Grading and visual feedback never depend on sound permission. */ }
 }
-function sound(correct: boolean) {
+const soundBytes = [errorSound,successSound].map(url=>fetch(url).then(response=>{
+ if(!response.ok)throw new Error('Feedback sound unavailable');
+ return response.arrayBuffer();
+}).catch(()=>null));
+const soundBuffers = new Map<boolean,Promise<AudioBuffer | null>>();
+async function sound(correct: boolean) {
  try {
-  if (!audio || audio.state !== 'running') return;
-  const context = audio, now = context.currentTime;
-  const notes = correct ? [523.25, 659.25, 783.99, 1046.5] : [293.66, 246.94];
-  notes.forEach((frequency, i) => {
-   const oscillator = context.createOscillator(), gain = context.createGain();
-   const start = now + i * (correct ? .085 : .105), duration = correct ? .22 : .16;
-   oscillator.type = 'sine'; oscillator.frequency.value = frequency;
-   gain.gain.setValueAtTime(0, start);
-   gain.gain.linearRampToValueAtTime(.055, start + .012);
-   gain.gain.exponentialRampToValueAtTime(.001, start + duration);
-   oscillator.connect(gain); gain.connect(context.destination);
-   oscillator.start(start); oscillator.stop(start + duration + .01);
-   oscillator.onended = () => { oscillator.disconnect(); gain.disconnect(); };
-  });
+  const context=audio;
+  if(!context)return;
+  if(context.state==='suspended')await context.resume().catch(()=>{});
+  if(context.state!=='running')return;
+  let decoded=soundBuffers.get(correct);
+  if(!decoded){
+   decoded=soundBytes[correct?1:0].then(bytes=>bytes?context.decodeAudioData(bytes.slice(0)).catch(()=>null):null);
+   soundBuffers.set(correct,decoded);
+  }
+  const buffer=await decoded;
+  if(!buffer||context.state!=='running')return;
+  const source=context.createBufferSource();source.buffer=buffer;
+  source.connect(context.destination);source.onended=()=>source.disconnect();source.start();
  } catch { /* A muted or blocked device still gets normal exercise feedback. */ }
 }
 function fireworks() {
