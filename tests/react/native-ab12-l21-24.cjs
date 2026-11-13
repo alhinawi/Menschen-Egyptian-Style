@@ -148,5 +148,77 @@ for(const width of[320,390]){
  assert.equal(await p.evaluate(()=>localStorage.getItem('native-ab12-69')),null,'reset clears storage');
  console.log(width,'p69 interaction/grade/persist/reset PASS');
  await p.close();
+ // page 70: TEST page - word-tile fields, radio matrix, dialog fields, grading, persistence, reset
+ p=await openPage(b,width,'70');
+ const pg70=p.locator('.page[data-page="70"]');
+ assert.equal(await pg70.locator('.nativeAB12[data-native-ab12="70"]').count(),1,'native p70 rendered');
+ for(const id of['p70-1a','p70-1b','p70-1c1','p70-1c2','p70-1c3','p70-1d','p70-3b','p70-3c','p70-3d','p70-3e','p70-4a','p70-4b','p70-4c','p70-4d'])assert.equal(await pg70.locator('[data-native-field="'+id+'"]').count(),1,'field '+id);
+ assert.equal(await pg70.locator('input.naDot').count(),10,'ten ex2 radios');
+ // g1: wrong then right
+ await pg70.locator('[data-native-field="p70-1a"]').fill('x');
+ await pg70.locator('[data-check="g1"] button').click();
+ assert.match((await pg70.locator('[data-check="g1"] output').textContent())||'',/Noch einmal/,'g1 wrong graded');
+ await pg70.locator('[data-native-field="p70-1a"]').fill('grillen');
+ await pg70.locator('[data-native-field="p70-1b"]').fill('tragen');
+ await pg70.locator('[data-native-field="p70-1c1"]').fill('schieben');
+ await pg70.locator('[data-native-field="p70-1c2"]').fill('achten');
+ await pg70.locator('[data-native-field="p70-1c3"]').fill('nehmen');
+ await pg70.locator('[data-native-field="p70-1d"]').fill('hupen');
+ await pg70.locator('[data-check="g1"] button').click();
+ assert.match((await pg70.locator('[data-check="g1"] output').textContent())||'',/Richtig/,'g1 correct graded');
+ // g2 radios: wrong then right
+ await pg70.locator('input.naDot[aria-label="2 b wollen"]').check();
+ await pg70.locator('input.naDot[aria-label="2 c wollen"]').check();
+ await pg70.locator('input.naDot[aria-label="2 d dürfen"]').check();
+ await pg70.locator('input.naDot[aria-label="2 e müssen"]').check();
+ await pg70.locator('input.naDot[aria-label="2 f müssen"]').check();
+ await pg70.locator('[data-check="g2"] button').click();
+ assert.match((await pg70.locator('[data-check="g2"] output').textContent())||'',/Noch einmal/,'g2 wrong graded');
+ await pg70.locator('input.naDot[aria-label="2 b dürfen"]').check();
+ await pg70.locator('input.naDot[aria-label="2 c können"]').check();
+ await pg70.locator('input.naDot[aria-label="2 d müssen"]').check();
+ await pg70.locator('input.naDot[aria-label="2 e können"]').check();
+ await pg70.locator('input.naDot[aria-label="2 f dürfen"]').check();
+ await pg70.locator('[data-check="g2"] button').click();
+ assert.match((await pg70.locator('[data-check="g2"] output').textContent())||'',/Richtig/,'g2 correct graded');
+ // g3 + g4: correct
+ await pg70.locator('[data-native-field="p70-3b"]').fill('müsst');
+ await pg70.locator('[data-native-field="p70-3c"]').fill('muss');
+ await pg70.locator('[data-native-field="p70-3d"]').fill('Dürfen');
+ await pg70.locator('[data-native-field="p70-3e"]').fill('müssen');
+ await pg70.locator('[data-check="g3"] button').click();
+ assert.match((await pg70.locator('[data-check="g3"] output').textContent())||'',/Richtig/,'g3 correct graded');
+ await pg70.locator('[data-native-field="p70-4a"]').fill('Das ist falsch.');
+ await pg70.locator('[data-native-field="p70-4b"]').fill('Das ist ja wirklich sehr gefährlich, oder?');
+ await pg70.locator('[data-native-field="p70-4c"]').fill('Das finde ich gar nicht gut.');
+ await pg70.locator('[data-native-field="p70-4d"]').fill('Diese Regel ist in Ordnung.');
+ await pg70.locator('[data-check="g4"] button').click();
+ assert.match((await pg70.locator('[data-check="g4"] output').textContent())||'',/Richtig/,'g4 correct graded');
+ // saved-reload
+ await p.reload();await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');await p.evaluate(()=>window.bookPage([...document.querySelectorAll('.page')].findIndex(e=>e.dataset.page==='70')));await p.waitForTimeout(350);
+ assert.equal(await p.locator('.page[data-page="70"] [data-native-field="p70-1a"]').inputValue(),'grillen','saved field reloaded');
+ assert.equal(await p.evaluate(()=>JSON.parse(localStorage.getItem('native-ab12-70')||'{}')['r2b']),'dürfen','saved radio reloaded');
+ // reset clears
+ await p.locator('.pageResetTrigger').click();await p.getByRole('button',{name:'Reset',exact:true}).click();
+ assert.equal(await p.locator('.page[data-page="70"] [data-native-field="p70-1a"]').inputValue(),'','reset clears field');
+ assert.equal(await p.evaluate(()=>localStorage.getItem('native-ab12-70')),null,'reset clears storage');
+ console.log(width,'p70 interaction/grade/persist/reset PASS');
+ await p.close();
+ // page 71: Lernwortschatz - ungraded writing-line fields, persistence, reset
+ p=await openPage(b,width,'71');
+ const pg71=p.locator('.page[data-page="71"]');
+ assert.equal(await pg71.locator('.nativeAB12[data-native-ab12="71"]').count(),1,'native p71 rendered');
+ assert.equal(await pg71.locator('[data-native-field]').count(),38,'38 writing fields');
+ for(const id of['p71-1-l1','p71-1-l19','p71-1-r1','p71-1-r18','p71-2-1'])assert.equal(await pg71.locator('[data-native-field="'+id+'"]').count(),1,'field '+id);
+ await pg71.locator('[data-native-field="p71-1-l1"]').fill('Fahrer');
+ await pg71.locator('[data-native-field="p71-2-1"]').fill('Notiz');
+ await p.reload();await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');await p.evaluate(()=>window.bookPage([...document.querySelectorAll('.page')].findIndex(e=>e.dataset.page==='71')));await p.waitForTimeout(350);
+ assert.equal(await p.locator('.page[data-page="71"] [data-native-field="p71-1-l1"]').inputValue(),'Fahrer','saved field reloaded');
+ assert.equal(await p.locator('.page[data-page="71"] [data-native-field="p71-2-1"]').inputValue(),'Notiz','saved ex2 field reloaded');
+ await p.locator('.pageResetTrigger').click();await p.getByRole('button',{name:'Reset',exact:true}).click();
+ assert.equal(await p.locator('.page[data-page="71"] [data-native-field="p71-1-l1"]').inputValue(),'','reset clears field');
+ assert.equal(await p.evaluate(()=>localStorage.getItem('native-ab12-71')),null,'reset clears storage');
+ console.log(width,'p71 interaction/persist/reset PASS');
+ await p.close();
 }
 }finally{await b.close();server.close()}})().catch(e=>{console.error(e);server.close();process.exitCode=1});
