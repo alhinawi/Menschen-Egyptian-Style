@@ -1882,12 +1882,12 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(822,535,20,'!"','naNw')}
   {stext(887,542.5,85,'_/6 Punkte',{},'naNw naPkt46')}
   {title('3',112,604.5,490,'Ergänzen Sie sollen in der richtigen Form.','naGB')}
-  {text(158,642.2,12,'a','naNw naEx3q')}{lin(181,651,9,9,'#404492')}{text(200.3,642.2,34,'Wir','naNw naEx3q naE3w')}{art('sollen',234,644,44,18)}{text(279,642.2,330,'viele Orangen essen. Ist das richtig?','naNw naEx3q')}{text(679,639,215,'Ja, sie sind sehr gesund.','naNw')}
+  {text(158,642.2,12,'a','naNw naEx3q')}{lin(181,651,9,9,'#404492')}{text(200.3,642.2,34,'Wir','naNw naEx3q naE3w')}{art('sollen',226,644,52,22)}{text(279,642.2,330,'viele Orangen essen. Ist das richtig?','naNw naEx3q')}{text(679,639,215,'Ja, sie sind sehr gesund.','naNw')}
   {text(157,668.2,12,'b','naNw naEx3q')}{lin(181,677,9,9,'#404492')}{text(201,668.2,152,'Der Arzt sagt, ihr','naNw naEx3q naE3b')}{field('p46-3b',357,663.2,89,'3 b')}{text(453,668.2,180,'viel Wasser trinken!','naNw naEx3q naE3f')}{text(680,665,260,'Wir mögen aber kein Wasser!','naNw')}
   {text(158,694.2,12,'c','naNw naEx3q')}{lin(181,703,9,9,'#404492')}{text(201,694.2,30,'Ich','naNw naEx3q naE3c')}{field('p46-3c',233,689.5,90,'3 c')}{text(330,694.2,300,'jeden Tag fünf Tabletten nehmen.','naNw naEx3q')}{text(681,691,150,'Das ist aber viel!','naNw')}
   {text(158,720.2,12,'d','naNw naEx3q')}{lin(181,729,9,9,'#404492')}{field('p46-3d',198,715.8,90,'3 d')}{text(296,720.2,280,'Herr Meyer in die USA fliegen?','naNw naEx3q naE3g')}{text(681,717,170,'Nein, Herr Herold.','naNw')}
-  {text(158,746.2,12,'e','naNw naEx3q')}{lin(181,755,9,9,'#404492')}{text(201,746.2,36,'Was','naNw naEx3q naE3e')}{field('p46-3e',239,742.1,89,'3 e')}{text(336,746.2,310,'Tanja und Tamara noch einkaufen?','naNw naEx3q naE3t')}{text(680,743,295,'Tomaten und fünf Brötchen bitte.','naNw')}
-  {text(158,772.2,12,'f','naNw naEx3q')}{lin(181,781,9,9,'#404492')}{text(201,772.2,25,'Du','naNw naEx3q naE3u')}{field('p46-3f',228,767.9,90,'3 f')}{text(325,772.2,180,'doch im Bett liegen.','naNw naEx3q')}{text(686,769,220,'Och, es ist so langweilig.','naNw')}
+  {text(158,746.2,12,'e','naNw naEx3q')}{lin(181,755,9,9,'#404492')}{text(201,749.7,36,'Was','naNw naEx3q naE3e')}{field('p46-3e',239,742.1,89,'3 e')}{text(336,746.2,310,'Tanja und Tamara noch einkaufen?','naNw naEx3q naE3t')}{text(680,743,295,'Tomaten und fünf Brötchen bitte.','naNw')}
+  {text(158,772.2,12,'f','naNw naEx3q')}{lin(181,781,9,9,'#404492')}{text(201,774.7,25,'Du','naNw naEx3q naE3u')}{field('p46-3f',228,767.9,90,'3 f')}{text(325,772.2,180,'doch im Bett liegen.','naNw naEx3q')}{text(686,769,220,'Och, es ist so langweilig.','naNw')}
   <div className="naTri46" style={{left:659,top:649}}/><div className="naTri46" style={{left:659,top:675}}/><div className="naTri46" style={{left:659,top:701}}/><div className="naTri46" style={{left:659,top:727}}/><div className="naTri46" style={{left:659,top:753}}/><div className="naTri46" style={{left:659,top:779}}/>
   {stext(885,793,85,'_/5 Punkte',{},'naNw naPkt46')}
   {title('4',112,837,230,'Schreiben Sie.','naGB')}
