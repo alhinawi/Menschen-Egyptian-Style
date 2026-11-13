@@ -345,11 +345,11 @@ export function NativeAB12P21_24({page}:{page:string}){
  {page==='25'&&<>
   {text(102,68,790,'WIEDERHOLUNGSSTATION: GRAMMATIK','naHead2 naH38')}
   {art('tabs',973,40,96,81)}
-  {art('house',100,105,515,228)}
-  {title('1',105,405,795,'Sehen Sie das Bild an und ergänzen Sie die Präpositionen und den Artikel, wo nötig.','naRB naT18 naLS3')}
+  {art('house',95,108,517,270)}
+  {title('1',105,405,795,'Sehen Sie das Bild an und ergänzen Sie die Präpositionen und den Artikel, wo nötig.','naRB naT18 naLS3 naT1x')}
   {stext(146,476,14,'a')}
   {stext(171,472,168,'Frau Kerner wohnt')}
-  {art('neben',344,475,42,18)}
+  {art('neben',344,475,41,19)}
   {stext(389,472,145,'Herrn Rahn und')}
   {field('p25-1a',540,465,115,'1a')}
   {stext(661,472,150,'Familie Burlach.')}
@@ -382,7 +382,7 @@ export function NativeAB12P21_24({page}:{page:string}){
   {title('2',105,637,900,'Ergänzen Sie die Possessivartikel.','naRB naT18')}
   {stext(146,683,14,'a')}
   {stext(171,678,530,'Herr Rahn wohnt im Erdgeschoss. Er wohnt allein und liebt')}
-  {art('seine',704,681,38,19)}
+  {art('seine',703,681,39,19)}
   {stext(746,678,75,'Blumen.')}
   {stext(146,708,14,'b')}
   {field('p25-2b',170,696,116,'2b')}
@@ -406,7 +406,7 @@ export function NativeAB12P21_24({page}:{page:string}){
   {title('3',105,869,900,'Wer ist wer? Ergänzen Sie die Namen.','naRB naT18')}
   {stext(146,915,14,'a')}
   {stext(170,909,232,'Sophie ist Herrn und Frau')}
-  {art('burlachs',406,911,63,21)}
+  {art('burlachs',405,912,63,20)}
   {stext(471,909,72,'Tochter.')}
   {stext(146,940,14,'b')}
   {stext(171,936,182,'Frau Reimer ist Frau')}
@@ -436,7 +436,7 @@ export function NativeAB12P21_24({page}:{page:string}){
   <div className="naRule" style={{left:742,top:1136,width:77}}/>
   <span className="naTriG" style={{left:171,top:1149}}/>
   {stext(187,1142,200,'Ja, natürlich helfe ich')}
-  {art('ihr',389,1143,24,19)}
+  {art('ihr',388,1144,27,19)}
   {stext(146,1166,14,'b')}
   <span className="naSqB" style={{left:170,top:1174}}/>
   {stext(187,1166,250,'Johanna und Martin, gefällt')}
@@ -458,17 +458,17 @@ export function NativeAB12P21_24({page}:{page:string}){
   {stext(146,1269,14,'d')}
   <span className="naSqB" style={{left:170,top:1277}}/>
   {stext(189,1269,500,'Ich finde das Schloss Schönbrunn in Wien sehr schön.','naS19')}
-  {stext(670,1269,88,'Gefällt es','naS19')}
+  {stext(671,1269,88,'Gefällt es','naS19')}
   {field('p25-4d1',756,1264,148,'4d1')}
   {stext(189,1294,132,'nicht, Juliane?')}
   <span className="naTriG" style={{left:171,top:1329}}/>
   {stext(189,1319,132,'Doch, es gefällt')}
   {field('p25-4d2',327,1314,156,'4d2')}
   {stext(491,1319,430,', aber ich finde Schlösser ein bisschen langweilig.')}
-  {check('g4',958,1342,{'p25-4b1':'euch','p25-4b2':'uns','p25-4c1':'Ihnen','p25-4c2':'mir','p25-4d1':'dir','p25-4d2':'mir'})}
-  {text(797,1383,135,'fünfundzwanzig','naFooter naNw')}
-  {text(943,1383,35,'| 25','naFooter naNw')}
-  {art('modul',993,1388,57,21)}
+  {check('g4',958,1319,{'p25-4b1':'euch','p25-4b2':'uns','p25-4c1':'Ihnen','p25-4c2':'mir','p25-4d1':'dir','p25-4d2':'mir'})}
+  {text(797,1386,135,'fünfundzwanzig','naFooter naNw')}
+  {text(943,1386,35,'| 25','naFooter naNw naFB')}
+  {art('modul',991,1386,74,25)}
  </>}
  </div><audio ref={player} className="naPlayer"/></div>;
 }
