@@ -1,3 +1,4 @@
+import {CheckButton} from '../components/CheckButton';
 import {useState, useContext, createElement} from 'react';
 import {QuizContext} from './QuizState';
 
@@ -20,5 +21,5 @@ export function WordBank({tag, attrs, words}: {tag: string; attrs: Attrs; words:
     setResult(ok);
     store.completeTask(attrs['data-key'] as string, ok);
   }
-  return <>{createElement(tag, attrs, words.map((word, i) => <span key={i} className={'tapMark' + (selected[i] ? ' marked' : '') + (statuses[i] === undefined ? '' : statuses[i] ? ' answerCorrect' : ' answerWrong')} onClick={() => setSelected(v => ({...v, [i]: !v[i]}))}>{word}</span>))}<button type="button" className="check" onClick={check}>Prüfen ✓</button><p role="status" className={'feedback' + (result === null ? '' : result ? ' good' : ' retry')}>{result === null ? '' : result ? '✓ Richtig!' : 'Noch nicht ganz. Hören Sie noch einmal.'}</p></>;
+  return <>{createElement(tag, attrs, words.map((word, i) => <span key={i} className={'tapMark' + (selected[i] ? ' marked' : '') + (statuses[i] === undefined ? '' : statuses[i] ? ' answerCorrect' : ' answerWrong')} onClick={() => setSelected(v => ({...v, [i]: !v[i]}))}>{word}</span>))}<CheckButton type="button" className="check" onClick={check}></CheckButton><p role="status" className={'feedback' + (result === null ? '' : result ? ' good' : ' retry')}>{result === null ? '' : result ? '✓ Richtig!' : 'Noch nicht ganz. Hören Sie noch einmal.'}</p></>;
 }
