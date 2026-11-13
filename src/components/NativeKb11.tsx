@@ -1,3 +1,4 @@
+import {KB11P42Answers} from './KB11P42Answers';
 import {CheckButton} from './CheckButton';
 import {PageImage} from './PageImage';
 import {usePageReset} from '../exercises/usePageReset';
@@ -25,7 +26,7 @@ export function NativeKb11({page}:{page:string}){
 }
 function Inner({data}:{data:NativePage}){
  const key='native-kb11-'+data.page;
- const [v,setV]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return {}}});
+ const [v,setV]=useState<Record<string,string>>(()=>{try{const saved=localStorage.getItem(key);if(saved)return JSON.parse(saved);if(String(data.page)==='42'){const old=JSON.parse(localStorage.getItem('native-pilot-kb11-42')||'{}');const next={...old};['gitarre','tanzen','tennis'].forEach((name,i)=>{if(old['kompliment'+(i+1)])next['t4a-'+name]=old['kompliment'+(i+1)]});for(let i=0;i<5;i++)if(old['skala'+i])next['t6a-'+(i+1)]=old['skala'+i];return next}return {}}catch{return {}}});
  const [res,setRes]=useState<Record<string,boolean>>({});
  const players=useRef<Record<string,HTMLAudioElement|null>>({});
  const W=data.w,H=data.h;
@@ -40,6 +41,7 @@ function Inner({data}:{data:NativePage}){
  useLayoutEffect(()=>{const fit=()=>{const el0=root.current;if(!el0)return;const cw=el0.clientWidth||1;el0.querySelectorAll<HTMLElement>('.nkbLine').forEach(el=>{el.style.transform='';const t=parseFloat(el.dataset.tw||'0');const act=el.offsetWidth;if(t>0&&act>0){const k=t/W*cw/act;el.style.transformOrigin='0 50%';el.style.transform=Math.abs(k-1)>0.015?`scaleX(${k})`:''}})};fit();document.fonts?.ready.then(fit);const ro=new ResizeObserver(fit);ro.observe(root.current!);return ()=>ro.disconnect()},[data]);
  const checkPos=(g:string)=>{const c=data.checks?.[g];if(c)return {left:c[0]/W*100+'%',top:c[1]/H*100+'%'};const fs=data.fields.filter(f=>f.group===g);const y=Math.max(...fs.map(f=>f.y+f.h));const x=Math.min(...fs.map(f=>f.x));return {left:Math.min(x,W-330)/W*100+'%',top:(y+10)/H*100+'%'}};
  return <div className="nkb" data-native-page={data.page} data-native-book="kb-a11" style={{'--paper':data.paper||'#fdfcf8','--ratio':W/H,'--nkb-tool':data.audio.length?'46px':'0px'} as CSSProperties}>
+  {String(data.page)==='42'&&<KB11P42Answers values={v} onChange={set}/>}
   <div className="nkbCanvas" ref={root} style={{aspectRatio:`${W}/${H}`}}>
    {data.art.map((a,i)=><PageImage key={i} className="nkbArt" src={a.src} alt="" draggable={false} style={pos(a.x,a.y,a.w,a.h)}/>)}
    {(data.blocks||[]).map((bl,i)=><div key={'b'+i} className={'nkbLine'+(bl.sb?' nkbSB':bl.b?' nkbB':'')+(bl.sa?' nkbSans':'')} data-tw={bl.w} style={{left:bl.x/W*100+'%',top:(bl.cy-bl.f*0.62)/H*100+'%',fontSize:bl.f/W*100+'cqw',lineHeight:1.24}}>{bl.ws.map((w,j)=>{const tap=/[A-Za-zÄÖÜäöüß]/.test(w.t);return <span key={j}>{j>0?' ':''}<span {...(tap?{className:'tapWord',role:'button',tabIndex:0,'data-word':w.t.replace(/^[.,!?„"()]+|[.,!?“"()\u2009]+$/g,''),'data-phrase':w.ph||w.t}:{})} style={{color:w.c,background:(w as any).hi?'linear-gradient(transparent 10%,#fff538 10% 90%,transparent 90%)':undefined,fontStyle:(w as any).i?'italic':undefined}}>{(w as any).parts?((w as any).parts as {t:string;c?:string;b?:number}[]).map((q,k)=><span key={k} style={{color:q.c,fontWeight:q.b?700:undefined}}>{q.t}</span>):w.t}</span></span>})}</div>)}
