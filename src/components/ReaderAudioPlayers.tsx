@@ -37,7 +37,7 @@ export function ReaderAudioPlayers(){
    const viewport=document.querySelector('#viewport');if(viewport&&!host){host=document.createElement('div');host.className='readerAudioPanel';viewport.insertAdjacentElement('afterend',host);setSlot(host)}
    const jump=document.querySelector<HTMLSelectElement>('#pageJump');const page=jump?document.querySelectorAll('.page')[Number(jump.value)]:null;
    const canvas=page?.querySelector<HTMLElement>('.nkbCanvas');
-   document.body.classList.toggle('readerNativeFrame',!!canvas);if(canvas)document.documentElement.style.setProperty('--reader-native-height',`${canvas.getBoundingClientRect().height}px`);
+   document.body.classList.toggle('readerNativeFrame',!!canvas);if(canvas){const height=canvas.getBoundingClientRect().height;if(Number.isFinite(height)&&height>0)document.documentElement.style.setProperty('--reader-native-height',`${height}px`);}
    const next=page?[...page.querySelectorAll<HTMLAudioElement>('audio')].filter(a=>a.getAttribute('src')||a.querySelector('source[src]')):[];
    next.forEach(a=>{a.dataset.readerAudioSource='true';marked.add(a)});
    setAudios(old=>old.length===next.length&&old.every((a,i)=>a===next[i])?old:next);
