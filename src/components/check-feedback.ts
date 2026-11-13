@@ -84,7 +84,7 @@ const fieldEls=(root:ParentNode,id:string)=>[...root.querySelectorAll<HTMLElemen
 const registry=new WeakMap<HTMLButtonElement,Record<string,string>>();
 export function registerCheckAnswers(button:HTMLButtonElement,answers?:Record<string,string>){if(answers)registry.set(button,answers);else registry.delete(button)}
 interface Item{field:ScanField;els:HTMLElement[];radios?:HTMLInputElement[]}
-const radioFieldEls=(root:ParentNode,f:ScanField)=>{const els=fieldEls(root,f.id);if(els.length||f.kind!=='radio')return els;const name=f.name||f.id;return [...root.querySelectorAll<HTMLInputElement>('input[type=radio]')].filter(r=>r.name.endsWith('-'+name)&&/(^|-)\d+$/.test(r.name.slice(0,-(name.length+1)))&&(r.dataset.value??r.dataset.val)===f.value)}
+const radioFieldEls=(root:ParentNode,f:ScanField)=>{const els=fieldEls(root,f.id);if(els.length||f.kind!=='radio')return els;const tagged=[...root.querySelectorAll<HTMLElement>('[data-native-radio]')].filter(e=>e.dataset.nativeRadio===f.id);if(tagged.length)return tagged;const name=f.name||f.id;return [...root.querySelectorAll<HTMLInputElement>('input[type=radio]')].filter(r=>r.name.endsWith('-'+name)&&/(^|-)\d+$/.test(r.name.slice(0,-(name.length+1)))&&(r.dataset.value??r.dataset.val)===f.value)}
 function keyedFields(button:HTMLButtonElement){
  const root=button.closest<HTMLElement>('.page')||document.body;
  const pageNo=root.dataset.page||button.closest<HTMLElement>('[data-native-page]')?.dataset.nativePage||'';
@@ -116,7 +116,7 @@ function isRight(f:ScanField,el:HTMLElement){
  const answer=f.answer!;
  if(el instanceof HTMLInputElement&&(el.type==='radio'||el.type==='checkbox'))return el.checked===(normText(answer)==='true');
  if(el instanceof HTMLSelectElement){const picked=[el.value,el.selectedOptions[0]?.textContent||''].map(normText);return answer.split('|').some(a=>picked.includes(normText(a)))}
- const value=(el as HTMLInputElement).value||'';
+ const value=el instanceof HTMLButtonElement?(el.textContent||''):((el as HTMLInputElement).value||'');
  if(f.unordered)return normSet(answer)===normSet(value);
  return answer.split('|').some(a=>normText(a)===normText(value));
 }
