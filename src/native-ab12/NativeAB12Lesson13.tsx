@@ -506,8 +506,8 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(74,168,40,'KB 6','naKB13 naNw')}
   <div className="naSide13" style={{left:88,top:203,height:78}}>STRUKTUREN</div>
   {text(160,163,140,'sein oder ihr?','naTitle13 naNw')}
-  {text(140,204,18,'a','naLet13')}
-  {text(162,201,125,'Ergänzen Sie.','naInstr13r naNw')}
+  {text(129,200,18,'a','naLet13')}
+  {text(160,201,125,'Ergänzen Sie.','naInstr13r naNw')}
   {art('photo-l',338,156,218,162)}
   {art('photo-r',624,178,192,150)}
   {text(160,302,155,'Das ist/sind ...','naEx13b naNw')}
@@ -545,7 +545,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {art('bruno',170,744,80,246)}
   <div className="naText naYT naNw" style={{left:159,top:717,width:430}}>Ergänzen Sie <em>sein/ihr</em> in der richtigen Form.</div>
   {art('sein-hw',914,762,31,15)}
-  {text(293,758,662,'Das ist Bruno. Bruno wohnt genau wie Otto und Vanilla in Glückstadt.','naPara13 naNw')}
+  {text(293,758,662,'Das ist Bruno. Bruno wohnt genau wie Otto und Vanilla in Glückstadt.','naPara13a naNw')}
   {text(293,782,638,'(a) Haus liegt neben Ottos Haus. Er ist geschieden, aber er wohnt nicht','naPara13 naNw')}
   {text(292,808,293,'allein. In dem Haus wohnt auch','naPara13 naNw')}{field('13-7b',587,809,103,'7b','naFld9')}{text(697,808,226,'(b) neue Partnerin Mia. Mia','naPara13 naNw')}
   {text(292,834,149,'hat zwei Kinder.','naPara13 naNw')}{field('13-7c',449,835,102,'7c','naFld9')}{text(559,834,391,'(c) Tochter heißt Sandra und ist 8 Jahre alt','naPara13 naNw')}
@@ -561,8 +561,8 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(72,1069,40,'KB 6','naKB13 naNw')}
   <div className="naSide13" style={{left:88,top:1125,height:78}}>STRUKTUREN</div>
   {text(159,1064,300,'Ergänzen und vergleichen Sie.','naYT naNw')}
-  <div className="naBand13" style={{left:157,top:1100,width:824,height:44}}/>
-  {text(166,1118,70,'Deutsch','naTh13 naNw')}{text(452,1119,75,'Englisch','naTh13 naNw')}{text(729,1106,195,'Meine Sprache oder','naTh13s naNw')}{text(728,1124,160,'andere Sprachen','naTh13s naNw')}
+  <div className="naBand13" style={{left:157,top:1100,width:824,height:53}}/>
+  <div className="naLine13f" style={{left:443,top:1100,width:2,height:53}}/><div className="naLine13f" style={{left:720,top:1100,width:2,height:53}}/>{text(166,1115,70,'Deutsch','naTh13 naNw')}{text(452,1116,75,'Englisch','naTh13 naNw')}{text(729,1106,195,'Meine Sprache oder','naTh13s naNw')}{text(728,1124,160,'andere Sprachen','naTh13s naNw')}
   {text(166,1168,90,'Nominativ','naSub13 naNw')}{text(306,1168,85,'Akkusativ','naSub13 naNw')}{text(453,1160,90,'Nominativ','naSub13 naNw')}{text(592,1160,85,'Akkusativ','naSub13 naNw')}{text(729,1175,90,'Nominativ','naSub13 naNw')}{text(858,1177,85,'Akkusativ','naSub13 naNw')}
   {text(166,1187,120,'Das ist/sind ...','naCell13 naNw')}{text(306,1187,135,'Sie / Er sucht ...','naCell13 naNw')}
   {text(452,1180,120,'This is / These','naSub13 naNw')}{text(462,1205,60,'are ...','naSub13 naNw')}{text(592,1180,95,'She / He is','naSub13 naNw')}{text(603,1205,110,'looking for ...','naSub13 naNw')}
