@@ -298,7 +298,7 @@ export function NativeAB12L23({page}:{page:string}){
   <div className="naBank" style={{left:111,top:338,width:255,height:18}}/>
   <div className="naBank88" style={{left:115,top:340}}><Words text="kosten- | wolken- | arbeits- | "/><span className="naStrikeB"><Words text="fehler-"/></span><Words text=" | farb-"/></div>
   {text(111,369,16,'a','naBookSerif naBk88')}{text(130,369,82,'Mein Test ist','naBookSerif naBk88 naNw',14)}
-  {art('hand2a',216,369,51,18)}{ruleT(226,394,53)}{text(266,369,10,'.','naBookSerif naBk88 naNw naPrd')}{text(274,369,240,'Ich habe keinen Fehler gemacht!','naBookSerif naBk88 naNw',14)}
+  {art('hand2a',216,369,51,18)}{ruleT(218,383,46)}{text(266,369,10,'.','naBookSerif naBk88 naNw naPrd')}{text(274,369,240,'Ich habe keinen Fehler gemacht!','naBookSerif naBk88 naNw',14)}
   {text(111,388,16,'b','naBookSerif naBk88')}{text(130,387,468,'Man kann im Zentrum parken, aber es ist teuer. Hinter der Post ist es','naBookSerif naBk88 naNw',14)}{field('88-2b',596,383,124,'2 b')}{text(722,387,10,'.','naBookSerif naBk88 naNw naPrd')}
   {text(111,409,16,'c','naBookSerif naBk88')}{text(130,408,245,'Das Wetter ist schön, der Himmel ist','naBookSerif naBk88 naNw',14)}{field('88-2c',376,402,116,'2 c')}{text(494,406,10,'.','naBookSerif naBk88 naNw naPrd')}
   {text(111,428,16,'d','naBookSerif naBk88')}{text(130,427,278,'Es regnet seit Stunden. Alles ist grau und','naBookSerif naBk88 naNw',14.1)}{field('88-2d',407,421,116,'2 d')}{text(525,425,10,'.','naBookSerif naBk88 naNw naPrd')}
