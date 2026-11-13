@@ -35,7 +35,7 @@
 .nativeAB11Lesson10Mid .mTipText{position:absolute;left:14px;top:6px;width:148px;font:12.5px/1.35 Arial;white-space:normal}
 .nativeAB11Lesson10Mid .mRegelBox{position:absolute;border:1px dotted #b9b36a;box-sizing:border-box}
 .nativeAB11Lesson10Mid .mRegelLabel{position:absolute;left:-16px;top:8px;writing-mode:vertical-rl;transform:rotate(180deg);font:8px Arial;color:#7a7452}
-.nativeAB11Lesson10Mid .mCanvas .mText.mFooterTab{background:#f7eab6;font-style:italic;padding:0 5px;box-sizing:border-box}
+.nativeAB11Lesson10Mid .mCanvas .mText.mFooterTab{background:#f7eab6;font-style:italic;padding:0 5px;box-sizing:border-box;color:#fff}
 .nativeAB11Lesson10Mid.nativeAB11L11 .mCanvas .mNumber{background:#a80000}
 .nativeAB11Lesson10Mid.nativeAB11L11 .mHRule{background:#7a1420}
 .nativeAB11Lesson10Mid[data-native-ab11-page='84'] .mCanvas .mNumber{background:#bc0231}
@@ -56,8 +56,11 @@
 .nativeAB11Lesson10Mid[data-native-ab11-page='83'] .mCanvas .mOpen{line-height:22px!important;height:var(--mopen-height)!important;border:0!important;background:repeating-linear-gradient(white 0 21px,#aaa 21px 22px)!important}
 
 .nativeAB11Lesson10Mid .mCanvas .mText.mFooterTabOdd{color:#fff}
-.nativeAB11Lesson10Mid .mBannerPink{position:absolute;background:#f9d9e2}
-.nativeAB11Lesson10Mid .mCanvas .mText.mBannerTitle{font:30px Georgia,serif;color:#1a1a1a}
+.nativeAB11Lesson10Mid .mBannerPink{position:absolute;background:#fce0e8}
+.nativeAB11Lesson10Mid .mCanvas .mText.mBannerTitle{font:32px KbDroid,Georgia,serif;color:#111}
+.nativeAB11Lesson10Mid .mCanvas .mText .mExample.mExU{border-bottom:1px solid #555}
 .nativeAB11Lesson10Mid .mCanvas .mText.mAnagram{letter-spacing:2px}
 .nativeAB11Lesson10Mid .mPairDot{position:absolute;width:9px;height:9px;border-radius:50%;background:#29a3c7}
 .nativeAB11Lesson10Mid[data-native-ab11-page='84'] .mCanvas .mNumber{background:#bc0231}
+
+.nativeAB11Lesson10Mid .mCanvas .mText.mDlg{letter-spacing:1px}
