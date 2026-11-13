@@ -18,12 +18,12 @@ function P73(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,check,box,modTab
   <div className='naPanel73'/>
   {art('scrollbar',644,158,15,134)}
   {ln(129,169,52,13,'Hallo Elly,',{cls:'naLetter73'})}
-  {ln(129,186,87,13,"wie geht's Dir?",{cls:'naLetter73'})}
-  {art('warst',213,184,34,15)}
+  {ln(129,186,79,13,"wie geht\u2019s Dir?",{cls:'naLetter73'})}
+  {art('warst',210,177,36,21)}
   {/* spacing around handwriting per scan */}
-  {ln(250,186,218,13,'(a) Du schon einmal in Graz? Jonas und ich',{cls:'naLetter73'})}
+  {ln(250,186,230,13.6,'(a) Du schon einmal in Graz? Jonas und ich',{cls:'naLetter73'})}
   {field('p73-1b',483,182,57,'1 b','naFieldBlank')}
-  {ln(546,186,44,13,'(b) letzte',{cls:'naLetter73'})}
+  {ln(546,186,48,14,'(b) letzte',{cls:'naLetter73'})}
   {ln(129,203,94,13,'Woche in Graz. Es',{cls:'naLetter73'})}
   {field('p73-1c',228,197,57,'1 c','naFieldBlank')}
   {ln(291,203,98,13,'(c) wunderbar! Wir',{cls:'naLetter73'})}
@@ -38,7 +38,7 @@ function P73(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,check,box,modTab
   {ln(129,252,41,13,'Männer',{cls:'naLetter73'})}
   {field('p73-1g',175,246,57,'1 g','naFieldBlank')}
   {ln(238,252,73,13,'(g) keine Lust.',{cls:'naLetter73'})}
-  {art('smiley',314,251,17,14)}
+  {art('smiley',316,249,15,16)}
   {ln(129,269,62,13,'Viele Grüße',{cls:'naLetter73'})}
   {ln(129,285,32,13,'Tanja',{cls:'naLetter73'})}
   {[[483,199,57],[228,213,57],[394,214,56],[458,230,57],[258,245,54],[175,262,57]].map(([x,y,w])=><div key={'u1'+x} className='naRule' style={{left:x,top:y,width:w,borderBottom:'1px solid #9aa4b5'}}/>)}
@@ -46,6 +46,7 @@ function P73(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,check,box,modTab
   {check('g1',600,252,{'p73-1b':'waren','p73-1c':'war','p73-1d':'hatten','p73-1e':'hatten','p73-1f':'war','p73-1g':'hatten'})}
   {box('2',94,330,'#c80e04')}  {rn(125,332,600,15,[{t:'Markieren Sie die Verben und ergänzen Sie dann die Verben in der richtigen Form.',b:1}],{fam:'fira'})}
   <div className='naGridBand73'/>
+  <div className='naGridHl73'/>
   {gridRow(R1,0,355,C1)}
   {gridRow(R2,64,374,C2)}
   {check('g2',712,382,{'p73-2-mark':EXPECT,'p73-2b':'gefallen','p73-2c':'bekommen','p73-2d':'bezahlt','p73-2e':'erkannt','p73-2f':'verstanden'})}
@@ -67,8 +68,8 @@ function P73(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,check,box,modTab
   {field('p73-3b',487,586,73,'3 b','naFieldBlank')}
   {ln(108,633,8,13,'c',{cls:D})}<div className='naNoteBand73' style={{left:138,top:627,width:562,height:23}}/>{art('n3c',141,629,444,19)}
   {field('p73-3c',385,625,93,'3 c','naFieldBlank')}
-  {ln(108,653,8,13,'d',{cls:D})}<div className='naNoteBand73' style={{left:138,top:646,width:562,height:26}}/>{art('n3d',141,647,361,27)}
-  {field('p73-3d',398,646,72,'3 d','naFieldBlank')}
+  {ln(108,653,8,13,'d',{cls:D})}<div className='naNoteBand73' style={{left:138,top:646,width:562,height:26}}/>{art('n3d',141,648,361,21)}
+  {field('p73-3d',425,646,63,'3 d','naFieldBlank')}
   {ln(108,672,8,13,'e',{cls:D})}<div className='naNoteBand73' style={{left:138,top:661,width:562,height:28}}/>{art('n3e',142,663,560,25)}
   {field('p73-3e1',322,665,133,'3 e 1','naFieldBlank')}{field('p73-3e2',538,665,102,'3 e 2','naFieldBlank')}
   {check('g3',715,688,{'p73-3b':'sie','p73-3c':'ihn','p73-3d':'es','p73-3e1':'dich','p73-3e2':'ihn'})}
