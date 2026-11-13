@@ -43,7 +43,9 @@
 @font-face{font-family:KbFira;src:url('/assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
 @font-face{font-family:KbFira;src:url('/assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700;font-display:swap}
 @font-face{font-family:KbDroid;src:url('/assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}
-.nkb:is([data-native-page="87"],[data-native-page="88"],[data-native-page="89"],[data-native-page="90"],[data-native-page="91"]) .nkbLine{font-family:KbDroid,serif}
-.nkb:is([data-native-page="87"],[data-native-page="88"],[data-native-page="89"],[data-native-page="90"],[data-native-page="91"]) .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
+.nkb:is([data-native-page="38"],[data-native-page="87"],[data-native-page="88"],[data-native-page="89"],[data-native-page="90"],[data-native-page="91"]) .nkbLine{font-family:KbDroid,serif}
+.nkb:is([data-native-page="38"],[data-native-page="87"],[data-native-page="88"],[data-native-page="89"],[data-native-page="90"],[data-native-page="91"]) .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
 @font-face{font-family:KbFira;src:url('/assets/fonts/firasans-latin-500.ttf') format('truetype');font-weight:500;font-display:swap}
 .nkb:is([data-native-page="87"],[data-native-page="88"],[data-native-page="89"],[data-native-page="90"],[data-native-page="91"]) .nkbLine.nkbB{font-weight:500}
+.nkb[data-native-page="38"] input[type=checkbox].nkbField{appearance:none;-webkit-appearance:none;border-radius:3px}
+.nkb[data-native-page="38"] input[type=checkbox].nkbField:checked{background:rgba(255,224,51,.55)!important}
