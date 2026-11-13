@@ -38,7 +38,7 @@ def auto(y0, y1, x0, x1, text, **kw):
 R = [
     (150,156,975,212),      # ex1 title 2 lines (ink y163-206, marker x111-141 stays)
     (115,226,465,256),      # 1a letter + Sammeln Sie Fragewoerter. (ink y229-250)
-    (148,270,305,342),      # Fragewoerter rows (Wer/Wie, Was/Wo, Woher)
+    (148,266,305,342),      # Fragewoerter rows (Wer/Wie, Was/Wo, Woher)
     (115,368,505,402),      # 1b Notieren Sie fuenf Fragen auf Kaertchen,
     (145,572,800,614),      # ex2 Spiel title
     (145,614,920,702),      # ex2 3 instruction lines
@@ -63,24 +63,25 @@ R = [
 ]
 
 # ---------- ex1 ----------
-t(160,181,'Ihre Freundin / Ihr Freund hat ihren Traummann / seine Traumfrau kennengelernt.',c='naFiraM',target=803)
-t(160,204,'Was möchten Sie wissen?',c='naFiraM',target=216)
+FIRA700=REPO+'/assets/fonts/firasans-latin-700.woff2'
+t(160,179,'Ihre Freundin / Ihr Freund hat ihren Traummann / seine Traumfrau kennengelernt.',c='naFiraB',s=best_size('Ihre Freundin / Ihr Freund hat ihren Traummann / seine Traumfrau kennengelernt.',FIRA700,803,lo=17,hi=24))
+t(160,205,'Was möchten Sie wissen?',c='naFiraM',target=216)
 wsa=band(232,268,118,146); t(round(wsa[0]['x']),round(line_baseline(wsa)),'a',c='naFiraM',target=round(wsa[0]['w'])+2)
-t(157,247,'Sammeln Sie Fragewörter.',target=224)
+t(157,243,'Sammeln Sie Fragewörter.',target=224)
 # Fragewoerter grid
-fw=[(270,296,'Wer …'),(270,296,'Wie …'),(294,318,'Was …'),(294,318,'Wo …'),(318,340,'Woher …')]
-fwxy={'Wer …':(150,210),'Wie …':(230,310),'Was …':(150,210),'Wo …':(230,310),'Woher …':(150,260)}
-for y0,y1,txt in fw:
-    x0,x1=fwxy[txt]
-    auto(y0,y1,x0,x1,txt)
+t(157,282,'Wer …',i=1,target=50)
+t(247,283,'Wie …',i=1,target=46)
+t(156,308,'Was …',i=1,target=52)
+t(247,309,'Wo …',i=1,target=44)
+t(156,333,'Woher …',i=1,target=68)
 wsb=band(368,402,118,146); t(round(wsb[0]['x']),round(line_baseline(wsb)),'b',c='naFiraM',target=round(wsb[0]['w'])+2)
-t(156,390,'Notieren Sie fünf Fragen auf Kärtchen.',target=337)
+t(156,385,'Notieren Sie fünf Fragen auf Kärtchen.',target=337)
 
 # ---------- ex2 Spiel ----------
 auto(572,614,148,800,'Spiel: Meine Traumfrau / Mein Traummann. Spielen Sie zu viert.',c='naFiraM')
-auto(614,646,148,920,'Legen Sie alle Kärtchen auf einen Stapel. Person A zieht eine Karte und fragt Person B.')
-auto(640,668,148,920,'Person B beschreibt ihren Traummann / seine Traumfrau. Dann zieht Person B eine')
-auto(664,702,148,920,'Karte und fragt Person C …')
+auto(614,646,148,920,'Legen Sie alle Kärtchen auf einen Stapel. Person A zieht eine Karte und fragt Person B.',c='naFiraR',path=FIRA400)
+auto(640,668,148,920,'Person B beschreibt ihren Traummann / seine Traumfrau. Dann zieht Person B eine',c='naFiraR',path=FIRA400)
+auto(664,702,148,920,'Karte und fragt Person C …',c='naFiraR',path=FIRA400)
 auto(730,768,185,360,'Wie sieht sie/er aus?')
 auto(730,752,425,725,'Er ist blond und hat blaue Augen.')
 auto(752,774,425,725,'Wo hast du deine Traumfrau / deinen')
@@ -93,12 +94,14 @@ t(153,954,'Hören Sie die Wörter und markieren',c='naFiraM',target=353)
 t(152,979,'Sie den Wortakzent.',c='naFiraM',target=197)
 auto(996,1030,148,502,'aussehen – bekommen – entschuldigen –')
 auto(1028,1056,148,502,'gefallen – erkennen – mitnehmen –')
-auto(1054,1082,148,502,'anmelden – absagen – vergessen – einkaufen')
+t(151,1068,'anmelden – absagen – vergessen – einkaufen',target=394)
 items.append({'k':'r','x':152,'y':1019,'w':27,'h':2,'col':'#da8855'})
 items.append({'k':'r','x':274,'y':1020,'w':36,'h':2,'col':'#da8855'})
 
 # ---------- training ex2 ----------
-auto(1108,1148,148,485,'Ordnen Sie die Wörter aus 1 zu.',c='naFiraM')
+t(151,1134,'Ordnen Sie die Wörter aus',c='naFiraM',s=20.0)
+t(413,1134,'1',c='naFiraM',col='#5c75ab',s=20.0)
+t(425,1134,' zu.',c='naFiraM',s=20.0)
 t(150,1171,'trennbar',b=True,target=82)
 t(317,1173,'nicht trennbar',b=True,target=139)
 
@@ -117,7 +120,7 @@ for fid,lbl in [('p57-3r0-1','Bei trennbaren Verben: 1. Silbe'),('p57-3r0-2','Be
     items.append(it)
 
 # ---------- ex4 dialogue ----------
-t(637,963,'Hören Sie das Gespräch.',c='naFiraM',target=232)
+t(637,959,'Hören Sie das Gespräch.',c='naFiraM',target=232)
 dlg=[(980,1008,'Entschuldigen Sie! Kennen wir uns'),
      (1006,1030,'nicht? Sie sind doch Susi Meier. Ich'),
      (1030,1056,'habe Sie gleich erkannt.'),
@@ -128,10 +131,10 @@ dlg=[(980,1008,'Entschuldigen Sie! Kennen wir uns'),
      (1158,1186,'mitnehmen?'),
      (1186,1212,'Danke, nein. Ich muss noch einkaufen'),
      (1212,1238,'und bekomme noch Besuch.'),
-     (1240,1270,'Schade. Na ja, vielleicht ein anderes Mal.'),
      (1266,1292,'Ja, gern … ein anderes Mal.')]
 for y0,y1,txt in dlg:
     auto(y0,y1,650,1012,txt)
+t(657,1259,'Schade. Na ja, vielleicht ein anderes Mal.',s=18.5)
 auto(1296,1330,628,968,'Hören Sie noch einmal und sprechen',c='naFiraM')
 auto(1322,1356,628,725,'Sie nach.',c='naFiraM')
 
