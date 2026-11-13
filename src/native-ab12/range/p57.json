@@ -13,10 +13,10 @@
   },
   {
    "k": "t",
-   "x": 160,
+   "x": 159,
    "y": 179,
    "t": "Ihre Freundin / Ihr Freund hat ihren Traummann / seine Traumfrau kennengelernt.",
-   "s": 21.5,
+   "s": 21.0,
    "c": "naFiraB"
   },
   {
@@ -33,14 +33,16 @@
    "y": 242,
    "t": "a",
    "s": 17.5,
-   "c": "naFiraM"
+   "c": "naFiraM",
+   "col": "#5c75ab"
   },
   {
    "k": "t",
    "x": 157,
    "y": 243,
    "t": "Sammeln Sie Fragewörter.",
-   "s": 17.5
+   "s": 17.5,
+   "c": "naRB"
   },
   {
    "k": "t",
@@ -110,8 +112,8 @@
    "x": 154,
    "y": 633,
    "t": "Legen Sie alle Kärtchen auf einen Stapel. Person A zieht eine Karte und fragt Person B.",
-   "s": 19.5,
-   "c": "naFiraR"
+   "s": 19.0,
+   "c": "naFiraM"
   },
   {
    "k": "t",
@@ -119,7 +121,7 @@
    "y": 659,
    "t": "Person B beschreibt ihren Traummann / seine Traumfrau. Dann zieht Person B eine",
    "s": 19.0,
-   "c": "naFiraR"
+   "c": "naFiraM"
   },
   {
    "k": "t",
@@ -127,7 +129,7 @@
    "y": 682,
    "t": "Karte und fragt Person C …",
    "s": 20.0,
-   "c": "naFiraR"
+   "c": "naFiraM"
   },
   {
    "k": "t",
@@ -160,7 +162,7 @@
   {
    "k": "t",
    "x": 823,
-   "y": 730,
+   "y": 727,
    "t": "Im Supermarkt.",
    "s": 15.0
   },
@@ -177,7 +179,7 @@
    "y": 954,
    "t": "Hören Sie die Wörter und markieren",
    "s": 20.0,
-   "c": "naFiraM"
+   "c": "naFiraS"
   },
   {
    "k": "t",
@@ -185,7 +187,7 @@
    "y": 979,
    "t": "Sie den Wortakzent.",
    "s": 20.5,
-   "c": "naFiraM"
+   "c": "naFiraS"
   },
   {
    "k": "t",
@@ -255,6 +257,7 @@
    "y": 1171,
    "t": "trennbar",
    "s": 19.0,
+   "c": "naRB",
    "b": 1
   },
   {
@@ -263,6 +266,7 @@
    "y": 1173,
    "t": "nicht trennbar",
    "s": 19.5,
+   "c": "naRB",
    "b": 1
   },
   {
@@ -271,7 +275,7 @@
    "y": 1262,
    "t": "Wo ist der Wortakzent? Kreuzen Sie an.",
    "s": 20.5,
-   "c": "naFiraM"
+   "c": "naFiraS"
   },
   {
    "k": "t",
@@ -355,6 +359,13 @@
   },
   {
    "k": "t",
+   "x": 656,
+   "y": 1280,
+   "t": "Ja, gern … ein anderes Mal.",
+   "s": 18.5
+  },
+  {
+   "k": "t",
    "x": 660,
    "y": 996,
    "t": "Entschuldigen Sie! Kennen wir uns",
@@ -425,15 +436,8 @@
   },
   {
    "k": "t",
-   "x": 656,
-   "y": 1278,
-   "t": "Ja, gern … ein anderes Mal.",
-   "s": 18.5
-  },
-  {
-   "k": "t",
    "x": 657,
-   "y": 1259,
+   "y": 1253,
    "t": "Schade. Na ja, vielleicht ein anderes Mal.",
    "s": 18.5
   },
@@ -443,7 +447,7 @@
    "y": 1317,
    "t": "Hören Sie noch einmal und sprechen",
    "s": 17.5,
-   "c": "naFiraM"
+   "c": "naFiraS"
   },
   {
    "k": "t",
@@ -451,7 +455,7 @@
    "y": 1342,
    "t": "Sie nach.",
    "s": 18.0,
-   "c": "naFiraM"
+   "c": "naFiraS"
   },
   {
    "k": "au",

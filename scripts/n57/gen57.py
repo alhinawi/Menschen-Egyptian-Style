@@ -42,10 +42,6 @@ R = [
     (115,368,505,402),      # 1b Notieren Sie fuenf Fragen auf Kaertchen,
     (145,572,800,614),      # ex2 Spiel title
     (145,614,920,702),      # ex2 3 instruction lines
-    (188,728,352,762),      # bubble A text
-    (425,728,725,798),      # bubble B text (3 lines)
-    (770,714,997,738),      # bubble C line 1
-    (770,736,997,768),      # bubble C line 2
     (145,932,522,992),      # training ex1 title (2 lines, marker at x529 stays)
     (145,994,565,1082),     # word lines 1-3 (orange underlines redrawn as rules)
     (145,1108,485,1148),    # training ex2 title
@@ -64,10 +60,10 @@ R = [
 
 # ---------- ex1 ----------
 FIRA700=REPO+'/assets/fonts/firasans-latin-700.woff2'
-t(160,179,'Ihre Freundin / Ihr Freund hat ihren Traummann / seine Traumfrau kennengelernt.',c='naFiraB',s=best_size('Ihre Freundin / Ihr Freund hat ihren Traummann / seine Traumfrau kennengelernt.',FIRA700,803,lo=17,hi=24))
+t(159,179,'Ihre Freundin / Ihr Freund hat ihren Traummann / seine Traumfrau kennengelernt.',c='naFiraB',s=21.0)
 t(160,205,'Was möchten Sie wissen?',c='naFiraM',target=216)
-wsa=band(232,268,118,146); t(round(wsa[0]['x']),round(line_baseline(wsa)),'a',c='naFiraM',target=round(wsa[0]['w'])+2)
-t(157,243,'Sammeln Sie Fragewörter.',target=224)
+wsa=band(232,268,118,146); t(round(wsa[0]['x']),round(line_baseline(wsa)),'a',c='naFiraM',col='#5c75ab',target=round(wsa[0]['w'])+2)
+t(157,243,'Sammeln Sie Fragewörter.',c='naRB',target=224)
 # Fragewoerter grid
 t(157,282,'Wer …',i=1,target=50)
 t(247,283,'Wie …',i=1,target=46)
@@ -79,19 +75,19 @@ t(156,385,'Notieren Sie fünf Fragen auf Kärtchen.',target=337)
 
 # ---------- ex2 Spiel ----------
 auto(572,614,148,800,'Spiel: Meine Traumfrau / Mein Traummann. Spielen Sie zu viert.',c='naFiraM')
-auto(614,646,148,920,'Legen Sie alle Kärtchen auf einen Stapel. Person A zieht eine Karte und fragt Person B.',c='naFiraR',path=FIRA400)
-auto(640,668,148,920,'Person B beschreibt ihren Traummann / seine Traumfrau. Dann zieht Person B eine',c='naFiraR',path=FIRA400)
-auto(664,702,148,920,'Karte und fragt Person C …',c='naFiraR',path=FIRA400)
+auto(614,646,148,920,'Legen Sie alle Kärtchen auf einen Stapel. Person A zieht eine Karte und fragt Person B.',c='naFiraM',path=FIRA)
+auto(640,668,148,920,'Person B beschreibt ihren Traummann / seine Traumfrau. Dann zieht Person B eine',c='naFiraM',path=FIRA)
+auto(664,702,148,920,'Karte und fragt Person C …',c='naFiraM',path=FIRA)
 auto(730,768,185,360,'Wie sieht sie/er aus?')
 auto(730,752,425,725,'Er ist blond und hat blaue Augen.')
 auto(752,774,425,725,'Wo hast du deine Traumfrau / deinen')
 auto(774,798,425,725,'Traummann kennengelernt?')
-t(823,730,'Im Supermarkt.',target=114)
+t(823,727,'Im Supermarkt.',target=114)
 t(777,750,'Was macht sie/er beruflich?',target=205)
 
 # ---------- training ex1 ----------
-t(153,954,'Hören Sie die Wörter und markieren',c='naFiraM',target=353)
-t(152,979,'Sie den Wortakzent.',c='naFiraM',target=197)
+t(153,954,'Hören Sie die Wörter und markieren',c='naFiraS',target=353)
+t(152,979,'Sie den Wortakzent.',c='naFiraS',target=197)
 auto(996,1030,148,502,'aussehen – bekommen – entschuldigen –')
 auto(1028,1056,148,502,'gefallen – erkennen – mitnehmen –')
 t(151,1068,'anmelden – absagen – vergessen – einkaufen',target=394)
@@ -102,11 +98,11 @@ items.append({'k':'r','x':274,'y':1020,'w':36,'h':2,'col':'#da8855'})
 t(151,1134,'Ordnen Sie die Wörter aus',c='naFiraM',s=20.0)
 t(413,1134,'1',c='naFiraM',col='#5c75ab',s=20.0)
 t(425,1134,' zu.',c='naFiraM',s=20.0)
-t(150,1171,'trennbar',b=True,target=82)
-t(317,1173,'nicht trennbar',b=True,target=139)
+t(150,1171,'trennbar',b=True,c='naRB',target=82)
+t(317,1173,'nicht trennbar',b=True,c='naRB',target=139)
 
 # ---------- ex3 ----------
-auto(1238,1278,148,565,'Wo ist der Wortakzent? Kreuzen Sie an.',c='naFiraM')
+auto(1238,1278,148,565,'Wo ist der Wortakzent? Kreuzen Sie an.',c='naFiraS')
 auto(1288,1312,405,470,'1. Silbe')
 auto(1288,1312,470,548,'2. Silbe')
 t(184,1326,'Bei trennbaren Verben:',target=182)
@@ -131,12 +127,13 @@ dlg=[(980,1008,'Entschuldigen Sie! Kennen wir uns'),
      (1158,1186,'mitnehmen?'),
      (1186,1212,'Danke, nein. Ich muss noch einkaufen'),
      (1212,1238,'und bekomme noch Besuch.'),
-     (1266,1292,'Ja, gern … ein anderes Mal.')]
+]
+t(656,1280,'Ja, gern … ein anderes Mal.',s=18.5)
 for y0,y1,txt in dlg:
     auto(y0,y1,650,1012,txt)
-t(657,1259,'Schade. Na ja, vielleicht ein anderes Mal.',s=18.5)
-auto(1296,1330,628,968,'Hören Sie noch einmal und sprechen',c='naFiraM')
-auto(1322,1356,628,725,'Sie nach.',c='naFiraM')
+t(657,1253,'Schade. Na ja, vielleicht ein anderes Mal.',s=18.5)
+auto(1296,1330,628,968,'Hören Sie noch einmal und sprechen',c='naFiraS')
+auto(1322,1356,628,725,'Sie nach.',c='naFiraS')
 
 # ---------- audio ----------
 for a in scan['audio']:
@@ -157,7 +154,21 @@ items.append({'k':'a','n':'aussehen','x':140,'y':1178,'w':82,'h':36,'alt':'Beisp
 items.append({'k':'a','n':'bekommen','x':303,'y':1180,'w':99,'h':36,'alt':'Beispieleintrag bekommen'})
 
 # ---------- bg + spec ----------
-bg=make_bg(P,R,f'{REPO}/assets/book-crops/native-ab12-p{P}-bg.png')
+bgp=f'{REPO}/assets/book-crops/native-ab12-p{P}-bg.png'
+bg=make_bg(P,R,bgp)
+# bubble text: masked erase (dark pixels only + 1px dilation) so pale oval rings survive
+_bga=np.asarray(Image.open(bgp).convert('RGB')).astype(float)
+_sca=np.asarray(Image.open(f'{REPO}/assets/ab-a12-p{P}.png').convert('RGB')).astype(float)
+def mask_erase(bga,sca,rect,thr=222):
+    x0,y0,x1,y1=rect
+    m=sca[y0:y1,x0:x1].max(axis=2)<thr
+    md=m.copy()
+    md[1:,:]|=m[:-1,:]; md[:-1,:]|=m[1:,:]; md[:,1:]|=m[:,:-1]; md[:,:-1]|=m[:,1:]
+    reg=bga[y0:y1,x0:x1]
+    reg[md]=np.array([254.,253.,248.])
+for _r in [(188,726,360,760),(425,724,725,796),(766,706,1000,762)]:
+    mask_erase(_bga,_sca,_r)
+Image.fromarray(np.clip(_bga,0,255).astype('uint8')).save(bgp)
 spec={'w':W,'h':H,'items':[{'k':'a','n':'bg','x':0,'y':0,'w':W,'h':H,'alt':'Seite 57 Hintergrund'}]+items}
 write_spec(P,spec)
 print(f'p{P} written:',len(items)+1,'items')

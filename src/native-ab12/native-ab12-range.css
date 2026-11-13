@@ -69,3 +69,9 @@
 .nativeAB12[data-native-ab12="58"] .naRCanvas .naText.naR.naFiraB{font-family:FiraB,FiraSans,'Trebuchet MS',sans-serif!important;font-weight:700!important;-webkit-text-stroke:0!important}
 
 .nativeAB12[data-native-ab12="57"] .naRCanvas .naDot{width:15px!important;height:15px!important;border-width:2px!important;border-color:#c9c7b4!important}
+.nativeAB12[data-native-ab12="56"] .naRCanvas .naText.naR.naFiraS,
+.nativeAB12[data-native-ab12="57"] .naRCanvas .naText.naR.naFiraS,
+.nativeAB12[data-native-ab12="58"] .naRCanvas .naText.naR.naFiraS{font-family:FiraM,FiraSans,'Trebuchet MS',sans-serif!important;font-weight:500!important;-webkit-text-stroke:.35px currentColor!important}
+.nativeAB12[data-native-ab12="56"] .naRCanvas .naText.naR.naRB,
+.nativeAB12[data-native-ab12="57"] .naRCanvas .naText.naR.naRB,
+.nativeAB12[data-native-ab12="58"] .naRCanvas .naText.naR.naRB{-webkit-text-stroke:.3px currentColor!important}
