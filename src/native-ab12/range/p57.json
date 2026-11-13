@@ -12,6 +12,33 @@
    "alt": "Seite 57 Hintergrund"
   },
   {
+   "k": "a",
+   "n": "bubC",
+   "x": 746,
+   "y": 692,
+   "w": 267,
+   "h": 86,
+   "alt": "Sprechblase bubC"
+  },
+  {
+   "k": "a",
+   "n": "bubB",
+   "x": 406,
+   "y": 692,
+   "w": 347,
+   "h": 116,
+   "alt": "Sprechblase bubB"
+  },
+  {
+   "k": "a",
+   "n": "bubA",
+   "x": 143,
+   "y": 707,
+   "w": 235,
+   "h": 69,
+   "alt": "Sprechblase bubA"
+  },
+  {
    "k": "t",
    "x": 159,
    "y": 179,
@@ -41,8 +68,8 @@
    "x": 157,
    "y": 243,
    "t": "Sammeln Sie Fragewörter.",
-   "s": 17.5,
-   "c": "naRB"
+   "s": 16.5,
+   "c": "naDB"
   },
   {
    "k": "t",
@@ -176,7 +203,7 @@
   {
    "k": "t",
    "x": 153,
-   "y": 954,
+   "y": 956,
    "t": "Hören Sie die Wörter und markieren",
    "s": 20.0,
    "c": "naFiraS"
@@ -184,7 +211,7 @@
   {
    "k": "t",
    "x": 152,
-   "y": 979,
+   "y": 981,
    "t": "Sie den Wortakzent.",
    "s": 20.5,
    "c": "naFiraS"
@@ -256,23 +283,21 @@
    "x": 150,
    "y": 1171,
    "t": "trennbar",
-   "s": 19.0,
-   "c": "naRB",
-   "b": 1
+   "s": 17.5,
+   "c": "naDB"
   },
   {
    "k": "t",
    "x": 317,
    "y": 1173,
    "t": "nicht trennbar",
-   "s": 19.5,
-   "c": "naRB",
-   "b": 1
+   "s": 18.5,
+   "c": "naDB"
   },
   {
    "k": "t",
-   "x": 149,
-   "y": 1262,
+   "x": 150,
+   "y": 1264,
    "t": "Wo ist der Wortakzent? Kreuzen Sie an.",
    "s": 20.5,
    "c": "naFiraS"
