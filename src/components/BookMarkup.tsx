@@ -31,7 +31,7 @@ function style(value: string): Record<string, string> {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type Props = Record<string, any>;
 
-function render(node: MarkupNode, key: string | number, formKey: string | null = null, quizEnabled = false, taskKey: string | null = null): ReactNode {
+function render(node: MarkupNode, key: string | number, formKey: string | null = null, quizEnabled = false, taskKey: string | null = null, standalone = false): ReactNode {
   const path = String(key);
   if (typeof node === 'string') return node;
   const [tag, attrs, children] = node;
@@ -40,7 +40,7 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   if(attrs.class?.split(' ').includes('controls')) {
     const navigation=children.filter(child=>Array.isArray(child)&&['prev','pageJump','next'].includes(child[1].id));
     const tools=children.filter(child=>!navigation.includes(child));
-    return <nav key={key} className="controls"><div className="readerPageNavigation" aria-label="Page navigation">{navigation.map((child,n)=>render(child,`page-nav-${key}-${n}`,null,quizEnabled))}</div><div className="readerToolRow">{tools.map((child,n)=>render(child,`bottom-tool-${key}-${n}`,null,quizEnabled))}</div></nav>;
+    return <nav key={key} className="controls"><div className="readerPageNavigation" aria-label="Page navigation">{navigation.map((child,n)=>render(child,`page-nav-${key}-${n}`,null,quizEnabled,null,standalone))}</div><div className="readerToolRow">{tools.map((child,n)=>render(child,`bottom-tool-${key}-${n}`,null,quizEnabled,null,standalone))}</div></nav>;
   }
 
   const props: Props = {key};
@@ -68,6 +68,7 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
     const selected = children.filter((n): n is [string, MarkupAttrs, MarkupNode[]] => Array.isArray(n) && n[0] === 'option' && 'selected' in n[1]).map(n => n[1].value ?? n[2].join(''));
     if (selected.length) props.defaultValue = props.multiple ? selected : selected[0];
   }
+  if (tag === 'img' && attrs.id === 'paper') return createElement(tag, props);
   if (tag === 'img') return createElement(PageImage, props);
   if (tag === 'textarea') {
     props.defaultValue = children.join('');
@@ -78,7 +79,7 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
     taskKey = path;
     props['data-react-task-id'] = path;
   }
-  const rendered = children.map((child, i) => render(child, path + '.' + i, formKey, quizEnabled, taskKey));
+  const rendered = children.map((child, i) => render(child, path + '.' + i, formKey, quizEnabled, taskKey, standalone));
   if (attrs.class?.split(' ').includes('markBank')) return createElement(WordBank, {key, tag, attrs: props, words: children.join('').split('|').map(w => w.trim()).filter(Boolean)});
   if (attrs.class?.split(' ').includes('rateDot')) return createElement(RatingDot, {key, tag, attrs: props, children: rendered});
   if (quizEnabled) {
@@ -92,7 +93,7 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
     if (attrs.class?.split(' ').includes('feedback')) return createElement(QuizFeedback, {key, tag, attrs: props, formKey, children: rendered});
     if ('data-answer' in attrs) return createElement(AnswerField, {key, tag, attrs: props, answerId: formKey + ':' + path, children: rendered});
   }
-  if (['prev', 'next', 'plus', 'minus', 'fit', 'pageJump', 'lessonNav', 'closeAudio', 'palette', 'audioToggle', 'clearMap'].includes(attrs.id) || attrs.class?.split(' ').some(c => ['soundToggle', 'listen', 'coverOpen'].includes(c)) || 'data-jump' in attrs || 'data-color' in attrs) return createElement(ReaderControl, {key, tag, attrs: {...props, 'data-react-control-id': path}, children: rendered});
+  if (!standalone && (['prev', 'next', 'plus', 'minus', 'fit', 'pageJump', 'lessonNav', 'closeAudio', 'palette', 'audioToggle', 'clearMap'].includes(attrs.id) || attrs.class?.split(' ').some(c => ['soundToggle', 'listen', 'coverOpen'].includes(c)) || 'data-jump' in attrs || 'data-color' in attrs)) return createElement(ReaderControl, {key, tag, attrs: {...props, 'data-react-control-id': path}, children: rendered});
   if (attrs.id === 'zoomValue') return createElement(ZoomValue, {key, tag, attrs: props, children: rendered});
   if (['input', 'select'].includes(tag)) return createElement(PersistentField, {key, tag, attrs: props, children: rendered});
   if(tag==='button'&&children.some(c=>typeof c==='string'&&c.includes('Prüfen')))return createElement(CheckButton,props);
@@ -116,5 +117,6 @@ export const BookMarkup = memo(function BookMarkup({nodes, quizEnabled = false}:
     const observer = new ResizeObserver(sync);if(header)observer.observe(header);if(bar)observer.observe(bar);sync();
     return () => {observer.disconnect();document.body.classList.remove('readerSplitControls');};
   }, [nodes]);
-  return <>{nodes.map((node,i)=>render(node,i,null,quizEnabled))}</>;
+  const standalone = nodes.some(node => typeof node !== 'string' && node[1].id === 'canvas');
+  return <>{nodes.map((node,i)=>render(node,i,null,quizEnabled,null,standalone))}</>;
 });

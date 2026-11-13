@@ -53,6 +53,8 @@ export function createReaderStore(): ReaderStore {
     },
     getSnapshot: () => snapshot,
     connect() {
+      // Standalone Original viewers own their controls and have no page-flip store.
+      if (document.querySelector('.originalViewer')) return () => {};
       for (const el of document.querySelectorAll('#prev,#next,#plus,#minus,#fit,#pageJump,#lessonNav,.soundToggle,.listen,#closeAudio,.coverOpen,#palette,#audioToggle,[data-jump],[data-color],#clearMap')) {
         const key = (el as HTMLElement).dataset.reactControlId || el.id || 'soundToggle';
         const type = el.tagName === 'SELECT' ? 'onchange' : 'onclick';
