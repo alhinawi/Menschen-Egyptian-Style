@@ -31,7 +31,7 @@ export function NativeAB12P31to46({page}:{page:string}){
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg,[data-native-ab12] .naTitle,[data-native-ab12] .naField{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg{font-size:20px!important}[data-native-ab12] .naTitle{font-size:21px!important}[data-native-ab12] .naText.naS20{font-size:18px!important}[data-native-ab12] .naSmall{font-size:16.5px!important}[data-native-ab12] .naD19{font-size:17.5px!important}[data-native-ab12] .naField{font-size:19px!important}[data-native-ab12] .naUrl{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='41'] .naModul{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='41'] .naTitle.naGB b{background:#69bb58!important}[data-native-ab12='41'] .naTitle{font-family:FiraSans,sans-serif!important;font-size:22px!important;letter-spacing:0!important}[data-native-ab12='41'] .naText,[data-native-ab12='41'] .naBold{font-size:17px!important}[data-native-ab12='41'] .naBold{font-weight:600}[data-native-ab12='41'] .naField{font-size:17px!important}[data-native-ab12='41'] .naGray{font-size:13px!important;color:#7c7c80!important;letter-spacing:0!important}[data-native-ab12='38'] .naS14{font-size:14px!important}[data-native-ab12='35'] .naFooter,[data-native-ab12='36'] .naFooter,[data-native-ab12='37'] .naFooter,[data-native-ab12='38'] .naFooter{font-family:DroidSerif,Georgia,serif!important;font-size:16.3px!important;letter-spacing:0!important;color:#252723}[data-native-ab12='36'] .naS19,[data-native-ab12='37'] .naS19{font-size:19.4px!important}[data-native-ab12='31'] .naHeadline,[data-native-ab12='32'] .naHeadline,[data-native-ab12='33'] .naHeadline,[data-native-ab12='34'] .naHeadline,[data-native-ab12='35'] .naHeadline,[data-native-ab12='36'] .naHeadline,[data-native-ab12='37'] .naHeadline,[data-native-ab12='38'] .naHeadline{font-size:30px!important;letter-spacing:0!important;color:#5f6460}[data-native-ab12='35'] .naSansB,[data-native-ab12='36'] .naSansB,[data-native-ab12='37'] .naSansB,[data-native-ab12='38'] .naSansB{font-family:FiraSans,sans-serif!important;font-weight:700;letter-spacing:0!important}[data-native-ab12='35'] .naUml,[data-native-ab12='36'] .naUml,[data-native-ab12='37'] .naUml,[data-native-ab12='38'] .naUml{font-size:72%;letter-spacing:0;margin-right:-2px}[data-native-ab12='35'] .naUmlRow{font-size:19.4px!important}[data-native-ab12='35'] .naUmlWrap{position:relative}[data-native-ab12='35'] .naUmlMark{position:absolute;left:-1px;top:5px;font-size:58%;letter-spacing:0;line-height:1}[data-native-ab12='35'] .naMod,[data-native-ab12='36'] .naMod,[data-native-ab12='37'] .naMod,[data-native-ab12='38'] .naMod{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='38'] .naBio{font-size:17.5px!important;letter-spacing:-0.55px!important}[data-native-ab12='38'] .naJ{white-space:normal;text-align:justify;text-align-last:justify}[data-native-ab12='31'] .naTitle,[data-native-ab12='32'] .naTitle,[data-native-ab12='33'] .naTitle,[data-native-ab12='34'] .naTitle,[data-native-ab12='35'] .naTitle,[data-native-ab12='36'] .naTitle,[data-native-ab12='37'] .naTitle,[data-native-ab12='38'] .naTitle{font-family:FiraSans,sans-serif!important;letter-spacing:0!important}"}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}> {page==='31'&&<>
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg,[data-native-ab12] .naTitle,[data-native-ab12] .naField{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg{font-size:20px!important}[data-native-ab12] .naTitle{font-size:21px!important}[data-native-ab12] .naText.naS20{font-size:18px!important}[data-native-ab12] .naSmall{font-size:16.5px!important}[data-native-ab12] .naD19{font-size:17.5px!important}[data-native-ab12] .naField{font-size:19px!important}[data-native-ab12] .naUrl{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='41'] .naModul{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='41'] .naTitle.naGB b{background:#69bb58!important}[data-native-ab12='41'] .naTitle{font-family:FiraSans,sans-serif!important;font-size:22px!important;letter-spacing:0!important}[data-native-ab12='41'] .naText,[data-native-ab12='41'] .naBold{font-size:17px!important}[data-native-ab12='41'] .naBold{font-weight:600}[data-native-ab12='41'] .naField{font-size:17px!important}[data-native-ab12='41'] .naGray{font-size:13px!important;color:#7c7c80!important;letter-spacing:0!important}[data-native-ab12='38'] .naS14{font-size:14px!important}[data-native-ab12='35'] .naFooter,[data-native-ab12='36'] .naFooter,[data-native-ab12='37'] .naFooter,[data-native-ab12='38'] .naFooter{font-family:DroidSerif,Georgia,serif!important;font-size:16.3px!important;letter-spacing:0!important;color:#252723}[data-native-ab12='36'] .naS19,[data-native-ab12='37'] .naS19{font-size:19.4px!important}[data-native-ab12='31'] .naHeadline,[data-native-ab12='32'] .naHeadline,[data-native-ab12='33'] .naHeadline,[data-native-ab12='34'] .naHeadline,[data-native-ab12='35'] .naHeadline,[data-native-ab12='36'] .naHeadline,[data-native-ab12='37'] .naHeadline,[data-native-ab12='38'] .naHeadline{font-size:30px!important;letter-spacing:0!important;color:#5f6460}[data-native-ab12='35'] .naSansB,[data-native-ab12='36'] .naSansB,[data-native-ab12='37'] .naSansB,[data-native-ab12='38'] .naSansB{font-family:FiraSans,sans-serif!important;font-weight:700;letter-spacing:0!important}[data-native-ab12='35'] .naUml,[data-native-ab12='36'] .naUml,[data-native-ab12='37'] .naUml,[data-native-ab12='38'] .naUml{font-size:72%;letter-spacing:0;margin-right:-2px}[data-native-ab12='35'] .naUmlRow{font-size:19.4px!important;letter-spacing:-1.0px!important}[data-native-ab12='35'] .naUmlWrap{position:relative}[data-native-ab12='35'] .naUmlMark{position:absolute;left:-1px;top:5px;font-size:58%;letter-spacing:0;line-height:1}[data-native-ab12='35'] .naMod,[data-native-ab12='36'] .naMod,[data-native-ab12='37'] .naMod,[data-native-ab12='38'] .naMod{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='38'] .naBio{font-size:17.5px!important;letter-spacing:-0.55px!important}[data-native-ab12='38'] .naJ{white-space:normal;text-align:justify;text-align-last:justify}[data-native-ab12='31'] .naTitle,[data-native-ab12='32'] .naTitle,[data-native-ab12='33'] .naTitle,[data-native-ab12='34'] .naTitle,[data-native-ab12='35'] .naTitle,[data-native-ab12='36'] .naTitle,[data-native-ab12='37'] .naTitle,[data-native-ab12='38'] .naTitle{font-family:FiraSans,sans-serif!important;letter-spacing:0!important}"}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}> {page==='31'&&<>
   {art('0',982,42,85,78)}
   {lin(354,107,605,6,'#a6ca03')}
   {text(107,77,240,'BASISTRAINING','naHeadline naNw')}
@@ -540,7 +540,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {title('1',99,157,700,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naGB')}
   {text(146,198,81,'Im Hotel','naBold naNw')}
   {text(531,198,145,'verschieben, hat','naNw')}
-  {uml(146,223,120,'Aufzug der, ','e')}
+  {text(146,223,110,'Aufzug der,','naNw naUmlRow')}{art('umlmark',250,235,8,8)}{text(256,223,12,'e','naNw naUmlRow')}
   {text(543,223,98,'verschoben','naNw')}
   {stext(156,251,133,'CH/A: Lift der, -e',{color:'#8e9094'},'naNw')}
   {text(532,251,97,'passen, hat','naNw')}
@@ -550,12 +550,12 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(544,301,105,'Passt es dir/','naNw')}
   {text(146,326,134,'Föhn der, -e / -s','naNw')}
   {text(544,326,61,'Ihnen?','naNw')}
-  {uml(146,352,95,'Gast der, ','e')}
+  {text(146,352,85,'Gast der,','naNw naUmlRow')}{art('umlmark',225,364,8,8)}{text(232,352,12,'e','naNw naUmlRow')}
   {text(532,352,85,'pünktlich','naNw')}
-  {uml(146,378,157,'Handtuch das, ','er')}
+  {text(146,378,135,'Handtuch das,','naNw naUmlRow')}{art('umlmark',277,390,8,8)}{text(284,378,20,'er','naNw naUmlRow')}
   {text(531,393,229,'Weitere wichtige Wörter','naSansB naNw')}
   {text(146,404,142,'Heizung die, -en','naNw')}
-  {uml(532,418,107,'Angst die, ','e')}
+  {text(532,418,95,'Angst die,','naNw naUmlRow')}{art('umlmark',624,430,8,8)}{text(630,418,12,'e','naNw naUmlRow')}
   {text(146,432,109,'Klimaanlage','naNw')}
   {text(157,458,54,'die, -n','naNw')}
   {text(543,444,107,'Angst haben','naNw')}
@@ -679,21 +679,20 @@ export function NativeAB12P31to46({page}:{page:string}){
   {title('3',121,708,500,'Ergänzen Sie mit oder ohne.','naGB')}
   <div className="naSide" style={{left:92,top:776,whiteSpace:'nowrap'}}>STRUKTUREN</div>
   {text(164,748,9,'a','naNw naS19')}
-  {text(187,748,250,'Cherry geht nur','naNw naS19')}
-  {text(333,750,45,'mit','naHand naD19 naNw')}
-  {lin(331,768,27,1.5,'#c2c3c6')}
+  {stext(187,748,250,'Cherry geht nur',{transform:'scaleX(0.9)',transformOrigin:'left top'},'naNw naS19')}
+  {art('mit',324,748,44,22)}
   {text(363,748,381,'ihrer „Starbrille“ zur Aufnahmeprüfung.','naNw naS19')}
   {text(164,773,9,'b','naNw naS19')}
   {text(295,773,585,'Aufnahmeprüfung kann sie nicht an der Pop-Akademie studieren.','naNw naS19')}
   {text(164,800,9,'c','naNw naS19')}
-  {text(187,800,293,'Sie möchten ein Popstar werden?','naNw naS19')}
+  {stext(187,800,293,'Sie möchten ein Popstar werden?',{transform:'scaleX(0.963)',transformOrigin:'left top'},'naNw naS19')}
   {text(596,800,341,'eine gute Ausbildung ist das schwierig.','naNw naS19')}
   {text(164,826,9,'d','naNw naS19')}
   {text(296,826,184,'einer Ausbildung hat','naNw naS19')}
-  {text(489,828,34,'man','naHand naD19 naNw')}
+  {text(488,828,34,'man','naHand naD19 naNw')}
   {text(530,826,159,'bessere Chancen.','naNw naS19')}
   {text(164,851,7,'e','naNw naS19')}
-  {text(188,851,140,'Fabian geht nur','naNw naS19')}
+  {stext(188,851,140,'Fabian geht nur',{transform:'scaleX(0.945)',transformOrigin:'left top'},'naNw naS19')}
   {text(443,852,332,'seiner Gitarre zur Aufnahmeprüfung.','naNw naS19')}
   {kb(85,918,'KB 4')}
   {title('4',121,915,600,'Was ist richtig? Kreuzen Sie an.','naGB')}
@@ -835,10 +834,10 @@ export function NativeAB12P31to46({page}:{page:string}){
   <div className="naSide" style={{left:56,top:863,whiteSpace:'nowrap'}}>WÖRTER</div>
   {art('ausbildung',398,850,140,59)}
   {text(140,848,254,'Im Sommer hat Sofia ihre (a)','naNw naS19')}
-  {text(512,848,382,'(BLUGASIDNU) als Friseurin abgeschlossen.','naNw naS19')}
+  {stext(488,848,440,'(BLUGASIDNU) als Friseurin abgeschlossen.',{transform:'scaleX(0.971)',transformOrigin:'left top'},'naNw naS19')}
   {text(140,874,655,'Sie hatte große Angst vor der Prüfung. Aber zum Glück hat sie die Prüfung','naNw naS19')}
   {text(140,897,21,'(b)','naNw naS19')}
-  {text(394,897,383,'(SCHEFGATEF). Jetzt möchte sie endlich Geld','naNw naS19')}
+  {text(394,897,383,'(SCHEFGATF). Jetzt möchte sie endlich Geld','naNw naS19')}
   {text(140,925,20,'(c)','naNw naS19')}
   {text(393,925,443,'(DERENIVEN). Dann möchte sie mit ihrem Freund','naNw naS19')}
   {text(138,951,128,'Johnny ein (d)','naNw naS19')}
@@ -851,8 +850,8 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(393,1028,324,'(SINERE), die Welt und andere junge','naNw naS19')}
   {text(140,1054,22,'(h)','naNw naS19')}
   {text(395,1054,460,'(UTELE) kennenlernen. In ein paar Jahren möchten','naNw naS19')}
-  {text(139,1080,158,'sie und Johnny (i)','naNw')}
-  {text(530,1080,277,'(RITAHENE) und Kinder haben.','naNw')}
+  {text(137,1080,158,'sie und Johnny (i)','naNw naS19')}
+  {text(527,1080,277,'(RITAHENE) und Kinder haben.','naNw')}
   {kb(78,1149,'KB 6')}
   {title('9',130,1140,580,'Was sind Ihre Wünsche? Schreiben Sie 4–5 Sätze wie in ','naGB naNw')}
   {stext(702,1140,28,'8.',{color:'#3f6491',fontWeight:700},'naTitle naNw')}
