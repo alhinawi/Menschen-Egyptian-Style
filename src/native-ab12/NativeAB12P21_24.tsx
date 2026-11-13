@@ -290,7 +290,7 @@ export function NativeAB12P21_24({page}:{page:string}){
   {text(591,920,75,'Lösung:')}
   {text(667,920,300,'Charlotte wohnt in der')}
   {text(663,952,110,'Schweiz, in')}
-  {field('p24-3l',746,941,109,'Lösungswort','naDashU')}
+  {field('p24-3l',748,941,107,'Lösungswort','naDashU')}
   {text(878,950,15,'.')}
   {check('g2',905,939,{'p24-3l':'Zürich|Zuerich'})}
   {title('4',115,1000,900,'Ergänzen Sie das Gespräch.','naRB naT18')}
@@ -305,36 +305,36 @@ export function NativeAB12P21_24({page}:{page:string}){
   {stext(607,1039,52,'Bergen','naBankT')}
   {stext(171,1082,50,'ARISA:','naSpkR')}
   {stext(233,1082,130,'Hallo Uli, schöne')}
-  {art('gruesse-script',359,1085,57,28)}
-  {stext(415,1082,90,'aus Italien!')}
+  {art('gruesse-script',365,1085,57,28)}
+  {stext(425,1082,90,'aus Italien!')}
   {stext(172,1106,45,'Uli91:','naSpkB')}
   {stext(233,1106,250,'Aus Italien? Was machst du dort?','naDlgB')}
   {stext(170,1128,50,'ARISA:','naSpkR')}
-  {field('p24-4a',232,1123,243,'4a')}
+  {field('p24-4a',232,1127,243,'4a','naLow')}
   {stext(481,1128,30,'(a)!')}
   {art('emoji',510,1124,44,40)}
   {stext(233,1150,110,'Ich war in den')}
-  {field('p24-4b',341,1149,244,'4b')}
+  {field('p24-4b',341,1153,244,'4b','naLow')}
   {stext(591,1150,360,'(b), in den Dolomiten. Jetzt bin ich an der Adria.')}
   {stext(170,1174,45,'Uli91:','naSpkB')}
   {stext(231,1174,115,'Toll! Wie ist das','naDlgB')}
-  {field('p24-4c',349,1172,243,'4c')}
+  {field('p24-4c',349,1176,243,'4c','naLow')}
   {stext(598,1174,70,'(c) dort?','naDlgB')}
   {stext(169,1198,50,'ARISA:','naSpkR')}
   {stext(232,1198,290,'Sehr warm! Ich schwimme jeden Tag im')}
-  {field('p24-4d',524,1200,243,'4d')}
+  {field('p24-4d',524,1201,243,'4d','naLow')}
   {stext(773,1198,30,'(d).')}
   {stext(231,1222,405,'Morgen fahre ich weiter nach Mailand, ich möchte den')}
-  {field('p24-4e',670,1226,212,'4e')}
+  {field('p24-4e',670,1230,212,'4e','naLow')}
   {stext(888,1222,70,'(e) sehen.')}
   {stext(169,1246,45,'Uli91:','naSpkB')}
   {stext(230,1246,200,'Sprichst du Italienisch?','naDlgB')}
   {stext(167,1269,50,'ARISA:','naSpkR')}
   {stext(230,1269,140,'Sí, naturalmente …')}
   {stext(230,1299,60,'In zwei')}
-  {field('p24-4f',290,1291,220,'4f')}
+  {field('p24-4f',290,1295,220,'4f','naLow')}
   {stext(516,1299,220,'(f) bin ich wieder zu')}
-  {field('p24-4g',680,1300,213,'4g')}
+  {field('p24-4g',680,1304,213,'4g','naLow')}
   {stext(899,1299,70,'(g). Ciao!')}
   {stext(167,1323,45,'Uli91:','naSpkB')}
   {stext(228,1323,200,'Tschüs und viel Spaß!','naDlgB')}
