@@ -77,9 +77,9 @@ def build(p):
     _of=f'{ROOT}/src/native-kb11/overrides/p{p}.json'
     if os.path.exists(_of):
         for bx in json.load(open(_of)).get('erase',[]):
-            X0,Y0,X1,Y1=[int(v*S) for v in bx]
+            X0,Y0,X1,Y1=[int(v*S) for v in bx[:4]]
             ring=np.concatenate([work[max(0,Y0-3):Y0,X0:X1].reshape(-1,3),work[Y1:Y1+3,X0:X1].reshape(-1,3)])
-            work[Y0:Y1,X0:X1]=np.median(ring,axis=0)
+            work[Y0:Y1,X0:X1]=bx[4] if len(bx)>4 else np.median(ring,axis=0)
     # artwork components from erased copy
     paper=np.median(work.reshape(-1,3),axis=0)
     diff=np.abs(work-paper).sum(axis=2)
