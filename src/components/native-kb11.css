@@ -172,3 +172,7 @@
 .nkb[data-native-page="22"] input.nkbField[data-native-field^="t2-"]:not(.ok):not(.bad){border:0!important;box-shadow:none!important;outline:0}
 .nkb[data-native-page="22"] input.nkbField[data-native-field^="t2-"]:focus{border-bottom:1px solid #1769e0!important}
 .nkb[data-native-page="22"] input.nkbField[data-native-field^="t2-"]{color:#211c1c!important}
+
+.nkb[data-native-page="22"] .nkbLine:not(.nkbB){opacity:.84}
+.nkb[data-native-page="22"] .nkbLine.nkbSans:not(.nkbB){opacity:.97}
+.nkb[data-native-page="22"] input.nkbField[data-native-field^="t2-"]{font-size:1.64cqw!important;opacity:.95}
