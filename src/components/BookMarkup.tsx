@@ -22,6 +22,7 @@ import {NativeAB11} from '../native-ab11/NativeAB11';
 import {NativeKb11} from './NativeKb11';
 import {HybridScan} from './HybridScan';
 import {NativeAB12} from './NativeAB12';
+import {NativeAB12L23} from '../native-ab12-l2324/NativeAB12L23';
 import {NativeAB12P66to71} from './ab12-ranges/NativeAB12P66';
 import {NativeAB12P18_20} from '../native-ab12/NativeAB12P18_20';
 import {NativeAB12Lesson13} from '../native-ab12/NativeAB12Lesson13';
@@ -77,6 +78,8 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['60','61'].includes(String(attrs.page)))return createElement(NativeAB11Lesson8Start,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a12' && hasRangePage(String(attrs.page)))return createElement(NativeAB12Range,{key,page:String(attrs.page)});
   if(tag === 'NativeAB12')return createElement(NativeAB12,{key,page:attrs.page});
+  if(tag === 'NativeAB12L23')return createElement(NativeAB12L23,{key,page:attrs.page});
+  if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['86','87','88'].includes(String(attrs.page)))return createElement(NativeAB12L23,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['66'].includes(String(attrs.page)))return createElement(NativeAB12P66to71,{key,page:String(attrs.page)});
   if(tag === 'NativeAB12L13')return createElement(NativeAB12Lesson13,{key,page:attrs.page});
   if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['18','19','20'].includes(String(attrs.page)))return createElement(NativeAB12P18_20,{key,page:String(attrs.page)});
