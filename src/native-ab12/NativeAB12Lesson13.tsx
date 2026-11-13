@@ -203,18 +203,18 @@ export function NativeAB12Lesson13({page}:{page:string}){
   <div className="naL13" style={{left:982,top:42,width:86,height:57}}>13</div>
   {audio('assets/ab-a12-cd2-track02.mp3',56,166,'2 02')}
   {badge9('1',112,169)}{text(153,169,660,'Welche Orte/Einrichtungen in der Stadt hören Sie? Markieren Sie.','naYT naNw')}
-  {mw('9-m-restaurant',161,208,85,'Restaurant')}{text(254,210,12,'|','naSep9 naNw')}
-  <div className="naW9m" style={{left:261,top:209,width:74}}>Bahnhof</div>{text(341,210,12,'|','naSep9 naNw')}
-  {mw('9-m-kino',347,208,42,'Kino')}{text(389,210,12,'|','naSep9 naNw')}
-  {mw('9-m-dom',395,208,38,'Dom')}{text(434,210,12,'|','naSep9 naNw')}
-  {mw('9-m-schwimmbad',445,208,110,'Schwimmbad')}{text(555,210,12,'|','naSep9 naNw')}
-  {mw('9-m-post',565,208,33,'Post')}{text(604,210,12,'|','naSep9 naNw')}
-  {mw('9-m-bruecke',615,208,58,'Brücke')}{text(674,210,12,'|','naSep9 naNw')}
-  {mw('9-m-bank',684,208,42,'Bank')}{text(728,210,12,'|','naSep9 naNw')}
-  {mw('9-m-polizei',737,208,55,'Polizei')}{text(795,210,12,'|','naSep9 naNw')}
-  {mw('9-m-ampel',159,235,53,'Ampel')}{text(215,237,12,'|','naSep9 naNw')}
-  {mw('9-m-hotel',224,235,46,'Hotel')}{text(273,237,12,'|','naSep9 naNw')}
-  {mw('9-m-theater',280,235,66,'Theater')}
+  {mw('9-m-restaurant',159,208,85,'Restaurant')}{text(250,207,12,'|','naSep9 naNw')}
+  <div className="naW9m" style={{left:257,top:209,width:83}}>Bahnhof</div>{text(343,207,12,'|','naSep9 naNw')}
+  {mw('9-m-kino',352,208,38,'Kino')}{text(391,207,12,'|','naSep9 naNw')}
+  {mw('9-m-dom',402,208,30,'Dom')}{text(434,207,12,'|','naSep9 naNw')}
+  {mw('9-m-schwimmbad',443,208,110,'Schwimmbad')}{text(555,207,12,'|','naSep9 naNw')}
+  {mw('9-m-post',565,208,33,'Post')}{text(603,207,12,'|','naSep9 naNw')}
+  {mw('9-m-bruecke',614,208,58,'Brücke')}{text(672,207,12,'|','naSep9 naNw')}
+  {mw('9-m-bank',682,208,42,'Bank')}{text(725,207,12,'|','naSep9 naNw')}
+  {mw('9-m-polizei',736,208,55,'Polizei')}{text(792,207,12,'|','naSep9 naNw')}
+  {mw('9-m-ampel',157,235,53,'Ampel')}{text(212,234,12,'|','naSep9 naNw')}
+  {mw('9-m-hotel',222,235,46,'Hotel')}{text(269,234,12,'|','naSep9 naNw')}
+  {mw('9-m-theater',277,235,66,'Theater')}
   <div className="naTipBar" style={{left:454,top:249,width:473,height:4}}/>
   <div className="naTipTab" style={{left:454,top:249,width:13,height:111}}><span>TIPP</span></div>
   {text(487,256,430,'Sie finden das Hören schwer? Achten Sie beim Hören','naTipT naNw')}
@@ -261,7 +261,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {field('9-2b',188,1269,84,'Regel oi','naFld9 naFld9L')}
   {text(188,1298,430,'Man hört „au“ und schreibt auch:','naEx9 naNw')}
   {field('9-2c',188,1313,84,'Regel au','naFld9 naFld9L')}
-  {check('9-2',950,1330,{'9-2a':'ei','9-2b':'eu|äu','9-2c':'au'})}
+  {check('9-2',950,1355,{'9-2a':'ei','9-2b':'eu|äu','9-2c':'au'})}
   {audio('assets/ab-a12-cd2-track06.mp3',543,1300,'2 06')}
   {text(614,1304,400,'Hören Sie noch einmal und sprechen Sie nach.','naInst9 naNw')}
   <div className="naText naFooter naNw" style={{left:905,top:1393,width:100}}>neun{'  |  '}<b>9</b></div>
@@ -289,7 +289,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {badge9('2',116,492,32,20)}{text(160,493,420,'Beschreiben Sie den Weg. Ergänzen Sie.','naYT naNw')}
   <div className="naSq8" style={{left:161,top:537}}/>{text(175,534,640,'Haben Sie einen Moment Zeit? Wie komme ich bitte zum Internet-Café?','naEx10 naNw')}
   {art('map',157,553,178,168)}
-  <div className="naTri8" style={{left:341,top:563}}/>{text(360,560,155,'Fahren Sie zuerst ','naEx9 naNw')}{art('geradeaus',499,549,89,49)}{text(594,560,80,'(a), dann ','naEx10b naNw')}{field('10-2b',678,558,116,'2b Richtung biegen','naFld9')}{text(802,561,56,'(b) Sie','naEx10b naNw')}
+  <div className="naTri8" style={{left:341,top:563}}/>{text(360,560,155,'Fahren Sie zuerst ','naEx9 naNw')}{art('geradeaus',516,563,72,23)}{text(594,560,80,'(a), dann ','naEx10b naNw')}{field('10-2b',678,558,116,'2b Richtung biegen','naFld9')}{text(802,561,56,'(b) Sie','naEx10b naNw')}
   {field('10-2c',359,585,127,'2c Richtung links','naFld9')}{text(491,586,66,'(c) ab. ','naEx10b naNw')}{text(560,586,196,'Fahren Sie jetzt einen ','naEx9 naNw')}{field('10-2d',758,585,122,'2d Kilometer','naFld9')}
   {text(359,611,260,'(d) geradeaus und dann nach ','naEx10b naNw')}{field('10-2e',621,610,105,'2e Richtung rechts','naFld9')}{text(726,612,140,'(e). Nach 500 m','naEx10b naNw')}
   {text(359,637,184,'fahren Sie über eine ','naEx10b naNw')}{field('10-2f',543,636,166,'2f Ort Brücke','naFld9')}{text(705,637,128,'(f) und an der ','naEx10b naNw')}{field('10-2g',833,637,96,'2g Ort Ampel','naFld9')}{text(936,638,24,'(g)','naEx10b naNw')}
