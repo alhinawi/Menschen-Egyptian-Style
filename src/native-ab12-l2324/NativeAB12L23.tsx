@@ -79,7 +79,7 @@ export function NativeAB12L23({page}:{page:string}){
  </>}
  {page==='85'&&<>
   <div className="naBasis" style={{left:60,top:48}}>BASISTRAINING</div>
-  <div className="naRuleP" style={{left:380,top:84,width:348}}/>
+  <div className="naRuleP" style={{left:390,top:84,width:324}}/>
   <div className="naRedL" style={{left:728,top:28,width:71,height:58}}>23</div>
   {kb(32,112,'KB 4')}
   {title('5',55,107,640,'Ergänzen und vergleichen Sie.','naRB naNw')}
@@ -90,28 +90,28 @@ export function NativeAB12L23({page}:{page:string}){
   <div className="naTblH" style={{left:102,top:164,width:613}}/>
   <div className="naTblV" style={{left:286,top:142,height:156}}/>
   <div className="naTblV" style={{left:458,top:142,height:156}}/>
-  <div className="naTblCell" style={{left:108,top:146}}>Deutsch</div>
-  <div className="naTblCell" style={{left:292,top:146}}>Englisch</div>
-  <div className="naTblCell" style={{left:470,top:146}}>Meine Sprache oder andere Sprachen</div>
-  {text(108,165,40,'der ','naS14 naNw')}{art('orden',133,163,51,20)}
-  {text(292,165,100,'the north','naS14 naNw')}
-  {text(108,190,60,'der O','naS14 naNw')}{field('85-5-1',136,184,66,'Osten')}
-  {text(292,190,100,'the east','naS14 naNw')}
-  {text(108,215,60,'der S','naS14 naNw')}{field('85-5-2',136,209,66,'Süden')}
-  {text(292,215,100,'the south','naS14 naNw')}
-  {text(108,240,60,'der W','naS14 naNw')}{field('85-5-3',136,234,66,'Westen')}
-  {text(292,240,100,'the west','naS14 naNw')}
-  {text(108,265,160,'Norddeutschland','naS14 naNw')}
-  {text(292,265,160,'Northern Germany','naS14 naNw')}
-  {text(108,290,160,'Süddeutschland','naS14 naNw')}
-  {text(292,290,160,'Southern Germany','naS14 naNw')}
-  {field('85-5-n1',465,165,240,'Meine Sprache Zeile 1','naFieldBlank')}
-  {field('85-5-n2',465,190,240,'Meine Sprache Zeile 2','naFieldBlank')}
-  {field('85-5-n3',465,215,240,'Meine Sprache Zeile 3','naFieldBlank')}
-  {field('85-5-n4',465,240,240,'Meine Sprache Zeile 4','naFieldBlank')}
-  {field('85-5-n5',465,265,240,'Meine Sprache Zeile 5','naFieldBlank')}
-  {field('85-5-n6',465,290,240,'Meine Sprache Zeile 6','naFieldBlank')}
-  {check('85-5',620,302,{'85-5-1':'osten|Osten','85-5-2':'süden|Süden','85-5-3':'westen|Westen'})}
+  <div className="naTblCell naTblCellS" style={{left:109,top:147}}>Deutsch</div>
+  <div className="naTblCell naTblCellS" style={{left:293,top:147}}>Englisch</div>
+  <div className="naTblCell naTblCellS" style={{left:465,top:147}}>Meine Sprache oder andere Sprachen</div>
+  {text(108,167,40,'der ','naS14 naNw')}{art('orden',134,165,42,19)}
+  {text(292,167,100,'the north','naS14 naNw')}
+  {text(108,189,60,'der O','naS14 naNw')}{field('85-5-1',136,184,66,'Osten')}
+  {text(292,189,100,'the east','naS14 naNw')}
+  {text(108,211,60,'der S','naS14 naNw')}{field('85-5-2',136,209,66,'Süden')}
+  {text(292,211,100,'the south','naS14 naNw')}
+  {text(108,234,60,'der W','naS14 naNw')}{field('85-5-3',136,234,66,'Westen')}
+  {text(292,234,100,'the west','naS14 naNw')}
+  {text(108,256,160,'Norddeutschland','naS14 naNw')}
+  {text(292,256,160,'Northern Germany','naS14 naNw')}
+  {text(108,277,160,'Süddeutschland','naS14 naNw')}
+  {text(292,277,160,'Southern Germany','naS14 naNw')}
+  {field('85-5-n1',465,163,240,'Meine Sprache Zeile 1','naFieldBlank')}
+  {field('85-5-n2',465,185,240,'Meine Sprache Zeile 2','naFieldBlank')}
+  {field('85-5-n3',465,207,240,'Meine Sprache Zeile 3','naFieldBlank')}
+  {field('85-5-n4',465,230,240,'Meine Sprache Zeile 4','naFieldBlank')}
+  {field('85-5-n5',465,252,240,'Meine Sprache Zeile 5','naFieldBlank')}
+  {field('85-5-n6',465,273,240,'Meine Sprache Zeile 6','naFieldBlank')}
+  {check('85-5',620,300,{'85-5-1':'osten|Osten','85-5-2':'süden|Süden','85-5-3':'westen|Westen'})}
   {kb(30,313,'KB 4')}
   <div className="naTitle naRB naNw" style={{left:55,top:311,width:680}}><b>6</b><Words text="Wie ist das Wetter in "/><span className="naBlue">…?</span><Words text=" Hören Sie und ordnen Sie zu."/></div>
   {audio('assets/ab-cd2-track36.mp3',28,336,'2 36')}
@@ -143,8 +143,8 @@ export function NativeAB12L23({page}:{page:string}){
   {text(103,988,16,'b','naS14 naNw')}{text(118,988,350,'Seit letztem Frühjahr sucht Hannes einen Job. Er ist','naS14 naNw')}{field('85-8-b',472,985,112,'arbeitslos')}{text(590,988,10,'.','naS14')}
   {text(103,1008,16,'c','naS14 naNw')}{text(118,1008,483,'In Norddeutschland war der Winter in diesem Jahr besonders grau und','naS14 naNw')}{field('85-8-c',605,1005,118,'farblos')}{text(729,1008,10,'.','naS14')}
   {check('85-8',118,1030,{'85-8-a':'wolkenlos','85-8-b':'arbeitslos','85-8-c':'farblos'})}
-  {art('modul-tab',730,1039,66,25)}
-  <div className="naText naFooter" style={{left:420,top:1041,width:300,textAlign:'right'}}>fünfundachtzig&nbsp;&nbsp;|&nbsp;&nbsp;85</div>
+  {art('modul-tab',740,1043,68,20)}
+  <div className="naText naFooter" style={{left:420,top:1046,width:310,textAlign:'right'}}>fünfundachtzig&nbsp;&nbsp;|&nbsp;&nbsp;85</div>
  </>}
  </Canvas>;
 }

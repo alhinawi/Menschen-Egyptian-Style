@@ -13,7 +13,7 @@
 .naCanvas .naText.naInst{font-family:FiraSans,'Trebuchet MS',sans-serif;font-size:17px;font-weight:normal}
 .naCanvas.naNarrow .naCheck button{font:12px Arial;min-height:20px;padding:1px 9px}
 .naCanvas.naNarrow .naCheck output{font:12px Arial}
-.naCanvas .naBasis{position:absolute;font:22px 'Times New Roman',serif;letter-spacing:2px;color:#2b2b2b}
+.naCanvas .naBasis{position:absolute;font:600 22px 'Times New Roman',serif;letter-spacing:1px;color:#2b2b2b}
 .naCanvas .naRuleP{position:absolute;height:2px;background:#b0467d}
 .naCanvas .naRedL{position:absolute;background:#af0506;color:#fff;font:bold 42px/58px 'Times New Roman',serif;text-align:center}
 .naCanvas .naDots{position:absolute;width:36px;height:14px;background:radial-gradient(circle 6px at 7px 7px,#069fe2 98%,transparent),radial-gradient(circle 6px at 27px 7px,#069fe2 98%,transparent)}
@@ -21,3 +21,4 @@
 .naCanvas .naText.naIt{font-style:italic}
 .naCanvas .naField.naFieldC{text-align:center}
 .naCanvas .naText.naBankInk{color:#33456e}
+.naCanvas .naTblCell.naTblCellS{font-size:15px}
