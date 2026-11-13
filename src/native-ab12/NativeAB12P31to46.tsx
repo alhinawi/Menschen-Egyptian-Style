@@ -540,7 +540,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {title('1',99,157,700,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naGB')}
   {text(146,198,81,'Im Hotel','naBold naNw')}
   {text(531,198,145,'verschieben, hat','naNw')}
-  {text(146,223,110,'Aufzug der,','naNw naUmlRow naF190')}{art('umlmark',249,233,10,9)}{text(256,223,12,'e','naNw naUmlRow')}
+  {text(146,223,110,'Aufzug der,','naNw naUmlRow naF190')}{art('umlmark',249,231,10,9)}{text(256,223,12,'e','naNw naUmlRow')}
   {text(543,223,98,'verschoben','naNw')}
   {stext(156,251,133,'CH/A: Lift der, -e',{color:'#8e9094'},'naNw')}
   {text(532,251,97,'passen, hat','naNw')}
@@ -550,12 +550,12 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(544,301,105,'Passt es dir/','naNw')}
   {text(146,326,134,'Föhn der, -e / -s','naNw')}
   {text(544,326,61,'Ihnen?','naNw')}
-  {text(146,352,85,'Gast der,','naNw naUmlRow')}{art('umlmark',224,362,10,9)}{text(232,352,12,'e','naNw naUmlRow')}
+  {text(146,352,85,'Gast der,','naNw naUmlRow')}{art('umlmark',224,360,10,9)}{text(232,352,12,'e','naNw naUmlRow')}
   {text(532,352,85,'pünktlich','naNw')}
-  {text(146,378,135,'Handtuch das,','naNw naUmlRow')}{art('umlmark',276,388,10,9)}{text(284,378,20,'er','naNw naUmlRow')}
+  {text(146,378,135,'Handtuch das,','naNw naUmlRow')}{art('umlmark',276,386,10,9)}{text(284,378,20,'er','naNw naUmlRow')}
   {text(531,393,229,'Weitere wichtige Wörter','naSansB naNw')}
   {text(146,404,142,'Heizung die, -en','naNw')}
-  {text(532,418,95,'Angst die,','naNw naUmlRow')}{art('umlmark',623,428,10,9)}{text(630,418,12,'e','naNw naUmlRow')}
+  {text(532,418,95,'Angst die,','naNw naUmlRow')}{art('umlmark',623,426,10,9)}{text(630,418,12,'e','naNw naUmlRow')}
   {text(146,432,109,'Klimaanlage','naNw')}
   {text(157,458,54,'die, -n','naNw')}
   {text(543,444,107,'Angst haben','naNw')}
