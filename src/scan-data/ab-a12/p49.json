@@ -1653,7 +1653,7 @@
   },
   {
    "id": "p49-3-1",
-   "group": "g2",
+   "group": "g3",
    "kind": "text",
    "label": "3 Lücke 1",
    "answer": "willst",
@@ -1664,7 +1664,7 @@
   },
   {
    "id": "p49-3-2",
-   "group": "g2",
+   "group": "g3",
    "kind": "text",
    "label": "3 Lücke 2",
    "answer": "will",
@@ -1675,7 +1675,7 @@
   },
   {
    "id": "p49-3-3",
-   "group": "g2",
+   "group": "g3",
    "kind": "text",
    "label": "3 Lücke 3",
    "answer": "wollen",
@@ -1686,7 +1686,7 @@
   },
   {
    "id": "p49-3-4",
-   "group": "g2",
+   "group": "g3",
    "kind": "text",
    "label": "3 Lücke 4",
    "answer": "wollen",
@@ -1697,7 +1697,7 @@
   },
   {
    "id": "p49-4b",
-   "group": "g3",
+   "group": "g4",
    "kind": "text",
    "label": "4 b",
    "answer": "ich soll die Handtücher in Zimmer 311 bringen.",
@@ -1708,7 +1708,7 @@
   },
   {
    "id": "p49-4c",
-   "group": "g3",
+   "group": "g4",
    "kind": "text",
    "label": "4 c",
    "answer": "ich soll für Frau Holler einen Termin beim Friseur vereinbaren.",
@@ -1719,13 +1719,112 @@
   },
   {
    "id": "p49-4d",
-   "group": "g3",
+   "group": "g4",
    "kind": "text",
    "label": "4 d",
    "answer": "ich soll Ordnung in Zimmer 235 machen.",
    "x": 553,
    "y": 1323,
    "w": 413,
+   "h": 22
+  },
+  {
+   "id": "p49-2a1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 Lücke 1",
+   "answer": "mit",
+   "x": 255,
+   "y": 601,
+   "w": 37,
+   "h": 22
+  },
+  {
+   "id": "p49-2a2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 Lücke 2",
+   "answer": "em",
+   "x": 308,
+   "y": 601,
+   "w": 26,
+   "h": 22
+  },
+  {
+   "id": "p49-2a3",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 Lücke 3",
+   "answer": "mit",
+   "x": 244,
+   "y": 625,
+   "w": 44,
+   "h": 22
+  },
+  {
+   "id": "p49-2a4",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 Lücke 4",
+   "answer": "er",
+   "x": 307,
+   "y": 625,
+   "w": 25,
+   "h": 22
+  },
+  {
+   "id": "p49-2b1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 Lücke 5",
+   "answer": "ohne",
+   "x": 480,
+   "y": 606,
+   "w": 37,
+   "h": 22
+  },
+  {
+   "id": "p49-2b2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 Lücke 6",
+   "answer": "ein",
+   "x": 537,
+   "y": 606,
+   "w": 28,
+   "h": 22
+  },
+  {
+   "id": "p49-2b3",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 Lücke 7",
+   "answer": "ohne",
+   "x": 628,
+   "y": 608,
+   "w": 30,
+   "h": 22
+  },
+  {
+   "id": "p49-2b4",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 Lücke 8",
+   "answer": "mit",
+   "x": 480,
+   "y": 675,
+   "w": 37,
+   "h": 22
+  },
+  {
+   "id": "p49-2b5",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 Lücke 9",
+   "answer": "em",
+   "x": 533,
+   "y": 675,
+   "w": 24,
    "h": 22
   }
  ],
@@ -1737,10 +1836,14 @@
   },
   {
    "id": "g2",
-   "label": "Aufgabe 3"
+   "label": "Aufgabe 2"
   },
   {
    "id": "g3",
+   "label": "Aufgabe 3"
+  },
+  {
+   "id": "g4",
    "label": "Aufgabe 4"
   }
  ],
@@ -1748,7 +1851,8 @@
   "status": "partial",
   "notes": [
    "Answers from the official Hueber Loesungsschluessel AB A1.2 (Wiederholungsstation Grammatik, L16-18).",
-   "Ex 2 (ohne/mit + article, split blanks) is not mapped. Ex 4: key line for b reads 'Zimmer in 311' (typo); the page says 'Zimmer 311', so the page wording is used.",
+   "Ex 2 (ohne/mit + article) mapped: key 'A mit dem, mit der / B ohne mein, ohne, mit dem'; split blanks take only the missing letters because d/m are printed hints ('em','er','ein').",
+   "Ex 4: key line for b reads 'Zimmer in 311' (typo); the page says 'Zimmer 311', so the page wording is used.",
    "Handwritten examples are not fields. Boxes placed from word coordinates; not marked verified."
   ],
   "verifiedWords": 227,
