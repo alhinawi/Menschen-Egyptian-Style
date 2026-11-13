@@ -1,0 +1,511 @@
+{
+ "w": 1072,
+ "h": 1449,
+ "items": [
+  {
+   "k": "a",
+   "n": "bg",
+   "x": 0,
+   "y": 0,
+   "w": 1072,
+   "h": 1449,
+   "alt": "Seite 61 Hintergrund"
+  },
+  {
+   "k": "t",
+   "x": 106,
+   "y": 112,
+   "s": 30.5,
+   "t": "BASISTRAINING",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 147,
+   "y": 181,
+   "s": 21.5,
+   "t": "Schreiben Sie fünf Kärtchen mit einem Problem und fünf Kärtchen mit",
+   "col": "#383838",
+   "c": "naFiraB"
+  },
+  {
+   "k": "t",
+   "x": 145,
+   "y": 207,
+   "s": 21.5,
+   "t": "einer Lösung im Imperativ.",
+   "col": "#383838",
+   "c": "naFiraB"
+  },
+  {
+   "k": "t",
+   "x": 146,
+   "y": 401,
+   "s": 19.0,
+   "t": "Tauschen Sie mit Ihrer Partnerin / Ihrem Partner.",
+   "col": "#383838",
+   "c": "naFiraM"
+  },
+  {
+   "k": "t",
+   "x": 146,
+   "y": 427,
+   "s": 18.5,
+   "t": "Sie/Er sucht: Welche Kärtchen passen zusammen?",
+   "col": "#383838",
+   "c": "naFiraM"
+  },
+  {
+   "k": "t",
+   "x": 147,
+   "y": 492,
+   "s": 21.5,
+   "t": "Markieren Sie die Pronomen: Dativ grün, Akkusativ rot",
+   "col": "#383838",
+   "c": "naFiraB"
+  },
+  {
+   "k": "t",
+   "x": 188,
+   "y": 531,
+   "s": 18.0,
+   "t": "Hast du Lisa und Susi mal wieder gesehen?",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 189,
+   "y": 556,
+   "s": 18.0,
+   "t": "Ja, ich habe sie gestern Abend getroffen.",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 188,
+   "y": 594,
+   "s": 17.5,
+   "t": "Wir kommen um 18.40 Uhr an. Holst du uns ab?",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 189,
+   "y": 621,
+   "s": 18.0,
+   "t": "Ja, klar. Ich kann euch gern abholen.",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 189,
+   "y": 660,
+   "s": 18.0,
+   "t": "Und? Hat dir der Film mit Matt Damon gefallen?",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 190,
+   "y": 685,
+   "s": 18.0,
+   "t": "Ich habe ihn noch nicht gesehen.",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 188,
+   "y": 716,
+   "s": 18.0,
+   "t": "Hallo Julius, ich habe dich gestern im Allotria mit einer Frau gesehen.",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 188,
+   "y": 748,
+   "s": 17.5,
+   "t": "Wer war denn das?",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 190,
+   "y": 776,
+   "s": 18.0,
+   "t": "Ach, das ist Emma. Ich kenne sie schon lange.",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 187,
+   "y": 812,
+   "s": 18.0,
+   "t": "Gehört der Koffer Ihnen?",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 190,
+   "y": 838,
+   "s": 19.5,
+   "t": "Ja, der gehört mir.",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 188,
+   "y": 877,
+   "s": 18.0,
+   "t": "Frau Weller hat viel Arbeit heute. Können Sie ihr bitte ein bisschen helfen?",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 189,
+   "y": 904,
+   "s": 18.0,
+   "t": "Ja, das mache ich gern.",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 146,
+   "y": 528,
+   "s": 18,
+   "t": "a",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 146,
+   "y": 592,
+   "s": 18,
+   "t": "b",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 145,
+   "y": 657,
+   "s": 18,
+   "t": "c",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 145,
+   "y": 721,
+   "s": 18,
+   "t": "d",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 145,
+   "y": 812,
+   "s": 18,
+   "t": "e",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 145,
+   "y": 876,
+   "s": 18,
+   "t": "f",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 148,
+   "y": 965,
+   "s": 21.0,
+   "t": "Ergänzen Sie die Pronomen aus",
+   "col": "#383838",
+   "c": "naFiraB"
+  },
+  {
+   "k": "t",
+   "x": 482,
+   "y": 964,
+   "s": 20.5,
+   "t": "in der Tabelle.",
+   "col": "#383838",
+   "c": "naFiraB"
+  },
+  {
+   "k": "t",
+   "x": 155,
+   "y": 1010,
+   "s": 16.5,
+   "t": "Nominativ",
+   "col": "#383838",
+   "c": "naDB"
+  },
+  {
+   "k": "t",
+   "x": 274,
+   "y": 1010,
+   "s": 18.0,
+   "t": "Akkusativ",
+   "col": "#383838",
+   "c": "naDB"
+  },
+  {
+   "k": "t",
+   "x": 406,
+   "y": 1006,
+   "s": 16.0,
+   "t": "Dativ",
+   "col": "#383838",
+   "c": "naDB"
+  },
+  {
+   "k": "t",
+   "x": 155,
+   "y": 1034,
+   "s": 16.5,
+   "t": "ich",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 283,
+   "y": 1034,
+   "s": 16.5,
+   "t": "mich",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 155,
+   "y": 1063,
+   "s": 16.5,
+   "t": "du",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 155,
+   "y": 1093,
+   "s": 16.5,
+   "t": "er",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 407,
+   "y": 1093,
+   "s": 16.5,
+   "t": "ihm",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 155,
+   "y": 1123,
+   "s": 16.5,
+   "t": "es",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 282,
+   "y": 1122,
+   "s": 16.5,
+   "t": "es",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 407,
+   "y": 1123,
+   "s": 16.5,
+   "t": "ihm",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 155,
+   "y": 1153,
+   "s": 16.5,
+   "t": "sie",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 149,
+   "y": 1187,
+   "s": 16.5,
+   "t": "wir",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 406,
+   "y": 1183,
+   "s": 16.5,
+   "t": "uns",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 155,
+   "y": 1211,
+   "s": 16.5,
+   "t": "ihr",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 406,
+   "y": 1211,
+   "s": 16.5,
+   "t": "euch",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 155,
+   "y": 1243,
+   "s": 16.5,
+   "t": "sie/Sie",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 407,
+   "y": 1244,
+   "s": 16.5,
+   "t": "ihnen/",
+   "col": "#383838"
+  },
+  {
+   "k": "f",
+   "id": "p61-6ichD",
+   "x": 410,
+   "y": 1041,
+   "w": 132,
+   "hh": 22,
+   "c": "sl",
+   "l": "ich Dativ",
+   "a": "mir",
+   "g": "g1"
+  },
+  {
+   "k": "f",
+   "id": "p61-6duA",
+   "x": 280,
+   "y": 1070,
+   "w": 112,
+   "hh": 22,
+   "c": "sl",
+   "l": "du Akkusativ",
+   "a": "dich",
+   "g": "g1"
+  },
+  {
+   "k": "f",
+   "id": "p61-6duD",
+   "x": 410,
+   "y": 1070,
+   "w": 132,
+   "hh": 22,
+   "c": "sl",
+   "l": "du Dativ",
+   "a": "dir",
+   "g": "g1"
+  },
+  {
+   "k": "f",
+   "id": "p61-6erA",
+   "x": 280,
+   "y": 1102,
+   "w": 112,
+   "hh": 22,
+   "c": "sl",
+   "l": "er Akkusativ",
+   "a": "ihn",
+   "g": "g1"
+  },
+  {
+   "k": "f",
+   "id": "p61-6sieA",
+   "x": 280,
+   "y": 1160,
+   "w": 112,
+   "hh": 22,
+   "c": "sl",
+   "l": "sie Akkusativ",
+   "a": "sie",
+   "g": "g1"
+  },
+  {
+   "k": "f",
+   "id": "p61-6sieD",
+   "x": 410,
+   "y": 1160,
+   "w": 132,
+   "hh": 22,
+   "c": "sl",
+   "l": "sie Dativ",
+   "a": "ihr",
+   "g": "g1"
+  },
+  {
+   "k": "f",
+   "id": "p61-6wirA",
+   "x": 280,
+   "y": 1187,
+   "w": 112,
+   "hh": 22,
+   "c": "sl",
+   "l": "wir Akkusativ",
+   "a": "uns",
+   "g": "g1"
+  },
+  {
+   "k": "f",
+   "id": "p61-6ihrA",
+   "x": 280,
+   "y": 1218,
+   "w": 112,
+   "hh": 22,
+   "c": "sl",
+   "l": "ihr Akkusativ",
+   "a": "euch",
+   "g": "g1"
+  },
+  {
+   "k": "f",
+   "id": "p61-6SieA",
+   "x": 285,
+   "y": 1248,
+   "w": 44,
+   "hh": 22,
+   "c": "sl",
+   "l": "sie/Sie Akkusativ",
+   "a": "sie",
+   "g": "g1"
+  },
+  {
+   "k": "f",
+   "id": "p61-6SieD",
+   "x": 465,
+   "y": 1248,
+   "w": 77,
+   "hh": 22,
+   "c": "sl",
+   "l": "sie/Sie Dativ",
+   "a": "Ihnen",
+   "g": "g1"
+  },
+  {
+   "k": "chk",
+   "g": "g1",
+   "x": 580,
+   "y": 1280
+  }
+ ]
+}
