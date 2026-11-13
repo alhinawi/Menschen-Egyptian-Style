@@ -18,6 +18,14 @@ const server=http.createServer((req,res)=>{
    assert(await p.locator('.hybridScan[data-scan-page="20"] input').count()>0,'unconverted p20 must remain usable');
    await p.close();console.log('p20: unconverted page preserved as HybridScan');
   }
+  for(const no of [86,87,88]){
+   const p=await browser.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
+   await p.goto('http://127.0.0.1:5297/ab-a12-l21-24.html#'+no);
+   await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
+   await p.locator('.hybridScan[data-scan-page="'+no+'"]').waitFor();
+   assert(await p.locator('.hybridScan[data-scan-page="'+no+'"] input').count()>0,'unconverted p'+no+' must remain usable');
+   await p.close();console.log('p'+no+': unconverted page preserved as HybridScan');
+  }
   for(const width of [320,390]){
    // Page 18: wrong-answer feedback, full grading, saved answers.
    {
