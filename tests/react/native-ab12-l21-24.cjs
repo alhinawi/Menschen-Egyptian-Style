@@ -405,10 +405,11 @@ for(const width of[320,390]){
  await pg79.locator('[data-native-field="p79-68"]').fill('klein');
  await chk79.locator('button').click();
  assert.ok((await chk79.locator('output').textContent()).includes('Noch einmal'),'g2 incomplete rejected');
- const ans79={'p79-68':'lustig','p79-69':'billig','p79-70':'klein','p79-71':'kleiner','p79-72':'schneller','p79-73':'billiger','p79-74':'lustiger','p79-75':'am billigsten','p79-76':'am schnellsten','p79-77':'am kleinsten','p79-78':'am lustigsten','p79-79':'jung','p79-80':'klug','p79-81':'jünger','p79-82':'klüger','p79-83':'am jüngsten','p79-84':'am klügsten','p79-85':'leicht','p79-86':'leichter','p79-87':'am leichtesten','p79-88':'gern','p79-89':'viel','p79-90':'lieber','p79-91':'am meisten','p79-92':'am besten'};
+ const ans79={'p79-68':'lustig','p79-69':'billig','p79-70':'klein','p79-71':'kleiner','p79-72':'schneller','p79-73':'billiger','p79-74':'lustiger','p79-75':'am billigsten','p79-76':'am schnellsten','p79-77':'am kleinsten','p79-78':'am lustigsten','p79-79':'jung','p79-80':'klug','p79-81':'jünger','p79-82':'klüger','p79-83':'am jüngsten','p79-84':'am klügsten','p79-85':'leicht','p79-86':'leichter','p79-87':'am leichtesten','p79-88':'gern','p79-89':'viel','p79-90':'lieber','p79-91':'am besten','p79-92':'am meisten'};
  for(const[id,v]of Object.entries(ans79))await pg79.locator('[data-native-field="'+id+'"]').fill(v);
  await chk79.locator('button').click();
  assert.ok((await chk79.locator('output').textContent()).includes('Richtig'),'g2 correct accepted (order inside column free)');
+ assert.equal(await pg79.locator('[data-native-field="p79-91"][data-check-mark]').count(),0,'am besten cell stays neutral (not in the official key)');
  console.log(width,'p79 ex7 inputs/check PASS');
  await p.close();
 }

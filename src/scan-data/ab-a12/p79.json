@@ -1252,17 +1252,6 @@
    "h": 24
   },
   {
-   "id": "p79-91",
-   "group": "g2",
-   "kind": "text",
-   "label": "7 Gruppe 4, Superlativ +++",
-   "answer": "am besten|am meisten",
-   "x": 532,
-   "y": 942,
-   "w": 151,
-   "h": 24
-  },
-  {
    "id": "p79-92",
    "group": "g2",
    "kind": "text",
@@ -1289,7 +1278,7 @@
   "status": "partial",
   "notes": [
    "Answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 22).",
-   "Ex 7 (adjective table) mapped: 25 blanks, answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 22 Basistraining 7); order inside a column free (per-field alternatives). Handwritten examples (schnell, gut) stay ink, not fields."
+   "Ex 7 (adjective table) mapped: 25 blanks, answers from official Hueber Loesungsschluessel AB A1.2 (Lektion 22 Basistraining 7); order inside a column free (per-field alternatives). Handwritten examples (schnell, gut) stay ink, not fields. Row-4 +++ first blank (am besten) is not in the key: input stays neutral/ungraded."
   ],
   "verifiedWords": 129,
   "totalWords": 129
