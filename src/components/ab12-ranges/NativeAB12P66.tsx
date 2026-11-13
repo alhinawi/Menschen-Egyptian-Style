@@ -3,9 +3,9 @@ import {AB12Canvas,AB12Helpers} from '../ab12-shared';
 function P66(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,title,kb,side,audio,strike,head,foot,tab,modTab,box,rect}=h;return <>
   {rect(326,26,416,64,'#e3b0d5')}
   {rect(123,158,468,28,'#fbfbd3')}
-  {rect(122,433,617,23,'#f0ecd1')}
-  {[122,226,354,482,610,739].map(x=><div key={'tv'+x} className='naRule' style={{left:x,top:433,width:0,height:156,borderLeft:'1px solid #d8dcbb',borderBottom:'none'}}/>)}
-  {[433,456,478,500,523,545,567,589].map(y=><div key={'th'+y} className='naRule' style={{left:122,top:y,width:617,borderBottom:'1px solid #d8dcbb'}}/>)}
+  {rect(226,433,513,23,'#ebe7cb')}
+  {[122,226,354,482,610,739].map(x=><div key={'tv'+x} className='naRule' style={{left:x,top:433,width:0,height:156,borderLeft:'1px solid #e4e6d8',borderBottom:'none'}}/>)}
+  {[433,456,478,500,523,545,567,589].map(y=><div key={'th'+y} className='naRule' style={{left:122,top:y,width:617,borderBottom:'1px solid #eceee0'}}/>)}
   {rule(138,752,596)}
   {rule(137,801,597)}
   {rule(137,850,596)}
@@ -20,13 +20,13 @@ function P66(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {art('signs',574,220,125,190)}
   {wl(70,33,[{x:340,w:41,t:'Bei'},{x:391,w:45,t:'Rot'},{x:445,w:77,t:'musst'},{x:533,w:30,t:'du'},{x:576,w:97,t:'stehen,'},{x:686,w:26,t:'...'}])}
   {title('1',80,126,200,'Ergänzen Sie.','naTitleM')}
-  {wl(175,15,[{x:130,w:31,t:'einen',c:'#3a5a94'},{x:167,w:28,t:'Helm',c:'#3a5a94'},{x:201,w:37,t:'tragen',c:'#3a5a94'},{x:243,w:1,t:'|',c:'#3a5a94'},{x:251,w:36,t:'Hunde',c:'#3a5a94'},{x:293,w:29,t:'nicht',c:'#3a5a94'},{x:328,w:70,t:'mitkommen',c:'#3a5a94'},{x:403,w:1,t:'|',c:'#3a5a94'},{x:409,w:42,t:'stehen',c:'#2f5da8',s:1},{x:453,w:48,t:'bleiben',c:'#2f5da8',s:1},{x:492,w:9,t:'|',c:'#3a5a94'},{x:507,w:12,t:'zu',c:'#3a5a94'},{x:526,w:19,t:'Fuß',c:'#3a5a94'},{x:550,w:35,t:'gehen',c:'#3a5a94'}])}
+  {wl(175,15,[{x:130,w:31,t:'einen',c:'#3a5a94'},{x:167,w:28,t:'Helm',c:'#3a5a94'},{x:201,w:37,t:'tragen',c:'#3a5a94'},{x:243,w:1,t:'|',c:'#3a5a94'},{x:251,w:36,t:'Hunde',c:'#3a5a94'},{x:293,w:29,t:'nicht',c:'#3a5a94'},{x:328,w:62,t:'mitkommen',c:'#3a5a94'},{x:392,w:4,t:'|',c:'#3a5a94'},{x:403,w:99,t:'stehen bleiben',c:'#2f5da8',s:1},{x:505,w:3,t:'|',c:'#3a5a94'},{x:511,w:12,t:'zu',c:'#3a5a94'},{x:526,w:19,t:'Fuß',c:'#3a5a94'},{x:550,w:35,t:'gehen',c:'#3a5a94'}])}
   {wl(213,15,[{x:125,w:6,t:"a"},{x:144,w:27,t:"Hier"},{x:177,w:31,t:"muss"},{x:215,w:27,t:"man"}])}
   {wl(262,15,[{x:125,w:6,t:"b"},{x:144,w:27,t:"Hier"},{x:176,w:28,t:"darf"},{x:209,w:27,t:"man"},{x:243,w:22,t:"nur"}])}
   {wl(311,15,[{x:125,w:4,t:"c"},{x:143,w:103,t:"Motorradfahrer"},{x:252,w:48,t:"müssen"}])}
   {wl(359,15,[{x:124,w:6,t:"d"},{x:143,w:12,t:"In"},{x:161,w:19,t:"die"},{x:186,w:67,t:"Bibliothek"},{x:259,w:43,t:"dürfen"}])}
   {rn(112,405.9,559,18,[{t:"Ergänzen Sie die Tabelle. Hilfe finden Sie in "},{t:"1",b:1,c:'#1f408c'},{t:" und am Beispiel von können."}],{b:1,fam:'sans'})}
-  {wl(451,17,[{x:233,w:46,t:"können",bg:'#e6e4ca'},{x:360,w:42,t:"wollen",bg:'#e6e4ca'},{x:489,w:46,t:"müssen",bg:'#e6e4ca'},{x:617,w:42,t:"dürfen",bg:'#e6e4ca'}])}
+  {wl(451,17,[{x:233,w:46,t:'können'},{x:360,w:42,t:'wollen'},{x:489,w:46,t:'müssen'},{x:617,w:42,t:'dürfen'}])}
   {wl(472,15,[{x:130,w:16,t:"ich"},{x:233,w:28,t:"kann"},{x:361,w:21,t:"will"},{x:489,w:28,t:"muss"},{x:617,w:25,t:"darf"}])}
   {wl(494,15,[{x:129,w:14,t:"du"},{x:233,w:39,t:"kannst"},{x:360,w:32,t:"willst"},{x:489,w:34,t:"musst"}])}
   {wl(516,15,[{x:129,w:52,t:"er/es/sie"},{x:233,w:28,t:"kann"},{x:360,w:22,t:"will"}])}
@@ -34,7 +34,7 @@ function P66(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {wl(561,15,[{x:130,w:16,t:"ihr"},{x:232,w:34,t:"könnt"},{x:360,w:29,t:"wollt"},{x:489,w:32,t:"müsst"}])}
   {wl(583,15,[{x:129,w:39,t:"sie/Sie"},{x:233,w:43,t:"können"},{x:360,w:38,t:"wollen"}])}
   {title('3',80,635,300,'Sortieren Sie die Sätze.','naTitleM')}
-  {wl(681,15,[{x:122,w:5,t:"a"},{x:140,w:28,t:"darf"},{x:171,w:7,t:"/"},{x:182,w:47,t:"Warum"},{x:235,w:6,t:"/"},{x:246,w:27,t:"hier"},{x:277,w:7,t:"/"},{x:289,w:28,t:"man"},{x:322,w:4,t:"/"},{x:326,w:50,t:"grillen"},{x:382,w:6,t:"/"},{x:393,w:34,t:"nicht"}])}
+  {wl(681,15,[{x:122,w:5,t:'a'},{x:140,w:28,t:'darf'},{x:171,w:7,t:'/'},{x:182,w:47,t:'Warum'},{x:235,w:6,t:'/'},{x:246,w:27,t:'hier'},{x:277,w:7,t:'/'},{x:289,w:28,t:'man'},{x:318,w:7,t:'/'},{x:330,w:45,t:'grillen'},{x:382,w:6,t:'/'},{x:393,w:34,t:'nicht'}])}
   {wl(731,17,[{x:140,w:33,t:"nicht"},{x:178,w:7,t:"/"},{x:190,w:56,t:"Flugzeug"},{x:246,w:8,t:"/"},{x:264,w:16,t:"Im"},{x:286,w:6,t:"/"},{x:297,w:26,t:"darf"},{x:323,w:8,t:"/"},{x:340,w:53,t:"rauchen"},{x:399,w:6,t:"/"},{x:410,w:18,t:"ich"}])}
   {wl(779,17,[{x:140,w:66,t:"Radfahrer"},{x:211,w:6,t:"/"},{x:222,w:81,t:"Deutschland"},{x:309,w:6,t:"/"},{x:320,w:48,t:"Müssen"},{x:373,w:7,t:"/"},{x:385,w:11,t:"in"},{x:402,w:6,t:"/"},{x:413,w:37,t:"einen"},{x:456,w:33,t:"Helm"},{x:494,w:7,t:"/"},{x:506,w:42,t:"tragen"}])}
   {wl(827,15,[{x:138,w:22,t:"wir"},{x:165,w:6,t:"/"},{x:176,w:20,t:"See"},{x:202,w:6,t:"/"},{x:213,w:45,t:"Dürfen"},{x:263,w:7,t:"/"},{x:274,w:38,t:"baden"},{x:318,w:5,t:"/"},{x:329,w:16,t:"im"}])}
