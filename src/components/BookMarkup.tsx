@@ -80,7 +80,6 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   if(tag === 'HybridScan' && attrs.book==='ab-a12' && hasRangePage(String(attrs.page)))return createElement(NativeAB12Range,{key,page:String(attrs.page)});
   if(tag === 'NativeAB12')return createElement(NativeAB12,{key,page:attrs.page});
   if(tag === 'NativeAB12L23')return createElement(NativeAB12L23,{key,page:attrs.page});
-  if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['86','87','88'].includes(String(attrs.page)))return createElement(NativeAB12L23,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['66'].includes(String(attrs.page)))return createElement(NativeAB12P66to71,{key,page:String(attrs.page)});
   if(tag === 'NativeAB12L13')return createElement(NativeAB12Lesson13,{key,page:attrs.page});
   if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['18','19'].includes(String(attrs.page)))return createElement(NativeAB12P18_20,{key,page:String(attrs.page)});
