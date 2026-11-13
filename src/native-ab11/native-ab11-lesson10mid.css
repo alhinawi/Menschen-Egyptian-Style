@@ -42,8 +42,8 @@
 .nativeAB11Lesson10Mid[data-native-ab11-page='84'] .mCanvas .mNumber{background:#bc0231}
 .nativeAB11Lesson10Mid .mCanvas .mText.mPunkte{font-size:13px}
 .nativeAB11Lesson10Mid .mCanvas .mText.mMark{font-size:13px;line-height:18px}
-.nativeAB11Lesson10Mid .mCanvas .mText.mMarkSq{background:#3d5d9c}
-.nativeAB11Lesson10Mid .mCanvas .mText.mMarkTr{width:0;height:0;border-left:6.5px solid transparent;border-right:6.5px solid transparent;border-bottom:12px solid #54bd65}
+.nativeAB11Lesson10Mid .mCanvas .mText.mMarkSq{background:#1e408a}
+.nativeAB11Lesson10Mid .mCanvas .mText.mMarkTr{width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:11px solid #49b85c}
 .nativeAB11Lesson10Mid .mScore.mScore82{grid-template-rows:31px repeat(3,28px);line-height:28px;font-size:15px;background:#f9f7d0;width:418px;height:115px;padding:0;box-sizing:border-box}
 .nativeAB11Lesson10Mid .mScore.mScore82 b{background:transparent}
 .nativeAB11Lesson10Mid .mExRule{position:absolute;height:1px;background:#aaa}
@@ -66,7 +66,5 @@
 .nativeAB11Lesson10Mid .mPairDot{position:absolute;width:9px;height:9px;border-radius:50%;background:#29a3c7}
 .nativeAB11Lesson10Mid[data-native-ab11-page='84'] .mCanvas .mNumber{background:#bc0231}
 
-.nativeAB11Lesson10Mid .mCanvas .mText.mDlg{font-size:16.5px}
-.nativeAB11Lesson10Mid .mCanvas .mText.mDlg16{font-size:16px}
-.nativeAB11Lesson10Mid .mCanvas .mText.mDlg155{font-size:15.5px}
-.nativeAB11Lesson10Mid .mCanvas .mText.mDlg17{font-size:17px}
+.nativeAB11Lesson10Mid .mCanvas .mText.mDlg{font-size:15.5px}
+.nativeAB11Lesson10Mid .mCanvas .mText.mDlg165{font-size:16.5px}
