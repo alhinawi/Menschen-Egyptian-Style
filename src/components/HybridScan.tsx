@@ -12,7 +12,7 @@ export function HybridScan({data}:{data:ScanData}){
  const key=`menschen-hybrid-${data.book}-${data.page}`;
  const [values,setValues]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return {}}});
  const [results,setResults]=useState<Record<string,boolean>>({});
- const [activeAudio,setActiveAudio]=useState('');
+ const [,setActiveAudio]=useState('');
  const player=useRef<HTMLAudioElement>(null);
  const tools=useRef<HTMLDivElement>(null);
  const [toolSpace,setToolSpace]=useState(90);
@@ -40,7 +40,7 @@ export function HybridScan({data}:{data:ScanData}){
    {matchings.map(m=><span key={m.id} style={{display:'contents'}}>{m.masks?.map((b,i)=><span key={i} className="hybridMask" style={box(b)}/>)}<LineMatching id={m.id} left={m.left} right={m.right} values={values} onMatch={update} leftX={m.leftX} rightX={m.rightX} leftWidth={m.leftWidth} rightWidth={m.rightWidth} ys={m.ys} rightYs={m.rightYs} itemHeights={m.itemHeights} rightHeights={m.rightHeights} multiline={m.multiline} lineHeight={m.lineHeight} fontSize={m.fontSize} example={m.example} multiple={m.multiple} leftWidths={m.leftWidths} rightWidths={m.rightWidths} leftXs={m.leftXs} rightXs={m.rightXs} leftDotXs={m.leftDotXs} leftDotYs={m.leftDotYs} rightDotXs={m.rightDotXs} rightDotYs={m.rightDotYs} className={m.className} width={data.width} height={data.height}/></span>)}
    <ClipMarkers book={data.book} page={data.page}/>
    {data.audio.map(a=><button key={a.id} data-audio-src={a.src} type="button" className="hybridAudio" style={box(a)} aria-label={a.label} onClick={()=>{setActiveAudio(a.src);requestAnimationFrame(()=>{if(player.current){player.current.src=a.src;player.current.play().catch(()=>{})}})}}>▶</button>)}
-   <div className="hybridTools empty:hidden" ref={tools}>{data.groups.filter(g=>gradedIds(g.id).length>0).map(g=><div key={g.id} className="hybridCheck"><CheckButton type="button" onClick={()=>check(g.id)}></CheckButton><output aria-live="polite">{gradedIds(g.id).some(id=>results[id]!==undefined)?gradedIds(g.id).every(id=>results[id])?'✓ Richtig!':'Noch einmal':''}</output></div>)}{data.audio.length>0&&<audio ref={player} controls hidden={!activeAudio}/>}</div>
+   <div className="hybridTools empty:hidden" ref={tools}>{data.groups.filter(g=>gradedIds(g.id).length>0).map(g=><div key={g.id} className="hybridCheck"><CheckButton type="button" onClick={()=>check(g.id)}></CheckButton><output aria-live="polite">{gradedIds(g.id).some(id=>results[id]!==undefined)?gradedIds(g.id).every(id=>results[id])?'✓ Richtig!':'Noch einmal':''}</output></div>)}{data.audio.length>0&&<audio ref={player} controls hidden/>}</div>
   </div>
  </div>
 }
