@@ -724,3 +724,22 @@ body.readerNativeFrame #viewport{height:var(--reader-native-height)!important;ov
 .pageResetDialog{border:1px solid #c8cec6;border-radius:16px;padding:24px;max-width:min(360px,calc(100vw - 36px));color:var(--ink,#243c35);background:var(--paper,#fffef8);box-shadow:0 12px 45px #0004;font:16px Arial,sans-serif;box-sizing:border-box}
 .pageResetDialog::backdrop{background:#0007}
 .pageResetDialog h3{margin:0 0 12px;font-size:21px}.pageResetDialog p{line-height:1.5;margin:0 0 24px}.pageResetDialog>div{display:flex;gap:12px;justify-content:flex-end}.pageResetDialog button{padding:12px 20px;min-height:44px;border-radius:9px;border:1px solid #87978d;background:transparent;color:inherit;font:inherit}.pageResetDialog .confirmPageReset{background:#953c31;color:#fff;border-color:#953c31}
+
+/* Keep navigation centered, with tools balanced on either side and clear gaps. */
+body.readerSplitControls .controls{grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;padding:6px;min-height:56px}
+body.readerSplitControls .controls button{min-width:0!important;height:44px;min-height:44px}
+body.readerSplitControls .controls [data-react-theme-slot]{display:contents}
+body.readerSplitControls .controls .themesTrigger{grid-column:1;grid-row:1}
+body.readerSplitControls .controls .soundToggle{grid-column:2;grid-row:1}
+body.readerSplitControls .controls #prev{grid-column:3;grid-row:1}
+body.readerSplitControls .controls .lnv-pagePill{grid-column:4;grid-row:1}
+body.readerSplitControls .controls #next{grid-column:5;grid-row:1}
+body.readerSplitControls .controls .meaningModeToggle{grid-column:6;grid-row:1}
+body.readerSplitControls .controls .pageResetTrigger{grid-column:7;grid-row:1}
+body.readerSplitControls .controls .translationControls button{font-size:clamp(8px,2.5vw,10px);white-space:nowrap}
+/* A shared handwritten cross for answer circles and tick boxes. Word-marking controls retain their own highlight. */
+.page input:is([type=radio],[type=checkbox]):not(.nabOption input){--answer-mark:#286e50!important}
+.page input:is([type=radio],[type=checkbox]):is(.bad,.hybridWrong,.answerWrong),.page .answerWrong input:is([type=radio],[type=checkbox]){--answer-mark:#bd3838!important}
+.page input:is([type=radio],[type=checkbox]):checked:not(.nabOption input){appearance:none!important;-webkit-appearance:none!important;background-color:transparent!important;background-image:linear-gradient(54deg,transparent 40%,var(--answer-mark) 43% 53%,transparent 56%),linear-gradient(-48deg,transparent 41%,var(--answer-mark) 44% 53%,transparent 56%)!important;background-size:76% 76%!important;background-position:50% 50%!important;background-repeat:no-repeat!important}
+
+.page input:is([type=radio],[type=checkbox]):checked:is(.bad,.hybridWrong,.answerWrong){--answer-mark:#bd3838!important}

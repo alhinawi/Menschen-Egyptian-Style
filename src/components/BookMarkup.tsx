@@ -1,4 +1,6 @@
+import {AB11LineMatching88} from '../exercises/AB11LineMatching88';
 import {NativeAB11Lesson10Start} from '../native-ab11/NativeAB11Lesson10Start';
+import {NativeAB11Lesson10Mid} from '../native-ab11/NativeAB11Lesson10Mid';
 import {NativeAB11Module3Close} from '../native-ab11/NativeAB11Module3Close';
 import {NativeAB11Module3Review} from '../native-ab11/NativeAB11Module3Review';
 import {NativeAB11Lesson9Close} from '../native-ab11/NativeAB11Lesson9Close';
@@ -18,6 +20,8 @@ import {NativeAB11} from '../native-ab11/NativeAB11';
 import {NativeKb11} from './NativeKb11';
 import {HybridScan} from './HybridScan';
 import {NativeAB12} from './NativeAB12';
+import {NativeAB12P18_20} from '../native-ab12/NativeAB12P18_20';
+import {NativeAB12Lesson13} from '../native-ab12/NativeAB12Lesson13';
 import {scanData} from '../scan-data/registry';
 import {WordBank} from '../exercises/WordBank';
 import {RatingDot} from '../persistence/RatingDot';
@@ -57,7 +61,9 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   if(tag === 'NativePage')return createElement(NativePage,{key,book:attrs.book,page:attrs.page});
   if(tag === 'NativePilot')return createElement(NativePilot,{key,page:attrs.page});
   if(tag === 'NativeKB12')return createElement(NativeKB12,{key,page:attrs.page});
+  if(tag === 'AB11LineMatching88')return createElement(AB11LineMatching88,{key});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['77','78'].includes(String(attrs.page)))return createElement(NativeAB11Lesson10Start,{key,page:String(attrs.page)});
+  if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['79','80','81'].includes(String(attrs.page)))return createElement(NativeAB11Lesson10Mid,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['74','75','76'].includes(String(attrs.page)))return createElement(NativeAB11Module3Close,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['71','72','73'].includes(String(attrs.page)))return createElement(NativeAB11Module3Review,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['68','69','70'].includes(String(attrs.page)))return createElement(NativeAB11Lesson9Close,{key,page:String(attrs.page)});
@@ -65,6 +71,8 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['62','63','64'].includes(String(attrs.page)))return createElement(NativeAB11Lesson8Close,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['60','61'].includes(String(attrs.page)))return createElement(NativeAB11Lesson8Start,{key,page:String(attrs.page)});
   if(tag === 'NativeAB12')return createElement(NativeAB12,{key,page:attrs.page});
+  if(tag === 'NativeAB12L13')return createElement(NativeAB12Lesson13,{key,page:attrs.page});
+  if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['18','19','20'].includes(String(attrs.page)))return createElement(NativeAB12P18_20,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['57','58','59'].includes(String(attrs.page)))return createElement(NativeAB11Lesson7Close,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['38','39','40'].includes(String(attrs.page)))return createElement(NativeAB11Next45,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['30','31','32','33','34','35','36','37'].includes(String(attrs.page)))return createElement(NativeAB11Lessons45,{key,page:String(attrs.page)});
