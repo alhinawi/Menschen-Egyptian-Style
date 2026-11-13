@@ -44,7 +44,7 @@ R = [
     (150,986,580,1018),     # ex9 title
     (155,1026,178,1056),    # a label
     (202,1026,465,1056),    # a text
-    (155,1052,580,1084),    # 9a answer line (cursive + printed text)
+    (202,1052,580,1084),    # 9a answer line (keep printed green triangle at x184-195)
     (202,1082,430,1110),    # doch nicht so viel Geld!
     (155,1116,178,1146),    # b label
     (202,1116,515,1146),    # b text
@@ -69,12 +69,12 @@ items.append({'k':'a','n':'bg','x':0,'y':0,'w':W,'h':H,'alt':'Seite 56 Hintergru
 SER='serif'
 # ---------- ex 7 ----------
 t(160,183,'Ergänzen Sie das Verb im Perfekt.',c='naFiraM',col='#1d1d1b',target=329,path=FIRA)
-items.append({'k':'bx','x':158,'y':203,'w':634,'h':30,'bg':'#f9f9df'})
+items.append({'k':'bx','x':160,'y':204,'w':624,'h':24,'bg':'#f9f9df'})
 t(166,224,'sich entschuldigen | gehören | gefallen | beschweren | vergessen | bekommen',c='naFiraR',col='#7585a2',s=17.3,path=FIRA400)
-items.append({'k':'r','x':166,'y':214,'w':120,'h':3,'col':'#5b6099'})  # printed strike through example word
+items.append({'k':'r','x':166,'y':219,'w':120,'h':2,'col':'#5b6099'})  # printed strike through example word
 for ly,lab in [(260,'a'),(286,'b'),(311,'c'),(338,'d'),(365,'e'),(389,'f')]:
     t(160,ly,lab,s=15,col='#828185')
-t(186,260,'Warum hast du dich bei Simon nicht',target=323)
+t(186,260,'Warum hast du dich bei Simon nicht',target=317)
 items.append({'k':'r','x':513,'y':264,'w':92,'h':2,'col':'#9aa3ab'})
 items.append({'k':'a','n':'entschuldigt','x':511,'y':244,'w':93,'h':31,'alt':'Beispielantwort entschuldigt'})
 t(604,260,'?')
