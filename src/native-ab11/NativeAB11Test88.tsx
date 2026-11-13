@@ -1,4 +1,5 @@
 import {CheckButton} from '../components/CheckButton';
+import {PageImage} from '../components/PageImage';
 import {useLayoutEffect,useRef,useState} from 'react';
 import {usePageReset} from '../exercises/usePageReset';
 import {LineMatching} from '../exercises/LineMatching';
@@ -23,6 +24,7 @@ export function NativeAB11Test88(){
  const txt=(x:number,y:number,w:number,s:string,cls='')=><div className={'mText '+cls} style={{left:x,top:cls==='mFooter'?y:Y(y),width:w}}><Words s={s}/></div>;
  const f=(id:string,x:number,y:number,w:number)=>{const ctx=document.createElement('canvas').getContext('2d');if(ctx)ctx.font="16px 'Times New Roman'";const size=Math.max(10,Math.min(16,16*(w-8)/(ctx?.measureText(v[id]||'').width||1)));return <input className="mField" data-native-field={id} aria-label={id} style={{left:x,top:Y(y),width:w,fontSize:size}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>};
  const title=(n:string,y:number,s:string)=><><div className="mNumber red" style={{left:112,top:Y(y)}}>{n}</div>{txt(148,y,690,s,'mTitle')}</>;
+ const ink=(name:string,x:number,y:number,w:number,h:number,alt='')=><PageImage className="mHelp" alt={alt} src={`assets/native-ab11/p88-${name}.png`} style={{left:x,top:Y(y),width:w,height:h}}/>;
  const expected=[4,2,5,0,6,3,1];
  const check=(id:string,y:number,test:()=>boolean)=><div className="mCheck" data-native-task={id} style={{left:149,top:Y(y)}}><CheckButton type="button" answers={Object.fromEntries(Object.entries(test88Answers).filter(([k])=>k.startsWith(id+'-')))} onClick={()=>G({...graded,[id]:test()})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const group=(prefix:string)=>Object.entries(test88Answers).filter(([k])=>k.startsWith(prefix)).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')));
@@ -34,7 +36,7 @@ export function NativeAB11Test88(){
  {txt(750,356,85,'_ / 6 Punkte','p88Points')}{check('t1',382,()=>expected.every((r,i)=>i===0||v['ab88-1-'+i]===''+r))}
  {title('2',423,'Schreiben Sie Sätze im Perfekt.')}
  <div className="nabSide" style={{left:92,top:465}}>STRUKTUREN</div>
- {txt(149,460,25,'a')}{txt(172,460,20,'▪','p88Square')}{txt(188,460,202,'Hast du heute gearbeitet?','mExample')}{txt(394,460,420,'(heute/arbeiten/du)')}
+ {txt(149,460,25,'a')}{txt(172,460,20,'▪','p88Square')}{ink('gearbeitet-ink',186,450,161,28,'Hast du heute gearbeitet?')}{txt(394,460,420,'(heute/arbeiten/du)')}
  {txt(172,486,20,'▴','p88Triangle')}{txt(188,486,194,'Ja, aber nur bis 14 Uhr.')}{f('t2-a',359,482,456)}{txt(817,486,9,'.')}{txt(188,510,525,'(Fußball spielen/am Nachmittag/ich)')}
  {txt(149,540,25,'b')}{txt(172,540,20,'▪','p88Square')}{f('t2-b1',188,536,477)}{txt(666,540,9,'?')}{txt(680,540,160,'(sehen/Monika/du)')}
  {txt(172,566,20,'▴','p88Triangle')}{txt(188,566,125,'Ja, letzte Woche.')}{f('t2-b2',311,562,376)}{txt(688,566,9,'.')}{txt(702,566,180,'(viel/wir/lachen)')}
@@ -52,7 +54,7 @@ export function NativeAB11Test88(){
  {txt(176,918,280,'Kelubia:\n- lange schlafen, einkaufen,\n  15-17 Uhr: Tennis spielen','p88Notes')}{txt(459,918,340,'Neyla:\n- Vormittag: mit Anna Deutsch lernen,\n  Nachmittag: arbeiten','p88Notes')}
  <div className="p88ChatRule" style={{left:161,top:Y(983),width:664}}/>
  {txt(174,994,69,'NEYLA:','p88Name')}{txt(246,994,590,'Hallo Kelubia, wie geht’s? Was hast Du denn heute alles gemacht?')}
- {txt(174,1020,72,'Kelubia:')}{txt(246,1020,35,'Ach,')}{txt(280,1020,180,'ich habe lange geschlafen.','mExample')}{txt(465,1020,45,'Dann')}{f('t3-a',511,1016,278)}{txt(790,1020,9,'.')}{txt(805,1020,35,'(a)')}
+ {txt(174,1020,72,'Kelubia:')}{txt(246,1020,35,'Ach,')}{ink('geschlafen-ink',278,1010,156,28,'ich habe lange geschlafen.')}{txt(465,1020,45,'Dann')}{f('t3-a',511,1016,278)}{txt(790,1020,9,'.')}{txt(805,1020,35,'(a)')}
  {txt(246,1046,34,'Von')}{f('t3-b',281,1042,508)}{txt(790,1046,9,'.')}{txt(805,1046,35,'(b)')}
  {txt(246,1072,112,'Und Du? Was')}{f('t3-c',359,1068,430)}{txt(790,1072,9,'?')}{txt(805,1072,35,'(c)')}
  {txt(174,1098,69,'NEYLA:','p88Name')}{txt(246,1098,157,'Am Vormittag habe ich')}{f('t3-d',407,1094,382)}{txt(790,1098,9,'.')}{txt(805,1098,35,'(d)')}
