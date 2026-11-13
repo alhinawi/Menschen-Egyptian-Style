@@ -5,3 +5,5 @@
 .sharedMatching .sharedMatchLines{position:absolute;inset:0;width:100%;height:100%;z-index:2;overflow:visible;pointer-events:none}
 
 .sharedMatching .sharedMatchItem{touch-action:none;user-select:none;-webkit-user-select:none}
+
+.lmHideLeft .sharedMatchItem:not([data-match-right]){color:transparent!important}
