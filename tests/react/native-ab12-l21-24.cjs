@@ -363,5 +363,25 @@ for(const width of[320,390]){
  assert.equal(await p.evaluate(()=>localStorage.getItem('native-ab12-75')),null,'reset clears storage');
  console.log(width,'p75 interaction/persist/reset PASS');
  await p.close();
+ // page 76: Rueckblick L20/21 - open writing tables, no grading, no radios
+ p=await openPage(b,width,'76');
+ const pg76=p.locator('.page[data-page="76"]');
+ assert.equal(await pg76.locator('.nativeAB12[data-native-ab12="76"]').count(),1,'native p76 rendered');
+ assert.equal(await pg76.locator('[data-native-field]').count(),9,'9 table writing areas');
+ assert.equal(await pg76.locator('[data-check]').count(),0,'no check buttons on review page');
+ assert.equal(await pg76.locator('input.naDot').count(),0,'no radios on review page');
+ for(const id of['p76-t1-r1-p2','p76-t1-r2-p3','p76-t1-r3-p2','p76-t2-r2-c1','p76-t2-r2-c3'])assert.equal(await pg76.locator('[data-native-field="'+id+'"]').count(),1,'area '+id);
+ await pg76.locator('[data-native-field="p76-t1-r1-p2"]').fill('Die Frau radelt.');
+ await pg76.locator('[data-native-field="p76-t2-r2-c2"]').fill('okay');
+ // saved-reload
+ await p.reload();await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');await p.evaluate(()=>window.bookPage([...document.querySelectorAll('.page')].findIndex(e=>e.dataset.page==='76')));await p.waitForTimeout(350);
+ assert.equal(await p.locator('.page[data-page="76"] [data-native-field="p76-t1-r1-p2"]').inputValue(),'Die Frau radelt.','saved area reloaded');
+ assert.equal(await p.locator('.page[data-page="76"] [data-native-field="p76-t2-r2-c2"]').inputValue(),'okay','saved area 2 reloaded');
+ // reset clears
+ await p.locator('.pageResetTrigger').click();await p.getByRole('button',{name:'Reset',exact:true}).click();
+ assert.equal(await p.locator('.page[data-page="76"] [data-native-field="p76-t1-r1-p2"]').inputValue(),'','reset clears area');
+ assert.equal(await p.evaluate(()=>localStorage.getItem('native-ab12-76')),null,'reset clears storage');
+ console.log(width,'p76 interaction/persist/reset PASS');
+ await p.close();
 }
 }finally{await b.close();server.close()}})().catch(e=>{console.error(e);server.close();process.exitCode=1});
