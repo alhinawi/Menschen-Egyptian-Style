@@ -581,7 +581,7 @@ export function NativeKB12({page}:{page:string}){
  </>}
  {page==='43'&&<>
  {art('vocab',0,0,1000,107)}{['glatte Haare','Locken','dick','schlank/dünn','hübsch','hässlich'].map((t,i)=>text(i*166.6,111,166.6,(i<2?'● ':'')+t,'nkVocabLabel nkTinyLabel nkCenter'))}{text(1015,42,85,'19','nkLesson')}
- {text(117,185,930,'c  Wie finden Sie die Personen auf der Zeichnung? Erzählen Sie.','nkBold')}{text(148,227,900,'■ Ich finde, Angela Mai sieht wirklich sympathisch aus. Und Hannes Zeman sieht nett aus.\n▲ Findest du? Ich finde, er sieht ein bisschen langweilig aus.')}
+ {text(117,185,930,'c  Wie finden Sie die Personen auf der Zeichnung? Erzählen Sie.','nkBold')}{save('4c',862,190)}{text(148,227,900,'■ Ich finde, Angela Mai sieht wirklich sympathisch aus. Und Hannes Zeman sieht nett aus.\n▲ Findest du? Ich finde, er sieht ein bisschen langweilig aus.')}
  {title('5',106,323,925,'Personen beschreiben: früher und heute. Arbeiten Sie auf Seite 81.')}{text(148,360,900,'Ihre Partnerin / Ihr Partner arbeitet auf Seite 84.','nkBold')}
  {title('6',106,415,925,'Hast du schon gesehen …?')}{text(117,461,930,'a  Was ist richtig? Hören Sie drei weitere Party-Gespräche und kreuzen Sie an.','nkBold')}
  {text(25,439,85,'▶ 3 25-27','nkClip')}{[27,25,26].map((n,i)=>audio('assets/kb-a12-cd3-track'+n+'.mp3',40,465+i*30,String(i+1),undefined,'6a'))}
@@ -589,9 +589,9 @@ export function NativeKB12({page}:{page:string}){
  {text(117,808,930,'b  Wie heißen die Verben im Perfekt? Ergänzen Sie.','nkBold')}
  <div className="nkGrammar" style={{left:148,top:852,width:412,height:266}}>{text(16,7,390,'nicht trennbare Verben\nInfinitiv       Perfekt (früher)','nkBold nkCenter')}{text(180,58,225,'er/es/sie hat + …en / …t','nkRed nkSmall')}{['erkennen','gefallen','bekommen','vergessen','entschuldigen','gehören','beschweren'].map((v,i)=><div key={v}>{text(18,89+i*24,160,v)}{i===0?text(180,89,180,'erkannt','nkHand'):field('6b-'+v,180,89+i*24,205,v+' Perfekt')}</div>)}</div>
  {text(602,857,425,'Leider hat Mark das Baby in einem Café vergessen.','nkInfo')}{check('6b',148,1130,{'6b-gefallen':'gefallen','6b-bekommen':'bekommen','6b-vergessen':'vergessen','6b-entschuldigen':'entschuldigt','6b-gehören':'gehört','6b-beschweren':'beschwert'})}
- {title('7',106,1180,925,'Ihre Lügen-Geschichte')}{text(117,1222,930,'a  Notieren Sie Stichpunkte zu Ihrem Leben. Aber: Eine Sache ist falsch.','nkBold')}{text(735,1044,305,'in Paris geboren /\nVater: hatte eine Bäckerei,\nMutter: Hausfrau /\n3 Brüder, 3 Schwestern …','nkHand nkInfo')}{open('7-notes',817,1184,223,130,'Stichpunkte zu meinem Leben')}
- {text(117,1275,450,'b  Arbeiten Sie zu dritt. Erzählen Sie den anderen Ihre Geschichte.','nkBold')}{text(620,1320,385,'Ich bin in Paris geboren. Mein Vater hatte eine Bäckerei, meine Mutter …','nkSpeech')}
- {text(117,1370,920,'c  Die anderen raten: Was ist falsch in Ihrer Geschichte?','nkBold')}{text(148,1406,850,'■ Ich glaube, du hast nicht so viele Geschwister.\n▲ Doch!\n■ Aber dein Vater hatte keine Bäckerei, oder?\n▲ Das stimmt, er war Architekt.','nkTiny')}
+ {title('7',106,1180,925,'Ihre Lügen-Geschichte')}{text(117,1222,930,'a  Notieren Sie Stichpunkte zu Ihrem Leben. Aber: Eine Sache ist falsch.','nkBold')}{save('7a',780,1190)}{text(735,1044,305,'in Paris geboren /\nVater: hatte eine Bäckerei,\nMutter: Hausfrau /\n3 Brüder, 3 Schwestern …','nkHand nkInfo')}{open('7-notes',817,1184,223,130,'Stichpunkte zu meinem Leben')}
+ {text(117,1275,450,'b  Arbeiten Sie zu dritt. Erzählen Sie den anderen Ihre Geschichte.','nkBold')}{save('7b',410,1300)}{text(620,1320,385,'Ich bin in Paris geboren. Mein Vater hatte eine Bäckerei, meine Mutter …','nkSpeech')}
+ {text(117,1370,920,'c  Die anderen raten: Was ist falsch in Ihrer Geschichte?','nkBold')}{save('7c',692,1400)}{text(148,1406,850,'■ Ich glaube, du hast nicht so viele Geschwister.\n▲ Doch!\n■ Aber dein Vater hatte keine Bäckerei, oder?\n▲ Das stimmt, er war Architekt.','nkTiny')}
  </>}
  {page==='44'&&<>
  {text(7,43,90,'19','nkLesson')}{text(117,106,800,'SPRECHTRAINING','nkModule')}{title('8',117,164,760,'Erstaunt reagieren')}{art('speaker',363,140,60,62)}
