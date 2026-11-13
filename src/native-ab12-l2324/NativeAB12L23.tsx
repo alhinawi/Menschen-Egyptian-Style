@@ -117,7 +117,7 @@ export function NativeAB12L23({page}:{page:string}){
   {check('85-5',620,300,{'85-5-1':'osten|Osten','85-5-2':'süden|Süden','85-5-3':'westen|Westen'})}
   {kb(30,313,'KB 4')}
   <div className="naTitle naRB naNw" style={{left:55,top:311,width:680}}><b>6</b><Words text="Wie ist das Wetter in "/><span className="naBlue">…?</span><Words text=" Hören Sie und ordnen Sie zu."/></div>
-  {audio('assets/ab-cd2-track36.mp3',28,336,'2 36')}
+  {audio('assets/ab-cd2-track36.mp3',28,336,'2 36','5')}
   <div className="naSide naSideB" style={{left:64,top:366}}>HÖREN</div>
   {art('map',80,338,298,374)}
   {art('wetter',378,383,144,279)}
@@ -244,7 +244,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(445,373,275,'Überlegen Sie vor dem Hören: Was ist die','naBookSerif naBk87 naNw')}
   {text(445,389,275,'Situation? Wo sind die Personen? Was sagen','naBookSerif naBk87 naNw')}
   {text(445,405,275,'die Personen vielleicht?','naBookSerif naBk87 naNw')}
-  {audio('assets/ab-cd2-track37.mp3',26,449,'2 37')}
+  {audio('assets/ab-cd2-track37.mp3',26,449,'2 37','2')}
   {title('2',68,453,640,'Hören Sie nun das Gespräch und korrigieren Sie die Sätze.','naRB naNw naS15')}
   {text(103,483,16,'a','naBookSerif naBk87')}<div className="naText naBookSerif naBk87 naNw" style={{left:121,top:483,width:250}}><span className="naStrikeB"><Words text="Peter"/></span><Words text=" war im Urlaub krank."/></div>
   {art('hand2a',493,481,75,20)}{rule(496,497,65)}
@@ -262,7 +262,7 @@ export function NativeAB12L23({page}:{page:string}){
   <div className="naTrainHead" style={{left:71,top:668}}>TRAINING: AUSSPRACHE</div>
   {text(365,675,105,'Vokal „ö“','naVokal naNw')}
   <div className="naRuleP" style={{left:434,top:687,width:281}}/>
-  {audio('assets/ab-cd2-track38.mp3',26,723,'2 38')}
+  {audio('assets/ab-cd2-track38.mp3',26,723,'2 38','1')}
   {title('1',68,726,330,'Wann hören Sie „ö“? Kreuzen Sie an.','naRB naNw naS15')}
   {text(124,760,40,'1. Wort','naColH naNw')}{text(179,760,40,'2. Wort','naColH naNw')}
   {[0,1,2,3,4,5].map(i=><span key={i}>
@@ -274,7 +274,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(416,799,14,'c','naBookSerif naBk87')}{text(435,796,120,'Fan','naBookSerif naBk87 naNw')}{text(435,814,120,'Föhn','naBookSerif naBk87 naNw')}{text(435,834,180,'Ein Föhn vom Fan','naBookSerif naBk87 naNw')}
   {text(416,863,14,'d','naBookSerif naBk87')}{text(435,863,120,'Kellner','naBookSerif naBk87 naNw')}{text(435,883,120,'Köln','naBookSerif naBk87 naNw')}{text(435,902,330,'Ein Kölner Kellner ist ein Kellner aus Köln.','naBookSerif naBk87 naNw')}
   {text(416,935,14,'e','naBookSerif naBk87')}{text(435,932,120,'sonnig','naBookSerif naBk87 naNw')}{text(435,951,120,'bewölkt','naBookSerif naBk87 naNw')}{text(435,970,300,'im Norden sonnig, im Osten bewölkt','naBookSerif naBk87 naNw')}
-  {audio('assets/ab-cd2-track39.mp3',26,918,'2 39')}
+  {audio('assets/ab-cd2-track39.mp3',26,918,'2 39','2')}
   {title('2',68,921,400,'Hören Sie und sprechen Sie dann.','naRB naNw naS15')}
   {text(101,954,14,'a','naBookSerif naBk87')}{text(120,954,120,'Wetter','naBookSerif naBk87 naNw')}{text(114,971,120,'Wort','naBookSerif naBk87 naNw')}{text(121,989,200,'macht: Wetterwörter','naBookSerif naBk87 naNw')}
   {art('modul-tab',739,1047,59,17)}
@@ -482,7 +482,7 @@ export function NativeAB12L23({page}:{page:string}){
   {kb(32,523,'KB 3')}
   <div className="naSide naSideB" style={{left:56,top:576}}>WÖRTER</div>
   {title('6',55,518,640,'Was feiern die Personen?','naRB naNw')}
-  {audio('assets/ab-cd2-track44.mp3',17,546,'2 44')}
+  {audio('assets/ab-cd2-track44.mp3',17,546,'2 44','6')}
   {text(85,549,16,'a','naLet6')}{text(110,549,230,'Hören Sie und nummerieren Sie.','naBookSerif naNw')}
   {field('91-6a-ostern',110,576,18,'6 a Ostern Nummer','naFieldBlank naCirc91')}
   {text(128,576,60,'Ostern','naBookSerif naNw')}
@@ -666,7 +666,7 @@ export function NativeAB12L23({page}:{page:string}){
   <div className="naTrainHead naTrainHead93" style={{left:74,top:634}}>TRAINING: AUSSPRACHE</div>
   {text(367,640,110,'Neueinsatz','naNeu93 naNw')}
   <div className="naRuleP" style={{left:449,top:655,width:268,background:'#ec7724'}}/>
-  {audio('assets/ab-cd2-track45.mp3',26,681,'2 45')}
+  {audio('assets/ab-cd2-track45.mp3',26,681,'2 45','1')}
   {title('1',72,685,330,'Hören Sie und sprechen Sie nach.','naRB naNw')}
   {text(105,707,220,'Achten Sie auf die Pause!','naInst93 naNw')}
   {text(105,737,14,'a','naBookSerif')}{text(123,737,330,'April – im | April','naBookSerif naNw')}
@@ -694,9 +694,9 @@ export function NativeAB12L23({page}:{page:string}){
   {text(505,814,140,'weihungsparty','naBookSerif naNw')}
   {text(487,833,14,'c','naBookSerif')}{text(505,833,260,'zuosternbekommtihrkleinegeschenke','naBookSerif naNw')}
   {text(487,852,14,'d','naBookSerif')}{text(505,852,260,'meinefreundinhateinenfreundinulm','naBookSerif naNw')}
-  {audio('assets/ab-cd2-track46.mp3',444,888,'2 46')}
+  {audio('assets/ab-cd2-track46.mp3',444,888,'2 46','2')}
   {text(488,892,250,'Hören Sie und vergleichen Sie.','naInst93 naNw')}
-  {audio('assets/ab-cd2-track47.mp3',414,933,'2 47')}
+  {audio('assets/ab-cd2-track47.mp3',414,933,'2 47','4')}
   {title('4',454,937,270,'Zungenbrecher: Hören Sie.','naRB naNw')}
   {text(488,970,280,'In Ulm und um Ulm und um Ulm herum.','naBookSerif naZung93 naNw')}
   {text(487,998,270,'Sprechen Sie: zuerst langsam und dann','naInst93b naNw')}
