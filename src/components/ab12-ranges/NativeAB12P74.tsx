@@ -3,7 +3,7 @@ import {AB12Canvas,AB12Helpers} from '../ab12-shared';
 const DOT_X=[662,691,721];
 const DOT_LBL=['gut','mittel','schwach'];
 
-function P74(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,modTab,rect}=h;const D='naDroid74';
+function P74(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,modTab,rect,check}=h;const D='naDroid74';
  const conf=(id:string,y:number)=><>{DOT_X.map((x,i)=>dot(id,''+(i+1),x,y,'Selbsteinschätzung '+id+' '+DOT_LBL[i]))}</>;
  return <>
   {ln(90,61,330,25,'SELBSTEINSCHÄTZUNG',{cls:'naHdr74'})}
@@ -23,7 +23,7 @@ function P74(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,modTab,rect}=h;
   {ln(266,185,59,13.5,'und keine',{cls:D})}
   {rule(329,197,88)}{field('p74-s1-3',329,180,89,'1 und keine','naFieldBlank')}
   {ln(420,185,6,13.5,'.',{cls:D})}
-  {art('1',439,129,95,85)}
+  {art('1',439,129,95,85)}{check('s1',640,182,{'p74-s1-1':'dick','p74-s1-2':'Bart','p74-s1-3':'Brille'})}
 
   {/* 2: erstaunt reagieren */}
   {ln(89,221,142,13.5,'… erstaunt reagieren:',{b:1,cls:D})}
@@ -42,7 +42,7 @@ function P74(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,modTab,rect}=h;
   {rule(131,289,47)}{field('p74-s2-2',131,272,47,'2 A','naFieldBlank')}
   {ln(184,277,5,13.5,'k',{cls:D})}
   {rule(191,289,66)}{field('p74-s2-3',191,272,66,'2 k','naFieldBlank')}
-  {ln(259,277,138,13.5,"! Das gibt's doch nicht.",{cls:D})}
+  {ln(259,277,138,13.5,"! Das gibt's doch nicht.",{cls:D})}{check('s2',640,270,{'p74-s2-1':'cht|echt','p74-s2-2':'ch|ach','p74-s2-3':'omm|komm'})}
 
   {/* 3: Aufforderungen und Bitten formulieren */}
   {ln(89,312,280,13.5,'… Aufforderungen und Bitten formulieren:',{b:1,cls:D})}
@@ -54,7 +54,7 @@ function P74(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,modTab,rect}=h;
   {ln(89,349,96,13.5,'Lara und Simon,',{cls:D})}
   {rule(191,361,412)}{field('p74-s3-2',191,344,412,'3 Lara und Simon','naFieldBlank')}
   {ln(604,349,5,13.5,'!',{cls:D})}
-  {art('auff',612,301,45,84)}
+  {art('auff',612,301,45,84)}{check('s3',700,340,{'p74-s3-1':'trockne bitte das Geschirr ab','p74-s3-2':'räumt bitte die Spülmaschine aus'})}
 
   {/* 4: über Regeln sprechen */}
   {ln(89,385,161,13.5,'… über Regeln sprechen:',{b:1,cls:D})}
@@ -77,7 +77,7 @@ function P74(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,modTab,rect}=h;
   {rule(166,474,118)}{field('p74-s4-4',166,457,118,'4 Das ist nicht','naFieldBlank')}
   {ln(286,462,6,13.5,'.',{cls:D})}
   {art('sign-eat',523,384,46,63)}
-  {art('sign-phone',476,434,43,54)}
+  {art('sign-phone',476,434,43,54)}{check('s4',640,450,{'p74-s4-1a':'darf','p74-s4-1b':'nicht essen','p74-s4-2':'verboten','p74-s4-3a':'darf','p74-s4-3b':'nicht telefonieren','p74-s4-4':'erlaubt'})}
 
   {/* 5: meine Meinung sagen */}
   {ln(89,498,163,13.5,'… meine Meinung sagen:',{b:1,cls:D})}
@@ -94,7 +94,7 @@ function P74(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,modTab,rect}=h;
   {rule(117,564,137)}{field('p74-s5-3',117,547,137,'5 Ich v','naFieldBlank')}
   {ln(258,551,214,13.5,'das nicht. Das kann doch nicht so s',{cls:D})}
   {rule(469,564,104)}{field('p74-s5-4',469,547,104,'5 so s','naFieldBlank')}
-  {ln(580,551,31,13.5,'sein.',{cls:D})}
+  {ln(580,551,31,13.5,'sein.',{cls:D})}{check('s5',640,553,{'p74-s5-1':'in Ordnung|richtig|okay|gut','p74-s5-2':'gar nicht gut|nicht gut|falsch|schlecht','p74-s5-3':'erstehe','p74-s5-4':'chlimm'})}
 
   {/* Ich kenne */}
   {ln(89,612,92,14,'Ich kenne …',{b:1,c:'#18408f',cls:D})}
