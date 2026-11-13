@@ -128,13 +128,13 @@ export function NativeAB12P31to46({page}:{page:string}){
   {kb(78,945,'KB 7')}
   {title('8',130,937,760,'Im Chatroom. Ordnen Sie zu.','naGB')}
   <div className="naSide" style={{left:75,top:975}}>STRUKTUREN</div>
-  {stext(140,980,28,'am',{color:'#2a4f9e'},'naOpt naNw')}
+  {stext(140,980,28,'am',{color:'#2a4f9e',textDecoration:'line-through'},'naOpt naSmall naNw')}
   {text(173,980,10,'|','naOpt naNw')}
   {stext(187,980,24,'um',{color:'#7a8f0a'},'naOpt naNw')}
   {text(216,980,10,'|','naOpt naNw')}
   {stext(226,980,40,'nach',{color:'#7a8f0a'},'naOpt naNw')}
   {text(268,980,10,'|','naOpt naNw')}
-  {stext(278,980,28,'am',{color:'#2a4f9e'},'naOpt naNw')}
+  {stext(278,980,28,'am',{color:'#2a4f9e'},'naOpt naSmall naNw')}
   {text(308,980,10,'|','naOpt naNw')}
   {stext(316,980,26,'vor',{color:'#7a8f0a'},'naOpt naNw')}
   {text(348,980,10,'|','naOpt naNw')}
@@ -147,7 +147,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {stext(153,1056,60,'siri99:',{color:'#6e7fa0',fontWeight:'bold'},'naSmall naNw')}
   {text(242,1059,185,'Hi Jule, was machst du','naSmall naNw')}
   {stext(430,1062,22,'am',{color:'#2a4f9e'},'naOpt naNw')}
-  {text(456,1059,20,'(a)','naSmall naNw')}
+  {text(462,1059,20,'(a)','naSmall naNw')}
   {text(485,1059,288,'Freitag? Sehen wir uns mal wieder?','naSmall naNw')}
   {stext(153,1085,65,'Jule_m:',{color:'#b03a2e',fontWeight:'bold'},'naSmall naNw')}
   {text(241,1085,226,'Gern. Am Freitag arbeite ich','naSmall naNw')}
@@ -358,8 +358,8 @@ export function NativeAB12P31to46({page}:{page:string}){
   <div className="naSide" style={{left:88,top:407,color:'#94a3c0'}}>WÖRTER</div>
   {text(168,402,334,'a Das Radio funktioniert nicht, es ist','naNw')}
   {text(508,402,10,'k','naNw')}
-  {stext(521,408,85,'aputt',{fontSize:13.5,lineHeight:'14px'},'naHand naD19 naNw')}
-  {stext(600,408,4,'.',{fontSize:13.5,lineHeight:'14px'},'naHand naD19 naNw')}
+  {stext(523,408,85,'aputt',{fontSize:13.5,lineHeight:'14px'},'naHand naD19 naNw')}
+  {stext(580,408,4,'.',{fontSize:13.5,lineHeight:'14px'},'naHand naD19 naNw')}
   {text(167,428,350,'b Er kommt immer zu spät, er ist nie p','naNw')}
   {text(666,428,4,'.','naNw')}
   {text(168,455,351,'c Der Deutschkurs ist nicht langweilig,','naNw')}
@@ -385,9 +385,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(191,645,170,'Und was machst du','naNw')}
   {text(452,645,56,'(b) der','naNw')}
   {stext(601,645,16,'■',{color:'#1a3f9e'},'naNw')}
-  {text(626,645,32,'Wie','naNw')}
-  {text(665,645,83,'hat es dir','naNw')}
-  {text(753,645,80,'gefallen?','naNw')}
+  {text(626,645,210,'Wie hat es dir gefallen?','naNw')}
   {text(190,672,107,'Ausbildung?','naNw')}
   {stext(601,672,16,'▲',{color:'#2eb75b'},'naNw')}
   {text(627,672,113,'Es war super.','naNw')}
@@ -395,8 +393,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {stext(166,698,16,'▲',{color:'#2eb75b'},'naNw')}
   {text(191,698,72,'Ich gehe','naNw')}
   {text(354,698,168,'(c) zwei Jahre nach','naNw')}
-  {text(626,698,124,'Monaten habe','naNw')}
-  {text(757,698,151,'ich wirklich sehr','naNw')}
+  {text(626,698,282,'Monaten habe ich wirklich sehr','naNw')}
   {text(191,725,69,'London.','naNw')}
   {text(625,725,219,'gut Englisch gesprochen.','naNw')}
   {stext(895,725,92,'_/4 Punkte',{fontStyle:'italic',fontSize:15,color:'#7a7a72',fontFamily:'Georgia'},'naNw')}
@@ -453,10 +450,10 @@ export function NativeAB12P31to46({page}:{page:string}){
   {field('p34-2b',520,425,140,'2 b: p...')}
   {field('p34-2c',584,451,100,'2 c: l...')}
   {field('p34-2d',464,476,56,'2 d: k...')}
-  {field('p34-3b',366,640,80,'3 (b)')}
-  {field('p34-3c',270,693,80,'3 (c)')}
-  {field('p34-3d',655,617,80,'3 (d)')}
-  {field('p34-3e',747,671,80,'3 (e)')}
+  {field('p34-3b',380,640,66,'3 (b)')}
+  {field('p34-3c',284,693,66,'3 (c)')}
+  {field('p34-3d',668,617,66,'3 (d)')}
+  {field('p34-3e',752,671,73,'3 (e)')}
   {dot('r4a','einer',403,821,'4a einer')}
   {dot('r4a','einen',493,821,'4a einen')}
   {dot('r4a','einem',586,821,'4a einem')}
