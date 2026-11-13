@@ -56,6 +56,8 @@
 .naCanvas .naTestHead{position:absolute;font:400 24px 'Times New Roman',serif;letter-spacing:4px;color:#555;white-space:nowrap}
 .naCanvas .naSideT{position:absolute;font:11px FiraSans,sans-serif;letter-spacing:1.5px;writing-mode:vertical-rl;transform:rotate(180deg);color:#717b9c;white-space:nowrap}
 .naCanvas .naText.naCue{font-family:DroidSerif,Georgia,serif;font-size:11px;color:#444}
+.naCanvas .naText.naFootL23{font-family:DroidSerif,Georgia,serif!important;color:#4b4b4d;letter-spacing:0!important}
+.naCanvas .naText.naFootL23B{font-family:DroidSerif,Georgia,serif!important;font-weight:400!important;color:#4b4b4d;letter-spacing:0!important}
 .naCanvas .naText.naFoot88{font-family:DroidSerif,Georgia,serif;font-size:12px;color:#777}
 .naCanvas .naPts{position:absolute;font:10px FiraSans,sans-serif;letter-spacing:1px;color:#333;text-transform:uppercase;white-space:nowrap}
 .naCanvas .naBltSq{position:absolute;width:9px;height:9px;border-radius:2px}
