@@ -9,6 +9,7 @@ import {loadScanPages, scanData} from '../scan-data/registry';
 const loaders = {
   NativeAB12P31to46: () => import('../native-ab12/NativeAB12P31to46').then(m => m.NativeAB12P31to46),
   NativeAB12L23: () => import('../native-ab12-l2324/NativeAB12L23').then(m => m.NativeAB12L23),
+  NativeAB12L24: () => import('../native-ab12-l2324/NativeAB12L24').then(m => m.NativeAB12L24),
   NativeAB11Test88: () => import('../native-ab11/NativeAB11Test88').then(m => m.NativeAB11Test88),
   AB11LineMatching88: () => import('../exercises/AB11LineMatching88').then(m => m.AB11LineMatching88),
   NativeAB11Lesson10Start: () => import('../native-ab11/NativeAB11Lesson10Start').then(m => m.NativeAB11Lesson10Start),
@@ -40,8 +41,13 @@ const loaders = {
   NativeAB12P70: () => import('./ab12-ranges/NativeAB12P70').then(m => m.NativeAB12P70),
   NativeAB12P71: () => import('./ab12-ranges/NativeAB12P71').then(m => m.NativeAB12P71),
   NativeAB12P72: () => import('./ab12-ranges/NativeAB12P72').then(m => m.NativeAB12P72),
+  NativeAB12P73: () => import('./ab12-ranges/NativeAB12P73').then(m => m.NativeAB12P73),
+  NativeAB12P74: () => import('./ab12-ranges/NativeAB12P74').then(m => m.NativeAB12P74),
   NativeAB12P18_20: () => import('../native-ab12/NativeAB12P18_20').then(m => m.NativeAB12P18_20),
   NativeAB12P21_24: () => import('../native-ab12/NativeAB12P21_24').then(m => m.NativeAB12P21_24),
+  NativeAB12P26: () => import('../native-ab12/NativeAB12P26').then(m => m.NativeAB12P26),
+  NativeAB12P27: () => import('../native-ab12/NativeAB12P27').then(m => m.NativeAB12P27),
+  NativeAB12P28: () => import('../native-ab12/NativeAB12P28').then(m => m.NativeAB12P28),
   NativeAB12Lesson13: () => import('../native-ab12/NativeAB12Lesson13').then(m => m.NativeAB12Lesson13),
   NativeAB12Range: () => import('../native-ab12/NativeAB12Range').then(m => m.NativeAB12Range),
 };
@@ -70,7 +76,9 @@ function select(tag: string, attrs: MarkupAttrs) {
   if(tag === 'HybridScan' && attrs.book==='ab-a12' && rangePages.has(String(attrs.page)))return pick('NativeAB12Range',{page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a12' && Number(attrs.page)>=31 && Number(attrs.page)<=46 && !rangePages.has(String(attrs.page)))return pick('NativeAB12P31to46',{page:String(attrs.page)});
   if(tag === 'NativeAB12L23')return pick('NativeAB12L23',{page:attrs.page});
-  if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['86','87','88','90','91'].includes(String(attrs.page)))return pick('NativeAB12L23',{page:String(attrs.page)});
+  if(tag === 'NativeAB12L24')return pick('NativeAB12L24',{page:attrs.page});
+  if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['96','97','98'].includes(String(attrs.page)))return pick('NativeAB12L24',{page:String(attrs.page)});
+  if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['86','87','88','90','91','92','93','94'].includes(String(attrs.page)))return pick('NativeAB12L23',{page:String(attrs.page)});
   if(tag === 'NativeAB12')return pick('NativeAB12',{page:attrs.page});
   if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['66'].includes(String(attrs.page)))return pick('NativeAB12P66to71',{page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['67'].includes(String(attrs.page)))return pick('NativeAB12P67',{page:String(attrs.page)});
@@ -79,9 +87,14 @@ function select(tag: string, attrs: MarkupAttrs) {
   if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['70'].includes(String(attrs.page)))return pick('NativeAB12P70',{page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['71'].includes(String(attrs.page)))return pick('NativeAB12P71',{page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['72'].includes(String(attrs.page)))return pick('NativeAB12P72',{page:String(attrs.page)});
+  if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['73'].includes(String(attrs.page)))return pick('NativeAB12P73',{page:String(attrs.page)});
+  if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['74'].includes(String(attrs.page)))return pick('NativeAB12P74',{page:String(attrs.page)});
   if(tag === 'NativeAB12L13')return pick('NativeAB12Lesson13',{page:attrs.page});
   if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['18','19','20'].includes(String(attrs.page)))return pick('NativeAB12P18_20',{page:String(attrs.page)});
-  if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['21','22'].includes(String(attrs.page)))return pick('NativeAB12P21_24',{page:String(attrs.page)});
+  if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['21','22','24','25'].includes(String(attrs.page)))return pick('NativeAB12P21_24',{page:String(attrs.page)});
+  if(tag === 'HybridScan' && attrs.book==='ab-a12' && String(attrs.page)==='26')return pick('NativeAB12P26',{page:'26'});
+  if(tag === 'HybridScan' && attrs.book==='ab-a12' && String(attrs.page)==='27')return pick('NativeAB12P27',{page:'27'});
+  if(tag === 'HybridScan' && attrs.book==='ab-a12' && String(attrs.page)==='28')return pick('NativeAB12P28',{page:'28'});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['57','58','59'].includes(String(attrs.page)))return pick('NativeAB11Lesson7Close',{page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['38','39','40'].includes(String(attrs.page)))return pick('NativeAB11Next45',{page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['30','31','32','33','34','35','36','37'].includes(String(attrs.page)))return pick('NativeAB11Lessons45',{page:String(attrs.page)});

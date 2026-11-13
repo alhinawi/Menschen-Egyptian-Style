@@ -1,4 +1,5 @@
 import {CheckButton} from './CheckButton';
+import {LinedArea} from './LinedArea';
 import {PageImage} from './PageImage';
 import {usePageReset} from '../exercises/usePageReset';
 import {useLayoutEffect,useRef,useState} from 'react';
@@ -30,7 +31,7 @@ export function NativeAB12({page}:{page:string}){
  const hand=(x:number,y:number,w:number,t:string)=><div className="naText naHand" style={{left:x,top:y,width:w}}><Words text={t}/></div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}${SCP('.naTitle')}{font-family:FiraSans,sans-serif!important;letter-spacing:0!important;font-size:21px!important}${SCP('.naText')},${SCP('.naBold')},${SCP('.naLet')},${SCP('.naDlg')}{font-family:DroidSerif,Georgia,serif!important;font-size:20px!important;letter-spacing:-0.65px}${SCP('.naField')}{font-family:DroidSerif,Georgia,serif!important;font-size:19px!important;letter-spacing:-0.65px}${SCP('.naText.naS20')}{font-size:18px!important}${SCP('.naSmall')}{font-size:16.5px!important}${SCP('.naD19')}{font-size:17.5px!important}${SCP('.naUrl')}{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}`}</style><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}${SCP('.naTitle')}{font-family:FiraSans,sans-serif!important;letter-spacing:0!important;font-size:21px!important}${SCP('.naText')},${SCP('.naBold')},${SCP('.naLet')},${SCP('.naDlg')}{font-family:DroidSerif,Georgia,serif!important;font-size:20px!important;letter-spacing:-0.65px}${SCP('.naField')}{font-family:DroidSerif,Georgia,serif!important;font-size:19px!important;letter-spacing:-0.65px}${SCP('.naText.naS20')}{font-size:18px!important}${SCP('.naSmall')}{font-size:16.5px!important}${SCP('.naD19')}{font-size:17.5px!important}${SCP('.naUrl')}{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='52'] .naText,[data-native-ab12='52'] .naBold,[data-native-ab12='52'] .naLet,[data-native-ab12='52'] .naDlg,[data-native-ab12='52'] .naField{letter-spacing:0!important}[data-native-ab12='52'] .naTitle{font-size:22px!important}[data-native-ab12='52'] .naFoot52{font-size:17px!important;color:#202020!important}[data-native-ab12='52'] .naTitle.naRB b{top:-3px}`}</style><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='89'&&<>
   {art('lesson-tab',738,18,62,75)}
   {text(75,63,300,'LERNWORTSCHATZ','naHeadline')}
@@ -107,7 +108,7 @@ export function NativeAB12({page}:{page:string}){
   {art('handwriting',360,605,265,60)}
   {art('strip',665,95,140,915)}
   {title('2',78,686,540,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naRB naNw')}
-  {[713,732,752,772,791,811,830,849,869,888,908,927,947,966,986,1005].map((y,i)=>field('89-2-'+i,102,y,525,'Notizzeile '+(i+1)))}
+  <LinedArea id="89-2-text" values={values} set={set} x={102} tops={[713, 732, 752, 772, 791, 811, 830, 849, 869, 888, 908, 927, 947, 966, 986, 1005]} w={525} boxH={20} label="Notizen" legacyIds={["89-2-0", "89-2-1", "89-2-2", "89-2-3", "89-2-4", "89-2-5", "89-2-6", "89-2-7", "89-2-8", "89-2-9", "89-2-10", "89-2-11", "89-2-12", "89-2-13", "89-2-14", "89-2-15"]}/>
   {text(598,1046,150,'neunundachtzig  |  89','naFooter')}
   {art('modul-tab',722,1038,50,24)}
  </>}
@@ -117,7 +118,7 @@ export function NativeAB12({page}:{page:string}){
   {text(126,158,480,'Wählen Sie eine Aufgabe zu Lektion','naSec naNw')}
   {gl(508,161,'17','#74c655')}
   <div className="naGRule" style={{left:540,top:186,width:438,height:3,background:'#b5d8b2'}}/>
-  {art('mag1',70,216,56,52)}
+  {art('mag1',70,216,54,52)}
   {title('1',125,225,780,'Lesen Sie noch einmal Ihre Pläne im Kursbuch auf Seite 31 (Aufgabe 6).','naRB naNw')}
   {text(165,254,430,'Wann wollen Sie was machen? Schreiben Sie.','naD20')}
   {text(167,291,340,'Im August / Im Sommer ...','naD20')}
@@ -128,7 +129,7 @@ export function NativeAB12({page}:{page:string}){
   {field('52-t1-a1',230,371,770,'Eigener Satz 1','naFieldBlank')}
   {field('52-t1-a2',167,404,833,'Eigener Satz 2','naFieldBlank')}
   {field('52-t1-a3',167,429,820,'Eigener Satz 3','naFieldBlank')}
-  {art('pen1',72,448,56,50)}
+  {art('pen1',72,448,49,50)}
   {title('2',122,459,830,'Sie haben 100 000 € gewonnen. Was machen Sie? Schreiben Sie.','naRB naNw')}
   {text(166,498,140,'Reisen?','naD20')}
   {text(165,523,140,'Hobbys?','naD20')}
@@ -142,13 +143,13 @@ export function NativeAB12({page}:{page:string}){
   {text(120,689,480,'Wählen Sie eine Aufgabe zu Lektion','naSec naNw')}
   {gl(502,692,'18','#5a9d97')}
   <div className="naGRule" style={{left:534,top:717,width:432,height:3,background:'#a0c4ca'}}/>
-  {art('mag2',70,744,56,52)}
+  {art('mag2',70,744,48,52)}
   {title('1',119,756,850,'Lesen Sie noch einmal den Ratgeber im Kursbuch auf Seite 35 und notieren Sie.','naRB naNw')}
   {text(162,795,295,'Diese Körperteile stehen im Text:','naD20 naNw')}
   {field('52-t3-c1',456,793,510,'Körperteile im Text')}
   {text(161,821,350,'Diese Körperteile stehen nicht im Text:','naD20 naNw')}
   {field('52-t3-c2',510,820,456,'Körperteile nicht im Text')}
-  {art('pen2',70,872,56,52)}
+  {art('pen2',70,872,46,52)}
   {title('2',117,884,830,'Was machen Sie gegen Stress? Machen Sie Notizen und schreiben\nSie dann einen Ratgeber.','naRB naPre')}
   {text(159,949,170,'Gegen Stress hilft:','naD19 naNw')}
   {field('52-t4-d1',322,950,644,'Gegen Stress hilft')}
@@ -157,7 +158,7 @@ export function NativeAB12({page}:{page:string}){
   {field('52-t4-d3',167,1132,833,'Eigener Ratgeber 2','naFieldBlank')}
   {field('52-t4-d4',167,1164,833,'Eigener Ratgeber 3','naFieldBlank')}
   {art('modul',0,1388,72,24)}
-  {text(96,1388,175,'52 \u00a0|\u00a0 zweiundfünfzig','naFooter naFoot52')}
+  {text(96,1388,220,'52 \u00a0|\u00a0 zweiundfünfzig','naFooter naFoot52')}
  </>}
  {page==='83'&&<>
   {art('lesson-tab',723,25,78,97)}
@@ -206,7 +207,7 @@ export function NativeAB12({page}:{page:string}){
   {art('scissors',414,608,137,85)}
   {art('strip',648,100,157,920)}
   {title('2',65,737,560,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naRB naNw')}
-  {[763,783,802,822,841,861,880,900,919,939,958,977,997].map((y,i)=>field('83-2-'+i,98,y,550,'Notizzeile '+(i+1)))}
+  <LinedArea id="83-2-text" values={values} set={set} x={98} tops={[763, 783, 802, 822, 841, 861, 880, 900, 919, 939, 958, 977, 997]} w={550} boxH={20} label="Notizen" legacyIds={["83-2-0", "83-2-1", "83-2-2", "83-2-3", "83-2-4", "83-2-5", "83-2-6", "83-2-7", "83-2-8", "83-2-9", "83-2-10", "83-2-11", "83-2-12"]}/>
   {text(600,1049,135,'dreiundachtzig \u00a0|\u00a0 83','naFooter')}
   {art('modul-tab',738,1048,66,26)}
  </>}
@@ -344,7 +345,7 @@ export function NativeAB12({page}:{page:string}){
   {text(267,835,220,'Machen Sie Wortbilder.','naSmall')}
   {art('handwriting',470,748,320,130)}
   {title('2',107,916,700,'Welche Wörter möchten Sie noch lernen? Notieren Sie.')}
-  {[0,1,2,3,4,5,6,7,8,9,10,11,12].map(i=>field('59-2-'+i,155,955+i*26,600,'Notizzeile '+(i+1)))}
+  <LinedArea id="59-2-text" values={values} set={set} x={155} tops={[955, 981, 1007, 1033, 1059, 1085, 1111, 1137, 1163, 1189, 1215, 1241, 1267]} w={600} boxH={27} label="Notizen" legacyIds={["59-2-0", "59-2-1", "59-2-2", "59-2-3", "59-2-4", "59-2-5", "59-2-6", "59-2-7", "59-2-8", "59-2-9", "59-2-10", "59-2-11", "59-2-12"]}/>
   {text(811,1384,160,'neunundfünfzig  |  59','naFooter')}
   {art('modul-tab',1008,1384,64,30)}
  </>}
@@ -396,7 +397,7 @@ export function NativeAB12({page}:{page:string}){
   {text(172,823,400,'Wie viele Wörter kennen Sie?','naSmall')}
   {art('handwriting',600,743,125,52)}
   {title('2',98,895,760,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naOB')}
-  {[931,957,983,1009,1034,1060,1086,1111,1137,1163,1189,1215,1240,1266,1292,1317].map((y,i)=>field('23-2-'+(i+1),150,y,545,'Notizzeile '+(i+1)))}
+  <LinedArea id="23-2-text" values={values} set={set} x={150} tops={[931, 957, 983, 1009, 1034, 1060, 1086, 1111, 1137, 1163, 1189, 1215, 1240, 1266, 1292, 1317]} w={545} boxH={27} label="Notizen" legacyIds={["23-2-1", "23-2-2", "23-2-3", "23-2-4", "23-2-5", "23-2-6", "23-2-7", "23-2-8", "23-2-9", "23-2-10", "23-2-11", "23-2-12", "23-2-13", "23-2-14", "23-2-15", "23-2-16"]}/>
   {art('strip',910,132,145,1218)}
   {text(793,1384,195,'dreiundzwanzig \u00a0|\u00a0 23','naFooter')}
   {art('modul-tab',999,1379,67,27)}
@@ -458,7 +459,7 @@ export function NativeAB12({page}:{page:string}){
   {text(435,611,140,'Termine auf Deutsch.','naSmall')}
   {art('handwriting',411,645,248,58)}
   {title('2',80,791,500,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naFB')}
-  {[821,841,860,879,899,919,938,957,977,997].map((y,i)=>field('95-2-'+(i+1),109,y,545,'Notizzeile '+(i+1)))}
+  <LinedArea id="95-2-text" values={values} set={set} x={109} tops={[821, 841, 860, 879, 899, 919, 938, 957, 977, 997]} w={545} boxH={20} label="Notizen" legacyIds={["95-2-1", "95-2-2", "95-2-3", "95-2-4", "95-2-5", "95-2-6", "95-2-7", "95-2-8", "95-2-9", "95-2-10"]}/>
   {art('strip',648,135,160,865)}
   {text(596,1047,140,'fünfundneunzig \u00a0|\u00a0 95','naFooter')}
   {art('modul-tab',745,1050,53,18)}
@@ -515,7 +516,7 @@ export function NativeAB12({page}:{page:string}){
   {text(347,867,255,'oder ähnlicher Bedeutung.','naSmall')}
   {art('handwriting',640,805,155,40)}
   {title('2',98,921,760,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naPB')}
-  {[956,982,1008,1034,1060,1085,1111,1137,1163,1189,1215,1240,1266,1292,1317].map((y,i)=>field('65-2-'+(i+1),140,y,730,'Notizzeile '+(i+1)))}
+  <LinedArea id="65-2-text" values={values} set={set} x={140} tops={[956, 982, 1008, 1034, 1060, 1085, 1111, 1137, 1163, 1189, 1215, 1240, 1266, 1292, 1317]} w={730} boxH={27} label="Notizen" legacyIds={["65-2-1", "65-2-2", "65-2-3", "65-2-4", "65-2-5", "65-2-6", "65-2-7", "65-2-8", "65-2-9", "65-2-10", "65-2-11", "65-2-12", "65-2-13", "65-2-14", "65-2-15"]}/>
   {art('strip',908,128,164,1243)}
   {text(803,1384,180,'fünfundsechzig \u00a0|\u00a0 65','naFooter')}
   {art('modul-tab',992,1388,80,27)}

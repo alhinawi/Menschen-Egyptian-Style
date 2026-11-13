@@ -553,5 +553,224 @@ export function NativeAB12L23({page}:{page:string}){
   {art('modul8-tab',742,1043,65,25)}
   <div className="naText naFooter" style={{left:420,top:1045,width:310,textAlign:'right'}}>einundneunzig&nbsp;&nbsp;|&nbsp;&nbsp;91</div>
  </>}
+ {page==='92'&&<>
+  <div className="naBasisL" style={{left:88,top:59}}>BASISTRAINING</div>
+  <div className="naRuleP" style={{left:274,top:82,width:454,background:'#e6742a'}}/>
+  {kb(55,124,'KB 4')}
+  <div className="naSide naSideB" style={{left:60,top:160}}>KOMMUNIKATION</div>
+  {title('8',84,119,640,'Notieren Sie die passenden Glückwünsche.','naRB naNw')}
+  {text(117,155,16,'a','naBookSerif')}{text(135,152,260,'Max wird morgen endlich 18 Jahre alt.','naBookSerif naEx4t naNw')}
+  {rule(558,168,168)}{art('ex8a',555,148,137,24)}
+  {text(117,173,16,'b','naBookSerif')}{text(135,171,385,'Sie treffen einen Bekannten am 2. Januar auf der Straße.','naBookSerif naEx4t naNw')}
+  {field('92-8b',558,167,168,'8 b Frohes neues Jahr')}
+  {text(117,193,16,'c','naBookSerif')}{text(135,191,365,'Ihr Bruder hat seine Führerscheinprüfung bestanden.','naBookSerif naEx4t naNw')}
+  {field('92-8c',558,186,168,'8 c Gut gemacht')}
+  {text(117,212,16,'d','naBookSerif')}{text(135,210,300,'Eine Freundin geht für ein Jahr ins Ausland.','naBookSerif naEx4t naNw')}
+  {field('92-8d',558,206,168,'8 d Alles Gute')}
+  {text(117,233,16,'e','naBookSerif')}{text(135,230,410,'Sie treffen eine Nachbarin am 26. Dezember im Treppenhaus.','naBookSerif naEx4t naNw')}
+  {field('92-8e',558,225,168,'8 e Frohe Weihnachten')}
+  {check('92-8',736,236,{'92-8b':'Frohes neues Jahr.|Frohes neues Jahr','92-8c':'Gut gemacht.|Gut gemacht','92-8d':'Alles Gute|Alles Gute.','92-8e':'Frohe Weihnachten.|Frohe Weihnachten'})}
+  {kb(55,279,'KB 4')}
+  <div className="naText naTitle naRB" style={{left:83,top:275}}><b>9</b></div>
+  <div className="naText naTitle naRB naNw" style={{left:117,top:275,width:540}}><Words text="Schreiben Sie eigene Aufgaben wie in "/><span className="naBlue">8</span><Words text=" und tauschen Sie mit Ihrer"/></div>
+  <div className="naText naTitle naRB naNw" style={{left:117,top:294,width:300}}><Words text="Partnerin / Ihrem Partner."/></div>
+  <div className="naDotP92" style={{left:44,top:301,background:'#02acf2'}}/>
+  <div className="naDotP92" style={{left:63,top:301,background:'#0088c1'}}/>
+  {kb(55,347,'KB 5')}
+  <div className="naSide naSideB" style={{left:60,top:385}}>STRUKTUREN</div>
+  {title('10',83,343,640,'Was passt? Ordnen Sie zu.','naRB naNw')}
+  <div id="ex10-left-a">{text(116,377,16,'a','naBookSerif')}{text(135,376,270,'Natascha und Ella singen und schreiben','naBookSerif naEx4t naNw')}{text(135,393,50,'Lieder.','naBookSerif naEx4t naNw')}</div>
+  <div id="ex10-left-b">{text(116,414,16,'b','naBookSerif')}{text(135,413,140,'Klaus hat kein Geld.','naBookSerif naEx4t naNw')}</div>
+  <div id="ex10-left-c">{text(116,437,16,'c','naBookSerif')}{text(135,435,230,'Meine Tochter fährt gern Motorrad.','naBookSerif naEx4t naNw')}</div>
+  <div id="ex10-left-d">{text(116,456,16,'d','naBookSerif')}{text(135,454,280,'Am Freitag spielt unsere Lieblingsband in','naBookSerif naEx4t naNw')}{text(134,473,250,'Berlin und es gibt keine Tickets mehr.','naBookSerif naEx4t naNw')}</div>
+  <div id="ex10-right-1">{text(485,366,220,'Ich würde ihr gern ein Motorrad','naBookSerif naEx10r naNw')}{text(493,385,70,'schenken.','naBookSerif naEx10r naNw')}</div>
+  <div id="ex10-right-2">{text(485,405,95,'Wie schade!','naBookSerif naEx10r naNw')}</div>
+  <div id="ex10-right-3">{text(567,405,160,'Wir würden gern zum','naBookSerif naEx10r naNw')}{text(493,424,100,'Konzert gehen.','naBookSerif naEx10r naNw')}</div>
+  <div id="ex10-right-4">{text(485,444,215,'Aber er würde gern den Führer-','naBookSerif naEx10r naNw')}{text(493,463,110,'schein machen.','naBookSerif naEx10r naNw')}</div>
+  <div id="ex10-right-5">{text(485,483,225,'Sie würden gern eine CD machen.','naBookSerif naEx10r naNw')}</div>
+  {kb(55,523,'KB 5')}
+  <div className="naSide naSideB" style={{left:48,top:560}}>STRUKTUREN</div>
+  <div className="naSide naSideB" style={{left:62,top:560}}>ENTDECKEN</div>
+  <div className="naText naTitle naRB naNw" style={{left:82,top:518,width:640}}><b>11</b><Words text="Markieren Sie die Formen von "/><span className="naIt">würd-</span><Words text=" in "/><span className="naBlue">10</span><Words text=" und ergänzen Sie die Tabelle."/></div>
+  {text(116,551,20,'Ich','naBookSerif naNw')}
+  {text(116,571,20,'Du','naBookSerif naNw')}
+  {text(236,569,60,'würdest','naBookSerif naNw')}
+  {text(116,590,62,'Er/Es/Sie','naBookSerif naNw')}
+  {text(116,610,34,'Wir','naBookSerif naNw')}
+  {text(116,629,22,'Ihr','naBookSerif naNw')}
+  {text(235,627,56,'würdet','naBookSerif naNw')}
+  <div className="naText" style={{left:415,top:550,width:1,height:118,background:'#e6e6da'}}/>
+  {text(116,649,48,'Sie/Sie','naBookSerif naNw')}
+  {field('92-11ich',241,545,125,'11 Ich würde')}
+  {field('92-11er',241,584,125,'11 Er/Es/Sie würde')}
+  {field('92-11wir',241,603,125,'11 Wir würden')}
+  {field('92-11sie',241,642,125,'11 Sie/Sie würden')}
+  {text(449,573,215,'gern den Führerschein machen.','naBookSerif naEx4t naNw')}
+  {text(449,593,150,'gern eine CD machen.','naBookSerif naEx4t naNw')}
+  {text(449,612,220,'ihr gern ein Motorrad schenken.','naBookSerif naEx4t naNw')}
+  {text(449,633,170,'gern zum Konzert gehen.','naBookSerif naEx4t naNw')}
+  {check('92-11',700,644,{'92-11ich':'würde','92-11er':'würde','92-11wir':'würden','92-11sie':'würden'})}
+  {kb(55,697,'KB 5')}
+  <div className="naSide naSideB" style={{left:60,top:718}}>STRUKTUREN</div>
+  {title('12',81,693,640,'Was sagen die Personen? Schreiben Sie.','naRB naNw')}
+  <div className="naBank" style={{left:115,top:723,width:478,height:19,background:'#f9f9df'}}/>
+  <div className="naBank88 naBank92" style={{left:119,top:725}}><Words text="im Wald wohnen "/><span className="naPipe92">|</span> <span className="naStrike92"><Words text="in den Süden fahren"/></span> <span className="naPipe92">|</span><Words text=" jeden Tag grillen "/><span className="naPipe92">|</span><Words text=" viel Geld verdienen"/></div>
+  {art('pica',215,771,161,75)}
+  {art('picb',281,884,118,76)}
+  {art('picc',585,769,128,87)}
+  {art('picd',588,876,127,84)}
+  {text(114,755,16,'a','naLet92')}{rule(113,787,130)}{rule(113,807,82)}{art('ex12a',112,758,161,54)}
+  {text(114,854,16,'b','naLet92')}{rule(113,885,130)}{rule(113,905,130)}
+  {text(439,755,16,'c','naLet92')}{rule(440,790,130)}{rule(440,810,130)}
+  {text(438,854,16,'d','naLet92')}{rule(439,887,130)}{rule(439,907,130)}
+  {art('modul8-tab',0,1044,52,20)}
+  {text(62,1049,140,'92  |  zweiundneunzig','naFooter')}
+ </>}
+ {page==='93'&&<>
+  <div className="naTrainHead naTrainHead93" style={{left:75,top:60}}>TRAINING: SCHREIBEN</div>
+  <div className="naRuleP" style={{left:343,top:82,width:452,background:'#ec7724'}}/>
+  <div className="naRedL" style={{left:728,top:26,width:69,height:59,background:'#f74d03'}}>24</div>
+  {title('1',72,117,640,'Lesen Sie die Einladung und ordnen Sie zu.','naRB naNw')}
+  <div className="naBankBlue naBank93" style={{left:109,top:152}}><Words text="Viele Grüße | Liebe Studentinnen und Studenten | Bielefeld, 15 Juni 20.."/></div>
+  {field('p93-s1a',285,185,168,'1 Ort und Datum')}
+  {field('p93-s1b',117,205,272,'1 Anrede')}
+  {text(391,220,14,',','naBookSerif naIt93')}
+  {text(114,239,290,'am 28. Juli wollen wir das Semesterende feiern.','naBookSerif naIt93 naItL1 naNw')}
+  {text(113,277,320,'Wie jedes Jahr wollen wir ein Picknick machen und na-','naBookSerif naIt93 naItL2 naNw')}
+  {text(115,297,330,'türlich viel Spaß haben. Dieses Jahr haben wir auch ein','naBookSerif naIt93 naItL3 naNw')}
+  {text(115,316,300,'Programm vorbereitet. Wir freuen uns schon sehr!','naBookSerif naIt93 naItL4 naNw')}
+  {text(113,346,320,'Wir treffen uns um 10.00 Uhr am Hauptbahnhof und','naBookSerif naIt93 naItL5 naNw')}
+  {text(114,367,340,'fahren mit Bussen an den Kalmbacher See. Macht Ihr auch','naBookSerif naIt93 naItL6 naNw')}
+  {text(114,385,330,'dieses Jahr mit? Bitte gebt uns bis zum 30. Juni Bescheid.','naBookSerif naIt93 naItL7 naNw')}
+  {field('p93-s1c',117,409,252,'1 Gruss')}
+  {text(114,433,100,'Josh Weller','naBookSerif naIt93 naItL8 naNw')}
+  {text(114,454,220,'Fachschaftsrat – Germanistik','naBookSerif naIt93 naItL9 naNw')}
+  <div className="naTipBox" style={{left:487,top:232,width:257,height:151}}/>
+  <div className="naTipTop naTipGold93" style={{left:487,top:232,width:257,height:3}}/>
+  <div className="naTipBar naTipGold93" style={{left:487,top:232,width:10,height:151}}/>
+  <div className="naTipp" style={{left:483,top:346,width:14,height:37}}>Tipp</div>
+  {text(511,237,225,'Sie möchten einen Brief schreiben.','naBookSerif naTippT93 naTpL1 naNw')}
+  {text(511,254,225,'Was ist besonders wichtig?','naBookSerif naTippT93 naTpL2 naNw')}
+  {text(511,272,225,'Vergessen Sie nicht das Datum, die','naBookSerif naTippT93 naTpL3 naNw')}
+  {text(511,287,225,'Anrede und den Gruß.','naBookSerif naTippT93 naTpL4 naNw')}
+  {text(511,304,225,'Vor dem Schreiben: Wie gut kennen','naBookSerif naTippT93 naTpL5 naNw')}
+  {text(511,320,225,'Sie den Adressaten? Wollen Sie du','naBookSerif naTippT93 naTpL6 naNw')}
+  {text(511,339,225,'oder Sie sagen?','naBookSerif naTippT93 naTpL7 naNw')}
+  {text(511,354,225,'Schreiben Sie zu jedem Punkt ein bis','naBookSerif naTippT93 naTpL8 naNw')}
+  {text(511,371,225,'zwei Sätze.','naBookSerif naTippT93 naTpL9 naNw')}
+  {check('93-1',672,436,{'p93-s1a':'Bielefeld, 15 Juni 20..|Bielefeld, 15. Juni 20..|Bielefeld, 15. Juni 20...','p93-s1b':'Liebe Studentinnen und Studenten','p93-s1c':'Viele Grüße'})}
+  {title('2',72,509,660,'Antworten Sie auf die Einladung in 1. Schreiben Sie etwas zu den drei Punkten.','naRB naNw')}
+  <div className="naDashRule93" style={{left:106,top:549}}/>{text(118,539,600,'Danken Sie für die Einladung.','naDash93 naNw')}
+  <div className="naDashRule93" style={{left:106,top:569}}/>{text(118,559,600,'Sagen Sie: Sie kommen gern zu dem Fest.','naDash93 naNw')}
+  <div className="naDashRule93" style={{left:106,top:589}}/>{text(118,579,600,'Fragen Sie: Sollen Sie etwas mitbringen?','naDash93 naNw')}
+  <div className="naTrainHead naTrainHead93" style={{left:74,top:634}}>TRAINING: AUSSPRACHE</div>
+  {text(367,640,110,'Neueinsatz','naNeu93 naNw')}
+  <div className="naRuleP" style={{left:449,top:655,width:268,background:'#ec7724'}}/>
+  {audio('assets/ab-cd2-track45.mp3',26,681,'2 45')}
+  {title('1',72,685,330,'Hören Sie und sprechen Sie nach.','naRB naNw')}
+  {text(105,707,220,'Achten Sie auf die Pause!','naInst93 naNw')}
+  {text(105,737,14,'a','naBookSerif')}{text(123,737,330,'April – im | April','naBookSerif naNw')}
+  {text(105,756,14,'b','naBookSerif')}{text(123,756,330,'Ostern – zu | Ostern','naBookSerif naNw')}
+  {text(105,775,14,'c','naBookSerif')}{text(123,775,330,'Abend – heute | Abend','naBookSerif naNw')}
+  {text(105,795,14,'d','naBookSerif')}{text(123,795,340,'Abschlussprüfung – meine | Abschlussprüfung','naBookSerif naNw')}
+  {text(105,814,14,'e','naBookSerif')}{text(123,814,330,'Uhr – acht | Uhr','naBookSerif naNw')}
+  {text(105,834,14,'f','naBookSerif')}{text(123,834,330,'Ulm – in | Ulm','naBookSerif naNw')}
+  {title('2',74,880,300,'Ergänzen Sie die Regel.','naRB naNw')}
+  <div className="naRegelBox93" style={{left:105,top:909,width:287,height:55}}/>
+  <div className="naRegelTab93" style={{left:105,top:909,width:14,height:55}}/>
+  <div className="naTipp naRegelLbl93" style={{left:105,top:909,width:14,height:55}}>Regel</div>
+  {text(130,915,250,'Vor Wörtern mit Vokal beginnt man','naBookSerif naRegelT93 naNw')}
+  {text(130,932,250,'neu. Das heißt: Man macht eine kleine','naBookSerif naRegelT93 naNw')}
+  {text(130,949,48,'Sprech-','naBookSerif naRegelT93 naNw')}
+  {field('p93-a2',177,943,58,'2 Regel Sprech-')}
+  {text(233,949,12,'.','naBookSerif naRegelT93 naNw')}
+  {check('93-2',706,903,{'p93-a2':'Pause'})}
+  {title('3',455,685,260,'Schreiben Sie zuerst die Sätze.','naRB naNw')}
+  {text(487,707,240,'Flüstern Sie die Sätze und','naInst93 naNw')}
+  {text(487,726,240,'sprechen Sie sie dann laut.','naInst93 naNw')}
+  {text(487,755,14,'a','naBookSerif')}{text(505,755,240,'amerstenaugustwillichmiteuch','naBookSerif naNw')}
+  {text(505,774,240,'meineabschlussprüfungfeiern','naBookSerif naNw')}
+  {text(487,794,14,'b','naBookSerif')}{text(505,794,240,'kommtalleumachtuhrzumeinerein','naBookSerif naNw')}
+  {text(505,814,140,'weihungsparty','naBookSerif naNw')}
+  {text(487,833,14,'c','naBookSerif')}{text(505,833,260,'zuosternbekommtihrkleinegeschenke','naBookSerif naNw')}
+  {text(487,852,14,'d','naBookSerif')}{text(505,852,260,'meinefreundinhateinenfreundinulm','naBookSerif naNw')}
+  {audio('assets/ab-cd2-track46.mp3',444,888,'2 46')}
+  {text(488,892,250,'Hören Sie und vergleichen Sie.','naInst93 naNw')}
+  {audio('assets/ab-cd2-track47.mp3',414,933,'2 47')}
+  {title('4',454,937,270,'Zungenbrecher: Hören Sie.','naRB naNw')}
+  {text(488,970,280,'In Ulm und um Ulm und um Ulm herum.','naBookSerif naZung93 naNw')}
+  {text(487,998,270,'Sprechen Sie: zuerst langsam und dann','naInst93b naNw')}
+  {text(488,1016,200,'immer schneller.','naInst93b naNw')}
+  {art('modul-tab',743,1046,56,20)}
+  <div className="naText naFooter" style={{left:420,top:1047,width:315,textAlign:'right'}}>dreiundneunzig&nbsp;&nbsp;|&nbsp;&nbsp;93</div>
+ </>}
+ {page==='94'&&<>
+  <div className="naTestHead naTestHead94" style={{left:84,top:62}}>TEST</div>
+  <div className="naTestRule94" style={{left:152,top:83,width:586}}/>
+  <div className="naSideT" style={{left:52,top:147}}>WÖRTER</div>
+  {title('1',81,120,640,'Feste und Feiern. Ergänzen Sie die Nomen oder Verben in der richtigen Form.','naRB naNw naS15')}
+  {text(115,152,16,'a','naBookSerif naBk88')}{text(133,152,382,'Bist du schon umgezogen? – Ja. In zwei Wochen ist meine','naBookSerif naBk88 naNw',14)}
+  {art('hand1a',518,154,96,28)}{text(604,163.5,10,'.','naBookSerif naBk88 naNw naPrd')}
+  {text(115,170,16,'b','naBookSerif naBk88')}{text(133,170,22,'Ich','naBookSerif naBk88 naNw',14)}{field('94-1b',158,167,172,'1 b')}{text(336,170,332,'dir herzlich zu deinem Geburtstag. – Vielen Dank!','naBookSerif naBk88 naNw',14)}
+  {text(115,190.5,16,'c','naBookSerif naBk88')}{text(132,190.5,356,'Tanja und Martin wollen heiraten. – Ja, ich weiß. Die','naBookSerif naBk88 naNw',14)}{field('94-1c',494,187,174,'1 c')}{text(673,190.5,20,'ist','naBookSerif naBk88 naNw',14)}
+  {text(133,210,100,'im September.','naBookSerif naBk88 naNw',14)}
+  {text(115,229.5,16,'d','naBookSerif naBk88')}{text(132,229.5,246,'Wie heißt der letzte Tag des Jahres? –','naBookSerif naBk88 naNw',14)}{field('94-1d',385,226,173,'1 d')}{text(560,229.5,10,'.','naBookSerif naBk88 naNw naPrd')}
+  {text(115,248,16,'e','naBookSerif naBk88')}{text(133,248,154,'Felix hat seine Prüfung','naBookSerif naBk88 naNw',14)}{field('94-1e',281,245,184,'1 e')}{text(467,248,152,'. – Toll, das freut mich!','naBookSerif naBk88 naNw',14)}
+  {text(115,267,16,'f','naBookSerif naBk88')}{text(133,267,396,'Papa wird nächste Woche 50 Jahre alt. – Was sollen wir ihm','naBookSerif naBk88 naNw',14)}{field('94-1f',533,266,174,'1 f')}{text(709,267,10,'?','naBookSerif naBk88 naNw')}
+  {text(115,287,16,'g','naBookSerif naBk88')}{text(132,287,104,'Wann feiert ihr','naBookSerif naBk88 naNw',14)}{field('94-1g',242,284,170,'1 g')}{text(416,287,140,'? – Am 24. Dezember.','naBookSerif naBk88 naNw',14)}
+  <div className="naPts" style={{left:663,top:294}}>_ / 6 Punkte</div>
+  {check('94-1',663,314,{'94-1b':'gratuliere','94-1c':'Hochzeit','94-1d':'Silvester','94-1e':'bestanden','94-1f':'schenken','94-1g':'Weihnachten'})}
+  <div className="naSideT" style={{left:55,top:362}}>STRUKTUREN</div>
+  {title('2',80,335,640,'Schreiben Sie das Datum in der richtigen Form.','naRB naNw naS15')}
+  {text(114,365,16,'a','naBookSerif naBk88')}<div className="naBltSq" style={{left:131,top:371,background:'#224a99'}}/>{text(147,365,153,'Welches Datum ist heute?','naBookSerif naBk88 naNw',14)}<div className="naBltTr" style={{left:334,top:374,borderBottomColor:'#3bb577'}}/>{art('hand2a',348,370,76,14)}{text(415,367.5,10,'.','naBookSerif naBk88 naNw naPrd')}{text(426,366,26,'(12.)','naBookSerif naBk88 naNw',14)}
+  <div className="naBltSq" style={{left:131,top:390,background:'#224a99'}}/>{text(146,384,249,'Wirklich? Dann ist ja morgen Freitag,','naBookSerif naBk88 naNw',14)}{field('94-2a',400,382,195,'2 a')}{text(600,386,33,'(13.).','naBookSerif naBk88 naNw',14)}
+  {text(114,404,16,'b','naBookSerif naBk88')}<div className="naBltCi" style={{left:131,top:410,background:'#ab1d74'}}/>{text(147,404,340,'Meine Mutter feiert nur jedes vierte Jahr Geburtstag.','naBookSerif naBk88 naNw',14)}
+  <div className="naBltTr" style={{left:131,top:428,borderBottomColor:'#3bb577'}}/>{text(150,424,55,'Warum?','naBookSerif naBk88 naNw',14)}
+  <div className="naBltCi" style={{left:131,top:449,background:'#ab1d74'}}/>{text(150,443,44,'Sie hat','naBookSerif naBk88 naNw',14)}{field('94-2b',200,440,396,'2 b')}{text(602,445,120,'(29.2.) Geburtstag.','naBookSerif naBk88 naNw',14)}
+  {text(113,462,16,'c','naBookSerif naBk88')}<div className="naBltSq" style={{left:131,top:468,background:'#224a99'}}/>{text(146,462,174,'Am Montag habe ich keine Schule.','naBookSerif naBk88 naNw',14)}
+  <div className="naBltTr" style={{left:130,top:487,borderBottomColor:'#3bb577'}}/>{text(150,481,143,'Ach ja, richtig, das ist','naBookSerif naBk88 naNw',14)}{field('94-2c',300,479,228,'2 c')}{text(536,484,173,'(3.10). Das ist ein Feiertag.','naBookSerif naBk88 naNw',14)}
+  {text(113,501,16,'d','naBookSerif naBk88')}<div className="naBltTr" style={{left:130,top:506,borderBottomColor:'#3bb577'}}/>{text(148,501,135,'Fahrt ihr in Urlaub?','naBookSerif naBk88 naNw',14)}
+  <div className="naBltSq" style={{left:131,top:527,background:'#224a99'}}/>{text(148,522,18,'Ja,','naBookSerif naBk88 naNw',14)}{field('94-2d',172,518,415,'2 d')}{text(593,523,70,'(09.–15.08)','naBookSerif naBk88 naNw',14)}
+  <div className="naPts" style={{left:662,top:548}}>_ / 4 Punkte</div>
+  {check('94-2',662,568,{'94-2a':'der dreizehnte','94-2b':'am neunundzwanzigsten Februar','94-2c':'der dritte Oktober','94-2d':'vom neunten bis zum fünfzehnten August'})}
+  <div className="naSideT" style={{left:55,top:595}}>STRUKTUREN</div>
+  {title('3',80,569,640,'Wünsche. Schreiben Sie Sätze mit würd-.','naRB naNw naS15')}
+  {text(114,598,16,'a','naBookSerif naBk88')}{text(133,598,45,'Bruno','naBookSerif naBk88 naNw',14)}
+  {art('hand3a',176,599,151,20)}{text(319,598,50,'kaufen.','naBookSerif naBk88 naNw',14)}
+  {text(130.5,618.5,170,'(Motorrad kaufen/gern)','naCue94',14)}
+  {text(440,600,16,'d','naBookSerif naBk88')}{text(459,600,84,'Meine Eltern','naBookSerif naBk88 naNw',14)}{field('94-3d',548,597,173,'3 d')}{text(723,600,10,'.','naBookSerif naBk88 naNw naPrd')}
+  {text(457,619.7,250,'(die neue Ausstellung besuchen/gern)','naCue94',14)}
+  {text(114,638,16,'b','naBookSerif naBk88')}{text(131,638,32,'Tom,','naBookSerif naBk88 naNw',14)}{field('94-3b',167,634,212,'3 b')}{text(382,638,10,'?','naBookSerif naBk88 naNw')}
+  {text(130.5,658.5,210,'(du/Fallschirm springen/gern)','naCue94',14)}
+  {text(440,640,16,'e','naBookSerif naBk88')}{text(459,640,100,'Herr Wolf, wo','naBookSerif naBk88 naNw',14)}{field('94-3e',554,636,164,'3 e')}{text(720,640,10,'?','naBookSerif naBk88 naNw')}
+  {text(457,658.5,110,'(Sie/leben/gern)','naCue94',14)}
+  {text(113,675.5,16,'c','naBookSerif naBk88')}{text(132,675.5,149,'Amelie und Sarah, was','naBookSerif naBk88 naNw',14)}{field('94-3c',288,673,102,'3 c')}{text(394,675.5,10,'?','naBookSerif naBk88 naNw')}
+  {text(130.5,696.5,130,'(ihr/machen/gern)','naCue94',14)}
+  {text(441,678.5,16,'f','naBookSerif naBk88')}{text(459,678.5,24,'Wir','naBookSerif naBk88 naNw',14)}{field('94-3f',510,675,198,'3 f')}{text(712,678.5,10,'.','naBookSerif naBk88 naNw naPrd')}
+  {text(457,697.6,160,'(jeden Tag feiern/gern)','naCue94',14)}
+  <div className="naPts" style={{left:661,top:704}}>_ / 5 Punkte</div>
+  {check('94-3',661,724,{'94-3b':'würdest du gern Fallschirm springen','94-3c':'würdet ihr gern machen','94-3d':'würden gern die neue Ausstellung besuchen','94-3e':'würden Sie gern leben','94-3f':'würden gern jeden Tag feiern'})}
+  <div className="naSideT" style={{left:52,top:770}}>KOMMUNIKATION</div>
+  {title('4',79,743,640,'Ergänzen Sie die Glückwünsche.','naRB naNw naS15')}
+  {text(113,775.5,16,'a','naBookSerif naBk88')}{text(132,775.5,82,'Liebe Mama,','naBookSerif naBk88 naNw',14)}{field('94-4a',219,770,157,'4 a')}{text(381,775.5,200,'Glückwunsch zum Geburtstag!','naBookSerif naBk88 naNw',14)}
+  {text(113,794.5,16,'b','naBookSerif naBk88')}{text(131,794.5,209,'10, 9, 8, 7, 6, 5, 4, 3, 2, 1 …. Gutes','naBookSerif naBk88 naNw',14)}{field('94-4b',345,791,157,'4 b')}{text(504,794.5,10,'!','naBookSerif naBk88 naNw')}
+  {text(113,814.5,16,'c','naBookSerif naBk88')}{text(131,814.5,31,'Alles','naBookSerif naBk88 naNw',14)}{field('94-4c',166,809,156,'4 c')}{text(326,814.5,235,'! Wir hoffen, es geht dir bald besser.','naBookSerif naBk88 naNw',14)}
+  {text(113,833.5,16,'d','naBookSerif naBk88')}{text(132,833.5,540,'Liebe Kunden, unser Geschäft ist vom 23.–27.12. geschlossen. Wir wünschen frohe','naBookSerif naBk88 naNw',14)}
+  {field('94-4d',131,848,191,'4 d')}{text(328,854.5,10,'!','naBookSerif naBk88 naNw')}
+  {text(113,873.5,16,'e','naBookSerif naBk88')}{text(131,873.5,181,'Ihr habt 5:1 gewonnen? Gut','naBookSerif naBk88 naNw',14)}{field('94-4e',318,868,192,'4 e')}{text(514,873.5,10,'!','naBookSerif naBk88 naNw')}
+  <div className="naPts" style={{left:660,top:879}}>_ / 5 Punkte</div>
+  {check('94-4',660,899,{'94-4a':'herzlichen','94-4b':'neues Jahr','94-4c':'Gute Besserung','94-4d':'Weihnachten','94-4e':'gemacht'})}
+  <div style={{position:'absolute',left:110,top:906,width:383,height:26,background:'#f6f3d5'}}/>
+  {text(114,913,120,'Wörter','naScoreH94 naNw')}{text(238,913,120,'Strukturen','naScoreH94 naNw')}{text(364,913,130,'Kommunikation','naScoreH94 naNw')}
+  <div style={{position:'absolute',left:109,top:906,width:1.5,height:103,background:'#f5f3ee'}}/>{[232,358].map(x=><div key={x} style={{position:'absolute',left:x,top:906,width:1.5,height:103,background:'#f5f3ee'}}/>)}<div style={{position:'absolute',left:492,top:906,width:1.5,height:103,background:'#f5f3ee'}}/>{[957,982].map(y=><div key={y} style={{position:'absolute',left:109,top:y,width:384,height:1.5,background:'#f5f3ee'}}/>)}<div style={{position:'absolute',left:109,top:1008,width:384,height:1.5,background:'#f5f3ee'}}/>
+  {[0,1,2].map(r=><span key={r}>
+    {art('chip'+(r===0?'R':r===1?'Y':'G'),115,935+r*26,18,r===0?19:r===1?18:17)}{text(142,937+r*26,90,['0–3 Punkte','4 Punkte','5–6 Punkte'][r],'naScoreR94 naNw')}
+    {art('chip'+(r===0?'R':r===1?'Y':'G'),239,935+r*26,18,r===0?19:r===1?18:17)}{text(265,937+r*26,90,['0–4 Punkte','5–7 Punkte','8–9 Punkte'][r],'naScoreR94 naNw')}
+    {art('chip'+(r===0?'R':r===1?'Y':'G'),365,935+r*26,18,r===0?19:r===1?18:17)}{text(391,937+r*26,90,['0–2 Punkte','3 Punkte','4–5 Punkte'][r],'naScoreR94 naNw')}
+  </span>)}
+  {text(324,1013,167,'www.hueber.de/menschen/lernen','naFoot88')}
+  {art('modul8-tab',0,1047,48,20)}
+  <div className="naText naFoot88" style={{left:62,top:1048,width:200}}>94&nbsp;&nbsp;|&nbsp;&nbsp;vierundneunzig</div>
+ </>}
  </Canvas>;
 }
