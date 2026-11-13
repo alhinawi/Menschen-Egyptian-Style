@@ -39,3 +39,12 @@
 .nativeAB12[data-native-ab12="71"] .naField{font-family:ABDroid69,Georgia,serif!important}
 .nativeAB12[data-native-ab12="71"] .naDroid71{font-family:ABDroid69,Georgia,serif!important;letter-spacing:-0.35px}
 .nativeAB12[data-native-ab12="71"] .naDroid71{color:#1f1c1e}
+
+/* p72: Droid Serif body like p71; skeleton words blue with printed strike; strike rows in book face */
+.nativeAB12[data-native-ab12="72"] .naW{font-family:ABDroid69,Georgia,serif!important;letter-spacing:-0.35px}
+.nativeAB12[data-native-ab12="72"] .naField{font-family:ABDroid69,Georgia,serif!important}
+.nativeAB12[data-native-ab12="72"] .naFieldBlank{text-align:center}
+.nativeAB12[data-native-ab12="72"] .naDroid72{font-family:ABDroid69,Georgia,serif!important;letter-spacing:-0.35px;color:#1f1c1e}
+.nativeAB12[data-native-ab12="72"] .naSk72 .naFitI{text-decoration:line-through}
+.nativeAB12[data-native-ab12="72"] .naStrikeBlue72 .naFitI{text-decoration:line-through}
+.nativeAB12[data-native-ab12="72"] .naStrikeRow{font-size:15px;font-family:ABDroid69,Georgia,serif}
