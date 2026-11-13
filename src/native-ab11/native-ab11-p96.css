@@ -39,4 +39,4 @@
 .ab11p96Canvas .p96CellInk{position:absolute;inset:0;pointer-events:none;display:flex;color:#28496f;font:16px/27px P96Serif}
 .ab11p96Canvas .p96CellInk span{display:inline-block;text-align:center;flex-shrink:0}
 .ab11p96Canvas .p96CellInk.correct{color:#18773c}.ab11p96Canvas .p96CellInk.wrong{color:#b62626}
-.ab11p96Canvas input[data-native-field^="u3-"]{font-size:13px!important}
+.ab11p96Canvas input[data-native-field^="ab11-p96-u3-"]{font-size:13px!important}
