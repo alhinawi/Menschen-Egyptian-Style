@@ -15,7 +15,7 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  const set=(id:string,value:string)=>{const next={...v,[id]:value};S(next);localStorage.setItem('native-ab11-'+page,JSON.stringify(next));G({})};
  const Y=(y:number)=>y;
  const txt=(x:number,y:number,w:number,s:string,cls='')=><div className={'mText '+cls} style={{left:x,top:cls==='mFooter'?y:Y(y),width:w}}><Words s={s}/></div>;
- const f=(id:string,x:number,y:number,w:number,label=id)=>{const ctx=document.createElement('canvas').getContext('2d');if(ctx)ctx.font="16px 'Times New Roman'";const size=Math.max(11,Math.min(16,16*(w-6)/(ctx?.measureText(v[id]||'').width||1)));return <input className="mField" data-native-field={id} aria-label={label} style={{left:x,top:Y(y),width:w,fontSize:size}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>};
+ const f=(id:string,x:number,y:number,w:number,label=id)=>{const ctx=document.createElement('canvas').getContext('2d');if(ctx)ctx.font="16px 'Times New Roman'";const size=Math.max(11,Math.min(16,16*(w-6)/(ctx?.measureText(v[id]||'').width||1)));return <input className="mField" data-native-field={id} aria-label={label} style={{left:x,top:Y(y),width:w,fontSize:size,...(page==='82'&&['u3-c','u3-e'].includes(id)?{'--mfield-height':'14px'}:{})} as React.CSSProperties} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>};
  const open=(id:string,x:number,y:number,w:number,h:number,label=id)=><textarea className="mField mOpen" data-native-field={id} aria-label={label} style={{left:x,top:Y(y),width:w,'--mopen-height':h+'px'} as React.CSSProperties} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
  const art=(name:string,x:number,y:number,w:number,h:number)=><PageImage className="mArt" alt={'Originalabbildung '+name} src={`assets/native-ab11/p${page}-${name}.png`} style={{left:x,top:Y(y),width:w,height:h}}/>;
  const title=(n:string,y:number,s:string,kb='',x=149)=><>{kb&&txt(x-42,y+5,40,kb,'mKB')}<div className="mNumber" style={{left:x,top:Y(y)}}>{n}</div>{txt(x+35,y,700,s,'mTitle')}</>;
@@ -171,14 +171,14 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {check('t2',655,501)}
  {title('3',500,'Ergänzen Sie das Gespräch.','',118)}
  {markS(148,534)}<div className="mText" style={{left:165,top:531,width:440}}><Words s="Guten Morgen Ella, hier ist Karin. Wo bist du?"/></div>
- {markT(148,553)}<div className="mText" style={{left:165,top:552,width:120}}><Words s="Hallo Karin. Ich"/></div><div className="mText mExample" style={{left:283,top:552,width:185}}>steige gerade in den Zug ein</div><div className="mExRule" style={{left:283,top:571,width:177}}/>{txt(470,552,28,'(a).')}{txt(500,552,240,'(einsteigen/in den Zug /gerade)')}
+ {markT(148,553)}<div className="mText" style={{left:165,top:552,width:120}}><Words s="Hallo Karin. Ich"/></div><div className="mText mExample" style={{left:283,top:552,width:177,fontSize:13}}>steige gerade in den Zug ein</div><div className="mExRule" style={{left:283,top:571,width:177}}/>{txt(470,552,28,'(a).')}{txt(500,552,240,'(einsteigen/in den Zug /gerade)')}
  {markS(148,575)}<div className="mText" style={{left:165,top:574,width:55}}><Words s="Wann"/></div>{f('u3-b',218,567,269)}{txt(496,574,40,'(b)?')}{txt(533,574,130,'(du/ankommen)')}
  {markT(148,597)}<div className="mText" style={{left:165,top:596,width:520}}><Words s="Um 09.35 Uhr am Ostbahnhof und um 09.45 Uhr am Hauptbahnhof."/></div>
- {markS(148,619)}<div className="mText" style={{left:165,top:618,width:90}}><Words s="Kannst du"/></div>{f('u3-c',254,609,363)}{txt(629,618,30,'(c)?')}
+ {markS(148,619)}<div className="mText" style={{left:165,top:618,width:90}}><Words s="Kannst du"/></div>{f('u3-c',254,615,363)}{txt(629,618,30,'(c)?')}
  {txt(166,637,270,'(aussteigen/am Hauptbahnhof/bitte)')}
  {txt(166,659,28,'Ich')}{f('u3-d',196,652,302)}{txt(504,659,30,'(d).')}{txt(534,659,110,'(abholen/dich)')}
  {markT(148,682)}<div className="mText" style={{left:165,top:681,width:200}}><Words s="Super, vielen Dank."/></div>
- {markS(148,704)}<div className="mText" style={{left:165,top:703,width:40}}><Words s="Jetzt"/></div>{f('u3-e',203,694,549)}{txt(759,703,25,'(e),')}
+ {markS(148,704)}<div className="mText" style={{left:165,top:703,width:40}}><Words s="Jetzt"/></div>{f('u3-e',203,700,549)}{txt(759,703,25,'(e),')}
  {txt(166,722,480,'(einkaufen/ich/Brötchen) dann können wir zusammen frühstücken.')}
  {markT(148,746)}<div className="mText" style={{left:165,top:745,width:280}}><Words s="Gute Idee. Also dann, bis bald."/></div>
  {txt(743,745,80,'_ / 8 Punkte','mPunkte')}

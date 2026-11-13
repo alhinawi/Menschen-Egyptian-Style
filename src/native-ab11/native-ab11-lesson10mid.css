@@ -17,7 +17,7 @@
 .nativeAB11Lesson10Mid .mCanvas .mText.mFooter{font-size:15px;color:#222}
 .nativeAB11Lesson10Mid .mFooterB{font-weight:700}
 .nativeAB11Lesson10Mid .mCanvas .mText.mScript2{font:italic 20px Georgia;color:#333}
-.nativeAB11.nativeAB11Lesson10Mid .mCanvas .mField{height:20px!important;font-size:14.5px;border:0!important;border-bottom:1px solid #aaa!important;border-radius:0!important;background:transparent!important}
+.nativeAB11.nativeAB11Lesson10Mid .mCanvas .mField{height:var(--mfield-height,20px)!important;font-size:14.5px;border:0!important;border-bottom:1px solid #aaa!important;border-radius:0!important;background:transparent!important}
 .nativeAB11.nativeAB11Lesson10Mid .mCanvas .mTitle{font-family:KbFira,FiraSans,Arial,sans-serif;font-weight:500}
 .nativeAB11Lesson10Mid .mCanvas .mOpen{font-size:15px;line-height:22px!important}
 .nativeAB11Lesson10Mid .mCanvas .mNumber{background:#fb0200;border:0}
@@ -75,3 +75,6 @@
 .nativeAB11Lesson10Mid[data-native-ab11-page='83'] .mCanvas .mOpen{background:repeating-linear-gradient(white 0 20px,#b0b0b0 20px 22px)!important}
 .nativeAB11Lesson10Mid[data-native-ab11-page='83'] .mCanvas .mText.mTitle{font-size:18px;font-weight:700}
 .nativeAB11Lesson10Mid[data-native-ab11-page='83'] .mCanvas .mHRule{height:1.4px}
+
+.nativeAB11.nativeAB11Lesson10Mid .mCanvas{width:901px;height:1275px}
+.nativeAB11.nativeAB11Lesson10Mid .mPageInner{left:0!important}
