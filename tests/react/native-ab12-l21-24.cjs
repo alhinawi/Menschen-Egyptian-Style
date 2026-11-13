@@ -77,5 +77,39 @@ for(const width of[320,390]){
  assert.equal(await p.evaluate(()=>localStorage.getItem('native-ab12-67')),null,'reset clears storage');
  console.log(width,'p67 interaction/grade/persist/reset PASS');
  await p.close();
+ // page 68: text-field grading (incl. alternate answers), persistence, reset
+ p=await openPage(b,width,'68');
+ const pg68=p.locator('.page[data-page="68"]');
+ assert.equal(await pg68.locator('.nativeAB12[data-native-ab12="68"]').count(),1,'native p68 rendered');
+ for(const id of['p68-8b1','p68-8b2','p68-8c1','p68-8c2','p68-8d','p68-8e1','p68-8e2','p68-9a','p68-9b','p68-9c'])assert.equal(await pg68.locator('[data-native-field="'+id+'"]').count(),1,'field '+id);
+ // g1: wrong then right
+ await pg68.locator('[data-native-field="p68-8b1"]').fill('falsch');
+ await pg68.locator('[data-check="g1"] button').click();
+ assert.match((await pg68.locator('[data-check="g1"] output').textContent())||'',/Noch einmal/,'g1 wrong graded');
+ await pg68.locator('[data-native-field="p68-8b1"]').fill('kann');
+ await pg68.locator('[data-native-field="p68-8b2"]').fill('können');
+ await pg68.locator('[data-native-field="p68-8c1"]').fill('will');
+ await pg68.locator('[data-native-field="p68-8c2"]').fill('darf');
+ await pg68.locator('[data-native-field="p68-8d"]').fill('musst');
+ await pg68.locator('[data-native-field="p68-8e1"]').fill('soll');
+ await pg68.locator('[data-native-field="p68-8e2"]').fill('will');
+ await pg68.locator('[data-check="g1"] button').click();
+ assert.match((await pg68.locator('[data-check="g1"] output').textContent())||'',/Richtig/,'g1 correct graded');
+ // g2: long answers, one via the no-period alternate
+ await pg68.locator('[data-native-field="p68-9a"]').fill('Ich finde das in Ordnung');
+ await pg68.locator('[data-native-field="p68-9b"]').fill('Das ist doch gefährlich, oder?');
+ await pg68.locator('[data-native-field="p68-9c"]').fill('Das weiß ich nicht.');
+ await pg68.locator('[data-check="g2"] button').click();
+ assert.match((await pg68.locator('[data-check="g2"] output').textContent())||'',/Richtig/,'g2 correct graded (with alternate)');
+ // saved-reload
+ await p.reload();await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');await p.evaluate(()=>window.bookPage([...document.querySelectorAll('.page')].findIndex(e=>e.dataset.page==='68')));await p.waitForTimeout(350);
+ assert.equal(await p.locator('.page[data-page="68"] [data-native-field="p68-8b1"]').inputValue(),'kann','saved field reloaded');
+ assert.equal(await p.evaluate(()=>JSON.parse(localStorage.getItem('native-ab12-68')||'{}')['p68-8b1']),'kann','localStorage key native-ab12-68');
+ // reset clears
+ await p.locator('.pageResetTrigger').click();await p.getByRole('button',{name:'Reset',exact:true}).click();
+ assert.equal(await p.locator('.page[data-page="68"] [data-native-field="p68-8b1"]').inputValue(),'','reset clears field');
+ assert.equal(await p.evaluate(()=>localStorage.getItem('native-ab12-68')),null,'reset clears storage');
+ console.log(width,'p68 interaction/grade/persist/reset PASS');
+ await p.close();
 }
 }finally{await b.close();server.close()}})().catch(e=>{console.error(e);server.close();process.exitCode=1});
