@@ -434,7 +434,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {badge9('1',110,182)}
   {text(150,182,330,'Haus und Garten. Ordnen Sie zu.','naYT naNw')}
   <div className="naBank12Bg" style={{left:154,top:220,width:454,height:23}}/>
-  {text(157,221,38,'Haus','naBank12 naNw')}<div className="naPipe12" style={{left:204,top:224,height:18}}/>{text(210,221,53,'Garten','naBank12 naNw')}<div className="naPipe12" style={{left:272,top:224,height:18}}/>{text(279,221,54,'Garage','naBank12 naNw')}<div className="naPipe12" style={{left:341,top:224,height:18}}/>{text(346,221,53,'Treppe','naBank12 naNw')}<div className="naPipe12" style={{left:408,top:224,height:18}}/>{text(415,221,43,'Baum','naBank12 naNw')}<div className="naPipe12" style={{left:467,top:224,height:18}}/>{text(475,221,57,'Fenster','naBank12 naNw')}<div className="naPipe12" style={{left:541,top:224,height:18}}/>{text(547,221,53,'Balkon','naBank12 naNw')}<div className="naStrike10" style={{left:544,top:231,width:59,height:2}}/>
+  {text(157,221,38,'Haus','naBank12 naNw')}<div className="naPipe12" style={{left:205,top:224,height:18}}/>{text(210,221,53,'Garten','naBank12 naNw')}<div className="naPipe12" style={{left:273,top:224,height:18}}/>{text(279,221,54,'Garage','naBank12 naNw')}<div className="naPipe12" style={{left:342,top:224,height:18}}/>{text(346,221,53,'Treppe','naBank12 naNw')}<div className="naPipe12" style={{left:409,top:224,height:18}}/>{text(415,221,43,'Baum','naBank12 naNw')}<div className="naPipe12" style={{left:469,top:224,height:18}}/>{text(475,221,57,'Fenster','naBank12 naNw')}<div className="naPipe12" style={{left:542,top:224,height:18}}/>{text(547,221,53,'Balkon','naBank12 naNw')}<div className="naStrike10" style={{left:550,top:231,width:53,height:2}}/>
   {art('house',338,246,424,226)}
   {field('12-1a',154,282,186,'1a Haus-Teil links oben','naFld9')}
   {field('12-1b',154,337,186,'1b Haus-Teil links Mitte','naFld9')}
@@ -457,8 +457,8 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {badge9('3',110,764)}
   {text(150,764,480,'Antworten Sie mit dem Genitiv wie im Beispiel.','naYT naNw')}
   {text(154,804,20,'a','naLet9')}{text(178,804,395,'Wie findest du den Garten von Maximilian? –','naEx12 naNw')}
-  {art('garten-line',583,822,140,4)}
-  {art('garten-hw',582,805,160,18)}
+  {art('garten-line',587,822,140,4)}
+  {art('garten-hw',586,805,160,18)}
   {text(730,804,150,'ist sehr schön.','naEx12 naNw')}
   {text(154,830,20,'b','naLet9')}{text(178,830,520,'Und magst du das Haus von Maximilian? – Nein, ich finde','naEx12 naNw')}{field('12-3b',697,830,263,'3b Genitiv','naFld9')}
   {text(178,855,180,'nicht so schön.','naEx12 naNw')}
