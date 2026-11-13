@@ -1,0 +1,140 @@
+import {usePageReset} from '../exercises/usePageReset';
+import {useLayoutEffect,useRef,useState} from 'react';
+import {scanData} from '../scan-data/registry';
+import './native-ab11.css';
+import './native-ab11-lessons45.css';
+import './native-ab11-lesson10mid.css';
+const norm=(s:string)=>s.normalize('NFC').toLocaleLowerCase('de').trim().replace(/[.,!?;:’']/g,'').replace(/\s+/g,' ');
+function Words({s}:{s:string}){return <>{s.split(/(\s+)/).map((w,i)=>/\S/.test(w)?<span key={i} className="tapWord" role="button" tabIndex={0} data-phrase={s} data-word={w.replace(/^[.,!?„"()]+|[.,!?“"()]+$/g,'')}>{w}</span>:w)}</>}
+export function NativeAB11Lesson10Mid({page}:{page:string}){
+ const host=useRef<HTMLDivElement>(null),audio=useRef<HTMLAudioElement>(null),[scale,SS]=useState(1),[track,T]=useState(''),[v,S]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem('native-ab11-'+page)||'{}')}catch{return {}}}),[graded,G]=useState<Record<string,boolean>>({});
+ useLayoutEffect(()=>{const el=host.current;if(!el)return;const measure=()=>SS(Math.min(el.clientWidth/901,el.clientHeight/1275));measure();const ro=new ResizeObserver(measure);ro.observe(el);return()=>ro.disconnect()},[]);
+ usePageReset(page,'native-ab11-'+page,()=>{S({});G({})});
+ const set=(id:string,value:string)=>{const next={...v,[id]:value};S(next);localStorage.setItem('native-ab11-'+page,JSON.stringify(next));G({})};
+ const Y=(y:number)=>y;
+ const txt=(x:number,y:number,w:number,s:string,cls='')=><div className={'mText '+cls} style={{left:x,top:cls==='mFooter'?y:Y(y),width:w}}><Words s={s}/></div>;
+ const f=(id:string,x:number,y:number,w:number,label=id)=>{const ctx=document.createElement('canvas').getContext('2d');if(ctx)ctx.font="16px 'Times New Roman'";const size=Math.max(11,Math.min(16,16*(w-6)/(ctx?.measureText(v[id]||'').width||1)));return <input className="mField" data-native-field={id} aria-label={label} style={{left:x,top:Y(y),width:w,fontSize:size}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>};
+ const open=(id:string,x:number,y:number,w:number,h:number,label=id)=><textarea className="mField mOpen" data-native-field={id} aria-label={label} style={{left:x,top:Y(y),width:w,'--mopen-height':h+'px'} as React.CSSProperties} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
+ const art=(name:string,x:number,y:number,w:number,h:number)=><img className="mArt" alt={'Originalabbildung '+name} src={`assets/native-ab11/p${page}-${name}.png`} style={{left:x,top:Y(y),width:w,height:h}}/>;
+ const title=(n:string,y:number,s:string,kb='',x=149)=><>{kb&&txt(104,y+5,40,kb,'mKB')}<div className="mNumber" style={{left:x,top:Y(y)}}>{n}</div>{txt(x+35,y,700,s,'mTitle')}</>;
+ const head=(s:string,ruleX:number,ruleY:number,x=143,y=138)=><>{txt(x,y,740,s,'mHeader')}<div className="mHRule" style={{left:ruleX,top:ruleY,width:900-ruleX}}/></>;
+ const data=scanData['ab-a11:'+page];
+ const answers=(group:string)=>Object.fromEntries(data.fields.filter(fl=>fl.group===group&&fl.kind!=='radio'&&fl.kind!=='checkbox'&&fl.answer!==undefined).map(fl=>[fl.id,fl.answer!]));
+ const check=(id:string,x:number,y:number,expected=answers(id))=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><button onClick={()=>G({...graded,[id]:Object.entries(expected).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}>Prüfen ✓</button><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const rule=(id:string,x:number,y:number,test:()=>boolean)=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><button onClick={()=>G({...graded,[id]:test()})}>Prüfen ✓</button><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const listen=(n:string,x:number,y:number)=><button className="mListen" aria-label={'Originalaudio 1 '+n} style={{left:x,top:Y(y)}} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+parseInt(n)+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
+ const radioG=(fid:string,group:string,val:string,x:number,y:number,label:string)=><input className="mRadio" data-native-radio={fid} type="radio" name={'native-ab11-'+page+'-'+group} aria-label={label} style={{left:x,top:Y(y)}} checked={v[group]===val} onChange={()=>set(group,val)}/>;
+ const side=(s:string,y:number)=><div className="nabSide" style={{left:100,top:Y(y)}}>{s}</div>;
+ const sq='▪';
+ const footerW:Record<string,string>={'79':'neunundsiebzig','80':'achtzig','81':'einundachtzig','82':'zweiundachtzig','83':'dreiundachtzig','84':'vierundachtzig','85':'fünfundachtzig','86':'sechsundachtzig','87':'siebenundachtzig'};
+ return <div className={"nativeAB11 nativeAB11Module1 nativeAB11Lessons45 nativeAB11Lesson10Mid"+(Number(page)>=84?' nativeAB11L11':'')} ref={host} data-native-ab11-page={page}><div className="nabCanvas mCanvas" style={{transform:`translate(-50%,-50%) scale(${scale})`}}>
+ {page==='79'&&<>
+ {head('BASISTRAINING',345,154)}
+ {side('STRUKTUREN',235)}{side('STRUKTUREN',563)}{side('STRUKTUREN',864)}
+ {title('4',202,'Trennbar oder nicht? Ergänzen Sie, wo nötig.','KB 5')}
+ <div className="mText" style={{left:177,top:230,width:560}}><Words s={'a  '+sq+' '}/><span className="mExample">Steigt</span><Words s=" ihr am Goetheplatz "/><span className="mExample">ein</span><Words s="? (einsteigen)"/></div>
+ <div className="mText" style={{left:177,top:254,width:560}}><Words s={'b  '+sq+' Wann '}/><span className="mExample">telefonierst</span><Words s=" du mit Oma ____/____? (telefonieren)"/></div>
+ {txt(177,276,36,'c  '+sq)}{txt(212,276,92,'Heute Abend')}{f('u4-c1',305,272,87)}{txt(398,276,40,'wir')}{f('u4-c2',441,272,77)}{txt(524,276,290,'. Kommst du auch? (fernsehen)')}
+ {txt(177,294,36,'d  '+sq)}{txt(212,294,75,'Wo')}{f('u4-d1',244,294,100)}{txt(352,294,45,'ihr')}{f('u4-d2',402,294,78)}{txt(486,294,110,'? (umsteigen)')}
+ {txt(177,318,36,'e  '+sq)}{f('u4-e1',212,318,88)}{txt(311,318,170,'ich bitte einen Kaffee')}{txt(486,318,220,'______? (bekommen)')}
+ {txt(177,339,36,'f  '+sq)}{txt(211,339,75,'Vielleicht')}{f('u4-f1',291,335,84)}{txt(383,339,250,'ich am Samstag meine Freundin')}{f('u4-f2',639,335,76)}{txt(721,339,120,'. (mitbringen)')}
+ {txt(177,361,36,'g  '+sq)}{txt(211,361,95,'Am Sonntag')}{f('u4-g1',310,363,77)}{txt(394,361,175,'ich erst um 12 Uhr')}{txt(575,361,80,'______.')}{txt(650,361,120,'(frühstücken)')}
+ {check('u4',177,392)}
+ {title('5',419,'Schreiben Sie eigene Sätze wie in 4 und tauschen Sie mit Ihrer\nPartnerin / Ihrem Partner.','KB 5')}
+ {open('u5-own',177,468,660,46,'5 eigene Sätze')}
+ {title('6',525,'Schreiben Sie Sätze.')}
+ {txt(177,560,30,'a')}{txt(197,558,340,'aussteigen/am Rathausplatz/wir.')}
+ {txt(177,581,30,'b')}{txt(197,579,340,'der Zug/wo/abfahren/nach Berlin?')}
+ {txt(177,604,30,'c')}{txt(197,602,340,'mich/du/anrufen?')}
+ {txt(533,560,30,'d')}{txt(553,558,300,'dich/abholen/um 16.45 Uhr/ich.')}
+ {txt(533,581,30,'e')}{txt(553,579,300,'einen Kuchen/ihr/mitbringen?')}
+ {txt(533,604,30,'f')}{txt(553,602,300,'ankommen/wann/der Bus?')}
+ <div className="mGridTable" style={{left:175,top:626,width:420,height:151}}/>
+ {txt(184,640,18,'a')}{txt(184,665,18,'b')}{txt(184,689,18,'c')}{txt(184,714,18,'d')}{txt(184,738,18,'e')}{txt(184,763,18,'f')}
+ <div className="mText mExample" style={{left:206,top:640,width:95}}>Wir</div><div className="mText mExample" style={{left:310,top:640,width:60}}>steigen</div><div className="mText mExample" style={{left:378,top:640,width:160}}>am Rathausplatz</div><div className="mText mExample" style={{left:548,top:640,width:45}}>aus.</div>
+ {txt(206,665,60,'Wo')}{f('u6-b2',305,661,67)}<div className="mText mExample" style={{left:378,top:665,width:160}}>der Zug nach Berlin</div>{f('u6-b4',545,661,35)}{txt(583,665,15,'?')}
+ {f('u6-c1',203,685,102)}{f('u6-c2',305,685,67)}{f('u6-c3',372,685,173)}{f('u6-c4',545,685,47)}{txt(597,689,15,'?')}
+ {f('u6-d1',203,710,102)}{f('u6-d2',305,710,67)}{f('u6-d3',372,710,173)}{f('u6-d4',545,710,47)}{txt(597,714,15,'.')}
+ {f('u6-e1',203,734,102)}{f('u6-e2',305,734,67)}{f('u6-e3',372,734,173)}{f('u6-e4',545,734,47)}{txt(597,738,15,'?')}
+ {f('u6-f1',203,759,102)}{f('u6-f2',305,759,67)}{f('u6-f3',372,759,173)}{f('u6-f4',545,759,47)}{txt(597,763,15,'?')}
+ {check('u6',620,795)}
+ {title('7',833,'Fremd in der Stadt. Was denkt Jutta? Schreiben Sie.','KB 6')}
+ {art('woman',131,879,272,241)}
+ <div className="mText mExample" style={{left:422,top:862,width:330}}>Also, ich steige am Flughafen in die S-Bahn ein.</div>
+ {txt(422,888,135,'Am Hauptbahnhof')}{f('u7-1',561,882,151)}
+ {f('u7-2',421,907,193)}{txt(620,907,130,'. Am Eifelplatz')}
+ {f('u7-3',421,926,140)}{txt(566,926,65,'und')}{f('u7-4',636,926,116)}
+ {f('u7-5',421,947,320)}{txt(746,947,15,'.')}
+ <div className="mText mExample" style={{left:427,top:1020,width:310}}>Zentrum Köln → „Schulz und Partner“ (Praktikum Mo-Fr)</div>
+ <div className="mText mExample" style={{left:427,top:1044,width:310}}>– am Flughafen in die S-Bahn einsteigen</div>
+ <div className="mText mExample" style={{left:427,top:1066,width:310}}>– am Hauptbahnhof in die U-Bahn umsteigen</div>
+ <div className="mText mExample" style={{left:427,top:1088,width:310}}>– am Eifelplatz aussteigen</div>
+ <div className="mText mExample" style={{left:427,top:1110,width:310}}>– Frau Lerch anrufen</div>
+ {rule('u7',421,975,()=>{const seg=(...ids:string[])=>norm(ids.map(k=>v[k]||'').join(' '));return seg('u7-1','u7-2').includes(norm('steige ich in die U-Bahn um'))&&norm(v['u7-3']||'')===norm('steige ich aus')&&seg('u7-4','u7-5').includes(norm('rufe Frau Lerch an'))})}
+ </>}
+ {page==='80'&&<>
+ {head('BASISTRAINING',345,150)}
+ {side('WÖRTER',261)}{side('KOMMUNIKATION',683)}{side('HÖREN',1067)}
+ {title('8',203,'Ergänzen Sie und vergleichen Sie.','KB 7',125)}
+ <div className="mText mBankList" style={{left:158,top:233,width:340}}><Words s="Flugzeug | Taxi | Straßenbahn | "/><span className="mStruck">Zug</span><Words s=" | U-Bahn | Bus"/></div>
+ <div className="mTableHead8" style={{left:255,top:258,width:630}}><span style={{left:34}}>Deutsch</span><span style={{left:158}}>Englisch</span><span style={{left:342,whiteSpace:'nowrap'}}>Meine Sprache oder andere Sprachen</span></div>
+ {['a','b','c','d','e','f'].map((k,i)=>{const y=301+i*51;return <span key={k}>{txt(161,y,18,k)}{art('photo'+k,167,y-7,131,58)}</span>})}
+ <div className="mText mExample" style={{left:305,top:301,width:115}}>der Zug.</div>
+ {txt(413,301,150,'train')}{txt(413,355,150,'plane')}{txt(413,410,150,'taxi')}{txt(413,462,170,'tram, streetcar')}{txt(413,513,150,'bus')}{txt(413,558,170,'underground')}
+ {f('u8-b',291,355,113)}{f('u8-c',291,406,113)}{f('u8-d',291,457,113)}{f('u8-e',291,508,113)}{f('u8-f',291,560,113)}
+ {['a','b','c','d','e','f'].map((k,i)=>f('u8s-'+k,700,299+i*51,155,'8 eigene Sprache '+k))}
+ {check('u8',161,608)}
+ {title('9',641,'Mike in München, Teil 1','KB 7',125)}
+ {txt(161,679,300,'Ordnen Sie die Fragen zu.','mTitle')}
+ <div className="mText mBank" style={{left:161,top:705,width:560}}><Words s="Wann kommst du? | Holst du mich ab? | Nimmst du den Zug? | "/><span className="mStruck">Hast du Zeit?</span></div>
+ {art('man',695,556,202,218)}
+ <div className="mText" style={{left:165,top:740,width:520}}><span className="mSq">■</span><Words s="  Hallo Tom, hier ist Mike."/></div>
+ <div className="mText" style={{left:165,top:761,width:520}}><span className="mTr">▲</span><Words s="  Hallo Mike, wie geht's?"/></div>
+ <div className="mText" style={{left:165,top:783,width:560}}><span className="mSq">■</span><Words s="  Gut, danke. Ich bin nächste Woche in München und möchte dich gern besuchen."/></div>
+ <div className="mText mExample" style={{left:181,top:805,width:200}}>Hast du Zeit?</div>
+ <div className="mText" style={{left:165,top:826,width:120}}><span className="mTr">▲</span><Words s="  Ja natürlich!"/></div>{f('u9-q1',275,821,555)}
+ <div className="mText" style={{left:165,top:848,width:300}}><span className="mSq">■</span><Words s="  Am Mittwoch, um 20:50 Uhr."/></div>
+ <div className="mText" style={{left:165,top:868,width:16}}><span className="mTr">▲</span></div>{f('u9-q2',181,864,650)}
+ <div className="mText" style={{left:165,top:890,width:275}}><span className="mSq">■</span><Words s="  Ja. Ich komme am Ostbahnhof an."/></div>{f('u9-q3',438,889,390)}
+ <div className="mText" style={{left:165,top:911,width:560}}><span className="mTr">▲</span><Words s="  Na klar, gern. Ich arbeite bis 20 Uhr. Dann hole ich dich ab."/></div>
+ <div className="mText" style={{left:165,top:932,width:300}}><span className="mSq">■</span><Words s="  Danke, dann bis Mittwoch!"/></div>
+ {check('u9',167,954)}
+ {title('10',996,'Mike in München, Teil 2','KB 7',125)}
+ {txt(161,1027,400,'Hören Sie. Was ist richtig? Kreuzen Sie an.','mTitle')}{listen('43',93,1049)}
+ {[['a','Wann ist Mike in München?','Um 18:30 Uhr.','Um 19:00 Uhr.',1055],['b','Mike fährt …','zum Flughafen.','nach Daglfing.',1080],['c','Er nimmt …','die S-Bahn.','die U-Bahn.',1100],['d','Wie lange dauert die Fahrt?','20 Minuten','7 Minuten',1120],['e','Was bringt Mike mit?','Wurst','Brot',1139]].map(([k,q,o1,o2,y])=><span key={k as string}>{txt(166,y as number,255,(k as string)+'  '+(q as string))}{radioG('u10-'+k+'1','u10-'+k,'1',423,y as number,q+' '+o1)}{txt(442,y as number,135,o1 as string)}{radioG('u10-'+k+'2','u10-'+k,'2',581,y as number,q+' '+o2)}{txt(602,y as number,150,o2 as string)}</span>)}
+ {rule('u10',166,1162,()=>v['u10-a']==='1'&&v['u10-b']==='2'&&v['u10-c']==='1'&&v['u10-d']==='2'&&v['u10-e']==='2')}
+ </>}
+ {page==='81'&&<>
+ {head('TRAINING:  HÖREN',536,140,140,122)}
+ {title('1',185,'Wo sind die Personen? Hören Sie und kreuzen Sie an.','',147)}{listen('44-46',93,190)}
+ {txt(275,222,200,'Foto A     Foto B     Foto C')}
+ {[1,2,3].map(r=><span key={r}>{txt(176,218+r*22,100,'Durchsage '+r)}{radioG('u1-d'+r+'a','u1-d'+r,'a',291,218+r*22,'Durchsage '+r+' Foto A')}{radioG('u1-d'+r+'b','u1-d'+r,'b',367,218+r*22,'Durchsage '+r+' Foto B')}{radioG('u1-d'+r+'c','u1-d'+r,'c',445,218+r*22,'Durchsage '+r+' Foto C')}</span>)}
+ {rule('g1',505,262,()=>v['u1-d1']==='b'&&v['u1-d2']==='c'&&v['u1-d3']==='a')}
+ {txt(187,318,20,'A')}{txt(385,318,20,'B')}{txt(615,318,20,'C')}
+ {art('photoa',177,336,184,105)}{art('photob',384,336,201,104)}{art('photoc',610,336,193,100)}
+ {title('2',471,'Durchsagen','',149)}
+ {txt(156,505,530,'a  Lesen Sie die Aufgaben. Markieren Sie alle Zahlen und Uhrzeiten.','mTitle')}
+ {txt(178,541,20,'1')}{txt(179,562,470,'Die Passagiere von Flug 134 können jetzt einsteigen.')}{txt(179,583,470,'Die Passagiere von Flug 243 können jetzt einsteigen.')}
+ {txt(178,615,20,'2')}{txt(179,634,470,'Die U5 fährt am Montag nur bis zum Ostbahnhof.')}{txt(179,658,470,'Der Bus Nr. 58 fährt am Montag nur bis zum Ostbahnhof.')}
+ {txt(178,690,20,'3')}{txt(179,708,470,'Der ICE 756 aus Hamburg kommt heute um 13:27 Uhr an.')}{txt(179,731,470,'Der ICE 756 aus Hamburg kommt heute um 13:50 Uhr an.')}
+ {radioG('u2-1a','u2-1','a',621,557,'Satz 1a')}{radioG('u2-1b','u2-1','b',621,578,'Satz 1b')}
+ {radioG('u2-2a','u2-2','a',621,630,'Satz 2a')}{radioG('u2-2b','u2-2','b',621,652,'Satz 2b')}
+ {radioG('u2-3a','u2-3','a',621,704,'Satz 3a')}{radioG('u2-3b','u2-3','b',621,726,'Satz 3b')}
+ <div className="mTipBox" style={{left:687,top:555,width:168,height:105}}><div className="mTipLabel">TIPP</div><div className="mTipText"><Words s="Achten Sie auf Zahlen und Uhrzeiten. Am Bahnhof/Flughafen … müssen Sie Zahlen und Zeiten richtig verstehen."/></div></div>
+ {listen('44-46',93,773)}{txt(179,768,600,'b  Hören Sie noch einmal. Welche Sätze sind richtig? Kreuzen Sie in a an.','mTitle')}
+ {rule('g2',621,742,()=>v['u2-1']==='b'&&v['u2-2']==='b'&&v['u2-3']==='b')}
+ {txt(140,829,300,'TRAINING:  AUSSPRACHE','mHeader')}{txt(554,835,240,'Wortakzent bei trennbaren Verben','mScript2')}<div className="mHRule" style={{left:832,top:841,width:67}}/>
+ {listen('47',93,881)}{title('1',876,'Hören Sie und markieren Sie den\nWortakzent.','',154)}
+ <div className="mText" style={{left:182,top:932,width:280}}>fahren – <u>ab</u>fahren | kommen –<br/><u>an</u>kommen | kaufen – <u>ein</u>kaufen |<br/>sehen – <u>fern</u>sehen | bringen –<br/><u>mit</u>bringen</div>
+ {listen('48',138,1026)}{txt(183,1028,450,'Hören Sie noch einmal und sprechen Sie nach.','mTitle')}
+ {title('2',1064,'Richtig oder falsch? Kreuzen Sie an.','',149)}
+ <div className="mRegelBox" style={{left:200,top:1100,width:240,height:62}}><div className="mRegelLabel">REGEL</div>{txt(210,1106,220,'Der Wortakzent ist bei trennbaren Verben auf dem trennbaren Wortteil.','mSmall')}</div>
+ {radioG('u4-r','u4','r',207,1139,'richtig')}{txt(228,1139,60,'richtig')}{radioG('u4-f','u4','f',296,1139,'falsch')}{txt(318,1139,60,'falsch')}
+ {rule('g4',207,1165,()=>v['u4']==='r')}
+ {listen('49',536,875)}{title('3',872,'Hören Sie.\nSprechen Sie dann.','',586)}
+ <div className="mText" style={{left:614,top:932,width:220}}>Ich <u>nehme</u> heut' den Zug.<br/><u>Ein</u>steigen<br/><u>Aus</u>steigen<br/><u>Um</u>steigen<br/>Vorsicht an Gleis <u>sieben</u>!</div>
+ <div className="mText" style={{left:614,top:1044,width:220}}>Ich <u>nehme</u> heut' den Zug.<br/><u>Ab</u>fahren<br/><u>An</u>kommen<br/><u>An</u>rufen<br/>Holst du mich bitte <u>ab</u>?</div>
+ </>}
+ {Number(page)%2?txt(690,({79:1209,81:1193,83:1205,85:1204,87:1211} as Record<string,number>)[page]||1208,180,footerW[page]+' | '+page,'mFooter'):<>{txt(48,({80:1211,82:1208,84:1212,86:1206} as Record<string,number>)[page]||1208,60,'Modul 4','mFooter mFooterTab')}{txt(112,({80:1211,82:1208,84:1212,86:1206} as Record<string,number>)[page]||1208,170,page+' | '+footerW[page],'mFooter')}</>}
+ </div><audio className="nabPlayer" ref={audio} controls hidden={!track} aria-label="Originalaudio Arbeitsbuch"/></div>;
+}
