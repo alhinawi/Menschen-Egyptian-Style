@@ -28,6 +28,7 @@ function Inner({data}:{data:NativePage}){
  const key='native-kb11-'+data.page;
  const [v,setV]=useState<Record<string,string>>(()=>{try{const saved=localStorage.getItem(key);if(saved)return JSON.parse(saved);if(String(data.page)==='42'){const old=JSON.parse(localStorage.getItem('native-pilot-kb11-42')||'{}');const next={...old};['gitarre','tanzen','tennis'].forEach((name,i)=>{if(old['kompliment'+(i+1)])next['t4a-'+name]=old['kompliment'+(i+1)]});for(let i=0;i<5;i++)if(old['skala'+i])next['t6a-'+(i+1)]=old['skala'+i];return next}return {}}catch{return {}}});
  const [res,setRes]=useState<Record<string,boolean>>({});
+ const [saved,setSaved]=useState<Record<string,boolean>>({});
  const players=useRef<Record<string,HTMLAudioElement|null>>({});
  const W=data.w,H=data.h;
  const pos=(x:number,y:number,w:number,h:number):CSSProperties=>({left:x/W*100+'%',top:y/H*100+'%',width:w/W*100+'%',height:h/H*100+'%'});
@@ -64,6 +65,7 @@ function Inner({data}:{data:NativePage}){
    {String(data.page)==='31'&&<><div className="nkb31Pairing lmHideAll"><LineMatching id="t6b-colors" left={['1 ist','2 ist','3 ist','4 ist','5 ist']} right={['blau.','rot.','gelb.','grün.','braun.']} values={v} onMatch={set} leftX={588} rightX={574} leftWidth={18} rightWidth={94} ys={[645,665,685,705,725]} width={W} height={H} fontSize={14} example={[0,4]} dotR={1.5} leftDotXs={[594,594,594,594,594]} rightDotXs={[612,612,612,612,612]}/></div><div className="nkbCheck nkbCheckLm nkb31ColorCheck" style={{...pos(620,750,110,24),position:'absolute',zIndex:9}}><CheckButton onClick={()=>setRes(r=>({...r,'t6b-colors':['4','3','2','1','0'].every((a,i)=>i===0||v['t6b-colors-'+i]===a)}))}/><output>{res['t6b-colors']===undefined?'':res['t6b-colors']?'✓ Richtig!':'Noch einmal'}</output></div></>}
    <ClipMarkers book="kb-a11" page={data.page}/>
    {data.audio.map(a=><button key={a.id} data-audio-src={a.src} {...(a.task?{'data-task':a.task}:{})} className="nkbListen" style={pos(a.x,a.y,a.w,a.h)} aria-label={a.label||('Originalaudio '+a.id)} onClick={()=>play(a.id)}/>)}
+   {((data as any).neutral||[]).map((n:[string,number,number])=><div key={'n'+n[0]} className="nkbCheck nkbCheckLm" style={{left:n[1]/W*100+'%',top:n[2]/H*100+'%'}}><CheckButton onClick={()=>setSaved(s=>({...s,[n[0]]:true}))}></CheckButton><output>{saved[n[0]]?'Gespeichert':''}</output></div>)}
    {groups.map(g=><div key={g} className={"nkbCheck"+(data.compact?.includes(g)?" nkbCompact":"")} style={checkPos(g)}><CheckButton onClick={()=>grade(g)}></CheckButton><output>{data.fields.filter(f=>f.group===g&&f.answer!==undefined).every(f=>res[f.id]!==undefined)?(data.fields.filter(f=>f.group===g&&f.answer!==undefined).every(f=>res[f.id])?'✓ Richtig!':'Noch einmal'):''}</output></div>)}
   </div>
   {data.audio.length>0&&<div className="nkbAudio">{data.audio.map(a=><label key={a.id}><span>{a.label||a.id}</span><audio ref={el=>{players.current[a.id]=el}} controls preload="none" src={a.src}/></label>)}</div>}

@@ -182,3 +182,7 @@
 .nkb[data-native-page="58"] .nkbCanvas input[type=radio].nkbField{--answer-cross-size:56%!important;outline-offset:-2px}
 .nkb[data-native-page="60"] .nkbCanvas input[type=checkbox].nkbField{border-radius:50%!important;border:1px solid transparent!important;--answer-cross-size:56%!important;outline-offset:-2px}
 .nkb[data-native-page="62"] .nkbCanvas input[type=radio].nkbField{--answer-cross-size:56%!important;outline-offset:-2px}
+
+.nkb[data-native-page="41"] .nkbLine{font-family:KbDroid,serif}
+.nkb[data-native-page="41"] .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
+.nkb[data-native-page="41"] .nkbLine.nkbB{font-weight:500}
