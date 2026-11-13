@@ -1,0 +1,576 @@
+{
+"w": 1072,
+"h": 1449,
+"items": [
+{
+"k": "a",
+"n": "bg",
+"x": 0,
+"y": 0,
+"w": 1072,
+"h": 1449,
+"alt": "Hintergrundfoto und Titelband"
+},
+{
+"k": "t",
+"x": 156,
+"y": 264,
+"w": 334,
+"t": "Teil 2: Ich habe Bauchschmerzen!",
+"b": true,
+"c": "naRSans",
+"s": 21,
+"col": "#222"
+},
+{
+"k": "t",
+"x": 152,
+"y": 298,
+"w": 283,
+"t": "„Guten Morgen, Anja! Gut geschlafen?“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 152,
+"y": 324,
+"w": 69,
+"t": "„Naja ...“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 152,
+"y": 349,
+"w": 423,
+"t": "„Was möchtest du zum Frühstück? Tee? Kaffee? Semmeln¹?",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 164,
+"y": 375,
+"w": 54,
+"t": "Ein Ei?“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 153,
+"y": 401,
+"w": 92,
+"t": "„Gar nichts.“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 153,
+"y": 427,
+"w": 155,
+"t": "„Nichts? Was ist los?“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 153,
+"y": 453,
+"w": 362,
+"t": "„Ich ... ich bin krank. Ich habe Bauchschmerzen.“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 153,
+"y": 478,
+"w": 243,
+"t": "„Oje, sollen wir zum Arzt gehen?“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 153,
+"y": 504,
+"w": 261,
+"t": "„Ja, es geht mir wirklich nicht gut.“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 154,
+"y": 530,
+"w": 149,
+"t": "Herr Rossmann bellt.",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 153,
+"y": 556,
+"w": 391,
+"t": "„Nein, Herr Rossmann, du kannst nicht mitkommen.“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 154,
+"y": 582,
+"w": 404,
+"t": "Herr Rossmann bellt wieder. Er legt sich auf den Boden.",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 153,
+"y": 608,
+"w": 396,
+"t": "„Ich glaube, Herr Rossmann ist auch krank“, sagt Anja.",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 153,
+"y": 633,
+"w": 420,
+"t": "„Anja ist krank, also ist Herr Rossmann auch krank ... Ok,",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 164,
+"y": 659,
+"w": 403,
+"t": "du darfst mitkommen. Aber du musst im Auto warten.“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 620,
+"y": 300,
+"w": 336,
+"t": "Beim Arzt sitzt Paul im Wartezimmer und liest",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 630,
+"y": 326,
+"w": 59,
+"t": "Zeitung.",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 619,
+"y": 352,
+"w": 279,
+"t": "„Paul ... bist du das?“, fragt eine Frau.",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 619,
+"y": 377,
+"w": 349,
+"t": "„Äh, ja, ich bin Paul. Und Sie sind ...? Ach, Lisa!",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 631,
+"y": 404,
+"w": 342,
+"t": "Das gibt es ja nicht! Wie geht’s dir? Was machst",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 629,
+"y": 429,
+"w": 70,
+"t": "du jetzt?“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 619,
+"y": 455,
+"w": 219,
+"t": "„Ich bin Architektin. Und du?“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 619,
+"y": 481,
+"w": 143,
+"t": "„Ich bin Journalist.“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 619,
+"y": 507,
+"w": 349,
+"t": "„Wir haben uns seit der Schule nicht mehr gese-",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 630,
+"y": 532,
+"w": 37,
+"t": "hen.“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 618,
+"y": 558,
+"w": 100,
+"t": "„Viel zu lang!“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 618,
+"y": 584,
+"w": 101,
+"t": "„Ja, wirklich.“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 618,
+"y": 610,
+"w": 350,
+"t": "Anja kommt zurück: „Paul, alles in Ordnung, der",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 630,
+"y": 636,
+"w": 345,
+"t": "Doktor hat mir Tabletten gegeben. Er sagt, bald",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 629,
+"y": 661,
+"w": 227,
+"t": "sind die Bauchschmerzen weg.“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 668,
+"y": 687,
+"w": 220,
+"t": "Paul sieht noch immer Lisa an.",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 666,
+"y": 712,
+"w": 73,
+"t": "„Paul ...?“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 664,
+"y": 739,
+"w": 297,
+"t": "„Oh, Entschuldigung. Das ist super, Anja.",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 665,
+"y": 764,
+"w": 278,
+"t": "Schau mal, ich habe eine Freundin aus",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 664,
+"y": 790,
+"w": 197,
+"t": "der Schule getroffen: Lisa.“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 664,
+"y": 816,
+"w": 305,
+"t": "„Ich mache am Samstag eine Geburtstags-",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 663,
+"y": 842,
+"w": 311,
+"t": "feier“, sagt Lisa. „Wollt ihr auch kommen?“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 662,
+"y": 867,
+"w": 249,
+"t": "„Ja, sehr gern“, sagt Paul. „Super!“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 663,
+"y": 893,
+"w": 319,
+"t": "Lisa gibt ihnen ihre Adresse, dann gehen sie",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 662,
+"y": 919,
+"w": 126,
+"t": "zurück zum Auto.",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 660,
+"y": 945,
+"w": 331,
+"t": "„Herr Rossmann, bist du noch immer krank?“,",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 660,
+"y": 971,
+"w": 76,
+"t": "fragt Anja.",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 661,
+"y": 996,
+"w": 225,
+"t": "Herr Rossmann bellt ganz leise.",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 660,
+"y": 1022,
+"w": 299,
+"t": "„Oh, du Armer! Sieh mal, der Arzt hat mir",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 659,
+"y": 1048,
+"w": 196,
+"t": "Medizin für dich gegeben.“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 658,
+"y": 1074,
+"w": 296,
+"t": "Anja gibt Herrn Rossmann bunte Hunde-",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 659,
+"y": 1099,
+"w": 65,
+"t": "Bonbons.",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 658,
+"y": 1125,
+"w": 195,
+"t": "„Na, geht’s wieder besser?“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 657,
+"y": 1151,
+"w": 307,
+"t": "Herr Rossmann bellt. Alles wieder super ...",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 656,
+"y": 1177,
+"w": 299,
+"t": "„Ich freue mich auf die Party!“, sagt Paul,",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 656,
+"y": 1203,
+"w": 244,
+"t": "„Lisa ist sehr nett! Was sagst du?“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 656,
+"y": 1228,
+"w": 84,
+"t": "„Hm ... ja.“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 654,
+"y": 1254,
+"w": 211,
+"t": "„Und sie sieht auch toll aus.“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 654,
+"y": 1280,
+"w": 103,
+"t": "„Hm ... naja.“",
+"s": 17.2,
+"c": "naRSansR",
+"col": "#333"
+},
+{
+"k": "t",
+"x": 652,
+"y": 1323,
+"w": 300,
+"t": "1 Semmel die, -n: in Österreich und Süddeutschland für Brötchen",
+"s": 10.5,
+"c": "naRSansR",
+"col": "#333"
+}
+]
+}

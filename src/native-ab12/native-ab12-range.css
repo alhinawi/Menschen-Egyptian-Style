@@ -39,3 +39,12 @@
 [data-native-ab12="79"] .naRCanvas .naHand.naRS .tapWord{text-decoration-color:currentColor;text-decoration-thickness:1.5px}
 
 [data-native-ab12="79"] .naRCanvas .naText:not(.naRSans):not(.naRSansR){-webkit-text-stroke:.22px currentColor}
+/* pinned so global rules from other pages cannot change range-page fonts */
+.nativeAB12 .naRCanvas .naText.naR{font-family:ABRangeDroid,DroidSerif,Georgia,serif}
+.nativeAB12 .naRCanvas .naText.naR.naRSans,.nativeAB12 .naRCanvas .naText.naR.naRSansR{font-family:FiraSans,'Trebuchet MS',sans-serif}
+.nativeAB12 .naRCanvas .naText.naR{font-size:var(--naRs)!important;letter-spacing:normal!important}
+.nativeAB12 .naRCanvas .naText.naR.naRSans,.nativeAB12 .naRCanvas .naText.naR.naRSansR{font-family:FiraSans,'Trebuchet MS',sans-serif!important}
+.nativeAB12 .naRCanvas .naText.naR:not(.naRSans):not(.naRSansR){font-family:ABRangeDroid,DroidSerif,Georgia,serif!important}
+.nativeAB12 .naRCanvas .naText.naR.naHead{letter-spacing:.6px!important}
+.nativeAB12 .naRCanvas .naText.naR.naRThin{letter-spacing:2px!important}
+.nativeAB12 .naRCanvas .naRField{font-size:20px!important;letter-spacing:normal!important}
