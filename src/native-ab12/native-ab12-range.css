@@ -92,3 +92,5 @@
 .nativeAB12[data-native-ab12="61"] .naRCanvas .naText.naR.naFiraM{font-family:FiraM,FiraSans,sans-serif!important;font-weight:500!important;-webkit-text-stroke:0!important}
 .nativeAB12[data-native-ab12="61"] .naRCanvas .naText.naR.naDB{font-family:DroidB,ABRangeDroid,serif!important;font-weight:700!important;-webkit-text-stroke:0!important}
 .nativeAB12[data-native-ab12="61"] .naRCanvas .naRField.sl{border-bottom-color:transparent!important;background:transparent!important;box-shadow:none!important}
+/* p61 bold table headings override the generic serif family pin. */
+.nativeAB12[data-native-ab12="61"] .naRCanvas .naText.naR.naDB.naDB{font-family:DroidB,ABRangeDroid,serif!important;font-weight:700!important;-webkit-text-stroke:0!important}
