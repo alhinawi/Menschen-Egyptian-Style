@@ -115,7 +115,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {title('5',112,416,700,'Ergänzen Sie die Präposition und den Artikel.','naYB')}
   {side(70,462,'STRUKTUREN')}
   {text(156,456,200,'Wo ist denn …','naS20 naNw')}
-  {text(155,512,20,'a','naLet13')}<div className="naText naS19 naNw" style={{left:180,top:513,width:367,letterSpacing:'0.7px'}}><Words text="… das Hotel „Kirchblick“? – Das ist direkt"/></div>{art('am',549,507,25,29)}{text(577,513,80,'Bahnhof.','naS18 naNw')}
+  {text(155,512,20,'a','naLet13')}<div className="naText naS19 naNw" style={{left:180,top:513,width:367,letterSpacing:'0.4px',wordSpacing:'-0.5px'}}><Words text="… das Hotel „Kirchblick“? – Das ist direkt"/></div>{art('am',549,507,25,29)}{text(577,513,80,'Bahnhof.','naS18 naNw')}
   {art('hotel',665,468,165,94)}
   {text(155,602,20,'b','naLet13')}{text(185,602,180,'… die Post? – Die ist','naS20 naNw')}{field('7-5b1',366,604,109,'5b1')}{text(483,602,100,'Polizei und','naS20 naNw')}{field('7-5b2',585,604,115,'5b2')}{text(708,602,160,'Café „Glockner“.','naS20 naNw')}
   {art('polizei',860,555,156,87)}
