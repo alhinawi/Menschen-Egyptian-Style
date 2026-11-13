@@ -13,6 +13,7 @@ export function NativeAB11P92(){
  const host=useRef<HTMLDivElement>(null),[scale,S]=useState(1),[values,V]=useState<Record<string,string>>(()=>{try{return {"u9-a":"in",...JSON.parse(localStorage.getItem('native-ab11-92')||'{}')}}catch{return {}}}),[checked,C]=useState<Record<string,boolean>>({});
  useLayoutEffect(()=>{const el=host.current;if(!el)return;const update=()=>S(Math.min(el.clientWidth/901,el.clientHeight/1275));update();const ro=new ResizeObserver(update);ro.observe(el);return()=>ro.disconnect()},[]);
  usePageReset('92','native-ab11-92',()=>{V({'u9-a':'in'});C({})});
+ const groupCorrect=(group:string)=>spec.items.filter((f:any)=>f.group===group&&(f.k==='field'&&f.answer||f.k==='radio'&&f.answer===f.value)).every((f:any)=>f.k==='radio'?values[f.name]===f.answer:f.answer.split('|').some((a:string)=>normalize(values[f.id]||'')===normalize(a)));
  const set=(id:string,value:string)=>{const next={...values,[id]:value};V(next);localStorage.setItem('native-ab11-92',JSON.stringify(next));C(c=>({...c,[id.split('-')[0]]:false}))};
  return <div className="ab11p92" data-native-ab11-page="92" ref={host}><div className="ab11p92Canvas" style={{transform:`translate(-50%,-50%) scale(${scale})`}}>{spec.items.map((it:any,i:number)=>{
  const pos={left:it.x,top:it.y,width:it.w,height:it.h};
@@ -25,13 +26,13 @@ export function NativeAB11P92(){
  if(it.k==='side')return <div key={i} className="p92Side" style={pos}>{it.t}</div>;
  if(it.k==='speaker')return <div key={i} className={'p92Speaker '+it.color} style={pos}/>;
  if(it.k==='open')return <textarea key={i} className="p92Field p92Open" aria-label="8b: eigene Tagebucheinträge" data-native-field={it.id} style={pos} value={values[it.id]||''} onChange={e=>set(it.id,e.target.value)}/>;
- if(it.k==='radio')return <input key={i} type="radio" className={'p92Radio'+(checked[it.group]&&values[it.name]===it.value?(it.answer===it.value?' correct':' wrong'):'')} data-native-radio={it.id} name={it.name} value={it.value} aria-label={it.name+': '+it.value} style={pos} checked={values[it.name]===it.value} onChange={()=>{set(it.name,it.value);C(c=>({...c,u9:false}))}}/>;
+ if(it.k==='radio')return <input key={i} type="radio" className={'p92Radio'+(checked[it.group]&&(!values[it.name]||values[it.name]===it.value)?(values[it.name]===it.answer?' correct':' wrong'):'')} data-native-radio={it.id} name={it.name} value={it.value} aria-label={it.name+': '+it.value} style={pos} checked={values[it.name]===it.value} onChange={()=>{set(it.name,it.value);C(c=>({...c,u9:false}))}}/>;
  if(it.k==='field'){
- const graded=checked[it.group]&&values[it.id]?.trim()&&it.answer;
- const status=graded?(it.answer.split('|').some((a:string)=>normalize(values[it.id])===normalize(a))?' correct':' wrong'):'';
- return <input key={i} data-native-field={it.id} className={'p92Field'+status+(it.group==='u8a'?' p92NotebookField':'')} aria-label={it.id} style={{...pos,'--p92-answer-size':(it.group==='u8a'?9:answerSize(values[it.id]||'',it.w))+'px'} as CSSProperties} value={values[it.id]||''} onChange={e=>set(it.id,e.target.value)}/>;
+ const graded=checked[it.group]&&it.answer;
+ const status=graded?(it.answer.split('|').some((a:string)=>normalize(values[it.id]||'')===normalize(a))?' correct':' wrong'):'';
+ return <input key={i} data-native-field={it.id} className={'p92Field'+status+(it.group==='u8a'?' p92NotebookField':'')} aria-label={it.id} aria-invalid={status===' wrong'} style={{...pos,'--p92-answer-size':(it.group==='u8a'?9:answerSize(values[it.id]||'',it.w))+'px'} as CSSProperties} value={values[it.id]||''} onChange={e=>set(it.id,e.target.value)}/>;
  }
- if(it.k==='check')return <div key={i} className="p92Check" data-native-task={it.group} style={pos}><CheckButton onClick={()=>C(c=>({...c,[it.group]:true}))}/><output aria-live="polite">{checked[it.group]?(it.neutral?'Gespeichert':'Geprüft'):''}</output></div>;
+ if(it.k==='check')return <div key={i} className="p92Check" data-native-task={it.group} style={pos}><CheckButton answers={Object.fromEntries(spec.items.filter((f:any)=>f.k==='field'&&f.group===it.group&&f.answer).map((f:any)=>[f.id,f.answer]))} onClick={()=>C(c=>({...c,[it.group]:true}))}/><output aria-live="polite">{checked[it.group]?(it.neutral?'Gespeichert':groupCorrect(it.group)?'Richtig!':'Noch einmal'):''}</output></div>;
  return null;
  })}</div></div>
 }
