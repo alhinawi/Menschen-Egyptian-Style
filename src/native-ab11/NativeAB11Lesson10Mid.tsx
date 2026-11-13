@@ -26,6 +26,9 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  const rule=(id:string,x:number,y:number,test:()=>boolean)=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:test()})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const markS=(x:number,y:number)=><div className="mText mMark" style={{left:x,top:Y(y),width:16}}><span className="mSq">■</span></div>;
  const markT=(x:number,y:number)=><div className="mText mMark" style={{left:x,top:Y(y),width:16}}><span className="mTr">▲</span></div>;
+ const markSB=(x:number,y:number)=><div className="mText mMarkSq" style={{left:x-1.5,top:Y(y+5),width:12,height:12}}/>;
+ const markTB=(x:number,y:number)=><div className="mText mMarkTr" style={{left:x-1.5,top:Y(y+5)}}/>;
+ const txtX=(x:number,y:number,w:number,s:string,k:number,cls='')=><div className={'mText '+cls} style={{left:x,top:Y(y),width:w,transform:'scaleX('+k+')',transformOrigin:'0 0'}}><Words s={s}/></div>;
  const listen=(n:string,x:number,y:number)=><button className="mListen" aria-label={'Originalaudio 1 '+n} style={{left:x,top:Y(y)}} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+parseInt(n)+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
  const radioG=(fid:string,group:string,val:string,x:number,y:number,label:string)=><input className="mRadio" data-native-radio={fid} type="radio" name={'native-ab11-'+page+'-'+group} aria-label={label} style={{left:x,top:Y(y)}} checked={v[group]===val} onChange={()=>set(group,val)}/>;
  const side=(s:string,y:number)=><div className="nabSide" style={{left:100,top:Y(y)}}>{s}</div>;
@@ -230,17 +233,17 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {txt(498,858,16,'7')}{f('u3b-7',520,854,91,'3b 7 Machst')}{txt(615,860,190,'du gern Hausaufgaben?')}
  {check('u3b',640,885)}
  {title('4',924,'Ergänzen Sie haben in der richtigen Form.','KB 5',125)}
- {markS(155,955)}{art('exhaben',171.1,957.5,36,17)}{txt(214,953,300,'(a) wir jetzt alles für die Party?','mDlg')}
- {markT(155,973)}{txt(173,971,200,'Ich denke ja.','mDlg')}
- {markS(155,999)}{f('u4-b',173,993,69,'4 b Hast')}{txt(248,997,380,'(b) du auch Brot gekauft?','mDlg')}
- {markT(155,1019)}{txt(173,1017,80,'Ja klar. Das','mDlg')}{f('u4-c',266,1013,58,'4 c habe')}{txt(330,1017,330,'(c) ich doch heute Morgen schon gekauft.','mDlg')}
- {markS(155,1042)}{txt(173,1040,270,'Und wo ist der Geburtstagskuchen?','mDlg')}
- {markT(155,1062)}{txt(173,1060,90,'Den Kuchen','mDlg')}{f('u4-d',267.5,1056,72,'4 d hat')}{txt(346,1060,470,'(d) Julia gebacken. Sie bringt ihn heute Abend zur Party mit.','mDlg')}
- {markS(155,1085)}{txt(173,1083,130,'Sehr gut. Und was','mDlg')}{f('u4-e',324.2,1079,79.2,'4 e haben')}{txt(410,1083,160,'(e) wir zu trinken?','mDlg')}
- {markT(155,1107)}{txt(173,1105,240,'Wein, Mineralwasser und Saft.','mDlg')}
- {markS(155,1126)}{txt(173,1124,105,'Super! Und wo','mDlg')}{f('u4-f',292,1120,67,'4 f habt')}{txt(365,1124,240,'(f) ihr das Geschenk für Julia?','mDlg')}
- {markT(155,1146)}{txt(173,1144,540,'Das ist noch in Claudias Auto. Sie kommt um sechs Uhr und bringt es mit.','mDlg')}
- {markS(155,1169)}{txt(173,1167,115,'Gut, ich glaube, jetzt','mDlg')}{f('u4-g',334,1163,72,'4 g haben')}{txt(412,1167,170,'(g) wir wirklich alles.','mDlg')}
+ {markSB(154,953)}{art('exhaben',171.1,957.5,36,17)}{txtX(214,953,300,'(a) wir jetzt alles für die Party?',0.92,'mDlg')}
+ {markTB(154,971)}{txt(173,971,200,'Ich denke ja.','mDlg')}
+ {markSB(154,997)}{f('u4-b',173,993,69,'4 b Hast')}{txtX(248,997,380,'(b) du auch Brot gekauft?',0.94,'mDlg')}
+ {markTB(154,1017)}{txtX(173,1017,80,'Ja klar. Das',0.97,'mDlg')}{f('u4-c',258.8,1013,65.4,'4 c habe')}{txt(330,1017,330,'(c) ich doch heute Morgen schon gekauft.','mDlg')}
+ {markSB(154,1040)}{txtX(173,1040,270,'Und wo ist der Geburtstagskuchen?',0.92,'mDlg')}
+ {markTB(154,1060)}{txtX(173,1060,90,'Den Kuchen',0.94,'mDlg')}{f('u4-d',267.5,1056,72,'4 d hat')}{txtX(346,1060,470,'(d) Julia gebacken. Sie bringt ihn heute Abend zur Party mit.',0.93,'mDlg')}
+ {markSB(154,1083)}{txt(173,1083,130,'Sehr gut. Und was','mDlg')}{f('u4-e',324.2,1079,79.2,'4 e haben')}{txt(410,1083,160,'(e) wir zu trinken?','mDlg')}
+ {markTB(154,1105)}{txtX(173,1105,240,'Wein, Mineralwasser und Saft.',0.94,'mDlg')}
+ {markSB(154,1124)}{txtX(173,1124,105,'Super! Und wo',0.97,'mDlg')}{f('u4-f',285,1120,74.1,'4 f habt')}{txt(365,1124,240,'(f) ihr das Geschenk für Julia?','mDlg')}
+ {markTB(154,1144)}{txtX(173,1144,540,'Das ist noch in Claudias Auto. Sie kommt um sechs Uhr und bringt es mit.',0.93,'mDlg')}
+ {markSB(154,1167)}{txtX(173,1167,115,'Gut, ich glaube, jetzt',0.97,'mDlg')}{f('u4-g',330,1163,76.3,'4 g haben')}{txtX(412,1167,170,'(g) wir wirklich alles.',1.1,'mDlg')}
  {check('u4',620,1160)}
  </>}
  {page==='83'&&<>
@@ -257,6 +260,6 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {open('u2-notes',170,1016,600,156,'2 Eigene Wörter')}
  {art('photos',794,168,107,1010)}
  </>}
- {Number(page)%2?<>{<div className="mText mFooter" style={{left:708,top:({79:1207,81:1191,83:1203,85:1202,87:1209} as Record<string,number>)[page]||1208,width:180}}><Words s={footerW[page]}/><b className="mFooterB">{'  |  '+page}</b></div>}{txt(841,(({79:1207,81:1191,83:1203,85:1202,87:1209} as Record<string,number>)[page]||1208)-13,60,'Modul 4','mFooter mFooterTab mFooterTabOdd')}</>:<>{txt(30,({80:1209,82:1206,84:1212,86:1204} as Record<string,number>)[page]||1208,60,'Modul 4','mFooter mFooterTab')}<div className="mText mFooter mFooterEven" style={{left:103,top:({80:1209,82:1206,84:1210,86:1204} as Record<string,number>)[page]||1208,width:40}}>{page}</div><div className="mText mFooter mFooterEven" style={{left:130.7,top:({80:1209,82:1206,84:1210,86:1204} as Record<string,number>)[page]||1208,width:12}}>|</div><div className="mText mFooter mFooterEven" style={{left:145,top:({80:1209,82:1206,84:1210,86:1204} as Record<string,number>)[page]||1208,width:120}}><Words s={footerW[page]}/></div></>}
+ {Number(page)%2?<>{<div className="mText mFooter" style={{left:708,top:({79:1207,81:1191,83:1203,85:1202,87:1209} as Record<string,number>)[page]||1208,width:180}}><Words s={footerW[page]}/><b className="mFooterB">{'  |  '+page}</b></div>}{txt(841,(({79:1207,81:1191,83:1203,85:1202,87:1209} as Record<string,number>)[page]||1208)-13,60,'Modul 4','mFooter mFooterTab mFooterTabOdd')}</>:<>{txt(30,({80:1209,82:1206,84:1212,86:1204} as Record<string,number>)[page]||1208,60,'Modul 4','mFooter mFooterTab')}<div className="mText mFooter mFooterEven" style={{left:103,top:({80:1209,82:1206,84:1212,86:1204} as Record<string,number>)[page]||1208,width:40}}>{page}</div><div className="mText mFooter mFooterEven" style={{left:130.7,top:({80:1209,82:1206,84:1212,86:1204} as Record<string,number>)[page]||1208,width:12}}>|</div><div className="mText mFooter mFooterEven" style={{left:145,top:({80:1209,82:1206,84:1212,86:1204} as Record<string,number>)[page]||1208,width:120}}><Words s={footerW[page]}/></div></>}
  </div></div><audio className="nabPlayer" ref={audio} controls hidden={!track} aria-label="Originalaudio Arbeitsbuch"/></div>;
 }
