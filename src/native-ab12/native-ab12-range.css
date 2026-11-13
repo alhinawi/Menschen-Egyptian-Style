@@ -27,3 +27,5 @@
 .naRCanvas .naRSansR{font-family:FiraSans,'Trebuchet MS',sans-serif;font-weight:400}
 .naRCanvas .naRSmall{font:15px FiraSans,sans-serif!important;text-align:center;color:#224777!important}
 .naRCanvas .naRDotL{border:2px solid #e2e0cd!important;box-sizing:border-box!important;width:19px!important;height:19px!important}
+.naRCanvas .naRCirc{border:2px solid #e2e0cd!important;border-radius:50%!important;box-sizing:border-box!important;text-align:center;padding:0!important;font-size:13px!important;color:#2d4d99}
+.naRCanvas .naRCirc{width:18px!important;height:18px!important;min-width:0!important;min-height:0!important}
