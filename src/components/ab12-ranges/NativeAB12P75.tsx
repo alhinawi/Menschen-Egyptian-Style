@@ -28,12 +28,12 @@ function P75(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,rect}=h;const D
   {ln(82,200,417,13.5,'… über Vergangenes sprechen (Perfekt: nicht trennbare Verben):',{b:1,cls:H})}
   {ln(505,200,19,13.5,'L19',{cls:D})}
   {conf('s2',207)}
-  {ln(100,217,170,13.5,'Natascha hat sich verändert.',{cls:D})}
-  {ln(277,217,22,13.5,'Tom',{cls:D})}
-  {rule(314,233,45)}{field('p75-s2-1',314,213,45,'2 Tom','naFieldBlank')}
-  {ln(377,217,126,13.5,'Natascha nicht sofort',{cls:D})}
+  {ln(100,217,174,13.5,'Natascha hat sich verändert.',{cls:D})}
+  {ln(278,217,27,13.5,'Tom',{cls:D})}
+  {rule(308,233,64)}{field('p75-s2-1',308,213,64,'2 Tom','naFieldBlank')}
+  {ln(377,217,130,13.5,'Natascha nicht sofort',{cls:D})}
   {rule(98,247,128)}{field('p75-s2-2',98,230,128,'2 erkennen','naFieldBlank')}
-  {ln(236,236,69,13.5,'. (erkennen)',{cls:D})}
+  {ln(236,236,74,13.5,'. (erkennen)',{cls:D})}
   {ln(98,253,17,13.5,'Sie',{cls:D})}
   {rule(120,265,55)}{field('p75-s2-3',120,249,55,'2 Sie','naFieldBlank')}
   {ln(211,253,149,13.5,'vor zwei Jahren ein Baby',{cls:D})}
@@ -49,23 +49,23 @@ function P75(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,rect}=h;const D
   {ln(80,306,275,13.5,'… Befehle formulieren (Imperativ: du/ihr):',{b:1,cls:H})}
   {ln(366,306,20,13.5,'L20',{cls:D})}
   {conf('s3',316)}
-  {ln(98,322,27,13.5,'Line,',{cls:D})}
-  {rule(148,338,71)}{field('p75-s3-1',148,321,71,'3 Line','naFieldBlank')}
-  {ln(223,322,35,13.5,'leise!',{cls:D})}
-  {ln(97,339,104,13.5,'Line und Melanie,',{cls:D})}
+  {ln(98,322,30,13.5,'Line,',{cls:D})}
+  {rule(132,338,87)}{field('p75-s3-1',132,321,87,'3 Line','naFieldBlank')}
+  {ln(223,322,31,13.5,'leise!',{cls:D})}
+  {ln(97,340,105,12.8,'Line und Melanie,',{cls:D})}
   {rule(205,354,111)}{field('p75-s3-2',205,337,111,'3 Melanie','naFieldBlank')}
-  {ln(322,339,97,13.5,'sofort da runter!',{cls:D})}
+  {ln(322,340,96,12.8,'sofort da runter!',{cls:D})}
 
   {/* 4: Personalpronomen im Akkusativ */}
   {ln(79,379,431,13.5,'… sagen, wen man anrufen soll (Personalpronomen im Akkusativ):',{b:1,cls:H})}
   {ln(516,379,20,13.5,'L20',{cls:D})}
   {conf('s4',388)}
-  {ln(96,394,48,13.5,'Lisa, ruf',{cls:D})}
-  {rule(149,411,86)}{field('p75-s4-1',149,395,86,'4 ich','naFieldBlank')}
-  {ln(242,394,150,13.5,'bitte heute noch an! (ich)',{cls:D})}
-  {ln(96,412,48,13.5,'Lisa, ruf',{cls:D})}
-  {rule(149,429,86)}{field('p75-s4-2',149,413,86,'4 er','naFieldBlank')}
-  {ln(241,412,144,13.5,'bitte heute noch an! (er)',{cls:D})}
+  {ln(96,394,50,13.5,'Lisa, ruf',{cls:D})}
+  {rule(149,410,86)}{field('p75-s4-1',149,395,86,'4 ich','naFieldBlank')}
+  {ln(242,394,152,13.5,'bitte heute noch an! (ich)',{cls:D})}
+  {ln(96,412,50,13.5,'Lisa, ruf',{cls:D})}
+  {rule(149,428,86)}{field('p75-s4-2',149,413,86,'4 er','naFieldBlank')}
+  {ln(241,412,146,13.5,'bitte heute noch an! (er)',{cls:D})}
 
   {/* 5: Modalverben dürfen/müssen */}
   {ln(77,450,434,13.5,'… Verbote und Gebote ausdrücken (Modalverben: dürfen, müssen):',{b:1,cls:H})}
