@@ -4,7 +4,7 @@ const DOT_X=[654,684,713];
 const DOT_LBL=['gut','mittel','schwach'];
 const B='#1f3e88';
 
-function P75(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,rect}=h;const D='naDroid75';
+function P75(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,rect}=h;const D='naDroid75';const H='naDroid75H';
  const conf=(id:string,y:number)=><>{DOT_X.map((x,i)=>dot(id,''+(i+1),x,y,'Selbsteinschätzung '+id+' '+DOT_LBL[i]))}</>;
  return <>
   {ln(83,58,327,25,'SELBSTEINSCHÄTZUNG',{cls:'naHdr75'})}
@@ -15,7 +15,7 @@ function P75(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,rect}=h;const D
   {ln(185,119,15,15,'…',{b:1,c:B,cls:D})}
 
   {/* 1: Präteritum war/hatte */}
-  {ln(80,144,351,13.5,'… über Vergangenes sprechen (Präteritum: war, hatte):',{b:1,cls:D})}
+  {ln(83,144,355,13.5,'… über Vergangenes sprechen (Präteritum: war, hatte):',{b:1,cls:H})}
   {ln(441,144,18,13.5,'L19',{cls:D})}
   {conf('s1',154)}
   {ln(101,161,41,13.5,'Früher',{cls:D})}
@@ -25,19 +25,19 @@ function P75(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,rect}=h;const D
   {ln(400,161,170,13.5,'kurze Haare und eine Brille.',{cls:D})}
 
   {/* 2: Perfekt, nicht trennbare Verben */}
-  {ln(80,200,415,13.5,'… über Vergangenes sprechen (Perfekt: nicht trennbare Verben):',{b:1,cls:D})}
+  {ln(82,200,417,13.5,'… über Vergangenes sprechen (Perfekt: nicht trennbare Verben):',{b:1,cls:H})}
   {ln(505,200,19,13.5,'L19',{cls:D})}
   {conf('s2',207)}
-  {ln(100,220,171,13.5,'Natascha hat sich verändert.',{cls:D})}
-  {ln(277,220,23,13.5,'Tom',{cls:D})}
-  {rule(310,233,56)}{field('p75-s2-1',310,216,56,'2 Tom','naFieldBlank')}
-  {ln(378,220,129,13.5,'Natascha nicht sofort',{cls:D})}
+  {ln(100,217,170,13.5,'Natascha hat sich verändert.',{cls:D})}
+  {ln(277,217,22,13.5,'Tom',{cls:D})}
+  {rule(312,233,57)}{field('p75-s2-1',312,213,57,'2 Tom','naFieldBlank')}
+  {ln(377,217,144,13.5,'Natascha nicht sofort',{cls:D})}
   {rule(121,247,59)}{field('p75-s2-2',121,230,59,'2 erkennen','naFieldBlank')}
   {ln(236,238,69,13.5,'. (erkennen)',{cls:D})}
-  {ln(98,255,17,13.5,'Sie',{cls:D})}
-  {rule(120,265,58)}{field('p75-s2-3',120,248,58,'2 Sie','naFieldBlank')}
-  {ln(211,255,150,13.5,'vor zwei Jahren ein Baby',{cls:D})}
-  {rule(364,270,145)}{field('p75-s2-4',364,253,145,'2 Baby','naFieldBlank')}
+  {ln(98,253,17,13.5,'Sie',{cls:D})}
+  {rule(120,265,55)}{field('p75-s2-3',120,249,55,'2 Sie','naFieldBlank')}
+  {ln(211,253,149,13.5,'vor zwei Jahren ein Baby',{cls:D})}
+  {rule(364,271,106)}{field('p75-s2-4',364,254,106,'2 Baby','naFieldBlank')}
   {ln(512,260,81,13.5,'. (bekommen)',{cls:D})}
   {ln(99,270,12,13.5,'Er',{cls:D})}
   {rule(116,283,61)}{field('p75-s2-5',116,266,61,'2 Er','naFieldBlank')}
@@ -46,29 +46,29 @@ function P75(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,rect}=h;const D
   {ln(428,277,73,13.5,'. (vergessen)',{cls:D})}
 
   {/* 3: Imperativ du/ihr */}
-  {ln(80,306,277,13.5,'… Befehle formulieren (Imperativ: du/ihr):',{b:1,cls:D})}
+  {ln(80,306,275,13.5,'… Befehle formulieren (Imperativ: du/ihr):',{b:1,cls:H})}
   {ln(366,306,20,13.5,'L20',{cls:D})}
   {conf('s3',316)}
-  {ln(98,322,29,13.5,'Line,',{cls:D})}
-  {rule(143,338,52)}{field('p75-s3-1',143,321,52,'3 Line','naFieldBlank')}
-  {ln(222,322,30,13.5,'leise!',{cls:D})}
-  {ln(97,342,109,13.5,'Line und Melanie,',{cls:D})}
-  {rule(231,358,54)}{field('p75-s3-2',231,341,54,'3 Melanie','naFieldBlank')}
-  {ln(321,342,99,13.5,'sofort da runter!',{cls:D})}
+  {ln(98,322,44,13.5,'Line,',{cls:D})}
+  {rule(146,338,73)}{field('p75-s3-1',146,321,73,'3 Line','naFieldBlank')}
+  {ln(223,322,42,13.5,'leise!',{cls:D})}
+  {ln(97,339,154,13.5,'Line und Melanie,',{cls:D})}
+  {rule(255,359,61)}{field('p75-s3-2',255,338,61,'3 Melanie','naFieldBlank')}
+  {ln(322,339,97,13.5,'sofort da runter!',{cls:D})}
 
   {/* 4: Personalpronomen im Akkusativ */}
-  {ln(80,379,427,13.5,'… sagen, wen man anrufen soll (Personalpronomen im Akkusativ):',{b:1,cls:D})}
+  {ln(79,379,431,13.5,'… sagen, wen man anrufen soll (Personalpronomen im Akkusativ):',{b:1,cls:H})}
   {ln(516,379,20,13.5,'L20',{cls:D})}
   {conf('s4',388)}
-  {ln(96,393,51,13.5,'Lisa, ruf',{cls:D})}
-  {rule(175,411,61)}{field('p75-s4-1',175,394,61,'4 ich','naFieldBlank')}
-  {ln(241,393,153,13.5,'bitte heute noch an! (ich)',{cls:D})}
-  {ln(96,413,50,13.5,'Lisa, ruf',{cls:D})}
-  {rule(168,429,62)}{field('p75-s4-2',168,412,62,'4 er','naFieldBlank')}
-  {ln(241,413,146,13.5,'bitte heute noch an! (er)',{cls:D})}
+  {ln(96,394,50,13.5,'Lisa, ruf',{cls:D})}
+  {rule(152,411,81)}{field('p75-s4-1',152,395,81,'4 ich','naFieldBlank')}
+  {ln(242,394,186,13.5,'bitte heute noch an! (ich)',{cls:D})}
+  {ln(96,412,50,13.5,'Lisa, ruf',{cls:D})}
+  {rule(151,429,76)}{field('p75-s4-2',151,413,76,'4 er','naFieldBlank')}
+  {ln(241,412,151,13.5,'bitte heute noch an! (er)',{cls:D})}
 
   {/* 5: Modalverben dürfen/müssen */}
-  {ln(80,450,419,13.5,'… Verbote und Gebote ausdrücken (Modalverben: dürfen, müssen):',{b:1,cls:D})}
+  {ln(77,450,434,13.5,'… Verbote und Gebote ausdrücken (Modalverben: dürfen, müssen):',{b:1,cls:H})}
   {ln(509,450,17,13.5,'L21',{cls:D})}
   {conf('s5',460)}
   {ln(95,468,46,13.5,'Im Park',{cls:D})}
@@ -87,10 +87,10 @@ function P75(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,rect}=h;const D
   {field('p75-ueben',73,580,518,'Üben/Wiederholen','naFieldBlank')}
 
   {/* RÜCKBLICK */}
-  {ln(74,649,128,20,'RÜCKBLICK',{cls:'naRb75'})}
+  {ln(74,648,128,21,'RÜCKBLICK',{cls:'naRb75'})}
   {ln(71,702,286,15,'Wählen Sie eine Aufgabe zu Lektion',{b:1,c:B,cls:D})}
-  {rect(361,710,22,13,'#22529a')}
-  {wl(722,12.5,[{x:365,w:15,t:'19',b:1,c:'#fff'}])}
+  {rect(361,706,22,13,'#22529a')}
+  {wl(718,12.5,[{x:365,w:15,t:'19',b:1,c:'#fff'}])}
   {rect(386,723,332,2,'#9bbed4')}
 
   {/* Aufgabe 1 */}
@@ -106,9 +106,9 @@ function P75(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,rect}=h;const D
   {art('hw2',108,956,210,66)}
 
   {art('badge',737,1050,66,25)}
-  {wl(1069,12,[{x:717,w:11,t:'75',b:1}])}
-  {rect(703,1058,1,12,'#202020')}
-  {ln(600,1053,91,12,'fünfundsiebzig')}
+  {wl(1066,12,[{x:717,w:11,t:'75',b:1}])}
+  {rect(703,1055,1,12,'#202020')}
+  {ln(600,1050,91,12,'fünfundsiebzig')}
  </>;
 }
 
