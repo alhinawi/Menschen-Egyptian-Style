@@ -105,15 +105,15 @@
 .naCanvas .naModul10{position:absolute;background:#c0b988;color:#fff;font:bold 13px/26px FiraSans,'Trebuchet MS',sans-serif;text-align:center;letter-spacing:.5px;z-index:2}
 .naCanvas .naFooter .naFz{font-family:FiraSans,'Trebuchet MS',sans-serif;color:#3a5375}
 .naCanvas .naField.naFldSeg{border-bottom:0!important;background:repeating-linear-gradient(90deg,#bcbcbc 0 var(--seg),transparent var(--seg) calc(var(--seg) + 5px)) left bottom/100% 2px no-repeat!important}
-.naCanvas .naText.naVoc{font:600 18px DroidSerif,Georgia,serif!important;color:#000;letter-spacing:0!important}
+.naCanvas .naText.naVoc{font:18px DroidSerif,Georgia,serif!important;line-height:18px!important;color:#000;letter-spacing:0!important}
 .naCanvas .naText.naVocB{font-weight:700!important}
-.naCanvas .naText.naVocG{font:15.5px DroidSerif,Georgia,serif!important;color:#9fa5a4;letter-spacing:0!important}
+.naCanvas .naText.naVocG{font:15.5px DroidSerif,Georgia,serif!important;line-height:15.5px!important;color:#9fa5a4;letter-spacing:0!important}
 .naCanvas .naText.naVocH11{font:700 19.4px DroidSerif,Georgia,serif!important;color:#000;letter-spacing:0!important}
 .naCanvas .naText.naVocHQ{font-size:18px!important}
 .naCanvas .naText.naInstr11{font:700 21.5px FiraSans,Arial,sans-serif!important;color:#000;letter-spacing:0!important}
 .naCanvas .naRule11{position:absolute;height:1px;background:#bab8bc}
 [data-native-ab12="11"] .naCanvas .naHeadline{font:30px DroidSerif,Georgia,serif!important;color:#0a0a0a;letter-spacing:0!important}
-[data-native-ab12="11"] .naCanvas .naFooter{font:20px DroidSerif,Georgia,serif!important;letter-spacing:0!important;color:#000}
-[data-native-ab12="11"] .naCanvas .naModul9b{background:#d5d1b1!important;color:#fff!important}
+[data-native-ab12="11"] .naCanvas .naFooter{font:18px DroidSerif,Georgia,serif!important;letter-spacing:0!important;color:#000}
+[data-native-ab12="11"] .naCanvas .naModul9b{background:#d5d1b1!important;color:#fcf7f1!important;font-family:DroidSerif,Georgia,serif!important}
 [data-native-ab12="11"] .naCanvas .naBadge9{background:#fedb01!important}
 [data-native-ab12="11"] .naCanvas .naTipT{font:16.5px DroidSerif,Georgia,serif!important;letter-spacing:0!important}
