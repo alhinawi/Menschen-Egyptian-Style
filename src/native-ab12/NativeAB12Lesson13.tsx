@@ -31,7 +31,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
  const side=(x:number,y:number,t:string)=><div className="naSide naSideL" style={{left:x,top:y}}>{t}</div>;
  const hand=(x:number,y:number,w:number,t:string)=><div className="naText naHand" style={{left:x,top:y,width:w}}><Words text={t}/></div>;
  const mw=(id:string,t:string)=><button className={'naW9i'+(values[id]==='true'?' on':'')} aria-pressed={values[id]==='true'} aria-label={'Markieren: '+t} onClick={()=>set(id,values[id]==='true'?'false':'true')}>{t}</button>;
- const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
+ const audio=(src:string,x:number,y:number,label:string,task?:string)=><button className="naAudio" data-task={task} style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
  const dash=(x:number,y:number,w:number,parts:(string|[string])[])=><div className="naText naS20 naDash naNw" style={{left:x,top:y,width:w}}>{parts.map((p,i)=>Array.isArray(p)?<b key={i}>{p[0]}</b>:<span key={i}>{p}</span>)}</div>;
  const footerL=(n:string,word:string,y:number)=><><div className="naText naFooter" style={{left:76,top:y,width:220}}><b>{n}</b>{'  |  '+word}</div></>;
  const footerR=(n:string,word:string,y:number)=><><div className="naText naFooter" style={{left:870,top:y,width:180}}>{word+'  |  '}<b>{n}</b></div></>;
@@ -202,7 +202,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(113,90,300,'TRAINING: HÖREN','naTrain naNw')}
   <div className="naRuleY9" style={{left:401,top:116,width:565}}/>
   <div className="naL13" style={{left:982,top:42,width:86,height:57}}>13</div>
-  {audio('assets/ab-a12-cd2-track02.mp3',56,166,'2 02')}
+  {audio('assets/ab-a12-cd2-track02.mp3',56,166,'2 02','1')}
   {badge9('1',112,169)}{text(153,169,660,'Welche Orte/Einrichtungen in der Stadt hören Sie? Markieren Sie.','naYT naNw')}
   <div className="naBand9w" style={{left:153,top:204,width:649,height:54}}/>
   <div className="naBankRow9" style={{left:159,top:208}}>{mw('9-m-restaurant','Restaurant')}<span className="naPipe9i"/><span className="naW9mi">Bahnhof</span><span className="naPipe9i"/>{mw('9-m-kino','Kino')}<span className="naPipe9i"/>{mw('9-m-dom','Dom')}<span className="naPipe9i"/>{mw('9-m-schwimmbad','Schwimmbad')}<span className="naPipe9i"/>{mw('9-m-post','Post')}<span className="naPipe9i"/>{mw('9-m-bruecke','Brücke')}<span className="naPipe9i"/>{mw('9-m-bank','Bank')}<span className="naPipe9i"/>{mw('9-m-polizei','Polizei')}<span className="naPipe9i"/></div>
@@ -214,14 +214,14 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(487,301,380,'Wichtige Wörter in Wegbeschreibungen sind:','naTipT naNw')}
   {text(487,322,430,'– Einrichtungen in der Stadt: Bahnhof, Kino, Dom …','naTipT naNw')}
   {text(487,344,430,'– Richtungsangaben: rechts, links, geradeaus …','naTipT naNw')}
-  {audio('assets/ab-a12-cd2-track02.mp3',56,397,'2 02')}
+  {audio('assets/ab-a12-cd2-track02.mp3',56,397,'2 02','2')}
   {badge9('2',112,400)}{text(156,401,790,'Roland möchte Simon besuchen. Er steht am Bahnhof und fragt nach dem Weg.','naEx9d naNw')}
   {text(156,428,810,'Hören Sie noch einmal und zeichnen Sie den Weg in den Stadtplan. Wo ist die Albachstraße?','naInst9 naNw')}
   {art('stadtplan',117,464,846,364)}
   {text(113,910,350,'TRAINING: AUSSPRACHE','naTrain naNw')}
   {text(493,912,240,'Diphthonge „ei“, „eu“, „au“','naTrainIt naNw')}
   <div className="naRuleY9" style={{left:744,top:931,width:220}}/>
-  {audio('assets/ab-a12-cd2-track03.mp3',56,978,'2 03')}
+  {audio('assets/ab-a12-cd2-track03.mp3',56,978,'2 03','1')}
   {badge9('1',112,981)}{text(156,981,340,'Hören Sie und sprechen Sie nach.','naYT naNw')}
   <div className="naBand9" style={{left:153,top:1018,width:343,height:25}}/>
   <div className="naBand9" style={{left:153,top:1044,width:343,height:25}}/>
@@ -229,7 +229,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(160,1021,40,'nein','naWord9 naNw')}{text(201,1021,12,'|','naSep9 naNw')}{text(210,1021,98,'beschreiben','naWord9 naNw')}{text(311,1021,12,'|','naSep9 naNw')}{text(320,1021,55,'Polizei','naWord9 naNw')}{text(378,1021,12,'|','naSep9 naNw')}{text(386,1021,47,'beide','naWord9 naNw')}{text(436,1021,12,'|','naSep9 naNw')}{text(443,1021,52,'vorbei','naWord9 naNw')}
   {text(159,1047,86,'ankreuzen','naWord9 naNw')}{text(248,1047,12,'|','naSep9 naNw')}{text(256,1047,66,'deutsch','naWord9 naNw')}{text(325,1047,12,'|','naSep9 naNw')}{text(335,1047,57,'Freund','naWord9 naNw')}{text(395,1047,12,'|','naSep9 naNw')}{text(404,1047,43,'neun','naWord9 naNw')}{text(449,1047,12,'|','naSep9 naNw')}{text(458,1047,40,'Euro','naWord9 naNw')}
   {text(159,1072,42,'Auto','naWord9 naNw')}{text(203,1072,12,'|','naSep9 naNw')}{text(211,1072,41,'auch','naWord9 naNw')}{text(255,1072,12,'|','naSep9 naNw')}{text(265,1072,37,'Frau','naWord9 naNw')}{text(304,1072,12,'|','naSep9 naNw')}{text(312,1072,84,'geradeaus','naWord9 naNw')}{text(399,1072,12,'|','naSep9 naNw')}{text(407,1072,30,'auf','naWord9 naNw')}
-  {audio('assets/ab-a12-cd2-track05.mp3',523,980,'2 05')}
+  {audio('assets/ab-a12-cd2-track05.mp3',523,980,'2 05','3')}
   {badge9('3',570,981,32,19)}{text(614,980,400,'Ergänzen Sie „au“, „ei“ oder „eu“.','naYT naYT21 naNw')}
   {text(614,1007,330,'Hören Sie dann und vergleichen Sie.','naInst9 naNw')}
   {text(612,1050,20,'a','naLet9')}{text(636,1044,10,'S','naEx9 naNw')}{field('9-3a1',646,1044,38,'3a Seid','naFld9')}{text(688,1044,82,'d ihr verh','naEx9 naNw')}{field('9-3a2',773,1044,38,'3a verheiratet','naFld9')}{text(815,1044,82,'ratet? – N','naEx9 naNw')}{field('9-3a3',900,1044,37,'3a Nein','naFld9')}{text(941,1044,16,'n,','naEx9 naNw')}
@@ -242,7 +242,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(636,1226,74,'Tut mir l','naEx9 naNw')}{field('9-3d4',713,1225,39,'3d leid','naFld9')}{text(756,1226,66,'d. Das w','naEx9 naNw')}{field('9-3d5',825,1225,38,'3d weiß','naFld9')}{text(867,1226,42,'ß ich','naEx9 naNw')}{field('9-3d6',913,1225,38,'3d auch','naFld9')}{text(955,1226,20,'ch','naEx9 naNw')}
   {text(637,1250,51,'nicht.','naEx9 naNw')}
   {check('9-3',955,1250,{'9-3a1':'ei','9-3a2':'ei','9-3a3':'ei','9-3a4':'ei','9-3b1':'ei','9-3b2':'au','9-3b3':'ei','9-3c1':'au','9-3c2':'eu','9-3c3':'au','9-3c4':'eu','9-3d1':'ei','9-3d2':'au','9-3d3':'eu','9-3d4':'ei','9-3d5':'ei','9-3d6':'au'})}
-  {audio('assets/ab-a12-cd2-track04.mp3',56,1127,'2 04')}
+  {audio('assets/ab-a12-cd2-track04.mp3',56,1127,'2 04','2')}
   {badge9('2',112,1135)}{text(155,1133,460,'Hören Sie noch einmal und ergänzen','naYT naNw')}
   {text(155,1157,200,'Sie die Regel.','naYT naNw')}
   <div className="naRegelBar" style={{left:154,top:1195,width:360,height:6}}/>
@@ -254,7 +254,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(188,1298,430,'Man hört „au“ und schreibt auch:','naEx9 naNw')}
   {field('9-2c',188,1313,84,'Regel au','naFld9 naFld9L')}
   {check('9-2',1025,1330,{'9-2a':'ei','9-2b':'eu|äu','9-2c':'au'})}
-  {audio('assets/ab-a12-cd2-track06.mp3',543,1300,'2 06')}
+  {audio('assets/ab-a12-cd2-track06.mp3',543,1300,'2 06','3')}
   {text(614,1304,400,'Hören Sie noch einmal und sprechen Sie nach.','naInst9 naNw')}
   <div className="naText naFooter naNw" style={{left:905,top:1393,width:100}}>neun{'  |  '}<b>9</b></div>
   <div className="naModul9b" style={{left:1003,top:1393,width:68,height:19}}>Modul 5</div>
@@ -627,7 +627,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(151,925,580,'Hören Sie und kreuzen Sie an. Welche Anzeige passt?','naYT naNw')}
   {text(65,930,40,'KB 8','naKB13 naNw')}
   <div className="naSide13" style={{left:75,top:988}}>HÖREN</div>
-  {audio('assets/ab-a12-cd2-track07.mp3',52,955,'2 07')}
+  {audio('assets/ab-a12-cd2-track07.mp3',52,955,'2 07','11')}
   {art('card1',148,968,396,136)}{art('card2',558,968,362,132)}
   {dot('14-11','a1',166,979,'Anzeige 1',false,'naDotD')}{dot('14-11','a2',568,982,'Anzeige 2',false,'naDotD')}
   {check('14-11',1010,1080,{'14-11':'a2'})}
@@ -635,7 +635,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(150,1157,640,'Hören Sie noch einmal und kreuzen Sie an. Was ist richtig?','naYT naNw')}
   {text(64,1163,40,'KB 8','naKB13 naNw')}
   <div className="naSide13" style={{left:74,top:1200}}>HÖREN</div>
-  {audio('assets/ab-a12-cd2-track07.mp3',52,1181,'2 07')}
+  {audio('assets/ab-a12-cd2-track07.mp3',52,1181,'2 07','12')}
   {text(149,1198,20,'a','naLet14')}{text(173,1198,300,'Die Wohnung ist','naSent14 naNw')}{dot('14-12a','möbliert',474,1198,'möbliert')}{text(498,1198,90,'möbliert.','naSent14 naNw')}{dot('14-12a','leer',624,1198,'leer')}{text(649,1198,60,'leer.','naSent14 naNw')}
   {text(148,1223,20,'b','naLet14')}{text(173,1223,240,'Dalva findet den Balkon','naSent14 naNw')}{dot('14-12b','super',474,1224,'super')}{text(499,1223,60,'super.','naSent14 naNw')}{dot('14-12b','nicht so toll',624,1224,'nicht so toll')}{text(649,1223,120,'nicht so toll.','naSent14 naNw')}
   {text(148,1249,20,'c','naLet14')}{text(173,1249,260,'Das Schlafzimmer ist nicht','naSent14 naNw')}{dot('14-12c','groß',474,1250,'groß')}{text(498,1249,60,'groß.','naSent14 naNw')}{dot('14-12c','klein',624,1250,'klein')}{text(649,1249,60,'klein.','naSent14 naNw')}
@@ -702,10 +702,10 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(171,1260,95,'der Garten','naTd15 naNw')}{text(277,1260,30,'die','naTd15 naNw')}{field('15-a1-garten',305,1250,95,'Plural Garten')}
   {text(423,1260,90,'der Raum','naTd15 naNw')}{text(522,1260,30,'die','naTd15 naNw')}{field('15-a1-raum',555,1250,95,'Plural Raum')}
   {check('15-a1',670,1255,{'15-a1-bad':'Bäder','15-a1-wald':'Wälder','15-a1-garten':'Gärten','15-a1-haus':'Häuser','15-a1-baum':'Bäume','15-a1-raum':'Räume'})}
-  {audio('assets/ab-a12-cd2-track08.mp3',62,1327,'2 08')}
+  {audio('assets/ab-a12-cd2-track08.mp3',62,1327,'2 08','2')}
   {badge9('2',121,1322)}
   {text(165,1320,665,'Hören Sie die Wörter aus 1 und sprechen Sie nach.','naYT naNw')}
-  {audio('assets/ab-a12-cd2-track09.mp3',672,1134,'2 09')}
+  {audio('assets/ab-a12-cd2-track09.mp3',672,1134,'2 09','3')}
   {badge9('3',720,1128)}
   {text(766,1127,245,'Hören Sie das Gedicht','naYT naNw')}
   {text(766,1153,245,'und sprechen Sie dann.','naYT naNw')}

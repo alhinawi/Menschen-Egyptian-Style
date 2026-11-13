@@ -26,7 +26,7 @@ export function NativeAB12P21_24({page}:{page:string}){
  const dot=(id:string,value:string,x:number,y:number,label:string,cls='')=><input type="radio" className={'naDot '+cls} name={key+'-'+id} aria-label={label} data-native-field={id} style={{left:x,top:y}} checked={values[id]===value} onChange={()=>set(id,value)}/>;
  const check=(id:string,x:number,y:number,answers:Record<string,string>,cls='')=><div className={'naCheck '+cls} data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,t:string,cls='')=><div className={'naTitle '+cls} style={{left:x,top:y,width:w}}><b>{n}</b><Words text={t}/></div>;
- const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
+ const audio=(src:string,x:number,y:number,label:string,task?:string)=><button className="naAudio" data-task={task} style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
  return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-500.ttf') format('truetype');font-weight:500}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}[data-native-ab12="${page}"] .naText,[data-native-ab12="${page}"] .naBold,[data-native-ab12="${page}"] .naLet,[data-native-ab12="${page}"] .naDlg,[data-native-ab12="${page}"] .naField{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12="${page}"] .naText,[data-native-ab12="${page}"] .naBold,[data-native-ab12="${page}"] .naLet,[data-native-ab12="${page}"] .naDlg{font-size:20px!important}[data-native-ab12="${page}"] .naCanvas .naTitle{font-family:FiraSans,sans-serif!important;font-size:21px!important;letter-spacing:0!important}[data-native-ab12="${page}"] .naText.naS20{font-size:18px!important}[data-native-ab12="${page}"] .naSmall{font-size:16.5px!important}[data-native-ab12="${page}"] .naD19{font-size:17.5px!important}[data-native-ab12="${page}"] .naField{font-size:19px!important}`}</style><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='21'&&<>
@@ -66,7 +66,7 @@ export function NativeAB12P21_24({page}:{page:string}){
   {text(108,931,371,'TRAINING: AUSSPRACHE','naHead2 naH30')}
   {text(499,939,230,'Vokale: langes „e“ und „i“','naIt naS188 naVok')}
   <div style={{position:'absolute',left:734,top:959,width:228,height:2,background:'#f8b25e'}}/>
-  {audio('assets/ab-a12-cd2-track12.mp3',46,1008,'2 12')}
+  {audio('assets/ab-a12-cd2-track12.mp3',46,1008,'2 12','1')}
   {title('1',107,1000,540,'Was hören Sie: langes „e“ oder „i“?','naOB naLS')}
   {text(151,1028,140,'Kreuzen Sie an.','naIns')}
   {text(184,1072,20,'e','naSmall naItalic')}
@@ -110,7 +110,7 @@ export function NativeAB12P21_24({page}:{page:string}){
   {field('p21-g9',842,1136,39,'c Sp...lfilme')}
   {text(882,1142,60,'lfilme.','naS20')}
   {check('g2',958,1138,{'p21-g1':'ie','p21-g2':'ih','p21-g3':'ie','p21-g4':'ie','p21-g5':'ie','p21-g6':'i','p21-g7':'i','p21-g8':'ie','p21-g9':'ie'},'naCheckSm')}
-  {audio('assets/ab-a12-cd2-track13.mp3',46,1212,'2 13')}
+  {audio('assets/ab-a12-cd2-track13.mp3',46,1212,'2 13','2')}
   {title('2',107,1206,480,'Hören Sie und sprechen Sie nach.','naOB naLS')}
   {text(154,1250,80,'See','naF21')}
   {text(329,1248,80,'viel','naF21')}
@@ -119,7 +119,7 @@ export function NativeAB12P21_24({page}:{page:string}){
   {text(154,1300,150,'mehr Museum','naF21')}
   {text(329,1299,180,'viele Spiele fehlen','naF21')}
   {text(154,1325,140,'das lieben wir','naF21')}
-  {audio('assets/ab-a12-cd2-track14.mp3',599,1196,'2 14')}
+  {audio('assets/ab-a12-cd2-track14.mp3',599,1196,'2 14','2')}
   <div className="naTitle naLSm" style={{left:664,top:1193}}><Words text="Hören Sie und vergleichen Sie."/></div>
   {text(816,1392,170,'einundzwanzig | 21','naFooter naNw')}
   {art('modul',998,1386,73,26)}
