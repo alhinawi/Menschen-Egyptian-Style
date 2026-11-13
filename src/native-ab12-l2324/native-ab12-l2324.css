@@ -80,3 +80,14 @@
 .naCanvas .naText.naBk88l{letter-spacing:-0.1px}
 
 .naCanvas .naText .naPrd,.naCanvas .naText.naPrd{color:#1e1e20}
+
+.naCanvas .naStrip90{position:absolute;background:#eef4fb}
+.naCanvas .naText.naBk90{font-size:11.2px;letter-spacing:normal}
+.naCanvas .naText.naBk90 span[role=button]{padding:0}
+.naCanvas .naTitle.naT90{font-size:15.7px;line-height:1.2}
+.naCanvas .naTitle.naT90>b{min-width:17px;height:17px;font:bold 12px/17px Georgia;margin-right:14px}
+.naCanvas .naNum90{position:absolute;width:24px;height:20px;background:#c33523;color:#fff;font:bold 13px/20px Georgia;text-align:center}
+.naCanvas .naText.naT90txt{font-family:FiraSans,'Trebuchet MS',sans-serif;font-weight:700;color:#1c1c1e;letter-spacing:normal}
+.naCanvas .naText.naT90txt span[role=button]{padding:0}
+.naCanvas .naStrikeU{position:relative;display:inline}
+.naCanvas .naStrikeU:after{content:'';position:absolute;left:0;right:0;top:64%;height:1.5px;background:#5b84bd;transform:rotate(-0.8deg);border-radius:1px;pointer-events:none}
