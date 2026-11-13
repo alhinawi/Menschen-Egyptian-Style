@@ -37,8 +37,9 @@ export function AudioMarkerButtons(){
    const jump=document.querySelector('#pageJump') as HTMLSelectElement|null;
    const currentPage=jump?document.querySelectorAll<HTMLElement>('.page')[Number(jump.value)]:null;
    const tracks:Track[]=[];
-   const topLimit=Math.max(65,(document.querySelector('header:not(.page header)')?.getBoundingClientRect().bottom||0)+5);
-   const bottomLimit=Math.min(innerHeight-82,(document.querySelector('.controls')?.getBoundingClientRect().top||innerHeight)-5);
+   // Document coordinates: markers are absolutely positioned in the page flow,
+   // so scrolling moves them with the printed art with no per-frame JS updates.
+   const sx=window.scrollX,sy=window.scrollY;
    for(const el of document.querySelectorAll<HTMLElement>(audioMarkerSelector)){
     if(el.textContent?.includes('Clip')||el.closest('dialog'))continue;
     const page=el.closest<HTMLElement>('.page');
@@ -46,11 +47,11 @@ export function AudioMarkerButtons(){
     if(!proxied.has(el)){proxied.set(el,el.getAttribute('tabindex'));el.dataset.audioProxied='true';el.tabIndex=-1}
     if(currentPage&&page!==currentPage)continue;
     const r=el.getBoundingClientRect(),p=page.getBoundingClientRect();
-    if(!r.width||!r.height||getComputedStyle(el).visibility==='hidden'||p.right<20||p.left>innerWidth-20||r.bottom<topLimit||r.top>bottomLimit)continue;
+    if(!r.width||!r.height||!p.width||!p.height||getComputedStyle(el).visibility==='hidden')continue;
     const label=el.getAttribute('aria-label')||el.title||el.textContent?.trim()||'Originalaudio';
     const source=el.dataset.audioSrc||el.dataset.src||'';
     const track=source.match(/track(\d+)/)?.[1]||label.match(/(?:Originalaudio|Audio)\s*(?:\d\s+)?(\d{1,3})/i)?.[1]||el.textContent?.match(/\d+/g)?.pop()||'';
-    tracks.push({el,label,track,y:Math.max(topLimit,r.top+r.height/2-22),page:page.dataset.page||''});
+    tracks.push({el,label,track,y:r.top+sy+r.height/2-22,page:page.dataset.page||''});
    }
    tracks.sort((a,b)=>a.y-b.y);
    const out:Marker[]=[];
@@ -59,27 +60,27 @@ export function AudioMarkerButtons(){
     // One margin button for nearby tracks. Never push a button onto another task.
     if(last&&t.y-last.tracks[last.tracks.length-1].y<46){last.tracks.push(t);continue}
     const p=t.el.closest('.page')!.getBoundingClientRect();
-    out.push({x:Math.max(2,Math.min(p.left+3,innerWidth-48)),y:t.y,tracks:[t]});
+    out.push({x:Math.max(2,p.left+sx+3),y:t.y,tracks:[t]});
    }
    // Search the nearest clear spot in the outer margin. Glyph rectangles include
    // task numbers, not just exercise prose; fields and checking buttons count too.
-   const obstacles=currentPage?audioTextObstacles(currentPage):[];
+   const obstacles=(currentPage?audioTextObstacles(currentPage):[]).map(o=>({left:o.left+sx,right:o.right+sx,top:o.top+sy,bottom:o.bottom+sy}));
    const placed:Obstacle[]=[];
    for(const m of out){
-    const origin=m.y;const pageLeft=m.tracks[0].el.closest('.page')!.getBoundingClientRect().left;
+    const origin=m.y;const pr=m.tracks[0].el.closest('.page')!.getBoundingClientRect();
+    const pageLeft=pr.left+sx,topBound=pr.top+sy+2,bottomBound=pr.bottom+sy-2;
     const xs=[m.x,Math.max(0,m.x-3),...(pageLeft>=48?[pageLeft-46]:[])];
     let found=false;
     for(let distance=0;distance<=120&&!found;distance+=2)for(const dy of distance?[ -distance,distance ]:[0]){
-     for(const x of xs){const y=origin+dy;if(y<topLimit||y+44>bottomLimit)continue;
+     for(const x of xs){const y=origin+dy;if(y<topBound||y+44>bottomBound)continue;
       if([...obstacles,...placed].some(r=>intersects(x,y,r)))continue;
       m.x=x;m.y=y;found=true;break;
      }if(found)break;
     }
     if(!found){
-     const page=m.tracks[0].el.closest('.page')!.getBoundingClientRect();
-     const x=Math.min(innerWidth-44,page.right-44);
+     const x=pr.right+sx-46;
      for(let distance=0;distance<=120&&!found;distance+=2)for(const dy of distance?[-distance,distance]:[0]){
-      const y=origin+dy;if(y<topLimit||y+44>bottomLimit)continue;
+      const y=origin+dy;if(y<topBound||y+44>bottomBound)continue;
       if([...obstacles,...placed].some(r=>intersects(x,y,r)))continue;
       m.x=x;m.y=y;found=true;break;
      }
@@ -92,9 +93,9 @@ export function AudioMarkerButtons(){
   const queue=()=>{if(!frame)frame=requestAnimationFrame(update)};
   const observer=new MutationObserver(queue);
   observer.observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['style','class','open']});
-  window.addEventListener('resize',queue);window.addEventListener('scroll',queue,true);
+  window.addEventListener('resize',queue);
   const timer=setInterval(queue,300);queue();
-  return()=>{observer.disconnect();window.removeEventListener('resize',queue);window.removeEventListener('scroll',queue,true);clearInterval(timer);cancelAnimationFrame(frame);for(const[el,tab]of proxied){delete el.dataset.audioProxied;if(tab===null)el.removeAttribute('tabindex');else el.setAttribute('tabindex',tab)}};
+  return()=>{observer.disconnect();window.removeEventListener('resize',queue);clearInterval(timer);cancelAnimationFrame(frame);for(const[el,tab]of proxied){delete el.dataset.audioProxied;if(tab===null)el.removeAttribute('tabindex');else el.setAttribute('tabindex',tab)}};
  },[]);
  const play=(t:Track)=>{if(t.el.isConnected)t.el.click()};
  const choose=(m:Marker)=>{if(m.tracks.length===1){play(m.tracks[0]);return}setChoices(m.tracks);dialog.current?.showModal()};
