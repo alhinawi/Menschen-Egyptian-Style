@@ -22,6 +22,7 @@ export function useNativeCanvas(page:string){
  const art=(name:string,x:number,y:number,w:number,h:number)=><PageImage className="naArt" src={`assets/book-crops/native-ab12-p${page}-${name}.png`} alt={'Originalillustration '+name} style={{left:x,top:y,width:w,height:h}}/>;
  const field=(id:string,x:number,y:number,w:number,label:string,cls='')=><input className={'naField '+cls} aria-label={label} data-native-field={id} style={{left:x,top:y,width:w}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
  const rule=(x:number,y:number,w:number)=><div className="naRule" style={{left:x,top:y,width:w}}/>;
+ const ruleT=(x:number,y:number,w:number)=><div className="naRule naRuleT" style={{left:x,top:y,width:w}}/>;
  const dot=(id:string,value:string,x:number,y:number,label:string,checkbox=false,cls='')=><input className={'naDot'+(cls?' '+cls:'')} type={checkbox?'checkbox':'radio'} aria-label={label} name={key+'-'+id} checked={checkbox?values[id]==='true':values[id]===value} onChange={e=>set(id,checkbox?String(e.target.checked):value)} style={{left:x,top:y}}/>;
  const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,t:string,cls='')=><div className={'naTitle '+cls} style={{left:x,top:y,width:w}}><b>{n}</b><Words text={t}/></div>;
@@ -29,7 +30,7 @@ export function useNativeCanvas(page:string){
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const hand=(x:number,y:number,w:number,t:string)=><div className="naText naHand" style={{left:x,top:y,width:w}}><Words text={t}/></div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
- return {W,H,root,player,scale,key,values,results,set,text,art,field,rule,dot,check,title,gl,kb,hand,audio};
+ return {W,H,root,player,scale,key,values,results,set,text,art,field,rule,ruleT,dot,check,title,gl,kb,hand,audio};
 }
 
 export function Canvas({page,root,player,scale,children}:{page:string;root:React.RefObject<HTMLDivElement|null>;player:React.RefObject<HTMLAudioElement|null>;scale:number;children:ReactNode}){
