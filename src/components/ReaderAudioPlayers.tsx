@@ -34,7 +34,13 @@ export function ReaderAudioPlayers(){
   const update=()=>{
    setActive(old=>old&&!old.isConnected?null:old);
    document.querySelectorAll<HTMLElement>('button').forEach(el=>{el.toggleAttribute('data-reader-reset',/^Noch einmal$/i.test(el.textContent?.trim()||''))});
-   const viewport=document.querySelector('#viewport');if(viewport&&!host){host=document.createElement('div');host.className='readerAudioPanel';viewport.insertAdjacentElement('afterend',host);setSlot(host)}
+   const viewport=document.querySelector('#viewport');
+   // The book can replace #viewport (hydration, lesson data, SPA hops). A host
+   // left behind in the removed subtree makes the player vanish while audio
+   // keeps playing, so re-anchor whenever the host is detached or misplaced.
+   if(viewport&&(!host||!host.isConnected||host.previousElementSibling!==viewport)){
+    host?.remove();host=document.createElement('div');host.className='readerAudioPanel';viewport.insertAdjacentElement('afterend',host);setSlot(host);
+   }
    const jump=document.querySelector<HTMLSelectElement>('#pageJump');const page=jump?document.querySelectorAll('.page')[Number(jump.value)]:null;
    const canvas=page?.querySelector<HTMLElement>('.nkbCanvas');
    document.body.classList.toggle('readerNativeFrame',!!canvas);if(canvas){const height=canvas.getBoundingClientRect().height;if(Number.isFinite(height)&&height>0)document.documentElement.style.setProperty('--reader-native-height',`${height}px`);}
