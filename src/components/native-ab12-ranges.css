@@ -1,0 +1,17 @@
+.naCanvas .naFit{position:absolute;line-height:1;white-space:nowrap;margin:0;padding:0;z-index:2}
+.naCanvas .naFit .naFitI{display:inline-block;transform-origin:left top;line-height:1}
+.naCanvas .naFit span[role=button]{display:inline;cursor:pointer}
+.naCanvas .naTitle2{position:absolute;font:bold 17px/1.25 'Times New Roman',Times,serif;display:flex;align-items:flex-start;gap:10px;white-space:nowrap;z-index:2}
+.naTitle2>b{display:inline-block;background:#a01e5a;color:#fff;min-width:22px;height:22px;text-align:center;font:bold 16px/22px Georgia;padding:0 3px;margin-top:-3px}
+.naCanvas .naArea{resize:none;overflow:hidden;line-height:1.35}
+.naCanvas .naLesTab{position:absolute;color:#fff;font:bold 44px Georgia;display:flex;align-items:center;justify-content:center;z-index:2}
+.naCanvas .naModTab{position:absolute;background:#b3a05c;color:#fff;font:bold 11px Arial;padding:3px 6px;z-index:2}
+.naCanvas .naStrikeRow{position:absolute;font-size:16px;font-family:'Times New Roman',Times,serif;white-space:nowrap;z-index:2}
+.naStrikeRow button{background:none;border:0;padding:0 1px;font:inherit;color:inherit;cursor:pointer;min-height:0}
+.naStrikeRow button.struck{text-decoration:line-through;text-decoration-thickness:2px}
+.naCanvas .naTabRow{position:absolute;display:flex;z-index:1}
+.naCanvas .naCellHead{position:absolute;font:bold 15px Arial,sans-serif;color:#4a4a45;white-space:nowrap;z-index:2}
+.naCanvas .naNumBox{position:absolute;color:#fff;min-width:23px;height:23px;text-align:center;font:bold 17px/23px Georgia;padding:0 4px;z-index:2}
+.naCanvas .naRect{position:absolute;z-index:1}
+.naCanvas .naW{position:absolute;white-space:pre;line-height:1;margin:0;padding:0;transform-origin:left top;z-index:2}
+.naCanvas .naW span[role=button]{display:inline;cursor:pointer}
