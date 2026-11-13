@@ -28,6 +28,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
  const kb=(x:number,y:number,t:string)=><div className="naKB naKBL" style={{left:x,top:y}}>{t}</div>;
  const side=(x:number,y:number,t:string)=><div className="naSide naSideL" style={{left:x,top:y}}>{t}</div>;
  const hand=(x:number,y:number,w:number,t:string)=><div className="naText naHand" style={{left:x,top:y,width:w}}><Words text={t}/></div>;
+ const mw=(id:string,x:number,y:number,w:number,t:string)=><button className={'naW9'+(values[id]==='true'?' on':'')} style={{left:x,top:y,width:w}} aria-pressed={values[id]==='true'} aria-label={'Markieren: '+t} onClick={()=>set(id,values[id]==='true'?'false':'true')}>{t}</button>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
  const dash=(x:number,y:number,w:number,parts:(string|[string])[])=><div className="naText naS20 naDash naNw" style={{left:x,top:y,width:w}}>{parts.map((p,i)=>Array.isArray(p)?<b key={i}>{p[0]}</b>:<span key={i}>{p}</span>)}</div>;
  const footerL=(n:string,word:string,y:number)=><><div className="naText naFooter" style={{left:76,top:y,width:220}}><b>{n}</b>{'  |  '+word}</div></>;
@@ -193,6 +194,78 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {check('8-9',860,1358,{'8-9b':'helfen','8-9c':'das Hotel „Marienhof“|das Hotel Marienhof','8-9d':'Frage','8-9e':'Moment'})}
   {art('tab',0,1388,70,36)}
   {footerL('8','acht',1393)}
+ </>}
+ {page==='9'&&<>
+  {text(113,88,300,'TRAINING: HÖREN','naTrain naNw')}
+  <div className="naRuleY9" style={{left:401,top:116,width:565}}/>
+  <div className="naL13" style={{left:982,top:42,width:86,height:57}}>13</div>
+  {audio('assets/ab-a12-cd2-track02.mp3',56,166,'2 02')}
+  {title('1',111,169,700,'Welche Orte/Einrichtungen in der Stadt hören Sie? Markieren Sie.','naYB')}
+  <div className="naBand9" style={{left:153,top:204,width:650,height:28}}/>
+  <div className="naBand9" style={{left:153,top:232,width:195,height:27}}/>
+  {mw('9-m-restaurant',158,208,88,'Restaurant')}{text(253,209,12,'|','naSep9 naNw')}
+  <div className="naW9s" style={{left:258,top:208,width:74}}>Bahnhof</div>{text(325,209,12,'|','naSep9 naNw')}
+  {mw('9-m-kino',341,208,44,'Kino')}{text(385,209,12,'|','naSep9 naNw')}
+  {mw('9-m-dom',392,208,43,'Dom')}{text(436,209,12,'|','naSep9 naNw')}
+  {mw('9-m-schwimmbad',441,208,111,'Schwimmbad')}{text(547,209,12,'|','naSep9 naNw')}
+  {mw('9-m-post',554,208,48,'Post')}{text(606,209,12,'|','naSep9 naNw')}
+  {mw('9-m-bruecke',612,208,58,'Brücke')}{text(674,209,12,'|','naSep9 naNw')}
+  {mw('9-m-bank',681,208,43,'Bank')}{text(727,209,12,'|','naSep9 naNw')}
+  {mw('9-m-polizei',732,208,61,'Polizei')}{text(796,209,12,'|','naSep9 naNw')}
+  {mw('9-m-ampel',156,236,54,'Ampel')}{text(213,237,12,'|','naSep9 naNw')}
+  {mw('9-m-hotel',221,236,47,'Hotel')}{text(270,237,12,'|','naSep9 naNw')}
+  {mw('9-m-theater',276,236,67,'Theater')}
+  <div className="naTipBar" style={{left:400,top:250,width:530,height:6}}/>
+  <div className="naTipTab" style={{left:453,top:256,width:20,height:104}}>TIPP</div>
+  {text(487,259,430,'Sie finden das Hören schwer? Achten Sie beim Hören','naTipT naNw')}
+  {text(487,281,220,'auf die wichtigen Wörter.','naTipT naNw')}
+  {text(487,304,380,'Wichtige Wörter in Wegbeschreibungen sind:','naTipT naNw')}
+  {text(487,325,440,'– Einrichtungen in der Stadt: Bahnhof, Kino, Dom …','naTipT naNw')}
+  {text(487,348,410,'– Richtungsangaben: rechts, links, geradeaus …','naTipT naNw')}
+  {audio('assets/ab-a12-cd2-track02.mp3',56,397,'2 02')}
+  {title('2',111,401,820,'Roland möchte Simon besuchen. Er steht am Bahnhof und fragt nach dem Weg.','naYB')}
+  {text(156,430,810,'Hören Sie noch einmal und zeichnen Sie den Weg in den Stadtplan. Wo ist die Albachstraße?','naTitleTxt2 naNw')}
+  {art('stadtplan',117,464,846,364)}
+  {text(113,908,330,'TRAINING: AUSSPRACHE','naTrain2 naNw')}
+  {text(445,910,300,'Diphthonge „ei“, „eu“, „au“','naTrainIt naNw')}
+  <div className="naRuleY9" style={{left:744,top:931,width:220}}/>
+  {audio('assets/ab-a12-cd2-track03.mp3',56,978,'2 03')}
+  {title('1',111,980,340,'Hören Sie und sprechen Sie nach.','naYB')}
+  <div className="naBand9" style={{left:153,top:1018,width:348,height:24}}/>
+  <div className="naBand9" style={{left:153,top:1043,width:348,height:24}}/>
+  <div className="naBand9" style={{left:153,top:1068,width:290,height:25}}/>
+  {text(160,1020,340,'nein | beschreiben | Polizei | beide | vorbei','naWord9 naNw')}
+  {text(159,1046,345,'ankreuzen | deutsch | Freund | neun | Euro','naWord9 naNw')}
+  {text(159,1072,290,'Auto | auch | Frau | geradeaus | auf','naWord9 naNw')}
+  {audio('assets/ab-a12-cd2-track05.mp3',523,980,'2 05')}
+  {title('3',570,978,400,'Ergänzen Sie „au“, „ei“ oder „eu“.','naYB naYB21')}
+  {text(614,1009,330,'Hören Sie dann und vergleichen Sie.','naTitleTxt2 naNw')}
+  {text(612,1045,20,'a','naLet9')} {text(636,1045,14,'S','naS18 naNw')}{field('9-3a1',646,1046,34,'3a Seid')}{text(684,1045,90,'d ihr verh','naS18 naNw')}{field('9-3a2',772,1046,34,'3a verheiratet')}{text(810,1045,64,'ratet? – N','naS18 naNw')}{field('9-3a3',874,1046,34,'3a Nein')}{text(912,1045,24,'n,','naS18 naNw')}
+  {text(637,1071,65,'nur Arb','naS18 naNw')}{field('9-3a4',702,1072,34,'3a Arbeitskollegen')}{text(740,1071,95,'tskollegen.','naS18 naNw')}
+  {text(612,1097,20,'b','naLet9')} {text(636,1097,78,'Zur Poliz','naS18 naNw')}{field('9-3b1',714,1098,34,'3b Polizei')}{text(752,1097,140,'? Zuerst gerade','naS18 naNw')}{field('9-3b2',892,1098,34,'3b geradeaus')}{text(930,1097,60,'s und','naS18 naNw')}
+  {text(637,1123,227,'dann am Hotel vorb','naS18 naNw')}{field('9-3b3',864,1124,34,'3b vorbei')}{text(902,1123,10,'.','naS18 naNw')}
+  {text(612,1149,20,'c','naLet9')} {text(636,1149,110,'Was kostet das','naS18 naNw')}{field('9-3c1',746,1150,34,'3c Auto')}{text(784,1149,50,'to? –','naS18 naNw')}
+  {text(637,1175,15,'N','naS18 naNw')}{field('9-3c2',634,1176,32,'3c Neunzehntausend')}{text(668,1175,83,'nzehnt','naS18 naNw')}{field('9-3c3',772,1176,34,'3c tausend')}{text(810,1175,48,'send','naS18 naNw')}{field('9-3c4',858,1176,34,'3c Euro')}{text(896,1175,40,'ro.','naS18 naNw')}
+  {text(612,1201,20,'d','naLet9')} {text(636,1201,34,'Wie h','naS18 naNw')}{field('9-3d1',670,1202,34,'3d heißt')}{text(708,1201,84,'ßt das','naS18 naNw')}{field('9-3d2',792,1202,34,'3d auf')}{text(830,1201,32,'f D','naS18 naNw')}{field('9-3d3',864,1202,34,'3d Deutsch')}{text(902,1201,62,'tsch? –','naS18 naNw')}
+  {text(636,1227,84,'Tut mir l','naS18 naNw')}{field('9-3d4',720,1228,34,'3d leid')}{text(758,1227,82,'d. Das w','naS18 naNw')}{field('9-3d5',840,1228,34,'3d weiß')}{text(878,1227,78,'ß ich','naS18 naNw')}{field('9-3d6',957,1228,34,'3d auch')}{text(995,1227,25,'ch','naS18 naNw')}
+  {text(637,1253,50,'nicht.','naS18 naNw')}
+  {check('9-3',830,1256,{'9-3a1':'ei','9-3a2':'ei','9-3a3':'ei','9-3a4':'ei','9-3b1':'ei','9-3b2':'au','9-3b3':'ei','9-3c1':'au','9-3c2':'eu','9-3c3':'au','9-3c4':'eu','9-3d1':'ei','9-3d2':'au','9-3d3':'eu','9-3d4':'ei','9-3d5':'ei','9-3d6':'au'})}
+  {audio('assets/ab-a12-cd2-track04.mp3',56,1127,'2 04')}
+  {title('2',111,1127,460,'Hören Sie noch einmal und ergänzen','naYB naYB23')}
+  {text(155,1161,200,'Sie die Regel.','naTitleTxt2 naNw')}
+  <div className="naRegelBar" style={{left:155,top:1195,width:465,height:4}}/>
+  <div className="naRegelStrip" style={{left:155,top:1199,width:16,height:136}}>REGEL</div>
+  {text(188,1201,430,'Man hört „ai“, man schreibt meistens:','naS18 naNw')}
+  {field('9-2a',195,1214,135,'Regel ai')}
+  {text(188,1251,430,'Man hört „oi“, man schreibt meistens:','naS18 naNw')}
+  {field('9-2b',195,1264,135,'Regel oi')}
+  {text(188,1301,430,'Man hört „au“ und schreibt auch:','naS18 naNw')}
+  {field('9-2c',195,1314,135,'Regel au')}
+  {check('9-2',195,1346,{'9-2a':'ei','9-2b':'eu|äu','9-2c':'au'})}
+  {audio('assets/ab-a12-cd2-track06.mp3',543,1300,'2 06')}
+  {text(614,1305,400,'Hören Sie noch einmal und sprechen Sie nach.','naTitleTxt2 naNw')}
+  <div className="naText naFooter naNw" style={{left:905,top:1393,width:100}}>neun{'  |  '}<b>9</b></div>
+  <div className="naModul9b" style={{left:1003,top:1393,width:68,height:19}}>Modul 5</div>
  </>}
  </div><audio ref={player} className="naPlayer"/></div>;
 }
