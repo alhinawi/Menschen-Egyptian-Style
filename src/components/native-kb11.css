@@ -79,4 +79,4 @@
 
 .nkb[data-native-page="38"] input[type=checkbox].nkbField{appearance:none;-webkit-appearance:none;border-radius:3px}
 .nkb[data-native-page="38"] input[type=checkbox].nkbField:checked{background:rgba(255,224,51,.55)!important}
-.nkb[data-native-page="35"] .nkbLine.nkbB.nkbSans{font-family:KbFira,sans-serif;font-weight:700}
+.nkb[data-native-page="35"] .nkbLine.nkbB.nkbSans{font-family:KbFira,sans-serif;font-weight:500}
