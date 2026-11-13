@@ -2,6 +2,7 @@ import {CheckButton} from '../components/CheckButton';
 import {PageImage} from '../components/PageImage';
 import {useLayoutEffect,useRef,useState} from 'react';
 import {usePageReset} from '../exercises/usePageReset';
+import {LinedArea} from '../components/LinedArea';
 import '../components/native-ab12.css';
 import './native-ab12-l13.css';
 
@@ -15,8 +16,9 @@ export function NativeAB12Lesson13({page}:{page:string}){
  const [scale,ss]=useState(.6);const key='native-ab12-'+page;
  const [values,sv]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return {}}});
  const [results,sr]=useState<Record<string,boolean>>({});
+ const [saved,sn]=useState<Record<string,boolean>>({});
  useLayoutEffect(()=>{const el=root.current!;const obs=new ResizeObserver(()=>ss(Math.min(el.clientWidth/W,(el.clientHeight-38)/H)));obs.observe(el);return ()=>obs.disconnect()},[W,H]);
- usePageReset(page,key,()=>{sv({});sr({})});
+ usePageReset(page,key,()=>{sv({});sr({});sn({})});
  const set=(id:string,v:string)=>{const n={...values,[id]:v};sv(n);localStorage.setItem(key,JSON.stringify(n))};
  const text=(x:number,y:number,w:number,t:string,cls='')=><div className={'naText '+cls} style={{left:x,top:y,width:w}}><Words text={t}/></div>;
  const art=(name:string,x:number,y:number,w:number,h:number)=><PageImage className="naArt" src={`assets/book-crops/native-ab12-p${page}-${name}.png`} alt={'Originalillustration '+name} style={{left:x,top:y,width:w,height:h}}/>;
@@ -165,7 +167,9 @@ export function NativeAB12Lesson13({page}:{page:string}){
   <div className="naRule" style={{left:388,top:520,width:252}}/>
   <div className="naRule" style={{left:388,top:545,width:252}}/>
   <div className="naRule" style={{left:388,top:570,width:252}}/>
+  <LinedArea id="8-7" values={values} set={set} x={388} ruleYs={[520,545,570]} w={252} label="E-Mail: Wegbeschreibung" rules={false}/>
   {text(391,586,300,'Bis Samstag! Viele Grüße, Marina','naS16 naNw')}
+  <div className="naCheck" data-check="8-7" style={{left:391,top:616}}><CheckButton onClick={()=>sn(o=>({...o,['8-7']:true}))}></CheckButton><output aria-live="polite">{saved['8-7']?'Gespeichert':''}</output></div>
   {art('map',745,285,285,320)}
   {kb(56,648,'KB 7')}
   {title('8',109,639,500,'Ordnen Sie die Antworten zu.','naYB')}
