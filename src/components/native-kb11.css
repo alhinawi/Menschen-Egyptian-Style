@@ -56,3 +56,9 @@
 .nkb:is([data-native-page="92"],[data-native-page="93"],[data-native-page="94"],[data-native-page="95"],[data-native-page="96"]) .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
 
 .nkb:is([data-native-page="92"],[data-native-page="93"],[data-native-page="94"],[data-native-page="95"],[data-native-page="96"]) .nkbLine.nkbB{font-weight:500}
+
+.nkb:is([data-native-page="57"],[data-native-page="58"],[data-native-page="59"],[data-native-page="60"],[data-native-page="61"],[data-native-page="62"],[data-native-page="63"],[data-native-page="64"],[data-native-page="65"]) .nkbLine{font-family:KbDroid,serif}
+.nkb:is([data-native-page="57"],[data-native-page="58"],[data-native-page="59"],[data-native-page="60"],[data-native-page="61"],[data-native-page="62"],[data-native-page="63"],[data-native-page="64"],[data-native-page="65"]) .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
+.nkb:is([data-native-page="57"],[data-native-page="58"],[data-native-page="59"],[data-native-page="60"],[data-native-page="61"],[data-native-page="62"],[data-native-page="63"],[data-native-page="64"],[data-native-page="65"]) .nkbLine.nkbB{font-weight:500}
+.nkb[data-native-page="58"] .nkbCanvas input[type=text].nkbField[data-native-field^="f4a-"]{border-radius:50%!important;border:1.6px solid #d8c68c!important;background:transparent!important;text-align:center;padding:0!important}
+.nkb[data-native-page="59"] .nkbCanvas input[type=text].nkbField[data-native-field^="f7b-"]{border-radius:50%!important;border:1.6px solid #d8c68c!important;background:transparent!important;text-align:center;padding:0!important}
