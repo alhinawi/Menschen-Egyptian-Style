@@ -5,7 +5,9 @@ const time=(n:number)=>Number.isFinite(n)?`${Math.floor(n/60)}:${String(Math.flo
 function Player({audio,onHide}:{audio:HTMLAudioElement;onHide:()=>void}){
  const [state,setState]=useState({time:audio.currentTime,duration:audio.duration,paused:audio.paused});
  useEffect(()=>{const sync=()=>setState({time:audio.currentTime,duration:audio.duration,paused:audio.paused});const events=['timeupdate','durationchange','loadedmetadata','play','pause','ended','seeked'];events.forEach(e=>audio.addEventListener(e,sync));audio.preload='metadata';sync();return()=>events.forEach(e=>audio.removeEventListener(e,sync))},[audio]);
- const src=audio.getAttribute('src')||audio.querySelector('source')?.getAttribute('src')||'';
+ // After the no-range host fix swaps in a blob: URL, the track label still
+ // comes from the original file path kept on the element.
+ const src=audio.dataset.originalSrc||audio.getAttribute('src')||audio.querySelector('source')?.getAttribute('src')||'';
  const track=src.match(/cd(\d+)-track(\d+)/i);
  const label=track?`CD${track[1]} · Track ${track[2]}`:audio.getAttribute('aria-label')||'Originalaudio';
  const duration=Number.isFinite(state.duration)?state.duration:0;
