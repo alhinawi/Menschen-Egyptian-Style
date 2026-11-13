@@ -30,14 +30,19 @@ export function HybridScan({data}:{data:ScanData}){
 
    <div className="hybridWords">{data.words.map((w,i)=>/[A-Za-zÄÖÜäöüß]/.test(w.text)?<span key={i} className="hybridWord tapWord" data-word={w.text} data-phrase={w.phrase||w.text} role="button" tabIndex={0} aria-label={`${w.text} · Bedeutung`} style={box(w)}>{w.text}</span>:<span key={i} className="hybridWord" style={box(w)}>{w.text}</span>)}</div>
    <div className="hybridFields">{data.fields.map(f=>{
-    const className='hybridField '+(results[f.id]===undefined?'':results[f.id]?'hybridCorrect':'hybridWrong');
+    // Radio alternatives are choices, not independently true/false answers.
+    // Untouched group: every choice red. Answered group: only the chosen choice gets a result.
+    const status=f.kind==='radio'&&results[f.id]!==undefined
+     ?values[f.name||f.id]===undefined?false:values[f.name||f.id]===f.value?results[f.id]:undefined
+     :results[f.id];
+    const className='hybridField '+(status===undefined?'':status?'hybridCorrect':'hybridWrong');
     const props={key:f.id,className,style:box(f),'aria-label':f.label,'data-field-id':f.id};
     if(f.kind==='select')return <select {...props} value={values[f.id]||''} onChange={e=>update(f.id,e.target.value)}><option value=""/>{f.options?.map(o=><option key={o.value} value={o.value}>{o.label}</option>)}</select>;
     if(f.kind==='radio')return <input {...props} type="radio" name={`${key}-${f.name||f.id}`} value={f.value} checked={values[f.name||f.id]===f.value} onChange={()=>update(f.name||f.id,f.value||'')}/>;
     if(f.kind==='checkbox')return <input {...props} type="checkbox" checked={values[f.id]==='true'} onChange={e=>update(f.id,String(e.target.checked))}/>;
     return <input {...props} type="text" value={values[f.id]||''} onChange={e=>update(f.id,e.target.value)} autoComplete="off" spellCheck={false}/>;
    })}</div>
-   {matchings.map(m=><span key={m.id} style={{display:'contents'}}>{m.masks?.map((b,i)=><span key={i} className="hybridMask" style={box(b)}/>)}<LineMatching id={m.id} left={m.left} right={m.right} values={values} onMatch={update} leftX={m.leftX} rightX={m.rightX} leftWidth={m.leftWidth} rightWidth={m.rightWidth} ys={m.ys} rightYs={m.rightYs} itemHeights={m.itemHeights} rightHeights={m.rightHeights} multiline={m.multiline} lineHeight={m.lineHeight} fontSize={m.fontSize} example={m.example} multiple={m.multiple} leftWidths={m.leftWidths} rightWidths={m.rightWidths} leftXs={m.leftXs} rightXs={m.rightXs} leftDotXs={m.leftDotXs} leftDotYs={m.leftDotYs} rightDotXs={m.rightDotXs} rightDotYs={m.rightDotYs} className={m.className} width={data.width} height={data.height}/></span>)}
+   {matchings.map(m=><span key={m.id} style={{display:'contents'}}>{m.masks?.map((b,i)=><span key={i} className="hybridMask" style={box(b)}/>)}<LineMatching id={m.id} answers={m.answers} left={m.left} right={m.right} values={values} onMatch={update} leftX={m.leftX} rightX={m.rightX} leftWidth={m.leftWidth} rightWidth={m.rightWidth} ys={m.ys} rightYs={m.rightYs} itemHeights={m.itemHeights} rightHeights={m.rightHeights} multiline={m.multiline} lineHeight={m.lineHeight} fontSize={m.fontSize} example={m.example} multiple={m.multiple} leftWidths={m.leftWidths} rightWidths={m.rightWidths} leftXs={m.leftXs} rightXs={m.rightXs} leftDotXs={m.leftDotXs} leftDotYs={m.leftDotYs} rightDotXs={m.rightDotXs} rightDotYs={m.rightDotYs} className={m.className} width={data.width} height={data.height}/></span>)}
    <ClipMarkers book={data.book} page={data.page}/>
    {data.audio.map(a=><button key={a.id} data-audio-src={a.src} type="button" className="hybridAudio" style={box(a)} aria-label={a.label} onClick={()=>{setActiveAudio(a.src);requestAnimationFrame(()=>{if(player.current){player.current.src=a.src;player.current.play().catch(()=>{})}})}}>▶</button>)}
    <div className="hybridTools empty:hidden" ref={tools}>{data.groups.filter(g=>gradedIds(g.id).length>0).map(g=><div key={g.id} className="hybridCheck"><CheckButton type="button" onClick={()=>check(g.id)}></CheckButton><output aria-live="polite">{gradedIds(g.id).some(id=>results[id]!==undefined)?gradedIds(g.id).every(id=>results[id])?'✓ Richtig!':'Noch einmal':''}</output></div>)}{data.audio.length>0&&<audio ref={player} controls hidden/>}</div>

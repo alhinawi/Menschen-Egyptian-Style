@@ -1,3 +1,4 @@
+import './answer-cross';
 import {createRoot} from 'react-dom/client';
 import App from './App';
 import './adapters/page-flip';
