@@ -10,3 +10,6 @@
 /* Keep the module's 901 x 1275 coordinate system ahead of the generic
    1075 x 1521 canvas rule, regardless of lazy stylesheet load order. */
 .nativeAB11.nativeAB11Module1:not(.nativeAB11Lessons45) .mCanvas{width:901px;height:1275px}
+
+.nativeAB11Module1 .mCanvas .mInk{position:absolute;background:transparent!important;border:0!important;outline:0!important;box-shadow:none!important;resize:none;padding:0!important;margin:0;font:13px/21.4px 'Caveat','Segoe Script','Comic Sans MS',cursive;color:#1f3f94;overflow-y:auto;overflow-x:hidden;scrollbar-width:none;box-sizing:content-box}.nativeAB11Module1 .mCanvas .mInk:focus-visible{background:rgba(255,246,170,.35)!important}.mCanvas .mHelp{position:absolute;pointer-events:none;max-width:none;mix-blend-mode:multiply}
+.mCanvas .mSq,.mCanvas .mTri{display:inline-block;vertical-align:baseline}.mCanvas .mSq{width:.5em;height:.5em;background:#1f3f94;margin-right:.1em}.mCanvas .mTri{width:0;height:0;border-left:.3em solid transparent;border-right:.3em solid transparent;border-bottom:.55em solid #3a9a2a;margin-right:.1em}

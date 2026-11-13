@@ -6,7 +6,7 @@ import {scanData} from '../scan-data/registry';
 import './native-ab11.css';
 import './native-ab11-module1.css';
 const norm=(s:string)=>s.normalize('NFC').toLocaleLowerCase('de').trim().replace(/[.,!?;:’']/g,'').replace(/\s+/g,' ');
-function Words({s}:{s:string}){return <>{s.split(/(\s+)/).map((w,i)=>/\S/.test(w)?<span key={i} className="tapWord" role="button" tabIndex={0} data-phrase={s} data-word={w.replace(/^[.,!?„"()]+|[.,!?“"()]+$/g,'')}>{w}</span>:w)}</>}
+function Words({s}:{s:string}){return <>{s.split(/(\s+)/).map((w,i)=>w==='▪'||w==='▴'?<i key={i} className={w==='▪'?'mSq':'mTri'} aria-hidden="true"/>:/\S/.test(w)?<span key={i} className="tapWord" role="button" tabIndex={0} data-phrase={s} data-word={w.replace(/^[.,!?„"()]+|[.,!?“"()]+$/g,'')}>{w}</span>:w)}</>}
 const grid=['HSMHEDSWI','RALASJPOB','MVEBEORHH','ARBEITENE','CHENNKCEI','HUNCMOHNS','EICFPMEAS','NABIGMNIE','STUDIEREN','PRATRNULG'];
 const gridWords:Record<string,number[]>={SEIN:[1,4,4,4],MACHEN:[2,0,7,0],HABEN:[0,3,4,3],LEBEN:[1,2,5,2],ARBEITEN:[3,0,3,7],KOMMEN:[4,5,9,5],SPRECHEN:[0,6,7,6],WOHNEN:[0,7,5,7],HEISSEN:[2,8,8,8],STUDIEREN:[8,0,8,8]};
 export function NativeAB11Module1({page}:{page:string}){
@@ -14,12 +14,15 @@ export function NativeAB11Module1({page}:{page:string}){
  useLayoutEffect(()=>{const el=host.current;if(!el)return;const measure=()=>SS(Math.min(el.clientWidth/901,el.clientHeight/1275));measure();const ro=new ResizeObserver(measure);ro.observe(el);return()=>ro.disconnect()},[]);
  usePageReset(page,'native-ab11-'+page,()=>{S({});G({})});
  const set=(id:string,value:string)=>{const next={...v,[id]:value};S(next);localStorage.setItem('native-ab11-'+page,JSON.stringify(next));G({})};
- const sy=page==='20'||page==='22'?.87:page==='24'?.86:page==='25'?.76:page==='26'?.8:page==='27'?.78:1;const Y=(y:number)=>130+(y-130)*sy;
+ const sy=page==='20'||page==='22'?.87:page==='24'?.86:page==='25'?.76:page==='26'?.8:page==='27'?.78:1;const Y=(y:number)=>page==='27'&&y>940?130+810*sy+(y-940):130+(y-130)*sy;const K=.838;
  const txt=(x:number,y:number,w:number,s:string,cls='')=><div className={'mText '+cls} style={{left:x,top:cls==='mFooter'?y:Y(y),width:w}}><Words s={s}/></div>;
  const f=(id:string,x:number,y:number,w:number,label=id)=>{const ctx=document.createElement('canvas').getContext('2d');if(ctx)ctx.font="18px 'Times New Roman'";const size=Math.max(10,Math.min(18,18*(w-5)/(ctx?.measureText(v[id]||'').width||1)));return <input className="mField" data-native-field={id} aria-label={label} style={{left:x,top:Y(y),width:w,height:22*sy,fontSize:size}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>};
  const open=(id:string,x:number,y:number,w:number,h:number,label=id)=><textarea className="mField mOpen" data-native-field={id} aria-label={label} style={{left:x,top:Y(y),width:w,height:h*sy,'--mopen-height':h*sy+'px'} as React.CSSProperties} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
- const art=(name:string,x:number,y:number,w:number,h:number)=><PageImage className="mArt" alt={'Originalabbildung '+name} src={`assets/native-ab11/p${page}-${name}.png`} style={{left:x,top:Y(y),width:w,height:h*sy}}/>;
+ const art=(name:string,x:number,y:number,w:number,h:number)=><PageImage className="mArt" alt={'Originalabbildung '+name} src={`assets/native-ab11/p${page}-${name}.png`} style={{left:x,top:Y(y),width:w,height:h*(page==='27'?1:sy)}}/>;
  const title=(n:string,y:number,s:string,kb='',x=132,w=700)=><>{kb&&txt(96,y+5,34,kb,'mKB')}<div className={'mNumber '+(Number(page)>=24?'red':'')} style={{left:x,top:Y(y)}}>{n}</div>{txt(x+35,y,w-35,s,'mTitle')}</>;
+ const ink=(name:string,sx:number,top:number,w:number,h:number,alt='')=><PageImage className="mHelp" alt={alt} src={`assets/native-ab11/p27-${name}.png`} style={{left:sx*K,top:Y(top),width:w*K,height:h*K}}/>;
+ const rt=(scanY:number)=>scanY*K+223.5;
+ const lined=(id:string,x:number,w:number,firstRule:number,lines:number,skip:number,label:string,deg=0)=><textarea className="mInk" data-native-field={id} aria-label={label} style={{left:x,top:Y(firstRule-16.4+skip*21.4),width:w,height:21.4*(lines-skip),transform:deg?`rotate(${deg}deg)`:undefined,transformOrigin:'0 0'} as React.CSSProperties} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
  const head=(s:string)=><>{txt(132,135,740,s,'mHeader')}<div className="mRule"/></>;
  const data=scanData['ab-a11:'+page];
  const answers=(group:string)=>Object.fromEntries(data.fields.filter(f=>f.group===group&&f.kind!=='radio'&&f.kind!=='checkbox'&&f.answer!==undefined).map(f=>[f.id,f.answer!]));
@@ -198,13 +201,13 @@ export function NativeAB11Module1({page}:{page:string}){
  {txt(138,1425,603,'… 10 Familienmitglieder:  L03','mTitle')}{confidence('k4',1415)}{open('k4-eigen',168,1451,542,49,'10 eigene Familienmitglieder')}
  </>}
  {page==='27'&&<>
- {head('SELBSTEINSCHÄTZUNG')}{txt(502,139,300,'Das kann ich!','mExample')}{txt(135,206,320,'Ich kann auch …','mBlue')}{lights(190)}
+ {head('SELBSTEINSCHÄTZUNG')}{ink('dkich-ink',590,129,210,48,'Das kann ich!')}{txt(135,206,320,'Ich kann auch …','mBlue')}{lights(190)}
  {txt(135,233,603,'… W-Fragen stellen und auf Fragen antworten:  L01/L02/L03','mTitle')}{confidence('s8',225)}
  {['heißt ihr?','kommen Madita und Mia?','sprichst du?','wohnen Sie?','ist das?'].map((s,i)=>{const y=263+i*28,x=[357,465,370,380,376][i],w=[173,137,170,228,240][i];return <span key={s}>{txt(154,y,16,'▪')}{f('s8-'+(i+1)+'q',173,y-2,98)}{txt(277,y,x-281,s,'mSmall')}{txt(x-15,y,15,'▴','mSmall')}{f('s8-'+(i+1)+'a',x,y-2,w)}{txt(x+w+4,y,200,['Sandra und Simone.','aus Schweden.','Spanisch und Englisch.','in Madrid.','ist Pedro.'][i],'mSmall')}</span>})}
  {check('s8',580,409,{...answers('s8'),'s8-3q':'Was|Welche Sprachen'})}
- {txt(135,449,603,'… Aussagen verneinen (Negation):  L02','mTitle')}{confidence('s9',441)}{txt(154,478,105,'Markus wohnt')}{f('s9-1',264,476,108)}{txt(378,478,85,'in Köln und')}{txt(154,505,20,'ist')}{f('s9-2',180,503,108)}{txt(294,505,130,'verheiratet.')}{txt(490,478,230,'Markus: Stuttgart\nFamilienstand: Single','mExample')}{check('s9',580,532)}
+ {txt(135,449,603,'… Aussagen verneinen (Negation):  L02','mTitle')}{confidence('s9',441)}{txt(154,478,105,'Markus wohnt')}{f('s9-1',264,476,108)}{txt(378,478,85,'in Köln und')}{txt(154,505,20,'ist')}{f('s9-2',180,503,108)}{txt(294,505,130,'verheiratet.')}{ink('markus-ink',580,461.5,165,65,'Markus: Stuttgart, Familienstand: Single')}{check('s9',580,532)}
  {txt(135,574,603,'… nach Familienmitgliedern fragen und sie benennen (Possessivartikel):  L03','mTitle')}{confidence('s10',566)}
- {txt(154,603,212,'▴ Sind das deine Eltern?','mSmall')}{txt(366,603,100,'▪ Ja, das sind','mSmall')}{f('s10-1',472,601,86)}{txt(564,603,70,'Eltern. Das','mSmall')}{txt(366,630,66,'ist','mSmall')}{f('s10-2',436,628,83,'meine Mutter')}{txt(523,630,100,'Mutter und das','mSmall')}{txt(366,657,36,'ist','mSmall')}{f('s10-3',406,655,87)}{txt(498,657,100,'Vater.','mSmall')}{check('s10',636,657)}
+ {txt(154,603,80,'▴ Sind das','mSmall')}{ink('deine-ink',276,603.5,68,29,'deine')}{txt(293,603,70,'Eltern?','mSmall')}{txt(366,603,100,'▪ Ja, das sind','mSmall')}{f('s10-1',472,601,86)}{txt(564,603,70,'Eltern. Das','mSmall')}{txt(366,630,66,'ist','mSmall')}{f('s10-2',436,628,83,'meine Mutter')}{txt(523,630,100,'Mutter und das','mSmall')}{txt(366,657,36,'ist','mSmall')}{f('s10-3',406,655,87)}{txt(498,657,100,'Vater.','mSmall')}{check('s10',636,657)}
  {txt(135,704,603,'… Ja-/Nein-Fragen stellen und mit ja/nein/doch antworten:  L03','mTitle')}{confidence('s11',696)}
  {txt(154,733,17,'▪')}{f('s11-1q',174,731,80)}{txt(260,733,230,'das deine Eltern?')}
  {txt(154,761,22,'☺ ▴','mSmall')}{f('s11-1a',181,759,199)}{txt(391,761,22,'☹ ▴','mSmall')}{f('s11-1b',418,759,228)}
@@ -213,8 +216,8 @@ export function NativeAB11Module1({page}:{page:string}){
  {txt(135,867,640,'Üben / Wiederholen möchte ich noch …','mBlue')}{open('ueben',135,892,557,28,'Üben und Wiederholen eigene Notiz')}
  {txt(135,951,650,'RÜCKBLICK','mHeader')}{txt(135,996,650,'Wählen Sie eine Aufgabe zu Lektion 1','mBlue')}
  {title('1',1034,'Wer ist das? Sehen Sie im Kursbuch auf den Seiten 9 und 10 nach und schreiben Sie.','',135,710)}
- {['nicole','paco','wachter'].map((s,i)=><span key={s}>{art(s,172+i*194,1065,102,98)}{open('r1-person-'+i,157+i*194,1170,147,72,'Rückblick Person '+(i+1))}</span>)}
- {title('2',1289,'Suchen Sie Fotos. Wer ist das? Stellen Sie die Personen vor.','',135,710)}{art('mesut',172,1328,102,120)}{txt(305,1348,250,'Das ist Mesut Özil. Er\nkommt aus Deutschland.','mExample')}{open('r2-personen',555,1328,250,120,'Rückblick eigene Personen vorstellen')}
+ {['nicole','paco','wachter'].map((s,i)=><span key={s}>{art(s,172+i*194,1065,102,98)}{lined('r1-person-'+i,[189,441,690][i]*K,[163,166,162][i]*K,rt([1167,1146,1134][i]),3,[2,2,0][i],'Rückblick Person '+(i+1),[-6,-.5,-.5][i])}</span>)}{ink('ex1-ink',175,rt(1116),685,119)}
+ {title('2',1284,'Suchen Sie Fotos. Wer ist das? Stellen Sie die Personen vor.','',135,710)}{art('mesut',172,1304,102,118)}{ink('ex2-ink',340,rt(1305),500,107)}{lined('r2-left',360*K,170*K,rt(1401),1,0,'Rückblick eigene Person links',-7)}{lined('r2-personen',644*K,158*K,rt(1356),3,0,'Rückblick eigene Personen vorstellen')}
  </>}
  {page==='28'&&<>
  {head('RÜCKBLICK')}{txt(135,212,680,'Wählen Sie eine Aufgabe zu Lektion 2','mBlue')}
