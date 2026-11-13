@@ -1,6 +1,9 @@
 import {createRoot} from 'react-dom/client';
 import App from './App';
 import './adapters/page-flip';
+import {installSeekableAudio} from './seekable-audio';
+
+installSeekableAudio();
 import {configs, loadLesson, applyRouteMeta} from './navigate';
 import './tailwind.gen.css';
 
