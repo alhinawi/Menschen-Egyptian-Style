@@ -207,6 +207,6 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {open('u2-notes',170,1016,600,156,'2 Eigene Wörter')}
  {art('photos',794,168,107,1010)}
  </>}
- {Number(page)%2?txt(690,({79:1209,81:1193,83:1205,85:1204,87:1211} as Record<string,number>)[page]||1208,180,footerW[page]+' | '+page,'mFooter'):<>{txt(48,({80:1211,82:1208,84:1212,86:1206} as Record<string,number>)[page]||1208,60,'Modul 4','mFooter mFooterTab')}{txt(112,({80:1211,82:1208,84:1212,86:1206} as Record<string,number>)[page]||1208,170,page+' | '+footerW[page],'mFooter')}</>}
+ {Number(page)%2?<>{txt(708,({79:1207,81:1191,83:1203,85:1202,87:1209} as Record<string,number>)[page]||1208,180,footerW[page]+'  |  '+page,'mFooter')}{txt(869,(({79:1207,81:1191,83:1203,85:1202,87:1209} as Record<string,number>)[page]||1208)-7,60,'Modul 4','mFooter mFooterTab mFooterTabOdd')}</>:<>{txt(48,({80:1209,82:1206,84:1210,86:1204} as Record<string,number>)[page]||1208,60,'Modul 4','mFooter mFooterTab')}{txt(112,({80:1209,82:1206,84:1210,86:1204} as Record<string,number>)[page]||1208,170,page+' | '+footerW[page],'mFooter')}</>}
  </div><audio className="nabPlayer" ref={audio} controls hidden={!track} aria-label="Originalaudio Arbeitsbuch"/></div>;
 }
