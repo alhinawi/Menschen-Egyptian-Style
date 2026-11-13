@@ -34,3 +34,11 @@
 .nativeAB11Lesson10Mid .mExRule{position:absolute;height:1px;background:#aaa}
 .nativeAB11Lesson10Mid .mCanvas .mText.mBig{font-size:19px}
 .nativeAB11Lesson10Mid .mCanvas .mText.mScoreLink{font-size:11.5px;text-align:right}
+.nativeAB11Lesson10Mid .mCanvas .mText.mVocabHead{font-weight:bold}
+.nativeAB11Lesson10Mid .mCanvas .mVocabCH{font-size:13px}
+.nativeAB11Lesson10Mid .mTippBar{position:absolute;background:#cc9107;display:flex;align-items:center;justify-content:center}
+.nativeAB11Lesson10Mid .mTippBar span{transform:rotate(-90deg);color:#fff;font:700 10px FiraSans,Arial,sans-serif;letter-spacing:1px}
+.nativeAB11Lesson10Mid .mTippRule{position:absolute;background:#cc9107}
+.nativeAB11Lesson10Mid .mCanvas .mText.mTipp{font:14px/18.4px 'Times New Roman',serif}
+.nativeAB11Lesson10Mid .mCanvas .mHi{background:#fdfb50}
+.nativeAB11Lesson10Mid[data-native-ab11-page='83'] .mCanvas .mOpen{line-height:21px!important;height:var(--mopen-height)!important;border:0!important;background:repeating-linear-gradient(white 0 20px,#aaa 20px 21px)!important}
