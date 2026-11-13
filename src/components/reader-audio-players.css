@@ -36,3 +36,15 @@ html[data-theme=dark] .readerActiveClose{color:#f9fbff!important}
 
 html:has(body.hasActiveAudio),body.hasActiveAudio #viewport{scroll-padding-bottom:calc(var(--reader-controls-height,56px) + var(--active-audio-height,108px) + 16px)}
 body.hasActiveAudio{padding-bottom:calc(var(--reader-controls-height,56px) + var(--active-audio-height,108px) + 24px)}
+
+.readerAudioPlayer{position:relative;padding-right:44px}
+.readerPlayerClose{position:absolute;right:0;top:0;width:40px;height:44px;padding:0!important;font-size:24px!important;border:0!important;background:transparent!important;color:inherit;cursor:pointer}
+.readerActiveAudio .readerAudioPlayer{padding-right:44px}
+.readerActiveAudio .readerAudioHeading{padding-right:0}
+
+/* Reserve audio space only while a player is visible. */
+body.readerSplitControls:not(.hasActiveAudio):not(:has(.readerAudioPanel .readerAudioPlayer)){padding-bottom:var(--reader-controls-height,56px)}
+html:has(body.readerSplitControls:not(.hasActiveAudio):not(:has(.readerAudioPanel .readerAudioPlayer))),body.readerSplitControls:not(.hasActiveAudio):not(:has(.readerAudioPanel .readerAudioPlayer)) #viewport{scroll-padding-bottom:var(--reader-controls-height,56px)}
+/* A short page ends with its hint and toolbar, without a viewport-sized spacer. */
+body.readerSplitControls:not(.hasActiveAudio):not(:has(.readerAudioPanel .readerAudioPlayer)){padding-bottom:0}
+body.readerSplitControls:not(.hasActiveAudio):not(:has(.readerAudioPanel .readerAudioPlayer)) .controls{position:sticky;bottom:0;left:auto;right:auto}

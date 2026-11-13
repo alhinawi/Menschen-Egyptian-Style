@@ -1,0 +1,24 @@
+.naCanvas .naCNum{position:absolute;appearance:none;-webkit-appearance:none;width:20px!important;height:20px!important;min-width:0!important;min-height:0!important;box-sizing:border-box;border:2px solid #b9b071!important;border-radius:50%!important;background:transparent!important;text-align:center;font:14px/17px 'Times New Roman',serif;color:#224777;padding:0!important;margin:0!important;z-index:3}
+.naCanvas .naCNumPrint{position:absolute;width:20px;height:20px;box-sizing:border-box;border:2px solid #b9b071;border-radius:50%;color:#224777;font:14px/17px 'Times New Roman',serif;text-align:center}
+.naCanvas .naText.naTh{font-weight:bold;font-size:19px}
+.naCanvas .naCheck.naCheckCol{flex-direction:column;align-items:flex-start;gap:2px}
+.naCanvas .naText.naExL{font-family:FiraSans,'Trebuchet MS',sans-serif;font-weight:bold;font-size:20px;color:#335b98}
+.naCanvas .naTRule{position:absolute;height:0;border-bottom:1px solid #e0dcc8}
+.naCanvas .naBankB{font-weight:bold;color:#1f3a6d}
+.naCanvas .naBank{font-family:FiraSans,'Trebuchet MS',sans-serif;font-size:15px;color:#335b98;position:absolute;white-space:nowrap;letter-spacing:.5px;background:#fffbe6;border-radius:5px;padding:5px 13px}
+.naCanvas .naText.naBold{font-weight:bold}
+.naCanvas .naText.naBlue{color:#1b6bab}
+.naCanvas .naText.naHead{font-size:30px;letter-spacing:0.3px;color:#6f6f6f}
+.naCanvas .naHeadRule{position:absolute;height:3px;background:#f6c90e}
+.naCanvas .naHl{background:#fcee21;padding:0 1px}
+.naCanvas .naText{white-space:nowrap}
+.naCanvas .naText.naStrike{text-decoration:line-through}
+
+.naCanvas .naBank s{text-decoration:line-through}
+.naCanvas .naPick{position:absolute;font:21px/1.27 'Times New Roman',Times,serif;color:#111;background:transparent;border:0!important;padding:0 1px!important;margin:0!important;min-width:0!important;min-height:0!important;width:auto!important;height:auto!important;cursor:pointer;z-index:3;text-align:left;white-space:nowrap}
+.naCanvas .naPick.selected{background:#fcee21}
+.naCanvas .naPick:focus-visible{outline:3px solid #26764c;outline-offset:1px}
+.naCanvas .naCheck.naCheckSm button{font-size:14px!important;padding:2px 8px!important;min-height:0!important}
+.naCanvas .naText.naF21{font-size:21px}
+.naCanvas .naTFrame{position:absolute;border:1px solid #e3dec9;box-sizing:border-box}
+.naCanvas .naTCol{position:absolute;width:0;border-left:1px solid #e3dec9}
