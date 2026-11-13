@@ -307,13 +307,19 @@ for(const width of[320,390]){
  assert.equal(await p.evaluate(()=>localStorage.getItem('native-ab12-73')),null,'reset clears storage');
  console.log(width,'p73 interaction/grade/persist/reset PASS');
  await p.close();
- // page 74: Selbsteinschaetzung - free-writing fields, confidence dot radios, no grading
+ // page 74: Selbsteinschaetzung - 5 graded check groups (keys: Hueber Loesungen Modul 7), free-writing Ich-kenne fields, confidence dot radios
  p=await openPage(b,width,'74');
  const pg74=p.locator('.page[data-page="74"]');
  assert.equal(await pg74.locator('.nativeAB12[data-native-ab12="74"]').count(),1,'native p74 rendered');
  assert.equal(await pg74.locator('[data-native-field]').count(),26,'26 free-writing fields (3+3+2+6+4 kann, 8 kenne)');
  for(const id of['p74-s1-1','p74-s2-3','p74-s3-2','p74-s4-3b','p74-s5-4','p74-k1-1','p74-k2-2','p74-k3-2','p74-k4-2'])assert.equal(await pg74.locator('[data-native-field="'+id+'"]').count(),1,'field '+id);
- assert.equal(await pg74.locator('[data-check]').count(),0,'no check buttons on self-assessment page');
+ assert.equal(await pg74.locator('[data-check]').count(),5,'5 graded check groups on p74');
+ // graded checks s1-s5: wrong then right, keys from Hueber Loesungen Modul 7
+ for(const id of['p74-s1-1','p74-s1-2','p74-s1-3'])await pg74.locator('[data-native-field="'+id+'"]').fill('x');
+ await pg74.locator('[data-check="s1"] button').click();
+ assert.match((await pg74.locator('[data-check="s1"] output').textContent())||'',/Noch einmal/,'s1 wrong graded');
+ for(const[id,v]of[['p74-s1-1','dick'],['p74-s1-2','Bart'],['p74-s1-3','Brille'],['p74-s2-1','echt'],['p74-s2-2','ach'],['p74-s2-3','komm'],['p74-s3-1','trockne bitte das Geschirr ab'],['p74-s3-2','räumt bitte die Spülmaschine aus'],['p74-s4-1a','darf'],['p74-s4-1b','nicht essen'],['p74-s4-2','verboten'],['p74-s4-3a','darf'],['p74-s4-3b','nicht telefonieren'],['p74-s4-4','erlaubt'],['p74-s5-1','in Ordnung'],['p74-s5-2','gar nicht gut'],['p74-s5-3','erstehe'],['p74-s5-4','chlimm']])await pg74.locator('[data-native-field="'+id+'"]').fill(v);
+ for(const g of['s1','s2','s3','s4','s5']){await pg74.locator('[data-check="'+g+'"] button').click();assert.match((await pg74.locator('[data-check="'+g+'"] output').textContent())||'',/Richtig/,g+' correct graded')}
  assert.equal(await pg74.locator('input.naDot[type="radio"]').count(),27,'27 confidence radios (9 rows x 3)');
  // radio select + group exclusivity
  await pg74.locator('input.naDot[aria-label="Selbsteinschätzung s1 gut"]').check();
@@ -331,7 +337,7 @@ for(const width of[320,390]){
  await p.locator('.pageResetTrigger').click();await p.getByRole('button',{name:'Reset',exact:true}).click();
  assert.equal(await p.locator('.page[data-page="74"] [data-native-field="p74-s1-1"]').inputValue(),'','reset clears field');
  assert.equal(await p.evaluate(()=>localStorage.getItem('native-ab12-74')),null,'reset clears storage');
- console.log(width,'p74 interaction/persist/reset PASS');
+ console.log(width,'p74 interaction/grade/persist/reset PASS');
  await p.close();
  // page 75: Selbsteinschaetzung - graded grammar blanks, confidence dot radios, free-writing Ueben line
  p=await openPage(b,width,'75');
