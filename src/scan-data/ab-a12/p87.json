@@ -1253,7 +1253,35 @@
    "h": 20
   }
  ],
- "audio": [],
+ "audio": [
+  {
+   "id": "track37-1",
+   "src": "assets/ab-cd2-track37.mp3",
+   "label": "CD2 · Track37",
+   "x": 26,
+   "y": 452,
+   "w": 42,
+   "h": 22
+  },
+  {
+   "id": "track38-2",
+   "src": "assets/ab-cd2-track38.mp3",
+   "label": "CD2 · Track38",
+   "x": 26,
+   "y": 727,
+   "w": 42,
+   "h": 22
+  },
+  {
+   "id": "track39-3",
+   "src": "assets/ab-cd2-track39.mp3",
+   "label": "CD2 · Track39",
+   "x": 26,
+   "y": 922,
+   "w": 42,
+   "h": 22
+  }
+ ],
  "groups": [
   {
    "id": "g1",

@@ -1534,5 +1534,52 @@
   ],
   "verifiedWords": 188,
   "totalWords": 188
- }
+ },
+ "matchings": [
+  {
+   "id": "task12",
+   "group": "gx",
+   "left": [
+    "Soll ich das Kleid nehmen",
+    "Am See darf man nicht grillen",
+    "Ich mache gern Urlaub am Meer,",
+    "Der Techniker muss kommen,"
+   ],
+   "right": [
+    "denn",
+    "aber",
+    "oder",
+    "und"
+   ],
+   "leftX": 139,
+   "leftWidth": 220,
+   "rightX": 370,
+   "rightWidth": 75,
+   "ys": [
+    870,
+    890,
+    910,
+    929
+   ],
+   "fontSize": 15,
+   "example": [
+    0,
+    2
+   ],
+   "masks": [
+    {
+     "x": 135,
+     "y": 870,
+     "w": 255,
+     "h": 80
+    },
+    {
+     "x": 335,
+     "y": 868,
+     "w": 136,
+     "h": 82
+    }
+   ]
+  }
+ ]
 }
