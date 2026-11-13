@@ -157,3 +157,18 @@
 [data-native-ab12="13"] .naCanvas .naLine13e{position:absolute;background:#fff}
 [data-native-ab12="13"] .naCanvas .naText.naPara13a{font:17.8px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
 [data-native-ab12="13"] .naCanvas .naLine13f{position:absolute;background:#fbf7e2}
+/* p14: BASISTRAINING (Schreiben/Wörter/Hören) */
+[data-native-ab12="14"] .naCanvas .naBase13{font:34px Georgia,'Times New Roman',serif!important;color:#2d3034;letter-spacing:1px!important}
+[data-native-ab12="14"] .naCanvas .naKB13{font:bold 12px FiraSans,'Trebuchet MS',sans-serif!important;color:#63afcb;letter-spacing:.5px!important}
+[data-native-ab12="14"] .naCanvas .naSide13{z-index:5;position:absolute;writing-mode:vertical-rl;transform:rotate(180deg);font:bold 9.5px FiraSans,'Trebuchet MS',sans-serif;color:#3d5a94;letter-spacing:1.5px;white-space:nowrap}
+[data-native-ab12="14"] .naCanvas .naText.naLet13{color:#2f5b94!important;font:bold 18px FiraSans,'Trebuchet MS',sans-serif!important;letter-spacing:0!important}
+[data-native-ab12="14"] .naCanvas .naText.naInstr14{font:19.5px FiraSans,'Trebuchet MS',sans-serif!important;color:#1a1a12;letter-spacing:0!important}
+[data-native-ab12="14"] .naCanvas .naText.naCue14{font:17px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
+[data-native-ab12="14"] .naCanvas .naText.naSent14{font:18px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important;}
+[data-native-ab12="14"] .naCanvas .naField.naFld14{height:22px!important;font:19.5px DroidSerif,Georgia,serif!important;letter-spacing:0!important;padding:0!important;border:0!important;border-bottom:1.5px solid #b8b4ac!important;background:transparent!important;text-align:left;color:#224777!important}
+[data-native-ab12="14"] .naCanvas .naDot{width:18px!important;height:18px!important}
+[data-native-ab12="14"] .naCanvas .naText.naLet14{color:#26232e!important;font:17px DroidSerif,Georgia,serif!important;letter-spacing:0!important}
+[data-native-ab12="14"] .naCanvas .naFooter .naFz14{color:#26251f}
+[data-native-ab12="14"] .naCanvas .naText.naYT{font-size:21.4px!important}
+[data-native-ab12="14"] .naCanvas .naText.naSent14a{font-size:17.5px!important}
+[data-native-ab12="14"] .naCanvas .naDot.naDotD{border-color:#3d3d43!important}
