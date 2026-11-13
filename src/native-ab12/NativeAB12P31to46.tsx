@@ -30,7 +30,7 @@ export function NativeAB12P31to46({page}:{page:string}){
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg,[data-native-ab12] .naTitle,[data-native-ab12] .naField{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg{font-size:20px!important}[data-native-ab12] .naTitle{font-size:21px!important}[data-native-ab12] .naText.naS20{font-size:18px!important}[data-native-ab12] .naSmall{font-size:16.5px!important}[data-native-ab12] .naD19{font-size:17.5px!important}[data-native-ab12] .naField{font-size:19px!important}[data-native-ab12] .naUrl{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}"}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg,[data-native-ab12] .naTitle,[data-native-ab12] .naField{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg{font-size:20px!important}[data-native-ab12] .naTitle{font-size:21px!important}[data-native-ab12] .naText.naS20{font-size:18px!important}[data-native-ab12] .naSmall{font-size:16.5px!important}[data-native-ab12] .naD19{font-size:17.5px!important}[data-native-ab12] .naField{font-size:19px!important}[data-native-ab12] .naUrl{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='41'] .naModul{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='41'] .naTitle.naGB b{background:#69bb58!important}[data-native-ab12='41'] .naTitle{font-family:FiraSans,sans-serif!important;font-size:22px!important;letter-spacing:0!important}[data-native-ab12='41'] .naText,[data-native-ab12='41'] .naBold{font-size:17px!important}[data-native-ab12='41'] .naBold{font-weight:600}[data-native-ab12='41'] .naField{font-size:17px!important}[data-native-ab12='41'] .naGray{font-size:13px!important;color:#7c7c80!important;letter-spacing:0!important}"}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='31'&&<>
   {art('0',982,42,85,78)}
   {lin(354,107,605,6,'#a6ca03')}
@@ -1066,11 +1066,14 @@ export function NativeAB12P31to46({page}:{page:string}){
  {page==='41'&&<>
   {art('0',913,4,155,1390)}
   {art('2',539,906,251,138)}
-  {lin(0,0,8,462,'#bec5c9')}
+  {lin(0,0,8,462,'#d8dfe5')}
   {lin(389,111,456,3,'#84c284')}
+  {lin(312,249,189,2,'#c4c2ca')}
   {lin(312,274,135,2,'#c1bfcb')}
   {lin(312,300,163,2,'#bfbec3')}
   {lin(313,352,191,2,'#bbc1c1')}
+  {lin(671,249,196,2,'#c2c0c8')}
+  {lin(671,300,196,2,'#c1bfc9')}
   {lin(672,352,189,2,'#bbc6b7')}
   {lin(313,377,128,2,'#c6c2c8')}
   {lin(313,403,190,2,'#bebacd')}
@@ -1091,22 +1094,27 @@ export function NativeAB12P31to46({page}:{page:string}){
   {lin(313,751,191,2,'#c3c6bb')}
   {lin(673,777,196,2,'#acb4b4')}
   {lin(313,803,191,2,'#b8babf')}
+  {lin(673,829,196,2,'#b7bcc0')}
   {lin(673,867,196,2,'#b6bbbc')}
+  {lin(313,881,190,2,'#b9bec0')}
   {lin(313,957,191,2,'#b4c2b4')}
   {lin(314,996,190,2,'#babdca')}
   {lin(313,1022,191,2,'#adadb1')}
   {lin(142,1164,727,2,'#b8bbbc')}
-  {lin(142,1189,640,2,'#bcbfc0')}
-  {lin(142,1216,529,2,'#c1bfc7')}
-  {lin(142,1241,728,2,'#b5b7c0')}
-  {lin(142,1266,728,3,'#a6a9a9')}
-  {lin(142,1292,672,2,'#bdbcc0')}
-  {lin(201,1318,152,2,'#7a7a7a')}
-  {lin(466,1318,167,2,'#bbcfbb')}
-  {lin(741,1318,129,2,'#c6bdd8')}
+  {lin(142,1190,727,2,'#bcbfc0')}
+  {lin(142,1216,727,2,'#c1bfc7')}
+  {lin(142,1242,727,2,'#b5b7c0')}
+  {lin(142,1268,727,2,'#b5b7bd')}
+  {lin(142,1293,727,2,'#bdbcc0')}
+  {lin(142,1319,727,2,'#b8b8be')}
   {lin(143,1344,727,2,'#bfc0c2')}
+  {[249,274,300,352,378,403,429,481,507,558,584,648,700,752,803,881,958,997,1023].map((y,i)=>field('p41-1-l'+(i+1),314,y-19,185,'1 links Zeile '+(i+1),'naFieldBlank'))}
+  {[249,300,352,404,429,481,507,533,597,674,778,829,867].map((y,i)=>field('p41-1-r'+(i+1),674,y-19,190,'1 rechts Zeile '+(i+1),'naFieldBlank'))}
+  {[1164,1190,1216,1242,1268,1293,1319,1344].map((y,i)=>field('p41-2-'+(i+1),144,y-19,720,'2 Notizzeile '+(i+1),'naFieldBlank'))}
   {text(100,84,281,'LERNWORTSCHATZ','naHeadline naNw')}
-  {text(140,156,555,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naNw')}
+  {rect(94,152,36,2,'#c82828')}
+  {rect(95,152,2,33,'#c82828')}
+  {title('1',98,156,760,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naGB')}
   {text(140,196,105,'Ausbildung','naBold naNw')}
   {text(526,196,228,'Weitere wichtige Wörter','naBold naNw')}
   {text(140,224,165,'Ausbildung die, -en','naNw')}
@@ -1115,8 +1123,8 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(527,250,116,'Führerschein','naNw')}
   {text(141,276,122,'Chance die, -n','naNw')}
   {text(538,276,52,'der, -e','naNw')}
-  {text(141,300,123,'Fremdsprache','naBold naNw')}
-  {text(528,300,100,'Instrument','naBold naNw')}
+  {text(141,300,123,'Fremdsprache','naNw')}
+  {text(528,300,100,'Instrument','naNw')}
   {text(152,328,54,'die, -n','naNw')}
   {text(538,328,53,'das, -e','naNw')}
   {text(141,353,71,'Geld das','naNw')}
@@ -1127,6 +1135,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(528,405,105,'Lied das, -er','naNw')}
   {text(152,431,199,'eine Prüfung schaffen,','naNw')}
   {text(528,431,120,'Motorrad das,','naNw')}
+  {text(538,457,40,'¨er','naNw')}
   {text(153,457,112,'hat geschafft','naBold naNw')}
   {text(141,482,109,'Sänger der, -','naNw')}
   {text(527,482,72,'Welt die','naNw')}
@@ -1143,9 +1152,9 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(153,650,141,'eine Ausbildung','naBold naNw')}
   {text(539,650,102,'ist gelaufen','naBold naNw')}
   {text(153,676,101,'abschließen','naNw')}
-  {text(538,676,206,'A/CH: rennen, ist gerannt','naNw')}
+  {text(538,678,206,'A/CH: rennen, ist gerannt','naNw naGray')}
   {text(142,700,133,'an· melden, hat','naNw')}
-  {text(538,700,205,'(laufen (zu Fuß) gehen)','naNw')}
+  {text(538,702,220,'(laufen = (zu Fuss) gehen)','naNw naGray')}
   {text(153,726,101,'angemeldet','naNw')}
   {text(528,726,87,'reisen, ist','naNw')}
   {text(141,752,130,'verdienen, hat','naNw')}
@@ -1162,8 +1171,14 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(153,934,99,'hat gewollt','naBold naNw')}
   {text(142,968,89,'unbedingt','naBold naNw')}
   {text(142,998,133,'auf keinen Fall','naNw')}
-  {text(97,1096,587,'2 Welche Wörter möchten Sie noch lernen? Notieren Sie.','naNw')}
-  {text(818,1392,160,'einundvierzig | 41','naFooter')}
+  {rect(96,1096,36,2,'#c82828')}
+  {rect(97,1096,2,33,'#c82828')}
+  {title('2',100,1100,760,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naGB')}
+  {rect(994,1391,78,19,'#cbc3a4')}
+  {stext(999,1392,68,'Modul 6',{color:'#fff',fontSize:'13px'},'naModul naNw')}
+  {text(818,1392,113,'einundvierzig','naFooter')}
+  {text(937,1393,10,'|','naFooter')}
+  {text(964,1392,20,'41','naFooter')}
  </>}
  {page==='42'&&<>
   {art('0',15,38,927,79)}
