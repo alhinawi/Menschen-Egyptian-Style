@@ -120,7 +120,7 @@ SBANK=round(sum(k*t for _,_,t,k in bfits)/sum(k*k for _,_,t,k in bfits),1)
 for bw,ix0,tgt,k in bfits:
     iw,lb=bank_ink_at(bw,SBANK)
     t(round(ix0-lb-1.5,1), 236, bw, s=SBANK, c='naBank54', col=BANKCOL)
-for sx,sw in ((169,40),(226,33)):   # pen strikes on 1st hatte + 2nd hat at scan extents (y228, ink 109,112,174)
+for sx,sw in ((169,40),(228,26)):   # hatte 169-208, hat 228-253 (scan extents)   # pen strikes on 1st hatte + 2nd hat at scan extents (y228, ink 109,112,174)
     items.append({'k':'r','x':sx,'y':228,'w':sw,'h':1,'col':'#6d70ae'})
 for px_ in (220,261,329,373,414,448,506,546,610,673):   # 1px pipes, scan ink x + warm dark tone (112,109,80)
     items.append({'k':'r','x':px_,'y':220,'w':1,'h':17,'col':'#706d50'})
