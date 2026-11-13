@@ -31,7 +31,16 @@ export function NativeAB12Range({page}:{page:string}){
  useLayoutEffect(()=>{const el=root.current!;const obs=new ResizeObserver(()=>ss(Math.min(el.clientWidth/W,(el.clientHeight-38)/H)));obs.observe(el);return ()=>obs.disconnect()},[W,H]);
  usePageReset(page,key,()=>{sv({});sr({});se(e=>e+1)});
  const set=(id:string,v:string)=>sv(o=>{const n={...o,[id]:v};localStorage.setItem(key,JSON.stringify(n));return n});
+ const choose=(it:Item,checked:boolean)=>sv(o=>{const n={...o};
+  if(!it.cb&&it.name)for(const peer of spec.items.filter(i=>i.k==='d'&&!i.cb&&(i.name||i.id)===(it.name||it.id)))delete n[peer.id];
+  n[it.id]=it.cb?String(checked):it.v;localStorage.setItem(key,JSON.stringify(n));return n;
+ });
  const ok=(i:Item)=>{const v=values[i.id]||'';if(i.k==='f')return String(i.a).split('|').some(a=>normalize(a)===normalize(v));if(i.k==='w')return (v==='1')===!!i.a;if(i.k==='mk')return v===i.a;if(i.k==='d')return i.cb?(v==='true')===(i.a===true):(i.a===true?v===i.v:v!==i.v);return true};
+ const radioAnswers=(g:string):Record<string,string>|undefined=>{
+  const items=spec.items.filter(i=>i.g===g&&i.a!==undefined);
+  if(!items.some(i=>i.k==='d'))return undefined;
+  return Object.fromEntries(items.flatMap(i=>i.k==='d'?(i.cb?[[i.id,String(i.a)]]:i.a===true?[[i.name||i.id,i.id+'::'+i.v]]:[]):i.k==='f'?[[i.id,String(i.a)]]:[]));
+ };
  const grade=(g:string)=>{const its=spec.items.filter(i=>i.g===g&&i.a!==undefined&&i.a!=='');sr(r=>({...r,[g]:its.length>0&&its.every(ok)}))};
  const render=(it:Item,n:number)=>{
   switch(it.k){
@@ -42,8 +51,8 @@ export function NativeAB12Range({page}:{page:string}){
    case 'ar':{const ah=it.h||7,hd=it.head||3,cy=ah/2,col=it.col||'#141414';return <svg key={n} className="naAr" style={{position:'absolute',left:it.x,top:it.y}} width={it.w} height={ah}><line x1={0} y1={cy} x2={it.w-hd} y2={cy} stroke={col} strokeWidth={it.th||2.2}/><polygon points={`${it.w-hd},${cy-hd*0.9} ${it.w},${cy} ${it.w-hd},${cy+hd*0.9}`} fill={col}/></svg>}
    case 'a':return <PageImage key={n} className="naArt" src={`assets/book-crops/native-ab12-p${page}-${it.n}.png`} alt={it.alt||('Originalillustration '+it.n)} style={{left:it.x,top:it.y,width:it.w,height:it.h}}/>;
    case 'ti':return <div key={n} className="naRTitle" style={{left:it.x,top:it.y}}><span className="naRBadge" style={{width:it.bw||27,height:it.bh||27,background:it.col,lineHeight:(it.bh||27)+'px'}}>{it.n}</span></div>;
-   case 'd':return <input key={n} className={'naDot naRDot'+(it.lt?' naRDotL':'')} type={it.cb?'checkbox':'radio'} aria-label={it.l} name={key+'-'+(it.name||it.id)} checked={it.cb?values[it.id]==='true':values[it.id]===it.v} onChange={e=>set(it.id,it.cb?String(e.target.checked):it.v)} style={{left:it.x,top:it.y,width:it.s||24,height:it.s||24}}/>;
-   case 'chk':return <div key={n} className="naCheck" style={{left:it.x,top:it.y}}><CheckButton onClick={()=>grade(it.g)}></CheckButton><output aria-live="polite">{it.g in results?(results[it.g]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+   case 'd':return <input key={n} className={'naDot naRDot'+(it.lt?' naRDotL':'')} type={it.cb?'checkbox':'radio'} aria-label={it.l} data-native-field={it.name?it.id:undefined} data-value={it.name?(it.cb?'true':it.id+'::'+it.v):undefined} name={key+'-'+(it.name||it.id)} checked={it.cb?values[it.id]==='true':values[it.id]===it.v} onChange={e=>choose(it,e.target.checked)} style={{left:it.x,top:it.y,width:it.s||24,height:it.s||24}}/>;
+   case 'chk':return <div key={n} className="naCheck" style={{left:it.x,top:it.y}}><CheckButton answers={radioAnswers(it.g)} onClick={()=>grade(it.g)}></CheckButton><output aria-live="polite">{it.g in results?(results[it.g]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
    case 'bx':return <div key={n} className="naRBx" style={{left:it.x,top:it.y,width:it.w,height:it.h,background:it.bg,border:it.bd?('1.5px solid '+it.bd):undefined,boxSizing:'border-box'}}/>;
    case 'w':return <button key={n} type="button" className={'naRWord'+(values[it.id]==='1'?' on':'')} aria-pressed={values[it.id]==='1'} aria-label={'Durchstreichen: '+it.l} style={{left:it.x-3,top:it.y-21,width:it.w+6,height:27}} onClick={()=>set(it.id,values[it.id]==='1'?'0':'1')}/>;
    case 'mk':return <button key={n} type="button" className={'naRMk'+(values[it.id]?' '+values[it.id]:'')} aria-label={'Markieren: '+it.l} style={{left:it.x,top:it.y,width:it.w,height:it.h}} onClick={()=>set(it.id,values[it.id]==='b'?'g':values[it.id]==='g'?'':'b')}/>;

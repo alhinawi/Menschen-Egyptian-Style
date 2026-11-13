@@ -20,3 +20,7 @@ html[data-theme=dark] :is(input,select,textarea)[data-check-mark="bad"]:not([typ
 /* Button-based pitch and syllable fields get the same non-layout-changing marks. */
 :is(button,[data-native-field].mSyllables)[data-check-mark="ok"]{outline:1.5px solid #2f7d4f;outline-offset:0;background-color:#e1f2e4!important;color:#14301f!important}
 :is(button,[data-native-field].mSyllables)[data-check-mark="bad"]{outline:1.5px solid #c62f2f;outline-offset:0;background-color:#fde4e1!important;color:#5a1010!important}
+
+/* Checked glyphs must use the result color, not the default green selection color. */
+.page input:is([type=radio],[type=checkbox])[data-check-mark="bad"]:checked:not(.nabOption input){--answer-mark:#bd3838!important;border-color:#bd3838!important;outline-color:#bd3838!important}
+.page input:is([type=radio],[type=checkbox])[data-check-mark="ok"]:checked:not(.nabOption input){--answer-mark:#286e50!important;border-color:#286e50!important;outline-color:#286e50!important}

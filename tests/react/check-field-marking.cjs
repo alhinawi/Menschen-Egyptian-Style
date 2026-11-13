@@ -12,17 +12,16 @@ try{for(const [route,no] of [['ab2','13'],['ab2','15'],['ab3','21'],['ab-l7-9','
  if(no==='74')assert.equal(await pg.locator('input[data-confidence][data-check-mark]').count(),0);
  if(no==='57')assert.equal(await pg.locator('input[type=radio][data-check-mark="bad"]').count(),2);
  if(no==='81')assert.equal(await pg.locator('input[type=radio][data-check-mark="bad"]').count(),17);
- if(route==='l7-9')assert.equal(await pg.locator('input[type=radio][data-check-mark="bad"]').count(),6);
+ if(route==='l7-9'){assert.equal(await pg.locator('input[type=radio]').count(),6);assert.equal(await pg.locator('input.nkbField.bad').count(),6)}
  await pg.screenshot({path:`${out}/${route}-p${no}-after.png`});
  // Mixed fields must be graded independently, with no stale red on untouched alternatives.
  if(route==='l7-9'){
-  await pg.locator('input[name="native-pilot-kb11-55-a"][data-value="de"]').check();
-  await pg.locator('input[name="native-pilot-kb11-55-b"][data-value="reste"]').check();
+  await pg.locator('[data-native-field="t1-a-deutschland"]').check();
+  await pg.locator('[data-native-field="t1-b-resten"]').check();
   await pg.locator('.compactCheckButton').first().click();await p.waitForTimeout(150);
-  assert.equal(await pg.locator('input[data-value="de"]').getAttribute('data-check-mark'),'ok');
-  assert.equal(await pg.locator('input[data-value="reste"]').getAttribute('data-check-mark'),'bad');
-  assert.equal(await pg.locator('input[data-value="at"]').getAttribute('data-check-mark'),null);
-  assert.equal(await pg.locator('input[data-value="at"]').evaluate(e=>/npWrong|npCorrect/.test(e.className)),false);
+  assert(await pg.locator('[data-native-field="t1-a-deutschland"]').evaluate(e=>e.classList.contains('ok')));
+  assert(await pg.locator('[data-native-field="t1-b-resten"]').evaluate(e=>e.classList.contains('bad')));
+  assert(await pg.locator('[data-native-field="t1-a-oesterreich"]').evaluate(e=>!e.classList.contains('ok')&&!e.classList.contains('bad')));
  }
  if(route==='ab-l7-9'&&no==='55'){
   await pg.locator('[data-field-id="r2"]').check();await pg.locator('.compactCheckButton').first().click();await p.waitForTimeout(150);
