@@ -1,6 +1,7 @@
 import {AB12Canvas,AB12Helpers} from '../ab12-shared';
+import {LineMatching} from '../../exercises/LineMatching';
 
-function P68(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,title,kb,side,audio,strike,head,foot,tab,modTab,box,rect}=h;return <>
+function P68(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,title,kb,side,audio,strike,head,foot,tab,modTab,box,rect,values,set}=h;return <>
   {rect(270,83,464,2,'#9a4580')}
   {rect(124,347,179,19,'#fafae5')}
   {rect(308,347,143,19,'#fafae5')}
@@ -16,13 +17,13 @@ function P68(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {art('smile2',437,843,24,20)}
   {wl(86,22,[{x:91,w:181,t:"BASISTRAINING"}])}
   {box('8',76,117)}  {rn(122,122.5,570,17,[{t:'Ergänzen Sie können, wollen, sollen, dürfen oder müssen in der richtigen Form.',b:1}],{fam:'fira'})}
-  {wl(167,14,[{x:121,w:6,t:"a",bg:'#e6e9e5'},{x:139,w:24,t:"Wir"},{x:207,w:48,t:"morgen"},{x:261,w:27,t:"sehr"},{x:294,w:28,t:"früh"},{x:328,w:68,t:"aufstehen."},{x:403,w:20,t:"Die"},{x:429,w:53,t:"Prüfung"},{x:487,w:34,t:"fängt"},{x:526,w:37,t:"schon"},{x:569,w:19,t:"um"},{x:594,w:22,t:"7.00"},{x:622,w:25,t:"Uhr"},{x:652,w:19,t:"an."}])}
-  {wl(186,14,[{x:122,w:5,t:"b"},{x:141,w:18,t:"Ich"},{x:267,w:36,t:"heute"},{x:309,w:37,t:"leider"},{x:351,w:29,t:"doch"},{x:387,w:34,t:"nicht"},{x:427,w:59,t:"kommen."},{x:594,w:21,t:"wir"},{x:621,w:22,t:"den"},{x:649,w:47,t:"Termin"}])}
-  {wl(206,14,[{x:139,w:85,t:"verschieben?"}])}
-  {wl(226,14,[{x:121,w:6,t:"c"},{x:139,w:28,t:"Sara"},{x:274,w:67,t:"unbedingt"},{x:347,w:34,t:"ihren"},{x:388,w:87,t:"Führerschein"},{x:481,w:55,t:"machen,"},{x:542,w:28,t:"aber"},{x:575,w:17,t:"sie"},{x:699,w:30,t:"noch"}])}
-  {wl(245,14,[{x:140,w:37,t:"nicht."},{x:183,w:19,t:"Sie"},{x:208,w:14,t:"ist"},{x:228,w:23,t:"erst"},{x:257,w:15,t:"16."}])}
-  {wl(264,14,[{x:121,w:6,t:"d"},{x:140,w:16,t:"Du"},{x:263,w:31,t:"noch"},{x:300,w:74,t:"abwaschen."},{x:381,w:37,t:"Heute"},{x:424,w:39,t:"Abend"},{x:471,w:37,t:"haben"},{x:514,w:22,t:"wir"},{x:541,w:38,t:"Gäste."}])}
-  {wl(284,14,[{x:121,w:6,t:"e"},{x:140,w:20,t:"Die"},{x:166,w:40,t:"Ärztin"},{x:212,w:29,t:"sagt,"},{x:247,w:18,t:"ich"},{x:372,w:23,t:"viel"},{x:401,w:59,t:"schlafen,"},{x:466,w:27,t:"aber"},{x:499,w:18,t:"ich"},{x:625,w:44,t:"tanzen"},{x:674,w:42,t:"gehen."}])}
+  {wl(166,14,[{x:121,w:6,t:'a'},{x:139,w:24,t:'Wir'},{x:206,w:49,t:'morgen'},{x:260,w:28,t:'sehr'},{x:294,w:28,t:'früh'},{x:327,w:69,t:'aufstehen.'},{x:403,w:20,t:'Die'},{x:428,w:54,t:'Prüfung'},{x:487,w:34,t:'fängt'},{x:526,w:37,t:'schon'},{x:568,w:20,t:'um'},{x:593,w:27,t:'7.00'},{x:622,w:25,t:'Uhr'},{x:652,w:19,t:'an.'}])}
+  {wl(186,14,[{x:121,w:6,t:'b'},{x:140,w:19,t:'Ich'},{x:266,w:37,t:'heute'},{x:308,w:38,t:'leider'},{x:350,w:30,t:'doch'},{x:386,w:35,t:'nicht'},{x:426,w:60,t:'kommen.'},{x:593,w:22,t:'wir'},{x:620,w:23,t:'den'},{x:649,w:47,t:'Termin'}])}
+  {wl(204,14,[{x:138,w:86,t:'verschieben?'}])}
+  {wl(225,14,[{x:121,w:6,t:'c'},{x:139,w:28,t:'Sara'},{x:274,w:67,t:'unbedingt'},{x:346,w:35,t:'ihren'},{x:388,w:87,t:'Führerschein'},{x:481,w:55,t:'machen,'},{x:542,w:28,t:'aber'},{x:575,w:17,t:'sie'},{x:698,w:31,t:'noch'}])}
+  {wl(244,14,[{x:139,w:38,t:'nicht.'},{x:183,w:19,t:'Sie'},{x:207,w:15,t:'ist'},{x:227,w:24,t:'erst'},{x:257,w:19,t:'16.'}])}
+  {wl(264,14,[{x:121,w:7,t:'d'},{x:140,w:16,t:'Du'},{x:263,w:31,t:'noch'},{x:299,w:75,t:'abwaschen.'},{x:380,w:38,t:'Heute'},{x:423,w:40,t:'Abend'},{x:469,w:39,t:'haben'},{x:514,w:22,t:'wir'},{x:541,w:38,t:'Gäste.'}])}
+  {wl(283,14,[{x:121,w:6,t:'e'},{x:140,w:20,t:'Die'},{x:164,w:42,t:'Ärztin'},{x:212,w:29,t:'sagt,'},{x:247,w:19,t:'ich'},{x:372,w:23,t:'viel'},{x:401,w:59,t:'schlafen,'},{x:465,w:28,t:'aber'},{x:498,w:19,t:'ich'},{x:624,w:45,t:'tanzen'},{x:673,w:43,t:'gehen.'}])}
   {box('9',76,314)}  {rn(121,317.5,130,17,[{t:'Ordnen Sie zu.',b:1}],{fam:'fira'})}
   {wl(360,14,[{x:127,w:18,t:'Das',c:'#4c5b7a'},{x:151,w:13,t:'ist',c:'#4c5b7a'},{x:170,w:26,t:'doch',c:'#4c5b7a'},{x:202,w:62,t:'gefährlich,',c:'#4c5b7a'},{x:270,w:30,t:'oder?',c:'#4c5b7a'},{x:305,w:1,t:'|'},{x:311,w:136,t:'Das verstehe ich nicht.',c:'#4c5b7a',s:1},{x:452,w:1,t:'|'},{x:460,w:18,t:'Das',c:'#4c5b7a'},{x:483,w:28,t:'weiß',c:'#4c5b7a'},{x:517,w:16,t:'ich',c:'#4c5b7a'},{x:539,w:29,t:'nicht.',c:'#4c5b7a'},{x:578,w:1,t:'|'},{x:585,w:16,t:'Ich',c:'#4c5b7a'},{x:607,w:27,t:'finde',c:'#4c5b7a'},{x:640,w:18,t:'das',c:'#4c5b7a'},{x:665,w:9,t:'in',c:'#4c5b7a'},{x:680,w:52,t:'Ordnung.',c:'#4c5b7a'}])}
   {wl(389,14,[{x:122,w:5,t:'a'},{x:154,w:27,t:'Nun'},{x:187,w:14,t:'ist'},{x:207,w:20,t:'das'},{x:233,w:56,t:'Rauchen'},{x:295,w:30,t:'auch'},{x:331,w:31,t:'noch'},{x:368,w:12,t:'in'},{x:386,w:47,t:'meiner'},{x:439,w:80,t:'Lieblingsbar'},{x:524,w:61,t:'verboten.'}])}
@@ -34,19 +35,15 @@ function P68(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {wl(547,14,[{x:121,w:6,t:"c"},{x:154,w:23,t:"Wir"},{x:182,w:51,t:"machen"},{x:239,w:19,t:"ein"},{x:265,w:54,t:"Picknick"},{x:325,w:16,t:"im"},{x:348,w:31,t:"Park."},{x:387,w:51,t:"Kommst"},{x:444,w:15,t:"du"},{x:465,w:29,t:"mit?"}])}
   {wl(566,14,[{x:155,w:28,t:"Sind"},{x:189,w:14,t:"da"},{x:210,w:41,t:"Hunde"},{x:257,w:53,t:"erlaubt?"}])}
   {box('10',76,614)}  {rn(121,618.5,300,17,[{t:'Was passt nicht? Streichen Sie durch.',b:1}],{fam:'fira'})}
-  {wl(662,14,[{x:121,w:6,t:'a'},{x:141,w:59,t:'Krankenhaus'},{x:206,w:7,t:'–'},{x:245,w:26,t:'leise'},{x:279,w:23,t:'sein'},{x:310,w:7,t:'–'},{x:323,w:28,t:'nicht'},{x:362,w:70,t:'telefonieren'},{x:448,w:7,t:'–'},{x:460,w:44,t:'grillen',s:1}])}
-  {wl(681,14,[{x:121,w:6,t:'b'},{x:139,w:55,t:'Bäckerei'},{x:200,w:6,t:'–'},{x:213,w:31,t:'Wiese'},{x:250,w:6,t:'–'},{x:262,w:32,t:'sitzen'},{x:300,w:6,t:'–'},{x:324,w:44,t:'Picknick'}])}
-  {wl(700,14,[{x:121,w:6,t:'c'},{x:140,w:51,t:'Fahrrad'},{x:197,w:6,t:'—'},{x:209,w:57,t:'schieben'},{x:271,w:8,t:'—'},{x:285,w:33,t:'Helm'},{x:324,w:7,t:'—'},{x:337,w:34,t:'Hund'}])}
-  {wl(720,14,[{x:121,w:6,t:'d'},{x:140,w:53,t:'langsam'},{x:199,w:42,t:'fahren'},{x:248,w:7,t:'—'},{x:260,w:73,t:'Spielstraße'},{x:338,w:7,t:'—'},{x:351,w:40,t:'hupen'},{x:397,w:7,t:'—'},{x:410,w:21,t:'auf'},{x:437,w:43,t:'Kinder'},{x:486,w:43,t:'achten'}])}
-  {wl(739,14,[{x:121,w:6,t:'e'},{x:139,w:38,t:'baden'},{x:183,w:7,t:'—'},{x:195,w:43,t:'grillen'},{x:244,w:7,t:'—'},{x:258,w:54,t:'Picknick'},{x:318,w:50,t:'machen'},{x:374,w:7,t:'—'},{x:387,w:45,t:'parken'}])}
-  {wl(759,14,[{x:121,w:6,t:'f'},{x:140,w:42,t:'Regeln'},{x:188,w:6,t:'—'},{x:201,w:57,t:'Beispiele'},{x:264,w:6,t:'—'},{x:275,w:58,t:'verboten'},{x:338,w:7,t:'—'},{x:351,w:47,t:'erlaubt'}])}
+  {wl(663,14,[{x:121,w:6,t:'a'},{x:140,w:87,t:'Krankenhaus'},{x:232,w:6,t:'–'},{x:245,w:28,t:'leise'},{x:278,w:26,t:'sein'},{x:310,w:7,t:'–'},{x:322,w:34,t:'nicht'},{x:362,w:81,t:'telefonieren'},{x:448,w:8,t:'–'},{x:459,w:45,t:'grillen',s:1}])}
+  {wl(682,14,[{x:121,w:6,t:'b'},{x:139,w:55,t:'Bäckerei'},{x:200,w:7,t:'–'},{x:212,w:37,t:'Wiese'},{x:254,w:7,t:'–'},{x:267,w:39,t:'sitzen'},{x:311,w:7,t:'–'},{x:324,w:55,t:'Picknick'}])}
+  {wl(702,14,[{x:121,w:6,t:'c'},{x:139,w:52,t:'Fahrrad'},{x:196,w:7,t:'–'},{x:209,w:57,t:'schieben'},{x:271,w:8,t:'–'},{x:284,w:34,t:'Helm'},{x:323,w:8,t:'–'},{x:336,w:35,t:'Hund'}])}
+  {wl(722,14,[{x:121,w:6,t:'d'},{x:139,w:54,t:'langsam'},{x:198,w:44,t:'fahren'},{x:248,w:7,t:'–'},{x:260,w:73,t:'Spielstraße'},{x:338,w:7,t:'–'},{x:350,w:41,t:'hupen'},{x:397,w:7,t:'–'},{x:409,w:22,t:'auf'},{x:436,w:44,t:'Kinder'},{x:485,w:44,t:'achten'}])}
+  {wl(741,14,[{x:121,w:6,t:'e'},{x:138,w:39,t:'baden'},{x:182,w:8,t:'–'},{x:194,w:44,t:'grillen'},{x:244,w:7,t:'–'},{x:257,w:55,t:'Picknick'},{x:318,w:51,t:'machen'},{x:374,w:7,t:'–'},{x:386,w:46,t:'parken'}])}
+  {wl(760,14,[{x:121,w:6,t:'f'},{x:139,w:43,t:'Regeln'},{x:187,w:7,t:'–'},{x:200,w:58,t:'Beispiele'},{x:263,w:7,t:'–'},{x:275,w:58,t:'verboten'},{x:338,w:7,t:'–'},{x:350,w:48,t:'erlaubt'}])}
   {box('11',76,789)}  {rn(121,794.5,510,17,[{t:'Wie finden die Personen das Handyverbot an der Fachhochschule?',b:1}],{fam:'fira'})}
-  {wl(829,14,[{x:122,w:38,t:"Hören"},{x:165,w:18,t:"Sie"},{x:189,w:18,t:"die"},{x:214,w:55,t:"Umfrage"},{x:275,w:23,t:"und"},{x:305,w:53,t:"notieren"},{x:364,w:23,t:"Sie,"}])}
+  {wl(828,14,[{x:122,w:38,t:'Hören'},{x:165,w:18,t:'Sie'},{x:188,w:19,t:'die'},{x:214,w:55,t:'Umfrage'},{x:275,w:23,t:'und'},{x:304,w:54,t:'notieren'},{x:364,w:23,t:'Sie.'}])}
   {box('12',76,887)}  {rn(120,891.5,440,17,[{t:'Wer meint was? ',b:1},{t:'Hören Sie noch einmal und ordnen Sie zu.'}],{fam:'fira'})}
-  {wl(934,14,[{x:122,w:42,t:'Person'},{x:170,w:3,t:'1'},{x:264,w:46,t:'Warum'},{x:317,w:31,t:'muss'},{x:354,w:11,t:'es'},{x:371,w:42,t:'immer'},{x:420,w:42,t:'Regeln'},{x:467,w:45,t:'geben?'}])}
-  {wl(954,14,[{x:122,w:42,t:'Person'},{x:170,w:6,t:'2'},{x:264,w:20,t:'Ich'},{x:289,w:33,t:'kann'},{x:328,w:21,t:'mein'},{x:355,w:36,t:'Handy'},{x:397,w:28,t:'nicht'},{x:431,w:55,t:'ausmachen.'},{x:492,w:19,t:'Ich'},{x:517,w:29,t:'habe'},{x:552,w:26,t:'eine'},{x:584,w:39,t:'kleine'},{x:629,w:51,t:'Tochter.'}])}
-  {wl(974,14,[{x:122,w:42,t:'Person'},{x:170,w:6,t:'3'},{x:264,w:19,t:'Ich'},{x:290,w:35,t:'finde,'},{x:332,w:11,t:'es'},{x:348,w:18,t:'gibt'},{x:379,w:26,t:'hier'},{x:411,w:12,t:'zu'},{x:430,w:30,t:'viele'},{x:467,w:46,t:'Regeln.'}])}
-  {wl(995,14,[{x:122,w:41,t:"Person"},{x:169,w:7,t:"4"},{x:240,w:8,t:"—"},{x:264,w:19,t:"Ich"},{x:289,w:32,t:"kann"},{x:328,w:21,t:"mit"},{x:356,w:47,t:"Handys"},{x:409,w:34,t:"nicht"},{x:448,w:20,t:"gut"},{x:474,w:58,t:"arbeiten."}])}
   {wl(1063,12,[{x:71,w:11,t:"68"},{x:96,w:1,t:"|"},{x:110,w:93,t:"achtundsechzig"}])}
   {kb(46,122,'KB 4')}
   {side(62,156,'STRUKTUREN')}
@@ -70,6 +67,7 @@ function P68(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {field('p68-9b',153,486,386,'9 b','naFieldBlank')}
   {field('p68-9c',151,574,393,'9 c','naFieldBlank')}
   {modTab(1,1043,'Modul 7')}
+  {<LineMatching id='p68-12' left={['Person 1','Person 2','Person 3','Person 4']} right={['Warum muss es immer Regeln geben?','Ich kann mein Handy nicht ausmachen. Ich habe eine kleine Tochter.','Ich finde, es gibt hier zu viele Regeln.','Ich kann mit Handys nicht gut arbeiten.']} values={values} onMatch={set} leftX={121} rightX={218} leftWidth={51} rightWidth={480} ys={[919,939,959,979]} rightYs={[919,939,958,977]} width={807} height={1094} fontSize={14} example={[0,3]}/>}
   {check('g1',668,289,{'p68-8b1':'kann','p68-8b2':'können','p68-8c1':'will','p68-8c2':'darf','p68-8d':'musst','p68-8e1':'soll','p68-8e2':'will'})}
   {check('g2',640,564,{'p68-9a':'Ich finde das in Ordnung.|Ich finde das in Ordnung','p68-9b':'Das ist doch gefährlich, oder?|Das ist doch gefährlich, oder','p68-9c':'Das weiß ich nicht.|Das weiß ich nicht'})}
 </>}
