@@ -512,7 +512,7 @@ export function NativeKB12({page}:{page:string}){
  ['d  Alina Kanzler möchte die Software nicht mehr haben und schickt der Firma eine Rechnung über 222,03 €.',1280],
  ['e  Alina hat die Sache schon an ihren Anwalt gegeben.',1335]
  ].map(([t,y],i)=><div key={i}>{text(150,Number(y),690,String(t),'nkReadingRow')}{dot('1-'+i,'',842,Number(y)+5,String(t),true)}</div>)}{check('1',150,1375,{'1-0':'true','1-1':'true','1-2':'false','1-3':'false','1-4':'false'})}
- {title('2',108,1426,930,'Und Sie? Haben Sie schon einmal etwas online gekauft und hatten dann Probleme mit dem Produkt? Erzählen Sie.')}
+ {title('2',108,1426,930,'Und Sie? Haben Sie schon einmal etwas online gekauft und hatten dann Probleme mit dem Produkt? Erzählen Sie.')}{save('2',650,1460)}
  </>}
  {page==='38'&&<>
  {text(120,76,900,'FILM-STATIONEN','nkModule')}{text(490,89,500,'Clips 16-18','nkClipHeading')}
