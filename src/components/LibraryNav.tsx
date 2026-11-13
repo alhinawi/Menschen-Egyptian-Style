@@ -1,10 +1,11 @@
+import {PageImage} from './PageImage';
 import {useContext, useEffect, useLayoutEffect, useState} from 'react';
 import {createPortal} from 'react-dom';
 import {ReaderContext} from './ReaderControls';
 import type {ReaderStore} from './ReaderControls';
 import {
   BOOKS, MODULES, findModuleForPage, lessonForPage, lessonUrl,
-  levelExtras, levelLessons, modulePages,
+  levelExtras, levelLessons, modulePages, levelCover,
 } from '../library-data';
 import {navigateLesson, lessonUrl as spaLessonUrl} from '../navigate';
 // Styles: Tailwind utilities (see classNames) + authored shell rules in ../tailwind.css
@@ -111,6 +112,7 @@ export function LibraryNav({slug}: {slug: string}) {
   const currentPage = currentToken in special ? null : Number(currentToken);
   const currentLesson = currentPage == null ? null : lessonForPage(mod, currentPage);
   const bookInfo = BOOKS.find(b => b.id === mod.book)!;
+  const cover = levelCover(mod.book, mod.level);
   const bookTag = mod.book === 'kb' ? 'KB' : 'AB';
   const pillText = currentPage == null
     ? (['imprint', 'inside-back-cover', 'back-cover'].includes(currentToken) ? (currentToken === 'inside-back-cover' ? 'Inside cover' : special[currentToken]) : `${bookTag} ${mod.level} · ${special[currentToken] ?? 'Cover'}`)
@@ -164,7 +166,7 @@ export function LibraryNav({slug}: {slug: string}) {
             if (b.id === mod.book) {
               return (
                 <div key={b.id} className="lnv-bookcard sel flex gap-3 items-center text-left mx-3.5 mb-2.5 p-2.5 rounded-2xl border-[1.5px] border-[#c9a45a] shadow-[0_0_0_1px_#c9a45a,0_6px_16px_rgba(113,60,70,.10)] bg-[#fffdf6] cursor-pointer text-inherit no-underline dark:bg-[#333c36] dark:border-[#c9a45a]" aria-current="true">
-                  <img src={b.cover} alt="" className="w-11 h-[60px] object-cover rounded-md shadow-[0_2px_6px_rgba(0,0,0,.25)] flex-none"/>
+                  <PageImage src={mod.level === 'A1.2' ? `assets/${b.id}-a12-cover.webp` : b.cover} alt="" className="w-11 h-[60px] object-cover rounded-md shadow-[0_2px_6px_rgba(0,0,0,.25)] flex-none"/>
                   <span className="lnv-bt font-bold text-[16.5px] font-[Georgia,serif] flex flex-col gap-0.5">{b.title}<small className="font-normal text-[11px] font-[Arial,sans-serif] text-[#8a7d63] dark:text-[#9aa396]">{b.subtitle}</small></span>
                 </div>
               );
@@ -178,13 +180,13 @@ export function LibraryNav({slug}: {slug: string}) {
                   const t = switchTarget(b.id);
                   void navigateLesson(t.slug, String(t.pages[0]));
                 }}>
-                <img src={b.cover} alt="" className="w-11 h-[60px] object-cover rounded-md shadow-[0_2px_6px_rgba(0,0,0,.25)] flex-none"/>
+                <PageImage src={mod.level === 'A1.2' ? `assets/${b.id}-a12-cover.webp` : b.cover} alt="" className="w-11 h-[60px] object-cover rounded-md shadow-[0_2px_6px_rgba(0,0,0,.25)] flex-none"/>
                 <span className="lnv-bt font-bold text-[16.5px] font-[Georgia,serif] flex flex-col gap-0.5">{b.title}<small className="font-normal text-[11px] font-[Arial,sans-serif] text-[#8a7d63] dark:text-[#9aa396]">{b.subtitle}</small></span>
               </a>
             );
           })}
           <div className="lnv-scroll flex-1 overflow-y-auto overscroll-contain touch-pan-y pb-6">
-            <a className="lnv-home flex items-baseline gap-2.5 mx-5 mt-0.5 mb-1.5 py-[9px] font-bold text-[13.5px] font-[Arial,sans-serif] text-[#3a332b] no-underline border-b border-[#eee3c8] dark:text-[#ddd6c6] dark:border-[#3a443e]" href={mod.book === 'kb' ? 'index.html#cover' : 'ab1.html#abcover'} onClick={e => { e.preventDefault(); void navigateLesson(mod.book === 'kb' ? 'index' : 'ab1', mod.book === 'kb' ? 'cover' : 'abcover'); }}>Cover</a>
+            <a className="lnv-home flex items-baseline gap-2.5 mx-5 mt-0.5 mb-1.5 py-[9px] font-bold text-[13.5px] font-[Arial,sans-serif] text-[#3a332b] no-underline border-b border-[#eee3c8] dark:text-[#ddd6c6] dark:border-[#3a443e]" href={spaLessonUrl(cover.slug, cover.token)} onClick={e => { e.preventDefault(); close(); void navigateLesson(cover.slug, cover.token); }}>Cover</a>
             {levels.map(level => (
               <div key={level}>
                 <div className="lnv-lvl font-extrabold text-[11px] font-[Arial,sans-serif] tracking-[.14em] text-[var(--accent,#713c46)] px-5 pt-3 pb-1.5">{bookInfo.title.toUpperCase()} · {level}</div>
@@ -214,7 +216,7 @@ export function LibraryNav({slug}: {slug: string}) {
             <div className="lnv-ss font-normal text-[11px] font-[Arial,sans-serif] text-[#8a7d63] mt-0.5 dark:text-[#9aa396]">{bookInfo.title} · {mod.level} - jump to any page</div>
           </div>
           <div className="lnv-sheetscroll flex-1 overflow-y-auto overscroll-contain touch-pan-y pb-7">
-            {mod.level === 'A1.1' && <div className="px-5 pt-3"><button type="button" aria-current={currentToken === (mod.book === 'kb' ? 'cover' : 'abcover') ? 'page' : undefined} className={'lnv-pg h-10 min-w-20 px-4 rounded-md border' + (currentToken === (mod.book === 'kb' ? 'cover' : 'abcover') ? ' cur bg-[#c9a45a] border-[#b08d3f] text-[#2b2620] font-extrabold' : '')} onClick={()=>{close();void navigateLesson(mod.book === 'kb' ? 'index' : 'ab1',mod.book === 'kb' ? 'cover' : 'abcover')}}>Cover</button></div>}
+            {<div className="px-5 pt-3"><button type="button" aria-current={currentToken === (mod.book === 'kb' ? 'cover' : 'abcover') ? 'page' : undefined} className={'lnv-pg h-10 min-w-20 px-4 rounded-md border' + (currentToken === (mod.book === 'kb' ? 'cover' : 'abcover') ? ' cur bg-[#c9a45a] border-[#b08d3f] text-[#2b2620] font-extrabold' : '')} onClick={()=>{close();void navigateLesson(cover.slug,cover.token)}}>Cover</button></div>}
 
             {slug === 'l21-24' && <div className="flex flex-col gap-2 px-5 py-3">{['imprint', 'inside-back-cover', 'back-cover'].map(token => <button type="button" key={token} className="lnv-pg h-9 rounded-md border" onClick={() => {close(); const idx = [...document.querySelectorAll<HTMLElement>('.page')].findIndex(p => p.dataset.page === token); const jump = document.querySelector<HTMLSelectElement>('#pageJump'); if (jump && idx >= 0) {jump.value = String(idx); jump.dispatchEvent(new Event('change', {bubbles: true}));}}}>{special[token]} (unnumbered)</button>)}</div>}
             {levelLessons(mod.book, mod.level).map(entry => (

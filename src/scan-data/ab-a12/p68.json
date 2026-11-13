@@ -2113,7 +2113,17 @@
    "h": 24
   }
  ],
- "audio": [],
+ "audio": [
+  {
+   "id": "track30-1",
+   "src": "assets/ab-cd2-track30.mp3",
+   "label": "CD2 · Track30",
+   "x": 48,
+   "y": 912,
+   "w": 54,
+   "h": 22
+  }
+ ],
  "groups": [
   {
    "id": "g1",
@@ -2133,5 +2143,46 @@
   ],
   "verifiedWords": 285,
   "totalWords": 285
- }
+ },
+ "matchings": [
+  {
+   "id": "task12",
+   "group": "gx",
+   "left": [
+    "Person 1",
+    "Person 2",
+    "Person 3",
+    "Person 4"
+   ],
+   "right": [
+    "Warum muss es immer Regeln geben?",
+    "Ich kann mein Handy nicht ausmachen. Ich habe eine kleine Tochter.",
+    "Ich finde, es gibt hier zu viele Regeln.",
+    "Ich kann mit Handys nicht gut arbeiten."
+   ],
+   "leftX": 122,
+   "leftWidth": 60,
+   "rightX": 224,
+   "rightWidth": 507,
+   "ys": [
+    917,
+    937,
+    957,
+    977
+   ],
+   "fontSize": 15,
+   "example": [
+    0,
+    3
+   ],
+   "masks": [
+    {
+     "x": 118,
+     "y": 917,
+     "w": 622,
+     "h": 85
+    }
+   ]
+  }
+ ]
 }
