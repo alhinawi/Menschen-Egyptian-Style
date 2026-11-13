@@ -40,7 +40,7 @@ export function NativeAB12P18_20({page}:{page:string}){
   {audio('assets/ab-a12-cd2-track10.mp3',38,216,'2 10')}
   {art('globe',70,240,42,42)}
   {text(125,216,20,'a','naExL')}
-  {text(158,214,400,'Hören Sie und nummerieren Sie.','naIns')}
+  {text(158,218,400,'Hören Sie und nummerieren Sie.','naIns')}
   {circle('p18-nKirche',159,259,'Kirche Nummer')}
   {circle('p18-nSpielplatz',255,259,'Spielplatz Nummer')}
   <div className="naCNumPrint" style={{left:380,top:259}}>1</div>
@@ -48,16 +48,16 @@ export function NativeAB12P18_20({page}:{page:string}){
   {circle('p18-nMeer',588,259,'Meer Nummer')}
   {circle('p18-nCafé',670,259,'Café Nummer')}
   {circle('p18-nHafen',744,259,'Hafen Nummer')}
-  {text(188,253,60,'Kirche','naS19')}
-  {text(282,253,90,'Spielplatz','naS19')}
-  {text(408,253,90,'Flughafen','naS19')}
-  {text(533,253,55,'Wald','naS19')}
-  {text(615,253,55,'Meer','naS19')}
-  {text(697,253,40,'Café','naS19')}
-  {text(773,253,55,'Hafen','naS19')}
+  {text(188,256,60,'Kirche','naS19')}
+  {text(282,256,90,'Spielplatz','naS19')}
+  {text(408,256,90,'Flughafen','naS19')}
+  {text(533,256,55,'Wald','naS19')}
+  {text(615,256,55,'Meer','naS19')}
+  {text(697,256,40,'Café','naS19')}
+  {text(773,256,55,'Hafen','naS19')}
   {check('g1',850,242,{'p18-nKirche':'3','p18-nSpielplatz':'2','p18-nWald':'6','p18-nMeer':'5','p18-nCafé':'7','p18-nHafen':'4'},'naCheckCol')}
   {text(125,302,20,'b','naExL')}
-  <div className="naText naIns" style={{left:158,top:302,width:500}}><Words text="Ergänzen Sie aus "/><span className="naExL" style={{fontSize:"inherit"}}>a.</span><Words text=" Notieren und vergleichen Sie."/></div>
+  <div className="naText naIns" style={{left:158,top:308,width:500}}><Words text="Ergänzen Sie aus "/><span className="naExL" style={{fontSize:"inherit"}}>a.</span><Words text=" Notieren und vergleichen Sie."/></div>
   <div style={{position:'absolute',left:150,top:335,width:825,height:32,background:'#f0ead6'}}/>
   <div className="naTFrame" style={{left:150,top:335,width:825,height:238}}/>
   <div className="naTCol" style={{left:443,top:335,height:238}}/>
@@ -278,8 +278,8 @@ export function NativeAB12P18_20({page}:{page:string}){
   {title('8',120,1057,900,'Ergänzen Sie gehören/gefallen/danken/helfen/schmecken in der richtigen Form.','naOB naNw')}
   {text(145,1099,20,'a','naS19')}
   {text(170,1099,150,'Welcher Stadtteil','naS19')}
-  {art('gefaellt8',320,1100,110,34)}
-  {text(378,1099,330,'dir besonders gut? – Ich mag das Lehel.','naS19')}
+  {art('gefaellt8',320,1100,53,34)}
+  {text(372,1099,330,'dir besonders gut? – Ich mag das Lehel.','naS19')}
   {text(145,1126,20,'b','naS19')}
   {text(170,1126,36,'Wir')}
   {field('p19-8b',208,1122,129,'Verb 8b')}
