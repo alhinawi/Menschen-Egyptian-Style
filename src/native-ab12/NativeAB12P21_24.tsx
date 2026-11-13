@@ -30,7 +30,7 @@ export function NativeAB12P21_24({page}:{page:string}){
  return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-500.ttf') format('truetype');font-weight:500}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}[data-native-ab12="${page}"] .naText,[data-native-ab12="${page}"] .naBold,[data-native-ab12="${page}"] .naLet,[data-native-ab12="${page}"] .naDlg,[data-native-ab12="${page}"] .naField{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12="${page}"] .naText,[data-native-ab12="${page}"] .naBold,[data-native-ab12="${page}"] .naLet,[data-native-ab12="${page}"] .naDlg{font-size:20px!important}[data-native-ab12="${page}"] .naCanvas .naTitle{font-family:FiraSans,sans-serif!important;font-size:21px!important;letter-spacing:0!important}[data-native-ab12="${page}"] .naText.naS20{font-size:18px!important}[data-native-ab12="${page}"] .naSmall{font-size:16.5px!important}[data-native-ab12="${page}"] .naD19{font-size:17.5px!important}[data-native-ab12="${page}"] .naField{font-size:19px!important}`}</style><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='21'&&<>
   {art('tab15',916,35,155,81)}
-  {text(107,93,331,'TRAINING: SPRECHEN','naHead2 naNw')}
+  {text(106,85,331,'TRAINING: SPRECHEN','naHead2 naH24')}
   <div className="naHeadRule" style={{left:446,top:111,width:469}}/>
   {title('1',104,163,900,'Was machen Sie wo in Ihrem Stadtteil gern und/oder oft? Sammeln Sie Orte','naOB naLS')}
   <div className="naTitle naOB naLS" style={{left:150,top:189}}><Words text="und Aktivitäten und notieren Sie."/></div>
@@ -62,7 +62,7 @@ export function NativeAB12P21_24({page}:{page:string}){
   {text(180,743,20,'…','naSmall')}
   {art('bubble1',125,782,209,89)}
   {art('bubble2',378,788,483,98)}
-  {text(110,940,371,'TRAINING: AUSSPRACHE','naHead2 naNw')}
+  {text(108,931,371,'TRAINING: AUSSPRACHE','naHead2 naH30')}
   {text(498,939,230,'Vokale: langes „e“ und „i“','naIt naS188')}
   <div style={{position:'absolute',left:734,top:959,width:228,height:2,background:'#f8b25e'}}/>
   {audio('assets/ab-a12-cd2-track12.mp3',46,1008,'2 12')}
@@ -124,7 +124,7 @@ export function NativeAB12P21_24({page}:{page:string}){
   {art('modul',998,1386,73,26)}
  </>}
  {page==='22'&&<>
-  {text(125,93,90,'TEST','naHead2 naNw')}
+  {text(123,84,90,'TEST','naHead2 naH27')}
   <div className="naHeadRule" style={{left:205,top:113,width:773}}/>
   {title('1',118,158,900,'In der Stadt. Ordnen und Ergänzen Sie die Wörter mit Artikel.','naOB naLS')}
   {art('scramble',160,196,665,42)}
