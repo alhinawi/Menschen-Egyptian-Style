@@ -1,0 +1,31 @@
+{
+  "keep": [
+    [
+      0,
+      0,
+      1075,
+      1521
+    ]
+  ],
+  "checks": {
+    "task1": [
+      740,
+      975
+    ]
+  },
+  "fieldadj": {
+    "t1-heute": {
+      "ul": true
+    },
+    "t2-morgen": {
+      "ul": true
+    },
+    "t3-juni": {
+      "ul": true
+    }
+  },
+  "notes": [
+    "Task 1: three headline blanks in the website mockup (Heute/Morgen/Juni bars) - borderless inputs inside the mockup bars; answers verified from the event texts",
+    "Task 3 speaking + task 4 free blog writing: no printed blanks, no fields"
+  ]
+}
