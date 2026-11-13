@@ -20,7 +20,7 @@ export function NativeAB11({page}:{page:string}){
  const choice=(id:string,value:string,x:number,y:number,label:string)=><input type="radio" className="nabRadio" style={{left:x,top:y}} name={key+'-'+id} aria-label={label} checked={v[id]===value} onChange={()=>set(id,value)}/>;
  const arrow=(id:string,x:number,y:number,label:string)=><button className="nabArrow" style={{left:x,top:y}} aria-label={'Satzmelodie '+label} data-native-arrow={id} onClick={()=>set(id,v[id]==='down'?'up':'down')}>{v[id]==='down'?'↘':v[id]==='up'?'↗':'_'}</button>;
  const option=(id:string,value:string,x:number,y:number,label:string)=><label className="nabOption" style={{left:x,top:y}}><input type="radio" name={key+'-'+id} aria-label={id+' '+label} checked={v[id]===value} onChange={()=>set(id,value)}/><span>{label}</span></label>;
- const listen=(n:string,x:number,y:number)=><button className="nabListen" style={{left:x,top:y}} aria-label={'Originalaudio 1 '+n} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+n.padStart(2,'0')+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
+ const listen=(n:string,x:number,y:number,t?:string)=><button className="nabListen" data-task={t} style={{left:x,top:y}} aria-label={'Originalaudio 1 '+n} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+n.padStart(2,'0')+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
  const checkRule=(id:string,x:number,y:number,validate:()=>boolean)=><div className="nabCheck" style={{left:x,top:y}} data-native-task={id}><CheckButton onClick={()=>G({...graded,[id]:validate()})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="nabCheck" style={{left:x,top:y}} data-native-task={id}><CheckButton answers={answers} onClick={()=>G({...graded,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const title=(n:string,y:number,s:string,kb:string,side='Strukturen')=><>{text(130,y+7,40,kb,'nabKB')}<div className="nabNumber" style={{left:170,top:y}}>{n}</div>{text(212,y,810,s,'nabTitle')}<div className="nabSide" style={{left:141,top:y+45}}>{side}</div></>;
@@ -110,7 +110,7 @@ export function NativeAB11({page}:{page:string}){
  {text(207,927,230,'a  ▲  Guten Tag Herr Stein!')}{text(450,927,180,'Wie geht es Ihnen?','nabExample')}{text(230,953,140,'■  Gut, danke.')}{field('13-a',371,951,200,'13a Gegenfrage')}{text(230,979,190,'▲  Auch gut.')}
  {text(633,927,175,'b  ●  Hallo Svenja!')}{field('13-b1',815,926,185,'13b Frage')}{text(659,953,130,'■  Sehr gut!')}{field('13-b2',795,952,205,'13b Gegenfrage')}{text(659,979,300,'●  Ach, nicht so gut.')}
  {check('13',202,1009,{'13-a':'Und Ihnen','13-b1':"Wie geht's|Wie geht’s|Wie geht es dir",'13-b2':"Und wie geht's dir|Und wie geht’s dir|Und wie geht es dir"})}
- {title('14',1046,'Welche Namen hören Sie? Notieren Sie.','KB 9','Hören')}{listen('02',112,1079)}
+ {title('14',1046,'Welche Namen hören Sie? Notieren Sie.','KB 9','Hören')}{listen('02',112,1079,'14')}
  {text(207,1090,30,'a')}{field('14-a',234,1086,350,'14a Name')}{text(207,1120,30,'b')}{field('14-b',234,1116,350,'14b Name')}{text(633,1090,30,'c')}{field('14-c',660,1086,340,'14c Name')}{text(633,1120,30,'d')}{field('14-d',660,1116,340,'14d Name')}
  {check('14',202,1152,{'14-a':'Lothar Müller','14-b':'Lena Egger','14-c':'Yvonne Schuster','14-d':'Sebastian Wimmer'})}
  {title('15',1190,'Begrüßung und Abschied - Markieren Sie und ordnen Sie zu.','KB 10','Kommunikation')}
@@ -130,7 +130,7 @@ export function NativeAB11({page}:{page:string}){
  {text(170,591,820,'b  Ordnen Sie die passenden Antworten in a zu.','nabTitle')}
  {text(202,631,800,'Das ist Frau Burgos. | Gut, danke. Und Ihnen? | Aus Spanien. | Das ist Anna Burgos. | Ich heiße\nMiguel. | Ich komme aus Spanien. | Mein Name ist Miguel Munoz. | Danke, gut.','nabBank')}
  {check('1b',202,688,{'1-answer-1':'Ich heiße Miguel','1-answer-2a':'Aus Spanien','1-answer-2b':'Ich komme aus Spanien','1-answer-3a':'Das ist Frau Burgos','1-answer-3b':'Das ist Anna Burgos','1-answer-4a':'Gut, danke. Und Ihnen','1-answer-4b':'Danke, gut'})}
- {title('2',736,'Hören Sie und kreuzen Sie an.','','')}{listen('03',88,733)}{listen('04',88,755)}{listen('05',88,777)}
+ {title('2',736,'Hören Sie und kreuzen Sie an.','','')}{listen('03',88,733,'2')}{listen('04',88,755,'2')}{listen('05',88,777,'2')}
  {text(202,778,650,'a  Woher kommt Frau Talipa?')}
  {choice('2-a','oesterreich',222,815,'2a Österreich')}{img('austria',257,810,48,32)}{text(312,815,200,'aus Österreich')}{choice('2-a','spanien',446,815,'2a Spanien')}{img('spain',480,810,48,32)}{text(535,815,180,'aus Spanien')}{choice('2-a','russland',663,815,'2a Russland')}{img('russia',697,810,48,32)}{text(751,815,190,'aus Russland')}
  {text(202,861,650,'b  Wie geht es Laura?')}{choice('2-b','sehrgut',222,899,'2b Sehr gut')}{img('verygood',255,891,60,27)}{text(320,899,170,'Sehr gut.')}{choice('2-b','gut',446,899,'2b Gut')}{img('good',480,891,28,27)}{text(515,899,100,'Gut.')}{choice('2-b','esgeht',663,899,'2b Es geht')}{img('okay',696,891,28,27)}{text(731,899,140,'Es geht.')}
@@ -138,12 +138,12 @@ export function NativeAB11({page}:{page:string}){
  {text(835,868,168,'Zuerst lesen -\ndann hören','nabTipTitle')}{text(835,919,168,'1. Lesen Sie zuerst\n   die Fragen.\n2. Hören Sie dann.','nabTip')}
  {check('2',202,1021,{'2-a':'oesterreich','2-b':'esgeht','2-c':'aljoscha'})}
  {text(160,1080,800,'TRAINING: AUSSPRACHE','nabHeader')}{text(570,1090,400,'Satzmelodie','nabExample')}
- {title('1',1140,'Hören Sie und sprechen Sie nach.','','')}{listen('06',95,1144)}
+ {title('1',1140,'Hören Sie und sprechen Sie nach.','','')}{listen('06',95,1144,'1')}
  {text(202,1183,435,'■  Wie heißt du? ↘\n▲  Ich heiße Paco. ↘  Und wer bist du? ↗\n■  Ich bin Nicole. ↘')}
  {title('2',1300,'Ergänzen Sie die Regel: ↗ oder ↘.','','')}
  {text(230,1344,360,'Wie ist die Satzmelodie ...?','nabBold')}{text(230,1377,400,'bei Aussagen (Ich heiße Paco.):')}{arrow('au2-a',575,1373,'2 Aussagen')}{text(230,1407,420,'bei W-Fragen (Wie heißt du?):')}{arrow('au2-w',575,1403,'2 W-Fragen')}{text(230,1437,430,'bei Rückfragen (Und wer bist du?):')}{arrow('au2-r',623,1433,'2 Rückfragen')}
  {check('au2',202,1471,{'au2-a':'down','au2-w':'down','au2-r':'up'})}
- <div className="nabNumber" style={{left:610,top:1140}}>3</div>{text(652,1140,390,'Hören Sie und ergänzen Sie ↘ oder ↗.\nSprechen Sie dann mit Ihrer Partnerin /\nIhrem Partner.','nabTitle')}{listen('07',565,1144)}
+ <div className="nabNumber" style={{left:610,top:1140}}>3</div>{text(652,1140,390,'Hören Sie und ergänzen Sie ↘ oder ↗.\nSprechen Sie dann mit Ihrer Partnerin /\nIhrem Partner.','nabTitle')}{listen('07',565,1144,'1')}
  {text(652,1235,190,'■  Hallo.')}{arrow('au3-hallo',760,1232,'3 Hallo')}
  {text(652,1267,175,'▲  Hallo, Paco.')}{arrow('au3-paco',814,1264,'3 Hallo Paco')}{text(860,1267,170,'Wie geht es dir?')}{arrow('au3-dir',1007,1264,'3 Wie geht es dir')}
  {text(652,1299,105,'■  Danke,')}{arrow('au3-danke',752,1296,'3 Danke')}{text(800,1299,50,'gut.')}{arrow('au3-gut',846,1296,'3 gut')}{text(893,1299,90,'Und dir?')}{arrow('au3-unddir',986,1296,'3 Und dir')}
