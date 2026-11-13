@@ -185,6 +185,7 @@ def apply_overrides(r,p):
     f=f'{ROOT}/src/native-kb11/overrides/p{p}.json'
     if not os.path.exists(f):return
     o=json.load(open(f))
+    r['art'].extend(o.get('art',[]))
     r['fields']=list(r['fields'])+o.get('fields',[])
     r['checks'].update(o.get('checks',{}))
     def hit(b,m):
