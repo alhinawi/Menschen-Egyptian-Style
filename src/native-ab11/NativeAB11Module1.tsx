@@ -30,7 +30,7 @@ export function NativeAB11Module1({page}:{page:string}){
  const answers=(group:string)=>Object.fromEntries(data.fields.filter(f=>f.group===group&&f.kind!=='radio'&&f.kind!=='checkbox'&&f.answer!==undefined).map(f=>[f.id,f.answer!]));
  const check=(id:string,x:number,y:number,expected=answers(id))=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:Object.entries(expected).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const rule=(id:string,x:number,y:number,test:()=>boolean)=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:test()})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
- const listen=(n:string,x:number,y:number)=><button className="mListen" aria-label={'Originalaudio 1 '+n} style={{left:x,top:Y(y)}} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+n+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
+ const listen=(n:string,x:number,y:number,t?:string)=><button className="mListen" data-task={t} aria-label={'Originalaudio 1 '+n} style={{left:x,top:Y(y)}} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+n+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
  const arrow=(id:string,x:number,y:number)=><button className="mArrow" data-native-field={id} aria-label={'Satzmelodie '+id} style={{left:x,top:Y(y)}} onClick={()=>set(id,v[id]==='↗'?'↘':'↗')}>{v[id]||' '}</button>;
  const radio=(id:string,val:string,x:number,y:number,label:string)=><input className="mRadio" type="radio" data-value={val} name={'native-ab11-'+page+'-'+id} aria-label={label} style={{left:x,top:Y(y)}} checked={v[id]===val} onChange={()=>set(id,val)}/>;
  const confidence=(id:string,y:number)=><>{[0,1,2].map((c)=><span key={c}>{radio('confidence-'+id,''+c,753+c*32,y,'Selbsteinschätzung '+id+' '+['grün','gelb','rot'][c])}</span>)}</>;
@@ -76,10 +76,10 @@ export function NativeAB11Module1({page}:{page:string}){
  {txt(145,581,650,'b  Das bin ich! Notieren Sie mindestens fünf Sätze.','mTitle')}{txt(185,624,340,'Ich heiße Julia.\nIch komme aus … und ich wohne in …','mExample')}{open('eigene-saetze',185,671,340,52,'1b mindestens fünf eigene Sätze')}
  {txt(548,581,290,'Lernen Sie Sätze zu Ihrer Person auswendig.\nSie helfen beim Small Talk.','mSmall mTip')}
  {txt(132,751,720,'TRAINING: AUSSPRACHE','mHeader')}{txt(508,763,280,'Satzmelodie bei Fragen','mSmall')}
- {title('1',804,'Was hören Sie? Ergänzen Sie die\nSatzmelodie: ↘ oder ↗.','',132,365)}{listen('11',96,807)}
+ {title('1',804,'Was hören Sie? Ergänzen Sie die\nSatzmelodie: ↘ oder ↗.','',132,365)}{listen('11',96,807,'1')}
  {['Wer ist das?','Ist das deine Frau?','Bist du verheiratet?','Wie heißt deine Frau?','Heißt deine Frau Steffi?','Was ist sie von Beruf?'].map((s,i)=><span key={s}>{txt(168,852+i*24,240,s)}{i<2?txt(i===0?260:307,852+i*24,30,i===0?'↘':'↗','mExample'):arrow('ap1-'+(i+1),[0,0,328,347,366,347][i],850+i*24)}</span>)}{check('ap1',168,1001)}
  {title('2',1043,'Ergänzen Sie die Regel.','',132,365)}{txt(179,1082,250,'↗ | ↘','mBank')}{txt(179,1115,270,'Bei W-Fragen (Wer? Wie? Was? …)\ngeht die Satzmelodie nach unten:','mSmall')}{arrow('ap2-1',407,1133)}{txt(179,1164,270,'Bei Ja-/Nein-Fragen geht die Satz-\nmelodie nach oben:','mSmall')}{arrow('ap2-2',320,1182)}{check('ap2',168,1218)}
- {title('3',804,'Ergänzen Sie die Satzmelodie (↘, ↗).\nHören Sie dann und vergleichen Sie.','',509,342)}{listen('12',470,807)}
+ {title('3',804,'Ergänzen Sie die Satzmelodie (↘, ↗).\nHören Sie dann und vergleichen Sie.','',509,342)}{listen('12',470,807,'1')}
  {txt(545,862,300,'▪ Das ist deine Freundin, ↘ oder? ↗','mSmall')}
  {txt(545,889,40,'▴ Nein.','mSmall')}{arrow('ap3-1',590,887)}{txt(626,889,200,'Das ist nicht meine','mSmall')}{txt(563,914,76,'Freundin.','mSmall')}{arrow('ap3-2',640,912)}{txt(676,914,150,'Das ist meine','mSmall')}{txt(563,939,76,'Schwester.','mSmall')}{arrow('ap3-3',640,937)}
  {txt(545,965,255,'▪ Wohnt sie auch in Deutschland?','mSmall')}{arrow('ap3-4',800,963)}
@@ -88,7 +88,7 @@ export function NativeAB11Module1({page}:{page:string}){
  {txt(545,1068,286,'▴ Sie spricht Polnisch, Deutsch und','mSmall')}{txt(563,1093,72,'Englisch.','mSmall')}{arrow('ap3-9',638,1091)}
  {txt(545,1119,160,'▪ Ist sie verheiratet?','mSmall')}{arrow('ap3-10',708,1117)}
  {txt(545,1145,40,'▴ Nein.','mSmall')}{arrow('ap3-11',590,1143)}{txt(625,1145,220,'Sie ist nicht verheiratet.','mSmall')}{check('ap3',545,1182)}
- {listen('13',505,1223)}{txt(545,1223,300,'Hören Sie noch einmal und sprechen Sie nach.','mSmall')}
+ {listen('13',505,1223,'2')}{txt(545,1223,300,'Hören Sie noch einmal und sprechen Sie nach.','mSmall')}
  </>}
  {page==='22'&&<>
  {head('TEST')}{title('1',200,'Familie. Ergänzen Sie.')}

@@ -25,7 +25,7 @@ export function NativeAB11Next45({page}:{page:string}){
  const answers=(group:string)=>Object.fromEntries(data.fields.filter(f=>f.group===group&&f.kind!=='radio'&&f.kind!=='checkbox'&&f.answer!==undefined).map(f=>[f.id,f.answer!]));
  const check=(id:string,x:number,y:number,expected=answers(id))=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:Object.entries(expected).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const rule=(id:string,x:number,y:number,test:()=>boolean)=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:test()})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
- const listen=(n:string,x:number,y:number)=><button className="mListen" aria-label={'Originalaudio 1 '+n} style={{left:x,top:Y(y)}} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+n+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
+ const listen=(n:string,x:number,y:number,t?:string)=><button className="mListen" data-task={t} aria-label={'Originalaudio 1 '+n} style={{left:x,top:Y(y)}} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+n+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
  const radio=(id:string,val:string,x:number,y:number,label:string)=><input className="mRadio" type="radio" data-value={val} name={'native-ab11-'+page+'-'+id} aria-label={label} style={{left:x,top:Y(y)}} checked={v[id]===val} onChange={()=>set(id,val)}/>;
  const score=(y:number,rows:string[][])=><div className="mScore" style={{left:168,top:Y(y)}}><b>Wörter</b><b>Strukturen</b><b>Kommunikation</b>{rows.map((row,r)=>row.map((s,c)=><div key={r+'-'+c}><i style={{background:['#d71910','#edcf00','#3b9e24'][r]}}/>{s} Punkte</div>))}</div>;
  const [active,A]=useState<Record<string,number>>({});
@@ -62,12 +62,12 @@ export function NativeAB11Next45({page}:{page:string}){
  {txt(470,932,85,'PLZ, Ort:','mSmall')}{f('k-plzort',560,930,252)}{txt(470,963,85,'Beruf:','mSmall')}{f('k-beruf',560,961,252)}{txt(470,994,85,'E-Mail:','mSmall')}{txt(560,994,252,'jurj.kulintsev@web.ch','mExample')}
  {rule('f2',180,1037,()=>v['k-anrede']==='Herr'&&Object.entries(answers('f2')).every(([id,a])=>norm(v[id]||'')===norm(a)))}
  {txt(132,1090,710,'TRAINING: AUSSPRACHE','mHeader')}{txt(555,1101,270,'Satzakzent','mSmall')}
- {title('1',1145,'Hören Sie und kreuzen Sie in der\nRegel an.','',132,345)}{listen('23',96,1145)}
+ {title('1',1145,'Hören Sie und kreuzen Sie in der\nRegel an.','',132,345)}{listen('23',96,1145,'1')}
  <div className="mPrintedStress" style={{left:168,top:Y(1210)}}>{[['a  ▪ Was ','ist',' das? ↘'],['   ▴ Das ist eine ','Kette','. ↘'],['   ▪ Wie ','schreibt',' man das? ↘'],['   ▴ Mit zwei ','Te','. ↘'],['','',''],['b  ▪ Und was ist ','das','? ↗ Ist das eine ','Kette','? ↗'],['   ▴ ','Nein','. ↘ Das ist keine ','Kette',', →'],['     das ist ein ','Ring','. ↘']].map((row,i)=><div key={i}>{row.map((s,j)=><span key={j} className={(j%2===1?'marked ':'')+'tapWord'} data-word={s.trim()} data-phrase={row.join('')} role="button" tabIndex={0}>{s}</span>)||' '}</div>)}</div>
  {txt(168,1450,330,'Der Satzakzent ist','mTitle')}{radio('regel','letztes-wort',168,1482,'immer auf dem letzten Wort.')}{txt(194,1480,300,'immer auf dem letzten Wort.','mSmall')}{radio('regel','wichtige-info',168,1510,'auf der wichtigen oder neuen Information.')}{txt(194,1508,340,'auf der wichtigen oder neuen Information.','mSmall')}{rule('au1',168,1541,()=>v.regel==='wichtige-info')}
- {title('2',1145,'Markieren Sie den Satzakzent.','',532,325)}{listen('24',494,1145)}{txt(567,1180,290,'Hören Sie dann und vergleichen Sie.','mSmall')}{txt(567,1210,282,'a  Wie heißt das auf Deutsch?','mExample')}
+ {title('2',1145,'Markieren Sie den Satzakzent.','',532,325)}{listen('24',494,1145,'1')}{txt(567,1180,290,'Hören Sie dann und vergleichen Sie.','mSmall')}{txt(567,1210,282,'a  Wie heißt das auf Deutsch?','mExample')}
  {['b  Das ist eine Uhr.','c  Sie ist aus Plastik.','d  Ist das eine Seife?','e  Das ist keine Seife, das ist eine Brille.'].map((s,i)=>stress('au2-'+String.fromCharCode(98+i),567,1242+i*34,s))}{rule('au2',567,1390,()=>['Uhr','Plastik','Seife','Brille'].every((a,i)=>norm(v['au2-'+String.fromCharCode(98+i)]||'')===norm(a)))}
- {listen('25',494,1435)}{txt(567,1435,285,'Hören Sie noch einmal und sprechen\nSie nach.','mSmall')}
+ {listen('25',494,1435,'1')}{txt(567,1435,285,'Hören Sie noch einmal und sprechen\nSie nach.','mSmall')}
  </>}
  {page==='40'&&<>
  {head('TEST')}{title('1',210,'Markieren Sie und ordnen Sie zu.')}

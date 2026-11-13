@@ -25,7 +25,7 @@ export function NativeAB11Lesson9Close({page}:{page:string}){
  const answers=(group:string)=>Object.fromEntries(data.fields.filter(f=>f.group===group&&f.kind!=='radio'&&f.kind!=='checkbox'&&f.answer!==undefined).map(f=>[f.id,f.answer!]));
  const check=(id:string,x:number,y:number,expected=answers(id))=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:Object.entries(expected).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const rule=(id:string,x:number,y:number,test:()=>boolean,expected?:Record<string,string>)=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton answers={expected} onClick={()=>G({...graded,[id]:test()})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
- const listen=(n:string,x:number,y:number)=><button className="mListen" aria-label={'Originalaudio 1 '+n} style={{left:x,top:Y(y)}} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+n+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
+ const listen=(n:string,x:number,y:number,t?:string)=><button className="mListen" data-task={t} aria-label={'Originalaudio 1 '+n} style={{left:x,top:Y(y)}} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+n+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
  const radio=(id:string,val:string,x:number,y:number,label:string)=><input className="mRadio" type="radio" data-value={val} name={'native-ab11-'+page+'-'+id} aria-label={label} style={{left:x,top:Y(y)}} checked={v[id]===val} onChange={()=>set(id,val)}/>;
  const score=(y:number,rows:string[][])=><div className="mScore" style={{left:440,top:Y(y)}}><b>Wörter</b><b>Strukturen</b><b>Kommunikation</b>{rows.map((row,r)=>row.map((s,c)=><div key={r+'-'+c}><i style={{background:['#d71910','#edcf00','#3b9e24'][r]}}/>{s} Punkte</div>))}</div>;
  const meal=(id:string,x:number,y:number,s:string)=><div className="mMenuLine" style={{left:x,top:Y(y),width:345}}><button aria-label={'Speisekarte markieren '+id} className={(v[id]==='1'||id==='menu-h1'&&v[id]===undefined)?'marked':''} onClick={()=>set(id,(v[id]==='1'||id==='menu-h1'&&v[id]===undefined)?'0':'1')}>{s}</button></div>;
@@ -60,12 +60,12 @@ export function NativeAB11Lesson9Close({page}:{page:string}){
  {['Tee','Käse','Lieblingsessen','Salat','Frühstück','Kuchen'].map((s,i)=><div key={s} className="mSpeakingCard" style={{left:168+i%3*230,top:Y(753+Math.floor(i/3)*144),width:206,height:112*sy}}><div><Words s="Thema: Essen und Trinken"/></div><Words s={s}/></div>)}
  {txt(168,1054,315,'▪ Trinkst du gern Tee?\n▴ Ja, oft.','mSmall')}{txt(510,1054,330,'▴ Was isst du gern zum Frühstück?\n▪ Ich frühstücke nur am Wochenende. Ich …','mSmall')}
  {txt(132,1170,670,'TRAINING: AUSSPRACHE','mHeader')}{txt(500,1177,340,'Wortakzent bei Komposita','mSmall')}
- {title('1',1232,'Hören Sie und markieren Sie den\nWortakzent.','',132,350)}{listen('41',96,1232)}
+ {title('1',1232,'Hören Sie und markieren Sie den\nWortakzent.','',132,350)}{listen('41',96,1232,'1')}
  {[[['Kar','tof','fel'],['Sa','lat'],['Kar','tof','fel','sa','lat']],[['Kä','se'],['Bröt','chen'],['Kä','se','bröt','chen']],[['Zwie','bel'],['Sup','pe'],['Zwie','bel','sup','pe']],[['Obst'],['Ku','chen'],['Obst','ku','chen']],[['Zi','tro','ne'],['Eis'],['Zi','tro','nen','eis']]].map((row,r)=><span key={r}>{txt(168,1315+r*37,18,'abcde'[r],'mSmall')}{row.map((s,c)=><span key={c}>{stress('akzent-'+r+'-'+c,194+[0,105,213][c],1315+r*37,s,[1,0,0,0,1][r]===1?(r===0&&c===1?1:c===1?0:1):0,r===0)}{c<2&&txt(194+[87,190][c],1315+r*37,20,'–','mSmall')}</span>)}</span>)}
  {/* Scan-data p69 au1-b..e gives the stressed syllable in each of the three words.
    Index 0 = first syllable, index 1 = second; row a is the printed example. */}
  {rule('au1',168,1510,()=>Object.entries(compoundAccentAnswers()).every(([id,a])=>v[id]===a),compoundAccentAnswers())}
- {listen('42',96,1564)}{txt(168,1564,320,'Hören Sie noch einmal und sprechen\nSie nach.','mTitle')}
+ {listen('42',96,1564,'1')}{txt(168,1564,320,'Hören Sie noch einmal und sprechen\nSie nach.','mTitle')}
  {title('2',1232,'Suchen Sie im Kursbuch (im Wörterbuch,\nin der alphabetischen Wortliste) fünf\nweitere Wörter. Sprechen Sie die Wörter.\nAchten Sie auf den Wortakzent.','',505,338)}{open('eigene-komposita',540,1390,303,180,'Fünf weitere Wörter und Wortakzent')}
  </>}
  {page==='70'&&<>

@@ -28,7 +28,7 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  const markT=(x:number,y:number)=><div className="mText mMark" style={{left:x,top:Y(y),width:16}}><span className="mTr">▲</span></div>;
  const markSB=(x:number,base:number)=><div className="mText mMarkSq" style={{left:x,top:Y(base-11),width:11,height:11}}/>;
  const markTB=(x:number,base:number)=><div className="mText mMarkTr" style={{left:x,top:Y(base-11)}}/>;
- const listen=(n:string,x:number,y:number)=><button className="mListen" aria-label={'Originalaudio 1 '+n} style={{left:x,top:Y(y)}} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+parseInt(n)+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
+ const listen=(n:string,x:number,y:number,t?:string)=><button className="mListen" data-task={t} aria-label={'Originalaudio 1 '+n} style={{left:x,top:Y(y)}} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+parseInt(n)+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
  const radioG=(fid:string,group:string,val:string,x:number,y:number,label:string)=><input className="mRadio" data-native-radio={fid} data-value={val} type="radio" name={'native-ab11-'+page+'-'+group} aria-label={label} style={{left:x,top:Y(y)}} checked={v[group]===val} onChange={()=>set(group,val)}/>;
  const side=(s:string,y:number)=><div className="nabSide" style={{left:100,top:Y(y)}}>{s}</div>;
  const sq='▪';
@@ -108,7 +108,7 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  <div className="mText" style={{left:165,top:932,width:300}}><span className="mSq">■</span><Words s="  Danke, dann bis Mittwoch!"/></div>
  {check('u9',167,954)}
  {title('10',996,'Mike in München, Teil 2','KB 7',125)}
- {txt(161,1027,400,'Hören Sie. Was ist richtig? Kreuzen Sie an.','mTitle')}{listen('43',93,1049)}
+ {txt(161,1027,400,'Hören Sie. Was ist richtig? Kreuzen Sie an.','mTitle')}{listen('43',93,1049,'10')}
  {[['a','Wann ist Mike in München?','Um 18:30 Uhr.','Um 19:00 Uhr.',1055],['b','Mike fährt …','zum Flughafen.','nach Daglfing.',1080],['c','Er nimmt …','die S-Bahn.','die U-Bahn.',1100],['d','Wie lange dauert die Fahrt?','20 Minuten','7 Minuten',1120],['e','Was bringt Mike mit?','Wurst','Brot',1139]].map(([k,q,o1,o2,y])=><span key={k as string}>{txt(166,y as number,255,(k as string)+'  '+(q as string))}{radioG('u10-'+k+'1','u10-'+k,'1',423,y as number,q+' '+o1)}{txt(442,y as number,135,o1 as string)}{radioG('u10-'+k+'2','u10-'+k,'2',581,y as number,q+' '+o2)}{txt(602,y as number,150,o2 as string)}</span>)}
  {rule('u10',166,1162,()=>v['u10-a']==='1'&&v['u10-b']==='2'&&v['u10-c']==='1'&&v['u10-d']==='2'&&v['u10-e']==='2')}
  </>}
@@ -133,14 +133,14 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {listen('44-46',93,773)}{txt(179,768,600,'b  Hören Sie noch einmal. Welche Sätze sind richtig? Kreuzen Sie in a an.','mTitle')}
  {rule('g2',700,700,()=>v['u2-1']==='b'&&v['u2-2']==='b'&&v['u2-3']==='b')}
  {txt(140,829,300,'TRAINING:  AUSSPRACHE','mHeader')}{txt(554,835,240,'Wortakzent bei trennbaren Verben','mScript2')}<div className="mHRule" style={{left:832,top:841,width:67}}/>
- {listen('47',93,881)}{title('1',876,'Hören Sie und markieren Sie den\nWortakzent.','',154)}
+ {listen('47',93,881,'1')}{title('1',876,'Hören Sie und markieren Sie den\nWortakzent.','',154)}
  <div className="mText" style={{left:182,top:932,width:280}}>fahren – <u>ab</u>fahren | kommen –<br/><u>an</u>kommen | kaufen – <u>ein</u>kaufen |<br/>sehen – <u>fern</u>sehen | bringen –<br/><u>mit</u>bringen</div>
- {listen('48',138,1026)}{txt(183,1028,450,'Hören Sie noch einmal und sprechen Sie nach.','mTitle')}
+ {listen('48',138,1026,'1')}{txt(183,1028,450,'Hören Sie noch einmal und sprechen Sie nach.','mTitle')}
  {title('2',1064,'Richtig oder falsch? Kreuzen Sie an.','',149)}
  <div className="mRegelBox" style={{left:200,top:1100,width:240,height:62}}><div className="mRegelLabel">REGEL</div>{txt(210,1106,220,'Der Wortakzent ist bei trennbaren Verben auf dem trennbaren Wortteil.','mSmall')}</div>
  {radioG('u4-r','u4','r',207,1139,'richtig')}{txt(228,1139,60,'richtig')}{radioG('u4-f','u4','f',296,1139,'falsch')}{txt(318,1139,60,'falsch')}
  {rule('g4',207,1165,()=>v['u4']==='r')}
- {listen('49',536,875)}{title('3',872,'Hören Sie.\nSprechen Sie dann.','',586)}
+ {listen('49',536,875,'3')}{title('3',872,'Hören Sie.\nSprechen Sie dann.','',586)}
  <div className="mText" style={{left:614,top:932,width:220}}>Ich <u>nehme</u> heut' den Zug.<br/><u>Ein</u>steigen<br/><u>Aus</u>steigen<br/><u>Um</u>steigen<br/>Vorsicht an Gleis <u>sieben</u>!</div>
  <div className="mText" style={{left:614,top:1044,width:220}}>Ich <u>nehme</u> heut' den Zug.<br/><u>Ab</u>fahren<br/><u>An</u>kommen<br/><u>An</u>rufen<br/>Holst du mich bitte <u>ab</u>?</div>
  </>}
