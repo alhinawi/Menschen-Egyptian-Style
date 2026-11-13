@@ -7,6 +7,8 @@ import './native-ab12.css';
 function Words({text}:{text:string}){return <>{text.split(/(\s+)/).map((w,i)=>/\p{L}/u.test(w)?<span key={i} className="tapWord" role="button" tabIndex={0} data-word={w.replace(/^[^\p{L}]+|[^\p{L}]+$/gu,'')} data-phrase={text}>{w}</span>:w)}</>}
 const normalize=(s:string)=>s.normalize('NFC').trim().toLocaleLowerCase('de').replace(/[.!?]+$/,'').replace(/\s+/g,' ');
 
+const SCP=(sel:string)=>['30','52','59','65'].map(p=>`[data-native-ab12='${p}'] ${sel}`).join(',');
+
 export function NativeAB12({page}:{page:string}){
  const W=+page>=66?807:1072, H=+page>=66?1094:1449;
  const root=useRef<HTMLDivElement>(null),player=useRef<HTMLAudioElement>(null);
@@ -28,7 +30,7 @@ export function NativeAB12({page}:{page:string}){
  const hand=(x:number,y:number,w:number,t:string)=><div className="naText naHand" style={{left:x,top:y,width:w}}><Words text={t}/></div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}"}</style><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}${SCP('.naTitle')}{font-family:FiraSans,sans-serif!important;letter-spacing:0!important;font-size:21px!important}${SCP('.naText')},${SCP('.naBold')},${SCP('.naLet')},${SCP('.naDlg')}{font-family:DroidSerif,Georgia,serif!important;font-size:20px!important;letter-spacing:-0.65px}${SCP('.naField')}{font-family:DroidSerif,Georgia,serif!important;font-size:19px!important;letter-spacing:-0.65px}${SCP('.naText.naS20')}{font-size:18px!important}${SCP('.naSmall')}{font-size:16.5px!important}${SCP('.naD19')}{font-size:17.5px!important}${SCP('.naUrl')}{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}`}</style><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='89'&&<>
   {art('lesson-tab',738,18,62,75)}
   {text(75,63,300,'LERNWORTSCHATZ','naHeadline')}
