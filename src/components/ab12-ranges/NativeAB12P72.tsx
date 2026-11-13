@@ -1,7 +1,7 @@
 import {AB12Canvas,AB12Helpers} from '../ab12-shared';
 
 function P72(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,title,kb,side,audio,strike,head,foot,tab,modTab,box,rect,values,set}=h;const D='naDroid72';return <>
-  {ln(94,56,590,25,'WIEDERHOLUNGSSTATION: WORTSCHATZ',{cls:'naHdr72'})}
+  {ln(94,56,590,25,'WIEDERHOLUNGSSTATION: WORTSCHATZ',{b:1,cls:'naHdr72'})}
   {box('1',94,124,'#c80e04')}  {rn(125,126,444,15,[{t:'Ergänzen Sie die Vokale (a, e, i, o, ö, u, ü) und ordnen Sie zu.',b:1}],{fam:'fira'})}
   {rect(124,154,349,19,'#fbf9d4')}
   {ln(127,156,38,13,'glcklch',{c:'#475570',cls:'naBank72 naSk72'})}
@@ -51,19 +51,14 @@ function P72(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {art('p4',525,536,82,113)}
   {art('p5',629,532,113,114)}
   {rect(125,671,437,16,'#fbfbdb')}
-  {ln(128,672,38,13.5,'dürfen',{c:'#3f526f',cls:'naStrip72'})}
-  {ln(172,672,3,14,'|',{fam:'fira',c:'#576f99'})}
-  {ln(179,672,42,13.5,'schiebt',{c:'#3f526f',cls:'naStrip72'})}
-  {ln(229,672,3,14,'|',{fam:'fira',c:'#576f99'})}
-  {ln(235,672,79,13.5,'Fahrradfahrer',{c:'#3f526f',cls:'naStrip72'})}
-  {ln(320,672,3,14,'|',{fam:'fira',c:'#576f99'})}
-  {ln(328,672,86,13.5,'stehen bleiben',{c:'#3f526f',cls:'naStrip72'})}
-  {ln(421,672,3,14,'|',{fam:'fira',c:'#576f99'})}
-  {ln(427,672,39,13.5,'Regeln',{c:'#3f526f',cls:'naStrip72 naStrikeBlue72'})}
-  {ln(472,672,3,14,'|',{fam:'fira',c:'#576f99'})}
-  {ln(479,672,28,13.5,'trägt',{c:'#3f526f',cls:'naStrip72'})}
-  {ln(512,672,3,14,'|',{fam:'fira',c:'#576f99'})}
-  {ln(519,672,39,13.5,'achten',{c:'#3f526f',cls:'naStrip72'})}
+  {ln(128,672,38,14,'dürfen',{c:'#3f526f',cls:'naStrip72'})}
+  {ln(179,672,42,14,'schiebt',{c:'#3f526f',cls:'naStrip72'})}
+  {ln(235,672,79,14,'Fahrradfahrer',{c:'#3f526f',cls:'naStrip72'})}
+  {ln(328,672,86,14,'stehen bleiben',{c:'#3f526f',cls:'naStrip72'})}
+  {ln(427,672,39,14,'Regeln',{c:'#3f526f',cls:'naStrip72 naStrikeBlue72'})}
+  {ln(479,672,28,14,'trägt',{c:'#3f526f',cls:'naStrip72'})}
+  {ln(519,672,39,14,'achten',{c:'#3f526f',cls:'naStrip72'})}
+  {[173,228,321,421,472,513].map(x=>ln(x,672,4,13.5,'|',{cls:'naPipe72b'}))}
   <div className='naRule' style={{left:500,top:725,width:195,borderBottom:'1px solid #c6c6ce'}}/>
   <div className='naRule' style={{left:193,top:744,width:195,borderBottom:'1px solid #c6c6ce'}}/>
   <div className='naRule' style={{left:132,top:763,width:194,borderBottom:'1px solid #c6c6ce'}}/>
