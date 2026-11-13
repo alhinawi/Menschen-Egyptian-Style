@@ -1,1 +1,12 @@
-{"keep": [[0, 0, 1072, 215], [200, 480, 1000, 640], [195, 1318, 1000, 1430], [800, 335, 900, 395]], "paper0": [253, 254, 250], "dropfields": ["f3a-1"], "drop": [{"cy": 353.0, "tol": 3}], "adj": [{"cy": 902.0, "tol": 1, "set": {"b": 0, "f": 21.3}}, {"cy": 817.0, "tol": 1, "set": {"b": 0, "f": 21.3}}, {"cy": 893.0, "tol": 1, "set": {"b": 0, "f": 21.3}}, {"cy": 877.0, "tol": 1, "set": {"b": 0, "f": 21}, "text": "was"}, {"cy": 864.5, "tol": 0.3, "set": {"f": 21}}, {"cy": 937.5, "tol": 0.3, "set": {"f": 21}, "dw": 35}, {"cy": 1205.0, "tol": 0.3, "x": 503, "set": {"b": 0, "f": 21}}, {"cy": 724.5, "tol": 0.3, "set": {"b": 1, "sa": 1}}, {"cy": 749.5, "tol": 0.3, "set": {"b": 1, "sa": 1}}, {"cy": 751.5, "tol": 0.3, "set": {"b": 1, "sa": 1}}, {"cy": 725.5, "tol": 0.3, "set": {"sa": 1}}, {"cy": 722.0, "tol": 0.3, "set": {"sa": 1}}], "fieldadj": {"f3a-2": {"group": "task3b"}, "f3a-3": {"group": "task3b"}, "f3a-4": {"group": "task3b"}}, "checks": {"task3b": [135, 545], "task4a": [428, 1000], "task4b": [585, 1005], "task4c": [905, 1008], "task5": [740, 1296]}, "compact": ["task3b", "task4a", "task4b", "task4c", "task5"], "erase": [[783, 926, 905, 952], [512, 680, 530, 700], [294, 696, 306, 710], [440, 405, 458, 422], [666, 455, 684, 470]], "setws": [{"cy": 749.5, "x": 761, "tol": 1, "ws": ["erg\u00e4nzen", "Sie."]}]}
+{
+ "keep": [[0, 0, 1072, 1518]],
+ "fieldadj": {},
+ "checks": {"task3a": [845, 486], "task3b": [335, 480], "task4a": [230, 1008], "task4b": [610, 952], "task4c": [850, 1046], "task5": [655, 1296]},
+ "notes": [
+  "f3a-1 dropped: 'A, C' pre-printed blue script anchor; key lists only 2C 3B 4A.",
+  "4a row 4 printed 1-circle anchor; inputs on the 3 empty circles (4,3,2). 4b line 4 'Achtung!' pre-printed. 5a 'steige'/'(einsteigen)' pre-printed.",
+  "3b radios + f4a circles aligned to measured printed rings; p58-scoped CSS: grading ring inside field, X at 56% (beats inline 70% from answer-cross.ts). f4a circle border transparent.",
+  "Audio tags 2.11-2.15 erased (blue ink only, red boxes 3/4/5 intact). cd2-15 entry moved to (104,1068,44,22): scan-data box covered the red 5 box.",
+  "2.12/2.13/2.14 share one row: app merges them into one marker with chooser (AudioMarkerButtons, unchanged)."
+ ]
+}
