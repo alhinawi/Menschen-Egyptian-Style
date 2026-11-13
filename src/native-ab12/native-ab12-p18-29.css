@@ -22,3 +22,5 @@
 .naCanvas .naText.naF21{font-size:21px}
 .naCanvas .naTFrame{position:absolute;border:1px solid #e3dec9;box-sizing:border-box}
 .naCanvas .naTCol{position:absolute;width:0;border-left:1px solid #e3dec9}
+
+.naCanvas .naText.naTableEnglish{font-size:18px;line-height:29.5px}
