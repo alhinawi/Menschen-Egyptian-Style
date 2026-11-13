@@ -71,3 +71,4 @@
 
 .lmHideAll .sharedMatchItem{color:transparent!important}
 .nkb[data-native-page="11"] .nkbCanvas input[type=text].nkbField.nkbUl[data-native-field="das"],.nkb[data-native-page="10"] .nkbCanvas input[type=text].nkbField.nkbUl[data-native-field="komme"]{border-bottom:1px solid #5a5a5a!important}
+.nkb[data-native-page="10"] .nkbCanvas select.nkbField[data-native-field^="music_"]{border:0!important;border-radius:50%!important;background:transparent!important;color:#173c62!important;font-size:2.2cqw!important}
