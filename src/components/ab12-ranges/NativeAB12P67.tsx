@@ -19,7 +19,7 @@ function P67(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {art('esign4',450,524,48,52)}
   {art('esign5',548,524,47,52)}
   {art('esign6',653,524,44,52)}
-  {art('hwmuss',158,580,40,22)}
+  {art('hwmuss',164,584,26,14)}
   {art('slasha',214,586,46,16)}
   {art('dots',45,747,54,20)}
   {art('sign6a',484,718,92,90)}
