@@ -551,8 +551,8 @@ export function NativeKB12({page}:{page:string}){
  {text(141,713,425,'1\n◆ Hier spricht Doktor Eisenbarth.\n◎ Guten Tag! Ich brauche Ihren Rat.\n    Meine Arbeit stresst mich sehr.\n◆ Na gut, dann arbeiten Sie nicht mehr!\n\n2\n◆ Ja hallo? Hier ist Eisenbarth.\n◎ Herr Doktor, ich brauch’ Ihren Rat.\n    Mein Bein tut weh, ich kann nicht gehen.\n◆ Dann bleiben Sie doch einfach stehen!','nkEisenVerse')}
  {text(574,713,425,'3\n◆ Hallo? Was kann ich für Sie tun?\n◎ Gack-gack, ich glaub’, ich werd’ ein Huhn.\n    Was soll ich tun? Schnell! Eins, zwei, drei …\n◆ Na, was schon? … Legen Sie ein Ei!\n\n4\n◆ Hier Eisenbarth, was wollen Sie fragen?\n◎ Ich möcht’ so gern Tabletten haben.\n    Ich kann nicht schlafen in der Nacht.\n◆ Na schön, dann schlafen Sie halt am Tag!','nkEisenVerse')}
  {text(270,1045,600,'Chor\nGloria, Viktoria, widewidewitt juchheirassa!\nGloria, Viktoria, widewidewitt, bum bum.','nkEisenChorus')}
- {audio('assets/kb-a12-cd3-track21.mp3',50,1169,'3 21',undefined,'1')}{title('1',120,1167,925,'Lesen Sie den Chor-Text laut. Hören Sie dann das Lied und singen Sie mit.')}
- {audio('assets/kb-a12-cd3-track22.mp3',50,1230,'3 22',undefined,'2')}{title('2',120,1228,925,'Arbeiten Sie in Gruppen. Dichten Sie neue Strophen.')}{text(164,1264,860,'Singen Sie sie dann vor. Der ganze Kurs singt den Chor-Text.','nkBold')}
+ {audio('assets/kb-a12-cd3-track21.mp3',50,1169,'3 21',undefined,'1')}{title('1',120,1167,925,'Lesen Sie den Chor-Text laut. Hören Sie dann das Lied und singen Sie mit.')}{save('1',1008,1163)}
+ {audio('assets/kb-a12-cd3-track22.mp3',50,1230,'3 22',undefined,'2')}{title('2',120,1228,925,'Arbeiten Sie in Gruppen. Dichten Sie neue Strophen.')}{save('2',767,1222)}{text(164,1264,860,'Singen Sie sie dann vor. Der ganze Kurs singt den Chor-Text.','nkBold')}
  {text(164,1314,490,'■ Hier spricht Doktor Eisenbarth.\n▲ Guten Tag! Ich brauche Ihren Rat.\n    Mein Kopf tut weh, die Augen auch.\n■ Dann legen Sie sich auf den Bauch.','nkSmall')}{open('2-strophe',690,1310,330,125,'Unsere neue Strophe','Unsere neue Strophe …')}
  </>}
  {page==='41'&&<>
