@@ -1,0 +1,611 @@
+{
+ "w": 1072,
+ "h": 1453,
+ "items": [
+  {
+   "k": "a",
+   "n": "bg",
+   "x": 0,
+   "y": 0,
+   "w": 1072,
+   "h": 1453,
+   "alt": "Seite 56 Hintergrund"
+  },
+  {
+   "k": "t",
+   "x": 160,
+   "y": 183,
+   "t": "Ergänzen Sie das Verb im Perfekt.",
+   "s": 21.5,
+   "c": "naFiraM",
+   "col": "#1d1d1b"
+  },
+  {
+   "k": "bx",
+   "x": 158,
+   "y": 203,
+   "w": 634,
+   "h": 30,
+   "bg": "#fefee6"
+  },
+  {
+   "k": "t",
+   "x": 166,
+   "y": 224,
+   "t": "sich entschuldigen | gehören | gefallen | beschweren | vergessen | bekommen",
+   "s": 16.0,
+   "col": "#224777"
+  },
+  {
+   "k": "t",
+   "x": 160,
+   "y": 260,
+   "t": "a",
+   "s": 14.0
+  },
+  {
+   "k": "t",
+   "x": 160,
+   "y": 286,
+   "t": "b",
+   "s": 13
+  },
+  {
+   "k": "t",
+   "x": 160,
+   "y": 311,
+   "t": "c",
+   "s": 16.0
+  },
+  {
+   "k": "t",
+   "x": 160,
+   "y": 338,
+   "t": "d",
+   "s": 13
+  },
+  {
+   "k": "t",
+   "x": 160,
+   "y": 365,
+   "t": "e",
+   "s": 15.0
+  },
+  {
+   "k": "t",
+   "x": 160,
+   "y": 389,
+   "t": "f",
+   "s": 21.5
+  },
+  {
+   "k": "t",
+   "x": 186,
+   "y": 260,
+   "t": "Warum hast du dich bei Simon nicht",
+   "s": 18.5
+  },
+  {
+   "k": "f",
+   "id": "p56-7a",
+   "x": 513,
+   "y": 270,
+   "w": 150,
+   "l": "7 a",
+   "a": "entschuldigt",
+   "g": "g1"
+  },
+  {
+   "k": "t",
+   "x": 670,
+   "y": 260,
+   "t": "?",
+   "s": 16.0
+  },
+  {
+   "k": "t",
+   "x": 186,
+   "y": 286,
+   "t": "Haben Sie die E-Mail von Professor Klüger schon",
+   "s": 18.0
+  },
+  {
+   "k": "f",
+   "id": "p56-7b",
+   "x": 613,
+   "y": 296,
+   "w": 182,
+   "l": "7 b",
+   "a": "bekommen",
+   "g": "g1"
+  },
+  {
+   "k": "t",
+   "x": 799,
+   "y": 286,
+   "t": "?",
+   "s": 16.0
+  },
+  {
+   "k": "t",
+   "x": 186,
+   "y": 311,
+   "t": "Wie hat Ihnen das Konzert",
+   "s": 18.5
+  },
+  {
+   "k": "f",
+   "id": "p56-7c",
+   "x": 430,
+   "y": 321,
+   "w": 170,
+   "l": "7 c",
+   "a": "gefallen",
+   "g": "g1"
+  },
+  {
+   "k": "t",
+   "x": 610,
+   "y": 311,
+   "t": "?",
+   "s": 16.0
+  },
+  {
+   "k": "t",
+   "x": 186,
+   "y": 338,
+   "t": "War das Essen wirklich schlecht? Hast du dich",
+   "s": 18.5
+  },
+  {
+   "k": "f",
+   "id": "p56-7d",
+   "x": 613,
+   "y": 347,
+   "w": 164,
+   "l": "7 d",
+   "a": "beschwert",
+   "g": "g1"
+  },
+  {
+   "k": "t",
+   "x": 782,
+   "y": 338,
+   "t": "?",
+   "s": 16.0
+  },
+  {
+   "k": "t",
+   "x": 186,
+   "y": 365,
+   "t": "Ich muss noch einmal ins Büro gehen. Ich habe mein Handy",
+   "s": 18.5
+  },
+  {
+   "k": "f",
+   "id": "p56-7e",
+   "x": 727,
+   "y": 374,
+   "w": 181,
+   "l": "7 e",
+   "a": "vergessen",
+   "g": "g1"
+  },
+  {
+   "k": "t",
+   "x": 914,
+   "y": 365,
+   "t": ".",
+   "s": 14.0
+  },
+  {
+   "k": "t",
+   "x": 186,
+   "y": 389,
+   "t": "Das Auto hat mir früher",
+   "s": 18.5
+  },
+  {
+   "k": "f",
+   "id": "p56-7f",
+   "x": 402,
+   "y": 401,
+   "w": 183,
+   "l": "7 f",
+   "a": "gehört",
+   "g": "g1"
+  },
+  {
+   "k": "t",
+   "x": 591,
+   "y": 389,
+   "t": ".",
+   "s": 14.0
+  },
+  {
+   "k": "chk",
+   "g": "g1",
+   "x": 955,
+   "y": 366
+  },
+  {
+   "k": "t",
+   "x": 163,
+   "y": 456,
+   "t": "Haben Sie schon einmal einen Promi getroffen?",
+   "s": 21.5,
+   "c": "naFiraM",
+   "col": "#1d1d1b"
+  },
+  {
+   "k": "t",
+   "x": 163,
+   "y": 493,
+   "t": "Lesen Sie den Forumsbeitrag und antworten Sie dann",
+   "s": 18.0
+  },
+  {
+   "k": "t",
+   "x": 642,
+   "y": 493,
+   "t": "petersilie.",
+   "s": 16.0,
+   "i": 1
+  },
+  {
+   "k": "t",
+   "x": 320,
+   "y": 597,
+   "t": "Welchen Promi habt ihr schon mal getroffen?",
+   "s": 16.0,
+   "b": 1
+  },
+  {
+   "k": "t",
+   "x": 320,
+   "y": 614,
+   "t": "Mir ist gerade ein bisschen langweilig, deshalb meine Frage:",
+   "s": 15.0
+  },
+  {
+   "k": "t",
+   "x": 320,
+   "y": 641,
+   "t": "Welchen Promi, welche berühmte Person, habt ihr schon mal getroffen?",
+   "s": 15.0
+  },
+  {
+   "k": "t",
+   "x": 320,
+   "y": 661,
+   "t": "Also, beim Einkaufen oder im Zug oder so.",
+   "s": 15.0
+  },
+  {
+   "k": "t",
+   "x": 320,
+   "y": 684,
+   "t": "Habt ihr den Promi gleich erkannt? Wie hat er/sie ausgesehen?",
+   "s": 15.0
+  },
+  {
+   "k": "t",
+   "x": 163,
+   "y": 737,
+   "t": "Beantworten Sie folgende Fragen.",
+   "s": 18.0
+  },
+  {
+   "k": "t",
+   "x": 185,
+   "y": 778,
+   "t": "Haben Sie schon einmal einen Promi",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 161,
+   "y": 778,
+   "t": "–",
+   "s": 20.0
+  },
+  {
+   "k": "t",
+   "x": 184,
+   "y": 801,
+   "t": "getroffen?",
+   "s": 18.0
+  },
+  {
+   "k": "t",
+   "x": 161,
+   "y": 828,
+   "t": "–",
+   "s": 20.0
+  },
+  {
+   "k": "t",
+   "x": 185,
+   "y": 828,
+   "t": "Wer war das?",
+   "s": 17.5
+  },
+  {
+   "k": "t",
+   "x": 161,
+   "y": 854,
+   "t": "–",
+   "s": 20.0
+  },
+  {
+   "k": "t",
+   "x": 185,
+   "y": 854,
+   "t": "Wann und wo war das?",
+   "s": 18.0
+  },
+  {
+   "k": "t",
+   "x": 161,
+   "y": 880,
+   "t": "–",
+   "s": 20.0
+  },
+  {
+   "k": "t",
+   "x": 185,
+   "y": 881,
+   "t": "Wie hat er/sie ausgesehen?",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 161,
+   "y": 906,
+   "t": "–",
+   "s": 20.0
+  },
+  {
+   "k": "t",
+   "x": 185,
+   "y": 907,
+   "t": "Was hat er/sie gemacht?",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 161,
+   "y": 945,
+   "t": "Sie haben noch nie einen Promi getroffen? Dann schreiben Sie eine Fantasiegeschichte.",
+   "s": 18.5,
+   "b": 1
+  },
+  {
+   "k": "t",
+   "x": 159,
+   "y": 1011,
+   "t": "Wie können Sie reagieren? Ergänzen Sie.",
+   "s": 22.0,
+   "c": "naFiraM",
+   "col": "#1d1d1b"
+  },
+  {
+   "k": "t",
+   "x": 160,
+   "y": 1049,
+   "t": "a",
+   "s": 14.0
+  },
+  {
+   "k": "t",
+   "x": 207,
+   "y": 1049,
+   "t": "Gehört der Porsche Juliane?",
+   "s": 18.0
+  },
+  {
+   "k": "r",
+   "x": 212,
+   "y": 1077,
+   "w": 13,
+   "h": 2,
+   "col": "#8f9699"
+  },
+  {
+   "k": "r",
+   "x": 230,
+   "y": 1077,
+   "w": 13,
+   "h": 2,
+   "col": "#8f9699"
+  },
+  {
+   "k": "r",
+   "x": 248,
+   "y": 1077,
+   "w": 13,
+   "h": 2,
+   "col": "#8f9699"
+  },
+  {
+   "k": "r",
+   "x": 272,
+   "y": 1077,
+   "w": 13,
+   "h": 2,
+   "col": "#8f9699"
+  },
+  {
+   "k": "r",
+   "x": 290,
+   "y": 1077,
+   "w": 13,
+   "h": 2,
+   "col": "#8f9699"
+  },
+  {
+   "k": "r",
+   "x": 308,
+   "y": 1077,
+   "w": 13,
+   "h": 2,
+   "col": "#8f9699"
+  },
+  {
+   "k": "r",
+   "x": 326,
+   "y": 1077,
+   "w": 13,
+   "h": 2,
+   "col": "#8f9699"
+  },
+  {
+   "k": "f",
+   "id": "p56-9a",
+   "x": 206,
+   "y": 1079,
+   "w": 108,
+   "l": "9 a",
+   "a": "Ach was|Ach was!",
+   "g": "g2",
+   "c": "sl"
+  },
+  {
+   "k": "t",
+   "x": 322,
+   "y": 1074,
+   "t": "! Das glaube ich nicht. Sie hat",
+   "s": 17.5
+  },
+  {
+   "k": "t",
+   "x": 212,
+   "y": 1101,
+   "t": "doch nicht so viel Geld!",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 160,
+   "y": 1139,
+   "t": "b",
+   "s": 13
+  },
+  {
+   "k": "t",
+   "x": 207,
+   "y": 1139,
+   "t": "Lolita hat am Samstag geheiratet.",
+   "s": 18.5
+  },
+  {
+   "k": "f",
+   "id": "p56-9b",
+   "x": 190,
+   "y": 1176,
+   "w": 160,
+   "l": "9 b",
+   "a": "Wahnsinn",
+   "g": "g2",
+   "c": "sl"
+  },
+  {
+   "k": "t",
+   "x": 352,
+   "y": 1165,
+   "t": "! Sie ist doch erst seit einem Monat geschieden.",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 160,
+   "y": 1203,
+   "t": "c",
+   "s": 16.0
+  },
+  {
+   "k": "t",
+   "x": 206,
+   "y": 1204,
+   "t": "Gestern habe ich Michael Ballack am Flughafen gesehen.",
+   "s": 18.5
+  },
+  {
+   "k": "f",
+   "id": "p56-9c",
+   "x": 190,
+   "y": 1241,
+   "w": 102,
+   "l": "9 c",
+   "a": "Echt",
+   "g": "g2",
+   "c": "sl"
+  },
+  {
+   "k": "t",
+   "x": 291,
+   "y": 1230,
+   "t": "? Bist du sicher?",
+   "s": 17.5
+  },
+  {
+   "k": "t",
+   "x": 205,
+   "y": 1256,
+   "t": "Ja natürlich! Glaubst du, ich erkenne Michael Ballack nicht?",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 160,
+   "y": 1295,
+   "t": "d",
+   "s": 14.5
+  },
+  {
+   "k": "t",
+   "x": 206,
+   "y": 1295,
+   "t": "Hast du schon gehört? Frau Bauer ist ab 1.5. unsere neue Chefin.",
+   "s": 18.0
+  },
+  {
+   "k": "f",
+   "id": "p56-9d",
+   "x": 205,
+   "y": 1331,
+   "w": 140,
+   "l": "9 d",
+   "a": "Ach komm",
+   "g": "g2",
+   "c": "sl"
+  },
+  {
+   "k": "t",
+   "x": 350,
+   "y": 1319,
+   "t": "! Frau Bauer? Das kann doch nicht sein! Sie ist doch erst seit einem",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 207,
+   "y": 1346,
+   "t": "Monat hier!",
+   "s": 18.0
+  },
+  {
+   "k": "t",
+   "x": 206,
+   "y": 1372,
+   "t": "Doch. Sie hat es mir heute Morgen gesagt.",
+   "s": 18.5
+  },
+  {
+   "k": "chk",
+   "g": "g2",
+   "x": 945,
+   "y": 1348
+  }
+ ]
+}
