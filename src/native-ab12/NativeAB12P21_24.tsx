@@ -305,8 +305,8 @@ export function NativeAB12P21_24({page}:{page:string}){
   {stext(608,1039,52,'Bergen','naBankT')}
   {stext(171,1082,50,'ARISA:','naSpkR')}
   {stext(233,1082,130,'Hallo Uli, schöne','')}
-  {art('gruesse-script',369,1085,57,28)}
-  {stext(424,1082,90,'aus Italien!')}
+  {art('gruesse-script',371,1085,57,28)}
+  {stext(426,1082,90,'aus Italien!')}
   {stext(172,1106,45,'Uli91:','naSpkB')}
   {stext(233,1106,250,'Aus Italien? Was machst du dort?','naDlgB')}
   {stext(170,1128,50,'ARISA:','naSpkR')}
