@@ -69,7 +69,7 @@ function P71(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {ln(398,644,188,14,'müssen, ich muss, du musst,',{cls:D})}
   {ln(406,666,50,14,'er muss',{cls:D})}
   {ln(398,683,69,14,'sitzen, hat',{cls:D})}
-  {ln(405,705,55,14,'gesessen',{cls:D})}
+  {ln(405,702,55,14,'gesessen',{cls:D})}
   {ln(405,722,84,13,'A: ist gesessen',{c:'#767563',cls:D})}
   {ln(397,751,29,14,'leise',{cls:D})}
   {ln(397,780,20,14,'für',{cls:D})}
