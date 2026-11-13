@@ -7,7 +7,7 @@ import './native-ab12-l13.css';
 
 function Words({text}:{text:string}){return <>{text.split(/(\s+)/).map((w,i)=>/\p{L}/u.test(w)?<span key={i} className="tapWord" role="button" tabIndex={0} data-word={w.replace(/^[^\p{L}]+|[^\p{L}]+$/gu,'')} data-phrase={text}>{w}</span>:w)}</>}
 const normalize=(s:string)=>s.normalize('NFC').trim().toLocaleLowerCase('de').replace(/[.!?]+$/,'').replace(/\s+/g,' ');
-const HEIGHTS:Record<string,number>={'6':1465,'7':1447,'8':1452,'9':1447,'10':1452,'11':1447,'12':1452,'13':1447};
+const HEIGHTS:Record<string,number>={'6':1465,'7':1447,'8':1452,'9':1447,'10':1452,'11':1447,'12':1452,'13':1447,'14':1452};
 
 export function NativeAB12Lesson13({page}:{page:string}){
  const W=1071,H=HEIGHTS[page]||1447;
@@ -587,6 +587,62 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {check('13-8',1000,1345,{'13-8-2n':'ein|sein','13-8-2a':'ein|sein','13-8-3n':'hre|ihre','13-8-3a':'hre|ihre','13-8-4n':'eine|seine','13-8-4a':'eine|seine'})}
   <div className="naModul9b" style={{left:1003,top:1393,width:68,height:19}}>Modul 5</div>
   <div className="naText naFooter naNw" style={{left:869,top:1390,width:125,whiteSpace:'pre'}}>dreizehn{'  |  '}13</div>
+ </>}
+ {page==='14'&&<>
+  {art('hdr-title',106,86,255,32)}
+  {art('hdr-rule',358,109,610,10)}
+  {badge9('9',111,164)}
+  {text(153,162,320,'Schreiben Sie ein Gespräch.','naYT naNw')}
+  {text(69,168,40,'KB 6','naKB13 naNw')}
+  <div className="naSide13" style={{left:81,top:205}}>KOMMUNIKATION</div>
+  {text(153,207,20,'a','naLet14')}{text(177,203,420,'finden / das / Sofa / Wie / du / ?','naCue14 naNw')}
+  <div className="naTri8" style={{left:176,top:236}}/>{art('hw-wie',194,228,200,28)}
+  {text(153,259,20,'b','naLet14')}{text(177,255,420,'aussehen / toll / Sofa / Das / .','naCue14 naNw')}
+  <div className="naSq8" style={{left:176,top:288}}/>{field('14-9b',202,281,750,'9b Antwort','naFld14')}
+  {text(153,312,20,'c','naLet14')}{text(177,306,460,'finden / Sessel / du / wie / Und / den / ?','naCue14 naNw')}
+  <div className="naSq8" style={{left:176,top:340}}/>{field('14-9c',202,333,750,'9c Antwort','naFld14')}
+  {text(153,364,20,'d','naLet14')}{text(177,358,460,'mögen / ich / Den Sessel / gar nicht / .','naCue14 naNw')}
+  <div className="naTri8" style={{left:175,top:391}}/>{field('14-9d',202,385,750,'9d Antwort','naFld14')}
+  {text(153,416,20,'e','naLet14')}{text(177,410,460,'Ich / toll / finden / den Sessel / .','naCue14 naNw')}
+  <div className="naSq8" style={{left:175,top:443}}/>{field('14-9e',202,437,750,'9e Antwort','naFld14')}
+  {check('14-9',1010,437,{'14-9b':'Das Sofa sieht toll aus','14-9c':'Und wie findest du den Sessel','14-9d':'Den Sessel mag ich gar nicht|Ich mag den Sessel gar nicht','14-9e':'Ich finde den Sessel toll'})}
+  {badge9('10',110,500)}
+  {text(152,498,620,'Welche Wörter aus Wohnungsanzeigen sind hier versteckt?','naYT naNw')}
+  {text(153,525,340,'Markieren und ergänzen Sie.','naInstr14 naNw')}
+  {text(67,504,40,'KB 8','naKB13 naNw')}
+  <div className="naSide13" style={{left:77,top:540}}>WÖRTER</div>
+  {art('grid',146,560,720,60)}
+  {text(152,632,20,'a','naLet14')}{art('hw-quad',640,630,122,26)}{text(176,630,470,'Frau Gruber hat ein Haus. Es ist sehr groß. Es hat 150','naSent14 naNw')}
+  {text(152,659,20,'b','naLet14')}{text(176,655,600,'Frau Gruber braucht nicht alle Zimmer. Die Zimmer im ersten Stock','naSent14 naNw')}{field('14-10b',782,657,124,'10b Wort','naFld14')}{text(925,655,40,'sie.','naSent14 naNw')}
+  {text(152,685,20,'c','naLet14')}{text(176,681,550,'In den Zimmern stehen auch Möbel. Sie vermietet die Zimmer','naSent14 naNw')}{field('14-10c',731,683,200,'10c Wort','naFld14')}{text(935,681,15,'.','naSent14 naNw')}
+  {text(152,710,20,'d','naLet14')}{text(175,706,700,'Im letzten Jahr hat Fritzi dort gewohnt. Er mag die Wohnung und findet seine','naSent14 naNw')}
+  {field('14-10d',174,732,206,'10d Wort','naFld14')}{text(386,730,220,'Frau Gruber sehr nett.','naSent14 naNw')}
+  {text(152,764,20,'e','naLet14')}{text(173,760,560,'Jetzt sind die Zimmer frei. Frau Gruber sucht einen Mieter. Die','naSent14 naNw')}{field('14-10e',738,761,200,'10e Wort','naFld14')}
+  {text(174,784,320,'steht in der Osttiroler Zeitung.','naSent14 naNw')}
+  {text(152,811,20,'f','naLet14')}{text(175,809,30,'Die','naSent14 naNw')}{field('14-10f',208,810,206,'10f Wort','naFld14')}{text(420,808,320,'für die Zimmer ist nicht sehr hoch.','naSent14 naNw')}
+  {text(152,842,20,'g','naLet14')}{text(175,838,95,'Der Mieter','naSent14 naNw')}{field('14-10g1',274,836,206,'10g Wort 1','naFld14')}{text(486,834,170,'noch 50,- Euro für','naSent14 naNw')}{field('14-10g2',656,838,206,'10g Wort 2','naFld14')}{text(864,834,12,',','naSent14 naNw')}
+  {field('14-10g3',173,861,207,'10g Wort 3','naFld14')}{text(385,858,30,'und','naSent14 naNw')}{field('14-10g4',425,862,175,'10g Wort 4','naFld14')}{text(604,858,12,'.','naSent14 naNw')}
+  {check('14-10',1010,862,{'14-10b':'vermietet','14-10c':'möbliert','14-10d':'Vermieterin','14-10e':'Anzeige','14-10f':'Miete','14-10g1':'bezahlt','14-10g2':'Licht|Wasser|Müll','14-10g3':'Licht|Wasser|Müll','14-10g4':'Licht|Wasser|Müll'})}
+  {badge9('11',107,926)}
+  {text(151,925,580,'Hören Sie und kreuzen Sie an. Welche Anzeige passt?','naYT naNw')}
+  {text(65,930,40,'KB 8','naKB13 naNw')}
+  <div className="naSide13" style={{left:75,top:988}}>HÖREN</div>
+  {audio('assets/ab-a12-cd2-track07.mp3',52,955,'2 07')}
+  {art('card1',148,968,396,136)}{art('card2',558,968,362,132)}
+  {dot('14-11','a1',166,979,'Anzeige 1')}{dot('14-11','a2',568,982,'Anzeige 2')}
+  {check('14-11',1010,1080,{'14-11':'a2'})}
+  {badge9('12',106,1158)}
+  {text(150,1157,640,'Hören Sie noch einmal und kreuzen Sie an. Was ist richtig?','naYT naNw')}
+  {text(64,1163,40,'KB 8','naKB13 naNw')}
+  <div className="naSide13" style={{left:74,top:1200}}>HÖREN</div>
+  {audio('assets/ab-a12-cd2-track07.mp3',52,1181,'2 07')}
+  {text(149,1204,20,'a','naLet14')}{text(173,1198,300,'Die Wohnung ist','naSent14 naNw')}{dot('14-12a','möbliert',474,1198,'möbliert')}{text(498,1198,90,'möbliert.','naSent14 naNw')}{dot('14-12a','leer',624,1198,'leer')}{text(649,1198,60,'leer.','naSent14 naNw')}
+  {text(148,1230,20,'b','naLet14')}{text(173,1223,240,'Dalva findet den Balkon','naSent14 naNw')}{dot('14-12b','super',474,1224,'super')}{text(499,1223,60,'super.','naSent14 naNw')}{dot('14-12b','nicht so toll',624,1224,'nicht so toll')}{text(649,1223,120,'nicht so toll.','naSent14 naNw')}
+  {text(148,1256,20,'c','naLet14')}{text(173,1249,260,'Das Schlafzimmer ist nicht','naSent14 naNw')}{dot('14-12c','groß',474,1250,'groß')}{text(498,1249,60,'groß.','naSent14 naNw')}{dot('14-12c','klein',624,1250,'klein')}{text(649,1249,60,'klein.','naSent14 naNw')}
+  {text(148,1282,20,'d','naLet14')}{text(172,1275,280,'Neben dem Wohnzimmer ist','naSent14 naNw')}{dot('14-12d','die küche',474,1276,'die Küche')}{text(499,1275,100,'die Küche.','naSent14 naNw')}{dot('14-12d','das bad',624,1276,'das Bad')}{text(648,1275,80,'das Bad.','naSent14 naNw')}
+  {check('14-12',1010,1276,{'14-12a':'leer','14-12b':'super','14-12c':'groß','14-12d':'die küche'})}
+  <div className="naModul10" style={{left:0,top:1394,width:72,height:23,lineHeight:'23px',background:'#ded6b0'}}>Modul 5</div>
+  <div className="naText naFooter naNw" style={{left:78,top:1396,width:160,whiteSpace:'pre'}}>14{'  |  '}<span className="naFz14">vierzehn</span></div>
  </>}
  </div><audio ref={player} className="naPlayer"/></div>;
 }
