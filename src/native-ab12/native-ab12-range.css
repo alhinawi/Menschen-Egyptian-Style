@@ -48,14 +48,22 @@
 .nativeAB12 .naRCanvas .naText.naR.naHead{letter-spacing:.6px!important}
 .nativeAB12 .naRCanvas .naText.naR.naRThin{letter-spacing:2px!important}
 .nativeAB12 .naRCanvas .naRField{font-family:ABRangeDroid,DroidSerif,Georgia,serif!important;font-size:20px!important;letter-spacing:normal!important}
+
+
+/* p105: kill per-word tap padding so color-segment joints match the print */
+[data-native-ab12="105"] .naRCanvas .naText .tapWord{padding-left:0!important;padding-right:0!important}
 .nativeAB12 .naRCanvas .naRField{font-size:20px!important;letter-spacing:normal!important}
 
 /* ---- p56-58 additions (page-scoped; appended to avoid mid-file merge conflicts) ---- */
 @font-face{font-family:FiraM;src:url('/assets/fonts/firasans-latin-500.ttf') format('truetype');font-weight:500;font-display:swap}
 @font-face{font-family:FiraR;src:url('/assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
+.nativeAB12[data-native-ab12="54"] .naRCanvas .naText.naR.naFiraR,
+.nativeAB12[data-native-ab12="55"] .naRCanvas .naText.naR.naFiraR,
 .nativeAB12[data-native-ab12="56"] .naRCanvas .naText.naR.naFiraR,
 .nativeAB12[data-native-ab12="57"] .naRCanvas .naText.naR.naFiraR,
 .nativeAB12[data-native-ab12="58"] .naRCanvas .naText.naR.naFiraR{font-family:FiraR,FiraSans,'Trebuchet MS',sans-serif!important;font-weight:400;-webkit-text-stroke:.35px currentColor!important}
+.nativeAB12[data-native-ab12="54"] .naRCanvas .naText.naR.naFiraM,
+.nativeAB12[data-native-ab12="55"] .naRCanvas .naText.naR.naFiraM,
 .nativeAB12[data-native-ab12="56"] .naRCanvas .naText.naR.naFiraM,
 .nativeAB12[data-native-ab12="57"] .naRCanvas .naText.naR.naFiraM,
 .nativeAB12[data-native-ab12="58"] .naRCanvas .naText.naR.naFiraM{font-family:FiraM,FiraSans,'Trebuchet MS',sans-serif!important;font-weight:500;-webkit-text-stroke:0!important}
@@ -64,6 +72,8 @@
 .nativeAB12[data-native-ab12="58"] .naRCanvas .naRField.sl{border-bottom-color:transparent!important}
 .nativeAB12[data-native-ab12="57"] .naRCanvas .naRWord.ul.on::after{top:23px;height:2.5px}
 @font-face{font-family:FiraB;src:url('/assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700;font-display:swap}
+.nativeAB12[data-native-ab12="54"] .naRCanvas .naText.naR.naFiraB,
+.nativeAB12[data-native-ab12="55"] .naRCanvas .naText.naR.naFiraB,
 .nativeAB12[data-native-ab12="56"] .naRCanvas .naText.naR.naFiraB,
 .nativeAB12[data-native-ab12="57"] .naRCanvas .naText.naR.naFiraB,
 .nativeAB12[data-native-ab12="58"] .naRCanvas .naText.naR.naFiraB{font-family:FiraB,FiraSans,'Trebuchet MS',sans-serif!important;font-weight:700!important;-webkit-text-stroke:0!important}
@@ -71,12 +81,29 @@
 .nativeAB12[data-native-ab12="57"] .naRCanvas .naDot{width:15px!important;height:15px!important;border-width:2px!important;border-color:#c9c7b4!important}
 @font-face{font-family:FiraS;src:url('/assets/fonts/firasans-latin-600.woff2') format('woff2');font-weight:600;font-display:swap}
 @font-face{font-family:DroidB;src:url('/assets/fonts/droid-serif-700.woff2') format('woff2');font-weight:700;font-display:swap}
+.nativeAB12[data-native-ab12="54"] .naRCanvas .naText.naR.naFiraS,
+.nativeAB12[data-native-ab12="55"] .naRCanvas .naText.naR.naFiraS,
 .nativeAB12[data-native-ab12="56"] .naRCanvas .naText.naR.naFiraS,
 .nativeAB12[data-native-ab12="57"] .naRCanvas .naText.naR.naFiraS,
 .nativeAB12[data-native-ab12="58"] .naRCanvas .naText.naR.naFiraS{font-family:FiraS,FiraSans,'Trebuchet MS',sans-serif!important;font-weight:600!important;-webkit-text-stroke:0!important}
+.nativeAB12[data-native-ab12="54"] .naRCanvas .naText.naR.naDB,
+.nativeAB12[data-native-ab12="55"] .naRCanvas .naText.naR.naDB,
 .nativeAB12[data-native-ab12="56"] .naRCanvas .naText.naR.naDB,
 .nativeAB12[data-native-ab12="57"] .naRCanvas .naText.naR.naDB,
 .nativeAB12[data-native-ab12="58"] .naRCanvas .naText.naR.naDB{font-family:DroidB,ABRangeDroid,DroidSerif,Georgia,serif!important;font-weight:700!important;-webkit-text-stroke:0!important}
+
+/* p55: verb-marking buttons (blue = trennbar, green = nicht trennbar) */
+.nativeAB12 .naRCanvas .naRMk{position:absolute;background:transparent;border:0;border-bottom:3px solid transparent;border-radius:2px;cursor:pointer;padding:0}
+.nativeAB12 .naRCanvas .naRMk.b{border-bottom-color:#6596c4}
+.nativeAB12 .naRCanvas .naRMk.g{border-bottom-color:#69bb58}
+
+/* ---- p54/p55 r2 additions ---- */
+@font-face{font-family:FiraC;src:url('/assets/fonts/firasanscond-latin-400.ttf') format('truetype');font-weight:400;font-display:swap}
+.nativeAB12[data-native-ab12="55"] .naRCanvas .naText.naR.naFiraC{font-family:FiraC,FiraSans,sans-serif!important}
+.nativeAB12[data-native-ab12="54"] .naRCanvas .naRDot{width:18px!important;height:18px!important;box-sizing:border-box!important;border:1px solid #b9bcae!important}
+.nativeAB12[data-native-ab12="54"] .naRCanvas .naText.naStrike54{text-decoration:line-through;text-decoration-color:#696c97;text-decoration-thickness:1px}
+.nativeAB12[data-native-ab12="54"] .naRCanvas .naText.naR.naBank54{font-family:FiraR,FiraSans,'Trebuchet MS',sans-serif!important;font-weight:400;-webkit-text-stroke:0!important}
+.naRCanvas .naField.naLined.naLinedRules{--la-rule:#b9c0c3;border-bottom:0!important}
 @font-face{font-family:DroidBI;src:url('/assets/fonts/droid-serif-700-italic.woff2') format('woff2');font-weight:700;font-style:italic;font-display:swap}
 .nativeAB12[data-native-ab12="58"] .naRCanvas .naText.naR.naDBI{font-family:DroidBI,DroidB,ABRangeDroid,Georgia,serif!important;font-weight:700!important;font-style:italic!important;-webkit-text-stroke:0!important}
 .nativeAB12[data-native-ab12="58"] .naRCanvas .naRField.sl{background:transparent!important;box-shadow:none!important}
