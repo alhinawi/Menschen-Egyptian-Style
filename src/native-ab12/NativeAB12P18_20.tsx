@@ -40,7 +40,7 @@ export function NativeAB12P18_20({page}:{page:string}){
   {audio('assets/ab-a12-cd2-track10.mp3',38,216,'2 10')}
   {art('globe',70,240,42,42)}
   {text(125,216,20,'a','naExL')}
-  {text(161,214,400,'Hören Sie und nummerieren Sie.')}
+  {text(161,214,400,'Hören Sie und nummerieren Sie.','naIns')}
   {circle('p18-nKirche',155,258,'Kirche Nummer')}
   {circle('p18-nSpielplatz',251,258,'Spielplatz Nummer')}
   <div className="naCNumPrint" style={{left:377,top:258}}>1</div>
@@ -57,7 +57,7 @@ export function NativeAB12P18_20({page}:{page:string}){
   {text(771,253,55,'Hafen','naF21')}
   {check('g1',850,242,{'p18-nKirche':'3','p18-nSpielplatz':'2','p18-nWald':'6','p18-nMeer':'5','p18-nCafé':'7','p18-nHafen':'4'},'naCheckCol')}
   {text(125,302,20,'b','naExL')}
-  {text(161,302,500,'Ergänzen Sie aus a. Notieren und vergleichen Sie.')}
+  <div className="naText naIns" style={{left:161,top:302,width:500}}><Words text="Ergänzen Sie aus "/><span className="naExL">a.</span><Words text=" Notieren und vergleichen Sie."/></div>
   <div style={{position:'absolute',left:150,top:335,width:825,height:32,background:'#f0ead6'}}/>
   <div className="naTFrame" style={{left:150,top:335,width:825,height:238}}/>
   <div className="naTCol" style={{left:443,top:335,height:238}}/>
@@ -180,11 +180,11 @@ export function NativeAB12P18_20({page}:{page:string}){
   <div className="naSide" style={{left:92,top:1098,fontSize:10,letterSpacing:1}}>WÖRTER</div>
   {title('4',120,154,600,'Wo bin ich?','naOB naNw')}
   {text(152,198,20,'a','naBold')}
-  {text(182,198,270,'Schreiben Sie Aufgaben wie in')}
+  {text(182,198,270,'Schreiben Sie Aufgaben wie in','naIns')}
   {text(463,198,20,'3:','naBlue naBold')}
-  {text(485,198,310,'Was sehen Sie? Was machen Sie dort?')}
+  {text(485,198,310,'Was sehen Sie? Was machen Sie dort?','naIns')}
   {text(152,224,20,'b','naBold')}
-  {text(181,224,520,'Tauschen Sie mit Ihrer Partnerin / Ihrem Partner. Sie/Er rät.')}
+  {text(181,224,520,'Tauschen Sie mit Ihrer Partnerin / Ihrem Partner. Sie/Er rät.','naIns')}
   {audio('assets/ab-a12-cd2-track11.mp3',55,316,'2 11')}
   {title('5',120,284,700,'Hören Sie Marlenes Podcast. Was ist falsch? Korrigieren Sie.','naOB naNw')}
   {text(152,324,20,'a','naBold')}
@@ -277,9 +277,9 @@ export function NativeAB12P18_20({page}:{page:string}){
   {check('g7',152,1008,{'p19-7a':'gehört','p19-7b':'hilft','p19-7c':'schmeckt','p19-7d':'gefallen','p19-7e':'gehören','p19-7f':'helfen','p19-7g':'schmecken'},'naCheckCol')}
   {title('8',120,1057,900,'Ergänzen Sie gehören/gefallen/danken/helfen/schmecken in der richtigen Form.','naOB naNw')}
   {text(146,1099,20,'a','naBold')}
-  {text(170,1099,150,'Welcher Stadtteil')}
+  {text(170,1099,150,'Welcher Stadtteil','naIns')}
   {art('gefaellt8',322,1092,56,38)}
-  {text(383,1099,330,'dir besonders gut? – Ich mag das Lehel.')}
+  {text(383,1099,330,'dir besonders gut? – Ich mag das Lehel.','naIns')}
   {text(146,1126,20,'b','naBold')}
   {text(170,1126,36,'Wir')}
   {field('p19-8b',208,1122,129,'Verb 8b')}

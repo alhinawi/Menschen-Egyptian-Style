@@ -47,7 +47,7 @@ export function NativeAB12P21_24({page}:{page:string}){
   {text(425,423,560,'Sie wichtige Informationen und planen Ihre Aussage. Das Sprechen ist','naF17')}
   {text(425,445,560,'dann leichter.','naF17')}
   {title('2',104,511,900,'Arbeiten Sie zu dritt. Schreiben Sie einen Fragebogen. Sprechen und notieren Sie.','naOB naLS')}
-  {text(170,566,300,'Was brauchen Sie in Ihrem Stadtteil?','naD19 naItalic')}
+  {text(170,566,300,'Was brauchen Sie in Ihrem Stadtteil?','naD19 naIns naInsB')}
   <div className="naTFrame" style={{left:170,top:595,width:730,height:169}}/>
   {[647,676,705,735].map(y=><div key={y} className="naTRule naTLine" style={{left:170,top:y,width:730}}/>)}
   {[353,535,717].map(x=><div key={x} className="naTCol naTLine" style={{left:x,top:595,height:169}}/>)}
@@ -63,11 +63,11 @@ export function NativeAB12P21_24({page}:{page:string}){
   {art('bubble1',125,782,209,89)}
   {art('bubble2',378,788,483,98)}
   {text(110,940,371,'TRAINING: AUSSPRACHE','naHead2 naNw')}
-  {text(502,945,230,'Vokale: langes „e“ und „i“','naS19 naItalic')}
+  {text(502,945,230,'Vokale: langes „e“ und „i“','naS19 naIns naInsI')}
   <div style={{position:'absolute',left:734,top:959,width:228,height:2,background:'#f8b25e'}}/>
   {audio('assets/ab-a12-cd2-track12.mp3',46,1008,'2 12')}
   {title('1',107,1000,540,'Was hören Sie: langes „e“ oder „i“?','naOB naLS')}
-  {text(154,1031,140,'Kreuzen Sie an.','naD19')}
+  {text(154,1031,140,'Kreuzen Sie an.','naD19 naIns')}
   {text(184,1072,20,'e','naSmall naItalic')}
   {text(230,1068,20,'i','naSmall naItalic')}
   {text(330,1072,20,'e','naSmall naItalic')}
