@@ -46,7 +46,7 @@ export function NativeAB12P27({page}:{page:string}){
   {check('g2',980,400,{'p27-2a':'neben|vor|hinter|an','p27-2b':'dem','p27-2c':'zwischen','p27-2d':'den'})}
   {sect(102,451,'… Zugehörigkeit ausdrücken (Genitiv + Possessivartikel sein und ihr):','L14')}{conf('s3',455)}
   {stext(102,477,300,'Vanilla wohnt neben Otto. Vanilla ist')}{field('p27-3a',403,472,156,'3a')}{stext(576,477,90,'Nachbarin.')}
-  {stext(100,496,20,'■','naMark')}{stext(124,499,238,'Wie findest du Vanillas Haus?')}{stext(366,505,20,'▲','naTri')}{field('p27-3b',381,496,115,'3b')}{stext(504,499,180,'Haus finde ich super,')}
+  {stext(100,496,20,'■','naMark')}{stext(117,499,238,'Wie findest du Vanillas Haus?')}{stext(364,505,20,'▲','naTri')}{field('p27-3b',381,496,115,'3b')}{stext(504,499,180,'Haus finde ich super,')}
   {stext(102,523,40,'aber')}{field('p27-3c',141,519,102,'3c')}{stext(249,525,240,'Garten mag ich nicht so gern.')}
   {check('g3',980,519,{'p27-3a':'seine','p27-3b':'ihr','p27-3c':'ihr'})}
   {sect(102,571,'… sagen, wem etwas gefällt/gehört und wem ich helfe/danke','')}{conf('s4',575)}
@@ -71,7 +71,7 @@ export function NativeAB12P27({page}:{page:string}){
   {stext(145,1190,880,'Was ist bei Ihnen in der Nähe? Ein Bahnhof, eine U-Bahn- oder Bus-Haltestelle, ein','naItemB')}
   {stext(145,1217,880,'Restaurant …? Wählen Sie und beschreiben Sie den Weg von Ihnen zu Hause zu diesem Ort.','naItemB')}
   {art('hw2',143,1259,397,28)}
-  {text(780,1385,150,'siebenundzwanzig','naFooter')}{text(942,1385,10,'|','naFooter')}{text(961,1385,25,'27','naFooter')}
+  {text(780,1385,150,'siebenundzwanzig','naFooter')}<div className="naBarV" style={{left:944,top:1389,width:1,height:14}}/>{text(961,1388,25,'27','naFooter naFootNum')}
   {art('modul',985,1385,86,23)}
  </div></div>;
 }
