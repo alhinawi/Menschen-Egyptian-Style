@@ -1,1 +1,6 @@
-{"keep": [[0, 0, 1072, 200], [200, 395, 1000, 525], [205, 585, 1000, 765], [840, 825, 1050, 925], [600, 1085, 1040, 1300], [820, 540, 1000, 580]], "paper0": [253, 254, 250], "checks": {"task7b": [230, 1052]}, "compact": ["task7b"], "adj": [{"cy": 1178.5, "tol": 0.3, "set": {"b": 1, "f": 17.6}}]}
+{
+ "keep": [[0, 0, 1072, 1518]],
+ "fieldadj": {},
+ "checks": {"task7b": [250, 1052]},
+ "notes": ["7b row a printed 4-circle anchor; inputs b-e (2,3,5,1) aligned to measured printed rings, border transparent.", "7a ovals + printed examples kept as ink; tasks 6/8/9 partner/cut-out - no fields."]
+}
