@@ -328,3 +328,19 @@
 [data-native-ab12="102"] .naCanvas .naGrid102 rect{fill:#dff0f7}
 [data-native-ab12="102"] .naCanvas .naBullet102{position:absolute;width:6px;height:6px;border-radius:50%}
 [data-native-ab12="102"] .naCanvas .naText span[role=button]{padding:0}
+[data-native-ab12="103"] .naCanvas .naBand103{position:absolute;background:#eee9ce}
+[data-native-ab12="103"] .naCanvas .naText.naBandT103{font-family:DroidSerifB,DroidSerif,Georgia,serif;font-weight:700;color:#0c0a07}
+[data-native-ab12="103"] .naCanvas .naText.naLT103{font-family:DroidSerif,Georgia,serif;font-weight:400;color:#26221a}
+[data-native-ab12="103"] .naCanvas .naText.naColH103{font-family:DroidSerifB,DroidSerif,Georgia,serif;font-weight:700;color:#1a1610}
+[data-native-ab12="103"] .naCanvas .naText.naNote103{font-family:DroidSerif,Georgia,serif;font-weight:400;font-style:italic;color:#4a4c4f}
+[data-native-ab12="103"] .naCanvas .naText.naFoot103{font-family:DroidSerif,Georgia,serif;font-size:13px;color:#1e2022}
+[data-native-ab12="103"] .naCanvas .naText.naFootD103{font-family:DroidSerif,Georgia,serif;font-size:13px;color:#1e2022}
+[data-native-ab12="103"] .naCanvas .naText.naFootB103{font-family:'Times New Roman',Times,serif;font-weight:700;font-size:15px;color:#36393b}
+[data-native-ab12="103"] .naCanvas .naGrid103{position:absolute;left:0;top:0;width:807px;height:1094px;pointer-events:none}
+[data-native-ab12="103"] .naCanvas .naGrid103 rect{fill:#dff0f7}
+[data-native-ab12="103"] .naCanvas .naText.naCell103{font-family:DroidSerif,Georgia,serif;font-weight:400;color:#33373d}
+[data-native-ab12="103"] .naCanvas .naText.naRed103{font-family:DroidSerif,Georgia,serif;font-weight:400;color:#b8261a}
+[data-native-ab12="103"] .naCanvas .naText .naRed103{color:#b8261a}
+[data-native-ab12="103"] .naCanvas .naText.naRedB103{font-family:DroidSerifB,DroidSerif,Georgia,serif;font-weight:700;color:#b8261a}
+[data-native-ab12="103"] .naCanvas .naText .naBold103{font-family:DroidSerifB,DroidSerif,Georgia,serif;font-weight:700}
+[data-native-ab12="103"] .naCanvas .naText .naIt103{font-style:italic}
