@@ -94,6 +94,11 @@
 [data-native-ab12="10"] .naCanvas .naText.naWord10,[data-native-ab12="10"] .naCanvas .naText.naSep10{font-family:FiraSans,'Trebuchet MS',sans-serif!important;font-size:17px!important;letter-spacing:0!important}
 [data-native-ab12="10"] .naCanvas .naDot{width:18px!important;height:18px!important;border:2px solid #c0c3af!important}
 .naCanvas .naPipe9{position:absolute;width:1.5px;height:16px;background:#3a5375}
+.naCanvas .naBankRow9{position:absolute;white-space:nowrap;font:17px/24px FiraSans,'Trebuchet MS',sans-serif;color:#3a5375;z-index:3}
+.naCanvas .naBankRow9 .naW9i{display:inline-block;background:transparent;border:0!important;padding:0;margin:0;font:inherit;line-height:inherit;color:inherit;cursor:pointer;min-height:0!important;text-align:left}
+.naCanvas .naBankRow9 .naW9i.on{background:#fff35c}
+.naCanvas .naBankRow9 .naW9mi{background:#fff35c;padding:0 3px 0 5px}
+.naCanvas .naBankRow9 .naPipe9i{display:inline-block;width:1px;height:12px;margin:0 7px;padding:0;background:#6d7fa3;vertical-align:baseline}
 .naCanvas .naBand9w{position:absolute;background:#fcfcf0}
 .naCanvas .naStrike9{position:absolute;background:#3a5375;z-index:3}
 .naCanvas .naStrike10{position:absolute;background:#2a3c6e;z-index:3}
