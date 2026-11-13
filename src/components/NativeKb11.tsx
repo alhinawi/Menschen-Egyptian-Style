@@ -78,6 +78,10 @@ function Inner({data}:{data:NativePage}){
    <ClipMarkers book="kb-a11" page={data.page}/>
    {data.audio.map(a=><button key={a.id} data-audio-src={a.src} {...(a.task?{'data-task':a.task}:{})} className="nkbListen" style={pos(a.x,a.y,a.w,a.h)} aria-label={a.label||('Originalaudio '+a.id)} onClick={()=>play(a.id)}/>)}
    {((data as any).neutral||[]).map((n:[string,number,number])=><div key={'n'+n[0]} className="nkbCheck nkbCheckLm" style={{left:n[1]/W*100+'%',top:n[2]/H*100+'%'}}><CheckButton onClick={()=>setSaved(s=>({...s,[n[0]]:true}))}></CheckButton><output>{saved[n[0]]?'Gespeichert':''}</output></div>)}
+   {(data.marks||[]).map(m=><div key={'m'+m.id} style={{display:'contents'}}>
+    {m.spots.map(s=>{const on=v[m.id+'-'+s.id]==='1';const graded=res[m.id]!==undefined;const isVerb=m.correct.includes(s.id);return <button key={s.id} type="button" className={'nkbMark'+(on?' on':'')+(graded?(isVerb?(on?' good':' miss'):(on?' bad':'')):'')} style={pos(s.x,s.y,s.w,s.h)} aria-pressed={on} onClick={()=>set(m.id+'-'+s.id,on?'':'1')}/>})}
+    <div className="nkbCheck nkbCheckLm" style={{left:m.check[0]/W*100+'%',top:m.check[1]/H*100+'%'}}><CheckButton onClick={()=>setRes(r=>({...r,[m.id]:m.correct.every(id=>v[m.id+'-'+id]==='1')&&m.spots.every(s=>(v[m.id+'-'+s.id]==='1')===m.correct.includes(s.id))}))}></CheckButton><output>{res[m.id]===undefined?'':res[m.id]?'✓ Richtig!':'Noch einmal'}</output></div>
+   </div>)}
    {groups.map(g=><div key={g} className={"nkbCheck"+(data.compact?.includes(g)?" nkbCompact":"")} style={checkPos(g)}><CheckButton onClick={()=>grade(g)}></CheckButton><output>{data.fields.filter(f=>f.group===g&&f.answer!==undefined).every(f=>res[f.id]!==undefined)?(data.fields.filter(f=>f.group===g&&f.answer!==undefined).every(f=>res[f.id])?'✓ Richtig!':'Noch einmal'):''}</output></div>)}
   </div>
   {data.audio.length>0&&<div className="nkbAudio">{data.audio.map(a=><label key={a.id}><span>{a.label||a.id}</span><audio ref={el=>{players.current[a.id]=el}} controls preload="none" src={a.src}/></label>)}</div>}

@@ -209,3 +209,9 @@
 .nkb[data-native-page="41"] .nkbLine.nkbB{font-weight:500}
 .nkb[data-native-page="75"] .nkbCanvas input[type=text].nkbField.nkbUl{border-bottom:1.5px solid #a39d85!important}
 .nkb[data-native-page="77"] .nkbCanvas input[type=text].nkbField.nkbUl{border-bottom:1.5px solid #a39d85!important}
+/* tap-to-mark spots over printed words (data.marks) */
+.nkbMark{position:absolute;z-index:9;background:transparent;border:0;border-radius:8%;cursor:pointer;padding:0;margin:0!important;min-width:0!important;min-height:0!important}
+.nkbMark.on{background:rgba(255,245,56,.5)}
+.nkbMark.good{background:rgba(46,160,67,.45)}
+.nkbMark.bad{background:rgba(208,58,58,.45)}
+.nkbMark.miss{outline:2px dashed rgba(208,58,58,.75);outline-offset:1px}
