@@ -153,3 +153,7 @@
 .nkb[data-native-page="45"] .nkbLine{font-family:KbDroid,serif;transform:none!important}
 .nkb[data-native-page="45"] .nkbLine:is(.nkbSans,.nkbB){font-family:KbFira,sans-serif}
 .nkb[data-native-page="45"] .nkbLine.nkbB{font-weight:500}
+
+.nkb[data-native-page="46"] .nkbLine{font-family:KbDroid,serif;transform:none!important}
+.nkb[data-native-page="46"] .nkbLine:is(.nkbSans,.nkbB){font-family:KbFira,sans-serif}
+.nkb[data-native-page="46"] .nkbLine.nkbB{font-weight:500}
