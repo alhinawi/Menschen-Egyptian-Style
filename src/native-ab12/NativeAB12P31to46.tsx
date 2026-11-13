@@ -234,8 +234,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {art('9',623,723,184,70)}
   {art('10',868,739,83,174)}
   {art('16',646,1225,310,71)}
-  {rect(1059,1381,12,33,'#d3cbad')}
-  {lin(1066,0,5,307,'#84a466')}
+  {art('modul-tab',1000,1384,71,32)}
   {lin(444,112,516,3,'#b3d33f')}
   {lin(170,376,140,7,'#cca424')}
   {lin(530,378,236,6,'#ca9f21')}
@@ -262,7 +261,6 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(638,1176,250,'Sie auch vor dem Spiegel.','naNw')}
   {text(101,1223,305,'2 Ergänzen Sie „o“ oder „u“.','naNw')}
   {text(813,1389,169,'dreiunddreißig | 33','naFooter')}
-  {text(1067,1389,3,'|','naFooter')}
   {field('p33-a2_1',166,1271,39,'Lücke 1')}
   {field('p33-a2_2',283,1271,38,'Lücke 2')}
   {field('p33-a2_3',377,1271,43,'Lücke 3')}
