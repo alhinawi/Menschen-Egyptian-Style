@@ -1299,11 +1299,11 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(142,568,92,'Star der, -s','naNw')}
   {text(538,581,90,'geheiratet','naNw')}
   {text(142,601,150,'ab·schließen, hat','naNw')}
-  {text(527,601,151,'laufen, du läufst,','naNw')}
+  {text(527,607,151,'laufen, du läufst,','naNw')}
   {text(153,627,121,'abgeschlossen','naNw')}
   {text(539,628,70,'er läuft,','naNw')}
   {text(153,653,141,'eine Ausbildung','naNw')}
-  {text(539,658,102,'ist gelaufen','naNw')}
+  {text(539,653,102,'ist gelaufen','naNw')}
   {text(153,679,101,'abschließen','naNw')}
   {text(538,680,206,'A/CH: rennen, ist gerannt','naNw naGray')}
   {text(142,705,133,'an·melden, hat','naNw')}
@@ -1319,9 +1319,9 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(153,839,68,'er wird,','naNw')}
   {text(528,852,42,'ohne','naNw')}
   {text(154,865,110,'ist geworden','naNw')}
-  {text(141,885,143,'wollen, ich will,','naNw')}
-  {text(153,911,151,'du willst, er will,','naNw')}
-  {text(153,937,99,'hat gewollt','naNw')}
+  {text(141,890,143,'wollen, ich will,','naNw')}
+  {text(153,916,151,'du willst, er will,','naNw')}
+  {text(153,942,99,'hat gewollt','naNw')}
   {text(142,977,89,'unbedingt','naNw')}
   {text(142,1001,133,'auf keinen Fall','naNw')}
   {title('2',100,1106,760,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naGB')}
