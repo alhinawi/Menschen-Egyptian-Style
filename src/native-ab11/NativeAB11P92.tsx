@@ -25,14 +25,14 @@ export function NativeAB11P92(){
  if(it.k==='badge')return <div key={i} className="p92Badge" style={pos}>{it.t}</div>;
  if(it.k==='side')return <div key={i} className="p92Side" style={pos}>{it.t}</div>;
  if(it.k==='speaker')return <div key={i} className={'p92Speaker '+it.color} style={pos}/>;
- if(it.k==='open')return <textarea key={i} className="p92Field p92Open" aria-label="8b: eigene Tagebucheinträge" data-native-field={it.id} style={pos} value={values[it.id]||''} onChange={e=>set(it.id,e.target.value)}/>;
- if(it.k==='radio')return <input key={i} type="radio" className={'p92Radio'+(checked[it.group]&&(!values[it.name]||values[it.name]===it.value)?(values[it.name]===it.answer?' correct':' wrong'):'')} data-native-radio={it.id} name={it.name} value={it.value} aria-label={it.name+': '+it.value} style={pos} checked={values[it.name]===it.value} onChange={()=>{set(it.name,it.value);C(c=>({...c,u9:false}))}}/>;
+ if(it.k==='open')return <textarea key={i} className="p92Field p92Open" aria-label="8b: eigene Tagebucheinträge" data-native-field={`ab11-p92-${it.id}`} style={pos} value={values[it.id]||''} onChange={e=>set(it.id,e.target.value)}/>;
+ if(it.k==='radio')return <input key={i} type="radio" className={'p92Radio'+(checked[it.group]&&(!values[it.name]||values[it.name]===it.value)?(values[it.name]===it.answer?' correct':' wrong'):'')} data-native-radio={`ab11-p92-${it.id}`} name={`ab11-p92-${it.name}`} value={it.value} aria-label={it.name+': '+it.value} style={pos} checked={values[it.name]===it.value} onChange={()=>{set(it.name,it.value);C(c=>({...c,u9:false}))}}/>;
  if(it.k==='field'){
  const graded=checked[it.group]&&it.answer;
  const status=graded?(it.answer.split('|').some((a:string)=>normalize(values[it.id]||'')===normalize(a))?' correct':' wrong'):'';
- return <input key={i} data-native-field={it.id} className={'p92Field'+status+(it.group==='u8a'?' p92NotebookField':'')} aria-label={it.id} aria-invalid={status===' wrong'} style={{...pos,'--p92-answer-size':(it.group==='u8a'?9:answerSize(values[it.id]||'',it.w))+'px'} as CSSProperties} value={values[it.id]||''} onChange={e=>set(it.id,e.target.value)}/>;
+ return <input key={i} data-native-field={`ab11-p92-${it.id}`} className={'p92Field'+status+(it.group==='u8a'?' p92NotebookField':'')} aria-label={it.id} aria-invalid={status===' wrong'} style={{...pos,'--p92-answer-size':(it.group==='u8a'?9:answerSize(values[it.id]||'',it.w))+'px'} as CSSProperties} value={values[it.id]||''} onChange={e=>set(it.id,e.target.value)}/>;
  }
- if(it.k==='check')return <div key={i} className="p92Check" data-native-task={it.group} style={pos}><CheckButton answers={Object.fromEntries(spec.items.filter((f:any)=>f.k==='field'&&f.group===it.group&&f.answer).map((f:any)=>[f.id,f.answer]))} onClick={()=>C(c=>({...c,[it.group]:true}))}/><output aria-live="polite">{checked[it.group]?(it.neutral?'Gespeichert':groupCorrect(it.group)?'Richtig!':'Noch einmal'):''}</output></div>;
+ if(it.k==='check')return <div key={i} className="p92Check" data-native-task={it.group} style={pos}><CheckButton answers={Object.fromEntries(spec.items.filter((f:any)=>f.k==='field'&&f.group===it.group&&f.answer).map((f:any)=>[`ab11-p92-${f.id}`,f.answer]))} onClick={()=>C(c=>({...c,[it.group]:true}))}/><output aria-live="polite">{checked[it.group]?(it.neutral?'Gespeichert':groupCorrect(it.group)?'Richtig!':'Noch einmal'):''}</output></div>;
  return null;
  })}</div></div>
 }
