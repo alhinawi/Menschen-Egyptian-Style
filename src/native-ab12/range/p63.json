@@ -1,0 +1,622 @@
+{
+ "w": 1072,
+ "h": 1449,
+ "items": [
+  {
+   "k": "a",
+   "n": "bg",
+   "x": 0,
+   "y": 0,
+   "w": 1072,
+   "h": 1449,
+   "alt": "Seite 63 Hintergrund"
+  },
+  {
+   "k": "t",
+   "x": 108,
+   "y": 112,
+   "s": 30.5,
+   "t": "TRAINING: LESEN",
+   "col": "#555555"
+  },
+  {
+   "k": "t",
+   "x": 149,
+   "y": 181,
+   "s": 21.5,
+   "t": "Tanya arbeitet als Au-pair-Mädchen bei Familie Pichler. Was soll Tanya machen?",
+   "col": "#383838",
+   "c": "naFiraB"
+  },
+  {
+   "k": "t",
+   "x": 150,
+   "y": 207,
+   "s": 19,
+   "t": "Sehen Sie die Bilder an. Lesen Sie dann den Notizzettel von Frau Pichler und ordnen Sie",
+   "col": "#383838",
+   "c": "naFiraM"
+  },
+  {
+   "k": "t",
+   "x": 149,
+   "y": 232,
+   "s": 19,
+   "t": "die Bilder den Sätzen zu. Achtung: Nicht alle Bilder passen.",
+   "col": "#383838",
+   "c": "naFiraM"
+  },
+  {
+   "k": "t",
+   "x": 250,
+   "y": 403,
+   "s": 15.0,
+   "t": "die Spülmaschine",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 276,
+   "y": 424,
+   "s": 14.5,
+   "t": "reparieren",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 447,
+   "y": 403,
+   "s": 15.0,
+   "t": "Sara nicht zu spät in den",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 459,
+   "y": 425,
+   "s": 14.5,
+   "t": "Kindergarten bringen",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 673,
+   "y": 404,
+   "s": 15.0,
+   "t": "auf Frau Leitners Anruf",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 734,
+   "y": 425,
+   "s": 14.5,
+   "t": "warten",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 219,
+   "y": 586,
+   "s": 15.0,
+   "t": "auf den Techniker warten",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 457,
+   "y": 587,
+   "s": 15.0,
+   "t": "einen Ausflug mit Sara",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 511,
+   "y": 608,
+   "s": 14.0,
+   "t": "machen",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 689,
+   "y": 587,
+   "s": 15.0,
+   "t": "Frau Leitner anrufen",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 755,
+   "y": 659,
+   "s": 17,
+   "t": "Sehen Sie die Bilder immer",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 753,
+   "y": 680,
+   "s": 17,
+   "t": "genau an. So verstehen Sie",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 754,
+   "y": 701,
+   "s": 17,
+   "t": "den Text besser.",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 107,
+   "y": 1014,
+   "s": 30.5,
+   "t": "TRAINING: AUSSPRACHE",
+   "col": "#555555"
+  },
+  {
+   "k": "t",
+   "x": 500,
+   "y": 1014,
+   "s": 18,
+   "t": "Satzmelodie (Zusammenfassung)",
+   "col": "#383838",
+   "c": "naDI"
+  },
+  {
+   "k": "t",
+   "x": 150,
+   "y": 1071,
+   "s": 21.5,
+   "t": "Hören Sie und ergänzen Sie die Satzmelodie:",
+   "col": "#383838",
+   "c": "naFiraB"
+  },
+  {
+   "k": "t",
+   "x": 691,
+   "y": 1071,
+   "s": 21.5,
+   "t": "Ergänzen Sie die Satzmelodie:",
+   "col": "#383838",
+   "c": "naFiraB"
+  },
+  {
+   "k": "t",
+   "x": 732,
+   "y": 1097,
+   "s": 21.0,
+   "t": "und sprechen Sie.",
+   "col": "#383838",
+   "c": "naFiraB"
+  },
+  {
+   "k": "t",
+   "x": 149,
+   "y": 1135,
+   "s": 18,
+   "t": "a",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 172,
+   "y": 1135,
+   "s": 18,
+   "t": "Deckt bitte den Tisch.",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 690,
+   "y": 1136,
+   "s": 18,
+   "t": "Räum auf,",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 148,
+   "y": 1160,
+   "s": 18,
+   "t": "b",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 172,
+   "y": 1160,
+   "s": 18,
+   "t": "Deckt ihr den Tisch?",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 689,
+   "y": 1161,
+   "s": 18,
+   "t": "wasch ab,",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 148,
+   "y": 1186,
+   "s": 18,
+   "t": "c",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 172,
+   "y": 1186,
+   "s": 18,
+   "t": "Wann deckt ihr den Tisch?",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 689,
+   "y": 1187,
+   "s": 18,
+   "t": "putz das Bad!",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 148,
+   "y": 1212,
+   "s": 18,
+   "t": "d",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 172,
+   "y": 1212,
+   "s": 18,
+   "t": "Ihr deckt den Tisch.",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 689,
+   "y": 1214,
+   "s": 18,
+   "t": "So geht das den ganzen Tag.",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 148,
+   "y": 1238,
+   "s": 18,
+   "t": "e",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 172,
+   "y": 1238,
+   "s": 18,
+   "t": "Ich will schlafen.",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 689,
+   "y": 1239,
+   "s": 18,
+   "t": "Was willst du noch?",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 149,
+   "y": 1263,
+   "s": 18,
+   "t": "f",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 172,
+   "y": 1264,
+   "s": 18,
+   "t": "Schläfst du noch?",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 690,
+   "y": 1265,
+   "s": 18,
+   "t": "Hast du noch nicht genug?",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 147,
+   "y": 1290,
+   "s": 18,
+   "t": "g",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 172,
+   "y": 1289,
+   "s": 18,
+   "t": "Warum schläfst du noch?",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 690,
+   "y": 1290,
+   "s": 18,
+   "t": "Hör endlich auf!",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 148,
+   "y": 1313,
+   "s": 18,
+   "t": "h",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 172,
+   "y": 1315,
+   "s": 18,
+   "t": "Schlaf nicht so lange.",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 690,
+   "y": 1316,
+   "s": 18,
+   "t": "Ich kann nicht mehr.",
+   "col": "#383838"
+  },
+  {
+   "k": "t",
+   "x": 149,
+   "y": 1354,
+   "s": 19,
+   "t": "Hören Sie noch einmal und sprechen Sie nach.",
+   "col": "#383838",
+   "c": "naFiraM"
+  },
+  {
+   "k": "t",
+   "x": 690,
+   "y": 1355,
+   "s": 19,
+   "t": "Hören Sie dann und vergleichen Sie.",
+   "col": "#383838",
+   "c": "naFiraM"
+  },
+  {
+   "k": "f",
+   "id": "p63-L1b",
+   "x": 410,
+   "y": 803,
+   "w": 30,
+   "hh": 24,
+   "c": "sl circ63",
+   "l": "Lesen 2. Punkt",
+   "a": "B",
+   "g": "g1"
+  },
+  {
+   "k": "f",
+   "id": "p63-L1c",
+   "x": 473,
+   "y": 848,
+   "w": 30,
+   "hh": 24,
+   "c": "sl circ63",
+   "l": "Lesen 3. Punkt",
+   "a": "F",
+   "g": "g1"
+  },
+  {
+   "k": "chk",
+   "g": "g1",
+   "x": 960,
+   "y": 922
+  },
+  {
+   "k": "f",
+   "id": "p63-melody-0",
+   "x": 412,
+   "y": 1190,
+   "w": 35,
+   "hh": 21,
+   "c": "sl melody63",
+   "l": "Satzmelodie 1",
+   "max": 2
+  },
+  {
+   "k": "f",
+   "id": "p63-melody-1",
+   "x": 353,
+   "y": 1216,
+   "w": 35,
+   "hh": 21,
+   "c": "sl melody63",
+   "l": "Satzmelodie 2",
+   "max": 2
+  },
+  {
+   "k": "f",
+   "id": "p63-melody-2",
+   "x": 331,
+   "y": 1241,
+   "w": 35,
+   "hh": 21,
+   "c": "sl melody63",
+   "l": "Satzmelodie 3",
+   "max": 2
+  },
+  {
+   "k": "f",
+   "id": "p63-melody-3",
+   "x": 332,
+   "y": 1267,
+   "w": 35,
+   "hh": 21,
+   "c": "sl melody63",
+   "l": "Satzmelodie 4",
+   "max": 2
+  },
+  {
+   "k": "f",
+   "id": "p63-melody-4",
+   "x": 399,
+   "y": 1293,
+   "w": 35,
+   "hh": 21,
+   "c": "sl melody63",
+   "l": "Satzmelodie 5",
+   "max": 2
+  },
+  {
+   "k": "f",
+   "id": "p63-melody-5",
+   "x": 366,
+   "y": 1319,
+   "w": 35,
+   "hh": 21,
+   "c": "sl melody63",
+   "l": "Satzmelodie 6",
+   "max": 2
+  },
+  {
+   "k": "f",
+   "id": "p63-melody-6",
+   "x": 786,
+   "y": 1139,
+   "w": 34,
+   "hh": 21,
+   "c": "sl melody63",
+   "l": "Satzmelodie 7",
+   "max": 2
+  },
+  {
+   "k": "f",
+   "id": "p63-melody-7",
+   "x": 780,
+   "y": 1165,
+   "w": 34,
+   "hh": 21,
+   "c": "sl melody63",
+   "l": "Satzmelodie 8",
+   "max": 2
+  },
+  {
+   "k": "f",
+   "id": "p63-melody-8",
+   "x": 814,
+   "y": 1191,
+   "w": 34,
+   "hh": 21,
+   "c": "sl melody63",
+   "l": "Satzmelodie 9",
+   "max": 2
+  },
+  {
+   "k": "f",
+   "id": "p63-melody-9",
+   "x": 940,
+   "y": 1217,
+   "w": 34,
+   "hh": 21,
+   "c": "sl melody63",
+   "l": "Satzmelodie 10",
+   "max": 2
+  },
+  {
+   "k": "f",
+   "id": "p63-melody-10",
+   "x": 872,
+   "y": 1243,
+   "w": 34,
+   "hh": 21,
+   "c": "sl melody63",
+   "l": "Satzmelodie 11",
+   "max": 2
+  },
+  {
+   "k": "f",
+   "id": "p63-melody-11",
+   "x": 934,
+   "y": 1269,
+   "w": 34,
+   "hh": 21,
+   "c": "sl melody63",
+   "l": "Satzmelodie 12",
+   "max": 2
+  },
+  {
+   "k": "f",
+   "id": "p63-melody-12",
+   "x": 841,
+   "y": 1295,
+   "w": 34,
+   "hh": 21,
+   "c": "sl melody63",
+   "l": "Satzmelodie 13",
+   "max": 2
+  },
+  {
+   "k": "f",
+   "id": "p63-melody-13",
+   "x": 884,
+   "y": 1321,
+   "w": 34,
+   "hh": 21,
+   "c": "sl melody63",
+   "l": "Satzmelodie 14",
+   "max": 2
+  },
+  {
+   "k": "au",
+   "x": 56,
+   "y": 1045,
+   "w": 46,
+   "h": 24,
+   "n": "audio0",
+   "src": "assets/ab-a12-track27.mp3",
+   "l": "CD2 · Track27"
+  },
+  {
+   "k": "au",
+   "x": 86,
+   "y": 1337,
+   "w": 46,
+   "h": 24,
+   "n": "audio1",
+   "src": "assets/ab-a12-track28.mp3",
+   "l": "CD2 · Track28"
+  },
+  {
+   "k": "au",
+   "x": 633,
+   "y": 1337,
+   "w": 46,
+   "h": 24,
+   "n": "audio2",
+   "src": "assets/ab-a12-track29.mp3",
+   "l": "CD2 · Track29"
+  }
+ ]
+}
