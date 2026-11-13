@@ -23,6 +23,7 @@
 
 /* p69: book body face is Droid Serif (AB A1.2 scan), not Times */
 @font-face{font-family:ABDroid69;src:url('/assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:ABFira500;src:url('/assets/fonts/firasans-latin-500.ttf') format('truetype');font-weight:500;font-display:swap}
 .nativeAB12[data-native-ab12="69"] .naW{font-family:ABDroid69,Georgia,serif!important;letter-spacing:-0.35px}
 .nativeAB12[data-native-ab12="69"] .naDroid69{font-family:ABDroid69,Georgia,serif!important;letter-spacing:-0.35px}
 .nativeAB12[data-native-ab12="69"] .naField{font-family:ABDroid69,Georgia,serif!important}
@@ -45,6 +46,10 @@
 .nativeAB12[data-native-ab12="72"] .naField{font-family:ABDroid69,Georgia,serif!important}
 .nativeAB12[data-native-ab12="72"] .naFieldBlank{text-align:center}
 .nativeAB12[data-native-ab12="72"] .naDroid72{font-family:ABDroid69,Georgia,serif!important;letter-spacing:-0.35px;color:#1f1c1e}
-.nativeAB12[data-native-ab12="72"] .naSk72 .naFitI{text-decoration:line-through}
-.nativeAB12[data-native-ab12="72"] .naStrikeBlue72 .naFitI{text-decoration:line-through}
-.nativeAB12[data-native-ab12="72"] .naStrikeRow{font-size:15px;font-family:ABDroid69,Georgia,serif}
+.nativeAB12[data-native-ab12="72"] .naHdr72{font-family:ABDroid69,Georgia,serif!important;letter-spacing:1px;color:#191717}
+.nativeAB12[data-native-ab12="72"] .naBank72,.nativeAB12[data-native-ab12="72"] .naStrip72{font-family:ABFira500,FiraSans,sans-serif!important}
+.nativeAB12[data-native-ab12="72"] .naPipe72{font-family:ABFira500,FiraSans,sans-serif!important;color:#605c37}
+.nativeAB12[data-native-ab12="72"] .naSk72 .naFitI{text-decoration:line-through;text-decoration-color:#576f99;text-decoration-thickness:1px}
+.nativeAB12[data-native-ab12="72"] .naStrikeBlue72 .naFitI{text-decoration:line-through;text-decoration-color:#576f99;text-decoration-thickness:1px}
+.nativeAB12[data-native-ab12="72"] .naStrikeRow{font-size:14px;font-family:ABDroid69,Georgia,serif;letter-spacing:-0.35px}
+.nativeAB12[data-native-ab12="72"] .naStrikeRow button.struck{text-decoration-color:#576f99;text-decoration-thickness:1px}
