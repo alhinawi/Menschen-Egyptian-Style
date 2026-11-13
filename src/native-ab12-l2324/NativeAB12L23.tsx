@@ -96,7 +96,7 @@ export function NativeAB12L23({page}:{page:string}){
   <div className="naTblCell naTblCellS" style={{left:109,top:147}}>Deutsch</div>
   <div className="naTblCell naTblCellS" style={{left:293,top:147}}>Englisch</div>
   <div className="naTblCell naTblCellS" style={{left:465,top:147}}>Meine Sprache oder andere Sprachen</div>
-  {text(108,167,40,'der ','naS14 naNw')}{art('orden',134,165,42,19)}
+  {text(108,167,40,'der ','naS14 naNw')}{art('orden',135,165,41,19)}
   {text(292,167,100,'the north','naS14 naNw')}
   {text(108,189,60,'der O','naS14 naNw')}{field('85-5-1',136,184,66,'Osten')}
   {text(292,189,100,'the east','naS14 naNw')}
