@@ -12,7 +12,7 @@ export function CheckButton({className='',onClickCapture,answers,...props}:Butto
  useEffect(()=>{const el=ref.current;return el?watchCheckPlacement(el):undefined},[]);
  useEffect(()=>{const el=ref.current;if(!el)return;let frame=0;
   const update=()=>{const r=el.getBoundingClientRect();if(!r.width)return;const scale=r.width/el.offsetWidth,page=el.closest('.page')||document.body;
-   const obstacles=[...page.querySelectorAll('input,select,textarea,button,.mDrawing')].filter(e=>e!==el&&!e.hasAttribute('hidden')&&getComputedStyle(e).visibility!=='hidden').map(e=>e.getBoundingClientRect()).filter(r=>r.width&&r.height);
+   const obstacles=[...page.querySelectorAll('input,select,textarea,button,output,.tapWord,.nativeWord,.hybridWord,.mDrawing')].filter(e=>e!==el&&!e.hasAttribute('hidden')&&getComputedStyle(e).visibility!=='hidden').map(e=>e.getBoundingClientRect()).filter(r=>r.width&&r.height);
    const pick=(s:number)=>{const c=[[r.left,r.top],[r.right-s,r.top],[r.left,r.bottom-s],[r.right-s,r.bottom-s],[r.left+(r.width-s)/2,r.top+(r.height-s)/2]];return c.find(([x,y])=>obstacles.every(o=>x+s<=o.left||x>=o.right||y+s<=o.top||y>=o.bottom))};
    let size=Math.max(40,r.width),chosen=pick(size);
    if(!chosen&&size>r.width){size=r.width;chosen=pick(size)}

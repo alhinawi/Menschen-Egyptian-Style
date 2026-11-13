@@ -29,7 +29,7 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  const markSB=(x:number,base:number)=><div className="mText mMarkSq" style={{left:x,top:Y(base-11),width:11,height:11}}/>;
  const markTB=(x:number,base:number)=><div className="mText mMarkTr" style={{left:x,top:Y(base-11)}}/>;
  const listen=(n:string,x:number,y:number)=><button className="mListen" aria-label={'Originalaudio 1 '+n} style={{left:x,top:Y(y)}} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+parseInt(n)+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
- const radioG=(fid:string,group:string,val:string,x:number,y:number,label:string)=><input className="mRadio" data-native-radio={fid} type="radio" name={'native-ab11-'+page+'-'+group} aria-label={label} style={{left:x,top:Y(y)}} checked={v[group]===val} onChange={()=>set(group,val)}/>;
+ const radioG=(fid:string,group:string,val:string,x:number,y:number,label:string)=><input className="mRadio" data-native-radio={fid} data-value={val} type="radio" name={'native-ab11-'+page+'-'+group} aria-label={label} style={{left:x,top:Y(y)}} checked={v[group]===val} onChange={()=>set(group,val)}/>;
  const side=(s:string,y:number)=><div className="nabSide" style={{left:100,top:Y(y)}}>{s}</div>;
  const sq='▪';
  const footerW:Record<string,string>={'79':'neunundsiebzig','80':'achtzig','81':'einundachtzig','82':'zweiundachtzig','83':'dreiundachtzig','84':'vierundachtzig','85':'fünfundachtzig','86':'sechsundachtzig','87':'siebenundachtzig'};
