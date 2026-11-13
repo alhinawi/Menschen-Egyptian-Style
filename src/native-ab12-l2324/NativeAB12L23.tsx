@@ -4,6 +4,7 @@ import {LineMatching} from '../exercises/LineMatching';
 export function NativeAB12L23({page}:{page:string}){
  const c=useNativeCanvas(page);
  const {text,art,field,rule,ruleT,dot,check,title,kb,hand,audio}=c;const set=c.set;
+ const ruleS=(x0:number,y0:number,x1:number,y1:number)=>{const dx=x1-x0,dy=y1-y0;return <div className="naRule naRuleT" style={{left:x0,top:y0,width:Math.hypot(dx,dy),transform:`rotate(${Math.atan2(dy,dx)}rad)`,transformOrigin:'0 50%'}}/>};
  return <Canvas page={page} root={c.root} player={c.player} scale={c.scale}>
  {page==='84'&&<>
   {art('hero',8,30,742,60)}
@@ -348,6 +349,79 @@ export function NativeAB12L23({page}:{page:string}){
   {art('modul8-tab',0,1047,48,20)}
   <div className="naText naFoot88" style={{left:60,top:1050,width:200}}>88&nbsp;&nbsp;|&nbsp;&nbsp;achtundachtzig</div>
   <div className="naText naFoot88" style={{left:420,top:1046,width:180,textAlign:'right'}}>www.hueber.de/menschen/lernen</div>
+ </>}
+ {page==='90'&&<>
+  {art('hero',0,2,807,80)}
+  {kb(60,133,'KB 2')}
+  <div className="naNum90" style={{left:90,top:127}}>1</div>
+  {text(124,130,210,'Ergänzen Sie die Einladung.','naT90txt naNw',16.7)}
+  <div className="naSide naSideB" style={{left:67,top:159}}>WÖRTER</div>
+  <div className="naBank" style={{left:119,top:155,width:576,height:19}}/>
+  <div className="naBank88" style={{left:124,top:159}}><Words text="Bescheid | Fluss | geben | Getränke | grillen | vergessen | Wald | Wetter | "/><span className="naStrikeU"><Words text="wunderbar"/></span><Words text=" | zufrieden"/></div>
+  <div className="naStrip90" style={{left:120,top:195,width:573,height:10}}/>
+  {text(146,222,32,'Hallo!','naBookSerif naBk90 naNw',12.5)}
+  {text(146,236,60,'Ist es nicht','naBookSerif naBk90 naNw')}
+  <div className="naText naBookSerif naBk90 naNw" style={{left:207,top:238,width:56,fontSize:10.5}}><span className="naStrikeB"><Words text="wunderbar"/></span></div>
+  {text(265,236,266,'(a)? Für die Wochenenden haben wir ein Haus im','naBookSerif naBk90 naNw')}
+  {field('90-1b',535,225,120,'1 b')}{text(652,234,20,'(b)','naBookSerif naBk90 naNw')}
+  {text(145,252,236,'gefunden. Was für ein Glück! Wir sind super','naBookSerif naBk90 naNw')}
+  {field('90-1c',381,249,117,'1 c')}{text(504,252,18,'(c).','naBookSerif naBk90 naNw')}
+  {text(146,266,390,'Am Freitag, den 1. April würden wir das gern mit Euch feiern. Wir wollen','naBookSerif naBk90 naNw')}
+  {field('90-1d',539,263,117,'1 d')}{text(660,266,20,'(d).','naBookSerif naBk90 naNw')}
+  {text(146,282,115,'Hoffentlich spielt das','naBookSerif naBk90 naNw')}
+  {field('90-1e',262,282,123,'1 e')}{text(384,284,38,'(e) mit.','naBookSerif naBk90 naNw')}
+  {field('90-1f',424,275,114,'1 f')}{text(544,282,100,'(f) und Grillfleisch','naBookSerif naBk90 naNw')}
+  {text(146,300,246,'kaufen wir. Aber bringt doch bitte Salate mit!','naBookSerif naBk90 naNw')}
+  {text(147,314,175,'Und Zelte und Schlafsäcke nicht','naBookSerif naBk90 naNw')}
+  {field('90-1g',325,311,120,'1 g','naFieldNL')}{ruleS(325,326.4,445,336)}
+  {text(444,314,240,'(g)! Ihr könnt auch Badesachen mitbringen.','naBookSerif naBk90 naNw')}
+  {text(147,331,95,'Es gibt dort einen','naBookSerif naBk90 naNw')}
+  {field('90-1h',247,324,115,'1 h')}{text(366,331,84,'(h) in der Nähe,','naBookSerif naBk90 naNw')}
+  {text(147,363,91,'Kommt Ihr? Bitte','naBookSerif naBk90 naNw')}
+  {field('90-1i',242,355,120,'1 i')}{text(361,363,160,'(i) uns doch bis zum 15. März','naBookSerif naBk90 naNw')}
+  {field('90-1j',521,353,114,'1 j')}{text(640,363,20,'(j).','naBookSerif naBk88 naNw')}
+  {text(147,381,82,'Alisa und Leon','naBookSerif naBk90 naNw')}
+  {text(147,410,352,'P.S.„Wohin soll ich denn kommen?“ werdet Ihr Euch jetzt fragen.','naBookSerif naBk90 naNw',11.3)}
+  {text(147,426,320,'Ganz einfach: Die Wegbeschreibung findet Ihr im Anhang.','naBookSerif naBk90 naNw',11.3)}
+  {check('90-1',640,376,{'90-1b':'Wald','90-1c':'zufrieden','90-1d':'grillen','90-1e':'Wetter','90-1f':'Getränke','90-1g':'vergessen','90-1h':'Fluss','90-1i':'gebt','90-1j':'Bescheid'})}
+  {kb(53,483,'KB 3')}
+  <div className="naNum90" style={{left:83,top:476}}>2</div>
+  {text(118,479,265,'Welcher Tag ist heute? Notieren Sie.','naT90txt naNw',16.1)}
+  <div className="naSide naSideB" style={{left:61,top:510}}>STRUKTUREN</div>
+  {text(115,508,85,'Heute ist …','naBookSerif naBk88 naNw',14)}
+  {text(113,540,12,'a','naBookSerif naBk88',11)}{text(131,540,36,'03.09.','naBookSerif naBk88 naNw',11)}
+  {art('hand-2a',182,542,242,14)}
+  {ruleS(185,552.8,718,564.7)}
+  {text(113,558,12,'b','naBookSerif naBk88',11)}{text(131,558,36,'07.12.','naBookSerif naBk88 naNw',11)}
+  {field('90-2b',183,552,531,'2 b','naFieldNL')}{ruleS(183,572.2,714,584.1)}
+  {text(113,579,12,'c','naBookSerif naBk88',11)}{text(131,579,36,'15.01.','naBookSerif naBk88 naNw',11)}
+  {field('90-2c',180,572,534,'2 c','naFieldNL')}{ruleS(180,592.4,714,603.2)}
+  {text(113,597,12,'d','naBookSerif naBk88',11)}{text(131,597,36,'28.05.','naBookSerif naBk88 naNw',11)}
+  {field('90-2d',180,591,534,'2 d','naFieldNL')}{ruleS(180,611.0,714,623.2)}
+  {check('90-2',645,628,{'90-2b':'der siebte Zwölfte|der siebte Dezember','90-2c':'der fünfzehnte Erste|der fünfzehnte Januar','90-2d':'der achtundzwanzigste Fünfte|der achtundzwanzigste Mai'})}
+  {kb(50,649,'KB 3')}
+  <div className="naNum90" style={{left:79,top:642}}>3</div>
+  {text(111,645,175,'Wann …? Notieren Sie.','naT90txt naNw',17.5)}
+  <div className="naSide naSideB" style={{left:55,top:700}}>STRUKTUREN</div>
+  {text(108,672,14,'a','naBookSerif naBk88',13)}{text(240,675,14,'b','naBookSerif naBk88',13)}{text(422,679,14,'c','naBookSerif naBk88',13)}{text(613,683,14,'d','naBookSerif naBk88',13)}
+  {art('foto-a',122,675,108,145)}{art('foto-b',254,678,120,143)}{art('foto-c',436,682,128,147)}{art('foto-d',627,686,95,147)}
+  {text(125,828,40,'1. August','naBookSerif naBk88 naNw',8.5)}
+  {text(254,831,52,'26. Oktober','naBookSerif naBk88 naNw',8.5)}
+  {text(444,833,48,'3. Oktober','naBookSerif naBk88 naNw',8.5)}
+  {text(630,838,60,'24. Dezember –','naBookSerif naBk88 naNw',8.5)}
+  {text(629,851,60,'26. Dezember','naBookSerif naBk88 naNw',8.5)}
+  {text(107,871,14,'a','naBookSerif naBk88',14)}{text(125,871,300,'Wann ist der Bundesfeiertag in der Schweiz?','naBookSerif naBk88 naNw',14)}
+  {art('hand-3a',124,891,98,12)}
+  {ruleS(124,903.2,718,915.3)}{text(719,905,10,'.','naBookSerif naBk88 naNw naPrd')}
+  {text(106,909,14,'b','naBookSerif naBk88',14)}{text(124,909,355,'Wann feiert man den Nationalfeiertag in Österreich?','naBookSerif naBk88 naNw',14)}
+  {field('90-3b',123,925,594,'3 b','naFieldNL')}{ruleS(123,945.3,717,953.5)}{text(718,946,10,'.','naBookSerif naBk88 naNw naPrd')}
+  {text(105,946,14,'c','naBookSerif naBk88',14)}{text(124,946,270,'Wann ist der Tag der Deutschen Einheit?','naBookSerif naBk88 naNw',14)}
+  {field('90-3c',123,961,591,'3 c','naFieldNL')}{ruleS(123,980.9,714,994.1)}{text(715,986,10,'.','naBookSerif naBk88 naNw naPrd')}
+  {text(104,985,14,'d','naBookSerif naBk88',14)}{text(124,985,320,'Wann feiert man in Deutschland Weihnachten?','naBookSerif naBk88 naNw',14)}
+  {field('90-3d',123,999,591,'3 d','naFieldNL')}{ruleS(123,1018.6,714,1033.3)}{text(715,1024,10,'.','naBookSerif naBk88 naNw naPrd')}
+  {check('90-3',648,996,{'90-3b':'Am sechsundzwanzigsten Oktober','90-3c':'Am dritten Oktober','90-3d':'Vom vierundzwanzigsten bis zum sechsundzwanzigsten Dezember'})}
+  {art('modul8-tab',0,1047,48,20)}
+  <div className="naText naFoot88" style={{left:52,top:1047,width:200}}>90&nbsp;&nbsp;|&nbsp;&nbsp;neunzig</div>
  </>}
  </Canvas>;
 }
