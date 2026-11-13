@@ -11,7 +11,14 @@ const server=http.createServer((req,res)=>{
  await new Promise(r=>server.listen(5297,'127.0.0.1',r));
  const browser=await chromium.launch({executablePath:'/usr/bin/google-chrome-stable',args:['--no-sandbox']});
  try{
-  for(const no of [86,87,88]){
+  {
+   const p=await browser.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
+   await p.goto('http://127.0.0.1:5297/ab-a12-l21-24.html#86');
+   await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
+   await p.locator('[data-native-ab12="86"]').waitFor();
+   await p.close();console.log('p86: native L23 page renders');
+  }
+  for(const no of [87,88]){
    const p=await browser.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
    await p.goto('http://127.0.0.1:5297/ab-a12-l21-24.html#'+no);
    await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
