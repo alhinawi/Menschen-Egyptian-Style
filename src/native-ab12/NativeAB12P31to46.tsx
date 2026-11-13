@@ -1882,7 +1882,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(822,535,20,'!"','naNw')}
   {stext(887,542.5,85,'_/6 Punkte',{},'naNw naPkt46')}
   {title('3',112,604.5,490,'Ergänzen Sie sollen in der richtigen Form.','naGB')}
-  {text(158,642.2,12,'a','naNw naEx3q')}{lin(181,651,9,9,'#404492')}{text(200.3,642.2,34,'Wir','naNw naEx3q naE3w')}{art('sollen',228,644,52,22)}{text(279,642.2,330,'viele Orangen essen. Ist das richtig?','naNw naEx3q')}{text(679,639,215,'Ja, sie sind sehr gesund.','naNw')}
+  {text(158,642.2,12,'a','naNw naEx3q')}{lin(181,651,9,9,'#404492')}{text(200.3,642.2,34,'Wir','naNw naEx3q naE3w')}{art('sollen',226,644,52,22)}{text(279,642.2,330,'viele Orangen essen. Ist das richtig?','naNw naEx3q')}{text(679,639,215,'Ja, sie sind sehr gesund.','naNw')}
   {text(157,668.2,12,'b','naNw naEx3q')}{lin(181,677,9,9,'#404492')}{text(201,668.2,152,'Der Arzt sagt, ihr','naNw naEx3q naE3b')}{field('p46-3b',357,663.2,89,'3 b')}{text(453,668.2,180,'viel Wasser trinken!','naNw naEx3q naE3f')}{text(680,665,260,'Wir mögen aber kein Wasser!','naNw')}
   {text(158,694.2,12,'c','naNw naEx3q')}{lin(181,703,9,9,'#404492')}{text(201,694.2,30,'Ich','naNw naEx3q naE3c')}{field('p46-3c',233,689.5,90,'3 c')}{text(330,694.2,300,'jeden Tag fünf Tabletten nehmen.','naNw naEx3q')}{text(681,691,150,'Das ist aber viel!','naNw')}
   {text(158,720.2,12,'d','naNw naEx3q')}{lin(181,729,9,9,'#404492')}{field('p46-3d',198,715.8,90,'3 d')}{text(296,720.2,280,'Herr Meyer in die USA fliegen?','naNw naEx3q naE3g')}{text(681,717,170,'Nein, Herr Herold.','naNw')}
