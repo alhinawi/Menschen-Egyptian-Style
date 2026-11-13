@@ -1,4 +1,5 @@
 import {serviceLifecycle} from './lifecycle';
+import {navigateHref} from '../navigate';
 export default function mount(){
 const lifecycle=serviceLifecycle(),setTimeout=lifecycle.timeout;
 const $=(s: string): any=>document.querySelector(s)!,stage=$('#pageStage'),spread=$('#spread'),viewport=$('#viewport');
@@ -56,7 +57,7 @@ window.initMeanings();
 let suppressMeaningUntil=0;viewport.addEventListener('touchend',()=>{if(pinching)suppressMeaningUntil=Date.now()+400},{capture:true});stage.addEventListener('click',(e: any)=>{if(Date.now()<suppressMeaningUntil)e.stopImmediatePropagation()},{capture:true});
 
 
-$('#lessonNav').onchange=(e: any)=>location.href=e.target.value;
+$('#lessonNav').onchange=(e: any)=>{void navigateHref(e.target.value)};
 
 for(const f of document.querySelectorAll<HTMLElement>(".batchQuiz"))if(!f.querySelector<HTMLElement>("[data-answer]"))f.onsubmit=(e: any)=>e.preventDefault();
 

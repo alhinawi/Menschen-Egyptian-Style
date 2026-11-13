@@ -82,13 +82,30 @@ export function slugFromLocation(): string {
 }
 
 // The App registers the live handler; without one (should not happen on a
-// reader page) navigation degrades to a full document load.
-type NavigateHandler = (slug: string, token: string | undefined, opts: {replace?: boolean}) => Promise<void>;
+// reader page) navigation degrades to a full document load. rawUrl carries an
+// exact path+query+hash to push (viewer links need their ?page=N preserved).
+type NavigateHandler = (slug: string, token: string | undefined, opts: {replace?: boolean; rawUrl?: string}) => Promise<void>;
 let handler: NavigateHandler | null = null;
 export function registerNavigator(h: NavigateHandler | null) { handler = h; }
-export async function navigateLesson(slug: string, token?: string, opts: {replace?: boolean} = {}): Promise<void> {
+export async function navigateLesson(slug: string, token?: string, opts: {replace?: boolean; rawUrl?: string} = {}): Promise<void> {
   if (handler) return handler(slug, token, opts);
-  location.assign(lessonUrl(slug, token));
+  location.assign(opts.rawUrl ?? lessonUrl(slug, token));
+}
+
+/**
+ * Resolve a same-app href (e.g. 'l7-9.html#41', 'original-viewer.html?page=9',
+ * or an absolute URL) to its lesson slug, page token and exact target URL.
+ * Returns null for external or unknown targets - callers keep default
+ * behavior (full navigation / no preventDefault) for those.
+ */
+export function resolveHref(href: string): {slug: string; token: string | undefined; rawUrl: string} | null {
+  let url: URL;
+  try { url = new URL(href, location.href); } catch { return null; }
+  if (url.origin !== location.origin) return null;
+  const file = url.pathname.split('/').pop() || 'index.html';
+  const slug = fileToSlug[file] ?? fileToSlug[file + '.html'];
+  if (!slug) return null;
+  return {slug, token: url.hash.slice(1) || undefined, rawUrl: file + url.search + url.hash};
 }
 
 /**
@@ -98,13 +115,9 @@ export async function navigateLesson(slug: string, token?: string, opts: {replac
  * callers fall back to their old behavior on false.
  */
 export async function navigateHref(href: string, opts: {replace?: boolean} = {}): Promise<boolean> {
-  let url: URL;
-  try { url = new URL(href, location.href); } catch { return false; }
-  if (url.origin !== location.origin) return false;
-  const file = url.pathname.split('/').pop() || 'index.html';
-  const slug = fileToSlug[file] ?? fileToSlug[file + '.html'];
-  if (!slug) return false;
-  await navigateLesson(slug, url.hash.slice(1) || undefined, opts);
+  const resolved = resolveHref(href);
+  if (!resolved) return false;
+  await navigateLesson(resolved.slug, resolved.token, {...opts, rawUrl: resolved.rawUrl});
   return true;
 }
 
