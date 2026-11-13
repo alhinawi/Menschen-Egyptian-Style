@@ -63,11 +63,11 @@ export function NativeAB12P21_24({page}:{page:string}){
   {art('bubble1',125,782,209,89)}
   {art('bubble2',378,788,483,98)}
   {text(110,940,371,'TRAINING: AUSSPRACHE','naHead2 naNw')}
-  {text(498,945,230,'Vokale: langes „e“ und „i“','naIt')}
+  {text(498,939,230,'Vokale: langes „e“ und „i“','naIt')}
   <div style={{position:'absolute',left:734,top:959,width:228,height:2,background:'#f8b25e'}}/>
   {audio('assets/ab-a12-cd2-track12.mp3',46,1008,'2 12')}
   {title('1',107,1000,540,'Was hören Sie: langes „e“ oder „i“?','naOB naLS')}
-  {text(151,1031,140,'Kreuzen Sie an.','naIns')}
+  {text(151,1028,140,'Kreuzen Sie an.','naIns')}
   {text(184,1072,20,'e','naSmall naItalic')}
   {text(230,1068,20,'i','naSmall naItalic')}
   {text(330,1072,20,'e','naSmall naItalic')}
