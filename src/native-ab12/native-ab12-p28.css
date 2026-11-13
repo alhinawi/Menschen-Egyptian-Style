@@ -14,7 +14,7 @@
 [data-native-ab12="28"] .naCanvas .naDot{position:absolute;appearance:none;width:19px!important;height:19px!important;min-width:0!important;min-height:0!important;border:2px solid #e1e1be!important;border-radius:50%!important;background:#fff!important;padding:0!important;margin:0!important;cursor:pointer}
 [data-native-ab12="28"] .naCanvas .naDot:checked{background:radial-gradient(circle,#246e45 0 38%,#fff 43%)!important}
 [data-native-ab12="28"] .naCanvas .naText.naFooter{font-family:DroidSerif,Georgia,serif!important;font-size:16.5px!important;letter-spacing:0!important;color:#252723}
-[data-native-ab12="28"] .naCanvas .naText.naFootNum{font-weight:400;font-size:15.5px!important}
+[data-native-ab12="28"] .naCanvas .naText.naFootNum{font-weight:400;font-size:20px!important;letter-spacing:2px!important}
 [data-native-ab12="28"] .naCanvas .naBarV{position:absolute;background:#252723}
 @font-face{font-family:ABDroidSans;src:url('/assets/fonts/droid-sans-700.woff2') format('woff2');font-weight:700;font-display:swap}
 [data-native-ab12="28"] .naCanvas .naField.naFieldT{border-bottom:0!important}
