@@ -23,7 +23,7 @@
 
 .nkJanBlog .nkArt{max-width:none!important;max-height:none!important}
 
-.nkCanvas .nkArticle{font:18px/1.15 Arial}.nkCanvas .nkWriting[open]:not(.nkForum .nkWriting){top:calc(100% + 6px)!important;left:50%!important;bottom:auto;transform:translateX(-50%);width:min(560px,88%)!important;max-height:300px;overflow:auto;background:#fffef2;border:1px solid #b7b18b;padding:8px;z-index:20;box-shadow:0 4px 18px rgba(0,0,0,.18)}
+.nkCanvas .nkArticle{font:18px/1.15 Arial}.nkCanvas .nkWriting[open]:not(.nkForum .nkWriting){border:0;padding:0}.nkCanvas .nkWriting[open]:not(.nkForum .nkWriting)::details-content{position:fixed;top:calc(100% + 6px);left:50%;transform:translateX(-50%);width:min(560px,88%);max-height:300px;overflow:auto;background:#fffef2;border:1px solid #b7b18b;padding:8px;z-index:20;box-shadow:0 4px 18px rgba(0,0,0,.18)}
 
 .nkCanvas .nkSong{font:21px/1.27 Arial}.nkCanvas .nkJanComment{font:15px/1.15 Arial}
 
