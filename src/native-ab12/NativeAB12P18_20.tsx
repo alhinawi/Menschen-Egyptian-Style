@@ -48,13 +48,13 @@ export function NativeAB12P18_20({page}:{page:string}){
   {circle('p18-nMeer',585,258,'Meer Nummer')}
   {circle('p18-nCafé',662,258,'Café Nummer')}
   {circle('p18-nHafen',745,258,'Hafen Nummer')}
-  {text(188,253,60,'Kirche','naF21')}
-  {text(282,253,90,'Spielplatz','naF21')}
-  {text(408,253,90,'Flughafen','naF21')}
-  {text(533,253,55,'Wald','naF21')}
-  {text(615,253,55,'Meer','naF21')}
-  {text(697,253,40,'Café','naF21')}
-  {text(773,253,55,'Hafen','naF21')}
+  {text(188,253,60,'Kirche','naS19')}
+  {text(282,253,90,'Spielplatz','naS19')}
+  {text(408,253,90,'Flughafen','naS19')}
+  {text(533,253,55,'Wald','naS19')}
+  {text(615,253,55,'Meer','naS19')}
+  {text(697,253,40,'Café','naS19')}
+  {text(773,253,55,'Hafen','naS19')}
   {check('g1',850,242,{'p18-nKirche':'3','p18-nSpielplatz':'2','p18-nWald':'6','p18-nMeer':'5','p18-nCafé':'7','p18-nHafen':'4'},'naCheckCol')}
   {text(125,302,20,'b','naExL')}
   <div className="naText naIns" style={{left:161,top:302,width:500}}><Words text="Ergänzen Sie aus "/><span className="naExL" style={{fontSize:"inherit"}}>a.</span><Words text=" Notieren und vergleichen Sie."/></div>
@@ -181,16 +181,16 @@ export function NativeAB12P18_20({page}:{page:string}){
   {title('4',120,154,600,'Wo bin ich?','naOB naNw')}
   {text(152,198,20,'a','naIns')}
   {text(182,198,270,'Schreiben Sie Aufgaben wie in','naIns')}
-  {text(463,198,20,'3:','naBlue naIns naInsB')}
+  {text(457,198,20,'3:','naBlue naIns naInsB')}
   {text(485,198,310,'Was sehen Sie? Was machen Sie dort?','naIns')}
   {text(152,224,20,'b','naIns')}
   {text(181,224,520,'Tauschen Sie mit Ihrer Partnerin / Ihrem Partner. Sie/Er rät.','naIns')}
   {audio('assets/ab-a12-cd2-track11.mp3',55,316,'2 11')}
   {title('5',120,284,700,'Hören Sie Marlenes Podcast. Was ist falsch? Korrigieren Sie.','naOB naNw')}
   {text(152,324,20,'a','naIns')}
-  {text(181,324,215,'In Giesing haben früher')}
-  {text(402,324,55,'keine','naBlue naStrike')}
-  {text(455,324,110,'Arbeiter gewohnt.')}
+  {text(181,324,215,'In Giesing haben früher','naS19')}
+  {text(397,324,55,'keine','naBlue naStrike naS19')}
+  {text(447,324,110,'Arbeiter gewohnt.','naS19')}
   {art('viele',636,322,84,38)}
   {text(152,350,20,'b','naIns')}
   {text(181,350,430,'In Giesing sind die Wohnungen sehr teuer.')}
