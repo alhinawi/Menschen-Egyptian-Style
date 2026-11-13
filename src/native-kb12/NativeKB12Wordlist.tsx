@@ -19,8 +19,8 @@ export function NativeKB12Wordlist({page}:{page:string}){
  {TITLES[page]&&<div className="nkwPageTitle" style={{left:TITLES[page][1],top:TITLES[page][2]}}><Words text={TITLES[page][0]}/></div>}
  {BANNERS[page]&&<div className="nkwBanner" aria-hidden="true" style={{left:BANNERS[page][0],top:BANNERS[page][1],width:BANNERS[page][2],height:BANNERS[page][3]}}/>}
  {page==='89'&&INTRO89.map(([x,y,t],i)=><div key={i} className="nkwIntro" style={{left:x,top:y}}><Words text={t}/></div>)}
- {(WL[page]||[]).map((col,ci)=>col.map(([x,y,it,t,num,off],ei)=><div key={ci+'-'+ei} className="nkwEntry" style={{left:x,top:y}}><span className={it?'nkwIt':undefined}><Words text={t}/></span>{num&&<span className="nkwNum" style={{left:off}}>{num}</span>}</div>))}
- {(CR[page]||[]).map(([x,y,t],i)=><div key={i} className="nkwCredit" style={{left:x,top:y}}><Words text={t}/></div>)}
- <div className="nkFooter nkwFooter" style={{left:odd?865:88,top:1480,width:170}}><Words text={FOOT[page]}/></div>
+ {(WL[page]||[]).map((col,ci)=>col.map(([x,y,it,t,num,off],ei)=><div key={ci+'-'+ei} className="nkwEntry" style={{left:x,top:y}}><span className={it?'nkwIt':'nkwTxt'}><Words text={t}/></span>{num&&<span className="nkwNum" style={{left:off}}>{num}</span>}</div>))}
+ {(CR[page]||[]).map(([x,y,t],i)=><div key={i} className="nkwCredit" style={{left:x,top:y}}><span className="nkwTxt"><Words text={t}/></span></div>)}
+ <div className="nkFooter nkwFooter" style={{left:odd?865:88,top:1437,width:170}}><Words text={FOOT[page]}/></div>
  </div></div>;
 }
