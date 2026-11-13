@@ -18,7 +18,7 @@ export function NativeAB12P31to46({page}:{page:string}){
  usePageReset(page,key,()=>{sv({...defaults});sr({})});
  const set=(id:string,v:string)=>{const n={...values,[id]:v};sv(n);localStorage.setItem(key,JSON.stringify(n))};
  const text=(x:number,y:number,w:number,t:string,cls='')=><div className={'naText '+cls} style={{left:x,top:y,width:w}}><Words text={t}/></div>;
- const uml=(x:number,y:number,w:number,pre:string,post:string)=><div className='naText naNw naUmlRow' style={{left:x,top:y,width:w}}><Words text={pre}/><span className="naUml">¨</span><Words text={post}/></div>;
+ const uml=(x:number,y:number,w:number,pre:string,post:string)=><div className='naText naNw naUmlRow' style={{left:x,top:y,width:w}}><Words text={pre}/><span className="naUmlWrap"><span className="naUmlMark">¨</span><Words text={post}/></span></div>;
  const stext=(x:number,y:number,w:number,t:string,st:Record<string,string|number>,cls='')=><div className={'naText '+cls} style={{left:x,top:y,width:w,...st}}><Words text={t}/></div>;
  const rect=(x:number,y:number,w:number,h:number,c:string)=><div style={{position:'absolute',left:x,top:y,width:w,height:h,background:c}}/>;
  const lin=(x:number,y:number,w:number,h:number,c:string)=><div style={{position:'absolute',left:x,top:y,width:w,height:h,background:c}}/>;
@@ -31,7 +31,7 @@ export function NativeAB12P31to46({page}:{page:string}){
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg,[data-native-ab12] .naTitle,[data-native-ab12] .naField{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg{font-size:20px!important}[data-native-ab12] .naTitle{font-size:21px!important}[data-native-ab12] .naText.naS20{font-size:18px!important}[data-native-ab12] .naSmall{font-size:16.5px!important}[data-native-ab12] .naD19{font-size:17.5px!important}[data-native-ab12] .naField{font-size:19px!important}[data-native-ab12] .naUrl{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='41'] .naModul{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='41'] .naTitle.naGB b{background:#69bb58!important}[data-native-ab12='41'] .naTitle{font-family:FiraSans,sans-serif!important;font-size:22px!important;letter-spacing:0!important}[data-native-ab12='41'] .naText,[data-native-ab12='41'] .naBold{font-size:17px!important}[data-native-ab12='41'] .naBold{font-weight:600}[data-native-ab12='41'] .naField{font-size:17px!important}[data-native-ab12='41'] .naGray{font-size:13px!important;color:#7c7c80!important;letter-spacing:0!important}[data-native-ab12='38'] .naS14{font-size:14px!important}[data-native-ab12='37'] .naS19{font-size:19.6px!important}[data-native-ab12='31'] .naHeadline,[data-native-ab12='32'] .naHeadline,[data-native-ab12='33'] .naHeadline,[data-native-ab12='34'] .naHeadline,[data-native-ab12='35'] .naHeadline,[data-native-ab12='36'] .naHeadline,[data-native-ab12='37'] .naHeadline,[data-native-ab12='38'] .naHeadline{font-size:30px!important;letter-spacing:0!important;color:#5f6460}[data-native-ab12='35'] .naSansB,[data-native-ab12='36'] .naSansB,[data-native-ab12='37'] .naSansB,[data-native-ab12='38'] .naSansB{font-family:FiraSans,sans-serif!important;font-weight:700;letter-spacing:0!important}[data-native-ab12='35'] .naUml,[data-native-ab12='36'] .naUml,[data-native-ab12='37'] .naUml,[data-native-ab12='38'] .naUml{font-size:72%;letter-spacing:0;margin-right:-2px}[data-native-ab12='35'] .naUmlRow{font-size:19.4px!important}[data-native-ab12='35'] .naMod,[data-native-ab12='36'] .naMod,[data-native-ab12='37'] .naMod,[data-native-ab12='38'] .naMod{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='38'] .naBio{font-size:17.5px!important;letter-spacing:-0.55px!important}[data-native-ab12='38'] .naJ{white-space:normal;text-align:justify;text-align-last:justify}[data-native-ab12='31'] .naTitle,[data-native-ab12='32'] .naTitle,[data-native-ab12='33'] .naTitle,[data-native-ab12='34'] .naTitle,[data-native-ab12='35'] .naTitle,[data-native-ab12='36'] .naTitle,[data-native-ab12='37'] .naTitle,[data-native-ab12='38'] .naTitle{font-family:FiraSans,sans-serif!important;letter-spacing:0!important}"}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}> {page==='31'&&<>
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg,[data-native-ab12] .naTitle,[data-native-ab12] .naField{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg{font-size:20px!important}[data-native-ab12] .naTitle{font-size:21px!important}[data-native-ab12] .naText.naS20{font-size:18px!important}[data-native-ab12] .naSmall{font-size:16.5px!important}[data-native-ab12] .naD19{font-size:17.5px!important}[data-native-ab12] .naField{font-size:19px!important}[data-native-ab12] .naUrl{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='41'] .naModul{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='41'] .naTitle.naGB b{background:#69bb58!important}[data-native-ab12='41'] .naTitle{font-family:FiraSans,sans-serif!important;font-size:22px!important;letter-spacing:0!important}[data-native-ab12='41'] .naText,[data-native-ab12='41'] .naBold{font-size:17px!important}[data-native-ab12='41'] .naBold{font-weight:600}[data-native-ab12='41'] .naField{font-size:17px!important}[data-native-ab12='41'] .naGray{font-size:13px!important;color:#7c7c80!important;letter-spacing:0!important}[data-native-ab12='38'] .naS14{font-size:14px!important}[data-native-ab12='35'] .naFooter,[data-native-ab12='36'] .naFooter,[data-native-ab12='37'] .naFooter,[data-native-ab12='38'] .naFooter{font-family:DroidSerif,Georgia,serif!important;font-size:16.3px!important;letter-spacing:0!important;color:#252723}[data-native-ab12='36'] .naS19,[data-native-ab12='37'] .naS19{font-size:19.4px!important}[data-native-ab12='31'] .naHeadline,[data-native-ab12='32'] .naHeadline,[data-native-ab12='33'] .naHeadline,[data-native-ab12='34'] .naHeadline,[data-native-ab12='35'] .naHeadline,[data-native-ab12='36'] .naHeadline,[data-native-ab12='37'] .naHeadline,[data-native-ab12='38'] .naHeadline{font-size:30px!important;letter-spacing:0!important;color:#5f6460}[data-native-ab12='35'] .naSansB,[data-native-ab12='36'] .naSansB,[data-native-ab12='37'] .naSansB,[data-native-ab12='38'] .naSansB{font-family:FiraSans,sans-serif!important;font-weight:700;letter-spacing:0!important}[data-native-ab12='35'] .naUml,[data-native-ab12='36'] .naUml,[data-native-ab12='37'] .naUml,[data-native-ab12='38'] .naUml{font-size:72%;letter-spacing:0;margin-right:-2px}[data-native-ab12='35'] .naUmlRow{font-size:19.4px!important}[data-native-ab12='35'] .naUmlWrap{position:relative}[data-native-ab12='35'] .naUmlMark{position:absolute;left:-1px;top:5px;font-size:58%;letter-spacing:0;line-height:1}[data-native-ab12='35'] .naMod,[data-native-ab12='36'] .naMod,[data-native-ab12='37'] .naMod,[data-native-ab12='38'] .naMod{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='38'] .naBio{font-size:17.5px!important;letter-spacing:-0.55px!important}[data-native-ab12='38'] .naJ{white-space:normal;text-align:justify;text-align-last:justify}[data-native-ab12='31'] .naTitle,[data-native-ab12='32'] .naTitle,[data-native-ab12='33'] .naTitle,[data-native-ab12='34'] .naTitle,[data-native-ab12='35'] .naTitle,[data-native-ab12='36'] .naTitle,[data-native-ab12='37'] .naTitle,[data-native-ab12='38'] .naTitle{font-family:FiraSans,sans-serif!important;letter-spacing:0!important}"}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}> {page==='31'&&<>
   {art('0',982,42,85,78)}
   {lin(354,107,605,6,'#a6ca03')}
   {text(107,77,240,'BASISTRAINING','naHeadline naNw')}
@@ -482,7 +482,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {art('3',372,1240,165,77)}
   {art('tv',576,1246,224,78)}
   {lin(1063,0,8,1104,'#aeb7b2')}
-  <div style={{position:'absolute',left:389,top:112,width:486,height:2,background:'linear-gradient(90deg,#d2e877,#e6f1ae)'}}/>
+  <div style={{position:'absolute',left:395,top:112,width:480,height:3,background:'linear-gradient(90deg,#afd019,#d7e98c)'}}/>
   {lin(317,249,191,2,'#d9dae0')}
   {lin(677,250,196,2,'#d9dae0')}
   {lin(317,300,191,2,'#d9dae0')}
@@ -618,8 +618,8 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(176,1237,165,'hängen Sie die Zettel','naNw')}
   {text(176,1259,162,'in der Wohnung auf.','naNw')}
   {title('2',99,1318,700,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naGB')}
-  {art('modul-tab',990,1378,81,40)}
-  {text(806,1392,173,'fünfunddreißig | 35','naFooter')}
+  {art('modul-tab',988,1389,83,25)}
+  {text(804,1388,140,'fünfunddreißig','naFooter')}{text(943,1388,8,'|','naFooter')}{text(964,1388,22,'35','naFooter')}
  </>}
  {page==='36'&&<>
   {art('0',142,46,837,57)}
@@ -678,23 +678,23 @@ export function NativeAB12P31to46({page}:{page:string}){
   {kb(85,711,'KB 4')}
   {title('3',121,708,500,'Ergänzen Sie mit oder ohne.','naGB')}
   <div className="naSide" style={{left:92,top:776,whiteSpace:'nowrap'}}>STRUKTUREN</div>
-  {text(164,748,9,'a','naNw')}
-  {text(187,748,250,'Cherry geht nur','naNw')}
-  {text(334,750,45,'mit','naHand naD19 naNw')}
-  {lin(333,768,25,1.5,'#c2c3c6')}
-  {text(366,748,378,'ihrer „Starbrille“ zur Aufnahmeprüfung.','naNw')}
-  {text(164,773,9,'b','naNw')}
-  {text(295,773,585,'Aufnahmeprüfung kann sie nicht an der Pop-Akademie studieren.','naNw')}
-  {text(164,800,9,'c','naNw')}
-  {text(187,800,293,'Sie möchten ein Popstar werden?','naNw')}
-  {text(596,800,341,'eine gute Ausbildung ist das schwierig.','naNw')}
-  {text(164,826,9,'d','naNw')}
-  {text(296,826,184,'einer Ausbildung hat','naNw')}
+  {text(164,748,9,'a','naNw naS19')}
+  {text(187,748,250,'Cherry geht nur','naNw naS19')}
+  {text(333,750,45,'mit','naHand naD19 naNw')}
+  {lin(331,768,27,1.5,'#c2c3c6')}
+  {text(363,748,381,'ihrer „Starbrille“ zur Aufnahmeprüfung.','naNw naS19')}
+  {text(164,773,9,'b','naNw naS19')}
+  {text(295,773,585,'Aufnahmeprüfung kann sie nicht an der Pop-Akademie studieren.','naNw naS19')}
+  {text(164,800,9,'c','naNw naS19')}
+  {text(187,800,293,'Sie möchten ein Popstar werden?','naNw naS19')}
+  {text(596,800,341,'eine gute Ausbildung ist das schwierig.','naNw naS19')}
+  {text(164,826,9,'d','naNw naS19')}
+  {text(296,826,184,'einer Ausbildung hat','naNw naS19')}
   {text(489,828,34,'man','naHand naD19 naNw')}
-  {text(530,826,159,'bessere Chancen.','naNw')}
-  {text(164,851,7,'e','naNw')}
-  {text(188,851,140,'Fabian geht nur','naNw')}
-  {text(443,852,332,'seiner Gitarre zur Aufnahmeprüfung.','naNw')}
+  {text(530,826,159,'bessere Chancen.','naNw naS19')}
+  {text(164,851,7,'e','naNw naS19')}
+  {text(188,851,140,'Fabian geht nur','naNw naS19')}
+  {text(443,852,332,'seiner Gitarre zur Aufnahmeprüfung.','naNw naS19')}
   {kb(85,918,'KB 4')}
   {title('4',121,915,600,'Was ist richtig? Kreuzen Sie an.','naGB')}
   <div className="naSide" style={{left:92,top:967,whiteSpace:'nowrap'}}>STRUKTUREN</div>
@@ -721,30 +721,35 @@ export function NativeAB12P31to46({page}:{page:string}){
   {title('5',121,1122,500,'Ergänzen Sie e oder i.','naGB')}
   <div className="naSide" style={{left:84,top:1150,whiteSpace:'nowrap'}}>STRUKTUREN</div>
   <div className="naSide" style={{left:97,top:1150,whiteSpace:'nowrap'}}>ENTDECKEN</div>
-  {text(164,1167,26,'ich','naNw')}
-  {text(262,1167,10,'w','naNw')}
-  {text(279,1169,12,'e','naHand naD19 naNw')}
-  {lin(271,1186,25,1,'#ccd2d8')}
-  {text(291,1167,30,'rde','naNw')}
-  {text(164,1193,21,'du','naNw')}
-  {text(164,1219,50,'er/sie','naNw')}
+  {text(164,1162,26,'ich','naNw')}
+  {text(262,1162,10,'w','naNw')}
+  {text(279,1164,12,'e','naHand naD19 naNw')}
+  {lin(271,1183,25,1,'#ccd2d8')}
+  {text(291,1162,30,'rde','naNw')}
+  {text(164,1188,21,'du','naNw')}
+  {text(164,1215,50,'er/sie','naNw')}
   {lin(361,1164,2,165,'#e3dfc0')}
   {text(378,1224,82,'Sängerin','naNw')}
-  {text(164,1258,37,'wir','naNw')}
-  {text(165,1284,26,'ihr','naNw')}
+  {text(164,1253,37,'wir','naNw')}
+  {text(165,1279,26,'ihr','naNw')}
   {text(164,1305,58,'sie/Sie','naNw')}
-  {art('modul-tab',0,1393,90,27)}
-  {text(99,1399,230,'36 | sechsunddreißig','naFooter naNw')}
-  {text(262,1193,16,'w_')}
-  {text(296,1193,27,'rst')}
-  {text(262,1219,16,'w_')}
-  {text(296,1219,18,'rd')}
-  {text(262,1258,16,'w_')}
-  {text(296,1258,36,'rden')}
-  {text(262,1284,16,'w_')}
-  {text(296,1284,36,'rdet')}
-  {text(262,1305,16,'w_')}
-  {text(296,1305,36,'rden')}
+  {art('modul-tab',0,1394,86,24)}
+  {text(97,1398,18,'36','naFooter naNw')}{text(128,1398,8,'|','naFooter naNw')}{text(148,1398,148,'sechsunddreißig','naFooter naNw')}
+  {text(262,1188,12,'w','naNw')}
+  {lin(277,1209,17,1.2,'#ccd1d7')}
+  {text(296,1188,27,'rst','naNw')}
+  {text(262,1215,12,'w','naNw')}
+  {lin(277,1236,17,1.2,'#ccd1d7')}
+  {text(296,1215,18,'rd','naNw')}
+  {text(262,1253,12,'w','naNw')}
+  {lin(277,1274,17,1.2,'#ccd1d7')}
+  {text(296,1253,36,'rden','naNw')}
+  {text(262,1279,12,'w','naNw')}
+  {lin(277,1300,17,1.2,'#ccd1d7')}
+  {text(296,1279,36,'rdet','naNw')}
+  {text(262,1305,12,'w','naNw')}
+  {lin(277,1326,17,1.2,'#ccd1d7')}
+  {text(296,1305,36,'rden','naNw')}
   {field('p36-1b',335,316,198,'1 b')}
   {field('p36-1c',171,363,213,'1 c')}
   {field('p36-1d',675,290,215,'1 d')}
@@ -828,9 +833,9 @@ export function NativeAB12P31to46({page}:{page:string}){
   {kb(78,819,'KB 6')}
   {title('8',130,806,760,'Ergänzen Sie die Wörter.','naGB')}
   <div className="naSide" style={{left:56,top:863,whiteSpace:'nowrap'}}>WÖRTER</div>
-  {art('ausbildung',404,847,112,39)}
+  {art('ausbildung',398,850,140,59)}
   {text(140,848,254,'Im Sommer hat Sofia ihre (a)','naNw naS19')}
-  {text(516,848,378,'(BLUGASIDNU) als Friseurin abgeschlossen.','naNw naS19')}
+  {text(512,848,382,'(BLUGASIDNU) als Friseurin abgeschlossen.','naNw naS19')}
   {text(140,874,655,'Sie hatte große Angst vor der Prüfung. Aber zum Glück hat sie die Prüfung','naNw naS19')}
   {text(140,897,21,'(b)','naNw naS19')}
   {text(394,897,383,'(SCHEFGATEF). Jetzt möchte sie endlich Geld','naNw naS19')}
@@ -855,8 +860,8 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(140,1170,412,'Ihre Partnerin / Ihr Partner ergänzt die Wörter.','naNw')}
   {text(178,1240,220,'Ich möchte gern nach China','naHand naD19 naNw')}
   {text(350,1258,115,'. (SIERNE)','naHand naD19 naNw')}
-  {art('modul-tab',985,1390,81,27)}
-  {text(787,1396,195,'siebenunddreißig | 37','naFooter naNw')}
+  {art('modul-tab',985,1391,87,24)}
+  {text(786,1394,155,'siebenunddreißig','naFooter naNw')}{text(940,1394,8,'|','naFooter naNw')}{text(961,1394,22,'37','naFooter naNw')}
   {field('p37-6b',515,226,125,'6 b')}
   {field('p37-6c',390,279,102,'6 c')}
   {field('p37-6d',337,303,125,'6 d')}
@@ -926,8 +931,8 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(188,1301,556,'Marianne hat vor 25 Jahren einen tollen Mann kennengelernt.','naNw')}
   {text(166,1327,12,'5','naNw')}
   {text(188,1327,196,'Sie ist jetzt Studentin.','naNw')}
-  {art('modul-tab',0,1395,88,22)}
-  {text(99,1399,185,'38 | achtunddreißig','naFooter naNw')}
+  {art('modul-tab',0,1394,85,23)}
+  {text(97,1398,18,'38','naFooter naNw')}{text(128,1398,8,'|','naFooter naNw')}{text(148,1398,142,'achtunddreißig','naFooter naNw')}
   {dot('10a-susanne','uni',523,272,'susanne uni uni')}
   {dot('10a-susanne','urlaub',523,298,'susanne urlaub urlaub')}
   {dot('10a-susanne','ausland',523,323,'susanne ausland ausland')}
