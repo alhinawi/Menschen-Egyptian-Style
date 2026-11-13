@@ -20,7 +20,9 @@ export function NativeAB11Module1({page}:{page:string}){
  const open=(id:string,x:number,y:number,w:number,h:number,label=id)=><textarea className="mField mOpen" data-native-field={id} aria-label={label} style={{left:x,top:Y(y),width:w,height:h*sy,'--mopen-height':h*sy+'px'} as React.CSSProperties} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
  const art=(name:string,x:number,y:number,w:number,h:number)=><PageImage className="mArt" alt={'Originalabbildung '+name} src={`assets/native-ab11/p${page}-${name}.png`} style={{left:x,top:Y(y),width:w,height:h*(page==='27'?1:sy)}}/>;
  const title=(n:string,y:number,s:string,kb='',x=132,w=700)=><>{kb&&txt(96,y+5,34,kb,'mKB')}<div className={'mNumber '+(Number(page)>=24?'red':'')} style={{left:x,top:Y(y)}}>{n}</div>{txt(x+35,y,w-35,s,'mTitle')}</>;
- const ink=(name:string,sx:number,top:number,w:number,h:number,alt='')=><PageImage className="mHelp" alt={alt} src={`assets/native-ab11/p27-${name}.png`} style={{left:sx*K,top:Y(top),width:w*K,height:h*K}}/>;
+ const ink=(name:string,sx:number,top:number,w:number,h:number,alt='')=><PageImage className="mHelp" alt={alt} src={`assets/native-ab11/p${page}-${name}.png`} style={{left:sx*K,top:Y(top),width:w*K,height:h*K}}/>;
+ const inkC=(name:string,cx:number,cy:number,w:number,h:number,alt='')=><PageImage className="mHelp" alt={alt} src={`assets/native-ab11/p${page}-${name}.png`} style={{left:cx,top:cy,width:w*K,height:h*K}}/>;
+ const inkI=(name:string,h:number,alt='')=><PageImage className="mHelpI" alt={alt} src={`assets/native-ab11/p${page}-${name}.png`} style={{height:h*K}}/>;
  const rt=(scanY:number)=>scanY*K+223.5;
  const lined=(id:string,x:number,w:number,firstRule:number,lines:number,skip:number,label:string,deg=0)=><textarea className="mInk" data-native-field={id} aria-label={label} style={{left:x,top:Y(firstRule-16.4+skip*21.4),width:w,height:21.4*(lines-skip),transform:deg?`rotate(${deg}deg)`:undefined,transformOrigin:'0 0'} as React.CSSProperties} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
  const head=(s:string)=><>{txt(132,135,740,s,'mHeader')}<div className="mRule"/></>;
@@ -131,14 +133,14 @@ export function NativeAB11Module1({page}:{page:string}){
  {title('2',431,"Ruths Familie")}{txt(131,469,440,'a  Sehen Sie den Stammbaum an und ergänzen Sie.','mTitle')}
  <svg style={{position:'absolute',left:546,top:Y(430)}} width="301" height={360*sy} viewBox="0 0 301 360" preserveAspectRatio="none"><path d="M31 105H166 M100 105V125 M100 233H239 M171 233V252 M78 252H266 M78 252V261 M175 252V261 M266 252V261" fill="none" stroke="#b2b185" strokeWidth="2"/><g fill="none" stroke="#dcbd00" strokeWidth="2"><circle cx="97" cy="105" r="6"/><circle cx="105" cy="105" r="6"/><circle cx="167" cy="233" r="6"/><circle cx="175" cy="233" r="6"/></g></svg>
  {[['franz','Franz',541,430,73,85],['marianne','Marianne',675,430,74,85],['katharina','Katharina',613,558,72,85],['peter','Peter',748,558,74,85],['ruth','Ruth',590,695,68,82],['justus','Justus',683,695,76,82],['jakob','Jakob',780,695,69,82]].map(([id,name,x,y,w,h])=><span key={String(id)}>{art(String(id),Number(x),Number(y),Number(w),Number(h))}{txt(Number(x),Number(y)+Number(h)+3,95,String(name),'mSmall')}</span>)}
- {txt(157,506,390,'1  Peter: Justus ist mein Sohn.','mExample mSmall')}
+ <div className="mText mSmall" style={{left:157,top:Y(506),width:390}}><Words s="1  Peter: Justus ist mein "/>{inkI('sohn',20,'Sohn.')}</div>
  {txt(157,535,340,'2  Jakob: Franz und Marianne sind','mSmall')}{txt(177,555,48,'meine','mSmall')}{f('u2a-2',229,553,165)}
  {txt(157,583,213,'3  Marianne: Ruth ist meine','mSmall')}{f('u2a-3',373,581,143)}
  {txt(157,611,220,'4  Peter: Marianne ist meine','mSmall')}{f('u2a-4',381,609,130)}
  {txt(157,639,182,'5  Ruth: Franz ist mein','mSmall')}{f('u2a-5',343,637,168)}
  {txt(157,667,139,'6  Katharina: Mein','mSmall')}{f('u2a-6',302,665,93)}{txt(401,667,110,'heißt Peter.','mSmall')}{check('u2a',168,696)}
  {txt(131,730,460,'b  Was machen Jakob, Justus und Ruth? Ordnen Sie zu.','mTitle')}
- {txt(163,764,402,'geschieden | Geschwister | Jahre alt | wohne | Ausbildung |\narbeite | habe | von Beruf','mBank')}
+ <div className="mText mBank" style={{left:163,top:Y(764),width:402}}>{inkI('bank-geschieden',24,'geschieden')}<Words s=" | Geschwister | Jahre alt | wohne | Ausbildung |"/>{'\n'}{inkI('bank-arbeite',22,'arbeite')}<Words s=" | habe | von Beruf"/></div>
  {art('jakob',175,824,62,40)}{art('justus',175,882,62,42)}{art('ruth',175,944,62,42)}
  {txt(157,827,17,'1')}{txt(251,827,74,'Ich bin 19')}{f('u2b-a',330,825,111)}{txt(447,827,100,'(a) und')}{txt(251,852,111,'mache eine')}{f('u2b-b',366,850,140)}{txt(512,852,30,'(b).')}
  {txt(157,885,17,'2')}{txt(251,885,107,'Ich bin 23 und')}{f('u2b-c',363,883,120)}{txt(489,885,175,'(c) in Köln.')}
@@ -148,31 +150,31 @@ export function NativeAB11Module1({page}:{page:string}){
  {title('3',1046,'Berufe. Lösen Sie das Rätsel.')}
  {['a','b','c','d','e','f'].map((s,i)=><span key={s}>{txt(166+i*110,1080+i*15,20,s,'mSmall')}{art('job-'+s,181+i*110,1086+i*15,76,92)}</span>)}
  {txt(169,1186,125,'Lösungswort:','mSmall')}{f('u3-solution',294,1184,100,'3 Lösungswort')}
- {txt(232,1219,22,'a','mSmall')}<div className="mCrossRow" style={{left:255,top:Y(1216)}}>{'KELLNER'.split('').map((c,i)=><span className={i===2?'solution':''} key={i}>{c}</span>)}</div>
+ {txt(232,1219,22,'a','mSmall')}<div className="mCrossRow" style={{left:255,top:Y(1216)}}>{([['K1',13,15],['E1',15,16],['L1',13,15],['L2',13,18],['N',11,16],['E2',15,17],['R',15,16]] as [string,number,number][]).map(([n,w,h],i)=><span className={i===2?'solution':''} key={n}><PageImage className="mCrossInk" alt={'KELLNER'[i]} src={'assets/native-ab11/p24-kellner-'+n+'.png'} style={{left:(24-w*K)/2,top:(20-h*K)/2,width:w*K,height:h*K}}/></span>)}</div>
  {['b','c','d','e','f'].map((id,i)=>{const offset=[1,2,2,4,1][i],length=[13,14,9,7,16][i];return <span key={id}>{txt(303-offset*24-23,1251+i*26,20,id,'mSmall')}{cell('u3-'+id,303-offset*24,1248+i*26,length,offset)}</span>})}{check('u3',680,1370,{...answers('u3'),'u3-solution':'LEHRER'})}
  </>}
  {page==='25'&&<>
  {head('WIEDERHOLUNGSSTATION: GRAMMATIK')}
  {title('1',206,'Schreiben Sie Gespräche.')}
- {txt(168,242,340,'a  ▪ Ist Sergio Ingenieur?','mExample')}{txt(520,242,300,'(Sergio – ist – Ingenieur)')}
+ {txt(168,242,60,'a  ▪ ')}{ink('sergio',243,227,152,47,'Ist Sergio Ingenieur?')}{txt(520,242,300,'(Sergio – ist – Ingenieur)')}
  {txt(188,270,37,'▴ Ja,')}{f('u1-a',231,268,255)}{txt(520,270,330,'(arbeitet – er – Siemens – bei)')}
  {['b','c','d','e'].map((s,i)=>{const y=[307,363,419,503][i];return <span key={s}>{txt(168,y,26,s+'  ▪')}{f('u1-'+s,205,y-2,280)}{txt(488,y,16,'?')}{txt(520,y,330,['(er – kommt – woher)','(wohnt – wo – er)','(Geschwister – er – wie viele – hat)','(Sprachen – spricht – welche – er)'][i])}{i!==2?txt(188,y+26,330,['▴ Aus Mexiko.','▴ In Berlin.','','▴ Spanisch und Deutsch.'][i]):<>{txt(188,y+26,15,'▴')}{f('u1-d2',205,y+24,280)}{txt(520,y+26,310,'(eine Schwester – hat – er)')}</>}</span>})}{check('u1',168,565)}
  {title('2',608,'Mein Name ist …','',132,260)}{txt(143,643,252,'a  Suchen Sie noch 9 Verben.','mTitle')}{txt(407,608,441,'b  Ergänzen Sie die Verben aus a in der richtigen Form.','mTitle')}
  {grid.map((row,r)=>row.split('').map((letter,c)=>{const marked=Object.entries(gridWords).some(([word,a])=>{if(word!=='SEIN'&&!v['found-'+word])return false;const [r1,c1,r2,c2]=a,dr=Math.sign(r2-r1),dc=Math.sign(c2-c1);return Array.from({length:word.length},(_,i)=>r1+dr*i===r&&c1+dc*i===c).some(Boolean)});return <button key={r+'-'+c} className={'mGridCell '+(marked?'marked':'')+(start?.[0]===r&&start?.[1]===c?' active':'')} style={{left:174+c*24,top:Y(681+r*24)}} aria-label={'Wortgitter '+r+' '+c+' '+letter} onClick={()=>{if(!start){ST([r,c]);return}const entry=Object.entries(gridWords).find(([,a])=>(a[0]===start[0]&&a[1]===start[1]&&a[2]===r&&a[3]===c)||(a[2]===start[0]&&a[3]===start[1]&&a[0]===r&&a[1]===c));if(entry)set('found-'+entry[0],v['found-'+entry[0]]?'':'1');ST(null)}}>{letter}</button>}))}
  {txt(174,929,160,'ß = ss','mSmall')}{rule('u2a',168,958,()=>Object.keys(gridWords).every(w=>w==='SEIN'||v['found-'+w]==='1'))}
- {txt(434,649,318,'▪ Hallo, mein Name ist Lena und wie','mSmall')}{f('u2b-1',754,646,77)}{txt(834,649,24,'du?','mSmall')}
+ <div className="mText mSmall" style={{left:434,top:Y(649),width:318}}><Words s="▪ Hallo, mein Name "/>{inkI('ist',19,'ist')}<Words s=" Lena und wie"/></div>{f('u2b-1',754,646,77)}{txt(834,649,24,'du?','mSmall')}
  {txt(434,677,409,'▴ Hallo Lena, ich bin Jorgo, und das ist mein Bruder Wassili.','mSmall')}
  {txt(434,705,61,'▪ Woher','mSmall')}{f('u2b-2',499,702,113)}{txt(617,705,53,'ihr?','mSmall')}{txt(434,733,220,'▴ Aus Griechenland.','mSmall')}
  {txt(434,761,89,'▪ Und was','mSmall')}{f('u2b-3',527,758,95)}{txt(627,761,230,'ihr hier in Österreich?','mSmall')}
  {txt(434,789,37,'▴ Ich','mSmall')}{f('u2b-4',476,786,109)}{txt(590,789,260,'an der Universität in Wien und','mSmall')}
  {txt(454,817,51,'Wassili','mSmall')}{f('u2b-5',510,814,121)}{txt(636,817,210,'als Programmierer. Und du?','mSmall')}
  {txt(434,845,35,'▪ Ich','mSmall')}{f('u2b-6',474,842,90)}{txt(569,845,140,'in Hamburg und','mSmall')}{f('u2b-7',713,842,86)}{txt(804,845,52,'einen','mSmall')}
- {txt(454,873,400,'Job als Kellnerin. Wie viele Jahre wohnst du schon in','mSmall')}{txt(454,897,160,'Österreich?','mSmall')}{txt(434,925,200,'▴ Zwei Jahre.','mSmall')}
+ <div className="mText mSmall" style={{left:454,top:Y(873),width:400}}><Words s="Job als Kellnerin. Wie viele Jahre "/>{inkI('wohnst',20,'wohnst')}<Words s=" du schon in"/></div>{txt(454,897,160,'Österreich?','mSmall')}{txt(434,925,200,'▴ Zwei Jahre.','mSmall')}
  {txt(434,953,207,'▪ Was! Nur zwei Jahre? Du','mSmall')}{f('u2b-8',647,950,109)}{txt(762,953,96,'sehr gut Deutsch!','mSmall')}{txt(434,981,160,'▴ Danke!','mSmall')}{check('u2b',434,1009)}
  {title('3',1050,'Lesen Sie die Informationen zu Isabel und schreiben Sie Sätze mit nicht.')}
- {txt(168,1083,238,'STECKBRIEF','mBank')}{txt(175,1111,237,'Name: Isabel\nAdresse: Veilchenweg37, Oberhausen\nFamilienstand: Single\nBeruf: Sekretärin\nHerkunft: Schweiz','mSmall')}
- {txt(434,1086,405,'a  Köln wohnen: Isabel wohnt nicht in Köln.','mSmall mExample')}
- {['als Krankenschwester arbeiten:','verheiratet sein:','aus Österreich kommen:'].map((s,i)=><span key={s}>{txt(434,1114+i*40,410,String.fromCharCode(98+i)+'  '+s,'mSmall')}{f('u3-'+String.fromCharCode(98+i),455,1131+i*40,381)}</span>)}
+ {txt(168,1083,238,'STECKBRIEF','mBank')}{txt(175,1111,237,'Name: \nAdresse: \nFamilienstand: \nBeruf: \nHerkunft: ','mSmall')}{inkC('sb-isabel',218,Y(1111)+1,48,20,'Isabel')}{inkC('sb-adresse',231,Y(1111)+13,221,34,'Veilchenweg 37, Oberhausen')}{inkC('sb-single',267,Y(1111)+31,53,33,'Single')}{inkC('sb-sekretaerin',217,Y(1111)+49,94,35,'Sekretärin')}{inkC('sb-schweiz',237,Y(1111)+72,78,21,'Schweiz')}
+ <div className="mText mSmall" style={{left:434,top:Y(1086),width:405}}><Words s="a  Köln wohnen: "/>{inkI('isabel-satz',20,'Isabel wohnt nicht in Köln.')}</div>
+ {['als Krankenschwester arbeiten:','verheiratet sein:','aus Österreich kommen:'].map((s,i)=><span key={s}>{txt(434,1114+i*40,410,String.fromCharCode(98+i)+'  '+s,'mSmall')}{f('u3-'+String.fromCharCode(98+i),[637,545,596][i],1112+i*40,[233,325,274][i])}</span>)}
  {check('u3',434,1252)}
  {title('4',1296,'Was ist richtig? Markieren Sie.')}{art('ferdinand',779,1320,70,86)}{art('elena',735,1450,73,80)}
  <div className="mParagraph" style={{left:179,top:Y(1332),width:578}}>Das ist Ferdinand. Er ist {inlineChoice(1,['mein','meine'])} {inlineChoice(2,['Kollege','Kollegin'])}. Er ist auch {inlineChoice(3,['Journalist','Journalistin'])} von Beruf. Wir {inlineChoice(4,['arbeiten','arbeite'])} jetzt {inlineChoice(5,['als','bei'])} MEDIA.COM in Hamburg. Ferdinand {inlineChoice(6,['wohne','wohnt'])} allein, aber er {inlineChoice(7,['hast','hat'])} viele Freunde.</div>
@@ -180,7 +182,7 @@ export function NativeAB11Module1({page}:{page:string}){
  {check('u4',168,1553,Object.fromEntries(['mein','Kollege','Journalist','arbeiten','bei','wohnt','hat','meine','Chefin','heißt','aus','lebt','in','spricht'].map((a,i)=>['u4-'+(i+1),a])))}
  </>}
  {page==='26'&&<>
- {head('SELBSTEINSCHÄTZUNG')}{txt(502,139,300,'Das kann ich!','mExample')}{txt(138,205,320,'Ich kann jetzt …','mBlue')}{lights(188)}
+ {head('SELBSTEINSCHÄTZUNG')}{inkC('dkich',508,129,200,37,'Das kann ich!')}{txt(138,205,320,'Ich kann jetzt …','mBlue')}{lights(188)}
  {txt(138,234,603,'… andere begrüßen und mich verabschieden:  L01','mTitle')}{confidence('s1',224)}{txt(159,261,90,'Hallo/Guten')}{f('s1-1',252,259,447,'1 eigene Begrüßung')}
  {txt(138,306,603,'… mich und andere vorstellen:  L01/L02/L03','mTitle')}{confidence('s2',296)}{txt(159,334,70,'Ich heiße')}{f('s2-name',233,332,106)}{txt(345,334,92,'Ich komme')}{f('s2-herkunft',441,332,142)}{txt(588,334,120,'und ich wohne')}{f('s2-wohnort',159,359,135)}{txt(301,361,92,'Ich spreche')}{f('s2-sprache',398,359,142)}
  {txt(138,407,603,'… nach dem Befinden fragen und über mein Befinden sprechen:  L01','mTitle')}{confidence('s3',397)}
@@ -197,7 +199,7 @@ export function NativeAB11Module1({page}:{page:string}){
  {txt(138,1064,603,'… 5 Länder und Sprachen:  L01/L03','mTitle')}{confidence('k1',1054)}{open('k1-eigen',168,1090,542,49,'5 Länder und Sprachen')}
  {txt(138,1172,603,'… 5 Berufe:  L02','mTitle')}{confidence('k2',1162)}{open('k2-eigen',168,1198,542,49,'5 eigene Berufe')}
  {txt(138,1290,603,'… die Zahlen bis 100:  L02','mTitle')}{confidence('k3',1280)}
- {['10 zehn','17 siebzehn','23','38','40','50','60','70','80','90','100'].map((s,i)=>{const x=168+(i%4)*148,y=1320+Math.floor(i/4)*29;return <span key={s}>{txt(x,y,32,s.split(' ')[0],'mSmall')}{i<2?txt(x+25,y,120,s.split(' ')[1],'mExample mSmall'):f('z-'+s,x+26,y-2,115)}</span>})}{check('k3',690,1376)}
+ {['10 zehn','17 siebzehn','23','38','40','50','60','70','80','90','100'].map((s,i)=>{const x=168+(i%4)*148,y=1320+Math.floor(i/4)*29;return <span key={s}>{txt(x,y,32,s.split(' ')[0],'mSmall')}{i<2?inkC(i===0?'zehn':'siebzehn',i===0?196:340,Y(y)+3,i===0?52:72,i===0?19:20,s.split(' ')[1]):f('z-'+s,x+26,y-2,115)}</span>})}{check('k3',690,1376)}
  {txt(138,1425,603,'… 10 Familienmitglieder:  L03','mTitle')}{confidence('k4',1415)}{open('k4-eigen',168,1451,542,49,'10 eigene Familienmitglieder')}
  </>}
  {page==='27'&&<>
