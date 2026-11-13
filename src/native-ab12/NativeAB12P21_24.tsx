@@ -160,7 +160,7 @@ export function NativeAB12P21_24({page}:{page:string}){
   {text(483,540,50,'dir')}
   {dot('p22-r2b','ihnen',540,541,'b ihnen')}
   {text(567,543,65,'ihnen?')}
-  {text(634,543,350,'– Leider nicht, es gehört meinem Chef.')}
+  {text(634,543,350,'– Leider nicht, es gehört meinem Chef.','naTk')}
   {text(164,570,12,'c')}
   {text(189,567,95,'Kann ich','naTk')}
   {dot('p22-r2c','ihm',291,568,'c ihm')}
@@ -195,27 +195,27 @@ export function NativeAB12P21_24({page}:{page:string}){
   {title('3',116,765,900,'Ergänzen Sie die E-Mail.','naRB naLS')}
   <div className="naBandCream" style={{left:164,top:812,width:682,height:24}}/>
   {text(170,813,680,'Hier gibt es viele | das ist nicht so toll | gefällt mir gut | Hier ist | das ist schon okay','naD19')}
-  {text(184,873,110,'Hallo Freunde,','naD19')}
-  {text(184,897,230,'seit August bin ich in Frankfurt.','naD19')}
+  {text(184,873,110,'Hallo Freunde,','naD19 naTkB')}
+  {text(184,897,230,'seit August bin ich in Frankfurt.','naD19 naTkB')}
   {field('p22-3a',415,885,268,'E-Mail a')}
   {text(689,897,25,'(a)','naSmall naMk')}
-  {text(184,921,380,'eine Schule für Krankenschwestern. Die Ausbildung','naD19')}
+  {text(184,921,380,'eine Schule für Krankenschwestern. Die Ausbildung','naD19 naTkB')}
   {field('p22-3b',184,934,270,'E-Mail b')}
   {text(459,944,190,'(b) und macht viel Spaß. Ich','naD19 naTkB')}
-  {text(184,968,500,'wohne in der Mozartallee 134. Mein Zimmer ist klein und gemütlich.','naD19')}
-  {text(185,993,240,'Es hat nur 15 Quadratmeter, aber','naD19')}
+  {text(184,968,500,'wohne in der Mozartallee 134. Mein Zimmer ist klein und gemütlich.','naD19 naTkB')}
+  {text(185,993,240,'Es hat nur 15 Quadratmeter, aber','naD19 naTkB')}
   {field('p22-3c',428,982,232,'E-Mail c')}
   {text(666,993,30,'(c).','naSmall naMk')}
-  {text(185,1016,460,'Leider habe ich keine Küche. Ich koche in meinem Zimmer und','naD19')}
+  {text(185,1016,460,'Leider habe ich keine Küche. Ich koche in meinem Zimmer und','naD19 naTkB')}
   {field('p22-3d',184,1030,270,'E-Mail d')}
   {text(459,1041,25,'(d).','naSmall naMk')}
-  {text(486,1039,220,'Aber das Viertel hier ist super.','naD19')}
+  {text(486,1039,220,'Aber das Viertel hier ist super.','naD19 naTkB')}
   {field('p22-3e',184,1055,270,'E-Mail e')}
   {text(460,1065,25,'(e)','naSmall naMk')}
-  {text(482,1064,220,'Kneipen und Restaurants und','naD19')}
-  {text(184,1090,170,'es ist immer etwas los.','naD19')}
-  {text(185,1123,210,'Liebe Grüße nach Innsbruck','naD19')}
-  {text(185,1145,80,'Barbara','naD19')}
+  {text(482,1064,220,'Kneipen und Restaurants und','naD19 naTkB')}
+  {text(184,1090,170,'es ist immer etwas los.','naD19 naTkB')}
+  {text(185,1123,210,'Liebe Grüße nach Innsbruck','naD19 naTkB')}
+  {text(185,1145,80,'Barbara','naD19 naTkB')}
   <div className="naRule" style={{left:879,top:1150,width:26}}/>
   {text(906,1141,65,'/ 5 Punkte','naS13')}
   {check('g3',710,1100,{'p22-3a':'Hier ist','p22-3b':'gefällt mir gut','p22-3c':'das ist schon okay','p22-3d':'das ist nicht so toll','p22-3e':'Hier gibt es viele'},'naCheckSm')}
