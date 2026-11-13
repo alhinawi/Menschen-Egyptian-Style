@@ -1,0 +1,19 @@
+@font-face{font-family:NafGentium;src:url('/assets/fonts/gentium-book-basic-regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:NafGentium;src:url('/assets/fonts/gentium-book-basic-bold.ttf') format('truetype');font-weight:700;font-display:swap}
+@font-face{font-family:NafFira;src:url('/assets/fonts/firasans-latin-600.woff2') format('woff2');font-weight:600;font-display:swap}
+.nativeAB11F .nafCanvas{background:#fefefe;font-family:NafGentium,Georgia,serif}
+.nativeAB11F .nafText{position:absolute;white-space:pre;margin:0;font-kerning:normal}
+.nativeAB11F .naf-r{font-family:NafGentium,Georgia,serif;font-weight:400}
+.nativeAB11F .naf-b{font-family:NafGentium,Georgia,serif;font-weight:700}
+.nativeAB11F .naf-sans{font-family:NafFira,'Fira Sans',sans-serif;font-weight:600}
+.nativeAB11F .nafBox{position:absolute}
+.nativeAB11F .nafLine{position:absolute;left:0;top:0;pointer-events:none;overflow:visible}
+.nativeAB11F .nafArt{position:absolute;max-width:none!important;max-height:none!important;margin:0!important;object-fit:fill;pointer-events:none}
+.nativeAB11F .nafBadge{position:absolute;box-sizing:border-box;border-top:2.2px solid #93161f;border-left:2.2px solid #93161f;pointer-events:none}
+.nativeAB11F .nafBadgeFill{position:absolute;background:#4cc01c;margin:-2.2px 0 0 -2.2px}
+.nativeAB11F .nafTipp{position:absolute;box-sizing:border-box;border-top:6px solid #be8806;border-left:17px solid #be8806;pointer-events:none}
+.nativeAB11F .nafTipp span{position:absolute;left:-14px;top:27px;font:600 9.5px NafFira,sans-serif;writing-mode:vertical-rl;transform:rotate(180deg);color:#241b06;letter-spacing:0}
+.nativeAB11F .nafField{position:absolute;box-sizing:border-box;margin:0!important;padding:0 2px!important;min-width:0!important;min-height:0!important;max-width:none!important;border:0!important;border-bottom:1.5px solid #8c8c8a!important;border-radius:0!important;background:transparent!important;color:#1d2a52;font:20px/24px NafGentium,Georgia,serif!important;outline:none}
+.nativeAB11F .nafField:focus-visible{outline:2px solid #3566b5;outline-offset:1px}
+.nativeAB11F .nafCheck{position:absolute;display:flex;align-items:center;gap:10px;z-index:5}
+.nativeAB11F .nafCheck output{font:14px NafFira,Arial,sans-serif;color:#31532c}
