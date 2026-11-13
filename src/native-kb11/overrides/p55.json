@@ -1,0 +1,20 @@
+{
+  "keep": [
+    [
+      0,
+      0,
+      1075,
+      1521
+    ]
+  ],
+  "checks": {
+    "task1": [
+      850,
+      885
+    ]
+  },
+  "notes": [
+    "Task 1: 3 graded radio rows over the printed gold circles (a Deutschland / b aus frischen Zutaten / c viele Kartoffeln - verified against the recipe text)",
+    "Task 2 project work + printed oval example: no fields"
+  ]
+}
