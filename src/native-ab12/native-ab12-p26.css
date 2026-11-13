@@ -1,8 +1,9 @@
 [data-native-ab12="26"] .naCanvas .naText.naHead2{font-family:DroidSerif,Georgia,serif!important;color:#2d2b25!important}
-[data-native-ab12="26"] .naCanvas .naText.naH38{font-size:34.5px!important;letter-spacing:2.2px!important}
+[data-native-ab12="26"] .naCanvas .naText.naH38{font-size:35px!important;letter-spacing:2.2px!important}
 [data-native-ab12="26"] .naCanvas .naSans2{font-family:DroidSerif,Georgia,serif!important;font-size:17px!important;letter-spacing:0!important;color:#1c1c1c}
 [data-native-ab12="26"] .naCanvas .naSans2.naKann{font-family:ABDroidSans,FiraSans,sans-serif!important;font-weight:700;font-size:20px!important;color:#1f4e96}
-[data-native-ab12="26"] .naCanvas .naSect{position:absolute;font-family:ABDroidSans,FiraSans,sans-serif;font-weight:700;font-size:17.5px;letter-spacing:.3px;color:#1e2214;white-space:pre}
+[data-native-ab12="26"] .naCanvas .naSect{position:absolute;font-family:DroidSerif,Georgia,serif;font-weight:700;font-size:17.3px;letter-spacing:0;color:#1e2214;white-space:pre}
+[data-native-ab12="26"] .naCanvas .naSect .naTag{font-weight:400;font-size:15.5px}
 [data-native-ab12="26"] .naCanvas .naSans2.naMark{color:#305999;font-size:13px!important}
 [data-native-ab12="26"] .naCanvas .naSans2.naTri{color:#35a459;font-size:13px!important}
 [data-native-ab12="26"] .naCanvas .naField{position:absolute;border:0!important;border-bottom:1.5px solid #b9c0c6!important;border-radius:0!important;background:transparent!important;height:25px!important;min-height:0!important;padding:0 2px!important;margin:0!important;box-sizing:border-box;font-family:DroidSerif,Georgia,serif!important;font-size:17px!important;color:#17476f!important;letter-spacing:0!important}
