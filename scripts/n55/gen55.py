@@ -94,8 +94,8 @@ items.append({'k':'chk','g':'g1','x':960,'y':330})
 
 # ---------- ex 6 ----------
 t(150,461,'Lesen Sie die SMS.',c='naFiraM',col=DARK,target=182,path=FIRA)
-t(122,506,'a',s=15,col='#434e95',b=1)
-t(155,504,'Markieren Sie die trennbaren Verben blau und die nicht trennbaren Verben grün.',c='naRSans',s=18.5,col='#2a2a28')   # FiraSans 700 per scan; fit ~702px (155-857), probe-corrected
+t(122,504,'a',c='naRSans',s=17.5,col='#2f4a90')   # scan: bold blue sans, ink 123-129/495-503
+t(155,504,'Markieren Sie die trennbaren Verben blau und die nicht trennbaren Verben grün.',c='naFiraS',s=18.5,col='#2a2a28')   # FiraSans 600 per scan (parent r5); fit ~702px (155-857), probe-corrected
 items.append({'k':'r','x':310,'y':507,'w':207,'h':2,'col':'#3b4a9c'})
 items.append({'k':'r','x':593,'y':507,'w':261,'h':2,'col':'#69bb58'})
 # SMS cards: Fira Sans Condensed; scan line pitch ~25.6px, body ~19.5 PIL (18.9 rendered),

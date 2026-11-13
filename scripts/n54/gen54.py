@@ -91,32 +91,53 @@ DARK='#1d1d1b'
 # ---------- ex 1 ----------
 t(166,196,'Das war Herbert früher. Das ist er heute. Ordnen Sie zu.',c='naFiraM',col=DARK,target=552,path=FIRA)
 SBANK = round(best_size('hatte',FIRA400,45,lo=13,hi=24),1)   # 16.5
-BANKCOL = '#5e6174'   # scan dark-quartile ink (94,97,116)
+BANKCOL = '#586385'   # scan core ink (88,99,133)
 for bx, bw, struck in [(170,'hatte',1),(227,'hat',1),(269,'hatten',0),(336,'war',0),(381,'hat',0),(422,'ist',0),
                        (457,'hatte',0),(514,'hat',0),(555,'haben',0),(617,'waren',0),(682,'hatte',0)]:
-    t(bx, 236, bw, s=SBANK, c='naBank54'+(' naStrike54' if struck else ''), col=BANKCOL)
-for px_ in (220,261,329,373,414,448,506,546,610,673):   # thin dark navy pipes at scan ink x
-    items.append({'k':'r','x':px_,'y':220,'w':2,'h':17,'col':BANKCOL})
-t(188,390,'Früher …',c='naDB',col='#353331',s=17.8)   # scan ink 188-276
-t(552,390,'Heute …',c='naDB',col='#353331',s=17.7)   # scan ink 552-630
+    t(bx, 236, bw, s=SBANK, c='naBank54', col=BANKCOL)
+for sx,sw in ((169,40),(226,33)):   # pen strikes on 1st hatte + 2nd hat at scan extents (y228, ink 109,112,174)
+    items.append({'k':'r','x':sx,'y':228,'w':sw,'h':1,'col':'#6d70ae'})
+for px_ in (220,261,329,373,414,448,506,546,610,673):   # 1px pipes, scan ink x + warm dark tone (112,109,80)
+    items.append({'k':'r','x':px_,'y':220,'w':1,'h':17,'col':'#706d50'})
+t(188,390,'Früher …',c='naDB',col='#3a3a34',s=18.3)   # scan ink 188-276, bold DroidB
+t(552,390,'Heute …',c='naDB',col='#3a3a34',s=18.2)   # scan ink 552-630, bold DroidB
 # rows hand-placed word-per-word at scan ink x, one size (scan body ~18.3 PIL -> 17.7 browser)
 S1 = 17.7
 for x,ly,lab in [(165,415,'a'),(164,468,'b'),(164,493,'c'),(165,518,'d'),(164,544,'e')]:
     t(x,ly,lab,s=18.5,col='#434240')   # scan letters: core ink ~#40, ascender ~14-16px
-# per-word sizes fitted so each word's render width == its scan ink width (clamped 16.4-17.4)
-for ly,pairs in [(415,[(233,'Herbert',17.3),(308,'Locken',16.6),(375,'und',16.4),(415,'seine',16.9)]),
-                 (441,[(189,'Haare',16.4),(355,'lang.',16.7)]),
-                 (468,[(297,'er',16.4),(320,'sehr',16.4),(363,'dünn.',17.0)]),
-                 (493,[(297,'er',16.4),(320,'eine',16.4),(364,'Brille.',17.0)]),
-                 (518,[(297,'er',16.4),(320,'einen',17.2),(376,'Bart.',16.4)]),
-                 (544,[(297,'er',16.4),(320,'und',16.4),(360,'seine',16.9),(412,'Freundin',17.3)]),
-                 (569,[(188,'nur Fahrräder.',17.7)]),   # scan ink 188-317
-                 (415,[(579,'er',16.4),(602,'kurze',16.8),(658,'Haare.',16.5)]),
-                 (468,[(660,'er',16.4),(683,'ein',16.4),(716,'bisschen',17.4),(797,'dick.',16.6)]),
-                 (493,[(660,'er',16.4),(682,'keine',16.9),(737,'Brille.',17.0)]),
-                 (518,[(660,'er',16.4),(683,'keinen',17.3),(750,'Bart.',16.4)]),
-                 (544,[(660,'er',16.4),(683,'und',16.4),(723,'seine',16.9),(774,'Frau',16.4),(820,'ein',16.4),(853,'Auto.',16.4)])]:
-    for x,txt,ws in pairs: t(x,ly,txt,s=ws)
+# ex1 rows: each word ink-fitted to its scan ink extent (size + position), measured live from the scan
+import numpy as _np
+from PIL import Image as _Img, ImageFont as _IF
+_SCANIMG = _np.asarray(_Img.open(f'{REPO}/assets/ab-a12-p54.png').convert('RGB')).astype(int)
+def ink_extent(x0,y0,x1,y1,thr=150):
+    band=_SCANIMG[max(0,y0):min(H,y1),max(0,x0):min(W,x1)].max(axis=2)
+    m=band<thr
+    cols=_np.where(m.any(axis=0))[0]
+    if len(cols)==0: return None
+    return max(0,x0)+int(cols[0]), max(0,x0)+int(cols[-1])
+_fc={}
+def ink_fit(text,target,lo=16.0,hi=18.6):
+    best=None; s=lo
+    while s<=hi+1e-9:
+        key=round(s*2)/2
+        if key not in _fc: _fc[key]=_IF.truetype(DROID,int(round(key*4)))
+        bb=_fc[key].getbbox(text)
+        iw=(bb[2]-bb[0])/4/1.033
+        if best is None or abs(iw-target)<abs(best[1]-target): best=(key,iw,bb[0]/4/1.033)
+        s+=0.5
+    return best
+for ly,xlo,xhi in [(415,233,545),(441,186,545),(468,290,545),(493,290,545),(518,290,545),(544,290,545),(569,180,545),
+                (415,579,1072),(468,655,1072),(493,655,1072),(518,655,1072),(544,655,1072)]:
+    row=[w for w in sorted([w for w in WORDS if abs(w['y']+w['h']-ly)<=12 and w['x']>=160], key=lambda w:w['x'])]
+    for w in row:
+        if w['x']<xlo or w['x']>=xhi: continue
+        ex=ink_extent(w['x']-4,w['y']-3,w['x']+w['w']+5,w['y']+w['h']+3)
+        if not ex: continue
+        x0,x1=ex
+        txt=w['text']
+        if txt.endswith(','): txt=txt[:-1]+'.'   # OCR comma->period confusion (scan shows '.')
+        s,iw,lb=ink_fit(txt,x1-x0+1)
+        t(round(x0-lb,1), ly, txt, s=s)
 # field rules measured from scan ink (y = printed rule, x/w = rule extent)
 RULES1 = {'p54-1f0':(246,444,101,'waren'),'p54-1f1':(188,470,101,'war'),'p54-1h0':(551,471,101,'ist'),
  'p54-1f2':(188,496,102,'hatte'),'p54-1h1':(551,497,101,'hat'),
@@ -143,7 +164,7 @@ for ly, fids in [(711,['p54-2b','p54-2c','p54-2d']),
                  (821,['p54-2j'])]:
     br=[(RULES2[x][0]-4,RULES2[x][0]+RULES2[x][2]+4) for x in fids]
     emit_line(ly, breaks=br, label=False, s=18.0)
-emit_line(847, label=False, s=18.0)           # und haben nie mit uns gespielt.
+emit_line(849, label=False, s=18.0)           # und haben nie mit uns gespielt. (scan baseline +2)
 items.append({'k':'chk','g':'g2','x':950,'y':836})
 
 # ---------- ex 3 ----------
