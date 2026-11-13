@@ -26,11 +26,13 @@ def field(fid, g, ans):
 
 def radio(fid, name, correct):
     f = F[fid]
-    items.append({'k':'d','id':fid,'v':'1','name':name,'a':correct,'x':f['x'],'y':f['y'],'s':24,'l':f['label'],'g':'g3'})
+    items.append({'k':'d','id':fid,'v':'1','name':name,'a':correct,'x':f['x']+3,'y':f['y']+3,'s':17,'l':f['label'],'g':'g3'})
 
-def emit_line(y, breaks=(), tol=10, label=True, **kw):
+def emit_line(y, breaks=(), tol=10, label=True, s=None, **kw):
     """Emit runs for one printed line; breaks = (x0,x1) zones (fields/radios/handwriting)
-    that split runs. Row label a-f emitted grey when label=True."""
+    that split runs. Row label a-f emitted grey when label=True.
+    s='auto': one uniform size for the whole line, fitted so word runs + break
+    widths span the printed line width (no per-run size jitter)."""
     words = [w for w in ln_words(y, tol)]
     for w in words:
         tx = w['text']
@@ -48,10 +50,18 @@ def emit_line(y, breaks=(), tol=10, label=True, **kw):
                 groups.append(cur); cur = []
         cur.append(w)
     if cur: groups.append(cur)
+    us = s
+    if s == 'auto':
+        allws = [w for g in groups for w in g]
+        if allws:
+            x0 = groups[0][0]['x']; x1 = max(w['x']+w['w'] for w in allws)
+            bw = sum(min(b1,x1)-max(b0,x0) for b0,b1 in breaks if b1 > x0 and b0 < x1)
+            txt = ' '.join(w['text'] for w in allws)
+            us = best_size(txt, DROID, max(20, x1-x0-bw), lo=13, hi=24)
     for g in groups:
         x0 = g[0]['x']; x1 = max(w['x']+w['w'] for w in g)
         txt = ' '.join(w['text'] for w in g).replace('Haare,','Haare.').replace('Brille,','Brille.')
-        t(x0, line_baseline(g), txt, target=x1-x0, **kw)
+        t(x0, line_baseline(g), txt, s=us, target=None if us else x1-x0, **kw)
 
 def ln_words(y, tol=10):
     return [w for w in sorted([w for w in WORDS if abs(w['y']-y)<=tol], key=lambda w:w['x']) if w['x']>=160]
@@ -69,52 +79,58 @@ items.append({'k':'a','n':'bg','x':0,'y':0,'w':W,'h':H,'alt':'Seite 54 Hintergru
 DARK='#1d1d1b'
 # ---------- ex 1 ----------
 t(166,196,'Das war Herbert früher. Das ist er heute. Ordnen Sie zu.',c='naFiraM',col=DARK,target=552,path=FIRA)
-t(169,238,'hatte | hat | hatten | war | hat | ist | hatte | hat | haben | waren | hatte',c='naFiraR',col='#696c97',target=554,path=FIRA400)
-t(188,396,'Früher …',c='naDB',col='#4d4b4a',target=100)
-t(545,396,'Heute …',c='naDB',col='#4d4b4a',target=92)
+_bank='hatte | hat | hatten | war | hat | ist | hatte | hat | haben | waren | hatte'
+items.append({'k':'t','x':169,'y':236,'t':'','s':best_size(_bank,FIRA400,552,lo=13,hi=24),'c':'naFiraR','col':'#696c97',
+ 'segs':[{'t':'hatte','c':'naStrike54'},{'t':' | '},{'t':'hat','c':'naStrike54'},{'t':' | hatten | war | hat | ist | hatte | hat | haben | waren | hatte'}]})
+t(193,391,'Früher …',c='naDB',col='#4d4b4a',s=19.5)
+t(551,391,'Heute …',c='naDB',col='#4d4b4a',s=19.5)
 # row a (handwriting kept in bg: hatte x265-325, hat x625-665)
-emit_line(408, breaks=[(178,232),(540,578)])
-emit_line(433, breaks=[(244,350)])           # Haare ___ lang.
-field('p54-1f0','g1','waren')
-for ly, fid, ans, hid, hans in [
- (459,'p54-1f1','war','p54-1h0','ist'),
- (485,'p54-1f2','hatte','p54-1h1','hat'),
- (511,'p54-1f3','hatte','p54-1h2','hat'),
- (537,'p54-1f4','hatten','p54-1h3','haben')]:
-    f1,f2 = F[fid],F[hid]
-    emit_line(ly, breaks=[(f1['x']-4,f1['x']+f1['w']+4),(f2['x']-4,f2['x']+f2['w']+4)])
-    field(fid,'g1',ans); field(hid,'g1',hans)
-emit_line(563)                                # nur Fahrräder.
+emit_line(407, breaks=[(178,232),(540,578)], s='auto')
+emit_line(426, breaks=[(244,350)], s='auto')  # Haare ___ lang.
+# field rules measured from scan ink (y = printed rule, x/w = rule extent)
+RULES1 = {'p54-1f0':(245,444,104,'waren'),'p54-1f1':(188,470,61,'war'),'p54-1h0':(551,470,101,'ist'),
+ 'p54-1f2':(187,496,104,'hatte'),'p54-1h1':(583,497,70,'hat'),
+ 'p54-1f3':(187,522,104,'hatte'),'p54-1h2':(550,522,89,'hat'),
+ 'p54-1f4':(188,548,103,'hatten'),'p54-1h3':(550,548,103,'haben')}
+for fid,(x,ry,w,ans) in RULES1.items():
+    items.append({'k':'f','id':fid,'x':x,'y':ry,'w':w,'l':F[fid]['label'],'a':ans,'g':'g1'})
+for ly in (459,485,511,537):
+    emit_line(ly, breaks=[(180,300),(545,660)], s='auto')
+emit_line(563, s='auto')                      # nur Fahrräder.
 items.append({'k':'chk','g':'g1','x':950,'y':552})
 
 # ---------- ex 2 ----------
 items.append({'k':'t','x':166,'y':641,'t':'','s':21.0,'c':'naFiraM','col':DARK,
-  'segs':[{'t':'Ergänzen Sie '},{'t':'haben oder sein','b':1},{'t':' im Präteritum.'}]})
+  'segs':[{'t':'Ergänzen Sie '},{'t':'haben oder sein','i':1,'w':400},{'t':' im Präteritum.'}]})
 t(164,678,'Schau mal, hier sind Fotos von früher:',target=339)
-emit_line(693, breaks=[(195,247)])            # Das [hw waren] (a) mein Bruder...
-for ly, fids in [(717,['p54-2b','p54-2c','p54-2d']),
-                 (743,['p54-2e','p54-2f']),
-                 (769,['p54-2g']),
-                 (795,['p54-2h','p54-2i']),
+emit_line(687, breaks=[(195,247)], s='auto')  # Das [hw waren] (a) mein Bruder...
+RULES2 = {'p54-2b':(180,729,113,'war'),'p54-2c':(405,729,129,'war'),'p54-2d':(814,730,129,'war'),
+ 'p54-2e':(335,755,129,'hatte'),'p54-2f':(705,756,129,'war'),'p54-2g':(599,781,84,'waren'),
+ 'p54-2h':(244,806,130,'hatten'),'p54-2i':(822,808,110,'war'),'p54-2j':(619,833,82,'waren')}
+for fid,(x,ry,w,ans) in RULES2.items():
+    items.append({'k':'f','id':fid,'x':x,'y':ry,'w':w,'l':F[fid]['label'],'a':ans,'g':'g2'})
+for ly, fids in [(711,['p54-2b','p54-2c','p54-2d']),
+                 (738,['p54-2e','p54-2f']),
+                 (764,['p54-2g']),
+                 (790,['p54-2h','p54-2i']),
                  (821,['p54-2j'])]:
-    br=[(F[x]['x']-4,F[x]['x']+F[x]['w']+4) for x in fids]
-    emit_line(ly, breaks=br, label=False)
-    for x in fids: field(x,'g2',F[x]['answer'])
-emit_line(847, label=False)                   # und haben nie mit uns gespielt.
+    br=[(RULES2[x][0]-4,RULES2[x][0]+RULES2[x][2]+4) for x in fids]
+    emit_line(ly, breaks=br, label=False, s='auto')
+emit_line(847, label=False, s='auto')         # und haben nie mit uns gespielt.
 items.append({'k':'chk','g':'g2','x':950,'y':836})
 
 # ---------- ex 3 ----------
 t(162,923,'Was passt? Kreuzen Sie an.',c='naFiraM',col=DARK,target=266,path=FIRA)
-emit_line(952, breaks=[(562,610),(751,800)])  # row a (printed circles stay in bg)
-for ly, lab, pair, extra in [(975,'b',[('p54-3b-traurig',True),('p54-3b-langweilig',False)],[(685,695)]),
-                      (1001,'c',[('p54-3c-interessant',False),('p54-3c-glücklich',True)],[]),
-                      (1028,'d',[('p54-3d-unfreundlich',True)],[]),
-                      (1052,None,[('p54-3d-fröhlich',False)],[]),
-                      (1080,'e',[],[]),
-                      (1104,None,[('p54-3e-glatt',False),('p54-3e-schlank',True)],[]),
-                      (1130,'f',[('p54-3f-seltsam',True),('p54-3f-dick',False)],[(632,644)])]:
+emit_line(944, breaks=[(562,610),(751,800)], s='auto')  # row a (printed circles stay in bg)
+for ly, lab, pair, extra in [(969,'b',[('p54-3b-traurig',True),('p54-3b-langweilig',False)],[(685,695)]),
+                      (996,'c',[('p54-3c-interessant',False),('p54-3c-glücklich',True)],[]),
+                      (1022,'d',[('p54-3d-unfreundlich',True)],[]),
+                      (1048,None,[('p54-3d-fröhlich',False)],[]),
+                      (1074,'e',[],[]),
+                      (1098,None,[('p54-3e-glatt',False),('p54-3e-schlank',True)],[]),
+                      (1124,'f',[('p54-3f-seltsam',True),('p54-3f-dick',False)],[(632,644)])]:
     br=[(F[r]['x']-4,F[r]['x']+28) for r,_ in pair]+extra
-    emit_line(ly, breaks=br, label=lab is not None)
+    emit_line(ly, breaks=br, label=lab is not None, s='auto')
     for r,c in pair: radio(r,'p54-'+r.split('-')[1],c)
 items.append({'k':'chk','g':'g3','x':955,'y':1115})
 

@@ -9,6 +9,7 @@ P = 55
 scan = load_scan(P)
 W, H = scan['width'], scan['height']
 WORDS = scan['words']
+FIRAC = REPO + '/assets/fonts/firasanscond-latin-400.ttf'
 F = {f['id']: f for f in scan['fields']}
 im = np.asarray(Image.open(f'{REPO}/assets/ab-a12-p55.png').convert('RGB')).astype(int)
 
@@ -34,7 +35,7 @@ for w in WORDS:                                   # OCR y-jitter: 'fast' belongs
 def ln_words(y, tol=9):
     return [w for w in sorted([w for w in WORDS if abs(w['y']-y)<=tol], key=lambda w:w['x']) if w['x']>=140]
 
-def emit_line(y, breaks=(), tol=9, label=True, gap_split=0, skip=(), **kw):
+def emit_line(y, breaks=(), tol=9, label=True, gap_split=0, skip=(), s=None, **kw):
     words = [w for w in ln_words(y, tol) if not w.get('_done')]
     for w in words:
         tx = w['text'].rstrip('.').lower()
@@ -56,7 +57,7 @@ def emit_line(y, breaks=(), tol=9, label=True, gap_split=0, skip=(), **kw):
         for w in g: w['_done']=True
         x0 = g[0]['x']; x1 = max(w['x']+w['w'] for w in g)
         txt = ' '.join(w['text'] for w in g)
-        t(x0, line_baseline(g), txt, target=x1-x0, **kw)
+        t(x0, line_baseline(g), txt, s=s, target=None if s else x1-x0, **kw)
 
 # ---------- erase ----------
 R = [(118,490,135,512),(118,1038,142,1062)]   # printed a/b labels (native re-render)
@@ -81,25 +82,46 @@ print('blue underline:', stroke(225,598,320,608,'b'), 'green:', stroke(258,622,3
 DARK='#1d1d1b'
 # ---------- ex 5 ----------
 t(150,183,'Wie heißt das Gegenteil? Schreiben Sie.',c='naFiraM',col=DARK,target=389,path=FIRA)
-for ly, lab, word in [(272,'a','interessant'),(297,'b','freundlich'),(323,'c','sympathisch'),(348,'d','dick'),(374,'e','glücklich')]:
-    t(152,ly,lab,s=15,col='#828185')
-    t(192,ly,word,target=len(word)*11)
-t(330,348,'schlank /',target=96)
-field('p55-5b','g1','unfreundlich'); field('p55-5c','g1','unsympathisch')
-field('p55-5d','g1','dünn'); field('p55-5e1','g1','unglücklich|traurig'); field('p55-5e2','g1','unglücklich|traurig')
+S5 = best_size('sympathisch', DROID, 110, lo=13, hi=24)
+for ly, lab, word, wx in [(272,'a','interessant',176),(297,'b','freundlich',176),(323,'c','sympathisch',176),(348,'d','dick',176),(374,'e','glücklich',175)]:
+    t(152,ly,lab,s=S5,col='#828185')
+    t(wx,ly,word,s=S5)
+t(345,348,'schlank /',s=S5)
+# field rules measured from scan ink
+for fid,x,ry,w in [('p55-5b',344,300,161),('p55-5c',406,326,99),('p55-5d',432,352,162),('p55-5e1',344,377,168),('p55-5e2',531,377,161)]:
+    items.append({'k':'f','id':fid,'x':x,'y':ry,'w':w,'l':F[fid]['label'],'a':F[fid]['answer'],'g':'g1'})
 items.append({'k':'chk','g':'g1','x':960,'y':330})
 
 # ---------- ex 6 ----------
 t(150,461,'Lesen Sie die SMS.',c='naFiraM',col=DARK,target=182,path=FIRA)
 t(122,506,'a',s=15,col='#434e95',b=1)
 t(154,506,'Markieren Sie die trennbaren Verben blau und die nicht trennbaren Verben grün.',target=704)
-items.append({'k':'r','x':311,'y':506,'w':207,'h':3,'col':'#6596c4'})
-items.append({'k':'r','x':561,'y':507,'w':300,'h':2,'col':'#69bb58'})
-# SMS cards: emit each line; split at inter-card gaps
-card_lines = [555,569,587,603,613,629,638,654,664,680,690,716,
-              798,807,823,832,849,858,880,901,910,928]
-for ly in card_lines:
-    emit_line(ly, tol=8, label=False, gap_split=40, path=DROID)
+items.append({'k':'r','x':310,'y':507,'w':207,'h':2,'col':'#6596c4'})
+items.append({'k':'r','x':593,'y':507,'w':261,'h':2,'col':'#69bb58'})
+# SMS cards: per-card line clustering from scan ink, Fira Sans Condensed 13px
+def card(x0,x1,y0,y1):
+    ws=[w for w in WORDS if x0<=w['x']<x1 and y0<=w['y']<y1 and not w.get('_done') and not (w['text'].isdigit() and w['w']<=20)]
+    cl=[]
+    for w in sorted(ws,key=lambda w:w['y']):
+        if not cl or w['y']-cl[-1][-1]['y']>9: cl.append([w])
+        else: cl[-1].append(w)
+    for c in cl:
+        c=sorted(c,key=lambda w:w['x'])
+        groups,cur=[],[]
+        for w in c:
+            if cur and w['x']-(cur[-1]['x']+cur[-1]['w'])>40: groups.append(cur);cur=[]
+            cur.append(w)
+        if cur: groups.append(cur)
+        for g in groups:
+            for w in g: w['_done']=True
+            gx=g[0]['x']
+            t(gx, line_baseline(g), ' '.join(w['text'] for w in g), s=13, c='naFiraC', path=FIRAC)
+card(140,400,540,745)   # card 1
+card(400,700,540,745)   # card 3
+card(700,960,540,745)   # card 5
+card(140,400,745,970)   # card 2
+card(400,700,745,970)   # card 4
+card(700,960,745,970)   # card 6
 # card1 printed example underlines (redrawn after full erase)
 items.append({'k':'r','x':295,'y':603,'w':63,'h':2,'col':'#6596c4'})
 items.append({'k':'r','x':165,'y':629,'w':26,'h':2,'col':'#6596c4'})
@@ -116,10 +138,10 @@ items.append({'k':'chk','g':'g2','x':960,'y':900})
 # ---------- 6b ----------
 t(123,1060,'b',s=15,col='#434e95',b=1)
 t(154,1060,'Sortieren Sie die Partizipien und ergänzen Sie den Infinitiv.',target=519)
-t(154,1100,'trennbar',c='naDB',col='#3c3b38',target=83)
-t(480,1100,'nicht trennbar',c='naDB',col='#3c3b38',target=140)
-for x in (155,481): t(x,1138,'Partizip',i=True,s=16,col='#5f6660',target=68)
-for x in (275,603): t(x,1138,'Infinitiv',i=True,s=16,col='#5f6660',target=74)
+t(154,1098,'trennbar',c='naDB',col='#3c3b38',target=83)
+t(480,1098,'nicht trennbar',c='naDB',col='#3c3b38',target=140)
+for x in (155,481): t(x,1138,'Partizip',s=16,col='#6f716c',target=68)
+for x in (275,603): t(x,1138,'Infinitiv',s=16,col='#6f716c',target=74)
 # field rows: trennbar 2 rows, nicht trennbar 5 rows
 rowsT = [('p55-6b-t1p','eingeladen','p55-6b-t1i','einladen'),('p55-6b-t2p','mitgenommen','p55-6b-t2i','mitnehmen')]
 rowsN = [('p55-6b-n1p','entschuldigt','p55-6b-n1i','sich entschuldigen|entschuldigen'),
