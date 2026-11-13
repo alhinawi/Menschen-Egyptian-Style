@@ -135,5 +135,62 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {footerR('7','sieben',1386)}
   {art('tab7',1000,1383,71,25)}
  </>}
+ {page==='8'&&<>
+  {text(111,86,300,'BASISTRAINING','naHeadline naNw')}
+  <div className="naRule" style={{left:362,top:102,width:601,borderColor:'#fce80f'}}/>
+  {kb(56,166,'KB 5')}
+  {title('7',109,161,500,'Wie komme ich zu …?','naYB')}
+  {side(72,208,'SCHREIBEN')}
+  {text(153,203,790,'Lesen Sie die SMS. Was antwortet Marina? Schreiben Sie Marinas E-Mail fertig.','naS20 naB20 naNw')}
+  <div className="naText naS18 naBank naBankHl naNw" style={{left:158,top:243,width:730}}><Words text="Brücke | Ampel | links abbiegen | Polizei | Domplatz | nach rechts fahren | Hotel | mein Haus"/></div>
+  {art('sms',64,300,278,190)}
+  <div style={{position:'absolute',left:374,top:278,width:350,height:306,border:'1px solid #c9c9c9',background:'#fff'}}/>
+  {text(402,293,240,'Von:  Marina Kreuzner','naS16 naNw')}
+  <div className="naRule" style={{left:388,top:316,width:252}}/>
+  {text(409,319,240,'An:  philippX@web.de','naS16 naNw')}
+  <div className="naRule" style={{left:388,top:342,width:252}}/>
+  {text(388,347,240,'Betreff: Besuch','naS16 naNw')}
+  <div className="naRule" style={{left:388,top:368,width:252}}/>
+  {text(388,384,300,'Liebe Susanna, lieber Philipp,','naS16 naNw')}
+  {text(387,407,320,'den Weg kann ich Euch leicht beschreiben.','naS16 naNw')}
+  {text(388,431,320,'Meinburg ist nicht groß und ich wohne im','naS16 naNw')}
+  {text(388,454,320,'Zentrum. Ihr fährt nach Meinburg und seht','naS16 naNw')}
+  {text(389,481,220,'gleich eine Brücke. …','naS16 naNw')}
+  <div className="naRule" style={{left:388,top:520,width:252}}/>
+  <div className="naRule" style={{left:388,top:545,width:252}}/>
+  <div className="naRule" style={{left:388,top:570,width:252}}/>
+  {text(391,586,300,'Bis Samstag! Viele Grüße, Marina','naS16 naNw')}
+  {art('map',745,285,285,320)}
+  {kb(56,648,'KB 7')}
+  {title('8',109,639,500,'Ordnen Sie die Antworten zu.','naYB')}
+  {side(72,686,'KOMMUNIKATION')}
+  <div className="naText naS18 naBank naBankHl naNw" style={{left:157,top:681,width:530}}><Words text="ist sehr nett | sehen Sie schon | "/><span style={{background:'#fdf0a0'}}><Words text="bin fremd hier"/></span><Words text=" | Wenden Sie hier |"/></div>
+  <div className="naText naS18 naBank naBankHl naNw" style={{left:155,top:706,width:530}}><Words text="Trotzdem: Dankeschön | bin nicht von hier | ist ganz in der Nähe"/></div>
+  {text(151,745,20,'a','naLet13')}<div className="naSq8" style={{left:175,top:753}}/>{text(196,745,530,'Können Sie mir helfen? Wo ist das Cafe „Glockner“?','naS20 naNw')}
+  <div className="naTri8" style={{left:176,top:779}}/>{text(196,772,165,'Tut mir leid, ich','naS20 naNw')}{art('binfremd',343,772,112,28)}{text(460,772,30,'/','naS20')}
+  {text(197,797,32,'Ich','naS20 naNw')}{field('8-8a',232,800,311,'8a')}{text(548,797,15,'.','naS20')}
+  {text(151,835,20,'b','naLet13')}<div className="naSq8" style={{left:175,top:843}}/>{text(196,835,410,'Ja, das ist gleich die nächste Straße links.','naS20 naNw')}
+  <div className="naTri8" style={{left:176,top:861}}/>{text(196,861,150,'Vielen Dank, das','naS20 naNw')}{field('8-8b',349,864,298,'8b')}{text(652,861,15,'.','naS20')}
+  {text(151,900,20,'c','naLet13')}<div className="naSq8" style={{left:175,top:908}}/>{text(196,900,365,'Oh. Tut mir leid. Das weiß ich nicht.','naS20 naNw')}
+  <div className="naTri8" style={{left:176,top:926}}/>{text(196,926,68,'Schade.','naS20 naNw')}{field('8-8c',268,929,302,'8c')}{text(575,926,15,'!','naS20')}
+  {text(151,977,20,'d','naLet13')}<div className="naSq8" style={{left:175,top:985}}/>{text(196,977,495,'Kann ich Sie etwas fragen? Ich suche den Bahnhof.','naS20 naNw')}
+  <div className="naTri8" style={{left:176,top:1004}}/>{text(196,1004,388,'Fahren Sie zwei Kilometer geradeaus. Dann','naS20 naNw')}{field('8-8d',588,1007,284,'8d')}
+  {text(196,1029,120,'den Bahnhof.','naS20 naNw')}
+  {text(151,1068,20,'e','naLet13')}<div className="naSq8" style={{left:175,top:1076}}/>{text(196,1068,410,'Kennen Sie das Restaurant „Schonblick“?','naS20 naNw')}
+  <div className="naTri8" style={{left:176,top:1094}}/>{text(194,1094,68,'Ja, das','naS20 naNw')}{field('8-8e1',265,1097,305,'8e1')}{text(573,1094,12,'.','naS20')}{field('8-8e2',587,1097,285,'8e2')}
+  {text(196,1120,470,'und fahren Sie zurück bis zur Ampel und dann links.','naS20 naNw')}
+  {check('8-8',860,1150,{'8-8a':'bin nicht von hier','8-8b':'ist sehr nett','8-8c':'Trotzdem: Dankeschön','8-8d':'sehen Sie schon','8-8e1':'ist ganz in der Nähe','8-8e2':'Wenden Sie hier'})}
+  {kb(56,1190,'KB 9')}
+  {title('9',108,1180,600,'Finden Sie passende Fragen zu den Antworten.','naYB')}
+  {side(72,1228,'KOMMUNIKATION')}
+  {text(150,1223,20,'a','naLet13')}{text(180,1223,318,'Entschuldigen Sie bitte. Kann ich Sie','naS20 naNw')}{art('etwasfragen',502,1224,102,30)}{text(610,1223,180,'– Ja, kein Problem.','naS20 naNw')}
+  {text(150,1249,20,'b','naLet13')}{text(180,1249,135,'Können Sie mir','naS20 naNw')}{field('8-9b',318,1251,257,'9b')}{text(580,1249,110,'? – Ja, gern.','naS20 naNw')}
+  {text(150,1276,20,'c','naLet13')}{text(180,1276,98,'Kennen Sie','naS20 naNw')}{field('8-9c',280,1277,255,'9c')}{text(540,1276,350,'? - Ja, das Hotel „Marienhof“ ist im Zentrum.','naS20 naNw')}
+  {text(150,1301,20,'d','naLet13')}{text(180,1301,36,'Eine','naS20 naNw')}{field('8-9d',218,1302,257,'9d')}{text(480,1301,430,'. Wo ist denn hier die Bank? — Die ist gleich hier.','naS20 naNw')}
+  {text(150,1327,20,'e','naLet13')}{text(180,1327,140,'Haben Sie einen','naS20 naNw')}{field('8-9e',322,1328,263,'9e')}{text(590,1327,120,'Zeit? — Klar.','naS20 naNw')}
+  {check('8-9',860,1358,{'8-9b':'helfen','8-9c':'das Hotel „Marienhof“|das Hotel Marienhof','8-9d':'Frage','8-9e':'Moment'})}
+  {art('tab',0,1388,70,36)}
+  {footerL('8','acht',1393)}
+ </>}
  </div><audio ref={player} className="naPlayer"/></div>;
 }
