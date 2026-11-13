@@ -18,6 +18,7 @@ export function NativeAB12P31to46({page}:{page:string}){
  usePageReset(page,key,()=>{sv({...defaults});sr({})});
  const set=(id:string,v:string)=>{const n={...values,[id]:v};sv(n);localStorage.setItem(key,JSON.stringify(n))};
  const text=(x:number,y:number,w:number,t:string,cls='')=><div className={'naText '+cls} style={{left:x,top:y,width:w}}><Words text={t}/></div>;
+ const uml=(x:number,y:number,w:number,pre:string,post:string)=><div className='naText naNw' style={{left:x,top:y,width:w}}><Words text={pre}/><span className="naUml">¨</span><Words text={post}/></div>;
  const stext=(x:number,y:number,w:number,t:string,st:Record<string,string|number>,cls='')=><div className={'naText '+cls} style={{left:x,top:y,width:w,...st}}><Words text={t}/></div>;
  const rect=(x:number,y:number,w:number,h:number,c:string)=><div style={{position:'absolute',left:x,top:y,width:w,height:h,background:c}}/>;
  const lin=(x:number,y:number,w:number,h:number,c:string)=><div style={{position:'absolute',left:x,top:y,width:w,height:h,background:c}}/>;
@@ -30,10 +31,10 @@ export function NativeAB12P31to46({page}:{page:string}){
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg,[data-native-ab12] .naTitle,[data-native-ab12] .naField{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg{font-size:20px!important}[data-native-ab12] .naTitle{font-size:21px!important}[data-native-ab12] .naText.naS20{font-size:18px!important}[data-native-ab12] .naSmall{font-size:16.5px!important}[data-native-ab12] .naD19{font-size:17.5px!important}[data-native-ab12] .naField{font-size:19px!important}[data-native-ab12] .naUrl{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='41'] .naModul{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='41'] .naTitle.naGB b{background:#69bb58!important}[data-native-ab12='41'] .naTitle{font-family:FiraSans,sans-serif!important;font-size:22px!important;letter-spacing:0!important}[data-native-ab12='41'] .naText,[data-native-ab12='41'] .naBold{font-size:17px!important}[data-native-ab12='41'] .naBold{font-weight:600}[data-native-ab12='41'] .naField{font-size:17px!important}[data-native-ab12='41'] .naGray{font-size:13px!important;color:#7c7c80!important;letter-spacing:0!important}[data-native-ab12='38'] .naS14{font-size:14px!important}[data-native-ab12='31'] .naTitle,[data-native-ab12='32'] .naTitle,[data-native-ab12='33'] .naTitle,[data-native-ab12='34'] .naTitle,[data-native-ab12='35'] .naTitle,[data-native-ab12='36'] .naTitle,[data-native-ab12='37'] .naTitle,[data-native-ab12='38'] .naTitle{font-family:FiraSans,sans-serif!important;letter-spacing:0!important}"}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}> {page==='31'&&<>
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg,[data-native-ab12] .naTitle,[data-native-ab12] .naField{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg{font-size:20px!important}[data-native-ab12] .naTitle{font-size:21px!important}[data-native-ab12] .naText.naS20{font-size:18px!important}[data-native-ab12] .naSmall{font-size:16.5px!important}[data-native-ab12] .naD19{font-size:17.5px!important}[data-native-ab12] .naField{font-size:19px!important}[data-native-ab12] .naUrl{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='41'] .naModul{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='41'] .naTitle.naGB b{background:#69bb58!important}[data-native-ab12='41'] .naTitle{font-family:FiraSans,sans-serif!important;font-size:22px!important;letter-spacing:0!important}[data-native-ab12='41'] .naText,[data-native-ab12='41'] .naBold{font-size:17px!important}[data-native-ab12='41'] .naBold{font-weight:600}[data-native-ab12='41'] .naField{font-size:17px!important}[data-native-ab12='41'] .naGray{font-size:13px!important;color:#7c7c80!important;letter-spacing:0!important}[data-native-ab12='38'] .naS14{font-size:14px!important}[data-native-ab12='31'] .naHeadline,[data-native-ab12='32'] .naHeadline,[data-native-ab12='33'] .naHeadline,[data-native-ab12='34'] .naHeadline,[data-native-ab12='35'] .naHeadline,[data-native-ab12='36'] .naHeadline,[data-native-ab12='37'] .naHeadline,[data-native-ab12='38'] .naHeadline{font-size:30px!important;letter-spacing:0!important;color:#5f6460}[data-native-ab12='35'] .naSansB,[data-native-ab12='36'] .naSansB,[data-native-ab12='37'] .naSansB,[data-native-ab12='38'] .naSansB{font-family:FiraSans,sans-serif!important;font-weight:700;letter-spacing:0!important}[data-native-ab12='35'] .naUml,[data-native-ab12='36'] .naUml,[data-native-ab12='37'] .naUml,[data-native-ab12='38'] .naUml{font-size:72%;letter-spacing:0;margin-right:-2px}[data-native-ab12='35'] .naMod,[data-native-ab12='36'] .naMod,[data-native-ab12='37'] .naMod,[data-native-ab12='38'] .naMod{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='38'] .naBio{font-size:17.5px!important;letter-spacing:-0.55px!important}[data-native-ab12='38'] .naJ{white-space:normal;text-align:justify;text-align-last:justify}[data-native-ab12='31'] .naTitle,[data-native-ab12='32'] .naTitle,[data-native-ab12='33'] .naTitle,[data-native-ab12='34'] .naTitle,[data-native-ab12='35'] .naTitle,[data-native-ab12='36'] .naTitle,[data-native-ab12='37'] .naTitle,[data-native-ab12='38'] .naTitle{font-family:FiraSans,sans-serif!important;letter-spacing:0!important}"}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}> {page==='31'&&<>
   {art('0',982,42,85,78)}
   {lin(354,107,605,6,'#a6ca03')}
-  {text(107,79,240,'BASISTRAINING','naHeadline naNw')}
+  {text(107,77,240,'BASISTRAINING','naHeadline naNw')}
   {kb(78,168,'KB 6')}
   {title('5',130,160,760,'Der Fernseher ist kaputt. Schreiben Sie das Gespräch.','naGB')}
   <div className="naSide" style={{left:75,top:195}}>KOMMUNIKATION</div>
@@ -190,7 +191,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {lin(192,1045,665,2,'#c2c3c6')}
   {lin(192,1072,665,2,'#c2c3c6')}
   {lin(192,1097,665,2,'#c2c3c6')}
-  {text(128,80,241,'BASISTRAINING','naHeadline naNw')}
+  {text(128,78,241,'BASISTRAINING','naHeadline naNw')}
   {kb(80,163,'KB 8')}
   {title('9',130,158,760,'Einen Termin verschieben.','naGB')}
   <div className="naSide" style={{left:87,top:208,color:'#879cbb'}}>SCHREIBEN</div>
@@ -535,11 +536,11 @@ export function NativeAB12P31to46({page}:{page:string}){
   {lin(143,1196,274,6,'#cfaa3f')}
   {lin(143,1196,15,88,'#cfaa3f')}
   <div style={{position:'absolute',left:146,top:1232,writingMode:'vertical-rl',fontSize:9,fontWeight:700,color:'#8a3b2e',fontFamily:'Arial,sans-serif'}}>TIPP</div>
-  {text(106,83,281,'LERNWORTSCHATZ','naHeadline naNw')}
+  {text(106,81,281,'LERNWORTSCHATZ','naHeadline naNw')}
   {title('1',99,157,700,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naGB')}
   {text(146,198,81,'Im Hotel','naBold naNw')}
   {text(531,198,145,'verschieben, hat','naNw')}
-  {text(146,223,120,'Aufzug der, ¨e','naNw')}
+  {uml(146,223,120,'Aufzug der, ','e')}
   {text(543,223,98,'verschoben','naNw')}
   {stext(156,251,133,'CH/A: Lift der, -e',{color:'#8e9094'},'naNw')}
   {text(532,251,97,'passen, hat','naNw')}
@@ -549,12 +550,12 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(544,301,105,'Passt es dir/','naNw')}
   {text(146,326,134,'Föhn der, -e / -s','naNw')}
   {text(544,326,61,'Ihnen?','naNw')}
-  {text(146,352,95,'Gast der, ¨e','naNw')}
+  {uml(146,352,95,'Gast der, ','e')}
   {text(532,352,85,'pünktlich','naNw')}
-  {text(146,378,157,'Handtuch das, ¨er','naNw')}
-  {text(531,393,229,'Weitere wichtige Wörter','naNw')}
+  {uml(146,378,157,'Handtuch das, ','er')}
+  {text(531,393,229,'Weitere wichtige Wörter','naSansB naNw')}
   {text(146,404,142,'Heizung die, -en','naNw')}
-  {text(532,418,107,'Angst die, ¨e','naNw')}
+  {uml(532,418,107,'Angst die, ','e')}
   {text(146,432,109,'Klimaanlage','naNw')}
   {text(157,458,54,'die, -n','naNw')}
   {text(543,444,107,'Angst haben','naNw')}
@@ -627,7 +628,6 @@ export function NativeAB12P31to46({page}:{page:string}){
   {title('1',121,178,640,'Markieren Sie die Verben und ordnen Sie zu.','naGB')}
   <div className="naSide" style={{left:92,top:230,whiteSpace:'nowrap'}}>WÖRTER</div>
   {art('6',515,1152,207,205)}
-  {lin(688,39,148,7,'#7a7a7a')}
   {lin(677,316,114,2,'#7a7a7a')}
   {lin(248,393,138,2,'#7a7a7a')}
   {lin(621,393,200,2,'#c5c4c8')}
@@ -637,7 +637,8 @@ export function NativeAB12P31to46({page}:{page:string}){
   {lin(187,846,102,2,'#7a7a7a')}
   {lin(334,872,102,2,'#7a7a7a')}
   {text(162,292,135,'a eine Anzeige','naNw')}
-  {text(292,286,60,'lesen','naHand naD19 naNw')}
+  {text(295,294,60,'lesen','naHand naD19 naNw')}
+  {lin(295,315,52,2,'#c2c3c6')}
   {text(598,292,72,'d Angst','naNw')}
   {text(162,317,166,'b eine Ausbildung','naNw')}
   {text(598,317,139,'e eine Prüfung','naNw')}
@@ -677,18 +678,22 @@ export function NativeAB12P31to46({page}:{page:string}){
   {kb(85,711,'KB 4')}
   {title('3',121,708,500,'Ergänzen Sie mit oder ohne.','naGB')}
   <div className="naSide" style={{left:92,top:776,whiteSpace:'nowrap'}}>STRUKTUREN</div>
-  {text(187,744,250,'Cherry geht nur','naNw')}
-  {text(332,746,45,'mit','naHand naD19 naNw')}
-  {text(390,744,334,'ihrer „Starbrille“ zur Aufnahmeprüfung.','naNw')}
-  {text(295,770,585,'Aufnahmeprüfung kann sie nicht an der Pop-Akademie studieren.','naNw')}
-  {text(187,796,293,'Sie möchten ein Popstar werden?','naNw')}
-  {text(596,796,341,'eine gute Ausbildung ist das schwierig.','naNw')}
-  {text(164,822,9,'d','naNw')}
-  {text(296,822,184,'einer Ausbildung hat','naNw')}
-  {text(488,822,193,'man bessere Chancen.','naNw')}
-  {text(164,847,7,'e','naNw')}
-  {text(188,847,140,'Fabian geht nur','naNw')}
-  {text(443,847,332,'seiner Gitarre zur Aufnahmeprüfung.','naNw')}
+  {text(164,753,9,'a','naNw')}
+  {text(187,748,250,'Cherry geht nur','naNw')}
+  {text(330,750,45,'mit','naHand naD19 naNw')}
+  {lin(333,768,52,2,'#c2c3c6')}
+  {text(363,748,381,'ihrer „Starbrille“ zur Aufnahmeprüfung.','naNw')}
+  {text(164,773,9,'b','naNw')}
+  {text(295,773,585,'Aufnahmeprüfung kann sie nicht an der Pop-Akademie studieren.','naNw')}
+  {text(164,805,9,'c','naNw')}
+  {text(187,800,293,'Sie möchten ein Popstar werden?','naNw')}
+  {text(596,800,341,'eine gute Ausbildung ist das schwierig.','naNw')}
+  {text(164,825,9,'d','naNw')}
+  {text(296,826,184,'einer Ausbildung hat','naNw')}
+  {text(496,826,193,'man bessere Chancen.','naNw')}
+  {text(164,856,7,'e','naNw')}
+  {text(188,851,140,'Fabian geht nur','naNw')}
+  {text(443,852,332,'seiner Gitarre zur Aufnahmeprüfung.','naNw')}
   {kb(85,918,'KB 4')}
   {title('4',121,915,600,'Was ist richtig? Kreuzen Sie an.','naGB')}
   <div className="naSide" style={{left:92,top:967,whiteSpace:'nowrap'}}>STRUKTUREN</div>
@@ -717,14 +722,14 @@ export function NativeAB12P31to46({page}:{page:string}){
   <div className="naSide" style={{left:97,top:1150,whiteSpace:'nowrap'}}>ENTDECKEN</div>
   {text(164,1158,26,'ich','naNw')}
   {text(262,1158,10,'w','naNw')}
-  {text(271,1156,12,'e','naHand naD19 naNw')}
-  {text(283,1158,30,'rde','naNw')}
+  {text(277,1160,12,'e','naHand naD19 naNw')}
+  {text(289,1158,30,'rde','naNw')}
   {text(164,1184,21,'du','naNw')}
-  {text(164,1208,50,'er/sie','naBold naNw')}
-  {text(379,1206,80,'Sängerin','naHand naD19 naNw')}
-  {text(156,1247,37,'wir','naBold naNw')}
+  {text(164,1208,50,'er/sie','naNw')}
+  {text(379,1210,80,'Sängerin','naHand naD19 naNw')}
+  {text(164,1247,37,'wir','naNw')}
   {text(165,1275,26,'ihr','naNw')}
-  {text(164,1299,58,'sie/Sie','naBold naNw')}
+  {text(164,1299,58,'sie/Sie','naNw')}
   {art('modul-tab',0,1393,90,27)}
   {text(99,1399,230,'36 | sechsunddreißig','naFooter naNw')}
   {text(262,1184,16,'w_')}
@@ -746,10 +751,10 @@ export function NativeAB12P31to46({page}:{page:string}){
   {field('p36-2b1',530,561,227,'2 b')}
   {field('p36-2c2',578,589,227,'2 c')}
   {field('p36-2d3',346,639,227,'2 d')}
-  {field('p36-3b',190,768,102,'3 b')}
-  {field('p36-3c',487,795,103,'3 c')}
-  {field('p36-3d',190,820,100,'3 d')}
-  {field('p36-3e',335,846,105,'3 e')}
+  {field('p36-3b',190,777,102,'3 b')}
+  {field('p36-3c',487,804,103,'3 c')}
+  {field('p36-3d',190,829,100,'3 d')}
+  {field('p36-3e',335,855,105,'3 e')}
   {dot('4b','einem',255,980,'4 b einem')}
   {dot('4b','einen',359,980,'4 b einen')}
   {dot('4c','meiner',503,1006,'4 c meiner')}
@@ -763,8 +768,8 @@ export function NativeAB12P31to46({page}:{page:string}){
   {field('p36-54',279,1297,15,'5 sie/Sie')}
   {check('36-1',171,404,{'p36-1b':'abschließen','p36-1c':'anmelden','p36-1d':'haben','p36-1e':'schaffen','p36-1f':'bekommen'})}
   {check('36-2',346,680,{'p36-2b0':'Anzeige','p36-2b1':'Sprachenschule','p36-2c2':'Studienplatz','p36-2d3':'Ausbildung'})}
-  {check('36-3',190,887,{'p36-3b':'Ohne','p36-3c':'Ohne','p36-3d':'Mit','p36-3e':'mit'})}
-  {check('36-4',488,1055,{'4b':'einen','4c':'meiner','4d':'mein'})}
+  {check('36-3',1000,865,{'p36-3b':'Ohne','p36-3c':'Ohne','p36-3d':'Mit','p36-3e':'mit'})}
+  {check('36-4',1000,1052,{'4b':'einen','4c':'meiner','4d':'mein'})}
   {check('36-5',279,1338,{'p36-50':'i','p36-51':'i','p36-52':'e','p36-53':'e','p36-54':'e'})}
  </>}
  {page==='37'&&<>
@@ -773,26 +778,26 @@ export function NativeAB12P31to46({page}:{page:string}){
   {lin(513,251,116,2,'#c0bcce')}
   {lin(389,302,103,2,'#bbbcbe')}
   {lin(244,378,116,2,'#c1c2c4')}
-  {lin(163,525,780,2,'#c1c2c4')}
-  {lin(163,575,780,2,'#c1c2c4')}
-  {lin(163,622,780,2,'#c1c2c4')}
-  {lin(163,668,780,2,'#c1c2c4')}
-  {lin(163,715,780,2,'#c1c2c4')}
-  {text(945,506,8,'.','naNw')}
-  {text(945,556,8,'.','naNw')}
-  {text(945,603,8,'.','naNw')}
-  {text(945,649,8,'.','naNw')}
-  {text(945,696,8,'.','naNw')}
+  {lin(163,535,780,2,'#c1c2c4')}
+  {lin(163,586,780,2,'#c1c2c4')}
+  {lin(163,637,780,2,'#c1c2c4')}
+  {lin(163,689,780,2,'#c1c2c4')}
+  {lin(163,741,780,2,'#c1c2c4')}
+  {text(945,516,8,'.','naNw')}
+  {text(945,567,8,'.','naNw')}
+  {text(945,618,8,'.','naNw')}
+  {text(945,670,8,'.','naNw')}
+  {text(945,722,8,'.','naNw')}
   {lin(168,920,220,2,'#bcbfbf')}
-  {lin(167,945,208,2,'#bdbdc7')}
+  {lin(167,946,208,2,'#bdbdc7')}
   {lin(273,972,151,2,'#bdc0c1')}
   {lin(180,998,207,2,'#bec3c3')}
-  {lin(260,1024,125,2,'#bdbfc3')}
+  {lin(260,1023,125,2,'#bdbfc3')}
   {lin(168,1049,219,2,'#bdbbc4')}
   {lin(212,1075,177,2,'#c0c1c4')}
   {lin(304,1101,168,2,'#c4c5c6')}
   {lin(182,1280,168,2,'#b9bcc1')}
-  {text(101,85,240,'BASISTRAINING','naHeadline naNw')}
+  {text(101,83,240,'BASISTRAINING','naHeadline naNw')}
   {kb(78,161,'KB 5')}
   {title('6',130,160,760,'Urlaubswünsche. Ergänzen Sie wollen in der richtigen Form.','naGB')}
   <div className="naSide" style={{left:69,top:203,whiteSpace:'nowrap'}}>STRUKTUREN</div>
@@ -815,39 +820,39 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(140,462,9,'a','naSmall naNw')}
   {text(160,457,300,'Cherry will unbedingt Sängerin werden.','naHand naD19 naNw')}
   {text(164,486,446,'(unbedingt / Cherry / Sängerin / werden / wollen)','naNw')}
-  {text(140,517,9,'b','naNw')}
-  {text(164,537,467,'(auf keinen Fall / Sara und Felix / wollen / heiraten)','naNw')}
-  {text(140,569,34,'c','naS20 naNw')}
+  {text(140,508,9,'b','naNw')}
+  {text(164,538,467,'(auf keinen Fall / Sara und Felix / wollen / heiraten)','naNw')}
+  {text(140,565,34,'c','naS20 naNw')}
   {text(164,590,563,'(meine Ausbildung / Nächstes Jahr / abschließen / ich / wollen)','naNw')}
-  {text(140,628,10,'d','naNw')}
-  {text(164,641,570,'(wollen / unbedingt / Wir / schaffen / die Führerscheinprüfung)','naNw')}
-  {text(140,673,7,'e','naSmall naNw')}
+  {text(140,611,10,'d','naNw')}
+  {text(164,642,570,'(wollen / unbedingt / Wir / schaffen / die Führerscheinprüfung)','naNw')}
+  {text(140,668,7,'e','naSmall naNw')}
   {text(164,693,590,'(können / wir / Dann / mit dem Motorrad / reisen / durch Europa)','naNw')}
-  {text(140,724,7,'f','naNw')}
+  {text(140,714,7,'f','naNw')}
   {text(164,744,451,'(Jan / vielleicht / werden / Liedermacher / wollen)','naNw')}
   {kb(78,819,'KB 6')}
   {title('8',130,806,760,'Ergänzen Sie die Wörter.','naGB')}
   <div className="naSide" style={{left:56,top:863,whiteSpace:'nowrap'}}>WÖRTER</div>
-  {text(420,846,85,'Ausbildung','naHand naD19 naNw')}
-  {text(140,843,254,'Im Sommer hat Sofia ihre (a)','naNw')}
-  {text(522,843,372,'(BLUGASIDNU) als Friseurin abgeschlossen.','naNw')}
-  {text(140,870,655,'Sie hatte große Angst vor der Prüfung. Aber zum Glück hat sie die Prüfung','naNw')}
-  {text(140,894,21,'(b)','naNw')}
-  {text(394,894,383,'(SCHEFGATEF). Jetzt möchte sie endlich Geld','naNw')}
-  {text(140,922,20,'(c)','naNw')}
-  {text(393,922,443,'(DERENIVEN). Dann möchte sie mit ihrem Freund','naNw')}
-  {text(138,948,128,'Johnny ein (d)','naNw')}
-  {text(498,948,279,'(RORTOMDA) kaufen und durch','naNw')}
-  {text(140,973,21,'(e)','naNw')}
-  {text(393,973,438,'(PORUEA) fahren. Zuerst macht sie aber noch den','naNw')}
-  {text(140,996,19,'(f)','naNw')}
-  {text(391,996,449,'(RENFEHÜRSHIC). Sie möchten durch viele Länder','naNw')}
-  {text(140,1024,21,'(g)','naNw')}
-  {text(393,1024,324,'(SINERE), die Welt und andere junge','naNw')}
-  {text(140,1050,22,'(h)','naNw')}
-  {text(395,1050,460,'(UTELE) kennenlernen. In ein paar Jahren möchten','naNw')}
-  {text(139,1076,158,'sie und Johnny (i)','naNw')}
-  {text(530,1076,277,'(RITAHENE) und Kinder haben.','naNw')}
+  {text(420,853,85,'Ausbildung','naHand naD19 naNw')}
+  {text(140,850,254,'Im Sommer hat Sofia ihre (a)','naNw')}
+  {text(522,850,372,'(BLUGASIDNU) als Friseurin abgeschlossen.','naNw')}
+  {text(140,874,655,'Sie hatte große Angst vor der Prüfung. Aber zum Glück hat sie die Prüfung','naNw')}
+  {text(140,897,21,'(b)','naNw')}
+  {text(394,897,383,'(SCHEFGATEF). Jetzt möchte sie endlich Geld','naNw')}
+  {text(140,925,20,'(c)','naNw')}
+  {text(393,925,443,'(DERENIVEN). Dann möchte sie mit ihrem Freund','naNw')}
+  {text(138,951,128,'Johnny ein (d)','naNw')}
+  {text(498,951,279,'(RORTOMDA) kaufen und durch','naNw')}
+  {text(140,976,21,'(e)','naNw')}
+  {text(393,976,438,'(PORUEA) fahren. Zuerst macht sie aber noch den','naNw')}
+  {text(140,999,19,'(f)','naNw')}
+  {text(391,999,449,'(RENFEHÜRSHIC). Sie möchten durch viele Länder','naNw')}
+  {text(140,1027,21,'(g)','naNw')}
+  {text(393,1027,324,'(SINERE), die Welt und andere junge','naNw')}
+  {text(140,1053,22,'(h)','naNw')}
+  {text(395,1053,460,'(UTELE) kennenlernen. In ein paar Jahren möchten','naNw')}
+  {text(139,1080,158,'sie und Johnny (i)','naNw')}
+  {text(530,1080,277,'(RITAHENE) und Kinder haben.','naNw')}
   {kb(78,1149,'KB 6')}
   {title('9',130,1140,580,'Was sind Ihre Wünsche? Schreiben Sie 4–5 Sätze wie in ','naGB naNw')}
   {stext(702,1140,28,'8.',{color:'#3f6491',fontWeight:700},'naTitle naNw')}
@@ -861,14 +866,14 @@ export function NativeAB12P31to46({page}:{page:string}){
   {field('p37-6c',390,279,102,'6 c')}
   {field('p37-6d',337,303,125,'6 d')}
   {field('p37-6e',243,355,115,'6 e')}
-  {field('p37-8b',175,892,213,'8 b')}
-  {field('p37-8c',175,920,213,'8 c')}
-  {field('p37-8d',280,946,212,'8 d')}
-  {field('p37-8e',175,971,213,'8 e')}
+  {field('p37-8b',175,895,213,'8 b')}
+  {field('p37-8c',175,923,213,'8 c')}
+  {field('p37-8d',280,949,212,'8 d')}
+  {field('p37-8e',175,974,213,'8 e')}
   {field('p37-8f',175,997,213,'8 f')}
-  {field('p37-8g',175,1023,213,'8 g')}
-  {field('p37-8h',175,1049,213,'8 h')}
-  {field('p37-8i',305,1075,220,'8 i')}
+  {field('p37-8g',175,1025,213,'8 g')}
+  {field('p37-8h',175,1051,213,'8 h')}
+  {field('p37-8i',305,1078,220,'8 i')}
   {check('37-1',1000,165,{'p37-6b':'wollen','p37-6c':'will','p37-6d':'wollen','p37-6e':'willst'})}
   {check('37-2',1000,1116,{'p37-8b':'geschafft','p37-8c':'verdienen','p37-8d':'Motorrad','p37-8e':'Europa','p37-8f':'Führerschein','p37-8g':'reisen','p37-8h':'Leute','p37-8i':'heiraten'})}
  </>}
@@ -877,7 +882,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {art('2',840,743,124,316)}
   {lin(374,114,607,3,'#8bc78c')}
   {lin(1065,1155,7,298,'#b7bdbf')}
-  {text(126,87,240,'BASISTRAINING','naHeadline naNw')}
+  {text(126,85,240,'BASISTRAINING','naHeadline naNw')}
   {kb(82,174,'KB 6')}
   {title('10',130,161,760,'Lesen Sie die Texte.','naGB')}
   <div className="naSide" style={{left:97,top:200,whiteSpace:'nowrap'}}>LESEN</div>
@@ -890,30 +895,30 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(166,293,134,'Urlaub machen','naNw')}
   {text(166,318,152,'im Ausland leben','naNw')}
   {stext(182,376,340,'50 PLUS – KRISE ODER CHANCE?',{color:'#a71114',fontWeight:700},'naNw')}
-  {text(181,407,503,'Ist mit 50 Jahren der schönste Teil des Lebens zu Ende?','naBold naNw')}
-  {text(181,433,498,'Was sind die Wünsche und Pläne der über 50-Jährigen?','naBold naNw')}
+  {text(181,407,503,'Ist mit 50 Jahren der schönste Teil des Lebens zu Ende?','naSansB naNw')}
+  {text(181,433,498,'Was sind die Wünsche und Pläne der über 50-Jährigen?','naSansB naNw')}
   {stext(181,485,254,'Susanne M., Hausfrau, 51 Jahre alt',{fontStyle:'italic'},'naNw')}
-  {text(182,511,631,'Meine Wünsche? Ich habe nur einen Wunsch: Ich will ins Ausland gehen','naNw')}
-  {text(181,537,633,'und noch einmal eine Fremdsprache lernen. Ich habe mit 20 Jahren geheira-','naNw')}
-  {text(181,562,632,'tet und drei Kinder bekommen. Jetzt bin ich 51, die Kinder sind groß. In','naNw')}
-  {text(181,588,633,'VITAL habe ich einen Artikel über „Granny-Au-Pairs“ gelesen und da habe','naNw')}
-  {text(181,614,633,'ich gedacht: Das mache ich. Ein halbes Jahr in Rio de Janeiro in einer Fami-','naNw')}
-  {text(181,640,633,'lie leben und eine neue Kultur kennenlernen. Super, oder? Und ein bisschen','naNw')}
-  {text(181,666,633,'Geld verdiene ich dort auch: 300 € pro Monat und für das Zimmer und Essen','naNw')}
-  {text(181,692,137,'zahle ich nichts.','naNw')}
+  {text(182,511,631,'Meine Wünsche? Ich habe nur einen Wunsch: Ich will ins Ausland gehen','naNw naBio naJ')}
+  {text(181,537,633,'und noch einmal eine Fremdsprache lernen. Ich habe mit 20 Jahren geheira-','naNw naBio naJ')}
+  {text(181,562,632,'tet und drei Kinder bekommen. Jetzt bin ich 51, die Kinder sind groß. In','naNw naBio naJ')}
+  {text(181,588,633,'VITAL habe ich einen Artikel über „Granny-Au-Pairs“ gelesen und da habe','naNw naBio naJ')}
+  {text(181,614,633,'ich gedacht: Das mache ich. Ein halbes Jahr in Rio de Janeiro in einer Fami-','naNw naBio naJ')}
+  {text(181,640,633,'lie leben und eine neue Kultur kennenlernen. Super, oder? Und ein bisschen','naNw naBio naJ')}
+  {text(181,666,633,'Geld verdiene ich dort auch: 300 € pro Monat und für das Zimmer und Essen','naNw naBio naJ')}
+  {text(181,692,137,'zahle ich nichts.','naNw naBio')}
   {stext(181,749,269,'Georg K., Mechatroniker, 58 Jahre alt',{fontStyle:'italic'},'naNw')}
-  {text(182,774,631,'Ich habe gerade den Motorradführerschein gemacht und nächstes Jahr will','naNw')}
-  {text(181,800,633,'ich sechs Wochen mit meinem Sohn mit dem Motorrad durch Kanada fah-','naNw')}
-  {text(181,826,633,'ren. Er hat letztes Jahr schon eine Reise durch die USA gemacht. Da hat er','naNw')}
-  {text(180,852,563,'viel fotografiert und diese wunderbare Natur hat mir sehr gefallen.','naNw')}
+  {text(182,774,631,'Ich habe gerade den Motorradführerschein gemacht und nächstes Jahr will','naNw naBio naJ')}
+  {text(181,800,633,'ich sechs Wochen mit meinem Sohn mit dem Motorrad durch Kanada fah-','naNw naBio naJ')}
+  {text(181,826,633,'ren. Er hat letztes Jahr schon eine Reise durch die USA gemacht. Da hat er','naNw naBio naJ')}
+  {text(180,852,563,'viel fotografiert und diese wunderbare Natur hat mir sehr gefallen.','naNw naBio')}
   {stext(180,909,264,'Marianne O., Studentin, 52 Jahre alt',{fontStyle:'italic'},'naNw')}
-  {text(181,935,632,'Mit 50 Jahren ist man heute doch nicht alt! Ich habe 25 Jahre als Verkäuferin','naNw')}
-  {text(180,960,632,'gearbeitet. Vor einem Jahr habe ich einen tollen Mann kennengelernt und','naNw')}
-  {text(181,986,633,'mich total verliebt. Er hat gesagt: „Marianne, ich verdiene genug Geld für','naNw')}
-  {text(181,1012,631,'uns zwei. Willst du wirklich dein ganzes Leben als Verkäuferin arbeiten?“','naNw')}
-  {text(181,1038,632,'Da habe ich sofort gewusst: Das ist meine Chance! Ich kann endlich studie-','naNw')}
-  {text(181,1064,631,'ren! Jetzt studiere ich Arabisch und Französisch. Das spreche ich schon gut.','naNw')}
-  {text(180,1090,378,'Als Kind habe ich 10 Jahre in Marokko gelebt.','naNw')}
+  {text(181,935,632,'Mit 50 Jahren ist man heute doch nicht alt! Ich habe 25 Jahre als Verkäuferin','naNw naBio naJ')}
+  {text(180,960,632,'gearbeitet. Vor einem Jahr habe ich einen tollen Mann kennengelernt und','naNw naBio naJ')}
+  {text(181,986,633,'mich total verliebt. Er hat gesagt: „Marianne, ich verdiene genug Geld für','naNw naBio naJ')}
+  {text(181,1012,631,'uns zwei. Willst du wirklich dein ganzes Leben als Verkäuferin arbeiten?“','naNw naBio naJ')}
+  {text(181,1038,632,'Da habe ich sofort gewusst: Das ist meine Chance! Ich kann endlich studie-','naNw naBio naJ')}
+  {text(181,1064,631,'ren! Jetzt studiere ich Arabisch und Französisch. Das spreche ich schon gut.','naNw naBio naJ')}
+  {text(180,1090,378,'Als Kind habe ich 10 Jahre in Marokko gelebt.','naNw naBio')}
   {text(134,1171,401,'b Lesen Sie noch einmal und kreuzen Sie an.','naNw')}
   {stext(829,1202,120,'richtig falsch',{fontStyle:'italic'},'naS14 naNw')}
   {text(166,1223,12,'1','naNw')}
