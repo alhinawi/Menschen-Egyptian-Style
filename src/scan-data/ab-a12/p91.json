@@ -1895,6 +1895,46 @@
    "y": 987,
    "w": 259,
    "h": 20
+  },
+  {
+   "id": "p91-6a-ostern",
+   "group": "g4",
+   "kind": "text",
+   "label": "6 a Ostern",
+   "x": 108,
+   "y": 579,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "p91-6a-geburtstag",
+   "group": "g4",
+   "kind": "text",
+   "label": "6 a Geburtstag",
+   "x": 197,
+   "y": 579,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "p91-6a-weihnachten",
+   "group": "g4",
+   "kind": "text",
+   "label": "6 a Weihnachten",
+   "x": 294,
+   "y": 579,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "p91-6a-silvester",
+   "group": "g4",
+   "kind": "text",
+   "label": "6 a Silvester",
+   "x": 422,
+   "y": 579,
+   "w": 16,
+   "h": 16
   }
  ],
  "audio": [
@@ -1956,6 +1996,10 @@
   {
    "id": "g3",
    "label": "Aufgabe 7"
+  },
+  {
+   "id": "g4",
+   "label": "Aufgabe 6 a"
   }
  ],
  "review": {
