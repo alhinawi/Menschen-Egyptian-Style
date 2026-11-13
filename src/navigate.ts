@@ -91,6 +91,23 @@ export async function navigateLesson(slug: string, token?: string, opts: {replac
   location.assign(lessonUrl(slug, token));
 }
 
+/**
+ * Route a same-app href (e.g. 'l7-9.html#41', 'index.html', or an absolute
+ * URL) through the SPA navigator instead of a full document load. Returns
+ * true when the href resolved to a known lesson and was handled in-app;
+ * callers fall back to their old behavior on false.
+ */
+export async function navigateHref(href: string, opts: {replace?: boolean} = {}): Promise<boolean> {
+  let url: URL;
+  try { url = new URL(href, location.href); } catch { return false; }
+  if (url.origin !== location.origin) return false;
+  const file = url.pathname.split('/').pop() || 'index.html';
+  const slug = fileToSlug[file] ?? fileToSlug[file + '.html'];
+  if (!slug) return false;
+  await navigateLesson(slug, url.hash.slice(1) || undefined, opts);
+  return true;
+}
+
 /** Per-route document meta, applied on boot and on in-app navigation. */
 import routeMeta from './route-meta.json';
 type RouteMeta = {title: string; ogTitle: string; description: string; ogImage: string};
