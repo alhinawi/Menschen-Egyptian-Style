@@ -433,20 +433,21 @@ export function NativeAB12Lesson13({page}:{page:string}){
   <div className="naSide10" style={{left:88,top:1138,height:68}}>STRUKTUREN</div>
   {badge9('1',110,182)}
   {text(150,182,330,'Haus und Garten. Ordnen Sie zu.','naYT naNw')}
-  <div className="naBank12Bg" style={{left:154,top:220,width:432,height:23}}/>
-  {text(160,221,44,'Haus','naBank12 naNw')}{text(204,221,10,'|','naBank12 naNw')}{text(213,221,58,'Garten','naBank12 naNw')}{text(273,221,10,'|','naBank12 naNw')}{text(281,221,60,'Garage','naBank12 naNw')}{text(342,221,10,'|','naBank12 naNw')}{text(349,221,58,'Treppe','naBank12 naNw')}{text(409,221,10,'|','naBank12 naNw')}{text(418,221,44,'Baum','naBank12 naNw')}{text(456,221,10,'|','naBank12 naNw')}{text(478,221,60,'Fenster','naBank12 naNw')}{text(542,221,10,'|','naBank12 naNw')}{text(550,221,64,'Balkon','naBank12 naNw')}<div className="naStrike10" style={{left:548,top:231,width:68,height:2}}/>
+  <div className="naBank12Bg" style={{left:154,top:220,width:454,height:23}}/>
+  {text(157,221,38,'Haus','naBank12 naNw')}<div className="naPipe12" style={{left:204,top:224,height:18}}/>{text(210,221,53,'Garten','naBank12 naNw')}<div className="naPipe12" style={{left:272,top:224,height:18}}/>{text(279,221,54,'Garage','naBank12 naNw')}<div className="naPipe12" style={{left:341,top:224,height:18}}/>{text(346,221,53,'Treppe','naBank12 naNw')}<div className="naPipe12" style={{left:408,top:224,height:18}}/>{text(415,221,43,'Baum','naBank12 naNw')}<div className="naPipe12" style={{left:467,top:224,height:18}}/>{text(475,221,57,'Fenster','naBank12 naNw')}<div className="naPipe12" style={{left:541,top:224,height:18}}/>{text(547,221,53,'Balkon','naBank12 naNw')}<div className="naStrike10" style={{left:544,top:231,width:59,height:2}}/>
   {art('house',338,246,424,226)}
-  {field('12-1a',150,281,190,'1a Haus-Teil links oben','naFld9')}
-  {field('12-1b',183,337,157,'1b Haus-Teil links Mitte','naFld9')}
-  {field('12-1c',150,396,190,'1c Haus-Teil links unten','naFld9')}
-  {field('12-1d',758,243,191,'1d Haus-Teil rechts oben','naFld9')}
-  <div className="naLine12" style={{left:753,top:309,width:196,height:1}}/>
+  {field('12-1a',154,282,186,'1a Haus-Teil links oben','naFld9')}
+  {field('12-1b',154,337,186,'1b Haus-Teil links Mitte','naFld9')}
+  {field('12-1c',154,396,186,'1c Haus-Teil links unten','naFld9')}
+  {field('12-1d',762,244,187,'1d Haus-Teil rechts oben','naFld9')}
+  <div className="naLine12" style={{left:753,top:310,width:196,height:1}}/>
   {art('balkon-hw',752,282,108,26)}
-  {field('12-1e',758,337,191,'1e Haus-Teil rechts Mitte','naFld9')}
-  {field('12-1f',758,396,191,'1f Haus-Teil rechts unten','naFld9')}
+  {field('12-1e',762,338,187,'1e Haus-Teil rechts Mitte','naFld9')}
+  {field('12-1f',762,397,187,'1f Haus-Teil rechts unten','naFld9')}
+  {check('12-1',905,430,{'12-1a':'Fenster|das Fenster','12-1b':'Baum|der Baum','12-1c':'Garage|die Garage','12-1d':'Haus|das Haus','12-1e':'Treppe|die Treppe','12-1f':'Garten|der Garten'})}
   {badge9('2',110,505)}
   {text(150,505,430,'Wie heißen die Zimmer? Notieren Sie.','naYT naNw')}
-  {text(154,546,20,'a','naLet9')}{text(178,546,420,'Hier stehen der Kühlschrank und hier kocht man:','naEx12 naNw')}{art('kueche-hw',608,540,74,30)}
+  {text(154,546,20,'a','naLet9')}{text(178,546,452,'Hier stehen der Kühlschrank und hier kocht man:','naEx12 naNw')}{art('kueche-hw',620,548,55,20)}
   {text(154,571,20,'b','naLet9')}{text(178,571,330,'Die Kinder spielen und schlafen hier:','naEx12 naNw')}{field('12-2b',513,571,303,'2b Zimmer','naFld9')}
   {text(154,597,20,'c','naLet9')}{text(178,597,530,'Sie gehen ins Haus und kommen zuerst in dieses Zimmer:','naEx12 naNw')}{field('12-2c',177,622,302,'2c Zimmer','naFld9')}
   {text(154,649,20,'d','naLet9')}{text(178,649,700,'Hier können Sie fernsehen, lesen oder Freunde treffen. Oft stehen hier ein','naEx12 naNw')}
@@ -456,8 +457,8 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {badge9('3',110,764)}
   {text(150,764,480,'Antworten Sie mit dem Genitiv wie im Beispiel.','naYT naNw')}
   {text(154,804,20,'a','naLet9')}{text(178,804,395,'Wie findest du den Garten von Maximilian? –','naEx12 naNw')}
-  <div className="naLine12" style={{left:575,top:823,width:152,height:1}}/>
-  {art('garten-hw',576,796,152,24)}
+  {art('garten-line',583,822,140,4)}
+  {art('garten-hw',582,805,160,18)}
   {text(730,804,150,'ist sehr schön.','naEx12 naNw')}
   {text(154,830,20,'b','naLet9')}{text(178,830,520,'Und magst du das Haus von Maximilian? – Nein, ich finde','naEx12 naNw')}{field('12-3b',697,830,263,'3b Genitiv','naFld9')}
   {text(178,855,180,'nicht so schön.','naEx12 naNw')}
@@ -470,7 +471,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(152,1022,580,'Ihrer Partnerin / Ihrem Partner. Sie/Er ergänzt den Genitiv.','naYT naYTb12 naNw')}
   {badge9('5',110,1087)}
   {text(150,1087,200,'Schreiben Sie.','naYT naNw')}
-  {art('photos-be',280,1082,590,122)}
+  {art('photos-be',292,1082,578,122)}
   {art('photos-a',140,1108,140,96)}
   {text(176,1204,230,'Was sucht Otto?','naHeadQ12 naNw')}
   {text(455,1204,260,'Wo sind Ottos Sachen?','naHeadQ12 naNw')}
@@ -481,20 +482,19 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(155,1295,18,'c','naLet9')}{field('12-5lc',176,1294,231,'5c Was sucht Otto','naFld9')}
   {text(155,1321,18,'d','naLet9')}{field('12-5ld',176,1320,231,'5d Was sucht Otto','naFld9')}
   {text(155,1347,18,'e','naLet9')}{field('12-5le',176,1346,231,'5e Was sucht Otto','naFld9')}
-  {text(436,1243,18,'a','naLet9')}
   <div className="naLine12" style={{left:457,top:1263,width:231,height:1}}/>
   {art('auto-hw-r',452,1235,84,27)}
-  {text(436,1269,18,'b','naLet9')}{field('12-5rb',457,1268,231,'5b Wo sind Ottos Sachen','naFld9')}
-  {text(436,1295,18,'c','naLet9')}{field('12-5rc',457,1294,231,'5c Wo sind Ottos Sachen','naFld9')}
-  {text(436,1321,18,'d','naLet9')}{field('12-5rd',457,1320,231,'5d Wo sind Ottos Sachen','naFld9')}
-  {text(436,1347,18,'e','naLet9')}{field('12-5re',457,1346,231,'5e Wo sind Ottos Sachen','naFld9')}
+  {field('12-5rb',457,1268,231,'5b Wo sind Ottos Sachen','naFld9')}
+  {field('12-5rc',457,1294,231,'5c Wo sind Ottos Sachen','naFld9')}
+  {field('12-5rd',457,1320,231,'5d Wo sind Ottos Sachen','naFld9')}
+  {field('12-5re',457,1346,231,'5e Wo sind Ottos Sachen','naFld9')}
   {text(745,1244,180,'steht vor dem Café.','naChip12 naNw')}
   {text(745,1270,180,'sind auf dem Tisch.','naChip12 naNw')}
   {text(745,1296,180,'ist in der Tasche.','naChip12 naNw')}
   {text(745,1322,210,'ist neben dem Schlüssel.','naChip12 naNw')}
   {text(745,1348,200,'ist unter der Zeitung.','naChip12 naNw')}
-  {check('12-5l',180,1372,{'12-5lb':'Seine Schlüssel','12-5lc':'Sein Handy','12-5ld':'Seine Brille','12-5le':'Seinen Stift|Sein Stift'})}
-  {check('12-5r',457,1372,{'12-5rb':'Seine Schlüssel','12-5rc':'Sein Handy','12-5rd':'Seine Brille','12-5re':'Sein Stift'})}
+  {check('12-5l',180,1372,{'12-5lb':'Seine Schlüssel','12-5lc':'Sein Handy','12-5ld':'Seine Brille','12-5le':'Seinen Kugelschreiber'})}
+  {check('12-5r',457,1372,{'12-5rb':'Seine Schlüssel','12-5rc':'Sein Handy','12-5rd':'Seine Brille','12-5re':'Sein Kugelschreiber'})}
   <div className="naModul10" style={{left:0,top:1388,width:56,height:26}}>Modul 5</div>
   <div className="naText naFooter naNw" style={{left:84,top:1399,width:160,whiteSpace:'pre'}}>12{'  |  '}<span className="naFz">zwölf</span></div>
  </>}
