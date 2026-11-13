@@ -1,3 +1,4 @@
+import {usePageReset} from '../exercises/usePageReset';
 import {LineMatching} from '../exercises/LineMatching';
 import {useLayoutEffect,useRef,useState} from 'react';
 import './native-ab11.css';
@@ -8,6 +9,7 @@ export function NativeAB11({page}:{page:string}){
  const audio=useRef<HTMLAudioElement>(null);const [track,T]=useState('');
  const [scale,SS]=useState(1),[v,S]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return {}}}),[graded,G]=useState<Record<string,boolean>>({}),[active,A]=useState('');
  useLayoutEffect(()=>{const el=host.current;if(!el)return;const measure=()=>SS(Math.min(el.clientWidth/1075,el.clientHeight/1521));measure();const ro=new ResizeObserver(measure);ro.observe(el);return ()=>ro.disconnect()},[]);
+ usePageReset(page,'native-ab11-'+page,()=>{S({});G({});A('')});
  const set=(id:string,value:string)=>{const n={...v,[id]:value};S(n);localStorage.setItem(key,JSON.stringify(n));const group=page==='7'&&id.startsWith('6-')?'6a':page==='9'&&id.startsWith('1-')?(id.startsWith('1-q')?'1a':'1b'):id.startsWith('mark-10-')?'10':id.split('-')[0];G(prev=>{const next={...prev};delete next[group];return next})};
  const text=(x:number,y:number,w:number,s:string,cls='')=><div className={'nabText '+cls} style={{left:x,top:y,width:w}}><Words text={s}/></div>;
  const img=(name:string,x:number,y:number,w:number,h:number)=><img className="nabArt" src={`assets/native-ab11/p${page}-${name}.png`} alt={'Originalabbildung '+name} style={{left:x,top:y,width:w,height:h}}/>;

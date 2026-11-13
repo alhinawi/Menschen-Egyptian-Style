@@ -1,3 +1,4 @@
+import {usePageReset} from '../exercises/usePageReset';
 import {useLayoutEffect,useRef,useState} from 'react';
 import './native-ab11.css';
 import './native-ab11-lessons45.css';
@@ -7,6 +8,7 @@ export function NativeAB11Module3Close({page}:{page:string}){
  const host=useRef<HTMLDivElement>(null),[scale,SS]=useState(1),[v,S]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem('native-ab11-'+page)||'{}')}catch{return {}}}),[graded,G]=useState<Record<string,boolean>>({});
  useLayoutEffect(()=>{const el=host.current;if(!el)return;const measure=()=>SS(Math.min(el.clientWidth/901,el.clientHeight/1275));measure();const ro=new ResizeObserver(measure);ro.observe(el);return()=>ro.disconnect()},[]);
  const set=(id:string,value:string)=>{const next={...v,[id]:value};S(next);localStorage.setItem('native-ab11-'+page,JSON.stringify(next));G({})};
+ usePageReset(page,'native-ab11-'+page,()=>{S({});G({})});
  const sy=page==='74'?.69:page==='75'?.58:.81;const Y=(y:number)=>130+(y-130)*sy;
  const txt=(x:number,y:number,w:number,s:string,cls='')=><div className={'mText '+cls} style={{left:x,top:cls==='mFooter'?y:Y(y),width:w}}><Words s={s}/></div>;
  const f=(id:string,x:number,y:number,w:number,label=id)=>{const ctx=document.createElement('canvas').getContext('2d');if(ctx)ctx.font="16px 'Times New Roman'";const size=Math.max(11,Math.min(16,16*(w-6)/(ctx?.measureText(v[id]||'').width||1)));return <input className="mField" data-native-field={id} aria-label={label} style={{left:x,top:Y(y),width:w,fontSize:size}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>};
