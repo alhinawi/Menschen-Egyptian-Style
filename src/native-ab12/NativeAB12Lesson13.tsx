@@ -507,10 +507,10 @@ export function NativeAB12Lesson13({page}:{page:string}){
   <div className="naSide13" style={{left:88,top:203,height:78}}>STRUKTUREN</div>
   {text(160,163,140,'sein oder ihr?','naTitle13 naNw')}
   {text(140,204,18,'a','naLet13')}
-  {text(162,204,120,'Ergänzen Sie.','naInstr13 naNw')}
+  {text(162,201,125,'Ergänzen Sie.','naInstr13r naNw')}
   {art('photo-l',338,156,218,162)}
   {art('photo-r',624,178,192,150)}
-  {text(160,304,150,'Das ist/sind ...','naEx13b naNw')}
+  {text(160,302,155,'Das ist/sind ...','naEx13b naNw')}
   <div className="naLine13" style={{left:160,top:360,width:88,height:1}}/>
   {art('seine',156,347,33,17)}{text(201,343,60,'Brille','naEx12 naNw')}
   {field('13-6a-fahrrad',159,370,102,'6a Fahrrad','naFld9')}{text(268,368,80,'Fahrrad','naEx12 naNw')}
@@ -531,8 +531,8 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(292,491,95,'Nominativ','naTh13 naNw')}{text(637,492,90,'Akkusativ','naTh13 naNw')}
   {art('icon1',288,514,27,34)}{art('icon2',461,513,35,34)}{art('icon3',631,516,28,34)}{art('icon4',800,513,35,36)}
   <div className="naLine13b" style={{left:160,top:543,width:805,height:1}}/><div className="naLine13b" style={{left:160,top:572,width:805,height:1}}/><div className="naLine13b" style={{left:160,top:601,width:805,height:1}}/><div className="naLine13b" style={{left:160,top:630,width:805,height:1}}/><div className="naLine13b" style={{left:160,top:660,width:805,height:1}}/>
-  <div className="naLine13b" style={{left:268,top:487,width:1,height:174}}/><div className="naLine13b" style={{left:618,top:487,width:1,height:174}}/>
-  {text(160,546,85,'maskulin','naEx12 naNw')}{text(168,578,62,'neutral','naEx12 naNw')}{text(167,607,66,'feminin','naEx12 naNw')}{text(168,637,50,'Plural','naEx12 naNw')}
+  <div className="naLine13b" style={{left:268,top:487,width:1,height:27}}/><div className="naLine13b" style={{left:626,top:487,width:1,height:27}}/><div className="naLine13b" style={{left:283,top:514,width:1,height:146}}/><div className="naLine13b" style={{left:455,top:514,width:1,height:146}}/><div className="naLine13b" style={{left:626,top:514,width:1,height:146}}/><div className="naLine13b" style={{left:798,top:514,width:1,height:146}}/>
+  {text(165,547,85,'maskulin','naRow13 naNw')}{text(165,577,62,'neutral','naRow13 naNw')}{text(165,606,66,'feminin','naRow13 naNw')}{text(165,636,50,'Plural','naRow13 naNw')}
   {art('ihr-schirm',288,545,88,23)}{art('ihren-schirm',634,547,106,23)}
   {field('13-6b-m2',460,546,150,'6b maskulin sein','naFld13')}{field('13-6b-m4',808,546,145,'6b maskulin seinen','naFld13')}
   {field('13-6b-n1',290,575,150,'6b neutral ihr','naFld13')}{field('13-6b-n2',460,575,150,'6b neutral sein','naFld13')}{field('13-6b-n3',640,575,145,'6b neutral ihr Akk','naFld13')}{field('13-6b-n4',808,575,145,'6b neutral sein Akk','naFld13')}
@@ -543,18 +543,18 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(73,722,40,'KB 6','naKB13 naNw')}
   <div className="naSide13" style={{left:88,top:757,height:78}}>STRUKTUREN</div>
   {art('bruno',170,744,80,246)}
-  <div className="naText naYT naNw" style={{left:159,top:717,width:430}}>Ergänzen Sie sein/ihr in der richtigen Form.</div>
-  {text(293,758,615,'Das ist Bruno. Bruno wohnt genau wie Otto und Vanilla in Glückstadt.','naPara13 naNw')}
+  <div className="naText naYT naNw" style={{left:159,top:717,width:430}}>Ergänzen Sie <em>sein/ihr</em> in der richtigen Form.</div>
+  {text(293,758,645,'Das ist Bruno. Bruno wohnt genau wie Otto und Vanilla in Glückstadt.','naPara13 naNw')}
   {art('sein-hw',909,757,40,20)}
-  {text(293,782,620,'(a) Haus liegt neben Ottos Haus. Er ist geschieden, aber er wohnt nicht','naPara13 naNw')}
-  {text(292,808,285,'allein. In dem Haus wohnt auch','naPara13 naNw')}{field('13-7b',579,809,103,'7b','naFld9')}{text(689,808,220,'(b) neue Partnerin Mia. Mia','naPara13 naNw')}
-  {text(292,834,145,'hat zwei Kinder.','naPara13 naNw')}{field('13-7c',441,835,102,'7c','naFld9')}{text(551,834,380,'(c) Tochter heißt Sandra und ist 8 Jahre alt','naPara13 naNw')}
-  {text(292,860,35,'und','naPara13 naNw')}{field('13-7d',331,861,102,'7d','naFld9')}{text(440,860,465,'(d) Sohn heißt Mark und ist 4 Jahre alt. Sandra und','naPara13 naNw')}
-  {field('13-7e',291,886,95,'7e','naFld9')}{text(382,885,510,'(e) Bruder wohnen im ersten Stock. Bruno liebt besonders','naPara13 naNw')}
-  {field('13-7f',291,911,101,'7f','naFld9')}{text(400,911,400,'(f) Arbeitszimmer im Erdgeschoss. Dort steht','naPara13 naNw')}{field('13-7g',801,912,102,'7g','naFld9')}{text(910,911,30,'(g)','naPara13 naNw')}
-  {text(292,938,605,'Computer. Er surft gern im Internet und spielt gern Computerspiele.','naPara13 naNw')}
-  {field('13-7h',291,963,101,'7h','naFld9')}{text(400,963,500,'(h) Partnerin ist gern im Garten. Sie findet Computerspiele','naPara13 naNw')}
-  {text(292,989,220,'langweilig. Aber sie liebt','naPara13 naNw')}{field('13-7i',514,990,102,'7i','naFld9')}{text(624,989,125,'(i) Garten und','naPara13 naNw')}{field('13-7j',753,990,102,'7j','naFld9')}{text(863,989,100,'(j) Blumen.','naPara13 naNw')}
+  {text(293,782,638,'(a) Haus liegt neben Ottos Haus. Er ist geschieden, aber er wohnt nicht','naPara13 naNw')}
+  {text(292,808,293,'allein. In dem Haus wohnt auch','naPara13 naNw')}{field('13-7b',587,809,103,'7b','naFld9')}{text(697,808,226,'(b) neue Partnerin Mia. Mia','naPara13 naNw')}
+  {text(292,834,149,'hat zwei Kinder.','naPara13 naNw')}{field('13-7c',449,835,102,'7c','naFld9')}{text(559,834,391,'(c) Tochter heißt Sandra und ist 8 Jahre alt','naPara13 naNw')}
+  {text(292,860,36,'und','naPara13 naNw')}{field('13-7d',331,861,102,'7d','naFld9')}{text(440,860,478,'(d) Sohn heißt Mark und ist 4 Jahre alt. Sandra und','naPara13 naNw')}
+  {field('13-7e',291,886,95,'7e','naFld9')}{text(382,885,525,'(e) Bruder wohnen im ersten Stock. Bruno liebt besonders','naPara13 naNw')}
+  {field('13-7f',291,911,101,'7f','naFld9')}{text(400,911,411,'(f) Arbeitszimmer im Erdgeschoss. Dort steht','naPara13 naNw')}{field('13-7g',811,912,102,'7g','naFld9')}{text(918,911,30,'(g)','naPara13 naNw')}
+  {text(292,938,623,'Computer. Er surft gern im Internet und spielt gern Computerspiele.','naPara13 naNw')}
+  {field('13-7h',291,963,101,'7h','naFld9')}{text(400,963,514,'(h) Partnerin ist gern im Garten. Sie findet Computerspiele','naPara13 naNw')}
+  {text(292,989,226,'langweilig. Aber sie liebt','naPara13 naNw')}{field('13-7i',522,990,102,'7i','naFld9')}{text(628,989,129,'(i) Garten und','naPara13 naNw')}{field('13-7j',761,990,102,'7j','naFld9')}{text(871,989,103,'(j) Blumen.','naPara13 naNw')}
   {check('13-7',1000,1005,{'13-7b':'seine','13-7c':'Ihre','13-7d':'ihr','13-7e':'ihr','13-7f':'sein','13-7g':'sein','13-7h':'Seine','13-7i':'ihren','13-7j':'ihre'})}
   {art('ex8icon',71,1093,33,32)}
   {badge9('8',114,1063)}
@@ -562,8 +562,8 @@ export function NativeAB12Lesson13({page}:{page:string}){
   <div className="naSide13" style={{left:88,top:1125,height:78}}>STRUKTUREN</div>
   {text(159,1064,300,'Ergänzen und vergleichen Sie.','naYT naNw')}
   <div className="naBand13" style={{left:157,top:1100,width:824,height:44}}/>
-  {text(166,1118,70,'Deutsch','naTh13 naNw')}{text(452,1119,75,'Englisch','naTh13 naNw')}{text(729,1108,190,'Meine Sprache oder','naTh13s naNw')}{text(728,1123,150,'andere Sprachen','naTh13s naNw')}
-  {text(166,1170,90,'Nominativ','naSub13 naNw')}{text(306,1170,85,'Akkusativ','naSub13 naNw')}{text(453,1160,90,'Nominativ','naSub13 naNw')}{text(592,1160,85,'Akkusativ','naSub13 naNw')}{text(729,1178,90,'Nominativ','naSub13 naNw')}{text(858,1180,85,'Akkusativ','naSub13 naNw')}
+  {text(166,1118,70,'Deutsch','naTh13 naNw')}{text(452,1119,75,'Englisch','naTh13 naNw')}{text(729,1112,190,'Meine Sprache oder','naTh13s naNw')}{text(728,1127,150,'andere Sprachen','naTh13s naNw')}
+  {text(166,1168,90,'Nominativ','naSub13 naNw')}{text(306,1168,85,'Akkusativ','naSub13 naNw')}{text(453,1160,90,'Nominativ','naSub13 naNw')}{text(592,1160,85,'Akkusativ','naSub13 naNw')}{text(729,1175,90,'Nominativ','naSub13 naNw')}{text(858,1177,85,'Akkusativ','naSub13 naNw')}
   {text(166,1187,120,'Das ist/sind ...','naCell13 naNw')}{text(306,1187,135,'Sie / Er sucht ...','naCell13 naNw')}
   {text(452,1180,120,'This is / These','naCell13 naNw')}{text(462,1205,60,'are ...','naCell13 naNw')}{text(592,1180,95,'She / He is','naCell13 naNw')}{text(603,1205,110,'looking for ...','naCell13 naNw')}
   {art('ihr8',166,1231,26,19)}<div className="naLine13" style={{left:170,top:1250,width:54,height:1}}/>{text(230,1233,60,'Schirm','naCell13 naNw')}
@@ -579,7 +579,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {art('s4a',300,1315,21,22)}{field('13-8-4a',313,1319,51,'8 Kinder Akkusativ','naFld9')}{text(370,1321,60,'Kinder','naCell13 naNw')}
   {text(451,1322,105,'his children','naCell13 naNw')}{text(592,1322,105,'his children','naCell13 naNw')}
   <div className="naLine13c" style={{left:723,top:1227,width:258,height:1}}/><div className="naLine13c" style={{left:723,top:1256,width:258,height:1}}/><div className="naLine13c" style={{left:723,top:1286,width:258,height:1}}/><div className="naLine13c" style={{left:723,top:1315,width:258,height:1}}/><div className="naLine13c" style={{left:723,top:1344,width:258,height:1}}/>
-  <div className="naLine13c" style={{left:723,top:1227,width:1,height:118}}/><div className="naLine13c" style={{left:852,top:1227,width:1,height:118}}/><div className="naLine13c" style={{left:980,top:1227,width:1,height:118}}/>
+  <div className="naLine13c" style={{left:723,top:1144,width:1,height:201}}/><div className="naLine13c" style={{left:852,top:1144,width:1,height:201}}/><div className="naLine13c" style={{left:980,top:1144,width:1,height:201}}/>
   {field('13-8-1mn',729,1229,116,'8 Meine Sprache 1 Nominativ','naFld13')}{field('13-8-1ma',858,1229,116,'8 Meine Sprache 1 Akkusativ','naFld13')}
   {field('13-8-2mn',729,1258,116,'8 Meine Sprache 2 Nominativ','naFld13')}{field('13-8-2ma',858,1258,116,'8 Meine Sprache 2 Akkusativ','naFld13')}
   {field('13-8-3mn',729,1288,116,'8 Meine Sprache 3 Nominativ','naFld13')}{field('13-8-3ma',858,1288,116,'8 Meine Sprache 3 Akkusativ','naFld13')}
