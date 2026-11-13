@@ -686,6 +686,15 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(362,810,240,'Wohnung 1 (Notizzettel)','naTh15 naNw')}{text(609,810,190,'Wohnung 2 (SMS)','naTh15 naNw')}{text(804,810,208,'Wohnung 3 (E-Mail)','naTh15 naNw')}
   {text(171,840,180,'Größe?','naTd15 naNw')}{text(171,870,180,'Miete pro Monat?','naTd15 naNw')}{text(171,900,180,'Ab wann?','naTd15 naNw')}
   {art('slash',464,869,16,26)}
+  {field('15-2a-w1g',370,838,215,'Wohnung 1 Größe')}
+  {field('15-2a-w1a',370,897,215,'Wohnung 1 Ab wann')}
+  {field('15-2a-w2g',616,838,165,'Wohnung 2 Größe')}
+  {field('15-2a-w2m',604,867,188,'Wohnung 2 Miete','naFld15s')}
+  {field('15-2a-w2a',616,897,165,'Wohnung 2 Ab wann')}
+  {field('15-2a-w3g',811,838,185,'Wohnung 3 Größe')}
+  {field('15-2a-w3m',807,867,192,'Wohnung 3 Miete','naFld15s')}
+  {field('15-2a-w3a',811,897,185,'Wohnung 3 Ab wann')}
+  {check('15-2a',850,940,{'15-2a-w1g':'3,5 Zimmer|3,5','15-2a-w1a':'1. Mai|1.5.|1.5','15-2a-w2g':'4 Zimmer|4','15-2a-w2m':'1000,– € + Nebenkosten|1000,- € + Nebenkosten|1000 € + Nebenkosten|1000 + Nebenkosten','15-2a-w2a':'1. April|1.4.|1.4','15-2a-w3g':'4 Zimmer|4','15-2a-w3m':'700,– € + Nebenkosten|700,- € + Nebenkosten|700 € + Nebenkosten|700 + Nebenkosten','15-2a-w3a':'1. April|1.4.|1.4'})}
   {text(131,946,16,'b','naLet15')}
   {text(163,947,450,'Welche Wohnung passt am besten? Kreuzen Sie an.','naInstrB15 naNw')}
   {text(163,986,95,'Wohnung','naMail15 naNw')}
@@ -711,6 +720,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {audio('assets/ab-a12-cd2-track08.mp3',62,1327,'2 08','2')}
   {badge9('2',121,1322)}
   {text(165,1320,665,'Hören Sie die Wörter aus 1 und sprechen Sie nach.','naYT naNw')}
+  <div className="naCheck" data-check="15-a2" style={{left:895,top:1316}}><CheckButton onClick={()=>sn(o=>({...o,['15-a2']:true}))}></CheckButton><output aria-live="polite">{saved['15-a2']?'Gespeichert':''}</output></div>
   {audio('assets/ab-a12-cd2-track09.mp3',672,1134,'2 09','3')}
   {badge9('3',720,1128)}
   {text(766,1127,245,'Hören Sie das Gedicht','naYT naNw')}
@@ -722,6 +732,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(766,1297,160,'im Garten','naMail15 naNw')}
   {text(766,1320,160,'Bäume.','naMail15 naNw')}
   {text(766,1347,160,'Alles ganz neu!','naMail15 naNw')}
+  <div className="naCheck" data-check="15-a3" style={{left:925,top:1188}}><CheckButton onClick={()=>sn(o=>({...o,['15-a3']:true}))}></CheckButton><output aria-live="polite">{saved['15-a3']?'Gespeichert':''}</output></div>
   <div className="naModul10" style={{left:1010,top:1389,width:61,height:17,lineHeight:'17px',background:'#dfd6af',fontWeight:400}}>Modul 5</div>
   <div className="naText naFooter naNw" style={{left:870,top:1388,width:127,whiteSpace:'pre'}}><span className="naFz15">{'fünfzehn  |  15'}</span></div>
  </>}

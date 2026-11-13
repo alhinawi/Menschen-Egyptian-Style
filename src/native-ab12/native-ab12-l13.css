@@ -202,3 +202,6 @@
 [data-native-ab12="16"] .naCanvas .naSq16{position:absolute;width:11px;height:11px;background:#0a1080}
 [data-native-ab12="16"] .naCanvas .naTri16{position:absolute;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:11px solid #01b411}
 [data-native-ab12="16"] .naCanvas .naRule16{position:absolute;background:#ffed00}
+
+/* p15 Lesen 2a: Miete answers are long, keep them fully visible. */
+.naCanvas .naFld15s{font-size:15px!important}
