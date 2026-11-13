@@ -112,8 +112,8 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {title('1',185,'Wo sind die Personen? Hören Sie und kreuzen Sie an.','',147)}{listen('44-46',93,190)}
  {txt(275,222,200,'Foto A     Foto B     Foto C')}
  {[1,2,3].map(r=><span key={r}>{txt(176,218+r*22,100,'Durchsage '+r)}{radioG('u1-d'+r+'a','u1-d'+r,'a',291,218+r*22,'Durchsage '+r+' Foto A')}{radioG('u1-d'+r+'b','u1-d'+r,'b',367,218+r*22,'Durchsage '+r+' Foto B')}{radioG('u1-d'+r+'c','u1-d'+r,'c',445,218+r*22,'Durchsage '+r+' Foto C')}</span>)}
- {rule('g1',205,300,()=>v['u1-d1']==='b'&&v['u1-d2']==='c'&&v['u1-d3']==='a')}
- {txt(187,318,20,'A')}{txt(385,318,20,'B')}{txt(615,318,20,'C')}
+ {rule('g1',520,283,()=>v['u1-d1']==='b'&&v['u1-d2']==='c'&&v['u1-d3']==='a')}
+ <div className="mPhotoLet" style={{left:181,top:312}}>A</div><div className="mPhotoLet" style={{left:379,top:312}}>B</div><div className="mPhotoLet" style={{left:609,top:312}}>C</div>
  {art('photoa',177,336,184,105)}{art('photob',384,336,201,104)}{art('photoc',610,336,193,100)}
  {title('2',471,'Durchsagen','',149)}
  {txt(156,505,530,'a  Lesen Sie die Aufgaben. Markieren Sie alle Zahlen und Uhrzeiten.','mTitle')}
@@ -125,7 +125,7 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {radioG('u2-3a','u2-3','a',621,704,'Satz 3a')}{radioG('u2-3b','u2-3','b',621,726,'Satz 3b')}
  <div className="mTipBox" style={{left:687,top:555,width:168,height:105}}><div className="mTipLabel">TIPP</div><div className="mTipText"><Words s="Achten Sie auf Zahlen und Uhrzeiten. Am Bahnhof/Flughafen … müssen Sie Zahlen und Zeiten richtig verstehen."/></div></div>
  {listen('44-46',93,773)}{txt(179,768,600,'b  Hören Sie noch einmal. Welche Sätze sind richtig? Kreuzen Sie in a an.','mTitle')}
- {rule('g2',621,742,()=>v['u2-1']==='b'&&v['u2-2']==='b'&&v['u2-3']==='b')}
+ {rule('g2',700,752,()=>v['u2-1']==='b'&&v['u2-2']==='b'&&v['u2-3']==='b')}
  {txt(140,829,300,'TRAINING:  AUSSPRACHE','mHeader')}{txt(554,835,240,'Wortakzent bei trennbaren Verben','mScript2')}<div className="mHRule" style={{left:832,top:841,width:67}}/>
  {listen('47',93,881)}{title('1',876,'Hören Sie und markieren Sie den\nWortakzent.','',154)}
  <div className="mText" style={{left:182,top:932,width:280}}>fahren – <u>ab</u>fahren | kommen –<br/><u>an</u>kommen | kaufen – <u>ein</u>kaufen |<br/>sehen – <u>fern</u>sehen | bringen –<br/><u>mit</u>bringen</div>
