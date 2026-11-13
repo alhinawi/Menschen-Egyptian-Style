@@ -22,6 +22,7 @@ export function NativeAB11({page}:{page:string}){
  const option=(id:string,value:string,x:number,y:number,label:string)=><label className="nabOption" style={{left:x,top:y}}><input type="radio" name={key+'-'+id} aria-label={id+' '+label} checked={v[id]===value} onChange={()=>set(id,value)}/><span>{label}</span></label>;
  const listen=(n:string,x:number,y:number,t?:string)=><button className="nabListen" data-task={t} style={{left:x,top:y}} aria-label={'Originalaudio 1 '+n} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+n.padStart(2,'0')+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
  const checkRule=(id:string,x:number,y:number,validate:()=>boolean)=><div className="nabCheck" style={{left:x,top:y}} data-native-task={id}><CheckButton onClick={()=>G({...graded,[id]:validate()})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const save=(id:string,x:number,y:number)=><div className="nabCheck" style={{left:x,top:y}} data-native-task={id}><CheckButton onClick={()=>G({...graded,[id]:true})}></CheckButton><output aria-live="polite">{id in graded?'Gespeichert':''}</output></div>;
  const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="nabCheck" style={{left:x,top:y}} data-native-task={id}><CheckButton answers={answers} onClick={()=>G({...graded,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const title=(n:string,y:number,s:string,kb:string,side='Strukturen')=><>{text(130,y+7,40,kb,'nabKB')}<div className="nabNumber" style={{left:170,top:y}}>{n}</div>{text(212,y,810,s,'nabTitle')}<div className="nabSide" style={{left:141,top:y+45}}>{side}</div></>;
  const head=(s:string)=><>{text(160,142,750,s,'nabHeader')}<div className="nabHeaderLine"/></>;
@@ -57,9 +58,9 @@ export function NativeAB11({page}:{page:string}){
  {page==='7'&&<>
  {head('BASISTRAINING')}<div className="nabModule">1</div>{img('usa',749,140,221,190)}{text(170,209,30,'b','nabTitle')}{text(203,209,610,'Suchen Sie typische Fotos und schreiben Sie die Länder-\nnamen auf Kärtchen. Ihre Partnerin / Ihr Partner ordnet zu.','nabSmallTitle')}
  {title('6',300,'du oder Sie?','KB 6a','Kommunikation')}{text(170,341,450,'a  Ordnen Sie zu.','nabTitle')}
- {img('du-sie',194,362,787,97)}{text(202,480,100,'du: 1,','nabExample')}{field('6-du',275,480,127,'6a du')}{text(599,480,80,'Sie:')}{field('6-sie',640,480,173,'6a Sie')}{check('6a',202,517,{'6-du':'3','6-sie':'2, 4|2,4|2 und 4'})}
+ {img('du-sie',194,362,787,97)}{text(202,480,100,'du: 1,','nabExample')}{field('6-du',275,480,127,'6a du')}{text(599,480,80,'Sie:')}{field('6-sie',640,480,173,'6a Sie')}{check('6a',860,476,{'6-du':'3','6-sie':'2, 4|2,4|2 und 4'})}{save('5b',203,262)}
  {text(170,537,810,'b  du oder Sie? Ergänzen und vergleichen Sie.','nabTitle')}
- <div className="nabTable" style={{left:202,top:561,width:796,height:92}}><div>Deutsch</div><div>Englisch</div><div>Meine Sprache oder andere Sprachen</div><div>du</div><div>you</div><div><input aria-label="6b du in meiner Sprache" value={v['6b-du']||''} onChange={e=>set('6b-du',e.target.value)}/></div><div>Sie</div><div>you</div><div><input aria-label="6b Sie in meiner Sprache" value={v['6b-sie']||''} onChange={e=>set('6b-sie',e.target.value)}/></div></div>
+ <div className="nabTable" style={{left:202,top:561,width:796,height:92}}><div>Deutsch</div><div>Englisch</div><div>Meine Sprache oder andere Sprachen</div><div>du</div><div>you</div><div><input aria-label="6b du in meiner Sprache" value={v['6b-du']||''} onChange={e=>set('6b-du',e.target.value)}/></div><div>Sie</div><div>you</div><div><input aria-label="6b Sie in meiner Sprache" value={v['6b-sie']||''} onChange={e=>set('6b-sie',e.target.value)}/></div></div>{save('6b',202,656)}
  {title('7',691,'du oder Sie? Kreuzen Sie an.','KB 6a','Kommunikation')}
  {text(202,735,175,'a  Woher kommen')}<input className="nabRadio" type="radio" style={{left:385,top:735}} disabled aria-label="7a Beispiel du"/>{text(415,735,48,'du')}<input className="nabRadio" type="radio" style={{left:463,top:735}} disabled checked readOnly aria-label="7a Beispiel Sie"/>{text(494,735,90,'Sie,')}{text(227,761,300,'Herr Svendson?')}
  {text(202,786,300,'b  Hallo, ich bin Tine. Und wer bist')}{choice('7-b','du',227,812,'7b du')}{text(260,812,45,'du')}{choice('7-b','Sie',305,812,'7b Sie')}{text(337,812,100,'Sie?')}
@@ -79,6 +80,7 @@ export function NativeAB11({page}:{page:string}){
  {img('person-a',202,1156,133,184)}{img('person-b',495,1156,133,184)}{img('person-c',645,1156,120,184)}{img('person-d',797,1156,133,184)}{text(350,1183,135,'Das ist Philipp\nLahm. Er\nkommt aus\nDeutschland.','nabExample')}
  {text(215,1369,180,'Philipp Lahm,\nDeutschland','nabCaption')}{text(500,1369,160,'Wolfgang Amadeus\nMozart, Österreich','nabCaption')}{text(650,1369,140,'Prinz Felipe,\nSpanien','nabCaption')}{text(801,1369,140,'Martina Hingis,\nSchweiz','nabCaption')}
  {open('9',202,1414,785,60,'9 Sätze zu den Fotos')}
+ {save('9',202,1483)}
  </>}
  {page==='8'&&<>
  {head('BASISTRAINING')}
@@ -139,7 +141,7 @@ export function NativeAB11({page}:{page:string}){
  {check('2',202,1021,{'2-a':'oesterreich','2-b':'esgeht','2-c':'aljoscha'})}
  {text(160,1080,800,'TRAINING: AUSSPRACHE','nabHeader')}{text(570,1090,400,'Satzmelodie','nabExample')}
  {title('1',1140,'Hören Sie und sprechen Sie nach.','','')}{listen('06',95,1144,'1')}
- {text(202,1183,435,'■  Wie heißt du? ↘\n▲  Ich heiße Paco. ↘  Und wer bist du? ↗\n■  Ich bin Nicole. ↘')}
+ {text(202,1183,435,'■  Wie heißt du? ↘\n▲  Ich heiße Paco. ↘  Und wer bist du? ↗\n■  Ich bin Nicole. ↘')}{save('au1',202,1245)}
  {title('2',1300,'Ergänzen Sie die Regel: ↗ oder ↘.','','')}
  {text(230,1344,360,'Wie ist die Satzmelodie ...?','nabBold')}{text(230,1377,400,'bei Aussagen (Ich heiße Paco.):')}{arrow('au2-a',575,1373,'2 Aussagen')}{text(230,1407,420,'bei W-Fragen (Wie heißt du?):')}{arrow('au2-w',575,1403,'2 W-Fragen')}{text(230,1437,430,'bei Rückfragen (Und wer bist du?):')}{arrow('au2-r',623,1433,'2 Rückfragen')}
  {check('au2',202,1471,{'au2-a':'down','au2-w':'down','au2-r':'up'})}
