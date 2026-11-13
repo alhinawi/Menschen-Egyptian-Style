@@ -36,8 +36,8 @@ def auto(y0, y1, x0, x1, text, **kw):
 
 # ---------- erase rectangles ----------
 R = [
-    (150,168,975,212),      # ex1 title 2 lines (full width, above TIPP box)
-    (115,232,465,268),      # 1a letter + Sammeln Sie Fragewoerter.
+    (150,156,975,212),      # ex1 title 2 lines (ink y163-206, marker x111-141 stays)
+    (115,226,465,256),      # 1a letter + Sammeln Sie Fragewoerter. (ink y229-250)
     (148,270,305,342),      # Fragewoerter rows (Wer/Wie, Was/Wo, Woher)
     (115,368,505,402),      # 1b Notieren Sie fuenf Fragen auf Kaertchen,
     (145,572,800,614),      # ex2 Spiel title
@@ -63,10 +63,10 @@ R = [
 ]
 
 # ---------- ex1 ----------
-auto(168,196,150,975,'Ihre Freundin / Ihr Freund hat ihren Traummann / seine Traumfrau kennengelernt.',c='naFiraM')
-auto(193,220,150,975,'Was möchten Sie wissen?',c='naFiraM')
+t(160,181,'Ihre Freundin / Ihr Freund hat ihren Traummann / seine Traumfrau kennengelernt.',c='naFiraM',target=803)
+t(160,204,'Was möchten Sie wissen?',c='naFiraM',target=216)
 wsa=band(232,268,118,146); t(round(wsa[0]['x']),round(line_baseline(wsa)),'a',c='naFiraM',target=round(wsa[0]['w'])+2)
-auto(232,268,148,470,'Sammeln Sie Fragewörter.')
+t(157,247,'Sammeln Sie Fragewörter.',target=224)
 # Fragewoerter grid
 fw=[(270,296,'Wer …'),(270,296,'Wie …'),(294,318,'Was …'),(294,318,'Wo …'),(318,340,'Woher …')]
 fwxy={'Wer …':(150,210),'Wie …':(230,310),'Was …':(150,210),'Wo …':(230,310),'Woher …':(150,260)}
@@ -74,7 +74,7 @@ for y0,y1,txt in fw:
     x0,x1=fwxy[txt]
     auto(y0,y1,x0,x1,txt)
 wsb=band(368,402,118,146); t(round(wsb[0]['x']),round(line_baseline(wsb)),'b',c='naFiraM',target=round(wsb[0]['w'])+2)
-auto(368,402,148,510,'Notieren Sie fünf Fragen auf Kärtchen,')
+t(156,390,'Notieren Sie fünf Fragen auf Kärtchen.',target=337)
 
 # ---------- ex2 Spiel ----------
 auto(572,614,148,800,'Spiel: Meine Traumfrau / Mein Traummann. Spielen Sie zu viert.',c='naFiraM')
@@ -85,12 +85,12 @@ auto(730,768,185,360,'Wie sieht sie/er aus?')
 auto(730,752,425,725,'Er ist blond und hat blaue Augen.')
 auto(752,774,425,725,'Wo hast du deine Traumfrau / deinen')
 auto(774,798,425,725,'Traummann kennengelernt?')
-auto(712,736,770,997,'Im Supermarkt.')
-auto(736,768,770,997,'Was macht sie/er beruflich?')
+t(823,730,'Im Supermarkt.',target=114)
+t(777,750,'Was macht sie/er beruflich?',target=205)
 
 # ---------- training ex1 ----------
-auto(932,968,148,495,'Hören Sie die Wörter und markieren',c='naFiraM')
-auto(962,992,148,495,'Sie den Wortakzent.',c='naFiraM')
+t(153,954,'Hören Sie die Wörter und markieren',c='naFiraM',target=353)
+t(152,979,'Sie den Wortakzent.',c='naFiraM',target=197)
 auto(996,1030,148,502,'aussehen – bekommen – entschuldigen –')
 auto(1028,1056,148,502,'gefallen – erkennen – mitnehmen –')
 auto(1054,1082,148,502,'anmelden – absagen – vergessen – einkaufen')
@@ -99,15 +99,15 @@ items.append({'k':'r','x':274,'y':1020,'w':36,'h':2,'col':'#da8855'})
 
 # ---------- training ex2 ----------
 auto(1108,1148,148,485,'Ordnen Sie die Wörter aus 1 zu.',c='naFiraM')
-auto(1152,1186,145,240,'trennbar',b=True)
-auto(1152,1186,310,480,'nicht trennbar',b=True)
+t(150,1171,'trennbar',b=True,target=82)
+t(317,1173,'nicht trennbar',b=True,target=139)
 
 # ---------- ex3 ----------
 auto(1238,1278,148,565,'Wo ist der Wortakzent? Kreuzen Sie an.',c='naFiraM')
 auto(1288,1312,405,470,'1. Silbe')
 auto(1288,1312,470,548,'2. Silbe')
-auto(1310,1334,175,385,'Bei trennbaren Verben:')
-auto(1332,1362,175,385,'Bei nicht trennbaren Verben:')
+t(184,1326,'Bei trennbaren Verben:',target=182)
+t(184,1348,'Bei nicht trennbaren Verben:',target=229)
 flds={f['id']:f for f in scan['fields']}
 for fid,lbl in [('p57-3r0-1','Bei trennbaren Verben: 1. Silbe'),('p57-3r0-2','Bei trennbaren Verben: 2. Silbe'),
                 ('p57-3r1-1','Bei nicht trennbaren Verben: 1. Silbe'),('p57-3r1-2','Bei nicht trennbaren Verben: 2. Silbe')]:
