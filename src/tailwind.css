@@ -753,3 +753,12 @@ body.readerSplitControls .controls .lnv-pageSlot{display:contents}
 .legacyReaderTools{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px;padding:12px;background:var(--paper,#fffefa);color:var(--ink,#26382e)}
 .legacyReaderTools button{min-height:44px;padding:8px 12px;font:14px Arial,sans-serif}
 .legacyReaderTools #practiceButton{background:#3d6449;color:white;border-color:#3d6449}
+
+/* Selbsteinschätzung rating rings (AB A1.2 p27/p98/p99): one shared, clearly visible style.
+   2px darker neutral stroke, green filled selected state; same size and position as before, so printed content stays uncovered. */
+.nativeAB12[data-native-ab12="27"] .naCanvas input.naDot,
+.nativeAB12[data-native-ab12="98"] .naCanvas input.naDot,
+.nativeAB12[data-native-ab12="99"] .naCanvas input.naDot{border-width:2px!important;border-color:#8a8f8a!important}
+.nativeAB12[data-native-ab12="27"] .naCanvas input.naDot:checked,
+.nativeAB12[data-native-ab12="98"] .naCanvas input.naDot:checked,
+.nativeAB12[data-native-ab12="99"] .naCanvas input.naDot:checked{border-color:#246e45!important;background:radial-gradient(circle,#246e45 0 45%,#fff 53%)!important}
