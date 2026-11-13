@@ -12,6 +12,9 @@
 .nkbCanvas input[type=radio].nkbField:checked,.nkbCanvas input[type=checkbox].nkbField:checked{background:radial-gradient(circle closest-side,#26764c 0 42%,transparent 48%)!important}
 .nkbCanvas .nkbField:focus-visible{outline:2px solid #26764c}
 .nkbCanvas .nkbField.ok{outline:2px solid #268250}.nkbCanvas .nkbField.bad{outline:2px solid #bd3838}
+/* Unanswered rows must show the red cross too: paint it on graded-but-unchecked radios/checkboxes (wrong or empty = red). */
+.page .nkbCanvas input:is([type=radio],[type=checkbox]).nkbField.bad:not(:checked){background-color:transparent!important;background-image:linear-gradient(54deg,transparent 40%,var(--answer-mark) 43% 53%,transparent 56%),linear-gradient(-48deg,transparent 41%,var(--answer-mark) 44% 53%,transparent 56%)!important;background-size:var(--answer-cross-size,60%) var(--answer-cross-size,60%)!important;background-position:50% 50%!important;background-repeat:no-repeat!important}
+.nkbCanvas input[type=radio].nkbCircleOption.bad:not(:checked){border-color:#bd3838!important}
 .nkbCanvas .nkbListen{position:absolute;background:transparent;border:0;padding:0;margin:0;cursor:pointer;z-index:4;min-width:0;min-height:0}
 .nkbCanvas .nkbListen:focus-visible{outline:3px solid #2e91be}
 .nkbCanvas .nkbCheck{position:absolute;display:flex;gap:8px;align-items:center;z-index:6;font-size:1.9cqw}
