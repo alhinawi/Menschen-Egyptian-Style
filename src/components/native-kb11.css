@@ -145,3 +145,7 @@
 .nkb[data-native-page="42"] input[data-native-field^="t4a"].nkbField{border-radius:50%!important;border:1px solid #c5bd8d!important;background:#fffef7!important;padding:0!important;text-align:center}
 
 .kb42Answers input::placeholder{font:12px KbFira,sans-serif;color:#72796e;opacity:1}
+
+.nkb[data-native-page="44"] .nkbLine{font-family:KbDroid,serif;transform:none!important}
+.nkb[data-native-page="44"] .nkbLine:is(.nkbSans,.nkbB){font-family:KbFira,sans-serif}
+.nkb[data-native-page="44"] .nkbLine.nkbB{font-weight:500}
