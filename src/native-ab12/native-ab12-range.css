@@ -15,3 +15,12 @@
 .naRCanvas .naRSans{font-family:FiraSans,'Trebuchet MS',sans-serif;font-weight:700;font-size:23px}
 .naRCanvas .naHead{letter-spacing:2px;font-weight:400}
 .naRCanvas .naBase{display:inline-block;width:0;height:0;vertical-align:baseline}
+.naRCanvas .naRWord{position:absolute;background:transparent!important;border:0!important;padding:0!important;margin:0!important;min-width:0!important;min-height:0!important;cursor:pointer;z-index:3}
+.naRCanvas .naRWord.on::after{content:'';position:absolute;left:0;right:0;top:13px;height:2.5px;background:#3566b5;border-radius:1px}
+.naRCanvas .naRWord:focus-visible{outline:2px solid #3566b5}
+.naRCanvas .naRCell{border:1.5px solid #cfe3ef!important;text-align:center;text-transform:uppercase;font:22px 'Times New Roman',serif!important;padding:0!important;color:#224777!important}
+.naRCanvas .naRS{text-decoration:line-through;text-decoration-color:#3566b5}
+.naRCanvas .naRBx{position:absolute}
+.naRCanvas .naRCell.L{text-align:left;padding-left:7px!important}
+.naRCanvas .naCheck button{white-space:nowrap}
+.naRCanvas .naRSol{text-align:center;text-transform:uppercase;font:22px 'Times New Roman',serif!important;color:#224777!important;padding:0!important}
