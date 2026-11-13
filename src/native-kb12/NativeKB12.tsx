@@ -128,7 +128,7 @@ export function NativeKB12({page}:{page:string}){
   {check('9a',163,387,{'9a-0':'true','9a-1':'true','9a-2':'false','9a-3':'false','9a-4':'true'})}
   {text(132,439,470,'b  Sie kennen den Weg nicht.\n    Bitten Sie nun höflich um Hilfe.','nkBold')}{text(566,435,220,'Entschuldigung.\nEine Frage bitte: …','nkSpeech')}
   {art('station',162,504,249,205)}{art('dom',505,504,218,205)}{art('sacher',806,424,189,286)}
-  {text(162,720,270,'Bahnhof','nkSmall')}{text(514,720,270,'Kölner Dom','nkSmall')}{text(812,720,220,'Hotel Sacher','nkSmall')}
+  {text(162,720,270,'Bahnhof','nkSmall')}{text(514,720,270,'Kölner Dom','nkSmall')}{text(812,720,220,'Hotel Sacher','nkSmall')}{save('9b',132,750)}
   {text(121,786,450,'GRAMMATIK','nkModule')}{text(644,786,430,'KOMMUNIKATION','nkModule')}
   <div className="nkGrammar nkSummary" style={{left:122,top:830,width:475,height:490}}>
    <b className="nkBar"><Words text="Wo? → Lokale Präpositionen mit Dativ"/></b>
