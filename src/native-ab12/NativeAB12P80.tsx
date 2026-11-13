@@ -40,7 +40,7 @@ export function NativeAB12P80({page}:{page:string}){
 [data-native-ab12='80'] .naHead80{font-size:20px!important;letter-spacing:2.1px!important;color:#4d4d4a!important}
 [data-native-ab12='80'] .naWords80{font-size:15px!important}
 [data-native-ab12='80'] .naRowL80{font-family:FiraSans,sans-serif!important;font-size:12px!important;color:#2b2b2b!important}
-[data-native-ab12='80'] .naDots80{position:absolute;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='4'%3E%3Ccircle cx='1.5' cy='2' r='1.2' fill='%2337373b'/%3E%3Ccircle cx='6' cy='2' r='1.2' fill='%2337373b'/%3E%3C/svg%3E");background-size:9px 4px;background-repeat:repeat-x}
+[data-native-ab12='80'] .naDots80{position:absolute;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='4'%3E%3Ccircle cx='1.5' cy='2' r='0.85' fill='%2348484c'/%3E%3Ccircle cx='6' cy='2' r='0.85' fill='%2348484c'/%3E%3C/svg%3E");background-size:9px 4px;background-repeat:repeat-x}
 [data-native-ab12='80'] .naWords80 b{font-weight:700}
 [data-native-ab12='80'] .naTh80{font-family:FiraSans,sans-serif!important;font-weight:600;font-size:13px!important;color:#3a3a38!important}
 [data-native-ab12='80'] .naThBig80{font-size:15px!important}
