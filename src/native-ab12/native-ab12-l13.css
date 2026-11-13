@@ -141,10 +141,10 @@
 [data-native-ab12="13"] .naCanvas .naText.naInstr13 .naBlu{color:#2f5b94}
 [data-native-ab12="13"] .naCanvas .naText.naPara13{font:18px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
 [data-native-ab12="13"] .naCanvas .naText.naCell13{font:17px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
-[data-native-ab12="13"] .naCanvas .naText.naSub13{font:15px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
-[data-native-ab12="13"] .naCanvas .naText.naTh13{font:bold 15px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
-[data-native-ab12="13"] .naCanvas .naText.naTh13s{font:bold 14px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
-[data-native-ab12="13"] .naCanvas .naText.naEx13b{font:bold 20.5px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
+[data-native-ab12="13"] .naCanvas .naText.naSub13{font:16.8px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
+[data-native-ab12="13"] .naCanvas .naText.naTh13{font:bold 16.5px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
+[data-native-ab12="13"] .naCanvas .naText.naTh13s{font:bold 16px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
+[data-native-ab12="13"] .naCanvas .naText.naEx13b{font:bold 19.4px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
 [data-native-ab12="13"] .naCanvas .naBand13{position:absolute;background:#eee9cb}
 [data-native-ab12="13"] .naCanvas .naLine13{position:absolute;background:#b8b4ac}
 [data-native-ab12="13"] .naCanvas .naLine13b{position:absolute;background:#e9ead6}
@@ -153,3 +153,6 @@
 [data-native-ab12="13"] .naCanvas .naText.naInstr13r{font:19.5px FiraSans,'Trebuchet MS',sans-serif!important;color:#1a1a12;letter-spacing:0!important}
 [data-native-ab12="13"] .naCanvas .naText.naRow13{font:17px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
 [data-native-ab12="13"] .naCanvas .naText em{font-style:italic;padding-right:3px}
+[data-native-ab12="13"] .naCanvas .naText.naTh13b{font:bold 20px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
+[data-native-ab12="13"] .naCanvas .naLine13d{position:absolute;background:#e6e0c0}
+[data-native-ab12="13"] .naCanvas .naLine13e{position:absolute;background:#fff}
