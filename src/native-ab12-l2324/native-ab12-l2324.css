@@ -22,3 +22,5 @@
 .naCanvas .naField.naFieldC{text-align:center}
 .naCanvas .naText.naBankInk{color:#33456e}
 .naCanvas .naTblCell.naTblCellS{font-size:15px}
+.naCanvas .naBasisL{position:absolute;font:400 20px 'Times New Roman',serif;letter-spacing:2.5px;color:#6b6b6b}
+.naCanvas.naNarrow .naSide.naSideC{font-size:8px;letter-spacing:1px}
