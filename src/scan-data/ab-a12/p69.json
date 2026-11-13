@@ -2213,7 +2213,7 @@
    "src": "assets/ab-cd2-track31.mp3",
    "label": "CD2 · Track31",
    "x": 71,
-   "y": 883,
+   "y": 834,
    "w": 44,
    "h": 22
   },
@@ -2221,8 +2221,8 @@
    "id": "track32-2",
    "src": "assets/ab-cd2-track32.mp3",
    "label": "CD2 · Track32",
-   "x": 26,
-   "y": 926,
+   "x": 40,
+   "y": 884,
    "w": 44,
    "h": 22
   },
@@ -2230,8 +2230,8 @@
    "id": "track33-3",
    "src": "assets/ab-cd2-track33.mp3",
    "label": "CD2 · Track33",
-   "x": 374,
-   "y": 791,
+   "x": 446,
+   "y": 749,
    "w": 44,
    "h": 22
   }
