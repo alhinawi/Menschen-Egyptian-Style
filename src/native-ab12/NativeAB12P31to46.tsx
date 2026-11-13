@@ -31,6 +31,7 @@ export function NativeAB12P31to46({page}:{page:string}){
  const rule=(x:number,y:number,w:number)=><div className="naRule" style={{left:x,top:y,width:w}}/>;
  const dot=(id:string,value:string,x:number,y:number,label:string,checkbox=false)=><input className="naDot" type={checkbox?'checkbox':'radio'} aria-label={label} data-value={value} name={key+'-'+id} checked={checkbox?values[id]==='true':values[id]===value} onChange={e=>set(id,checkbox?String(e.target.checked):value)} style={{left:x,top:y}}/>;
  const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}/><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const save=(id:string,x:number,y:number)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton onClick={()=>sr({...results,[id]:true})}/><output aria-live="polite">{id in results?'Gespeichert':''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,t:string,cls='')=><div className={'naTitle '+cls} style={{left:x,top:y,width:w}}><b>{n}</b><Words text={t}/></div>;
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const audio=(src:string,x:number,y:number,label:string,task?:string)=><button className="naAudio" data-task={task} style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
@@ -623,6 +624,11 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(176,1237,165,'hängen Sie die Zettel','naNw')}
   {text(176,1259,162,'in der Wohnung auf.','naNw')}
   {title('2',99,1318,700,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naGB')}
+  {[249,300,326,352,377,403,429,480,506,558,584,648,674,700,725,751,777,828,880,931,957,983,1047,1072,1124,1176].map((y,i)=>field('p35-1-l'+(i+1),316,y-19,189,'1 links Zeile '+(i+1),'naFieldBlank'))}
+  {[250,301,353,378,443,469,520,546,572,597,648,700,751,803,828,880,906,931,957,984,1009,1034,1061,1086,1138].map((y,i)=>field('p35-1-r'+(i+1),676,y-19,193,'1 rechts Zeile '+(i+1),'naFieldBlank'))}
+  {field('p35-2-1',143,1352,640,'2 Notieren Zeile 1','naFieldBlank')}
+  {save('35-1',890,1164)}
+  {save('35-2',890,1350)}
   {art('modul-tab',988,1389,83,25)}
   {text(804,1388,140,'fünfunddreißig','naFooter')}{text(943,1388,8,'|','naFooter')}{text(964,1388,22,'35','naFooter')}
  </>}
