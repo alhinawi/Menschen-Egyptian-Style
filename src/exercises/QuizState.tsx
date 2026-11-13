@@ -75,6 +75,7 @@ export interface QuizStore {
   toggleTask(el: HTMLElement): void;
   checkTask(button: HTMLElement): void;
   submit(form: HTMLFormElement): void;
+  resetPage(page: HTMLElement): void;
 }
 
 export function createQuizStore(): QuizStore {
@@ -173,6 +174,18 @@ export function createQuizStore(): QuizStore {
       snapshot = {...snapshot, fields, taskResults};
       runtime.commitResult(host!, ok);
       listeners.forEach(fn => fn());
+    },
+    resetPage(page) {
+      const next={results:{...snapshot.results},fields:{...snapshot.fields},selections:{...snapshot.selections},taskResults:{...snapshot.taskResults}};
+      for(const form of page.querySelectorAll<HTMLFormElement>('form'))delete next.results[form.dataset.key||form.id];
+      for(const el of page.querySelectorAll<HTMLElement>('[data-react-answer-id],[data-react-task-id],[id]')){
+        if(el.dataset.reactAnswerId)delete next.fields[el.dataset.reactAnswerId];
+        if(el.dataset.reactTaskId){delete next.selections[el.dataset.reactTaskId];delete next.fields[el.dataset.reactTaskId];delete next.taskResults[el.dataset.reactTaskId]}
+        if(el.id)delete next.taskResults[el.id];
+      }
+      if(page.querySelector('.verbWord'))delete next.taskResults.verbs;for(const el of page.querySelectorAll<HTMLElement>('.verbWord')){const i=[...document.querySelectorAll('.verbWord')].indexOf(el);runtime?.options.saveVerbSelection?.(i,false)}
+      page.querySelectorAll('.answerCorrect,.answerWrong').forEach(el=>el.classList.remove('answerCorrect','answerWrong'));
+      snapshot=next;listeners.forEach(fn=>fn());
     },
     submit(form) {
       if (!runtime) return;
