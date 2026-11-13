@@ -459,9 +459,9 @@ export function NativeAB12P31to46({page}:{page:string}){
   {field('p34-5-4',190,1135,256,'5 (4)')}
   {field('p34-5-5',190,1160,255,'5 (5)')}
   {check('34-1',169,333,{'p34-1b':'Klimaanlage','p34-1c':'Internetverbindung','p34-1d':'Fernseher','p34-1e':'Dusche'})}
-  {check('34-2',560,476,{'p34-2b':'ünktlich|pünktlich','p34-2c':'ustig|lustig','p34-2d':'alt|kalt'})}
-  {check('34-3',270,737,{'p34-3b':'nach','p34-3c':'für','p34-3d':'vor','p34-3e':'nach|Nach'})}
-  {check('34-4',251,924,{'r4a':'einer','r4b':'dem','r4c':'einem','r4d':'einen'})}
+  {check('34-2',560,470,{'p34-2b':'ünktlich|pünktlich','p34-2c':'ustig|lustig','p34-2d':'alt|kalt'})}
+  {check('34-3',700,737,{'p34-3b':'nach','p34-3c':'für','p34-3d':'vor','p34-3e':'nach|Nach'})}
+  {check('34-4',640,922,{'r4a':'einer','r4b':'dem','r4c':'einem','r4d':'einen'})}
   {check('34-5',700,1162,{'p34-5-1':'Was kann','p34-5-2':'Es gibt','p34-5-3':'Das tut','p34-5-4':'Ich kümmere','p34-5-5':'Das ist'})}
  </>}
  {page==='35'&&<>
