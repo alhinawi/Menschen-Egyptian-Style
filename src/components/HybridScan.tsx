@@ -1,3 +1,4 @@
+import {usePageReset} from '../exercises/usePageReset';
 import {ClipMarkers} from './ClipMarkers';
 import {useLayoutEffect,useRef,useState} from 'react';
 import type {CSSProperties} from 'react';
@@ -14,6 +15,7 @@ export function HybridScan({data}:{data:ScanData}){
  const [toolSpace,setToolSpace]=useState(90);
  useLayoutEffect(()=>{const el=tools.current;if(!el)return;const measure=()=>{const h=Math.ceil(el.offsetHeight)+12;setToolSpace(Math.max(90,h))};measure();const observer=new ResizeObserver(measure);observer.observe(el);return ()=>observer.disconnect()},[data]);
  const box=(b:ScanBox):CSSProperties=>({left:b.x/data.width*100+'%',top:b.y/data.height*100+'%',width:b.w/data.width*100+'%',height:b.h/data.height*100+'%'});
+ usePageReset(data.page,key,()=>{setValues({});setResults({})});
  const update=(id:string,value:string)=>{const next={...values,[id]:value};setValues(next);try{localStorage.setItem(key,JSON.stringify(next))}catch{}};
  function check(group:string){const fields=data.fields.filter(f=>f.group===group&&f.answer!==undefined);const next={...results};for(const f of fields){const value=f.kind==='radio'?String(values[f.name||f.id]===f.value):f.kind==='checkbox'?String(values[f.id]==='true'):norm(values[f.id]||'');next[f.id]=f.answer!.split('|').some(a=>norm(a)===value)}setResults(next)}
  return <div className="hybridScan" data-scan-book={data.book} data-scan-page={data.page} data-review-status={data.review.status}>
