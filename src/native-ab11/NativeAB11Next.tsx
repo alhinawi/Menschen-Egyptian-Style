@@ -25,7 +25,7 @@ export function NativeAB11Next({page}:{page:string}){
  const endingStyle=(id:string)=>{const m=(v['mark-'+id]||'').split(':').map(Number),ctx=document.createElement('canvas').getContext('2d');if(m.length!==2||!ctx)return {};ctx.font="20px 'Times New Roman'";const a=4+ctx.measureText((v[id]||'').slice(0,m[0])).width,b=4+ctx.measureText((v[id]||'').slice(0,m[1])).width;return {backgroundImage:`linear-gradient(to right,transparent ${a}px,#fff066 ${a}px,#fff066 ${b}px,transparent ${b}px)`}};
  const keyAnswers=(group:string)=>Object.fromEntries(data.fields.filter(f=>f.group===group&&f.answer!==undefined&&f.kind!=='radio').map(f=>[f.id,f.answer!]));
  const checkGroup=(group:string,x:number,y:number)=>check(group,x,y,keyAnswers(group));
- const match=(id:string,left:string[],right:string[],x:number,y:number,rx:number,gap:number,example?:[number,number])=><LineMatching id={id} left={left} right={right} values={v} onMatch={set} leftX={x} rightX={rx} leftWidth={230} rightWidth={440} ys={left.map((_,i)=>py(y+i*gap))} rightYs={right.map((_,i)=>py(y+i*gap))} example={example}/>;
+ const match=(id:string,left:string[],right:string[],x:number,y:number,rx:number,gap:number,example?:[number,number])=><LineMatching id={id} left={left} right={right} values={v} onMatch={set} leftX={x} rightX={rx} leftWidth={id==='lesen1'?260:230} rightWidth={440} ys={left.map((_,i)=>py(y+i*gap))} rightYs={right.map((_,i)=>py(y+i*gap))} example={example}/>;
  const multi=(id:string,x:number,y:number,w:number,h:number,label:string)=>open(id,x,y,w,h,label);
  return <div className="nativeAB11 nativeAB11Next" ref={host} data-native-ab11-page={page}><div className="nabCanvas" style={{transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='12'&&<>
