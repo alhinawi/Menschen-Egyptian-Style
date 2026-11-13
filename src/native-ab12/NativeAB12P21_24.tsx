@@ -41,11 +41,11 @@ export function NativeAB12P21_24({page}:{page:string}){
   {art('photo4',846,227,142,102)}
   <div className="naTipTop" style={{left:391,top:371,width:605,height:5}}/>
   <div className="naTipSide" style={{left:391,top:371,width:14,height:91}}/>
-  <div className="naTipLbl" style={{left:395,top:457}}>TIPP</div>
-  {text(425,379,560,'Sie möchten nicht nur mit einem Wort antworten? Machen Sie sich','naD19')}
-  {text(425,401,560,'erst Notizen: Was mache ich wo in meinem Stadtteil? So wiederholen Sie','naSmall')}
-  {text(425,423,560,'wichtige Informationen und planen Ihre Aussage. Das Sprechen ist','naS20')}
-  {text(425,445,560,'dann leichter.','naS20')}
+  <div className="naTipLbl" style={{left:402,top:450}}>TIPP</div>
+  {text(425,379,560,'Sie möchten nicht nur mit einem Wort antworten? Machen Sie sich','naF17')}
+  {text(425,401,560,'erst Notizen: Was mache ich wo in meinem Stadtteil? So wiederholen','naF17')}
+  {text(425,423,560,'Sie wichtige Informationen und planen Ihre Aussage. Das Sprechen ist','naF17')}
+  {text(425,445,560,'dann leichter.','naF17')}
   {title('2',104,511,900,'Arbeiten Sie zu dritt. Schreiben Sie einen Fragebogen. Sprechen und notieren Sie.','naOB naLS')}
   {text(170,566,300,'Was brauchen Sie in Ihrem Stadtteil?','naD19 naItalic')}
   <div className="naTFrame" style={{left:170,top:595,width:730,height:169}}/>
