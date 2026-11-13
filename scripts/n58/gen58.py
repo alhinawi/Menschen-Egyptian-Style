@@ -139,7 +139,7 @@ segs(228,250,180,945,[('t','Sie steht am Eingang. Sie ist'),('h','s',436,450),('
                       ('t','(a)'),('t','und'),('h','hat',597,632),
                       ('f','p58-1b','sl'),('t','(b) braune'),('f','p58-1c','sl'),('t','(c).')],
                      keep=[(630,722),(820,909)])
-segs(252,278,180,478,[('t','Sie ist wirklich',-4),('f','p58-1d','sl'),('t','(d) .')],keep=[(306,430)])
+segs(252,278,180,478,[('f','p58-1d','sl'),('t','(d) .')],keep=[(180,431)])
 segs(280,304,180,500,[('t','Ja, das finde ich auch.')])
 segs(306,330,180,900,[('t','Und wer ist der Mann neben ihr mit dem','sz',17.8),('f','p58-1e','sl'),('t','(e)?')],keep=[(551,624)])
 segs(332,356,180,855,[('t','Hat er dunkle'),('f','p58-1f','sl'),('t','(f)? Dann ist es Louis.')],keep=[(306,416)])
@@ -212,6 +212,7 @@ PAPER=(254.0,253.0,248.0)
 R.append(('fill',(246,991,368,1021),PAPER))   # below ex4a pattern ('einen Bart.' band)
 R.append(('fill',(183,1067,252,1098),PAPER))   # below ex4b pattern ('Und - das...' band)
 R.append(('fill',(178,1120,322,1150),PAPER))   # below ex4c pattern ('Und er hat...' band)
+R.append(('fill',(320,280,435,310),PAPER))   # below ex1 L3 kept text+dashes ('Ja, das...' band)
 # flat paper over ex3 blank spans (kills vertical streak bars above the rules)
 for _fid,_b in [('p58-3b',(734,758)),('p58-3c',(760,784)),('p58-3d',(784,808)),
                 ('p58-3e',(810,834)),('p58-3f',(836,862)),('p58-3g',(862,886))]:
