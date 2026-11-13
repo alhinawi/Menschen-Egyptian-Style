@@ -1134,10 +1134,10 @@
     1013
    ],
    "rightYs": [
-    940,
-    992
+    905,
+    905
    ],
-   "fontSize": 20,
+   "fontSize": 18.5,
    "masks": [
     {
      "x": 186,
@@ -1151,6 +1151,23 @@
      "w": 200,
      "h": 132
     }
+   ],
+   "className": "lmScanFont lmHideRight",
+   "rightXs": [
+    645,
+    745
+   ],
+   "rightHeights": [
+    140,
+    140
+   ],
+   "rightDotXs": [
+    683,
+    796
+   ],
+   "rightDotYs": [
+    977,
+    977
    ]
   }
  ]
