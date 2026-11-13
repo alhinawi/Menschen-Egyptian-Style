@@ -95,5 +95,45 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {art('modul-tab',0,1403,80,21)}
   {footerL('6','sechs',1404)}
  </>}
+ {page==='7'&&<>
+  {text(115,86,300,'BASISTRAINING','naHeadline naNw')}
+  <div className="naRule" style={{left:362,top:109,width:601,borderColor:'#fce80f'}}/>
+  {art('lesson13',980,25,82,75)}
+  {kb(56,163,'KB 5')}
+  {title('4',112,158,600,'Ergänzen Sie den Artikel.','naYB')}
+  {side(70,175,'STRUKTUREN')}
+  {text(155,203,20,'a','naLet13')}{text(185,203,790,'Entschuldigen Sie bitte, wo ist denn hier die Polizei? – Die ist ganz in der Nähe, neben','naS20 naNw')}
+  {art('dem',175,225,43,25)}{text(224,229,200,'Hotel „Globus“.','naS20 naNw')}
+  {text(155,254,20,'b','naLet13')}{text(185,254,320,'Und das Hotel „Globus“? – Das ist vor','naS20 naNw')}{field('7-4b',510,256,75,'4b')}{text(592,254,350,'Restaurant „Zur Glocke“.','naS20 naNw')}
+  {text(155,280,20,'c','naLet13')}{text(185,280,460,'Und das Restaurant „Zur Glocke“? — Das ist zwischen','naS20 naNw')}{field('7-4c1',648,282,77,'4c1')}{text(733,280,80,'Dom und','naS20 naNw')}{field('7-4c2',815,282,75,'4c2')}{text(898,280,60,'Bank.','naS20 naNw')}
+  {text(155,306,20,'d','naLet13')}{text(185,306,505,'Und wo ist der Dom? – Na dort, schauen Sie, gleich hinter','naS20 naNw')}{field('7-4d',695,308,75,'4d')}{text(778,306,70,'Brücke.','naS20 naNw')}
+  {text(155,332,20,'e','naLet13')}{text(185,332,515,'Danke! Und gibt es hier auch eine Post? — Ja, gleich dort an','naS20 naNw')}{field('7-4e',705,334,75,'4e')}{text(788,332,60,'Ampel.','naS20 naNw')}
+  {check('7-4',860,372,{'7-4b':'dem','7-4c1':'dem','7-4c2':'der','7-4d':'der','7-4e':'der'})}
+  {kb(56,427,'KB 5')}
+  {title('5',112,416,700,'Ergänzen Sie die Präposition und den Artikel.','naYB')}
+  {side(70,462,'STRUKTUREN')}
+  {text(156,456,200,'Wo ist denn …','naS20 naNw')}
+  {text(155,512,20,'a','naLet13')}{text(180,513,367,'… das Hotel „Kirchblick“? — Das ist direkt','naS18 naNw')}{art('am',549,507,40,29)}{text(582,513,80,'Bahnhof.','naS18 naNw')}
+  {art('hotel',665,468,165,94)}
+  {text(155,602,20,'b','naLet13')}{text(185,602,180,'… die Post? — Die ist','naS20 naNw')}{field('7-5b1',366,604,109,'5b1')}{text(483,602,100,'Polizei und','naS20 naNw')}{field('7-5b2',585,604,115,'5b2')}{text(708,602,160,'Café „Glockner“.','naS20 naNw')}
+  {art('polizei',860,555,156,87)}
+  {text(155,692,20,'c','naLet13')}{text(185,692,258,'… die Mozartstraße? — Die ist','naS20 naNw')}{field('7-5c',447,694,113,'5c')}{text(568,692,70,'Brücke.','naS20 naNw')}
+  {art('mozart',645,644,155,95)}
+  {text(155,782,20,'d','naLet13')}{text(185,782,193,'… Wuffel? – Er wartet','naS20 naNw')}{field('7-5d',380,786,115,'5d')}{text(503,782,60,'Ampel.','naS20 naNw')}
+  {art('ampel',560,728,151,86)}
+  {text(155,873,20,'e','naLet13')}{text(185,873,171,'… Miezi? — Sie sitzt','naS20 naNw')}{field('7-5e',358,875,112,'5e')}{text(478,873,65,'Brücke.','naS20 naNw')}
+  {art('miezi',565,833,145,95)}
+  {text(155,962,20,'f','naLet13')}{text(185,962,179,'… die Frau? — Sie ist','naS20 naNw')}{field('7-5f',366,964,109,'5f')}{text(483,962,50,'Dom.','naS20 naNw')}
+  {art('frau',550,917,168,89)}
+  {text(155,1051,20,'g','naLet13')}{text(185,1051,188,'… der Mann? – Er ist','naS20 naNw')}{field('7-5g',375,1054,110,'5g')}{text(493,1051,50,'Bank.','naS20 naNw')}
+  {art('bank',577,1003,152,85)}
+  {check('7-5',860,1100,{'7-5b1':'zwischen der','7-5b2':'dem','7-5c':'hinter der','7-5d':'an der','7-5e':'auf der','7-5f':'im','7-5g':'vor der'})}
+  {kb(56,1146,'KB 5')}
+  {title('6',113,1137,720,'Zeichnen Sie für Ihre Partnerin / Ihren Partner Orte in der Stadt auf','naYB naNw')}
+  <div className="naTitle naYB" style={{left:156,top:1163,width:320}}><Words text="Kärtchen ähnlich wie in 5."/></div>
+  <div style={{position:'absolute',left:59,top:1172,width:9,height:9,borderRadius:'50%',background:'#67aacd'}}/><div style={{position:'absolute',left:88,top:1172,width:9,height:9,borderRadius:'50%',background:'#67aacd'}}/>{text(157,1207,500,'Ihre Partnerin / Ihr Partner schreibt einen Satz.','naS20 naNw')}
+  {footerR('7','sieben',1386)}
+  {art('tab7',1000,1383,71,25)}
+ </>}
  </div><audio ref={player} className="naPlayer"/></div>;
 }
