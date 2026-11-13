@@ -170,11 +170,11 @@
   {
    "k": "t",
    "x": 122,
-   "y": 506,
+   "y": 504,
    "t": "a",
-   "s": 15,
-   "col": "#434e95",
-   "b": 1
+   "s": 17.5,
+   "c": "naRSans",
+   "col": "#2f4a90"
   },
   {
    "k": "t",
@@ -182,7 +182,7 @@
    "y": 504,
    "t": "Markieren Sie die trennbaren Verben blau und die nicht trennbaren Verben grün.",
    "s": 18.5,
-   "c": "naRSans",
+   "c": "naFiraS",
    "col": "#2a2a28"
   },
   {
