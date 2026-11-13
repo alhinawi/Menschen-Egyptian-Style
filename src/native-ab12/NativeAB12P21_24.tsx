@@ -126,7 +126,7 @@ export function NativeAB12P21_24({page}:{page:string}){
  {page==='22'&&<>
   {text(125,93,90,'TEST','naHead2 naNw')}
   <div className="naHeadRule" style={{left:205,top:113,width:773}}/>
-  {title('1',118,158,900,'In der Stadt. Ordnen und Ergänzen Sie die Wörter mit Artikel.','naRB naLS')}
+  {title('1',118,158,900,'In der Stadt. Ordnen und Ergänzen Sie die Wörter mit Artikel.','naOB naLS')}
   {art('scramble',160,196,665,42)}
   {text(166,243,12,'a')}
   {text(190,244,320,'Hier kann man Kleidung einkaufen.','naF19')}
@@ -149,7 +149,7 @@ export function NativeAB12P21_24({page}:{page:string}){
   <div className="naRule" style={{left:879,top:413,width:14}}/>
   {text(900,406,75,'/ 10 Punkte','naPkt')}
   {check('g1',700,240,{'p22-1b':'Kindergarten|der Kindergarten','p22-1c':'Jugendherberge|die Jugendherberge','p22-1d':'Turm|der Turm','p22-1e':'Bibliothek|die Bibliothek','p22-1f':'Park|der Park'},'naCheckSm')}
-  {title('2',117,442,900,'Wie heißen die Personalpronomen? Kreuzen Sie an.','naRB naLS')}
+  {title('2',117,442,900,'Wie heißen die Personalpronomen? Kreuzen Sie an.','naOB naLS')}
   {text(165,489,12,'a')}
   {text(189,490,540,'Daniel und Julia, wie findet ihr Berlin? – Super, es gefällt','naF19')}
   {art('ex2a-x',716,484,32,32)}
@@ -195,7 +195,7 @@ export function NativeAB12P21_24({page}:{page:string}){
   <div className="naRule" style={{left:879,top:737,width:14}}/>
   {text(900,730,70,'/ 5 Punkte','naPkt')}
   {check('g2',170,724,{'p22-r2b':'dir','p22-r2c':'Ihnen','p22-r2d':'euch','p22-r2e':'ihm','p22-r2f':'mir'},'naCheckSm')}
-  {title('3',116,765,900,'Ergänzen Sie die E-Mail.','naRB naLS')}
+  {title('3',116,765,900,'Ergänzen Sie die E-Mail.','naOB naLS')}
   <div className="naBandCream" style={{left:164,top:812,width:682,height:24}}/>
   {stext(170,814,680,'Hier gibt es viele | das ist nicht so toll | gefällt mir gut | Hier ist | das ist schon okay','naBankT')}
   {stext(184,873,110,'Hallo Freunde,','naF16')}
