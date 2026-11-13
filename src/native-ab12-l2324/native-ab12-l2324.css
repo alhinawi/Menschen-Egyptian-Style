@@ -73,6 +73,8 @@
 .naCanvas .naText.naBk88 span[role=button]{padding:0}
 .naCanvas .naRule.naRuleT{border-bottom-width:1px}
 @font-face{font-family:FiraSans;src:url('/assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:FiraSans;src:url('/assets/fonts/firasans-latin-500.ttf') format('truetype');font-weight:500;font-display:swap}
+@font-face{font-family:FiraSans;src:url('/assets/fonts/firasans-latin-600.woff2') format('woff2');font-weight:600;font-display:swap}
 .naCanvas .naBank88{position:absolute;font:13px FiraSans,'Trebuchet MS',sans-serif;color:#2c3d63;white-space:nowrap}
 .naCanvas .naBank88b{position:absolute;font:14px FiraSans,'Trebuchet MS',sans-serif;color:#2c3d63;white-space:nowrap}
 .naCanvas .naText.naCue88{position:absolute;font-family:DroidSerif,Georgia,serif;font-size:12px;color:#444;white-space:nowrap}
@@ -190,7 +192,7 @@
 [data-native-ab12="94"] .naTestRule94{position:absolute;height:1.5px;background:linear-gradient(90deg,#f0701a,#f08a20)}
 [data-native-ab12="96"] .naBookSerif{letter-spacing:0!important}
 [data-native-ab12="96"] .naField{border-bottom:1px solid #c4c4c8!important}
-[data-native-ab12="96"] .naCanvas .naText.naHead96{font-family:DroidSerif,Georgia,serif;color:#1a191b;letter-spacing:0}
+[data-native-ab12="96"] .naCanvas .naText.naHead96{font-family:DroidSerif,Georgia,serif;color:#0f0e11;letter-spacing:0}
 [data-native-ab12="96"] .naCanvas .naText.naHead96 span[role=button]{padding:0}
 [data-native-ab12="96"] .naCanvas .naTitle.naT96{font-size:16.6px}
 [data-native-ab12="96"] .naTitle.naRB b{background:linear-gradient(180deg,#b30d03,#9a0300);min-width:22px;width:22px;height:15px;line-height:15px;font:700 11px/15px FiraSans,sans-serif;margin-right:8px;position:relative;top:-3px;box-shadow:inset 0 2px 0 #c34a3a,inset 2px 0 0 #a8182e}
@@ -210,3 +212,29 @@
 
 [data-native-ab12="96"] .naCanvas .naText.naTbL96 span[role=button]{padding:0}
 [data-native-ab12="96"] .naCanvas .naText.naLab96 span[role=button]{padding:0}
+[data-native-ab12="97"] .naBookSerif{letter-spacing:0!important}
+[data-native-ab12="97"] .naField{border-bottom:1px solid #c4c4c8!important}
+[data-native-ab12="97"] .naCanvas .naText.naHead97{font-family:DroidSerif,Georgia,serif;color:#0f0e11;letter-spacing:0}
+[data-native-ab12="97"] .naCanvas .naText.naHead97 span[role=button]{padding:0}
+[data-native-ab12="97"] .naCanvas .naTitle.naT97{font-size:16.6px}
+[data-native-ab12="97"] .naTitle.naRB b{background:linear-gradient(180deg,#b30d03,#9a0300);min-width:23px;width:23px;height:14px;line-height:14px;font:700 15px/14px FiraSans,sans-serif;margin-left:1.3px;margin-right:6.7px;position:relative;top:-1.5px;box-shadow:inset 0 2px 0 #c34a3a,inset 2px 0 0 #a8182e}
+[data-native-ab12="97"] .naCanvas .naText.naTitleL97{font-family:FiraSans,sans-serif;font-weight:700;color:#1a191b;font-size:16.6px}
+[data-native-ab12="97"] .naCanvas .naText.naTitleL97 span[role=button]{padding:0}
+[data-native-ab12="97"] .naCanvas .naText.naBank97{font-family:FiraSans,sans-serif;font-weight:400;color:#1f2566;letter-spacing:0}
+[data-native-ab12="97"] .naCanvas .naText.naBank97 span[role=button]{padding:0}
+[data-native-ab12="97"] .naCanvas .naText.naLink97{color:#313e6a}
+[data-native-ab12="97"] .naCanvas .naText.naLink97 span[role=button]{padding:0}
+[data-native-ab12="97"] .naCard97{position:absolute;background:#fff;box-shadow:0 3px 5px 1px rgba(72,82,102,.35),0 -2px 4px rgba(72,82,102,.28)}
+[data-native-ab12="97"] .naHl97{position:absolute;background:#ffffda}
+[data-native-ab12="97"] .naCalG97{position:absolute;background:#e5f1c9}
+[data-native-ab12="97"] .naCanvas .naText.naFoot88{color:#2c2e2d}
+[data-native-ab12="97"] .naCanvas .naText.naMail97{font-family:FiraSans,sans-serif;font-weight:400;color:#0f0e11;letter-spacing:0}
+[data-native-ab12="97"] .naCanvas .naText.naMail97 span[role=button]{padding:0}
+[data-native-ab12="97"] .naCanvas .naText.naNam97{font-family:DroidSerif,Georgia,serif;font-weight:400;color:#0f0e11;letter-spacing:0}
+[data-native-ab12="97"] .naCanvas .naText.naNam97 span[role=button]{padding:0}
+[data-native-ab12="97"] .naStrike97{position:absolute;height:1px;background:rgba(25,53,131,.8)}
+[data-native-ab12="97"] .naPipeSvg97{position:absolute;left:0;top:0;width:807px;height:1094px;pointer-events:none}
+[data-native-ab12="97"] .naPipeSvg97 rect{fill:rgb(80,72,70)}
+
+[data-native-ab12="97"] .naCanvas .naArt[src*="hand-feier"]{opacity:.82}
+[data-native-ab12="97"] .naExRule97{position:absolute;background:#c8cdd4}
