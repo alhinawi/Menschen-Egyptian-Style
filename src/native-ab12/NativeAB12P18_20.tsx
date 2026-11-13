@@ -35,7 +35,7 @@ export function NativeAB12P18_20({page}:{page:string}){
   <div style={{position:'absolute',left:354,top:38,width:621,height:81,background:'#fbd479'}}/>
   <div className="naText" style={{left:417,top:56,width:520,fontFamily:"FiraSans,'Trebuchet MS',sans-serif",fontWeight:700,fontSize:34,color:'#2b1608'}}><Words text="In Giesing wohnt das Leben!"/></div>
   {kb(78,160,'KB 3')}
-  {title('1',125,156,600,'Wo sind die Personen?','naOB naNw')}
+  {title('1',116,180,600,'Wo sind die Personen?','naOB naNw')}
   <div className="naSide" style={{left:55,top:225}}>WÖRTER</div>
   {audio('assets/ab-a12-cd2-track10.mp3',38,216,'2 10')}
   {art('globe',70,240,42,42)}
@@ -72,7 +72,7 @@ export function NativeAB12P18_20({page}:{page:string}){
   {Array.from({length:7},(_,i)=>field('p18-ms'+(i+1),650,367+i*29.5,315,'Meine Sprache Zeile '+(i+1),'naFieldBlank'))}
   {check('g2',150,577,{'p18-dCafé':'Café','p18-dHafen':'Hafen','p18-dFlughafen':'Flughafen','p18-dKirche':'Kirche','p18-dSpielplatz':'Spielplatz'},'naCheckSm')}
   {kb(78,610,'KB 3')}
-  {title('2',125,606,600,'Was ist das? Ergänzen Sie.','naOB naNw')}
+  {title('2',119,620,600,'Was ist das? Ergänzen Sie.','naOB naNw')}
   <div className="naSide" style={{left:55,top:650}}>WÖRTER</div>
   <div className="naBank" style={{left:152,top:647}}>
    <s><span className="tapWord" role="button" tabIndex={0} data-word="Kin" data-phrase="Kin">Kin</span></s>{' | '}
@@ -120,7 +120,7 @@ export function NativeAB12P18_20({page}:{page:string}){
   {field('p18-2f',694,878,199,'Bild f','naFieldBlank')}
   {check('g3',905,872,{'p18-2b':'Rathaus','p18-2c':'Jugendherberge','p18-2d':'Kino','p18-2e':'Bäume','p18-2f':'Berge'},'naCheckCol')}
   {kb(78,937,'KB 3')}
-  {title('3',125,933,600,'Wo bin ich? Notieren Sie.','naOB naNw')}
+  {title('3',121,943,600,'Wo bin ich? Notieren Sie.','naOB naNw')}
   {art('bubble',690,925,170,52)}
   <div className="naSide" style={{left:55,top:975}}>WÖRTER</div>
   <div className="naBank" style={{left:158,top:973}}>
