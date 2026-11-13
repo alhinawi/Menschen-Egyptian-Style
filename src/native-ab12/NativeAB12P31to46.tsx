@@ -1777,7 +1777,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {art('arrd2',280,1222,13,13)}
   {text(300,1214,45,'oder','naT45 naNw')}
   {art('arru2',349,1223,28,14)}
-  {art('tiprule',158,386,682,13)}
+  {art('tiprule',158,385,682,17)}
   {art('tiptab',156,385,14,70)}
   {art('regelbar',140,1236,360,20)}
   {art('regelv',145,1281,22,36)}
@@ -1822,7 +1822,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {audio('assets/ab-a12-track21.mp3',59,889,'2 21')}
   {audio('assets/ab-a12-track22.mp3',552,897,'2 22')}
   {audio('assets/ab-a12-track23.mp3',588,1147,'2 23')}
-  {check('45-1',962,390,{'1z0':'true','1z1':'true','1z2':'false','1t':'2'})}
+  {check('45-1',962,416,{'1z0':'true','1z1':'true','1z2':'false','1t':'2'})}
   {check('45-2',177,792,{'2a':'2','2b':'2','2c':'0','2d':'0'})}
   {check('45-3',290,1335,{'p45-r0':'oben','p45-r1':'unten'})}
   {check('45-4',948,1104,{'p45-3a':'?','p45-3b':'!','p45-3c':'!','p45-3d':'?','p45-3e':'!','p45-3f':'?'})}
