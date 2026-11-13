@@ -20,6 +20,7 @@ const loaders = {
   NativePage: () => import('./NativePage').then(m => m.NativePage),
   NativePilot: () => import('./NativePilot').then(m => m.NativePilot),
   NativeKB12: () => import('../native-kb12/NativeKB12').then(m => m.NativeKB12),
+  NativeKB12Wordlist: () => import('../native-kb12/NativeKB12Wordlist').then(m => m.NativeKB12Wordlist),
   NativeAB11Lesson9Start: () => import('../native-ab11/NativeAB11Lesson9Start').then(m => m.NativeAB11Lesson9Start),
   NativeAB11Lesson8Close: () => import('../native-ab11/NativeAB11Lesson8Close').then(m => m.NativeAB11Lesson8Close),
   NativeAB11Lesson8Start: () => import('../native-ab11/NativeAB11Lesson8Start').then(m => m.NativeAB11Lesson8Start),
@@ -49,6 +50,7 @@ function select(tag: string, attrs: MarkupAttrs) {
   if(tag === 'NativePage')return pick('NativePage',{book:attrs.book,page:attrs.page});
   if(tag === 'NativePilot')return pick('NativePilot',{page:attrs.page});
   if(tag === 'NativeKB12')return pick('NativeKB12',{page:attrs.page});
+  if(tag === 'HybridScan' && attrs.book==='kb-a12' && ['89','90','91','92','93','94','95'].includes(String(attrs.page)))return pick('NativeKB12Wordlist',{page:String(attrs.page)});
   if(tag === 'NativeAB11Test88')return pick('NativeAB11Test88',{});
   if(tag === 'AB11LineMatching88')return pick('AB11LineMatching88',{});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['77','78'].includes(String(attrs.page)))return pick('NativeAB11Lesson10Start',{page:String(attrs.page)});
