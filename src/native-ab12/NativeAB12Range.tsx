@@ -34,7 +34,7 @@ export function NativeAB12Range({page}:{page:string}){
  const grade=(g:string)=>{const its=spec.items.filter(i=>i.g===g&&i.a!==undefined&&i.a!=='');sr(r=>({...r,[g]:its.length>0&&its.every(ok)}))};
  const render=(it:Item,n:number)=>{
   switch(it.k){
-   case 't':return <div key={n} className={'naText naR '+(it.c||'')+(it.b?' naRBold':'')+(it.i?' naRIt':'')} style={{left:it.x,top:it.y-.84*(it.s||22),fontSize:it.s||22,color:it.col}}><Fit it={it}/></div>;
+   case 't':return <div key={n} className={'naText naR '+(it.c||'')+(it.b?' naRBold':'')+(it.i?' naRIt':'')} style={{left:it.x,top:it.y-.84*(it.s||22),fontSize:it.s||22,color:it.col,['--naRs' as any]:(it.s||22)+'px'}}><Fit it={it}/></div>;
    case 'f':return <input key={n} className={'naField naRField'+(it.c?' '+it.c:'')} aria-label={it.l} data-native-field={it.id} maxLength={it.max}  style={{left:it.x,top:it.y-(it.hh||27),width:it.w,height:it.hh||27,...(it.bc?{borderBottomColor:it.bc+'!important'}:{})}} value={values[it.id]||''} onChange={e=>set(it.id,e.target.value)} autoComplete="off" spellCheck={false}/>;
    case 'r':return <div key={n} className="naRRule" style={{left:it.x,top:it.y,width:it.w,height:it.h||2,background:it.col}}/>;
    case 'a':return <PageImage key={n} className="naArt" src={`assets/book-crops/native-ab12-p${page}-${it.n}.png`} alt={it.alt||('Originalillustration '+it.n)} style={{left:it.x,top:it.y,width:it.w,height:it.h}}/>;
