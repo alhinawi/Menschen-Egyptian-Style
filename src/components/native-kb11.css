@@ -127,3 +127,8 @@
 .nkb[data-native-page="38"] input[type=checkbox].nkbField:checked{border-color:#245b9b!important;background:transparent!important}
 .nkb[data-native-page="38"] input[type=checkbox].nkbField:checked.ok{border-color:#268250!important}
 .nkb[data-native-page="38"] input[type=checkbox].nkbField:checked.bad{border-color:#bd3838!important}
+
+.nkb[data-native-page="43"] .nkbLine{font-family:KbDroid,serif;transform:none!important}
+.nkb[data-native-page="43"] .nkbLine:is(.nkbSans,.nkbB){font-family:KbFira,sans-serif}
+.nkb[data-native-page="43"] .nkbLine.nkbB{font-weight:500}
+.nkb[data-native-page="43"] input[type=text].nkbField{border-radius:50%!important;border:1px solid #c5bd8d!important;background:#fffef7!important;text-align:center;padding:0!important}
