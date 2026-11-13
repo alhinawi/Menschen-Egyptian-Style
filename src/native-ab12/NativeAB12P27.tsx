@@ -71,7 +71,7 @@ export function NativeAB12P27({page}:{page:string}){
   {stext(145,1190,880,'Was ist bei Ihnen in der Nähe? Ein Bahnhof, eine U-Bahn- oder Bus-Haltestelle, ein','naItemB')}
   {stext(145,1217,880,'Restaurant …? Wählen Sie und beschreiben Sie den Weg von Ihnen zu Hause zu diesem Ort.','naItemB')}
   {art('hw2',143,1259,397,28)}
-  {text(780,1385,140,'siebenundzwanzig | 27','naFooter')}
-  {art('modul',968,1385,103,23)}
+  {text(780,1385,150,'siebenundzwanzig','naFooter')}{text(942,1385,10,'|','naFooter')}{text(961,1385,25,'27','naFooter')}
+  {art('modul',985,1385,86,23)}
  </div></div>;
 }
