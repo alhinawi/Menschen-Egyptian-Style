@@ -194,7 +194,8 @@ export function LibraryNav({slug}: {slug: string}) {
                   const isCurrent = entry.slug === slug && currentPage != null && entry.pages.includes(currentPage);
                   return (
                     <a key={entry.slug + entry.label} className={'lnv-row flex items-center gap-[11px] px-5 py-[8.5px] font-normal text-[13.5px] font-[Arial,sans-serif] no-underline dark:text-[#ddd6c6]' + (isCurrent ? ' cur bg-[color-mix(in_srgb,var(--accent,#713c46)_12%,transparent)]' : ' text-[#3a332b]')}
-                      href={lessonUrl(entry)}>
+                      href={lessonUrl(entry)}
+                      onClick={e => { e.preventDefault(); close(); void navigateLesson(entry.slug, String(entry.pages[0])); }}>
                       <span className={'lnv-no size-[26px] rounded-full border flex items-center justify-center font-bold text-[12px] font-[Georgia,serif] flex-none' + (isCurrent ? ' bg-[var(--accent,#713c46)] border-[var(--accent,#713c46)] text-white' : ' border-[#d8cba4] text-[#6b6152]')}>{entry.short === 'MP' ? '✦' : entry.short.replace('L', '')}</span>
                       <span className={'lnv-nm' + (isCurrent ? ' font-bold' : '') + (entry.short === 'MP' ? ' text-[#8a7d63] italic' : (isCurrent ? ' text-[var(--accent,#713c46)]' : ''))}>{entry.label}</span>
                       <span className="lnv-pp ml-auto text-[10.5px] text-[#a2946f] dark:text-[#9aa396]">pp. {entry.pages[0]}–{entry.pages[entry.pages.length - 1]}</span>
