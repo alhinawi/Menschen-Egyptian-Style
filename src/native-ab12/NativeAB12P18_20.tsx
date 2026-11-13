@@ -191,8 +191,8 @@ export function NativeAB12P18_20({page}:{page:string}){
   {title('4',120,154,600,'Wo bin ich?','naOB naNw')}
   {text(152,198,20,'a','naBold')}
   {text(182,198,270,'Schreiben Sie Aufgaben wie in')}
-  {text(459,198,20,'3:','naBlue naBold')}
-  {text(479,198,310,'Was sehen Sie? Was machen Sie dort?')}
+  {text(463,198,20,'3:','naBlue naBold')}
+  {text(485,198,310,'Was sehen Sie? Was machen Sie dort?')}
   {text(152,224,20,'b','naBold')}
   {text(181,224,520,'Tauschen Sie mit Ihrer Partnerin / Ihrem Partner. Sie/Er rät.')}
   {audio('assets/ab-a12-cd2-track11.mp3',55,316,'2 11')}
