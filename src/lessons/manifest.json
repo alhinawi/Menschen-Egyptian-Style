@@ -300,6 +300,8 @@
    "unit-audio",
    "gapfill-pronunciation-index",
    "base-vocab",
+   "kb-a11-fill-translations-1",
+   "kb-a11-fill-translations-2",
    "meanings",
    "book"
   ],
@@ -384,6 +386,8 @@
    "batch-pronunciation-index-l10-12",
    "gapfill-pronunciation-index",
    "base-vocab",
+   "kb-a11-fill-translations-1",
+   "kb-a11-fill-translations-2",
    "meanings",
    "batch-l10-12"
   ],
@@ -411,6 +415,8 @@
    "unit-audio",
    "gapfill-pronunciation-index",
    "base-vocab",
+   "kb-a11-fill-translations-1",
+   "kb-a11-fill-translations-2",
    "meanings",
    "batch"
   ],
@@ -461,6 +467,8 @@
    "batch-pronunciation-index-46",
    "gapfill-pronunciation-index",
    "base-vocab",
+   "kb-a11-fill-translations-1",
+   "kb-a11-fill-translations-2",
    "meanings",
    "batch-l46"
   ],
@@ -487,6 +495,8 @@
    "batch79-pronunciation-index",
    "gapfill-pronunciation-index",
    "base-vocab",
+   "kb-a11-fill-translations-1",
+   "kb-a11-fill-translations-2",
    "meanings",
    "batch79"
   ],
