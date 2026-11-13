@@ -27,3 +27,10 @@
 .nativeAB11Lesson10Mid.nativeAB11L11 .mCanvas .mNumber{background:#a80000}
 .nativeAB11Lesson10Mid.nativeAB11L11 .mHRule{background:#7a1420}
 .nativeAB11Lesson10Mid[data-native-ab11-page='84'] .mCanvas .mNumber{background:#bc0231}
+.nativeAB11Lesson10Mid .mCanvas .mText.mPunkte{font-size:13px}
+.nativeAB11Lesson10Mid .mCanvas .mText.mMark{font-size:13px;line-height:18px}
+.nativeAB11Lesson10Mid .mScore.mScore82{grid-template-rows:31px repeat(3,28px);line-height:28px;font-size:15px;background:#f9f7d0;width:418px;height:115px;padding:0;box-sizing:border-box}
+.nativeAB11Lesson10Mid .mScore.mScore82 b{background:transparent}
+.nativeAB11Lesson10Mid .mExRule{position:absolute;height:1px;background:#aaa}
+.nativeAB11Lesson10Mid .mCanvas .mText.mBig{font-size:19px}
+.nativeAB11Lesson10Mid .mCanvas .mText.mScoreLink{font-size:11.5px;text-align:right}
