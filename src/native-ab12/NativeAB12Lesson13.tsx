@@ -669,11 +669,11 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {art('note1',149,466,452,185)}
   {art('sms',629,466,287,171)}
   {art('circ3',238,623,33,33)}
-  {text(276,650,702,'Lieber Stefan,','naChris15 naNw')}
-  {text(276,675,702,'ich habe den ultimativen Tipp für Dich! Die Nachbarn von meiner Schwester ziehen nach England','naChris15 naNw')}
-  {text(276,699,702,'und suchen dringend einen Nachmieter zum 1. April. Tolle 4-Zimmer-Wohnung mit Südbalkon.','naChris15 naNw')}
-  {text(276,723,702,'Die Wohnung kostet nur 700 € + Nebenkosten. Ruf meine Schwester am besten heute noch an.','naChris15 naNw')}
-  {text(276,744,200,'LG Chris','naChris15 naNw')}
+  {text(276,655,702,'Lieber Stefan,','naChris15 naNw')}
+  {text(276,683,702,'ich habe den ultimativen Tipp für Dich! Die Nachbarn von meiner Schwester ziehen nach England','naChris15 naNw')}
+  {text(276,705,702,'und suchen dringend einen Nachmieter zum 1. April. Tolle 4-Zimmer-Wohnung mit Südbalkon.','naChris15 naNw')}
+  {text(276,731,702,'Die Wohnung kostet nur 700 € + Nebenkosten. Ruf meine Schwester am besten heute noch an.','naChris15 naNw')}
+  {text(276,750,200,'LG Chris','naChris15 naNw')}
   <div className="naBand15" style={{left:164,top:806,width:844,height:31}}/>
   <div className="naLine15" style={{left:163,top:836,width:845,height:1}}/><div className="naLine15" style={{left:163,top:865,width:845,height:1}}/><div className="naLine15" style={{left:163,top:895,width:845,height:1}}/><div className="naLine15" style={{left:163,top:924,width:845,height:1}}/>
   <div className="naLine15" style={{left:163,top:806,width:1,height:119}}/><div className="naLine15" style={{left:355,top:806,width:1,height:119}}/><div className="naLine15" style={{left:601,top:806,width:1,height:119}}/><div className="naLine15" style={{left:796,top:806,width:1,height:119}}/><div className="naLine15" style={{left:1007,top:806,width:1,height:119}}/>
