@@ -17,7 +17,7 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  const f=(id:string,x:number,y:number,w:number,label=id)=>{const ctx=document.createElement('canvas').getContext('2d');if(ctx)ctx.font="16px 'Times New Roman'";const size=Math.max(11,Math.min(16,16*(w-6)/(ctx?.measureText(v[id]||'').width||1)));return <input className="mField" data-native-field={id} aria-label={label} style={{left:x,top:Y(y),width:w,fontSize:size}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>};
  const open=(id:string,x:number,y:number,w:number,h:number,label=id)=><textarea className="mField mOpen" data-native-field={id} aria-label={label} style={{left:x,top:Y(y),width:w,'--mopen-height':h+'px'} as React.CSSProperties} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
  const art=(name:string,x:number,y:number,w:number,h:number)=><PageImage className="mArt" alt={'Originalabbildung '+name} src={`assets/native-ab11/p${page}-${name}.png`} style={{left:x,top:Y(y),width:w,height:h}}/>;
- const title=(n:string,y:number,s:string,kb='',x=149)=><>{kb&&txt(104,y+5,40,kb,'mKB')}<div className="mNumber" style={{left:x,top:Y(y)}}>{n}</div>{txt(x+35,y,700,s,'mTitle')}</>;
+ const title=(n:string,y:number,s:string,kb='',x=149)=><>{kb&&txt(x-42,y+5,40,kb,'mKB')}<div className="mNumber" style={{left:x,top:Y(y)}}>{n}</div>{txt(x+35,y,700,s,'mTitle')}</>;
  const head=(s:string,ruleX:number,ruleY:number,x=143,y=138)=><>{txt(x,y,740,s,'mHeader')}<div className="mHRule" style={{left:ruleX,top:ruleY,width:900-ruleX}}/></>;
  const data=scanData['ab-a11:'+page];
  const answers=(group:string)=>Object.fromEntries(data.fields.filter(fl=>fl.group===group&&fl.kind!=='radio'&&fl.kind!=='checkbox'&&fl.answer!==undefined).map(fl=>[fl.id,fl.answer!]));
