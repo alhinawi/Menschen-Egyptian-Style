@@ -15,7 +15,7 @@ import {ReaderThemes, CrossBookNavigation} from './components/ReaderThemes';
 import {LibraryNav} from './components/LibraryNav';
 import {LessonHop} from './components/LessonHop';
 import type {LoadedLesson} from './navigate';
-import {lessonUrl, loadLesson, navigateLesson, registerNavigator, slugFromLocation, slugToFile, applyRouteMeta} from './navigate';
+import {lessonUrl, loadLesson, navigateLesson, registerNavigator, resolveHref, slugFromLocation, slugToFile, applyRouteMeta} from './navigate';
 
 export default function App({initial}: {initial: LoadedLesson}) {
   const [lesson, setLesson] = useState(initial);
@@ -46,7 +46,7 @@ export default function App({initial}: {initial: LoadedLesson}) {
       // Tear the old lesson down before the DOM swap: adapters restore the
       // page elements they moved, so React can cleanly unmount the old tree.
       cleanupRef.current?.();
-      const url = lessonUrl(next.config.slug, token);
+      const url = opts.rawUrl ?? lessonUrl(next.config.slug, token);
       if (opts.replace) history.replaceState({}, '', url);
       else history.pushState({}, '', url);
       await new Promise<void>(resolve => {
@@ -58,13 +58,33 @@ export default function App({initial}: {initial: LoadedLesson}) {
       scrollTo(0, 0);
     });
     const onPop = () => {
-      navigateLesson(slugFromLocation(), location.hash.slice(1) || undefined, {replace: true});
+      // Preserve the exact URL (viewer pages carry their page in ?page=N).
+      const rawUrl = (location.pathname.split('/').pop() || 'index.html') + location.search + location.hash;
+      navigateLesson(slugFromLocation(), location.hash.slice(1) || undefined, {replace: true, rawUrl});
     };
     window.addEventListener('popstate', onPop);
     return () => {
       registerNavigator(null);
       window.removeEventListener('popstate', onPop);
     };
+  }, []);
+
+  // Catch every same-app anchor (Original viewer links, home links, any
+  // markup link to another lesson) and swap in-app instead of reloading.
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => {
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      const anchor = (e.target as HTMLElement).closest?.('a[href]') as HTMLAnchorElement | null;
+      if (!anchor || anchor.target) return;
+      const href = anchor.getAttribute('href') || '';
+      if (!href || href.startsWith('#')) return;
+      const resolved = resolveHref(href);
+      if (!resolved) return;
+      e.preventDefault();
+      void navigateLesson(resolved.slug, resolved.token, {rawUrl: resolved.rawUrl});
+    };
+    document.addEventListener('click', onClick);
+    return () => document.removeEventListener('click', onClick);
   }, []);
 
   useLayoutEffect(() => {
