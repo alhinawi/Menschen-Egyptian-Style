@@ -1,3 +1,4 @@
+import {usePageReset} from '../exercises/usePageReset';
 import {LineMatching} from '../exercises/LineMatching';
 import {useLayoutEffect,useRef,useState} from 'react';
 import {scanData} from '../scan-data/registry';
@@ -8,6 +9,7 @@ function Words({s}:{s:string}){return <>{s.split(/(\s+)/).map((w,i)=>/\S/.test(w
 export function NativeAB11Next45({page}:{page:string}){
  const host=useRef<HTMLDivElement>(null),audio=useRef<HTMLAudioElement>(null),[scale,SS]=useState(1),[track,T]=useState(''),[v,S]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem('native-ab11-'+page)||'{}')}catch{return {}}}),[graded,G]=useState<Record<string,boolean>>({});
  useLayoutEffect(()=>{const el=host.current;if(!el)return;const measure=()=>SS(Math.min(el.clientWidth/901,el.clientHeight/1275));measure();const ro=new ResizeObserver(measure);ro.observe(el);return()=>ro.disconnect()},[]);
+ usePageReset(page,'native-ab11-'+page,()=>{S({});G({});A({})});
  const set=(id:string,value:string)=>{const next={...v,[id]:value};S(next);localStorage.setItem('native-ab11-'+page,JSON.stringify(next));G({})};
  const sy=page==='39'?.76:page==='40'?.75:.83;const Y=(y:number)=>130+(y-130)*sy;
  const txt=(x:number,y:number,w:number,s:string,cls='')=><div className={'mText '+cls} style={{left:x,top:cls==='mFooter'?y:Y(y),width:w}}><Words s={s}/></div>;

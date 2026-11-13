@@ -56,6 +56,7 @@ for(const el of document.querySelectorAll(selector)){const walker=document.creat
 
 function setMode(){document.body.dataset.translationMode=tapMode;selectionStore.update({mode:tapMode});document.querySelectorAll<HTMLElement>('.tapSentence').forEach(s=>{s.tabIndex=tapMode==='sentence'?0:-1;s.setAttribute('role',tapMode==='sentence'?'button':'group');s.setAttribute('aria-label',s.dataset.phrase+' · Satzbedeutung')})}setMode();const toggleMode=()=>{tapMode=tapMode==='word'?'sentence':'word';try{localStorage.setItem('menschen-translation-mode',tapMode)}catch{}setMode()};
 // Selection mode leaves native highlight handles in control instead of page turns.
+document.body.dataset.textSelection='false';selectionStore.update({selecting:false,actionHidden:true});
 let selecting=false,chosen='',chosenRange: Range|null=null;
 const toggleSelection=()=>{selecting=!selecting;document.body.dataset.textSelection=String(selecting);selectionStore.update({selecting});if(selecting)createArtworkLayers();if(!selecting){window.getSelection()?.removeAllRanges();selectionStore.update({actionHidden:true})}};
 
