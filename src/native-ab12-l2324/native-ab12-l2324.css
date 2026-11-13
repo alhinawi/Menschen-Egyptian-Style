@@ -262,3 +262,27 @@
 [data-native-ab12="98"] .naCanvas .naSq98{position:absolute;background:#1b1f8b}
 [data-native-ab12="98"] .naCanvas .naTr98{position:absolute;width:0;height:0;border-left:3.5px solid transparent;border-right:3.5px solid transparent;border-bottom:8px solid #26a646}
 [data-native-ab12="98"] .naCanvas .naCi98{position:absolute;border-radius:50%;background:#9c1629}
+[data-native-ab12="99"] .naCanvas .naText.naBody99{font-size:12.5px;letter-spacing:normal}
+[data-native-ab12="99"] .naCanvas .naText.naBody99 span[role=button]{padding:0}
+[data-native-ab12="99"] .naCanvas .naText.naHead99{font-family:DroidSerif,Georgia,serif;font-weight:400;color:#2a2a2b;letter-spacing:1.35px}
+[data-native-ab12="99"] .naCanvas .naText.naHead99 span[role=button]{padding:0}
+[data-native-ab12="99"] .naCanvas .naText.naKann99{font-family:ABDroidSans,FiraSans,sans-serif;font-weight:700;font-size:16.2px;color:#333d90}
+[data-native-ab12="99"] .naCanvas .naText.naKann99 span[role=button]{padding:0}
+[data-native-ab12="99"] .naCanvas .naText.naSect99{font-family:DroidSerif,Georgia,serif;font-weight:700;font-size:13.5px;color:#1e2214;position:absolute;white-space:nowrap}
+[data-native-ab12="99"] .naCanvas .naText.naSect99 span[role=button]{padding:0}
+[data-native-ab12="99"] .naCanvas .naText.naSect99 .naTag99{font-weight:400;font-size:12.5px}
+[data-native-ab12="99"] .naCanvas .naDot.naDot99{width:14px!important;height:14px!important;border-width:1.7px!important;border-color:#d8d3bd!important}
+[data-native-ab12="99"] .naCanvas .naDot.naDot99:checked{background:radial-gradient(circle,#246e45 0 36%,#fff 44%)!important}
+[data-native-ab12="99"] .naCanvas .naText.naWahl99{font-family:FiraSans,sans-serif;font-weight:700;font-size:17.6px;color:#1f2587}
+[data-native-ab12="99"] .naCanvas .naText.naWahl99 span[role=button]{padding:0}
+[data-native-ab12="99"] .naCanvas .naText.naAufg99{font-family:FiraSans,sans-serif;font-weight:700;font-size:16.3px;color:#1e2214}
+[data-native-ab12="99"] .naCanvas .naText.naAufg99 span[role=button]{padding:0}
+[data-native-ab12="99"] .naCanvas .naText.naYel99{font-family:FiraSans,sans-serif;font-weight:400;font-size:13.8px;color:#333d90}
+[data-native-ab12="99"] .naCanvas .naText.naYel99 span[role=button]{padding:0}
+[data-native-ab12="99"] .naCanvas .naYelB99{position:absolute;background:#fef4cf}
+[data-native-ab12="99"] .naCanvas .naText.naNum99{font-family:FiraSans,sans-serif;font-weight:700;font-size:12.5px;color:#fff;background:#8d0502;line-height:15px;text-align:center}
+[data-native-ab12="99"] .naCanvas .naText.naNum22{font-family:FiraSans,sans-serif;font-weight:700;font-size:12px;color:#fff;background:#ec0804;line-height:15px;text-align:center}
+[data-native-ab12="99"] .naCanvas .naRuleR99{position:absolute;height:2px;background:#de725e}
+[data-native-ab12="99"] .naCanvas .naText.naBadge99{font-family:FiraSansCond,FiraSans,sans-serif;font-weight:400;font-size:10px;color:#fff;background:#e0d8b4;line-height:14px;text-align:center;letter-spacing:0.3px}
+[data-native-ab12="99"] .naCanvas .naText.naFoot99{font-family:DroidSerif,Georgia,serif;font-size:13.5px;color:#36393b;text-align:right}
+[data-native-ab12="99"] .naCanvas .naText.naFoot99 span[role=button]{padding:0}
