@@ -48,6 +48,6 @@ export function NativeAB12Range({page}:{page:string}){
    default:return null;
   }
  };
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}"}</style><div className="naCanvas naRCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>{spec.items.map(render)}</div><audio ref={player} className="naPlayer"/></div>;
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:FiraSansCond;src:url('assets/fonts/firasanscond-latin-400.woff2') format('woff2');font-weight:400}"}</style><div className="naCanvas naRCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>{spec.items.map(render)}</div><audio ref={player} className="naPlayer"/></div>;
 }
 export const hasRangePage=(page:string)=>!!specs[`./range/p${page}.json`];
