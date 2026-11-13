@@ -43,7 +43,7 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {txt(177,318,36,'e  '+sq)}{f('u4-e1',212,318,88)}{txt(311,318,170,'ich bitte einen Kaffee')}{txt(486,318,220,'______? (bekommen)')}
  {txt(177,339,36,'f  '+sq)}{txt(211,339,75,'Vielleicht')}{f('u4-f1',291,335,84)}{txt(383,339,250,'ich am Samstag meine Freundin')}{f('u4-f2',639,335,76)}{txt(721,339,120,'. (mitbringen)')}
  {txt(177,361,36,'g  '+sq)}{txt(211,361,95,'Am Sonntag')}{f('u4-g1',310,363,77)}{txt(394,361,175,'ich erst um 12 Uhr')}{txt(575,361,80,'______.')}{txt(650,361,120,'(frühstücken)')}
- {check('u4',177,392)}
+ {check('u4',177,384)}
  {title('5',419,'Schreiben Sie eigene Sätze wie in 4 und tauschen Sie mit Ihrer\nPartnerin / Ihrem Partner.','KB 5')}
  {open('u5-own',177,468,660,46,'5 eigene Sätze')}
  {title('6',525,'Schreiben Sie Sätze.')}
@@ -126,7 +126,7 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {radioG('u2-3a','u2-3','a',621,704,'Satz 3a')}{radioG('u2-3b','u2-3','b',621,726,'Satz 3b')}
  <div className="mTipBox" style={{left:687,top:555,width:168,height:105}}><div className="mTipLabel">TIPP</div><div className="mTipText"><Words s="Achten Sie auf Zahlen und Uhrzeiten. Am Bahnhof/Flughafen … müssen Sie Zahlen und Zeiten richtig verstehen."/></div></div>
  {listen('44-46',93,773)}{txt(179,768,600,'b  Hören Sie noch einmal. Welche Sätze sind richtig? Kreuzen Sie in a an.','mTitle')}
- {rule('g2',621,742,()=>v['u2-1']==='b'&&v['u2-2']==='b'&&v['u2-3']==='b')}
+ {rule('g2',700,700,()=>v['u2-1']==='b'&&v['u2-2']==='b'&&v['u2-3']==='b')}
  {txt(140,829,300,'TRAINING:  AUSSPRACHE','mHeader')}{txt(554,835,240,'Wortakzent bei trennbaren Verben','mScript2')}<div className="mHRule" style={{left:832,top:841,width:67}}/>
  {listen('47',93,881)}{title('1',876,'Hören Sie und markieren Sie den\nWortakzent.','',154)}
  <div className="mText" style={{left:182,top:932,width:280}}>fahren – <u>ab</u>fahren | kommen –<br/><u>an</u>kommen | kaufen – <u>ein</u>kaufen |<br/>sehen – <u>fern</u>sehen | bringen –<br/><u>mit</u>bringen</div>
@@ -144,11 +144,11 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  <div className="mHRule" style={{left:174,top:156,width:636}}/>
  {side('WÖRTER',236)}{side('WÖRTER',363)}{side('STRUKTUREN',533)}{side('KOMMUNIKATION',819)}
  {title('1',198,'Wie heißen die Wörter?','',118)}
- <div className="mText" style={{left:148,top:235,width:420}}><span className="mStruck" style={{color:'#315e9f'}}>hafen</span><Words s=" | stelle | bahn | steig | hof | zeug"/></div>
- {txt(145,271,18,'a')}{txt(164,266,80,'Straßen')}{f('u1-a',243,264,102)}
- {txt(144,288,18,'b')}{txt(164,288,44,'Flug')}<div className="mText mExample" style={{left:205,top:288,width:42}}>hafen</div>{txt(230,288,14,'/')}{txt(243,288,48,'Flug')}{f('u1-b',291,286,105)}
- {txt(461,271,18,'c')}{txt(481,266,40,'Bahn')}{f('u1-c1',522,264,102)}{txt(638,266,14,'/')}{txt(658,266,40,'Bahn')}{f('u1-c2',698,264,102)}
- {txt(462,288,18,'d')}{txt(481,288,42,'Halte')}{f('u1-d',522,286,131)}
+ <div className="mText mBig" style={{left:148,top:235,width:420}}><span className="mStruck" style={{color:'#315e9f'}}>hafen</span><Words s=" | stelle | bahn | steig | hof | zeug"/></div>
+ {txt(145,266,18,'a','mBig')}{txt(164,266,80,'Straßen','mBig')}{f('u1-a',243,264,102)}
+ {txt(144,288,18,'b','mBig')}{txt(164,288,44,'Flug','mBig')}<div className="mText mExample" style={{left:200,top:288,width:32}}><span className="mStruck">hafen</span></div>{txt(230,288,14,'/','mBig')}{txt(243,288,48,'Flug','mBig')}{f('u1-b',291,286,105)}
+ {txt(461,266,18,'c','mBig')}{txt(481,266,40,'Bahn','mBig')}{f('u1-c1',522,264,102)}{txt(638,266,14,'/','mBig')}{txt(658,266,40,'Bahn','mBig')}{f('u1-c2',698,264,102)}
+ {txt(462,288,18,'d','mBig')}{txt(481,288,42,'Halte','mBig')}{f('u1-d',522,286,131)}
  {txt(742,288,80,'_ / 5 Punkte','mPunkte')}
  {check('t1',660,303)}
  {title('2',325,'Ordnen Sie zu.','',118)}
@@ -191,7 +191,7 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {txt(743,1023,80,'_ / 4 Punkte','mPunkte')}
  {check('t4',640,988)}
  <div className="mScore mScore82" style={{left:139,top:1056}}><b>Wörter</b><b>Strukturen</b><b>Kommunikation</b>{[['0–5','0–4','0–2'],['6–8','5–6','3'],['9–11','7–8','4']].map((row,r)=>row.map((s,c)=><div key={r+'-'+c}><i style={{background:['#d71910','#edcf00','#3b9e24'][r]}}/>{s} Punkte</div>))}</div>
- {txt(371,1173,200,'www.hueber.de/menschen/lernen','mPunkte')}
+ {txt(357,1174,200,'www.hueber.de/menschen/lernen','mScoreLink')}
  </>}
  {Number(page)%2?txt(690,({79:1209,81:1193,83:1205,85:1204,87:1211} as Record<string,number>)[page]||1208,180,footerW[page]+' | '+page,'mFooter'):<>{txt(48,({80:1211,82:1208,84:1212,86:1206} as Record<string,number>)[page]||1208,60,'Modul 4','mFooter mFooterTab')}{txt(112,({80:1211,82:1208,84:1212,86:1206} as Record<string,number>)[page]||1208,170,page+' | '+footerW[page],'mFooter')}</>}
  </div><audio className="nabPlayer" ref={audio} controls hidden={!track} aria-label="Originalaudio Arbeitsbuch"/></div>;
