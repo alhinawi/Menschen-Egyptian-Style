@@ -126,9 +126,15 @@ def ink_fit(text,target,lo=16.0,hi=18.6):
         if best is None or abs(iw-target)<abs(best[1]-target): best=(key,iw,bb[0]/4/1.033)
         s+=0.5
     return best
+def ink_at(text,s):
+    key=round(s*2)/2
+    if key not in _fc: _fc[key]=_IF.truetype(DROID,int(round(key*4)))
+    bb=_fc[key].getbbox(text)
+    return (bb[2]-bb[0])/4/1.033, bb[0]/4/1.033
 for ly,xlo,xhi in [(415,233,545),(441,186,545),(468,290,545),(493,290,545),(518,290,545),(544,290,545),(569,180,545),
                 (415,579,1072),(468,655,1072),(493,655,1072),(518,655,1072),(544,655,1072)]:
     row=[w for w in sorted([w for w in WORDS if abs(w['y']+w['h']-ly)<=12 and w['x']>=160], key=lambda w:w['x'])]
+    fits=[]
     for w in row:
         if w['x']<xlo or w['x']>=xhi: continue
         ex=ink_extent(w['x']-4,w['y']-3,w['x']+w['w']+5,w['y']+w['h']+3)
@@ -136,8 +142,15 @@ for ly,xlo,xhi in [(415,233,545),(441,186,545),(468,290,545),(493,290,545),(518,
         x0,x1=ex
         txt=w['text']
         if txt.endswith(','): txt=txt[:-1]+'.'   # OCR comma->period confusion (scan shows '.')
-        s,iw,lb=ink_fit(txt,x1-x0+1)
-        t(round(x0-lb,1), ly, txt, s=s)
+        s0,iw0,lb0=ink_fit(txt,x1-x0+1)
+        fits.append([txt,x0,x1-x0+1,iw0/s0])   # text, scan ink x0, target ink w, ink-per-px
+    if not fits: continue
+    # ONE size per printed line (least squares over word ink widths), positions stay ink-true
+    S=round(sum(k*t for _,_,t,k in fits)/sum(k*k for _,_,t,k in fits),1)
+    S=min(18.6,max(16.0,S))
+    for txt,x0,tgt,k in fits:
+        iw,lb=ink_at(txt,S)
+        t(round(x0-lb-1.5,1), ly, txt, s=S)   # browser left bearing ~1.5px over PIL
 # field rules measured from scan ink (y = printed rule, x/w = rule extent)
 RULES1 = {'p54-1f0':(246,444,101,'waren'),'p54-1f1':(188,470,101,'war'),'p54-1h0':(551,471,101,'ist'),
  'p54-1f2':(188,496,102,'hatte'),'p54-1h1':(551,497,101,'hat'),
