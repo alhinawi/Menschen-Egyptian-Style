@@ -1,3 +1,4 @@
+import {CheckButton} from '../components/CheckButton';
 import {PageImage} from '../components/PageImage';
 import {usePageReset} from '../exercises/usePageReset';
 import {useLayoutEffect,useRef,useState} from 'react';
@@ -21,8 +22,8 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  const head=(s:string,ruleX:number,ruleY:number,x=143,y=138)=><>{txt(x,y,740,s,'mHeader')}<div className="mHRule" style={{left:ruleX,top:ruleY,width:900-ruleX}}/></>;
  const data=scanData['ab-a11:'+page];
  const answers=(group:string)=>Object.fromEntries(data.fields.filter(fl=>fl.group===group&&fl.kind!=='radio'&&fl.kind!=='checkbox'&&fl.answer!==undefined).map(fl=>[fl.id,fl.answer!]));
- const check=(id:string,x:number,y:number,expected=answers(id))=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><button onClick={()=>G({...graded,[id]:Object.entries(expected).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}>Prüfen ✓</button><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
- const rule=(id:string,x:number,y:number,test:()=>boolean)=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><button onClick={()=>G({...graded,[id]:test()})}>Prüfen ✓</button><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const check=(id:string,x:number,y:number,expected=answers(id))=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:Object.entries(expected).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const rule=(id:string,x:number,y:number,test:()=>boolean)=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:test()})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const listen=(n:string,x:number,y:number)=><button className="mListen" aria-label={'Originalaudio 1 '+n} style={{left:x,top:Y(y)}} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+parseInt(n)+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
  const radioG=(fid:string,group:string,val:string,x:number,y:number,label:string)=><input className="mRadio" data-native-radio={fid} type="radio" name={'native-ab11-'+page+'-'+group} aria-label={label} style={{left:x,top:Y(y)}} checked={v[group]===val} onChange={()=>set(group,val)}/>;
  const side=(s:string,y:number)=><div className="nabSide" style={{left:100,top:Y(y)}}>{s}</div>;
