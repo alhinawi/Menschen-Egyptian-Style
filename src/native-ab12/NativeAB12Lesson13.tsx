@@ -694,7 +694,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   <div className="naBand15" style={{left:164,top:1151,width:244,height:39}}/><div className="naBand15" style={{left:415,top:1151,width:238,height:39}}/>
   <div className="naLine15" style={{left:163,top:1194,width:492,height:1}}/><div className="naLine15" style={{left:163,top:1223,width:492,height:1}}/><div className="naLine15" style={{left:163,top:1252,width:492,height:1}}/><div className="naLine15" style={{left:163,top:1282,width:492,height:1}}/>
   <div className="naLine15" style={{left:163,top:1151,width:1,height:132}}/><div className="naLine15" style={{left:269,top:1151,width:1,height:132}}/><div className="naLine15" style={{left:409,top:1151,width:1,height:132}}/><div className="naLine15" style={{left:415,top:1151,width:1,height:132}}/><div className="naLine15" style={{left:514,top:1151,width:1,height:132}}/><div className="naLine15" style={{left:654,top:1151,width:1,height:132}}/>
-  <div className="naText naTh15b naNw" style={{left:171,top:1169,width:70}}>a <span className="naArr15">→</span> ä</div><div className="naText naTh15b naNw" style={{left:424,top:1169,width:84}}>au <span className="naArr15">→</span> äu</div>
+  <div className="naText naTh15b naNw" style={{left:171,top:1169,width:70}}>a <span className="naArr15"></span> ä</div><div className="naText naTh15b naNw" style={{left:424,top:1169,width:84}}>au <span className="naArr15"></span> äu</div>
   {text(171,1200,95,'das Bad','naTd15 naNw')}{text(277,1200,30,'die','naTd15 naNw')}{field('15-a1-bad',305,1190,95,'Plural Bad')}
   {text(423,1200,90,'das Haus','naTd15 naNw')}{text(522,1200,30,'die','naTd15 naNw')}{field('15-a1-haus',555,1190,95,'Plural Haus')}
   {text(171,1229,95,'der Wald','naTd15 naNw')}{text(277,1229,30,'die','naTd15 naNw')}{field('15-a1-wald',305,1220,95,'Plural Wald')}
@@ -717,7 +717,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(766,1320,160,'Bäume.','naMail15 naNw')}
   {text(766,1347,160,'Alles ganz neu!','naMail15 naNw')}
   <div className="naModul10" style={{left:1010,top:1389,width:61,height:17,lineHeight:'17px',background:'#dfd6af',fontWeight:400}}>Modul 5</div>
-  <div className="naText naFooter naNw" style={{left:870,top:1388,width:127,whiteSpace:'pre'}}><span className="naFz15">{'fünfzehn  |  '}</span><b>15</b></div>
+  <div className="naText naFooter naNw" style={{left:870,top:1388,width:127,whiteSpace:'pre'}}><span className="naFz15">{'fünfzehn  |  15'}</span></div>
  </>}
  </div><audio ref={player} className="naPlayer"/></div>;
 }
