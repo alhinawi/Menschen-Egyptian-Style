@@ -7,6 +7,7 @@ import {loadScanPages, scanData} from '../scan-data/registry';
 // Loading is completed before React mounts a lesson. Do not use Suspense here:
 // legacy adapters bind their controls in the first layout effect.
 const loaders = {
+  NativeAB12P31to46: () => import('../native-ab12/NativeAB12P31to46').then(m => m.NativeAB12P31to46),
   NativeAB12L23: () => import('../native-ab12-l2324/NativeAB12L23').then(m => m.NativeAB12L23),
   NativeAB11Test88: () => import('../native-ab11/NativeAB11Test88').then(m => m.NativeAB11Test88),
   AB11LineMatching88: () => import('../exercises/AB11LineMatching88').then(m => m.AB11LineMatching88),
@@ -58,6 +59,7 @@ function select(tag: string, attrs: MarkupAttrs) {
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['62','63','64'].includes(String(attrs.page)))return pick('NativeAB11Lesson8Close',{page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['60','61'].includes(String(attrs.page)))return pick('NativeAB11Lesson8Start',{page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a12' && rangePages.has(String(attrs.page)))return pick('NativeAB12Range',{page:String(attrs.page)});
+  if(tag === 'HybridScan' && attrs.book==='ab-a12' && Number(attrs.page)>=31 && Number(attrs.page)<=46 && !rangePages.has(String(attrs.page)))return pick('NativeAB12P31to46',{page:String(attrs.page)});
   if(tag === 'NativeAB12L23')return pick('NativeAB12L23',{page:attrs.page});
   if(tag === 'NativeAB12')return pick('NativeAB12',{page:attrs.page});
   if(tag === 'HybridScan' && attrs.book==='ab-a12' && ['66'].includes(String(attrs.page)))return pick('NativeAB12P66to71',{page:String(attrs.page)});
