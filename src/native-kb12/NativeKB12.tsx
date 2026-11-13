@@ -1,4 +1,5 @@
 import {CheckButton} from '../components/CheckButton';
+import {answerMatchMode} from '../components/check-feedback';
 import {PageImage} from '../components/PageImage';
 import {usePageReset} from '../exercises/usePageReset';
 import {LineMatching} from '../exercises/LineMatching';
@@ -25,7 +26,15 @@ export function NativeKB12({page}:{page:string}){
  const mark20=(t:string)=><button className={'nkDiaryMark '+(values['mark-'+t]==='true'?'selected':'')} aria-label={'Markieren: '+t} aria-pressed={values['mark-'+t]==='true'} onClick={()=>set('mark-'+t,String(values['mark-'+t]!=='true'))}>{t}</button>;
  const NOBOX=new Set(["oft","p11:den Weg beschreiben","p11:den Weg nicht kennen","Wie ist das Wetter? Hörbeispiel 1", "Wie ist das Wetter? Hörbeispiel 2", "Was machen Sie gerade? Hörbeispiel 2", "Was machen Sie gerade? Hörbeispiel 3", "Was machen Sie gerade? Hörbeispiel 4", "Mein Urlaub: Ort?", "Hannes: Wetter?", "Mein Urlaub: Aktivitäten?", "Hannes: Aktivitäten?", "Fest zu Gutes/Frohes neues Jahr!", "Fest zu Frohe Weihnachten!"]);
  const open=(id:string,x:number,y:number,w:number,h:number,label:string,placeholder='')=>NOBOX.has(label)?null:<textarea className="nkOpen" aria-label={label} style={{left:x,top:y,width:w,height:h}} value={values[id]||''} placeholder={placeholder} onChange={e=>set(id,e.target.value)}/>;
- const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="nkCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))||(((page==='64'&&k==='7a-2')||(page==='67'&&k.startsWith('4a-')))&&normalize(v).split(/\s*[,;]\s*/).sort().join('|')===normalize(values[k]||'').split(/\s*[,;]\s*/).sort().join('|'))))})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const check=(id:string,x:number,y:number,answers:Record<string,string>)=>{
+  const graded=Object.entries(answers).every(([k,a])=>{
+   const mode=answerMatchMode(a,values[k]||'');
+   if(mode!==null)return mode;
+   return a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))||(((page==='64'&&k==='7a-2')||(page==='67'&&k.startsWith('4a-')))&&normalize(v).split(/\s*[,;]\s*/).sort().join('|')===normalize(values[k]||'').split(/\s*[,;]\s*/).sort().join('|')));
+  });
+  return <div className="nkCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:graded})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ };
+ const save=(id:string,x:number,y:number)=><div className="nkCheck" data-save={id} style={{left:x,top:y}}><CheckButton onClick={()=>sr({...results,['save-'+id]:true})}></CheckButton><output aria-live="polite">{results['save-'+id]?'Gespeichert':''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,t:string)=><div className="nkTitle" style={{left:x,top:y,width:w}}><b>{n}</b><Words text={t}/></div>;
  const clip=(n:number,y:number)=><button className="nkAudio" style={{left:40,top:y}} onClick={()=>sf(({13:'fi8siL2PgPE',14:'R_zKkuFByzM',15:'ify1e7g_Dpc',16:'QyJQytmYVvw',17:'C__8IoATxD8',18:'uyeIHkUXUJo'} as Record<number,string>)[n])}>▶ Clip {n}</button>;
  const audio=(src:string,x:number,y:number,label:string,displayLabel?:string,task?:string)=><button className="nkAudio" data-task={task} style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {displayLabel||label}</button>;
