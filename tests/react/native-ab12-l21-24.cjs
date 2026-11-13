@@ -383,5 +383,17 @@ for(const width of[320,390]){
  assert.equal(await p.evaluate(()=>localStorage.getItem('native-ab12-76')),null,'reset clears storage');
  console.log(width,'p76 interaction/persist/reset PASS');
  await p.close();
+ // page 77: LITERATUR reading page - no interactions, text/art render only
+ p=await openPage(b,width,'77');
+ const pg77=p.locator('.page[data-page="77"]');
+ assert.equal(await pg77.locator('.nativeAB12[data-native-ab12="77"]').count(),1,'native p77 rendered');
+ assert.equal(await pg77.locator('[data-native-field]').count(),0,'no fields on reading page');
+ assert.equal(await pg77.locator('[data-check]').count(),0,'no check buttons on reading page');
+ assert.equal(await pg77.locator('input.naDot').count(),0,'no radios on reading page');
+ const t77=await pg77.locator('.naCanvas').textContent();
+ for(const s of['LITERATUR','WIEDERSEHEN IN WIEN','Findest','schön?','siebenundsiebzig','Walfisch-','Rossmann'])assert.ok(t77.includes(s),'p77 shows '+s);
+ assert.equal(await pg77.locator('.naArt').count(),2,'scene + band crops');
+ console.log(width,'p77 render PASS');
+ await p.close();
 }
 }finally{await b.close();server.close()}})().catch(e=>{console.error(e);server.close();process.exitCode=1});
