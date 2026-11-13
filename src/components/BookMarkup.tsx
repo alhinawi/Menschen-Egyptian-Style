@@ -1,3 +1,4 @@
+import {PageImage} from './PageImage';
 import {AB11LineMatching88} from '../exercises/AB11LineMatching88';
 import {NativeAB11Lesson10Start} from '../native-ab11/NativeAB11Lesson10Start';
 import {NativeAB11Module3Close} from '../native-ab11/NativeAB11Module3Close';
@@ -95,7 +96,7 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
     const selected = children.filter((n): n is [string, MarkupAttrs, MarkupNode[]] => Array.isArray(n) && n[0] === 'option' && 'selected' in n[1]).map(n => n[1].value ?? n[2].join(''));
     if (selected.length) props.defaultValue = props.multiple ? selected : selected[0];
   }
-  if (tag === 'img' && !props.decoding) props.decoding = 'async';
+  if (tag === 'img') return createElement(PageImage, props);
   if (tag === 'textarea') {
     props.defaultValue = children.join('');
     return createElement(PersistentField, {key, tag, attrs: props, children: []});

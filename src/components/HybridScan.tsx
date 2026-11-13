@@ -1,3 +1,4 @@
+import {PageImage} from './PageImage';
 import {usePageReset} from '../exercises/usePageReset';
 import {ClipMarkers} from './ClipMarkers';
 import {useLayoutEffect,useRef,useState} from 'react';
@@ -20,7 +21,7 @@ export function HybridScan({data}:{data:ScanData}){
  function check(group:string){const fields=data.fields.filter(f=>f.group===group&&f.answer!==undefined);const next={...results};for(const f of fields){const value=f.kind==='radio'?String(values[f.name||f.id]===f.value):f.kind==='checkbox'?String(values[f.id]==='true'):norm(values[f.id]||'');next[f.id]=f.answer!.split('|').some(a=>norm(a)===value)}setResults(next)}
  return <div className="hybridScan" data-scan-book={data.book} data-scan-page={data.page} data-review-status={data.review.status}>
   <div className="hybridCanvas" style={{aspectRatio:`${data.width}/${data.height}`,'--scan-ratio':data.width/data.height,'--hybrid-tool-space':data.audio.length||data.fields.some(f=>f.answer!==undefined)?toolSpace+'px':'0px'} as CSSProperties}>
-   <img className="hybridImage" src={data.image} alt={`Originalbuch Seite ${data.page}`} draggable={false}/>
+   <PageImage className="hybridImage" src={data.image} alt={`Originalbuch Seite ${data.page}`} draggable={false}/>
    <div className="hybridWords">{data.words.map((w,i)=>/[A-Za-zÄÖÜäöüß]/.test(w.text)?<span key={i} className="hybridWord tapWord" data-word={w.text} data-phrase={w.phrase||w.text} role="button" tabIndex={0} aria-label={`${w.text} · Bedeutung`} style={box(w)}>{w.text}</span>:<span key={i} className="hybridWord" style={box(w)}>{w.text}</span>)}</div>
    <div className="hybridFields">{data.fields.map(f=>{
     const className='hybridField '+(results[f.id]===undefined?'':results[f.id]?'hybridCorrect':'hybridWrong');
