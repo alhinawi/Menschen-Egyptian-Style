@@ -149,7 +149,7 @@ export function NativeKB12({page}:{page:string}){
  </>}
  {page==='13'&&<>
  {text(465,76,545,'Wie findest du Ottos Haus?','nkBookTitle')}{text(1010,40,90,'14','nkLesson')}{art('hero',0,126,1100,834)}
- {audio('assets/kb-cd3-track05.mp3',48,1050,'3 05',undefined,'1')}{title('1',105,1048,690,'Sehen Sie das Bild an und hören Sie.')}{text(150,1080,650,'Kennen Sie Computerspiele wie „Glückstadt“?\nSpielen Sie gern Computerspiele? Welche?','nkBold')}
+ {audio('assets/kb-cd3-track05.mp3',48,1050,'3 05',undefined,'1')}{title('1',105,1048,690,'Sehen Sie das Bild an und hören Sie.')}{text(150,1080,650,'Kennen Sie Computerspiele wie „Glückstadt“?\nSpielen Sie gern Computerspiele? Welche?','nkBold')}{save('1',628,1082)}
  {title('2',105,1154,715,'Sehen Sie die Häuser auf dem Bild an. Zu wem passt das?')}{text(150,1190,660,'Kreuzen Sie an. Hilfe finden Sie im Bildlexikon.','nkBold')}
  {text(518,1220,100,'Vanilla','nkHand nkSmall')}{text(622,1220,100,'Otto','nkHand nkSmall')}
  {['Das Haus ist groß und elegant.','Das Haus ist klein und gemütlich.','Im Garten sind viele Blumen.','Im Garten steht ein Baum.','Das Haus hat viele Fenster.','Das Haus hat eine Treppe.'].map((t,i)=><div key={t}>{text(150,1252+i*27,390,String.fromCharCode(97+i)+'  '+t)}{dot('2-'+i,'vanilla',540,1252+i*27,'Vanilla: '+t)}{dot('2-'+i,'otto',622,1252+i*27,'Otto: '+t)}</div>)}
