@@ -66,6 +66,6 @@ export function NativeAB12P28({page}:{page:string}){
   {stext(220,1282,120,'Hallo Marlene!')}{field('h1',336,1274,650,'Kommentar Zeile 1')}
   {field('h2',219,1301,767,'Kommentar Zeile 2')}
   {field('h3',219,1326,767,'Kommentar Zeile 3')}
-  {art('modul',0,1389,95,26)}{text(98,1394,30,'28','naFooter naFootNum')}<div className="naBarV" style={{left:150,top:1397,width:1,height:10}}/>{text(155,1391,150,'achtundzwanzig','naFooter')}
+  {art('modul',0,1389,95,26)}{text(104,1389,36,'28','naFooter naFootNum')}<div className="naBarV" style={{left:150,top:1394,width:1,height:14}}/>{text(160,1391,150,'achtundzwanzig','naFooter')}
  </div></div>;
 }
