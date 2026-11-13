@@ -655,11 +655,11 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {art('hand-miete',182,262,64,38)}{field('15-1b',265,256,148,'Miete')}{art('h-euro',414,262,25,22)}
   {art('hand-abwann',182,288,78,25)}{field('15-1c',265,281,148,'Ab wann')}
   {check('15-1',1010,428,{'15-1a':'3-4|3 bis 4','15-1b':'1000','15-1c':'1. April'})}
-  {text(550,223,462,'Liebe Leute! Hilfe!!!','naMailS15 naMailB15 naNw')}
-  {text(550,240,462,'Wir suchen dringend eine 3 bis 4-Zimmer-Wohnung (ca. 100 m²)','naMailS15 naNw')}
+  {text(550,223,462,'Liebe Leute! Hilfe!!!','naMailS15 naNw')}
+  {text(550,243,462,'Wir suchen dringend eine 3 bis 4-Zimmer-Wohnung (ca. 100 m²)','naMailS15 naNw')}
   {text(550,268,462,'ab 1. April. Die Wohnung sollte maximal 1000 Euro inkl. Neben-','naMailS15 naNw')}
   {text(550,291,462,'kosten kosten. Hat jemand einen Tipp? Dann meldet Euch doch','naMailS15 naNw')}
-  {text(550,316,462,'bitte so schnell wie möglich.','naMailS15 naNw')}
+  {text(550,319,462,'bitte so schnell wie möglich.','naMailS15 naNw')}
   {text(550,342,300,'Grüße von Stefan','naMailS15 naNw')}
   {art('tipp',697,345,310,78)}
   {badge9('2',120,406)}
@@ -669,11 +669,11 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {art('note1',149,466,452,185)}
   {art('sms',629,466,287,171)}
   {art('circ3',257,630,30,32)}
-  {text(276,652,702,'Lieber Stefan,','naChris15 naNw')}
-  {text(276,676,702,'ich habe den ultimativen Tipp für Dich! Die Nachbarn von meiner Schwester ziehen nach England','naChris15 naNw')}
-  {text(276,700,702,'und suchen dringend einen Nachmieter zum 1. April. Tolle 4-Zimmer-Wohnung mit Südbalkon.','naChris15 naNw')}
-  {text(276,724,702,'Die Wohnung kostet nur 700 € + Nebenkosten. Ruf meine Schwester am besten heute noch an.','naChris15 naNw')}
-  {text(276,748,200,'LG Chris','naChris15 naNw')}
+  {text(276,654,702,'Lieber Stefan,','naChris15 naNw')}
+  {text(276,681,702,'ich habe den ultimativen Tipp für Dich! Die Nachbarn von meiner Schwester ziehen nach England','naChris15 naNw')}
+  {text(276,705,702,'und suchen dringend einen Nachmieter zum 1. April. Tolle 4-Zimmer-Wohnung mit Südbalkon.','naChris15 naNw')}
+  {text(276,729,702,'Die Wohnung kostet nur 700 € + Nebenkosten. Ruf meine Schwester am besten heute noch an.','naChris15 naNw')}
+  {text(276,750,200,'LG Chris','naChris15 naNw')}
   <div className="naBand15" style={{left:164,top:806,width:844,height:31}}/>
   <div className="naLine15" style={{left:163,top:836,width:845,height:1}}/><div className="naLine15" style={{left:163,top:865,width:845,height:1}}/><div className="naLine15" style={{left:163,top:895,width:845,height:1}}/><div className="naLine15" style={{left:163,top:924,width:845,height:1}}/>
   <div className="naLine15" style={{left:163,top:806,width:1,height:119}}/><div className="naLine15" style={{left:355,top:806,width:1,height:119}}/><div className="naLine15" style={{left:601,top:806,width:1,height:119}}/><div className="naLine15" style={{left:796,top:806,width:1,height:119}}/><div className="naLine15" style={{left:1007,top:806,width:1,height:119}}/>
