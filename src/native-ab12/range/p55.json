@@ -1,0 +1,743 @@
+{
+ "w": 1072,
+ "h": 1449,
+ "items": [
+  {
+   "k": "a",
+   "n": "bg",
+   "x": 0,
+   "y": 0,
+   "w": 1072,
+   "h": 1449,
+   "alt": "Seite 55 Hintergrund"
+  },
+  {
+   "k": "t",
+   "x": 150,
+   "y": 183,
+   "t": "Wie heißt das Gegenteil? Schreiben Sie.",
+   "s": 21.5,
+   "c": "naFiraM",
+   "col": "#1d1d1b"
+  },
+  {
+   "k": "t",
+   "x": 152,
+   "y": 272,
+   "t": "a",
+   "s": 15,
+   "col": "#828185"
+  },
+  {
+   "k": "t",
+   "x": 192,
+   "y": 272,
+   "t": "interessant",
+   "s": 22.5
+  },
+  {
+   "k": "t",
+   "x": 152,
+   "y": 297,
+   "t": "b",
+   "s": 15,
+   "col": "#828185"
+  },
+  {
+   "k": "t",
+   "x": 192,
+   "y": 297,
+   "t": "freundlich",
+   "s": 22.0
+  },
+  {
+   "k": "t",
+   "x": 152,
+   "y": 323,
+   "t": "c",
+   "s": 15,
+   "col": "#828185"
+  },
+  {
+   "k": "t",
+   "x": 192,
+   "y": 323,
+   "t": "sympathisch",
+   "s": 20.0
+  },
+  {
+   "k": "t",
+   "x": 152,
+   "y": 348,
+   "t": "d",
+   "s": 15,
+   "col": "#828185"
+  },
+  {
+   "k": "t",
+   "x": 192,
+   "y": 348,
+   "t": "dick",
+   "s": 22.0
+  },
+  {
+   "k": "t",
+   "x": 152,
+   "y": 374,
+   "t": "e",
+   "s": 15,
+   "col": "#828185"
+  },
+  {
+   "k": "t",
+   "x": 192,
+   "y": 374,
+   "t": "glücklich",
+   "s": 23.0
+  },
+  {
+   "k": "t",
+   "x": 330,
+   "y": 348,
+   "t": "schlank /",
+   "s": 22.5
+  },
+  {
+   "k": "f",
+   "id": "p55-5b",
+   "x": 346,
+   "y": 312,
+   "w": 160,
+   "l": "5 b",
+   "a": "unfreundlich",
+   "g": "g1"
+  },
+  {
+   "k": "f",
+   "id": "p55-5c",
+   "x": 346,
+   "y": 339,
+   "w": 160,
+   "l": "5 c",
+   "a": "unsympathisch",
+   "g": "g1"
+  },
+  {
+   "k": "f",
+   "id": "p55-5d",
+   "x": 430,
+   "y": 363,
+   "w": 164,
+   "l": "5 d",
+   "a": "dünn",
+   "g": "g1"
+  },
+  {
+   "k": "f",
+   "id": "p55-5e1",
+   "x": 341,
+   "y": 390,
+   "w": 162,
+   "l": "5 e 1",
+   "a": "unglücklich|traurig",
+   "g": "g1"
+  },
+  {
+   "k": "f",
+   "id": "p55-5e2",
+   "x": 530,
+   "y": 390,
+   "w": 163,
+   "l": "5 e 2",
+   "a": "unglücklich|traurig",
+   "g": "g1"
+  },
+  {
+   "k": "chk",
+   "g": "g1",
+   "x": 960,
+   "y": 330
+  },
+  {
+   "k": "t",
+   "x": 150,
+   "y": 461,
+   "t": "Lesen Sie die SMS.",
+   "s": 21.5,
+   "c": "naFiraM",
+   "col": "#1d1d1b"
+  },
+  {
+   "k": "t",
+   "x": 122,
+   "y": 506,
+   "t": "a",
+   "s": 15,
+   "col": "#434e95",
+   "b": 1
+  },
+  {
+   "k": "t",
+   "x": 154,
+   "y": 506,
+   "t": "Markieren Sie die trennbaren Verben blau und die nicht trennbaren Verben grün.",
+   "s": 18.0
+  },
+  {
+   "k": "r",
+   "x": 311,
+   "y": 506,
+   "w": 207,
+   "h": 3,
+   "col": "#6596c4"
+  },
+  {
+   "k": "r",
+   "x": 561,
+   "y": 507,
+   "w": 300,
+   "h": 2,
+   "col": "#69bb58"
+  },
+  {
+   "k": "t",
+   "x": 165,
+   "y": 575,
+   "t": "Hallo Johnny,",
+   "s": 16.5
+  },
+  {
+   "k": "t",
+   "x": 446,
+   "y": 589,
+   "t": "Hi Sophie, Sina hat",
+   "s": 16.5
+  },
+  {
+   "k": "t",
+   "x": 165,
+   "y": 599,
+   "t": "Herr Sander hat angeru-",
+   "s": 16.5
+  },
+  {
+   "k": "t",
+   "x": 729,
+   "y": 605,
+   "t": "Hi Alex,",
+   "s": 15.0
+  },
+  {
+   "k": "t",
+   "x": 446,
+   "y": 615,
+   "t": "uns am Samstag zum",
+   "s": 16.5
+  },
+  {
+   "k": "t",
+   "x": 164,
+   "y": 625,
+   "t": "fen und sich beschwert.",
+   "s": 16.5
+  },
+  {
+   "k": "t",
+   "x": 728,
+   "y": 630,
+   "t": "und? Wie hat Dir die",
+   "s": 16.0
+  },
+  {
+   "k": "t",
+   "x": 446,
+   "y": 642,
+   "t": "Essen eingeladen.",
+   "s": 16.5
+  },
+  {
+   "k": "t",
+   "x": 165,
+   "y": 651,
+   "t": "Du warst gestern nicht in",
+   "s": 16.5
+  },
+  {
+   "k": "t",
+   "x": 729,
+   "y": 658,
+   "t": "Party gefallen?",
+   "s": 16.0
+  },
+  {
+   "k": "t",
+   "x": 446,
+   "y": 666,
+   "t": "Hast Du Zeit?",
+   "s": 16.5
+  },
+  {
+   "k": "t",
+   "x": 165,
+   "y": 676,
+   "t": "der Sitzung und hast Dich",
+   "s": 16.5
+  },
+  {
+   "k": "t",
+   "x": 729,
+   "y": 682,
+   "t": "LG Frieda",
+   "s": 15.0
+  },
+  {
+   "k": "t",
+   "x": 446,
+   "y": 692,
+   "t": "LG Anna",
+   "s": 15.5
+  },
+  {
+   "k": "t",
+   "x": 165,
+   "y": 702,
+   "t": "auch nicht entschuldigt.",
+   "s": 16.5
+  },
+  {
+   "k": "t",
+   "x": 166,
+   "y": 728,
+   "t": "LG Martina",
+   "s": 15.5
+  },
+  {
+   "k": "t",
+   "x": 192,
+   "y": 810,
+   "t": "Hi Martina,",
+   "s": 15.5
+  },
+  {
+   "k": "t",
+   "x": 742,
+   "y": 818,
+   "t": "Hallo Frieda, sehr",
+   "s": 15.5
+  },
+  {
+   "k": "t",
+   "x": 883,
+   "y": 820,
+   "t": "gut!",
+   "s": 16.0
+  },
+  {
+   "k": "t",
+   "x": 192,
+   "y": 838,
+   "t": "Entschuldigung!",
+   "s": 16.5
+  },
+  {
+   "k": "t",
+   "x": 473,
+   "y": 835,
+   "t": "Ohh, die SMS habe",
+   "s": 17.0
+  },
+  {
+   "k": "t",
+   "x": 742,
+   "y": 844,
+   "t": "Elena habe ich fast nicht",
+   "s": 16.5
+  },
+  {
+   "k": "t",
+   "x": 192,
+   "y": 862,
+   "t": "Das habe ich total",
+   "s": 16.5
+  },
+  {
+   "k": "t",
+   "x": 473,
+   "y": 861,
+   "t": "ich nicht bekommen.",
+   "s": 16.5
+  },
+  {
+   "k": "t",
+   "x": 741,
+   "y": 870,
+   "t": "erkannt! Super Frau! Ich",
+   "s": 16.0
+  },
+  {
+   "k": "t",
+   "x": 192,
+   "y": 891,
+   "t": "vergessen.",
+   "s": 16.5
+  },
+  {
+   "k": "t",
+   "x": 741,
+   "y": 896,
+   "t": "habe sie nach der Party",
+   "s": 16.5
+  },
+  {
+   "k": "t",
+   "x": 192,
+   "y": 913,
+   "t": "Grüße",
+   "s": 16.0
+  },
+  {
+   "k": "t",
+   "x": 742,
+   "y": 921,
+   "t": "im Auto mitgenommen.",
+   "s": 17.0
+  },
+  {
+   "k": "t",
+   "x": 191,
+   "y": 941,
+   "t": "Johnny",
+   "s": 17.0
+  },
+  {
+   "k": "t",
+   "x": 742,
+   "y": 947,
+   "t": "LG Alex",
+   "s": 15.5
+  },
+  {
+   "k": "r",
+   "x": 295,
+   "y": 603,
+   "w": 63,
+   "h": 2,
+   "col": "#6596c4"
+  },
+  {
+   "k": "r",
+   "x": 165,
+   "y": 629,
+   "w": 26,
+   "h": 2,
+   "col": "#6596c4"
+  },
+  {
+   "k": "r",
+   "x": 266,
+   "y": 629,
+   "w": 85,
+   "h": 2,
+   "col": "#69bb58"
+  },
+  {
+   "k": "mk",
+   "id": "p55-m1",
+   "x": 252,
+   "y": 686,
+   "w": 108,
+   "h": 27,
+   "l": "entschuldigt.",
+   "a": "g",
+   "g": "g2"
+  },
+  {
+   "k": "mk",
+   "id": "p55-m2",
+   "x": 190,
+   "y": 876,
+   "w": 88,
+   "h": 23,
+   "l": "vergessen.",
+   "a": "g",
+   "g": "g2"
+  },
+  {
+   "k": "mk",
+   "id": "p55-m3",
+   "x": 493,
+   "y": 625,
+   "w": 97,
+   "h": 26,
+   "l": "eingeladen.",
+   "a": "b",
+   "g": "g2"
+  },
+  {
+   "k": "mk",
+   "id": "p55-m4",
+   "x": 545,
+   "y": 845,
+   "w": 99,
+   "h": 23,
+   "l": "bekommen.",
+   "a": "g",
+   "g": "g2"
+  },
+  {
+   "k": "mk",
+   "id": "p55-m5",
+   "x": 772,
+   "y": 640,
+   "w": 75,
+   "h": 27,
+   "l": "gefallen?",
+   "a": "g",
+   "g": "g2"
+  },
+  {
+   "k": "mk",
+   "id": "p55-m6",
+   "x": 739,
+   "y": 854,
+   "w": 69,
+   "h": 23,
+   "l": "erkannt!",
+   "a": "g",
+   "g": "g2"
+  },
+  {
+   "k": "mk",
+   "id": "p55-m7",
+   "x": 808,
+   "y": 906,
+   "w": 127,
+   "h": 26,
+   "l": "mitgenommen.",
+   "a": "b",
+   "g": "g2"
+  },
+  {
+   "k": "chk",
+   "g": "g2",
+   "x": 960,
+   "y": 900
+  },
+  {
+   "k": "t",
+   "x": 123,
+   "y": 1060,
+   "t": "b",
+   "s": 15,
+   "col": "#434e95",
+   "b": 1
+  },
+  {
+   "k": "t",
+   "x": 154,
+   "y": 1060,
+   "t": "Sortieren Sie die Partizipien und ergänzen Sie den Infinitiv.",
+   "s": 18.0
+  },
+  {
+   "k": "t",
+   "x": 154,
+   "y": 1100,
+   "t": "trennbar",
+   "s": 19.0,
+   "c": "naDB",
+   "col": "#3c3b38"
+  },
+  {
+   "k": "t",
+   "x": 480,
+   "y": 1100,
+   "t": "nicht trennbar",
+   "s": 20.0,
+   "c": "naDB",
+   "col": "#3c3b38"
+  },
+  {
+   "k": "t",
+   "x": 155,
+   "y": 1138,
+   "t": "Partizip",
+   "s": 16,
+   "col": "#5f6660",
+   "i": 1
+  },
+  {
+   "k": "t",
+   "x": 481,
+   "y": 1138,
+   "t": "Partizip",
+   "s": 16,
+   "col": "#5f6660",
+   "i": 1
+  },
+  {
+   "k": "t",
+   "x": 275,
+   "y": 1138,
+   "t": "Infinitiv",
+   "s": 16,
+   "col": "#5f6660",
+   "i": 1
+  },
+  {
+   "k": "t",
+   "x": 603,
+   "y": 1138,
+   "t": "Infinitiv",
+   "s": 16,
+   "col": "#5f6660",
+   "i": 1
+  },
+  {
+   "k": "f",
+   "id": "p55-6b-t1p",
+   "x": 155,
+   "y": 1189,
+   "w": 110,
+   "l": "6b trennbar Partizip 1",
+   "a": "eingeladen",
+   "g": "g3"
+  },
+  {
+   "k": "f",
+   "id": "p55-6b-t1i",
+   "x": 275,
+   "y": 1189,
+   "w": 140,
+   "l": "6b trennbar Infinitiv 1",
+   "a": "einladen",
+   "g": "g3"
+  },
+  {
+   "k": "f",
+   "id": "p55-6b-t2p",
+   "x": 155,
+   "y": 1215,
+   "w": 110,
+   "l": "6b trennbar Partizip 2",
+   "a": "mitgenommen",
+   "g": "g3"
+  },
+  {
+   "k": "f",
+   "id": "p55-6b-t2i",
+   "x": 275,
+   "y": 1215,
+   "w": 140,
+   "l": "6b trennbar Infinitiv 2",
+   "a": "mitnehmen",
+   "g": "g3"
+  },
+  {
+   "k": "f",
+   "id": "p55-6b-n1p",
+   "x": 481,
+   "y": 1189,
+   "w": 110,
+   "l": "6b nicht trennbar Partizip 1",
+   "a": "entschuldigt",
+   "g": "g3"
+  },
+  {
+   "k": "f",
+   "id": "p55-6b-n1i",
+   "x": 603,
+   "y": 1189,
+   "w": 150,
+   "l": "6b nicht trennbar Infinitiv 1",
+   "a": "sich entschuldigen|entschuldigen",
+   "g": "g3"
+  },
+  {
+   "k": "f",
+   "id": "p55-6b-n2p",
+   "x": 481,
+   "y": 1215,
+   "w": 110,
+   "l": "6b nicht trennbar Partizip 2",
+   "a": "vergessen",
+   "g": "g3"
+  },
+  {
+   "k": "f",
+   "id": "p55-6b-n2i",
+   "x": 603,
+   "y": 1215,
+   "w": 150,
+   "l": "6b nicht trennbar Infinitiv 2",
+   "a": "vergessen",
+   "g": "g3"
+  },
+  {
+   "k": "f",
+   "id": "p55-6b-n3p",
+   "x": 481,
+   "y": 1241,
+   "w": 110,
+   "l": "6b nicht trennbar Partizip 3",
+   "a": "bekommen",
+   "g": "g3"
+  },
+  {
+   "k": "f",
+   "id": "p55-6b-n3i",
+   "x": 603,
+   "y": 1241,
+   "w": 150,
+   "l": "6b nicht trennbar Infinitiv 3",
+   "a": "bekommen",
+   "g": "g3"
+  },
+  {
+   "k": "f",
+   "id": "p55-6b-n4p",
+   "x": 481,
+   "y": 1267,
+   "w": 110,
+   "l": "6b nicht trennbar Partizip 4",
+   "a": "gefallen",
+   "g": "g3"
+  },
+  {
+   "k": "f",
+   "id": "p55-6b-n4i",
+   "x": 603,
+   "y": 1267,
+   "w": 150,
+   "l": "6b nicht trennbar Infinitiv 4",
+   "a": "gefallen",
+   "g": "g3"
+  },
+  {
+   "k": "f",
+   "id": "p55-6b-n5p",
+   "x": 481,
+   "y": 1293,
+   "w": 110,
+   "l": "6b nicht trennbar Partizip 5",
+   "a": "erkannt",
+   "g": "g3"
+  },
+  {
+   "k": "f",
+   "id": "p55-6b-n5i",
+   "x": 603,
+   "y": 1293,
+   "w": 150,
+   "l": "6b nicht trennbar Infinitiv 5",
+   "a": "erkennen",
+   "g": "g3"
+  },
+  {
+   "k": "chk",
+   "g": "g3",
+   "x": 960,
+   "y": 1240
+  }
+ ]
+}
