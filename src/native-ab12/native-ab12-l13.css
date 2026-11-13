@@ -54,7 +54,7 @@
 .naCanvas .naRegelStrip{position:absolute;background:#dde2ea;color:#203332}
 .naCanvas .naRegelStrip span{position:absolute;bottom:5px;left:2.5px;writing-mode:vertical-rl;transform:rotate(180deg);font:bold 9px Arial;letter-spacing:1px}
 .naCanvas .naText.naEx9{font:18px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important;word-spacing:1px}
-.naCanvas .naText.naEx9d{font:bold 21.3px FiraSans,'Trebuchet MS',sans-serif!important;color:#1a1a12;letter-spacing:0!important}
+.naCanvas .naText.naEx9d{font:500 21.3px FiraSans,'Trebuchet MS',sans-serif!important;color:#1a1a12;letter-spacing:0!important}
 .naCanvas .naText.naInst9{font:500 18.3px FiraSans,'Trebuchet MS',sans-serif!important;color:#1a1a12;letter-spacing:0!important;word-spacing:0.8px}
 .naCanvas .naText.naEx9b{font:17.4px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important;word-spacing:1px}
 .naCanvas .naField.naFld9{height:20px!important;font:18px DroidSerif,Georgia,serif!important;letter-spacing:0!important;padding:0!important;border-bottom:1px solid #b8b4ac!important;text-align:center;color:#224777!important}
@@ -80,7 +80,7 @@
 .naCanvas .naDotR{background:linear-gradient(#f8b4a8,#e8232a 45%,#c00808)}
 .naCanvas .naDotY{background:linear-gradient(#fdf6b0,#fae800 45%,#e0c400)}
 .naCanvas .naDotG{background:linear-gradient(#c8f0a0,#4da645 45%,#3a8a35)}
-.naCanvas .naRad10{position:absolute;width:17px;height:17px;border:1.5px solid #c9cbc0;border-radius:50%;background:#fff;z-index:2}
+.naCanvas .naRad10{position:absolute;width:18px;height:18px;border:2px solid #c0c3af;border-radius:50%;background:#fff;z-index:2}
 [data-native-ab12="10"] .naCanvas .naText{font-family:DroidSerif,Georgia,serif!important;letter-spacing:0!important}
 [data-native-ab12="10"] .naCanvas .naField{font-family:DroidSerif,Georgia,serif!important;letter-spacing:0!important}
 [data-native-ab12="10"] .naCanvas .naYT{font:bold 19px FiraSans,'Trebuchet MS',sans-serif!important;letter-spacing:0!important}
