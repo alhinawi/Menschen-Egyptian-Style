@@ -302,5 +302,112 @@ export function NativeAB12P18_20({page}:{page:string}){
   {text(830,1392,140,'neunzehn  |  19','naFooter naNw')}
   {art('modul',978,1386,93,36)}
  </>}
+ {page==='20'&&<>
+  {text(124,86,240,'BASISTRAINING','naHead')}
+  <div className="naHeadRule" style={{left:371,top:112,width:602}}/>
+  {kb(78,182,'KB 5')}
+  <div className="naSide" style={{left:92,top:222,fontSize:7.5,letterSpacing:.5}}>STRUKTUREN</div>
+  {title('9',120,176,600,'Was passt? Kreuzen Sie an.','naOB naNw')}
+  {text(163,220,12,'a')}
+  {text(187,218,320,'Marlene meint, Giesing ist normal. Das gefällt','naF21')}
+  <div className="naDotPrint" style={{left:617,top:218}}/>
+  {text(644,218,34,'mir')}
+  <div className="naDotPrint" style={{left:699,top:218}}/>
+  {art('x9a',698,218,24,24)}
+  {text(725,218,32,'ihr')}
+  <div className="naDotPrint" style={{left:775,top:218}}/>
+  {text(801,218,38,'ihm')}
+  {text(859,218,80,'sehr gut.')}
+  {text(162,244,12,'b')}
+  {text(186,244,575,'Wir feiern nächste Woche eine große Party. Viele Freunde helfen','naF21')}
+  {dot('9b','uns',780,247,'9b uns')}
+  {text(807,244,40,'uns.')}
+  {dot('9b','euch',866,247,'9b euch')}
+  {text(893,244,50,'euch.')}
+  {dot('9b','ihnen',184,268,'9b ihnen')}
+  {text(223,268,60,'ihnen.')}
+  {text(162,293,12,'c')}
+  {text(187,294,345,'Ihr habt uns toll geholfen! Wir danken','naF21')}
+  {dot('9c','uns',556,296,'9c uns')}
+  {text(583,294,40,'uns.')}
+  {dot('9c','euch',646,296,'9c euch')}
+  {text(673,294,50,'euch.')}
+  {dot('9c','ihnen',748,296,'9c ihnen')}
+  {text(775,294,60,'ihnen.')}
+  {text(162,320,12,'d')}
+  {text(187,321,335,'Das sind Marks Schlüssel. Sie gehören','naF21')}
+  {dot('9d','dir',540,321,'9d dir')}
+  {text(567,319,36,'dir.')}
+  {dot('9d','ihm',631,321,'9d ihm')}
+  {text(658,320,40,'ihm.')}
+  {dot('9d','ihr',726,321,'9d ihr')}
+  {text(753,321,32,'ihr.')}
+  {text(162,346,12,'e')}
+  {text(187,346,355,'Du kannst die Lehrerin fragen. Sie hilft','naF21')}
+  {dot('9e','dir',558,348,'9e dir')}
+  {text(585,345,36,'dir.')}
+  {dot('9e','ihm',649,348,'9e ihm')}
+  {text(676,346,40,'ihm.')}
+  {dot('9e','euch',744,348,'9e euch')}
+  {text(771,348,50,'euch.')}
+  {check('g1',905,300,{'9b':'uns','9c':'euch','9d':'ihm','9e':'dir'},'naCheckCol')}
+  {kb(78,414,'KB 5')}
+  <div className="naSide" style={{left:92,top:455,fontSize:7.5,letterSpacing:.5}}>STRUKTUREN</div>
+  {title('10',120,408,600,'Ergänzen Sie.','naOB naNw')}
+  {text(162,452,12,'a')}
+  {text(186,450,310,'Hallo Maria und Pedro, wie geht es','naF21')}
+  {art('euch10a',494,450,48,22)}
+  {text(547,450,120,'– Danke, gut.','naF21')}
+  {text(161,475,12,'b')}
+  {text(186,475,530,'Maria, kommst du? – Ja, Pedro, ich komme gleich und helfe','naF21')}
+  {field('p20-10b',722,471,125,'10b')}
+  {text(855,475,8,'.')}
+  {text(162,502,12,'c')}
+  {text(185,502,490,'Wir haben Probleme mit den Hausaufgaben. Kannst du','naF21')}
+  {field('p20-10c',676,496,129,'10c')}
+  {text(810,502,160,'helfen? – Ja, klar.','naF21')}
+  {text(162,527,12,'d')}
+  {text(186,527,500,'Pedro, sind das deine Bücher? – Nein, sie gehören nicht','naF21')}
+  {field('p20-10d',683,523,128,'10d')}
+  {text(812,527,8,'.')}
+  {text(185,553,170,'Sie gehören Maria.','naF21')}
+  {text(162,580,12,'e')}
+  {text(185,579,600,'Was machst du? – Ich schreibe eine Postkarte an Sandra und danke','naF21')}
+  {field('p20-10e',785,575,122,'10e')}
+  {text(185,604,170,'für die Einladung.','naF21')}
+  {text(162,630,12,'f')}
+  {text(186,630,660,'Hast du am Sonntag Zeit? – Nein, Peter und Anja ziehen um und ich helfe','naF21')}
+  {field('p20-10f',184,649,129,'10f')}
+  {text(322,664,8,'.')}
+  {check('g2',950,600,{'p20-10b':'dir','p20-10c':'uns','p20-10d':'mir','p20-10e':'ihr','p20-10f':'ihnen'},'naCheckCol')}
+  {kb(78,724,'KB 7')}
+  <div className="naSide" style={{left:92,top:763,fontSize:7.5,letterSpacing:.5}}>LESEN</div>
+  {title('11',120,718,600,'Welche Anzeige passt? Lesen Sie und notieren Sie dann.','naOB naNw naT21')}
+  {art('ad1',128,746,278,248)}
+  {art('ad2',446,770,254,145)}
+  {art('ad3',123,1008,329,137)}
+  {art('ad4',458,946,367,89)}
+  {art('ad5',455,1050,315,100)}
+  {art('ad6',728,668,284,294)}
+  <div style={{position:'absolute',left:159,top:1188,width:838,height:27,background:'#f5efcd'}}/>
+  <div className="naTFrame" style={{left:158,top:1187,width:841,height:150}}/>
+  <div className="naTCol" style={{left:866,top:1187,height:150}}/>
+  {text(874,1192,70,'Anzeige','naTh')}
+  {text(167,1221,10,'a')}
+  {text(186,1219,660,'Ihre Tochter ist 5 Jahre alt und liebt Bücher.','naS19')}
+  {text(166,1251,10,'b')}
+  {text(187,1249,660,'Sie sind neu in der Stadt und möchten Menschen treffen. Sie machen gern Sport.','naS19')}
+  {text(166,1281,10,'c')}
+  {text(187,1279,300,'Sie mögen Musik.','naS19')}
+  {text(166,1311,10,'d')}
+  {text(187,1309,300,'Sie suchen einen Deutschkurs.','naS19')}
+  {field('p20-11a',872,1232,105,'Anzeige a','naFieldBlank')}
+  {field('p20-11b',872,1259,105,'Anzeige b','naFieldBlank')}
+  {field('p20-11c',872,1289,105,'Anzeige c','naFieldBlank')}
+  {field('p20-11d',872,1318,105,'Anzeige d','naFieldBlank')}
+  {check('g3',158,1350,{'p20-11a':'4','p20-11b':'1','p20-11c':'6','p20-11d':'3'})}
+  {art('modul-tab',0,1384,86,30)}
+  {text(100,1392,200,'20  |  zwanzig','naFooter naNw')}
+ </>}
  </div><audio ref={player} className="naPlayer"/></div>;
 }
