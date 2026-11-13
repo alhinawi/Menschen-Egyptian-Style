@@ -29,7 +29,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
  const kb=(x:number,y:number,t:string)=><div className="naKB naKBL" style={{left:x,top:y}}>{t}</div>;
  const side=(x:number,y:number,t:string)=><div className="naSide naSideL" style={{left:x,top:y}}>{t}</div>;
  const hand=(x:number,y:number,w:number,t:string)=><div className="naText naHand" style={{left:x,top:y,width:w}}><Words text={t}/></div>;
- const mw=(id:string,x:number,y:number,w:number,t:string)=><button className={'naW9'+(values[id]==='true'?' on':'')} style={{left:x,top:y,width:w}} aria-pressed={values[id]==='true'} aria-label={'Markieren: '+t} onClick={()=>set(id,values[id]==='true'?'false':'true')}>{t}</button>;
+ const mw=(id:string,t:string)=><button className={'naW9i'+(values[id]==='true'?' on':'')} aria-pressed={values[id]==='true'} aria-label={'Markieren: '+t} onClick={()=>set(id,values[id]==='true'?'false':'true')}>{t}</button>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
  const dash=(x:number,y:number,w:number,parts:(string|[string])[])=><div className="naText naS20 naDash naNw" style={{left:x,top:y,width:w}}>{parts.map((p,i)=>Array.isArray(p)?<b key={i}>{p[0]}</b>:<span key={i}>{p}</span>)}</div>;
  const footerL=(n:string,word:string,y:number)=><><div className="naText naFooter" style={{left:76,top:y,width:220}}><b>{n}</b>{'  |  '+word}</div></>;
@@ -204,18 +204,8 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {audio('assets/ab-a12-cd2-track02.mp3',56,166,'2 02')}
   {badge9('1',112,169)}{text(153,169,660,'Welche Orte/Einrichtungen in der Stadt hören Sie? Markieren Sie.','naYT naNw')}
   <div className="naBand9w" style={{left:153,top:204,width:649,height:54}}/>
-  {mw('9-m-restaurant',159,208,85,'Restaurant')}<div className="naPipe9" style={{left:250,top:210}}/>
-  <div className="naW9m" style={{left:259,top:210,width:70,height:18}}>Bahnhof</div><div className="naPipe9" style={{left:337,top:210}}/>
-  {mw('9-m-kino',343,208,38,'Kino')}<div className="naPipe9" style={{left:385,top:210}}/>
-  {mw('9-m-dom',393,208,34,'Dom')}<div className="naPipe9" style={{left:435,top:210}}/>
-  {mw('9-m-schwimmbad',443,208,110,'Schwimmbad')}<div className="naPipe9" style={{left:555,top:210}}/>
-  {mw('9-m-post',565,208,33,'Post')}<div className="naPipe9" style={{left:606,top:210}}/>
-  {mw('9-m-bruecke',614,208,58,'Brücke')}<div className="naPipe9" style={{left:674,top:210}}/>
-  {mw('9-m-bank',682,208,42,'Bank')}<div className="naPipe9" style={{left:728,top:210}}/>
-  {mw('9-m-polizei',736,208,55,'Polizei')}<div className="naPipe9" style={{left:793,top:210}}/>
-  {mw('9-m-ampel',157,235,53,'Ampel')}<div className="naPipe9" style={{left:213,top:235}}/>
-  {mw('9-m-hotel',222,235,46,'Hotel')}<div className="naPipe9" style={{left:269,top:235}}/>
-  {mw('9-m-theater',277,235,66,'Theater')}
+  <div className="naBankRow9" style={{left:159,top:208}}>{mw('9-m-restaurant','Restaurant')}<span className="naPipe9i"/><span className="naW9mi">Bahnhof</span><span className="naPipe9i"/>{mw('9-m-kino','Kino')}<span className="naPipe9i"/>{mw('9-m-dom','Dom')}<span className="naPipe9i"/>{mw('9-m-schwimmbad','Schwimmbad')}<span className="naPipe9i"/>{mw('9-m-post','Post')}<span className="naPipe9i"/>{mw('9-m-bruecke','Brücke')}<span className="naPipe9i"/>{mw('9-m-bank','Bank')}<span className="naPipe9i"/>{mw('9-m-polizei','Polizei')}<span className="naPipe9i"/></div>
+  <div className="naBankRow9" style={{left:157,top:235}}>{mw('9-m-ampel','Ampel')}<span className="naPipe9i"/>{mw('9-m-hotel','Hotel')}<span className="naPipe9i"/>{mw('9-m-theater','Theater')}</div>
   <div className="naTipBar" style={{left:454,top:249,width:473,height:4}}/>
   <div className="naTipTab" style={{left:454,top:249,width:13,height:111}}><span>TIPP</span></div>
   {text(487,256,430,'Sie finden das Hören schwer? Achten Sie beim Hören','naTipT naNw')}
