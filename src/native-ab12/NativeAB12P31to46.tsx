@@ -33,7 +33,7 @@ export function NativeAB12P31to46({page}:{page:string}){
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-500.ttf') format('truetype');font-weight:500;font-display:swap}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}${SC('.naText')},${SC('.naBold')},${SC('.naLet')},${SC('.naDlg')},${SC('.naField')}{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12='31'] .naTitle,[data-native-ab12='32'] .naTitle,[data-native-ab12='33'] .naTitle,[data-native-ab12='34'] .naTitle,[data-native-ab12='35'] .naTitle,[data-native-ab12='36'] .naTitle,[data-native-ab12='37'] .naTitle,[data-native-ab12='38'] .naTitle,[data-native-ab12='39'] .naTitle,[data-native-ab12='40'] .naTitle,[data-native-ab12='42'] .naTitle,[data-native-ab12='43'] .naTitle,[data-native-ab12='44'] .naTitle,[data-native-ab12='45'] .naTitle,[data-native-ab12='46'] .naTitle{font-family:FiraSans,sans-serif!important;letter-spacing:0!important}${SC('.naText')},${SC('.naBold')},${SC('.naLet')},${SC('.naDlg')}{font-size:20px!important}${SC('.naTitle')}{font-size:21px!important}${SC('.naText.naS20')}{font-size:18px!important}${SC('.naSmall')}{font-size:16.5px!important}${SC('.naD19')}{font-size:17.5px!important}${SC('.naField')}{font-size:19px!important}${SC('.naUrl')}{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='41'] .naModul{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='41'] .naCanvas .naText.naHeadline{font-family:DroidSerif,Georgia,serif!important;font-size:29px!important;letter-spacing:0.3px!important;color:#6a726f!important}[data-native-ab12='41'] .naTitle.naGB b{min-width:32px!important;height:20px!important;line-height:20px!important;font-size:15px!important;background:#72c261!important;top:-3px;font-size:19px!important;line-height:20px!important}[data-native-ab12='41'] .naTitle.naGB b::before{left:-3px;top:-2px;width:calc(100% - 2px);height:3px}[data-native-ab12='41'] .naTitle.naGB b::after{left:-3px;top:-2px;width:3px;height:calc(100% + 2px)}[data-native-ab12='41'] .naTitle{font-family:FiraSans,sans-serif!important;font-size:22px!important;letter-spacing:0!important}[data-native-ab12='41'] .naText,[data-native-ab12='41'] .naBold{font-size:17px!important}[data-native-ab12='41'] .naBold{font-weight:600}[data-native-ab12='41'] .naField{font-size:17px!important}[data-native-ab12='41'] .naGray{font-size:15px!important;color:#7c7c80!important;letter-spacing:0!important}[data-native-ab12='38'] .naS14{font-size:14px!important}[data-native-ab12='39'] .naForum{font-family:FiraSans,sans-serif!important;font-size:19px!important;color:#17141c;letter-spacing:0!important}[data-native-ab12='39'] .naForumT{font-family:FiraSans,sans-serif!important;font-weight:700;font-size:20px!important;color:#2a457f;letter-spacing:0!important}[data-native-ab12='39'] .naRedD{font-family:FiraSans,sans-serif!important;font-weight:700;font-size:18px!important;color:#a9261c;letter-spacing:0!important}[data-native-ab12='39'] .naForumB{font-size:17px!important}[data-native-ab12='39'] .naF175{font-size:17.5px!important}[data-native-ab12='39'] .naBoxFade39{position:absolute;background:linear-gradient(180deg,#efe9f7 0%,#b6c9ef 55%,#ccd5fd 100%)}[data-native-ab12='39'] .naTippBar{position:absolute;background:#bf932c;color:#fff;font:bold 10px FiraSans,sans-serif;writing-mode:vertical-rl;transform:rotate(180deg);display:flex;align-items:center;justify-content:center}[data-native-ab12='39'] .naGrIt{font-family:DroidSerif,Georgia,serif!important;font-style:italic;font-size:20px!important;color:#565a57!important;letter-spacing:0!important}[data-native-ab12='39'] .naS19{font-size:19.4px!important}[data-native-ab12='39'] .naTrain39{font-family:DroidSerif,Georgia,serif!important;font-size:29px!important;letter-spacing:0!important;color:#565a57}[data-native-ab12='39'] .naTrain39b{letter-spacing:1.2px!important}[data-native-ab12='39'] .naGrIt{font-size:19px!important}[data-native-ab12='39'] .naT39{font-family:FiraSans,sans-serif!important;font-weight:500;font-size:22px!important;letter-spacing:0!important;color:#17141c}[data-native-ab12='39'] .naT39a{font-family:FiraSans,sans-serif!important;font-weight:600;font-size:20.8px!important;letter-spacing:0.3px!important;color:#17141c}[data-native-ab12='39'] .naT39b{font-family:FiraSans,sans-serif!important;font-weight:600;font-size:21px!important;letter-spacing:0!important;color:#17141c}[data-native-ab12='39'] .naField.naFieldLite{border-bottom:1px solid #e3e6e9!important}[data-native-ab12='39'] .naMS39{font-family:DroidSerif,Georgia,serif!important;font-style:italic;font-size:14px!important;color:#666!important;letter-spacing:0!important}[data-native-ab12='39'] .naErga39{font-family:FiraSans,sans-serif!important;font-weight:400;font-size:19px!important;color:#222;letter-spacing:0!important}[data-native-ab12='39'] .naRow39{font-family:DroidSerif,Georgia,serif!important;font-size:20px!important;color:#4d4b47;letter-spacing:0!important}[data-native-ab12='39'] .naT39L{font-family:FiraSans,sans-serif!important;font-weight:600;font-size:22px!important;letter-spacing:0!important;color:#17141c;position:absolute}[data-native-ab12='39'] .naT39L1{font-size:22.5px!important}[data-native-ab12='39'] .naT39b1{font-size:21.5px!important}[data-native-ab12='39'] .naTipp39{font-family:DroidSerif,Georgia,serif!important;font-size:16.1px!important;letter-spacing:0!important;color:#2b2b2b}[data-native-ab12='39'] .naTitle.naGB b{background:#77c06c!important}[data-native-ab12='35'] .naFooter,[data-native-ab12='36'] .naFooter,[data-native-ab12='37'] .naFooter,[data-native-ab12='38'] .naFooter,[data-native-ab12='39'] .naFooter{font-family:DroidSerif,Georgia,serif!important;font-size:16.3px!important;letter-spacing:0!important;color:#252723}[data-native-ab12='36'] .naS19,[data-native-ab12='37'] .naS19{font-size:19.4px!important}[data-native-ab12='31'] .naHeadline,[data-native-ab12='32'] .naHeadline,[data-native-ab12='33'] .naHeadline,[data-native-ab12='34'] .naHeadline,[data-native-ab12='35'] .naHeadline,[data-native-ab12='36'] .naHeadline,[data-native-ab12='37'] .naHeadline,[data-native-ab12='38'] .naHeadline{font-size:30px!important;letter-spacing:0!important;color:#5f6460}[data-native-ab12='35'] .naSansB,[data-native-ab12='36'] .naSansB,[data-native-ab12='37'] .naSansB,[data-native-ab12='38'] .naSansB{font-family:FiraSans,sans-serif!important;font-weight:700;letter-spacing:0!important}[data-native-ab12='35'] .naUml,[data-native-ab12='36'] .naUml,[data-native-ab12='37'] .naUml,[data-native-ab12='38'] .naUml{font-size:72%;letter-spacing:0;margin-right:-2px}[data-native-ab12='35'] .naUmlRow{font-size:19.4px!important}[data-native-ab12='35'] .naUmlWrap{position:relative}[data-native-ab12='35'] .naUmlMark{position:absolute;left:-1px;top:5px;font-size:58%;letter-spacing:0;line-height:1}[data-native-ab12='35'] .naText:not(.naHand){color:#3d3d3d}[data-native-ab12='36'] .naF188{font-size:18.8px!important}[data-native-ab12='36'] .naF182{font-size:18.2px!important}[data-native-ab12='37'] .naF180{font-size:18px!important}[data-native-ab12='35'] .naF190{font-size:19px!important}[data-native-ab12='35'] .naMod,[data-native-ab12='36'] .naMod,[data-native-ab12='37'] .naMod,[data-native-ab12='38'] .naMod{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='38'] .naBio{font-size:17.5px!important;letter-spacing:-0.55px!important}[data-native-ab12='38'] .naJ{white-space:normal;text-align:justify;text-align-last:justify}[data-native-ab12='40'] .naFooter{font-family:DroidSerif,Georgia,serif!important;font-size:16.3px!important;letter-spacing:0!important;color:#252723}[data-native-ab12='40'] .naT40{font-family:FiraSans,sans-serif!important;font-weight:600;font-size:21px!important;letter-spacing:0!important;color:#17141c}[data-native-ab12='40'] .naTitle.naGB b{min-width:32px!important;height:20px!important;line-height:20px!important;font-size:15px!important;background:#77c06c!important}[data-native-ab12='40'] .naDot{width:17px!important;height:17px!important}[data-native-ab12='40'] .naField{border-bottom:1.5px solid #ccd1d6!important}[data-native-ab12='40'] .naBank40{font-family:FiraSansCond,FiraSans,sans-serif!important;font-size:19px!important;letter-spacing:0!important;color:#3a4c7a}[data-native-ab12='40'] .naEvalH40{font-family:FiraSans,sans-serif!important;font-weight:700;font-size:18px!important;letter-spacing:0!important}[data-native-ab12='40'] .naEvalC40{font-family:DroidSerif,Georgia,serif!important;font-size:16px!important;letter-spacing:0!important;color:#505050}[data-native-ab12='40'] .naF190{font-size:19px!important}[data-native-ab12='40'] .naF196{font-size:19.6px!important}`}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-500.ttf') format('truetype');font-weight:500;font-display:swap}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}${SC('.naText')},${SC('.naBold')},${SC('.naLet')},${SC('.naDlg')},${SC('.naField')}{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12='31'] .naTitle,[data-native-ab12='32'] .naTitle,[data-native-ab12='33'] .naTitle,[data-native-ab12='34'] .naTitle,[data-native-ab12='35'] .naTitle,[data-native-ab12='36'] .naTitle,[data-native-ab12='37'] .naTitle,[data-native-ab12='38'] .naTitle,[data-native-ab12='39'] .naTitle,[data-native-ab12='40'] .naTitle,[data-native-ab12='42'] .naTitle,[data-native-ab12='43'] .naTitle,[data-native-ab12='44'] .naTitle,[data-native-ab12='45'] .naTitle,[data-native-ab12='46'] .naTitle{font-family:FiraSans,sans-serif!important;letter-spacing:0!important}${SC('.naText')},${SC('.naBold')},${SC('.naLet')},${SC('.naDlg')}{font-size:20px!important}${SC('.naTitle')}{font-size:21px!important}${SC('.naText.naS20')}{font-size:18px!important}${SC('.naSmall')}{font-size:16.5px!important}${SC('.naD19')}{font-size:17.5px!important}${SC('.naField')}{font-size:19px!important}${SC('.naUrl')}{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='41'] .naModul{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='41'] .naCanvas .naText.naHeadline{font-family:DroidSerif,Georgia,serif!important;font-size:29px!important;letter-spacing:0.3px!important;color:#6a726f!important}[data-native-ab12='41'] .naTitle.naGB b{min-width:32px!important;height:20px!important;line-height:20px!important;font-size:15px!important;background:#72c261!important;top:-3px;font-size:19px!important;line-height:20px!important}[data-native-ab12='41'] .naTitle.naGB b::before{left:-3px;top:-2px;width:calc(100% - 2px);height:3px}[data-native-ab12='41'] .naTitle.naGB b::after{left:-3px;top:-2px;width:3px;height:calc(100% + 2px)}[data-native-ab12='41'] .naTitle{font-family:FiraSans,sans-serif!important;font-size:22px!important;letter-spacing:0!important}[data-native-ab12='41'] .naText,[data-native-ab12='41'] .naBold{font-size:17px!important}[data-native-ab12='41'] .naBold{font-weight:600}[data-native-ab12='41'] .naField{font-size:17px!important}[data-native-ab12='41'] .naGray{font-size:15px!important;color:#7c7c80!important;letter-spacing:0!important}[data-native-ab12='38'] .naS14{font-size:14px!important}[data-native-ab12='39'] .naForum{font-family:FiraSans,sans-serif!important;font-size:19px!important;color:#17141c;letter-spacing:0!important}[data-native-ab12='39'] .naForumT{font-family:FiraSans,sans-serif!important;font-weight:700;font-size:20px!important;color:#2a457f;letter-spacing:0!important}[data-native-ab12='39'] .naRedD{font-family:FiraSans,sans-serif!important;font-weight:700;font-size:18px!important;color:#a9261c;letter-spacing:0!important}[data-native-ab12='39'] .naForumB{font-size:17px!important}[data-native-ab12='39'] .naF175{font-size:17.5px!important}[data-native-ab12='39'] .naBoxFade39{position:absolute;background:linear-gradient(180deg,#efe9f7 0%,#b6c9ef 55%,#ccd5fd 100%)}[data-native-ab12='39'] .naTippBar{position:absolute;background:#bf932c;color:#fff;font:bold 10px FiraSans,sans-serif;writing-mode:vertical-rl;transform:rotate(180deg);display:flex;align-items:center;justify-content:center}[data-native-ab12='39'] .naGrIt{font-family:DroidSerif,Georgia,serif!important;font-style:italic;font-size:20px!important;color:#565a57!important;letter-spacing:0!important}[data-native-ab12='39'] .naS19{font-size:19.4px!important}[data-native-ab12='39'] .naTrain39{font-family:DroidSerif,Georgia,serif!important;font-size:29px!important;letter-spacing:0!important;color:#565a57}[data-native-ab12='39'] .naTrain39b{letter-spacing:1.2px!important}[data-native-ab12='39'] .naGrIt{font-size:19px!important}[data-native-ab12='39'] .naT39{font-family:FiraSans,sans-serif!important;font-weight:500;font-size:22px!important;letter-spacing:0!important;color:#17141c}[data-native-ab12='39'] .naT39a{font-family:FiraSans,sans-serif!important;font-weight:600;font-size:20.8px!important;letter-spacing:0.3px!important;color:#17141c}[data-native-ab12='39'] .naT39b{font-family:FiraSans,sans-serif!important;font-weight:600;font-size:21px!important;letter-spacing:0!important;color:#17141c}[data-native-ab12='39'] .naField.naFieldLite{border-bottom:1px solid #e3e6e9!important}[data-native-ab12='39'] .naMS39{font-family:DroidSerif,Georgia,serif!important;font-style:italic;font-size:14px!important;color:#666!important;letter-spacing:0!important}[data-native-ab12='39'] .naErga39{font-family:FiraSans,sans-serif!important;font-weight:400;font-size:19px!important;color:#222;letter-spacing:0!important}[data-native-ab12='39'] .naRow39{font-family:DroidSerif,Georgia,serif!important;font-size:20px!important;color:#4d4b47;letter-spacing:0!important}[data-native-ab12='39'] .naT39L{font-family:FiraSans,sans-serif!important;font-weight:600;font-size:22px!important;letter-spacing:0!important;color:#17141c;position:absolute}[data-native-ab12='39'] .naT39L1{font-size:22.5px!important}[data-native-ab12='39'] .naT39b1{font-size:21.5px!important}[data-native-ab12='39'] .naTipp39{font-family:DroidSerif,Georgia,serif!important;font-size:16.1px!important;letter-spacing:0!important;color:#2b2b2b}[data-native-ab12='39'] .naTitle.naGB b{background:#77c06c!important}[data-native-ab12='35'] .naFooter,[data-native-ab12='36'] .naFooter,[data-native-ab12='37'] .naFooter,[data-native-ab12='38'] .naFooter,[data-native-ab12='39'] .naFooter{font-family:DroidSerif,Georgia,serif!important;font-size:16.3px!important;letter-spacing:0!important;color:#252723}[data-native-ab12='36'] .naS19,[data-native-ab12='37'] .naS19{font-size:19.4px!important}[data-native-ab12='31'] .naHeadline,[data-native-ab12='32'] .naHeadline,[data-native-ab12='33'] .naHeadline,[data-native-ab12='34'] .naHeadline,[data-native-ab12='35'] .naHeadline,[data-native-ab12='36'] .naHeadline,[data-native-ab12='37'] .naHeadline,[data-native-ab12='38'] .naHeadline{font-size:30px!important;letter-spacing:0!important;color:#5f6460}[data-native-ab12='35'] .naSansB,[data-native-ab12='36'] .naSansB,[data-native-ab12='37'] .naSansB,[data-native-ab12='38'] .naSansB{font-family:FiraSans,sans-serif!important;font-weight:700;letter-spacing:0!important}[data-native-ab12='35'] .naUml,[data-native-ab12='36'] .naUml,[data-native-ab12='37'] .naUml,[data-native-ab12='38'] .naUml{font-size:72%;letter-spacing:0;margin-right:-2px}[data-native-ab12='35'] .naUmlRow{font-size:19.4px!important}[data-native-ab12='35'] .naUmlWrap{position:relative}[data-native-ab12='35'] .naUmlMark{position:absolute;left:-1px;top:5px;font-size:58%;letter-spacing:0;line-height:1}[data-native-ab12='35'] .naText:not(.naHand){color:#3d3d3d}[data-native-ab12='36'] .naF188{font-size:18.8px!important}[data-native-ab12='36'] .naF182{font-size:18.2px!important}[data-native-ab12='37'] .naF180{font-size:18px!important}[data-native-ab12='35'] .naF190{font-size:19px!important}[data-native-ab12='35'] .naMod,[data-native-ab12='36'] .naMod,[data-native-ab12='37'] .naMod,[data-native-ab12='38'] .naMod{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='38'] .naBio{font-size:17.5px!important;letter-spacing:-0.55px!important}[data-native-ab12='38'] .naJ{white-space:normal;text-align:justify;text-align-last:justify}[data-native-ab12='40'] .naFooter{font-family:DroidSerif,Georgia,serif!important;font-size:16.3px!important;letter-spacing:0!important;color:#252723}[data-native-ab12='40'] .naT40{font-family:FiraSans,sans-serif!important;font-weight:600;font-size:21px!important;letter-spacing:0!important;color:#17141c}[data-native-ab12='40'] .naTitle.naGB b{min-width:32px!important;height:20px!important;line-height:20px!important;font-size:15px!important;background:#77c06c!important}[data-native-ab12='40'] .naDot{width:17px!important;height:17px!important}[data-native-ab12='40'] .naField{border-bottom:1.5px solid #ccd1d6!important}[data-native-ab12='40'] .naBank40{font-family:FiraSansCond,FiraSans,sans-serif!important;font-size:19px!important;letter-spacing:0!important;color:#3a4c7a}[data-native-ab12='40'] .naEvalH40{font-family:FiraSans,sans-serif!important;font-weight:700;font-size:18px!important;letter-spacing:0!important}[data-native-ab12='40'] .naEvalC40{font-family:DroidSerif,Georgia,serif!important;font-size:16px!important;letter-spacing:0!important;color:#505050}[data-native-ab12='40'] .naF190{font-size:19px!important}[data-native-ab12='40'] .naF196{font-size:19.6px!important}[data-native-ab12='42'] .naText,[data-native-ab12='42'] .naBold{font-size:19.5px!important}[data-native-ab12='42'] .naBold{font-weight:600}[data-native-ab12='42'] .naField{font-size:19.5px!important;border-bottom:1px solid #b0b2ae!important}[data-native-ab12='42'] .naTitle{font-family:FiraSans,sans-serif!important;font-size:21px!important;font-weight:700;letter-spacing:0!important;color:#33342e}[data-native-ab12='42'] .naTitle.naGB b{min-width:31px!important;height:20px!important;line-height:20px!important;font-size:19px!important;background:#48a495!important;top:-3px}[data-native-ab12='42'] .naTitle.naGB b::before{left:-3px;top:-3px;width:100%;height:3px}[data-native-ab12='42'] .naTitle.naGB b::after{left:-3px;top:-3px;width:3px;height:calc(100% + 3px)}[data-native-ab12='42'] .naKB{color:#5da9dd;font-size:11px}[data-native-ab12='42'] .naSide42{color:#7a82b2;font-size:11px;letter-spacing:1px}[data-native-ab12='42'] .naBank42{font-family:FiraSansCond,FiraSans,sans-serif!important;font-size:19px!important;letter-spacing:0!important;color:#3a4c7a!important}[data-native-ab12='42'] .naDot{width:17px!important;height:17px!important;border-color:#cfcdb9!important}[data-native-ab12='42'] .naEvalC42{font-family:DroidSerif,Georgia,serif!important;font-size:16px!important;letter-spacing:0!important;color:#505050}[data-native-ab12='42'] .naFooter{font-family:DroidSerif,Georgia,serif!important;font-size:16.3px!important;letter-spacing:0!important;color:#2c2e2d}[data-native-ab12='42'] .naB42a{font-size:18.2px!important}[data-native-ab12='42'] .naB42b{font-size:19px!important}[data-native-ab12='42'] .naEx4{font-family:FiraSans,sans-serif!important;font-weight:400;letter-spacing:0!important;font-size:18.3px!important;color:#33342e}[data-native-ab12='42'] .naEx4m{font-family:FiraSans,sans-serif!important;font-weight:500;letter-spacing:0!important;font-size:18px!important;color:#33342e}[data-native-ab12='42'] .naS184{font-size:18.4px!important}[data-native-ab12='42'] .naS187{font-size:18.7px!important}[data-native-ab12='42'] .naEx4b{font-family:FiraSans,sans-serif!important;font-weight:700;letter-spacing:0!important;font-size:18.3px!important;color:#3a57a8}[data-native-ab12='42'] .naSq42{position:absolute;width:10px;height:10px;background:#213d8d}[data-native-ab12='42'] .naTri42{position:absolute;width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:9px solid #4cb686}`}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='31'&&<>
   {art('0',982,42,85,78)}
   {lin(354,107,605,6,'#a6ca03')}
@@ -1333,99 +1333,103 @@ export function NativeAB12P31to46({page}:{page:string}){
  </>}
  {page==='42'&&<>
   {art('0',15,38,927,79)}
-  {art('1',730,176,230,156)}
-  {rect(550,213,17,32,'#bcb19d')}
   {lin(745,117,125,2,'#9ccccd')}
-  {lin(547,406,154,2,'#b7b7bc')}
-  {lin(495,431,156,2,'#adacbb')}
-  {lin(366,457,142,2,'#c3c5c6')}
-  {lin(191,483,154,2,'#b8babb')}
-  {lin(530,483,156,2,'#b1adbd')}
-  {lin(467,535,154,2,'#acabb7')}
-  {lin(823,640,141,2,'#bfbec2')}
-  {lin(738,717,99,2,'#c0c3c3')}
-  {lin(738,743,151,2,'#c4c4c6')}
-  {lin(738,795,225,2,'#b8babc')}
-  {lin(738,821,225,2,'#c0bfc2')}
-  {lin(763,847,200,2,'#b9b8bc')}
-  {lin(410,975,218,2,'#bab7c4')}
-  {lin(639,975,219,2,'#bcbcbd')}
-  {lin(450,1001,492,3,'#babdbf')}
-  {lin(721,1027,248,2,'#babac1')}
-  {lin(244,1246,557,3,'#b8b8be')}
-  {lin(306,1272,409,2,'#b9bcbd')}
-  {lin(299,1298,442,3,'#aaaab2')}
-  {text(123,168,519,'1 Lesen Sie das Telefongespräch und ergänzen Sie.','naNw')}
-  {text(172,211,486,'Arme | bleibe | Fieber | hoch | huste | schmerzen | krank | weh','naNw')}
-  {text(192,252,493,'Hallo Lea, ich kann heute leider nicht zum Schwimmen','naNw')}
-  {text(191,278,245,'kommen. Ich muss absagen.','naNw')}
-  {text(191,304,123,'Warum denn?','naNw')}
-  {text(192,330,60,'Ich bin','naNw')}
-  {text(191,356,197,'Oh, was hast du denn?','naNw')}
-  {text(192,381,121,'Ich habe Kopf','naNw')}
-  {text(474,381,66,'und ich','naNw')}
-  {text(191,407,298,'Oh, das tut mir leid. Hast du auch','naNw')}
-  {text(652,407,6,'?','naNw')}
-  {text(190,433,170,'Ja, es ist nicht sehr','naNw')}
-  {text(509,433,349,'. Aber gut geht es mir nicht. Und meine','naNw')}
-  {text(351,459,173,'und Beine tun auch','naNw')}
-  {text(191,485,219,'Ach Mensch! Wie schade!','naNw')}
-  {text(190,511,238,'Ja, das finde ich auch. Also','naNw')}
-  {text(627,511,125,'lieber im Bett.','naNw')}
-  {text(122,569,300,'2 Was ist das? Notieren Sie.','naNw')}
-  {text(167,614,399,'a Dort können Sie Medikamente bekommen.','naNw')}
-  {text(166,640,484,'b Haben Sie Kopfschmerzen? Dann können sie helfen.','naNw')}
-  {text(191,666,241,'Sie sind oft klein und weiß.','naNw')}
-  {text(167,692,550,'c Sie bekommen es beim Arzt und gehen damit zur Apotheke.','naNw')}
-  {text(167,718,219,'d Hier arbeitet der Arzt.','naNw')}
-  {text(167,744,551,'e Haben Sie Schmerzen in den Beinen? Dann kann sie helfen.','naNw')}
-  {text(190,769,309,'Sie sollen sie auf keinen Fall essen.','naNw')}
-  {text(167,795,275,'f Ein anderes Wort für „Arzt“.','naNw')}
-  {text(165,821,421,'g So heißen Tabletten, Salben und vieles mehr.','naNw')}
-  {text(165,884,461,'Was sagt der Arzt? Schreiben Sie im Imperativ.','naNw')}
-  {text(166,924,209,'a Soll ich viel trinken?','naNw')}
-  {text(165,950,239,'b Soll ich im Bett bleiben?','naNw')}
-  {text(166,976,277,'c Soll ich diese Salbe nehmen?','naNw')}
-  {text(166,1002,479,'d Soll ich die Medikamente in der Apotheke abholen?','naNw')}
-  {text(164,1066,372,'Aussagen, Fragen und Imperativsätze','naBold naNw')}
-  {text(167,1105,210,'Ordnen Sie die Sätze zu.','naNw')}
-  {text(173,1142,611,'Holst du das Rezept in der Praxis ab? | Ich hole das Rezept in der Praxis ab. |','naNw')}
-  {text(173,1170,346,'Holen Sie das Rezept bitte in der Praxis ab!','naNw')}
-  {text(821,1202,159,'Position Position 2','naEvalC40 naNw')}
-  {text(165,1224,72,'Aussage:','naNw')}
-  {text(164,1249,135,'Ja-/Nein-Frage:','naBold naNw')}
-  {text(166,1275,126,'Imperativsatz:','naBold naNw')}
-  {text(135,1325,687,'b Markieren Sie die Verben in a. Kreuzen Sie dann an: Wo stehen die Verben?','naNw')}
-  {text(100,1398,175,'42 | zweiundvierzig','naFooter')}
-  {field('p42-1-1',313,380,155,'1 Lücke 1')}
-  {field('p42-1-2',545,380,159,'1 Lücke 2')}
-  {field('p42-1-3',495,406,151,'1 Lücke 3')}
-  {field('p42-1-4',366,432,139,'1 Lücke 4')}
-  {field('p42-1-5',191,457,154,'1 Lücke 5')}
-  {field('p42-1-6',530,457,155,'1 Lücke 6')}
-  {field('p42-1-7',466,509,154,'1 Lücke 7')}
-  {field('p42-2a',745,618,215,'2 a')}
-  {field('p42-2c',745,697,215,'2 c')}
-  {field('p42-2d',745,725,215,'2 d')}
-  {field('p42-2e',745,775,215,'2 e')}
-  {field('p42-2f',745,802,215,'2 f')}
-  {field('p42-2g',745,827,215,'2 g')}
-  {field('p42-3b',413,953,553,'3 b')}
-  {field('p42-3c',452,979,514,'3 c')}
-  {field('p42-3d',654,1007,312,'3 d')}
-  {field('p42-4a-Aussage',248,1222,552,'4a Aussage')}
-  {field('p42-4a-Frage',310,1251,490,'4a Frage')}
-  {field('p42-4a-Imperativ',306,1280,494,'4a Imperativ')}
-  {dot('4b-Aussage','Position 1',841,1231,'4b Aussage Position 1')}
-  {dot('4b-Aussage','Position 2',933,1231,'4b Aussage Position 2')}
-  {dot('4b-Frage','Position 1',841,1259,'4b Frage Position 1')}
-  {dot('4b-Frage','Position 2',933,1259,'4b Frage Position 2')}
-  {dot('4b-Imperativ','Position 1',841,1288,'4b Imperativ Position 1')}
-  {dot('4b-Imperativ','Position 2',933,1288,'4b Imperativ Position 2')}
-  {check('42-1',191,550,{'p42-1-1':'schmerzen','p42-1-2':'huste','p42-1-3':'Fieber','p42-1-4':'hoch','p42-1-5':'Arme','p42-1-6':'weh','p42-1-7':'bleibe'})}
-  {check('42-2',745,868,{'p42-2a':'Apotheke','p42-2c':'Rezept','p42-2d':'Praxis','p42-2e':'Salbe','p42-2f':'Doktor','p42-2g':'Medikamente'})}
-  {check('42-3',413,1048,{'p42-3b':'Ja, bleiben Sie im Bett.|Bleiben Sie im Bett.','p42-3c':'Ja, nehmen Sie diese Salbe.|Nehmen Sie diese Salbe.','p42-3d':'Ja, holen Sie die Medikamente in der Apotheke ab.|Holen Sie die Medikamente in der Apotheke ab.'})}
-  {check('42-4',248,1322,{'p42-4a-Aussage':'Ich hole das Rezept in der Praxis ab.','p42-4a-Frage':'Holst du das Rezept in der Praxis ab?','p42-4a-Imperativ':'Holen Sie das Rezept bitte in der Praxis ab!','4b-Aussage':'Position 2','4b-Frage':'Position 1','4b-Imperativ':'Position 1'})}
+  {kb(85,184,'KB 2')}
+  {title('1',125,178,760,'Lesen Sie das Telefongespräch und ergänzen Sie.','naGB')}
+  <div className="naSide naSide42" style={{left:97,top:222}}>WÖRTER</div>
+  {rect(169,216,494,24,'#fcf6dc')}
+  {text(172,215,40,'Arme','naBank42 naNw')}{text(220,215,4,'|','naBank42 naNw')}{text(230,215,45,'bleibe','naBank42 naNw')}{text(283,215,4,'|','naBank42 naNw')}{text(293,215,46,'Fieber','naBank42 naNw')}{text(346,215,4,'|','naBank42 naNw')}{text(356,215,36,'hoch','naBank42 naNw')}{text(400,215,4,'|','naBank42 naNw')}{text(410,215,42,'huste','naBank42 naNw')}{text(458,215,4,'|','naBank42 naNw')}{text(468,215,82,'schmerzen','naBank42 naNw')}{text(558,215,4,'|','naBank42 naNw')}{text(566,215,52,'krank','naBank42 naNw naStrike')}{text(617,215,4,'|','naBank42 naNw')}{text(626,215,32,'weh','naBank42 naNw')}
+  {art('1',730,176,230,156)}
+  <div className="naSq42" style={{left:168,top:264}}/><div className="naTri42" style={{left:169,top:317}}/><div className="naSq42" style={{left:168,top:342}}/><div className="naTri42" style={{left:169,top:368}}/><div className="naSq42" style={{left:168,top:394}}/><div className="naTri42" style={{left:169,top:420}}/><div className="naSq42" style={{left:168,top:445}}/><div className="naTri42" style={{left:169,top:498}}/><div className="naSq42" style={{left:168,top:523}}/>
+  {text(192,254,493,'Hallo Lea, ich kann heute leider nicht zum Schwimmen','naNw')}
+  {text(191,280,245,'kommen. Ich muss absagen.','naNw')}
+  {text(191,306,123,'Warum denn?','naNw')}
+  {text(192,332,60,'Ich bin','naNw')}
+  {text(191,358,197,'Oh, was hast du denn?','naNw')}
+  {text(192,383,121,'Ich habe Kopf','naNw')}
+  {text(474,383,66,'und ich','naNw')}
+  {text(191,409,298,'Oh, das tut mir leid. Hast du auch','naNw')}
+  {text(652,409,6,'?','naNw')}
+  {text(190,435,170,'Ja, es ist nicht sehr','naNw')}
+  {text(509,435,349,'. Aber gut geht es mir nicht. Und meine','naNw')}
+  {text(351,461,173,'und Beine tun auch','naNw')}
+  {text(191,487,219,'Ach Mensch! Wie schade!','naNw')}
+  {text(190,513,265,'Ja, das finde ich auch. Also ich','naNw')}
+  {text(627,513,125,'lieber im Bett.','naNw')}
+  {art('h1',260,339,47,16)}
+  {title('2',125,579,760,'Was ist das? Notieren Sie.','naGB')}
+  <div className="naSide naSide42" style={{left:97,top:630}}>WÖRTER</div>
+  {text(166,618,10,'a','naNw')}{text(191,618,380,'Dort können Sie Medikamente bekommen.','naNw')}
+  {text(166,644,10,'b','naNw')}{text(191,644,465,'Haben Sie Kopfschmerzen? Dann können sie helfen.','naNw')}
+  {text(191,670,241,'Sie sind oft klein und weiß.','naNw')}
+  {text(166,697,10,'c','naNw')}{text(191,697,530,'Sie bekommen es beim Arzt und gehen damit zur Apotheke.','naNw')}
+  {text(166,722,10,'d','naNw')}{text(191,722,200,'Hier arbeitet der Arzt.','naNw')}
+  {text(166,750,10,'e','naNw')}{text(191,750,530,'Haben Sie Schmerzen in den Beinen? Dann kann sie helfen.','naNw')}
+  {text(191,774,309,'Sie sollen sie auf keinen Fall essen.','naNw')}
+  {text(166,799,10,'f','naNw')}{text(191,799,255,'Ein anderes Wort für „Arzt“.','naNw')}
+  {text(166,825,10,'g','naNw')}{text(191,825,400,'So heißen Tabletten, Salben und vieles mehr.','naNw')}
+  {lin(738,691,225,1,'#b0b2ae')}
+  {art('h2',738,675,69,16)}
+  {kb(85,896,'KB 3')}
+  {title('3',124,890,760,'Was sagt der Arzt? Schreiben Sie im Imperativ.','naGB')}
+  <div className="naSide naSide42" style={{left:96,top:933}}>STRUKTUREN</div>
+  {text(166,928,10,'a','naNw')}{text(190,928,190,'Soll ich viel trinken?','naNw')}
+  {art('h3',381,933,151,19)}
+  {text(166,954,10,'b','naNw')}{text(190,954,220,'Soll ich im Bett bleiben?','naNw')}
+  {text(166,980,10,'c','naNw')}{text(190,980,260,'Soll ich diese Salbe nehmen?','naNw')}
+  {text(166,1006,10,'d','naNw')}{text(190,1006,460,'Soll ich die Medikamente in der Apotheke abholen?','naNw')}
+  {kb(85,1078,'KB 3')}
+  {title('4',124,1071,760,'Aussagen, Fragen und Imperativsätze','naGB')}
+  <div className="naSide naSide42" style={{left:78,top:1118}}>STRUKTUREN</div>
+  <div className="naSide naSide42" style={{left:98,top:1111}}>ENTDECKEN</div>
+  {text(135,1109,14,'a','naEx4b naNw')}
+  {text(167,1109,210,'Ordnen Sie die Sätze zu.','naEx4 naNw')}
+  {rect(170,1151,614,21,'#fffbdd')}
+  {rect(170,1172,353,23,'#fffbdd')}
+  {text(173,1146,611,'Holst du das Rezept in der Praxis ab? | Ich hole das Rezept in der Praxis ab. |','naBank42 naNw')}
+  {text(173,1174,346,'Holen Sie das Rezept bitte in der Praxis ab!','naBank42 naNw')}
+  {text(821,1205,57,'Position 1','naEvalC42 naNw')}
+  {text(911,1205,69,'Position 2','naEvalC42 naNw')}
+  {text(165,1228,72,'Aussage:','naNw')}
+  {text(164,1253,135,'Ja-/Nein-Frage:','naNw')}
+  {text(166,1279,126,'Imperativsatz:','naNw')}
+  {text(135,1329,12,'b','naEx4b naNw')}
+  {text(166,1329,240,'Markieren Sie die Verben in','naEx4m naNw naS184')}
+  {text(412,1329,20,'a.','naEx4b naNw')}
+  {text(435,1329,390,'Kreuzen Sie dann an: Wo stehen die Verben?','naEx4m naNw naS187')}
+  {art('modtab',0,1389,90,32)}
+  {text(101,1398,22,'42','naFooter naNw')}
+  {text(132,1398,10,'|','naFooter naNw')}
+  {text(153,1399,125,'zweiundvierzig','naFooter naNw')}
+  {field('p42-1-1',313,380,154,'1 Lücke 1')}
+  {field('p42-1-2',547,380,154,'1 Lücke 2')}
+  {field('p42-1-3',495,405,156,'1 Lücke 3')}
+  {field('p42-1-4',366,431,142,'1 Lücke 4')}
+  {field('p42-1-5',185,457,159,'1 Lücke 5')}
+  {field('p42-1-6',530,457,156,'1 Lücke 6')}
+  {field('p42-1-7',467,509,154,'1 Lücke 7')}
+  {field('p42-2a',738,614,225,'2 a')}
+  {field('p42-2c',738,691,225,'2 c')}
+  {field('p42-2d',738,717,225,'2 d')}
+  {field('p42-2e',738,769,225,'2 e')}
+  {field('p42-2f',738,795,225,'2 f')}
+  {field('p42-2g',738,821,225,'2 g')}
+  {field('p42-3b',413,949,555,'3 b')}
+  {field('p42-3c',452,975,517,'3 c')}
+  {field('p42-3d',651,1001,318,'3 d')}
+  {field('p42-4a-Aussage',244,1220,557,'4a Aussage')}
+  {field('p42-4a-Frage',306,1246,499,'4a Frage')}
+  {field('p42-4a-Imperativ',299,1272,503,'4a Imperativ')}
+  {dot('4b-Aussage','Position 1',846,1231,'4b Aussage Position 1')}
+  {dot('4b-Aussage','Position 2',937,1231,'4b Aussage Position 2')}
+  {dot('4b-Frage','Position 1',846,1257,'4b Frage Position 1')}
+  {dot('4b-Frage','Position 2',937,1257,'4b Frage Position 2')}
+  {dot('4b-Imperativ','Position 1',846,1283,'4b Imperativ Position 1')}
+  {dot('4b-Imperativ','Position 2',937,1283,'4b Imperativ Position 2')}
+  {check('42-1',960,544,{'p42-1-1':'schmerzen','p42-1-2':'huste','p42-1-3':'Fieber','p42-1-4':'hoch','p42-1-5':'Arme','p42-1-6':'weh','p42-1-7':'bleibe'})}
+  {check('42-2',972,860,{'p42-2a':'Apotheke','p42-2c':'Rezept','p42-2d':'Praxis','p42-2e':'Salbe','p42-2f':'Doktor','p42-2g':'Medikamente'})}
+  {check('42-3',975,1040,{'p42-3b':'Ja, bleiben Sie im Bett.|Bleiben Sie im Bett.','p42-3c':'Ja, nehmen Sie diese Salbe.|Nehmen Sie diese Salbe.','p42-3d':'Ja, holen Sie die Medikamente in der Apotheke ab.|Holen Sie die Medikamente in der Apotheke ab.'})}
+  {check('42-4',880,1316,{'p42-4a-Aussage':'Ich hole das Rezept in der Praxis ab.','p42-4a-Frage':'Holst du das Rezept in der Praxis ab?','p42-4a-Imperativ':'Holen Sie das Rezept bitte in der Praxis ab!','4b-Aussage':'Position 2','4b-Frage':'Position 1','4b-Imperativ':'Position 1'})}
  </>}
  {page==='43'&&<>
   {art('0',790,35,278,251)}
