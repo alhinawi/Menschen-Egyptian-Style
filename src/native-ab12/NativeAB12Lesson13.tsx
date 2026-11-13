@@ -23,6 +23,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
  const field=(id:string,x:number,y:number,w:number,label:string,cls='')=><input className={'naField '+cls} aria-label={label} data-native-field={id} style={{left:x,top:y,width:w}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
  const fseg=(id:string,x:number,y:number,w:number,n:number,label:string)=>{const g=5,s=(w-(n-1)*g)/n;return <input className="naField naFld9 naFldSeg" aria-label={label} data-native-field={id} style={{left:x,top:y,width:w,['--seg' as string]:s+'px'} as React.CSSProperties} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>};
  const rule=(x:number,y:number,w:number)=><div className="naRule" style={{left:x,top:y,width:w}}/>;
+ const rl=(x:number,y:number,w:number)=><div className="naRule11" style={{left:x,top:y,width:w}}/>;
  const dot=(id:string,value:string,x:number,y:number,label:string,checkbox=false)=><input className="naDot" type={checkbox?'checkbox':'radio'} aria-label={label} name={key+'-'+id} checked={checkbox?values[id]==='true':values[id]===value} onChange={e=>set(id,checkbox?String(e.target.checked):value)} style={{left:x,top:y}}/>;
  const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,t:string,cls='')=><div className={'naTitle '+cls} style={{left:x,top:y,width:w}}><b>{n}</b><Words text={t}/></div>;
@@ -322,6 +323,99 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(467,1382,230,'www.hueber.de/menschen/lernen','naWWW naNw')}
   <div className="naModul10" style={{left:0,top:1388,width:56,height:26}}>Modul 5</div>
   <div className="naText naFooter naNw" style={{left:62,top:1393,width:160}}>10{'  |  '}<span className="naFz">zehn</span></div>
+ </>}
+ {page==='11'&&<>
+  {text(117,84,300,'LERNWORTSCHATZ','naHeadline naNw')}
+  <div className="naRuleY9" style={{left:406,top:114,width:479}}/>
+  <div className="naL13" style={{left:982,top:42,width:86,height:57}}>13</div>
+  {badge9('1',114,166)}
+  {text(155,162,560,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naInstr11 naNw')}
+  {text(158,201,140,'In der Stadt','naVocH11 naNw')}
+  {text(157,233,120,'Ampel die, -n','naVoc naNw')}
+  {text(168,261,225,'CH: auch: Lichtsignal das, -e','naVocG naNw')}
+  {text(158,285,120,'Bank die, -en','naVoc naNw')}
+  {text(158,311,125,'Brücke die, -n','naVoc naNw')}
+  {text(158,336,115,'Dom der, -e','naVoc naNw')}
+  {text(158,362,115,'Hotel das, -s','naVoc naNw')}
+  {text(157,388,115,'Mitte die, -n','naVoc naNw')}
+  {text(168,413,130,'die Stadtmitte','naVoc naNw')}
+  {text(158,439,80,'Plan der,','naVoc naNw')}{art('umlmark',239,444,17,12)}
+  {text(168,465,125,'der Stadtplan','naVoc naNw')}
+  {text(157,491,100,'Polizei die','naVoc naNw')}
+  {text(158,517,75,'Post die','naVoc naNw')}
+  {text(157,542,120,'Zentrum das,','naVoc naNw')}
+  {text(168,570,75,'Zentren','naVoc naNw')}
+  {text(155,614,180,'Wegbeschreibung','naVocH11 naNw')}
+  {text(157,645,140,'Kilometer der, -','naVoc naNw')}
+  {text(157,671,110,'Meter der, -','naVoc naNw')}
+  {text(157,697,85,'Nähe die','naVoc naNw')}
+  {text(168,723,110,'in der Nähe','naVoc naNw')}
+  {text(157,749,100,'Weg der, -e','naVoc naNw')}
+  {text(157,787,120,'ab·biegen, ist','naVoc naNw')}
+  {text(168,813,95,'abgebogen','naVoc naNw')}
+  {text(155,839,150,'beschreiben, hat','naVoc naNw')}
+  {text(167,865,110,'beschrieben','naVoc naNw')}
+  {text(156,890,160,'weiter·fahren, ist','naVoc naNw')}
+  {text(161,914,145,'weitergefahren','naVoc naNw')}
+  {text(156,942,115,'wenden, hat','naVoc naNw')}
+  {text(167,966,90,'gewendet','naVoc naNw')}
+  {text(157,993,150,'zurück·fahren, ist','naVoc naNw')}
+  {text(168,1019,145,'zurückgefahren','naVoc naNw')}
+  {text(157,1057,55,'fremd','naVoc naNw')}
+  {text(156,1083,45,'links','naVoc naNw')}
+  {text(168,1109,95,'nach links','naVoc naNw')}
+  {text(157,1133,55,'rechts','naVoc naNw')}
+  {text(168,1161,105,'nach rechts','naVoc naNw')}
+  {text(542,202,300,'Sich entschuldigen und danken','naVocH11 naNw')}
+  {text(542,233,60,'Ach so.','naVoc naNw')}
+  {text(542,260,110,'Dankeschön!','naVoc naNw')}
+  {text(542,285,100,'Bitte, gern.','naVoc naNw')}
+  {text(552,313,270,'A/CH: Bitte, gern geschehen.','naVocG naNw')}
+  {text(542,336,80,'Ja, bitte?','naVoc naNw')}
+  {text(542,362,125,'Kein Problem.','naVoc naNw')}
+  {text(542,388,70,'Schade.','naVoc naNw')}
+  {text(542,419,40,'nett','naVoc naNw')}
+  {text(553,439,90,'Sehr nett!','naVoc naNw')}
+  {text(542,488,40,'Wo?','naVocH11 naVocHQ naNw')}
+  {text(542,513,25,'an','naVoc naNw')}
+  {text(542,539,30,'auf','naVoc naNw')}
+  {text(542,565,60,'hinter','naVoc naNw')}
+  {text(542,590,20,'in','naVoc naNw')}
+  {text(542,616,60,'neben','naVoc naNw')}
+  {text(542,642,45,'über','naVoc naNw')}
+  {text(542,668,50,'unter','naVoc naNw')}
+  {text(542,693,30,'vor','naVoc naNw')}
+  {text(542,719,85,'zwischen','naVoc naNw')}
+  {text(541,770,240,'Weitere wichtige Wörter','naVocH11 naNw')}
+  {text(542,801,110,'Frage die, -n','naVoc naNw')}
+  {text(542,827,135,'Moment der, -e','naVoc naNw')}
+  {text(553,848,130,'Einen Moment!','naVoc naNw')}
+  {text(542,890,140,'an·machen, hat','naVoc naNw')}
+  {text(553,914,100,'angemacht','naVoc naNw')}
+  {text(552,944,270,'A: ein·schalten, hat eingeschaltet','naVocG naNw')}
+  {text(542,968,190,'finden, hat gefunden','naVoc naNw')}
+  {text(542,993,175,'fragen, hat gefragt','naVoc naNw')}
+  {text(542,1019,235,'helfen, du hilfst, er hilft,','naVoc naNw')}
+  {text(545,1043,120,'hat geholfen','naVoc naNw')}
+  {text(542,1071,120,'stimmen, hat','naVoc naNw')}
+  {text(553,1098,90,'gestimmt','naVoc naNw')}
+  {text(542,1133,50,'beide','naVoc naNw')}
+  {text(553,1161,95,'die beiden','naVoc naNw')}
+  {rl(327,251,190)}{rl(327,303,190)}{rl(327,328,190)}{rl(327,354,190)}{rl(327,380,190)}{rl(327,406,190)}{rl(327,431,190)}{rl(327,457,190)}{rl(327,483,190)}{rl(327,509,190)}{rl(327,535,190)}{rl(327,586,190)}{rl(327,663,190)}{rl(327,689,190)}{rl(327,715,190)}{rl(327,741,190)}{rl(327,766,190)}{rl(327,830,190)}{rl(327,882,190)}{rl(327,933,190)}{rl(327,985,190)}{rl(327,1036,190)}{rl(327,1075,190)}{rl(327,1101,190)}{rl(327,1127,190)}{rl(327,1153,190)}{rl(327,1178,190)}
+  {rl(686,251,196)}{rl(686,278,196)}{rl(686,304,196)}{rl(686,354,196)}{rl(686,380,196)}{rl(686,406,196)}{rl(686,432,196)}{rl(686,458,196)}{rl(686,535,196)}{rl(686,561,196)}{rl(686,587,196)}{rl(686,612,196)}{rl(686,638,196)}{rl(686,663,196)}{rl(686,689,196)}{rl(686,715,196)}{rl(686,741,196)}{rl(686,818,196)}{rl(686,844,196)}{rl(686,870,196)}{rl(686,933,196)}{rl(739,985,143)}{rl(739,1010,142)}{rl(686,1063,196)}{rl(686,1114,196)}{rl(686,1153,196)}{rl(686,1178,196)}
+  {rl(928,267,124)}{rl(928,396,124)}{rl(928,519,124)}{rl(928,662,124)}{rl(928,795,124)}{rl(928,922,124)}{rl(928,1069,124)}{rl(928,1211,124)}
+  {art('art1',958,160,74,81)}{art('art2',961,304,79,64)}{art('art3',943,434,112,59)}
+  {art('art4',964,557,66,78)}{art('art5',959,694,67,82)}{art('art6',929,832,129,66)}
+  {art('art7',959,957,79,85)}{art('art8',951,1105,94,98)}{art('art9',954,1244,71,59)}
+  <div className="naTipBar" style={{left:263,top:1213,width:331,height:4}}/>
+  <div className="naTipTab" style={{left:263,top:1213,width:17,height:60}}><span>TIPP</span></div>
+  <div className="naText naTipT naNw" style={{left:296,top:1226,width:290,fontWeight:700}}><Words text="Wie kann ich mir ein Wort merken?"/></div>
+  {text(297,1253,240,'Überlegen Sie sich eine Hilfe.','naTipT naNw')}
+  {art('handtext',618,1213,162,77)}{art('hand',742,1215,78,133)}
+  {badge9('2',112,1323)}
+  {text(155,1320,545,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naInstr11 naNw')}
+  <div className="naModul9b" style={{left:1003,top:1393,width:68,height:19}}>Modul 5</div>
+  <div className="naText naFooter naNw" style={{left:921,top:1388,width:80,whiteSpace:'pre'}}>elf{'  |  '}11</div>
  </>}
  </div><audio ref={player} className="naPlayer"/></div>;
 }
