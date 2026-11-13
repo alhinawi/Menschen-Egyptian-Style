@@ -94,6 +94,8 @@ export function modulePages(slug: string): string[] {
   const pages = mod.lessons.flatMap(l => l.pages).concat(mod.extras).map(String);
   if (slug === 'index') return ['cover', 'howto', ...pages];
   if (slug === 'ab1') return ['abcover', ...pages];
+  if (slug === 'kb-a12-l13-16') return ['cover', ...pages];
+  if (slug === 'ab-a12-l13-16') return ['abcover', ...pages];
   return pages;
 }
 
@@ -114,4 +116,9 @@ export function findModuleForPage(book: 'kb' | 'ab', level: 'A1.1' | 'A1.2', pag
 /** The lesson inside a module that contains a printed page (null for cover/extras). */
 export function lessonForPage(mod: ModuleInfo, page: number): LessonInfo | null {
   return mod.lessons.find(l => l.pages.includes(page)) ?? null;
+}
+
+/** Cover destination follows the selected level, never the other volume. */
+export function levelCover(book: 'kb' | 'ab', level: 'A1.1' | 'A1.2') {
+  return {slug: level === 'A1.2' ? `${book}-a12-l13-16` : book === 'kb' ? 'index' : 'ab1', token: book === 'kb' ? 'cover' : 'abcover'};
 }

@@ -20,3 +20,9 @@
 .naCanvas .naPick:focus-visible{outline:3px solid #26764c;outline-offset:1px}
 .naCanvas .naCheck.naCheckSm button{font-size:14px!important;padding:2px 8px!important;min-height:0!important}
 .naCanvas .naText.naF21{font-size:21px}
+.naCanvas .naTFrame{position:absolute;border:1px solid #e3dec9;box-sizing:border-box}
+.naCanvas .naTCol{position:absolute;width:0;border-left:1px solid #e3dec9}
+
+.naCanvas .naText.naTableEnglish{font-size:18px;line-height:29.5px}
+.naCanvas .naDotPrint{position:absolute;width:22px;height:22px;box-sizing:border-box;border:2px solid #c7bd8a;border-radius:50%;background:transparent;z-index:2}
+.naCanvas .naTitle.naT21{font-size:21px}

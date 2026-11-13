@@ -1,3 +1,4 @@
+import {CheckButton} from '../components/CheckButton';
 import {PageImage} from '../components/PageImage';
 import {usePageReset} from '../exercises/usePageReset';
 import {useLayoutEffect,useRef,useState} from 'react';
@@ -22,8 +23,8 @@ export function NativeAB11Module1({page}:{page:string}){
  const head=(s:string)=><>{txt(132,135,740,s,'mHeader')}<div className="mRule"/></>;
  const data=scanData['ab-a11:'+page];
  const answers=(group:string)=>Object.fromEntries(data.fields.filter(f=>f.group===group&&f.kind!=='radio'&&f.kind!=='checkbox'&&f.answer!==undefined).map(f=>[f.id,f.answer!]));
- const check=(id:string,x:number,y:number,expected=answers(id))=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><button onClick={()=>G({...graded,[id]:Object.entries(expected).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}>Prüfen ✓</button><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
- const rule=(id:string,x:number,y:number,test:()=>boolean)=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><button onClick={()=>G({...graded,[id]:test()})}>Prüfen ✓</button><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const check=(id:string,x:number,y:number,expected=answers(id))=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:Object.entries(expected).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const rule=(id:string,x:number,y:number,test:()=>boolean)=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:test()})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const listen=(n:string,x:number,y:number)=><button className="mListen" aria-label={'Originalaudio 1 '+n} style={{left:x,top:Y(y)}} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+n+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
  const arrow=(id:string,x:number,y:number)=><button className="mArrow" data-native-field={id} aria-label={'Satzmelodie '+id} style={{left:x,top:Y(y)}} onClick={()=>set(id,v[id]==='↗'?'↘':'↗')}>{v[id]||' '}</button>;
  const radio=(id:string,val:string,x:number,y:number,label:string)=><input className="mRadio" type="radio" name={'native-ab11-'+page+'-'+id} aria-label={label} style={{left:x,top:Y(y)}} checked={v[id]===val} onChange={()=>set(id,val)}/>;
@@ -97,7 +98,7 @@ export function NativeAB11Module1({page}:{page:string}){
  {title('3',666,'Beantworten Sie die Fragen aus Aufgabe 2.')}{txt(163,700,666,'a  Ja, Thea ist meine Tochter.','mExample')}
  {txt(163,730,16,'b')}{f('u3-b',185,728,287)}{txt(477,730,330,'Französisch, Englisch und Deutsch.')}
  {txt(163,758,68,'c  Ja, das')}{f('u3-c',236,756,317)}{txt(163,786,78,'d  Nein, ich')}{f('u3-d',246,784,307)}
- {txt(163,814,16,'e')}{f('u3-e',185,812,270)}{txt(461,814,170,'in Stuttgart.')}{check('u3',168,849)}
+ {txt(163,814,16,'e')}{f('u3-e',185,812,270)}{txt(461,814,170,'in Stuttgart.')}{check('u3',168,835)}
  {title('4',877,'Ergänzen Sie mein-/dein-.')}{txt(174,915,650,'Hallo Eduardo,','mExample')}{txt(174,943,405,"wie geht's? Ich bin jetzt in Deutschland, in Bremen. Hier wohnt",'mSmall mExample')}{f('u4-bruder',590,941,100)}{txt(697,943,80,'Bruder.','mSmall')}
  {txt(174,972,202,'Ich mache hier ein Praktikum.','mSmall mExample')}{f('u4-kollegen',384,970,110)}{txt(502,972,250,'Kollegen sind super. Wie geht es Dir?','mSmall mExample')}
  {txt(174,1001,83,'Was machen','mSmall mExample')}{f('u4-frau',262,999,105)}{txt(375,1001,60,'Frau und','mSmall')}{f('u4-sohn',442,999,86)}{txt(534,1001,50,'Sohn?','mSmall')}{txt(174,1028,250,'Tschüs, Anna','mExample')}{check('u4',168,1058)}
