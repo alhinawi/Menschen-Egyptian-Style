@@ -1,0 +1,21 @@
+const {chromium}=require('playwright'),assert=require('node:assert/strict'),{spawn}=require('node:child_process');
+const server=spawn(process.execPath,['node_modules/vite/bin/vite.js','--host','127.0.0.1','--port','5195'],{stdio:'inherit'});
+const P={'6':{h:1465,fields:{'6-b2':'auf','6-b3':'in','6-b4':'unter','6-b5':'zwischen','6-b7':'über','6-b9':'vor','6-r1':'Restaurant','6-r2':'Zentrum','6-r3':'Bahnhof','6-r4':'Bank','6-r5':'Post','6-r6':'Ampel','6-d2':'Zentrum','6-d3':'Bahnhof','6-d4':'Bank','6-d5':'Post','6-d6':'Ampel','6-d7':'Café'},checks:['6-2','6-3a','6-3b'],bad:'6-b2'},
+ '7':{h:1447,fields:{'7-4b':'dem','7-4c1':'dem','7-4c2':'der','7-4d':'der','7-4e':'der','7-5b1':'zwischen der','7-5b2':'dem','7-5c':'hinter der','7-5d':'an der','7-5e':'auf der','7-5f':'im','7-5g':'vor der'},checks:['7-4','7-5'],bad:'7-4b'},
+ '8':{h:1452,fields:{'8-8a':'bin nicht von hier','8-8b':'ist sehr nett','8-8c':'Trotzdem: Dankeschön','8-8d':'sehen Sie schon','8-8e1':'ist ganz in der Nähe','8-8e2':'Wenden Sie hier','8-9b':'helfen','8-9c':'das Hotel „Marienhof“','8-9d':'Frage','8-9e':'Moment'},checks:['8-8','8-9'],bad:'8-8b'}};
+(async()=>{let b;try{for(let i=0;i<60;i++){try{if((await fetch('http://127.0.0.1:5195')).ok)break}catch{}await new Promise(r=>setTimeout(r,200))}b=await chromium.launch({executablePath:'/usr/bin/google-chrome-stable',args:['--no-sandbox']});
+ for(const width of [320,390]){for(const [page,cfg] of Object.entries(P)){
+  const p=await b.newPage({viewport:{width,height:900},isMobile:true,hasTouch:true});p.setDefaultTimeout(8000);const errors=[];p.on('pageerror',e=>errors.push(e.message));
+  await p.goto('http://127.0.0.1:5195/ab-a12-l13-16.html#'+page);await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
+  const h=p.locator('[data-native-ab12="'+page+'"]');
+  for(const [id,val] of Object.entries(cfg.fields))await h.locator(`[data-native-field="${id}"]`).fill(val);
+  for(const cid of cfg.checks){const c=h.locator(`[data-check="${cid}"]`);await c.locator('button').click();assert.equal(await c.locator('output').textContent(),'✓ Richtig!',cid+' should grade correct')}
+  await h.locator(`[data-native-field="${cfg.bad}"]`).fill('falsch');
+  const c=h.locator(`[data-check="${cfg.checks[0]}"]`);await c.locator('button').click();assert.equal(await c.locator('output').textContent(),'Noch einmal');
+  await p.reload();await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');assert.equal(await h.locator(`[data-native-field="${cfg.bad}"]`).inputValue(),'falsch');
+  const outside=await h.locator('.naCanvas').evaluate((el,H)=>[...el.querySelectorAll('input,button,div,img')].filter(n=>n.offsetTop+n.offsetHeight>H+2).map(n=>n.className+'@'+n.offsetTop).slice(0,5),cfg.h);assert.deepEqual(outside,[]);
+  await h.locator('.tapWord').first().click();await p.waitForFunction(()=>document.querySelector('.meaningPopup')?.open);await p.keyboard.press('Escape');
+  await h.locator('.naCanvas').screenshot({path:`/downloads/ab-a12-p${page}-filled-${width}.png`});
+  assert.deepEqual(errors,[]);console.log(width,'p'+page,'fills, grading, persistence, boundaries, translation passed');await p.close();
+ }}
+ }finally{if(b)await b.close();server.kill('SIGTERM')}})().catch(e=>{console.error(e);process.exitCode=1});

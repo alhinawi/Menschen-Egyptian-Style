@@ -1149,6 +1149,10 @@
   {
    "id": "g1",
    "label": "Aufgabe 9"
+  },
+  {
+   "id": "g2",
+   "label": "Aufgabe 10"
   }
  ],
  "review": {
@@ -1161,5 +1165,52 @@
   ],
   "verifiedWords": 153,
   "totalWords": 153
- }
+ },
+ "matchings": [
+  {
+   "id": "task10",
+   "group": "g2",
+   "left": [
+    "Heute um elf",
+    "In zwei Stunden",
+    "Am Donnerstag um drei",
+    "Nach der Sitzung",
+    "Am Freitag",
+    "Stefan hat"
+   ],
+   "right": [
+    "muss Stefan Kollegen am Flughafen abholen.",
+    "hat Nina eine Sitzung.",
+    "am Freitag um 14.30 Uhr Zeit.",
+    "hat Stefan keine Zeit.",
+    "muss Nina einen Kollegen anrufen.",
+    "hat Nina nach dem Mittagessen Zeit."
+   ],
+   "leftX": 164,
+   "leftWidth": 250,
+   "rightX": 471,
+   "rightWidth": 450,
+   "ys": [
+    1178,
+    1205,
+    1231,
+    1257,
+    1283,
+    1308
+   ],
+   "fontSize": 20,
+   "example": [
+    0,
+    3
+   ],
+   "masks": [
+    {
+     "x": 160,
+     "y": 1178,
+     "w": 765,
+     "h": 162
+    }
+   ]
+  }
+ ]
 }

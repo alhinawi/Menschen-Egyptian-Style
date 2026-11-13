@@ -2321,5 +2321,109 @@
   ],
   "verifiedWords": 291,
   "totalWords": 291
- }
+ },
+ "matchings": [
+  {
+   "id": "task3l",
+   "group": "gx",
+   "left": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "right": [
+    "schneit.",
+    "sonnig.",
+    "windig und neblig.",
+    "warm."
+   ],
+   "leftX": 131,
+   "leftWidth": 120,
+   "rightX": 241,
+   "rightWidth": 168,
+   "ys": [
+    746,
+    766,
+    814,
+    834
+   ],
+   "itemHeights": [
+    19,
+    19,
+    19,
+    19
+   ],
+   "fontSize": 15,
+   "masks": [
+    {
+     "x": 279,
+     "y": 745,
+     "w": 73,
+     "h": 50
+    },
+    {
+     "x": 279,
+     "y": 810,
+     "w": 133,
+     "h": 28
+    },
+    {
+     "x": 279,
+     "y": 838,
+     "w": 70,
+     "h": 19
+    }
+   ]
+  },
+  {
+   "id": "task3r",
+   "group": "gx",
+   "left": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "right": [
+    "27 Grad.",
+    "Wolken.",
+    "neblig und\nbewölkt.",
+    "donnert und blitzt."
+   ],
+   "leftX": 464,
+   "leftWidth": 140,
+   "rightX": 586,
+   "rightWidth": 190,
+   "ys": [
+    746,
+    766,
+    814,
+    853
+   ],
+   "itemHeights": [
+    19,
+    19,
+    19,
+    19
+   ],
+   "rightHeights": [
+    19,
+    19,
+    40,
+    19
+   ],
+   "multiline": true,
+   "fontSize": 15,
+   "masks": [
+    {
+     "x": 622,
+     "y": 750,
+     "w": 150,
+     "h": 125
+    }
+   ],
+   "lineHeight": 19
+  }
+ ]
 }
