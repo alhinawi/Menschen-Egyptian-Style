@@ -13,18 +13,18 @@
   },
   {
    "k": "t",
-   "x": 157,
-   "y": 182,
+   "x": 160,
+   "y": 181,
    "t": "Ihre Freundin / Ihr Freund hat ihren Traummann / seine Traumfrau kennengelernt.",
    "s": 20.0,
    "c": "naFiraM"
   },
   {
    "k": "t",
-   "x": 156,
+   "x": 160,
    "y": 204,
    "t": "Was möchten Sie wissen?",
-   "s": 18.0,
+   "s": 17.5,
    "c": "naFiraM"
   },
   {
@@ -37,10 +37,10 @@
   },
   {
    "k": "t",
-   "x": 156,
-   "y": 243,
+   "x": 157,
+   "y": 247,
    "t": "Sammeln Sie Fragewörter.",
-   "s": 18.0
+   "s": 17.5
   },
   {
    "k": "t",
@@ -88,8 +88,8 @@
   {
    "k": "t",
    "x": 156,
-   "y": 385,
-   "t": "Notieren Sie fünf Fragen auf Kärtchen,",
+   "y": 390,
+   "t": "Notieren Sie fünf Fragen auf Kärtchen.",
    "s": 18.0
   },
   {
@@ -151,32 +151,32 @@
   },
   {
    "k": "t",
-   "x": 822,
-   "y": 728,
+   "x": 823,
+   "y": 730,
    "t": "Im Supermarkt.",
    "s": 15.0
   },
   {
    "k": "t",
-   "x": 776,
-   "y": 749,
+   "x": 777,
+   "y": 750,
    "t": "Was macht sie/er beruflich?",
    "s": 15.5
   },
   {
    "k": "t",
    "x": 153,
-   "y": 953,
+   "y": 954,
    "t": "Hören Sie die Wörter und markieren",
-   "s": 14.0,
+   "s": 20.0,
    "c": "naFiraM"
   },
   {
    "k": "t",
-   "x": 151,
-   "y": 977,
+   "x": 152,
+   "y": 979,
    "t": "Sie den Wortakzent.",
-   "s": 20.0,
+   "s": 20.5,
    "c": "naFiraM"
   },
   {
@@ -235,7 +235,7 @@
   {
    "k": "t",
    "x": 317,
-   "y": 1172,
+   "y": 1173,
    "t": "nicht trennbar",
    "s": 19.5,
    "b": 1
@@ -264,17 +264,17 @@
   },
   {
    "k": "t",
-   "x": 183,
-   "y": 1325,
+   "x": 184,
+   "y": 1326,
    "t": "Bei trennbaren Verben:",
-   "s": 16.5
+   "s": 16.0
   },
   {
    "k": "t",
-   "x": 183,
-   "y": 1347,
+   "x": 184,
+   "y": 1348,
    "t": "Bei nicht trennbaren Verben:",
-   "s": 13
+   "s": 16.5
   },
   {
    "k": "d",
