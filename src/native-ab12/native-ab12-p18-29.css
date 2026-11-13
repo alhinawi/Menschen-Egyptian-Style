@@ -3,7 +3,10 @@
 .naCanvas .naText.naTh{font-weight:bold;font-size:19px}
 .naCanvas .naCheck.naCheckCol{flex-direction:column;align-items:flex-start;gap:2px}
 .naCanvas .naText.naExL{font-family:FiraSans,'Trebuchet MS',sans-serif!important;font-weight:bold;font-size:20px;color:#335b98;letter-spacing:0!important}
-.naCanvas .naText.naIns{font-family:FiraSans,'Trebuchet MS',sans-serif!important;letter-spacing:0!important;font-weight:400;font-size:19px!important}
+.naCanvas .naText.naIns{font-family:FiraSans,'Trebuchet MS',sans-serif!important;letter-spacing:0!important;font-weight:500;font-size:18.7px!important}
+.naCanvas .naText.naS194{font-size:19.4px!important}
+.naCanvas .naText.naIt{font-style:italic}
+.naCanvas .naText.naInk{color:#3f444c!important}
 .naCanvas .naText.naInsB{font-weight:700}
 .naCanvas .naText.naInsI{font-style:italic}
 .naCanvas .naTRule{position:absolute;height:0;border-bottom:1px solid #e0dcc8}
