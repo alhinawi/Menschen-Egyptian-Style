@@ -30,6 +30,7 @@ export function NativeAB11Module1({page}:{page:string}){
  const answers=(group:string)=>Object.fromEntries(data.fields.filter(f=>f.group===group&&f.kind!=='radio'&&f.kind!=='checkbox'&&f.answer!==undefined).map(f=>[f.id,f.answer!]));
  const check=(id:string,x:number,y:number,expected=answers(id))=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:Object.entries(expected).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const rule=(id:string,x:number,y:number,test:()=>boolean)=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:test()})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const save=(id:string,x:number,y:number)=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:true})}/><output aria-live="polite">{id in graded?'Gespeichert':''}</output></div>;
  const listen=(n:string,x:number,y:number,t?:string)=><button className="mListen" data-task={t} aria-label={'Originalaudio 1 '+n} style={{left:x,top:Y(y)}} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+n+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
  const arrow=(id:string,x:number,y:number)=><button className="mArrow" data-native-field={id} aria-label={'Satzmelodie '+id} style={{left:x,top:Y(y)}} onClick={()=>set(id,v[id]==='↗'?'↘':'↗')}>{v[id]||' '}</button>;
  const radio=(id:string,val:string,x:number,y:number,label:string)=><input className="mRadio" type="radio" data-value={val} name={'native-ab11-'+page+'-'+id} aria-label={label} style={{left:x,top:Y(y)}} checked={v[id]===val} onChange={()=>set(id,val)}/>;
@@ -219,7 +220,7 @@ export function NativeAB11Module1({page}:{page:string}){
  {txt(135,867,640,'Üben / Wiederholen möchte ich noch …','mBlue')}{open('ueben',135,892,557,28,'Üben und Wiederholen eigene Notiz')}
  {txt(135,951,650,'RÜCKBLICK','mHeader')}{txt(135,996,650,'Wählen Sie eine Aufgabe zu Lektion 1','mBlue')}
  {title('1',1034,'Wer ist das? Sehen Sie im Kursbuch auf den Seiten 9 und 10 nach und schreiben Sie.','',135,710)}
- {['nicole','paco','wachter'].map((s,i)=><span key={s}>{art(s,172+i*194,1065,102,98)}{lined('r1-person-'+i,[189,441,690][i]*K,[163,166,162][i]*K,rt([1167,1146,1134][i]),3,[2,2,0][i],'Rückblick Person '+(i+1),[-6,-.5,-.5][i])}</span>)}{ink('ex1-ink',175,rt(1116),685,119)}
+ {['nicole','paco','wachter'].map((s,i)=><span key={s}>{art(s,172+i*194,1065,102,98)}{lined('r1-person-'+i,[189,441,690][i]*K,[163,166,162][i]*K,rt([1167,1146,1134][i]),3,[2,2,0][i],'Rückblick Person '+(i+1),[-6,-.5,-.5][i])}</span>)}{ink('ex1-ink',175,rt(1116),685,119)}{save('r1',135,rt(1246))}
  {title('2',1284,'Suchen Sie Fotos. Wer ist das? Stellen Sie die Personen vor.','',135,710)}{art('mesut',172,1304,102,118)}{ink('ex2-ink',340,rt(1305),500,107)}{lined('r2-left',360*K,170*K,rt(1401),1,0,'Rückblick eigene Person links',-7)}{lined('r2-personen',644*K,158*K,rt(1356),3,0,'Rückblick eigene Personen vorstellen')}
  </>}
  {page==='28'&&<>
