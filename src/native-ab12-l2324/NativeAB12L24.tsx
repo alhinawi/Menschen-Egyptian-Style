@@ -13,6 +13,9 @@ export function NativeAB12L24({page}:{page:string}){
  const tx103=(x:number,y:number,b:number,t:string,cls='naCell103 naNw',fs=12.5)=>text(x,y,w102(t,fs),t,cls,fs);
  const tx102=(x:number,y:number,b:number,t:string,cls='naCell102 naNw',fs=12.5)=>text(x,y,w102(t,fs),t,cls,fs);
  const w102=(t:string,fs:number)=>t.length*fs*0.6+10;
+ const mix104=(x:number,y:number,w:number,segs:[string,(boolean|number)?][],fs=12.5)=>{return <div className="naText naCell104 naNw" style={{left:x,top:y,width:w,fontSize:fs}}>{segs.map((s,i)=>s[1]===1?<span key={i} className="naRed104">{s[0]}</span>:s[1]===2?<span key={i} className="naBold104">{s[0]}</span>:s[1]===3?<span key={i} className="naBold104 naIt104">{s[0]}</span>:s[1]===4?<span key={i} className="naIt104">{s[0]}</span>:<Words key={i} text={s[0]}/>)}</div>;};
+ const tx104=(x:number,y:number,b:number,t:string,cls='naCell104 naNw',fs=12.5)=>{if(cls.indexOf('naCell104')>=0||cls.indexOf('naRed104')>=0){fs=Math.round(fs*94.3)/100;y=y+0.25;}return text(x,y,w102(t,fs),t,cls,fs);};
+ const bul104=(cx:number,cy:number,fill:string)=><svg className="naBul104" style={{left:cx-4,top:cy-4,width:8,height:8}} viewBox="0 0 8 8" aria-hidden="true"><circle cx="4" cy="4" r="3" fill={fill}/></svg>;
  const sect99=(y:number,t:string,tag:string)=><div className="naText naSect99" style={{left:78,top:y}}><Words text={t}/> <span className="naTag99">{tag}</span></div>;
  return <Canvas page={page} root={c.root} player={c.player} scale={c.scale}>
  {page==='96'&&<>
@@ -477,7 +480,90 @@ export function NativeAB12L24({page}:{page:string}){
   {tx103(80.7,841.5,855,'sie/Sie')}{tx103(278,841.5,855,'würden','naRed103 naNw')}
   {mix103(475.2,783.2,190,[['gern mit dir '],['feiern',1]])}
   {text(637.2,1050.0,80,'hundertdrei','naFoot103 naNw',13)}{text(720.8,1051,4,'|','naFoot103 naNw',13)}{text(736.8,1051.1,20,'103','naFootD103 naNw',13)}
-
+ </>}
+ {page==='104'&&<>
+  {text(75.9,56.9,343,'GRAMMATIKÜBERSICHT','naHead104 naNw',28.4)}
+  {text(76,121.2,110,'Präpositionen','naSecH104 naNw',16.5)}
+  <div className="naBand104" style={{left:77,top:153,width:592,height:21}}/>
+  {tx104(80,155.2,163,'Wo? → Lokale Präpositionen mit Dativ','naBandT104 naNw',13.4)}{tx104(337.5,156.4,163,'L13','naLT104 naNw',12)}
+  <svg className="naGrid104" viewBox="0 0 807 1094" aria-hidden="true">
+   {[76,670].map(x=><rect key={'t1v'+x} x={x} y="174" width="1" height="213"/>)}
+   {[244,373,521].map(x=><rect key={'t1vi'+x} x={x} y="174" width="1" height="174"/>)}
+   {[196.5,235.5,257.5,280.5,302.5,324.5,347.5,386.5].map(y=><rect key={'t1h'+y} x="76" y={y} width="594" height="1"/>)}
+  </svg>
+  {tx104(80.9,178.2,187,'Nominativ','naColH104 naNw',13.9)}{tx104(378,178.2,187,'Dativ','naColH104 naNw',13.9)}
+  {tx104(80,200.8,208,'Da ist....','naCell104 naNw',13)}{tx104(249,201.5,208,'Wo ist das Hotel?','naCell104 naNw',12.5)}{tx104(249,218.9,208,'Es ist...','naCell104 naNw',12.5)}
+  {tx104(379,200.6,208,'definiter Artikel','naColH104 naNw',14.1)}{tx104(528,200.6,208,'indefiniter Artikel','naColH104 naNw',14.1)}
+  {bul104(85,248.5,'#022a88')}{bul104(84.5,271,'#28b400')}{bul104(84.5,293.5,'#d90500')}
+  {tx104(91.5,239.8,247,'der/ein Dom.','naCell104 naNw',13)}{tx104(249,239.8,247,'neben','naCell104 naNw',13)}{mix104(379,239.8,60,[['dem',1],[' Dom.']],13)}{mix104(528,239.8,70,[['einem',1],[' Dom.']],13)}
+  {tx104(91.5,261.8,269,'das/ein Café.','naCell104 naNw',13)}{tx104(248,261.8,269,'neben','naCell104 naNw',13)}{mix104(379,261.8,60,[['dem',1],[' Café.']],13)}{mix104(528,261.8,70,[['einem',1],[' Café.']],13)}
+  {tx104(91.5,283.8,292,'die/eine Post.','naCell104 naNw',13)}{tx104(249,283.8,292,'neben','naCell104 naNw',13)}{mix104(379,283.8,55,[['der',1],[' Post.']],13)}{mix104(528,283.8,65,[['einer',1],[' Post.']],13)}
+  {tx104(80,305.8,313,'Da sind...','naCell104 naNw',13)}
+  {tx104(80,328.8,336,'die / – Banken/Häuser.','naCell104 naNw',13)}{tx104(249,328.8,336,'neben','naCell104 naNw',13)}{mix104(379,328.8,132,[['den',1],[' Banken/ Häuser'],['n',1]],13)}{mix104(532,328.8,116,[['–',1],[' Banken/Häuser'],['n',1],['.']],13)}
+  {mix104(82,350.2,320,[['auch so:',4],[' auf, an, vor, hinter, zwischen, über, unter, in']],13.2)}
+  {tx104(84,365.5,375,'!','naGrn104 naNw',15.5)}{mix104(96,368,160,[['in dem = '],['im',1],['   an dem = '],['am',1]],12.9)}
+  <div className="naBand104" style={{left:76,top:404,width:341,height:21}}/>
+  {tx104(82,407.3,414,'temporale Präpositionen vor, nach, in + Dativ','naBandT104 naNw',13.1)}{tx104(376.5,408.4,414,'L16','naLT104 naNw',12)}
+  <svg className="naGrid104" viewBox="0 0 807 1094" aria-hidden="true">
+   {[76,132,230,418].map(x=><rect key={'t2v'+x} x={x} y="425" width="1" height="114"/>)}
+   {[449,471.5,494,516,538.5].map(y=><rect key={'t2h'+y} x="76" y={y} width="342" height="1"/>)}
+  </svg>
+  {tx104(136.8,432.4,440,'Wann?','naColH104 naNw',14)}
+  {bul104(84,462,'#022a88')}{bul104(84,480,'#28b400')}{bul104(84.5,502,'#d90500')}{bul104(84,524,'#ffee02')}
+  {mix104(234,453.1,62,[['ein'],['em',1],[' Monat']],13.2)}{mix104(234,476.1,60,[['ein'],['em',1],[' Jahr']],13.2)}{mix104(234,498.1,66,[['ein'],['er',1],[' Stunde']],13.2)}{tx104(234,521.1,529,'zwei Wochen','naCell104 naNw',13.2)}
+  {tx104(136.7,483,486,'vor/nach/in','naRed104 naNw',13.4)}
+  <div className="naBand104" style={{left:434,top:489,width:235,height:20}}/>
+  {tx104(440,492.3,499,'Präpositionen mit und ohne','naBandT104 naNw',13.4)}{tx104(623,493.4,499,'L17','naLT104 naNw',12)}
+  <svg className="naGrid104" viewBox="0 0 807 1094" aria-hidden="true">
+   {[433,481,571,669].map(x=><rect key={'rbv'+x} x={x} y="509" width="1" height="97"/>)}
+   <rect x="433" y="550" width="236" height="1"/><rect x="433" y="605.5" width="236" height="1"/>
+  </svg>
+  {tx104(437,514.3,521,'ohne','naRed104 naNw',12.9)}{tx104(488,514.3,521,'+ Akkusativ','naCell104 naNw',12.9)}
+  {tx104(576,514.3,521,'ohne das/','naRed104 naNw',12.9)}{mix104(577,531.3,75,[['mein',1],[' Handy']],12.9)}
+  {tx104(438,553.3,560,'mit','naRed104 naNw',12.9)}{tx104(488,553.3,560,'+ Dativ','naCell104 naNw',12.9)}
+  {tx104(577,554.3,560,'mit dem/','naRed104 naNw',12.9)}{tx104(577,570.3,576,'meinem','naRed104 naNw',12.9)}{tx104(577,587.3,596,'Handy','naCell104 naNw',12.9)}
+  <div className="naBand104" style={{left:76,top:557,width:341,height:21}}/>
+  {tx104(81,559.2,567,'temporale Präposition für + Akkusativ','naBandT104 naNw',13.4)}{tx104(335,560.4,567,'L16','naLT104 naNw',12)}
+  <svg className="naGrid104" viewBox="0 0 807 1094" aria-hidden="true">
+   {[76,132,230,418].map(x=><rect key={'t3v'+x} x={x} y="578" width="1" height="112"/>)}
+   {[600.5,623,645.5,667.5,690].map(y=><rect key={'t3h'+y} x="76" y={y} width="342" height="1"/>)}
+  </svg>
+  {tx104(137.5,581.2,590,'(Für) Wie lange?','naColH104 naNw',13.1)}
+  {bul104(84,614,'#022a88')}{bul104(83.5,631,'#28b400')}{bul104(83.5,653.5,'#d90500')}{bul104(83.5,675.5,'#ffee02')}
+  {mix104(234,605.5,58,[['ein'],['en',1],[' Tag']],13.2)}{tx104(234,628.5,636,'ein Jahr','naCell104 naNw',13.2)}{tx104(234,650.5,658,'eine Woche','naCell104 naNw',13.2)}{tx104(234,672.5,680,'zwei Wochen','naCell104 naNw',13.2)}
+  {tx104(136,632.9,641,'für','naRed104 naNw',13.4)}
+  {text(74,724.2,120,'Konjunktionen','naSecH104 naNw',16.5)}{text(333.7,724.6,60,'Sätze','naSecH104 naNw',16.5)}
+  <div className="naBand104" style={{left:76,top:756,width:243,height:21}}/>
+  {tx104(79,759.2,767,'Konjunktion denn','naBandT104 naNw',13.55)}{tx104(207.5,759.4,767,'L23','naLT104 naNw',12)}
+  {mix104(79,781.2,215,[['Es war wunderbar, '],['denn',1],[' wir hatten']],13.1)}
+  {tx104(79,798.2,805,'ein Traumwetter.','naCell104 naNw',13.1)}
+  <div className="naBand104" style={{left:336,top:757,width:332,height:21}}/>
+  {tx104(339,759.9,767,'Modalverben im Satz','naBandT104 naNw',13.4)}{tx104(483,760.9,767,'L17/L18/L21','naLT104 naNw',12)}
+  <div className="naMark104" style={{left:385,top:783,width:26,height:14}}/><div className="naMark104" style={{left:606,top:784,width:52,height:12}}/>
+  <div className="naMark104" style={{left:385,top:806,width:36,height:12}}/><div className="naMark104" style={{left:606,top:806,width:56,height:14}}/>
+  <div className="naMark104" style={{left:385,top:829,width:34,height:11}}/><div className="naMark104" style={{left:606,top:829,width:33,height:11}}/>
+  <div className="naMark104" style={{left:385,top:850,width:29,height:13}}/><div className="naMark104" style={{left:606,top:851,width:38,height:12}}/>
+  <svg className="naGrid104" viewBox="0 0 807 1094" aria-hidden="true">
+   <rect x="335" y="778" width="1" height="92"/><rect x="669" y="778" width="1" height="92"/>
+   {[801.5,823.5,846.5,868.5].map(y=><rect key={'mh'+y} x="335" y={y} width="334" height="1"/>)}
+  </svg>
+  {tx104(339.5,782.6,790,'Ich','naCell104 naNw',13.7)}{tx104(386,782.6,790,'will','naCell104 naNw',13.7)}{tx104(449,782.6,790,'Liedermacher','naCell104 naNw',13.7)}{tx104(608,782.6,790,'werden.','naCell104 naNw',13.7)}
+  {tx104(339.5,804.6,812,'Du','naCell104 naNw',13.7)}{tx104(385,804.6,812,'sollst','naCell104 naNw',13.7)}{tx104(449,804.6,812,'diesen Tee','naCell104 naNw',13.7)}{tx104(608,804.6,812,'trinken.','naCell104 naNw',13.7)}
+  {tx104(339.5,827.6,835,'Man','naCell104 naNw',13.7)}{tx104(386,827.6,835,'muss','naCell104 naNw',13.7)}{tx104(449,827.6,835,'in der Bibliothek leise','naCell104 naNw',13.7)}{tx104(608,827.6,835,'sein.','naCell104 naNw',13.7)}
+  {tx104(339.5,849.6,857,'Man','naCell104 naNw',13.7)}{tx104(386,849.6,857,'darf','naCell104 naNw',13.7)}{tx104(449,849.6,857,'im Bus nicht','naCell104 naNw',13.7)}{tx104(608,849.6,857,'essen.','naCell104 naNw',13.7)}
+  {text(72.6,862.2,90,'Adjektive','naSecH104 naNw',16.5)}
+  <div className="naBand104" style={{left:75,top:893,width:420,height:20}}/>
+  {tx104(81,895.3,903,'Komparation: gut, gern, viel','naBandT104 naNw',13.2)}{tx104(268,896.4,903,'L22','naLT104 naNw',12)}
+  <svg className="naGrid104" viewBox="0 0 807 1094" aria-hidden="true">
+   {[75,190,327,495].map(x=><rect key={'av'+x} x={x} y="913" width="1" height="114"/>)}
+   {[936.5,959.5,981.5,1026].map(y=><rect key={'ah'+y} x="75" y={y} width="420" height="1"/>)}
+  </svg>
+  {tx104(79,918.5,926,'Positiv','naColH104 naNw',14)}{tx104(195,918.5,926,'Komparativ','naColH104 naNw',14)}{tx104(332,918.5,926,'Superlativ','naColH104 naNw',14)}
+  {tx104(78,943.6,950,'+','naColH104 naNw',14)}{tx104(194,943.6,950,'++','naColH104 naNw',14)}{tx104(332,943.6,950,'+++','naColH104 naNw',14)}
+  {tx104(78,962.6,969,'gut','naCell104 naNw',13.2)}{tx104(194,962.6,969,'besser','naRed104 naNw',13.2)}{tx104(332,962.6,969,'am besten','naRed104 naNw',13.2)}
+  {tx104(78,984.6,991,'gern','naCell104 naNw',13.2)}{tx104(195,984.6,991,'lieber','naRed104 naNw',13.2)}{tx104(332,984.6,991,'am liebsten','naRed104 naNw',13.2)}
+  {tx104(78,1006.6,1013,'viel','naCell104 naNw',13.2)}{tx104(195,1006.6,1013,'mehr','naRed104 naNw',13.2)}{tx104(332,1006.6,1013,'am meisten','naRed104 naNw',13.2)}
+  {text(34.5,1048,20,'104','naFoot104 naNw',13.8)}{text(65.5,1048,6,'|','naFoot104 naNw',13.8)}{text(79.5,1048,80,'hundertvier','naFoot104 naNw',13.8)}
  </>}
  {page==='97'&&<>
   {text(71.7,54,580,'WIEDERHOLUNGSSTATION: GRAMMATIK','naHead97 naNw',28.5)}
