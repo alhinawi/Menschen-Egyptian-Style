@@ -757,33 +757,33 @@
  "fieldadj": {
   "t7a-1": {
    "x": 265,
-   "w": 45,
+   "w": 29,
    "ul": true
   },
   "t7a-2": {
    "ul": true
   },
   "t8a-maus": {
-   "x": 443,
-   "w": 32,
+   "x": 451,
+   "w": 23,
    "ul": true
   },
   "t8a-drucker": {
-   "x": 443,
+   "x": 451,
    "y": 868,
-   "w": 32,
+   "w": 23,
    "ul": true
   },
   "t8a-computer": {
-   "x": 443,
+   "x": 451,
    "y": 888,
-   "w": 32,
+   "w": 23,
    "ul": true
   },
   "t8a-bildschirm": {
-   "x": 443,
+   "x": 451,
    "y": 907,
-   "w": 32,
+   "w": 23,
    "ul": true
   }
  },
@@ -793,9 +793,9 @@
    "group": "t8af",
    "kind": "text",
    "label": "ein Handy (keine Endung)",
-   "x": 443,
+   "x": 451,
    "y": 788,
-   "w": 32,
+   "w": 23,
    "h": 14,
    "ul": true
   },
@@ -805,9 +805,9 @@
    "kind": "text",
    "label": "ein ... Laptop (Endung)",
    "answer": "en",
-   "x": 443,
+   "x": 451,
    "y": 808,
-   "w": 32,
+   "w": 23,
    "h": 14,
    "ul": true
   },
@@ -816,9 +816,9 @@
    "group": "t8af",
    "kind": "text",
    "label": "ein Telefon (keine Endung)",
-   "x": 443,
+   "x": 451,
    "y": 848,
-   "w": 32,
+   "w": 23,
    "h": 14,
    "ul": true
   },

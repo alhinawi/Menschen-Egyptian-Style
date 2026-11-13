@@ -151,7 +151,9 @@
    "group": "t3"
   },
   "t3b-esebeck": {
-   "group": "t3"
+   "group": "t3",
+   "x": 407,
+   "w": 14
   },
   "t3c-keine": {
    "group": "t3"
