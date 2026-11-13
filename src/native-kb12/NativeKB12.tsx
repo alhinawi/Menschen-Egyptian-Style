@@ -610,12 +610,12 @@ export function NativeKB12({page}:{page:string}){
  {page==='45'&&<>
  {art('hero',0,0,1100,1000)}{text(588,43,430,'Komm sofort runter!','nkHeroTitle')}{text(1015,38,85,'20','nkLesson')}
  <aside className="nkAside" style={{left:834,top:996,width:220,height:345}}><Words text={'Sprechen: Bitten und Aufforderungen: Deck bitte den Tisch.\nLesen: Tagebucheintrag\nSchreiben: E-Mail\nWortfeld: Aktivitäten im Haushalt\nGrammatik: Imperativ (du/ihr): Mach dein Bett!; Personalpronomen im Akkusativ: mich, dich, ihn, …'}/></aside>
- {title('1',105,1042,670,'Sehen Sie das Foto an. Was meinen Sie: Was macht das Mädchen gerade?')}{null}
+ {title('1',105,1042,670,'Sehen Sie das Foto an. Was meinen Sie: Was macht das Mädchen gerade?')}{save('1',400,1075)}
  {audio('assets/kb-a12-cd3-track31.mp3',48,1195,'3 31',undefined,'2')}{title('2',105,1195,680,'Was ist richtig? Hören Sie und kreuzen Sie an.')}{text(150,1235,600,'Line …')}
  {text(150,1265,160,'1  hatte heute')}{dot('2-1','schlechten',314,1265,'2.1 einen schlechten Tag')}{text(345,1265,190,'einen schlechten')}{dot('2-1','guten',548,1265,'2.1 einen guten Tag')}{text(580,1265,205,'einen guten    Tag.')}
  {text(150,1297,140,'2  schreibt')}{dot('2-2','Brief',290,1297,'2.2 einen Brief')}{text(322,1297,155,'einen Brief.')}{dot('2-2','Tagebuch',488,1297,'2.2 Tagebuch')}{text(520,1297,180,'Tagebuch.')}
  {text(150,1329,30,'3')}{dot('2-3','soll',186,1329,'2.3 soll runterkommen')}{text(218,1329,50,'soll')}{dot('2-3','soll nicht',278,1329,'2.3 soll nicht runterkommen')}{text(310,1329,420,'soll nicht    runterkommen.')}{check('2',150,1364,{'2-1':'schlechten','2-2':'Tagebuch','2-3':'soll'})}
- {title('3',105,1412,700,'Schreiben Sie Tagebuch oder haben Sie früher Tagebuch geschrieben? Erzählen Sie.')}
+ {title('3',105,1412,700,'Schreiben Sie Tagebuch oder haben Sie früher Tagebuch geschrieben? Erzählen Sie.')}{save('3',470,1440)}
  </>}
  {page==='46'&&<>
  {art('vocab',0,0,1100,105)}{['Müll/Abfall raus·bringen','Tisch decken','Geschirr spülen/ab·waschen','Geschirr ab·trocknen','Wäsche waschen','Wäsche auf·hängen','bügeln'].map((t,i)=>text(i*157,111,157,t,'nkVocabLabel nkTinyLabel nkCenter'))}
