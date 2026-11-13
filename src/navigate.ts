@@ -1,4 +1,5 @@
 import manifest from './lessons/manifest.json';
+import {prepareNativeComponents} from './components/nativeComponents';
 import type {LessonConfig, MarkupNode} from './types/book';
 import type {LessonInitializer} from './types/runtime';
 
@@ -61,7 +62,10 @@ export async function loadLesson(slug: string): Promise<LoadedLesson> {
   const config = configs[slugToFile[slug]] ?? configs['index.html'];
   await ensureStyles(config);
   const [data, ...modules] = await Promise.all([
-    pages['./lessons/' + config.slug + '.json']!(),
+    pages['./lessons/' + config.slug + '.json']!().then(async data => {
+      await prepareNativeComponents(data.default);
+      return data;
+    }),
     ...config.initializers.map(name => adapterModules['./adapters/' + name + '.ts']!()),
   ]);
   applyBodyAttrs(config);
