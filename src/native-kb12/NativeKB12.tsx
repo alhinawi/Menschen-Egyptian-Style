@@ -387,11 +387,11 @@ export function NativeKB12({page}:{page:string}){
  {page==='29'&&<>
  {art('hero',0,0,1100,1022)}{text(493,72,510,'Wer will Popstar werden?','nkHeroTitle')}{text(1010,45,90,'17','nkLesson')}
  <aside className="nkAside" style={{left:825,top:989,width:215,height:355}}><Words text={'Sprechen: Wünsche äußern und über Pläne sprechen: Ich will unbedingt noch Schauspielerin werden.\nLesen: Zeitungstext\nSchreiben: kreatives Schreiben\nWortfelder: Pläne und Wünsche\nGrammatik: Präpositionen mit/ohne; Modalverb wollen'}/></aside>
- {audio('assets/kb-a12-cd3-track17.mp3',45,1050,'3 17',undefined,'1')}{title('1',106,1049,690,'Sehen Sie das Foto an und hören Sie. Welche Anzeige passt? Was meinen Sie?')}
+ {audio('assets/kb-a12-cd3-track17.mp3',45,1050,'3 17',undefined,'1')}{title('1',106,1049,690,'Sehen Sie das Foto an und hören Sie. Welche Anzeige passt? Was meinen Sie?')}{save('1',398,1085)}
  <div className="nkAd" style={{left:140,top:1124,width:335,height:85,background:'#d7f4fa'}}>{text(10,7,320,'① Die Internationale Pop-Akademie (IPA)','nkBold nkSmall')}{text(10,34,320,'Du möchtest Popstar werden?\nMelde dich jetzt an!','nkSmall')}</div>
  <div className="nkAd nkAdBlue" style={{left:505,top:1115,width:285,height:142}}>{text(10,8,265,'② DSDS - die Castingshow','nkBold nkSmall')}{text(10,38,265,'Auch im nächsten Jahr sucht Deutschland den Superstar!\nDu möchtest ins Fernsehen - dann bewirb dich jetzt für das Casting!','nkSmall')}</div>
  <div className="nkAd" style={{left:210,top:1235,width:255,height:85,background:'#fffef6'}}>{text(5,5,245,'③ Staatlich anerkannte Schule\nfür Schauspielkunst\nAufnahmeprüfung: 15.7','nkSmall nkCenter')}</div>
- {title('2',106,1338,920,'Auf welche Anzeige würden Sie sich bewerben?')}{text(150,1383,865,'■  Anzeige … klingt interessant. Ich singe gern.\n▲  Ich finde Anzeige … interessant. Ich möchte gern ins Fernsehen / zum Theater.')}
+ {title('2',106,1338,920,'Auf welche Anzeige würden Sie sich bewerben?')}{save('2',700,1348)}{text(150,1383,865,'■  Anzeige … klingt interessant. Ich singe gern.\n▲  Ich finde Anzeige … interessant. Ich möchte gern ins Fernsehen / zum Theater.')}
  </>}
  {page==='30'&&<>
  {art('vocab',0,0,1100,110)}{['ein Buch schreiben','Chef werden','Schauspieler werden','Politiker werden','Geld verdienen','heiraten','eine große Familie haben','auf einen Berg steigen'].map((t,i)=>text(i*137.5,115,137,t,'nkVocabLabel nkTinyLabel'))}
