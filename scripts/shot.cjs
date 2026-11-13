@@ -15,7 +15,7 @@ const server=http.createServer((q,r)=>{let f=path.join(root,'dist',q.url.split('
   const h=p.locator(`[data-native-ab12="${page}"]`);
   await h.waitFor({timeout:10000});
   if(full)await p.addStyleTag({content:'.nativeAB12{width:1071px!important;height:1490px!important}html,body,.page,main,#viewport,#root,[class*=reader]{max-width:none!important}.stf__parent,.stf__wrapper,.stf__item,section.page{width:1071px!important;height:1490px!important;min-width:1071px!important;overflow:visible!important}'}).catch(()=>{});
-  await p.waitForTimeout(700);
+  await p.evaluate(()=>document.fonts.ready).catch(()=>{});await p.waitForTimeout(700);
   await h.locator('.naCanvas').screenshot({path:`/tmp/native-${page}-${width}.png`});
   console.log(width,'shot ok, errors:',JSON.stringify(errors));
   await p.close();
