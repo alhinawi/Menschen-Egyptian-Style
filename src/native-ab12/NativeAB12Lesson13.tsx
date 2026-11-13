@@ -528,7 +528,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(140,448,18,'b','naLet13')}
   <div className="naText naInstr13 naNw" style={{left:160,top:448,width:680}}>Notieren Sie die Nominative aus <span className="naBlu">a.</span> Und ergänzen Sie dann die Akkusative.</div>
   <div className="naBand13" style={{left:160,top:487,width:805,height:27}}/>
-  {text(283,490,120,'Nominativ','naTh13b naNw')}{text(630,490,120,'Akkusativ','naTh13b naNw')}
+  {text(290,487,120,'Nominativ','naTh13b naNw')}{text(637,487,120,'Akkusativ','naTh13b naNw')}
   {art('icon1',288,514,27,34)}{art('icon2',461,513,35,34)}{art('icon3',631,516,28,34)}{art('icon4',800,513,35,36)}
   <div className="naLine13b" style={{left:160,top:543,width:805,height:1}}/><div className="naLine13b" style={{left:160,top:572,width:805,height:1}}/><div className="naLine13b" style={{left:160,top:601,width:805,height:1}}/><div className="naLine13b" style={{left:160,top:630,width:805,height:1}}/><div className="naLine13b" style={{left:160,top:660,width:805,height:1}}/>
   <div className="naLine13d" style={{left:268,top:487,width:1,height:27}}/><div className="naLine13e" style={{left:625,top:487,width:3,height:27}}/><div className="naLine13b" style={{left:283,top:514,width:1,height:146}}/><div className="naLine13b" style={{left:455,top:514,width:1,height:146}}/><div className="naLine13b" style={{left:626,top:514,width:1,height:146}}/><div className="naLine13b" style={{left:798,top:514,width:1,height:146}}/>
