@@ -1,3 +1,4 @@
+import {usePageReset} from '../exercises/usePageReset';
 import {ClipMarkers} from '../components/ClipMarkers';
 import {useLayoutEffect,useRef,useState} from 'react';
 import './native-kb12.css';
@@ -8,6 +9,7 @@ export function NativeKB12({page}:{page:string}){
  const root=useRef<HTMLDivElement>(null),player=useRef<HTMLAudioElement>(null);const [scale,ss]=useState(.6);const key='native-kb12-'+page;
  const [values,sv]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return {}}});const [results,sr]=useState<Record<string,boolean>>({});const [drawing,sd]=useState(false);const [film,sf]=useState('');
  useLayoutEffect(()=>{const el=root.current!;const obs=new ResizeObserver(()=>ss(Math.min(el.clientWidth/1100,(el.clientHeight-38)/1504)));obs.observe(el);return ()=>obs.disconnect()},[]);
+ usePageReset(page,key,()=>{sv({});sr({});sd(false)});
  const set=(id:string,v:string)=>{const n={...values,[id]:v};sv(n);localStorage.setItem(key,JSON.stringify(n))};
  const text=(x:number,y:number,w:number,t:string,cls='')=><div className={'nkText '+cls} style={{left:x,top:y,width:w}}><Words text={t}/></div>;
  const art=(name:string,x:number,y:number,w:number,h:number)=><img className="nkArt" src={`assets/native-kb12/p${page}-${name}.png`} alt={'Originalillustration '+name} style={{left:x,top:y,width:w,height:h}}/>;

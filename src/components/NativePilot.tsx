@@ -1,9 +1,11 @@
+import {usePageReset} from '../exercises/usePageReset';
 import {useRef,useState} from 'react';
 import './native-pilot.css';
 function Words({text}:{text:string}){return <>{text.split(/(\s+)/).map((w,i)=>/\S/.test(w)?<span key={i} className="tapWord" role="button" tabIndex={0} data-phrase={text} data-word={w.replace(/^[.,!?„"()]+|[.,!?“"()]+$/g,'')}>{w}</span>:w)}</>}
 export function NativePilot({page}:{page:string}){
  const key='native-pilot-kb11-'+page;const player=useRef<HTMLAudioElement>(null);
  const [v,S]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return {}}});const [graded,G]=useState<Record<string,boolean>>({});const [res,R]=useState<Record<string,boolean>>({});
+ usePageReset(page,key,()=>{S({});G({});R({})});
  const set=(id:string,value:string)=>{R(r=>{if(!(id in r))return r;const n={...r};delete n[id];return n});const next={...v,[id]:value};S(next);localStorage.setItem(key,JSON.stringify(next))};
  const text=(x:number,y:number,w:number,s:string,cls='')=><div className={'npText '+cls} style={{left:x,top:y,width:w}}><Words text={s}/></div>;
  const img=(name:string,x:number,y:number,w:number,h:number)=><img className="npArt" src={`assets/book-crops/native-p${page}-${name}.png`} alt={`Originalabbildung ${name}`} style={{left:x,top:y,width:w,height:h}}/>;
