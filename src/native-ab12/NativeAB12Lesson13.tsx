@@ -289,7 +289,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {badge9('2',116,492,32,20)}{text(160,493,420,'Beschreiben Sie den Weg. Ergänzen Sie.','naYT naNw')}
   <div className="naSq8" style={{left:161,top:537}}/>{text(175,534,640,'Haben Sie einen Moment Zeit? Wie komme ich bitte zum Internet-Café?','naEx10 naNw')}
   {art('map',157,553,178,168)}
-  <div className="naTri8" style={{left:341,top:563}}/>{text(360,560,155,'Fahren Sie zuerst ','naEx9 naNw')}{art('geradeaus',521,563,72,23)}{text(594,560,80,'(a), dann ','naEx10b naNw')}{field('10-2b',678,558,116,'2b Richtung biegen','naFld9')}{text(802,561,56,'(b) Sie','naEx10b naNw')}
+  <div className="naTri8" style={{left:341,top:563}}/>{text(360,560,155,'Fahren Sie zuerst ','naEx9 naNw')}{art('geradeaus',520,563,72,23)}{text(597,560,80,'(a), dann ','naEx10b naNw')}{field('10-2b',678,558,116,'2b Richtung biegen','naFld9')}{text(802,561,56,'(b) Sie','naEx10b naNw')}
   {field('10-2c',359,585,127,'2c Richtung links','naFld9')}{text(491,586,66,'(c) ab. ','naEx10b naNw')}{text(560,586,196,'Fahren Sie jetzt einen ','naEx9 naNw')}{field('10-2d',758,585,122,'2d Kilometer','naFld9')}
   {text(359,611,260,'(d) geradeaus und dann nach ','naEx10b naNw')}{field('10-2e',621,610,105,'2e Richtung rechts','naFld9')}{text(726,612,140,'(e). Nach 500 m','naEx10b naNw')}
   {text(359,637,184,'fahren Sie über eine ','naEx10b naNw')}{field('10-2f',543,636,166,'2f Ort Brücke','naFld9')}{text(705,637,128,'(f) und an der ','naEx10b naNw')}{field('10-2g',833,637,96,'2g Ort Ampel','naFld9')}{text(936,638,24,'(g)','naEx10b naNw')}
