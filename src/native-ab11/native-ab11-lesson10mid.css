@@ -56,3 +56,8 @@
 .nativeAB11Lesson10Mid[data-native-ab11-page='83'] .mCanvas .mOpen{line-height:22px!important;height:var(--mopen-height)!important;border:0!important;background:repeating-linear-gradient(white 0 21px,#aaa 21px 22px)!important}
 
 .nativeAB11Lesson10Mid .mCanvas .mText.mFooterTabOdd{color:#fff}
+.nativeAB11Lesson10Mid .mBannerPink{position:absolute;background:#f9d9e2}
+.nativeAB11Lesson10Mid .mCanvas .mText.mBannerTitle{font:30px Georgia,serif;color:#1a1a1a}
+.nativeAB11Lesson10Mid .mCanvas .mText.mAnagram{letter-spacing:2px}
+.nativeAB11Lesson10Mid .mPairDot{position:absolute;width:9px;height:9px;border-radius:50%;background:#29a3c7}
+.nativeAB11Lesson10Mid[data-native-ab11-page='84'] .mCanvas .mNumber{background:#bc0231}
