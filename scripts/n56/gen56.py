@@ -52,14 +52,14 @@ R = [
     (155,1182,178,1212),    # c label
     (202,1182,720,1212),    # c text
     (288,1210,445,1238),    # 9c text after slots (incl printed ?)
-    ('fill',(200,1234,760,1264),(255,255,255)),  # Ja natuerlich line (fill: avoids slot-row residue)
+    ('fill',(200,1234,760,1264),(254,253,248)),  # Ja natuerlich line (fill: avoids slot-row residue)
     (524,454,544,466),      # stray tick under ex8 title
     (826,946,844,958),      # stray dash under Fantasiegeschichte
     (155,1272,178,1302),    # d label
     (202,1272,790,1302),    # d text
     (283,1198,293,1232),    # 9c printed ? remnant (slots row starts y1233)
     (340,1300,950,1328),    # 9d text after slots (incl printed ! at 345-349)
-    ('fill',(202,1326,325,1354),(255,255,255)),  # Monat hier! (fill: avoids slot-row residue)
+    ('fill',(202,1326,325,1354),(254,253,248)),  # Monat hier! (fill: avoids slot-row residue)
     (200,1350,590,1380),    # Doch. ...
 ]
 
@@ -70,9 +70,9 @@ SER='serif'
 # ---------- ex 7 ----------
 t(160,183,'Ergänzen Sie das Verb im Perfekt.',c='naFiraM',col='#1d1d1b',target=329,path=FIRA)
 items.append({'k':'bx','x':158,'y':203,'w':634,'h':30,'bg':'#fefee6'})
-t(166,224,'sich entschuldigen | gehören | gefallen | beschweren | vergessen | bekommen',c='naFiraM',col='#224777',target=612,path=FIRA)
+t(166,224,'sich entschuldigen | gehören | gefallen | beschweren | vergessen | bekommen',c='naFiraR',col='#7585a2',target=612,path=FIRA400)
 for ly,lab in [(260,'a'),(286,'b'),(311,'c'),(338,'d'),(365,'e'),(389,'f')]:
-    t(160,ly,lab)
+    t(160,ly,lab,s=15,col='#828185')
 t(186,260,'Warum hast du dich bei Simon nicht',target=323)
 items.append({'k':'f','id':'p56-7a','x':513,'y':264,'w':157,'l':'7 a','a':'entschuldigt','g':'g1'})
 t(670,260,'?',target=8)
@@ -116,26 +116,26 @@ t(161,945,'Sie haben noch nie einen Promi getroffen? Dann schreiben Sie eine Fan
 
 # ---------- ex 9 ----------
 t(159,1011,'Wie können Sie reagieren? Ergänzen Sie.',c='naFiraM',col='#1d1d1b',target=400,path=FIRA)
-t(160,1049,'a')
+t(160,1049,'a',s=15,col='#828185')
 t(207,1049,'Gehört der Porsche Juliane?',target=244)
 # 9a slots (printed pattern hidden under pen; rebuild like 9b-d: 7 slots)
 slot_y=1077
-for k in range(7):
-    sx=212+k*18+(0 if k<3 else 6)
+for k in range(6):
+    sx=212+k*16
     items.append({'k':'r','x':sx,'y':slot_y,'w':13,'h':2,'col':'#8f9699'})
 items.append({'k':'f','id':'p56-9a','x':206,'y':1079,'w':108,'l':'9 a','a':'Ach was|Ach was!','g':'g2','c':'sl'})
-t(348,1074,'! Das glaube ich nicht. Sie hat',target=217)
+t(314,1074,'! Das glaube ich nicht. Sie hat',s=19)
 t(212,1101,'doch nicht so viel Geld!',target=204)
-t(160,1139,'b')
+t(160,1139,'b',s=15,col='#828185')
 t(207,1139,'Lolita hat am Samstag geheiratet.',target=294)
 items.append({'k':'f','id':'p56-9b','x':190,'y':1176,'w':160,'l':'9 b','a':'Wahnsinn','g':'g2','c':'sl'})
 t(352,1165,'! Sie ist doch erst seit einem Monat geschieden.',target=417)
-t(160,1203,'c')
+t(160,1203,'c',s=15,col='#828185')
 t(206,1204,'Gestern habe ich Michael Ballack am Flughafen gesehen.',target=499)
 items.append({'k':'f','id':'p56-9c','x':190,'y':1241,'w':102,'l':'9 c','a':'Echt','g':'g2','c':'sl'})
 t(291,1230,'? Bist du sicher?',target=134)
 t(205,1256,'Ja natürlich! Glaubst du, ich erkenne Michael Ballack nicht?',target=537)
-t(160,1295,'d')
+t(160,1295,'d',s=15,col='#828185')
 t(206,1295,'Hast du schon gehört? Frau Bauer ist ab 1.5. unsere neue Chefin.',target=564)
 items.append({'k':'f','id':'p56-9d','x':205,'y':1331,'w':140,'l':'9 d','a':'Ach komm','g':'g2','c':'sl'})
 t(350,1319,'! Frau Bauer? Das kann doch nicht sein! Sie ist doch erst seit einem',target=587)
