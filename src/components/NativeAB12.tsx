@@ -395,6 +395,68 @@ export function NativeAB12({page}:{page:string}){
   {text(793,1384,195,'dreiundzwanzig \u00a0|\u00a0 23','naFooter')}
   {art('modul-tab',999,1379,67,27)}
  </>}
+ {page==='95'&&<>
+  {art('lesson-tab',727,29,76,63)}
+  <div className="naText naHeadline" style={{left:76,top:63,width:190,fontSize:22,letterSpacing:1.7}}><Words text="LERNWORTSCHATZ"/></div>
+  <div className="naHeadRule" style={{left:308,top:84,width:349,borderBottom:'2px solid #e55330'}}/>
+  {title('1',75,115,500,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naFB')}
+  {text(78,151,160,'Feste und Feiern','naBold')}
+  {text(78,172,130,'Fest das, -e')}{field('95-1-l1',238,168,140,'Fest das, -e übersetzen')}
+  {text(78,191,130,'Feier die, -n')}{field('95-1-l2',238,188,140,'Feier die, -n übersetzen')}
+  {text(78,211,120,'Ostern das')}{field('95-1-l3',238,207,140,'Ostern das übersetzen')}
+  {text(89,231,180,'A: Ostern die (Pl)','naGray')}
+  {text(78,249,150,'Weihnachten das')}{field('95-1-l4',238,246,140,'Weihnachten das übersetzen')}
+  {text(89,270,190,'A: Weihnachten die (Pl)','naGray')}
+  {text(78,298,140,'bestehen, hat')}
+  {text(89,318,120,'bestanden')}{field('95-1-l5',238,314,140,'bestehen übersetzen')}
+  {text(78,337,140,'gratulieren, hat')}
+  {text(89,357,120,'gratuliert')}{field('95-1-l6',238,353,140,'gratulieren übersetzen')}
+  {text(78,376,140,'schenken, hat')}
+  {text(89,396,120,'geschenkt')}{field('95-1-l7',238,392,140,'schenken übersetzen')}
+  {text(78,434,150,'Glückwünsche','naBold')}
+  {text(78,454,140,'Glückwunsch')}
+  {text(89,477,80,'der, \u00a8e')}{field('95-1-l8',238,470,140,'Glückwunsch der, \u00a8e übersetzen')}
+  {text(78,503,130,'Alles Gute!')}{field('95-1-l9',238,499,140,'Alles Gute! übersetzen')}
+  {text(78,522,80,'Frohe')}
+  {text(89,542,140,'Weihnachten!')}{field('95-1-l10',238,538,140,'Frohe Weihnachten! übersetzen')}
+  {text(78,562,140,'Gutes / Frohes')}
+  {text(89,581,120,'neues Jahr!')}{field('95-1-l11',238,577,140,'Gutes Frohes neues Jahr! übersetzen')}
+  {text(78,601,140,'Gut gemacht!')}{field('95-1-l12',238,597,140,'Gut gemacht! übersetzen')}
+  {text(78,620,120,'Herzlichen')}
+  {text(89,639,140,'Glückwunsch!')}{field('95-1-l13',238,636,140,'Herzlichen Glückwunsch! übersetzen')}
+  {text(78,678,200,'Weitere wichtige Wörter','naBold')}
+  {text(78,698,140,'Bekannte der/')}
+  {text(89,717,80,'die, -n')}{field('95-1-l14',238,713,140,'Bekannte der die, -n übersetzen')}
+  {text(78,737,120,'CD die, -s')}{field('95-1-l15',238,733,140,'CD die, -s übersetzen')}
+  {text(401,153,150,'Getränk das, -e')}{field('95-1-r1',510,149,148,'Getränk das, -e übersetzen')}
+  {text(401,172,140,'Ticket das, -s')}{field('95-1-r2',510,169,148,'Ticket das, -s übersetzen')}
+  {text(409,193,180,'A: Fahrkarte die, -n','naGray')}
+  {text(409,213,170,'CH: Billet das, -s','naGray')}
+  {text(401,231,140,'Reise die, -n')}{field('95-1-r3',510,227,148,'Reise die, -n übersetzen')}
+  {text(401,251,140,'Verwandte der/')}
+  {text(409,270,80,'die, -n')}{field('95-1-r4',510,266,148,'Verwandte der die, -n übersetzen')}
+  {text(401,303,150,'antworten, hat')}
+  {text(409,323,130,'geantwortet')}{field('95-1-r5',510,315,148,'antworten übersetzen')}
+  {text(401,342,150,'gewinnen, hat')}
+  {text(409,361,120,'gewonnen')}{field('95-1-r6',510,354,148,'gewinnen übersetzen')}
+  {text(401,381,150,'um·ziehen, ist')}
+  {text(409,401,120,'umgezogen')}{field('95-1-r7',510,393,148,'umziehen übersetzen')}
+  {text(401,426,110,'zufrieden')}{field('95-1-r8',510,422,148,'zufrieden übersetzen')}
+  {text(401,455,110,'draußen')}{field('95-1-r9',510,451,148,'draußen übersetzen')}
+  {text(401,478,120,'gemeinsam')}{field('95-1-r10',510,471,148,'gemeinsam übersetzen')}
+  {text(401,503,120,'hoffentlich')}{field('95-1-r11',510,499,148,'hoffentlich übersetzen')}
+  {text(401,523,100,'endlich')}{field('95-1-r12',510,519,148,'endlich übersetzen')}
+  {text(401,543,100,'schade')}{field('95-1-r13',510,539,148,'schade übersetzen')}
+  {art('tipp',407,578,170,58)}
+  {text(435,595,140,'Notieren Sie wichtige','naSmall')}
+  {text(435,611,140,'Termine auf Deutsch.','naSmall')}
+  {art('handwriting',411,645,248,58)}
+  {title('2',80,791,500,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naFB')}
+  {[821,841,860,879,899,919,938,957,977,997].map((y,i)=>field('95-2-'+(i+1),109,y,545,'Notizzeile '+(i+1)))}
+  {art('strip',648,135,160,865)}
+  {text(596,1047,140,'fünfundneunzig \u00a0|\u00a0 95','naFooter')}
+  {art('modul-tab',745,1050,53,18)}
+ </>}
  {page==='65'&&<>
   {art('lesson-tab',973,55,99,68)}
   <div className="naText naHeadline" style={{left:104,top:84,width:290,fontSize:27.5,letterSpacing:2.2}}><Words text="LERNWORTSCHATZ"/></div>
