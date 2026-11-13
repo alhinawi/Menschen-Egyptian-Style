@@ -1,0 +1,25 @@
+@font-face{font-family:P91Serif;src:url('/assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:P91Sans;src:url('/assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:P91Sans;src:url('/assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700;font-display:swap}
+.ab11p91{position:relative;width:100%;height:100%;background:white}
+.page:has(.ab11p91){padding:0!important}
+.ab11p91Canvas{position:absolute;left:50%;top:50%;width:901px;height:1275px;transform-origin:center;background:#fff;color:#242420;font-family:P91Serif,Georgia,serif}
+.ab11p91Canvas .p91Text{position:absolute;white-space:pre;line-height:1.32;margin:0;padding:0}
+.ab11p91Canvas .p91Sans{font-family:P91Sans,sans-serif}
+.ab11p91Canvas .tapWord{padding:0!important;margin:0!important}
+.ab11p91Canvas .p91Art{position:absolute;max-width:none!important;max-height:none!important;object-fit:fill!important;margin:0!important}
+.ab11p91Canvas .p91Line{position:absolute;height:1px}
+.ab11p91Canvas .p91Highlight{position:absolute;background:#fff713}
+.ab11p91Canvas .p91Badge{position:absolute;box-sizing:border-box;background:#e94d12;color:white;border:1px solid #c85627;font:700 21px/19px P91Serif,serif;text-align:center}
+.ab11p91Canvas .p91Side{position:absolute;writing-mode:vertical-rl;transform:rotate(180deg);font:700 10px P91Sans,sans-serif;color:#263f61}
+.ab11p91Canvas .p91Speaker{position:absolute;width:8px;height:8px;background:#080b83}
+.ab11p91Canvas .p91Speaker.green{width:0;height:0;background:transparent;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:9px solid #159e2e}
+.ab11p91Canvas .p91Field{position:absolute;box-sizing:border-box;min-width:0!important;min-height:0!important;max-width:none!important;margin:0!important;border:0!important;border-bottom:1px solid #a5aaa7!important;border-radius:0!important;padding:0 2px!important;font:var(--p91-answer-size,15px)/1.2 P91Serif,serif!important;color:#28496f;background:transparent!important;outline-offset:1px}
+.ab11p91Canvas .p91Field.correct{color:#18773c!important;border-bottom-color:#18773c!important}
+.ab11p91Canvas .p91Field.wrong{color:#b62626!important;border-bottom-color:#b62626!important}
+.ab11p91Canvas .p91Check{position:absolute;display:flex;gap:7px;align-items:center;white-space:nowrap}
+.ab11p91Canvas .p91Check button{min-height:20px!important;font:11px P91Sans,sans-serif;padding:2px 7px!important;margin:0!important;border:1px solid #8b9586;border-radius:3px;background:#fff;color:#31532c}
+.ab11p91Canvas .p91Check output{font:11px P91Sans,sans-serif;color:#555}
+
+.ab11p91Canvas .p91Title [data-word="sein"],.ab11p91Canvas .p91Title [data-word="haben"]{font-style:italic}
+.ab11p91Canvas .p91Text:has([data-word="KB"]){color:#33849c}

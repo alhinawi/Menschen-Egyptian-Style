@@ -7,6 +7,7 @@ import {loadScanPages, scanData} from '../scan-data/registry';
 // Loading is completed before React mounts a lesson. Do not use Suspense here:
 // legacy adapters bind their controls in the first layout effect.
 const loaders = {
+  NativeAB11P91: () => import('../native-ab11/NativeAB11P91').then(m => m.NativeAB11P91),
   NativeAB12P31to46: () => import('../native-ab12/NativeAB12P31to46').then(m => m.NativeAB12P31to46),
   NativeAB12P80: () => import('../native-ab12/NativeAB12P80').then(m => m.NativeAB12P80),
   NativeAB12L23: () => import('../native-ab12-l2324/NativeAB12L23').then(m => m.NativeAB12L23),
@@ -64,6 +65,8 @@ const rangeFiles = import.meta.glob('../native-ab12/range/p*.json');
 const rangePages = new Set(Object.keys(rangeFiles).map(p => p.match(/p(\d+)\.json$/)![1]));
 function pick(name: Name, props: Record<string, any>) { return {name, props}; }
 function select(tag: string, attrs: MarkupAttrs) {
+  if(tag === 'HybridScan' && attrs.book==='ab-a11' && String(attrs.page)==='91')return pick('NativeAB11P91',{});
+  if(tag === 'NativeAB11P91')return pick('NativeAB11P91',{});
   if(tag === 'ClipButton')return pick('ClipMarkers',{book:'kb-a11',page:'',number:Number(attrs.number)});
   if(tag === 'NativePage')return pick('NativePage',{book:attrs.book,page:attrs.page});
   if(tag === 'NativePilot')return pick('NativePilot',{page:attrs.page});
