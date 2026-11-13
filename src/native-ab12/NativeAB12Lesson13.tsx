@@ -218,11 +218,11 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {mw('9-m-theater',279,235,66,'Theater')}
   <div className="naTipBar" style={{left:454,top:249,width:473,height:4}}/>
   <div className="naTipTab" style={{left:454,top:249,width:13,height:111}}><span>TIPP</span></div>
-  {text(487,259,430,'Sie finden das Hören schwer? Achten Sie beim Hören','naTipT naNw')}
-  {text(487,281,220,'auf die wichtigen Wörter.','naTipT naNw')}
-  {text(487,304,380,'Wichtige Wörter in Wegbeschreibungen sind:','naTipT naNw')}
-  {text(487,325,430,'– Einrichtungen in der Stadt: Bahnhof, Kino, Dom …','naTipT naNw')}
-  {text(487,347,430,'– Richtungsangaben: rechts, links, geradeaus …','naTipT naNw')}
+  {text(487,256,430,'Sie finden das Hören schwer? Achten Sie beim Hören','naTipT naNw')}
+  {text(487,278,220,'auf die wichtigen Wörter.','naTipT naNw')}
+  {text(487,301,380,'Wichtige Wörter in Wegbeschreibungen sind:','naTipT naNw')}
+  {text(487,322,430,'– Einrichtungen in der Stadt: Bahnhof, Kino, Dom …','naTipT naNw')}
+  {text(487,344,430,'– Richtungsangaben: rechts, links, geradeaus …','naTipT naNw')}
   {audio('assets/ab-a12-cd2-track02.mp3',56,397,'2 02')}
   {badge9('2',112,400)}{text(156,401,790,'Roland möchte Simon besuchen. Er steht am Bahnhof und fragt nach dem Weg.','naYT naNw')}
   {text(156,428,810,'Hören Sie noch einmal und zeichnen Sie den Weg in den Stadtplan. Wo ist die Albachstraße?','naEx9 naNw')}
@@ -241,26 +241,26 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {audio('assets/ab-a12-cd2-track05.mp3',523,980,'2 05')}
   {badge9('3',570,981,32,19)}{text(614,980,400,'Ergänzen Sie „au“, „ei“ oder „eu“.','naYT naYT21 naNw')}
   {text(614,1007,330,'Hören Sie dann und vergleichen Sie.','naEx9 naNw')}
-  {text(612,1052,20,'a','naLet9')}{text(636,1046,10,'S','naEx9 naNw')}{field('9-3a1',646,1044,38,'3a Seid','naFld9')}{text(688,1046,82,'d ihr verh','naEx9 naNw')}{field('9-3a2',773,1044,38,'3a verheiratet','naFld9')}{text(815,1046,82,'ratet? – N','naEx9 naNw')}{field('9-3a3',900,1044,37,'3a Nein','naFld9')}{text(941,1046,16,'n,','naEx9 naNw')}
-  {text(637,1073,65,'nur Arb','naEx9 naNw')}{field('9-3a4',705,1070,38,'3a Arbeitskollegen','naFld9')}{text(747,1073,88,'tskollegen.','naEx9 naNw')}
-  {text(612,1098,20,'b','naLet9')}{text(636,1098,76,'Zur Poliz','naEx9 naNw')}{field('9-3b1',715,1095,38,'3b Polizei','naFld9')}{text(757,1098,125,'? Zuerst gerade','naEx9 naNw')}{field('9-3b2',886,1095,39,'3b geradeaus','naFld9')}{text(929,1098,44,'s und','naEx9 naNw')}
-  {text(636,1124,172,'dann am Hotel vorb','naEx9 naNw')}{field('9-3b3',810,1121,38,'3b vorbei','naFld9')}{text(852,1124,10,'.','naEx9 naNw')}
-  {text(613,1155,20,'c','naLet9')}{text(636,1150,126,'Was kostet das','naEx9 naNw')}{field('9-3c1',769,1147,37,'3c Auto','naFld9')}{text(810,1150,50,'to? –','naEx9 naNw')}
-  {text(634,1176,14,'N','naEx9 naNw')}{field('9-3c2',650,1173,35,'3c Neunzehntausend','naFld9')}{text(690,1176,60,'nzehnt','naEx9 naNw')}{field('9-3c3',752,1173,38,'3c tausend','naFld9')}{text(795,1176,38,'send','naEx9 naNw')}{field('9-3c4',837,1173,38,'3c Euro','naFld9')}{text(880,1176,30,'ro.','naEx9 naNw')}
-  {text(613,1201,20,'d','naLet9')}{text(636,1202,48,'Wie h','naEx9 naNw')}{field('9-3d1',687,1198,37,'3d heißt','naFld9')}{text(728,1202,52,'ßt das','naEx9 naNw')}{field('9-3d2',783,1198,38,'3d auf','naFld9')}{text(825,1202,20,'f D','naEx9 naNw')}{field('9-3d3',847,1198,38,'3d Deutsch','naFld9')}{text(889,1202,62,'tsch? –','naEx9 naNw')}
-  {text(636,1228,74,'Tut mir l','naEx9 naNw')}{field('9-3d4',713,1225,39,'3d leid','naFld9')}{text(756,1228,66,'d. Das w','naEx9 naNw')}{field('9-3d5',825,1225,38,'3d weiß','naFld9')}{text(867,1228,42,'ß ich','naEx9 naNw')}{field('9-3d6',913,1225,38,'3d auch','naFld9')}{text(955,1228,20,'ch','naEx9 naNw')}
-  {text(637,1252,51,'nicht.','naEx9 naNw')}
+  {text(612,1050,20,'a','naLet9')}{text(636,1044,10,'S','naEx9 naNw')}{field('9-3a1',646,1044,38,'3a Seid','naFld9')}{text(688,1044,82,'d ihr verh','naEx9 naNw')}{field('9-3a2',773,1044,38,'3a verheiratet','naFld9')}{text(815,1044,82,'ratet? – N','naEx9 naNw')}{field('9-3a3',900,1044,37,'3a Nein','naFld9')}{text(941,1044,16,'n,','naEx9 naNw')}
+  {text(637,1071,65,'nur Arb','naEx9 naNw')}{field('9-3a4',705,1070,38,'3a Arbeitskollegen','naFld9')}{text(747,1071,88,'tskollegen.','naEx9 naNw')}
+  {text(612,1096,20,'b','naLet9')}{text(636,1096,76,'Zur Poliz','naEx9 naNw')}{field('9-3b1',715,1095,38,'3b Polizei','naFld9')}{text(757,1096,125,'? Zuerst gerade','naEx9 naNw')}{field('9-3b2',886,1095,39,'3b geradeaus','naFld9')}{text(929,1096,44,'s und','naEx9 naNw')}
+  {text(636,1122,172,'dann am Hotel vorb','naEx9 naNw')}{field('9-3b3',810,1121,38,'3b vorbei','naFld9')}{text(852,1122,10,'.','naEx9 naNw')}
+  {text(613,1153,20,'c','naLet9')}{text(636,1148,126,'Was kostet das','naEx9 naNw')}{field('9-3c1',769,1147,37,'3c Auto','naFld9')}{text(810,1148,50,'to? –','naEx9 naNw')}
+  {text(634,1174,14,'N','naEx9 naNw')}{field('9-3c2',650,1173,35,'3c Neunzehntausend','naFld9')}{text(690,1174,60,'nzehnt','naEx9 naNw')}{field('9-3c3',752,1173,38,'3c tausend','naFld9')}{text(795,1174,38,'send','naEx9 naNw')}{field('9-3c4',837,1173,38,'3c Euro','naFld9')}{text(880,1174,30,'ro.','naEx9 naNw')}
+  {text(613,1199,20,'d','naLet9')}{text(636,1200,48,'Wie h','naEx9 naNw')}{field('9-3d1',687,1198,37,'3d heißt','naFld9')}{text(728,1200,52,'ßt das','naEx9 naNw')}{field('9-3d2',783,1198,38,'3d auf','naFld9')}{text(825,1200,20,'f D','naEx9 naNw')}{field('9-3d3',847,1198,38,'3d Deutsch','naFld9')}{text(889,1200,62,'tsch? –','naEx9 naNw')}
+  {text(636,1226,74,'Tut mir l','naEx9 naNw')}{field('9-3d4',713,1225,39,'3d leid','naFld9')}{text(756,1226,66,'d. Das w','naEx9 naNw')}{field('9-3d5',825,1225,38,'3d weiß','naFld9')}{text(867,1226,42,'ß ich','naEx9 naNw')}{field('9-3d6',913,1225,38,'3d auch','naFld9')}{text(955,1226,20,'ch','naEx9 naNw')}
+  {text(637,1250,51,'nicht.','naEx9 naNw')}
   {check('9-3',830,1256,{'9-3a1':'ei','9-3a2':'ei','9-3a3':'ei','9-3a4':'ei','9-3b1':'ei','9-3b2':'au','9-3b3':'ei','9-3c1':'au','9-3c2':'eu','9-3c3':'au','9-3c4':'eu','9-3d1':'ei','9-3d2':'au','9-3d3':'eu','9-3d4':'ei','9-3d5':'ei','9-3d6':'au'})}
   {audio('assets/ab-a12-cd2-track04.mp3',56,1127,'2 04')}
   {badge9('2',112,1135)}{text(155,1133,460,'Hören Sie noch einmal und ergänzen','naYT naNw')}
   {text(155,1157,200,'Sie die Regel.','naYT naNw')}
   <div className="naRegelBar" style={{left:154,top:1195,width:360,height:6}}/>
   <div className="naRegelStrip" style={{left:154,top:1195,width:15,height:135}}><span>REGEL</span></div>
-  {text(188,1207,430,'Man hört „ai“, man schreibt meistens:','naEx9 naNw')}
+  {text(188,1205,430,'Man hört „ai“, man schreibt meistens:','naEx9 naNw')}
   {field('9-2a',188,1225,84,'Regel ai','naFld9 naFld9L')}
-  {text(188,1251,430,'Man hört „oi“, man schreibt meistens:','naEx9 naNw')}
+  {text(188,1249,430,'Man hört „oi“, man schreibt meistens:','naEx9 naNw')}
   {field('9-2b',188,1269,84,'Regel oi','naFld9 naFld9L')}
-  {text(188,1300,430,'Man hört „au“ und schreibt auch:','naEx9 naNw')}
+  {text(188,1298,430,'Man hört „au“ und schreibt auch:','naEx9 naNw')}
   {field('9-2c',188,1313,84,'Regel au','naFld9 naFld9L')}
   {check('9-2',195,1336,{'9-2a':'ei','9-2b':'eu|äu','9-2c':'au'})}
   {audio('assets/ab-a12-cd2-track06.mp3',543,1300,'2 06')}
