@@ -14,15 +14,15 @@
   {
    "k": "t",
    "x": 160,
-   "y": 181,
+   "y": 179,
    "t": "Ihre Freundin / Ihr Freund hat ihren Traummann / seine Traumfrau kennengelernt.",
-   "s": 20.0,
-   "c": "naFiraM"
+   "s": 21.5,
+   "c": "naFiraB"
   },
   {
    "k": "t",
    "x": 160,
-   "y": 204,
+   "y": 205,
    "t": "Was möchten Sie wissen?",
    "s": 17.5,
    "c": "naFiraM"
@@ -38,44 +38,49 @@
   {
    "k": "t",
    "x": 157,
-   "y": 247,
+   "y": 243,
    "t": "Sammeln Sie Fragewörter.",
    "s": 17.5
   },
   {
    "k": "t",
-   "x": 156,
-   "y": 281,
-   "t": "Wer …",
-   "s": 16.0
-  },
-  {
-   "k": "t",
-   "x": 247,
+   "x": 157,
    "y": 282,
-   "t": "Wie …",
-   "s": 14.5
-  },
-  {
-   "k": "t",
-   "x": 156,
-   "y": 307,
-   "t": "Was …",
-   "s": 16.0
+   "t": "Wer …",
+   "s": 15.0,
+   "i": 1
   },
   {
    "k": "t",
    "x": 247,
-   "y": 308,
-   "t": "Wo …",
-   "s": 16.0
+   "y": 283,
+   "t": "Wie …",
+   "s": 14.5,
+   "i": 1
   },
   {
    "k": "t",
    "x": 156,
-   "y": 332,
+   "y": 308,
+   "t": "Was …",
+   "s": 16.0,
+   "i": 1
+  },
+  {
+   "k": "t",
+   "x": 247,
+   "y": 309,
+   "t": "Wo …",
+   "s": 15.5,
+   "i": 1
+  },
+  {
+   "k": "t",
+   "x": 156,
+   "y": 333,
    "t": "Woher …",
-   "s": 15.5
+   "s": 15.0,
+   "i": 1
   },
   {
    "k": "t",
@@ -88,7 +93,7 @@
   {
    "k": "t",
    "x": 156,
-   "y": 390,
+   "y": 385,
    "t": "Notieren Sie fünf Fragen auf Kärtchen.",
    "s": 18.0
   },
@@ -105,21 +110,24 @@
    "x": 154,
    "y": 633,
    "t": "Legen Sie alle Kärtchen auf einen Stapel. Person A zieht eine Karte und fragt Person B.",
-   "s": 18.0
+   "s": 19.5,
+   "c": "naFiraR"
   },
   {
    "k": "t",
    "x": 154,
    "y": 659,
    "t": "Person B beschreibt ihren Traummann / seine Traumfrau. Dann zieht Person B eine",
-   "s": 18.0
+   "s": 19.0,
+   "c": "naFiraR"
   },
   {
    "k": "t",
    "x": 153,
    "y": 682,
    "t": "Karte und fragt Person C …",
-   "s": 18.5
+   "s": 20.0,
+   "c": "naFiraR"
   },
   {
    "k": "t",
@@ -198,7 +206,7 @@
    "x": 151,
    "y": 1068,
    "t": "anmelden – absagen – vergessen – einkaufen",
-   "s": 14.0
+   "s": 18.5
   },
   {
    "k": "r",
@@ -220,7 +228,24 @@
    "k": "t",
    "x": 151,
    "y": 1134,
-   "t": "Ordnen Sie die Wörter aus 1 zu.",
+   "t": "Ordnen Sie die Wörter aus",
+   "s": 20.0,
+   "c": "naFiraM"
+  },
+  {
+   "k": "t",
+   "x": 413,
+   "y": 1134,
+   "t": "1",
+   "s": 20.0,
+   "c": "naFiraM",
+   "col": "#5c75ab"
+  },
+  {
+   "k": "t",
+   "x": 425,
+   "y": 1134,
+   "t": " zu.",
    "s": 20.0,
    "c": "naFiraM"
   },
@@ -323,7 +348,7 @@
   {
    "k": "t",
    "x": 637,
-   "y": 963,
+   "y": 959,
    "t": "Hören Sie das Gespräch.",
    "s": 20.0,
    "c": "naFiraM"
@@ -400,16 +425,16 @@
   },
   {
    "k": "t",
-   "x": 657,
-   "y": 1253,
-   "t": "Schade. Na ja, vielleicht ein anderes Mal.",
-   "s": 16.5
-  },
-  {
-   "k": "t",
    "x": 656,
    "y": 1278,
    "t": "Ja, gern … ein anderes Mal.",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 657,
+   "y": 1259,
+   "t": "Schade. Na ja, vielleicht ein anderes Mal.",
    "s": 18.5
   },
   {
