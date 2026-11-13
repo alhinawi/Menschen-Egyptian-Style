@@ -1,3 +1,4 @@
+import {CheckButton} from './CheckButton';
 import {PageImage} from './PageImage';
 import {renderNative} from './nativeComponents';
 import {WordBank} from '../exercises/WordBank';
@@ -83,6 +84,7 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   if (['prev', 'next', 'plus', 'minus', 'fit', 'pageJump', 'lessonNav', 'closeAudio', 'palette', 'audioToggle', 'clearMap'].includes(attrs.id) || attrs.class?.split(' ').some(c => ['soundToggle', 'listen', 'coverOpen'].includes(c)) || 'data-jump' in attrs || 'data-color' in attrs) return createElement(ReaderControl, {key, tag, attrs: {...props, 'data-react-control-id': path}, children: rendered});
   if (attrs.id === 'zoomValue') return createElement(ZoomValue, {key, tag, attrs: props, children: rendered});
   if (['input', 'select'].includes(tag)) return createElement(PersistentField, {key, tag, attrs: props, children: rendered});
+  if(tag==='button'&&children.some(c=>typeof c==='string'&&c.includes('Prüfen')))return createElement(CheckButton,props);
   return createElement(tag, props, ...rendered);
 }
 

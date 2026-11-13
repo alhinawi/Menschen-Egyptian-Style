@@ -1,3 +1,4 @@
+import {CheckButton} from '../components/CheckButton';
 import {PageImage} from '../components/PageImage';
 import {usePageReset} from '../exercises/usePageReset';
 import {useLayoutEffect,useRef,useState} from 'react';
@@ -17,7 +18,7 @@ export function NativeAB11Lesson10Start({page}:{page:string}){
  const art=(name:string,x:number,y:number,w:number,h:number)=><PageImage className="mArt" alt={'Originalabbildung '+name} src={`assets/native-ab11/p${page}-${name}.png`} style={{left:x,top:Y(y),width:w,height:h*sy}}/>;
  const title=(n:string,y:number,s:string)=><><div className="mNumber" style={{left:132,top:Y(y)}}>{n}</div>{txt(167,y,672,s,'mTitle')}</>;
  const head=(s:string)=><>{txt(132,135,740,s,'mHeader')}{s==='SELBSTEINSCHÄTZUNG'&&txt(508,135,320,'Das kann ich!','mScript')}</>;
- const check=(id:string,x:number,y:number,expected:Record<string,string>,extra=()=>true)=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><button onClick={()=>G({...graded,[id]:Object.entries(expected).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))&&extra()})}>Prüfen ✓</button><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const check=(id:string,x:number,y:number,expected:Record<string,string>,extra=()=>true)=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:Object.entries(expected).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))&&extra()})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const messages=[['a','Liebe Susi, ich kaufe heute ein! ☺ Dann kochen wir und dann sehen wir noch ein bisschen fern, ok?',1080],['b','Hallo Herr Peters,\nFrau Alvarez kommt heute um 17.35 Uhr am Flughafen an. Sie wohnt im Hotel „Am Stadtpark“.\nViele Grüße Bianca Schwiering',1245],['c','Hallo Andrea, hier meine Adresse: Humboldtstraße 121a. Ich steige immer am Kolumbusplatz aus. Dann sind es nur 5 Min.\nBis bald Martin',1455],['d','Gehen wir heute in die Disco? Die „Wunderbar“ finde ich echt gut. Ich rufe Dich an.',1665]];
  const verbs:Record<string,string[]>={a:['kochen','sehen','fern'],b:['kommt','an','wohnt'],c:['steige','aus','sind'],d:['gehen','finde','rufe','an']};
  const marksCorrect=()=>messages.every(([id,text])=>String(text).split(/(\s+)/).every((w,i)=>!(/\S/.test(w))||String(id)==='a'&&['kaufe','ein!'].includes(w)||((v['mark-'+id+'-'+i]==='true')===verbs[String(id)].includes(norm(w)))));
