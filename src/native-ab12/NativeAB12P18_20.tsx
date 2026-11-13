@@ -20,6 +20,7 @@ export function NativeAB12P18_20({page}:{page:string}){
  const field=(id:string,x:number,y:number,w:number,label:string,cls='')=><input className={'naField '+cls} aria-label={label} data-native-field={id} style={{left:x,top:y,width:w}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
  const rule=(x:number,y:number,w:number)=><div className="naRule" style={{left:x,top:y,width:w}}/>;
  const dot=(id:string,value:string,x:number,y:number,label:string)=><input type="radio" className="naDot" name={key+'-'+id} aria-label={label} data-native-field={id} style={{left:x,top:y}} checked={values[id]===value} onChange={()=>set(id,value)}/>;
+ const pick=(id:string,value:string,x:number,y:number,label:string)=><button type="button" className={'naPick'+(values[id]===value?' selected':'')} aria-label={label} aria-pressed={values[id]===value} data-native-field={id} onClick={()=>set(id,value)} style={{left:x,top:y}}>{value}</button>;
  const circle=(id:string,x:number,y:number,label:string)=><input className="naCNum" aria-label={label} data-native-field={id} style={{left:x,top:y}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false} inputMode="numeric" maxLength={1}/>;
  const check=(id:string,x:number,y:number,answers:Record<string,string>,cls='')=><div className={'naCheck '+cls} data-check={id} style={{left:x,top:y}}><button onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}>Prüfen ✓</button><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,t:string,cls='')=><div className={'naTitle '+cls} style={{left:x,top:y,width:w}}><b>{n}</b><Words text={t}/></div>;
@@ -38,20 +39,20 @@ export function NativeAB12P18_20({page}:{page:string}){
   {art('globe',70,240,42,42)}
   {text(125,216,20,'a','naExL')}
   {text(161,214,400,'Hören Sie und nummerieren Sie.')}
-  {circle('p18-nKirche',154,253,'Kirche Nummer')}
-  {circle('p18-nSpielplatz',249,253,'Spielplatz Nummer')}
-  <div className="naCNumPrint" style={{left:373,top:253}}>1</div>
-  {circle('p18-nWald',491,253,'Wald Nummer')}
-  {circle('p18-nMeer',573,253,'Meer Nummer')}
-  {circle('p18-nCafé',664,253,'Café Nummer')}
-  {circle('p18-nHafen',739,253,'Hafen Nummer')}
-  {text(186,253,60,'Kirche')}
-  {text(281,253,90,'Spielplatz')}
-  {text(407,253,90,'Flughafen')}
-  {text(523,253,55,'Wald')}
-  {text(605,253,55,'Meer')}
-  {text(696,253,40,'Café')}
-  {text(771,253,55,'Hafen')}
+  {circle('p18-nKirche',155,258,'Kirche Nummer')}
+  {circle('p18-nSpielplatz',251,258,'Spielplatz Nummer')}
+  <div className="naCNumPrint" style={{left:377,top:258}}>1</div>
+  {circle('p18-nWald',498,258,'Wald Nummer')}
+  {circle('p18-nMeer',576,258,'Meer Nummer')}
+  {circle('p18-nCafé',662,258,'Café Nummer')}
+  {circle('p18-nHafen',745,258,'Hafen Nummer')}
+  {text(186,253,60,'Kirche','naF21')}
+  {text(281,253,90,'Spielplatz','naF21')}
+  {text(407,253,90,'Flughafen','naF21')}
+  {text(523,253,55,'Wald','naF21')}
+  {text(605,253,55,'Meer','naF21')}
+  {text(696,253,40,'Café','naF21')}
+  {text(771,253,55,'Hafen','naF21')}
   {check('g1',850,242,{'p18-nKirche':'3','p18-nSpielplatz':'2','p18-nWald':'6','p18-nMeer':'5','p18-nCafé':'7','p18-nHafen':'4'},'naCheckCol')}
   {text(125,302,20,'b','naExL')}
   {text(161,302,500,'Ergänzen Sie aus a. Notieren und vergleichen Sie.')}
@@ -80,12 +81,12 @@ export function NativeAB12P18_20({page}:{page:string}){
   {text(451,520,150,'playground')}
   {text(451,549,150,'forest')}
   {[370,399,432,461,491,520,549].map((y,i)=>field('p18-ms'+(i+1),650,y,315,'Meine Sprache Zeile '+(i+1),'naFieldBlank'))}
-  {check('g2',150,582,{'p18-dCafé':'Café','p18-dHafen':'Hafen','p18-dFlughafen':'Flughafen','p18-dKirche':'Kirche','p18-dSpielplatz':'Spielplatz'})}
+  {check('g2',150,577,{'p18-dCafé':'Café','p18-dHafen':'Hafen','p18-dFlughafen':'Flughafen','p18-dKirche':'Kirche','p18-dSpielplatz':'Spielplatz'},'naCheckSm')}
   {kb(78,610,'KB 3')}
   {title('2',125,606,600,'Was ist das? Ergänzen Sie.','naOB naNw')}
   <div className="naSide" style={{left:55,top:650}}>WÖRTER</div>
-  <div className="naBank" style={{left:165,top:652}}>
-   <span className="tapWord" role="button" tabIndex={0} data-word="Kin" data-phrase="Kin">Kin</span>{' | '}
+  <div className="naBank" style={{left:152,top:647}}>
+   <s><span className="tapWord" role="button" tabIndex={0} data-word="Kin" data-phrase="Kin">Kin</span></s>{' | '}
    <span className="tapWord" role="button" tabIndex={0} data-word="me" data-phrase="me">me</span>{' | '}
    <span className="tapWord" role="button" tabIndex={0} data-word="ge" data-phrase="ge">ge</span>{' | '}
    <span className="tapWord" role="button" tabIndex={0} data-word="Ber" data-phrase="Ber">Ber</span>{' | '}
@@ -98,10 +99,10 @@ export function NativeAB12P18_20({page}:{page:string}){
    <span className="tapWord" role="button" tabIndex={0} data-word="Rat" data-phrase="Rat">Rat</span>{' | '}
    <span className="tapWord" role="button" tabIndex={0} data-word="haus" data-phrase="haus">haus</span>{' | '}
    <span className="tapWord" role="button" tabIndex={0} data-word="Ki" data-phrase="Ki">Ki</span>{' | '}
-   <b className="naBankB"><span className="tapWord" role="button" tabIndex={0} data-word="der" data-phrase="der">der</span></b>{' | '}
-   <b className="naBankB"><span className="tapWord" role="button" tabIndex={0} data-word="gar" data-phrase="gar">gar</span></b>{' | '}
+   <s><span className="tapWord" role="button" tabIndex={0} data-word="der" data-phrase="der">der</span></s>{' | '}
+   <s><span className="tapWord" role="button" tabIndex={0} data-word="gar" data-phrase="gar">gar</span></s>{' | '}
    <span className="tapWord" role="button" tabIndex={0} data-word="ber" data-phrase="ber">ber</span>{' | '}
-   <b className="naBankB"><span className="tapWord" role="button" tabIndex={0} data-word="ten" data-phrase="ten">ten</span></b>{' | '}
+   <s><span className="tapWord" role="button" tabIndex={0} data-word="ten" data-phrase="ten">ten</span></s>{' | '}
    <span className="tapWord" role="button" tabIndex={0} data-word="ge" data-phrase="ge">ge</span>
   </div>
   {text(163,698,20,'a')}
@@ -133,13 +134,13 @@ export function NativeAB12P18_20({page}:{page:string}){
   {title('3',125,933,600,'Wo bin ich? Notieren Sie.','naOB naNw')}
   {art('bubble',690,925,170,52)}
   <div className="naSide" style={{left:55,top:975}}>WÖRTER</div>
-  <div className="naBank" style={{left:171,top:978}}>
+  <div className="naBank" style={{left:158,top:973}}>
    <span className="tapWord" role="button" tabIndex={0} data-word="Park" data-phrase="Park">Park</span>{' | '}
-   <b className="naBankB"><span className="tapWord" role="button" tabIndex={0} data-word="Geschäft" data-phrase="Geschäft/Laden">Geschäft</span><span className="tapWord" role="button" tabIndex={0} data-word="Laden" data-phrase="Geschäft/Laden">/Laden</span></b>{' | '}
+   <s><span className="tapWord" role="button" tabIndex={0} data-word="Geschäft" data-phrase="Geschäft/Laden">Geschäft</span><span className="tapWord" role="button" tabIndex={0} data-word="Laden" data-phrase="Geschäft/Laden">/Laden</span></s>{' | '}
    <span className="tapWord" role="button" tabIndex={0} data-word="Bibliothek" data-phrase="Bibliothek">Bibliothek</span>{' | '}
    <span className="tapWord" role="button" tabIndex={0} data-word="Turm" data-phrase="Turm">Turm</span>{' | '}
    <span className="tapWord" role="button" tabIndex={0} data-word="Schloss" data-phrase="Schloss">Schloss</span>{' | '}
-   <b className="naBankB"><span className="tapWord" role="button" tabIndex={0} data-word="Markt" data-phrase="Markt">Markt</span></b>{' | '}
+   <span className="tapWord" role="button" tabIndex={0} data-word="Markt" data-phrase="Markt">Markt</span>{' | '}
    <span className="tapWord" role="button" tabIndex={0} data-word="Fluss" data-phrase="Fluss">Fluss</span>
   </div>
   {text(164,1014,14,'a')}
@@ -216,62 +217,51 @@ export function NativeAB12P18_20({page}:{page:string}){
   {field('p19-5e',642,429,201,'Korrektur 5e')}
   {check('g5',870,350,{'p19-5b':'nicht so teuer','p19-5c':'ein Theater','p19-5d':'in einem Bahnhof','p19-5e':'tanzen'},'naCheckCol')}
   {title('6',120,490,700,'Was passt? Markieren Sie.','naOB naNw')}
-  {text(152,530,20,'a','naBold')}
-  {text(177,530,44,'Wie')}
-  <div className="naText" style={{left:221,top:530,width:62}}><span className="naHl"><Words text="gefällt"/></span></div>
-  {text(283,530,406,'/ gefallen dir der Stadtteil? – Toll, besonders')}
-  {dot('6a2','gefällt',694,533,'gefällt (6a)')}
-  {text(724,533,62,'gefällt')}
-  {text(790,533,12,'/')}
-  {dot('6a2','gefallen',803,533,'gefallen (6a)')}
-  {text(833,533,76,'gefallen')}
-  {text(917,533,60,'mir die')}
-  {text(177,552,60,'Cafés.')}
-  {text(152,582,20,'b','naBold')}
-  {dot('6b1','Gehört',174,582,'Gehört (6b)')}
-  {text(204,582,65,'Gehört')}
-  {text(272,582,12,'/')}
-  {dot('6b1','Gehören',284,582,'Gehören (6b)')}
-  {text(314,582,78,'Gehören')}
-  {text(400,582,530,'die Schlüssel Dörte? – Nein, das sind meine. Aber der')}
-  {text(177,608,90,'dem Tisch')}
-  {dot('6b2','gehört',276,608,'gehört (6b)')}
-  {text(306,608,64,'gehört')}
-  {text(373,608,12,'/')}
-  {dot('6b2','gehören',384,608,'gehören (6b)')}
-  {text(414,608,77,'gehören')}
-  {text(497,608,60,'Dörte.')}
-  {text(152,634,20,'c','naBold')}
-  {text(180,634,620,'Du kannst das Rezept nicht lesen? Dann brauchst du eine neue Brille.')}
-  {text(177,661,30,'Die')}
-  {dot('6c','hilft',216,661,'hilft (6c)')}
-  {text(246,661,48,'hilft')}
-  {text(298,661,12,'/')}
-  {dot('6c','helfen',309,661,'helfen (6c)')}
-  {text(339,661,55,'helfen')}
-  {text(398,661,40,'dir.')}
-  {text(152,688,20,'d','naBold')}
-  {text(180,688,630,'Clemens möchte Deutsch lernen und macht viele Übungen. Die Übungen')}
-  {dot('6d','hilft',823,688,'hilft (6d)')}
-  {text(853,688,48,'hilft')}
-  {text(904,688,12,'/')}
-  {dot('6d','helfen',915,688,'helfen (6d)')}
-  {text(945,688,55,'helfen')}
-  {text(177,714,40,'ihm.')}
-  {text(152,742,20,'e','naBold')}
-  {dot('6e1','Schmeckt',172,742,'Schmeckt (6e)')}
-  {text(202,742,88,'Schmeckt')}
-  {text(293,742,12,'/')}
-  {dot('6e1','Schmecken',304,742,'Schmecken (6e)')}
-  {text(334,742,101,'Schmecken')}
-  {text(443,742,360,'dir der Salat? – Nein, aber die Kartoffeln')}
-  {dot('6e2','schmeckt',174,768,'schmeckt (6e)')}
-  {text(204,768,87,'schmeckt')}
-  {text(294,768,12,'/')}
-  {dot('6e2','schmecken',305,768,'schmecken (6e)')}
-  {text(335,768,101,'schmecken')}
-  {text(444,768,110,'mir sehr gut.')}
-  {check('g6',620,764,{'6a2':'gefallen','6b1':'Gehören','6b2':'gehört','6c':'hilft','6d':'helfen','6e1':'Schmeckt','6e2':'schmecken'},'naCheckCol')}
+  {text(152,530,20,'a','naBold naF21')}
+  {text(177,530,44,'Wie','naF21')}
+  <div className="naText naF21" style={{left:221,top:530,width:62}}><span className="naHl"><Words text="gefällt"/></span></div>
+  {text(283,530,406,'/ gefallen dir der Stadtteil? – Toll, besonders','naF21')}
+  {pick('6a2','gefällt',692,530,'gefällt (6a)')}
+  {text(754,530,14,'/','naF21')}
+  {pick('6a2','gefallen',768,530,'gefallen (6a)')}
+  {text(850,530,70,'mir die','naF21')}
+  {text(177,556,60,'Cafés.','naF21')}
+  {text(152,582,20,'b','naBold naF21')}
+  {pick('6b1','Gehört',177,582,'Gehört (6b)')}
+  {text(241,582,14,'/','naF21')}
+  {pick('6b1','Gehören',256,582,'Gehören (6b)')}
+  {text(341,582,590,'die Schlüssel Dörte? – Nein, das sind meine. Aber der Schlüssel auf','naF21')}
+  {text(176,608,90,'dem Tisch','naF21')}
+  {pick('6b2','gehört',274,608,'gehört (6b)')}
+  {text(337,608,14,'/','naF21')}
+  {pick('6b2','gehören',351,608,'gehören (6b)')}
+  {text(436,608,60,'Dörte.','naF21')}
+  {text(152,634,20,'c','naBold naF21')}
+  {text(177,634,615,'Du kannst das Rezept nicht lesen? Dann brauchst du eine neue Brille.','naF21')}
+  {text(176,660,30,'Die','naF21')}
+  {pick('6c','hilft',216,660,'hilft (6c)')}
+  {text(260,660,14,'/','naF21')}
+  {pick('6c','helfen',272,660,'helfen (6c)')}
+  {text(343,660,40,'dir.','naF21')}
+  {text(152,688,20,'d','naBold naF21')}
+  {text(175,688,430,'Clemens möchte Deutsch lernen und macht viele','naF21')}
+  {text(611,688,84,'Übungen.','naF21')}
+  {text(701,688,28,'Die','naF21')}
+  {text(735,688,82,'Übungen','naF21')}
+  {pick('6d','hilft',824,688,'hilft (6d)')}
+  {text(869,688,14,'/','naF21')}
+  {pick('6d','helfen',884,688,'helfen (6d)')}
+  {text(175,714,40,'ihm.','naF21')}
+  {text(152,742,20,'e','naBold naF21')}
+  {pick('6e1','Schmeckt',174,742,'Schmeckt (6e)')}
+  {text(264,742,14,'/','naF21')}
+  {pick('6e1','Schmecken',277,742,'Schmecken (6e)')}
+  {text(388,742,360,'dir der Salat? – Nein, aber die Kartoffeln','naF21')}
+  {pick('6e2','schmeckt',759,742,'schmeckt (6e)')}
+  {text(846,742,14,'/','naF21')}
+  {pick('6e2','schmecken',861,742,'schmecken (6e)')}
+  {text(174,768,120,'mir sehr gut.','naF21')}
+  {check('g6',160,796,{'6a2':'gefallen','6b1':'Gehören','6b2':'gehört','6c':'hilft','6d':'helfen','6e1':'Schmeckt','6e2':'schmecken'},'naCheckSm')}
   {title('7',120,826,850,'Ergänzen Sie die passenden Verben aus 6 in der richtigen Form.','naOB naNw')}
   {text(152,888,110,'Der Stadtteil')}
   {art('gefaellt7',266,872,146,44)}
