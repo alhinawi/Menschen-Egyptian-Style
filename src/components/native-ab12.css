@@ -70,3 +70,7 @@
 .naCanvas .naTitle.naOB b::before{content:'';position:absolute;left:-4px;top:-4px;width:calc(100% + 4px);height:2px;background:#c82828}
 .naCanvas .naTitle.naOB b::after{content:'';position:absolute;left:-4px;top:-4px;width:2px;height:calc(100% + 4px);background:#c82828}
 .naTitle.naFB b{background:#fa2904}
+.naCanvas .naField.naLined{height:var(--la-h)!important;line-height:var(--la-lh)!important;padding:0 2px!important;border-bottom:0!important;resize:none;overflow:hidden;white-space:pre-wrap;overflow-wrap:anywhere;display:block;background-color:transparent!important}
+.naCanvas .naField.naLined.naLinedRules{background-image:linear-gradient(to bottom,transparent calc(var(--la-lh) - 1.5px),#9aa3ab calc(var(--la-lh) - 1.5px))!important;background-size:100% var(--la-lh)!important;background-repeat:repeat-y!important;background-color:transparent!important}
+.naCanvas .naField.naLined.naLinedRules:focus{outline:1.5px solid #b9c2ca;outline-offset:-1px}
+.naCanvas .naField.naLined:not(.naLinedRules){outline:0!important;box-shadow:none!important}
