@@ -57,10 +57,10 @@
 
 .nativeAB11Lesson10Mid .mCanvas .mText.mFooterTabOdd{color:#fff}
 .nativeAB11Lesson10Mid .mBannerPink{position:absolute;background:#fce0e8}
-.nativeAB11Lesson10Mid .mCanvas .mText.mBannerTitle{font:32px KbDroid,Georgia,serif;color:#111}
+.nativeAB11Lesson10Mid .mCanvas .mText.mBannerTitle{font:33.5px KbDroid,Georgia,serif;color:#111}
 .nativeAB11Lesson10Mid .mCanvas .mText .mExample.mExU{border-bottom:1px solid #555}
 .nativeAB11Lesson10Mid .mCanvas .mText.mAnagram{letter-spacing:2px}
 .nativeAB11Lesson10Mid .mPairDot{position:absolute;width:9px;height:9px;border-radius:50%;background:#29a3c7}
 .nativeAB11Lesson10Mid[data-native-ab11-page='84'] .mCanvas .mNumber{background:#bc0231}
 
-.nativeAB11Lesson10Mid .mCanvas .mText.mDlg{letter-spacing:1px}
+.nativeAB11Lesson10Mid .mCanvas .mText.mDlg{font-size:16.5px}
