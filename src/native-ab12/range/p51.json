@@ -18,7 +18,7 @@
 "w": 431,
 "t": "SELBSTEINSCHÄTZUNG",
 "s": 32,
-"col": "#4a4a45",
+"col": "#222220",
 "c": "naHead"
 },
 {
@@ -427,7 +427,7 @@
 "t": "RÜCKBLICK",
 "s": 30,
 "col": "#4a4a45",
-"c": "naHead"
+"c": "naHead naRThin"
 },
 {
 "k": "t",
