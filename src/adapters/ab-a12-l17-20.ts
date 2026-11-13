@@ -8,20 +8,21 @@ const $=(s: string): any=>document.querySelector(s)!,data=window.AB1720_PAGES,st
 let state: Record<string, any>={};try{state=JSON.parse(localStorage.getItem(storage)||'{}')}catch{};const save=()=>{try{localStorage.setItem(storage,JSON.stringify(state))}catch{}};
 const esc=(s: unknown)=>String(s).replace(/[&<>"']/g,(c: string)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'} as Record<string,string>)[c]);
 const norm=(s: unknown)=>{const t=String(s).normalize('NFC').toLocaleLowerCase('de').trim();if(/^[.!?]+$/.test(t))return t;return t.replace(/[.!?]+$/,'').replace(/[„“"']/g,'').replace(/\s*\/\s*/g,'/').replace(/\s+/g,' ')};
+const soundButton=$('.soundToggle');soundButton.dataset.soundOn=String(state.sounds!==false);soundButton.onclick=()=>{state.sounds=state.sounds===false;save();soundButton.dataset.soundOn=String(state.sounds)};
 let pageIndex=0,scale=1,timer: ReturnType<typeof setTimeout>;
 function notify(s: string){const n=$('#notice');n.textContent=s;n.hidden=false;clearTimeout(timer);timer=setTimeout(()=>n.hidden=true,3500)}
 
 const pages=[...stage.children];
 const flip=new St.PageFlip(stage,{width:900,height:1220,size:'fixed',usePortrait:true,autoSize:false,drawShadow:true,maxShadowOpacity:.08,flippingTime:360,mobileScrollSupport:true,useMouseEvents:false,clickEventForward:true,disableFlipByClick:true,showPageCorners:false});
 function progress(){$('#progress').textContent=Object.entries(state).filter(([k,v])=>k.startsWith('done-')&&v).length+' ✓'}
-function updatePage(i: number){pageIndex=i;const p=data[i];$('#pageJump').value=p.page;$('#prev').disabled=i===0;$('#next').disabled=i===pages.length-1;$('#practiceCount').textContent=p.exercises.length;$('#lessonNav').value=p.page<42?36:p.page<48?42:p.page<54?48:p.page<60?54:60;state.page=i;save();history.replaceState(null,'','#'+p.page);$('#audio').pause();$('.audioDock').hidden=true;progress()}
+function updatePage(i: number){pageIndex=i;const p=data[i];$('#pageJump').value=i;$('#prev').disabled=i===0;$('#next').disabled=i===pages.length-1;$('#practiceCount').textContent=p.exercises.length;$('#lessonNav').value=p.page<42?36:p.page<48?42:p.page<54?48:p.page<60?54:60;state.page=i;save();history.replaceState(null,'','#'+p.page);$('#audio').pause();$('.audioDock').hidden=true;progress()}
 let initialPage=Math.max(0,Math.min(29,state.page||0));const hashPage=Number(location.hash.slice(1));if(hashPage>=36&&hashPage<=65)initialPage=hashPage-36;
 flip.on('flip',(e: any)=>updatePage(e.data));flip.on('init',()=>updatePage(initialPage));flip.loadFromHTML(pages);flip.turnToPage(initialPage);updatePage(initialPage);
 function setZoom(n: number){scale=Math.max(Math.min(1,innerWidth/900),Math.min(2,n));spread.style.zoom=scale;spread.style.margin=900*scale>innerWidth?'0':'auto';$('#zoomValue').dataset.zoom=Math.round(scale*100)+'%';document.body.dataset.bookZoomed=900*scale>viewport.clientWidth+2?'true':'false'}
 function fit(){setZoom(Math.min(1,innerWidth/900))}fit();$('#fit').onclick=fit;$('#plus').onclick=()=>setZoom(scale+.2);$('#minus').onclick=()=>setZoom(scale-.2);let viewportWidth=innerWidth;window.addEventListener('resize',()=>{const previousWidth=viewportWidth;viewportWidth=innerWidth;if(Math.abs(viewportWidth-previousWidth)<2)return;const wasFit=Math.abs(scale-Math.min(1,previousWidth/900))<.015;if(wasFit)fit();else setZoom(scale)});
 function turn(d: number,corner='top'){if(flip.getState()!=='read')return;if(d>0&&pageIndex===29||d<0&&pageIndex===0)return;const settings=flip.getSettings();settings.disableFlipByClick=false;if(d>0)flip.flipNext(corner);else flip.flipPrev(corner);settings.disableFlipByClick=true}
 function jump(p: string|number){flip.turnToPage(Number(p)-36);scrollTo(0,0);viewport.scrollLeft=0}
-$('#next').onclick=()=>turn(1);$('#prev').onclick=()=>turn(-1);$('#pageJump').onchange=(e: any)=>jump(e.target.value);$('#lessonNav').onchange=(e: any)=>jump(e.target.value);
+$('#next').onclick=()=>turn(1);$('#prev').onclick=()=>turn(-1);$('#pageJump').onchange=(e: any)=>jump(Number(e.target.value)+36);$('#lessonNav').onchange=(e: any)=>jump(e.target.value);
 window.addEventListener('keydown',(e: any)=>{if(document.querySelector<HTMLElement>('dialog[open]')||e.target.closest('input,select,textarea'))return;if(e.key==='ArrowRight')turn(1);if(e.key==='ArrowLeft')turn(-1)});
 // Same held-page touch behavior as the approved book, scaled to this workbook's scan ratio.
 let gesture: any=null,pinching=false,mouse: any=null;const zoomed=()=>900*scale>viewport.clientWidth+2;

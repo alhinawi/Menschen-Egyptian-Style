@@ -4,8 +4,7 @@
     "title": "Menschen A1.2 · Arbeitsbuch Lektion 13–16",
     "reader": true,
     "themes": true,
-    "styles": [
-    ],
+    "styles": [],
     "initializers": [
       "glossary",
       "batch-ab12-glossary",
@@ -26,7 +25,7 @@
     "slug": "ab-a12-l17-20",
     "title": "Menschen A1.2 · Arbeitsbuch 17-20",
     "reader": true,
-    "themes": false,
+    "themes": true,
     "styles": [
       "ab-a12-l17-20.css"
     ],
@@ -51,8 +50,7 @@
     "title": "Menschen · Arbeitsbuch A1.2 Lektion 21–24",
     "reader": true,
     "themes": true,
-    "styles": [
-    ],
+    "styles": [],
     "initializers": [
       "glossary",
       "batch-glossary",
@@ -88,8 +86,7 @@
     "title": "Menschen · Arbeitsbuch Lektion 10–12",
     "reader": true,
     "themes": true,
-    "styles": [
-    ],
+    "styles": [],
     "initializers": [
       "glossary",
       "ab-batch-glossary",
@@ -156,8 +153,7 @@
     "title": "Menschen · Arbeitsbuch A1.1 · Lektion 1",
     "reader": true,
     "themes": true,
-    "styles": [
-    ],
+    "styles": [],
     "initializers": [
       "glossary",
       "pronunciation-index",
@@ -180,8 +176,7 @@
     "title": "Menschen · Arbeitsbuch A1.1 · Lektion 2",
     "reader": true,
     "themes": true,
-    "styles": [
-    ],
+    "styles": [],
     "initializers": [
       "glossary",
       "pronunciation-index",
@@ -204,8 +199,7 @@
     "title": "Menschen · Arbeitsbuch A1.1 · Lektion 3",
     "reader": true,
     "themes": true,
-    "styles": [
-    ],
+    "styles": [],
     "initializers": [
       "glossary",
       "pronunciation-index",
@@ -252,8 +246,7 @@
     "title": "Menschen · Arbeitsbuch A1.1 · Lektion 3",
     "reader": true,
     "themes": true,
-    "styles": [
-    ],
+    "styles": [],
     "initializers": [
       "glossary",
       "pronunciation-index",
@@ -276,8 +269,7 @@
     "title": "Menschen · Lektion 1",
     "reader": true,
     "themes": true,
-    "styles": [
-    ],
+    "styles": [],
     "initializers": [
       "glossary",
       "pronunciation-index",
@@ -359,8 +351,7 @@
     "title": "Menschen · Lektion 10–12",
     "reader": true,
     "themes": true,
-    "styles": [
-    ],
+    "styles": [],
     "initializers": [
       "glossary",
       "batch-glossary",
@@ -386,8 +377,7 @@
     "title": "Menschen · Lektion 2–3",
     "reader": true,
     "themes": true,
-    "styles": [
-    ],
+    "styles": [],
     "initializers": [
       "glossary",
       "batch-glossary",
@@ -441,8 +431,7 @@
     "title": "Menschen · Lektion 4–6",
     "reader": true,
     "themes": true,
-    "styles": [
-    ],
+    "styles": [],
     "initializers": [
       "glossary",
       "batch-glossary-46",
@@ -465,8 +454,7 @@
     "title": "Menschen · Lektion 7–9",
     "reader": true,
     "themes": true,
-    "styles": [
-    ],
+    "styles": [],
     "initializers": [
       "glossary",
       "batch-glossary",

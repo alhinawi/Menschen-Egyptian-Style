@@ -747,3 +747,7 @@ body.readerSplitControls .controls .translationControls button{font-size:clamp(8
 /* Shared reader help stays in normal flow, above the fixed one-row controls. */
 body.readerSplitControls .helpBanner{position:static;box-sizing:border-box;width:100%;height:auto;min-height:0;max-height:none;overflow:visible;white-space:normal;padding:10px 12px;line-height:1.7;margin:0 0 12px;font-size:13px}
 body.readerSplitControls .controls .lnv-pageSlot{display:contents}
+
+.legacyReaderTools{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px;padding:12px;background:var(--paper,#fffefa);color:var(--ink,#26382e)}
+.legacyReaderTools button{min-height:44px;padding:8px 12px;font:14px Arial,sans-serif}
+.legacyReaderTools #practiceButton{background:#3d6449;color:white;border-color:#3d6449}
