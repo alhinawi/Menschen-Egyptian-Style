@@ -18,3 +18,27 @@
 .naCanvas .naText.naB20{font-weight:bold}
 .naCanvas .naSq8{position:absolute;width:9px;height:9px;background:#1a2f9e}
 .naCanvas .naTri8{position:absolute;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:10px solid #4da645}
+.naCanvas .naText.naTrain{font:28px Georgia;color:#595959;letter-spacing:2px}
+.naCanvas .naText.naTrainIt{font:italic 19px Georgia;color:#666}
+.naCanvas .naRuleY9{position:absolute;height:2px;background:#f6eb23}
+.naCanvas .naL13{position:absolute;background:#fce80f;color:#fff;font:bold 48px/57px Georgia;text-align:center}
+.naCanvas .naBand9{position:absolute;background:#fcfcde}
+.naCanvas .naW9{position:absolute;background:transparent;border:0!important;padding:0 3px;font:19px 'Times New Roman'!important;color:#3c5a78;height:24px;cursor:pointer;z-index:3;min-height:0!important}
+.naCanvas .naW9.on{background:#fefb7e;font-weight:bold}
+.naCanvas .naW9s{position:absolute;background:#fefb7e;font:bold 19px 'Times New Roman'!important;color:#3c3520;padding:0 3px;height:24px;z-index:2}
+.naCanvas .naText.naSep9{color:#3c5a78;font-size:19px}
+.naCanvas .naTipBar{position:absolute;background:#dbc844}
+.naCanvas .naTipTab{position:absolute;background:#fce80f;color:#222;font:bold 11px Arial;writing-mode:vertical-rl;text-align:center;padding-top:6px}
+.naCanvas .naText.naTipT{color:#444;font-size:18px}
+.naCanvas .naRegelBar{position:absolute;background:#dde2ea}
+.naCanvas .naRegelStrip{position:absolute;background:#dee3d9;color:#5a6b5a;font:bold 11px Arial;writing-mode:vertical-rl;display:flex;align-items:flex-end;justify-content:center;padding-bottom:6px}
+.naCanvas .naText.naTitleTxt{font:bold 19px FiraSans,'Trebuchet MS',sans-serif}
+.naCanvas .naText.naLet9{color:#444;font-size:19px}
+.naCanvas .naModul9{position:absolute;background:#fce80f;color:#222;font:12px/20px Arial;text-align:center}
+.naCanvas .naText.naTrain2{font:24px Georgia;color:#595959;letter-spacing:1.5px}
+.naCanvas .naTitle.naYB23{font-size:23px}
+.naCanvas .naTitle.naYB21{font-size:21px}
+.naCanvas .naText.naTitleTxt2{font:bold 17px FiraSans,'Trebuchet MS',sans-serif}
+.naCanvas .naModul9b{position:absolute;background:#eff0c4;color:#6b6644;font:12px/20px Arial;text-align:center}
+.naCanvas .naText.naWord9{font-family:'Times New Roman'}
+.naCanvas .naText.naSep9{font-family:'Times New Roman'}
