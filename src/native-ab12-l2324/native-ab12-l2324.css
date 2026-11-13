@@ -124,3 +124,54 @@
 [data-native-ab12="91"] .naTblHead{background:#ede8d2}
 [data-native-ab12="91"] .naField{border-bottom-width:1px!important;border-bottom-color:#d3d9d3!important}
 .naCanvas .naText.naEx4t{font-size:13.7px!important}
+[data-native-ab12="92"] .naBookSerif{letter-spacing:0!important}
+.naCanvas .naDotP92{position:absolute;width:9px;height:9px;border-radius:50%}
+.naCanvas .naBank92{font-size:12.4px;font-weight:400;color:#4b5d85}
+.naCanvas .naPipe92{color:#777356;font-weight:400}
+.naCanvas .naBlue{color:#2a5ea8}
+[data-native-ab12="92"] .naRule{border-bottom:1px solid #c4c4c8}
+.naCanvas .naText.naLet92{font:400 14px DroidSerif,Georgia,serif;letter-spacing:0;color:#1a1a1a}
+[data-native-ab12="92"] .naTitle.naRB b{background:#f96906;min-width:26px;width:26px;height:18px;line-height:18px;font:600 16px/18px FiraSans,sans-serif;margin-right:8px;position:relative;top:-3px;box-shadow:inset 0 2px 0 #c02838,inset 2px 0 0 #c02838}
+[data-native-ab12="92"] .naBasisL{font-size:25.5px;font-weight:400;letter-spacing:-0.9px;color:#4e4d44}
+.naCanvas .naStrike92{text-decoration:line-through}
+[data-native-ab12="92"] .naBank92{font-size:13px;color:#2b3a73}
+.naCanvas .naText.naEx10r{font-size:13.1px!important}
+
+/* p93 page-scoped */
+[data-native-ab12="93"] .naBookSerif{letter-spacing:0!important}
+[data-native-ab12="93"] .naTitle.naRB b{background:#f75c16;min-width:26px;width:26px;height:18px;line-height:18px;font:600 16px/18px FiraSans,sans-serif;margin-right:8px;position:relative;top:-3px;box-shadow:inset 0 2px 0 #c02838,inset 2px 0 0 #c02838}
+.naCanvas .naTrainHead93{font-family:DroidSerif,Georgia,serif;font-size:22.1px;letter-spacing:0.85px;color:#434642}
+.naCanvas .naBank93{font-size:13.4px;color:#2b3a73;font-weight:400}
+.naCanvas .naText.naInst93{font-family:FiraSans,'Trebuchet MS',sans-serif;font-size:14px}
+.naCanvas .naText.naInst93b{font-family:FiraSans,'Trebuchet MS',sans-serif;font-size:14px;font-weight:400}
+.naCanvas .naText.naNeu93{font-family:FiraSans,'Trebuchet MS',sans-serif;font-style:italic;font-size:15.5px;color:#5a5a5a}
+.naCanvas .naText.naIt93{font-family:DroidSerif,Georgia,serif;font-style:italic;font-size:12.3px;color:#1c1c19}
+.naCanvas .naText.naTippT93{font-size:12.6px}
+.naCanvas .naText.naItL1{font-size:11.3px}
+.naCanvas .naText.naItL2{font-size:11.3px}
+.naCanvas .naText.naItL3{font-size:11.2px}
+.naCanvas .naText.naItL4{font-size:12.4px}
+.naCanvas .naText.naItL5{font-size:11.5px}
+.naCanvas .naText.naItL6{font-size:11.3px}
+.naCanvas .naText.naItL7{font-size:11.4px}
+.naCanvas .naText.naItL8{font-size:10.9px}
+.naCanvas .naText.naItL9{font-size:11.8px}
+.naCanvas .naText.naTpL1{font-size:12.2px}
+.naCanvas .naText.naTpL2{font-size:12px}
+.naCanvas .naText.naTpL3{font-size:12px}
+.naCanvas .naText.naTpL4{font-size:11.9px}
+.naCanvas .naText.naTpL5{font-size:11.9px}
+.naCanvas .naText.naTpL6{font-size:11.8px}
+.naCanvas .naText.naTpL7{font-size:11.4px}
+.naCanvas .naText.naTpL8{font-size:11.9px}
+.naCanvas .naText.naTpL9{font-size:11.9px}
+.naCanvas .naText.naDash93{font-family:DroidSerif,Georgia,serif;font-size:13.3px}
+.naCanvas .naText.naRegelT93{font-size:12.1px}
+.naCanvas .naRegelBox93{position:absolute;background:#fcfcfc;box-shadow:inset 0 3px 0 #d8dde1,inset 0 -1px 0 #eaeaea}
+.naCanvas .naRegelTab93{position:absolute;background:#adb2b9}
+.naCanvas .naTipp.naRegelLbl93{color:#45484d}
+.naCanvas .naDashRule93{position:absolute;width:9px;border-bottom:1px solid #2b2b2b}
+[data-native-ab12="93"] .naCanvas .naTitle{font-size:16.6px}
+.naCanvas .naText.naZung93{font-size:13.3px}
+[data-native-ab12="93"] .naTipGold93{background:#be9617}
+[data-native-ab12="93"] .naField{border-bottom:1px solid #c4c4c8!important}

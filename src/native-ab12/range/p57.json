@@ -1,0 +1,531 @@
+{
+ "w": 1072,
+ "h": 1449,
+ "items": [
+  {
+   "k": "a",
+   "n": "bg",
+   "x": 0,
+   "y": 0,
+   "w": 1072,
+   "h": 1449,
+   "alt": "Seite 57 Hintergrund"
+  },
+  {
+   "k": "a",
+   "n": "bubC",
+   "x": 746,
+   "y": 692,
+   "w": 267,
+   "h": 86,
+   "alt": "Sprechblase bubC"
+  },
+  {
+   "k": "a",
+   "n": "bubB",
+   "x": 406,
+   "y": 692,
+   "w": 347,
+   "h": 116,
+   "alt": "Sprechblase bubB"
+  },
+  {
+   "k": "a",
+   "n": "bubA",
+   "x": 143,
+   "y": 707,
+   "w": 235,
+   "h": 69,
+   "alt": "Sprechblase bubA"
+  },
+  {
+   "k": "t",
+   "x": 159,
+   "y": 179,
+   "t": "Ihre Freundin / Ihr Freund hat ihren Traummann / seine Traumfrau kennengelernt.",
+   "s": 21.0,
+   "c": "naFiraB"
+  },
+  {
+   "k": "t",
+   "x": 160,
+   "y": 205,
+   "t": "Was möchten Sie wissen?",
+   "s": 17.5,
+   "c": "naFiraM"
+  },
+  {
+   "k": "t",
+   "x": 124,
+   "y": 242,
+   "t": "a",
+   "s": 17.5,
+   "c": "naFiraM",
+   "col": "#5c75ab"
+  },
+  {
+   "k": "t",
+   "x": 157,
+   "y": 243,
+   "t": "Sammeln Sie Fragewörter.",
+   "s": 16.5,
+   "c": "naDB"
+  },
+  {
+   "k": "t",
+   "x": 157,
+   "y": 282,
+   "t": "Wer …",
+   "s": 15.0,
+   "i": 1
+  },
+  {
+   "k": "t",
+   "x": 247,
+   "y": 283,
+   "t": "Wie …",
+   "s": 14.5,
+   "i": 1
+  },
+  {
+   "k": "t",
+   "x": 156,
+   "y": 308,
+   "t": "Was …",
+   "s": 16.0,
+   "i": 1
+  },
+  {
+   "k": "t",
+   "x": 247,
+   "y": 309,
+   "t": "Wo …",
+   "s": 15.5,
+   "i": 1
+  },
+  {
+   "k": "t",
+   "x": 156,
+   "y": 333,
+   "t": "Woher …",
+   "s": 15.0,
+   "i": 1
+  },
+  {
+   "k": "t",
+   "x": 124,
+   "y": 383,
+   "t": "b",
+   "s": 18.0,
+   "c": "naFiraM"
+  },
+  {
+   "k": "t",
+   "x": 156,
+   "y": 385,
+   "t": "Notieren Sie fünf Fragen auf Kärtchen.",
+   "s": 18.0
+  },
+  {
+   "k": "t",
+   "x": 153,
+   "y": 595,
+   "t": "Spiel: Meine Traumfrau / Mein Traummann. Spielen Sie zu viert.",
+   "s": 20.5,
+   "c": "naFiraM"
+  },
+  {
+   "k": "t",
+   "x": 154,
+   "y": 633,
+   "t": "Legen Sie alle Kärtchen auf einen Stapel. Person A zieht eine Karte und fragt Person B.",
+   "s": 19.0,
+   "c": "naFiraM"
+  },
+  {
+   "k": "t",
+   "x": 154,
+   "y": 659,
+   "t": "Person B beschreibt ihren Traummann / seine Traumfrau. Dann zieht Person B eine",
+   "s": 19.0,
+   "c": "naFiraM"
+  },
+  {
+   "k": "t",
+   "x": 153,
+   "y": 682,
+   "t": "Karte und fragt Person C …",
+   "s": 20.0,
+   "c": "naFiraM"
+  },
+  {
+   "k": "t",
+   "x": 197,
+   "y": 746,
+   "t": "Wie sieht sie/er aus?",
+   "s": 15.5
+  },
+  {
+   "k": "t",
+   "x": 451,
+   "y": 740,
+   "t": "Er ist blond und hat blaue Augen.",
+   "s": 15.0
+  },
+  {
+   "k": "t",
+   "x": 435,
+   "y": 762,
+   "t": "Wo hast du deine Traumfrau / deinen",
+   "s": 15.5
+  },
+  {
+   "k": "t",
+   "x": 467,
+   "y": 788,
+   "t": "Traummann kennengelernt?",
+   "s": 15.5
+  },
+  {
+   "k": "t",
+   "x": 823,
+   "y": 727,
+   "t": "Im Supermarkt.",
+   "s": 15.0
+  },
+  {
+   "k": "t",
+   "x": 777,
+   "y": 750,
+   "t": "Was macht sie/er beruflich?",
+   "s": 15.5
+  },
+  {
+   "k": "t",
+   "x": 153,
+   "y": 956,
+   "t": "Hören Sie die Wörter und markieren",
+   "s": 20.0,
+   "c": "naFiraS"
+  },
+  {
+   "k": "t",
+   "x": 152,
+   "y": 981,
+   "t": "Sie den Wortakzent.",
+   "s": 20.5,
+   "c": "naFiraS"
+  },
+  {
+   "k": "t",
+   "x": 151,
+   "y": 1017,
+   "t": "aussehen – bekommen – entschuldigen –",
+   "s": 17.5
+  },
+  {
+   "k": "t",
+   "x": 150,
+   "y": 1042,
+   "t": "gefallen – erkennen – mitnehmen –",
+   "s": 19.0
+  },
+  {
+   "k": "t",
+   "x": 151,
+   "y": 1068,
+   "t": "anmelden – absagen – vergessen – einkaufen",
+   "s": 18.5
+  },
+  {
+   "k": "r",
+   "x": 152,
+   "y": 1019,
+   "w": 27,
+   "h": 2,
+   "col": "#da8855"
+  },
+  {
+   "k": "r",
+   "x": 274,
+   "y": 1020,
+   "w": 36,
+   "h": 2,
+   "col": "#da8855"
+  },
+  {
+   "k": "t",
+   "x": 151,
+   "y": 1134,
+   "t": "Ordnen Sie die Wörter aus",
+   "s": 20.0,
+   "c": "naFiraM"
+  },
+  {
+   "k": "t",
+   "x": 413,
+   "y": 1134,
+   "t": "1",
+   "s": 20.0,
+   "c": "naFiraM",
+   "col": "#5c75ab"
+  },
+  {
+   "k": "t",
+   "x": 425,
+   "y": 1134,
+   "t": " zu.",
+   "s": 20.0,
+   "c": "naFiraM"
+  },
+  {
+   "k": "t",
+   "x": 150,
+   "y": 1171,
+   "t": "trennbar",
+   "s": 17.5,
+   "c": "naDB"
+  },
+  {
+   "k": "t",
+   "x": 317,
+   "y": 1173,
+   "t": "nicht trennbar",
+   "s": 18.5,
+   "c": "naDB"
+  },
+  {
+   "k": "t",
+   "x": 150,
+   "y": 1264,
+   "t": "Wo ist der Wortakzent? Kreuzen Sie an.",
+   "s": 20.5,
+   "c": "naFiraS"
+  },
+  {
+   "k": "t",
+   "x": 417,
+   "y": 1305,
+   "t": "1. Silbe",
+   "s": 14.0
+  },
+  {
+   "k": "t",
+   "x": 484,
+   "y": 1305,
+   "t": "2. Silbe",
+   "s": 15.0
+  },
+  {
+   "k": "t",
+   "x": 184,
+   "y": 1326,
+   "t": "Bei trennbaren Verben:",
+   "s": 16.0
+  },
+  {
+   "k": "t",
+   "x": 184,
+   "y": 1348,
+   "t": "Bei nicht trennbaren Verben:",
+   "s": 16.5
+  },
+  {
+   "k": "d",
+   "id": "3r0",
+   "v": "1",
+   "x": 433,
+   "y": 1315,
+   "l": "Bei trennbaren Verben: 1. Silbe",
+   "s": 15,
+   "g": "g1",
+   "a": true
+  },
+  {
+   "k": "d",
+   "id": "3r0",
+   "v": "2",
+   "x": 501,
+   "y": 1315,
+   "l": "Bei trennbaren Verben: 2. Silbe",
+   "s": 15,
+   "g": "g1",
+   "a": false
+  },
+  {
+   "k": "d",
+   "id": "3r1",
+   "v": "1",
+   "x": 433,
+   "y": 1335,
+   "l": "Bei nicht trennbaren Verben: 1. Silbe",
+   "s": 15,
+   "g": "g1",
+   "a": false
+  },
+  {
+   "k": "d",
+   "id": "3r1",
+   "v": "2",
+   "x": 501,
+   "y": 1335,
+   "l": "Bei nicht trennbaren Verben: 2. Silbe",
+   "s": 15,
+   "g": "g1",
+   "a": true
+  },
+  {
+   "k": "t",
+   "x": 637,
+   "y": 959,
+   "t": "Hören Sie das Gespräch.",
+   "s": 20.0,
+   "c": "naFiraM"
+  },
+  {
+   "k": "t",
+   "x": 656,
+   "y": 1280,
+   "t": "Ja, gern … ein anderes Mal.",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 660,
+   "y": 996,
+   "t": "Entschuldigen Sie! Kennen wir uns",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 659,
+   "y": 1021,
+   "t": "nicht? Sie sind doch Susi Meier. Ich",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 658,
+   "y": 1047,
+   "t": "habe Sie gleich erkannt.",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 658,
+   "y": 1072,
+   "t": "Äh … ja … Wie war noch gleich Ihr",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 659,
+   "y": 1098,
+   "t": "Name? Ich habe ihn wohl vergessen.",
+   "s": 18.0
+  },
+  {
+   "k": "t",
+   "x": 659,
+   "y": 1124,
+   "t": "Ich heiße Peter. … Susi, Sie sehen",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 658,
+   "y": 1149,
+   "t": "toll aus! Kann ich Sie irgendwohin",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 658,
+   "y": 1175,
+   "t": "mitnehmen?",
+   "s": 18.0
+  },
+  {
+   "k": "t",
+   "x": 658,
+   "y": 1202,
+   "t": "Danke, nein. Ich muss noch einkaufen",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 657,
+   "y": 1227,
+   "t": "und bekomme noch Besuch.",
+   "s": 18.0
+  },
+  {
+   "k": "t",
+   "x": 657,
+   "y": 1253,
+   "t": "Schade. Na ja, vielleicht ein anderes Mal.",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 635,
+   "y": 1317,
+   "t": "Hören Sie noch einmal und sprechen",
+   "s": 17.5,
+   "c": "naFiraS"
+  },
+  {
+   "k": "t",
+   "x": 633,
+   "y": 1342,
+   "t": "Sie nach.",
+   "s": 18.0,
+   "c": "naFiraS"
+  },
+  {
+   "k": "au",
+   "x": 56,
+   "y": 938,
+   "w": 44,
+   "h": 22,
+   "src": "assets/ab-a12-track24.mp3",
+   "l": "CD2 · Track24"
+  },
+  {
+   "k": "au",
+   "x": 529,
+   "y": 938,
+   "w": 44,
+   "h": 22,
+   "src": "assets/ab-a12-track25.mp3",
+   "l": "CD2 · Track25"
+  },
+  {
+   "k": "au",
+   "x": 573,
+   "y": 1304,
+   "w": 44,
+   "h": 22,
+   "src": "assets/ab-a12-track26.mp3",
+   "l": "CD2 · Track26"
+  },
+  {
+   "k": "a",
+   "n": "aussehen",
+   "x": 140,
+   "y": 1178,
+   "w": 82,
+   "h": 36,
+   "alt": "Beispieleintrag aussehen"
+  },
+  {
+   "k": "a",
+   "n": "bekommen",
+   "x": 303,
+   "y": 1180,
+   "w": 99,
+   "h": 36,
+   "alt": "Beispieleintrag bekommen"
+  }
+ ]
+}
