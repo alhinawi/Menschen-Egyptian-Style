@@ -23,7 +23,7 @@ function sourceKeys(route,no){const book=(route.startsWith('ab')?'ab':'kb')+'-'+
  for(let i=0;i<count;i++){const before=await p.evaluate(()=>window.__fieldCheckCount);await buttons.nth(i).evaluate(e=>e.click());await p.waitForFunction(before=>window.__fieldCheckCount>before,before,{timeout:1500}).catch(()=>{});}await p.waitForTimeout(50);
  const row=await pg.evaluate((pg,keys)=>{const visible=e=>{const r=e.getBoundingClientRect();return r.width>0&&r.height>0&&getComputedStyle(e).visibility!=='hidden'&&getComputedStyle(e).display!=='none'};
  const fields=[...pg.querySelectorAll('input:not([type=hidden]),select,textarea')].filter(e=>visible(e)&&!e.disabled);
- const mark=e=>e.dataset.checkMark||(/(?:^|\s)(?:(?:hybrid|answer|np|na|nkb)?(?:Wrong|Correct)|bad|ok|wrong|correct|good)(?:\s|$)/.test(e.className)?e.className:null)||((e.closest('label,td')?.className||'').match(/answer(?:Wrong|Correct)/)?.[0]||null);
+ const mark=e=>e.dataset.checkMark||(/(?:^|\s)(?:(?:hybrid|answer|native|np|na|nkb)?(?:Wrong|Correct)|bad|ok|wrong|correct|good)(?:\s|$)/.test(e.className)?e.className:null)||((e.closest('label,td')?.className||'').match(/answer(?:Wrong|Correct)/)?.[0]||null);
  const info=e=>{const id=e.dataset.nativeField||e.dataset.nativeRadio||e.dataset.fieldId||e.name||e.id||e.getAttribute('aria-label')||'';const label=e.getAttribute('aria-label')||'';const related=keys.filter(k=>k.id===id||k.name&&(e.name===k.name||e.name.endsWith('-'+k.name)));let category,reason;
  if(mark(e)){category='marked';reason=mark(e)}
  else if(e.dataset.confidence!==undefined||/confidence|Selbsteinschätzung/.test(id+' '+label)){category='ungraded';reason='self-assessment'}
