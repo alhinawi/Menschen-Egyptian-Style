@@ -1,6 +1,7 @@
 import {usePageReset} from '../exercises/usePageReset';
 import {useLayoutEffect,useRef,useState} from 'react';
 import {PageImage} from '../components/PageImage';
+import {CheckButton} from '../components/CheckButton';
 import '../components/native-ab12.css';
 
 function Words({text}:{text:string}){return <>{text.split(/(\s+)/).map((w,i)=>/\p{L}/u.test(w)?<span key={i} className="tapWord" role="button" tabIndex={0} data-word={w.replace(/^[^\p{L}]+|[^\p{L}]+$/gu,'')} data-phrase={text}>{w}</span>:w)}</>}
@@ -23,7 +24,7 @@ export function NativeAB12P31to46({page}:{page:string}){
  const field=(id:string,x:number,y:number,w:number,label:string,cls='')=><input className={'naField '+cls} aria-label={label} data-native-field={id} style={{left:x,top:y,width:w}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
  const rule=(x:number,y:number,w:number)=><div className="naRule" style={{left:x,top:y,width:w}}/>;
  const dot=(id:string,value:string,x:number,y:number,label:string,checkbox=false)=><input className="naDot" type={checkbox?'checkbox':'radio'} aria-label={label} name={key+'-'+id} checked={checkbox?values[id]==='true':values[id]===value} onChange={e=>set(id,checkbox?String(e.target.checked):value)} style={{left:x,top:y}}/>;
- const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><button aria-label="Antworten prüfen" onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}>✓</button><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})/><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,t:string,cls='')=><div className={'naTitle '+cls} style={{left:x,top:y,width:w}}><b>{n}</b><Words text={t}/></div>;
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
@@ -229,38 +230,80 @@ export function NativeAB12P31to46({page}:{page:string}){
  </>}
  {page==='33'&&<>
   {art('0',982,44,85,78)}
-  {art('3',310,285,220,99)}
-  {art('4',766,297,165,87)}
-  {art('8',84,694,418,226)}
-  {art('9',623,723,184,70)}
-  {art('10',868,739,83,174)}
+  {art('cards',60,282,900,90)}
+  {art('board',60,712,900,213)}
   {art('16',646,1225,310,71)}
   {art('modul-tab',1000,1384,71,32)}
   {lin(444,112,516,3,'#b3d33f')}
-  {lin(170,376,140,7,'#cca424')}
-  {lin(530,378,236,6,'#ca9f21')}
+  {rect(139,383,791,55,'#fafbe5')}
+  {lin(140,377,790,6,'#cca424')}
+  {rect(140,383,26,55,'#cca424')}
+  <div className="naSide" style={{left:142,top:392,fontSize:11,letterSpacing:1,color:'#5a4a10'}}>Tipp</div>
   {lin(675,1022,286,2,'#bcd43c')}
   {text(106,84,331,'TRAINING: SPRECHEN','naHeadline naNw')}
-  {text(146,158,464,'Wie bittet man um Hilfe? Was antwortet man?','naNw')}
+  {title('1',109,162,640,'Wie bittet man um Hilfe? Was antwortet man?','naGB')}
   {text(147,198,781,'Schreiben Sie Bitten auf gelbe Kärtchen und Antworten auf blaue Kärtchen. (Hilfe finden','naNw')}
   {text(147,223,280,'Sie in den Lektionen 13 und 16.)','naNw')}
   {text(173,389,743,'Sie möchten besser sprechen? Lernen Sie die Fragen und Sätze in der Rubrik Kommunikation','naNw')}
   {text(173,411,639,'auf der 4. Seite jeder Lektion auswendig. Sie helfen Ihnen in vielen Situationen.','naNw')}
-  {text(147,480,706,'Spiel: Bitten Sie eine Mitspielerin / einen Mitspieler. Sie/Er antwortet.','naNw')}
-  {text(148,506,386,'Die Kärtchen in 1 können Ihnen helfen.','naNw')}
-  {text(168,549,676,'Spielanleitung: Stellen Sie Ihre Spielfigur auf ein Feld und würfeln Sie. Ziehen Sie mit Ihrer','naS20 naNw')}
-  {text(168,574,685,'Spielfigur. Formulieren Sie Bitten. Ist die Bitte richtig, bekommen Sie zwei Punkte. Spielen Sie','naS20 naNw')}
-  {text(168,600,318,'zehn Minuten. Wer hat die meisten Punkte?','naS20 naNw')}
-  {text(171,649,680,'Entschuldigung, können Sie mir helfen? Die Klimaanlage funktioniert nicht.','naNw')}
-  {text(171,675,441,'Das tut mir leid. Ich kümmere mich sofort darum.','naNw')}
-  {text(105,994,561,'TRAINING: AUSSPRACHE Vokale: „o“ und „u“','naNw')}
-  {text(146,1060,291,'Sie hören jeweils vier Wörter.','naNw')}
-  {text(639,1060,288,'Hören Sie und sprechen Sie nach.','naNw')}
+  {title('2',105,484,850,'Spiel: Bitten Sie eine Mitspielerin / einen Mitspieler. Sie/Er antwortet.','naGB')}
+  {text(149,510,395,'Die Kärtchen in 1 können Ihnen helfen.','naBold naNw')}
+  {stext(168,549,130,'Spielanleitung:',{color:'#3a6ab0'},'naS20 naBold naNw')}
+  {stext(300,549,544,'Stellen Sie Ihre Spielfigur auf ein Feld und würfeln Sie. Ziehen Sie mit Ihrer',{color:'#3a6ab0'},'naS20 naNw')}
+  {stext(168,574,685,'Spielfigur. Formulieren Sie Bitten. Ist die Bitte richtig, bekommen Sie zwei Punkte. Spielen Sie',{color:'#3a6ab0'},'naS20 naNw')}
+  {stext(168,600,318,'zehn Minuten. Wer hat die meisten Punkte?',{color:'#3a6ab0'},'naS20 naNw')}
+  {stext(145,644,16,'■',{color:'#1a3f9e'},'naNw')}
+  {text(171,644,680,'Entschuldigung, können Sie mir helfen? Die Klimaanlage funktioniert nicht.','naNw')}
+  {stext(145,678,16,'▲',{color:'#2eb75b'},'naNw')}
+  {text(171,678,625,'Das tut mir leid. Ich kümmere mich sofort darum.','naNw')}
+  {stext(106,1001,380,'TRAINING: AUSSPRACHE',{fontSize:27,letterSpacing:2,color:'#4a4a45',fontFamily:'Georgia'},'naNw')}
+  {stext(498,1003,175,'Vokale: „o“ und „u“',{color:'#787a68'},'naS20 naNw')}
+  {audio('assets/ab-a12-cd2-track16.mp3',42,1092,'CD2 · Track16')}
+  {title('1',109,1064,400,'Sie hören jeweils vier Wörter.','naGB naNw')}
+  {audio('assets/ab-a12-cd2-track17.mp3',573,1064,'CD2 · Track17')}
+  {text(680,1060,288,'Hören Sie und sprechen Sie nach.','naBold naNw')}
   {text(146,1099,422,'Wie oft hören Sie „o“, wie oft „u“? Notieren Sie.','naNw')}
-  {text(638,1125,340,'Schreiben Sie kurze Gespräche mit','naNw')}
-  {text(638,1151,319,'den Wörtern aus 2 und sprechen','naNw')}
-  {text(638,1176,250,'Sie auch vor dem Spiegel.','naNw')}
-  {text(101,1223,305,'2 Ergänzen Sie „o“ oder „u“.','naNw')}
+  {text(147,1128,8,'1','naNw')}
+  {text(170,1128,10,'o','naNw')}
+  {lin(184,1147,48,2,'#9aa3ab')}
+  {text(238,1128,10,'u','naNw')}
+  {lin(252,1147,48,2,'#9aa3ab')}
+  {text(356,1128,8,'3','naNw')}
+  {text(378,1128,10,'o','naNw')}
+  {lin(392,1147,48,2,'#9aa3ab')}
+  {text(447,1128,10,'u','naNw')}
+  {lin(460,1147,48,2,'#9aa3ab')}
+  {text(148,1153,8,'2','naNw')}
+  {text(170,1153,10,'o','naNw')}
+  {lin(184,1172,48,2,'#9aa3ab')}
+  {text(239,1153,10,'u','naNw')}
+  {lin(252,1172,48,2,'#9aa3ab')}
+  {text(355,1153,8,'4','naNw')}
+  {text(378,1153,10,'o','naNw')}
+  {lin(392,1172,48,2,'#9aa3ab')}
+  {text(446,1153,10,'u','naNw')}
+  {lin(459,1172,48,2,'#9aa3ab')}
+  {title('3',601,1129,390,'Schreiben Sie kurze Gespräche mit','naGB naNw')}
+  {text(639,1148,132,'den Wörtern aus','naBold naNw')}
+  {stext(809,1148,12,'2',{color:'#2a4f9e'},'naBold naNw')}
+  {text(828,1148,130,'und sprechen','naBold naNw')}
+  {text(639,1173,220,'Sie auch vor dem Spiegel.','naBold naNw')}
+  {title('2',109,1231,400,'Ergänzen Sie „o“ oder „u“.','naGB')}
+  {text(148,1273,16,'Pr','naNw')}
+  {text(204,1273,80,'blem – H','naNw')}
+  {text(323,1273,62,'tel – M','naNw')}
+  {text(424,1273,16,'se','naNw')}
+  {text(481,1273,34,'m –','naNw')}
+  {text(149,1298,12,'M','naNw')}
+  {text(204,1298,60,'sik – D','naNw')}
+  {text(302,1298,105,'sche – Telef','naNw')}
+  {text(431,1298,75,'n – Aufz','naNw')}
+  {text(542,1298,28,'g –','naNw')}
+  {text(149,1323,12,'M','naNw')}
+  {text(204,1323,46,'nat –','naNw')}
+  {text(294,1323,73,'hr – Kin','naNw')}
+  {text(428,1323,55,'– Handt','naNw')}
+  {text(521,1323,32,'ch','naNw')}
   {text(813,1389,169,'dreiunddreißig | 33','naFooter')}
   {field('p33-a2_1',166,1271,39,'Lücke 1')}
   {field('p33-a2_2',283,1271,38,'Lücke 2')}
@@ -274,9 +317,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {field('p33-a2_10',254,1321,36,'Lücke 10')}
   {field('p33-a2_11',367,1321,37,'Lücke 11')}
   {field('p33-a2_12',482,1321,36,'Lücke 12')}
-  {audio('assets/ab-a12-cd2-track16.mp3',42,1067,'CD2 · Track16')}
-  {audio('assets/ab-a12-cd2-track17.mp3',573,1067,'CD2 · Track17')}
-  {check('33-1',166,1362,{'p33-a2_1':'o','p33-a2_2':'o','p33-a2_3':'u','p33-a2_4':'u','p33-a2_5':'u','p33-a2_6':'u','p33-a2_7':'o','p33-a2_8':'u','p33-a2_9':'o','p33-a2_10':'u','p33-a2_11':'o','p33-a2_12':'u'})}
+  {check('33-1',166,1356,{'p33-a2_1':'o','p33-a2_2':'o','p33-a2_3':'u','p33-a2_4':'u','p33-a2_5':'u','p33-a2_6':'u','p33-a2_7':'o','p33-a2_8':'u','p33-a2_9':'o','p33-a2_10':'u','p33-a2_11':'o','p33-a2_12':'u'})}
  </>}
  {page==='34'&&<>
   {rect(120,361,45,34,'#cae12c')}
