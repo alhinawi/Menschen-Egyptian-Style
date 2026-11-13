@@ -9,7 +9,7 @@ const server=http.createServer((q,r)=>{try{const f=path.join(root,'dist',q.url.s
  const dur=await p.locator('.page[data-page="13"] audio').evaluate(a=>a.duration);
  const target=Math.floor(dur/2);
  // Drag the floating player's progress bar to the middle, like the user did.
- const slider=p.locator('.readerActiveAudio input[type=range]');
+ const slider=p.locator('.readerAudioPanel input[type=range]');
  await slider.evaluate((el,v)=>{Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set.call(el,String(v));el.dispatchEvent(new Event('input',{bubbles:true}))},target);
  await p.waitForTimeout(1800);
  const t=await p.locator('.page[data-page="13"] audio').evaluate(a=>a.currentTime);
