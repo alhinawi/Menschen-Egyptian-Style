@@ -171,7 +171,7 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {check('t2',655,501)}
  {title('3',500,'Ergänzen Sie das Gespräch.','',118)}
  {markS(148,534)}<div className="mText" style={{left:165,top:531,width:440}}><Words s="Guten Morgen Ella, hier ist Karin. Wo bist du?"/></div>
- {markT(148,553)}<div className="mText" style={{left:165,top:552,width:120}}><Words s="Hallo Karin. Ich"/></div><div className="mText mExample" style={{left:283,top:552,width:185}}>steige gerade in den Zug ein</div><div className="mExRule" style={{left:283,top:571,width:177}}/>{txt(470,552,28,'(a).')}{txt(500,552,240,'(einsteigen/in den Zug /gerade)')}
+ {markT(148,553)}<div className="mText" style={{left:165,top:552,width:120}}><Words s="Hallo Karin. Ich"/></div><div className="mText mExample" style={{left:283,top:552,width:177,fontSize:13}}>steige gerade in den Zug ein</div><div className="mExRule" style={{left:283,top:571,width:177}}/>{txt(470,552,28,'(a).')}{txt(500,552,240,'(einsteigen/in den Zug /gerade)')}
  {markS(148,575)}<div className="mText" style={{left:165,top:574,width:55}}><Words s="Wann"/></div>{f('u3-b',218,567,269)}{txt(496,574,40,'(b)?')}{txt(533,574,130,'(du/ankommen)')}
  {markT(148,597)}<div className="mText" style={{left:165,top:596,width:520}}><Words s="Um 09.35 Uhr am Ostbahnhof und um 09.45 Uhr am Hauptbahnhof."/></div>
  {markS(148,619)}<div className="mText" style={{left:165,top:618,width:90}}><Words s="Kannst du"/></div>{f('u3-c',254,615,363)}{txt(629,618,30,'(c)?')}
