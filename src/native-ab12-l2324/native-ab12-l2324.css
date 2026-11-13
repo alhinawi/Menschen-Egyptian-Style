@@ -72,9 +72,9 @@
 .naCanvas .naText.naBk88{font-size:13.6px;letter-spacing:normal}
 .naCanvas .naText.naBk88 span[role=button]{padding:0}
 .naCanvas .naRule.naRuleT{border-bottom-width:1px}
-@font-face{font-family:FiraSans;src:url('/assets/fonts/firasans-latin-500.ttf') format('truetype');font-weight:500;font-display:swap}
-.naCanvas .naBank88{position:absolute;font:500 13px FiraSans,'Trebuchet MS',sans-serif;color:#2c3d63;white-space:nowrap}
-.naCanvas .naBank88b{position:absolute;font:500 14px FiraSans,'Trebuchet MS',sans-serif;color:#2c3d63;white-space:nowrap}
+@font-face{font-family:FiraSans;src:url('/assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
+.naCanvas .naBank88{position:absolute;font:13px FiraSans,'Trebuchet MS',sans-serif;color:#2c3d63;white-space:nowrap}
+.naCanvas .naBank88b{position:absolute;font:14px FiraSans,'Trebuchet MS',sans-serif;color:#2c3d63;white-space:nowrap}
 .naCanvas .naText.naCue88{position:absolute;font-family:DroidSerif,Georgia,serif;font-size:12px;color:#444;white-space:nowrap}
 .naCanvas .naText.naBk88m{letter-spacing:-0.15px}
 .naCanvas .naText.naBk88l{letter-spacing:-0.1px}
