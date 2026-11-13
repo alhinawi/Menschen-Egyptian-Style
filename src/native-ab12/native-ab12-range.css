@@ -153,3 +153,6 @@
 .nativeAB12[data-native-ab12="65"] .naRCanvas .naText.naR.naDB.naDB{font-family:DroidB,serif!important;font-weight:700!important}
 .nativeAB12[data-native-ab12="65"] .naRCanvas .naText.naR.naFiraR.naFiraR{font-family:FiraR,sans-serif!important;font-weight:400!important}
 .nativeAB12[data-native-ab12="65"] .naRCanvas .naLined{background:transparent!important;border:0!important;box-shadow:none!important}
+.nativeAB12[data-native-ab12="50"] .naRCanvas .naRField,
+.nativeAB12[data-native-ab12="51"] .naRCanvas .naRField{height:24px!important}
+.nativeAB12[data-native-ab12="49"] .naRCanvas .naRField.naMini{height:22px!important;font-size:16px!important}
