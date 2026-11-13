@@ -18,7 +18,7 @@ export function NativeAB12P31to46({page}:{page:string}){
  usePageReset(page,key,()=>{sv({...defaults});sr({})});
  const set=(id:string,v:string)=>{const n={...values,[id]:v};sv(n);localStorage.setItem(key,JSON.stringify(n))};
  const text=(x:number,y:number,w:number,t:string,cls='')=><div className={'naText '+cls} style={{left:x,top:y,width:w}}><Words text={t}/></div>;
- const uml=(x:number,y:number,w:number,pre:string,post:string)=><div className='naText naNw' style={{left:x,top:y,width:w}}><Words text={pre}/><span className="naUml">¨</span><Words text={post}/></div>;
+ const uml=(x:number,y:number,w:number,pre:string,post:string)=><div className='naText naNw naUmlRow' style={{left:x,top:y,width:w}}><Words text={pre}/><span className="naUml">¨</span><Words text={post}/></div>;
  const stext=(x:number,y:number,w:number,t:string,st:Record<string,string|number>,cls='')=><div className={'naText '+cls} style={{left:x,top:y,width:w,...st}}><Words text={t}/></div>;
  const rect=(x:number,y:number,w:number,h:number,c:string)=><div style={{position:'absolute',left:x,top:y,width:w,height:h,background:c}}/>;
  const lin=(x:number,y:number,w:number,h:number,c:string)=><div style={{position:'absolute',left:x,top:y,width:w,height:h,background:c}}/>;
@@ -31,7 +31,7 @@ export function NativeAB12P31to46({page}:{page:string}){
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg,[data-native-ab12] .naTitle,[data-native-ab12] .naField{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg{font-size:20px!important}[data-native-ab12] .naTitle{font-size:21px!important}[data-native-ab12] .naText.naS20{font-size:18px!important}[data-native-ab12] .naSmall{font-size:16.5px!important}[data-native-ab12] .naD19{font-size:17.5px!important}[data-native-ab12] .naField{font-size:19px!important}[data-native-ab12] .naUrl{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='41'] .naModul{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='41'] .naTitle.naGB b{background:#69bb58!important}[data-native-ab12='41'] .naTitle{font-family:FiraSans,sans-serif!important;font-size:22px!important;letter-spacing:0!important}[data-native-ab12='41'] .naText,[data-native-ab12='41'] .naBold{font-size:17px!important}[data-native-ab12='41'] .naBold{font-weight:600}[data-native-ab12='41'] .naField{font-size:17px!important}[data-native-ab12='41'] .naGray{font-size:13px!important;color:#7c7c80!important;letter-spacing:0!important}[data-native-ab12='38'] .naS14{font-size:14px!important}[data-native-ab12='31'] .naHeadline,[data-native-ab12='32'] .naHeadline,[data-native-ab12='33'] .naHeadline,[data-native-ab12='34'] .naHeadline,[data-native-ab12='35'] .naHeadline,[data-native-ab12='36'] .naHeadline,[data-native-ab12='37'] .naHeadline,[data-native-ab12='38'] .naHeadline{font-size:30px!important;letter-spacing:0!important;color:#5f6460}[data-native-ab12='35'] .naSansB,[data-native-ab12='36'] .naSansB,[data-native-ab12='37'] .naSansB,[data-native-ab12='38'] .naSansB{font-family:FiraSans,sans-serif!important;font-weight:700;letter-spacing:0!important}[data-native-ab12='35'] .naUml,[data-native-ab12='36'] .naUml,[data-native-ab12='37'] .naUml,[data-native-ab12='38'] .naUml{font-size:72%;letter-spacing:0;margin-right:-2px}[data-native-ab12='35'] .naMod,[data-native-ab12='36'] .naMod,[data-native-ab12='37'] .naMod,[data-native-ab12='38'] .naMod{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='38'] .naBio{font-size:17.5px!important;letter-spacing:-0.55px!important}[data-native-ab12='38'] .naJ{white-space:normal;text-align:justify;text-align-last:justify}[data-native-ab12='31'] .naTitle,[data-native-ab12='32'] .naTitle,[data-native-ab12='33'] .naTitle,[data-native-ab12='34'] .naTitle,[data-native-ab12='35'] .naTitle,[data-native-ab12='36'] .naTitle,[data-native-ab12='37'] .naTitle,[data-native-ab12='38'] .naTitle{font-family:FiraSans,sans-serif!important;letter-spacing:0!important}"}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}> {page==='31'&&<>
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg,[data-native-ab12] .naTitle,[data-native-ab12] .naField{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg{font-size:20px!important}[data-native-ab12] .naTitle{font-size:21px!important}[data-native-ab12] .naText.naS20{font-size:18px!important}[data-native-ab12] .naSmall{font-size:16.5px!important}[data-native-ab12] .naD19{font-size:17.5px!important}[data-native-ab12] .naField{font-size:19px!important}[data-native-ab12] .naUrl{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='41'] .naModul{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='41'] .naTitle.naGB b{background:#69bb58!important}[data-native-ab12='41'] .naTitle{font-family:FiraSans,sans-serif!important;font-size:22px!important;letter-spacing:0!important}[data-native-ab12='41'] .naText,[data-native-ab12='41'] .naBold{font-size:17px!important}[data-native-ab12='41'] .naBold{font-weight:600}[data-native-ab12='41'] .naField{font-size:17px!important}[data-native-ab12='41'] .naGray{font-size:13px!important;color:#7c7c80!important;letter-spacing:0!important}[data-native-ab12='38'] .naS14{font-size:14px!important}[data-native-ab12='37'] .naS19{font-size:19.6px!important}[data-native-ab12='31'] .naHeadline,[data-native-ab12='32'] .naHeadline,[data-native-ab12='33'] .naHeadline,[data-native-ab12='34'] .naHeadline,[data-native-ab12='35'] .naHeadline,[data-native-ab12='36'] .naHeadline,[data-native-ab12='37'] .naHeadline,[data-native-ab12='38'] .naHeadline{font-size:30px!important;letter-spacing:0!important;color:#5f6460}[data-native-ab12='35'] .naSansB,[data-native-ab12='36'] .naSansB,[data-native-ab12='37'] .naSansB,[data-native-ab12='38'] .naSansB{font-family:FiraSans,sans-serif!important;font-weight:700;letter-spacing:0!important}[data-native-ab12='35'] .naUml,[data-native-ab12='36'] .naUml,[data-native-ab12='37'] .naUml,[data-native-ab12='38'] .naUml{font-size:72%;letter-spacing:0;margin-right:-2px}[data-native-ab12='35'] .naUmlRow{font-size:19.4px!important}[data-native-ab12='35'] .naMod,[data-native-ab12='36'] .naMod,[data-native-ab12='37'] .naMod,[data-native-ab12='38'] .naMod{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='38'] .naBio{font-size:17.5px!important;letter-spacing:-0.55px!important}[data-native-ab12='38'] .naJ{white-space:normal;text-align:justify;text-align-last:justify}[data-native-ab12='31'] .naTitle,[data-native-ab12='32'] .naTitle,[data-native-ab12='33'] .naTitle,[data-native-ab12='34'] .naTitle,[data-native-ab12='35'] .naTitle,[data-native-ab12='36'] .naTitle,[data-native-ab12='37'] .naTitle,[data-native-ab12='38'] .naTitle{font-family:FiraSans,sans-serif!important;letter-spacing:0!important}"}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}> {page==='31'&&<>
   {art('0',982,42,85,78)}
   {lin(354,107,605,6,'#a6ca03')}
   {text(107,77,240,'BASISTRAINING','naHeadline naNw')}
@@ -482,7 +482,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {art('3',372,1240,165,77)}
   {art('tv',576,1246,224,78)}
   {lin(1063,0,8,1104,'#aeb7b2')}
-  {lin(395,111,482,4,'#c0d843')}
+  <div style={{position:'absolute',left:389,top:112,width:486,height:2,background:'linear-gradient(90deg,#d2e877,#e6f1ae)'}}/>
   {lin(317,249,191,2,'#d9dae0')}
   {lin(677,250,196,2,'#d9dae0')}
   {lin(317,300,191,2,'#d9dae0')}
@@ -678,20 +678,21 @@ export function NativeAB12P31to46({page}:{page:string}){
   {kb(85,711,'KB 4')}
   {title('3',121,708,500,'Ergänzen Sie mit oder ohne.','naGB')}
   <div className="naSide" style={{left:92,top:776,whiteSpace:'nowrap'}}>STRUKTUREN</div>
-  {text(164,753,9,'a','naNw')}
+  {text(164,748,9,'a','naNw')}
   {text(187,748,250,'Cherry geht nur','naNw')}
-  {text(330,750,45,'mit','naHand naD19 naNw')}
-  {lin(333,768,52,2,'#c2c3c6')}
-  {text(363,748,381,'ihrer „Starbrille“ zur Aufnahmeprüfung.','naNw')}
+  {text(334,750,45,'mit','naHand naD19 naNw')}
+  {lin(333,768,25,1.5,'#c2c3c6')}
+  {text(366,748,378,'ihrer „Starbrille“ zur Aufnahmeprüfung.','naNw')}
   {text(164,773,9,'b','naNw')}
   {text(295,773,585,'Aufnahmeprüfung kann sie nicht an der Pop-Akademie studieren.','naNw')}
-  {text(164,805,9,'c','naNw')}
+  {text(164,800,9,'c','naNw')}
   {text(187,800,293,'Sie möchten ein Popstar werden?','naNw')}
   {text(596,800,341,'eine gute Ausbildung ist das schwierig.','naNw')}
-  {text(164,825,9,'d','naNw')}
+  {text(164,826,9,'d','naNw')}
   {text(296,826,184,'einer Ausbildung hat','naNw')}
-  {text(496,826,193,'man bessere Chancen.','naNw')}
-  {text(164,856,7,'e','naNw')}
+  {text(489,828,34,'man','naHand naD19 naNw')}
+  {text(530,826,159,'bessere Chancen.','naNw')}
+  {text(164,851,7,'e','naNw')}
   {text(188,851,140,'Fabian geht nur','naNw')}
   {text(443,852,332,'seiner Gitarre zur Aufnahmeprüfung.','naNw')}
   {kb(85,918,'KB 4')}
@@ -720,28 +721,30 @@ export function NativeAB12P31to46({page}:{page:string}){
   {title('5',121,1122,500,'Ergänzen Sie e oder i.','naGB')}
   <div className="naSide" style={{left:84,top:1150,whiteSpace:'nowrap'}}>STRUKTUREN</div>
   <div className="naSide" style={{left:97,top:1150,whiteSpace:'nowrap'}}>ENTDECKEN</div>
-  {text(164,1158,26,'ich','naNw')}
-  {text(262,1158,10,'w','naNw')}
-  {text(277,1160,12,'e','naHand naD19 naNw')}
-  {text(289,1158,30,'rde','naNw')}
-  {text(164,1184,21,'du','naNw')}
-  {text(164,1208,50,'er/sie','naNw')}
-  {text(379,1210,80,'Sängerin','naHand naD19 naNw')}
-  {text(164,1247,37,'wir','naNw')}
-  {text(165,1275,26,'ihr','naNw')}
-  {text(164,1299,58,'sie/Sie','naNw')}
+  {text(164,1167,26,'ich','naNw')}
+  {text(262,1167,10,'w','naNw')}
+  {text(279,1169,12,'e','naHand naD19 naNw')}
+  {lin(271,1186,25,1,'#ccd2d8')}
+  {text(291,1167,30,'rde','naNw')}
+  {text(164,1193,21,'du','naNw')}
+  {text(164,1219,50,'er/sie','naNw')}
+  {lin(361,1164,2,165,'#e3dfc0')}
+  {text(378,1224,82,'Sängerin','naNw')}
+  {text(164,1258,37,'wir','naNw')}
+  {text(165,1284,26,'ihr','naNw')}
+  {text(164,1305,58,'sie/Sie','naNw')}
   {art('modul-tab',0,1393,90,27)}
   {text(99,1399,230,'36 | sechsunddreißig','naFooter naNw')}
-  {text(262,1184,16,'w_')}
-  {text(296,1184,27,'rst')}
-  {text(262,1211,16,'w_')}
-  {text(296,1211,18,'rd')}
-  {text(262,1247,16,'w_')}
-  {text(296,1247,36,'rden')}
-  {text(262,1275,16,'w_')}
-  {text(296,1275,36,'rdet')}
-  {text(262,1299,16,'w_')}
-  {text(296,1299,36,'rden')}
+  {text(262,1193,16,'w_')}
+  {text(296,1193,27,'rst')}
+  {text(262,1219,16,'w_')}
+  {text(296,1219,18,'rd')}
+  {text(262,1258,16,'w_')}
+  {text(296,1258,36,'rden')}
+  {text(262,1284,16,'w_')}
+  {text(296,1284,36,'rdet')}
+  {text(262,1305,16,'w_')}
+  {text(296,1305,36,'rden')}
   {field('p36-1b',335,316,198,'1 b')}
   {field('p36-1c',171,363,213,'1 c')}
   {field('p36-1d',675,290,215,'1 d')}
@@ -751,10 +754,10 @@ export function NativeAB12P31to46({page}:{page:string}){
   {field('p36-2b1',530,561,227,'2 b')}
   {field('p36-2c2',578,589,227,'2 c')}
   {field('p36-2d3',346,639,227,'2 d')}
-  {field('p36-3b',190,777,102,'3 b')}
-  {field('p36-3c',487,804,103,'3 c')}
-  {field('p36-3d',190,829,100,'3 d')}
-  {field('p36-3e',335,855,105,'3 e')}
+  {field('p36-3b',186,769,105,'3 b')}
+  {field('p36-3c',486,794,105,'3 c')}
+  {field('p36-3d',186,820,105,'3 d')}
+  {field('p36-3e',333,846,104,'3 e')}
   {dot('4b','einem',255,980,'4 b einem')}
   {dot('4b','einen',359,980,'4 b einen')}
   {dot('4c','meiner',503,1006,'4 c meiner')}
@@ -788,14 +791,6 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(945,618,8,'.','naNw')}
   {text(945,670,8,'.','naNw')}
   {text(945,722,8,'.','naNw')}
-  {lin(168,920,220,2,'#bcbfbf')}
-  {lin(167,946,208,2,'#bdbdc7')}
-  {lin(273,972,151,2,'#bdc0c1')}
-  {lin(180,998,207,2,'#bec3c3')}
-  {lin(260,1023,125,2,'#bdbfc3')}
-  {lin(168,1049,219,2,'#bdbbc4')}
-  {lin(212,1075,177,2,'#c0c1c4')}
-  {lin(304,1101,168,2,'#c4c5c6')}
   {lin(182,1280,168,2,'#b9bcc1')}
   {text(101,83,240,'BASISTRAINING','naHeadline naNw')}
   {kb(78,161,'KB 5')}
@@ -833,24 +828,24 @@ export function NativeAB12P31to46({page}:{page:string}){
   {kb(78,819,'KB 6')}
   {title('8',130,806,760,'Ergänzen Sie die Wörter.','naGB')}
   <div className="naSide" style={{left:56,top:863,whiteSpace:'nowrap'}}>WÖRTER</div>
-  {text(420,853,85,'Ausbildung','naHand naD19 naNw')}
-  {text(140,850,254,'Im Sommer hat Sofia ihre (a)','naNw')}
-  {text(522,850,372,'(BLUGASIDNU) als Friseurin abgeschlossen.','naNw')}
-  {text(140,874,655,'Sie hatte große Angst vor der Prüfung. Aber zum Glück hat sie die Prüfung','naNw')}
-  {text(140,897,21,'(b)','naNw')}
-  {text(394,897,383,'(SCHEFGATEF). Jetzt möchte sie endlich Geld','naNw')}
-  {text(140,925,20,'(c)','naNw')}
-  {text(393,925,443,'(DERENIVEN). Dann möchte sie mit ihrem Freund','naNw')}
-  {text(138,951,128,'Johnny ein (d)','naNw')}
-  {text(498,951,279,'(RORTOMDA) kaufen und durch','naNw')}
-  {text(140,976,21,'(e)','naNw')}
-  {text(393,976,438,'(PORUEA) fahren. Zuerst macht sie aber noch den','naNw')}
-  {text(140,999,19,'(f)','naNw')}
-  {text(391,999,449,'(RENFEHÜRSHIC). Sie möchten durch viele Länder','naNw')}
-  {text(140,1027,21,'(g)','naNw')}
-  {text(393,1027,324,'(SINERE), die Welt und andere junge','naNw')}
-  {text(140,1053,22,'(h)','naNw')}
-  {text(395,1053,460,'(UTELE) kennenlernen. In ein paar Jahren möchten','naNw')}
+  {art('ausbildung',404,847,112,39)}
+  {text(140,848,254,'Im Sommer hat Sofia ihre (a)','naNw naS19')}
+  {text(516,848,378,'(BLUGASIDNU) als Friseurin abgeschlossen.','naNw naS19')}
+  {text(140,874,655,'Sie hatte große Angst vor der Prüfung. Aber zum Glück hat sie die Prüfung','naNw naS19')}
+  {text(140,897,21,'(b)','naNw naS19')}
+  {text(394,897,383,'(SCHEFGATEF). Jetzt möchte sie endlich Geld','naNw naS19')}
+  {text(140,925,20,'(c)','naNw naS19')}
+  {text(393,925,443,'(DERENIVEN). Dann möchte sie mit ihrem Freund','naNw naS19')}
+  {text(138,951,128,'Johnny ein (d)','naNw naS19')}
+  {text(498,951,279,'(RORTOMDA) kaufen und durch','naNw naS19')}
+  {text(140,977,21,'(e)','naNw naS19')}
+  {text(393,977,438,'(PORUEA) fahren. Zuerst macht sie aber noch den','naNw naS19')}
+  {text(140,1002,19,'(f)','naNw naS19')}
+  {text(391,1002,449,'(RENFEHÜRSHIC). Sie möchten durch viele Länder','naNw naS19')}
+  {text(140,1028,21,'(g)','naNw naS19')}
+  {text(393,1028,324,'(SINERE), die Welt und andere junge','naNw naS19')}
+  {text(140,1054,22,'(h)','naNw naS19')}
+  {text(395,1054,460,'(UTELE) kennenlernen. In ein paar Jahren möchten','naNw naS19')}
   {text(139,1080,158,'sie und Johnny (i)','naNw')}
   {text(530,1080,277,'(RITAHENE) und Kinder haben.','naNw')}
   {kb(78,1149,'KB 6')}
@@ -866,14 +861,14 @@ export function NativeAB12P31to46({page}:{page:string}){
   {field('p37-6c',390,279,102,'6 c')}
   {field('p37-6d',337,303,125,'6 d')}
   {field('p37-6e',243,355,115,'6 e')}
-  {field('p37-8b',175,895,213,'8 b')}
-  {field('p37-8c',175,923,213,'8 c')}
-  {field('p37-8d',280,949,212,'8 d')}
-  {field('p37-8e',175,974,213,'8 e')}
-  {field('p37-8f',175,997,213,'8 f')}
-  {field('p37-8g',175,1025,213,'8 g')}
-  {field('p37-8h',175,1051,213,'8 h')}
-  {field('p37-8i',305,1078,220,'8 i')}
+  {field('p37-8b',168,895,221,'8 b')}
+  {field('p37-8c',166,921,221,'8 c')}
+  {field('p37-8d',272,947,221,'8 d')}
+  {field('p37-8e',167,972,220,'8 e')}
+  {field('p37-8f',165,998,221,'8 f')}
+  {field('p37-8g',167,1024,221,'8 g')}
+  {field('p37-8h',169,1050,221,'8 h')}
+  {field('p37-8i',303,1077,221,'8 i')}
   {check('37-1',1000,165,{'p37-6b':'wollen','p37-6c':'will','p37-6d':'wollen','p37-6e':'willst'})}
   {check('37-2',1000,1116,{'p37-8b':'geschafft','p37-8c':'verdienen','p37-8d':'Motorrad','p37-8e':'Europa','p37-8f':'Führerschein','p37-8g':'reisen','p37-8h':'Leute','p37-8i':'heiraten'})}
  </>}
