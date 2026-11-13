@@ -40,6 +40,9 @@ R = [
     (115,226,465,256),      # 1a letter + Sammeln Sie Fragewoerter. (ink y229-250)
     (148,266,305,342),      # Fragewoerter rows (Wer/Wie, Was/Wo, Woher)
     (115,368,505,402),      # 1b Notieren Sie fuenf Fragen auf Kaertchen,
+    (143,707,378,776),      # bubble A artwork (replaced by art crop)
+    (406,692,753,808),      # bubble B artwork
+    (746,692,1013,778),     # bubble C artwork
     (145,572,800,614),      # ex2 Spiel title
     (145,614,920,702),      # ex2 3 instruction lines
     (145,932,522,992),      # training ex1 title (2 lines, marker at x529 stays)
@@ -60,10 +63,11 @@ R = [
 
 # ---------- ex1 ----------
 FIRA700=REPO+'/assets/fonts/firasans-latin-700.woff2'
+DROID700=REPO+'/assets/fonts/droid-serif-700.woff2'
 t(159,179,'Ihre Freundin / Ihr Freund hat ihren Traummann / seine Traumfrau kennengelernt.',c='naFiraB',s=21.0)
 t(160,205,'Was möchten Sie wissen?',c='naFiraM',target=216)
 wsa=band(232,268,118,146); t(round(wsa[0]['x']),round(line_baseline(wsa)),'a',c='naFiraM',col='#5c75ab',target=round(wsa[0]['w'])+2)
-t(157,243,'Sammeln Sie Fragewörter.',c='naRB',target=224)
+t(157,243,'Sammeln Sie Fragewörter.',c='naDB',s=best_size('Sammeln Sie Fragewörter.',DROID700,224,lo=13,hi=22))
 # Fragewoerter grid
 t(157,282,'Wer …',i=1,target=50)
 t(247,283,'Wie …',i=1,target=46)
@@ -86,8 +90,8 @@ t(823,727,'Im Supermarkt.',target=114)
 t(777,750,'Was macht sie/er beruflich?',target=205)
 
 # ---------- training ex1 ----------
-t(153,954,'Hören Sie die Wörter und markieren',c='naFiraS',target=353)
-t(152,979,'Sie den Wortakzent.',c='naFiraS',target=197)
+t(153,956,'Hören Sie die Wörter und markieren',c='naFiraS',target=353)
+t(152,981,'Sie den Wortakzent.',c='naFiraS',target=197)
 auto(996,1030,148,502,'aussehen – bekommen – entschuldigen –')
 auto(1028,1056,148,502,'gefallen – erkennen – mitnehmen –')
 t(151,1068,'anmelden – absagen – vergessen – einkaufen',target=394)
@@ -98,11 +102,11 @@ items.append({'k':'r','x':274,'y':1020,'w':36,'h':2,'col':'#da8855'})
 t(151,1134,'Ordnen Sie die Wörter aus',c='naFiraM',s=20.0)
 t(413,1134,'1',c='naFiraM',col='#5c75ab',s=20.0)
 t(425,1134,' zu.',c='naFiraM',s=20.0)
-t(150,1171,'trennbar',b=True,c='naRB',target=82)
-t(317,1173,'nicht trennbar',b=True,c='naRB',target=139)
+t(150,1171,'trennbar',c='naDB',s=best_size('trennbar',DROID700,82,lo=13,hi=22))
+t(317,1173,'nicht trennbar',c='naDB',s=best_size('nicht trennbar',DROID700,139,lo=13,hi=22))
 
 # ---------- ex3 ----------
-auto(1238,1278,148,565,'Wo ist der Wortakzent? Kreuzen Sie an.',c='naFiraS')
+t(150,1264,'Wo ist der Wortakzent? Kreuzen Sie an.',c='naFiraS',target=390)
 auto(1288,1312,405,470,'1. Silbe')
 auto(1288,1312,470,548,'2. Silbe')
 t(184,1326,'Bei trennbaren Verben:',target=182)
@@ -153,22 +157,26 @@ crop_alpha((303,1180,402,1216),'bekommen')
 items.append({'k':'a','n':'aussehen','x':140,'y':1178,'w':82,'h':36,'alt':'Beispieleintrag aussehen'})
 items.append({'k':'a','n':'bekommen','x':303,'y':1180,'w':99,'h':36,'alt':'Beispieleintrag bekommen'})
 
+# bubble artwork: full ring crops with printed text masked out, placed under native text
+def bubble_art(bounds,masks,nm):
+    x0,y0,x1,y1=bounds
+    im=Image.open(f'{REPO}/assets/ab-a12-p{P}.png').convert('RGB').crop((x0,y0,x1,y1))
+    a=np.asarray(im).astype(float)
+    for mx0,my0,mx1,my1 in masks:
+        reg=a[my0-y0:my1-y0,mx0-x0:mx1-x0]
+        m=reg.max(axis=2)<222
+        md=m.copy()
+        md[1:,:]|=m[:-1,:]; md[:-1,:]|=m[1:,:]; md[:,1:]|=m[:,:-1]; md[:,:-1]|=m[:,1:]
+        reg[md]=np.array([255.,255.,255.])
+    Image.fromarray(np.clip(a,0,255).astype('uint8')).save(f'{REPO}/assets/book-crops/native-ab12-p{P}-{nm}.png')
+    items.insert(0,{'k':'a','n':nm,'x':x0,'y':y0,'w':x1-x0,'h':y1-y0,'alt':f'Sprechblase {nm}'})
+bubble_art((143,707,378,776),[(193,728,355,757)],'bubA')
+bubble_art((406,692,753,808),[(428,724,718,797)],'bubB')
+bubble_art((746,692,1013,778),[(818,713,945,736),(772,735,990,757)],'bubC')
+
 # ---------- bg + spec ----------
 bgp=f'{REPO}/assets/book-crops/native-ab12-p{P}-bg.png'
 bg=make_bg(P,R,bgp)
-# bubble text: masked erase (dark pixels only + 1px dilation) so pale oval rings survive
-_bga=np.asarray(Image.open(bgp).convert('RGB')).astype(float)
-_sca=np.asarray(Image.open(f'{REPO}/assets/ab-a12-p{P}.png').convert('RGB')).astype(float)
-def mask_erase(bga,sca,rect,thr=222):
-    x0,y0,x1,y1=rect
-    m=sca[y0:y1,x0:x1].max(axis=2)<thr
-    md=m.copy()
-    md[1:,:]|=m[:-1,:]; md[:-1,:]|=m[1:,:]; md[:,1:]|=m[:,:-1]; md[:,:-1]|=m[:,1:]
-    reg=bga[y0:y1,x0:x1]
-    reg[md]=np.array([254.,253.,248.])
-for _r in [(188,726,360,760),(425,724,725,796),(766,706,1000,762)]:
-    mask_erase(_bga,_sca,_r)
-Image.fromarray(np.clip(_bga,0,255).astype('uint8')).save(bgp)
 spec={'w':W,'h':H,'items':[{'k':'a','n':'bg','x':0,'y':0,'w':W,'h':H,'alt':'Seite 57 Hintergrund'}]+items}
 write_spec(P,spec)
 print(f'p{P} written:',len(items)+1,'items')
