@@ -5,6 +5,7 @@ from PIL import Image, ImageFont
 
 REPO = '/home/sandbox/Menschen-Egyptian-Style'
 DROID = REPO + '/assets/fonts/droid-serif-400.ttf'
+FIRA400 = f'{REPO}/assets/fonts/firasans-latin-400.woff2'
 FIRA  = REPO + '/assets/fonts/firasans-latin-500.ttf'
 _fc = {}
 def font(path, size):
