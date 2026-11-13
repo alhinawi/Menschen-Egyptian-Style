@@ -90,7 +90,7 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {check('u8',161,608)}
  {title('9',641,'Mike in München, Teil 1','KB 7',125)}
  {txt(161,679,300,'Ordnen Sie die Fragen zu.','mTitle')}
- <div className="mText mBank" style={{left:161,top:705,width:560}}><Words s="Wann kommst du? | Holst du mich ab? | Nimmst du den Zug? | "/><span className="mStruck">Hast du Zeit?</span></div>
+ <div className="mText mBank" style={{left:161,top:705,width:480,fontSize:14}}><Words s="Wann kommst du? | Holst du mich ab? | Nimmst du den Zug? | "/><span className="mStruck">Hast du Zeit?</span></div>
  {art('man',695,556,202,218)}
  <div className="mText" style={{left:165,top:740,width:520}}><span className="mSq">■</span><Words s="  Hallo Tom, hier ist Mike."/></div>
  <div className="mText" style={{left:165,top:761,width:520}}><span className="mTr">▲</span><Words s="  Hallo Mike, wie geht's?"/></div>
@@ -204,7 +204,7 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  <div className="mTippRule" style={{left:167,top:851,width:415,height:4}}/>
  <div className="mText mTipp" style={{left:195,top:860,width:400}}><Words s={'Sie lesen den Satz:\n„Wir '}/><span className="mHi"><Words s="steigen"/></span><Words s=" dann in Flensburg in den Bus "/><span className="mHi"><Words s="um"/></span><Words s={'.“\nSie verstehen „steigen“ nicht und suchen im Wörterbuch.\nAchten Sie auch auf das Satzende.\nSuchen Sie „umsteigen“ im Wörterbuch.'}/></div>
  {title('2',1001,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','',132)}
- {open('u2-notes',170,1019,600,170,'2 Eigene Wörter')}
+ {open('u2-notes',170,1016,600,156,'2 Eigene Wörter')}
  {art('photos',794,168,107,1010)}
  </>}
  {Number(page)%2?txt(690,({79:1209,81:1193,83:1205,85:1204,87:1211} as Record<string,number>)[page]||1208,180,footerW[page]+' | '+page,'mFooter'):<>{txt(48,({80:1211,82:1208,84:1212,86:1206} as Record<string,number>)[page]||1208,60,'Modul 4','mFooter mFooterTab')}{txt(112,({80:1211,82:1208,84:1212,86:1206} as Record<string,number>)[page]||1208,170,page+' | '+footerW[page],'mFooter')}</>}
