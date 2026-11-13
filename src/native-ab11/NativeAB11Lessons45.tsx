@@ -158,6 +158,6 @@ export function NativeAB11Lessons45({page}:{page:string}){
  {['lamp','chair','book','bottle','key'].map((id,i)=>art(id,319,1358+i*39,55,34))}
  {match('u8',['a  Die Lampe','b  Der Stuhl','c  Das Buch','d  Die Flasche','e  Der Schlüssel'],['ist aus Metall.','ist aus Plastik.','ist aus Glas.','ist aus Papier.','ist aus Holz.'],[2,4,3,1,0],168,1358,650,39)}
  </>}
- {txt(Number(page)%2?704:48,1254,Number(page)%2?190:400,(Number(page)%2?'':'Modul 2   ')+page+' | '+({'30':'dreißig','31':'einunddreißig','32':'zweiunddreißig','33':'dreiunddreißig','34':'vierunddreißig','35':'fünfunddreißig','36':'sechsunddreißig','37':'siebenunddreißig'} as Record<string,string>)[page]+(Number(page)%2?'  Modul 2':''),'mFooter')}
+ {txt(Number(page)%2?704:48,page==='37'?1340:1254,Number(page)%2?190:400,(Number(page)%2?'':'Modul 2   ')+page+' | '+({'30':'dreißig','31':'einunddreißig','32':'zweiunddreißig','33':'dreiunddreißig','34':'vierunddreißig','35':'fünfunddreißig','36':'sechsunddreißig','37':'siebenunddreißig'} as Record<string,string>)[page]+(Number(page)%2?'  Modul 2':''),'mFooter')}
  </div><audio className="nabPlayer" ref={audio} controls hidden={!track} aria-label="Originalaudio Arbeitsbuch"/></div>;
 }
