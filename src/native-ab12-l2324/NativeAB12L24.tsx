@@ -6,6 +6,8 @@ export function NativeAB12L24({page}:{page:string}){
  const {text,art,field,check,title,rule}=c;const set=c.set;
  const conf98=(id:string,y:number)=><>{[0,1,2].map(cc=>c.dot(id,''+cc,650+cc*29.5,y,'Selbsteinschätzung '+id+' '+['gut','mittel','noch nicht'][cc],false,'naDot98'))}</>;
  const sect98=(y:number,t:string,tag:string)=><div className="naText naSect98" style={{left:78,top:y}}><Words text={t}/> <span className="naTag98">{tag}</span></div>;
+ const conf99=(id:string,y:number)=><>{[0,1,2].map(cc=>c.dot(id,''+cc,646.6+cc*28.9,y,'Selbsteinschätzung '+id+' '+['gut','mittel','noch nicht'][cc],false,'naDot99'))}</>;
+ const sect99=(y:number,t:string,tag:string)=><div className="naText naSect99" style={{left:78,top:y}}><Words text={t}/> <span className="naTag99">{tag}</span></div>;
  return <Canvas page={page} root={c.root} player={c.player} scale={c.scale}>
  {page==='96'&&<>
   {text(80,54,610,'WIEDERHOLUNGSSTATION: WORTSCHATZ','naHead96 naNw',28.5)}
@@ -137,6 +139,63 @@ export function NativeAB12L24({page}:{page:string}){
   {text(97,1006.05,47,'Verben:','naBookSerif naBody98 naNw',12.4)}{text(147,1006.05,18,'gra','naBookSerif naBody98 naNw',12.4)}{field('98-11v1',165,997.9,126,'11 gratulieren')}{text(294,1006.05,7,',','naBookSerif naBody98 naNw',12.4)}{text(302,1006.05,20,'sch','naBookSerif naBody98 naNw',12.4)}{field('98-11v2',322,997.9,138,'11 schenken')}{text(460,1006.05,6,',','naBookSerif naBody98 naNw',12.4)}{text(466,1006.05,12,'fei','naBookSerif naBody98 naNw',12.4)}{field('98-11v3',481,997.9,115,'11 feiern')}
   <div className="naText naBadge98" style={{left:0,top:1051,width:54,height:17}}>Modul 8</div>
   <div className="naText naFoot98" style={{left:59,top:1052,width:200}}><b>98</b>&nbsp;&nbsp;|&nbsp;&nbsp;achtundneunzig</div>
+ </>}
+ {page==='99'&&<>
+  {text(76.7,58.1,330,'SELBSTEINSCHÄTZUNG','naHead99 naNw',26.9)}
+  {art('script',415,57,154,30)}
+  {art('bars',735,31,64,63)}
+  {text(78,124.5,150,'Ich kann auch …','naKann99 naNw')}
+  {art('lights',641,118,83,24)}
+  {sect99(148,'… Kleidung bewerten (Komparation):','L22')}{conf99('s1',148.4)}
+  {field('99-1a',95,159.9,135,'1 am besten')}{text(235.1,168.75,215,'(+++, gut) findet sie seine Schuhe.','naBookSerif naBody99 naNw',12.5)}
+  {text(95,185.95,68,'Maike mag','naBookSerif naBody99 naNw',12.5)}{field('99-1b',166.5,177.9,112.5,'1 lieber')}{text(284.9,185.95,125,'(++, gern) Beige als Lila.','naBookSerif naBody99 naNw',12.5)}
+  {text(95,203.95,140,'Dein T-Shirt ist ja noch','naBookSerif naBody99 naNw',12.5)}{field('99-1c',241.1,196.7,91.7,'1 älter')}{text(338.7,203.95,160,'(++, alt) als das von Marco.','naBookSerif naBody99 naNw',12.5)}
+  {check('99-1',742,139.4,{'99-1a':'am besten|besten','99-1b':'lieber','99-1c':'älter'})}
+  {sect99(239,'… Kleidung vergleichen (genauso … wie, als):','L22')}{conf99('s2',239.1)}
+  {text(95,259.6,95,'Lila (+) mag sie','naBookSerif naBody99 naNw',12.5)}{field('99-2a1',190.3,250.9,85.7,'2 so')}{text(280,259.6,30,'gern','naBookSerif naBody99 naNw',12.5)}{field('99-2a2',311.8,250.9,46.9,'2 wie')}{text(364.6,259.6,55,'Rosa (+).','naBookSerif naBody99 naNw',12.5)}
+  {text(96,276.6,195,'Das Hemd (++) gefällt ihr besser','naBookSerif naBody99 naNw',12.5)}{field('99-2b',289.9,267.9,57.8,'2 als')}{text(352.7,276.6,80,'die Hose (+).','naBookSerif naBody99 naNw',12.5)}
+  {check('99-2',742,230.1,{'99-2a1':'so','99-2a2':'wie','99-2b':'als'})}
+  {sect99(311,'… sagen, wie etwas ist (Adjektive bilden):','L23')}{conf99('s3',309.1)}
+  {text(95,329.95,200,'Ohne …: Der Himmel ist wolken','naBookSerif naBody99 naNw',12.5)}{field('99-3',292.9,322.6,46.8,'3 los')}{text(341.5,329.95,8,'.','naBookSerif naBody99 naNw',12.5)}
+  {check('99-3',742,300.1,{'99-3':'los'})}
+  {sect99(365,'… Gründe angeben (Konjunktion: denn):','L23')}{conf99('s4',364.2)}
+  {text(95,384.95,490,'Nächstes Jahr fahren wir lieber ans Mittelmeer. Dort ist es auch im Herbst noch','naBookSerif naBody99 naNw',12.5)}
+  {text(95,400.95,75,'schön warm.','naBookSerif naBody99 naNw',12.5)}{art('hw1',176.3,403.6,88.6,11)}{field('99-4a',179.3,395,421.5,'4 fahren wir lieber')}{text(600.4,400.95,8,',','naBookSerif naBody99 naNw',12.5)}
+  {art('hw2',95.6,421.6,23.1,11)}{field('99-4b',94.6,413,504.2,'4 denn dort')}{text(600.5,420.95,8,'.','naBookSerif naBody99 naNw',12.5)}
+  {check('99-4',742,355.2,{'99-4a':'fahren wir lieber ans Mittelmeer','99-4b':'dort ist es auch im Herbst noch schön warm'})}
+  {sect99(455,'… das Datum angeben (Ordinalzahlen):','L24')}{conf99('s5',455.1)}
+  {text(95,474.95,138,'Welcher Tag ist heute?','naBookSerif naBody99 naNw',12.5)}{field('99-5a',233,467.9,277,'5 heute')}{text(513,474.95,8,'.','naBookSerif naBody99 naNw',12.5)}{text(521,474.95,72,'(7. September)','naBookSerif naBody99 naNw',12.5)}
+  {text(95,492.95,160,'Wann hast du Geburtstag?','naBookSerif naBody99 naNw',12.5)}{field('99-5b',256,485.9,287.8,'5 wann')}{text(545.5,492.95,8,'.','naBookSerif naBody99 naNw',12.5)}{text(553.9,492.95,55,'(16. Juli)','naBookSerif naBody99 naNw',12.5)}
+  {check('99-5',742,446.1,{'99-5a':'Heute ist der 7. September|der 7. September|Heute ist der siebte September|der siebte September','99-5b':'am 16. Juli|am sechzehnten Juli'})}
+  {sect99(528,'… Wünsche angeben (Konjunktiv II: würde):','L24')}{conf99('s6',525.1)}
+  {text(95,546.95,290,'ins Kino / einladen / würde / ich / dich / gern:','naBookSerif naBody99 naNw',12.5)}
+  {field('99-6',95,557.9,498.2,'6 würde einladen')}{text(597.5,564.95,8,'.','naBookSerif naBody99 naNw',12.5)}
+  {check('99-6',742,516.1,{'99-6':'Ich würde dich gern ins Kino einladen'})}
+  {text(77.7,612.7,300,'Üben / Wiederholen möchte ich noch …','naKann99 naNw')}
+  {field('99-7',78.7,628.4,513,'7 üben')}
+  {text(77.7,710.1,160,'RÜCKBLICK','naHead99 naNw',20.6)}
+  {text(77.7,765.5,295,'Wählen Sie eine Aufgabe zu Lektion','naWahl99 naNw')}
+  <div className="naText naNum22" style={{left:366.6,top:769,width:32,height:15}}>22</div>
+  <div className="naRuleR99" style={{left:398.5,top:782,width:321}}/>
+  {art('icon1',47.8,812,24,26)}
+  <div className="naText naNum99" style={{left:85.7,top:817,width:15,height:15}}>1</div>
+  {text(109.6,817,610,'Lesen Sie noch einmal den Forumsbeitrag von Marco im Kursbuch auf Seite 59.','naAufg99 naNw')}
+  {text(109.6,836.7,300,'Schreiben Sie einen Kommentar.','naAufg99 naNw',14.4)}
+  <div className="naYelB99" style={{left:109.6,top:865.2,width:388.6,height:15}}/>
+  {text(114.6,865.2,382,'Ich finde dein T-Shirt … | Super / Nicht so gut finde ich … | …','naYel99 naNw')}
+  {art('icon2',44.8,908,30,32)}
+  <div className="naText naNum99" style={{left:85.7,top:913,width:15,height:15}}>2</div>
+  {text(109.6,914.5,620,'Haben Sie auch ein Lieblingskleidungsstück? Schreiben Sie einen Beitrag im Forum.','naAufg99 naNw')}
+  <div className="naYelB99" style={{left:109.6,top:943.1,width:338.7,height:15}}/>
+  {text(114.6,943.7,335,'Mein/e Lieblingspullover / Lieblings… ist … Jahre alt.','naYel99 naNw')}
+  <div className="naYelB99" style={{left:109.6,top:962.1,width:418.4,height:15}}/>
+  {text(114.6,962.7,410,'Ich habe ihn/sie/es … gekauft. / Er/Sie/Es ist ein Geschenk von …','naYel99 naNw')}
+  <div className="naYelB99" style={{left:110.6,top:982.1,width:142.5,height:15}}/>
+  {text(114.6,981.7,135,'Ich finde ihn/sie/es …','naYel99 naNw')}
+  <div className="naYelB99" style={{left:110.6,top:1002.1,width:23.9,height:15}}/>
+  {text(114.6,1002.2,20,'…','naYel99 naNw')}
+  <div className="naText naFoot99 naNw" style={{left:597,top:1050,width:141}}>neunundneunzig&nbsp;|&nbsp;99</div>
+  <div className="naText naBadge99" style={{left:749.2,top:1052,width:46.8,height:14}}>Modul 8</div>
  </>}
  {page==='97'&&<>
   {text(71.7,54,580,'WIEDERHOLUNGSSTATION: GRAMMATIK','naHead97 naNw',28.5)}
