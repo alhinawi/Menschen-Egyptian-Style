@@ -73,4 +73,5 @@
 .nkb[data-native-page="11"] .nkbCanvas input[type=text].nkbField.nkbUl[data-native-field="das"],.nkb[data-native-page="10"] .nkbCanvas input[type=text].nkbField.nkbUl[data-native-field="komme"]{border-bottom:1px solid #5a5a5a!important}
 .nkb[data-native-page="10"] .nkbCanvas select.nkbField[data-native-field^="music_"]{border:0!important;border-radius:50%!important;background:transparent!important;color:#173c62!important;font-size:2.2cqw!important}
 .nkb[data-native-page="21"] .nkbCanvas input[type=text].nkbField.nkbUl[data-native-field="t2"]{border-bottom-color:transparent!important}
-.nkb[data-native-page="18"] .nkbLine.nkbSans[data-tw="356"] span[style*="italic"]{font-size:.86em}
+.nkb[data-native-page="18"] .nkbLine span[style*="italic"]{font-size:.94em;letter-spacing:-.02em;font-weight:500;word-spacing:.14em}
+.nkb[data-native-page="18"] .nkbLine.nkbB[data-tw="180"]{font-weight:700}
