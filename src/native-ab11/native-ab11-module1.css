@@ -7,3 +7,6 @@
 /* Match the visible answer-frame treatment across the native AB pages. */
 .nativeAB11Module1 .mCanvas .mField{border:1px solid #8b9586!important;border-radius:2px!important;background-color:#fffef5!important}
 .nativeAB11Module1 .mCanvas .mArrow{border:1px solid #8b9586!important;border-radius:2px!important}
+/* Keep the module's 901 x 1275 coordinate system ahead of the generic
+   1075 x 1521 canvas rule, regardless of lazy stylesheet load order. */
+.nativeAB11.nativeAB11Module1:not(.nativeAB11Lessons45) .mCanvas{width:901px;height:1275px}
