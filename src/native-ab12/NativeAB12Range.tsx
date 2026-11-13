@@ -1,5 +1,6 @@
 import {PageImage} from '../components/PageImage';
 import {CheckButton} from '../components/CheckButton';
+import {PageImage} from '../components/PageImage';
 import {useLayoutEffect,useRef,useState} from 'react';
 import {usePageReset} from '../exercises/usePageReset';
 import {LineMatching} from '../exercises/LineMatching';
