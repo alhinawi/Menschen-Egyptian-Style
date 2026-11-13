@@ -26,7 +26,7 @@
 .naCanvas.naNarrow .naSide.naSideC{font-size:8px;letter-spacing:1px}
 .naCanvas .naField.naFieldNL{border-bottom:0!important}
 @font-face{font-family:DroidSerif;src:url('/assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}
-.naCanvas .naText.naBookSerif{font-family:DroidSerif,Georgia,'Times New Roman',serif}
+.naCanvas .naText.naBookSerif{font-family:DroidSerif,Georgia,'Times New Roman',serif;font-size:14px;letter-spacing:-0.35px}
 .naCanvas [data-matching="86-12"] .sharedMatchItem,.naCanvas [data-matching="86-12r"] .sharedMatchItem{font-family:DroidSerif,Georgia,'Times New Roman',serif}
 .naCanvas svg.naEx12Ex{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;z-index:8}
 [data-matching="86-12r"] .sharedMatchItem:not([data-match-right]){color:transparent!important}
