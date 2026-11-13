@@ -480,40 +480,69 @@ export function NativeAB12P31to46({page}:{page:string}){
  {page==='35'&&<>
   {art('0',934,36,133,1358)}
   {art('3',372,1240,165,77)}
+  {art('tv',576,1246,224,78)}
   {lin(1063,0,8,1104,'#aeb7b2')}
   {lin(395,111,482,4,'#c0d843')}
-  {lin(775,249,98,2,'#c0c7c7')}
-  {lin(317,351,190,2,'#c4c5cd')}
-  {lin(393,377,110,2,'#c6c6c9')}
-  {lin(677,378,147,2,'#bec0c3')}
-  {lin(390,480,90,2,'#c7c6cc')}
-  {lin(339,506,102,2,'#7a7a7a')}
-  {lin(677,520,120,2,'#c2c8c4')}
-  {lin(317,583,113,2,'#7a7a7a')}
-  {lin(753,597,119,2,'#c6c6ca')}
-  {lin(676,648,196,2,'#c5c6c6')}
-  {lin(316,673,121,2,'#7a7a7a')}
-  {lin(401,725,106,2,'#c3c3c1')}
-  {lin(776,751,96,2,'#c3c4c6')}
-  {lin(403,828,103,2,'#c4c3ce')}
-  {lin(676,828,195,2,'#7a7a7a')}
-  {lin(319,879,187,2,'#c6c6c7')}
-  {lin(676,906,195,2,'#bdbdc1')}
-  {lin(676,957,113,2,'#7a7a7a')}
-  {lin(316,982,190,2,'#c5c5c6')}
-  {lin(696,983,119,2,'#7a7a7a')}
-  {lin(688,1009,183,2,'#c0bfca')}
-  {lin(356,1047,100,2,'#7a7a7a')}
-  {lin(345,1124,90,2,'#7a7a7a')}
+  {lin(317,249,191,2,'#d9dae0')}
+  {lin(677,250,196,2,'#d9dae0')}
+  {lin(317,300,191,2,'#d9dae0')}
+  {lin(676,301,197,2,'#d9dae0')}
+  {lin(316,326,192,2,'#d9dae0')}
+  {lin(317,352,191,2,'#d9dae0')}
+  {lin(676,353,197,2,'#d9dae0')}
+  {lin(317,377,191,2,'#d9dae0')}
+  {lin(677,378,196,2,'#d9dae0')}
+  {lin(317,403,191,2,'#d9dae0')}
+  {lin(317,429,191,2,'#d9dae0')}
+  {lin(677,443,196,2,'#d9dae0')}
+  {lin(677,469,196,2,'#d9dae0')}
+  {lin(317,480,191,2,'#d9dae0')}
+  {lin(330,506,178,2,'#d9dae0')}
+  {lin(676,520,197,2,'#d9dae0')}
+  {lin(676,546,197,2,'#d9dae0')}
+  {lin(316,558,192,2,'#d9dae0')}
+  {lin(676,572,197,2,'#d9dae0')}
+  {lin(316,584,192,2,'#d9dae0')}
+  {lin(676,597,197,2,'#d9dae0')}
+  {lin(317,648,191,2,'#d9dae0')}
+  {lin(676,648,197,2,'#d9dae0')}
+  {lin(316,674,192,2,'#d9dae0')}
+  {lin(676,700,197,2,'#d9dae0')}
+  {lin(316,725,192,2,'#d9dae0')}
+  {lin(676,751,197,2,'#d9dae0')}
+  {lin(316,777,192,2,'#d9dae0')}
+  {lin(676,803,197,2,'#d9dae0')}
+  {lin(316,828,192,2,'#d9dae0')}
+  {lin(676,828,197,2,'#d9dae0')}
+  {lin(316,880,192,2,'#d9dae0')}
+  {lin(676,880,197,2,'#d9dae0')}
+  {lin(675,906,198,2,'#d9dae0')}
+  {lin(316,931,192,2,'#d9dae0')}
+  {lin(676,931,197,2,'#d9dae0')}
+  {lin(315,957,193,2,'#d9dae0')}
+  {lin(675,957,198,2,'#d9dae0')}
+  {lin(315,983,193,2,'#d9dae0')}
+  {lin(675,984,198,2,'#d9dae0')}
+  {lin(675,1009,198,2,'#d9dae0')}
+  {lin(675,1034,198,2,'#d9dae0')}
+  {lin(316,1047,192,2,'#d9dae0')}
+  {lin(675,1061,198,2,'#d9dae0')}
+  {lin(315,1072,193,2,'#d9dae0')}
+  {lin(675,1086,198,2,'#d9dae0')}
+  {lin(315,1124,193,2,'#d9dae0')}
+  {lin(675,1138,198,2,'#d9dae0')}
+  {lin(315,1176,193,2,'#d9dae0')}
   {lin(1068,1181,2,181,'#7a7a7a')}
   {lin(143,1196,274,6,'#cfaa3f')}
+  {lin(143,1196,15,88,'#cfaa3f')}
+  <div style={{position:'absolute',left:146,top:1232,writingMode:'vertical-rl',fontSize:9,fontWeight:700,color:'#8a3b2e',fontFamily:'Arial,sans-serif'}}>TIPP</div>
   {text(106,83,281,'LERNWORTSCHATZ','naHeadline naNw')}
-  {text(145,157,555,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naNw')}
-  {text(146,198,81,'Im Hotel','naNw')}
+  {title('1',99,157,700,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naGB')}
+  {text(146,198,81,'Im Hotel','naBold naNw')}
   {text(531,198,145,'verschieben, hat','naNw')}
   {text(146,223,120,'Aufzug der, ¨e','naNw')}
   {text(543,223,98,'verschoben','naNw')}
-  {text(156,251,133,'CH/A: Lift der, -e','naNw')}
+  {stext(156,251,133,'CH/A: Lift der, -e',{color:'#8e9094'},'naNw')}
   {text(532,251,97,'passen, hat','naNw')}
   {text(146,275,122,'Dusche die, -n','naNw')}
   {text(542,275,63,'gepasst','naNw')}
@@ -527,7 +556,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(531,393,229,'Weitere wichtige Wörter','naNw')}
   {text(146,404,142,'Heizung die, -en','naNw')}
   {text(532,418,107,'Angst die, ¨e','naNw')}
-  {text(146,429,109,'Klimaanlage','naBold naNw')}
+  {text(146,429,109,'Klimaanlage','naNw')}
   {text(157,444,54,'die, -n','naNw')}
   {text(543,444,107,'Angst haben','naNw')}
   {text(533,470,166,'Kurs der, -e (Tanz-/','naNw')}
@@ -535,18 +564,18 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(157,495,140,'die Internetver-','naNw')}
   {text(543,495,123,'Spanischkurs)','naNw')}
   {text(532,521,84,'Leben das','naNw')}
-  {text(156,533,74,'bindung','naBold naNw')}
+  {text(156,533,74,'bindung','naNw')}
   {text(145,547,113,'Wecker der, -','naNw')}
   {text(531,547,136,'Sitzung die, -en','naNw')}
   {text(531,573,121,'Stunde die, -n','naNw')}
-  {text(145,597,120,'Beschwerden','naNw')}
+  {text(145,597,120,'Beschwerden','naBold naNw')}
   {text(542,597,80,'die halbe','naNw')}
   {text(146,623,129,'Bescheid sagen','naNw')}
   {text(542,623,60,'Stunde','naNw')}
   {text(146,648,95,'Hilfe rufen','naNw')}
   {text(531,648,145,'aus-machen, hat','naNw')}
-  {text(144,674,110,'bringen, hat','naBold naNw')}
-  {text(542,674,102,'ausgemacht','naBold naNw')}
+  {text(144,674,110,'bringen, hat','naNw')}
+  {text(542,674,102,'ausgemacht','naNw')}
   {text(155,700,76,'gebracht','naNw')}
   {text(531,700,170,'kennen-lernen, hat','naNw')}
   {text(145,726,164,'funktionieren, hat','naNw')}
@@ -559,36 +588,37 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(531,803,124,'tun, hat getan','naNw')}
   {text(145,829,133,'reparieren, hat','naNw')}
   {text(530,829,103,'warten, hat','naNw')}
-  {text(156,856,79,'repariert','naBold naNw')}
-  {text(541,856,77,'gewartet','naBold naNw')}
+  {text(156,856,79,'repariert','naNw')}
+  {text(541,856,77,'gewartet','naNw')}
   {text(144,880,271,'schicken (einen Techniker/...),','naNw')}
   {text(530,880,55,'dumm','naNw')}
   {text(155,907,115,'hat geschickt','naNw')}
   {text(542,907,99,'Wie dumm!','naNw')}
-  {text(144,932,57,'kaputt','naBold naNw')}
-  {text(530,932,33,'kalt','naBold naNw')}
-  {text(144,958,50,'sofort','naBold naNw')}
-  {text(530,958,48,'lustig','naBold naNw')}
+  {text(144,932,57,'kaputt','naNw')}
+  {text(530,932,33,'kalt','naNw')}
+  {text(144,958,50,'sofort','naNw')}
+  {text(530,958,48,'lustig','naNw')}
   {text(530,985,65,'seltsam','naNw')}
-  {text(143,997,76,'Termine','naNw')}
+  {text(143,997,76,'Termine','naBold naNw')}
   {text(530,1011,52,'sicher','naNw')}
   {text(145,1022,67,'Lust die','naNw')}
   {text(530,1037,53,'nichts','naNw')}
   {text(156,1048,94,'Lust haben','naNw')}
   {text(530,1062,49,'selbst','naNw')}
-  {text(144,1074,158,'Termine ab-sagen,','naBold naNw')}
+  {text(144,1074,158,'Termine ab-sagen,','naNw')}
   {text(530,1088,126,'Sehr geehrte /','naNw')}
-  {text(155,1100,108,'hat abgesagt','naBold naNw')}
-  {text(541,1114,120,'Sehr geehrter','naBold naNw')}
+  {text(155,1100,108,'hat abgesagt','naNw')}
+  {text(541,1114,120,'Sehr geehrter','naNw')}
   {text(155,1125,147,'vereinbaren, hat','naNw')}
   {text(530,1139,151,'Mit freundlichen','naNw')}
   {text(155,1151,93,'vereinbart','naNw')}
   {text(542,1165,64,'Grüßen','naNw')}
-  {text(541,1193,182,'CH: Freundliche Grüsse','naS20 naNw')}
-  {text(176,1210,192,'Schreiben Sie Zettel und','naNw')}
-  {text(176,1232,165,'hängen Sie die Zettel','naNw')}
-  {text(176,1254,162,'in der Wohnung auf.','naNw')}
-  {text(143,1329,542,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naNw')}
+  {stext(541,1193,182,'CH: Freundliche Grüsse',{color:'#8e9094'},'naS20 naNw')}
+  {text(176,1212,192,'Schreiben Sie Zettel und','naNw')}
+  {text(176,1237,165,'hängen Sie die Zettel','naNw')}
+  {text(176,1259,162,'in der Wohnung auf.','naNw')}
+  {title('2',99,1318,700,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naGB')}
+  {art('modul-tab',990,1378,81,40)}
   {text(806,1392,173,'fünfunddreißig | 35','naFooter')}
  </>}
  {page==='36'&&<>
