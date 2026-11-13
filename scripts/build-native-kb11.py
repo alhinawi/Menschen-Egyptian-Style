@@ -200,7 +200,9 @@ def apply_overrides(r,p):
     for g,c in o.get('checks',{}).items():r['checks'][g]=c
     for f in o.get('addfields',[]):r['fields'].append(f)
     for f in r['fields']:
-        if f['id'] in o.get('fieldadj',{}):f.update(o['fieldadj'][f['id']])
+        if f['id'] in o.get('fieldadj',{}):
+            f.update(o['fieldadj'][f['id']])
+            for _k in [k for k,v in f.items() if v is None]:del f[_k]
     if o.get('compact'):r['compact']=o['compact']
     for m in o.get('split',[]):
         for b in list(r['blocks']):
