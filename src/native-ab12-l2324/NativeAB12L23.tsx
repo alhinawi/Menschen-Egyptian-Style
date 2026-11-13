@@ -365,23 +365,23 @@ export function NativeAB12L23({page}:{page:string}){
   {text(146,234,60,'Ist es nicht','naBk90 naNw')}
   {art('hand-1a',200,236,72,12)}
   {text(265,234,266,'(a)? Für die Wochenenden haben wir ein Haus im','naBk90 naNw')}
-  {field('90-1b',533,225,105,'1 b')}{text(652,232,20,'(b)','naBk90 naNw')}
+  {field('90-1b',533,225,105,'1 b')}{text(648,232,24,'(b)','naBk90 naNw')}
   {text(145,250,236,'gefunden. Was für ein Glück! Wir sind super','naBk90 naNw')}
   {field('90-1c',384,243,117,'1 c')}{text(504,250,18,'(c).','naBk90 naNw')}
   {text(146,265,390,'Am Freitag, den 1. April würden wir das gern mit Euch feiern. Wir wollen','naBk90 naNw')}
-  {field('90-1d',539,258,98,'1 d')}{text(660,265,20,'(d).','naBk90 naNw')}
+  {field('90-1d',539,258,98,'1 d')}{text(660,264,20,'(d).','naBk90 naNw')}
   {text(146,278,115,'Hoffentlich spielt das','naBk90 naNw')}
-  {field('90-1e',264,276,115,'1 e')}{text(384,280,38,'(e) mit.','naBk90 naNw')}
+  {field('90-1e',264,276,115,'1 e')}{text(384,278,38,'(e) mit.','naBk90 naNw')}
   {field('90-1f',424,274,114,'1 f')}{text(544,278,100,'(f) und Grillfleisch','naBk90 naNw')}
   {text(146,298,246,'kaufen wir. Aber bringt doch bitte Salate mit!','naBk90 naNw',11.9)}
   {text(147,312,175,'Und Zelte und Schlafsäcke nicht','naBk90 naNw')}
   {field('90-1g',325,306,118,'1 g','naFieldNL')}{ruleT(323,326,118)}
   {text(444,312,240,'(g)! Ihr könnt auch Badesachen mitbringen.','naBk90 naNw',12.0)}
   {text(147,330,95,'Es gibt dort einen','naBk90 naNw')}
-  {field('90-1h',247,324,115,'1 h')}{text(366,330,84,'(h) in der Nähe,','naBk90 naNw')}
+  {field('90-1h',247,324,115,'1 h')}{text(366,330,84,'(h) in der Nähe.','naBk90 naNw')}
   {text(147,361,91,'Kommt Ihr? Bitte','naBk90 naNw')}
-  {field('90-1i',242,355,120,'1 i')}{text(361,361,160,'(i) uns doch bis zum 15. März','naBk90 naNw')}
-  {field('90-1j',521,353,114,'1 j')}{text(634,361,20,'(j).','naBk90 naNw',11.5)}
+  {field('90-1i',242,355,112,'1 i')}{text(361,361,160,'(i) uns doch bis zum 15. März','naBk90 naNw')}
+  {field('90-1j',521,353,105,'1 j')}{text(634,361,20,'(j).','naBk90 naNw',11.5)}
   {text(147,378,82,'Alisa und Leon','naBk90 naNw')}
   {text(147,410,352,'P.S.„Wohin soll ich denn kommen?“, werdet Ihr Euch jetzt fragen.','naBk90 naNw',12.1)}
   {text(147,426,320,'Ganz einfach: Die Wegbeschreibung findet Ihr im Anhang.','naBk90 naNw',12.2)}
