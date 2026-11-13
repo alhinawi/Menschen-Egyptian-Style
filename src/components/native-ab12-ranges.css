@@ -15,4 +15,4 @@
 .naCanvas .naRect{position:absolute;z-index:1}
 .naCanvas .naW{position:absolute;white-space:pre;line-height:1;margin:0;padding:0;transform-origin:left top;z-index:2}
 .naCanvas .naW span[role=button]{display:inline;cursor:pointer}
-.nativeAB12[data-native-ab12="67"] .naDot{width:14px;height:14px;border-width:1.5px}
+.nativeAB12[data-native-ab12="67"] .naDot{width:10px;height:10px;border-width:1px}

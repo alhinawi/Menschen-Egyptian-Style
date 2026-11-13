@@ -5,7 +5,7 @@ function P67(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {rect(169,150,559,22,'#e9e7ce')}
   {[82,169,312,470,728].map(x=><div key={'tv'+x} className='naRule' style={{left:x,top:150,width:0,height:308,borderLeft:'1px solid #ecead9',borderBottom:'none'}}/>)}
   {[150,172,243,315,387,458].map(y=><div key={'th'+y} className='naRule' style={{left:82,top:y,width:646,borderBottom:'1px solid #e7e7cb'}}/>)}
-  {[[165,615,78],[316,615,86],[165,634,85],[165,654,85],[290,654,78],[165,673,85],[165,693,80]].map(([x,y,w])=><div key={'r'+y+x} className='naRule' style={{left:x,top:y,width:w,borderBottom:'1px solid #cacad6'}}/>)}
+  {[[166,615,76],[315,615,86],[166,634,86],[278,634,86],[165,654,87],[281,654,87],[166,673,86],[166,693,86]].map(([x,y,w])=><div key={'r'+y+x} className='naRule' style={{left:x,top:y,width:w,borderBottom:'1px solid #cacad6'}}/>)}
   {art('badge21',736,32,74,60)}
   {art('globe',48,145,26,25)}
   {art('sign1',98,182,56,58)}
@@ -34,12 +34,12 @@ function P67(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {wl(356,12,[{x:319,w:63,t:"Swimming"},{x:387,w:44,t:"allowed"}])}
   {wl(427,12,[{x:319,w:25,t:"Dogs"},{x:349,w:46,t:"allowed"}])}
   {title('5',80,493,520,'Ergänzen Sie müssen, dürfen oder nicht dürfen in der richtigen Form.','naTitleM')}
-  {wl(593,15,[{x:115,w:6,t:"a",bg:'#e1e2dd'},{x:133,w:28,t:"Hier"},{x:194,w:27,t:"man"},{x:290,w:39,t:"rechts"},{x:335,w:61,t:"abbiegen."}])}
-  {wl(613,15,[{x:114,w:7,t:"b"},{x:133,w:28,t:"Hier"},{x:249,w:18,t:"ich"},{x:273,w:37,t:"leider"},{x:407,w:90,t:"fotografieren."}])}
-  {wl(632,15,[{x:115,w:5,t:"c"},{x:133,w:28,t:"Hier"},{x:258,w:14,t:"du"},{x:371,w:56,t:"rauchen."}])}
-  {wl(652,15,[{x:115,w:6,t:"d"},{x:134,w:27,t:"Hier"},{x:258,w:19,t:"ihr"},{x:375,w:47,t:"Fußball"},{x:428,w:50,t:"spielen."}])}
-  {wl(671,15,[{x:115,w:6,t:"e"},{x:133,w:28,t:"Hier"},{x:258,w:18,t:"Sie"},{x:374,w:22,t:"Rad"},{x:403,w:46,t:"fahren."}])}
-  {wl(691,15,[{x:115,w:4,t:"f"},{x:133,w:28,t:"Hier"},{x:258,w:21,t:"wir"},{x:376,w:65,t:"geradeaus"},{x:447,w:46,t:"fahren."}])}
+  {wl(595,15,[{x:115,w:6,t:'a'},{x:133,w:28,t:'Hier'},{x:194,w:27,t:'man'},{x:290,w:39,t:'rechts'},{x:335,w:61,t:'abbiegen.'}])}
+  {wl(615,15,[{x:114,w:7,t:'b'},{x:133,w:28,t:'Hier'},{x:249,w:18,t:'ich'},{x:273,w:37,t:'leider'},{x:407,w:90,t:'fotografieren.'}])}
+  {wl(634,15,[{x:115,w:5,t:'c'},{x:133,w:28,t:'Hier'},{x:258,w:14,t:'du'},{x:371,w:56,t:'rauchen.'}])}
+  {wl(654,15,[{x:115,w:6,t:'d'},{x:134,w:27,t:'Hier'},{x:258,w:19,t:'ihr'},{x:375,w:47,t:'Fußball'},{x:428,w:50,t:'spielen.'}])}
+  {wl(673,15,[{x:115,w:6,t:'e'},{x:133,w:28,t:'Hier'},{x:258,w:18,t:'Sie'},{x:374,w:22,t:'Rad'},{x:403,w:46,t:'fahren.'}])}
+  {wl(693,15,[{x:115,w:4,t:'f'},{x:133,w:28,t:'Hier'},{x:258,w:21,t:'wir'},{x:376,w:65,t:'geradeaus'},{x:447,w:46,t:'fahren.'}])}
   {wl(739,15,[{x:116,w:43,t:'Malen'},{x:165,w:21,t:'Sie'},{x:191,w:60,t:'Schilder'},{x:257,w:32,t:'oder'},{x:295,w:51,t:'suchen'},{x:351,w:21,t:'Sie'}],{b:1})}
   {wl(759,15,[{x:115,w:60,t:'Schilder'},{x:181,w:17,t:'im'},{x:205,w:61,t:'Internet'},{x:273,w:25,t:'und'},{x:306,w:70,t:'schreiben'}],{b:1})}
   {wl(778,15,[{x:115,w:21,t:'Sie'},{x:142,w:47,t:'eigene'},{x:195,w:69,t:'Aufgaben'},{x:270,w:26,t:'wie'},{x:303,w:12,t:'in'},{x:322,w:11,t:'5.',c:'#1d3c7f'}],{b:1})}
@@ -75,28 +75,28 @@ function P67(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {field('p67-4bm',476,262,240,'4 b Meine Sprache','naFieldBlank')}
   {field('p67-4cm',476,333,240,'4 c Meine Sprache','naFieldBlank')}
   {field('p67-4dm',476,405,240,'4 d Meine Sprache','naFieldBlank')}
+  {field('p67-5b1',165,603,78,'5 b 1','naFieldBlank')}
+  {field('p67-5b2',316,603,86,'5 b 2','naFieldBlank')}
+  {field('p67-5c',165,622,85,'5 c','naFieldBlank')}
+  {field('p67-5d1',165,641,85,'5 d 1','naFieldBlank')}
+  {field('p67-5d2',290,641,78,'5 d 2','naFieldBlank')}
+  {field('p67-5e',165,661,85,'5 e','naFieldBlank')}
+  {field('p67-5f',165,681,80,'5 f','naFieldBlank')}
   {modTab(752,1051,'Modul 7')}
-  {field('p67-5b1',165,603,78,'5 b 1')}
-  {field('p67-5b2',316,603,86,'5 b 2')}
-  {field('p67-5c',165,622,85,'5 c')}
-  {field('p67-5d1',165,641,85,'5 d 1')}
-  {field('p67-5d2',290,641,78,'5 d 2')}
-  {field('p67-5e',165,661,85,'5 e')}
-  {field('p67-5f',165,681,80,'5 f')}
-  {dot('7a','muss',519,860,'7a muss')}
-  {dot('7a','darf',591,860,'7a darf')}
-  {dot('7b1','Sollst',128,899,'7b1 Sollst')}
-  {dot('7b1','Willst',201,899,'7b1 Willst')}
-  {dot('7b2','darf',201,918,'7b2 darf')}
-  {dot('7b2','muss',266,918,'7b2 muss')}
-  {dot('7c','willst',272,938,'7c willst')}
-  {dot('7c','sollst',350,938,'7c sollst')}
-  {dot('7d','Will',128,958,'7d Will')}
-  {dot('7d','Darf',194,958,'7d Darf')}
-  {dot('7e1','darf',166,978,'7e1 darf')}
-  {dot('7e1','muss',231,978,'7e1 muss')}
-  {dot('7e2','Darfst',128,998,'7e2 Darfst')}
-  {dot('7e2','Kannst',204,998,'7e2 Kannst')}
+  {dot('7a','muss',526,867,'7a muss')}
+  {dot('7a','darf',598,867,'7a darf')}
+  {dot('7b1','Sollst',135,906,'7b1 Sollst')}
+  {dot('7b1','Willst',208,906,'7b1 Willst')}
+  {dot('7b2','darf',208,925,'7b2 darf')}
+  {dot('7b2','muss',273,925,'7b2 muss')}
+  {dot('7c','willst',279,945,'7c willst')}
+  {dot('7c','sollst',357,945,'7c sollst')}
+  {dot('7d','Will',135,965,'7d Will')}
+  {dot('7d','Darf',201,965,'7d Darf')}
+  {dot('7e1','darf',173,985,'7e1 darf')}
+  {dot('7e1','muss',238,985,'7e1 muss')}
+  {dot('7e2','Darfst',135,1005,'7e2 Darfst')}
+  {dot('7e2','Kannst',211,1005,'7e2 Kannst')}
   {check('g1',510,683,{'p67-5b1':'darf','p67-5b2':'nicht','p67-5c':'darfst','p67-5d1':'dürft','p67-5d2':'nicht','p67-5e':'dürfen','p67-5f':'müssen'})}
   {check('g2',128,1032,{'7a':'darf','7b1':'Willst','7b2':'muss','7c':'sollst','7d':'Darf','7e1':'muss','7e2':'Kannst'})}
 </>}
