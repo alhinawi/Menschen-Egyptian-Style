@@ -29,7 +29,9 @@
 .naCanvas .naHeadline{font-size:34px;letter-spacing:3px;color:#4a4a45}
 .naCanvas .naHeadRule{border-bottom:2px solid #4357ad}
 .naCanvas .naTitle{font-size:23px}
-.naCanvas .naTitle.naGB b{background:#a6ca03}
+.naCanvas .naTitle.naGB b{background:#afd019;position:relative}
+.naCanvas .naTitle.naGB b::before{content:'';position:absolute;left:-4px;top:-4px;width:calc(100% + 4px);height:2px;background:#c82828}
+.naCanvas .naTitle.naGB b::after{content:'';position:absolute;left:-4px;top:-4px;width:2px;height:calc(100% + 4px);background:#c82828}
 .naCanvas .naGL{position:absolute;background:#a6ca03;color:#fff;font:bold 19px/24px FiraSans,'Trebuchet MS',sans-serif;min-width:26px;height:24px;text-align:center;padding:0 4px}
 .naCanvas .naKB{position:absolute;font:bold 13px Arial,sans-serif;color:#4357ad}
 .naCanvas .naOpt{color:#335b98;font-family:FiraSans,'Trebuchet MS',sans-serif;font-size:15px;letter-spacing:0}
