@@ -624,6 +624,11 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(176,1237,165,'hängen Sie die Zettel','naNw')}
   {text(176,1259,162,'in der Wohnung auf.','naNw')}
   {title('2',99,1318,700,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naGB')}
+  {[249,300,326,352,377,403,429,480,506,558,584,648,674,700,725,751,777,828,880,931,957,983,1047,1072,1124,1176].map((y,i)=>field('p35-1-l'+(i+1),316,y-19,189,'1 links Zeile '+(i+1),'naFieldBlank'))}
+  {[250,301,353,378,443,469,520,546,572,597,648,700,751,803,828,880,906,931,957,984,1009,1034,1061,1086,1138].map((y,i)=>field('p35-1-r'+(i+1),676,y-19,193,'1 rechts Zeile '+(i+1),'naFieldBlank'))}
+  {field('p35-2-1',143,1352,640,'2 Notieren Zeile 1','naFieldBlank')}
+  {save('35-1',890,1164)}
+  {save('35-2',890,1350)}
   {art('modul-tab',988,1389,83,25)}
   {text(804,1388,140,'fünfunddreißig','naFooter')}{text(943,1388,8,'|','naFooter')}{text(964,1388,22,'35','naFooter')}
  </>}
