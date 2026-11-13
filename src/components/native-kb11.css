@@ -94,3 +94,5 @@
 .nkb31Pairing .sharedMatchLines circle{stroke:#42658a;stroke-width:1}
 .nkb31Pairing .sharedMatchLines circle:nth-of-type(1),.nkb31Pairing .sharedMatchLines circle:nth-of-type(10){display:none}
 .nkb31ColorCheck{font-size:1.45cqw!important}
+
+.nkb[data-native-page="35"] .nkbLine.nkbB.nkbSans{font-family:KbFira,sans-serif;font-weight:500}
