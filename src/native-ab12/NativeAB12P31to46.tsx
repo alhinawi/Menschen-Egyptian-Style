@@ -622,7 +622,11 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(806,1392,173,'fünfunddreißig | 35','naFooter')}
  </>}
  {page==='36'&&<>
-  {art('0',142,46,837,233)}
+  {art('0',142,46,837,57)}
+  {art('grid',150,228,680,50)}
+  {kb(85,181,'KB 3')}
+  {title('1',121,178,640,'Markieren Sie die Verben und ordnen Sie zu.','naGB')}
+  <div className="naSide" style={{left:92,top:230,whiteSpace:'nowrap'}}>WÖRTER</div>
   {art('6',515,1152,207,205)}
   {lin(688,39,148,7,'#7a7a7a')}
   {lin(677,316,114,2,'#7a7a7a')}
@@ -633,8 +637,8 @@ export function NativeAB12P31to46({page}:{page:string}){
   {lin(341,665,233,2,'#c2c1ce')}
   {lin(187,846,102,2,'#7a7a7a')}
   {lin(334,872,102,2,'#7a7a7a')}
-  {text(117,170,34,'1','naBold naNw')}
   {text(162,292,135,'a eine Anzeige','naNw')}
+  {text(292,286,60,'lesen','naHand naD19 naNw')}
   {text(598,292,72,'d Angst','naNw')}
   {text(162,317,166,'b eine Ausbildung','naNw')}
   {text(598,317,139,'e eine Prüfung','naNw')}
@@ -642,22 +646,41 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(186,343,236,'sich an einer Sprachschule','naNw')}
   {text(598,343,7,'f','naNw')}
   {text(621,343,168,'einen Studienplatz','naNw')}
-  {text(162,433,143,'Ordnen Sie zu.','naNw')}
-  {text(167,473,498,'Ausbildung | Studienplatz | Prüfung | Sprachenschule | Anzeige','naBold naNw')}
+  {kb(85,440,'KB 3')}
+  {title('2',121,437,500,'Ordnen Sie zu.','naGB')}
+  <div className="naSide" style={{left:92,top:478,whiteSpace:'nowrap'}}>WÖRTER</div>
+  {rect(159,473,112,33,'#fcf7dd')}
+  {rect(279,473,117,33,'#fcf7dd')}
+  {rect(399,473,87,33,'#fcf7dd')}
+  {rect(494,473,147,33,'#fcf7dd')}
+  {rect(649,473,82,33,'#fcf7dd')}
+  {stext(167,476,100,'Ausbildung',{color:'#3f6491'},'naBold naNw')}
+  {stext(272,476,10,'|',{color:'#3f6491'},'naNw')}
+  {stext(287,476,105,'Studienplatz',{color:'#3f6491'},'naBold naNw')}
+  {stext(395,476,10,'|',{color:'#3f6491'},'naNw')}
+  {stext(407,476,75,'Prüfung',{color:'#3f6491'},'naBold naNw')}
+  {stext(487,476,10,'|',{color:'#3f6491'},'naNw')}
+  {stext(502,476,135,'Sprachenschule',{color:'#3f6491'},'naBold naNw')}
+  {stext(642,476,10,'|',{color:'#3f6491'},'naNw')}
+  {stext(657,476,70,'Anzeige',{color:'#3f6491'},'naBold naNw')}
   {text(163,511,337,'a Jan ist glücklich. Er hat endlich die','naNw')}
-  {text(569,511,84,'geschafft.','naNw')}
+  {text(762,511,84,'geschafft.','naNw')}
+  {text(652,514,100,'Prüfung','naHand naD19 naNw')}
   {text(162,537,368,'b Mike möchte Deutsch lernen. Er hat in','naNw')}
   {text(537,537,144,'der Zeitung eine','naNw')}
   {text(186,563,332,'gelesen. Jetzt möchte er sich an einer','naNw')}
-  {text(612,563,2,'|','naNw')}
   {text(762,563,92,'anmelden.','naNw')}
   {text(163,589,410,'c Morgen fängt Jos Studium an. Sie hat einen','naNw')}
   {text(818,589,117,'an der Uni in','naNw')}
   {text(188,615,151,'Basel bekommen.','naNw')}
   {text(163,641,171,'d Jule möchte eine','naNw')}
   {text(580,641,191,'als Friseurin machen.','naNw')}
-  {text(165,704,266,'Ergänzen Sie mit oder ohne.','naNw')}
-  {text(187,744,537,'Cherry geht nur ihrer „Starbrille“ zur Aufnahmeprüfung.','naNw')}
+  {kb(85,711,'KB 4')}
+  {title('3',121,708,500,'Ergänzen Sie mit oder ohne.','naGB')}
+  <div className="naSide" style={{left:92,top:776,whiteSpace:'nowrap'}}>STRUKTUREN</div>
+  {text(187,744,250,'Cherry geht nur','naNw')}
+  {text(332,746,45,'mit','naHand naD19 naNw')}
+  {text(390,744,334,'ihrer „Starbrille“ zur Aufnahmeprüfung.','naNw')}
   {text(295,770,585,'Aufnahmeprüfung kann sie nicht an der Pop-Akademie studieren.','naNw')}
   {text(187,796,293,'Sie möchten ein Popstar werden?','naNw')}
   {text(596,796,341,'eine gute Ausbildung ist das schwierig.','naNw')}
@@ -667,8 +690,13 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(164,847,7,'e','naNw')}
   {text(188,847,140,'Fabian geht nur','naNw')}
   {text(443,847,332,'seiner Gitarre zur Aufnahmeprüfung.','naNw')}
-  {text(162,911,315,'Was ist richtig? Kreuzen Sie an.','naNw')}
+  {kb(85,918,'KB 4')}
+  {title('4',121,915,600,'Was ist richtig? Kreuzen Sie an.','naGB')}
+  <div className="naSide" style={{left:92,top:967,whiteSpace:'nowrap'}}>STRUKTUREN</div>
   {text(164,951,155,'a Ich arbeite mit','naNw')}
+  <div style={{position:'absolute',left:338,top:952,width:16,height:16,border:'2px solid #c7bd8a',borderRadius:'50%'}}/>
+  <div style={{position:'absolute',left:447,top:952,width:16,height:16,border:'2px solid #c7bd8a',borderRadius:'50%'}}/>
+  {stext(446,947,20,'X',{color:'#335b98',fontSize:17},'naHand naNw')}
   {text(369,951,53,'meine','naNw')}
   {text(473,951,382,'meinem Mann in einem Büro zusammen.','naNw')}
   {text(163,976,69,'b Ohne','naNw')}
@@ -684,16 +712,22 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(404,1027,203,'mein Handy gehe ich','naNw')}
   {text(615,1027,177,'nicht aus dem Haus.','naNw')}
   {text(188,1055,234,'Das nehme ich immer mit.','naNw')}
-  {text(165,1118,210,'Ergänzen Sie e oder i.','naNw')}
+  {kb(85,1125,'KB 5')}
+  {title('5',121,1122,500,'Ergänzen Sie e oder i.','naGB')}
+  <div className="naSide" style={{left:84,top:1150,whiteSpace:'nowrap'}}>STRUKTUREN</div>
+  <div className="naSide" style={{left:97,top:1150,whiteSpace:'nowrap'}}>ENTDECKEN</div>
   {text(164,1158,26,'ich','naNw')}
-  {text(262,1158,52,'werde','naNw')}
+  {text(262,1158,10,'w','naNw')}
+  {text(271,1156,12,'e','naHand naD19 naNw')}
+  {text(283,1158,30,'rde','naNw')}
   {text(164,1184,21,'du','naNw')}
   {text(164,1208,50,'er/sie','naBold naNw')}
-  {text(379,1208,75,'Sängerin','naBold naNw')}
+  {text(379,1206,80,'Sängerin','naHand naD19 naNw')}
   {text(156,1247,37,'wir','naBold naNw')}
   {text(165,1275,26,'ihr','naNw')}
   {text(164,1299,58,'sie/Sie','naBold naNw')}
-  {text(99,1399,182,'36 | sechsunddreißig','naFooter')}
+  {art('modul-tab',0,1393,90,27)}
+  {text(99,1399,230,'36 | sechsunddreißig','naFooter naNw')}
   {text(262,1184,16,'w_')}
   {text(296,1184,27,'rst')}
   {text(262,1211,16,'w_')}
@@ -731,7 +765,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {check('36-1',171,404,{'p36-1b':'abschließen','p36-1c':'anmelden','p36-1d':'haben','p36-1e':'schaffen','p36-1f':'bekommen'})}
   {check('36-2',346,680,{'p36-2b0':'Anzeige','p36-2b1':'Sprachenschule','p36-2c2':'Studienplatz','p36-2d3':'Ausbildung'})}
   {check('36-3',190,887,{'p36-3b':'Ohne','p36-3c':'Ohne','p36-3d':'Mit','p36-3e':'mit'})}
-  {check('36-4',255,1064,{'4b':'einen','4c':'meiner','4d':'mein'})}
+  {check('36-4',188,1085,{'4b':'einen','4c':'meiner','4d':'mein'})}
   {check('36-5',279,1338,{'p36-50':'i','p36-51':'i','p36-52':'e','p36-53':'e','p36-54':'e'})}
  </>}
  {page==='37'&&<>
