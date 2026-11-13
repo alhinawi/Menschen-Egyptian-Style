@@ -30,8 +30,7 @@ export function NativeAB12P31to46({page}:{page:string}){
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg,[data-native-ab12] .naTitle,[data-native-ab12] .naField{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg{font-size:20px!important}[data-native-ab12] .naTitle{font-size:21px!important}[data-native-ab12] .naText.naS20{font-size:18px!important}[data-native-ab12] .naSmall{font-size:16.5px!important}[data-native-ab12] .naD19{font-size:17.5px!important}[data-native-ab12] .naField{font-size:19px!important}[data-native-ab12] .naUrl{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='41'] .naModul{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='41'] .naTitle.naGB b{background:#69bb58!important}[data-native-ab12='41'] .naTitle{font-family:FiraSans,sans-serif!important;font-size:22px!important;letter-spacing:0!important}[data-native-ab12='41'] .naText,[data-native-ab12='41'] .naBold{font-size:17px!important}[data-native-ab12='41'] .naBold{font-weight:600}[data-native-ab12='41'] .naField{font-size:17px!important}[data-native-ab12='41'] .naGray{font-size:13px!important;color:#7c7c80!important;letter-spacing:0!important}"}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
- {page==='31'&&<>
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg,[data-native-ab12] .naTitle,[data-native-ab12] .naField{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg{font-size:20px!important}[data-native-ab12] .naTitle{font-size:21px!important}[data-native-ab12] .naText.naS20{font-size:18px!important}[data-native-ab12] .naSmall{font-size:16.5px!important}[data-native-ab12] .naD19{font-size:17.5px!important}[data-native-ab12] .naField{font-size:19px!important}[data-native-ab12] .naUrl{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='41'] .naModul{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='41'] .naTitle.naGB b{background:#69bb58!important}[data-native-ab12='41'] .naTitle{font-family:FiraSans,sans-serif!important;font-size:22px!important;letter-spacing:0!important}[data-native-ab12='41'] .naText,[data-native-ab12='41'] .naBold{font-size:17px!important}[data-native-ab12='41'] .naBold{font-weight:600}[data-native-ab12='41'] .naField{font-size:17px!important}[data-native-ab12='41'] .naGray{font-size:13px!important;color:#7c7c80!important;letter-spacing:0!important}[data-native-ab12='38'] .naS14{font-size:14px!important}[data-native-ab12='31'] .naTitle,[data-native-ab12='32'] .naTitle,[data-native-ab12='33'] .naTitle,[data-native-ab12='34'] .naTitle,[data-native-ab12='35'] .naTitle,[data-native-ab12='36'] .naTitle,[data-native-ab12='37'] .naTitle,[data-native-ab12='38'] .naTitle{font-family:FiraSans,sans-serif!important;letter-spacing:0!important}"}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}> {page==='31'&&<>
   {art('0',982,42,85,78)}
   {lin(354,107,605,6,'#a6ca03')}
   {text(107,79,240,'BASISTRAINING','naHeadline naNw')}
@@ -879,32 +878,35 @@ export function NativeAB12P31to46({page}:{page:string}){
   {lin(374,114,607,3,'#8bc78c')}
   {lin(1065,1155,7,298,'#b7bdbf')}
   {text(126,87,240,'BASISTRAINING','naHeadline naNw')}
-  {text(167,161,188,'Lesen Sie die Texte.','naNw')}
-  {text(135,201,460,'a Was möchten die Leute machen? Kreuzen Sie an.','naNw')}
-  {text(503,243,65,'SUSANNE','naNw')}
-  {text(620,243,46,'GEORG','naNw')}
-  {text(715,243,74,'MARIANNE','naNw')}
+  {kb(82,174,'KB 6')}
+  {title('10',130,161,760,'Lesen Sie die Texte.','naGB')}
+  <div className="naSide" style={{left:97,top:200,whiteSpace:'nowrap'}}>LESEN</div>
+  {text(125,201,14,'a','naNw')}
+  {text(167,201,445,'Was möchten die Leute machen? Kreuzen Sie an.','naNw')}
+  {stext(503,243,65,'SUSANNE',{fontStyle:'italic'},'naS14 naNw')}
+  {stext(620,243,46,'GEORG',{fontStyle:'italic'},'naS14 naNw')}
+  {stext(715,243,74,'MARIANNE',{fontStyle:'italic'},'naS14 naNw')}
   {text(166,266,218,'an die Universität gehen','naNw')}
   {text(166,293,134,'Urlaub machen','naNw')}
   {text(166,318,152,'im Ausland leben','naNw')}
-  {text(182,376,330,'50 PLUS - KRISE ODER CHANCE?','naNw')}
-  {text(181,407,503,'Ist mit 50 Jahren der schönste Teil des Lebens zu Ende?','naNw')}
-  {text(181,433,498,'Was sind die Wünsche und Pläne der über 50-Jährigen?','naNw')}
-  {text(181,485,254,'Susanne M., Hausfrau, 51 Jahre alt','naNw')}
+  {stext(182,376,340,'50 PLUS – KRISE ODER CHANCE?',{color:'#a71114',fontWeight:700},'naNw')}
+  {text(181,407,503,'Ist mit 50 Jahren der schönste Teil des Lebens zu Ende?','naBold naNw')}
+  {text(181,433,498,'Was sind die Wünsche und Pläne der über 50-Jährigen?','naBold naNw')}
+  {stext(181,485,254,'Susanne M., Hausfrau, 51 Jahre alt',{fontStyle:'italic'},'naNw')}
   {text(182,511,631,'Meine Wünsche? Ich habe nur einen Wunsch: Ich will ins Ausland gehen','naNw')}
   {text(181,537,633,'und noch einmal eine Fremdsprache lernen. Ich habe mit 20 Jahren geheira-','naNw')}
   {text(181,562,632,'tet und drei Kinder bekommen. Jetzt bin ich 51, die Kinder sind groß. In','naNw')}
   {text(181,588,633,'VITAL habe ich einen Artikel über „Granny-Au-Pairs“ gelesen und da habe','naNw')}
   {text(181,614,633,'ich gedacht: Das mache ich. Ein halbes Jahr in Rio de Janeiro in einer Fami-','naNw')}
   {text(181,640,633,'lie leben und eine neue Kultur kennenlernen. Super, oder? Und ein bisschen','naNw')}
-  {text(181,666,633,'Geld verdiene ich dort auch: 300 pro Monat und für das Zimmer und Essen','naNw')}
+  {text(181,666,633,'Geld verdiene ich dort auch: 300 € pro Monat und für das Zimmer und Essen','naNw')}
   {text(181,692,137,'zahle ich nichts.','naNw')}
-  {text(181,749,269,'Georg K., Mechatroniker, 58 Jahre alt','naNw')}
+  {stext(181,749,269,'Georg K., Mechatroniker, 58 Jahre alt',{fontStyle:'italic'},'naNw')}
   {text(182,774,631,'Ich habe gerade den Motorradführerschein gemacht und nächstes Jahr will','naNw')}
   {text(181,800,633,'ich sechs Wochen mit meinem Sohn mit dem Motorrad durch Kanada fah-','naNw')}
   {text(181,826,633,'ren. Er hat letztes Jahr schon eine Reise durch die USA gemacht. Da hat er','naNw')}
   {text(180,852,563,'viel fotografiert und diese wunderbare Natur hat mir sehr gefallen.','naNw')}
-  {text(180,909,264,'Marianne 0., Studentin, 52 Jahre alt','naNw')}
+  {stext(180,909,264,'Marianne O., Studentin, 52 Jahre alt',{fontStyle:'italic'},'naNw')}
   {text(181,935,632,'Mit 50 Jahren ist man heute doch nicht alt! Ich habe 25 Jahre als Verkäuferin','naNw')}
   {text(180,960,632,'gearbeitet. Vor einem Jahr habe ich einen tollen Mann kennengelernt und','naNw')}
   {text(181,986,633,'mich total verliebt. Er hat gesagt: „Marianne, ich verdiene genug Geld für','naNw')}
@@ -913,13 +915,19 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(181,1064,631,'ren! Jetzt studiere ich Arabisch und Französisch. Das spreche ich schon gut.','naNw')}
   {text(180,1090,378,'Als Kind habe ich 10 Jahre in Marokko gelebt.','naNw')}
   {text(134,1171,401,'b Lesen Sie noch einmal und kreuzen Sie an.','naNw')}
-  {text(829,1202,116,'richtig falsch','naNw')}
+  {stext(829,1202,120,'richtig falsch',{fontStyle:'italic'},'naS14 naNw')}
+  {text(166,1223,12,'1','naNw')}
   {text(188,1223,492,'Susanne hat schon mit 20 Jahren als Au-Pair gearbeitet.','naNw')}
-  {text(188,1249,485,'Sie bezahlt 300 für Zimmer und Essen in der Familie.','naNw')}
+  {text(166,1249,12,'2','naNw')}
+  {text(188,1249,485,'Sie bezahlt 300 € für Zimmer und Essen in der Familie.','naNw')}
+  {text(166,1275,12,'3','naNw')}
   {text(188,1275,427,'Georgs Sohn hat letztes Jahr eine Reise gemacht.','naNw')}
+  {text(166,1301,12,'4','naNw')}
   {text(188,1301,556,'Marianne hat vor 25 Jahren einen tollen Mann kennengelernt.','naNw')}
+  {text(166,1327,12,'5','naNw')}
   {text(188,1327,196,'Sie ist jetzt Studentin.','naNw')}
-  {text(99,1400,174,'38 | achtunddreißig','naFooter')}
+  {art('modul-tab',0,1395,88,22)}
+  {text(99,1399,185,'38 | achtunddreißig','naFooter naNw')}
   {dot('10a-susanne','uni',523,272,'susanne uni uni')}
   {dot('10a-susanne','urlaub',523,298,'susanne urlaub urlaub')}
   {dot('10a-susanne','ausland',523,323,'susanne ausland ausland')}
@@ -939,8 +947,8 @@ export function NativeAB12P31to46({page}:{page:string}){
   {dot('10b-4','falsch',916,1307,'10b 4 falsch falsch')}
   {dot('10b-5','richtig',849,1333,'10b 5 richtig richtig')}
   {dot('10b-5','falsch',916,1333,'10b 5 falsch falsch')}
-  {check('38-1',523,357,{'10a-susanne':'ausland','10a-georg':'urlaub','10a-marianne':'uni'})}
-  {check('38-2',849,1367,{'10b-1':'falsch','10b-2':'falsch','10b-3':'richtig','10b-4':'falsch','10b-5':'richtig'})}
+  {check('38-1',1000,270,{'10a-susanne':'ausland','10a-georg':'urlaub','10a-marianne':'uni'})}
+  {check('38-2',1000,1367,{'10b-1':'falsch','10b-2':'falsch','10b-3':'richtig','10b-4':'falsch','10b-5':'richtig'})}
  </>}
  {page==='39'&&<>
   {art('0',972,41,96,82)}
