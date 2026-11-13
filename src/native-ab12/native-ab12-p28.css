@@ -1,0 +1,20 @@
+[data-native-ab12="28"] .naCanvas .naText.naRueck{font-family:DroidSerif,Georgia,serif!important;font-size:29px!important;letter-spacing:1px!important;color:#6a6a66}
+[data-native-ab12="28"] .naCanvas .naSans2{font-family:DroidSerif,Georgia,serif!important;font-size:17px!important;letter-spacing:0!important;color:#1c1c1c}
+[data-native-ab12="28"] .naCanvas .naSans2.naWahl{font-family:ABDroidSans,FiraSans,sans-serif!important;font-weight:700;font-size:22px!important;color:#1f4e96}
+[data-native-ab12="28"] .naCanvas .naSans2.naItem{font-family:FiraSans,sans-serif!important;font-weight:700;font-size:22px!important;color:#373733}
+[data-native-ab12="28"] .naCanvas .naSans2.naBody{font-size:17px!important}
+[data-native-ab12="28"] .naCanvas .naSans2.naThT{font-weight:700;font-size:16.5px!important;color:#3a3a34}
+[data-native-ab12="28"] .naCanvas .naSans2.naGridH{font-weight:700;font-size:16px!important}
+[data-native-ab12="28"] .naCanvas .naTh{position:absolute;background:#f5f0d2}
+[data-native-ab12="28"] .naCanvas .naVsep{position:absolute;background:#e8f3f5}
+[data-native-ab12="28"] .naCanvas .naHrule{position:absolute;background:#eef8fb}
+[data-native-ab12="28"] .naCanvas .naRowLab{position:absolute;font-family:DroidSerif,Georgia,serif;font-size:17px;color:#1c1c1c}
+[data-native-ab12="28"] .naCanvas .naYelRule{position:absolute;background:#f8f0a0}
+[data-native-ab12="28"] .naCanvas .naField{position:absolute;border:0!important;border-bottom:1.5px solid #b9c0c6!important;border-radius:0!important;background:transparent!important;height:25px!important;min-height:0!important;padding:0 2px!important;margin:0!important;box-sizing:border-box;font-family:DroidSerif,Georgia,serif!important;font-size:17px!important;color:#17476f!important;letter-spacing:0!important}
+[data-native-ab12="28"] .naCanvas .naDot{position:absolute;appearance:none;width:17px!important;height:17px!important;min-width:0!important;min-height:0!important;border:1.5px solid #d6d4c4!important;border-radius:50%!important;background:#fff!important;padding:0!important;margin:0!important;cursor:pointer}
+[data-native-ab12="28"] .naCanvas .naDot:checked{background:radial-gradient(circle,#246e45 0 38%,#fff 43%)!important}
+[data-native-ab12="28"] .naCanvas .naText.naFooter{font-family:DroidSerif,Georgia,serif!important;font-size:16.5px!important;letter-spacing:0!important;color:#252723}
+[data-native-ab12="28"] .naCanvas .naText.naFootNum{font-weight:700;font-size:15.5px!important}
+[data-native-ab12="28"] .naCanvas .naBarV{position:absolute;background:#252723}
+@font-face{font-family:ABDroidSans;src:url('/assets/fonts/droid-sans-700.woff2') format('woff2');font-weight:700;font-display:swap}
+[data-native-ab12="28"] .naCanvas .naField.naFieldT{border-bottom:0!important}
