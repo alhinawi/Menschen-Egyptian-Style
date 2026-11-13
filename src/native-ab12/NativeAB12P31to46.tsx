@@ -774,19 +774,16 @@ export function NativeAB12P31to46({page}:{page:string}){
   {lin(513,251,116,2,'#c0bcce')}
   {lin(389,302,103,2,'#bbbcbe')}
   {lin(244,378,116,2,'#c1c2c4')}
-  {lin(307,534,172,2,'#bdbec0')}
-  {lin(496,535,261,2,'#c2c2c4')}
-  {lin(825,536,118,2,'#c1c0c5')}
-  {lin(163,584,357,3,'#b9bbb9')}
-  {lin(539,587,343,2,'#bfbfc1')}
-  {lin(307,637,189,2,'#bcbeca')}
-  {lin(534,638,295,2,'#bcbdbe')}
-  {lin(830,638,118,2,'#b5b8b8')}
-  {lin(163,688,126,2,'#bfbecd')}
-  {lin(392,689,242,2,'#c0c1c4')}
-  {lin(746,690,202,2,'#c0bfc3')}
-  {lin(397,740,290,2,'#c2bfca')}
-  {lin(794,741,154,2,'#c1c5c0')}
+  {lin(163,525,780,2,'#c1c2c4')}
+  {lin(163,575,780,2,'#c1c2c4')}
+  {lin(163,622,780,2,'#c1c2c4')}
+  {lin(163,668,780,2,'#c1c2c4')}
+  {lin(163,715,780,2,'#c1c2c4')}
+  {text(945,506,8,'.','naNw')}
+  {text(945,556,8,'.','naNw')}
+  {text(945,603,8,'.','naNw')}
+  {text(945,649,8,'.','naNw')}
+  {text(945,696,8,'.','naNw')}
   {lin(168,920,220,2,'#bcbfbf')}
   {lin(167,945,208,2,'#bdbdc7')}
   {lin(273,972,151,2,'#bdc0c1')}
@@ -795,36 +792,46 @@ export function NativeAB12P31to46({page}:{page:string}){
   {lin(168,1049,219,2,'#bdbbc4')}
   {lin(212,1075,177,2,'#c0c1c4')}
   {lin(304,1101,168,2,'#c4c5c6')}
-  {lin(181,1288,118,3,'#b9bcc1')}
+  {lin(182,1280,168,2,'#b9bcc1')}
   {text(101,85,240,'BASISTRAINING','naHeadline naNw')}
-  {text(142,160,590,'Urlaubswünsche. Ergänzen Sie wollen in der richtigen Form.','naNw')}
-  {text(164,199,360,'Also ich dieses Jahr zu Hause bleiben!','naNw')}
-  {text(164,225,343,'Aber meine Freunde Theresa und Boris','naNw')}
+  {kb(78,161,'KB 5')}
+  {title('6',130,160,760,'Urlaubswünsche. Ergänzen Sie wollen in der richtigen Form.','naGB')}
+  <div className="naSide" style={{left:69,top:203,whiteSpace:'nowrap'}}>STRUKTUREN</div>
+  {text(140,199,66,'a Also ich','naNw')}
+  {text(240,197,32,'will','naHand naD19 naNw')}
+  {text(272,199,290,'dieses Jahr zu Hause bleiben!','naNw')}
+  {text(140,225,375,'b Aber meine Freunde Theresa und Boris','naNw')}
   {text(648,225,22,'im','naNw')}
   {text(165,251,271,'Urlaub nach Schweden fahren.','naNw')}
-  {text(164,278,219,'Meine Freundin Beatrice','naNw')}
+  {text(140,278,245,'c Meine Freundin Beatrice','naNw')}
   {text(498,278,177,'nach Italien fahren.','naNw')}
   {text(140,303,190,'d Aber nächstes Jahr','naNw')}
   {text(469,303,167,'wir alle zusammen','naNw')}
   {text(164,329,197,'nach Tunesien fliegen.','naNw')}
   {text(140,354,97,'e Und was','naNw')}
   {text(365,354,200,'du im Urlaub machen?','naNw')}
-  {text(95,412,241,'7 Schreiben Sie Sätze.','naNw')}
-  {text(140,463,9,'a','naSmall naNw')}
-  {text(164,482,446,'(unbedingt / Cherry / Sängerin / werden / wollen)','naNw')}
-  {text(139,509,9,'b','naNw')}
-  {text(164,534,467,'(auf keinen Fall / Sara und Felix / wollen / heiraten)','naNw')}
-  {text(140,566,34,'c','naS20 naNw')}
-  {text(164,586,563,'(meine Ausbildung / Nächstes Jahr / abschließen / ich / wollen)','naNw')}
-  {text(139,612,10,'d','naNw')}
-  {text(164,638,570,'(wollen / unbedingt / Wir / schaffen / die Führerscheinprüfung)','naNw')}
-  {text(140,670,7,'e','naSmall naNw')}
-  {text(164,689,590,'(können / wir / Dann / mit dem Motorrad / reisen / durch Europa)','naNw')}
-  {text(140,715,7,'f','naNw')}
-  {text(164,731,451,'(Jan / vielleicht / werden / Liedermacher / wollen)','naNw')}
-  {text(141,805,240,'Ergänzen Sie die Wörter.','naNw')}
+  {kb(78,429,'KB 6')}
+  {title('7',130,420,760,'Schreiben Sie Sätze.','naGB')}
+  <div className="naSide" style={{left:66,top:461,whiteSpace:'nowrap'}}>STRUKTUREN</div>
+  {text(140,462,9,'a','naSmall naNw')}
+  {text(160,457,300,'Cherry will unbedingt Sängerin werden.','naHand naD19 naNw')}
+  {text(164,486,446,'(unbedingt / Cherry / Sängerin / werden / wollen)','naNw')}
+  {text(140,517,9,'b','naNw')}
+  {text(164,537,467,'(auf keinen Fall / Sara und Felix / wollen / heiraten)','naNw')}
+  {text(140,569,34,'c','naS20 naNw')}
+  {text(164,590,563,'(meine Ausbildung / Nächstes Jahr / abschließen / ich / wollen)','naNw')}
+  {text(140,628,10,'d','naNw')}
+  {text(164,641,570,'(wollen / unbedingt / Wir / schaffen / die Führerscheinprüfung)','naNw')}
+  {text(140,673,7,'e','naSmall naNw')}
+  {text(164,693,590,'(können / wir / Dann / mit dem Motorrad / reisen / durch Europa)','naNw')}
+  {text(140,724,7,'f','naNw')}
+  {text(164,744,451,'(Jan / vielleicht / werden / Liedermacher / wollen)','naNw')}
+  {kb(78,819,'KB 6')}
+  {title('8',130,806,760,'Ergänzen Sie die Wörter.','naGB')}
+  <div className="naSide" style={{left:56,top:863,whiteSpace:'nowrap'}}>WÖRTER</div>
+  {text(420,846,85,'Ausbildung','naHand naD19 naNw')}
   {text(140,843,254,'Im Sommer hat Sofia ihre (a)','naNw')}
-  {text(478,843,382,'(BLUGASIDNU) als Friseurin abgeschlossen.','naNw')}
+  {text(512,843,382,'(BLUGASIDNU) als Friseurin abgeschlossen.','naNw')}
   {text(140,870,655,'Sie hatte große Angst vor der Prüfung. Aber zum Glück hat sie die Prüfung','naNw')}
   {text(140,894,21,'(b)','naNw')}
   {text(394,894,383,'(SCHEFGATEF). Jetzt möchte sie endlich Geld','naNw')}
@@ -842,10 +849,15 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(395,1050,460,'(UTELE) kennenlernen. In ein paar Jahren möchten','naNw')}
   {text(139,1076,158,'sie und Johnny (i)','naNw')}
   {text(530,1076,277,'(RITAHENE) und Kinder haben.','naNw')}
-  {text(139,1140,570,'Was sind Ihre Wünsche? Schreiben Sie 4-5 Sätze wie in 8.','naNw')}
-  {text(140,1167,412,'Ihre Partnerin / Ihr Partner ergänzt die Wörter.','naNw')}
-  {text(360,1262,75,'(SIERNE)','naBold naNw')}
-  {text(787,1396,189,'siebenunddreißig | 37','naFooter')}
+  {kb(78,1149,'KB 6')}
+  {title('9',130,1140,580,'Was sind Ihre Wünsche? Schreiben Sie 4–5 Sätze wie in ','naGB naNw')}
+  {stext(688,1140,28,'8.',{color:'#3f6491',fontWeight:700},'naTitle naNw')}
+  {art('partner',30,1168,72,34)}
+  {text(140,1170,412,'Ihre Partnerin / Ihr Partner ergänzt die Wörter.','naNw')}
+  {text(178,1240,220,'Ich möchte gern nach China','naHand naD19 naNw')}
+  {text(350,1258,115,'. (SIERNE)','naHand naD19 naNw')}
+  {art('modul-tab',985,1390,81,27)}
+  {text(787,1396,195,'siebenunddreißig | 37','naFooter naNw')}
   {field('p37-6b',515,226,125,'6 b')}
   {field('p37-6c',390,279,102,'6 c')}
   {field('p37-6d',337,303,125,'6 d')}
@@ -858,7 +870,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {field('p37-8g',175,1023,213,'8 g')}
   {field('p37-8h',175,1049,213,'8 h')}
   {field('p37-8i',305,1075,220,'8 i')}
-  {check('37-1',243,396,{'p37-6b':'wollen','p37-6c':'will','p37-6d':'wollen','p37-6e':'willst'})}
+  {check('37-1',1000,165,{'p37-6b':'wollen','p37-6c':'will','p37-6d':'wollen','p37-6e':'willst'})}
   {check('37-2',175,1116,{'p37-8b':'geschafft','p37-8c':'verdienen','p37-8d':'Motorrad','p37-8e':'Europa','p37-8f':'Führerschein','p37-8g':'reisen','p37-8h':'Leute','p37-8i':'heiraten'})}
  </>}
  {page==='38'&&<>
