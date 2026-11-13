@@ -21,16 +21,17 @@ export function NativeAB12P21_24({page}:{page:string}){
  const text=(x:number,y:number,w:number,t:string,cls='')=><div className={'naText '+cls} style={{left:x,top:y,width:w}}><Words text={t}/></div>;
  const art=(name:string,x:number,y:number,w:number,h:number)=><PageImage className="naArt" src={`assets/book-crops/native-ab12-p${page}-${name}.png`} alt={'Originalillustration '+name} style={{left:x,top:y,width:w,height:h}}/>;
  const stext=(x:number,y:number,w:number,t:string,cls='')=><div className={'naSans2 '+cls} style={{left:x,top:y,width:w}}><Words text={t}/></div>;
+ const rich=(x:number,y:number,w:number,parts:(string|number)[],cls='')=><div className={'naText '+cls} style={{left:x,top:y,width:w}}>{parts.map((p,i)=>typeof p==='string'?<Words key={i} text={p}/>:<span key={i} className="naULine" style={{width:p}}/>)}</div>;
  const field=(id:string,x:number,y:number,w:number,label:string,cls='')=><input className={'naField '+cls} aria-label={label} data-native-field={id} style={{left:x,top:y,width:w}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
  const dot=(id:string,value:string,x:number,y:number,label:string,cls='')=><input type="radio" className={'naDot '+cls} name={key+'-'+id} aria-label={label} data-native-field={id} style={{left:x,top:y}} checked={values[id]===value} onChange={()=>set(id,value)}/>;
  const check=(id:string,x:number,y:number,answers:Record<string,string>,cls='')=><div className={'naCheck '+cls} data-check={id} style={{left:x,top:y}}><CheckButton onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,t:string,cls='')=><div className={'naTitle '+cls} style={{left:x,top:y,width:w}}><b>{n}</b><Words text={t}/></div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}[data-native-ab12="${page}"] .naText,[data-native-ab12="${page}"] .naBold,[data-native-ab12="${page}"] .naLet,[data-native-ab12="${page}"] .naDlg,[data-native-ab12="${page}"] .naField{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12="${page}"] .naText,[data-native-ab12="${page}"] .naBold,[data-native-ab12="${page}"] .naLet,[data-native-ab12="${page}"] .naDlg{font-size:20px!important}[data-native-ab12="${page}"] .naCanvas .naTitle{font-family:FiraSans,sans-serif!important;font-size:21px!important;letter-spacing:0!important}[data-native-ab12="${page}"] .naText.naS20{font-size:18px!important}[data-native-ab12="${page}"] .naSmall{font-size:16.5px!important}[data-native-ab12="${page}"] .naD19{font-size:17.5px!important}[data-native-ab12="${page}"] .naField{font-size:19px!important}`}</style><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-500.ttf') format('truetype');font-weight:500}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}[data-native-ab12="${page}"] .naText,[data-native-ab12="${page}"] .naBold,[data-native-ab12="${page}"] .naLet,[data-native-ab12="${page}"] .naDlg,[data-native-ab12="${page}"] .naField{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12="${page}"] .naText,[data-native-ab12="${page}"] .naBold,[data-native-ab12="${page}"] .naLet,[data-native-ab12="${page}"] .naDlg{font-size:20px!important}[data-native-ab12="${page}"] .naCanvas .naTitle{font-family:FiraSans,sans-serif!important;font-size:21px!important;letter-spacing:0!important}[data-native-ab12="${page}"] .naText.naS20{font-size:18px!important}[data-native-ab12="${page}"] .naSmall{font-size:16.5px!important}[data-native-ab12="${page}"] .naD19{font-size:17.5px!important}[data-native-ab12="${page}"] .naField{font-size:19px!important}`}</style><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='21'&&<>
   {art('tab15',916,35,155,81)}
-  {text(107,93,331,'TRAINING: SPRECHEN','naHead2 naNw')}
+  {text(106,85,331,'TRAINING: SPRECHEN','naHead2 naH24')}
   <div className="naHeadRule" style={{left:446,top:111,width:469}}/>
   {title('1',104,163,900,'Was machen Sie wo in Ihrem Stadtteil gern und/oder oft? Sammeln Sie Orte','naOB naLS')}
   <div className="naTitle naOB naLS" style={{left:150,top:189}}><Words text="und Aktivitäten und notieren Sie."/></div>
@@ -47,7 +48,7 @@ export function NativeAB12P21_24({page}:{page:string}){
   {text(425,423,560,'Sie wichtige Informationen und planen Ihre Aussage. Das Sprechen ist','naF17')}
   {text(425,445,560,'dann leichter.','naF17')}
   {title('2',104,511,900,'Arbeiten Sie zu dritt. Schreiben Sie einen Fragebogen. Sprechen und notieren Sie.','naOB naLS')}
-  {text(170,566,300,'Was brauchen Sie in Ihrem Stadtteil?','naD19 naItalic')}
+  {text(170,566,300,'Was brauchen Sie in Ihrem Stadtteil?','naD19 naBold')}
   <div className="naTFrame" style={{left:170,top:595,width:730,height:169}}/>
   {[647,676,705,735].map(y=><div key={y} className="naTRule naTLine" style={{left:170,top:y,width:730}}/>)}
   {[353,535,717].map(x=><div key={x} className="naTCol naTLine" style={{left:x,top:595,height:169}}/>)}
@@ -62,12 +63,12 @@ export function NativeAB12P21_24({page}:{page:string}){
   {text(180,743,20,'…','naSmall')}
   {art('bubble1',125,782,209,89)}
   {art('bubble2',378,788,483,98)}
-  {text(110,940,371,'TRAINING: AUSSPRACHE','naHead2 naNw')}
-  {text(502,945,230,'Vokale: langes „e“ und „i“','naS19 naItalic')}
+  {text(108,931,371,'TRAINING: AUSSPRACHE','naHead2 naH30')}
+  {text(499,939,230,'Vokale: langes „e“ und „i“','naIt naS188 naVok')}
   <div style={{position:'absolute',left:734,top:959,width:228,height:2,background:'#f8b25e'}}/>
   {audio('assets/ab-a12-cd2-track12.mp3',46,1008,'2 12')}
   {title('1',107,1000,540,'Was hören Sie: langes „e“ oder „i“?','naOB naLS')}
-  {text(154,1031,140,'Kreuzen Sie an.','naD19')}
+  {text(151,1028,140,'Kreuzen Sie an.','naIns')}
   {text(184,1072,20,'e','naSmall naItalic')}
   {text(230,1068,20,'i','naSmall naItalic')}
   {text(330,1072,20,'e','naSmall naItalic')}
@@ -124,9 +125,9 @@ export function NativeAB12P21_24({page}:{page:string}){
   {art('modul',998,1386,73,26)}
  </>}
  {page==='22'&&<>
-  {text(125,93,90,'TEST','naHead2 naNw')}
+  {text(123,84,90,'TEST','naHead2 naH27')}
   <div className="naHeadRule" style={{left:205,top:113,width:773}}/>
-  {title('1',118,158,900,'In der Stadt. Ordnen und Ergänzen Sie die Wörter mit Artikel.','naRB naLS')}
+  {title('1',118,158,900,'In der Stadt. Ordnen und Ergänzen Sie die Wörter mit Artikel.','naOB naLS')}
   {art('scramble',160,196,665,42)}
   {text(166,243,12,'a')}
   {text(190,244,320,'Hier kann man Kleidung einkaufen.','naF19')}
@@ -149,7 +150,7 @@ export function NativeAB12P21_24({page}:{page:string}){
   <div className="naRule" style={{left:879,top:413,width:14}}/>
   {text(900,406,75,'/ 10 Punkte','naPkt')}
   {check('g1',700,240,{'p22-1b':'Kindergarten|der Kindergarten','p22-1c':'Jugendherberge|die Jugendherberge','p22-1d':'Turm|der Turm','p22-1e':'Bibliothek|die Bibliothek','p22-1f':'Park|der Park'},'naCheckSm')}
-  {title('2',117,442,900,'Wie heißen die Personalpronomen? Kreuzen Sie an.','naRB naLS')}
+  {title('2',117,442,900,'Wie heißen die Personalpronomen? Kreuzen Sie an.','naOB naLS')}
   {text(165,489,12,'a')}
   {text(189,490,540,'Daniel und Julia, wie findet ihr Berlin? – Super, es gefällt','naF19')}
   {art('ex2a-x',716,484,32,32)}
@@ -195,7 +196,7 @@ export function NativeAB12P21_24({page}:{page:string}){
   <div className="naRule" style={{left:879,top:737,width:14}}/>
   {text(900,730,70,'/ 5 Punkte','naPkt')}
   {check('g2',170,724,{'p22-r2b':'dir','p22-r2c':'Ihnen','p22-r2d':'euch','p22-r2e':'ihm','p22-r2f':'mir'},'naCheckSm')}
-  {title('3',116,765,900,'Ergänzen Sie die E-Mail.','naRB naLS')}
+  {title('3',116,765,900,'Ergänzen Sie die E-Mail.','naOB naLS')}
   <div className="naBandCream" style={{left:164,top:812,width:682,height:24}}/>
   {stext(170,814,680,'Hier gibt es viele | das ist nicht so toll | gefällt mir gut | Hier ist | das ist schon okay','naBankT')}
   {stext(184,873,110,'Hallo Freunde,','naF16')}
@@ -226,6 +227,120 @@ export function NativeAB12P21_24({page}:{page:string}){
   {text(441,1357,240,'www.hueber.de/menschen/lernen','naUrl naNw')}
   {art('modul-tab',0,1384,86,30)}
   {text(93,1395,190,'22 | zweiundzwanzig','naFooter naNw')}
+ </>}
+ {page==='24'&&<>
+  {text(134,66,790,'WIEDERHOLUNGSSTATION: WORTSCHATZ','naHead2 naH38')}
+  {title('1',131,161,900,'In der Stadt. Was ist das? Notieren Sie.','naRB naT18')}
+  {text(171,196,15,'a')}
+  {art('eine-bank-script',185,200,85,28)}
+  {text(171,221,15,'b')}
+  {field('p24-1b',195,215,303,'1b')}
+  {text(171,248,15,'c')}
+  {field('p24-1c',195,242,303,'1c')}
+  {text(171,272,15,'d')}
+  {field('p24-1d',195,266,303,'1d')}
+  {text(540,202,15,'e')}
+  {field('p24-1e',566,196,304,'1e')}
+  {text(540,228,15,'f')}
+  {field('p24-1f',566,222,304,'1f')}
+  {text(538,254,15,'g')}
+  {field('p24-1g',566,248,304,'1g')}
+  {text(538,280,15,'h')}
+  {field('p24-1h',566,274,304,'1h')}
+  {text(891,184,15,'a')}
+  {art('a-bank-bild',905,183,47,65)}
+  {text(974,139,15,'b')}
+  {art('b-kirche',985,140,57,88)}
+  {text(897,258,15,'c')}
+  {art('c-schloss',908,258,87,82)}
+  {text(651,326,15,'d')}
+  {art('d-turm',662,338,44,62)}
+  {text(743,336,15,'e')}
+  {art('e-hafen',760,335,118,70)}
+  {text(687,404,15,'f')}
+  {art('f-bibliothek',700,412,110,66)}
+  {text(936,364,15,'g')}
+  {art('g-post',952,355,76,75)}
+  {text(846,416,15,'h')}
+  {art('h-spielplatz',830,436,102,54)}
+  {check('g1',878,306,{'p24-1b':'eine Kirche|Kirche|die Kirche','p24-1c':'ein Schloss|Schloss|das Schloss','p24-1d':'ein Turm|Turm|der Turm','p24-1e':'ein Hafen|Hafen|der Hafen','p24-1f':'eine Bibliothek|Bibliothek|die Bibliothek','p24-1g':'eine Post|Post|die Post','p24-1h':'ein Spielplatz|Spielplatz|der Spielplatz'})}
+  {title('2',128,342,900,'Was passt zusammen? Ordnen Sie zu.','naRB naT18')}
+  {text(167,380,140,'Garage','naF185')}
+  {text(166,406,140,'Arbeitszimmer','naF185')}
+  {text(166,431,140,'Bad','naF185')}
+  {text(165,457,140,'Schlafzimmer','naF185')}
+  {text(165,482,140,'Garten','naF185')}
+  {text(164,508,140,'Wohnzimmer','naF185')}
+  {text(165,534,140,'Küche','naF185')}
+  {text(396,384,160,'Couch','naF185')}
+  {text(395,410,160,'Toilette','naF185')}
+  {text(395,435,160,'Computer','naF185')}
+  {text(395,461,160,'Kühlschrank','naF185')}
+  {text(394,486,160,'Auto','naF185')}
+  {text(394,512,160,'Blumen','naF185')}
+  {text(394,537,160,'Bett','naF185')}
+  {art('ex2-curve',238,490,156,41)}
+  {title('3',123,600,900,'Wo wohnt Charlotte? Lösen Sie das Rätsel.','naRB naT18')}
+  {rich(160,636,520,['Charlotte wohnt in der Stadtmitte, direkt im ',48,' (1) ',38,'.'])}
+  {rich(160,662,520,['Ihre Wohnung ist im 3. ',22,' (4) ',34,' und hat 45 m².'])}
+  {rich(160,688,520,['Charlotte hat zwei Zimmer mit ',28,' (2) ',42,' und Bad.'])}
+  {rich(160,714,520,['Ihr Vermieter ist sehr nett und die ',26,' (3) ',36,' ist günstig.'])}
+  {rich(160,740,520,['Neben ihr wohnt Frau Thiele, das ist ihre ',40,' (5) ',36,'.'])}
+  {art('kreuzwort',158,780,417,182)}
+  {text(591,920,75,'Lösung:')}
+  {text(667,920,300,'Charlotte wohnt in der','naF192')}
+  {text(663,952,110,'Schweiz, in')}
+  {field('p24-3l',773,941,98,'Lösungswort','naDashU')}
+  {text(878,950,15,'.')}
+  {check('g2',905,939,{'p24-3l':'Zürich|Zuerich'})}
+  {title('4',115,1000,900,'Ergänzen Sie das Gespräch.','naRB naT18')}
+  <div className="naBandCream" style={{left:156,top:1040,width:509,height:32}}/>
+  {stext(162,1039,58,'Urlaub','naBankT')}{stext(220,1039,8,'|','naBankT')}
+  {stext(231,1039,58,'Wetter','naBankT')}{stext(290,1039,8,'|','naBankT')}
+  {stext(300,1039,44,'Meer','naBankT')}{stext(344,1039,8,'|','naBankT')}
+  {art('gruesse-strike',349,1038,60,34)}
+  {stext(407,1039,8,'|','naBankT')}{stext(417,1039,34,'Dom','naBankT')}{stext(456,1039,8,'|','naBankT')}
+  {stext(466,1039,62,'Wochen','naBankT')}{stext(534,1039,8,'|','naBankT')}
+  {stext(545,1039,48,'Hause','naBankT')}{stext(598,1039,8,'|','naBankT')}
+  {stext(608,1039,52,'Bergen','naBankT')}
+  {stext(171,1082,50,'ARISA:','naSpkR')}
+  {stext(233,1082,130,'Hallo Uli, schöne','')}
+  {art('gruesse-script',371,1085,57,28)}
+  {stext(426,1082,90,'aus Italien!')}
+  {stext(172,1106,45,'Uli91:','naSpkB')}
+  {stext(233,1106,250,'Aus Italien? Was machst du dort?','naDlgB')}
+  {stext(170,1128,50,'ARISA:','naSpkR')}
+  {field('p24-4a',232,1127,243,'4a','naLow')}
+  {stext(481,1128,30,'(a)!','')}
+  {art('emoji',510,1124,44,40)}
+  {stext(233,1150,110,'Ich war in den','')}
+  {field('p24-4b',341,1153,244,'4b','naLow')}
+  {stext(591,1150,360,'(b), in den Dolomiten. Jetzt bin ich an der Adria.','')}
+  {stext(170,1174,45,'Uli91:','naSpkB')}
+  {stext(231,1174,115,'Toll! Wie ist das','naDlgB')}
+  {field('p24-4c',349,1176,243,'4c','naLow')}
+  {stext(598,1174,70,'(c) dort?','naDlgB')}
+  {stext(169,1198,50,'ARISA:','naSpkR')}
+  {stext(232,1198,290,'Sehr warm! Ich schwimme jeden Tag im','')}
+  {field('p24-4d',524,1201,243,'4d','naLow')}
+  {stext(773,1198,30,'(d).','')}
+  {stext(231,1222,405,'Morgen fahre ich weiter nach Mailand, ich möchte den','')}
+  {field('p24-4e',670,1230,212,'4e','naLow')}
+  {stext(888,1222,70,'(e) sehen.','')}
+  {stext(169,1246,45,'Uli91:','naSpkB')}
+  {stext(230,1246,200,'Sprichst du Italienisch?','naDlgB')}
+  {stext(167,1269,50,'ARISA:','naSpkR')}
+  {stext(230,1269,140,'Sí, naturalmente …','')}
+  {stext(230,1299,60,'In zwei','')}
+  {field('p24-4f',290,1295,220,'4f','naLow')}
+  {stext(516,1299,220,'(f) bin ich wieder zu','')}
+  {field('p24-4g',680,1304,213,'4g','naLow')}
+  {stext(899,1299,70,'(g). Ciao!','')}
+  {stext(167,1323,45,'Uli91:','naSpkB')}
+  {stext(228,1323,200,'Tschüs und viel Spaß!','naDlgB')}
+  {check('g3',958,1345,{'p24-4a':'Urlaub','p24-4b':'Bergen','p24-4c':'Wetter','p24-4d':'Meer','p24-4e':'Dom','p24-4f':'Wochen','p24-4g':'Hause'})}
+  {art('modul-tab',0,1384,86,30)}
+  {text(76,1392,200,'24 | vierundzwanzig','naFooter naNw')}
  </>}
  </div><audio ref={player} className="naPlayer"/></div>;
 }
