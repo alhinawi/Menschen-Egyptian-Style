@@ -46,7 +46,7 @@ def base(y0,y1,x0,x1):
 
 R = []  # erase rects
 def erase_line(y0,y1,x0,x1):
-    R.append((x0,y0,x1,y1+4))
+    R.append((x0,y0,x1,y1+6))
 
 flds = {f['id']:f for f in scan['fields']}
 def field(fid, y0, y1, x_override=None, sl=False):
@@ -79,10 +79,13 @@ def segs(y0,y1,x0,x1,parts,keep=None):
             if acc != tk:
                 print(f'WARN band {y0}: part {p[1]!r} matched {acc!r}')
             if x0w is not None:
-                tw = x1w-x0w
+                tw = (x1w-x0w)*0.985
                 if pi+1 < len(parts) and parts[pi+1][0] == 'h' and len(parts[pi+1][1]) <= 2:
                     tw -= 6
-                t(x0w, bl, p[1], target=tw)
+                if '(' in p[1] and len(key(p[1])) <= 5:
+                    t(x0w, bl, p[1], s=18.5)
+                else:
+                    t(x0w, bl, p[1], target=tw)
         elif p[0]=='h':
             rs = runs(y0,y1,p[2],p[3])
             if rs:
@@ -113,26 +116,35 @@ def title(y0,y1,text,x0=158,x1=975):
     erase_line(y0,y1,x0,x1)
 
 title(160,190,'Ergänzen Sie das Gespräch.')
-title(396,420,'Ergänzen Sie haben und sein in der richtigen Form.')
+rs2 = runs(396,420,158,975); bl2 = base(396,420,158,975)
+FULL2 = 'Ergänzen Sie haben und sein in der richtigen Form.'
+s2 = best_size(FULL2, DROID700, rs2[-1][1]-rs2[0][0], lo=13, hi=24)
+x2 = rs2[0][0]
+s2i = 17.4  # render-measured: DroidBI at 19 -> 151px; scan italic span x295-433 = 138px
+t(x2, bl2, 'Ergänzen Sie ', c='naDB', s=s2)
+t(293, bl2, 'haben und sein', c='naDBI', s=s2i)
+t(441, bl2, ' in der richtigen Form.', c='naDB', s=s2)
+erase_line(396,420,158,975)
 title(628,654,'Ordnen Sie zu und ergänzen Sie die Verben in der richtigen Form.')
 title(928,954,'Ergänzen Sie das Gespräch.')
 
 # ---------- ex1 (marker squares x157-172 stay; Punkte x890+ stays on L6) ----------
 segs(204,226,180,500,[('t','Wie sieht Sarah van der Ahe aus?')])
 segs(228,250,180,945,[('t','Sie steht am Eingang. Sie ist'),('h','s',436,450),('art','chlan'),('h','k',515,530),
-                      ('t','(a)'),('t','und'),('h','hat',597,632),('h','k',633,646),
-                      ('f','p58-1b'),('t','(b) braune H'),('f','p58-1c'),('t','(c).')])
-segs(252,278,180,700,[('t','Sie ist wirklich h'),('f','p58-1d'),('t','(d) .')])
+                      ('t','(a)'),('t','und'),('h','hat',597,632),
+                      ('f','p58-1b','sl'),('t','(b) braune'),('f','p58-1c','sl'),('t','(c).')],
+                     keep=[(630,722),(820,909)])
+segs(252,278,180,478,[('t','Sie ist wirklich'),('f','p58-1d','sl'),('t','(d) .')],keep=[(306,430)])
 segs(280,304,180,500,[('t','Ja, das finde ich auch.')])
-segs(306,330,180,900,[('t','Und wer ist der Mann neben ihr mit dem'),('h','B',553,572),('f','p58-1e'),('t','(e)?')])
-segs(332,356,180,890,[('t','Hat er dunkle'),('h','L',308,325),('f','p58-1f'),('t','(f)? Dann ist es Louis.')])
+segs(306,330,180,900,[('t','Und wer ist der Mann neben ihr mit dem'),('f','p58-1e','sl'),('t','(e)?')],keep=[(551,624)])
+segs(332,356,180,855,[('t','Hat er dunkle'),('f','p58-1f','sl'),('t','(f)? Dann ist es Louis.')],keep=[(306,416)])
 
 # ---------- ex2 (letters x~162 native; square/triangle markers ~184-196 stay) ----------
 def rowletter(y0,y1,letter):
     rs = runs(y0,y1,148,180)
     if rs:
-        t(rs[0][0], base(y0,y1,148,180), letter, target=rs[0][1]-rs[0][0])
-    R.append((148,y0,180,y1+4))
+        t(rs[0][0], base(y0,y1,148,180), letter, s=16.0, col='#605f62')
+    R.append((148,y0,180,y1+6))
 
 # a: blank, then text, then triangle + short answer
 rowletter(433,458,'a')
@@ -153,18 +165,18 @@ segs(760,784,180,620,[('t','Geburtstagsgeschenk'),('f','p58-3c'),('t','(c).')])
 segs(784,808,180,540,[('t','Was hat sie'),('f','p58-3d'),('t','(d)?')])
 segs(810,834,180,760,[('t','Natürlich nichts. Aber ich habe mich'),('f','p58-3e'),('t','(e).')])
 segs(836,862,180,900,[('t','Wir haben dann viel zusammen'),('f','p58-3f'),('t','(f). Die Musik war super.')])
-segs(862,886,180,900,[('t','Stimmt! Hast du den Sänger'),('f','p58-3g'),('t','(g)? Das war Richie.')])
+segs(862,886,180,855,[('t','Stimmt! Hast du den Sänger'),('f','p58-3g'),('t','(g)? Das war Richie.')])
 
 # ---------- ex4 (hint letters inside blanks get erased with underscores) ----------
 segs(963,989,175,915,[('t','Richie?'),('f','p58-4a','sl'),('t','(a) Das war doch nicht Richie. Richie hat lange Haare und')],keep=[(246,368)])
-segs(991,1015,175,320,[('t','einen Bart.')])
+segs(991,1015,175,320,[('t','einen Bart.')],keep=[(246,368)])
 segs(1017,1041,175,780,[('t','Das war früher. Jetzt hat er kurze Haare und keinen Bart mehr.')])
 segs(1042,1066,175,320,[('f','p58-4b','sl'),('t','? (b)')],keep=[(168,252)])
-segs(1067,1092,175,640,[('t','Und – das glaubst du nicht – er ist verheiratet.')])
+segs(1067,1092,175,640,[('t','Und – das glaubst du nicht – er ist verheiratet.')],keep=[(183,252)])
 segs(1094,1120,175,380,[('f','p58-4c','sl'),('t','(c)')],keep=[(178,322)])
-segs(1120,1144,175,430,[('t','Und er hat fünf Kinder.')])
+segs(1120,1144,175,430,[('t','Und er hat fünf Kinder.')],keep=[(178,322)])
 segs(1146,1170,175,870,[('f','p58-4d','sl'),('t','(d) – Wann kommt denn der Bus? Es ist schon halb eins.')],keep=[(178,328)])
-segs(1173,1198,175,900,[('f','p58-4e','sl'),('t','! (e) Der Bus fährt nur bis 24 Uhr.')],keep=[(178,450)])
+segs(1173,1198,175,855,[('f','p58-4e','sl'),('t','! (e) Der Bus fährt nur bis 24 Uhr.')],keep=[(178,450)])
 
 # ---------- chk per group (bottom-right, below Punkte labels, on empty paper) ----------
 items.append({'k':'chk','g':'g1','x':930,'y':362})
