@@ -1,0 +1,58 @@
+{
+  "keep": [
+    [
+      0,
+      0,
+      1075,
+      1521
+    ]
+  ],
+  "checks": {
+    "task6a": [
+      775,
+      480
+    ]
+  },
+  "fieldadj": {
+    "a1-brot": {
+      "x": 648,
+      "y": 407,
+      "w": 44,
+      "h": 21,
+      "ul": true
+    },
+    "a2-schokolade": {
+      "x": 450,
+      "y": 431,
+      "w": 50,
+      "h": 21,
+      "ul": true
+    },
+    "a3-kuchen": {
+      "x": 648,
+      "y": 429,
+      "w": 44,
+      "h": 21,
+      "ul": true
+    },
+    "a4-fisch": {
+      "x": 450,
+      "y": 453,
+      "w": 50,
+      "h": 21,
+      "ul": true
+    },
+    "a5-suppe": {
+      "x": 648,
+      "y": 451,
+      "w": 44,
+      "h": 21,
+      "ul": true
+    }
+  },
+  "notes": [
+    "6a row 1: blue 'der' before Schinken is the printed example (book script ink), kept + ghost-boxed; official key has exactly 5 answers",
+    "6b Speisekarte card: 6 free-writing lines from the dice game get ungraded native underline inputs",
+    "6c partner dialogue: no fields"
+  ]
+}
