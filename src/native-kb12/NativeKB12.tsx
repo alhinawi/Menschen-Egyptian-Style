@@ -443,7 +443,7 @@ export function NativeKB12({page}:{page:string}){
  {page==='33'&&<>
  {art('hero',0,0,1100,1000)}{text(365,40,640,'Geben Sie ihm doch diesen Tee!','nkHeroTitle nkTeaTitle')}{text(1008,40,92,'18','nkLesson nkGreen')}
  <aside className="nkAside" style={{left:835,top:995,width:215,height:365}}><Words text={'Hören/Sprechen: Schmerzen beschreiben: Mein Kopf tut weh.; Ratschläge geben: Sie sagt, du sollst im Bett bleiben. / Bleiben Sie doch im Bett!; über Krankheiten sprechen: Gegen Bauchschmerzen trinke ich …\nLesen: Ratgeber\nWortfeld: Körperteile\nGrammatik: Imperativ (Sie): Gehen Sie zum Arzt!; Modalverb sollen'}/></aside>
- {title('1',106,1043,685,'Hallo, Schwester Angelika!')}{text(120,1088,685,'a  Was sehen Sie auf dem Foto?','nkBold')}{text(150,1125,300,'Nonne | Kräuter | Blumen | …','nkBank')}{text(485,1094,310,'Man sieht eine Nonne. Sie …','nkSpeech')}
+ {title('1',106,1043,685,'Hallo, Schwester Angelika!')}{text(120,1088,685,'a  Was sehen Sie auf dem Foto?','nkBold')}{save('1a',452,1088)}{text(150,1125,300,'Nonne | Kräuter | Blumen | …','nkBank')}{text(485,1094,310,'Man sieht eine Nonne. Sie …','nkSpeech')}
  {audio('assets/kb-a12-cd3-track18.mp3',47,1197,'3 18',undefined,'1b')}{text(120,1197,680,'b  Was ist richtig? Hören Sie und kreuzen Sie an.','nkBold')}
  {['Frau Brehm ist krank.','Herr Brehm hat seit zwei Tagen Kopfschmerzen.','Schwester Angelika sagt, Herr Brehm soll zum Arzt gehen.'].map((t,i)=><div key={t}>{text(150,1248+i*32,570,(i+1)+'  '+t,'nkCompact')}{dot('1b-'+i,'',735,1248+i*32,t,true)}</div>)}{check('1b',150,1365,{'1b-0':'false','1b-1':'true','1b-2':'false'})}
  </>}
