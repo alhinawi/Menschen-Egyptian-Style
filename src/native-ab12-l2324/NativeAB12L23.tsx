@@ -626,5 +626,83 @@ export function NativeAB12L23({page}:{page:string}){
   {art('modul8-tab',0,1044,52,20)}
   {text(62,1049,140,'92  |  zweiundneunzig','naFooter')}
  </>}
+ {page==='93'&&<>
+  <div className="naTrainHead naTrainHead93" style={{left:75,top:60}}>TRAINING: SCHREIBEN</div>
+  <div className="naRuleP" style={{left:343,top:82,width:452,background:'#ec7724'}}/>
+  <div className="naRedL" style={{left:728,top:26,width:69,height:59,background:'#f74d03'}}>24</div>
+  {title('1',72,117,640,'Lesen Sie die Einladung und ordnen Sie zu.','naRB naNw')}
+  <div className="naBankBlue naBank93" style={{left:109,top:152}}><Words text="Viele Grüße | Liebe Studentinnen und Studenten | Bielefeld, 15 Juni 20.."/></div>
+  {field('p93-s1a',285,185,168,'1 Ort und Datum')}
+  {field('p93-s1b',117,205,272,'1 Anrede')}
+  {text(391,220,14,',','naBookSerif naIt93')}
+  {text(114,239,290,'am 28. Juli wollen wir das Semesterende feiern.','naBookSerif naIt93 naItL1 naNw')}
+  {text(113,277,320,'Wie jedes Jahr wollen wir ein Picknick machen und na-','naBookSerif naIt93 naItL2 naNw')}
+  {text(115,297,330,'türlich viel Spaß haben. Dieses Jahr haben wir auch ein','naBookSerif naIt93 naItL3 naNw')}
+  {text(115,316,300,'Programm vorbereitet. Wir freuen uns schon sehr!','naBookSerif naIt93 naItL4 naNw')}
+  {text(113,346,320,'Wir treffen uns um 10.00 Uhr am Hauptbahnhof und','naBookSerif naIt93 naItL5 naNw')}
+  {text(114,367,340,'fahren mit Bussen an den Kalmbacher See. Macht Ihr auch','naBookSerif naIt93 naItL6 naNw')}
+  {text(114,385,330,'dieses Jahr mit? Bitte gebt uns bis zum 30. Juni Bescheid.','naBookSerif naIt93 naItL7 naNw')}
+  {field('p93-s1c',117,409,252,'1 Gruss')}
+  {text(114,433,100,'Josh Weller','naBookSerif naIt93 naItL8 naNw')}
+  {text(114,454,220,'Fachschaftsrat – Germanistik','naBookSerif naIt93 naItL9 naNw')}
+  <div className="naTipBox" style={{left:487,top:232,width:257,height:151}}/>
+  <div className="naTipTop naTipGold93" style={{left:487,top:232,width:257,height:3}}/>
+  <div className="naTipBar naTipGold93" style={{left:487,top:232,width:10,height:151}}/>
+  <div className="naTipp" style={{left:483,top:346,width:14,height:37}}>Tipp</div>
+  {text(511,237,225,'Sie möchten einen Brief schreiben.','naBookSerif naTippT93 naTpL1 naNw')}
+  {text(511,254,225,'Was ist besonders wichtig?','naBookSerif naTippT93 naTpL2 naNw')}
+  {text(511,272,225,'Vergessen Sie nicht das Datum, die','naBookSerif naTippT93 naTpL3 naNw')}
+  {text(511,287,225,'Anrede und den Gruß.','naBookSerif naTippT93 naTpL4 naNw')}
+  {text(511,304,225,'Vor dem Schreiben: Wie gut kennen','naBookSerif naTippT93 naTpL5 naNw')}
+  {text(511,320,225,'Sie den Adressaten? Wollen Sie du','naBookSerif naTippT93 naTpL6 naNw')}
+  {text(511,339,225,'oder Sie sagen?','naBookSerif naTippT93 naTpL7 naNw')}
+  {text(511,354,225,'Schreiben Sie zu jedem Punkt ein bis','naBookSerif naTippT93 naTpL8 naNw')}
+  {text(511,371,225,'zwei Sätze.','naBookSerif naTippT93 naTpL9 naNw')}
+  {check('93-1',672,436,{'p93-s1a':'Bielefeld, 15 Juni 20..|Bielefeld, 15. Juni 20..|Bielefeld, 15. Juni 20...','p93-s1b':'Liebe Studentinnen und Studenten','p93-s1c':'Viele Grüße'})}
+  {title('2',72,509,660,'Antworten Sie auf die Einladung in 1. Schreiben Sie etwas zu den drei Punkten.','naRB naNw')}
+  <div className="naDashRule93" style={{left:106,top:549}}/>{text(118,539,600,'Danken Sie für die Einladung.','naDash93 naNw')}
+  <div className="naDashRule93" style={{left:106,top:569}}/>{text(118,559,600,'Sagen Sie: Sie kommen gern zu dem Fest.','naDash93 naNw')}
+  <div className="naDashRule93" style={{left:106,top:589}}/>{text(118,579,600,'Fragen Sie: Sollen Sie etwas mitbringen?','naDash93 naNw')}
+  <div className="naTrainHead naTrainHead93" style={{left:74,top:634}}>TRAINING: AUSSPRACHE</div>
+  {text(367,640,110,'Neueinsatz','naNeu93 naNw')}
+  <div className="naRuleP" style={{left:449,top:655,width:268,background:'#ec7724'}}/>
+  {audio('assets/ab-cd2-track45.mp3',26,681,'2 45')}
+  {title('1',72,685,330,'Hören Sie und sprechen Sie nach.','naRB naNw')}
+  {text(105,707,220,'Achten Sie auf die Pause!','naInst93 naNw')}
+  {text(105,737,14,'a','naBookSerif')}{text(123,737,330,'April – im | April','naBookSerif naNw')}
+  {text(105,756,14,'b','naBookSerif')}{text(123,756,330,'Ostern – zu | Ostern','naBookSerif naNw')}
+  {text(105,775,14,'c','naBookSerif')}{text(123,775,330,'Abend – heute | Abend','naBookSerif naNw')}
+  {text(105,795,14,'d','naBookSerif')}{text(123,795,340,'Abschlussprüfung – meine | Abschlussprüfung','naBookSerif naNw')}
+  {text(105,814,14,'e','naBookSerif')}{text(123,814,330,'Uhr – acht | Uhr','naBookSerif naNw')}
+  {text(105,834,14,'f','naBookSerif')}{text(123,834,330,'Ulm – in | Ulm','naBookSerif naNw')}
+  {title('2',74,880,300,'Ergänzen Sie die Regel.','naRB naNw')}
+  <div className="naRegelBox93" style={{left:105,top:909,width:287,height:55}}/>
+  <div className="naRegelTab93" style={{left:105,top:909,width:14,height:55}}/>
+  <div className="naTipp naRegelLbl93" style={{left:105,top:909,width:14,height:55}}>Regel</div>
+  {text(130,915,250,'Vor Wörtern mit Vokal beginnt man','naBookSerif naRegelT93 naNw')}
+  {text(130,932,250,'neu. Das heißt: Man macht eine kleine','naBookSerif naRegelT93 naNw')}
+  {text(130,949,48,'Sprech-','naBookSerif naRegelT93 naNw')}
+  {field('p93-a2',177,943,58,'2 Regel Sprech-')}
+  {text(233,949,12,'.','naBookSerif naRegelT93 naNw')}
+  {check('93-2',706,903,{'p93-a2':'Pause'})}
+  {title('3',455,685,260,'Schreiben Sie zuerst die Sätze.','naRB naNw')}
+  {text(487,707,240,'Flüstern Sie die Sätze und','naInst93 naNw')}
+  {text(487,726,240,'sprechen Sie sie dann laut.','naInst93 naNw')}
+  {text(487,755,14,'a','naBookSerif')}{text(505,755,240,'amerstenaugustwillichmiteuch','naBookSerif naNw')}
+  {text(505,774,240,'meineabschlussprüfungfeiern','naBookSerif naNw')}
+  {text(487,794,14,'b','naBookSerif')}{text(505,794,240,'kommtalleumachtuhrzumeinerein','naBookSerif naNw')}
+  {text(505,814,140,'weihungsparty','naBookSerif naNw')}
+  {text(487,833,14,'c','naBookSerif')}{text(505,833,260,'zuosternbekommtihrkleinegeschenke','naBookSerif naNw')}
+  {text(487,852,14,'d','naBookSerif')}{text(505,852,260,'meinefreundinhateinenfreundinulm','naBookSerif naNw')}
+  {audio('assets/ab-cd2-track46.mp3',444,888,'2 46')}
+  {text(488,892,250,'Hören Sie und vergleichen Sie.','naInst93 naNw')}
+  {audio('assets/ab-cd2-track47.mp3',414,933,'2 47')}
+  {title('4',454,937,270,'Zungenbrecher: Hören Sie.','naRB naNw')}
+  {text(488,970,280,'In Ulm und um Ulm und um Ulm herum.','naBookSerif naZung93 naNw')}
+  {text(487,998,270,'Sprechen Sie: zuerst langsam und dann','naInst93b naNw')}
+  {text(488,1016,200,'immer schneller.','naInst93b naNw')}
+  {art('modul-tab',743,1046,56,20)}
+  <div className="naText naFooter" style={{left:420,top:1047,width:315,textAlign:'right'}}>dreiundneunzig&nbsp;&nbsp;|&nbsp;&nbsp;93</div>
+ </>}
  </Canvas>;
 }
