@@ -30,7 +30,7 @@ export function NativeAB12P31to46({page}:{page:string}){
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}"}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg,[data-native-ab12] .naTitle,[data-native-ab12] .naField{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg{font-size:20px!important}[data-native-ab12] .naTitle{font-size:21px!important}[data-native-ab12] .naText.naS20{font-size:18px!important}[data-native-ab12] .naSmall{font-size:16.5px!important}[data-native-ab12] .naD19{font-size:17.5px!important}[data-native-ab12] .naField{font-size:19px!important}"}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='31'&&<>
   {art('0',982,42,85,78)}
   {lin(354,107,605,6,'#a6ca03')}
@@ -85,7 +85,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(333,697,84,'nach dem','naNw')}
   {text(461,697,380,'für den Deutschkurs die Prüfung machen.','naNw')}
   {dot('6a1','nach einem',299,522,'6 a (1) nach einem')}
-  {dot('6a1','für ein',446,522,'6 a (1) für ein')}
+  {dot('6a1','für ein',450,522,'6 a (1) für ein')}
   {dot('6a2','nach',832,523,'6 a (2) nach')}
   {dot('6a2','vor',166,552,'6 a (2) vor')}
   {dot('6b','für',300,575,'6 b für')}
@@ -97,8 +97,8 @@ export function NativeAB12P31to46({page}:{page:string}){
   {dot('6d2','In',265,653,'6 d (2) In')}
   {dot('6d2','Für',329,653,'6 d (2) Für')}
   {dot('6e','nach dem',305,702,'6 e nach dem')}
-  {dot('6e','für den',430,702,'6 e für den')}
-  {check('31-1',166,734,{'6a1':'für ein','6a2':'vor','6b':'nach','6c':'in','6d1':'vor','6d2':'In','6e':'nach dem'})}
+  {dot('6e','für den',433,702,'6 e für den')}
+  {check('31-1',888,700,{'6a1':'für ein','6a2':'vor','6b':'nach','6c':'in','6d1':'vor','6d2':'In','6e':'nach dem'})}
   {kb(78,783,'KB 7')}
   {title('7',130,775,760,'Akkusativ oder Dativ? Ergänzen Sie.','naGB')}
   <div className="naSide" style={{left:75,top:815}}>STRUKTUREN</div>
@@ -117,14 +117,14 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(300,862,60,'Stunde','naNw')}
   {text(432,862,82,'f nach d','naNw')}
   {text(572,862,39,'Kurs','naNw')}
-  {field('p31-7b',234,842,38,'7b')}
-  {field('p31-7c',246,863,50,'7c')}
-  {field('p31-7d',503,813,49,'7d')}
+  {field('p31-7b',218,842,51,'7b')}
+  {field('p31-7c',242,863,52,'7c')}
+  {field('p31-7d',483,813,125,'7d')}
   {field('p31-7e',515,843,50,'7e')}
   {field('p31-7f',515,863,53,'7f')}
   {field('p31-7g',800,814,50,'7g')}
   {field('p31-7h',808,844,50,'7h')}
-  {check('31-2',234,904,{'p31-7b':'em','p31-7c':'er','p31-7d':'er','p31-7e':'en','p31-7f':'em','p31-7g':'er','p31-7h':'em'})}
+  {check('31-2',888,858,{'p31-7b':'em','p31-7c':'er','p31-7d':'er','p31-7e':'en','p31-7f':'em','p31-7g':'er','p31-7h':'em'})}
   {kb(78,945,'KB 7')}
   {title('8',130,937,760,'Im Chatroom. Ordnen Sie zu.','naGB')}
   <div className="naSide" style={{left:75,top:975}}>STRUKTUREN</div>
