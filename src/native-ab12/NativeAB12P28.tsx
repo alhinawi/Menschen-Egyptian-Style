@@ -27,16 +27,16 @@ export function NativeAB12P28({page}:{page:string}){
  const gridRows:[string,string][]=[['a','Ich finde deinen Blog sehr gut.'],['b','Ich kenne München.'],['c','Ich finde die Maxvorstadt und das Lehel super.'],['d','Ich suche bald eine Wohnung in München.'],['e','Ich möchte vielleicht in Giesing wohnen.']];
 
  return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-700.woff2') format('woff2');font-weight:700;font-display:swap}`}</style><div className="naCanvas" style={{width:W,height:H,marginLeft:-W/2,marginTop:-H/2,transform:`scale(${scale})`}}>
-  {text(129,66,350,'RÜCKBLICK','naRueck')}
+  {text(129,71,350,'RÜCKBLICK','naRueck')}
   {stext(125,159,390,'Wählen Sie eine Aufgabe zu Lektion','naWahl')}{art('yel14',510,161,32,23)}<div className="naYelRule" style={{left:550,top:181,width:440,height:3}}/>
   {art('icons1',78,218,88,38)}
   {stext(169,221,760,'Lesen Sie noch einmal die Anzeigen im Kursbuch auf Seite 15 und ergänzen','naItem')}
   {stext(169,251,300,'Sie die Tabelle.','naItem')}
-  <div className="naTh" style={{left:190,top:287,width:794,height:30}}/>
+  <div className="naTh" style={{left:190,top:288,width:794,height:28}}/>
   {stext(199,292,150,'Zimmer','naThT')}{stext(363,292,140,'Größe','naThT')}{stext(520,292,240,'Was gibt es noch?','naThT')}{stext(782,292,150,'Kosten','naThT')}
-  {[354,511,772].map(x=><div key={x} className="naVsep" style={{left:x,top:287,width:1,height:232}}/>)}
+  {[354,511,772].map(x=><div key={x} className="naVsep" style={{left:x,top:288,width:1,height:205}}/>)}
   {[366,398,429,460,491].map(y=><div key={y} className="naHrule" style={{left:190,top:y,width:793,height:1}}/>)}
-  <div className="naFrame" style={{left:188,top:287,width:1,height:232}}/><div className="naFrame" style={{left:983,top:287,width:1,height:232}}/><div className="naFrame" style={{left:188,top:519,width:796,height:1}}/>
+  <div className="naFrame" style={{left:188,top:288,width:1,height:205}}/><div className="naFrame" style={{left:983,top:288,width:1,height:205}}/>
   {rows.map((r,i)=><div key={r} className="naRowLab" style={{left:158,top:374+i*31}}>{r}</div>)}
   <div className="naRowLab" style={{left:158,top:333}}>A</div>
   {art('hwrowa',195,318,760,48)}
@@ -49,7 +49,7 @@ export function NativeAB12P28({page}:{page:string}){
   {stext(169,806,620,'Welche Sätze passen zu Claudia, welche passen zu Teddybär?','naItem')}
   {stext(169,833,700,'Lesen Sie noch einmal die Kommentare zu Marlenes Blog im Kursbuch auf Seite 18','naBody')}
   {stext(169,859,200,'und kreuzen Sie an.','naBody')}
-  {stext(655,888,80,'Claudia','naGridH')}{stext(761,888,90,'Teddybär','naGridH')}
+  {stext(657,888,80,'Claudia','naGridH')}{stext(763,888,90,'Teddybär','naGridH')}
   {gridRows.map(([id,tx],i)=><div key={id}>
     <div className="naSans2" style={{left:160,top:917+i*27.5,width:28}}><Words text={id}/></div>
     {stext(195,917+i*27.5,440,tx)}
@@ -62,10 +62,10 @@ export function NativeAB12P28({page}:{page:string}){
   {stext(179,1157,230,'Das gefällt mir in Giesing:')}{field('n1',378,1153,570,'Notiz 1')}
   {stext(179,1183,290,'Das gefällt mir nicht so gut in Giesing:')}{field('n2',473,1179,475,'Notiz 2')}
   {stext(179,1209,230,'Das möchte ich noch wissen:')}{field('n3',404,1205,544,'Notiz 3')}
-  {field('a1',140,1243,290,'Name')}{stext(444,1248,40,'aus')}{field('a2',478,1243,165,'Stadt')}{stext(655,1248,160,'hat geschrieben:')}
+  {field('a1',140,1243,290,'Name')}{stext(444,1248,40,'aus','naIt')}{field('a2',478,1243,165,'Stadt')}{stext(655,1248,160,'hat geschrieben:','naIt')}
   {stext(220,1282,120,'Hallo Marlene!')}{field('h1',336,1274,650,'Kommentar Zeile 1')}
   {field('h2',219,1301,767,'Kommentar Zeile 2')}
-  {field('h3',336,1326,650,'Kommentar Zeile 3')}
-  {art('modul',0,1389,95,26)}{text(104,1390,30,'28','naFooter naFootNum')}<div className="naBarV" style={{left:141,top:1394,width:1,height:14}}/>{text(150,1389,150,'achtundzwanzig','naFooter')}
+  {field('h3',219,1326,767,'Kommentar Zeile 3')}
+  {art('modul',0,1389,95,26)}{text(98,1394,30,'28','naFooter naFootNum')}<div className="naBarV" style={{left:150,top:1397,width:1,height:10}}/>{text(155,1391,150,'achtundzwanzig','naFooter')}
  </div></div>;
 }
