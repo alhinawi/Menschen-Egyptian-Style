@@ -3,7 +3,7 @@ import {AB12Canvas,AB12Helpers} from '../ab12-shared';
 const DOT_X=[662,691,721];
 const DOT_LBL=['gut','mittel','schwach'];
 
-function P74(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,modTab}=h;const D='naDroid74';
+function P74(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,modTab,rect}=h;const D='naDroid74';
  const conf=(id:string,y:number)=><>{DOT_X.map((x,i)=>dot(id,''+(i+1),x,y,'Selbsteinschätzung '+id+' '+DOT_LBL[i]))}</>;
  return <>
   {ln(90,61,330,25,'SELBSTEINSCHÄTZUNG',{cls:'naHdr74'})}
@@ -48,7 +48,7 @@ function P74(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,modTab}=h;const
   {ln(89,312,280,13.5,'… Aufforderungen und Bitten formulieren:',{b:1,cls:D})}
   {ln(371,312,23,13.5,'L20',{cls:D})}
   {conf('s3',311)}
-  {ln(88,329,42,13.5,'Sophie,',{cls:D})}
+  {ln(88,330,42,13.5,'Sophie,',{cls:D})}
   {rule(135,343,468)}{field('p74-s3-1',135,326,468,'3 Sophie','naFieldBlank')}
   {ln(604,329,5,13.5,'!',{cls:D})}
   {ln(89,349,96,13.5,'Lara und Simon,',{cls:D})}
@@ -70,9 +70,9 @@ function P74(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,modTab}=h;const
   {ln(250,422,6,13.5,'.',{cls:D})}
   {ln(89,441,23,13.5,'Man',{cls:D})}
   {rule(118,456,88)}{field('p74-s4-3a',118,439,88,'4 Man hier 2','naFieldBlank')}
-  {ln(205,441,28,13.5,'hier',{cls:D})}
-  {rule(238,456,220)}{field('p74-s4-3b',238,439,220,'4 Man hier 2 Ende','naFieldBlank')}
-  {ln(461,441,6,13.5,'.',{cls:D})}
+  {ln(211,441,22,13.5,'hier',{cls:D})}
+  {rule(238,456,223)}{field('p74-s4-3b',238,439,223,'4 Man hier 2 Ende','naFieldBlank')}
+  {ln(463,441,6,13.5,'.',{cls:D})}
   {ln(89,462,72,13.5,'Das ist nicht',{cls:D})}
   {rule(166,474,118)}{field('p74-s4-4',166,457,118,'4 Das ist nicht','naFieldBlank')}
   {ln(286,462,6,13.5,'.',{cls:D})}
@@ -129,7 +129,8 @@ function P74(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,modTab}=h;const
   {rule(105,955,501)}{field('p74-k4-2',105,938,501,'Regeln Zeile 2','naFieldBlank')}
 
   {modTab(2,1056,'Modul 7')}
-  {wl(1063,12,[{x:68,w:12,t:'74',b:1},{x:92,w:1,t:'|'}])}
+  {wl(1063,12,[{x:68,w:12,t:'74',b:1}])}
+  {rect(93,1052,1,12,'#202020')}
   {ln(106,1052,88,12,'vierundsiebzig')}
  </>;
 }
