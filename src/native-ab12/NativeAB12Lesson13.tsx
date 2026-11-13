@@ -115,7 +115,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {title('5',112,416,700,'Ergänzen Sie die Präposition und den Artikel.','naYB')}
   {side(70,462,'STRUKTUREN')}
   {text(156,456,200,'Wo ist denn …','naS20 naNw')}
-  {text(155,512,20,'a','naLet13')}{text(180,513,367,'… das Hotel „Kirchblick“? – Das ist direkt','naS19 naNw')}{art('am',549,507,25,29)}{text(577,513,80,'Bahnhof.','naS18 naNw')}
+  {text(155,512,20,'a','naLet13')}<div className="naText naS19 naNw" style={{left:180,top:513,width:367,letterSpacing:'0.7px'}}><Words text="… das Hotel „Kirchblick“? – Das ist direkt"/></div>{art('am',549,507,25,29)}{text(577,513,80,'Bahnhof.','naS18 naNw')}
   {art('hotel',665,468,165,94)}
   {text(155,602,20,'b','naLet13')}{text(185,602,180,'… die Post? – Die ist','naS20 naNw')}{field('7-5b1',366,604,109,'5b1')}{text(483,602,100,'Polizei und','naS20 naNw')}{field('7-5b2',585,604,115,'5b2')}{text(708,602,160,'Café „Glockner“.','naS20 naNw')}
   {art('polizei',860,555,156,87)}
@@ -179,15 +179,15 @@ export function NativeAB12Lesson13({page}:{page:string}){
   <div className="naTri8" style={{left:176,top:1004}}/>{text(196,1004,388,'Fahren Sie zwei Kilometer geradeaus. Dann','naS20 naNw')}{field('8-8d',588,1007,284,'8d')}
   {text(196,1029,120,'den Bahnhof.','naS20 naNw')}
   {text(151,1068,20,'e','naLet13')}<div className="naSq8" style={{left:175,top:1076}}/>{text(196,1068,410,'Kennen Sie das Restaurant „Schönblick“?','naS20 naNw')}
-  <div className="naTri8" style={{left:176,top:1094}}/>{text(194,1094,68,'Ja, das','naS20 naNw')}{field('8-8e1',265,1097,305,'8e1')}{text(573,1094,12,'.','naS20')}{field('8-8e2',587,1097,285,'8e2')}
-  {text(196,1120,470,'und fahren Sie zurück bis zur Ampel und dann links.','naS20 naNw')}
+  <div className="naTri8" style={{left:176,top:1097}}/>{text(194,1097,68,'Ja, das','naS20 naNw')}{field('8-8e1',265,1100,305,'8e1')}{text(573,1097,12,'.','naS20')}{field('8-8e2',587,1100,285,'8e2')}
+  {text(196,1123,470,'und fahren Sie zurück bis zur Ampel und dann links.','naS20 naNw')}
   {check('8-8',860,1150,{'8-8a':'bin nicht von hier','8-8b':'ist sehr nett','8-8c':'Trotzdem: Dankeschön','8-8d':'sehen Sie schon','8-8e1':'ist ganz in der Nähe','8-8e2':'Wenden Sie hier'})}
   {kb(56,1190,'KB 9')}
   {title('9',108,1180,600,'Finden Sie passende Fragen zu den Antworten.','naYB')}
   {side(72,1228,'KOMMUNIKATION')}
   {text(150,1223,20,'a','naLet13')}{text(180,1223,318,'Entschuldigen Sie bitte. Kann ich Sie','naS20 naNw')}{art('etwasfragen',502,1224,102,30)}{text(610,1223,180,'– Ja, kein Problem.','naS20 naNw')}
   {text(150,1249,20,'b','naLet13')}{text(180,1249,135,'Können Sie mir','naS20 naNw')}{field('8-9b',318,1251,257,'9b')}{text(580,1249,110,'? – Ja, gern.','naS20 naNw')}
-  {text(150,1276,20,'c','naLet13')}{text(180,1276,98,'Kennen Sie','naS20 naNw')}{field('8-9c',280,1277,255,'9c')}{text(540,1276,350,'? - Ja, das Hotel „Marienhof“ ist im Zentrum.','naS20 naNw')}
+  {text(150,1276,20,'c','naLet13')}{text(180,1276,98,'Kennen Sie','naS20 naNw')}{field('8-9c',280,1277,255,'9c')}{text(540,1276,350,'? – Ja, das Hotel „Marienhof“ ist im Zentrum.','naS20 naNw')}
   {text(150,1301,20,'d','naLet13')}{text(180,1301,36,'Eine','naS20 naNw')}{field('8-9d',218,1302,257,'9d')}{text(480,1301,430,'. Wo ist denn hier die Bank? – Die ist gleich hier.','naS20 naNw')}
   {text(150,1327,20,'e','naLet13')}{text(180,1327,140,'Haben Sie einen','naS20 naNw')}{field('8-9e',322,1328,263,'9e')}{text(590,1327,120,'Zeit? – Klar.','naS20 naNw')}
   {check('8-9',860,1358,{'8-9b':'helfen','8-9c':'das Hotel „Marienhof“|das Hotel Marienhof','8-9d':'Frage','8-9e':'Moment'})}
