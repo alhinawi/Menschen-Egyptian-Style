@@ -1,0 +1,17 @@
+.naRCanvas{font-family:'Times New Roman',Times,'Liberation Serif',serif}
+.naRCanvas .naText.naR{position:absolute;font-size:22px;line-height:1;white-space:nowrap;margin:0;color:#2b2b2b}
+.naRCanvas .naFitIn{display:inline-block;transform-origin:left top;white-space:nowrap}
+.naRCanvas .naRBold{font-weight:bold}
+.naRCanvas .naRIt{font-style:italic}
+.naRCanvas .naRRule{position:absolute}
+.naRCanvas .naRField{border-bottom:1.5px solid #b9c0c3!important;font-size:20px!important}
+.naRCanvas .naRTitle{position:absolute}
+.naRCanvas .naRBadge{display:block;color:#fff;font:bold 23px FiraSans,'Trebuchet MS',sans-serif;text-align:center}
+.naRCanvas .naRDot{border:2px solid #8a8f8a!important}
+.naRCanvas .naRDot:checked{background:
+ linear-gradient(45deg,transparent 46%,#26764c 46% 54%,transparent 54%),
+ linear-gradient(-45deg,transparent 46%,#26764c 46% 54%,transparent 54%),white!important;background-size:70% 70%,70% 70%,100% 100%!important;background-position:center!important;background-repeat:no-repeat!important}
+.naRCanvas .naRAudio{background:transparent;color:transparent;border:0}
+.naRCanvas .naRSans{font-family:FiraSans,'Trebuchet MS',sans-serif;font-weight:700;font-size:23px}
+.naRCanvas .naHead{letter-spacing:2px;font-weight:400}
+.naRCanvas .naBase{display:inline-block;width:0;height:0;vertical-align:baseline}
