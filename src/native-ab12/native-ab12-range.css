@@ -121,3 +121,11 @@
 .nativeAB12[data-native-ab12="61"] .naRCanvas .naRField.sl{border-bottom-color:transparent!important;background:transparent!important;box-shadow:none!important}
 /* p61 bold table headings override the generic serif family pin. */
 .nativeAB12[data-native-ab12="61"] .naRCanvas .naText.naR.naDB.naDB{font-family:DroidB,ABRangeDroid,serif!important;font-weight:700!important;-webkit-text-stroke:0!important}
+.nativeAB12[data-native-ab12="62"] .naRCanvas .naText.naR.naFiraB.naFiraB{font-family:FiraB,FiraSans,sans-serif!important;font-weight:700!important;-webkit-text-stroke:0!important}
+.nativeAB12[data-native-ab12="62"] .naRCanvas .naText.naR.naFiraR.naFiraR{font-family:FiraR,FiraSans,sans-serif!important;font-weight:400!important;-webkit-text-stroke:0!important}
+.nativeAB12[data-native-ab12="62"] .naRCanvas .naText.naR.naFiraM.naFiraM{font-family:FiraM,FiraSans,sans-serif!important;font-weight:500!important;-webkit-text-stroke:0!important}
+.nativeAB12[data-native-ab12="62"] .naRCanvas .p62Tilt{transform:rotate(-2deg);transform-origin:left bottom}
+.nativeAB12[data-native-ab12="62"] .naRCanvas .naRField.sl{border-bottom-color:transparent!important;background:transparent!important;box-shadow:none!important}
+@font-face{font-family:DroidI;src:url('/assets/fonts/droid-serif-400-italic.ttf') format('truetype');font-weight:400;font-style:italic;font-display:swap}
+.nativeAB12[data-native-ab12="62"] .naRCanvas .naText.naR.naDI.naDI{font-family:DroidI,serif!important;font-weight:400!important;font-style:italic!important;-webkit-text-stroke:0!important}
+.nativeAB12[data-native-ab12="62"] .naRCanvas .tapWord{padding-left:0!important;padding-right:0!important}
