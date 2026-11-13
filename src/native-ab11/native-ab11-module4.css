@@ -1,0 +1,83 @@
+.nativeAB11Lesson12Start .mCanvas .mText{font-size:16px}
+.nativeAB11Lesson12Start .mCanvas .mText.mHeader{font:25px Georgia;letter-spacing:1px;color:#171717}
+.nativeAB11Lesson12Start .mCanvas .mText.mTitle{font-size:15px}
+.nativeAB11Lesson12Start .mCanvas .mText.mFooter{font-size:12px;text-align:right}
+.nativeAB11Lesson12Start .mCanvas .mText.mVocabText{font-size:17px}
+.nativeAB11Lesson12Start .mCanvas .mText.mVocabHead{font:700 17px 'Times New Roman',serif}
+.nativeAB11Lesson12Start .mCanvas .mText.mTippText{font:13px/1.4 Arial,sans-serif}
+.nativeAB11Lesson12Start .mCanvas .mText.mExample{font-size:15px}
+.nativeAB11Lesson12Start .mCanvas .mNumber{background:#9e1608;border:0}
+.nativeAB11Lesson12Start .mRule4{position:absolute;left:373px;top:106px;width:482px;height:2px;background:#6c1e1c}
+.nativeAB11Lesson12Start .mModuleChip{position:absolute;left:836px;top:65px;width:65px;height:45px;background:#9e1608;color:#fff;font:32px/45px Georgia;text-align:center}
+.nativeAB11Lesson12Start .mTippTab{position:absolute;left:168px;top:787px;width:12px;height:59px;background:#b57b00;color:#3d2b00;writing-mode:vertical-rl;transform:rotate(180deg);font:700 8px/12px Arial;text-align:center}
+.nativeAB11Lesson12Start .mTippRule{position:absolute;left:167px;top:787px;width:182px;height:5px;background:#b57b00}
+.nativeAB11Lesson12Start .mModulFooter{position:absolute;left:758px;top:1222px;background:#f6ecd0;font:12px Georgia;color:#444;padding:1px 5px}
+.nativeAB11Lesson12Start[data-native-ab11-page] .mCanvas .mField{--mfield-height:19px;border:0!important;border-bottom:1px solid #9a9a9a!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}
+.nativeAB11Lesson12Start[data-native-ab11-page='89'] .mCanvas .mField.mOpen{border:0!important;line-height:22.8px!important;background:repeating-linear-gradient(#fff 0 21.8px,#9a9a9a 21.8px 22.8px)!important}
+.nativeAB11Lesson12Start .mCanvas .mL12Banner{position:absolute;left:370.6px;top:38.6px;width:464.2px;height:67.9px;background:#fde1b1}
+.nativeAB11Lesson12Start .mCanvas .mL12Bars{position:absolute;left:324.1px;top:42.4px;width:45.7px;height:66.4px;background:linear-gradient(90deg,#f95f00 0 20.3px,transparent 20.3px 25.4px,#fb9a2c 25.4px 45.7px)}
+.nativeAB11Lesson12Start .mCanvas .mText.mL12Name{font:30px Georgia;color:#171717;letter-spacing:.5px}
+.nativeAB11Lesson12Start .mCanvas .mNumber.mNum12{background:#f83800;border:0;width:25px;height:17px;font:700 15px/17px Georgia}
+.nativeAB11Lesson12Start .mCanvas .mTableHead90{position:absolute;left:173.7px;top:361.2px;width:677.9px;height:44.8px;background:linear-gradient(90deg,#e8e3cf 0 37.7px,#ddd6ba 37.7px 38.7px,#f8f1d4 38.7px 337.1px,#ddd6ba 337.1px 338.1px,#faf5d7 338.1px 528.9px,#ddd6ba 528.9px 529.9px,#f8eed3 529.9px 677.9px)}
+.nativeAB11Lesson12Start .mCanvas .mSideLbl{position:absolute;writing-mode:vertical-rl;transform:rotate(180deg);font:700 10px Arial;letter-spacing:1px;text-transform:uppercase;color:#304674}
+.nativeAB11Lesson12Start .mCanvas .mText.mKB{color:#3b9cc1;font:italic 11px Arial}
+.nativeAB11Lesson12Start .mCanvas .mText.mOptCode{color:#7a7452;font-size:15px}
+.nativeAB11Lesson12Start .mCanvas .mText.mScriptL{font-size:22px}
+.nativeAB11Lesson12Start .mCanvas .mText.mFooterL{font-size:12px}
+.nativeAB11Lesson12Start .mModulFooterL{position:absolute;left:48.7px;top:1224.6px;background:#f6ecd0;font:12px Georgia;color:#444;padding:1px 5px}
+.nativeAB11Lesson12Start .mCanvas .mCheck output{font:14px Arial;color:#31532c;background:white}
+.nativeAB11Lesson12Start .mCanvas .mListen{position:absolute;border:0;background:white;color:#197ca7;font:11px Arial;margin:0;padding:0;min-height:18px;z-index:5}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mField{--mfield-height:17px;border:0!important;border-bottom:1px solid #9a9a9a!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mField.mOpen{border:0!important;line-height:19px!important;background:repeating-linear-gradient(transparent 0 18px,#c9c9c9 18px 19px)!important}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mArt{object-fit:fill!important}
+.nativeAB11Lesson12Start .mCanvas .mText.mName{font:italic 15px 'Times New Roman',serif;color:#315e9f}
+.nativeAB11Lesson12Start .mCanvas .mText.mL12Name{font-size:33px}
+
+.nativeAB11Lesson12Start .mCanvas .mPlay{position:absolute;border:0;background:transparent;color:#197ca7;font:11px Arial;margin:0;padding:0;min-height:18px;z-index:5;white-space:nowrap}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mRadio{width:14.5px!important;height:14.5px!important}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mText:not(.mTitle):not(.mExample):not(.mOptCode):not(.mKB):not(.mL12Name):not(.mName):not(.mVocabHead):not(.mScriptL):not(.mFooterL):not(.mHeader):not(.mSans):not(.mInstr){font-size:17px}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mText.mTitle{font-size:15px}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mText.mKB{font-size:8px}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas [data-native-field='u1-f2'],.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas [data-native-field='u1-f3'],.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas [data-native-field='u1-f4']{border-bottom-color:transparent!important}
+
+/* ---------- page 90 typography (book fonts: Fira Sans + Droid Serif) ---------- */
+@font-face{font-family:Ab11Fira;src:url('/assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Ab11Fira;src:url('/assets/fonts/firasans-latin-500.ttf') format('truetype');font-weight:500;font-display:swap}
+@font-face{font-family:Ab11Fira;src:url('/assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:Ab11Droid;src:url('/assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:Ab11Droid;src:url('/assets/fonts/droid-serif-700.ttf') format('truetype');font-weight:700;font-display:swap}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas{font-family:Ab11Droid,'Droid Serif',Georgia,serif}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mText{font-family:Ab11Droid,'Droid Serif',Georgia,serif}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mText.mTitle{font-family:Ab11Fira,'Fira Sans',Arial,sans-serif;font-weight:700;font-size:13.5px}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mText.mVocabHead{font-family:Ab11Gentium,'Gentium Book Basic',Georgia,serif;font-weight:700}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mText.mSans{font-family:Ab11Fira,'Fira Sans',Arial,sans-serif;font-weight:400;font-size:13px}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mText.mOptCode{font-family:Ab11Fira,'Fira Sans',Arial,sans-serif;font-weight:400;font-size:13px;color:#4f4f4f}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mText.mFooterL{font-family:Ab11Fira,'Fira Sans',Arial,sans-serif;font-size:15px}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mModulFooterL{color:#fff;font-family:Ab11Fira,'Fira Sans',Arial,sans-serif;font-style:normal;font-weight:400}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mField[data-native-field='u2a-lw']{border-bottom:1px dashed #6b6b6b!important}
+
+/* ---------- page 90 v12 size/weight corrections ---------- */
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mText.mTitle{font-weight:500;font-size:18px}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mText.mInstr{font-family:Ab11Fira,'Fira Sans',Arial,sans-serif;font-weight:400;font-size:16px}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mText.mSans{font-size:16px}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mText.mOptCode{font-size:16px}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mText.mVocabHead{font-size:15px}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mText:not(.mTitle):not(.mExample):not(.mOptCode):not(.mKB):not(.mL12Name):not(.mName):not(.mVocabHead):not(.mScriptL):not(.mFooterL):not(.mHeader):not(.mSans):not(.mInstr){font-size:17px}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mField{border-bottom:1px dashed #939290!important}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mField[data-native-field^='u1-ms']{border-bottom:0!important}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mField[data-native-field^='u1b']{border-bottom:0!important;background:transparent!important}
+
+/* ---------- page 90 v13: banner face, dotted table grid, scan dash pitch, 2c solid rules ---------- */
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mText.mL12Name{font-family:Ab11Gentium,'Gentium Book Basic',Georgia,serif;font-weight:400;font-size:33.5px;letter-spacing:0;color:#3b2312}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mGridV90{position:absolute;width:0;border-left:1px dotted #c9c9bb}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mGridH90{position:absolute;height:0;border-top:1px dotted #cfcfc0}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mField{border-bottom:0!important;background-image:repeating-linear-gradient(90deg,#939290 0 13px,transparent 13px 18px)!important;background-size:100% 1px!important;background-position:0 100%!important;background-repeat:no-repeat!important}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mField[data-native-field^='u1-ms'],.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mField[data-native-field^='u1b'],.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mField[data-native-field^='u1-f']{background-image:none!important;border-bottom:0!important}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mField[data-native-field^='u2c-']{background-image:none!important;border-bottom:1px solid #9a9a9a!important}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mRadio{width:15px!important;height:15px!important}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mCanvas .mField[data-native-field='u2a-lw']{border-bottom:0!important;background-image:repeating-linear-gradient(90deg,#939290 0 14.5px,transparent 14.5px 19.6px)!important}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mGridH90{border-top:1px dotted #e4e4d6}
+.nativeAB11Lesson12Start[data-native-ab11-page='90'] .mGridV90{border-left:1px dotted #e4e4d6}
+
+@font-face{font-family:Ab11Gentium;src:url('/assets/fonts/gentium-book-basic-400.woff2') format('woff2');font-weight:400}
+@font-face{font-family:Ab11Gentium;src:url('/assets/fonts/gentium-book-basic-700.woff2') format('woff2');font-weight:700}
