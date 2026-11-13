@@ -760,25 +760,25 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {badge9('4',115,796)}
   {text(155,793,200,'Ordnen Sie zu.','naYT naNw')}
   <div className="naSide13" style={{left:86,top:838,height:102}}>KOMMUNIKATION</div>
-  <div className="naBand16" style={{left:156,top:836,width:667,height:47}}/>
-  {text(160,833,662,'sieht wirklich toll aus  |  sie sind hässlich  |  es ist sehr schön hier  |  mag ich gar nicht  |','naMail16 naNw')}
-  {text(160,858,280,'das ist langweilig  |  die Idee ist cool','naMail16 naNw')}
-  {text(153,897,15,'a','naMail16 naNw')}<div className="naSq16" style={{left:177,top:907}}/>{text(190,897,468,'Dein Balkon ist toll, die Blumen sind wirklich schön.','naMail16 naNw')}
-  {art('smile',180,922,22,22)}<div className="naTri16" style={{left:199,top:930}}/>{text(217,923,30,'Ja,','naMail16 naNw')}{field('16-4a',250,919,715,'Lücke 4a')}{text(968,923,10,'.','naMail16 naNw')}
+  <div className="naBand16" style={{left:154,top:835,width:674,height:49}}/>
+  {art('band1',158,837,656,27)}
+  {art('band2',158,863,282,24)}
+  {text(153,897,15,'a','naMail16 naNw')}<div className="naSq16" style={{left:177,top:906}}/>{text(190,897,468,'Dein Balkon ist toll, die Blumen sind wirklich schön.','naMail16 naNw')}
+  {art('smile',177,927,16,16)}<div className="naTri16" style={{left:199,top:933}}/>{text(217,923,30,'Ja,','naMail16 naNw')}{field('16-4a',250,919,715,'Lücke 4a')}{text(968,923,10,'.','naMail16 naNw')}
   {text(153,948,15,'b','naMail16 naNw')}<div className="naSq16" style={{left:177,top:958}}/>{text(190,948,536,'Ich liebe Davids Haus, es hat sieben Zimmer und zwei Bäder!','naMail16 naNw')}
-  {art('frown',180,975,22,22)}<div className="naTri16" style={{left:199,top:984}}/>{text(217,975,428,'Sein Haus ist nicht schlecht, aber seinen Garten','naMail16 naNw')}{field('16-4b',645,973,320,'Lücke 4b')}{text(968,975,10,'.','naMail16 naNw')}
-  {text(153,1000,15,'c','naMail16 naNw')}<div className="naSq16" style={{left:177,top:1010}}/>{text(190,1000,416,'Möchtest du einen Fußballplatz vor dem Haus?','naMail16 naNw')}
-  {art('smile',180,1028,22,22)}<div className="naTri16" style={{left:199,top:1037}}/>{text(217,1026,90,'Sehr gern,','naMail16 naNw')}{field('16-4c',312,1023,653,'Lücke 4c')}{text(968,1026,10,'.','naMail16 naNw')}
-  {text(153,1052,15,'d','naMail16 naNw')}{art('smile',180,1054,22,22)}<div className="naSq16" style={{left:199,top:1062}}/>{text(217,1052,155,'Katharinas Küche','naMail16 naNw')}{field('16-4d',378,1049,587,'Lücke 4d')}{text(968,1052,10,'.','naMail16 naNw')}
-  <div className="naTri16" style={{left:177,top:1087}}/>{text(196,1078,372,'Das ist richtig, die Küche ist sehr modern.','naMail16 naNw')}
-  {text(153,1104,15,'e','naMail16 naNw')}<div className="naSq16" style={{left:177,top:1114}}/>{text(190,1104,390,'Die Wohnung ist möbliert, das ist praktisch.','naMail16 naNw')}
-  {art('frown',180,1132,22,22)}<div className="naTri16" style={{left:199,top:1141}}/>{text(217,1130,375,'Leider sehen die Möbel nicht so schön aus,','naMail16 naNw')}{field('16-4e',596,1128,369,'Lücke 4e')}{text(968,1130,10,',','naMail16 naNw')}
-  {text(153,1155,15,'f','naMail16 naNw')}<div className="naSq16" style={{left:177,top:1165}}/>{text(190,1155,457,'Mein Traumhaus steht im Wald, ich liebe die Natur.','naMail16 naNw')}
-  {art('frown',180,1184,22,22)}<div className="naTri16" style={{left:199,top:1193}}/>{text(217,1182,105,'Nur Natur –','naMail16 naNw')}{field('16-4f',328,1178,627,'Lücke 4f')}{text(958,1182,10,'!','naMail16 naNw')}
+  {art('frown',176,978,17,17)}<div className="naTri16" style={{left:199,top:984}}/>{text(217,975,428,'Sein Haus ist nicht schlecht, aber seinen Garten','naMail16 naNw')}{field('16-4b',645,973,320,'Lücke 4b')}{text(968,975,10,'.','naMail16 naNw')}
+  {text(153,1000,15,'c','naMail16 naNw')}<div className="naSq16" style={{left:176,top:1009}}/>{text(190,1000,416,'Möchtest du einen Fußballplatz vor dem Haus?','naMail16 naNw')}
+  {art('smile',176,1030,16,16)}<div className="naTri16" style={{left:198,top:1036}}/>{text(217,1026,90,'Sehr gern,','naMail16 naNw')}{field('16-4c',312,1023,653,'Lücke 4c')}{text(968,1026,10,'.','naMail16 naNw')}
+  {text(153,1052,15,'d','naMail16 naNw')}{art('smile',176,1056,16,16)}<div className="naSq16" style={{left:198,top:1061}}/>{text(217,1052,155,'Katharinas Küche','naMail16 naNw')}{field('16-4d',378,1049,587,'Lücke 4d')}{text(968,1052,10,'.','naMail16 naNw')}
+  <div className="naTri16" style={{left:177,top:1088}}/>{text(196,1078,372,'Das ist richtig, die Küche ist sehr modern.','naMail16 naNw')}
+  {text(153,1104,15,'e','naMail16 naNw')}<div className="naSq16" style={{left:176,top:1113}}/>{text(190,1104,390,'Die Wohnung ist möbliert, das ist praktisch.','naMail16 naNw')}
+  {art('frown',176,1134,17,17)}<div className="naTri16" style={{left:198,top:1140}}/>{text(217,1130,375,'Leider sehen die Möbel nicht so schön aus,','naMail16 naNw')}{field('16-4e',596,1128,369,'Lücke 4e')}{text(968,1130,10,'.','naMail16 naNw')}
+  {text(153,1155,15,'f','naMail16 naNw')}<div className="naSq16" style={{left:176,top:1165}}/>{text(190,1155,457,'Mein Traumhaus steht im Wald, ich liebe die Natur.','naMail16 naNw')}
+  {art('frown',175,1186,17,17)}<div className="naTri16" style={{left:198,top:1191}}/>{text(217,1182,105,'Nur Natur –','naMail16 naNw')}{field('16-4f',328,1178,627,'Lücke 4f')}{text(958,1182,10,'!','naMail16 naNw')}
   {text(883,1233,92,'_ / 6 PUNKTE','naPkt10 naNw')}
   {art('punkte',228,1240,524,135)}
   <div className="naModul10" style={{left:0,top:1390,width:72,height:23,lineHeight:'23px',background:'#ded6b0',fontWeight:400}}>Modul 5</div>
-  <div className="naText naFooter naNw" style={{left:85,top:1394,width:220,whiteSpace:'pre'}}><b>{'16'}</b>{'  |  sechzehn'}</div>
+  <div className="naText naFooter naNw" style={{left:85,top:1394,width:220,whiteSpace:'pre'}}>{'16  |  sechzehn'}</div>
   {text(519,1385,225,'www.hueber.de/menschen/lernen','naWWW naNw')}
  </>}
  </div><audio ref={player} className="naPlayer"/></div>;
