@@ -669,11 +669,11 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {art('note1',149,466,452,185)}
   {art('sms',629,466,287,171)}
   {art('circ3',257,630,30,32)}
-  {text(276,654,702,'Lieber Stefan,','naChris15 naNw')}
-  {text(276,681,702,'ich habe den ultimativen Tipp für Dich! Die Nachbarn von meiner Schwester ziehen nach England','naChris15 naNw')}
-  {text(276,705,702,'und suchen dringend einen Nachmieter zum 1. April. Tolle 4-Zimmer-Wohnung mit Südbalkon.','naChris15 naNw')}
-  {text(276,729,702,'Die Wohnung kostet nur 700 € + Nebenkosten. Ruf meine Schwester am besten heute noch an.','naChris15 naNw')}
-  {text(276,750,200,'LG Chris','naChris15 naNw')}
+  {text(276,652,702,'Lieber Stefan,','naChris15 naNw')}
+  {text(276,679,702,'ich habe den ultimativen Tipp für Dich! Die Nachbarn von meiner Schwester ziehen nach England','naChris15 naNw')}
+  {text(276,703,702,'und suchen dringend einen Nachmieter zum 1. April. Tolle 4-Zimmer-Wohnung mit Südbalkon.','naChris15 naNw')}
+  {text(276,727,702,'Die Wohnung kostet nur 700 € + Nebenkosten. Ruf meine Schwester am besten heute noch an.','naChris15 naNw')}
+  {text(276,748,200,'LG Chris','naChris15 naNw')}
   <div className="naBand15" style={{left:164,top:806,width:844,height:31}}/>
   <div className="naLine15" style={{left:163,top:836,width:845,height:1}}/><div className="naLine15" style={{left:163,top:865,width:845,height:1}}/><div className="naLine15" style={{left:163,top:895,width:845,height:1}}/><div className="naLine15" style={{left:163,top:924,width:845,height:1}}/>
   <div className="naLine15" style={{left:163,top:806,width:1,height:119}}/><div className="naLine15" style={{left:355,top:806,width:1,height:119}}/><div className="naLine15" style={{left:601,top:806,width:1,height:119}}/><div className="naLine15" style={{left:796,top:806,width:1,height:119}}/><div className="naLine15" style={{left:1007,top:806,width:1,height:119}}/>
@@ -683,9 +683,9 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(131,946,16,'b','naLet15')}
   {text(163,947,450,'Welche Wohnung passt am besten? Kreuzen Sie an.','naInstrB15 naNw')}
   {text(163,986,95,'Wohnung','naMail15 naNw')}
-  {dot('15-2b','1',261,988,'Wohnung 1')}{text(285,986,14,'1','naMail15 naNw')}
-  {dot('15-2b','2',316,988,'Wohnung 2')}{text(342,986,14,'2','naMail15 naNw')}
-  {dot('15-2b','3',375,988,'Wohnung 3')}{text(400,986,14,'3','naMail15 naNw')}
+  {dot('15-2b','1',261,989,'Wohnung 1')}{text(285,986,14,'1','naMail15 naNw')}
+  {dot('15-2b','2',316,989,'Wohnung 2')}{text(342,986,14,'2','naMail15 naNw')}
+  {dot('15-2b','3',375,989,'Wohnung 3')}{text(400,986,14,'3','naMail15 naNw')}
   {check('15-2b',1010,986,{'15-2b':'3'})}
   {art('hdr-aus',118,1057,602,32)}
   {art('hdr-rule2',722,1079,253,6)}
