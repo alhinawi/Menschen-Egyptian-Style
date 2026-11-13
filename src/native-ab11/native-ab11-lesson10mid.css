@@ -1,6 +1,7 @@
 .nativeAB11Lesson10Mid .mCanvas .mText{font-size:16px}
 .nativeAB11Lesson10Mid .mCanvas .mText.mHeader{font:25px Georgia;letter-spacing:1px}
-.nativeAB11Lesson10Mid .mCanvas .mText.mTitle{font-size:14px}
+.nativeAB11Lesson10Mid .mCanvas .mText.mTitle{font-size:15.5px}
+.nativeAB11Lesson10Mid .mPhotoLet{position:absolute;width:17px;height:17px;border:1px solid #8a8570;border-radius:50%;background:rgba(255,255,255,.92);font:11px/17px Georgia;text-align:center;color:#333;z-index:3}
 .nativeAB11Lesson10Mid .mCanvas .mText.mSmall{font-size:14px}
 .nativeAB11Lesson10Mid .mCanvas .mText.mFooter{font-size:12px}
 .nativeAB11Lesson10Mid .mCanvas .mText.mScript2{font:italic 20px Georgia;color:#333}
