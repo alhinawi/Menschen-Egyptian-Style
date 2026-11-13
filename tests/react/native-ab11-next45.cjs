@@ -23,7 +23,7 @@ const server=spawn(process.execPath,['node_modules/vite/bin/vite.js','--host','1
  if(n===40){for(const i of [0,2])await h.locator(`[aria-label^="Buchstabenschlange ${i} "]`).click();await h.locator('[data-native-task="t1"] button').click();assert.equal(await h.locator('[data-native-task="t1"] output').textContent(),'Noch einmal');for(const i of [0,2])await h.locator(`[aria-label^="Buchstabenschlange ${i} "]`).click()}
  const state=await p.evaluate(n=>localStorage.getItem('native-ab11-'+n),n);await p.reload();await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');assert.equal(await p.evaluate(n=>localStorage.getItem('native-ab11-'+n),n),state);
  const saved=JSON.parse(state||'{}');for(const input of await h.locator('[data-native-field]').all()){const id=await input.getAttribute('data-native-field');assert.equal(await input.inputValue(),saved[id]||'')}
- if(n===38){assert((await h.locator('[aria-label="farbe-rot Farbe wählen"]').getAttribute('style')).includes('rgb(232, 61, 45)'));assert.equal(await h.locator('svg line').count(),4)}
+ if(n===38){assert((await h.locator('[aria-label="farbe-rot Farbe wählen"]').getAttribute('style')).includes('rgb(232, 61, 45)'));assert.equal(await h.locator('.sharedMatchLines path').count(),4)}
  if(n===39){assert(await h.locator('[name="native-ab11-39-k-anrede"]').first().isChecked());assert(await h.locator('[name="native-ab11-39-regel"]').nth(1).isChecked());assert.equal(await h.locator('.mStressSentence .stressed').count(),4)}
  if(n===40){assert.equal(await h.locator('.mSnake .marked').count(),4+'FEUERZEUGECKIGSEIFEKUNSTSTOFFORANGERUNDMETALL'.length);assert(await h.locator('[name="native-ab11-40-t2-e"]').nth(1).isChecked())}
 
