@@ -90,11 +90,36 @@ items.append({'k':'a','n':'bg','x':0,'y':0,'w':W,'h':H,'alt':'Seite 54 Hintergru
 DARK='#1d1d1b'
 # ---------- ex 1 ----------
 t(166,196,'Das war Herbert früher. Das ist er heute. Ordnen Sie zu.',c='naFiraM',col=DARK,target=552,path=FIRA)
-SBANK = round(best_size('hatte',FIRA400,45,lo=13,hi=24),1)   # 16.5
 BANKCOL = '#586385'   # scan core ink (88,99,133)
-for bx, bw, struck in [(170,'hatte',1),(227,'hat',1),(269,'hatten',0),(336,'war',0),(381,'hat',0),(422,'ist',0),
-                       (457,'hatte',0),(514,'hat',0),(555,'haben',0),(617,'waren',0),(682,'hatte',0)]:
-    t(bx, 236, bw, s=SBANK, c='naBank54', col=BANKCOL)
+import numpy as _np0
+from PIL import Image as _Img0, ImageFont as _IF0
+_SBANK = _np0.asarray(_Img0.open(f'{REPO}/assets/ab-a12-p54.png').convert('RGB')).astype(int)
+_fcb={}
+def bank_ink_at(text,s,path=FIRA400):
+    key=(path,round(s*2)/2)
+    if key not in _fcb: _fcb[key]=_IF0.truetype(path,int(round(key[1]*4)))
+    bb=_fcb[key].getbbox(text)
+    return (bb[2]-bb[0])/4/1.033, bb[0]/4/1.033
+BANKWINS=[('hatte',160,216),('hat',225,258),('hatten',266,326),('war',333,370),('hat',376,411),('ist',418,445),
+          ('hatte',453,503),('hat',511,544),('haben',551,607),('waren',614,670),('hatte',678,730)]
+bfits=[]
+for bw,wx0,wx1 in BANKWINS:
+    band=_SBANK[216:240,wx0:wx1].max(axis=2)
+    m=band<145
+    cols=_np0.where(m.any(axis=0))[0]
+    if len(cols)==0: continue
+    ix0,ix1=wx0+int(cols[0]),wx0+int(cols[-1])
+    tgt=ix1-ix0+1
+    best=None; s=16.0
+    while s<=20.5:
+        iw,_=bank_ink_at(bw,s)
+        if best is None or abs(iw-tgt)<abs(best[1]-tgt): best=(s,iw)
+        s+=0.5
+    bfits.append((bw,ix0,tgt,best[1]/best[0]))
+SBANK=round(sum(k*t for _,_,t,k in bfits)/sum(k*k for _,_,t,k in bfits),1)
+for bw,ix0,tgt,k in bfits:
+    iw,lb=bank_ink_at(bw,SBANK)
+    t(round(ix0-lb-1.5,1), 236, bw, s=SBANK, c='naBank54', col=BANKCOL)
 for sx,sw in ((169,40),(226,33)):   # pen strikes on 1st hatte + 2nd hat at scan extents (y228, ink 109,112,174)
     items.append({'k':'r','x':sx,'y':228,'w':sw,'h':1,'col':'#6d70ae'})
 for px_ in (220,261,329,373,414,448,506,546,610,673):   # 1px pipes, scan ink x + warm dark tone (112,109,80)
