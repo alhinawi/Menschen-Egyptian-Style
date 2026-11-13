@@ -1,12 +1,15 @@
 import {useEffect,useLayoutEffect,useRef} from 'react';
 import type {ButtonHTMLAttributes} from 'react';
 import './check-button.css';
-import {beginCheckFeedback,syncCheckStatus} from './check-feedback';
-export function CheckButton({className='',onClickCapture,...props}:ButtonHTMLAttributes<HTMLButtonElement>){
+import {beginCheckFeedback,syncCheckStatus,registerCheckAnswers} from './check-feedback';
+import {watchCheckPlacement} from './check-placement';
+export function CheckButton({className='',onClickCapture,answers,...props}:ButtonHTMLAttributes<HTMLButtonElement>&{answers?:Record<string,string>}){
  const ref=useRef<HTMLButtonElement>(null);
  const cancelFeedback=useRef<(() => void) | undefined>(undefined);
  useEffect(()=>()=>cancelFeedback.current?.(),[]);
+ useLayoutEffect(()=>{const el=ref.current;if(el)registerCheckAnswers(el,answers)});
  useLayoutEffect(()=>{const el=ref.current;if(el)return syncCheckStatus(el)});
+ useEffect(()=>{const el=ref.current;return el?watchCheckPlacement(el):undefined},[]);
  useEffect(()=>{const el=ref.current;if(!el)return;let frame=0;
   const update=()=>{const r=el.getBoundingClientRect();if(!r.width)return;const scale=r.width/el.offsetWidth,size=Math.max(40,r.width),page=el.closest('.page')||document.body;
    const obstacles=[...page.querySelectorAll('input,select,textarea,button')].filter(e=>e!==el&&!e.hasAttribute('hidden')&&getComputedStyle(e).visibility!=='hidden').map(e=>e.getBoundingClientRect()).filter(r=>r.width&&r.height);
