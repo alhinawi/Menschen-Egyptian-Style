@@ -33,7 +33,7 @@ export function ReaderAudioPlayers(){
   let host:HTMLElement|null=null;const marked=new Set<HTMLAudioElement>();
   const update=()=>{
    setActive(old=>old&&!old.isConnected?null:old);
-   document.querySelectorAll<HTMLElement>('button,output').forEach(el=>{el.toggleAttribute('data-reader-reset',/^Noch einmal$/i.test(el.textContent?.trim()||''))});
+   document.querySelectorAll<HTMLElement>('button').forEach(el=>{el.toggleAttribute('data-reader-reset',/^Noch einmal$/i.test(el.textContent?.trim()||''))});
    const viewport=document.querySelector('#viewport');if(viewport&&!host){host=document.createElement('div');host.className='readerAudioPanel';viewport.insertAdjacentElement('afterend',host);setSlot(host)}
    const jump=document.querySelector<HTMLSelectElement>('#pageJump');const page=jump?document.querySelectorAll('.page')[Number(jump.value)]:null;
    const canvas=page?.querySelector<HTMLElement>('.nkbCanvas');

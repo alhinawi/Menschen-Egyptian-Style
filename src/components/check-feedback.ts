@@ -72,6 +72,21 @@ function feedbackScope(button:HTMLButtonElement) {
  }
  return null;
 }
+export function syncCheckStatus(button:HTMLButtonElement): () => void {
+ const scope=feedbackScope(button);if(!scope)return () => {};
+ const update=()=>{
+  scope.querySelectorAll<HTMLElement>(feedbackSelector).forEach(output=>{
+   const text=output.textContent?.trim()||'';
+   const wrong=/noch\s*(?:ein\s*mal|einmal|nicht)|versuchen\s+sie|try again/i.test(text);
+   const correct=!wrong&&/(?:✓\s*)?richtig\s*!|all correct|alles richtig/i.test(text);
+   if(wrong||correct)output.dataset.checkResult=correct?'success':'error';
+   else delete output.dataset.checkResult;
+  });
+ };
+ update();const observer=new MutationObserver(update);
+ observer.observe(scope,{childList:true,subtree:true,characterData:true});
+ return()=>observer.disconnect();
+}
 export function beginCheckFeedback(button:HTMLButtonElement): () => void {
  // Called inside the click gesture, before the grading handler and React commit.
  readyAudio();
