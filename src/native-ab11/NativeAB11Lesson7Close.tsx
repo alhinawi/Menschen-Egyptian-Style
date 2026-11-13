@@ -25,7 +25,7 @@ export function NativeAB11Lesson7Close({page}:{page:string}){
  const answers=(group:string)=>Object.fromEntries(data.fields.filter(f=>f.group===group&&f.kind!=='radio'&&f.kind!=='checkbox'&&f.answer!==undefined).map(f=>[f.id,f.answer!]));
  const check=(id:string,x:number,y:number,expected=answers(id))=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:Object.entries(expected).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const rule=(id:string,x:number,y:number,test:()=>boolean)=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:test()})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
- const listen=(n:string,x:number,y:number)=><button className="mListen" aria-label={'Originalaudio 1 '+n} style={{left:x,top:Y(y)}} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+n+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
+ const listen=(n:string,x:number,y:number,t?:string)=><button className="mListen" data-task={t} aria-label={'Originalaudio 1 '+n} style={{left:x,top:Y(y)}} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+n+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
  const radio=(id:string,val:string,x:number,y:number,label:string)=><input className="mRadio" type="radio" data-value={val} data-native-radio={page==='57'&&id==='regel'?(val==='letztes-wort'?'r1':'r2'):undefined} name={'native-ab11-'+page+'-'+id} aria-label={label} style={{left:x,top:Y(y)}} checked={v[id]===val} onChange={()=>set(id,val)}/>;
  const score=(y:number,rows:string[][])=><div className="mScore" style={{left:440,top:Y(y)}}><b>Wörter</b><b>Strukturen</b><b>Kommunikation</b>{rows.map((row,r)=>row.map((s,c)=><div key={r+'-'+c}><i style={{background:['#d71910','#edcf00','#3b9e24'][r]}}/>{s} Punkte</div>))}</div>;
  const markSentence=(id:string,x:number,y:number,w:number,s:string)=><button className={'mQuestion '+(v[id]==='1'?'marked':'')} style={{left:x,top:Y(y),width:w}} aria-label={'Frage markieren '+s} onClick={()=>set(id,v[id]==='1'?'0':'1')}>{s}</button>;
@@ -43,13 +43,13 @@ export function NativeAB11Lesson7Close({page}:{page:string}){
  {txt(540,791,113,'Mein Name ist','mSmall')}{f('mail-name',657,789,72)}{txt(733,791,100,'und ich bin','mSmall')}{f('mail-alter',540,819,57)}{txt(602,821,170,'Jahre alt.','mSmall')}
  {['Ich komme','Ich spreche','In der Freizeit'].map((s,i)=><span key={s}>{txt(540,855+i*31,112,s,'mSmall')}{f('mail-'+i,657,853+i*31,175)}</span>)}{txt(540,950,300,'Ich freue mich auch sehr auf das Sommercamp!\nViele Grüße','mSmall')}{f('mail-gruss',540,1003,291)}
  {txt(132,1080,710,'TRAINING: AUSSPRACHE','mHeader')}{txt(555,1090,280,'Wandernder Satzakzent','mSmall')}
- {title('1',1137,'Hören Sie und sprechen Sie nach.','',132,355)}{listen('34',96,1137)}
+ {title('1',1137,'Hören Sie und sprechen Sie nach.','',132,355)}{listen('34',96,1137,'1')}
  <div className="mPrintedStress" style={{left:168,top:Y(1181)}}>{[['Spielen',''],['Schach',' spielen'],['Ich kann ','Schach',' spielen.'],['Ich kann ','gut',' Schach spielen.'],['Ich kann ','sehr',' gut Schach spielen.']].map((row,i)=><div key={i}>{row.map((s,j)=><span key={j} className={(row.length===2?j===0:j===1)?'marked':''}>{s}</span>)}</div>)}</div>
  <div className="mNumber" style={{left:132,top:Y(1330)}}>2</div>{txt(167,1330,335,'Lesen Sie noch einmal Übung 1 und\nkreuzen Sie an: Was ist richtig?','mTitle mTitle20')}
  {txt(168,1403,320,'Der Satzakzent ist','mRuleTitle')}{radio('regel','letztes-wort',168,1440,'immer auf dem letzten Wort')}{txt(194,1438,305,'immer auf dem letzten Wort, zum\nBeispiel: Ich kann gut singen.','mSmall')}{radio('regel','wichtige-info',168,1503,'auf der wichtigen Information')}{txt(194,1501,330,'auf der wichtigen Information: Ich\nkann gut Schach spielen. (Ich kann\nnicht gut Gitarre, Fußball … spielen.)','mSmall')}{check57('ta-2',168,1584)}
- {title('3',1137,'Hören Sie und markieren Sie den\nSatzakzent.','',532,332)}{listen('35',495,1137)}
+ {title('3',1137,'Hören Sie und markieren Sie den\nSatzakzent.','',532,332)}{listen('35',495,1137,'1')}
  {['a  ▪ Was machst du in der Freizeit? ↘','   ▴ Ich höre gern Musik. ↘','b  ▪ Hörst du gern Musik? ↗','   ▴ Oh ja. ↘ Ich liebe Musik. ↘','c  ▪ Singst du gern? ↗','   ▴ Oh ja. ↘ Singen macht Spaß! ↘','   ▪ Und kannst du auch singen? ↗','   ▴ Natürlich kann ich singen! ↘ Hör zu: ↘ …'].map((s,i)=>stress('akzent-'+i,565,[1206,1235,1276,1305,1346,1375,1404,1433][i],s))}
- {listen('36',510,1487)}{txt(575,1487,320,'Hören Sie noch einmal und sprechen Sie nach.','mSmall mStrong')}
+ {listen('36',510,1487,'1')}{txt(575,1487,320,'Hören Sie noch einmal und sprechen Sie nach.','mSmall mStrong')}
  </>}
  {page==='58'&&<>
  {head('TEST')}{title('1',211,'Ergänzen Sie die Hobbys.')}
