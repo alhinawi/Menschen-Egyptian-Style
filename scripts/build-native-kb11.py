@@ -185,7 +185,9 @@ def apply_overrides(r,p):
     f=f'{ROOT}/src/native-kb11/overrides/p{p}.json'
     if not os.path.exists(f):return
     o=json.load(open(f))
+    r['art'].extend(o.get('art',[]))
     r['fields']=list(r['fields'])+o.get('fields',[])
+    r['fields']=[x for x in r['fields'] if x['id'] not in o.get('dropfields',[])]
     r['checks'].update(o.get('checks',{}))
     def hit(b,m):
         return all(abs(b[k]-v)<=m.get('tol',3) for k,v in m.items() if k in('x','cy','w','f'))
