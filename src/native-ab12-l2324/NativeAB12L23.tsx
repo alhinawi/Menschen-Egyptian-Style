@@ -554,11 +554,11 @@ export function NativeAB12L23({page}:{page:string}){
   <div className="naText naFooter" style={{left:420,top:1045,width:310,textAlign:'right'}}>einundneunzig&nbsp;&nbsp;|&nbsp;&nbsp;91</div>
  </>}
  {page==='92'&&<>
-  <div className="naBasisL" style={{left:89,top:58}}>BASISTRAINING</div>
+  <div className="naBasisL" style={{left:88,top:59}}>BASISTRAINING</div>
   <div className="naRuleP" style={{left:274,top:82,width:454,background:'#e6742a'}}/>
   {kb(55,131,'KB 4')}
   <div className="naSide naSideB" style={{left:60,top:160}}>KOMMUNIKATION</div>
-  {title('8',86,119,640,'Notieren Sie die passenden Glückwünsche.','naRB naNw')}
+  {title('8',84,119,640,'Notieren Sie die passenden Glückwünsche.','naRB naNw')}
   {text(117,155,16,'a','naBookSerif')}{text(135,152,260,'Max wird morgen endlich 18 Jahre alt.','naBookSerif naEx4t naNw')}
   {rule(558,168,168)}{art('ex8a',555,148,137,24)}
   {text(117,173,16,'b','naBookSerif')}{text(135,171,385,'Sie treffen einen Bekannten am 2. Januar auf der Straße.','naBookSerif naEx4t naNw')}
@@ -571,9 +571,9 @@ export function NativeAB12L23({page}:{page:string}){
   {field('92-8e',558,225,168,'8 e Frohe Weihnachten')}
   {check('92-8',736,236,{'92-8b':'Frohes neues Jahr.|Frohes neues Jahr','92-8c':'Gut gemacht.|Gut gemacht','92-8d':'Alles Gute|Alles Gute.','92-8e':'Frohe Weihnachten.|Frohe Weihnachten'})}
   {kb(55,286,'KB 4')}
-  <div className="naText naTitle naRB" style={{left:84,top:275}}><b>9</b></div>
-  <div className="naText naTitle naRB naNw" style={{left:118,top:275,width:540}}><Words text="Schreiben Sie eigene Aufgaben wie in "/><span className="naBlue">8</span><Words text=" und tauschen Sie mit Ihrer"/></div>
-  <div className="naText naTitle naRB naNw" style={{left:118,top:293,width:300}}><Words text="Partnerin / Ihrem Partner."/></div>
+  <div className="naText naTitle naRB" style={{left:83,top:275}}><b>9</b></div>
+  <div className="naText naTitle naRB naNw" style={{left:103,top:275,width:540}}><Words text="Schreiben Sie eigene Aufgaben wie in "/><span className="naBlue">8</span><Words text=" und tauschen Sie mit Ihrer"/></div>
+  <div className="naText naTitle naRB naNw" style={{left:117,top:294,width:300}}><Words text="Partnerin / Ihrem Partner."/></div>
   <div className="naDotP92" style={{left:44,top:301,background:'#02acf2'}}/>
   <div className="naDotP92" style={{left:63,top:301,background:'#0088c1'}}/>
   {kb(55,354,'KB 5')}
@@ -583,11 +583,11 @@ export function NativeAB12L23({page}:{page:string}){
   <div id="ex10-left-b">{text(116,414,16,'b','naBookSerif')}{text(135,413,140,'Klaus hat kein Geld.','naBookSerif naEx4t naNw')}</div>
   <div id="ex10-left-c">{text(116,437,16,'c','naBookSerif')}{text(135,435,230,'Meine Tochter fährt gern Motorrad.','naBookSerif naEx4t naNw')}</div>
   <div id="ex10-left-d">{text(116,456,16,'d','naBookSerif')}{text(135,454,280,'Am Freitag spielt unsere Lieblingsband in','naBookSerif naEx4t naNw')}{text(134,473,250,'Berlin und es gibt keine Tickets mehr.','naBookSerif naEx4t naNw')}</div>
-  <div id="ex10-right-1">{text(485,368,220,'Ich würde ihr gern ein Motorrad','naBookSerif naEx4t naNw')}{text(493,388,70,'schenken.','naBookSerif naEx4t naNw')}</div>
-  <div id="ex10-right-2">{text(485,405,95,'Wie schade!','naBookSerif naEx4t naNw')}</div>
-  <div id="ex10-right-3">{text(568,405,160,'Wir würden gern zum','naBookSerif naEx4t naNw')}{text(493,423,100,'Konzert gehen.','naBookSerif naEx4t naNw')}</div>
-  <div id="ex10-right-4">{text(485,446,215,'Aber er würde gern den Führer-','naBookSerif naEx4t naNw')}{text(493,466,110,'schein machen.','naBookSerif naEx4t naNw')}</div>
-  <div id="ex10-right-5">{text(485,486,225,'Sie würden gern eine CD machen.','naBookSerif naEx4t naNw')}</div>
+  <div id="ex10-right-1">{text(485,366,220,'Ich würde ihr gern ein Motorrad','naBookSerif naEx10r naNw')}{text(493,385,70,'schenken.','naBookSerif naEx10r naNw')}</div>
+  <div id="ex10-right-2">{text(485,405,95,'Wie schade!','naBookSerif naEx10r naNw')}</div>
+  <div id="ex10-right-3">{text(567,405,160,'Wir würden gern zum','naBookSerif naEx10r naNw')}{text(493,424,100,'Konzert gehen.','naBookSerif naEx10r naNw')}</div>
+  <div id="ex10-right-4">{text(485,444,215,'Aber er würde gern den Führer-','naBookSerif naEx10r naNw')}{text(493,463,110,'schein machen.','naBookSerif naEx10r naNw')}</div>
+  <div id="ex10-right-5">{text(485,483,225,'Sie würden gern eine CD machen.','naBookSerif naEx10r naNw')}</div>
   {kb(55,530,'KB 5')}
   <div className="naSide naSideB" style={{left:48,top:560}}>STRUKTUREN</div>
   <div className="naSide naSideB" style={{left:62,top:560}}>ENTDECKEN</div>
@@ -619,10 +619,10 @@ export function NativeAB12L23({page}:{page:string}){
   {art('picb',281,884,118,76)}
   {art('picc',585,769,128,87)}
   {art('picd',588,876,127,84)}
-  {text(114,756,16,'a','naLet92')}{rule(113,787,130)}{rule(113,807,82)}{art('ex12a',112,758,161,54)}
-  {text(114,858,16,'b','naLet92')}{rule(113,885,130)}{rule(113,905,130)}
-  {text(441,759,16,'c','naLet92')}{rule(440,790,130)}{rule(440,810,130)}
-  {text(440,858,16,'d','naLet92')}{rule(439,887,130)}{rule(439,907,130)}
+  {text(114,755,16,'a','naLet92')}{rule(113,787,130)}{rule(113,807,82)}{art('ex12a',112,758,161,54)}
+  {text(114,854,16,'b','naLet92')}{rule(113,885,130)}{rule(113,905,130)}
+  {text(439,755,16,'c','naLet92')}{rule(440,790,130)}{rule(440,810,130)}
+  {text(438,854,16,'d','naLet92')}{rule(439,887,130)}{rule(439,907,130)}
   {art('modul8-tab',0,1044,52,20)}
   {text(62,1049,140,'92  |  zweiundneunzig','naFooter')}
  </>}
