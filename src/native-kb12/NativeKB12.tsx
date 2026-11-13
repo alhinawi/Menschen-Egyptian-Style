@@ -424,7 +424,7 @@ export function NativeKB12({page}:{page:string}){
  {text(161,1117,220,'c  Fabian sagt: „Ich')}{field('5-c',383,1115,145,'wollen: ich')}{text(540,1117,310,'Liedermacher werden.“')}
  {text(161,1154,190,'d  Und Sie? Was')}{field('5-d',360,1152,145,'wollen: Sie')}{text(518,1154,240,'Sie werden?')}{check('5',161,1195,{'5-a':'wollen','5-b':'will','5-c':'will','5-d':'wollen'})}
  {text(826,1041,180,'wollen\nich       will\ndu        willst\ner/sie   will\nwir       wollen\nihr        wollt\nsie/Sie wollen','nkInfo nkSmall')}{text(178,1225,225,'werden\nich       werde\ndu        wirst\ner/sie   wird','nkInfo nkConjugation')}{text(783,1239,235,'Ich will Liedermacher werden.','nkInfo nkSmall')}
- {title('6',115,1305,930,'Was wollen Sie in Ihrem Leben noch/nicht machen? Erzählen Sie im Kurs.')}{text(128,1345,890,'a  Notieren Sie. Hilfe finden Sie auch im Bildlexikon.','nkBold')}
+ {title('6',115,1305,930,'Was wollen Sie in Ihrem Leben noch/nicht machen? Erzählen Sie im Kurs.')}{text(128,1345,890,'a  Notieren Sie. Hilfe finden Sie auch im Bildlexikon.','nkBold')}{save('6a',652,1347)}
  {['Das will ich unbedingt (noch) machen:','Das will ich vielleicht (noch) machen:','Das will ich auf keinen Fall (noch) machen:'].map((t,i)=><div key={t}>{text(161,1381+i*25,530,t,'nkSmall')}{field(['6-unbedingt','6-vielleicht','6-nie'][i],700,1379+i*25,325,t)}</div>)}
  {text(128,1464,920,'b  Über Wünsche und Pläne sprechen: Arbeiten Sie auf Seite 82.','nkBold nkSmall')}
 
