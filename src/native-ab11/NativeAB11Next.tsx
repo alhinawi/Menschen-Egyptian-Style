@@ -92,7 +92,7 @@ export function NativeAB11Next({page}:{page:string}){
  {page==='14'&&<>
  {head('BASISTRAINING')}
  {title('10',238,'Markieren Sie und notieren Sie die Zahlen.','KB 4','Wörter')}
- <div className="nabNumberSnake" style={{left:202,top:282,width:780}}>{['neunzehn','fünfundachtzig','zwanzig','sechsunddreißig','acht','drei','siebenundsiebzig','sechzehn','neun','dreiundzwanzig'].map((s,i)=><button key={s} className={i===0||v['number-'+i]?'marked':''} onClick={()=>set('number-'+i,v['number-'+i]?'':'true')} aria-label={'10 Zahl markieren '+s}>{s}{i===5?<br/>:null}</button>)}</div>
+ <div className="nabNumberSnake" style={{left:202,top:282,width:780}}>{['neunzehn','fünfundachtzig','zwanzig','sechsunddreißig','acht','drei','siebenundsiebzig','sechzehn','neun','dreiundzwanzig'].map((s,i)=><span key={s}><button className={i===0||v['number-'+i]?'marked':''} onClick={()=>set('number-'+i,v['number-'+i]?'':'true')} aria-label={'10 Zahl markieren '+s}>{s}</button>{i===5?<br/>:null}</span>)}</div>
  {text(202,340,50,'19,','nabExample')}{field('u10-zahlen',252,337,600,'10 Zahlen notieren')}{checkGroup('u10',202,381)}
  {title('11',422,'Wie ist die Telefonnummer? Hören Sie und kreuzen Sie an.','KB 4','Wörter')}{listen('08',112,460)}
  {['030 / 52 79 91 36','0171 / 85 67 03 25','06391 / 32 44 67','08233 / 25 38 57'].map((s,i)=><div key={s}>{text(202,470+i*31,24,String.fromCharCode(97+i))}{choice('u11-'+i,'l',231,466+i*31,'11'+String.fromCharCode(97+i)+' links')}{text(266,470+i*31,210,s)}{choice('u11-'+i,'r',495,466+i*31,'11'+String.fromCharCode(97+i)+' rechts')}{text(530,470+i*31,250,['030 / 52 79 91 63','0171 / 58 67 02 25','06391 / 32 44 57','08233 / 52 36 59'][i])}</div>)}
