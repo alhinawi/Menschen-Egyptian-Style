@@ -1098,9 +1098,115 @@
    "h": 18
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "ex1-a-claudia",
+   "group": "gx",
+   "kind": "checkbox",
+   "label": "a: Ich finde deinen Blog sehr gut. - Claudia",
+   "x": 674,
+   "y": 917,
+   "w": 18,
+   "h": 18
+  },
+  {
+   "id": "ex1-a-teddybär",
+   "group": "gx",
+   "kind": "checkbox",
+   "label": "a: Ich finde deinen Blog sehr gut. - Teddybär",
+   "x": 789,
+   "y": 917,
+   "w": 18,
+   "h": 18
+  },
+  {
+   "id": "ex1-b-claudia",
+   "group": "gx",
+   "kind": "checkbox",
+   "label": "b: Ich kenne München. - Claudia",
+   "x": 674,
+   "y": 942,
+   "w": 18,
+   "h": 18
+  },
+  {
+   "id": "ex1-b-teddybär",
+   "group": "gx",
+   "kind": "checkbox",
+   "label": "b: Ich kenne München. - Teddybär",
+   "x": 789,
+   "y": 942,
+   "w": 18,
+   "h": 18
+  },
+  {
+   "id": "ex1-c-claudia",
+   "group": "gx",
+   "kind": "checkbox",
+   "label": "c: Ich finde die Maxvorstadt und das Lehel super. - Claudia",
+   "x": 674,
+   "y": 969,
+   "w": 18,
+   "h": 18
+  },
+  {
+   "id": "ex1-c-teddybär",
+   "group": "gx",
+   "kind": "checkbox",
+   "label": "c: Ich finde die Maxvorstadt und das Lehel super. - Teddybär",
+   "x": 789,
+   "y": 969,
+   "w": 18,
+   "h": 18
+  },
+  {
+   "id": "ex1-d-claudia",
+   "group": "gx",
+   "kind": "checkbox",
+   "label": "d: Ich suche bald eine Wohnung in München. - Claudia",
+   "x": 674,
+   "y": 995,
+   "w": 18,
+   "h": 18
+  },
+  {
+   "id": "ex1-d-teddybär",
+   "group": "gx",
+   "kind": "checkbox",
+   "label": "d: Ich suche bald eine Wohnung in München. - Teddybär",
+   "x": 789,
+   "y": 995,
+   "w": 18,
+   "h": 18
+  },
+  {
+   "id": "ex1-e-claudia",
+   "group": "gx",
+   "kind": "checkbox",
+   "label": "e: Ich möchte vielleicht in Giesing wohnen. - Claudia",
+   "x": 674,
+   "y": 1021,
+   "w": 18,
+   "h": 18
+  },
+  {
+   "id": "ex1-e-teddybär",
+   "group": "gx",
+   "kind": "checkbox",
+   "label": "e: Ich möchte vielleicht in Giesing wohnen. - Teddybär",
+   "x": 789,
+   "y": 1021,
+   "w": 18,
+   "h": 18
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "gx",
+   "label": "Aufgabe 1"
+  }
+ ],
  "review": {
   "status": "partial",
   "verifiedWords": 156,
