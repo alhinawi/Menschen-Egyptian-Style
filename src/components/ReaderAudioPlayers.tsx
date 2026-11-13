@@ -16,7 +16,15 @@ function Player({audio}:{audio:HTMLAudioElement}){
 }
 export function ReaderAudioPlayers(){
  const [active,setActive]=useState<HTMLAudioElement|null>(null);
- useEffect(()=>{const show=(event:Event)=>{if(event.target instanceof HTMLAudioElement)setActive(event.target)};document.addEventListener('play',show,true);return()=>document.removeEventListener('play',show,true)},[]);
+ useEffect(()=>{
+  const show=(event:Event)=>{if(event.target instanceof HTMLAudioElement)setActive(event.target)};
+  // Calling play() on a track already playing does not fire another play event.
+  // Observe the playback request as well, so a hidden player can be reopened.
+  const original=HTMLMediaElement.prototype.play;
+  const play=function(this:HTMLMediaElement){if(this instanceof HTMLAudioElement)setActive(this);return original.call(this)};
+  HTMLMediaElement.prototype.play=play;document.addEventListener('play',show,true);
+  return()=>{document.removeEventListener('play',show,true);if(HTMLMediaElement.prototype.play===play)HTMLMediaElement.prototype.play=original};
+ },[]);
  useEffect(()=>{if(!active)return;const panel=document.querySelector('.readerActiveAudio');const sync=()=>{const h=panel?.getBoundingClientRect().height||108;document.documentElement.style.setProperty('--active-audio-height',`${h}px`);document.body.classList.add('hasActiveAudio')};const observer=new ResizeObserver(sync);if(panel)observer.observe(panel);sync();return()=>{observer.disconnect();document.body.classList.remove('hasActiveAudio')}},[active]);
  const [slot,setSlot]=useState<HTMLElement|null>(null),[audios,setAudios]=useState<HTMLAudioElement[]>([]);
  useEffect(()=>{
