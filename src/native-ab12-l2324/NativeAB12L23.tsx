@@ -1,8 +1,9 @@
 import {useNativeCanvas,Canvas,Words} from './shared';
+import {LineMatching} from '../exercises/LineMatching';
 
 export function NativeAB12L23({page}:{page:string}){
  const c=useNativeCanvas(page);
- const {text,art,field,rule,dot,check,title,kb,hand,audio}=c;
+ const {text,art,field,rule,dot,check,title,kb,hand,audio}=c;const set=c.set;
  return <Canvas page={page} root={c.root} player={c.player} scale={c.scale}>
  {page==='84'&&<>
   {art('hero',8,30,742,60)}
@@ -188,9 +189,9 @@ export function NativeAB12L23({page}:{page:string}){
   <div className="naTblCell naTblCellS" style={{left:351,top:496}}>Position 2</div>
   {text(140,520,30,'…')}
   {art('ex10ex',170,518,540,38)}
-  {field('86-10-r1c0',172,537,83,'10 Zeile 1 Position 0')}{field('86-10-r1c1',260,537,85,'10 Zeile 1 Position 1')}{field('86-10-r1c2',350,537,83,'10 Zeile 1 Position 2')}{field('86-10-r1c3',438,537,297,'10 Zeile 1 Rest')}
-  {field('86-10-r2c0',172,558,83,'10 Zeile 2 Position 0')}{field('86-10-r2c1',260,558,85,'10 Zeile 2 Position 1')}{field('86-10-r2c2',350,558,83,'10 Zeile 2 Position 2')}{field('86-10-r2c3',438,558,297,'10 Zeile 2 Rest')}
-  {field('86-10-r3c0',172,579,83,'10 Zeile 3 Position 0')}{field('86-10-r3c1',260,579,85,'10 Zeile 3 Position 1')}{field('86-10-r3c2',350,579,83,'10 Zeile 3 Position 2')}{field('86-10-r3c3',438,579,297,'10 Zeile 3 Rest')}
+  {field('86-10-r1c0',172,537,83,'10 Zeile 1 Position 0','naFieldNL')}{field('86-10-r1c1',260,537,85,'10 Zeile 1 Position 1','naFieldNL')}{field('86-10-r1c2',350,537,83,'10 Zeile 1 Position 2','naFieldNL')}{field('86-10-r1c3',438,537,297,'10 Zeile 1 Rest','naFieldNL')}
+  {field('86-10-r2c0',172,558,83,'10 Zeile 2 Position 0','naFieldNL')}{field('86-10-r2c1',260,558,85,'10 Zeile 2 Position 1','naFieldNL')}{field('86-10-r2c2',350,558,83,'10 Zeile 2 Position 2','naFieldNL')}{field('86-10-r2c3',438,558,297,'10 Zeile 2 Rest','naFieldNL')}
+  {field('86-10-r3c0',172,579,83,'10 Zeile 3 Position 0','naFieldNL')}{field('86-10-r3c1',260,579,85,'10 Zeile 3 Position 1','naFieldNL')}{field('86-10-r3c2',350,579,83,'10 Zeile 3 Position 2','naFieldNL')}{field('86-10-r3c3',438,579,297,'10 Zeile 3 Rest','naFieldNL')}
   {check('86-10',620,608,{'86-10-r1c0':'denn','86-10-r1c1':'es','86-10-r1c2':'schneit','86-10-r1c3':'zu viel','86-10-r2c0':'denn','86-10-r2c1':'er','86-10-r2c2':'hat','86-10-r2c3':'gestern lange gefeiert','86-10-r3c0':'denn','86-10-r3c1':'ihr Fahrrad','86-10-r3c2':'ist','86-10-r3c3':'kaputt'})}
   {kb(59,640,'KB 5')}
   {title('11',88,630,640,'Schreiben Sie die Sätze mit denn.','naRB naNw')}
@@ -204,6 +205,16 @@ export function NativeAB12L23({page}:{page:string}){
   {text(121,775,16,'d','naNw')}{text(139,775,560,'Mit dem Urlaub hatten wir wirklich Glück. Das Wetter war ein Traum.','naNw')}
   {field('86-11-d',130,790,598,'11 d')}{text(729,793,10,'.')}
   {check('86-11',620,816,{'86-11-c':'Ella kommt heute nicht in die Disco, denn sie hat morgen eine Prüfung|Ella kommt heute nicht mit in die Disco, denn sie hat morgen eine Prüfung','86-11-d':'Mit dem Urlaub hatten wir wirklich Glück, denn das Wetter war ein Traum'})}
+  {kb(59,838,'KB 5')}
+  {title('12',88,830,640,'Verbinden Sie.','naRB naNw')}
+  <div className="naSide naSideB naSideC" style={{left:60,top:872}}>STRUKTUREN</div>
+  {text(121,858,16,'a','naNw')}{text(121,878,16,'b','naNw')}{text(121,899,16,'c','naNw')}{text(121,919,16,'d','naNw')}
+  {text(470,858,260,'die Spülmaschine funktioniert nicht.','naNw')}
+  {text(470,878,260,'am liebsten bin ich in den Bergen.','naNw')}
+  {text(470,899,260,'findest du den Rock schöner?','naNw')}
+  {text(470,919,260,'Baden ist auch verboten.','naNw')}
+  <LineMatching id="86-12" left={['Soll ich das Kleid nehmen','Am See darf man nicht grillen','Ich mache gern Urlaub am Meer,','Der Techniker muss kommen,']} right={['denn','aber','oder','und']} values={c.values} onMatch={set} leftX={139} rightX={350} leftWidth={220} rightWidth={75} ys={[858,878,899,919]} width={807} height={1094} fontSize={15} example={[0,2]} multiple={true}/>
+  {check('86-12',620,950,{'86-12-0':'2|','86-12-1':'3','86-12-2':'1','86-12-3':'0'})}
   {art('modul-tab',8,1049,60,16)}
   {text(76,1050,200,'86  |  sechsundachtzig','naFooter')}
  </>}
