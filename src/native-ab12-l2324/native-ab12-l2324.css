@@ -286,3 +286,21 @@
 [data-native-ab12="99"] .naCanvas .naText.naBadge99{font-family:FiraSansCond,FiraSans,sans-serif;font-weight:400;font-size:10px;color:#fff;background:#e0d8b4;line-height:14px;text-align:center;letter-spacing:0.3px}
 [data-native-ab12="99"] .naCanvas .naText.naFoot99{font-family:DroidSerif,Georgia,serif;font-size:13.5px;color:#36393b;text-align:right}
 [data-native-ab12="99"] .naCanvas .naText.naFoot99 span[role=button]{padding:0}
+[data-native-ab12="100"] .naCanvas .naText.naHead100{font-family:DroidSerif,Georgia,serif;font-weight:400;color:#2a2a2b}
+[data-native-ab12="100"] .naCanvas .naText.naWahl100{font-family:FiraSans,sans-serif;font-weight:700;font-size:17.6px;color:#1f2587}
+[data-native-ab12="100"] .naCanvas .naText.naLsn100{font-family:FiraSans,sans-serif;font-weight:700;font-size:12px;color:#fff;background:#a10401;line-height:13.5px;text-align:center}
+[data-native-ab12="100"] .naCanvas .naRuleR100{position:absolute;height:2px;background:#de725e}
+[data-native-ab12="100"] .naCanvas .naText.naNum100{font-family:FiraSans,sans-serif;font-weight:700;font-size:12.5px;color:#fff;background:#8d0502;line-height:15px;text-align:center}
+[data-native-ab12="100"] .naCanvas .naText.naAufg100{font-family:FiraSans,sans-serif;font-weight:700;color:#1e2214}
+[data-native-ab12="100"] .naCanvas .naText.naAufg100 span[role=button]{padding:0}
+[data-native-ab12="100"] .naCanvas .naText.naTabH100{font-family:DroidSerifB,DroidSerif,Georgia,serif;font-weight:700;color:#3f3b35}
+[data-native-ab12="100"] .naCanvas .naText.naQ100{font-family:DroidSerif,Georgia,serif;font-weight:400;color:#43454a}
+[data-native-ab12="100"] .naCanvas .naText.naQ100 span[role=button]{padding:0}
+[data-native-ab12="100"] .naCanvas .naTabF100{position:absolute;background:#efe9d0}
+[data-native-ab12="100"] .naCanvas .naPipeSvg100{position:absolute;left:0;top:0;width:807px;height:1094px;pointer-events:none;fill:#e6e6e0}
+[data-native-ab12="100"] .naCanvas .naDash100{position:absolute;width:7px;height:1.5px;background:#43454a}
+[data-native-ab12="100"] .naCanvas .naText.naBadge100{font-family:FiraSansCond,FiraSans,sans-serif;font-weight:400;font-size:10px;color:#fff;background:#c9bda2;line-height:13px;text-align:center;letter-spacing:0.3px}
+[data-native-ab12="100"] .naCanvas .naText.naFoot100{font-family:DroidSerif,Georgia,serif;font-size:13.5px;color:#36393b}
+[data-native-ab12="100"] .naCanvas .naText.naHead100 span[role=button],[data-native-ab12="100"] .naCanvas .naText.naWahl100 span[role=button],[data-native-ab12="100"] .naCanvas .naText.naFoot100 span[role=button]{padding:0}
+
+@font-face{font-family:DroidSerifB;src:url('/assets/fonts/droid-serif-700.woff2') format('woff2');font-weight:700;font-display:swap}
