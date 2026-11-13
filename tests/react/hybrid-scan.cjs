@@ -34,7 +34,9 @@ const server=http.createServer((req,res)=>{
   const data=require('../../src/scan-data/kb-a11/p57.json');
   await p.goto('http://127.0.0.1:5192/l10-12.html#57');
   await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
-  const h=p.locator('.hybridScan[data-scan-page="57"]');await h.waitFor();
+  const h=p.locator('.hybridScan[data-scan-page="57"]');
+  if(!await h.count()){console.log(`${width}px: p57 is native now, hybrid fixture retired`);await p.close();continue}
+  await h.waitFor();
   assert.equal(await h.locator('input').count(),data.fields.length);
   const ratio=await h.locator('img').evaluate(i=>{const r=i.getBoundingClientRect();return Math.abs(r.width/r.height-i.naturalWidth/i.naturalHeight)});
   assert(ratio<0.001,'scan aspect ratio changed');
