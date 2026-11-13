@@ -49,10 +49,10 @@ def erase_line(y0,y1,x0,x1):
     R.append((x0,y0,x1,y1+6))
 
 flds = {f['id']:f for f in scan['fields']}
-def field(fid, y0, y1, x_override=None, sl=False):
+def field(fid, y0, y1, x_override=None, sl=False, w_override=None):
     f = flds[fid]
     x = x_override if x_override is not None else f['x']
-    it = {'k':'f','id':fid,'x':x,'y':f['y']+18,'w':f['w']+4,
+    it = {'k':'f','id':fid,'x':x,'y':f['y']+18,'w':(w_override if w_override is not None else f['w']+4),
                   'l':fid.replace('p58-','').replace('b',' b').replace('c',' c').replace('d',' d').replace('e',' e').replace('f',' f').replace('g',' g').replace('a',' a'),
                   'a':f['answer'],'g':f['group']}
     if sl: it['c']='sl'
@@ -80,9 +80,13 @@ def segs(y0,y1,x0,x1,parts,keep=None):
                 print(f'WARN band {y0}: part {p[1]!r} matched {acc!r}')
             if x0w is not None:
                 tw = (x1w-x0w)*0.985
+                if len(p) > 2 and isinstance(p[2], (int, float)):
+                    tw += p[2]
                 if pi+1 < len(parts) and parts[pi+1][0] == 'h' and len(parts[pi+1][1]) <= 2:
                     tw -= 6
-                if '(' in p[1] and len(key(p[1])) <= 5:
+                if len(p) > 2 and p[2] == 'sz':
+                    t(x0w, bl, p[1], s=p[3])
+                elif '(' in p[1] and len(key(p[1])) <= 5:
                     t(x0w, bl, p[1], s=18.5)
                 else:
                     t(x0w, bl, p[1], target=tw)
@@ -94,7 +98,8 @@ def segs(y0,y1,x0,x1,parts,keep=None):
             else:
                 print(f'WARN h-window empty: {p}')
         elif p[0]=='f':
-            field(p[1], y0, y1, sl=(len(p)>2 and p[2]=='sl'))
+            field(p[1], y0, y1, sl=(len(p)>2 and p[2]=='sl'),
+                  w_override=(p[3] if len(p)>3 else None))
             fbox = flds[p[1]]
             while wi < len(ws) and ws[wi]['x']+ws[wi]['w']/2 < fbox['x']+fbox['w']+2:
                 wi += 1
@@ -134,9 +139,9 @@ segs(228,250,180,945,[('t','Sie steht am Eingang. Sie ist'),('h','s',436,450),('
                       ('t','(a)'),('t','und'),('h','hat',597,632),
                       ('f','p58-1b','sl'),('t','(b) braune'),('f','p58-1c','sl'),('t','(c).')],
                      keep=[(630,722),(820,909)])
-segs(252,278,180,478,[('t','Sie ist wirklich'),('f','p58-1d','sl'),('t','(d) .')],keep=[(306,430)])
+segs(252,278,180,478,[('t','Sie ist wirklich',-4),('f','p58-1d','sl'),('t','(d) .')],keep=[(306,430)])
 segs(280,304,180,500,[('t','Ja, das finde ich auch.')])
-segs(306,330,180,900,[('t','Und wer ist der Mann neben ihr mit dem'),('f','p58-1e','sl'),('t','(e)?')],keep=[(551,624)])
+segs(306,330,180,900,[('t','Und wer ist der Mann neben ihr mit dem','sz',17.8),('f','p58-1e','sl'),('t','(e)?')],keep=[(551,624)])
 segs(332,356,180,855,[('t','Hat er dunkle'),('f','p58-1f','sl'),('t','(f)? Dann ist es Louis.')],keep=[(306,416)])
 
 # ---------- ex2 (letters x~162 native; square/triangle markers ~184-196 stay) ----------
@@ -161,7 +166,7 @@ segs(562,588,198,950,[('t','Wo'),('f','p58-2d1'),('h','ihr gestern',368,470),('t
 # ---------- ex3 (bank stays in bg; script example = printed, kept as art) ----------
 segs(710,734,180,540,[('t','Wie hat dir Melanies Party'),('art','gefallen'),('t','(a)?')])
 segs(734,758,180,820,[('t','Gut. Leider bin ich zu spät'),('f','p58-3b'),('t','(b) und ich habe ihr')])
-segs(760,784,180,620,[('t','Geburtstagsgeschenk'),('f','p58-3c'),('t','(c).')])
+segs(760,784,180,620,[('t','Geburtstagsgeschenk'),('f','p58-3c',None,175),('t','(c).')])
 segs(784,808,180,540,[('t','Was hat sie'),('f','p58-3d'),('t','(d)?')])
 segs(810,834,180,760,[('t','Natürlich nichts. Aber ich habe mich'),('f','p58-3e'),('t','(e).')])
 segs(836,862,180,900,[('t','Wir haben dann viel zusammen'),('f','p58-3f'),('t','(f). Die Musik war super.')])
@@ -169,12 +174,12 @@ segs(862,886,180,855,[('t','Stimmt! Hast du den Sänger'),('f','p58-3g'),('t','(
 
 # ---------- ex4 (hint letters inside blanks get erased with underscores) ----------
 segs(963,989,175,915,[('t','Richie?'),('f','p58-4a','sl'),('t','(a) Das war doch nicht Richie. Richie hat lange Haare und')],keep=[(246,368)])
-segs(991,1015,175,320,[('t','einen Bart.')],keep=[(246,368)])
+segs(991,1015,175,320,[('t','einen Bart.')])
 segs(1017,1041,175,780,[('t','Das war früher. Jetzt hat er kurze Haare und keinen Bart mehr.')])
 segs(1042,1066,175,320,[('f','p58-4b','sl'),('t','? (b)')],keep=[(168,252)])
-segs(1067,1092,175,640,[('t','Und – das glaubst du nicht – er ist verheiratet.')],keep=[(183,252)])
+segs(1067,1092,175,640,[('t','Und – das glaubst du nicht – er ist verheiratet.')])
 segs(1094,1120,175,380,[('f','p58-4c','sl'),('t','(c)')],keep=[(178,322)])
-segs(1120,1144,175,430,[('t','Und er hat fünf Kinder.')],keep=[(178,322)])
+segs(1120,1144,175,430,[('t','Und er hat fünf Kinder.')])
 segs(1146,1170,175,870,[('f','p58-4d','sl'),('t','(d) – Wann kommt denn der Bus? Es ist schon halb eins.')],keep=[(178,328)])
 segs(1173,1198,175,855,[('f','p58-4e','sl'),('t','! (e) Der Bus fährt nur bis 24 Uhr.')],keep=[(178,450)])
 
@@ -202,6 +207,16 @@ R.append((420,708,486,746))
 
 # ---------- bg + spec ----------
 bgp=f'{REPO}/assets/book-crops/native-ab12-p{P}-bg.png'
+PAPER=(254.0,253.0,248.0)
+# flat paper fills: columns under kept hint patterns (kills erase-gradient smear)
+R.append(('fill',(246,991,368,1021),PAPER))   # below ex4a pattern ('einen Bart.' band)
+R.append(('fill',(183,1067,252,1098),PAPER))   # below ex4b pattern ('Und - das...' band)
+R.append(('fill',(178,1120,322,1150),PAPER))   # below ex4c pattern ('Und er hat...' band)
+# flat paper over ex3 blank spans (kills vertical streak bars above the rules)
+for _fid,_b in [('p58-3b',(734,758)),('p58-3c',(760,784)),('p58-3d',(784,808)),
+                ('p58-3e',(810,834)),('p58-3f',(836,862)),('p58-3g',(862,886))]:
+    _f=flds[_fid]
+    R.append(('fill',(_f['x'],_b[0],_f['x']+_f['w']+4,_b[1]+6),PAPER))
 bg=make_bg(P,R,bgp)
 spec={'w':W,'h':H,'items':[{'k':'a','n':'bg','x':0,'y':0,'w':W,'h':H,'alt':'Seite 58 Hintergrund'}]+items}
 write_spec(P,spec)

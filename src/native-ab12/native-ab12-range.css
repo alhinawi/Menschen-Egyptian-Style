@@ -80,3 +80,5 @@
 @font-face{font-family:DroidBI;src:url('/assets/fonts/droid-serif-700-italic.woff2') format('woff2');font-weight:700;font-style:italic;font-display:swap}
 .nativeAB12[data-native-ab12="58"] .naRCanvas .naText.naR.naDBI{font-family:DroidBI,DroidB,ABRangeDroid,Georgia,serif!important;font-weight:700!important;font-style:italic!important;-webkit-text-stroke:0!important}
 .nativeAB12[data-native-ab12="58"] .naRCanvas .naRField.sl{background:transparent!important;box-shadow:none!important}
+.nativeAB12[data-native-ab12="58"] .naRCanvas .naRField{border-bottom-color:#c6cacc!important}
+.nativeAB12[data-native-ab12="58"] .naRCanvas .naRField.sl{border-bottom-color:transparent!important}

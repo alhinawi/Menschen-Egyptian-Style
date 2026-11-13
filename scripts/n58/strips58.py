@@ -9,7 +9,7 @@ OUT = sys.argv[2] if len(sys.argv)>2 else '/tmp'
 
 scan = Image.open(SCAN).convert('RGB')
 ren = Image.open(REN).convert('RGB')
-if ren.size != scan.size: ren = ren.crop((0,0,scan.size[0],scan.size[1]))
+assert ren.size == scan.size
 
 def pair(box, scale, path, stack=None):
     s = scan.crop(box); r = ren.crop(box)
