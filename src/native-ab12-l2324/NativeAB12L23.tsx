@@ -572,13 +572,13 @@ export function NativeAB12L23({page}:{page:string}){
   {check('92-8',736,236,{'92-8b':'Frohes neues Jahr.|Frohes neues Jahr','92-8c':'Gut gemacht.|Gut gemacht','92-8d':'Alles Gute|Alles Gute.','92-8e':'Frohe Weihnachten.|Frohe Weihnachten'})}
   {kb(55,286,'KB 4')}
   <div className="naText naTitle naRB" style={{left:83,top:275}}><b>9</b></div>
-  <div className="naText naTitle naRB naNw" style={{left:103,top:275,width:540}}><Words text="Schreiben Sie eigene Aufgaben wie in "/><span className="naBlue">8</span><Words text=" und tauschen Sie mit Ihrer"/></div>
+  <div className="naText naTitle naRB naNw" style={{left:117,top:275,width:540}}><Words text="Schreiben Sie eigene Aufgaben wie in "/><span className="naBlue">8</span><Words text=" und tauschen Sie mit Ihrer"/></div>
   <div className="naText naTitle naRB naNw" style={{left:117,top:294,width:300}}><Words text="Partnerin / Ihrem Partner."/></div>
   <div className="naDotP92" style={{left:44,top:301,background:'#02acf2'}}/>
   <div className="naDotP92" style={{left:63,top:301,background:'#0088c1'}}/>
   {kb(55,354,'KB 5')}
   <div className="naSide naSideB" style={{left:60,top:385}}>STRUKTUREN</div>
-  {title('10',84,343,640,'Was passt? Ordnen Sie zu.','naRB naNw')}
+  {title('10',83,343,640,'Was passt? Ordnen Sie zu.','naRB naNw')}
   <div id="ex10-left-a">{text(116,377,16,'a','naBookSerif')}{text(135,376,270,'Natascha und Ella singen und schreiben','naBookSerif naEx4t naNw')}{text(135,393,50,'Lieder.','naBookSerif naEx4t naNw')}</div>
   <div id="ex10-left-b">{text(116,414,16,'b','naBookSerif')}{text(135,413,140,'Klaus hat kein Geld.','naBookSerif naEx4t naNw')}</div>
   <div id="ex10-left-c">{text(116,437,16,'c','naBookSerif')}{text(135,435,230,'Meine Tochter fährt gern Motorrad.','naBookSerif naEx4t naNw')}</div>
@@ -612,7 +612,7 @@ export function NativeAB12L23({page}:{page:string}){
   {check('92-11',700,644,{'92-11ich':'würde','92-11er':'würde','92-11wir':'würden','92-11sie':'würden'})}
   {kb(55,704,'KB 5')}
   <div className="naSide naSideB" style={{left:60,top:718}}>STRUKTUREN</div>
-  {title('12',82,693,640,'Was sagen die Personen? Schreiben Sie.','naRB naNw')}
+  {title('12',81,693,640,'Was sagen die Personen? Schreiben Sie.','naRB naNw')}
   <div className="naBank" style={{left:115,top:723,width:478,height:19,background:'#f9f9df'}}/>
   <div className="naBank88 naBank92" style={{left:119,top:725}}><Words text="im Wald wohnen "/><span className="naPipe92">|</span> <span className="naStrike92"><Words text="in den Süden fahren"/></span> <span className="naPipe92">|</span><Words text=" jeden Tag grillen "/><span className="naPipe92">|</span><Words text=" viel Geld verdienen"/></div>
   {art('pica',215,771,161,75)}
