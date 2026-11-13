@@ -147,7 +147,8 @@
 .kb42Answers h3{font:500 17px/1.4 KbFira,sans-serif;margin:18px 0 6px}.kb42Answers p{margin:0 0 12px}.kb42Answers label{display:block;font-size:14px}
 .kb42Answers textarea{display:block;box-sizing:border-box;width:100%;min-height:80px;margin:5px 0 0;resize:vertical}
 .kb42Answers input,.kb42Answers textarea{border:1px solid #899383;border-radius:3px;background:#fffefb;color:#173c62;font:16px/1.3 KbDroid,serif;padding:5px;min-width:0}
-.kb42Table{width:100%;display:grid;gap:7px}.kb42Head,.kb42Row{display:grid;grid-template-columns:16px minmax(0,1fr) minmax(0,1.1fr) minmax(0,2.4fr) minmax(0,1.15fr);gap:5px;align-items:center}.kb42Head{font-size:13px;color:#4b5143}.kb42Row input{width:100%;box-sizing:border-box}.kb42Row input.ok{outline:2px solid #268250}.kb42Row input.bad{outline:2px solid #bd3838}.kb42Check{display:flex;align-items:center;gap:12px;margin:12px 0 0}.kb42Check output{font:14px KbFira,sans-serif;color:#28553c}
+.kb42Table{width:100%;display:grid;gap:7px}.kb42Head,.kb42Row{display:grid;grid-template-columns:16px minmax(0,1fr) minmax(0,1.1fr) minmax(0,2.4fr) minmax(0,1.15fr);gap:5px;align-items:center}.kb42Head{font-size:13px;color:#4b5143}.kb42Row input{width:100%;box-sizing:border-box}.kb42Row input.ok{outline:2px solid #268250}.kb42Row input.bad{outline:2px solid #bd3838}.kb42Acts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:0 0 4px}.kb42Acts label{display:flex;align-items:center;gap:6px}.kb42Acts label>span{font:500 14px KbFira,sans-serif;color:#4b5143;min-width:12px}.kb42Acts input{width:100%;box-sizing:border-box}.kb42Acts input.ok{outline:2px solid #268250}.kb42Acts input.bad{outline:2px solid #bd3838}
+.kb42Check{display:flex;align-items:center;gap:12px;margin:12px 0 0}.kb42Check output{font:14px KbFira,sans-serif;color:#28553c}
 /* Generic JSON-driven writing panel (NativeWritingPanel), same look as the p42 panel. */
 .nkbWritePanel{box-sizing:border-box;max-width:100%;margin:12px auto 20px;padding:14px 18px;background:#fffef7;color:#201f1d;border:1px solid #d6d0b7;font:16px/1.4 KbDroid,serif}
 .nkbWritePanel[hidden]{display:none}
@@ -164,7 +165,7 @@
 .nkbWritePanel .nkbPanelCheck{display:flex;align-items:center;gap:12px;margin:12px 0 0}
 .nkbWritePanel .nkbPanelCheck output{font:14px KbFira,sans-serif;color:#28553c}
 @media(max-width:500px){.nkbWritePanel{padding:12px}.nkbWritePanel h3{font-size:16px}.nkbWritePanel label{flex-direction:column;align-items:stretch;gap:3px}}
-@media(max-width:500px){.kb42Answers{padding:12px}.kb42Row{grid-template-columns:16px minmax(0,1fr) minmax(0,1fr);gap:5px}.kb42Row>input:nth-child(4){grid-column:2 / 4}.kb42Row>input:nth-child(5){grid-column:2 / 4}.kb42Row{padding-bottom:10px;border-bottom:1px solid #e4dfc9}.kb42Head{display:none}.kb42Row input{min-height:36px}.kb42Answers h3{font-size:16px}}
+@media(max-width:500px){.kb42Answers{padding:12px}.kb42Acts{grid-template-columns:repeat(2,minmax(0,1fr))}.kb42Acts input{min-height:36px}.kb42Row{grid-template-columns:16px minmax(0,1fr) minmax(0,1fr);gap:5px}.kb42Row>input:nth-child(4){grid-column:2 / 4}.kb42Row>input:nth-child(5){grid-column:2 / 4}.kb42Row{padding-bottom:10px;border-bottom:1px solid #e4dfc9}.kb42Head{display:none}.kb42Row input{min-height:36px}.kb42Answers h3{font-size:16px}}
 .nkb[data-native-page="42"] input[data-native-field^="t4a"].nkbField{border-radius:50%!important;border:1px solid #c5bd8d!important;background:#fffef7!important;padding:0!important;text-align:center}
 
 .kb42Answers input::placeholder{font:12px KbFira,sans-serif;color:#72796e;opacity:1}
