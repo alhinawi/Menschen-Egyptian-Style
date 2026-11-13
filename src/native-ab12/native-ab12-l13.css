@@ -172,3 +172,16 @@
 [data-native-ab12="14"] .naCanvas .naText.naYT{font-size:21.4px!important}
 [data-native-ab12="14"] .naCanvas .naText.naSent14a{font-size:17.5px!important}
 [data-native-ab12="14"] .naCanvas .naDot.naDotD{border-color:#3d3d43!important}
+[data-native-ab12="15"] .naCanvas .naText.naYT{font-size:21.4px!important}
+[data-native-ab12="15"] .naCanvas .naText.naMail15{font:18px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
+[data-native-ab12="15"] .naCanvas .naText.naMailS15{font:14.6px DroidSerif,Georgia,serif!important;color:#383a3e;letter-spacing:0!important}
+[data-native-ab12="15"] .naCanvas .naText.naChris15{font:17.6px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
+[data-native-ab12="15"] .naCanvas .naText.naLet15{color:#1a2894!important;font:bold 17px FiraSans,'Trebuchet MS',sans-serif!important;letter-spacing:0!important}
+[data-native-ab12="15"] .naCanvas .naText.naTh15{font:bold 19px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
+[data-native-ab12="15"] .naCanvas .naText.naTh15b{font:bold 16px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
+[data-native-ab12="15"] .naCanvas .naText.naTd15{font:18px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
+[data-native-ab12="15"] .naCanvas .naBand15{position:absolute;background:#e6e1c8}
+[data-native-ab12="15"] .naCanvas .naLine15{position:absolute;background:#efede3}
+[data-native-ab12="15"] .naCanvas .naDot{width:18px!important;height:18px!important}
+[data-native-ab12="15"] .naCanvas .naFooter{font:18px DroidSerif,Georgia,serif!important;letter-spacing:0!important;color:#26251f}
+[data-native-ab12="15"] .naCanvas .naFooter .naFz15{color:#26251f}
