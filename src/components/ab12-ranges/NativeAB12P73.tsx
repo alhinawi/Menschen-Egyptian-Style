@@ -5,7 +5,7 @@ const R2='REDASBEZAHLENZUTAS';
 const FIXED=new Set([5,6,7,8,9,10,11,12,13]); // VERGESSEN printed example
 const EXPECT=[20,21,22,23,24,25,30,31,32,33,34,35,36,37,42,43,44,45,46,47,48,49,56,57,58,59,60,61,62,63,69,70,71,72,73,74,75,76].join(',');
 const C1=[111.5,121,130,138.5,148,157,166,175.5,184.5,193.5,201.5,209,217,227,236.5,245,254,264,273.5,282.5,292.5,301.5,311,322,332,342,351.5,360.5,370,378.5,387.5,397,405,412.5,422.5,430.5,438.5,448.5,458.5,467.5,476.5,485.5,495,503.5,512.5,520.5,532.5,545.5,556.5,566,575.5,585,594.5,603.5,612,620.5,630.5,639,647.5,655.5,664.5,673.5,684,693.5];
-const C2=[111,120.5,129.5,138.5,147.5,156,165,173,181.5,192.5,202.5,210.5,219.5,229,239,247,255.5,265.5];
+const C2=[111,120.5,130,138.5,147.5,156,164.5,173,182,192,202,210.5,219.5,229,237.5,247,256.5,265.5];
 
 function P73(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,check,box,modTab,values,set}=h;const D='naDroid73';
  const marked=new Set((values['p73-2-mark']||'').split(',').filter(Boolean).map(Number));
@@ -16,7 +16,7 @@ function P73(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,check,box,modTab
   {ln(73,59,584,25,'WIEDERHOLUNGSSTATION: GRAMMATIK',{cls:'naHdr73'})}
   {box('1',94,124,'#c80e04')}  {rn(125,126,306,15,[{t:'Ergänzen Sie haben oder sein im Präteritum.',b:1}],{fam:'fira'})}
   <div className='naPanel73'/>
-  {art('scrollbar',644,158,15,134)}
+  {art('scrollbar',644,155,19,143)}
   {ln(129,169,52,13,'Hallo Elly,',{cls:'naLetter73'})}
   {ln(129,186,79,13,"wie geht\u2019s Dir?",{cls:'naLetter73'})}
   {art('warst',210,177,36,21)}
@@ -24,23 +24,23 @@ function P73(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,check,box,modTab
   {ln(250,186,230,13.6,'(a) Du schon einmal in Graz? Jonas und ich',{cls:'naLetter73'})}
   {field('p73-1b',483,182,57,'1 b','naFieldBlank')}
   {ln(546,186,48,14,'(b) letzte',{cls:'naLetter73'})}
-  {ln(129,203,94,13,'Woche in Graz. Es',{cls:'naLetter73'})}
+  {ln(129,202,94,13,'Woche in Graz. Es',{cls:'naLetter73'})}
   {field('p73-1c',228,197,57,'1 c','naFieldBlank')}
-  {ln(291,203,98,13,'(c) wunderbar! Wir',{cls:'naLetter73'})}
+  {ln(291,202,98,13,'(c) wunderbar! Wir',{cls:'naLetter73'})}
   {field('p73-1d',394,197,56,'1 d','naFieldBlank')}
-  {ln(456,203,169,13,'(d) auch immer schönes Wetter.',{cls:'naLetter73'})}
-  {ln(129,220,318,13,'Am Mittwoch sind noch Mona und Tim gekommen und wir',{cls:'naLetter73'})}
+  {ln(456,202,169,13,'(d) auch immer schönes Wetter.',{cls:'naLetter73'})}
+  {ln(129,218,318,13,'Am Mittwoch sind noch Mona und Tim gekommen und wir',{cls:'naLetter73'})}
   {field('p73-1e',458,214,57,'1 e','naFieldBlank')}
-  {ln(521,220,78,13,'(e) so viel Spaß',{cls:'naLetter73'})}
-  {ln(129,236,124,13,'zusammen. Am Freitag',{cls:'naLetter73'})}
+  {ln(521,218,78,13,'(e) so viel Spaß',{cls:'naLetter73'})}
+  {ln(129,234,124,13,'zusammen. Am Freitag',{cls:'naLetter73'})}
   {field('p73-1f',258,230,54,'1 f','naFieldBlank')}
-  {ln(318,236,285,13,'(f) ich den ganzen Tag allein mit Mona shoppen. Die',{cls:'naLetter73'})}
-  {ln(129,252,41,13,'Männer',{cls:'naLetter73'})}
+  {ln(318,234,285,13,'(f) ich den ganzen Tag allein mit Mona shoppen. Die',{cls:'naLetter73'})}
+  {ln(129,251,41,13,'Männer',{cls:'naLetter73'})}
   {field('p73-1g',175,246,57,'1 g','naFieldBlank')}
-  {ln(238,252,73,13,'(g) keine Lust.',{cls:'naLetter73'})}
+  {ln(238,251,73,13,'(g) keine Lust.',{cls:'naLetter73'})}
   {art('smiley',316,249,15,16)}
-  {ln(129,269,62,13,'Viele Grüße',{cls:'naLetter73'})}
-  {ln(129,285,32,13,'Tanja',{cls:'naLetter73'})}
+  {ln(129,267,62,13,'Viele Grüße',{cls:'naLetter73'})}
+  {ln(129,283,32,13,'Tanja',{cls:'naLetter73'})}
   {[[483,199,57],[228,213,57],[394,214,56],[458,230,57],[258,245,54],[175,262,57]].map(([x,y,w])=><div key={'u1'+x} className='naRule' style={{left:x,top:y,width:w,borderBottom:'1px solid #9aa4b5'}}/>)}
   {[[332,445,108],[285,464,107],[282,484,130],[349,503,111],[337,523,123]].map(([x,y,w])=><div key={'u2'+x} className='naRule' style={{left:x,top:y,width:w,borderBottom:'1px solid #9aa4b5'}}/>)}
   {check('g1',600,252,{'p73-1b':'waren','p73-1c':'war','p73-1d':'hatten','p73-1e':'hatten','p73-1f':'war','p73-1g':'hatten'})}
@@ -63,14 +63,14 @@ function P73(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,check,box,modTab
   {ln(108,507,8,13,'f',{cls:D})}{ln(126,507,206,13,'Den letzten Satz habe ich nicht',{cls:D})}
   {field('p73-2f',337,501,123,'2 f','naFieldBlank')}{ln(465,507,238,13,'. Können Sie ihn bitte wiederholen?',{cls:D})}
   {box('3',94,544,'#c80e04')}  {rn(125,546,286,15,[{t:'Notizzettel. Ergänzen Sie die Pronomen.',b:1}],{fam:'fira'})}
-  {ln(108,572,8,13,'a',{cls:D})}<div className='naNoteBand73' style={{left:138,top:568,width:562,height:30}}/>{art('n3a',141,570,342,26)}
-  {ln(108,592,8,13,'b',{cls:D})}<div className='naNoteBand73' style={{left:138,top:583,width:562,height:40}}/>{art('n3b',141,583,441,40)}
+  <div className='naNoteBand73' style={{left:138,top:568,width:562,height:121}}/>{ln(108,572,8,13,'a',{cls:D})}{art('n3a',141,570,342,26)}
+  {ln(108,592,8,13,'b',{cls:D})}{art('n3b',141,583,441,40)}
   {field('p73-3b',487,586,73,'3 b','naFieldBlank')}
-  {ln(108,633,8,13,'c',{cls:D})}<div className='naNoteBand73' style={{left:138,top:627,width:562,height:23}}/>{art('n3c',141,629,444,19)}
+  {ln(108,633,8,13,'c',{cls:D})}{art('n3c',141,629,444,19)}
   {field('p73-3c',385,625,93,'3 c','naFieldBlank')}
-  {ln(108,653,8,13,'d',{cls:D})}<div className='naNoteBand73' style={{left:138,top:646,width:562,height:26}}/>{art('n3d',141,648,361,21)}
+  {ln(108,653,8,13,'d',{cls:D})}{art('n3d',141,648,361,21)}
   {field('p73-3d',425,646,63,'3 d','naFieldBlank')}
-  {ln(108,672,8,13,'e',{cls:D})}<div className='naNoteBand73' style={{left:138,top:661,width:562,height:28}}/>{art('n3e',142,663,560,25)}
+  {ln(108,672,8,13,'e',{cls:D})}{art('n3e',142,663,560,25)}
   {field('p73-3e1',322,665,133,'3 e 1','naFieldBlank')}{field('p73-3e2',538,665,102,'3 e 2','naFieldBlank')}
   {check('g3',715,688,{'p73-3b':'sie','p73-3c':'ihn','p73-3d':'es','p73-3e1':'dich','p73-3e2':'ihn'})}
   {box('4',94,719,'#c80e04')}  {rn(125,721,545,15,[{t:'Im Flugzeug. Was darf man (nicht) / muss man / kann man? Schreiben Sie.',b:1}],{fam:'fira'})}
