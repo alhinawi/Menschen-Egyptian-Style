@@ -203,18 +203,18 @@ export function NativeAB12Lesson13({page}:{page:string}){
   <div className="naL13" style={{left:982,top:42,width:86,height:57}}>13</div>
   {audio('assets/ab-a12-cd2-track02.mp3',56,166,'2 02')}
   {badge9('1',112,169)}{text(153,169,660,'Welche Orte/Einrichtungen in der Stadt hören Sie? Markieren Sie.','naYT naNw')}
-  {mw('9-m-restaurant',161,208,85,'Restaurant')}{text(253,210,12,'|','naSep9 naNw')}
-  <div className="naW9m" style={{left:261,top:209,width:74}}>Bahnhof</div>{text(340,210,12,'|','naSep9 naNw')}
-  {mw('9-m-kino',344,208,40,'Kino')}{text(385,210,12,'|','naSep9 naNw')}
-  {mw('9-m-dom',395,208,38,'Dom')}{text(436,210,12,'|','naSep9 naNw')}
-  {mw('9-m-schwimmbad',444,208,110,'Schwimmbad')}{text(552,210,12,'|','naSep9 naNw')}
-  {mw('9-m-post',557,208,48,'Post')}{text(606,210,12,'|','naSep9 naNw')}
+  {mw('9-m-restaurant',161,208,85,'Restaurant')}{text(254,210,12,'|','naSep9 naNw')}
+  <div className="naW9m" style={{left:261,top:209,width:74}}>Bahnhof</div>{text(341,210,12,'|','naSep9 naNw')}
+  {mw('9-m-kino',347,208,42,'Kino')}{text(389,210,12,'|','naSep9 naNw')}
+  {mw('9-m-dom',395,208,38,'Dom')}{text(434,210,12,'|','naSep9 naNw')}
+  {mw('9-m-schwimmbad',445,208,110,'Schwimmbad')}{text(555,210,12,'|','naSep9 naNw')}
+  {mw('9-m-post',565,208,33,'Post')}{text(604,210,12,'|','naSep9 naNw')}
   {mw('9-m-bruecke',615,208,58,'Brücke')}{text(674,210,12,'|','naSep9 naNw')}
   {mw('9-m-bank',684,208,42,'Bank')}{text(728,210,12,'|','naSep9 naNw')}
   {mw('9-m-polizei',737,208,55,'Polizei')}{text(795,210,12,'|','naSep9 naNw')}
   {mw('9-m-ampel',159,235,53,'Ampel')}{text(215,237,12,'|','naSep9 naNw')}
-  {mw('9-m-hotel',224,235,46,'Hotel')}{text(272,237,12,'|','naSep9 naNw')}
-  {mw('9-m-theater',279,235,66,'Theater')}
+  {mw('9-m-hotel',224,235,46,'Hotel')}{text(273,237,12,'|','naSep9 naNw')}
+  {mw('9-m-theater',280,235,66,'Theater')}
   <div className="naTipBar" style={{left:454,top:249,width:473,height:4}}/>
   <div className="naTipTab" style={{left:454,top:249,width:13,height:111}}><span>TIPP</span></div>
   {text(487,256,430,'Sie finden das Hören schwer? Achten Sie beim Hören','naTipT naNw')}
@@ -280,7 +280,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(159,275,20,'b','naLet9')}<div className="naSq8" style={{left:183,top:280}}/>{text(200,276,390,'Können Sie bitte Briefmarken mitbringen?','naEx10 naNw')}
   <div className="naTri8" style={{left:183,top:306}}/>{text(200,302,352,'Ja, gerne. Ich gehe heute Vormittag zur ','naEx9 naNw')}{field('10-1b',552,302,122,'1b Ort Post','naFld9')}{text(680,302,14,'.','naEx10 naNw')}
   {text(159,327,20,'c','naLet9')}<div className="naSq8" style={{left:182,top:331}}/>{text(200,328,515,'Oh je, mein Zug fährt in 30 Minuten. Wie komme ich zum ','naEx10 naNw')}{field('10-1c',715,328,125,'1c Ort Bahnhof','naFld9')}{text(845,328,14,'?','naEx10 naNw')}
-  {text(159,353,20,'d','naLet9')}<div className="naSq8" style={{left:183,top:357}}/>{text(200,354,460,'Können wir Sie etwas fragen? Wir suchen den Dom. ','naEx9 naNw')}<div className="naTri8" style={{left:668,top:359}}/>{text(688,355,118,'Der ist in der ','naEx10 naNw')}{field('10-1d',806,354,145,'1d Ort Stadtmitte','naFld9')}{text(955,354,14,'.','naEx10 naNw')}
+  {text(159,353,20,'d','naLet9')}<div className="naSq8" style={{left:183,top:357}}/>{text(200,354,460,'Können wir Sie etwas fragen? Wir suchen den Dom. ','naEx9b naNw')}<div className="naTri8" style={{left:668,top:359}}/>{text(688,355,118,'Der ist in der ','naEx10 naNw')}{field('10-1d',806,354,145,'1d Ort Stadtmitte','naFld9')}{text(955,354,14,'.','naEx10 naNw')}
   {text(159,379,20,'e','naLet9')}<div className="naSq8" style={{left:182,top:383}}/>{text(200,379,353,'Ich habe kein Geld. Wo gibt es hier eine ','naEx10 naNw')}{field('10-1e',556,380,149,'1e Ort Bank','naFld9')}{text(710,380,14,'?','naEx10 naNw')}<div className="naTri8" style={{left:735,top:386}}/>{text(755,380,225,'Gleich neben der Brücke.','naEx10 naNw')}
   {text(159,404,20,'f','naLet9')}<div className="naSq8" style={{left:183,top:409}}/>{text(200,405,465,'Entschuldigung, kennen Sie die Frankfurter Straße?','naEx10 naNw')}
   <div className="naTri8" style={{left:183,top:436}}/>{text(202,431,318,'Nein, leider nicht. Aber hier ist ein ','naEx10 naNw')}{field('10-1f',520,431,174,'1f Ort Stadtplan','naFld9')}{text(698,431,14,'.','naEx10 naNw')}
@@ -289,32 +289,32 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {badge9('2',116,492,32,20)}{text(160,493,420,'Beschreiben Sie den Weg. Ergänzen Sie.','naYT naNw')}
   <div className="naSq8" style={{left:161,top:537}}/>{text(175,534,640,'Haben Sie einen Moment Zeit? Wie komme ich bitte zum Internet-Café?','naEx10 naNw')}
   {art('map',157,553,178,168)}
-  <div className="naTri8" style={{left:341,top:563}}/>{text(360,560,155,'Fahren Sie zuerst ','naEx9 naNw')}{art('geradeaus',515,552,74,34)}{text(594,560,80,'(a), dann ','naEx10 naNw')}{field('10-2b',681,561,112,'2b Richtung biegen','naFld9')}{text(805,561,56,'(b) Sie','naEx10 naNw')}
-  {field('10-2c',359,586,127,'2c Richtung links','naFld9')}{text(491,586,66,'(c) ab. ','naEx10 naNw')}{text(560,586,196,'Fahren Sie jetzt einen ','naEx9 naNw')}{field('10-2d',760,587,120,'2d Kilometer','naFld9')}
-  {text(359,611,260,'(d) geradeaus und dann nach ','naEx10 naNw')}{field('10-2e',624,612,96,'2e Richtung rechts','naFld9')}{text(728,612,140,'(e). Nach 500 m','naEx10 naNw')}
-  {text(359,637,184,'fahren Sie über eine ','naEx10 naNw')}{field('10-2f',543,637,157,'2f Ort Brücke','naFld9')}{text(705,637,128,'(f) und an der ','naEx10 naNw')}{field('10-2g',836,637,94,'2g Ort Ampel','naFld9')}{text(939,638,24,'(g)','naEx10 naNw')}
-  {text(358,663,350,'wieder rechts, dann sehen Sie das Café.','naEx10 naNw')}
+  <div className="naTri8" style={{left:341,top:563}}/>{text(360,560,155,'Fahren Sie zuerst ','naEx9 naNw')}{art('geradeaus',499,549,89,49)}{text(594,560,80,'(a), dann ','naEx10b naNw')}{field('10-2b',678,558,116,'2b Richtung biegen','naFld9')}{text(802,561,56,'(b) Sie','naEx10b naNw')}
+  {field('10-2c',359,585,127,'2c Richtung links','naFld9')}{text(491,586,66,'(c) ab. ','naEx10b naNw')}{text(560,586,196,'Fahren Sie jetzt einen ','naEx9 naNw')}{field('10-2d',758,585,122,'2d Kilometer','naFld9')}
+  {text(359,611,260,'(d) geradeaus und dann nach ','naEx10b naNw')}{field('10-2e',621,610,105,'2e Richtung rechts','naFld9')}{text(726,612,140,'(e). Nach 500 m','naEx10b naNw')}
+  {text(359,637,184,'fahren Sie über eine ','naEx10b naNw')}{field('10-2f',543,636,166,'2f Ort Brücke','naFld9')}{text(705,637,128,'(f) und an der ','naEx10b naNw')}{field('10-2g',833,637,96,'2g Ort Ampel','naFld9')}{text(936,638,24,'(g)','naEx10b naNw')}
+  {text(358,663,350,'wieder rechts, dann sehen Sie das Café.','naEx10b naNw')}
   <div className="naSq8" style={{left:343,top:692}}/>{text(357,689,120,'Dankeschön!','naEx10 naNw')}
   {text(884,695,90,'_ / 6 PUNKTE','naPkt10 naNw')}
   {check('10-2',900,712,{'10-2b':'biegen','10-2c':'links','10-2d':'Kilometer','10-2e':'rechts','10-2f':'Brücke','10-2g':'Ampel'})}
   {badge9('3',115,749,32,21)}{text(152,748,500,'Was ist richtig? Kreuzen Sie an und ergänzen Sie.','naYT naNw')}
   {art('city',680,762,300,188)}
-  {text(158,797,20,'a','naLet9')}{text(182,792,120,'Die Post ist','naEx10 naNw')}{art('xcircle',297,787,29,29)}{text(328,793,55,'unter','naEx10 naNw')}<div className="naRad10" style={{left:402,top:792}}/>{text(426,793,90,'zwischen','naEx10 naNw')}{text(519,793,14,'d','naEx10 naNw')}{art('em',529,795,27,19)}{text(569,793,55,'Hotel.','naEx10 naNw')}
-  {text(158,819,20,'b','naLet9')}{text(183,818,120,'Das Café ist','naEx10 naNw')}{dot('10-r3b','hinter',306,818,'3b hinter')}{text(331,818,60,'hinter','naEx10 naNw')}{dot('10-r3b','neben',412,818,'3b neben')}{text(436,818,60,'neben','naEx10 naNw')}{text(499,818,12,'d','naEx10 naNw')}{field('10-3bt',514,816,64,'3b Artikel','naFld9 naFld10d')}{text(588,818,50,'Bank.','naEx10 naNw')}
-  {text(158,849,20,'c','naLet9')}{text(183,844,120,'Die Polizei ist','naEx10 naNw')}{dot('10-r3c','vor',319,844,'3c vor')}{text(343,844,32,'vor','naEx10 naNw')}{dot('10-r3c','auf',397,844,'3c auf')}{text(421,844,34,'auf','naEx10 naNw')}{text(461,844,12,'d','naEx10 naNw')}{field('10-3ct',474,841,67,'3c Artikel','naFld9 naFld10d')}{text(548,844,80,'Bahnhof.','naEx10 naNw')}
-  {text(158,869,20,'d','naLet9')}{text(182,870,105,'Der Dom ist','naEx10 naNw')}{dot('10-r3d','in',310,870,'3d in')}{text(334,870,24,'in','naEx10 naNw')}{dot('10-r3d','an',377,870,'3d an')}{text(401,870,28,'an','naEx10 naNw')}{text(435,870,12,'d','naEx10 naNw')}{field('10-3dt',448,867,67,'3d Artikel','naFld9 naFld10d')}{text(520,870,100,'Stadtmitte.','naEx10 naNw')}
-  {text(158,901,20,'e','naLet9')}{text(182,896,140,'Der Bahnhof ist','naEx10 naNw')}{dot('10-r3e','vor',346,896,'3e vor')}{text(369,896,32,'vor','naEx10 naNw')}{dot('10-r3e','hinter',423,896,'3e hinter')}{text(448,896,60,'hinter','naEx10 naNw')}{text(515,896,12,'d','naEx10 naNw')}{field('10-3et',527,894,68,'3e Artikel','naFld9 naFld10d')}{text(602,896,65,'Polizei.','naEx10 naNw')}
-  {text(158,921,20,'f','naLet9')}{text(182,921,135,'Das Hotel ist','naEx10 naNw')}{dot('10-r3f','über',317,922,'3f über')}{text(341,921,44,'über','naEx10 naNw')}{dot('10-r3f','an',406,922,'3f an')}{text(430,921,28,'an','naEx10 naNw')}{text(464,921,12,'d','naEx10 naNw')}{field('10-3ft',477,919,67,'3f Artikel','naFld9 naFld10d')}{text(550,921,45,'Post.','naEx10 naNw')}
+  {text(158,792,20,'a','naLet9')}{text(182,792,120,'Die Post ist','naEx10 naNw')}{art('xcircle',297,787,29,29)}{text(328,793,55,'unter','naEx10 naNw')}<div className="naRad10" style={{left:402,top:792}}/>{text(426,793,90,'zwischen','naEx10 naNw')}{text(519,793,14,'d','naEx10 naNw')}{art('em',529,795,27,19)}{text(569,793,55,'Hotel.','naEx10 naNw')}
+  {text(158,818,20,'b','naLet9')}{text(183,818,120,'Das Café ist','naEx10 naNw')}{dot('10-r3b','hinter',306,818,'3b hinter')}{text(331,818,60,'hinter','naEx10 naNw')}{dot('10-r3b','neben',412,818,'3b neben')}{text(436,818,60,'neben','naEx10 naNw')}{text(499,818,12,'d','naEx10 naNw')}{fseg('10-3bt',524,816,57,1,'3b Artikel')}{text(588,818,50,'Bank.','naEx10 naNw')}
+  {text(158,844,20,'c','naLet9')}{text(183,844,120,'Die Polizei ist','naEx10 naNw')}{dot('10-r3c','vor',319,844,'3c vor')}{text(343,844,32,'vor','naEx10 naNw')}{dot('10-r3c','auf',397,844,'3c auf')}{text(421,844,34,'auf','naEx10 naNw')}{text(461,844,12,'d','naEx10 naNw')}{fseg('10-3ct',484,842,57,1,'3c Artikel')}{text(548,844,80,'Bahnhof.','naEx10 naNw')}
+  {text(158,870,20,'d','naLet9')}{text(182,870,105,'Der Dom ist','naEx10 naNw')}{dot('10-r3d','in',310,870,'3d in')}{text(334,870,24,'in','naEx10 naNw')}{dot('10-r3d','an',377,870,'3d an')}{text(401,870,28,'an','naEx10 naNw')}{text(435,870,12,'d','naEx10 naNw')}{fseg('10-3dt',457,868,57,1,'3d Artikel')}{text(520,870,100,'Stadtmitte.','naEx10 naNw')}
+  {text(158,896,20,'e','naLet9')}{text(182,896,140,'Der Bahnhof ist','naEx10 naNw')}{dot('10-r3e','vor',346,896,'3e vor')}{text(369,896,32,'vor','naEx10 naNw')}{dot('10-r3e','hinter',423,896,'3e hinter')}{text(448,896,60,'hinter','naEx10 naNw')}{text(515,896,12,'d','naEx10 naNw')}{fseg('10-3et',537,894,58,1,'3e Artikel')}{text(602,896,65,'Polizei.','naEx10 naNw')}
+  {text(158,921,20,'f','naLet9')}{text(182,921,135,'Das Hotel ist','naEx10 naNw')}{dot('10-r3f','über',317,922,'3f über')}{text(341,921,44,'über','naEx10 naNw')}{dot('10-r3f','an',406,922,'3f an')}{text(430,921,28,'an','naEx10 naNw')}{text(464,921,12,'d','naEx10 naNw')}{fseg('10-3ft',485,920,58,1,'3f Artikel')}{text(550,921,45,'Post.','naEx10 naNw')}
   {text(883,954,92,'_ / 10 PUNKTE','naPkt10 naNw')}
   {check('10-3',938,974,{'10-r3b':'neben','10-r3c':'vor','10-r3d':'in','10-r3e':'hinter','10-r3f':'über','10-3bt':'er','10-3ct':'em','10-3dt':'er','10-3et':'er','10-3ft':'er'})}
   {badge9('4',115,982,32,21)}{text(152,980,460,'Was sagen die Personen? Ergänzen Sie.','naYT naNw')}
-  {text(158,1026,20,'1','naLet9')}<div className="naSq8" style={{left:185,top:1027}}/>{text(201,1024,14,'K','naEx10 naNw')}{fseg('10-4a',227,1024,117,5,'4a Können')}{text(351,1024,160,'(a) Sie mir bitte h','naEx10 naNw')}{fseg('10-4b',507,1024,115,5,'4b helfen')}{text(631,1025,85,'(b)? Ich s','naEx10 naNw')}{fseg('10-4c',712,1025,85,4,'4c suche')}{text(809,1026,140,'(c) das Theater.','naEx10 naNw')}
-  <div className="naTri8" style={{left:185,top:1053}}/>{text(209,1050,103,'Ja gern. F','naEx10 naNw')}{fseg('10-4d',317,1050,94,5,'4d Fahren')}{text(418,1050,345,'(d) Sie die nächste Straße links. Dann s','naEx10 naNw')}{fseg('10-4e',766,1052,84,4,'4e sehen')}{text(862,1052,60,'(e) Sie','naEx10 naNw')}
+  {text(158,1026,20,'1','naLet9')}<div className="naSq8" style={{left:185,top:1027}}/>{text(201,1024,14,'K','naEx10 naNw')}{fseg('10-4a',227,1024,117,5,'4a Können')}{text(352,1024,160,'(a) Sie mir bitte h','naEx10c naNw')}{fseg('10-4b',507,1024,116,5,'4b helfen')}{text(631,1025,85,'(b)? Ich s','naEx10 naNw')}{fseg('10-4c',710,1025,89,4,'4c suche')}{text(809,1026,140,'(c) das Theater.','naEx10 naNw')}
+  <div className="naTri8" style={{left:185,top:1053}}/>{text(209,1050,103,'Ja gern. F','naEx10 naNw')}{fseg('10-4d',319,1050,92,4,'4d Fahren')}{text(418,1050,345,'(d) Sie die nächste Straße links. Dann s','naEx10 naNw')}{fseg('10-4e',763,1052,91,4,'4e sehen')}{text(862,1052,60,'(e) Sie','naEx10 naNw')}
   {text(210,1076,170,'das Theater schon.','naEx10 naNw')}
   <div className="naSq8" style={{left:185,top:1105}}/>{text(210,1102,14,'S','naEx10 naNw')}{fseg('10-4f1',219,1102,62,3,'4f Sehr')}{text(299,1103,12,'n','naEx10 naNw')}{fseg('10-4f2',310,1102,64,3,'4f nett')}{text(385,1102,150,'(f)! Vielen Dank.','naEx10 naNw')}
   {text(157,1142,20,'2','naLet9')}<div className="naTri8" style={{left:185,top:1143}}/>{text(210,1140,180,'Kann ich Sie etwas f','naEx10 naNw')}{fseg('10-4g',389,1140,116,5,'4g fragen')}{text(512,1141,370,'(a)? Wo ist das Hotel „Vier Jahreszeiten“?','naEx10 naNw')}
-  <div className="naSq8" style={{left:185,top:1169}}/>{text(210,1166,14,'T','naEx10 naNw')}{fseg('10-4h1',220,1166,41,2,'4h Tut')}{text(270,1167,41,'mir l','naEx10 naNw')}{fseg('10-4h2',315,1166,63,3,'4h leid')}{text(393,1166,240,'(b). Ich bin nicht von hier.','naEx10 naNw')}
-  <div className="naTri8" style={{left:185,top:1195}}/>{text(210,1192,14,'T','naEx10 naNw')}{fseg('10-4i',220,1192,158,7,'4i Trotzdem')}{text(393,1193,150,'(c): Dankeschön.','naEx10 naNw')}
+  <div className="naSq8" style={{left:185,top:1169}}/>{text(210,1166,14,'T','naEx10 naNw')}{fseg('10-4h1',220,1166,43,2,'4h Tut')}{text(270,1167,41,'mir l','naEx10 naNw')}{fseg('10-4h2',318,1166,66,3,'4h leid')}{text(393,1166,240,'(b). Ich bin nicht von hier.','naEx10 naNw')}
+  <div className="naTri8" style={{left:185,top:1195}}/>{text(210,1192,14,'T','naEx10 naNw')}{fseg('10-4i',220,1192,164,7,'4i Trotzdem')}{text(393,1193,150,'(c): Dankeschön.','naEx10 naNw')}
   {text(884,1199,90,'_ / 9 PUNKTE','naPkt10 naNw')}
   {check('10-4',845,1205,{'10-4a':'önnen','10-4b':'elfen','10-4c':'uche','10-4d':'ahren','10-4e':'ehen','10-4f1':'ehr','10-4f2':'ett','10-4g':'ragen','10-4h1':'ut','10-4h2':'eid','10-4i':'rotzdem'})}
   <div className="naTblBand" style={{left:178,top:1238,width:802,height:34}}/>
