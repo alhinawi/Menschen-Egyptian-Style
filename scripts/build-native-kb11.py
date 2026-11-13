@@ -79,7 +79,11 @@ def build(p):
         for bx in json.load(open(_of)).get('erase',[]):
             X0,Y0,X1,Y1=[int(v*S) for v in bx[:4]]
             ring=np.concatenate([work[max(0,Y0-3):Y0,X0:X1].reshape(-1,3),work[Y1:Y1+3,X0:X1].reshape(-1,3)])
-            work[Y0:Y1,X0:X1]=bx[4] if len(bx)>4 else np.median(ring,axis=0)
+            if len(bx)>4:work[Y0:Y1,X0:X1]=bx[4]
+            elif len(bx)==4 and False:pass
+            else:
+                top=work[max(0,Y0-3):Y0,X0:X1].mean(axis=0);bot=work[Y1:Y1+3,X0:X1].mean(axis=0)
+                tt=np.linspace(0,1,Y1-Y0)[:,None,None];work[Y0:Y1,X0:X1]=top[None]*(1-tt)+bot[None]*tt
     # artwork components from erased copy
     paper=np.median(work.reshape(-1,3),axis=0)
     diff=np.abs(work-paper).sum(axis=2)
@@ -189,6 +193,7 @@ def apply_overrides(r,p):
     r['fields']=list(r['fields'])+o.get('fields',[])
     r['fields']=[x for x in r['fields'] if x['id'] not in o.get('dropfields',[])]
     r['checks'].update(o.get('checks',{}))
+    if o.get('neutral'):r['neutral']=o['neutral']
     def hit(b,m):
         return all(abs(b[k]-v)<=m.get('tol',3) for k,v in m.items() if k in('x','cy','w','f'))
     for rng in o.get('sans',[]):
