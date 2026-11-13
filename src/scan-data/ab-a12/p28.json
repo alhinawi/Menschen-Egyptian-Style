@@ -1098,7 +1098,108 @@
    "h": 18
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "ex1-a-claudia",
+   "group": "gx",
+   "kind": "checkbox",
+   "label": "a: Ich finde deinen Blog sehr gut. - Claudia",
+   "x": 670,
+   "y": 913,
+   "w": 18,
+   "h": 18
+  },
+  {
+   "id": "ex1-a-teddybär",
+   "group": "gx",
+   "kind": "checkbox",
+   "label": "a: Ich finde deinen Blog sehr gut. - Teddybär",
+   "x": 785,
+   "y": 913,
+   "w": 18,
+   "h": 18
+  },
+  {
+   "id": "ex1-b-claudia",
+   "group": "gx",
+   "kind": "checkbox",
+   "label": "b: Ich kenne München. - Claudia",
+   "x": 670,
+   "y": 938,
+   "w": 18,
+   "h": 18
+  },
+  {
+   "id": "ex1-b-teddybär",
+   "group": "gx",
+   "kind": "checkbox",
+   "label": "b: Ich kenne München. - Teddybär",
+   "x": 785,
+   "y": 938,
+   "w": 18,
+   "h": 18
+  },
+  {
+   "id": "ex1-c-claudia",
+   "group": "gx",
+   "kind": "checkbox",
+   "label": "c: Ich finde die Maxvorstadt und das Lehel super. - Claudia",
+   "x": 670,
+   "y": 965,
+   "w": 18,
+   "h": 18
+  },
+  {
+   "id": "ex1-c-teddybär",
+   "group": "gx",
+   "kind": "checkbox",
+   "label": "c: Ich finde die Maxvorstadt und das Lehel super. - Teddybär",
+   "x": 785,
+   "y": 965,
+   "w": 18,
+   "h": 18
+  },
+  {
+   "id": "ex1-d-claudia",
+   "group": "gx",
+   "kind": "checkbox",
+   "label": "d: Ich suche bald eine Wohnung in München. - Claudia",
+   "x": 670,
+   "y": 991,
+   "w": 18,
+   "h": 18
+  },
+  {
+   "id": "ex1-d-teddybär",
+   "group": "gx",
+   "kind": "checkbox",
+   "label": "d: Ich suche bald eine Wohnung in München. - Teddybär",
+   "x": 785,
+   "y": 991,
+   "w": 18,
+   "h": 18
+  },
+  {
+   "id": "ex1-e-claudia",
+   "group": "gx",
+   "kind": "checkbox",
+   "label": "e: Ich möchte vielleicht in Giesing wohnen. - Claudia",
+   "x": 670,
+   "y": 1017,
+   "w": 18,
+   "h": 18
+  },
+  {
+   "id": "ex1-e-teddybär",
+   "group": "gx",
+   "kind": "checkbox",
+   "label": "e: Ich möchte vielleicht in Giesing wohnen. - Teddybär",
+   "x": 785,
+   "y": 1017,
+   "w": 18,
+   "h": 18
+  }
+ ],
  "audio": [],
  "groups": [],
  "review": {
@@ -1106,69 +1207,5 @@
   "verifiedWords": 156,
   "totalWords": 156,
   "notes": []
- },
- "matchings": [
-  {
-   "id": "claTeddy",
-   "group": "gx",
-   "left": [
-    "Ich finde deinen Blog sehr gut.",
-    "Ich kenne München.",
-    "Ich finde die Maxvorstadt und das Lehel super.",
-    "Ich suche bald eine Wohnung in München.",
-    "Ich möchte vielleicht in Giesing wohnen."
-   ],
-   "right": [
-    "Claudia",
-    "Teddybär"
-   ],
-   "leftX": 193,
-   "leftWidth": 420,
-   "rightX": 660,
-   "rightWidth": 140,
-   "ys": [
-    909,
-    935,
-    961,
-    987,
-    1013
-   ],
-   "rightYs": [
-    905,
-    905
-   ],
-   "fontSize": 18.5,
-   "masks": [
-    {
-     "x": 186,
-     "y": 905,
-     "w": 432,
-     "h": 140
-    },
-    {
-     "x": 645,
-     "y": 912,
-     "w": 200,
-     "h": 132
-    }
-   ],
-   "className": "lmScanFont lmHideRight",
-   "rightXs": [
-    645,
-    745
-   ],
-   "rightHeights": [
-    140,
-    140
-   ],
-   "rightDotXs": [
-    683,
-    796
-   ],
-   "rightDotYs": [
-    977,
-    977
-   ]
-  }
- ]
+ }
 }
