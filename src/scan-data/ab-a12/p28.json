@@ -1201,7 +1201,12 @@
   }
  ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "gx",
+   "label": "Aufgabe 1"
+  }
+ ],
  "review": {
   "status": "partial",
   "verifiedWords": 156,
