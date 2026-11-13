@@ -1,7 +1,7 @@
 import {createRoot} from 'react-dom/client';
 import App from './App';
 import './adapters/page-flip';
-import {installSeekableAudio} from './seekable-audio';
+import {installSeekableAudio} from './audio-bootstrap';
 
 installSeekableAudio();
 import {configs, loadLesson, applyRouteMeta} from './navigate';
