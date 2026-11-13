@@ -96,3 +96,10 @@
 .nkb31ColorCheck{font-size:1.45cqw!important}
 
 .nkb[data-native-page="35"] .nkbLine.nkbB.nkbSans{font-family:KbFira,sans-serif;font-weight:500}
+
+.nkb[data-native-page="39"] .nkbLine{font-family:KbDroid,serif}
+.nkb[data-native-page="39"] .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
+.nkb[data-native-page="39"] .nkbLine.nkbB{font-weight:500}
+@font-face{font-family:KbDroid;src:url('/assets/fonts/droid-serif-700.woff2') format('woff2');font-weight:700;font-display:swap}
+.nkb[data-native-page="39"] .nkbLine.nkbSB{font-family:KbDroid,serif;font-weight:700}
+.nkb[data-native-page="39"] .nkbLine.nkbB[data-tw="212"]{font-weight:700}
