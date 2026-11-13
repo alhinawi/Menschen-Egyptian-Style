@@ -304,3 +304,9 @@
 [data-native-ab12="100"] .naCanvas .naText.naHead100 span[role=button],[data-native-ab12="100"] .naCanvas .naText.naWahl100 span[role=button],[data-native-ab12="100"] .naCanvas .naText.naFoot100 span[role=button]{padding:0}
 
 @font-face{font-family:DroidSerifB;src:url('/assets/fonts/droid-serif-700.woff2') format('woff2');font-weight:700;font-display:swap}
+.naCanvas .naLit101{font-family:DroidSerif;font-weight:400;color:#fff;letter-spacing:1.2px}
+.naCanvas .naBan101{font-family:FiraSans;color:#fdfdfd}
+.naCanvas .naTeil101{font-family:FiraSans;font-weight:700;color:#101216}
+.naCanvas .naDlg101{font-family:FiraSans,'Trebuchet MS',sans-serif;color:#262a35}
+.naCanvas .naFoot101{font-family:DroidSerif;color:#fff}
+.naCanvas .naMod101{font-family:FiraSans;font-weight:400;color:#fff;text-align:center}

@@ -252,6 +252,69 @@ export function NativeAB12L24({page}:{page:string}){
   <div className="naText naBadge100" style={{left:3,top:1050.5,width:43.5,height:13}}>Modul 8</div>
   {text(56.7,1047.5,20,'100','naFoot100 naNw',13.5)}{text(86.9,1047.5,4,'|','naFoot100 naNw',13.5)}{text(100.9,1047.5,50,'hundert','naFoot100 naNw',13.5)}
  </>}
+ {page==='101'&&<>
+  {art('bg',0,0,807,1094)}
+  {text(75.7,54.9,180,'LITERATUR','naLit101 naNw',29)}
+  <div className="naText naBan101 naNw" style={{left:78.6,top:141.6,width:245,transform:'rotate(-4.1deg)',transformOrigin:'left top',fontSize:25}}><Words text='WIEDERSEHEN IN WIEN'/></div>
+  {text(104.6,189.1,244,'Teil 4: Ein schöner Abend, oder?','naTeil101 naNw',15)}
+  {text(104.6,216.5,231.1,'Paul und Anja klingeln. Lisa öffnet die Tür.','naDlg101 naNw',12.0)}
+  {text(104.6,236.5,274.0,'„Hallo Paul, hallo Anja! Kommt rein. Es sind schon','naDlg101 naNw',12.0)}
+  {text(111.6,255.5,203.2,'viele Leute da. Na, und wer bist du?“','naDlg101 naNw',12.0)}
+  {text(105.6,275.4,80.7,'Herr Rossmann bellt.','naDlg101 naNw',12.0)}
+  {text(104.6,295.4,135.5,'„Das ist Herr Rossmann.“','naDlg101 naNw',12.0)}
+  {text(104.6,314.7,274.0,'„Hallo Herr Rossmann, komm auch rein!“','naDlg101 naNw',12.0)}
+  {text(104.6,333.4,292.9,'„Alles Gute zum Geburtstag, Lisa!“, sagt Paul und gibt','naDlg101 naNw',12.0)}
+  {text(113.6,353.4,81.7,'ihr die Blumen.','naDlg101 naNw',12.0)}
+  {text(104.6,372.4,290.9,'„Oh, danke, die sind schön. Das ist sehr nett von dir,','naDlg101 naNw',12.0)}
+  {text(113.6,392.3,262.0,'Paul.“ Sie lächelt. „Ich zeige euch gleich mal die','naDlg101 naNw',12.0)}
+  {text(112.6,412.6,59.8,'Wohnung.“','naDlg101 naNw',12.0)}
+  {text(105.6,431.3,218.2,'„Wow, die ist wirklich super“, sagt Anja.','naDlg101 naNw',12.0)}
+  {text(104.6,451.6,80.7,'„Und so groß.“','naDlg101 naNw',12.0)}
+  {text(105.6,470.6,279.0,'„Ich brauche auch eine große Wohnung“, sagt Lisa.','naDlg101 naNw',12.0)}
+  {text(113.6,489.2,252.1,'„Ich möchte gern bald eine Familie haben. Ich','naDlg101 naNw',12.0)}
+  {text(113.6,509.2,72.7,'liebe Kinder.“','naDlg101 naNw',12.0)}
+  {text(105.6,528.5,208.2,'„Kinder?“, fragt Paul. „Bist du …?“','naDlg101 naNw',12.0)}
+  {text(437.4,179.8,133.5,'„Nein, noch nicht. Aber mein Freund Franz und ich','naDlg101 naNw',12.0)}
+  {text(445.3,199.5,42.8,'wollen bald heiraten.“','naDlg101 naNw',12.0)}
+  {text(437.4,218.8,42.8,'„Oh …“','naDlg101 naNw',12.0)}
+  {text(438.4,237.5,275.0,'Paul und Anja setzen sich auf ein Sofa und trinken','naDlg101 naNw',12.0)}
+  {text(445.3,257.5,163.4,'etwas. Sie hören der Musik zu und sehen die','naDlg101 naNw',12.0)}
+  {text(445.3,277.4,97.6,'anderen Leute an.','naDlg101 naNw',12.0)}
+  {text(438.4,296.7,259.0,'Dann sagt Anja: „Lisa hat einen Freund. Bist du','naDlg101 naNw',12.0)}
+  {text(445.3,316.7,46.8,'traurig?“','naDlg101 naNw',12.0)}
+  {text(437.4,335.7,39.9,'„Nein.“','naDlg101 naNw',12.0)}
+  {text(437.4,355.7,41.8,'„Doch.“','naDlg101 naNw',12.0)}
+  {text(437.4,372.7,222.2,'„O.K., ein bisschen vielleicht“, sagt Paul,','naDlg101 naNw',12.0)}
+  {text(437.4,392.6,208.2,'„Weißt du was? Gehen wir spazieren.“','naDlg101 naNw',12.0)}
+  {text(437.4,413.3,64.8,'„Gute Idee!“','naDlg101 naNw',12.0)}
+  {text(453.3,458.3,281.0,'Es ist warm, der Himmel ist klar, der Mond scheint.','naDlg101 naNw',12.0)}
+  {text(452.3,478.6,269.0,'Sie gehen an der Oper vorbei und dann durch die','naDlg101 naNw',12.0)}
+  {text(461.3,498.2,88.7,'Kärntner Straße.','naDlg101 naNw',12.0)}
+  {text(452.3,517.2,270.0,'„Ist der Stephansdom nicht schön in der Nacht?“,','naDlg101 naNw',12.0)}
+  {text(460.3,537.5,56.8,'fragt Anja.','naDlg101 naNw',12.0)}
+  {text(452.3,557.5,108.6,'„Oh ja, sehr schön.“','naDlg101 naNw',12.0)}
+  {text(452.3,575.2,124.5,'„Bist du noch traurig?“','naDlg101 naNw',12.0)}
+  {text(452.3,596.1,133.5,'„Nein, eigentlich nicht.“','naDlg101 naNw',12.0)}
+  {text(452.3,615.4,59.8,'„Wirklich?“','naDlg101 naNw',12.0)}
+  {text(452.3,634.1,171.4,'„Ja, wirklich.“','naDlg101 naNw',12.0)}
+  {text(453.3,653.1,100.6,'Paul sieht Anja an.','naDlg101 naNw',12.0)}
+  {text(452.3,673.4,271.0,'‚Was war nur los mit mir”, denkt er. ‚Warum habe','naDlg101 naNw',12.0)}
+  {text(461.3,692.1,258.0,'ich Lisa so super gefunden? Sie ist nett, ja, und','naDlg101 naNw',12.0)}
+  {text(460.3,712.0,262.0,'sie ist auch hübsch. Aber eigentlich ... finde ich','naDlg101 naNw',12.0)}
+  {text(460.3,732.3,84.7,'Anja viel toller.’','naDlg101 naNw',12.0)}
+  {text(453.3,751.0,111.6,'Herr Rossmann bellt.','naDlg101 naNw',12.0)}
+  {text(452.3,771.0,149.4,'„Ja, genau, Herr Rossmann, das findest du auch,','naDlg101 naNw',12.0)}
+  {text(460.3,791.0,33.9,'oder?“','naDlg101 naNw',12.0)}
+  {text(452.3,810.0,148.4,'„Was findet Herr Rossmann auch?“, fragt Anja.','naDlg101 naNw',12.0)}
+  {text(452.3,828.9,162.4,'„Oh, nichts …“ Paul wird rot.','naDlg101 naNw',12.0)}
+  {text(452.3,849.2,283.9,'„Ein schöner Abend, oder?“, sagt er und lächelt Anja','naDlg101 naNw',12.0)}
+  {text(460.3,868.9,42.8,'an.','naDlg101 naNw',12.0)}
+  {text(453.3,887.9,98.6,'Sie lächelt zurück.','naDlg101 naNw',12.0)}
+  {text(452.3,906.9,171.4,'„Ja, wirklich ein schöner Abend …“','naDlg101 naNw',12.0)}
+  {text(620.7,1050.5,72,'hunderteins','naFoot101 naNw',14)}{text(705.5,1050.5,6,'|','naFoot101 naNw',14)}{text(719.3,1050.5,18,'101','naFoot101 naNw',14)}
+  <div style={{position:'absolute',left:747.2,top:1044.5,width:58,height:23,background:'#c8bc92'}}/>
+  {text(750,1048.5,52,'Modul 8','naMod101 naNw',11)}
+ </>}
  {page==='97'&&<>
   {text(71.7,54,580,'WIEDERHOLUNGSSTATION: GRAMMATIK','naHead97 naNw',28.5)}
   {art('bars',730,8,77,93)}
