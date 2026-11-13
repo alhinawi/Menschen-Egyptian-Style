@@ -18,7 +18,7 @@ function P67(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {art('esign3',341,524,46,52)}
   {art('esign4',450,524,48,52)}
   {art('esign5',548,524,47,52)}
-  {art('esign6',649,524,48,52)}
+  {art('esign6',653,524,44,52)}
   {art('hwmuss',158,580,40,22)}
   {art('slasha',214,586,46,16)}
   {art('dots',45,747,54,20)}
@@ -33,7 +33,7 @@ function P67(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {wl(286,12,[{x:319,w:45,t:"Parking"},{x:369,w:44,t:"allowed"}])}
   {wl(358,12,[{x:319,w:63,t:"Swimming"},{x:387,w:44,t:"allowed"}])}
   {wl(429,12,[{x:319,w:25,t:"Dogs"},{x:349,w:46,t:"allowed"}])}
-  {box('5',80,493)}  {rn(116,492.5,497,18,[{t:'Ergänzen Sie '},{t:'müssen, dürfen',i:1},{t:' oder '},{t:'nicht dürfen',i:1},{t:' in der richtigen Form.'}],{b:1,fam:'sans'})}
+  {box('5',80,493)}  {rn(116,492.5,497,18,[{t:'Ergänzen Sie ',b:1},{t:'müssen, dürfen',b:1,i:1},{t:' oder ',b:1},{t:'nicht dürfen',b:1,i:1},{t:' in der richtigen Form.',b:1}],{fam:'fira'})}
   {wl(595,15,[{x:115,w:6,t:'a'},{x:133,w:28,t:'Hier'},{x:194,w:27,t:'man'},{x:290,w:39,t:'rechts'},{x:335,w:61,t:'abbiegen.'}])}
   {wl(615,15,[{x:114,w:7,t:'b'},{x:133,w:28,t:'Hier'},{x:249,w:18,t:'ich'},{x:273,w:37,t:'leider'},{x:407,w:90,t:'fotografieren.'}])}
   {wl(634,15,[{x:115,w:5,t:'c'},{x:133,w:28,t:'Hier'},{x:258,w:14,t:'du'},{x:371,w:56,t:'rauchen.'}])}
@@ -62,12 +62,12 @@ function P67(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {box('6',70,730)}
   {kb(46,834,'KB 4')}
   {side(62,855,'STRUKTUREN')}
-  {wl(530,13,[{x:126,w:7,t:'a'}])}
-  {wl(530,13,[{x:236,w:6,t:'b'}])}
-  {wl(530,13,[{x:345,w:6,t:'c'}])}
-  {wl(530,13,[{x:456,w:6,t:'d'}])}
-  {wl(530,13,[{x:555,w:6,t:'e'}])}
-  {wl(530,13,[{x:655,w:5,t:'f'}])}
+  {wl(540,13,[{x:116,w:7,t:'a'}])}
+  {wl(540,13,[{x:223,w:6,t:'b'}])}
+  {wl(540,13,[{x:329,w:6,t:'c'}])}
+  {wl(540,13,[{x:435,w:6,t:'d'}])}
+  {wl(540,13,[{x:542,w:6,t:'e'}])}
+  {wl(540,13,[{x:649,w:5,t:'f'}])}
   {field('p67-4bd',174,262,120,'4 b Deutsch','naFieldBlank')}
   {field('p67-4cd',174,333,120,'4 c Deutsch','naFieldBlank')}
   {field('p67-4dd',174,405,120,'4 d Deutsch','naFieldBlank')}
