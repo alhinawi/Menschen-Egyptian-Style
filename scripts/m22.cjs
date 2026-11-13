@@ -14,7 +14,7 @@ const server=http.createServer((req,res)=>{const f=path.join(root,'dist',req.url
   const cv=document.querySelector('[data-native-ab12="22"] .naCanvas');
   const scale=cv.getBoundingClientRect().width/1071;
   const out=[];
-  cv.querySelectorAll('.naText,.naTitle').forEach(el=>{
+  cv.querySelectorAll('.naText,.naTitle,.naSans2').forEach(el=>{
    const r=new Range();r.selectNodeContents(el);
    const rc=r.getBoundingClientRect(),cvR=cv.getBoundingClientRect();
    out.push({t:(el.textContent||'').slice(0,30),left:Math.round((rc.left-cvR.left)/scale),right:Math.round((rc.right-cvR.left)/scale)});
