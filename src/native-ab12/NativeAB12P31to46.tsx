@@ -33,7 +33,7 @@ export function NativeAB12P31to46({page}:{page:string}){
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}${SC('.naText')},${SC('.naBold')},${SC('.naLet')},${SC('.naDlg')},${SC('.naField')}{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12='31'] .naTitle,[data-native-ab12='32'] .naTitle,[data-native-ab12='33'] .naTitle,[data-native-ab12='34'] .naTitle,[data-native-ab12='35'] .naTitle,[data-native-ab12='36'] .naTitle,[data-native-ab12='37'] .naTitle,[data-native-ab12='38'] .naTitle,[data-native-ab12='39'] .naTitle,[data-native-ab12='40'] .naTitle,[data-native-ab12='42'] .naTitle,[data-native-ab12='43'] .naTitle,[data-native-ab12='44'] .naTitle,[data-native-ab12='45'] .naTitle,[data-native-ab12='46'] .naTitle{font-family:FiraSans,sans-serif!important;letter-spacing:0!important}${SC('.naText')},${SC('.naBold')},${SC('.naLet')},${SC('.naDlg')}{font-size:20px!important}${SC('.naTitle')}{font-size:21px!important}${SC('.naText.naS20')}{font-size:18px!important}${SC('.naSmall')}{font-size:16.5px!important}${SC('.naD19')}{font-size:17.5px!important}${SC('.naField')}{font-size:19px!important}${SC('.naUrl')}{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='41'] .naModul{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='41'] .naTitle.naGB b{background:#69bb58!important}[data-native-ab12='41'] .naTitle{font-family:FiraSans,sans-serif!important;font-size:22px!important;letter-spacing:0!important}[data-native-ab12='41'] .naText,[data-native-ab12='41'] .naBold{font-size:17px!important}[data-native-ab12='41'] .naBold{font-weight:600}[data-native-ab12='41'] .naField{font-size:17px!important}[data-native-ab12='41'] .naGray{font-size:13px!important;color:#7c7c80!important;letter-spacing:0!important}[data-native-ab12='38'] .naS14{font-size:14px!important}[data-native-ab12='39'] .naForum{font-family:FiraSans,sans-serif!important;font-size:19px!important;color:#17141c;letter-spacing:0!important}[data-native-ab12='39'] .naForumT{font-family:FiraSans,sans-serif!important;font-weight:700;font-size:19px!important;color:#2a457f;letter-spacing:0!important}[data-native-ab12='39'] .naRedD{font-family:FiraSans,sans-serif!important;font-weight:700;font-size:15px!important;color:#a9261c;letter-spacing:0!important}[data-native-ab12='39'] .naBox39{position:absolute;border:1px solid #dde3ea;border-radius:3px;box-shadow:2px 3px 5px rgba(60,70,90,.25)}[data-native-ab12='39'] .naTippBar{position:absolute;background:#c0932f;color:#fff;font:bold 10px FiraSans,sans-serif;writing-mode:vertical-rl;transform:rotate(180deg);display:flex;align-items:center;justify-content:center}[data-native-ab12='39'] .naGrIt{font:italic 20px Georgia,serif!important;color:#5f7358!important;letter-spacing:0!important}[data-native-ab12='39'] .naS19{font-size:19.4px!important}[data-native-ab12='35'] .naFooter,[data-native-ab12='36'] .naFooter,[data-native-ab12='37'] .naFooter,[data-native-ab12='38'] .naFooter{font-family:DroidSerif,Georgia,serif!important;font-size:16.3px!important;letter-spacing:0!important;color:#252723}[data-native-ab12='36'] .naS19,[data-native-ab12='37'] .naS19{font-size:19.4px!important}[data-native-ab12='31'] .naHeadline,[data-native-ab12='32'] .naHeadline,[data-native-ab12='33'] .naHeadline,[data-native-ab12='34'] .naHeadline,[data-native-ab12='35'] .naHeadline,[data-native-ab12='36'] .naHeadline,[data-native-ab12='37'] .naHeadline,[data-native-ab12='38'] .naHeadline{font-size:30px!important;letter-spacing:0!important;color:#5f6460}[data-native-ab12='35'] .naSansB,[data-native-ab12='36'] .naSansB,[data-native-ab12='37'] .naSansB,[data-native-ab12='38'] .naSansB{font-family:FiraSans,sans-serif!important;font-weight:700;letter-spacing:0!important}[data-native-ab12='35'] .naUml,[data-native-ab12='36'] .naUml,[data-native-ab12='37'] .naUml,[data-native-ab12='38'] .naUml{font-size:72%;letter-spacing:0;margin-right:-2px}[data-native-ab12='35'] .naUmlRow{font-size:19.4px!important}[data-native-ab12='35'] .naUmlWrap{position:relative}[data-native-ab12='35'] .naUmlMark{position:absolute;left:-1px;top:5px;font-size:58%;letter-spacing:0;line-height:1}[data-native-ab12='35'] .naText:not(.naHand){color:#3d3d3d}[data-native-ab12='36'] .naF188{font-size:18.8px!important}[data-native-ab12='36'] .naF182{font-size:18.2px!important}[data-native-ab12='37'] .naF180{font-size:18px!important}[data-native-ab12='35'] .naF190{font-size:19px!important}[data-native-ab12='35'] .naMod,[data-native-ab12='36'] .naMod,[data-native-ab12='37'] .naMod,[data-native-ab12='38'] .naMod{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='38'] .naBio{font-size:17.5px!important;letter-spacing:-0.55px!important}[data-native-ab12='38'] .naJ{white-space:normal;text-align:justify;text-align-last:justify}`}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-500.ttf') format('truetype');font-weight:500;font-display:swap}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}${SC('.naText')},${SC('.naBold')},${SC('.naLet')},${SC('.naDlg')},${SC('.naField')}{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12='31'] .naTitle,[data-native-ab12='32'] .naTitle,[data-native-ab12='33'] .naTitle,[data-native-ab12='34'] .naTitle,[data-native-ab12='35'] .naTitle,[data-native-ab12='36'] .naTitle,[data-native-ab12='37'] .naTitle,[data-native-ab12='38'] .naTitle,[data-native-ab12='39'] .naTitle,[data-native-ab12='40'] .naTitle,[data-native-ab12='42'] .naTitle,[data-native-ab12='43'] .naTitle,[data-native-ab12='44'] .naTitle,[data-native-ab12='45'] .naTitle,[data-native-ab12='46'] .naTitle{font-family:FiraSans,sans-serif!important;letter-spacing:0!important}${SC('.naText')},${SC('.naBold')},${SC('.naLet')},${SC('.naDlg')}{font-size:20px!important}${SC('.naTitle')}{font-size:21px!important}${SC('.naText.naS20')}{font-size:18px!important}${SC('.naSmall')}{font-size:16.5px!important}${SC('.naD19')}{font-size:17.5px!important}${SC('.naField')}{font-size:19px!important}${SC('.naUrl')}{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='41'] .naModul{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='41'] .naTitle.naGB b{background:#69bb58!important}[data-native-ab12='41'] .naTitle{font-family:FiraSans,sans-serif!important;font-size:22px!important;letter-spacing:0!important}[data-native-ab12='41'] .naText,[data-native-ab12='41'] .naBold{font-size:17px!important}[data-native-ab12='41'] .naBold{font-weight:600}[data-native-ab12='41'] .naField{font-size:17px!important}[data-native-ab12='41'] .naGray{font-size:13px!important;color:#7c7c80!important;letter-spacing:0!important}[data-native-ab12='38'] .naS14{font-size:14px!important}[data-native-ab12='39'] .naForum{font-family:FiraSans,sans-serif!important;font-size:19px!important;color:#17141c;letter-spacing:0!important}[data-native-ab12='39'] .naForumT{font-family:FiraSans,sans-serif!important;font-weight:700;font-size:20px!important;color:#2a457f;letter-spacing:0!important}[data-native-ab12='39'] .naRedD{font-family:FiraSans,sans-serif!important;font-weight:500;font-size:16px!important;color:#a9261c;letter-spacing:0!important}[data-native-ab12='39'] .naBoxFade39{position:absolute;background:linear-gradient(180deg,#efe9f7 0%,#b6c9ef 55%,#ccd5fd 100%)}[data-native-ab12='39'] .naTippBar{position:absolute;background:#bf932c;color:#fff;font:bold 10px FiraSans,sans-serif;writing-mode:vertical-rl;transform:rotate(180deg);display:flex;align-items:center;justify-content:center}[data-native-ab12='39'] .naGrIt{font-family:DroidSerif,Georgia,serif!important;font-style:italic;font-size:21px!important;color:#7ba970!important;letter-spacing:0!important}[data-native-ab12='39'] .naS19{font-size:19.4px!important}[data-native-ab12='39'] .naTrain39{font-family:DroidSerif,Georgia,serif!important;font-size:32px!important;letter-spacing:0.5px!important;color:#565a57}[data-native-ab12='39'] .naT39{font-family:FiraSans,sans-serif!important;font-weight:700;font-size:21px!important;letter-spacing:0!important;color:#17141c}[data-native-ab12='39'] .naT39L{font-family:FiraSans,sans-serif!important;font-weight:700;font-size:22px!important;letter-spacing:0!important;color:#17141c;position:absolute}[data-native-ab12='39'] .naTipp39{font-family:FiraSans,sans-serif!important;font-size:18px!important;letter-spacing:0!important;color:#2b2b2b}[data-native-ab12='39'] .naTitle.naGB b{background:#77c06c!important}[data-native-ab12='35'] .naFooter,[data-native-ab12='36'] .naFooter,[data-native-ab12='37'] .naFooter,[data-native-ab12='38'] .naFooter,[data-native-ab12='39'] .naFooter{font-family:DroidSerif,Georgia,serif!important;font-size:16.3px!important;letter-spacing:0!important;color:#252723}[data-native-ab12='36'] .naS19,[data-native-ab12='37'] .naS19{font-size:19.4px!important}[data-native-ab12='31'] .naHeadline,[data-native-ab12='32'] .naHeadline,[data-native-ab12='33'] .naHeadline,[data-native-ab12='34'] .naHeadline,[data-native-ab12='35'] .naHeadline,[data-native-ab12='36'] .naHeadline,[data-native-ab12='37'] .naHeadline,[data-native-ab12='38'] .naHeadline{font-size:30px!important;letter-spacing:0!important;color:#5f6460}[data-native-ab12='35'] .naSansB,[data-native-ab12='36'] .naSansB,[data-native-ab12='37'] .naSansB,[data-native-ab12='38'] .naSansB{font-family:FiraSans,sans-serif!important;font-weight:700;letter-spacing:0!important}[data-native-ab12='35'] .naUml,[data-native-ab12='36'] .naUml,[data-native-ab12='37'] .naUml,[data-native-ab12='38'] .naUml{font-size:72%;letter-spacing:0;margin-right:-2px}[data-native-ab12='35'] .naUmlRow{font-size:19.4px!important}[data-native-ab12='35'] .naUmlWrap{position:relative}[data-native-ab12='35'] .naUmlMark{position:absolute;left:-1px;top:5px;font-size:58%;letter-spacing:0;line-height:1}[data-native-ab12='35'] .naText:not(.naHand){color:#3d3d3d}[data-native-ab12='36'] .naF188{font-size:18.8px!important}[data-native-ab12='36'] .naF182{font-size:18.2px!important}[data-native-ab12='37'] .naF180{font-size:18px!important}[data-native-ab12='35'] .naF190{font-size:19px!important}[data-native-ab12='35'] .naMod,[data-native-ab12='36'] .naMod,[data-native-ab12='37'] .naMod,[data-native-ab12='38'] .naMod{font:13px FiraSans,sans-serif!important;color:#fff!important;letter-spacing:0!important}[data-native-ab12='38'] .naBio{font-size:17.5px!important;letter-spacing:-0.55px!important}[data-native-ab12='38'] .naJ{white-space:normal;text-align:justify;text-align-last:justify}`}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='31'&&<>
   {art('0',982,42,85,78)}
   {lin(354,107,605,6,'#a6ca03')}
@@ -958,52 +958,66 @@ export function NativeAB12P31to46({page}:{page:string}){
   {check('38-2',1000,1367,{'10b-1':'falsch','10b-2':'falsch','10b-3':'richtig','10b-4':'falsch','10b-5':'richtig'})}
  </>}
   {page==='39'&&<>
-  {art('0',972,41,96,82)}
-  {text(102,81,347,'TRAINING: SCHREIBEN','naHeadline naNw')}
-  {lin(430,114,525,3,'#8acd8a')}
-  {title('1',101,163,790,'Lesen Sie Fabios Beitrag. Lesen Sie dann die Notizen und ergänzen Sie den Beitrag von Alina im Forum.','naGB')}
-  <div className='naBox39' style={{left:147,top:240,width:793,height:292}}/>
-  {text(158,249,205,'Beruf oder Traumberuf?','naForumT naNw')}
+  {art('0',895,41,177,82)}
+  {text(102,82,347,'TRAINING: SCHREIBEN','naTrain39 naNw')}
+  {lin(454,113,426,4,'#8acd8a')}
+  <div className='naTitle naGB' style={{left:101,top:158}}><b>1</b></div>
+  {text(145,154,730,'Lesen Sie Fabios Beitrag. Lesen Sie dann die Notizen und ergänzen Sie den','naT39 naNw')}
+  {text(145,172,230,'Beitrag von Alina im Forum.','naT39 naNw')}
+  {art('chrA-top',146,226,816,26)}
+  {art('chrA-bot',506,518,456,24)}
+  {art('chrA-scroll',920,252,42,262)}
+  {lin(146,252,1,258,'#d5d9d0')}
+  <div className='naBoxFade39' style={{left:146,top:516,width:360,height:14}}/>
+  {text(160,248,230,'Beruf oder Traumberuf?','naForumT naNw')}
   {text(158,279,537,'Ich gehe noch zur Schule, aber ich will unbedingt Musiker werden.','naForum naNw')}
-  {text(791,279,110,'Fabio, 7. Juli','naRedD naNw')}
+  {text(791,286,110,'Fabio, 7. Juli','naRedD naNw')}
   {text(158,304,621,'Wie ist es bei euch? Was macht ihr? Gefällt es euch? Ist das euer Traumberuf?','naForum naNw')}
   {text(158,330,531,'Was wollt ihr unbedingt noch machen? Schickt mir eure Beiträge.','naForum naNw')}
   {art('1',145,383,361,151)}
-  <div className='naBox39' style={{left:147,top:533,width:793,height:172}}/>
-  {text(786,537,110,'Alina, 7. Juli','naRedD naNw')}
-  {text(155,558,30,'Ich','naForum naNw')}
-  {field('p39-1a',190,561,640,'1 Ich')}
-  {text(845,558,10,'.','naForum naNw')}
-  {text(155,584,90,'Das ist','naForum naNw')}
-  {field('p39-1b',245,587,225,'1 Das ist')}
-  {text(478,584,10,'!','naForum naNw')}
-  {art('2',492,586,29,26)}
-  {text(533,584,330,'Ich mache jeden Tag das Gleiche. Ich','naForum naNw')}
-  {field('p39-1c',150,613,285,'1 Ich Zeile 3')}
-  {text(443,610,70,'und ich','naForum naNw')}
-  {field('p39-1d',513,613,185,'1 und ich')}
-  {text(708,610,190,'. Eigentlich will','naForum naNw')}
-  {text(150,636,25,'ich','naForum naNw')}
-  {field('p39-1e',180,639,285,'1 ich')}
-  {text(475,636,385,'. Ich spiele in meiner Freizeit Theater. Vielleicht','naForum naNw')}
-  {text(155,662,315,'melde ich mich nächstes Jahr bei einer','naForum naNw')}
-  {field('p39-1f',470,665,230,'1 bei einer')}
-  {text(708,662,35,'an.','naForum naNw')}
-  {check('39-1',955,620,{'p39-1a':'mache eine Ausbildung als Verkäuferin|mache eine Ausbildung als Verkaeuferin','p39-1b':'langweilig','p39-1c':'arbeite oft lange','p39-1d':'verdiene nicht viel','p39-1e':'Schauspielerin werden|eine Schauspielerin werden','p39-1f':'Schauspielschule'})}
-  <div className='naTitle naGB' style={{left:101,top:738,width:320}}><b>2</b><Words text='Machen Sie wie in '/><span style={{color:'#5b629d'}}>1</span><Words text=' Notizen zu den Fragen und schreiben Sie dann einen Beitrag ins Forum.'/></div>
-  <div className='naTippBar' style={{left:442,top:744,width:15,height:158}}>TIPP</div>
-  {text(470,752,480,'Sie haben Probleme beim Schreiben? Sammeln Sie Ideen und','naS19 naNw')}
-  {text(470,775,480,'machen Sie Notizen. Machen Sie Sätze aus Ihren Notizen.','naS19 naNw')}
-  {text(470,797,480,'Nach dem Schreiben: Lesen Sie Ihren Text noch dreimal und','naS19 naNw')}
-  {text(470,819,480,'suchen Sie Fehler.','naS19 naNw')}
-  {text(470,841,480,'1. Lesen: Steht das Verb immer an der richtigen Position?','naS19 naNw')}
-  {text(470,863,480,'2. Lesen: Hat das Verb die richtige Form?','naS19 naNw')}
-  {text(470,886,480,'3. Lesen: Sind die Wörter richtig geschrieben?','naS19 naNw')}
-  {text(92,941,500,'TRAINING: AUSSPRACHE','naHeadline naNw')}
-  {text(565,948,220,'Internationale Wörter','naGrIt naNw')}
-  {lin(775,977,170,3,'#8acd8a')}
-  {audio('assets/ab-a12-track18.mp3',50,1018,'2 18')}
-  {title('1',100,1012,560,'Hören Sie und markieren Sie den Wortakzent.','naGB')}
+  {art('chrB-topL',146,536,636,24)}
+  {art('chrB-topR',886,536,76,24)}
+  {art('chrB-scroll',920,556,42,146)}
+  {lin(146,560,1,140,'#d5d9d0')}
+  {text(786,543,110,'Alina, 7. Juli','naRedD naNw')}
+  {text(160,560,30,'Ich','naForum naNw')}
+  {field('p39-1a',182,549,713,'1 Ich')}
+  {text(898,560,10,'.','naForum naNw')}
+  {text(160,586,90,'Das ist','naForum naNw')}
+  {field('p39-1b',215,579,255,'1 Das ist')}
+  {text(478,586,10,'!','naForum naNw')}
+  {art('2',484,588,32,26)}
+  {text(530,586,360,'Ich mache jeden Tag das Gleiche. Ich','naForum naNw')}
+  {field('p39-1c',160,607,280,'1 Ich Zeile 3')}
+  {text(445,612,70,'und ich','naForum naNw')}
+  {field('p39-1d',507,607,268,'1 und ich')}
+  {text(778,612,140,'. Eigentlich will','naForum naNw')}
+  {text(160,638,25,'ich','naForum naNw')}
+  {field('p39-1e',182,637,283,'1 ich')}
+  {text(473,638,400,'. Ich spiele in meiner Freizeit Theater. Vielleicht','naForum naNw')}
+  {text(160,664,310,'melde ich mich nächstes Jahr bei einer','naForum naNw')}
+  {field('p39-1f',470,665,240,'1 bei einer')}
+  {text(715,664,35,'an.','naForum naNw')}
+  {check('39-1',968,640,{'p39-1a':'mache eine Ausbildung als Verkäuferin|mache eine Ausbildung als Verkaeuferin','p39-1b':'langweilig','p39-1c':'arbeite oft lange','p39-1d':'verdiene nicht viel','p39-1e':'Schauspielerin werden|eine Schauspielerin werden','p39-1f':'Schauspielschule'})}
+  <div className='naTitle naGB' style={{left:93,top:741}}><b>2</b></div>
+  <div className='naT39L naNw' style={{left:135,top:740,width:300}}><Words text='Machen Sie wie in '/><span style={{color:'#5b629d'}}>1</span><Words text=' Notizen'/></div>
+  <div className='naT39L naNw' style={{left:135,top:767,width:300}}><Words text='zu den Fragen und schreiben'/></div>
+  <div className='naT39L naNw' style={{left:135,top:795,width:300}}><Words text='Sie dann einen Beitrag ins'/></div>
+  <div className='naT39L naNw' style={{left:135,top:823,width:300}}><Words text='Forum.'/></div>
+  {lin(443,744,440,7,'#bf932c')}
+  <div className='naTippBar' style={{left:443,top:744,width:15,height:156}}>TIPP</div>
+  {text(480,752,480,'Sie haben Probleme beim Schreiben? Sammeln Sie Ideen und','naTipp39 naNw')}
+  {text(480,776,480,'machen Sie Notizen. Machen Sie Sätze aus Ihren Notizen.','naTipp39 naNw')}
+  {text(480,797,480,'Nach dem Schreiben: Lesen Sie Ihren Text noch dreimal und','naTipp39 naNw')}
+  {text(480,819,480,'suchen Sie Fehler.','naTipp39 naNw')}
+  {text(480,841,480,'1. Lesen: Steht das Verb immer an der richtigen Position?','naTipp39 naNw')}
+  {text(480,863,480,'2. Lesen: Hat das Verb die richtige Form?','naTipp39 naNw')}
+  {text(480,886,480,'3. Lesen: Sind die Wörter richtig geschrieben?','naTipp39 naNw')}
+  {text(92,944,380,'TRAINING: AUSSPRACHE','naTrain39 naNw')}
+  {text(485,953,195,'Internationale Wörter','naGrIt naNw')}
+  {lin(695,977,250,2,'#8acd8a')}
+  {audio('assets/ab-a12-track18.mp3',40,1009,'2 18')}
+  {title('1',90,1012,560,'Hören Sie und markieren Sie den Wortakzent.','naGB')}
   {text(310,1041,250,'meine Sprache / andere Sprachen','naS19 naNw')}
   {text(133,1069,20,'a','naS19 naNw')}{text(155,1069,140,'international','naS19 naNw')}
   {text(133,1095,20,'b','naS19 naNw')}{text(155,1095,140,'komponieren','naS19 naNw')}{field('p39-3b',307,1090,163,'1 b')}
@@ -1026,8 +1040,8 @@ export function NativeAB12P31to46({page}:{page:string}){
   {title('2',610,1165,370,'Wie viele internationale Wörter kennen Sie? Notieren Sie und sprechen Sie die Wörter.','naGB')}
   {art('6',679,1270,73,46)}
   {field('p39-4a',679,1318,170,'2 Wörter')}
-  {art('modul-tab',980,1397,83,25)}
-  {text(788,1397,150,'neununddreißig','naFooter')}{text(938,1397,8,'|','naFooter')}{text(958,1397,22,'39','naFooter')}
+  {art('modul-tab',979,1388,93,43)}
+  {text(788,1396,150,'neununddreißig','naFooter')}{text(938,1396,8,'|','naFooter')}{text(958,1396,22,'39','naFooter')}
  </>}
  {page==='40'&&<>
   {art('6',214,1202,148,96)}
