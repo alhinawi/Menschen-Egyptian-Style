@@ -62,3 +62,26 @@
 .naCanvas .naBadgeRT{position:absolute;background:#e31e24;z-index:2}
 .naCanvas .naBadgeRL{position:absolute;background:#e31e24;z-index:2}
 .naCanvas .naText.naLet9{color:#1a1a12;font:17px DroidSerif,Georgia,serif!important;letter-spacing:0!important}
+.naCanvas .naText.naTest10{font:26px DroidSerif,Georgia,serif!important;color:#4d5443;letter-spacing:4px!important}
+.naCanvas .naSide10{position:absolute;writing-mode:vertical-rl;transform:rotate(180deg);font:bold 11px DroidSerif,Georgia,serif;color:#3d4f80;letter-spacing:2px;white-space:nowrap}
+.naCanvas .naBand10{position:absolute;background:#fafcda}
+.naCanvas .naBand10m{position:absolute;background:#fbf3c0}
+.naCanvas .naText.naWord10{font:15.6px DroidSerif,Georgia,serif!important;color:#101a6e;letter-spacing:0!important}
+.naCanvas .naText.naSep10{font:15.6px DroidSerif,Georgia,serif!important;color:#101a6e;letter-spacing:0!important}
+.naCanvas .naText.naPkt10{font:10px Arial,Helvetica,sans-serif!important;color:#4f5254;letter-spacing:1.5px!important}
+.naCanvas .naText.naWWW{font:13px DroidSerif,Georgia,serif!important;color:#5e6254;letter-spacing:0!important}
+.naCanvas .naText.naTblH{font:bold 15px DroidSerif,Georgia,serif!important;color:#2f2e25;letter-spacing:0!important}
+.naCanvas .naText.naTblT{font:14px DroidSerif,Georgia,serif!important;color:#222;letter-spacing:0!important}
+.naCanvas .naTblBand{position:absolute;background:#eae5c4}
+.naCanvas .naTblDot{position:absolute;width:16px;height:16px;border-radius:4px;box-shadow:inset 0 0 2px #0003}
+.naCanvas .naDotR{background:linear-gradient(#f8b4a8,#e8232a 45%,#c00808)}
+.naCanvas .naDotY{background:linear-gradient(#fdf6b0,#fae800 45%,#e0c400)}
+.naCanvas .naDotG{background:linear-gradient(#c8f0a0,#4da645 45%,#3a8a35)}
+.naCanvas .naRad10{position:absolute;width:18px;height:18px;border:1.5px solid #c9cbc0;border-radius:50%;background:#fff;z-index:2}
+[data-native-ab12="10"] .naCanvas .naText{font-family:DroidSerif,Georgia,serif!important;letter-spacing:0!important}
+[data-native-ab12="10"] .naCanvas .naField{font-family:DroidSerif,Georgia,serif!important;letter-spacing:0!important}
+[data-native-ab12="10"] .naCanvas .naYT{font:bold 19px FiraSans,'Trebuchet MS',sans-serif!important;letter-spacing:0!important}
+[data-native-ab12="10"] .naCanvas .naLet9{font:17px DroidSerif,Georgia,serif!important;letter-spacing:0!important}
+[data-native-ab12="10"] .naCanvas .naTest10{font:26px DroidSerif,Georgia,serif!important;letter-spacing:4px!important}
+[data-native-ab12="10"] .naCanvas .naPkt10{font:10px Arial,Helvetica,sans-serif!important;letter-spacing:1.5px!important}
+.naCanvas .naField.naFld10d{border-bottom:0!important;background:linear-gradient(90deg,#8f8f8f 0 7px,transparent 7px 11px) left bottom/11px 1px repeat-x!important}
