@@ -156,6 +156,7 @@
 .nativeAB12[data-native-ab12="65"] .naRCanvas .naLined{background:transparent!important;border:0!important;box-shadow:none!important}
 .nativeAB12[data-native-ab12="50"] .naRCanvas .naRField,
 .nativeAB12[data-native-ab12="51"] .naRCanvas .naRField{height:24px!important}
+.nativeAB12[data-native-ab12="50"] .naRCanvas .naRField.sl50{height:22px!important}
 .nativeAB12[data-native-ab12="49"] .naRCanvas .naRField.naMini{height:22px!important;font-size:14px!important}
 .nativeAB12[data-native-ab12="79"] .naRCanvas .naRField.sl{border-bottom-color:transparent!important;height:18px!important;font-size:15px!important}
 .nativeAB12[data-native-ab12="79"] .naRCanvas .naRField.sl.lo{height:14px!important;font-size:13px!important}
