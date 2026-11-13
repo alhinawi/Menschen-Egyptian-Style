@@ -1466,5 +1466,72 @@
   ],
   "verifiedWords": 193,
   "totalWords": 193
- }
+ },
+ "matchings": [
+  {
+   "id": "task10",
+   "group": "gx",
+   "left": [
+    "Natascha und Ella singen und schreiben\nLieder.",
+    "Klaus hat kein Geld.",
+    "Meine Tochter fährt gern Motorrad.",
+    "Am Freitag spielt unsere Lieblingsband in\nBerlin und es gibt keine Tickets mehr."
+   ],
+   "right": [
+    "Ich würde ihr gern ein Motorrad\nschenken.",
+    "Wie schade! Wir würden gern zum\nKonzert gehen.",
+    "Aber er würde gern den Führer-\nschein machen.",
+    "Sie würden gern eine CD machen."
+   ],
+   "leftX": 134,
+   "leftWidth": 272,
+   "rightX": 444,
+   "rightWidth": 271,
+   "ys": [
+    370,
+    409,
+    429,
+    448
+   ],
+   "rightYs": [
+    363,
+    402,
+    441,
+    480
+   ],
+   "itemHeights": [
+    44,
+    19,
+    19,
+    44
+   ],
+   "rightHeights": [
+    44,
+    44,
+    44,
+    22
+   ],
+   "multiline": true,
+   "fontSize": 15,
+   "example": [
+    0,
+    3
+   ],
+   "masks": [
+    {
+     "x": 130,
+     "y": 370,
+     "w": 285,
+     "h": 125
+    },
+    {
+     "x": 410,
+     "y": 367,
+     "w": 305,
+     "h": 145
+    }
+   ],
+   "lineHeight": 22
+  }
+ ]
 }
