@@ -9,7 +9,8 @@ const specs=Object.fromEntries(pages.map(n=>[n,JSON.parse(fs.readFileSync(`src/n
  for(const width of [320,390])for(const n of pages){
   const spec=specs[n];const p=await b.newPage({viewport:{width,height:900},isMobile:true,hasTouch:true});p.setDefaultTimeout(8000);
   const errors=[];p.on('pageerror',e=>errors.push(e.message));
-  await p.goto(`http://127.0.0.1:${PORT}/ab-a12-l17-20.html#${n}`);
+  const html=n<=35?'ab-a12-l13-16.html':n<=65?'ab-a12-l17-20.html':'ab-a12-l21-24.html';
+  await p.goto(`http://127.0.0.1:${PORT}/${html}#${n}`);
   await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true',null,{timeout:30000});
   const h=p.locator(`[data-native-ab12="${n}"]`);await h.waitFor();
   assert.equal(await h.locator('select').count(),0);

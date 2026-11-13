@@ -30,3 +30,12 @@
 .naRCanvas .naRCirc{border:2px solid #e2e0cd!important;border-radius:50%!important;box-sizing:border-box!important;text-align:center;padding:0!important;font-size:13px!important;color:#2d4d99}
 .naRCanvas .naRCirc{width:18px!important;height:18px!important;min-width:0!important;min-height:0!important}
 .naRCanvas .naRThin{font-weight:400!important}
+@font-face{font-family:ABRangeDroid;src:url('/assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}
+[data-native-ab12="79"] .naRCanvas,[data-native-ab12="79"] .naRCanvas .naText{font-family:ABRangeDroid,DroidSerif,Georgia,serif}
+[data-native-ab12="79"] .naRField{font-family:ABRangeDroid,DroidSerif,Georgia,serif!important}
+[data-native-ab12="79"] .naRCanvas .naText.naRSans,[data-native-ab12="79"] .naRCanvas .naText.naRSansR{font-family:FiraSans,'Trebuchet MS',sans-serif}
+[data-native-ab12="79"] .naRCanvas .naRS{text-decoration-thickness:3px}
+[data-native-ab12="79"] .naRCanvas .naRS .tapWord{text-decoration:line-through;text-decoration-color:#3566b5;text-decoration-thickness:3px}
+[data-native-ab12="79"] .naRCanvas .naHand.naRS .tapWord{text-decoration-color:currentColor;text-decoration-thickness:1.5px}
+
+[data-native-ab12="79"] .naRCanvas .naText:not(.naRSans):not(.naRSansR){-webkit-text-stroke:.22px currentColor}
