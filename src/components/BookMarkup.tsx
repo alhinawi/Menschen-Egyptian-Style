@@ -1,3 +1,4 @@
+import {AB11LineMatching88} from '../exercises/AB11LineMatching88';
 import {NativeAB11Lesson10Start} from '../native-ab11/NativeAB11Lesson10Start';
 import {NativeAB11Module3Close} from '../native-ab11/NativeAB11Module3Close';
 import {NativeAB11Module3Review} from '../native-ab11/NativeAB11Module3Review';
@@ -57,6 +58,7 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   if(tag === 'NativePage')return createElement(NativePage,{key,book:attrs.book,page:attrs.page});
   if(tag === 'NativePilot')return createElement(NativePilot,{key,page:attrs.page});
   if(tag === 'NativeKB12')return createElement(NativeKB12,{key,page:attrs.page});
+  if(tag === 'AB11LineMatching88')return createElement(AB11LineMatching88,{key});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['77','78'].includes(String(attrs.page)))return createElement(NativeAB11Lesson10Start,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['74','75','76'].includes(String(attrs.page)))return createElement(NativeAB11Module3Close,{key,page:String(attrs.page)});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['71','72','73'].includes(String(attrs.page)))return createElement(NativeAB11Module3Review,{key,page:String(attrs.page)});
