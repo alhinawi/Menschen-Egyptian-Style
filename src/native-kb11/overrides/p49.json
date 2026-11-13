@@ -1,0 +1,58 @@
+{
+  "keep": [
+    [
+      0,
+      0,
+      1075,
+      1521
+    ]
+  ],
+  "checks": {
+    "task2": [
+      230,
+      1446
+    ]
+  },
+  "addfields": [
+    {
+      "id": "fridge-0",
+      "group": "task1-free",
+      "kind": "text",
+      "label": "(fast) immer",
+      "x": 230,
+      "y": 1234,
+      "w": 148,
+      "h": 26
+    },
+    {
+      "id": "fridge-1",
+      "group": "task1-free",
+      "kind": "text",
+      "label": "oft",
+      "x": 400,
+      "y": 1208,
+      "w": 102,
+      "h": 26
+    },
+    {
+      "id": "fridge-2",
+      "group": "task1-free",
+      "kind": "text",
+      "label": "manchmal",
+      "x": 525,
+      "y": 1208,
+      "w": 135,
+      "h": 26
+    },
+    {
+      "id": "fridge-3",
+      "group": "task1-free",
+      "kind": "text",
+      "label": "(fast) nie",
+      "x": 690,
+      "y": 1208,
+      "w": 125,
+      "h": 26
+    }
+  ]
+}
