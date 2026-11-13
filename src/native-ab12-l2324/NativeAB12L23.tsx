@@ -76,9 +76,9 @@ export function NativeAB12L23({page}:{page:string}){
   {field('84-4-c3',154,959,331,'4 c scheint auch die Sonne')}{text(495,959,220,'(auch, Sonne, scheinen).','naS14 naNw')}
   {text(121,978,16,'d')}{text(138,978,14,'■','naSq')}{text(150,978,215,'Tschüs, bis heute Abend.','naS14 naNw')}{text(370,978,14,'▲','naTri')}{text(390,978,320,'Tschüs. Und vergiss deine Regenjacke nicht. Heute Nach-','naS14 naNw')}
   {text(150,998,55,'mittag','naS14 naNw')}{field('84-4-d',200,998,389,'4 d gibt es ein Gewitter')}{text(600,998,190,'(es, Gewitter, geben).','naS14 naNw')}
-  {check('84-4',150,1022,{'84-4-a':'ist es immer so windig','84-4-b1':'regnet es schon seit drei Tagen','84-4-b2':'Es ist warm und sonnig','84-4-c1':'ist es kalt','84-4-c2':'gibt es viel Schnee|es gibt viel Schnee','84-4-c3':'scheint auch die Sonne','84-4-d':'gibt es ein Gewitter|gibt es Gewitter'})}
+  {check('84-4',150,1014,{'84-4-a':'ist es immer so windig','84-4-b1':'regnet es schon seit drei Tagen','84-4-b2':'Es ist warm und sonnig','84-4-c1':'ist es kalt','84-4-c2':'gibt es viel Schnee|es gibt viel Schnee','84-4-c3':'scheint auch die Sonne','84-4-d':'gibt es ein Gewitter|gibt es Gewitter'})}
   {art('modul-tab',8,1048,54,22)}
-  {text(70,1050,200,'84  |  vierundachtzig','naFooter')}
+  {text(70.3,1053,30,'84','naFootL23B naNw',11)}{text(92.0,1053,6,'|','naFootL23 naNw',12.3)}{text(110,1053,110,'vierundachtzig','naFootL23 naNw',12.3)}
  </>}
  {page==='85'&&<>
   <div className="naBasis" style={{left:60,top:48}}>BASISTRAINING</div>
@@ -147,7 +147,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(103,1008,16,'c','naS14 naNw')}{text(118,1008,483,'In Norddeutschland war der Winter in diesem Jahr besonders grau und','naS14 naNw')}{field('85-8-c',605,1005,118,'farblos')}{text(729,1008,10,'.','naS14')}
   {check('85-8',118,1030,{'85-8-a':'wolkenlos','85-8-b':'arbeitslos','85-8-c':'farblos'})}
   {art('modul-tab',740,1043,68,20)}
-  <div className="naText naFooter" style={{left:420,top:1046,width:310,textAlign:'right'}}>fünfundachtzig&nbsp;&nbsp;|&nbsp;&nbsp;85</div>
+  {text(717.3,1046,30,'85','naFootL23B naNw',11)}{text(700.0,1046,6,'|','naFootL23 naNw',12.3)}{text(598.7,1046,110,'fünfundachtzig','naFootL23 naNw',12.3)}
  </>}
  {page==='86'&&<>
   <div className="naBasisL" style={{left:90,top:51}}>BASISTRAINING</div>
@@ -216,7 +216,7 @@ export function NativeAB12L23({page}:{page:string}){
   <LineMatching id="86-12r" left={['denn','aber','oder','und']} right={['die Spülmaschine funktioniert nicht.','am liebsten bin ich in den Bergen.','findest du den Rock schöner?','Baden ist auch verboten.']} values={c.values} onMatch={set} leftX={433} rightX={430} leftWidth={6} rightWidth={280} ys={[870,890,911,931]} width={807} height={1094} fontSize={13.5} multiple={true}/>
   {check('86-12',620,960,{'86-12-0':'2|','86-12-1':'3','86-12-2':'1','86-12-3':'0','86-12r-0':'0','86-12r-1':'1','86-12r-2':'2|','86-12r-3':'3'})}
   {art('modul-tab',8,1049,60,16)}
-  {text(76,1050,200,'86  |  sechsundachtzig','naFooter')}
+  {text(69.3,1051,30,'86','naFootL23B naNw',11)}{text(92.0,1051,6,'|','naFootL23 naNw',12.3)}{text(109.5,1051,110,'sechsundachtzig','naFootL23 naNw',12.3)}
  </>}
  {page==='87'&&<>
   <div className="naTrainHead" style={{left:71,top:62}}>TRAINING: HÖREN</div>
@@ -278,7 +278,7 @@ export function NativeAB12L23({page}:{page:string}){
   {title('2',68,921,400,'Hören Sie und sprechen Sie dann.','naRB naNw naS15')}
   {text(101,954,14,'a','naBookSerif naBk87')}{text(120,954,120,'Wetter','naBookSerif naBk87 naNw')}{text(114,971,120,'Wort','naBookSerif naBk87 naNw')}{text(121,989,200,'macht: Wetterwörter','naBookSerif naBk87 naNw')}
   {art('modul-tab',739,1047,59,17)}
-  <div className="naText naFooter" style={{left:420,top:1048,width:313,textAlign:'right'}}>siebenundachtzig&nbsp;&nbsp;|&nbsp;&nbsp;87</div>
+  {text(716.6,1046,30,'87','naFootL23B naNw',11)}{text(699.9,1046,6,'|','naFootL23 naNw',12.3)}{text(586.5,1046,110,'siebenundachtzig','naFootL23 naNw',12.3)}
  </>}
  {page==='88'&&<>
   <div className="naTestHead" style={{left:80,top:64}}>TEST</div>
@@ -348,7 +348,7 @@ export function NativeAB12L23({page}:{page:string}){
     <i className={'naSDot naSD'+(r===0?'R':r===1?'Y':'G')} style={{left:462,top:964+r*26}}/>{text(494,963+r*26,90,['0–3 Punkte','4 Punkte','5–6 Punkte'][r],'naScoreR naNw')}
   </span>)}
   {art('modul8-tab',0,1047,48,20)}
-  <div className="naText naFoot88" style={{left:60,top:1050,width:200}}>88&nbsp;&nbsp;|&nbsp;&nbsp;achtundachtzig</div>
+  {text(60.3,1051,30,'88','naFootL23B naNw',11)}{text(82.9,1051,6,'|','naFootL23 naNw',12.3)}{text(99.4,1051,110,'achtundachtzig','naFootL23 naNw',12.3)}
   <div className="naText naFoot88" style={{left:420,top:1046,width:180,textAlign:'right'}}>www.hueber.de/menschen/lernen</div>
  </>}
  {page==='90'&&<>
@@ -423,7 +423,7 @@ export function NativeAB12L23({page}:{page:string}){
   {field('90-3d',123,999,591,'3 d','naFieldNL')}{ruleS(123,1018.6,714,1033.3)}{text(715,1024,10,'.','naBookSerif naBk88 naNw naPrd')}
   {check('90-3',648,996,{'90-3b':'Am sechsundzwanzigsten Oktober','90-3c':'Am dritten Oktober','90-3d':'Vom vierundzwanzigsten bis zum sechsundzwanzigsten Dezember'})}
   {art('modul8-tab',0,1047,48,20)}
-  <div className="naText naFoot88" style={{left:52,top:1047,width:200}}>90&nbsp;&nbsp;|&nbsp;&nbsp;neunzig</div>
+  {text(52.3,1045,30,'90','naFootL23B naNw',11)}{text(74.9,1045,6,'|','naFootL23 naNw',12.3)}{text(92.7,1045,110,'neunzig','naFootL23 naNw',12.3)}
  </>}
  {page==='91'&&<>
   <div className="naBasis" style={{left:78,top:50}}>BASISTRAINING</div>
@@ -551,7 +551,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(699,984,10,'.','naBookSerif')}
   {check('91-7',714,1008,{'91-7a':'Neujahr','91-7b':'Hochzeit','91-7c':'Prüfungen','91-7d':'Einweihungsparty'})}
   {art('modul8-tab',742,1043,65,25)}
-  <div className="naText naFooter" style={{left:420,top:1045,width:310,textAlign:'right'}}>einundneunzig&nbsp;&nbsp;|&nbsp;&nbsp;91</div>
+  {text(723.6,1044,30,'91','naFootL23B naNw',11)}{text(706.9,1044,6,'|','naFootL23 naNw',12.3)}{text(606.3,1044,110,'einundneunzig','naFootL23 naNw',12.3)}
  </>}
  {page==='92'&&<>
   <div className="naBasisL" style={{left:88,top:59}}>BASISTRAINING</div>
@@ -624,7 +624,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(439,755,16,'c','naLet92')}{rule(440,790,130)}{rule(440,810,130)}
   {text(438,854,16,'d','naLet92')}{rule(439,887,130)}{rule(439,907,130)}
   {art('modul8-tab',0,1044,52,20)}
-  {text(62,1049,140,'92  |  zweiundneunzig','naFooter')}
+  {text(61.3,1047,30,'92','naFootL23B naNw',11)}{text(83.9,1047,6,'|','naFootL23 naNw',12.3)}{text(100.5,1047,110,'zweiundneunzig','naFootL23 naNw',12.3)}
  </>}
  {page==='93'&&<>
   <div className="naTrainHead naTrainHead93" style={{left:75,top:60}}>TRAINING: SCHREIBEN</div>
@@ -684,7 +684,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(130,949,48,'Sprech-','naBookSerif naRegelT93 naNw')}
   {field('p93-a2',177,943,58,'2 Regel Sprech-')}
   {text(233,949,12,'.','naBookSerif naRegelT93 naNw')}
-  {check('93-2',706,903,{'p93-a2':'Pause'})}
+  {check('93-2',130,975,{'p93-a2':'Pause'})}
   {title('3',455,685,260,'Schreiben Sie zuerst die Sätze.','naRB naNw')}
   {text(487,707,240,'Flüstern Sie die Sätze und','naInst93 naNw')}
   {text(487,726,240,'sprechen Sie sie dann laut.','naInst93 naNw')}
@@ -702,7 +702,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(487,998,270,'Sprechen Sie: zuerst langsam und dann','naInst93b naNw')}
   {text(488,1016,200,'immer schneller.','naInst93b naNw')}
   {art('modul-tab',743,1046,56,20)}
-  <div className="naText naFooter" style={{left:420,top:1047,width:315,textAlign:'right'}}>dreiundneunzig&nbsp;&nbsp;|&nbsp;&nbsp;93</div>
+  {text(718.6,1045,30,'93','naFootL23B naNw',11)}{text(701.0,1045,6,'|','naFootL23 naNw',12.3)}{text(597.3,1045,110,'dreiundneunzig','naFootL23 naNw',12.3)}
  </>}
  {page==='94'&&<>
   <div className="naTestHead naTestHead94" style={{left:84,top:62}}>TEST</div>
@@ -770,7 +770,7 @@ export function NativeAB12L23({page}:{page:string}){
   </span>)}
   {text(324,1013,167,'www.hueber.de/menschen/lernen','naFoot88')}
   {art('modul8-tab',0,1047,48,20)}
-  <div className="naText naFoot88" style={{left:62,top:1048,width:200}}>94&nbsp;&nbsp;|&nbsp;&nbsp;vierundneunzig</div>
+  {text(61.3,1049,30,'94','naFootL23B naNw',11)}{text(83.9,1049,6,'|','naFootL23 naNw',12.3)}{text(101,1049,110,'vierundneunzig','naFootL23 naNw',12.3)}
  </>}
  </Canvas>;
 }
