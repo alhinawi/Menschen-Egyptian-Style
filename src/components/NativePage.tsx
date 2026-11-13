@@ -1,3 +1,4 @@
+import {usePageReset} from '../exercises/usePageReset';
 import {useLayoutEffect,useRef,useState} from 'react';
 import {createPortal} from 'react-dom';
 import type {ScanData,ScanWord,ScanBox} from '../scan-data/schema';
@@ -10,6 +11,7 @@ const normSet=(s:string)=>s.split(/[\n;]+/).map(norm).filter(Boolean).sort().joi
 export function NativePage({book,page}:{book:string;page:string}){const d=records[book+':'+page];if(!d)return null;return <NativePageContent key={book+page} d={d}/>}
 function NativePageContent({d}:{d:NativeData}){
  const key='menschen-native-'+d.book+'-'+d.page;const [values,S]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return {}}});const [result,R]=useState<Record<string,boolean>>({});const video=useRef<HTMLDialogElement>(null);const [activeVideo,V]=useState<NonNullable<NativeData['videos']>[number]|null>(null);const audio=useRef<HTMLAudioElement>(null);const canvas=useRef<HTMLDivElement>(null);const host=useRef<HTMLDivElement>(null);
+ usePageReset(d.page,key,()=>{S({});R({})});
  const set=(id:string,v:string)=>{const n={...values,[id]:v};S(n);localStorage.setItem(key,JSON.stringify(n))};
  useLayoutEffect(()=>{const c=canvas.current!,h=host.current!;const fit=()=>{const s=Math.min(h.clientWidth/d.width,(h.clientHeight-70)/d.height);c.style.transform=`translate(-50%,-50%) scale(${s})`;for(const el of c.querySelectorAll<HTMLElement>('.nativeWord')){el.style.transform='none';const width=el.offsetWidth;el.style.transform=`scaleX(${Number(el.dataset.width)/width})`}};fit();const o=new ResizeObserver(fit);o.observe(h);return ()=>o.disconnect()},[d]);
  const box=(f:ScanBox)=>({left:f.x,top:f.y,width:f.w,height:f.h});
