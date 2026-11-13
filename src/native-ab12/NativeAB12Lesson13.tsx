@@ -7,7 +7,7 @@ import './native-ab12-l13.css';
 
 function Words({text}:{text:string}){return <>{text.split(/(\s+)/).map((w,i)=>/\p{L}/u.test(w)?<span key={i} className="tapWord" role="button" tabIndex={0} data-word={w.replace(/^[^\p{L}]+|[^\p{L}]+$/gu,'')} data-phrase={text}>{w}</span>:w)}</>}
 const normalize=(s:string)=>s.normalize('NFC').trim().toLocaleLowerCase('de').replace(/[.!?]+$/,'').replace(/\s+/g,' ');
-const HEIGHTS:Record<string,number>={'6':1465,'7':1447,'8':1452,'9':1447,'10':1452,'11':1447};
+const HEIGHTS:Record<string,number>={'6':1465,'7':1447,'8':1452,'9':1447,'10':1452,'11':1447,'12':1452};
 
 export function NativeAB12Lesson13({page}:{page:string}){
  const W=1071,H=HEIGHTS[page]||1447;
@@ -416,6 +416,87 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(155,1320,545,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naInstr11 naNw')}
   <div className="naModul9b" style={{left:1003,top:1393,width:68,height:19}}>Modul 5</div>
   <div className="naText naFooter naNw" style={{left:921,top:1388,width:80,whiteSpace:'pre'}}>elf{'  |  '}11</div>
+ </>}
+ {page==='12'&&<>
+  <div className="naBand12" style={{left:2,top:43,width:966,height:77}}/>
+  {art('band-photo',0,43,372,77)}
+  {text(428,60,510,'Wie findest du Ottos Haus?','naTitle12 naNw')}
+  {text(69,189,50,'KB 2','naKB12 naNw')}
+  <div className="naSide10" style={{left:88,top:231,height:41}}>WÖRTER</div>
+  {text(69,512,50,'KB 3','naKB12 naNw')}
+  <div className="naSide10" style={{left:88,top:556,height:41}}>WÖRTER</div>
+  {text(69,771,50,'KB 4','naKB12 naNw')}
+  <div className="naSide10" style={{left:88,top:809,height:66}}>STRUKTUREN</div>
+  {text(69,1003,50,'KB 4','naKB12 naNw')}
+  {art('dots',48,1028,60,18)}
+  {text(69,1093,50,'KB 5','naKB12 naNw')}
+  <div className="naSide10" style={{left:88,top:1138,height:68}}>STRUKTUREN</div>
+  {badge9('1',110,182)}
+  {text(150,182,330,'Haus und Garten. Ordnen Sie zu.','naYT naNw')}
+  <div className="naBank12Bg" style={{left:154,top:220,width:432,height:23}}/>
+  {text(160,221,44,'Haus','naBank12 naNw')}{text(204,221,10,'|','naBank12 naNw')}{text(213,221,58,'Garten','naBank12 naNw')}{text(273,221,10,'|','naBank12 naNw')}{text(281,221,60,'Garage','naBank12 naNw')}{text(342,221,10,'|','naBank12 naNw')}{text(349,221,58,'Treppe','naBank12 naNw')}{text(409,221,10,'|','naBank12 naNw')}{text(418,221,44,'Baum','naBank12 naNw')}{text(456,221,10,'|','naBank12 naNw')}{text(478,221,60,'Fenster','naBank12 naNw')}{text(542,221,10,'|','naBank12 naNw')}{text(550,221,64,'Balkon','naBank12 naNw')}<div className="naStrike10" style={{left:548,top:231,width:68,height:2}}/>
+  {art('house',338,246,424,226)}
+  {field('12-1a',150,281,190,'1a Haus-Teil links oben','naFld9')}
+  {field('12-1b',183,337,157,'1b Haus-Teil links Mitte','naFld9')}
+  {field('12-1c',150,396,190,'1c Haus-Teil links unten','naFld9')}
+  {field('12-1d',758,243,191,'1d Haus-Teil rechts oben','naFld9')}
+  <div className="naLine12" style={{left:753,top:309,width:196,height:1}}/>
+  {art('balkon-hw',752,282,108,26)}
+  {field('12-1e',758,337,191,'1e Haus-Teil rechts Mitte','naFld9')}
+  {field('12-1f',758,396,191,'1f Haus-Teil rechts unten','naFld9')}
+  {badge9('2',110,505)}
+  {text(150,505,430,'Wie heißen die Zimmer? Notieren Sie.','naYT naNw')}
+  {text(154,546,20,'a','naLet9')}{text(178,546,420,'Hier stehen der Kühlschrank und hier kocht man:','naEx12 naNw')}{art('kueche-hw',608,540,74,30)}
+  {text(154,571,20,'b','naLet9')}{text(178,571,330,'Die Kinder spielen und schlafen hier:','naEx12 naNw')}{field('12-2b',513,571,303,'2b Zimmer','naFld9')}
+  {text(154,597,20,'c','naLet9')}{text(178,597,530,'Sie gehen ins Haus und kommen zuerst in dieses Zimmer:','naEx12 naNw')}{field('12-2c',177,622,302,'2c Zimmer','naFld9')}
+  {text(154,649,20,'d','naLet9')}{text(178,649,700,'Hier können Sie fernsehen, lesen oder Freunde treffen. Oft stehen hier ein','naEx12 naNw')}
+  {text(178,674,180,'Sofa und ein Sessel:','naEx12 naNw')}{field('12-2d',355,674,196,'2d Zimmer','naFld9')}
+  {text(154,701,20,'e','naLet9')}{text(178,701,455,'In diesem Raum gibt es ein Bett und einen Schrank:','naEx12 naNw')}{field('12-2e',642,700,301,'2e Zimmer','naFld9')}
+  {check('12-2',905,725,{'12-2b':'Kinderzimmer|das Kinderzimmer','12-2c':'Flur|der Flur','12-2d':'Wohnzimmer|das Wohnzimmer','12-2e':'Schlafzimmer|das Schlafzimmer'})}
+  {badge9('3',110,764)}
+  {text(150,764,480,'Antworten Sie mit dem Genitiv wie im Beispiel.','naYT naNw')}
+  {text(154,804,20,'a','naLet9')}{text(178,804,395,'Wie findest du den Garten von Maximilian? –','naEx12 naNw')}
+  <div className="naLine12" style={{left:575,top:823,width:152,height:1}}/>
+  {art('garten-hw',576,796,152,24)}
+  {text(730,804,150,'ist sehr schön.','naEx12 naNw')}
+  {text(154,830,20,'b','naLet9')}{text(178,830,520,'Und magst du das Haus von Maximilian? – Nein, ich finde','naEx12 naNw')}{field('12-3b',697,830,263,'3b Genitiv','naFld9')}
+  {text(178,855,180,'nicht so schön.','naEx12 naNw')}
+  {text(154,881,20,'c','naLet9')}{text(178,881,375,'Wie heißt der Nachbar von Maximilian? –','naEx12 naNw')}{field('12-3c',554,882,308,'3c Genitiv','naFld9')}{text(868,881,90,'heißt Jan.','naEx12 naNw')}
+  {text(154,907,20,'d','naLet9')}{text(178,907,485,'Ist die Nachbarin von Maximilian verheiratet? – Nein,','naEx12 naNw')}{field('12-3d',665,907,283,'3d Genitiv','naFld9')}
+  {text(178,933,180,'ist geschieden.','naEx12 naNw')}
+  {check('12-3',905,940,{'12-3b':'Maximilians Haus','12-3c':'Maximilians Nachbar','12-3d':'Maximilians Nachbarin'})}
+  {badge9('4',110,996)}
+  {text(152,996,445,'Schreiben Sie eigene Sätze zu Sophie wie in','naYT naYTb12 naNw')}{text(591,996,14,'3','naYT naYTb12 naNum12 naNw')}{text(610,996,210,'und tauschen Sie mit','naYT naYTb12 naNw')}
+  {text(152,1022,580,'Ihrer Partnerin / Ihrem Partner. Sie/Er ergänzt den Genitiv.','naYT naYTb12 naNw')}
+  {badge9('5',110,1087)}
+  {text(150,1087,200,'Schreiben Sie.','naYT naNw')}
+  {art('photos-be',280,1082,590,122)}
+  {art('photos-a',140,1108,140,96)}
+  {text(176,1204,230,'Was sucht Otto?','naHeadQ12 naNw')}
+  {text(455,1204,260,'Wo sind Ottos Sachen?','naHeadQ12 naNw')}
+  {text(155,1243,18,'a','naLet9')}
+  <div className="naLine12" style={{left:176,top:1263,width:231,height:1}}/>
+  {art('auto-hw-l',174,1235,84,27)}
+  {text(155,1269,18,'b','naLet9')}{field('12-5lb',176,1268,231,'5b Was sucht Otto','naFld9')}
+  {text(155,1295,18,'c','naLet9')}{field('12-5lc',176,1294,231,'5c Was sucht Otto','naFld9')}
+  {text(155,1321,18,'d','naLet9')}{field('12-5ld',176,1320,231,'5d Was sucht Otto','naFld9')}
+  {text(155,1347,18,'e','naLet9')}{field('12-5le',176,1346,231,'5e Was sucht Otto','naFld9')}
+  {text(436,1243,18,'a','naLet9')}
+  <div className="naLine12" style={{left:457,top:1263,width:231,height:1}}/>
+  {art('auto-hw-r',452,1235,84,27)}
+  {text(436,1269,18,'b','naLet9')}{field('12-5rb',457,1268,231,'5b Wo sind Ottos Sachen','naFld9')}
+  {text(436,1295,18,'c','naLet9')}{field('12-5rc',457,1294,231,'5c Wo sind Ottos Sachen','naFld9')}
+  {text(436,1321,18,'d','naLet9')}{field('12-5rd',457,1320,231,'5d Wo sind Ottos Sachen','naFld9')}
+  {text(436,1347,18,'e','naLet9')}{field('12-5re',457,1346,231,'5e Wo sind Ottos Sachen','naFld9')}
+  {text(745,1244,180,'steht vor dem Café.','naChip12 naNw')}
+  {text(745,1270,180,'sind auf dem Tisch.','naChip12 naNw')}
+  {text(745,1296,180,'ist in der Tasche.','naChip12 naNw')}
+  {text(745,1322,210,'ist neben dem Schlüssel.','naChip12 naNw')}
+  {text(745,1348,200,'ist unter der Zeitung.','naChip12 naNw')}
+  {check('12-5l',180,1372,{'12-5lb':'Seine Schlüssel','12-5lc':'Sein Handy','12-5ld':'Seine Brille','12-5le':'Seinen Stift|Sein Stift'})}
+  {check('12-5r',457,1372,{'12-5rb':'Seine Schlüssel','12-5rc':'Sein Handy','12-5rd':'Seine Brille','12-5re':'Sein Stift'})}
+  <div className="naModul10" style={{left:0,top:1388,width:56,height:26}}>Modul 5</div>
+  <div className="naText naFooter naNw" style={{left:84,top:1399,width:160,whiteSpace:'pre'}}>12{'  |  '}<span className="naFz">zwölf</span></div>
  </>}
  </div><audio ref={player} className="naPlayer"/></div>;
 }
