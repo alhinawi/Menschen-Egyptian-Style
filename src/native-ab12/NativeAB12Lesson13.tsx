@@ -80,7 +80,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {field('6-r5',655,957,105,'Rätsel 5','naFieldBlank')}
   {field('6-r6',655,983,130,'Rätsel 6','naFieldBlank')}
   {art('cafe',655,1010,72,30)}
-  {check('6-3a',660,1036,{'6-r1':'Restaurant','6-r2':'Zentrum','6-r3':'Bahnhof','6-r4':'Bank','6-r5':'Post','6-r6':'Ampel'})}
+  {check('6-3a',660,1050,{'6-r1':'Restaurant','6-r2':'Zentrum','6-r3':'Bahnhof','6-r4':'Bank','6-r5':'Post','6-r6':'Ampel'})}
   {art('globe',52,1052,50,46)}
   {text(115,1066,20,'b','naLet13')}{text(146,1066,460,'Ergänzen Sie die Wörter aus a und vergleichen Sie.','naS20')}
   <div className="na13Band2" style={{left:145,top:1098,width:923,height:34}}/>
@@ -105,27 +105,27 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {title('4',112,158,600,'Ergänzen Sie den Artikel.','naYB')}
   {side(70,175,'STRUKTUREN')}
   {text(155,203,20,'a','naLet13')}{text(185,203,790,'Entschuldigen Sie bitte, wo ist denn hier die Polizei? – Die ist ganz in der Nähe, neben','naS20 naNw')}
-  {art('dem',175,225,43,25)}{text(224,229,200,'Hotel „Globus“.','naS20 naNw')}
+  {art('dem',175,225,39,25)}{text(224,229,200,'Hotel „Globus“.','naS20 naNw')}
   {text(155,254,20,'b','naLet13')}{text(185,254,320,'Und das Hotel „Globus“? – Das ist vor','naS20 naNw')}{field('7-4b',510,256,75,'4b')}{text(592,254,350,'Restaurant „Zur Glocke“.','naS20 naNw')}
-  {text(155,280,20,'c','naLet13')}{text(185,280,460,'Und das Restaurant „Zur Glocke“? — Das ist zwischen','naS20 naNw')}{field('7-4c1',648,282,77,'4c1')}{text(733,280,80,'Dom und','naS20 naNw')}{field('7-4c2',815,282,75,'4c2')}{text(898,280,60,'Bank.','naS20 naNw')}
+  {text(155,280,20,'c','naLet13')}{text(185,280,460,'Und das Restaurant „Zur Glocke“? – Das ist zwischen','naS20 naNw')}{field('7-4c1',648,282,77,'4c1')}{text(733,280,80,'Dom und','naS20 naNw')}{field('7-4c2',815,282,75,'4c2')}{text(898,280,60,'Bank.','naS20 naNw')}
   {text(155,306,20,'d','naLet13')}{text(185,306,505,'Und wo ist der Dom? – Na dort, schauen Sie, gleich hinter','naS20 naNw')}{field('7-4d',695,308,75,'4d')}{text(778,306,70,'Brücke.','naS20 naNw')}
-  {text(155,332,20,'e','naLet13')}{text(185,332,515,'Danke! Und gibt es hier auch eine Post? — Ja, gleich dort an','naS20 naNw')}{field('7-4e',705,334,75,'4e')}{text(788,332,60,'Ampel.','naS20 naNw')}
+  {text(155,332,20,'e','naLet13')}{text(185,332,515,'Danke! Und gibt es hier auch eine Post? – Ja, gleich dort an','naS20 naNw')}{field('7-4e',705,334,75,'4e')}{text(788,332,60,'Ampel.','naS20 naNw')}
   {check('7-4',860,372,{'7-4b':'dem','7-4c1':'dem','7-4c2':'der','7-4d':'der','7-4e':'der'})}
   {kb(56,427,'KB 5')}
   {title('5',112,416,700,'Ergänzen Sie die Präposition und den Artikel.','naYB')}
   {side(70,462,'STRUKTUREN')}
   {text(156,456,200,'Wo ist denn …','naS20 naNw')}
-  {text(155,512,20,'a','naLet13')}{text(180,513,367,'… das Hotel „Kirchblick“? — Das ist direkt','naS18 naNw')}{art('am',549,507,40,29)}{text(582,513,80,'Bahnhof.','naS18 naNw')}
+  {text(155,512,20,'a','naLet13')}{text(180,513,367,'… das Hotel „Kirchblick“? – Das ist direkt','naS19 naNw')}{art('am',549,507,25,29)}{text(577,513,80,'Bahnhof.','naS18 naNw')}
   {art('hotel',665,468,165,94)}
-  {text(155,602,20,'b','naLet13')}{text(185,602,180,'… die Post? — Die ist','naS20 naNw')}{field('7-5b1',366,604,109,'5b1')}{text(483,602,100,'Polizei und','naS20 naNw')}{field('7-5b2',585,604,115,'5b2')}{text(708,602,160,'Café „Glockner“.','naS20 naNw')}
+  {text(155,602,20,'b','naLet13')}{text(185,602,180,'… die Post? – Die ist','naS20 naNw')}{field('7-5b1',366,604,109,'5b1')}{text(483,602,100,'Polizei und','naS20 naNw')}{field('7-5b2',585,604,115,'5b2')}{text(708,602,160,'Café „Glockner“.','naS20 naNw')}
   {art('polizei',860,555,156,87)}
-  {text(155,692,20,'c','naLet13')}{text(185,692,258,'… die Mozartstraße? — Die ist','naS20 naNw')}{field('7-5c',447,694,113,'5c')}{text(568,692,70,'Brücke.','naS20 naNw')}
+  {text(155,692,20,'c','naLet13')}{text(185,692,258,'… die Mozartstraße? – Die ist','naS20 naNw')}{field('7-5c',447,694,113,'5c')}{text(568,692,70,'Brücke.','naS20 naNw')}
   {art('mozart',645,644,155,95)}
   {text(155,782,20,'d','naLet13')}{text(185,782,193,'… Wuffel? – Er wartet','naS20 naNw')}{field('7-5d',380,786,115,'5d')}{text(503,782,60,'Ampel.','naS20 naNw')}
   {art('ampel',560,728,151,86)}
-  {text(155,873,20,'e','naLet13')}{text(185,873,171,'… Miezi? — Sie sitzt','naS20 naNw')}{field('7-5e',358,875,112,'5e')}{text(478,873,65,'Brücke.','naS20 naNw')}
+  {text(155,873,20,'e','naLet13')}{text(185,873,171,'… Miezi? – Sie sitzt','naS20 naNw')}{field('7-5e',358,875,112,'5e')}{text(478,873,65,'Brücke.','naS20 naNw')}
   {art('miezi',565,833,145,95)}
-  {text(155,962,20,'f','naLet13')}{text(185,962,179,'… die Frau? — Sie ist','naS20 naNw')}{field('7-5f',366,964,109,'5f')}{text(483,962,50,'Dom.','naS20 naNw')}
+  {text(155,962,20,'f','naLet13')}{text(185,962,179,'… die Frau? – Sie ist','naS20 naNw')}{field('7-5f',366,964,109,'5f')}{text(483,962,50,'Dom.','naS20 naNw')}
   {art('frau',550,917,168,89)}
   {text(155,1051,20,'g','naLet13')}{text(185,1051,188,'… der Mann? – Er ist','naS20 naNw')}{field('7-5g',375,1054,110,'5g')}{text(493,1051,50,'Bank.','naS20 naNw')}
   {art('bank',577,1003,152,85)}
@@ -178,7 +178,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(151,977,20,'d','naLet13')}<div className="naSq8" style={{left:175,top:985}}/>{text(196,977,495,'Kann ich Sie etwas fragen? Ich suche den Bahnhof.','naS20 naNw')}
   <div className="naTri8" style={{left:176,top:1004}}/>{text(196,1004,388,'Fahren Sie zwei Kilometer geradeaus. Dann','naS20 naNw')}{field('8-8d',588,1007,284,'8d')}
   {text(196,1029,120,'den Bahnhof.','naS20 naNw')}
-  {text(151,1068,20,'e','naLet13')}<div className="naSq8" style={{left:175,top:1076}}/>{text(196,1068,410,'Kennen Sie das Restaurant „Schonblick“?','naS20 naNw')}
+  {text(151,1068,20,'e','naLet13')}<div className="naSq8" style={{left:175,top:1076}}/>{text(196,1068,410,'Kennen Sie das Restaurant „Schönblick“?','naS20 naNw')}
   <div className="naTri8" style={{left:176,top:1094}}/>{text(194,1094,68,'Ja, das','naS20 naNw')}{field('8-8e1',265,1097,305,'8e1')}{text(573,1094,12,'.','naS20')}{field('8-8e2',587,1097,285,'8e2')}
   {text(196,1120,470,'und fahren Sie zurück bis zur Ampel und dann links.','naS20 naNw')}
   {check('8-8',860,1150,{'8-8a':'bin nicht von hier','8-8b':'ist sehr nett','8-8c':'Trotzdem: Dankeschön','8-8d':'sehen Sie schon','8-8e1':'ist ganz in der Nähe','8-8e2':'Wenden Sie hier'})}
@@ -188,8 +188,8 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(150,1223,20,'a','naLet13')}{text(180,1223,318,'Entschuldigen Sie bitte. Kann ich Sie','naS20 naNw')}{art('etwasfragen',502,1224,102,30)}{text(610,1223,180,'– Ja, kein Problem.','naS20 naNw')}
   {text(150,1249,20,'b','naLet13')}{text(180,1249,135,'Können Sie mir','naS20 naNw')}{field('8-9b',318,1251,257,'9b')}{text(580,1249,110,'? – Ja, gern.','naS20 naNw')}
   {text(150,1276,20,'c','naLet13')}{text(180,1276,98,'Kennen Sie','naS20 naNw')}{field('8-9c',280,1277,255,'9c')}{text(540,1276,350,'? - Ja, das Hotel „Marienhof“ ist im Zentrum.','naS20 naNw')}
-  {text(150,1301,20,'d','naLet13')}{text(180,1301,36,'Eine','naS20 naNw')}{field('8-9d',218,1302,257,'9d')}{text(480,1301,430,'. Wo ist denn hier die Bank? — Die ist gleich hier.','naS20 naNw')}
-  {text(150,1327,20,'e','naLet13')}{text(180,1327,140,'Haben Sie einen','naS20 naNw')}{field('8-9e',322,1328,263,'9e')}{text(590,1327,120,'Zeit? — Klar.','naS20 naNw')}
+  {text(150,1301,20,'d','naLet13')}{text(180,1301,36,'Eine','naS20 naNw')}{field('8-9d',218,1302,257,'9d')}{text(480,1301,430,'. Wo ist denn hier die Bank? – Die ist gleich hier.','naS20 naNw')}
+  {text(150,1327,20,'e','naLet13')}{text(180,1327,140,'Haben Sie einen','naS20 naNw')}{field('8-9e',322,1328,263,'9e')}{text(590,1327,120,'Zeit? – Klar.','naS20 naNw')}
   {check('8-9',860,1358,{'8-9b':'helfen','8-9c':'das Hotel „Marienhof“|das Hotel Marienhof','8-9d':'Frage','8-9e':'Moment'})}
   {art('tab',0,1388,70,36)}
   {footerL('8','acht',1393)}
