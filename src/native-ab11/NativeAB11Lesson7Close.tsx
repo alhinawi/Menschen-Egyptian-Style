@@ -20,7 +20,7 @@ export function NativeAB11Lesson7Close({page}:{page:string}){
  const open=(id:string,x:number,y:number,w:number,h:number,label=id)=><textarea className="mField mOpen" data-native-field={id} aria-label={label} style={{left:x,top:Y(y),width:w,height:h*sy,'--mopen-height':h*sy+'px'} as React.CSSProperties} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
  const art=(name:string,x:number,y:number,w:number,h:number)=><PageImage className="mArt" alt={'Originalabbildung '+name} src={`assets/native-ab11/p${page}-${name}.png`} style={{left:x,top:Y(y),width:w,height:h*sy}}/>;
  const title=(n:string,y:number,s:string,kb='',x=132,w=700)=><>{kb&&txt(96,y+5,34,kb,'mKB')}<div className={'mNumber '+''} style={{left:x,top:Y(y)}}>{n}</div>{txt(x+35,y,w-35,s,'mTitle')}</>;
- const head=(s:string,y=135)=><>{txt(132,y,740,s,'mHeader')}<div className="mRule"/></>;
+ const head=(s:string,y=135,x=132)=><>{txt(x,y,740,s,'mHeader')}<div className="mRule"/></>;
  const data=scanData['ab-a11:'+page];
  const answers=(group:string)=>Object.fromEntries(data.fields.filter(f=>f.group===group&&f.kind!=='radio'&&f.kind!=='checkbox'&&f.answer!==undefined).map(f=>[f.id,f.answer!]));
  const check=(id:string,x:number,y:number,expected=answers(id))=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:Object.entries(expected).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
@@ -52,44 +52,45 @@ export function NativeAB11Lesson7Close({page}:{page:string}){
  {listen('36',510,1487,'1')}{txt(575,1487,320,'Hören Sie noch einmal und sprechen Sie nach.','mSmall mStrong')}
  </>}
  {page==='58'&&<>
- {head('TEST',154)}{title('1',C(214),'Ergänzen Sie die Hobbys.','',108)}
- {txt(143,C(232),330,'a  Hallo, ich heiße Eljesa. Meine Hobbys sind','mSmall')}{ink('p58-musik-ink',468,C(230),80,20,'Musik hören')}{txt(550,C(232),130,'(kusim nöher),','mSmall')}
- {f('b1',143,C(257)-2,122)}{txt(273,C(257),105,'(zannte) und','mSmall')}{f('b2',372,C(257)-2,58)}{f('b3',440,C(257)-2,116)}{txt(564,C(257),170,'(rendeuf refften).','mSmall')}
- {txt(143,C(290),300,'b  Hallo, ich bin Jan. Meine Hobbys sind','mSmall')}{f('b4',440,C(290)-2,105)}{f('b5',550,C(290)-2,100)}{txt(658,C(290),170,'(luaßfbl elisnep)','mSmall')}
+ {head('TEST',154,105)}{title('1',C(205),'Ergänzen Sie die Hobbys.','',108)}
+ {txt(143,C(234),330,'a  Hallo, ich heiße Eljesa. Meine Hobbys sind','mSmall mRowA')}{ink('p58-musik-ink',471,C(230),76,19,'Musik hören')}{txt(550,C(234),130,'(kusim nöher),','mSmall')}
+ {f('b1',143,C(259)-2,122)}{txt(273,C(259),105,'(zannte) und','mSmall')}{f('b2',372,C(259)-2,58)}{f('b3',440,C(259)-2,116)}{txt(564,C(259),170,'(rendeuf refften).','mSmall')}
+ {txt(143,C(290),300,'b  Hallo, ich bin Jan. Meine Hobbys sind','mSmall')}{f('b4',448,C(290)-2,100)}{f('b5',552,C(290)-2,98)}{txt(658,C(290),170,'(luaßfbl elisnep)','mSmall')}
  {txt(165,C(314),40,'und','mSmall')}{f('b6',195,C(314)-2,105)}{f('b7',305,C(314)-2,105)}{txt(418,C(314),170,'(ard earnfh).','mSmall')}
- {txt(143,C(338),290,'c  Und wir sind Cora und Finnia. Wir','mSmall')}{f('b8',420,C(338)-2,112)}{txt(539,C(338),67,'(senle),','mSmall')}{f('b9',590,C(338)-2,110)}{txt(704,C(338),120,'(trorognieeaff)','mSmall')}
+ {txt(143,C(338),290,'c  Und wir sind Cora und Finnia. Wir','mSmall')}{f('b8',428,C(338)-2,106)}{txt(539,C(338),67,'(senle),','mSmall')}{f('b9',602,C(338)-2,98)}{txt(704,C(338),120,'(trorognieeaff)','mSmall')}
  {txt(166,C(370),40,'und','mSmall')}{f('b10',220,C(370)-2,85)}{txt(309,C(370),150,'(ckaben) gern.','mSmall')}{txt(743,C(354),90,'_/7 Punkte','mTiny')}
  {check('test-1',166,C(392))}
  {title('2',C(424),'Was macht Niklas in seiner Freizeit? Ergänzen Sie.','',113)}
  <div className="mText mBank" style={{left:150,top:Y(C(462)),width:212}}>sehr oft | nie | oft | <span style={{background:'#f8f9c0'}}>manchmal</span></div>
  {txt(160,C(491),40,'Mo:\nDi:\nMi:\nDo:\nFr:','mSmall p58Day')}{ink('p58-woche-ink',190,C(484),212,122,'Mo: Fußball spielen, im Internet surfen. Di: Fußball spielen. Mi: im Internet surfen. Do: Fußball spielen. Fr: ins Kino gehen')}
- {txt(458,C(482),90,'Niklas geht','mSmall')}{ink('p58-manchmal-ink',547,C(482),59,25,'manchmal')}{txt(609,C(482),110,'(a) ins Kino.','mSmall')}
- {f('b11',465,C(506)-2,80)}{txt(550,C(506),190,'(b) surft er im Internet.','mSmall')}
+ {txt(458,C(482),90,'Niklas geht','mSmall')}{ink('p58-manchmal-ink',547,C(482),59,22,'manchmal')}{txt(609,C(482),110,'(a) ins Kino.','mSmall')}
+ {f('b11',465,C(506)-2,76)}{txt(550,C(506),190,'(b) surft er im Internet.','mSmall')}
  {txt(465,C(530),70,'Er spielt','mSmall')}{f('b12',530,C(530)-2,80)}{txt(616,C(530),150,'(c) Schach, aber er','mSmall')}
  {txt(467,C(554),50,'spielt','mSmall')}{f('b13',512,C(554)-2,72)}{txt(590,C(554),100,'(d) Fußball.','mSmall')}{txt(750,C(568),90,'_/3 Punkte','mTiny')}
  {check('test-2',166,C(612))}
  {title('3',C(634),'Ergänzen Sie die Verben in der richtigen Form.','',122)}
- {txt(157,C(676),50,'a  Du','mSmall')}{ink('p58-kannst-ink',193,C(669),48,23,'kannst')}{txt(241,C(676),220,'gut backen. (können)','mSmall')}
- {txt(156,C(700),90,'b  Mein Sohn','mSmall')}{f('b14',244,C(700)-2,76)}{txt(326,C(700),150,'nicht gern. (lesen)','mSmall')}
+ {txt(157,C(676),50,'a  Du','mSmall')}{ink('p58-kannst-ink',194,C(671),47,21,'kannst')}{txt(241,C(676),220,'gut backen. (können)','mSmall')}
+ {txt(156,C(700),90,'b  Mein Sohn','mSmall')}{f('b14',262,C(700)-2,60)}{txt(326,C(700),150,'nicht gern. (lesen)','mSmall')}
  {txt(158,C(724),22,'c','mSmall')}{f('b15',170,C(724)-2,60)}{txt(234,C(724),180,'du gern Auto? (fahren)','mSmall')}
  {txt(512,C(660),22,'d','mSmall')}{f('b16',525,C(660)-2,66)}{txt(597,C(660),230,'wir Fußball spielen? (können)','mSmall')}
- {txt(513,C(692),22,'e','mSmall')}{f('b17',520,C(692)-2,72)}{txt(597,C(692),190,'du heute deine Freunde?','mSmall')}{txt(531,C(708),80,'(treffen)','mSmall')}{txt(754,C(700),90,'_/4 Punkte','mTiny')}
+ {txt(513,C(692),10,'e','mSmall')}{f('b17',520,C(692)-2,72)}{txt(597,C(692),190,'du heute deine Freunde?','mSmall')}{txt(531,C(708),80,'(treffen)','mSmall')}{txt(754,C(712),90,'_/4 Punkte','mTiny')}
  {check('test-3',166,C(744))}
  {title('4',C(772),'Schreiben Sie Sätze.','',125)}
- {txt(155,C(814),22,'a','mSmall')}<div className="mText" style={{left:176,top:Y(C(814)),fontSize:17}}><i className="mSq"/></div><div style={{position:'absolute',left:176,top:Y(C(826)),width:380,borderBottom:'1px solid #aaa'}}/>{ink('p58-komm-ink',188,C(806),150,19,'Ich kann nicht kommen.')}{txt(495,C(814),210,'(kommen/nicht/ich/kann)','mSmall')}
- {['hören/Musik/ein/bisschen/wir/können','toll/wirklich/er/kochen/kann','Tennis/könnt/ihr/spielen','nicht/leider/kann/mein Freund/Ski fahren'].map((s,i)=>{const y=C(838+i*24);return <span key={s}>{txt(155,y,40,String.fromCharCode(98+i)+' ▪','mSmall')}{f('b'+(18+i),176,y-2,278)}{txt(456,y,14,['?','.','?','.'][i],'mSmall')}{txt(495,y,340,'('+s+')','mSmall')}</span>})}{txt(760,C(926),90,'_/4 Punkte','mTiny')}
+ {txt(155,C(814),40,'a ▪','mSmall')}<div style={{position:'absolute',left:176,top:Y(C(826)),width:380,borderBottom:'1px solid #aaa'}}/>{ink('p58-komm-ink',193,C(808),150,19,'Ich kann nicht kommen.')}{txt(495,C(814),210,'(kommen/nicht/ich/kann)','mSmall')}
+ {['hören/Musik/ein/bisschen/wir/können','toll/wirklich/er/kochen/kann','Tennis/könnt/ihr/spielen','nicht/leider/kann/mein Freund/Ski fahren'].map((s,i)=>{const y=C(838+i*24);return <span key={s}>{txt(155,y,40,String.fromCharCode(98+i)+' ▪','mSmall')}{f('b'+(18+i),176,y-2,278)}{txt(456,y,14,['?','.','?','.'][i],'mSmall')}{txt(495,y,340,'('+s+')','mSmall')}</span>})}{txt(760,C(930),90,'_/4 Punkte','mTiny')}
  {check('test-4',166,C(934),{b18:'Können wir ein bisschen Musik hören?',b19:'Er kann wirklich toll kochen.|Wirklich toll kann er kochen.|Kochen kann er wirklich toll.',b20:'Könnt ihr Tennis spielen?',b21:'Mein Freund kann leider nicht Ski fahren.|Leider kann mein Freund nicht Ski fahren.|Ski fahren kann mein Freund leider nicht.'})}
  {title('5',C(942),'Komplimente machen und sich bedanken. Ergänzen Sie.','',131)}
- {txt(166,C(990),185,'a ▪ Sie können wirklich','mSmall')}{ink('p58-super-ink',348,C(987),42,26,'super')}
- {txt(202,C(1006),95,'schwimmen.','mSmall')}
- {txt(188,C(1038),30,'▴ H','mSmall')}{f('b22',218,C(1038)-2,72)}{txt(294,C(1038),60,'Dank!','mSmall')}
- {txt(168,C(1070),240,'b ▪ Deine Augen sind so schön.','mSmall')}
- {txt(188,C(1086),52,'▴ Oh, d','mSmall')}{f('b23',242,C(1086)-2,28)}{txt(272,C(1086),15,'.','mSmall')}
- {txt(487,C(974),170,'c ▪ Wow! Du kannst t','mSmall')}{f('b24',655,C(974)-2,67)}{txt(726,C(974),70,'backen.','mSmall')}
- {txt(492,C(1006),30,'▴ V','mSmall')}{f('b25',520,C(1006)-2,88)}{txt(612,C(1006),60,'Dank.','mSmall')}
- {txt(489,C(1038),155,'d ▪ Du kannst sehr g','mSmall')}{f('b26',644,C(1038)-2,36)}{txt(684,C(1038),70,'tanzen.','mSmall')}
- {txt(492,C(1054),70,'▴ Danke s','mSmall')}{f('b27',560,C(1054)-2,44)}{txt(607,C(1054),15,'!','mSmall')}{txt(765,C(1070),90,'_/6 Punkte','mTiny')}
+ {txt(166,C(990),196,'a ▪ Sie können wirklich s','mSmall14')}{ink('p58-ex5-uper',338,C(987),23,20,'uper')}
+ {txt(202,C(1006),95,'schwimmen.','mSmall14')}
+ {txt(188,C(1038),30,'▴ H','mSmall14')}{f('b22',218,C(1038)-2,72)}{txt(294,C(1038),60,'Dank!','mSmall14')}
+ {txt(168,C(1070),240,'b ▪ Deine Augen sind so schön.','mSmall14')}
+ {txt(188,C(1086),52,'▴ Oh, d','mSmall14')}{f('b23',242,C(1086)-2,28)}{txt(272,C(1086),15,'.','mSmall14')}
+ {txt(487,C(974),170,'c ▪ Wow! Du kannst t','mSmall14')}{f('b24',655,C(974)-2,67)}{txt(726,C(974),70,'backen.','mSmall14')}
+ {txt(492,C(1006),30,'▴ V','mSmall14')}{f('b25',520,C(1006)-2,88)}{txt(612,C(1006),60,'Dank.','mSmall14')}
+ {txt(489,C(1038),155,'d ▪ Du kannst sehr g','mSmall14')}{f('b26',644,C(1038)-2,36)}{txt(684,C(1038),70,'tanzen.','mSmall14')}
+ {txt(492,C(1054),70,'▴ Danke s','mSmall14')}{f('b27',560,C(1054)-2,44)}{txt(607,C(1054),15,'!','mSmall14')}{txt(765,C(1070),90,'_/6 Punkte','mTiny')}
  {check('test-5',166,C(1106))}
+ <div className="mText" style={{left:654,top:1222,fontSize:11,color:'#777',fontFamily:'KbFira,Arial,sans-serif'}}>www.hueber.de/menschen/lernen</div>
  {score(1451,[['0-5','0-4','0-3'],['6-7','5-6','4'],['8-10','7-8','5-6']],410)}
  </>}
  {page==='59'&&<>
@@ -103,6 +104,6 @@ export function NativeAB11Lesson7Close({page}:{page:string}){
  {txt(168,1131,305,'Lernen Sie Nomen und\nVerb zusammen.','mSmall mTip')}{txt(330,1181,310,'Spaß machen\nFreunde treffen/besuchen','mExample')}
  {title('2',1243,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','',132,650)}{open('eigene-woerter',168,1289,600,115,'2 eigene Wörter')}
  </>}
- {txt(Number(page)%2?704:48,1254,Number(page)%2?190:400,(Number(page)%2?'':'Modul 3   ')+page+' | '+({'57':'siebenundfünfzig','58':'achtundfünfzig','59':'neunundfünfzig'} as Record<string,string>)[page]+(Number(page)%2?'  Modul 3':''),'mFooter')}
+ {txt(Number(page)%2?704:80,1254,Number(page)%2?190:400,(Number(page)%2?'':'Modul 3   ')+page+' | '+({'57':'siebenundfünfzig','58':'achtundfünfzig','59':'neunundfünfzig'} as Record<string,string>)[page]+(Number(page)%2?'  Modul 3':''),'mFooter')}
  </div><audio className="nabPlayer" ref={audio} controls hidden aria-label="Originalaudio Arbeitsbuch"/></div>;
 }

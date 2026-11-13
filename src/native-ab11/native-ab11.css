@@ -29,7 +29,23 @@
 .nativeAB11Lesson7Close[data-native-ab11-page='58'] .mCanvas .mText.mBank{background:#fbfce7;color:#38476e;font:15px/19px Arial;padding:1px 4px;white-space:pre}
 .nativeAB11Lesson7Close[data-native-ab11-page='58'] .mCanvas .mNumber{width:27px;height:23px;font:bold 19px/23px Georgia}
 .nativeAB11Lesson7Close[data-native-ab11-page='58'] .mRule{left:186px;top:163px;width:648px}
-.nativeAB11Lesson7Close[data-native-ab11-page='58'] .mCanvas .mScore{grid-template-rows:24px repeat(3,26px);line-height:26px;font-size:14px}
+@font-face{font-family:KbFira;src:url('/assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:KbFira;src:url('/assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:KbDroid;src:url('/assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}
+.nativeAB11Lesson7Close[data-native-ab11-page='58'] .mCanvas{font-family:KbDroid,Georgia,serif}
+.nativeAB11Lesson7Close[data-native-ab11-page='58'] .mCanvas .mText{font-family:KbDroid,Georgia,serif}
+.nativeAB11.nativeAB11Lesson7Close[data-native-ab11-page='58'] .mCanvas .mField{font-family:KbDroid,Georgia,serif!important;border:0!important;border-bottom:1px solid #999!important;border-radius:0!important;background:transparent!important}
+.nativeAB11Lesson7Close[data-native-ab11-page='58'] .mCanvas .mText.mTitle{font-family:KbFira,Arial,sans-serif;font-weight:700}
+.nativeAB11Lesson7Close[data-native-ab11-page='58'] .mCanvas .mText.mTiny{font-family:KbFira,Arial,sans-serif}
+.nativeAB11Lesson7Close[data-native-ab11-page='58'] .mCanvas .mText.mBank{font-family:KbFira,Arial,sans-serif}
+.nativeAB11Lesson7Close[data-native-ab11-page='58'] .mCanvas .mText.mSmall14{font-size:14px}
+.nativeAB11Lesson7Close[data-native-ab11-page='58'] .mCanvas .mText.mRowA{font-size:15.3px}
+.nativeAB11Lesson7Close[data-native-ab11-page='58'] .mCanvas .p58Day{font-family:KbFira,Arial,sans-serif}
+.nativeAB11Lesson7Close[data-native-ab11-page='58'] .mCanvas .mScore{grid-template-columns:140px 140px 160px;grid-template-rows:22px repeat(3,20px);line-height:20px;font:14px/20px KbFira,Arial,sans-serif;background:#fffef0;border-top:1px solid #e5e0b8}
+.nativeAB11Lesson7Close[data-native-ab11-page='58'] .mScore b{font-weight:700;background:#fff7ce;border-bottom:1px solid #e5e0b8;line-height:22px}
+.nativeAB11Lesson7Close[data-native-ab11-page='58'] .mScore div{border-bottom:1px solid #f0ebc8}
+.nativeAB11Lesson7Close[data-native-ab11-page='58'] .mScore i{width:15px;height:15px;border-radius:50%;box-shadow:inset 2px 2px 4px #fff9,inset -1px -2px 3px #0003}
+.nativeAB11Lesson7Close[data-native-ab11-page='58'] .mCanvas .mText.mFooter{font-size:14px}
 .nativeAB11Lesson7Close[data-native-ab11-page='57'] .mCanvas .mText.mTitle{font-size:17px}
 .nativeAB11Lesson7Close[data-native-ab11-page='57'] .mCanvas .mText.mSmall{font-size:15px}
 .nativeAB11Lesson7Close[data-native-ab11-page='57'] .mCanvas .mQuestion{font-size:15px;line-height:20px}
