@@ -105,3 +105,10 @@
 .naCanvas .naModul10{position:absolute;background:#c0b988;color:#fff;font:bold 13px/26px FiraSans,'Trebuchet MS',sans-serif;text-align:center;letter-spacing:.5px;z-index:2}
 .naCanvas .naFooter .naFz{font-family:FiraSans,'Trebuchet MS',sans-serif;color:#3a5375}
 .naCanvas .naField.naFldSeg{border-bottom:0!important;background:repeating-linear-gradient(90deg,#bcbcbc 0 var(--seg),transparent var(--seg) calc(var(--seg) + 5px)) left bottom/100% 2px no-repeat!important}
+.naCanvas .naText.naVoc{font:19.4px DroidSerif,Georgia,serif!important;color:#3d3d3d;letter-spacing:-0.4px!important}
+.naCanvas .naText.naVocB{font-weight:700!important}
+.naCanvas .naText.naVocG{font:15.5px DroidSerif,Georgia,serif!important;color:#8e9094;letter-spacing:-0.2px!important}
+.naCanvas .naRule11{position:absolute;height:1px;background:#bab8bc}
+[data-native-ab12="11"] .naCanvas .naHeadline{font:30px Georgia,'Times New Roman',serif!important;color:#232323;letter-spacing:0!important}
+[data-native-ab12="11"] .naCanvas .naFooter{font:17px Georgia,'Times New Roman',serif!important;letter-spacing:0!important;color:#333}
+[data-native-ab12="11"] .naCanvas .naTipT{font:16.5px DroidSerif,Georgia,serif!important;letter-spacing:0!important}
