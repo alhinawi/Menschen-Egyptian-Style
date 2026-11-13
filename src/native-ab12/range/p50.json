@@ -74,8 +74,8 @@
    "t": "Ich kann jetzt ...",
    "b": true,
    "c": "naRSans",
-   "s": 20,
-   "col": "#3f4a9c"
+   "s": 20.5,
+   "col": "#4b5497"
   },
   {
    "k": "t",
@@ -85,8 +85,8 @@
    "t": "Ich kenne ...",
    "b": true,
    "c": "naRSans",
-   "s": 20,
-   "col": "#3f4a9c"
+   "s": 20.5,
+   "col": "#4b5497"
   },
   {
    "k": "t",
