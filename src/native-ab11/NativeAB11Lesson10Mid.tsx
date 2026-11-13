@@ -28,7 +28,6 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  const markT=(x:number,y:number)=><div className="mText mMark" style={{left:x,top:Y(y),width:16}}><span className="mTr">▲</span></div>;
  const markSB=(x:number,y:number)=><div className="mText mMarkSq" style={{left:x-1.5,top:Y(y+5),width:12,height:12}}/>;
  const markTB=(x:number,y:number)=><div className="mText mMarkTr" style={{left:x-1.5,top:Y(y+5)}}/>;
- const txtX=(x:number,y:number,w:number,s:string,k:number,cls='')=><div className={'mText '+cls} style={{left:x,top:Y(y),width:w,transform:'scaleX('+k+')',transformOrigin:'0 0'}}><Words s={s}/></div>;
  const listen=(n:string,x:number,y:number)=><button className="mListen" aria-label={'Originalaudio 1 '+n} style={{left:x,top:Y(y)}} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+parseInt(n)+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
  const radioG=(fid:string,group:string,val:string,x:number,y:number,label:string)=><input className="mRadio" data-native-radio={fid} type="radio" name={'native-ab11-'+page+'-'+group} aria-label={label} style={{left:x,top:Y(y)}} checked={v[group]===val} onChange={()=>set(group,val)}/>;
  const side=(s:string,y:number)=><div className="nabSide" style={{left:100,top:Y(y)}}>{s}</div>;
@@ -233,17 +232,17 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {txt(498,858,16,'7')}{f('u3b-7',520,854,91,'3b 7 Machst')}{txt(615,860,190,'du gern Hausaufgaben?')}
  {check('u3b',640,885)}
  {title('4',924,'Ergänzen Sie haben in der richtigen Form.','KB 5',125)}
- {markSB(154,953)}{art('exhaben',171.1,957.5,36,17)}{txtX(214,953,300,'(a) wir jetzt alles für die Party?',0.92,'mDlg')}
- {markTB(154,971)}{txt(173,971,200,'Ich denke ja.','mDlg')}
- {markSB(154,997)}{f('u4-b',173,993,69,'4 b Hast')}{txtX(248,997,380,'(b) du auch Brot gekauft?',0.94,'mDlg')}
- {markTB(154,1017)}{txtX(173,1017,80,'Ja klar. Das',0.97,'mDlg')}{f('u4-c',258.8,1013,65.4,'4 c habe')}{txt(330,1017,330,'(c) ich doch heute Morgen schon gekauft.','mDlg')}
- {markSB(154,1040)}{txtX(173,1040,270,'Und wo ist der Geburtstagskuchen?',0.92,'mDlg')}
- {markTB(154,1060)}{txtX(173,1060,90,'Den Kuchen',0.94,'mDlg')}{f('u4-d',267.5,1056,72,'4 d hat')}{txtX(346,1060,470,'(d) Julia gebacken. Sie bringt ihn heute Abend zur Party mit.',0.93,'mDlg')}
- {markSB(154,1083)}{txt(173,1083,130,'Sehr gut. Und was','mDlg')}{f('u4-e',324.2,1079,79.2,'4 e haben')}{txt(410,1083,160,'(e) wir zu trinken?','mDlg')}
- {markTB(154,1105)}{txtX(173,1105,240,'Wein, Mineralwasser und Saft.',0.94,'mDlg')}
- {markSB(154,1124)}{txtX(173,1124,105,'Super! Und wo',0.97,'mDlg')}{f('u4-f',285,1120,74.1,'4 f habt')}{txt(365,1124,240,'(f) ihr das Geschenk für Julia?','mDlg')}
- {markTB(154,1144)}{txtX(173,1144,540,'Das ist noch in Claudias Auto. Sie kommt um sechs Uhr und bringt es mit.',0.93,'mDlg')}
- {markSB(154,1167)}{txtX(173,1167,115,'Gut, ich glaube, jetzt',0.97,'mDlg')}{f('u4-g',330,1163,76.3,'4 g haben')}{txtX(412,1167,170,'(g) wir wirklich alles.',1.1,'mDlg')}
+ {markSB(154,958)}{art('exhaben',171.1,957.5,36,17)}{txt(214,956,300,'(a) wir jetzt alles für die Party?','mDlg mDlg16')}
+ {markTB(154,978.5)}{txt(173,976.5,200,'Ich denke ja.','mDlg')}
+ {markSB(154,1000.5)}{f('u4-b',173,994.5,69,'4 b Hast')}{txt(248,998.5,380,'(b) du auch Brot gekauft?','mDlg mDlg16')}
+ {markTB(154,1020.5)}<div className="mText mDlg" style={{left:173,top:Y(1018.5),width:80,fontSize:15}}><Words s="Ja klar. Das"/></div>{f('u4-c',258.8,1014.5,65.4,'4 c habe')}{txt(330,1018.5,330,'(c) ich doch heute Morgen schon gekauft.','mDlg')}
+ {markSB(154,1043)}{txt(173,1041,270,'Und wo ist der Geburtstagskuchen?','mDlg mDlg16')}
+ {markTB(154,1065)}<div className="mText mDlg" style={{left:173,top:Y(1063),width:90,fontSize:15}}><Words s="Den Kuchen"/></div>{f('u4-d',267.5,1059,72,'4 d hat')}{txt(346,1063,470,'(d) Julia gebacken. Sie bringt ihn heute Abend zur Party mit.','mDlg mDlg16')}
+ {markSB(154,1086)}{txt(173,1084,130,'Sehr gut. Und was','mDlg')}{f('u4-e',324.2,1080,79.2,'4 e haben')}{txt(410,1084,160,'(e) wir zu trinken?','mDlg')}
+ {markTB(154,1106)}{txt(173,1104,240,'Wein, Mineralwasser und Saft.','mDlg mDlg16')}
+ {markSB(154,1127)}<div className="mText mDlg" style={{left:173,top:Y(1125),width:105,fontSize:15}}><Words s="Super! Und wo"/></div>{f('u4-f',285,1121,74.1,'4 f habt')}{txt(365,1125,240,'(f) ihr das Geschenk für Julia?','mDlg')}
+ {markTB(154,1147)}{txt(173,1145,540,'Das ist noch in Claudias Auto. Sie kommt um sechs Uhr und bringt es mit.','mDlg mDlg16')}
+ {markSB(154,1172.5)}{txt(173,1170.5,115,'Gut, ich glaube, jetzt','mDlg mDlg16')}{f('u4-g',330,1166.5,76.3,'4 g haben')}{txt(412,1170.5,170,'(g) wir wirklich alles.','mDlg mDlg17')}
  {check('u4',620,1160)}
  </>}
  {page==='83'&&<>
