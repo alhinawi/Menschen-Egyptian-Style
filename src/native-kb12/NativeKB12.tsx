@@ -185,9 +185,9 @@ export function NativeKB12({page}:{page:string}){
  </>}
  {page==='15'&&<>
  {art('vocab',0,0,1100,104)}{['• Fenster','• Balkon','• Erdgeschoss','• erster Stock','• Keller'].map((t,i)=>text(i*200+7,108,190,t,'nkCenter nkSmall'))}{text(1010,40,90,'14','nkLesson')}
- {title('6',106,179,400,'sein und ihr')}{text(119,222,440,'a  Wie finden Sie Ottos Haus? Sprechen Sie.','nkBold')}{text(150,262,410,'▲ Wie findest du Ottos Garten?\n■ Seinen Garten mag ich nicht so.\n   Aber sein Haus ist schön.')}
+ {title('6',106,179,400,'sein und ihr')}{text(119,222,440,'a  Wie finden Sie Ottos Haus? Sprechen Sie.','nkBold')}{text(150,262,410,'▲ Wie findest du Ottos Garten?\n■ Seinen Garten mag ich nicht so.\n   Aber sein Haus ist schön.')}{save('6a',415,316)}
  {text(588,236,415,'Ich finde … interessant/langweilig/…\n… mag ich besonders / gar nicht / nicht so.\nAber/Und … sieht toll / … / nicht so schön aus.','nkBank nkSmall')}
- {text(119,367,450,'b  Und wie finden Sie Vanillas Haus?','nkBold')}{text(150,410,410,'■ Vanillas Haus ist gemütlich.\n▲ Ihren Garten mag ich besonders.')}
+ {text(119,367,450,'b  Und wie finden Sie Vanillas Haus?','nkBold')}{save('6b',526,363)}{text(150,410,410,'■ Vanillas Haus ist gemütlich.\n▲ Ihren Garten mag ich besonders.')}
  <div className="nkGrammar" style={{left:598,top:364,width:380,height:135}}>{text(12,4,365,'Nominativ       Akkusativ','nkSmall')}{['• ihr Balkon','• ihr Haus','• ihre Garage','• ihre Blumen'].map((t,i)=><div key={t}>{text(20,29+i*25,170,t,'nkSmall')}{i===0?text(210,29,140,'ihren','nkHand'):field('6b-akk'+i,210,27+i*25,135,'Akkusativ: '+t)}</div>)}</div>
  {title('7',106,515,910,'Gegenstände beschreiben. Arbeiten Sie zu zweit auf Seite 75.')}
  {title('8',106,579,910,'Der „Glückstadt“-Wohnungsmarkt')}{text(119,624,900,'a  Überfliegen Sie die Anzeigen und notieren Sie:','nkBold')}{text(152,668,900,'① Wer sucht eine Wohnung / ein Haus?     ② Wer bietet eine Wohnung / ein Haus an?')}
