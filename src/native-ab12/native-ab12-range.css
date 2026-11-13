@@ -34,8 +34,8 @@
 [data-native-ab12="79"] .naRCanvas,[data-native-ab12="79"] .naRCanvas .naText{font-family:ABRangeDroid,DroidSerif,Georgia,serif}
 [data-native-ab12="79"] .naRField{font-family:ABRangeDroid,DroidSerif,Georgia,serif!important}
 [data-native-ab12="79"] .naRCanvas .naText.naRSans,[data-native-ab12="79"] .naRCanvas .naText.naRSansR{font-family:FiraSans,'Trebuchet MS',sans-serif}
-[data-native-ab12="79"] .naRCanvas .naRS{text-decoration-thickness:3px}
-[data-native-ab12="79"] .naRCanvas .naRS .tapWord{text-decoration:line-through;text-decoration-color:#3566b5;text-decoration-thickness:3px}
+[data-native-ab12="79"] .naRCanvas .naRS{text-decoration-thickness:2px}
+[data-native-ab12="79"] .naRCanvas .naRS .tapWord{text-decoration:line-through;text-decoration-color:#3566b5;text-decoration-thickness:2px}
 [data-native-ab12="79"] .naRCanvas .naHand.naRS .tapWord{text-decoration-color:currentColor;text-decoration-thickness:1.5px}
 
 [data-native-ab12="79"] .naRCanvas .naText:not(.naRSans):not(.naRSansR){-webkit-text-stroke:.22px currentColor}
