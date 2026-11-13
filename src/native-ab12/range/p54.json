@@ -1,0 +1,830 @@
+{
+ "w": 1072,
+ "h": 1453,
+ "items": [
+  {
+   "k": "a",
+   "n": "bg",
+   "x": 0,
+   "y": 0,
+   "w": 1072,
+   "h": 1453,
+   "alt": "Seite 54 Hintergrund"
+  },
+  {
+   "k": "t",
+   "x": 166,
+   "y": 196,
+   "t": "Das war Herbert früher. Das ist er heute. Ordnen Sie zu.",
+   "s": 22.0,
+   "c": "naFiraM",
+   "col": "#1d1d1b"
+  },
+  {
+   "k": "t",
+   "x": 169,
+   "y": 238,
+   "t": "hatte | hat | hatten | war | hat | ist | hatte | hat | haben | waren | hatte",
+   "s": 17.0,
+   "c": "naFiraR",
+   "col": "#696c97"
+  },
+  {
+   "k": "t",
+   "x": 188,
+   "y": 396,
+   "t": "Früher …",
+   "s": 21.5,
+   "c": "naDB",
+   "col": "#4d4b4a"
+  },
+  {
+   "k": "t",
+   "x": 545,
+   "y": 396,
+   "t": "Heute …",
+   "s": 22.5,
+   "c": "naDB",
+   "col": "#4d4b4a"
+  },
+  {
+   "k": "t",
+   "x": 165,
+   "y": 414,
+   "t": "a",
+   "s": 15,
+   "col": "#828185"
+  },
+  {
+   "k": "t",
+   "x": 233,
+   "y": 415,
+   "t": "Herbert Locken und seine",
+   "s": 18.0
+  },
+  {
+   "k": "t",
+   "x": 579,
+   "y": 415,
+   "t": "er kurze Haare.",
+   "s": 18.0
+  },
+  {
+   "k": "t",
+   "x": 189,
+   "y": 445,
+   "t": "Haare",
+   "s": 16.5
+  },
+  {
+   "k": "t",
+   "x": 355,
+   "y": 443,
+   "t": "lang.",
+   "s": 18.0
+  },
+  {
+   "k": "f",
+   "id": "p54-1f0",
+   "x": 244,
+   "y": 446,
+   "w": 106,
+   "l": "Früher 0",
+   "a": "waren",
+   "g": "g1"
+  },
+  {
+   "k": "t",
+   "x": 164,
+   "y": 467,
+   "t": "b",
+   "s": 15,
+   "col": "#828185"
+  },
+  {
+   "k": "t",
+   "x": 297,
+   "y": 467,
+   "t": "er sehr dünn.",
+   "s": 18.0
+  },
+  {
+   "k": "t",
+   "x": 659,
+   "y": 467,
+   "t": "er ein bisschen dick.",
+   "s": 18.5
+  },
+  {
+   "k": "f",
+   "id": "p54-1f1",
+   "x": 190,
+   "y": 480,
+   "w": 102,
+   "l": "Früher 1",
+   "a": "war",
+   "g": "g1"
+  },
+  {
+   "k": "f",
+   "id": "p54-1h0",
+   "x": 551,
+   "y": 480,
+   "w": 101,
+   "l": "Heute 0",
+   "a": "ist",
+   "g": "g1"
+  },
+  {
+   "k": "t",
+   "x": 164,
+   "y": 492,
+   "t": "c",
+   "s": 15,
+   "col": "#828185"
+  },
+  {
+   "k": "t",
+   "x": 297,
+   "y": 492,
+   "t": "er eine Brille.",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 659,
+   "y": 493,
+   "t": "er keine Brille.",
+   "s": 18.5
+  },
+  {
+   "k": "f",
+   "id": "p54-1f2",
+   "x": 190,
+   "y": 507,
+   "w": 102,
+   "l": "Früher 2",
+   "a": "hatte",
+   "g": "g1"
+  },
+  {
+   "k": "f",
+   "id": "p54-1h1",
+   "x": 551,
+   "y": 507,
+   "w": 101,
+   "l": "Heute 1",
+   "a": "hat",
+   "g": "g1"
+  },
+  {
+   "k": "t",
+   "x": 165,
+   "y": 517,
+   "t": "d",
+   "s": 15,
+   "col": "#828185"
+  },
+  {
+   "k": "t",
+   "x": 297,
+   "y": 518,
+   "t": "er einen Bart.",
+   "s": 18.0
+  },
+  {
+   "k": "t",
+   "x": 659,
+   "y": 519,
+   "t": "er keinen Bart.",
+   "s": 18.5
+  },
+  {
+   "k": "f",
+   "id": "p54-1f3",
+   "x": 190,
+   "y": 532,
+   "w": 102,
+   "l": "Früher 3",
+   "a": "hatte",
+   "g": "g1"
+  },
+  {
+   "k": "f",
+   "id": "p54-1h2",
+   "x": 551,
+   "y": 532,
+   "w": 101,
+   "l": "Heute 2",
+   "a": "hat",
+   "g": "g1"
+  },
+  {
+   "k": "t",
+   "x": 164,
+   "y": 543,
+   "t": "e",
+   "s": 15,
+   "col": "#828185"
+  },
+  {
+   "k": "t",
+   "x": 296,
+   "y": 544,
+   "t": "er und seine Freundin",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 659,
+   "y": 545,
+   "t": "er und seine Frau ein Auto.",
+   "s": 18.5
+  },
+  {
+   "k": "f",
+   "id": "p54-1f4",
+   "x": 190,
+   "y": 558,
+   "w": 102,
+   "l": "Früher 4",
+   "a": "hatten",
+   "g": "g1"
+  },
+  {
+   "k": "f",
+   "id": "p54-1h3",
+   "x": 551,
+   "y": 558,
+   "w": 101,
+   "l": "Heute 3",
+   "a": "haben",
+   "g": "g1"
+  },
+  {
+   "k": "t",
+   "x": 188,
+   "y": 570,
+   "t": "nur Fahrräder.",
+   "s": 18.0
+  },
+  {
+   "k": "chk",
+   "g": "g1",
+   "x": 950,
+   "y": 552
+  },
+  {
+   "k": "t",
+   "x": 166,
+   "y": 641,
+   "t": "",
+   "s": 21.0,
+   "c": "naFiraM",
+   "col": "#1d1d1b",
+   "segs": [
+    {
+     "t": "Ergänzen Sie "
+    },
+    {
+     "t": "haben oder sein",
+     "b": 1
+    },
+    {
+     "t": " im Präteritum."
+    }
+   ]
+  },
+  {
+   "k": "t",
+   "x": 164,
+   "y": 678,
+   "t": "Schau mal, hier sind Fotos von früher:",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 165,
+   "y": 699,
+   "t": "Das",
+   "s": 16.0
+  },
+  {
+   "k": "t",
+   "x": 249,
+   "y": 700,
+   "t": "(a) mein Bruder, meine Schwester und ich vor 20 Jahren: Mein Bruder",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 299,
+   "y": 725,
+   "t": "(b) vier, ich",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 540,
+   "y": 726,
+   "t": "(c) sechs und meine Schwester",
+   "s": 18.5
+  },
+  {
+   "k": "f",
+   "id": "p54-2b",
+   "x": 186,
+   "y": 732,
+   "w": 106,
+   "l": "2 b",
+   "a": "war",
+   "g": "g2"
+  },
+  {
+   "k": "f",
+   "id": "p54-2c",
+   "x": 405,
+   "y": 732,
+   "w": 130,
+   "l": "2 c",
+   "a": "war",
+   "g": "g2"
+  },
+  {
+   "k": "f",
+   "id": "p54-2d",
+   "x": 815,
+   "y": 733,
+   "w": 125,
+   "l": "2 d",
+   "a": "war",
+   "g": "g2"
+  },
+  {
+   "k": "t",
+   "x": 164,
+   "y": 751,
+   "t": "zehn Jahre alt. Ich",
+   "s": 19.0
+  },
+  {
+   "k": "t",
+   "x": 470,
+   "y": 752,
+   "t": "(e) schon ein Fahrrad und",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 867,
+   "y": 752,
+   "t": "sehr",
+   "s": 17.5
+  },
+  {
+   "k": "f",
+   "id": "p54-2e",
+   "x": 335,
+   "y": 759,
+   "w": 131,
+   "l": "2 e",
+   "a": "hatte",
+   "g": "g2"
+  },
+  {
+   "k": "f",
+   "id": "p54-2f",
+   "x": 708,
+   "y": 759,
+   "w": 121,
+   "l": "2 f",
+   "a": "war",
+   "g": "g2"
+  },
+  {
+   "k": "t",
+   "x": 163,
+   "y": 777,
+   "t": "glücklich mit meinem Rad! Mein Bruder und ich",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 734,
+   "y": 779,
+   "t": "(g) immer fröhlich und",
+   "s": 18.5
+  },
+  {
+   "k": "f",
+   "id": "p54-2g",
+   "x": 598,
+   "y": 785,
+   "w": 132,
+   "l": "2 g",
+   "a": "waren",
+   "g": "g2"
+  },
+  {
+   "k": "t",
+   "x": 164,
+   "y": 802,
+   "t": "wir zwei",
+   "s": 18.0
+  },
+  {
+   "k": "t",
+   "x": 380,
+   "y": 804,
+   "t": "(h) immer viel Spaß. Aber meine große Schwester",
+   "s": 18.5
+  },
+  {
+   "k": "f",
+   "id": "p54-2h",
+   "x": 245,
+   "y": 811,
+   "w": 130,
+   "l": "2 h",
+   "a": "hatten",
+   "g": "g2"
+  },
+  {
+   "k": "f",
+   "id": "p54-2i",
+   "x": 823,
+   "y": 824,
+   "w": 126,
+   "l": "2 i",
+   "a": "war",
+   "g": "g2"
+  },
+  {
+   "k": "t",
+   "x": 165,
+   "y": 829,
+   "t": "immer nur mit ihren Freundinnen zusammen. Die",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 754,
+   "y": 832,
+   "t": "(j) nicht so sympathisch",
+   "s": 18.5
+  },
+  {
+   "k": "f",
+   "id": "p54-2j",
+   "x": 618,
+   "y": 845,
+   "w": 132,
+   "l": "2 j",
+   "a": "waren",
+   "g": "g2"
+  },
+  {
+   "k": "t",
+   "x": 164,
+   "y": 854,
+   "t": "und haben nie mit uns gespielt.",
+   "s": 18.5
+  },
+  {
+   "k": "chk",
+   "g": "g2",
+   "x": 950,
+   "y": 836
+  },
+  {
+   "k": "t",
+   "x": 162,
+   "y": 923,
+   "t": "Was passt? Kreuzen Sie an.",
+   "s": 22.0,
+   "c": "naFiraM",
+   "col": "#1d1d1b"
+  },
+  {
+   "k": "t",
+   "x": 188,
+   "y": 958,
+   "t": "Ich mag Herrn Brunner. Er ist immer sehr",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 611,
+   "y": 962,
+   "t": "unsympathisch.",
+   "s": 18.0
+  },
+  {
+   "k": "t",
+   "x": 801,
+   "y": 960,
+   "t": "freundlich.",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 187,
+   "y": 984,
+   "t": "Warum bist du denn so",
+   "s": 18.0
+  },
+  {
+   "k": "t",
+   "x": 439,
+   "y": 988,
+   "t": "traurig?",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 559,
+   "y": 985,
+   "t": "langweilig? Kann ich dir helfen?",
+   "s": 20.0
+  },
+  {
+   "k": "d",
+   "id": "p54-3b-traurig",
+   "v": "1",
+   "name": "p54-3b",
+   "a": true,
+   "x": 410,
+   "y": 969,
+   "s": 24,
+   "l": "3 b traurig",
+   "g": "g3"
+  },
+  {
+   "k": "d",
+   "id": "p54-3b-langweilig",
+   "v": "1",
+   "name": "p54-3b",
+   "a": false,
+   "x": 533,
+   "y": 969,
+   "s": 24,
+   "l": "3 b langweilig",
+   "g": "g3"
+  },
+  {
+   "k": "t",
+   "x": 187,
+   "y": 1010,
+   "t": "Gina fährt nächste Woche in Urlaub und ist total",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 669,
+   "y": 1019,
+   "t": "interessant!",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 823,
+   "y": 1014,
+   "t": "glücklich!",
+   "s": 18.0
+  },
+  {
+   "k": "d",
+   "id": "p54-3c-interessant",
+   "v": "1",
+   "name": "p54-3c",
+   "a": false,
+   "x": 642,
+   "y": 995,
+   "s": 24,
+   "l": "3 c interessant",
+   "g": "g3"
+  },
+  {
+   "k": "d",
+   "id": "p54-3c-glücklich",
+   "v": "1",
+   "name": "p54-3c",
+   "a": true,
+   "x": 796,
+   "y": 995,
+   "s": 24,
+   "l": "3 c glücklich",
+   "g": "g3"
+  },
+  {
+   "k": "t",
+   "x": 188,
+   "y": 1036,
+   "t": "Ich mag unseren neuen Chef nicht. Ich finde ihn ziemlich",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 750,
+   "y": 1037,
+   "t": "unfreundlich.",
+   "s": 18.5
+  },
+  {
+   "k": "d",
+   "id": "p54-3d-unfreundlich",
+   "v": "1",
+   "name": "p54-3d",
+   "a": true,
+   "x": 723,
+   "y": 1022,
+   "s": 24,
+   "l": "3 d unfreundlich",
+   "g": "g3"
+  },
+  {
+   "k": "t",
+   "x": 213,
+   "y": 1061,
+   "t": "fröhlich.",
+   "s": 18.5
+  },
+  {
+   "k": "d",
+   "id": "p54-3d-fröhlich",
+   "v": "1",
+   "name": "p54-3d",
+   "a": false,
+   "x": 186,
+   "y": 1046,
+   "s": 24,
+   "l": "3 d fröhlich",
+   "g": "g3"
+  },
+  {
+   "k": "t",
+   "x": 163,
+   "y": 1086,
+   "t": "e",
+   "s": 15,
+   "col": "#828185"
+  },
+  {
+   "k": "t",
+   "x": 187,
+   "y": 1088,
+   "t": "Sag mal, hast du Anna gesehen? Sie sieht wirklich super aus! Früher war sie dick",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 187,
+   "y": 1113,
+   "t": "und jetzt ist sie so",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 387,
+   "y": 1117,
+   "t": "glatt.",
+   "s": 22.0
+  },
+  {
+   "k": "t",
+   "x": 491,
+   "y": 1114,
+   "t": "schlank.",
+   "s": 18.0
+  },
+  {
+   "k": "d",
+   "id": "p54-3e-glatt",
+   "v": "1",
+   "name": "p54-3e",
+   "a": false,
+   "x": 360,
+   "y": 1098,
+   "s": 24,
+   "l": "3 e glatt",
+   "g": "g3"
+  },
+  {
+   "k": "d",
+   "id": "p54-3e-schlank",
+   "v": "1",
+   "name": "p54-3e",
+   "a": true,
+   "x": 464,
+   "y": 1098,
+   "s": 24,
+   "l": "3 e schlank",
+   "g": "g3"
+  },
+  {
+   "k": "t",
+   "x": 164,
+   "y": 1138,
+   "t": "f",
+   "s": 15,
+   "col": "#828185"
+  },
+  {
+   "k": "t",
+   "x": 187,
+   "y": 1139,
+   "t": "Luisa ist manchmal sehr",
+   "s": 18.5
+  },
+  {
+   "k": "t",
+   "x": 453,
+   "y": 1147,
+   "t": "seltsam.",
+   "s": 18.0
+  },
+  {
+   "k": "t",
+   "x": 574,
+   "y": 1139,
+   "t": "dick.",
+   "s": 17.5
+  },
+  {
+   "k": "t",
+   "x": 640,
+   "y": 1140,
+   "t": "Hat sie Probleme?",
+   "s": 18.0
+  },
+  {
+   "k": "d",
+   "id": "p54-3f-seltsam",
+   "v": "1",
+   "name": "p54-3f",
+   "a": true,
+   "x": 426,
+   "y": 1124,
+   "s": 24,
+   "l": "3 f seltsam",
+   "g": "g3"
+  },
+  {
+   "k": "d",
+   "id": "p54-3f-dick",
+   "v": "1",
+   "name": "p54-3f",
+   "a": false,
+   "x": 547,
+   "y": 1124,
+   "s": 24,
+   "l": "3 f dick",
+   "g": "g3"
+  },
+  {
+   "k": "chk",
+   "g": "g3",
+   "x": 955,
+   "y": 1115
+  },
+  {
+   "k": "t",
+   "x": 163,
+   "y": 1206,
+   "t": "Suchen Sie in einer Zeitschrift oder im Internet Fotos von drei Frauen",
+   "s": 22.0,
+   "c": "naFiraM",
+   "col": "#1d1d1b"
+  },
+  {
+   "k": "t",
+   "x": 163,
+   "y": 1232,
+   "t": "oder drei Männern.",
+   "s": 22.0,
+   "c": "naFiraM",
+   "col": "#1d1d1b"
+  },
+  {
+   "k": "t",
+   "x": 164,
+   "y": 1273,
+   "t": "Beschreiben Sie die Frauen/Männer auf drei Kärtchen.",
+   "s": 18.0
+  },
+  {
+   "k": "t",
+   "x": 164,
+   "y": 1299,
+   "t": "Ihre Partnerin / Ihr Partner rät: Welche Beschreibung",
+   "s": 18.0
+  },
+  {
+   "k": "t",
+   "x": 164,
+   "y": 1325,
+   "t": "passt zu welchem Foto?",
+   "s": 18.0
+  }
+ ]
+}
