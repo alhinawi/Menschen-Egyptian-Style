@@ -35,18 +35,19 @@ export function NativeAB12P80({page}:{page:string}){
 [data-native-ab12='80'] .naNum80{position:absolute;width:21px;height:17px;background:#e30613;color:#fff;font:700 13px/17px FiraSans,sans-serif;text-align:center}
 [data-native-ab12='80'] .naRail80{position:absolute;font:600 10px FiraSans,sans-serif;color:#6f77ab;letter-spacing:2px;writing-mode:vertical-rl;transform:rotate(180deg)}
 [data-native-ab12='80'] .naT80{font-family:FiraSans,sans-serif!important;font-weight:600;font-size:19px!important;color:#17141c!important}
-[data-native-ab12='80'] .naInst80{font-weight:700;font-size:15px!important}
+[data-native-ab12='80'] .naT80b{font-family:FiraSans,sans-serif!important;font-weight:600;font-size:14px!important;color:#17141c!important}
+[data-native-ab12='80'] .naInst80{font-family:FiraSans,sans-serif!important;font-weight:400;font-size:12px!important;color:#2b2b2b!important}
 [data-native-ab12='80'] .naHead80{font-size:20px!important;letter-spacing:2.1px!important;color:#4d4d4a!important}
 [data-native-ab12='80'] .naWords80{font-size:15px!important}
 [data-native-ab12='80'] .naWords80 b{font-weight:700}
-[data-native-ab12='80'] .naTh80{font-family:FiraSans,sans-serif!important;font-weight:600;font-size:12px!important;color:#3a3a38!important}
+[data-native-ab12='80'] .naTh80{font-family:FiraSans,sans-serif!important;font-weight:600;font-size:13px!important;color:#3a3a38!important}
 [data-native-ab12='80'] .naThBig80{font-size:15px!important}
 [data-native-ab12='80'] .naEn80{font-family:FiraSans,sans-serif!important;font-size:13px!important;color:#2b2b2b!important}
 [data-native-ab12='80'] .naMail80{font-family:FiraSans,sans-serif!important;font-size:12px!important;color:#2b2b2b!important}
-[data-native-ab12='80'] .naIt80{font-family:FiraSansCond,sans-serif!important;font-style:italic;font-weight:400;font-size:12.5px!important;color:#2b2b2b!important}
+[data-native-ab12='80'] .naIt80{font-family:FiraSansCond,sans-serif!important;font-style:italic;font-weight:400;font-size:12.5px!important;color:#1f1f1f!important}
 [data-native-ab12='80'] .naBul80{font-size:13.5px!important}
 [data-native-ab12='80'] .naField{position:absolute;background:transparent;border:none;border-bottom:1.5px solid #c8c8c8;font:15px DroidSerif,Georgia,serif;color:#1c3f8f;padding:0 2px;outline:none}
-[data-native-ab12='80'] .naArea80{position:absolute;background:transparent;border:none;resize:none;font:italic 14px FiraSans,sans-serif;line-height:18px;color:#1c3f8f;padding:0 2px;outline:none}
+[data-native-ab12='80'] .naArea80{position:absolute;background:transparent;border:0!important;box-shadow:none!important;resize:none;font:italic 14px FiraSans,sans-serif;line-height:18px;color:#1c3f8f;padding:0 2px;outline:none}
 [data-native-ab12='80'] .naField80c{border-bottom:0!important;font-size:14px}
 [data-native-ab12='80'] .naField80d{border-bottom:0!important}
 [data-native-ab12='80'] .naFoot80{font-size:14px!important;color:#333!important}
@@ -82,7 +83,7 @@ export function NativeAB12P80({page}:{page:string}){
   {[267,289,311,333,356].map(y=><span key={y}>{lin(123,y,605,1,'#f0efe6')}</span>)}
   {lin(123,378,605,1,'#e6e5d8')}
   {text(129,250,12,'a','naWords80')}
-  {art('aelter',136,246,36,18)}
+  {art('aelter',140,249,36,22)}
   {text(311,250,60,'older','naEn80')}
   {text(129,271,12,'b','naWords80')}
   {field('p80-8b',138,268,160,'8 b Deutsch','naField80d')}
@@ -105,7 +106,7 @@ export function NativeAB12P80({page}:{page:string}){
   {/* ex 9 */}
   {kb(62,422,'KB 8')}
   {num(95,414,'9')}
-  {text(124,414,190,'Eine E-Mail schreiben','naT80')}
+  {text(124,414,190,'Eine E-Mail schreiben','naT80b')}
   {rail(52,465,'SCHREIBEN')}
   {text(124,434,330,'Lesen Sie die E-Mail und antworten Sie Johanna.','naInst80')}
 
