@@ -12,7 +12,7 @@ function P67(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {art('sign2',98,253,56,58)}
   {art('sign3',98,324,56,58)}
   {art('sign4',98,396,56,58)}
-  {art('hwgrillen',174,193,86,26)}
+  {ln(175,200,81,14,'Grillen erlaubt',{cls:'naHand',i:1})}
   {art('esign1',125,524,41,52)}
   {art('esign2',233,524,46,52)}
   {art('esign3',341,524,46,52)}
@@ -20,12 +20,12 @@ function P67(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {art('esign5',548,524,47,52)}
   {art('esign6',653,524,44,52)}
   {art('hwmuss',164,584,26,14)}
-  {art('slasha',214,586,46,16)}
-  {art('dots',45,747,54,20)}
-  {art('sign6a',484,718,92,90)}
-  {art('sign6b',604,718,92,90)}
-  {art('circX',128,858,26,26)}
-  {art('circO',210,858,26,26)}
+  {art('slasha',226,584,60,19)}
+  {art('dots',35,741,43,22)}
+  {art('sign6a',487,710,83,109)}
+  {art('sign6b',604,709,80,110)}
+  {art('circX',128,856,23,26)}
+  {art('circO',206,860,28,24)}
   {wl(85,21,[{x:83,w:181,t:"BASISTRAINING"}])}
   {title('4',80,124,400,'Ergänzen und vergleichen Sie.','naTitleM')}
   {wl(168,15,[{x:175,w:50,t:'Deutsch'},{x:318,w:53,t:'Englisch'},{x:476,w:39,t:'Meine'},{x:520,w:49,t:'Sprache'},{x:574,w:27,t:'oder'},{x:606,w:42,t:'andere'},{x:654,w:57,t:'Sprachen'}])}
@@ -97,7 +97,7 @@ function P67(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {dot('7e1','muss',238,985,'7e1 muss')}
   {dot('7e2','Darfst',135,1005,'7e2 Darfst')}
   {dot('7e2','Kannst',211,1005,'7e2 Kannst')}
-  {check('g1',510,683,{'p67-5b1':'darf','p67-5b2':'nicht','p67-5c':'darfst','p67-5d1':'dürft','p67-5d2':'nicht','p67-5e':'dürfen','p67-5f':'müssen'})}
+  {check('g1',512,676,{'p67-5b1':'darf','p67-5b2':'nicht','p67-5c':'darfst','p67-5d1':'dürft','p67-5d2':'nicht','p67-5e':'dürfen','p67-5f':'müssen'})}
   {check('g2',128,1032,{'7a':'darf','7b1':'Willst','7b2':'muss','7c':'sollst','7d':'Darf','7e1':'muss','7e2':'Kannst'})}
 </>}
 
