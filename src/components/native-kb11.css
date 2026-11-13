@@ -163,3 +163,16 @@
 .nkb[data-native-page="48"] input[type=text].nkbField{border-radius:50%!important;border:1px solid #c5bd8d!important;background:#fffef7!important;text-align:center;padding:0!important}
 
 .nkb[data-native-page="49"] input[type=checkbox].nkbField{border-radius:50%!important}
+.nkb[data-native-page="22"] .nkbLine{font-family:KbDroid,serif}
+.nkb[data-native-page="22"] .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
+.nkb[data-native-page="22"] .nkbLine.nkbB{font-weight:500}
+.nkbDash{font-family:Arial,"Liberation Sans",sans-serif!important;font-weight:700}
+.nkb[data-native-page="22"] input.nkbField[data-native-field^="t2-"]{font-family:KbFira,sans-serif;background:transparent;border:0;padding:0 1px;color:#211c1c}
+.nkb[data-native-page="22"] input.nkbField[data-native-field^="t1-"]{font-family:KbDroid,serif}
+.nkb[data-native-page="22"] input.nkbField[data-native-field^="t2-"]:not(.ok):not(.bad){border:0!important;box-shadow:none!important;outline:0}
+.nkb[data-native-page="22"] input.nkbField[data-native-field^="t2-"]:focus{border-bottom:1px solid #1769e0!important}
+.nkb[data-native-page="22"] input.nkbField[data-native-field^="t2-"]{color:#211c1c!important}
+
+.nkb[data-native-page="22"] .nkbLine:not(.nkbB){opacity:.84}
+.nkb[data-native-page="22"] .nkbLine.nkbSans:not(.nkbB){opacity:.97}
+.nkb[data-native-page="22"] input.nkbField[data-native-field^="t2-"]{font-size:1.64cqw!important;opacity:.95}
