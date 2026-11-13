@@ -29,6 +29,8 @@
 .nativeAB11Lesson10Mid[data-native-ab11-page='84'] .mCanvas .mNumber{background:#bc0231}
 .nativeAB11Lesson10Mid .mCanvas .mText.mPunkte{font-size:13px}
 .nativeAB11Lesson10Mid .mCanvas .mText.mMark{font-size:13px;line-height:18px}
-.nativeAB11Lesson10Mid .mScore.mScore82{grid-template-rows:31px repeat(3,28px);line-height:28px;font-size:15px;background:#f9f7d0;width:418px;height:126px;padding:6px 0 5px;box-sizing:border-box}
+.nativeAB11Lesson10Mid .mScore.mScore82{grid-template-rows:31px repeat(3,28px);line-height:28px;font-size:15px;background:#f9f7d0;width:418px;height:115px;padding:0;box-sizing:border-box}
 .nativeAB11Lesson10Mid .mScore.mScore82 b{background:transparent}
 .nativeAB11Lesson10Mid .mExRule{position:absolute;height:1px;background:#aaa}
+.nativeAB11Lesson10Mid .mCanvas .mText.mBig{font-size:19px}
+.nativeAB11Lesson10Mid .mCanvas .mText.mScoreLink{font-size:11.5px;text-align:right}
