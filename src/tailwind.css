@@ -751,3 +751,6 @@ body.readerSplitControls .controls .lnv-pageSlot{display:contents}
 .legacyReaderTools{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px;padding:12px;background:var(--paper,#fffefa);color:var(--ink,#26382e)}
 .legacyReaderTools button{min-height:44px;padding:8px 12px;font:14px Arial,sans-serif}
 .legacyReaderTools #practiceButton{background:#3d6449;color:white;border-color:#3d6449}
+
+/* Preview only: let the legacy reader end at its fitted book page. */
+html:has(.legacyReaderTools) #viewport{min-height:0;padding-bottom:0}
