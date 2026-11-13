@@ -1,6 +1,7 @@
 import {useEffect,useLayoutEffect,useRef,useState} from 'react';
 import './line-matching.css';
 import {scanData} from '../scan-data/registry';
+import {lineMatchingAnswers,lineMatchingUngraded} from './lineMatchingAnswers';
 type Props={answers?:string[];id:string;left:string[];right:string[];values:Record<string,string>;onMatch:(key:string,value:string)=>void;leftX:number;rightX:number;leftWidth:number;rightWidth:number;ys:number[];rightYs?:number[];width?:number;height?:number;fontSize?:number;itemHeights?:number[];rightHeights?:number[];multiline?:boolean;lineHeight?:number;example?:[number,number];multiple?:boolean;dotR?:number;leftWidths?:number[];rightWidths?:number[];leftXs?:number[];rightXs?:number[];leftDotXs?:number[];leftDotYs?:number[];rightDotXs?:number[];rightDotYs?:number[];rightFontSizes?:number[];className?:string};
 /** Dots are the line endpoints. All connecting strokes stay inside the gap. */
 export function LineMatching({id,left,right,values,onMatch,leftX,rightX:baseRightX,leftWidth,rightWidth:baseRightWidth,ys,rightYs=ys,width=1075,height=1521,fontSize=22,itemHeights=[],rightHeights=[],multiline=false,lineHeight=24,example,multiple=false,dotR=5.5,leftWidths,rightWidths,leftXs,rightXs,leftDotXs,leftDotYs,rightDotXs,rightDotYs,rightFontSizes,className,answers}:Props){
@@ -16,8 +17,11 @@ export function LineMatching({id,left,right,values,onMatch,leftX,rightX:baseRigh
   const route=location.pathname.split('/').pop()||'index';
   const book=(route.startsWith('ab')?'ab':'kb')+'-'+(route.includes('a12')||route.startsWith('l21-24')?'a12':'a11');
   const source=page?scanData[book+':'+page]:undefined;
-  const raw=answers?.[i]??checkedAnswers[id+'-'+i]??source?.matchings?.find(m=>m.id===id)?.answers?.[i]??source?.fields.find(f=>f.id===id+'-'+i)?.answer;
+  const instance=book+':'+page+':'+id;
+  if(instance in lineMatchingUngraded)return undefined;
+  const raw=lineMatchingAnswers[instance]?.[i]??answers?.[i]??checkedAnswers[id+'-'+i]??source?.matchings?.find(m=>m.id===id)?.answers?.[i]??source?.fields.find(f=>f.id===id+'-'+i)?.answer;
   if(raw===undefined)return undefined;
+  if(raw==='')return [];
   const tokens=raw.split(',').map(s=>s.trim());
   if(tokens.every(s=>/^\d+$/.test(s)&&Number(s)<right.length))return [...new Set([...tokens.map(Number),...(example?.[0]===i?[example[1]]:[])])];
   const normalize=(s:string)=>s.toLocaleLowerCase('de').trim().replace(/[.!?]+$/,'').replace(/\s+/g,' ');
