@@ -30,7 +30,7 @@ try{for(const width of(process.env.W?[+process.env.W]:[390]))for(const[file,page
   else await el.fill(f.answer.split('|')[0])}
  // every ungraded radio/checkbox/digit box must be a real tappable control, saved through reload
  const un=data.fields.filter(f=>f.answer===undefined&&(f.kind==='radio'||f.kind==='checkbox'));
- for(const f of un.slice(0,40)){const el=h.locator(`[data-native-field="${f.id}"]`);await el.scrollIntoViewIfNeeded();const bb=await el.boundingBox();assert(bb&&bb.width>=10&&bb.height>=7,pg+' tiny '+f.id);await p.touchscreen.tap(bb.x+bb.width/2,bb.y+bb.height/2);assert.equal(await el.isChecked(),true,pg+' tap '+f.id);stat.tapped=(stat.tapped||0)+1}
+ for(const f of un.slice(0,40)){const el=h.locator(`[data-native-field="${f.id}"]`);await el.scrollIntoViewIfNeeded();const bb=await el.boundingBox();assert(bb&&bb.width>=10&&bb.height>=7,pg+" tiny "+f.id+" "+JSON.stringify(bb));await p.touchscreen.tap(bb.x+bb.width/2,bb.y+bb.height/2);assert.equal(await el.isChecked(),true,pg+' tap '+f.id);stat.tapped=(stat.tapped||0)+1}
  for(const f of data.fields.filter(f=>f.maxlen===1&&f.answer===undefined)){const el=h.locator(`[data-native-field="${f.id}"]`);await el.fill('3');assert.equal(await el.inputValue(),'3')}
  if(un.length){await p.reload();await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');assert.equal(await h.locator(`[data-native-field="${un.slice(0,40).filter(x=>x.kind==='checkbox'||x.name===un[0].name).pop().id}"]`).isChecked(),true,pg+' persist radio')}
  const groups=[...new Set(ans.map(f=>f.group))];
