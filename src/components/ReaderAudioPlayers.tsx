@@ -1,4 +1,4 @@
-import {useEffect,useState} from 'react';
+import {useEffect,useRef,useState} from 'react';
 import {createPortal} from 'react-dom';
 import './reader-audio-players.css';
 const time=(n:number)=>Number.isFinite(n)?`${Math.floor(n/60)}:${String(Math.floor(n%60)).padStart(2,'0')}`:'0:00';
@@ -19,8 +19,10 @@ function Player({audio}:{audio:HTMLAudioElement}){
 export function ReaderAudioPlayers(){
  const [active,setActive]=useState<HTMLAudioElement|null>(null);
  const [idle]=useState(()=>new Audio());
+ const hostApi=useRef<{ensure?:()=>void}>({});
  useEffect(()=>{
-  const reveal=(audio:HTMLAudioElement)=>setActive(audio);
+  // A play request must resurrect a wiped panel immediately, not one tick later.
+  const reveal=(audio:HTMLAudioElement)=>{hostApi.current.ensure?.();setActive(audio)};
   const show=(event:Event)=>{if(event.target instanceof HTMLAudioElement)reveal(event.target)};
   // Observe playback requests so the permanent player follows every source.
   const original=HTMLMediaElement.prototype.play;
@@ -31,9 +33,7 @@ export function ReaderAudioPlayers(){
  const [slot,setSlot]=useState<HTMLElement|null>(null),[audios,setAudios]=useState<HTMLAudioElement[]>([]);
  useEffect(()=>{
   let host:HTMLElement|null=null;const marked=new Set<HTMLAudioElement>();
-  const update=()=>{
-   setActive(old=>old&&!old.isConnected?null:old);
-   document.querySelectorAll<HTMLElement>('button').forEach(el=>{el.toggleAttribute('data-reader-reset',/^Noch einmal$/i.test(el.textContent?.trim()||''))});
+  const ensure=()=>{
    const viewport=document.querySelector('#viewport');
    // The book can replace #viewport (hydration, lesson data, SPA hops). A host
    // left behind in the removed subtree makes the player vanish while audio
@@ -41,13 +41,19 @@ export function ReaderAudioPlayers(){
    if(viewport&&(!host||!host.isConnected||host.previousElementSibling!==viewport)){
     host?.remove();host=document.createElement('div');host.className='readerAudioPanel';viewport.insertAdjacentElement('afterend',host);setSlot(host);
    }
+  };
+  hostApi.current.ensure=ensure;
+  const update=()=>{
+   setActive(old=>old&&!old.isConnected?null:old);
+   document.querySelectorAll<HTMLElement>('button').forEach(el=>{el.toggleAttribute('data-reader-reset',/^Noch einmal$/i.test(el.textContent?.trim()||''))});
+   ensure();
    const jump=document.querySelector<HTMLSelectElement>('#pageJump');const page=jump?document.querySelectorAll('.page')[Number(jump.value)]:null;
    const canvas=page?.querySelector<HTMLElement>('.nkbCanvas');
    document.body.classList.toggle('readerNativeFrame',!!canvas);if(canvas){const height=canvas.getBoundingClientRect().height;if(Number.isFinite(height)&&height>0)document.documentElement.style.setProperty('--reader-native-height',`${height}px`);}
    const next=page?[...page.querySelectorAll<HTMLAudioElement>('audio')].filter(a=>a.getAttribute('src')||a.querySelector('source[src]')):[];
    next.forEach(a=>{a.dataset.readerAudioSource='true';marked.add(a)});
    setAudios(old=>old.length===next.length&&old.every((a,i)=>a===next[i])?old:next);
-  };update();const timer=setInterval(update,250);return()=>{clearInterval(timer);host?.remove();marked.forEach(a=>delete a.dataset.readerAudioSource)};
+  };update();const timer=setInterval(update,250);return()=>{clearInterval(timer);hostApi.current.ensure=undefined;(host as HTMLElement|null)?.remove();marked.forEach(a=>delete a.dataset.readerAudioSource)};
  },[]);
  return <>{slot&&createPortal(<Player audio={active||audios[0]||idle}/>,slot)}</>;
 }

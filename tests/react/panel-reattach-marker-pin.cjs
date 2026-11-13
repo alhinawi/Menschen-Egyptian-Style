@@ -10,6 +10,11 @@ const{chromium}=require('playwright'),assert=require('node:assert/strict'),fs=re
  await p.evaluate(()=>document.querySelector('.readerAudioPanel')?.remove());
  await p.waitForFunction(()=>{const el=document.querySelector('.readerAudioPanel');return el&&el.isConnected&&el.previousElementSibling===document.querySelector('#viewport')&&el.querySelector('.readerAudioPlayer')},{timeout:3000});
  console.log('panel re-anchors after host wipe PASS');
+ // 1b. A play request resurrects the wiped panel synchronously, before any tick.
+ const revived=await p.evaluate(()=>{document.querySelector('.readerAudioPanel')?.remove();const a=document.querySelector('audio');if(a)void a.play().catch(()=>{});return document.querySelectorAll('.readerAudioPanel').length});
+ assert.equal(revived,1,'play did not immediately re-create the panel host');
+ await p.waitForSelector('.readerAudioPanel .readerAudioPlayer',{timeout:1000});
+ console.log('play request immediately re-creates the panel PASS');
  // 2. Markers stay pinned to their source buttons during scrolling.
  await p.goto('http://localhost:5296/ab4-6.html#31');await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
  await p.waitForSelector('.largeAudioMarker');
