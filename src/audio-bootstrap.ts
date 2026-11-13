@@ -13,7 +13,14 @@ export function installSeekableAudio() {
  const realPlay = HTMLMediaElement.prototype.play;
  HTMLMediaElement.prototype.play = function(this: HTMLMediaElement) {
   if (this instanceof HTMLAudioElement && hasHttpSource(this)) {
-   return load().then(m => m.ensureSeekable(this as HTMLAudioElement)).catch(() => {}).then(() => realPlay.call(this));
+   // Start playback synchronously so the user's tap always produces sound.
+   // The old flow awaited the range probe and the full blob download first,
+   // which on a phone left the tap silent for seconds (looking dead) and let
+   // the play() gesture context expire. Convert in the background instead;
+   // ensureSeekable preserves position and resumes when the blob is ready.
+   const started = realPlay.call(this);
+   void load().then(m => m.ensureSeekable(this as HTMLAudioElement)).catch(() => {});
+   return started;
   }
   return realPlay.call(this);
  };
