@@ -1,0 +1,42 @@
+@font-face{font-family:P96Serif;src:url('/assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:P96Sans;src:url('/assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:P96Sans;src:url('/assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700;font-display:swap}
+.ab11p96{position:relative;width:100%;height:100%;background:white}
+.page:has(.ab11p96){padding:0!important}
+.ab11p96Canvas{position:absolute;left:50%;top:50%;width:901px;height:1275px;transform-origin:center;background:#fff;color:#242420;font-family:P96Serif,Georgia,serif}
+.ab11p96Canvas .p96Text{position:absolute;white-space:pre;line-height:1.32;margin:0;padding:0}
+.ab11p96Canvas .p96Sans{font-family:P96Sans,sans-serif}
+.ab11p96Canvas .tapWord{padding:0!important;margin:0!important}
+.ab11p96Canvas .p96Art{position:absolute;max-width:none!important;max-height:none!important;object-fit:fill!important;margin:0!important}
+.ab11p96Canvas .p96Line{position:absolute;height:1px}
+.ab11p96Canvas .p96Highlight{position:absolute;background:#fffdd1}
+.ab11p96Canvas .p96Badge{position:absolute;box-sizing:border-box;background:#e96d12;color:white;border:1px solid #c85627;font:700 21px/19px P96Serif,serif;text-align:center}
+.ab11p96Canvas .p96Side{position:absolute;writing-mode:vertical-rl;transform:rotate(180deg);font:700 10px P96Sans,sans-serif;color:#263f61}
+.ab11p96Canvas .p96Speaker{position:absolute;width:8px;height:8px;background:#080b83}
+.ab11p96Canvas .p96Speaker.green{width:0;height:0;background:transparent;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:9px solid #159e2e}
+.ab11p96Canvas .p96Field{position:absolute;box-sizing:border-box;min-width:0!important;min-height:0!important;max-width:none!important;margin:0!important;border:0!important;border-bottom:1px solid #a5aaa7!important;border-radius:0!important;padding:0 2px!important;font:var(--p96-answer-size,15px)/1.2 P96Serif,serif!important;color:#28496f;background:transparent!important;outline-offset:1px}
+.ab11p96Canvas .p96Field.correct{color:#18773c!important;border-bottom-color:#18773c!important}
+.ab11p96Canvas .p96Field.wrong{color:#b62626!important;border-bottom-color:#b62626!important}
+.ab11p96Canvas .p96Check{position:absolute;display:flex;gap:7px;align-items:center;white-space:nowrap}
+.ab11p96Canvas .p96Check button{min-height:20px!important;font:11px P96Sans,sans-serif;padding:2px 7px!important;margin:0!important;border:1px solid #8b9586;border-radius:3px;background:#fff;color:#31532c}
+.ab11p96Canvas .p96Check output{font:11px P96Sans,sans-serif;color:#555}
+
+
+.ab11p96Canvas .p96Badge{background:#ce1019;border:0}
+.ab11p96Canvas .p96Field{font:15px/1.2 P96Serif!important;border-bottom:0!important}
+.ab11p96Canvas .p96Field.cells{border:1px solid #dedeca!important;background:repeating-linear-gradient(90deg,transparent 0,transparent calc(var(--cell) - 1px),#dedeca calc(var(--cell) - 1px),#dedeca var(--cell))!important;text-transform:uppercase}
+.ab11p96Canvas .p96Field.correct{background-color:#e0f1df!important;box-shadow:inset 0 0 0 1px #18773c!important}
+.ab11p96Canvas .p96Field.wrong{background-color:#f9dddd!important;box-shadow:inset 0 0 0 1px #b62626!important}
+.ab11p96Canvas .p96Snake{position:absolute;font:15px/22px P96Serif;white-space:nowrap}
+.ab11p96Canvas .p96Snake button{display:inline!important;border:0!important;border-radius:0!important;min-height:0!important;padding:0!important;margin:0!important;background:transparent;font:inherit;color:inherit;letter-spacing:normal}
+.ab11p96Canvas .p96Snake button.selected,.ab11p96Canvas .p96Snake button.example{background:#fff298}
+.ab11p96Canvas .p96Snake button.correct{background:#d2eed5;color:#18773c}
+.ab11p96Canvas .p96Snake button.wrong{background:#f6d7d7;color:#b62626}
+.ab11p96Canvas .p96Check button{border-radius:50%!important;width:20px;height:20px;padding:0!important;min-height:0!important;font-size:13px!important}
+@font-face{font-family:P96Serif;src:url('/assets/fonts/droid-serif-700.woff2') format('woff2');font-weight:700;font-display:swap}
+
+.ab11p96Canvas .p96FieldWrap.cells input{color:transparent!important;caret-color:#28496f}
+.ab11p96Canvas .p96CellInk{position:absolute;inset:0;pointer-events:none;display:flex;color:#28496f;font:16px/27px P96Serif}
+.ab11p96Canvas .p96CellInk span{display:inline-block;text-align:center;flex-shrink:0}
+.ab11p96Canvas .p96CellInk.correct{color:#18773c}.ab11p96Canvas .p96CellInk.wrong{color:#b62626}
+.ab11p96Canvas input[data-native-field^="u3-"]{font-size:13px!important}
