@@ -188,3 +188,25 @@
 [data-native-ab12="94"] .naCanvas .naText.naCue94{font-family:DroidSerif,Georgia,serif;color:#252723;letter-spacing:0;white-space:nowrap}
 [data-native-ab12="94"] .naCanvas .naText.naCue94 span[role=button]{padding:0}
 [data-native-ab12="94"] .naTestRule94{position:absolute;height:1.5px;background:linear-gradient(90deg,#f0701a,#f08a20)}
+[data-native-ab12="96"] .naBookSerif{letter-spacing:0!important}
+[data-native-ab12="96"] .naField{border-bottom:1px solid #c4c4c8!important}
+[data-native-ab12="96"] .naCanvas .naText.naHead96{font-family:DroidSerif,Georgia,serif;color:#1a191b;letter-spacing:0}
+[data-native-ab12="96"] .naCanvas .naText.naHead96 span[role=button]{padding:0}
+[data-native-ab12="96"] .naCanvas .naTitle.naT96{font-size:16.6px}
+[data-native-ab12="96"] .naTitle.naRB b{background:linear-gradient(180deg,#b30d03,#9a0300);min-width:22px;width:22px;height:15px;line-height:15px;font:700 11px/15px FiraSans,sans-serif;margin-right:8px;position:relative;top:-3px;box-shadow:inset 0 2px 0 #c34a3a,inset 2px 0 0 #a8182e}
+[data-native-ab12="96"] .naCanvas .naText.naInstr96{font-family:FiraSans,sans-serif;font-weight:700;color:#202026}
+[data-native-ab12="96"] .naCanvas .naText.naInstr96 span[role=button]{padding:0}
+[data-native-ab12="96"] .naCanvas .naText.naLab96{font-family:FiraSans,sans-serif;font-weight:700;color:#1c2178}
+[data-native-ab12="96"] .naCanvas .naText.naQ96{font-style:italic}
+[data-native-ab12="96"] .naCanvas .naText.naLab4b96{font-weight:700;color:#2c2e2d}
+[data-native-ab12="96"] .naCard96{position:absolute;background:#f9fdff;border-radius:6px}
+[data-native-ab12="96"] .naCanvas .naText.naFoot88{color:#2c2e2d}
+@font-face{font-family:FiraSansCond;src:url('/assets/fonts/firasanscond-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
+[data-native-ab12="96"] .naCanvas .naText.naSMS96{font-family:FiraSansCond,FiraSans,sans-serif;color:#2f363a}
+[data-native-ab12="96"] .naCanvas .naText.naSMS96 span[role=button]{padding:0}
+[data-native-ab12="96"] .naCanvas .naText.naTbL96{font-weight:700}
+[data-native-ab12="96"] .naCanvas .naField.naCell96{border-bottom:none!important}
+[data-native-ab12="96"] .sharedMatching.lm96 .sharedMatchItem{color:#252723!important}
+
+[data-native-ab12="96"] .naCanvas .naText.naTbL96 span[role=button]{padding:0}
+[data-native-ab12="96"] .naCanvas .naText.naLab96 span[role=button]{padding:0}
