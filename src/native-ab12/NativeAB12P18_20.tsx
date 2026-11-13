@@ -57,7 +57,10 @@ export function NativeAB12P18_20({page}:{page:string}){
   {check('g1',850,242,{'p18-nKirche':'3','p18-nSpielplatz':'2','p18-nWald':'6','p18-nMeer':'5','p18-nCafé':'7','p18-nHafen':'4'},'naCheckCol')}
   {text(125,302,20,'b','naExL')}
   {text(161,302,500,'Ergänzen Sie aus a. Notieren und vergleichen Sie.')}
-  <div style={{position:'absolute',left:150,top:338,width:825,height:29,background:'#f0ead6'}}/>
+  <div style={{position:'absolute',left:150,top:335,width:825,height:32,background:'#f0ead6'}}/>
+  <div className="naTFrame" style={{left:150,top:335,width:825,height:238}}/>
+  <div className="naTCol" style={{left:443,top:335,height:238}}/>
+  <div className="naTCol" style={{left:638,top:335,height:238}}/>
   {text(159,341,200,'Deutsch','naTh')}
   {text(451,341,150,'Englisch','naTh')}
   {text(648,341,320,'Meine Sprache oder andere Sprachen','naTh naNw')}
@@ -69,11 +72,11 @@ export function NativeAB12P18_20({page}:{page:string}){
   {art('hand-meer',155,489,290,30)}
   {art('hint-6',155,518,290,30)}
   {art('hand-wald',155,545,290,30)}
-  {field('p18-dCafé',158,368,285,'café auf Deutsch','naFieldBlank')}
-  {field('p18-dHafen',158,397,285,'harbour auf Deutsch','naFieldBlank')}
-  {field('p18-dFlughafen',158,430,285,'airport auf Deutsch','naFieldBlank')}
-  {field('p18-dKirche',158,459,285,'church auf Deutsch','naFieldBlank')}
-  {field('p18-dSpielplatz',158,518,285,'playground auf Deutsch','naFieldBlank')}
+  {field('p18-dCafé',158,368,275,'café auf Deutsch','naFieldBlank')}
+  {field('p18-dHafen',158,397,275,'harbour auf Deutsch','naFieldBlank')}
+  {field('p18-dFlughafen',158,430,275,'airport auf Deutsch','naFieldBlank')}
+  {field('p18-dKirche',158,459,275,'church auf Deutsch','naFieldBlank')}
+  {field('p18-dSpielplatz',158,518,275,'playground auf Deutsch','naFieldBlank')}
   {text(451,370,150,'café')}
   {text(451,399,150,'harbour')}
   {text(451,432,150,'airport')}
@@ -221,7 +224,8 @@ export function NativeAB12P18_20({page}:{page:string}){
   {text(152,530,20,'a','naBold naF21')}
   {text(177,530,44,'Wie','naF21')}
   <div className="naText naF21" style={{left:221,top:530,width:62}}><span className="naHl"><Words text="gefällt"/></span></div>
-  {text(283,530,406,'/ gefallen dir der Stadtteil? – Toll, besonders','naF21')}
+  {text(283,530,240,'/ gefallen dir der Stadtteil?','naF21')}
+  {text(535,530,150,'– Toll, besonders','naF21')}
   {pick('6a2','gefällt',692,530,'gefällt (6a)')}
   {text(754,530,14,'/','naF21')}
   {pick('6a2','gefallen',768,530,'gefallen (6a)')}
@@ -231,7 +235,9 @@ export function NativeAB12P18_20({page}:{page:string}){
   {pick('6b1','Gehört',177,582,'Gehört (6b)')}
   {text(241,582,14,'/','naF21')}
   {pick('6b1','Gehören',256,582,'Gehören (6b)')}
-  {text(341,582,590,'die Schlüssel Dörte? – Nein, das sind meine. Aber der Schlüssel auf','naF21')}
+  {text(341,582,175,'die Schlüssel Dörte?','naF21')}
+  {text(524,582,200,'– Nein, das sind meine.','naF21')}
+  {text(734,582,200,'Aber der Schlüssel auf','naF21')}
   {text(176,608,90,'dem Tisch','naF21')}
   {pick('6b2','gehört',274,608,'gehört (6b)')}
   {text(337,608,14,'/','naF21')}
@@ -248,8 +254,8 @@ export function NativeAB12P18_20({page}:{page:string}){
   {text(175,688,430,'Clemens möchte Deutsch lernen und macht viele','naF21')}
   {text(611,688,84,'Übungen.','naF21')}
   {text(701,688,28,'Die','naF21')}
-  {text(735,688,82,'Übungen','naF21')}
-  {pick('6d','hilft',824,688,'hilft (6d)')}
+  {text(741,688,82,'Übungen','naF21')}
+  {pick('6d','hilft',828,688,'hilft (6d)')}
   {text(869,688,14,'/','naF21')}
   {pick('6d','helfen',884,688,'helfen (6d)')}
   {text(175,714,40,'ihm.','naF21')}
@@ -257,7 +263,8 @@ export function NativeAB12P18_20({page}:{page:string}){
   {pick('6e1','Schmeckt',174,742,'Schmeckt (6e)')}
   {text(264,742,14,'/','naF21')}
   {pick('6e1','Schmecken',277,742,'Schmecken (6e)')}
-  {text(388,742,360,'dir der Salat? – Nein, aber die Kartoffeln','naF21')}
+  {text(388,742,125,'dir der Salat?','naF21')}
+  {text(521,742,230,'– Nein, aber die Kartoffeln','naF21')}
   {pick('6e2','schmeckt',759,742,'schmeckt (6e)')}
   {text(846,742,14,'/','naF21')}
   {pick('6e2','schmecken',861,742,'schmecken (6e)')}
