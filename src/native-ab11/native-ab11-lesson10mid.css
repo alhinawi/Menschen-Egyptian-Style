@@ -1,12 +1,23 @@
-.nativeAB11Lesson10Mid .mCanvas .mText{font-size:16px}
-.nativeAB11Lesson10Mid .mCanvas .mText.mHeader{font:25px Georgia;letter-spacing:1px}
+@font-face{font-family:KbFira;src:url('/assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:KbFira;src:url('/assets/fonts/firasans-latin-500.ttf') format('truetype');font-weight:500;font-display:swap}
+@font-face{font-family:KbFira;src:url('/assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:KbDroid;src:url('/assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}
+.nativeAB11.nativeAB11Lesson10Mid .mCanvas{font-family:KbDroid,Georgia,serif}
+.nativeAB11.nativeAB11Lesson10Mid .mCanvas .mText{font-family:KbDroid,Georgia,serif}
+.nativeAB11.nativeAB11Lesson10Mid .mCanvas .mField{font-family:KbDroid,Georgia,serif!important}
+.nativeAB11.nativeAB11Lesson10Mid .mCanvas .mScore{font-family:KbDroid,Georgia,serif}
+.nativeAB11.nativeAB11Lesson10Mid .mCanvas .mText.mBank{font-family:Arial,sans-serif}
+.nativeAB11.nativeAB11Lesson10Mid .mCanvas .mText.mFooter{font-family:Georgia,serif}
+.nativeAB11.nativeAB11Lesson10Mid .mCanvas .mText.mTiny{font-family:Arial,sans-serif}
+.nativeAB11Lesson10Mid .mCanvas .mText{font-size:14.5px}
+.nativeAB11Lesson10Mid .mCanvas .mText.mHeader{font:25px KbDroid,Georgia,serif;letter-spacing:1px}
 .nativeAB11Lesson10Mid .mCanvas .mText.mTitle{font-size:15.5px}
 .nativeAB11Lesson10Mid .mPhotoLet{position:absolute;width:17px;height:17px;border:1px solid #8a8570;border-radius:50%;background:rgba(255,255,255,.92);font:11px/17px Georgia;text-align:center;color:#333;z-index:3}
 .nativeAB11Lesson10Mid .mCanvas .mText.mSmall{font-size:14px}
 .nativeAB11Lesson10Mid .mCanvas .mText.mFooter{font-size:12px}
 .nativeAB11Lesson10Mid .mCanvas .mText.mScript2{font:italic 20px Georgia;color:#333}
-.nativeAB11.nativeAB11Lesson10Mid .mCanvas .mField{height:20px!important;font-size:16px;border:0!important;border-bottom:1px solid #aaa!important;border-radius:0!important;background:transparent!important}
-.nativeAB11.nativeAB11Lesson10Mid .mCanvas .mTitle{font-family:FiraSans,Arial,sans-serif}
+.nativeAB11.nativeAB11Lesson10Mid .mCanvas .mField{height:20px!important;font-size:14.5px;border:0!important;border-bottom:1px solid #aaa!important;border-radius:0!important;background:transparent!important}
+.nativeAB11.nativeAB11Lesson10Mid .mCanvas .mTitle{font-family:KbFira,FiraSans,Arial,sans-serif}
 .nativeAB11Lesson10Mid .mCanvas .mOpen{font-size:15px;line-height:22px!important}
 .nativeAB11Lesson10Mid .mCanvas .mNumber{background:#fb0200;border:0}
 .nativeAB11Lesson10Mid .mCanvas .mRadio{width:15px!important;height:15px!important}
@@ -32,13 +43,13 @@
 .nativeAB11Lesson10Mid .mScore.mScore82{grid-template-rows:31px repeat(3,28px);line-height:28px;font-size:15px;background:#f9f7d0;width:418px;height:115px;padding:0;box-sizing:border-box}
 .nativeAB11Lesson10Mid .mScore.mScore82 b{background:transparent}
 .nativeAB11Lesson10Mid .mExRule{position:absolute;height:1px;background:#aaa}
-.nativeAB11Lesson10Mid .mCanvas .mText.mBig{font-size:19px}
+.nativeAB11Lesson10Mid .mCanvas .mText.mBig{font-size:14.5px}
 .nativeAB11Lesson10Mid .mCanvas .mText.mScoreLink{font-size:11.5px;text-align:right}
 .nativeAB11Lesson10Mid .mCanvas .mText.mVocabHead{font-weight:bold}
 .nativeAB11Lesson10Mid .mCanvas .mVocabCH{font-size:13px}
 .nativeAB11Lesson10Mid .mTippBar{position:absolute;background:#cc9107;display:flex;align-items:center;justify-content:center}
 .nativeAB11Lesson10Mid .mTippBar span{transform:rotate(-90deg);color:#fff;font:700 10px FiraSans,Arial,sans-serif;letter-spacing:1px}
 .nativeAB11Lesson10Mid .mTippRule{position:absolute;background:#cc9107}
-.nativeAB11Lesson10Mid .mCanvas .mText.mTipp{font:14px/18.4px 'Times New Roman',serif}
+.nativeAB11Lesson10Mid .mCanvas .mText.mTipp{font:14px/18.4px KbDroid,Georgia,serif}
 .nativeAB11Lesson10Mid .mCanvas .mHi{background:#fdfb50}
-.nativeAB11Lesson10Mid[data-native-ab11-page='83'] .mCanvas .mOpen{line-height:21px!important;height:var(--mopen-height)!important;border:0!important;background:repeating-linear-gradient(white 0 20px,#aaa 20px 21px)!important}
+.nativeAB11Lesson10Mid[data-native-ab11-page='83'] .mCanvas .mOpen{line-height:22px!important;height:var(--mopen-height)!important;border:0!important;background:repeating-linear-gradient(white 0 21px,#aaa 21px 22px)!important}
