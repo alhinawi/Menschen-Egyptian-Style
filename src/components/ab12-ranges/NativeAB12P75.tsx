@@ -30,10 +30,10 @@ function P75(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,rect}=h;const D
   {conf('s2',207)}
   {ln(100,217,170,13.5,'Natascha hat sich verändert.',{cls:D})}
   {ln(277,217,22,13.5,'Tom',{cls:D})}
-  {rule(312,233,57)}{field('p75-s2-1',312,213,57,'2 Tom','naFieldBlank')}
-  {ln(377,217,144,13.5,'Natascha nicht sofort',{cls:D})}
-  {rule(121,247,59)}{field('p75-s2-2',121,230,59,'2 erkennen','naFieldBlank')}
-  {ln(236,238,69,13.5,'. (erkennen)',{cls:D})}
+  {rule(314,233,45)}{field('p75-s2-1',314,213,45,'2 Tom','naFieldBlank')}
+  {ln(377,217,126,13.5,'Natascha nicht sofort',{cls:D})}
+  {rule(98,247,128)}{field('p75-s2-2',98,230,128,'2 erkennen','naFieldBlank')}
+  {ln(236,236,69,13.5,'. (erkennen)',{cls:D})}
   {ln(98,253,17,13.5,'Sie',{cls:D})}
   {rule(120,265,55)}{field('p75-s2-3',120,249,55,'2 Sie','naFieldBlank')}
   {ln(211,253,149,13.5,'vor zwei Jahren ein Baby',{cls:D})}
@@ -49,23 +49,23 @@ function P75(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,rect}=h;const D
   {ln(80,306,275,13.5,'… Befehle formulieren (Imperativ: du/ihr):',{b:1,cls:H})}
   {ln(366,306,20,13.5,'L20',{cls:D})}
   {conf('s3',316)}
-  {ln(98,322,44,13.5,'Line,',{cls:D})}
-  {rule(146,338,73)}{field('p75-s3-1',146,321,73,'3 Line','naFieldBlank')}
-  {ln(223,322,42,13.5,'leise!',{cls:D})}
-  {ln(97,339,154,13.5,'Line und Melanie,',{cls:D})}
-  {rule(255,359,61)}{field('p75-s3-2',255,338,61,'3 Melanie','naFieldBlank')}
+  {ln(98,322,27,13.5,'Line,',{cls:D})}
+  {rule(148,338,71)}{field('p75-s3-1',148,321,71,'3 Line','naFieldBlank')}
+  {ln(223,322,35,13.5,'leise!',{cls:D})}
+  {ln(97,339,104,13.5,'Line und Melanie,',{cls:D})}
+  {rule(205,354,111)}{field('p75-s3-2',205,337,111,'3 Melanie','naFieldBlank')}
   {ln(322,339,97,13.5,'sofort da runter!',{cls:D})}
 
   {/* 4: Personalpronomen im Akkusativ */}
   {ln(79,379,431,13.5,'… sagen, wen man anrufen soll (Personalpronomen im Akkusativ):',{b:1,cls:H})}
   {ln(516,379,20,13.5,'L20',{cls:D})}
   {conf('s4',388)}
-  {ln(96,394,50,13.5,'Lisa, ruf',{cls:D})}
-  {rule(152,411,81)}{field('p75-s4-1',152,395,81,'4 ich','naFieldBlank')}
-  {ln(242,394,186,13.5,'bitte heute noch an! (ich)',{cls:D})}
-  {ln(96,412,50,13.5,'Lisa, ruf',{cls:D})}
-  {rule(151,429,76)}{field('p75-s4-2',151,413,76,'4 er','naFieldBlank')}
-  {ln(241,412,151,13.5,'bitte heute noch an! (er)',{cls:D})}
+  {ln(96,394,48,13.5,'Lisa, ruf',{cls:D})}
+  {rule(149,411,86)}{field('p75-s4-1',149,395,86,'4 ich','naFieldBlank')}
+  {ln(242,394,150,13.5,'bitte heute noch an! (ich)',{cls:D})}
+  {ln(96,412,48,13.5,'Lisa, ruf',{cls:D})}
+  {rule(149,429,86)}{field('p75-s4-2',149,413,86,'4 er','naFieldBlank')}
+  {ln(241,412,144,13.5,'bitte heute noch an! (er)',{cls:D})}
 
   {/* 5: Modalverben dürfen/müssen */}
   {ln(77,450,434,13.5,'… Verbote und Gebote ausdrücken (Modalverben: dürfen, müssen):',{b:1,cls:H})}
@@ -90,8 +90,8 @@ function P75(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,rect}=h;const D
   {ln(74,648,128,21,'RÜCKBLICK',{cls:'naRb75'})}
   {ln(71,702,286,15,'Wählen Sie eine Aufgabe zu Lektion',{b:1,c:B,cls:D})}
   {rect(361,706,22,13,'#22529a')}
-  {wl(718,12.5,[{x:365,w:15,t:'19',b:1,c:'#fff'}])}
-  {rect(386,723,332,2,'#9bbed4')}
+  {wl(717,13.5,[{x:364,w:17,t:'19',b:1,c:'#fff'}])}
+  <div className="naRect" style={{left:386,top:719,width:332,height:2,background:'#9bbed4',transform:'rotate(1deg)',transformOrigin:'left top'}}/>
 
   {/* Aufgabe 1 */}
   {art('t1',42,749,54,20)}
@@ -106,9 +106,9 @@ function P75(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,rect}=h;const D
   {art('hw2',108,956,210,66)}
 
   {art('badge',737,1050,66,25)}
-  {wl(1066,12,[{x:717,w:11,t:'75',b:1}])}
-  {rect(703,1055,1,12,'#202020')}
-  {ln(600,1050,91,12,'fünfundsiebzig')}
+  {wl(1070,12,[{x:717,w:11,t:'75',b:1}])}
+  {rect(703,1059,1,12,'#202020')}
+  {ln(600,1056,91,12,'fünfundsiebzig',{cls:'naFoot75'})}
  </>;
 }
 
