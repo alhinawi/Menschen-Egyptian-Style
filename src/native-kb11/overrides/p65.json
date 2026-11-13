@@ -1,1 +1,6 @@
-{"keep": [[0, 0, 1072, 1010], [855, 985, 1072, 1300], [600, 1105, 830, 1185], [210, 1130, 590, 1170], [290, 1228, 680, 1320]], "paper0": [253, 254, 250], "setws": [{"cy": 1249.2, "x": 215, "tol": 0.3, "ws": ["Wann?"]}, {"cy": 1274.0, "x": 208, "tol": 0.3, "ws": ["Was?"]}], "adj": [{"cy": 1274.0, "x": 208, "tol": 0.3, "dx": 7, "dw": -2, "dy": -0.5, "set": {"f": 19.5, "b": 1, "sa": 1}}, {"cy": 1300.5, "x": 208, "tol": 0.3, "dx": 7, "dw": -4, "set": {"f": 19.5, "b": 1, "sa": 1}}]}
+{
+ "keep": [[0, 0, 1072, 1518]],
+ "fieldadj": {},
+ "checks": {},
+ "notes": ["Discussion-only opener: tasks 1/2 have no blanks, no fields.", "Audio tag 2.18 erased clear of red box 1 (x171-205); marker nudged left so the play button cannot touch the red box."]
+}
