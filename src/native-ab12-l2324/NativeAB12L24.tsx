@@ -8,6 +8,9 @@ export function NativeAB12L24({page}:{page:string}){
  const conf98=(id:string,y:number)=><>{[0,1,2].map(cc=>c.dot(id,''+cc,650+cc*29.5,y,'Selbsteinschätzung '+id+' '+['gut','mittel','noch nicht'][cc],false,'naDot98'))}</>;
  const sect98=(y:number,t:string,tag:string)=><div className="naText naSect98" style={{left:78,top:y}}><Words text={t}/> <span className="naTag98">{tag}</span></div>;
  const conf99=(id:string,y:number)=><>{[0,1,2].map(cc=>c.dot(id,''+cc,646.6+cc*28.9,y,'Selbsteinschätzung '+id+' '+['gut','mittel','noch nicht'][cc],false,'naDot99'))}</>;
+ const mix102=(x:number,y:number,w:number,segs:[string,(boolean|number)?][],fs=12.5)=><div className="naText naCell102 naNw" style={{left:x,top:y,width:w,fontSize:fs}}>{segs.map((s,i)=>s[1]?<span key={i} className="naRed102">{s[0]}</span>:<Words key={i} text={s[0]}/>)}</div>;
+ const tx102=(x:number,y:number,b:number,t:string,cls='naCell102 naNw',fs=12.5)=>text(x,y,w102(t,fs),t,cls,fs);
+ const w102=(t:string,fs:number)=>t.length*fs*0.6+10;
  const sect99=(y:number,t:string,tag:string)=><div className="naText naSect99" style={{left:78,top:y}}><Words text={t}/> <span className="naTag99">{tag}</span></div>;
  return <Canvas page={page} root={c.root} player={c.player} scale={c.scale}>
  {page==='96'&&<>
@@ -314,6 +317,92 @@ export function NativeAB12L24({page}:{page:string}){
   {text(620.7,1050.5,72,'hunderteins','naFoot101 naNw',14)}{text(705.5,1050.5,6,'|','naFoot101 naNw',14)}{text(719.3,1050.5,18,'101','naFoot101 naNw',14)}
   <div style={{position:'absolute',left:747.2,top:1044.5,width:58,height:23,background:'#c8bc92'}}/>
   {text(750,1048.5,52,'Modul 8','naMod101 naNw',11)}
+ </>}
+ {page==='102'&&<>
+  {text(78,54.6,343,'GRAMMATIKÜBERSICHT','naHead102 naNw',29)}
+  {text(77,125.3,60,'Nomen','naSect102 naNw',16)}
+  <div className="naBand102" style={{left:78,top:154,width:300,height:20}}/>
+  {tx102(82,158.2,170,'Genitiv bei Eigennamen','naBandT102 naNw',12.3)}{tx102(248,159.3,170,'L14','naLT102 naNw',12.5)}
+  <svg className="naGrid102" viewBox="0 0 807 1094" aria-hidden="true">
+   <rect x="78" y="174" width="1" height="40"/><rect x="377.5" y="174" width="1" height="40"/><rect x="78" y="213.5" width="300" height="1"/>
+   <rect x="77" y="302" width="1" height="223"/><rect x="175" y="302" width="1" height="223"/><rect x="274" y="302" width="1" height="223"/><rect x="372.5" y="302" width="1" height="223"/><rect x="471.5" y="302" width="1" height="223"/><rect x="571" y="302" width="1" height="223"/><rect x="669.5" y="302" width="1" height="223"/>
+   {[302,325,347,369.5,391,414,436,458,481,503,525].map(y=><rect key={'ph'+y} x="77" y={y} width="593" height="1"/>)}
+   <rect x="77" y="568" width="1" height="176"/><rect x="199" y="568" width="1" height="176"/><rect x="321.5" y="568" width="1" height="176"/>
+   {[588,610,633,654,677,699.5,721,744].map(y=><rect key={'plh'+y} x="77" y={y} width="245" height="1"/>)}
+   <rect x="355" y="568" width="1" height="179"/><rect x="512.5" y="568" width="1" height="179"/><rect x="669.5" y="568" width="1" height="179"/>
+   {[591,613.5,635.5,657.5,680,702.5,724.5,747].map(y=><rect key={'prh'+y} x="355" y={y} width="315" height="1"/>)}
+   <rect x="76" y="827" width="1" height="90"/><rect x="136" y="827" width="1" height="90"/><rect x="202" y="827" width="1" height="90"/><rect x="246.5" y="827" width="1" height="90"/>
+   {[850,872,894.5,917].map(y=><rect key={'vlh'+y} x="76" y={y} width="171" height="1"/>)}
+   <rect x="272" y="827" width="1" height="46"/><rect x="429.5" y="827" width="1" height="46"/>
+   {[850.5,873].map(y=><rect key={'vmh'+y} x="272" y={y} width="158" height="1"/>)}
+   <rect x="430" y="827" width="1" height="174.5"/><rect x="513.5" y="827" width="1" height="174.5"/><rect x="586.5" y="827" width="1" height="174.5"/><rect x="669" y="827" width="1" height="174.5"/>
+   {[851.5,873.5,896,918.5,957,979.5,1001.5].map(y=><rect key={'vrh'+y} x="430" y={y} width="239" height="1"/>)}
+   <rect x="76" y="953" width="1" height="79"/><rect x="411.5" y="953" width="1" height="79"/>
+   {[993,1032].map(y=><rect key={'vwh'+y} x="76" y={y} width="336" height="1"/>)}
+  </svg>
+  {mix102(82,180.5,240,[['Otto'],['s',1],[' Nachbarin']])}{tx102(194,180.5,192.5,'=')}{mix102(216.5,180.5,140,[['die Nachbarin von Otto']])}
+  {mix102(82,197.5,240,[['Vanilla'],['s',1],[' Garten']])}{tx102(194,197.5,209.5,'=')}{mix102(216.5,197.5,140,[['der Garten von Vanilla']])}
+  {text(76,252.3,220,'Artikelwörter und Pronomen','naSect102 naNw',16)}
+  <div className="naBand102" style={{left:77,top:281,width:592,height:21}}/>
+  {tx102(82,286.2,298,'Possessivartikel sein/ihr','naBandT102 naNw',12.3)}{tx102(250,285.3,296,'L14','naLT102 naNw',12.5)}
+  {tx102(182,306,318.05,'Nominativ','naColH102 naNw')}{tx102(379,306,318.05,'Akkusativ','naColH102 naNw')}
+  {tx102(182,327.7,341,'Da ist ...','naCell102 naNw')}{tx102(380,327.7,341,'Ich mag ...','naCell102 naNw')}
+  {art('icon1',179,343,29,36)}{art('icon2',276,343,29,36)}{art('icon3',375,343,27,36)}{art('icon4',474,343,30,36)}
+  <div className="naBullet102" style={{left:82,top:379.5,background:'#184a97'}}/>
+  {tx102(93,371.7,385,'Garten')}{tx102(181,371.7,385,'sein','naRed102 naNw')}{tx102(281,371.7,385,'ihr','naRed102 naNw')}{tx102(379,371.7,385,'seinen','naRed102 naNw')}{tx102(478,371.7,385,'ihren','naRed102 naNw')}{tx102(577,371.7,385,'Garten.')}
+  <div className="naBullet102" style={{left:82,top:401.5,background:'#4bbd26'}}/>
+  {tx102(94,393.7,407,'Haus')}{tx102(181,393.7,407,'sein','naRed102 naNw')}{tx102(281,393.7,407,'ihr','naRed102 naNw')}{tx102(379,393.7,407,'sein','naRed102 naNw')}{tx102(478,393.7,407,'ihr','naRed102 naNw')}{tx102(578,393.7,407,'Haus.')}
+  <div className="naBullet102" style={{left:82,top:423.5,background:'#e15444'}}/>
+  {tx102(93,416.7,430,'Küche')}{tx102(181,416.7,430,'seine','naRed102 naNw')}{tx102(280,416.7,430,'ihre','naRed102 naNw')}{tx102(379,416.7,430,'seine','naRed102 naNw')}{tx102(478,416.7,430,'ihre','naRed102 naNw')}{tx102(578,416.7,430,'Küche.')}
+  {tx102(182,461.7,475,'Da sind ...','naCell102 naNw')}{tx102(380,461.7,475,'Ich mag ...','naCell102 naNw')}
+  <div className="naBullet102" style={{left:82,top:490.5,background:'#faf942'}}/>
+  {tx102(94,482.7,496,'Kinder')}{tx102(181,482.7,496,'seine','naRed102 naNw')}{tx102(280,482.7,496,'ihre','naRed102 naNw')}{tx102(379,482.7,496,'seine','naRed102 naNw')}{tx102(478,482.7,496,'ihre','naRed102 naNw')}{tx102(578,482.7,496,'Kinder.')}
+  {tx102(82,505.7,519,'auch so bei: finden, ...','naNote102 naNw')}
+  <div className="naBand102" style={{left:77,top:545,width:591,height:23}}/>
+  {tx102(82,548.2,560,'Personalpronomen im Dativ','naBandT102 naNw',12.3)}{tx102(272,549.3,560,'L15','naLT102 naNw',12.5)}
+  {tx102(362,551.2,563,'Personalpronomen im Akkusativ','naBandT102 naNw',12.3)}{tx102(582,552.2,563,'L20','naLT102 naNw',12.5)}
+  {tx102(82,569.95,582,'Nominativ','naColH102 naNw')}{tx102(201,569.95,582,'Dativ','naColH102 naNw')}
+  {tx102(82,590.7,604,'ich')}{tx102(207,590.7,604,'mir','naRed102 naNw')}
+  {tx102(82,613.7,627,'du')}{tx102(205,613.7,627,'dir','naRed102 naNw')}
+  {tx102(82,635.7,649,'er/es')}{tx102(206,637.7,651,'ihm','naRed102 naNw')}
+  {tx102(82,658.7,672,'sie')}{tx102(206,658.7,672,'ihr','naRed102 naNw')}
+  {tx102(82,680.7,694,'wir')}{tx102(205,680.7,694,'uns','naRed102 naNw')}
+  {tx102(82,702.7,716,'ihr')}{tx102(205,702.7,716,'euch','naRed102 naNw')}
+  {tx102(82,725.7,739,'sie/Sie')}{tx102(206,725.7,739,'ihnen/Ihnen','naRed102 naNw')}
+  {tx102(363,572.95,585,'Nominativ','naColH102 naNw')}{tx102(519,572.95,585,'Akkusativ','naColH102 naNw')}
+  {tx102(362,594.7,608,'ich')}{tx102(519,594.7,608,'mich','naRed102 naNw')}
+  {tx102(362,616.7,630,'du')}{tx102(519,616.7,630,'dich','naRed102 naNw')}
+  {tx102(362,639.7,653,'er/es/sie')}{tx102(519,639.7,653,'ihn/es/sie','naRed102 naNw')}
+  {tx102(362,660.7,674,'wir')}{tx102(519,660.7,674,'uns','naRed102 naNw')}
+  {tx102(362,682.7,696,'ihr')}{tx102(518,682.7,696,'euch','naRed102 naNw')}
+  {tx102(362,706.7,720,'sie/Sie')}{tx102(519,706.7,720,'sie/Sie','naRed102 naNw')}
+  {mix102(362,727.7,300,[['Ich komme um 10 Uhr an. Holst du '],['mich',1],[' bitte ab?']])}
+  {text(75,778.3,60,'Verben','naSect102 naNw',16)}
+  <div className="naBand102" style={{left:76,top:807,width:591,height:20}}/>
+  {tx102(81,810.2,822,'Verben mit Dativ','naBandT102 naNw',12.3)}{tx102(203,811.3,822,'L15','naLT102 naNw',12.5)}
+  {tx102(272,811.2,823,'Imperativ Sie','naBandT102 naNw',12.3)}{tx102(369,812.3,823,'L18','naLT102 naNw',12.5)}
+  {tx102(437,812.2,824,'Imperativ Du/ihr','naBandT102 naNw',12.3)}{tx102(558,812.3,823,'L20','naLT102 naNw',12.5)}
+  {tx102(82,830.7,844,'Das')}{tx102(142,831.2,844.5,'gehört','naRed102 naNw')}{tx102(209,830.7,844,'mir.')}
+  {tx102(82,852.7,866,'Das')}{tx102(142,853.2,866.5,'gefällt','naRed102 naNw')}{tx102(209,853.7,867,'dir.')}
+  {tx102(82,875.7,889,'Das')}{tx102(144,875.7,889,'hilft','naRed102 naNw')}{tx102(209,875.7,889,'ihm.')}
+  {tx102(82,897.7,911,'Ich')}{tx102(143,897.7,911,'danke','naRed102 naNw')}{tx102(209,897.7,911,'ihr.')}
+  {mix102(272,831.7,100,[['Trinken Sie',1]])}{tx102(344,831.7,845,'viel!')}
+  {mix102(272,853.7,100,[['Gehen Sie',1]])}{tx102(335,853.7,867,'zum Arzt!')}
+  {tx102(520,832.95,845,'du','naColH102 naNw')}{tx102(593,832.95,845,'ihr','naColH102 naNw')}
+  {tx102(437,853.7,867,'decken')}{tx102(521,854.7,868,'Deck ...!','naRed102 naNw')}{tx102(594,854.7,868,'Deckt ...!','naRed102 naNw')}
+  {tx102(437,876.7,890,'schlafen')}{tx102(521,876.7,890,'Schlaf ...!','naRed102 naNw')}{tx102(593,876.7,890,'Schlaft ...!','naRed102 naNw')}
+  {tx102(436,899.2,912.5,'vergessen')}{tx102(520,899.2,912.5,'Vergiss ...!','naRed102 naNw')}{tx102(594,899.2,912.5,'Vergesst ...!','naRed102 naNw')}
+  {tx102(437,924.7,938,'aus|räumen')}{tx102(521,924.7,938,'Räum ...','naRed102 naNw')}{tx102(594,924.7,938,'Räumt ...','naRed102 naNw')}
+  {tx102(521,937.7,951,'aus!','naRed102 naNw')}{tx102(593,937.7,951,'aus!','naRed102 naNw')}
+  {tx102(437,959.7,973,'!','naYelM102 naNw')}{tx102(449,959.7,973,'sein')}{tx102(521,959.7,973,'Sei ...!','naRed102 naNw')}{tx102(593,960.7,974,'Seid ...!','naRed102 naNw')}
+  {tx102(437,981.7,995,'!','naYelM102 naNw')}{tx102(449,981.7,995,'haben')}{tx102(521,982.7,996,'Hab ...!','naRed102 naNw')}{tx102(594,982.7,996,'Habt ...!','naRed102 naNw')}
+  <div className="naBand102" style={{left:76,top:933,width:335,height:20}}/>
+  {tx102(81,937.2,949,'Verwendung von Imperativ und sollen','naBandT102 naNw',12.3)}{tx102(334,937.3,948,'L18','naLT102 naNw',12.5)}
+  {tx102(81,957.45,970.5,'direkt:','naColH102 naNw')}
+  {mix102(81,976.95,300,[['Schwester Angelika: '],['„Geben',1],[' Sie ihm diesen Tee!“']])}
+  {tx102(81,996.45,1009.5,'indirekt:','naColH102 naNw')}
+  {mix102(81,1014.95,330,[['Schwester Angelika sagt, ich '],['soll',1],[' dir diesen Tee '],['geben.',1]])}
+  {text(37,1050,20,'102','naFoot102 naNw',13.5)}{text(68,1050,6,'|','naFoot102 naNw',13.5)}{text(82,1050,80,'hundertzwei','naFoot102 naNw',13.5)}
  </>}
  {page==='97'&&<>
   {text(71.7,54,580,'WIEDERHOLUNGSSTATION: GRAMMATIK','naHead97 naNw',28.5)}
