@@ -34,14 +34,17 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {title('4',202,'Trennbar oder nicht? Ergänzen Sie, wo nötig.','KB 5')}
  <div className="mText" style={{left:177,top:230,width:560}}><Words s={'a  '+sq+' '}/><span className="mExample">Steigt</span><Words s=" ihr am Goetheplatz "/><span className="mExample">ein</span><Words s="? (einsteigen)"/></div>
  <div className="mText" style={{left:177,top:254,width:560}}><Words s={'b  '+sq+' Wann '}/><span className="mExample">telefonierst</span><Words s=" du mit Oma ____/____? (telefonieren)"/></div>
- {txt(177,276,36,'c  '+sq)}{txt(212,276,92,'Heute Abend')}{f('u4-c1',305,272,87)}{txt(398,276,40,'wir')}{f('u4-c2',441,272,77)}{txt(524,276,290,'. Kommst du auch? (fernsehen)')}
+ {txt(177,276,36,'c  '+sq)}{txt(212,276,92,'Heute Abend')}{f('u4-c1',312,272,87)}{txt(407,276,40,'wir')}{f('u4-c2',452,272,77)}{txt(537,276,290,'. Kommst du auch? (fernsehen)')}
  {txt(177,294,36,'d  '+sq)}{txt(212,294,75,'Wo')}{f('u4-d1',244,294,100)}{txt(352,294,45,'ihr')}{f('u4-d2',402,294,78)}{txt(486,294,110,'? (umsteigen)')}
- {txt(177,318,36,'e  '+sq)}{f('u4-e1',212,318,88)}{txt(311,318,170,'ich bitte einen Kaffee')}{txt(486,318,220,'______? (bekommen)')}
+ {txt(177,318,36,'e  '+sq)}{f('u4-e1',212,318,88)}{txt(311,318,170,'ich bitte einen Kaffee')}{txt(486,318,220,'_______ ? (bekommen)')}
  {txt(177,339,36,'f  '+sq)}{txt(211,339,75,'Vielleicht')}{f('u4-f1',291,335,84)}{txt(383,339,250,'ich am Samstag meine Freundin')}{f('u4-f2',639,335,76)}{txt(721,339,120,'. (mitbringen)')}
  {txt(177,361,36,'g  '+sq)}{txt(211,361,95,'Am Sonntag')}{f('u4-g1',310,363,77)}{txt(394,361,175,'ich erst um 12 Uhr')}{txt(575,361,80,'______.')}{txt(650,361,120,'(frühstücken)')}
  {check('u4',177,392)}
  {title('5',419,'Schreiben Sie eigene Sätze wie in 4 und tauschen Sie mit Ihrer\nPartnerin / Ihrem Partner.','KB 5')}
- {open('u5-own',177,468,660,46,'5 eigene Sätze')}
+ <div className="mText mExample" style={{left:476,top:429,width:280}}>abholen: Ich ________ dich dann um</div>
+ <div className="mText mExample" style={{left:518,top:451,width:280}}>14.30 Uhr ________.</div>
+ <div className="mText mExample" style={{left:472,top:473,width:300}}>fotografieren: Er ________ wirklich gut</div>
+ <div className="mText mExample" style={{left:581,top:495,width:200}}>________.</div>
  {title('6',525,'Schreiben Sie Sätze.')}
  {txt(177,560,30,'a')}{txt(197,558,340,'aussteigen/am Rathausplatz/wir.')}
  {txt(177,581,30,'b')}{txt(197,579,340,'der Zug/wo/abfahren/nach Berlin?')}
@@ -50,13 +53,13 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {txt(533,581,30,'e')}{txt(553,579,300,'einen Kuchen/ihr/mitbringen?')}
  {txt(533,604,30,'f')}{txt(553,602,300,'ankommen/wann/der Bus?')}
  <div className="mGridTable" style={{left:175,top:626,width:420,height:151}}/>
- {txt(184,640,18,'a')}{txt(184,665,18,'b')}{txt(184,689,18,'c')}{txt(184,714,18,'d')}{txt(184,738,18,'e')}{txt(184,763,18,'f')}
- <div className="mText mExample" style={{left:206,top:640,width:95}}>Wir</div><div className="mText mExample" style={{left:310,top:640,width:60}}>steigen</div><div className="mText mExample" style={{left:378,top:640,width:160}}>am Rathausplatz</div><div className="mText mExample" style={{left:548,top:640,width:45}}>aus.</div>
- {txt(206,665,60,'Wo')}{f('u6-b2',305,661,67)}<div className="mText mExample" style={{left:378,top:665,width:160}}>der Zug nach Berlin</div>{f('u6-b4',545,661,35)}{txt(583,665,15,'?')}
- {f('u6-c1',203,685,102)}{f('u6-c2',305,685,67)}{f('u6-c3',372,685,173)}{f('u6-c4',545,685,47)}{txt(597,689,15,'?')}
- {f('u6-d1',203,710,102)}{f('u6-d2',305,710,67)}{f('u6-d3',372,710,173)}{f('u6-d4',545,710,47)}{txt(597,714,15,'.')}
- {f('u6-e1',203,734,102)}{f('u6-e2',305,734,67)}{f('u6-e3',372,734,173)}{f('u6-e4',545,734,47)}{txt(597,738,15,'?')}
- {f('u6-f1',203,759,102)}{f('u6-f2',305,759,67)}{f('u6-f3',372,759,173)}{f('u6-f4',545,759,47)}{txt(597,763,15,'?')}
+ {txt(184,630,18,'a')}{txt(184,655,18,'b')}{txt(184,680,18,'c')}{txt(184,705,18,'d')}{txt(184,730,18,'e')}{txt(184,755,18,'f')}
+ <div className="mText mExample" style={{left:206,top:630,width:95}}>Wir</div><div className="mText mExample" style={{left:310,top:630,width:60}}>steigen</div><div className="mText mExample" style={{left:378,top:630,width:160}}>am Rathausplatz</div><div className="mText mExample" style={{left:548,top:630,width:45}}>aus.</div>
+ {txt(206,655,60,'Wo')}{f('u6-b2',307,653,63)}<div className="mText mExample" style={{left:378,top:655,width:160}}>der Zug nach Berlin</div>{f('u6-b4',547,653,35)}{txt(584,655,15,'?')}
+ {f('u6-c1',203,678,102)}{f('u6-c2',307,678,63)}{f('u6-c3',374,678,169)}{f('u6-c4',547,678,43)}{txt(592,680,15,'?')}
+ {f('u6-d1',203,703,102)}{f('u6-d2',307,703,63)}{f('u6-d3',374,703,169)}{f('u6-d4',547,703,43)}{txt(592,705,15,'.')}
+ {f('u6-e1',203,728,102)}{f('u6-e2',307,728,63)}{f('u6-e3',374,728,169)}{f('u6-e4',547,728,43)}{txt(592,730,15,'?')}
+ {f('u6-f1',203,753,102)}{f('u6-f2',307,753,63)}{f('u6-f3',374,753,169)}{f('u6-f4',547,753,43)}{txt(592,755,15,'?')}
  {check('u6',620,795)}
  {title('7',833,'Fremd in der Stadt. Was denkt Jutta? Schreiben Sie.','KB 6')}
  {art('woman',131,879,272,241)}
@@ -65,12 +68,12 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {f('u7-2',421,907,193)}{txt(620,907,130,'. Am Eifelplatz')}
  {f('u7-3',421,926,140)}{txt(566,926,65,'und')}{f('u7-4',636,926,116)}
  {f('u7-5',421,947,320)}{txt(746,947,15,'.')}
- <div className="mText mExample" style={{left:427,top:1020,width:310}}>Zentrum Köln → „Schulz und Partner“ (Praktikum Mo-Fr)</div>
- <div className="mText mExample" style={{left:427,top:1044,width:310}}>– am Flughafen in die S-Bahn einsteigen</div>
- <div className="mText mExample" style={{left:427,top:1066,width:310}}>– am Hauptbahnhof in die U-Bahn umsteigen</div>
- <div className="mText mExample" style={{left:427,top:1088,width:310}}>– am Eifelplatz aussteigen</div>
- <div className="mText mExample" style={{left:427,top:1110,width:310}}>– Frau Lerch anrufen</div>
- {rule('u7',421,975,()=>{const seg=(...ids:string[])=>norm(ids.map(k=>v[k]||'').join(' '));return seg('u7-1','u7-2').includes(norm('steige ich in die U-Bahn um'))&&norm(v['u7-3']||'')===norm('steige ich aus')&&seg('u7-4','u7-5').includes(norm('rufe Frau Lerch an'))})}
+ <div className="mText mExample" style={{left:427,top:973,width:310}}>Zentrum Köln → „Schulz und Partner“ (Praktikum Mo-Fr)</div>
+ <div className="mText mExample" style={{left:427,top:995,width:310}}>– am Flughafen in die S-Bahn einsteigen</div>
+ <div className="mText mExample" style={{left:427,top:1017,width:310}}>– am Hauptbahnhof in die U-Bahn umsteigen</div>
+ <div className="mText mExample" style={{left:427,top:1039,width:310}}>– am Eifelplatz aussteigen</div>
+ <div className="mText mExample" style={{left:427,top:1061,width:310}}>– Frau Lerch anrufen</div>
+ {rule('u7',427,1095,()=>{const seg=(...ids:string[])=>norm(ids.map(k=>v[k]||'').join(' '));return seg('u7-1','u7-2').includes(norm('steige ich in die U-Bahn um'))&&norm(v['u7-3']||'')===norm('steige ich aus')&&seg('u7-4','u7-5').includes(norm('rufe Frau Lerch an'))})}
  </>}
  {page==='80'&&<>
  {head('BASISTRAINING',345,150)}
@@ -78,15 +81,15 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {title('8',203,'Ergänzen Sie und vergleichen Sie.','KB 7',125)}
  <div className="mText mBankList" style={{left:158,top:233,width:340}}><Words s="Flugzeug | Taxi | Straßenbahn | "/><span className="mStruck">Zug</span><Words s=" | U-Bahn | Bus"/></div>
  <div className="mTableHead8" style={{left:255,top:258,width:630}}><span style={{left:34}}>Deutsch</span><span style={{left:158}}>Englisch</span><span style={{left:342,whiteSpace:'nowrap'}}>Meine Sprache oder andere Sprachen</span></div>
- {['a','b','c','d','e','f'].map((k,i)=>{const y=301+i*51;return <span key={k}>{txt(161,y,18,k)}{art('photo'+k,167,y-7,131,58)}</span>})}
+ {['a','b','c','d','e','f'].map((k,i)=>{const y=301+i*51;return <span key={k}>{txt(161,y,18,k)}{art('photo'+k,167,y-7,131,59)}</span>})}
  <div className="mText mExample" style={{left:305,top:301,width:115}}>der Zug.</div>
  {txt(413,301,150,'train')}{txt(413,355,150,'plane')}{txt(413,410,150,'taxi')}{txt(413,462,170,'tram, streetcar')}{txt(413,513,150,'bus')}{txt(413,558,170,'underground')}
- {f('u8-b',291,355,113)}{f('u8-c',291,406,113)}{f('u8-d',291,457,113)}{f('u8-e',291,508,113)}{f('u8-f',291,560,113)}
+ {f('u8-b',306,355,105)}{f('u8-c',306,406,105)}{f('u8-d',306,457,105)}{f('u8-e',306,508,105)}{f('u8-f',306,560,105)}
  {['a','b','c','d','e','f'].map((k,i)=>f('u8s-'+k,700,299+i*51,155,'8 eigene Sprache '+k))}
  {check('u8',161,608)}
  {title('9',641,'Mike in München, Teil 1','KB 7',125)}
  {txt(161,679,300,'Ordnen Sie die Fragen zu.','mTitle')}
- <div className="mText mBank" style={{left:161,top:705,width:560}}><Words s="Wann kommst du? | Holst du mich ab? | Nimmst du den Zug? | "/><span className="mStruck">Hast du Zeit?</span></div>
+ <div className="mText mBank" style={{left:161,top:705,width:650}}><Words s="Wann kommst du? | Holst du mich ab? | Nimmst du den Zug? | "/><span className="mStruck">Hast du Zeit?</span></div>
  {art('man',695,556,202,218)}
  <div className="mText" style={{left:165,top:740,width:520}}><span className="mSq">■</span><Words s="  Hallo Tom, hier ist Mike."/></div>
  <div className="mText" style={{left:165,top:761,width:520}}><span className="mTr">▲</span><Words s="  Hallo Mike, wie geht's?"/></div>
@@ -109,7 +112,7 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {title('1',185,'Wo sind die Personen? Hören Sie und kreuzen Sie an.','',147)}{listen('44-46',93,190)}
  {txt(275,222,200,'Foto A     Foto B     Foto C')}
  {[1,2,3].map(r=><span key={r}>{txt(176,218+r*22,100,'Durchsage '+r)}{radioG('u1-d'+r+'a','u1-d'+r,'a',291,218+r*22,'Durchsage '+r+' Foto A')}{radioG('u1-d'+r+'b','u1-d'+r,'b',367,218+r*22,'Durchsage '+r+' Foto B')}{radioG('u1-d'+r+'c','u1-d'+r,'c',445,218+r*22,'Durchsage '+r+' Foto C')}</span>)}
- {rule('g1',505,262,()=>v['u1-d1']==='b'&&v['u1-d2']==='c'&&v['u1-d3']==='a')}
+ {rule('g1',520,303,()=>v['u1-d1']==='b'&&v['u1-d2']==='c'&&v['u1-d3']==='a')}
  {txt(187,318,20,'A')}{txt(385,318,20,'B')}{txt(615,318,20,'C')}
  {art('photoa',177,336,184,105)}{art('photob',384,336,201,104)}{art('photoc',610,336,193,100)}
  {title('2',471,'Durchsagen','',149)}
@@ -127,10 +130,10 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {listen('47',93,881)}{title('1',876,'Hören Sie und markieren Sie den\nWortakzent.','',154)}
  <div className="mText" style={{left:182,top:932,width:280}}>fahren – <u>ab</u>fahren | kommen –<br/><u>an</u>kommen | kaufen – <u>ein</u>kaufen |<br/>sehen – <u>fern</u>sehen | bringen –<br/><u>mit</u>bringen</div>
  {listen('48',138,1026)}{txt(183,1028,450,'Hören Sie noch einmal und sprechen Sie nach.','mTitle')}
- {title('2',1064,'Richtig oder falsch? Kreuzen Sie an.','',149)}
- <div className="mRegelBox" style={{left:200,top:1100,width:240,height:62}}><div className="mRegelLabel">REGEL</div>{txt(210,1106,220,'Der Wortakzent ist bei trennbaren Verben auf dem trennbaren Wortteil.','mSmall')}</div>
- {radioG('u4-r','u4','r',207,1139,'richtig')}{txt(228,1139,60,'richtig')}{radioG('u4-f','u4','f',296,1139,'falsch')}{txt(318,1139,60,'falsch')}
- {rule('g4',207,1165,()=>v['u4']==='r')}
+ {title('2',1050,'Richtig oder falsch? Kreuzen Sie an.','',149)}
+ <div className="mRegelBox" style={{left:127,top:1082,width:205,height:76}}><div className="mRegelLabel">REGEL</div>{txt(140,1090,175,'Der Wortakzent ist bei trennbaren Verben auf dem trennbaren Wortteil.','mSmall')}</div>
+ {radioG('u4-r','u4','r',150,1134,'richtig')}{txt(170,1134,55,'richtig')}{radioG('u4-f','u4','f',228,1134,'falsch')}{txt(248,1134,55,'falsch')}
+ {rule('g4',150,1170,()=>v['u4']==='r')}
  {listen('49',536,875)}{title('3',872,'Hören Sie.\nSprechen Sie dann.','',586)}
  <div className="mText" style={{left:614,top:932,width:220}}>Ich <u>nehme</u> heut' den Zug.<br/><u>Ein</u>steigen<br/><u>Aus</u>steigen<br/><u>Um</u>steigen<br/>Vorsicht an Gleis <u>sieben</u>!</div>
  <div className="mText" style={{left:614,top:1044,width:220}}>Ich <u>nehme</u> heut' den Zug.<br/><u>Ab</u>fahren<br/><u>An</u>kommen<br/><u>An</u>rufen<br/>Holst du mich bitte <u>ab</u>?</div>
