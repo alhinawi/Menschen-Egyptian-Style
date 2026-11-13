@@ -199,7 +199,7 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {page==='84'&&<>
  <div className="mBannerPink" style={{left:338,top:96,width:472,height:64}}/>
  {art('banner',93,94,255,68)}
- {txt(365,115,440,'Was hast du heute gemacht?','mBannerTitle')}
+ {art('bannertitle',360,108,430,44)}
  {side('STRUKTUREN',251)}{side('WÖRTER',647)}{side('STRUKTUREN',780)}{side('STRUKTUREN',964)}
  {title('1',214,'Was macht Lisa? Ergänzen Sie um – am – von ... bis – ab.','KB 3',116)}
  {art('cal',101,267,341,167)}
@@ -207,20 +207,20 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {art('exab',474.5,353.1,17.8,17.4)}{txt(505,348,280,'8 Uhr arbeitet sie.')}
  {f('u1-3',465,368,75,'1 Von')}{txt(545,369,18,'18')}{f('u1-4',565,368,65,'1 bis')}{txt(636,369,250,'19 Uhr kauft sie ein und')}{txt(477,393.5,100,'kocht.')}
  {f('u1-5',465,412,75,'1 Am')}{txt(555,417,320,'Abend geht sie mit Klaus ins Kino.')}
- {check('u1',745,432)}
+ {check('u1',745,440)}
  {title('2',502,'Was machen Sie heute?','KB 3',118)}
- <div className="mPairDot" style={{left:74,top:516}}/><div className="mPairDot" style={{left:88,top:516}}/>
+ {art('dots',58,519,58,33)}
  {txt(148,530,450,'Ergänzen Sie den Kalender. Ihre Partnerin /\nIhr Partner schreibt einen kurzen Text wie in 1.')}
  {art('cal2',505,478,290,202)}
  {title('3',602,'Was machst du gern?','KB 4',120)}
  {txt(149,640,300,'a  Wie heißen die Verben?')}
- {txt(150,668,110,'NACHEM','mAnagram')}{f('u3a-1',263,664,229,'3a NACHEM')}
- {txt(150,687,110,'FAHLESCN','mAnagram')}{f('u3a-2',263,683,229,'3a FAHLESCN')}
- {txt(150,710,110,'HENFENERS','mAnagram')}{art('exfernsehen',262.5,714,60.7,19.3)}
- {txt(150,729,110,'RAFEHN','mAnagram')}{f('u3a-4',263,725,229,'3a RAFEHN')}
- {txt(506,680,120,'RUMAFUÄNE','mAnagram')}{f('u3a-5',708,676,185,'3a RUMAFUÄNE')}
- {txt(506,706,120,'NESEL','mAnagram')}{f('u3a-6',708,700,185,'3a NESEL')}
- {txt(506,729,120,'NELREN','mAnagram')}{f('u3a-7',708,721,185,'3a NELREN')}
+ {txt(148.5,671,110,'NACHEM','mAnagram')}{f('u3a-1',263,664,229,'3a NACHEM')}
+ {txt(148.5,692,110,'FAHLESCN','mAnagram')}{f('u3a-2',263,683,229,'3a FAHLESCN')}
+ {txt(148.5,713,110,'HENFENERS','mAnagram')}{art('exfernsehen',262.5,714,60.7,19.3)}
+ {txt(148.5,734,110,'RAFEHN','mAnagram')}{f('u3a-4',263,725,229,'3a RAFEHN')}
+ {txt(505.5,688,120,'RUMAFUÄNE','mAnagram')}{f('u3a-5',708,676,185,'3a RUMAFUÄNE')}
+ {txt(505.5,708.5,120,'NESEL','mAnagram')}{f('u3a-6',708,700,185,'3a NESEL')}
+ {txt(505.5,729,120,'NELREN','mAnagram')}{f('u3a-7',708,721,185,'3a NELREN')}
  {check('u3a',640,752)}
  {txt(149,777,450,'b  Ergänzen Sie die Verben aus a in der richtigen Form.')}
  {txt(151,809,16,'1')}{art('exsiehst',168.1,810.7,41.8,16.4)}{txt(222,809,120,'du am Abend gern')}{art('exfern',346.9,808.5,28,19.3)}{txt(378,809,10,'?')}
