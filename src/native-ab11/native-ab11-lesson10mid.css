@@ -71,3 +71,7 @@
 .nativeAB11Lesson10Mid .mCanvas .mText.mInstr{font-family:KbFira,FiraSans,Arial,sans-serif;font-weight:400;font-size:15.5px;line-height:20.6px}
 .nativeAB11Lesson10Mid .mInstr b{font-weight:700}
 .nativeAB11Lesson10Mid .mCanvas .mInstrRef{color:#315e9f}
+.nativeAB11Lesson10Mid .mCanvas .mText.mVocab{font-size:15.5px}
+.nativeAB11Lesson10Mid[data-native-ab11-page='83'] .mCanvas .mOpen{background:repeating-linear-gradient(white 0 20px,#b0b0b0 20px 22px)!important}
+.nativeAB11Lesson10Mid[data-native-ab11-page='83'] .mCanvas .mText.mTitle{font-size:18px;font-weight:700}
+.nativeAB11Lesson10Mid[data-native-ab11-page='83'] .mCanvas .mHRule{height:1.4px}
