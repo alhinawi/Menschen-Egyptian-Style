@@ -174,8 +174,10 @@
 [data-native-ab12="14"] .naCanvas .naDot.naDotD{border-color:#3d3d43!important}
 [data-native-ab12="15"] .naCanvas .naText.naYT{font-size:21.4px!important}
 [data-native-ab12="15"] .naCanvas .naText.naMail15{font:18px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
-[data-native-ab12="15"] .naCanvas .naText.naMailS15{font:14.6px DroidSerif,Georgia,serif!important;color:#383a3e;letter-spacing:0!important}
-[data-native-ab12="15"] .naCanvas .naText.naChris15{font:14.4px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
+[data-native-ab12="15"] .naCanvas .naText.naMailS15{font:15.2px FiraSans,'Trebuchet MS',sans-serif!important;color:#383a3e;letter-spacing:0!important}
+[data-native-ab12="15"] .naCanvas .naText.naMailB15{font-weight:700!important;font-size:15px!important;color:#33352f!important}
+[data-native-ab12="15"] .naCanvas .naText.naChris15{font:15.4px FiraSans,'Trebuchet MS',sans-serif!important;color:#1a1a12;letter-spacing:0!important}
+[data-native-ab12="15"] .naCanvas .naArr15{font-family:FiraSans,'Trebuchet MS',sans-serif!important;font-weight:700!important}
 [data-native-ab12="15"] .naCanvas .naText.naLet15{color:#1a2894!important;font:bold 18px FiraSans,'Trebuchet MS',sans-serif!important;letter-spacing:0!important}
 [data-native-ab12="15"] .naCanvas .naText.naTh15{font:bold 17px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
 [data-native-ab12="15"] .naCanvas .naText.naTh15b{font:bold 16px DroidSerif,Georgia,serif!important;color:#1a1a12;letter-spacing:0!important}
