@@ -111,5 +111,42 @@ for(const width of[320,390]){
  assert.equal(await p.evaluate(()=>localStorage.getItem('native-ab12-68')),null,'reset clears storage');
  console.log(width,'p68 interaction/grade/persist/reset PASS');
  await p.close();
+ // page 69: single-letter gap fields, radio group grading, persistence, reset
+ p=await openPage(b,width,'69');
+ const pg69=p.locator('.page[data-page="69"]');
+ assert.equal(await pg69.locator('.nativeAB12[data-native-ab12="69"]').count(),1,'native p69 rendered');
+ for(const id of['p69-a1a1','p69-a1a2','p69-a1a3','p69-a1a4','p69-a1b1','p69-a1b2','p69-a1b3','p69-a1b4','p69-igel1','p69-igel2','p69-igel3'])assert.equal(await pg69.locator('[data-native-field="'+id+'"]').count(),1,'field '+id);
+ assert.equal(await pg69.locator('input.naDot').count(),3,'three a2 radios');
+ // g1: wrong then right
+ await pg69.locator('[data-native-field="p69-a1a1"]').fill('x');
+ await pg69.locator('[data-check="g1"] button').click();
+ assert.match((await pg69.locator('[data-check="g1"] output').textContent())||'',/Noch einmal/,'g1 wrong graded');
+ await pg69.locator('[data-native-field="p69-a1a1"]').fill('ä');
+ await pg69.locator('[data-native-field="p69-a1a2"]').fill('e');
+ await pg69.locator('[data-native-field="p69-a1a3"]').fill('e');
+ await pg69.locator('[data-native-field="p69-a1a4"]').fill('ä');
+ await pg69.locator('[data-native-field="p69-a1b1"]').fill('ä');
+ await pg69.locator('[data-native-field="p69-a1b2"]').fill('e');
+ await pg69.locator('[data-native-field="p69-a1b3"]').fill('ä');
+ await pg69.locator('[data-native-field="p69-a1b4"]').fill('e');
+ await pg69.locator('[data-check="g1"] button').click();
+ assert.match((await pg69.locator('[data-check="g1"] output').textContent())||'',/Richtig/,'g1 correct graded');
+ // a2 radios: wrong then right
+ await pg69.locator('input.naDot[aria-label="Aussprache 2: sind lang."]').check();
+ await pg69.locator('[data-check="confidence-p69-a2"] button').click();
+ assert.match((await pg69.locator('[data-check="confidence-p69-a2"] output').textContent())||'',/Noch einmal/,'a2 wrong graded');
+ await pg69.locator('input.naDot[aria-label="Aussprache 2: koennen lang oder kurz sein."]').check();
+ await pg69.locator('[data-check="confidence-p69-a2"] button').click();
+ assert.match((await pg69.locator('[data-check="confidence-p69-a2"] output').textContent())||'',/Richtig/,'a2 correct graded');
+ // saved-reload
+ await p.reload();await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');await p.evaluate(()=>window.bookPage([...document.querySelectorAll('.page')].findIndex(e=>e.dataset.page==='69')));await p.waitForTimeout(350);
+ assert.equal(await p.locator('.page[data-page="69"] [data-native-field="p69-a1a1"]').inputValue(),'ä','saved field reloaded');
+ assert.equal(await p.evaluate(()=>JSON.parse(localStorage.getItem('native-ab12-69')||'{}')['a2']),'langOderKurz','saved radio reloaded');
+ // reset clears
+ await p.locator('.pageResetTrigger').click();await p.getByRole('button',{name:'Reset',exact:true}).click();
+ assert.equal(await p.locator('.page[data-page="69"] [data-native-field="p69-a1a1"]').inputValue(),'','reset clears field');
+ assert.equal(await p.evaluate(()=>localStorage.getItem('native-ab12-69')),null,'reset clears storage');
+ console.log(width,'p69 interaction/grade/persist/reset PASS');
+ await p.close();
 }
 }finally{await b.close();server.close()}})().catch(e=>{console.error(e);server.close();process.exitCode=1});
