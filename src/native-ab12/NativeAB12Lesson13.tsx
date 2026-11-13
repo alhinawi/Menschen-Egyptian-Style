@@ -7,7 +7,7 @@ import './native-ab12-l13.css';
 
 function Words({text}:{text:string}){return <>{text.split(/(\s+)/).map((w,i)=>/\p{L}/u.test(w)?<span key={i} className="tapWord" role="button" tabIndex={0} data-word={w.replace(/^[^\p{L}]+|[^\p{L}]+$/gu,'')} data-phrase={text}>{w}</span>:w)}</>}
 const normalize=(s:string)=>s.normalize('NFC').trim().toLocaleLowerCase('de').replace(/[.!?]+$/,'').replace(/\s+/g,' ');
-const HEIGHTS:Record<string,number>={'6':1465,'7':1447,'8':1452,'9':1447,'10':1452,'11':1447,'12':1452,'13':1447,'14':1452};
+const HEIGHTS:Record<string,number>={'6':1465,'7':1447,'8':1452,'9':1447,'10':1452,'11':1447,'12':1452,'13':1447,'14':1452,'16':1452};
 
 export function NativeAB12Lesson13({page}:{page:string}){
  const W=1071,H=HEIGHTS[page]||1447;
@@ -718,6 +718,68 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(766,1347,160,'Alles ganz neu!','naMail15 naNw')}
   <div className="naModul10" style={{left:1010,top:1389,width:61,height:17,lineHeight:'17px',background:'#dfd6af',fontWeight:400}}>Modul 5</div>
   <div className="naText naFooter naNw" style={{left:870,top:1388,width:127,whiteSpace:'pre'}}><span className="naFz15">{'fünfzehn  |  15'}</span></div>
+ </>}
+ {page==='16'&&<>
+  {art('hdr-test',108,80,92,40)}
+  <div className="naRule16" style={{left:187,top:110,width:783,height:3}}/>
+  {badge9('1',115,162)}
+  {text(158,160,500,'Markieren Sie die Wörter und ergänzen Sie.','naYT naNw')}
+  <div className="naSide13" style={{left:86,top:207,height:47}}>WÖRTER</div>
+  <div className="naText naSnake16 naNw" style={{left:158,top:202,width:812}}>SCHLAFZIMMERWOHNUNGTOILETTEKINDERZIMMERGARTEN<span className="naHl16">ERDGESCHOSS</span>WOHNZIMMER</div>
+  {text(157,238,812,'„Ich bin Lena Peterson. Ich wohne mit meiner Familie in der Blumenstraße 44, im','naMail16 naNw')}
+  {art('hand-erd',152,266,98,30)}
+  {text(253,263,140,'(a). So sieht die','naMail16 naNw')}{field('16-1b',399,260,173,'Lücke 1b')}{text(580,263,390,'(b) aus: Links vom Flur ist die Küche, das','naMail16 naNw')}
+  {text(157,290,70,'Bad mit','naMail16 naNw')}{field('16-1c',232,285,180,'Lücke 1c')}{text(420,290,90,'(c) und das','naMail16 naNw')}{field('16-1d',518,287,182,'Lücke 1d')}{text(708,290,262,'(d) von meinen Eltern. Rechts','naMail16 naNw')}
+  {text(157,316,140,'vom Flur ist das','naMail16 naNw')}{field('16-1e',302,312,182,'Lücke 1e')}{text(492,316,476,'(e). Dort stehen eine Couch, zwei Sessel, ein Bücherre-','naMail16 naNw')}
+  {text(156,342,340,'gal und ein Fernseher. Daneben ist das','naMail16 naNw')}{field('16-1f',502,339,213,'Lücke 1f')}{text(723,342,232,'(f), hier schlafen mein Bruder','naMail16 naNw')}
+  {text(157,367,360,'Manuel und ich. Hinter dem Haus ist ein','naMail16 naNw')}{field('16-1g',524,365,181,'Lücke 1g')}{text(713,367,206,'(g) mit vielen Bäumen.“','naMail16 naNw')}
+  {text(884,406,90,'_ / 6 PUNKTE','naPkt10 naNw')}
+  {check('16-1',620,166,{'16-1b':'Wohnung','16-1c':'Toilette','16-1d':'Schlafzimmer','16-1e':'Wohnzimmer','16-1f':'Kinderzimmer','16-1g':'Garten'})}
+  {badge9('2',115,435)}
+  {text(157,432,520,'Ergänzen Sie sein und ihr in der richtigen Form.','naYT naNw')}
+  <div className="naSide13" style={{left:86,top:478,height:75}}>STRUKTUREN</div>
+  {text(157,471,538,'Lena erzählt weiter: „Im ersten Stock wohnt Maria. Ich liebe','naMail16 naNw')}
+  {art('hand-ihre',695,468,36,29)}
+  {text(735,471,208,'(a) Wohnung. Maria hat','naMail16 naNw')}
+  {text(155,497,142,'viele Bilder und','naMail16 naNw')}{field('16-2b',302,493,103,'Lücke 2b')}{text(413,497,553,'(b) Möbel sind sehr modern. Sie wohnt zusammen mit Florian,','naMail16 naNw')}
+  {text(156,522,55,'das ist','naMail16 naNw')}{field('16-2c',216,519,106,'Lücke 2c')}{text(330,522,385,'(c) Freund. Florian spricht auch Italienisch.','naMail16 naNw')}{field('16-2d',720,521,105,'Lücke 2d')}{text(833,523,82,'(d) Eltern','naMail16 naNw')}
+  {text(156,548,712,'kommen aus der Schweiz, aus Lugano. Neben Maria wohnt Herr Wörle. Ich finde','naMail16 naNw')}{field('16-2e',874,547,81,'Lücke 2e')}
+  {text(156,575,628,'(e) Wohnzimmer gemütlich. Herr Wörle geht oft spazieren und besucht','naMail16 naNw')}{field('16-2f',790,572,105,'Lücke 2f')}{text(903,576,65,'(f) Sohn','naMail16 naNw')}
+  {text(156,600,560,'Wolfgang. Im zweiten Stock wohnen meine Freundin Carla und','naMail16 naNw')}{field('16-2g',722,598,104,'Lücke 2g')}{text(834,602,100,'(g) Mutter.“','naMail16 naNw')}
+  {text(884,636,90,'_ / 6 PUNKTE','naPkt10 naNw')}
+  {check('16-2',660,438,{'16-2b':'ihre','16-2c':'ihr','16-2d':'Seine','16-2e':'sein','16-2f':'seinen','16-2g':'ihre'})}
+  {badge9('3',115,667)}
+  <div className="naText naYT naNw" style={{left:157,top:664,width:640}}>Lesen Sie Aufgabe <span className="naHl16">2</span> noch einmal und ergänzen Sie die Namen.</div>
+  <div className="naSide13" style={{left:86,top:685,height:75}}>STRUKTUREN</div>
+  {text(155,704,15,'a','naMail16 naNw')}{text(180,704,80,'Maria ist','naMail16 naNw')}{art('hand-lenas',258,698,50,30)}{text(311,704,103,'Nachbarin.','naMail16 naNw')}
+  {text(537,705,15,'c','naMail16 naNw')}{text(562,705,106,'Herr Wörle ist','naMail16 naNw')}{field('16-3c',672,701,116,'Lücke 3c')}{text(796,705,60,'Vater.','naMail16 naNw')}
+  {text(154,729,15,'b','naMail16 naNw')}{text(180,729,90,'Florian ist','naMail16 naNw')}{field('16-3b',276,726,116,'Lücke 3b')}{text(400,729,70,'Freund.','naMail16 naNw')}
+  {text(537,732,15,'d','naMail16 naNw')}{text(562,732,50,'Lena ist','naMail16 naNw')}{field('16-3d',617,727,116,'Lücke 3d')}{text(741,732,85,'Freundin.','naMail16 naNw')}
+  {text(883,742,92,'_ / 3 PUNKTE','naPkt10 naNw')}
+  {check('16-3',810,670,{'16-3b':'Marias','16-3c':'Wolfgangs','16-3d':'Carlas'})}
+  {badge9('4',115,796)}
+  {text(155,793,200,'Ordnen Sie zu.','naYT naNw')}
+  <div className="naSide13" style={{left:86,top:838,height:102}}>KOMMUNIKATION</div>
+  <div className="naBand16" style={{left:154,top:835,width:674,height:49}}/>
+  {art('band1',158,837,656,27)}
+  {art('band2',158,863,282,24)}
+  {text(153,897,15,'a','naMail16 naNw')}<div className="naSq16" style={{left:177,top:906}}/>{text(193,897,468,'Dein Balkon ist toll, die Blumen sind wirklich schön.','naMail16 naNw')}
+  {art('smile',177,927,16,16)}<div className="naTri16" style={{left:199,top:933}}/>{text(217,923,30,'Ja,','naMail16 naNw')}{field('16-4a',250,920,715,'Lücke 4a')}{text(968,923,10,'.','naMail16 naNw')}
+  {text(153,948,15,'b','naMail16 naNw')}<div className="naSq16" style={{left:177,top:958}}/>{text(192,948,536,'Ich liebe Davids Haus, es hat sieben Zimmer und zwei Bäder!','naMail16 naNw')}
+  {art('frown',176,978,17,17)}<div className="naTri16" style={{left:199,top:984}}/>{text(217,975,428,'Sein Haus ist nicht schlecht, aber seinen Garten','naMail16 naNw')}{field('16-4b',645,974,320,'Lücke 4b')}{text(968,975,10,'.','naMail16 naNw')}
+  {text(153,1000,15,'c','naMail16 naNw')}<div className="naSq16" style={{left:176,top:1009}}/>{text(191,1000,416,'Möchtest du einen Fußballplatz vor dem Haus?','naMail16 naNw')}
+  {art('smile',176,1030,16,16)}<div className="naTri16" style={{left:198,top:1036}}/>{text(217,1026,90,'Sehr gern,','naMail16 naNw')}{field('16-4c',312,1024,653,'Lücke 4c')}{text(968,1026,10,'.','naMail16 naNw')}
+  {text(153,1052,15,'d','naMail16 naNw')}{art('smile',176,1056,16,16)}<div className="naSq16" style={{left:198,top:1061}}/>{text(217,1052,155,'Katharinas Küche','naMail16 naNw')}{field('16-4d',378,1050,587,'Lücke 4d')}{text(968,1052,10,'.','naMail16 naNw')}
+  <div className="naTri16" style={{left:177,top:1088}}/>{text(196,1078,372,'Das ist richtig, die Küche ist sehr modern.','naMail16 naNw')}
+  {text(153,1104,15,'e','naMail16 naNw')}<div className="naSq16" style={{left:176,top:1113}}/>{text(191,1104,390,'Die Wohnung ist möbliert, das ist praktisch.','naMail16 naNw')}
+  {art('frown',176,1134,17,17)}<div className="naTri16" style={{left:198,top:1140}}/>{text(217,1130,375,'Leider sehen die Möbel nicht so schön aus,','naMail16 naNw')}{field('16-4e',596,1129,369,'Lücke 4e')}{text(968,1130,10,'.','naMail16 naNw')}
+  {text(153,1155,15,'f','naMail16 naNw')}<div className="naSq16" style={{left:176,top:1165}}/>{text(191,1155,457,'Mein Traumhaus steht im Wald, ich liebe die Natur.','naMail16 naNw')}
+  {art('frown',175,1186,17,17)}<div className="naTri16" style={{left:198,top:1191}}/>{text(217,1182,105,'Nur Natur –','naMail16 naNw')}{field('16-4f',328,1179,627,'Lücke 4f')}{text(958,1182,10,'!','naMail16 naNw')}
+  {text(883,1233,92,'_ / 6 PUNKTE','naPkt10 naNw')}
+  {art('punkte',228,1240,524,135)}
+  <div className="naModul10" style={{left:0,top:1390,width:72,height:23,lineHeight:'23px',background:'#ded6b0',fontWeight:400}}>Modul 5</div>
+  <div className="naText naFooter naNw" style={{left:85,top:1394,width:220,whiteSpace:'pre'}}>{'16  |  sechzehn'}</div>
+  {text(519,1385,225,'www.hueber.de/menschen/lernen','naWWW naNw')}
  </>}
  </div><audio ref={player} className="naPlayer"/></div>;
 }
