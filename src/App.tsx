@@ -53,6 +53,9 @@ export default function App({initial}: {initial: LoadedLesson}) {
         mountedResolvers.current.push(resolve);
         setLesson(next);
       });
+      // The lesson markup swapped under the same window: land at the top of
+      // the new lesson instead of keeping the old lesson's scroll offset.
+      scrollTo(0, 0);
     });
     const onPop = () => {
       navigateLesson(slugFromLocation(), location.hash.slice(1) || undefined, {replace: true});
