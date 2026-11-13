@@ -499,9 +499,9 @@ export function NativeAB12Lesson13({page}:{page:string}){
   <div className="naText naFooter naNw" style={{left:84,top:1399,width:160,whiteSpace:'pre'}}>12{'  |  '}<span className="naFz">zwölf</span></div>
  </>}
  {page==='13'&&<>
-  {text(121,88,250,'BASISTRAINING','naBase13 naNw')}
+  {text(116,78,250,'BASISTRAINING','naBase13 naNw')}
   {art('hdr-rule',368,109,634,8)}
-  <div className="naTab13" style={{left:987,top:39,width:84,height:41}}>14</div>
+  {art('tab14',987,39,84,78)}
   {badge9('6',117,163)}
   {text(74,168,40,'KB 6','naKB13 naNw')}
   <div className="naSide13" style={{left:88,top:203,height:78}}>STRUKTUREN</div>
