@@ -219,6 +219,7 @@ def apply_overrides(r,p):
                 k=m['at'];end=b['x']+b['w'];nb=json.loads(json.dumps(b))
                 b['ws']=b['ws'][:k];b['w']=m['w1'];nb['ws']=nb['ws'][k:];nb['x']=m['x2'];nb['w']=end-m['x2']
                 r['blocks'].append(nb);break
+    r['blocks']=[b for b in r['blocks'] if b['ws']]
     for m in o.get('add',[]):
         m.setdefault('b',0);m.setdefault('sa',0);m.setdefault('f',14)
         m['ws']=[w if isinstance(w,dict) else {'t':w} for w in m['ws']]
