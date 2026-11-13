@@ -325,12 +325,12 @@ export function NativeAB12Lesson13({page}:{page:string}){
   <div className="naText naFooter naNw" style={{left:62,top:1393,width:160}}>10{'  |  '}<span className="naFz">zehn</span></div>
  </>}
  {page==='11'&&<>
-  {text(117,93,281,'LERNWORTSCHATZ','naHeadline naNw')}
+  {text(117,84,300,'LERNWORTSCHATZ','naHeadline naNw')}
   <div className="naRuleY9" style={{left:406,top:114,width:479}}/>
   <div className="naL13" style={{left:982,top:42,width:86,height:57}}>13</div>
   {badge9('1',114,166)}
-  {text(157,166,554,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naVoc naVocB naNw')}
-  {text(158,207,140,'In der Stadt','naVoc naVocB naNw')}
+  {text(155,162,560,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naInstr11 naNw')}
+  {text(158,201,140,'In der Stadt','naVocH11 naNw')}
   {text(157,233,120,'Ampel die, -n','naVoc naNw')}
   {text(168,261,225,'CH: auch: Lichtsignal das, -e','naVocG naNw')}
   {text(158,285,120,'Bank die, -en','naVoc naNw')}
@@ -339,13 +339,13 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(158,362,115,'Hotel das, -s','naVoc naNw')}
   {text(157,388,115,'Mitte die, -n','naVoc naNw')}
   {text(168,413,130,'die Stadtmitte','naVoc naNw')}
-  {text(158,439,80,'Plan der,','naVoc naNw')}{art('umlmark',239,443,11,12)}{text(250,439,10,'e','naVoc naNw')}
+  {text(158,439,80,'Plan der,','naVoc naNw')}{art('umlmark',239,444,17,12)}
   {text(168,465,125,'der Stadtplan','naVoc naNw')}
   {text(157,491,100,'Polizei die','naVoc naNw')}
   {text(158,517,75,'Post die','naVoc naNw')}
   {text(157,542,120,'Zentrum das,','naVoc naNw')}
   {text(168,570,75,'Zentren','naVoc naNw')}
-  {text(147,617,180,'Wegbeschreibung','naVoc naVocB naNw')}
+  {text(155,614,180,'Wegbeschreibung','naVocH11 naNw')}
   {text(157,645,140,'Kilometer der, -','naVoc naNw')}
   {text(157,671,110,'Meter der, -','naVoc naNw')}
   {text(157,697,85,'Nähe die','naVoc naNw')}
@@ -366,7 +366,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(168,1109,95,'nach links','naVoc naNw')}
   {text(157,1133,55,'rechts','naVoc naNw')}
   {text(168,1161,105,'nach rechts','naVoc naNw')}
-  {text(542,207,300,'Sich entschuldigen und danken','naVoc naVocB naNw')}
+  {text(542,202,300,'Sich entschuldigen und danken','naVocH11 naNw')}
   {text(542,233,60,'Ach so.','naVoc naNw')}
   {text(542,260,110,'Dankeschön!','naVoc naNw')}
   {text(542,285,100,'Bitte, gern.','naVoc naNw')}
@@ -374,26 +374,26 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(542,336,80,'Ja, bitte?','naVoc naNw')}
   {text(542,362,125,'Kein Problem.','naVoc naNw')}
   {text(542,388,70,'Schade.','naVoc naNw')}
-  {text(542,413,40,'nett','naVoc naNw')}
+  {text(542,419,40,'nett','naVoc naNw')}
   {text(553,439,90,'Sehr nett!','naVoc naNw')}
-  {text(542,491,40,'Wo?','naVoc naVocB naNw')}
-  {text(542,517,25,'an','naVoc naNw')}
+  {text(542,488,40,'Wo?','naVocH11 naVocHQ naNw')}
+  {text(542,523,25,'an','naVoc naNw')}
   {text(542,542,30,'auf','naVoc naNw')}
   {text(542,569,60,'hinter','naVoc naNw')}
   {text(542,596,20,'in','naVoc naNw')}
-  {text(542,617,60,'neben','naVoc naNw')}
+  {text(542,621,60,'neben','naVoc naNw')}
   {text(542,646,45,'über','naVoc naNw')}
-  {text(542,671,50,'unter','naVoc naNw')}
-  {text(542,697,30,'vor','naVoc naNw')}
-  {text(542,723,85,'zwischen','naVoc naNw')}
-  {text(541,775,230,'Weitere wichtige Wörter','naVoc naVocB naNw')}
+  {text(542,676,50,'unter','naVoc naNw')}
+  {text(542,703,30,'vor','naVoc naNw')}
+  {text(542,724,85,'zwischen','naVoc naNw')}
+  {text(541,770,240,'Weitere wichtige Wörter','naVocH11 naNw')}
   {text(542,801,110,'Frage die, -n','naVoc naNw')}
   {text(542,827,135,'Moment der, -e','naVoc naNw')}
   {text(553,854,130,'Einen Moment!','naVoc naNw')}
   {text(542,890,140,'an·machen, hat','naVoc naNw')}
   {text(553,914,100,'angemacht','naVoc naNw')}
   {text(552,944,270,'A: ein·schalten, hat eingeschaltet','naVocG naNw')}
-  {text(542,966,190,'finden, hat gefunden','naVoc naNw')}
+  {text(542,968,190,'finden, hat gefunden','naVoc naNw')}
   {text(542,993,175,'fragen, hat gefragt','naVoc naNw')}
   {text(542,1019,235,'helfen, du hilfst, er hilft,','naVoc naNw')}
   {text(545,1043,120,'hat geholfen','naVoc naNw')}
@@ -401,7 +401,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(553,1098,90,'gestimmt','naVoc naNw')}
   {text(542,1133,50,'beide','naVoc naNw')}
   {text(553,1161,95,'die beiden','naVoc naNw')}
-  {rl(327,251,190)}{rl(327,303,190)}{rl(327,328,190)}{rl(327,354,190)}{rl(327,380,190)}{rl(327,406,190)}{rl(327,431,190)}{rl(327,457,190)}{rl(327,483,190)}{rl(327,509,190)}{rl(327,535,190)}{rl(327,561,190)}{rl(327,587,190)}{rl(327,663,190)}{rl(327,689,190)}{rl(327,715,190)}{rl(327,741,190)}{rl(327,766,190)}{rl(327,830,190)}{rl(327,882,190)}{rl(327,933,190)}{rl(327,985,190)}{rl(327,1036,190)}{rl(327,1075,190)}{rl(327,1101,190)}{rl(327,1127,190)}{rl(327,1153,190)}{rl(327,1178,190)}
+  {rl(327,251,190)}{rl(327,303,190)}{rl(327,328,190)}{rl(327,354,190)}{rl(327,380,190)}{rl(327,406,190)}{rl(327,431,190)}{rl(327,457,190)}{rl(327,483,190)}{rl(327,509,190)}{rl(327,535,190)}{rl(327,586,190)}{rl(327,663,190)}{rl(327,689,190)}{rl(327,715,190)}{rl(327,741,190)}{rl(327,766,190)}{rl(327,830,190)}{rl(327,882,190)}{rl(327,933,190)}{rl(327,985,190)}{rl(327,1036,190)}{rl(327,1075,190)}{rl(327,1101,190)}{rl(327,1127,190)}{rl(327,1153,190)}{rl(327,1178,190)}
   {rl(686,251,196)}{rl(686,278,196)}{rl(686,304,196)}{rl(686,354,196)}{rl(686,380,196)}{rl(686,406,196)}{rl(686,432,196)}{rl(686,458,196)}{rl(686,535,196)}{rl(686,561,196)}{rl(686,587,196)}{rl(686,612,196)}{rl(686,638,196)}{rl(686,663,196)}{rl(686,689,196)}{rl(686,715,196)}{rl(686,741,196)}{rl(686,818,196)}{rl(686,844,196)}{rl(686,870,196)}{rl(686,933,196)}{rl(686,985,196)}{rl(686,1011,196)}{rl(686,1063,196)}{rl(686,1114,196)}{rl(686,1153,196)}{rl(686,1178,196)}
   {rl(928,267,124)}{rl(928,396,124)}{rl(928,519,124)}{rl(928,662,124)}{rl(928,795,124)}{rl(928,922,124)}{rl(928,1069,124)}{rl(928,1211,124)}
   {art('art1',958,160,74,81)}{art('art2',961,304,79,64)}{art('art3',943,434,112,59)}
@@ -413,9 +413,9 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(297,1253,240,'Überlegen Sie sich eine Hilfe.','naTipT naNw')}
   {art('handtext',618,1213,162,77)}{art('hand',742,1215,78,133)}
   {badge9('2',112,1323)}
-  {text(157,1326,540,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naVoc naVocB naNw')}
+  {text(155,1320,545,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naInstr11 naNw')}
   <div className="naModul9b" style={{left:1003,top:1393,width:68,height:19}}>Modul 5</div>
-  <div className="naText naFooter naNw" style={{left:921,top:1393,width:80}}>elf{'  |  '}<b>11</b></div>
+  <div className="naText naFooter naNw" style={{left:921,top:1388,width:80}}>elf{'  |  '}<b>11</b></div>
  </>}
  </div><audio ref={player} className="naPlayer"/></div>;
 }
