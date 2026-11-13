@@ -278,5 +278,76 @@ export function NativeAB12L23({page}:{page:string}){
   {art('modul-tab',739,1047,59,17)}
   <div className="naText naFooter" style={{left:420,top:1048,width:313,textAlign:'right'}}>siebenundachtzig&nbsp;&nbsp;|&nbsp;&nbsp;87</div>
  </>}
+ {page==='88'&&<>
+  <div className="naTestHead" style={{left:80,top:64}}>TEST</div>
+  <div className="naTestRule" style={{left:140,top:85,width:590}}/>
+  <div className="naSideT" style={{left:52,top:157}}>WÖRTER</div>
+  {title('1',68,124,640,'Das Wetter in Deutschland. Ordnen Sie zu.','naRB naNw naS15')}
+  <div className="naBank" style={{left:111,top:153,width:457,height:19}}/>
+  <div className="naBankBlue" style={{left:115,top:155}}><Words text="Wolken | scheint | Sturm | neblig | Grad | "/><span className="naStrikeB"><Words text="Gewitter"/></span><Words text=" | regnet | Himmel | warm"/></div>
+  {text(111,186,16,'a','naBookSerif naBk87')}{text(130,186,155,'In Frankfurt gibt es ein','naBookSerif naBk87 naNw')}
+  {art('hand1a',286,185,62,18)}{text(350,186,55,'und es','naBookSerif naBk87 naNw')}{field('88-1a',405,178,85,'1 a')}
+  {text(111,206,16,'b','naBookSerif naBk87')}{text(130,206,55,'In Köln','naBookSerif naBk87 naNw')}{field('88-1b1',186,198,95,'1 b1')}{text(284,206,115,'die Sonne, es ist','naBookSerif naBk87 naNw')}{field('88-1b2',398,198,92,'1 b2')}
+  {text(111,225,16,'c','naBookSerif naBk87')}{text(130,225,125,'In Dresden ist der','naBookSerif naBk87 naNw')}{field('88-1c1',260,217,90,'1 c1')}{text(353,225,122,'blau, es gibt keine','naBookSerif naBk87 naNw')}{field('88-1c2',478,217,97,'1 c2')}
+  {text(111,245,16,'d','naBookSerif naBk87')}{text(130,245,330,'In München ist es sehr windig, es gibt bald einen','naBookSerif naBk87 naNw')}{field('88-1d',462,237,98,'1 d')}
+  {text(111,264,16,'e','naBookSerif naBk87')}{text(130,264,115,'In Hamburg ist es','naBookSerif naBk87 naNw')}{field('88-1e1',250,256,93,'1 e1')}{text(345,264,90,', es hat nur 3','naBookSerif naBk87 naNw')}{field('88-1e2',436,256,99,'1 e2')}{text(537,264,10,'.','naBookSerif naBk87')}
+  <div className="naPts" style={{left:640,top:262}}>_ / 8 Punkte</div>
+  {check('88-1',640,282,{'88-1a':'regnet','88-1b1':'scheint','88-1b2':'warm','88-1c1':'Himmel','88-1c2':'Wolken','88-1d':'Sturm','88-1e1':'neblig','88-1e2':'Grad'})}
+  <div className="naSideT" style={{left:55,top:343}}>STRUKTUREN</div>
+  {title('2',68,309,640,'Bilden Sie Wörter mit -los und ergänzen Sie.','naRB naNw naS15')}
+  <div className="naBank" style={{left:111,top:338,width:255,height:18}}/>
+  <div className="naBankBlue" style={{left:115,top:340}}><Words text="kosten- | wolken- | arbeits- | "/><span className="naStrikeB"><Words text="fehler-"/></span><Words text=" | farb-"/></div>
+  {text(111,371,16,'a','naBookSerif naBk87')}{text(130,371,82,'Mein Test ist','naBookSerif naBk87 naNw')}
+  {art('hand2a',214,367,56,22)}{text(274,371,240,'Ich habe keinen Fehler gemacht!','naBookSerif naBk87 naNw')}
+  {text(111,390,16,'b','naBookSerif naBk87')}{text(130,390,468,'Man kann im Zentrum parken, aber es ist teuer. Hinter der Post ist es','naBookSerif naBk87 naNw')}{field('88-2b',600,383,112,'2 b')}
+  {text(111,410,16,'c','naBookSerif naBk87')}{text(130,410,245,'Das Wetter ist schön, der Himmel ist','naBookSerif naBk87 naNw')}{field('88-2c',375,402,125,'2 c')}
+  {text(111,429,16,'d','naBookSerif naBk87')}{text(130,429,278,'Es regnet seit Stunden. Alles ist grau und','naBookSerif naBk87 naNw')}{field('88-2d',408,421,117,'2 d')}
+  {text(111,448,16,'e','naBookSerif naBk87')}{text(130,448,266,'Thomas hat keinen Job mehr, er ist jetzt','naBookSerif naBk87 naNw')}{field('88-2e',400,441,115,'2 e')}
+  <div className="naPts" style={{left:640,top:447}}>_ / 4 Punkte</div>
+  {check('88-2',640,467,{'88-2b':'kostenlos','88-2c':'wolkenlos','88-2d':'farblos','88-2e':'arbeitslos'})}
+  <div className="naSideT" style={{left:55,top:527}}>STRUKTUREN</div>
+  {title('3',68,493,640,'Schreiben Sie Sätze mit denn.','naRB naNw naS15')}
+  {text(111,526,16,'a','naBookSerif naBk87')}{text(130,526,195,'Ich gehe heute zum Zahnarzt,','naBookSerif naBk87 naNw')}
+  {art('hand3a',328,524,142,20)}
+  {text(130,545,150,'(ich / Zahnweh haben)','naCue naNw')}
+  {text(111,565,16,'b','naBookSerif naBk87')}{text(129,565,325,'Wir fahren am Samstag zu den Großeltern, denn','naBookSerif naBk87 naNw')}{field('88-3b',458,558,264,'3 b')}
+  {text(130,584,170,'(unsere Oma / krank sein)','naCue naNw')}
+  {text(111,604,16,'c','naBookSerif naBk87')}{text(129,604,215,'Wir müssen zu Fuß gehen, denn','naBookSerif naBk87 naNw')}{field('88-3c',348,597,374,'3 c')}
+  {text(130,623,185,'(der Aufzug / nicht funktionieren)','naCue naNw')}
+  {text(111,643,16,'d','naBookSerif naBk87')}{text(130,643,175,'Niko macht ein Fest, denn','naBookSerif naBk87 naNw')}{field('88-3d',310,636,412,'3 d')}
+  {text(130,662,195,'(er / Wohnung gefunden haben)','naCue naNw')}
+  <div className="naPts" style={{left:640,top:662}}>_ / 3 Punkte</div>
+  {check('88-3',640,682,{'88-3b':'denn unsere Oma ist krank|unsere Oma ist krank','88-3c':'denn der Aufzug funktioniert nicht|der Aufzug funktioniert nicht','88-3d':'denn er hat eine neue Wohnung gefunden|er hat eine neue Wohnung gefunden'})}
+  <div className="naSideT" style={{left:52,top:741}}>KOMMUNIKATION</div>
+  {title('4',68,707,640,'Ordnen Sie zu.','naRB naNw naS15')}
+  <div className="naBank" style={{left:111,top:737,width:596,height:42}}/>
+  <div className="naBankBlue" style={{left:115,top:739}}><Words text="ich arbeite am Wochenende | der Schnee ist traumhaft | ich backe gern | deine Partys sind immer"/></div>
+  <div className="naBankBlue" style={{left:115,top:759}}><Words text="lustig | ich schreibe am Montag eine Prüfung | ich habe Geburtstag"/></div>
+  {text(112,789,300,'Hallo, ich mache am Freitag eine Party, denn','naBookSerif naBk87 naNw')}{field('88-4a',417,782,305,'4 a')}
+  {text(112,809,140,'Könnt ihr kommen?','naBookSerif naBk87 naNw')}
+  <div className="naBltSq" style={{left:110,top:831,background:'#053594'}}/>
+  {text(130,828,190,'Klar, ich komme gern, denn','naBookSerif naBk87 naNw')}{field('88-4b',320,821,402,'4 b')}
+  <div className="naBltTr" style={{left:111,top:851,borderBottomColor:'#20ac4f'}}/>
+  {text(130,847,265,'Leider nein. Ich muss viel lernen, denn','naBookSerif naBk87 naNw')}{field('88-4c',398,840,324,'4 c')}
+  <div className="naBltCi" style={{left:111,top:870,background:'#a40265'}}/>
+  {text(130,868,105,'Nur kurz, denn','naBookSerif naBk87 naNw')}{field('88-4d',238,860,227,'4 d')}{text(470,868,270,'und muss am Samstag früh aufstehen.','naBookSerif naBk87 naNw')}
+  <div className="naBltTr" style={{left:111,top:890,borderBottomColor:'#f7ae0a'}}/>
+  {text(129,886,300,'Tolle Idee. Ich bringe zwei Kuchen mit, denn','naBookSerif naBk87 naNw')}{field('88-4e',434,879,288,'4 e')}
+  <div className="naBltSq" style={{left:110,top:909,background:'#df0702'}}/>
+  {text(130,906,345,'Ich weiß nicht. Vielleicht gehe ich Ski fahren, denn','naBookSerif naBk87 naNw')}{field('88-4f',480,899,242,'4 f')}
+  <div className="naPts" style={{left:640,top:928}}>_ / 6 Punkte</div>
+  {check('88-4',730,895,{'88-4a':'ich habe Geburtstag','88-4b':'deine Partys sind immer lustig','88-4c':'ich schreibe am Montag eine Prüfung','88-4d':'ich arbeite am Wochenende','88-4e':'ich backe gern','88-4f':'der Schnee ist traumhaft'})}
+  <div className="naScore" style={{left:205,top:932,width:373,height:106}}/>
+  <div className="naScoreH" style={{left:205,top:932,width:373,height:27}}/>
+  {text(212,938,120,'Wörter','naScoreT naNw')}{text(341,938,120,'Strukturen','naScoreT naNw')}{text(460,938,130,'Kommunikation','naScoreT naNw')}
+  {[0,1,2].map(r=><span key={r}>
+    <i className={'naSDot naSD'+(r===0?'R':r===1?'Y':'G')} style={{left:222,top:964+r*26}}/>{text(245,963+r*26,90,['0–4 Punkte','5–6 Punkte','7–8 Punkte'][r],'naScoreR naNw')}
+    <i className={'naSDot naSD'+(r===0?'R':r===1?'Y':'G')} style={{left:342,top:964+r*26}}/>{text(369,963+r*26,90,['0–3 Punkte','4–5 Punkte','6–7 Punkte'][r],'naScoreR naNw')}
+    <i className={'naSDot naSD'+(r===0?'R':r===1?'Y':'G')} style={{left:462,top:964+r*26}}/>{text(494,963+r*26,90,['0–3 Punkte','4 Punkte','5–6 Punkte'][r],'naScoreR naNw')}
+  </span>)}
+  {art('modul8-tab',0,1047,48,20)}
+  <div className="naText naFoot88" style={{left:60,top:1050,width:200}}>88&nbsp;&nbsp;|&nbsp;&nbsp;achtundachtzig</div>
+  <div className="naText naFoot88" style={{left:420,top:1046,width:180,textAlign:'right'}}>www.hueber.de/menschen/lernen</div>
+ </>}
  </Canvas>;
 }
