@@ -182,7 +182,7 @@ export function NativeAB12P18_20({page}:{page:string}){
   {text(157,198,20,'a','naS19')}
   {text(180,198,270,'Schreiben Sie Aufgaben wie in','naS19')}
   {text(455,198,20,'3:','naBlue naIns naInsB')}
-  {text(476,198,310,'Was sehen Sie? Was machen Sie dort?','naS19')}
+  {text(476,198,310,'Was sehen Sie? Was machen Sie dort?','naS188')}
   {text(156,224,20,'b','naS19')}
   {text(181,224,520,'Tauschen Sie mit Ihrer Partnerin / Ihrem Partner. Sie/Er rät.','naS194')}
   {audio('assets/ab-a12-cd2-track11.mp3',55,316,'2 11')}
@@ -278,8 +278,8 @@ export function NativeAB12P18_20({page}:{page:string}){
   {title('8',120,1057,900,'Ergänzen Sie gehören/gefallen/danken/helfen/schmecken in der richtigen Form.','naOB naNw')}
   {text(145,1099,20,'a','naS19')}
   {text(170,1099,150,'Welcher Stadtteil','naS19')}
-  {art('gefaellt8',320,1100,53,34)}
-  {text(372,1099,330,'dir besonders gut? – Ich mag das Lehel.','naS19')}
+  {art('gefaellt8',323,1100,50,34)}
+  {text(378,1099,330,'dir besonders gut? – Ich mag das Lehel.','naS19')}
   {text(145,1126,20,'b','naS19')}
   {text(170,1126,36,'Wir')}
   {field('p19-8b',208,1122,129,'Verb 8b')}
