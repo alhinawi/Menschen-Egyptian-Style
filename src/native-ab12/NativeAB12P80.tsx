@@ -21,22 +21,22 @@ export function NativeAB12P80({page}:{page:string}){
  const lin=(x:number,y:number,w:number,h:number,c:string)=><div style={{position:'absolute',left:x,top:y,width:w,height:h,background:c}}/>;
  const art=(name:string,x:number,y:number,w:number,h:number)=><PageImage className="naArt" src={`assets/book-crops/native-ab12-p${page}-${name}.png`} alt={'Originalillustration '+name} style={{left:x,top:y,width:w,height:h}}/>;
  const field=(id:string,x:number,y:number,w:number,label:string,cls='')=><input className={'naField '+cls} aria-label={label} data-native-field={id} style={{left:x,top:y,width:w}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
- const area=(id:string,x:number,y:number,w:number,h:number,label:string)=><textarea className="naField naArea80" aria-label={label} data-native-field={id} style={{left:x,top:y,width:w,height:h}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
+ const area=(id:string,x:number,y:number,w:number,h:number,label:string)=><textarea className="naField naLined naArea80" aria-label={label} data-native-field={id} style={{left:x,top:y,width:w,['--la-h' as string]:h+'px',['--la-lh' as string]:'18px'}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
  const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}/><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const kb=(x:number,y:number,t:string)=><div className="naKB80" style={{left:x,top:y}}>{t}</div>;
  const num=(x:number,y:number,n:string)=><div className="naNum80" style={{left:x,top:y}}>{n}</div>;
  const rail=(x:number,y:number,t:string)=><div className="naRail80" style={{left:x,top:y}}>{t}</div>;
 
  if(page!=='80')return null;
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-600.woff2') format('woff2');font-weight:600}@font-face{font-family:FiraSansCond;src:url('assets/fonts/firasanscond-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-700.woff2') format('woff2');font-weight:700}
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-600.woff2') format('woff2');font-weight:600}@font-face{font-family:FiraSansCond;src:url('assets/fonts/firasanscond-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-500.ttf') format('truetype');font-weight:500}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-700.woff2') format('woff2');font-weight:700}
 [data-native-ab12='80'] .naText{font-family:DroidSerif,Georgia,serif;font-size:15px;color:#2b2b2b;letter-spacing:0;position:absolute;white-space:nowrap}
 [data-native-ab12='80'] .naArt{position:absolute;object-fit:fill}
 [data-native-ab12='80'] .naKB80{position:absolute;font:600 10.5px FiraSans,sans-serif;color:#5ab0da}
 [data-native-ab12='80'] .naNum80{position:absolute;width:21px;height:17px;background:#e30613;color:#fff;font:700 13px/17px FiraSans,sans-serif;text-align:center}
 [data-native-ab12='80'] .naRail80{position:absolute;font:600 10px FiraSans,sans-serif;color:#6f77ab;letter-spacing:2px;writing-mode:vertical-rl;transform:rotate(180deg)}
 [data-native-ab12='80'] .naT80{font-family:FiraSans,sans-serif!important;font-weight:600;font-size:19px!important;color:#17141c!important}
-[data-native-ab12='80'] .naT80b{font-family:FiraSans,sans-serif!important;font-weight:600;font-size:14px!important;color:#17141c!important}
-[data-native-ab12='80'] .naInst80{font-family:FiraSans,sans-serif!important;font-weight:400;font-size:12px!important;color:#2b2b2b!important}
+[data-native-ab12='80'] .naT80b{font-family:FiraSans,sans-serif!important;font-weight:600;font-size:16px!important;color:#17141c!important}
+[data-native-ab12='80'] .naInst80{font-family:FiraSans,sans-serif!important;font-weight:500;font-size:14px!important;color:#262626!important}
 [data-native-ab12='80'] .naHead80{font-size:20px!important;letter-spacing:2.1px!important;color:#4d4d4a!important}
 [data-native-ab12='80'] .naWords80{font-size:15px!important}
 [data-native-ab12='80'] .naWords80 b{font-weight:700}
@@ -47,8 +47,9 @@ export function NativeAB12P80({page}:{page:string}){
 [data-native-ab12='80'] .naIt80{font-family:FiraSansCond,sans-serif!important;font-style:italic;font-weight:400;font-size:12.5px!important;color:#1f1f1f!important}
 [data-native-ab12='80'] .naBul80{font-size:13.5px!important}
 [data-native-ab12='80'] .naField{position:absolute;background:transparent;border:none;border-bottom:1.5px solid #c8c8c8;font:15px DroidSerif,Georgia,serif;color:#1c3f8f;padding:0 2px;outline:none}
-[data-native-ab12='80'] .naArea80{position:absolute;background:transparent;border:0!important;box-shadow:none!important;resize:none;font:italic 14px FiraSans,sans-serif;line-height:18px;color:#1c3f8f;padding:0 2px;outline:none}
-[data-native-ab12='80'] .naField80c{border-bottom:0!important;font-size:14px}
+[data-native-ab12='80'] .naArea80{position:absolute;background:transparent;border:0!important;box-shadow:none!important;resize:none;scrollbar-width:none;font:italic 14px FiraSans,sans-serif;line-height:18px;color:#1c3f8f;padding:0 2px;outline:none}
+[data-native-ab12='80'] .naArea80::-webkit-scrollbar{display:none;width:0;height:0}
+[data-native-ab12='80'] .naCanvas .naField.naField80c{border:0!important;border-bottom:0!important;box-shadow:none!important;font-size:14px}
 [data-native-ab12='80'] .naField80d{border-bottom:0!important}
 [data-native-ab12='80'] .naFoot80{font-size:14px!important;color:#333!important}
 [data-native-ab12='80'] .naCheck{position:absolute;display:flex;align-items:center;gap:6px}
@@ -83,7 +84,7 @@ export function NativeAB12P80({page}:{page:string}){
   {[267,289,311,333,356].map(y=><span key={y}>{lin(123,y,605,1,'#f0efe6')}</span>)}
   {lin(123,378,605,1,'#e6e5d8')}
   {text(129,250,12,'a','naWords80')}
-  {art('aelter',140,249,36,22)}
+  {art('aelter',138,246,34,34)}
   {text(311,250,60,'older','naEn80')}
   {text(129,271,12,'b','naWords80')}
   {field('p80-8b',138,268,160,'8 b Deutsch','naField80d')}
@@ -131,7 +132,7 @@ export function NativeAB12P80({page}:{page:string}){
   {art('frame2',121,808,557,191)}
   {text(142,825,120,'Hallo Johanna,','naIt80')}
   {text(142,845,516,'das sind ja viele gute Ideen! Drei Tage sind natürlich sehr kurz. Ich möchte lieber in Wien','naIt80')}
-  {area('p80-9mail',140,862,520,50,'E-Mail an Johanna')}
+  {area('p80-9mail',140,864,512,54,'E-Mail an Johanna')}
   {text(142,914,180,'Ich freue mich sehr!','naIt80')}
   {text(142,952,120,'Bis bald','naIt80')}
   {text(142,972,60,'Dein/e','naIt80')}
