@@ -10,7 +10,7 @@ function Words({text}:{text:string}){return <>{text.split(/(\s+)/).map((w,i)=>/\
 const normalize=(s:string)=>s.normalize('NFC').trim().toLocaleLowerCase('de').replace(/[.!?„"“”]+/g,'').replace(/\s+/g,' ');
 
 export function NativeAB12P27({page}:{page:string}){
- const W=1071,H=1447;
+ const W=1071,H=1452;
  const root=useRef<HTMLDivElement>(null);
  const [scale,ss]=useState(.6);const key='native-ab12-'+page;
  const [values,sv]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return {}}});
@@ -27,26 +27,26 @@ export function NativeAB12P27({page}:{page:string}){
  const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||'')))})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const sect=(x:number,y:number,t:string,tag:string)=><div className="naSect" style={{left:x,top:y}}><Words text={t}/>{tag&&<> <span className="naTag">{tag}</span></>}</div>;
 
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-700.woff2') format('woff2');font-weight:700;font-display:swap}`}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-700.woff2') format('woff2');font-weight:700;font-display:swap}`}</style><div className="naCanvas" style={{width:W,height:H,marginLeft:-W/2,marginTop:-H/2,transform:`scale(${scale})`}}>
   {text(98,71,470,'SELBSTEINSCHÄTZUNG','naHead2 naH38')}
   {art('script',548,73,206,40)}
   {art('bars',968,38,101,85)}
   {art('lights',848,153,112,34)}
   {sect(102,156,'… 10 Wörter rund um Haus und Wohnung:','L14')}{conf('s1',190)}
-  {stext(103,182,405,'Das gibt es in meiner Wohnung / in meinem Haus:')}{field('p27-1a',508,177,276,'1a')}
+  {stext(103,182,405,'Das gibt es in meiner Wohnung / in meinem Haus:')}{field('p27-1a',512,177,271,'1a')}
   {field('p27-1b',101,200,682,'1b')}
-  {stext(103,229,452,'Das gibt es nicht in meiner Wohnung / in meinem Haus:')}{field('p27-1c',555,225,228,'1c')}
+  {stext(103,229,452,'Das gibt es nicht in meiner Wohnung / in meinem Haus:')}{field('p27-1c',559,225,224,'1c')}
   {field('p27-1d',101,248,682,'1d')}
   {stext(102,299,270,'Ich kann auch …','naKann')}
   {sect(102,332,'… die Lage von Dingen angeben (lokale Präpositionen mit Dativ):','L13')}{conf('s2',336)}
   {stext(103,357,130,'Wo ist der Stab?')}
   {stext(103,380,95,'Der Stab ist')}{field('p27-2a',197,376,192,'2a')}{field('p27-2b',395,376,76,'2b')}{stext(477,381,85,'Würfel.')}
   {stext(103,405,95,'Der Stab ist')}{field('p27-2c',197,400,192,'2c')}{field('p27-2d',395,400,76,'2d')}{stext(477,405,90,'Würfeln.')}
-  {art('dice',536,370,168,70)}
+  {art('dice',550,370,154,70)}
   {check('g2',980,400,{'p27-2a':'neben|vor|hinter|an','p27-2b':'dem','p27-2c':'zwischen','p27-2d':'den'})}
   {sect(102,451,'… Zugehörigkeit ausdrücken (Genitiv + Possessivartikel sein und ihr):','L14')}{conf('s3',455)}
   {stext(102,477,300,'Vanilla wohnt neben Otto. Vanilla ist')}{field('p27-3a',403,472,156,'3a')}{stext(576,477,90,'Nachbarin.')}
-  {stext(100,499,20,'■','naMark')}{stext(124,499,238,'Wie findest du Vanillas Haus?')}{stext(362,499,20,'▲','naTri')}{field('p27-3b',381,496,115,'3b')}{stext(504,499,180,'Haus finde ich super,')}
+  {stext(100,496,20,'■','naMark')}{stext(124,499,238,'Wie findest du Vanillas Haus?')}{stext(366,505,20,'▲','naTri')}{field('p27-3b',381,496,115,'3b')}{stext(504,499,180,'Haus finde ich super,')}
   {stext(102,523,40,'aber')}{field('p27-3c',141,519,102,'3c')}{stext(249,525,240,'Garten mag ich nicht so gern.')}
   {check('g3',980,519,{'p27-3a':'seine','p27-3b':'ihr','p27-3c':'ihr'})}
   {sect(102,571,'… sagen, wem etwas gefällt/gehört und wem ich helfe/danke','')}{conf('s4',575)}
@@ -68,10 +68,10 @@ export function NativeAB12P27({page}:{page:string}){
   {art('hw1',143,1091,234,29)}
   {art('feet',55,1148,37,35)}{art('chip2',100,1150,36,26)}
   {stext(143,1149,220,'Wie gehen Sie zu …?','naItem')}
-  {stext(145,1192,860,'Was ist bei Ihnen in der Nähe? Ein Bahnhof, eine U-Bahn- oder Bus-Haltestelle, ein')}
-  {stext(145,1220,860,'Restaurant …? Wählen Sie und beschreiben Sie den Weg von Ihnen zu Hause zu diesem Ort.')}
+  {stext(145,1190,880,'Was ist bei Ihnen in der Nähe? Ein Bahnhof, eine U-Bahn- oder Bus-Haltestelle, ein','naItemB')}
+  {stext(145,1217,880,'Restaurant …? Wählen Sie und beschreiben Sie den Weg von Ihnen zu Hause zu diesem Ort.','naItemB')}
   {art('hw2',143,1259,397,28)}
-  {text(786,1385,140,'siebenundzwanzig | 27','naFooter')}
-  {art('modul',960,1385,105,23)}
+  {text(780,1385,140,'siebenundzwanzig | 27','naFooter')}
+  {art('modul',968,1385,103,23)}
  </div></div>;
 }
