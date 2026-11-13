@@ -30,7 +30,7 @@ export function NativeAB12P31to46({page}:{page:string}){
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg,[data-native-ab12] .naTitle,[data-native-ab12] .naField{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg{font-size:20px!important}[data-native-ab12] .naTitle{font-size:21px!important}[data-native-ab12] .naText.naS20{font-size:18px!important}[data-native-ab12] .naSmall{font-size:16.5px!important}[data-native-ab12] .naD19{font-size:17.5px!important}[data-native-ab12] .naField{font-size:19px!important}"}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg,[data-native-ab12] .naTitle,[data-native-ab12] .naField{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg{font-size:20px!important}[data-native-ab12] .naTitle{font-size:21px!important}[data-native-ab12] .naText.naS20{font-size:18px!important}[data-native-ab12] .naSmall{font-size:16.5px!important}[data-native-ab12] .naD19{font-size:17.5px!important}[data-native-ab12] .naField{font-size:19px!important}[data-native-ab12] .naUrl{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}"}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='31'&&<>
   {art('0',982,42,85,78)}
   {lin(354,107,605,6,'#a6ca03')}
@@ -87,15 +87,15 @@ export function NativeAB12P31to46({page}:{page:string}){
   {dot('6a1','nach einem',299,522,'6 a (1) nach einem')}
   {dot('6a1','für ein',450,522,'6 a (1) für ein')}
   {dot('6a2','nach',832,523,'6 a (2) nach')}
-  {dot('6a2','vor',166,552,'6 a (2) vor')}
+  {dot('6a2','vor',162,546,'6 a (2) vor')}
   {dot('6b','für',300,575,'6 b für')}
   {dot('6b','nach',362,575,'6 b nach')}
   {dot('6c','nach',324,597,'6 c nach')}
   {dot('6c','in',409,597,'6 c in')}
-  {dot('6d1','in',274,623,'6 d (1) in')}
+  {dot('6d1','in',277,621,'6 d (1) in')}
   {dot('6d1','vor',335,623,'6 d (1) vor')}
-  {dot('6d2','In',265,653,'6 d (2) In')}
-  {dot('6d2','Für',329,653,'6 d (2) Für')}
+  {dot('6d2','In',265,649,'6 d (2) In')}
+  {dot('6d2','Für',331,649,'6 d (2) Für')}
   {dot('6e','nach dem',305,702,'6 e nach dem')}
   {dot('6e','für den',433,702,'6 e für den')}
   {check('31-1',888,700,{'6a1':'für ein','6a2':'vor','6b':'nach','6c':'in','6d1':'vor','6d2':'In','6e':'nach dem'})}
@@ -124,7 +124,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {field('p31-7f',515,863,53,'7f')}
   {field('p31-7g',800,814,50,'7g')}
   {field('p31-7h',808,844,50,'7h')}
-  {check('31-2',888,858,{'p31-7b':'em','p31-7c':'er','p31-7d':'er','p31-7e':'en','p31-7f':'em','p31-7g':'er','p31-7h':'em'})}
+  {check('31-2',908,856,{'p31-7b':'em','p31-7c':'er','p31-7d':'er','p31-7e':'en','p31-7f':'em','p31-7g':'er','p31-7h':'em'})}
   {kb(78,945,'KB 7')}
   {title('8',130,937,760,'Im Chatroom. Ordnen Sie zu.','naGB')}
   <div className="naSide" style={{left:75,top:975}}>STRUKTUREN</div>
@@ -198,13 +198,13 @@ export function NativeAB12P31to46({page}:{page:string}){
   {stext(136,199,14,'a',{color:'#4357ad'},'naBold naNw')}
   {text(169,195,210,'Ergänzen Sie die E-Mail.','naBold naNw')}
   {text(195,371,190,'Sehr geehrte Frau Winter,','naNw')}
-  {text(195,397,45,'leider','naBold naNw')}
-  {stext(195,421,310,'(heute um 16 Uhr nicht kommen können)',{color:'#6e7373'},'naNw')}
+  {text(195,397,45,'leider','naNw')}
+  {text(195,421,310,'(heute um 16 Uhr nicht kommen können)','naNw')}
   {text(195,444,660,'Wir haben ein Problem mit der Internetverbindung in der Firma und ich warte auf den','naNw')}
   {text(194,469,80,'Techniker.','naNw')}
-  {stext(195,487,220,'(Termin verschieben können)',{color:'#6e7373'},'naNw')}
-  {stext(196,531,170,'(Mittwoch Zeit haben)',{color:'#6e7373'},'naNw')}
-  {stext(196,566,310,'(ab Freitag für eine Woche im Urlaub sein)',{color:'#6e7373'},'naNw')}
+  {text(195,493,220,'(Termin verschieben können)','naNw')}
+  {text(196,531,170,'(Mittwoch Zeit haben)','naNw')}
+  {text(196,566,310,'(ab Freitag für eine Woche im Urlaub sein)','naNw')}
   {text(196,603,185,'Mit freundlichen Grüßen','naNw')}
   {text(196,626,70,'Peter Frei','naNw')}
   {stext(135,698,14,'b',{color:'#4357ad'},'naBold naNw')}
@@ -215,7 +215,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {kb(80,1138,'KB 8')}
   {title('10',126,1140,780,'Hören Sie das Telefongespräch und ordnen Sie zu.','naGB')}
   <div className="naSide" style={{left:92,top:1196,color:'#879cbb'}}>HÖREN</div>
-  {audio('assets/ab-a12-cd2-track15.mp3',64,1170,'CD2 · Track15')}
+  {audio('assets/ab-a12-cd2-track15.mp3',64,1170,'2 15')}
   <svg style={{position:'absolute',left:0,top:0,pointerEvents:'none'}} width="1072" height="1452"><path d="M283 1179 C 360 1182, 412 1240, 500 1253" stroke="#8ba3c7" strokeWidth="1.6" fill="none"/></svg>
   {text(110,1170,14,'a','naBold naNw')}{text(140,1170,150,'Heute um elf','naNw')}
   {text(110,1195,14,'b','naBold naNw')}{text(140,1195,150,'In zwei Stunden','naNw')}
@@ -278,6 +278,8 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(146,1099,422,'Wie oft hören Sie „o“, wie oft „u“? Notieren Sie.','naNw')}
   {text(147,1128,8,'1','naNw')}
   {text(170,1128,10,'o','naNw')}
+  {text(190,1126,40,'2t','naHand naD19 naNw')}
+  {text(258,1126,40,'2t','naHand naD19 naNw')}
   {lin(184,1147,48,2,'#9aa3ab')}
   {text(238,1128,10,'u','naNw')}
   {lin(252,1147,48,2,'#9aa3ab')}
@@ -356,8 +358,8 @@ export function NativeAB12P31to46({page}:{page:string}){
   <div className="naSide" style={{left:88,top:407,color:'#94a3c0'}}>WÖRTER</div>
   {text(168,402,334,'a Das Radio funktioniert nicht, es ist','naNw')}
   {text(508,402,10,'k','naNw')}
-  {text(521,398,85,'aputt','naHand naD19 naNw')}
-  {text(600,402,4,'.','naNw')}
+  {stext(521,408,85,'aputt',{fontSize:13.5,lineHeight:'14px'},'naHand naD19 naNw')}
+  {stext(600,408,4,'.',{fontSize:13.5,lineHeight:'14px'},'naHand naD19 naNw')}
   {text(167,428,350,'b Er kommt immer zu spät, er ist nie p','naNw')}
   {text(666,428,4,'.','naNw')}
   {text(168,455,351,'c Der Deutschkurs ist nicht langweilig,','naNw')}
@@ -441,9 +443,9 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(451,1165,232,'(5) sehr nett. Vielen Dank!','naNw')}
   {stext(895,1166,92,'_/5 Punkte',{fontStyle:'italic',fontSize:15,color:'#7a7a72',fontFamily:'Georgia'},'naNw')}
   {art('score',140,1205,560,143)}
-  {text(444,1365,223,'www.hueber.de/menschen/lernen','naFooter')}
+  {text(444,1365,223,'www.hueber.de/menschen/lernen','naUrl')}
   {art('modul-tab',10,1382,74,38)}
-  {text(98,1393,172,'34 | vierunddreißig','naFooter')}
+  {text(98,1386,172,'34 | vierunddreißig','naFooter')}
   {field('p34-1b',484,217,193,'1 (b)')}
   {field('p34-1c',433,242,299,'1 (c)')}
   {field('p34-1d',544,269,209,'1 (d)')}
@@ -472,11 +474,11 @@ export function NativeAB12P31to46({page}:{page:string}){
   {field('p34-5-3',295,1109,258,'5 (3)')}
   {field('p34-5-4',190,1135,256,'5 (4)')}
   {field('p34-5-5',190,1160,255,'5 (5)')}
-  {check('34-1',885,281,{'p34-1b':'Klimaanlage','p34-1c':'Internetverbindung','p34-1d':'Fernseher','p34-1e':'Dusche'})}
-  {check('34-2',800,462,{'p34-2b':'ünktlich|pünktlich','p34-2c':'ustig|lustig','p34-2d':'alt|kalt'})}
-  {check('34-3',530,718,{'p34-3b':'nach','p34-3c':'für','p34-3d':'vor','p34-3e':'nach|Nach'})}
-  {check('34-4',850,915,{'r4a':'einer','r4b':'dem','r4c':'einem','r4d':'einen'})}
-  {check('34-5',870,1160,{'p34-5-1':'Was kann','p34-5-2':'Es gibt','p34-5-3':'Das tut','p34-5-4':'Ich kümmere','p34-5-5':'Das ist'})}
+  {check('34-1',1000,148,{'p34-1b':'Klimaanlage','p34-1c':'Internetverbindung','p34-1d':'Fernseher','p34-1e':'Dusche'})}
+  {check('34-2',1000,361,{'p34-2b':'ünktlich|pünktlich','p34-2c':'ustig|lustig','p34-2d':'alt|kalt'})}
+  {check('34-3',1000,538,{'p34-3b':'nach','p34-3c':'für','p34-3d':'vor','p34-3e':'nach|Nach'})}
+  {check('34-4',1000,771,{'r4a':'einer','r4b':'dem','r4c':'einem','r4d':'einen'})}
+  {check('34-5',1000,952,{'p34-5-1':'Was kann','p34-5-2':'Es gibt','p34-5-3':'Das tut','p34-5-4':'Ich kümmere','p34-5-5':'Das ist'})}
  </>}
  {page==='35'&&<>
   {art('0',934,36,133,1358)}
