@@ -21,6 +21,7 @@ const specs=Object.fromEntries(pages.map(n=>[n,JSON.parse(fs.readFileSync(`src/n
    for(const f of fields)await h.locator(`[data-native-field="${f.id}"]`).fill(String(f.a).split('|')[0]);
    for(const d of spec.items.filter(i=>i.k==='d'&&i.g===c.g&&i.a===true))await h.locator(`input[aria-label="${d.l}"]`).check({force:true});
    for(const w of spec.items.filter(i=>i.k==='w'&&i.g===c.g&&i.a))await h.locator(`button[aria-label="${'Durchstreichen: '+w.l}"]`).click();
+   for(const m of spec.items.filter(i=>i.k==='mk'&&i.g===c.g&&i.a)){const btn=h.locator(`button[aria-label="${'Markieren: '+m.l}"]`);await btn.click();if(m.a==='g')await btn.click()}
    const box=h.locator('.naCheck').nth(ci);await box.locator('button').click();
    assert.equal(await box.locator('output').textContent(),'✓ Richtig!',`${n}/${c.g}: correct answers`);
    if(fields.length){await h.locator(`[data-native-field="${fields[0].id}"]`).fill('falsch');await box.locator('button').click();assert.equal(await box.locator('output').textContent(),'Noch einmal',`${n}/${c.g}: wrong answer`)}
