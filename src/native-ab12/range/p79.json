@@ -1083,7 +1083,9 @@
    "a": "klein|lustig|billig",
    "l": "Aufgabe 7, Gruppe 1, Komparativ +",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl",
+   "hh": 18
   },
   {
    "k": "f",
@@ -1094,7 +1096,9 @@
    "a": "klein|lustig|billig",
    "l": "Aufgabe 7, Gruppe 1, Komparativ +",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl",
+   "hh": 18
   },
   {
    "k": "f",
@@ -1105,7 +1109,9 @@
    "a": "klein|lustig|billig",
    "l": "Aufgabe 7, Gruppe 1, Komparativ +",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl",
+   "hh": 18
   },
   {
    "k": "f",
@@ -1116,7 +1122,9 @@
    "a": "schneller|kleiner|lustiger|billiger",
    "l": "Aufgabe 7, Gruppe 1, Komparativ ++",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl",
+   "hh": 18
   },
   {
    "k": "f",
@@ -1127,7 +1135,9 @@
    "a": "schneller|kleiner|lustiger|billiger",
    "l": "Aufgabe 7, Gruppe 1, Komparativ ++",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl",
+   "hh": 18
   },
   {
    "k": "f",
@@ -1138,7 +1148,9 @@
    "a": "schneller|kleiner|lustiger|billiger",
    "l": "Aufgabe 7, Gruppe 1, Komparativ ++",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl",
+   "hh": 18
   },
   {
    "k": "f",
@@ -1149,7 +1161,9 @@
    "a": "schneller|kleiner|lustiger|billiger",
    "l": "Aufgabe 7, Gruppe 1, Komparativ ++",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl",
+   "hh": 18
   },
   {
    "k": "f",
@@ -1160,7 +1174,9 @@
    "a": "am schnellsten|am kleinsten|am lustigsten|am billigsten",
    "l": "Aufgabe 7, Gruppe 1, Superlativ +++",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl",
+   "hh": 18
   },
   {
    "k": "f",
@@ -1171,7 +1187,9 @@
    "a": "am schnellsten|am kleinsten|am lustigsten|am billigsten",
    "l": "Aufgabe 7, Gruppe 1, Superlativ +++",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl",
+   "hh": 18
   },
   {
    "k": "f",
@@ -1182,7 +1200,9 @@
    "a": "am schnellsten|am kleinsten|am lustigsten|am billigsten",
    "l": "Aufgabe 7, Gruppe 1, Superlativ +++",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl",
+   "hh": 18
   },
   {
    "k": "f",
@@ -1193,7 +1213,9 @@
    "a": "am schnellsten|am kleinsten|am lustigsten|am billigsten",
    "l": "Aufgabe 7, Gruppe 1, Superlativ +++",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl",
+   "hh": 18
   },
   {
    "k": "f",
@@ -1204,7 +1226,9 @@
    "a": "klug|jung",
    "l": "Aufgabe 7, Gruppe 2, Komparativ +",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl",
+   "hh": 18
   },
   {
    "k": "f",
@@ -1215,7 +1239,9 @@
    "a": "klug|jung",
    "l": "Aufgabe 7, Gruppe 2, Komparativ +",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl",
+   "hh": 18
   },
   {
    "k": "f",
@@ -1226,7 +1252,9 @@
    "a": "klüger|jünger",
    "l": "Aufgabe 7, Gruppe 2, Komparativ ++",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl",
+   "hh": 18
   },
   {
    "k": "f",
@@ -1237,7 +1265,9 @@
    "a": "klüger|jünger",
    "l": "Aufgabe 7, Gruppe 2, Komparativ ++",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl",
+   "hh": 18
   },
   {
    "k": "f",
@@ -1248,7 +1278,9 @@
    "a": "am klügsten|am jüngsten",
    "l": "Aufgabe 7, Gruppe 2, Superlativ +++",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl",
+   "hh": 18
   },
   {
    "k": "f",
@@ -1259,7 +1291,9 @@
    "a": "am klügsten|am jüngsten",
    "l": "Aufgabe 7, Gruppe 2, Superlativ +++",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl",
+   "hh": 18
   },
   {
    "k": "f",
@@ -1270,7 +1304,9 @@
    "a": "leicht",
    "l": "Aufgabe 7, Gruppe 3, Komparativ +",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl",
+   "hh": 18
   },
   {
    "k": "f",
@@ -1281,7 +1317,9 @@
    "a": "leichter",
    "l": "Aufgabe 7, Gruppe 3, Komparativ ++",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl",
+   "hh": 18
   },
   {
    "k": "f",
@@ -1292,7 +1330,9 @@
    "a": "am leichtesten",
    "l": "Aufgabe 7, Gruppe 3, Superlativ +++",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl",
+   "hh": 18
   },
   {
    "k": "f",
@@ -1303,7 +1343,9 @@
    "a": "viel|gern",
    "l": "Aufgabe 7, Gruppe 4, Komparativ +",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl lo",
+   "hh": 14
   },
   {
    "k": "f",
@@ -1314,7 +1356,9 @@
    "a": "viel|gern",
    "l": "Aufgabe 7, Gruppe 4, Komparativ +",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl",
+   "hh": 18
   },
   {
    "k": "f",
@@ -1325,7 +1369,9 @@
    "a": "lieber",
    "l": "Aufgabe 7, Gruppe 4, Komparativ ++",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl",
+   "hh": 18
   },
   {
    "k": "f",
@@ -1333,10 +1379,11 @@
    "y": 966,
    "w": 151,
    "id": "p79-91",
-   "a": "am besten|am meisten",
    "l": "Aufgabe 7, Gruppe 4, Superlativ +++",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl",
+   "hh": 18
   },
   {
    "k": "f",
@@ -1347,7 +1394,9 @@
    "a": "am besten|am meisten",
    "l": "Aufgabe 7, Gruppe 4, Superlativ +++",
    "g": "g2",
-   "max": 22
+   "max": 22,
+   "c": "sl",
+   "hh": 18
   },
   {
    "k": "chk",
