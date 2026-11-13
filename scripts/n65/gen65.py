@@ -42,6 +42,14 @@ try:off=json.load(open(REPO+'/scripts/n65/offsets.json'))
 except FileNotFoundError:off={}
 for n,it in enumerate(items):
  if str(n) in off:it['x']+=off[str(n)][0];it['y']+=off[str(n)][1]
+items[0]['s']=29.5
+items[1]['s']=21
+for n in (2,3):items[n]['s']=18.5
+items[3]['x']-=2
+items[27]['y']-=1
+items[28]['y']-=2
+items[38]['y']-=3
+items[40]['y']-=1
 Image.fromarray(a).save(REPO+'/assets/book-crops/native-ab12-p65-bg.png')
 write_spec(P,{'w':s['width'],'h':s['height'],'items':[{'k':'a','n':'bg','x':0,'y':0,'w':s['width'],'h':s['height'],'alt':'Seite 65 Hintergrund, Originalfußzeile unverändert'}]+items})
 json.dump(bands,open('/tmp/p65-bands.json','w'));print('p65',len(items))
