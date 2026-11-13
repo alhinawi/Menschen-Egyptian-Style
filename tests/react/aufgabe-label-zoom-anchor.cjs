@@ -22,11 +22,11 @@ const clickMarker=async(p,aria)=>{
  assert.equal(await clickMarker(p,'CD1 · Track13'),'Aufgabe 1b','p15 track13 label');
  console.log('p15 track13 -> Aufgabe 1b PASS');
  await p.screenshot({path:'/tmp/fidelity/aufgabe-label-p15.png'});
- // 2. Fallback on an unannotated page keeps the CD/Track label.
+ // 2. p14 is annotated from page art: track12 shows Aufgabe 2a.
  await p.goto('http://localhost:5297/l2-3.html#14');await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
  await p.waitForSelector('.largeAudioMarker');
- assert.equal(await clickMarker(p,'CD1 · Track12'),'CD1 · Track 12','p14 fallback label');
- console.log('p14 fallback -> CD1 · Track 12 PASS');
+ assert.equal(await clickMarker(p,'CD1 · Track12'),'Aufgabe 2a','p14 annotated label');
+ console.log('p14 track12 -> Aufgabe 2a PASS');
  // 3. AB A1.1 p31: number from the printed mNumber + same-row part letter.
  await p.goto('http://localhost:5297/ab4-6.html#31');await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
  await p.waitForSelector('.largeAudioMarker');
