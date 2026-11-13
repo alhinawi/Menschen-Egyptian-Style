@@ -13,6 +13,8 @@ import {QuizForm, QuizFeedback, AnswerField} from '../exercises/QuizState';
 import {ReaderControl, ZoomValue} from './ReaderControls';
 import type {MarkupAttrs, MarkupNode} from '../types/book';
 
+export const READER_HELP='اضغط على الكلمة لمعناها بالمصري · كبّر للقراءة · اسحب يمين أو شمال للتقليب';
+
 const aliases: Record<string, string> = {class: 'className', for: 'htmlFor', tabindex: 'tabIndex', readonly: 'readOnly', maxlength: 'maxLength', colspan: 'colSpan', rowspan: 'rowSpan', contenteditable: 'contentEditable', autoplay: 'autoPlay', playsinline: 'playsInline', crossorigin: 'crossOrigin', srcset: 'srcSet', viewbox: 'viewBox', spellcheck: 'spellCheck', autofocus: 'autoFocus'};
 const booleans = new Set(['hidden', 'disabled', 'checked', 'multiple', 'selected', 'controls', 'loop', 'autoplay', 'muted', 'required', 'readonly', 'open', 'autofocus', 'novalidate']);
 
@@ -32,6 +34,14 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   const path = String(key);
   if (typeof node === 'string') return node;
   const [tag, attrs, children] = node;
+  if(attrs.class?.split(' ').includes('helpBanner'))return <div key={key} className="helpBanner" dir="rtl" lang="ar-EG">{READER_HELP}</div>;
+  if(attrs.id==='palette')return <button key={key} id="palette" hidden aria-hidden="true" tabIndex={-1} style={{display:'none'}}/>;
+  if(attrs.class?.split(' ').includes('controls')) {
+    const navigation=children.filter(child=>Array.isArray(child)&&['prev','pageJump','next'].includes(child[1].id));
+    const tools=children.filter(child=>!navigation.includes(child));
+    return <nav key={key} className="controls"><div className="readerPageNavigation" aria-label="Page navigation">{navigation.map((child,n)=>render(child,`page-nav-${key}-${n}`,null,quizEnabled))}</div><div className="readerToolRow">{tools.map((child,n)=>render(child,`bottom-tool-${key}-${n}`,null,quizEnabled))}</div></nav>;
+  }
+
   const props: Props = {key};
   // Legacy adapters still write this marker; it is no longer a toolbar item.
   if (attrs.id === 'progress') return createElement('span', {key, id: 'progress', hidden: true, 'aria-hidden': true, style: {display: 'none'}});
@@ -91,10 +101,10 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
 // The printed content is immutable. PageFlip and exercise adapters own their
 // documented DOM islands until their React ports replace those adapters.
 export const BookMarkup = memo(function BookMarkup({nodes, quizEnabled = false}: {nodes: MarkupNode[]; quizEnabled?: boolean}) {
-  const controls = nodes.find(node => Array.isArray(node) && node[1].class === 'controls');
-  const navigation = controls && typeof controls !== 'string' ? controls[2].filter(node => Array.isArray(node) && ['prev', 'pageJump', 'next'].includes(node[1].id)) : [];
+  const hasControls=(items:MarkupNode[]):boolean=>items.some(node=>typeof node!=='string'&&(node[1].class?.split(' ').includes('controls')||hasControls(node[2])));
+  const controls=hasControls(nodes);
   useLayoutEffect(() => {
-    if (!navigation.length) return;
+    if (!controls) return;
     const header = document.querySelector<HTMLElement>('header:not(.page header)');
     const bar = document.querySelector<HTMLElement>('.controls');
     const sync = () => {
@@ -105,8 +115,5 @@ export const BookMarkup = memo(function BookMarkup({nodes, quizEnabled = false}:
     const observer = new ResizeObserver(sync);if(header)observer.observe(header);if(bar)observer.observe(bar);sync();
     return () => {observer.disconnect();document.body.classList.remove('readerSplitControls');};
   }, [nodes]);
-  return <>{nodes.map((node, i) => {
-    if (typeof node !== 'string' && node[1].class === 'controls') return <nav key={i} className="controls"><div className="readerPageNavigation" aria-label="Page navigation">{navigation.map((child, n) => render(child, `page-nav-${n}`, null, quizEnabled))}</div><div className="readerToolRow">{node[2].filter(child => !navigation.includes(child)).map((child,n) => render(child, `bottom-tool-${n}`, null, quizEnabled))}</div></nav>;
-    return render(node, i, null, quizEnabled);
-  })}</>;
+  return <>{nodes.map((node,i)=>render(node,i,null,quizEnabled))}</>;
 });
