@@ -10,7 +10,7 @@ function Words({s}:{s:string}){return <>{s.split(/(\s+)/).map((w,i)=>/\S/.test(w
 const grid=['HSMHEDSWI','RALASJPOB','MVEBEORHH','ARBEITENE','CHENNKCEI','HUNCMOHNS','EICFPMEAS','NABIGMNIE','STUDIEREN','PRATRNULG'];
 const gridWords:Record<string,number[]>={SEIN:[1,4,4,4],MACHEN:[2,0,7,0],HABEN:[0,3,4,3],LEBEN:[1,2,5,2],ARBEITEN:[3,0,3,7],KOMMEN:[4,5,9,5],SPRECHEN:[0,6,7,6],WOHNEN:[0,7,5,7],HEISSEN:[2,8,8,8],STUDIEREN:[8,0,8,8]};
 export function NativeAB11Module1({page}:{page:string}){
- const host=useRef<HTMLDivElement>(null),audio=useRef<HTMLAudioElement>(null),[scale,SS]=useState(1),[track,T]=useState(''),[v,S]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem('native-ab11-'+page)||'{}')}catch{return {}}}),[graded,G]=useState<Record<string,boolean>>({}),[start,ST]=useState<number[]|null>(null);
+ const host=useRef<HTMLDivElement>(null),audio=useRef<HTMLAudioElement>(null),[scale,SS]=useState(1),[,T]=useState(''),[v,S]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem('native-ab11-'+page)||'{}')}catch{return {}}}),[graded,G]=useState<Record<string,boolean>>({}),[start,ST]=useState<number[]|null>(null);
  useLayoutEffect(()=>{const el=host.current;if(!el)return;const measure=()=>SS(Math.min(el.clientWidth/901,el.clientHeight/1275));measure();const ro=new ResizeObserver(measure);ro.observe(el);return()=>ro.disconnect()},[]);
  usePageReset(page,'native-ab11-'+page,()=>{S({});G({})});
  const set=(id:string,value:string)=>{const next={...v,[id]:value};S(next);localStorage.setItem('native-ab11-'+page,JSON.stringify(next));G({})};
@@ -235,5 +235,5 @@ export function NativeAB11Module1({page}:{page:string}){
  {txt(193,1163,270,'Ich heiße …\nDas ist mein/meine …\nSie/Er …','mExample')}{open('r32-text',470,1163,340,76,'2 eigener Familientext')}
  </>}
  {txt(Number(page)%2?704:48,1254,Number(page)%2?190:400,Number(page)%2?({'21':'einundzwanzig','23':'dreiundzwanzig','25':'fünfundzwanzig','27':'siebenundzwanzig'} as Record<string,string>)[page]+' | '+page+'  Modul 1':'Modul 1   '+page+' | '+({'20':'zwanzig','22':'zweiundzwanzig','24':'vierundzwanzig','26':'sechsundzwanzig','28':'achtundzwanzig'} as Record<string,string>)[page],'mFooter')}
- </div><audio className="nabPlayer" ref={audio} controls hidden={!track} aria-label="Originalaudio Arbeitsbuch"/></div>;
+ </div><audio className="nabPlayer" ref={audio} controls hidden aria-label="Originalaudio Arbeitsbuch"/></div>;
 }

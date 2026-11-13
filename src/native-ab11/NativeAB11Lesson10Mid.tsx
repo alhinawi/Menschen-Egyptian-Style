@@ -9,7 +9,7 @@ import './native-ab11-lesson10mid.css';
 const norm=(s:string)=>s.normalize('NFC').toLocaleLowerCase('de').trim().replace(/[.,!?;:’']/g,'').replace(/\s+/g,' ');
 function Words({s}:{s:string}){return <>{s.split(/(\s+)/).map((w,i)=>/\S/.test(w)?<span key={i} className="tapWord" role="button" tabIndex={0} data-phrase={s} data-word={w.replace(/^[.,!?„"()]+|[.,!?“"()]+$/g,'')}>{w}</span>:w)}</>}
 export function NativeAB11Lesson10Mid({page}:{page:string}){
- const host=useRef<HTMLDivElement>(null),audio=useRef<HTMLAudioElement>(null),[scale,SS]=useState(1),[track,T]=useState(''),[v,S]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem('native-ab11-'+page)||'{}')}catch{return {}}}),[graded,G]=useState<Record<string,boolean>>({});
+ const host=useRef<HTMLDivElement>(null),audio=useRef<HTMLAudioElement>(null),[scale,SS]=useState(1),[,T]=useState(''),[v,S]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem('native-ab11-'+page)||'{}')}catch{return {}}}),[graded,G]=useState<Record<string,boolean>>({});
  useLayoutEffect(()=>{const el=host.current;if(!el)return;const measure=()=>SS(Math.min(el.clientWidth/901,el.clientHeight/1275));measure();const ro=new ResizeObserver(measure);ro.observe(el);return()=>ro.disconnect()},[]);
  usePageReset(page,'native-ab11-'+page,()=>{S({});G({})});
  const set=(id:string,value:string)=>{const next={...v,[id]:value};S(next);localStorage.setItem('native-ab11-'+page,JSON.stringify(next));G({})};
@@ -264,5 +264,5 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {art('photos',794,168,107,1010)}
  </>}
  {Number(page)%2?<>{<div className="mText mFooter" style={{left:708,top:({79:1207,81:1191,83:1203,85:1202,87:1209} as Record<string,number>)[page]||1208,width:180}}><Words s={footerW[page]}/><b className="mFooterB">{'  |  '+page}</b></div>}{txt(841,(({79:1207,81:1191,83:1203,85:1202,87:1209} as Record<string,number>)[page]||1208)-13,60,'Modul 4','mFooter mFooterTab mFooterTabOdd')}</>:<>{txt(30,({80:1209,82:1206,84:1212,86:1204} as Record<string,number>)[page]||1208,60,'Modul 4','mFooter mFooterTab')}<div className="mText mFooter mFooterEven" style={{left:103,top:({80:1209,82:1206,84:1212,86:1204} as Record<string,number>)[page]||1208,width:40}}>{page}</div><div className="mText mFooter mFooterEven" style={{left:130.7,top:({80:1209,82:1206,84:1212,86:1204} as Record<string,number>)[page]||1208,width:12}}>|</div><div className="mText mFooter mFooterEven" style={{left:145,top:({80:1209,82:1206,84:1212,86:1204} as Record<string,number>)[page]||1208,width:120}}><Words s={footerW[page]}/></div></>}
- </div></div><audio className="nabPlayer" ref={audio} controls hidden={!track} aria-label="Originalaudio Arbeitsbuch"/></div>;
+ </div></div><audio className="nabPlayer" ref={audio} controls hidden aria-label="Originalaudio Arbeitsbuch"/></div>;
 }

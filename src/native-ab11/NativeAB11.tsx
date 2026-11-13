@@ -8,7 +8,7 @@ const norm=(s:string)=>s.normalize('NFC').toLocaleLowerCase('de').trim().replace
 function Words({text}:{text:string}){return <>{text.split(/(\s+)/).map((w,i)=>/\S/.test(w)?<span key={i} className="tapWord" role="button" tabIndex={0} data-phrase={text} data-word={w.replace(/^[.,!?„"()]+|[.,!?“"()]+$/g,'')}>{w}</span>:w)}</>}
 export function NativeAB11({page}:{page:string}){
  const key='native-ab11-'+page, host=useRef<HTMLDivElement>(null);
- const audio=useRef<HTMLAudioElement>(null);const [track,T]=useState('');
+ const audio=useRef<HTMLAudioElement>(null);const [,T]=useState('');
  const [scale,SS]=useState(1),[v,S]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return {}}}),[graded,G]=useState<Record<string,boolean>>({}),[active,A]=useState('');
  useLayoutEffect(()=>{const el=host.current;if(!el)return;const measure=()=>SS(Math.min(el.clientWidth/1075,el.clientHeight/1521));measure();const ro=new ResizeObserver(measure);ro.observe(el);return ()=>ro.disconnect()},[]);
  usePageReset(page,'native-ab11-'+page,()=>{S({});G({});A('')});
@@ -214,5 +214,5 @@ export function NativeAB11({page}:{page:string}){
  {open('eigene-woerter',202,1226,715,170,'2 Weitere Wörter und Notizen')}
  </>}
  {text(Number(page)%2?991:50,1485,80,'Modul 1','nabFooter')}{text(Number(page)%2?920:130,1485,500,page+'  |  '+({'6':'sechs','7':'sieben','8':'acht','9':'neun','10':'zehn','11':'elf'} as Record<string,string>)[page],'nabFooter')}
- </div><audio ref={audio} className="nabPlayer" controls hidden={!track} aria-label="Originalaudio Arbeitsbuch"/></div>
+ </div><audio ref={audio} className="nabPlayer" controls hidden aria-label="Originalaudio Arbeitsbuch"/></div>
 }

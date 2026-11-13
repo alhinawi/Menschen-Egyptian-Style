@@ -9,7 +9,7 @@ import './native-ab11-lessons45.css';
 const norm=(s:string)=>s.normalize('NFC').toLocaleLowerCase('de').trim().replace(/[.,!?;:’']/g,'').replace(/\s+/g,' ');
 function Words({s}:{s:string}){return <>{s.split(/(\s+)/).map((w,i)=>/\S/.test(w)?<span key={i} className="tapWord" role="button" tabIndex={0} data-phrase={s} data-word={w.replace(/^[.,!?„"()]+|[.,!?“"()]+$/g,'')}>{w}</span>:w)}</>}
 export function NativeAB11Module3Review({page}:{page:string}){
- const host=useRef<HTMLDivElement>(null),audio=useRef<HTMLAudioElement>(null),[scale,SS]=useState(1),[track,T]=useState(''),[v,S]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem('native-ab11-'+page)||'{}')}catch{return {}}}),[graded,G]=useState<Record<string,boolean>>({});
+ const host=useRef<HTMLDivElement>(null),audio=useRef<HTMLAudioElement>(null),[scale,SS]=useState(1),[,T]=useState(''),[v,S]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem('native-ab11-'+page)||'{}')}catch{return {}}}),[graded,G]=useState<Record<string,boolean>>({});
  useLayoutEffect(()=>{const el=host.current;if(!el)return;const measure=()=>SS(Math.min(el.clientWidth/901,el.clientHeight/1275));measure();const ro=new ResizeObserver(measure);ro.observe(el);return()=>ro.disconnect()},[]);
  usePageReset(page,'native-ab11-'+page,()=>{S({});G({})});
  const set=(id:string,value:string)=>{const next={...v,[id]:value};S(next);localStorage.setItem('native-ab11-'+page,JSON.stringify(next));G({})};
@@ -84,5 +84,5 @@ export function NativeAB11Module3Review({page}:{page:string}){
  {txt(168,1704,190,'b  ▪ Hallo Emma, du','mSmall')}{f('u4-b1',365,1702,112)}{txt(484,1704,355,'doch die Gruppe Wise Guys, oder?','mSmall')}{txt(193,1741,646,'▴ Ja klar. Warum?','mSmall')}{txt(193,1778,646,'▪ Ich habe für das Konzert am Freitag zwei Tickets und Christian hat keine Zeit.','mSmall')}{f('u4-b2',193,1813,142)}{txt(342,1815,497,'du mitkommen?','mSmall')}{txt(193,1852,646,'▴ Sehr gern! Super!','mSmall')}{check('u4',168,1900,{'u4-a2':'möchte','u4-b1':'magst','u4-b2':'Möchtest'})}
  </>}
  {txt(Number(page)%2?704:48,1254,Number(page)%2?190:400,(Number(page)%2?'':'Modul 3   ')+page+' | '+({'71':'einundsiebzig','72':'zweiundsiebzig','73':'dreiundsiebzig'} as Record<string,string>)[page]+(Number(page)%2?'  Modul 3':''),'mFooter')}
- </div><audio className="nabPlayer" ref={audio} controls hidden={!track} aria-label="Originalaudio Arbeitsbuch"/></div>;
+ </div><audio className="nabPlayer" ref={audio} controls hidden aria-label="Originalaudio Arbeitsbuch"/></div>;
 }
