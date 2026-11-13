@@ -24,3 +24,4 @@
 .naCanvas .naTblCell.naTblCellS{font-size:15px}
 .naCanvas .naBasisL{position:absolute;font:400 20px 'Times New Roman',serif;letter-spacing:2.5px;color:#6b6b6b}
 .naCanvas.naNarrow .naSide.naSideC{font-size:8px;letter-spacing:1px}
+.naCanvas .naField.naFieldNL{border-bottom:0!important}
