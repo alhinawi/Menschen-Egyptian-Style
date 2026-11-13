@@ -66,7 +66,7 @@ line(198,228,'Weitere wichtige Wörter',530,780,c='naDB',path=DROID700)
 # ---------- left column vocab ----------
 line(228,252,'Bart der, ¨e',148,280)
 items[-1]['t']='Bart der,'
-items[-1]['s']=17.0
+items[-1]['s']=17.5
 R[-1]=('fill',(151,226,232,255),(255,255,255))  # plural suffix stays exactly as printed at x235-251
 line(254,278,'Haar das, -e',148,280)
 line(290,312,'blond',148,230)
@@ -113,6 +113,22 @@ line(834,862,'Machen Sie Wortbilder.',260,470)
 
 # ---------- ex2 instruction (badge stays) ----------
 line(916,950,'Welche Wörter möchten Sie noch lernen? Notieren Sie.',146,710,c='naFiraB',path=FIRA700,sz=20.5)
+
+# r3 fine positioning at native canvas scale; no horizontal transforms.
+for it in items:
+    text=it.get('t','')
+    if text=='Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.':
+        it['s']=21.3
+        it['y']-=1
+    if text in ('unglücklich','sympathisch/','unsympathisch','ledig'):
+        it['y']-=1
+    if text=='unfreundlich': it['s']=19.0
+    if text=='hat vergessen': it['x']-=1
+    if text=='Weitere wichtige Wörter':
+        it['x']-=3
+        it['s']=17.5
+    if text and not it.get('c') and text!='Machen Sie Wortbilder.':
+        it['col']='#383838'
 
 # ---------- script art crops (printed blue cursive word-picture examples) ----------
 def crop_alpha(box,name):
