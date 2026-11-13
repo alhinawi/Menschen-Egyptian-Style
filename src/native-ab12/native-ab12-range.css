@@ -46,7 +46,8 @@
 .nativeAB12 .naRCanvas .naText.naR.naRSans,.nativeAB12 .naRCanvas .naText.naR.naRSansR{font-family:FiraSans,'Trebuchet MS',sans-serif}
 .nativeAB12 .naRCanvas .naText.naR{font-size:var(--naRs)!important;letter-spacing:normal!important}
 .nativeAB12 .naRCanvas .naText.naR.naRSans,.nativeAB12 .naRCanvas .naText.naR.naRSansR{font-family:FiraSans,'Trebuchet MS',sans-serif!important}
-.nativeAB12 .naRCanvas .naText.naR:not(.naRSans):not(.naRSansR){font-family:ABRangeDroid,DroidSerif,Georgia,serif!important}
+.nativeAB12 .naRCanvas .naText.naR:not(.naRSans):not(.naRSansR):not(.naRSansM){font-family:ABRangeDroid,DroidSerif,Georgia,serif!important}
 .nativeAB12 .naRCanvas .naText.naR.naHead{letter-spacing:.6px!important}
 .nativeAB12 .naRCanvas .naText.naR.naRThin{letter-spacing:2px!important}
 .nativeAB12 .naRCanvas .naRField{font-size:20px!important;letter-spacing:normal!important}
+.nativeAB12 .naRCanvas .naText.naR.naRSansM{font-family:FiraSans,'Trebuchet MS',sans-serif!important;font-weight:400;-webkit-text-stroke:.95px currentColor}
