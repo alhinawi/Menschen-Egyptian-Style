@@ -261,12 +261,127 @@
    924,
    208,
    946
+  ],
+  [
+   588,
+   646,
+   615,
+   745,
+   255
   ]
  ],
  "fieldadj": {
   "t6c-5": {
    "x": 208,
    "w": 178
+  },
+  "t6a-2": {
+   "kind": "select",
+   "options": [
+    {
+     "value": "1",
+     "label": "1"
+    },
+    {
+     "value": "2",
+     "label": "2"
+    },
+    {
+     "value": "3",
+     "label": "3"
+    },
+    {
+     "value": "4",
+     "label": "4"
+    },
+    {
+     "value": "5",
+     "label": "5"
+    }
+   ],
+   "w": 24,
+   "h": 24
+  },
+  "t6a-3": {
+   "kind": "select",
+   "options": [
+    {
+     "value": "1",
+     "label": "1"
+    },
+    {
+     "value": "2",
+     "label": "2"
+    },
+    {
+     "value": "3",
+     "label": "3"
+    },
+    {
+     "value": "4",
+     "label": "4"
+    },
+    {
+     "value": "5",
+     "label": "5"
+    }
+   ],
+   "w": 24,
+   "h": 24
+  },
+  "t6a-4": {
+   "kind": "select",
+   "options": [
+    {
+     "value": "1",
+     "label": "1"
+    },
+    {
+     "value": "2",
+     "label": "2"
+    },
+    {
+     "value": "3",
+     "label": "3"
+    },
+    {
+     "value": "4",
+     "label": "4"
+    },
+    {
+     "value": "5",
+     "label": "5"
+    }
+   ],
+   "w": 24,
+   "h": 24
+  },
+  "t6a-5": {
+   "kind": "select",
+   "options": [
+    {
+     "value": "1",
+     "label": "1"
+    },
+    {
+     "value": "2",
+     "label": "2"
+    },
+    {
+     "value": "3",
+     "label": "3"
+    },
+    {
+     "value": "4",
+     "label": "4"
+    },
+    {
+     "value": "5",
+     "label": "5"
+    }
+   ],
+   "w": 24,
+   "h": 24
   }
  },
  "checks": {
@@ -299,6 +414,358 @@
      "c": "#d43a2f"
     }
    ]
+  }
+ ],
+ "addfields": [
+  {
+   "id": "t6b-article-1-ein",
+   "name": "t6b-article-1",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "ein",
+   "answer": "false",
+   "label": "6b 1 article: ein",
+   "x": 233,
+   "y": 647,
+   "w": 25,
+   "h": 20
+  },
+  {
+   "id": "t6b-article-1-eine",
+   "name": "t6b-article-1",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "eine",
+   "answer": "true",
+   "label": "6b 1 article: eine",
+   "x": 265,
+   "y": 647,
+   "w": 33,
+   "h": 20
+  },
+  {
+   "id": "t6b-pronoun-1-Er",
+   "name": "t6b-pronoun-1",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "Er",
+   "answer": "false",
+   "label": "6b 1 pronoun: Er",
+   "x": 485,
+   "y": 647,
+   "w": 19,
+   "h": 20
+  },
+  {
+   "id": "t6b-pronoun-1-Es",
+   "name": "t6b-pronoun-1",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "Es",
+   "answer": "false",
+   "label": "6b 1 pronoun: Es",
+   "x": 515,
+   "y": 647,
+   "w": 19,
+   "h": 20
+  },
+  {
+   "id": "t6b-pronoun-1-Sie",
+   "name": "t6b-pronoun-1",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "Sie",
+   "answer": "true",
+   "label": "6b 1 pronoun: Sie",
+   "x": 544,
+   "y": 647,
+   "w": 25,
+   "h": 20
+  },
+  {
+   "id": "t6b-article-2-ein",
+   "name": "t6b-article-2",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "ein",
+   "answer": "true",
+   "label": "6b 2 article: ein",
+   "x": 235,
+   "y": 667,
+   "w": 25,
+   "h": 20
+  },
+  {
+   "id": "t6b-article-2-eine",
+   "name": "t6b-article-2",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "eine",
+   "answer": "false",
+   "label": "6b 2 article: eine",
+   "x": 269,
+   "y": 667,
+   "w": 33,
+   "h": 20
+  },
+  {
+   "id": "t6b-pronoun-2-Er",
+   "name": "t6b-pronoun-2",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "Er",
+   "answer": "true",
+   "label": "6b 2 pronoun: Er",
+   "x": 485,
+   "y": 667,
+   "w": 19,
+   "h": 20
+  },
+  {
+   "id": "t6b-pronoun-2-Es",
+   "name": "t6b-pronoun-2",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "Es",
+   "answer": "false",
+   "label": "6b 2 pronoun: Es",
+   "x": 512,
+   "y": 667,
+   "w": 19,
+   "h": 20
+  },
+  {
+   "id": "t6b-pronoun-2-Sie",
+   "name": "t6b-pronoun-2",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "Sie",
+   "answer": "false",
+   "label": "6b 2 pronoun: Sie",
+   "x": 545,
+   "y": 667,
+   "w": 25,
+   "h": 20
+  },
+  {
+   "id": "t6b-article-3-ein",
+   "name": "t6b-article-3",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "ein",
+   "answer": "false",
+   "label": "6b 3 article: ein",
+   "x": 235,
+   "y": 687,
+   "w": 25,
+   "h": 20
+  },
+  {
+   "id": "t6b-article-3-eine",
+   "name": "t6b-article-3",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "eine",
+   "answer": "true",
+   "label": "6b 3 article: eine",
+   "x": 269,
+   "y": 687,
+   "w": 33,
+   "h": 20
+  },
+  {
+   "id": "t6b-pronoun-3-Er",
+   "name": "t6b-pronoun-3",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "Er",
+   "answer": "false",
+   "label": "6b 3 pronoun: Er",
+   "x": 485,
+   "y": 687,
+   "w": 19,
+   "h": 20
+  },
+  {
+   "id": "t6b-pronoun-3-Es",
+   "name": "t6b-pronoun-3",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "Es",
+   "answer": "false",
+   "label": "6b 3 pronoun: Es",
+   "x": 515,
+   "y": 687,
+   "w": 19,
+   "h": 20
+  },
+  {
+   "id": "t6b-pronoun-3-Sie",
+   "name": "t6b-pronoun-3",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "Sie",
+   "answer": "true",
+   "label": "6b 3 pronoun: Sie",
+   "x": 545,
+   "y": 687,
+   "w": 25,
+   "h": 20
+  },
+  {
+   "id": "t6b-article-4-ein",
+   "name": "t6b-article-4",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "ein",
+   "answer": "true",
+   "label": "6b 4 article: ein",
+   "x": 235,
+   "y": 707,
+   "w": 25,
+   "h": 20
+  },
+  {
+   "id": "t6b-article-4-eine",
+   "name": "t6b-article-4",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "eine",
+   "answer": "false",
+   "label": "6b 4 article: eine",
+   "x": 269,
+   "y": 707,
+   "w": 33,
+   "h": 20
+  },
+  {
+   "id": "t6b-pronoun-4-Er",
+   "name": "t6b-pronoun-4",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "Er",
+   "answer": "false",
+   "label": "6b 4 pronoun: Er",
+   "x": 485,
+   "y": 707,
+   "w": 19,
+   "h": 20
+  },
+  {
+   "id": "t6b-pronoun-4-Es",
+   "name": "t6b-pronoun-4",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "Es",
+   "answer": "true",
+   "label": "6b 4 pronoun: Es",
+   "x": 512,
+   "y": 707,
+   "w": 19,
+   "h": 20
+  },
+  {
+   "id": "t6b-pronoun-4-Sie",
+   "name": "t6b-pronoun-4",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "Sie",
+   "answer": "false",
+   "label": "6b 4 pronoun: Sie",
+   "x": 545,
+   "y": 707,
+   "w": 25,
+   "h": 20
+  },
+  {
+   "id": "t6b-article-5-ein",
+   "name": "t6b-article-5",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "ein",
+   "answer": "false",
+   "label": "6b 5 article: ein",
+   "x": 235,
+   "y": 727,
+   "w": 25,
+   "h": 20
+  },
+  {
+   "id": "t6b-article-5-eine",
+   "name": "t6b-article-5",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "eine",
+   "answer": "true",
+   "label": "6b 5 article: eine",
+   "x": 269,
+   "y": 727,
+   "w": 33,
+   "h": 20
+  },
+  {
+   "id": "t6b-pronoun-5-Er",
+   "name": "t6b-pronoun-5",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "Er",
+   "answer": "false",
+   "label": "6b 5 pronoun: Er",
+   "x": 485,
+   "y": 727,
+   "w": 19,
+   "h": 20
+  },
+  {
+   "id": "t6b-pronoun-5-Es",
+   "name": "t6b-pronoun-5",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "Es",
+   "answer": "false",
+   "label": "6b 5 pronoun: Es",
+   "x": 515,
+   "y": 727,
+   "w": 19,
+   "h": 20
+  },
+  {
+   "id": "t6b-pronoun-5-Sie",
+   "name": "t6b-pronoun-5",
+   "group": "t6b",
+   "kind": "radio",
+   "circle": true,
+   "value": "Sie",
+   "answer": "true",
+   "label": "6b 5 pronoun: Sie",
+   "x": 545,
+   "y": 727,
+   "w": 25,
+   "h": 20
   }
  ]
 }
