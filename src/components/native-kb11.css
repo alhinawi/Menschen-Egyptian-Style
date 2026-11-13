@@ -43,7 +43,39 @@
 @font-face{font-family:KbFira;src:url('/assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
 @font-face{font-family:KbFira;src:url('/assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700;font-display:swap}
 @font-face{font-family:KbDroid;src:url('/assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}
-.nkb:is([data-native-page="87"],[data-native-page="88"],[data-native-page="89"],[data-native-page="90"],[data-native-page="91"]) .nkbLine{font-family:KbDroid,serif}
-.nkb:is([data-native-page="87"],[data-native-page="88"],[data-native-page="89"],[data-native-page="90"],[data-native-page="91"]) .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
+.nkb:is([data-native-page="38"],[data-native-page="87"],[data-native-page="88"],[data-native-page="89"],[data-native-page="90"],[data-native-page="91"]) .nkbLine{font-family:KbDroid,serif}
+.nkb:is([data-native-page="38"],[data-native-page="87"],[data-native-page="88"],[data-native-page="89"],[data-native-page="90"],[data-native-page="91"]) .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
 @font-face{font-family:KbFira;src:url('/assets/fonts/firasans-latin-500.ttf') format('truetype');font-weight:500;font-display:swap}
 .nkb:is([data-native-page="87"],[data-native-page="88"],[data-native-page="89"],[data-native-page="90"],[data-native-page="91"]) .nkbLine.nkbB{font-weight:500}
+
+.nkb:is([data-native-page="66"],[data-native-page="67"],[data-native-page="68"],[data-native-page="69"],[data-native-page="70"],[data-native-page="71"],[data-native-page="72"],[data-native-page="73"],[data-native-page="74"],[data-native-page="75"],[data-native-page="76"],[data-native-page="77"],[data-native-page="78"],[data-native-page="79"],[data-native-page="80"]) .nkbLine{font-family:KbDroid,serif}
+.nkb:is([data-native-page="66"],[data-native-page="67"],[data-native-page="68"],[data-native-page="69"],[data-native-page="70"],[data-native-page="71"],[data-native-page="72"],[data-native-page="73"],[data-native-page="74"],[data-native-page="75"],[data-native-page="76"],[data-native-page="77"],[data-native-page="78"],[data-native-page="79"],[data-native-page="80"]) .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
+.nkb:is([data-native-page="66"],[data-native-page="67"],[data-native-page="68"],[data-native-page="69"],[data-native-page="70"],[data-native-page="71"],[data-native-page="72"],[data-native-page="73"],[data-native-page="74"],[data-native-page="75"],[data-native-page="76"],[data-native-page="77"],[data-native-page="78"],[data-native-page="79"],[data-native-page="80"]) .nkbLine.nkbB{font-weight:500}
+.nkb:is([data-native-page="92"],[data-native-page="93"],[data-native-page="94"],[data-native-page="95"],[data-native-page="96"]) .nkbLine{font-family:KbDroid,serif}
+
+.nkb:is([data-native-page="92"],[data-native-page="93"],[data-native-page="94"],[data-native-page="95"],[data-native-page="96"]) .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
+
+.nkb:is([data-native-page="92"],[data-native-page="93"],[data-native-page="94"],[data-native-page="95"],[data-native-page="96"]) .nkbLine.nkbB{font-weight:500}
+
+.nkb:is([data-native-page="57"],[data-native-page="58"],[data-native-page="59"],[data-native-page="60"],[data-native-page="61"],[data-native-page="62"],[data-native-page="63"],[data-native-page="64"],[data-native-page="65"]) .nkbLine{font-family:KbDroid,serif}
+.nkb:is([data-native-page="57"],[data-native-page="58"],[data-native-page="59"],[data-native-page="60"],[data-native-page="61"],[data-native-page="62"],[data-native-page="63"],[data-native-page="64"],[data-native-page="65"]) .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
+.nkb:is([data-native-page="57"],[data-native-page="58"],[data-native-page="59"],[data-native-page="60"],[data-native-page="61"],[data-native-page="62"],[data-native-page="63"],[data-native-page="64"],[data-native-page="65"]) .nkbLine.nkbB{font-weight:500}
+.nkb[data-native-page="58"] .nkbCanvas input[type=text].nkbField[data-native-field^="f4a-"]{border-radius:50%!important;border:1.6px solid #d8c68c!important;background:transparent!important;text-align:center;padding:0!important}
+.nkb[data-native-page="59"] .nkbCanvas input[type=text].nkbField[data-native-field^="f7b-"]{border-radius:50%!important;border:1.6px solid #d8c68c!important;background:transparent!important;text-align:center;padding:0!important}
+
+.nkbCanvas select.nkbField[data-native-field=geschieden],.nkbCanvas select.nkbField[data-native-field=Kind],.nkbCanvas select.nkbField[data-native-field=verheiratet],.nkbCanvas select.nkbField[data-native-field=Single]{width:1.5cqw!important;height:1.5cqw!important;border:1px solid #8fb0cc!important;font-size:.9cqw!important}
+
+.nkb:is([data-native-page="9"],[data-native-page="10"],[data-native-page="11"],[data-native-page="12"],[data-native-page="13"],[data-native-page="14"],[data-native-page="15"],[data-native-page="16"],[data-native-page="17"],[data-native-page="18"],[data-native-page="19"],[data-native-page="20"],[data-native-page="21"],[data-native-page="22"],[data-native-page="23"],[data-native-page="24"],[data-native-page="25"],[data-native-page="54"]) .nkbLine{font-family:KbDroid,serif}
+.nkb:is([data-native-page="9"],[data-native-page="10"],[data-native-page="11"],[data-native-page="12"],[data-native-page="13"],[data-native-page="14"],[data-native-page="15"],[data-native-page="16"],[data-native-page="17"],[data-native-page="18"],[data-native-page="19"],[data-native-page="20"],[data-native-page="21"],[data-native-page="22"],[data-native-page="23"],[data-native-page="24"],[data-native-page="25"],[data-native-page="54"]) .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
+.nkb:is([data-native-page="9"],[data-native-page="10"],[data-native-page="11"],[data-native-page="12"],[data-native-page="13"],[data-native-page="14"],[data-native-page="15"],[data-native-page="16"],[data-native-page="17"],[data-native-page="18"],[data-native-page="19"],[data-native-page="20"],[data-native-page="21"],[data-native-page="22"],[data-native-page="23"],[data-native-page="24"],[data-native-page="25"],[data-native-page="54"]) .nkbLine.nkbB{font-weight:500}
+
+.lmHideAll .sharedMatchItem{color:transparent!important}
+.nkb[data-native-page="11"] .nkbCanvas input[type=text].nkbField.nkbUl[data-native-field="das"],.nkb[data-native-page="10"] .nkbCanvas input[type=text].nkbField.nkbUl[data-native-field="komme"]{border-bottom:1px solid #5a5a5a!important}
+.nkb[data-native-page="10"] .nkbCanvas select.nkbField[data-native-field^="music_"]{border:0!important;border-radius:50%!important;background:transparent!important;color:#173c62!important;font-size:2.2cqw!important}
+.nkb[data-native-page="21"] .nkbCanvas input[type=text].nkbField.nkbUl[data-native-field="t2"]{border-bottom-color:transparent!important}
+.nkb[data-native-page="18"] .nkbLine span[style*="italic"]{font-size:.9em;letter-spacing:-.03em;font-weight:500;word-spacing:.14em}
+.nkb[data-native-page="18"] .nkbLine.nkbB[data-tw="180"]{font-weight:700}
+.nkb[data-native-page="11"] .nkbLine[data-tw="279"]{z-index:9}
+
+.nkb[data-native-page="38"] input[type=checkbox].nkbField{appearance:none;-webkit-appearance:none;border-radius:3px}
+.nkb[data-native-page="38"] input[type=checkbox].nkbField:checked{background:rgba(255,224,51,.55)!important}

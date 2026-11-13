@@ -1,3 +1,4 @@
+import {CheckButton} from '../components/CheckButton';
 import {PageImage} from '../components/PageImage';
 import {usePageReset} from '../exercises/usePageReset';
 import {useLayoutEffect,useRef,useState} from 'react';
@@ -23,7 +24,7 @@ export function NativeAB12P18_20({page}:{page:string}){
  const dot=(id:string,value:string,x:number,y:number,label:string)=><input type="radio" className="naDot" name={key+'-'+id} aria-label={label} data-native-field={id} style={{left:x,top:y}} checked={values[id]===value} onChange={()=>set(id,value)}/>;
  const pick=(id:string,value:string,x:number,y:number,label:string)=><button type="button" className={'naPick'+(values[id]===value?' selected':'')} aria-label={label} aria-pressed={values[id]===value} data-native-field={id} onClick={()=>set(id,value)} style={{left:x,top:y}}>{value}</button>;
  const circle=(id:string,x:number,y:number,label:string)=><input className="naCNum" aria-label={label} data-native-field={id} style={{left:x,top:y}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false} inputMode="numeric" maxLength={1}/>;
- const check=(id:string,x:number,y:number,answers:Record<string,string>,cls='')=><div className={'naCheck '+cls} data-check={id} style={{left:x,top:y}}><button onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}>Prüfen ✓</button><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const check=(id:string,x:number,y:number,answers:Record<string,string>,cls='')=><div className={'naCheck '+cls} data-check={id} style={{left:x,top:y}}><CheckButton onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,t:string,cls='')=><div className={'naTitle '+cls} style={{left:x,top:y,width:w}}><b>{n}</b><Words text={t}/></div>;
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
@@ -57,31 +58,18 @@ export function NativeAB12P18_20({page}:{page:string}){
   {check('g1',850,242,{'p18-nKirche':'3','p18-nSpielplatz':'2','p18-nWald':'6','p18-nMeer':'5','p18-nCafé':'7','p18-nHafen':'4'},'naCheckCol')}
   {text(125,302,20,'b','naExL')}
   {text(161,302,500,'Ergänzen Sie aus a. Notieren und vergleichen Sie.')}
-  <div style={{position:'absolute',left:150,top:338,width:825,height:29,background:'#f0ead6'}}/>
+  <div style={{position:'absolute',left:150,top:335,width:825,height:32,background:'#f0ead6'}}/>
+  <div className="naTFrame" style={{left:150,top:335,width:825,height:238}}/>
+  <div className="naTCol" style={{left:443,top:335,height:238}}/>
+  <div className="naTCol" style={{left:638,top:335,height:238}}/>
   {text(159,341,200,'Deutsch','naTh')}
   {text(451,341,150,'Englisch','naTh')}
   {text(648,341,320,'Meine Sprache oder andere Sprachen','naTh naNw')}
-  {[372,405,437,470,502,535,567].map(y=><div key={y} className="naTRule" style={{left:150,top:y,width:825}}/>)}
-  {art('hint-1',155,368,290,30)}
-  {art('hint-2',155,397,290,30)}
-  {art('hint-3',155,430,290,30)}
-  {art('hint-4',155,459,290,30)}
-  {art('hand-meer',155,489,290,30)}
-  {art('hint-6',155,518,290,30)}
-  {art('hand-wald',155,545,290,30)}
-  {field('p18-dCafé',158,368,285,'café auf Deutsch','naFieldBlank')}
-  {field('p18-dHafen',158,397,285,'harbour auf Deutsch','naFieldBlank')}
-  {field('p18-dFlughafen',158,430,285,'airport auf Deutsch','naFieldBlank')}
-  {field('p18-dKirche',158,459,285,'church auf Deutsch','naFieldBlank')}
-  {field('p18-dSpielplatz',158,518,285,'playground auf Deutsch','naFieldBlank')}
-  {text(451,370,150,'café')}
-  {text(451,399,150,'harbour')}
-  {text(451,432,150,'airport')}
-  {text(451,461,150,'church')}
-  {text(451,491,150,'sea')}
-  {text(451,520,150,'playground')}
-  {text(451,549,150,'forest')}
-  {[370,399,432,461,491,520,549].map((y,i)=>field('p18-ms'+(i+1),650,y,315,'Meine Sprache Zeile '+(i+1),'naFieldBlank'))}
+  {[395.5,425,454.5,484,513.5,543].map(y=><div key={y} className="naTRule" style={{left:150,top:y,width:825}}/>)}
+  {['café','harbour','airport','church','sea','playground','forest'].map((word,i)=>text(451,366+i*29.5,170,word,'naTableEnglish'))}
+  {['hint-1','hint-2','hint-3','hint-4','hand-meer','hint-6','hand-wald'].map((name,i)=>art(name+'-clean',159,368+i*29.5,282,26))}
+  {['p18-dCafé','p18-dHafen','p18-dFlughafen','p18-dKirche',null,'p18-dSpielplatz',null].map((id,i)=>id?field(id,158,367+i*29.5,275,'Deutsch Zeile '+(i+1),'naFieldBlank'):null)}
+  {Array.from({length:7},(_,i)=>field('p18-ms'+(i+1),650,367+i*29.5,315,'Meine Sprache Zeile '+(i+1),'naFieldBlank'))}
   {check('g2',150,577,{'p18-dCafé':'Café','p18-dHafen':'Hafen','p18-dFlughafen':'Flughafen','p18-dKirche':'Kirche','p18-dSpielplatz':'Spielplatz'},'naCheckSm')}
   {kb(78,610,'KB 3')}
   {title('2',125,606,600,'Was ist das? Ergänzen Sie.','naOB naNw')}
@@ -221,7 +209,8 @@ export function NativeAB12P18_20({page}:{page:string}){
   {text(152,530,20,'a','naBold naF21')}
   {text(177,530,44,'Wie','naF21')}
   <div className="naText naF21" style={{left:221,top:530,width:62}}><span className="naHl"><Words text="gefällt"/></span></div>
-  {text(283,530,406,'/ gefallen dir der Stadtteil? – Toll, besonders','naF21')}
+  {text(283,530,240,'/ gefallen dir der Stadtteil?','naF21')}
+  {text(535,530,150,'– Toll, besonders','naF21')}
   {pick('6a2','gefällt',692,530,'gefällt (6a)')}
   {text(754,530,14,'/','naF21')}
   {pick('6a2','gefallen',768,530,'gefallen (6a)')}
@@ -231,7 +220,9 @@ export function NativeAB12P18_20({page}:{page:string}){
   {pick('6b1','Gehört',177,582,'Gehört (6b)')}
   {text(241,582,14,'/','naF21')}
   {pick('6b1','Gehören',256,582,'Gehören (6b)')}
-  {text(341,582,590,'die Schlüssel Dörte? – Nein, das sind meine. Aber der Schlüssel auf','naF21')}
+  {text(341,582,175,'die Schlüssel Dörte?','naF21')}
+  {text(524,582,200,'– Nein, das sind meine.','naF21')}
+  {text(734,582,200,'Aber der Schlüssel auf','naF21')}
   {text(176,608,90,'dem Tisch','naF21')}
   {pick('6b2','gehört',274,608,'gehört (6b)')}
   {text(337,608,14,'/','naF21')}
@@ -248,8 +239,8 @@ export function NativeAB12P18_20({page}:{page:string}){
   {text(175,688,430,'Clemens möchte Deutsch lernen und macht viele','naF21')}
   {text(611,688,84,'Übungen.','naF21')}
   {text(701,688,28,'Die','naF21')}
-  {text(735,688,82,'Übungen','naF21')}
-  {pick('6d','hilft',824,688,'hilft (6d)')}
+  {text(741,688,82,'Übungen','naF21')}
+  {pick('6d','hilft',828,688,'hilft (6d)')}
   {text(869,688,14,'/','naF21')}
   {pick('6d','helfen',884,688,'helfen (6d)')}
   {text(175,714,40,'ihm.','naF21')}
@@ -257,7 +248,8 @@ export function NativeAB12P18_20({page}:{page:string}){
   {pick('6e1','Schmeckt',174,742,'Schmeckt (6e)')}
   {text(264,742,14,'/','naF21')}
   {pick('6e1','Schmecken',277,742,'Schmecken (6e)')}
-  {text(388,742,360,'dir der Salat? – Nein, aber die Kartoffeln','naF21')}
+  {text(388,742,125,'dir der Salat?','naF21')}
+  {text(521,742,230,'– Nein, aber die Kartoffeln','naF21')}
   {pick('6e2','schmeckt',759,742,'schmeckt (6e)')}
   {text(846,742,14,'/','naF21')}
   {pick('6e2','schmecken',861,742,'schmecken (6e)')}
@@ -309,6 +301,113 @@ export function NativeAB12P18_20({page}:{page:string}){
   {check('g8',146,1270,{'p19-8b':'danken','p19-8c':'helfen','p19-8d':'gefallen','p19-8e':'Gehört','p19-8f':'Schmeckt'},'naCheckCol')}
   {text(830,1392,140,'neunzehn  |  19','naFooter naNw')}
   {art('modul',978,1386,93,36)}
+ </>}
+ {page==='20'&&<>
+  {text(124,86,240,'BASISTRAINING','naHead')}
+  <div className="naHeadRule" style={{left:371,top:112,width:602}}/>
+  {kb(78,182,'KB 5')}
+  <div className="naSide" style={{left:92,top:222,fontSize:7.5,letterSpacing:.5}}>STRUKTUREN</div>
+  {title('9',120,176,600,'Was passt? Kreuzen Sie an.','naOB naNw')}
+  {text(163,220,12,'a')}
+  {text(187,218,320,'Marlene meint, Giesing ist normal. Das gefällt','naF21')}
+  <div className="naDotPrint" style={{left:617,top:218}}/>
+  {text(644,218,34,'mir')}
+  <div className="naDotPrint" style={{left:699,top:218}}/>
+  {art('x9a',698,218,24,24)}
+  {text(725,218,32,'ihr')}
+  <div className="naDotPrint" style={{left:775,top:218}}/>
+  {text(801,218,38,'ihm')}
+  {text(859,218,80,'sehr gut.')}
+  {text(162,244,12,'b')}
+  {text(186,244,575,'Wir feiern nächste Woche eine große Party. Viele Freunde helfen','naF21')}
+  {dot('9b','uns',780,247,'9b uns')}
+  {text(807,244,40,'uns.')}
+  {dot('9b','euch',866,247,'9b euch')}
+  {text(893,244,50,'euch.')}
+  {dot('9b','ihnen',184,268,'9b ihnen')}
+  {text(223,268,60,'ihnen.')}
+  {text(162,293,12,'c')}
+  {text(187,294,345,'Ihr habt uns toll geholfen! Wir danken','naF21')}
+  {dot('9c','uns',556,296,'9c uns')}
+  {text(583,294,40,'uns.')}
+  {dot('9c','euch',646,296,'9c euch')}
+  {text(673,294,50,'euch.')}
+  {dot('9c','ihnen',748,296,'9c ihnen')}
+  {text(775,294,60,'ihnen.')}
+  {text(162,320,12,'d')}
+  {text(187,321,335,'Das sind Marks Schlüssel. Sie gehören','naF21')}
+  {dot('9d','dir',540,321,'9d dir')}
+  {text(567,319,36,'dir.')}
+  {dot('9d','ihm',631,321,'9d ihm')}
+  {text(658,320,40,'ihm.')}
+  {dot('9d','ihr',726,321,'9d ihr')}
+  {text(753,321,32,'ihr.')}
+  {text(162,346,12,'e')}
+  {text(187,346,355,'Du kannst die Lehrerin fragen. Sie hilft','naF21')}
+  {dot('9e','dir',558,348,'9e dir')}
+  {text(585,345,36,'dir.')}
+  {dot('9e','ihm',649,348,'9e ihm')}
+  {text(676,346,40,'ihm.')}
+  {dot('9e','euch',744,348,'9e euch')}
+  {text(771,348,50,'euch.')}
+  {check('g1',905,300,{'9b':'uns','9c':'euch','9d':'ihm','9e':'dir'},'naCheckCol')}
+  {kb(78,414,'KB 5')}
+  <div className="naSide" style={{left:92,top:455,fontSize:7.5,letterSpacing:.5}}>STRUKTUREN</div>
+  {title('10',120,408,600,'Ergänzen Sie.','naOB naNw')}
+  {text(162,452,12,'a')}
+  {text(186,450,310,'Hallo Maria und Pedro, wie geht es','naF21')}
+  {art('euch10a',494,450,48,22)}
+  {text(547,450,120,'– Danke, gut.','naF21')}
+  {text(161,475,12,'b')}
+  {text(186,475,530,'Maria, kommst du? – Ja, Pedro, ich komme gleich und helfe','naF21')}
+  {field('p20-10b',722,471,125,'10b')}
+  {text(855,475,8,'.')}
+  {text(162,502,12,'c')}
+  {text(185,502,490,'Wir haben Probleme mit den Hausaufgaben. Kannst du','naF21')}
+  {field('p20-10c',676,496,129,'10c')}
+  {text(810,502,160,'helfen? – Ja, klar.','naF21')}
+  {text(162,527,12,'d')}
+  {text(186,527,500,'Pedro, sind das deine Bücher? – Nein, sie gehören nicht','naF21')}
+  {field('p20-10d',683,523,128,'10d')}
+  {text(812,527,8,'.')}
+  {text(185,553,170,'Sie gehören Maria.','naF21')}
+  {text(162,580,12,'e')}
+  {text(185,579,600,'Was machst du? – Ich schreibe eine Postkarte an Sandra und danke','naF21')}
+  {field('p20-10e',785,575,122,'10e')}
+  {text(185,604,170,'für die Einladung.','naF21')}
+  {text(162,630,12,'f')}
+  {text(186,630,660,'Hast du am Sonntag Zeit? – Nein, Peter und Anja ziehen um und ich helfe','naF21')}
+  {field('p20-10f',184,649,129,'10f')}
+  {text(322,664,8,'.')}
+  {check('g2',950,600,{'p20-10b':'dir','p20-10c':'uns','p20-10d':'mir','p20-10e':'ihr','p20-10f':'ihnen'},'naCheckCol')}
+  {kb(78,724,'KB 7')}
+  <div className="naSide" style={{left:92,top:763,fontSize:7.5,letterSpacing:.5}}>LESEN</div>
+  {title('11',120,718,600,'Welche Anzeige passt? Lesen Sie und notieren Sie dann.','naOB naNw naT21')}
+  {art('ad1',128,746,278,248)}
+  {art('ad2',446,770,254,145)}
+  {art('ad3',123,1008,329,137)}
+  {art('ad4',458,946,367,89)}
+  {art('ad5',455,1050,315,100)}
+  {art('ad6',728,668,284,294)}
+  <div style={{position:'absolute',left:159,top:1188,width:838,height:27,background:'#f5efcd'}}/>
+  <div className="naTFrame" style={{left:158,top:1187,width:841,height:150}}/>
+  <div className="naTCol" style={{left:866,top:1187,height:150}}/>
+  {text(874,1192,70,'Anzeige','naTh')}
+  {text(167,1221,10,'a')}
+  {text(186,1219,660,'Ihre Tochter ist 5 Jahre alt und liebt Bücher.','naS19')}
+  {text(166,1251,10,'b')}
+  {text(187,1249,660,'Sie sind neu in der Stadt und möchten Menschen treffen. Sie machen gern Sport.','naS19')}
+  {text(166,1281,10,'c')}
+  {text(187,1279,300,'Sie mögen Musik.','naS19')}
+  {text(166,1311,10,'d')}
+  {text(187,1309,300,'Sie suchen einen Deutschkurs.','naS19')}
+  {field('p20-11a',872,1232,105,'Anzeige a','naFieldBlank')}
+  {field('p20-11b',872,1259,105,'Anzeige b','naFieldBlank')}
+  {field('p20-11c',872,1289,105,'Anzeige c','naFieldBlank')}
+  {field('p20-11d',872,1318,105,'Anzeige d','naFieldBlank')}
+  {check('g3',158,1350,{'p20-11a':'4','p20-11b':'1','p20-11c':'6','p20-11d':'3'})}
+  {art('modul-tab',0,1384,86,30)}
+  {text(100,1392,200,'20  |  zwanzig','naFooter naNw')}
  </>}
  </div><audio ref={player} className="naPlayer"/></div>;
 }

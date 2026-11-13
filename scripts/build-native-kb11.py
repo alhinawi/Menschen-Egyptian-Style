@@ -6,7 +6,7 @@ import numpy as np
 from PIL import Image,ImageFont
 from scipy import ndimage as ndi
 ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PAGES=list(range(9,13))+list(range(13,41))+list(range(57,97))
+PAGES=list(range(9,13))+list(range(13,41))+[54]+list(range(57,97))
 FONT='/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf'
 FONTB='/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf'
 fr=ImageFont.truetype('/usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf',100);fb=ImageFont.truetype(FONTB,100)
@@ -200,7 +200,9 @@ def apply_overrides(r,p):
     for g,c in o.get('checks',{}).items():r['checks'][g]=c
     for f in o.get('addfields',[]):r['fields'].append(f)
     for f in r['fields']:
-        if f['id'] in o.get('fieldadj',{}):f.update(o['fieldadj'][f['id']])
+        if f['id'] in o.get('fieldadj',{}):
+            f.update(o['fieldadj'][f['id']])
+            for _k in [k for k,v in f.items() if v is None]:del f[_k]
     if o.get('compact'):r['compact']=o['compact']
     for m in o.get('split',[]):
         for b in list(r['blocks']):
@@ -219,6 +221,7 @@ def apply_overrides(r,p):
                 k=m['at'];end=b['x']+b['w'];nb=json.loads(json.dumps(b))
                 b['ws']=b['ws'][:k];b['w']=m['w1'];nb['ws']=nb['ws'][k:];nb['x']=m['x2'];nb['w']=end-m['x2']
                 r['blocks'].append(nb);break
+    r['blocks']=[b for b in r['blocks'] if b['ws']]
     for m in o.get('add',[]):
         m.setdefault('b',0);m.setdefault('sa',0);m.setdefault('f',14)
         m['ws']=[w if isinstance(w,dict) else {'t':w} for w in m['ws']]
