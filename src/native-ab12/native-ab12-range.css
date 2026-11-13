@@ -24,3 +24,5 @@
 .naRCanvas .naRCell.L{text-align:left;padding-left:7px!important}
 .naRCanvas .naCheck button{white-space:nowrap}
 .naRCanvas .naRSol{text-align:center;text-transform:uppercase;font:22px 'Times New Roman',serif!important;color:#224777!important;padding:0!important}
+.naRCanvas .naRSansR{font-family:FiraSans,'Trebuchet MS',sans-serif;font-weight:400}
+.naRCanvas .naRSmall{font:15px FiraSans,sans-serif!important;text-align:center;color:#224777!important}
