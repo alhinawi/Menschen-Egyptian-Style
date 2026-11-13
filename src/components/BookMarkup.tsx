@@ -7,6 +7,7 @@ import {TaskControl, TaskFeedback, TaskMode} from '../exercises/CustomTasks';
 import {createElement, memo, useLayoutEffect} from 'react';
 import type {ReactNode} from 'react';
 import {CoverSocials} from './CoverSocials';
+import {navigateHref} from '../navigate';
 import {SelectionControls} from '../meanings/SelectionControls';
 import {PersistentField} from '../persistence/PersistentFields';
 import {QuizForm, QuizFeedback, AnswerField} from '../exercises/QuizState';
@@ -53,7 +54,7 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
     if (k.startsWith('on')) {
       if (k === 'onclick' && v === 'history.back()') props.onClick = () => history.back();
       else if (k === 'onclick' && v === "window.open(this.src,'_blank')") props.onClick = (e: React.MouseEvent<HTMLImageElement>) => window.open(e.currentTarget.src, '_blank', 'noopener');
-      else if (k === 'onchange' && v === 'location.href=this.value') props.onChange = (e: React.ChangeEvent<HTMLSelectElement>) => {location.href = e.currentTarget.value;};
+      else if (k === 'onchange' && v === 'location.href=this.value') props.onChange = (e: React.ChangeEvent<HTMLSelectElement>) => {void navigateHref(e.currentTarget.value);};
       continue;
     }
     if (k === 'selected') continue;
