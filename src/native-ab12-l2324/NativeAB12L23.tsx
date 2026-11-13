@@ -147,61 +147,62 @@ export function NativeAB12L23({page}:{page:string}){
   <div className="naText naFooter" style={{left:420,top:1046,width:310,textAlign:'right'}}>fünfundachtzig&nbsp;&nbsp;|&nbsp;&nbsp;85</div>
  </>}
  {page==='86'&&<>
-  <div className="naBasis" style={{left:79,top:49}}>BASISTRAINING</div>
-  <div className="naRuleP" style={{left:287,top:88,width:441}}/>
+  <div className="naBasisL" style={{left:90,top:51}}>BASISTRAINING</div>
+  <div className="naRuleP" style={{left:277,top:72,width:451}}/>
   {kb(59,136,'KB 5')}
   {title('9',88,124,620,'Ordnen Sie zu.','naRB naNw')}
-  <div className="naSide naSideB" style={{left:64,top:190}}>STRUKTUREN</div>
+  <div className="naSide naSideB naSideC" style={{left:60,top:155}}>STRUKTUREN</div>
   <div className="naBank" style={{left:120,top:150,width:600,height:24}}/>
-  <div className="naText naS14 naNw naBankInk" style={{left:124,top:157,width:600}}><Words text="er hat gestern lange gefeiert | es schneit zu viel | ihr Fahrrad ist kaputt | sie fahren morgen in"/></div>
-  <div className="naText naS14 naNw" style={{left:124,top:178,width:200}}><span className="naStrikeB"><Words text="den Urlaub"/></span></div>
+  <div className="naText naNw naBankInk" style={{left:124,top:152,width:600}}><Words text="er hat gestern lange gefeiert | es schneit zu viel | ihr Fahrrad ist kaputt | "/><span className="naStrikeB"><Words text="sie fahren morgen in"/></span></div>
+  <div className="naText naNw naBankInk" style={{left:124,top:173,width:200}}><span className="naStrikeB"><Words text="den Urlaub"/></span></div>
   {art('imgA',119,206,156,78)}
   {art('imgB',284,206,160,78)}
   {art('imgC',456,206,153,78)}
   {art('imgD',625,206,147,78)}
-  {text(119,331,16,'A','naS14')}{text(140,331,310,'Luca und Alina suchen den Reiseführer,','naS14 naNw')}
+  {text(119,327,16,'A','naNw')}{text(140,327,310,'Luca und Alina suchen den Reiseführer,','naNw')}
   {art('ex9a',138,344,230,20)}
-  {text(119,380,16,'B','naS14')}{text(140,380,240,'Herr Brunner muss noch','naS14 naNw')}
-  {text(140,398,300,'ein paar Stunden in München bleiben,','naS14 naNw')}
-  {text(139,415,33,'denn','naS14 naNw')}{field('86-9-b',175,411,240,'9 B')}{text(419,415,10,'.','naS14')}
-  {text(455,331,14,'C','naS14')}{text(469,331,170,'Urs ist heute sehr müde,','naS14 naNw')}
-  {text(468,349,33,'denn','naS14 naNw')}{field('86-9-c',500,343,220,'9 C')}{text(724,349,10,'.','naS14')}
-  {text(455,398,14,'D','naS14')}{text(468,398,260,'Sandra kommt heute nicht pünktlich,','naS14 naNw')}
-  {text(468,418,33,'denn','naS14 naNw')}{field('86-9-d',500,411,227,'9 D')}{text(731,418,10,'.','naS14')}
+  {text(119,375,16,'B','naNw')}{text(140,375,240,'Herr Brunner muss noch','naNw')}
+  {text(140,393,300,'ein paar Stunden in München bleiben,','naNw')}
+  {text(139,414,33,'denn','naNw')}{field('86-9-b',175,411,240,'9 B')}{text(419,414,10,'.')}
+  {text(451,326,14,'C','naNw')}{text(469,326,170,'Urs ist heute sehr müde,','naNw')}
+  {text(468,346,33,'denn','naNw')}{field('86-9-c',500,343,220,'9 C')}{text(724,346,10,'.')}
+  {text(451,393,14,'D','naNw')}{text(468,393,260,'Sandra kommt heute nicht pünktlich,','naNw')}
+  {text(468,415,33,'denn','naNw')}{field('86-9-d',500,411,227,'9 D')}{text(731,415,10,'.')}
   {check('86-9',640,442,{'86-9-b':'es schneit zu viel','86-9-c':'er hat gestern lange gefeiert','86-9-d':'ihr Fahrrad ist kaputt'})}
-  {kb(59,478,'KB 5')}
+  {kb(59,470,'KB 5')}
   <div className="naTitle naRB naNw" style={{left:88,top:466,width:640}}><b>10</b><Words text="Ergänzen Sie die Sätze aus "/><span className="naBlue">9</span><Words text="."/></div>
-  <div className="naSide naSideB" style={{left:64,top:520}}>STRUKTUREN ENTDECKEN</div>
-  <div className="naTblBox" style={{left:130,top:488,width:605,height:112}}/>
+  <div className="naSide naSideB naSideC" style={{left:48,top:492}}>STRUKTUREN</div>
+  <div className="naSide naSideB naSideC" style={{left:62,top:492}}>ENTDECKEN</div>
+  <div className="naTblBox" style={{left:130,top:488,width:605,height:111}}/>
   <div className="naTblHead" style={{left:131,top:489,width:603,height:24}}/>
   <div className="naTblH" style={{left:130,top:513,width:605}}/>
   <div className="naTblH" style={{left:130,top:537,width:605}}/>
-  <div className="naTblH" style={{left:130,top:558,width:605}}/>
-  <div className="naTblH" style={{left:130,top:579,width:605}}/>
-  <div className="naTblV" style={{left:172,top:513,height:87}}/>
-  <div className="naTblV" style={{left:255,top:488,height:112}}/>
-  <div className="naTblV" style={{left:345,top:488,height:112}}/>
-  <div className="naTblV" style={{left:433,top:488,height:112}}/>
+  <div className="naTblH" style={{left:130,top:557,width:605}}/>
+  <div className="naTblH" style={{left:130,top:578,width:605}}/>
+  <div className="naTblV" style={{left:172,top:489,height:48}}/>
+  <div className="naTblV" style={{left:255,top:488,height:111}}/>
+  <div className="naTblV" style={{left:345,top:488,height:111}}/>
+  <div className="naTblV" style={{left:433,top:488,height:111}}/>
   <div className="naTblCell naTblCellS" style={{left:174,top:496}}>Position 0</div>
   <div className="naTblCell naTblCellS" style={{left:262,top:496}}>Position 1</div>
   <div className="naTblCell naTblCellS" style={{left:351,top:496}}>Position 2</div>
-  {text(140,521,30,'…','naS14')}
-  {art('ex10ex',170,518,540,34)}
+  {text(140,520,30,'…')}
+  {art('ex10ex',170,518,540,38)}
   {field('86-10-r1c0',172,537,83,'10 Zeile 1 Position 0')}{field('86-10-r1c1',260,537,85,'10 Zeile 1 Position 1')}{field('86-10-r1c2',350,537,83,'10 Zeile 1 Position 2')}{field('86-10-r1c3',438,537,297,'10 Zeile 1 Rest')}
   {field('86-10-r2c0',172,558,83,'10 Zeile 2 Position 0')}{field('86-10-r2c1',260,558,85,'10 Zeile 2 Position 1')}{field('86-10-r2c2',350,558,83,'10 Zeile 2 Position 2')}{field('86-10-r2c3',438,558,297,'10 Zeile 2 Rest')}
   {field('86-10-r3c0',172,579,83,'10 Zeile 3 Position 0')}{field('86-10-r3c1',260,579,85,'10 Zeile 3 Position 1')}{field('86-10-r3c2',350,579,83,'10 Zeile 3 Position 2')}{field('86-10-r3c3',438,579,297,'10 Zeile 3 Rest')}
   {check('86-10',620,608,{'86-10-r1c0':'denn','86-10-r1c1':'es','86-10-r1c2':'schneit','86-10-r1c3':'zu viel','86-10-r2c0':'denn','86-10-r2c1':'er','86-10-r2c2':'hat','86-10-r2c3':'gestern lange gefeiert','86-10-r3c0':'denn','86-10-r3c1':'ihr Fahrrad','86-10-r3c2':'ist','86-10-r3c3':'kaputt'})}
-  {kb(59,642,'KB 5')}
+  {kb(59,640,'KB 5')}
   {title('11',88,630,640,'Schreiben Sie die Sätze mit denn.','naRB naNw')}
-  <div className="naSide naSideB" style={{left:64,top:730}}>STRUKTUREN</div>
-  {text(121,660,16,'a','naS14')}{text(140,660,470,'Ich kann leider nicht kommen. Ich habe einen Termin beim Zahnarzt.','naS14 naNw')}
+  <div className="naSide naSideB naSideC" style={{left:60,top:662}}>STRUKTUREN</div>
+  {text(121,657,16,'a','naNw')}{text(140,657,480,'Ich kann leider nicht kommen. Ich habe einen Termin beim Zahnarzt.','naNw')}
   {art('ex11a',130,672,480,22)}
-  {text(121,700,16,'b','naS14')}{text(140,700,560,'In dem Haus kann man nicht mehr wohnen. Nach dem Sturm war das Dach kaputt.','naS14 naNw')}
-  {art('ex11b',128,714,87,18)}{rule(137,733,591)}{text(728,718,10,'.','naS14')}
-  {text(121,738,16,'c','naS14')}{text(139,738,480,'Ella kommt heute nicht mit in die Disco. Sie hat morgen eine Prüfung.','naS14 naNw')}
-  {field('86-11-c',130,751,598,'11 c')}{text(729,755,10,'.','naS14')}
-  {text(121,778,16,'d','naS14')}{text(139,778,560,'Mit dem Urlaub hatten wir wirklich Glück. Das Wetter war ein Traum.','naS14 naNw')}
-  {field('86-11-d',130,790,598,'11 d')}{text(729,794,10,'.','naS14')}
+  {text(121,697,16,'b','naNw')}{text(140,697,560,'In dem Haus kann man nicht mehr wohnen. Nach dem Sturm war das Dach kaputt.','naNw')}
+  {art('ex11b',128,714,87,18)}{rule(137,733,591)}{text(728,718,10,'.')}
+  {text(121,735,16,'c','naNw')}{text(139,735,480,'Ella kommt heute nicht mit in die Disco. Sie hat morgen eine Prüfung.','naNw')}
+  {field('86-11-c',130,751,598,'11 c')}{text(729,753,10,'.')}
+  {text(121,775,16,'d','naNw')}{text(139,775,560,'Mit dem Urlaub hatten wir wirklich Glück. Das Wetter war ein Traum.','naNw')}
+  {field('86-11-d',130,790,598,'11 d')}{text(729,793,10,'.')}
   {check('86-11',620,816,{'86-11-c':'Ella kommt heute nicht in die Disco, denn sie hat morgen eine Prüfung|Ella kommt heute nicht mit in die Disco, denn sie hat morgen eine Prüfung','86-11-d':'Mit dem Urlaub hatten wir wirklich Glück, denn das Wetter war ein Traum'})}
   {art('modul-tab',8,1049,60,16)}
   {text(76,1050,200,'86  |  sechsundachtzig','naFooter')}
