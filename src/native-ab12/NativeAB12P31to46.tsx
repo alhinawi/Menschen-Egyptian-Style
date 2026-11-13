@@ -1705,7 +1705,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(191,395,596,'Was ist beim Hören wichtig? Lesen Sie die Fragen genau und markieren Sie','naNw')}
   {text(190,416,637,'wichtige Wörter. Lesen Sie dann die Antworten. Alle Antworten können im Text','naNw')}
   {text(189,438,391,'vorkommen, aber achten Sie genau auf die Frage.','naNw')}
-  {title('2',115,503,657,'Was ist richtig? Kreuzen Sie an. Sie hören jeden Text zweimal.','naGB naTls60')}
+  {title('2',115,503,770,'Was ist richtig? Kreuzen Sie an. Sie hören jeden Text zweimal.','naGB naTls60 naNw')}
   {text(157,548,10,'a','naLet45 naNw')}
   {text(180,544,300,'Wann kann Frau Huber vielleicht','naNw')}
   {text(548,554,7,'c','naLet45 naNw')}
