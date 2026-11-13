@@ -103,7 +103,13 @@
 .naCanvas .naFix91{position:absolute;font:14px DroidSerif,Georgia,serif;color:#222}
 .naCanvas .naTblHL91{opacity:.45}
 [data-native-ab12="91"] .naTblCell{font-family:DroidSerif,Georgia,serif}
-[data-native-ab12="91"] .naTblCell.naTblCellS{font-size:12px}
+[data-native-ab12="91"] .naTblCell.naTblCellS{font-size:13px!important}
 .naCanvas .naText.naIt91{font-style:italic}
 [data-native-ab12="91"] .naField.naCirc91{border:1px solid #c9cdc0!important}
 [data-native-ab12="91"] .naDot.naDotR91{border-width:1px!important;border-color:#d3d6c8!important}
+
+.naCanvas .naText.naLet4{font-size:19px!important}
+.naCanvas .naText.naLet5{font-size:15px!important}
+.naCanvas .naText.naLet7{font-size:15px!important}
+.naCanvas .naText.naLet6{font-family:FiraSans,'Trebuchet MS',sans-serif;font-weight:700;color:#5d78b3;font-size:13px;font-style:normal;letter-spacing:0}
+[data-native-ab12="91"] .naBank88{font-size:12.4px}
