@@ -1417,6 +1417,294 @@
    "y": 1359,
    "w": 250,
    "h": 13
+  },
+  {
+   "id": "confidence-1-0",
+   "group": "confidence-1",
+   "kind": "radio",
+   "name": "confidence-1",
+   "value": "0",
+   "label": "Selbsteinschätzung 1: kann ich",
+   "x": 904,
+   "y": 265,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "confidence-1-1",
+   "group": "confidence-1",
+   "kind": "radio",
+   "name": "confidence-1",
+   "value": "1",
+   "label": "Selbsteinschätzung 1: fast",
+   "x": 942,
+   "y": 265,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "confidence-1-2",
+   "group": "confidence-1",
+   "kind": "radio",
+   "name": "confidence-1",
+   "value": "2",
+   "label": "Selbsteinschätzung 1: noch nicht",
+   "x": 980,
+   "y": 265,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "confidence-2-0",
+   "group": "confidence-2",
+   "kind": "radio",
+   "name": "confidence-2",
+   "value": "0",
+   "label": "Selbsteinschätzung 2: kann ich",
+   "x": 904,
+   "y": 309,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "confidence-2-1",
+   "group": "confidence-2",
+   "kind": "radio",
+   "name": "confidence-2",
+   "value": "1",
+   "label": "Selbsteinschätzung 2: fast",
+   "x": 942,
+   "y": 309,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "confidence-2-2",
+   "group": "confidence-2",
+   "kind": "radio",
+   "name": "confidence-2",
+   "value": "2",
+   "label": "Selbsteinschätzung 2: noch nicht",
+   "x": 980,
+   "y": 309,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "confidence-3-0",
+   "group": "confidence-3",
+   "kind": "radio",
+   "name": "confidence-3",
+   "value": "0",
+   "label": "Selbsteinschätzung 3: kann ich",
+   "x": 904,
+   "y": 399,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "confidence-3-1",
+   "group": "confidence-3",
+   "kind": "radio",
+   "name": "confidence-3",
+   "value": "1",
+   "label": "Selbsteinschätzung 3: fast",
+   "x": 942,
+   "y": 399,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "confidence-3-2",
+   "group": "confidence-3",
+   "kind": "radio",
+   "name": "confidence-3",
+   "value": "2",
+   "label": "Selbsteinschätzung 3: noch nicht",
+   "x": 980,
+   "y": 399,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "confidence-4-0",
+   "group": "confidence-4",
+   "kind": "radio",
+   "name": "confidence-4",
+   "value": "0",
+   "label": "Selbsteinschätzung 4: kann ich",
+   "x": 905,
+   "y": 507,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "confidence-4-1",
+   "group": "confidence-4",
+   "kind": "radio",
+   "name": "confidence-4",
+   "value": "1",
+   "label": "Selbsteinschätzung 4: fast",
+   "x": 943,
+   "y": 507,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "confidence-4-2",
+   "group": "confidence-4",
+   "kind": "radio",
+   "name": "confidence-4",
+   "value": "2",
+   "label": "Selbsteinschätzung 4: noch nicht",
+   "x": 981,
+   "y": 507,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "confidence-5-0",
+   "group": "confidence-5",
+   "kind": "radio",
+   "name": "confidence-5",
+   "value": "0",
+   "label": "Selbsteinschätzung 5: kann ich",
+   "x": 903,
+   "y": 602,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "confidence-5-1",
+   "group": "confidence-5",
+   "kind": "radio",
+   "name": "confidence-5",
+   "value": "1",
+   "label": "Selbsteinschätzung 5: fast",
+   "x": 941,
+   "y": 602,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "confidence-5-2",
+   "group": "confidence-5",
+   "kind": "radio",
+   "name": "confidence-5",
+   "value": "2",
+   "label": "Selbsteinschätzung 5: noch nicht",
+   "x": 979,
+   "y": 602,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "confidence-6-0",
+   "group": "confidence-6",
+   "kind": "radio",
+   "name": "confidence-6",
+   "value": "0",
+   "label": "Selbsteinschätzung 6: kann ich",
+   "x": 903,
+   "y": 672,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "confidence-6-1",
+   "group": "confidence-6",
+   "kind": "radio",
+   "name": "confidence-6",
+   "value": "1",
+   "label": "Selbsteinschätzung 6: fast",
+   "x": 941,
+   "y": 672,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "confidence-6-2",
+   "group": "confidence-6",
+   "kind": "radio",
+   "name": "confidence-6",
+   "value": "2",
+   "label": "Selbsteinschätzung 6: noch nicht",
+   "x": 979,
+   "y": 672,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "confidence-7-0",
+   "group": "confidence-7",
+   "kind": "radio",
+   "name": "confidence-7",
+   "value": "0",
+   "label": "Selbsteinschätzung 7: kann ich",
+   "x": 903,
+   "y": 744,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "confidence-7-1",
+   "group": "confidence-7",
+   "kind": "radio",
+   "name": "confidence-7",
+   "value": "1",
+   "label": "Selbsteinschätzung 7: fast",
+   "x": 941,
+   "y": 744,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "confidence-7-2",
+   "group": "confidence-7",
+   "kind": "radio",
+   "name": "confidence-7",
+   "value": "2",
+   "label": "Selbsteinschätzung 7: noch nicht",
+   "x": 979,
+   "y": 743,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "confidence-8-0",
+   "group": "confidence-8",
+   "kind": "radio",
+   "name": "confidence-8",
+   "value": "0",
+   "label": "Selbsteinschätzung 8: kann ich",
+   "x": 902,
+   "y": 838,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "confidence-8-1",
+   "group": "confidence-8",
+   "kind": "radio",
+   "name": "confidence-8",
+   "value": "1",
+   "label": "Selbsteinschätzung 8: fast",
+   "x": 940,
+   "y": 838,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "id": "confidence-8-2",
+   "group": "confidence-8",
+   "kind": "radio",
+   "name": "confidence-8",
+   "value": "2",
+   "label": "Selbsteinschätzung 8: noch nicht",
+   "x": 978,
+   "y": 838,
+   "w": 16,
+   "h": 16
   }
  ],
  "audio": [],
@@ -1444,6 +1732,38 @@
   {
    "id": "rb-l4-1",
    "label": "Rückblick Lektion 4, Ü1: Ergänzen Sie die Sätze (KB S. 25)"
+  },
+  {
+   "id": "confidence-1",
+   "label": "Selbsteinschätzung 1"
+  },
+  {
+   "id": "confidence-2",
+   "label": "Selbsteinschätzung 2"
+  },
+  {
+   "id": "confidence-3",
+   "label": "Selbsteinschätzung 3"
+  },
+  {
+   "id": "confidence-4",
+   "label": "Selbsteinschätzung 4"
+  },
+  {
+   "id": "confidence-5",
+   "label": "Selbsteinschätzung 5"
+  },
+  {
+   "id": "confidence-6",
+   "label": "Selbsteinschätzung 6"
+  },
+  {
+   "id": "confidence-7",
+   "label": "Selbsteinschätzung 7"
+  },
+  {
+   "id": "confidence-8",
+   "label": "Selbsteinschätzung 8"
   }
  ],
  "review": {
