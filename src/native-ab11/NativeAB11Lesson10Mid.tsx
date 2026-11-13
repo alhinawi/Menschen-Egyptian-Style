@@ -194,7 +194,7 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {txt(357,1174,200,'www.hueber.de/menschen/lernen','mScoreLink')}
  </>}
  {page==='84'&&<>
- <div className="mBannerPink" style={{left:338,top:96,width:464,height:64}}/>
+ <div className="mBannerPink" style={{left:338,top:96,width:472,height:64}}/>
  {art('banner',93,94,255,68)}
  {txt(365,115,440,'Was hast du heute gemacht?','mBannerTitle')}
  {side('STRUKTUREN',251)}{side('WÖRTER',647)}{side('STRUKTUREN',780)}{side('STRUKTUREN',964)}
@@ -220,7 +220,7 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {txt(506,729,120,'NELREN','mAnagram')}{f('u3a-7',708,721,185,'3a NELREN')}
  {check('u3a',640,752)}
  {txt(149,777,450,'b  Ergänzen Sie die Verben aus a in der richtigen Form.')}
- <div className="mText" style={{left:151,top:809,width:320}}><Words s="1  "/><span className="mExample">Siehst</span><Words s=" du am Abend gern "/><span className="mExample">fern</span><Words s="?"/></div>
+ <div className="mText" style={{left:151,top:809,width:320}}><Words s="1  "/><span className="mExample mExU">Siehst</span><Words s=" du am Abend gern "/><span className="mExample mExU">fern</span><Words s="?"/></div>
  {txt(151,825,16,'2')}{f('u3b-2a',167,821,94,'3b 2 Räumst')}{txt(264,827,200,'du gern deine Wohnung')}{f('u3b-2b',167,844,51,'3b 2 auf')}{txt(224,847,20,'?')}
  {txt(153,867,16,'3')}{f('u3b-3',171,863,84,'3b 3 Schläfst')}{txt(260,867,200,'du am Wochenende lange?')}
  {txt(498,795,16,'4')}{f('u3b-4',520,793,91,'3b 4 Liest')}{txt(615,797,180,'du gern Zeitung?')}
@@ -229,18 +229,18 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {txt(498,858,16,'7')}{f('u3b-7',520,854,91,'3b 7 Machst')}{txt(615,860,190,'du gern Hausaufgaben?')}
  {check('u3b',640,885)}
  {title('4',924,'Ergänzen Sie haben in der richtigen Form.','KB 5',125)}
- {markS(155,960)}<div className="mText" style={{left:173,top:958,width:380}}><span className="mExample">Haben</span><Words s=" (a) wir jetzt alles für die Party?"/></div>
- {markT(155,979)}{txt(173,977,200,'Ich denke ja.')}
- {markS(155,998)}{f('u4-b',169,992,76,'4 b Hast')}{txt(252,996,220,'(b) du auch Brot gekauft?')}
- {markT(155,1023)}{txt(173,1021,80,'Ja klar. Das')}{f('u4-c',258,1017,62,'4 c habe')}{txt(326,1021,330,'(c) ich doch heute Morgen schon gekauft.')}
- {markS(155,1042)}{txt(173,1040,270,'Und wo ist der Geburtstagskuchen?')}
- {markT(155,1065)}{txt(173,1063,90,'Den Kuchen')}{f('u4-d',265,1057,62,'4 d hat')}{txt(333,1063,470,'(d) Julia gebacken. Sie bringt ihn heute Abend zur Party mit.')}
- {markS(155,1086)}{txt(173,1084,130,'Sehr gut. Und was')}{f('u4-e',309,1078,105,'4 e haben')}{txt(421,1084,160,'(e) wir zu trinken?')}
- {markT(155,1107)}{txt(173,1105,240,'Wein, Mineralwasser und Saft.')}
- {markS(155,1128)}{txt(173,1126,105,'Super! Und wo')}{f('u4-f',285,1120,94,'4 f habt')}{txt(385,1126,240,'(f) ihr das Geschenk für Julia?')}
- {markT(155,1150)}{txt(173,1148,540,'Das ist noch in Claudias Auto. Sie kommt um sechs Uhr und bringt es mit.')}
- {markS(155,1171)}{txt(173,1169,115,'Gut, ich glaube, jetzt')}{f('u4-g',291,1163,145,'4 g haben')}{txt(441,1169,170,'(g) wir wirklich alles.')}
- {check('u4',700,1184)}
+ {markS(155,960)}<div className="mText mDlg" style={{left:173,top:958,width:380}}><span className="mExample">Haben</span><Words s=" (a) wir jetzt alles für die Party?"/></div>
+ {markT(155,979)}{txt(173,977,200,'Ich denke ja.','mDlg')}
+ {markS(155,998)}{f('u4-b',169,992,76,'4 b Hast')}{txt(252,996,220,'(b) du auch Brot gekauft?','mDlg')}
+ {markT(155,1023)}{txt(173,1021,80,'Ja klar. Das','mDlg')}{f('u4-c',265,1017,55,'4 c habe')}{txt(326,1021,330,'(c) ich doch heute Morgen schon gekauft.','mDlg')}
+ {markS(155,1042)}{txt(173,1040,270,'Und wo ist der Geburtstagskuchen?','mDlg')}
+ {markT(155,1065)}{txt(173,1063,90,'Den Kuchen','mDlg')}{f('u4-d',265,1057,72,'4 d hat')}{txt(346,1063,470,'(d) Julia gebacken. Sie bringt ihn heute Abend zur Party mit.','mDlg')}
+ {markS(155,1086)}{txt(173,1084,130,'Sehr gut. Und was','mDlg')}{f('u4-e',316,1078,97,'4 e haben')}{txt(421,1084,160,'(e) wir zu trinken?','mDlg')}
+ {markT(155,1107)}{txt(173,1105,240,'Wein, Mineralwasser und Saft.','mDlg')}
+ {markS(155,1128)}{txt(173,1126,105,'Super! Und wo','mDlg')}{f('u4-f',290,1120,89,'4 f habt')}{txt(385,1126,240,'(f) ihr das Geschenk für Julia?','mDlg')}
+ {markT(155,1150)}{txt(173,1148,540,'Das ist noch in Claudias Auto. Sie kommt um sechs Uhr und bringt es mit.','mDlg')}
+ {markS(155,1171)}{txt(173,1169,115,'Gut, ich glaube, jetzt','mDlg')}{f('u4-g',336,1163,61,'4 g haben')}{txt(408,1169,170,'(g) wir wirklich alles.','mDlg')}
+ {check('u4',620,1162)}
  </>}
  {page==='83'&&<>
  {head('LERNWORTSCHATZ',362,153,125,133)}
@@ -256,6 +256,6 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {open('u2-notes',170,1016,600,156,'2 Eigene Wörter')}
  {art('photos',794,168,107,1010)}
  </>}
- {Number(page)%2?<>{<div className="mText mFooter" style={{left:708,top:({79:1207,81:1191,83:1203,85:1202,87:1209} as Record<string,number>)[page]||1208,width:180}}><Words s={footerW[page]}/><b className="mFooterB">{'  |  '+page}</b></div>}{txt(869,(({79:1207,81:1191,83:1203,85:1202,87:1209} as Record<string,number>)[page]||1208)-13,60,'Modul 4','mFooter mFooterTab mFooterTabOdd')}</>:<>{txt(48,({80:1209,82:1206,84:1210,86:1204} as Record<string,number>)[page]||1208,60,'Modul 4','mFooter mFooterTab')}{txt(112,({80:1209,82:1206,84:1210,86:1204} as Record<string,number>)[page]||1208,170,page+' | '+footerW[page],'mFooter')}</>}
+ {Number(page)%2?<>{<div className="mText mFooter" style={{left:708,top:({79:1207,81:1191,83:1203,85:1202,87:1209} as Record<string,number>)[page]||1208,width:180}}><Words s={footerW[page]}/><b className="mFooterB">{'  |  '+page}</b></div>}{txt(869,(({79:1207,81:1191,83:1203,85:1202,87:1209} as Record<string,number>)[page]||1208)-13,60,'Modul 4','mFooter mFooterTab mFooterTabOdd')}</>:<>{txt(30,({80:1209,82:1206,84:1212,86:1204} as Record<string,number>)[page]||1208,60,'Modul 4','mFooter mFooterTab')}<div className="mText mFooter" style={{left:103,top:({80:1209,82:1206,84:1212,86:1204} as Record<string,number>)[page]||1208,width:180}}><b className="mFooterB">{page+'  |  '}</b><Words s={footerW[page]}/></div></>}
  </div><audio className="nabPlayer" ref={audio} controls hidden={!track} aria-label="Originalaudio Arbeitsbuch"/></div>;
 }
