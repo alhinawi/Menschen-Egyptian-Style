@@ -36,6 +36,7 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  return <div className={"nativeAB11 nativeAB11Module1 nativeAB11Lessons45 nativeAB11Lesson10Mid"+(Number(page)>=84?' nativeAB11L11':'')} ref={host} data-native-ab11-page={page}><div className="nabCanvas mCanvas" style={{transform:`translate(-50%,-50%) scale(${scale})`}}>
  <div className="mPageInner" style={{position:'absolute',left:87,top:0,width:901,height:1275}}>
  {page==='79'&&<>
+ {art('tab',863,91,38,66)}
  {head('BASISTRAINING',345,154)}
  {side('STRUKTUREN',235)}{side('STRUKTUREN',563)}{side('STRUKTUREN',864)}
  {title('4',202,'Trennbar oder nicht? Ergänzen Sie, wo nötig.','KB 5')}
@@ -112,6 +113,7 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {rule('u10',166,1162,()=>v['u10-a']==='1'&&v['u10-b']==='2'&&v['u10-c']==='1'&&v['u10-d']==='2'&&v['u10-e']==='2')}
  </>}
  {page==='81'&&<>
+ {art('tab',860,75,41,66)}
  {head('TRAINING:  HÖREN',536,140,140,122)}
  {title('1',185,'Wo sind die Personen? Hören Sie und kreuzen Sie an.','',147)}{listen('44-46',93,190)}
  {txt(275,222,200,'Foto A     Foto B     Foto C')}
@@ -249,14 +251,15 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {head('LERNWORTSCHATZ',362,153,125,133)}
  {title('1',196,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','',132)}
  {txt(158,229,320,'Verkehr und Reisen','mVocabHead')}{txt(480,229,290,'Weitere wichtige Wörter','mVocabHead')}
- {([['l1',253,'Bahnhof der, -e',266],['l3',319,'Bus der, -se',330],['l4',339,'Halt der, -e/-s',351],['l5',360,'Haltestelle die, -n',373],['l6',381,'Flughafen der, -¨e',394],['l7',403,'Flugzeug das, -e',415],['l8',424,'Gepäck das',436],['l9',445,'Gleis das, -e',457],['l10',466,'Koffer der, -',478],['l11',487,'S-Bahn die, -en',500],['l12',508,'Straßenbahn die,\n  -en auch: Tram die, -s',521],['l13',552,'Taxi das, -s',565],['l14',572,'U-Bahn die, -en',585],['l15',593,'Verkehrsmittel\n  das, -',627],['l16',637,'Zug der, -¨e',650],['l17',668,'ab·fahren, du\n  fährst ab,\n  er fährt ab',722],['l18',731,'ab·holen',744],['l19',752,'an·kommen',765],['l20',775,'aus·steigen',786],['l21',796,'ein·steigen',807],['l22',817,'um·steigen',829]] as [string,number,string,number][]).map(([id,y,s,ry])=><span key={id}>{txt(159,y,282,s)}{f('v-'+id,300,ry-20,154,'Übersetzung: '+s.split(/[\n ]/)[0])}</span>)}
- <div className="mText" style={{left:159,top:275,width:282}}><Words s="Bahnsteig der, -e"/><span className="mVocabCH">{'\n  CH: das Perron, -s'}</span></div>{f('v-l2',300,268,154,'Übersetzung: Bahnsteig')}
- {([['r1',253,'Minute die, -n',264],['r2',275,'Vorsicht die',288],['r3',299,'zu Hause',312],['r4',315,'Entschuldigen\n  Sie.',352],['r5',368,'an·rufen',381],['r6',389,'bekommen',402],['r7',406,'ein·kaufen',419],['r8',432,'fern·sehen, du\n  siehst fern,\n  er sieht fern',487],['r9',496,'mit·bringen',509],['r10',517,'nehmen, du\n  nimmst, er nimmt',531],['r11',570,'also\n  also dann',606],['r12',615,'gerade',628],['r13',634,'nächste',647],['r14',666,'viel',679],['r15',689,'auf\n  auf Gleis 10',721],['r16',731,'bis\n  Bis bald!',765]] as [string,number,string,number][]).map(([id,y,s,ry])=><span key={id}>{txt(481,y,290,s)}{f('v-'+id,600,ry-20,157,'Übersetzung: '+s.split(/[\n ]/)[0])}</span>)}
+ {([['l1',253,'Bahnhof der, -e',266],['l3',319,'Bus der, -se',330],['l4',339,'Halt der, -e/-s',351],['l5',360,'Haltestelle die, -n',373],['l6',381,'Flughafen der, -¨e',394],['l7',403,'Flugzeug das, -e',415],['l8',424,'Gepäck das',436],['l9',445,'Gleis das, -e',457],['l10',466,'Koffer der, -',478],['l11',487,'S-Bahn die, -en',500],['l12',508,'Straßenbahn die,\n  -en auch: Tram die, -s',521],['l13',552,'Taxi das, -s',565],['l14',572,'U-Bahn die, -en',585],['l15',593,'Verkehrsmittel\n  das, -',627],['l16',637,'Zug der, -¨e',650],['l17',668,'ab·fahren, du\n  fährst ab,\n  er fährt ab',722],['l18',731,'ab·holen',744],['l19',752,'an·kommen',765],['l20',775,'aus·steigen',786],['l21',796,'ein·steigen',807],['l22',817,'um·steigen',829]] as [string,number,string,number][]).map(([id,y,s,ry])=><span key={id}>{txt(159,y,282,s,'mVocab')}{f('v-'+id,300,ry-20,154,'Übersetzung: '+s.split(/[\n ]/)[0])}</span>)}
+ <div className="mText mVocab" style={{left:159,top:275,width:282}}><Words s="Bahnsteig der, -e"/><span className="mVocabCH">{'\n  CH: das Perron, -s'}</span></div>{f('v-l2',300,268,154,'Übersetzung: Bahnsteig')}
+ {([['r1',253,'Minute die, -n',264],['r2',275,'Vorsicht die',288],['r3',299,'zu Hause',312],['r4',315,'Entschuldigen\n  Sie.',352],['r5',368,'an·rufen',381],['r6',389,'bekommen',402],['r7',406,'ein·kaufen',419],['r8',432,'fern·sehen, du\n  siehst fern,\n  er sieht fern',487],['r9',496,'mit·bringen',509],['r10',517,'nehmen, du\n  nimmst, er nimmt',531],['r11',570,'also\n  also dann',606],['r12',615,'gerade',628],['r13',634,'nächste',647],['r14',666,'viel',679],['r15',689,'auf\n  auf Gleis 10',721],['r16',731,'bis\n  Bis bald!',765]] as [string,number,string,number][]).map(([id,y,s,ry])=><span key={id}>{txt(481,y,290,s,'mVocab')}{f('v-'+id,600,ry-20,157,'Übersetzung: '+s.split(/[\n ]/)[0])}</span>)}
  <div className="mTippBar" style={{left:167,top:851,width:12,height:95}}><span>TIPP</span></div>
  <div className="mTippRule" style={{left:167,top:851,width:415,height:4}}/>
  <div className="mText mTipp" style={{left:195,top:860,width:400}}><Words s={'Sie lesen den Satz:\n„Wir '}/><span className="mHi"><Words s="steigen"/></span><Words s=" dann in Flensburg in den Bus "/><span className="mHi"><Words s="um"/></span><Words s={'.“\nSie verstehen „steigen“ nicht und suchen im Wörterbuch.\nAchten Sie auch auf das Satzende.\nSuchen Sie „umsteigen“ im Wörterbuch.'}/></div>
  {title('2',1001,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','',132)}
- {open('u2-notes',170,1016,600,156,'2 Eigene Wörter')}
+ {open('u2-notes',170,1018,600,156,'2 Eigene Wörter')}
+ {art('tab',844,87,57,67)}
  {art('photos',794,168,107,1010)}
  </>}
  {Number(page)%2?<>{<div className="mText mFooter" style={{left:708,top:({79:1207,81:1191,83:1203,85:1202,87:1209} as Record<string,number>)[page]||1208,width:180}}><Words s={footerW[page]}/><b className="mFooterB">{'  |  '+page}</b></div>}{txt(841,(({79:1207,81:1191,83:1203,85:1202,87:1209} as Record<string,number>)[page]||1208)-13,60,'Modul 4','mFooter mFooterTab mFooterTabOdd')}</>:<>{txt(30,({80:1209,82:1206,84:1212,86:1204} as Record<string,number>)[page]||1208,60,'Modul 4','mFooter mFooterTab')}<div className="mText mFooter mFooterEven" style={{left:103,top:({80:1209,82:1206,84:1212,86:1204} as Record<string,number>)[page]||1208,width:40}}>{page}</div><div className="mText mFooter mFooterEven" style={{left:130.7,top:({80:1209,82:1206,84:1212,86:1204} as Record<string,number>)[page]||1208,width:12}}>|</div><div className="mText mFooter mFooterEven" style={{left:145,top:({80:1209,82:1206,84:1212,86:1204} as Record<string,number>)[page]||1208,width:120}}><Words s={footerW[page]}/></div></>}
