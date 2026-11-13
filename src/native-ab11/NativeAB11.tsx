@@ -211,9 +211,9 @@ export function NativeAB11({page}:{page:string}){
  ['Woher ...?',315],['kommen aus ...',354],['aus ...',393],['Land das, ¨-er',458],['Deutschland',484],['Österreich',510],['Schweiz die',536],['Wie geht’s?',621],['sehr gut',660],['gut',686],['es geht',712],['nicht so gut',738],['Alphabet das, -e',809],['buchstabieren',848],['auch',887],['danke',913],['ja',939],['nein',965],['sehr',991],['und',1017]
  ].map(([s,y],i)=><div key={String(s)}>{text(582,Number(y),230,String(s))}{field('wort-r'+i,725,Number(y)+1,193,'1 Übersetzung '+s)}</div>)}
  {[['hello',236,110],['greet',415,98],['how',602,102],['evening',750,110],['night',921,121],['bye',1104,119],['shake',1313,91]].map(([name,y,h],i)=><div key={String(name)}>{img('cartoon-'+name,941,Number(y),134,Number(h))}{field('bild-'+i,963,Number(y)+Number(h)+16,108,'1 Bildwort '+(i+1))}</div>)}
- {text(430,1081,185,'Lernen Sie Fragen\nund Antworten\nzusammen.','nabTip')}{text(595,1112,300,'Wie geht es dir? - Danke, gut.\nWie heißen Sie? - Ich bin ...','nabExample')}
+ {text(430,1081,185,'Lernen Sie Fragen\nund Antworten\nzusammen.','nabTip')}{text(595,1112,300,'Wie geht es dir? - Danke, gut.\nWie heißen Sie? - Ich bin ...','nabExample')}{save('1',202,1100)}
  {title('2',1180,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','','')}
- {open('eigene-woerter',202,1226,715,170,'2 Weitere Wörter und Notizen')}
+ {open('eigene-woerter',202,1226,715,170,'2 Weitere Wörter und Notizen')}{save('2',202,1410)}
  </>}
  {text(Number(page)%2?991:50,1485,80,'Modul 1','nabFooter')}{text(Number(page)%2?920:130,1485,500,page+'  |  '+({'6':'sechs','7':'sieben','8':'acht','9':'neun','10':'zehn','11':'elf'} as Record<string,string>)[page],'nabFooter')}
  </div><audio ref={audio} className="nabPlayer" controls hidden aria-label="Originalaudio Arbeitsbuch"/></div>
