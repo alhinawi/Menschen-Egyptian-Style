@@ -68,6 +68,8 @@
 .nativeAB12[data-native-ab12="73"] .naPanel73{position:absolute;left:107px;top:155px;width:553px;height:145px;border-radius:6px;background:linear-gradient(#d7deeb,#eef2f8 18%,#ffffff 60%);border:1px solid #d5dde6}
 .nativeAB12[data-native-ab12="73"] .naStripBand73{position:absolute;left:110px;top:746px;width:555px;height:22px;background:#fafad5}
 .nativeAB12[data-native-ab12="73"] .naBand73{position:absolute;left:520px;top:847px;width:200px;height:38px;background:#f0efd6}
-.nativeAB12[data-native-ab12="73"] .naGridL73{position:absolute;width:14px;height:20px;font-family:ABDroid69,Georgia,serif;font-size:14px;color:#4a5478;border:none;background:transparent;padding:0;cursor:pointer;text-align:center;line-height:20px}
+.nativeAB12[data-native-ab12="73"] .naGridBand73{position:absolute;left:94px;top:351px;width:625px;height:42px;background:#f4fefb}
+.nativeAB12[data-native-ab12="73"] .naNoteBand73{position:absolute;background:#fefef0}
+.nativeAB12[data-native-ab12="73"] .naGridL73{position:absolute;width:12px;height:20px;font-family:ABDroid69,Georgia,serif;font-size:15.5px;font-weight:700;color:#0d1526;border:none;background:transparent;padding:0;cursor:pointer;text-align:center;line-height:20px}
 .nativeAB12[data-native-ab12="73"] .naGridL73.mrk{background:#f9f15e}
 .nativeAB12[data-native-ab12="73"] .naGridL73.fix{background:#f9f15e;cursor:default}
