@@ -18,7 +18,7 @@
 .nativeAB11Lesson10Mid .mFooterB{font-weight:700}
 .nativeAB11Lesson10Mid .mCanvas .mText.mScript2{font:italic 20px Georgia;color:#333}
 .nativeAB11.nativeAB11Lesson10Mid .mCanvas .mField{height:20px!important;font-size:14.5px;border:0!important;border-bottom:1px solid #aaa!important;border-radius:0!important;background:transparent!important}
-.nativeAB11.nativeAB11Lesson10Mid .mCanvas .mTitle{font-family:KbFira,FiraSans,Arial,sans-serif}
+.nativeAB11.nativeAB11Lesson10Mid .mCanvas .mTitle{font-family:KbFira,FiraSans,Arial,sans-serif;font-weight:500}
 .nativeAB11Lesson10Mid .mCanvas .mOpen{font-size:15px;line-height:22px!important}
 .nativeAB11Lesson10Mid .mCanvas .mNumber{background:#fb0200;border:0}
 .nativeAB11Lesson10Mid .mCanvas .mRadio{width:15px!important;height:15px!important}
@@ -60,9 +60,9 @@
 
 .nativeAB11Lesson10Mid .mCanvas .mText.mFooterTabOdd{color:#fff}
 .nativeAB11Lesson10Mid .mBannerPink{position:absolute;background:#fce0e8}
-.nativeAB11Lesson10Mid .mCanvas .mText.mBannerTitle{font:33.5px KbDroid,Georgia,serif;color:#111}
+.nativeAB11Lesson10Mid .mCanvas .mText.mBannerTitle{font:31.5px KbDroid,Georgia,serif;color:#111}
 .nativeAB11Lesson10Mid .mCanvas .mText .mExample.mExU{border-bottom:1px solid #555}
-.nativeAB11Lesson10Mid .mCanvas .mText.mAnagram{letter-spacing:2px}
+.nativeAB11Lesson10Mid .mCanvas .mText.mAnagram{font-size:15px}
 .nativeAB11Lesson10Mid .mPairDot{position:absolute;width:9px;height:9px;border-radius:50%;background:#29a3c7}
 .nativeAB11Lesson10Mid[data-native-ab11-page='84'] .mCanvas .mNumber{background:#bc0231}
 
