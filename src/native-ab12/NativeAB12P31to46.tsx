@@ -555,16 +555,16 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(531,393,229,'Weitere wichtige Wörter','naNw')}
   {text(146,404,142,'Heizung die, -en','naNw')}
   {text(532,418,107,'Angst die, ¨e','naNw')}
-  {text(146,429,109,'Klimaanlage','naNw')}
-  {text(157,444,54,'die, -n','naNw')}
+  {text(146,432,109,'Klimaanlage','naNw')}
+  {text(157,458,54,'die, -n','naNw')}
   {text(543,444,107,'Angst haben','naNw')}
   {text(533,470,166,'Kurs der, -e (Tanz-/','naNw')}
-  {text(145,481,172,'Verbindung die, -en','naNw')}
-  {text(157,495,140,'die Internetver-','naNw')}
+  {text(145,483,172,'Verbindung die, -en','naNw')}
+  {text(157,510,140,'die Internetver-','naNw')}
   {text(543,495,123,'Spanischkurs)','naNw')}
   {text(532,521,84,'Leben das','naNw')}
-  {text(156,533,74,'bindung','naNw')}
-  {text(145,547,113,'Wecker der, -','naNw')}
+  {text(156,536,74,'bindung','naNw')}
+  {text(145,560,113,'Wecker der, -','naNw')}
   {text(531,547,136,'Sitzung die, -en','naNw')}
   {text(531,573,121,'Stunde die, -n','naNw')}
   {text(145,597,120,'Beschwerden','naBold naNw')}
