@@ -1,0 +1,46 @@
+@font-face{font-family:P95Serif;src:url('/assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:P95Sans;src:url('/assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:P95Sans;src:url('/assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700;font-display:swap}
+.ab11p95{position:relative;width:100%;height:100%;background:white}
+.page:has(.ab11p95){padding:0!important}
+.ab11p95Canvas{position:absolute;left:50%;top:50%;width:901px;height:1275px;transform-origin:center;background:#fff;color:#242420;font-family:P95Serif,Georgia,serif}
+.ab11p95Canvas .p95Text{position:absolute;white-space:pre;line-height:1.32;margin:0;padding:0}
+.ab11p95Canvas .p95Sans{font-family:P95Sans,sans-serif}
+.ab11p95Canvas .tapWord{padding:0!important;margin:0!important}
+.ab11p95Canvas .p95Art{position:absolute;max-width:none!important;max-height:none!important;object-fit:fill!important;margin:0!important}
+.ab11p95Canvas .p95Line{position:absolute;height:1px}
+.ab11p95Canvas .p95Highlight{position:absolute;background:#fffdd1}
+.ab11p95Canvas .p95Badge{position:absolute;box-sizing:border-box;background:#e95d12;color:white;border:1px solid #c85627;font:700 21px/19px P95Serif,serif;text-align:center}
+.ab11p95Canvas .p95Side{position:absolute;writing-mode:vertical-rl;transform:rotate(180deg);font:700 10px P95Sans,sans-serif;color:#263f61}
+.ab11p95Canvas .p95Speaker{position:absolute;width:8px;height:8px;background:#080b83}
+.ab11p95Canvas .p95Speaker.green{width:0;height:0;background:transparent;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:9px solid #159e2e}
+.ab11p95Canvas .p95Field{position:absolute;box-sizing:border-box;min-width:0!important;min-height:0!important;max-width:none!important;margin:0!important;border:0!important;border-bottom:1px solid #a5aaa7!important;border-radius:0!important;padding:0 2px!important;font:var(--p95-answer-size,15px)/1.2 P95Serif,serif!important;color:#28496f;background:transparent!important;outline-offset:1px}
+.ab11p95Canvas .p95Field.correct{color:#18773c!important;border-bottom-color:#18773c!important}
+.ab11p95Canvas .p95Field.wrong{color:#b62626!important;border-bottom-color:#b62626!important}
+.ab11p95Canvas .p95Check{position:absolute;display:flex;gap:7px;align-items:center;white-space:nowrap}
+.ab11p95Canvas .p95Check button{min-height:20px!important;font:11px P95Sans,sans-serif;padding:2px 7px!important;margin:0!important;border:1px solid #8b9586;border-radius:3px;background:#fff;color:#31532c}
+.ab11p95Canvas .p95Check output{font:11px P95Sans,sans-serif;color:#555}
+
+.ab11p95Canvas .p95Title [data-word="sein"],.ab11p95Canvas .p95Title [data-word="haben"]{font-style:italic}
+.ab11p95Canvas .p95Text:has([data-word="KB"]){color:#33849c}
+
+.ab11p95Canvas .p95Title [data-word="war"],.ab11p95Canvas .p95Title [data-word="hatte"],.ab11p95Canvas .p95Title [data-word="aus"],.ab11p95Canvas .p95Title [data-word="in"],.ab11p95Canvas .p95Title [data-word="nach"]{font-style:italic}
+.ab11p95Canvas .p95Text:has([data-word="KB"]){color:#33849c}
+.ab11p95Canvas .p95Radio{position:absolute;appearance:none!important;box-sizing:border-box;min-height:0!important;min-width:0!important;max-width:none!important;border:1.5px solid #dedec7!important;border-radius:50%!important;background:transparent!important;padding:0!important;margin:0!important;color:#35549c;cursor:pointer}
+.ab11p95Canvas .p95Radio:checked:after{content:'×';position:absolute;inset:-2px 0 0;font:16px/14px P95Sans;text-align:center;color:currentColor}
+.ab11p95Canvas .p95Radio.correct{color:#18773c!important;border-color:#18773c!important}
+.ab11p95Canvas .p95Radio.wrong{color:#b62626!important;border-color:#b62626!important}
+.ab11p95Canvas .p95Open{resize:none;line-height:18px!important;border-bottom:0!important}
+
+.ab11p95Canvas .p95NotebookField{border:0!important;transform:rotate(-1.2deg);transform-origin:left bottom}
+
+
+.ab11p95Canvas .p95card{position:absolute;background:#f8fcfb;border-bottom:1px dotted #deded6}.ab11p95Canvas .p95tip{position:absolute;border-top:5px solid #bd950b;border-left:12px solid #bd950b}.ab11p95Canvas .p95bubble{position:absolute;border-bottom:3px solid #fafbe8;border-radius:50%}.ab11p95Canvas .p95Audio{position:absolute;font:10px P95Sans;color:#299cc3}.ab11p95Canvas .p95Open{font:13px/18px P95Serif!important}
+@font-face{font-family:P95Serif;src:url('/assets/fonts/droid-serif-400-italic.ttf') format('truetype');font-style:italic;font-weight:400;font-display:swap}@font-face{font-family:P95Serif;src:url('/assets/fonts/droid-serif-700.woff2') format('woff2');font-weight:700;font-display:swap}
+.ab11p95Canvas .p95Audio{border:0!important;background:transparent!important;min-height:0!important;padding:0!important;margin:0!important;border-radius:0!important;font:10px P95Sans!important;color:#299cc3!important}
+
+.ab11p95Canvas .p95ForumField{font:12.5px/1.2 P95Sans,sans-serif!important}
+
+.ab11p95Canvas .p95SeasonField{font:14px/1.2 P95Serif,serif!important;overflow:hidden}
+
+.ab11p95Canvas .p95Save{width:32px!important;height:32px!important;padding:0!important;border:1.5px solid #888!important;border-radius:50%!important;color:#555!important;font:700 21px Arial!important}.ab11p95Canvas .p95Field{font:14px/1.2 P95Serif,serif!important}
