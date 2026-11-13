@@ -56,7 +56,6 @@ except FileNotFoundError:off={}
 for n,it in enumerate(items):
  if str(n) in off:it['x']+=off[str(n)][0];it['y']+=off[str(n)][1]
 for n in (70,71,72):items[n]['y']=1249
-items[70]['y']-=3
 items[20]['y']-=4
 items[21].update(x=187,s=18.7)
 items[36].update(x=188,s=18.4)
