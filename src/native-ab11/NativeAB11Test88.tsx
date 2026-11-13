@@ -26,14 +26,14 @@ export function NativeAB11Test88(){
  const title=(n:string,y:number,s:string)=><><div className="mNumber red" style={{left:112,top:Y(y)}}>{n}</div>{txt(148,y,690,s,'mTitle')}</>;
  const ink=(name:string,x:number,y:number,w:number,h:number,alt='')=><PageImage className="mHelp" alt={alt} src={`assets/native-ab11/p88-${name}.png`} style={{left:x,top:Y(y),width:w,height:h}}/>;
  const expected=[4,2,5,0,6,3,1];
- const check=(id:string,y:number,test:()=>boolean)=><div className="mCheck" data-native-task={id} style={{left:149,top:Y(y)}}><CheckButton type="button" answers={Object.fromEntries(Object.entries(test88Answers).filter(([k])=>k.startsWith(id+'-')))} onClick={()=>G({...graded,[id]:test()})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const check=(id:string,y:number,test:()=>boolean,x=149)=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton type="button" answers={Object.fromEntries(Object.entries(test88Answers).filter(([k])=>k.startsWith(id+'-')))} onClick={()=>G({...graded,[id]:test()})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const group=(prefix:string)=>Object.entries(test88Answers).filter(([k])=>k.startsWith(prefix)).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')));
  return <div className="nativeAB11 nativeAB11Module1 nativeAB11Lessons45 nativeAB11Test88" data-native-ab11-page="88" ref={host}><div className="nabCanvas mCanvas" style={{top:0,transformOrigin:'top center',transform:`translate(-50%,0) scale(${scale})`}}>
  {txt(112,125,180,'TEST','mHeader')}<div className="p88Rule" style={{left:181,top:Y(143),width:641}}/>
  {title('1',182,'Was passt? Ordnen Sie zu.')}
  <div className="nabSide" style={{left:92,top:225}}>WÖRTER</div>
- <LineMatching id="ab88-1" left={['a  Wein','b  die Hausaufgaben','c  Fahrrad','d  Spanisch','e  die Zeitung','f  Freunde','g  das Zimmer']} right={['lernen','aufräumen','machen','einladen','trinken','fahren','lesen']} values={v} onMatch={set} leftX={149} rightX={382} leftWidth={180} rightWidth={230} ys={[218,240,262,284,306,328,350].map(Y)} width={901} height={1275} fontSize={17} example={[0,4]}/>
- {txt(750,356,85,'_ / 6 Punkte','p88Points')}{check('t1',382,()=>expected.every((r,i)=>i===0||v['ab88-1-'+i]===''+r))}
+ <LineMatching id="ab88-1" left={['a  Wein','b  die Hausaufgaben','c  Fahrrad','d  Spanisch','e  die Zeitung','f  Freunde','g  das Zimmer']} right={['lernen','aufräumen','machen','einladen','trinken','fahren','lesen']} values={v} onMatch={set} leftX={149} rightX={382} leftWidth={180} rightWidth={230} ys={[222,248,274,299,325,351,376].map(Y)} width={901} height={1275} fontSize={17} example={[0,4]}/>
+ {txt(750,356,85,'_ / 6 Punkte','p88Points')}{check('t1',380,()=>expected.every((r,i)=>i===0||v['ab88-1-'+i]===''+r),640)}
  {title('2',423,'Schreiben Sie Sätze im Perfekt.')}
  <div className="nabSide" style={{left:92,top:465}}>STRUKTUREN</div>
  {txt(149,460,25,'a')}{txt(172,460,20,'▪','p88Square')}{ink('gearbeitet-ink',186,450,161,28,'Hast du heute gearbeitet?')}{txt(348,460,420,'(heute/arbeiten/du)','p88Hint')}
