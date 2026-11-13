@@ -221,13 +221,13 @@ export function NativeKB12({page}:{page:string}){
  </>}
  {page==='17'&&<>
  {art('hero',0,0,1100,987)}{text(425,44,585,'In Giesing wohnt das Leben!','nkHeroTitle')}{text(1010,38,90,'15','nkLesson')}
- {title('1',118,1033,700,'Der Blick aus meinem Fenster.')}{text(132,1078,670,'a  Was sehen Sie auf den Bildern? Hilfe finden Sie im Bildlexikon.','nkBold')}
+ {title('1',118,1033,700,'Der Blick aus meinem Fenster.')}{text(132,1078,670,'a  Was sehen Sie auf den Bildern? Hilfe finden Sie im Bildlexikon.','nkBold')}{save('1a',790,1076)}
  {text(132,1120,665,'b  Was passt? Hören Sie und ordnen Sie zu.','nkBold')}
  {[7,8,9,10,11,12].map((t,i)=>audio(`assets/kb-cd3-track${String(t).padStart(2,'0')}.mp3`,135+i*103,1152,'3 '+String(t).padStart(2,'0'),undefined,'1b'))}
  {text(164,1192,80,'Text')}{text(164,1227,80,'Foto')}{[1,2,3,4,5,6].map((t,i)=><div key={t}>{text(262+i*73,1192,44,''+t)}{field('1b-'+t,252+i*73,1225,44,'Text '+t+' Foto')}</div>)}
  {check('1b',164,1268,{'1b-1':'c','1b-2':'f','1b-3':'b','1b-4':'a','1b-5':'d','1b-6':'e'})}
  {title('2',118,1325,700,'Was sehen Sie aus Ihrem Fenster? Mögen Sie den Blick?')}{text(164,1370,570,'• Café | • Park | • Hafen | • Straße | • Meer | …','nkBank')}
- {text(520,1412,310,'Ich sehe eine Straße. Ich mag den Blick nicht so gern. Was siehst du?','nkSpeech')}{field('2-blick',164,1417,325,'Der Blick aus meinem Fenster')}
+ {text(520,1412,310,'Ich sehe eine Straße. Ich mag den Blick nicht so gern. Was siehst du?','nkSpeech')}{field('2-blick',164,1417,325,'Der Blick aus meinem Fenster')}{save('2',860,1412)}
  <aside className="nkAside" style={{left:836,top:973,width:220,height:380}}><Words text={'Sprechen: einen Ort bewerten: Giesing ist ganz normal. Das gefällt mir.; nach Einrichtungen fragen und darauf antworten: Gibt es eigentlich auch ein Kino in …?\nLesen: Blog\nWortfelder: Einrichtungen und Orte in der Stadt\nGrammatik: Verben mit Dativ / Personalpronomen im Dativ: Das gefällt mir.'}/></aside>
  </>}
  {page==='18'&&<>
