@@ -13,6 +13,7 @@ const loaders = {
   NativeAB12P80: () => import('../native-ab12/NativeAB12P80').then(m => m.NativeAB12P80),
   NativeAB12L23: () => import('../native-ab12-l2324/NativeAB12L23').then(m => m.NativeAB12L23),
   NativeAB12L24: () => import('../native-ab12-l2324/NativeAB12L24').then(m => m.NativeAB12L24),
+  NativeAB11Faithful: () => import('../native-ab11-faithful/NativeAB11Faithful').then(m => m.NativeAB11Faithful),
   NativeAB11Test88: () => import('../native-ab11/NativeAB11Test88').then(m => m.NativeAB11Test88),
   AB11LineMatching88: () => import('../exercises/AB11LineMatching88').then(m => m.AB11LineMatching88),
   NativeAB11Lesson10Start: () => import('../native-ab11/NativeAB11Lesson10Start').then(m => m.NativeAB11Lesson10Start),
@@ -62,6 +63,8 @@ const loaders = {
 type Name = keyof typeof loaders;
 const components = new Map<Name, ComponentType<any>>();
 const pending = new Map<Name, Promise<void>>();
+const faithfulFiles = import.meta.glob('../native-ab11-faithful/p*.json');
+const faithfulPages = new Set(Object.keys(faithfulFiles).map(p => p.match(/p(\d+)\.json$/)![1]));
 const rangeFiles = import.meta.glob('../native-ab12/range/p*.json');
 const rangePages = new Set(Object.keys(rangeFiles).map(p => p.match(/p(\d+)\.json$/)![1]));
 function pick(name: Name, props: Record<string, any>) { return {name, props}; }
@@ -74,6 +77,7 @@ function select(tag: string, attrs: MarkupAttrs) {
   if(tag === 'NativePilot')return pick('NativePilot',{page:attrs.page});
   if(tag === 'NativeKB12')return pick('NativeKB12',{page:attrs.page});
   if(tag === 'HybridScan' && attrs.book==='kb-a12' && ['89','90','91','92','93','94','95'].includes(String(attrs.page)))return pick('NativeKB12Wordlist',{page:String(attrs.page)});
+  if(tag === 'HybridScan' && attrs.book==='ab-a11' && faithfulPages.has(String(attrs.page)))return pick('NativeAB11Faithful',{page:String(attrs.page)});
   if(tag === 'NativeAB11Test88')return pick('NativeAB11Test88',{});
   if(tag === 'AB11LineMatching88')return pick('AB11LineMatching88',{});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && ['77','78'].includes(String(attrs.page)))return pick('NativeAB11Lesson10Start',{page:String(attrs.page)});
