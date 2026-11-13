@@ -1195,5 +1195,160 @@
       "Dialect spellings kept as printed (Wiederschauen, Uf Wiederluege mitenand, Grüezi, Servus). Script-font printed example Gilching kept.",
       "No CD audio marker on page (film clips only)."
     ]
-  }
+  },
+  "matchings": [
+    {
+      "id": "familie",
+      "group": "gx",
+      "left": [
+        "Das ist mein Vater.",
+        "Sie ist 57.",
+        "Mein Vater lebt jetzt in New York.",
+        "Sie ist Amerikanerin.",
+        "Das ist Aileen.",
+        "Sie wohnt auch in New York.",
+        "Er ist schon 62.",
+        "Meine Mutter lebt hier in Wien.",
+        "Sie heißt Tanja.",
+        "Sie sind verheiratet und haben ein Kind.",
+        "Sie leben jetzt in Graz.",
+        "Das ist Otto.",
+        "Das ist meine Schwester."
+      ],
+      "right": [
+        "Bild 1",
+        "Bild 2",
+        "Bild 3"
+      ],
+      "leftX": 147,
+      "leftWidth": 160,
+      "rightX": 700,
+      "rightWidth": 155,
+      "leftXs": [
+        170,
+        195,
+        143,
+        178,
+        370,
+        353,
+        557,
+        567,
+        738,
+        903,
+        753,
+        944,
+        936
+      ],
+      "leftWidths": [
+        155,
+        75,
+        148,
+        132,
+        115,
+        127,
+        123,
+        148,
+        126,
+        166,
+        117,
+        98,
+        110
+      ],
+      "ys": [
+        1163,
+        1212,
+        1257,
+        1329,
+        1135,
+        1364,
+        1141,
+        1354,
+        1133,
+        1120,
+        1354,
+        1211,
+        1305
+      ],
+      "itemHeights": [
+        24,
+        24,
+        50,
+        50,
+        24,
+        44,
+        24,
+        44,
+        24,
+        44,
+        24,
+        24,
+        50
+      ],
+      "leftDotXs": [
+        325,
+        273,
+        294,
+        314,
+        489,
+        474,
+        684,
+        699,
+        868,
+        899,
+        749,
+        940,
+        932
+      ],
+      "leftDotYs": [
+        1175,
+        1222,
+        1292,
+        1362,
+        1148,
+        1397,
+        1153,
+        1389,
+        1145,
+        1140,
+        1376,
+        1222,
+        1330
+      ],
+      "rightXs": [
+        340,
+        537,
+        745
+      ],
+      "rightWidths": [
+        152,
+        153,
+        115
+      ],
+      "rightYs": [
+        1202,
+        1200,
+        1182
+      ],
+      "rightHeights": [
+        103,
+        103,
+        150
+      ],
+      "rightDotXs": [
+        416,
+        613,
+        802
+      ],
+      "rightDotYs": [
+        1210,
+        1208,
+        1190
+      ],
+      "example": [
+        0,
+        0
+      ],
+      "className": "lmHideLeft lmHideRight"
+    }
+  ]
 }
