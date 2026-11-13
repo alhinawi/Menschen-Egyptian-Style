@@ -32,3 +32,23 @@
 [data-matching="86-12r"] .sharedMatchItem:not([data-match-right]){color:transparent!important}
 
 [data-matching="86-12"] .sharedMatchLines circle:nth-of-type(n+5){transform:translateX(-6px)}
+
+/* p87 TRAINING */
+.naCanvas .naTrainHead{position:absolute;font:400 20px 'Times New Roman',serif;letter-spacing:2.5px;color:#4d4d4d;white-space:nowrap}
+.naCanvas .naVokal{font-family:DroidSerif,Georgia,serif;font-size:13px;color:#555}
+.naCanvas .naBankBlue{position:absolute;font:14px FiraSans,'Trebuchet MS',sans-serif;color:#1d4a90;white-space:nowrap}
+.naCanvas .naStrikeD{position:relative;display:inline}
+.naCanvas .naStrikeD:after{content:'';position:absolute;left:0;right:0;top:52%;height:1.5px;background:#2f2f2f;transform:rotate(-0.6deg);border-radius:1px;pointer-events:none}
+.naCanvas .naTipBox{position:absolute;background:#fff;box-sizing:border-box}
+.naCanvas .naTipTop{position:absolute;background:#bf8c0f}
+.naCanvas .naTipBar{position:absolute;background:#bf8c0f}
+.naCanvas .naTipp{position:absolute;writing-mode:vertical-rl;transform:rotate(180deg);font:bold 8px FiraSans,sans-serif;letter-spacing:.5px;color:#fff;overflow:hidden;text-align:center}
+.naCanvas .naOrangeTab{position:absolute;background:#d57345}
+.naCanvas svg.naTails{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;z-index:2}
+.naCanvas .naDot.naDotS{width:15px!important;height:15px!important;border-width:1.5px!important;border-color:#ddd9c8!important}
+
+.naCanvas .naText.naBk87{font-size:12.7px;letter-spacing:-0.25px}
+.naCanvas .naText.naInst15{font-size:15px}
+.naCanvas .naTitle.naS15{font-size:15px;line-height:1.2}
+.naCanvas .naTitle.naS15>b{min-width:17px;height:17px;font:bold 12px/17px Georgia;margin-right:9px}
+.naCanvas .naText.naColH{font-family:FiraSans,'Trebuchet MS',sans-serif;font-size:10.5px;color:#333;text-align:center}
