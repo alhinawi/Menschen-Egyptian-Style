@@ -146,9 +146,9 @@ export function NativeAB12({page}:{page:string}){
   {art('mag2',70,744,48,52)}
   {title('1',119,756,850,'Lesen Sie noch einmal den Ratgeber im Kursbuch auf Seite 35 und notieren Sie.','naRB naNw')}
   {text(162,795,295,'Diese Körperteile stehen im Text:','naD20 naNw')}
-  {field('52-t3-c1',456,793,510,'Körperteile im Text')}
+  {field('52-t3-c1',490,793,476,'Körperteile im Text')}
   {text(161,821,350,'Diese Körperteile stehen nicht im Text:','naD20 naNw')}
-  {field('52-t3-c2',510,820,456,'Körperteile nicht im Text')}
+  {field('52-t3-c2',545,820,421,'Körperteile nicht im Text')}
   {art('pen2',70,872,46,52)}
   {title('2',117,884,830,'Was machen Sie gegen Stress? Machen Sie Notizen und schreiben\nSie dann einen Ratgeber.','naRB naPre')}
   {text(159,949,170,'Gegen Stress hilft:','naD19 naNw')}
