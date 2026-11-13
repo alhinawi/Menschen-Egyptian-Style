@@ -6,7 +6,7 @@ import numpy as np
 from PIL import Image,ImageFont
 from scipy import ndimage as ndi
 ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PAGES=list(range(9,13))+list(range(13,41))+list(range(57,97))
+PAGES=list(range(9,13))+list(range(13,41))+[54]+list(range(57,97))
 FONT='/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf'
 FONTB='/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf'
 fr=ImageFont.truetype('/usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf',100);fb=ImageFont.truetype(FONTB,100)

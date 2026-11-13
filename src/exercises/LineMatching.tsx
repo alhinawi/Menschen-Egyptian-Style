@@ -1,8 +1,8 @@
 import {useEffect,useLayoutEffect,useRef,useState} from 'react';
 import './line-matching.css';
-type Props={id:string;left:string[];right:string[];values:Record<string,string>;onMatch:(key:string,value:string)=>void;leftX:number;rightX:number;leftWidth:number;rightWidth:number;ys:number[];rightYs?:number[];width?:number;height?:number;fontSize?:number;itemHeights?:number[];rightHeights?:number[];multiline?:boolean;lineHeight?:number;example?:[number,number];multiple?:boolean};
+type Props={id:string;left:string[];right:string[];values:Record<string,string>;onMatch:(key:string,value:string)=>void;leftX:number;rightX:number;leftWidth:number;rightWidth:number;ys:number[];rightYs?:number[];width?:number;height?:number;fontSize?:number;itemHeights?:number[];rightHeights?:number[];multiline?:boolean;lineHeight?:number;example?:[number,number];multiple?:boolean;dotR?:number};
 /** Dots are the line endpoints. All connecting strokes stay inside the gap. */
-export function LineMatching({id,left,right,values,onMatch,leftX,rightX:baseRightX,leftWidth,rightWidth:baseRightWidth,ys,rightYs=ys,width=1075,height=1521,fontSize=22,itemHeights=[],rightHeights=[],multiline=false,lineHeight=24,example,multiple=false}:Props){
+export function LineMatching({id,left,right,values,onMatch,leftX,rightX:baseRightX,leftWidth,rightWidth:baseRightWidth,ys,rightYs=ys,width=1075,height=1521,fontSize=22,itemHeights=[],rightHeights=[],multiline=false,lineHeight=24,example,multiple=false,dotR=5.5}:Props){
  const root=useRef<HTMLDivElement>(null);
  useEffect(()=>{const clear=(e:Event)=>{if(root.current?.closest<HTMLElement>('.page')?.dataset.page===String((e as CustomEvent).detail.page)){setActive(null);drag.current=null;setPointer(null)}};document.addEventListener('menschen:reset-current-page',clear);return()=>document.removeEventListener('menschen:reset-current-page',clear)},[]);
  const pair=(i:number,j:number)=>{if(!multiple){onMatch(id+'-'+i,String(j));return}const fixed=example?.[0]===i?example[1]:undefined;const current=(values[id+'-'+i]||'').split(',').filter(Boolean).map(Number);const next=j===fixed?current:current.includes(j)?current.filter(x=>x!==j):[...current,j];if(fixed!==undefined&&!next.includes(fixed))next.push(fixed);onMatch(id+'-'+i,[...new Set(next)].sort((a,b)=>a-b).join(','))};
@@ -25,8 +25,8 @@ export function LineMatching({id,left,right,values,onMatch,leftX,rightX:baseRigh
   <svg className="sharedMatchLines" viewBox={`0 0 ${width} ${height}`} preserveAspectRatio="none" aria-hidden="true">
    {left.flatMap((_,i)=>{const raw=values[id+'-'+i];const targets=raw===undefined?[]:(multiple?raw.split(',').filter(Boolean).map(Number):[Number(raw)]);if(example?.[0]===i&&!targets.includes(example[1]))targets.push(example[1]);return [...new Set(targets)].filter(j=>Number.isInteger(j)&&rightYs[j]!==undefined).map(j=>{const y=ys[i]+12,y2=rightYs[j]+12;return <path key={i+'-'+j} d={`M${start} ${y} C${mid} ${y},${mid} ${y2},${end} ${y2}`} stroke={color(i)} strokeWidth="3" fill="none"/>})})}
    {pointer&&active!==null&&<path d={`M${start} ${ys[active]+12} Q${(start+pointer.x)/2} ${ys[active]+12},${pointer.x} ${pointer.y}`} stroke={color(active)} strokeWidth="3" fill="none" strokeDasharray="5 4"/>}
-   {left.map((_,i)=><circle key={'l'+i} cx={start} cy={ys[i]+12} r="5.5" fill={active===i?color(i):'#fff'} stroke={color(i)} strokeWidth="2"/>)}
-   {right.map((_,i)=><circle key={'r'+i} cx={end} cy={rightYs[i]+12} r="5.5" fill="#fff" stroke="#245b9b" strokeWidth="2"/>)}
+   {left.map((_,i)=><circle key={'l'+i} cx={start} cy={ys[i]+12} r={dotR} fill={active===i?color(i):'#fff'} stroke={color(i)} strokeWidth="2"/>)}
+   {right.map((_,i)=><circle key={'r'+i} cx={end} cy={rightYs[i]+12} r={dotR} fill="#fff" stroke="#245b9b" strokeWidth="2"/>)}
   </svg>
  </div>;
 }
