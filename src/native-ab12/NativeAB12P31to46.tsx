@@ -30,7 +30,7 @@ export function NativeAB12P31to46({page}:{page:string}){
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}"}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg,[data-native-ab12] .naTitle,[data-native-ab12] .naField{font-family:DroidSerif,Georgia,serif!important;letter-spacing:-0.65px}[data-native-ab12] .naText,[data-native-ab12] .naBold,[data-native-ab12] .naLet,[data-native-ab12] .naDlg{font-size:20px!important}[data-native-ab12] .naTitle{font-size:21px!important}[data-native-ab12] .naText.naS20{font-size:18px!important}[data-native-ab12] .naSmall{font-size:16.5px!important}[data-native-ab12] .naD19{font-size:17.5px!important}[data-native-ab12] .naField{font-size:19px!important}[data-native-ab12] .naUrl{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}"}</style><div className="naCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='31'&&<>
   {art('0',982,42,85,78)}
   {lin(354,107,605,6,'#a6ca03')}
@@ -85,20 +85,20 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(333,697,84,'nach dem','naNw')}
   {text(461,697,380,'für den Deutschkurs die Prüfung machen.','naNw')}
   {dot('6a1','nach einem',299,522,'6 a (1) nach einem')}
-  {dot('6a1','für ein',446,522,'6 a (1) für ein')}
+  {dot('6a1','für ein',450,522,'6 a (1) für ein')}
   {dot('6a2','nach',832,523,'6 a (2) nach')}
-  {dot('6a2','vor',166,552,'6 a (2) vor')}
+  {dot('6a2','vor',162,546,'6 a (2) vor')}
   {dot('6b','für',300,575,'6 b für')}
   {dot('6b','nach',362,575,'6 b nach')}
   {dot('6c','nach',324,597,'6 c nach')}
   {dot('6c','in',409,597,'6 c in')}
-  {dot('6d1','in',274,623,'6 d (1) in')}
+  {dot('6d1','in',277,621,'6 d (1) in')}
   {dot('6d1','vor',335,623,'6 d (1) vor')}
-  {dot('6d2','In',265,653,'6 d (2) In')}
-  {dot('6d2','Für',329,653,'6 d (2) Für')}
+  {dot('6d2','In',265,649,'6 d (2) In')}
+  {dot('6d2','Für',331,649,'6 d (2) Für')}
   {dot('6e','nach dem',305,702,'6 e nach dem')}
-  {dot('6e','für den',430,702,'6 e für den')}
-  {check('31-1',166,734,{'6a1':'für ein','6a2':'vor','6b':'nach','6c':'in','6d1':'vor','6d2':'In','6e':'nach dem'})}
+  {dot('6e','für den',433,702,'6 e für den')}
+  {check('31-1',888,700,{'6a1':'für ein','6a2':'vor','6b':'nach','6c':'in','6d1':'vor','6d2':'In','6e':'nach dem'})}
   {kb(78,783,'KB 7')}
   {title('7',130,775,760,'Akkusativ oder Dativ? Ergänzen Sie.','naGB')}
   <div className="naSide" style={{left:75,top:815}}>STRUKTUREN</div>
@@ -117,24 +117,24 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(300,862,60,'Stunde','naNw')}
   {text(432,862,82,'f nach d','naNw')}
   {text(572,862,39,'Kurs','naNw')}
-  {field('p31-7b',234,842,38,'7b')}
-  {field('p31-7c',246,863,50,'7c')}
-  {field('p31-7d',503,813,49,'7d')}
+  {field('p31-7b',218,842,51,'7b')}
+  {field('p31-7c',242,863,52,'7c')}
+  {field('p31-7d',483,813,125,'7d')}
   {field('p31-7e',515,843,50,'7e')}
   {field('p31-7f',515,863,53,'7f')}
   {field('p31-7g',800,814,50,'7g')}
   {field('p31-7h',808,844,50,'7h')}
-  {check('31-2',234,904,{'p31-7b':'em','p31-7c':'er','p31-7d':'er','p31-7e':'en','p31-7f':'em','p31-7g':'er','p31-7h':'em'})}
+  {check('31-2',908,856,{'p31-7b':'em','p31-7c':'er','p31-7d':'er','p31-7e':'en','p31-7f':'em','p31-7g':'er','p31-7h':'em'})}
   {kb(78,945,'KB 7')}
   {title('8',130,937,760,'Im Chatroom. Ordnen Sie zu.','naGB')}
   <div className="naSide" style={{left:75,top:975}}>STRUKTUREN</div>
-  {stext(140,980,28,'am',{color:'#2a4f9e'},'naOpt naNw')}
+  {stext(140,980,28,'am',{color:'#2a4f9e',textDecoration:'line-through'},'naOpt naSmall naNw')}
   {text(173,980,10,'|','naOpt naNw')}
   {stext(187,980,24,'um',{color:'#7a8f0a'},'naOpt naNw')}
   {text(216,980,10,'|','naOpt naNw')}
   {stext(226,980,40,'nach',{color:'#7a8f0a'},'naOpt naNw')}
   {text(268,980,10,'|','naOpt naNw')}
-  {stext(278,980,28,'am',{color:'#2a4f9e'},'naOpt naNw')}
+  {stext(278,980,28,'am',{color:'#2a4f9e'},'naOpt naSmall naNw')}
   {text(308,980,10,'|','naOpt naNw')}
   {stext(316,980,26,'vor',{color:'#7a8f0a'},'naOpt naNw')}
   {text(348,980,10,'|','naOpt naNw')}
@@ -147,7 +147,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {stext(153,1056,60,'siri99:',{color:'#6e7fa0',fontWeight:'bold'},'naSmall naNw')}
   {text(242,1059,185,'Hi Jule, was machst du','naSmall naNw')}
   {stext(430,1062,22,'am',{color:'#2a4f9e'},'naOpt naNw')}
-  {text(456,1059,20,'(a)','naSmall naNw')}
+  {text(462,1059,20,'(a)','naSmall naNw')}
   {text(485,1059,288,'Freitag? Sehen wir uns mal wieder?','naSmall naNw')}
   {stext(153,1085,65,'Jule_m:',{color:'#b03a2e',fontWeight:'bold'},'naSmall naNw')}
   {text(241,1085,226,'Gern. Am Freitag arbeite ich','naSmall naNw')}
@@ -180,8 +180,8 @@ export function NativeAB12P31to46({page}:{page:string}){
   {art('modul-tab',988,1384,80,32)}
  </>}
  {page==='32'&&<>
-  {art('1',166,242,727,118)}
-  {art('2',164,791,721,119)}
+  {art('1',122,224,820,129)}
+  {art('2',108,772,830,130)}
   {rect(166,740,800,44,'#faf9ce')}
   {lin(376,108,607,5,'#bdd444')}
   {lin(232,940,274,2,'#c4c4ce')}
@@ -194,17 +194,17 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(128,80,241,'BASISTRAINING','naHeadline naNw')}
   {kb(80,163,'KB 8')}
   {title('9',130,158,760,'Einen Termin verschieben.','naGB')}
-  <div className="naSide" style={{left:87,top:169,color:'#879cbb'}}>SCHREIBEN</div>
+  <div className="naSide" style={{left:87,top:208,color:'#879cbb'}}>SCHREIBEN</div>
   {stext(136,199,14,'a',{color:'#4357ad'},'naBold naNw')}
   {text(169,195,210,'Ergänzen Sie die E-Mail.','naBold naNw')}
   {text(195,371,190,'Sehr geehrte Frau Winter,','naNw')}
-  {text(195,397,45,'leider','naBold naNw')}
-  {stext(195,421,310,'(heute um 16 Uhr nicht kommen können)',{color:'#6e7373'},'naNw')}
-  {text(195,440,660,'Wir haben ein Problem mit der Internetverbindung in der Firma und ich warte auf den','naNw')}
-  {text(194,465,80,'Techniker.','naNw')}
-  {stext(195,487,220,'(Termin verschieben können)',{color:'#6e7373'},'naNw')}
-  {stext(196,531,170,'(Mittwoch Zeit haben)',{color:'#6e7373'},'naNw')}
-  {stext(196,566,310,'(ab Freitag für eine Woche im Urlaub sein)',{color:'#6e7373'},'naNw')}
+  {text(195,397,45,'leider','naNw')}
+  {text(195,421,310,'(heute um 16 Uhr nicht kommen können)','naNw')}
+  {text(195,444,660,'Wir haben ein Problem mit der Internetverbindung in der Firma und ich warte auf den','naNw')}
+  {text(194,469,80,'Techniker.','naNw')}
+  {text(195,493,220,'(Termin verschieben können)','naNw')}
+  {text(196,531,170,'(Mittwoch Zeit haben)','naNw')}
+  {text(196,566,310,'(ab Freitag für eine Woche im Urlaub sein)','naNw')}
   {text(196,603,185,'Mit freundlichen Grüßen','naNw')}
   {text(196,626,70,'Peter Frei','naNw')}
   {stext(135,698,14,'b',{color:'#4357ad'},'naBold naNw')}
@@ -215,38 +215,50 @@ export function NativeAB12P31to46({page}:{page:string}){
   {kb(80,1138,'KB 8')}
   {title('10',126,1140,780,'Hören Sie das Telefongespräch und ordnen Sie zu.','naGB')}
   <div className="naSide" style={{left:92,top:1196,color:'#879cbb'}}>HÖREN</div>
-  {audio('assets/ab-a12-cd2-track15.mp3',64,1170,'CD2 · Track15')}
+  {audio('assets/ab-a12-cd2-track15.mp3',64,1170,'2 15')}
+  <svg style={{position:'absolute',left:0,top:0,pointerEvents:'none'}} width="1072" height="1452"><path d="M283 1179 C 360 1182, 412 1240, 500 1253" stroke="#8ba3c7" strokeWidth="1.6" fill="none"/></svg>
+  {text(110,1170,14,'a','naBold naNw')}{text(140,1170,150,'Heute um elf','naNw')}
+  {text(110,1195,14,'b','naBold naNw')}{text(140,1195,150,'In zwei Stunden','naNw')}
+  {text(110,1220,14,'c','naBold naNw')}{text(140,1220,210,'Am Donnerstag um drei','naNw')}
+  {text(110,1247,14,'d','naBold naNw')}{text(140,1247,170,'Nach der Sitzung','naNw')}
+  {text(110,1272,14,'e','naBold naNw')}{text(140,1272,120,'Am Freitag','naNw')}
+  {text(110,1297,14,'f','naBold naNw')}{text(140,1297,120,'Stefan hat','naNw')}
+  {text(505,1170,400,'muss Stefan Kollegen am Flughafen abholen.','naNw')}
+  {text(505,1195,300,'hat Nina eine Sitzung.','naNw')}
+  {text(505,1220,300,'am Freitag um 14.30 Uhr Zeit.','naNw')}
+  {text(505,1247,300,'hat Stefan keine Zeit.','naNw')}
+  {text(505,1272,320,'muss Nina einen Kollegen anrufen.','naNw')}
+  {text(505,1297,340,'hat Nina nach dem Mittagessen Zeit.','naNw')}
   {art('modul-tab',0,1384,82,32)}
   {text(97,1392,176,'32 | zweiunddreißig','naFooter')}
-  {field('p32-9a1',245,393,605,'9a1')}
-  {text(853,404,16,'.','naNw')}
-  {field('p32-9a2',305,459,545,'9a2')}
-  {text(853,470,16,'?','naNw')}
-  {field('p32-9a3',195,503,655,'9a3')}
-  {text(853,518,16,'?','naNw')}
-  {field('p32-9a4',195,547,655,'9a4')}
-  {text(853,560,16,'.','naNw')}
+  {field('p32-9a1',245,393,660,'9a1')}
+  {text(910,404,16,'.','naNw')}
+  {field('p32-9a2',283,463,622,'9a2')}
+  {text(910,474,16,'?','naNw')}
+  {field('p32-9a3',195,503,710,'9a3')}
+  {text(910,518,16,'?','naNw')}
+  {field('p32-9a4',195,547,710,'9a4')}
+  {text(910,560,16,'.','naNw')}
   {field('p32-9b',232,913,274,'9b')}
   {check('32-1',700,1110,{'p32-9a1':'kann ich heute um 16 Uhr nicht kommen','p32-9a2':'Können wir den Termin verschieben','p32-9a3':'Haben Sie am Mittwoch Zeit','p32-9a4':'Ab Freitag bin ich für eine Woche im Urlaub','p32-9b':'geehrter Herr Frei'})}
  </>}
  {page==='33'&&<>
   {art('0',982,44,85,78)}
-  {art('cards',60,282,900,90)}
+  {art('cards',55,265,925,118)}
   {art('board',60,712,900,213)}
-  {art('16',646,1225,310,71)}
+  {art('16',640,1225,318,71)}
   {art('modul-tab',1000,1384,71,32)}
   {lin(444,112,516,3,'#b3d33f')}
-  {rect(139,383,791,55,'#fafbe5')}
-  {lin(140,377,790,6,'#cca424')}
-  {rect(140,383,26,55,'#cca424')}
-  <div className="naSide" style={{left:142,top:392,fontSize:11,letterSpacing:1,color:'#5a4a10'}}>Tipp</div>
+  {rect(140,377,790,7,'#c89b20')}
+  {rect(140,384,13,54,'#c89b20')}
+  <div className="naSide" style={{left:136,top:390,fontSize:11,letterSpacing:1,color:'#5a4a10'}}>Tipp</div>
   {lin(675,1022,286,2,'#bcd43c')}
   {text(106,84,331,'TRAINING: SPRECHEN','naHeadline naNw')}
   {title('1',109,162,640,'Wie bittet man um Hilfe? Was antwortet man?','naGB')}
   {text(147,198,781,'Schreiben Sie Bitten auf gelbe Kärtchen und Antworten auf blaue Kärtchen. (Hilfe finden','naNw')}
   {text(147,223,280,'Sie in den Lektionen 13 und 16.)','naNw')}
-  {text(173,389,743,'Sie möchten besser sprechen? Lernen Sie die Fragen und Sätze in der Rubrik Kommunikation','naNw')}
-  {text(173,411,639,'auf der 4. Seite jeder Lektion auswendig. Sie helfen Ihnen in vielen Situationen.','naNw')}
+  {text(190,392,726,'Sie möchten besser sprechen? Lernen Sie die Fragen und Sätze in der Rubrik Kommunikation','naNw')}
+  {text(190,414,639,'auf der 4. Seite jeder Lektion auswendig. Sie helfen Ihnen in vielen Situationen.','naNw')}
   {title('2',105,484,850,'Spiel: Bitten Sie eine Mitspielerin / einen Mitspieler. Sie/Er antwortet.','naGB')}
   {text(149,510,395,'Die Kärtchen in 1 können Ihnen helfen.','naBold naNw')}
   {stext(168,549,130,'Spielanleitung:',{color:'#3a6ab0'},'naS20 naBold naNw')}
@@ -266,6 +278,8 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(146,1099,422,'Wie oft hören Sie „o“, wie oft „u“? Notieren Sie.','naNw')}
   {text(147,1128,8,'1','naNw')}
   {text(170,1128,10,'o','naNw')}
+  {text(190,1126,40,'2t','naHand naD19 naNw')}
+  {text(258,1126,40,'2t','naHand naD19 naNw')}
   {lin(184,1147,48,2,'#9aa3ab')}
   {text(238,1128,10,'u','naNw')}
   {lin(252,1147,48,2,'#9aa3ab')}
@@ -308,10 +322,10 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(813,1389,169,'dreiunddreißig | 33','naFooter')}
   {field('p33-a2_1',166,1271,39,'Lücke 1')}
   {field('p33-a2_2',283,1271,38,'Lücke 2')}
-  {field('p33-a2_3',377,1271,43,'Lücke 3')}
+  {field('p33-a2_3',362,1271,26,'Lücke 3')}
   {field('p33-a2_4',441,1271,38,'Lücke 4')}
-  {field('p33-a2_5',166,1296,34,'Lücke 5')}
-  {field('p33-a2_6',267,1296,34,'Lücke 6')}
+  {field('p33-a2_5',164,1296,37,'Lücke 5')}
+  {field('p33-a2_6',263,1296,36,'Lücke 6')}
   {field('p33-a2_7',405,1296,24,'Lücke 7')}
   {field('p33-a2_8',505,1296,34,'Lücke 8')}
   {field('p33-a2_9',166,1321,36,'Lücke 9')}
@@ -328,6 +342,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(170,196,760,'Das Hotel ist 150 Jahre alt. Es hat 45 Zimmer auf vier Stockwerken, aber leider keinen','naNw')}
   {text(169,221,21,'(a)','naNw')}
   {lin(197,240,48,2,'#9aa3ab')}
+  {text(193,219,60,'Aufzug','naHand naD19 naNw')}
   {text(252,221,181,'(FUGAZU) und keine','naNw')}
   {text(456,221,22,'(b)','naNw')}
   {text(699,221,278,'(ALGALENMIAK). Im Erdgeschoss','naNw')}
@@ -343,8 +358,8 @@ export function NativeAB12P31to46({page}:{page:string}){
   <div className="naSide" style={{left:88,top:407,color:'#94a3c0'}}>WÖRTER</div>
   {text(168,402,334,'a Das Radio funktioniert nicht, es ist','naNw')}
   {text(508,402,10,'k','naNw')}
-  {stext(519,402,88,'_ _ _ _ _',{color:'#9aa3ab'},'naNw')}
-  {text(614,402,4,'.','naNw')}
+  {stext(523,408,85,'aputt',{fontSize:13.5,lineHeight:'14px'},'naHand naD19 naNw')}
+  {stext(580,408,4,'.',{fontSize:13.5,lineHeight:'14px'},'naHand naD19 naNw')}
   {text(167,428,350,'b Er kommt immer zu spät, er ist nie p','naNw')}
   {text(666,428,4,'.','naNw')}
   {text(168,455,351,'c Der Deutschkurs ist nicht langweilig,','naNw')}
@@ -355,35 +370,33 @@ export function NativeAB12P31to46({page}:{page:string}){
   {stext(895,481,92,'_/3 Punkte',{fontStyle:'italic',fontSize:15,color:'#7a7a72',fontFamily:'Georgia'},'naNw')}
   {title('3',120,538,430,'Ergänzen Sie für, vor, nach und in.','naGB naNw')}
   <div className="naSide" style={{left:88,top:584,color:'#94a3c0'}}>STRUKTUREN</div>
-  {stext(166,584,16,'■',{color:'#1a3f9e'},'naNw')}
-  {text(191,584,355,'Wann bist du mit der Ausbildung fertig?','naNw')}
-  {stext(601,584,16,'■',{color:'#1a3f9e'},'naNw')}
-  {text(626,584,314,'Warst du schon einmal in England?','naNw')}
-  {stext(166,609,16,'▲',{color:'#2eb75b'},'naNw')}
-  {lin(174,628,26,2,'#9aa3ab')}
-  {text(208,609,130,'(a) einem Jahr.','naNw')}
-  {stext(601,609,16,'▲',{color:'#2eb75b'},'naNw')}
-  {text(625,609,23,'Ja,','naNw')}
-  {text(739,609,139,'(d) fünf Jahren.','naNw')}
-  {stext(166,635,16,'■',{color:'#1a3f9e'},'naNw')}
-  {text(191,635,170,'Und was machst du','naNw')}
-  {text(452,635,56,'(b) der','naNw')}
-  {stext(601,635,16,'■',{color:'#1a3f9e'},'naNw')}
-  {text(626,635,32,'Wie','naNw')}
-  {text(665,635,83,'hat es dir','naNw')}
-  {text(753,635,80,'gefallen?','naNw')}
-  {text(190,659,107,'Ausbildung?','naNw')}
-  {stext(601,659,16,'▲',{color:'#2eb75b'},'naNw')}
-  {text(627,659,113,'Es war super.','naNw')}
-  {text(831,659,74,'(e) sechs','naNw')}
-  {stext(166,687,16,'▲',{color:'#2eb75b'},'naNw')}
-  {text(191,687,72,'Ich gehe','naNw')}
-  {text(354,687,168,'(c) zwei Jahre nach','naNw')}
-  {text(626,687,124,'Monaten habe','naNw')}
-  {text(757,687,151,'ich wirklich sehr','naNw')}
-  {text(191,711,69,'London.','naNw')}
-  {text(625,711,219,'gut Englisch gesprochen.','naNw')}
-  {stext(895,712,92,'_/4 Punkte',{fontStyle:'italic',fontSize:15,color:'#7a7a72',fontFamily:'Georgia'},'naNw')}
+  {stext(166,592,16,'■',{color:'#1a3f9e'},'naNw')}
+  {text(191,592,355,'Wann bist du mit der Ausbildung fertig?','naNw')}
+  {stext(601,592,16,'■',{color:'#1a3f9e'},'naNw')}
+  {text(626,592,314,'Warst du schon einmal in England?','naNw')}
+  {stext(166,618,16,'▲',{color:'#2eb75b'},'naNw')}
+  {lin(183,637,24,2,'#9aa3ab')}
+  {text(181,616,34,'In','naHand naD19 naNw')}
+  {text(208,618,130,'(a) einem Jahr.','naNw')}
+  {stext(601,618,16,'▲',{color:'#2eb75b'},'naNw')}
+  {text(625,618,23,'Ja,','naNw')}
+  {text(739,618,139,'(d) fünf Jahren.','naNw')}
+  {stext(166,645,16,'■',{color:'#1a3f9e'},'naNw')}
+  {text(191,645,170,'Und was machst du','naNw')}
+  {text(452,645,56,'(b) der','naNw')}
+  {stext(601,645,16,'■',{color:'#1a3f9e'},'naNw')}
+  {text(626,645,210,'Wie hat es dir gefallen?','naNw')}
+  {text(190,672,107,'Ausbildung?','naNw')}
+  {stext(601,672,16,'▲',{color:'#2eb75b'},'naNw')}
+  {text(627,672,113,'Es war super.','naNw')}
+  {text(831,672,74,'(e) sechs','naNw')}
+  {stext(166,698,16,'▲',{color:'#2eb75b'},'naNw')}
+  {text(191,698,72,'Ich gehe','naNw')}
+  {text(354,698,168,'(c) zwei Jahre nach','naNw')}
+  {text(626,698,282,'Monaten habe ich wirklich sehr','naNw')}
+  {text(191,725,69,'London.','naNw')}
+  {text(625,725,219,'gut Englisch gesprochen.','naNw')}
+  {stext(895,725,92,'_/4 Punkte',{fontStyle:'italic',fontSize:15,color:'#7a7a72',fontFamily:'Georgia'},'naNw')}
   {title('4',120,771,400,'Was ist richtig? Kreuzen Sie an.','naGB naNw')}
   <div className="naSide" style={{left:88,top:820,color:'#94a3c0'}}>STRUKTUREN</div>
   {text(166,816,8,'a','naNw')}
@@ -427,9 +440,9 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(451,1165,232,'(5) sehr nett. Vielen Dank!','naNw')}
   {stext(895,1166,92,'_/5 Punkte',{fontStyle:'italic',fontSize:15,color:'#7a7a72',fontFamily:'Georgia'},'naNw')}
   {art('score',140,1205,560,143)}
-  {text(444,1365,223,'www.hueber.de/menschen/lernen','naFooter')}
+  {text(444,1365,223,'www.hueber.de/menschen/lernen','naUrl')}
   {art('modul-tab',10,1382,74,38)}
-  {text(98,1393,172,'34 | vierunddreißig','naFooter')}
+  {text(98,1386,172,'34 | vierunddreißig','naFooter')}
   {field('p34-1b',484,217,193,'1 (b)')}
   {field('p34-1c',433,242,299,'1 (c)')}
   {field('p34-1d',544,269,209,'1 (d)')}
@@ -437,10 +450,10 @@ export function NativeAB12P31to46({page}:{page:string}){
   {field('p34-2b',520,425,140,'2 b: p...')}
   {field('p34-2c',584,451,100,'2 c: l...')}
   {field('p34-2d',464,476,56,'2 d: k...')}
-  {field('p34-3b',366,630,80,'3 (b)')}
-  {field('p34-3c',270,682,80,'3 (c)')}
-  {field('p34-3d',655,608,80,'3 (d)')}
-  {field('p34-3e',747,658,80,'3 (e)')}
+  {field('p34-3b',380,640,66,'3 (b)')}
+  {field('p34-3c',284,693,66,'3 (c)')}
+  {field('p34-3d',668,617,66,'3 (d)')}
+  {field('p34-3e',752,671,73,'3 (e)')}
   {dot('r4a','einer',403,821,'4a einer')}
   {dot('r4a','einen',493,821,'4a einen')}
   {dot('r4a','einem',586,821,'4a einem')}
@@ -458,11 +471,11 @@ export function NativeAB12P31to46({page}:{page:string}){
   {field('p34-5-3',295,1109,258,'5 (3)')}
   {field('p34-5-4',190,1135,256,'5 (4)')}
   {field('p34-5-5',190,1160,255,'5 (5)')}
-  {check('34-1',169,333,{'p34-1b':'Klimaanlage','p34-1c':'Internetverbindung','p34-1d':'Fernseher','p34-1e':'Dusche'})}
-  {check('34-2',560,470,{'p34-2b':'ünktlich|pünktlich','p34-2c':'ustig|lustig','p34-2d':'alt|kalt'})}
-  {check('34-3',700,737,{'p34-3b':'nach','p34-3c':'für','p34-3d':'vor','p34-3e':'nach|Nach'})}
-  {check('34-4',640,922,{'r4a':'einer','r4b':'dem','r4c':'einem','r4d':'einen'})}
-  {check('34-5',700,1162,{'p34-5-1':'Was kann','p34-5-2':'Es gibt','p34-5-3':'Das tut','p34-5-4':'Ich kümmere','p34-5-5':'Das ist'})}
+  {check('34-1',1000,148,{'p34-1b':'Klimaanlage','p34-1c':'Internetverbindung','p34-1d':'Fernseher','p34-1e':'Dusche'})}
+  {check('34-2',1000,361,{'p34-2b':'ünktlich|pünktlich','p34-2c':'ustig|lustig','p34-2d':'alt|kalt'})}
+  {check('34-3',1000,538,{'p34-3b':'nach','p34-3c':'für','p34-3d':'vor','p34-3e':'nach|Nach'})}
+  {check('34-4',1000,771,{'r4a':'einer','r4b':'dem','r4c':'einem','r4d':'einen'})}
+  {check('34-5',1000,952,{'p34-5-1':'Was kann','p34-5-2':'Es gibt','p34-5-3':'Das tut','p34-5-4':'Ich kümmere','p34-5-5':'Das ist'})}
  </>}
  {page==='35'&&<>
   {art('0',934,36,133,1358)}
