@@ -377,19 +377,19 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(542,419,40,'nett','naVoc naNw')}
   {text(553,439,90,'Sehr nett!','naVoc naNw')}
   {text(542,488,40,'Wo?','naVocH11 naVocHQ naNw')}
-  {text(542,523,25,'an','naVoc naNw')}
-  {text(542,542,30,'auf','naVoc naNw')}
-  {text(542,569,60,'hinter','naVoc naNw')}
-  {text(542,596,20,'in','naVoc naNw')}
-  {text(542,621,60,'neben','naVoc naNw')}
-  {text(542,646,45,'über','naVoc naNw')}
-  {text(542,676,50,'unter','naVoc naNw')}
-  {text(542,703,30,'vor','naVoc naNw')}
-  {text(542,724,85,'zwischen','naVoc naNw')}
+  {text(542,513,25,'an','naVoc naNw')}
+  {text(542,539,30,'auf','naVoc naNw')}
+  {text(542,565,60,'hinter','naVoc naNw')}
+  {text(542,590,20,'in','naVoc naNw')}
+  {text(542,616,60,'neben','naVoc naNw')}
+  {text(542,642,45,'über','naVoc naNw')}
+  {text(542,668,50,'unter','naVoc naNw')}
+  {text(542,693,30,'vor','naVoc naNw')}
+  {text(542,719,85,'zwischen','naVoc naNw')}
   {text(541,770,240,'Weitere wichtige Wörter','naVocH11 naNw')}
   {text(542,801,110,'Frage die, -n','naVoc naNw')}
   {text(542,827,135,'Moment der, -e','naVoc naNw')}
-  {text(553,854,130,'Einen Moment!','naVoc naNw')}
+  {text(553,848,130,'Einen Moment!','naVoc naNw')}
   {text(542,890,140,'an·machen, hat','naVoc naNw')}
   {text(553,914,100,'angemacht','naVoc naNw')}
   {text(552,944,270,'A: ein·schalten, hat eingeschaltet','naVocG naNw')}
