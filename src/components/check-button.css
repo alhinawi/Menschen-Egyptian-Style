@@ -1,6 +1,6 @@
 button.compactCheckButton{display:inline-flex!important;align-items:center;justify-content:center;flex:none;width:32px!important;min-width:32px!important;height:32px!important;min-height:32px!important;padding:0!important;border:1.5px solid #6c9679!important;border-radius:50%!important;background:#fffefa!important;color:#315a4a!important;font:700 21px/1 Arial,sans-serif!important;box-sizing:border-box;vertical-align:middle;cursor:pointer}
 button.compactCheckButton:focus-visible{outline:3px solid #1769e0;outline-offset:3px}
-html[data-theme=dark] button.compactCheckButton{background:var(--night-paper,#202a25)!important;color:var(--night-ink,#f9fbff)!important;border-color:var(--night-detail,#a8d4f1)!important}
+html[data-theme=dark] button.compactCheckButton:not(.naCanvas *):not(.naRCanvas *):not([class*=nativeAB] *):not([class*=nativeKB] *){background:var(--night-paper,#202a25)!important;color:var(--night-ink,#f9fbff)!important;border-color:var(--night-detail,#a8d4f1)!important}
 button.compactCheckButton{position:relative;overflow:visible!important}
 button.compactCheckButton::after{content:'';position:absolute;width:var(--check-hit-size,40px);height:var(--check-hit-size,40px);left:var(--check-hit-left,0);top:var(--check-hit-top,0);background:transparent;border-radius:8px;pointer-events:auto}
 

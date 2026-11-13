@@ -410,20 +410,22 @@ body[data-palette="2"] .themesMenu button[aria-pressed=true]{background:#315a4a;
 html[data-theme="dark"]{color-scheme:dark}
 html[data-theme="dark"] body{--accent:var(--night-accent,#efb7c3);--ground:var(--night-ground,#111916);background:var(--night-ground,#111916);color:var(--night-ink,#e9eee8)}
 html[data-theme="dark"] .page{background:var(--night-paper,#202a25);color:var(--night-ink,#e9eee8)}
-html[data-theme="dark"] .page :is(h1,h2,h3,p,div,span,small,label,td,th,b,i,em,strong){color:inherit}
-html[data-theme="dark"] .page :is(.sub,.track,.listen,.helper,.pageNo,.bookNo,.handwritten,.numberGrid b,.profile i,.treeJoin,.bookDialogue small,.speakerTable th){color:var(--night-detail,#a8d4f1)}
-html[data-theme="dark"] :is(button,header select,.controls select,.actionLink){background:var(--night-control,#29372f);color:var(--night-ink,#e9eee8);border-color:#718276}
-html[data-theme="dark"] .page :is(input,select,textarea){background-color:var(--night-control,#29372f)!important;color:var(--night-ink,#e9eee8)!important;-webkit-text-fill-color:var(--night-ink,#e9eee8)!important;border-color:#94aa9c}
+html[data-theme="dark"] .page :is(h1,h2,h3,p,div,span,small,label,td,th,b,i,em,strong):not(.naCanvas):not(.naCanvas *):not(.naRCanvas):not(.naRCanvas *):not(.nativeAB12):not(.nativeAB11):not(.nativeKB12):not(.nativeKb11):not([class*=nativeAB]):not([class*=nativeAB] *):not([class*=nativeKB]):not([class*=nativeKB] *){color:inherit}
+html[data-theme="dark"] .page :is(.sub,.track,.listen,.helper,.pageNo,.bookNo,.handwritten,.numberGrid b,.profile i,.treeJoin,.bookDialogue small,.speakerTable th):not(.naCanvas *):not(.naRCanvas *):not([class*=nativeAB] *):not([class*=nativeKB] *){color:var(--night-detail,#a8d4f1)}
+html[data-theme="dark"] :is(button,header select,.controls select,.actionLink):not(.naCanvas *):not(.naRCanvas *):not([class*=nativeAB] *):not([class*=nativeKB] *){background:var(--night-control,#29372f);color:var(--night-ink,#e9eee8);border-color:#718276}
+html[data-theme="dark"] .page :is(input,select,textarea):not(.naCanvas *):not(.naRCanvas *):not([class*=nativeAB] *):not([class*=nativeKB] *){background-color:var(--night-control,#29372f)!important;color:var(--night-ink,#e9eee8)!important;-webkit-text-fill-color:var(--night-ink,#e9eee8)!important;border-color:#94aa9c}
+/* Native page replicas keep their printed-paper colors in every theme: their roots would otherwise inherit the night ink and wash out their typed text. */
+html[data-theme="dark"] .page :is(.nativeAB12,.nativeAB11,.nativeKB12,.nativeKb11,[class*=nativeAB],[class*=nativeKB]){background:#fff;color:#252723;color-scheme:light}
 html[data-theme="dark"] .page select{background-image:linear-gradient(45deg,transparent 50%,#bed9ca 50%),linear-gradient(135deg,#bed9ca 50%,transparent 50%)!important}
 html[data-theme="dark"] .page select option{color:var(--night-ink,#e9eee8);background:var(--night-control,#29372f)}
-html[data-theme="dark"] .page .check{background:var(--night-control,#29372f);color:#bcdfca;border-color:#8ea998}
+html[data-theme="dark"] .page .check:not(.naCanvas *):not(.naRCanvas *){background:var(--night-control,#29372f);color:#bcdfca;border-color:#8ea998}
 html[data-theme="dark"] .page :is(.wordbank,.sourceNotice,.info,.grammarNote,.profile,.alphabetGrid div,.dasbinich,.communication,aside){background:var(--night-panel,#34443b);color:var(--night-ink,#e9eee8);border-color:#8ca06a}
 html[data-theme="dark"] .page :is(.n,.bigN){color:var(--night-paper,#202a25);background:#efd55b}
 html[data-theme="dark"] .page .magazine{background:#542d22;color:#f8e9e2}
 html[data-theme="dark"] .page .artText{color:transparent!important}
 html[data-theme="dark"] .themesMenu button[aria-pressed=true]{background:var(--night-accent,#efb7c3);color:#241c20;border-color:var(--night-accent,#efb7c3)}
-html[data-theme="dark"] .page :is(.answerCorrect,.feedback.good,.good),html[data-theme="dark"] .answerToast.good{background:#244635!important;color:#d7f1df!important;-webkit-text-fill-color:#d7f1df!important}
-html[data-theme="dark"] .page :is(.answerWrong,.retry),html[data-theme="dark"] .answerToast.retry{background:#572c2b!important;color:#ffe0d8!important;-webkit-text-fill-color:#ffe0d8!important}
+html[data-theme="dark"] .page :is(.answerCorrect,.feedback.good,.good):not(.naCanvas *):not(.naRCanvas *),html[data-theme="dark"] .answerToast.good{background:#244635!important;color:#d7f1df!important;-webkit-text-fill-color:#d7f1df!important}
+html[data-theme="dark"] .page :is(.answerWrong,.retry):not(.naCanvas *):not(.naRCanvas *),html[data-theme="dark"] .answerToast.retry{background:#572c2b!important;color:#ffe0d8!important;-webkit-text-fill-color:#ffe0d8!important}
 html[data-theme="dark"] .meaningPopup .selected{background:var(--night-accent,#efb7c3);color:#241c20}
 html[data-theme="dark"] .selectionMeaningAction{background:var(--night-accent,#efb7c3);color:#241c20}
 html[data-theme="dark"] body[data-translation-mode="sentence"] .tapSentence:hover{background:#405448}
