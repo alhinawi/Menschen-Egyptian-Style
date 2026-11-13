@@ -48,7 +48,7 @@ export function NativeAB11({page}:{page:string}){
  {text(635,1031,24,'▲','nabGreen')}{field('4-ich',661,1031,128,'4b Ich')}{text(793,1031,170,'heiße Philipp.')}
  {text(635,1057,121,'■  Und woher')}{field('4-kommst',783,1057,102,'4b kommst')}{text(889,1057,55,'du?')}
  {text(635,1083,120,'▲  Ich komme')}{field('4-aus',783,1083,102,'4b aus')}{text(889,1083,150,'der Schweiz.')}
- {check('4',215,1168,{'4-wie':'Wie','4-heisse':'heiße','4-woher':'woher','4-du':'du','4-komme':'komme','4-und':'und','4-bist':'bist','4-ich':'Ich','4-kommst':'kommst','4-aus':'aus'})}
+ {check('4',215,1147,{'4-wie':'Wie','4-heisse':'heiße','4-woher':'woher','4-du':'du','4-komme':'komme','4-und':'und','4-bist':'bist','4-ich':'Ich','4-kommst':'kommst','4-aus':'aus'})}
  {title('5',1178,'Länder','KB 4','Wörter')}{text(211,1216,310,'a  Welches Land passt? Ordnen Sie zu.','nabSmallTitle')}{text(530,1216,490,'Deutschland | Frankreich | Österreich | die Schweiz | die Türkei','nabBank nabLanderBank')}
  {img('landmarks',215,1250,811,111)}
  {['Brandenburger Tor','Eiffelturm','Stephansdom','Matterhorn','Hagia Sophia'].map((s,i)=><div key={s}>{text([230,415,534,705,908][i],1369,[155,100,145,150,150][i],s,'nabCaption')}{i===2?text(545,1394,110,'Österreich','nabExample'):field('5-'+i,[224,397,545,685,888][i],1394,[125,105,110,140,140][i],'5 '+s)}</div>)}
