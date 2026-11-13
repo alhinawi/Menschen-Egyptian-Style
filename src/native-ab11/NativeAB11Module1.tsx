@@ -220,7 +220,7 @@ export function NativeAB11Module1({page}:{page:string}){
  {head('RÜCKBLICK')}{txt(135,212,680,'Wählen Sie eine Aufgabe zu Lektion 2','mBlue')}
  {title('1',252,'Was ist richtig? Kreuzen Sie an und vergleichen Sie mit dem Kursbuch auf Seite 78.','',135,710)}
  {txt(461,289,130,'Helga Stiemer','mTableHead mSmall')}{txt(586,289,65,'Carlos','mTableHead mSmall')}{txt(654,289,65,'Sonja','mTableHead mSmall')}{txt(716,289,120,'Bo Martinson','mTableHead mSmall')}
- {['Sie arbeiten nicht.','Sie sind nicht verheiratet.','Sie kommen nicht aus Deutschland.','Er hat keine Kinder.','Er wohnt in Essen.','Sie wohnt in Leipzig.'].map((s,r)=><span key={s}>{txt(176,321+r*29,278,String.fromCharCode(97+r)+'  '+s)}{['helga','carlos','sonja','bo'].map((person,c)=>{const id='t-'+String.fromCharCode(97+r)+'-'+person;return <input key={id} type="checkbox" className="mCheckbox" data-native-field={id} aria-label={s+' '+person} style={{left:[467,588,658,763][c],top:Y(319+r*29)}} checked={r===0&&c<2||v[id]==='true'} disabled={r===0&&c<2} onChange={e=>set(id,''+e.target.checked)}/>})}</span>)}
+ {['Sie arbeiten nicht.','Sie sind nicht verheiratet.','Sie kommen nicht aus Deutschland.','Er hat keine Kinder.','Er wohnt in Essen.','Sie wohnt in Leipzig.'].map((s,r)=><span key={s}>{txt(176,321+r*29,278,String.fromCharCode(97+r)+'  '+s,'mSmall')}{['helga','carlos','sonja','bo'].map((person,c)=>{const id='t-'+String.fromCharCode(97+r)+'-'+person;return <input key={id} type="checkbox" className="mCheckbox" data-native-field={id} aria-label={s+' '+person} style={{left:[467,588,658,763][c],top:Y(319+r*29)}} checked={r===0&&c<2||v[id]==='true'} disabled={r===0&&c<2} onChange={e=>set(id,''+e.target.checked)}/>})}</span>)}
  {rule('t1',168,507,()=>data.fields.filter(f=>f.group==='t1').every(f=>(f.id==='t-a-helga'||f.id==='t-a-carlos'?'true':v[f.id]||'false')===f.answer))}
  {title('2',549,'Wählen Sie eine Kursteilnehmerin / einen Kursteilnehmer oder einen\nProminenten. Ergänzen Sie den Steckbrief und schreiben Sie einen Text.','',135,710)}
  {txt(171,602,223,'STECKBRIEF','mBank')}
@@ -229,8 +229,8 @@ export function NativeAB11Module1({page}:{page:string}){
  {txt(143,859,680,'Wählen Sie eine Aufgabe zu Lektion 3','mBlue')}
  {title('1',900,'Lesen Sie den Stammbaum im Kursbuch auf Seite 19. Was sagt Olga?','',143,690)}{art('olga',750,936,93,135)}
  {txt(177,938,400,'„Ich bin Olga. Das ist mein Mann. Er heißt')}{f('o-1',578,936,142)}
- {txt(177,972,103,'Ich habe zwei')}{f('o-2',285,970,120)}
- {txt(177,1006,103,'Meine Tochter')}{f('o-3',285,1004,243)}{txt(535,1006,100,'und mein')}{f('o-4',177,1038,353)}{txt(535,1040,20,'“')}{check('r31',177,1076)}
+ {txt(177,972,130,'Ich habe zwei')}{f('o-2',312,970,120)}
+ {txt(177,1006,130,'Meine Tochter')}{f('o-3',312,1004,216)}{txt(535,1006,100,'und mein')}{f('o-4',177,1038,353)}{txt(535,1040,20,'“')}{check('r31',177,1076)}
  {title('2',1120,'Ihre Familie. Was sagt Ihre Mutter / Ihr Bruder …? Schreiben Sie.','',143,690)}
  {txt(193,1163,270,'Ich heiße …\nDas ist mein/meine …\nSie/Er …','mExample')}{open('r32-text',470,1163,340,76,'2 eigener Familientext')}
  </>}
