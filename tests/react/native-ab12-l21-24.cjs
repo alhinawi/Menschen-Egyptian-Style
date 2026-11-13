@@ -307,5 +307,31 @@ for(const width of[320,390]){
  assert.equal(await p.evaluate(()=>localStorage.getItem('native-ab12-73')),null,'reset clears storage');
  console.log(width,'p73 interaction/grade/persist/reset PASS');
  await p.close();
+ // page 74: Selbsteinschaetzung - free-writing fields, confidence dot radios, no grading
+ p=await openPage(b,width,'74');
+ const pg74=p.locator('.page[data-page="74"]');
+ assert.equal(await pg74.locator('.nativeAB12[data-native-ab12="74"]').count(),1,'native p74 rendered');
+ assert.equal(await pg74.locator('[data-native-field]').count(),26,'26 free-writing fields (3+3+2+6+4 kann, 8 kenne)');
+ for(const id of['p74-s1-1','p74-s2-3','p74-s3-2','p74-s4-3b','p74-s5-4','p74-k1-1','p74-k2-2','p74-k3-2','p74-k4-2'])assert.equal(await pg74.locator('[data-native-field="'+id+'"]').count(),1,'field '+id);
+ assert.equal(await pg74.locator('[data-check]').count(),0,'no check buttons on self-assessment page');
+ assert.equal(await pg74.locator('input.naDot[type="radio"]').count(),27,'27 confidence radios (9 rows x 3)');
+ // radio select + group exclusivity
+ await pg74.locator('input.naDot[aria-label="Selbsteinschätzung s1 gut"]').check();
+ assert.equal(await pg74.locator('input.naDot[aria-label="Selbsteinschätzung s1 gut"]').isChecked(),true,'s1 dot 1 checked');
+ await pg74.locator('input.naDot[aria-label="Selbsteinschätzung s1 mittel"]').check();
+ assert.equal(await pg74.locator('input.naDot[aria-label="Selbsteinschätzung s1 gut"]').isChecked(),false,'s1 dot 1 released');
+ assert.equal(await pg74.locator('input.naDot[aria-label="Selbsteinschätzung s1 mittel"]').isChecked(),true,'s1 dot 2 checked');
+ await pg74.locator('[data-native-field="p74-s1-1"]').fill('müde');
+ // saved-reload
+ await p.reload();await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');await p.evaluate(()=>window.bookPage([...document.querySelectorAll('.page')].findIndex(e=>e.dataset.page==='74')));await p.waitForTimeout(350);
+ assert.equal(await p.locator('.page[data-page="74"] [data-native-field="p74-s1-1"]').inputValue(),'müde','saved field reloaded');
+ assert.equal(await p.evaluate(()=>JSON.parse(localStorage.getItem('native-ab12-74')||'{}')['s1']),'2','saved dot reloaded');
+ assert.equal(await p.locator('.page[data-page="74"] input.naDot[aria-label="Selbsteinschätzung s1 mittel"]').isChecked(),true,'dot still checked after reload');
+ // reset clears
+ await p.locator('.pageResetTrigger').click();await p.getByRole('button',{name:'Reset',exact:true}).click();
+ assert.equal(await p.locator('.page[data-page="74"] [data-native-field="p74-s1-1"]').inputValue(),'','reset clears field');
+ assert.equal(await p.evaluate(()=>localStorage.getItem('native-ab12-74')),null,'reset clears storage');
+ console.log(width,'p74 interaction/persist/reset PASS');
+ await p.close();
 }
 }finally{await b.close();server.close()}})().catch(e=>{console.error(e);server.close();process.exitCode=1});
