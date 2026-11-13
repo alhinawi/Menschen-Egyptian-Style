@@ -68,7 +68,7 @@ function trimBlobs() {
   }
 }
 
-async function ensureSeekable(a: HTMLAudioElement, resumeAt?: number): Promise<void> {
+export async function ensureSeekable(a: HTMLAudioElement, resumeAt?: number): Promise<void> {
   const src = httpSrc(a);
   if (!src || busy.has(a) || !(await rangesBroken(src))) return;
   busy.add(a);
@@ -99,22 +99,3 @@ async function ensureSeekable(a: HTMLAudioElement, resumeAt?: number): Promise<v
   }
 }
 
-export function installSeekableAudio() {
-  const realPlay = HTMLMediaElement.prototype.play;
-  HTMLMediaElement.prototype.play = function (this: HTMLMediaElement) {
-    if (this instanceof HTMLAudioElement && httpSrc(this)) {
-      return ensureSeekable(this).then(() => realPlay.call(this));
-    }
-    return realPlay.call(this);
-  };
-  // Seeking a native-controls player before the first play hits the same
-  // restart; convert on demand and restore the requested position.
-  document.addEventListener(
-    'seeking',
-    e => {
-      const a = e.target;
-      if (a instanceof HTMLAudioElement && httpSrc(a)) void ensureSeekable(a, a.currentTime);
-    },
-    true,
-  );
-}
