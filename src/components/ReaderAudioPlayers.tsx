@@ -5,27 +5,29 @@ const time=(n:number)=>Number.isFinite(n)?`${Math.floor(n/60)}:${String(Math.flo
 function Player({audio}:{audio:HTMLAudioElement}){
  const [state,setState]=useState({time:audio.currentTime,duration:audio.duration,paused:audio.paused});
  useEffect(()=>{const sync=()=>setState({time:audio.currentTime,duration:audio.duration,paused:audio.paused});const events=['timeupdate','durationchange','loadedmetadata','play','pause','ended','seeked'];events.forEach(e=>audio.addEventListener(e,sync));audio.preload='metadata';sync();return()=>events.forEach(e=>audio.removeEventListener(e,sync))},[audio]);
- const src=audio.getAttribute('src')||audio.querySelector('source')?.getAttribute('src')||'';
+ // After the no-range host fix swaps in a blob: URL, the track label still
+ // comes from the original file path kept on the element.
+ const src=audio.dataset.originalSrc||audio.getAttribute('src')||audio.querySelector('source')?.getAttribute('src')||'';
  const track=src.match(/cd(\d+)-track(\d+)/i);
- const label=track?`CD${track[1]} · Track ${track[2]}`:audio.getAttribute('aria-label')||'Originalaudio';
+ const label=track?`CD${track[1]} · Track ${track[2]}`:audio.getAttribute('aria-label')||'Audio player';
  const duration=Number.isFinite(state.duration)?state.duration:0;
  return <section className="readerAudioPlayer" aria-label={label}>
   <div className="readerAudioHeading"><strong>{label}</strong><output aria-label="Playback time">{time(state.time)} / {time(duration)}</output></div>
-  <div className="readerAudioTransport"><button type="button" aria-label={state.paused?'Play '+label:'Pause '+label} onClick={()=>{if(audio.paused){document.querySelectorAll('audio').forEach(a=>{if(a!==audio)a.pause()});void audio.play()}else audio.pause()}}>{state.paused?'▶':'Ⅱ'}</button><input type="range" aria-label={'Seek '+label} min={0} max={duration||1} step={0.1} value={Math.min(state.time,duration||1)} disabled={!duration} onChange={e=>{audio.currentTime=Number(e.target.value);setState(s=>({...s,time:Number(e.target.value)}))}}/></div>
+  <div className="readerAudioTransport"><button type="button" disabled={!src} aria-label={state.paused?'Play '+label:'Pause '+label} onClick={()=>{if(audio.paused){document.querySelectorAll('audio').forEach(a=>{if(a!==audio)a.pause()});void audio.play()}else audio.pause()}}>{state.paused?'▶':'Ⅱ'}</button><input type="range" aria-label={'Seek '+label} min={0} max={duration||1} step={0.1} value={Math.min(state.time,duration||1)} disabled={!duration} onChange={e=>{audio.currentTime=Number(e.target.value);setState(s=>({...s,time:Number(e.target.value)}))}}/></div>
  </section>;
 }
 export function ReaderAudioPlayers(){
  const [active,setActive]=useState<HTMLAudioElement|null>(null);
+ const [idle]=useState(()=>new Audio());
  useEffect(()=>{
-  const show=(event:Event)=>{if(event.target instanceof HTMLAudioElement)setActive(event.target)};
-  // Calling play() on a track already playing does not fire another play event.
-  // Observe the playback request as well, so a hidden player can be reopened.
+  const reveal=(audio:HTMLAudioElement)=>setActive(audio);
+  const show=(event:Event)=>{if(event.target instanceof HTMLAudioElement)reveal(event.target)};
+  // Observe playback requests so the permanent player follows every source.
   const original=HTMLMediaElement.prototype.play;
-  const play=function(this:HTMLMediaElement){if(this instanceof HTMLAudioElement)setActive(this);return original.call(this)};
+  const play=function(this:HTMLMediaElement){if(this instanceof HTMLAudioElement)reveal(this);return original.call(this)};
   HTMLMediaElement.prototype.play=play;document.addEventListener('play',show,true);
   return()=>{document.removeEventListener('play',show,true);if(HTMLMediaElement.prototype.play===play)HTMLMediaElement.prototype.play=original};
  },[]);
- useEffect(()=>{if(!active)return;const panel=document.querySelector('.readerActiveAudio');const sync=()=>{const h=panel?.getBoundingClientRect().height||108;document.documentElement.style.setProperty('--active-audio-height',`${h}px`);document.body.classList.add('hasActiveAudio')};const observer=new ResizeObserver(sync);if(panel)observer.observe(panel);sync();return()=>{observer.disconnect();document.body.classList.remove('hasActiveAudio')}},[active]);
  const [slot,setSlot]=useState<HTMLElement|null>(null),[audios,setAudios]=useState<HTMLAudioElement[]>([]);
  useEffect(()=>{
   let host:HTMLElement|null=null;const marked=new Set<HTMLAudioElement>();
@@ -41,5 +43,5 @@ export function ReaderAudioPlayers(){
    setAudios(old=>old.length===next.length&&old.every((a,i)=>a===next[i])?old:next);
   };update();const timer=setInterval(update,250);return()=>{clearInterval(timer);host?.remove();marked.forEach(a=>delete a.dataset.readerAudioSource)};
  },[]);
- return <>{slot&&createPortal(audios.map((audio,i)=><Player key={audio.getAttribute('src')||i} audio={audio}/>),slot)}{active&&createPortal(<aside className="readerActiveAudio" aria-label="Active audio"><Player audio={active}/><button className="readerActiveClose" aria-label="Hide active player" onClick={()=>setActive(null)}>×</button></aside>,document.body)}</>;
+ return <>{slot&&createPortal(<Player audio={active||audios[0]||idle}/>,slot)}</>;
 }
