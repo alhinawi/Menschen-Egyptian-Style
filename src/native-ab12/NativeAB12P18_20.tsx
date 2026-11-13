@@ -29,35 +29,35 @@ export function NativeAB12P18_20({page}:{page:string}){
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}"}</style><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-500.ttf') format('truetype');font-weight:500}"}</style><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='18'&&<>
   {art('head-photo',6,38,348,81)}
   <div style={{position:'absolute',left:354,top:38,width:621,height:81,background:'#fbd479'}}/>
   <div className="naText" style={{left:417,top:56,width:520,fontFamily:"FiraSans,'Trebuchet MS',sans-serif",fontWeight:700,fontSize:34,color:'#2b1608'}}><Words text="In Giesing wohnt das Leben!"/></div>
   {kb(78,160,'KB 3')}
-  {title('1',125,156,600,'Wo sind die Personen?','naOB naNw')}
+  {title('1',116,180,600,'Wo sind die Personen?','naOB naNw')}
   <div className="naSide" style={{left:55,top:225}}>WÖRTER</div>
   {audio('assets/ab-a12-cd2-track10.mp3',38,216,'2 10')}
   {art('globe',70,240,42,42)}
   {text(125,216,20,'a','naExL')}
-  {text(161,214,400,'Hören Sie und nummerieren Sie.')}
-  {circle('p18-nKirche',155,258,'Kirche Nummer')}
-  {circle('p18-nSpielplatz',251,258,'Spielplatz Nummer')}
-  <div className="naCNumPrint" style={{left:377,top:258}}>1</div>
-  {circle('p18-nWald',498,258,'Wald Nummer')}
-  {circle('p18-nMeer',576,258,'Meer Nummer')}
-  {circle('p18-nCafé',662,258,'Café Nummer')}
-  {circle('p18-nHafen',745,258,'Hafen Nummer')}
-  {text(186,253,60,'Kirche','naF21')}
-  {text(281,253,90,'Spielplatz','naF21')}
-  {text(407,253,90,'Flughafen','naF21')}
-  {text(523,253,55,'Wald','naF21')}
-  {text(605,253,55,'Meer','naF21')}
-  {text(696,253,40,'Café','naF21')}
-  {text(771,253,55,'Hafen','naF21')}
+  {text(158,218,400,'Hören Sie und nummerieren Sie.','naIns')}
+  {circle('p18-nKirche',159,259,'Kirche Nummer')}
+  {circle('p18-nSpielplatz',255,259,'Spielplatz Nummer')}
+  <div className="naCNumPrint" style={{left:380,top:259}}>1</div>
+  {circle('p18-nWald',506,259,'Wald Nummer')}
+  {circle('p18-nMeer',588,259,'Meer Nummer')}
+  {circle('p18-nCafé',670,259,'Café Nummer')}
+  {circle('p18-nHafen',744,259,'Hafen Nummer')}
+  {text(188,256,60,'Kirche','naS19')}
+  {text(282,256,90,'Spielplatz','naS19')}
+  {text(408,256,90,'Flughafen','naS19')}
+  {text(533,256,55,'Wald','naS19')}
+  {text(615,256,55,'Meer','naS19')}
+  {text(697,256,40,'Café','naS19')}
+  {text(773,256,55,'Hafen','naS19')}
   {check('g1',850,242,{'p18-nKirche':'3','p18-nSpielplatz':'2','p18-nWald':'6','p18-nMeer':'5','p18-nCafé':'7','p18-nHafen':'4'},'naCheckCol')}
   {text(125,302,20,'b','naExL')}
-  {text(161,302,500,'Ergänzen Sie aus a. Notieren und vergleichen Sie.')}
+  <div className="naText naIns" style={{left:158,top:308,width:500}}><Words text="Ergänzen Sie aus "/><span className="naExL" style={{fontSize:"inherit"}}>a.</span><Words text=" Notieren und vergleichen Sie."/></div>
   <div style={{position:'absolute',left:150,top:335,width:825,height:32,background:'#f0ead6'}}/>
   <div className="naTFrame" style={{left:150,top:335,width:825,height:238}}/>
   <div className="naTCol" style={{left:443,top:335,height:238}}/>
@@ -72,7 +72,7 @@ export function NativeAB12P18_20({page}:{page:string}){
   {Array.from({length:7},(_,i)=>field('p18-ms'+(i+1),650,367+i*29.5,315,'Meine Sprache Zeile '+(i+1),'naFieldBlank'))}
   {check('g2',150,577,{'p18-dCafé':'Café','p18-dHafen':'Hafen','p18-dFlughafen':'Flughafen','p18-dKirche':'Kirche','p18-dSpielplatz':'Spielplatz'},'naCheckSm')}
   {kb(78,610,'KB 3')}
-  {title('2',125,606,600,'Was ist das? Ergänzen Sie.','naOB naNw')}
+  {title('2',119,620,600,'Was ist das? Ergänzen Sie.','naOB naNw')}
   <div className="naSide" style={{left:55,top:650}}>WÖRTER</div>
   <div className="naBank" style={{left:152,top:647}}>
    <s><span className="tapWord" role="button" tabIndex={0} data-word="Kin" data-phrase="Kin">Kin</span></s>{' | '}
@@ -120,7 +120,7 @@ export function NativeAB12P18_20({page}:{page:string}){
   {field('p18-2f',694,878,199,'Bild f','naFieldBlank')}
   {check('g3',905,872,{'p18-2b':'Rathaus','p18-2c':'Jugendherberge','p18-2d':'Kino','p18-2e':'Bäume','p18-2f':'Berge'},'naCheckCol')}
   {kb(78,937,'KB 3')}
-  {title('3',125,933,600,'Wo bin ich? Notieren Sie.','naOB naNw')}
+  {title('3',121,943,600,'Wo bin ich? Notieren Sie.','naOB naNw')}
   {art('bubble',690,925,170,52)}
   <div className="naSide" style={{left:55,top:975}}>WÖRTER</div>
   <div className="naBank" style={{left:158,top:973}}>
@@ -179,29 +179,29 @@ export function NativeAB12P18_20({page}:{page:string}){
   {kb(70,1067,'KB 5')}
   <div className="naSide" style={{left:92,top:1098,fontSize:10,letterSpacing:1}}>WÖRTER</div>
   {title('4',120,154,600,'Wo bin ich?','naOB naNw')}
-  {text(152,198,20,'a','naBold')}
-  {text(182,198,270,'Schreiben Sie Aufgaben wie in')}
-  {text(463,198,20,'3:','naBlue naBold')}
-  {text(485,198,310,'Was sehen Sie? Was machen Sie dort?')}
-  {text(152,224,20,'b','naBold')}
-  {text(181,224,520,'Tauschen Sie mit Ihrer Partnerin / Ihrem Partner. Sie/Er rät.')}
+  {text(157,198,20,'a','naS19')}
+  {text(180,198,270,'Schreiben Sie Aufgaben wie in','naS19')}
+  {text(455,198,20,'3:','naBlue naIns naInsB')}
+  {text(476,198,310,'Was sehen Sie? Was machen Sie dort?','naS188')}
+  {text(156,224,20,'b','naS19')}
+  {text(181,224,520,'Tauschen Sie mit Ihrer Partnerin / Ihrem Partner. Sie/Er rät.','naS194')}
   {audio('assets/ab-a12-cd2-track11.mp3',55,316,'2 11')}
   {title('5',120,284,700,'Hören Sie Marlenes Podcast. Was ist falsch? Korrigieren Sie.','naOB naNw')}
-  {text(152,324,20,'a','naBold')}
-  {text(181,324,215,'In Giesing haben früher')}
-  {text(402,324,55,'keine','naBlue naStrike')}
-  {text(455,324,110,'Arbeiter gewohnt.')}
+  {text(155,324,20,'a','naS19')}
+  {text(181,324,215,'In Giesing haben früher','naS19')}
+  {text(397,324,55,'keine','naInk naStrike naS19')}
+  {text(447,324,110,'Arbeiter gewohnt.','naS19')}
   {art('viele',636,322,84,38)}
-  {text(152,350,20,'b','naBold')}
+  {text(155,350,20,'b','naS19')}
   {text(181,350,430,'In Giesing sind die Wohnungen sehr teuer.')}
   {field('p19-5b',642,352,201,'Korrektur 5b')}
-  {text(152,376,20,'c','naBold')}
+  {text(154,376,20,'c','naS19')}
   {text(180,376,430,'Es gibt in Giesing ein Kino, aber kein Theater.')}
   {field('p19-5c',642,378,201,'Korrektur 5c')}
-  {text(152,402,20,'d','naBold')}
+  {text(154,402,20,'d','naS19')}
   {text(180,402,430,'Das Kulturzentrum ist in einer Kirche.')}
   {field('p19-5d',642,403,201,'Korrektur 5d')}
-  {text(152,428,20,'e','naBold')}
+  {text(154,428,20,'e','naS19')}
   {text(179,428,430,'Im Kulturzentrum kann man nicht tanzen.')}
   {field('p19-5e',642,429,201,'Korrektur 5e')}
   {check('g5',870,350,{'p19-5b':'nicht so teuer','p19-5c':'ein Theater','p19-5d':'in einem Bahnhof','p19-5e':'tanzen'},'naCheckCol')}
@@ -276,26 +276,26 @@ export function NativeAB12P18_20({page}:{page:string}){
   {['mir.','dir.','ihm/ihr.','uns.','euch.','Ihnen/Ihnen.'].map((t,i)=>text(845,867+[0,21,50,73,101,128][i],100,t))}
   {check('g7',152,1008,{'p19-7a':'gehört','p19-7b':'hilft','p19-7c':'schmeckt','p19-7d':'gefallen','p19-7e':'gehören','p19-7f':'helfen','p19-7g':'schmecken'},'naCheckCol')}
   {title('8',120,1057,900,'Ergänzen Sie gehören/gefallen/danken/helfen/schmecken in der richtigen Form.','naOB naNw')}
-  {text(146,1099,20,'a','naBold')}
-  {text(170,1099,150,'Welcher Stadtteil')}
-  {art('gefaellt8',322,1092,56,38)}
-  {text(383,1099,330,'dir besonders gut? – Ich mag das Lehel.')}
-  {text(146,1126,20,'b','naBold')}
+  {text(145,1099,20,'a','naS19')}
+  {text(170,1099,150,'Welcher Stadtteil','naS19')}
+  {art('gefaellt8',323,1100,50,34)}
+  {text(378,1099,330,'dir besonders gut? – Ich mag das Lehel.','naS19')}
+  {text(145,1126,20,'b','naS19')}
   {text(170,1126,36,'Wir')}
   {field('p19-8b',208,1122,129,'Verb 8b')}
   {text(341,1126,390,'dir für deine Hilfe. – Ich habe euch gern geholfen.')}
-  {text(146,1152,20,'c','naBold')}
+  {text(144,1152,20,'c','naS19')}
   {text(170,1152,140,'Kann ich Ihnen')}
   {field('p19-8c',312,1148,124,'Verb 8c')}
   {text(443,1152,140,'? – Nein, danke.')}
-  {text(146,1179,20,'d','naBold')}
+  {text(144,1179,20,'d','naS19')}
   {text(170,1179,315,'Die vielen Kneipen und Restaurants')}
   {field('p19-8d',490,1175,122,'Verb 8d')}
   {text(625,1179,110,'mir sehr gut.')}
-  {text(146,1206,20,'e','naBold')}
+  {text(144,1206,20,'e','naS19')}
   {field('p19-8e',170,1202,125,'Verb 8e')}
   {text(302,1206,360,'dir das Buch? – Nein, das ist nicht mein Buch.')}
-  {text(146,1232,20,'f','naBold')}
+  {text(144,1232,20,'f','naS19')}
   {field('p19-8f',170,1228,125,'Verb 8f')}
   {text(302,1232,500,'euch der Kuchen? – Ja, sehr gut. Können wir das Rezept haben?')}
   {check('g8',146,1270,{'p19-8b':'danken','p19-8c':'helfen','p19-8d':'gefallen','p19-8e':'Gehört','p19-8f':'Schmeckt'},'naCheckCol')}
