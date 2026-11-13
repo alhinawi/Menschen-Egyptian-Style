@@ -213,7 +213,7 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  <div className="mText mInstr" style={{left:148,top:Y(532),width:450}}><Words s={'Ergänzen Sie den Kalender. Ihre Partnerin /\nIhr Partner schreibt einen kurzen Text wie in '}/><b className="mInstrRef"><Words s="1."/></b></div>
  {art('cal2',505,478,290,202)}
  {title('3',602,'Was machst du gern?','KB 4',120)}
- <div className="mText mInstr" style={{left:149,top:Y(637.5),width:300}}><b><Words s="a"/></b><Words s="  Wie heißen die Verben?"/></div>
+ <div className="mText mInstr mInstrRef" style={{left:123,top:Y(637.5),width:20}}><b><Words s="a"/></b></div><div className="mText mInstr" style={{left:149,top:Y(637.5),width:300}}><Words s="Wie heißen die Verben?"/></div>
  {txt(148.5,671,110,'NACHEM','mAnagram')}{f('u3a-1',263,664,229,'3a NACHEM')}
  {txt(148.5,692,110,'FAHLESCN','mAnagram')}{f('u3a-2',263,683,229,'3a FAHLESCN')}
  {txt(148.5,713,110,'HENFENERS','mAnagram')}{art('exfernsehen',262.5,714,60.7,19.3)}
@@ -222,7 +222,7 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {txt(505.5,708.5,120,'NESEL','mAnagram')}{f('u3a-6',708,700,185,'3a NESEL')}
  {txt(505.5,729,120,'NELREN','mAnagram')}{f('u3a-7',708,721,185,'3a NELREN')}
  {check('u3a',640,752)}
- <div className="mText mInstr" style={{left:149,top:Y(775),width:450}}><b><Words s="b"/></b><Words s="  Ergänzen Sie die Verben aus "/><b className="mInstrRef"><Words s="a"/></b><Words s=" in der richtigen Form."/></div>
+ <div className="mText mInstr mInstrRef" style={{left:125.3,top:Y(775),width:20}}><b><Words s="b"/></b></div><div className="mText mInstr" style={{left:149,top:Y(775),width:450}}><Words s="Ergänzen Sie die Verben aus "/><b className="mInstrRef"><Words s="a"/></b><Words s=" in der richtigen Form."/></div>
  {txt(151,809,16,'1')}{art('exsiehst',168.1,810.7,41.8,16.4)}{txt(222,809,120,'du am Abend gern')}{art('exfern',346.9,808.5,28,19.3)}{txt(378,809,10,'?')}
  {txt(151,825,16,'2')}{f('u3b-2a',167,821,94,'3b 2 Räumst')}{txt(264,827,200,'du gern deine Wohnung')}{f('u3b-2b',167,844,51,'3b 2 auf')}{txt(224,847,20,'?')}
  {txt(153,867,16,'3')}{f('u3b-3',171,863,84,'3b 3 Schläfst')}{txt(260,867,200,'du am Wochenende lange?')}
