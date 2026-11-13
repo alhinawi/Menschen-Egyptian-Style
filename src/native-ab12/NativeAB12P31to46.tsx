@@ -1112,8 +1112,6 @@ export function NativeAB12P31to46({page}:{page:string}){
   {[249,300,352,404,429,481,507,533,597,674,778,829,867].map((y,i)=>field('p41-1-r'+(i+1),674,y-19,190,'1 rechts Zeile '+(i+1),'naFieldBlank'))}
   {[1164,1190,1216,1242,1268,1293,1319,1344].map((y,i)=>field('p41-2-'+(i+1),144,y-19,720,'2 Notizzeile '+(i+1),'naFieldBlank'))}
   {text(100,84,281,'LERNWORTSCHATZ','naHeadline naNw')}
-  {rect(94,152,36,2,'#c82828')}
-  {rect(95,152,2,33,'#c82828')}
   {title('1',98,156,760,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naGB')}
   {text(140,196,105,'Ausbildung','naBold naNw')}
   {text(526,196,228,'Weitere wichtige Wörter','naBold naNw')}
@@ -1171,8 +1169,6 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(153,934,99,'hat gewollt','naBold naNw')}
   {text(142,968,89,'unbedingt','naBold naNw')}
   {text(142,998,133,'auf keinen Fall','naNw')}
-  {rect(96,1096,36,2,'#c82828')}
-  {rect(97,1096,2,33,'#c82828')}
   {title('2',100,1100,760,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naGB')}
   {rect(994,1391,78,19,'#cbc3a4')}
   {stext(999,1392,68,'Modul 6',{color:'#fff',fontSize:'13px'},'naModul naNw')}
