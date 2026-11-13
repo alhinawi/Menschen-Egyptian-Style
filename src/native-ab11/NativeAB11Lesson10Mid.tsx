@@ -193,6 +193,55 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  <div className="mScore mScore82" style={{left:139,top:1056}}><b>Wörter</b><b>Strukturen</b><b>Kommunikation</b>{[['0–5','0–4','0–2'],['6–8','5–6','3'],['9–11','7–8','4']].map((row,r)=>row.map((s,c)=><div key={r+'-'+c}><i style={{background:['#d71910','#edcf00','#3b9e24'][r]}}/>{s} Punkte</div>))}</div>
  {txt(357,1174,200,'www.hueber.de/menschen/lernen','mScoreLink')}
  </>}
+ {page==='84'&&<>
+ <div className="mBannerPink" style={{left:338,top:96,width:464,height:64}}/>
+ {art('banner',93,94,255,68)}
+ {txt(365,115,440,'Was hast du heute gemacht?','mBannerTitle')}
+ {side('STRUKTUREN',251)}{side('WÖRTER',647)}{side('STRUKTUREN',780)}{side('STRUKTUREN',964)}
+ {title('1',214,'Was macht Lisa? Ergänzen Sie um – am – von ... bis – ab.','KB 3',116)}
+ {art('cal',101,267,341,167)}
+ {f('u1-1',471,318,71,'1 Am')}{txt(544,324,168,'Montag frühstückt Lisa')}{f('u1-2',716,318,64,'1 um')}{txt(783,324,60,'7 Uhr.')}
+ <div className="mText" style={{left:477,top:346,width:280}}><span className="mExample">Ab</span><Words s=" 8 Uhr arbeitet sie."/></div>
+ {f('u1-3',471,362,71,'1 Von')}{txt(545,369,18,'18')}{f('u1-4',563,362,64,'1 bis')}{txt(631,363,250,'19 Uhr kauft sie ein und')}{txt(467,380,100,'kocht.')}
+ {f('u1-5',471,404,94,'1 Am')}{txt(573,401,320,'Abend geht sie mit Klaus ins Kino.')}
+ {check('u1',745,432)}
+ {title('2',502,'Was machen Sie heute?','KB 3',118)}
+ <div className="mPairDot" style={{left:74,top:516}}/><div className="mPairDot" style={{left:88,top:516}}/>
+ {txt(148,530,450,'Ergänzen Sie den Kalender. Ihre Partnerin /\nIhr Partner schreibt einen kurzen Text wie in 1.')}
+ {art('cal2',505,478,290,202)}
+ {title('3',602,'Was machst du gern?','KB 4',120)}
+ {txt(149,640,300,'a  Wie heißen die Verben?')}
+ {txt(150,668,110,'NACHEM','mAnagram')}{f('u3a-1',263,664,229,'3a NACHEM')}
+ {txt(150,687,110,'FAHLESCN','mAnagram')}{f('u3a-2',263,683,229,'3a FAHLESCN')}
+ {txt(150,710,110,'HENFENERS','mAnagram')}<div className="mText mExample" style={{left:265,top:712,width:120}}>fernsehen</div>
+ {txt(150,729,110,'RAFEHN','mAnagram')}{f('u3a-4',263,725,229,'3a RAFEHN')}
+ {txt(506,680,120,'RUMAFUÄNE','mAnagram')}{f('u3a-5',708,676,185,'3a RUMAFUÄNE')}
+ {txt(506,706,120,'NESEL','mAnagram')}{f('u3a-6',708,700,185,'3a NESEL')}
+ {txt(506,729,120,'NELREN','mAnagram')}{f('u3a-7',708,721,185,'3a NELREN')}
+ {check('u3a',640,752)}
+ {txt(149,777,450,'b  Ergänzen Sie die Verben aus a in der richtigen Form.')}
+ <div className="mText" style={{left:151,top:809,width:320}}><Words s="1  "/><span className="mExample">Siehst</span><Words s=" du am Abend gern "/><span className="mExample">fern</span><Words s="?"/></div>
+ {txt(151,825,16,'2')}{f('u3b-2a',167,821,94,'3b 2 Räumst')}{txt(264,827,200,'du gern deine Wohnung')}{f('u3b-2b',167,844,51,'3b 2 auf')}{txt(224,847,20,'?')}
+ {txt(153,867,16,'3')}{f('u3b-3',171,863,84,'3b 3 Schläfst')}{txt(260,867,200,'du am Wochenende lange?')}
+ {txt(498,795,16,'4')}{f('u3b-4',520,793,91,'3b 4 Liest')}{txt(615,797,180,'du gern Zeitung?')}
+ {txt(498,818,16,'5')}{f('u3b-5',520,814,91,'3b 5 Fährst')}{txt(615,818,180,'du gern Fahrrad?')}
+ {txt(498,839,16,'6')}{f('u3b-6',520,835,91,'3b 6 Lernst')}{txt(615,841,180,'du gern Deutsch?')}
+ {txt(498,858,16,'7')}{f('u3b-7',520,854,91,'3b 7 Machst')}{txt(615,860,190,'du gern Hausaufgaben?')}
+ {check('u3b',640,885)}
+ {title('4',924,'Ergänzen Sie haben in der richtigen Form.','KB 5',125)}
+ {markS(155,960)}<div className="mText" style={{left:173,top:958,width:380}}><span className="mExample">Haben</span><Words s=" (a) wir jetzt alles für die Party?"/></div>
+ {markT(155,979)}{txt(173,977,200,'Ich denke ja.')}
+ {markS(155,998)}{f('u4-b',169,992,76,'4 b Hast')}{txt(252,996,220,'(b) du auch Brot gekauft?')}
+ {markT(155,1023)}{txt(173,1021,80,'Ja klar. Das')}{f('u4-c',258,1017,62,'4 c habe')}{txt(326,1021,330,'(c) ich doch heute Morgen schon gekauft.')}
+ {markS(155,1042)}{txt(173,1040,270,'Und wo ist der Geburtstagskuchen?')}
+ {markT(155,1065)}{txt(173,1063,90,'Den Kuchen')}{f('u4-d',265,1057,62,'4 d hat')}{txt(333,1063,470,'(d) Julia gebacken. Sie bringt ihn heute Abend zur Party mit.')}
+ {markS(155,1086)}{txt(173,1084,130,'Sehr gut. Und was')}{f('u4-e',309,1078,105,'4 e haben')}{txt(421,1084,160,'(e) wir zu trinken?')}
+ {markT(155,1107)}{txt(173,1105,240,'Wein, Mineralwasser und Saft.')}
+ {markS(155,1128)}{txt(173,1126,105,'Super! Und wo')}{f('u4-f',285,1120,94,'4 f habt')}{txt(385,1126,240,'(f) ihr das Geschenk für Julia?')}
+ {markT(155,1150)}{txt(173,1148,540,'Das ist noch in Claudias Auto. Sie kommt um sechs Uhr und bringt es mit.')}
+ {markS(155,1171)}{txt(173,1169,115,'Gut, ich glaube, jetzt')}{f('u4-g',291,1163,145,'4 g haben')}{txt(441,1169,170,'(g) wir wirklich alles.')}
+ {check('u4',700,1184)}
+ </>}
  {page==='83'&&<>
  {head('LERNWORTSCHATZ',362,153,125,133)}
  {title('1',196,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','',132)}
