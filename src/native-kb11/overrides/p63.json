@@ -1,1 +1,6 @@
-{"keep": [[0, 0, 1072, 1040], [560, 1180, 1072, 1420]], "paper0": [253, 254, 250], "adj": [{"cy": 1386, "tol": 2, "set": {"b": 1, "sa": 1}}], "erase": [[686, 1086, 698, 1100], [324, 1255, 344, 1285]], "setws": [{"cy": 1269.5, "x": 246, "tol": 1, "ws": ["geladen?", "/", "Nein,", "habe", "ich", "nicht."]}]}
+{
+ "keep": [[0, 0, 1072, 1518]],
+ "fieldadj": {},
+ "checks": {},
+ "notes": ["Reading page, no blanks: 5b is mark-the-Perfekt-forms with a completed printed table; tasks 6/7 partner/AB work. No fields, no audio."]
+}
