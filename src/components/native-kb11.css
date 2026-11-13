@@ -176,3 +176,4 @@
 .nkb[data-native-page="22"] .nkbLine:not(.nkbB){opacity:.84}
 .nkb[data-native-page="22"] .nkbLine.nkbSans:not(.nkbB){opacity:.97}
 .nkb[data-native-page="22"] input.nkbField[data-native-field^="t2-"]{font-size:1.64cqw!important;opacity:.95}
+.nkb[data-native-page="56"] .nkbCanvas input[type=text].nkbField{border-radius:50%!important;border:1px solid transparent!important;background:transparent!important;text-align:center;padding:0!important}

@@ -1,0 +1,34 @@
+{
+  "keep": [
+    [
+      0,
+      0,
+      1075,
+      1521
+    ]
+  ],
+  "checks": {
+    "task1": [
+      730,
+      700
+    ]
+  },
+  "fieldadj": {
+    "st1": {
+      "maxlen": 1
+    },
+    "st2": {
+      "maxlen": 1
+    },
+    "st4": {
+      "maxlen": 1
+    },
+    "st6": {
+      "maxlen": 1
+    }
+  },
+  "notes": [
+    "Strophen 2+3 print blue 2/3 in their circles as anchors - kept as ink, no inputs; only the 4 empty circles get single-digit inputs (answers 4,1,5,6; official key lists exactly 1,4,5,6)",
+    "Audio 2.08 twice: task 1 (sortieren) + task 2 (noch einmal/singen)"
+  ]
+}
