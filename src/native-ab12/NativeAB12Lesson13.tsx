@@ -668,12 +668,12 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(193,444,745,'Lesen Sie und markieren Sie die wichtigen Informationen. Ergänzen Sie dann die Tabelle.','naInstrB15 naNw')}
   {art('note1',149,466,452,185)}
   {art('sms',629,466,287,171)}
-  {art('circ3',257,630,30,32)}
-  {text(276,652,702,'Lieber Stefan,','naChris15 naNw')}
-  {text(276,679,702,'ich habe den ultimativen Tipp für Dich! Die Nachbarn von meiner Schwester ziehen nach England','naChris15 naNw')}
-  {text(276,703,702,'und suchen dringend einen Nachmieter zum 1. April. Tolle 4-Zimmer-Wohnung mit Südbalkon.','naChris15 naNw')}
-  {text(276,727,702,'Die Wohnung kostet nur 700 € + Nebenkosten. Ruf meine Schwester am besten heute noch an.','naChris15 naNw')}
-  {text(276,748,200,'LG Chris','naChris15 naNw')}
+  {art('circ3',238,623,33,33)}
+  {text(276,650,702,'Lieber Stefan,','naChris15 naNw')}
+  {text(276,675,702,'ich habe den ultimativen Tipp für Dich! Die Nachbarn von meiner Schwester ziehen nach England','naChris15 naNw')}
+  {text(276,699,702,'und suchen dringend einen Nachmieter zum 1. April. Tolle 4-Zimmer-Wohnung mit Südbalkon.','naChris15 naNw')}
+  {text(276,723,702,'Die Wohnung kostet nur 700 € + Nebenkosten. Ruf meine Schwester am besten heute noch an.','naChris15 naNw')}
+  {text(276,744,200,'LG Chris','naChris15 naNw')}
   <div className="naBand15" style={{left:164,top:806,width:844,height:31}}/>
   <div className="naLine15" style={{left:163,top:836,width:845,height:1}}/><div className="naLine15" style={{left:163,top:865,width:845,height:1}}/><div className="naLine15" style={{left:163,top:895,width:845,height:1}}/><div className="naLine15" style={{left:163,top:924,width:845,height:1}}/>
   <div className="naLine15" style={{left:163,top:806,width:1,height:119}}/><div className="naLine15" style={{left:355,top:806,width:1,height:119}}/><div className="naLine15" style={{left:601,top:806,width:1,height:119}}/><div className="naLine15" style={{left:796,top:806,width:1,height:119}}/><div className="naLine15" style={{left:1007,top:806,width:1,height:119}}/>
@@ -691,16 +691,16 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {art('hdr-rule2',722,1079,253,6)}
   {badge9('1',121,1129)}
   {text(164,1127,300,'Ergänzen Sie den Plural.','naYT naNw')}
-  <div className="naBand15" style={{left:164,top:1151,width:244,height:39}}/><div className="naBand15" style={{left:415,top:1151,width:238,height:39}}/>
-  <div className="naLine15" style={{left:163,top:1194,width:492,height:1}}/><div className="naLine15" style={{left:163,top:1223,width:492,height:1}}/><div className="naLine15" style={{left:163,top:1252,width:492,height:1}}/><div className="naLine15" style={{left:163,top:1282,width:492,height:1}}/>
-  <div className="naLine15" style={{left:163,top:1151,width:1,height:132}}/><div className="naLine15" style={{left:269,top:1151,width:1,height:132}}/><div className="naLine15" style={{left:409,top:1151,width:1,height:132}}/><div className="naLine15" style={{left:415,top:1151,width:1,height:132}}/><div className="naLine15" style={{left:514,top:1151,width:1,height:132}}/><div className="naLine15" style={{left:654,top:1151,width:1,height:132}}/>
-  <div className="naText naTh15b naNw" style={{left:171,top:1169,width:70}}>a <span className="naArr15"></span> ä</div><div className="naText naTh15b naNw" style={{left:424,top:1169,width:84}}>au <span className="naArr15"></span> äu</div>
-  {text(171,1200,95,'das Bad','naTd15 naNw')}{text(277,1200,30,'die','naTd15 naNw')}{field('15-a1-bad',305,1190,95,'Plural Bad')}
-  {text(423,1200,90,'das Haus','naTd15 naNw')}{text(522,1200,30,'die','naTd15 naNw')}{field('15-a1-haus',555,1190,95,'Plural Haus')}
-  {text(171,1229,95,'der Wald','naTd15 naNw')}{text(277,1229,30,'die','naTd15 naNw')}{field('15-a1-wald',305,1220,95,'Plural Wald')}
-  {text(423,1229,90,'der Baum','naTd15 naNw')}{text(522,1229,30,'die','naTd15 naNw')}{field('15-a1-baum',555,1220,95,'Plural Baum')}
-  {text(171,1259,95,'der Garten','naTd15 naNw')}{text(277,1259,30,'die','naTd15 naNw')}{field('15-a1-garten',305,1249,95,'Plural Garten')}
-  {text(423,1259,90,'der Raum','naTd15 naNw')}{text(522,1259,30,'die','naTd15 naNw')}{field('15-a1-raum',555,1249,95,'Plural Raum')}
+  <div className="naBand15" style={{left:164,top:1163,width:244,height:30}}/><div className="naBand15" style={{left:415,top:1163,width:238,height:30}}/>
+  <div className="naLine15" style={{left:163,top:1194,width:492,height:1}}/><div className="naLine15" style={{left:163,top:1224,width:492,height:1}}/><div className="naLine15" style={{left:163,top:1253,width:492,height:1}}/><div className="naLine15" style={{left:163,top:1278,width:492,height:1}}/>
+  <div className="naLine15" style={{left:163,top:1163,width:1,height:115}}/><div className="naLine15" style={{left:269,top:1163,width:1,height:115}}/><div className="naLine15" style={{left:409,top:1163,width:1,height:115}}/><div className="naLine15" style={{left:415,top:1163,width:1,height:115}}/><div className="naLine15" style={{left:514,top:1163,width:1,height:115}}/><div className="naLine15" style={{left:654,top:1163,width:1,height:115}}/>
+  <div className="naText naTh15b naNw" style={{left:171,top:1172,width:70}}>a <span className="naArr15"></span> ä</div><div className="naText naTh15b naNw" style={{left:424,top:1172,width:84}}>au <span className="naArr15"></span> äu</div>
+  {text(171,1201,95,'das Bad','naTd15 naNw')}{text(277,1201,30,'die','naTd15 naNw')}{field('15-a1-bad',305,1191,95,'Plural Bad')}
+  {text(423,1201,90,'das Haus','naTd15 naNw')}{text(522,1201,30,'die','naTd15 naNw')}{field('15-a1-haus',555,1191,95,'Plural Haus')}
+  {text(171,1231,95,'der Wald','naTd15 naNw')}{text(277,1231,30,'die','naTd15 naNw')}{field('15-a1-wald',305,1221,95,'Plural Wald')}
+  {text(423,1231,90,'der Baum','naTd15 naNw')}{text(522,1231,30,'die','naTd15 naNw')}{field('15-a1-baum',555,1221,95,'Plural Baum')}
+  {text(171,1260,95,'der Garten','naTd15 naNw')}{text(277,1260,30,'die','naTd15 naNw')}{field('15-a1-garten',305,1250,95,'Plural Garten')}
+  {text(423,1260,90,'der Raum','naTd15 naNw')}{text(522,1260,30,'die','naTd15 naNw')}{field('15-a1-raum',555,1250,95,'Plural Raum')}
   {check('15-a1',670,1255,{'15-a1-bad':'Bäder','15-a1-wald':'Wälder','15-a1-garten':'Gärten','15-a1-haus':'Häuser','15-a1-baum':'Bäume','15-a1-raum':'Räume'})}
   {audio('assets/ab-a12-cd2-track08.mp3',62,1327,'2 08')}
   {badge9('2',121,1322)}

@@ -177,7 +177,7 @@
 @font-face{font-family:ABFiraCond15;src:url('/assets/fonts/firasanscond-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
 [data-native-ab12="15"] .naCanvas .naText.naMailS15{font:17.5px ABFiraCond15,FiraSans,'Trebuchet MS',sans-serif!important;color:#101215;letter-spacing:0!important}
 [data-native-ab12="15"] .naCanvas .naText.naMailB15{font-weight:700!important;font-size:15px!important;color:#33352f!important}
-[data-native-ab12="15"] .naCanvas .naText.naChris15{font:400 15.5px FiraSans,'Trebuchet MS',sans-serif!important;color:#16171a;letter-spacing:0!important}
+[data-native-ab12="15"] .naCanvas .naText.naChris15{font:400 17.3px Carlito,'Liberation Sans',sans-serif!important;color:#000;letter-spacing:0!important}
 [data-native-ab12="15"] .naCanvas .naArr15{display:inline-block;position:relative;width:14px;height:12px;margin-left:2px;vertical-align:-2px}
 [data-native-ab12="15"] .naCanvas .naArr15::before{content:'';position:absolute;left:0;top:5px;width:13px;height:3px;background:#1a1a12}
 [data-native-ab12="15"] .naCanvas .naArr15::after{content:'';position:absolute;right:0;top:2px;border-left:6px solid #1a1a12;border-top:4px solid transparent;border-bottom:4px solid transparent}
