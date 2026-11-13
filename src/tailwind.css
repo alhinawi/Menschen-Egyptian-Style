@@ -737,3 +737,9 @@ body.readerSplitControls .controls #next{grid-column:5;grid-row:1}
 body.readerSplitControls .controls .meaningModeToggle{grid-column:6;grid-row:1}
 body.readerSplitControls .controls .pageResetTrigger{grid-column:7;grid-row:1}
 body.readerSplitControls .controls .translationControls button{font-size:clamp(8px,2.5vw,10px);white-space:nowrap}
+/* A shared handwritten cross for answer circles and tick boxes. Word-marking controls retain their own highlight. */
+.page input:is([type=radio],[type=checkbox]):not(.nabOption input){--answer-mark:#286e50!important}
+.page input:is([type=radio],[type=checkbox]):is(.bad,.hybridWrong,.answerWrong),.page .answerWrong input:is([type=radio],[type=checkbox]){--answer-mark:#bd3838!important}
+.page input:is([type=radio],[type=checkbox]):checked:not(.nabOption input){appearance:none!important;-webkit-appearance:none!important;background-color:transparent!important;background-image:linear-gradient(54deg,transparent 40%,var(--answer-mark) 43% 53%,transparent 56%),linear-gradient(-48deg,transparent 41%,var(--answer-mark) 44% 53%,transparent 56%)!important;background-size:76% 76%!important;background-position:50% 50%!important;background-repeat:no-repeat!important}
+
+.page input:is([type=radio],[type=checkbox]):checked:is(.bad,.hybridWrong,.answerWrong){--answer-mark:#bd3838!important}
