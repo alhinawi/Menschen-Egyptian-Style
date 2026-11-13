@@ -236,7 +236,7 @@ export function NativeKB12({page}:{page:string}){
  {['über ihre Stadt','über ihr Stadtviertel','über ihre Straße'].map((t,i)=><div key={t}>{dot('3a',t,168+i*283,270,t)}{text(202+i*283,270,245,t)}</div>)}{check('3a',167,309,{'3a':'über ihr Stadtviertel'})}
  {text(133,355,890,'b  Zu welchen Themen finden Sie Links?\n    Notieren Sie. Nicht alle Wörter passen!','nkBold')}
  {text(167,419,650,'Reisebüro | Kino | Film | Bibliothek | Schule | Jugendherberge | Museum | Friseur | Wetter | Glückstadt | Fotos | Restaurants | Rezepte | Theater','nkBank')}
- <textarea className="nkOpen" style={{left:825,top:413,width:205,height:92}} aria-label="Themen der Links" value={values['3b']||'Reisebüro, …'} onChange={e=>set('3b',e.target.value)}/>
+ <textarea className="nkOpen" data-native-field="3b" style={{left:825,top:413,width:205,height:92}} aria-label="Themen der Links" placeholder="Reisebüro, …" value={values['3b']||''} onChange={e=>set('3b',e.target.value)}/>{check('3b',167,478,{'3b':'set:?Reisebüro;;Kino;;Film;;Jugendherberge;;Wetter;;Glückstadt;;Fotos;;Rezepte;;Theater'})}
  {title('4',120,523,930,'Mein Lieblingsviertel')}{text(133,567,930,'a  Lesen Sie den Blog und die Kommentare noch einmal. Was ist richtig? Kreuzen Sie an.','nkBold')}
  {['Giesing ist ein Stadtviertel in München.','Marlene wohnt sehr gern in Giesing.','In Giesing wohnen keine Ausländer.','In Giesing gibt es leider nur sehr wenige Geschäfte.'].map((t,i)=><div key={t}>{text(167,611+i*26,560,`${i+1}  ${t}`)}{dot('4a-'+i,'',740,611+i*26,t,true)}</div>)}{check('4a',167,711,{'4a-0':'true','4a-1':'true','4a-2':'false','4a-3':'false'})}
  <div className="nkBlog" style={{left:60,top:742,width:1030,height:700}}>
