@@ -64,27 +64,27 @@ export function NativeAB12P18_20({page}:{page:string}){
   {text(159,341,200,'Deutsch','naTh')}
   {text(451,341,150,'Englisch','naTh')}
   {text(648,341,320,'Meine Sprache oder andere Sprachen','naTh naNw')}
-  {[372,405,437,470,502,535,567].map(y=><div key={y} className="naTRule" style={{left:150,top:y,width:825}}/>)}
-  {art('hint-1',155,368,290,30)}
-  {art('hint-2',155,397,290,30)}
-  {art('hint-3',155,430,290,30)}
-  {art('hint-4',155,459,290,30)}
-  {art('hand-meer',155,489,290,30)}
-  {art('hint-6',155,518,290,30)}
-  {art('hand-wald',155,545,290,30)}
+  {[395,425,455,484,513,543].map(y=><div key={y} className="naTRule" style={{left:150,top:y,width:825}}/>)}
+  {art('hint-1',155,368,290,26)}
+  {art('hint-2',155,397,290,26)}
+  {art('hint-3',155,427,290,26)}
+  {art('hint-4',155,457,290,26)}
+  {art('hand-meer',155,486,290,26)}
+  {art('hint-6',155,515,290,26)}
+  {art('hand-wald',155,545,290,26)}
   {field('p18-dCafé',158,368,275,'café auf Deutsch','naFieldBlank')}
   {field('p18-dHafen',158,397,275,'harbour auf Deutsch','naFieldBlank')}
-  {field('p18-dFlughafen',158,430,275,'airport auf Deutsch','naFieldBlank')}
-  {field('p18-dKirche',158,459,275,'church auf Deutsch','naFieldBlank')}
-  {field('p18-dSpielplatz',158,518,275,'playground auf Deutsch','naFieldBlank')}
+  {field('p18-dFlughafen',158,427,275,'airport auf Deutsch','naFieldBlank')}
+  {field('p18-dKirche',158,457,275,'church auf Deutsch','naFieldBlank')}
+  {field('p18-dSpielplatz',158,515,275,'playground auf Deutsch','naFieldBlank')}
   {text(451,370,150,'café')}
   {text(451,399,150,'harbour')}
   {text(451,432,150,'airport')}
   {text(451,461,150,'church')}
-  {text(451,491,150,'sea')}
+  {text(451,496,150,'sea')}
   {text(451,520,150,'playground')}
-  {text(451,549,150,'forest')}
-  {[370,399,432,461,491,520,549].map((y,i)=>field('p18-ms'+(i+1),650,y,315,'Meine Sprache Zeile '+(i+1),'naFieldBlank'))}
+  {text(451,550,150,'forest')}
+  {[368,397,427,457,486,515,545].map((y,i)=>field('p18-ms'+(i+1),650,y,315,'Meine Sprache Zeile '+(i+1),'naFieldBlank'))}
   {check('g2',150,577,{'p18-dCafé':'Café','p18-dHafen':'Hafen','p18-dFlughafen':'Flughafen','p18-dKirche':'Kirche','p18-dSpielplatz':'Spielplatz'},'naCheckSm')}
   {kb(78,610,'KB 3')}
   {title('2',125,606,600,'Was ist das? Ergänzen Sie.','naOB naNw')}
