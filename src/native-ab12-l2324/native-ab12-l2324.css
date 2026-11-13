@@ -130,8 +130,9 @@
 .naCanvas .naPipe92{color:#777356;font-weight:400}
 .naCanvas .naBlue{color:#2a5ea8}
 [data-native-ab12="92"] .naRule{border-bottom:1px solid #c4c4c8}
-.naCanvas .naText.naLet92{font:700 13px FiraSans,'Trebuchet MS',sans-serif;letter-spacing:0;color:#222}
-[data-native-ab12="92"] .naTitle.naRB b{background:#f55e02}
-[data-native-ab12="92"] .naBasisL{font-size:28px;font-weight:400;letter-spacing:0;color:#4e4d44;transform:scaleX(0.86);transform-origin:left top}
+.naCanvas .naText.naLet92{font:400 14px DroidSerif,Georgia,serif;letter-spacing:0;color:#1a1a1a}
+[data-native-ab12="92"] .naTitle.naRB b{background:#f96906;min-width:15px;width:15px;height:15px;line-height:15px;font:500 10px/15px FiraSans,sans-serif;margin-right:5px;position:relative;top:-4px}
+[data-native-ab12="92"] .naBasisL{font-size:25.5px;font-weight:400;letter-spacing:-0.9px;color:#4e4d44}
 .naCanvas .naStrike92{text-decoration:line-through}
-[data-native-ab12="92"] .naBank92{letter-spacing:0.4px}
+[data-native-ab12="92"] .naBank92{font-size:12.1px;color:#2b3a73}
+.naCanvas .naText.naEx10r{font-size:13.1px!important}
