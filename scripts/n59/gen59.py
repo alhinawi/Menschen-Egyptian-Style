@@ -17,7 +17,7 @@ SCANRGB = np.asarray(Image.open(f'{REPO}/assets/ab-a12-p{P}.png').convert('RGB')
 items = []
 def t(x, y, text, s=None, c='', col=None, target=None, path=DROID, b=False):
     if s is None:
-        s = best_size(text, path, target, lo=13, hi=24) if target else 18.5
+        s = best_size(text, path, target, lo=13, hi=40) if target else 18.5
     it = {'k':'t','x':round(x),'y':round(y),'t':text,'s':s}
     if c: it['c']=c
     if col: it['col']=col
@@ -29,9 +29,12 @@ def base(y0,y1,x0,x1):
     return line_baseline(ws) if ws else y1-4
 
 R = []  # erase rects
+OFFSETS=json.load(open(REPO+'/scripts/n59/ink-offsets-r2.json'))
+line_index=0
 
 def line(y0,y1,text,x0,x1,c='',path=DROID,sz=None):
-    """One native text line from scan words in band; erase exactly the word span."""
+    """One native text line; baseline calibrated against same-scale ink bottoms."""
+    global line_index
     ws=[w for w in words if w['y']+w['h']/2>=y0 and w['y']+w['h']/2<y1 and w['x']+w['w']/2>=x0 and w['x']+w['w']/2<x1]
     ws.sort(key=lambda w: w['x'])
     assert ws, f'line band {y0}-{y1} empty'
@@ -44,13 +47,17 @@ def line(y0,y1,text,x0,x1,c='',path=DROID,sz=None):
         t(x_a, bl, text, s=sz, c=c, path=path)
     else:
         t(x_a, bl, text, target=(x_b-x_a)*0.985, c=c, path=path)
-    R.append((x_a-3, y0-2, x_b+4, y1+3))
+    dx,dy=OFFSETS[line_index];line_index+=1
+    items[-1]['x']+=dx;items[-1]['y']+=dy
+    R.append(('fill',(x_a-3, y0-2, x_b+4, y1+3),(255,255,255)))
 
 # ---------- header (rule right of title stays in bg) ----------
 line(86,116,'LERNWORTSCHATZ',100,400)
+items[-1]['col']='#555555'
+items[-1]['c']='p59Header'
 
 # ---------- ex1 instruction (badge stays) ----------
-line(158,190,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.',146,720,c='naFiraB',path=FIRA700)
+line(158,190,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.',146,720,c='naFiraB',path=FIRA700,sz=20.5)
 
 # ---------- column headers (Droid Bold) ----------
 line(198,226,'Aussehen',146,250,c='naDB',path=DROID700)
@@ -58,6 +65,9 @@ line(198,228,'Weitere wichtige Wörter',530,780,c='naDB',path=DROID700)
 
 # ---------- left column vocab ----------
 line(228,252,'Bart der, ¨e',148,280)
+items[-1]['t']='Bart der,'
+items[-1]['s']=17.0
+R[-1]=('fill',(151,226,232,255),(255,255,255))  # plural suffix stays exactly as printed at x235-251
 line(254,278,'Haar das, -e',148,280)
 line(290,312,'blond',148,230)
 line(316,338,'dick',148,220)
@@ -102,7 +112,7 @@ line(688,714,'ledig',535,595)
 line(834,862,'Machen Sie Wortbilder.',260,470)
 
 # ---------- ex2 instruction (badge stays) ----------
-line(916,950,'Welche Wörter möchten Sie noch lernen? Notieren Sie.',146,710,c='naFiraB',path=FIRA700)
+line(916,950,'Welche Wörter möchten Sie noch lernen? Notieren Sie.',146,710,c='naFiraB',path=FIRA700,sz=20.5)
 
 # ---------- script art crops (printed blue cursive word-picture examples) ----------
 def crop_alpha(box,name):
