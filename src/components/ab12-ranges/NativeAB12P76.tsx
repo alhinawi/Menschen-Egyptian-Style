@@ -16,7 +16,7 @@ function P76(h:AB12Helpers){const {line:ln,wl,art,area,rect}=h;const D='naDroid7
   {rect(406,140,330,2,'#a06ab5')}
 
   {art('m1',58,166,62,32)}
-  {ln(124,173,575,16,'Lesen Sie noch einmal im Kursbuch auf Seite 48 die E-Mail von Gert (Aufgabe 9).',{b:1,cls:D})}
+  {ln(124,175,597,16.5,'Lesen Sie noch einmal im Kursbuch auf Seite 48 die E-Mail von Gert (Aufgabe 9).',{b:1,cls:D})}
   {ln(99,206,8,14.5,'a',{b:1,cls:D})}
   {ln(123,207,332,14.5,'Was macht Gert gern? Was kann er gut? Wie ist er?',{cls:D})}
   {art('hw1',116,230,116,30)}
