@@ -47,7 +47,7 @@ export function NativeAB12P21_24({page}:{page:string}){
   {text(425,423,560,'Sie wichtige Informationen und planen Ihre Aussage. Das Sprechen ist','naF17')}
   {text(425,445,560,'dann leichter.','naF17')}
   {title('2',104,511,900,'Arbeiten Sie zu dritt. Schreiben Sie einen Fragebogen. Sprechen und notieren Sie.','naOB naLS')}
-  {text(170,566,300,'Was brauchen Sie in Ihrem Stadtteil?','naD19 naIns naInsB')}
+  {text(170,566,300,'Was brauchen Sie in Ihrem Stadtteil?','naD19 naBold')}
   <div className="naTFrame" style={{left:170,top:595,width:730,height:169}}/>
   {[647,676,705,735].map(y=><div key={y} className="naTRule naTLine" style={{left:170,top:y,width:730}}/>)}
   {[353,535,717].map(x=><div key={x} className="naTCol naTLine" style={{left:x,top:595,height:169}}/>)}
