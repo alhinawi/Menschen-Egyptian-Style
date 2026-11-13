@@ -88,7 +88,7 @@ for ly, lab, word, wx in [(272,'a','interessant',176),(297,'b','freundlich',176)
     t(wx,ly,word,s=S5)
 t(345,348,'schlank /',s=S5)
 # field rules measured from scan ink
-for fid,x,ry,w in [('p55-5b',344,300,161),('p55-5c',344,326,160),('p55-5d',418,352,174),('p55-5e1',344,377,168),('p55-5e2',531,377,161)]:
+for fid,x,ry,w in [('p55-5b',344,300,161),('p55-5c',344,326,160),('p55-5d',432,352,160),('p55-5e1',344,377,168),('p55-5e2',531,377,161)]:   # 5d: scan rule ink 432-592 (8px after 'schlank /' ink end 426)
     items.append({'k':'f','id':fid,'x':x,'y':ry,'w':w,'l':F[fid]['label'],'a':F[fid]['answer'],'g':'g1'})
 items.append({'k':'chk','g':'g1','x':960,'y':330})
 
@@ -96,7 +96,7 @@ items.append({'k':'chk','g':'g1','x':960,'y':330})
 t(150,461,'Lesen Sie die SMS.',c='naFiraM',col=DARK,target=182,path=FIRA)
 t(122,506,'a',s=15,col='#434e95',b=1)
 t(154,506,'Markieren Sie die trennbaren Verben blau und die nicht trennbaren Verben grün.',s=17.4,col='#171614')
-items.append({'k':'r','x':310,'y':507,'w':207,'h':2,'col':'#6596c4'})
+items.append({'k':'r','x':310,'y':507,'w':207,'h':2,'col':'#3b4a9c'})
 items.append({'k':'r','x':593,'y':507,'w':261,'h':2,'col':'#69bb58'})
 # SMS cards: Fira Sans Condensed; scan line pitch ~25.6px, body ~19.5 PIL (18.9 rendered),
 # greeting lines (taller band) ~23.3 PIL (22.5 rendered). Baselines snapped to scan grid.
@@ -124,9 +124,11 @@ def card(x0,x1,y0,y1):
             if cur and w['x']-(cur[-1]['x']+cur[-1]['w'])>40: groups.append(cur);cur=[]
             cur.append(w)
         if cur: groups.append(cur)
-        for g in groups:
+        XFIX={(700,960,745,970):742}   # card 6 greeting ink x (scan-data 747 -> ink 742); 'Hi Alex' scan-data 729 already = ink
+        for gi,g in enumerate(groups):
             for w in g: w['_done']=True
             gx=g[0]['x']
+            if i==0 and gi==0 and (x0,x1,y0,y1) in XFIX: gx=XFIX[(x0,x1,y0,y1)]
             t(gx, grid[i], ' '.join(w['text'] for w in g), s=S_BODY, c='naFiraC', path=FIRAC)
 card(140,400,540,745)   # card 1
 card(400,700,540,745)   # card 3
@@ -135,9 +137,9 @@ card(140,400,745,970)   # card 2
 card(400,700,745,970)   # card 4
 card(700,960,745,970)   # card 6
 # card1 printed example underlines (redrawn after full erase)
-items.append({'k':'r','x':295,'y':601,'w':63,'h':2,'col':'#6596c4'})
+items.append({'k':'r','x':295,'y':601,'w':63,'h':2,'col':'#6596c4'})   # card1 sample: 101,150,196
 items.append({'k':'r','x':164,'y':626,'w':28,'h':2,'col':'#6596c4'})
-items.append({'k':'r','x':262,'y':626,'w':91,'h':2,'col':'#69bb58'})
+items.append({'k':'r','x':252,'y':626,'w':101,'h':2,'col':'#69bb58'})   # spans 'beschwert.' ink 252-353
 # mk buttons over the 7 student verbs
 VERBS = [('p55-m1','entschuldigt.',(254,690,104,18),'g'),('p55-m2','vergessen.',(192,880,84,14),'g'),
          ('p55-m3','eingeladen.',(495,629,93,17),'b'),('p55-m4','bekommen.',(547,849,95,14),'g'),
@@ -150,8 +152,8 @@ items.append({'k':'chk','g':'g2','x':960,'y':900})
 # ---------- 6b ----------
 t(123,1060,'b',s=15,col='#434e95',b=1)
 t(154,1060,'Sortieren Sie die Partizipien und ergänzen Sie den Infinitiv.',target=519)
-t(154,1098,'trennbar',c='naDB',col='#3c3b38',target=83)
-t(480,1098,'nicht trennbar',c='naDB',col='#3c3b38',target=140)
+t(154,1098,'trennbar',c='naDB',col='#3c3b38',s=17.4)   # scan ink 82px; bold renders 87.2 at 18.5 -> 17.4
+t(480,1098,'nicht trennbar',c='naDB',col='#3c3b38',s=18.1)   # scan ink 139px; bold renders 146.2 at 19 -> 18.1
 for x in (155,481): t(x,1139,'Partizip',s=18,col='#676866')
 for x in (275,603): t(x,1139,'Infinitiv',s=18,col='#676866')
 # field rows: trennbar 2 rows, nicht trennbar 5 rows
