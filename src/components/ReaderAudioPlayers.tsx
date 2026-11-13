@@ -107,5 +107,8 @@ export function ReaderAudioPlayers(){
    setAudios(old=>old.length===next.length&&old.every((a,i)=>a===next[i])?old:next);
   };update();const timer=setInterval(update,250);return()=>{clearInterval(timer);hostApi.current.ensure=undefined;(host as HTMLElement|null)?.remove();marked.forEach(a=>delete a.dataset.readerAudioSource)};
  },[]);
- return <>{slot&&createPortal(<Player audio={active||audios[0]||idle}/>,slot)}</>;
+ // Pages without any audio source get no player at all; the idle element only
+ // keeps the hook order stable and is never rendered.
+ const shown=active||audios[0]||null;
+ return <>{slot&&shown&&createPortal(<Player audio={shown}/>,slot)}</>;
 }
