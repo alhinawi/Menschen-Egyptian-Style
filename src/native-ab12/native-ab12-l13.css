@@ -98,7 +98,7 @@
 .naCanvas .naBankRow9 .naW9i{display:inline-block;background:transparent;border:0!important;padding:0;margin:0;font:inherit;line-height:inherit;color:inherit;cursor:pointer;min-height:0!important;text-align:left}
 .naCanvas .naBankRow9 .naW9i.on{background:#fff35c}
 .naCanvas .naBankRow9 .naW9mi{background:#fff35c;padding:0 3px 0 5px}
-.naCanvas .naBankRow9 .naPipe9i{display:inline-block;width:1px;height:12px;margin:0 7px;padding:0;background:#6d7fa3;vertical-align:baseline}
+.naCanvas .naBankRow9 .naPipe9i{display:inline-block;width:1.3px;height:15px;margin:0 7px;padding:0;background:#4d6089;vertical-align:baseline}
 .naCanvas .naBand9w{position:absolute;background:#fcfcf0}
 .naCanvas .naStrike9{position:absolute;background:#3a5375;z-index:3}
 .naCanvas .naStrike10{position:absolute;background:#2a3c6e;z-index:3}
