@@ -71,12 +71,12 @@ SER='serif'
 t(160,183,'Ergänzen Sie das Verb im Perfekt.',c='naFiraM',col='#1d1d1b',target=329,path=FIRA)
 items.append({'k':'bx','x':160,'y':204,'w':624,'h':24,'bg':'#f9f9df'})
 t(166,224,'sich entschuldigen | gehören | gefallen | beschweren | vergessen | bekommen',c='naFiraR',col='#7585a2',s=17.3,path=FIRA400)
-items.append({'k':'r','x':166,'y':219,'w':120,'h':2,'col':'#5b6099'})  # printed strike through example word
+items.append({'k':'r','x':166,'y':219,'w':150,'h':2,'col':'#5b6099'})  # printed strike through example word
 for ly,lab in [(260,'a'),(286,'b'),(311,'c'),(338,'d'),(365,'e'),(389,'f')]:
     t(160,ly,lab,s=15,col='#828185')
-t(186,260,'Warum hast du dich bei Simon nicht',target=317)
+t(186,260,'Warum hast du dich bei Simon nicht',target=316)
 items.append({'k':'r','x':513,'y':264,'w':92,'h':2,'col':'#9aa3ab'})
-items.append({'k':'a','n':'entschuldigt','x':511,'y':244,'w':93,'h':31,'alt':'Beispielantwort entschuldigt'})
+items.append({'k':'a','n':'entschuldigt','x':515,'y':244,'w':93,'h':31,'alt':'Beispielantwort entschuldigt'})
 t(604,260,'?')
 t(186,286,'Haben Sie die E-Mail von Professor Klüger schon',target=425)
 items.append({'k':'f','id':'p56-7b','x':613,'y':290,'w':186,'l':'7 b','a':'bekommen','g':'g1'})
