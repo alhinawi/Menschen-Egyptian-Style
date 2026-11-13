@@ -433,12 +433,12 @@ export function NativeAB12L23({page}:{page:string}){
   <div className="naSide naSideB" style={{left:56,top:160}}>STRUKTUREN</div>
   {title('4',55,119,640,'Ordnen Sie zu.','naRB naNw')}
   <div className="naBank" style={{left:107,top:149,width:350,height:19,background:'#fbf5d6'}}/>
-  <div className="naBank88" style={{left:111,top:149}}><Words text="ab | "/><span className="naStrikeB"><Words text="am"/></span><Words text=" | am | bis | bis | für | nach | im | in | um | vom | von"/></div>
-  {text(108,174,16,'a','naBookSerif naLet4')}{art('amex',121,178,26,19)}<div className="naText naBookSerif naNw" style={{left:149,top:177,width:311}}><Words text="Mittwoch hat Isabella Prüfung. Wir treffen uns"/></div>
+  <div className="naBank88" style={{left:111,top:149}}><Words text="ab "/><span className="naPipe91">|</span><Words text=" "/><span className="naStrikeB"><Words text="am"/></span><Words text=" "/><span className="naPipe91">|</span><Words text=" am "/><span className="naPipe91">|</span><Words text=" bis "/><span className="naPipe91">|</span><Words text=" bis "/><span className="naPipe91">|</span><Words text=" für "/><span className="naPipe91">|</span><Words text=" nach "/><span className="naPipe91">|</span><Words text=" im "/><span className="naPipe91">|</span><Words text=" in "/><span className="naPipe91">|</span><Words text=" um "/><span className="naPipe91">|</span><Words text=" vom "/><span className="naPipe91">|</span><Words text=" von"/></div>
+  {text(108,178,16,'a','naBookSerif')}{art('amex',121,178,26,19)}<div className="naText naBookSerif naNw" style={{left:149,top:177,width:311}}><Words text="Mittwoch hat Isabella Prüfung. Wir treffen uns"/></div>
   {field('91-4a',464,175,62,'4 a um')}
   {text(530,177,185,'17.00 Uhr vor der Schule und','naBookSerif naNw')}
   {text(126,198,130,'wollen ihr gratulieren.','naBookSerif naNw')}
-  {text(108,212,16,'b','naBookSerif naLet4')}{text(127,217,95,'Frau Stern hat','naBookSerif naNw')}
+  {text(108,216,16,'b','naBookSerif')}{text(127,217,95,'Frau Stern hat','naBookSerif naNw')}
   {field('91-4b1',226,213,61,'4 b1 am')}
   {text(292,217,140,'17. August Geburtstag.','naBookSerif naNw')}
   {field('91-4b2',437,213,62,'4 b2 von')}
@@ -446,21 +446,21 @@ export function NativeAB12L23({page}:{page:string}){
   {field('91-4b3',568,213,62,'4 b3 bis')}
   {text(634,217,75,'16.00 Uhr','naBookSerif naNw')}
   {text(126,237,320,'gibt es Kaffee und Kuchen in ihrem Büro.','naBookSerif naNw')}
-  {text(108,251,16,'c','naBookSerif naLet4')}
+  {text(108,255,16,'c','naBookSerif')}
   {field('91-4c1',125,252,62,'4 c1 Im')}
   {text(189,256,210,'Juli hat Herr Bellmann Urlaub,','naBookSerif naNw')}
   {field('91-4c2',402,252,62,'4 c2 vom')}
   {text(467,256,45,'5. Juli','naBookSerif naNw')}
   {field('91-4c3',510,252,62,'4 c3 bis')}
   {text(576,256,90,'zum 19. Juli.','naBookSerif naNw')}
-  {text(108,271,16,'d','naBookSerif naLet4')}
+  {text(108,275,16,'d','naBookSerif')}
   {field('91-4d',125,271,62,'4 d Nach')}
   {text(190,275,340,'dem Urlaub zieht er dann mit seiner Familie um.','naBookSerif naNw')}
-  {text(108,289,16,'e','naBookSerif naLet4')}
+  {text(108,293,16,'e','naBookSerif')}
   {field('91-4e',125,290,62,'4 e In')}
   {text(190,294,520,'vier Wochen ist schon wieder Weihnachten. Und ich habe noch keine','naBookSerif naNw')}
   {text(126,315,100,'Geschenke.','naBookSerif naNw')}
-  {text(108,328,16,'f','naBookSerif naLet4')}
+  {text(108,332,16,'f','naBookSerif')}
   {field('91-4f1',125,329,63,'4 f1 Ab')}
   {text(191,333,100,'Montag bin ich','naBookSerif naNw')}
   {field('91-4f2',294,329,62,'4 f2 für')}
@@ -470,10 +470,10 @@ export function NativeAB12L23({page}:{page:string}){
   <div className="naSide naSideB" style={{left:56,top:437}}>HÖREN</div>
   {title('5',55,382,640,'Was ist richtig? Hören Sie und kreuzen Sie an.','naRB naNw')}
   <button className="naAudio" style={{left:20,top:398}} aria-label="Originalaudio 2 40–43 abspielen" onClick={()=>{const p=c.player.current;if(!p)return;const seq=['assets/ab-cd2-track40.mp3','assets/ab-cd2-track41.mp3','assets/ab-cd2-track42.mp3','assets/ab-cd2-track43.mp3'];let i=0;p.onended=()=>{i+=1;if(i<seq.length){p.src=seq[i];p.play().catch(()=>{})}else{p.onended=null}};p.src=seq[0];p.play().catch(()=>{})}}>▶ 2 40–43</button>
-  {text(108,411,16,'a','naBookSerif naLet5')}{text(126,412,380,'Am 23. August kann man die Praxis wieder besuchen.','naBookSerif naNw')}
-  {text(108,431,16,'b','naBookSerif naLet5')}{text(126,432,300,'Luisa schafft es sicher um 15.30 Uhr.','naBookSerif naNw')}
-  {text(108,451,16,'c','naBookSerif naLet5')}{text(126,452,380,'Der Anrufer wartet noch 10 Minuten vor dem Kino.','naBookSerif naNw')}
-  {text(108,471,16,'d','naBookSerif naLet5')}{text(126,472,260,'Michi hat am Sonntag keine Zeit.','naBookSerif naNw')}
+  {text(108,412,16,'a','naBookSerif')}{text(126,412,380,'Am 23. August kann man die Praxis wieder besuchen.','naBookSerif naNw')}
+  {text(108,432,16,'b','naBookSerif')}{text(126,432,300,'Luisa schafft es sicher um 15.30 Uhr.','naBookSerif naNw')}
+  {text(108,452,16,'c','naBookSerif')}{text(126,452,380,'Der Anrufer wartet noch 10 Minuten vor dem Kino.','naBookSerif naNw')}
+  {text(108,472,16,'d','naBookSerif')}{text(126,472,260,'Michi hat am Sonntag keine Zeit.','naBookSerif naNw')}
   {dot('91-5a','true',519,414,'5 a richtig',true,'naDotR91')}
   {dot('91-5b','true',519,434,'5 b richtig',true,'naDotR91')}
   {dot('91-5c','true',519,454,'5 c richtig',true,'naDotR91')}
@@ -507,15 +507,15 @@ export function NativeAB12L23({page}:{page:string}){
   <div className="naTblCell naTblCellS" style={{left:287,top:644}}>Englisch</div>
   <div className="naTblCell naTblCellS" style={{left:459,top:644}}>Meine Sprache oder andere Sprachen</div>
   {([['91-6b-r1','Weihnachten',3,'h',681,'Deutsch Zeile 1'],['91-6b-r2','Geburtstag',7,'t',703,'Deutsch Zeile 2'],['91-6b-r3','Ostern',2,'t',726,'Deutsch Zeile 3'],['91-6b-r4','Silvester',3,'v',748,'Deutsch Zeile 4']] as [string,string,number,string,number,string][]).map(([id,ans,fi,fl,by,lb])=>{
-    const els=[...ans.split('').map((ch,i)=><div key={'d'+i} className="naDash91" style={{left:114+i*11.2,top:by}}/>)];
+    const els=[...ans.split('').map((ch,i)=>i===fi?null:<div key={'d'+i} className="naDash91" style={{left:114+i*11.2,top:by}}/>)];
     els.push(<div key="fl" className="naFix91" style={{left:113+fi*11.2,top:by-14}}>{fl}</div>);
     els.push(<span key="f">{field(id,110,by-18,ans.length*11.2+8,lb,'naFieldBlank naGap91')}</span>);
     return els;
   })}
-  {text(287,666,100,'Christmas','naBookSerif naNw')}
-  {text(287,689,100,'birthday','naBookSerif naNw')}
-  {text(287,712,100,'Easter','naBookSerif naNw')}
-  {text(287,734,130,"New Year's Eve",'naBookSerif naNw')}
+  {text(287,666,100,'Christmas','naBookSerif naEng91 naNw')}
+  {text(287,689,100,'birthday','naBookSerif naEng91 naNw')}
+  {text(287,712,100,'Easter','naBookSerif naEng91 naNw')}
+  {text(287,734,130,"New Year's Eve",'naBookSerif naEng91 naNw')}
   {field('91-6b-n1',459,663,250,'Meine Sprache Zeile 1','naFieldBlank')}
   {field('91-6b-n2',459,685,250,'Meine Sprache Zeile 2','naFieldBlank')}
   {field('91-6b-n3',459,707,250,'Meine Sprache Zeile 3','naFieldBlank')}
@@ -528,28 +528,28 @@ export function NativeAB12L23({page}:{page:string}){
   {art('rings',310,908,94,72)}
   {art('grad',652,808,86,70)}
   {art('boxes',655,905,105,93)}
-  {text(108,820,16,'a','naBookSerif naLet7')}
+  {text(108,821,16,'a','naBookSerif')}
   {text(110,840,190,'Der erste Tag des Jahres heißt','naBookSerif naNw')}
-  {field('91-7a',108,862,154,'7 a Neujahr')}
+  {field('91-7a',108,855,154,'7 a Neujahr')}
   {text(266,865,10,'.','naBookSerif')}
-  {text(108,898,16,'b','naBookSerif naLet7')}
+  {text(108,899,16,'b','naBookSerif')}
   {text(109,919,230,'Holger und Katrin wollen im','naBookSerif naNw')}
   {text(109,938,220,'Mai heiraten. Sie haben die','naBookSerif naNw')}
   {text(108,958,220,'ganze Familie und viele Freunde','naBookSerif naNw')}
   {text(109,978,22,'zur','naBookSerif naNw')}
   {field('91-7b',133,972,112,'7 b Hochzeit')}
   {text(254,978,90,'eingeladen.','naBookSerif naNw')}
-  {text(434,820,16,'c','naBookSerif naLet7')}
+  {text(434,821,16,'c','naBookSerif')}
   {text(433,840,110,'Tobias hat seine','naBookSerif naNw')}
   {field('91-7c',436,857,154,'7 c Prüfungen')}
   {text(592,861,90,'bestanden!','naBookSerif naNw')}
   {text(434,881,170,'Das möchte er groß feiern.','naBookSerif naNw')}
-  {text(434,918,16,'d','naBookSerif naLet7')}
+  {text(434,919,16,'d','naBookSerif')}
   {text(434,939,150,'Wir haben neue Nachbarn.','naBookSerif naNw')}
   {text(433,958,230,'Am Wochenende machen sie eine','naBookSerif naNw')}
-  {field('91-7d',436,985,259,'7 d Einweihungsparty')}
-  {text(699,990,10,'.','naBookSerif')}
-  {check('91-7',703,999,{'91-7a':'Neujahr','91-7b':'Hochzeit','91-7c':'Prüfungen','91-7d':'Einweihungsparty'})}
+  {field('91-7d',436,972,259,'7 d Einweihungsparty')}
+  {text(699,984,10,'.','naBookSerif')}
+  {check('91-7',714,1008,{'91-7a':'Neujahr','91-7b':'Hochzeit','91-7c':'Prüfungen','91-7d':'Einweihungsparty'})}
   {art('modul8-tab',742,1043,65,25)}
   <div className="naText naFooter" style={{left:420,top:1045,width:310,textAlign:'right'}}>einundneunzig&nbsp;&nbsp;|&nbsp;&nbsp;91</div>
  </>}
