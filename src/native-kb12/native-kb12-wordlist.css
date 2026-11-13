@@ -1,0 +1,11 @@
+@font-face{font-family:DroidSerif;src:url('/assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}
+.nkCanvas .nkwPageTitle{position:absolute;font:38px DroidSerif,Georgia,'Times New Roman',serif;letter-spacing:1.5px;color:#252723;white-space:nowrap}
+.nkCanvas .nkwBanner{position:absolute;background:#9f2e0c}
+.nkCanvas .nkwIntro{position:absolute;font-family:DroidSerif,Georgia,serif;font-size:17.6px;line-height:1.22;letter-spacing:-0.5px;white-space:nowrap;color:#2a2a2a}
+.nkCanvas .nkwEntry{position:absolute;font-family:DroidSerif,Georgia,serif;font-size:16.6px;line-height:1.22;letter-spacing:-0.5px;white-space:nowrap;color:#2a2a2a}
+.nkCanvas .nkwEntry .nkwTxt{display:inline-block;transform:scaleX(.84);transform-origin:left center;white-space:nowrap}
+.nkCanvas .nkwEntry .nkwIt{display:inline-block;font-style:italic;transform:scaleX(.77);transform-origin:left center;white-space:nowrap}
+.nkCanvas .nkwNum{position:absolute;top:0;font-style:normal;font-size:16.6px;letter-spacing:-0.5px}
+.nkCanvas .nkwCredit{position:absolute;font-family:DroidSerif,Georgia,serif;font-size:17.6px;line-height:1.22;letter-spacing:-0.5px;white-space:nowrap;color:#2a2a2a}
+.nkCanvas .nkwCredit .nkwTxt{display:inline-block;transform:scaleX(.78);transform-origin:left center;white-space:nowrap}
+.nkCanvas .nkwFooter{position:absolute;white-space:nowrap;font-family:DroidSerif,Georgia,serif;font-size:19px;letter-spacing:-0.2px;color:#222222}
