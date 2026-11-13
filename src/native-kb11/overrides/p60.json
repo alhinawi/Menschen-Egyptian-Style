@@ -1,1 +1,13 @@
-{"keep": [[595, 225, 1000, 475], [590, 560, 890, 760], [95, 810, 1000, 1440]], "paper0": [253, 254, 250], "checks": {"task10a": [520, 449]}, "compact": ["task10a"], "adj": [{"cy": 239.8, "tol": 0.3, "set": {"b": 1, "sa": 1, "f": 21.5}}, {"cy": 278.0, "tol": 0.3, "set": {"f": 19.3, "sa": 1}}, {"cy": 303.5, "tol": 0.3, "set": {"f": 19.3, "sa": 1}}, {"cy": 467.0, "tol": 0.3, "text": "Also dann, auf Wiedersehen."}], "erase": [], "setws": []}
+{
+ "keep": [[0, 0, 1072, 1518]],
+ "fieldadj": {
+  "f10a-1": {"x": 171, "y": 334, "w": 17, "h": 16},
+  "f10a-2": {"x": 171, "y": 360, "w": 17, "h": 16},
+  "f10a-3": {"x": 171, "y": 384, "w": 17, "h": 16},
+  "f10a-4": {"x": 171, "y": 410, "w": 17, "h": 16},
+  "f10a-5": {"x": 171, "y": 435, "w": 17, "h": 16},
+  "f10a-6": {"x": 171, "y": 460, "w": 17, "h": 16}
+ },
+ "checks": {"task10a": [188, 481]},
+ "notes": ["10a checkboxes shrunk to measured printed rings, border transparent, round outline inside the ring (same ring treatment as p57/58 radios).", "10b discussion + task 11 classroom - no fields.", "Audio tag 2.16 blue ink erased clear of the red task box (x126-159)."]
+}
