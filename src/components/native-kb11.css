@@ -1,3 +1,101 @@
+.page.nativeKbPage{padding:0!important;overflow:hidden}
+.nkb{position:relative;width:100%;height:100%;container-type:size;background:#fff}
+.nkb>.nkbCanvas{position:absolute;left:50%;top:calc(50% - var(--nkb-tool,0px)/2);transform:translate(-50%,-50%);width:min(100cqw,calc((100cqh - var(--nkb-tool,0px))*var(--ratio)));container-type:inline-size;background:var(--paper,#fdfcf8);color:#222;overflow:hidden}
+.nkbCanvas .nkbArt{position:absolute;display:block;object-fit:fill;max-width:none!important;max-height:none!important;margin:0!important;border:0!important;pointer-events:none;user-select:none}
+.nkbCanvas .nkbWord{position:absolute;white-space:nowrap;overflow:visible;font-family:'Palatino Linotype',Palatino,'Book Antiqua','Liberation Serif',Georgia,serif;display:block;margin:0;padding:0;box-sizing:border-box;touch-action:manipulation;cursor:pointer}
+.nkbCanvas .nkbGhost{color:transparent;font-size:1px}
+.nkbCanvas .nkbWord:focus-visible{outline:2px solid #b88124}
+.nkbCanvas .nkbField{position:absolute;box-sizing:border-box;margin:0!important;padding:0 2px!important;min-width:0!important;min-height:0!important;max-width:none!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;color:#173c62!important;font-family:Arial,sans-serif;line-height:1!important;accent-color:#26764c;z-index:3}
+.nkbCanvas input[type=text].nkbField:focus,.nkbCanvas select.nkbField:focus{background:#fffce9cc!important;outline:2px solid #26764c}
+.nkbCanvas input[type=radio].nkbField,.nkbCanvas input[type=checkbox].nkbField{appearance:none;-webkit-appearance:none;border-radius:50%!important;cursor:pointer;padding:0!important}
+.nkbCanvas input[type=checkbox].nkbField{border-radius:3px!important}
+.nkbCanvas input[type=radio].nkbField:checked,.nkbCanvas input[type=checkbox].nkbField:checked{background:radial-gradient(circle closest-side,#26764c 0 42%,transparent 48%)!important}
+.nkbCanvas .nkbField:focus-visible{outline:2px solid #26764c}
+.nkbCanvas .nkbField.ok{outline:2px solid #268250}.nkbCanvas .nkbField.bad{outline:2px solid #bd3838}
+.nkbCanvas .nkbListen{position:absolute;background:transparent;border:0;padding:0;margin:0;cursor:pointer;z-index:4;min-width:0;min-height:0}
+.nkbCanvas .nkbListen:focus-visible{outline:3px solid #2e91be}
+.nkbCanvas .nkbCheck{position:absolute;display:flex;gap:8px;align-items:center;z-index:6;font-size:1.9cqw}
+.nkbCanvas .nkbCheck button{font:inherit;padding:.2em .7em;min-height:0;border:1px solid #819c86;border-radius:4px;background:#fffff6;color:#28553c}
+.nkbCanvas .nkbCheck output{font:inherit;color:#28553c;background:#fffffa;padding:0 4px}
+.nkbAudio{position:absolute;left:0;right:0;bottom:0;display:flex;flex-wrap:wrap;gap:6px 12px;justify-content:center;padding:4px 8px;background:#fffdf4;font:12px Arial,sans-serif;color:#555;z-index:7;height:46px;box-sizing:border-box;overflow:auto}
+.nkbAudio label{display:flex;align-items:center;gap:6px}.nkbAudio audio{height:28px;max-width:180px}
+.nkbCanvas .nkbWord.nkbB{font-family:Arial,'Liberation Sans',Helvetica,sans-serif}
+.nkbCanvas .nkbLine{position:absolute;white-space:nowrap;width:max-content;font-family:'Palatino Linotype',Palatino,'Book Antiqua','Liberation Serif',Georgia,serif;margin:0;padding:0}.nkbCanvas .nkbLine.nkbB{font-family:Arial,'Liberation Sans',Helvetica,sans-serif;font-weight:700}.nkbCanvas .nkbLine .tapWord{cursor:pointer;touch-action:manipulation}
+.nkbCanvas .nkbLine.nkbSans:not(.nkbB){font-family:Arial,'Liberation Sans',Helvetica,sans-serif}
+.nkbCanvas input[type=text].nkbField,.nkbCanvas select.nkbField{border:1.5px solid #6f7b72!important;border-radius:3px!important;background:#fffef7b3!important}
+.nkbCanvas .nkbCompact{font-size:1.45cqw}
+
+.nkbCanvas .nkbLine.nkbSB{font-family:'Palatino Linotype',Palatino,'Book Antiqua','Liberation Serif',Georgia,serif;font-weight:700}
+.nkbCanvas select.nkbField[data-native-field=geschieden],.nkbCanvas select.nkbField[data-native-field=Kind],.nkbCanvas select.nkbField[data-native-field=verheiratet],.nkbCanvas select.nkbField[data-native-field=Single]{border-radius:50%!important;appearance:none;-webkit-appearance:none;text-align:center;text-align-last:center;padding:0!important;width:22px!important;height:22px!important}
+.nkbCanvas select.nkbField{appearance:menulist;-webkit-appearance:menulist;text-align:center;text-align-last:center;cursor:pointer;background:#ffffffb8!important;border:1px solid #7aa7c7!important;border-radius:4px!important;padding:0!important}
+.nkbCanvas select.nkbField{appearance:none;-webkit-appearance:none;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%2326764c' stroke-width='1.6'/%3E%3C/svg%3E") no-repeat right 4px center/8px!important;padding:0 10px 0 0!important}
+.nkbCanvas input[type=text].nkbField.nkbUl{border:0!important;border-bottom:1px solid transparent!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;outline:0}
+.nkbCanvas input[type=text].nkbField.nkbUl:focus{background:#fffce9aa!important;border-bottom:2px solid #26764c!important;outline:0}
+.nkbCanvas input[type=text].nkbField.nkbUl.ok{border-bottom-color:#26764c!important}.nkbCanvas input[type=text].nkbField.nkbUl.bad{border-bottom:2px solid #c0392b!important}
+.nkbCanvas input[type=text][data-native-field="t2"].nkbField.nkbUl{border-bottom:1px solid #6a8aa0!important}
+
+.nkbCanvas select.nkbField{background-image:none!important;padding:0!important;text-align:center;text-align-last:center;appearance:none;-webkit-appearance:none}
+.nkbCanvas select.nkbField[data-native-field=geschieden],.nkbCanvas select.nkbField[data-native-field=Kind],.nkbCanvas select.nkbField[data-native-field=verheiratet],.nkbCanvas select.nkbField[data-native-field=Single]{width:2.0465cqw!important;height:2.0465cqw!important}
+
+.nkbDice{position:absolute;z-index:5;display:flex;flex-direction:column;justify-content:center;gap:.5cqw;font:1.6cqw Arial,sans-serif;color:#23543c}.nkbDice>div{display:flex;align-items:center;gap:1cqw}.nkbDice button{font:inherit;min-height:0;padding:.25em .5em;border:1px solid #94aa99;border-radius:3px;background:#fffdf5;color:inherit}.nkbDice output{font:inherit}
+
+/* Partner worksheets use the book's sans instruction / serif body pairing. */
+@font-face{font-family:KbFira;src:url('/assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:KbFira;src:url('/assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:KbDroid;src:url('/assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}
+.nkb:is([data-native-page="38"],[data-native-page="87"],[data-native-page="88"],[data-native-page="89"],[data-native-page="90"],[data-native-page="91"]) .nkbLine{font-family:KbDroid,serif}
+.nkb:is([data-native-page="38"],[data-native-page="87"],[data-native-page="88"],[data-native-page="89"],[data-native-page="90"],[data-native-page="91"]) .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
+@font-face{font-family:KbFira;src:url('/assets/fonts/firasans-latin-500.ttf') format('truetype');font-weight:500;font-display:swap}
+.nkb:is([data-native-page="87"],[data-native-page="88"],[data-native-page="89"],[data-native-page="90"],[data-native-page="91"]) .nkbLine.nkbB{font-weight:500}
+
+.nkb:is([data-native-page="66"],[data-native-page="67"],[data-native-page="68"],[data-native-page="69"],[data-native-page="70"],[data-native-page="71"],[data-native-page="72"],[data-native-page="73"],[data-native-page="74"],[data-native-page="75"],[data-native-page="76"],[data-native-page="77"],[data-native-page="78"],[data-native-page="79"],[data-native-page="80"]) .nkbLine{font-family:KbDroid,serif}
+.nkb:is([data-native-page="66"],[data-native-page="67"],[data-native-page="68"],[data-native-page="69"],[data-native-page="70"],[data-native-page="71"],[data-native-page="72"],[data-native-page="73"],[data-native-page="74"],[data-native-page="75"],[data-native-page="76"],[data-native-page="77"],[data-native-page="78"],[data-native-page="79"],[data-native-page="80"]) .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
+.nkb:is([data-native-page="66"],[data-native-page="67"],[data-native-page="68"],[data-native-page="69"],[data-native-page="70"],[data-native-page="71"],[data-native-page="72"],[data-native-page="73"],[data-native-page="74"],[data-native-page="75"],[data-native-page="76"],[data-native-page="77"],[data-native-page="78"],[data-native-page="79"],[data-native-page="80"]) .nkbLine.nkbB{font-weight:500}
+.nkb:is([data-native-page="92"],[data-native-page="93"],[data-native-page="94"],[data-native-page="95"],[data-native-page="96"]) .nkbLine{font-family:KbDroid,serif}
+
+.nkb:is([data-native-page="92"],[data-native-page="93"],[data-native-page="94"],[data-native-page="95"],[data-native-page="96"]) .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
+
+.nkb:is([data-native-page="92"],[data-native-page="93"],[data-native-page="94"],[data-native-page="95"],[data-native-page="96"]) .nkbLine.nkbB{font-weight:500}
+
+.nkb:is([data-native-page="57"],[data-native-page="58"],[data-native-page="59"],[data-native-page="60"],[data-native-page="61"],[data-native-page="62"],[data-native-page="63"],[data-native-page="64"],[data-native-page="65"]) .nkbLine{font-family:KbDroid,serif}
+.nkb:is([data-native-page="57"],[data-native-page="58"],[data-native-page="59"],[data-native-page="60"],[data-native-page="61"],[data-native-page="62"],[data-native-page="63"],[data-native-page="64"],[data-native-page="65"]) .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
+.nkb:is([data-native-page="57"],[data-native-page="58"],[data-native-page="59"],[data-native-page="60"],[data-native-page="61"],[data-native-page="62"],[data-native-page="63"],[data-native-page="64"],[data-native-page="65"]) .nkbLine.nkbB{font-weight:500}
+.nkb[data-native-page="58"] .nkbCanvas input[type=text].nkbField[data-native-field^="f4a-"]{border-radius:50%!important;border:1.6px solid #d8c68c!important;background:transparent!important;text-align:center;padding:0!important}
+.nkb[data-native-page="59"] .nkbCanvas input[type=text].nkbField[data-native-field^="f7b-"]{border-radius:50%!important;border:1.6px solid #d8c68c!important;background:transparent!important;text-align:center;padding:0!important}
+
+.nkbCanvas select.nkbField[data-native-field=geschieden],.nkbCanvas select.nkbField[data-native-field=Kind],.nkbCanvas select.nkbField[data-native-field=verheiratet],.nkbCanvas select.nkbField[data-native-field=Single]{width:1.5cqw!important;height:1.5cqw!important;border:1px solid #8fb0cc!important;font-size:.9cqw!important}
+
+.nkb:is([data-native-page="9"],[data-native-page="10"],[data-native-page="11"],[data-native-page="12"],[data-native-page="13"],[data-native-page="14"],[data-native-page="15"],[data-native-page="16"],[data-native-page="17"],[data-native-page="18"],[data-native-page="19"],[data-native-page="20"],[data-native-page="21"],[data-native-page="22"],[data-native-page="23"],[data-native-page="24"],[data-native-page="25"],[data-native-page="54"]) .nkbLine{font-family:KbDroid,serif}
+.nkb:is([data-native-page="9"],[data-native-page="10"],[data-native-page="11"],[data-native-page="12"],[data-native-page="13"],[data-native-page="14"],[data-native-page="15"],[data-native-page="16"],[data-native-page="17"],[data-native-page="18"],[data-native-page="19"],[data-native-page="20"],[data-native-page="21"],[data-native-page="22"],[data-native-page="23"],[data-native-page="24"],[data-native-page="25"],[data-native-page="54"]) .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
+.nkb:is([data-native-page="9"],[data-native-page="10"],[data-native-page="11"],[data-native-page="12"],[data-native-page="13"],[data-native-page="14"],[data-native-page="15"],[data-native-page="16"],[data-native-page="17"],[data-native-page="18"],[data-native-page="19"],[data-native-page="20"],[data-native-page="21"],[data-native-page="22"],[data-native-page="23"],[data-native-page="24"],[data-native-page="25"],[data-native-page="54"]) .nkbLine.nkbB{font-weight:500}
+
+.lmHideAll .sharedMatchItem{color:transparent!important}
+.nkb[data-native-page="11"] .nkbCanvas input[type=text].nkbField.nkbUl[data-native-field="das"],.nkb[data-native-page="10"] .nkbCanvas input[type=text].nkbField.nkbUl[data-native-field="komme"]{border-bottom:1px solid #5a5a5a!important}
+.nkb[data-native-page="10"] .nkbCanvas select.nkbField[data-native-field^="music_"]{border:0!important;border-radius:50%!important;background:transparent!important;color:#173c62!important;font-size:2.2cqw!important}
+.nkb[data-native-page="21"] .nkbCanvas input[type=text].nkbField.nkbUl[data-native-field="t2"]{border-bottom-color:transparent!important}
+.nkb[data-native-page="18"] .nkbLine span[style*="italic"]{font-size:.9em;letter-spacing:-.03em;font-weight:500;word-spacing:.14em}
+.nkb[data-native-page="18"] .nkbLine.nkbB[data-tw="180"]{font-weight:700}
+.nkb[data-native-page="11"] .nkbLine[data-tw="279"]{z-index:9}
+
+.nkb[data-native-page="38"] input[type=checkbox].nkbField{appearance:none;-webkit-appearance:none;border-radius:3px}
+.nkb[data-native-page="38"] input[type=checkbox].nkbField:checked{background:rgba(255,224,51,.55)!important}
+
+/* Outline-only choice marks leave the printed word completely visible. */
+.nkbCanvas input[type=radio].nkbCircleOption{border:1px solid transparent!important;border-radius:50%!important;outline-offset:0;background:transparent!important;z-index:5}
+.nkbCanvas input[type=radio].nkbCircleOption:checked{border-color:#245b9b!important;background:transparent!important}
+.nkbCanvas input[type=radio].nkbCircleOption.ok:checked{border-color:#268250!important;outline:0}
+.nkbCanvas input[type=radio].nkbCircleOption.bad:checked{border-color:#bd3838!important;outline:0}
+.nkb[data-native-page="31"] select.nkbField[data-native-field^="t6a-"]{border:1px solid #8fb0aa!important;border-radius:50%!important;text-align:center;padding:0!important;appearance:none;-webkit-appearance:none;font-family:Georgia,serif}
+.nkb31Pairing .sharedMatchItem{background:transparent!important;border:0!important}
+.nkb31Pairing .sharedMatchItem.selected{outline:1px dotted #245b9b}
+.page .nkb[data-native-page="31"] .nkbCanvas input[type=radio].nkbCircleOption:checked{background-image:none!important;background-color:transparent!important;background:transparent!important}
+
+.nkb31Pairing .sharedMatchLines path{stroke:#42658a;stroke-width:1.2}
+.nkb31Pairing .sharedMatchLines circle{stroke:#42658a;stroke-width:1}
+.nkb31Pairing .sharedMatchLines circle:nth-of-type(1),.nkb31Pairing .sharedMatchLines circle:nth-of-type(10){display:none}
+.nkb31ColorCheck{font-size:1.45cqw!important}
+
+.nkb[data-native-page="35"] .nkbLine.nkbB.nkbSans{font-family:KbFira,sans-serif;font-weight:500}
 
 .nkb[data-native-page="39"] .nkbLine{font-family:KbDroid,serif}
 .nkb[data-native-page="39"] .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
@@ -5,6 +103,7 @@
 @font-face{font-family:KbDroid;src:url('/assets/fonts/droid-serif-700.woff2') format('woff2');font-weight:700;font-display:swap}
 .nkb[data-native-page="39"] .nkbLine.nkbSB{font-family:KbDroid,serif;font-weight:700}
 .nkb[data-native-page="39"] .nkbLine.nkbB[data-tw="212"]{font-weight:700}
+
 .nkb[data-native-page="40"] .nkbLine{font-family:KbDroid,serif}
 .nkb[data-native-page="40"] .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
 .nkb[data-native-page="40"] .nkbLine.nkbB{font-weight:500}
