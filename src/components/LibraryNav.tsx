@@ -1,3 +1,4 @@
+import {PageImage} from './PageImage';
 import {useContext, useEffect, useLayoutEffect, useState} from 'react';
 import {createPortal} from 'react-dom';
 import {ReaderContext} from './ReaderControls';
@@ -164,7 +165,7 @@ export function LibraryNav({slug}: {slug: string}) {
             if (b.id === mod.book) {
               return (
                 <div key={b.id} className="lnv-bookcard sel flex gap-3 items-center text-left mx-3.5 mb-2.5 p-2.5 rounded-2xl border-[1.5px] border-[#c9a45a] shadow-[0_0_0_1px_#c9a45a,0_6px_16px_rgba(113,60,70,.10)] bg-[#fffdf6] cursor-pointer text-inherit no-underline dark:bg-[#333c36] dark:border-[#c9a45a]" aria-current="true">
-                  <img src={b.cover} alt="" className="w-11 h-[60px] object-cover rounded-md shadow-[0_2px_6px_rgba(0,0,0,.25)] flex-none"/>
+                  <PageImage src={b.cover} alt="" className="w-11 h-[60px] object-cover rounded-md shadow-[0_2px_6px_rgba(0,0,0,.25)] flex-none"/>
                   <span className="lnv-bt font-bold text-[16.5px] font-[Georgia,serif] flex flex-col gap-0.5">{b.title}<small className="font-normal text-[11px] font-[Arial,sans-serif] text-[#8a7d63] dark:text-[#9aa396]">{b.subtitle}</small></span>
                 </div>
               );
@@ -178,7 +179,7 @@ export function LibraryNav({slug}: {slug: string}) {
                   const t = switchTarget(b.id);
                   void navigateLesson(t.slug, String(t.pages[0]));
                 }}>
-                <img src={b.cover} alt="" className="w-11 h-[60px] object-cover rounded-md shadow-[0_2px_6px_rgba(0,0,0,.25)] flex-none"/>
+                <PageImage src={b.cover} alt="" className="w-11 h-[60px] object-cover rounded-md shadow-[0_2px_6px_rgba(0,0,0,.25)] flex-none"/>
                 <span className="lnv-bt font-bold text-[16.5px] font-[Georgia,serif] flex flex-col gap-0.5">{b.title}<small className="font-normal text-[11px] font-[Arial,sans-serif] text-[#8a7d63] dark:text-[#9aa396]">{b.subtitle}</small></span>
               </a>
             );

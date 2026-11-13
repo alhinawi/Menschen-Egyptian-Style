@@ -1,3 +1,4 @@
+import {PageImage} from './PageImage';
 import {usePageReset} from '../exercises/usePageReset';
 import {ClipMarkers} from './ClipMarkers';
 import {LineMatching} from '../exercises/LineMatching';
@@ -22,8 +23,10 @@ export function HybridScan({data}:{data:ScanData}){
  const gradedIds=(group:string)=>[...data.fields.filter(f=>f.group===group&&f.answer!==undefined).map(f=>f.id),...matchings.filter(m=>m.group===group&&m.answers).flatMap(m=>m.left.flatMap((_,i)=>m.example&&m.example[0]===i?[]:[m.id+'-'+i]))];
  function check(group:string){const fields=data.fields.filter(f=>f.group===group&&f.answer!==undefined);const next={...results};for(const f of fields){const value=f.kind==='radio'?String(values[f.name||f.id]===f.value):f.kind==='checkbox'?String(values[f.id]==='true'):norm(values[f.id]||'');next[f.id]=f.answer!.split('|').some(a=>norm(a)===value)}for(const m of matchings.filter(m=>m.group===group&&m.answers)){m.left.forEach((_,i)=>{if(m.example&&m.example[0]===i)return;next[m.id+'-'+i]=(values[m.id+'-'+i]||'')===m.answers![i]})}setResults(next)}
  return <div className="hybridScan" data-scan-book={data.book} data-scan-page={data.page} data-review-status={data.review.status}>
+
   <div className="hybridCanvas" style={{aspectRatio:`${data.width}/${data.height}`,'--scan-ratio':data.width/data.height,'--hybrid-tool-space':data.audio.length||data.fields.some(f=>f.answer!==undefined)||matchings.some(m=>m.answers)?toolSpace+'px':'0px'} as CSSProperties}>
-   <img className="hybridImage" src={data.image} alt={`Originalbuch Seite ${data.page}`} draggable={false}/>
+   <PageImage className="hybridImage" src={data.image} alt={`Originalbuch Seite ${data.page}`} draggable={false}/>
+
    <div className="hybridWords">{data.words.map((w,i)=>/[A-Za-zÄÖÜäöüß]/.test(w.text)?<span key={i} className="hybridWord tapWord" data-word={w.text} data-phrase={w.phrase||w.text} role="button" tabIndex={0} aria-label={`${w.text} · Bedeutung`} style={box(w)}>{w.text}</span>:<span key={i} className="hybridWord" style={box(w)}>{w.text}</span>)}</div>
    <div className="hybridFields">{data.fields.map(f=>{
     const className='hybridField '+(results[f.id]===undefined?'':results[f.id]?'hybridCorrect':'hybridWrong');
