@@ -81,22 +81,47 @@ const normText=(x:string)=>x.normalize('NFC').toLocaleLowerCase('de').replace(/[
 const normSet=(x:string)=>x.split(/[\n;]+/).map(normText).filter(Boolean).sort().join('\n');
 // Fixed-list answer mode for exercises whose official key is a closed set of items.
 // "set:a;;b;;c" = the value, split on commas, semicolons or line breaks, must contain exactly
-// the key items, in any order ("|" still separates accepted spellings inside one item).
-// "..." and "…" are equivalent. An empty value never matches. Answers without the prefix
-// return null and callers keep the exact-match logic.
+// the key items, in any order ("|" still separates accepted spellings inside one item, a
+// leading "?" marks an optional item such as a printed example, and a two-sentence item may
+// be written as two segments). Comparison is normText-based (trim, whitespace, case, trailing
+// punctuation lenient) and "..." = "…". An empty value never matches. Answers without the
+// prefix return null and callers keep the exact-match logic.
 export function answerMatchMode(answer:string,rawValue:string):boolean|null{
  if(!answer.startsWith('set:'))return null;
  const ell=(x:string)=>x.replace(/\.{3,}/g,'…');
- const key=answer.slice(4).split(';;').map(a=>a.split('|').map(v=>normText(ell(v))).filter(Boolean)).filter(a=>a.length);
+ // Key items split by ';;'. '|' separates accepted spellings inside one item. A leading '?'
+ // marks an optional item (e.g. a printed example the learner may or may not retype). An item
+ // containing a sentence boundary ('. ') may alternatively be written as two separate segments.
+ const key=answer.slice(4).split(';;').filter(a=>a.length).map(a=>{
+  const optional=a.startsWith('?');
+  const alts=(optional?a.slice(1):a).split('|').map(v=>normText(ell(v))).filter(Boolean);
+  const forms:string[][]=alts.map(a=>[a]);
+  for(const a of alts){const i=a.indexOf('. ');if(i>0)forms.push([normText(a.slice(0,i+1)),normText(a.slice(i+2))]);}
+  return {optional,forms};
+ });
  const got=rawValue.split(/[,;\n]+/).map(v=>normText(ell(v))).filter(Boolean);
- if(got.length!==key.length)return false;
- const used=new Array<boolean>(key.length).fill(false);
- for(const g of got){
-  const i=key.findIndex((alts,j)=>!used[j]&&alts.includes(g));
-  if(i<0)return false;
-  used[i]=true;
- }
- return true;
+ if(!got.length)return false;
+ const used=new Array<boolean>(got.length).fill(false);
+ const dfs=(ki:number,remaining:number):boolean=>{
+  if(ki===key.length)return remaining===0;
+  const item=key[ki];
+  if(item.optional&&dfs(ki+1,remaining))return true;
+  for(const form of item.forms){
+   const pick:number[]=[];
+   for(const part of form){
+    const j=got.findIndex((g,gi)=>!used[gi]&&!pick.includes(gi)&&g===part);
+    if(j<0){pick.length=0;break}
+    pick.push(j);
+   }
+   if(pick.length){
+    for(const j of pick)used[j]=true;
+    if(dfs(ki+1,remaining-pick.length))return true;
+    for(const j of pick)used[j]=false;
+   }
+  }
+  return false;
+ };
+ return dfs(0,got.length);
 }
 const pageSources=(page:string)=>[...Object.entries(scanData).filter(([k])=>k.endsWith(':'+page)).map(([,d])=>d as KeyedPage),...Object.values(nativeFiles).filter(d=>String(d.page)===page)];
 const fieldEls=(root:ParentNode,id:string)=>[...root.querySelectorAll<HTMLElement>('[data-native-field]')].filter(e=>e.dataset.nativeField===id);
