@@ -1,0 +1,29 @@
+.naCanvas .naTipTop{position:absolute;background:#c99f0e;z-index:1}
+.naCanvas .naTipSide{position:absolute;background:#c99f0e;z-index:1}
+.naCanvas .naTipLbl{position:absolute;transform:rotate(-90deg);transform-origin:left bottom;font:bold 11px FiraSans,Arial,sans-serif;letter-spacing:2px;color:#3d2c03;z-index:2;white-space:nowrap}
+.naCanvas .naText.naItalic{font-style:italic}
+.naCanvas .naTRule.naTLine{border-bottom-color:#cfe0d8}
+.naCanvas .naTCol.naTLine{border-left-color:#cfe0d8}
+.naCanvas .naTitle.naRB b{background:#cc1409}
+.naCanvas .naText.naS20{font-size:20px}
+.naCanvas .naText.naS17{font-size:17px}
+.naCanvas .naText.naS16{font-size:16px}
+.naCanvas .naText.naHead2{font-size:30px;letter-spacing:6px;color:#6f6f6f}
+.naCanvas .naTitle.naLS{letter-spacing:.55px}
+.naCanvas .naTitle.naLS3{letter-spacing:.3px}
+.naCanvas .naTitle.naLS{letter-spacing:-.1px}
+.naCanvas .naTitle.naLSm{letter-spacing:-1px}
+.naCanvas .naText.naS13{font-size:13px}
+.naCanvas .naBandCream{position:absolute;background:#fbfbd7}
+.naCanvas .naText.naF19{font-size:19px!important}
+.naCanvas .naDot.naDotSm{width:18px!important;height:18px!important;border-width:1.5px!important;border-color:#cfcec0!important}
+.naCanvas .naDot.naDotXs{width:16px!important;height:16px!important;border-width:1.5px!important;border-color:#cfcec0!important}
+.naCanvas .naDotPrint.naDotSm{width:18px;height:18px;border-width:1.5px;border-color:#cfcec0}
+.naCanvas .naSans2{position:absolute;font-family:FiraSans,'Trebuchet MS',sans-serif;font-size:18px;color:#1c1c1c;white-space:nowrap;z-index:2}
+.naCanvas .naSans2.naF15{font-size:15px}
+.naCanvas .naSans2.naF16{font-size:16px}
+.naCanvas .naSans2.naF17{font-size:17px}
+.naCanvas .naSans2.naBankT{color:#3b5a7f}
+.naCanvas .naText.naF17{font-size:17.3px!important}
+.naCanvas .naText.naPkt{font-family:FiraSans,Arial,sans-serif!important;font-weight:700;font-size:11px!important;letter-spacing:1.2px;color:#222;text-transform:uppercase}
+.naCanvas .naRule{border-color:#222}
