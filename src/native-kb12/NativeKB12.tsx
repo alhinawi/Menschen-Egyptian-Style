@@ -558,8 +558,8 @@ export function NativeKB12({page}:{page:string}){
  {page==='41'&&<>
  {art('hero',0,0,1100,1000)}{text(411,43,608,'Der hatte doch keinen Bauch!','nkHeroTitle')}{text(1015,38,85,'19','nkLesson')}
  <aside className="nkAside" style={{left:834,top:996,width:220,height:345}}><Words text={'Hören: Smalltalk\nSprechen: Personen beschreiben: Er hatte doch keinen Bart!; erstaunt reagieren: Echt?\nWortfelder: Aussehen, Charakter\nGrammatik: Präteritum war, hatte; Perfekt nicht trennbare Verben: gefallen, bekommen …; Wortbildung un-'}/></aside>
- {title('1',105,1044,685,'Auf einer Party')}{audio('assets/kb-a12-cd3-track23.mp3',48,1090,'3 23',undefined,'1a')}{text(117,1090,480,'a  Sehen Sie das Foto an und hören Sie. Was meinen Sie? Über welches Thema sprechen die beiden?','nkBold')}{text(640,1080,165,'Ich glaube, sie sprechen über …','nkSpeech')}
- {open('1a',150,1234,620,52,'Vermutung zum Gespräch')}{text(117,1310,680,'b  Was meinen Sie: Was sagt die Frau? Was sagt der Mann?','nkBold')}{open('1b',150,1370,620,75,'Was sagen Frau und Mann?')}
+ {title('1',105,1044,685,'Auf einer Party')}{audio('assets/kb-a12-cd3-track23.mp3',48,1090,'3 23',undefined,'1a')}{text(117,1090,480,'a  Sehen Sie das Foto an und hören Sie. Was meinen Sie? Über welches Thema sprechen die beiden?','nkBold')}{save('1a',220,1147)}{text(640,1080,165,'Ich glaube, sie sprechen über …','nkSpeech')}
+ {open('1a',150,1234,620,52,'Vermutung zum Gespräch')}{text(117,1310,680,'b  Was meinen Sie: Was sagt die Frau? Was sagt der Mann?','nkBold')}{save('1b',728,1318)}{open('1b',150,1370,620,75,'Was sagen Frau und Mann?')}
  </>}
  {page==='42'&&<>
  {art('vocab',0,0,1100,107)}{['Bart','lange Haare','kurze Haare','blonde Haare','braune Haare','schwarze Haare','graue Haare'].map((t,i)=>text(i*157,111,157,'● '+t,'nkVocabLabel nkTinyLabel nkCenter'))}
