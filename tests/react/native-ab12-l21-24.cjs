@@ -204,5 +204,21 @@ for(const width of[320,390]){
  assert.equal(await p.evaluate(()=>localStorage.getItem('native-ab12-70')),null,'reset clears storage');
  console.log(width,'p70 interaction/grade/persist/reset PASS');
  await p.close();
+ // page 71: Lernwortschatz - ungraded writing-line fields, persistence, reset
+ p=await openPage(b,width,'71');
+ const pg71=p.locator('.page[data-page="71"]');
+ assert.equal(await pg71.locator('.nativeAB12[data-native-ab12="71"]').count(),1,'native p71 rendered');
+ assert.equal(await pg71.locator('[data-native-field]').count(),38,'38 writing fields');
+ for(const id of['p71-1-l1','p71-1-l19','p71-1-r1','p71-1-r18','p71-2-1'])assert.equal(await pg71.locator('[data-native-field="'+id+'"]').count(),1,'field '+id);
+ await pg71.locator('[data-native-field="p71-1-l1"]').fill('Fahrer');
+ await pg71.locator('[data-native-field="p71-2-1"]').fill('Notiz');
+ await p.reload();await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');await p.evaluate(()=>window.bookPage([...document.querySelectorAll('.page')].findIndex(e=>e.dataset.page==='71')));await p.waitForTimeout(350);
+ assert.equal(await p.locator('.page[data-page="71"] [data-native-field="p71-1-l1"]').inputValue(),'Fahrer','saved field reloaded');
+ assert.equal(await p.locator('.page[data-page="71"] [data-native-field="p71-2-1"]').inputValue(),'Notiz','saved ex2 field reloaded');
+ await p.locator('.pageResetTrigger').click();await p.getByRole('button',{name:'Reset',exact:true}).click();
+ assert.equal(await p.locator('.page[data-page="71"] [data-native-field="p71-1-l1"]').inputValue(),'','reset clears field');
+ assert.equal(await p.evaluate(()=>localStorage.getItem('native-ab12-71')),null,'reset clears storage');
+ console.log(width,'p71 interaction/persist/reset PASS');
+ await p.close();
 }
 }finally{await b.close();server.close()}})().catch(e=>{console.error(e);server.close();process.exitCode=1});
