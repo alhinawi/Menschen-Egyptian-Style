@@ -216,5 +216,67 @@ export function NativeAB12L23({page}:{page:string}){
   {art('modul-tab',8,1049,60,16)}
   {text(76,1050,200,'86  |  sechsundachtzig','naFooter')}
  </>}
+ {page==='87'&&<>
+  <div className="naTrainHead" style={{left:71,top:62}}>TRAINING: HÖREN</div>
+  <div className="naRuleP" style={{left:287,top:82,width:440}}/>
+  <div className="naRedL" style={{left:727,top:26,width:69,height:59}}>23</div>
+  <div className="naOrangeTab" style={{left:796,top:27,width:5,height:62}}/>
+  {title('1',68,124,620,'Gespräch in der Kantine.','naRB naNw naS15')}
+  {text(102,144,580,'Sehen Sie das Bild an. Was meinen Sie? Was passiert hier? Was sagen die Personen?','naInst naInst15 naNw')}
+  <div className="naBank" style={{left:100,top:170,width:360,height:21}}/>
+  <div className="naBankBlue" style={{left:107,top:172}}><Words text="Familie | Arbeit | "/><span className="naStrikeD"><Words text="Urlaub"/></span><Words text=" | Krankheit | Haushalt | Wetter …"/></div>
+  {art('kantine',100,206,277,156)}
+  {art('tail1',412,214,35,28)}
+  <div className="naBubble" style={{left:415,top:203,width:231,height:57,border:'1px solid #dbd8cd'}}/>
+  {text(465,213,160,'Der Mann sieht krank aus.','naBookSerif naBk87 naNw')}
+  {text(506,231,90,'Vielleicht …','naBookSerif naBk87 naNw')}
+  {art('tail2',457,302,42,30)}
+  <div className="naBubble" style={{left:478,top:281,width:228,height:50,border:'1px solid #dbd8cd'}}/>
+  {text(533,285,140,'Ich glaube, die Frau war','naBookSerif naBk87 naNw')}
+  {text(573,304,60,'im Urlaub!','naBookSerif naBk87 naNw')}
+  <div className="naTipBox" style={{left:414,top:344,width:302,height:77}}/>
+  <div className="naTipTop" style={{left:420,top:350,width:296,height:5}}/>
+  <div className="naTipBar" style={{left:420,top:350,width:9,height:69}}/>
+  <div className="naTipp" style={{left:415,top:359,width:14,height:60}}>Tipp</div>
+  {text(445,357,275,'Sie finden das Hören besonders schwierig?','naBookSerif naBk87 naNw')}
+  {text(445,373,275,'Überlegen Sie vor dem Hören: Was ist die','naBookSerif naBk87 naNw')}
+  {text(445,389,275,'Situation? Wo sind die Personen? Was sagen','naBookSerif naBk87 naNw')}
+  {text(445,405,275,'die Personen vielleicht?','naBookSerif naBk87 naNw')}
+  {audio('assets/ab-cd2-track37.mp3',26,449,'2 37')}
+  {title('2',68,453,640,'Hören Sie nun das Gespräch und korrigieren Sie die Sätze.','naRB naNw naS15')}
+  {text(103,483,16,'a','naBookSerif naBk87')}<div className="naText naBookSerif naBk87 naNw" style={{left:121,top:483,width:250}}><span className="naStrikeB"><Words text="Peter"/></span><Words text=" war im Urlaub krank."/></div>
+  {art('hand2a',493,481,75,20)}{rule(496,497,65)}
+  {text(103,503,16,'b','naBookSerif naBk87')}{text(121,503,280,'Das Hotelzimmer war sauber.','naBookSerif naBk87 naNw')}
+  {text(103,523,16,'c','naBookSerif naBk87')}{text(121,523,280,'Das Wetter war zu warm.','naBookSerif naBk87 naNw')}
+  {text(103,542,16,'d','naBookSerif naBk87')}{text(121,542,360,'Peters Frau möchte nächstes Jahr wieder nach Italien.','naBookSerif naBk87 naNw')}
+  {text(103,562,16,'e','naBookSerif naBk87')}{text(121,562,370,'Der Urlaub von Peters Kollegin war nicht schön.','naBookSerif naBk87 naNw')}
+  {text(103,581,16,'f','naBookSerif naBk87')}{text(121,581,200,'Sie war in Italien.','naBookSerif naBk87 naNw')}
+  {field('87-2-b',497,497,151,'2 b')}
+  {field('87-2-c',497,517,151,'2 c')}
+  {field('87-2-d',497,536,151,'2 d')}
+  {field('87-2-e',497,556,151,'2 e')}
+  {field('87-2-f',497,575,151,'2 f')}
+  {check('87-2',620,604,{'87-2-b':'schmutzig','87-2-c':'kalt','87-2-d':'nicht wieder','87-2-e':'schön','87-2-f':'Portugal'})}
+  <div className="naTrainHead" style={{left:71,top:668}}>TRAINING: AUSSPRACHE</div>
+  {text(365,675,105,'Vokal „ö“','naVokal naNw')}
+  <div className="naRuleP" style={{left:434,top:687,width:281}}/>
+  {audio('assets/ab-cd2-track38.mp3',26,723,'2 38')}
+  {title('1',68,726,330,'Wann hören Sie „ö“? Kreuzen Sie an.','naRB naNw naS15')}
+  {text(124,760,40,'1. Wort','naColH naNw')}{text(179,760,40,'2. Wort','naColH naNw')}
+  {[0,1,2,3,4,5].map(i=><span key={i}>
+    {text(101,775+i*19.4+((i===4)?1:0),14,String(i+1),'naBookSerif naBk87')}
+    {dot('a1r'+(i+1),'1',136,774+Math.round(i*19.4),'Reihe '+(i+1)+' Wort 1',false,'naDotS')}
+    {dot('a1r'+(i+1),'2',191,774+Math.round(i*19.4),'Reihe '+(i+1)+' Wort 2',false,'naDotS')}
+  </span>)}
+  {text(416,726,14,'b','naBookSerif naBk87')}{text(435,726,120,'Mädchen','naBookSerif naBk87 naNw')}{text(435,746,120,'Brötchen','naBookSerif naBk87 naNw')}{text(435,765,220,'Mädchen möchten Brötchen.','naBookSerif naBk87 naNw')}
+  {text(416,799,14,'c','naBookSerif naBk87')}{text(435,796,120,'Fan','naBookSerif naBk87 naNw')}{text(435,814,120,'Föhn','naBookSerif naBk87 naNw')}{text(435,834,180,'Ein Föhn vom Fan','naBookSerif naBk87 naNw')}
+  {text(416,863,14,'d','naBookSerif naBk87')}{text(435,863,120,'Kellner','naBookSerif naBk87 naNw')}{text(435,883,120,'Köln','naBookSerif naBk87 naNw')}{text(435,902,330,'Ein Kölner Kellner ist ein Kellner aus Köln.','naBookSerif naBk87 naNw')}
+  {text(416,935,14,'e','naBookSerif naBk87')}{text(435,932,120,'sonnig','naBookSerif naBk87 naNw')}{text(435,951,120,'bewölkt','naBookSerif naBk87 naNw')}{text(435,970,300,'im Norden sonnig, im Osten bewölkt','naBookSerif naBk87 naNw')}
+  {audio('assets/ab-cd2-track39.mp3',26,918,'2 39')}
+  {title('2',68,921,400,'Hören Sie und sprechen Sie dann.','naRB naNw naS15')}
+  {text(101,954,14,'a','naBookSerif naBk87')}{text(120,954,120,'Wetter','naBookSerif naBk87 naNw')}{text(114,971,120,'Wort','naBookSerif naBk87 naNw')}{text(121,989,200,'macht: Wetterwörter','naBookSerif naBk87 naNw')}
+  {art('modul-tab',739,1047,59,17)}
+  <div className="naText naFooter" style={{left:420,top:1048,width:313,textAlign:'right'}}>siebenundachtzig&nbsp;&nbsp;|&nbsp;&nbsp;87</div>
+ </>}
  </Canvas>;
 }
