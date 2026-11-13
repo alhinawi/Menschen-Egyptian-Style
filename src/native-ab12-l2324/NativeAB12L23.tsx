@@ -11,10 +11,8 @@ export function NativeAB12L23({page}:{page:string}){
   <div className="naSide naSideB" style={{left:64,top:168}}>WÖRTER</div>
   <div className="naBank" style={{left:122,top:162,width:592,height:22}}/>
   <div className="naBank" style={{left:122,top:186,width:592,height:20}}/>
-  <div className="naText naS14 naNw" style={{left:124,top:164,width:600}}><Words text="Die Sonne scheint. | Es wird bald sehr windig. | Es ist bewölkt. | Es ist kühl. | Es ist schön warm. |"/></div>
-  {art('strike1',250,158,205,30)}
-  <div className="naText naS14 naNw" style={{left:124,top:188,width:600}}><Words text="Es regnet schon lange. | Es wird kälter. | Man sieht nicht viele Wolken. | Es gibt bald ein Gewitter."/></div>
-  {art('strike2',203,181,109,27)}
+  <div className="naText naS14 naNw" style={{left:124,top:164,width:600}}><Words text="Die Sonne scheint. | "/><span className="naStrikeB"><Words text="Es wird bald sehr windig."/></span><Words text=" | Es ist bewölkt. | Es ist kühl. | Es ist schön warm. |"/></div>
+  <div className="naText naS14 naNw" style={{left:124,top:188,width:600}}><Words text="Es regnet schon lange. | "/><span className="naStrikeB"><Words text="Es wird kälter."/></span><Words text=" | Man sieht nicht viele Wolken. | Es gibt bald ein Gewitter."/></div>
   {art('foto-a',120,208,152,88)}
   {art('foto-b',336,208,152,88)}
   {art('foto-c',552,208,156,88)}
