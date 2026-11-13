@@ -278,12 +278,12 @@ export function NativeKB12({page}:{page:string}){
  {art('hero',0,0,1100,1004)}{text(407,42,597,'Wir haben hier ein Problem.','nkHeroTitle')}{text(1015,38,85,'16','nkLesson')}
  <aside className="nkAside" style={{left:834,top:982,width:220,height:370}}><Words text={'Hören/Sprechen: Hilfe anbieten: Was kann ich für Sie tun?; um Hilfe bitten: Die Heizung funktioniert nicht.; auf Entschuldigungen reagieren: Kein Problem.\nLesen/Schreiben: E-Mail: Termine vereinbaren und verschieben\nWortfeld: im Hotel\nGrammatik: temporale Präpositionen vor, nach, in, für'}/></aside>
  {title('1',105,1062,710,'Was war denn das jetzt?')}{audio('assets/kb-cd3-track15.mp3',45,1106,'3 15',undefined,'1a')}
- {text(118,1106,700,'a  Sehen Sie das Foto an und hören Sie. Wer sind die Personen? Wo sind sie? Was ist das Problem? Erzählen Sie.','nkBold')}
+ {text(118,1106,700,'a  Sehen Sie das Foto an und hören Sie. Wer sind die Personen? Wo sind sie? Was ist das Problem? Erzählen Sie.','nkBold')}{save('1a',590,1146)}
  {text(151,1175,630,'Gäste | Kollegen | Geschwister | …    im Hotel | in einer Firma | …\nAufzug steckt fest | funktioniert nicht | …','nkBank')}
- {text(118,1255,420,'b  Mit wem möchten Sie im Aufzug stecken bleiben? Warum?','nkBold')}{text(560,1230,240,'Mit George Clooney / …\nDen/Die möchte ich gern kennenlernen. …','nkSpeech')}
+ {text(118,1255,420,'b  Mit wem möchten Sie im Aufzug stecken bleiben? Warum?','nkBold')}{save('1b',405,1290)}{text(560,1230,240,'Mit George Clooney / …\nDen/Die möchte ich gern kennenlernen. …','nkSpeech')}
  {title('2',105,1332,920,'Wie geht die Geschichte jetzt weiter? Was meinen Sie?')}
- {text(150,1375,305,'a  Was machen die beiden jetzt?')}{dot('2a','warten',456,1376,'Sie warten.')}{text(486,1375,165,'Sie warten.')}{dot('2a','rufen',670,1376,'Sie rufen Hilfe.')}{text(700,1375,190,'Sie rufen Hilfe.')}{dot('2a','anders',895,1376,'Andere Vermutung a')}{field('2a-anders',930,1374,110,'Andere Vermutung zur Handlung')}
- {text(150,1417,280,'b  Wie geht es den Personen?')}{dot('2b','genervt',432,1418,'Sie sind genervt.')}{text(462,1417,210,'Sie sind genervt.')}{dot('2b','angst',687,1418,'Sie haben Angst.')}{text(717,1417,200,'Sie haben Angst.')}{dot('2b','anders',925,1418,'Andere Vermutung b')}{field('2b-anders',960,1416,80,'Andere Vermutung zu den Personen')}
+ {text(150,1375,305,'a  Was machen die beiden jetzt?')}{dot('2a','warten',456,1376,'Sie warten.')}{text(486,1375,165,'Sie warten.')}{dot('2a','rufen',670,1376,'Sie rufen Hilfe.')}{text(700,1375,190,'Sie rufen Hilfe.')}{dot('2a','anders',895,1376,'Andere Vermutung a')}{field('2a-anders',930,1374,110,'Andere Vermutung zur Handlung')}{save('2a',1050,1372)}
+ {text(150,1417,280,'b  Wie geht es den Personen?')}{dot('2b','genervt',432,1418,'Sie sind genervt.')}{text(462,1417,210,'Sie sind genervt.')}{dot('2b','angst',687,1418,'Sie haben Angst.')}{text(717,1417,200,'Sie haben Angst.')}{dot('2b','anders',925,1418,'Andere Vermutung b')}{field('2b-anders',960,1416,80,'Andere Vermutung zu den Personen')}{save('2b',1050,1412)}
  </>}
  {page==='26'&&<>
  {art('vocab',0,0,1100,108)}{['• Aufzug','• Klimaanlage','• Heizung','• Fernseher','• Radio','• Internetverbindung','• Licht','• Seife'].map((t,i)=>text(35+i*131,111,130,t,'nkVocabLabel'))}
