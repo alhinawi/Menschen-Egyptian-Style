@@ -1,3 +1,4 @@
+import {CheckButton} from '../components/CheckButton';
 import {PageImage} from '../components/PageImage';
 import {usePageReset} from '../exercises/usePageReset';
 import {LineMatching} from '../exercises/LineMatching';
@@ -20,8 +21,8 @@ export function NativeAB11Next({page}:{page:string}){
  const open=(id:string,x:number,y:number,w:number,h:number,label:string)=><textarea className="nabInput nabOpen" style={{left:x,top:py(y),width:w,height:h,'--native-open-height':h+'px'} as React.CSSProperties} aria-label={label} data-native-field={id} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
  const choice=(id:string,value:string,x:number,y:number,label:string)=><input type="radio" className="nabRadio" style={{left:x,top:py(y)}} name={key+'-'+id} aria-label={label} checked={v[id]===value} onChange={()=>set(id,value)}/>;
  const listen=(n:string,x:number,y:number)=><button className="nabListen" style={{left:x,top:py(y)}} aria-label={'Originalaudio 1 '+n} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+n.padStart(2,'0')+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
- const checkRule=(id:string,x:number,y:number,validate:()=>boolean)=><div className="nabCheck" style={{left:x,top:py(y)}} data-native-task={id}><button onClick={()=>G({...graded,[id]:validate()})}>Prüfen ✓</button><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
- const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="nabCheck" style={{left:x,top:py(y)}} data-native-task={id}><button onClick={()=>G({...graded,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}>Prüfen ✓</button><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const checkRule=(id:string,x:number,y:number,validate:()=>boolean)=><div className="nabCheck" style={{left:x,top:py(y)}} data-native-task={id}><CheckButton onClick={()=>G({...graded,[id]:validate()})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="nabCheck" style={{left:x,top:py(y)}} data-native-task={id}><CheckButton onClick={()=>G({...graded,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const title=(n:string,y:number,s:string,kb:string,side='Strukturen')=><>{text(130,y+7,40,kb,'nabKB')}<div className="nabNumber" style={{left:170,top:py(y)}}>{n}</div>{text(212,y,810,s,'nabTitle')}<div className="nabSide" style={{left:141,top:py(y+45)}}>{side}</div></>;
  const head=(s:string)=><>{text(160,142,750,s,'nabHeader')}<div className="nabHeaderLine"/></>;
  const data=scanData['ab-a11:'+page];
