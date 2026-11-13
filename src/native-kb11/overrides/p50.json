@@ -1,0 +1,42 @@
+{
+  "keep": [
+    [
+      0,
+      0,
+      1075,
+      1521
+    ]
+  ],
+  "checks": {
+    "task4b": [
+      895,
+      1394
+    ]
+  },
+  "notes": [
+    "4a comic speech bubbles kept as ink, not boxed; 4b line 1 'Oh, vielen Dank.' is the printed example (no input), matches official key of 3 answers"
+  ],
+  "fieldadj": {
+    "b2": {
+      "x": 529,
+      "y": 1324,
+      "w": 372,
+      "h": 21,
+      "ul": true
+    },
+    "b3": {
+      "x": 529,
+      "y": 1346,
+      "w": 372,
+      "h": 21,
+      "ul": true
+    },
+    "b4": {
+      "x": 529,
+      "y": 1368,
+      "w": 372,
+      "h": 21,
+      "ul": true
+    }
+  }
+}
