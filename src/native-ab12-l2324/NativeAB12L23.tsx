@@ -704,5 +704,73 @@ export function NativeAB12L23({page}:{page:string}){
   {art('modul-tab',743,1046,56,20)}
   <div className="naText naFooter" style={{left:420,top:1047,width:315,textAlign:'right'}}>dreiundneunzig&nbsp;&nbsp;|&nbsp;&nbsp;93</div>
  </>}
+ {page==='94'&&<>
+  <div className="naTestHead naTestHead94" style={{left:84,top:62}}>TEST</div>
+  <div className="naTestRule94" style={{left:152,top:83,width:586}}/>
+  <div className="naSideT" style={{left:52,top:147}}>WÖRTER</div>
+  {title('1',81,120,640,'Feste und Feiern. Ergänzen Sie die Nomen oder Verben in der richtigen Form.','naRB naNw naS15')}
+  {text(115,152,16,'a','naBookSerif naBk88')}{text(133,152,382,'Bist du schon umgezogen? – Ja. In zwei Wochen ist meine','naBookSerif naBk88 naNw',14)}
+  {art('hand1a',518,154,96,28)}{text(604,163.5,10,'.','naBookSerif naBk88 naNw naPrd')}
+  {text(115,170,16,'b','naBookSerif naBk88')}{text(133,170,22,'Ich','naBookSerif naBk88 naNw',14)}{field('94-1b',158,167,172,'1 b')}{text(336,170,332,'dir herzlich zu deinem Geburtstag. – Vielen Dank!','naBookSerif naBk88 naNw',14)}
+  {text(115,190.5,16,'c','naBookSerif naBk88')}{text(132,190.5,356,'Tanja und Martin wollen heiraten. – Ja, ich weiß. Die','naBookSerif naBk88 naNw',14)}{field('94-1c',494,187,174,'1 c')}{text(673,190.5,20,'ist','naBookSerif naBk88 naNw',14)}
+  {text(133,210,100,'im September.','naBookSerif naBk88 naNw',14)}
+  {text(115,229.5,16,'d','naBookSerif naBk88')}{text(132,229.5,246,'Wie heißt der letzte Tag des Jahres? –','naBookSerif naBk88 naNw',14)}{field('94-1d',385,226,173,'1 d')}{text(560,229.5,10,'.','naBookSerif naBk88 naNw naPrd')}
+  {text(115,248,16,'e','naBookSerif naBk88')}{text(133,248,154,'Felix hat seine Prüfung','naBookSerif naBk88 naNw',14)}{field('94-1e',281,245,184,'1 e')}{text(467,248,152,'. – Toll, das freut mich!','naBookSerif naBk88 naNw',14)}
+  {text(115,267,16,'f','naBookSerif naBk88')}{text(133,267,396,'Papa wird nächste Woche 50 Jahre alt. – Was sollen wir ihm','naBookSerif naBk88 naNw',14)}{field('94-1f',533,266,174,'1 f')}{text(709,267,10,'?','naBookSerif naBk88 naNw')}
+  {text(115,287,16,'g','naBookSerif naBk88')}{text(132,287,104,'Wann feiert ihr','naBookSerif naBk88 naNw',14)}{field('94-1g',242,284,170,'1 g')}{text(416,287,140,'? – Am 24. Dezember.','naBookSerif naBk88 naNw',14)}
+  <div className="naPts" style={{left:663,top:294}}>_ / 6 Punkte</div>
+  {check('94-1',663,314,{'94-1b':'gratuliere','94-1c':'Hochzeit','94-1d':'Silvester','94-1e':'bestanden','94-1f':'schenken','94-1g':'Weihnachten'})}
+  <div className="naSideT" style={{left:55,top:362}}>STRUKTUREN</div>
+  {title('2',80,335,640,'Schreiben Sie das Datum in der richtigen Form.','naRB naNw naS15')}
+  {text(114,365,16,'a','naBookSerif naBk88')}<div className="naBltSq" style={{left:131,top:371,background:'#224a99'}}/>{text(147,365,153,'Welches Datum ist heute?','naBookSerif naBk88 naNw',14)}<div className="naBltTr" style={{left:334,top:374,borderBottomColor:'#3bb577'}}/>{art('hand2a',348,370,76,14)}{text(415,367.5,10,'.','naBookSerif naBk88 naNw naPrd')}{text(426,366,26,'(12.)','naBookSerif naBk88 naNw',14)}
+  <div className="naBltSq" style={{left:131,top:390,background:'#224a99'}}/>{text(146,384,249,'Wirklich? Dann ist ja morgen Freitag,','naBookSerif naBk88 naNw',14)}{field('94-2a',400,382,195,'2 a')}{text(600,386,33,'(13.).','naBookSerif naBk88 naNw',14)}
+  {text(114,404,16,'b','naBookSerif naBk88')}<div className="naBltCi" style={{left:131,top:410,background:'#ab1d74'}}/>{text(147,404,340,'Meine Mutter feiert nur jedes vierte Jahr Geburtstag.','naBookSerif naBk88 naNw',14)}
+  <div className="naBltTr" style={{left:131,top:428,borderBottomColor:'#3bb577'}}/>{text(150,424,55,'Warum?','naBookSerif naBk88 naNw',14)}
+  <div className="naBltCi" style={{left:131,top:449,background:'#ab1d74'}}/>{text(150,443,44,'Sie hat','naBookSerif naBk88 naNw',14)}{field('94-2b',200,440,396,'2 b')}{text(602,445,120,'(29.2.) Geburtstag.','naBookSerif naBk88 naNw',14)}
+  {text(113,462,16,'c','naBookSerif naBk88')}<div className="naBltSq" style={{left:131,top:468,background:'#224a99'}}/>{text(146,462,174,'Am Montag habe ich keine Schule.','naBookSerif naBk88 naNw',14)}
+  <div className="naBltTr" style={{left:130,top:487,borderBottomColor:'#3bb577'}}/>{text(150,481,143,'Ach ja, richtig, das ist','naBookSerif naBk88 naNw',14)}{field('94-2c',300,479,228,'2 c')}{text(536,484,173,'(3.10). Das ist ein Feiertag.','naBookSerif naBk88 naNw',14)}
+  {text(113,501,16,'d','naBookSerif naBk88')}<div className="naBltTr" style={{left:130,top:506,borderBottomColor:'#3bb577'}}/>{text(148,501,135,'Fahrt ihr in Urlaub?','naBookSerif naBk88 naNw',14)}
+  <div className="naBltSq" style={{left:131,top:527,background:'#224a99'}}/>{text(148,522,18,'Ja,','naBookSerif naBk88 naNw',14)}{field('94-2d',172,518,415,'2 d')}{text(593,523,70,'(09.–15.08)','naBookSerif naBk88 naNw',14)}
+  <div className="naPts" style={{left:662,top:548}}>_ / 4 Punkte</div>
+  {check('94-2',662,568,{'94-2a':'der dreizehnte','94-2b':'am neunundzwanzigsten Februar','94-2c':'der dritte Oktober','94-2d':'vom neunten bis zum fünfzehnten August'})}
+  <div className="naSideT" style={{left:55,top:595}}>STRUKTUREN</div>
+  {title('3',80,569,640,'Wünsche. Schreiben Sie Sätze mit würd-.','naRB naNw naS15')}
+  {text(114,598,16,'a','naBookSerif naBk88')}{text(133,598,45,'Bruno','naBookSerif naBk88 naNw',14)}
+  {art('hand3a',176,599,151,20)}{text(319,598,50,'kaufen.','naBookSerif naBk88 naNw',14)}
+  {text(130.5,618.5,170,'(Motorrad kaufen/gern)','naCue94',14)}
+  {text(440,600,16,'d','naBookSerif naBk88')}{text(459,600,84,'Meine Eltern','naBookSerif naBk88 naNw',14)}{field('94-3d',548,597,173,'3 d')}{text(723,600,10,'.','naBookSerif naBk88 naNw naPrd')}
+  {text(457,619.7,250,'(die neue Ausstellung besuchen/gern)','naCue94',14)}
+  {text(114,638,16,'b','naBookSerif naBk88')}{text(131,638,32,'Tom,','naBookSerif naBk88 naNw',14)}{field('94-3b',167,634,212,'3 b')}{text(382,638,10,'?','naBookSerif naBk88 naNw')}
+  {text(130.5,658.5,210,'(du/Fallschirm springen/gern)','naCue94',14)}
+  {text(440,640,16,'e','naBookSerif naBk88')}{text(459,640,100,'Herr Wolf, wo','naBookSerif naBk88 naNw',14)}{field('94-3e',554,636,164,'3 e')}{text(720,640,10,'?','naBookSerif naBk88 naNw')}
+  {text(457,658.5,110,'(Sie/leben/gern)','naCue94',14)}
+  {text(113,675.5,16,'c','naBookSerif naBk88')}{text(132,675.5,149,'Amelie und Sarah, was','naBookSerif naBk88 naNw',14)}{field('94-3c',288,673,102,'3 c')}{text(394,675.5,10,'?','naBookSerif naBk88 naNw')}
+  {text(130.5,696.5,130,'(ihr/machen/gern)','naCue94',14)}
+  {text(441,678.5,16,'f','naBookSerif naBk88')}{text(459,678.5,24,'Wir','naBookSerif naBk88 naNw',14)}{field('94-3f',510,675,198,'3 f')}{text(712,678.5,10,'.','naBookSerif naBk88 naNw naPrd')}
+  {text(457,697.6,160,'(jeden Tag feiern/gern)','naCue94',14)}
+  <div className="naPts" style={{left:661,top:704}}>_ / 5 Punkte</div>
+  {check('94-3',661,724,{'94-3b':'würdest du gern Fallschirm springen','94-3c':'würdet ihr gern machen','94-3d':'würden gern die neue Ausstellung besuchen','94-3e':'würden Sie gern leben','94-3f':'würden gern jeden Tag feiern'})}
+  <div className="naSideT" style={{left:52,top:770}}>KOMMUNIKATION</div>
+  {title('4',79,743,640,'Ergänzen Sie die Glückwünsche.','naRB naNw naS15')}
+  {text(113,775.5,16,'a','naBookSerif naBk88')}{text(132,775.5,82,'Liebe Mama,','naBookSerif naBk88 naNw',14)}{field('94-4a',219,770,157,'4 a')}{text(381,775.5,200,'Glückwunsch zum Geburtstag!','naBookSerif naBk88 naNw',14)}
+  {text(113,794.5,16,'b','naBookSerif naBk88')}{text(131,794.5,209,'10, 9, 8, 7, 6, 5, 4, 3, 2, 1 …. Gutes','naBookSerif naBk88 naNw',14)}{field('94-4b',345,791,157,'4 b')}{text(504,794.5,10,'!','naBookSerif naBk88 naNw')}
+  {text(113,814.5,16,'c','naBookSerif naBk88')}{text(131,814.5,31,'Alles','naBookSerif naBk88 naNw',14)}{field('94-4c',166,809,156,'4 c')}{text(326,814.5,235,'! Wir hoffen, es geht dir bald besser.','naBookSerif naBk88 naNw',14)}
+  {text(113,833.5,16,'d','naBookSerif naBk88')}{text(132,833.5,540,'Liebe Kunden, unser Geschäft ist vom 23.–27.12. geschlossen. Wir wünschen frohe','naBookSerif naBk88 naNw',14)}
+  {field('94-4d',131,848,191,'4 d')}{text(328,854.5,10,'!','naBookSerif naBk88 naNw')}
+  {text(113,873.5,16,'e','naBookSerif naBk88')}{text(131,873.5,181,'Ihr habt 5:1 gewonnen? Gut','naBookSerif naBk88 naNw',14)}{field('94-4e',318,868,192,'4 e')}{text(514,873.5,10,'!','naBookSerif naBk88 naNw')}
+  <div className="naPts" style={{left:660,top:879}}>_ / 5 Punkte</div>
+  {check('94-4',660,899,{'94-4a':'herzlichen','94-4b':'neues Jahr','94-4c':'Gute Besserung','94-4d':'Weihnachten','94-4e':'gemacht'})}
+  <div style={{position:'absolute',left:110,top:906,width:383,height:26,background:'#f6f3d5'}}/>
+  {text(114,913,120,'Wörter','naScoreH94 naNw')}{text(238,913,120,'Strukturen','naScoreH94 naNw')}{text(364,913,130,'Kommunikation','naScoreH94 naNw')}
+  <div style={{position:'absolute',left:109,top:906,width:1.5,height:103,background:'#f5f3ee'}}/>{[232,358].map(x=><div key={x} style={{position:'absolute',left:x,top:906,width:1.5,height:103,background:'#f5f3ee'}}/>)}<div style={{position:'absolute',left:492,top:906,width:1.5,height:103,background:'#f5f3ee'}}/>{[957,982].map(y=><div key={y} style={{position:'absolute',left:109,top:y,width:384,height:1.5,background:'#f5f3ee'}}/>)}<div style={{position:'absolute',left:109,top:1008,width:384,height:1.5,background:'#f5f3ee'}}/>
+  {[0,1,2].map(r=><span key={r}>
+    {art('chip'+(r===0?'R':r===1?'Y':'G'),115,935+r*26,18,r===0?19:r===1?18:17)}{text(142,937+r*26,90,['0–3 Punkte','4 Punkte','5–6 Punkte'][r],'naScoreR94 naNw')}
+    {art('chip'+(r===0?'R':r===1?'Y':'G'),239,935+r*26,18,r===0?19:r===1?18:17)}{text(265,937+r*26,90,['0–4 Punkte','5–7 Punkte','8–9 Punkte'][r],'naScoreR94 naNw')}
+    {art('chip'+(r===0?'R':r===1?'Y':'G'),365,935+r*26,18,r===0?19:r===1?18:17)}{text(391,937+r*26,90,['0–2 Punkte','3 Punkte','4–5 Punkte'][r],'naScoreR94 naNw')}
+  </span>)}
+  {text(324,1013,167,'www.hueber.de/menschen/lernen','naFoot88')}
+  {art('modul8-tab',0,1047,48,20)}
+  <div className="naText naFoot88" style={{left:62,top:1048,width:200}}>94&nbsp;&nbsp;|&nbsp;&nbsp;vierundneunzig</div>
+ </>}
  </Canvas>;
 }
