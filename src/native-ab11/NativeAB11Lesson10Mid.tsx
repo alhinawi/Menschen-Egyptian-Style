@@ -201,10 +201,10 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {side('STRUKTUREN',251)}{side('WÖRTER',647)}{side('STRUKTUREN',780)}{side('STRUKTUREN',964)}
  {title('1',214,'Was macht Lisa? Ergänzen Sie um – am – von ... bis – ab.','KB 3',116)}
  {art('cal',101,267,341,167)}
- {f('u1-1',471,318,66,'1 Am')}{txt(540,324,168,'Montag frühstückt Lisa')}{f('u1-2',716,318,64,'1 um')}{txt(783,324,60,'7 Uhr.')}
- {art('exab',474.5,353.1,17.8,17.4)}{txt(505,346,280,'8 Uhr arbeitet sie.')}
- {f('u1-3',471,362,71,'1 Von')}{txt(545,369,18,'18')}{f('u1-4',563,362,64,'1 bis')}{txt(631,363,250,'19 Uhr kauft sie ein und')}{txt(477,380,100,'kocht.')}
- {f('u1-5',471,404,94,'1 Am')}{txt(573,401,320,'Abend geht sie mit Klaus ins Kino.')}
+ {f('u1-1',465,316,75,'1 Am')}{txt(545,322,150,'Montag frühstückt Lisa')}{f('u1-2',716,316,60,'1 um')}{txt(781,322,60,'7 Uhr.')}
+ {art('exab',474.5,353.1,17.8,17.4)}{txt(505,348,280,'8 Uhr arbeitet sie.')}
+ {f('u1-3',465,368,75,'1 Von')}{txt(545,369,18,'18')}{f('u1-4',565,368,65,'1 bis')}{txt(636,369,250,'19 Uhr kauft sie ein und')}{txt(477,393.5,100,'kocht.')}
+ {f('u1-5',465,412,75,'1 Am')}{txt(555,417,320,'Abend geht sie mit Klaus ins Kino.')}
  {check('u1',745,432)}
  {title('2',502,'Was machen Sie heute?','KB 3',118)}
  <div className="mPairDot" style={{left:74,top:516}}/><div className="mPairDot" style={{left:88,top:516}}/>
@@ -230,18 +230,18 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {txt(498,858,16,'7')}{f('u3b-7',520,854,91,'3b 7 Machst')}{txt(615,860,190,'du gern Hausaufgaben?')}
  {check('u3b',640,885)}
  {title('4',924,'Ergänzen Sie haben in der richtigen Form.','KB 5',125)}
- {markS(155,960)}{art('exhaben',171.1,959.5,36,17)}{txt(214,958,300,'(a) wir jetzt alles für die Party?','mDlg')}
- {markT(155,979)}{txt(173,977,200,'Ich denke ja.','mDlg')}
- {markS(155,998)}{f('u4-b',173,992,69,'4 b Hast')}{txt(248,996,380,'(b) du auch Brot gekauft?','mDlg')}
- {markT(155,1023)}{txt(173,1021,80,'Ja klar. Das','mDlg')}{f('u4-c',266,1017,58,'4 c habe')}{txt(330,1021,330,'(c) ich doch heute Morgen schon gekauft.','mDlg')}
+ {markS(155,955)}{art('exhaben',171.1,957.5,36,17)}{txt(214,953,300,'(a) wir jetzt alles für die Party?','mDlg')}
+ {markT(155,973)}{txt(173,971,200,'Ich denke ja.','mDlg')}
+ {markS(155,999)}{f('u4-b',173,993,69,'4 b Hast')}{txt(248,997,380,'(b) du auch Brot gekauft?','mDlg')}
+ {markT(155,1019)}{txt(173,1017,80,'Ja klar. Das','mDlg')}{f('u4-c',266,1013,58,'4 c habe')}{txt(330,1017,330,'(c) ich doch heute Morgen schon gekauft.','mDlg')}
  {markS(155,1042)}{txt(173,1040,270,'Und wo ist der Geburtstagskuchen?','mDlg')}
- {markT(155,1065)}{txt(173,1063,90,'Den Kuchen','mDlg')}{f('u4-d',267.5,1057,72,'4 d hat')}{txt(346,1063,470,'(d) Julia gebacken. Sie bringt ihn heute Abend zur Party mit.','mDlg')}
- {markS(155,1086)}{txt(173,1084,130,'Sehr gut. Und was','mDlg')}{f('u4-e',324.2,1078,79.2,'4 e haben')}{txt(410,1084,160,'(e) wir zu trinken?','mDlg')}
+ {markT(155,1062)}{txt(173,1060,90,'Den Kuchen','mDlg')}{f('u4-d',267.5,1056,72,'4 d hat')}{txt(346,1060,470,'(d) Julia gebacken. Sie bringt ihn heute Abend zur Party mit.','mDlg')}
+ {markS(155,1085)}{txt(173,1083,130,'Sehr gut. Und was','mDlg')}{f('u4-e',324.2,1079,79.2,'4 e haben')}{txt(410,1083,160,'(e) wir zu trinken?','mDlg')}
  {markT(155,1107)}{txt(173,1105,240,'Wein, Mineralwasser und Saft.','mDlg')}
- {markS(155,1128)}{txt(173,1126,105,'Super! Und wo','mDlg')}{f('u4-f',292,1120,67,'4 f habt')}{txt(365,1126,240,'(f) ihr das Geschenk für Julia?','mDlg')}
- {markT(155,1150)}{txt(173,1148,540,'Das ist noch in Claudias Auto. Sie kommt um sechs Uhr und bringt es mit.','mDlg')}
- {markS(155,1171)}{txt(173,1169,115,'Gut, ich glaube, jetzt','mDlg')}{f('u4-g',334,1163,72,'4 g haben')}{txt(412,1169,170,'(g) wir wirklich alles.','mDlg')}
- {check('u4',620,1162)}
+ {markS(155,1126)}{txt(173,1124,105,'Super! Und wo','mDlg')}{f('u4-f',292,1120,67,'4 f habt')}{txt(365,1124,240,'(f) ihr das Geschenk für Julia?','mDlg')}
+ {markT(155,1146)}{txt(173,1144,540,'Das ist noch in Claudias Auto. Sie kommt um sechs Uhr und bringt es mit.','mDlg')}
+ {markS(155,1169)}{txt(173,1167,115,'Gut, ich glaube, jetzt','mDlg')}{f('u4-g',334,1163,72,'4 g haben')}{txt(412,1167,170,'(g) wir wirklich alles.','mDlg')}
+ {check('u4',620,1160)}
  </>}
  {page==='83'&&<>
  {head('LERNWORTSCHATZ',362,153,125,133)}
@@ -257,6 +257,6 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  {open('u2-notes',170,1016,600,156,'2 Eigene Wörter')}
  {art('photos',794,168,107,1010)}
  </>}
- {Number(page)%2?<>{<div className="mText mFooter" style={{left:708,top:({79:1207,81:1191,83:1203,85:1202,87:1209} as Record<string,number>)[page]||1208,width:180}}><Words s={footerW[page]}/><b className="mFooterB">{'  |  '+page}</b></div>}{txt(841,(({79:1207,81:1191,83:1203,85:1202,87:1209} as Record<string,number>)[page]||1208)-13,60,'Modul 4','mFooter mFooterTab mFooterTabOdd')}</>:<>{txt(30,({80:1209,82:1206,84:1212,86:1204} as Record<string,number>)[page]||1208,60,'Modul 4','mFooter mFooterTab')}<div className="mText mFooter" style={{left:103,top:({80:1209,82:1206,84:1212,86:1204} as Record<string,number>)[page]||1208,width:180}}><b className="mFooterB">{page+'  |  '}</b><Words s={footerW[page]}/></div></>}
+ {Number(page)%2?<>{<div className="mText mFooter" style={{left:708,top:({79:1207,81:1191,83:1203,85:1202,87:1209} as Record<string,number>)[page]||1208,width:180}}><Words s={footerW[page]}/><b className="mFooterB">{'  |  '+page}</b></div>}{txt(841,(({79:1207,81:1191,83:1203,85:1202,87:1209} as Record<string,number>)[page]||1208)-13,60,'Modul 4','mFooter mFooterTab mFooterTabOdd')}</>:<>{txt(30,({80:1209,82:1206,84:1212,86:1204} as Record<string,number>)[page]||1208,60,'Modul 4','mFooter mFooterTab')}<div className="mText mFooter mFooterEven" style={{left:103,top:({80:1209,82:1206,84:1210,86:1204} as Record<string,number>)[page]||1208,width:40}}>{page}</div><div className="mText mFooter mFooterEven" style={{left:130.7,top:({80:1209,82:1206,84:1210,86:1204} as Record<string,number>)[page]||1208,width:12}}>|</div><div className="mText mFooter mFooterEven" style={{left:145,top:({80:1209,82:1206,84:1210,86:1204} as Record<string,number>)[page]||1208,width:120}}><Words s={footerW[page]}/></div></>}
  </div></div><audio className="nabPlayer" ref={audio} controls hidden={!track} aria-label="Originalaudio Arbeitsbuch"/></div>;
 }
