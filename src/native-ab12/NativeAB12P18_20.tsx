@@ -1,3 +1,4 @@
+import {CheckButton} from '../components/CheckButton';
 import {PageImage} from '../components/PageImage';
 import {usePageReset} from '../exercises/usePageReset';
 import {useLayoutEffect,useRef,useState} from 'react';
@@ -23,7 +24,7 @@ export function NativeAB12P18_20({page}:{page:string}){
  const dot=(id:string,value:string,x:number,y:number,label:string)=><input type="radio" className="naDot" name={key+'-'+id} aria-label={label} data-native-field={id} style={{left:x,top:y}} checked={values[id]===value} onChange={()=>set(id,value)}/>;
  const pick=(id:string,value:string,x:number,y:number,label:string)=><button type="button" className={'naPick'+(values[id]===value?' selected':'')} aria-label={label} aria-pressed={values[id]===value} data-native-field={id} onClick={()=>set(id,value)} style={{left:x,top:y}}>{value}</button>;
  const circle=(id:string,x:number,y:number,label:string)=><input className="naCNum" aria-label={label} data-native-field={id} style={{left:x,top:y}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false} inputMode="numeric" maxLength={1}/>;
- const check=(id:string,x:number,y:number,answers:Record<string,string>,cls='')=><div className={'naCheck '+cls} data-check={id} style={{left:x,top:y}}><button onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}>Prüfen ✓</button><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const check=(id:string,x:number,y:number,answers:Record<string,string>,cls='')=><div className={'naCheck '+cls} data-check={id} style={{left:x,top:y}}><CheckButton onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,t:string,cls='')=><div className={'naTitle '+cls} style={{left:x,top:y,width:w}}><b>{n}</b><Words text={t}/></div>;
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
@@ -64,27 +65,11 @@ export function NativeAB12P18_20({page}:{page:string}){
   {text(159,341,200,'Deutsch','naTh')}
   {text(451,341,150,'Englisch','naTh')}
   {text(648,341,320,'Meine Sprache oder andere Sprachen','naTh naNw')}
-  {[372,405,437,470,502,535,567].map(y=><div key={y} className="naTRule" style={{left:150,top:y,width:825}}/>)}
-  {art('hint-1',155,368,290,30)}
-  {art('hint-2',155,397,290,30)}
-  {art('hint-3',155,430,290,30)}
-  {art('hint-4',155,459,290,30)}
-  {art('hand-meer',155,489,290,30)}
-  {art('hint-6',155,518,290,30)}
-  {art('hand-wald',155,545,290,30)}
-  {field('p18-dCafé',158,368,275,'café auf Deutsch','naFieldBlank')}
-  {field('p18-dHafen',158,397,275,'harbour auf Deutsch','naFieldBlank')}
-  {field('p18-dFlughafen',158,430,275,'airport auf Deutsch','naFieldBlank')}
-  {field('p18-dKirche',158,459,275,'church auf Deutsch','naFieldBlank')}
-  {field('p18-dSpielplatz',158,518,275,'playground auf Deutsch','naFieldBlank')}
-  {text(451,370,150,'café')}
-  {text(451,399,150,'harbour')}
-  {text(451,432,150,'airport')}
-  {text(451,461,150,'church')}
-  {text(451,491,150,'sea')}
-  {text(451,520,150,'playground')}
-  {text(451,549,150,'forest')}
-  {[370,399,432,461,491,520,549].map((y,i)=>field('p18-ms'+(i+1),650,y,315,'Meine Sprache Zeile '+(i+1),'naFieldBlank'))}
+  {[395.5,425,454.5,484,513.5,543].map(y=><div key={y} className="naTRule" style={{left:150,top:y,width:825}}/>)}
+  {['café','harbour','airport','church','sea','playground','forest'].map((word,i)=>text(451,366+i*29.5,170,word,'naTableEnglish'))}
+  {['hint-1','hint-2','hint-3','hint-4','hand-meer','hint-6','hand-wald'].map((name,i)=>art(name+'-clean',159,368+i*29.5,282,26))}
+  {['p18-dCafé','p18-dHafen','p18-dFlughafen','p18-dKirche',null,'p18-dSpielplatz',null].map((id,i)=>id?field(id,158,367+i*29.5,275,'Deutsch Zeile '+(i+1),'naFieldBlank'):null)}
+  {Array.from({length:7},(_,i)=>field('p18-ms'+(i+1),650,367+i*29.5,315,'Meine Sprache Zeile '+(i+1),'naFieldBlank'))}
   {check('g2',150,577,{'p18-dCafé':'Café','p18-dHafen':'Hafen','p18-dFlughafen':'Flughafen','p18-dKirche':'Kirche','p18-dSpielplatz':'Spielplatz'},'naCheckSm')}
   {kb(78,610,'KB 3')}
   {title('2',125,606,600,'Was ist das? Ergänzen Sie.','naOB naNw')}

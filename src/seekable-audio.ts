@@ -4,6 +4,13 @@
 // unbuffered position. Detect that once per session; on such hosts, download
 // the whole track into a blob: URL before the first play. Blob media is fully
 // seekable in memory, so the progress bar works everywhere.
+//
+// The probe uses a cache-busting query on purpose: Cloudflare honors ranges
+// for edge-cached variants but answers 200 on a cache miss, and media-element
+// requests key the cache differently than fetch(), so probing the plain URL
+// can say 206 while real playback requests still get 200. A cache-miss probe
+// is the worst case; hosts that serve 206 even on a miss (Vercel) skip the
+// conversion entirely.
 
 const MAX_BLOBS = 10; // cap held track bytes; oldest unused blobs are revoked
 
@@ -20,7 +27,8 @@ function httpSrc(a: HTMLAudioElement): string | undefined {
 
 function rangesBroken(src: string): Promise<boolean> {
   if (!probe) {
-    probe = fetch(src, {headers: {Range: 'bytes=0-0'}})
+    const miss = src + (src.includes('?') ? '&' : '?') + '__rangeprobe=1';
+    probe = fetch(miss, {headers: {Range: 'bytes=0-0'}})
       .then(r => {
         void r.body?.cancel().catch(() => {});
         return r.status !== 206;
