@@ -21,7 +21,7 @@
 .naCanvas .naText.naIt{font-style:italic}
 .naCanvas .naField.naFieldC{text-align:center}
 .naCanvas .naText.naBankInk{color:#33456e}
-.naCanvas .naTblCell.naTblCellS{font-size:15px}
+.naCanvas .naTblCell.naTblCellS{font-size:14.3px}
 .naCanvas .naBasisL{position:absolute;font:400 20px 'Times New Roman',serif;letter-spacing:2.5px;color:#6b6b6b}
 .naCanvas.naNarrow .naSide.naSideC{font-size:8px;letter-spacing:1px}
 .naCanvas .naField.naFieldNL{border-bottom:0!important}
@@ -48,7 +48,7 @@
 .naCanvas .naDot.naDotS{width:15px!important;height:15px!important;border-width:1.5px!important;border-color:#ddd9c8!important}
 
 .naCanvas .naText.naBk87{font-size:12.7px;letter-spacing:-0.25px}
-.naCanvas .naText.naInst15{font-size:15px}
+.naCanvas .naText.naInst15{font-size:14.3px}
 .naCanvas .naTitle.naS15{font-size:15px;line-height:1.2}
 .naCanvas .naTitle.naS15>b{min-width:17px;height:17px;font:bold 12px/17px Georgia;margin-right:9px}
 .naCanvas .naText.naColH{font-family:FiraSans,'Trebuchet MS',sans-serif;font-size:10.5px;color:#333;text-align:center}
@@ -149,26 +149,26 @@
 .naCanvas .naText.naInst93{font-family:FiraSans,'Trebuchet MS',sans-serif;font-size:14px}
 .naCanvas .naText.naInst93b{font-family:FiraSans,'Trebuchet MS',sans-serif;font-size:14px;font-weight:400}
 .naCanvas .naText.naNeu93{font-family:FiraSans,'Trebuchet MS',sans-serif;font-style:italic;font-size:15.5px;color:#5a5a5a}
-.naCanvas .naText.naIt93{font-family:DroidSerif,Georgia,serif;font-style:italic;font-size:12.3px;color:#1c1c19}
-.naCanvas .naText.naTippT93{font-size:12.6px}
+.naCanvas .naText.naIt93{font-family:DroidSerif,Georgia,serif;font-style:italic;font-size:11.3px;color:#1c1c19}
+.naCanvas .naText.naTippT93{font-size:12px}
 .naCanvas .naText.naItL1{font-size:11.3px}
 .naCanvas .naText.naItL2{font-size:11.3px}
-.naCanvas .naText.naItL3{font-size:11.2px}
-.naCanvas .naText.naItL4{font-size:12.4px}
-.naCanvas .naText.naItL5{font-size:11.5px}
+.naCanvas .naText.naItL3{font-size:11.3px}
+.naCanvas .naText.naItL4{font-size:11.3px}
+.naCanvas .naText.naItL5{font-size:11.3px}
 .naCanvas .naText.naItL6{font-size:11.3px}
-.naCanvas .naText.naItL7{font-size:11.4px}
-.naCanvas .naText.naItL8{font-size:10.9px}
-.naCanvas .naText.naItL9{font-size:11.8px}
-.naCanvas .naText.naTpL1{font-size:12.2px}
+.naCanvas .naText.naItL7{font-size:11.3px}
+.naCanvas .naText.naItL8{font-size:11.3px}
+.naCanvas .naText.naItL9{font-size:11.3px}
+.naCanvas .naText.naTpL1{font-size:12px}
 .naCanvas .naText.naTpL2{font-size:12px}
 .naCanvas .naText.naTpL3{font-size:12px}
-.naCanvas .naText.naTpL4{font-size:11.9px}
-.naCanvas .naText.naTpL5{font-size:11.9px}
-.naCanvas .naText.naTpL6{font-size:11.8px}
-.naCanvas .naText.naTpL7{font-size:11.4px}
-.naCanvas .naText.naTpL8{font-size:11.9px}
-.naCanvas .naText.naTpL9{font-size:11.9px}
+.naCanvas .naText.naTpL4{font-size:12px}
+.naCanvas .naText.naTpL5{font-size:12px}
+.naCanvas .naText.naTpL6{font-size:12px}
+.naCanvas .naText.naTpL7{font-size:12px}
+.naCanvas .naText.naTpL8{font-size:12px}
+.naCanvas .naText.naTpL9{font-size:12px}
 .naCanvas .naText.naDash93{font-family:DroidSerif,Georgia,serif;font-size:13.3px}
 .naCanvas .naText.naRegelT93{font-size:12.1px}
 .naCanvas .naRegelBox93{position:absolute;background:#fcfcfc;box-shadow:inset 0 3px 0 #d8dde1,inset 0 -1px 0 #eaeaea}
@@ -378,3 +378,5 @@
 [data-native-ab12="104"] .naCanvas .naText .naBold104{font-family:PalSerif,Palatino,Georgia,serif;font-weight:700}
 [data-native-ab12="104"] .naCanvas .naText.naGrn104{font-family:PalSerif,Palatino,Georgia,serif;font-weight:700;color:#99c905}
 [data-native-ab12="104"] .naCanvas .naText.naFoot104{font-family:PalSerif,Palatino,Georgia,serif;font-weight:400;font-size:13.5px;color:#111213}
+
+.naCanvas .naText.naAF93{font-size:14px}
