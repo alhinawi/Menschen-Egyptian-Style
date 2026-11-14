@@ -1,48 +1,20 @@
-import successSound from '../assets/feedback/ok06_sparkle.mp3?url';
-import {wrongVoices,incompleteVoices} from './check-voices';
+import {wrongVoices,incompleteVoices,correctVoices} from './check-voices';
 import {scanData} from '../scan-data/registry';
 import type {ScanField} from '../scan-data/schema';
 // User-triggered grading feedback, shared by every compact check control.
-let audio: AudioContext | undefined;
 let stopEffect: (() => void) | undefined;
-function readyAudio() {
- try {
-  const Audio = window.AudioContext || (window as typeof window & {webkitAudioContext?: typeof AudioContext}).webkitAudioContext;
-  if (!Audio) return;
-  audio ??= new Audio();
-  if (audio.state === 'suspended') void audio.resume().catch(() => {});
- } catch { /* Grading and visual feedback never depend on sound permission. */ }
-}
-const successBytes = fetch(successSound).then(response=>{
- if(!response.ok)throw new Error('Feedback sound unavailable');
- return response.arrayBuffer();
-}).catch(()=>null);
-let successBuffer: Promise<AudioBuffer | null> | undefined;
 const soundOn = () => document.querySelector<HTMLElement>('.soundToggle')?.dataset.soundOn!=='false';
-async function sound() {
- if(!soundOn())return;
- try {
-  const context=audio;
-  if(!context)return;
-  if(context.state==='suspended')await context.resume().catch(()=>{});
-  if(context.state!=='running')return;
-  successBuffer??=successBytes.then(bytes=>bytes?context.decodeAudioData(bytes.slice(0)).catch(()=>null):null);
-  const buffer=await successBuffer;
-  if(!buffer||context.state!=='running')return;
-  const source=context.createBufferSource();source.buffer=buffer;
-  source.connect(context.destination);source.onended=()=>source.disconnect();source.start();
- } catch { /* A muted or blocked device still gets normal exercise feedback. */ }
-}
-// A failed check plays a teasing voice clip instead of a tone: filled-but-wrong picks from
-// the wrong pool, empty or partly solved from the incomplete pool. One shared element keeps
-// rapid checks from overlapping, the same pick never repeats twice in a row within a pool,
-// and the mp3 only downloads on the first failure (lazy). Extra clips join the pool lists.
-const failVoices: Record<'wrong' | 'incomplete', string[]> = {wrong: wrongVoices, incomplete: incompleteVoices};
+// Every finished check plays one clip from its voice pool: filled-but-wrong picks from the
+// wrong pool, empty or partly solved from the incomplete pool, fully correct from the
+// correct pool. One shared element keeps rapid checks from overlapping, the same pick never
+// repeats twice in a row within a pool, and the mp3 only downloads on the first played
+// check (lazy). Extra clips join the pool lists in check-voices.ts.
+const voicePools: Record<'wrong' | 'incomplete' | 'correct', string[]> = {wrong: wrongVoices, incomplete: incompleteVoices, correct: correctVoices};
 let voice: HTMLAudioElement | undefined;
 const lastVoice: Record<string,number> = {};
-function failVoice(kind: 'wrong' | 'incomplete') {
+function checkVoice(kind: 'wrong' | 'incomplete' | 'correct') {
  if(!soundOn())return;
- const pool=failVoices[kind];
+ const pool=voicePools[kind];
  if(!pool.length)return;
  let pick=Math.floor(Math.random()*pool.length);
  if(pool.length>1&&pick===lastVoice[kind])pick=(pick+1)%pool.length;
@@ -294,7 +266,6 @@ function shakePage(button:HTMLButtonElement){
 }
 export function beginCheckFeedback(button:HTMLButtonElement): () => void {
  // Called inside the click gesture, before the grading handler and React commit.
- readyAudio();
  const scope=feedbackScope(button);
  if(!scope)return () => {};
  let finished=false,frame=0,timer=0;
@@ -307,7 +278,7 @@ export function beginCheckFeedback(button:HTMLButtonElement): () => void {
   if(!wrong&&!correct)return;
   finish();button.dataset.checkFeedback=correct?'success':'error';
   markCheckFields(button,correct);
-  if(correct){voice?.pause();sound();fireworks()}else{shakePage(button);failVoice(classifyFailure(button))}
+  if(correct){checkVoice('correct');fireworks()}else{shakePage(button);checkVoice(classifyFailure(button))}
   button.dispatchEvent(new CustomEvent('check-feedback',{bubbles:true,detail:{correct,answers:registry.get(button)??Object.fromEntries(keyedFields(button).items.map(i=>[i.field.id,i.field.answer]))}}));
  };
  const observer=new MutationObserver(()=>{cancelAnimationFrame(frame);frame=requestAnimationFrame(evaluate)});
