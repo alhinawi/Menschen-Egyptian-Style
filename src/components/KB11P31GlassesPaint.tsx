@@ -19,7 +19,7 @@ export function KB11P31GlassesPaint({value,onChange,pos}:{value:string;onChange:
  const up=()=>{if(!drawing.current)return;drawing.current=false;onChange('glassesPaint',canvasRef.current!.toDataURL());};
  return <>
   <canvas ref={canvasRef} className="nkbPaint nkbPaintPen" aria-label="Brille in das Foto zeichnen" width={143} height={179} style={pos(625,192,143,179)} onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerCancel={up}/>
-  <div className="nkbPaintTools" style={pos(625,376,143,20)}>
+  <div className="nkbPaintTools nkbPaintToolsPen" style={pos(625,376,143,20)}>
    <button type="button" onClick={()=>{const c=canvasRef.current!;c.getContext('2d')!.clearRect(0,0,c.width,c.height);onChange('glassesPaint','');}}>Neu zeichnen ×</button>
   </div>
  </>;
