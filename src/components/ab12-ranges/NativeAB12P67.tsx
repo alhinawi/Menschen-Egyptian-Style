@@ -68,9 +68,9 @@ function P67(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {wl(540,13,[{x:435,w:6,t:'d'}])}
   {wl(540,13,[{x:542,w:6,t:'e'}])}
   {wl(540,13,[{x:649,w:5,t:'f'}])}
-  {field('p67-4bd',174,262,120,'4 b Deutsch','naFieldBlank')}
-  {field('p67-4cd',174,333,120,'4 c Deutsch','naFieldBlank')}
-  {field('p67-4dd',174,405,120,'4 d Deutsch','naFieldBlank')}
+  {field('p67-4bd',174,262,130,'4 b Deutsch','naFieldBlank')}
+  {field('p67-4cd',174,333,130,'4 c Deutsch','naFieldBlank')}
+  {field('p67-4dd',174,405,130,'4 d Deutsch','naFieldBlank')}
   {field('p67-4am',476,191,240,'4 a Meine Sprache','naFieldBlank')}
   {field('p67-4bm',476,262,240,'4 b Meine Sprache','naFieldBlank')}
   {field('p67-4cm',476,333,240,'4 c Meine Sprache','naFieldBlank')}
@@ -97,6 +97,7 @@ function P67(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {dot('7e1','muss',238,985,'7e1 muss')}
   {dot('7e2','Darfst',135,1005,'7e2 Darfst')}
   {dot('7e2','Kannst',211,1005,'7e2 Kannst')}
+  {check('g3',640,467,{'p67-4bd':'Parken erlaubt','p67-4cd':'Schwimmen erlaubt','p67-4dd':'Hunde erlaubt'})}
   {check('g1',512,676,{'p67-5b1':'darf','p67-5b2':'nicht','p67-5c':'darfst','p67-5d1':'dürft','p67-5d2':'nicht','p67-5e':'dürfen','p67-5f':'müssen'})}
   {check('g2',128,1032,{'7a':'darf','7b1':'Willst','7b2':'muss','7c':'sollst','7d':'Darf','7e1':'muss','7e2':'Kannst'})}
 </>}
