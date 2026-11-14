@@ -57,6 +57,7 @@
 .naCanvas.naNarrow .naField{height:20px!important;font:15px 'Times New Roman'!important}
 .naCanvas.naNarrow .naWHead{position:absolute;font:bold 17px/1.1 'Times New Roman',serif;white-space:nowrap}
 .naCanvas .naField.naFieldBlank{border-bottom-color:transparent!important}
+.naCanvas .naField.naLC{text-align:center!important;text-transform:uppercase!important;padding:0!important}
 .naCanvas .naField.naFieldBlank:hover,.naCanvas .naField.naFieldBlank:focus{border-bottom:1.5px dashed #b9c2ca!important}
 .naCanvas .naBand52{position:absolute;left:0;top:0;width:1072px;height:120px;background:#fdfef9}
 .naCanvas .naSecX{transform:scaleX(.82);transform-origin:left center}
