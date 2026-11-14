@@ -1028,13 +1028,267 @@
    "h": 19
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p50-f1",
+   "group": "s1",
+   "kind": "text",
+   "label": "Hilfe anbieten 1",
+   "answer": "kann ich für Sie",
+   "x": 178,
+   "y": 225,
+   "w": 428,
+   "h": 22
+  },
+  {
+   "id": "p50-f2",
+   "group": "s1",
+   "kind": "text",
+   "label": "Hilfe anbieten 2",
+   "answer": "kümmere mich",
+   "x": 175,
+   "y": 249,
+   "w": 213,
+   "h": 22
+  },
+  {
+   "id": "p50-f3a",
+   "group": "s2",
+   "kind": "text",
+   "label": "um Hilfe bitten 1a",
+   "answer": "Entschuldigung",
+   "x": 144,
+   "y": 323,
+   "w": 248,
+   "h": 22
+  },
+  {
+   "id": "p50-f3b",
+   "group": "s2",
+   "kind": "text",
+   "label": "um Hilfe bitten 1b",
+   "answer": "können Sie mir",
+   "x": 401,
+   "y": 323,
+   "w": 299,
+   "h": 22
+  },
+  {
+   "id": "p50-f4",
+   "group": "s2",
+   "kind": "text",
+   "label": "um Hilfe bitten 2",
+   "answer": "Es gibt",
+   "x": 144,
+   "y": 345,
+   "w": 243,
+   "h": 22
+  },
+  {
+   "id": "p50-f5",
+   "group": "s2",
+   "kind": "text",
+   "label": "um Hilfe bitten 3",
+   "answer": "funktioniert",
+   "x": 245,
+   "y": 369,
+   "w": 213,
+   "h": 22
+  },
+  {
+   "id": "p50-f6",
+   "group": "s3",
+   "kind": "text",
+   "label": "Termine verschieben 1",
+   "answer": "den Termin verschieben",
+   "x": 243,
+   "y": 441,
+   "w": 569,
+   "h": 22
+  },
+  {
+   "id": "p50-f7a",
+   "group": "s3",
+   "kind": "text",
+   "label": "Termine verschieben 2a",
+   "answer": "habe",
+   "x": 175,
+   "y": 465,
+   "w": 202,
+   "h": 22
+  },
+  {
+   "id": "p50-f7b",
+   "group": "s3",
+   "kind": "text",
+   "label": "Termine verschieben 2b",
+   "answer": "keine Zeit",
+   "x": 476,
+   "y": 465,
+   "w": 162,
+   "h": 22
+  },
+  {
+   "id": "p50-f8",
+   "group": "s3",
+   "kind": "text",
+   "label": "Termine verschieben 3",
+   "answer": "es dir",
+   "x": 188,
+   "y": 489,
+   "w": 106,
+   "h": 22
+  },
+  {
+   "id": "p50-f9a",
+   "group": "s4",
+   "kind": "text",
+   "label": "entschuldigen 1a",
+   "answer": "ein",
+   "x": 155,
+   "y": 561,
+   "w": 102,
+   "h": 22
+  },
+  {
+   "id": "p50-f9b",
+   "group": "s4",
+   "kind": "text",
+   "label": "entschuldigen 1b",
+   "answer": "roblem",
+   "x": 271,
+   "y": 561,
+   "w": 202,
+   "h": 22
+  },
+  {
+   "id": "p50-f9c",
+   "group": "s4",
+   "kind": "text",
+   "label": "entschuldigen 1c",
+   "answer": "acht doch nichts",
+   "x": 545,
+   "y": 561,
+   "w": 263,
+   "h": 22
+  },
+  {
+   "id": "p50-f12",
+   "group": "s6",
+   "kind": "text",
+   "label": "Schmerzen 1",
+   "answer": "tut weh",
+   "x": 231,
+   "y": 729,
+   "w": 165,
+   "h": 22
+  },
+  {
+   "id": "p50-f13",
+   "group": "s6",
+   "kind": "text",
+   "label": "Schmerzen 2",
+   "answer": "Ich habe",
+   "x": 143,
+   "y": 754,
+   "w": 254,
+   "h": 22
+  },
+  {
+   "id": "p50-f14",
+   "group": "s7",
+   "kind": "text",
+   "label": "Ratschläge bitten 1",
+   "answer": "kann mir",
+   "x": 179,
+   "y": 825,
+   "w": 157,
+   "h": 22
+  },
+  {
+   "id": "p50-f15",
+   "group": "s7",
+   "kind": "text",
+   "label": "Ratschläge bitten 2",
+   "answer": "du gegen",
+   "x": 241,
+   "y": 849,
+   "w": 235,
+   "h": 22
+  },
+  {
+   "id": "p50-f16a",
+   "group": "s8",
+   "kind": "text",
+   "label": "Ratschläge geben 1a",
+   "answer": "Gehen",
+   "x": 142,
+   "y": 921,
+   "w": 183,
+   "h": 22
+  },
+  {
+   "id": "p50-f16b",
+   "group": "s8",
+   "kind": "text",
+   "label": "Ratschläge geben 1b",
+   "answer": "zum Arzt",
+   "x": 401,
+   "y": 921,
+   "w": 303,
+   "h": 22
+  },
+  {
+   "id": "p50-f17",
+   "group": "s8",
+   "kind": "text",
+   "label": "Ratschläge geben 2",
+   "answer": "soll zum Arzt gehen",
+   "x": 465,
+   "y": 945,
+   "w": 343,
+   "h": 22
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "s1",
+   "label": "Hilfe anbieten"
+  },
+  {
+   "id": "s2",
+   "label": "um Hilfe bitten / beschweren"
+  },
+  {
+   "id": "s3",
+   "label": "Termine verschieben"
+  },
+  {
+   "id": "s4",
+   "label": "etwas entschuldigen"
+  },
+  {
+   "id": "s6",
+   "label": "Schmerzen beschreiben"
+  },
+  {
+   "id": "s7",
+   "label": "um Hilfe / Ratschläge bitten"
+  },
+  {
+   "id": "s8",
+   "label": "Ratschläge geben und wiedergeben"
+  }
+ ],
  "review": {
   "status": "partial",
   "verifiedWords": 146,
   "totalWords": 146,
-  "notes": []
+  "notes": [
+   "Answers from the official Hueber Loesungsschluessel AB A1.2 (Selbsteinschätzung Modul 6).",
+   "Split blanks take only the missing letters/words because parts are printed ('ein','roblem','acht doch nichts').",
+   "Sections 'Wünsche äußern' (s5) and all 'Ich kenne' rows are personal/learner-chosen -> neutral save only, no keys."
+  ]
  }
 }
