@@ -759,7 +759,7 @@ export function NativeKB12({page}:{page:string}){
  {audio('assets/kb-cd3-track34.mp3',48,925,'3 34',undefined,'1')}{title('1',105,1040,690,'Wohin geht er wohl?')}{text(117,1080,690,'a  Sehen Sie das Foto an und hören Sie. Was ist richtig? Kreuzen Sie an.','nkBold nkCompact')}
  {text(150,1135,645,'1  Wie findet die Mutter Fabians Kleidung?')}{dot('1a-1','gefällt',175,1170,'Sie gefällt ihr.')}{text(205,1170,200,'Sie gefällt ihr.')}{dot('1a-1','nicht',450,1170,'Sie gefällt ihr nicht.')}{text(480,1170,320,'Sie gefällt ihr nicht.')}
  {text(150,1210,645,'2  Wie findet Fabian die Reaktion seiner Mutter?')}{dot('1a-2','Gut',175,1245,'Gut.')}{text(205,1245,200,'Gut.')}{dot('1a-2','Nicht so toll',450,1245,'Nicht so toll.')}{text(480,1245,320,'Nicht so toll.')}{check('1a',150,1284,{'1a-1':'nicht','1a-2':'Gut'})}
- {text(117,1340,900,'b  Wie finden Sie Fabians Kleidung? Wohin geht Fabian? Was meinen Sie?','nkBold')}{text(160,1393,325,'Ich finde die Kleidung seltsam. Ich glaube, Fabian geht zum Karneval.','nkSpeech')}{open('1b',560,1393,251,63,'Meine Meinung zu Fabians Kleidung')}
+ {text(117,1340,900,'b  Wie finden Sie Fabians Kleidung? Wohin geht Fabian? Was meinen Sie?','nkBold')}{text(160,1393,325,'Ich finde die Kleidung seltsam. Ich glaube, Fabian geht zum Karneval.','nkSpeech')}{open('1b',560,1393,251,63,'Meine Meinung zu Fabians Kleidung')}{save('1b',825,1405)}
  </>}
  {page==='58'&&<>
  {art('vocab',0,0,1100,106)}{['Schuhe','Hose','Hemd','T-Shirt','Mantel','Bluse','Strumpfhose','Jacke'].map((t,i)=>text(i*137.5,110,137.5,'• '+t,'nkVocabLabel nkTinyLabel nkCenter'))}
