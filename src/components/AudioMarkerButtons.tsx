@@ -77,7 +77,9 @@ export function AudioMarkerButtons(){
    const placed:Obstacle[]=[];
    let panNeed=0;
    for(const m of out){
-    const minX=sx+2,maxX=sx+window.innerWidth-46;
+    // Edge-clamped markers keep the 24px face flush to the screen edge (the
+    // 44px wrapper may hang offscreen), so tight-margin printed tags keep their gap.
+    const minX=sx-10,maxX=sx+window.innerWidth-46;
     // An anchor is an edge case when it could not be centred on screen without
     // the pan currently applied (pan0 keeps earlier edge decisions stable).
     const unpanned=m.x-pan0;
