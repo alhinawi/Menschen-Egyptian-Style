@@ -142,3 +142,8 @@
 .nkCanvas .nkSigns input{width:25px!important;height:25px!important;border-radius:50%!important;text-align:center!important}
 .nkCanvas .nkSigns input{appearance:none!important;min-height:0!important;min-width:0!important;margin:0!important;padding:0!important;border:1px solid #a9af9e!important;background:#fffef4!important;font:20px/23px Georgia!important;box-sizing:border-box!important;flex:none}
 .nkRules tbody tr:first-child textarea{height:101px!important}.nkRules tbody tr:first-child td{padding-bottom:56px}
+
+@font-face{font-family:KBDroidSansText;src:url('/assets/fonts/droid-sans-400.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:KBDroidSansText;src:url('/assets/fonts/droid-sans-700.woff2') format('woff2');font-weight:700;font-display:swap}
+.nkCanvas .nkBookSans{font-family:KBDroidSansText,Arial,sans-serif}
+.nkCanvas .nkIt{font-style:italic}
