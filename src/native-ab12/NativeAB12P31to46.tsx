@@ -1956,7 +1956,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {field('p46-4d',268,1066,464,'4')}
   {field('p46-4e',181,1092,595,'4')}
   {field('p46-4f',366,1117,453,'4')}
-  {save('46-4',890,1150)}
+  {check('46-4',890,1150,{'p46-4a':'habe ich Rückenschmerzen','p46-4b':'einen Tipp','p46-4c':'Machen Sie viel Sport','p46-4d':'in die Apotheke','p46-4e':'holen eine Salbe gegen Schmerzen','p46-4f':'fragen Sie den Arzt'})}
   {rect(157,1207,508,35,'#f5edd6')}
   {lin(320,1207,1,135,'#e3ddc8')}{lin(485,1207,1,135,'#e3ddc8')}
   {lin(157,1242,508,1,'#e3ddc8')}{lin(157,1275,508,1,'#e3ddc8')}{lin(157,1309,508,1,'#e3ddc8')}{lin(157,1342,508,1,'#e3ddc8')}
