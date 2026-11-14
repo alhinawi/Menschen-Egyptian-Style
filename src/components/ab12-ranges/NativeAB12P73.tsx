@@ -104,12 +104,27 @@ function P73(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,check,box,modTab
   {ln(524,1009,76,13,'Tisch decken',{cls:D})}
   {[916,938,961,983,1006].map((y,i)=><div key={'f5'+i}>{field('p73-5s'+i,112,y-6,200,'5 S '+(i+1),'naFieldBlank')}{field('p73-5p'+i,318,y-6,200,'5 P '+(i+1),'naFieldBlank')}</div>)}
   {check('g4',728,1004,{'p73-5s0':'Trockne bitte das Geschirr ab.','p73-5p0':'Trocknet bitte das Geschirr ab.','p73-5s1':'Räum bitte die Küche auf.','p73-5p1':'Räumt bitte die Küche auf.','p73-5s2':'Mach bitte die Musik leise.','p73-5p2':'Macht bitte die Musik leise.','p73-5s3':'Vergiss bitte den Schlüssel nicht.','p73-5p3':'Vergesst bitte den Schlüssel nicht.','p73-5s4':'Deck bitte den Tisch.','p73-5p4':'Deckt bitte den Tisch.'})}
+  {<div style={{position:'absolute',left:60,top:1115,width:690,height:320,background:'#ffffff',border:'1.5px solid #d8d4c4'}}/>}
+  {box('4',72,1123,'#c80e04')}
+  {rn(106,1126,420,15,[{t:'Im Flugzeug. Schreiben Sie die S\u00e4tze.',b:1}],{fam:'fira'})}
+  {ln(80,1176,95,13,'Handy benutzen',{c:'#3f4c75',cls:'naStrip73'})}
+  {ln(80,1220,97,13,'Filme anschauen',{c:'#3f4c75',cls:'naStrip73'})}
+  {ln(80,1264,44,13,'rauchen',{c:'#3f4c75',cls:'naStrip73'})}
+  {ln(80,1308,68,13,'etwas essen',{c:'#3f4c75',cls:'naStrip73'})}
+  {ln(80,1352,72,13,'Musik h\u00f6ren',{c:'#3f4c75',cls:'naStrip73'})}
+  {field('p73-4a',215,1170,505,'4 Handy benutzen','naFieldBlank')}
+  {field('p73-4b',215,1214,505,'4 Filme anschauen','naFieldBlank')}
+  {field('p73-4c',215,1258,505,'4 rauchen','naFieldBlank')}
+  {field('p73-4d',215,1302,505,'4 etwas essen','naFieldBlank')}
+  {field('p73-4e',215,1346,505,'4 Musik hoeren','naFieldBlank')}
+  {[1197,1241,1285,1329,1373].map(y=><div key={'r4'+y} className='naRule' style={{left:215,top:y,width:505,borderBottom:'1px solid #9aa4b5'}}/>)}
+  {check('ex4',80,1392,{'p73-4a':'Im Flugzeug darf man das Handy nicht benutzen|Man darf im Flugzeug das Handy nicht benutzen','p73-4b':'Im Flugzeug kann man Filme anschauen|Man kann im Flugzeug Filme anschauen','p73-4c':'Im Flugzeug darf man nicht rauchen|Man darf im Flugzeug nicht rauchen','p73-4d':'Im Flugzeug kann man etwas essen|Man kann im Flugzeug etwas essen','p73-4e':'Im Flugzeug kann man Musik h\u00f6ren|Man kann im Flugzeug Musik h\u00f6ren'})}
   {modTab(758,1056,'Modul 7')}
   {wl(1063,12,[{x:614,w:93,t:'dreiundsiebzig'},{x:715,w:1,t:'|'},{x:728,w:11,t:'73'}])}
  </>}
 function rect4(){return <div className='naStripBand73'/>}
 
 export function NativeAB12P73({page}:{page:string}){
- if(page==='73')return <AB12Canvas page={page} width={810} height={1095}>{P73}</AB12Canvas>;
+ if(page==='73')return <AB12Canvas page={page} width={810} height={1450}>{P73}</AB12Canvas>;
  return null;
 }
