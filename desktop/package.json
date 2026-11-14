@@ -1,0 +1,7 @@
+{
+  "name": "menschen-desktop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Menschen. The Interactive German Coursebook - offline desktop build",
+  "main": "main.cjs"
+}

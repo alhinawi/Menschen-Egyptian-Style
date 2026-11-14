@@ -14,3 +14,6 @@ __pycache__/
 *.pyc
 src/generated/
 .wrangler/
+desktop-cache/
+build/
+desktop/dist

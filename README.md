@@ -70,6 +70,27 @@ All rights to the original book, audio and artwork belong to their owners
 (**Hueber Verlag**). This is a personal, educational study companion: the site is
 `noindex,nofollow,noarchive`, unlisted, and carries no ads, accounts or payments.
 
+## Offline desktop app (Windows, portable)
+
+A portable Windows build of the whole book - no installer, no admin rights, no
+internet. It bundles the full site (every page, image, font and all ~21,700
+audio clips) plus local copies of the 24 Film-Stationen video clips, wrapped in
+a small Electron shell that serves the files locally. Answers and progress are
+saved on the computer, exactly like the site saves them in the browser.
+
+Build it from the repo root (Node 20+ and Python 3 needed):
+
+```
+npm install
+npm run build:desktop
+```
+
+The result is `build/menschen-windows-portable.zip` (and the ready folder
+`build/Menschen-windows/`): unzip anywhere and double-click `Menschen.exe`.
+The Electron runtime and the video clips are cached under `desktop-cache/`, so
+rebuilding after a site update only redoes the site build and repacks - run the
+same command again after pulling the latest `main`.
+
 ## Author
 
 Made by **Mohamed Alhinawi** · https://menscheny.pages.dev
