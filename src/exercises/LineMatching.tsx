@@ -38,6 +38,14 @@ export function LineMatching({id,left,right,values,onMatch,leftX,rightX:baseRigh
  // trusting leftWidth: a fixed pixel guess puts the dots on top of the words
  // on devices with wider serif metrics, and an over-wide declared leftWidth
  // squeezes the dots against the right column (cramped connecting lines).
+ // The margin keeps the dot edge at least ~6.5 units (about 4px on a phone
+ // screenshot) clear of the nearest printed ink. Measuring before the page
+ // font loads inflates the text width with fallback metrics and throws the
+ // dot column against the right dots, so wait for fonts and use the
+ // leftX+leftWidth fallback until then. Container-query font sizes can also
+ // settle after mount without resizing this element (e.g. hash navigation
+ // inside the book), so re-measure on page-container resize and on two
+ // delayed retries to correct any transient misread.
  const itemRefs=useRef<(HTMLButtonElement|null)[]>([]);
  const [measuredStart,setMeasuredStart]=useState<number|null>(null);
  const start0=useRef<number>(leftX+leftWidth+6);
@@ -46,7 +54,18 @@ export function LineMatching({id,left,right,values,onMatch,leftX,rightX:baseRigh
  const dotLy=(i:number)=>leftDotYs?.[i]??ys[i]+12;
  const dotRx=(j:number)=>rightDotXs?.[j]??end;
  const dotRy=(j:number)=>rightDotYs?.[j]??rightYs[j]+12;
- useLayoutEffect(()=>{const measure=()=>{const el0=root.current;if(!el0)return;const box=el0.getBoundingClientRect();if(box.width<2)return;const scale=width/box.width;let maxText=0;for(const btn of itemRefs.current){if(!btn)continue;const rng=document.createRange();rng.selectNodeContents(btn);for(const r of Array.from(rng.getClientRects()))maxText=Math.max(maxText,(r.right-box.left)*scale);rng.detach()};if(maxText>0)setMeasuredStart(Math.min(Math.max(leftX+6,maxText+8),end-16))};measure();document.fonts?.ready.then(measure);const ro=new ResizeObserver(measure);if(root.current)ro.observe(root.current);return()=>ro.disconnect()},[leftX,leftWidth,width,end,left.length]);
+ useLayoutEffect(()=>{
+  let retries=0;
+  const timers:number[]=[];
+  const later=(ms:number)=>timers.push(window.setTimeout(measure,ms));
+  const measure=()=>{const el0=root.current;if(!el0)return;const box=el0.getBoundingClientRect();if(box.width<2)return;const scale=width/box.width;let maxText=0;for(const btn of itemRefs.current){if(!btn)continue;const rng=document.createRange();rng.selectNodeContents(btn);for(const r of Array.from(rng.getClientRects()))maxText=Math.max(maxText,(r.right-box.left)*scale);rng.detach()};if(maxText>0&&(!document.fonts||document.fonts.status==='loaded')){const v=Math.min(Math.max(leftX+6,maxText+6.5+dotR),end-16);setMeasuredStart(v);if(v>=end-16&&retries<6){retries++;later(500)}}else setMeasuredStart(null)};
+  measure();document.fonts?.ready.then(measure);
+  const onHash=()=>{retries=0;measure();later(300);later(900)};
+  window.addEventListener('hashchange',onHash);
+  const ro=new ResizeObserver(measure);if(root.current)ro.observe(root.current);const pg=root.current?.closest('.page');if(pg)ro.observe(pg);
+  later(400);later(1200);
+  return()=>{window.removeEventListener('hashchange',onHash);ro.disconnect();timers.forEach(clearTimeout)};
+ },[leftX,leftWidth,width,end,left.length]);
  const start=measuredStart??leftX+leftWidth+6;
  start0.current=start;
  return <div ref={root} className={'sharedMatching'+(className?' '+className:'')} data-matching={id}>
