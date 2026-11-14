@@ -1,0 +1,7 @@
+/* p75 clearance: field boxes sit directly on the printed rule; ok/bad paint = 2px underline on the rule only */
+.nativeAB12[data-native-ab12="75"] .naCanvas .naField.naClr75{font-size:12.5px!important}
+.nativeAB12[data-native-ab12="75"] .naCanvas .naField.naClr75.naH17{height:17px!important}
+.nativeAB12[data-native-ab12="75"] .naCanvas .naField.naClr75.naH16{height:16px!important}
+.nativeAB12[data-native-ab12="75"] .naCanvas .naField.naClr75.naH15{height:15px!important}
+.nativeAB12[data-native-ab12="75"] .naCanvas .naField.naClr75[data-check-mark="ok"]{background:transparent!important;border-color:transparent!important;box-shadow:none!important;border-bottom:2px solid #2f7d4f!important;color:#224777!important}
+.nativeAB12[data-native-ab12="75"] .naCanvas .naField.naClr75[data-check-mark="bad"]{background:transparent!important;border-color:transparent!important;box-shadow:none!important;border-bottom:2px solid #c62f2f!important;color:#224777!important}

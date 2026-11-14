@@ -1,10 +1,11 @@
 import {AB12Canvas,AB12Helpers} from '../ab12-shared';
+import '../native-ab12-p75.css';
 
 const DOT_X=[654,684,713];
 const DOT_LBL=['gut','mittel','schwach'];
 const B='#1f3e88';
 
-function P75(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,rect}=h;const D='naDroid75';const H='naDroid75H';
+function P75(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,rect,check}=h;const D='naDroid75';const H='naDroid75H';
  const conf=(id:string,y:number)=><>{DOT_X.map((x,i)=>dot(id,''+(i+1),x,y,'Selbsteinschätzung '+id+' '+DOT_LBL[i]))}</>;
  return <>
   {ln(83,58,327,25,'SELBSTEINSCHÄTZUNG',{cls:'naHdr75'})}
@@ -19,10 +20,11 @@ function P75(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,rect}=h;const D
   {ln(441,144,18,13.5,'L19',{cls:D})}
   {conf('s1',154)}
   {ln(101,161,41,13.5,'Früher',{cls:D})}
-  {rule(147,175,58)}{field('p75-s1-1',147,158,58,'1 Früher','naFieldBlank')}
+  {rule(147,175,58)}{field('p75-s1-1',147,158,58,'1 Früher','naFieldBlank naClr75 naH17')}
   {ln(217,161,108,13.5,'Simone blond. Sie',{cls:D})}
-  {rule(328,179,54)}{field('p75-s1-2',328,162,54,'1 Sie','naFieldBlank')}
+  {rule(328,179,54)}{field('p75-s1-2',328,162,54,'1 Sie','naFieldBlank naClr75 naH17')}
   {ln(400,161,170,13.5,'kurze Haare und eine Brille.',{cls:D})}
+  {check('s1',600,170,{'p75-s1-1':'war','p75-s1-2':'hatte'})}
 
   {/* 2: Perfekt, nicht trennbare Verben */}
   {ln(82,200,417,13.5,'… über Vergangenes sprechen (Perfekt: nicht trennbare Verben):',{b:1,cls:H})}
@@ -30,53 +32,57 @@ function P75(h:AB12Helpers){const {line:ln,wl,art,field,rule,dot,rect}=h;const D
   {conf('s2',207)}
   {ln(100,217,174,13.5,'Natascha hat sich verändert.',{cls:D})}
   {ln(278,217,27,13.5,'Tom',{cls:D})}
-  {rule(308,233,64)}{field('p75-s2-1',308,213,64,'2 Tom','naFieldBlank')}
+  {rule(308,233,64)}{field('p75-s2-1',308,213,64,'2 Tom','naFieldBlank naClr75')}
   {ln(377,217,130,13.5,'Natascha nicht sofort',{cls:D})}
-  {rule(98,247,128)}{field('p75-s2-2',98,230,128,'2 erkennen','naFieldBlank')}
+  {rule(98,247,128)}{field('p75-s2-2',98,230,128,'2 erkennen','naFieldBlank naClr75 naH17')}
   {ln(236,236,74,13.5,'. (erkennen)',{cls:D})}
   {ln(98,253,17,13.5,'Sie',{cls:D})}
-  {rule(120,265,55)}{field('p75-s2-3',120,249,55,'2 Sie','naFieldBlank')}
+  {rule(120,265,55)}{field('p75-s2-3',120,249,55,'2 Sie','naFieldBlank naClr75 naH16')}
   {ln(211,253,149,13.5,'vor zwei Jahren ein Baby',{cls:D})}
-  {rule(364,271,106)}{field('p75-s2-4',364,254,106,'2 Baby','naFieldBlank')}
+  {rule(364,271,106)}{field('p75-s2-4',364,254,106,'2 Baby','naFieldBlank naClr75 naH17')}
   {ln(512,260,81,13.5,'. (bekommen)',{cls:D})}
   {ln(99,270,12,13.5,'Er',{cls:D})}
-  {rule(116,283,61)}{field('p75-s2-5',116,266,61,'2 Er','naFieldBlank')}
+  {rule(116,283,61)}{field('p75-s2-5',116,266,61,'2 Er','naFieldBlank naClr75 naH17')}
   {ln(197,270,89,13.5,'das Baby leider',{cls:D})}
-  {rule(343,288,82)}{field('p75-s2-6',343,271,82,'2 leider','naFieldBlank')}
+  {rule(343,288,82)}{field('p75-s2-6',343,271,82,'2 leider','naFieldBlank naClr75 naH17')}
   {ln(428,277,73,13.5,'. (vergessen)',{cls:D})}
+  {check('s2',600,225,{'p75-s2-1':'hat','p75-s2-2':'erkannt','p75-s2-3':'hat','p75-s2-4':'bekommen','p75-s2-5':'hat','p75-s2-6':'vergessen'})}
 
   {/* 3: Imperativ du/ihr */}
   {ln(80,306,275,13.5,'… Befehle formulieren (Imperativ: du/ihr):',{b:1,cls:H})}
   {ln(366,306,20,13.5,'L20',{cls:D})}
   {conf('s3',316)}
   {ln(98,322,30,13.5,'Line,',{cls:D})}
-  {rule(132,338,87)}{field('p75-s3-1',132,321,87,'3 Line','naFieldBlank')}
+  {rule(132,338,87)}{field('p75-s3-1',132,321,87,'3 Line','naFieldBlank naClr75 naH17')}
   {ln(223,322,31,13.5,'leise!',{cls:D})}
   {ln(97,340,105,12.8,'Line und Melanie,',{cls:D})}
-  {rule(205,354,111)}{field('p75-s3-2',205,337,111,'3 Melanie','naFieldBlank')}
+  {rule(205,354,111)}{field('p75-s3-2',205,337,111,'3 Melanie','naFieldBlank naClr75 naH17')}
   {ln(322,340,96,12.8,'sofort da runter!',{cls:D})}
+  {check('s3',600,334,{'p75-s3-1':'sei','p75-s3-2':'kommt'})}
 
   {/* 4: Personalpronomen im Akkusativ */}
   {ln(79,379,431,13.5,'… sagen, wen man anrufen soll (Personalpronomen im Akkusativ):',{b:1,cls:H})}
   {ln(516,379,20,13.5,'L20',{cls:D})}
   {conf('s4',388)}
   {ln(96,394,50,13.5,'Lisa, ruf',{cls:D})}
-  {rule(149,410,86)}{field('p75-s4-1',149,395,86,'4 ich','naFieldBlank')}
+  {rule(149,410,86)}{field('p75-s4-1',149,395,86,'4 ich','naFieldBlank naClr75 naH15')}
   {ln(242,394,152,13.5,'bitte heute noch an! (ich)',{cls:D})}
   {ln(96,412,50,13.5,'Lisa, ruf',{cls:D})}
-  {rule(149,428,86)}{field('p75-s4-2',149,413,86,'4 er','naFieldBlank')}
+  {rule(149,428,86)}{field('p75-s4-2',149,413,86,'4 er','naFieldBlank naClr75 naH15')}
   {ln(241,412,146,13.5,'bitte heute noch an! (er)',{cls:D})}
+  {check('s4',600,406,{'p75-s4-1':'mich','p75-s4-2':'ihn'})}
 
   {/* 5: Modalverben dürfen/müssen */}
   {ln(77,450,434,13.5,'… Verbote und Gebote ausdrücken (Modalverben: dürfen, müssen):',{b:1,cls:H})}
   {ln(509,450,17,13.5,'L21',{cls:D})}
   {conf('s5',460)}
   {ln(95,468,46,13.5,'Im Park',{cls:D})}
-  {rule(157,483,52)}{field('p75-s5-1',157,466,52,'5 Park','naFieldBlank')}
+  {rule(157,483,52)}{field('p75-s5-1',157,466,52,'5 Park','naFieldBlank naClr75 naH17')}
   {ln(218,468,157,13.5,'man auf dem Weg bleiben.',{cls:D})}
   {ln(94,490,86,13.5,'Sieh mal! Hier',{cls:D})}
-  {rule(193,506,59)}{field('p75-s5-2',193,489,59,'5 baden','naFieldBlank')}
+  {rule(193,506,59)}{field('p75-s5-2',193,489,59,'5 baden','naFieldBlank naClr75 naH17')}
   {ln(265,490,64,13.5,'wir baden.',{cls:D})}
+  {check('s5',600,478,{'p75-s5-1':'muss','p75-s5-2':'dürfen'})}
   {art('sign-red',384,483,44,57)}
   {art('sign-green',330,494,48,54)}
 
