@@ -56,7 +56,14 @@ const MANIFEST_FILE = path.join('src', 'generated', 'cf-audio-manifest.json');
 
 function audioPriority(rel) {
   const m = rel.replace(/\\/g, '/').match(/^assets\/([^/]+)\/([^/]+)$/);
-  if (!m) return [8, 0, 0, rel];
+  if (!m) {
+    // Root-level audio is all CD lesson tracks (kb-cd*, ab-cd*, *-trackNN):
+    // no transcripts exist, so /api/tts cannot cover them and the on-page
+    // track players would be dead. Ship them right after selection-audio.
+    const base = rel.split('/').pop().toLowerCase();
+    if (/-(cd\d-)?track\d+/.test(base)) return [0, 1, 0, rel];
+    return [8, 0, 0, rel];
+  }
   const dir = m[1], base = m[2].toLowerCase();
   if (dir === 'ab11') return null; // CD album tracks: excluded (see above)
   if (dir === 'selection-audio') return [0, 0, 0, rel];
