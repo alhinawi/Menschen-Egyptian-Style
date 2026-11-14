@@ -42,7 +42,14 @@ export function NativeAB12Range({page}:{page:string}){
   if(!items.some(i=>i.k==='d'||i.k==='w'||i.k==='mk'))return undefined;
   return Object.fromEntries(items.flatMap(i=>i.k==='d'?(i.cb?[[i.id,String(i.a)]]:i.a===true?[[i.name||i.id,i.id+'::'+i.v]]:[]):i.k==='f'?[[i.id,String(i.a)]]:i.k==='w'?[[i.id,String(!!i.a)]]:i.k==='mk'?[[i.id,String(i.a)]]:[]));
  };
- const grade=(g:string)=>{const its=spec.items.filter(i=>i.g===g&&i.a!==undefined&&i.a!=='');sr(r=>({...r,[g]:its.length>0&&its.every(ok)}))};
+ const grade=(g:string)=>{const its=spec.items.filter(i=>i.g===g&&i.a!==undefined&&(i.k==='mk'||i.a!==''));
+  let good=its.length>0&&its.filter(i=>!(i.k==='f'&&i.set)).every(ok);
+  const keys=its.filter(i=>i.k==='f'&&i.set).map(i=>String(i.set)).filter((v,n,a)=>a.indexOf(v)===n);
+  for(const key of keys){const fs=its.filter(i=>i.k==='f'&&i.set===key);
+   const words=fs.flatMap(i=>String(values[i.id]||'').split(',')).map(normalize).filter(Boolean).sort();
+   const ans=fs.flatMap(i=>String(i.a).split('|').map(normalize)).filter((v,n,a)=>a.indexOf(v)===n).sort();
+   if(words.join('\n')!==ans.join('\n')){good=false;break}}
+  sr(r=>({...r,[g]:good}))};
  const render=(it:Item,n:number)=>{
   switch(it.k){
    case 't':return <div key={n} className={'naText naR '+(it.c||'')+(it.b?' naRBold':'')+(it.i?' naRIt':'')} style={{left:it.x,top:it.y-.84*(it.s||dfs),fontSize:it.s||dfs,color:it.col,['--naRs' as any]:(it.s||dfs)+'px'}}><Fit it={it}/></div>;
