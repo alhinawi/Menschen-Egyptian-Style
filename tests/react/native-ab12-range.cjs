@@ -18,7 +18,7 @@ const specs=Object.fromEntries(pages.map(n=>[n,JSON.parse(fs.readFileSync(`src/n
   const chks=spec.items.filter(i=>i.k==='chk');
   for(const [ci,c] of chks.entries()){
    const fields=spec.items.filter(i=>i.k==='f'&&i.g===c.g&&i.a);
-   for(const f of fields)await h.locator(`[data-native-field="${f.id}"]`).fill(String(f.a).split('|')[0]);
+   const setIdx={};for(const f of fields){const alts=String(f.a).split('|');const ai=f.set?(setIdx[f.set]=(setIdx[f.set]||0)+1)-1:0;await h.locator(`[data-native-field="${f.id}"]`).fill(alts[ai]||alts[0])}
    for(const d of spec.items.filter(i=>i.k==='d'&&i.g===c.g&&i.a===true))await h.locator(`input[aria-label="${d.l}"]`).check({force:true});
    for(const w of spec.items.filter(i=>i.k==='w'&&i.g===c.g&&i.a))await h.locator(`button[aria-label="${'Durchstreichen: '+w.l}"]`).click();
    for(const m of spec.items.filter(i=>i.k==='mk'&&i.g===c.g&&i.a)){const btn=h.locator(`button[aria-label="${'Markieren: '+m.l}"]`);await btn.click();if(m.a==='g')await btn.click()}
