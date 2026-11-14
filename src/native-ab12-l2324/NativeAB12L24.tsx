@@ -122,8 +122,8 @@ export function NativeAB12L24({page}:{page:string}){
   {art('thermo',546,455,64,63)}
   {check('98-5',745,459,{'98-5a':'ie|Wie','98-5b1':'die Sonne','98-5b2':'warm|heiß|sonnig|schön'})}
   {sect98(539,'… über Wünsche sprechen:','L24')}{conf98('s6',543)}
-  {field('98-6a1',96,551.9,58,'6 Was')}{text(157,557.95,205,'würdest du am liebsten jeden Tag','naBookSerif naBody98 naNw',12.5)}{text(362,557.95,10,'m','naBookSerif naBody98 naNw',12.5)}{field('98-6a2',373,551.9,88,'6 machen')}{text(461,557.95,6,'?','naBookSerif naBody98 naNw',12.5)}
-  {text(97,576.95,18,'Ich','naBookSerif naBody98 naNw',12.5)}{field('98-6b',133,569.9,463,'6 Ich würde')}{text(602,576.95,5,'.','naBookSerif naBody98 naNw',12.5)}
+  {field('98-6a1',96,557.9,58,'6 Was','naF98s6')}{text(157,557.95,205,'würdest du am liebsten jeden Tag','naBookSerif naBody98 naNw',12.5)}{text(362,557.95,10,'m','naBookSerif naBody98 naNw',12.5)}{field('98-6a2',373,557.9,88,'6 machen','naF98s6')}{text(461,557.95,6,'?','naBookSerif naBody98 naNw',12.5)}
+  {text(97,576.95,18,'Ich','naBookSerif naBody98 naNw',12.5)}{field('98-6b',133,575.9,463,'6 Ich würde','naF98s6')}{text(602,576.95,5,'.','naBookSerif naBody98 naNw',12.5)}
   {text(97,595.05,195,'(gern meinen Geburtstag feiern)','naBookSerif naBody98 naNw',12.4)}
   {check('98-6',745,534,{'98-6a1':'Was','98-6a2':'machen|achen','98-6b':'würde gern jeden Tag meinen Geburtstag feiern|möchte gern jeden Tag meinen Geburtstag feiern|würde gern meinen Geburtstag feiern|möchte gern meinen Geburtstag feiern|würde meinen Geburtstag feiern'})}
   {sect98(631,'… gratulieren:','L24')}{conf98('s7',634)}
