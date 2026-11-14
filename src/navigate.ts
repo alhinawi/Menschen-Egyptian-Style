@@ -128,8 +128,8 @@ const metas = routeMeta as unknown as Record<string, RouteMeta>;
 export function applyRouteMeta(file: string): void {
   const m = metas[file] ?? metas['index.html'];
   if (!m) return;
-  const url = 'https://almany.vercel.app/' + (file === 'index.html' ? '' : file);
-  const image = 'https://almany.vercel.app/' + m.ogImage;
+  const url = 'https://menscheny.pages.dev/' + (file === 'index.html' ? '' : file);
+  const image = 'https://menscheny.pages.dev/' + m.ogImage;
   document.title = m.title;
   const set = (selector: string, value: string) => {
     document.head.querySelector(selector)?.setAttribute('content', value);

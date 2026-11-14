@@ -3,7 +3,7 @@
 The Hueber **Menschen A1** books, alive in the browser: flip the real pages, hear the
 original audio, and tap any word or sentence for its meaning in Egyptian Arabic.
 
-**Live:** https://almany.vercel.app
+**Live:** https://menscheny.pages.dev
 
 ## What's inside
 
@@ -72,4 +72,4 @@ All rights to the original book, audio and artwork belong to their owners
 
 ## Author
 
-Made by **Mohamed Alhinawi** · https://almany.vercel.app
+Made by **Mohamed Alhinawi** · https://menscheny.pages.dev
