@@ -87,9 +87,12 @@ npm run build:desktop
 
 The result is `build/menschen-windows-portable.zip` (and the ready folder
 `build/Menschen-windows/`): unzip anywhere and double-click `Menschen.exe`.
-The Electron runtime and the video clips are cached under `desktop-cache/`, so
-rebuilding after a site update only redoes the site build and repacks - run the
-same command again after pulling the latest `main`.
+The build also produces Full HD (1920x1080) versions of the clips with ffmpeg.
+Note the Menschen film only exists in standard definition (the uploads top out at
+480p), so these are high-quality lanczos upscales, not true HD masters; the audio
+track is the original. The Electron runtime and the video clips are cached under
+`desktop-cache/`, so rebuilding after a site update only redoes the site build and
+repacks - run the same command again after pulling the latest `main`.
 
 ## Author
 

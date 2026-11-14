@@ -96,6 +96,38 @@ def main():
         print('MISSING CLIPS:', ' '.join(missing), flush=True)
         sys.exit(1)
     print('all clips present', flush=True)
+    upscale(ids)
+
+UP_OUT = os.path.join(ROOT, 'desktop-cache', 'clips-1080')
+
+def upscale(ids):
+    """Produce Full HD (1920x1080) versions for the desktop build.
+
+    The Menschen film only exists in standard definition (the uploads top out
+    at 480p), so these are lanczos upscales, not true HD masters - they are
+    what the app ships because the owner asked for Full HD files. Original
+    audio is copied unchanged. Cached: only missing outputs are encoded.
+    """
+    if subprocess.run(['which', 'ffmpeg'], capture_output=True).returncode != 0:
+        print('ffmpeg not found - skipping the 1080p upscale step', flush=True)
+        return
+    os.makedirs(UP_OUT, exist_ok=True)
+    for ytid in ids:
+        src = os.path.join(OUT, ytid + '.mp4')
+        dst = os.path.join(UP_OUT, ytid + '.mp4')
+        if have(dst) or not have(src):
+            continue
+        print('upscaling to 1080p:', ytid, flush=True)
+        r = subprocess.run([
+            'ffmpeg', '-v', 'error', '-y', '-i', src,
+            '-vf', 'scale=1920:1080:flags=lanczos,unsharp=5:5:0.4:5:5:0.0',
+            '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20',
+            '-pix_fmt', 'yuv420p', '-c:a', 'copy', '-movflags', '+faststart', dst,
+        ], timeout=1800)
+        if r.returncode != 0 or not have(dst):
+            print('UPSCALE FAILED:', ytid, flush=True)
+            sys.exit(1)
+    print('1080p clips ready in', UP_OUT, flush=True)
 
 if __name__ == '__main__':
     main()
