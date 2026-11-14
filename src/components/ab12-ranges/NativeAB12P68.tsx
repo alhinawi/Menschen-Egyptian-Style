@@ -1,5 +1,6 @@
 import {AB12Canvas,AB12Helpers} from '../ab12-shared';
 import {LineMatching} from '../../exercises/LineMatching';
+import './native-ab12-p68.css';
 
 function P68(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,title,kb,side,audio,strike,head,foot,tab,modTab,box,rect,values,set}=h;return <>
   {rect(270,83,464,2,'#9a4580')}
@@ -36,14 +37,19 @@ function P68(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {wl(566,14,[{x:155,w:28,t:"Sind"},{x:189,w:14,t:"da"},{x:210,w:41,t:"Hunde"},{x:257,w:53,t:"erlaubt?"}])}
   {box('10',76,614)}  {rn(121,618.5,300,17,[{t:'Was passt nicht? Streichen Sie durch.',b:1}],{fam:'fira'})}
   {wl(663,14,[{x:121,w:6,t:'a'},{x:140,w:87,t:'Krankenhaus'},{x:232,w:6,t:'–'},{x:245,w:28,t:'leise'},{x:278,w:26,t:'sein'},{x:310,w:7,t:'–'},{x:322,w:34,t:'nicht'},{x:362,w:81,t:'telefonieren'},{x:448,w:8,t:'–'},{x:459,w:45,t:'grillen',s:1}])}
-  {wl(682,14,[{x:121,w:6,t:'b'},{x:139,w:55,t:'Bäckerei'},{x:200,w:7,t:'–'},{x:212,w:37,t:'Wiese'},{x:254,w:7,t:'–'},{x:267,w:39,t:'sitzen'},{x:311,w:7,t:'–'},{x:324,w:55,t:'Picknick'}])}
-  {wl(702,14,[{x:121,w:6,t:'c'},{x:139,w:52,t:'Fahrrad'},{x:196,w:7,t:'–'},{x:209,w:57,t:'schieben'},{x:271,w:8,t:'–'},{x:284,w:34,t:'Helm'},{x:323,w:8,t:'–'},{x:336,w:35,t:'Hund'}])}
-  {wl(722,14,[{x:121,w:6,t:'d'},{x:139,w:54,t:'langsam'},{x:198,w:44,t:'fahren'},{x:248,w:7,t:'–'},{x:260,w:73,t:'Spielstraße'},{x:338,w:7,t:'–'},{x:350,w:41,t:'hupen'},{x:397,w:7,t:'–'},{x:409,w:22,t:'auf'},{x:436,w:44,t:'Kinder'},{x:485,w:44,t:'achten'}])}
-  {wl(741,14,[{x:121,w:6,t:'e'},{x:138,w:39,t:'baden'},{x:182,w:8,t:'–'},{x:194,w:44,t:'grillen'},{x:244,w:7,t:'–'},{x:257,w:55,t:'Picknick'},{x:318,w:51,t:'machen'},{x:374,w:7,t:'–'},{x:386,w:46,t:'parken'}])}
-  {wl(760,14,[{x:121,w:6,t:'f'},{x:139,w:43,t:'Regeln'},{x:187,w:7,t:'–'},{x:200,w:58,t:'Beispiele'},{x:263,w:7,t:'–'},{x:275,w:58,t:'verboten'},{x:338,w:7,t:'–'},{x:350,w:48,t:'erlaubt'}])}
+  {([['b',682],['c',702],['d',722],['e',741],['f',760]] as const).map(([l,y])=>wl(y,14,[{x:121,w:6,t:l}]))}
+  {strike('s-b',139,670,['Bäckerei','Wiese','sitzen','Picknick'])}
+  {strike('s-c',139,690,['Fahrrad','schieben','Helm','Hund'])}
+  {strike('s-d',139,710,['langsam fahren','Spielstraße','hupen','auf Kinder achten'])}
+  {strike('s-e',138,729,['baden','grillen','Picknick machen','parken'])}
+  {strike('s-f',139,748,['Regeln','Beispiele','verboten','erlaubt'])}
+  {check('g3',640,740,{'s-b':'Bäckerei','s-c':'Hund','s-d':'hupen','s-e':'parken','s-f':'Beispiele'})}
   {box('11',76,789)}  {rn(121,794.5,510,17,[{t:'Wie finden die Personen das Handyverbot an der Fachhochschule?',b:1}],{fam:'fira'})}
   {wl(828,14,[{x:122,w:38,t:'Hören'},{x:165,w:18,t:'Sie'},{x:188,w:19,t:'die'},{x:214,w:55,t:'Umfrage'},{x:275,w:23,t:'und'},{x:304,w:54,t:'notieren'},{x:364,w:23,t:'Sie.'}])}
+  {field('p68-11',469,832,266,'11 traurig','naFieldBlank')}
+  {check('g4',640,869,{'p68-11':'Person 2, 3, 4|Personen 2, 3, 4|Person 2, Person 3, Person 4|Person 2, Person 3 und Person 4|2, 3, 4'})}
   {box('12',76,887)}  {rn(120,891.5,440,17,[{t:'Wer meint was? ',b:1},{t:'Hören Sie noch einmal und ordnen Sie zu.'}],{fam:'fira'})}
+  {check('g5',121,1008,{'p68-12-1':'2','p68-12-2':'0','p68-12-3':'1'})}
   {wl(1063,12,[{x:71,w:11,t:"68"},{x:96,w:1,t:"|"},{x:110,w:93,t:"achtundsechzig"}])}
   {kb(46,122,'KB 4')}
   {side(62,156,'STRUKTUREN')}
