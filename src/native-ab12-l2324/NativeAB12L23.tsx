@@ -1,4 +1,11 @@
+import {useState} from 'react';
 import {useNativeCanvas,Canvas,Words} from './shared';
+import {CheckButton} from '../components/CheckButton';
+
+function NeutralCheck({id,x,y}:{id:string,x:number,y:number}){
+ const [saved,setSaved]=useState(false);
+ return <div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton onClick={()=>setSaved(true)}/><output aria-live="polite">{saved?'Gespeichert':''}</output></div>;
+}
 import {LineMatching} from '../exercises/LineMatching';
 
 export function NativeAB12L23({page}:{page:string}){
@@ -59,6 +66,8 @@ export function NativeAB12L23({page}:{page:string}){
   {art('hand-n2',124,678,62,18)}
   {art('hand-a2',320,678,48,20)}
   {text(522,677,20,'/','naPencil')}
+  {field('84-3-a1',322,655,186,'3 Adjektive Zeile 1','naFieldBlank')}
+  <NeutralCheck id='84-3' x={568} y={588}/>
   {kb(58,724,'KB 3')}
   {title('4',88,719,640,'Ergänzen Sie die Gespräche.','naRB naNw')}
   <div className="naSide naSideB" style={{left:64,top:795}}>KOMMUNIKATION</div>
