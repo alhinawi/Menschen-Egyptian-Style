@@ -572,7 +572,7 @@ export function NativeAB12L23({page}:{page:string}){
   <div className="naSide naSideB" style={{left:60,top:160}}>KOMMUNIKATION</div>
   {title('8',84,119,640,'Notieren Sie die passenden Glückwünsche.','naRB naNw')}
   {text(117,155,16,'a','naBookSerif')}{text(135,152,260,'Max wird morgen endlich 18 Jahre alt.','naBookSerif naEx4t naNw')}
-  {rule(558,168,168)}{art('ex8a',555,148,137,24)}
+  {rule(558,168,168)}{art('ex8a',559,156,138,12)}
   {text(117,173,16,'b','naBookSerif')}{text(135,171,385,'Sie treffen einen Bekannten am 2. Januar auf der Straße.','naBookSerif naEx4t naNw')}
   {field('92-8b',558,167,168,'8 b Frohes neues Jahr')}
   {text(117,193,16,'c','naBookSerif')}{text(135,191,365,'Ihr Bruder hat seine Führerscheinprüfung bestanden.','naBookSerif naEx4t naNw')}
