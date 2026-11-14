@@ -34,7 +34,7 @@ export function NativeKB12({page}:{page:string}){
   });
   return <div className="nkCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:graded})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  };
- const save=()=>null;
+ const save=(id:string,x:number,y:number)=>null;
  const title=(n:string,x:number,y:number,w:number,t:string)=><div className="nkTitle" style={{left:x,top:y,width:w}}><b>{n}</b><Words text={t}/></div>;
  const clip=(n:number,y:number)=><button className="nkAudio" style={{left:40,top:y}} onClick={()=>sf(({13:'fi8siL2PgPE',14:'R_zKkuFByzM',15:'ify1e7g_Dpc',16:'QyJQytmYVvw',17:'C__8IoATxD8',18:'uyeIHkUXUJo'} as Record<number,string>)[n])}>▶ Clip {n}</button>;
  const audio=(src:string,x:number,y:number,label:string,displayLabel?:string,task?:string)=><button className="nkAudio" data-task={task} style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {displayLabel||label}</button>;

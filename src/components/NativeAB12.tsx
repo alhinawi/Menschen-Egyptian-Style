@@ -30,7 +30,7 @@ export function NativeAB12({page}:{page:string}){
  const setList=(s:string)=>s.split(/,|\s+und\s+/i).map(t=>t.normalize('NFC').trim().replace(/^(der|die|das)\s+/i,'').toLocaleLowerCase('de').replace(/[.!?]+$/,'').trim()).filter(Boolean).sort().join(' ');
  const mark52=(id:string,ok:boolean)=>{root.current?.querySelectorAll(`[data-native-field="${id}"]`).forEach(e=>e.setAttribute('data-check-mark',ok?'ok':'bad'))};
  const check52t3=(x:number,y:number)=><div className="naCheck naStack" data-check="52-t3" data-check-layout="stack" style={{left:x,top:y}}><CheckButton onClick={()=>{const c1=setList(values['52-t3-c1']||'')===setList('Kopf, Arme, Beine, Hals, Bauch'),c2=setList(values['52-t3-c2']||'')===setList('Rücken, Brust, Hand, Finger, Fuß, Knie, Ohr, Auge, Zahn, Nase, Mund');mark52('52-t3-c1',c1);mark52('52-t3-c2',c2);sr({...results,'52-t3':c1&&c2})}}></CheckButton><output aria-live="polite">{'52-t3' in results?(results['52-t3']?'✓ Richtig!':'Noch einmal'):''}</output></div>;
- const save52=()=>null;
+ const save52=(id:string,x:number,y:number)=>null;
  const gl=(x:number,y:number,t:string,bg?:string)=><div className="naGL" style={{left:x,top:y,...(bg?{background:bg}:{})}}>{t}</div>;
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const hand=(x:number,y:number,w:number,t:string)=><div className="naText naHand" style={{left:x,top:y,width:w}}><Words text={t}/></div>;
