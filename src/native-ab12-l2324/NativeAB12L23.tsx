@@ -105,13 +105,13 @@ export function NativeAB12L23({page}:{page:string}){
   <div className="naTblCell naTblCellS" style={{left:109,top:147}}>Deutsch</div>
   <div className="naTblCell naTblCellS" style={{left:293,top:147}}>Englisch</div>
   <div className="naTblCell naTblCellS" style={{left:465,top:147}}>Meine Sprache oder andere Sprachen</div>
-  {text(108,167,40,'der ','naS14 naNw')}{art('orden',134,165,42,19)}
+  {text(108,167,40,'der ','naS14 naNw')}{art('orden',130,165,41,20)}
   {text(292,167,100,'the north','naS14 naNw')}
-  {text(108,189,60,'der O','naS14 naNw')}{field('85-5-1',136,184,66,'Osten')}
+  {text(108,189,60,'der O','naS14 naNw')}{field('85-5-1',143,184,58,'Osten')}
   {text(292,189,100,'the east','naS14 naNw')}
-  {text(108,211,60,'der S','naS14 naNw')}{field('85-5-2',136,209,66,'Süden')}
+  {text(108,211,60,'der S','naS14 naNw')}{field('85-5-2',141,209,60,'Süden')}
   {text(292,211,100,'the south','naS14 naNw')}
-  {text(108,234,60,'der W','naS14 naNw')}{field('85-5-3',136,234,66,'Westen')}
+  {text(108,234,60,'der W','naS14 naNw')}{field('85-5-3',147,234,54,'Westen')}
   {text(292,234,100,'the west','naS14 naNw')}
   {text(108,256,160,'Norddeutschland','naS14 naNw')}
   {text(292,256,160,'Northern Germany','naS14 naNw')}
