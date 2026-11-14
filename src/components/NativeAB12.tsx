@@ -32,7 +32,7 @@ const bank=(x:number,y:number,w:number,parts:[string,boolean][])=><div className
  const setList=(s:string)=>s.split(/,|\s+und\s+/i).map(t=>t.normalize('NFC').trim().replace(/^(der|die|das)\s+/i,'').toLocaleLowerCase('de').replace(/[.!?]+$/,'').trim()).filter(Boolean).sort().join(' ');
  const mark52=(id:string,ok:boolean)=>{root.current?.querySelectorAll(`[data-native-field="${id}"]`).forEach(e=>e.setAttribute('data-check-mark',ok?'ok':'bad'))};
  const check52t3=(x:number,y:number)=><div className="naCheck naStack" data-check="52-t3" data-check-layout="stack" style={{left:x,top:y}}><CheckButton onClick={()=>{const c1=setList(values['52-t3-c1']||'')===setList('Kopf, Arme, Beine, Hals, Bauch'),c2=setList(values['52-t3-c2']||'')===setList('Rücken, Brust, Hand, Finger, Fuß, Knie, Ohr, Auge, Zahn, Nase, Mund');mark52('52-t3-c1',c1);mark52('52-t3-c2',c2);sr({...results,'52-t3':c1&&c2})}}></CheckButton><output aria-live="polite">{'52-t3' in results?(results['52-t3']?'✓ Richtig!':'Noch einmal'):''}</output></div>;
- const save52=(id:string,x:number,y:number)=>null;
+ const save52=(id:string,x:number,y:number)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton onClick={()=>sn(s=>({...s,[id]:true}))}/><output aria-live="polite">{saved[id]?'Gespeichert':''}</output></div>;
  const gl=(x:number,y:number,t:string,bg?:string)=><div className="naGL" style={{left:x,top:y,...(bg?{background:bg}:{})}}>{t}</div>;
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const hand=(x:number,y:number,w:number,t:string)=><div className="naText naHand" style={{left:x,top:y,width:w}}><Words text={t}/></div>;
@@ -142,7 +142,7 @@ const bank=(x:number,y:number,w:number,parts:[string,boolean][])=><div className
   {field('52-t1-a1',230,371,770,'Eigener Satz 1','naFieldBlank')}
   {field('52-t1-a2',167,404,833,'Eigener Satz 2','naFieldBlank')}
   {field('52-t1-a3',167,429,820,'Eigener Satz 3','naFieldBlank')}
-  {save52('52-t1',880,250)}
+  {save52('52-t1',880,256)}
   {art('pen1',72,448,49,50)}
   {title('2',122,459,830,'Sie haben 100 000 € gewonnen. Was machen Sie? Schreiben Sie.','naRB naNw')}
   {text(166,498,140,'Reisen?','naD20')}
@@ -154,7 +154,7 @@ const bank=(x:number,y:number,w:number,parts:[string,boolean][])=><div className
   {field('52-t2-b2',230,574,770,'Eigene Idee 2','naFieldBlank')}
   {field('52-t2-b3',167,606,833,'Eigene Idee 3','naFieldBlank')}
   {field('52-t2-b4',167,634,833,'Eigene Idee 4','naFieldBlank')}
-  {save52('52-t2',880,461)}
+  {save52('52-t2',880,530)}
   {text(120,689,480,'Wählen Sie eine Aufgabe zu Lektion','naSec naNw')}
   {gl(502,692,'18','#5a9d97')}
   <div className="naGRule" style={{left:534,top:717,width:432,height:3,background:'#a0c4ca'}}/>
@@ -173,7 +173,7 @@ const bank=(x:number,y:number,w:number,parts:[string,boolean][])=><div className
   {field('52-t4-d2',167,1100,833,'Eigener Ratgeber 1','naFieldBlank')}
   {field('52-t4-d3',167,1132,833,'Eigener Ratgeber 2','naFieldBlank')}
   {field('52-t4-d4',167,1164,833,'Eigener Ratgeber 3','naFieldBlank')}
-  {save52('52-t4',880,882)}
+  {save52('52-t4',880,1010)}
   {art('modul',0,1388,72,24)}
   {text(96,1388,220,'52 \u00a0|\u00a0 zweiundfünfzig','naFooter naFoot52')}
  </>}
