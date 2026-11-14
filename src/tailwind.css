@@ -284,7 +284,7 @@ label.answerCorrect{outline:1px solid #6ca47b;border-radius:4px}
 .meaningHeader button{font-size:13px}
 .meaningPopup h3{font:24px Georgia;margin:20px 0 8px}
 .meaningArabic{font:25px/1.7 'Cairo';margin:8px 0 18px}
-.meaningPopup .selected{background:var(--accent);color:white}
+.meaningPopup .selected{background:var(--accent,#713c46);color:white}
 .meaningPopup small{display:block;color:#717971;font-size:12px;margin-top:10px}
 .tapWord{cursor:pointer}
 .tapWord:hover{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}
