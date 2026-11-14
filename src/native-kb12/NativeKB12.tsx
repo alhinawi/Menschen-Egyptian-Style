@@ -4,6 +4,7 @@ import {PageImage} from '../components/PageImage';
 import {usePageReset} from '../exercises/usePageReset';
 import {LineMatching} from '../exercises/LineMatching';
 import {ClipMarkers} from '../components/ClipMarkers';
+import {DESKTOP,localClipUrl} from '../desktop';
 import {useLayoutEffect,useRef,useState} from 'react';
 import './native-kb12.css';
 import {createPortal} from 'react-dom';
@@ -1086,6 +1087,6 @@ export function NativeKB12({page}:{page:string}){
  {page==='26'&&<>{[497,1030,1403].map(y=>text(85,y,28,'AB','nkAB'))}{text(83,602,25,'noch einmal?','nkSide')}{text(83,820,25,'Film','nkSide')}{text(83,1072,25,'Spiel & Spaß','nkSide')}{text(83,1195,25,'Diktat','nkSide')}{text(83,1360,25,'Spiel & Spaß','nkSide')}</>}
  {page==='27'&&<>{text(76,172,28,'AB','nkAB')}{text(76,1430,28,'AB','nkAB')}{text(76,1455,25,'Beruf','nkSide')}</>}
  {page==='28'&&<>{text(83,958,25,'Audiotraining','nkSide')}{text(83,1085,25,'Karaoke','nkSide')}</>}
- </div>{film&&createPortal(<div className="nkFilmDialog" role="dialog" aria-label="Originalfilm" aria-modal="true"><button onClick={()=>sf('')} aria-label="Film schließen">Schließen ×</button><iframe src={'https://www.youtube-nocookie.com/embed/'+film} title="Originalfilm" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/><a href={'https://www.youtube.com/watch?v='+film} target="_blank" rel="noopener">Auf YouTube ansehen ↗</a></div>,document.body)}<audio ref={player} className="nkPlayer" hidden controls aria-label="Originalaudio"/></div>
+ </div>{film&&createPortal(<div className="nkFilmDialog" role="dialog" aria-label="Originalfilm" aria-modal="true"><button onClick={()=>sf('')} aria-label="Film schließen">Schließen ×</button>{DESKTOP?<video src={localClipUrl(film)} title="Originalfilm" controls autoPlay playsInline/>:<iframe src={'https://www.youtube-nocookie.com/embed/'+film} title="Originalfilm" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>}{!DESKTOP&&<a href={'https://www.youtube.com/watch?v='+film} target="_blank" rel="noopener">Auf YouTube ansehen ↗</a>}</div>,document.body)}<audio ref={player} className="nkPlayer" hidden controls aria-label="Originalaudio"/></div>
 }
 export const nativeKB12Pages=new Set(['9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','75','76','77','78','79','80','81','82','83','84','85','86','87','88','imprint','inside-back-cover','back-cover']);
