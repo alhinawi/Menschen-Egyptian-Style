@@ -331,7 +331,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(111,641,16,'d','naBookSerif naBk88')}{text(130,640,175,'Niko macht ein Fest, denn','naBookSerif naBk88 naNw',14.1)}{field('88-3d',308,636,412,'3 d')}{text(720,639,10,'.','naBookSerif naBk88 naNw naPrd')}
   {text(130,661,195,'(er / Wohnung gefunden haben)','naCue88',13.4)}
   <div className="naPts" style={{left:640,top:662}}>_ / 3 Punkte</div>
-  {check('88-3',640,682,{'88-3b':'denn unsere Oma ist krank|unsere Oma ist krank','88-3c':'denn der Aufzug funktioniert nicht|der Aufzug funktioniert nicht','88-3d':'denn er hat eine neue Wohnung gefunden|er hat eine neue Wohnung gefunden'})}
+  {check('88-3',640,682,{'88-3b':'denn unsere Oma ist krank|unsere Oma ist krank','88-3c':'denn der Aufzug funktioniert nicht|der Aufzug funktioniert nicht','88-3d':'denn er hat eine Wohnung gefunden|er hat eine Wohnung gefunden|denn er hat eine neue Wohnung gefunden|er hat eine neue Wohnung gefunden'})}
   <div className="naSideT" style={{left:52,top:741}}>KOMMUNIKATION</div>
   {title('4',68,707,640,'Ordnen Sie zu.','naRB naNw naS15')}
   <div className="naBank" style={{left:111,top:737,width:596,height:42}}/>
