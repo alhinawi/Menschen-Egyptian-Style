@@ -1574,7 +1574,608 @@
    "h": 12
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p17-a1",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 1",
+   "x": 329,
+   "y": 223,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-a2",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 2",
+   "x": 329,
+   "y": 248,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-a3",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 3",
+   "x": 329,
+   "y": 274,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-a4",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 4",
+   "x": 329,
+   "y": 300,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-a5",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 5",
+   "x": 329,
+   "y": 325,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-a6",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 6",
+   "x": 329,
+   "y": 351,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-a7",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 7",
+   "x": 329,
+   "y": 428,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-a8",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 8",
+   "x": 329,
+   "y": 454,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-a9",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 9",
+   "x": 329,
+   "y": 480,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-a10",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 10",
+   "x": 329,
+   "y": 505,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-a11",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 11",
+   "x": 329,
+   "y": 531,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-a12",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 12",
+   "x": 329,
+   "y": 557,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-a13",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 13",
+   "x": 329,
+   "y": 583,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-a14",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 14",
+   "x": 329,
+   "y": 686,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-a15",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 15",
+   "x": 329,
+   "y": 737,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-a16",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 16",
+   "x": 329,
+   "y": 789,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-a17",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 17",
+   "x": 329,
+   "y": 815,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-a18",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 18",
+   "x": 329,
+   "y": 866,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-a19",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 19",
+   "x": 329,
+   "y": 892,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-a20",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 20",
+   "x": 329,
+   "y": 943,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-a21",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 21",
+   "x": 329,
+   "y": 969,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-a22",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 22",
+   "x": 329,
+   "y": 995,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-a23",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 23",
+   "x": 329,
+   "y": 1020,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-a24",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 24",
+   "x": 329,
+   "y": 1111,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-a25",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 25",
+   "x": 329,
+   "y": 1162,
+   "w": 188,
+   "h": 24
+  },
+  {
+   "id": "p17-b1",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 26",
+   "x": 685,
+   "y": 196,
+   "w": 192,
+   "h": 24
+  },
+  {
+   "id": "p17-b2",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 27",
+   "x": 685,
+   "y": 299,
+   "w": 192,
+   "h": 24
+  },
+  {
+   "id": "p17-b3",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 28",
+   "x": 685,
+   "y": 325,
+   "w": 192,
+   "h": 24
+  },
+  {
+   "id": "p17-b4",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 29",
+   "x": 685,
+   "y": 376,
+   "w": 192,
+   "h": 24
+  },
+  {
+   "id": "p17-b5",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 30",
+   "x": 685,
+   "y": 402,
+   "w": 192,
+   "h": 24
+  },
+  {
+   "id": "p17-b6",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 31",
+   "x": 685,
+   "y": 453,
+   "w": 192,
+   "h": 24
+  },
+  {
+   "id": "p17-b7",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 32",
+   "x": 685,
+   "y": 505,
+   "w": 192,
+   "h": 24
+  },
+  {
+   "id": "p17-b8",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 33",
+   "x": 685,
+   "y": 569,
+   "w": 192,
+   "h": 24
+  },
+  {
+   "id": "p17-b9",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 34",
+   "x": 685,
+   "y": 595,
+   "w": 192,
+   "h": 24
+  },
+  {
+   "id": "p17-b10",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 35",
+   "x": 685,
+   "y": 620,
+   "w": 192,
+   "h": 24
+  },
+  {
+   "id": "p17-b11",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 36",
+   "x": 685,
+   "y": 646,
+   "w": 192,
+   "h": 24
+  },
+  {
+   "id": "p17-b12",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 37",
+   "x": 685,
+   "y": 711,
+   "w": 192,
+   "h": 24
+  },
+  {
+   "id": "p17-b13",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 38",
+   "x": 685,
+   "y": 736,
+   "w": 192,
+   "h": 24
+  },
+  {
+   "id": "p17-b14",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 39",
+   "x": 685,
+   "y": 762,
+   "w": 192,
+   "h": 24
+  },
+  {
+   "id": "p17-b15",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 40",
+   "x": 685,
+   "y": 788,
+   "w": 192,
+   "h": 24
+  },
+  {
+   "id": "p17-b16",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 41",
+   "x": 685,
+   "y": 852,
+   "w": 192,
+   "h": 24
+  },
+  {
+   "id": "p17-b17",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 42",
+   "x": 685,
+   "y": 878,
+   "w": 192,
+   "h": 24
+  },
+  {
+   "id": "p17-b18",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 43",
+   "x": 685,
+   "y": 903,
+   "w": 192,
+   "h": 24
+  },
+  {
+   "id": "p17-b19",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 44",
+   "x": 685,
+   "y": 929,
+   "w": 192,
+   "h": 24
+  },
+  {
+   "id": "p17-b20",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 45",
+   "x": 685,
+   "y": 955,
+   "w": 192,
+   "h": 24
+  },
+  {
+   "id": "p17-b21",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 46",
+   "x": 685,
+   "y": 1006,
+   "w": 192,
+   "h": 24
+  },
+  {
+   "id": "p17-b22",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 47",
+   "x": 685,
+   "y": 1058,
+   "w": 192,
+   "h": 24
+  },
+  {
+   "id": "p17-b23",
+   "group": "g1",
+   "kind": "text",
+   "label": "Uebersetzen 48",
+   "x": 685,
+   "y": 1109,
+   "w": 192,
+   "h": 24
+  },
+  {
+   "id": "p17-c1",
+   "group": "g1",
+   "kind": "text",
+   "label": "Bildwort 1",
+   "x": 929,
+   "y": 194,
+   "w": 123,
+   "h": 24
+  },
+  {
+   "id": "p17-c2",
+   "group": "g1",
+   "kind": "text",
+   "label": "Bildwort 2",
+   "x": 929,
+   "y": 306,
+   "w": 123,
+   "h": 24
+  },
+  {
+   "id": "p17-c3",
+   "group": "g1",
+   "kind": "text",
+   "label": "Bildwort 3",
+   "x": 929,
+   "y": 417,
+   "w": 123,
+   "h": 24
+  },
+  {
+   "id": "p17-c4",
+   "group": "g1",
+   "kind": "text",
+   "label": "Bildwort 4",
+   "x": 929,
+   "y": 539,
+   "w": 123,
+   "h": 24
+  },
+  {
+   "id": "p17-c5",
+   "group": "g1",
+   "kind": "text",
+   "label": "Bildwort 5",
+   "x": 929,
+   "y": 650,
+   "w": 123,
+   "h": 24
+  },
+  {
+   "id": "p17-c6",
+   "group": "g1",
+   "kind": "text",
+   "label": "Bildwort 6",
+   "x": 929,
+   "y": 764,
+   "w": 123,
+   "h": 24
+  },
+  {
+   "id": "p17-c7",
+   "group": "g1",
+   "kind": "text",
+   "label": "Bildwort 7",
+   "x": 929,
+   "y": 876,
+   "w": 123,
+   "h": 24
+  },
+  {
+   "id": "p17-c8",
+   "group": "g1",
+   "kind": "text",
+   "label": "Bildwort 8",
+   "x": 929,
+   "y": 980,
+   "w": 123,
+   "h": 24
+  },
+  {
+   "id": "p17-c9",
+   "group": "g1",
+   "kind": "text",
+   "label": "Bildwort 9",
+   "x": 929,
+   "y": 1099,
+   "w": 123,
+   "h": 24
+  },
+  {
+   "id": "p17-c10",
+   "group": "g1",
+   "kind": "text",
+   "label": "Bildwort 10",
+   "x": 929,
+   "y": 1219,
+   "w": 123,
+   "h": 24
+  },
+  {
+   "id": "p17-c11",
+   "group": "g1",
+   "kind": "text",
+   "label": "Bildwort 11",
+   "x": 929,
+   "y": 1339,
+   "w": 123,
+   "h": 24
+  },
+  {
+   "id": "p17-n1",
+   "group": "g2",
+   "kind": "text",
+   "label": "Notieren",
+   "x": 130,
+   "y": 1360,
+   "w": 240,
+   "h": 27
+  }
+ ],
  "audio": [],
  "groups": [],
  "review": {
