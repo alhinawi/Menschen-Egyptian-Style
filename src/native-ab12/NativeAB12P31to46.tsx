@@ -1569,9 +1569,17 @@ export function NativeAB12P31to46({page}:{page:string}){
   {field('p43-9finger',150,1194,260,'9 finger','naNoRule43')}
   {field('p43-9knie',150,1283,260,'9 knie','naNoRule43')}
   {field('p43-9hand',150,1312,260,'9 hand','naNoRule43')}
+  {field('p43-9s1',580,1135,365,'9 Kopf Sprache','naNoRule43')}
+  {field('p43-9s2',580,1165,365,'9 arm Sprache','naNoRule43')}
+  {field('p43-9s3',580,1195,365,'9 finger Sprache','naNoRule43')}
+  {field('p43-9s4',580,1224,365,'9 Bein Sprache','naNoRule43')}
+  {field('p43-9s5',580,1254,365,'9 Auge Sprache','naNoRule43')}
+  {field('p43-9s6',580,1283,365,'9 Knie Sprache','naNoRule43')}
+  {field('p43-9s7',580,1313,365,'9 Hand Sprache','naNoRule43')}
   {check('43-1',962,442,{'p43-5b':'Gehen Sie doch ins Ausland.','p43-5c':'Lernen Sie doch ein Instrument.','p43-5d':'Machen Sie doch den Motorradführerschein.','p43-5e':'Lernen Sie doch noch eine Fremdsprache.'})}
   {check('43-2',962,900,{'p43-7b':'Sollst','p43-7c':'sollen','p43-7d':'sollt','p43-7e':'soll','p43-7f':'sollen'})}
   {check('43-3',962,1300,{'p43-9arm':'Arm','p43-9finger':'Finger','p43-9knie':'Knie','p43-9hand':'Hand'})}
+  {save('43-4',142,1352)}
  </>}
  {page==='44'&&<>
   {lin(372,111,605,2,'#6dadb4')}
