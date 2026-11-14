@@ -126,7 +126,7 @@ export function NativeKB12({page}:{page:string}){
   {text(132,200,780,'a  Welche Sätze sind höflich? Hören Sie und kreuzen Sie an.','nkBold')}
   {['Entschuldigen Sie bitte. Kann ich Sie etwas fragen? Wo finde ich das Café Schiffer?','Entschuldigen Sie. Haben Sie einen Moment Zeit? Kennen Sie das Café Schiffer?','Hallo, Sie! Helfen Sie mir! Ich suche das Café Schiffer.','Hallo! Wo ist denn das Café Schiffer?','Entschuldigung. Eine Frage bitte: Wo ist denn das Café Schiffer?'].map((t,i)=><div key={t}>{text(161,244+i*27,800,`${i+1}  ${t}`)}{dot('9a-'+i,'',962,244+i*27,'Satz '+(i+1),true)}</div>)}
   {check('9a',163,387,{'9a-0':'true','9a-1':'true','9a-2':'false','9a-3':'false','9a-4':'true'})}
-  {text(132,439,470,'b  Sie kennen den Weg nicht.\n    Bitten Sie nun höflich um Hilfe.','nkBold')}{text(566,435,220,'Entschuldigung.\nEine Frage bitte: …','nkSpeech')}
+  {text(132,439,470,'b  Sie kennen den Weg nicht.\n    Bitten Sie nun höflich um Hilfe.','nkBold')}{text(504,389,276,'Entschuldigung.\nEine Frage bitte: …','nkOval')}
   {art('station',162,504,249,205)}{art('dom',505,504,218,205)}{art('sacher',806,424,189,286)}
   {text(162,720,270,'Bahnhof','nkSmall')}{text(514,720,270,'Kölner Dom','nkSmall')}{text(812,720,220,'Hotel Sacher','nkSmall')}{save('9b',132,750)}
   {text(121,786,450,'GRAMMATIK','nkModule')}{text(644,786,430,'KOMMUNIKATION','nkModule')}
