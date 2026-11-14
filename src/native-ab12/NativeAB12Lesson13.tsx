@@ -169,7 +169,6 @@ export function NativeAB12Lesson13({page}:{page:string}){
   <div className="naRule" style={{left:388,top:570,width:252}}/>
   <LinedArea id="8-7" values={values} set={set} x={388} ruleYs={[520,545,570]} w={252} label="E-Mail: Wegbeschreibung" rules={false}/>
   {text(391,586,300,'Bis Samstag! Viele Grüße, Marina','naS16 naNw')}
-  <div className="naCheck" data-check="8-7" style={{left:391,top:616}}><CheckButton onClick={()=>sn(o=>({...o,['8-7']:true}))}></CheckButton><output aria-live="polite">{saved['8-7']?'Gespeichert':''}</output></div>
   {art('map',745,285,285,320)}
   {kb(56,648,'KB 7')}
   {title('8',109,639,500,'Ordnen Sie die Antworten zu.','naYB')}
@@ -233,7 +232,6 @@ export function NativeAB12Lesson13({page}:{page:string}){
   <div className="naBand9" style={{left:153,top:1070,width:282,height:25}}/>
   {text(160,1021,40,'nein','naWord9 naNw')}{text(201,1021,12,'|','naSep9 naNw')}{text(210,1021,98,'beschreiben','naWord9 naNw')}{text(311,1021,12,'|','naSep9 naNw')}{text(320,1021,55,'Polizei','naWord9 naNw')}{text(378,1021,12,'|','naSep9 naNw')}{text(386,1021,47,'beide','naWord9 naNw')}{text(436,1021,12,'|','naSep9 naNw')}{text(443,1021,52,'vorbei','naWord9 naNw')}
   {text(159,1047,86,'ankreuzen','naWord9 naNw')}{text(248,1047,12,'|','naSep9 naNw')}{text(256,1047,66,'deutsch','naWord9 naNw')}{text(325,1047,12,'|','naSep9 naNw')}{text(335,1047,57,'Freund','naWord9 naNw')}{text(395,1047,12,'|','naSep9 naNw')}{text(404,1047,43,'neun','naWord9 naNw')}{text(449,1047,12,'|','naSep9 naNw')}{text(458,1047,40,'Euro','naWord9 naNw')}
-  <div className="naCheck" data-check="9-a1" style={{left:450,top:1068}}><CheckButton onClick={()=>sn(o=>({...o,['9-a1']:true}))}></CheckButton><output aria-live="polite">{saved['9-a1']?'Gespeichert':''}</output></div>
   {text(159,1072,42,'Auto','naWord9 naNw')}{text(203,1072,12,'|','naSep9 naNw')}{text(211,1072,41,'auch','naWord9 naNw')}{text(255,1072,12,'|','naSep9 naNw')}{text(265,1072,37,'Frau','naWord9 naNw')}{text(304,1072,12,'|','naSep9 naNw')}{text(312,1072,84,'geradeaus','naWord9 naNw')}{text(399,1072,12,'|','naSep9 naNw')}{text(407,1072,30,'auf','naWord9 naNw')}
   {audio('assets/ab-a12-cd2-track05.mp3',523,980,'2 05','3')}
   {badge9('3',570,981,32,19)}{text(614,980,400,'Ergänzen Sie „au“, „ei“ oder „eu“.','naYT naYT21 naNw')}
@@ -720,7 +718,6 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {audio('assets/ab-a12-cd2-track08.mp3',62,1327,'2 08','2')}
   {badge9('2',121,1322)}
   {text(165,1320,665,'Hören Sie die Wörter aus 1 und sprechen Sie nach.','naYT naNw')}
-  <div className="naCheck" data-check="15-a2" style={{left:895,top:1316}}><CheckButton onClick={()=>sn(o=>({...o,['15-a2']:true}))}></CheckButton><output aria-live="polite">{saved['15-a2']?'Gespeichert':''}</output></div>
   {audio('assets/ab-a12-cd2-track09.mp3',672,1134,'2 09','3')}
   {badge9('3',720,1128)}
   {text(766,1127,245,'Hören Sie das Gedicht','naYT naNw')}
@@ -732,7 +729,6 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(766,1297,160,'im Garten','naMail15 naNw')}
   {text(766,1320,160,'Bäume.','naMail15 naNw')}
   {text(766,1347,160,'Alles ganz neu!','naMail15 naNw')}
-  <div className="naCheck" data-check="15-a3" style={{left:925,top:1188}}><CheckButton onClick={()=>sn(o=>({...o,['15-a3']:true}))}></CheckButton><output aria-live="polite">{saved['15-a3']?'Gespeichert':''}</output></div>
   <div className="naModul10" style={{left:1010,top:1389,width:61,height:17,lineHeight:'17px',background:'#dfd6af',fontWeight:400}}>Modul 5</div>
   <div className="naText naFooter naNw" style={{left:870,top:1388,width:127,whiteSpace:'pre'}}><span className="naFz15">{'fünfzehn  |  15'}</span></div>
  </>}

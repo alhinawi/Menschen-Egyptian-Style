@@ -1,12 +1,6 @@
 import './native-ab12-p90.css';
-import {useState} from 'react';
 import {useNativeCanvas,Canvas,Words} from './shared';
-import {CheckButton} from '../components/CheckButton';
 
-function NeutralCheck({id,x,y}:{id:string,x:number,y:number}){
- const [saved,setSaved]=useState(false);
- return <div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton onClick={()=>setSaved(true)}/><output aria-live="polite">{saved?'Gespeichert':''}</output></div>;
-}
 import {LineMatching} from '../exercises/LineMatching';
 export function NativeAB12L23({page}:{page:string}){
  const c=useNativeCanvas(page);
@@ -67,7 +61,6 @@ export function NativeAB12L23({page}:{page:string}){
   {art('hand-a2',320,678,48,20)}
   {text(522,677,20,'/','naPencil')}
   {field('84-3-a1',322,655,186,'3 Adjektive Zeile 1','naFieldBlank')}
-  <NeutralCheck id='84-3' x={568} y={588}/>
   {kb(58,724,'KB 3')}
   {title('4',88,719,640,'Ergänzen Sie die Gespräche.','naRB naNw')}
   <div className="naSide naSideB" style={{left:64,top:795}}>KOMMUNIKATION</div>
@@ -146,7 +139,6 @@ export function NativeAB12L23({page}:{page:string}){
   {text(155,867,330,'besonders warm. Wir haben … Grad. … Wo bin ich?','naS14 naIt naNw')}
   <div className="naBubble" style={{left:528,top:856,width:160,height:60}}/>
   {text(548,873,130,'Bist du in …?','naS14 naIt naNw')}
-  <NeutralCheck id='85-7' x={102} y={848}/>
   {kb(30,910,'KB 4')}
   {title('8',55,907,400,'Ordnen Sie zu.','naRB naNw')}
   <div className="naSide naSideB" style={{left:64,top:968}}>STRUKTUREN</div>
@@ -254,7 +246,6 @@ export function NativeAB12L23({page}:{page:string}){
   {text(445,373,275,'Überlegen Sie vor dem Hören: Was ist die','naBookSerif naBk87 naNw')}
   {text(445,389,275,'Situation? Wo sind die Personen? Was sagen','naBookSerif naBk87 naNw')}
   {text(445,405,275,'die Personen vielleicht?','naBookSerif naBk87 naNw')}
-  <NeutralCheck id='87-1' x={385} y={250}/>
   {audio('assets/ab-cd2-track37.mp3',26,449,'2 37','2')}
   {title('2',68,453,640,'Hören Sie nun das Gespräch und korrigieren Sie die Sätze.','naRB naNw naS15')}
   {text(103,483,16,'a','naBookSerif naBk87')}<div className="naText naBookSerif naBk87 naNw" style={{left:121,top:483,width:250}}><span className="naStrikeB"><Words text="Peter"/></span><Words text=" war im Urlaub krank."/></div>
@@ -285,11 +276,9 @@ export function NativeAB12L23({page}:{page:string}){
   {text(416,799,14,'c','naBookSerif naBk87')}{text(435,796,120,'Fan','naBookSerif naBk87 naNw')}{text(435,814,120,'Föhn','naBookSerif naBk87 naNw')}{text(435,834,180,'Ein Föhn vom Fan','naBookSerif naBk87 naNw')}
   {text(416,863,14,'d','naBookSerif naBk87')}{text(435,863,120,'Kellner','naBookSerif naBk87 naNw')}{text(435,883,120,'Köln','naBookSerif naBk87 naNw')}{text(435,902,330,'Ein Kölner Kellner ist ein Kellner aus Köln.','naBookSerif naBk87 naNw')}
   {text(416,935,14,'e','naBookSerif naBk87')}{text(435,932,120,'sonnig','naBookSerif naBk87 naNw')}{text(435,951,120,'bewölkt','naBookSerif naBk87 naNw')}{text(435,970,300,'im Norden sonnig, im Osten bewölkt','naBookSerif naBk87 naNw')}
-  <NeutralCheck id='87-a1' x={240} y={752}/>
   {audio('assets/ab-cd2-track39.mp3',26,918,'2 39','2')}
   {title('2',68,921,400,'Hören Sie und sprechen Sie dann.','naRB naNw naS15')}
   {text(101,954,14,'a','naBookSerif naBk87')}{text(120,954,120,'Wetter','naBookSerif naBk87 naNw')}{text(114,971,120,'Wort','naBookSerif naBk87 naNw')}{text(121,989,200,'macht: Wetterwörter','naBookSerif naBk87 naNw')}
-  <NeutralCheck id='87-a2' x={350} y={993}/>
   {art('modul-tab',739,1047,59,17)}
   {text(716.6,1046,30,'87','naFootL23B naNw',11)}{text(699.9,1046,6,'|','naFootL23 naNw',12.3)}{text(586.5,1046,110,'siebenundachtzig','naFootL23 naNw',12.3)}
  </>}

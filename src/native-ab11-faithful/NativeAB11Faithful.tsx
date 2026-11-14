@@ -35,9 +35,7 @@ export function NativeAB11Faithful({page}:{page:string}){
    default:return null;
   }
  };
- const closed=spec.items.filter(i=>i.k==='f');
  return <div className="nativeAB11 nativeAB11F" ref={host} data-native-ab11f={page}><div className="nabCanvas nafCanvas" style={{width:spec.w,height:spec.h,transform:`translate(-50%,-50%) scale(${scale})`}}>
   {spec.items.map(render)}
-  {closed.length>0&&<div className="nafCheck" style={{left:spec.checkX??60,top:spec.checkY??spec.h-52}}><CheckButton onClick={()=>setSaved({all:true})}></CheckButton><output aria-live="polite">{saved.all?'Gespeichert':''}</output></div>}
  </div></div>;
 }
