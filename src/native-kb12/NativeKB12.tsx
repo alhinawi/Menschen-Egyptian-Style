@@ -916,7 +916,7 @@ export function NativeKB12({page}:{page:string}){
  {check('person-'+i,150,i?980:550,page==='81'?(i?{'person-1-0-1':'verheiratet','person-1-0-2':'Luzern','person-1-0-3':'tanzen','person-1-0-4':'kurze Haare, kein Bart'}:{'person-0-1-1':'geschieden','person-0-1-2':'Innsbruck','person-0-1-3':'malen, spazieren gehen','person-0-1-4':'lange, braune Haare / keine Brille|lange braune Haare, keine Brille'}):(i?{'person-1-1-1':'geschieden','person-1-1-2':'Neu Delhi','person-1-1-3':'kochen, Fahrrad fahren','person-1-1-4':'lange Haare, Bart'}:{'person-0-0-1':'ledig','person-0-0-2':'Stuttgart','person-0-0-3':'Musik hören','person-0-0-4':'blonde, kurze Haare, Brille|blonde kurze Haare, Brille'}))}
  </div>)}
  <div className="nkActionDialogue" style={{left:135,top:590,width:850,fontSize:19,lineHeight:1.2}}>{['■  Vor 20 Jahren war Simone Sekretärin. Was ist sie heute?','▲  Heute ist sie Yoga-Lehrerin.','■  Früher war Simone …'].map((t,i)=><div key={t} style={{color:i===1?'#529d58':'#415a94'}}><Words text={t}/></div>)}</div>
- {text(105,1040,920,'c  Und Sie? Ergänzen Sie und sprechen Sie mit Ihrer Partnerin / Ihrem Partner.','nkBold')}
+ {text(105,1040,920,'c  Und Sie? Ergänzen Sie und sprechen Sie mit Ihrer Partnerin / Ihrem Partner.','nkBold')}{save('L19-5c',892,1040)}
  <div className="nkPersonCard" style={{left:105,top:1080,width:895,height:243}}>{text(180,12,240,'Sie\nvor 10 Jahren','nkPersonHead')}{text(520,42,240,'heute','nkPersonHead')}{['Beruf/Schule:','Familie:','Lebe in:','Hobbys:','Aussehen:'].map((v,r)=><div key={v}>{text(25,85+r*28,170,v,'nkPersonSmall')}{field('ich-frueher-'+r,180,83+r*28,300,'Ich früher: '+v)}{field('ich-heute-'+r,510,83+r*28,350,'Ich heute: '+v)}</div>)}</div>
  </>}
 
