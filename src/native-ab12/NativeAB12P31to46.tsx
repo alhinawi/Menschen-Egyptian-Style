@@ -1343,6 +1343,8 @@ export function NativeAB12P31to46({page}:{page:string}){
   {title('2',100,1106,760,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naGB')}
   {rect(994,1391,78,19,'#cbc3a4')}
   {stext(999,1392,68,'Modul 6',{color:'#fff',fontSize:'13px'},'naModul naNw')}
+  {save('41-1',314,1040)}
+  {save('41-2',144,1358)}
   {text(818,1392,113,'einundvierzig','naFooter')}
   {text(937,1393,10,'|','naFooter')}
   {text(964,1392,20,'41','naFooter')}
