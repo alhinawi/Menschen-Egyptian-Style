@@ -1042,7 +1042,7 @@ export function NativeKB12({page}:{page:string}){
  {text(150,1142,355,'1  Ich würde dich gern ins Kino\n    einladen.','nkSmall')}{text(150,1200,355,'2  Wir würden das gern mit dir\n    feiern.','nkSmall')}
  {['Wir gehen ins Kino. Ich freue mich.','Ich möchte mit dir ins Kino gehen. Hast du Zeit?','Du kommst zu der Feier. Das finden wir schön.','Wir möchten gern mit dir feiern. Kommst du?'].map((t,i)=><div key={t}>{dot('5a-'+(i<2?'1':'2'),String(i%2+1),510,1140+i*29,t)}{text(545,1140+i*29,510,t,'nkSmall')}</div>)}{check('5a',150,1261,{'5a-1':'2','5a-2':'2'})}
  {text(117,1306,930,'b  Arbeiten Sie zu dritt. Was würden Sie am liebsten jeden Tag machen? Notieren und erzählen Sie.','nkBold nkSmall')}{save('5b',970,1306)}
- {['ich','Maria','Fatima'].map((t,i)=><div key={t}>{text(150+i*250,1345,230,t,'nkHand nkSmall')}{open('5b-'+i,150+i*250,1364,240,38,'Wunsch '+(i+1),i===0?'spät aufstehen, Geld gewinnen, …':'')}</div>)}
+ {['ich','Maria','Fatima'].map((t,i)=><div key={t}>{text(150+i*250,1345,230,t,'nkHand nkSmall')}{i===0?(NOBOX.has('Wunsch 1')?null:<textarea className="nkOpen nkOpenPhSm" aria-label="Wunsch 1" style={{left:150,top:1364,width:240,height:38}} value={values['5b-0']||''} placeholder="spät aufstehen, Geld gewinnen, …" onChange={e=>set('5b-0',e.target.value)}/>):open('5b-'+i,150+i*250,1364,240,38,'Wunsch '+(i+1))}</div>)}
  {text(150,1410,900,'■  Ich würde gern jeden Morgen spät aufstehen.\n▲  Oh ja, das würde ich auch gern. Und du? Was würdest du am liebsten jeden Tag machen?','nkL24Small')}{title('6',105,1452,950,'Träume: Was würden Sie gern machen? Arbeiten Sie auf Seite 87.')}
  </>}
  {page==='68'&&<>
