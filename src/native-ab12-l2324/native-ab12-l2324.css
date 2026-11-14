@@ -384,3 +384,7 @@
 
 [data-native-ab12="86"] .naField.naF86b{font-size:12px!important;height:14px!important}
 [data-native-ab12="86"] .naField.naF86cd{font-size:12px!important;height:14px!important}
+
+[data-native-ab12="98"] .naCanvas .naField.naF98s6{height:14px!important}
+[data-native-ab12="98"] .naCanvas .naField.naF98s6[data-check-mark="ok"]{background:transparent!important;border-color:transparent!important;box-shadow:none!important;border-bottom:2px solid #2f7d4f!important;color:#17476f!important}
+[data-native-ab12="98"] .naCanvas .naField.naF98s6[data-check-mark="bad"]{background:transparent!important;border-color:transparent!important;box-shadow:none!important;border-bottom:2px solid #c62f2f!important;color:#17476f!important}
