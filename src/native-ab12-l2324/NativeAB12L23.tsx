@@ -176,11 +176,11 @@ export function NativeAB12L23({page}:{page:string}){
   {art('ex9a',138,344,230,20)}
   {text(119,375,16,'B','naNw naBookSerif')}{text(140,375,240,'Herr Brunner muss noch','naNw naBookSerif')}
   {text(140,393,300,'ein paar Stunden in München bleiben,','naNw naBookSerif')}
-  {text(139,414,33,'denn','naNw naBookSerif')}{field('86-9-b',175,411,240,'9 B')}{text(419,414,10,'.')}
+  {text(139,414,33,'denn','naNw naBookSerif')}{field('86-9-b',177,411,238,'9 B')}{text(419,414,10,'.')}
   {text(451,326,14,'C','naNw naBookSerif')}{text(469,326,170,'Urs ist heute sehr müde,','naNw naBookSerif')}
-  {text(468,346,33,'denn','naNw naBookSerif')}{field('86-9-c',500,343,220,'9 C')}{text(724,346,10,'.')}
+  {text(468,346,33,'denn','naNw naBookSerif')}{field('86-9-c',506,343,214,'9 C')}{text(724,346,10,'.')}
   {text(451,393,14,'D','naNw naBookSerif')}{text(468,393,260,'Sandra kommt heute nicht pünktlich,','naNw naBookSerif')}
-  {text(468,415,33,'denn','naNw naBookSerif')}{field('86-9-d',500,411,227,'9 D')}{text(731,415,10,'.')}
+  {text(468,415,33,'denn','naNw naBookSerif')}{field('86-9-d',506,411,221,'9 D')}{text(731,415,10,'.')}
   {check('86-9',640,442,{'86-9-b':'es schneit zu viel','86-9-c':'er hat gestern lange gefeiert','86-9-d':'ihr Fahrrad ist kaputt'})}
   {kb(59,470,'KB 5')}
   <div className="naTitle naRB naNw" style={{left:88,top:466,width:640}}><b>10</b><Words text="Ergänzen Sie die Sätze aus "/><span className="naBlue">9</span><Words text="."/></div>
