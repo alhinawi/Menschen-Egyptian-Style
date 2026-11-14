@@ -110,7 +110,7 @@ export function NativeAB12L24({page}:{page:string}){
   {text(111,355.95,200,'Was? Das gefällt dir? Das ist doch','naBookSerif naBody98 naNw',12.5)}{text(314,355.95,9,'w','naBookSerif naBody98 naNw',12.5)}{field('98-3b',324,347.9,97,'3 wirklich')}{text(425,355.95,68,'langweilig.','naBookSerif naBody98 naNw',12.5)}
   <div className="naCi98" style={{left:96,top:378.5,width:7.5,height:7.5}}/>
   {text(110,373.95,160,'Aber seht mal, das hier ist','naBookSerif naBody98 naNw',12.5)}{text(271,373.95,5,'r','naBookSerif naBody98 naNw',12.5)}{field('98-3c',276,367.9,98,'3 richtig')}{text(378,373.95,25,'toll.','naBookSerif naBody98 naNw',12.5)}
-  {check('98-3',745,311,{'98-3a':'otal|Total','98-3b':'irklich|wirklich','98-3c':'ichtig|richtig'})}
+  {check('98-3',745,311,{'98-3a':'otal|Total','98-3b':'ahnsinnig|wahnsinnig','98-3c':'ichtig|richtig'})}
   {sect98(410,'… Gründe angeben:','L23')}{conf98('s4',414)}
   {text(96,428.95,145,'Unser Ziel war Südtirol,','naBookSerif naBody98 naNw',12.5)}{field('98-4',243,421.9,78,'4 denn')}{text(325,428.95,245,'dort ist es im März schon oft sehr warm.','naBookSerif naBody98 naNw',12.5)}
   {check('98-4',745,405,{'98-4':'denn'})}
@@ -125,7 +125,7 @@ export function NativeAB12L24({page}:{page:string}){
   {field('98-6a1',96,551.9,58,'6 Was')}{text(157,557.95,205,'würdest du am liebsten jeden Tag','naBookSerif naBody98 naNw',12.5)}{text(362,557.95,10,'m','naBookSerif naBody98 naNw',12.5)}{field('98-6a2',373,551.9,88,'6 machen')}{text(461,557.95,6,'?','naBookSerif naBody98 naNw',12.5)}
   {text(97,576.95,18,'Ich','naBookSerif naBody98 naNw',12.5)}{field('98-6b',133,569.9,463,'6 Ich würde')}{text(602,576.95,5,'.','naBookSerif naBody98 naNw',12.5)}
   {text(97,595.05,195,'(gern meinen Geburtstag feiern)','naBookSerif naBody98 naNw',12.4)}
-  {check('98-6',745,534,{'98-6a1':'Was','98-6a2':'machen|achen','98-6b':'würde gern meinen Geburtstag feiern|würde meinen Geburtstag feiern'})}
+  {check('98-6',745,534,{'98-6a1':'Was','98-6a2':'machen|achen','98-6b':'würde gern jeden Tag meinen Geburtstag feiern|möchte gern jeden Tag meinen Geburtstag feiern|würde gern meinen Geburtstag feiern|möchte gern meinen Geburtstag feiern|würde meinen Geburtstag feiern'})}
   {sect98(631,'… gratulieren:','L24')}{conf98('s7',634)}
   {text(96,649.95,7,'F','naBookSerif naBody98 naNw',12.5)}{field('98-7a1',103,641.9,78,'7 Frohe')}{text(184,649.95,10,'W','naBookSerif naBody98 naNw',12.5)}{field('98-7a2',196,641.9,176,'7 Weihnachten')}{text(373,649.95,6,'!','naBookSerif naBody98 naNw',12.5)}{text(382,649.95,7,'/','naBookSerif naBody98 naNw',12.5)}{text(390,649.95,7,'H','naBookSerif naBody98 naNw',12.5)}{field('98-7a3',398,641.9,94,'7 Herzlichen')}
   {text(96,667.95,7,'G','naBookSerif naBody98 naNw',12.5)}{field('98-7b1',104,659.9,107,'7 Glückwunsch')}{text(214,667.95,6,'!','naBookSerif naBody98 naNw',12.5)}{text(223,667.95,7,'/','naBookSerif naBody98 naNw',12.5)}{text(231,667.95,8,'A','naBookSerif naBody98 naNw',12.5)}{field('98-7b2',236,659.9,69,'7 Alles')}{text(308,667.95,7,'G','naBookSerif naBody98 naNw',12.5)}{field('98-7b3',316,659.9,68,'7 Gute')}{text(385,667.95,6,'!','naBookSerif naBody98 naNw',12.5)}
