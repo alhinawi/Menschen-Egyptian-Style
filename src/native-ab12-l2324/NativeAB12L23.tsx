@@ -1,5 +1,6 @@
 import './native-ab12-p90.css';
 import {useNativeCanvas,Canvas,Words} from './shared';
+import './native-ab12-p92.css';
 
 import {LineMatching} from '../exercises/LineMatching';
 export function NativeAB12L23({page}:{page:string}){
@@ -620,7 +621,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(439,755,16,'c','naLet92')}{rule(440,790,130)}{rule(440,810,130)}
   {text(438,854,16,'d','naLet92')}{rule(439,887,130)}{rule(439,907,130)}
   {([['92-12b',113,869,'12 b Wunsch'],['92-12c',440,774,'12 c Wunsch'],['92-12d',439,871,'12 d Wunsch']] as const).map(([id,x,y,l])=><textarea key={id} className="naField naLined" aria-label={l} data-native-field={id} style={{left:x,top:y,width:132,['--la-h' as string]:'40px',['--la-lh' as string]:'20px'}} value={c.values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>)}
-  {check('92-12',439,918,{'92-12b':'Ich würde gern jeden Tag grillen|Ich würde gerne jeden Tag grillen','92-12c':'Ich würde gern viel Geld verdienen|Ich würde gerne viel Geld verdienen','92-12d':'Ich würde gern im Wald wohnen|Ich würde gerne im Wald wohnen'})}
+  {check('92-12',439,918,{'92-12b':'Ich würde gern jeden Tag grillen','92-12c':'Ich würde gern viel Geld verdienen','92-12d':'Ich würde gern im Wald wohnen'})}
   {art('modul8-tab',0,1044,52,20)}
   {text(61.3,1047,30,'92','naFootL23B naNw',11)}{text(83.9,1047,6,'|','naFootL23 naNw',12.3)}{text(100.5,1047,110,'zweiundneunzig','naFootL23 naNw',12.3)}
  </>}
