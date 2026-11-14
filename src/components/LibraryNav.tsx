@@ -171,12 +171,12 @@ export function LibraryNav({slug}: {slug: string}) {
                 </div>
               );
             }
-            // Switch straight to the matching Lektion in the other book and
-            // keep the library open after the page loads.
+            // Switch straight to the matching Lektion in the other book.
             return (
               <a key={b.id} className="lnv-bookcard flex gap-3 items-center text-left mx-3.5 mb-2.5 p-2.5 rounded-2xl border-[1.5px] border-[#e4d9bd] bg-white cursor-pointer text-inherit no-underline dark:bg-[#2c342f] dark:border-[#43504a] dark:text-[#e8e2d4]" href={lessonUrl(switchTarget(b.id))}
                 onClick={e => {
                   e.preventDefault();
+                  close();
                   const t = switchTarget(b.id);
                   void navigateLesson(t.slug, String(t.pages[0]));
                 }}>
