@@ -36,7 +36,8 @@ export function LineMatching({id,left,right,values,onMatch,leftX,rightX:baseRigh
  // The left dots must sit in the clear gap after the longest rendered left
  // item. Text width depends on the device font, so measure it instead of
  // trusting leftWidth: a fixed pixel guess puts the dots on top of the words
- // on devices with wider serif metrics.
+ // on devices with wider serif metrics, and an over-wide declared leftWidth
+ // squeezes the dots against the right column (cramped connecting lines).
  const itemRefs=useRef<(HTMLButtonElement|null)[]>([]);
  const [measuredStart,setMeasuredStart]=useState<number|null>(null);
  const start0=useRef<number>(leftX+leftWidth+6);
@@ -45,7 +46,7 @@ export function LineMatching({id,left,right,values,onMatch,leftX,rightX:baseRigh
  const dotLy=(i:number)=>leftDotYs?.[i]??ys[i]+12;
  const dotRx=(j:number)=>rightDotXs?.[j]??end;
  const dotRy=(j:number)=>rightDotYs?.[j]??rightYs[j]+12;
- useLayoutEffect(()=>{const measure=()=>{const el0=root.current;if(!el0)return;const box=el0.getBoundingClientRect();if(box.width<2)return;const scale=width/box.width;let maxText=0;for(const btn of itemRefs.current){if(!btn)continue;const rng=document.createRange();rng.selectNodeContents(btn);for(const r of Array.from(rng.getClientRects()))maxText=Math.max(maxText,(r.right-box.left)*scale);rng.detach()};if(maxText>0)setMeasuredStart(Math.min(Math.max(leftX+leftWidth+6,maxText+8),end-16))};measure();document.fonts?.ready.then(measure);const ro=new ResizeObserver(measure);if(root.current)ro.observe(root.current);return()=>ro.disconnect()},[leftX,leftWidth,width,end,left.length]);
+ useLayoutEffect(()=>{const measure=()=>{const el0=root.current;if(!el0)return;const box=el0.getBoundingClientRect();if(box.width<2)return;const scale=width/box.width;let maxText=0;for(const btn of itemRefs.current){if(!btn)continue;const rng=document.createRange();rng.selectNodeContents(btn);for(const r of Array.from(rng.getClientRects()))maxText=Math.max(maxText,(r.right-box.left)*scale);rng.detach()};if(maxText>0)setMeasuredStart(Math.min(Math.max(leftX+6,maxText+8),end-16))};measure();document.fonts?.ready.then(measure);const ro=new ResizeObserver(measure);if(root.current)ro.observe(root.current);return()=>ro.disconnect()},[leftX,leftWidth,width,end,left.length]);
  const start=measuredStart??leftX+leftWidth+6;
  start0.current=start;
  return <div ref={root} className={'sharedMatching'+(className?' '+className:'')} data-matching={id}>
