@@ -13,7 +13,7 @@
 .naCanvas .naText.naInst{font-family:FiraSans,'Trebuchet MS',sans-serif;font-size:17px;font-weight:normal}
 .naCanvas.naNarrow .naCheck button{font:12px Arial;min-height:20px;padding:1px 9px}
 .naCanvas.naNarrow .naCheck output{font:12px Arial}
-.naCanvas .naBasis{position:absolute;font:600 22px 'Times New Roman',serif;letter-spacing:1px;color:#2b2b2b}
+.naCanvas .naBasis{position:absolute;font:400 22.5px DroidSerif,Georgia,serif;letter-spacing:0.7px;color:#2b2b2b}
 .naCanvas .naRuleP{position:absolute;height:2px;background:#b0467d}
 .naCanvas .naRedL{position:absolute;background:#af0506;color:#fff;font:bold 42px/58px 'Times New Roman',serif;text-align:center}
 .naCanvas .naDots{position:absolute;width:36px;height:14px;background:radial-gradient(circle 6px at 7px 7px,#069fe2 98%,transparent),radial-gradient(circle 6px at 27px 7px,#069fe2 98%,transparent)}
@@ -22,7 +22,7 @@
 .naCanvas .naField.naFieldC{text-align:center}
 .naCanvas .naText.naBankInk{color:#33456e}
 .naCanvas .naTblCell.naTblCellS{font-size:14.3px}
-.naCanvas .naBasisL{position:absolute;font:400 20px 'Times New Roman',serif;letter-spacing:2.5px;color:#6b6b6b}
+.naCanvas .naBasisL{position:absolute;font:400 22.5px DroidSerif,Georgia,serif;letter-spacing:0.7px;color:#6b6b6b}
 .naCanvas.naNarrow .naSide.naSideC{font-size:8px;letter-spacing:1px}
 .naCanvas .naField.naFieldNL{border-bottom:0!important}
 @font-face{font-family:DroidSerif;src:url('/assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}
@@ -34,7 +34,7 @@
 [data-matching="86-12"] .sharedMatchLines circle:nth-of-type(n+5){transform:translateX(-6px)}
 
 /* p87 TRAINING */
-.naCanvas .naTrainHead{position:absolute;font:400 20px 'Times New Roman',serif;letter-spacing:2.5px;color:#4d4d4d;white-space:nowrap}
+.naCanvas .naTrainHead{position:absolute;font:400 22.5px DroidSerif,Georgia,serif;letter-spacing:0.7px;color:#4d4d4d;white-space:nowrap}
 .naCanvas .naVokal{font-family:DroidSerif,Georgia,serif;font-size:13px;color:#555}
 .naCanvas .naBankBlue{position:absolute;font:14px FiraSans,'Trebuchet MS',sans-serif;color:#1d4a90;white-space:nowrap}
 .naCanvas .naStrikeD{position:relative;display:inline}
@@ -53,7 +53,7 @@
 .naCanvas .naTitle.naS15>b{min-width:17px;height:17px;font:bold 12px/17px Georgia;margin-right:9px}
 .naCanvas .naText.naColH{font-family:FiraSans,'Trebuchet MS',sans-serif;font-size:10.5px;color:#333;text-align:center}
 
-.naCanvas .naTestHead{position:absolute;font:400 24px 'Times New Roman',serif;letter-spacing:4px;color:#555;white-space:nowrap}
+.naCanvas .naTestHead{position:absolute;font:400 22.5px DroidSerif,Georgia,serif;letter-spacing:0;color:#555;white-space:nowrap}
 .naCanvas .naSideT{position:absolute;font:11px FiraSans,sans-serif;letter-spacing:1.5px;writing-mode:vertical-rl;transform:rotate(180deg);color:#717b9c;white-space:nowrap}
 .naCanvas .naText.naCue{font-family:DroidSerif,Georgia,serif;font-size:11px;color:#444}
 .naCanvas .naText.naFootL23{font-family:DroidSerif,Georgia,serif!important;color:#4b4b4d;letter-spacing:0!important}
@@ -136,7 +136,7 @@
 [data-native-ab12="92"] .naRule{border-bottom:1px solid #c4c4c8}
 .naCanvas .naText.naLet92{font:400 14px DroidSerif,Georgia,serif;letter-spacing:0;color:#1a1a1a}
 [data-native-ab12="92"] .naTitle.naRB b{background:#f96906;min-width:26px;width:26px;height:18px;line-height:18px;font:600 16px/18px FiraSans,sans-serif;margin-right:8px;position:relative;top:-3px;box-shadow:inset 0 2px 0 #c02838,inset 2px 0 0 #c02838}
-[data-native-ab12="92"] .naBasisL{font-size:25.5px;font-weight:400;letter-spacing:-0.9px;color:#4e4d44}
+[data-native-ab12="92"] .naBasisL{color:#4e4d44}
 .naCanvas .naStrike92{text-decoration:line-through}
 [data-native-ab12="92"] .naBank92{font-size:13px;color:#2b3a73}
 .naCanvas .naText.naEx10r{font-size:13.1px!important}
@@ -187,7 +187,7 @@
 [data-native-ab12="94"] .naSDY{background:#e4d725}
 [data-native-ab12="94"] .naSDG{background:#69ba26}
 [data-native-ab12="94"] .naCanvas .naText.naScoreH94{font:700 12.6px DroidSerif,Georgia,serif;color:#14100c}
-[data-native-ab12="94"] .naTestHead94{letter-spacing:1px}
+[data-native-ab12="94"] .naTestHead94{letter-spacing:0}
 [data-native-ab12="94"] .naCanvas .naText.naScoreR94{font:12px DroidSerif,Georgia,serif;color:#2c2e2d}
 [data-native-ab12="94"] .naCanvas .naText.naCue94{font-family:DroidSerif,Georgia,serif;color:#252723;letter-spacing:0;white-space:nowrap}
 [data-native-ab12="94"] .naCanvas .naText.naCue94 span[role=button]{padding:0}
@@ -380,3 +380,4 @@
 [data-native-ab12="104"] .naCanvas .naText.naFoot104{font-family:PalSerif,Palatino,Georgia,serif;font-weight:400;font-size:13.5px;color:#111213}
 
 .naCanvas .naText.naAF93{font-size:14px}
+[data-native-ab12="87"] .naTrain87s{letter-spacing:0}
