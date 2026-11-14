@@ -1962,9 +1962,9 @@ export function NativeAB12P31to46({page}:{page:string}){
   <div className="naSide naSide46" style={{left:85,top:364}}>STRUKTUREN</div>
   <div className="naSide naSide46" style={{left:87,top:648}}>STRUKTUREN</div>
   <div className="naSide naSide46" style={{left:88,top:881}}>KOMMUNIKATION</div>
-  {check('46-1',1000,252,{'p46-1b':'Rücken|ücken','p46-1c':'Augen|ugen','p46-1d':'Beine|eine','p46-1e':'Füße|üße','p46-1f':'Hände|ände','p46-1g':'Ohren|hren','p46-1h':'Finger|inger'})}
-  {check('46-2',1000,568,{'p46-2b':'Nehmen Sie eine Tablette und trinken Sie viel Tee.','p46-2c':'Bleiben Sie zu Hause und sagen Sie alle Termine ab.','p46-2d':'Essen Sie Obst und machen Sie Sport.'})}
-  {check('46-3',1000,765,{'p46-3b':'sollt','p46-3c':'soll','p46-3d':'Soll|soll','p46-3e':'sollen','p46-3f':'sollst'})}
+  {check('46-1',952,305,{'p46-1b':'Rücken|ücken','p46-1c':'Augen|ugen','p46-1d':'Beine|eine','p46-1e':'Füße|üße','p46-1f':'Hände|ände','p46-1g':'Ohren|hren','p46-1h':'Finger|inger'})}
+  {check('46-2',952,577,{'p46-2b':'Nehmen Sie eine Tablette und trinken Sie viel Tee.','p46-2c':'Bleiben Sie zu Hause und sagen Sie alle Termine ab.','p46-2d':'Essen Sie Obst und machen Sie Sport.'})}
+  {check('46-3',952,826,{'p46-3b':'sollt','p46-3c':'soll','p46-3d':'Soll|soll','p46-3e':'sollen','p46-3f':'sollst'})}
  </>}
  </div><audio ref={player} className="naPlayer"/></div>;
 }
