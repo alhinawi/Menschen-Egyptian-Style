@@ -2,6 +2,7 @@
 // Printed content = the page's images (ink pixels) plus tappable words, fields and other controls.
 type Rect={left:number;top:number;right:number;bottom:number};
 const RESERVED_LABEL=96; // CSS px reserved right of the button for "Noch einmal"
+const STACK_LABEL=26; // CSS px reserved below the button when the label stacks (data-check-layout="stack")
 const STEP=6,RADIUS=260,INK_LIMIT=0.015,SCALE=0.5;
 function rectOf(e:Element):Rect{const r=e.getBoundingClientRect();return {left:r.left,top:r.top,right:r.right,bottom:r.bottom}}
 function hit(a:Rect,b:Rect){return a.left<b.right&&a.right>b.left&&a.top<b.bottom&&a.bottom>b.top}
@@ -33,7 +34,8 @@ export function placeCheck(button:HTMLButtonElement){
  box.style.translate='';
  const bt=rectOf(button),pr=rectOf(page),scale=bt.right-bt.left>0?(bt.right-bt.left)/(button.offsetWidth||1):1;
  const boxR=rectOf(box);
- const w=Math.max(boxR.right-boxR.left,bt.right-bt.left+RESERVED_LABEL*scale),h=Math.max(boxR.bottom-boxR.top,bt.bottom-bt.top);
+ const stacked=box.dataset.checkLayout==='stack';
+ const w=Math.max(boxR.right-boxR.left,bt.right-bt.left+(stacked?0:RESERVED_LABEL*scale)),h=Math.max(boxR.bottom-boxR.top,bt.bottom-bt.top+(stacked?STACK_LABEL*scale:0));
  const ink=inkGrid(page,pr,box);
  const obstacles:Rect[]=[];
  for(const e of page.querySelectorAll('.tapWord,.nativeWord,input,select,textarea,button,output,[data-native-field]')){
