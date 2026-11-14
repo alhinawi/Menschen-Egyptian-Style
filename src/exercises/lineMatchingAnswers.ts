@@ -25,7 +25,7 @@
  * not routed in any lesson yet; they are keyed by their target page so the
  * map is ready when the page goes live.
  */
-export const lineMatchingAnswers: Record<string, string[]> = {
+export const lineMatchingAnswers: Record<string, (string | null)[]> = {
   // ---- Kursbuch A1.1 ----
   // p10, L1 3a (Hören): Paco/Nicole -> Herkunft. Key: L1 Kursbuch 3a.
   // Paco: "Du kommst aus Deutschland, hm?" (2), "Aus der Schweiz?" (3) + Beispiel "Nein, ich komme aus Mexiko." (1)
@@ -124,8 +124,13 @@ export const lineMatchingAnswers: Record<string, string[]> = {
   'ab-a12:96:task3l': ['1', '3', '', ''],
   'ab-a12:96:task3r': ['', '', '0', '3'],
   // p96, WIP native twins (NativeAB12L24, not routed; p96 renders via HybridScan). Same exercise, same keys.
-  'ab-a12:96:96-3l': ['1', '3', '', ''],
-  'ab-a12:96:96-3r': ['', '', '0', '3'],
+  // Official Hueber key (AB A1.2, Wiederholungsstation Wortschatz, Aufgabe 3):
+  // "b Nein, es ist warm. c Ja, es sind 27 Grad. d Nein, aber es donnert und blitzt."
+  // a-Nein -> schneit is the book's printed worked example (line inked on the page), so
+  // the a rows are not interactive. null = the key is silent for the row: connections stay
+  // neutral (ungraded), never red. 96-3lb rows are [b-Ja, b-Nein]; 96-3r rows are [c-Ja, c-Nein, d-Ja, d-Nein].
+  'ab-a12:96:96-3lb': [null, '3'],
+  'ab-a12:96:96-3r': ['0', null, null, '3'],
 };
 
 /**
