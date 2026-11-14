@@ -151,4 +151,4 @@
 
 .nativeKB12:is([data-native-kb12="85"],[data-native-kb12="87"]) .nkActionSwooshB{position:absolute;left:1080px;top:41px;width:20px;height:85px;background:#a64a34}
 .nativeKB12:is([data-native-kb12="85"],[data-native-kb12="87"]) .nkActionSwooshA{position:absolute;left:989px;top:47px;width:90px;height:79px;background:#a02d0f}
-.nativeKB12:is([data-native-kb12="85"],[data-native-kb12="87"]) .nkModule{color:#3f3c2f;letter-spacing:6px}
+.nativeKB12:is([data-native-kb12="73"],[data-native-kb12="75"],[data-native-kb12="77"],[data-native-kb12="79"],[data-native-kb12="81"],[data-native-kb12="83"],[data-native-kb12="85"],[data-native-kb12="87"]) .nkModule{color:#3f3c2f;letter-spacing:6px}
