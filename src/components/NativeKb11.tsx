@@ -9,6 +9,7 @@ import {KB11P31GlassesPaint} from './KB11P31GlassesPaint';
 import {KB11P29Marking} from './KB11P29Marking';
 import {ClipMarkers} from './ClipMarkers';
 import {useLayoutEffect,useRef,useState} from 'react';
+import {createPortal} from 'react-dom';
 import type {CSSProperties} from 'react';
 import './native-kb11.css';
 import {kb11Pages} from '../native-kb11/registry';
@@ -29,7 +30,8 @@ export function NativeKb11({page}:{page:string}){
 }
 function Inner({data}:{data:NativePage}){
  const key='native-kb11-'+data.page;
- const [v,setV]=useState<Record<string,string>>(()=>{try{const saved=localStorage.getItem(key);if(saved)return JSON.parse(saved);if(String(data.page)==='42'){const old=JSON.parse(localStorage.getItem('native-pilot-kb11-42')||'{}');const next={...old};['gitarre','tanzen','tennis'].forEach((name,i)=>{if(old['kompliment'+(i+1)])next['t4a-'+name]=old['kompliment'+(i+1)]});for(let i=0;i<5;i++)if(old['skala'+i])next['t6a-'+(i+1)]=old['skala'+i];return next}return {}}catch{return {}}});
+ const [open36,setOpen36]=useState(false);
+   const [v,setV]=useState<Record<string,string>>(()=>{try{const saved=localStorage.getItem(key);if(saved)return JSON.parse(saved);if(String(data.page)==='42'){const old=JSON.parse(localStorage.getItem('native-pilot-kb11-42')||'{}');const next={...old};['gitarre','tanzen','tennis'].forEach((name,i)=>{if(old['kompliment'+(i+1)])next['t4a-'+name]=old['kompliment'+(i+1)]});for(let i=0;i<5;i++)if(old['skala'+i])next['t6a-'+(i+1)]=old['skala'+i];return next}return {}}catch{return {}}});
  const [res,setRes]=useState<Record<string,boolean>>({});
  const players=useRef<Record<string,HTMLAudioElement|null>>({});
  const W=data.w,H=data.h;
@@ -77,13 +79,19 @@ function Inner({data}:{data:NativePage}){
     const optA=['Brenner IT-Consulting.','Schmidt.','Christian Schmidt.'];
     const optB=['Guten Tag, hier ist Marlene Neumann.','Hallo, hier ist Marlene.'];
     const optV=['Tschüs.','Auf Wiederhören.'];
-    const cell=(id:string,x:number,w:number,opts:string[])=><select key={id} className="nkbField nkb36Cell" aria-label={id} value={v[id]||''} onChange={e=>set(id,e.target.value)} style={{...pos(x,439,w,20),fontSize:10.5/W*100+'cqw'}}><option value="">…</option>{opts.map(o=><option key={o} value={o}>{o}</option>)}</select>;
+    const cell=(id:string,opts:string[])=><select key={id} className="nkb36Cell" aria-label={id} value={v[id]||''} onChange={e=>set(id,e.target.value)}><option value="">…</option>{opts.map(o=><option key={o} value={o}>{o}</option>)}</select>;
     const ok=['t9a-a1','t9a-a2','t9a-a3'].every((k,ix)=>v[k]===optA[ix])&&['t9a-b1','t9a-b2'].every((k,ix)=>v[k]===optB[ix])&&['t9a-v1','t9a-v2'].every((k,ix)=>v[k]===optV[ix]);
+    const grp=(label:string,ids:string[],opts:string[])=><div className="nkb36Group" key={label}><div className="nkb36GroupLabel">{label}</div>{ids.map(id=>cell(id,opts))}</div>;
     return <>
-     {cell('t9a-a1',161,82,optA)}{cell('t9a-a2',247,82,optA)}{cell('t9a-a3',333,82,optA)}
-     {cell('t9a-b1',370,88,optB)}{cell('t9a-b2',462,88,optB)}
-     {cell('t9a-v1',570,88,optV)}{cell('t9a-v2',665,88,optV)}
-     <div className="nkbCheck nkbCheckLm" style={{...pos(480,188,120,26),position:'absolute',zIndex:9}}><CheckButton onClick={()=>setRes(r=>({...r,task9a:ok}))}></CheckButton><output>{res.task9a===undefined?'':res.task9a?'✓ Richtig!':'Noch einmal'}</output></div>
+     <button type="button" className="nkb36Open" onClick={()=>setOpen36(true)}>Eintragen ✎</button>
+     {open36&&createPortal(<><div className="nkb36BackdropF" onClick={()=>setOpen36(false)}/>
+      <div className="nkb36PanelF" role="dialog" aria-label="9a Eintragen">
+       <button type="button" className="nkb36Close" aria-label="Schließen" onClick={()=>setOpen36(false)}>×</button>
+       {grp('sich melden (Person A)',['t9a-a1','t9a-a2','t9a-a3'],optA)}
+       {grp('sich melden (Person B)',['t9a-b1','t9a-b2'],optB)}
+       {grp('sich verabschieden',['t9a-v1','t9a-v2'],optV)}
+       <div className="nkbCheck nkbCheckLm nkb36Check"><CheckButton onClick={()=>setRes(r=>({...r,task9a:ok}))}></CheckButton><output>{res.task9a===undefined?'':res.task9a?'✓ Richtig!':'Noch einmal'}</output></div>
+      </div></>,document.body)}
     </>;
    })()}
    {String(data.page)==='25'&&(()=>{const set0=(k:string)=>(v[k]||'').split(',').filter(Boolean).sort().join(',');const ok=set0('t2a-0')==='0'&&set0('t2a-1')==='0,1'&&set0('t2b-0')==='0,1,2,4'&&set0('t2b-1')==='3';return <><div style={{...pos(150,972,350,112),background:'#fdfcf8',position:'absolute',zIndex:8}}/><LineMatching id="t2a" left={['Sibylle sagt,','Artur sagt,']} right={['der Tisch ist','das Bett ist']} values={v} onMatch={set} leftX={166} rightX={245} leftWidth={80} rightWidth={125} ys={[975,995]} rightDotXs={[278,278]} width={W} height={H} fontSize={15} example={[0,0]} multiple/><div className="lmHideLeft"><LineMatching id="t2b" left={['der Tisch ist','das Bett ist']} right={['zu groß.','schön.','modern.','nicht schlecht.','praktisch.']} values={v} onMatch={set} leftX={285} rightX={370} leftWidth={84} rightWidth={150} ys={[975,995]} rightYs={[975,995,1015,1035,1055]} leftDotXs={[377,377]} rightDotXs={[403,403,403,403,403]} width={W} height={H} fontSize={14} example={[0,1]} multiple/></div><div className="nkbCheck nkbCheckLm" style={{left:'19.5%',top:'90.3%'}}><CheckButton onClick={()=>setRes(r=>({...r,t2:ok}))}></CheckButton><output>{res.t2===undefined?'':res.t2?'✓ Richtig!':'Noch einmal'}</output></div></>})()}
