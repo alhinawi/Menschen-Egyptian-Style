@@ -147,3 +147,4 @@
 @font-face{font-family:KBDroidSansText;src:url('/assets/fonts/droid-sans-700.woff2') format('woff2');font-weight:700;font-display:swap}
 .nkCanvas .nkBookSans{font-family:KBDroidSansText,Arial,sans-serif}
 .nkCanvas .nkIt{font-style:italic}
+.nkCanvas .nkLblBlue::first-letter{color:#405d98}
