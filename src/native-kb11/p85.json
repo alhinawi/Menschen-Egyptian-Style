@@ -1,1 +1,1153 @@
-{"blocks":[{"x":182,"w":200,"cy":282.0,"f":20.6,"b":1,"sa":0,"ws":[{"t":"Nach","c":"#201f1d","ph":"Nach Wörtern fragen"},{"t":"Wörtern","c":"#201f1d","ph":"Nach Wörtern fragen"},{"t":"fragen","c":"#201f1d","ph":"Nach Wörtern fragen"}]},{"x":222,"w":337,"cy":317.0,"f":19.0,"b":1,"sa":1,"ws":[{"t":"Wählen","c":"#201f1d","ph":"a Wählen Sie eine Rolle und sprechen Sie."},{"t":"Sie","c":"#201f1d","ph":"a Wählen Sie eine Rolle und sprechen Sie."},{"t":"eine","c":"#201f1d","ph":"a Wählen Sie eine Rolle und sprechen Sie."},{"t":"Rolle","c":"#201f1d","ph":"a Wählen Sie eine Rolle und sprechen Sie."},{"t":"und","c":"#201f1d","ph":"a Wählen Sie eine Rolle und sprechen Sie."},{"t":"sprechen","c":"#201f1d","ph":"a Wählen Sie eine Rolle und sprechen Sie."},{"t":"Sie.","c":"#201f1d","ph":"a Wählen Sie eine Rolle und sprechen Sie."}]},{"x":240,"w":203,"cy":1049.5,"f":18.2,"b":1,"sa":1,"ws":[{"t":"Tauschen","c":"#201f1d","ph":"b Tauschen Sie die Rollen."},{"t":"Sie","c":"#201f1d","ph":"b Tauschen Sie die Rollen."},{"t":"die","c":"#201f1d","ph":"b Tauschen Sie die Rollen."},{"t":"Rollen.","c":"#201f1d","ph":"b Tauschen Sie die Rollen."}]},{"x":270,"w":149,"cy":368.2,"f":20.9,"b":0,"sa":0,"ws":[{"t":"Wählen","c":"#201f1d"},{"t":"Sie","c":"#201f1d"},{"t":"einen","c":"#201f1d"}]},{"x":238,"w":184,"cy":829.0,"f":15.4,"b":0,"sa":0,"ws":[{"t":"So","c":"#201f1d","ph":"So sprechen Sie das Wort:"},{"t":"sprechen","c":"#201f1d","ph":"So sprechen Sie das Wort:"},{"t":"Sie","c":"#201f1d","ph":"So sprechen Sie das Wort:"},{"t":"das","c":"#201f1d","ph":"So sprechen Sie das Wort:"},{"t":"Wort:","c":"#201f1d","ph":"So sprechen Sie das Wort:"}]},{"x":246,"w":17,"cy":868.2,"f":16.5,"b":0,"sa":0,"ws":[{"t":"der","c":"#201f1d","ph":"der Ring [rɪŋ]; -[e]s, -e: 1. gleichmäßig runder,"}],"sb":1},{"x":304,"w":240,"cy":868.2,"f":16.5,"b":0,"sa":0,"ws":[{"t":"[rɪŋ];","c":"#201f1d","ph":"der Ring [rɪŋ]; -[e]s, -e: 1. gleichmäßig runder,"},{"t":"-[e]s,","c":"#201f1d","ph":"der Ring [rɪŋ]; -[e]s, -e: 1. gleichmäßig runder,"},{"t":"-e:","c":"#201f1d","ph":"der Ring [rɪŋ]; -[e]s, -e: 1. gleichmäßig runder,"},{"t":"1.","c":"#201f1d","ph":"der Ring [rɪŋ]; -[e]s, -e: 1. gleichmäßig runder,"},{"t":"gleichmäßig","c":"#201f1d","ph":"der Ring [rɪŋ]; -[e]s, -e: 1. gleichmäßig runder,"},{"t":"runder,","c":"#201f1d","ph":"der Ring [rɪŋ]; -[e]s, -e: 1. gleichmäßig runder,"}],"sb":1},{"x":251,"w":229,"cy":530.0,"f":21.3,"b":0,"sa":0,"ws":[{"t":"Entschuldigung.","c":"#201f1d","ph":"Entschuldigung. Wie heißt"},{"t":"Wie","c":"#201f1d","ph":"Entschuldigung. Wie heißt"},{"t":"heißt","c":"#201f1d","ph":"Entschuldigung. Wie heißt"}]},{"x":251,"w":143,"cy":558.0,"f":20.3,"b":0,"sa":0,"ws":[{"t":"das","c":"#201f1d","ph":"das auf Deutsch?"},{"t":"auf","c":"#201f1d","ph":"das auf Deutsch?"},{"t":"Deutsch?","c":"#201f1d","ph":"das auf Deutsch?"}]},{"x":252,"w":271,"cy":607.5,"f":21.5,"b":0,"sa":0,"ws":[{"t":"Wie","c":"#201f1d"},{"t":"bitte?","c":"#201f1d"},{"t":"/","c":"#201f1d"},{"t":"Noch","c":"#201f1d"},{"t":"einmal,","c":"#201f1d"},{"t":"bitte.","c":"#201f1d"}]},{"x":254,"w":203,"cy":658.8,"f":18.6,"b":0,"sa":0,"ws":[{"t":"Wie","c":"#201f1d","ph":"Wie schreibt man Ring?"},{"t":"schreibt","c":"#201f1d","ph":"Wie schreibt man Ring?"},{"t":"man","c":"#201f1d","ph":"Wie schreibt man Ring?"},{"t":"Ring?","c":"#201f1d","ph":"Wie schreibt man Ring?"}]},{"x":256,"w":57,"cy":709.5,"f":19.9,"b":0,"sa":0,"ws":[{"t":"Danke.","c":"#201f1d"}]},{"x":270,"w":169,"cy":395.8,"f":20.8,"b":0,"sa":0,"ws":[{"t":"Gegenstand.","c":"#201f1d","ph":"Gegenstand. Fragen"},{"t":"Fragen","c":"#201f1d","ph":"Gegenstand. Fragen"}]},{"x":271,"w":156,"cy":418.8,"f":21.0,"b":0,"sa":0,"ws":[{"t":"Sie","c":"#201f1d"},{"t":"Ihre","c":"#201f1d"},{"t":"Partnerin","c":"#201f1d"}]},{"x":271,"w":195,"cy":468.8,"f":21.1,"b":0,"sa":0,"ws":[{"t":"heißt","c":"#201f1d","ph":"heißt das auf Deutsch?"},{"t":"das","c":"#201f1d","ph":"heißt das auf Deutsch?"},{"t":"auf","c":"#201f1d","ph":"heißt das auf Deutsch?"},{"t":"Deutsch?","c":"#201f1d","ph":"heißt das auf Deutsch?"}]},{"x":272,"w":162,"cy":444.5,"f":19.7,"b":0,"sa":0,"ws":[{"t":"Ihren","c":"#201f1d","ph":"Ihren Partner: Wie"},{"t":"Partner:","c":"#201f1d","ph":"Ihren Partner: Wie"},{"t":"Wie","c":"#201f1d","ph":"Ihren Partner: Wie"}]},{"x":283,"w":260,"cy":885.2,"f":16.5,"b":0,"sa":0,"ws":[{"t":"in","c":"#201f1d","ph":"in sich geschlossener Gegenstand in der"},{"t":"sich","c":"#201f1d","ph":"in sich geschlossener Gegenstand in der"},{"t":"geschlossener","c":"#201f1d","ph":"in sich geschlossener Gegenstand in der"},{"t":"Gegenstand","c":"#201f1d","ph":"in sich geschlossener Gegenstand in der"},{"t":"in","c":"#201f1d","ph":"in sich geschlossener Gegenstand in der"},{"t":"der","c":"#201f1d","ph":"in sich geschlossener Gegenstand in der"}],"sb":1},{"x":283,"w":267,"cy":902.8,"f":16.5,"b":0,"sa":0,"ws":[{"t":"Form","c":"#201f1d","ph":"Form eines Kreises: einen goldenen Ring"},{"t":"eines","c":"#201f1d","ph":"Form eines Kreises: einen goldenen Ring"},{"t":"Kreises:","c":"#201f1d","ph":"Form eines Kreises: einen goldenen Ring"},{"t":"einen","c":"#201f1d","ph":"Form eines Kreises: einen goldenen Ring"},{"t":"goldenen","c":"#201f1d","ph":"Form eines Kreises: einen goldenen Ring"},{"t":"Ring","c":"#201f1d","ph":"Form eines Kreises: einen goldenen Ring"}],"sb":1},{"x":284,"w":113,"cy":922.0,"f":16.5,"b":0,"sa":0,"ws":[{"t":"am","c":"#201f1d","ph":"am Finger tragen. Zus.: Armring, Dich-"},{"t":"Finger","c":"#201f1d","ph":"am Finger tragen. Zus.: Armring, Dich-"},{"t":"tragen.","c":"#201f1d","ph":"am Finger tragen. Zus.: Armring, Dich-"}],"sb":1},{"x":440,"w":101,"cy":922.0,"f":16.5,"b":0,"sa":0,"ws":[{"t":"Armring,","c":"#201f1d","ph":"am Finger tragen. Zus.: Armring, Dich-"},{"t":"Dich-","c":"#201f1d","ph":"am Finger tragen. Zus.: Armring, Dich-"}],"sb":1},{"x":284,"w":244,"cy":940.5,"f":16.5,"b":0,"sa":0,"ws":[{"t":"tungsring,","c":"#201f1d","ph":"tungsring, Fingerring, Gardinenring,"},{"t":"Fingerring,","c":"#201f1d","ph":"tungsring, Fingerring, Gardinenring,"},{"t":"Gardinenring,","c":"#201f1d","ph":"tungsring, Fingerring, Gardinenring,"}],"sb":1},{"x":284,"w":262,"cy":955.8,"f":16.5,"b":0,"sa":0,"ws":[{"t":"Goldring,","c":"#201f1d","ph":"Goldring, Gummiring, Metallring, Ohr-"},{"t":"Gummiring,","c":"#201f1d","ph":"Goldring, Gummiring, Metallring, Ohr-"},{"t":"Metallring,","c":"#201f1d","ph":"Goldring, Gummiring, Metallring, Ohr-"},{"t":"Ohr-","c":"#201f1d","ph":"Goldring, Gummiring, Metallring, Ohr-"}],"sb":1},{"x":285,"w":200,"cy":975.0,"f":16.5,"b":0,"sa":0,"ws":[{"t":"ring,","c":"#201f1d","ph":"ring, Schlüsselring, Silberring."},{"t":"Schlüsselring,","c":"#201f1d","ph":"ring, Schlüsselring, Silberring."},{"t":"Silberring.","c":"#201f1d","ph":"ring, Schlüsselring, Silberring."}],"sb":1},{"x":608,"w":137,"cy":576.2,"f":20.3,"b":0,"sa":0,"ws":[{"t":"Das","c":"#201f1d","ph":"Das ist ein Ring."},{"t":"ist","c":"#201f1d","ph":"Das ist ein Ring."},{"t":"ein","c":"#201f1d","ph":"Das ist ein Ring."},{"t":"Ring.","c":"#201f1d","ph":"Das ist ein Ring."}]},{"x":609,"w":137,"cy":624.5,"f":19.3,"b":0,"sa":0,"ws":[{"t":"Das","c":"#201f1d","ph":"Das ist ein Ring."},{"t":"ist","c":"#201f1d","ph":"Das ist ein Ring."},{"t":"ein","c":"#201f1d","ph":"Das ist ein Ring."},{"t":"Ring.","c":"#201f1d","ph":"Das ist ein Ring."}]},{"x":610,"w":66,"cy":676.5,"f":19.5,"b":0,"sa":0,"ws":[{"t":"R-I-N-G.","c":"#201f1d"}]},{"x":611,"w":19,"cy":364.5,"f":26.3,"b":0,"sa":0,"ws":[{"t":"B","c":"#201f1d"}]},{"x":612,"w":94,"cy":724.5,"f":20.0,"b":0,"sa":0,"ws":[{"t":"Bitteschön.","c":"#201f1d","ph":"Bitteschön. / Bitte. (Gern.) / Kein"}]},{"x":729,"w":110,"cy":724.5,"f":20.0,"b":0,"sa":0,"ws":[{"t":"Bitte.","c":"#201f1d","ph":"Bitteschön. / Bitte. (Gern.) / Kein"},{"t":"(Gern.)","c":"#201f1d","ph":"Bitteschön. / Bitte. (Gern.) / Kein"}]},{"x":862,"w":37,"cy":724.5,"f":20.0,"b":0,"sa":0,"ws":[{"t":"Kein","c":"#201f1d","ph":"Bitteschön. / Bitte. (Gern.) / Kein"}]},{"x":612,"w":74,"cy":752.0,"f":20.3,"b":0,"sa":0,"ws":[{"t":"Problem.","c":"#201f1d"}]},{"x":649,"w":109,"cy":384.5,"f":19.9,"b":0,"sa":0,"ws":[{"t":"Sehen","c":"#201f1d","ph":"Sehen Sie im"},{"t":"Sie","c":"#201f1d","ph":"Sehen Sie im"},{"t":"im","c":"#201f1d","ph":"Sehen Sie im"}]},{"x":649,"w":149,"cy":408.8,"f":21.5,"b":0,"sa":0,"ws":[{"t":"Wörterbuch","c":"#201f1d","ph":"Wörterbuch nach"},{"t":"nach","c":"#201f1d","ph":"Wörterbuch nach"}]},{"x":650,"w":164,"cy":436.0,"f":19.0,"b":0,"sa":0,"ws":[{"t":"und","c":"#201f1d","ph":"und antworten Sie."},{"t":"antworten","c":"#201f1d","ph":"und antworten Sie."},{"t":"Sie.","c":"#201f1d","ph":"und antworten Sie."}]},{"x":924,"w":121,"cy":1440.0,"f":20.0,"b":0,"sa":0,"ws":[{"t":"fünfundachtzig","c":"#201f1d"}]},{"x":231,"cy":367,"w":25,"f":30,"ws":[{"t":"A"}],"b":0,"sa":0}],"checks":{},"book":"kb-a11","page":85,"w":1072,"h":1517,"words":[{"t":"a","x":192,"y":318,"w":8,"h":10,"r":0,"ph":"a Wählen Sie eine Rolle und sprechen Sie.","l":1},{"t":"/","x":433,"y":410,"w":8,"h":17,"ph":"Sie Ihre Partnerin /","l":12},{"t":"/","x":344,"y":601,"w":8,"h":17,"ph":"Wie bitte? / Noch einmal, bitte.","l":8},{"t":"Ring","x":269,"y":862,"w":27,"h":14,"r":0,"ph":"der Ring [rɪŋ]; -[e]s, -e: 1. gleichmäßig runder,","l":5},{"t":"Zus.:","x":402,"y":913,"w":28,"h":13,"r":0,"ph":"am Finger tragen. Zus.: Armring, Dich-","l":17},{"t":"b","x":210,"y":1044,"w":9,"h":15,"r":0,"ph":"b Tauschen Sie die Rollen.","l":2},{"t":"AKTIONSSEITEN","x":694,"y":147,"w":316,"h":34,"l":30},{"t":"/","x":713,"y":719,"w":9,"h":16,"ph":"Bitteschön. / Bitte. (Gern.) / Kein","l":25},{"t":"/","x":846,"y":716,"w":9,"h":16,"ph":"Bitteschön. / Bitte. (Gern.) / Kein","l":25}],"art":[{"src":"assets/book-crops/kb11-p85-0.webp","x":0,"y":0,"w":1072,"h":1517},{"src":"assets/book-crops/kb11-p85-1.webp","x":694,"y":105,"w":378,"h":79},{"src":"assets/book-crops/kb11-p85-2.webp","x":114,"y":226,"w":209,"h":30},{"src":"assets/book-crops/kb11-p85-3.webp","x":599,"y":340,"w":262,"h":149},{"src":"assets/book-crops/kb11-p85-4.webp","x":220,"y":350,"w":261,"h":148},{"src":"assets/book-crops/kb11-p85-5.webp","x":227,"y":530,"w":11,"h":12},{"src":"assets/book-crops/kb11-p85-6.webp","x":539,"y":560,"w":62,"h":175},{"src":"assets/book-crops/kb11-p85-7.webp","x":229,"y":606,"w":11,"h":12},{"src":"assets/book-crops/kb11-p85-8.webp","x":230,"y":656,"w":11,"h":12},{"src":"assets/book-crops/kb11-p85-9.webp","x":586,"y":810,"w":341,"h":158},{"src":"assets/book-crops/kb11-p85-10.webp","x":225,"y":851,"w":274,"h":139},{"src":"assets/book-crops/kb11-p85-11.webp","x":511,"y":874,"w":59,"h":110},{"src":"assets/book-crops/kb11-p85-12.webp","x":399,"y":913,"w":37,"h":13},{"src":"assets/book-crops/kb11-p85-border.webp","x":230,"y":845,"w":350,"h":150}],"paper":"#ffffff","fields":[],"audio":[],"review":{"status":"verified","notes":["All printed words reviewed against the scan; arrow glyphs between the question and answer columns, ▲/■ bullet glyphs and the small arrow before the dictionary box excluded.","Second answer line \"Das ist ein Ring.\" was OCR-merged (Dasistein); split and verified manually.","Dictionary entry \"der Ring [rɪŋ]; -[e]s, -e: 1. gleichmäßig runder, ...\" verified on the scan; merged token 1.gleichmäßig split.","Partner card letters A/B kept (B missed by OCR, added from scan); task badges a/b kept.","Partner exercise with open answers (a: choose an object and ask; b: swap roles): no fields. No audio marker printed.","Header/footer chrome (KB | S. 31, Lektion 6d tab, page numeral) excluded; footer word fünfundachtzig kept."],"verifiedWords":118}}
+{
+ "blocks": [
+  {
+   "x": 182,
+   "w": 200,
+   "cy": 282.0,
+   "f": 20.6,
+   "b": 1,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Nach",
+     "c": "#201f1d",
+     "ph": "Nach Wörtern fragen"
+    },
+    {
+     "t": "Wörtern",
+     "c": "#201f1d",
+     "ph": "Nach Wörtern fragen"
+    },
+    {
+     "t": "fragen",
+     "c": "#201f1d",
+     "ph": "Nach Wörtern fragen"
+    }
+   ]
+  },
+  {
+   "x": 222,
+   "w": 337,
+   "cy": 317.0,
+   "f": 19.0,
+   "b": 1,
+   "sa": 1,
+   "ws": [
+    {
+     "t": "Wählen",
+     "c": "#201f1d",
+     "ph": "a Wählen Sie eine Rolle und sprechen Sie."
+    },
+    {
+     "t": "Sie",
+     "c": "#201f1d",
+     "ph": "a Wählen Sie eine Rolle und sprechen Sie."
+    },
+    {
+     "t": "eine",
+     "c": "#201f1d",
+     "ph": "a Wählen Sie eine Rolle und sprechen Sie."
+    },
+    {
+     "t": "Rolle",
+     "c": "#201f1d",
+     "ph": "a Wählen Sie eine Rolle und sprechen Sie."
+    },
+    {
+     "t": "und",
+     "c": "#201f1d",
+     "ph": "a Wählen Sie eine Rolle und sprechen Sie."
+    },
+    {
+     "t": "sprechen",
+     "c": "#201f1d",
+     "ph": "a Wählen Sie eine Rolle und sprechen Sie."
+    },
+    {
+     "t": "Sie.",
+     "c": "#201f1d",
+     "ph": "a Wählen Sie eine Rolle und sprechen Sie."
+    }
+   ]
+  },
+  {
+   "x": 240,
+   "w": 203,
+   "cy": 1049.5,
+   "f": 18.2,
+   "b": 1,
+   "sa": 1,
+   "ws": [
+    {
+     "t": "Tauschen",
+     "c": "#201f1d",
+     "ph": "b Tauschen Sie die Rollen."
+    },
+    {
+     "t": "Sie",
+     "c": "#201f1d",
+     "ph": "b Tauschen Sie die Rollen."
+    },
+    {
+     "t": "die",
+     "c": "#201f1d",
+     "ph": "b Tauschen Sie die Rollen."
+    },
+    {
+     "t": "Rollen.",
+     "c": "#201f1d",
+     "ph": "b Tauschen Sie die Rollen."
+    }
+   ]
+  },
+  {
+   "x": 270,
+   "w": 149,
+   "cy": 368.2,
+   "f": 20.9,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Wählen",
+     "c": "#201f1d"
+    },
+    {
+     "t": "Sie",
+     "c": "#201f1d"
+    },
+    {
+     "t": "einen",
+     "c": "#201f1d"
+    }
+   ]
+  },
+  {
+   "x": 238,
+   "w": 184,
+   "cy": 829.0,
+   "f": 15.4,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "So",
+     "c": "#201f1d",
+     "ph": "So sprechen Sie das Wort:"
+    },
+    {
+     "t": "sprechen",
+     "c": "#201f1d",
+     "ph": "So sprechen Sie das Wort:"
+    },
+    {
+     "t": "Sie",
+     "c": "#201f1d",
+     "ph": "So sprechen Sie das Wort:"
+    },
+    {
+     "t": "das",
+     "c": "#201f1d",
+     "ph": "So sprechen Sie das Wort:"
+    },
+    {
+     "t": "Wort:",
+     "c": "#201f1d",
+     "ph": "So sprechen Sie das Wort:"
+    }
+   ]
+  },
+  {
+   "x": 246,
+   "w": 17,
+   "cy": 868.2,
+   "f": 16.5,
+   "b": 1,
+   "sa": 1,
+   "ws": [
+    {
+     "t": "der",
+     "c": "#201f1d",
+     "ph": "der Ring [rɪŋ]; -[e]s, -e: 1. gleichmäßig runder,",
+     "parts": [
+      {
+       "t": "der",
+       "c": "#201f1d",
+       "b": 1
+      }
+     ]
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 304,
+   "w": 240,
+   "cy": 868.2,
+   "f": 16.5,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "[rɪŋ];",
+     "c": "#201f1d",
+     "ph": "der Ring [rɪŋ]; -[e]s, -e: 1. gleichmäßig runder,"
+    },
+    {
+     "t": "-[e]s,",
+     "c": "#201f1d",
+     "ph": "der Ring [rɪŋ]; -[e]s, -e: 1. gleichmäßig runder,"
+    },
+    {
+     "t": "-e:",
+     "c": "#201f1d",
+     "ph": "der Ring [rɪŋ]; -[e]s, -e: 1. gleichmäßig runder,"
+    },
+    {
+     "t": "1.",
+     "c": "#201f1d",
+     "ph": "der Ring [rɪŋ]; -[e]s, -e: 1. gleichmäßig runder,",
+     "parts": [
+      {
+       "t": "1.",
+       "c": "#201f1d",
+       "b": 1
+      }
+     ]
+    },
+    {
+     "t": "gleichmäßig",
+     "c": "#201f1d",
+     "ph": "der Ring [rɪŋ]; -[e]s, -e: 1. gleichmäßig runder,",
+     "i": 1
+    },
+    {
+     "t": "runder,",
+     "c": "#201f1d",
+     "ph": "der Ring [rɪŋ]; -[e]s, -e: 1. gleichmäßig runder,",
+     "i": 1
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 251,
+   "w": 229,
+   "cy": 530.0,
+   "f": 21.3,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Entschuldigung.",
+     "c": "#201f1d",
+     "ph": "Entschuldigung. Wie heißt"
+    },
+    {
+     "t": "Wie",
+     "c": "#201f1d",
+     "ph": "Entschuldigung. Wie heißt"
+    },
+    {
+     "t": "heißt",
+     "c": "#201f1d",
+     "ph": "Entschuldigung. Wie heißt"
+    }
+   ]
+  },
+  {
+   "x": 251,
+   "w": 143,
+   "cy": 558.0,
+   "f": 20.3,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "das",
+     "c": "#201f1d",
+     "ph": "das auf Deutsch?"
+    },
+    {
+     "t": "auf",
+     "c": "#201f1d",
+     "ph": "das auf Deutsch?"
+    },
+    {
+     "t": "Deutsch?",
+     "c": "#201f1d",
+     "ph": "das auf Deutsch?"
+    }
+   ]
+  },
+  {
+   "x": 252,
+   "w": 271,
+   "cy": 607.5,
+   "f": 21.5,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Wie",
+     "c": "#201f1d"
+    },
+    {
+     "t": "bitte?",
+     "c": "#201f1d"
+    },
+    {
+     "t": "/",
+     "c": "#201f1d"
+    },
+    {
+     "t": "Noch",
+     "c": "#201f1d"
+    },
+    {
+     "t": "einmal,",
+     "c": "#201f1d"
+    },
+    {
+     "t": "bitte.",
+     "c": "#201f1d"
+    }
+   ]
+  },
+  {
+   "x": 254,
+   "w": 203,
+   "cy": 658.8,
+   "f": 18.6,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Wie",
+     "c": "#201f1d",
+     "ph": "Wie schreibt man Ring?"
+    },
+    {
+     "t": "schreibt",
+     "c": "#201f1d",
+     "ph": "Wie schreibt man Ring?"
+    },
+    {
+     "t": "man",
+     "c": "#201f1d",
+     "ph": "Wie schreibt man Ring?"
+    },
+    {
+     "t": "Ring?",
+     "c": "#201f1d",
+     "ph": "Wie schreibt man Ring?"
+    }
+   ]
+  },
+  {
+   "x": 256,
+   "w": 57,
+   "cy": 709.5,
+   "f": 19.9,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Danke.",
+     "c": "#201f1d"
+    }
+   ]
+  },
+  {
+   "x": 270,
+   "w": 169,
+   "cy": 395.8,
+   "f": 20.8,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Gegenstand.",
+     "c": "#201f1d",
+     "ph": "Gegenstand. Fragen"
+    },
+    {
+     "t": "Fragen",
+     "c": "#201f1d",
+     "ph": "Gegenstand. Fragen"
+    }
+   ]
+  },
+  {
+   "x": 271,
+   "w": 156,
+   "cy": 418.8,
+   "f": 21.0,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Sie",
+     "c": "#201f1d"
+    },
+    {
+     "t": "Ihre",
+     "c": "#201f1d"
+    },
+    {
+     "t": "Partnerin",
+     "c": "#201f1d"
+    }
+   ]
+  },
+  {
+   "x": 271,
+   "w": 195,
+   "cy": 468.8,
+   "f": 21.1,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "heißt",
+     "c": "#201f1d",
+     "ph": "heißt das auf Deutsch?"
+    },
+    {
+     "t": "das",
+     "c": "#201f1d",
+     "ph": "heißt das auf Deutsch?"
+    },
+    {
+     "t": "auf",
+     "c": "#201f1d",
+     "ph": "heißt das auf Deutsch?"
+    },
+    {
+     "t": "Deutsch?",
+     "c": "#201f1d",
+     "ph": "heißt das auf Deutsch?"
+    }
+   ]
+  },
+  {
+   "x": 272,
+   "w": 162,
+   "cy": 444.5,
+   "f": 19.7,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Ihren",
+     "c": "#201f1d",
+     "ph": "Ihren Partner: Wie"
+    },
+    {
+     "t": "Partner:",
+     "c": "#201f1d",
+     "ph": "Ihren Partner: Wie"
+    },
+    {
+     "t": "Wie",
+     "c": "#201f1d",
+     "ph": "Ihren Partner: Wie"
+    }
+   ]
+  },
+  {
+   "x": 283,
+   "w": 265,
+   "cy": 885.2,
+   "f": 16.5,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "in",
+     "c": "#201f1d",
+     "ph": "in sich geschlossener Gegenstand in der",
+     "i": 1
+    },
+    {
+     "t": "sich",
+     "c": "#201f1d",
+     "ph": "in sich geschlossener Gegenstand in der",
+     "i": 1
+    },
+    {
+     "t": "geschlossener",
+     "c": "#201f1d",
+     "ph": "in sich geschlossener Gegenstand in der",
+     "i": 1
+    },
+    {
+     "t": "Gegenstand",
+     "c": "#201f1d",
+     "ph": "in sich geschlossener Gegenstand in der",
+     "i": 1
+    },
+    {
+     "t": "in",
+     "c": "#201f1d",
+     "ph": "in sich geschlossener Gegenstand in der",
+     "i": 1
+    },
+    {
+     "t": "der",
+     "c": "#201f1d",
+     "ph": "in sich geschlossener Gegenstand in der",
+     "i": 1
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 283,
+   "w": 267,
+   "cy": 902.8,
+   "f": 16.5,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Form",
+     "c": "#201f1d",
+     "ph": "Form eines Kreises: einen goldenen Ring",
+     "i": 1
+    },
+    {
+     "t": "eines",
+     "c": "#201f1d",
+     "ph": "Form eines Kreises: einen goldenen Ring",
+     "i": 1
+    },
+    {
+     "t": "Kreises:",
+     "c": "#201f1d",
+     "ph": "Form eines Kreises: einen goldenen Ring",
+     "i": 1
+    },
+    {
+     "t": "einen",
+     "c": "#201f1d",
+     "ph": "Form eines Kreises: einen goldenen Ring"
+    },
+    {
+     "t": "goldenen",
+     "c": "#201f1d",
+     "ph": "Form eines Kreises: einen goldenen Ring"
+    },
+    {
+     "t": "Ring",
+     "c": "#201f1d",
+     "ph": "Form eines Kreises: einen goldenen Ring"
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 284,
+   "w": 151,
+   "cy": 922.0,
+   "f": 16.5,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "am",
+     "c": "#201f1d",
+     "ph": "am Finger tragen. Zus.: Armring, Dich-"
+    },
+    {
+     "t": "Finger",
+     "c": "#201f1d",
+     "ph": "am Finger tragen. Zus.: Armring, Dich-"
+    },
+    {
+     "t": "tragen.",
+     "c": "#201f1d",
+     "ph": "am Finger tragen. Zus.: Armring, Dich-"
+    },
+    {
+     "t": "Zus.:",
+     "c": "#353569",
+     "i": 1,
+     "ph": "am Finger tragen. Zus.: Armring, Dich-"
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 440,
+   "w": 94,
+   "cy": 922.0,
+   "f": 16.5,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Armring,",
+     "c": "#201f1d",
+     "ph": "am Finger tragen. Zus.: Armring, Dich-"
+    },
+    {
+     "t": "Dich-",
+     "c": "#201f1d",
+     "ph": "am Finger tragen. Zus.: Armring, Dich-"
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 284,
+   "w": 243,
+   "cy": 938.8,
+   "f": 16.5,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "tungsring,",
+     "c": "#201f1d",
+     "ph": "tungsring, Fingerring, Gardinenring,"
+    },
+    {
+     "t": "Fingerring,",
+     "c": "#201f1d",
+     "ph": "tungsring, Fingerring, Gardinenring,"
+    },
+    {
+     "t": "Gardinenring,",
+     "c": "#201f1d",
+     "ph": "tungsring, Fingerring, Gardinenring,"
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 284,
+   "w": 261,
+   "cy": 956.3,
+   "f": 16.5,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Goldring,",
+     "c": "#201f1d",
+     "ph": "Goldring, Gummiring, Metallring, Ohr-"
+    },
+    {
+     "t": "Gummiring,",
+     "c": "#201f1d",
+     "ph": "Goldring, Gummiring, Metallring, Ohr-"
+    },
+    {
+     "t": "Metallring,",
+     "c": "#201f1d",
+     "ph": "Goldring, Gummiring, Metallring, Ohr-"
+    },
+    {
+     "t": "Ohr-",
+     "c": "#201f1d",
+     "ph": "Goldring, Gummiring, Metallring, Ohr-"
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 285,
+   "w": 200,
+   "cy": 974.3,
+   "f": 16.5,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "ring,",
+     "c": "#201f1d",
+     "ph": "ring, Schlüsselring, Silberring."
+    },
+    {
+     "t": "Schlüsselring,",
+     "c": "#201f1d",
+     "ph": "ring, Schlüsselring, Silberring."
+    },
+    {
+     "t": "Silberring.",
+     "c": "#201f1d",
+     "ph": "ring, Schlüsselring, Silberring."
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 608,
+   "w": 137,
+   "cy": 576.2,
+   "f": 20.3,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Das",
+     "c": "#201f1d",
+     "ph": "Das ist ein Ring."
+    },
+    {
+     "t": "ist",
+     "c": "#201f1d",
+     "ph": "Das ist ein Ring."
+    },
+    {
+     "t": "ein",
+     "c": "#201f1d",
+     "ph": "Das ist ein Ring."
+    },
+    {
+     "t": "Ring.",
+     "c": "#201f1d",
+     "ph": "Das ist ein Ring."
+    }
+   ]
+  },
+  {
+   "x": 609,
+   "w": 137,
+   "cy": 624.5,
+   "f": 19.3,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Das",
+     "c": "#201f1d",
+     "ph": "Das ist ein Ring."
+    },
+    {
+     "t": "ist",
+     "c": "#201f1d",
+     "ph": "Das ist ein Ring."
+    },
+    {
+     "t": "ein",
+     "c": "#201f1d",
+     "ph": "Das ist ein Ring."
+    },
+    {
+     "t": "Ring.",
+     "c": "#201f1d",
+     "ph": "Das ist ein Ring."
+    }
+   ]
+  },
+  {
+   "x": 610,
+   "w": 66,
+   "cy": 676.5,
+   "f": 19.5,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "R-I-N-G.",
+     "c": "#201f1d"
+    }
+   ]
+  },
+  {
+   "x": 611,
+   "w": 19,
+   "cy": 364.5,
+   "f": 26.3,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "B",
+     "c": "#201f1d"
+    }
+   ]
+  },
+  {
+   "x": 612,
+   "w": 94,
+   "cy": 724.5,
+   "f": 20.0,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Bitteschön.",
+     "c": "#201f1d",
+     "ph": "Bitteschön. / Bitte. (Gern.) / Kein"
+    }
+   ]
+  },
+  {
+   "x": 729,
+   "w": 110,
+   "cy": 724.5,
+   "f": 20.0,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Bitte.",
+     "c": "#201f1d",
+     "ph": "Bitteschön. / Bitte. (Gern.) / Kein"
+    },
+    {
+     "t": "(Gern.)",
+     "c": "#201f1d",
+     "ph": "Bitteschön. / Bitte. (Gern.) / Kein"
+    }
+   ]
+  },
+  {
+   "x": 862,
+   "w": 37,
+   "cy": 724.5,
+   "f": 20.0,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Kein",
+     "c": "#201f1d",
+     "ph": "Bitteschön. / Bitte. (Gern.) / Kein"
+    }
+   ]
+  },
+  {
+   "x": 612,
+   "w": 74,
+   "cy": 752.0,
+   "f": 20.3,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Problem.",
+     "c": "#201f1d"
+    }
+   ]
+  },
+  {
+   "x": 649,
+   "w": 109,
+   "cy": 384.5,
+   "f": 19.9,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Sehen",
+     "c": "#201f1d",
+     "ph": "Sehen Sie im"
+    },
+    {
+     "t": "Sie",
+     "c": "#201f1d",
+     "ph": "Sehen Sie im"
+    },
+    {
+     "t": "im",
+     "c": "#201f1d",
+     "ph": "Sehen Sie im"
+    }
+   ]
+  },
+  {
+   "x": 649,
+   "w": 149,
+   "cy": 408.8,
+   "f": 21.5,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Wörterbuch",
+     "c": "#201f1d",
+     "ph": "Wörterbuch nach"
+    },
+    {
+     "t": "nach",
+     "c": "#201f1d",
+     "ph": "Wörterbuch nach"
+    }
+   ]
+  },
+  {
+   "x": 650,
+   "w": 164,
+   "cy": 436.0,
+   "f": 19.0,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "und",
+     "c": "#201f1d",
+     "ph": "und antworten Sie."
+    },
+    {
+     "t": "antworten",
+     "c": "#201f1d",
+     "ph": "und antworten Sie."
+    },
+    {
+     "t": "Sie.",
+     "c": "#201f1d",
+     "ph": "und antworten Sie."
+    }
+   ]
+  },
+  {
+   "x": 924,
+   "w": 121,
+   "cy": 1440.0,
+   "f": 20.0,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "fünfundachtzig",
+     "c": "#201f1d"
+    }
+   ]
+  },
+  {
+   "x": 231,
+   "cy": 367,
+   "w": 25,
+   "f": 30,
+   "ws": [
+    {
+     "t": "A"
+    }
+   ],
+   "b": 0,
+   "sa": 0
+  }
+ ],
+ "checks": {},
+ "book": "kb-a11",
+ "page": 85,
+ "w": 1072,
+ "h": 1517,
+ "words": [
+  {
+   "t": "a",
+   "x": 192,
+   "y": 318,
+   "w": 8,
+   "h": 10,
+   "r": 0,
+   "ph": "a Wählen Sie eine Rolle und sprechen Sie.",
+   "l": 1
+  },
+  {
+   "t": "/",
+   "x": 433,
+   "y": 410,
+   "w": 8,
+   "h": 17,
+   "ph": "Sie Ihre Partnerin /",
+   "l": 12
+  },
+  {
+   "t": "/",
+   "x": 344,
+   "y": 601,
+   "w": 8,
+   "h": 17,
+   "ph": "Wie bitte? / Noch einmal, bitte.",
+   "l": 8
+  },
+  {
+   "t": "Ring",
+   "x": 269,
+   "y": 862,
+   "w": 27,
+   "h": 14,
+   "r": 0,
+   "ph": "der Ring [rɪŋ]; -[e]s, -e: 1. gleichmäßig runder,",
+   "l": 5
+  },
+  {
+   "t": "Zus.:",
+   "x": 402,
+   "y": 913,
+   "w": 28,
+   "h": 13,
+   "r": 0,
+   "ph": "am Finger tragen. Zus.: Armring, Dich-",
+   "l": 17
+  },
+  {
+   "t": "b",
+   "x": 210,
+   "y": 1044,
+   "w": 9,
+   "h": 15,
+   "r": 0,
+   "ph": "b Tauschen Sie die Rollen.",
+   "l": 2
+  },
+  {
+   "t": "AKTIONSSEITEN",
+   "x": 694,
+   "y": 147,
+   "w": 316,
+   "h": 34,
+   "l": 30
+  },
+  {
+   "t": "/",
+   "x": 713,
+   "y": 719,
+   "w": 9,
+   "h": 16,
+   "ph": "Bitteschön. / Bitte. (Gern.) / Kein",
+   "l": 25
+  },
+  {
+   "t": "/",
+   "x": 846,
+   "y": 716,
+   "w": 9,
+   "h": 16,
+   "ph": "Bitteschön. / Bitte. (Gern.) / Kein",
+   "l": 25
+  }
+ ],
+ "art": [
+  {
+   "src": "assets/book-crops/kb11-p85-0.webp",
+   "x": 0,
+   "y": 0,
+   "w": 1072,
+   "h": 1517
+  },
+  {
+   "src": "assets/book-crops/kb11-p85-1.webp",
+   "x": 694,
+   "y": 105,
+   "w": 378,
+   "h": 79
+  },
+  {
+   "src": "assets/book-crops/kb11-p85-2.webp",
+   "x": 114,
+   "y": 226,
+   "w": 209,
+   "h": 30
+  },
+  {
+   "src": "assets/book-crops/kb11-p85-3.webp",
+   "x": 599,
+   "y": 340,
+   "w": 262,
+   "h": 149
+  },
+  {
+   "src": "assets/book-crops/kb11-p85-4.webp",
+   "x": 220,
+   "y": 350,
+   "w": 261,
+   "h": 148
+  },
+  {
+   "src": "assets/book-crops/kb11-p85-5.webp",
+   "x": 227,
+   "y": 530,
+   "w": 11,
+   "h": 12
+  },
+  {
+   "src": "assets/book-crops/kb11-p85-6.webp",
+   "x": 539,
+   "y": 560,
+   "w": 62,
+   "h": 175
+  },
+  {
+   "src": "assets/book-crops/kb11-p85-7.webp",
+   "x": 229,
+   "y": 606,
+   "w": 11,
+   "h": 12
+  },
+  {
+   "src": "assets/book-crops/kb11-p85-8.webp",
+   "x": 230,
+   "y": 656,
+   "w": 11,
+   "h": 12
+  },
+  {
+   "src": "assets/book-crops/kb11-p85-9.webp",
+   "x": 586,
+   "y": 810,
+   "w": 341,
+   "h": 158
+  },
+  {
+   "src": "assets/book-crops/kb11-p85-10.webp",
+   "x": 225,
+   "y": 851,
+   "w": 274,
+   "h": 139
+  },
+  {
+   "src": "assets/book-crops/kb11-p85-11.webp",
+   "x": 511,
+   "y": 874,
+   "w": 59,
+   "h": 110
+  },
+  {
+   "src": "assets/book-crops/kb11-p85-12.webp",
+   "x": 399,
+   "y": 913,
+   "w": 37,
+   "h": 13
+  },
+  {
+   "src": "assets/book-crops/kb11-p85-border.webp",
+   "x": 230,
+   "y": 845,
+   "w": 350,
+   "h": 150
+  }
+ ],
+ "paper": "#ffffff",
+ "fields": [],
+ "audio": [],
+ "review": {
+  "status": "verified",
+  "notes": [
+   "All printed words reviewed against the scan; arrow glyphs between the question and answer columns, ▲/■ bullet glyphs and the small arrow before the dictionary box excluded.",
+   "Second answer line \"Das ist ein Ring.\" was OCR-merged (Dasistein); split and verified manually.",
+   "Dictionary entry \"der Ring [rɪŋ]; -[e]s, -e: 1. gleichmäßig runder, ...\" verified on the scan; merged token 1.gleichmäßig split.",
+   "Partner card letters A/B kept (B missed by OCR, added from scan); task badges a/b kept.",
+   "Partner exercise with open answers (a: choose an object and ask; b: swap roles): no fields. No audio marker printed.",
+   "Header/footer chrome (KB | S. 31, Lektion 6d tab, page numeral) excluded; footer word fünfundachtzig kept."
+  ],
+  "verifiedWords": 118
+ },
+ "neutral": [
+  [
+   "t6da",
+   590,
+   318
+  ],
+  [
+   "t6db",
+   470,
+   1050
+  ]
+ ]
+}
