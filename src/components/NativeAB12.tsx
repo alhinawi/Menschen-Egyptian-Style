@@ -40,7 +40,7 @@ export function NativeAB12({page}:{page:string}){
  {page==='89'&&<>
   {art('lesson-tab',738,18,62,75)}
   {text(75,63,300,'LERNWORTSCHATZ','naHeadline')}
-  <div className="naHeadRule" style={{left:388,top:78,width:270}}/>
+  <div className="naHeadRule" style={{left:292,top:83,width:364,borderBottom:'2px solid #4a4a45'}}/>
   {title('1',78,116,540,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naRB naNw')}
   {text(96,145,160,'Wetter','naWHead')}
   {text(396,145,240,'Himmelsrichtungen','naWHead')}
@@ -79,6 +79,10 @@ export function NativeAB12({page}:{page:string}){
   {field('89-1-l17',234,519,144,'neblig übersetzen')}
   {text(105,538,150,'sonnig')}
   {field('89-1-l18',234,538,144,'sonnig übersetzen')}
+  {text(105,557,150,'warm')}
+  {field('89-1-l19',234,557,144,'warm übersetzen')}
+  {text(105,576,150,'windig')}
+  {field('89-1-l20',234,576,144,'windig übersetzen')}
   {text(397,168,150,'Himmelsrichtung')}
   {text(406,187,150,'die, -en')}
   {field('89-1-r1',505,187,148,'die, -en übersetzen')}
@@ -113,9 +117,11 @@ export function NativeAB12({page}:{page:string}){
   {art('handwriting',360,605,265,60)}
   {art('strip',665,95,140,915)}
   {title('2',78,686,540,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naRB naNw')}
-  <LinedArea id="89-2-text" values={values} set={set} x={102} tops={[713, 732, 752, 772, 791, 811, 830, 849, 869, 888, 908, 927, 947, 966, 986, 1005]} w={525} boxH={20} label="Notizen" legacyIds={["89-2-0", "89-2-1", "89-2-2", "89-2-3", "89-2-4", "89-2-5", "89-2-6", "89-2-7", "89-2-8", "89-2-9", "89-2-10", "89-2-11", "89-2-12", "89-2-13", "89-2-14", "89-2-15"]}/>
+  <LinedArea id="89-2-text" values={values} set={set} x={106} tops={[713, 732, 752, 772, 791, 811, 830, 849, 869, 888, 908, 927, 947, 966, 986, 1005]} w={546} boxH={20} label="Notizen" legacyIds={["89-2-0", "89-2-1", "89-2-2", "89-2-3", "89-2-4", "89-2-5", "89-2-6", "89-2-7", "89-2-8", "89-2-9", "89-2-10", "89-2-11", "89-2-12", "89-2-13", "89-2-14", "89-2-15"]}/>
   {text(598,1046,150,'neunundachtzig  |  89','naFooter')}
-  {art('modul-tab',722,1038,50,24)}
+  {art('modul-tab',746,1051,54,14)}
+  {save52('89-1',234,620)}
+  {save52('89-2',234,1034)}
  </>}
  {page==='52'&&<>
   <div className="naBand52"/>
