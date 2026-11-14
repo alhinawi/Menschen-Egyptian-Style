@@ -16,7 +16,7 @@ export function NativeAB11P95(){
  if(it.k==='line')return <div key={i} className="p95Line" style={{...pos,background:it.color}}/>;
  if(it.k==='badge')return <div key={i} className="p95Badge" style={{...pos,...(it.large?{fontSize:60,lineHeight:'60px'}:{})}}>{it.t}</div>;
  if(it.k==='field')return <input key={i} data-native-field={`ab11-p95-${it.id}`} className="p95Field" aria-label={it.id} dir="auto" style={pos} value={values[it.id]||''} onChange={e=>set(it.id,e.target.value,it.group)}/>;
- if(it.k==='check')return <div key={i} className="p95Check" data-native-task={it.group} style={pos}><button type="button" className="p95Save" aria-label="Speichern" onClick={()=>C(c=>({...c,[it.group]:true}))}>✓</button><output aria-live="polite">{saved[it.group]?'Gespeichert':''}</output></div>;
+ if(it.k==='check')return null;
  return null;
  })}</div></div>
 }

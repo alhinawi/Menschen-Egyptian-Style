@@ -29,7 +29,7 @@ export function NativeAB11P91(){
  const status=graded?(it.answer.split('|').some((a:string)=>normalize(values[it.id]||'')===normalize(a))?' correct':' wrong'):'';
  return <input key={i} data-native-field={`ab11-p91-${it.id}`} className={'p91Field'+status} aria-invalid={checked[it.group]&&!!it.answer?status===' wrong':undefined} aria-label={it.id} style={{...pos,'--p91-answer-size':answerSize(values[it.id]||'',it.w)+'px'} as CSSProperties} value={values[it.id]||''} onChange={e=>set(it.id,e.target.value)}/>;
  }
- if(it.k==='check')return <div key={i} className="p91Check" data-native-task={it.group} style={pos}><CheckButton answers={Object.fromEntries(spec.items.filter((f:any)=>f.k==='field'&&f.group===it.group&&f.answer).map((f:any)=>[`ab11-p91-${f.id}`,f.answer]))} onClick={()=>C(c=>({...c,[it.group]:true}))}/><output aria-live="polite">{checked[it.group]?(it.neutral?'Gespeichert':groupCorrect(it.group)?'Richtig!':'Noch einmal'):''}</output></div>;
+ if(it.k==='check')return it.neutral?null:<div key={i} className="p91Check" data-native-task={it.group} style={pos}><CheckButton answers={Object.fromEntries(spec.items.filter((f:any)=>f.k==='field'&&f.group===it.group&&f.answer).map((f:any)=>[`ab11-p91-${f.id}`,f.answer]))} onClick={()=>C(c=>({...c,[it.group]:true}))}/><output aria-live="polite">{checked[it.group]?(groupCorrect(it.group)?'Richtig!':'Noch einmal'):''}</output></div>;
  return null;
  })}</div></div>
 }
