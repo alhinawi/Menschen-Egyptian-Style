@@ -1,10 +1,22 @@
 import {useNativeCanvas,Canvas,Words} from './shared';
+import {CheckButton} from '../components/CheckButton';
+import {useEffect,useState} from 'react';
+import './native-ab12-p98.css';
 import {LinedArea} from '../components/LinedArea';
 import {LineMatching} from '../exercises/LineMatching';
 
 export function NativeAB12L24({page}:{page:string}){
  const c=useNativeCanvas(page);
  const {text,art,field,check,title,rule}=c;const set=c.set;
+ // p98 section 10 (4 Himmelsrichtungen): the key answer is an order-free set, so the
+ // house exact-match check() cannot grade it. Own result state + set match; marking
+ // uses the same data-check-mark attribute the other p98 checks paint from.
+ const [ok98,setOk98]=useState<boolean|null>(null);
+ useEffect(()=>{if(page==='98'&&!('98-10' in c.values)){setOk98(null);c.root.current?.querySelector('[data-native-field="98-10"]')?.removeAttribute('data-check-mark')}},[page,c.values,c.root]);
+ const grade98=()=>{const t=(c.values['98-10']||'').normalize('NFC').trim().toLocaleLowerCase('de').replace(/[.!?]+$/,'').replace(/\s+/g,' ');
+  const ws=t?t.split(/[\s,;]+/).filter(w=>w&&w!=='der').sort():[];
+  const ok=ws.join('|')==='norden|osten|süden|westen';
+  setOk98(ok);c.root.current?.querySelector('[data-native-field="98-10"]')?.setAttribute('data-check-mark',ok?'ok':'bad')};
  const conf98=(id:string,y:number)=><>{[0,1,2].map(cc=>c.dot(id,''+cc,650+cc*29.5,y,'Selbsteinschätzung '+id+' '+['gut','mittel','noch nicht'][cc],false,'naDot98'))}</>;
  const sect98=(y:number,t:string,tag:string)=><div className="naText naSect98" style={{left:78,top:y}}><Words text={t}/> <span className="naTag98">{tag}</span></div>;
  const conf99=(id:string,y:number)=><>{[0,1,2].map(cc=>c.dot(id,''+cc,646.6+cc*28.9,y,'Selbsteinschätzung '+id+' '+['gut','mittel','noch nicht'][cc],false,'naDot99'))}</>;
@@ -143,6 +155,7 @@ export function NativeAB12L24({page}:{page:string}){
   {field('98-9b',270,871.9,326,'9 mag Wetter nicht')}
   {sect98(914,'… die 4 Himmelsrichtungen:','L23')}{conf98('s10',918)}
   {field('98-10',96,925.9,500,'10 Himmelsrichtungen')}
+  {<div className="naCheck" data-check="98-10" style={{left:745,top:918}}><CheckButton onClick={grade98}/><output aria-live="polite">{ok98===null?'':ok98?'✓ Richtig!':'Noch einmal'}</output></div>}
   {sect98(968,'… 5 Wörter zum Thema Feste und Feiern:','L24')}{conf98('s11',972)}
   {text(97,987.6,34,'Feste:','naBookSerif naBody98 naNw',11.8)}{field('98-11f',133,979.9,463,'11 Feste')}
   {text(97,1006.05,47,'Verben:','naBookSerif naBody98 naNw',12.4)}{text(147,1006.05,18,'gra','naBookSerif naBody98 naNw',12.4)}{field('98-11v1',165,997.9,126,'11 gratulieren')}{text(294,1006.05,7,',','naBookSerif naBody98 naNw',12.4)}{text(302,1006.05,20,'sch','naBookSerif naBody98 naNw',12.4)}{field('98-11v2',322,997.9,138,'11 schenken')}{text(460,1006.05,6,',','naBookSerif naBody98 naNw',12.4)}{text(466,1006.05,12,'fei','naBookSerif naBody98 naNw',12.4)}{field('98-11v3',481,997.9,115,'11 feiern')}
