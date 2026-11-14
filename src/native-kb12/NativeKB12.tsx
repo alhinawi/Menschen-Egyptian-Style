@@ -738,9 +738,9 @@ export function NativeKB12({page}:{page:string}){
  {text(143,718,390,'a  DJ Ötzi ist')}{['als Koch','als Musiker','als Urlauber-Animateur'].map((t,i)=><div key={t}>{dot('1a',String(i),170,748+i*27,t)}{text(200,748+i*27,345,t)}</div>)}{text(168,833,340,'bekannt.')}
  {text(143,875,390,'b  Man kennt DJ Ötzi')}{['nur in Österreich.','nur im deutschsprachigen Raum.','auch im Ausland.'].map((t,i)=><div key={t}>{dot('1b',String(i),170,905+i*27,t)}{text(200,905+i*27,380,t)}</div>)}
  {text(143,1000,390,'c  Man erkennt DJ Ötzi')}{['an seinen braunen Augen.','an seinem Bart.','an seiner weißen Mütze.'].map((t,i)=><div key={t}>{dot('1c',String(i),170+i*278,1030,t)}{text(200+i*278,1030,265,t)}</div>)}{check('1',148,1070,{'1a':'1','1b':'2','1c':'2'})}
- {title('2',105,1130,930,'Prominente aus den deutschsprachigen Ländern')}{text(105,1170,920,'a  Wählen Sie einen Prominenten aus den deutschsprachigen Ländern.\n    Schreiben Sie ein Porträt wie in 1 und suchen Sie auch ein passendes Foto.','nkBold')}{text(150,1245,420,'Heike Makatsch ist Schauspielerin.\nSie kommt aus Deutschland und ist\nam 13.08.1971 in Düsseldorf geboren …','nkM7Example')}
- {open('2-profile',620,1385,430,54,'Mein Porträt einer prominenten Person')}
- {text(105,1370,580,'b  Alle Kursteilnehmer hängen ihre Fotos an eine Wand.\n    Präsentieren Sie Ihre Person im Kurs. Können die\n    anderen Kursteilnehmer das richtige Foto finden?','nkBold')}{text(710,1365,290,'Meine Person ist Schauspielerin.\nSie ist … geboren und …','nkSpeech')}
+ {title('2',105,1130,930,'Prominente aus den deutschsprachigen Ländern')}{text(105,1170,920,'a  Wählen Sie einen Prominenten aus den deutschsprachigen Ländern.\n    Schreiben Sie ein Porträt wie in 1 und suchen Sie auch ein passendes Foto.','nkBold')}{save('2a',890,1205)}{text(150,1245,420,'Heike Makatsch ist Schauspielerin.\nSie kommt aus Deutschland und ist\nam 13.08.1971 in Düsseldorf geboren …','nkM7Example')}
+ {open('2-profile',600,1250,430,90,'Mein Porträt einer prominenten Person')}
+ {text(105,1370,580,'b  Alle Kursteilnehmer hängen ihre Fotos an eine Wand.\n    Präsentieren Sie Ihre Person im Kurs. Können die\n    anderen Kursteilnehmer das richtige Foto finden?','nkBold')}{save('2b',612,1428)}{text(710,1365,290,'Meine Person ist Schauspielerin.\nSie ist … geboren und …','nkSpeech')}
  </>}
  {page==='56'&&<>
  {text(105,78,400,'AUSKLANG','nkModule')}{art('dancers',95,139,980,892)}{text(105,185,900,'Der Bitte-Danke-Walzer','nkM7SongTitle')}
