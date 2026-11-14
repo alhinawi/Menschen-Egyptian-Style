@@ -87,15 +87,16 @@ function P76(h:AB12Helpers){const {line:ln,runs:rn,wl,art,area,rect,field,box,va
   {area('p76-t2-r2-c2',330,983,197,25,'Tabelle 2 weitere Regel Meinung')}
   {area('p76-t2-r2-c3',535,983,198,25,'Tabelle 2 weitere Regel Verhalten')}
 
-  {<div style={{position:'absolute',left:60,top:1115,width:687,height:240,background:'#ffffff',border:'1.5px solid #d8d4c4'}}/>}
+  {<div style={{position:'absolute',left:60,top:1115,width:687,height:250,background:'#ffffff',border:'1.5px solid #d8d4c4'}}/>}
   {box('1',72,1123,'#c80e04')}
   {rn(106,1126,440,15,[{t:'Was macht Gert gern? Was kann er gut? Wie ist er?',b:1}],{fam:'fira'})}
-  {ln(80,1150,300,14,'Beispiel: Er kocht gern.',{i:1,c:'#2a4b9c',cls:D})}
-  {field('p76-1a1',80,1178,600,'1 a Satz 1','naFieldBlank')}
-  {field('p76-1a2',80,1223,600,'1 a Satz 2','naFieldBlank')}
-  {field('p76-1a3',80,1268,600,'1 a Satz 3','naFieldBlank')}
-  {[1205,1250,1295].map(y=><div key={'ra'+y} className='naRule' style={{left:80,top:y,width:600,borderBottom:'1px solid #9aa4b5'}}/>)}
-  {(()=>{const KEYS=[['er studiert architektur','gert studiert architektur'],['er ist sehr ordentlich','er ist ordentlich','sehr ordentlich'],['er putzt oft und gr\u00fcndlich','er putzt gr\u00fcndlich','er kann gut putzen']];const IDS=['p76-1a1','p76-1a2','p76-1a3'];const marks=Object.fromEntries(IDS.map(k=>[k,KEYS.flat().join('|')]));return <div className="naCheck" data-check="rb20-1a" style={{left:80,top:1310}}><CheckButton answers={marks} onClick={()=>{const got=IDS.map(k=>normalize(values[k]||''));sr({...results,'rb20-1a':KEYS.every(alts=>got.some(g=>alts.includes(g)))&&got.every(g=>KEYS.some(alts=>alts.includes(g)))})}}></CheckButton><output aria-live="polite">{('rb20-1a' in results)?(results['rb20-1a']?'\u2713 Richtig!':'Noch einmal'):''}</output></div>})()}
+  {ln(80,1158,56,13,'Beispiel:',{c:'#3f4c75'})}
+  {art('hw1',148,1150,116,30)}
+  {field('p76-1a1',80,1188,600,'1 a Satz 1','naFieldBlank')}
+  {field('p76-1a2',80,1233,600,'1 a Satz 2','naFieldBlank')}
+  {field('p76-1a3',80,1278,600,'1 a Satz 3','naFieldBlank')}
+  {[1215,1260,1305].map(y=><div key={'ra'+y} className='naRule' style={{left:80,top:y,width:600,borderBottom:'1px solid #9aa4b5'}}/>)}
+  {(()=>{const KEYS=[['er studiert architektur','gert studiert architektur'],['er ist sehr ordentlich','er ist ordentlich','sehr ordentlich'],['er putzt oft und gr\u00fcndlich','er putzt gr\u00fcndlich','er kann gut putzen']];const IDS=['p76-1a1','p76-1a2','p76-1a3'];const marks=Object.fromEntries(IDS.map(k=>[k,KEYS.flat().join('|')]));return <div className="naCheck" data-check="rb20-1a" style={{left:80,top:1318}}><CheckButton answers={marks} onClick={()=>{const got=IDS.map(k=>normalize(values[k]||''));sr({...results,'rb20-1a':KEYS.every(alts=>got.some(g=>alts.includes(g)))&&got.every(g=>KEYS.some(alts=>alts.includes(g)))})}}></CheckButton><output aria-live="polite">{('rb20-1a' in results)?(results['rb20-1a']?'\u2713 Richtig!':'Noch einmal'):''}</output></div>})()}
   {art('badge',0,1048,62,24)}
   {wl(1067,12,[{x:70,w:14,t:'76'}])}
   {rect(95,1056,1,12,'#202020')}
@@ -104,6 +105,6 @@ function P76(h:AB12Helpers){const {line:ln,runs:rn,wl,art,area,rect,field,box,va
 }
 
 export function NativeAB12P76({page}:{page:string}){
- if(page==='76')return <AB12Canvas page={page} width={807} height={1370}>{P76}</AB12Canvas>;
+ if(page==='76')return <AB12Canvas page={page} width={807} height={1380}>{P76}</AB12Canvas>;
  return null;
 }
