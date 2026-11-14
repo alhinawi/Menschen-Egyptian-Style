@@ -141,6 +141,7 @@ export function NativeAB12P80({page}:{page:string}){
   {text(142,972,60,'Dein/e','naIt80')}
   {field('p80-9name',196,970,150,'Dein Name','naIt80 naField80c naName80')}
 
+  {(()=>{const GROUPS=[['bleiben','ich möchte lieber in wien bleiben'],['oper und theater finde ich wahnsinnig langweilig','ich finde oper und theater wahnsinnig langweilig','oper und theater finde ich wahnsinnig langweilig, am liebsten gehe ich ins museum'],['am liebsten gehe ich ins museum','ich gehe am liebsten ins museum','oper und theater finde ich wahnsinnig langweilig, am liebsten gehe ich ins museum'],['ich möchte natürlich gern kuchen im hotel sacher essen','ich möchte gern kuchen im hotel sacher essen','ich esse natürlich gern kuchen im hotel sacher'],['den prater finde ich total lustig','ich finde den prater total lustig']];return <div className="naCheck" data-check="80-9" style={{left:122,top:1008}}><CheckButton onClick={()=>{const segs=(values['p80-9mail']||'').split(/[.!?\n]+/).map(normalize).filter(Boolean);sr({...results,'80-9':segs.length>0&&GROUPS.every(g=>segs.some(sg=>g.includes(sg)))&&segs.every(sg=>GROUPS.some(g=>g.includes(sg)))})}}/><output aria-live="polite">{('80-9' in results)?(results['80-9']?'✓ Richtig!':'Noch einmal'):''}</output></div>})()}
   {/* footer */}
   {lin(0,1052,52,16,'#d9d0ab')}
   <div style={{position:'absolute',left:0,top:1052,width:52,height:16,color:'#fff',font:'600 9.5px FiraSans,sans-serif',display:'flex',alignItems:'center',justifyContent:'center'}}>Modul 8</div>
