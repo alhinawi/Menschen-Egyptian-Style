@@ -21,7 +21,7 @@ export function NativeAB12P80({page}:{page:string}){
  const lin=(x:number,y:number,w:number,h:number,c:string)=><div style={{position:'absolute',left:x,top:y,width:w,height:h,background:c}}/>;
  const art=(name:string,x:number,y:number,w:number,h:number)=><PageImage className="naArt" src={`assets/book-crops/native-ab12-p${page}-${name}.png`} alt={'Originalillustration '+name} style={{left:x,top:y,width:w,height:h}}/>;
  const field=(id:string,x:number,y:number,w:number,label:string,cls='')=><input className={'naField '+cls} aria-label={label} data-native-field={id} style={{left:x,top:y,width:w}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
- const area=(id:string,x:number,y:number,w:number,h:number,label:string)=><textarea className="naField naLined naArea80" aria-label={label} data-native-field={id} style={{left:x,top:y,width:w,['--la-h' as string]:h+'px',['--la-lh' as string]:'17px'}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
+ const area=(id:string,x:number,y:number,w:number,h:number,label:string)=><textarea className="naField naLined naArea80" aria-label={label} data-native-field={id} style={{left:x,top:y,width:w,['--la-h' as string]:h+'px',['--la-lh' as string]:'18px'}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
  const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}/><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const kb=(x:number,y:number,t:string)=><div className="naKB80" style={{left:x,top:y}}>{t}</div>;
  const num=(x:number,y:number,n:string)=><div className="naNum80" style={{left:x,top:y}}>{n}</div>;
@@ -49,7 +49,7 @@ export function NativeAB12P80({page}:{page:string}){
 [data-native-ab12='80'] .naIt80{font-family:FiraSansCond,sans-serif!important;font-style:italic;font-weight:400;font-size:12.5px!important;color:#1f1f1f!important}
 [data-native-ab12='80'] .naBul80{font-size:13.5px!important}
 [data-native-ab12='80'] .naField{position:absolute;background:transparent;border:none;border-bottom:1.5px solid #c8c8c8;font:15px DroidSerif,Georgia,serif;color:#1c3f8f;padding:0 2px;outline:none}
-[data-native-ab12='80'] .naArea80{position:absolute;background-color:transparent;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='17'%3E%3Ccircle cx='1.5' cy='15.7' r='0.85' fill='%2348484c'/%3E%3Ccircle cx='6' cy='15.7' r='0.85' fill='%2348484c'/%3E%3C/svg%3E")!important;background-size:9px 17px!important;background-repeat:repeat!important;border:0!important;box-shadow:none!important;resize:none;scrollbar-width:none;font:italic 14px FiraSans,sans-serif;line-height:17px;color:#1c3f8f;padding:0 2px;outline:none}
+[data-native-ab12='80'] .naArea80{position:absolute;background-color:transparent;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='18'%3E%3Ccircle cx='1.5' cy='15' r='0.85' fill='%2348484c'/%3E%3Ccircle cx='6' cy='15' r='0.85' fill='%2348484c'/%3E%3C/svg%3E")!important;background-size:9px 18px!important;background-repeat:repeat!important;border:0!important;box-shadow:none!important;resize:none;scrollbar-width:none;padding:0 2px;outline:none}
 [data-native-ab12='80'] .naArea80::-webkit-scrollbar{display:none;width:0;height:0}
 [data-native-ab12='80'] .naCanvas .naField.naField80c{border:0!important;border-bottom:0!important;box-shadow:none!important;font-size:14px}
 [data-native-ab12='80'] .naField80d{border-bottom:0!important}
@@ -135,13 +135,13 @@ export function NativeAB12P80({page}:{page:string}){
   {art('frame2',121,808,557,191)}
   {text(142,825,120,'Hallo Johanna,','naIt80')}
   {text(142,845,516,'das sind ja viele gute Ideen! Drei Tage sind natürlich sehr kurz. Ich möchte lieber in Wien','naIt80')}
-  {area('p80-9mail',140,859,512,51,'E-Mail an Johanna')}
+  {area('p80-9mail',140,856.5,512,54,'E-Mail an Johanna')}
   {text(142,914,180,'Ich freue mich sehr!','naIt80')}
   {text(142,952,120,'Bis bald','naIt80')}
   {text(142,972,60,'Dein/e','naIt80')}
   {field('p80-9name',196,970,150,'Dein Name','naIt80 naField80c naName80')}
 
-  {(()=>{const GROUPS=[['bleiben','ich möchte lieber in wien bleiben'],['oper und theater finde ich wahnsinnig langweilig','ich finde oper und theater wahnsinnig langweilig','oper und theater finde ich wahnsinnig langweilig, am liebsten gehe ich ins museum'],['am liebsten gehe ich ins museum','ich gehe am liebsten ins museum','oper und theater finde ich wahnsinnig langweilig, am liebsten gehe ich ins museum'],['ich möchte natürlich gern kuchen im hotel sacher essen','ich möchte gern kuchen im hotel sacher essen','ich esse natürlich gern kuchen im hotel sacher'],['den prater finde ich total lustig','ich finde den prater total lustig']];return <div className="naCheck" data-check="80-9" style={{left:122,top:1008}}><CheckButton onClick={()=>{const segs=(values['p80-9mail']||'').split(/[.!?\n]+/).map(normalize).filter(Boolean);sr({...results,'80-9':segs.length>0&&GROUPS.every(g=>segs.some(sg=>g.includes(sg)))&&segs.every(sg=>GROUPS.some(g=>g.includes(sg)))})}}/><output aria-live="polite">{('80-9' in results)?(results['80-9']?'✓ Richtig!':'Noch einmal'):''}</output></div>})()}
+  <div className="naCheck" data-check="80-9" style={{left:122,top:1008}}><CheckButton onClick={()=>sr({...results,'80-9':true})}/><output aria-live="polite">{results['80-9']?'Gespeichert':''}</output></div>
   {/* footer */}
   {lin(0,1052,52,16,'#d9d0ab')}
   <div style={{position:'absolute',left:0,top:1052,width:52,height:16,color:'#fff',font:'600 9.5px FiraSans,sans-serif',display:'flex',alignItems:'center',justifyContent:'center'}}>Modul 8</div>
