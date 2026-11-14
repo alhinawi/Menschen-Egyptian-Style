@@ -40,6 +40,7 @@
 .naCanvas .naTri{position:absolute;color:#7ab317;font-size:21px}
 .naCanvas .naLet{font-family:'Times New Roman',Times,serif;font-weight:normal;font-size:22px}
 .naCanvas .naNw{white-space:nowrap}
+.naCanvas .naText.naBank{font-family:FiraSans,'Trebuchet MS',sans-serif!important;font-size:16.6px!important;letter-spacing:0!important}
 .naCanvas .naD19{font-size:19px}
 .naCanvas .naTitle.naRB b{background:#c80e04;position:relative;height:21px;line-height:21px;font-size:19px;vertical-align:middle}
 .naCanvas .naTitle.naPB b{background:#7b0c69}
