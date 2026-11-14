@@ -34,7 +34,7 @@ export function NativeKB12({page}:{page:string}){
   });
   return <div className="nkCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:graded})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  };
- const save=(id:string,x:number,y:number)=><div className="nkCheck" data-save={id} style={{left:x,top:y}}><CheckButton onClick={()=>sr({...results,['save-'+id]:true})}></CheckButton><output aria-live="polite">{results['save-'+id]?'Gespeichert':''}</output></div>;
+ const save=()=>null;
  const title=(n:string,x:number,y:number,w:number,t:string)=><div className="nkTitle" style={{left:x,top:y,width:w}}><b>{n}</b><Words text={t}/></div>;
  const clip=(n:number,y:number)=><button className="nkAudio" style={{left:40,top:y}} onClick={()=>sf(({13:'fi8siL2PgPE',14:'R_zKkuFByzM',15:'ify1e7g_Dpc',16:'QyJQytmYVvw',17:'C__8IoATxD8',18:'uyeIHkUXUJo'} as Record<number,string>)[n])}>▶ Clip {n}</button>;
  const audio=(src:string,x:number,y:number,label:string,displayLabel?:string,task?:string)=><button className="nkAudio" data-task={task} style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {displayLabel||label}</button>;
@@ -963,7 +963,7 @@ export function NativeKB12({page}:{page:string}){
  <table className="nkDreamNotes" style={{left:105,top:815,width:850}}><thead><tr>{['','Ich','Meine Partnerin / Mein Partner'].map(t=><th key={t}><Words text={t}/></th>)}</tr></thead><tbody>{['an meinem nächsten Geburtstag','nach der Deutschprüfung','im nächsten Urlaub','im Sommer','nächstes Wochenende','…'].map((t,r)=><tr key={t}><th><Words text={t}/></th>{[0,1].map(c=><td key={c}>{r===0&&<span className="nkHand"><Words text={c?'Party in Las Vegas …':'eine Reise machen, nach Indien fahren, mit meiner Freundin …'}/></span>}{inline('traum-'+r+'-'+c,280,t+(c?': meine Partnerin / mein Partner':': ich'))}</td>)}</tr>)}</tbody></table>
  <div className="nkActionDialogue" style={{left:145,top:1205,width:850,fontSize:20,lineHeight:1.25}}>{['■  Was würdest du gern an deinem nächsten Geburtstag machen?','▲  Ich würde gern eine Reise machen. Am liebsten nach Indien.','■  Würdest du allein reisen?','▲  Nein, ich würde am liebsten meine Freundin mitnehmen. Und du?','■  Ich würde gern meine Freunde einladen und eine Party feiern. Am liebsten in Las Vegas.'].map((t,i)=><div key={t} style={{color:i%2?'#519d56':'#405d98'}}><Words text={t}/></div>)}</div>
  {save('L24-3b-a',991,237)}{save('L24-6a',950,772)}{save('L24-6b',885,1305)}
- <div style={{position:'absolute',left:105,top:1514,zIndex:8,display:'flex',alignItems:'center',gap:14,font:'18px Arial',background:'#fffef2',border:'1px solid #b7b18b',padding:'6px 12px',boxShadow:'0 4px 18px rgba(0,0,0,.18)'}}><span>b&nbsp;&nbsp;Arbeiten Sie zu dritt. Erz&auml;hlen Sie.</span><div className="nkCheck" data-save="L24-3b-b" style={{position:'static'}}><CheckButton onClick={()=>sr({...results,['save-L24-3b-b']:true})}></CheckButton><output aria-live="polite">{results['save-L24-3b-b']?'Gespeichert':''}</output></div></div>
+ <div style={{position:'absolute',left:105,top:1514,zIndex:8,display:'flex',alignItems:'center',gap:14,font:'18px Arial',background:'#fffef2',border:'1px solid #b7b18b',padding:'6px 12px',boxShadow:'0 4px 18px rgba(0,0,0,.18)'}}><span>b&nbsp;&nbsp;Arbeiten Sie zu dritt. Erz&auml;hlen Sie.</span></div>
  </>}
 
  {page==='69'&&<>

@@ -1,11 +1,4 @@
-import {useState} from 'react';
 import {AB12Canvas,AB12Helpers} from '../ab12-shared';
-import {CheckButton} from '../CheckButton';
-
-function NeutralCheck({id,x,y}:{id:string,x:number,y:number}){
- const [saved,setSaved]=useState(false);
- return <div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton onClick={()=>setSaved(true)}/><output aria-live="polite">{saved?'Gespeichert':''}</output></div>;
-}
 
 function P83(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,modTab,box,rect}=h;const D='naDroid83';const V={c:'#767563'};return <>
   {art('rail',693,24,115,1011)}
@@ -67,8 +60,6 @@ function P83(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,modTab,box,rect}
   {[189,208,228,247,267,286,306,325,345,364,423,442,481,501,520,598,618].map((y,i)=>field('p83-1-l'+(i+1),228,y-19,144,'1 links Zeile '+(i+1),'naFieldBlank'))}
   {[189,238,277,316,355,375,394,414,453,472,491,520,560].map((y,i)=>field('p83-1-r'+(i+1),500,y-19,148,'1 rechts Zeile '+(i+1),'naFieldBlank'))}
   {[783,803,822,842,861,881,900,920,939,958,978,997,1017].map((y,i)=>field('p83-2-'+(i+1),98,y-19,550,'2 Notizzeile '+(i+1),'naFieldBlank'))}
-  <NeutralCheck id='n1' x={100} y={650}/>
-  <NeutralCheck id='n2' x={520} y={1026}/>
   {wl(1065,12,[{x:599,w:91,t:'dreiundachtzig'},{x:703,w:2,t:'|'},{x:717,w:13,t:'83'}])}
   {modTab(740,1053,'Modul 8')}
 </>}
