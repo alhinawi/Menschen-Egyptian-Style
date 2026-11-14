@@ -26,12 +26,17 @@ export function NativeAB12({page}:{page:string}){
  const dot=(id:string,value:string,x:number,y:number,label:string,checkbox=false)=><input className="naDot" type={checkbox?'checkbox':'radio'} aria-label={label} data-value={value} name={key+'-'+id} checked={checkbox?values[id]==='true':values[id]===value} onChange={e=>set(id,checkbox?String(e.target.checked):value)} style={{left:x,top:y}}/>;
  const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,t:string,cls='')=><div className={'naTitle '+cls} style={{left:x,top:y,width:w}}><b>{n}</b><Words text={t}/></div>;
+ // p52 Rückblick L18/1: comma/'und' lists graded as exact sets against the official key (order- and article-tolerant).
+ const setList=(s:string)=>s.split(/,|\s+und\s+/i).map(t=>t.normalize('NFC').trim().replace(/^(der|die|das)\s+/i,'').toLocaleLowerCase('de').replace(/[.!?]+$/,'').trim()).filter(Boolean).sort().join(' ');
+ const mark52=(id:string,ok:boolean)=>{root.current?.querySelectorAll(`[data-native-field="${id}"]`).forEach(e=>e.setAttribute('data-check-mark',ok?'ok':'bad'))};
+ const check52t3=(x:number,y:number)=><div className="naCheck naStack" data-check="52-t3" data-check-layout="stack" style={{left:x,top:y}}><CheckButton onClick={()=>{const c1=setList(values['52-t3-c1']||'')===setList('Kopf, Arme, Beine, Hals, Bauch'),c2=setList(values['52-t3-c2']||'')===setList('Rücken, Brust, Hand, Finger, Fuß, Knie, Ohr, Auge, Zahn, Nase, Mund');mark52('52-t3-c1',c1);mark52('52-t3-c2',c2);sr({...results,'52-t3':c1&&c2})}}></CheckButton><output aria-live="polite">{'52-t3' in results?(results['52-t3']?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const save52=(id:string,x:number,y:number)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton onClick={()=>sr({...results,[id]:true})}></CheckButton><output aria-live="polite">{id in results?'Gespeichert':''}</output></div>;
  const gl=(x:number,y:number,t:string,bg?:string)=><div className="naGL" style={{left:x,top:y,...(bg?{background:bg}:{})}}>{t}</div>;
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const hand=(x:number,y:number,w:number,t:string)=><div className="naText naHand" style={{left:x,top:y,width:w}}><Words text={t}/></div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}${SCP('.naTitle')}{font-family:FiraSans,sans-serif!important;letter-spacing:0!important;font-size:21px!important}${SCP('.naText')},${SCP('.naBold')},${SCP('.naLet')},${SCP('.naDlg')}{font-family:DroidSerif,Georgia,serif!important;font-size:20px!important;letter-spacing:-0.65px}${SCP('.naField')}{font-family:DroidSerif,Georgia,serif!important;font-size:19px!important;letter-spacing:-0.65px}${SCP('.naText.naS20')}{font-size:18px!important}${SCP('.naSmall')}{font-size:16.5px!important}${SCP('.naD19')}{font-size:17.5px!important}${SCP('.naUrl')}{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='52'] .naText,[data-native-ab12='52'] .naBold,[data-native-ab12='52'] .naLet,[data-native-ab12='52'] .naDlg,[data-native-ab12='52'] .naField{letter-spacing:0!important}[data-native-ab12='52'] .naTitle{font-size:22px!important}[data-native-ab12='52'] .naFoot52{font-size:17px!important;color:#202020!important}[data-native-ab12='52'] .naTitle.naRB b{top:-3px}`}</style><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}${SCP('.naTitle')}{font-family:FiraSans,sans-serif!important;letter-spacing:0!important;font-size:21px!important}${SCP('.naText')},${SCP('.naBold')},${SCP('.naLet')},${SCP('.naDlg')}{font-family:DroidSerif,Georgia,serif!important;font-size:20px!important;letter-spacing:-0.65px}${SCP('.naField')}{font-family:DroidSerif,Georgia,serif!important;font-size:19px!important;letter-spacing:-0.65px}${SCP('.naText.naS20')}{font-size:18px!important}${SCP('.naSmall')}{font-size:16.5px!important}${SCP('.naD19')}{font-size:17.5px!important}${SCP('.naUrl')}{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='52'] .naText,[data-native-ab12='52'] .naBold,[data-native-ab12='52'] .naLet,[data-native-ab12='52'] .naDlg,[data-native-ab12='52'] .naField{letter-spacing:0!important}[data-native-ab12='52'] .naTitle{font-size:22px!important}[data-native-ab12='52'] .naFoot52{font-size:17px!important;color:#202020!important}[data-native-ab12='52'] .naTitle.naRB b{top:-3px}[data-native-ab12='52'] .naField.naList52{font-size:12px!important}[data-native-ab12='52'] .naCheck.naStack{flex-direction:column;align-items:center;gap:4px;width:108px}[data-native-ab12='52'] .naCheck.naStack output{white-space:nowrap;text-align:center}`}</style><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='89'&&<>
   {art('lesson-tab',738,18,62,75)}
   {text(75,63,300,'LERNWORTSCHATZ','naHeadline')}
@@ -120,7 +125,7 @@ export function NativeAB12({page}:{page:string}){
   <div className="naGRule" style={{left:540,top:186,width:438,height:3,background:'#b5d8b2'}}/>
   {art('mag1',70,216,54,52)}
   {title('1',125,225,780,'Lesen Sie noch einmal Ihre Pläne im Kursbuch auf Seite 31 (Aufgabe 6).','naRB naNw')}
-  {text(165,254,430,'Wann wollen Sie was machen? Schreiben Sie.','naD20')}
+  {text(165,254,600,'Wann wollen Sie was machen? Schreiben Sie.','naD20 naNw')}
   {text(167,291,340,'Im August / Im Sommer ...','naD20')}
   {text(167,316,250,'In zwei Jahren ...','naD20')}
   {text(167,341,250,'In zehn Jahren ...','naD20')}
@@ -129,6 +134,7 @@ export function NativeAB12({page}:{page:string}){
   {field('52-t1-a1',230,371,770,'Eigener Satz 1','naFieldBlank')}
   {field('52-t1-a2',167,404,833,'Eigener Satz 2','naFieldBlank')}
   {field('52-t1-a3',167,429,820,'Eigener Satz 3','naFieldBlank')}
+  {save52('52-t1',880,250)}
   {art('pen1',72,448,49,50)}
   {title('2',122,459,830,'Sie haben 100 000 € gewonnen. Was machen Sie? Schreiben Sie.','naRB naNw')}
   {text(166,498,140,'Reisen?','naD20')}
@@ -140,15 +146,17 @@ export function NativeAB12({page}:{page:string}){
   {field('52-t2-b2',230,574,770,'Eigene Idee 2','naFieldBlank')}
   {field('52-t2-b3',167,606,833,'Eigene Idee 3','naFieldBlank')}
   {field('52-t2-b4',167,634,833,'Eigene Idee 4','naFieldBlank')}
+  {save52('52-t2',880,461)}
   {text(120,689,480,'Wählen Sie eine Aufgabe zu Lektion','naSec naNw')}
   {gl(502,692,'18','#5a9d97')}
   <div className="naGRule" style={{left:534,top:717,width:432,height:3,background:'#a0c4ca'}}/>
   {art('mag2',70,744,48,52)}
   {title('1',119,756,850,'Lesen Sie noch einmal den Ratgeber im Kursbuch auf Seite 35 und notieren Sie.','naRB naNw')}
   {text(162,795,295,'Diese Körperteile stehen im Text:','naD20 naNw')}
-  {field('52-t3-c1',490,793,476,'Körperteile im Text')}
+  {field('52-t3-c1',495,793,467,'Körperteile im Text','naList52')}
   {text(161,821,350,'Diese Körperteile stehen nicht im Text:','naD20 naNw')}
-  {field('52-t3-c2',545,820,421,'Körperteile nicht im Text')}
+  {field('52-t3-c2',550,820,412,'Körperteile nicht im Text','naList52')}
+  {check52t3(968,791)}
   {art('pen2',70,872,46,52)}
   {title('2',117,884,830,'Was machen Sie gegen Stress? Machen Sie Notizen und schreiben\nSie dann einen Ratgeber.','naRB naPre')}
   {text(159,949,170,'Gegen Stress hilft:','naD19 naNw')}
@@ -157,6 +165,7 @@ export function NativeAB12({page}:{page:string}){
   {field('52-t4-d2',167,1100,833,'Eigener Ratgeber 1','naFieldBlank')}
   {field('52-t4-d3',167,1132,833,'Eigener Ratgeber 2','naFieldBlank')}
   {field('52-t4-d4',167,1164,833,'Eigener Ratgeber 3','naFieldBlank')}
+  {save52('52-t4',880,882)}
   {art('modul',0,1388,72,24)}
   {text(96,1388,220,'52 \u00a0|\u00a0 zweiundfünfzig','naFooter naFoot52')}
  </>}
