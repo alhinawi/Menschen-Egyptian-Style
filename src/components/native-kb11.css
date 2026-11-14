@@ -218,3 +218,8 @@
 .nkbMark.good{background:rgba(46,160,67,.45)}
 .nkbMark.bad{background:rgba(208,58,58,.45)}
 .nkbMark.miss{outline:2px dashed rgba(208,58,58,.75);outline-offset:1px}
+/* p27: X marks centred on the printed rings (boxes carry invisible hit padding); no tap-focus ring from the enlarged boxes. */
+.nkb[data-native-page="27"] .nkbCanvas input:is([type=radio],[type=checkbox]).nkbField:focus:not(:focus-visible){outline:0}
+.nkb[data-native-page="27"] .nkbCanvas input[type=radio][data-native-field="pron-er"].nkbField{--answer-cross-size:15px!important;background-position:68% 81%!important}
+.nkb[data-native-page="27"] .nkbCanvas input[type=radio][data-native-field="pron-es"].nkbField{--answer-cross-size:15px!important;background-position:68% 81%!important}
+.nkb[data-native-page="27"] .nkbCanvas input[type=radio][data-native-field="pron-sie"].nkbField{--answer-cross-size:15px!important;background-position:68% 54%!important}
