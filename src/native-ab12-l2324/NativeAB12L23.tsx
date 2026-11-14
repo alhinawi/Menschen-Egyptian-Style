@@ -581,7 +581,7 @@ export function NativeAB12L23({page}:{page:string}){
   {field('92-8d',558,206,168,'8 d Alles Gute')}
   {text(117,233,16,'e','naBookSerif')}{text(135,230,410,'Sie treffen eine Nachbarin am 26. Dezember im Treppenhaus.','naBookSerif naEx4t naNw')}
   {field('92-8e',558,225,168,'8 e Frohe Weihnachten')}
-  {check('92-8',736,236,{'92-8b':'Frohes neues Jahr.|Frohes neues Jahr','92-8c':'Gut gemacht.|Gut gemacht','92-8d':'Alles Gute|Alles Gute.','92-8e':'Frohe Weihnachten.|Frohe Weihnachten'})}
+  {check('92-8',675,250,{'92-8b':'Frohes neues Jahr.|Frohes neues Jahr','92-8c':'Gut gemacht.|Gut gemacht','92-8d':'Alles Gute|Alles Gute.','92-8e':'Frohe Weihnachten.|Frohe Weihnachten'})}
   {kb(55,279,'KB 4')}
   <div className="naText naTitle naRB" style={{left:83,top:275}}><b>9</b></div>
   <div className="naText naTitle naRB naNw" style={{left:117,top:275,width:540}}><Words text="Schreiben Sie eigene Aufgaben wie in "/><span className="naBlue">8</span><Words text=" und tauschen Sie mit Ihrer"/></div>
@@ -621,7 +621,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(449,593,150,'gern eine CD machen.','naBookSerif naEx4t naNw')}
   {text(449,612,220,'ihr gern ein Motorrad schenken.','naBookSerif naEx4t naNw')}
   {text(449,633,170,'gern zum Konzert gehen.','naBookSerif naEx4t naNw')}
-  {check('92-11',700,644,{'92-11ich':'würde','92-11er':'würde','92-11wir':'würden','92-11sie':'würden'})}
+  {check('92-11',677,642,{'92-11ich':'würde','92-11er':'würde','92-11wir':'würden','92-11sie':'würden'})}
   {kb(55,697,'KB 5')}
   <div className="naSide naSideB" style={{left:60,top:718}}>STRUKTUREN</div>
   {title('12',81,693,640,'Was sagen die Personen? Schreiben Sie.','naRB naNw')}
