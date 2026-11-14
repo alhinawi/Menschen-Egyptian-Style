@@ -17,8 +17,9 @@ import rightVoice1 from '../assets/feedback/right01_aywa.mp3?url';
 import rightVoice2 from '../assets/feedback/right02_aash.mp3?url';
 import rightVoice3 from '../assets/feedback/right03_yasalam.mp3?url';
 import rightVoice4 from '../assets/feedback/right04_bismallah.mp3?url';
+import rightVoice5 from '../assets/feedback/right05_mdammer.mp3?url';
 import sparkleTone from '../assets/feedback/ok06_sparkle.mp3?url';
 
 export const wrongVoices: string[] = [wrongVoice1, wrongVoice2, wrongVoice3, wrongVoice4, wrongVoice5, wrongVoice6, wrongTone, laughVoice1];
 export const incompleteVoices: string[] = [emptyVoice1, emptyVoice2, laughVoice1];
-export const correctVoices: string[] = [rightVoice1, rightVoice2, rightVoice3, rightVoice4, sparkleTone];
+export const correctVoices: string[] = [rightVoice1, rightVoice2, rightVoice3, rightVoice4, rightVoice5, sparkleTone];
