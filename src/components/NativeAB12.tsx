@@ -21,6 +21,7 @@ export function NativeAB12({page}:{page:string}){
  usePageReset(page,key,()=>{sv({});sr({})});
  const set=(id:string,v:string)=>{const n={...values,[id]:v};sv(n);localStorage.setItem(key,JSON.stringify(n))};
  const text=(x:number,y:number,w:number,t:string,cls='')=><div className={'naText '+cls} style={{left:x,top:y,width:w}}><Words text={t}/></div>;
+const bank=(x:number,y:number,w:number,parts:[string,boolean][])=><div className={'naText naOpt naNw naBank'} style={{left:x,top:y,width:w}}>{parts.map(([t,strike],i)=><span key={i}>{i>0&&' | '}{strike?<span className="naStrike"><Words text={t}/></span>:<Words text={t}/>}</span>)}</div>;
  const art=(name:string,x:number,y:number,w:number,h:number)=><PageImage className="naArt" src={`assets/book-crops/native-ab12-p${page}-${name}.png`} alt={'Originalillustration '+name} style={{left:x,top:y,width:w,height:h}}/>;
  const field=(id:string,x:number,y:number,w:number,label:string,cls='')=><input className={'naField '+cls} aria-label={label} data-native-field={id} style={{left:x,top:y,width:w}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
  const rule=(x:number,y:number,w:number)=><div className="naRule" style={{left:x,top:y,width:w}}/>;
@@ -232,9 +233,7 @@ export function NativeAB12({page}:{page:string}){
   {kb(78,178,'KB 4')}
   {title('1',130,172,760,'Ergänzen Sie das Gespräch. Schreiben Sie Sätze.','naGB')}
   <div className="naSide" style={{left:75,top:200}}>KOMMUNIKATION</div>
-  {([['sehr nett sein',172,113],['nicht funktionieren',299,158],['sofort kümmern',637,131],['Ihre Hilfe brauchen',783,130]] as [string,number,number][]).map(([t,x,w])=>text(x,215,w,t,'naOpt naNw'))}
-  {text(471,215,160,'für Sie tun können','naOpt naStrike naNw')}
-  {[289,462,635,773].map(x=>text(x,215,12,'|','naOpt'))}
+  {bank(172,215,800,[['sehr nett sein',false],['nicht funktionieren',false],['für Sie tun können',true],['sofort kümmern',false],['Ihre Hilfe brauchen',false]])}
   {text(167,250,22,'■','naSq')}
   {text(189,252,40,'Was','naDlg naNw')}
   {art('hand1',225,246,240,40)}
@@ -262,11 +261,8 @@ export function NativeAB12({page}:{page:string}){
   {kb(78,490,'KB 5')}
   {title('2',130,482,760,'Was bedeuten die Bilder im Hotel? Ordnen Sie zu.','naGB')}
   <div className="naSide" style={{left:75,top:520}}>WÖRTER</div>
-  {([['Föhn',171,42],['Internetverbindung',226,158],['Dusche',491,50],['Klimaanlage',563,97],['Aufzug',673,58],['Minibar',744,52]] as [string,number,number][]).map(([t,x,w])=>text(x,524,w,t,'naOpt naNw'))}
-  {text(397,524,80,'Fernseher','naOpt naStrike naNw')}
-  {[216,389,476,545,665,735,800].map(x=>text(x,524,10,'|','naOpt'))}
-  {([['Schwimmbad',170,109],['Restaurant',293,88],['Radio',395,45],['Tennisplatz',452,92],['Telefon',556,60]] as [string,number,number][]).map(([t,x,w])=>text(x,550,w,t,'naOpt naNw'))}
-  {[283,385,444,548].map(x=>text(x,550,10,'|','naOpt'))}
+  {bank(172,524,800,[['Föhn',false],['Internetverbindung',false],['Fernseher',true],['Dusche',false],['Klimaanlage',false],['Aufzug',false],['Minibar',false]])}
+  {bank(172,550,800,[['Schwimmbad',false],['Restaurant',false],['Radio',false],['Tennisplatz',false],['Telefon',false]])}
   {([['a',0,189],['d',0,409],['g',0,629],['j',0,844],['b',1,189],['e',1,409],['h',1,629],['k',1,844],['c',2,189],['f',2,409],['i',2,629],['l',2,844]] as [string,number,number][]).map(([l,r,x])=>
    <div key={l}>{text(x-26,[585,726,877][r]+4,20,l)}{art('icon-'+l,x,[585,726,877][r],92,92)}</div>)}
   {art('fernseher-hand',175,668,150,34)}
