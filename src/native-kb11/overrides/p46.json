@@ -278,7 +278,7 @@
         "Verwenden",
         "Sie",
         "die",
-        "W\u00f6rter",
+        "Wörter",
         "aus",
         "dem"
       ]
@@ -331,7 +331,7 @@
       "tol": 0,
       "ws": [
         "Wie",
-        "sp\u00e4t",
+        "spät",
         "ist",
         "es?"
       ]
@@ -341,10 +341,10 @@
       "cy": 1039.5,
       "tol": 0,
       "ws": [
-        "H\u00f6ren",
+        "Hören",
         "Sie",
         "und",
-        "erg\u00e4nzen",
+        "ergänzen",
         "Sie",
         "vor",
         "oder",
@@ -357,7 +357,7 @@
       "tol": 0,
       "ws": [
         "Uhrzeiten",
-        "\u00fcben:",
+        "üben:",
         "Arbeiten",
         "Sie",
         "zu",
@@ -387,5 +387,23 @@
       700,
       1390
     ]
+  },
+  "fieldadj": {
+    "a1": {
+      "x": 315,
+      "y": 484
+    },
+    "a2": {
+      "x": 316,
+      "y": 509
+    },
+    "b1": {
+      "x": 316,
+      "y": 547
+    },
+    "b2": {
+      "x": 316,
+      "y": 572
+    }
   }
 }

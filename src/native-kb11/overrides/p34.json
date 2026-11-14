@@ -145,27 +145,40 @@
    "group": "t3"
   },
   "t3a-see": {
-   "group": "t3"
+   "group": "t3",
+   "x": 499,
+   "y": 455
   },
   "t3b-schmidt": {
-   "group": "t3"
+   "group": "t3",
+   "x": 248,
+   "y": 478
   },
   "t3b-esebeck": {
    "group": "t3",
    "x": 407,
-   "w": 14
+   "w": 14,
+   "y": 476
   },
   "t3c-keine": {
-   "group": "t3"
+   "group": "t3",
+   "x": 327,
+   "y": 497
   },
   "t3c-zeit": {
-   "group": "t3"
+   "group": "t3",
+   "x": 430,
+   "y": 495
   },
   "t3d-praktisch": {
-   "group": "t3"
+   "group": "t3",
+   "x": 359,
+   "y": 516
   },
   "t3d-nicht": {
-   "group": "t3"
+   "group": "t3",
+   "x": 462,
+   "y": 515
   },
   "t5-rechnungen": {
    "x": 501,

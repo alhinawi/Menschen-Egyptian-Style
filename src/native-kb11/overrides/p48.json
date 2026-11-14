@@ -35,6 +35,14 @@
       "w": 18,
       "h": 18,
       "maxlen": 1
+    },
+    "a-hoeflich": {
+      "x": 319,
+      "y": 305
+    },
+    "a-unhoeflich": {
+      "x": 421,
+      "y": 304
     }
   },
   "checks": {
