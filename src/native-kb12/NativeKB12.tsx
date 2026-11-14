@@ -921,7 +921,7 @@ export function NativeKB12({page}:{page:string}){
  </>}
 
  {['83','85','87'].includes(page)&&text(640,75,400,'AKTIONSSEITEN','nkModule')}
- {['85','87'].includes(page)&&<><div className="nkActionSwooshA"/><div className="nkActionSwooshB"/></>}
+ {['73','75','77','79','81','83','85','87'].includes(page)&&<><div className="nkActionSwooshA"/><div className="nkActionSwooshB"/></>}
  {page==='82'&&<>
  {text(35,164,65,'KB | S. 31','nkAB')}{text(110,150,170,'Lektion 17 | 6b','nkActionRef')}{text(110,195,920,'Über Wünsche und Pläne sprechen','nkBold')}{text(120,240,900,'a  Arbeiten Sie mit dem Wörterbuch und notieren Sie.','nkBold nkLblBlue')}{save('L17-6b-a',658,240)}{art('wishes',0,275,1100,130)}
  <table className="nkWishes" style={{left:110,top:430,width:895}}><tbody>{['Was willst du beruflich machen?','Welche Pläne/Wünsche hast du für deine Familie?','Welche Pläne/Wünsche hast du für deine Freizeit?','Was willst du lernen?','Was willst du im Urlaub machen?','Du hast viel Geld. Was willst du kaufen?'].map((q,i)=><tr key={q}><th><Words text={q}/></th><td>{['unbedingt noch','auf keinen Fall'].map((v,j)=><div key={v}><span><Words text={v}/></span>{inline('wunsch-'+i+'-'+j,395,q+': '+v)}</div>)}</td></tr>)}</tbody></table>
