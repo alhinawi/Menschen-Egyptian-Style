@@ -353,6 +353,13 @@ export function NativeAB12P31to46({page}:{page:string}){
   {field('p33-a2_11',367,1321,37,'Lücke 11')}
   {field('p33-a2_12',482,1321,36,'Lücke 12')}
   {check('33-1',166,1356,{'p33-a2_1':'o','p33-a2_2':'o','p33-a2_3':'u','p33-a2_4':'u','p33-a2_5':'u','p33-a2_6':'u','p33-a2_7':'o','p33-a2_8':'u','p33-a2_9':'o','p33-a2_10':'u','p33-a2_11':'o','p33-a2_12':'u'})}
+  {field('p33-a1_2o',184,1148,48,'Wie oft o in 2','naFieldBlank')}
+  {field('p33-a1_2u',252,1148,48,'Wie oft u in 2','naFieldBlank')}
+  {field('p33-a1_3o',392,1123,48,'Wie oft o in 3','naFieldBlank')}
+  {field('p33-a1_3u',460,1123,48,'Wie oft u in 3','naFieldBlank')}
+  {field('p33-a1_4o',392,1148,48,'Wie oft o in 4','naFieldBlank')}
+  {field('p33-a1_4u',459,1148,48,'Wie oft u in 4','naFieldBlank')}
+  {check('33-2',166,1190,{'p33-a1_2o':'1|1x','p33-a1_2u':'2|2x','p33-a1_3o':'1|1x','p33-a1_3u':'2|2x','p33-a1_4o':'1|1x','p33-a1_4u':'1|1x'})}
  </>}
  {page==='34'&&<>
   {stext(128,76,130,'TEST',{fontSize:30,letterSpacing:5,color:'#6e6e68',fontFamily:'Georgia'},'naNw')}
