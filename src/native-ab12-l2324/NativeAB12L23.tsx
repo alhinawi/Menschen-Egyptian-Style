@@ -532,7 +532,7 @@ export function NativeAB12L23({page}:{page:string}){
   {field('91-6b-n2',459,685,250,'Meine Sprache Zeile 2','naFieldBlank')}
   {field('91-6b-n3',459,707,250,'Meine Sprache Zeile 3','naFieldBlank')}
   {field('91-6b-n4',459,730,250,'Meine Sprache Zeile 4','naFieldBlank')}
-  {check('91-6b',738,724,{'91-6b-r1':'Weihnachten','91-6b-r2':'Geburtstag','91-6b-r3':'Ostern','91-6b-r4':'Silvester'})}
+  {check('91-6b',545,762,{'91-6b-r1':'Weihnachten','91-6b-r2':'Geburtstag','91-6b-r3':'Ostern','91-6b-r4':'Silvester'},'stack')}
   {kb(32,796,'KB 4')}
   {title('7',55,790,640,'Was ist das? Ergänzen Sie.','naRB naNw')}
   <div className="naSide naSideB" style={{left:56,top:831}}>WÖRTER</div>
@@ -561,7 +561,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(433,958,230,'Am Wochenende machen sie eine','naBookSerif naNw')}
   {field('91-7d',436,972,259,'7 d Einweihungsparty')}
   {text(699,984,10,'.','naBookSerif')}
-  {check('91-7',714,1008,{'91-7a':'Neujahr','91-7b':'Hochzeit','91-7c':'Prüfungen','91-7d':'Einweihungsparty'})}
+  {check('91-7',320,768,{'91-7a':'Neujahr','91-7b':'Hochzeit','91-7c':'Prüfungen','91-7d':'Einweihungsparty'})}
   {art('modul8-tab',742,1043,65,25)}
   {text(723.6,1044,30,'91','naFootL23B naNw',11)}{text(706.9,1044,6,'|','naFootL23 naNw',12.3)}{text(606.3,1044,110,'einundneunzig','naFootL23 naNw',12.3)}
  </>}
