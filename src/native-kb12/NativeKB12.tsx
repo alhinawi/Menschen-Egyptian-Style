@@ -208,10 +208,10 @@ export function NativeKB12({page}:{page:string}){
  {text(130,250,880,'a  Wie ist Ihre neue Wohnung? Ergänzen Sie.','nkBold')}
  <svg aria-hidden="true" style={{position:'absolute',left:200,top:277,width:650,height:215,pointerEvents:'none'}} viewBox="0 0 650 215"><g fill="none" stroke="#8eb8ce" strokeWidth="2"><ellipse cx="302" cy="75" rx="93" ry="43"/><path d="M209 63 L40 16 M209 88 L90 135 M370 47 L500 8 M393 80 L600 110 M302 118 L302 205"/></g></svg>{text(414,328,180,'Meine neue\nWohnung','nkSpeech')}{text(224,300,150,'Kosten?')}{field('10-kosten',222,331,170,'Kosten der Wohnung')}{text(266,365,150,'Zimmer?')}{field('10-zimmer',222,399,170,'Zimmer der Wohnung')}{text(632,285,150,'Größe?')}{field('10-groesse',622,318,160,'Größe der Wohnung')}{text(610,369,150,'negativ?')}{field('10-negativ',610,404,405,'Was ist negativ?')}{text(456,433,150,'positiv?')}{field('10-positiv',456,470,406,'Was ist positiv?')}
  {text(805,336,220,'das Bad: kein\nFenster','nkSmall')}{text(884,462,160,'die Küche:\nsehr groß','nkSmall')}
- {save('10a',1035,402)}{text(130,520,910,'b  In welcher Reihenfolge wollen Sie die Punkte aus a erwähnen? Sortieren Sie.','nkBold')}{field('10-reihenfolge',163,558,840,'Reihenfolge der Punkte')}{save('10b',1006,556)}
- {text(130,602,910,'c  Wählen Sie eine Anrede, passende Sätze und eine Grußformel und schreiben Sie die E-Mail.','nkBold')}
+ {save('10a',1035,402)}{text(130,520,910,'b  In welcher Reihenfolge wollen Sie die Punkte aus a erwähnen? Sortieren Sie.','nkBold')}{save('10b',1006,556)}
+ {text(130,602,960,'c  Wählen Sie eine Anrede, passende Sätze und eine Grußformel und schreiben Sie die E-Mail.','nkBold')}
  {text(163,649,695,'Liebe/Lieber …, | Hallo …,\nich bin umgezogen. Meine Wohnung ist … m² groß und kostet … |\nSie hat eine Küche / ein Bad / … |\nToll ist: Die Küche / Das Wohnzimmer hat/ist … |\nLeider hat das Bad / … kein Fenster / … |\nHerzliche Grüße | Liebe Grüße | Viele Grüße','nkBank')}
- <textarea className="nkOpen" style={{left:879,top:647,width:190,height:169}} aria-label="Meine E-Mail" value={values['10-email']||''} onChange={e=>set('10-email',e.target.value)}/>{save('10c',1000,814)}
+ {save('10c',1000,814)}
  {text(121,839,460,'GRAMMATIK','nkModule')}{text(652,839,420,'KOMMUNIKATION','nkModule')}
  <div className="nkCommunication" style={{left:121,top:885,width:510}}>
  <section><h3><Words text="Genitiv bei Eigennamen"/></h3><p><Words text={'Ottos Nachbarin = die Nachbarin von Otto\nVanillas Garten = der Garten von Vanilla'}/></p></section>
