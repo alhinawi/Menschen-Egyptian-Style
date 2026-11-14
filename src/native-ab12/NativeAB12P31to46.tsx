@@ -1694,7 +1694,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {dot('p44-12b','true',741,1269,'12 b',true)}
   {dot('p44-12c','true',741,1295,'12 c',true)}
   {dot('p44-12d','true',741,1321,'12 d',true)}
-  {check('44-1',966,352,{'p44-10c':'habe Bauchschmerzen','p44-10d':'Arm tut weh','p44-10e':'habe Kopfschmerzen','p44-10f':'Augen tun weh'})}
+  {check('44-1',966,388,{'p44-10c':'habe Bauchschmerzen','p44-10d':'Arm tut weh','p44-10e':'habe Kopfschmerzen','p44-10f':'Augen tun weh'})}
   {check('44-2',962,712,{'p44-11-1':'gegen Stress','p44-11-2':'viel Sport','p44-11-3':'hilft','p44-11-4':'schaffe ich nicht','p44-11-5':'einen Tipp','p44-11-6':'einen Kräutertee'})}
   {check('44-3',962,1345,{'p44-12a':'false','p44-12b':'false','p44-12c':'true','p44-12d':'true'})}
  </>}
