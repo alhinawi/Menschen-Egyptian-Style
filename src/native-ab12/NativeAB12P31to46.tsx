@@ -891,6 +891,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(140,1170,412,'Ihre Partnerin / Ihr Partner ergänzt die Wörter.','naNw')}
   {text(178,1240,220,'Ich möchte gern nach China','naHand naD19 naNw')}
   {text(350,1258,115,'. (SIERNE)','naHand naD19 naNw')}
+  {field('p37-9ex',178,1256,152,'9 Beispiel','naFieldBlank')}
   {art('modul-tab',985,1391,87,24)}
   {text(786,1394,155,'siebenunddreißig','naFooter naNw')}{text(940,1394,8,'|','naFooter naNw')}{text(961,1394,22,'37','naFooter naNw')}
   {field('p37-6b',515,226,125,'6 b')}
