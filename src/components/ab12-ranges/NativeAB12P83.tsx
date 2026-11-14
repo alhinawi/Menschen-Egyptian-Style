@@ -9,7 +9,7 @@ function NeutralCheck({id,x,y}:{id:string,x:number,y:number}){
 
 function P83(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,modTab,box,rect}=h;const D='naDroid83';const V={c:'#767563'};return <>
   {art('rail',693,24,115,1011)}
-  {ln(69,64,220,20,'LERNWORTSCHATZ',{c:'#363534',ls:1.5,fam:'serif'})}
+  {ln(69,64,230,20,'LERNWORTSCHATZ',{c:'#363534',ls:1.5,fam:'serif'})}
   {rect(296,86,355,2,'#ae5f6e')}
   {box('1',65,121)}  {rn(100,123,420,15,[{t:'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.',b:1}],{fam:'fira'})}
   {ln(99,154,63,14,'Kleidung',{b:1,cls:D})}
@@ -57,7 +57,7 @@ function P83(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,modTab,box,rect}
   {ln(390,545,27,14,'Toll!',{cls:D})}
   {[189,208,228,247,267,286,306,325,345,364,423,442,481,501,520,598,618].map((y,i)=><div key={'rl'+y} className='naRule' style={{left:228,top:y,width:144,borderBottom:'1px solid #c6c6ce'}}/>)}
   {[189,238,277,316,355,375,394,414,453,472,491,520,560].map((y,i)=><div key={'rr'+y} className='naRule' style={{left:500,top:y,width:148,borderBottom:'1px solid #c6c6ce'}}/>)}
-  {art('tipp',248,646,27,54)}
+  {art('tipp',248,646,260,54)}
   {ln(273,653,123,13,'Schneiden Sie Bilder',{cls:D})}
   {ln(273,670,125,13,'aus und ergänzen Sie',{cls:D})}
   {ln(273,685,78,13,'die Kleidung.',{cls:D})}
@@ -68,7 +68,7 @@ function P83(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,modTab,box,rect}
   {[189,238,277,316,355,375,394,414,453,472,491,520,560].map((y,i)=>field('p83-1-r'+(i+1),500,y-19,148,'1 rechts Zeile '+(i+1),'naFieldBlank'))}
   {[783,803,822,842,861,881,900,920,939,958,978,997,1017].map((y,i)=>field('p83-2-'+(i+1),98,y-19,550,'2 Notizzeile '+(i+1),'naFieldBlank'))}
   <NeutralCheck id='n1' x={100} y={650}/>
-  <NeutralCheck id='n2' x={656} y={978}/>
+  <NeutralCheck id='n2' x={520} y={1026}/>
   {wl(1065,12,[{x:599,w:91,t:'dreiundachtzig'},{x:703,w:2,t:'|'},{x:717,w:13,t:'83'}])}
   {modTab(740,1053,'Modul 8')}
 </>}
