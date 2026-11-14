@@ -1,6 +1,7 @@
-import {AB12Canvas,AB12Helpers} from '../ab12-shared';
+import {AB12Canvas,AB12Helpers,normalize} from '../ab12-shared';
+import {CheckButton} from '../CheckButton';
 
-function P69(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,title,kb,side,audio,strike,head,foot,tab,modTab,box,rect,values,set}=h;return <>
+function P69(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,title,kb,side,audio,strike,head,foot,tab,modTab,box,rect,values,set,results,sr}=h;return <>
   {<div style={{position:'absolute',left:107,top:150,width:608,height:206,background:'linear-gradient(to bottom,#dfe7ee 0px,#e9e9dd 10px,#fdfde9 18px,#fefef2 55%,#ffffff 94%)',boxShadow:'3px 3px 5px rgba(60,70,90,.22)'}}/>}
   {<div style={{position:'absolute',left:702,top:164,width:13,height:188,background:'linear-gradient(to left,#c3dcf3 0,#e8f2fb 60%,rgba(253,253,243,0) 100%)'}}/>}
   {rect(344,83,392,3,'#9a4580')}
@@ -78,9 +79,18 @@ function P69(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {dot('a2','langOderKurz',135,970,'Aussprache 2: koennen lang oder kurz sein.')}
   {check('confidence-p69-a2',420,982,{'a2':'langOderKurz'})}
   {check('g1',434,792,{'p69-a1a1':'ä','p69-a1a2':'e','p69-a1a3':'e','p69-a1a4':'ä','p69-a1b1':'ä','p69-a1b2':'e','p69-a1b3':'ä','p69-a1b4':'e'})}
+  {<div style={{position:'absolute',left:60,top:1115,width:690,height:240,background:'#ffffff',border:'1.5px solid #d8d4c4'}}/>}
+  {box('1',72,1123)}
+  {rn(106,1126,320,17,[{t:'Notieren Sie die Regeln.',b:1}],{fam:'fira'})}
+  {ln(80,1150,400,14,'Beispiel: nicht laut Musik hören',{i:1,cls:'naDroid69'})}
+  {field('p69-s1r1',80,1176,560,'Schreiben 1 Regel 1','naFieldBlank')}
+  {field('p69-s1r2',80,1221,560,'Schreiben 1 Regel 2','naFieldBlank')}
+  {field('p69-s1r3',80,1266,560,'Schreiben 1 Regel 3','naFieldBlank')}
+  {[1203,1248,1293].map(y=><div key={'pr'+y} className='naRule' style={{left:80,top:y,width:560,borderBottom:'1px solid #c6c6ce'}}/>)}
+  {(()=>{const KEYS=['am mittag nicht üben','nicht auf dem balkon grillen','in der woche keine party feiern'];const IDS=['p69-s1r1','p69-s1r2','p69-s1r3'];const marks=Object.fromEntries(IDS.map(k=>[k,KEYS.join('|')]));return <div className="naCheck" data-check="s1" style={{left:80,top:1310}}><CheckButton answers={marks} onClick={()=>{const got=IDS.map(k=>normalize(values[k]||''));sr({...results,s1:KEYS.every(k=>got.includes(k))&&got.every(g=>KEYS.includes(g))})}}></CheckButton><output aria-live="polite">{('s1' in results)?(results.s1?'✓ Richtig!':'Noch einmal'):''}</output></div>})()}
 </>}
 
 export function NativeAB12P69({page}:{page:string}){
- if(page==='69')return <AB12Canvas page={page} width={810} height={1095}>{P69}</AB12Canvas>;
+ if(page==='69')return <AB12Canvas page={page} width={810} height={1370}>{P69}</AB12Canvas>;
  return null;
 }
