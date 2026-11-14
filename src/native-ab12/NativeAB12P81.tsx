@@ -7,6 +7,12 @@ import '../components/native-ab12.css';
 function Words({text}:{text:string}){return <>{text.split(/(\s+)/).map((w,i)=>/\p{L}/u.test(w)?<span key={i} className="tapWord" role="button" tabIndex={0} data-word={w.replace(/^[^\p{L}]+|[^\p{L}]+$/gu,'')} data-phrase={text}>{w}</span>:w)}</>}
 const normalize=(s:string)=>s.normalize('NFC').trim().toLocaleLowerCase('de').replace(/[.!?]+$/,'').replace(/\s+/g,' ');
 
+// Training: Aussprache 1 — Wortakzent. Value token per vowel: the letter, with a 1-based
+// suffix when the letter repeats in the word ('am besten': a, e1, e2), so the stressed
+// first e of 'besten' is graded apart from the unstressed second e.
+const stressTokens=(word:string)=>{const vowels=[...word].map(c=>c.toLowerCase()).filter(c=>/[aeiou]/.test(c));const counts:Record<string,number>={};vowels.forEach(c=>counts[c]=(counts[c]||0)+1);const seen:Record<string,number>={};return vowels.map(c=>{seen[c]=(seen[c]||0)+1;return counts[c]>1?c+seen[c]:c})};
+const A1_ITEMS:[string,string,string][]=[['p81-a1-dunkel','dunkel','u'],['p81-a1-golden','golden','o'],['p81-a1-hose','Hose','o'],['p81-a1-getragen','getragen','a'],['p81-a1-mantel','Mantel','a'],['p81-a1-ambesten','am besten','a e1|e1'],['p81-a1-bluse','Bluse','u'],['p81-a1-danke','danke','a'],['p81-a1-bitte','bitte','i']];
+
 export function NativeAB12P81({page}:{page:string}){
  const W=810, H=1095;
  const root=useRef<HTMLDivElement>(null),player=useRef<HTMLAudioElement>(null);
@@ -25,6 +31,44 @@ export function NativeAB12P81({page}:{page:string}){
  const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||'')))})}/><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const num=(x:number,y:number,n:string)=><div className="naNum81" style={{left:x,top:y}}>{n}</div>;
  const audio=(x:number,y:number,t:string)=><><div className="naTri81" style={{left:x,top:y}}/><div className="naAudio81" style={{left:x+9,top:y-3}}>{t}</div></>;
+
+ // Training: Aussprache 1 — clickable vowels for marking the Wortakzent.
+ // Field value = marked vowel letters in word order, space-joined (matches the answers map).
+ const StressWord=({id,word}:{id:string;word:string})=>{
+  const wr=useRef<HTMLSpanElement>(null);
+  const [rects,setRects]=useState<{cx:number;by:number;l:number;t:number;w:number;h:number}[]>([]);
+  const vchars=[...word].map((c,i)=>({c,i})).filter(v=>/[aeiou]/.test(v.c));
+  const marked=(values[id]||'').split(' ').filter(s=>s.length).map(Number).filter(n=>n<vchars.length);
+  useLayoutEffect(()=>{
+   const el=wr.current;if(!el)return;
+   const tn=el.firstChild;if(!tn||tn.nodeType!==3)return;
+   const measure=()=>{
+    const base=el.getBoundingClientRect();if(!base.width)return;
+    const list:{cx:number;by:number;l:number;t:number;w:number;h:number}[]=[];
+    for(const {i} of vchars){
+     const r=document.createRange();r.setStart(tn,i);r.setEnd(tn,i+1);
+     const b=r.getBoundingClientRect();
+     list.push({cx:(b.left-base.left)/scale+(b.width/scale)/2,by:(b.bottom-base.top)/scale,l:(b.left-base.left)/scale,t:(b.top-base.top)/scale,w:b.width/scale,h:b.height/scale});
+    }
+    setRects(list);
+   };
+   measure();
+   let live=true;document.fonts?.ready.then(()=>{if(live)measure()}).catch(()=>{});
+   return ()=>{live=false};
+  },[word,scale]);
+  const toggle=(vi:number)=>{
+   const cur=new Set(marked);
+   if(cur.has(vi))cur.delete(vi);else cur.add(vi);
+   set(id,[...cur].sort((a,b)=>a-b).join(' '));
+   wr.current?.removeAttribute('data-check-mark');
+  };
+  const tokens=stressTokens(word);
+  return <span ref={wr} className="naStressWord" data-native-field={id} data-value={marked.map(vi=>tokens[vi]||'').join(' ')} data-empty={marked.length?'0':'1'}>
+   {word}
+   {rects.map((r,vi)=><span key={vi} className="naStressHit" style={{left:r.l-1.5,top:r.t,width:r.w+3,height:r.h+3}} onClick={()=>toggle(vi)}/>)}
+   {rects.map((r,vi)=>marked.includes(vi)?<span key={'m'+vi} className="naStressMark" style={{left:r.cx,top:r.by-1}}/>:null)}
+  </span>;
+ };
 
  if(page!=='81')return null;
  return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-500.ttf') format('truetype');font-weight:500}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-600.woff2') format('woff2');font-weight:600}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-700.woff2') format('woff2');font-weight:700}
@@ -60,6 +104,13 @@ export function NativeAB12P81({page}:{page:string}){
 [data-native-ab12='81'] .naTippT81{position:absolute;font:700 8px FiraSans,sans-serif;color:#4b2d07;writing-mode:vertical-rl;transform:rotate(180deg)}
 [data-native-ab12='81'] .naCanvas .naField.naGap81{height:17px!important;font:14px DroidSerif,Georgia,serif!important;color:#1c3f8f!important;border-bottom:1px solid #9a9a9b!important}
 [data-native-ab12='81'] .naCanvas .naDot.naDot81{width:13px!important;height:13px!important;border-width:1.5px!important}
+[data-native-ab12='81'] .naStressWord{position:relative;white-space:nowrap}
+[data-native-ab12='81'] .naStressHit{position:absolute;cursor:pointer;border-radius:2px}
+[data-native-ab12='81'] .naStressHit:hover{background:rgba(28,63,143,.16)}
+[data-native-ab12='81'] .naStressMark{position:absolute;width:5px;height:5px;border-radius:50%;background:#1c3f8f;pointer-events:none;transform:translateX(-50%)}
+[data-native-ab12='81'] .naStressWord[data-check-mark='ok'] .naStressMark{background:#2f7d4f}
+[data-native-ab12='81'] .naStressWord[data-check-mark='bad'] .naStressMark{background:#c62f2f}
+[data-native-ab12='81'] .naStressWord[data-check-mark='bad'][data-empty='1']{box-shadow:0 2px 0 #c62f2f}
 [data-native-ab12='81'] .naCheck{position:absolute;display:flex;align-items:center;gap:6px}
 [data-native-ab12='81'] .naCheck output{font:600 13px FiraSans,sans-serif;color:#26764c}
 `}</style><div className="naCanvas naNarrow" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
@@ -155,11 +206,12 @@ export function NativeAB12P81({page}:{page:string}){
   {num(71,815,'1')}
   {text(105,816,250,'Hören Sie und markieren Sie den','naInstL81')}
   {text(97,833,100,'Wortakzent.','naInstL81')}
-  {text(105,866,300,'Gürtel – Schuhe – dunkel – golden –','naAex81')}
+  <div className="naText naAex81" style={{left:105,top:866,width:320}}>Gürtel – Schuhe – <StressWord id='p81-a1-dunkel' word='dunkel'/> – <StressWord id='p81-a1-golden' word='golden'/> –</div>
   <div style={{position:'absolute',left:115,top:878,width:6,height:6,borderRadius:3,background:'#8dd11c'}}/>
   <div style={{position:'absolute',left:185,top:879,width:10,height:2,background:'#b56b39'}}/>
-  {text(105,885,320,'Hose – getragen – Mantel – am besten –','naAex81')}
-  {text(105,905,180,'Bluse – danke – bitte','naAex81')}
+  <div className="naText naAex81" style={{left:105,top:885,width:330}}><StressWord id='p81-a1-hose' word='Hose'/> – <StressWord id='p81-a1-getragen' word='getragen'/> – <StressWord id='p81-a1-mantel' word='Mantel'/> – <StressWord id='p81-a1-ambesten' word='am besten'/> –</div>
+  <div className="naText naAex81" style={{left:105,top:905,width:190}}><StressWord id='p81-a1-bluse' word='Bluse'/> – <StressWord id='p81-a1-danke' word='danke'/> – <StressWord id='p81-a1-bitte' word='bitte'/></div>
+  {(()=>{const answers=Object.fromEntries(A1_ITEMS.map(([id,,a])=>[id,a]));const val=(id:string,word:string)=>{const toks=stressTokens(word);return (values[id]||'').split(' ').filter(s=>s.length).map(Number).map(vi=>toks[vi]||'').join(' ')};return <div className="naCheck" data-check="81-a1" style={{left:203,top:902}}><CheckButton answers={answers} onClick={()=>sr({...results,'81-a1':A1_ITEMS.every(([id,word,a])=>a.split('|').some(v=>normalize(v)===normalize(val(id,word))))})}/><output aria-live="polite">{'81-a1' in results?(results['81-a1']?'✓ Richtig!':'Noch einmal'):''}</output></div>})()}
   {audio(373,822,'2 35')}
   {num(411,815,'3')}
   {text(443,816,250,'Hören Sie und sprechen Sie nach.','naInstL81')}
@@ -186,7 +238,7 @@ export function NativeAB12P81({page}:{page:string}){
   {dot('p81-a2','nein',180,1021,'Regel Nein')}
   {text(147,1017,20,'Ja.','naRegel81')}
   {text(200,1019,35,'Nein.','naRegel81')}
-  {check('81-a2',250,1014,{'p81-a2':'nein'})}
+  {check('81-a2',250,1014,{'p81-a2':'ja'})}
 
   {art('woman',666,893,72,145)}
 
