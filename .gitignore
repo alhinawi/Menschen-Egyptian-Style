@@ -13,3 +13,4 @@ scripts/__pycache__/
 __pycache__/
 *.pyc
 src/generated/
+.wrangler/
