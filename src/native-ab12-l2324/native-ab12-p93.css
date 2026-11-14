@@ -1,7 +1,7 @@
 /* p93 ex3 (tap-to-separate): invisible gap zones over the printed strings, thin navy
    ticks below the baseline for chosen separations, underline-only marks in house
    colours under each printed line (text colour and the strings stay visible). */
-.naTap93{position:absolute;font-size:14px;line-height:1.27;color:#252723;white-space:nowrap;z-index:3}
+.naTap93{position:absolute;font-family:FiraSans,'Trebuchet MS',sans-serif;font-size:14px;line-height:1.27;color:#252723;white-space:nowrap;z-index:3}
 .naTap93 .naTapLine93{position:absolute;left:0;white-space:nowrap}
 .naTap93 .naGap93{position:absolute;background:transparent;border:0;padding:0;margin:0;cursor:pointer;z-index:4;appearance:none;min-height:0!important;min-width:0!important;border-radius:0}
 .naTap93 .naGap93:focus-visible{outline:1.5px solid #26764c}
