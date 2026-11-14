@@ -67,7 +67,7 @@ export function NativeAB12L23({page}:{page:string}){
   {art('hand-a2',320,678,48,20)}
   {text(522,677,20,'/','naPencil')}
   {field('84-3-a1',322,655,186,'3 Adjektive Zeile 1','naFieldBlank')}
-  <NeutralCheck id='84-3' x={560} y={596}/>
+  <NeutralCheck id='84-3' x={568} y={588}/>
   {kb(58,724,'KB 3')}
   {title('4',88,719,640,'Ergänzen Sie die Gespräche.','naRB naNw')}
   <div className="naSide naSideB" style={{left:64,top:795}}>KOMMUNIKATION</div>
