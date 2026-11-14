@@ -708,7 +708,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(484,851,14,'d','naBookSerif naAF93')}{text(502,851,260,'meinefreundinhateinenfreundinulm','naBookSerif naAF93 naNw')}
   {audio('assets/ab-cd2-track46.mp3',444,888,'2 46','2')}
   {text(488,892,250,'Hören Sie und vergleichen Sie.','naInst93 naNw')}
-  {audio('assets/ab-cd2-track47.mp3',414,933,'2 47','4')}
+  {audio('assets/ab-cd2-track47.mp3',409,933,'2 47','4')}
   {title('4',454,937,270,'Zungenbrecher: Hören Sie.','naRB naNw')}
   {text(485,968,280,'In Ulm und um Ulm und um Ulm herum.','naBookSerif naZung93 naNw')}
   {text(487,998,270,'Sprechen Sie: zuerst langsam und dann','naInst93b naNw')}
