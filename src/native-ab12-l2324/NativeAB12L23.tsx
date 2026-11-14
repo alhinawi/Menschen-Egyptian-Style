@@ -39,7 +39,7 @@ function TapSplit93({id,x,y,w,pitch,lines,values,set}:{id:string;x:number;y:numb
   measure();document.fonts?.ready.then(()=>measure());
  },[id]);
  const toggle=(gi:number)=>{const g=new Set(gaps);if(g.has(gi))g.delete(gi);else g.add(gi);let out='';for(let i=0;i<raw.length;i++){out+=raw[i];if(g.has(i))out+=' '}set(id,out);ref.current?.removeAttribute('data-check-mark')};
- return <div ref={ref} className="naTap93 naBookSerif" data-native-field={id} data-value={seg} role="group" style={{left:x,top:y,width:w,height:lines.length*pitch,['--p93' as string]:pitch+'px'}}>
+ return <div ref={ref} className="naTap93" data-native-field={id} data-value={seg} role="group" style={{left:x,top:y,width:w,height:lines.length*pitch,['--p93' as string]:pitch+'px'}}>
   {lines.map((ln,i)=><div key={i} data-line={i} className="naTapLine93" style={{top:i*pitch}}>{ln}</div>)}
   {zones.map(z=><button key={z.gap} type="button" tabIndex={-1} aria-hidden className="naGap93" data-gap={id+':'+z.gap} style={{left:z.left,top:z.top+0.5,width:z.width,height:z.height-1}} onClick={()=>toggle(z.gap)}/>)}
   {zones.filter(z=>gaps.has(z.gap)).map(z=><div key={'t'+z.gap} className="naTick93" style={{left:z.tick-0.75,top:z.top+z.height*.58,height:z.height*.55}}/>)}
