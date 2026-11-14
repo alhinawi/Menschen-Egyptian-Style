@@ -11,6 +11,7 @@ import wrongVoice5 from '../assets/feedback/wrong06_kamel.mp3?url';
 import wrongVoice6 from '../assets/feedback/wrong07_minya.mp3?url';
 import wrongVoice7 from '../assets/feedback/wrong08_mat2ulsh.mp3?url';
 import wrongVoice8 from '../assets/feedback/wrong10_khasret.mp3?url';
+import wrongVoice9 from '../assets/feedback/wrong09_esma3.mp3?url';
 import wrongTone from '../assets/feedback/err04_double.mp3?url';
 import emptyVoice1 from '../assets/feedback/empty01_fady.mp3?url';
 import emptyVoice2 from '../assets/feedback/empty02_gaweb.mp3?url';
@@ -23,6 +24,6 @@ import rightVoice5 from '../assets/feedback/right05_mdammer.mp3?url';
 import sparkleTone from '../assets/feedback/ok06_sparkle.mp3?url';
 import celebrate1 from '../assets/feedback/celebrate01_farah.mp3?url';
 
-export const wrongVoices: string[] = [wrongVoice1, wrongVoice2, wrongVoice3, wrongVoice4, wrongVoice5, wrongVoice6, wrongVoice7, wrongVoice8, wrongTone, laughVoice1];
+export const wrongVoices: string[] = [wrongVoice1, wrongVoice2, wrongVoice3, wrongVoice4, wrongVoice5, wrongVoice6, wrongVoice7, wrongVoice8, wrongVoice9, wrongTone, laughVoice1];
 export const incompleteVoices: string[] = [emptyVoice1, emptyVoice2, laughVoice1, wrongVoice2];
 export const correctVoices: string[] = [rightVoice1, rightVoice2, rightVoice3, rightVoice4, rightVoice5, sparkleTone, celebrate1];
