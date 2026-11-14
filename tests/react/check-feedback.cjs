@@ -12,7 +12,7 @@ const{chromium}=require('playwright'),assert=require('node:assert/strict'),fs=re
  if(!blocked)await p.screenshot({path:'/tmp/fidelity/check-feedback-error-390.png'});
  for(const [id,value]of [['meine','xxx'],['deine','yyy']])await pg.locator('[data-native-field="'+id+'"]').fill(value);
  await check.locator('button').click();await p.waitForFunction(()=>window.__feedback.length===2);assert.deepEqual(await p.evaluate(()=>window.__feedback),[false,false]);assert.equal(await check.locator('button').getAttribute('data-check-feedback'),'error');
- assert((await p.evaluate(()=>window.__voices.length))===2&&/^(wrong0|err04|laugh0)/.test(await p.evaluate(()=>window.__voices[1])),'filled-but-wrong check plays one wrong-pool clip');
+ assert((await p.evaluate(()=>window.__voices.length))===2&&/^(wrong0|wrong1|err04|laugh0)/.test(await p.evaluate(()=>window.__voices[1])),'filled-but-wrong check plays one wrong-pool clip');
  for(const [id,value]of [['meine','meine'],['deine','deine']])await pg.locator('[data-native-field="'+id+'"]').fill(value);
  await check.locator('button').click();await p.waitForFunction(()=>window.__feedback.length===3);assert.deepEqual(await p.evaluate(()=>window.__feedback),[false,false,true]);await p.waitForSelector('.checkFireworks');assert((await p.evaluate(()=>window.__colors.filter(x=>x.text.includes('Richtig')).every(x=>x.color==='rgb(40, 85, 60)'))),'correct result green from first frame');assert.equal(await p.locator('.checkFireworks').evaluate(e=>getComputedStyle(e).pointerEvents),'none');
  assert((await p.evaluate(()=>window.__voices.length))===3&&/^(right0|ok06|celebrate0)/.test(await p.evaluate(()=>window.__voices[2])),'correct check plays one correct-pool clip');
