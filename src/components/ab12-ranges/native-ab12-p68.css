@@ -1,0 +1,3 @@
+/* p68 ex10: strike rows match the printed 14px Droid Serif word lines (same as p72). */
+.nativeAB12[data-native-ab12="68"] .naStrikeRow{font-size:14px;font-family:ABDroid69,Georgia,serif;letter-spacing:-0.35px}
+.nativeAB12[data-native-ab12="68"] .naStrikeRow button.struck{text-decoration-color:#576f99;text-decoration-thickness:1px}
