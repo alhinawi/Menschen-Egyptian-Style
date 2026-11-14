@@ -8,7 +8,7 @@ import type {NativePanelField,NativePanelSection} from '../native-kb11/registry'
 // panel below the page (house pattern from KB11P42Answers), driven by page JSON.
 const norm=(s:string)=>s.normalize('NFC').toLocaleLowerCase('de').trim().replace(/[.!?]+$/,'').replace(/\s+/g,' ');
 // Grading is exact-match against the fixed official key only (with |-separated
-// printed variants). Open answers get a neutral Gespeichert section instead.
+// printed variants). Open (keyless) sections keep their fields but show no check button.
 export function panelFieldOk(f:NativePanelField,value:string|undefined){
  const cur=norm(value??f.pre??'');
  if(!cur||!f.answer)return false;
@@ -17,8 +17,7 @@ export function panelFieldOk(f:NativePanelField,value:string|undefined){
 export function NativeWritingPanel({page,storageKey,sections,values,onChange}:{page:string;storageKey:string;sections:NativePanelSection[];values:Record<string,string>;onChange:(id:string,value:string)=>void}){
  const [host,setHost]=useState<HTMLElement|null>(null);
  const [checked,setChecked]=useState<Record<string,boolean>>({});
- const [saved,setSaved]=useState<Record<string,boolean>>({});
- usePageReset(page,storageKey,()=>{setChecked({});setSaved({})});
+ usePageReset(page,storageKey,()=>{setChecked({})});
  useEffect(()=>{
   let slot:HTMLElement|null=null;
   const update=()=>{
@@ -50,11 +49,7 @@ export function NativeWritingPanel({page,storageKey,sections,values,onChange}:{p
      const common={key:f.id,'data-native-field':f.id,'aria-label':`Aufgabe ${s.id}: ${f.label}`,value:values[f.id]??f.pre??'',onChange:(e:React.ChangeEvent<HTMLInputElement|HTMLTextAreaElement>)=>onChange(f.id,e.target.value),className:state};
      return <label key={f.id}><span>{f.label}</span>{f.textarea?<textarea {...common} className={'nkbLine1'+(state?' '+state:'')} rows={1} placeholder={f.placeholder}/>:<input {...common} type="text" autoComplete="off" placeholder={f.placeholder}/>}</label>;
     })}
-    <div className="nkbPanelCheck">
-     {s.neutral
-      ?<><CheckButton onClick={()=>setSaved(x=>({...x,[s.id]:true}))}/><output aria-live="polite">{saved[s.id]?'Gespeichert':''}</output></>
-      :<><CheckButton {...(Object.keys(exact).length?{answers:exact}:{})} onClick={()=>setChecked(x=>({...x,[s.id]:true}))}/><output aria-live="polite">{checked[s.id]?(allOk?'✓ Richtig!':'Noch einmal'):''}</output></>}
-    </div>
+    {!s.neutral&&<div className="nkbPanelCheck"><CheckButton {...(Object.keys(exact).length?{answers:exact}:{})} onClick={()=>setChecked(x=>({...x,[s.id]:true}))}/><output aria-live="polite">{checked[s.id]?(allOk?'✓ Richtig!':'Noch einmal'):''}</output></div>}
    </section>;
   })}
  </>,host);
