@@ -763,9 +763,9 @@ export function NativeKB12({page}:{page:string}){
  </>}
  {page==='58'&&<>
  {art('vocab',0,0,1100,106)}{['Schuhe','Hose','Hemd','T-Shirt','Mantel','Bluse','Strumpfhose','Jacke'].map((t,i)=>text(i*137.5,110,137.5,'• '+t,'nkVocabLabel nkTinyLabel nkCenter'))}
- {title('2',110,181,910,'Kleidung')}{text(122,226,530,'a  Was kaufen Sie wie oft? Sehen Sie ins Bildlexikon / ins Wörterbuch und notieren Sie.','nkBold')}
+ {title('2',110,181,910,'Kleidung')}{text(122,226,530,'a  Was kaufen Sie wie oft? Sehen Sie ins Bildlexikon / ins Wörterbuch und notieren Sie.','nkBold')}{save('2a',460,255)}
  {['oft','manchmal','(fast) nie'].map((t,i)=><div key={t}>{text(679+i*114,215,110,t,'nkHand nkCenter')}{open('2a-'+i,679+i*114,245,110,65,t,i===0?'Röcke':'')}</div>)}
- {text(122,332,900,'b  Ratespiel: Alle schließen die Augen. Eine/r wählt eine Person und beschreibt: Was hat diese Person an? Die anderen raten.','nkBold')}{text(155,406,840,'■  Meine Person hat eine Hose und einen Pullover an. Die Hose ist blau.\n▲  Ist das Martin?\n■  Nein. Der Pullover ist …')}
+ {text(122,332,900,'b  Ratespiel: Alle schließen die Augen. Eine/r wählt eine Person und beschreibt: Was hat diese Person an? Die anderen raten.','nkBold')}{save('2b',520,356)}{text(155,406,840,'■  Meine Person hat eine Hose und einen Pullover an. Die Hose ist blau.\n▲  Ist das Martin?\n■  Nein. Der Pullover ist …')}
  {audio('assets/kb-cd3-track35.mp3',50,502,'3 35',undefined,'3')}{title('3',110,500,530,'Super Kostüm!')}{text(122,547,460,'a  Was ist richtig? Hören und markieren Sie.','nkBold')}
  {text(154,595,490,'1  Fabian ist auf')}{['einem Konzert','einer Party'].map((t,i)=><button className={'nkL22Choice '+(values['3a-1']===t?'selected':'')} key={t} style={{left:315,top:592+i*31}} onClick={()=>set('3a-1',t)}>{t}</button>)}
  {text(154,668,220,'2  Die Kleidung soll')}{['hässlich','schön'].map((t,i)=><button className={'nkL22Choice '+(values['3a-2']===t?'selected':'')} key={t} style={{left:385+i*90,top:666}} onClick={()=>set('3a-2',t)}>{t}</button>)}{text(560,668,60,'sein.')}{check('3a',155,706,{'3a-1':'einer Party','3a-2':'hässlich'})}
@@ -775,7 +775,7 @@ export function NativeKB12({page}:{page:string}){
  <div className="nkL22Sentences" style={{left:155,top:1130,width:600}}><div><Words text="1  Maike findet Fabians Kostüm "/><i>gut</i><Words text=" (+)."/></div><div><Words text="2  Das Hemd gefällt ihr "/>{inline('4a-2',150,'Vergleich 2')}<Words text=" (++) als die Hose."/></div><div><Words text="3  "/>{inline('4a-3',165,'Vergleich 3')}<Words text=" (+++) findet sie seine Schuhe."/></div><div><Words text="4  Elena mag Lila genauso "/>{inline('4a-4',100,'Vergleich 4')}<Words text=" (+) wie Rosa."/></div><div><Words text="5  Maike mag "/>{inline('4a-5',160,'Vergleich 5')}<Words text=" (++) Beige als Lila."/></div><div><Words text="6  "/>{inline('4a-6',165,'Vergleich 6')}<Words text=" (+++) mögen Elena und Maike Golden."/></div></div>
  <div className="nkGrammar" style={{left:782,top:1125,width:290}}><table><thead><tr><th>+</th><th>++</th><th>+++</th></tr></thead><tbody><tr><td>gut</td><td>besser</td><td>am besten</td></tr><tr><td>gern</td><td>lieber</td><td>am liebsten</td></tr></tbody></table><b>Vergleiche</b><p><Words text={'Lila (+) mag sie genauso gern wie Rosa (+).\nBeige (++) mag sie lieber als Rosa (+).'}/></p></div>
  {check('4a',155,1320,{'4a-2':'besser','4a-3':'Am besten','4a-4':'gern','4a-5':'lieber','4a-6':'Am liebsten'})}
- {text(122,1370,950,'b  Schreiben Sie Sätze zu dem Foto in 3. Wie viele Sätze finden Sie in 5 Minuten?','nkBold')}{text(155,1410,830,'Ich mag Janas Kostüm am liebsten.\nIch finde Harrys Hut genauso gut wie Jasmins Mütze.\nVeras Kleid gefällt mir besser als Jasmins Kleid.','nkHand nkSmall')}
+ {text(122,1370,950,'b  Schreiben Sie Sätze zu dem Foto in 3. Wie viele Sätze finden Sie in 5 Minuten?','nkBold')}{save('4b',775,1375)}{text(155,1410,830,'Ich mag Janas Kostüm am liebsten.\nIch finde Harrys Hut genauso gut wie Jasmins Mütze.\nVeras Kleid gefällt mir besser als Jasmins Kleid.','nkHand nkSmall')}
  
  </>}
  {page==='59'&&<>
