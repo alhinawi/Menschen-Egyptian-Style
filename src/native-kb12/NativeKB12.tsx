@@ -855,7 +855,7 @@ export function NativeKB12({page}:{page:string}){
  {page==='64'&&<>{text(82,1024,25,'Audiotraining','nkSide')}{text(82,1150,25,'Karaoke','nkSide')}</>}
  {['73','75','77'].includes(page)&&text(645,75,400,'AKTIONSSEITEN','nkModule')}
  {page==='73'&&<>
- {text(30,164,65,'KB | S. 11','nkAB')}{text(100,150,200,'Lektion 13 | 6','nkActionRef')}{text(105,195,500,'Wo ist Laura?','nkBold')}{text(105,225,560,'Bauen Sie „Bilder“. Die anderen beschreiben.','nkBold')}{text(145,270,430,'Variante: Beschreiben Sie „Bilder“.\nDie anderen bauen sie.','nkBold')}{text(370,325,240,'Laura ist zwischen den Tischen. Marius ist hinter der Tür.','nkSpeech')}{art('classroom',650,164,320,209)}
+ {text(30,164,65,'KB | S. 11','nkAB')}{text(100,150,200,'Lektion 13 | 6','nkActionRef')}{text(105,195,500,'Wo ist Laura?','nkBold')}{text(105,225,560,'Bauen Sie „Bilder“. Die anderen beschreiben.','nkBold')}{save('L13-6',575,220)}{text(145,270,430,'Variante: Beschreiben Sie „Bilder“.\nDie anderen bauen sie.','nkBold')}{text(370,325,240,'Laura ist zwischen den Tischen. Marius ist hinter der Tür.','nkSpeech')}{art('classroom',650,164,320,209)}
  </>}
  {['73','77'].includes(page)&&<>
  {text(30,page==='73'?416:164,65,'KB | S. 19','nkAB')}{text(100,page==='73'?405:150,230,'Lektion 15 | 5c','nkActionRef')}{text(105,page==='73'?450:195,820,'Urlaubsorte bewerten - Wem gefällt was?','nkBold')}{text(880,page==='73'?450:195,100,page==='73'?'Partner A':'Partner B','nkPartner')}{text(105,page==='73'?482:227,925,'Fragen Sie Ihre Partnerin / Ihren Partner und ergänzen Sie die fehlenden Informationen.','nkBold')}
