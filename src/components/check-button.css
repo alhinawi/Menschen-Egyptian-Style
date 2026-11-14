@@ -21,6 +21,11 @@ html[data-theme=dark] :is(input,select,textarea)[data-check-mark="bad"]:not([typ
 :is(button,[data-native-field].mSyllables)[data-check-mark="ok"]{outline:1.5px solid #2f7d4f;outline-offset:0;background-color:#e1f2e4!important;color:#14301f!important}
 :is(button,[data-native-field].mSyllables)[data-check-mark="bad"]{outline:1.5px solid #c62f2f;outline-offset:0;background-color:#fde4e1!important;color:#5a1010!important}
 
+/* Wrong or unsolved check: one short horizontal shake of the page (~500ms, <=10px, transform only,
+   no layout shift, no rotation). Skipped entirely under prefers-reduced-motion. */
+@keyframes checkShake{0%,100%{transform:translateX(0)}20%{transform:translateX(-10px)}40%{transform:translateX(10px)}60%{transform:translateX(-7px)}80%{transform:translateX(5px)}}
+@media (prefers-reduced-motion: no-preference){.page.checkShake{animation:checkShake .5s ease}}
+
 /* Checked glyphs must use the result color, not the default green selection color. */
 .page input:is([type=radio],[type=checkbox])[data-check-mark="bad"]:checked:not(.nabOption input){--answer-mark:#bd3838!important;border-color:#bd3838!important;outline-color:#bd3838!important}
 .page input:is([type=radio],[type=checkbox])[data-check-mark="ok"]:checked:not(.nabOption input){--answer-mark:#286e50!important;border-color:#286e50!important;outline-color:#286e50!important}
