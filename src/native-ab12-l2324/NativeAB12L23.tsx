@@ -1,6 +1,50 @@
 import './native-ab12-p90.css';
 import {useNativeCanvas,Canvas,Words} from './shared';
 import './native-ab12-p92.css';
+import {useLayoutEffect,useRef,useState} from 'react';
+import './native-ab12-p93.css';
+
+type TapZone93={gap:number;left:number;width:number;top:number;height:number;tick:number};
+/* p93 ex3: the printed letter strings become tap-to-separate. The raw string renders
+   exactly as printed (one text node per printed line, same face); invisible tap zones
+   tile every inter-letter gap (each zone spans from one glyph's midpoint to the next,
+   i.e. one full glyph pitch per gap); a thin navy tick below the baseline marks each
+   chosen separation. The segmented text is stored as the field value, so the house
+   check grades it against the key with the normal normalisation and the marking reads
+   it back from data-value. Line breaks inside a string (b) are logical, not gaps. */
+function TapSplit93({id,x,y,w,pitch,lines,values,set}:{id:string;x:number;y:number;w:number;pitch:number;lines:string[];values:Record<string,string>;set:(id:string,v:string)=>void}){
+ const ref=useRef<HTMLDivElement>(null);
+ const raw=lines.join('');
+ const seg=values[id]??raw;
+ const gaps=new Set<number>();{let li=0;for(const ch of seg){if(ch===' '){if(li>0)gaps.add(li-1)}else li++}}
+ const [zones,setZones]=useState<TapZone93[]>([]);
+ useLayoutEffect(()=>{
+  const el=ref.current;if(!el)return;
+  const measure=()=>{
+   const box=el.getBoundingClientRect(),factor=box.width/el.offsetWidth||1;
+   const z:TapZone93[]=[];let base=0;
+   [...el.querySelectorAll<HTMLElement>('[data-line]')].forEach((lineEl,ln)=>{
+    const node=lineEl.firstChild;if(!node||node.nodeType!==Node.TEXT_NODE)return;
+    const lrect=lineEl.getBoundingClientRect();
+    const ltop=(lrect.top-box.top)/factor,lh=lrect.height/factor;
+    const n=lines[ln].length,rs:DOMRect[]=[];
+    for(let i=0;i<n;i++){const r=document.createRange();r.setStart(node,i);r.setEnd(node,i+1);rs.push(r.getBoundingClientRect());r.detach()}
+    const cx=(v:number)=>(v-box.left)/factor;
+    for(let i=0;i<n-1;i++){const left=cx((rs[i].left+rs[i].right)/2),right=cx((rs[i+1].left+rs[i+1].right)/2);z.push({gap:base+i,left,width:right-left,top:ltop,height:lh,tick:cx((rs[i].right+rs[i+1].left)/2)})}
+    if(ln<lines.length-1&&n){const last=rs[n-1],half=(last.right-last.left)/2/factor;z.push({gap:base+n-1,left:cx((last.left+last.right)/2),width:half+3,top:ltop,height:lh,tick:cx(last.right)+1})}
+    base+=n;
+   });
+   setZones(z);
+  };
+  measure();document.fonts?.ready.then(()=>measure());
+ },[id]);
+ const toggle=(gi:number)=>{const g=new Set(gaps);if(g.has(gi))g.delete(gi);else g.add(gi);let out='';for(let i=0;i<raw.length;i++){out+=raw[i];if(g.has(i))out+=' '}set(id,out);ref.current?.removeAttribute('data-check-mark')};
+ return <div ref={ref} className="naTap93" data-native-field={id} data-value={seg} role="group" style={{left:x,top:y,width:w,height:lines.length*pitch,['--p93' as string]:pitch+'px'}}>
+  {lines.map((ln,i)=><div key={i} data-line={i} className="naTapLine93" style={{top:i*pitch}}>{ln}</div>)}
+  {zones.map(z=><button key={z.gap} type="button" tabIndex={-1} aria-hidden className="naGap93" data-gap={id+':'+z.gap} style={{left:z.left,top:z.top+0.5,width:z.width,height:z.height-1}} onClick={()=>toggle(z.gap)}/>)}
+  {zones.filter(z=>gaps.has(z.gap)).map(z=><div key={'t'+z.gap} className="naTick93" style={{left:z.tick-0.75,top:z.top+z.height*.58,height:z.height*.55}}/>)}
+ </div>;
+}
 
 import {LineMatching} from '../exercises/LineMatching';
 export function NativeAB12L23({page}:{page:string}){
@@ -687,13 +731,16 @@ export function NativeAB12L23({page}:{page:string}){
   {title('3',455,685,260,'Schreiben Sie zuerst die Sätze.','naRB naNw')}
   {text(487,707,240,'Flüstern Sie die Sätze und','naInst93 naNw')}
   {text(487,726,240,'sprechen Sie sie dann laut.','naInst93 naNw')}
-  {text(484,754,14,'a','naBookSerif naAF93')}{text(502,754,240,'amerstenaugustwillichmiteuch','naBookSerif naAF93 naNw')}
-  {text(502,773,240,'meineabschlussprüfungfeiern','naBookSerif naAF93 naNw')}
-  {text(484,793,14,'b','naBookSerif naAF93')}{text(502,793,240,'kommtalleumachtuhrzumeinerein','naBookSerif naAF93 naNw')}
-  {text(502,813,140,'weihungsparty','naBookSerif naAF93 naNw')}
-  {text(484,832,14,'c','naBookSerif naAF93')}{text(502,832,260,'zuosternbekommtihrkleinegeschenke','naBookSerif naAF93 naNw')}
-  {text(484,851,14,'d','naBookSerif naAF93')}{text(502,851,260,'meinefreundinhateinenfreundinulm','naBookSerif naAF93 naNw')}
-  {audio('assets/ab-cd2-track46.mp3',444,889,'2 46','2')}
+  {text(487,755,14,'a','naBookSerif')}
+  {<TapSplit93 id="93-3a" x={505} y={755} w={240} pitch={19} lines={['amerstenaugustwillichmiteuch','meineabschlussprüfungfeiern']} values={c.values} set={set}/>}
+  {text(487,794,14,'b','naBookSerif')}
+  {<TapSplit93 id="93-3b" x={505} y={794} w={240} pitch={20} lines={['kommtalleumachtuhrzumeinerein','weihungsparty']} values={c.values} set={set}/>}
+  {text(487,833,14,'c','naBookSerif')}
+  {<TapSplit93 id="93-3c" x={505} y={833} w={260} pitch={19} lines={['zuosternbekommtihrkleinegeschenke']} values={c.values} set={set}/>}
+  {text(487,852,14,'d','naBookSerif')}
+  {<TapSplit93 id="93-3d" x={505} y={852} w={260} pitch={19} lines={['meinefreundinhateinenfreundinulm']} values={c.values} set={set}/>}
+  {check('93-3',678,715,{'93-3a':'Am ersten August will ich mit Euch meine Abschlussprüfung feiern','93-3b':'Kommt alle um acht Uhr zu meiner Einweihungsparty','93-3c':'Zu Ostern bekommt ihr kleine Geschenke','93-3d':'Meine Freundin hat einen Freund in Ulm'})}
+  {audio('assets/ab-cd2-track46.mp3',444,888,'2 46','2')}
   {text(488,892,250,'Hören Sie und vergleichen Sie.','naInst93 naNw')}
   {audio('assets/ab-cd2-track47.mp3',409,937,'2 47','4')}
   {title('4',454,937,270,'Zungenbrecher: Hören Sie.','naRB naNw')}
