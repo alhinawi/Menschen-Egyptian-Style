@@ -174,7 +174,8 @@
    "a": "kleiner",
    "l": "Lücke 1: Peters Haus ist ... als Pauls Haus",
    "g": "g1",
-   "max": 22
+   "max": 22,
+   "hh": 14
   },
   {
    "k": "t",
@@ -193,7 +194,8 @@
    "a": "kleinsten",
    "l": "Lücke 2: Am ... ist Kais Haus",
    "g": "g1",
-   "max": 22
+   "max": 22,
+   "hh": 14
   },
   {
    "k": "t",
@@ -226,7 +228,8 @@
    "a": "ältesten",
    "l": "Lücke 3: Kais Haus ist am ...",
    "g": "g1",
-   "max": 22
+   "max": 22,
+   "hh": 14
   },
   {
    "k": "t",
@@ -245,7 +248,8 @@
    "a": "modernsten",
    "l": "Lücke 4: Pauls Haus ist am ...",
    "g": "g1",
-   "max": 22
+   "max": 22,
+   "hh": 14
   },
   {
    "k": "t",
@@ -278,7 +282,8 @@
    "a": "am meisten",
    "l": "Lücke 5: Pauls Haus kostet ...",
    "g": "g1",
-   "max": 22
+   "max": 22,
+   "hh": 14
   },
   {
    "k": "t",
@@ -297,7 +302,8 @@
    "a": "billigsten",
    "l": "Lücke 6: Am ... ist Kais Haus",
    "g": "g1",
-   "max": 22
+   "max": 22,
+   "hh": 14
   },
   {
    "k": "t",
@@ -331,7 +337,8 @@
    "a": "mehr",
    "l": "Lücke 7: In Kais Garten gibt es ... Bäume",
    "g": "g1",
-   "max": 22
+   "max": 22,
+   "hh": 14
   },
   {
    "k": "t",
@@ -357,7 +364,8 @@
    "a": "schöner",
    "l": "Lücke 8: Kais Garten ist viel ...",
    "g": "g1",
-   "max": 22
+   "max": 22,
+   "hh": 14
   },
   {
    "k": "t",
@@ -1085,7 +1093,7 @@
    "g": "g2",
    "max": 22,
    "c": "sl",
-   "hh": 18
+   "hh": 14
   },
   {
    "k": "f",
@@ -1098,7 +1106,7 @@
    "g": "g2",
    "max": 22,
    "c": "sl",
-   "hh": 18
+   "hh": 14
   },
   {
    "k": "f",
@@ -1111,7 +1119,7 @@
    "g": "g2",
    "max": 22,
    "c": "sl",
-   "hh": 18
+   "hh": 14
   },
   {
    "k": "f",
@@ -1124,7 +1132,7 @@
    "g": "g2",
    "max": 22,
    "c": "sl",
-   "hh": 18
+   "hh": 14
   },
   {
    "k": "f",
@@ -1137,7 +1145,7 @@
    "g": "g2",
    "max": 22,
    "c": "sl",
-   "hh": 18
+   "hh": 14
   },
   {
    "k": "f",
@@ -1150,7 +1158,7 @@
    "g": "g2",
    "max": 22,
    "c": "sl",
-   "hh": 18
+   "hh": 14
   },
   {
    "k": "f",
@@ -1163,7 +1171,7 @@
    "g": "g2",
    "max": 22,
    "c": "sl",
-   "hh": 18
+   "hh": 14
   },
   {
    "k": "f",
@@ -1176,7 +1184,7 @@
    "g": "g2",
    "max": 22,
    "c": "sl",
-   "hh": 18
+   "hh": 14
   },
   {
    "k": "f",
@@ -1189,7 +1197,7 @@
    "g": "g2",
    "max": 22,
    "c": "sl",
-   "hh": 18
+   "hh": 14
   },
   {
    "k": "f",
@@ -1202,7 +1210,7 @@
    "g": "g2",
    "max": 22,
    "c": "sl",
-   "hh": 18
+   "hh": 14
   },
   {
    "k": "f",
@@ -1215,7 +1223,7 @@
    "g": "g2",
    "max": 22,
    "c": "sl",
-   "hh": 18
+   "hh": 14
   },
   {
    "k": "f",
@@ -1228,7 +1236,7 @@
    "g": "g2",
    "max": 22,
    "c": "sl",
-   "hh": 18
+   "hh": 14
   },
   {
    "k": "f",
@@ -1241,7 +1249,7 @@
    "g": "g2",
    "max": 22,
    "c": "sl",
-   "hh": 18
+   "hh": 14
   },
   {
    "k": "f",
@@ -1254,7 +1262,7 @@
    "g": "g2",
    "max": 22,
    "c": "sl",
-   "hh": 18
+   "hh": 14
   },
   {
    "k": "f",
@@ -1267,7 +1275,7 @@
    "g": "g2",
    "max": 22,
    "c": "sl",
-   "hh": 18
+   "hh": 14
   },
   {
    "k": "f",
@@ -1280,7 +1288,7 @@
    "g": "g2",
    "max": 22,
    "c": "sl",
-   "hh": 18
+   "hh": 14
   },
   {
    "k": "f",
@@ -1293,7 +1301,7 @@
    "g": "g2",
    "max": 22,
    "c": "sl",
-   "hh": 18
+   "hh": 14
   },
   {
    "k": "f",
@@ -1306,7 +1314,7 @@
    "g": "g2",
    "max": 22,
    "c": "sl",
-   "hh": 18
+   "hh": 14
   },
   {
    "k": "f",
@@ -1319,7 +1327,7 @@
    "g": "g2",
    "max": 22,
    "c": "sl",
-   "hh": 18
+   "hh": 14
   },
   {
    "k": "f",
@@ -1332,7 +1340,7 @@
    "g": "g2",
    "max": 22,
    "c": "sl",
-   "hh": 18
+   "hh": 14
   },
   {
    "k": "f",
@@ -1358,7 +1366,7 @@
    "g": "g2",
    "max": 22,
    "c": "sl",
-   "hh": 18
+   "hh": 14
   },
   {
    "k": "f",
@@ -1371,7 +1379,7 @@
    "g": "g2",
    "max": 22,
    "c": "sl",
-   "hh": 18
+   "hh": 14
   },
   {
    "k": "f",
@@ -1383,7 +1391,7 @@
    "g": "g2",
    "max": 22,
    "c": "sl",
-   "hh": 18
+   "hh": 14
   },
   {
    "k": "f",
@@ -1396,7 +1404,7 @@
    "g": "g2",
    "max": 22,
    "c": "sl",
-   "hh": 18
+   "hh": 14
   },
   {
    "k": "chk",
@@ -1481,5 +1489,6 @@
    "h": 1,
    "col": "#5b7cb5"
   }
- ]
+ ],
+ "css": ".nativeAB12[data-native-ab12=\"79\"] .naRCanvas .naRField{height:14px!important;font-size:12px!important}\n.nativeAB12[data-native-ab12=\"79\"] .naRCanvas .naRField[data-check-mark=\"ok\"]{background:transparent!important;border-color:transparent!important;box-shadow:none!important;border-bottom:2px solid #2f7d4f!important}\n.nativeAB12[data-native-ab12=\"79\"] .naRCanvas .naRField[data-check-mark=\"bad\"]{background:transparent!important;border-color:transparent!important;box-shadow:none!important;border-bottom:2px solid #c62f2f!important}"
 }
