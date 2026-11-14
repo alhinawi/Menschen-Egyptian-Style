@@ -771,7 +771,7 @@ export function NativeAB12L23({page}:{page:string}){
   {field('94-4d',131,848,191,'4 d')}{text(328,854.5,10,'!','naBookSerif naBk88 naNw')}
   {text(113,873.5,16,'e','naBookSerif naBk88')}{text(131,873.5,181,'Ihr habt 5:1 gewonnen? Gut','naBookSerif naBk88 naNw',14)}{field('94-4e',318,868,192,'4 e')}{text(514,873.5,10,'!','naBookSerif naBk88 naNw')}
   <div className="naPts" style={{left:660,top:879}}>_ / 5 Punkte</div>
-  {check('94-4',660,899,{'94-4a':'herzlichen','94-4b':'neues Jahr','94-4c':'Gute Besserung','94-4d':'Weihnachten','94-4e':'gemacht'})}
+  {check('94-4',660,899,{'94-4a':'herzlichen','94-4b':'neues Jahr','94-4c':'Gute','94-4d':'Weihnachten','94-4e':'gemacht'})}
   <div style={{position:'absolute',left:110,top:906,width:383,height:26,background:'#f6f3d5'}}/>
   {text(114,913,120,'Wörter','naScoreH94 naNw')}{text(238,913,120,'Strukturen','naScoreH94 naNw')}{text(364,913,130,'Kommunikation','naScoreH94 naNw')}
   <div style={{position:'absolute',left:109,top:906,width:1.5,height:103,background:'#f5f3ee'}}/>{[232,358].map(x=><div key={x} style={{position:'absolute',left:x,top:906,width:1.5,height:103,background:'#f5f3ee'}}/>)}<div style={{position:'absolute',left:492,top:906,width:1.5,height:103,background:'#f5f3ee'}}/>{[957,982].map(y=><div key={y} style={{position:'absolute',left:109,top:y,width:384,height:1.5,background:'#f5f3ee'}}/>)}<div style={{position:'absolute',left:109,top:1008,width:384,height:1.5,background:'#f5f3ee'}}/>
