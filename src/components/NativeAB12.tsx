@@ -16,6 +16,7 @@ export function NativeAB12({page}:{page:string}){
  const [scale,ss]=useState(.6);const key='native-ab12-'+page;
  const [values,sv]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return {}}});
  const [results,sr]=useState<Record<string,boolean>>({});
+ const [saved,sn]=useState<Record<string,boolean>>({});
  useLayoutEffect(()=>{const el=root.current!;const obs=new ResizeObserver(()=>ss(Math.min(el.clientWidth/W,(el.clientHeight-38)/H)));obs.observe(el);return ()=>obs.disconnect()},[W,H]);
  usePageReset(page,key,()=>{sv({});sr({})});
  const set=(id:string,v:string)=>{const n={...values,[id]:v};sv(n);localStorage.setItem(key,JSON.stringify(n))};
@@ -388,31 +389,33 @@ export function NativeAB12({page}:{page:string}){
   {text(144,639,250,'Weitere wichtige Wörter','naBold')}
   {text(144,663,170,'Ausländer der, -','naS21')}{field('23-1-l13',316,661,189,'Ausländer der, - übersetzen')}
   {text(144,689,160,'Blick der, -e','naS21')}{field('23-1-l14',316,687,189,'Blick der, -e übersetzen')}
-  {text(534,201,170,'Mensch der, -en','naS21')}{field('23-1-r1',635,201,235,'Mensch der, -en übersetzen')}
+  {text(534,201,170,'Mensch der, -en','naS21')}{field('23-1-r1',706,201,164,'Mensch der, -en übersetzen')}
   {text(534,227,150,'Reisebüro','naS21')}
-  {text(545,258,80,'das, -s','naS21')}{field('23-1-r2',635,249,235,'Reisebüro das, -s übersetzen')}
-  {text(534,279,160,'Rezept das, -e','naS21')}{field('23-1-r3',635,278,235,'Rezept das, -e übersetzen')}
-  {text(534,304,150,'Urlaub der','naS21')}{field('23-1-r3b',635,300,235,'Urlaub der übersetzen')}
+  {text(545,258,80,'das, -s','naS21')}{field('23-1-r2',675,249,195,'Reisebüro das, -s übersetzen')}
+  {text(534,279,160,'Rezept das, -e','naS21')}{field('23-1-r3',675,278,195,'Rezept das, -e übersetzen')}
+  {text(534,304,150,'Urlaub der','naS21')}{field('23-1-r3b',675,300,195,'Urlaub der übersetzen')}
   {text(545,333,200,'CH: Ferien die (Pl.)','naGray naS20')}
-  {text(534,356,150,'Wetter das','naS21')}{field('23-1-r4',635,351,235,'Wetter das übersetzen')}
+  {text(534,356,150,'Wetter das','naS21')}{field('23-1-r4',675,351,195,'Wetter das übersetzen')}
   {text(534,394,160,'danken, hat','naS21')}
-  {text(545,420,120,'gedankt','naS21')}{field('23-1-r5',635,416,235,'danken übersetzen')}
+  {text(545,420,120,'gedankt','naS21')}{field('23-1-r5',675,416,195,'danken übersetzen')}
   {text(534,446,160,'fehlen, hat','naS21')}
-  {text(545,472,120,'gefehlt','naS21')}{field('23-1-r6',635,468,235,'fehlen übersetzen')}
+  {text(545,472,120,'gefehlt','naS21')}{field('23-1-r6',675,468,195,'fehlen übersetzen')}
   {text(534,498,160,'gehören, hat','naS21')}
-  {text(545,524,120,'gehört','naS21')}{field('23-1-r7',635,519,235,'gehören übersetzen')}
-  {text(534,562,120,'wichtig','naS21')}{field('23-1-r8',635,557,235,'wichtig übersetzen')}
-  {text(534,601,120,'alle','naS21')}{field('23-1-r9',635,596,235,'alle übersetzen')}
-  {text(534,632,120,'wenig','naS21')}{field('23-1-r10',635,621,235,'wenig übersetzen')}
-  {text(534,654,120,'zu Hause','naS21')}{field('23-1-r11',635,647,235,'zu Hause übersetzen')}
+  {text(545,524,120,'gehört','naS21')}{field('23-1-r7',675,519,195,'gehören übersetzen')}
+  {text(534,562,120,'wichtig','naS21')}{field('23-1-r8',675,557,195,'wichtig übersetzen')}
+  {text(534,601,120,'alle','naS21')}{field('23-1-r9',675,596,195,'alle übersetzen')}
+  {text(534,632,120,'wenig','naS21')}{field('23-1-r10',675,621,195,'wenig übersetzen')}
+  {text(534,654,120,'zu Hause','naS21')}{field('23-1-r11',675,647,195,'zu Hause übersetzen')}
   {art('tipp',146,744,440,104)}
   {text(172,751,400,'Sehen Sie den Lernwortschatz „In der Stadt“ an.','naSmall')}
   {text(172,775,400,'Schließen Sie das Buch.','naSmall')}
   {text(172,799,400,'Schreiben Sie jetzt die Wörter mit Artikel auf.','naSmall')}
   {text(172,823,400,'Wie viele Wörter kennen Sie?','naSmall')}
   {art('handwriting',600,743,125,52)}
+  <div className="naCheck" data-check="23-save" style={{left:740,top:161}}><CheckButton onClick={()=>sn(s=>({...s,['23-save']:true}))}/><output aria-live="polite">{saved['23-save']?'Gespeichert':''}</output></div>
   {title('2',98,895,760,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naOB')}
   <LinedArea id="23-2-text" values={values} set={set} x={150} tops={[931, 957, 983, 1009, 1034, 1060, 1086, 1111, 1137, 1163, 1189, 1215, 1240, 1266, 1292, 1317]} w={545} boxH={27} label="Notizen" legacyIds={["23-2-1", "23-2-2", "23-2-3", "23-2-4", "23-2-5", "23-2-6", "23-2-7", "23-2-8", "23-2-9", "23-2-10", "23-2-11", "23-2-12", "23-2-13", "23-2-14", "23-2-15", "23-2-16"]}/>
+  <div className="naCheck" data-check="23-n-save" style={{left:600,top:900}}><CheckButton onClick={()=>sn(s=>({...s,['23-n-save']:true}))}/><output aria-live="polite">{saved['23-n-save']?'Gespeichert':''}</output></div>
   {art('strip',910,132,145,1218)}
   {text(793,1384,195,'dreiundzwanzig \u00a0|\u00a0 23','naFooter')}
   {art('modul-tab',999,1379,67,27)}
