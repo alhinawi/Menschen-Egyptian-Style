@@ -22,10 +22,15 @@ const ttsAvailable=()=>typeof window.speechSynthesis!=='undefined'&&typeof Speec
 const ttsStop=()=>{if(ttsAvailable())speechSynthesis.cancel()};
 function speak(text: string){if(!ttsAvailable()||!text)return false;ttsStop();const u=new SpeechSynthesisUtterance(text);u.lang='de-DE';const voices=speechSynthesis.getVoices().filter(v=>/^de([-_]|$)/i.test(v.lang));const pref=voices.find(v=>/^de[-_]de$/i.test(v.lang))||voices[0];if(pref)u.voice=pref;u.rate=0.95;speechSynthesis.speak(u);return true}
 let audioPath: string|undefined,audioQueue: string[]=[],queueAt=0;activeAudio.onended=()=>{if(++queueAt<audioQueue.length){activeAudio.src=audioQueue[queueAt];activeAudio.play().catch(()=>{})}};
+function speakCurrent(){return speak(current?.selectionParts?current.selectionParts.map((p: any)=>p.text).join(' '):(current?(mode==='sentence'?current.phrase:current.word):''))}
+// Chain: real recording -> /api/tts (both come back as audioPath) -> browser
+// speech synthesis -> error toast. A playback failure on any URL falls through
+// to the browser voice; the toast only shows when even that is unavailable.
+function playFailed(){if(!speakCurrent())meaningStore.update({pendingHidden:false,pending:'التسجيل مشتغلش. اضغط اسمع النطق عشان تجرّب تاني.'})}
 function play(){activeAudio.pause();ttsStop();
- if(current?.selectionParts){const parts=current.selectionParts;if(parts.every((p: any)=>p.audio?.length)){audioQueue=parts.flatMap((p: any)=>p.audio||[]);queueAt=0;activeAudio.src=audioQueue[0];activeAudio.play().catch(()=>{meaningStore.update({pendingHidden:false,pending:'التسجيل مشتغلش. اضغط اسمع النطق عشان تجرّب تاني.'})});return}if(speak(parts.map((p: any)=>p.text).join(' ')))return;audioQueue=parts.flatMap((p: any)=>p.audio||[]);if(!audioQueue.length)return;queueAt=0;activeAudio.src=audioQueue[0];activeAudio.play().catch(()=>{});return}
- if(!audioPath){speak(current?(mode==='sentence'?current.phrase:current.word):'');return}
- audioQueue=[audioPath];queueAt=0;activeAudio.src=audioQueue[0];activeAudio.play().catch(()=>{meaningStore.update({pendingHidden:false,pending:'التسجيل مشتغلش. اضغط اسمع النطق عشان تجرّب تاني.'})})}
+ if(current?.selectionParts){const parts=current.selectionParts;if(parts.every((p: any)=>p.audio?.length)){audioQueue=parts.flatMap((p: any)=>p.audio||[]);queueAt=0;activeAudio.src=audioQueue[0];activeAudio.play().catch(playFailed);return}if(speak(parts.map((p: any)=>p.text).join(' ')))return;audioQueue=parts.flatMap((p: any)=>p.audio||[]);if(!audioQueue.length)return;queueAt=0;activeAudio.src=audioQueue[0];activeAudio.play().catch(playFailed);return}
+ if(!audioPath){speakCurrent();return}
+ audioQueue=[audioPath];queueAt=0;activeAudio.src=audioQueue[0];activeAudio.play().catch(playFailed)}
 let translationVersion=0;
 function refresh(autoplay=false){
  const version=++translationVersion;const missing:{text:string;index:number}[]=[];
