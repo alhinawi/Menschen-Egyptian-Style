@@ -27,9 +27,21 @@ function stamp(html, file, m) {
   swap(`${ROOT.url}${ROOT.ogImage}"`, `${ROOT.url}${m.ogImage}"`, 2);
   return html;
 }
-export default defineConfig({plugins:[react(),{name:'book-static-assets',closeBundle(){
+// Cloudflare Pages free plan caps a site at 20,000 files, and the build
+// container was being killed while copying the 21,708 audio files (~1.3 GB).
+// On Cloudflare builds (CF_PAGES=1) audio is not copied into dist:
+// pronunciation and track playback goes through /api/tts (a Pages Function
+// backed by Google Cloud TTS, edge-cached) instead. Images are still copied,
+// so output drops to ~6k files. Vercel and local builds keep the full audio
+// copy and behave exactly as before.
+const ON_CLOUDFLARE_PAGES = !!process.env.CF_PAGES;
+const AUDIO_FILE = /\.(mp3|wav|ogg|m4a|flac)$/i;
+export default defineConfig({define:{__MENSCHEN_TTS__:JSON.stringify(ON_CLOUDFLARE_PAGES)},plugins:[react(),{name:'book-static-assets',closeBundle(){
  for(const name of fs.readdirSync('.')){
-  if(name==='assets')fs.cpSync(name,'dist/assets',{recursive:true});
+  if(name==='assets'){
+   if(ON_CLOUDFLARE_PAGES)fs.cpSync(name,'dist/assets',{recursive:true,filter:file=>!AUDIO_FILE.test(file)});
+   else fs.cpSync(name,'dist/assets',{recursive:true});
+  }
   else if(/\.(css|svg|png|jpg|webp|mp3)$/.test(name))fs.copyFileSync(name,path.join('dist',name));
  }
  const spa = fs.readFileSync('dist/index.html','utf8');
