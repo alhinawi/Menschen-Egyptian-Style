@@ -237,6 +237,16 @@ export function syncCheckStatus(button:HTMLButtonElement): () => void {
  observer.observe(scope,{childList:true,subtree:true,characterData:true});
  return()=>observer.disconnect();
 }
+// Wrong or unsolved check: the page gives one short horizontal shake. Transform-only (no
+// layout shift, no rotation); the CSS block skips the animation under prefers-reduced-motion.
+function shakePage(button:HTMLButtonElement){
+ const page=button.closest<HTMLElement>('.page');
+ if(!page)return;
+ page.classList.remove('checkShake');
+ void page.offsetWidth; // Restart the animation when the previous shake is still running.
+ page.addEventListener('animationend',()=>page.classList.remove('checkShake'),{once:true});
+ page.classList.add('checkShake');
+}
 export function beginCheckFeedback(button:HTMLButtonElement): () => void {
  // Called inside the click gesture, before the grading handler and React commit.
  readyAudio();
@@ -252,7 +262,7 @@ export function beginCheckFeedback(button:HTMLButtonElement): () => void {
   if(!wrong&&!correct)return;
   finish();button.dataset.checkFeedback=correct?'success':'error';
   markCheckFields(button,correct);
-  sound(correct);if(correct)fireworks();
+  sound(correct);if(correct)fireworks();else shakePage(button);
   button.dispatchEvent(new CustomEvent('check-feedback',{bubbles:true,detail:{correct,answers:registry.get(button)??Object.fromEntries(keyedFields(button).items.map(i=>[i.field.id,i.field.answer]))}}));
  };
  const observer=new MutationObserver(()=>{cancelAnimationFrame(frame);frame=requestAnimationFrame(evaluate)});
