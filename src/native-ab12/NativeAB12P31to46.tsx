@@ -17,9 +17,10 @@ export function NativeAB12P31to46({page}:{page:string}){
  const defaults:Record<string,string>=page==='34'?{'r4a':'einer'}:{};
  const [values,sv]=useState<Record<string,string>>(()=>{try{return {...defaults,...JSON.parse(localStorage.getItem(key)||'{}')}}catch{return {...defaults}}});
  const [results,sr]=useState<Record<string,boolean>>({});
+ const [saved,sn]=useState<Record<string,boolean>>({});
  useLayoutEffect(()=>{if(document.fonts){['400 19.5px DroidSerif','700 19.5px DroidSerif','400 21px FiraSans','500 18px FiraSans','600 21px FiraSans','700 21px FiraSans','400 19px FiraSansCond'].forEach(f=>{try{document.fonts.load(f)}catch{}})}},[]);
  useLayoutEffect(()=>{const el=root.current!;const obs=new ResizeObserver(()=>ss(Math.min(el.clientWidth/W,(el.clientHeight-38)/H)));obs.observe(el);return ()=>obs.disconnect()},[]);
- usePageReset(page,key,()=>{sv({...defaults});sr({})});
+ usePageReset(page,key,()=>{sv({...defaults});sr({});sn({})});
  const set=(id:string,v:string)=>{const n={...values,[id]:v};sv(n);localStorage.setItem(key,JSON.stringify(n))};
  const text=(x:number,y:number,w:number,t:string,cls='')=><div className={'naText '+cls} style={{left:x,top:y,width:w}}><Words text={t}/></div>;
  const uml=(x:number,y:number,w:number,pre:string,post:string)=><div className='naText naNw naUmlRow' style={{left:x,top:y,width:w}}><Words text={pre}/><span className="naUmlWrap"><span className="naUmlMark">¨</span><Words text={post}/></span></div>;
@@ -31,7 +32,7 @@ export function NativeAB12P31to46({page}:{page:string}){
  const rule=(x:number,y:number,w:number)=><div className="naRule" style={{left:x,top:y,width:w}}/>;
  const dot=(id:string,value:string,x:number,y:number,label:string,checkbox=false)=><input className="naDot" type={checkbox?'checkbox':'radio'} aria-label={label} data-value={value} name={key+'-'+id} checked={checkbox?values[id]==='true':values[id]===value} onChange={e=>set(id,checkbox?String(e.target.checked):value)} style={{left:x,top:y}}/>;
  const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}/><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
- const save=(id:string,x:number,y:number)=>null;
+ const save=(id:string,x:number,y:number)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton onClick={()=>sn(s=>({...s,[id]:true}))}/><output aria-live="polite">{saved[id]?'Gespeichert':''}</output></div>;
  const arrow=(id:string,x:number,y:number,label:string)=><button className="naArrow" aria-label={label} data-native-arrow={id} style={{left:x,top:y}} onClick={()=>set(id,values[id]==='\u2197'?'\u2198':'\u2197')}>{values[id]||''}</button>;
  const checkRaw=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>v===(values[k]||'').trim()))})}/><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,t:string,cls='')=><div className={'naTitle '+cls} style={{left:x,top:y,width:w}}><b>{n}</b><Words text={t}/></div>;
@@ -198,7 +199,6 @@ export function NativeAB12P31to46({page}:{page:string}){
   {lin(192,1018,665,2,'#c2c3c6')}
   {lin(192,1045,665,2,'#c2c3c6')}
   {lin(192,1072,665,2,'#c2c3c6')}
-  {lin(192,1097,665,2,'#c2c3c6')}
   {text(128,78,241,'BASISTRAINING','naHeadline naNw')}
   {kb(80,163,'KB 8')}
   {title('9',130,158,760,'Einen Termin verschieben.','naGB')}
@@ -248,7 +248,19 @@ export function NativeAB12P31to46({page}:{page:string}){
   {field('p32-9a4',195,547,710,'9a4')}
   {text(910,560,16,'.','naNw')}
   {field('p32-9b',232,913,274,'9b')}
+  {field('p32-9b1',192,937,665,'Antwort Zeile 1','naFieldBlank')}
+  {field('p32-9b2',192,964,665,'Antwort Zeile 2','naFieldBlank')}
+  {field('p32-9b3',192,991,665,'Antwort Zeile 3','naFieldBlank')}
+  {field('p32-9b4',192,1018,665,'Antwort Zeile 4','naFieldBlank')}
+  {field('p32-9b5',192,1045,665,'Antwort Zeile 5','naFieldBlank')}
+  {save('32-9b-save',190,1110)}
   {check('32-1',700,1110,{'p32-9a1':'kann ich heute um 16 Uhr nicht kommen','p32-9a2':'Können wir den Termin verschieben','p32-9a3':'Haben Sie am Mittwoch Zeit','p32-9a4':'Ab Freitag bin ich für eine Woche im Urlaub','p32-9b':'geehrter Herr Frei'})}
+  {field('p32-10-0',468,1167,28,'Lösung zu: muss Stefan Kollegen am Flughafen abholen','naLC')}
+  {field('p32-10-1',468,1192,28,'Lösung zu: hat Nina eine Sitzung','naLC')}
+  {field('p32-10-2',468,1217,28,'Lösung zu: am Freitag um 14.30 Uhr Zeit','naLC')}
+  {field('p32-10-4',468,1269,28,'Lösung zu: muss Nina einen Kollegen anrufen','naLC')}
+  {field('p32-10-5',468,1294,28,'Lösung zu: hat Nina nach dem Mittagessen Zeit','naLC')}
+  {check('32-2',700,1328,{'p32-10-0':'b','p32-10-1':'c','p32-10-2':'f','p32-10-4':'d','p32-10-5':'e'})}
  </>}
  {page==='33'&&<>
   {art('0',982,44,85,78)}
