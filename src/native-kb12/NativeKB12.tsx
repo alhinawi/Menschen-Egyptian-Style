@@ -658,9 +658,9 @@ export function NativeKB12({page}:{page:string}){
  {page==='49'&&<>
  {art('hero',0,0,1100,1000)}{text(15,43,995,'Bei Rot musst du stehen, bei Grün darfst du gehen.','nkHeroTitle nkL21Hero')}{text(1015,38,85,'21','nkLesson')}
  <aside className="nkAside" style={{left:834,top:996,width:220,height:300}}><Words text={'Sprechen: seine Meinung sagen: Das finde ich nicht so schlimm!; über Regeln sprechen: Hier darf man nicht rauchen.\nLesen: Zeitungskolumne\nWortfeld: Regeln in Verkehr und Umwelt\nGrammatik: Modalverben dürfen, müssen'}/></aside>
- {audio('assets/kb-cd3-track32.mp3',48,930,'3 32',undefined,'1')}{title('1',105,1042,700,'Sehen Sie das Foto an und hören Sie.')}{text(150,1080,650,'Was passiert hier? Erzählen Sie.','nkBold')}{text(230,1128,440,'Da sind ein Mann und\nein Kind …','nkSpeech')}{open('1',569,1193,200,54,'Was passiert hier?')}
+ {audio('assets/kb-cd3-track32.mp3',48,930,'3 32',undefined,'1')}{title('1',105,1042,700,'Sehen Sie das Foto an und hören Sie.')}{text(150,1080,650,'Was passiert hier? Erzählen Sie.','nkBold')}{text(230,1128,440,'Da sind ein Mann und\nein Kind …','nkSpeech')}{save('1',495,1081)}{open('1',569,1193,200,54,'Was passiert hier?')}
  {title('2',105,1268,710,'Was machen Sie bei einer roten Ampel …')}{text(150,1305,580,'… als Fußgänger?\n… als Fahrradfahrer?\n… als Autofahrer?')}{text(150,1392,850,'■  Zu Fuß gehe ich manchmal bei Rot über die Ampel.\n▲  Wirklich? Ich nicht. Ich bleibe bei Rot immer stehen.')}
- {open('2',650,1401,175,94,'Mein Verhalten an der roten Ampel')}
+ {save('2',620,1260)}{open('2',650,1401,175,94,'Mein Verhalten an der roten Ampel')}
  </>}
  {page==='50'&&<>
  {art('vocab',0,0,1100,105)}{['Picknick erlaubt','Reiten erlaubt','Zelten erlaubt','Handys erlaubt','Hunde erlaubt','Baden erlaubt'].map((t,i)=>text(i*183.3,111,183.3,t,'nkVocabLabel nkTinyLabel nkCenter'))}
