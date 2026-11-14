@@ -72,9 +72,9 @@ export function NativeAB12P31to46({page}:{page:string}){
    set(id,[...cur].sort((a,b)=>a-b).join(' '));
   };
   const tokens=stressTokens(word);
-  return <span ref={wr} className="naStressWord" data-native-field={id} data-value={marked.map(vi=>tokens[vi]||'').join(' ')} data-empty={marked.length?'0':'1'}>
+  return <span ref={wr} className="naStressWord tapWord" role="button" tabIndex={0} data-word={word} data-phrase={word} data-native-field={id} data-value={marked.map(vi=>tokens[vi]||'').join(' ')} data-empty={marked.length?'0':'1'}>
    {word}
-   {rects.map((r,vi)=><span key={vi} className="naStressHit" style={{left:r.l-1.5,top:r.t,width:r.w+3,height:r.h+3}} onClick={()=>toggle(vi)}/>)}
+   {rects.map((r,vi)=><span key={vi} className="naStressHit" style={{left:r.l-1.5,top:r.t,width:r.w+3,height:r.h+3}} onClickCapture={e=>{e.stopPropagation();toggle(vi)}}/>)}
    {rects.map((r,vi)=>marked.includes(vi)?<span key={'m'+vi} className="naStressMark" style={{left:r.cx,top:r.by-1}}/>:null)}
   </span>;
  };
