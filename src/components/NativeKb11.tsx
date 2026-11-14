@@ -6,6 +6,7 @@ import {usePageReset} from '../exercises/usePageReset';
 import {LineMatching} from '../exercises/LineMatching';
 import {KB11P36Matching} from './KB11P36Matching';
 import {KB11P20MapPaint} from './KB11P20MapPaint';
+import {KB11P31GlassesPaint} from './KB11P31GlassesPaint';
 import {KB11P29Marking} from './KB11P29Marking';
 import {ClipMarkers} from './ClipMarkers';
 import {useLayoutEffect,useRef,useState} from 'react';
@@ -58,6 +59,7 @@ function Inner({data}:{data:NativePage}){
   {data.panel&&<NativeWritingPanel page={String(data.page)} storageKey={key} sections={data.panel} values={v} onChange={set}/>}
   <div className="nkbCanvas" ref={root} style={{aspectRatio:`${W}/${H}`}}>
    {String(data.page)==='20'&&<KB11P20MapPaint value={v.mapPaint||''} onChange={set} pos={pos}/>}
+   {String(data.page)==='31'&&<KB11P31GlassesPaint value={v.glassesPaint||''} onChange={set} pos={pos}/>}
    {String(data.page)==='29'&&<KB11P29Marking values={v} onChange={set} pos={pos}/>}
    {data.art.map((a,i)=><PageImage key={i} className="nkbArt" src={a.src} alt="" draggable={false} style={pos(a.x,a.y,a.w,a.h)}/>)}
    {(data.blocks||[]).map((bl,i)=><div key={'b'+i} className={'nkbLine'+(bl.sb?' nkbSB':bl.b?' nkbB':'')+(bl.sa?' nkbSans':'')+((bl as any).hand?' nkbHand':'')} data-tw={bl.w} data-rot={(bl as any).rot||undefined} data-nf={(bl as any).nf?'1':undefined} style={{left:bl.x/W*100+'%',top:(bl.cy-bl.f*0.62)/H*100+'%',fontSize:bl.f/W*100+'cqw',lineHeight:1.24}}>{bl.ws.map((w,j)=>{const tap=/[A-Za-zÄÖÜäöüß]/.test(w.t);return <span key={j}>{j>0?' ':''}<span {...(tap?{className:'tapWord',role:'button',tabIndex:0,'data-word':w.t.replace(/^[.,!?„"()]+|[.,!?“"()\u2009]+$/g,''),'data-phrase':w.ph||w.t}:(w.t==='–'?{className:'nkbDash'}:{}))} style={{color:w.c,background:(w as any).hi?'linear-gradient(transparent 10%,#fff538 10% 90%,transparent 90%)':undefined,fontStyle:(w as any).i?'italic':undefined}}>{(w as any).parts?((w as any).parts as {t:string;c?:string;b?:number}[]).map((q,k)=><span key={k} style={{color:q.c,fontWeight:q.b?700:undefined}}>{q.t}</span>):w.t}</span></span>})}</div>)}
