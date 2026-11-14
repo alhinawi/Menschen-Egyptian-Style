@@ -52,7 +52,8 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(148,271,20,'c','naLet13')}{text(173,271,420,'Wenden Sie hier.','naS20')}
   {text(148,297,20,'d','naLet13')}{text(173,297,420,'Fahren Sie nach rechts.','naS20')}
   {art('arrow',590,183,75,40)}
-  {rule(594,237,140)}{rule(594,263,140)}{rule(594,290,140)}{rule(594,316,140)}
+  <LinedArea id="6-draw" values={values} set={set} x={594} ruleYs={[237,263,290,316]} w={140} label="Zeichnen Sie"/>
+  <div className="naCheck" data-check="6-draw-save" style={{left:594,top:330}}><CheckButton onClick={()=>sn(s=>({...s,'6-draw-save':true}))}/><output aria-live="polite">{saved['6-draw-save']?'Gespeichert':''}</output></div>
   {kb(56,365,'KB 2')}
   {title('2',106,358,620,'Wo sind die Bälle? Ergänzen Sie.','naYB')}
   {side(68,403,'Wörter')}
@@ -86,7 +87,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {field('6-r5',655,957,105,'Rätsel 5','naFieldBlank')}
   {field('6-r6',655,983,130,'Rätsel 6','naFieldBlank')}
   {art('cafe',655,1010,72,30)}
-  {check('6-3a',660,1050,{'6-r1':'Restaurant','6-r2':'Zentrum','6-r3':'Bahnhof','6-r4':'Bank','6-r5':'Post','6-r6':'Ampel'})}
+  {check('6-3a',912,1010,{'6-r1':'Restaurant','6-r2':'Zentrum','6-r3':'Bahnhof','6-r4':'Bank','6-r5':'Post','6-r6':'Ampel'})}
   {art('globe',52,1052,50,46)}
   {text(115,1066,20,'b','naLet13')}{text(146,1066,460,'Ergänzen Sie die Wörter aus a und vergleichen Sie.','naS20')}
   <div className="na13Band2" style={{left:145,top:1098,width:923,height:34}}/>
@@ -100,6 +101,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(153,1289,20,'6','naS20')}{field('6-d6',178,1285,177,'Deutsch 6','naFieldBlank')}{text(453,1289,170,'traffic light','naS19 naEng')}{field('6-m6',640,1285,415,'Meine Sprache 6','naFieldBlank')}
   {text(143,1316,20,'7','naS20')}{field('6-d7',178,1312,177,'Deutsch 7','naFieldBlank')}{text(453,1316,170,'coffee bar','naS19 naEng')}{field('6-m7',640,1312,415,'Meine Sprache 7','naFieldBlank')}
   {check('6-3b',178,1352,{'6-d2':'Zentrum','6-d3':'Bahnhof','6-d4':'Bank','6-d5':'Post','6-d6':'Ampel','6-d7':'Café'})}
+  <div className="naCheck" data-check="6-ms-save" style={{left:640,top:1352}}><CheckButton onClick={()=>sn(s=>({...s,'6-ms-save':true}))}/><output aria-live="polite">{saved['6-ms-save']?'Gespeichert':''}</output></div>
   {art('modul-tab',0,1403,80,21)}
   {footerL('6','sechs',1404)}
  </>}
