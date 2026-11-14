@@ -1,0 +1,10 @@
+/* p66 ex3: sentence fields sit between the printed word line and its writing rule
+   (top = word-line bottom + 8px, bottom on the rule; Droid Serif, no clipping). */
+.nativeAB12[data-native-ab12="66"] .naCanvas .naField.naP66S{
+  height:var(--h)!important;
+  font-family:ABDroid69,Georgia,serif!important;
+  font-size:13px!important;
+  line-height:1!important;
+  padding:0 2px!important;
+  border-bottom:0!important;
+}

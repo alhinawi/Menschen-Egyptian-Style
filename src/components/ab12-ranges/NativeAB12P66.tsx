@@ -1,6 +1,7 @@
 import {AB12Canvas,AB12Helpers} from '../ab12-shared';
+import './native-ab12-p66.css';
 
-function P66(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,title,kb,side,audio,strike,head,foot,tab,modTab,box,rect}=h;return <>
+function P66(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,title,kb,side,audio,strike,head,foot,tab,modTab,box,rect,values,set}=h;return <>
   {rect(326,26,416,64,'#e3b0d5')}
   {rect(123,158,468,28,'#fbfbd3')}
   {rect(226,433,513,23,'#ebe7cb')}
@@ -52,12 +53,9 @@ function P66(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {field('p66-1b',268,246,287,'1 b')}
   {field('p66-1c',327,295,259,'1 c')}
   {field('p66-1d',344,345,230,'1 d')}
-  {field('p66-3b',138,724,596,'Satz b','naFieldBlank')}
-  {field('p66-3c',137,773,597,'Satz c','naFieldBlank')}
-  {field('p66-3d',137,823,596,'Satz d','naFieldBlank')}
-  {field('p66-3e',137,870,596,'Satz e','naFieldBlank')}
-  {field('p66-3f',136,920,597,'Satz f','naFieldBlank')}
-  {field('p66-3g',136,968,597,'Satz g','naFieldBlank')}
+  {([['p66-3b','b',138,739,587,15],['p66-3c','c',137,787,585,14],['p66-3d','d',137,835,585,15],['p66-3e','e',137,884,585,15],['p66-3f','f',136,933,587,15],['p66-3g','g',136,982,587,14]] as const).map(([id,lbl,x,y,w,hh])=>
+    <input key={id} className='naField naFieldBlank naP66S' aria-label={'Satz '+lbl} data-native-field={id} style={{left:x,top:y,width:w,['--h' as any]:hh+'px'}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>
+  )}
   {wl(752,15,[{x:731,w:5,t:'.'}])}
   {wl(801,15,[{x:730,w:7,t:'?'}])}
   {wl(850,15,[{x:730,w:7,t:'?'}])}
@@ -81,6 +79,7 @@ function P66(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {field('p66-2d6',616,569,119,'dürfen sie/Sie')}
   {check('g1',190,375,{'p66-1b':'zu Fuß gehen','p66-1c':'einen Helm tragen','p66-1d':'Hunde nicht mitkommen'})}
   {check('g2',129,604,{'p66-2m3':'muss','p66-2m4':'müssen','p66-2m6':'müssen','p66-2d2':'darfst','p66-2d3':'darf','p66-2d4':'dürfen','p66-2d5':'dürft','p66-2d6':'dürfen'})}
+  {check('g3',220,1031,{'p66-3b':'Im Flugzeug darf ich nicht rauchen.','p66-3c':'Müssen Radfahrer in Deutschland einen Helm tragen?','p66-3d':'Dürfen wir im See baden?','p66-3e':'Warum musst du heute zu Hause bleiben?','p66-3f':'Ihr dürft hier leider nicht zelten.','p66-3g':'In der Bibliothek muss ich mein Handy ausmachen.'})}
 </>}
 
 export function NativeAB12P66to71({page}:{page:string}){
