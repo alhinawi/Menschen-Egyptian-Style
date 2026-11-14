@@ -1,4 +1,5 @@
 import {useEffect,useRef,useState} from 'react';
+import {createPortal} from 'react-dom';
 import type {CSSProperties,PointerEvent} from 'react';
 
 // Printed legend colors of exercise 9a ("Markieren Sie die Gebiete farbig").
@@ -8,6 +9,7 @@ export function KB11P20MapPaint({value,onChange,pos}:{value:string;onChange:(id:
  const canvasRef=useRef<HTMLCanvasElement>(null);
  const drawing=useRef(false);
  const [color,setColor]=useState(COLORS[0][0]);
+ const [menuOpen,setMenuOpen]=useState(false);
  useEffect(()=>{
   const c=canvasRef.current;if(!c)return;
   const ctx=c.getContext('2d');if(!ctx)return;
@@ -19,10 +21,20 @@ export function KB11P20MapPaint({value,onChange,pos}:{value:string;onChange:(id:
  const move=(e:PointerEvent)=>{if(!drawing.current)return;e.preventDefault();const ctx=canvasRef.current!.getContext('2d')!;ctx.lineTo(...point(e));ctx.stroke();};
  const up=()=>{if(!drawing.current)return;drawing.current=false;onChange('mapPaint',canvasRef.current!.toDataURL());};
  return <>
-  <div className="nkbPaintTools" style={pos(123,336,480,24)}>
+  <div className="nkbPaintTools nkbPaintToolsMap" style={pos(123,336,480,24)}>
    {COLORS.map(([c,label])=><button key={c} type="button" data-color={c} style={{outline:color===c?'2px solid '+c:'none'}} onClick={()=>setColor(c)}>{label}</button>)}
    <button type="button" onClick={()=>{const c=canvasRef.current!;c.getContext('2d')!.clearRect(0,0,c.width,c.height);onChange('mapPaint','');}}>Löschen</button>
   </div>
+  {createPortal(<>
+   <button type="button" className="nkbPaintFab" onClick={()=>setMenuOpen(true)}><span className="nkbPaintFabDot" style={{background:color}}/>{COLORS.find(([c])=>c===color)?.[1]||'Farbe'}</button>
+   {menuOpen&&<>
+    <div className="nkbPaintBackdrop" onClick={()=>setMenuOpen(false)}/>
+    <div className="nkbPaintMenu" role="dialog" aria-label="Farbe wählen">
+     {COLORS.map(([c,label])=><button key={c} type="button" style={{borderLeft:'10px solid '+c,fontWeight:color===c?700:400}} onClick={()=>{setColor(c);setMenuOpen(false);}}>{label}</button>)}
+     <button type="button" onClick={()=>{const c=canvasRef.current!;c.getContext('2d')!.clearRect(0,0,c.width,c.height);onChange('mapPaint','');setMenuOpen(false);}}>Löschen</button>
+    </div>
+   </>}
+  </>,document.body)}
   <canvas ref={canvasRef} className="nkbPaint" aria-label="Karte farbig markieren" width={277} height={184} style={pos(760,141,277,184)} onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerCancel={up}/>
  </>;
 }

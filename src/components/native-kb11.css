@@ -241,3 +241,19 @@
 .nkb36GroupLabel{font-size:13px;font-weight:700;color:#4a3f28;margin:0 0 5px}
 .nkb36PanelF select.nkb36Cell{display:block;width:100%;min-height:40px;font-size:15px;margin:0 0 8px;border:1.5px solid #7aa7c7;border-radius:4px;background:#fff;padding:0 6px;color:#1d1c1a}
 .nkb36Check{position:static;display:flex;align-items:center;gap:8px;flex-basis:100%;font-size:15px}
+.nkbPaintToolsPen{align-items:flex-start}
+@media (max-width:900px){.nkbPaintToolsPen button{min-height:47px;font-size:16px}}
+@media (max-width:700px){.nkbPaintToolsPen button{min-height:60px;font-size:20px}}
+@media (max-width:500px){.nkbPaintToolsPen button{min-height:84px;font-size:26px;padding:6px 14px}}
+@media (max-width:380px){.nkbPaintToolsPen button{min-height:102px}}
+.nkbPaintFab{display:none}
+@media (max-width:500px){
+ .nkbPaintToolsMap{display:none}
+ .nkbPaintFab{display:block;position:fixed;right:10px;bottom:70px;z-index:998;min-height:44px;padding:0 16px;font:600 15px Arial,sans-serif;border-radius:22px;border:1.5px solid #8a7a58;background:#fffdf5;color:#4a3f28;box-shadow:0 2px 8px #0003;cursor:pointer}
+}
+.nkbPaintBackdrop{position:fixed;inset:0;z-index:999;background:transparent}
+.nkbPaintMenu{position:fixed;right:10px;bottom:126px;z-index:1000;display:flex;flex-direction:column;gap:8px;min-width:200px;background:#fffef9;border:1.5px solid #b9a77e;border-radius:10px;padding:10px;box-shadow:0 8px 30px #0004;font-family:Arial,sans-serif}
+.nkbPaintMenu button{min-height:44px;font-size:15px;text-align:left;padding:0 12px;border:1px solid #d8cfb8;border-radius:6px;background:#fffdf5;color:#35402f;cursor:pointer}
+.nkbPaintFab{display:none;align-items:center;gap:8px}
+.nkbPaintFabDot{display:inline-block;width:16px;height:16px;border-radius:50%;border:1px solid #0003}
+@media (max-width:500px){.nkbPaintFab{display:inline-flex}}
