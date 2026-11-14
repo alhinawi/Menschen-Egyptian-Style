@@ -68,7 +68,7 @@ export function NativeAB11Next({page}:{page:string}){
  {multi('u5-r2',748,436,249,48,'5 Weitere Korrektur')}{checkGroup('u5',478,489)}
  {title('6',529,'Ordnen Sie zu.','KB 3b','Wörter')}{text(264,566,410,'ich | er | sie | wir | sie','nabBank')}
  {img('pronoun1',202,597,90,135)}{img('pronoun2',342,625,116,128)}{img('pronoun3',486,583,121,118)}{img('pronoun4',626,625,121,133)}{img('pronoun5',798,625,184,157)}
- {field('u6-1',235,647,46,'6 Bild 1')}{text(389,655,45,'er','nabExample')}{field('u6-3',522,611,44,'6 Bild 3')}{field('u6-4',663,671,51,'6 Bild 4')}{field('u6-5',847,644,50,'6 Bild 5')}
+ {field('u6-1',235,647,46,'6 Bild 1')}{text(380,635,45,'er','nabExample')}{field('u6-3',522,611,44,'6 Bild 3')}{field('u6-4',663,671,51,'6 Bild 4')}{field('u6-5',847,644,50,'6 Bild 5')}
  {checkGroup('u6',202,773)}
  {title('7',806,'Was ist richtig? Kreuzen Sie an.','KB 3b')}
  {text(209,846,355,'a  Svenja und Torben sind verheiratet.')}{text(579,846,360,'☑  Sie    ◯  Ich    haben keine Kinder.')}

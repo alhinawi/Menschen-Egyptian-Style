@@ -2,6 +2,7 @@ import {ReaderPageReset} from './components/ReaderPageReset';
 import {ReaderAudioPlayers} from './components/ReaderAudioPlayers';
 import {AudioMarkerButtons} from './components/AudioMarkerButtons';
 import {useEffect, useLayoutEffect, useMemo, useRef, useState} from 'react';
+import {createPortal} from 'react-dom';
 import {ScanDialogs} from './scan/ScanDialogs';
 import {PersistenceContext, usePersistenceController} from './persistence/PersistentFields';
 import {MeaningDialog} from './meanings/MeaningDialog';
@@ -19,6 +20,7 @@ import {lessonUrl, loadLesson, navigateLesson, registerNavigator, resolveHref, s
 
 export default function App({initial}: {initial: LoadedLesson}) {
   const [lesson, setLesson] = useState(initial);
+  const [switching, setSwitching] = useState(false);
   const lessonRef = useRef(lesson);
   lessonRef.current = lesson;
   const mountedResolvers = useRef<Array<() => void>>([]);
@@ -41,21 +43,30 @@ export default function App({initial}: {initial: LoadedLesson}) {
         }
         return;
       }
-      const next = await loadLesson(slug);
-      applyRouteMeta(slugToFile[next.config.slug] ?? 'index.html');
-      // Tear the old lesson down before the DOM swap: adapters restore the
-      // page elements they moved, so React can cleanly unmount the old tree.
-      cleanupRef.current?.();
-      const url = opts.rawUrl ?? lessonUrl(next.config.slug, token);
-      if (opts.replace) history.replaceState({}, '', url);
-      else history.pushState({}, '', url);
-      await new Promise<void>(resolve => {
-        mountedResolvers.current.push(resolve);
-        setLesson(next);
-      });
-      // The lesson markup swapped under the same window: land at the top of
-      // the new lesson instead of keeping the old lesson's scroll offset.
-      scrollTo(0, 0);
+      setSwitching(true);
+      try {
+        const next = await loadLesson(slug);
+        applyRouteMeta(slugToFile[next.config.slug] ?? 'index.html');
+        // Tear the old lesson down before the DOM swap: adapters restore the
+        // page elements they moved, so React can cleanly unmount the old tree.
+        cleanupRef.current?.();
+        const url = opts.rawUrl ?? lessonUrl(next.config.slug, token);
+        if (opts.replace) history.replaceState({}, '', url);
+        else history.pushState({}, '', url);
+        await new Promise<void>(resolve => {
+          mountedResolvers.current.push(resolve);
+          setLesson(next);
+        });
+        // The lesson markup swapped under the same window: land at the top of
+        // the new lesson instead of keeping the old lesson's scroll offset.
+        scrollTo(0, 0);
+      } catch (err) {
+        // A failed lazy load (offline, deploy mid-switch) must not look like a
+        // dead tap: fall back to a full document load with browser progress.
+        location.assign(opts.rawUrl ?? lessonUrl(slug, token));
+      } finally {
+        setSwitching(false);
+      }
     });
     const onPop = () => {
       // Preserve the exact URL (viewer pages carry their page in ?page=N).
@@ -109,5 +120,5 @@ export default function App({initial}: {initial: LoadedLesson}) {
     cleanupRef.current = cleanup;
     return cleanup;
   }, [initializers]);
-  return <ReaderContext.Provider value={reader}><AudioMarkerButtons/><ReaderAudioPlayers/>{config.reader&&<ReaderPageReset key={config.slug} onReset={page=>{persistence.resetPage(page);quizzes.resetPage(page)}}/>}{config.slug === 'ab-a12-l17-20' && <ScanDialogs/>}{config.initializers.includes('meanings') && <MeaningDialog key={'m' + config.slug}/>}<PersistenceContext.Provider value={persistence}><QuizContext.Provider value={quizzes}><div key={config.slug} style={{display: 'contents'}} onInputCapture={e => persistence.input(e.target as HTMLInputElement)}>{!config.reader ? <OriginalViewer><BookMarkup nodes={film.nodes} quizEnabled={config.reactExercises}/></OriginalViewer> : <BookMarkup nodes={film.nodes} quizEnabled={config.reactExercises}/>}</div></QuizContext.Provider></PersistenceContext.Provider><FilmMedia key={config.slug} media={film.media}/>{config.themes && <><ReaderThemes key={'t' + config.slug}/><CrossBookNavigation key={'c' + config.slug}/></>}{config.reader && <><LibraryNav slug={config.slug}/><LessonHop slug={config.slug}/></>}</ReaderContext.Provider>;
+  return <ReaderContext.Provider value={reader}><AudioMarkerButtons/><ReaderAudioPlayers/>{config.reader&&<ReaderPageReset key={config.slug} onReset={page=>{persistence.resetPage(page);quizzes.resetPage(page)}}/>}{config.slug === 'ab-a12-l17-20' && <ScanDialogs/>}{config.initializers.includes('meanings') && <MeaningDialog key={'m' + config.slug}/>}<PersistenceContext.Provider value={persistence}><QuizContext.Provider value={quizzes}><div key={config.slug} style={{display: 'contents'}} onInputCapture={e => persistence.input(e.target as HTMLInputElement)}>{!config.reader ? <OriginalViewer><BookMarkup nodes={film.nodes} quizEnabled={config.reactExercises}/></OriginalViewer> : <BookMarkup nodes={film.nodes} quizEnabled={config.reactExercises}/>}</div></QuizContext.Provider></PersistenceContext.Provider><FilmMedia key={config.slug} media={film.media}/>{config.themes && <><ReaderThemes key={'t' + config.slug}/><CrossBookNavigation key={'c' + config.slug}/></>}{config.reader && <><LibraryNav slug={config.slug}/><LessonHop slug={config.slug}/></>}{switching && createPortal(<div className="fixed inset-0 z-[95] flex items-center justify-center bg-[rgba(24,16,10,.45)]" role="status" aria-label="Loading"><div className="size-11 rounded-full border-4 border-[#e8dfc8] border-t-[#c9a45a] animate-spin"/></div>, document.body)}</ReaderContext.Provider>;
 }
