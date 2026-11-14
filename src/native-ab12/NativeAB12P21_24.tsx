@@ -61,6 +61,8 @@ export function NativeAB12P21_24({page}:{page:string}){
   {art('row2-ex',170,675,206,31)}
   {text(180,713,20,'3.','naSmall')}
   {text(180,743,20,'…','naSmall')}
+  {field('p21-f3w',205,708,140,'Zeile 3 Was','naFieldBlank')}{field('p21-f3a',357,708,174,'Zeile 3 Ich','naFieldBlank')}{field('p21-f3b',539,708,174,'Zeile 3 Partner A','naFieldBlank')}{field('p21-f3c',721,708,175,'Zeile 3 Partner B','naFieldBlank')}
+  {field('p21-f4w',205,737,140,'Zeile 4 Was','naFieldBlank')}{field('p21-f4a',357,737,174,'Zeile 4 Ich','naFieldBlank')}{field('p21-f4b',539,737,174,'Zeile 4 Partner A','naFieldBlank')}{field('p21-f4c',721,737,175,'Zeile 4 Partner B','naFieldBlank')}
   {art('bubble1',125,782,209,89)}
   {art('bubble2',378,788,483,98)}
   {text(108,931,371,'TRAINING: AUSSPRACHE','naHead2 naH30')}
