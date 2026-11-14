@@ -89,7 +89,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(70.3,1053,30,'84','naFootL23B naNw',11)}{text(92.0,1053,6,'|','naFootL23 naNw',12.3)}{text(110,1053,110,'vierundachtzig','naFootL23 naNw',12.3)}
  </>}
  {page==='85'&&<>
-  <div className="naBasis" style={{left:60,top:48}}>BASISTRAINING</div>
+  <div className="naBasis" style={{left:72,top:64}}>BASISTRAINING</div>
   <div className="naRuleP" style={{left:205,top:84,width:534}}/>
   <div className="naRedL" style={{left:728,top:28,width:71,height:58}}>23</div>
   {kb(32,112,'KB 4')}
@@ -159,8 +159,8 @@ export function NativeAB12L23({page}:{page:string}){
   {text(717.3,1046,30,'85','naFootL23B naNw',11)}{text(700.0,1046,6,'|','naFootL23 naNw',12.3)}{text(598.7,1046,110,'fünfundachtzig','naFootL23 naNw',12.3)}
  </>}
  {page==='86'&&<>
-  <div className="naBasisL" style={{left:90,top:51}}>BASISTRAINING</div>
-  <div className="naRuleP" style={{left:277,top:72,width:451}}/>
+  <div className="naBasisL" style={{left:92,top:66}}>BASISTRAINING</div>
+  <div className="naRuleP" style={{left:277,top:85,width:451}}/>
   {kb(59,136,'KB 5')}
   {title('9',88,124,620,'Ordnen Sie zu.','naRB naNw')}
   <div className="naSide naSideB naSideC" style={{left:60,top:155}}>STRUKTUREN</div>
@@ -228,8 +228,8 @@ export function NativeAB12L23({page}:{page:string}){
   {text(69.3,1051,30,'86','naFootL23B naNw',11)}{text(92.0,1051,6,'|','naFootL23 naNw',12.3)}{text(109.5,1051,110,'sechsundachtzig','naFootL23 naNw',12.3)}
  </>}
  {page==='87'&&<>
-  <div className="naTrainHead" style={{left:71,top:62}}>TRAINING: HÖREN</div>
-  <div className="naRuleP" style={{left:287,top:82,width:440}}/>
+  <div className="naTrainHead" style={{left:71,top:63}}>TRAINING: HÖREN</div>
+  <div className="naRuleP" style={{left:287,top:83,width:440}}/>
   <div className="naRedL" style={{left:727,top:26,width:69,height:59}}>23</div>
   <div className="naOrangeTab" style={{left:796,top:27,width:5,height:62}}/>
   {title('1',68,124,620,'Gespräch in der Kantine.','naRB naNw naS15')}
@@ -269,9 +269,9 @@ export function NativeAB12L23({page}:{page:string}){
   {field('87-2-e',497,556,151,'2 e')}
   {field('87-2-f',497,575,151,'2 f')}
   {check('87-2',620,604,{'87-2-b':'schmutzig','87-2-c':'kalt','87-2-d':'nicht wieder','87-2-e':'schön','87-2-f':'Portugal'})}
-  <div className="naTrainHead naTrain87s" style={{left:71,top:668}}>TRAINING: AUSSPRACHE</div>
+  <div className="naTrainHead naTrain87s" style={{left:71,top:667}}>TRAINING: AUSSPRACHE</div>
   {text(365,675,105,'Vokal „ö“','naVokal naNw')}
-  <div className="naRuleP" style={{left:434,top:687,width:281}}/>
+  <div className="naRuleP" style={{left:434,top:686,width:281}}/>
   {audio('assets/ab-cd2-track38.mp3',26,723,'2 38','1')}
   {title('1',68,726,330,'Wann hören Sie „ö“? Kreuzen Sie an.','naRB naNw naS15')}
   {text(124,760,40,'1. Wort','naColH naNw')}{text(179,760,40,'2. Wort','naColH naNw')}
@@ -293,7 +293,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(716.6,1046,30,'87','naFootL23B naNw',11)}{text(699.9,1046,6,'|','naFootL23 naNw',12.3)}{text(586.5,1046,110,'siebenundachtzig','naFootL23 naNw',12.3)}
  </>}
  {page==='88'&&<>
-  <div className="naTestHead" style={{left:80,top:64}}>TEST</div>
+  <div className="naTestHead" style={{left:81,top:65}}>TEST</div>
   <div className="naTestRule" style={{left:140,top:85,width:590}}/>
   <div className="naSideT" style={{left:52,top:157}}>WÖRTER</div>
   {title('1',68,124,640,'Das Wetter in Deutschland. Ordnen Sie zu.','naRB naNw naS15')}
@@ -438,7 +438,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(52.3,1045,30,'90','naFootL23B naNw',11)}{text(74.9,1045,6,'|','naFootL23 naNw',12.3)}{text(92.7,1045,110,'neunzig','naFootL23 naNw',12.3)}
  </>}
  {page==='91'&&<>
-  <div className="naBasis" style={{left:78,top:50}}>BASISTRAINING</div>
+  <div className="naBasis" style={{left:79,top:61}}>BASISTRAINING</div>
   <div className="naRuleP" style={{left:263,top:80,width:455,background:'#e6742a'}}/>
   <div className="naRedL" style={{left:728,top:28,width:71,height:58,background:'#f55e02'}}>24</div>
   {kb(32,124,'KB 3')}
@@ -566,7 +566,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(723.6,1044,30,'91','naFootL23B naNw',11)}{text(706.9,1044,6,'|','naFootL23 naNw',12.3)}{text(606.3,1044,110,'einundneunzig','naFootL23 naNw',12.3)}
  </>}
  {page==='92'&&<>
-  <div className="naBasisL" style={{left:88,top:59}}>BASISTRAINING</div>
+  <div className="naBasisL" style={{left:88,top:61}}>BASISTRAINING</div>
   <div className="naRuleP" style={{left:274,top:82,width:454,background:'#e6742a'}}/>
   {kb(55,124,'KB 4')}
   <div className="naSide naSideB" style={{left:60,top:160}}>KOMMUNIKATION</div>
@@ -678,7 +678,7 @@ export function NativeAB12L23({page}:{page:string}){
   <div className="naTrainHead naTrainHead93" style={{left:74,top:634}}>TRAINING: AUSSPRACHE</div>
   {text(367,640,110,'Neueinsatz','naNeu93 naNw')}
   <div className="naRuleP" style={{left:449,top:655,width:268,background:'#ec7724'}}/>
-  {audio('assets/ab-cd2-track45.mp3',26,681,'2 45','1')}
+  {audio('assets/ab-cd2-track45.mp3',26,684,'2 45','1')}
   {title('1',72,685,330,'Hören Sie und sprechen Sie nach.','naRB naNw')}
   {text(105,707,220,'Achten Sie auf die Pause!','naInst93 naNw')}
   {text(104,735,14,'a','naBookSerif naAF93')}{text(122,735,330,'April – im | April','naBookSerif naAF93 naNw')}
@@ -706,9 +706,9 @@ export function NativeAB12L23({page}:{page:string}){
   {text(502,813,140,'weihungsparty','naBookSerif naAF93 naNw')}
   {text(484,832,14,'c','naBookSerif naAF93')}{text(502,832,260,'zuosternbekommtihrkleinegeschenke','naBookSerif naAF93 naNw')}
   {text(484,851,14,'d','naBookSerif naAF93')}{text(502,851,260,'meinefreundinhateinenfreundinulm','naBookSerif naAF93 naNw')}
-  {audio('assets/ab-cd2-track46.mp3',444,888,'2 46','2')}
+  {audio('assets/ab-cd2-track46.mp3',444,889,'2 46','2')}
   {text(488,892,250,'Hören Sie und vergleichen Sie.','naInst93 naNw')}
-  {audio('assets/ab-cd2-track47.mp3',409,933,'2 47','4')}
+  {audio('assets/ab-cd2-track47.mp3',409,937,'2 47','4')}
   {title('4',454,937,270,'Zungenbrecher: Hören Sie.','naRB naNw')}
   {text(485,968,280,'In Ulm und um Ulm und um Ulm herum.','naBookSerif naZung93 naNw')}
   {text(487,998,270,'Sprechen Sie: zuerst langsam und dann','naInst93b naNw')}
@@ -717,7 +717,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(718.6,1045,30,'93','naFootL23B naNw',11)}{text(701.0,1045,6,'|','naFootL23 naNw',12.3)}{text(597.3,1045,110,'dreiundneunzig','naFootL23 naNw',12.3)}
  </>}
  {page==='94'&&<>
-  <div className="naTestHead naTestHead94" style={{left:84,top:62}}>TEST</div>
+  <div className="naTestHead naTestHead94" style={{left:84,top:63}}>TEST</div>
   <div className="naTestRule94" style={{left:152,top:83,width:586}}/>
   <div className="naSideT" style={{left:52,top:147}}>WÖRTER</div>
   {title('1',81,120,640,'Feste und Feiern. Ergänzen Sie die Nomen oder Verben in der richtigen Form.','naRB naNw naS15')}
