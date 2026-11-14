@@ -804,7 +804,7 @@ export function NativeKB12({page}:{page:string}){
  <aside className="nkAside" style={{left:821,top:978,width:216,height:368}}><Words text={'Sprechen: Gründe angeben: Ich war nicht im Kino, denn ich gehe lieber ins Theater.; über das Wetter sprechen: Es regnet und ist bewölkt.\nLesen: Blog\nSchreiben: Postkarte\nWortfelder: Wetter, Himmelsrichtungen\nGrammatik: Wortbildung -los; Konjunktion denn'}/></aside>
  {audio('assets/kb-cd3-track37.mp3',48,925,'3 37',undefined,'1')}{title('1',105,1038,690,'Sehen Sie das Foto an und hören Sie. Was ist richtig?')}{text(117,1080,690,'Kreuzen Sie an.','nkBold')}
  {['Laura und Sandra sind im Urlaub. Das Wetter ist schlecht.\nLaura hat schlechte Laune. Sandra gibt ihr einen Tee.','Laura und Sandra sind im Urlaub. Das Wetter ist nicht schlecht.\nLaura hat schlechte Laune. Sandra gibt ihr ein Glas Wasser.'].map((t,i)=><div key={i}>{dot('1',String(i),151,1118+i*67,t)}{text(180,1118+i*67,615,t)}</div>)}{check('1',150,1250,{'1':'0'})}
- {title('2',105,1300,690,'Urlaub - und es regnet. Was machen Sie und wie geht es Ihnen?')}{text(117,1343,690,'Erzählen Sie.','nkBold')}{text(180,1390,500,'Ich gehe in ein Café. Mit einem Milchkaffee und einem Stück Kuchen geht es mir gleich viel besser!','nkSpeech nkSmall')}
+ {title('2',105,1300,690,'Urlaub - und es regnet. Was machen Sie und wie geht es Ihnen?')}{text(117,1343,690,'Erzählen Sie.','nkBold')}{save('2',254,1345)}{text(180,1390,500,'Ich gehe in ein Café. Mit einem Milchkaffee und einem Stück Kuchen geht es mir gleich viel besser!','nkSpeech nkSmall')}
  
  </>}
  {page==='62'&&<>
