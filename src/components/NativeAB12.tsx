@@ -36,86 +36,92 @@ export function NativeAB12({page}:{page:string}){
  const hand=(x:number,y:number,w:number,t:string)=><div className="naText naHand" style={{left:x,top:y,width:w}}><Words text={t}/></div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}${SCP('.naTitle')}{font-family:FiraSans,sans-serif!important;letter-spacing:0!important;font-size:21px!important}${SCP('.naText')},${SCP('.naBold')},${SCP('.naLet')},${SCP('.naDlg')}{font-family:DroidSerif,Georgia,serif!important;font-size:20px!important;letter-spacing:-0.65px}${SCP('.naField')}{font-family:DroidSerif,Georgia,serif!important;font-size:19px!important;letter-spacing:-0.65px}${SCP('.naText.naS20')}{font-size:18px!important}${SCP('.naSmall')}{font-size:16.5px!important}${SCP('.naD19')}{font-size:17.5px!important}${SCP('.naUrl')}{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='52'] .naText,[data-native-ab12='52'] .naBold,[data-native-ab12='52'] .naLet,[data-native-ab12='52'] .naDlg,[data-native-ab12='52'] .naField{letter-spacing:0!important}[data-native-ab12='52'] .naTitle{font-size:22px!important}[data-native-ab12='52'] .naFoot52{font-size:17px!important;color:#202020!important}[data-native-ab12='52'] .naTitle.naRB b{top:-3px}[data-native-ab12='52'] .naField.naList52{font-size:12px!important}[data-native-ab12='52'] .naCheck.naStack{flex-direction:column;align-items:center;gap:4px;width:108px}[data-native-ab12='52'] .naCheck.naStack output{white-space:nowrap;text-align:center}`}</style><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}${SCP('.naTitle')}{font-family:FiraSans,sans-serif!important;letter-spacing:0!important;font-size:21px!important}${SCP('.naText')},${SCP('.naBold')},${SCP('.naLet')},${SCP('.naDlg')}{font-family:DroidSerif,Georgia,serif!important;font-size:20px!important;letter-spacing:-0.65px}${SCP('.naField')}{font-family:DroidSerif,Georgia,serif!important;font-size:19px!important;letter-spacing:-0.65px}${SCP('.naText.naS20')}{font-size:18px!important}${SCP('.naSmall')}{font-size:16.5px!important}${SCP('.naD19')}{font-size:17.5px!important}${SCP('.naUrl')}{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='52'] .naText,[data-native-ab12='52'] .naBold,[data-native-ab12='52'] .naLet,[data-native-ab12='52'] .naDlg,[data-native-ab12='52'] .naField{letter-spacing:0!important}[data-native-ab12='52'] .naTitle{font-size:22px!important}[data-native-ab12='52'] .naFoot52{font-size:17px!important;color:#202020!important}[data-native-ab12='89'] .naHeadline{font-size:23px!important;letter-spacing:0!important}[data-native-ab12='52'] .naTitle.naRB b{top:-3px}[data-native-ab12='52'] .naField.naList52{font-size:12px!important}[data-native-ab12='52'] .naCheck.naStack{flex-direction:column;align-items:center;gap:4px;width:108px}[data-native-ab12='52'] .naCheck.naStack output{white-space:nowrap;text-align:center}`}</style><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='89'&&<>
   {art('lesson-tab',738,18,62,75)}
-  {text(75,63,300,'LERNWORTSCHATZ','naHeadline')}
-  <div className="naHeadRule" style={{left:388,top:78,width:270}}/>
-  {title('1',78,116,540,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naRB naNw')}
-  {text(96,145,160,'Wetter','naWHead')}
-  {text(396,145,240,'Himmelsrichtungen','naWHead')}
-  {text(396,303,240,'Weitere wichtige Wörter','naWHead')}
-  {text(105,168,150,'Wetter das')}
-  {text(105,187,150,'Gewitter das, -')}
-  {field('89-1-l1',234,187,144,'Gewitter das, - übersetzen')}
-  {text(105,206,150,'Grad das, -e')}
-  {field('89-1-l2',234,206,144,'Grad das, -e übersetzen')}
-  {text(105,226,150,'Nebel der')}
-  {field('89-1-l3',234,226,144,'Nebel der übersetzen')}
-  {text(105,245,150,'Regen der')}
-  {field('89-1-l4',234,245,144,'Regen der übersetzen')}
-  {text(105,265,150,'Schnee der')}
-  {field('89-1-l5',234,265,144,'Schnee der übersetzen')}
-  {text(105,284,150,'Sonne die, -n')}
-  {field('89-1-l6',234,284,144,'Sonne die, -n übersetzen')}
-  {text(105,304,150,'Sturm der, ¨e')}
-  {field('89-1-l7',234,304,144,'Sturm der, ¨e übersetzen')}
-  {text(105,324,150,'Wind der, -e')}
-  {field('89-1-l8',234,324,144,'Wind der, -e übersetzen')}
-  {text(105,343,150,'Wolke die, -n')}
-  {field('89-1-l9',234,343,144,'Wolke die, -n übersetzen')}
-  {text(105,373,150,'regnen, hat')}
-  {text(114,392,150,'geregnet')}
-  {field('89-1-l11',234,392,144,'geregnet übersetzen')}
-  {text(105,412,150,'schneien, hat')}
-  {text(114,431,150,'geschneit')}
-  {field('89-1-l13',234,431,144,'geschneit übersetzen')}
-  {text(105,451,150,'scheinen, hat')}
-  {text(114,470,150,'geschienen')}
-  {field('89-1-l15',234,470,144,'geschienen übersetzen')}
-  {text(105,500,150,'kühl')}
-  {field('89-1-l16',234,500,144,'kühl übersetzen')}
+  {text(75,61,300,'LERNWORTSCHATZ','naHeadline')}
+  <div className="naHeadRule" style={{left:292,top:83,width:364,borderBottom:'2px solid #4a4a45'}}/>
+  {title('1',78,123,540,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naRB naNw')}
+  {text(96,151,160,'Wetter','naWHead')}
+  {text(396,151,240,'Himmelsrichtungen','naWHead')}
+  {text(396,309,240,'Weitere wichtige Wörter','naWHead')}
+  {text(105,171,150,'Wetter das')}
+  {text(105,190,150,'Gewitter das, -')}
+  {field('89-1-l1',234,190,144,'Gewitter das, - übersetzen')}
+  {text(105,209,150,'Grad das, -e')}
+  {field('89-1-l2',234,209,144,'Grad das, -e übersetzen')}
+  {text(105,229,150,'Nebel der')}
+  {field('89-1-l3',234,229,144,'Nebel der übersetzen')}
+  {text(105,249,150,'Regen der')}
+  {field('89-1-l4',234,249,144,'Regen der übersetzen')}
+  {text(105,268,150,'Schnee der')}
+  {field('89-1-l5',234,268,144,'Schnee der übersetzen')}
+  {text(105,287,150,'Sonne die, -n')}
+  {field('89-1-l6',234,287,144,'Sonne die, -n übersetzen')}
+  {text(105,307,150,'Sturm der, ¨e')}
+  {field('89-1-l7',234,307,144,'Sturm der, ¨e übersetzen')}
+  {text(105,326,150,'Wind der, -e')}
+  {field('89-1-l8',234,326,144,'Wind der, -e übersetzen')}
+  {text(105,345,150,'Wolke die, -n')}
+  {field('89-1-l9',234,345,144,'Wolke die, -n übersetzen')}
+  {text(105,376,150,'regnen, hat')}
+  {text(114,395,150,'geregnet')}
+  {field('89-1-l11',234,395,144,'geregnet übersetzen')}
+  {text(105,415,150,'schneien, hat')}
+  {text(114,434,150,'geschneit')}
+  {field('89-1-l13',234,434,144,'geschneit übersetzen')}
+  {text(105,454,150,'scheinen, hat')}
+  {text(114,473,150,'geschienen')}
+  {field('89-1-l15',234,473,144,'geschienen übersetzen')}
+  {text(105,503,150,'kühl')}
+  {field('89-1-l16',234,503,144,'kühl übersetzen')}
   {text(105,519,150,'neblig')}
   {field('89-1-l17',234,519,144,'neblig übersetzen')}
   {text(105,538,150,'sonnig')}
   {field('89-1-l18',234,538,144,'sonnig übersetzen')}
-  {text(397,168,150,'Himmelsrichtung')}
-  {text(406,187,150,'die, -en')}
-  {field('89-1-r1',505,187,148,'die, -en übersetzen')}
-  {text(396,207,150,'Norden der')}
-  {field('89-1-r2',505,207,148,'Norden der übersetzen')}
-  {text(396,227,150,'Süden der')}
-  {field('89-1-r3',505,227,148,'Süden der übersetzen')}
-  {text(396,246,150,'Osten der')}
-  {field('89-1-r4',505,246,148,'Osten der übersetzen')}
-  {text(396,265,150,'Westen der')}
-  {field('89-1-r5',505,265,148,'Westen der übersetzen')}
-  {text(396,324,150,'Dach das, ¨er')}
-  {field('89-1-r6',505,324,148,'Dach das, ¨er übersetzen')}
-  {text(396,344,150,'Frühjahr das, -e')}
-  {field('89-1-r7',505,344,148,'Frühjahr das, -e übersetzen')}
-  {text(396,363,150,'Glas das, ¨er')}
-  {field('89-1-r8',505,363,148,'Glas das, ¨er übersetzen')}
-  {text(396,383,150,'Glück das')}
-  {field('89-1-r9',505,383,148,'Glück das übersetzen')}
-  {text(396,402,150,'Himmel der')}
-  {field('89-1-r10',505,402,148,'Himmel der übersetzen')}
-  {text(396,422,150,'Laune die, -n')}
-  {field('89-1-r11',505,422,148,'Laune die, -n übersetzen')}
-  {text(396,441,150,'Reiseführer')}
-  {text(405,461,150,'der, -')}
-  {field('89-1-r13',505,461,148,'der, - übersetzen')}
-  {text(396,480,150,'Traum der, ¨e')}
-  {field('89-1-r14',505,480,148,'Traum der, ¨e übersetzen')}
+  {text(105,557,150,'warm')}
+  {field('89-1-l19',234,557,144,'warm übersetzen')}
+  {text(105,576,150,'windig')}
+  {field('89-1-l20',234,576,144,'windig übersetzen')}
+  {text(397,171,150,'Himmelsrichtung')}
+  {text(406,191,150,'die, -en')}
+  {field('89-1-r1',505,191,148,'die, -en übersetzen')}
+  {text(396,210,150,'Norden der')}
+  {field('89-1-r2',505,210,148,'Norden der übersetzen')}
+  {text(396,230,150,'Süden der')}
+  {field('89-1-r3',505,230,148,'Süden der übersetzen')}
+  {text(396,250,150,'Osten der')}
+  {field('89-1-r4',505,250,148,'Osten der übersetzen')}
+  {text(396,270,150,'Westen der')}
+  {field('89-1-r5',505,270,148,'Westen der übersetzen')}
+  {text(396,328,150,'Dach das, ¨er')}
+  {field('89-1-r6',505,328,148,'Dach das, ¨er übersetzen')}
+  {text(396,347,150,'Frühjahr das, -e')}
+  {field('89-1-r7',505,347,148,'Frühjahr das, -e übersetzen')}
+  {text(396,367,150,'Glas das, ¨er')}
+  {field('89-1-r8',505,367,148,'Glas das, ¨er übersetzen')}
+  {text(396,386,150,'Glück das')}
+  {field('89-1-r9',505,386,148,'Glück das übersetzen')}
+  {text(396,405,150,'Himmel der')}
+  {field('89-1-r10',505,405,148,'Himmel der übersetzen')}
+  {text(396,421,150,'Laune die, -n')}
+  {field('89-1-r11',505,421,148,'Laune die, -n übersetzen')}
+  {text(396,444,150,'Reiseführer')}
+  {text(405,460,150,'der, -')}
+  {field('89-1-r13',505,460,148,'der, - übersetzen')}
+  {text(396,484,150,'Traum der, ¨e')}
+  {field('89-1-r14',505,484,148,'Traum der, ¨e übersetzen')}
   {art('tipp',433,545,136,42)}
   {text(461,550,110,'Suchen Sie','naSmall')}
   {text(461,568,130,'Wortfamilien.','naSmall')}
   {art('handwriting',360,605,265,60)}
   {art('strip',665,95,140,915)}
   {title('2',78,686,540,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naRB naNw')}
-  <LinedArea id="89-2-text" values={values} set={set} x={102} tops={[713, 732, 752, 772, 791, 811, 830, 849, 869, 888, 908, 927, 947, 966, 986, 1005]} w={525} boxH={20} label="Notizen" legacyIds={["89-2-0", "89-2-1", "89-2-2", "89-2-3", "89-2-4", "89-2-5", "89-2-6", "89-2-7", "89-2-8", "89-2-9", "89-2-10", "89-2-11", "89-2-12", "89-2-13", "89-2-14", "89-2-15"]}/>
+  <LinedArea id="89-2-text" values={values} set={set} x={106} tops={[713, 732, 752, 772, 791, 811, 830, 849, 869, 888, 908, 927, 947, 966, 986, 1005]} w={546} boxH={20} label="Notizen" legacyIds={["89-2-0", "89-2-1", "89-2-2", "89-2-3", "89-2-4", "89-2-5", "89-2-6", "89-2-7", "89-2-8", "89-2-9", "89-2-10", "89-2-11", "89-2-12", "89-2-13", "89-2-14", "89-2-15"]}/>
   {text(598,1046,150,'neunundachtzig  |  89','naFooter')}
-  {art('modul-tab',722,1038,50,24)}
+  {art('modul-tab',746,1051,54,14)}
+  {save52('89-1',234,620)}
+  {save52('89-2',234,1034)}
  </>}
  {page==='52'&&<>
   <div className="naBand52"/>
