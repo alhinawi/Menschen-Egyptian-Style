@@ -12,6 +12,7 @@ import {SelectionControls} from '../meanings/SelectionControls';
 import {PersistentField} from '../persistence/PersistentFields';
 import {QuizForm, QuizFeedback, AnswerField} from '../exercises/QuizState';
 import {ReaderControl, ZoomValue} from './ReaderControls';
+import {ReaderProfile} from './ReaderProfile';
 import type {MarkupAttrs, MarkupNode} from '../types/book';
 
 export const READER_HELP='اضغط على الكلمة لمعناها بالمصري · كبّر للقراءة · اسحب يمين أو شمال للتقليب';
@@ -37,6 +38,7 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   const [tag, attrs, children] = node;
   if(attrs.class?.split(' ').includes('helpBanner'))return <div key={key} className="helpBanner" dir="rtl" lang="ar-EG">{READER_HELP}</div>;
   if(attrs.id==='palette')return <button key={key} id="palette" hidden aria-hidden="true" tabIndex={-1} style={{display:'none'}}/>;
+  if('data-react-theme-slot' in attrs)return createElement(ReaderProfile, {key});
   if(attrs.class?.split(' ').includes('controls')) {
     const navigation=children.filter(child=>Array.isArray(child)&&['prev','pageJump','next'].includes(child[1].id));
     const tools=children.filter(child=>!navigation.includes(child));
