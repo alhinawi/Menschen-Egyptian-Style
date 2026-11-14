@@ -434,7 +434,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(104,985,14,'d','naBookSerif naBk88',14)}{text(124,985,320,'Wann feiert man in Deutschland Weihnachten?','naBookSerif naBk88 naNw',14)}
   {field('90-3d',123,999,591,'3 d','naFieldNL')}{ruleS(123,1018.6,714,1033.3)}{text(715,1024,10,'.','naBookSerif naBk88 naNw naPrd')}
   {check('90-3',648,996,{'90-3b':'Am sechsundzwanzigsten Oktober','90-3c':'Am dritten Oktober','90-3d':'Vom vierundzwanzigsten bis zum sechsundzwanzigsten Dezember'})}
-  {art('modul8-tab',0,1047,48,20)}
+  {art('modul8-tab',0,1043,41,14)}
   {text(52.3,1045,30,'90','naFootL23B naNw',11)}{text(74.9,1045,6,'|','naFootL23 naNw',12.3)}{text(92.7,1045,110,'neunzig','naFootL23 naNw',12.3)}
  </>}
  {page==='91'&&<>
