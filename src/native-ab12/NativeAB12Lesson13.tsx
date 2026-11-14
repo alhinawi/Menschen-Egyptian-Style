@@ -797,6 +797,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(153,1155,15,'f','naMail16 naNw')}<div className="naSq16" style={{left:176,top:1165}}/>{text(191,1155,457,'Mein Traumhaus steht im Wald, ich liebe die Natur.','naMail16 naNw')}
   {art('frown',175,1186,17,17)}<div className="naTri16" style={{left:198,top:1191}}/>{text(217,1182,105,'Nur Natur –','naMail16 naNw')}{field('16-4f',328,1179,627,'Lücke 4f')}{text(958,1182,10,'!','naMail16 naNw')}
   {text(883,1233,92,'_ / 6 PUNKTE','naPkt10 naNw')}
+  {check('16-4',660,793,{'16-4a':'es ist sehr schön hier','16-4b':'mag ich gar nicht','16-4c':'die Idee ist cool','16-4d':'sieht wirklich toll aus','16-4e':'sie sind hässlich','16-4f':'das ist langweilig'})}
   {art('punkte',228,1240,524,135)}
   <div className="naModul10" style={{left:0,top:1390,width:72,height:23,lineHeight:'23px',background:'#ded6b0',fontWeight:400}}>Modul 5</div>
   <div className="naText naFooter naNw" style={{left:85,top:1394,width:220,whiteSpace:'pre'}}>{'16  |  sechzehn'}</div>
