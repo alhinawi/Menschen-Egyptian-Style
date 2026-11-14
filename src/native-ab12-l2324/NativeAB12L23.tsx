@@ -210,7 +210,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(121,657,16,'a','naNw naBookSerif')}{text(140,657,480,'Ich kann leider nicht kommen. Ich habe einen Termin beim Zahnarzt.','naNw naBookSerif')}
   {art('ex11a',130,684,480,13)}
   {text(121,697,16,'b','naNw naBookSerif')}{text(140,697,560,'In dem Haus kann man nicht mehr wohnen. Nach dem Sturm war das Dach kaputt.','naNw naBookSerif')}
-  {art('ex11b',128,714,87,18)}{field('86-11-b',222,713,506,'11 b')}{text(728,718,10,'.')}
+  {art('ex11b',128,714,87,18)}{field('86-11-b',223,719,505,'11 b','naF86b')}{text(728,718,10,'.')}
   {text(121,735,16,'c','naNw naBookSerif')}{text(139,735,480,'Ella kommt heute nicht mit in die Disco. Sie hat morgen eine Prüfung.','naNw naBookSerif')}
   {field('86-11-c',130,751,598,'11 c')}{text(729,753,10,'.')}
   {text(121,775,16,'d','naNw naBookSerif')}{text(139,775,560,'Mit dem Urlaub hatten wir wirklich Glück. Das Wetter war ein Traum.','naNw naBookSerif')}
