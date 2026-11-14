@@ -1541,109 +1541,220 @@
  ],
  "fields": [
   {
-   "id": "p51-s1",
-   "group": "g1",
+   "id": "p51-a1",
+   "group": "s1",
    "kind": "text",
-   "label": "Selbsteinschätzung 1",
+   "label": "Zeitpunkt 1",
    "answer": "in",
-   "x": 376,
-   "y": 225,
-   "w": 102,
+   "x": 377,
+   "y": 219,
+   "w": 100,
    "h": 22
   },
   {
-   "id": "p51-s2",
-   "group": "g1",
+   "id": "p51-a2",
+   "group": "s1",
    "kind": "text",
-   "label": "Selbsteinschätzung 2",
+   "label": "Zeitpunkt 2",
    "answer": "Vor",
    "x": 128,
-   "y": 245,
+   "y": 244,
    "w": 122,
    "h": 22
   },
   {
-   "id": "p51-s3",
-   "group": "g1",
+   "id": "p51-a3",
+   "group": "s1",
    "kind": "text",
-   "label": "Selbsteinschätzung 3",
+   "label": "Zeitpunkt 3",
    "answer": "nach",
    "x": 226,
-   "y": 269,
-   "w": 120,
+   "y": 268,
+   "w": 121,
    "h": 22
   },
   {
-   "id": "p51-s4",
-   "group": "g1",
+   "id": "p51-a4",
+   "group": "s2",
    "kind": "text",
-   "label": "Selbsteinschätzung 4",
+   "label": "Zeitraum",
    "answer": "Für",
-   "x": 497,
-   "y": 342,
-   "w": 135,
+   "x": 493,
+   "y": 339,
+   "w": 141,
    "h": 22
   },
   {
-   "id": "p51-s5",
-   "group": "g1",
+   "id": "p51-a5",
+   "group": "s3",
    "kind": "text",
-   "label": "Selbsteinschätzung 5",
-   "answer": "Ich will unbedingt Sängerin werden.",
+   "label": "Pläne wollen",
+   "answer": "Ich will unbedingt Sängerin werden",
    "x": 128,
-   "y": 441,
-   "w": 652,
+   "y": 434,
+   "w": 668,
    "h": 22
   },
   {
-   "id": "p51-s6",
-   "group": "g1",
+   "id": "p51-a6",
+   "group": "s4",
    "kind": "text",
-   "label": "Selbsteinschätzung 6",
+   "label": "ohne/mit 1",
    "answer": "ohne mein Handy",
    "x": 236,
-   "y": 509,
+   "y": 506,
    "w": 326,
    "h": 22
   },
   {
-   "id": "p51-s7",
-   "group": "g1",
+   "id": "p51-a7",
+   "group": "s4",
    "kind": "text",
-   "label": "Selbsteinschätzung 7",
+   "label": "ohne/mit 2",
    "answer": "mit meinem Laptop",
    "x": 236,
-   "y": 533,
-   "w": 330,
+   "y": 530,
+   "w": 336,
    "h": 22
   },
   {
-   "id": "p51-s8",
-   "group": "g1",
+   "id": "p51-a8",
+   "group": "s5",
    "kind": "text",
-   "label": "Selbsteinschätzung 8",
-   "answer": "Er soll zum Arzt gehen.",
-   "x": 378,
-   "y": 702,
-   "w": 411,
+   "label": "Imperativ 1",
+   "answer": "Essen Sie",
+   "x": 128,
+   "y": 603,
+   "w": 272,
    "h": 22
+  },
+  {
+   "id": "p51-a9",
+   "group": "s5",
+   "kind": "text",
+   "label": "Imperativ 2",
+   "answer": "Gehen Sie um acht Uhr ins Bett",
+   "x": 128,
+   "y": 627,
+   "w": 454,
+   "h": 22
+  },
+  {
+   "id": "p51-a10",
+   "group": "s6",
+   "kind": "text",
+   "label": "Ratschläge sollen",
+   "answer": "Er soll zum Arzt gehen",
+   "x": 375,
+   "y": 698,
+   "w": 415,
+   "h": 22
+  },
+  {
+   "id": "p51-o0",
+   "group": "sort",
+   "kind": "text",
+   "label": "Sortieren 1",
+   "answer": "3",
+   "x": 150,
+   "y": 1059,
+   "w": 18,
+   "h": 16
+  },
+  {
+   "id": "p51-o1",
+   "group": "sort",
+   "kind": "text",
+   "label": "Sortieren 2",
+   "answer": "2",
+   "x": 150,
+   "y": 1084,
+   "w": 18,
+   "h": 16
+  },
+  {
+   "id": "p51-o2",
+   "group": "sort",
+   "kind": "text",
+   "label": "Sortieren 3",
+   "answer": "5",
+   "x": 150,
+   "y": 1110,
+   "w": 18,
+   "h": 16
+  },
+  {
+   "id": "p51-o3",
+   "group": "sort",
+   "kind": "text",
+   "label": "Sortieren 4",
+   "answer": "7",
+   "x": 150,
+   "y": 1136,
+   "w": 18,
+   "h": 16
+  },
+  {
+   "id": "p51-o4",
+   "group": "sort",
+   "kind": "text",
+   "label": "Sortieren 5",
+   "answer": "4",
+   "x": 150,
+   "y": 1162,
+   "w": 18,
+   "h": 16
+  },
+  {
+   "id": "p51-o6",
+   "group": "sort",
+   "kind": "text",
+   "label": "Sortieren 7",
+   "answer": "6",
+   "x": 150,
+   "y": 1213,
+   "w": 18,
+   "h": 16
   }
  ],
  "audio": [],
  "groups": [
   {
-   "id": "g1",
-   "label": "Selbsteinschätzung"
+   "id": "s1",
+   "label": "einen Zeitpunkt angeben"
+  },
+  {
+   "id": "s2",
+   "label": "einen Zeitraum angeben"
+  },
+  {
+   "id": "s3",
+   "label": "über Pläne sprechen"
+  },
+  {
+   "id": "s4",
+   "label": "sagen, wie ich etwas mache"
+  },
+  {
+   "id": "s5",
+   "label": "jemanden auffordern"
+  },
+  {
+   "id": "s6",
+   "label": "Ratschläge geben"
+  },
+  {
+   "id": "sort",
+   "label": "Freds Antwort sortieren"
   }
  ],
  "review": {
-  "status": "partial",
+  "status": "reviewed",
   "notes": [
-   "Answers from the official Hueber Loesungsschluessel AB A1.2 (Selbsteinschätzung Modul 6).",
-   "Self-rating circles, the 'jemanden auffordern' blanks (page and key wording differ), the Üben/Wiederholen line, and the Rückblick sorting and e-mail tasks are not mapped.",
-   "Boxes placed from word coordinates; not marked verified."
-  ],
-  "verifiedWords": 219,
-  "totalWords": 219
+   "Answers from the official Hueber Loesungsschluessel AB A1.2 (Selbsteinschätzung Modul 6 'Ich kann auch ...' + Rückblick L16/1).",
+   "Imperativ gaps take only the missing part: the page prints 'viel Obst!' and the final '!', so the keys are 'Essen Sie' and 'Gehen Sie um acht Uhr ins Bett'.",
+   "Sort: 'Liebe Gitta,' is printed as example 1; learners number the other six circles (3,2,5,7,4,6 in printed order).",
+   "Field ids aligned with the native spec so marks attach."
+  ]
  }
 }
