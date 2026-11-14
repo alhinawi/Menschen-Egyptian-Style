@@ -40,7 +40,7 @@ export async function onRequestGet({ request, waitUntil }) {
 
   let bytes;
   try {
-    bytes = await synthesize(text, voice, rate, new URL(request.url).searchParams.get('dbg'));
+    bytes = await synthesize(text, voice, rate);
   } catch (err) {
     return json({ error: 'tts upstream failed', detail: String(err && err.message || err) }, 502);
   }
@@ -66,10 +66,10 @@ function xmlEscape(s) {
 
 // One synthesis round-trip: open the socket, send speech.config + SSML, collect
 // binary audio frames until turn.end.
-async function synthesize(text, voice, rate, dbg) {
+async function synthesize(text, voice, rate) {
   const gec = await generateSecMsGec();
   const cid = crypto.randomUUID().replaceAll('-', '');
-  const wss = (dbg ? 'http://127.0.0.1:8899/ws' : 'https://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1')
+  const wss = 'https://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1'
     + '?TrustedClientToken=' + TOKEN
     + '&ConnectionId=' + cid
     + '&Sec-MS-GEC=' + gec
@@ -94,10 +94,10 @@ async function synthesize(text, voice, rate, dbg) {
     const diag = [];
     let sawEnd = false;
     const timer = setTimeout(() => { try { ws.close(); } catch (_) {} reject(new Error('tts timed out; diag:' + diag.join(' ~ '))); }, 20000);
-    ws.addEventListener('message', ev => {
+    ws.addEventListener('message', async ev => {
       try {
         if (typeof ev.data === 'string') {
-          diag.push('text:' + ev.data.slice(0, 600).replace(/[\r\n]+/g, '|'));
+          const pm = /Path:([\w.]+)/.exec(ev.data); if (pm) diag.push(pm[1]);
           if (ev.data.indexOf('Path:turn.end') !== -1) {
             sawEnd = true;
             clearTimeout(timer);
@@ -110,8 +110,11 @@ async function synthesize(text, voice, rate, dbg) {
           }
           return;
         }
-        const buf = new Uint8Array(ev.data);
-        if (buf.length < 2) { diag.push('bin:tiny:' + buf.length); return; }
+        // workerd hands binary frames over as Blob, not ArrayBuffer.
+        let data = ev.data;
+        if (!(data instanceof ArrayBuffer)) data = await data.arrayBuffer();
+        const buf = new Uint8Array(data);
+        if (buf.length < 2) return;
         const hlen = (buf[0] << 8) | buf[1];
         const head = new TextDecoder().decode(buf.subarray(2, 2 + hlen));
         diag.push('bin:' + buf.length + ':h' + hlen + ':' + head.slice(0, 100).replace(/[\r\n]+/g, '|'));
