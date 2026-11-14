@@ -24,6 +24,7 @@ export function NativeAB11({page}:{page:string}){
  const checkRule=(id:string,x:number,y:number,validate:()=>boolean)=><div className="nabCheck" style={{left:x,top:y}} data-native-task={id}><CheckButton onClick={()=>G({...graded,[id]:validate()})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const save=(id:string,x:number,y:number)=>null;
  const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="nabCheck" style={{left:x,top:y}} data-native-task={id}><CheckButton answers={answers} onClick={()=>G({...graded,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const ink=(x:number,y:number,w:number,s:string)=><div className="nabText nabInk" style={{left:x,top:y,width:w}}><Words text={s}/></div>;
  const title=(n:string,y:number,s:string,kb:string,side='Strukturen')=><>{text(130,y+7,40,kb,'nabKB')}<div className="nabNumber" style={{left:170,top:y}}>{n}</div>{text(212,y,810,s,'nabTitle')}<div className="nabSide" style={{left:141,top:y+45}}>{side}</div></>;
  const head=(s:string)=><>{text(160,142,750,s,'nabHeader')}<div className="nabHeaderLine"/></>;
  return <div className="nativeAB11" ref={host} data-native-ab11-page={page}><div className="nabCanvas" style={{transform:`translate(-50%,-50%) scale(${scale})`}}>
@@ -124,7 +125,7 @@ export function NativeAB11({page}:{page:string}){
  {head('TRAINING: HÖREN')}<div className="nabModule">1</div>
  {title('1',220,'Wie heißt du?','','')}
  {text(170,261,800,'a  Ergänzen Sie in den Fragen: wie, woher oder wer?','nabTitle')}
- {text(202,302,350,'1  ■  Wie heißt du?')}{text(225,330,365,'▲  Mein Name ist Miguel Munoz.','nabExample')}{text(575,330,30,'/')}{text(596,330,25,'▲','nabGreen')}{field('1-answer-1',620,327,329,'1b Antwort 1')}
+ {text(202,302,45,'1  ■')}{ink(252,294,60,'Wie')}{text(315,302,180,'heißt du?')}{text(225,330,25,'▲','nabGreen')}{ink(250,320,365,'Mein Name ist Miguel Munoz.')}{text(575,330,30,'/')}{text(596,330,25,'▲','nabGreen')}{field('1-answer-1',620,327,329,'1b Antwort 1')}
  {text(202,365,51,'2  ■')}{field('1-q2',250,359,105,'1a Frage 2')}{text(363,365,230,'kommst du?')}{text(225,393,25,'▲','nabGreen')}{field('1-answer-2a',250,390,320,'1b Antwort 2 kurz')}{text(575,393,30,'/')}{text(596,393,25,'▲','nabGreen')}{field('1-answer-2b',620,390,329,'1b Antwort 2 lang')}
  {text(202,428,100,'3  ■  Und')}{field('1-q3',291,422,108,'1a Frage 3')}{text(404,428,205,'ist das?')}{text(225,456,25,'▲','nabGreen')}{field('1-answer-3a',250,453,320,'1b Antwort 3 Name')}{text(575,456,30,'/')}{text(596,456,25,'▲','nabGreen')}{field('1-answer-3b',620,453,329,'1b Antwort 3 voller Name')}
  {text(202,491,225,'4  ■  Hallo, Frau Burgos.')}{field('1-q4',429,485,105,'1a Frage 4')}{text(540,491,190,'geht es Ihnen?')}{text(225,519,25,'▲','nabGreen')}{field('1-answer-4a',250,516,320,'1b Antwort 4 lang')}{text(575,519,30,'/')}{text(596,519,25,'▲','nabGreen')}{field('1-answer-4b',620,516,329,'1b Antwort 4 kurz')}
@@ -143,13 +144,14 @@ export function NativeAB11({page}:{page:string}){
  {title('1',1140,'Hören Sie und sprechen Sie nach.','','')}{listen('06',95,1144,'1')}
  {text(202,1183,435,'■  Wie heißt du? ↘\n▲  Ich heiße Paco. ↘  Und wer bist du? ↗\n■  Ich bin Nicole. ↘')}{save('au1',202,1245)}
  {title('2',1300,'Ergänzen Sie die Regel: ↗ oder ↘.','','')}
+ <div className="nabRegelBox" style={{left:200,top:1334,width:505,height:131}}><div className="nabRegelLabel">REGEL</div></div>
  {text(230,1344,360,'Wie ist die Satzmelodie ...?','nabBold')}{text(230,1377,400,'bei Aussagen (Ich heiße Paco.):')}{arrow('au2-a',575,1373,'2 Aussagen')}{text(230,1407,420,'bei W-Fragen (Wie heißt du?):')}{arrow('au2-w',575,1403,'2 W-Fragen')}{text(230,1437,430,'bei Rückfragen (Und wer bist du?):')}{arrow('au2-r',623,1433,'2 Rückfragen')}
- {check('au2',202,1471,{'au2-a':'down','au2-w':'down','au2-r':'up'})}
+ {check('au2',202,1476,{'au2-a':'down','au2-w':'down','au2-r':'up'})}
  <div className="nabNumber" style={{left:610,top:1140}}>3</div>{text(652,1140,390,'Hören Sie und ergänzen Sie ↘ oder ↗.\nSprechen Sie dann mit Ihrer Partnerin /\nIhrem Partner.','nabTitle')}{listen('07',565,1144,'1')}
  {text(652,1235,190,'■  Hallo.')}{arrow('au3-hallo',760,1232,'3 Hallo')}
  {text(652,1267,175,'▲  Hallo, Paco.')}{arrow('au3-paco',814,1264,'3 Hallo Paco')}{text(860,1267,170,'Wie geht es dir?')}{arrow('au3-dir',1007,1264,'3 Wie geht es dir')}
  {text(652,1299,105,'■  Danke,')}{arrow('au3-danke',752,1296,'3 Danke')}{text(800,1299,50,'gut.')}{arrow('au3-gut',846,1296,'3 gut')}{text(893,1299,90,'Und dir?')}{arrow('au3-unddir',986,1296,'3 Und dir')}
- {check('au3',652,1343,{'au3-hallo':'down','au3-paco':'down','au3-dir':'down','au3-danke':'down','au3-gut':'down','au3-unddir':'up'})}
+ {check('au3',880,1343,{'au3-hallo':'down','au3-paco':'down','au3-dir':'down','au3-danke':'down','au3-gut':'down','au3-unddir':'up'})}
  </>}
  {page==='10'&&<>
  {head('TEST')}
