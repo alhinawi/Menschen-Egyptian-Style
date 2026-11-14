@@ -70,7 +70,7 @@ export function NativeAB11Lessons45({page}:{page:string}){
  </>}
  {page==='32'&&<>
  {head('BASISTRAINING')}{title('9',210,'Schreiben Sie die SMS fertig.','KB 7')}{txt(168,253,405,'praktisch | sehr günstig | 199 Euro | Sonderangebot','mBank')}{art('phone',588,223,229,210)}
- {txt(185,299,392,'Hallo Barbara,\nbin im Möbelhaus. Die Couch hier ist schön, oder?','mSmall')}{['l1','l2','l3'].map((id,i)=>f('u9-'+id,185,350+i*28,370))}{txt(185,443,350,'Kommst Du auch? Brauche Deine Hilfe!\nMarlene','mSmall')}{txt(168,500,370,'Eigene Lösung - keine automatische Bewertung.','mSmall')}
+ {txt(185,299,392,'Hallo Barbara,\nbin im Möbelhaus. Die Couch hier ist schön, oder?','mSmall')}{['l1','l2','l3'].map((id,i)=>f('u9-'+id,185,350+i*28,370))}{txt(185,443,350,'Kommst Du auch? Brauche Deine Hilfe!\nMarlene','mSmall')}{check('u9',168,498,{'u9-l1':'Sie ist praktisch und sehr günstig','u9-l2':'Sie kostet 199 Euro','u9-l3':'Das ist ein Sonderangebot'})}
  {title('10',546,'Schön oder hässlich?','KB 9')}{txt(143,584,380,'a  Notieren Sie die Wörter.','mTitle')}
  {['wersch','hichsäls','galn','nösch','nielk','zurk','orßg','etlich'].map((s,i)=>{const col=i<3?0:i<6?1:2,r=i<3?i:i<6?i-3:i-6,x=168+col*234,y=622+r*28;return <span key={s}>{txt(x,y,110,(i+1)+'  '+s)}{i===0?txt(x+115,y,105,'schwer','mExample'):f('u10a-'+(i+1),x+115,y-2,100)}</span>})}{check('u10a',168,719)}
  {txt(143,766,650,'b  Ergänzen Sie die Wörter aus a.','mTitle')}
