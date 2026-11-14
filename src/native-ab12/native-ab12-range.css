@@ -168,3 +168,4 @@
 .naRCanvas .naCheck.naStack output{white-space:nowrap;text-align:center}
 [data-native-ab12="56"] .naRCanvas .naText.naR.naHand56:not(.naRSans):not(.naRSansR){font-family:'Caveat',cursive!important;font-style:normal;font-weight:600;letter-spacing:.2px}
 @font-face{font-family:'Caveat';src:url('/assets/fonts/caveat-latin.woff2') format('woff2');font-style:normal;font-weight:400 700;font-display:swap}
+.nativeAB12[data-native-ab12="59"] .naRCanvas .naRField{border-bottom-color:transparent!important;background:transparent!important;box-shadow:none!important}
