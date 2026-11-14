@@ -581,15 +581,9 @@ export function NativeAB12L23({page}:{page:string}){
   {kb(55,347,'KB 5')}
   <div className="naSide naSideB" style={{left:60,top:385}}>STRUKTUREN</div>
   {title('10',83,343,640,'Was passt? Ordnen Sie zu.','naRB naNw')}
-  <div id="ex10-left-a">{text(116,377,16,'a','naBookSerif')}{text(135,376,270,'Natascha und Ella singen und schreiben','naBookSerif naEx4t naNw')}{text(135,393,50,'Lieder.','naBookSerif naEx4t naNw')}</div>
-  <div id="ex10-left-b">{text(116,414,16,'b','naBookSerif')}{text(135,413,140,'Klaus hat kein Geld.','naBookSerif naEx4t naNw')}</div>
-  <div id="ex10-left-c">{text(116,437,16,'c','naBookSerif')}{text(135,435,230,'Meine Tochter fährt gern Motorrad.','naBookSerif naEx4t naNw')}</div>
-  <div id="ex10-left-d">{text(116,456,16,'d','naBookSerif')}{text(135,454,280,'Am Freitag spielt unsere Lieblingsband in','naBookSerif naEx4t naNw')}{text(134,473,250,'Berlin und es gibt keine Tickets mehr.','naBookSerif naEx4t naNw')}</div>
-  <div id="ex10-right-1">{text(485,366,220,'Ich würde ihr gern ein Motorrad','naBookSerif naEx10r naNw')}{text(493,385,70,'schenken.','naBookSerif naEx10r naNw')}</div>
-  <div id="ex10-right-2">{text(485,405,95,'Wie schade!','naBookSerif naEx10r naNw')}</div>
-  <div id="ex10-right-3">{text(567,405,160,'Wir würden gern zum','naBookSerif naEx10r naNw')}{text(493,424,100,'Konzert gehen.','naBookSerif naEx10r naNw')}</div>
-  <div id="ex10-right-4">{text(485,444,215,'Aber er würde gern den Führer-','naBookSerif naEx10r naNw')}{text(493,463,110,'schein machen.','naBookSerif naEx10r naNw')}</div>
-  <div id="ex10-right-5">{text(485,483,225,'Sie würden gern eine CD machen.','naBookSerif naEx10r naNw')}</div>
+  {text(116,377,16,'a','naBookSerif')}{text(116,414,16,'b','naBookSerif')}{text(116,437,16,'c','naBookSerif')}{text(116,456,16,'d','naBookSerif')}
+  <LineMatching id="92-10" left={['Natascha und Ella singen und schreiben\nLieder.','Klaus hat kein Geld.','Meine Tochter fährt gern Motorrad.','Am Freitag spielt unsere Lieblingsband in\nBerlin und es gibt keine Tickets mehr.']} right={['Ich würde ihr gern ein Motorrad\nschenken.','Wie schade! Wir würden gern zum\nKonzert gehen.','Aber er würde gern den Führer-\nschein machen.','Sie würden gern eine CD machen.']} values={c.values} onMatch={set} leftX={135} rightX={445} leftWidth={280} rightWidth={270} ys={[376,413,435,454]} itemHeights={[36,19,19,36]} rightYs={[366,405,444,483]} rightHeights={[36,38,36,19]} rightXs={[485,485,485,485]} rightWidths={[240,240,240,240]} leftWidths={[295,200,255,315]} width={807} height={1094} fontSize={13.7} rightFontSizes={[13.1,13.1,13.1,13.1]} multiline={true} lineHeight={18} example={[0,3]} className="lmScanFont"/>
+  {check('92-10',640,325,{'92-10-0':'3|','92-10-1':'2','92-10-2':'0','92-10-3':'1'})}
   {kb(55,523,'KB 5')}
   <div className="naSide naSideB" style={{left:48,top:560}}>STRUKTUREN</div>
   <div className="naSide naSideB" style={{left:62,top:560}}>ENTDECKEN</div>
@@ -625,6 +619,8 @@ export function NativeAB12L23({page}:{page:string}){
   {text(114,854,16,'b','naLet92')}{rule(113,885,130)}{rule(113,905,130)}
   {text(439,755,16,'c','naLet92')}{rule(440,790,130)}{rule(440,810,130)}
   {text(438,854,16,'d','naLet92')}{rule(439,887,130)}{rule(439,907,130)}
+  {([['92-12b',113,869,'12 b Wunsch'],['92-12c',440,774,'12 c Wunsch'],['92-12d',439,871,'12 d Wunsch']] as const).map(([id,x,y,l])=><textarea key={id} className="naField naLined" aria-label={l} data-native-field={id} style={{left:x,top:y,width:132,['--la-h' as string]:'40px',['--la-lh' as string]:'20px'}} value={c.values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>)}
+  {check('92-12',439,918,{'92-12b':'Ich würde gern jeden Tag grillen|Ich würde gerne jeden Tag grillen','92-12c':'Ich würde gern viel Geld verdienen|Ich würde gerne viel Geld verdienen','92-12d':'Ich würde gern im Wald wohnen|Ich würde gerne im Wald wohnen'})}
   {art('modul8-tab',0,1044,52,20)}
   {text(61.3,1047,30,'92','naFootL23B naNw',11)}{text(83.9,1047,6,'|','naFootL23 naNw',12.3)}{text(100.5,1047,110,'zweiundneunzig','naFootL23 naNw',12.3)}
  </>}
