@@ -91,7 +91,7 @@ export function NativeAB12L23({page}:{page:string}){
  </>}
  {page==='85'&&<>
   <div className="naBasis" style={{left:60,top:48}}>BASISTRAINING</div>
-  <div className="naRuleP" style={{left:390,top:84,width:324}}/>
+  <div className="naRuleP" style={{left:205,top:84,width:534}}/>
   <div className="naRedL" style={{left:728,top:28,width:71,height:58}}>23</div>
   {kb(32,112,'KB 4')}
   {title('5',55,107,640,'Ergänzen und vergleichen Sie.','naRB naNw')}
@@ -123,7 +123,7 @@ export function NativeAB12L23({page}:{page:string}){
   {field('85-5-n4',465,230,240,'Meine Sprache Zeile 4','naFieldBlank')}
   {field('85-5-n5',465,252,240,'Meine Sprache Zeile 5','naFieldBlank')}
   {field('85-5-n6',465,273,240,'Meine Sprache Zeile 6','naFieldBlank')}
-  {check('85-5',620,300,{'85-5-1':'osten|Osten','85-5-2':'süden|Süden','85-5-3':'westen|Westen'})}
+  {check('85-5',620,306,{'85-5-1':'osten|Osten','85-5-2':'süden|Süden','85-5-3':'westen|Westen'})}
   {kb(30,313,'KB 4')}
   <div className="naTitle naRB naNw" style={{left:55,top:311,width:680}}><b>6</b><Words text="Wie ist das Wetter in "/><span className="naBlue">…?</span><Words text=" Hören Sie und ordnen Sie zu."/></div>
   {audio('assets/ab-cd2-track36.mp3',28,336,'2 36','5')}
@@ -146,6 +146,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(155,867,330,'besonders warm. Wir haben … Grad. … Wo bin ich?','naS14 naIt naNw')}
   <div className="naBubble" style={{left:528,top:856,width:160,height:60}}/>
   {text(548,873,130,'Bist du in …?','naS14 naIt naNw')}
+  <NeutralCheck id='85-7' x={102} y={848}/>
   {kb(30,910,'KB 4')}
   {title('8',55,907,400,'Ordnen Sie zu.','naRB naNw')}
   <div className="naSide naSideB" style={{left:64,top:968}}>STRUKTUREN</div>
