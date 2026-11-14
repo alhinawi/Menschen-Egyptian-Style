@@ -269,7 +269,7 @@ export function NativeAB12L23({page}:{page:string}){
   {field('87-2-e',497,556,151,'2 e')}
   {field('87-2-f',497,575,151,'2 f')}
   {check('87-2',620,604,{'87-2-b':'schmutzig','87-2-c':'kalt','87-2-d':'nicht wieder','87-2-e':'schön','87-2-f':'Portugal'})}
-  <div className="naTrainHead" style={{left:71,top:668}}>TRAINING: AUSSPRACHE</div>
+  <div className="naTrainHead naTrain87s" style={{left:71,top:668}}>TRAINING: AUSSPRACHE</div>
   {text(365,675,105,'Vokal „ö“','naVokal naNw')}
   <div className="naRuleP" style={{left:434,top:687,width:281}}/>
   {audio('assets/ab-cd2-track38.mp3',26,723,'2 38','1')}
