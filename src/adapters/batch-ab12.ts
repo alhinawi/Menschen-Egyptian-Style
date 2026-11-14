@@ -12,7 +12,7 @@ const normalizeAnswer=(s: string)=>s.normalize('NFC').toLocaleLowerCase('de').tr
 function updateProgress(){$('#progress').textContent=Object.entries(state).filter(([k,v])=>k.startsWith('done-')&&v).length+' ✓'}updateProgress();
 
 const soundButton=$('.soundToggle');function soundText(){soundButton.dataset.soundOn=String(soundsOn)}soundText();soundButton.onclick=()=>{soundsOn=!soundsOn;if(soundsOn)unlockBookAudio();state.sounds=soundsOn;save();soundText()};
-function palette(n: string){document.body.dataset.palette=n;document.querySelectorAll<HTMLElement>('.paletteButton').forEach(b=>b.classList.toggle('selected',b.dataset.palette===n));state.palette=n;save()}palette(state.palette||'1');document.querySelectorAll<HTMLElement>('.paletteButton').forEach(b=>b.onclick=()=>palette(b.dataset.palette!));
+function palette(n: string){document.body.dataset.palette=n;document.querySelectorAll<HTMLElement>('.paletteButton').forEach(b=>b.classList.toggle('selected',b.dataset.palette===n));state.palette=n;save()}palette('1');document.querySelectorAll<HTMLElement>('.paletteButton').forEach(b=>b.onclick=()=>palette(b.dataset.palette!));
 const pages=[...document.querySelectorAll<HTMLElement>('.page')];pages.forEach(p=>{p.hidden=false;p.dataset.density='soft'});let pageIndex=0,scale=1;
 const flip=new St.PageFlip(stage,{width:900,height:1515,size:'fixed',usePortrait:true,autoSize:false,drawShadow:true,maxShadowOpacity:.08,flippingTime:360,mobileScrollSupport:true,useMouseEvents:false,clickEventForward:true,disableFlipByClick:true,showPageCorners:false});
 function updatePage(i: number){pageIndex=i;$('#pageJump').value=i;$('#prev').disabled=i===0;$('#next').disabled=i===pages.length-1;state.page=i;state.frontCoverVersion=1;save();$('#originalLink').href=pages[i].dataset.page==='abcover'?'assets/ab-a12-cover.jpg':'ab-a12-original-viewer.html?page='+pages[i].dataset.page;$('#lessonNav').value='ab-a12-l13-16.html#'+(6+Math.max(0,Math.floor(((Number(pages[i].dataset.page)||6)-6)/6))*6);$('#audio').pause();$('.audioDock').hidden=true;}
@@ -58,7 +58,7 @@ let suppressMeaningUntil=0;viewport.addEventListener('touchend',()=>{if(pinching
 
 $('#lessonNav').onchange=(e: any)=>{const target=e.target.value;if(target==='index.html'){location.href=target;return}const n=Number(target.split('#')[1]);flip.turnToPage(pages.findIndex(p=>p.dataset.page===String(n)));scrollTo(0,0);viewport.scrollLeft=0;history.replaceState(null,'','#'+n)};
 
-$('#palette').onclick=()=>{const n=String((Number(document.body.dataset.palette||'1')%3)+1);palette(n)};
+const paletteToggle=$('#palette');if(paletteToggle)paletteToggle.onclick=()=>{const n=String((Number(document.body.dataset.palette||'1')%3)+1);palette(n)};
 $('.audioDock').hidden=true;
 const audioToggle=$('#audioToggle');if(audioToggle)audioToggle.onclick=()=>{const a=$('#audio');if(a.paused)a.play().catch(()=>{});else a.pause()};
 
