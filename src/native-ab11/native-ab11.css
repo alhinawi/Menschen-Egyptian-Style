@@ -62,3 +62,6 @@
 .nativeAB11Lesson7Close[data-native-ab11-page='57'] .mCanvas .mText.mRuleTitle{font:700 14px Georgia}
 .nativeAB11Lesson7Close[data-native-ab11-page='57'] .mCanvas .mPrintedStress{font-size:18px;line-height:21px}
 .nativeAB11Lesson7Close[data-native-ab11-page='57'] .mCanvas .mPrintedStress>div{min-height:21px}
+.nabCanvas .nabInk{font-family:'Caveat',cursive!important;font-style:normal!important;font-weight:600;color:#2b3490;font-size:29px}
+.nabCanvas .nabRegelBox{position:absolute;background:#ececec;border:1px solid #d8d8d8;box-sizing:border-box}
+.nabCanvas .nabRegelLabel{position:absolute;left:6px;top:50%;transform:translateY(-50%) rotate(180deg);writing-mode:vertical-rl;font:700 9px Arial,sans-serif;letter-spacing:1px;color:#8a8a8a}

@@ -6,3 +6,5 @@
 @font-face{font-family:'Times New Roman';src:url('/assets/fonts/liberation-serif-bold.woff2') format('woff2'),local('Liberation Serif Bold');font-style:normal;font-weight:700;font-display:swap}
 @font-face{font-family:'Times New Roman';src:url('/assets/fonts/liberation-serif-italic.woff2') format('woff2'),local('Liberation Serif Italic');font-style:italic;font-weight:400;font-display:swap}
 @font-face{font-family:'Times New Roman';src:url('/assets/fonts/liberation-serif-bolditalic.woff2') format('woff2'),local('Liberation Serif Bold Italic');font-style:italic;font-weight:700;font-display:swap}
+/* Ink face for handwritten example answers in the original books (OFL). */
+@font-face{font-family:'Caveat';src:url('/assets/fonts/caveat-latin.woff2') format('woff2');font-style:normal;font-weight:400 700;font-display:swap}
