@@ -163,3 +163,6 @@
 /* Check marks on transparent overlay word/mark buttons: keep the printed word readable. */
 .naRCanvas .naRWord[data-check-mark="ok"],.naRCanvas .naRMk[data-check-mark="ok"]{background-color:rgba(47,125,79,.16)!important;outline:1.5px solid #2f7d4f!important;outline-offset:0}
 .naRCanvas .naRWord[data-check-mark="bad"],.naRCanvas .naRMk[data-check-mark="bad"]{background-color:rgba(198,47,47,.14)!important;outline:1.5px solid #c62f2f!important;outline-offset:0}
+/* Stacked check label (data-check-layout="stack"): label below the button for tight white space; placer reserves 26px below. */
+.naRCanvas .naCheck.naStack{flex-direction:column;align-items:center;gap:4px;width:108px}
+.naRCanvas .naCheck.naStack output{white-space:nowrap;text-align:center}
