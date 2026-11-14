@@ -40,12 +40,12 @@ export async function onRequestGet({ request, waitUntil }) {
 
   let bytes;
   try {
-    bytes = await synthesize(text, voice, rate);
+    bytes = await synthesize(text, voice, rate, new URL(request.url).searchParams.get('dbg'));
   } catch (err) {
     return json({ error: 'tts upstream failed', detail: String(err && err.message || err) }, 502);
   }
-  if (!bytes.length) return json({ error: 'tts upstream empty' }, 502);
-  const res = new Response(bytes, {
+  if (!bytes.audio.length) return json({ error: 'tts upstream empty', diag: bytes.diag }, 502);
+  const res = new Response(bytes.audio, {
     headers: {
       'Content-Type': 'audio/mpeg',
       'Cache-Control': 'public, max-age=31536000, immutable',
@@ -66,10 +66,10 @@ function xmlEscape(s) {
 
 // One synthesis round-trip: open the socket, send speech.config + SSML, collect
 // binary audio frames until turn.end.
-async function synthesize(text, voice, rate) {
+async function synthesize(text, voice, rate, dbg) {
   const gec = await generateSecMsGec();
   const cid = crypto.randomUUID().replaceAll('-', '');
-  const wss = 'https://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1'
+  const wss = (dbg ? 'http://127.0.0.1:8899/ws' : 'https://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1')
     + '?TrustedClientToken=' + TOKEN
     + '&ConnectionId=' + cid
     + '&Sec-MS-GEC=' + gec
@@ -91,11 +91,13 @@ async function synthesize(text, voice, rate) {
 
   return await new Promise((resolve, reject) => {
     const chunks = [];
+    const diag = [];
     let sawEnd = false;
-    const timer = setTimeout(() => { try { ws.close(); } catch (_) {} reject(new Error('tts timed out')); }, 20000);
+    const timer = setTimeout(() => { try { ws.close(); } catch (_) {} reject(new Error('tts timed out; diag:' + diag.join(' ~ '))); }, 20000);
     ws.addEventListener('message', ev => {
       try {
         if (typeof ev.data === 'string') {
+          diag.push('text:' + ev.data.slice(0, 600).replace(/[\r\n]+/g, '|'));
           if (ev.data.indexOf('Path:turn.end') !== -1) {
             sawEnd = true;
             clearTimeout(timer);
@@ -104,14 +106,15 @@ async function synthesize(text, voice, rate) {
             const out = new Uint8Array(total);
             let off = 0;
             for (const c of chunks) { out.set(c, off); off += c.length; }
-            resolve(out);
+            resolve({ audio: out, diag });
           }
           return;
         }
         const buf = new Uint8Array(ev.data);
-        if (buf.length < 2) return;
+        if (buf.length < 2) { diag.push('bin:tiny:' + buf.length); return; }
         const hlen = (buf[0] << 8) | buf[1];
         const head = new TextDecoder().decode(buf.subarray(2, 2 + hlen));
+        diag.push('bin:' + buf.length + ':h' + hlen + ':' + head.slice(0, 100).replace(/[\r\n]+/g, '|'));
         if (head.indexOf('Path:audio') !== -1 && buf.length > 2 + hlen) chunks.push(buf.subarray(2 + hlen));
       } catch (err) { clearTimeout(timer); reject(err); }
     });

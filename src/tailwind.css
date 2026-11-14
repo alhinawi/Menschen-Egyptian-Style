@@ -774,3 +774,5 @@ body.readerSplitControls .controls .lnv-pageSlot{display:contents}
 .nativeAB12[data-native-ab12="27"] .naCanvas input.naDot:checked,
 .nativeAB12[data-native-ab12="98"] .naCanvas input.naDot:checked,
 .nativeAB12[data-native-ab12="99"] .naCanvas input.naDot:checked{border-color:#246e45!important;background:radial-gradient(circle,#246e45 0 45%,#fff 53%)!important}
+.howtoNote{display:none;max-width:660px;width:100%;text-align:right;font:22px/1.6 'Cairo',sans-serif;color:#6a6f75;border-top:1px solid #d8cdb4;padding-top:14px;margin-top:6px}
+body[data-audio="tts"] .howtoTtsNote{display:block}
