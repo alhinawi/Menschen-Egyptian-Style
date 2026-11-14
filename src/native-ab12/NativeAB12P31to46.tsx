@@ -1836,7 +1836,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {audio('assets/ab-a12-track21.mp3',59,889,'2 21','3')}
   {audio('assets/ab-a12-track22.mp3',552,897,'2 22','3')}
   {audio('assets/ab-a12-track23.mp3',588,1147,'2 23','3')}
-  {check('45-1',962,420,{'1z0':'true','1z1':'true','1z2':'false','1t':'2'})}
+  {check('45-1',962,420,{'1z0':'true','1z1':'true','1z2':'false','1t':'1'})}
   {check('45-2',177,792,{'2a':'2','2b':'2','2c':'0','2d':'0'})}
   {check('45-3',290,1335,{'p45-r0':'oben','p45-r1':'unten'})}
   {check('45-4',948,1104,{'p45-3a':'?','p45-3b':'!','p45-3c':'!','p45-3d':'?','p45-3e':'!','p45-3f':'?'})}
