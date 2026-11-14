@@ -705,7 +705,7 @@ export function NativeKB12({page}:{page:string}){
  {title('1',105,1260,920,'Lesen Sie den Text und markieren Sie:')}
  <div className="nkM7MarkTools" style={{left:148,top:1302}}>{['Wer sind die Personen?','Was ist ihr Beruf?','Woher kommen sie?','Wohin fahren sie?'].map((t,i)=><button key={t} aria-pressed={values['mark-color']===String(i)} onClick={()=>set('mark-color',String(i))} style={{background:['#faf7ad','#f3d7ea','#d7f3f8','#f6dccb'][i]}}>{t}</button>)}</div>
  {check('1',148,1330,{'hl-Adem Yilmaz':'0','hl-Marlies Kretschmann':'0','hl-Markus Hirsch':'0','hl-Krankenpfleger':'1','hl-Polizeibeamtin':'1','hl-Zauberer':'1','hl-von der Arbeit':'2','hl-in den Kindergarten gebracht':'2','hl-aus Rom':'2','hl-zu Hause':'3','hl-zur Arbeit':'3','hl-im Messezentrum':'3'})}
- {title('2',105,1380,920,'Und Sie? Was erzählen Sie am Montagmorgen in der U-Bahn?')}{text(148,1417,890,'Machen Sie Notizen zu den Fragen in 1 und erzählen Sie.','nkBold')}
+ {title('2',105,1380,920,'Und Sie? Was erzählen Sie am Montagmorgen in der U-Bahn?')}{save('2',845,1382)}{text(148,1417,890,'Machen Sie Notizen zu den Fragen in 1 und erzählen Sie.','nkBold')}
  <details className="nkWriting" style={{position:'absolute',left:148,top:1450,width:440,zIndex:8,font:'18px Arial'}}><summary>Meine Notizen</summary>{open('2-notes',0,35,600,160,'Meine Notizen am Montagmorgen')}</details>
  </>}
  {page==='54'&&<>
