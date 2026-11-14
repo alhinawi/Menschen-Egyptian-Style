@@ -31,6 +31,7 @@ export function NativeAB12P31to46({page}:{page:string}){
  const rule=(x:number,y:number,w:number)=><div className="naRule" style={{left:x,top:y,width:w}}/>;
  const dot=(id:string,value:string,x:number,y:number,label:string,checkbox=false)=><input className="naDot" type={checkbox?'checkbox':'radio'} aria-label={label} data-value={value} name={key+'-'+id} checked={checkbox?values[id]==='true':values[id]===value} onChange={e=>set(id,checkbox?String(e.target.checked):value)} style={{left:x,top:y}}/>;
  const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}/><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const save=(id:string,x:number,y:number)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton onClick={()=>sr({...results,[id]:true})}/><output aria-live="polite">{id in results?'Gespeichert':''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,t:string,cls='')=><div className={'naTitle '+cls} style={{left:x,top:y,width:w}}><b>{n}</b><Words text={t}/></div>;
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const audio=(src:string,x:number,y:number,label:string,task?:string)=><button className="naAudio" data-task={task} style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
@@ -1045,7 +1046,9 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(655,1185,340,'kennen Sie? Notieren Sie und','naT39b naNw')}
   {text(655,1211,340,'sprechen Sie die Wörter.','naT39b naNw')}
   {art('6',679,1270,73,46)}
-  {field('p39-4a',679,1318,170,'2 Wörter','naFieldLite')}
+  {save('39-2',490,1346)}
+  {field('p39-4a',679,1318,320,'2 Wörter','naFieldLite')}
+  {save('39-3',679,1360)}
   {art('modul-tab',979,1388,93,43)}
   {text(788,1396,150,'neununddreißig','naFooter')}{text(938,1396,8,'|','naFooter')}{text(958,1396,22,'39','naFooter')}
  </>}
