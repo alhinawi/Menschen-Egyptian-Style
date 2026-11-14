@@ -17,13 +17,22 @@ export function NativeAB12P78({page}:{page:string}){
  useLayoutEffect(()=>{const el=root.current!;const obs=new ResizeObserver(()=>ss(Math.min(el.clientWidth/W,(el.clientHeight-38)/H)));obs.observe(el);return ()=>obs.disconnect()},[]);
  usePageReset(page,key,()=>{sv({});sr({})});
  const set=(id:string,v:string)=>{const n={...values,[id]:v};sv(n);localStorage.setItem(key,JSON.stringify(n))};
+ const paintRadios=(answers:Record<string,string>)=>{Object.entries(answers).forEach(([f,correct])=>{
+  const els=[...document.querySelectorAll(`[data-native-ab12="${page}"] input[type="radio"][data-native-field="${f}"]`)] as HTMLInputElement[];
+  if(!els.length)return;
+  const v=values[f]||'';
+  els.forEach(el=>el.removeAttribute('data-check-mark'));
+  if(v===correct){els.find(el=>el.value===v)?.setAttribute('data-check-mark','ok')}
+  else if(v){els.find(el=>el.value===v)?.setAttribute('data-check-mark','bad')}
+  else els.forEach(el=>el.setAttribute('data-check-mark','bad'));
+ })};
  const text=(x:number,y:number,w:number,t:string,cls='')=><div className={'naText '+cls} style={{left:x,top:y,width:w}}><Words text={t}/></div>;
  const art=(name:string,x:number,y:number,w:number,h:number)=><PageImage className="naArt" src={`assets/book-crops/native-ab12-p${page}-${name}.png`} alt={'Originalillustration '+name} style={{left:x,top:y,width:w,height:h}}/>;
  const num=(x:number,y:number,n:string)=><div className="naNum78" style={{left:x,top:y}}>{n}</div>;
  const kb=(x:number,y:number,t:string)=><div className="naKB78" style={{left:x,top:y}}>{t}</div>;
  const rail=(x:number,y:number,t:string)=><div className="naRail78" style={{left:x,top:y}}>{t}</div>;
- const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||'')))})}/><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
- const dot=(id:string,value:string,x:number,y:number,label:string)=><input type="radio" className="naDot naDot78" name={key+'-'+id} aria-label={label} data-native-field={id} value={value} style={{left:x,top:y}} checked={values[id]===value} onChange={()=>set(id,value)}/>;
+ const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>{sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||'')))});paintRadios(answers)}}/><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const dot=(id:string,value:string,x:number,y:number,label:string)=><input type="radio" className="naDot naDot78" name={key+'-'+id} aria-label={label} data-native-field={id} value={value} style={{left:x,top:y}} checked={values[id]===value} onChange={()=>{set(id,value);document.querySelectorAll('[data-native-ab12="78"] input[data-native-field="'+id+'"]').forEach(i=>i.removeAttribute('data-check-mark'))}}/>;
  // ex1: one letter cell = either a printed letter or a single-letter gap field
  const L=(x:number,base:number,t:string)=><div className="naText naLet78" style={{left:x,top:base-15,width:13}}>{t}</div>;
  const G=(id:string,x:number,base:number,label:string)=><input className="naField78" aria-label={label} data-native-field={id} style={{left:x,top:base-16}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false} maxLength={2}/>;
@@ -55,7 +64,9 @@ export function NativeAB12P78({page}:{page:string}){
 [data-native-ab12='78'] .naPick78[data-check-mark="ok"] .naOpt78.on78{background:#bfe3c8}
 [data-native-ab12='78'] .naPick78[data-check-mark="bad"] .naOpt78.on78{background:#f5c1c1}
 [data-native-ab12='78'] .naPick78[data-check-mark="bad"][data-empty="1"]{box-shadow:0 2px 0 #c62f2f}
-[data-native-ab12='78'] .naDot78{position:absolute;width:10px!important;height:10px!important;border-width:1.5px!important;margin:0!important}
+[data-native-ab12='78'] .naDot78{position:absolute;width:10px!important;height:10px!important;border-width:1.5px!important;margin:0!important;border-radius:50%!important}
+[data-native-ab12='78'] .naDot78[data-check-mark="ok"]{box-shadow:0 0 0 2px #2f7d4f!important;accent-color:#2f7d4f}
+[data-native-ab12='78'] .naDot78[data-check-mark="bad"]{box-shadow:0 0 0 2px #c62f2f!important;accent-color:#c62f2f}
 [data-native-ab12='78'] .naBul78{position:absolute;font:11px Arial,sans-serif}
 [data-native-ab12='78'] .naField5{position:absolute;height:17px;background:transparent;border:none;border-bottom:1.5px solid #9aa3ab;font:13.5px DroidSerif,Georgia,serif;color:#1c3f8f;padding:0 2px;outline:none;box-sizing:border-box}
 [data-native-ab12='78'] .naCanvas .naField5[data-check-mark="ok"]{background:transparent!important;border-color:transparent!important;box-shadow:none!important;border-bottom:2px solid #2f7d4f!important;color:#1c3f8f!important}
