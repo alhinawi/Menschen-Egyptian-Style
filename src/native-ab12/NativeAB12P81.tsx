@@ -186,7 +186,7 @@ export function NativeAB12P81({page}:{page:string}){
   {dot('p81-a2','nein',180,1021,'Regel Nein')}
   {text(147,1017,20,'Ja.','naRegel81')}
   {text(200,1019,35,'Nein.','naRegel81')}
-  {check('81-a2',250,1014,{'p81-a2':'nein'})}
+  {check('81-a2',250,1014,{'p81-a2':'ja'})}
 
   {art('woman',666,893,72,145)}
 
