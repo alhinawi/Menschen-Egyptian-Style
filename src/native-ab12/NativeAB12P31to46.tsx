@@ -53,10 +53,10 @@ export function NativeAB12P31to46({page}:{page:string}){
   if(soupSel.word===word)set('p43-soup-'+word,'1');
   setSoupSel(null);
  };
- const soupFrag=(frag:string,word:string,transparentW?:number)=>{
+ const soupFrag=(frag:string,word:string,label:string,transparentW?:number)=>{
   const found=!!values['p43-soup-'+word];
   const active=soupSel?.frag===frag;
-  return <button type="button" key={frag} className={'naSoupFrag'+(found?' found':'')+(active?' active':'')} data-soup-frag={frag} data-word={word} onClick={()=>soupTap(frag,word)}>{transparentW?<span style={{color:'transparent',display:'inline-block',width:transparentW}}>{frag==='kop'?'Köp':frag}</span>:(frag==='hael'?'Häl':frag==='rue'?'Rü':frag==='bau'?'Bäu':frag==='fue'?'Fü':frag==='sse'?'ße':frag==='nea'||frag==='neb'?'ne':frag==='haen'?'Hän':frag==='zaeh'?'Zäh':frag)}</button>;
+  return <button type="button" key={frag} className={'naSoupFrag'+(found?' found':'')+(active?' active':'')} data-soup-frag={frag} data-word={word} onClick={()=>soupTap(frag,word)}>{transparentW?<span style={{color:'transparent',display:'inline-block',width:transparentW}}>{label}</span>:label}</button>;
  };
 
 
@@ -1595,8 +1595,8 @@ export function NativeAB12P31to46({page}:{page:string}){
   <div className="naSide naSide43 naSide43N" style={{left:71,top:980}}><span className="naSide43F">W</span>ÖRTER</div>
   {rect(142,977,511,22,'#fbf6d6')}
   {rect(142,1002,456,23,'#fbf6d6')}
-  <div className="naText naSoup43 naNw" style={{left:146,top:973,width:520}}>{soupFrag('kop','Köpfe',31)}{' | '}{soupFrag('hael','Hälse')}{' | '}{soupFrag('fin','Finger')}{' | '}{soupFrag('rue','Rücken')}{' | '}{soupFrag('bau','Bäuche')}{' | '}{soupFrag('fe','Köpfe',15)}{' | '}{soupFrag('che','Bäuche')}{' | '}{soupFrag('me','Arme')}{' | '}{soupFrag('de','Hände')}{' | '}{soupFrag('ger','Finger')}{' | '}{soupFrag('bei','Beine')}{' | '}{soupFrag('cken','Rücken')}{' | '}{soupFrag('se','Hälse')}{' |'}</div>
-  <div className="naText naSoup43 naSoup43B naNw" style={{left:148,top:999,width:450}}>{soupFrag('nea','Beine')}{' | '}{soupFrag('fue','Füße')}{' | '}{soupFrag('ren','Ohren')}{' | '}{soupFrag('sse','Füße')}{' | '}{soupFrag('knie','Knie')}{' | '}{soupFrag('oh','Ohren')}{' | '}{soupFrag('au','Augen')}{' | '}{soupFrag('ar','Arme')}{' | '}{soupFrag('gen','Augen')}{' | '}{soupFrag('neb','Zähne')}{' | '}{soupFrag('haen','Hände')}{' | '}{soupFrag('zaeh','Zähne')}</div>
+  <div className="naText naSoup43 naNw" style={{left:146,top:973,width:520}}>{soupFrag('kop','Köpfe','Köp',31)}{' | '}{soupFrag('hael','Hälse','Häl')}{' | '}{soupFrag('fin','Finger','Fin')}{' | '}{soupFrag('rue','Rücken','Rü')}{' | '}{soupFrag('bau','Bäuche','Bäu')}{' | '}{soupFrag('fe','Köpfe','fe',15)}{' | '}{soupFrag('che','Bäuche','che')}{' | '}{soupFrag('me','Arme','me')}{' | '}{soupFrag('de','Hände','de')}{' | '}{soupFrag('ger','Finger','ger')}{' | '}{soupFrag('bei','Beine','Bei')}{' | '}{soupFrag('cken','Rücken','cken')}{' | '}{soupFrag('se','Hälse','se')}{' |'}</div>
+  <div className="naText naSoup43 naSoup43B naNw" style={{left:148,top:999,width:450}}>{soupFrag('nea','Beine','ne')}{' | '}{soupFrag('fue','Füße','Fü')}{' | '}{soupFrag('ren','Ohren','ren')}{' | '}{soupFrag('sse','Füße','ße')}{' | '}{soupFrag('knie','Knie','Knie')}{' | '}{soupFrag('oh','Ohren','Oh')}{' | '}{soupFrag('au','Augen','Au')}{' | '}{soupFrag('ar','Arme','Ar')}{' | '}{soupFrag('gen','Augen','gen')}{' | '}{soupFrag('neb','Zähne','ne')}{' | '}{soupFrag('haen','Hände','Hän')}{' | '}{soupFrag('zaeh','Zähne','Zäh')}</div>
   <span data-soup-frag="kop" style={{position:'absolute',left:142,top:977,width:41,height:21,cursor:'pointer'}} onClick={()=>soupTap('kop','Köpfe')}>{art('skop',0,0,41,21)}</span>
   <span data-soup-frag="fe" style={{position:'absolute',left:346,top:977,width:20,height:21,cursor:'pointer'}} onClick={()=>soupTap('fe','Köpfe')}>{art('sfe',0,0,20,21)}</span>
   {lin(800,962,1,78,'#e0dcc8')}
@@ -1605,7 +1605,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {lin(699,1001,200,1,'#d8d8bc')}
   {art('kopf',726,1016,47,22)}
   {art('koepfe',799,1004,73,36)}
-  {(()=>{const words=['Köpfe','Hälse','Finger','Rücken','Bäuche','Beine','Füße','Ohren','Augen','Arme','Hände','Zähne','Knie'];return <div className="naCheck" data-check="43-4" style={{left:146,top:1032}}><CheckButton answers={Object.fromEntries(words.map(w=>['p43-soup-'+w,'1']))} onClick={()=>sr({...results,'43-4':words.every(w=>values['p43-soup-'+w]==='1')})}/><output aria-live="polite">{'43-4' in results?(results['43-4']?'✓ Richtig!':'Noch einmal'):''}</output></div>})()}
+  {(()=>{const words=['Köpfe','Hälse','Finger','Rücken','Bäuche','Beine','Füße','Ohren','Augen','Arme','Hände','Zähne','Knie'];return <div className="naCheck" data-check="43-5" style={{left:608,top:1026}}><CheckButton answers={Object.fromEntries(words.map(w=>['p43-soup-'+w,'1']))} onClick={()=>sr({...results,'43-5':words.every(w=>values['p43-soup-'+w]==='1')})}/><output aria-live="polite">{'43-5' in results?(results['43-5']?'✓ Richtig!':'Noch einmal'):''}</output></div>})()}
   {art('face',815,926,154,110)}
   {kb(59,1073,'KB 4')}
   <div className='naTitle naGB naTt9' style={{left:99,top:1066,width:520}}><b>9</b><Words text='Ergänzen Sie aus '/><span style={{color:'#223b8d'}}>8</span><Words text=' und vergleichen Sie.'/></div>
