@@ -43,8 +43,16 @@ const clipIds = [...fs.readFileSync(path.join(ROOT, 'src', 'components', 'ClipMa
 const clipsOut = path.join(ROOT, 'dist', 'assets', 'clips');
 fs.mkdirSync(clipsOut, {recursive: true});
 let missing = [];
+// Full HD versions (lanczos upscales produced by fetch-clips.py) ship when
+// all 24 are present; otherwise the raw downloads are used as-is.
+const HD = path.join(CACHE, 'clips-1080');
+const hdComplete = clipIds.every(id => {
+  try { return fs.statSync(path.join(HD, id + '.mp4')).size > 100000; } catch { return false; }
+});
+const clipSrcDir = hdComplete ? HD : CLIPS;
+console.log('clip source:', clipSrcDir, hdComplete ? '(Full HD 1080p)' : '(raw)');
 for (const id of clipIds) {
-  const src = path.join(CLIPS, id + '.mp4');
+  const src = path.join(clipSrcDir, id + '.mp4');
   if (fs.existsSync(src) && fs.statSync(src).size > 100000) fs.copyFileSync(src, path.join(clipsOut, id + '.mp4'));
   else missing.push(id);
 }
