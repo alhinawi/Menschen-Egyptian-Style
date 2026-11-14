@@ -11,7 +11,7 @@ const ROOT = {
   ogTitle: 'Menschen. - The Interactive German Coursebook',
   description: 'Flip real pages, hear the original audio, and tap any word for its meaning in Egyptian Arabic. A1.1 + A1.2 · 24 lessons.',
   ogImage: 'assets/og.png',
-  url: 'https://almany.vercel.app/',
+  url: 'https://menscheny.pages.dev/',
 };
 function stamp(html, file, m) {
   const swap = (from, to, count) => {
