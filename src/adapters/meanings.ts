@@ -2,6 +2,7 @@ import {automaticArabic,hasCuratedTranslation,recordMissingTranslation} from '..
 import {serviceLifecycle} from './lifecycle';
 import {flushSync} from 'react-dom';
 import {selectionStore} from '../meanings/selectionStore';
+import {recordPronunciationUrl} from '../tts-audio';
 import {meaningStore} from '../meanings/meaningStore';
 import type {MeaningSnapshot} from '../meanings/meaningStore';
 export default function mount(){
@@ -21,16 +22,21 @@ const ttsAvailable=()=>typeof window.speechSynthesis!=='undefined'&&typeof Speec
 const ttsStop=()=>{if(ttsAvailable())speechSynthesis.cancel()};
 function speak(text: string){if(!ttsAvailable()||!text)return false;ttsStop();const u=new SpeechSynthesisUtterance(text);u.lang='de-DE';const voices=speechSynthesis.getVoices().filter(v=>/^de([-_]|$)/i.test(v.lang));const pref=voices.find(v=>/^de[-_]de$/i.test(v.lang))||voices[0];if(pref)u.voice=pref;u.rate=0.95;speechSynthesis.speak(u);return true}
 let audioPath: string|undefined,audioQueue: string[]=[],queueAt=0;activeAudio.onended=()=>{if(++queueAt<audioQueue.length){activeAudio.src=audioQueue[queueAt];activeAudio.play().catch(()=>{})}};
+function speakCurrent(){return speak(current?.selectionParts?current.selectionParts.map((p: any)=>p.text).join(' '):(current?(mode==='sentence'?current.phrase:current.word):''))}
+// Chain: real recording -> /api/tts (both come back as audioPath) -> browser
+// speech synthesis -> error toast. A playback failure on any URL falls through
+// to the browser voice; the toast only shows when even that is unavailable.
+function playFailed(){if(!speakCurrent())meaningStore.update({pendingHidden:false,pending:'التسجيل مشتغلش. اضغط اسمع النطق عشان تجرّب تاني.'})}
 function play(){activeAudio.pause();ttsStop();
- if(current?.selectionParts){const parts=current.selectionParts;if(parts.every((p: any)=>p.audio?.length)){audioQueue=parts.flatMap((p: any)=>p.audio||[]);queueAt=0;activeAudio.src=audioQueue[0];activeAudio.play().catch(()=>{meaningStore.update({pendingHidden:false,pending:'التسجيل مشتغلش. اضغط اسمع النطق عشان تجرّب تاني.'})});return}if(speak(parts.map((p: any)=>p.text).join(' ')))return;audioQueue=parts.flatMap((p: any)=>p.audio||[]);if(!audioQueue.length)return;queueAt=0;activeAudio.src=audioQueue[0];activeAudio.play().catch(()=>{});return}
- if(!audioPath){speak(current?(mode==='sentence'?current.phrase:current.word):'');return}
- audioQueue=[audioPath];queueAt=0;activeAudio.src=audioQueue[0];activeAudio.play().catch(()=>{meaningStore.update({pendingHidden:false,pending:'التسجيل مشتغلش. اضغط اسمع النطق عشان تجرّب تاني.'})})}
+ if(current?.selectionParts){const parts=current.selectionParts;if(parts.every((p: any)=>p.audio?.length)){audioQueue=parts.flatMap((p: any)=>p.audio||[]);queueAt=0;activeAudio.src=audioQueue[0];activeAudio.play().catch(playFailed);return}if(speak(parts.map((p: any)=>p.text).join(' ')))return;audioQueue=parts.flatMap((p: any)=>p.audio||[]);if(!audioQueue.length)return;queueAt=0;activeAudio.src=audioQueue[0];activeAudio.play().catch(playFailed);return}
+ if(!audioPath){speakCurrent();return}
+ audioQueue=[audioPath];queueAt=0;activeAudio.src=audioQueue[0];activeAudio.play().catch(playFailed)}
 let translationVersion=0;
 function refresh(autoplay=false){
  const version=++translationVersion;const missing:{text:string;index:number}[]=[];
  let view: Partial<MeaningSnapshot>;
  if(current?.selectionParts){const parts=current.selectionParts;audioPath=parts.flatMap((p: any)=>p.audio||[])[0];view={mode:'sentence',german:parts.map((p: any)=>p.text).join('\n\n'),arabic:parts.map((p:any,index:number)=>{if(hasCuratedTranslation(p.arabic))return p.arabic;missing.push({text:p.text,index});return 'جاري الترجمة الآلية…'}).join('\n\n'),wordDisabled:true,sentenceDisabled:true,audioDisabled:!audioPath&&!ttsAvailable(),pendingHidden:parts.every((p: any)=>p.audio?.length)||ttsAvailable(),pending:'بعض أجزاء التحديد لسه ناقصها تسجيل. هنشغّل الأجزاء الجاهزة.'};}
- else{const text=mode==='sentence'?current.phrase:current.word;const translated=mode==='sentence'?(phrases.get(norm(text))??words[norm(text)]):words[norm(text)];const record=records.find((r: any)=>r.type===mode&&norm(r.text)===norm(text))||(mode==='sentence'?records.find((r: any)=>r.type==='word'&&norm(r.text)===norm(text)):undefined);audioPath=window.PRONUNCIATION_FILES?.[record?.id];if(!hasCuratedTranslation(translated))missing.push({text,index:0});view={german:text,arabic:hasCuratedTranslation(translated)?translated:'جاري الترجمة الآلية…',sentenceDisabled:!current.phrase,wordDisabled:!current.word,mode,audioDisabled:!audioPath&&!ttsAvailable(),pendingHidden:!!audioPath||ttsAvailable(),pending:mode==='sentence'?'نطق الجملة دي لسه بيتجهّز. التسجيلات الأصلية شغّالة جوّه التمارين.':'نطق الكلمة دي لسه بيتجهّز. تقدر تختار الجملة لو نطقها جاهز.'};}
+ else{const text=mode==='sentence'?current.phrase:current.word;const translated=mode==='sentence'?(phrases.get(norm(text))??words[norm(text)]):words[norm(text)];const record=records.find((r: any)=>r.type===mode&&norm(r.text)===norm(text))||(mode==='sentence'?records.find((r: any)=>r.type==='word'&&norm(r.text)===norm(text)):undefined);audioPath=recordPronunciationUrl(record);if(!hasCuratedTranslation(translated))missing.push({text,index:0});view={german:text,arabic:hasCuratedTranslation(translated)?translated:'جاري الترجمة الآلية…',sentenceDisabled:!current.phrase,wordDisabled:!current.word,mode,audioDisabled:!audioPath&&!ttsAvailable(),pendingHidden:!!audioPath||ttsAvailable(),pending:mode==='sentence'?'نطق الجملة دي لسه بيتجهّز. التسجيلات الأصلية شغّالة جوّه التمارين.':'نطق الكلمة دي لسه بيتجهّز. تقدر تختار الجملة لو نطقها جاهز.'};}
  view.machine=missing.length>0;view.machineState=missing.length?'loading':'idle';
  flushSync(()=>meaningStore.update(view));if(autoplay)play();
  if(missing.length){
@@ -64,7 +70,7 @@ function createArtworkLayers(){for(const pg of document.querySelectorAll<HTMLEle
 window.createArtworkLayers=createArtworkLayers;window.menschenBook?.on('flip',()=>{if(selecting)requestAnimationFrame(createArtworkLayers)});
 function selectionChanged(){if(!selecting||dialog.open)return;const sel=window.getSelection(),text=sel?.toString().trim();const node=sel?.anchorNode,el=(node?.nodeType===Node.ELEMENT_NODE?node:node?.parentElement) as Element;if(!text||!el?.closest('.page')||text.length>1500){selectionStore.update({actionHidden:true});return}chosen=text;chosenRange=sel!.getRangeAt(0).cloneRange();selectionStore.update({actionHidden:false});selectionStore.update({actionLabel:'ترجم التحديد واسمعه: '+text})}
 document.addEventListener('selectionchange',selectionChanged);document.querySelector<HTMLInputElement>('#pageJump')!.addEventListener('change',()=>{if(selecting)setTimeout(createArtworkLayers,0)});function compose(text: string){
- const n=selectionNorm(text),exact=Object.entries(window.MENSCHEN_PHRASES).find(([k])=>selectionNorm(k)===n);const exactWord=words[n];const clip=(t: any)=>{const r=records.find((r: any)=>selectionNorm(r.text)===selectionNorm(t));return window.PRONUNCIATION_FILES?.[(r?.id as string)]};
+ const n=selectionNorm(text),exact=Object.entries(window.MENSCHEN_PHRASES).find(([k])=>selectionNorm(k)===n);const exactWord=words[n];const clip=(t: any)=>{const r=records.find((r: any)=>selectionNorm(r.text)===selectionNorm(t));return recordPronunciationUrl(r)};
  if(exact||exactWord)return {text,arabic:exact?.[1]||exactWord,audio:[clip(exact?.[0]||text)].filter(Boolean)};
  const entries=Object.entries(window.MENSCHEN_PHRASES).map(([k,v])=>({k,v,n:selectionNorm(k)})).filter(x=>x.n).sort((a,b)=>b.n.length-a.n.length);let rest=n,arabic: string[]=[],audio: string[]=[];
  while(rest){const found=entries.find((e: any)=>rest===e.n||rest.startsWith(e.n+' '));if(!found)return null;arabic.push(found.v as string);const path=clip(found.k);if(path)audio.push(path);rest=rest.slice(found.n.length).trim()}
