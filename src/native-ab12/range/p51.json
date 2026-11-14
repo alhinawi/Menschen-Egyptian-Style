@@ -338,7 +338,9 @@
    "y": 240,
    "w": 100,
    "l": "Eingabe a1",
-   "hh": 24
+   "hh": 24,
+   "a": "in",
+   "g": "s1"
   },
   {
    "k": "f",
@@ -347,7 +349,9 @@
    "y": 265,
    "w": 122,
    "l": "Eingabe a2",
-   "hh": 24
+   "hh": 24,
+   "a": "Vor",
+   "g": "s1"
   },
   {
    "k": "f",
@@ -356,7 +360,9 @@
    "y": 289,
    "w": 121,
    "l": "Eingabe a3",
-   "hh": 24
+   "hh": 24,
+   "a": "nach",
+   "g": "s1"
   },
   {
    "k": "f",
@@ -365,7 +371,9 @@
    "y": 360,
    "w": 141,
    "l": "Eingabe a4",
-   "hh": 24
+   "hh": 24,
+   "a": "Für",
+   "g": "s2"
   },
   {
    "k": "f",
@@ -374,7 +382,9 @@
    "y": 455,
    "w": 668,
    "l": "Eingabe a5",
-   "hh": 24
+   "hh": 24,
+   "a": "Ich will unbedingt Sängerin werden",
+   "g": "s3"
   },
   {
    "k": "f",
@@ -383,7 +393,9 @@
    "y": 527,
    "w": 326,
    "l": "Eingabe a6",
-   "hh": 24
+   "hh": 24,
+   "a": "ohne mein Handy",
+   "g": "s4"
   },
   {
    "k": "f",
@@ -392,7 +404,9 @@
    "y": 551,
    "w": 336,
    "l": "Eingabe a7",
-   "hh": 24
+   "hh": 24,
+   "a": "mit meinem Laptop",
+   "g": "s4"
   },
   {
    "k": "f",
@@ -401,7 +415,9 @@
    "y": 624,
    "w": 272,
    "l": "Eingabe a8",
-   "hh": 24
+   "hh": 24,
+   "a": "Essen Sie",
+   "g": "s5"
   },
   {
    "k": "f",
@@ -410,7 +426,9 @@
    "y": 648,
    "w": 454,
    "l": "Eingabe a9",
-   "hh": 24
+   "hh": 24,
+   "a": "Gehen Sie um acht Uhr ins Bett",
+   "g": "s5"
   },
   {
    "k": "f",
@@ -419,7 +437,9 @@
    "y": 719,
    "w": 415,
    "l": "Eingabe a10",
-   "hh": 24
+   "hh": 24,
+   "a": "Er soll zum Arzt gehen",
+   "g": "s6"
   },
   {
    "k": "f",
@@ -570,7 +590,9 @@
    "l": "Reihenfolge 1",
    "c": "naRCirc",
    "hh": 18,
-   "max": 1
+   "max": 1,
+   "a": "3",
+   "g": "sort"
   },
   {
    "k": "f",
@@ -581,7 +603,9 @@
    "l": "Reihenfolge 2",
    "c": "naRCirc",
    "hh": 18,
-   "max": 1
+   "max": 1,
+   "a": "2",
+   "g": "sort"
   },
   {
    "k": "f",
@@ -592,7 +616,9 @@
    "l": "Reihenfolge 3",
    "c": "naRCirc",
    "hh": 18,
-   "max": 1
+   "max": 1,
+   "a": "5",
+   "g": "sort"
   },
   {
    "k": "f",
@@ -603,7 +629,9 @@
    "l": "Reihenfolge 4",
    "c": "naRCirc",
    "hh": 18,
-   "max": 1
+   "max": 1,
+   "a": "7",
+   "g": "sort"
   },
   {
    "k": "f",
@@ -614,7 +642,9 @@
    "l": "Reihenfolge 5",
    "c": "naRCirc",
    "hh": 18,
-   "max": 1
+   "max": 1,
+   "a": "4",
+   "g": "sort"
   },
   {
    "k": "a",
@@ -634,7 +664,9 @@
    "l": "Reihenfolge 7",
    "c": "naRCirc",
    "hh": 18,
-   "max": 1
+   "max": 1,
+   "a": "6",
+   "g": "sort"
   },
   {
    "k": "a",
@@ -899,6 +931,55 @@
    "l": "Selbsteinschätzung 6 rot",
    "s": 19,
    "lt": 1
+  },
+  {
+   "k": "chk",
+   "g": "s1",
+   "x": 559,
+   "y": 275
+  },
+  {
+   "k": "chk",
+   "g": "s2",
+   "x": 707,
+   "y": 306
+  },
+  {
+   "k": "chk",
+   "g": "s3",
+   "x": 707,
+   "y": 378
+  },
+  {
+   "k": "chk",
+   "g": "s4",
+   "x": 707,
+   "y": 474
+  },
+  {
+   "k": "chk",
+   "g": "s5",
+   "x": 707,
+   "y": 570
+  },
+  {
+   "k": "chk",
+   "g": "s6",
+   "x": 705,
+   "y": 663
+  },
+  {
+   "k": "chk",
+   "g": "refl",
+   "x": 485,
+   "y": 733,
+   "neutral": true
+  },
+  {
+   "k": "chk",
+   "g": "sort",
+   "x": 730,
+   "y": 1024
   }
  ]
 }
