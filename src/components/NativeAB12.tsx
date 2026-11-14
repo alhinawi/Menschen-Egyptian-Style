@@ -36,7 +36,7 @@ export function NativeAB12({page}:{page:string}){
  const hand=(x:number,y:number,w:number,t:string)=><div className="naText naHand" style={{left:x,top:y,width:w}}><Words text={t}/></div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}${SCP('.naTitle')}{font-family:FiraSans,sans-serif!important;letter-spacing:0!important;font-size:21px!important}${SCP('.naText')},${SCP('.naBold')},${SCP('.naLet')},${SCP('.naDlg')}{font-family:DroidSerif,Georgia,serif!important;font-size:20px!important;letter-spacing:-0.65px}${SCP('.naField')}{font-family:DroidSerif,Georgia,serif!important;font-size:19px!important;letter-spacing:-0.65px}${SCP('.naText.naS20')}{font-size:18px!important}${SCP('.naSmall')}{font-size:16.5px!important}${SCP('.naD19')}{font-size:17.5px!important}${SCP('.naUrl')}{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='52'] .naText,[data-native-ab12='52'] .naBold,[data-native-ab12='52'] .naLet,[data-native-ab12='52'] .naDlg,[data-native-ab12='52'] .naField{letter-spacing:0!important}[data-native-ab12='52'] .naTitle{font-size:22px!important}[data-native-ab12='52'] .naFoot52{font-size:17px!important;color:#202020!important}[data-native-ab12='89'] .naHeadline{font-size:23px!important;letter-spacing:0!important}[data-native-ab12='52'] .naTitle.naRB b{top:-3px}[data-native-ab12='52'] .naField.naList52{font-size:12px!important}[data-native-ab12='52'] .naCheck.naStack{flex-direction:column;align-items:center;gap:4px;width:108px}[data-native-ab12='52'] .naCheck.naStack output{white-space:nowrap;text-align:center}`}</style><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}${SCP('.naTitle')}{font-family:FiraSans,sans-serif!important;letter-spacing:0!important;font-size:21px!important}${SCP('.naText')},${SCP('.naBold')},${SCP('.naLet')},${SCP('.naDlg')}{font-family:DroidSerif,Georgia,serif!important;font-size:20px!important;letter-spacing:-0.65px}${SCP('.naField')}{font-family:DroidSerif,Georgia,serif!important;font-size:19px!important;letter-spacing:-0.65px}${SCP('.naText.naS20')}{font-size:18px!important}${SCP('.naSmall')}{font-size:16.5px!important}${SCP('.naD19')}{font-size:17.5px!important}${SCP('.naUrl')}{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='52'] .naText,[data-native-ab12='52'] .naBold,[data-native-ab12='52'] .naLet,[data-native-ab12='52'] .naDlg,[data-native-ab12='52'] .naField{letter-spacing:0!important}[data-native-ab12='52'] .naTitle{font-size:22px!important}[data-native-ab12='52'] .naFoot52{font-size:17px!important;color:#202020!important}[data-native-ab12='89'] .naHeadline{font-size:23px!important;letter-spacing:0!important}[data-native-ab12='89'] .naWHead{font-family:FiraSans,sans-serif!important;font-weight:700!important}[data-native-ab12='52'] .naTitle.naRB b{top:-3px}[data-native-ab12='52'] .naField.naList52{font-size:12px!important}[data-native-ab12='52'] .naCheck.naStack{flex-direction:column;align-items:center;gap:4px;width:108px}[data-native-ab12='52'] .naCheck.naStack output{white-space:nowrap;text-align:center}`}</style><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='89'&&<>
   {art('lesson-tab',738,18,62,75)}
   {text(75,61,300,'LERNWORTSCHATZ','naHeadline')}
@@ -85,32 +85,32 @@ export function NativeAB12({page}:{page:string}){
   {field('89-1-l20',234,576,144,'windig übersetzen')}
   {text(397,171,150,'Himmelsrichtung')}
   {text(406,191,150,'die, -en')}
-  {field('89-1-r1',505,191,148,'die, -en übersetzen')}
+  {field('89-1-r1',505,188,148,'die, -en übersetzen')}
   {text(396,210,150,'Norden der')}
-  {field('89-1-r2',505,210,148,'Norden der übersetzen')}
+  {field('89-1-r2',505,207,148,'Norden der übersetzen')}
   {text(396,230,150,'Süden der')}
-  {field('89-1-r3',505,230,148,'Süden der übersetzen')}
+  {field('89-1-r3',505,227,148,'Süden der übersetzen')}
   {text(396,250,150,'Osten der')}
-  {field('89-1-r4',505,250,148,'Osten der übersetzen')}
+  {field('89-1-r4',505,246,148,'Osten der übersetzen')}
   {text(396,270,150,'Westen der')}
-  {field('89-1-r5',505,270,148,'Westen der übersetzen')}
+  {field('89-1-r5',505,266,148,'Westen der übersetzen')}
   {text(396,328,150,'Dach das, ¨er')}
-  {field('89-1-r6',505,328,148,'Dach das, ¨er übersetzen')}
+  {field('89-1-r6',505,324,148,'Dach das, ¨er übersetzen')}
   {text(396,347,150,'Frühjahr das, -e')}
-  {field('89-1-r7',505,347,148,'Frühjahr das, -e übersetzen')}
+  {field('89-1-r7',505,344,148,'Frühjahr das, -e übersetzen')}
   {text(396,367,150,'Glas das, ¨er')}
-  {field('89-1-r8',505,367,148,'Glas das, ¨er übersetzen')}
+  {field('89-1-r8',505,363,148,'Glas das, ¨er übersetzen')}
   {text(396,386,150,'Glück das')}
-  {field('89-1-r9',505,386,148,'Glück das übersetzen')}
+  {field('89-1-r9',505,383,148,'Glück das übersetzen')}
   {text(396,405,150,'Himmel der')}
-  {field('89-1-r10',505,405,148,'Himmel der übersetzen')}
+  {field('89-1-r10',505,402,148,'Himmel der übersetzen')}
   {text(396,421,150,'Laune die, -n')}
-  {field('89-1-r11',505,421,148,'Laune die, -n übersetzen')}
+  {field('89-1-r11',505,422,148,'Laune die, -n übersetzen')}
   {text(396,444,150,'Reiseführer')}
   {text(405,460,150,'der, -')}
-  {field('89-1-r13',505,460,148,'der, - übersetzen')}
+  {field('89-1-r13',505,461,148,'der, - übersetzen')}
   {text(396,484,150,'Traum der, ¨e')}
-  {field('89-1-r14',505,484,148,'Traum der, ¨e übersetzen')}
+  {field('89-1-r14',505,480,148,'Traum der, ¨e übersetzen')}
   {art('tipp',433,545,136,42)}
   {text(461,550,110,'Suchen Sie','naSmall')}
   {text(461,568,130,'Wortfamilien.','naSmall')}
