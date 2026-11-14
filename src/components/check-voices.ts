@@ -5,8 +5,10 @@
 // row within a pool, and clips download lazily on the first failed check.
 import wrongVoice1 from '../assets/feedback/wrong01_fashel.mp3?url';
 import wrongVoice2 from '../assets/feedback/wrong02_rakkiz.mp3?url';
+import wrongVoice3 from '../assets/feedback/wrong03_puck.mp3?url';
+import wrongVoice4 from '../assets/feedback/wrong04_yabni.mp3?url';
 import emptyVoice1 from '../assets/feedback/empty01_fady.mp3?url';
 import emptyVoice2 from '../assets/feedback/empty02_gaweb.mp3?url';
 
-export const wrongVoices: string[] = [wrongVoice1, wrongVoice2];
+export const wrongVoices: string[] = [wrongVoice1, wrongVoice2, wrongVoice3, wrongVoice4];
 export const incompleteVoices: string[] = [emptyVoice1, emptyVoice2];
