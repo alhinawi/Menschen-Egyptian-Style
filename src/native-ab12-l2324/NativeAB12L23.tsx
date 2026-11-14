@@ -212,9 +212,9 @@ export function NativeAB12L23({page}:{page:string}){
   {text(121,697,16,'b','naNw naBookSerif')}{text(140,697,560,'In dem Haus kann man nicht mehr wohnen. Nach dem Sturm war das Dach kaputt.','naNw naBookSerif')}
   {art('ex11b',128,714,87,18)}{field('86-11-b',223,719,505,'11 b','naF86b')}{text(728,718,10,'.')}
   {text(121,735,16,'c','naNw naBookSerif')}{text(139,735,480,'Ella kommt heute nicht mit in die Disco. Sie hat morgen eine Prüfung.','naNw naBookSerif')}
-  {field('86-11-c',130,751,598,'11 c')}{text(729,753,10,'.')}
+  {field('86-11-c',130,757,598,'11 c','naF86cd')}{text(729,753,10,'.')}
   {text(121,775,16,'d','naNw naBookSerif')}{text(139,775,560,'Mit dem Urlaub hatten wir wirklich Glück. Das Wetter war ein Traum.','naNw naBookSerif')}
-  {field('86-11-d',130,790,598,'11 d')}{text(729,793,10,'.')}
+  {field('86-11-d',130,796,598,'11 d','naF86cd')}{text(729,793,10,'.')}
   {check('86-11',620,816,{'86-11-b':'In dem Haus kann man nicht mehr wohnen, denn nach dem Sturm war das Dach kaputt|In dem Haus kann man nicht mehr wohnen denn nach dem Sturm war das Dach kaputt','86-11-c':'Ella kommt heute nicht in die Disco, denn sie hat morgen eine Prüfung|Ella kommt heute nicht mit in die Disco, denn sie hat morgen eine Prüfung','86-11-d':'Mit dem Urlaub hatten wir wirklich Glück, denn das Wetter war ein Traum'})}
   {kb(59,851,'KB 5')}
   {title('12',88,843,640,'Verbinden Sie.','naRB naNw')}
