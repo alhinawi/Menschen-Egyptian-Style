@@ -26,11 +26,17 @@ function speakCurrent(){return speak(current?.selectionParts?current.selectionPa
 // Chain: real recording -> /api/tts (both come back as audioPath) -> browser
 // speech synthesis -> error toast. A playback failure on any URL falls through
 // to the browser voice; the toast only shows when even that is unavailable.
-function playFailed(){if(!speakCurrent())meaningStore.update({pendingHidden:false,pending:'التسجيل مشتغلش. اضغط اسمع النطق عشان تجرّب تاني.'})}
-function play(){activeAudio.pause();ttsStop();
- if(current?.selectionParts){const parts=current.selectionParts;if(parts.every((p: any)=>p.audio?.length)){audioQueue=parts.flatMap((p: any)=>p.audio||[]);queueAt=0;activeAudio.src=audioQueue[0];activeAudio.play().catch(playFailed);return}if(speak(parts.map((p: any)=>p.text).join(' ')))return;audioQueue=parts.flatMap((p: any)=>p.audio||[]);if(!audioQueue.length)return;queueAt=0;activeAudio.src=audioQueue[0];activeAudio.play().catch(playFailed);return}
+let playGen=0;
+// Exclusive chain: original recording -> /api/tts -> browser voice -> toast.
+// A failure only falls through when it is the LATEST playback request and it
+// really failed - an AbortError means a newer press superseded this one (the
+// new playback is already in charge), and NotAllowedError means the browser
+// blocked autoplay (ask the user to press the button, don't stack voices).
+function playFailed(err: any,gen: number){if(gen!==playGen)return;if(err&&(err.name==='AbortError'||err.name==='NotAllowedError'))return;if(!speakCurrent())meaningStore.update({pendingHidden:false,pending:'التسجيل مشتغلش. اضغط اسمع النطق عشان تجرّب تاني.'})}
+function play(){activeAudio.pause();ttsStop();const gen=++playGen;
+ if(current?.selectionParts){const parts=current.selectionParts;if(parts.every((p: any)=>p.audio?.length)){audioQueue=parts.flatMap((p: any)=>p.audio||[]);queueAt=0;activeAudio.src=audioQueue[0];activeAudio.play().catch((e: any)=>playFailed(e,gen));return}if(speak(parts.map((p: any)=>p.text).join(' ')))return;audioQueue=parts.flatMap((p: any)=>p.audio||[]);if(!audioQueue.length)return;queueAt=0;activeAudio.src=audioQueue[0];activeAudio.play().catch((e: any)=>playFailed(e,gen));return}
  if(!audioPath){speakCurrent();return}
- audioQueue=[audioPath];queueAt=0;activeAudio.src=audioQueue[0];activeAudio.play().catch(playFailed)}
+ audioQueue=[audioPath];queueAt=0;activeAudio.src=audioQueue[0];activeAudio.play().catch((e: any)=>playFailed(e,gen))}
 let translationVersion=0;
 function refresh(autoplay=false){
  const version=++translationVersion;const missing:{text:string;index:number}[]=[];
