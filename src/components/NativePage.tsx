@@ -3,6 +3,7 @@ import {PageImage} from './PageImage';
 import {usePageReset} from '../exercises/usePageReset';
 import {useLayoutEffect,useRef,useState} from 'react';
 import {createPortal} from 'react-dom';
+import {DESKTOP,localClipUrl,youtubeId} from '../desktop';
 import type {ScanData,ScanWord,ScanBox} from '../scan-data/schema';
 import {LineMatching} from '../exercises/LineMatching';
 import './native-page.css';
@@ -36,5 +37,5 @@ function NativePageContent({d}:{d:NativeData}){
  {d.audio.map((a,i)=><button key={a.id} data-audio-src={a.src} className="nativeAudioMarker" style={{left:Math.max(10,a.x-8),top:a.y+i*4,width:70,height:28}} aria-label={a.label} onClick={()=>{const player=audio.current;if(player){player.src=a.src;void player.play()}}}>▶ {a.src.match(/track(\d+)/)?.[1]}</button>)}
  {d.videos?.map(v=><button key={v.id} className="nativeAudioMarker" style={{left:v.x,top:v.y,width:82,height:28}} aria-label={v.label} onClick={()=>{V(v);video.current?.showModal()}}>▶ {v.id}</button>)}
  {!d.hidePageNumber&&<span className="nativePageNumber">{d.page}</span>}
- </div><div className="nativePageTools">{d.audio.length>0&&<audio ref={audio} src={d.audio[0]?.src} controls/>}<span>Antworten werden gespeichert</span></div>{createPortal(<dialog ref={video} onClose={()=>V(null)} style={{maxWidth:'90vw',width:720,border:'1px solid #bca66b',padding:16,borderRadius:8}}><button onClick={()=>video.current?.close()} style={{float:'right'}}>Schließen ✕</button>{activeVideo&&<><h3>{activeVideo.label}</h3><iframe title={activeVideo.label} src={activeVideo.embed+'?autoplay=1'} style={{width:'100%',aspectRatio:'16/9',border:0}} allow="autoplay; accelerometer; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/><a href={activeVideo.url} target="_blank" rel="noopener noreferrer">Auf YouTube ansehen ↗</a></>}</dialog>,document.body)}</div>
+ </div><div className="nativePageTools">{d.audio.length>0&&<audio ref={audio} src={d.audio[0]?.src} controls/>}<span>Antworten werden gespeichert</span></div>{createPortal(<dialog ref={video} onClose={()=>V(null)} style={{maxWidth:'90vw',width:720,border:'1px solid #bca66b',padding:16,borderRadius:8}}><button onClick={()=>video.current?.close()} style={{float:'right'}}>Schließen ✕</button>{activeVideo&&<><h3>{activeVideo.label}</h3>{DESKTOP&&youtubeId(activeVideo.embed)?<video title={activeVideo.label} src={localClipUrl(youtubeId(activeVideo.embed)!)} controls autoPlay playsInline style={{width:'100%',aspectRatio:'16/9',border:0,background:'#000'}}/>:<iframe title={activeVideo.label} src={activeVideo.embed+'?autoplay=1'} style={{width:'100%',aspectRatio:'16/9',border:0}} allow="autoplay; accelerometer; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>}{!DESKTOP&&<a href={activeVideo.url} target="_blank" rel="noopener noreferrer">Auf YouTube ansehen ↗</a>}</>}</dialog>,document.body)}</div>
 }

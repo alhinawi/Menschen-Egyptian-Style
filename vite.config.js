@@ -117,7 +117,7 @@ function countFiles(dir) {
   return n;
 }
 
-export default defineConfig({define:{__MENSCHEN_TTS__:JSON.stringify(ON_CLOUDFLARE_PAGES)},plugins:[react(),{name:'book-static-assets',
+export default defineConfig({define:{__MENSCHEN_TTS__:JSON.stringify(ON_CLOUDFLARE_PAGES),__MENSCHEN_DESKTOP__:JSON.stringify(!!process.env.MENSCHEN_DESKTOP)},plugins:[react(),{name:'book-static-assets',
  buildStart(){
   // The manifest mirrors the closeBundle copy exactly: the frontend resolves a
   // pronunciation to its recorded file when the manifest lists it, else /api/tts.
