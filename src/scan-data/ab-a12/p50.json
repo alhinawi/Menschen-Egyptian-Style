@@ -1248,6 +1248,50 @@
    "y": 945,
    "w": 343,
    "h": 22
+  },
+  {
+   "id": "p50-f10a",
+   "group": "s5",
+   "kind": "text",
+   "label": "s5 Lücke 1",
+   "answer": "will",
+   "x": 174,
+   "y": 624,
+   "w": 101,
+   "h": 24
+  },
+  {
+   "id": "p50-f10b",
+   "group": "s5",
+   "kind": "text",
+   "label": "s5 Lücke 2",
+   "answer": "lernen",
+   "x": 538,
+   "y": 624,
+   "w": 163,
+   "h": 24
+  },
+  {
+   "id": "p50-f11a",
+   "group": "s5",
+   "kind": "text",
+   "label": "s5 Lücke 3",
+   "answer": "will",
+   "x": 174,
+   "y": 648,
+   "w": 101,
+   "h": 24
+  },
+  {
+   "id": "p50-f11b",
+   "group": "s5",
+   "kind": "text",
+   "label": "s5 Lücke 4",
+   "answer": "werden",
+   "x": 545,
+   "y": 648,
+   "w": 162,
+   "h": 24
   }
  ],
  "audio": [],
@@ -1267,6 +1311,10 @@
   {
    "id": "s4",
    "label": "etwas entschuldigen"
+  },
+  {
+   "id": "s5",
+   "label": "Wünsche äußern / über Pläne sprechen"
   },
   {
    "id": "s6",
