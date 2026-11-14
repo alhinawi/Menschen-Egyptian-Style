@@ -652,6 +652,8 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 /* Keep the related translation controls together on narrow readers. */
 .controls .translationControls{display:inline-flex;align-items:center;justify-content:center;gap:8px;flex-wrap:nowrap}
+/* Themes are disabled: the empty slot must not leave a gap in the toolbar. */
+.controls [data-react-theme-slot]{display:none!important}
 @media(max-width:550px){
   .controls{gap:6px;padding:6px 5px}
   .controls button,.controls select{min-height:44px;box-sizing:border-box}
