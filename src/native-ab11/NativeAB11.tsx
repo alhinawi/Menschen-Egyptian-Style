@@ -14,7 +14,7 @@ export function NativeAB11({page}:{page:string}){
  usePageReset(page,'native-ab11-'+page,()=>{S({});G({});A('')});
  const set=(id:string,value:string)=>{const n={...v,[id]:value};S(n);localStorage.setItem(key,JSON.stringify(n));const group=page==='7'&&id.startsWith('6-')?'6a':page==='9'&&id.startsWith('1-')?(id.startsWith('1-q')?'1a':'1b'):page==='11'&&(id.startsWith('wort-')||id.startsWith('bild-'))?'1':page==='11'&&id==='eigene-woerter'?'2':id.startsWith('mark-10-')?'10':id.split('-')[0];G(prev=>{const next={...prev};delete next[group];return next})};
  const text=(x:number,y:number,w:number,s:string,cls='')=><div className={'nabText '+cls} style={{left:x,top:y,width:w}}><Words text={s}/></div>;
- const scanText=(x:number,y:number,w:number,s:string)=>{const ctx=document.createElement('canvas').getContext('2d');if(ctx)ctx.font=`${page==='8'?18:19}px KbDroid`;const actual=ctx?.measureText(s).width||w;return <div className="nabText" style={{left:x,top:y,width:actual+10,transform:`scaleX(${w/actual})`,transformOrigin:'left top'}}><Words text={s}/></div>};
+ const scanText=(x:number,y:number,w:number,s:string)=>{const ctx=document.createElement('canvas').getContext('2d');if(ctx)ctx.font=`${page==='8'||page==='9'?18:19}px KbDroid`;const actual=ctx?.measureText(s).width||w;return <div className="nabText" style={{left:x,top:y,width:actual+10,transform:`scaleX(${w/actual})`,transformOrigin:'left top'}}><Words text={s}/></div>};
  const img=(name:string,x:number,y:number,w:number,h:number)=><PageImage className="nabArt" src={`assets/native-ab11/p${page}-${name}.png`} alt={'Originalabbildung '+name} style={{left:x,top:y,width:w,height:h}}/>;
  const field=(id:string,x:number,y:number,w:number,label:string,cls='')=>{const measure=document.createElement('canvas').getContext('2d');if(measure)measure.font="22px 'Times New Roman'";const measured=measure?.measureText(v[id]||'').width||0;const fontSize=measured>w-6?Math.max(12,22*(w-6)/measured):22;const mark=(v['mark-'+id]||'').split(':').map(Number);let gradient='none';if(id.startsWith('10-')&&mark.length===2){const ctx=document.createElement('canvas').getContext('2d');if(ctx){ctx.font="22px 'Times New Roman'";const start=3+ctx.measureText((v[id]||'').slice(0,mark[0])).width,end=3+ctx.measureText((v[id]||'').slice(0,mark[1])).width;gradient=`linear-gradient(to right, transparent ${start}px, #ffea54 ${start}px, #ffea54 ${end}px, transparent ${end}px)`}}return <input className={'nabInput '+cls+(id.startsWith('10-')?' nabEnding':'')} style={{left:x,top:y,width:w,'--ending-mark':gradient,'--native-input-size':fontSize+'px'} as React.CSSProperties} aria-label={label} title={id.startsWith('10-')?'Endung markieren: Buchstaben im Eingabefeld auswählen':undefined} data-native-field={id} value={v[id]||''} onChange={e=>set(id,e.target.value)} onSelect={e=>{if(id.startsWith('10-')){const t=e.currentTarget;if(t.selectionStart!==t.selectionEnd)set('mark-'+id,t.selectionStart+':'+t.selectionEnd)}}}/>};
  const open=(id:string,x:number,y:number,w:number,h:number,label:string)=><textarea className="nabInput nabOpen" style={{left:x,top:y,width:w,height:h,'--native-open-height':h+'px'} as React.CSSProperties} aria-label={label} data-native-field={id} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
@@ -26,7 +26,7 @@ export function NativeAB11({page}:{page:string}){
  const save=(id:string,x:number,y:number)=>null;
  const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="nabCheck" style={{left:x,top:y}} data-native-task={id}><CheckButton answers={answers} onClick={()=>G({...graded,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const ink=(x:number,y:number,w:number,s:string)=><div className="nabText nabInk" style={{left:x,top:y,width:w}}><Words text={s}/></div>;
- const title=(n:string,y:number,s:string,kb:string,side='Strukturen')=><>{text(page==='7'?115:page==='8'?110:130,y+7,40,kb,'nabKB')}<div className="nabNumber" style={{left:page==='7'?158:page==='8'?154:170,top:y}}>{n}</div>{text(page==='7'?202:page==='8'?198:212,y,810,s,'nabTitle')}<div className="nabSide" style={{left:141,top:y+45}}>{side}</div></>;
+ const title=(n:string,y:number,s:string,kb:string,side='Strukturen')=><>{text(page==='7'?115:page==='8'||page==='9'?110:130,y+7,40,kb,'nabKB')}<div className="nabNumber" style={{left:page==='7'?158:page==='8'||page==='9'?154:170,top:y}}>{n}</div>{text(page==='7'?202:page==='8'||page==='9'?198:212,y,810,s,'nabTitle')}<div className="nabSide" style={{left:141,top:y+45}}>{side}</div></>;
  const head=(s:string)=><>{text(160,142,750,s,'nabHeader')}<div className="nabHeaderLine"/></>;
  return <div className="nativeAB11" ref={host} data-native-ab11-page={page}><div className="nabCanvas" style={{transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='6'&&<>
@@ -129,34 +129,34 @@ export function NativeAB11({page}:{page:string}){
  {page==='9'&&<>
  {head('TRAINING: HÖREN')}<div className="nabModule">1</div>
  {title('1',220,'Wie heißt du?','','')}
- {text(170,261,800,'a  Ergänzen Sie in den Fragen: wie, woher oder wer?','nabTitle')}
- {text(202,302,45,'1  ■')}{ink(252,294,60,'Wie')}{text(315,302,180,'heißt du?')}{text(225,330,25,'▲','nabGreen')}{ink(250,320,365,'Mein Name ist Miguel Munoz.')}{text(575,330,30,'/')}{text(596,330,25,'▲','nabGreen')}{field('1-answer-1',620,327,329,'1b Antwort 1')}
- {text(202,365,51,'2  ■')}{field('1-q2',250,359,105,'1a Frage 2')}{text(363,365,230,'kommst du?')}{text(225,393,25,'▲','nabGreen')}{field('1-answer-2a',250,390,320,'1b Antwort 2 kurz')}{text(575,393,30,'/')}{text(596,393,25,'▲','nabGreen')}{field('1-answer-2b',620,390,329,'1b Antwort 2 lang')}
- {text(202,428,100,'3  ■  Und')}{field('1-q3',291,422,108,'1a Frage 3')}{text(404,428,205,'ist das?')}{text(225,456,25,'▲','nabGreen')}{field('1-answer-3a',250,453,320,'1b Antwort 3 Name')}{text(575,456,30,'/')}{text(596,456,25,'▲','nabGreen')}{field('1-answer-3b',620,453,329,'1b Antwort 3 voller Name')}
- {text(202,491,225,'4  ■  Hallo, Frau Burgos.')}{field('1-q4',429,485,105,'1a Frage 4')}{text(540,491,190,'geht es Ihnen?')}{text(225,519,25,'▲','nabGreen')}{field('1-answer-4a',250,516,320,'1b Antwort 4 lang')}{text(575,519,30,'/')}{text(596,519,25,'▲','nabGreen')}{field('1-answer-4b',620,516,329,'1b Antwort 4 kurz')}
- {check('1a',202,552,{'1-q2':'Woher','1-q3':'wer','1-q4':'Wie'})}
- {text(170,591,820,'b  Ordnen Sie die passenden Antworten in a zu.','nabTitle')}
- {text(202,631,800,'Das ist Frau Burgos. | Gut, danke. Und Ihnen? | Aus Spanien. | Das ist Anna Burgos. | Ich heiße\nMiguel. | Ich komme aus Spanien. | Mein Name ist Miguel Munoz. | Danke, gut.','nabBank')}
- {check('1b',202,688,{'1-answer-1':'Ich heiße Miguel','1-answer-2a':'Aus Spanien','1-answer-2b':'Ich komme aus Spanien','1-answer-3a':'Das ist Frau Burgos','1-answer-3b':'Das ist Anna Burgos','1-answer-4a':'Gut, danke. Und Ihnen','1-answer-4b':'Danke, gut'})}
- {title('2',736,'Hören Sie und kreuzen Sie an.','','')}{listen('03',88,733,'2')}{listen('04',88,755,'2')}{listen('05',88,777,'2')}
- {text(202,778,650,'a  Woher kommt Frau Talipa?')}
- {choice('2-a','oesterreich',222,815,'2a Österreich')}{img('austria',257,810,48,32)}{text(312,815,200,'aus Österreich')}{choice('2-a','spanien',446,815,'2a Spanien')}{img('spain',480,810,48,32)}{text(535,815,180,'aus Spanien')}{choice('2-a','russland',663,815,'2a Russland')}{img('russia',697,810,48,32)}{text(751,815,190,'aus Russland')}
- {text(202,861,650,'b  Wie geht es Laura?')}{choice('2-b','sehrgut',222,899,'2b Sehr gut')}{img('verygood',255,891,60,27)}{text(320,899,170,'Sehr gut.')}{choice('2-b','gut',446,899,'2b Gut')}{img('good',480,891,28,27)}{text(515,899,100,'Gut.')}{choice('2-b','esgeht',663,899,'2b Es geht')}{img('okay',696,891,28,27)}{text(731,899,140,'Es geht.')}
- {text(202,944,650,'c  Welcher Name passt?')}{choice('2-c','alioscha',222,982,'2c Alioscha')}{text(256,982,180,'Alioscha')}{choice('2-c','aliosha',446,982,'2c Aliosha')}{text(480,982,180,'Aliosha')}{choice('2-c','aljoscha',663,982,'2c Aljoscha')}{text(697,982,180,'Aljoscha')}
- {text(835,868,168,'Zuerst lesen -\ndann hören','nabTipTitle')}{text(835,919,168,'1. Lesen Sie zuerst\n   die Fragen.\n2. Hören Sie dann.','nabTip')}
- {check('2',202,1021,{'2-a':'oesterreich','2-b':'esgeht','2-c':'aljoscha'})}
- {text(160,1080,800,'TRAINING: AUSSPRACHE','nabHeader')}{text(570,1090,400,'Satzmelodie','nabExample')}
- {title('1',1140,'Hören Sie und sprechen Sie nach.','','')}{listen('06',95,1144,'1')}
- {text(202,1183,435,'■  Wie heißt du? ↘\n▲  Ich heiße Paco. ↘  Und wer bist du? ↗\n■  Ich bin Nicole. ↘')}{save('au1',202,1245)}
- {title('2',1300,'Ergänzen Sie die Regel: ↗ oder ↘.','','')}
- <div className="nabRegelBox" style={{left:200,top:1334,width:505,height:131}}><div className="nabRegelLabel">REGEL</div></div>
- {text(230,1344,360,'Wie ist die Satzmelodie ...?','nabBold')}{text(230,1377,400,'bei Aussagen (Ich heiße Paco.):')}{arrow('au2-a',575,1373,'2 Aussagen')}{text(230,1407,420,'bei W-Fragen (Wie heißt du?):')}{arrow('au2-w',575,1403,'2 W-Fragen')}{text(230,1437,430,'bei Rückfragen (Und wer bist du?):')}{arrow('au2-r',623,1433,'2 Rückfragen')}
- {check('au2',202,1476,{'au2-a':'down','au2-w':'down','au2-r':'up'})}
- <div className="nabNumber" style={{left:610,top:1140}}>3</div>{text(652,1140,390,'Hören Sie und ergänzen Sie ↘ oder ↗.\nSprechen Sie dann mit Ihrer Partnerin /\nIhrem Partner.','nabTitle')}{listen('07',565,1144,'1')}
- {text(652,1235,190,'■  Hallo.')}{arrow('au3-hallo',760,1232,'3 Hallo')}
- {text(652,1267,175,'▲  Hallo, Paco.')}{arrow('au3-paco',814,1264,'3 Hallo Paco')}{text(860,1267,170,'Wie geht es dir?')}{arrow('au3-dir',1007,1264,'3 Wie geht es dir')}
- {text(652,1299,105,'■  Danke,')}{arrow('au3-danke',752,1296,'3 Danke')}{text(800,1299,50,'gut.')}{arrow('au3-gut',846,1296,'3 gut')}{text(893,1299,90,'Und dir?')}{arrow('au3-unddir',986,1296,'3 Und dir')}
- {check('au3',880,1343,{'au3-hallo':'down','au3-paco':'down','au3-dir':'down','au3-danke':'down','au3-gut':'down','au3-unddir':'up'})}
+ {text(166,257,800,'a  Ergänzen Sie in den Fragen: wie, woher oder wer?','nabTitle')}
+ {text(198,298,45,'1  ■')}{img('ink-wie',240,296,37,27)}{text(277,298,180,'heißt du?')}{text(220,326,25,'▲','nabGreen')}{img('ink-name',240,322,224,27)}<span className="nabP9Rule" style={{left:240,top:339,width:330}}/>{text(571,325,30,'/')}{text(593,325,25,'▲','nabGreen')}{field('1-answer-1',617,320,328,'1b Antwort 1')}
+ {text(198,360,51,'2  ■')}{field('1-q2',250,359,105,'1a Frage 2')}{text(363,360,230,'kommst du?')}{text(220,388,25,'▲','nabGreen')}{field('1-answer-2a',244,383,329,'1b Antwort 2 kurz')}{text(571,388,30,'/')}{text(593,388,25,'▲','nabGreen')}{field('1-answer-2b',617,383,328,'1b Antwort 2 lang')}
+ {text(198,422,100,'3  ■  Und')}{field('1-q3',285,422,114,'1a Frage 3')}{text(404,422,205,'ist das?')}{text(220,451,25,'▲','nabGreen')}{field('1-answer-3a',244,446,329,'1b Antwort 3 Name')}{text(571,451,30,'/')}{text(593,451,25,'▲','nabGreen')}{field('1-answer-3b',617,446,328,'1b Antwort 3 voller Name')}
+ {text(198,485,225,'4  ■  Hallo, Frau Burgos.')}{field('1-q4',415,485,116,'1a Frage 4')}{text(535,485,190,'geht es Ihnen?')}{text(220,514,25,'▲','nabGreen')}{field('1-answer-4a',244,510,329,'1b Antwort 4 lang')}{text(571,514,30,'/')}{text(593,514,25,'▲','nabGreen')}{field('1-answer-4b',617,510,328,'1b Antwort 4 kurz')}
+ {check('1a',1008,548,{'1-q2':'Woher','1-q3':'wer','1-q4':'Wie'})}
+ {text(166,561,820,'b  Ordnen Sie die passenden Antworten in a zu.','nabTitle')}
+ {text(202,597,740,'Das ist Frau Burgos. | Gut, danke. Und Ihnen? | Aus Spanien. | Das ist Anna Burgos. | Ich heiße','nabBank nabP9BankFirst')}{text(202,622,630,'Miguel. | Ich komme aus Spanien. | Mein Name ist Miguel Munoz. | Danke, gut.','nabBank nabP9BankSecond')}
+ {check('1b',1008,651,{'1-answer-1':'Ich heiße Miguel','1-answer-2a':'Aus Spanien','1-answer-2b':'Ich komme aus Spanien','1-answer-3a':'Das ist Frau Burgos','1-answer-3b':'Das ist Anna Burgos','1-answer-4a':'Gut, danke. Und Ihnen','1-answer-4b':'Danke, gut'})}
+ {title('2',682,'Hören Sie und kreuzen Sie an.','','')}{listen('03',88,679,'2')}{listen('04',88,701,'2')}{listen('05',88,723,'2')}
+ {text(198,724,650,'a  Woher kommt Frau Talipa?')}
+ {choice('2-a','oesterreich',222,761,'2a Österreich')}{img('austria',257,756,48,32)}{text(312,761,200,'aus Österreich')}{choice('2-a','spanien',446,761,'2a Spanien')}{img('spain',480,756,48,32)}{text(535,761,180,'aus Spanien')}{choice('2-a','russland',663,761,'2a Russland')}{img('russia',697,756,48,32)}{text(751,761,190,'aus Russland')}
+ {text(198,800,650,'b  Wie geht es Laura?')}{choice('2-b','sehrgut',222,840,'2b Sehr gut')}{img('verygood',251,831,60,27)}{text(312,838,170,'Sehr gut.')}{choice('2-b','gut',446,840,'2b Gut')}{img('good',475,831,28,27)}{text(507,838,100,'Gut.')}{choice('2-b','esgeht',663,840,'2b Es geht')}{img('okay',686,831,28,27)}{text(720,838,140,'Es geht.')}
+ {text(198,879,650,'c  Welcher Name passt?')}{choice('2-c','alioscha',222,918,'2c Alioscha')}{text(250,918,180,'Alioscha')}{choice('2-c','aliosha',446,918,'2c Aliosha')}{text(475,918,180,'Aliosha')}{choice('2-c','aljoscha',663,918,'2c Aljoscha')}{text(687,918,180,'Aljoscha')}
+ {text(806,825,189,'Zuerst lesen -\ndann hören','nabTipTitle')}{text(806,868,189,'1. Lesen Sie zuerst\n   die Fragen.\n2. Hören Sie dann.','nabTip')}
+ {check('2',1008,947,{'2-a':'oesterreich','2-b':'esgeht','2-c':'aljoscha'})}
+ <span className="nabP9HeaderRule" style={{left:645,top:1027,width:350}}/>{text(160,1008,800,'TRAINING: AUSSPRACHE','nabHeader')}{text(544,1013,400,'Satzmelodie','nabExample')}
+ {title('1',1068,'Hören Sie und sprechen Sie nach.','','')}{listen('06',95,1072,'1')}
+ {text(202,1111,435,'■  Wie heißt du? ↘\n▲  Ich heiße Paco. ↘  Und wer bist du? ↗\n■  Ich bin Nicole. ↘')}{save('au1',202,1173)}
+ {title('2',1228,'Ergänzen Sie die Regel: ↗ oder ↘.','','')}
+ <div className="nabRegelBox" style={{left:200,top:1262,width:355,height:105}}><div className="nabRegelLabel">REGEL</div></div>
+ {text(230,1276,330,'Wie ist die Satzmelodie ...?','nabBold')}{scanText(230,1302,272,'bei Aussagen (Ich heiße Paco.):')}{arrow('au2-a',508,1302,'2 Aussagen')}{scanText(230,1327,262,'bei W-Fragen (Wie heißt du?):')}{arrow('au2-w',498,1327,'2 W-Fragen')}{scanText(230,1352,304,'bei Rückfragen (Und wer bist du?):')}{arrow('au2-r',540,1352,'2 Rückfragen')}
+ {check('au2',1008,1390,{'au2-a':'down','au2-w':'down','au2-r':'up'})}
+ <div className="nabNumber" style={{left:610,top:1068}}>3</div>{text(652,1068,390,'Hören Sie und ergänzen Sie ↘ oder ↗.\nSprechen Sie dann mit Ihrer Partnerin /\nIhrem Partner.','nabTitle')}{listen('07',565,1072,'1')}
+ {text(648,1167,25,'■')}{scanText(672,1167,51,'Hallo.')}{arrow('au3-hallo',728,1165,'3 Hallo')}
+ {text(648,1193,25,'▲')}{scanText(672,1193,100,'Hallo, Paco.')}{arrow('au3-paco',778,1191,'3 Hallo Paco')}{scanText(820,1193,137,'Wie geht es dir?')}{arrow('au3-dir',962,1191,'3 Wie geht es dir')}
+ {text(648,1219,25,'■')}{scanText(672,1219,60,'Danke,')}{arrow('au3-danke',737,1217,'3 Danke')}{scanText(775,1219,35,'gut.')}{arrow('au3-gut',816,1217,'3 gut')}{scanText(855,1219,77,'Und dir?')}{arrow('au3-unddir',938,1217,'3 Und dir')}
+ {check('au3',1008,1260,{'au3-hallo':'down','au3-paco':'down','au3-dir':'down','au3-danke':'down','au3-gut':'down','au3-unddir':'up'})}
  </>}
  {page==='10'&&<>
  {head('TEST')}
@@ -222,6 +222,6 @@ export function NativeAB11({page}:{page:string}){
  {title('2',1180,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','','')}
  {open('eigene-woerter',202,1226,715,170,'2 Weitere Wörter und Notizen')}{save('2',202,1410)}
  </>}
- {page==='7'?<>{text(929,1440,130,'sieben  |  7','nabFooter')}{text(1030,1440,80,'Modul 1','nabFooter nabP7Module')}</>:<>{text(Number(page)%2?991:page==='6'||page==='8'?64:50,page==='6'?1443:page==='8'?1455:1485,80,'Modul 1','nabFooter')}{text(Number(page)%2?920:page==='6'?143:page==='8'?147:130,page==='6'?1443:page==='8'?1455:1485,500,page+'  |  '+({'6':'sechs','7':'sieben','8':'acht','9':'neun','10':'zehn','11':'elf'} as Record<string,string>)[page],'nabFooter')}</>}
+ {page==='9'?<>{text(936,1424,100,'neun  |  9','nabFooter')}{text(1034,1424,70,'Modul 1','nabFooter nabP9Module')}</>:page==='7'?<>{text(929,1440,130,'sieben  |  7','nabFooter')}{text(1030,1440,80,'Modul 1','nabFooter nabP7Module')}</>:<>{text(Number(page)%2?991:page==='6'||page==='8'?64:50,page==='6'?1443:page==='8'?1455:1485,80,'Modul 1','nabFooter')}{text(Number(page)%2?920:page==='6'?143:page==='8'?147:130,page==='6'?1443:page==='8'?1455:1485,500,page+'  |  '+({'6':'sechs','7':'sieben','8':'acht','9':'neun','10':'zehn','11':'elf'} as Record<string,string>)[page],'nabFooter')}</>}
  </div><audio ref={audio} className="nabPlayer" controls hidden aria-label="Originalaudio Arbeitsbuch"/></div>
 }
