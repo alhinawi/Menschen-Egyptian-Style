@@ -196,34 +196,39 @@ export function NativeAB11Module1({page}:{page:string}){
  {['b','c','d','e','f'].map((id,i)=>{const offset=[1,2,2,4,1][i],length=[13,14,9,7,16][i],x=297-offset*26,y=1062+i*23.5;return <div className="mP24CrossRow" style={{left:x-26,top:y}} key={id}><span>{id}</span>{Array.from({length},(_,j)=><ChoiceInput key={j} aria-label={'u3-'+id+' Buchstabe '+(j+1)} data-crossword={'u3-'+id+'-'+j} maxLength={1} className={j===offset?'solution':''} value={(v['u3-'+id]||'')[j]?.trim()||''} onChange={e=>{const a=(v['u3-'+id]||' '.repeat(length)).padEnd(length,' ').split('');a[j]=e.target.value.toLocaleUpperCase('de');set('u3-'+id,a.join(''));if(e.target.value)(e.currentTarget.nextElementSibling as HTMLInputElement)?.focus()}}/>)}</div>})}{C('u3',841,1163,{...answers('u3'),'u3-solution':'LEHRER'})}
  <div className="mP24Footer"><em>Modul 1</em><span>24&nbsp;&nbsp; | &nbsp;&nbsp;vierundzwanzig</span></div>
  </>})()}
- {page==='25'&&<>
- {head('WIEDERHOLUNGSSTATION: GRAMMATIK')}
- {title('1',206,'Schreiben Sie Gespräche.')}
- {txt(168,242,60,'a  ▪ ')}{ink('sergio',243,227,152,47,'Ist Sergio Ingenieur?')}{txt(520,242,300,'(Sergio – ist – Ingenieur)')}
- {txt(188,270,37,'▴ Ja,')}{f('u1-a',231,268,255)}{txt(520,270,330,'(arbeitet – er – Siemens – bei)')}
- {['b','c','d','e'].map((s,i)=>{const y=[307,363,419,503][i];return <span key={s}>{txt(168,y,26,s+'  ▪')}{f('u1-'+s,205,y-2,280)}{txt(488,y,16,'?')}{txt(520,y,330,['(er – kommt – woher)','(wohnt – wo – er)','(Geschwister – er – wie viele – hat)','(Sprachen – spricht – welche – er)'][i])}{i!==2?txt(188,y+26,330,['▴ Aus Mexiko.','▴ In Berlin.','','▴ Spanisch und Deutsch.'][i]):<>{txt(188,y+26,15,'▴')}{f('u1-d2',205,y+24,280)}{txt(520,y+26,310,'(eine Schwester – hat – er)')}</>}</span>})}{check('u1',168,565)}
- {title('2',608,'Mein Name ist …','',132,260)}{txt(143,643,252,'a  Suchen Sie noch 9 Verben.','mTitle')}{txt(407,608,441,'b  Ergänzen Sie die Verben aus a in der richtigen Form.','mTitle')}
- {grid.map((row,r)=>row.split('').map((letter,c)=>{const marked=Object.entries(gridWords).some(([word,a])=>{if(word!=='SEIN'&&!v['found-'+word])return false;const [r1,c1,r2,c2]=a,dr=Math.sign(r2-r1),dc=Math.sign(c2-c1);return Array.from({length:word.length},(_,i)=>r1+dr*i===r&&c1+dc*i===c).some(Boolean)});return <button key={r+'-'+c} className={'mGridCell '+(marked?'marked':'')+(start?.[0]===r&&start?.[1]===c?' active':'')} style={{left:174+c*24,top:Y(681+r*24)}} aria-label={'Wortgitter '+r+' '+c+' '+letter} onClick={()=>{if(!start){ST([r,c]);return}const entry=Object.entries(gridWords).find(([,a])=>(a[0]===start[0]&&a[1]===start[1]&&a[2]===r&&a[3]===c)||(a[2]===start[0]&&a[3]===start[1]&&a[0]===r&&a[1]===c));if(entry)set('found-'+entry[0],v['found-'+entry[0]]?'':'1');ST(null)}}>{letter}</button>}))}
- {txt(174,929,160,'ß = ss','mSmall')}{rule('u2a',168,958,()=>Object.keys(gridWords).every(w=>w==='SEIN'||v['found-'+w]==='1'))}
- <div className="mText mSmall" style={{left:434,top:Y(649),width:318}}><Words s="▪ Hallo, mein Name "/>{inkI('ist',19,'ist')}<Words s=" Lena und wie"/></div>{f('u2b-1',754,646,77)}{txt(834,649,24,'du?','mSmall')}
- {txt(434,677,409,'▴ Hallo Lena, ich bin Jorgo, und das ist mein Bruder Wassili.','mSmall')}
- {txt(434,705,61,'▪ Woher','mSmall')}{f('u2b-2',499,702,113)}{txt(617,705,53,'ihr?','mSmall')}{txt(434,733,220,'▴ Aus Griechenland.','mSmall')}
- {txt(434,761,89,'▪ Und was','mSmall')}{f('u2b-3',527,758,95)}{txt(627,761,230,'ihr hier in Österreich?','mSmall')}
- {txt(434,789,37,'▴ Ich','mSmall')}{f('u2b-4',476,786,109)}{txt(590,789,260,'an der Universität in Wien und','mSmall')}
- {txt(454,817,51,'Wassili','mSmall')}{f('u2b-5',510,814,121)}{txt(636,817,210,'als Programmierer. Und du?','mSmall')}
- {txt(434,845,35,'▪ Ich','mSmall')}{f('u2b-6',474,842,90)}{txt(569,845,140,'in Hamburg und','mSmall')}{f('u2b-7',713,842,86)}{txt(804,845,52,'einen','mSmall')}
- <div className="mText mSmall" style={{left:454,top:Y(873),width:400}}><Words s="Job als Kellnerin. Wie viele Jahre "/>{inkI('wohnst',20,'wohnst')}<Words s=" du schon in"/></div>{txt(454,897,160,'Österreich?','mSmall')}{txt(434,925,200,'▴ Zwei Jahre.','mSmall')}
- {txt(434,953,207,'▪ Was! Nur zwei Jahre? Du','mSmall')}{f('u2b-8',647,950,109)}{txt(762,953,96,'sehr gut Deutsch!','mSmall')}{txt(434,981,160,'▴ Danke!','mSmall')}{check('u2b',434,1009)}
- {title('3',1050,'Lesen Sie die Informationen zu Isabel und schreiben Sie Sätze mit nicht.')}
- {txt(168,1083,238,'STECKBRIEF','mBank')}{txt(175,1111,237,'Name: \nAdresse: \nFamilienstand: \nBeruf: \nHerkunft: ','mSmall')}{inkC('sb-isabel',218,Y(1111)+1,48,20,'Isabel')}{inkC('sb-adresse',231,Y(1111)+13,221,34,'Veilchenweg 37, Oberhausen')}{inkC('sb-single',267,Y(1111)+31,53,33,'Single')}{inkC('sb-sekretaerin',217,Y(1111)+49,94,35,'Sekretärin')}{inkC('sb-schweiz',237,Y(1111)+72,78,21,'Schweiz')}
- <div className="mText mSmall" style={{left:434,top:Y(1086),width:405}}><Words s="a  Köln wohnen: "/>{inkI('isabel-satz',20,'Isabel wohnt nicht in Köln.')}</div>
- {['als Krankenschwester arbeiten:','verheiratet sein:','aus Österreich kommen:'].map((s,i)=><span key={s}>{txt(434,1114+i*40,410,String.fromCharCode(98+i)+'  '+s,'mSmall')}{f('u3-'+String.fromCharCode(98+i),[637,545,596][i],1112+i*40,[233,325,274][i])}</span>)}
- {check('u3',434,1252)}
- {title('4',1296,'Was ist richtig? Markieren Sie.')}{art('ferdinand',779,1320,70,86)}{art('elena',735,1450,73,80)}
- <div className="mParagraph" style={{left:179,top:Y(1332),width:578}}>Das ist Ferdinand. Er ist {inlineChoice(1,['mein','meine'])} {inlineChoice(2,['Kollege','Kollegin'])}. Er ist auch {inlineChoice(3,['Journalist','Journalistin'])} von Beruf. Wir {inlineChoice(4,['arbeiten','arbeite'])} jetzt {inlineChoice(5,['als','bei'])} MEDIA.COM in Hamburg. Ferdinand {inlineChoice(6,['wohne','wohnt'])} allein, aber er {inlineChoice(7,['hast','hat'])} viele Freunde.</div>
- <div className="mParagraph" style={{left:179,top:Y(1445),width:533}}>Das ist {inlineChoice(8,['mein','meine'])} {inlineChoice(9,['Chef','Chefin'])}. Sie {inlineChoice(10,['heiße','heißt'])} Elena Goldoni. Sie kommt {inlineChoice(11,['in','aus'])} Italien. Aber sie {inlineChoice(12,['lebt','lebst'])} vierzig Jahre {inlineChoice(13,['bei','in'])} Deutschland. Sie {inlineChoice(14,['spreche','spricht'])} perfekt Deutsch und Italienisch.</div>
- {check('u4',168,1553,Object.fromEntries(['mein','Kollege','Journalist','arbeiten','bei','wohnt','hat','meine','Chefin','heißt','aus','lebt','in','spricht'].map((a,i)=>['u4-'+(i+1),a])))}
- </>}
+ {page==='25'&&(()=>{
+ const txt=(x:number,y:number,w:number,s:string,cls='')=><div className={'mText '+cls} style={{left:x,top:y,width:w}}><Words s={s}/></div>;
+ const f=(id:string,x:number,y:number,w:number)=>{const ctx=document.createElement('canvas').getContext('2d');if(ctx)ctx.font='15px KbDroid';const size=Math.max(9,Math.min(15,15*(w-5)/(ctx?.measureText(v[id]||'').width||1)));return <ChoiceInput className="mField" data-native-field={id} aria-label={id} style={{left:x,top:y,width:w,fontSize:size}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>};
+ const art=(n:string,x:number,y:number,w:number,h:number)=><PageImage className="mArt" alt={'Originalabbildung '+n} src={'assets/native-ab11/p25-'+n+'.png'} style={{left:x,top:y,width:w,height:h}}/>;
+ const title=(n:string,y:number,s:string)=><><div className="mNumber red" style={{left:135,top:y}}>{n}</div>{txt(170,y+1,700,s,'mTitle mP25TaskTitle')}</>;
+ const check=(id:string,x:number,y:number,expected=answers(id))=><div className="mCheck" data-native-task={id} style={{left:x,top:y}}><CheckButton onClick={()=>G({...graded,[id]:Object.entries(expected).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}/><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ return <>{txt(132,130,720,'WIEDERHOLUNGSSTATION: GRAMMATIK','mHeader')}<div className="mP25Module"/>
+ {title('1',204,'Schreiben Sie Gespräche.')}
+ {txt(168,237,60,'a  ▪ ')}{art('sergio',204,219,127,39)}{txt(520,236,300,'(Sergio - ist - Ingenieur)')}
+ {txt(188,259,37,'▴ Ja,')}{f('u1-a',228,252,255)}{txt(484,259,8,'.')}{txt(520,257,330,'(arbeitet - er - Siemens - bei)')}
+ {['b','c','d','e'].map((s,i)=>{const y=[290,344,397,450][i];return <span key={s}>{txt(168,y,26,s+'  ▪')}{f('u1-'+s,205,y-7,274)}{txt(480,y-2,16,'?')}{txt(520,y-2,330,['(er - kommt - woher)','(wohnt - wo - er)','(Geschwister - er - wie viele - hat)','(Sprachen - spricht - welche - er)'][i])}{i!==2?txt(188,y+22,330,['▴ Aus Mexiko.','▴ In Berlin.','','▴ Spanisch und Deutsch.'][i]):<>{txt(188,y+22,15,'▴')}{f('u1-d2',205,y+15,274)}{txt(480,y+22,10,'.')}{txt(520,y+20,310,'(eine Schwester - hat - er)')}</>}</span>})}{check('u1',842,470)}
+ {title('2',511,'Mein Name ist …')}{txt(143,545,20,'a','mLetter')}{txt(169,545,250,'Suchen Sie noch 9 Verben.','mTitle')}{txt(407,511,20,'b','mLetter')}{txt(433,511,420,'Ergänzen Sie die Verben aus a in der richtigen Form.','mTitle')}
+ {grid.map((row,r)=>row.split('').map((letter,c)=>{const marked=Object.entries(gridWords).some(([word,a])=>{if(word!=='SEIN'&&!v['found-'+word])return false;const [r1,c1,r2,c2]=a,dr=Math.sign(r2-r1),dc=Math.sign(c2-c1);return Array.from({length:word.length},(_,i)=>r1+dr*i===r&&c1+dc*i===c).some(Boolean)});return <button key={r+'-'+c} className={'mGridCell '+(marked?'marked':'')+(start?.[0]===r&&start?.[1]===c?' active':'')} style={{left:169+c*25.8,top:574+r*21.4}} aria-label={'Wortgitter '+r+' '+c+' '+letter} onClick={()=>{if(!start){ST([r,c]);return}const entry=Object.entries(gridWords).find(([,a])=>(a[0]===start[0]&&a[1]===start[1]&&a[2]===r&&a[3]===c)||(a[2]===start[0]&&a[3]===start[1]&&a[0]===r&&a[1]===c));if(entry&&entry[0]!=='SEIN')set('found-'+entry[0],v['found-'+entry[0]]?'':'1');ST(null)}}>{letter}</button>}))}
+ {txt(174,794,160,'ß = ss','mTiny')}
+ <div className="mCheck" data-native-task="u2a" style={{left:392,top:792}}><CheckButton onClick={()=>G({...graded,u2a:Object.keys(gridWords).every(w=>w==='SEIN'||v['found-'+w]==='1')})}/><output aria-live="polite">{'u2a' in graded?(graded.u2a?'✓ Richtig!':'Noch einmal'):''}</output></div>
+ <div className="mText" style={{left:434,top:545,width:318}}><Words s="▪ Hallo, mein Name "/>{inkI('ist',19,'ist')}<Words s=" Lena und wie"/></div>{f('u2b-1',709,538,95)}{txt(808,545,30,'du?')}
+ {txt(434,566,424,'▴ Hallo Lena, ich bin Jorgo, und das ist mein Bruder Wassili.')}
+ {txt(434,587,68,'▪ Woher')}{f('u2b-2',504,580,96)}{txt(604,587,53,'ihr?')}{txt(434,608,220,'▴ Aus Griechenland.')}
+ {txt(434,629,84,'▪ Und was')}{f('u2b-3',520,622,93)}{txt(618,629,230,'ihr hier in Österreich?')}
+ {txt(434,650,40,'▴ Ich')}{f('u2b-4',480,643,128)}{txt(613,650,245,'an der Universität in Wien und')}
+ {txt(454,671,51,'Wassili')}{f('u2b-5',509,664,116)}{txt(632,671,225,'als Programmierer. Und du?')}
+ {txt(434,692,40,'▪ Ich')}{f('u2b-6',479,685,99)}{txt(582,692,124,'in Hamburg und')}{f('u2b-7',704,685,85)}{txt(793,692,52,'einen')}
+ <div className="mText" style={{left:454,top:713,width:400}}><Words s="Job als Kellnerin. Wie viele Jahre "/>{inkI('wohnst',20,'wohnst')}<Words s=" du schon in"/></div>{txt(454,734,160,'Österreich?')}{txt(434,755,200,'▴ Zwei Jahre.')}
+ {txt(434,776,195,'▪ Was! Nur zwei Jahre? Du')}{f('u2b-8',633,769,110)}{txt(748,776,124,'sehr gut Deutsch!')}{txt(434,797,160,'▴ Danke!')}{check('u2b',842,795)}
+ {title('3',838,'Lesen Sie die Informationen zu Isabel und schreiben Sie Sätze mit nicht.')}{art('steckbrief',159,866,247,132)}
+ <div className="mText" style={{left:434,top:895,width:405}}><Words s="a  Köln wohnen: "/>{inkI('isabel-satz',20,'Isabel wohnt nicht in Köln.')}</div>
+ {['als Krankenschwester arbeiten:','verheiratet sein:','aus Österreich kommen:'].map((s,i)=><span key={s}>{txt(434,916+i*21,410,String.fromCharCode(98+i)+'  '+s)}{f('u3-'+String.fromCharCode(98+i),[684,576,631][i],909+i*21,[161,269,214][i])}</span>)}{check('u3',842,975)}
+ {title('4',1029,'Was ist richtig? Markieren Sie.')}{art('ferdinand',779,1024,69,83)}{art('elena',707,1119,72,82)}
+ <div className="mParagraph" style={{left:179,top:1057,width:596}}>Das ist Ferdinand. Er ist <span className="mP25Example">mein</span>/meine {inlineChoice(2,['Kollege','Kollegin'])}. Er ist auch {inlineChoice(3,['Journalist','Journalistin'])} von Beruf. Wir {inlineChoice(4,['arbeiten','arbeite'])} jetzt {inlineChoice(5,['als','bei'])} MEDIA.COM in Hamburg. Ferdinand {inlineChoice(6,['wohne','wohnt'])} allein, aber er {inlineChoice(7,['hast','hat'])} viele Freunde.</div>
+ <div className="mParagraph" style={{left:179,top:1133,width:526}}>Das ist {inlineChoice(8,['mein','meine'])} {inlineChoice(9,['Chef','Chefin'])}. Sie {inlineChoice(10,['heiße','heißt'])} Elena Goldoni. Sie kommt {inlineChoice(11,['in','aus'])} Italien. Aber sie {inlineChoice(12,['lebt','lebst'])} vierzig Jahre {inlineChoice(13,['bei','in'])} Deutschland. Sie {inlineChoice(14,['spreche','spricht'])} perfekt Deutsch und Italienisch.</div>
+ {check('u4',842,1178,Object.fromEntries(['Kollege','Journalist','arbeiten','bei','wohnt','hat','meine','Chefin','heißt','aus','lebt','in','spricht'].map((a,i)=>['u4-'+(i+2),a])))}
+ <div className="mP25Footer">fünfundzwanzig&nbsp;&nbsp; | &nbsp;&nbsp;25 <em>Modul 1</em></div>
+ </>})()}
  {page==='26'&&<>
  {head('SELBSTEINSCHÄTZUNG')}{inkC('dkich',508,129,200,37,'Das kann ich!')}{txt(138,205,320,'Ich kann jetzt …','mBlue')}{lights(188)}
  {txt(138,234,603,'… andere begrüßen und mich verabschieden:  L01','mTitle')}{confidence('s1',224)}{txt(159,261,90,'Hallo/Guten')}{f('s1-1',252,259,447,'1 eigene Begrüßung')}
