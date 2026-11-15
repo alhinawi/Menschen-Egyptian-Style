@@ -16,7 +16,7 @@ export function NativeAB11({page}:{page:string}){
  const text=(x:number,y:number,w:number,s:string,cls='')=><div className={'nabText '+cls} style={{left:x,top:y,width:w}}><Words text={s}/></div>;
  const scanText=(x:number,y:number,w:number,s:string)=>{const ctx=document.createElement('canvas').getContext('2d');if(ctx)ctx.font=`${page==='8'||page==='9'?18:19}px KbDroid`;const actual=ctx?.measureText(s).width||w;return <div className="nabText" style={{left:x,top:y,width:actual+10,transform:`scaleX(${w/actual})`,transformOrigin:'left top'}}><Words text={s}/></div>};
  const img=(name:string,x:number,y:number,w:number,h:number)=><PageImage className="nabArt" src={`assets/native-ab11/p${page}-${name}.png`} alt={'Originalabbildung '+name} style={{left:x,top:y,width:w,height:h}}/>;
- const field=(id:string,x:number,y:number,w:number,label:string,cls='')=>{const measure=document.createElement('canvas').getContext('2d');if(measure)measure.font="22px 'Times New Roman'";const measured=measure?.measureText(v[id]||'').width||0;const fontSize=measured>w-6?Math.max(12,22*(w-6)/measured):22;const mark=(v['mark-'+id]||'').split(':').map(Number);let gradient='none';if(id.startsWith('10-')&&mark.length===2){const ctx=document.createElement('canvas').getContext('2d');if(ctx){ctx.font="22px 'Times New Roman'";const start=3+ctx.measureText((v[id]||'').slice(0,mark[0])).width,end=3+ctx.measureText((v[id]||'').slice(0,mark[1])).width;gradient=`linear-gradient(to right, transparent ${start}px, #ffea54 ${start}px, #ffea54 ${end}px, transparent ${end}px)`}}return <input className={'nabInput '+cls+(id.startsWith('10-')?' nabEnding':'')} style={{left:x,top:y,width:w,'--ending-mark':gradient,'--native-input-size':fontSize+'px'} as React.CSSProperties} aria-label={label} title={id.startsWith('10-')?'Endung markieren: Buchstaben im Eingabefeld auswählen':undefined} data-native-field={id} value={v[id]||''} onChange={e=>set(id,e.target.value)} onSelect={e=>{if(id.startsWith('10-')){const t=e.currentTarget;if(t.selectionStart!==t.selectionEnd)set('mark-'+id,t.selectionStart+':'+t.selectionEnd)}}}/>};
+ const field=(id:string,x:number,y:number,w:number,label:string,cls='')=>{const options=page==='10'&&id.startsWith('1-g')?['Guten Morgen','Guten Abend','Gute Nacht','Auf Wiedersehen']:page==='10'&&/^5-[2-5]a$/.test(id)?['Hallo, ich heiße Oborowski.','Ich komme aus Italien, und du?','Sind Sie Frau Rode?','Wie geht’s?']:page==='10'&&/^5-[2-5]b$/.test(id)?['Wie bitte? Obolanski?','Aus der Türkei.','Nein, mein Name ist Koch.','Sehr gut. Und dir?']:null;if(options)return <select className="nabInput nabSelect" style={{left:x,top:y,width:w}} aria-label={label} data-native-field={id} value={v[id]||''} onChange={e=>set(id,e.target.value)}><option value=""></option>{options.map(o=><option key={o} value={o}>{o}</option>)}</select>;const measure=document.createElement('canvas').getContext('2d');if(measure)measure.font="22px 'Times New Roman'";const measured=measure?.measureText(v[id]||'').width||0;const fontSize=measured>w-6?Math.max(12,22*(w-6)/measured):22;const mark=(v['mark-'+id]||'').split(':').map(Number);let gradient='none';if(id.startsWith('10-')&&mark.length===2){const ctx=document.createElement('canvas').getContext('2d');if(ctx){ctx.font="22px 'Times New Roman'";const start=3+ctx.measureText((v[id]||'').slice(0,mark[0])).width,end=3+ctx.measureText((v[id]||'').slice(0,mark[1])).width;gradient=`linear-gradient(to right, transparent ${start}px, #ffea54 ${start}px, #ffea54 ${end}px, transparent ${end}px)`}}return <input className={'nabInput '+cls+(id.startsWith('10-')?' nabEnding':'')} style={{left:x,top:y,width:w,'--ending-mark':gradient,'--native-input-size':fontSize+'px'} as React.CSSProperties} aria-label={label} title={id.startsWith('10-')?'Endung markieren: Buchstaben im Eingabefeld auswählen':undefined} data-native-field={id} value={v[id]||''} onChange={e=>set(id,e.target.value)} onSelect={e=>{if(id.startsWith('10-')){const t=e.currentTarget;if(t.selectionStart!==t.selectionEnd)set('mark-'+id,t.selectionStart+':'+t.selectionEnd)}}}/>};
  const open=(id:string,x:number,y:number,w:number,h:number,label:string)=><textarea className="nabInput nabOpen" style={{left:x,top:y,width:w,height:h,'--native-open-height':h+'px'} as React.CSSProperties} aria-label={label} data-native-field={id} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
  const choice=(id:string,value:string,x:number,y:number,label:string)=><input type="radio" className="nabRadio" data-value={value} style={{left:x,top:y}} name={key+'-'+id} aria-label={label} checked={v[id]===value} onChange={()=>set(id,value)}/>;
  const arrow=(id:string,x:number,y:number,label:string)=><button className="nabArrow" style={{left:x,top:y}} aria-label={'Satzmelodie '+label} data-native-arrow={id} onClick={()=>set(id,v[id]==='down'?'up':'down')}>{v[id]==='down'?'↘':v[id]==='up'?'↗':'_'}</button>;
@@ -26,7 +26,7 @@ export function NativeAB11({page}:{page:string}){
  const save=(id:string,x:number,y:number)=>null;
  const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="nabCheck" style={{left:x,top:y}} data-native-task={id}><CheckButton answers={answers} onClick={()=>G({...graded,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const ink=(x:number,y:number,w:number,s:string)=><div className="nabText nabInk" style={{left:x,top:y,width:w}}><Words text={s}/></div>;
- const title=(n:string,y:number,s:string,kb:string,side='Strukturen')=><>{text(page==='7'?115:page==='8'||page==='9'?110:130,y+7,40,kb,'nabKB')}<div className="nabNumber" style={{left:page==='7'?158:page==='8'||page==='9'?154:170,top:y}}>{n}</div>{text(page==='7'?202:page==='8'||page==='9'?198:212,y,810,s,'nabTitle')}<div className="nabSide" style={{left:141,top:y+45}}>{side}</div></>;
+ const title=(n:string,y:number,s:string,kb:string,side='Strukturen')=><>{text(page==='7'?115:page==='8'||page==='9'?110:130,y+7,40,kb,'nabKB')}<div className="nabNumber" style={{left:page==='7'?158:page==='8'||page==='9'?154:page==='10'?148:170,top:y}}>{n}</div>{text(page==='7'?202:page==='8'||page==='9'?198:page==='10'?188:212,y,810,s,'nabTitle')}<div className="nabSide" style={{left:141,top:y+45}}>{side}</div></>;
  const head=(s:string)=><>{text(160,142,750,s,'nabHeader')}<div className="nabHeaderLine"/></>;
  return <div className="nativeAB11" ref={host} data-native-ab11-page={page}><div className="nabCanvas" style={{transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='6'&&<>
@@ -160,49 +160,49 @@ export function NativeAB11({page}:{page:string}){
  </>}
  {page==='10'&&<>
  {head('TEST')}
- {title('1',220,'Was passt zusammen? Ordnen Sie zu.','','Wörter')}
- {text(202,264,810,'Abend | Morgen | Auf | Guten | Nacht | Gute | Guten | Wiedersehen | Tag | Guten','nabBank')}
- {text(202,307,200,'Guten Tag','nabExample')}{field('1-g1',409,307,210,'1 Gruß 1')}{field('1-g2',637,307,195,'1 Gruß 2')}{field('1-g3',202,337,195,'1 Gruß 3')}{field('1-g4',409,337,210,'1 Gruß 4')}
- {checkRule('1',202,365,()=>{const a=[1,2,3,4].map(n=>norm(v['1-g'+n]||''));return new Set(a).size===4&&['Guten Morgen','Guten Abend','Gute Nacht','Auf Wiedersehen'].every(s=>a.includes(norm(s)))},{'1-g1':'Guten Morgen|Guten Abend|Gute Nacht|Auf Wiedersehen','1-g2':'Guten Morgen|Guten Abend|Gute Nacht|Auf Wiedersehen','1-g3':'Guten Morgen|Guten Abend|Gute Nacht|Auf Wiedersehen','1-g4':'Guten Morgen|Guten Abend|Gute Nacht|Auf Wiedersehen'})}
- {text(910,355,140,'/ 4 Punkte','nabPoints')}{title('2',395,'Was ist richtig? Kreuzen Sie an.','','Wörter')}
- {text(202,431,140,'■  Hallo, wer')}
- <input className="nabRadio" type="radio" style={{left:337,top:429}} checked disabled readOnly aria-label="2 Beispiel bist"/>{text(370,431,65,'bist')}
- <input className="nabRadio" type="radio" style={{left:437,top:429}} disabled aria-label="2 Beispiel kommst"/>{text(470,431,120,'kommst du?')}
- {text(202,458,60,'▲  Ich')}{choice('2-1a','bin',273,455,'2 Ich bin')}{text(307,458,45,'bin')}{choice('2-1a','komme',359,455,'2 Ich komme')}{text(393,458,185,'komme  Max.')}
- {text(202,484,125,'■  Und der')}{choice('2-1b','Familienname',325,481,'2 Familienname')}{text(359,484,200,'Familienname')}{choice('2-1b','Vorname',225,507,'2 Vorname')}{text(259,510,200,'Vorname?')}{text(202,538,280,'▲  Wachter.')}
- {choice('2-2a','Woher',602,429,'2 Woher')}{text(636,431,85,'Woher')}{choice('2-2a','Wie',727,429,'2 Wie')}{text(761,431,55,'Wie')}{text(825,431,180,'kommst du?')}
- {choice('2-2b','Aus',602,455,'2 Aus')}{text(636,458,50,'Aus')}{choice('2-2b','Aus dem',689,455,'2 Aus dem')}{text(723,458,114,'Aus dem')}{text(840,458,180,'Österreich.')}
- {text(575,484,82,'■  Und')}{choice('2-2c','was',663,481,'2 was')}{text(697,484,47,'was')}{choice('2-2c','wie',750,481,'2 wie')}{text(785,484,235,'wie  geht es dir?')}
- {choice('2-2d','Nein',602,507,'2 Nein')}{text(636,510,72,'Nein.')}{choice('2-2d','Sehr gut',710,507,'2 Sehr gut')}{text(744,510,200,'Sehr gut!')}
- {check('2',202,567,{'2-1a':'bin','2-1b':'Familienname','2-2a':'Woher','2-2b':'Aus','2-2c':'wie','2-2d':'Sehr gut'})}
- {text(910,572,140,'/ 6 Punkte','nabPoints')}{title('3',605,'Ergänzen Sie die Verben in der richtigen Form.','','Strukturen')}
- {text(202,635,390,'a  ■  Wie heißt du? (heißen)')}
- {text(226,659,55,'▲  Ich')}{field('3-a1',285,656,110,'3a Ich Marie')}{text(401,659,180,'Marie. (heißen)')}
- {text(226,683,135,'■  Und woher')}{field('3-a2',368,680,100,'3a kommst du')}{text(474,683,100,'du?')}{text(250,707,180,'(kommen)')}{text(226,731,265,'▲  Aus der Schweiz.')}
- {text(202,765,130,'b  ■  Und wie')}{field('3-b',340,762,100,'3b heißen Sie')}{text(446,765,190,'Sie? (heißen)')}{text(226,789,300,'▲  Juana Weinrich.')}
- {text(635,635,100,'▲  Woher')}{field('3-c1',740,632,96,'3 Woher kommen Sie')}{text(843,635,210,'Sie? (kommen)')}
- {text(635,659,55,'■  Ich')}{field('3-c2',697,656,101,'3 Ich komme')}{text(805,659,240,'aus Deutschland.')}{text(660,683,190,'(kommen)')}
- {text(607,715,102,'c  ▲  Wer')}{field('3-d1',715,712,115,'3c bist du')}{text(837,715,190,'du? (sein)')}
- {text(635,739,55,'■  Ich')}{field('3-d2',697,736,107,'3c bin Paco')}{text(811,739,200,'Paco. (sein)')}
- {text(607,771,105,'d  ▲  Wer')}{field('3-e1',718,768,110,'3d ist das')}{text(834,771,190,'das? (sein)')}
- {text(635,795,191,'■  Frau Delgado. Sie')}{field('3-e2',835,792,115,'3d kommt aus Spanien')}{text(660,821,330,'aus Spanien. (kommen)')}
- {check('3',202,854,{'3-a1':'heiße','3-a2':'kommst','3-b':'heißen','3-c1':'kommen','3-c2':'komme','3-d1':'bist','3-d2':'bin','3-e1':'ist','3-e2':'kommt'})}
- {text(910,857,140,'/ 9 Punkte','nabPoints')}{title('4',893,'Ergänzen Sie.','','Kommunikation')}
- {text(202,934,390,'a  ■  Hallo Susan, wie geht es dir?','nabExample')}
- {text(225,966,28,'▲','nabGreen')}{field('4-response1',255,963,211,'4a Antwort 1')}{img('good',480,963,28,27)}
- {text(250,995,50,'Und')}{field('4-dir',298,992,130,'4a dir')}{text(435,995,100,'? (du)')}
- {text(225,1024,28,'■')}{field('4-response2',255,1021,230,'4a Antwort 2')}{img('verygood',879,1021,60,27)}
- {text(607,934,395,'b  ■  Guten Morgen Herr Bux,')}{field('4-question',660,963,267,'4b Frage')}{text(932,966,25,'?')}
- {text(635,995,28,'▲','nabGreen')}{field('4-response3',665,992,283,'4b Antwort 1')}{img('bad',957,991,28,27)}
- {text(660,1021,50,'Und')}{field('4-Ihnen',711,1018,149,'4b Ihnen')}{text(867,1021,100,'? (Sie)')}
- {text(635,1053,28,'■')}{field('4-response4',665,1050,200,'4b Antwort 2')}{img('verygood',879,1050,60,27)}
- {check('4',202,1085,{'4-dir':'dir','4-Ihnen':'Ihnen'})}{text(400,1092,600,'Prüfen: dir / Ihnen. Freie Antworten werden gespeichert.','nabSmall')}
- {text(910,1088,140,'/ 7 Punkte','nabPoints')}{title('5',1126,'Ordnen Sie und schreiben Sie Gespräche.','','Kommunikation')}
- {text(202,1167,810,'Hallo, ich heiße Oborowski. | Ich komme aus Italien, und du? | Ich heiße Johanna. |\nSind Sie Frau Rode? | Aus der Türkei. | Wie bitte? Obolanski? | Wie geht’s? | Nein,\nmein Name ist Koch. | Sehr gut. Und dir? | Ich bin Elisa, und du?','nabBank')}
- {text(202,1250,245,'■  Ich bin Elisa, und du?\n▲  Ich heiße Johanna.','nabExample')}
- {[2,3,4,5].map((n,i)=>{const x=i%2?750:445,y=i<2?1248:1315;return <div key={n}>{text(x-25,y,25,'■')}{field('5-'+n+'a',x,y-3,255,'5 Gespräch '+n+' erste Zeile')}{text(x-25,y+29,25,'▲','nabGreen')}{field('5-'+n+'b',x,y+26,255,'5 Gespräch '+n+' zweite Zeile')}</div>})}
- {checkRule('5',202,1379,()=>{const pairs=[['Hallo, ich heiße Oborowski.','Wie bitte? Obolanski?'],['Ich komme aus Italien, und du?','Aus der Türkei.'],['Sind Sie Frau Rode?','Nein, mein Name ist Koch.'],['Wie geht’s?','Sehr gut. Und dir?']].map(p=>p.map(norm).join('~'));const actual=[2,3,4,5].map(n=>[v['5-'+n+'a']||'',v['5-'+n+'b']||''].map(norm).join('~'));return new Set(actual).size===4&&actual.every(p=>pairs.includes(p))},{'5-2a':'Hallo, ich heiße Oborowski.|Ich komme aus Italien, und du?|Sind Sie Frau Rode?|Wie geht’s?','5-3a':'Hallo, ich heiße Oborowski.|Ich komme aus Italien, und du?|Sind Sie Frau Rode?|Wie geht’s?','5-4a':'Hallo, ich heiße Oborowski.|Ich komme aus Italien, und du?|Sind Sie Frau Rode?|Wie geht’s?','5-5a':'Hallo, ich heiße Oborowski.|Ich komme aus Italien, und du?|Sind Sie Frau Rode?|Wie geht’s?','5-2b':'Wie bitte? Obolanski?|Aus der Türkei.|Nein, mein Name ist Koch.|Sehr gut. Und dir?','5-3b':'Wie bitte? Obolanski?|Aus der Türkei.|Nein, mein Name ist Koch.|Sehr gut. Und dir?','5-4b':'Wie bitte? Obolanski?|Aus der Türkei.|Nein, mein Name ist Koch.|Sehr gut. Und dir?','5-5b':'Wie bitte? Obolanski?|Aus der Türkei.|Nein, mein Name ist Koch.|Sehr gut. Und dir?'})}
- {text(910,1379,140,'/ 8 Punkte','nabPoints')}<div className="nabScore" style={{left:202,top:1409}}><b>Wörter</b><b>Strukturen</b><b>Kommunikation</b>{[['0-5 Punkte','0-4 Punkte','0-7 Punkte'],['6-7 Punkte','5-7 Punkte','8-12 Punkte'],['8-10 Punkte','8-9 Punkte','13-15 Punkte']].map((row,r)=>row.map((label,c)=><div key={r+'-'+c}><i style={{background:['#d71a13','#edce09','#2c9d27'][r]}}/>{label}</div>))}</div>{text(480,1485,420,'www.hueber.de/menschen/lernen','nabSmall')}
+ {title('1',232,'Was passt zusammen? Ordnen Sie zu.','','Wörter')}
+ {text(190,273,640,'Abend | Morgen | Auf | Guten | Nacht | Gute | Guten | Wiedersehen | Tag | Guten','nabBank')}
+ {img('ink-tag',182,311,84,30)}<span className="nabP10Rule" style={{left:190,top:331,width:202}}/>{field('1-g1',413,313,208,'1 Gruß 1')}{field('1-g2',638,313,196,'1 Gruß 2')}{field('1-g3',190,340,202,'1 Gruß 3')}{field('1-g4',413,340,208,'1 Gruß 4')}
+ {checkRule('1',202,355,()=>{const a=[1,2,3,4].map(n=>norm(v['1-g'+n]||''));return new Set(a).size===4&&['Guten Morgen','Guten Abend','Gute Nacht','Auf Wiedersehen'].every(s=>a.includes(norm(s)))},{'1-g1':'Guten Morgen|Guten Abend|Gute Nacht|Auf Wiedersehen','1-g2':'Guten Morgen|Guten Abend|Gute Nacht|Auf Wiedersehen','1-g3':'Guten Morgen|Guten Abend|Gute Nacht|Auf Wiedersehen','1-g4':'Guten Morgen|Guten Abend|Gute Nacht|Auf Wiedersehen'})}
+ {text(910,345,140,'/ 4 Punkte','nabPoints')}{title('2',385,'Was ist richtig? Kreuzen Sie an.','','Wörter')}
+ {text(190,422,25,'■')}{scanText(214,422,105,'Hallo, wer')}
+ {img('ink-x',328,422,18,26)}<input className="nabRadio" type="radio" style={{left:330,top:427}} checked disabled readOnly aria-label="2 Beispiel bist"/>{text(352,422,65,'bist')}
+ <input className="nabRadio" type="radio" style={{left:408,top:427}} disabled aria-label="2 Beispiel kommst"/>{scanText(432,422,123,'kommst    du?')}
+ {text(190,448,25,'▲')}{text(214,448,45,'Ich')}{choice('2-1a','bin',266,448,'2 Ich bin')}{text(292,448,45,'bin')}{choice('2-1a','komme',343,448,'2 Ich komme')}{text(369,448,200,'komme    Max.')}
+ {text(190,474,25,'■')}{text(214,474,96,'Und der')}{choice('2-1b','Familienname',308,474,'2 Familienname')}{text(334,474,200,'Familienname')}{choice('2-1b','Vorname',215,500,'2 Vorname')}{text(241,500,200,'Vorname?')}{text(190,528,280,'▲  Wachter.')}
+ {choice('2-2a','Woher',602,419,'2 Woher')}{text(636,421,85,'Woher')}{choice('2-2a','Wie',727,419,'2 Wie')}{text(761,421,55,'Wie')}{text(825,421,180,'kommst du?')}
+ {choice('2-2b','Aus',602,445,'2 Aus')}{text(636,448,50,'Aus')}{choice('2-2b','Aus dem',689,445,'2 Aus dem')}{text(723,448,114,'Aus dem')}{text(840,448,180,'Österreich.')}
+ {text(575,474,82,'■  Und')}{choice('2-2c','was',663,471,'2 was')}{text(697,474,47,'was')}{choice('2-2c','wie',750,471,'2 wie')}{text(785,474,235,'wie  geht es dir?')}
+ {choice('2-2d','Nein',602,497,'2 Nein')}{text(636,500,72,'Nein.')}{choice('2-2d','Sehr gut',710,497,'2 Sehr gut')}{text(744,500,200,'Sehr gut!')}
+ {check('2',202,557,{'2-1a':'bin','2-1b':'Familienname','2-2a':'Woher','2-2b':'Aus','2-2c':'wie','2-2d':'Sehr gut'})}
+ {text(910,543,140,'/ 6 Punkte','nabPoints')}{title('3',576,'Ergänzen Sie die Verben in der richtigen Form.','','Strukturen')}
+ {text(194,615,25,'a')}{text(216,615,25,'■')}{text(239,615,39,'Wie')}{img('ink-heisst',272,613,46,28)}{text(320,615,200,'du? (heißen)')}
+ {text(226,630,55,'▲  Ich')}{field('3-a1',285,627,110,'3a Ich Marie')}{text(401,630,180,'Marie. (heißen)')}
+ {text(226,654,135,'■  Und woher')}{field('3-a2',368,651,100,'3a kommst du')}{text(474,654,100,'du?')}{text(250,678,180,'(kommen)')}{text(226,702,265,'▲  Aus der Schweiz.')}
+ {text(202,736,130,'b  ■  Und wie')}{field('3-b',340,733,100,'3b heißen Sie')}{text(446,736,190,'Sie? (heißen)')}{text(226,760,300,'▲  Juana Weinrich.')}
+ {text(635,606,100,'▲  Woher')}{field('3-c1',740,603,96,'3 Woher kommen Sie')}{text(843,606,210,'Sie? (kommen)')}
+ {text(635,630,55,'■  Ich')}{field('3-c2',697,627,101,'3 Ich komme')}{text(805,630,240,'aus Deutschland.')}{text(660,654,190,'(kommen)')}
+ {text(607,686,102,'c  ▲  Wer')}{field('3-d1',715,683,115,'3c bist du')}{text(837,686,190,'du? (sein)')}
+ {text(635,710,55,'■  Ich')}{field('3-d2',697,707,107,'3c bin Paco')}{text(811,710,200,'Paco. (sein)')}
+ {text(607,742,105,'d  ▲  Wer')}{field('3-e1',718,739,110,'3d ist das')}{text(834,742,190,'das? (sein)')}
+ {text(635,766,191,'■  Frau Delgado. Sie')}{field('3-e2',835,763,115,'3d kommt aus Spanien')}{text(660,792,330,'aus Spanien. (kommen)')}
+ {check('3',202,825,{'3-a1':'heiße','3-a2':'kommst','3-b':'heißen','3-c1':'kommen','3-c2':'komme','3-d1':'bist','3-d2':'bin','3-e1':'ist','3-e2':'kommt'})}
+ {text(910,806,140,'/ 9 Punkte','nabPoints')}{title('4',842,'Ergänzen Sie.','','Kommunikation')}
+ {text(198,883,25,'a')}{text(220,883,25,'■')}{img('ink-susan',229,879,229,31)}
+ {text(220,909,25,'▲')}{field('4-response1',244,907,211,'4a Antwort 1')}{text(455,908,15,'.')}{img('good',463,902,28,27)}
+ {text(244,935,43,'Und')}{field('4-dir',287,933,132,'4a dir')}{text(419,935,100,'? (du)')}
+ {text(220,961,25,'■')}{field('4-response2',244,959,227,'4a Antwort 2')}{text(471,960,15,'.')}{img('good',481,952,28,27)}
+ {text(607,878,25,'b')}{text(636,878,25,'■')}{text(660,878,310,'Guten Morgen Herr Bux,')}{field('4-question',660,904,267,'4b Frage')}{text(927,904,25,'?')}
+ {text(636,930,25,'▲')}{field('4-response3',660,930,267,'4b Antwort 1')}{text(928,930,15,'.')}{img('bad',939,924,28,27)}
+ {text(660,956,44,'Und')}{field('4-Ihnen',704,956,135,'4b Ihnen')}{text(839,956,100,'? (Sie)')}
+ {text(636,982,25,'■')}{field('4-response4',660,982,172,'4b Antwort 2')}{text(833,982,15,'.')}{img('verygood',842,974,60,27)}
+ {check('4',202,1034,{'4-dir':'dir','4-Ihnen':'Ihnen'})}
+ {text(910,980,140,'/ 7 Punkte','nabPoints')}{title('5',1018,'Ordnen Sie und schreiben Sie Gespräche.','','Kommunikation')}
+ {text(202,1059,665,'Hallo, ich heiße Oborowski. | Ich komme aus Italien, und du? | Ich heiße Johanna. |\nSind Sie Frau Rode? | Aus der Türkei. | Wie bitte? Obolanski? | Wie geht’s? | Nein,\nmein Name ist Koch. | Sehr gut. Und dir? | Ich bin Elisa, und du?','nabBank')}
+ {text(201,1149,25,'■')}{img('ink-elisa',217,1143,163,28)}{text(201,1175,25,'▲')}{img('ink-johanna',218,1173,137,26)}
+ {[2,3,4,5].map((n,i)=>{const x=i%2?750:445,y=i<2?1140:1207;return <div key={n}>{text(x-25,y,25,'■')}{field('5-'+n+'a',x,y-3,255,'5 Gespräch '+n+' erste Zeile')}{text(x-25,y+29,25,'▲','nabGreen')}{field('5-'+n+'b',x,y+26,255,'5 Gespräch '+n+' zweite Zeile')}</div>})}
+ {checkRule('5',202,1271,()=>{const pairs=[['Hallo, ich heiße Oborowski.','Wie bitte? Obolanski?'],['Ich komme aus Italien, und du?','Aus der Türkei.'],['Sind Sie Frau Rode?','Nein, mein Name ist Koch.'],['Wie geht’s?','Sehr gut. Und dir?']].map(p=>p.map(norm).join('~'));const actual=[2,3,4,5].map(n=>[v['5-'+n+'a']||'',v['5-'+n+'b']||''].map(norm).join('~'));return new Set(actual).size===4&&actual.every(p=>pairs.includes(p))},{'5-2a':'Hallo, ich heiße Oborowski.|Ich komme aus Italien, und du?|Sind Sie Frau Rode?|Wie geht’s?','5-3a':'Hallo, ich heiße Oborowski.|Ich komme aus Italien, und du?|Sind Sie Frau Rode?|Wie geht’s?','5-4a':'Hallo, ich heiße Oborowski.|Ich komme aus Italien, und du?|Sind Sie Frau Rode?|Wie geht’s?','5-5a':'Hallo, ich heiße Oborowski.|Ich komme aus Italien, und du?|Sind Sie Frau Rode?|Wie geht’s?','5-2b':'Wie bitte? Obolanski?|Aus der Türkei.|Nein, mein Name ist Koch.|Sehr gut. Und dir?','5-3b':'Wie bitte? Obolanski?|Aus der Türkei.|Nein, mein Name ist Koch.|Sehr gut. Und dir?','5-4b':'Wie bitte? Obolanski?|Aus der Türkei.|Nein, mein Name ist Koch.|Sehr gut. Und dir?','5-5b':'Wie bitte? Obolanski?|Aus der Türkei.|Nein, mein Name ist Koch.|Sehr gut. Und dir?'})}
+ {text(910,1271,140,'/ 8 Punkte','nabPoints')}<div className="nabScore" style={{left:202,top:1285}}><b>Wörter</b><b>Strukturen</b><b>Kommunikation</b>{[['0-5 Punkte','0-4 Punkte','0-7 Punkte'],['6-7 Punkte','5-7 Punkte','8-12 Punkte'],['8-10 Punkte','8-9 Punkte','13-15 Punkte']].map((row,r)=>row.map((label,c)=><div key={r+'-'+c}><i style={{background:['#d71a13','#edce09','#2c9d27'][r]}}/>{label}</div>))}</div>{text(480,1419,420,'www.hueber.de/menschen/lernen','nabSmall')}
  </>}
  {page==='11'&&<>
  {head('LERNWORTSCHATZ')}<div className="nabModule">1</div>
@@ -222,6 +222,6 @@ export function NativeAB11({page}:{page:string}){
  {title('2',1180,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','','')}
  {open('eigene-woerter',202,1226,715,170,'2 Weitere Wörter und Notizen')}{save('2',202,1410)}
  </>}
- {page==='9'?<>{text(936,1424,100,'neun  |  9','nabFooter')}{text(1034,1424,70,'Modul 1','nabFooter nabP9Module')}</>:page==='7'?<>{text(929,1440,130,'sieben  |  7','nabFooter')}{text(1030,1440,80,'Modul 1','nabFooter nabP7Module')}</>:<>{text(Number(page)%2?991:page==='6'||page==='8'?64:50,page==='6'?1443:page==='8'?1455:1485,80,'Modul 1','nabFooter')}{text(Number(page)%2?920:page==='6'?143:page==='8'?147:130,page==='6'?1443:page==='8'?1455:1485,500,page+'  |  '+({'6':'sechs','7':'sieben','8':'acht','9':'neun','10':'zehn','11':'elf'} as Record<string,string>)[page],'nabFooter')}</>}
+ {page==='10'?<>{text(56,1442,70,'Modul 1','nabFooter nabP10Module')}{text(137,1442,170,'10  |  zehn','nabFooter')}</>:page==='9'?<>{text(936,1424,100,'neun  |  9','nabFooter')}{text(1034,1424,70,'Modul 1','nabFooter nabP9Module')}</>:page==='7'?<>{text(929,1440,130,'sieben  |  7','nabFooter')}{text(1030,1440,80,'Modul 1','nabFooter nabP7Module')}</>:<>{text(Number(page)%2?991:page==='6'||page==='8'?64:50,page==='6'?1443:page==='8'?1455:1485,80,'Modul 1','nabFooter')}{text(Number(page)%2?920:page==='6'?143:page==='8'?147:130,page==='6'?1443:page==='8'?1455:1485,500,page+'  |  '+({'6':'sechs','7':'sieben','8':'acht','9':'neun','10':'zehn','11':'elf'} as Record<string,string>)[page],'nabFooter')}</>}
  </div><audio ref={audio} className="nabPlayer" controls hidden aria-label="Originalaudio Arbeitsbuch"/></div>
 }
