@@ -12,7 +12,7 @@ const hasHttpSource = (a: HTMLAudioElement) => {
 export function installSeekableAudio() {
  const realPlay = HTMLMediaElement.prototype.play;
  HTMLMediaElement.prototype.play = function(this: HTMLMediaElement) {
-  if (this instanceof HTMLAudioElement && hasHttpSource(this)) {
+  if (this instanceof HTMLAudioElement && this.dataset.readerAudioRole!=='feedback' && hasHttpSource(this)) {
    // Start playback synchronously so the user's tap always produces sound.
    // The old flow awaited the range probe and the full blob download first,
    // which on a phone left the tap silent for seconds (looking dead) and let

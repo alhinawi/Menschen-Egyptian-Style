@@ -1,3 +1,4 @@
+import {prepareFeedbackAudio} from './audio-feedback-coordination';
 import successSound from '../assets/feedback/ok06_sparkle.mp3?url';
 import errorSound from '../assets/feedback/err04_double.mp3?url';
 import {getFeedbackVoices, subscribeFeedbackVoices} from './check-sound-preference';
@@ -21,6 +22,7 @@ function checkVoice(kind: 'wrong' | 'incomplete' | 'correct') {
  lastVoice[kind]=pick;
  try {
   voice??=new Audio();
+  prepareFeedbackAudio(voice);
   voice.pause();
   voice.src=pool[pick];
   voice.currentTime=0;
