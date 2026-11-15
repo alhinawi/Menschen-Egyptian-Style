@@ -26,6 +26,7 @@ export function useUiLanguage() {
 // are learning content and must never pass through this dictionary.
 export const UI_COPY: [string, string][] = [
  ['German','الألمانية'], ['German explanation is not available for this text yet.','الشرح الألماني للنص ده لسه مش جاهز.'],
+ ['Follow UI','لغة الواجهة'],
  ['Translation language','لغة الترجمة'], ['Follow interface language','نفس لغة الواجهة'], ['Arabic','العربية'], ['English','الإنجليزية'],
  ['English translation is not available for this text yet.','الترجمة الإنجليزية للنص ده لسه مش جاهزة.'],
  ['Account & settings','الحساب والإعدادات'], ['Settings','الإعدادات'], ['Account','الحساب'],
@@ -55,6 +56,7 @@ export const UI_COPY: [string, string][] = [
  ['Clear all answers and results on this page only?','تمسح كل الإجابات والنتايج في الصفحة دي بس؟'], ['Cancel','إلغاء'], ['Reset','امسح'],
  ['with','مع'], ['Interactive Edition','النسخة التفاعلية'], ['An interactive edition with','نسخة تفاعلية مع'], ['Open book ←','افتح الكتاب ←'],
  ['Tap any word to listen & explore','اضغط على أي كلمة عشان تسمعها وتعرف معناها'],
+ ['Interactive edition of the original book © Hueber Verlag','نسخة تفاعلية من الكتاب الأصلي © Hueber Verlag'],
  ['Original book © Hueber Verlag','الكتاب الأصلي © Hueber Verlag'], ['All rights belong to the original owners.','كل الحقوق لأصحاب الكتاب الأصلي.'],
  ['Contact and social links','التواصل وحسابات هناوي'], ['Audio player','مشغّل الصوت'], ['Playback time','وقت التشغيل'],
  ['Tap a word for its Egyptian Arabic meaning · Zoom in to read · Swipe to turn the page','اضغط على الكلمة لمعناها بالمصري · كبّر للقراءة · اسحب يمين أو شمال للتقليب'],

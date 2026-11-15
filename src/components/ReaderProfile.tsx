@@ -133,16 +133,20 @@ export function ReaderProfile() {
             </span>
             <span className="profileVoiceSwitch" data-on={voicesOn} aria-hidden="true"><span /></span>
           </button>
-          <div className="profileSection">{t('Language')}</div>
+          <div className="profileSection" id="interfaceLanguageLabel">{t('Language')}</div>
+          <div className="profileLanguageOptions" role="group" aria-labelledby="interfaceLanguageLabel">
           {(['ar', 'en', 'de'] as const).map(code => <button key={code} type="button" className="profileRow profileChoice profileLanguageChoice" lang={code} aria-pressed={language === code} onClick={() => setLanguage(code)}>
             <span>{code === 'ar' ? 'العربية' : code === 'de' ? 'Deutsch' : 'English'}</span>
             <span className="profileLanguageCheck" aria-hidden="true">{language === code ? '✓' : ''}</span>
           </button>)}
-          <div className="profileSection">{t('Translation language')}</div>
-          {(['auto','ar','en','de'] as const).map(code => <button key={code} type="button" className="profileRow profileChoice profileTranslationChoice" aria-pressed={choice === code} onClick={() => setTranslationLanguage(code)}>
-            <span>{t(code === 'auto' ? 'Follow interface language' : code === 'ar' ? 'Arabic' : code === 'de' ? 'German' : 'English')}</span>
+          </div>
+          <div className="profileSection" id="translationLanguageLabel">{t('Translation language')}</div>
+          <div className="profileLanguageOptions profileTranslationOptions" role="group" aria-labelledby="translationLanguageLabel">
+          {(['auto','ar','en','de'] as const).map(code => <button key={code} type="button" className="profileRow profileChoice profileTranslationChoice" title={code === 'auto' ? t('Follow interface language') : undefined} aria-label={code === 'auto' ? t('Follow interface language') : undefined} aria-pressed={choice === code} onClick={() => setTranslationLanguage(code)}>
+            <span>{t(code === 'auto' ? 'Follow UI' : code === 'ar' ? 'Arabic' : code === 'de' ? 'German' : 'English')}</span>
             <span className="profileLanguageCheck" aria-hidden="true">{choice === code ? '✓' : ''}</span>
           </button>)}
+          </div>
           </>
           )}
         </div>
