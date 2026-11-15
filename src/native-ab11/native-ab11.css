@@ -240,3 +240,27 @@
 .nativeAB11[data-native-ab11-page='10'] .nabSelect{appearance:auto!important;font:17px/19px KbDroid,Georgia,serif!important;padding:0!important}
 .nativeAB11[data-native-ab11-page='10'] .nabBank[style*='273px']{transform:scaleX(.95);transform-origin:left top}
 .nativeAB11[data-native-ab11-page='10'] .nabBank[style*='1059px']{transform:scaleX(.98);transform-origin:left top}
+
+/* Page 11 source-ruled translation practice. */
+.nativeAB11[data-native-ab11-page='11'] .nabText{font:18px/25px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='11'] .nabTitle{font:700 20px/26px ABScanSans,Arial,sans-serif}
+.nativeAB11[data-native-ab11-page='11'] .nabHeader{font:29px/32px KbDroid,Georgia,serif;top:161px!important;left:164px!important}
+.nativeAB11[data-native-ab11-page='11'] .nabHeaderLine{left:447px;top:187px;width:474px;height:1px}
+.nativeAB11[data-native-ab11-page='11'] .nabModule{font:76px/76px KbDroid,Georgia,serif;top:112px}
+.nativeAB11[data-native-ab11-page='11'] .nabBold{font-weight:700}
+.nativeAB11[data-native-ab11-page='11'] .nabSmall{font-size:16px;color:#555}
+.nativeAB11[data-native-ab11-page='11'] .nabCanvas .nabInput{border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;height:19px!important}
+.nativeAB11[data-native-ab11-page='11'] .nabCanvas .nabOpen{height:180px!important;line-height:25px!important;border:0!important;background:repeating-linear-gradient(transparent 0 24px,#929792 24px 25px)!important}
+.nativeAB11[data-native-ab11-page='11'] .nabTip{font:16px/21px KbDroid,Georgia,serif;border:0;padding:0}
+.nativeAB11[data-native-ab11-page='11'] .nabP11Tip{position:absolute;left:400px;top:1040px;width:200px;height:70px;border-top:6px solid #b38517;border-left:14px solid #b38517;box-sizing:border-box}
+.nativeAB11[data-native-ab11-page='11'] .nabFooter{font:16px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='11'] .nabP11Module{background:#e5dda6;color:white;font:italic 13px/18px Georgia,serif}
+
+.nativeAB11[data-native-ab11-page='11'] .nabText:not(.nabHeader):not(.nabTitle):not(.nabSmall):not(.nabTip):not(.nabFooter){font-size:19px}
+.nativeAB11[data-native-ab11-page='11'] .nabHeader{transform:scaleX(.93);transform-origin:left top}
+.nativeAB11[data-native-ab11-page='11'] .nabCanvas .nabOpen{height:200px!important}
+
+.nativeAB11[data-native-ab11-page='11'] .nabP11Tip span{position:absolute;font:8px ABScanSans,Arial,sans-serif;writing-mode:vertical-rl;transform:rotate(180deg);left:-11px;bottom:2px;color:#171717}
+
+.nativeAB11[data-native-ab11-page='11'] .nabP11WritingRule{position:absolute;border-bottom:1px solid #929792;pointer-events:none}
+.nativeAB11[data-native-ab11-page='11'] .nabCanvas .nabOpen{background:transparent!important}
