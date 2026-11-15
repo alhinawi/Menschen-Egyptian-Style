@@ -50,7 +50,30 @@ function stamp(html, file, m) {
 // no transcripts for TTS to cover and their buttons are hidden in TTS mode.
 const ON_CLOUDFLARE_PAGES = !!process.env.CF_PAGES;
 const AUDIO_FILE = /\.(mp3|wav|ogg|m4a|flac)$/i;
-const AUDIO_BUDGET = 13000; // ~5.8k non-audio files + 13k audio = ~18.8k < 20k
+// The audio budget adapts to the rest of the build: count the files the
+// asset copy and the Vite bundle produce regardless of audio, and give audio
+// whatever room is left under the hard limit, minus a safety margin. Content
+// batches keep adding crops and corpus files, so a fixed budget drifts into
+// the cap as the non-audio share grows.
+const VITE_OUTPUT_ALLOWANCE = 1100; // bundle js/css/html + feedback SFX (~840 today)
+const BUDGET_SAFETY = 100;
+function countNonAudioFiles() {
+  let n = 0;
+  (function walk(dir) {
+    for (const entry of fs.readdirSync(dir, {withFileTypes: true})) {
+      const p = path.join(dir, entry.name);
+      if (entry.isDirectory()) walk(p);
+      else if (!AUDIO_FILE.test(entry.name)) n++;
+    }
+  })('assets');
+  for (const f of fs.readdirSync('.')) {
+    if (fs.statSync(f).isFile() && /\.(css|svg|png|jpg|webp|mp3)$/.test(f)) n++;
+  }
+  return n;
+}
+function audioBudget() {
+  return Math.max(1000, HARD_FILE_LIMIT - countNonAudioFiles() - VITE_OUTPUT_ALLOWANCE - BUDGET_SAFETY);
+}
 const HARD_FILE_LIMIT = 19300; // abort the build rather than deploy over the cap
 const MANIFEST_FILE = path.join('src', 'generated', 'cf-audio-manifest.json');
 
@@ -105,7 +128,7 @@ function cfAudioSelection() {
     }
     return 0;
   });
-  return ranked.slice(0, AUDIO_BUDGET).map(([, rel]) => rel);
+  return ranked.slice(0, audioBudget()).map(([, rel]) => rel);
 }
 
 function countFiles(dir) {
@@ -124,7 +147,7 @@ export default defineConfig({define:{__MENSCHEN_TTS__:JSON.stringify(ON_CLOUDFLA
   fs.mkdirSync(path.dirname(MANIFEST_FILE), {recursive:true});
   const selected = ON_CLOUDFLARE_PAGES ? cfAudioSelection() : [];
   fs.writeFileSync(MANIFEST_FILE, JSON.stringify(selected));
-  if(ON_CLOUDFLARE_PAGES)console.log(`[cf-audio] manifest: ${selected.length} of ${listAllAudio().length} audio files selected (budget ${AUDIO_BUDGET})`);
+  if(ON_CLOUDFLARE_PAGES)console.log(`[cf-audio] manifest: ${selected.length} of ${listAllAudio().length} audio files selected (adaptive budget ${audioBudget()})`);
  },
  closeBundle(){
  const audioSet = ON_CLOUDFLARE_PAGES ? new Set(JSON.parse(fs.readFileSync(MANIFEST_FILE,'utf8'))) : null;
@@ -146,5 +169,5 @@ export default defineConfig({define:{__MENSCHEN_TTS__:JSON.stringify(ON_CLOUDFLA
  }
  const total = countFiles('dist');
  console.log(`[cf-audio] dist holds ${total} files (cap 20,000)`);
- if(ON_CLOUDFLARE_PAGES && total > HARD_FILE_LIMIT)throw new Error(`dist has ${total} files, over the safety limit of ${HARD_FILE_LIMIT} (Cloudflare cap 20,000) - lower AUDIO_BUDGET`);
+ if(ON_CLOUDFLARE_PAGES && total > HARD_FILE_LIMIT)throw new Error(`dist has ${total} files, over the safety limit of ${HARD_FILE_LIMIT} (Cloudflare cap 20,000) - the adaptive audio budget already shrank to fit; raise VITE_OUTPUT_ALLOWANCE or move content off Pages`);
 }}],build:{outDir:'dist',emptyOutDir:true,rolldownOptions:{input:{main:'index.html'}}},server:{host:'127.0.0.1'}});
