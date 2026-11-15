@@ -1,3 +1,4 @@
+import {useUiLanguage} from '../ui-language';
 import {useContext, useEffect, useRef, useState, useSyncExternalStore} from 'react';
 import {getFeedbackVoices, setFeedbackVoices, subscribeFeedbackVoices} from './check-sound-preference';
 import {ReaderContext} from './ReaderControls';
@@ -6,9 +7,10 @@ import {getAuthConfig, googleLoginUrl} from '../auth/api';
 
 // Profile avatar in the reader toolbar. The panel holds the live account
 // (Google sign-in or email/password via the Menscheny API) plus the sound
-// setting; language switching is still قريبا. Arabic in the panel is set in
+// setting and persisted interface language. Arabic in the panel is set in
 // Cairo (see tailwind.css) to match the site's typography standard.
 export function ReaderProfile() {
+  const {language, t, setLanguage} = useUiLanguage();
   const store = useContext(ReaderContext)!;
   const snapshot = useSyncExternalStore(store.subscribe, store.getSnapshot, store.getSnapshot);
   const voicesOn = useSyncExternalStore(subscribeFeedbackVoices, getFeedbackVoices, () => false);
@@ -47,8 +49,8 @@ export function ReaderProfile() {
       <button
         type="button"
         className="profileTrigger"
-        aria-label="الحساب والإعدادات"
-        title="الحساب والإعدادات"
+        aria-label={t('الحساب والإعدادات')}
+        title={t('الحساب والإعدادات')}
         aria-haspopup="dialog"
         aria-expanded={open}
         onClick={() => setOpen(o => !o)}
@@ -63,46 +65,42 @@ export function ReaderProfile() {
         )}
       </button>
       {open && (
-        <div className="profilePanel" dir="rtl" role="dialog" aria-label="الحساب والإعدادات">
+        <div className="profilePanel" dir={language === 'ar' ? 'rtl' : 'ltr'} role="dialog" aria-label={t('الحساب والإعدادات')}>
           {auth.status === 'authed' && auth.user ? (
             <SignedInBlock name={auth.user.name} email={auth.user.email} avatar={avatar} onSignOut={() => void signOut()} />
           ) : (
             <SignInBlock googleOn={googleOn} />
           )}
-          <div className="profileSection">الإعدادات</div>
+          <div className="profileSection">{t('الإعدادات')}</div>
           <button
             type="button"
             className="profileRow profileChoice"
             aria-pressed={soundOn}
             onClick={() => (document.querySelector('.soundToggle') as HTMLButtonElement | null)?.click()}
           >
-            <span>الصوت</span>
-            <span className="profileState">{soundOn ? 'شغال' : 'مقفول'}</span>
+            <span>{t('الصوت')}</span>
+            <span className="profileState">{soundOn ? t('شغال') : t('مقفول')}</span>
           </button>
           <button
             type="button"
             className="profileRow profileChoice profileVoiceChoice"
             role="switch"
             aria-checked={voicesOn}
-            aria-label="أصوات الناس"
+            aria-label={t('أصوات الناس')}
             aria-describedby="feedbackVoicesHint"
             onClick={() => setFeedbackVoices(!voicesOn)}
           >
             <span className="profileVoiceLabel">
-              <span>أصوات الناس</span>
-              <small id="feedbackVoicesHint">تعليقات صوتية مع نتيجة الحل</small>
+              <span>{t('أصوات الناس')}</span>
+              <small id="feedbackVoicesHint">{t('تعليقات صوتية مع نتيجة الحل')}</small>
             </span>
             <span className="profileVoiceSwitch" data-on={voicesOn} aria-hidden="true"><span /></span>
           </button>
-          <div className="profileSection">اللغة</div>
-          <div className="profileRow">
-            <span>العربية</span>
-            <span className="profileSoon">قريبا</span>
-          </div>
-          <div className="profileRow">
-            <span lang="en">English</span>
-            <span className="profileSoon">قريبا</span>
-          </div>
+          <div className="profileSection">{t('Language')}</div>
+          {(['ar', 'en'] as const).map(code => <button key={code} type="button" className="profileRow profileChoice profileLanguageChoice" lang={code} aria-pressed={language === code} onClick={() => setLanguage(code)}>
+            <span>{code === 'ar' ? 'العربية' : 'English'}</span>
+            <span className="profileLanguageCheck" aria-hidden="true">{language === code ? '✓' : ''}</span>
+          </button>)}
         </div>
       )}
     </span>
@@ -110,13 +108,14 @@ export function ReaderProfile() {
 }
 
 function SignedInBlock({name, email, avatar, onSignOut}: {name: string; email: string; avatar: string | null; onSignOut: () => void}) {
+  const {t} = useUiLanguage();
   return (
     <>
       <div className="profileRow authUserRow">
         {avatar ? (
           <img className="authUserAvatar" src={avatar} alt="" referrerPolicy="no-referrer" />
         ) : (
-          <span className="authUserAvatar authUserInitial" aria-hidden="true">{name.trim().charAt(0) || '؟'}</span>
+          <span className="authUserAvatar authUserInitial" aria-hidden="true">{name.trim().charAt(0) || t('؟')}</span>
         )}
         <span className="authUserText">
           <b>{name}</b>
@@ -131,6 +130,7 @@ function SignedInBlock({name, email, avatar, onSignOut}: {name: string; email: s
 }
 
 function SignInBlock({googleOn}: {googleOn: boolean}) {
+  const {t} = useUiLanguage();
   const [mode, setMode] = useState<'login' | 'register'>('login');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -149,10 +149,10 @@ function SignInBlock({googleOn}: {googleOn: boolean}) {
       const code = e instanceof Error ? e.message : '';
       setError(
         code === 'invalid_credentials'
-          ? 'البريد أو كلمة السر مش صح'
+          ? t('البريد أو كلمة السر مش صح')
           : code === 'validation_failed'
-            ? 'راجع البيانات: اسم من حرفين، بريد صحيح، وكلمة سر 8 أحرف على الأقل'
-            : 'حصلت مشكلة في الاتصال. جرّب تاني.',
+            ? t('راجع البيانات: اسم من حرفين، بريد صحيح، وكلمة سر 8 أحرف على الأقل')
+            : t('حصلت مشكلة في الاتصال. جرّب تاني.'),
       );
     } finally {
       setBusy(false);
@@ -161,7 +161,7 @@ function SignInBlock({googleOn}: {googleOn: boolean}) {
 
   return (
     <>
-      <div className="profileSection">الحساب</div>
+      <div className="profileSection">{t('الحساب')}</div>
       {googleOn && (
         <a className="authBtn authBtnGoogle" href={googleLoginUrl()}>
           <svg viewBox="0 0 24 24" width={16} height={16} aria-hidden="true">
@@ -170,10 +170,10 @@ function SignInBlock({googleOn}: {googleOn: boolean}) {
             <path fill="#FBBC05" d="M5.2 14.3c-.2-.7-.4-1.5-.4-2.3s.2-1.6.4-2.3L1.3 6.8C.5 8.4 0 10.1 0 12s.5 3.6 1.3 5.2l3.9-2.9z"/>
             <path fill="#EA4335" d="M12 4.7c1.8 0 3 .8 3.7 1.4l3.3-3.2C17.9 1.1 15.2 0 12 0 7.3 0 3.3 2.8 1.3 6.8l3.9 2.9c.9-2.9 3.6-5 6.8-5z"/>
           </svg>
-          الدخول بحساب Google
+          {t('الدخول بحساب Google')}
         </a>
       )}
-      {googleOn && <div className="authOr">أو بالبريد</div>}
+      {googleOn && <div className="authOr">{t('أو بالبريد')}</div>}
       <form
         className="authForm"
         onSubmit={(e) => {
@@ -187,7 +187,7 @@ function SignInBlock({googleOn}: {googleOn: boolean}) {
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="الاسم"
+            placeholder={t('الاسم')}
             autoComplete="name"
             required
             minLength={2}
@@ -199,7 +199,7 @@ function SignInBlock({googleOn}: {googleOn: boolean}) {
           dir="ltr"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="البريد الإلكتروني"
+          placeholder={t('البريد الإلكتروني')}
           autoComplete="email"
           required
         />
@@ -209,14 +209,14 @@ function SignInBlock({googleOn}: {googleOn: boolean}) {
           dir="ltr"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          placeholder={mode === 'register' ? 'كلمة سر (8 أحرف على الأقل)' : 'كلمة السر'}
+          placeholder={mode === 'register' ? t('كلمة سر (8 أحرف على الأقل)') : t('كلمة السر')}
           autoComplete={mode === 'login' ? 'current-password' : 'new-password'}
           required
           minLength={8}
         />
-        {error && <div className="authError" role="alert">{error}</div>}
+        {error && <div className="authError" role="alert">{t(error)}</div>}
         <button className="authBtn authBtnPrimary" type="submit" disabled={busy}>
-          {busy ? 'لحظة…' : mode === 'login' ? 'تسجيل الدخول' : 'إنشاء الحساب'}
+          {busy ? t('لحظة…') : mode === 'login' ? t('تسجيل الدخول') : t('إنشاء الحساب')}
         </button>
         <button
           type="button"
@@ -226,7 +226,7 @@ function SignInBlock({googleOn}: {googleOn: boolean}) {
             setError(null);
           }}
         >
-          {mode === 'login' ? 'لسه ماعندكش حساب؟ سجّل جديد' : 'عندك حساب بالفعل؟ ادخل'}
+          {mode === 'login' ? t('لسه ماعندكش حساب؟ سجّل جديد') : t('عندك حساب بالفعل؟ ادخل')}
         </button>
       </form>
     </>

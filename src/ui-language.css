@@ -1,0 +1,24 @@
+/* The interface follows its language. Printed pages always stay German/LTR. */
+html[data-ui-language] :is(#viewport,.page,.stf__parent,.readerAudioPlayer){direction:ltr}
+html[data-ui-language] .helpBanner{direction:inherit;font-family:'Cairo',system-ui,sans-serif}
+html[data-ui-language] .profilePanel{direction:inherit}
+html[data-ui-language] .lnv-overlay{direction:inherit}
+html[data-ui-language="ar"] .lnv-panelBox{left:auto;right:0;font-family:'Cairo',system-ui,sans-serif}
+html[data-ui-language="ar"] .lnv-bookcard{text-align:right}
+html[data-ui-language="ar"] :is(.lnv-close,.lnv-pp,.lnv-chev){margin-left:0;margin-inline-start:auto}
+html[data-ui-language="ar"] .lnv-label{letter-spacing:0;font-family:'Cairo',system-ui,sans-serif}
+html[data-ui-language="ar"] :is(.lnv-nm,.lnv-home,.lnv-st,.lnv-ss,.lnv-bt small,.lnv-pill,.lnv-pagePill){font-family:'Cairo',system-ui,sans-serif}
+.profileLanguageChoice[aria-pressed="true"]{background:#f1e9d8;color:#713c46;font-weight:700}
+.profileLanguageCheck{font-size:16px;color:#713c46}
+html[data-ui-language="en"] .profilePanel{font-family:system-ui,sans-serif}
+
+html[data-ui-language] .howtoPage{direction:inherit}
+html[data-ui-language="en"] .howtoList{direction:ltr;text-align:left}
+html[data-ui-language="en"] .howtoPage{font-family:system-ui,sans-serif}
+
+@keyframes ui-slide-from-right{from{transform:translateX(100%)}to{transform:translateX(0)}}
+html[data-ui-language="ar"] .lnv-panelBox.animate-lnv-slide{animation:ui-slide-from-right .24s ease-out both}
+html[data-ui-language="en"] .howtoList li{padding-inline:0 36px}
+html[data-ui-language="en"] .howtoList li::before{left:auto;right:0}
+
+html[data-ui-language="ar"] .profilePanel{left:auto;right:0}
