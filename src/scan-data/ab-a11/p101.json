@@ -14,50 +14,50 @@
   },
   {
    "text": "PAUL",
-   "x": 237,
-   "y": 302,
-   "w": 64,
-   "h": 28,
+   "x": 206,
+   "y": 289,
+   "w": 78,
+   "h": 32,
    "phrase": "Paul und Herr Rossmann machen Ferien"
   },
   {
    "text": "UND",
-   "x": 315,
-   "y": 300,
-   "w": 55,
-   "h": 28,
+   "x": 295,
+   "y": 284,
+   "w": 66,
+   "h": 32,
    "phrase": "Paul und Herr Rossmann machen Ferien"
   },
   {
    "text": "HERR",
-   "x": 388,
-   "y": 298,
-   "w": 68,
-   "h": 28,
+   "x": 374,
+   "y": 277,
+   "w": 80,
+   "h": 32,
    "phrase": "Paul und Herr Rossmann machen Ferien"
   },
   {
    "text": "ROSSMANN",
-   "x": 470,
-   "y": 296,
-   "w": 138,
-   "h": 28,
+   "x": 467,
+   "y": 268,
+   "w": 180,
+   "h": 34,
    "phrase": "Paul und Herr Rossmann machen Ferien"
   },
   {
    "text": "MACHEN",
-   "x": 628,
-   "y": 292,
-   "w": 118,
-   "h": 28,
+   "x": 661,
+   "y": 257,
+   "w": 136,
+   "h": 33,
    "phrase": "Paul und Herr Rossmann machen Ferien"
   },
   {
    "text": "FERIEN",
-   "x": 760,
-   "y": 288,
-   "w": 100,
-   "h": 28,
+   "x": 809,
+   "y": 248,
+   "w": 107,
+   "h": 33,
    "phrase": "Paul und Herr Rossmann machen Ferien"
   },
   {
@@ -2668,7 +2668,8 @@
   "notes": [
    "LITERATUR Teil 4 'Bis bald, Paul!' - story page, words only, no fields.",
    "LITERATUR header (white on photo) and red title banner missed by OCR; boxes estimated from render.",
-   "Train photo region produced no usable OCR words; footnote '1: Hand die, je' kept."
+   "Train photo region produced no usable OCR words; footnote '1: Hand die, je' kept.",
+   "2026-11-16 original literature scan restored for exact typography,art,columns,footnote and footer;reading-only page,no fabricated exercises."
   ]
  }
 }
