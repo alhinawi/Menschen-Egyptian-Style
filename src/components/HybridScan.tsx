@@ -36,7 +36,7 @@ export function HybridScan({data}:{data:ScanData}){
     const status=f.kind==='radio'&&results[f.id]!==undefined
      ?values[f.name||f.id]===undefined?false:values[f.name||f.id]===f.value?results[f.id]:undefined
      :results[f.id];
-    const className='hybridField '+(status===undefined?'':status?'hybridCorrect':'hybridWrong');
+    const className='hybridField '+(status===undefined?'':status?'hybridCorrect':'hybridWrong')+(data.book==='ab-a11'&&String(data.page)==='43'&&f.id.startsWith('u5-mark-')?' hybridCaseMark case-'+(values[f.id]||'empty'):'');
     const props={key:f.id,className,style:box(f),'aria-label':f.label,'data-field-id':f.id};
     if(f.kind==='select')return <select {...props} value={values[f.id]||''} onChange={e=>update(f.id,e.target.value)}><option value=""/>{f.options?.map(o=><option key={o.value} value={o.value}>{o.label}</option>)}</select>;
     if(f.kind==='radio')return <ChoiceInput {...props} type="radio" name={`${key}-${f.name||f.id}`} value={f.value} checked={values[f.name||f.id]===f.value} onChange={()=>update(f.name||f.id,f.value||'')}/>;

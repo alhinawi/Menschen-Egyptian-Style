@@ -23,3 +23,22 @@
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='42'] [data-field-id^='u3a-']{font-size:0!important;text-indent:-9999px}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='42'] [data-field-id^='u3a-'] option{font-size:14px;text-indent:0}
 .hybridPluralColumn{position:absolute;overflow:auto}.hybridPluralPair{position:absolute;height:3.54cqw}.hybridPluralPair .hybridPluralWord{position:absolute;left:0;top:0;width:100%;white-space:nowrap}.hybridPluralPair input.hybridField{left:0;top:1.58cqw;width:97%;height:1.86cqw}
+
+/* AB p43: source-line answers and tap-select case marking. */
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .hybridField{font-size:1.58cqw!important;line-height:1!important;outline:0}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .hybridField:focus{outline:1px solid #26764c}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .hybridField.hybridCorrect{outline:1px solid #268250}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .hybridField.hybridWrong{outline:1px solid #bd3838}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] [data-field-id='u4-umlaut']{appearance:none;background:white!important;font:1.58cqw/1 Georgia,serif!important;color:#173c62!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .hybridCaseMark{appearance:none;color:transparent!important;font-size:0!important;cursor:pointer;text-indent:-9999px}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .hybridCaseMark option{color:#173c62;font:14px Arial;text-indent:0}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .case-Nominativ{border-bottom:2px solid #294c99!important;background:#7b9ddb22!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .case-Akkusativ{border-bottom:2px solid #43b32a!important;background:#8fe36b22!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .hybridTools{display:contents}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .hybridCheck{position:absolute;left:91%;font-size:1.3cqw}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .hybridCheck:nth-child(1){top:37%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .hybridCheck:nth-child(2){top:68%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .hybridCheck:nth-child(3){top:90%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .hybridCheck output{font-size:1.3cqw;position:absolute;right:0;top:100%;background:white}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] [data-field-id='u4-umlaut']{background:#fffef0!important;background-image:none!important;padding:0!important;outline:0!important;font-family:Georgia,serif!important}
+html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .hybridFields select.hybridField[data-field-id='u4-umlaut']{background-image:none!important;padding:0!important;min-width:0!important;width:.95%!important;max-width:none!important;appearance:none!important;font:1.58cqw/1 Georgia,serif!important}
