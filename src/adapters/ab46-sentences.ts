@@ -84,7 +84,7 @@ Object.assign(window.MENSCHEN_PHRASES,{
 'Bringen Sie die E-Mails in die richtige Reihenfolge.':'رتّب الإيميلات بالترتيب الصحيح.',
 'Hallo Susi, danke für den Tipp. Bei Möbel Amra kostet ein Sofa 199 € und ein Bett 149 €. Das finde ich nicht teuer und die Möbel sind wirklich schön. Gruß Johannes':'أهلاً سوزي، شكراً على النصيحة. عند موبيليا أمرا الكنبة بـ ١٩٩ يورو والسرير بـ ١٤٩ يورو. أنا شايف إن ده مش غالي والموبيليا حلوة فعلاً. تحياتي، يوهانس',
 'Hallo Johannes, bei MÖBEL AMRA in der Blücherstraße gibt es günstige Möbel. Und sie sind wirklich schön. Susi':'أهلاً يوهانس، عند موبيليا أمرا في شارع بليشر فيه موبيليا رخيصة. وهي حلوة فعلاً. سوزي',
-'Hallo Susi, ich brauche ein Sofa und ein Bett für mein Zimmer. Wo finde ich günstige Möbel in Berlin? Weißt du das? Ich habe wirklich nicht viel Geld. Gruß Johannes':'أهلاً سوزي، أنا محتاج كنبة وسرير لأوضتي. ألاقي موبيليا رخيصة فين في برلين؟ تعرفي؟ أنا معايا فلوس كتير والله. تحياتي، يوهانس',
+'Hallo Susi, ich brauche ein Sofa und ein Bett für mein Zimmer. Wo finde ich günstige Möbel in Berlin? Weißt du das? Ich habe wirklich nicht viel Geld. Gruß Johannes':'أهلاً سوزي، أنا محتاج كنبة وسرير لأوضتي. ألاقي موبيليا رخيصة فين في برلين؟ تعرفي؟ أنا فعلاً مش معايا فلوس كتير. تحياتي، يوهانس',
 'Hallo Johannes, super! Bis bald Susi':'أهلاً يوهانس، ممتاز! أشوفك قريب. سوزي',
 'Susi braucht Möbel.':'سوزي محتاجة موبيليا.',
 'MÖBEL AMRA hat billige Möbel.':'موبيليا أمرا عندها موبيليا رخيصة.',
