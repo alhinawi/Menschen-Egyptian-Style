@@ -95,3 +95,7 @@ html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .hybridField
 .hybridScores46>output{position:absolute;font:1.3cqw ABScanSans,Arial;color:#174770}
 .hybridScores46>i{position:absolute;width:2.5%;height:1.8%;border:2px solid #174770;border-radius:100%;pointer-events:none}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='46'] .hybridCheck output{right:100%;top:0;width:8cqw;text-align:right;margin-right:1cqw}
+
+/* AB p47: use only real printed lines, including the photo vocabulary rail. */
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='47'] .hybridField{font:1.52cqw/1.1 ABScanSans,Arial!important;direction:auto;outline:0}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='47'] .hybridField:focus{outline:1px solid #26764c}
