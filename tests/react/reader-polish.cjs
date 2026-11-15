@@ -1,0 +1,11 @@
+const {chromium}=require('playwright');const fs=require('fs'),http=require('http'),path=require('path');const root=path.resolve(__dirname,'../../dist');const mime={'.html':'text/html','.js':'text/javascript','.css':'text/css','.ttf':'font/ttf','.json':'application/json'};
+const server=http.createServer((req,res)=>{let f=path.join(root,new URL(req.url,'http://localhost').pathname);try{res.setHeader('Content-Type',mime[path.extname(f)]||'application/octet-stream');res.end(fs.readFileSync(f))}catch{res.writeHead(404);res.end('missing')}});
+const assert=require('node:assert/strict');
+(async()=>{await new Promise(r=>server.listen(5193,r));const browser=await chromium.launch({args:['--no-sandbox']});try{
+for(const width of [390,1280]){const page=await browser.newPage({viewport:{width,height:844},isMobile:width===390});await page.goto('http://localhost:5193/l2-3.html#23');await page.waitForFunction(()=>window.menschenBook&&document.querySelector('.nkbWritePanel:not([hidden])'));
+assert.equal(await page.locator('.nkbPaintFab,.nkbPaintMenu,.nkbPaintBackdrop').count(),0);
+const panel=page.locator('.nkbWritePanel:not([hidden])');assert((await panel.boundingBox()).width>=Math.min(width-30,700));await panel.scrollIntoViewIfNeeded();await page.evaluate(()=>document.fonts.ready);await page.screenshot({path:`/downloads/writing-panel-p23-${width}-2102.png`});
+const note=panel.locator('textarea').first();await note.fill('Eine bekannte Person');await page.reload();await page.waitForFunction(()=>window.menschenBook&&document.querySelector('.nkbWritePanel:not([hidden])'));assert.equal(await page.locator('.nkbWritePanel:not([hidden]) textarea').first().inputValue(),'Eine bekannte Person');
+await page.goto('http://localhost:5193/l2-3.html#20');await page.waitForFunction(()=>window.menschenBook&&location.hash==='#20');const tools=page.locator('.nkbPaintToolsMap');await tools.waitFor({state:'visible'});assert.equal(await tools.locator('button').count(),5);await tools.getByRole('button',{name:'Französisch'}).click();assert((await tools.getByRole('button',{name:'Französisch'}).getAttribute('style')).includes('2px'));
+console.log(width+': no floating pill, notes persist, inline map tools PASS');await page.close();}
+}finally{await browser.close();server.close()}})().catch(e=>{console.error(e);process.exit(1)});

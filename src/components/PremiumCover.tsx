@@ -23,10 +23,12 @@ export function PremiumCover({src, alt}: {src: string; alt: string}) {
     <figure className="premiumCoverArt" style={{backgroundImage: preview ? `url(${preview})` : undefined}}>
       <img className={`coverArtwork${loaded ? ' isLoaded' : ''}`} src={src} alt={alt} loading="eager" decoding="async" fetchPriority="high" onLoad={() => setLoaded(true)} ref={image => {if (image?.complete && image.naturalWidth) setLoaded(true);}}/>
     </figure>
-    <div className="premiumCoverEdition" lang="de"><span>{book}</span><span className="premiumCoverDiamond" aria-hidden="true">◆</span><span>{t('Interactive Edition')}</span></div>
+    <div className="premiumCoverEdition" lang="de"><span>{book}</span></div>
     <div className="coverOwner" dir={language === 'ar' ? 'rtl' : 'ltr'}>
-      <span className="coverSmall" lang={language} dir={language === 'ar' ? 'rtl' : 'ltr'}>{t('نسخة تفاعلية مع')}</span>
+      <div className="coverByline" style={{direction: language === 'ar' ? 'rtl' : 'ltr'}}>
+      <span className="coverSmall" lang={language} dir={language === 'ar' ? 'rtl' : 'ltr'}>{t('with')}</span>
       <h1 lang="ar" dir="rtl">هناوي</h1>
+      </div>
       <div className="coverSocials" aria-label={t('Contact and social links')}><CoverSocials/></div>
     </div>
     <button type="button" className="coverOpen" onClick={e => openBookCover(e.currentTarget.closest('.fullscreenCover') as HTMLElement, () => {document.dispatchEvent(new Event('menschen:paper')); window.menschenBook?.turnToPage?.(1);})}>{t('Open book ←')}</button>
