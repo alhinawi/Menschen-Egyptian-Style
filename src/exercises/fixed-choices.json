@@ -1106,33 +1106,6 @@
       "source": "1b: exact printed answer bank"
     }
   ],
-  "ab-a11:10": [
-    {
-      "ids": [
-        "5-2a",
-        "5-2b",
-        "5-3a",
-        "5-3b",
-        "5-4a",
-        "5-4b",
-        "5-5a",
-        "5-5b"
-      ],
-      "options": [
-        "Hallo, ich heiße Oborowski.",
-        "Ich komme aus Italien, und du?",
-        "Ich heiße Johanna.",
-        "Sind Sie Frau Rode?",
-        "Aus der Türkei.",
-        "Wie bitte? Obolanski?",
-        "Wie geht’s?",
-        "Nein, mein Name ist Koch.",
-        "Sehr gut. Und dir?",
-        "Ich bin Elisa, und du?"
-      ],
-      "source": "5: order the printed full dialogue lines; not word composition"
-    }
-  ],
   "ab-a11:12": [
     {
       "ids": [
