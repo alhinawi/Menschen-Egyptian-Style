@@ -163,3 +163,17 @@
 .nativeAB11Module1[data-native-ab11-page='27'] .mText:not(.mHeader):not(.mBlue):not(.mTitle):not(.mP27Back){transform:translateY(-4px);font-size:14.5px}
 .nativeAB11Module1[data-native-ab11-page='27'] .mField{transform:translateY(-4px)}
 .nativeAB11Module1[data-native-ab11-page='27'] .mCanvas .mField[data-native-field^='r1-']{border:0!important;font-size:11px!important}
+/* Page 28: source review table, profile and writing prompts. */
+.nativeAB11Module1[data-native-ab11-page='28'] .mText{font:15px/21px KbDroid,Georgia,serif}
+.nativeAB11Module1[data-native-ab11-page='28'] .mHeader{font:29px/35px KbDroid,Georgia,serif;letter-spacing:.1px;transform:scaleX(1.067);transform-origin:left top}
+.nativeAB11Module1[data-native-ab11-page='28'] .mTitle{font:700 17px/21px ABScanSans,Arial,sans-serif}
+.nativeAB11Module1[data-native-ab11-page='28'] .mCanvas .mField{border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;font:15px/20px KbDroid,Georgia,serif!important;height:22px!important}
+.nativeAB11Module1[data-native-ab11-page='28'] .mField[data-native-field^='r22-']{border:0!important}
+.nativeAB11Module1[data-native-ab11-page='28'] .mFooter{display:none}
+.mP28Area{position:absolute;resize:none;border:0!important;border-radius:0!important;background:transparent!important;padding:0!important;margin:0!important;font:15px/21px KbDroid,Georgia,serif;color:#174770;min-height:0!important}
+.mP28Banner{position:absolute;left:134px;width:702px;display:flex;gap:5px;align-items:center;font:700 18px/23px KbDroid,Georgia,serif;color:#182d67}.mP28Banner mark{background:#abd518;color:white}.mP28Banner i{height:1px;background:#abd518;flex:1;align-self:end}.mP28Banner.lesson3 mark,.mP28Banner.lesson3 i{background:#f6b700}
+.mP28Number{position:absolute;left:136px;width:26px;height:18px;font:700 17px/18px Georgia,serif;background:#cc0900;text-align:center;color:white}
+.mP28Table{position:absolute;left:169px;top:277px;display:grid;grid-template-columns:291px 121px 69px 59px 110px;grid-auto-rows:25.6px;font:15px/24px KbDroid,Georgia,serif}.mP28Table>div{background:#fffbd9;padding-left:5px}.mP28TableRow{display:contents}.mP28TableRow>div{border-bottom:1px dotted #e9e7da;border-right:1px dotted #e9e7da;padding-left:5px;position:relative}.mP28TableRow>div:first-child{border-left:1px dotted #e9e7da}
+.mP28Pick{appearance:none;position:absolute;inset:0;width:100%;height:100%;min-height:0!important;border:0!important;border-radius:0!important;background:transparent!important;margin:0!important;padding:0!important;cursor:pointer}.mP28Pick:checked:after{content:'X';position:absolute;left:5px;top:0;font:italic 17px/25px KbDroid,Georgia,serif;color:#345688}.mP28Pick:disabled{opacity:1;cursor:default}
+.mP28Footer{position:absolute;left:49px;top:1217px;font:14px KbDroid,Georgia,serif}.mP28Footer em{display:inline-block;margin-right:12px;background:#e5dda6;color:white;font:italic 12px/16px Georgia;padding:0 5px}
+.mP28Pick{opacity:0!important}.mP28X{pointer-events:none;font:italic 17px/25px KbDroid,Georgia,serif;color:#345688}.mP28Banner{font-size:17px}.mP28Banner i{transform:translateY(-7px)}
