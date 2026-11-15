@@ -1,0 +1,29 @@
+@font-face{font-family:P100Serif;src:url('/assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:P100Sans;src:url('/assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:P100Sans;src:url('/assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700;font-display:swap}
+.ab11p100{position:relative;width:100%;height:100%;background:white}
+.page:has(.ab11p100){padding:0!important}
+.ab11p100Canvas{position:absolute;left:50%;top:50%;width:901px;height:1275px;transform-origin:center;background:#fff;color:#242420;font-family:P100Serif,Georgia,serif}
+.ab11p100Canvas .p100Text{position:absolute;white-space:pre;line-height:1.25;margin:0;padding:0}
+.ab11p100Canvas .p100Sans{font-family:P100Sans,sans-serif}
+.ab11p100Canvas .p100Bold{font-weight:700}
+.ab11p100Canvas .p100Italic{font-style:italic}
+.ab11p100Canvas .tapWord{padding:0!important;margin:0!important}
+.ab11p100Canvas .p100Art{position:absolute;max-width:none!important;max-height:none!important;object-fit:fill!important;margin:0!important}
+.ab11p100Canvas .p100Line{position:absolute}
+.ab11p100Canvas .p100Dot{position:absolute;box-sizing:border-box;border:1.5px solid;border-radius:50%}
+.ab11p100Canvas .p100MarkerTri{position:absolute;width:0;height:0;border-left-style:solid;border-left-color:transparent;border-right-style:solid;border-right-color:transparent;border-bottom-style:solid}
+.ab11p100Canvas .p100MarkerSq{position:absolute}
+.ab11p100Canvas .p100Chip{position:absolute;box-sizing:border-box;background:#d8d0a4;color:#fff;font:700 10px/13px P100Sans,sans-serif;text-align:center;padding-top:5px}
+@font-face{font-family:P100Gentium;src:url('/assets/fonts/gentium-book-basic-400.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:P100Gentium;src:url('/assets/fonts/gentium-book-basic-700.woff2') format('woff2');font-weight:700;font-display:swap}
+.ab11p100Canvas .p100Gentium{font-family:P100Gentium,'Gentium Book Basic',Georgia,serif}
+.ab11p100Canvas .p100Rule{position:absolute}
+.ab11p100Canvas .p100Rect{position:absolute}
+.ab11p100Canvas .p100Chip{display:flex;align-items:center;justify-content:center;padding-top:0}
+.ab11p100Canvas .p100ChipGrad{background:linear-gradient(90deg,#c9bd85 0%,#e3d7a5 15%,#f4ecca 95%)!important;color:#fff}
+@font-face{font-family:P100Cond;src:url('/assets/fonts/firasanscond-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:P100DSans;src:url('/assets/fonts/droid-sans-400.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:P100DSans;src:url('/assets/fonts/droid-sans-700.woff2') format('woff2');font-weight:700;font-display:swap}
+.ab11p100Canvas .p100Cond{font-family:P100Cond,'Fira Sans Condensed',sans-serif}
+.ab11p100Canvas .p100DSans{font-family:P100DSans,sans-serif}
