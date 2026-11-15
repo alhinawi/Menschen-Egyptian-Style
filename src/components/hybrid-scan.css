@@ -336,3 +336,23 @@ html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='62'] .hybridField
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='63'] .hybridCheck:nth-child(1){top:55%}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='63'] .hybridCheck:nth-child(2){top:76%;left:54%}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='63'] .hybridCheck:nth-child(3){top:91%;left:54%}
+
+/* AB p64: original test and four printed examples,aligned answer lines. */
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='64'] .hybridField{font-size:1.45cqw!important;outline:0}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='64'] .hybridField:focus{outline:1px solid #26764c}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='64'] .hybridField.hybridCorrect{outline:1px solid #268250}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='64'] .hybridField.hybridWrong{outline:1px solid #bd3838}
+html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='64'] .hybridFields select.hybridField{appearance:none!important;background-image:none!important;padding:0!important;font-size:1.2cqw!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='64'] [data-field-id^='l8t-3-']{font-size:1.15cqw!important;resize:none;line-height:1.3!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='64'] [data-field-id^='l8t-4-']{font-size:1.3cqw!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='64'] .hybridTools{display:contents}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='64'] .hybridCheck{position:absolute;left:94%;font-size:1.3cqw}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='64'] .hybridCheck output{font-size:1.2cqw;position:absolute;right:110%;top:0;width:7cqw;background:white}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='64'] .hybridCheck:nth-child(1){top:25%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='64'] .hybridCheck:nth-child(2){top:32%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='64'] .hybridCheck:nth-child(3){top:47%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='64'] .hybridCheck:nth-child(4){top:61%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='64'] .hybridCheck:nth-child(5){top:68%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='64'] .hybridCheck:nth-child(6){top:83%}
+
+.hybridScores64 output{position:absolute;color:#245b3c;background:#fffef7;font:bold 1.4cqw Arial}.hybridScores64 i{position:absolute;width:2.7cqw;height:2.7cqw;border:2px solid #174d36;border-radius:50%;transform:translate(-50%,-50%);pointer-events:none}
