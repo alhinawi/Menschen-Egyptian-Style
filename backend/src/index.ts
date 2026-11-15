@@ -3,8 +3,12 @@ import { cors } from 'hono/cors'
 import { hashPassword, newToken, sha256Hex, verifyPassword } from './crypto'
 import { asBody, email, str, ValidationError } from './validate'
 import { finishGoogleLogin, googleConfigured, startGoogleLogin } from './google'
+import { debugOutboxOn, sendVerificationEmail } from './email'
 
-type Env = { Bindings: Cloudflare.Env; Variables: { userId: number } }
+type Env = {
+  Bindings: Cloudflare.Env & { RESEND_API_KEY?: string; EMAIL_FROM?: string; EMAIL_DEBUG_OUTBOX?: string }
+  Variables: { userId: number }
+}
 
 const SESSION_DAYS = 30
 const MAX_PROGRESS_BYTES = 512_000
@@ -58,18 +62,78 @@ async function saveProgress(db: D1Database, userId: number, data: string, now: s
   ).bind(userId, data, now).run()
 }
 
-type UserRow = { id: number; name: string; email: string; created_at: string; avatar: string | null; google_avatar: string | null }
-const publicUser = (u: UserRow) => ({ id: u.id, name: u.name, email: u.email, created_at: u.created_at, avatar: u.avatar ?? null, google_avatar: u.google_avatar ?? null })
+type UserRow = { id: number; name: string; email: string; created_at: string; avatar: string | null; google_avatar: string | null; email_verified: number }
+const publicUser = (u: UserRow) => ({ id: u.id, name: u.name, email: u.email, created_at: u.created_at, avatar: u.avatar ?? null, google_avatar: u.google_avatar ?? null, email_verified: !!u.email_verified })
+const USER_COLS = 'id, name, email, created_at, avatar, google_avatar, email_verified'
 
 app.get('/api/ping', (c) => c.json({ ok: true, app: 'menscheny-api' }))
 
 // Public feature flags for the auth UI (Google button stays hidden until the
 // OAuth secrets are configured on the worker).
-app.get('/api/auth/config', (c) => c.json({ google: googleConfigured(c.env) }))
+app.get('/api/auth/config', (c) =>
+  c.json({ google: googleConfigured(c.env), emailVerification: Boolean(c.env.RESEND_API_KEY) || debugOutboxOn(c.env) }),
+)
 
 // Google OAuth: start (302 to Google) and callback (302 back to the site).
 app.get('/api/auth/google/start', (c) => startGoogleLogin(c.req.raw, c.env))
 app.get('/api/auth/google/callback', (c) => finishGoogleLogin(c.req.raw, c.env, openSession))
+
+// ---------- email verification ----------
+const VERIFY_TOKEN_HOURS = 24
+
+// One live link per learner: a fresh request retires the older ones.
+async function issueVerificationToken(db: D1Database, userId: number): Promise<string> {
+  const token = newToken()
+  const expires = new Date(Date.now() + VERIFY_TOKEN_HOURS * 3_600_000).toISOString()
+  await db.prepare('DELETE FROM email_verification_tokens WHERE user_id = ?').bind(userId).run()
+  await db.prepare('INSERT INTO email_verification_tokens (token_hash, user_id, expires_at) VALUES (?, ?, ?)').bind(await sha256Hex(token), userId, expires).run()
+  return token
+}
+
+function siteOrigin(env: { ALLOWED_ORIGINS: string }, origin: string | null | undefined): string | null {
+  if (!origin) return null
+  return env.ALLOWED_ORIGINS.split(',').map((s) => s.trim()).includes(origin) ? origin : null
+}
+
+function verifyLink(requestUrl: string, token: string, origin: string | null): string {
+  const base = `${new URL(requestUrl).origin}/api/auth/verify-email?token=${encodeURIComponent(token)}`
+  return origin ? `${base}&origin=${encodeURIComponent(origin)}` : base
+}
+
+// The link in the email lands here (the learner's browser, no Authorization
+// header), so this is a GET that verifies and redirects back to the site.
+app.get('/api/auth/verify-email', async (c) => {
+  const url = new URL(c.req.url)
+  const token = url.searchParams.get('token') ?? ''
+  const origin = siteOrigin(c.env, url.searchParams.get('origin'))
+  const done = (status: string) =>
+    origin ? c.redirect(`${origin}/#email-verified?status=${status}`, 302) : c.json({ status })
+  if (!token) return done('invalid')
+  const row = await c.env.DB.prepare('SELECT user_id, expires_at FROM email_verification_tokens WHERE token_hash = ?')
+    .bind(await sha256Hex(token))
+    .first<{ user_id: number; expires_at: string }>()
+  if (!row) return done('invalid')
+  await c.env.DB.prepare('DELETE FROM email_verification_tokens WHERE user_id = ?').bind(row.user_id).run()
+  if (new Date(row.expires_at).getTime() < Date.now()) return done('expired')
+  await c.env.DB.prepare('UPDATE users SET email_verified = 1 WHERE id = ?').bind(row.user_id).run()
+  return done('ok')
+})
+
+app.use('/api/auth/resend-verification', auth)
+app.post('/api/auth/resend-verification', async (c) => {
+  const u = (await c.env.DB.prepare('SELECT id, name, email, email_verified FROM users WHERE id = ?')
+    .bind(c.get('userId'))
+    .first<{ id: number; name: string; email: string; email_verified: number }>())!
+  if (u.email_verified) return c.json({ message: 'already_verified' })
+  const token = await issueVerificationToken(c.env.DB, u.id)
+  const link = verifyLink(c.req.url, token, siteOrigin(c.env, c.req.header('origin')))
+  try {
+    await sendVerificationEmail(c.env, u.email, u.name, link)
+  } catch {
+    return c.json({ error: 'email_send_failed' }, 502)
+  }
+  return c.json({ message: 'sent', ...(debugOutboxOn(c.env) ? { debug_verify_url: link } : {}) })
+})
 
 // ---------- auth ----------
 app.post('/api/auth/register', async (c) => {
@@ -86,7 +150,7 @@ app.post('/api/auth/register', async (c) => {
     .bind(name, mail, await hashPassword(password))
     .run()
   const userId = Number(res.meta.last_row_id)
-  const user = (await c.env.DB.prepare('SELECT id, name, email, created_at, avatar, google_avatar FROM users WHERE id = ?').bind(userId).first<UserRow>())!
+  const user = (await c.env.DB.prepare(`SELECT ${USER_COLS} FROM users WHERE id = ?`).bind(userId).first<UserRow>())!
 
   // Optional one-time migration: the visitor's localStorage progress blob moves into the account.
   const local = b.progress
@@ -96,14 +160,23 @@ app.post('/api/auth/register', async (c) => {
     await saveProgress(c.env.DB, userId, data, new Date().toISOString())
   }
 
-  return c.json({ user: publicUser(user), token: await openSession(c.env.DB, userId) }, 201)
+  // Password sign-ups start unverified: send the confirmation link without
+  // blocking (or failing) the registration on a mail-provider error.
+  const vToken = await issueVerificationToken(c.env.DB, userId)
+  const vLink = verifyLink(c.req.url, vToken, siteOrigin(c.env, c.req.header('origin')))
+  c.executionCtx.waitUntil(sendVerificationEmail(c.env, mail, name, vLink).catch((e) => console.error('verification email failed', e)))
+
+  return c.json(
+    { user: publicUser(user), token: await openSession(c.env.DB, userId), ...(debugOutboxOn(c.env) ? { debug_verify_url: vLink } : {}) },
+    201,
+  )
 })
 
 app.post('/api/auth/login', async (c) => {
   const b = await json(c)
   const mail = email(b)
   const password = str(b, 'password', { max: 200, required: true })!
-  const row = await c.env.DB.prepare('SELECT id, name, email, created_at, avatar, google_avatar, password_hash FROM users WHERE email = ?')
+  const row = await c.env.DB.prepare(`SELECT ${USER_COLS}, password_hash FROM users WHERE email = ?`)
     .bind(mail)
     .first<UserRow & { password_hash: string }>()
   // Run a hash even for unknown emails so timing does not reveal which emails exist.
@@ -122,7 +195,7 @@ app.post('/api/auth/logout', async (c) => {
 // ---------- me ----------
 app.use('/api/me', auth)
 app.get('/api/me', async (c) => {
-  const u = (await c.env.DB.prepare('SELECT id, name, email, created_at, avatar, google_avatar FROM users WHERE id = ?').bind(c.get('userId')).first<UserRow>())!
+  const u = (await c.env.DB.prepare(`SELECT ${USER_COLS} FROM users WHERE id = ?`).bind(c.get('userId')).first<UserRow>())!
   return c.json({ user: publicUser(u) })
 })
 const AVATAR_RE = /^(https:\/\/lh3\.googleusercontent\.com\/[\w=\-]+|data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+)$/
@@ -147,7 +220,7 @@ app.patch('/api/me', async (c) => {
       throw new ValidationError({ avatar: 'image must be a jpeg/png/webp data URL under 30KB' })
     }
   }
-  const u = (await c.env.DB.prepare('SELECT id, name, email, created_at, avatar, google_avatar FROM users WHERE id = ?').bind(c.get('userId')).first<UserRow>())!
+  const u = (await c.env.DB.prepare(`SELECT ${USER_COLS} FROM users WHERE id = ?`).bind(c.get('userId')).first<UserRow>())!
   return c.json({ user: publicUser(u) })
 })
 

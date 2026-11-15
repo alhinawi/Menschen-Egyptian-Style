@@ -162,6 +162,9 @@ export async function finishGoogleLogin(request: Request, env: GoogleEnv, openSe
     await env.DB.prepare('UPDATE users SET avatar = ? WHERE id = ?').bind(info.picture, user.id).run()
   }
 
+  // Google has already checked this inbox, so the account counts as verified.
+  await env.DB.prepare('UPDATE users SET email_verified = 1 WHERE id = ?').bind(user.id).run()
+
   const token = await openSession(env.DB, user.id)
   return redirectBack(row.origin, { token, provider: 'google' })
 }
