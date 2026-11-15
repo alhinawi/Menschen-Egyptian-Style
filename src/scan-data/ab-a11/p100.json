@@ -1120,7 +1120,158 @@
    "h": 14
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "table-name",
+   "group": "own",
+   "kind": "text",
+   "label": "Fest: Name",
+   "x": 215,
+   "y": 871,
+   "w": 198,
+   "h": 78
+  },
+  {
+   "id": "table-place",
+   "group": "own",
+   "kind": "text",
+   "label": "Fest: Wo",
+   "x": 416,
+   "y": 869,
+   "w": 154,
+   "h": 80
+  },
+  {
+   "id": "table-since",
+   "group": "own",
+   "kind": "text",
+   "label": "Fest: Seit wann",
+   "x": 575,
+   "y": 866,
+   "w": 154,
+   "h": 80
+  },
+  {
+   "id": "table-when",
+   "group": "own",
+   "kind": "text",
+   "label": "Fest: Monat und Dauer",
+   "x": 736,
+   "y": 863,
+   "w": 289,
+   "h": 78
+  },
+  {
+   "id": "fest-name",
+   "group": "own",
+   "kind": "text",
+   "label": "1b Das Fest heißt",
+   "x": 374,
+   "y": 1067,
+   "w": 193,
+   "h": 28
+  },
+  {
+   "id": "fest-place",
+   "group": "own",
+   "kind": "text",
+   "label": "1b und ist in",
+   "x": 661,
+   "y": 1059,
+   "w": 301,
+   "h": 28
+  },
+  {
+   "id": "fest-month",
+   "group": "own",
+   "kind": "text",
+   "label": "1b Es ist im",
+   "x": 328,
+   "y": 1097,
+   "w": 453,
+   "h": 28
+  },
+  {
+   "id": "fest-duration",
+   "group": "own",
+   "kind": "text",
+   "label": "1b Es dauert",
+   "x": 336,
+   "y": 1126,
+   "w": 431,
+   "h": 28
+  },
+  {
+   "id": "own-text",
+   "group": "own",
+   "kind": "text",
+   "label": "1b Mein Fest: Fortsetzung",
+   "x": 239,
+   "y": 1158,
+   "w": 735,
+   "h": 51
+  },
+  {
+   "id": "festival-country",
+   "group": "own",
+   "kind": "text",
+   "label": "2 Ein Fest in",
+   "x": 347,
+   "y": 1315,
+   "w": 128,
+   "h": 28
+  },
+  {
+   "id": "festival-name",
+   "group": "own",
+   "kind": "text",
+   "label": "2 heißt",
+   "x": 533,
+   "y": 1308,
+   "w": 223,
+   "h": 28
+  },
+  {
+   "id": "own-festival",
+   "group": "own",
+   "kind": "text",
+   "label": "2 Mein Fest / Festival",
+   "x": 242,
+   "y": 1361,
+   "w": 740,
+   "h": 202
+  },
+  {
+   "id": "own-modal-anja",
+   "group": "own",
+   "kind": "text",
+   "label": "Lektion 11 Aufgabe 1: Was wissen Sie über Anja?",
+   "x": 0,
+   "y": 0,
+   "w": 1,
+   "h": 1
+  },
+  {
+   "id": "own-modal-notes",
+   "group": "own",
+   "kind": "text",
+   "label": "Lektion 11 Aufgabe 2: bekannte Person - Notizen",
+   "x": 0,
+   "y": 0,
+   "w": 1,
+   "h": 1
+  },
+  {
+   "id": "own-modal-person",
+   "group": "own",
+   "kind": "text",
+   "label": "Lektion 11 Aufgabe 2: normaler Montag - Text",
+   "x": 0,
+   "y": 0,
+   "w": 1,
+   "h": 1
+  }
+ ],
  "audio": [],
  "groups": [],
  "review": {
@@ -1129,7 +1280,8 @@
   "totalWords": 159,
   "notes": [
    "Rueckblick L11 + L12: all tasks are free/personal writing (notes, texts about own country) - no fields.",
-   "Blue cursive phrases ('Cello spielen', 'immer frueh aufstehen', 'Ich glaube, ... steht am Montag immer frueh auf. Sie / Er ...', sentence starters in U1b/U2) are printed model text, kept as words; 'Anja' bubble added from render (OCR miss)."
+   "Blue cursive phrases ('Cello spielen', 'immer frueh aufstehen', 'Ich glaube, ... steht am Montag immer frueh auf. Sie / Er ...', sentence starters in U1b/U2) are printed model text, kept as words; 'Anja' bubble added from render (OCR miss).",
+   "2026-11-16 source scan/fonts/handwritten prompts preserved;full personal reflection writing/table fields plus L11 writing panel;not auto-graded."
   ]
  }
 }
