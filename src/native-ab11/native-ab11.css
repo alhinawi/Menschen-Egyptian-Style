@@ -299,3 +299,36 @@
 .nativeAB11[data-native-ab11-page='12'] .nabBank[style*='998.82px']{transform:scaleX(.966);transform-origin:left top}
 
 .nativeAB11[data-native-ab11-page='12'] .nabBank[style*='1243.41px'] .tapWord:nth-of-type(7){text-decoration:line-through;text-decoration-color:#315f9e}
+/* Page 13 source roles, practice table and writing rules. */
+.nativeAB11[data-native-ab11-page='13'] .nabText{font:19px/25px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='13'] .nabTitle{font:700 20px/26px ABScanSans,Arial,sans-serif;left:205px!important}
+.nativeAB11[data-native-ab11-page='13'] .nabNumber{left:163px!important}
+.nativeAB11[data-native-ab11-page='13'] .nabHeader{font:29px/32px KbDroid,Georgia,serif;top:150px!important;left:165px!important;letter-spacing:2px;transform:scaleX(.94);transform-origin:left top}
+.nativeAB11[data-native-ab11-page='13'] .nabHeaderLine{left:407px;top:175px;width:591px;height:1px}
+.nativeAB11[data-native-ab11-page='13'] .nabModule{font:76px/76px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='13'] .nabKB{font:11px ABScanSans,Arial,sans-serif;left:117px!important}
+.nativeAB11[data-native-ab11-page='13'] .nabSide{left:140px!important;font-size:9px}
+.nativeAB11[data-native-ab11-page='13'] .nabSmall{font:14px/20px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='13'] .nabP13Reading{font:18px/25px ABScanSans,Arial,sans-serif}
+.nativeAB11[data-native-ab11-page='13'] .nabBold{font-weight:700}
+.nativeAB11[data-native-ab11-page='13'] .nabBank{font:18px/25px ABScanSans,Arial,sans-serif;background:#ffffdf;color:#27427f}
+.nativeAB11[data-native-ab11-page='13'] .nabBank .tapWord[data-word='er']{text-decoration:line-through;text-decoration-color:#315f9e}
+.nativeAB11[data-native-ab11-page='13'] .nabCanvas .nabInput{border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;height:21px!important}
+.nativeAB11[data-native-ab11-page='13'] .nabCanvas .nabOpen{height:34px!important;border:0!important;background:linear-gradient(transparent 32px,#929792 32px 33px,transparent 33px)!important;line-height:25px!important}
+.nativeAB11[data-native-ab11-page='13'] .nabSelect{appearance:auto!important;font:17px/19px KbDroid,Georgia,serif!important;padding:0!important;border:0!important}
+.nativeAB11[data-native-ab11-page='13'] .nabCanvas .nabRadio{width:17px!important;height:17px!important;border-width:1px!important}
+.nativeAB11[data-native-ab11-page='13'] .nabCheck{left:1008px!important;translate:none!important}
+.nativeAB11[data-native-ab11-page='13'] .nabCheck[data-native-task='u7']{top:855px!important}
+.nativeAB11[data-native-ab11-page='13'] .nabConjugation{width:744px!important;grid-template-columns:100px 109px 105px 110px 111px 106px 103px;border:0;font:18px/27px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='13'] .nabConjugation>b{height:32px;box-sizing:border-box;background:#fffbd5;font:700 17px/27px KbDroid,Georgia,serif;padding:2px 7px}
+.nativeAB11[data-native-ab11-page='13'] .nabCanvas .nabConjRow>*{font:18px/27px KbDroid,Georgia,serif;height:31px;padding:2px 7px;border:0!important;border-right:1px dotted #dedec9!important;border-bottom:1px dotted #dedec9!important;border-radius:0!important;background-color:transparent!important}
+.nativeAB11[data-native-ab11-page='13'] .nabConjRow mark{background:#fff354;color:inherit}
+.nativeAB11[data-native-ab11-page='13'] .nabFooter{font:16px KbDroid,Georgia,serif;top:1428px!important}
+.nativeAB11[data-native-ab11-page='13'] .nabFooter[style*='991px']{left:1042px!important;background:#e5dda6;color:white;font:italic 13px/18px Georgia,serif;text-align:center}
+.nativeAB11[data-native-ab11-page='13'] .nabFooter[style*='920px']{left:911px!important}
+
+.nativeAB11[data-native-ab11-page='13'] .nabP13WritingRule{position:absolute;border-bottom:1px solid #929792;pointer-events:none}
+.nativeAB11[data-native-ab11-page='13'] .nabCanvas .nabOpen{background:transparent!important}
+.nativeAB11[data-native-ab11-page='13'] .nabCanvas .nabRadio:checked{background:linear-gradient(45deg,transparent 43%,#315f9e 44%,#315f9e 53%,transparent 54%),linear-gradient(-45deg,transparent 43%,#315f9e 44%,#315f9e 53%,transparent 54%)!important}
+.nativeAB11[data-native-ab11-page='13'] .nabP13ExampleA{transform:scaleX(.97);transform-origin:left top}
+.nativeAB11[data-native-ab11-page='13'] .nabTitle[style*='894.88px']{transform:scaleX(.96);transform-origin:left top}
