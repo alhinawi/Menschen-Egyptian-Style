@@ -1185,423 +1185,527 @@
  "fields": [
   {
    "id": "u1-f2",
-   "group": "u1",
-   "kind": "text",
+   "group": "u1a",
+   "kind": "select",
    "label": "Foto (Frühling)",
    "answer": "1",
-   "x": 242,
-   "y": 700,
-   "w": 55,
-   "h": 24
+   "x": 241,
+   "y": 698,
+   "w": 39,
+   "h": 34,
+   "options": [
+    {
+     "value": "1",
+     "label": "1"
+    },
+    {
+     "value": "2",
+     "label": "2"
+    },
+    {
+     "value": "3",
+     "label": "3"
+    },
+    {
+     "value": "4",
+     "label": "4"
+    }
+   ]
   },
   {
    "id": "u1-f3",
-   "group": "u1",
-   "kind": "text",
+   "group": "u1a",
+   "kind": "select",
    "label": "Foto (Sommer)",
    "answer": "2",
-   "x": 242,
-   "y": 764,
-   "w": 55,
-   "h": 24
+   "x": 241,
+   "y": 758,
+   "w": 39,
+   "h": 34,
+   "options": [
+    {
+     "value": "1",
+     "label": "1"
+    },
+    {
+     "value": "2",
+     "label": "2"
+    },
+    {
+     "value": "3",
+     "label": "3"
+    },
+    {
+     "value": "4",
+     "label": "4"
+    }
+   ]
   },
   {
    "id": "u1-f4",
-   "group": "u1",
-   "kind": "text",
+   "group": "u1a",
+   "kind": "select",
    "label": "Foto (Herbst)",
    "answer": "3",
-   "x": 242,
-   "y": 848,
-   "w": 55,
-   "h": 24
+   "x": 241,
+   "y": 842,
+   "w": 39,
+   "h": 34,
+   "options": [
+    {
+     "value": "1",
+     "label": "1"
+    },
+    {
+     "value": "2",
+     "label": "2"
+    },
+    {
+     "value": "3",
+     "label": "3"
+    },
+    {
+     "value": "4",
+     "label": "4"
+    }
+   ]
   },
   {
    "id": "u1-w-feb",
-   "group": "u1",
+   "group": "u1a",
    "kind": "text",
    "label": "Winter: F…",
    "answer": "Februar",
-   "x": 512,
-   "y": 642,
-   "w": 140,
-   "h": 22
+   "x": 497,
+   "y": 630,
+   "w": 153,
+   "h": 30
   },
   {
    "id": "u1-w-mae",
-   "group": "u1",
+   "group": "u1a",
    "kind": "text",
    "label": "Winter: M…",
    "answer": "März",
-   "x": 512,
-   "y": 668,
-   "w": 70,
-   "h": 22
+   "x": 497,
+   "y": 658,
+   "w": 85,
+   "h": 30
   },
   {
    "id": "u1-fr",
-   "group": "u1",
+   "group": "u1a",
    "kind": "text",
    "label": "Jahreszeit 1: F…",
    "answer": "Frühling",
-   "x": 318,
-   "y": 700,
-   "w": 160,
-   "h": 22
+   "x": 306,
+   "y": 692,
+   "w": 168,
+   "h": 34
   },
   {
    "id": "u1-fr1",
-   "group": "u1",
+   "group": "u1a",
    "kind": "text",
    "label": "Frühling Monat 1",
    "answer": "April",
-   "x": 500,
-   "y": 700,
-   "w": 80,
-   "h": 22
+   "x": 497,
+   "y": 692,
+   "w": 109,
+   "h": 32
   },
   {
    "id": "u1-fr2",
-   "group": "u1",
+   "group": "u1a",
    "kind": "text",
    "label": "Frühling Monat 2",
    "answer": "Mai",
-   "x": 588,
-   "y": 700,
-   "w": 85,
-   "h": 22
+   "x": 614,
+   "y": 692,
+   "w": 63,
+   "h": 32
   },
   {
    "id": "u1-fr3",
-   "group": "u1",
+   "group": "u1a",
    "kind": "text",
    "label": "Frühling Monat 3",
    "answer": "Juni",
-   "x": 504,
-   "y": 726,
-   "w": 100,
-   "h": 22
+   "x": 497,
+   "y": 719,
+   "w": 84,
+   "h": 32
   },
   {
    "id": "u1-so",
-   "group": "u1",
+   "group": "u1a",
    "kind": "text",
    "label": "Jahreszeit 2",
    "answer": "Sommer",
-   "x": 311,
-   "y": 764,
+   "x": 310,
+   "y": 753,
    "w": 135,
-   "h": 22
+   "h": 30
   },
   {
    "id": "u1-so1",
-   "group": "u1",
+   "group": "u1a",
    "kind": "text",
    "label": "Sommer Monat 1",
    "answer": "Juli",
-   "x": 500,
-   "y": 756,
-   "w": 55,
-   "h": 22
+   "x": 497,
+   "y": 753,
+   "w": 85,
+   "h": 30
   },
   {
    "id": "u1-so2",
-   "group": "u1",
+   "group": "u1a",
    "kind": "text",
    "label": "Sommer Monat 2",
    "answer": "August",
-   "x": 500,
-   "y": 790,
-   "w": 125,
-   "h": 22
+   "x": 497,
+   "y": 782,
+   "w": 131,
+   "h": 30
   },
   {
    "id": "u1-so3",
-   "group": "u1",
+   "group": "u1a",
    "kind": "text",
    "label": "Sommer Monat 3",
    "answer": "September",
-   "x": 500,
-   "y": 812,
-   "w": 200,
-   "h": 22
+   "x": 497,
+   "y": 808,
+   "w": 202,
+   "h": 30
   },
   {
    "id": "u1-he",
-   "group": "u1",
+   "group": "u1a",
    "kind": "text",
    "label": "Jahreszeit 3",
    "answer": "Herbst",
    "x": 311,
-   "y": 848,
-   "w": 135,
-   "h": 22
+   "y": 837,
+   "w": 133,
+   "h": 30
   },
   {
    "id": "u1-he1",
-   "group": "u1",
+   "group": "u1a",
    "kind": "text",
    "label": "Herbst Monat 1",
    "answer": "Oktober",
-   "x": 500,
-   "y": 842,
-   "w": 140,
-   "h": 22
+   "x": 497,
+   "y": 837,
+   "w": 153,
+   "h": 30
   },
   {
    "id": "u1-he2",
-   "group": "u1",
+   "group": "u1a",
    "kind": "text",
    "label": "Herbst Monat 2",
    "answer": "November",
-   "x": 500,
-   "y": 868,
-   "w": 150,
-   "h": 22
+   "x": 497,
+   "y": 863,
+   "w": 175,
+   "h": 30
   },
   {
    "id": "u1-he3",
-   "group": "u1",
+   "group": "u1a",
    "kind": "text",
    "label": "Herbst Monat 3",
    "answer": "Dezember",
-   "x": 500,
-   "y": 890,
-   "w": 160,
-   "h": 22
+   "x": 497,
+   "y": 889,
+   "w": 175,
+   "h": 30
   },
   {
    "id": "u1b-1",
-   "group": "u1",
+   "group": "u1b",
    "kind": "text",
    "label": "b: Monat (5 Buchstaben)",
-   "answer": "Mai",
-   "x": 520,
-   "y": 988,
-   "w": 100,
-   "h": 24
+   "answer": "April",
+   "x": 497,
+   "y": 1039,
+   "w": 156,
+   "h": 33
   },
   {
    "id": "u1b-2",
-   "group": "u1",
+   "group": "u1b",
    "kind": "text",
    "label": "b: Monat (3 Buchstaben)",
-   "answer": "März",
-   "x": 735,
-   "y": 988,
-   "w": 55,
-   "h": 24
+   "answer": "Mai",
+   "x": 717,
+   "y": 1039,
+   "w": 81,
+   "h": 33
   },
   {
    "id": "u1b-3",
-   "group": "u1",
+   "group": "u1b",
    "kind": "text",
    "label": "b: Jahreszeit (6 Buchstaben)",
-   "answer": "Juni",
-   "x": 1000,
-   "y": 988,
-   "w": 115,
-   "h": 24
+   "answer": "Sommer",
+   "x": 893,
+   "y": 1039,
+   "w": 162,
+   "h": 33
   },
   {
    "id": "u2a-a1",
-   "group": "u2",
+   "group": "u2a",
    "kind": "radio",
-   "label": "",
+   "label": "2a a 1789",
    "name": "u2a-a",
    "value": "1789",
    "answer": "true",
-   "x": 330,
+   "x": 328,
    "y": 1258,
-   "w": 20,
-   "h": 20
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u2a-a2",
-   "group": "u2",
+   "group": "u2a",
    "kind": "radio",
-   "label": "",
+   "label": "2a a 1798",
    "name": "u2a-a",
    "value": "1798",
    "answer": "false",
-   "x": 472,
+   "x": 469,
    "y": 1258,
-   "w": 20,
-   "h": 20
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u2a-b1",
-   "group": "u2",
+   "group": "u2a",
    "kind": "radio",
-   "label": "",
+   "label": "2a b 2017",
    "name": "u2a-b",
    "value": "2017",
    "answer": "false",
-   "x": 330,
-   "y": 1288,
-   "w": 20,
-   "h": 20
+   "x": 328,
+   "y": 1287,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u2a-b2",
-   "group": "u2",
+   "group": "u2a",
    "kind": "radio",
-   "label": "",
+   "label": "2a b 2170",
    "name": "u2a-b",
    "value": "2170",
    "answer": "true",
-   "x": 472,
-   "y": 1288,
-   "w": 20,
-   "h": 20
+   "x": 469,
+   "y": 1287,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u2a-c1",
-   "group": "u2",
+   "group": "u2a",
    "kind": "radio",
-   "label": "",
+   "label": "2a c 1980",
    "name": "u2a-c",
    "value": "1980",
    "answer": "false",
-   "x": 330,
-   "y": 1318,
-   "w": 20,
-   "h": 20
+   "x": 328,
+   "y": 1317,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u2a-c2",
-   "group": "u2",
+   "group": "u2a",
    "kind": "radio",
-   "label": "",
+   "label": "2a c 1918",
    "name": "u2a-c",
    "value": "1918",
    "answer": "true",
-   "x": 472,
-   "y": 1318,
-   "w": 20,
-   "h": 20
+   "x": 469,
+   "y": 1317,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u2a-d1",
-   "group": "u2",
+   "group": "u2a",
    "kind": "radio",
-   "label": "",
+   "label": "2a d 1576",
    "name": "u2a-d",
    "value": "1576",
    "answer": "true",
-   "x": 330,
-   "y": 1347,
-   "w": 20,
-   "h": 20
+   "x": 328,
+   "y": 1346,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u2a-d2",
-   "group": "u2",
+   "group": "u2a",
    "kind": "radio",
-   "label": "",
+   "label": "2a d 1376",
    "name": "u2a-d",
    "value": "1376",
    "answer": "false",
-   "x": 472,
-   "y": 1347,
-   "w": 20,
-   "h": 20
+   "x": 469,
+   "y": 1346,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u2a-e1",
-   "group": "u2",
+   "group": "u2a",
    "kind": "radio",
-   "label": "",
+   "label": "2a e 2011",
    "name": "u2a-e",
    "value": "2011",
    "answer": "false",
    "x": 758,
    "y": 1258,
-   "w": 20,
-   "h": 20
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u2a-e2",
-   "group": "u2",
+   "group": "u2a",
    "kind": "radio",
-   "label": "",
+   "label": "2a e 2001",
    "name": "u2a-e",
    "value": "2001",
    "answer": "true",
-   "x": 914,
+   "x": 910,
    "y": 1258,
-   "w": 20,
-   "h": 20
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u2a-f1",
-   "group": "u2",
+   "group": "u2a",
    "kind": "radio",
-   "label": "",
+   "label": "2a f 313",
    "name": "u2a-f",
    "value": "313",
    "answer": "true",
    "x": 758,
-   "y": 1288,
-   "w": 20,
-   "h": 20
+   "y": 1287,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u2a-f2",
-   "group": "u2",
+   "group": "u2a",
    "kind": "radio",
-   "label": "",
+   "label": "2a f 333",
    "name": "u2a-f",
    "value": "333",
    "answer": "false",
-   "x": 914,
-   "y": 1288,
-   "w": 20,
-   "h": 20
+   "x": 910,
+   "y": 1287,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u2a-lw",
-   "group": "u2",
+   "group": "u2a",
    "kind": "text",
    "label": "Lösungswort",
    "answer": "HERBST",
-   "x": 829,
-   "y": 1330,
-   "w": 170,
-   "h": 24
+   "x": 826,
+   "y": 1320,
+   "w": 164,
+   "h": 33
   },
   {
    "id": "u2c-1",
-   "group": "u2",
+   "group": "u2c",
    "kind": "text",
    "label": "Bernd: 26.04.",
    "answer": "Im April",
-   "x": 826,
-   "y": 1542,
-   "w": 253,
-   "h": 24
+   "x": 829,
+   "y": 1533,
+   "w": 246,
+   "h": 33
   },
   {
    "id": "u2c-2",
-   "group": "u2",
+   "group": "u2c",
    "kind": "text",
    "label": "Sabine: 23.02.",
    "answer": "Im Februar",
-   "x": 826,
-   "y": 1568,
-   "w": 253,
-   "h": 24
+   "x": 829,
+   "y": 1562,
+   "w": 246,
+   "h": 33
   },
   {
    "id": "u2c-3",
-   "group": "u2",
+   "group": "u2c",
    "kind": "text",
    "label": "Florian: 31.08.",
    "answer": "Im August",
-   "x": 826,
-   "y": 1595,
-   "w": 253,
-   "h": 24
+   "x": 829,
+   "y": 1591,
+   "w": 246,
+   "h": 33
+  },
+  {
+   "id": "own-language-0",
+   "group": "own",
+   "kind": "text",
+   "label": "1a Meine Sprache 1",
+   "x": 972,
+   "y": 607,
+   "w": 186,
+   "h": 74
+  },
+  {
+   "id": "own-language-1",
+   "group": "own",
+   "kind": "text",
+   "label": "1a Meine Sprache 2",
+   "x": 972,
+   "y": 691,
+   "w": 186,
+   "h": 51
+  },
+  {
+   "id": "own-language-2",
+   "group": "own",
+   "kind": "text",
+   "label": "1a Meine Sprache 3",
+   "x": 972,
+   "y": 750,
+   "w": 186,
+   "h": 74
+  },
+  {
+   "id": "own-language-3",
+   "group": "own",
+   "kind": "text",
+   "label": "1a Meine Sprache 4",
+   "x": 972,
+   "y": 833,
+   "w": 186,
+   "h": 74
+  },
+  {
+   "id": "own-task",
+   "group": "own",
+   "kind": "text",
+   "label": "1c Meine eigene Aufgabe",
+   "x": 242,
+   "y": 1125,
+   "w": 903,
+   "h": 30
   }
  ],
  "audio": [
@@ -1609,29 +1713,37 @@
    "id": "au-cd1-51",
    "src": "assets/ab-cd1-track51.mp3",
    "label": "CD 1 Track 51",
-   "x": 120,
-   "y": 1212,
-   "w": 55,
-   "h": 24
+   "x": 139,
+   "y": 1214,
+   "w": 39,
+   "h": 32
   },
   {
    "id": "au-cd1-52",
    "src": "assets/ab-cd1-track52.mp3",
    "label": "CD 1 Track 52",
-   "x": 120,
-   "y": 1400,
-   "w": 55,
-   "h": 24
+   "x": 139,
+   "y": 1403,
+   "w": 39,
+   "h": 32
   }
  ],
  "groups": [
   {
-   "id": "u1",
-   "label": "Ü1 Monate und Jahreszeiten (KB 3)"
+   "id": "u1a",
+   "label": "1a Monate und Jahreszeiten"
   },
   {
-   "id": "u2",
-   "label": "Ü2 Jahreszahlen und Monate (KB 3)"
+   "id": "u1b",
+   "label": "1b Welche Jahreszeit,welcherMonat?"
+  },
+  {
+   "id": "u2a",
+   "label": "2a Jahreszahlen hören"
+  },
+  {
+   "id": "u2c",
+   "label": "2c Wann haben die Personen Geburtstag?"
   }
  ],
  "review": {
@@ -1640,7 +1752,8 @@
   "totalWords": 168,
   "notes": [
    "Lektion 12 start 'Was ist denn hier passiert?' Ü1-Ü2. Answers from AB Lösungsschlüssel L12 (1a table; 1b April/Mai/Sommer; 2a 1789/2170/1918/1576/2001/313 -> Lösungswort HERBST; 2c Bernd im April, Sabine im Februar, Florian im August).",
-   "Ü1a: '4' (Foto Winter) printed blue example. Ü1b: 'Frühling' printed blue example (word, no field). Ü2c: 'Im Mai' printed blue example (words, no field). Ü1c and Ü2b: no fields (partner task / read aloud). 'Meine Sprache oder andere Sprachen' column: own language, no fields."
+   "Ü1a: '4' (Foto Winter) printed blue example. Ü1b: 'Frühling' printed blue example (word, no field). Ü2c: 'Im Mai' printed blue example (words, no field). Ü1c and Ü2b: no fields (partner task / read aloud). 'Meine Sprache oder andere Sprachen' column: own language, no fields.",
+   "2026-11-16: Scan/fonts preserved,corrected1bApril/Mai/Sommer,threephotoselects,ownlanguageandtaskwriting,CD51/52."
   ]
  }
 }
