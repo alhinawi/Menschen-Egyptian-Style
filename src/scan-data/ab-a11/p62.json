@@ -1235,57 +1235,187 @@
   {
    "id": "l8-7-b",
    "group": "l8-7",
-   "kind": "text",
+   "kind": "select",
    "label": "Ü7 B",
    "answer": "der Vormittag",
-   "x": 435,
-   "y": 346,
-   "w": 215,
-   "h": 12
+   "x": 436,
+   "y": 340,
+   "w": 214,
+   "h": 24,
+   "options": [
+    {
+     "value": "der Morgen",
+     "label": "der Morgen"
+    },
+    {
+     "value": "der Vormittag",
+     "label": "der Vormittag"
+    },
+    {
+     "value": "der Mittag",
+     "label": "der Mittag"
+    },
+    {
+     "value": "der Nachmittag",
+     "label": "der Nachmittag"
+    },
+    {
+     "value": "der Abend",
+     "label": "der Abend"
+    },
+    {
+     "value": "die Nacht",
+     "label": "die Nacht"
+    }
+   ]
   },
   {
    "id": "l8-7-c",
    "group": "l8-7",
-   "kind": "text",
+   "kind": "select",
    "label": "Ü7 C",
    "answer": "der Mittag",
-   "x": 675,
-   "y": 346,
-   "w": 215,
-   "h": 12
+   "x": 673,
+   "y": 335,
+   "w": 208,
+   "h": 24,
+   "options": [
+    {
+     "value": "der Morgen",
+     "label": "der Morgen"
+    },
+    {
+     "value": "der Vormittag",
+     "label": "der Vormittag"
+    },
+    {
+     "value": "der Mittag",
+     "label": "der Mittag"
+    },
+    {
+     "value": "der Nachmittag",
+     "label": "der Nachmittag"
+    },
+    {
+     "value": "der Abend",
+     "label": "der Abend"
+    },
+    {
+     "value": "die Nacht",
+     "label": "die Nacht"
+    }
+   ]
   },
   {
    "id": "l8-7-d",
    "group": "l8-7",
-   "kind": "text",
+   "kind": "select",
    "label": "Ü7 D",
    "answer": "der Nachmittag",
-   "x": 200,
-   "y": 464,
-   "w": 215,
-   "h": 12
+   "x": 202,
+   "y": 459,
+   "w": 214,
+   "h": 24,
+   "options": [
+    {
+     "value": "der Morgen",
+     "label": "der Morgen"
+    },
+    {
+     "value": "der Vormittag",
+     "label": "der Vormittag"
+    },
+    {
+     "value": "der Mittag",
+     "label": "der Mittag"
+    },
+    {
+     "value": "der Nachmittag",
+     "label": "der Nachmittag"
+    },
+    {
+     "value": "der Abend",
+     "label": "der Abend"
+    },
+    {
+     "value": "die Nacht",
+     "label": "die Nacht"
+    }
+   ]
   },
   {
    "id": "l8-7-e",
    "group": "l8-7",
-   "kind": "text",
+   "kind": "select",
    "label": "Ü7 E",
    "answer": "der Abend",
-   "x": 435,
-   "y": 464,
-   "w": 215,
-   "h": 12
+   "x": 439,
+   "y": 454,
+   "w": 214,
+   "h": 24,
+   "options": [
+    {
+     "value": "der Morgen",
+     "label": "der Morgen"
+    },
+    {
+     "value": "der Vormittag",
+     "label": "der Vormittag"
+    },
+    {
+     "value": "der Mittag",
+     "label": "der Mittag"
+    },
+    {
+     "value": "der Nachmittag",
+     "label": "der Nachmittag"
+    },
+    {
+     "value": "der Abend",
+     "label": "der Abend"
+    },
+    {
+     "value": "die Nacht",
+     "label": "die Nacht"
+    }
+   ]
   },
   {
    "id": "l8-7-f",
    "group": "l8-7",
-   "kind": "text",
+   "kind": "select",
    "label": "Ü7 F",
    "answer": "die Nacht",
    "x": 675,
-   "y": 464,
-   "w": 215,
-   "h": 12
+   "y": 449,
+   "w": 208,
+   "h": 24,
+   "options": [
+    {
+     "value": "der Morgen",
+     "label": "der Morgen"
+    },
+    {
+     "value": "der Vormittag",
+     "label": "der Vormittag"
+    },
+    {
+     "value": "der Mittag",
+     "label": "der Mittag"
+    },
+    {
+     "value": "der Nachmittag",
+     "label": "der Nachmittag"
+    },
+    {
+     "value": "der Abend",
+     "label": "der Abend"
+    },
+    {
+     "value": "die Nacht",
+     "label": "die Nacht"
+    }
+   ]
   },
   {
    "id": "l8-8-kino-l",
@@ -1294,16 +1424,34 @@
    "label": "Ü8 geht sie ins Kino. (Bild)",
    "answer": "E",
    "options": [
-    "A",
-    "B",
-    "C",
-    "D",
-    "E",
-    "F"
+    {
+     "value": "A",
+     "label": "A"
+    },
+    {
+     "value": "B",
+     "label": "B"
+    },
+    {
+     "value": "C",
+     "label": "C"
+    },
+    {
+     "value": "D",
+     "label": "D"
+    },
+    {
+     "value": "E",
+     "label": "E"
+    },
+    {
+     "value": "F",
+     "label": "F"
+    }
    ],
    "x": 212,
-   "y": 812,
-   "w": 18,
+   "y": 814,
+   "w": 22,
    "h": 18
   },
   {
@@ -1313,9 +1461,9 @@
    "label": "Ü8 geht sie ins Kino. (Tageszeit)",
    "answer": "Am Abend",
    "x": 235,
-   "y": 811,
+   "y": 809,
    "w": 214,
-   "h": 12
+   "h": 24
   },
   {
    "id": "l8-8-isst-l",
@@ -1324,16 +1472,34 @@
    "label": "Ü8 isst sie. (Bild)",
    "answer": "C",
    "options": [
-    "A",
-    "B",
-    "C",
-    "D",
-    "E",
-    "F"
+    {
+     "value": "A",
+     "label": "A"
+    },
+    {
+     "value": "B",
+     "label": "B"
+    },
+    {
+     "value": "C",
+     "label": "C"
+    },
+    {
+     "value": "D",
+     "label": "D"
+    },
+    {
+     "value": "E",
+     "label": "E"
+    },
+    {
+     "value": "F",
+     "label": "F"
+    }
    ],
    "x": 212,
-   "y": 838,
-   "w": 18,
+   "y": 839,
+   "w": 22,
    "h": 18
   },
   {
@@ -1343,9 +1509,9 @@
    "label": "Ü8 isst sie. (Tageszeit)",
    "answer": "Am Mittag",
    "x": 235,
-   "y": 837,
+   "y": 835,
    "w": 214,
-   "h": 12
+   "h": 24
   },
   {
    "id": "l8-8-kaffee-l",
@@ -1354,16 +1520,34 @@
    "label": "Ü8 trinkt sie Kaffee. (Bild)",
    "answer": "A",
    "options": [
-    "A",
-    "B",
-    "C",
-    "D",
-    "E",
-    "F"
+    {
+     "value": "A",
+     "label": "A"
+    },
+    {
+     "value": "B",
+     "label": "B"
+    },
+    {
+     "value": "C",
+     "label": "C"
+    },
+    {
+     "value": "D",
+     "label": "D"
+    },
+    {
+     "value": "E",
+     "label": "E"
+    },
+    {
+     "value": "F",
+     "label": "F"
+    }
    ],
    "x": 212,
-   "y": 862,
-   "w": 18,
+   "y": 864,
+   "w": 22,
    "h": 18
   },
   {
@@ -1373,9 +1557,9 @@
    "label": "Ü8 trinkt sie Kaffee. (Tageszeit)",
    "answer": "Am Morgen",
    "x": 235,
-   "y": 861,
+   "y": 860,
    "w": 214,
-   "h": 12
+   "h": 24
   },
   {
    "id": "l8-8-disco-l",
@@ -1384,16 +1568,34 @@
    "label": "Ü8 geht sie in die Disco. (Bild)",
    "answer": "F",
    "options": [
-    "A",
-    "B",
-    "C",
-    "D",
-    "E",
-    "F"
+    {
+     "value": "A",
+     "label": "A"
+    },
+    {
+     "value": "B",
+     "label": "B"
+    },
+    {
+     "value": "C",
+     "label": "C"
+    },
+    {
+     "value": "D",
+     "label": "D"
+    },
+    {
+     "value": "E",
+     "label": "E"
+    },
+    {
+     "value": "F",
+     "label": "F"
+    }
    ],
-   "x": 212,
-   "y": 884,
-   "w": 18,
+   "x": 213,
+   "y": 890,
+   "w": 22,
    "h": 18
   },
   {
@@ -1402,10 +1604,10 @@
    "kind": "text",
    "label": "Ü8 geht sie in die Disco. (Tageszeit)",
    "answer": "In der Nacht",
-   "x": 235,
-   "y": 883,
+   "x": 237,
+   "y": 885,
    "w": 214,
-   "h": 12
+   "h": 24
   },
   {
    "id": "l8-8-schwimmt-l",
@@ -1414,16 +1616,34 @@
    "label": "Ü8 schwimmt sie. (Bild)",
    "answer": "B",
    "options": [
-    "A",
-    "B",
-    "C",
-    "D",
-    "E",
-    "F"
+    {
+     "value": "A",
+     "label": "A"
+    },
+    {
+     "value": "B",
+     "label": "B"
+    },
+    {
+     "value": "C",
+     "label": "C"
+    },
+    {
+     "value": "D",
+     "label": "D"
+    },
+    {
+     "value": "E",
+     "label": "E"
+    },
+    {
+     "value": "F",
+     "label": "F"
+    }
    ],
-   "x": 212,
-   "y": 908,
-   "w": 18,
+   "x": 213,
+   "y": 915,
+   "w": 22,
    "h": 18
   },
   {
@@ -1432,10 +1652,10 @@
    "kind": "text",
    "label": "Ü8 schwimmt sie. (Tageszeit)",
    "answer": "Am Vormittag",
-   "x": 235,
-   "y": 907,
+   "x": 237,
+   "y": 911,
    "w": 214,
-   "h": 12
+   "h": 24
   },
   {
    "id": "l8-10a-kino",
@@ -1445,10 +1665,10 @@
    "name": "l8-10a",
    "value": "kino",
    "answer": "false",
-   "x": 222,
-   "y": 1201,
-   "w": 16,
-   "h": 16
+   "x": 220,
+   "y": 1204,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-10a-kneipe",
@@ -1458,10 +1678,10 @@
    "name": "l8-10a",
    "value": "kneipe",
    "answer": "true",
-   "x": 339,
+   "x": 336,
    "y": 1201,
-   "w": 16,
-   "h": 16
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-10a-theater",
@@ -1471,10 +1691,10 @@
    "name": "l8-10a",
    "value": "theater",
    "answer": "false",
-   "x": 505,
-   "y": 1201,
-   "w": 16,
-   "h": 16
+   "x": 500,
+   "y": 1198,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-10b-1-kinokarten",
@@ -1484,10 +1704,10 @@
    "name": "l8-10b-1",
    "value": "kinokarten",
    "answer": "false",
-   "x": 396,
-   "y": 1288,
-   "w": 16,
-   "h": 16
+   "x": 393,
+   "y": 1289,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-10b-1-theaterkarten",
@@ -1497,10 +1717,10 @@
    "name": "l8-10b-1",
    "value": "theaterkarten",
    "answer": "true",
-   "x": 551,
+   "x": 546,
    "y": 1286,
-   "w": 16,
-   "h": 16
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-10b-2-gern",
@@ -1510,10 +1730,10 @@
    "name": "l8-10b-2",
    "value": "gern",
    "answer": "true",
-   "x": 384,
-   "y": 1317,
-   "w": 16,
-   "h": 16
+   "x": 383,
+   "y": 1314,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-10b-2-nichtsogern",
@@ -1523,10 +1743,10 @@
    "name": "l8-10b-2",
    "value": "nichtsogern",
    "answer": "false",
-   "x": 471,
-   "y": 1316,
-   "w": 16,
-   "h": 16
+   "x": 468,
+   "y": 1312,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-10b-3-samstagnachmittag",
@@ -1536,10 +1756,10 @@
    "name": "l8-10b-3",
    "value": "samstagnachmittag",
    "answer": "false",
-   "x": 496,
-   "y": 1338,
-   "w": 16,
-   "h": 16
+   "x": 492,
+   "y": 1337,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-10b-3-samstagabend",
@@ -1549,10 +1769,10 @@
    "name": "l8-10b-3",
    "value": "samstagabend",
    "answer": "true",
-   "x": 719,
-   "y": 1334,
-   "w": 16,
-   "h": 16
+   "x": 716,
+   "y": 1332,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-10b-4-umvier",
@@ -1562,10 +1782,10 @@
    "name": "l8-10b-4",
    "value": "umvier",
    "answer": "true",
-   "x": 492,
-   "y": 1362,
-   "w": 16,
-   "h": 16
+   "x": 490,
+   "y": 1363,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-10b-4-umsieben",
@@ -1575,10 +1795,10 @@
    "name": "l8-10b-4",
    "value": "umsieben",
    "answer": "false",
-   "x": 646,
-   "y": 1360,
-   "w": 16,
-   "h": 16
+   "x": 644,
+   "y": 1358,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-10b-5-umsieben",
@@ -1588,10 +1808,10 @@
    "name": "l8-10b-5",
    "value": "umsieben",
    "answer": "true",
-   "x": 399,
-   "y": 1392,
-   "w": 16,
-   "h": 16
+   "x": 397,
+   "y": 1390,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-10b-5-umviertelvoracht",
@@ -1601,10 +1821,50 @@
    "name": "l8-10b-5",
    "value": "umviertelvoracht",
    "answer": "false",
-   "x": 533,
-   "y": 1390,
-   "w": 16,
-   "h": 16
+   "x": 530,
+   "y": 1387,
+   "w": 18,
+   "h": 18
+  },
+  {
+   "id": "own-sentence-0",
+   "group": "own",
+   "kind": "text",
+   "label": "9 Eigener Satz 1",
+   "x": 0,
+   "y": 0,
+   "w": 1,
+   "h": 1
+  },
+  {
+   "id": "own-sentence-1",
+   "group": "own",
+   "kind": "text",
+   "label": "9 Eigener Satz 2",
+   "x": 0,
+   "y": 0,
+   "w": 1,
+   "h": 1
+  },
+  {
+   "id": "own-sentence-2",
+   "group": "own",
+   "kind": "text",
+   "label": "9 Eigener Satz 3",
+   "x": 0,
+   "y": 0,
+   "w": 1,
+   "h": 1
+  },
+  {
+   "id": "own-sentence-3",
+   "group": "own",
+   "kind": "text",
+   "label": "9 Eigener Satz 4",
+   "x": 0,
+   "y": 0,
+   "w": 1,
+   "h": 1
   }
  ],
  "audio": [
@@ -1612,10 +1872,10 @@
    "id": "au-cd1-37",
    "src": "assets/ab-cd1-track37.mp3",
    "label": "CD 1 Track 37",
-   "x": 128,
-   "y": 1166,
-   "w": 34,
-   "h": 14
+   "x": 127,
+   "y": 1159,
+   "w": 42,
+   "h": 20
   }
  ],
  "groups": [
@@ -1637,11 +1897,12 @@
   }
  ],
  "review": {
-  "status": "partial",
+  "status": "verified",
   "verifiedWords": 175,
   "totalWords": 175,
   "notes": [
-   "U7 'der Morgen' (A) printed example. U8 example sentence is printed: 'D Am Nachmittag trifft sie ihre Oma im Caf&eacute;.' (D = 16:00 picture). KEY CONFLICT: Lsg lists 'D Am Morgen trinkt sie Kaffee' but D is the printed example; by elimination the 07:30 picture A matches 'trinkt sie Kaffee' -> answered A / Am Morgen (page logic over key). Clock displays and cinema-ticket image are graphics, not words. U9 drawing/partner exercise - no fields. U10 answers from Lsg: a in der Kneipe; b 1 Theaterkarten 2 gern 3 Samstagabend 4 um vier Uhr 5 um sieben."
+   "U7 'der Morgen' (A) printed example. U8 example sentence is printed: 'D Am Nachmittag trifft sie ihre Oma im Caf&eacute;.' (D = 16:00 picture). KEY CONFLICT: Lsg lists 'D Am Morgen trinkt sie Kaffee' but D is the printed example; by elimination the 07:30 picture A matches 'trinkt sie Kaffee' -> answered A / Am Morgen (page logic over key). Clock displays and cinema-ticket image are graphics, not words. U9 drawing/partner exercise - no fields. U10 answers from Lsg: a in der Kneipe; b 1 Theaterkarten 2 gern 3 Samstagabend 4 um vier Uhr 5 um sieben.",
+   "2026-11-15: original scan/fonts/layout restored;all28fields measured;daytime selects and valid A-F option objects;exercise9 opens4saved drawing+sentence cards. Track37 real audio retained. Key freshly verified: coffee=A."
   ]
  }
 }
