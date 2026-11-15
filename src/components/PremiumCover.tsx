@@ -32,8 +32,7 @@ export function PremiumCover({src, alt}: {src: string; alt: string}) {
       <div className="coverSocials" aria-label={t('Contact and social links')}><CoverSocials/></div>
     </div>
     <button type="button" className="coverOpen" onClick={e => openBookCover(e.currentTarget.closest('.fullscreenCover') as HTMLElement, () => {document.dispatchEvent(new Event('menschen:paper')); window.menschenBook?.turnToPage?.(1);})}>{t('Open book ←')}</button>
-    <p className="premiumCoverAudio" lang={language}>{t('Tap any word to listen & explore')}</p>
-    <div className="coverCopy" lang={language} dir="ltr">{t('Original book © Hueber Verlag')}<br/>{t('All rights belong to the original owners.')}</div>
+    <div className="coverCopy" lang={language} dir={language === 'ar' ? 'rtl' : 'ltr'}>{t('Interactive edition of the original book © Hueber Verlag')}<br/>{t('All rights belong to the original owners.')}</div>
   </div></section>;
   return <><div className="coverFrame coverPlaceholder" aria-hidden="true"><button className="coverOpen" hidden/></div>{active && createPortal(cover, document.body)}</>;
 }
