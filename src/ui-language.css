@@ -97,3 +97,5 @@ html[data-ui-language="de"] .howtoList li::before{left:auto;right:0}
 .profileLanguageOptions .profileLanguageCheck{display:none}
 .profileLanguageOptions .profileRow[aria-pressed="true"]{border-color:#713c46;box-shadow:inset 0 0 0 1px #713c46}
 .profileLanguageOptions .profileRow:focus-visible{outline:2px solid #713c46;outline-offset:2px}
+/* Give the last language row breathing room above the reader toolbar. */
+@media(max-width:600px){.controls .profilePanel{padding-bottom:24px!important}}
