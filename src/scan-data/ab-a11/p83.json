@@ -1147,7 +1147,428 @@
    "h": 14
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "translate-0-0",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 1/1",
+   "x": 413,
+   "y": 343,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-0-1",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 1/2",
+   "x": 413,
+   "y": 370,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-0-2",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 1/3",
+   "x": 413,
+   "y": 429,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-0-3",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 1/4",
+   "x": 413,
+   "y": 458,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-0-4",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 1/5",
+   "x": 413,
+   "y": 489,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-0-5",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 1/6",
+   "x": 413,
+   "y": 518,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-0-6",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 1/7",
+   "x": 413,
+   "y": 546,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-0-7",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 1/8",
+   "x": 413,
+   "y": 577,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-0-8",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 1/9",
+   "x": 413,
+   "y": 606,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-0-9",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 1/10",
+   "x": 413,
+   "y": 635,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-0-10",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 1/11",
+   "x": 413,
+   "y": 663,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-0-11",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 1/12",
+   "x": 413,
+   "y": 694,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-0-12",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 1/13",
+   "x": 413,
+   "y": 750,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-0-13",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 1/14",
+   "x": 413,
+   "y": 780,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-0-14",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 1/15",
+   "x": 413,
+   "y": 840,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-0-15",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 1/16",
+   "x": 413,
+   "y": 869,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-0-16",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 1/17",
+   "x": 413,
+   "y": 970,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-0-17",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 1/18",
+   "x": 413,
+   "y": 999,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-0-18",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 1/19",
+   "x": 413,
+   "y": 1028,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-0-19",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 1/20",
+   "x": 413,
+   "y": 1059,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-0-20",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 1/21",
+   "x": 413,
+   "y": 1087,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-0-21",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 1/22",
+   "x": 413,
+   "y": 1116,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-1-0",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 2/1",
+   "x": 827,
+   "y": 340,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-1-1",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 2/2",
+   "x": 827,
+   "y": 369,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-1-2",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 2/3",
+   "x": 827,
+   "y": 398,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-1-3",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 2/4",
+   "x": 827,
+   "y": 456,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-1-4",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 2/5",
+   "x": 827,
+   "y": 501,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-1-5",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 2/6",
+   "x": 827,
+   "y": 530,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-1-6",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 2/7",
+   "x": 827,
+   "y": 559,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-1-7",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 2/8",
+   "x": 827,
+   "y": 646,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-1-8",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 2/9",
+   "x": 827,
+   "y": 674,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-1-9",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 2/10",
+   "x": 827,
+   "y": 706,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-1-10",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 2/11",
+   "x": 827,
+   "y": 778,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-1-11",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 2/12",
+   "x": 827,
+   "y": 807,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-1-12",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 2/13",
+   "x": 827,
+   "y": 836,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-1-13",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 2/14",
+   "x": 827,
+   "y": 864,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-1-14",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 2/15",
+   "x": 827,
+   "y": 908,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-1-15",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 2/16",
+   "x": 827,
+   "y": 939,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-1-16",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 2/17",
+   "x": 827,
+   "y": 968,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-1-17",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 2/18",
+   "x": 827,
+   "y": 997,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "translate-1-18",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung 2/19",
+   "x": 827,
+   "y": 1025,
+   "w": 211,
+   "h": 28
+  },
+  {
+   "id": "own-vocabulary",
+   "group": "own",
+   "kind": "text",
+   "label": "2 Meine weiteren Wörter",
+   "x": 226,
+   "y": 1411,
+   "w": 824,
+   "h": 202
+  }
+ ],
  "audio": [],
  "groups": [],
  "review": {
@@ -1156,7 +1577,8 @@
   "totalWords": 163,
   "notes": [
    "LERNWORTSCHATZ Lektion 10. Ü1 = translate into your own language and Ü2 = free notes (both Individuell): no fields, vocabulary words only.",
-   "TIPP box body kept as words. Photos on the right excluded. Right-edge Modul tab cut off by scan, omitted."
+   "TIPP box body kept as words. Photos on the right excluded. Right-edge Modul tab cut off by scan, omitted.",
+   "2026-11-16: Original scan/fonts;41translation entries plus saved ownvocabulary textarea aligned with the source rules. Personal translations and notes not falsely graded."
   ]
  }
 }
