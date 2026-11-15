@@ -2,7 +2,7 @@ const {chromium}=require('playwright');const fs=require('fs'),http=require('http
 const server=http.createServer((req,res)=>{let f=path.join(root,new URL(req.url,'http://localhost').pathname);try{res.setHeader('Content-Type',mime[path.extname(f)]||'application/octet-stream');res.end(fs.readFileSync(f))}catch{res.writeHead(404);res.end('missing')}});
 const assert=require('node:assert/strict');
 (async()=>{await new Promise(r=>server.listen(5193,r));const browser=await chromium.launch({args:['--no-sandbox']});try{
-for(const [route,token,lesson] of [['index.html','cover','Lektion 2'],['kb-a12-l13-16.html','cover','Lektion 14'],['ab1.html','abcover','Lektion 2'],['ab-a12-l13-16.html','abcover','Lektion 14']]){
+for(const [route,token,lesson] of [['index.html','cover','Lesson 2'],['kb-a12-l13-16.html','cover','Lesson 14'],['ab1.html','abcover','Lesson 2'],['ab-a12-l13-16.html','abcover','Lesson 14']]){
  const page=await browser.newPage({viewport:{width:390,height:844},isMobile:true});const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.addInitScript(()=>localStorage.setItem('menschen-ui-language','en'));
  await page.goto(`http://localhost:5193/${route}#${token}`);await page.waitForSelector('.fullscreenCover .isLoaded');await page.evaluate(()=>document.fonts.ready);
@@ -25,6 +25,7 @@ for(const [route,token,lesson] of [['index.html','cover','Lektion 2'],['kb-a12-l
  await page.emulateMedia({reducedMotion:'no-preference'});
  await page.locator('.lnv-pill').click();assert.equal(await page.locator('.lnv-bookcard').count(),4);
  await page.evaluate(()=>document.getAnimations().forEach(a=>a.finish()));
+ await page.waitForFunction(()=>Array.from(document.querySelectorAll('.lnv-bookcard img')).every(i=>i.complete&&i.naturalWidth>0));
  await page.screenshot({path:`/downloads/library-four-${route}.png`});
  for (const label of ['Kursbuch A1.1','Arbeitsbuch A1.1','Kursbuch A1.2','Arbeitsbuch A1.2']) {
    await page.locator('.lnv-bookcard').getByRole('img').count();
