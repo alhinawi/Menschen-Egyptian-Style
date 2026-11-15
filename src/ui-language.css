@@ -18,7 +18,20 @@ html[data-ui-language="en"] .howtoPage{font-family:system-ui,sans-serif}
 
 @keyframes ui-slide-from-right{from{transform:translateX(100%)}to{transform:translateX(0)}}
 html[data-ui-language="ar"] .lnv-panelBox.animate-lnv-slide{animation:ui-slide-from-right .24s ease-out both}
-html[data-ui-language="en"] .howtoList li{padding-inline:0 36px}
+html[data-ui-language="en"] .howtoList li{padding-inline:0 78px}
 html[data-ui-language="en"] .howtoList li::before{left:auto;right:0}
 
 html[data-ui-language="ar"] .profilePanel{left:auto;right:0}
+
+/* The German book turns left-to-right in every interface language. Grid
+   columns and arrow positions must not mirror with the Arabic UI. */
+html[data-ui-language] .controls{direction:ltr}
+html[data-ui-language="ar"] .controls .profilePanel{direction:rtl}
+html[data-ui-language="en"] .controls .profilePanel{direction:ltr}
+/* Reserve the exact middle grid cell for the page number. A chevron adds
+   visual weight on one side and makes the numeral look off-centre. */
+html[data-ui-language] .controls .lnv-pagePill{direction:ltr;display:flex;align-items:center;justify-content:center;gap:0;text-align:center;font-variant-numeric:tabular-nums}
+html[data-ui-language] .controls .lnv-pagePill .lnv-chev{display:none}
+
+html[data-ui-language] .controls .lnv-pageLabel{display:block;min-width:0;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:center;font-size:inherit;line-height:1.3}
+html[data-ui-language] .controls .lnv-pagePill{overflow:hidden;min-width:0;white-space:nowrap}

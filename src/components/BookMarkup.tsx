@@ -42,6 +42,7 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
     if (artwork) return <PremiumCover key={key} src={artwork[1].src} alt={artwork[1].alt}/>;
   }
   if(attrs.class?.split(' ').includes('helpBanner'))return <div key={key} className="helpBanner" dir="rtl" lang="ar-EG">{READER_HELP}</div>;
+  if(attrs.class?.split(' ').includes('howtoEyebrow')) return <div key={key} className="howtoEyebrow" dir="ltr">MENSCHEN</div>;
   if(attrs.id==='palette')return <button key={key} id="palette" hidden aria-hidden="true" tabIndex={-1} style={{display:'none'}}/>;
   if('data-react-theme-slot' in attrs)return createElement(ReaderProfile, {key});
   if(attrs.class?.split(' ').includes('controls')) {
