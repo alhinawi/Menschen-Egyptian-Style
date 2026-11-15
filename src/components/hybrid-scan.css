@@ -634,3 +634,19 @@ html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='73'] .hybridField
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='87'] .hybridAudio{color:transparent;background:transparent!important;border:0}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='87'] select.hybridField{font-size:.95cqw!important}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='87'] .hybridCheck:nth-child(2){top:63%}
+
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='88'] .hybridField{font-size:1.3cqw!important;outline:0}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='88'] .hybridField:focus{outline:1px solid #26764c}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='88'] .hybridField.hybridCorrect{outline:1px solid #268250}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='88'] .hybridField.hybridWrong{outline:1px solid #bd3838}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='88'] .hybridTools{display:contents}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='88'] .hybridCheck{position:absolute;left:93%;font-size:1.2cqw}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='88'] .hybridCheck output{font-size:1.2cqw;position:absolute;right:110%;top:0;width:10cqw;background:white}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='88'] .hybridCheck:nth-child(1){top:28%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='88'] .hybridCheck:nth-child(2){top:57%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='88'] .hybridCheck:nth-child(3){top:84%}
+.p88Match .sharedMatchItem{color:transparent!important;background:transparent!important;border:0!important}
+.hybridScores88 output{position:absolute;color:#236b38;background:white;font:1.3cqw Arial}
+.hybridScores88 i{position:absolute;width:2.2cqw;height:2.2cqw;border:2px solid #236b38;border-radius:50%;transform:translate(-50%,-50%)}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='88'] .hybridCheck:nth-child(3){top:83%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='88'] .hybridCheck:nth-child(3) output{transform:translateY(-2.8cqw)}
