@@ -1282,9 +1282,10 @@
    "label": "1 Da ist ...",
    "answer": "ein Schlüssel|eine Uhr",
    "x": 287,
-   "y": 336,
+   "y": 334,
    "w": 180,
-   "h": 16
+   "h": 23,
+   "unordered": true
   },
   {
    "id": "g1-ist-pos-2",
@@ -1293,9 +1294,10 @@
    "label": "1 Da ist ...",
    "answer": "ein Schlüssel|eine Uhr",
    "x": 287,
-   "y": 360,
+   "y": 358,
    "w": 180,
-   "h": 16
+   "h": 23,
+   "unordered": true
   },
   {
    "id": "g1-ist-neg-1",
@@ -1304,9 +1306,10 @@
    "label": "1 Da ist nicht ...",
    "answer": "kein Handy|keine Tasche|kein Regenschirm",
    "x": 592,
-   "y": 359,
+   "y": 357,
    "w": 180,
-   "h": 16
+   "h": 23,
+   "unordered": true
   },
   {
    "id": "g1-ist-neg-2",
@@ -1315,9 +1318,10 @@
    "label": "1 Da ist nicht ...",
    "answer": "kein Handy|keine Tasche|kein Regenschirm",
    "x": 592,
-   "y": 385,
+   "y": 383,
    "w": 180,
-   "h": 16
+   "h": 23,
+   "unordered": true
   },
   {
    "id": "g1-ist-neg-3",
@@ -1326,9 +1330,10 @@
    "label": "1 Da ist nicht ...",
    "answer": "kein Handy|keine Tasche|kein Regenschirm",
    "x": 592,
-   "y": 410,
+   "y": 408,
    "w": 180,
-   "h": 16
+   "h": 23,
+   "unordered": true
   },
   {
    "id": "g1-sind-pos-1",
@@ -1337,9 +1342,10 @@
    "label": "1 Da sind ...",
    "answer": "Bücher|Kugelschreiber",
    "x": 287,
-   "y": 449,
+   "y": 447,
    "w": 180,
-   "h": 16
+   "h": 23,
+   "unordered": true
   },
   {
    "id": "g1-sind-pos-2",
@@ -1348,9 +1354,10 @@
    "label": "1 Da sind ...",
    "answer": "Bücher|Kugelschreiber",
    "x": 287,
-   "y": 474,
+   "y": 472,
    "w": 180,
-   "h": 16
+   "h": 23,
+   "unordered": true
   },
   {
    "id": "g1-sind-neg-1",
@@ -1359,9 +1366,10 @@
    "label": "1 Da sind nicht ...",
    "answer": "keine Flaschen|keine Briefmarken",
    "x": 593,
-   "y": 473,
+   "y": 471,
    "w": 179,
-   "h": 16
+   "h": 23,
+   "unordered": true
   },
   {
    "id": "g1-sind-neg-2",
@@ -1370,64 +1378,158 @@
    "label": "1 Da sind nicht ...",
    "answer": "keine Flaschen|keine Briefmarken",
    "x": 593,
-   "y": 498,
+   "y": 496,
    "w": 179,
-   "h": 16
-  },
-  {
-   "id": "g2a-schluessel",
-   "group": "g2",
-   "kind": "text",
-   "label": "2a: ___/___ Schlüssel",
-   "answer": "einen|keinen",
-   "x": 203,
-   "y": 651,
-   "w": 113,
-   "h": 16
+   "h": 23,
+   "unordered": true
   },
   {
    "id": "g2a-stift",
    "group": "g2",
-   "kind": "text",
+   "kind": "select",
    "label": "2a: ___ Stift",
    "answer": "einen",
-   "x": 460,
-   "y": 650,
-   "w": 65,
-   "h": 16
+   "x": 529,
+   "y": 647,
+   "w": 61,
+   "h": 23,
+   "options": [
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "kein",
+     "label": "kein"
+    },
+    {
+     "value": "keine",
+     "label": "keine"
+    },
+    {
+     "value": "keinen",
+     "label": "keinen"
+    }
+   ]
   },
   {
    "id": "g2a-flasche",
    "group": "g2",
-   "kind": "text",
+   "kind": "select",
    "label": "2a: ___ Flasche",
    "answer": "eine",
-   "x": 650,
-   "y": 652,
-   "w": 62,
-   "h": 16
+   "x": 646,
+   "y": 647,
+   "w": 61,
+   "h": 23,
+   "options": [
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "kein",
+     "label": "kein"
+    },
+    {
+     "value": "keine",
+     "label": "keine"
+    },
+    {
+     "value": "keinen",
+     "label": "keinen"
+    }
+   ]
   },
   {
    "id": "g2a-rechnung",
    "group": "g2",
-   "kind": "text",
+   "kind": "select",
    "label": "2a: ___ Rechnung",
    "answer": "eine",
-   "x": 792,
-   "y": 651,
-   "w": 62,
-   "h": 16
+   "x": 789,
+   "y": 647,
+   "w": 59,
+   "h": 23,
+   "options": [
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "kein",
+     "label": "kein"
+    },
+    {
+     "value": "keine",
+     "label": "keine"
+    },
+    {
+     "value": "keinen",
+     "label": "keinen"
+    }
+   ]
   },
   {
    "id": "g2a-brille",
    "group": "g2",
-   "kind": "text",
+   "kind": "select",
    "label": "2a: ___ Brille",
    "answer": "eine",
-   "x": 203,
-   "y": 676,
-   "w": 67,
-   "h": 16
+   "x": 206,
+   "y": 675,
+   "w": 62,
+   "h": 23,
+   "options": [
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "kein",
+     "label": "kein"
+    },
+    {
+     "value": "keine",
+     "label": "keine"
+    },
+    {
+     "value": "keinen",
+     "label": "keinen"
+    }
+   ]
   },
   {
    "id": "g2b-A",
@@ -1437,7 +1539,7 @@
    "name": "g2b",
    "value": "A",
    "answer": "false",
-   "x": 205,
+   "x": 211,
    "y": 762,
    "w": 16,
    "h": 16
@@ -1450,7 +1552,7 @@
    "name": "g2b",
    "value": "B",
    "answer": "false",
-   "x": 497,
+   "x": 503,
    "y": 762,
    "w": 16,
    "h": 16
@@ -1463,7 +1565,7 @@
    "name": "g2b",
    "value": "C",
    "answer": "true",
-   "x": 775,
+   "x": 781,
    "y": 762,
    "w": 16,
    "h": 16
@@ -1471,200 +1573,3181 @@
   {
    "id": "g3-b",
    "group": "g3",
-   "kind": "text",
+   "kind": "select",
    "label": "3 (b)",
    "answer": "es",
    "x": 657,
-   "y": 965,
-   "w": 78,
-   "h": 16
+   "y": 963,
+   "w": 75,
+   "h": 23,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "den",
+     "label": "den"
+    },
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "er",
+     "label": "er"
+    },
+    {
+     "value": "es",
+     "label": "es"
+    },
+    {
+     "value": "sie",
+     "label": "sie"
+    },
+    {
+     "value": "Der",
+     "label": "Der"
+    },
+    {
+     "value": "Die",
+     "label": "Die"
+    },
+    {
+     "value": "Das",
+     "label": "Das"
+    },
+    {
+     "value": "Er",
+     "label": "Er"
+    },
+    {
+     "value": "Es",
+     "label": "Es"
+    },
+    {
+     "value": "Sie",
+     "label": "Sie"
+    }
+   ]
   },
   {
    "id": "g3-c",
    "group": "g3",
-   "kind": "text",
+   "kind": "select",
    "label": "3 (c)",
    "answer": "Das",
-   "x": 852,
-   "y": 965,
-   "w": 117,
-   "h": 16
+   "x": 854,
+   "y": 963,
+   "w": 112,
+   "h": 23,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "den",
+     "label": "den"
+    },
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "er",
+     "label": "er"
+    },
+    {
+     "value": "es",
+     "label": "es"
+    },
+    {
+     "value": "sie",
+     "label": "sie"
+    },
+    {
+     "value": "Der",
+     "label": "Der"
+    },
+    {
+     "value": "Die",
+     "label": "Die"
+    },
+    {
+     "value": "Das",
+     "label": "Das"
+    },
+    {
+     "value": "Er",
+     "label": "Er"
+    },
+    {
+     "value": "Es",
+     "label": "Es"
+    },
+    {
+     "value": "Sie",
+     "label": "Sie"
+    }
+   ]
   },
   {
    "id": "g3-d",
    "group": "g3",
-   "kind": "text",
+   "kind": "select",
    "label": "3 (d)",
    "answer": "Es",
-   "x": 450,
-   "y": 991,
-   "w": 85,
-   "h": 16
+   "x": 446,
+   "y": 989,
+   "w": 86,
+   "h": 23,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "den",
+     "label": "den"
+    },
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "er",
+     "label": "er"
+    },
+    {
+     "value": "es",
+     "label": "es"
+    },
+    {
+     "value": "sie",
+     "label": "sie"
+    },
+    {
+     "value": "Der",
+     "label": "Der"
+    },
+    {
+     "value": "Die",
+     "label": "Die"
+    },
+    {
+     "value": "Das",
+     "label": "Das"
+    },
+    {
+     "value": "Er",
+     "label": "Er"
+    },
+    {
+     "value": "Es",
+     "label": "Es"
+    },
+    {
+     "value": "Sie",
+     "label": "Sie"
+    }
+   ]
   },
   {
    "id": "g3-e",
    "group": "g3",
-   "kind": "text",
+   "kind": "select",
    "label": "3 (e)",
    "answer": "eine",
-   "x": 790,
-   "y": 990,
-   "w": 178,
-   "h": 16
+   "x": 865,
+   "y": 989,
+   "w": 100,
+   "h": 23,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "den",
+     "label": "den"
+    },
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "er",
+     "label": "er"
+    },
+    {
+     "value": "es",
+     "label": "es"
+    },
+    {
+     "value": "sie",
+     "label": "sie"
+    },
+    {
+     "value": "Der",
+     "label": "Der"
+    },
+    {
+     "value": "Die",
+     "label": "Die"
+    },
+    {
+     "value": "Das",
+     "label": "Das"
+    },
+    {
+     "value": "Er",
+     "label": "Er"
+    },
+    {
+     "value": "Es",
+     "label": "Es"
+    },
+    {
+     "value": "Sie",
+     "label": "Sie"
+    }
+   ]
   },
   {
    "id": "g3-f",
    "group": "g3",
-   "kind": "text",
+   "kind": "select",
    "label": "3 (f)",
    "answer": "einen",
-   "x": 391,
-   "y": 1016,
-   "w": 111,
-   "h": 16
+   "x": 389,
+   "y": 1014,
+   "w": 113,
+   "h": 23,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "den",
+     "label": "den"
+    },
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "er",
+     "label": "er"
+    },
+    {
+     "value": "es",
+     "label": "es"
+    },
+    {
+     "value": "sie",
+     "label": "sie"
+    },
+    {
+     "value": "Der",
+     "label": "Der"
+    },
+    {
+     "value": "Die",
+     "label": "Die"
+    },
+    {
+     "value": "Das",
+     "label": "Das"
+    },
+    {
+     "value": "Er",
+     "label": "Er"
+    },
+    {
+     "value": "Es",
+     "label": "Es"
+    },
+    {
+     "value": "Sie",
+     "label": "Sie"
+    }
+   ]
   },
   {
    "id": "g3-g",
    "group": "g3",
-   "kind": "text",
+   "kind": "select",
    "label": "3 (g)",
    "answer": "Er",
-   "x": 612,
-   "y": 1015,
-   "w": 193,
-   "h": 16
+   "x": 616,
+   "y": 1014,
+   "w": 184,
+   "h": 23,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "den",
+     "label": "den"
+    },
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "er",
+     "label": "er"
+    },
+    {
+     "value": "es",
+     "label": "es"
+    },
+    {
+     "value": "sie",
+     "label": "sie"
+    },
+    {
+     "value": "Der",
+     "label": "Der"
+    },
+    {
+     "value": "Die",
+     "label": "Die"
+    },
+    {
+     "value": "Das",
+     "label": "Das"
+    },
+    {
+     "value": "Er",
+     "label": "Er"
+    },
+    {
+     "value": "Es",
+     "label": "Es"
+    },
+    {
+     "value": "Sie",
+     "label": "Sie"
+    }
+   ]
   },
   {
    "id": "g3-h",
    "group": "g3",
-   "kind": "text",
+   "kind": "select",
    "label": "3 (h)",
    "answer": "einen",
-   "x": 436,
-   "y": 1041,
-   "w": 117,
-   "h": 16
+   "x": 439,
+   "y": 1039,
+   "w": 111,
+   "h": 23,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "den",
+     "label": "den"
+    },
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "er",
+     "label": "er"
+    },
+    {
+     "value": "es",
+     "label": "es"
+    },
+    {
+     "value": "sie",
+     "label": "sie"
+    },
+    {
+     "value": "Der",
+     "label": "Der"
+    },
+    {
+     "value": "Die",
+     "label": "Die"
+    },
+    {
+     "value": "Das",
+     "label": "Das"
+    },
+    {
+     "value": "Er",
+     "label": "Er"
+    },
+    {
+     "value": "Es",
+     "label": "Es"
+    },
+    {
+     "value": "Sie",
+     "label": "Sie"
+    }
+   ]
   },
   {
    "id": "g3-i",
    "group": "g3",
-   "kind": "text",
+   "kind": "select",
    "label": "3 (i)",
    "answer": "er",
-   "x": 710,
-   "y": 1040,
-   "w": 103,
-   "h": 16
+   "x": 709,
+   "y": 1039,
+   "w": 98,
+   "h": 23,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "den",
+     "label": "den"
+    },
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "er",
+     "label": "er"
+    },
+    {
+     "value": "es",
+     "label": "es"
+    },
+    {
+     "value": "sie",
+     "label": "sie"
+    },
+    {
+     "value": "Der",
+     "label": "Der"
+    },
+    {
+     "value": "Die",
+     "label": "Die"
+    },
+    {
+     "value": "Das",
+     "label": "Das"
+    },
+    {
+     "value": "Er",
+     "label": "Er"
+    },
+    {
+     "value": "Es",
+     "label": "Es"
+    },
+    {
+     "value": "Sie",
+     "label": "Sie"
+    }
+   ]
   },
   {
    "id": "g3-j",
    "group": "g3",
-   "kind": "text",
+   "kind": "select",
    "label": "3 (j)",
    "answer": "Die",
-   "x": 205,
-   "y": 1067,
-   "w": 117,
-   "h": 16
+   "x": 208,
+   "y": 1065,
+   "w": 111,
+   "h": 23,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "den",
+     "label": "den"
+    },
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "er",
+     "label": "er"
+    },
+    {
+     "value": "es",
+     "label": "es"
+    },
+    {
+     "value": "sie",
+     "label": "sie"
+    },
+    {
+     "value": "Der",
+     "label": "Der"
+    },
+    {
+     "value": "Die",
+     "label": "Die"
+    },
+    {
+     "value": "Das",
+     "label": "Das"
+    },
+    {
+     "value": "Er",
+     "label": "Er"
+    },
+    {
+     "value": "Es",
+     "label": "Es"
+    },
+    {
+     "value": "Sie",
+     "label": "Sie"
+    }
+   ]
   },
   {
    "id": "g3-k",
    "group": "g3",
-   "kind": "text",
+   "kind": "select",
    "label": "3 (k)",
    "answer": "Sie",
-   "x": 627,
-   "y": 1066,
-   "w": 105,
-   "h": 16
+   "x": 632,
+   "y": 1065,
+   "w": 98,
+   "h": 23,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "den",
+     "label": "den"
+    },
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "er",
+     "label": "er"
+    },
+    {
+     "value": "es",
+     "label": "es"
+    },
+    {
+     "value": "sie",
+     "label": "sie"
+    },
+    {
+     "value": "Der",
+     "label": "Der"
+    },
+    {
+     "value": "Die",
+     "label": "Die"
+    },
+    {
+     "value": "Das",
+     "label": "Das"
+    },
+    {
+     "value": "Er",
+     "label": "Er"
+    },
+    {
+     "value": "Es",
+     "label": "Es"
+    },
+    {
+     "value": "Sie",
+     "label": "Sie"
+    }
+   ]
   },
   {
    "id": "g3-l",
    "group": "g3",
-   "kind": "text",
+   "kind": "select",
    "label": "3 (l)",
    "answer": "einen",
-   "x": 401,
-   "y": 1092,
-   "w": 105,
-   "h": 16
+   "x": 402,
+   "y": 1090,
+   "w": 101,
+   "h": 23,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "den",
+     "label": "den"
+    },
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "er",
+     "label": "er"
+    },
+    {
+     "value": "es",
+     "label": "es"
+    },
+    {
+     "value": "sie",
+     "label": "sie"
+    },
+    {
+     "value": "Der",
+     "label": "Der"
+    },
+    {
+     "value": "Die",
+     "label": "Die"
+    },
+    {
+     "value": "Das",
+     "label": "Das"
+    },
+    {
+     "value": "Er",
+     "label": "Er"
+    },
+    {
+     "value": "Es",
+     "label": "Es"
+    },
+    {
+     "value": "Sie",
+     "label": "Sie"
+    }
+   ]
   },
   {
    "id": "g3-m",
    "group": "g3",
-   "kind": "text",
+   "kind": "select",
    "label": "3 (m)",
    "answer": "ein",
-   "x": 625,
-   "y": 1091,
-   "w": 104,
-   "h": 16
+   "x": 628,
+   "y": 1090,
+   "w": 99,
+   "h": 23,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "den",
+     "label": "den"
+    },
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "er",
+     "label": "er"
+    },
+    {
+     "value": "es",
+     "label": "es"
+    },
+    {
+     "value": "sie",
+     "label": "sie"
+    },
+    {
+     "value": "Der",
+     "label": "Der"
+    },
+    {
+     "value": "Die",
+     "label": "Die"
+    },
+    {
+     "value": "Das",
+     "label": "Das"
+    },
+    {
+     "value": "Er",
+     "label": "Er"
+    },
+    {
+     "value": "Es",
+     "label": "Es"
+    },
+    {
+     "value": "Sie",
+     "label": "Sie"
+    }
+   ]
   },
   {
    "id": "g3-n",
    "group": "g3",
-   "kind": "text",
+   "kind": "select",
    "label": "3 (n)",
    "answer": "einen",
-   "x": 850,
-   "y": 1091,
-   "w": 105,
-   "h": 16
+   "x": 845,
+   "y": 1090,
+   "w": 111,
+   "h": 23,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "den",
+     "label": "den"
+    },
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "er",
+     "label": "er"
+    },
+    {
+     "value": "es",
+     "label": "es"
+    },
+    {
+     "value": "sie",
+     "label": "sie"
+    },
+    {
+     "value": "Der",
+     "label": "Der"
+    },
+    {
+     "value": "Die",
+     "label": "Die"
+    },
+    {
+     "value": "Das",
+     "label": "Das"
+    },
+    {
+     "value": "Er",
+     "label": "Er"
+    },
+    {
+     "value": "Es",
+     "label": "Es"
+    },
+    {
+     "value": "Sie",
+     "label": "Sie"
+    }
+   ]
   },
   {
-   "id": "g4-s1",
+   "id": "g4-pair-0-sg",
    "group": "g4",
    "kind": "text",
-   "label": "4 Buchstabensalat Zeile 1",
-   "answer": "HANDYS BRIEFMARKEN TISCH BÜRO TERMINE DRUCKER STUHL SCHRÄNKE BILD TEPPICHE",
-   "x": 207,
-   "y": 1212,
-   "w": 760,
-   "h": 22
-  },
-  {
-   "id": "g4-s2",
-   "group": "g4",
-   "kind": "text",
-   "label": "4 Buchstabensalat Zeile 2",
-   "answer": "FLASCHEN KETTE UHREN RINGBUCH GELDBÖRSEN RECHNUNG STIFTE LAMPEN PROBLEM",
-   "x": 207,
-   "y": 1238,
-   "w": 760,
-   "h": 22
-  },
-  {
-   "id": "g4-s3",
-   "group": "g4",
-   "kind": "text",
-   "label": "4 Buchstabensalat Zeile 3",
-   "answer": "FORMULARE BRILLE FEUERZEUGE SEIFE",
-   "x": 208,
-   "y": 1266,
-   "w": 340,
-   "h": 22
-  },
-  {
-   "id": "g4-tab-sg",
-   "group": "g4",
-   "kind": "text",
-   "label": "4 Tabelle: Singular",
-   "answer": "die Briefmarke|der Tisch|das Büro|der Termin|der Drucker|der Stuhl|der Schrank|das Bild|der Teppich|die Flasche|die Kette|die Uhr|das Ringbuch|die Geldbörse|die Rechnung|der Stift|die Lampe|das Problem|das Formular|die Brille|das Feuerzeug|die Seife",
+   "label": "4 Zeile 1 Singular mit Artikel",
+   "answer": "die Briefmarke",
    "x": 210,
    "y": 1364,
    "w": 158,
-   "h": 20
+   "h": 24
   },
   {
-   "id": "g4-tab-pl",
+   "id": "g4-pair-0-pl",
    "group": "g4",
    "kind": "text",
-   "label": "4 Tabelle: Plural",
-   "answer": "die Briefmarken|die Tische|die Büros|die Termine|die Drucker|die Stühle|die Schränke|die Bilder|die Teppiche|die Flaschen|die Ketten|die Uhren|die Ringbücher|die Geldbörsen|die Rechnungen|die Stifte|die Lampen|die Probleme|die Formulare|die Brillen|die Feuerzeuge|die Seifen",
+   "label": "4 Zeile 1 Plural",
+   "answer": "Briefmarken|die Briefmarken",
    "x": 380,
    "y": 1364,
-   "w": 155,
-   "h": 20
+   "w": 220,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-1-sg",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 2 Singular mit Artikel",
+   "answer": "der Tisch",
+   "x": 210,
+   "y": 1364,
+   "w": 158,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-1-pl",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 2 Plural",
+   "answer": "Tische|die Tische",
+   "x": 380,
+   "y": 1364,
+   "w": 220,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-2-sg",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 3 Singular mit Artikel",
+   "answer": "das Büro",
+   "x": 210,
+   "y": 1364,
+   "w": 158,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-2-pl",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 3 Plural",
+   "answer": "Büros|die Büros",
+   "x": 380,
+   "y": 1364,
+   "w": 220,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-3-sg",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 4 Singular mit Artikel",
+   "answer": "der Termin",
+   "x": 210,
+   "y": 1364,
+   "w": 158,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-3-pl",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 4 Plural",
+   "answer": "Termine|die Termine",
+   "x": 380,
+   "y": 1364,
+   "w": 220,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-4-sg",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 5 Singular mit Artikel",
+   "answer": "der Drucker",
+   "x": 210,
+   "y": 1364,
+   "w": 158,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-4-pl",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 5 Plural",
+   "answer": "Drucker|die Drucker",
+   "x": 380,
+   "y": 1364,
+   "w": 220,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-5-sg",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 6 Singular mit Artikel",
+   "answer": "der Stuhl",
+   "x": 210,
+   "y": 1364,
+   "w": 158,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-5-pl",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 6 Plural",
+   "answer": "Stühle|die Stühle",
+   "x": 380,
+   "y": 1364,
+   "w": 220,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-6-sg",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 7 Singular mit Artikel",
+   "answer": "der Schrank",
+   "x": 210,
+   "y": 1364,
+   "w": 158,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-6-pl",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 7 Plural",
+   "answer": "Schränke|die Schränke",
+   "x": 380,
+   "y": 1364,
+   "w": 220,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-7-sg",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 8 Singular mit Artikel",
+   "answer": "das Bild",
+   "x": 210,
+   "y": 1364,
+   "w": 158,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-7-pl",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 8 Plural",
+   "answer": "Bilder|die Bilder",
+   "x": 380,
+   "y": 1364,
+   "w": 220,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-8-sg",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 9 Singular mit Artikel",
+   "answer": "der Teppich",
+   "x": 210,
+   "y": 1364,
+   "w": 158,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-8-pl",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 9 Plural",
+   "answer": "Teppiche|die Teppiche",
+   "x": 380,
+   "y": 1364,
+   "w": 220,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-9-sg",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 10 Singular mit Artikel",
+   "answer": "die Flasche",
+   "x": 210,
+   "y": 1364,
+   "w": 158,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-9-pl",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 10 Plural",
+   "answer": "Flaschen|die Flaschen",
+   "x": 380,
+   "y": 1364,
+   "w": 220,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-10-sg",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 11 Singular mit Artikel",
+   "answer": "die Kette",
+   "x": 210,
+   "y": 1364,
+   "w": 158,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-10-pl",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 11 Plural",
+   "answer": "Ketten|die Ketten",
+   "x": 380,
+   "y": 1364,
+   "w": 220,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-11-sg",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 12 Singular mit Artikel",
+   "answer": "die Uhr",
+   "x": 210,
+   "y": 1364,
+   "w": 158,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-11-pl",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 12 Plural",
+   "answer": "Uhren|die Uhren",
+   "x": 380,
+   "y": 1364,
+   "w": 220,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-12-sg",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 13 Singular mit Artikel",
+   "answer": "der Ring",
+   "x": 210,
+   "y": 1364,
+   "w": 158,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-12-pl",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 13 Plural",
+   "answer": "Ringe|die Ringe",
+   "x": 380,
+   "y": 1364,
+   "w": 220,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-13-sg",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 14 Singular mit Artikel",
+   "answer": "das Buch",
+   "x": 210,
+   "y": 1364,
+   "w": 158,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-13-pl",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 14 Plural",
+   "answer": "Bücher|die Bücher",
+   "x": 380,
+   "y": 1364,
+   "w": 220,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-14-sg",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 15 Singular mit Artikel",
+   "answer": "die Geldbörse",
+   "x": 210,
+   "y": 1364,
+   "w": 158,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-14-pl",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 15 Plural",
+   "answer": "Geldbörsen|die Geldbörsen",
+   "x": 380,
+   "y": 1364,
+   "w": 220,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-15-sg",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 16 Singular mit Artikel",
+   "answer": "die Rechnung",
+   "x": 210,
+   "y": 1364,
+   "w": 158,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-15-pl",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 16 Plural",
+   "answer": "Rechnungen|die Rechnungen",
+   "x": 380,
+   "y": 1364,
+   "w": 220,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-16-sg",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 17 Singular mit Artikel",
+   "answer": "der Stift",
+   "x": 210,
+   "y": 1364,
+   "w": 158,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-16-pl",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 17 Plural",
+   "answer": "Stifte|die Stifte",
+   "x": 380,
+   "y": 1364,
+   "w": 220,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-17-sg",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 18 Singular mit Artikel",
+   "answer": "die Lampe",
+   "x": 210,
+   "y": 1364,
+   "w": 158,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-17-pl",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 18 Plural",
+   "answer": "Lampen|die Lampen",
+   "x": 380,
+   "y": 1364,
+   "w": 220,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-18-sg",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 19 Singular mit Artikel",
+   "answer": "das Problem",
+   "x": 210,
+   "y": 1364,
+   "w": 158,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-18-pl",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 19 Plural",
+   "answer": "Probleme|die Probleme",
+   "x": 380,
+   "y": 1364,
+   "w": 220,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-19-sg",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 20 Singular mit Artikel",
+   "answer": "das Formular",
+   "x": 210,
+   "y": 1364,
+   "w": 158,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-19-pl",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 20 Plural",
+   "answer": "Formulare|die Formulare",
+   "x": 380,
+   "y": 1364,
+   "w": 220,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-20-sg",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 21 Singular mit Artikel",
+   "answer": "die Brille",
+   "x": 210,
+   "y": 1364,
+   "w": 158,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-20-pl",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 21 Plural",
+   "answer": "Brillen|die Brillen",
+   "x": 380,
+   "y": 1364,
+   "w": 220,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-21-sg",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 22 Singular mit Artikel",
+   "answer": "das Feuerzeug",
+   "x": 210,
+   "y": 1364,
+   "w": 158,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-21-pl",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 22 Plural",
+   "answer": "Feuerzeuge|die Feuerzeuge",
+   "x": 380,
+   "y": 1364,
+   "w": 220,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-22-sg",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 23 Singular mit Artikel",
+   "answer": "die Seife",
+   "x": 210,
+   "y": 1364,
+   "w": 158,
+   "h": 24
+  },
+  {
+   "id": "g4-pair-22-pl",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 Zeile 23 Plural",
+   "answer": "Seifen|die Seifen",
+   "x": 380,
+   "y": 1364,
+   "w": 220,
+   "h": 24
+  },
+  {
+   "id": "g4-end-0-7",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 7",
+   "answer": "false",
+   "x": 291,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-8",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 8",
+   "answer": "false",
+   "x": 303,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-9",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 9",
+   "answer": "false",
+   "x": 311,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-10",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 10",
+   "answer": "false",
+   "x": 322,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-11",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 11",
+   "answer": "false",
+   "x": 333,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-12",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 12",
+   "answer": "false",
+   "x": 349,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-13",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 13",
+   "answer": "false",
+   "x": 362,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-14",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 14",
+   "answer": "false",
+   "x": 374,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-15",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 15",
+   "answer": "false",
+   "x": 387,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-16",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 16",
+   "answer": "false",
+   "x": 398,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-17",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 17",
+   "answer": "true",
+   "x": 411,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-18",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 18",
+   "answer": "false",
+   "x": 423,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-19",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 19",
+   "answer": "false",
+   "x": 430,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-20",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 20",
+   "answer": "false",
+   "x": 440,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-21",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 21",
+   "answer": "false",
+   "x": 451,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-22",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 22",
+   "answer": "true",
+   "x": 465,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-23",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 23",
+   "answer": "false",
+   "x": 476,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-24",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 24",
+   "answer": "false",
+   "x": 490,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-25",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 25",
+   "answer": "false",
+   "x": 501,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-26",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 26",
+   "answer": "true",
+   "x": 513,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-27",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 27",
+   "answer": "false",
+   "x": 525,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-28",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 28",
+   "answer": "false",
+   "x": 535,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-29",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 29",
+   "answer": "false",
+   "x": 548,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-30",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 30",
+   "answer": "false",
+   "x": 565,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-31",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 31",
+   "answer": "false",
+   "x": 572,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-32",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 32",
+   "answer": "false",
+   "x": 587,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-33",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 33",
+   "answer": "true",
+   "x": 597,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-34",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 34",
+   "answer": "false",
+   "x": 610,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-35",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 35",
+   "answer": "false",
+   "x": 623,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-36",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 36",
+   "answer": "false",
+   "x": 635,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-37",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 37",
+   "answer": "false",
+   "x": 647,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-38",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 38",
+   "answer": "false",
+   "x": 659,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-39",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 39",
+   "answer": "false",
+   "x": 670,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-40",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 40",
+   "answer": "true",
+   "x": 682,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-41",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 41",
+   "answer": "false",
+   "x": 692,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-42",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 42",
+   "answer": "false",
+   "x": 703,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-43",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 43",
+   "answer": "false",
+   "x": 716,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-44",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 44",
+   "answer": "false",
+   "x": 731,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-45",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 45",
+   "answer": "true",
+   "x": 741,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-46",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 46",
+   "answer": "false",
+   "x": 750,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-47",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 47",
+   "answer": "false",
+   "x": 761,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-48",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 48",
+   "answer": "false",
+   "x": 775,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-49",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 49",
+   "answer": "false",
+   "x": 787,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-50",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 50",
+   "answer": "false",
+   "x": 800,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-51",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 51",
+   "answer": "false",
+   "x": 814,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-52",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 52",
+   "answer": "false",
+   "x": 826,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-53",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 53",
+   "answer": "true",
+   "x": 838,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-54",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 54",
+   "answer": "false",
+   "x": 850,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-55",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 55",
+   "answer": "false",
+   "x": 857,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-56",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 56",
+   "answer": "false",
+   "x": 867,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-57",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 57",
+   "answer": "true",
+   "x": 880,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-58",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 58",
+   "answer": "false",
+   "x": 891,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-59",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 59",
+   "answer": "false",
+   "x": 902,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-60",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 60",
+   "answer": "false",
+   "x": 913,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-61",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 61",
+   "answer": "false",
+   "x": 923,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-62",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 62",
+   "answer": "false",
+   "x": 930,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-63",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 63",
+   "answer": "false",
+   "x": 941,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-64",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 64",
+   "answer": "false",
+   "x": 955,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-0-65",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 1,nach Buchstabe 65",
+   "answer": "true",
+   "x": 966,
+   "y": 1212,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-1",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 1",
+   "answer": "false",
+   "x": 215,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-2",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 2",
+   "answer": "false",
+   "x": 225,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-3",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 3",
+   "answer": "false",
+   "x": 237,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-4",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 4",
+   "answer": "false",
+   "x": 247,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-5",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 5",
+   "answer": "false",
+   "x": 258,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-6",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 6",
+   "answer": "false",
+   "x": 272,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-7",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 7",
+   "answer": "false",
+   "x": 283,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-8",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 8",
+   "answer": "true",
+   "x": 297,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-9",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 9",
+   "answer": "false",
+   "x": 311,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-10",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 10",
+   "answer": "false",
+   "x": 321,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-11",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 11",
+   "answer": "false",
+   "x": 331,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-12",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 12",
+   "answer": "false",
+   "x": 343,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-13",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 13",
+   "answer": "true",
+   "x": 353,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-14",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 14",
+   "answer": "false",
+   "x": 367,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-15",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 15",
+   "answer": "false",
+   "x": 381,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-16",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 16",
+   "answer": "false",
+   "x": 394,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-17",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 17",
+   "answer": "false",
+   "x": 405,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-18",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 18",
+   "answer": "true",
+   "x": 418,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-19",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 19",
+   "answer": "false",
+   "x": 431,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-20",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 20",
+   "answer": "false",
+   "x": 438,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-21",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 21",
+   "answer": "false",
+   "x": 452,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-22",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 22",
+   "answer": "true",
+   "x": 465,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-23",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 23",
+   "answer": "false",
+   "x": 476,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-24",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 24",
+   "answer": "false",
+   "x": 489,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-25",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 25",
+   "answer": "false",
+   "x": 500,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-26",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 26",
+   "answer": "true",
+   "x": 514,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-27",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 27",
+   "answer": "false",
+   "x": 526,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-28",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 28",
+   "answer": "false",
+   "x": 537,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-29",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 29",
+   "answer": "false",
+   "x": 548,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-30",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 30",
+   "answer": "false",
+   "x": 560,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-31",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 31",
+   "answer": "false",
+   "x": 571,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-32",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 32",
+   "answer": "false",
+   "x": 584,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-33",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 33",
+   "answer": "false",
+   "x": 595,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-34",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 34",
+   "answer": "false",
+   "x": 606,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-35",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 35",
+   "answer": "false",
+   "x": 617,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-36",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 36",
+   "answer": "true",
+   "x": 631,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-37",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 37",
+   "answer": "false",
+   "x": 644,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-38",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 38",
+   "answer": "false",
+   "x": 654,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-39",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 39",
+   "answer": "false",
+   "x": 665,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-40",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 40",
+   "answer": "false",
+   "x": 679,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-41",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 41",
+   "answer": "false",
+   "x": 692,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-42",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 42",
+   "answer": "false",
+   "x": 706,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-43",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 43",
+   "answer": "false",
+   "x": 720,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-44",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 44",
+   "answer": "true",
+   "x": 732,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-45",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 45",
+   "answer": "false",
+   "x": 742,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-46",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 46",
+   "answer": "false",
+   "x": 753,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-47",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 47",
+   "answer": "false",
+   "x": 760,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-48",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 48",
+   "answer": "false",
+   "x": 770,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-49",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 49",
+   "answer": "false",
+   "x": 782,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-50",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 50",
+   "answer": "true",
+   "x": 792,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-51",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 51",
+   "answer": "false",
+   "x": 805,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-52",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 52",
+   "answer": "false",
+   "x": 816,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-53",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 53",
+   "answer": "false",
+   "x": 832,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-54",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 54",
+   "answer": "false",
+   "x": 844,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-55",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 55",
+   "answer": "false",
+   "x": 854,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-56",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 56",
+   "answer": "true",
+   "x": 868,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-57",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 57",
+   "answer": "false",
+   "x": 879,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-58",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 58",
+   "answer": "false",
+   "x": 891,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-59",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 59",
+   "answer": "false",
+   "x": 904,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-60",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 60",
+   "answer": "false",
+   "x": 915,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-61",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 61",
+   "answer": "false",
+   "x": 926,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-62",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 62",
+   "answer": "false",
+   "x": 936,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-1-63",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 2,nach Buchstabe 63",
+   "answer": "true",
+   "x": 953,
+   "y": 1240,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-1",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 1",
+   "answer": "false",
+   "x": 215,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-2",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 2",
+   "answer": "false",
+   "x": 227,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-3",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 3",
+   "answer": "false",
+   "x": 239,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-4",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 4",
+   "answer": "false",
+   "x": 256,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-5",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 5",
+   "answer": "false",
+   "x": 269,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-6",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 6",
+   "answer": "false",
+   "x": 280,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-7",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 7",
+   "answer": "false",
+   "x": 293,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-8",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 8",
+   "answer": "false",
+   "x": 305,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-9",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 9",
+   "answer": "true",
+   "x": 316,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-10",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 10",
+   "answer": "false",
+   "x": 327,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-11",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 11",
+   "answer": "false",
+   "x": 340,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-12",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 12",
+   "answer": "false",
+   "x": 347,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-13",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 13",
+   "answer": "false",
+   "x": 358,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-14",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 14",
+   "answer": "false",
+   "x": 369,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-15",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 15",
+   "answer": "true",
+   "x": 380,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-16",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 16",
+   "answer": "false",
+   "x": 390,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-17",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 17",
+   "answer": "false",
+   "x": 401,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-18",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 18",
+   "answer": "false",
+   "x": 414,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-19",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 19",
+   "answer": "false",
+   "x": 426,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-20",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 20",
+   "answer": "false",
+   "x": 437,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-21",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 21",
+   "answer": "false",
+   "x": 449,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-22",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 22",
+   "answer": "false",
+   "x": 459,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-23",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 23",
+   "answer": "false",
+   "x": 472,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-24",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 24",
+   "answer": "false",
+   "x": 485,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-25",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 25",
+   "answer": "true",
+   "x": 496,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-26",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 26",
+   "answer": "false",
+   "x": 506,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-27",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 27",
+   "answer": "false",
+   "x": 516,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-28",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 28",
+   "answer": "false",
+   "x": 524,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-29",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 29",
+   "answer": "false",
+   "x": 535,
+   "y": 1265,
+   "w": 5,
+   "h": 23
+  },
+  {
+   "id": "g4-end-2-30",
+   "group": "g4",
+   "kind": "checkbox",
+   "label": "4 Zeile 3,nach Buchstabe 30",
+   "answer": "true",
+   "x": 546,
+   "y": 1265,
+   "w": 5,
+   "h": 23
   }
  ],
  "audio": [],
@@ -1695,7 +4778,9 @@
    "1: answers unordered within each block, so all block answers are given as |-separated alternatives on every line of the block; keine Brille / keine Bleistifte are printed blue examples (no fields).",
    "2a: the ___/___ blank before Schluessel is a printed einen/keinen choice (answer einen|keinen); the key lists the other four: Stift=einen, Flasche/Rechnung/Brille=eine. 2b answer C per key.",
    "3a is a printed blue example (Es), no field.",
-   "4: the letter salad is modeled as one text field per printed line, answer = the words of that line in order; the printed table has only one empty row, so its two cells accept any remaining pair as |-separated alternatives; example row das Handy/Handys printed blue."
+   "4: the letter salad is modeled as one text field per printed line, answer = the words of that line in order; the printed table has only one empty row, so its two cells accept any remaining pair as |-separated alternatives; example row das Handy/Handys printed blue.",
+   "2026-11-15: prevent repeated g1 block answers; explicit article/pronoun selects; word-boundary checkboxes instead of strip transcription; full23 matching noun pairs (Ring and Buch separate,not Ringbuch) with scrollable continuation table.",
+   "Letter cuts measured from scan glyph gaps,including all false-cut positions. Zero-article Schlüssel slash remains a printed example;four article gaps follow publisher key."
   ]
  }
 }
