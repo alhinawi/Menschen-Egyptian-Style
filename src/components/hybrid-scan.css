@@ -494,3 +494,7 @@ html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='73'] .hybridField
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='75'] .hybridCheck:nth-child(2){top:39%}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='75'] .hybridCheck:nth-child(3){top:44%}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='75'] .hybridCheck:nth-child(4){top:50%}
+
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='76'] .hybridOpen75{left:52%;top:12.6%;font-size:1.4cqw}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='76'] .hybridField{font:1.6cqw/1.5 sans-serif!important;resize:none;outline:0;padding:.3cqw;color:#315e9f;background:transparent}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='76'] .hybridField:focus{outline:1px solid #5a82bb;background:#f9fbff}
