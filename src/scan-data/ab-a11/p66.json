@@ -1111,230 +1111,743 @@
    "group": "l9-1",
    "kind": "text",
    "x": 395,
-   "y": 385,
-   "w": 125,
-   "h": 20,
-   "answer": "Kuchen"
+   "y": 373,
+   "w": 127,
+   "h": 26,
+   "answer": "Kuchen",
+   "label": "l9-1-b"
   },
   {
    "id": "l9-1-c",
    "group": "l9-1",
    "kind": "text",
-   "x": 585,
-   "y": 385,
+   "x": 582,
+   "y": 373,
    "w": 190,
-   "h": 20,
-   "answer": "Kartoffel"
+   "h": 26,
+   "answer": "Kartoffel",
+   "label": "l9-1-c"
   },
   {
    "id": "l9-1-d",
    "group": "l9-1",
    "kind": "text",
-   "x": 833,
-   "y": 385,
-   "w": 75,
-   "h": 20,
-   "answer": "Tee"
+   "x": 832,
+   "y": 368,
+   "w": 121,
+   "h": 26,
+   "answer": "Tee",
+   "label": "l9-1-d"
   },
   {
    "id": "l9-1-e",
    "group": "l9-1",
    "kind": "text",
    "x": 213,
-   "y": 518,
-   "w": 125,
-   "h": 20,
-   "answer": "Orange"
+   "y": 517,
+   "w": 126,
+   "h": 26,
+   "answer": "Orange",
+   "label": "l9-1-e"
   },
   {
    "id": "l9-1-f",
    "group": "l9-1",
    "kind": "text",
    "x": 397,
-   "y": 518,
-   "w": 125,
-   "h": 20,
-   "answer": "Butter"
+   "y": 515,
+   "w": 128,
+   "h": 26,
+   "answer": "Butter",
+   "label": "l9-1-f"
   },
   {
    "id": "l9-1-g",
    "group": "l9-1",
    "kind": "text",
    "x": 585,
-   "y": 518,
-   "w": 105,
-   "h": 20,
-   "answer": "Apfel"
+   "y": 512,
+   "w": 126,
+   "h": 26,
+   "answer": "Apfel",
+   "label": "l9-1-g"
   },
   {
    "id": "l9-1-h",
    "group": "l9-1",
    "kind": "text",
    "x": 833,
-   "y": 518,
-   "w": 100,
-   "h": 20,
-   "answer": "Salat"
+   "y": 509,
+   "w": 122,
+   "h": 26,
+   "answer": "Salat",
+   "label": "l9-1-h"
   },
   {
    "id": "l9-1-i",
    "group": "l9-1",
    "kind": "text",
-   "x": 213,
-   "y": 680,
-   "w": 125,
-   "h": 20,
-   "answer": "Tomate"
+   "x": 215,
+   "y": 665,
+   "w": 127,
+   "h": 26,
+   "answer": "Tomate",
+   "label": "l9-1-i"
   },
   {
    "id": "l9-1-j",
    "group": "l9-1",
    "kind": "text",
-   "x": 397,
-   "y": 680,
-   "w": 100,
-   "h": 20,
-   "answer": "Milch"
+   "x": 399,
+   "y": 662,
+   "w": 127,
+   "h": 26,
+   "answer": "Milch",
+   "label": "l9-1-j"
   },
   {
    "id": "l9-1-k",
    "group": "l9-1",
    "kind": "text",
-   "x": 585,
-   "y": 680,
-   "w": 220,
-   "h": 20,
-   "answer": "Schokolade"
+   "x": 587,
+   "y": 658,
+   "w": 218,
+   "h": 26,
+   "answer": "Schokolade",
+   "label": "l9-1-k"
   },
   {
    "id": "l9-1-l",
    "group": "l9-1",
    "kind": "text",
-   "x": 833,
-   "y": 680,
-   "w": 70,
-   "h": 20,
-   "answer": "Brot"
+   "x": 836,
+   "y": 655,
+   "w": 120,
+   "h": 26,
+   "answer": "Brot",
+   "label": "l9-1-l"
   },
   {
    "id": "l9-3-ich-essen",
    "group": "l9-3",
-   "kind": "text",
+   "kind": "select",
    "x": 465,
-   "y": 1028,
-   "w": 130,
-   "h": 22,
-   "answer": "esse"
+   "y": 1011,
+   "w": 128,
+   "h": 26,
+   "answer": "esse",
+   "label": "l9-3-ich-essen",
+   "options": [
+    {
+     "value": "mag",
+     "label": "mag"
+    },
+    {
+     "value": "magst",
+     "label": "magst"
+    },
+    {
+     "value": "mögen",
+     "label": "mögen"
+    },
+    {
+     "value": "mögt",
+     "label": "mögt"
+    },
+    {
+     "value": "esse",
+     "label": "esse"
+    },
+    {
+     "value": "isst",
+     "label": "isst"
+    },
+    {
+     "value": "essen",
+     "label": "essen"
+    },
+    {
+     "value": "esst",
+     "label": "esst"
+    }
+   ]
   },
   {
    "id": "l9-3-du-moegen",
    "group": "l9-3",
-   "kind": "text",
-   "x": 330,
-   "y": 1057,
+   "kind": "select",
+   "x": 327,
+   "y": 1041,
    "w": 130,
-   "h": 22,
-   "answer": "magst"
+   "h": 26,
+   "answer": "magst",
+   "label": "l9-3-du-moegen",
+   "options": [
+    {
+     "value": "mag",
+     "label": "mag"
+    },
+    {
+     "value": "magst",
+     "label": "magst"
+    },
+    {
+     "value": "mögen",
+     "label": "mögen"
+    },
+    {
+     "value": "mögt",
+     "label": "mögt"
+    },
+    {
+     "value": "esse",
+     "label": "esse"
+    },
+    {
+     "value": "isst",
+     "label": "isst"
+    },
+    {
+     "value": "essen",
+     "label": "essen"
+    },
+    {
+     "value": "esst",
+     "label": "esst"
+    }
+   ]
   },
   {
    "id": "l9-3-du-essen",
    "group": "l9-3",
-   "kind": "text",
+   "kind": "select",
    "x": 465,
-   "y": 1057,
-   "w": 130,
-   "h": 22,
-   "answer": "isst"
+   "y": 1041,
+   "w": 128,
+   "h": 26,
+   "answer": "isst",
+   "label": "l9-3-du-essen",
+   "options": [
+    {
+     "value": "mag",
+     "label": "mag"
+    },
+    {
+     "value": "magst",
+     "label": "magst"
+    },
+    {
+     "value": "mögen",
+     "label": "mögen"
+    },
+    {
+     "value": "mögt",
+     "label": "mögt"
+    },
+    {
+     "value": "esse",
+     "label": "esse"
+    },
+    {
+     "value": "isst",
+     "label": "isst"
+    },
+    {
+     "value": "essen",
+     "label": "essen"
+    },
+    {
+     "value": "esst",
+     "label": "esst"
+    }
+   ]
   },
   {
    "id": "l9-3-er-moegen",
    "group": "l9-3",
-   "kind": "text",
-   "x": 330,
-   "y": 1083,
+   "kind": "select",
+   "x": 327,
+   "y": 1068,
    "w": 130,
-   "h": 22,
-   "answer": "mag"
+   "h": 26,
+   "answer": "mag",
+   "label": "l9-3-er-moegen",
+   "options": [
+    {
+     "value": "mag",
+     "label": "mag"
+    },
+    {
+     "value": "magst",
+     "label": "magst"
+    },
+    {
+     "value": "mögen",
+     "label": "mögen"
+    },
+    {
+     "value": "mögt",
+     "label": "mögt"
+    },
+    {
+     "value": "esse",
+     "label": "esse"
+    },
+    {
+     "value": "isst",
+     "label": "isst"
+    },
+    {
+     "value": "essen",
+     "label": "essen"
+    },
+    {
+     "value": "esst",
+     "label": "esst"
+    }
+   ]
   },
   {
    "id": "l9-3-er-essen",
    "group": "l9-3",
-   "kind": "text",
+   "kind": "select",
    "x": 465,
-   "y": 1083,
-   "w": 130,
-   "h": 22,
-   "answer": "isst"
+   "y": 1068,
+   "w": 128,
+   "h": 26,
+   "answer": "isst",
+   "label": "l9-3-er-essen",
+   "options": [
+    {
+     "value": "mag",
+     "label": "mag"
+    },
+    {
+     "value": "magst",
+     "label": "magst"
+    },
+    {
+     "value": "mögen",
+     "label": "mögen"
+    },
+    {
+     "value": "mögt",
+     "label": "mögt"
+    },
+    {
+     "value": "esse",
+     "label": "esse"
+    },
+    {
+     "value": "isst",
+     "label": "isst"
+    },
+    {
+     "value": "essen",
+     "label": "essen"
+    },
+    {
+     "value": "esst",
+     "label": "esst"
+    }
+   ]
   },
   {
    "id": "l9-3-wir-moegen",
    "group": "l9-3",
-   "kind": "text",
-   "x": 750,
-   "y": 1028,
-   "w": 130,
-   "h": 22,
-   "answer": "mögen"
+   "kind": "select",
+   "x": 751,
+   "y": 1004,
+   "w": 132,
+   "h": 26,
+   "answer": "mögen",
+   "label": "l9-3-wir-moegen",
+   "options": [
+    {
+     "value": "mag",
+     "label": "mag"
+    },
+    {
+     "value": "magst",
+     "label": "magst"
+    },
+    {
+     "value": "mögen",
+     "label": "mögen"
+    },
+    {
+     "value": "mögt",
+     "label": "mögt"
+    },
+    {
+     "value": "esse",
+     "label": "esse"
+    },
+    {
+     "value": "isst",
+     "label": "isst"
+    },
+    {
+     "value": "essen",
+     "label": "essen"
+    },
+    {
+     "value": "esst",
+     "label": "esst"
+    }
+   ]
   },
   {
    "id": "l9-3-ihr-moegen",
    "group": "l9-3",
-   "kind": "text",
-   "x": 750,
-   "y": 1052,
-   "w": 130,
-   "h": 22,
-   "answer": "mögt"
+   "kind": "select",
+   "x": 751,
+   "y": 1033,
+   "w": 132,
+   "h": 26,
+   "answer": "mögt",
+   "label": "l9-3-ihr-moegen",
+   "options": [
+    {
+     "value": "mag",
+     "label": "mag"
+    },
+    {
+     "value": "magst",
+     "label": "magst"
+    },
+    {
+     "value": "mögen",
+     "label": "mögen"
+    },
+    {
+     "value": "mögt",
+     "label": "mögt"
+    },
+    {
+     "value": "esse",
+     "label": "esse"
+    },
+    {
+     "value": "isst",
+     "label": "isst"
+    },
+    {
+     "value": "essen",
+     "label": "essen"
+    },
+    {
+     "value": "esst",
+     "label": "esst"
+    }
+   ]
   },
   {
    "id": "l9-3-ihr-essen",
    "group": "l9-3",
-   "kind": "text",
-   "x": 885,
-   "y": 1052,
-   "w": 130,
-   "h": 22,
-   "answer": "esst"
+   "kind": "select",
+   "x": 886,
+   "y": 1030,
+   "w": 131,
+   "h": 26,
+   "answer": "esst",
+   "label": "l9-3-ihr-essen",
+   "options": [
+    {
+     "value": "mag",
+     "label": "mag"
+    },
+    {
+     "value": "magst",
+     "label": "magst"
+    },
+    {
+     "value": "mögen",
+     "label": "mögen"
+    },
+    {
+     "value": "mögt",
+     "label": "mögt"
+    },
+    {
+     "value": "esse",
+     "label": "esse"
+    },
+    {
+     "value": "isst",
+     "label": "isst"
+    },
+    {
+     "value": "essen",
+     "label": "essen"
+    },
+    {
+     "value": "esst",
+     "label": "esst"
+    }
+   ]
   },
   {
    "id": "l9-3-sie-moegen",
    "group": "l9-3",
-   "kind": "text",
-   "x": 750,
-   "y": 1078,
-   "w": 130,
-   "h": 22,
-   "answer": "mögen"
+   "kind": "select",
+   "x": 751,
+   "y": 1060,
+   "w": 132,
+   "h": 26,
+   "answer": "mögen",
+   "label": "l9-3-sie-moegen",
+   "options": [
+    {
+     "value": "mag",
+     "label": "mag"
+    },
+    {
+     "value": "magst",
+     "label": "magst"
+    },
+    {
+     "value": "mögen",
+     "label": "mögen"
+    },
+    {
+     "value": "mögt",
+     "label": "mögt"
+    },
+    {
+     "value": "esse",
+     "label": "esse"
+    },
+    {
+     "value": "isst",
+     "label": "isst"
+    },
+    {
+     "value": "essen",
+     "label": "essen"
+    },
+    {
+     "value": "esst",
+     "label": "esst"
+    }
+   ]
   },
   {
    "id": "l9-3-sie-essen",
    "group": "l9-3",
-   "kind": "text",
-   "x": 885,
-   "y": 1078,
-   "w": 130,
-   "h": 22,
-   "answer": "essen"
+   "kind": "select",
+   "x": 886,
+   "y": 1058,
+   "w": 131,
+   "h": 26,
+   "answer": "essen",
+   "label": "l9-3-sie-essen",
+   "options": [
+    {
+     "value": "mag",
+     "label": "mag"
+    },
+    {
+     "value": "magst",
+     "label": "magst"
+    },
+    {
+     "value": "mögen",
+     "label": "mögen"
+    },
+    {
+     "value": "mögt",
+     "label": "mögt"
+    },
+    {
+     "value": "esse",
+     "label": "esse"
+    },
+    {
+     "value": "isst",
+     "label": "isst"
+    },
+    {
+     "value": "essen",
+     "label": "essen"
+    },
+    {
+     "value": "esst",
+     "label": "esst"
+    }
+   ]
   },
   {
    "id": "l9-4-1",
    "group": "l9-4",
    "kind": "text",
-   "x": 390,
-   "y": 1365,
-   "w": 520,
-   "h": 20,
-   "answer": "keine Wurst, keinen Schinken, keine Milch und keinen Salat"
+   "x": 385,
+   "y": 1358,
+   "w": 624,
+   "h": 26,
+   "answer": "keine Wurst, keinen Schinken, keine Milch und keinen Salat",
+   "label": "l9-4-1"
   },
   {
    "id": "l9-4-2",
    "group": "l9-4",
    "kind": "text",
-   "x": 315,
-   "y": 1390,
-   "w": 595,
-   "h": 20,
-   "answer": "Käse, Tee, Kaffee, Müsli, Tomaten, Kuchen und Obst"
+   "x": 368,
+   "y": 1383,
+   "w": 642,
+   "h": 26,
+   "answer": "Käse, Tee, Kaffee, Müsli, Tomaten, Kuchen und Obst",
+   "label": "l9-4-2"
+  },
+  {
+   "id": "own-translation-0",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung a",
+   "x": 212,
+   "y": 428,
+   "w": 127,
+   "h": 23
+  },
+  {
+   "id": "own-translation-1",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung b",
+   "x": 395,
+   "y": 425,
+   "w": 127,
+   "h": 23
+  },
+  {
+   "id": "own-translation-2",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung c",
+   "x": 582,
+   "y": 423,
+   "w": 127,
+   "h": 23
+  },
+  {
+   "id": "own-translation-3",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung d",
+   "x": 832,
+   "y": 418,
+   "w": 121,
+   "h": 23
+  },
+  {
+   "id": "own-translation-4",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung e",
+   "x": 213,
+   "y": 568,
+   "w": 127,
+   "h": 23
+  },
+  {
+   "id": "own-translation-5",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung f",
+   "x": 397,
+   "y": 567,
+   "w": 127,
+   "h": 23
+  },
+  {
+   "id": "own-translation-6",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung g",
+   "x": 585,
+   "y": 564,
+   "w": 127,
+   "h": 23
+  },
+  {
+   "id": "own-translation-7",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung h",
+   "x": 833,
+   "y": 562,
+   "w": 122,
+   "h": 23
+  },
+  {
+   "id": "own-translation-8",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung i",
+   "x": 215,
+   "y": 718,
+   "w": 127,
+   "h": 23
+  },
+  {
+   "id": "own-translation-9",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung j",
+   "x": 399,
+   "y": 715,
+   "w": 127,
+   "h": 23
+  },
+  {
+   "id": "own-translation-10",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung k",
+   "x": 587,
+   "y": 713,
+   "w": 127,
+   "h": 23
+  },
+  {
+   "id": "own-translation-11",
+   "group": "own",
+   "kind": "text",
+   "label": "1 Übersetzung l",
+   "x": 836,
+   "y": 711,
+   "w": 120,
+   "h": 23
+  },
+  {
+   "id": "own-sentence-0",
+   "group": "own",
+   "kind": "text",
+   "label": "2 Lebensmittelkarte 1",
+   "x": 0,
+   "y": 0,
+   "w": 1,
+   "h": 1
+  },
+  {
+   "id": "own-sentence-1",
+   "group": "own",
+   "kind": "text",
+   "label": "2 Lebensmittelkarte 2",
+   "x": 0,
+   "y": 0,
+   "w": 1,
+   "h": 1
+  },
+  {
+   "id": "own-sentence-2",
+   "group": "own",
+   "kind": "text",
+   "label": "2 Lebensmittelkarte 3",
+   "x": 0,
+   "y": 0,
+   "w": 1,
+   "h": 1
   }
  ],
  "audio": [],
@@ -1360,7 +1873,8 @@
    "Ü1 a Fisch printed example; (engl.:) captions are translation hints, no fields",
    "Ü3 ich/mag and wir/essen printed cursive examples (words), remaining cells are fields",
    "Ü4 first items (keine Eier / Brötchen) printed examples; owner marks (circles/X) excluded",
-   "Name: Jan Weißmüller owner ink excluded (personal name, no field)"
+   "Name: Jan Weißmüller owner ink excluded (personal name, no field)",
+   "2026-11-15: scan/fonts restored. Eleven food spelling fields retain original letter hints when empty,12 owntranslations,3saved food drawing cards,ten conjugation selects,two sentence completions accepting reordered lists. Original examples intact."
   ]
  }
 }
