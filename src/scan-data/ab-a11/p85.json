@@ -1490,21 +1490,47 @@
    "kind": "text",
    "label": "b",
    "answer": "haben",
-   "x": 380,
+   "x": 406,
    "y": 380,
-   "w": 155,
-   "h": 24
+   "w": 103,
+   "h": 30
   },
   {
    "id": "u5-b2",
    "group": "u5",
-   "kind": "text",
+   "kind": "select",
    "label": "b",
    "answer": "gelernt",
-   "x": 965,
+   "x": 976,
    "y": 380,
-   "w": 170,
-   "h": 24
+   "w": 160,
+   "h": 30,
+   "options": [
+    {
+     "value": "gelernt",
+     "label": "gelernt"
+    },
+    {
+     "value": "gegessen",
+     "label": "gegessen"
+    },
+    {
+     "value": "eingeladen",
+     "label": "eingeladen"
+    },
+    {
+     "value": "gebacken",
+     "label": "gebacken"
+    },
+    {
+     "value": "gekauft",
+     "label": "gekauft"
+    },
+    {
+     "value": "gelesen",
+     "label": "gelesen"
+    }
+   ]
   },
   {
    "id": "u5-c1",
@@ -1512,21 +1538,47 @@
    "kind": "text",
    "label": "c",
    "answer": "habe",
-   "x": 380,
-   "y": 410,
-   "w": 155,
-   "h": 24
+   "x": 406,
+   "y": 409,
+   "w": 103,
+   "h": 30
   },
   {
    "id": "u5-c2",
    "group": "u5",
-   "kind": "text",
+   "kind": "select",
    "label": "c",
    "answer": "gebacken",
-   "x": 965,
-   "y": 410,
-   "w": 170,
-   "h": 24
+   "x": 976,
+   "y": 409,
+   "w": 160,
+   "h": 30,
+   "options": [
+    {
+     "value": "gelernt",
+     "label": "gelernt"
+    },
+    {
+     "value": "gegessen",
+     "label": "gegessen"
+    },
+    {
+     "value": "eingeladen",
+     "label": "eingeladen"
+    },
+    {
+     "value": "gebacken",
+     "label": "gebacken"
+    },
+    {
+     "value": "gekauft",
+     "label": "gekauft"
+    },
+    {
+     "value": "gelesen",
+     "label": "gelesen"
+    }
+   ]
   },
   {
    "id": "u5-d1",
@@ -1534,21 +1586,47 @@
    "kind": "text",
    "label": "d",
    "answer": "Hast",
-   "x": 380,
+   "x": 406,
    "y": 438,
-   "w": 155,
-   "h": 24
+   "w": 103,
+   "h": 30
   },
   {
    "id": "u5-d2",
    "group": "u5",
-   "kind": "text",
+   "kind": "select",
    "label": "d",
    "answer": "eingeladen",
-   "x": 965,
+   "x": 976,
    "y": 438,
-   "w": 170,
-   "h": 24
+   "w": 160,
+   "h": 30,
+   "options": [
+    {
+     "value": "gelernt",
+     "label": "gelernt"
+    },
+    {
+     "value": "gegessen",
+     "label": "gegessen"
+    },
+    {
+     "value": "eingeladen",
+     "label": "eingeladen"
+    },
+    {
+     "value": "gebacken",
+     "label": "gebacken"
+    },
+    {
+     "value": "gekauft",
+     "label": "gekauft"
+    },
+    {
+     "value": "gelesen",
+     "label": "gelesen"
+    }
+   ]
   },
   {
    "id": "u5-e1",
@@ -1556,21 +1634,47 @@
    "kind": "text",
    "label": "e",
    "answer": "habt",
-   "x": 380,
-   "y": 468,
-   "w": 155,
-   "h": 24
+   "x": 406,
+   "y": 467,
+   "w": 103,
+   "h": 30
   },
   {
    "id": "u5-e2",
    "group": "u5",
-   "kind": "text",
+   "kind": "select",
    "label": "e",
    "answer": "gegessen",
-   "x": 965,
-   "y": 468,
-   "w": 170,
-   "h": 24
+   "x": 976,
+   "y": 467,
+   "w": 160,
+   "h": 30,
+   "options": [
+    {
+     "value": "gelernt",
+     "label": "gelernt"
+    },
+    {
+     "value": "gegessen",
+     "label": "gegessen"
+    },
+    {
+     "value": "eingeladen",
+     "label": "eingeladen"
+    },
+    {
+     "value": "gebacken",
+     "label": "gebacken"
+    },
+    {
+     "value": "gekauft",
+     "label": "gekauft"
+    },
+    {
+     "value": "gelesen",
+     "label": "gelesen"
+    }
+   ]
   },
   {
    "id": "u5-f1",
@@ -1578,21 +1682,47 @@
    "kind": "text",
    "label": "f",
    "answer": "habe",
-   "x": 380,
+   "x": 406,
    "y": 497,
-   "w": 155,
-   "h": 24
+   "w": 103,
+   "h": 30
   },
   {
    "id": "u5-f2",
    "group": "u5",
-   "kind": "text",
+   "kind": "select",
    "label": "f",
    "answer": "gekauft",
-   "x": 965,
+   "x": 976,
    "y": 497,
-   "w": 170,
-   "h": 24
+   "w": 160,
+   "h": 30,
+   "options": [
+    {
+     "value": "gelernt",
+     "label": "gelernt"
+    },
+    {
+     "value": "gegessen",
+     "label": "gegessen"
+    },
+    {
+     "value": "eingeladen",
+     "label": "eingeladen"
+    },
+    {
+     "value": "gebacken",
+     "label": "gebacken"
+    },
+    {
+     "value": "gekauft",
+     "label": "gekauft"
+    },
+    {
+     "value": "gelesen",
+     "label": "gelesen"
+    }
+   ]
   },
   {
    "id": "u5-g1",
@@ -1600,109 +1730,47 @@
    "kind": "text",
    "label": "g",
    "answer": "habe",
-   "x": 380,
+   "x": 406,
    "y": 526,
-   "w": 155,
-   "h": 24
+   "w": 103,
+   "h": 30
   },
   {
    "id": "u5-g2",
    "group": "u5",
-   "kind": "text",
+   "kind": "select",
    "label": "g",
    "answer": "gelesen",
-   "x": 965,
+   "x": 976,
    "y": 526,
-   "w": 170,
-   "h": 24
-  },
-  {
-   "id": "u6-l1",
-   "group": "u6",
-   "kind": "text",
-   "label": "(…)ge…t: Partizip – Infinitiv",
-   "answer": "gewohnt – wohnen|geglaubt – glauben|gesucht – suchen|gekostet – kosten|gesagt – sagen|gebraucht – brauchen|gewusst – wissen|gelacht – lachen|gefrühstückt – frühstücken|gelernt – lernen|geliebt – lieben|aufgeräumt – aufräumen|geredet – reden|gedacht – denken",
-   "x": 228,
-   "y": 961,
-   "w": 345,
-   "h": 24
-  },
-  {
-   "id": "u6-r1",
-   "group": "u6",
-   "kind": "text",
-   "label": "(…)ge…en: Partizip – Infinitiv",
-   "answer": "gefunden – finden|geschrieben – schreiben|gesungen – singen|gesehen – sehen|getrunken – trinken|angerufen – anrufen|genommen – nehmen",
-   "x": 587,
-   "y": 961,
-   "w": 330,
-   "h": 24
-  },
-  {
-   "id": "u6-l2",
-   "group": "u6",
-   "kind": "text",
-   "label": "(…)ge…t: Partizip – Infinitiv",
-   "answer": "gewohnt – wohnen|geglaubt – glauben|gesucht – suchen|gekostet – kosten|gesagt – sagen|gebraucht – brauchen|gewusst – wissen|gelacht – lachen|gefrühstückt – frühstücken|gelernt – lernen|geliebt – lieben|aufgeräumt – aufräumen|geredet – reden|gedacht – denken",
-   "x": 228,
-   "y": 993,
-   "w": 345,
-   "h": 24
-  },
-  {
-   "id": "u6-r2",
-   "group": "u6",
-   "kind": "text",
-   "label": "(…)ge…en: Partizip – Infinitiv",
-   "answer": "gefunden – finden|geschrieben – schreiben|gesungen – singen|gesehen – sehen|getrunken – trinken|angerufen – anrufen|genommen – nehmen",
-   "x": 587,
-   "y": 993,
-   "w": 330,
-   "h": 24
-  },
-  {
-   "id": "u6-l3",
-   "group": "u6",
-   "kind": "text",
-   "label": "(…)ge…t: Partizip – Infinitiv",
-   "answer": "gewohnt – wohnen|geglaubt – glauben|gesucht – suchen|gekostet – kosten|gesagt – sagen|gebraucht – brauchen|gewusst – wissen|gelacht – lachen|gefrühstückt – frühstücken|gelernt – lernen|geliebt – lieben|aufgeräumt – aufräumen|geredet – reden|gedacht – denken",
-   "x": 228,
-   "y": 1024,
-   "w": 345,
-   "h": 24
-  },
-  {
-   "id": "u6-r3",
-   "group": "u6",
-   "kind": "text",
-   "label": "(…)ge…en: Partizip – Infinitiv",
-   "answer": "gefunden – finden|geschrieben – schreiben|gesungen – singen|gesehen – sehen|getrunken – trinken|angerufen – anrufen|genommen – nehmen",
-   "x": 587,
-   "y": 1024,
-   "w": 330,
-   "h": 24
-  },
-  {
-   "id": "u6-l4",
-   "group": "u6",
-   "kind": "text",
-   "label": "(…)ge…t: Partizip – Infinitiv",
-   "answer": "gewohnt – wohnen|geglaubt – glauben|gesucht – suchen|gekostet – kosten|gesagt – sagen|gebraucht – brauchen|gewusst – wissen|gelacht – lachen|gefrühstückt – frühstücken|gelernt – lernen|geliebt – lieben|aufgeräumt – aufräumen|geredet – reden|gedacht – denken",
-   "x": 228,
-   "y": 1055,
-   "w": 345,
-   "h": 24
-  },
-  {
-   "id": "u6-r4",
-   "group": "u6",
-   "kind": "text",
-   "label": "(…)ge…en: Partizip – Infinitiv",
-   "answer": "gefunden – finden|geschrieben – schreiben|gesungen – singen|gesehen – sehen|getrunken – trinken|angerufen – anrufen|genommen – nehmen",
-   "x": 587,
-   "y": 1055,
-   "w": 330,
-   "h": 24
+   "w": 160,
+   "h": 30,
+   "options": [
+    {
+     "value": "gelernt",
+     "label": "gelernt"
+    },
+    {
+     "value": "gegessen",
+     "label": "gegessen"
+    },
+    {
+     "value": "eingeladen",
+     "label": "eingeladen"
+    },
+    {
+     "value": "gebacken",
+     "label": "gebacken"
+    },
+    {
+     "value": "gekauft",
+     "label": "gekauft"
+    },
+    {
+     "value": "gelesen",
+     "label": "gelesen"
+    }
+   ]
   },
   {
    "id": "u7-b",
@@ -1710,10 +1778,10 @@
    "kind": "text",
    "label": "b: Musik …",
    "answer": "gehört",
-   "x": 325,
-   "y": 1328,
-   "w": 240,
-   "h": 24
+   "x": 322,
+   "y": 1330,
+   "w": 160,
+   "h": 30
   },
   {
    "id": "u7-c",
@@ -1721,10 +1789,10 @@
    "kind": "text",
    "label": "c: Tennis …",
    "answer": "gespielt",
-   "x": 325,
-   "y": 1358,
-   "w": 240,
-   "h": 24
+   "x": 322,
+   "y": 1360,
+   "w": 160,
+   "h": 30
   },
   {
    "id": "u7-d",
@@ -1732,10 +1800,10 @@
    "kind": "text",
    "label": "d: seine Freundin am Bahnhof …",
    "answer": "abgeholt",
-   "x": 232,
-   "y": 1412,
-   "w": 330,
-   "h": 24
+   "x": 255,
+   "y": 1415,
+   "w": 160,
+   "h": 30
   },
   {
    "id": "u7-e",
@@ -1743,10 +1811,10 @@
    "kind": "text",
    "label": "e: Freunde in einem Café …",
    "answer": "getroffen",
-   "x": 965,
-   "y": 1298,
-   "w": 170,
-   "h": 24
+   "x": 977,
+   "y": 1299,
+   "w": 160,
+   "h": 30
   },
   {
    "id": "u7-f",
@@ -1754,10 +1822,10 @@
    "kind": "text",
    "label": "f: Abendessen …",
    "answer": "gekocht",
-   "x": 865,
-   "y": 1328,
-   "w": 195,
-   "h": 24
+   "x": 867,
+   "y": 1330,
+   "w": 160,
+   "h": 30
   },
   {
    "id": "u7-g",
@@ -1765,10 +1833,1494 @@
    "kind": "text",
    "label": "g: in der Disco …",
    "answer": "getanzt",
-   "x": 865,
-   "y": 1358,
-   "w": 190,
-   "h": 24
+   "x": 867,
+   "y": 1360,
+   "w": 160,
+   "h": 30
+  },
+  {
+   "id": "pair-l-0-p",
+   "group": "u6",
+   "kind": "select",
+   "label": "6 Partizip l1",
+   "answer": "gewohnt",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0,
+   "options": [
+    {
+     "value": "gewohnt",
+     "label": "gewohnt"
+    },
+    {
+     "value": "geglaubt",
+     "label": "geglaubt"
+    },
+    {
+     "value": "gesucht",
+     "label": "gesucht"
+    },
+    {
+     "value": "gekostet",
+     "label": "gekostet"
+    },
+    {
+     "value": "gesagt",
+     "label": "gesagt"
+    },
+    {
+     "value": "gebraucht",
+     "label": "gebraucht"
+    },
+    {
+     "value": "gewusst",
+     "label": "gewusst"
+    },
+    {
+     "value": "gelacht",
+     "label": "gelacht"
+    },
+    {
+     "value": "gefrühstückt",
+     "label": "gefrühstückt"
+    },
+    {
+     "value": "gelernt",
+     "label": "gelernt"
+    },
+    {
+     "value": "geliebt",
+     "label": "geliebt"
+    },
+    {
+     "value": "aufgeräumt",
+     "label": "aufgeräumt"
+    },
+    {
+     "value": "geredet",
+     "label": "geredet"
+    },
+    {
+     "value": "gedacht",
+     "label": "gedacht"
+    }
+   ]
+  },
+  {
+   "id": "pair-l-0-i",
+   "group": "u6",
+   "kind": "text",
+   "label": "6 Infinitiv l1",
+   "answer": "wohnen",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "pair-l-1-p",
+   "group": "u6",
+   "kind": "select",
+   "label": "6 Partizip l2",
+   "answer": "geglaubt",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0,
+   "options": [
+    {
+     "value": "gewohnt",
+     "label": "gewohnt"
+    },
+    {
+     "value": "geglaubt",
+     "label": "geglaubt"
+    },
+    {
+     "value": "gesucht",
+     "label": "gesucht"
+    },
+    {
+     "value": "gekostet",
+     "label": "gekostet"
+    },
+    {
+     "value": "gesagt",
+     "label": "gesagt"
+    },
+    {
+     "value": "gebraucht",
+     "label": "gebraucht"
+    },
+    {
+     "value": "gewusst",
+     "label": "gewusst"
+    },
+    {
+     "value": "gelacht",
+     "label": "gelacht"
+    },
+    {
+     "value": "gefrühstückt",
+     "label": "gefrühstückt"
+    },
+    {
+     "value": "gelernt",
+     "label": "gelernt"
+    },
+    {
+     "value": "geliebt",
+     "label": "geliebt"
+    },
+    {
+     "value": "aufgeräumt",
+     "label": "aufgeräumt"
+    },
+    {
+     "value": "geredet",
+     "label": "geredet"
+    },
+    {
+     "value": "gedacht",
+     "label": "gedacht"
+    }
+   ]
+  },
+  {
+   "id": "pair-l-1-i",
+   "group": "u6",
+   "kind": "text",
+   "label": "6 Infinitiv l2",
+   "answer": "glauben",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "pair-l-2-p",
+   "group": "u6",
+   "kind": "select",
+   "label": "6 Partizip l3",
+   "answer": "gesucht",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0,
+   "options": [
+    {
+     "value": "gewohnt",
+     "label": "gewohnt"
+    },
+    {
+     "value": "geglaubt",
+     "label": "geglaubt"
+    },
+    {
+     "value": "gesucht",
+     "label": "gesucht"
+    },
+    {
+     "value": "gekostet",
+     "label": "gekostet"
+    },
+    {
+     "value": "gesagt",
+     "label": "gesagt"
+    },
+    {
+     "value": "gebraucht",
+     "label": "gebraucht"
+    },
+    {
+     "value": "gewusst",
+     "label": "gewusst"
+    },
+    {
+     "value": "gelacht",
+     "label": "gelacht"
+    },
+    {
+     "value": "gefrühstückt",
+     "label": "gefrühstückt"
+    },
+    {
+     "value": "gelernt",
+     "label": "gelernt"
+    },
+    {
+     "value": "geliebt",
+     "label": "geliebt"
+    },
+    {
+     "value": "aufgeräumt",
+     "label": "aufgeräumt"
+    },
+    {
+     "value": "geredet",
+     "label": "geredet"
+    },
+    {
+     "value": "gedacht",
+     "label": "gedacht"
+    }
+   ]
+  },
+  {
+   "id": "pair-l-2-i",
+   "group": "u6",
+   "kind": "text",
+   "label": "6 Infinitiv l3",
+   "answer": "suchen",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "pair-l-3-p",
+   "group": "u6",
+   "kind": "select",
+   "label": "6 Partizip l4",
+   "answer": "gekostet",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0,
+   "options": [
+    {
+     "value": "gewohnt",
+     "label": "gewohnt"
+    },
+    {
+     "value": "geglaubt",
+     "label": "geglaubt"
+    },
+    {
+     "value": "gesucht",
+     "label": "gesucht"
+    },
+    {
+     "value": "gekostet",
+     "label": "gekostet"
+    },
+    {
+     "value": "gesagt",
+     "label": "gesagt"
+    },
+    {
+     "value": "gebraucht",
+     "label": "gebraucht"
+    },
+    {
+     "value": "gewusst",
+     "label": "gewusst"
+    },
+    {
+     "value": "gelacht",
+     "label": "gelacht"
+    },
+    {
+     "value": "gefrühstückt",
+     "label": "gefrühstückt"
+    },
+    {
+     "value": "gelernt",
+     "label": "gelernt"
+    },
+    {
+     "value": "geliebt",
+     "label": "geliebt"
+    },
+    {
+     "value": "aufgeräumt",
+     "label": "aufgeräumt"
+    },
+    {
+     "value": "geredet",
+     "label": "geredet"
+    },
+    {
+     "value": "gedacht",
+     "label": "gedacht"
+    }
+   ]
+  },
+  {
+   "id": "pair-l-3-i",
+   "group": "u6",
+   "kind": "text",
+   "label": "6 Infinitiv l4",
+   "answer": "kosten",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "pair-l-4-p",
+   "group": "u6",
+   "kind": "select",
+   "label": "6 Partizip l5",
+   "answer": "gesagt",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0,
+   "options": [
+    {
+     "value": "gewohnt",
+     "label": "gewohnt"
+    },
+    {
+     "value": "geglaubt",
+     "label": "geglaubt"
+    },
+    {
+     "value": "gesucht",
+     "label": "gesucht"
+    },
+    {
+     "value": "gekostet",
+     "label": "gekostet"
+    },
+    {
+     "value": "gesagt",
+     "label": "gesagt"
+    },
+    {
+     "value": "gebraucht",
+     "label": "gebraucht"
+    },
+    {
+     "value": "gewusst",
+     "label": "gewusst"
+    },
+    {
+     "value": "gelacht",
+     "label": "gelacht"
+    },
+    {
+     "value": "gefrühstückt",
+     "label": "gefrühstückt"
+    },
+    {
+     "value": "gelernt",
+     "label": "gelernt"
+    },
+    {
+     "value": "geliebt",
+     "label": "geliebt"
+    },
+    {
+     "value": "aufgeräumt",
+     "label": "aufgeräumt"
+    },
+    {
+     "value": "geredet",
+     "label": "geredet"
+    },
+    {
+     "value": "gedacht",
+     "label": "gedacht"
+    }
+   ]
+  },
+  {
+   "id": "pair-l-4-i",
+   "group": "u6",
+   "kind": "text",
+   "label": "6 Infinitiv l5",
+   "answer": "sagen",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "pair-l-5-p",
+   "group": "u6",
+   "kind": "select",
+   "label": "6 Partizip l6",
+   "answer": "gebraucht",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0,
+   "options": [
+    {
+     "value": "gewohnt",
+     "label": "gewohnt"
+    },
+    {
+     "value": "geglaubt",
+     "label": "geglaubt"
+    },
+    {
+     "value": "gesucht",
+     "label": "gesucht"
+    },
+    {
+     "value": "gekostet",
+     "label": "gekostet"
+    },
+    {
+     "value": "gesagt",
+     "label": "gesagt"
+    },
+    {
+     "value": "gebraucht",
+     "label": "gebraucht"
+    },
+    {
+     "value": "gewusst",
+     "label": "gewusst"
+    },
+    {
+     "value": "gelacht",
+     "label": "gelacht"
+    },
+    {
+     "value": "gefrühstückt",
+     "label": "gefrühstückt"
+    },
+    {
+     "value": "gelernt",
+     "label": "gelernt"
+    },
+    {
+     "value": "geliebt",
+     "label": "geliebt"
+    },
+    {
+     "value": "aufgeräumt",
+     "label": "aufgeräumt"
+    },
+    {
+     "value": "geredet",
+     "label": "geredet"
+    },
+    {
+     "value": "gedacht",
+     "label": "gedacht"
+    }
+   ]
+  },
+  {
+   "id": "pair-l-5-i",
+   "group": "u6",
+   "kind": "text",
+   "label": "6 Infinitiv l6",
+   "answer": "brauchen",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "pair-l-6-p",
+   "group": "u6",
+   "kind": "select",
+   "label": "6 Partizip l7",
+   "answer": "gewusst",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0,
+   "options": [
+    {
+     "value": "gewohnt",
+     "label": "gewohnt"
+    },
+    {
+     "value": "geglaubt",
+     "label": "geglaubt"
+    },
+    {
+     "value": "gesucht",
+     "label": "gesucht"
+    },
+    {
+     "value": "gekostet",
+     "label": "gekostet"
+    },
+    {
+     "value": "gesagt",
+     "label": "gesagt"
+    },
+    {
+     "value": "gebraucht",
+     "label": "gebraucht"
+    },
+    {
+     "value": "gewusst",
+     "label": "gewusst"
+    },
+    {
+     "value": "gelacht",
+     "label": "gelacht"
+    },
+    {
+     "value": "gefrühstückt",
+     "label": "gefrühstückt"
+    },
+    {
+     "value": "gelernt",
+     "label": "gelernt"
+    },
+    {
+     "value": "geliebt",
+     "label": "geliebt"
+    },
+    {
+     "value": "aufgeräumt",
+     "label": "aufgeräumt"
+    },
+    {
+     "value": "geredet",
+     "label": "geredet"
+    },
+    {
+     "value": "gedacht",
+     "label": "gedacht"
+    }
+   ]
+  },
+  {
+   "id": "pair-l-6-i",
+   "group": "u6",
+   "kind": "text",
+   "label": "6 Infinitiv l7",
+   "answer": "wissen",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "pair-l-7-p",
+   "group": "u6",
+   "kind": "select",
+   "label": "6 Partizip l8",
+   "answer": "gelacht",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0,
+   "options": [
+    {
+     "value": "gewohnt",
+     "label": "gewohnt"
+    },
+    {
+     "value": "geglaubt",
+     "label": "geglaubt"
+    },
+    {
+     "value": "gesucht",
+     "label": "gesucht"
+    },
+    {
+     "value": "gekostet",
+     "label": "gekostet"
+    },
+    {
+     "value": "gesagt",
+     "label": "gesagt"
+    },
+    {
+     "value": "gebraucht",
+     "label": "gebraucht"
+    },
+    {
+     "value": "gewusst",
+     "label": "gewusst"
+    },
+    {
+     "value": "gelacht",
+     "label": "gelacht"
+    },
+    {
+     "value": "gefrühstückt",
+     "label": "gefrühstückt"
+    },
+    {
+     "value": "gelernt",
+     "label": "gelernt"
+    },
+    {
+     "value": "geliebt",
+     "label": "geliebt"
+    },
+    {
+     "value": "aufgeräumt",
+     "label": "aufgeräumt"
+    },
+    {
+     "value": "geredet",
+     "label": "geredet"
+    },
+    {
+     "value": "gedacht",
+     "label": "gedacht"
+    }
+   ]
+  },
+  {
+   "id": "pair-l-7-i",
+   "group": "u6",
+   "kind": "text",
+   "label": "6 Infinitiv l8",
+   "answer": "lachen",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "pair-l-8-p",
+   "group": "u6",
+   "kind": "select",
+   "label": "6 Partizip l9",
+   "answer": "gefrühstückt",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0,
+   "options": [
+    {
+     "value": "gewohnt",
+     "label": "gewohnt"
+    },
+    {
+     "value": "geglaubt",
+     "label": "geglaubt"
+    },
+    {
+     "value": "gesucht",
+     "label": "gesucht"
+    },
+    {
+     "value": "gekostet",
+     "label": "gekostet"
+    },
+    {
+     "value": "gesagt",
+     "label": "gesagt"
+    },
+    {
+     "value": "gebraucht",
+     "label": "gebraucht"
+    },
+    {
+     "value": "gewusst",
+     "label": "gewusst"
+    },
+    {
+     "value": "gelacht",
+     "label": "gelacht"
+    },
+    {
+     "value": "gefrühstückt",
+     "label": "gefrühstückt"
+    },
+    {
+     "value": "gelernt",
+     "label": "gelernt"
+    },
+    {
+     "value": "geliebt",
+     "label": "geliebt"
+    },
+    {
+     "value": "aufgeräumt",
+     "label": "aufgeräumt"
+    },
+    {
+     "value": "geredet",
+     "label": "geredet"
+    },
+    {
+     "value": "gedacht",
+     "label": "gedacht"
+    }
+   ]
+  },
+  {
+   "id": "pair-l-8-i",
+   "group": "u6",
+   "kind": "text",
+   "label": "6 Infinitiv l9",
+   "answer": "frühstücken",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "pair-l-9-p",
+   "group": "u6",
+   "kind": "select",
+   "label": "6 Partizip l10",
+   "answer": "gelernt",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0,
+   "options": [
+    {
+     "value": "gewohnt",
+     "label": "gewohnt"
+    },
+    {
+     "value": "geglaubt",
+     "label": "geglaubt"
+    },
+    {
+     "value": "gesucht",
+     "label": "gesucht"
+    },
+    {
+     "value": "gekostet",
+     "label": "gekostet"
+    },
+    {
+     "value": "gesagt",
+     "label": "gesagt"
+    },
+    {
+     "value": "gebraucht",
+     "label": "gebraucht"
+    },
+    {
+     "value": "gewusst",
+     "label": "gewusst"
+    },
+    {
+     "value": "gelacht",
+     "label": "gelacht"
+    },
+    {
+     "value": "gefrühstückt",
+     "label": "gefrühstückt"
+    },
+    {
+     "value": "gelernt",
+     "label": "gelernt"
+    },
+    {
+     "value": "geliebt",
+     "label": "geliebt"
+    },
+    {
+     "value": "aufgeräumt",
+     "label": "aufgeräumt"
+    },
+    {
+     "value": "geredet",
+     "label": "geredet"
+    },
+    {
+     "value": "gedacht",
+     "label": "gedacht"
+    }
+   ]
+  },
+  {
+   "id": "pair-l-9-i",
+   "group": "u6",
+   "kind": "text",
+   "label": "6 Infinitiv l10",
+   "answer": "lernen",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "pair-l-10-p",
+   "group": "u6",
+   "kind": "select",
+   "label": "6 Partizip l11",
+   "answer": "geliebt",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0,
+   "options": [
+    {
+     "value": "gewohnt",
+     "label": "gewohnt"
+    },
+    {
+     "value": "geglaubt",
+     "label": "geglaubt"
+    },
+    {
+     "value": "gesucht",
+     "label": "gesucht"
+    },
+    {
+     "value": "gekostet",
+     "label": "gekostet"
+    },
+    {
+     "value": "gesagt",
+     "label": "gesagt"
+    },
+    {
+     "value": "gebraucht",
+     "label": "gebraucht"
+    },
+    {
+     "value": "gewusst",
+     "label": "gewusst"
+    },
+    {
+     "value": "gelacht",
+     "label": "gelacht"
+    },
+    {
+     "value": "gefrühstückt",
+     "label": "gefrühstückt"
+    },
+    {
+     "value": "gelernt",
+     "label": "gelernt"
+    },
+    {
+     "value": "geliebt",
+     "label": "geliebt"
+    },
+    {
+     "value": "aufgeräumt",
+     "label": "aufgeräumt"
+    },
+    {
+     "value": "geredet",
+     "label": "geredet"
+    },
+    {
+     "value": "gedacht",
+     "label": "gedacht"
+    }
+   ]
+  },
+  {
+   "id": "pair-l-10-i",
+   "group": "u6",
+   "kind": "text",
+   "label": "6 Infinitiv l11",
+   "answer": "lieben",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "pair-l-11-p",
+   "group": "u6",
+   "kind": "select",
+   "label": "6 Partizip l12",
+   "answer": "aufgeräumt",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0,
+   "options": [
+    {
+     "value": "gewohnt",
+     "label": "gewohnt"
+    },
+    {
+     "value": "geglaubt",
+     "label": "geglaubt"
+    },
+    {
+     "value": "gesucht",
+     "label": "gesucht"
+    },
+    {
+     "value": "gekostet",
+     "label": "gekostet"
+    },
+    {
+     "value": "gesagt",
+     "label": "gesagt"
+    },
+    {
+     "value": "gebraucht",
+     "label": "gebraucht"
+    },
+    {
+     "value": "gewusst",
+     "label": "gewusst"
+    },
+    {
+     "value": "gelacht",
+     "label": "gelacht"
+    },
+    {
+     "value": "gefrühstückt",
+     "label": "gefrühstückt"
+    },
+    {
+     "value": "gelernt",
+     "label": "gelernt"
+    },
+    {
+     "value": "geliebt",
+     "label": "geliebt"
+    },
+    {
+     "value": "aufgeräumt",
+     "label": "aufgeräumt"
+    },
+    {
+     "value": "geredet",
+     "label": "geredet"
+    },
+    {
+     "value": "gedacht",
+     "label": "gedacht"
+    }
+   ]
+  },
+  {
+   "id": "pair-l-11-i",
+   "group": "u6",
+   "kind": "text",
+   "label": "6 Infinitiv l12",
+   "answer": "aufräumen",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "pair-l-12-p",
+   "group": "u6",
+   "kind": "select",
+   "label": "6 Partizip l13",
+   "answer": "geredet",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0,
+   "options": [
+    {
+     "value": "gewohnt",
+     "label": "gewohnt"
+    },
+    {
+     "value": "geglaubt",
+     "label": "geglaubt"
+    },
+    {
+     "value": "gesucht",
+     "label": "gesucht"
+    },
+    {
+     "value": "gekostet",
+     "label": "gekostet"
+    },
+    {
+     "value": "gesagt",
+     "label": "gesagt"
+    },
+    {
+     "value": "gebraucht",
+     "label": "gebraucht"
+    },
+    {
+     "value": "gewusst",
+     "label": "gewusst"
+    },
+    {
+     "value": "gelacht",
+     "label": "gelacht"
+    },
+    {
+     "value": "gefrühstückt",
+     "label": "gefrühstückt"
+    },
+    {
+     "value": "gelernt",
+     "label": "gelernt"
+    },
+    {
+     "value": "geliebt",
+     "label": "geliebt"
+    },
+    {
+     "value": "aufgeräumt",
+     "label": "aufgeräumt"
+    },
+    {
+     "value": "geredet",
+     "label": "geredet"
+    },
+    {
+     "value": "gedacht",
+     "label": "gedacht"
+    }
+   ]
+  },
+  {
+   "id": "pair-l-12-i",
+   "group": "u6",
+   "kind": "text",
+   "label": "6 Infinitiv l13",
+   "answer": "reden",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "pair-l-13-p",
+   "group": "u6",
+   "kind": "select",
+   "label": "6 Partizip l14",
+   "answer": "gedacht",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0,
+   "options": [
+    {
+     "value": "gewohnt",
+     "label": "gewohnt"
+    },
+    {
+     "value": "geglaubt",
+     "label": "geglaubt"
+    },
+    {
+     "value": "gesucht",
+     "label": "gesucht"
+    },
+    {
+     "value": "gekostet",
+     "label": "gekostet"
+    },
+    {
+     "value": "gesagt",
+     "label": "gesagt"
+    },
+    {
+     "value": "gebraucht",
+     "label": "gebraucht"
+    },
+    {
+     "value": "gewusst",
+     "label": "gewusst"
+    },
+    {
+     "value": "gelacht",
+     "label": "gelacht"
+    },
+    {
+     "value": "gefrühstückt",
+     "label": "gefrühstückt"
+    },
+    {
+     "value": "gelernt",
+     "label": "gelernt"
+    },
+    {
+     "value": "geliebt",
+     "label": "geliebt"
+    },
+    {
+     "value": "aufgeräumt",
+     "label": "aufgeräumt"
+    },
+    {
+     "value": "geredet",
+     "label": "geredet"
+    },
+    {
+     "value": "gedacht",
+     "label": "gedacht"
+    }
+   ]
+  },
+  {
+   "id": "pair-l-13-i",
+   "group": "u6",
+   "kind": "text",
+   "label": "6 Infinitiv l14",
+   "answer": "denken",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "pair-r-0-p",
+   "group": "u6",
+   "kind": "select",
+   "label": "6 Partizip r1",
+   "answer": "gefunden",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0,
+   "options": [
+    {
+     "value": "gefunden",
+     "label": "gefunden"
+    },
+    {
+     "value": "geschrieben",
+     "label": "geschrieben"
+    },
+    {
+     "value": "gesungen",
+     "label": "gesungen"
+    },
+    {
+     "value": "gesehen",
+     "label": "gesehen"
+    },
+    {
+     "value": "getrunken",
+     "label": "getrunken"
+    },
+    {
+     "value": "angerufen",
+     "label": "angerufen"
+    },
+    {
+     "value": "genommen",
+     "label": "genommen"
+    }
+   ]
+  },
+  {
+   "id": "pair-r-0-i",
+   "group": "u6",
+   "kind": "text",
+   "label": "6 Infinitiv r1",
+   "answer": "finden",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "pair-r-1-p",
+   "group": "u6",
+   "kind": "select",
+   "label": "6 Partizip r2",
+   "answer": "geschrieben",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0,
+   "options": [
+    {
+     "value": "gefunden",
+     "label": "gefunden"
+    },
+    {
+     "value": "geschrieben",
+     "label": "geschrieben"
+    },
+    {
+     "value": "gesungen",
+     "label": "gesungen"
+    },
+    {
+     "value": "gesehen",
+     "label": "gesehen"
+    },
+    {
+     "value": "getrunken",
+     "label": "getrunken"
+    },
+    {
+     "value": "angerufen",
+     "label": "angerufen"
+    },
+    {
+     "value": "genommen",
+     "label": "genommen"
+    }
+   ]
+  },
+  {
+   "id": "pair-r-1-i",
+   "group": "u6",
+   "kind": "text",
+   "label": "6 Infinitiv r2",
+   "answer": "schreiben",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "pair-r-2-p",
+   "group": "u6",
+   "kind": "select",
+   "label": "6 Partizip r3",
+   "answer": "gesungen",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0,
+   "options": [
+    {
+     "value": "gefunden",
+     "label": "gefunden"
+    },
+    {
+     "value": "geschrieben",
+     "label": "geschrieben"
+    },
+    {
+     "value": "gesungen",
+     "label": "gesungen"
+    },
+    {
+     "value": "gesehen",
+     "label": "gesehen"
+    },
+    {
+     "value": "getrunken",
+     "label": "getrunken"
+    },
+    {
+     "value": "angerufen",
+     "label": "angerufen"
+    },
+    {
+     "value": "genommen",
+     "label": "genommen"
+    }
+   ]
+  },
+  {
+   "id": "pair-r-2-i",
+   "group": "u6",
+   "kind": "text",
+   "label": "6 Infinitiv r3",
+   "answer": "singen",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "pair-r-3-p",
+   "group": "u6",
+   "kind": "select",
+   "label": "6 Partizip r4",
+   "answer": "gesehen",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0,
+   "options": [
+    {
+     "value": "gefunden",
+     "label": "gefunden"
+    },
+    {
+     "value": "geschrieben",
+     "label": "geschrieben"
+    },
+    {
+     "value": "gesungen",
+     "label": "gesungen"
+    },
+    {
+     "value": "gesehen",
+     "label": "gesehen"
+    },
+    {
+     "value": "getrunken",
+     "label": "getrunken"
+    },
+    {
+     "value": "angerufen",
+     "label": "angerufen"
+    },
+    {
+     "value": "genommen",
+     "label": "genommen"
+    }
+   ]
+  },
+  {
+   "id": "pair-r-3-i",
+   "group": "u6",
+   "kind": "text",
+   "label": "6 Infinitiv r4",
+   "answer": "sehen",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "pair-r-4-p",
+   "group": "u6",
+   "kind": "select",
+   "label": "6 Partizip r5",
+   "answer": "getrunken",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0,
+   "options": [
+    {
+     "value": "gefunden",
+     "label": "gefunden"
+    },
+    {
+     "value": "geschrieben",
+     "label": "geschrieben"
+    },
+    {
+     "value": "gesungen",
+     "label": "gesungen"
+    },
+    {
+     "value": "gesehen",
+     "label": "gesehen"
+    },
+    {
+     "value": "getrunken",
+     "label": "getrunken"
+    },
+    {
+     "value": "angerufen",
+     "label": "angerufen"
+    },
+    {
+     "value": "genommen",
+     "label": "genommen"
+    }
+   ]
+  },
+  {
+   "id": "pair-r-4-i",
+   "group": "u6",
+   "kind": "text",
+   "label": "6 Infinitiv r5",
+   "answer": "trinken",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "pair-r-5-p",
+   "group": "u6",
+   "kind": "select",
+   "label": "6 Partizip r6",
+   "answer": "angerufen",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0,
+   "options": [
+    {
+     "value": "gefunden",
+     "label": "gefunden"
+    },
+    {
+     "value": "geschrieben",
+     "label": "geschrieben"
+    },
+    {
+     "value": "gesungen",
+     "label": "gesungen"
+    },
+    {
+     "value": "gesehen",
+     "label": "gesehen"
+    },
+    {
+     "value": "getrunken",
+     "label": "getrunken"
+    },
+    {
+     "value": "angerufen",
+     "label": "angerufen"
+    },
+    {
+     "value": "genommen",
+     "label": "genommen"
+    }
+   ]
+  },
+  {
+   "id": "pair-r-5-i",
+   "group": "u6",
+   "kind": "text",
+   "label": "6 Infinitiv r6",
+   "answer": "anrufen",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "pair-r-6-p",
+   "group": "u6",
+   "kind": "select",
+   "label": "6 Partizip r7",
+   "answer": "genommen",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0,
+   "options": [
+    {
+     "value": "gefunden",
+     "label": "gefunden"
+    },
+    {
+     "value": "geschrieben",
+     "label": "geschrieben"
+    },
+    {
+     "value": "gesungen",
+     "label": "gesungen"
+    },
+    {
+     "value": "gesehen",
+     "label": "gesehen"
+    },
+    {
+     "value": "getrunken",
+     "label": "getrunken"
+    },
+    {
+     "value": "angerufen",
+     "label": "angerufen"
+    },
+    {
+     "value": "genommen",
+     "label": "genommen"
+    }
+   ]
+  },
+  {
+   "id": "pair-r-6-i",
+   "group": "u6",
+   "kind": "text",
+   "label": "6 Infinitiv r7",
+   "answer": "nehmen",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
   }
  ],
  "audio": [],
@@ -1793,7 +3345,8 @@
   "notes": [
    "BASISTRAINING L11 Ü5-Ü7. Answers from AB Lösungsschlüssel (5 b-g; 6 (…)ge…t 14 pairs, (…)ge…en 7 pairs; 7 b-g).",
    "Ü5a: 'habe' and 'geschlafen.' are printed blue examples (words, no fields; 'geschlafen' struck in the bank). Ü6: example rows 'gearbeitet – arbeiten'/'eingekauft – einkaufen' and 'gesprochen – sprechen'/'eingeladen – einladen' printed blue; more pairs than blank rules, order free: every blank cell accepts any pair of its column (|-separated).",
-   "Ü7a 'geschrieben' printed blue example ('schrieben' struck in the fragment bank). Right-edge Modul tab cut off, omitted."
+   "Ü7a 'geschrieben' printed blue example ('schrieben' struck in the fragment bank). Right-edge Modul tab cut off, omitted.",
+   "2026-11-16: Source scan preserved. All21bankpairs accessible in two independently scrolling columns,coherent pair grading in anyorder with duplicates rejected;6participlebankselects,6auxiliarywriting and6wordformationwriting."
   ]
  }
 }
