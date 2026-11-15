@@ -37,20 +37,29 @@ export function NativeAB11Lessons45({page}:{page:string}){
  const [active,A]=useState<Record<string,number>>({});
  const match=(id:string,left:string[],right:string[],expected:number[],x:number,y:number,w:number,step=29)=> <><LineMatching id={id} left={left} right={right} values={v} onMatch={set} leftX={x} rightX={x+w*.58} leftWidth={w*.42-12} rightWidth={w*.42} ys={left.map((_,i)=>Y(y+i*step))} rightYs={right.map((_,i)=>Y(y+i*step))} width={1075} height={1521} fontSize={18} example={id==='u7match'?undefined:[0,expected[0]]}/>{rule(id,x,y+left.length*step+9,()=>expected.every((j,i)=>(id!=='u7match'&&i===0)||v[id+'-'+i]===''+j))}</>;
  return <div className="nativeAB11 nativeAB11Module1 nativeAB11Lessons45" ref={host} data-native-ab11-page={page}><div className="nabCanvas mCanvas" style={{transform:`translate(-50%,-50%) scale(${scale})`}}>
- {page==='30'&&<>
- <div className="mLessonBanner" style={{left:340,top:Y(93),width:500,height:75*sy}}/>{art('hero',146,93,140,75)}{txt(390,115,450,'Der Tisch ist schön!','mHeader')}
- {title('1',215,'Ergänzen Sie das Gespräch.','KB 3')}{txt(168,255,670,'Er ist wirklich schön, aber sehr teuer. | Nur 55 Euro! Das ist aber günstig! |\nUnd wie viel kostet der Stuhl? | Was kostet denn das Bild? | Ja, bitte.','mBank')}
- {txt(167,314,270,'▪ Guten Tag, brauchen Sie Hilfe?')}{txt(517,334,280,'a  ▴ Ja, bitte.','mExample')}{f('u1-a',548,357,278)}
- {txt(167,379,270,'▪ 55 Euro!')}{txt(517,405,20,'b  ▴')}{f('u1-b',548,403,278)}
- {txt(167,438,270,'▪ Ja, das ist ein Sonderangebot.')}{txt(517,466,20,'c  ▴')}{f('u1-c',548,464,278)}
- {txt(167,500,285,'▪ Der Stuhl kostet 1200 Euro.\n  Der Designer heißt Nilsson.')}{txt(517,533,20,'d  ▴')}{f('u1-d',548,531,278)}{txt(167,565,280,'▪ Finden Sie?')}<svg className="mDialogueLines" viewBox="0 0 60 250" style={{position:'absolute',left:453,top:Y(320),width:50,height:250*sy}}><path d="M0 0 L50 20 L0 50 L50 80 L0 115 L50 145 L0 175 L50 210 L0 245" fill="none" stroke="#999" strokeWidth="1.4"/></svg>{check('u1',168,600)}
- {title('2',642,'Meine Möbel','KB 4')}{txt(143,680,640,'a  Ergänzen Sie die Nomen mit Artikel.','mTitle')}{txt(168,716,670,'Bett | Bild | Lampe | Sessel | Stuhl | Sofa | Tisch | Schrank | Teppich','mBank')}
- {art('room',321,754,327,180)}
- {['l1','l2','l3','l4','l5'].map((s,i)=>f('u2a-'+s,168,764+i*35,140))}{['r1','r2','r3','r4'].map((s,i)=>s==='r3'?txt(700,834,130,'das Bett','mExample'):f('u2a-'+s,700,764+i*35,140))}{check('u2a',168,951)}
- {txt(143,994,660,'b  Notieren Sie 10 Nomen aus den Lektionen 1 bis 3.\n   Ihre Partnerin / Ihr Partner sucht die Artikel im Wörterbuch.','mTitle')}{open('eigene-nomen',168,1044,438,61,'2b zehn eigene Nomen')}{txt(622,1032,218,'der Sohn [zoːn]; -[e]s, Söhne: männliches Kind; ein Sohn aus erster, zweiter Ehe; der älteste, jüngste, einzige Sohn; Vater und Sohn sehen sich überhaupt nicht ähnlich; die Familie hat zwei Söhne und eine Tochter. Syn.: Junior. Zus.: Adoptivsohn.','mDictionary')}
- {title('3',1145,'Ergänzen Sie der, das oder die und vergleichen Sie.','KB 4')}{txt(168,1182,665,'Deutsch                      Englisch                     Meine Sprache oder andere Sprachen','mBank')}
- {['Mann,','Kind,','Frau,'].map((s,i)=><span key={s}>{f('u3-r'+(i+1)+'a',168,1212+i*28,45)}{txt(216,1214+i*28,63,s)}{f('u3-r'+(i+1)+'b',281,1212+i*28,45)}{txt(331,1214+i*28,63,['Tisch','Bett','Lampe'][i])}{txt(402,1214+i*28,210,['the man, the table','the child, the bed','the woman, the lamp'][i])}{f('eigene-sprache-'+i,620,1212+i*28,210)}</span>)}{check('u3',168,1307)}
- </>}
+ {page==='30'&&(()=>{
+ const txt=(x:number,y:number,w:number,s:string,c='')=><div className={'mText '+c} style={{left:x,top:y,width:w}}><Words s={s}/></div>;
+ const f=(id:string,x:number,y:number,w:number)=><ChoiceInput className="mField" data-native-field={id} aria-label={id} style={{left:x,top:y,width:w}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
+ const art=(n:string,x:number,y:number,w:number,h:number)=><PageImage className="mArt" alt={'Originalabbildung '+n} src={'assets/native-ab11/p30-'+n+'.png'} style={{left:x,top:y,width:w,height:h}}/>;
+ const title=(n:string,y:number,s:string,kb:string)=><>{txt(109,y+5,30,kb,'mKB')}<div className="mP30Number" style={{top:y}}>{n}</div>{txt(178,y+1,680,s,'mTitle')}</>;
+ const c=(id:string,x:number,y:number)=><div className="mCheck" data-native-task={id} style={{left:x,top:y}}><CheckButton onClick={()=>G({...graded,[id]:Object.entries(answers(id)).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}/><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ return <><div className="mP30Banner"/>{art('hero-source',145,98,120,67)}{txt(405,116,450,'Der Tisch ist schön!','mHeader')}
+ {title('1',214,'Ergänzen Sie das Gespräch.','KB 3')}{txt(121,252,24,'KOMMUNIKATION','mP30Rail')}
+ {txt(180,247,670,'Er ist wirklich schön, aber sehr teuer. | Nur 55 Euro! Das ist aber günstig! |\nUnd wie viel kostet der Stuhl? | Was kostet denn das Bild? | Ja, bitte.','mBank')}
+ {txt(177,300,290,'▪ Guten Tag, brauchen Sie Hilfe?')}{txt(485,321,36,'a  ▴')}{art('ja-ink',520,320,58,24)}{f('u1-a',578,318,268)}
+ {txt(177,342,270,'▪ 55 Euro!')}{txt(485,364,36,'b  ▴')}{f('u1-b',521,360,325)}
+ {txt(177,385,290,'▪ Ja, das ist ein Sonderangebot.')}{txt(485,406,36,'c  ▴')}{f('u1-c',521,402,325)}
+ {txt(177,427,295,'▪ Der Stuhl kostet 1200 Euro.\n    Der Designer heißt Nilsson.')}{txt(485,470,36,'d  ▴')}{f('u1-d',521,466,325)}{txt(177,490,270,'▪ Finden Sie?')}
+ <svg className="mP30Arrows" width="34" height="184" style={{position:'absolute',left:433,top:313}}><defs><marker id="p30-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6" fill="none" stroke="#929292"/></marker></defs>{[[1,2,27,11],[27,28,5,37],[2,49,27,58],[27,72,5,81],[2,91,27,100],[27,105,5,115],[2,132,27,145],[27,167,5,179]].map((p,i)=><path key={i} d={`M${p[0]} ${p[1]}L${p[2]} ${p[3]}`} fill="none" stroke="#999" strokeWidth=".8" markerEnd="url(#p30-arrow)"/>)}</svg>{c('u1',849,489)}
+ {title('2',564,'Meine Möbel','KB 4')}{txt(121,601,24,'WÖRTER','mP30Rail')}{txt(151,596,700,'a   Ergänzen Sie die Nomen mit Artikel.','mTitle')}
+ {txt(179,629,670,'Bett | Bild | Lampe | Sessel | Stuhl | Sofa | Tisch | Schrank | Teppich','mBank')}
+ {art('room-source',320,665,375,178)}{['l1','l2','l3','l4','l5'].map((s,i)=>f('u2a-'+s,178,675+i*28,138))}{['r1','r2','r3','r4'].map((s,i)=>s==='r3'?art('bett-ink',700,753,64,23):f('u2a-'+s,700,[676,714,0,788][i],138))}{c('u2a',849,807)}
+ {art('pair-icon',92,870,39,30)}{txt(151,871,680,'b   Notieren Sie 10 Nomen aus den Lektionen 1 bis 3.\n    Ihre Partnerin / Ihr Partner sucht die Artikel im Wörterbuch.','mTitle')}{art('dictionary',628,862,218,94)}
+ <textarea className="mP30Own" data-native-field="eigene-nomen" aria-label="2b zehn eigene Nomen" style={{left:178,top:917,width:429,height:39}} value={v['eigene-nomen']||''} onChange={e=>set('eigene-nomen',e.target.value)}/>
+ {title('3',966,'Ergänzen Sie der, das oder die und vergleichen Sie.','KB 4')}{art('globe-icon',107,990,26,25)}{txt(121,1029,24,'STRUKTUREN','mP30Rail')}
+ <div className="mP30Table"><b>Deutsch</b><b>Englisch</b><b>Meine Sprache oder andere Sprachen</b>{['Mann,','Kind,','Frau,'].map((s,i)=><span key={s}><div>{f('u3-r'+(i+1)+'a',5,1,48)}<i style={{left:57}}>{s}</i>{f('u3-r'+(i+1)+'b',104,1,48)}<i style={{left:156}}>{['Tisch','Bett','Lampe'][i]}</i></div><div>{['the man, the table','the child, the bed','the woman, the lamp'][i]}</div><div>{f('eigene-sprache-'+i,0,1,277)}</div></span>)}</div>{c('u3',849,1069)}
+ <div className="mP30Footer"><em>Modul 2</em>30&nbsp; | &nbsp;dreißig</div>
+ </>})()}
  {page==='31'&&<>
  {head('BASISTRAINING')}<div className="nabModule">4</div>{title('4',208,'Welche Zahlen hören Sie?','KB 5')}{txt(143,246,350,'a  Kreuzen Sie an.','mTitle')}{listen('14',96,247,'4a')}
  {['323|332','17 000|70 000','350 000|355 000','1100|1010','64 200|46 200','100 000|1 000 000'].map((s,i)=>{const x=i<3?168:530,y=281+(i%3)*27;return <span key={s}>{txt(x,y,20,''+(i%3+1+(i<3?0:3)))}{s.split('|').map((val,j)=><span key={val}>{radio('u4a-'+(i+1),j===0?'l':'r',x+30+j*125,y+1,val)}{txt(x+51+j*125,y,110,val)}</span>)}</span>})}{rule('u4',168,372,()=>['r','l','r','l','l','r'].every((a,i)=>v['u4a-'+(i+1)]===a))}
