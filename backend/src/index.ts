@@ -154,6 +154,51 @@ app.get('/api/progress', async (c) => {
   return c.json({ progress: row ? JSON.parse(row.data) : null, updated_at: row?.updated_at ?? null })
 })
 
+// Progress blobs are merged with union semantics, never replaced: a device
+// that holds fewer keys (fresh browser, cleared storage) can never erase what
+// another device already synced. Per key, progress wins over its absence (a
+// checked-off exercise stays checked off, a written answer beats an empty
+// one); genuine conflicts go to the incoming value.
+const isPlainObject = (v: unknown): v is Record<string, unknown> =>
+  typeof v === 'object' && v !== null && !Array.isArray(v)
+
+function preferScalar(server: unknown, incoming: unknown): unknown {
+  if (server === true || incoming === true) return true
+  if (typeof server === 'number' && typeof incoming === 'number') return Math.max(server, incoming)
+  if (typeof server === 'string' && typeof incoming === 'string') return server && !incoming ? server : incoming
+  return incoming === undefined ? server : incoming
+}
+
+function mergeJson(server: unknown, incoming: unknown): unknown {
+  if (server === undefined) return incoming
+  if (incoming === undefined) return server
+  if (isPlainObject(server) && isPlainObject(incoming)) {
+    const out: Record<string, unknown> = { ...server }
+    for (const key of Object.keys(incoming)) out[key] = mergeJson(server[key], incoming[key])
+    return out
+  }
+  return preferScalar(server, incoming)
+}
+
+function mergeValue(serverRaw: string | undefined, incomingRaw: string | undefined): string | undefined {
+  if (serverRaw === undefined) return incomingRaw
+  if (incomingRaw === undefined) return serverRaw
+  if (serverRaw === incomingRaw) return incomingRaw
+  let server: unknown, incoming: unknown
+  try { server = JSON.parse(serverRaw) } catch { return incomingRaw }
+  try { incoming = JSON.parse(incomingRaw) } catch { return incomingRaw }
+  try { return JSON.stringify(mergeJson(server, incoming)) } catch { return incomingRaw }
+}
+
+function mergeBlobs(server: Record<string, string>, incoming: Record<string, string>): Record<string, string> {
+  const out: Record<string, string> = { ...server }
+  for (const key of Object.keys(incoming)) {
+    const merged = mergeValue(server[key], incoming[key])
+    if (merged !== undefined) out[key] = merged
+  }
+  return out
+}
+
 app.put('/api/progress', async (c) => {
   const raw = await c.req.text()
   if (raw.length > MAX_PROGRESS_BYTES) throw new ValidationError({ progress: 'too large' })
@@ -165,10 +210,25 @@ app.put('/api/progress', async (c) => {
   }
   if (typeof parsed !== 'object' || parsed === null || Array.isArray(parsed)) throw new ValidationError({ progress: 'object expected' })
   const body = parsed as Record<string, unknown>
-  const data = JSON.stringify(body.progress ?? body)
+  const incoming = (body.progress ?? body) as Record<string, unknown>
+  if (isPlainObject(incoming) && Object.values(incoming).some((v) => typeof v !== 'string'))
+    throw new ValidationError({ progress: 'values must be strings' })
+  const existing = await c.env.DB.prepare('SELECT data FROM progress WHERE user_id = ?').bind(c.get('userId')).first<{ data: string }>()
+  let serverBlob: Record<string, string> = {}
+  if (existing) {
+    try {
+      const p = JSON.parse(existing.data)
+      if (isPlainObject(p)) serverBlob = p as Record<string, string>
+    } catch {
+      // unreadable row: start the union from empty rather than failing
+    }
+  }
+  const merged = mergeBlobs(serverBlob, incoming as Record<string, string>)
+  const data = JSON.stringify(merged)
+  if (data.length > MAX_PROGRESS_BYTES) throw new ValidationError({ progress: 'too large' })
   const now = new Date().toISOString()
   await saveProgress(c.env.DB, c.get('userId'), data, now)
-  return c.json({ progress: JSON.parse(data), updated_at: now })
+  return c.json({ progress: merged, updated_at: now })
 })
 
 export default app
