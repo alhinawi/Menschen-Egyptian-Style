@@ -1,5 +1,5 @@
 import {useEffect} from 'react';
-import {MODULE_ORDER, MODULES, modulePages} from '../library-data';
+import {MODULE_ORDER, MODULES, modulePages, lessonForPage} from '../library-data';
 import {navigateLesson} from '../navigate';
 
 const HOP_FLAG = 'menschen-hop';
@@ -133,30 +133,21 @@ export function LessonHop({slug}: {slug: string}) {
       if (!target) return;
       const spread = document.querySelector<HTMLElement>('#spread');
       if (spread?.style.zoom) sessionStorage.setItem(HOP_ZOOM, spread.style.zoom);
-      // Finish the page turn, swap the lesson in-app under a veil, then settle
-      // the new page flat. No document navigation: the shell stays mounted.
-      setFlipAngle(FLIP_MAX_DEG, dir, 'complete');
-      setTimeout(() => {
-        const veil = makeVeil('1', 'auto');
-        veil.style.transition = 'none';
-        document.body.append(veil);
-        void (async () => {
-          await navigateLesson(target.slug, target.token);
-          const zoom = Number(sessionStorage.getItem(HOP_ZOOM));
-          sessionStorage.removeItem(HOP_ZOOM);
-          if (zoom > 0) (window as any).bookZoom?.(zoom);
-          setFlipAngle(28, dir, 'none');
-          veil.style.transition = 'opacity .18s ease';
-          veil.style.opacity = '0';
-          requestAnimationFrame(() => {
-            setFlipAngle(0, dir, 'settle');
-            setTimeout(() => { veil.remove(); clearFlip(); }, 320);
-          });
-        })();
-      }, 230);
+      // The common navigator owns the door animation. Never hold navigation
+      // behind a timeout or a pointer-blocking veil.
+      clearFlip();
+      void navigateLesson(target.slug, target.token).then(() => {
+        const zoom = Number(sessionStorage.getItem(HOP_ZOOM));
+        sessionStorage.removeItem(HOP_ZOOM);
+        if (zoom > 0) (window as any).bookZoom?.(zoom);
+      });
     };
 
     const hopTarget = (dir: 1 | -1): {slug: string; token: string} | null => {
+      const tokens = modulePages(slug);
+      const from = tokens[pageIndex()], to = tokens[pageIndex() + dir];
+      const before = lessonForPage(mod, Number(from)), after = lessonForPage(mod, Number(to));
+      if (to && before && after && before.label !== after.label) return {slug, token: to};
       if (dir > 0) return nextSlug && pageIndex() === pageCount() - 1 ? {slug: nextSlug, token: modulePages(nextSlug)[0]} : null;
       return prevSlug && pageIndex() === 0 && prevTokens.length ? {slug: prevSlug, token: prevTokens[prevTokens.length - 1]} : null;
     };
@@ -171,6 +162,13 @@ export function LessonHop({slug}: {slug: string}) {
       depart(target, dir);
     };
     document.addEventListener('click', onClick, true);
+    const onKey = (e: KeyboardEvent) => {
+      if (e.target instanceof Element && e.target.closest('input,select,textarea,button,[contenteditable],dialog')) return;
+      const dir = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+      const target = dir ? hopTarget(dir) : null;
+      if (target) {e.preventDefault();e.stopImmediatePropagation();depart(target, dir as 1 | -1);}
+    };
+    document.addEventListener('keydown', onKey, true);
 
     // The adapters disable the arrow on their boundary page; re-enable it
     // whenever a hop continues from that boundary.
@@ -214,8 +212,8 @@ export function LessonHop({slug}: {slug: string}) {
       const last = pageCount() - 1;
       gesture = {
         x, y, axis: null, dir: 0,
-        canNext: !!nextUrl && pageIndex() === last,
-        canPrev: !!prevUrl && pageIndex() === 0,
+        canNext: !!hopTarget(1),
+        canPrev: !!hopTarget(-1),
         flipping: false, lastX: x, lastT: performance.now(), velocity: 0,
       };
     };
@@ -268,10 +266,13 @@ export function LessonHop({slug}: {slug: string}) {
       if (e.touches.length !== 1) return;
       const t = e.touches[0];
       gestureMove(t.clientX, t.clientY);
+      if (gesture?.flipping) e.stopImmediatePropagation();
     };
     const onTouchEnd = (e: TouchEvent) => {
       const t = e.changedTouches[0];
+      const owned = gesture?.flipping;
       if (t) gestureEnd(t.clientX);
+      if (owned) e.stopImmediatePropagation();
     };
     const onTouchCancel = () => gestureCancel();
     const onMouseDown = (e: MouseEvent) => gestureStart(e.clientX, e.clientY, e.target);
@@ -289,6 +290,7 @@ export function LessonHop({slug}: {slug: string}) {
     return () => {
       clearTimeout(prefetchTimer);
       document.removeEventListener('click', onClick, true);
+      document.removeEventListener('keydown', onKey, true);
       observer.disconnect();
       document.removeEventListener('touchstart', onTouchStart, true);
       document.removeEventListener('touchmove', onTouchMove, true);

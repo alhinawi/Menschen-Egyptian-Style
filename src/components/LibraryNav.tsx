@@ -1,3 +1,4 @@
+import {useUiLanguage} from '../ui-language';
 import {PageImage} from './PageImage';
 import {useContext, useEffect, useLayoutEffect, useState} from 'react';
 import {createPortal} from 'react-dom';
@@ -20,6 +21,7 @@ type Panel = 'nav' | 'pages' | null;
  * adapters and the reader store keep working unchanged.
  */
 export function LibraryNav({slug}: {slug: string}) {
+  const {t} = useUiLanguage();
   const mod = MODULES[slug];
   const store = useContext(ReaderContext) as ReaderStore | null;
   const [panel, setPanel] = useState<Panel>(() => {
@@ -136,13 +138,6 @@ export function LibraryNav({slug}: {slug: string}) {
   };
 
   const levels: Array<'A1.1' | 'A1.2'> = ['A1.1', 'A1.2'];
-  // Tapping the other book's card switches straight to the matching
-  // Lektion there (same level, same lesson when it exists).
-  const switchTarget = (target: 'kb' | 'ab') => {
-    const candidates = levelLessons(target, mod.level);
-    const match = currentLesson ? candidates.find(l => l.label === currentLesson.label) : null;
-    return (match ?? candidates[0])!;
-  };
 
   return <>
     {headerSlot && createPortal(
@@ -162,29 +157,18 @@ export function LibraryNav({slug}: {slug: string}) {
             <button type="button" className="lnv-close ml-auto size-8 min-h-8 rounded-full border border-[#ddd2b8] bg-white text-[#6b6152] text-[15px] p-0" aria-label="Close menu" onClick={close}>×</button>
           </div>
           <div className="lnv-label font-bold text-[10.5px] font-[Arial,sans-serif] tracking-[.16em] text-[#a08c5f] px-4 pt-0.5 pb-2.5">CHOOSE YOUR BOOK</div>
-          {BOOKS.map(b => {
-            if (b.id === mod.book) {
-              return (
-                <div key={b.id} className="lnv-bookcard sel flex gap-3 items-center text-left mx-3.5 mb-2.5 p-2.5 rounded-2xl border-[1.5px] border-[#c9a45a] shadow-[0_0_0_1px_#c9a45a,0_6px_16px_rgba(113,60,70,.10)] bg-[#fffdf6] cursor-pointer text-inherit no-underline dark:bg-[#333c36] dark:border-[#c9a45a]" aria-current="true">
-                  <PageImage src={mod.level === 'A1.2' ? `assets/${b.id}-a12-cover.webp` : b.cover} alt="" className="w-11 h-[60px] object-cover rounded-md shadow-[0_2px_6px_rgba(0,0,0,.25)] flex-none"/>
-                  <span className="lnv-bt font-bold text-[16.5px] font-[Georgia,serif] flex flex-col gap-0.5">{b.title}<small className="font-normal text-[11px] font-[Arial,sans-serif] text-[#8a7d63] dark:text-[#9aa396]">{b.subtitle}</small></span>
-                </div>
-              );
-            }
-            // Switch straight to the matching Lektion in the other book.
-            return (
-              <a key={b.id} className="lnv-bookcard flex gap-3 items-center text-left mx-3.5 mb-2.5 p-2.5 rounded-2xl border-[1.5px] border-[#e4d9bd] bg-white cursor-pointer text-inherit no-underline dark:bg-[#2c342f] dark:border-[#43504a] dark:text-[#e8e2d4]" href={lessonUrl(switchTarget(b.id))}
-                onClick={e => {
-                  e.preventDefault();
-                  close();
-                  const t = switchTarget(b.id);
-                  void navigateLesson(t.slug, String(t.pages[0]));
-                }}>
-                <PageImage src={mod.level === 'A1.2' ? `assets/${b.id}-a12-cover.webp` : b.cover} alt="" className="w-11 h-[60px] object-cover rounded-md shadow-[0_2px_6px_rgba(0,0,0,.25)] flex-none"/>
-                <span className="lnv-bt font-bold text-[16.5px] font-[Georgia,serif] flex flex-col gap-0.5">{b.title}<small className="font-normal text-[11px] font-[Arial,sans-serif] text-[#8a7d63] dark:text-[#9aa396]">{b.subtitle}</small></span>
-              </a>
-            );
-          })}
+          <div className="lnv-bookgrid grid grid-cols-2 gap-2 mx-3.5 mb-3">
+            {levels.flatMap(level => BOOKS.map(b => {
+              const target = levelCover(b.id, level);
+              const selected = b.id === mod.book && level === mod.level;
+              return <a key={b.id + level} className={'lnv-bookcard flex items-center gap-2 p-2 rounded-xl border bg-white text-inherit no-underline dark:bg-[#2c342f] dark:text-[#e8e2d4]' + (selected ? ' sel border-[#c9a45a] ring-1 ring-[#c9a45a]' : ' border-[#e4d9bd] dark:border-[#43504a]')}
+                aria-label={`${t(b.title)} ${level}`} aria-current={selected ? 'true' : undefined}
+                href={spaLessonUrl(target.slug, target.token)} onClick={e => {e.preventDefault();close();void navigateLesson(target.slug, target.token);}}>
+                <PageImage loading="eager" src={level === 'A1.2' ? `assets/${b.id}-a12-cover.webp` : b.cover} alt="" className="w-8 h-[44px] object-contain rounded-sm shadow-sm flex-none"/>
+                <span className="lnv-bt font-bold text-[12px] font-[Georgia,serif] flex flex-col gap-1 min-w-0">{t(b.title)}<small className="font-normal text-[11px] font-[Arial,sans-serif] text-[#8a7d63] dark:text-[#9aa396]">{level}</small></span>
+              </a>;
+            }))}
+          </div>
           <div className="lnv-scroll flex-1 overflow-y-auto overscroll-contain touch-pan-y pb-6">
             <a className="lnv-home flex items-baseline gap-2.5 mx-5 mt-0.5 mb-1.5 py-[9px] font-bold text-[13.5px] font-[Arial,sans-serif] text-[#3a332b] no-underline border-b border-[#eee3c8] dark:text-[#ddd6c6] dark:border-[#3a443e]" href={spaLessonUrl(cover.slug, cover.token)} onClick={e => { e.preventDefault(); close(); void navigateLesson(cover.slug, cover.token); }}>Cover</a>
             {levels.map(level => (
