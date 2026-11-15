@@ -52,6 +52,11 @@ export function ReaderProfile() {
 
   const soundOn = snapshot.soundOn !== false;
   const avatar = auth.user?.avatar ?? null;
+  // A stored photo URL that stops loading (e.g. a changed Google picture)
+  // falls back to the initial placeholder instead of a broken image.
+  const [avatarBroken, setAvatarBroken] = useState(false);
+  useEffect(() => setAvatarBroken(false), [avatar]);
+  const showAvatar = avatar && !avatarBroken ? avatar : null;
 
   return (
     <span data-react-theme-slot="" className="profileAnchor" ref={anchor}>
@@ -64,8 +69,8 @@ export function ReaderProfile() {
         aria-expanded={open}
         onClick={() => setOpen(o => !o)}
       >
-        {avatar ? (
-          <img className="profileAvatarImg" src={avatar} alt="" referrerPolicy="no-referrer" />
+        {showAvatar ? (
+          <img className="profileAvatarImg" src={showAvatar} alt="" referrerPolicy="no-referrer" onError={() => setAvatarBroken(true)} />
         ) : (
           <svg viewBox="0 0 24 24" width={22} height={22} aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
             <circle cx="12" cy="8" r="3.6" />
@@ -76,7 +81,7 @@ export function ReaderProfile() {
       {open && (
         <div className="profilePanel" dir={language === 'ar' ? 'rtl' : 'ltr'} role="dialog" aria-label={t('الحساب والإعدادات')}>
           {auth.status === 'authed' && auth.user ? (
-            <SignedInBlock user={auth.user} avatar={avatar} onSignOut={() => void signOut()} />
+            <SignedInBlock user={auth.user} avatar={showAvatar} onSignOut={() => void signOut()} onAvatarError={() => setAvatarBroken(true)} />
           ) : (
             <SignInBlock googleOn={googleOn} />
           )}
@@ -121,7 +126,7 @@ export function ReaderProfile() {
   );
 }
 
-function SignedInBlock({user, avatar, onSignOut}: {user: ApiUser; avatar: string | null; onSignOut: () => void}) {
+function SignedInBlock({user, avatar, onSignOut, onAvatarError}: {user: ApiUser; avatar: string | null; onSignOut: () => void; onAvatarError: () => void}) {
   const {t} = useUiLanguage();
   const sync = useSyncExternalStore(subscribeSyncStatus, getSyncStatus, getSyncStatus);
   const [picking, setPicking] = useState(false);
@@ -134,7 +139,7 @@ function SignedInBlock({user, avatar, onSignOut}: {user: ApiUser; avatar: string
       <div className="profileRow authUserRow">
         <button type="button" className="authUserAvatarBtn" aria-label={t('Change profile photo')} title={t('Change profile photo')} onClick={() => setPicking(true)}>
           {avatar ? (
-            <img className="authUserAvatar" src={avatar} alt="" referrerPolicy="no-referrer" />
+            <img className="authUserAvatar" src={avatar} alt="" referrerPolicy="no-referrer" onError={onAvatarError} />
           ) : (
             <span className="authUserAvatar authUserInitial" aria-hidden="true">{name.trim().charAt(0) || t('؟')}</span>
           )}
