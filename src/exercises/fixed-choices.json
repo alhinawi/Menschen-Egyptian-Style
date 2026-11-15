@@ -2900,5 +2900,22 @@
       ],
       "source": "2: exact printed calendar bank"
     }
+  ],
+  "ab-a11:22": [
+    {
+      "ids": [
+        "u4-bruder",
+        "u4-kollegen",
+        "u4-frau",
+        "u4-sohn"
+      ],
+      "options": [
+        "mein",
+        "meine",
+        "dein",
+        "deine"
+      ],
+      "source": "4: Ergänzen Sie mein-/dein-. Four nominative possessive forms for Bruder, Kollegen, Frau and Sohn."
+    }
   ]
 }
