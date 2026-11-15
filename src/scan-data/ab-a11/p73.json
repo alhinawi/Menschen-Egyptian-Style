@@ -2176,10 +2176,10 @@
    "kind": "text",
    "label": "TS: … du gern Ski? (fahren)",
    "answer": "Fährst",
-   "x": 216,
-   "y": 602,
-   "w": 125,
-   "h": 20
+   "x": 215,
+   "y": 599,
+   "w": 126,
+   "h": 26
   },
   {
    "id": "u2-f2",
@@ -2187,10 +2187,10 @@
    "kind": "text",
    "label": "TS: … du auch gern Bücher? (lesen)",
    "answer": "Liest",
-   "x": 459,
-   "y": 602,
-   "w": 122,
-   "h": 20
+   "x": 458,
+   "y": 599,
+   "w": 111,
+   "h": 26
   },
   {
    "id": "u2-f3",
@@ -2198,10 +2198,10 @@
    "kind": "text",
    "label": "CARLOS: Nein, ich … keine Bücher. (lesen)",
    "answer": "lese",
-   "x": 374,
-   "y": 641,
-   "w": 128,
-   "h": 20
+   "x": 385,
+   "y": 636,
+   "w": 112,
+   "h": 27
   },
   {
    "id": "u2-f4",
@@ -2209,10 +2209,10 @@
    "kind": "text",
    "label": "CARLOS: … du auch gern Filme? (sehen)",
    "answer": "siehst",
-   "x": 216,
-   "y": 673,
-   "w": 115,
-   "h": 20
+   "x": 215,
+   "y": 663,
+   "w": 112,
+   "h": 27
   },
   {
    "id": "u2-f5",
@@ -2220,10 +2220,10 @@
    "kind": "text",
    "label": "TS: Wo … du denn deine Freunde? (treffen)",
    "answer": "triffst",
-   "x": 302,
-   "y": 734,
-   "w": 129,
-   "h": 20
+   "x": 298,
+   "y": 727,
+   "w": 137,
+   "h": 27
   },
   {
    "id": "u2-f6",
@@ -2231,10 +2231,10 @@
    "kind": "text",
    "label": "TS: Hey, … du jetzt nicht mehr mit mir? (sprechen)",
    "answer": "sprichst",
-   "x": 438,
-   "y": 837,
-   "w": 146,
-   "h": 20
+   "x": 434,
+   "y": 828,
+   "w": 153,
+   "h": 27
   },
   {
    "id": "u3-b",
@@ -2242,10 +2242,10 @@
    "kind": "text",
    "label": "b",
    "answer": "Kannst du auch kommen?",
-   "x": 211,
-   "y": 1042,
-   "w": 336,
-   "h": 20
+   "x": 226,
+   "y": 1030,
+   "w": 377,
+   "h": 27
   },
   {
    "id": "u3-c",
@@ -2253,10 +2253,10 @@
    "kind": "text",
    "label": "c",
    "answer": "Leider kann ich nicht kommen.",
-   "x": 211,
-   "y": 1071,
-   "w": 336,
-   "h": 20
+   "x": 226,
+   "y": 1056,
+   "w": 377,
+   "h": 27
   },
   {
    "id": "u3-d",
@@ -2264,54 +2264,120 @@
    "kind": "text",
    "label": "d",
    "answer": "Am Wochenende fahre ich nach Wien.",
-   "x": 211,
-   "y": 1102,
-   "w": 336,
-   "h": 20
+   "x": 226,
+   "y": 1081,
+   "w": 377,
+   "h": 27
   },
   {
    "id": "u4-a1",
    "group": "u4",
-   "kind": "text",
+   "kind": "select",
    "label": "a ■ … du auch einen Orangensaft?",
    "answer": "Magst",
-   "x": 243,
-   "y": 1238,
-   "w": 60,
-   "h": 20
+   "x": 246,
+   "y": 1227,
+   "w": 46,
+   "h": 26,
+   "options": [
+    {
+     "value": "möchte",
+     "label": "möchte"
+    },
+    {
+     "value": "Magst",
+     "label": "Magst"
+    },
+    {
+     "value": "Möchtest",
+     "label": "Möchtest"
+    }
+   ]
   },
   {
    "id": "u4-a2",
    "group": "u4",
-   "kind": "text",
+   "kind": "select",
    "label": "a ▲ Ich … jetzt nichts trinken.",
    "answer": "möchte",
    "x": 386,
-   "y": 1267,
-   "w": 129,
-   "h": 20
+   "y": 1255,
+   "w": 126,
+   "h": 27,
+   "options": [
+    {
+     "value": "möchte",
+     "label": "möchte"
+    },
+    {
+     "value": "magst",
+     "label": "magst"
+    },
+    {
+     "value": "Möchtest",
+     "label": "Möchtest"
+    }
+   ]
   },
   {
    "id": "u4-b1",
    "group": "u4",
-   "kind": "text",
+   "kind": "select",
    "label": "b ■ Hallo Emma, du … doch die Gruppe Wise Guys, oder?",
    "answer": "magst",
-   "x": 394,
-   "y": 1292,
-   "w": 103,
-   "h": 20
+   "x": 389,
+   "y": 1280,
+   "w": 113,
+   "h": 27,
+   "options": [
+    {
+     "value": "möchte",
+     "label": "möchte"
+    },
+    {
+     "value": "magst",
+     "label": "magst"
+    },
+    {
+     "value": "Möchtest",
+     "label": "Möchtest"
+    }
+   ]
   },
   {
    "id": "u4-b2",
    "group": "u4",
-   "kind": "text",
+   "kind": "select",
    "label": "b ■ … du mitkommen?",
    "answer": "Möchtest",
-   "x": 245,
-   "y": 1362,
-   "w": 150,
-   "h": 20
+   "x": 247,
+   "y": 1356,
+   "w": 147,
+   "h": 27,
+   "options": [
+    {
+     "value": "möchte",
+     "label": "möchte"
+    },
+    {
+     "value": "magst",
+     "label": "magst"
+    },
+    {
+     "value": "Möchtest",
+     "label": "Möchtest"
+    }
+   ]
+  },
+  {
+   "id": "own-week",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Pauls Woche: eigene Sätze",
+   "x": 206,
+   "y": 398,
+   "w": 796,
+   "h": 43
   }
  ],
  "audio": [],
@@ -2343,7 +2409,8 @@
    "U2 'spreche' in the first chat message is a printed blue example - no field. 'CARLOS 1704 ...' sad-smiley line has no blank.",
    "U3a 'Am Samstag moechte ich gern in die Disco gehen.' is a printed blue-cursive example - words, no field. Highlighted prompt words (am Samstag, können, leider, am Wochenende) kept as words.",
    "U4a1 'Magst' is owner ink on the blank - field created with key answer, ink excluded from words. First bank word 'magst' struck by owner (used-word mark) - kept. Squares/triangles/smileys excluded as markers.",
-   "Calendar column headers DI/MI/FR/SA and '17:00', 'Mittag:', 'Essen', 'lange' missed by OCR - measured from zoom."
+   "Calendar column headers DI/MI/FR/SA and '17:00', 'Mittag:', 'Essen', 'lange' missed by OCR - measured from zoom.",
+   "2026-11-16: source scan/fonts restored;six conjugation fields,three sentence-writing fields,four fixed-choice verb selects;added saved scrollable own-sentences textarea beneath calendar. Source examples intact."
   ]
  }
 }
