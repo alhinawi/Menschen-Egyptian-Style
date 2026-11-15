@@ -87,3 +87,4 @@ body.fullscreenCoverActive{overflow:hidden!important}
 .fullscreenCover .premiumCover .coverSmall{font-family:CoverNaskh,Georgia,serif;color:#8a7048!important}
 html[data-ui-language=en] .fullscreenCover .premiumCover .coverSmall{font-family:Georgia,serif;font-style:italic;letter-spacing:.8px}
 .fullscreenCover .premiumCover .coverOwner h1{color:#693745!important;font-weight:700}
+html[data-ui-language=en] .fullscreenCover .premiumCover .coverByline h1{font-family:Georgia,serif;letter-spacing:.5px}
