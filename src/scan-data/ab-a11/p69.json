@@ -1422,54 +1422,374 @@
  ],
  "fields": [
   {
-   "id": "au1-a",
-   "group": "au1",
+   "id": "own-food",
+   "group": "own",
    "kind": "text",
-   "x": 233,
-   "y": 1158,
-   "w": 290,
-   "h": 24,
-   "answer": "to la to"
+   "label": "1a Essen: Wörter sammeln",
+   "x": 202,
+   "y": 380,
+   "w": 262,
+   "h": 30
   },
   {
-   "id": "au1-b",
-   "group": "au1",
+   "id": "own-drinks",
+   "group": "own",
    "kind": "text",
-   "x": 233,
-   "y": 1184,
-   "w": 290,
-   "h": 24,
-   "answer": "Kä Bröt Kä"
+   "label": "1a Getränke: Wörter sammeln",
+   "x": 511,
+   "y": 378,
+   "w": 214,
+   "h": 30
   },
   {
-   "id": "au1-c",
-   "group": "au1",
+   "id": "own-questions",
+   "group": "own",
    "kind": "text",
-   "x": 233,
-   "y": 1209,
-   "w": 290,
-   "h": 24,
-   "answer": "Zwie Su Zwie"
+   "label": "1b Eigene Fragen",
+   "x": 202,
+   "y": 555,
+   "w": 761,
+   "h": 29
   },
   {
-   "id": "au1-d",
-   "group": "au1",
+   "id": "own-compounds",
+   "group": "own",
    "kind": "text",
-   "x": 233,
-   "y": 1234,
-   "w": 290,
-   "h": 24,
-   "answer": "Obst Ku Obst"
+   "label": "2 Fünf weitere Wörter mit Wortakzent",
+   "x": 616,
+   "y": 1200,
+   "w": 363,
+   "h": 149
   },
   {
-   "id": "au1-e",
+   "id": "accent-0-0",
    "group": "au1",
-   "kind": "text",
-   "x": 233,
-   "y": 1260,
-   "w": 290,
-   "h": 24,
-   "answer": "tro Eis tro"
+   "kind": "checkbox",
+   "label": "b Wortakzent Kä 1",
+   "x": 235,
+   "y": 1187,
+   "w": 26,
+   "h": 20,
+   "answer": "true"
+  },
+  {
+   "id": "accent-0-1",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "b Wortakzent se 2",
+   "x": 262,
+   "y": 1187,
+   "w": 26,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "accent-0-2",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "b Wortakzent Bröt 3",
+   "x": 296,
+   "y": 1187,
+   "w": 45,
+   "h": 20,
+   "answer": "true"
+  },
+  {
+   "id": "accent-0-3",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "b Wortakzent chen 4",
+   "x": 341,
+   "y": 1187,
+   "w": 37,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "accent-0-4",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "b Wortakzent Kä 5",
+   "x": 396,
+   "y": 1187,
+   "w": 26,
+   "h": 20,
+   "answer": "true"
+  },
+  {
+   "id": "accent-0-5",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "b Wortakzent se 6",
+   "x": 422,
+   "y": 1187,
+   "w": 20,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "accent-0-6",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "b Wortakzent bröt 7",
+   "x": 442,
+   "y": 1187,
+   "w": 39,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "accent-0-7",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "b Wortakzent chen 8",
+   "x": 481,
+   "y": 1187,
+   "w": 30,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "accent-1-0",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "c Wortakzent Zwie 1",
+   "x": 235,
+   "y": 1212,
+   "w": 44,
+   "h": 20,
+   "answer": "true"
+  },
+  {
+   "id": "accent-1-1",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "c Wortakzent bel 2",
+   "x": 279,
+   "y": 1212,
+   "w": 31,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "accent-1-2",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "c Wortakzent Sup 3",
+   "x": 322,
+   "y": 1212,
+   "w": 38,
+   "h": 20,
+   "answer": "true"
+  },
+  {
+   "id": "accent-1-3",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "c Wortakzent pe 4",
+   "x": 360,
+   "y": 1212,
+   "w": 14,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "accent-1-4",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "c Wortakzent Zwie 5",
+   "x": 396,
+   "y": 1212,
+   "w": 44,
+   "h": 20,
+   "answer": "true"
+  },
+  {
+   "id": "accent-1-5",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "c Wortakzent bel 6",
+   "x": 440,
+   "y": 1212,
+   "w": 30,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "accent-1-6",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "c Wortakzent sup 7",
+   "x": 470,
+   "y": 1212,
+   "w": 33,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "accent-1-7",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "c Wortakzent pe 8",
+   "x": 503,
+   "y": 1212,
+   "w": 18,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "accent-2-0",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "d Wortakzent Obst 1",
+   "x": 235,
+   "y": 1237,
+   "w": 39,
+   "h": 20,
+   "answer": "true"
+  },
+  {
+   "id": "accent-2-1",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "d Wortakzent Ku 2",
+   "x": 295,
+   "y": 1237,
+   "w": 26,
+   "h": 20,
+   "answer": "true"
+  },
+  {
+   "id": "accent-2-2",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "d Wortakzent chen 3",
+   "x": 321,
+   "y": 1237,
+   "w": 37,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "accent-2-3",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "d Wortakzent Obst 4",
+   "x": 380,
+   "y": 1237,
+   "w": 38,
+   "h": 20,
+   "answer": "true"
+  },
+  {
+   "id": "accent-2-4",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "d Wortakzent ku 5",
+   "x": 418,
+   "y": 1237,
+   "w": 21,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "accent-2-5",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "d Wortakzent chen 6",
+   "x": 440,
+   "y": 1237,
+   "w": 39,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "accent-3-0",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "e Wortakzent Zi 1",
+   "x": 235,
+   "y": 1262,
+   "w": 18,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "accent-3-1",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "e Wortakzent tro 2",
+   "x": 253,
+   "y": 1262,
+   "w": 27,
+   "h": 20,
+   "answer": "true"
+  },
+  {
+   "id": "accent-3-2",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "e Wortakzent ne 3",
+   "x": 281,
+   "y": 1262,
+   "w": 20,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "accent-3-3",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "e Wortakzent Eis 4",
+   "x": 321,
+   "y": 1262,
+   "w": 30,
+   "h": 20,
+   "answer": "true"
+  },
+  {
+   "id": "accent-3-4",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "e Wortakzent Zi 5",
+   "x": 367,
+   "y": 1262,
+   "w": 18,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "accent-3-5",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "e Wortakzent tro 6",
+   "x": 385,
+   "y": 1262,
+   "w": 27,
+   "h": 20,
+   "answer": "true"
+  },
+  {
+   "id": "accent-3-6",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "e Wortakzent nen 7",
+   "x": 412,
+   "y": 1262,
+   "w": 31,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "accent-3-7",
+   "group": "au1",
+   "kind": "checkbox",
+   "label": "e Wortakzent eis 8",
+   "x": 443,
+   "y": 1262,
+   "w": 24,
+   "h": 20,
+   "answer": "false"
   }
  ],
  "audio": [
@@ -1477,19 +1797,19 @@
    "id": "au-cd1-41",
    "src": "assets/ab-cd1-track41.mp3",
    "label": "CD 1 Track 41",
-   "x": 125,
-   "y": 1100,
-   "w": 32,
-   "h": 13
+   "x": 121,
+   "y": 1103,
+   "w": 38,
+   "h": 18
   },
   {
    "id": "au-cd1-42",
    "src": "assets/ab-cd1-track42.mp3",
    "label": "CD 1 Track 42",
-   "x": 160,
-   "y": 1305,
-   "w": 32,
-   "h": 13
+   "x": 121,
+   "y": 1302,
+   "w": 38,
+   "h": 18
   }
  ],
  "groups": [
@@ -1503,8 +1823,7 @@
   "verifiedWords": 202,
   "totalWords": 202,
   "notes": [
-   "Sprechen Ü1/Ü2 open speaking practice, no fields; Brötchen on the mind map is owner ink (excluded)",
-   "Aussprache Ü1 answers are the stressed syllables in reading order (Komposita stress on first component); Ü2 is KB lookup, no fields"
+   "2026-11-16: original scan restored; printed first stress row retained as example. Four own-note fields,30 syllable stress targets,tracks41/42. Speaking remains ungraded."
   ]
  }
 }
