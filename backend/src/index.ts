@@ -236,4 +236,74 @@ app.put('/api/progress', async (c) => {
   return c.json({ progress: merged, updated_at: now })
 })
 
+// ---------- leaderboard ----------
+// Points = checked-off exercises (done-* flags) across the learner's synced
+// progress blob. Public top 10; the signed-in learner also gets their own
+// rank, even outside the top 10. Names are privacy-safe: first name plus the
+// first letter of the last name part.
+
+function displayName(full: string): string {
+  const parts = full.trim().split(/\s+/).filter(Boolean)
+  if (parts.length === 0) return 'Learner'
+  if (parts.length === 1) return parts[0]
+  return `${parts[0]} ${[...parts[parts.length - 1]][0]}.`
+}
+
+function pointsOf(data: string): number {
+  try {
+    let n = 0
+    const walk = (v: unknown) => {
+      // The sync blob's top-level values are JSON strings (one per
+      // localStorage key); exercise states live inside those.
+      if (typeof v === 'string') {
+        try {
+          const inner: unknown = JSON.parse(v)
+          if (typeof inner === 'object' && inner !== null) walk(inner)
+        } catch {
+          // plain string setting, no exercises inside
+        }
+        return
+      }
+      if (typeof v !== 'object' || v === null) return
+      for (const [k, val] of Object.entries(v)) {
+        if (k.startsWith('done-') && val === true) n++
+        else walk(val)
+      }
+    }
+    walk(JSON.parse(data))
+    return n
+  } catch {
+    return 0
+  }
+}
+
+app.get('/api/leaderboard', async (c) => {
+  const rows = await c.env.DB.prepare(
+    'SELECT u.id AS id, u.name AS name, p.data AS data FROM progress p JOIN users u ON u.id = p.user_id',
+  ).all<{ id: number; name: string; data: string }>()
+  const board = (rows.results ?? [])
+    .map((r) => ({ id: r.id, name: displayName(r.name), points: pointsOf(r.data) }))
+    .filter((r) => r.points > 0)
+    .sort((a, b) => b.points - a.points || a.name.localeCompare(b.name))
+
+  // Optional auth: include the caller's own rank when a valid token is sent.
+  let me: { rank: number; points: number } | null = null
+  const m = /^Bearer (.+)$/.exec(c.req.header('Authorization') ?? '')
+  if (m) {
+    const session = await c.env.DB.prepare('SELECT user_id FROM sessions WHERE token_hash = ? AND expires_at > ?')
+      .bind(await sha256Hex(m[1]), new Date().toISOString())
+      .first<{ user_id: number }>()
+    if (session) {
+      const mine = board.find((r) => r.id === session.user_id)
+      if (mine) me = { rank: board.indexOf(mine) + 1, points: mine.points }
+      else me = { rank: board.length + 1, points: 0 }
+    }
+  }
+
+  return c.json({
+    top: board.slice(0, 10).map((r, i) => ({ rank: i + 1, name: r.name, points: r.points })),
+    me,
+  })
+})
+
 export default app

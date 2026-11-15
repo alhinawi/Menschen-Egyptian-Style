@@ -5,6 +5,7 @@ import {getFeedbackVoices, setFeedbackVoices, subscribeFeedbackVoices} from './c
 import {ReaderContext} from './ReaderControls';
 import {useAuth, signIn, signUp, signOut, applyUser} from '../auth/useAuth';
 import {AvatarPicker} from './AvatarPicker';
+import {LeaderboardPanel} from './LeaderboardPanel';
 import {getAuthConfig, googleLoginUrl} from '../auth/api';
 import type {ApiUser} from '../auth/api';
 import {getSyncStatus, subscribeSyncStatus} from '../auth/progress-sync';
@@ -22,6 +23,7 @@ export function ReaderProfile() {
   const auth = useAuth();
   const [open, setOpen] = useState(false);
   const [googleOn, setGoogleOn] = useState(false);
+  const [board, setBoard] = useState(false);
   const anchor = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
@@ -67,7 +69,7 @@ export function ReaderProfile() {
         title={t('الحساب والإعدادات')}
         aria-haspopup="dialog"
         aria-expanded={open}
-        onClick={() => setOpen(o => !o)}
+        onClick={() => {setOpen(o => !o); setBoard(false);}}
       >
         {showAvatar ? (
           <img className="profileAvatarImg" src={showAvatar} alt="" referrerPolicy="no-referrer" onError={() => setAvatarBroken(true)} />
@@ -85,6 +87,14 @@ export function ReaderProfile() {
           ) : (
             <SignInBlock googleOn={googleOn} />
           )}
+          {board ? (
+            <LeaderboardPanel onClose={() => setBoard(false)} />
+          ) : (
+          <>
+          <button type="button" className="profileRow profileChoice profileBoardLink" onClick={() => setBoard(true)}>
+            <span>{t('Leaderboard')}</span>
+            <span className="profileState" aria-hidden="true">🏆</span>
+          </button>
           <div className="profileSection">{t('الإعدادات')}</div>
           <button
             type="button"
@@ -120,6 +130,8 @@ export function ReaderProfile() {
             <span>{t(code === 'auto' ? 'Follow interface language' : code === 'ar' ? 'Arabic' : code === 'de' ? 'German' : 'English')}</span>
             <span className="profileLanguageCheck" aria-hidden="true">{choice === code ? '✓' : ''}</span>
           </button>)}
+          </>
+          )}
         </div>
       )}
     </span>
