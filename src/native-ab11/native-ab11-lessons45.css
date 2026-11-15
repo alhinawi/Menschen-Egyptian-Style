@@ -36,3 +36,25 @@
 .mP30Banner{border-left:0;background:linear-gradient(90deg,#a5d614 0 22px,white 22px 25px,#b5df38 25px 46px,white 46px 49px,#c1e668 49px,#e2f29d 100%)}
 .nativeAB11Lessons45[data-native-ab11-page='30'] .mTitle{font-size:18px;transform:translateY(-2px);transform-origin:left top}
 .nativeAB11Lessons45[data-native-ab11-page='30'] .mP30Table .mField[data-native-field^='eigene-']{border-bottom:0!important}
+/* Page 32: scan-scale exercises, source images and manuscript examples. */
+.nativeAB11.nativeAB11Lessons45[data-native-ab11-page='32'] .mCanvas{width:901px;height:1275px}
+.nativeAB11Lessons45[data-native-ab11-page='32'] .mCanvas .mText{font:16px/21px KbDroid,Georgia,serif}
+.nativeAB11Lessons45[data-native-ab11-page='32'] .mCanvas .mHeader{font:27px/33px KbDroid,Georgia,serif;letter-spacing:0}
+.nativeAB11Lessons45[data-native-ab11-page='32'] .mCanvas .mTitle{font:700 18px/22px ABScanSans,Arial,sans-serif}
+.nativeAB11Lessons45[data-native-ab11-page='32'] .mCanvas .mSMS{font:14px/21px ABScanSans,Arial,sans-serif}
+.nativeAB11Lessons45[data-native-ab11-page='32'] .mCanvas .mKB{font:10px/14px ABScanSans,Arial,sans-serif;color:#299ac2}
+.nativeAB11Lessons45[data-native-ab11-page='32'] .mCanvas .mBank{font:16px/21px ABScanSans,Arial,sans-serif;color:#203e87;background:#fffdd4;width:max-content!important}
+.nativeAB11Lessons45[data-native-ab11-page='32'] .mCanvas .mP32Rail{font:700 9px/12px ABScanSans,Arial,sans-serif;writing-mode:vertical-rl;transform:rotate(180deg);color:#203e87;letter-spacing:1px}
+.nativeAB11Lessons45[data-native-ab11-page='32'] .mCanvas .mField{border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;font:14px/20px KbDroid,Georgia,serif!important;height:20px!important}
+.nativeAB11Lessons45[data-native-ab11-page='32'] .mFooter{display:none}
+.mP32Rule{position:absolute;left:329px;top:159px;width:497px;height:1px;background:#97ce00}
+.mP32Number{position:absolute;left:124px;min-width:25px;height:18px;font:700 17px/18px Georgia,serif;background:#97ce00;border-top:1px solid #dc321e;border-left:1px solid #dc321e;text-align:center;color:white}
+.mP32Square{position:absolute;width:9px;height:9px;background:#153c85}
+.mP32Option{position:absolute;width:15px;height:16px;cursor:pointer}.mP32Option input,.mP32Option>i{appearance:none;position:absolute;inset:0;width:14px!important;height:14px!important;border:1px solid #d9d4ad!important;border-radius:50%;padding:0!important;margin:0!important;min-width:0!important;min-height:0!important;background:transparent!important}.mP32Option span{position:absolute;inset:0;text-align:center;font:11px/14px KbDroid,Georgia,serif;color:#696044;pointer-events:none}.mP32Option input:checked:after{content:'×';position:absolute;left:-1px;top:-4px;color:#2458a6;font:22px/18px ABScanSans,Arial,sans-serif}
+.nativeAB11Lessons45[data-native-ab11-page='32'] .mCanvas .mText{transform:scaleX(.97);transform-origin:left top}
+.nativeAB11Lessons45[data-native-ab11-page='32'] .mCanvas .mTitle{transform:translateY(-3px) scaleX(.965)}
+.nativeAB11Lessons45[data-native-ab11-page='32'] .mCanvas .mHeader{transform:scaleX(.96)}
+.nativeAB11Lessons45[data-native-ab11-page='32'] .mCanvas .mSMS{transform:scaleX(.94)}
+.nativeAB11Lessons45[data-native-ab11-page='32'] .mCanvas .mBank{transform:scaleX(.895)}
+.nativeAB11Lessons45[data-native-ab11-page='32'] .mCanvas .mP32Rail{transform:rotate(180deg)}
+.nativeAB11Lessons45[data-native-ab11-page='32'] .mCanvas .mP32Rail{transform-origin:center center}
