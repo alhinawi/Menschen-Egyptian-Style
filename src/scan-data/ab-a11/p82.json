@@ -1737,257 +1737,687 @@
  ],
  "fields": [
   {
-   "id": "u1-a",
+   "id": "u1-0",
    "group": "t1",
-   "kind": "text",
-   "label": "a: Straßen…",
+   "kind": "select",
+   "label": "u1-0",
    "answer": "bahn",
-   "x": 335,
-   "y": 364,
-   "w": 140,
-   "h": 22
+   "x": 303,
+   "y": 358,
+   "w": 153,
+   "h": 30,
+   "options": [
+    {
+     "value": "hafen",
+     "label": "hafen"
+    },
+    {
+     "value": "stelle",
+     "label": "stelle"
+    },
+    {
+     "value": "bahn",
+     "label": "bahn"
+    },
+    {
+     "value": "steig",
+     "label": "steig"
+    },
+    {
+     "value": "hof",
+     "label": "hof"
+    },
+    {
+     "value": "zeug",
+     "label": "zeug"
+    }
+   ]
   },
   {
-   "id": "u1-b",
+   "id": "u1-1",
    "group": "t1",
-   "kind": "text",
-   "label": "b: Flug…",
+   "kind": "select",
+   "label": "u1-1",
    "answer": "zeug",
-   "x": 400,
-   "y": 393,
-   "w": 145,
-   "h": 22
+   "x": 377,
+   "y": 388,
+   "w": 151,
+   "h": 30,
+   "options": [
+    {
+     "value": "hafen",
+     "label": "hafen"
+    },
+    {
+     "value": "stelle",
+     "label": "stelle"
+    },
+    {
+     "value": "bahn",
+     "label": "bahn"
+    },
+    {
+     "value": "steig",
+     "label": "steig"
+    },
+    {
+     "value": "hof",
+     "label": "hof"
+    },
+    {
+     "value": "zeug",
+     "label": "zeug"
+    }
+   ]
   },
   {
-   "id": "u1-c1",
+   "id": "u1-2",
    "group": "t1",
-   "kind": "text",
-   "label": "c: Bahn… / Bahn…",
+   "kind": "select",
+   "label": "u1-2",
    "answer": "hof",
-   "x": 718,
-   "y": 364,
-   "w": 140,
-   "h": 22
+   "x": 713,
+   "y": 358,
+   "w": 158,
+   "h": 30,
+   "options": [
+    {
+     "value": "hafen",
+     "label": "hafen"
+    },
+    {
+     "value": "stelle",
+     "label": "stelle"
+    },
+    {
+     "value": "bahn",
+     "label": "bahn"
+    },
+    {
+     "value": "steig",
+     "label": "steig"
+    },
+    {
+     "value": "hof",
+     "label": "hof"
+    },
+    {
+     "value": "zeug",
+     "label": "zeug"
+    }
+   ]
   },
   {
-   "id": "u1-c2",
+   "id": "u1-3",
    "group": "t1",
-   "kind": "text",
-   "label": "c: Bahn… / Bahn…",
+   "kind": "select",
+   "label": "u1-3",
    "answer": "steig",
-   "x": 960,
-   "y": 364,
-   "w": 140,
-   "h": 22
+   "x": 947,
+   "y": 358,
+   "w": 153,
+   "h": 30,
+   "options": [
+    {
+     "value": "hafen",
+     "label": "hafen"
+    },
+    {
+     "value": "stelle",
+     "label": "stelle"
+    },
+    {
+     "value": "bahn",
+     "label": "bahn"
+    },
+    {
+     "value": "steig",
+     "label": "steig"
+    },
+    {
+     "value": "hof",
+     "label": "hof"
+    },
+    {
+     "value": "zeug",
+     "label": "zeug"
+    }
+   ]
   },
   {
-   "id": "u1-d",
+   "id": "u1-4",
    "group": "t1",
-   "kind": "text",
-   "label": "d: Halte…",
+   "kind": "select",
+   "label": "u1-4",
    "answer": "stelle",
-   "x": 718,
-   "y": 393,
-   "w": 180,
-   "h": 22
+   "x": 714,
+   "y": 388,
+   "w": 151,
+   "h": 30,
+   "options": [
+    {
+     "value": "hafen",
+     "label": "hafen"
+    },
+    {
+     "value": "stelle",
+     "label": "stelle"
+    },
+    {
+     "value": "bahn",
+     "label": "bahn"
+    },
+    {
+     "value": "steig",
+     "label": "steig"
+    },
+    {
+     "value": "hof",
+     "label": "hof"
+    },
+    {
+     "value": "zeug",
+     "label": "zeug"
+    }
+   ]
   },
   {
-   "id": "u2-a",
+   "id": "u2-0",
    "group": "t2",
-   "kind": "text",
-   "label": "a: Ja, zwei … und die Tasche.",
+   "kind": "select",
+   "label": "u2-0",
    "answer": "Koffer",
-   "x": 345,
-   "y": 594,
+   "x": 332,
+   "y": 593,
    "w": 105,
-   "h": 22
+   "h": 30,
+   "options": [
+    {
+     "value": "Gleis",
+     "label": "Gleis"
+    },
+    {
+     "value": "Koffer",
+     "label": "Koffer"
+    },
+    {
+     "value": "U-Bahn",
+     "label": "U-Bahn"
+    },
+    {
+     "value": "Taxi",
+     "label": "Taxi"
+    },
+    {
+     "value": "Halt",
+     "label": "Halt"
+    },
+    {
+     "value": "Zug",
+     "label": "Zug"
+    }
+   ]
   },
   {
-   "id": "u2-b",
+   "id": "u2-1",
    "group": "t2",
-   "kind": "text",
-   "label": "b: Nächster … Königsplatz.",
+   "kind": "select",
+   "label": "u2-1",
    "answer": "Halt",
-   "x": 350,
-   "y": 626,
-   "w": 125,
-   "h": 22
-  },
-  {
-   "id": "u2-c1",
-   "group": "t2",
-   "kind": "text",
-   "label": "c: Wo fährt der … nach Stuttgart ab?",
-   "answer": "Zug",
-   "x": 820,
-   "y": 538,
-   "w": 95,
-   "h": 22
-  },
-  {
-   "id": "u2-c2",
-   "group": "t2",
-   "kind": "text",
-   "label": "c: Auf … 17.",
-   "answer": "Gleis",
-   "x": 732,
-   "y": 564,
-   "w": 88,
-   "h": 22
-  },
-  {
-   "id": "u2-d1",
-   "group": "t2",
-   "kind": "text",
-   "label": "d: Jetzt fährt keine … mehr.",
-   "answer": "U-Bahn",
-   "x": 748,
+   "x": 340,
    "y": 622,
-   "w": 90,
-   "h": 22
+   "w": 131,
+   "h": 30,
+   "options": [
+    {
+     "value": "Gleis",
+     "label": "Gleis"
+    },
+    {
+     "value": "Koffer",
+     "label": "Koffer"
+    },
+    {
+     "value": "U-Bahn",
+     "label": "U-Bahn"
+    },
+    {
+     "value": "Taxi",
+     "label": "Taxi"
+    },
+    {
+     "value": "Halt",
+     "label": "Halt"
+    },
+    {
+     "value": "Zug",
+     "label": "Zug"
+    }
+   ]
   },
   {
-   "id": "u2-d2",
+   "id": "u2-2",
    "group": "t2",
-   "kind": "text",
-   "label": "d: Dann nehmen wir ein …",
+   "kind": "select",
+   "label": "u2-2",
+   "answer": "Zug",
+   "x": 819,
+   "y": 534,
+   "w": 89,
+   "h": 30,
+   "options": [
+    {
+     "value": "Gleis",
+     "label": "Gleis"
+    },
+    {
+     "value": "Koffer",
+     "label": "Koffer"
+    },
+    {
+     "value": "U-Bahn",
+     "label": "U-Bahn"
+    },
+    {
+     "value": "Taxi",
+     "label": "Taxi"
+    },
+    {
+     "value": "Halt",
+     "label": "Halt"
+    },
+    {
+     "value": "Zug",
+     "label": "Zug"
+    }
+   ]
+  },
+  {
+   "id": "u2-3",
+   "group": "t2",
+   "kind": "select",
+   "label": "u2-3",
+   "answer": "Gleis",
+   "x": 729,
+   "y": 564,
+   "w": 89,
+   "h": 30,
+   "options": [
+    {
+     "value": "Gleis",
+     "label": "Gleis"
+    },
+    {
+     "value": "Koffer",
+     "label": "Koffer"
+    },
+    {
+     "value": "U-Bahn",
+     "label": "U-Bahn"
+    },
+    {
+     "value": "Taxi",
+     "label": "Taxi"
+    },
+    {
+     "value": "Halt",
+     "label": "Halt"
+    },
+    {
+     "value": "Zug",
+     "label": "Zug"
+    }
+   ]
+  },
+  {
+   "id": "u2-4",
+   "group": "t2",
+   "kind": "select",
+   "label": "u2-4",
+   "answer": "U-Bahn",
+   "x": 746,
+   "y": 622,
+   "w": 92,
+   "h": 30,
+   "options": [
+    {
+     "value": "Gleis",
+     "label": "Gleis"
+    },
+    {
+     "value": "Koffer",
+     "label": "Koffer"
+    },
+    {
+     "value": "U-Bahn",
+     "label": "U-Bahn"
+    },
+    {
+     "value": "Taxi",
+     "label": "Taxi"
+    },
+    {
+     "value": "Halt",
+     "label": "Halt"
+    },
+    {
+     "value": "Zug",
+     "label": "Zug"
+    }
+   ]
+  },
+  {
+   "id": "u2-5",
+   "group": "t2",
+   "kind": "select",
+   "label": "u2-5",
    "answer": "Taxi",
-   "x": 900,
-   "y": 650,
-   "w": 200,
-   "h": 22
+   "x": 917,
+   "y": 652,
+   "w": 102,
+   "h": 30,
+   "options": [
+    {
+     "value": "Gleis",
+     "label": "Gleis"
+    },
+    {
+     "value": "Koffer",
+     "label": "Koffer"
+    },
+    {
+     "value": "U-Bahn",
+     "label": "U-Bahn"
+    },
+    {
+     "value": "Taxi",
+     "label": "Taxi"
+    },
+    {
+     "value": "Halt",
+     "label": "Halt"
+    },
+    {
+     "value": "Zug",
+     "label": "Zug"
+    }
+   ]
   },
   {
-   "id": "u3-b",
+   "id": "u3-0",
    "group": "t3",
    "kind": "text",
-   "label": "b: Wann … ? (du/ankommen)",
+   "label": "u3-0",
    "answer": "kommst du an",
-   "x": 300,
+   "x": 288,
    "y": 780,
-   "w": 370,
-   "h": 22
+   "w": 395,
+   "h": 30
   },
   {
-   "id": "u3-c",
+   "id": "u3-1",
    "group": "t3",
    "kind": "text",
-   "label": "c: Kannst du … ? (aussteigen/am Hauptbahnhof/bitte)",
-   "answer": "steigst du bitte am Hauptbahnhof aus",
-   "x": 350,
-   "y": 838,
-   "w": 500,
-   "h": 26
+   "label": "u3-1",
+   "answer": "bitte am Hauptbahnhof aussteigen|am Hauptbahnhof bitte aussteigen",
+   "x": 333,
+   "y": 840,
+   "w": 527,
+   "h": 30
   },
   {
-   "id": "u3-d",
+   "id": "u3-2",
    "group": "t3",
    "kind": "text",
-   "label": "d: Ich … (abholen/dich)",
+   "label": "u3-2",
    "answer": "hole dich ab",
-   "x": 270,
-   "y": 897,
-   "w": 415,
-   "h": 26
+   "x": 266,
+   "y": 899,
+   "w": 418,
+   "h": 30
   },
   {
-   "id": "u3-e",
+   "id": "u3-3",
    "group": "t3",
    "kind": "text",
-   "label": "e: Jetzt … (einkaufen/ich/Brötchen)",
+   "label": "u3-3",
    "answer": "kaufe ich Brötchen ein",
-   "x": 280,
-   "y": 955,
-   "w": 755,
-   "h": 26
+   "x": 278,
+   "y": 957,
+   "w": 757,
+   "h": 30
   },
   {
-   "id": "u4-r1",
+   "id": "u4-0-q",
    "group": "t4",
-   "kind": "text",
-   "label": "Gespräch (Frage)",
+   "kind": "select",
+   "label": "u4-0-q",
    "answer": "Nehmt ihr ein Taxi?|Holst du mich ab?|Wann kommt der Zug an?|Wo steigst du um?",
    "x": 716,
-   "y": 1222,
-   "w": 406,
-   "h": 24
+   "y": 1221,
+   "w": 405,
+   "h": 30,
+   "options": [
+    {
+     "value": "Nehmt ihr ein Taxi?",
+     "label": "Nehmt ihr ein Taxi?"
+    },
+    {
+     "value": "Holst du mich ab?",
+     "label": "Holst du mich ab?"
+    },
+    {
+     "value": "Wann kommt der Zug an?",
+     "label": "Wann kommt der Zug an?"
+    },
+    {
+     "value": "Wo steigst du um?",
+     "label": "Wo steigst du um?"
+    }
+   ]
   },
   {
-   "id": "u4-r2",
+   "id": "u4-0-a",
    "group": "t4",
-   "kind": "text",
-   "label": "Gespräch (Antwort)",
+   "kind": "select",
+   "label": "u4-0-a",
    "answer": "Nein, die U-Bahn.|Ich habe leider keine Zeit.|Um 09:45 Uhr.|Am Rathausplatz.",
    "x": 716,
    "y": 1251,
-   "w": 406,
-   "h": 24
+   "w": 405,
+   "h": 30,
+   "options": [
+    {
+     "value": "Nein, die U-Bahn.",
+     "label": "Nein, die U-Bahn."
+    },
+    {
+     "value": "Ich habe leider keine Zeit.",
+     "label": "Ich habe leider keine Zeit."
+    },
+    {
+     "value": "Um 09:45 Uhr.",
+     "label": "Um 09:45 Uhr."
+    },
+    {
+     "value": "Am Rathausplatz.",
+     "label": "Am Rathausplatz."
+    }
+   ]
   },
   {
-   "id": "u4-r3",
+   "id": "u4-1-q",
    "group": "t4",
-   "kind": "text",
-   "label": "Gespräch (Frage)",
+   "kind": "select",
+   "label": "u4-1-q",
    "answer": "Nehmt ihr ein Taxi?|Holst du mich ab?|Wann kommt der Zug an?|Wo steigst du um?",
    "x": 716,
-   "y": 1292,
-   "w": 406,
-   "h": 24
+   "y": 1294,
+   "w": 405,
+   "h": 30,
+   "options": [
+    {
+     "value": "Nehmt ihr ein Taxi?",
+     "label": "Nehmt ihr ein Taxi?"
+    },
+    {
+     "value": "Holst du mich ab?",
+     "label": "Holst du mich ab?"
+    },
+    {
+     "value": "Wann kommt der Zug an?",
+     "label": "Wann kommt der Zug an?"
+    },
+    {
+     "value": "Wo steigst du um?",
+     "label": "Wo steigst du um?"
+    }
+   ]
   },
   {
-   "id": "u4-r4",
+   "id": "u4-1-a",
    "group": "t4",
-   "kind": "text",
-   "label": "Gespräch (Antwort)",
+   "kind": "select",
+   "label": "u4-1-a",
    "answer": "Nein, die U-Bahn.|Ich habe leider keine Zeit.|Um 09:45 Uhr.|Am Rathausplatz.",
    "x": 716,
-   "y": 1321,
-   "w": 406,
-   "h": 24
+   "y": 1324,
+   "w": 405,
+   "h": 30,
+   "options": [
+    {
+     "value": "Nein, die U-Bahn.",
+     "label": "Nein, die U-Bahn."
+    },
+    {
+     "value": "Ich habe leider keine Zeit.",
+     "label": "Ich habe leider keine Zeit."
+    },
+    {
+     "value": "Um 09:45 Uhr.",
+     "label": "Um 09:45 Uhr."
+    },
+    {
+     "value": "Am Rathausplatz.",
+     "label": "Am Rathausplatz."
+    }
+   ]
   },
   {
-   "id": "u4-l1",
+   "id": "u4-2-q",
    "group": "t4",
-   "kind": "text",
-   "label": "Gespräch (Frage)",
+   "kind": "select",
+   "label": "u4-2-q",
    "answer": "Nehmt ihr ein Taxi?|Holst du mich ab?|Wann kommt der Zug an?|Wo steigst du um?",
-   "x": 224,
-   "y": 1295,
-   "w": 406,
-   "h": 24
+   "x": 226,
+   "y": 1294,
+   "w": 405,
+   "h": 30,
+   "options": [
+    {
+     "value": "Nehmt ihr ein Taxi?",
+     "label": "Nehmt ihr ein Taxi?"
+    },
+    {
+     "value": "Holst du mich ab?",
+     "label": "Holst du mich ab?"
+    },
+    {
+     "value": "Wann kommt der Zug an?",
+     "label": "Wann kommt der Zug an?"
+    },
+    {
+     "value": "Wo steigst du um?",
+     "label": "Wo steigst du um?"
+    }
+   ]
   },
   {
-   "id": "u4-l2",
+   "id": "u4-2-a",
    "group": "t4",
-   "kind": "text",
-   "label": "Gespräch (Antwort)",
+   "kind": "select",
+   "label": "u4-2-a",
    "answer": "Nein, die U-Bahn.|Ich habe leider keine Zeit.|Um 09:45 Uhr.|Am Rathausplatz.",
-   "x": 224,
-   "y": 1325,
-   "w": 406,
-   "h": 24
+   "x": 226,
+   "y": 1324,
+   "w": 405,
+   "h": 30,
+   "options": [
+    {
+     "value": "Nein, die U-Bahn.",
+     "label": "Nein, die U-Bahn."
+    },
+    {
+     "value": "Ich habe leider keine Zeit.",
+     "label": "Ich habe leider keine Zeit."
+    },
+    {
+     "value": "Um 09:45 Uhr.",
+     "label": "Um 09:45 Uhr."
+    },
+    {
+     "value": "Am Rathausplatz.",
+     "label": "Am Rathausplatz."
+    }
+   ]
   },
   {
-   "id": "u4-l3",
+   "id": "u4-3-q",
    "group": "t4",
-   "kind": "text",
-   "label": "Gespräch (Frage)",
+   "kind": "select",
+   "label": "u4-3-q",
    "answer": "Nehmt ihr ein Taxi?|Holst du mich ab?|Wann kommt der Zug an?|Wo steigst du um?",
-   "x": 224,
-   "y": 1366,
-   "w": 406,
-   "h": 24
+   "x": 226,
+   "y": 1368,
+   "w": 405,
+   "h": 30,
+   "options": [
+    {
+     "value": "Nehmt ihr ein Taxi?",
+     "label": "Nehmt ihr ein Taxi?"
+    },
+    {
+     "value": "Holst du mich ab?",
+     "label": "Holst du mich ab?"
+    },
+    {
+     "value": "Wann kommt der Zug an?",
+     "label": "Wann kommt der Zug an?"
+    },
+    {
+     "value": "Wo steigst du um?",
+     "label": "Wo steigst du um?"
+    }
+   ]
   },
   {
-   "id": "u4-l4",
+   "id": "u4-3-a",
    "group": "t4",
-   "kind": "text",
-   "label": "Gespräch (Antwort)",
+   "kind": "select",
+   "label": "u4-3-a",
    "answer": "Nein, die U-Bahn.|Ich habe leider keine Zeit.|Um 09:45 Uhr.|Am Rathausplatz.",
-   "x": 224,
-   "y": 1395,
-   "w": 406,
-   "h": 24
+   "x": 226,
+   "y": 1398,
+   "w": 405,
+   "h": 30,
+   "options": [
+    {
+     "value": "Nein, die U-Bahn.",
+     "label": "Nein, die U-Bahn."
+    },
+    {
+     "value": "Ich habe leider keine Zeit.",
+     "label": "Ich habe leider keine Zeit."
+    },
+    {
+     "value": "Um 09:45 Uhr.",
+     "label": "Um 09:45 Uhr."
+    },
+    {
+     "value": "Am Rathausplatz.",
+     "label": "Am Rathausplatz."
+    }
+   ]
   }
  ],
  "audio": [],
@@ -2016,7 +2446,8 @@
   "notes": [
    "TEST Lektion 10. The AB answer key has no TEST section: all answers derived from exercise logic (word-bank fragments, verb patterns, dialogue pairing).",
    "Ü1: 'hafen' in 'Flughafen' is a printed blue example. Ü2a 'Gepäck?' printed blue example. Ü3a 'steige gerade in den Zug ein' printed blue example. Ü4 example dialogue ('Wo fährt der Zug nach Köln ab?' / 'Auf Gleis 15.') printed blue; those two bank items are struck (used).",
-   "Ü4: dialogue order is free; each Frage rule accepts any of the 4 remaining questions, each Antwort rule any of the 4 remaining answers (|-separated)."
+   "Ü4: dialogue order is free; each Frage rule accepts any of the 4 remaining questions, each Antwort rule any of the 4 remaining answers (|-separated).",
+   "2026-11-16: Source scan/fonts;11bank selects,4genuine sentence fields (Kannstdu -> aussteigen,not steigstduaus),4question-answer pairs with coherent pairing+uniqueusage,points and trafficlight feedback."
   ]
  }
 }
