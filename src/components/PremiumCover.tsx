@@ -5,6 +5,7 @@ import {ReaderContext} from './ReaderControls';
 import {CoverSocials} from './CoverSocials';
 import previews from './cover-previews.json';
 import './premium-covers.css';
+import {openBookCover} from '../readerTransitions';
 
 /** A single cover treatment for all four books. Original publisher artwork stays intact. */
 export function PremiumCover({src, alt}: {src: string; alt: string}) {
@@ -28,7 +29,7 @@ export function PremiumCover({src, alt}: {src: string; alt: string}) {
       <h1 lang="ar" dir="rtl">هناوي</h1>
       <div className="coverSocials" aria-label={t('Contact and social links')}><CoverSocials/></div>
     </div>
-    <button type="button" className="coverOpen" onClick={() => window.bookTurn?.(1)}>{t('Open book ←')}</button>
+    <button type="button" className="coverOpen" onClick={e => openBookCover(e.currentTarget.closest('.fullscreenCover') as HTMLElement, () => {document.dispatchEvent(new Event('menschen:paper')); window.menschenBook?.turnToPage?.(1);})}>{t('Open book ←')}</button>
     <p className="premiumCoverAudio" lang={language}>{t('Tap any word to listen & explore')}</p>
     <div className="coverCopy" lang={language} dir="ltr">{t('Original book © Hueber Verlag')}<br/>{t('All rights belong to the original owners.')}</div>
   </div></section>;

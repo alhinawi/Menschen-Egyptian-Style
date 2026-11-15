@@ -51,7 +51,7 @@ window.addEventListener('mousemove',(e: any)=>{if(!mouse)return;if(mouse.pan){vi
 window.addEventListener('mouseup',(e: any)=>{if(!mouse)return;if(!mouse.pan)endGesture(e);mouse=null;});
 for(const b of document.querySelectorAll<HTMLElement>('.listen'))b.onclick=()=>{const a=$('#audio');a.src='assets/kb-cd3-track'+b.dataset.track!.padStart(2,'0')+'.mp3';$('.audioDock').hidden=false;a.play().catch(()=>{});};$('#closeAudio').onclick=()=>{$('#audio').pause();$('.audioDock').hidden=true;};
 $('.coverOpen').onclick=()=>turn(1);
-window.menschenBook=flip;window.menschenPages=pages;window.bookZoom=setZoom;window.bookPage=(i: number)=>flip.turnToPage(i);window.bookTurn=turn;window.bookSoundState=()=>audioContext?.state;
+window.menschenBook=flip;window.menschenPages=pages;window.bookZoom=setZoom;window.bookPage=(i: number)=>flip.turnToPage(i);window.bookTurn=turn;document.addEventListener('menschen:paper',()=>{void paperSound();});window.bookSoundState=()=>audioContext?.state;
 window.initMeanings();
 // A completed swipe must not also open a word-meaning dialog.
 let suppressMeaningUntil=0;viewport.addEventListener('touchend',()=>{if(pinching)suppressMeaningUntil=Date.now()+400},{capture:true});stage.addEventListener('click',(e: any)=>{if(Date.now()<suppressMeaningUntil)e.stopImmediatePropagation()},{capture:true});

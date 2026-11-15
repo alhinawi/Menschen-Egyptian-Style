@@ -50,7 +50,7 @@ viewport.addEventListener('mousedown',(e: any)=>{if(e.button||isControl(e.target
 window.addEventListener('mousemove',(e: any)=>{if(!mouse)return;if(mouse.pan){viewport.scrollLeft=mouse.left+mouse.x-e.clientX;return}moveGesture(e,e)});
 window.addEventListener('mouseup',(e: any)=>{if(!mouse)return;if(!mouse.pan)endGesture(e);mouse=null;});
 for(const b of document.querySelectorAll<HTMLElement>('.listen'))b.onclick=()=>{const a=$('#audio');const list=b.dataset.track!.split(',');let i=0;a.onended=()=>{i+=1;if(i<list.length){a.src='assets/kb-a12-cd3-track'+list[i].padStart(2,'0')+'.mp3';a.play().catch(()=>{})}else a.onended=null;};a.src='assets/kb-a12-cd3-track'+list[0].padStart(2,'0')+'.mp3';$('.audioDock').hidden=false;a.play().catch(()=>{});};$('#closeAudio').onclick=()=>{$('#audio').pause();$('.audioDock').hidden=true;};
-window.menschenBook=flip;window.menschenPages=pages;window.bookZoom=setZoom;window.bookPage=(i: number)=>flip.turnToPage(i);window.bookTurn=turn;window.bookSoundState=()=>audioContext?.state;
+window.menschenBook=flip;window.menschenPages=pages;window.bookZoom=setZoom;window.bookPage=(i: number)=>flip.turnToPage(i);window.bookTurn=turn;document.addEventListener('menschen:paper',()=>{void paperSound();});window.bookSoundState=()=>audioContext?.state;
 window.initMeanings();
 // A completed swipe must not also open a word-meaning dialog.
 let suppressMeaningUntil=0;viewport.addEventListener('touchend',()=>{if(pinching)suppressMeaningUntil=Date.now()+400},{capture:true});stage.addEventListener('click',(e: any)=>{if(Date.now()<suppressMeaningUntil)e.stopImmediatePropagation()},{capture:true});
