@@ -1,4 +1,5 @@
 import {useContext, useEffect, useRef, useState, useSyncExternalStore} from 'react';
+import {getFeedbackVoices, setFeedbackVoices, subscribeFeedbackVoices} from './check-sound-preference';
 import {ReaderContext} from './ReaderControls';
 import {useAuth, signIn, signUp, signOut} from '../auth/useAuth';
 import {getAuthConfig, googleLoginUrl} from '../auth/api';
@@ -10,6 +11,7 @@ import {getAuthConfig, googleLoginUrl} from '../auth/api';
 export function ReaderProfile() {
   const store = useContext(ReaderContext)!;
   const snapshot = useSyncExternalStore(store.subscribe, store.getSnapshot, store.getSnapshot);
+  const voicesOn = useSyncExternalStore(subscribeFeedbackVoices, getFeedbackVoices, () => false);
   const auth = useAuth();
   const [open, setOpen] = useState(false);
   const [googleOn, setGoogleOn] = useState(false);
@@ -76,6 +78,21 @@ export function ReaderProfile() {
           >
             <span>الصوت</span>
             <span className="profileState">{soundOn ? 'شغال' : 'مقفول'}</span>
+          </button>
+          <button
+            type="button"
+            className="profileRow profileChoice profileVoiceChoice"
+            role="switch"
+            aria-checked={voicesOn}
+            aria-label="أصوات الناس"
+            aria-describedby="feedbackVoicesHint"
+            onClick={() => setFeedbackVoices(!voicesOn)}
+          >
+            <span className="profileVoiceLabel">
+              <span>أصوات الناس</span>
+              <small id="feedbackVoicesHint">تعليقات صوتية مع نتيجة الحل</small>
+            </span>
+            <span className="profileVoiceSwitch" data-on={voicesOn} aria-hidden="true"><span /></span>
           </button>
           <div className="profileSection">اللغة</div>
           <div className="profileRow">

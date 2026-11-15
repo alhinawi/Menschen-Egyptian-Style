@@ -1,20 +1,20 @@
+import successSound from '../assets/feedback/ok06_sparkle.mp3?url';
+import errorSound from '../assets/feedback/err04_double.mp3?url';
+import {getFeedbackVoices, subscribeFeedbackVoices} from './check-sound-preference';
 import {wrongVoices,incompleteVoices,correctVoices} from './check-voices';
 import {scanData} from '../scan-data/registry';
 import type {ScanField} from '../scan-data/schema';
 // User-triggered grading feedback, shared by every compact check control.
 let stopEffect: (() => void) | undefined;
 const soundOn = () => document.querySelector<HTMLElement>('.soundToggle')?.dataset.soundOn!=='false';
-// Every finished check plays one clip from its voice pool: filled-but-wrong picks from the
-// wrong pool, empty or partly solved from the incomplete pool, fully correct from the
-// correct pool. One shared element keeps rapid checks from overlapping, the same pick never
-// repeats twice in a row within a pool, and the mp3 only downloads on the first played
-// check (lazy). Extra clips join the pool lists in check-voices.ts.
+// Plain correct/wrong effects are the default. Spoken feedback is a global opt-in.
+// A single lazy audio element prevents overlapping checks in either mode.
 const voicePools: Record<'wrong' | 'incomplete' | 'correct', string[]> = {wrong: wrongVoices, incomplete: incompleteVoices, correct: correctVoices};
 let voice: HTMLAudioElement | undefined;
 const lastVoice: Record<string,number> = {};
 function checkVoice(kind: 'wrong' | 'incomplete' | 'correct') {
  if(!soundOn())return;
- const pool=voicePools[kind];
+ const pool=getFeedbackVoices()?voicePools[kind]:[kind==='correct'?successSound:errorSound];
  if(!pool.length)return;
  let pick=Math.floor(Math.random()*pool.length);
  if(pool.length>1&&pick===lastVoice[kind])pick=(pick+1)%pool.length;
@@ -27,6 +27,8 @@ function checkVoice(kind: 'wrong' | 'incomplete' | 'correct') {
   void voice.play().catch(()=>{});
  } catch { /* A muted or blocked device still gets normal exercise feedback. */ }
 }
+// Turning voices off stops a spoken clip already in progress, without autoplaying anything.
+subscribeFeedbackVoices(() => { if (!getFeedbackVoices()) voice?.pause(); });
 function fireworks() {
  stopEffect?.();
  const canvas = document.createElement('canvas');
