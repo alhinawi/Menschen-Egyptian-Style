@@ -26,7 +26,7 @@ export function NativeAB11({page}:{page:string}){
  const save=(id:string,x:number,y:number)=>null;
  const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="nabCheck" style={{left:x,top:y}} data-native-task={id}><CheckButton answers={answers} onClick={()=>G({...graded,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const ink=(x:number,y:number,w:number,s:string)=><div className="nabText nabInk" style={{left:x,top:y,width:w}}><Words text={s}/></div>;
- const title=(n:string,y:number,s:string,kb:string,side='Strukturen')=><>{text(page==='7'?115:130,y+7,40,kb,'nabKB')}<div className="nabNumber" style={{left:page==='7'?158:170,top:y}}>{n}</div>{text(page==='7'?202:212,y,810,s,'nabTitle')}<div className="nabSide" style={{left:141,top:y+45}}>{side}</div></>;
+ const title=(n:string,y:number,s:string,kb:string,side='Strukturen')=><>{text(page==='7'?115:page==='8'?110:130,y+7,40,kb,'nabKB')}<div className="nabNumber" style={{left:page==='7'?158:page==='8'?154:170,top:y}}>{n}</div>{text(page==='7'?202:page==='8'?198:212,y,810,s,'nabTitle')}<div className="nabSide" style={{left:141,top:y+45}}>{side}</div></>;
  const head=(s:string)=><>{text(160,142,750,s,'nabHeader')}<div className="nabHeaderLine"/></>;
  return <div className="nativeAB11" ref={host} data-native-ab11-page={page}><div className="nabCanvas" style={{transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='6'&&<>
@@ -87,41 +87,44 @@ export function NativeAB11({page}:{page:string}){
  </>}
  {page==='8'&&<>
  {head('BASISTRAINING')}
- {title('10',250,'Ergänzen Sie und markieren Sie die Endungen.','KB 6c','Strukturen entdecken')}
- <div className="nabGrid" style={{left:202,top:286,width:795,height:155}}/>
+ {title('10',250,'Ergänzen Sie und markieren Sie die Endungen.','KB 6c','Strukturen\nentdecken')}
+ <div className="nabGrid" style={{left:202,top:286,width:795,height:155}}/>{[317,348,379,410,441].map(y=><div key={y} className="nabP8Rule nabP8GridRule" style={{left:202,top:y,width:795}}/>)}
  {text(403,290,150,'heißen','nabBold')}{text(603,290,150,'kommen','nabBold')}{text(803,290,150,'sein','nabBold')}
  {['ich','du','Sie','er/sie'].map((s,i)=>text(207,321+i*31,140,s))}
- {text(404,321,130,'heiße','nabExample')}{text(805,321,100,'bin','nabExample')}{text(805,383,100,'sind','nabExample')}
- {field('10-ich-kommen',562,318,95,'10 ich kommen')}
- {field('10-du-heissen',390,349,95,'10 du heißen')}{field('10-du-kommen',562,349,95,'10 du kommen')}{field('10-du-sein',788,349,95,'10 du sein')}
- {field('10-sie-heissen',390,380,95,'10 Sie heißen')}{field('10-sie-kommen',562,380,95,'10 Sie kommen')}
- {field('10-er-heissen',390,411,95,'10 er/sie heißen')}{field('10-er-kommen',562,411,95,'10 er/sie kommen')}{field('10-er-sein',788,411,95,'10 er/sie sein')}
+ <span className="nabYellow" style={{left:437,top:322,width:8,height:18}}/>{img('ink-heisse',400,316,50,28)}{img('ink-bin',800,312,28,25)}{img('ink-sind',800,373,38,28)}
+ {field('10-ich-kommen',603,318,95,'10 ich kommen')}
+ {field('10-du-heissen',403,349,95,'10 du heißen')}{field('10-du-kommen',603,349,95,'10 du kommen')}{field('10-du-sein',803,349,95,'10 du sein')}
+ {field('10-sie-heissen',403,380,95,'10 Sie heißen')}{field('10-sie-kommen',603,380,95,'10 Sie kommen')}
+ {field('10-er-heissen',403,411,95,'10 er/sie heißen')}{field('10-er-kommen',603,411,95,'10 er/sie kommen')}{field('10-er-sein',803,411,95,'10 er/sie sein')}
  {check('10',202,452,{'10-ich-kommen':'komme','10-du-heissen':'heißt','10-du-kommen':'kommst','10-du-sein':'bist','10-sie-heissen':'heißen','10-sie-kommen':'kommen','10-er-heissen':'heißt','10-er-kommen':'kommt','10-er-sein':'ist'})}
- {title('11',488,'Was ist richtig? Markieren Sie.','KB 6d')}
- {text(202,508,450,'a  Wer  bist / ist / sind  das?')}{text(202,535,60,'b  Das')}{option('11-b','bin',270,535,'bin')}{text(308,535,20,'/')}{option('11-b','sind',328,535,'sind')}{text(371,535,20,'/')}{option('11-b','ist',391,535,'ist')}{text(427,535,165,'Frau Wachter.')}
- {text(202,562,100,'c  Woher')}{option('11-c','komme',300,562,'komme')}{text(371,562,20,'/')}{option('11-c','kommst',391,562,'kommst')}{text(472,562,20,'/')}{option('11-c','kommen',492,562,'kommen')}{text(225,589,130,'Sie?')}
- {text(625,508,95,'d  Peter')}{option('11-d','komme',720,508,'komme')}{text(791,508,20,'/')}{option('11-d','kommst',811,508,'kommst')}{text(892,508,20,'/')}{option('11-d','kommt',912,508,'kommt')}{text(647,535,340,'aus Spanien.')}
- {text(625,562,97,'e  Woher')}{option('11-e','kommst',722,562,'kommst')}{text(803,562,20,'/')}{option('11-e','kommt',823,562,'kommt')}{text(890,562,20,'/')}{option('11-e','kommen',910,562,'kommen')}{text(647,589,360,'Frau Wallander?')}
+ {title('11',476,'Was ist richtig? Markieren Sie.','KB 6d')}
+ {text(202,513,30,'a')}{scanText(225,513,33,'Wer')}{text(275,513,48,'bist /')}<span className="nabYellow" style={{left:323,top:518,width:25,height:17}}/>{text(323,513,30,'ist')}{text(354,513,65,'/ sind')}{text(420,513,60,'das?')}{text(202,535,60,'b  Das')}{option('11-b','bin',270,535,'bin')}{text(303,535,20,'/')}{option('11-b','sind',313,535,'sind')}{text(348,535,20,'/')}{option('11-b','ist',358,535,'ist')}{text(413,535,165,'Frau Wachter.')}
+ {text(202,565,100,'c  Woher')}{option('11-c','komme',298,565,'komme')}{text(366,565,20,'/')}{option('11-c','kommst',380,565,'kommst')}{text(454,565,20,'/')}{option('11-c','kommen',468,565,'kommen')}{text(225,589,130,'Sie?')}
+ {text(625,508,95,'d  Peter')}{option('11-d','komme',710,508,'komme')}{text(778,508,20,'/')}{option('11-d','kommst',792,508,'kommst')}{text(866,508,20,'/')}{option('11-d','kommt',880,508,'kommt')}{text(647,535,340,'aus Spanien.')}
+ {text(625,559,97,'e  Woher')}{option('11-e','kommst',722,559,'kommst')}{text(796,559,20,'/')}{option('11-e','kommt',811,559,'kommt')}{text(877,559,20,'/')}{option('11-e','kommen',891,559,'kommen')}{text(647,589,360,'Frau Wallander?')}
  {check('11',202,620,{'11-b':'ist','11-c':'kommen','11-d':'kommt','11-e':'kommt'})}
- {title('12',655,"Wie geht's? Ordnen Sie zu.",'KB 7','Kommunikation')}
+ {title('12',653,"Wie geht's? Ordnen Sie zu.",'KB 7','Kommunikation')}
  {text(207,697,805,'Nicht so gut. | Sehr gut, danke. | Auch gut. | Es geht. | Gut, danke.','nabBank')}
- {text(202,740,30,'a')}{img('verygood',225,732,60,27)}{field('12-a',287,734,270,'12a Befinden')}
- {text(202,773,30,'b')}{img('good',225,767,28,27)}{text(280,770,170,'Auch gut.','nabExample')}
- {text(583,740,30,'c')}{img('okay',610,732,28,27)}{field('12-c',645,734,260,'12c Befinden')}
- {text(583,773,30,'d')}{img('bad',610,767,28,27)}{field('12-d',645,767,260,'12d Befinden')}
+ {text(202,740,30,'a')}{img('verygood',225,732,60,27)}{field('12-a',279,730,252,'12a Befinden')}
+ {text(202,766,30,'b')}{img('good',225,760,28,27)}{img('ink-auch',276,758,102,33)}<span className="nabP8Rule" style={{left:358,top:776,width:173}}/>
+ {text(583,740,30,'c')}{img('okay',610,732,28,27)}{field('12-c',645,727,247,'12c Befinden')}
+ {text(583,766,30,'d')}{img('bad',610,760,28,27)}{field('12-d',645,754,247,'12d Befinden')}
  {check('12',202,807,{'12-a':'Sehr gut, danke|Gut, danke','12-c':'Es geht','12-d':'Nicht so gut'})}
- {title('13',844,'Ergänzen Sie.','KB 7','Kommunikation')}
- {text(207,884,773,'Und wie geht es dir? | Und Ihnen? | Wie geht es Ihnen? | Wie geht’s?','nabBank')}
- {text(207,927,230,'a  ▲  Guten Tag Herr Stein!')}{text(450,927,180,'Wie geht es Ihnen?','nabExample')}{text(230,953,140,'■  Gut, danke.')}{field('13-a',371,951,200,'13a Gegenfrage')}{text(230,979,190,'▲  Auch gut.')}
- {text(633,927,175,'b  ●  Hallo Svenja!')}{field('13-b1',815,926,185,'13b Frage')}{text(659,953,130,'■  Sehr gut!')}{field('13-b2',795,952,205,'13b Gegenfrage')}{text(659,979,300,'●  Ach, nicht so gut.')}
- {check('13',202,1009,{'13-a':'Und Ihnen','13-b1':"Wie geht's|Wie geht’s|Wie geht es dir",'13-b2':"Und wie geht's dir|Und wie geht’s dir|Und wie geht es dir"})}
- {title('14',1046,'Welche Namen hören Sie? Notieren Sie.','KB 9','Hören')}{listen('02',112,1079,'14')}
- {text(207,1090,30,'a')}{field('14-a',234,1086,350,'14a Name')}{text(207,1120,30,'b')}{field('14-b',234,1116,350,'14b Name')}{text(633,1090,30,'c')}{field('14-c',660,1086,340,'14c Name')}{text(633,1120,30,'d')}{field('14-d',660,1116,340,'14d Name')}
- {check('14',202,1152,{'14-a':'Lothar Müller','14-b':'Lena Egger','14-c':'Yvonne Schuster','14-d':'Sebastian Wimmer'})}
- {title('15',1190,'Begrüßung und Abschied - Markieren Sie und ordnen Sie zu.','KB 10','Kommunikation')}
- <div className="nabRibbon" style={{position:'absolute',left:190,top:1230,width:840}}>{['ich','hallo','ausnein','gutentag','woher','aufwiedersehen','ich','gutenacht','esgehtfraudu','tschüs','wie','gutenabend','heißt'].map((w,i)=>['hallo','gutentag','aufwiedersehen','gutenacht','tschüs','gutenabend'].includes(w)?<button key={i} className={v['15-mark-'+w]==='true'?'marked':''} aria-label={'15 markieren '+w} onClick={()=>set('15-mark-'+w,v['15-mark-'+w]==='true'?'':'true')}>{w}</button>:<span key={i}>{w}</span>)}</div>
- {[['a',230,1274,'Gute Nacht'],['c',511,1274,'Tschüs'],['e',792,1274,'Hallo'],['b',230,1369,'Guten Tag'],['d',511,1369,'Auf Wiedersehen'],['f',792,1369,'Guten Abend']].map(([id,x,y,label])=><div key={id}>{text(Number(x)-21,Number(y),25,String(id))}{img('greeting-'+id,Number(x),Number(y),116,72)}{id==='e'||id==='b'?text(Number(x)+124,Number(y)+2,140,String(label),'nabExample'):field('15-'+id,Number(x)+124,Number(y)+2,125,'15'+id+' Gruß')}</div>)}
- {check('15',202,1450,{'15-a':'Gute Nacht','15-c':'Tschüs|Tschüss','15-d':'Auf Wiedersehen','15-f':'Guten Abend','15-mark-hallo':'true','15-mark-gutentag':'true','15-mark-aufwiedersehen':'true','15-mark-gutenacht':'true','15-mark-tschüs':'true','15-mark-gutenabend':'true'})}
+ {title('13',819,'Ergänzen Sie.','KB 7','Kommunikation')}
+ {text(207,852,540,'Und wie geht es dir? | Und Ihnen? | Wie geht es Ihnen? | Wie geht’s?','nabBank nabP8Bank13')}
+ {text(207,895,25,'a')}{text(230,895,25,'▲')}{scanText(255,895,184,'Guten Tag Herr Stein!')}{img('ink-frage',442,889,144,33)}
+ {text(230,921,25,'■')}{scanText(255,921,97,'Gut, danke.')}{field('13-a',357,921,215,'13a Gegenfrage')}{text(230,947,25,'▲')}{scanText(255,947,81,'Auch gut.')}
+ {text(633,891,25,'b')}{text(654,891,25,'●')}{scanText(678,891,110,'Hallo Svenja!')}{field('13-b1',795,891,197,'13b Frage')}
+ {text(654,917,25,'■')}{scanText(678,917,76,'Sehr gut!')}{field('13-b2',760,917,232,'13b Gegenfrage')}
+ {text(654,943,25,'●')}{scanText(678,943,149,'Ach, nicht so gut.')}
+ {check('13',202,979,{'13-a':'Und Ihnen','13-b1':"Wie geht's|Wie geht’s|Wie geht es dir",'13-b2':"Und wie geht's dir|Und wie geht’s dir|Und wie geht es dir"})}
+ {title('14',1008,'Welche Namen hören Sie? Notieren Sie.','KB 9','Hören')}{listen('02',112,1040,'14')}
+ {text(207,1048,30,'a')}{field('14-a',234,1044,350,'14a Name')}{text(207,1075,30,'b')}{field('14-b',234,1071,350,'14b Name')}{text(633,1048,30,'c')}{field('14-c',660,1044,340,'14c Name')}{text(633,1075,30,'d')}{field('14-d',660,1071,340,'14d Name')}
+ {check('14',202,1102,{'14-a':'Lothar Müller','14-b':'Lena Egger','14-c':'Yvonne Schuster','14-d':'Sebastian Wimmer'})}
+ {title('15',1135,'Begrüßung und Abschied - Markieren Sie und ordnen Sie zu.','KB 10','Kommunikation')}
+ <div className="nabRibbon" style={{position:'absolute',left:190,top:1175,width:840}}>{['ich','hallo','ausnein','gutentag','woher','aufwiedersehen','ich','gutenacht','esgehtfraudu','tschüs','wie','gutenabend','heißt'].map((w,i)=>['hallo','gutentag','aufwiedersehen','gutenacht','tschüs','gutenabend'].includes(w)?<button key={i} style={{transform:`translateY(${[5,5,4,-2,-8,-15,-10,-4,-2,3,9,9,6][i]}px)`}} className={(v['15-mark-'+w]==='true'||['hallo','gutentag'].includes(w)&&v['15-mark-'+w]!=='false')?'marked':''} aria-label={'15 markieren '+w} onClick={()=>set('15-mark-'+w,(v['15-mark-'+w]==='true'||['hallo','gutentag'].includes(w)&&v['15-mark-'+w]!=='false')?'false':'true')}>{w}</button>:<span key={i} style={{display:'inline-block',transform:`translateY(${[5,5,4,-2,-8,-15,-10,-4,-2,3,9,9,6][i]}px)`}}>{w}</span>)}</div>
+ {[['a',230,1239,'Gute Nacht'],['c',511,1239,'Tschüs'],['e',792,1231,'Hallo'],['b',230,1340,'Guten Tag'],['d',511,1337,'Auf Wiedersehen'],['f',792,1331,'Guten Abend']].map(([id,x,y,label])=><div key={id}>{text(Number(x)-21,Number(y),25,String(id))}{img('greeting-'+id,Number(x),Number(y),116,72)}{id==='e'||id==='b'?img(id==='e'?'ink-hallo':'ink-tag',id==='e'?917:354,id==='e'?1227:1336,id==='e'?46:114,id==='e'?29:33):field('15-'+id,Number(x)+124,Number(y)-3,82,'15'+id+' Gruß')}</div>)}
+ {check('15',202,1434,{'15-a':'Gute Nacht','15-c':'Tschüs|Tschüss','15-d':'Auf Wiedersehen','15-f':'Guten Abend','15-mark-hallo':'true','15-mark-gutentag':'true','15-mark-aufwiedersehen':'true','15-mark-gutenacht':'true','15-mark-tschüs':'true','15-mark-gutenabend':'true'})}
  </>}
  {page==='9'&&<>
  {head('TRAINING: HÖREN')}<div className="nabModule">1</div>
@@ -219,6 +222,6 @@ export function NativeAB11({page}:{page:string}){
  {title('2',1180,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','','')}
  {open('eigene-woerter',202,1226,715,170,'2 Weitere Wörter und Notizen')}{save('2',202,1410)}
  </>}
- {page==='7'?<>{text(929,1440,130,'sieben  |  7','nabFooter')}{text(1030,1440,80,'Modul 1','nabFooter nabP7Module')}</>:<>{text(Number(page)%2?991:page==='6'?64:50,page==='6'?1443:1485,80,'Modul 1','nabFooter')}{text(Number(page)%2?920:page==='6'?143:130,page==='6'?1443:1485,500,page+'  |  '+({'6':'sechs','7':'sieben','8':'acht','9':'neun','10':'zehn','11':'elf'} as Record<string,string>)[page],'nabFooter')}</>}
+ {page==='7'?<>{text(929,1440,130,'sieben  |  7','nabFooter')}{text(1030,1440,80,'Modul 1','nabFooter nabP7Module')}</>:<>{text(Number(page)%2?991:page==='6'||page==='8'?64:50,page==='6'?1443:page==='8'?1455:1485,80,'Modul 1','nabFooter')}{text(Number(page)%2?920:page==='6'?143:page==='8'?147:130,page==='6'?1443:page==='8'?1455:1485,500,page+'  |  '+({'6':'sechs','7':'sieben','8':'acht','9':'neun','10':'zehn','11':'elf'} as Record<string,string>)[page],'nabFooter')}</>}
  </div><audio ref={audio} className="nabPlayer" controls hidden aria-label="Originalaudio Arbeitsbuch"/></div>
 }
