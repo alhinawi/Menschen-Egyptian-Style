@@ -164,7 +164,7 @@ export function LibraryNav({slug}: {slug: string}) {
               return <a key={b.id + level} className={'lnv-bookcard flex items-center gap-2 p-2 rounded-xl border bg-white text-inherit no-underline dark:bg-[#2c342f] dark:text-[#e8e2d4]' + (selected ? ' sel border-[#c9a45a] ring-1 ring-[#c9a45a]' : ' border-[#e4d9bd] dark:border-[#43504a]')}
                 aria-label={`${t(b.title)} ${level}`} aria-current={selected ? 'true' : undefined}
                 href={spaLessonUrl(target.slug, target.token)} onClick={e => {e.preventDefault();close();void navigateLesson(target.slug, target.token);}}>
-                <PageImage src={level === 'A1.2' ? `assets/${b.id}-a12-cover.webp` : b.cover} alt="" className="w-8 h-[44px] object-contain rounded-sm shadow-sm flex-none"/>
+                <PageImage loading="eager" src={level === 'A1.2' ? `assets/${b.id}-a12-cover.webp` : b.cover} alt="" className="w-8 h-[44px] object-contain rounded-sm shadow-sm flex-none"/>
                 <span className="lnv-bt font-bold text-[12px] font-[Georgia,serif] flex flex-col gap-1 min-w-0">{t(b.title)}<small className="font-normal text-[11px] font-[Arial,sans-serif] text-[#8a7d63] dark:text-[#9aa396]">{level}</small></span>
               </a>;
             }))}
