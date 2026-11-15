@@ -99,3 +99,19 @@ html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .hybridField
 /* AB p47: use only real printed lines, including the photo vocabulary rail. */
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='47'] .hybridField{font:1.52cqw/1.1 ABScanSans,Arial!important;direction:auto;outline:0}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='47'] .hybridField:focus{outline:1px solid #26764c}
+
+/* AB p48: strike the printed odd word, X the heard numbers, write on source rules. */
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='48'] .hybridField{font-size:1.58cqw!important;outline:0}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='48'] .hybridField:focus{outline:1px solid #26764c}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='48'] .hybridField.hybridCorrect{outline:1px solid #268250}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='48'] .hybridField.hybridWrong{outline:1px solid #bd3838}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='48'] .hybridField[type=radio]:checked{background:linear-gradient(transparent 43%,#174770 44% 53%,transparent 54%)!important;border-radius:0!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='48'] .hybridField[type=checkbox]:checked{background:linear-gradient(45deg,transparent 43%,#26764c 44% 56%,transparent 57%),linear-gradient(-45deg,transparent 43%,#26764c 44% 56%,transparent 57%)!important;border-radius:0!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='48'] .hybridTools{display:contents}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='48'] .hybridCheck{position:absolute;left:94%;font-size:1.3cqw}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='48'] .hybridCheck:nth-child(1){top:29%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='48'] .hybridCheck:nth-child(2){top:50%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='48'] .hybridCheck:nth-child(3){top:60%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='48'] .hybridCheck:nth-child(4){top:75%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='48'] .hybridCheck:nth-child(5){top:91%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='48'] .hybridCheck output{font-size:1.3cqw;position:absolute;right:100%;top:0;width:8cqw;text-align:right;margin-right:1cqw;background:white}
