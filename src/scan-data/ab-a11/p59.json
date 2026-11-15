@@ -1035,7 +1035,468 @@
    "h": 12
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "own-0",
+   "group": "own",
+   "kind": "text",
+   "label": "Ausflug in meiner Sprache",
+   "x": 370,
+   "y": 291,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-1",
+   "group": "own",
+   "kind": "text",
+   "label": "Film in meiner Sprache",
+   "x": 370,
+   "y": 316,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-2",
+   "group": "own",
+   "kind": "text",
+   "label": "Freizeit in meiner Sprache",
+   "x": 371,
+   "y": 342,
+   "w": 181,
+   "h": 23
+  },
+  {
+   "id": "own-3",
+   "group": "own",
+   "kind": "text",
+   "label": "Hobby in meiner Sprache",
+   "x": 371,
+   "y": 367,
+   "w": 181,
+   "h": 23
+  },
+  {
+   "id": "own-4",
+   "group": "own",
+   "kind": "text",
+   "label": "Kino in meiner Sprache",
+   "x": 371,
+   "y": 392,
+   "w": 181,
+   "h": 23
+  },
+  {
+   "id": "own-5",
+   "group": "own",
+   "kind": "text",
+   "label": "Lieblingsfilm in meiner Sprache",
+   "x": 389,
+   "y": 442,
+   "w": 163,
+   "h": 23
+  },
+  {
+   "id": "own-6",
+   "group": "own",
+   "kind": "text",
+   "label": "backen in meiner Sprache",
+   "x": 373,
+   "y": 481,
+   "w": 181,
+   "h": 23
+  },
+  {
+   "id": "own-7",
+   "group": "own",
+   "kind": "text",
+   "label": "besuchen in meiner Sprache",
+   "x": 373,
+   "y": 506,
+   "w": 181,
+   "h": 23
+  },
+  {
+   "id": "own-8",
+   "group": "own",
+   "kind": "text",
+   "label": "treffen in meiner Sprache",
+   "x": 373,
+   "y": 557,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-9",
+   "group": "own",
+   "kind": "text",
+   "label": "fotografieren in meiner Sprache",
+   "x": 373,
+   "y": 582,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-10",
+   "group": "own",
+   "kind": "text",
+   "label": "kochen in meiner Sprache",
+   "x": 374,
+   "y": 607,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-11",
+   "group": "own",
+   "kind": "text",
+   "label": "lesen in meiner Sprache",
+   "x": 374,
+   "y": 657,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-12",
+   "group": "own",
+   "kind": "text",
+   "label": "lieben in meiner Sprache",
+   "x": 374,
+   "y": 682,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-13",
+   "group": "own",
+   "kind": "text",
+   "label": "malen in meiner Sprache",
+   "x": 374,
+   "y": 707,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-14",
+   "group": "own",
+   "kind": "text",
+   "label": "Musik in meiner Sprache",
+   "x": 374,
+   "y": 732,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-15",
+   "group": "own",
+   "kind": "text",
+   "label": "Musik hören in meiner Sprache",
+   "x": 374,
+   "y": 757,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-16",
+   "group": "own",
+   "kind": "text",
+   "label": "Rad fahren in meiner Sprache",
+   "x": 377,
+   "y": 833,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-17",
+   "group": "own",
+   "kind": "text",
+   "label": "schwimmen in meiner Sprache",
+   "x": 377,
+   "y": 884,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-18",
+   "group": "own",
+   "kind": "text",
+   "label": "singen in meiner Sprache",
+   "x": 377,
+   "y": 909,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-19",
+   "group": "own",
+   "kind": "text",
+   "label": "spazieren gehen in meiner Sprache",
+   "x": 378,
+   "y": 934,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-20",
+   "group": "own",
+   "kind": "text",
+   "label": "spielen in meiner Sprache",
+   "x": 378,
+   "y": 959,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-21",
+   "group": "own",
+   "kind": "text",
+   "label": "Fußball/Tennis/Gitarre spielen in meiner Sprache",
+   "x": 378,
+   "y": 1010,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-22",
+   "group": "own",
+   "kind": "text",
+   "label": "tanzen in meiner Sprache",
+   "x": 378,
+   "y": 1036,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-23",
+   "group": "own",
+   "kind": "text",
+   "label": "(fast) immer in meiner Sprache",
+   "x": 726,
+   "y": 288,
+   "w": 185,
+   "h": 23
+  },
+  {
+   "id": "own-24",
+   "group": "own",
+   "kind": "text",
+   "label": "oft in meiner Sprache",
+   "x": 727,
+   "y": 313,
+   "w": 184,
+   "h": 23
+  },
+  {
+   "id": "own-25",
+   "group": "own",
+   "kind": "text",
+   "label": "manchmal in meiner Sprache",
+   "x": 727,
+   "y": 339,
+   "w": 184,
+   "h": 23
+  },
+  {
+   "id": "own-26",
+   "group": "own",
+   "kind": "text",
+   "label": "nie in meiner Sprache",
+   "x": 727,
+   "y": 364,
+   "w": 184,
+   "h": 23
+  },
+  {
+   "id": "own-27",
+   "group": "own",
+   "kind": "text",
+   "label": "Vielen Dank in meiner Sprache",
+   "x": 731,
+   "y": 440,
+   "w": 183,
+   "h": 23
+  },
+  {
+   "id": "own-28",
+   "group": "own",
+   "kind": "text",
+   "label": "Herzlichen Dank in meiner Sprache",
+   "x": 731,
+   "y": 465,
+   "w": 183,
+   "h": 23
+  },
+  {
+   "id": "own-29",
+   "group": "own",
+   "kind": "text",
+   "label": "klar in meiner Sprache",
+   "x": 731,
+   "y": 541,
+   "w": 184,
+   "h": 23
+  },
+  {
+   "id": "own-30",
+   "group": "own",
+   "kind": "text",
+   "label": "natürlich in meiner Sprache",
+   "x": 731,
+   "y": 566,
+   "w": 184,
+   "h": 23
+  },
+  {
+   "id": "own-31",
+   "group": "own",
+   "kind": "text",
+   "label": "leider in meiner Sprache",
+   "x": 731,
+   "y": 591,
+   "w": 184,
+   "h": 23
+  },
+  {
+   "id": "own-32",
+   "group": "own",
+   "kind": "text",
+   "label": "das geht leider nicht in meiner Sprache",
+   "x": 731,
+   "y": 640,
+   "w": 185,
+   "h": 23
+  },
+  {
+   "id": "own-33",
+   "group": "own",
+   "kind": "text",
+   "label": "leidtun:tut mir leid in meiner Sprache",
+   "x": 731,
+   "y": 692,
+   "w": 185,
+   "h": 23
+  },
+  {
+   "id": "own-34",
+   "group": "own",
+   "kind": "text",
+   "label": "Auto in meiner Sprache",
+   "x": 733,
+   "y": 768,
+   "w": 185,
+   "h": 23
+  },
+  {
+   "id": "own-35",
+   "group": "own",
+   "kind": "text",
+   "label": "Gespräch in meiner Sprache",
+   "x": 733,
+   "y": 793,
+   "w": 185,
+   "h": 23
+  },
+  {
+   "id": "own-36",
+   "group": "own",
+   "kind": "text",
+   "label": "Internet in meiner Sprache",
+   "x": 733,
+   "y": 818,
+   "w": 185,
+   "h": 23
+  },
+  {
+   "id": "own-37",
+   "group": "own",
+   "kind": "text",
+   "label": "im Internet surfen in meiner Sprache",
+   "x": 733,
+   "y": 867,
+   "w": 185,
+   "h": 23
+  },
+  {
+   "id": "own-38",
+   "group": "own",
+   "kind": "text",
+   "label": "Natur in meiner Sprache",
+   "x": 735,
+   "y": 894,
+   "w": 185,
+   "h": 23
+  },
+  {
+   "id": "own-39",
+   "group": "own",
+   "kind": "text",
+   "label": "Spaß machen in meiner Sprache",
+   "x": 735,
+   "y": 932,
+   "w": 185,
+   "h": 23
+  },
+  {
+   "id": "own-40",
+   "group": "own",
+   "kind": "text",
+   "label": "können in meiner Sprache",
+   "x": 735,
+   "y": 957,
+   "w": 185,
+   "h": 23
+  },
+  {
+   "id": "own-41",
+   "group": "own",
+   "kind": "text",
+   "label": "rauchen in meiner Sprache",
+   "x": 736,
+   "y": 981,
+   "w": 185,
+   "h": 23
+  },
+  {
+   "id": "own-42",
+   "group": "own",
+   "kind": "text",
+   "label": "gern in meiner Sprache",
+   "x": 736,
+   "y": 1020,
+   "w": 185,
+   "h": 23
+  },
+  {
+   "id": "own-43",
+   "group": "own",
+   "kind": "text",
+   "label": "nicht so gut in meiner Sprache",
+   "x": 736,
+   "y": 1044,
+   "w": 185,
+   "h": 23
+  },
+  {
+   "id": "own-44",
+   "group": "own",
+   "kind": "text",
+   "label": "Wie oft? in meiner Sprache",
+   "x": 736,
+   "y": 1069,
+   "w": 185,
+   "h": 23
+  },
+  {
+   "id": "own-vocabulary",
+   "group": "own",
+   "kind": "text",
+   "label": "2 Weitere Wörter",
+   "x": 214,
+   "y": 1236,
+   "w": 707,
+   "h": 150
+  }
+ ],
  "audio": [],
  "groups": [],
  "review": {
@@ -1043,9 +1504,7 @@
   "verifiedWords": 147,
   "totalWords": 147,
   "notes": [
-   "Lernwortschatz: translation lines and U2 'Welche Woerter moechten Sie noch lernen?' are personal-completion: no fields.",
-   "Cursive 'Spass machen' / 'Freunde treffen/besuchen' under the TIPP are printed examples.",
-   "TIPP box text included; vertical TIPP label, photos and the big Lektion number excluded."
+   "2026-11-15: restored source scan/fonts/layout;45 own-language writing lines plus multiline own-vocabulary area;ungraded,locally saved and resettable."
   ]
  }
 }
