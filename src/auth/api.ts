@@ -1,7 +1,17 @@
 // Client for the Menscheny API (Cloudflare Workers + D1, see backend/).
 // The token stays in localStorage; every call works anonymously too.
 
-const BASE = 'https://menscheny-api.hnz.workers.dev';
+// Dev override: VITE_API_BASE at build time, or a localStorage flag for a
+// locally running worker (wrangler dev), without touching production builds.
+const BASE = (() => {
+  try {
+    const override = localStorage.getItem('menscheny-api-base');
+    if (override) return override;
+  } catch {
+    // private mode
+  }
+  return (import.meta.env?.VITE_API_BASE as string | undefined) || 'https://menscheny-api.hnz.workers.dev';
+})();
 const TOKEN_KEY = 'menscheny-token';
 
 export interface ApiUser {
@@ -30,7 +40,7 @@ function setToken(t: string | null) {
   }
 }
 
-async function req<T>(path: string, opts: { method?: string; body?: unknown; auth?: boolean } = {}): Promise<T> {
+async function req<T>(path: string, opts: { method?: string; body?: unknown; auth?: boolean; keepalive?: boolean } = {}): Promise<T> {
   const headers: Record<string, string> = {};
   if (opts.body !== undefined) headers['Content-Type'] = 'application/json';
   const token = getToken();
@@ -39,6 +49,7 @@ async function req<T>(path: string, opts: { method?: string; body?: unknown; aut
     method: opts.method || 'GET',
     headers,
     body: opts.body !== undefined ? JSON.stringify(opts.body) : undefined,
+    keepalive: opts.keepalive,
   });
   if (r.status === 401 && opts.auth) setToken(null);
   const data = (await r.json().catch(() => ({}))) as Record<string, unknown>;
@@ -46,8 +57,8 @@ async function req<T>(path: string, opts: { method?: string; body?: unknown; aut
   return data as T;
 }
 
-export async function register(name: string, email: string, password: string): Promise<ApiUser> {
-  const d = await req<{ user: ApiUser; token: string }>('/auth/register', { method: 'POST', body: { name, email, password } });
+export async function register(name: string, email: string, password: string, progress?: Record<string, string>): Promise<ApiUser> {
+  const d = await req<{ user: ApiUser; token: string }>('/auth/register', { method: 'POST', body: { name, email, password, ...(progress ? { progress } : {}) } });
   setToken(d.token);
   return d.user;
 }
@@ -69,6 +80,16 @@ export async function logout(): Promise<void> {
 
 export function me(): Promise<{ user: ApiUser }> {
   return req<{ user: ApiUser }>('/me', { auth: true });
+}
+
+// ---------- progress sync ----------
+
+export function getProgress(): Promise<{ progress: Record<string, unknown> | null; updated_at: string | null }> {
+  return req('/progress', { auth: true });
+}
+
+export function putProgress(progress: Record<string, string>, keepalive = false): Promise<{ updated_at: string }> {
+  return req('/progress', { method: 'PUT', auth: true, body: { progress }, keepalive });
 }
 
 // ---------- Google OAuth ----------

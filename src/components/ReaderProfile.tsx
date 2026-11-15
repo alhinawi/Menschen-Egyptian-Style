@@ -5,6 +5,7 @@ import {getFeedbackVoices, setFeedbackVoices, subscribeFeedbackVoices} from './c
 import {ReaderContext} from './ReaderControls';
 import {useAuth, signIn, signUp, signOut} from '../auth/useAuth';
 import {getAuthConfig, googleLoginUrl} from '../auth/api';
+import {getSyncStatus, subscribeSyncStatus} from '../auth/progress-sync';
 
 // Profile avatar in the reader toolbar. The panel holds the live account
 // (Google sign-in or email/password via the Menscheny API) plus the sound
@@ -116,6 +117,7 @@ export function ReaderProfile() {
 
 function SignedInBlock({name, email, avatar, onSignOut}: {name: string; email: string; avatar: string | null; onSignOut: () => void}) {
   const {t} = useUiLanguage();
+  const sync = useSyncExternalStore(subscribeSyncStatus, getSyncStatus, getSyncStatus);
   return (
     <>
       <div className="profileRow authUserRow">
@@ -128,6 +130,10 @@ function SignedInBlock({name, email, avatar, onSignOut}: {name: string; email: s
           <b>{name}</b>
           <small dir="ltr">{email}</small>
         </span>
+      </div>
+      <div className="profileSyncRow" data-state={sync} role="status">
+        <span className="profileSyncDot" aria-hidden="true" />
+        <span>{sync === 'syncing' ? t('Syncing your progress…') : sync === 'error' ? t('Sync failed - will retry') : t('Progress saved & synced')}</span>
       </div>
       <button type="button" className="authBtn authBtnGhost" onClick={onSignOut}>
         {t('Sign out')}

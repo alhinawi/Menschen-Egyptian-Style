@@ -2,6 +2,7 @@
 // family apps: tiny external store + useSyncExternalStore).
 import { useCallback, useSyncExternalStore } from 'react';
 import * as api from './api';
+import { collectLocalProgress, startProgressSync, stopProgressSync } from './progress-sync';
 
 export type AuthStatus = 'loading' | 'anon' | 'authed';
 export interface AuthState {
@@ -24,14 +25,19 @@ function set(s: AuthState) {
 export async function signIn(email: string, password: string) {
   const user = await api.login(email, password);
   set({ status: 'authed', user });
+  // Merge this device's progress with whatever the account already holds.
+  void startProgressSync();
 }
 
 export async function signUp(name: string, email: string, password: string) {
-  const user = await api.register(name, email, password);
+  // The guest's local progress moves into the new account in the same call.
+  const user = await api.register(name, email, password, collectLocalProgress());
   set({ status: 'authed', user });
+  void startProgressSync();
 }
 
 export async function signOut() {
+  stopProgressSync();
   await api.logout();
   set({ status: 'anon', user: null });
 }
@@ -52,7 +58,10 @@ function init() {
   }
   api
     .me()
-    .then((d) => set({ status: 'authed', user: d.user }))
+    .then((d) => {
+      set({ status: 'authed', user: d.user });
+      void startProgressSync();
+    })
     .catch(() => set({ status: 'anon', user: null }));
 }
 
