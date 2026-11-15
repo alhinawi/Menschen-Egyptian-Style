@@ -171,3 +171,37 @@
 
 .nativeAB11[data-native-ab11-page='8'] .nabBold,.nativeAB11[data-native-ab11-page='8'] .nabNumber{font-family:ABP8DroidBold,Georgia,serif}
 .nativeAB11[data-native-ab11-page='8'] .nabP8GridRule{border-bottom:1px dotted #d2cdb4;pointer-events:none}
+
+/* Page 9 first source-alignment pass. */
+.nativeAB11[data-native-ab11-page='9'] .nabText{font:18px/25px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='9'] .nabTitle{font:700 18px/25px ABScanSans,Arial,sans-serif}
+.nativeAB11[data-native-ab11-page='9'] .nabHeader{font:29px/32px KbDroid,Georgia,serif;letter-spacing:.5px}
+.nativeAB11[data-native-ab11-page='9'] .nabKB{font:11px Arial;color:#2995c1}
+.nativeAB11[data-native-ab11-page='9'] .nabCanvas .nabInput{border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;height:19px!important}
+.nativeAB11[data-native-ab11-page='9'] .nabCanvas .nabRadio{width:17px!important;height:17px!important;border-width:1px!important}
+.nativeAB11[data-native-ab11-page='9'] .nabBank{font:18px/25px ABScanSans,Arial,sans-serif;background:#ffffdf;color:#27427f}
+.nativeAB11[data-native-ab11-page='9'] .tapWord[data-word='▲']{color:#2aae47}
+.nativeAB11[data-native-ab11-page='9'] .tapWord[data-word='■']{color:#204892}
+.nativeAB11[data-native-ab11-page='9'] .nabP9Rule{position:absolute;border-bottom:1px solid #929792}
+.nativeAB11[data-native-ab11-page='9'] .nabSide{display:none}
+
+.nativeAB11[data-native-ab11-page='9'] .nabCanvas .nabArrow{border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;width:38px;height:19px;font:20px/19px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='9'] .nabRegelBox{border:0;background:linear-gradient(90deg,#e8e8e8 0 15px,transparent 15px),linear-gradient(#e8e8e8 0 6px,transparent 6px);width:355px!important;height:110px!important}
+.nativeAB11[data-native-ab11-page='9'] .nabBold{font-weight:700;font-size:17px}
+.nativeAB11[data-native-ab11-page='9'] .nabHeaderLine{left:439px;top:167px;width:556px;height:1px}
+.nativeAB11[data-native-ab11-page='9'] .nabP9HeaderRule{position:absolute;border-bottom:1px solid #eadb28}
+.nativeAB11[data-native-ab11-page='9'] .nabModule{font:76px/76px KbDroid,Georgia,serif;top:92px}
+.nativeAB11[data-native-ab11-page='9'] .nabBank .tapWord:is(:nth-of-type(28),:nth-of-type(29),:nth-of-type(30),:nth-of-type(31),:nth-of-type(32),:nth-of-type(33)){text-decoration:line-through;text-decoration-color:#315f9e}
+.nativeAB11[data-native-ab11-page='9'] .nabText.nabExample{font-style:italic;color:#171717}
+.nativeAB11[data-native-ab11-page='9'] .nabTitle .tapWord:is([data-word='a'],[data-word='b']){color:#204892}
+
+.nativeAB11[data-native-ab11-page='9'] .nabTitle{font-size:19px}
+.nativeAB11[data-native-ab11-page='9'] .nabTipTitle{font:700 17px/21px KbDroid,Georgia,serif;padding-left:28px;border-left-width:14px}
+.nativeAB11[data-native-ab11-page='9'] .nabTip{font:17px/22px KbDroid,Georgia,serif;padding-left:28px;border-left-width:14px}
+.nativeAB11[data-native-ab11-page='9'] .nabBank{letter-spacing:-.55px}
+.nativeAB11[data-native-ab11-page='9'] .nabBank .tapWord{text-decoration:none}
+.nativeAB11[data-native-ab11-page='9'] .nabP9BankSecond .tapWord:is(:nth-of-type(8),:nth-of-type(9),:nth-of-type(10),:nth-of-type(11),:nth-of-type(12)){text-decoration:line-through;text-decoration-color:#315f9e}
+.nativeAB11[data-native-ab11-page='9'] .nabFooter{font:16px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='9'] .nabP9Module{background:#e5dda6;color:white;font:italic 13px/18px Georgia,serif}
+
+.nativeAB11[data-native-ab11-page='9'] .nabBank{transform:scaleX(1.025);transform-origin:left top}
