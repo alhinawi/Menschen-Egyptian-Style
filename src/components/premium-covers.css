@@ -18,9 +18,7 @@
 .bookCover .premiumCover .coverSocials{margin-top:22px;gap:18px;direction:ltr}
 .bookCover .premiumCover .coverSocial{box-sizing:border-box;width:102px;height:102px;min-height:102px;padding:31px;border-radius:50%;border:1px solid #c6af82!important;background:transparent!important;box-shadow:none;color:#693745!important;transition:background .18s,transform .18s,box-shadow .18s}
 .bookCover .premiumCover .coverSocial svg{display:block;width:36px;height:36px}
-.bookCover .premiumCover .coverSocial:first-child{background:#693745!important;border-color:#693745!important;color:#fff9ed!important}
 .bookCover .premiumCover .coverSocial:hover{transform:translateY(-4px);box-shadow:0 7px 12px #4c26321a;background:#eee2cd!important}
-.bookCover .premiumCover .coverSocial:first-child:hover{background:#4c2632!important}
 .bookCover .premiumCover .coverOpen{box-sizing:border-box;flex:none;min-height:84px;min-width:360px;margin:24px 0 0;padding:16px 42px;border:1px solid #693745;border-radius:10px;background:#693745!important;box-shadow:0 8px 18px #4c263221,inset 0 1px #ffffff25;color:#fff9ed!important;font:500 28px/1.5 Arial,sans-serif;letter-spacing:1px;cursor:pointer;transition:background .18s,transform .18s}
 .bookCover .premiumCover .coverOpen:hover{background:#4c2632!important;transform:translateY(-2px)}
 .bookCover .premiumCover :is(a,button):focus-visible{outline:4px solid #9e6b24;outline-offset:6px}
@@ -73,3 +71,6 @@ body.fullscreenCoverActive{overflow:hidden!important}
 .fullscreenCover .premiumCover .coverSmall{order:0;unicode-bidi:isolate}
 .fullscreenCover .premiumCover .coverOwner h1{order:1;unicode-bidi:isolate}
 .fullscreenCover .premiumCover .coverSocials{order:2;direction:ltr}
+/* Keep the attribution balanced with its prefix. */
+.fullscreenCover .premiumCover .coverOwner h1{font-size:32px}
+@media(min-width:800px) and (min-height:500px){.fullscreenCover .premiumCover .coverOwner h1{font-size:48px}}
