@@ -10,7 +10,7 @@ export function NativeAB11P101(){
  usePageReset('101','native-ab11-101',()=>{});
  return <div className="ab11p101" data-native-ab11-page="101" ref={host}><div className="ab11p101Canvas nabCanvas" style={{transform:`translate(-50%,-50%) scale(${scale})`}}>{spec.items.map((it:any,i:number)=>{
  const pos={left:it.x,top:it.y,width:it.w,height:it.h};
- if(it.k==='text')return <div key={i} className={'p101Text'+(it.b?' p101Bold':'')} style={{left:it.x,top:it.y,fontSize:it.s,...(it.sx?{transform:`scaleX(${it.sx})`,transformOrigin:'left top'}:{}),...(it.ls?{letterSpacing:it.ls}:{})}}><Words text={it.t}/></div>;
+ if(it.k==='text')return <div key={i} className={'p101Text'+(it.b?' p101Bold':'')+(it.c?' p101Cond':'')} style={{left:it.x,top:it.y,fontSize:it.s,...(it.sx?{transform:`scaleX(${it.sx})`,transformOrigin:'left top'}:{}),...(it.ls?{letterSpacing:it.ls}:{})}}><Words text={it.t}/></div>;
  if(it.k==='art')return <PageImage key={i} className="p101Art" src={it.src} alt="Originalabbildung" style={pos}/>;
  return null;
  })}</div></div>
