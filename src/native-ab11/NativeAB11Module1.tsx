@@ -161,36 +161,41 @@ export function NativeAB11Module1({page}:{page:string}){
  {title('2',826,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','',132,642)}<div className="mP23WritingRules"/>{open('eigener-wortschatz',168,840,595,320,'2 weiterer eigener Wortschatz')}
  <div className="mP23Footer">dreiundzwanzig&nbsp;&nbsp; | &nbsp;&nbsp;23 <em>Modul 1</em></div>
  </>}
- {page==='24'&&<>
- {head('WIEDERHOLUNGSSTATION: WORTSCHATZ')}
- {title('1',210,'Sich begrüßen und sich verabschieden? Ergänzen Sie.')}
- {txt(154,245,200,'Begrüßung','mTitle')}{txt(500,245,200,'Abschied','mTitle')}
- {txt(154,275,175,'a  Hallo')}{['b','c','d'].map((s,i)=><span key={s}>{txt(154,302+i*27,18,s)}{f('u1-'+s,175,300+i*27,165)}</span>)}
- {['e','f','g'].map((s,i)=><span key={s}>{txt(500,275+i*27,18,s)}{f('u1-'+s,523,273+i*27,i===1?204:160)}</span>)}
- {art('hello',363,248,116,101)}{art('bye',738,234,130,109)}{check('u1',168,387)}
- {title('2',431,"Ruths Familie")}{txt(131,469,440,'a  Sehen Sie den Stammbaum an und ergänzen Sie.','mTitle')}
- <svg style={{position:'absolute',left:546,top:Y(430)}} width="301" height={360*sy} viewBox="0 0 301 360" preserveAspectRatio="none"><path d="M31 105H166 M100 105V125 M100 233H239 M171 233V252 M78 252H266 M78 252V261 M175 252V261 M266 252V261" fill="none" stroke="#b2b185" strokeWidth="2"/><g fill="none" stroke="#dcbd00" strokeWidth="2"><circle cx="97" cy="105" r="6"/><circle cx="105" cy="105" r="6"/><circle cx="167" cy="233" r="6"/><circle cx="175" cy="233" r="6"/></g></svg>
- {[['franz','Franz',541,430,73,85],['marianne','Marianne',675,430,74,85],['katharina','Katharina',613,558,72,85],['peter','Peter',748,558,74,85],['ruth','Ruth',590,695,68,82],['justus','Justus',683,695,76,82],['jakob','Jakob',780,695,69,82]].map(([id,name,x,y,w,h])=><span key={String(id)}>{art(String(id),Number(x),Number(y),Number(w),Number(h))}{txt(Number(x),Number(y)+Number(h)+3,95,String(name),'mSmall')}</span>)}
- <div className="mText mSmall" style={{left:157,top:Y(506),width:390}}><Words s="1  Peter: Justus ist mein "/>{inkI('sohn',20,'Sohn.')}</div>
- {txt(157,535,340,'2  Jakob: Franz und Marianne sind','mSmall')}{txt(177,555,48,'meine','mSmall')}{f('u2a-2',229,553,165)}
- {txt(157,583,213,'3  Marianne: Ruth ist meine','mSmall')}{f('u2a-3',373,581,143)}
- {txt(157,611,220,'4  Peter: Marianne ist meine','mSmall')}{f('u2a-4',381,609,130)}
- {txt(157,639,182,'5  Ruth: Franz ist mein','mSmall')}{f('u2a-5',343,637,168)}
- {txt(157,667,139,'6  Katharina: Mein','mSmall')}{f('u2a-6',302,665,93)}{txt(401,667,110,'heißt Peter.','mSmall')}{check('u2a',168,696)}
- {txt(131,730,460,'b  Was machen Jakob, Justus und Ruth? Ordnen Sie zu.','mTitle')}
- <div className="mText mBank" style={{left:163,top:Y(764),width:402}}>{inkI('bank-geschieden',24,'geschieden')}<Words s=" | Geschwister | Jahre alt | wohne | Ausbildung |"/>{'\n'}{inkI('bank-arbeite',22,'arbeite')}<Words s=" | habe | von Beruf"/></div>
- {art('jakob',175,824,62,40)}{art('justus',175,882,62,42)}{art('ruth',175,944,62,42)}
- {txt(157,827,17,'1')}{txt(251,827,74,'Ich bin 19')}{f('u2b-a',330,825,111)}{txt(447,827,100,'(a) und')}{txt(251,852,111,'mache eine')}{f('u2b-b',366,850,140)}{txt(512,852,30,'(b).')}
- {txt(157,885,17,'2')}{txt(251,885,107,'Ich bin 23 und')}{f('u2b-c',363,883,120)}{txt(489,885,175,'(c) in Köln.')}
- {txt(251,910,204,'Ich bin verheiratet. Ich')}{f('u2b-d',460,908,135)}{txt(602,910,240,'(d) als Journalist.')}
- {txt(157,947,17,'3')}{txt(251,947,26,'Ich')}{f('u2b-e',280,945,105)}{txt(390,947,64,'(e) zwei')}{f('u2b-f',459,945,147)}{txt(612,947,230,'(f). Ich bin 26 Jahre alt,')}
- {f('u2b-g',251,974,159)}{txt(416,976,150,'(g) und Sekretärin')}{f('u2b-h',570,974,160)}{txt(735,976,30,'(h).')}{check('u2b',168,1008)}
- {title('3',1046,'Berufe. Lösen Sie das Rätsel.')}
- {['a','b','c','d','e','f'].map((s,i)=><span key={s}>{txt(166+i*110,1080+i*15,20,s,'mSmall')}{art('job-'+s,181+i*110,1086+i*15,76,92)}</span>)}
- {txt(169,1186,125,'Lösungswort:','mSmall')}{f('u3-solution',294,1184,100,'3 Lösungswort')}
- {txt(232,1219,22,'a','mSmall')}<div className="mCrossRow" style={{left:255,top:Y(1216)}}>{([['K1',13,15],['E1',15,16],['L1',13,15],['L2',13,18],['N',11,16],['E2',15,17],['R',15,16]] as [string,number,number][]).map(([n,w,h],i)=><span className={i===2?'solution':''} key={n}><PageImage className="mCrossInk" alt={'KELLNER'[i]} src={'assets/native-ab11/p24-kellner-'+n+'.png'} style={{left:(24-w*K)/2,top:(20-h*K)/2,width:w*K,height:h*K}}/></span>)}</div>
- {['b','c','d','e','f'].map((id,i)=>{const offset=[1,2,2,4,1][i],length=[13,14,9,7,16][i];return <span key={id}>{txt(303-offset*24-23,1251+i*26,20,id,'mSmall')}{cell('u3-'+id,303-offset*24,1248+i*26,length,offset)}</span>})}{check('u3',680,1370,{...answers('u3'),'u3-solution':'LEHRER'})}
- </>}
+ {page==='24'&&(()=>{
+ const T=(x:number,y:number,w:number,s:string,c='')=><div className={'mText '+c} style={{left:x,top:y,width:w}}><Words s={s}/></div>;
+ const F=(id:string,x:number,y:number,w:number,hint='')=><ChoiceInput className="mField" data-native-field={id} aria-label={id} placeholder={hint} style={{left:x,top:y,width:w}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
+ const A=(n:string,x:number,y:number,w:number,h:number)=><PageImage className="mArt" alt={'Originalabbildung '+n} src={'assets/native-ab11/p24-'+n+'.png'} style={{left:x,top:y,width:w,height:h}}/>;
+ const H=(n:string,x:number,y:number,w:number,s:string)=><><div className="mNumber red" style={{left:x,top:y}}>{n}</div>{T(x+35,y+1,w,s,'mTitle')}</>;
+ const C=(g:string,x:number,y:number,expected=answers(g))=><div className="mCheck" data-native-task={g} style={{left:x,top:y}}><CheckButton onClick={()=>G({...graded,[g]:Object.entries(expected).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}/><output aria-live="polite">{g in graded?(graded[g]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ return <>{T(117,134,740,'WIEDERHOLUNGSSTATION: WORTSCHATZ','mHeader')}
+ {H('1',119,209,700,'Sich begrüßen und sich verabschieden? Ergänzen Sie.')}
+ {T(154,241,200,'Begrüßung','mTableLabel')}{T(499,235,200,'Abschied','mTableLabel')}
+ {T(154,264,175,'a  Hallo')}{['b','c','d'].map((s,i)=><span key={s}>{T(154,286+i*21,18,s)}{F('u1-'+s,175,280+i*21,181,['____n   T__','_______r___','G____   _____'][i])}</span>)}
+ {['e','f','g'].map((s,i)=><span key={s}>{T(499,257+i*22,18,s)}{F('u1-'+s,522,250+i*22,i===1?209:131,['____ N____','A_____________','_s_____'][i])}</span>)}
+ {A('hello',363,244,116,101)}{A('bye',738,228,130,109)}{C('u1',842,318)}
+ {H('2',122,378,430,'Ruths Familie')}{T(131,411,20,'a','mLetter')}{T(157,411,395,'Sehen Sie den Stammbaum an und ergänzen Sie.','mTitle')}
+ {A('tree',539,347,313,375)}
+ <div className="mText" style={{left:157,top:443,width:390}}><Words s="1  Peter: Justus ist mein "/>{inkI('sohn',20,'Sohn.')}</div>
+ {T(157,464,318,'2  Jakob: Franz und Marianne sind meine')}{F('u2a-2',466,455,85)}{T(551,462,10,'.')}
+ {T(157,485,220,'3  Marianne: Ruth ist meine')}{F('u2a-3',372,477,148)}{T(520,483,10,'.')}
+ {T(157,506,220,'4  Peter: Marianne ist meine')}{F('u2a-4',374,498,124)}{T(498,504,10,'.')}
+ {T(157,527,182,'5  Ruth: Franz ist mein')}{F('u2a-5',334,519,127)}{T(461,525,10,'.')}
+ {T(157,548,145,'6  Katharina: Mein')}{F('u2a-6',304,540,64)}{T(372,546,110,'heißt Peter.')}{C('u2a',500,549)}
+ {T(133,591,20,'b','mLetter')}{T(160,590,540,'Was machen Jakob, Justus und Ruth? Ordnen Sie zu.','mTitle')}
+ <div className="mText mBank" style={{left:164,top:621,width:412,transform:'scaleX(.94)',transformOrigin:'left top'}}>{inkI('bank-geschieden',24,'geschieden')}<Words s=" | Geschwister | Jahre alt | wohne | Ausbildung |"/>{'\n'}{inkI('bank-arbeite',22,'arbeite')}<Words s=" | habe | von Beruf"/></div>
+ {A('thumb-jakob',176,671,69,45)}{A('thumb-justus',176,721,69,45)}{A('thumb-ruth',176,777,69,45)}
+ {T(161,676,17,'1')}{T(252,675,74,'Ich bin 19')}{F('u2b-a',326,668,105)}{T(436,673,100,'(a) und')}{T(252,697,84,'mache eine')}{F('u2b-b',337,690,106)}{T(448,694,30,'(b).')}
+ {T(161,727,17,'2')}{T(252,727,107,'Ich bin 23 und')}{F('u2b-c',361,719,105)}{T(471,725,175,'(c) in Köln.')}
+ {T(252,748,177,'Ich bin verheiratet. Ich')}{F('u2b-d',428,741,105)}{T(538,747,240,'(d) als Journalist.')}
+ {T(161,783,17,'3')}{T(252,783,26,'Ich')}{F('u2b-e',282,775,104)}{T(391,779,64,'(e) zwei')}{F('u2b-f',453,772,104)}{T(562,777,230,'(f). Ich bin 26 Jahre alt,')}
+ {F('u2b-g',252,799,106)}{T(364,800,150,'(g) und Sekretärin')}{F('u2b-h',501,794,105)}{T(611,798,30,'(h).')}{C('u2b',841,798)}
+ {H('3',131,854,700,'Berufe. Lösen Sie das Rätsel.')}
+ {[['a',180,902,62,96,166,890],['b',272,902,104,89,270,888],['c',422,899,46,95,413,887],['d',511,897,75,99,518,883],['e',625,947,61,92,637,933],['f',736,1026,69,87,729,1017]].map(([id,x,y,w,h,lx,ly])=><span key={String(id)}>{T(Number(lx),Number(ly),20,String(id))}{A('job-'+id+'-source',Number(x),Number(y),Number(w),Number(h))}</span>)}
+ {T(168,1016,125,'Lösungswort:')}{F('u3-solution',272,1011,36)}
+ <div className="mP24CrossExample" style={{left:193,top:1038}}><span>a</span>{([['K1',13,15],['E1',15,16],['L1',13,15],['L2',13,18],['N',11,16],['E2',15,17],['R',15,16]] as [string,number,number][]).map(([n,w,h],i)=><span className={i===3?'solution':''} key={n}><PageImage className="mCrossInk" alt={'KELLNER'[i]} src={'assets/native-ab11/p24-kellner-'+n+'.png'} style={{left:(26-w*K)/2,top:(23-h*K)/2,width:w*K,height:h*K}}/></span>)}</div>
+ {['b','c','d','e','f'].map((id,i)=>{const offset=[1,2,2,4,1][i],length=[13,14,9,7,16][i],x=297-offset*26,y=1062+i*23.5;return <div className="mP24CrossRow" style={{left:x-26,top:y}} key={id}><span>{id}</span>{Array.from({length},(_,j)=><ChoiceInput key={j} aria-label={'u3-'+id+' Buchstabe '+(j+1)} data-crossword={'u3-'+id+'-'+j} maxLength={1} className={j===offset?'solution':''} value={(v['u3-'+id]||'')[j]?.trim()||''} onChange={e=>{const a=(v['u3-'+id]||' '.repeat(length)).padEnd(length,' ').split('');a[j]=e.target.value.toLocaleUpperCase('de');set('u3-'+id,a.join(''));if(e.target.value)(e.currentTarget.nextElementSibling as HTMLInputElement)?.focus()}}/>)}</div>})}{C('u3',841,1163,{...answers('u3'),'u3-solution':'LEHRER'})}
+ <div className="mP24Footer"><em>Modul 1</em><span>24&nbsp;&nbsp; | &nbsp;&nbsp;vierundzwanzig</span></div>
+ </>})()}
  {page==='25'&&<>
  {head('WIEDERHOLUNGSSTATION: GRAMMATIK')}
  {title('1',206,'Schreiben Sie Gespräche.')}
