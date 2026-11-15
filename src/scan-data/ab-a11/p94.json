@@ -1798,10 +1798,10 @@
    "kind": "text",
    "label": "Monat 1",
    "answer": "Januar",
-   "x": 245,
-   "y": 358,
+   "x": 248,
+   "y": 355,
    "w": 175,
-   "h": 22
+   "h": 30
   },
   {
    "id": "t1-m2",
@@ -1809,10 +1809,10 @@
    "kind": "text",
    "label": "Monat 2",
    "answer": "Februar",
-   "x": 245,
-   "y": 388,
+   "x": 248,
+   "y": 385,
    "w": 175,
-   "h": 22
+   "h": 30
   },
   {
    "id": "t1-m3",
@@ -1820,10 +1820,10 @@
    "kind": "text",
    "label": "Monat 3",
    "answer": "März",
-   "x": 245,
-   "y": 418,
+   "x": 248,
+   "y": 414,
    "w": 175,
-   "h": 22
+   "h": 30
   },
   {
    "id": "t1-m4",
@@ -1831,10 +1831,10 @@
    "kind": "text",
    "label": "Monat 4",
    "answer": "April",
-   "x": 465,
-   "y": 358,
+   "x": 478,
+   "y": 352,
    "w": 175,
-   "h": 22
+   "h": 30
   },
   {
    "id": "t1-m5",
@@ -1842,10 +1842,10 @@
    "kind": "text",
    "label": "Monat 5",
    "answer": "Mai",
-   "x": 465,
-   "y": 388,
+   "x": 478,
+   "y": 383,
    "w": 175,
-   "h": 22
+   "h": 30
   },
   {
    "id": "t1-m6",
@@ -1853,10 +1853,10 @@
    "kind": "text",
    "label": "Monat 6",
    "answer": "Juni",
-   "x": 465,
-   "y": 418,
+   "x": 478,
+   "y": 412,
    "w": 175,
-   "h": 22
+   "h": 30
   },
   {
    "id": "t1-m7",
@@ -1864,10 +1864,10 @@
    "kind": "text",
    "label": "Monat 7",
    "answer": "Juli",
-   "x": 695,
-   "y": 358,
+   "x": 702,
+   "y": 350,
    "w": 175,
-   "h": 22
+   "h": 30
   },
   {
    "id": "t1-m8",
@@ -1875,10 +1875,10 @@
    "kind": "text",
    "label": "Monat 8",
    "answer": "August",
-   "x": 695,
-   "y": 388,
+   "x": 702,
+   "y": 380,
    "w": 175,
-   "h": 22
+   "h": 30
   },
   {
    "id": "t1-m9",
@@ -1886,10 +1886,10 @@
    "kind": "text",
    "label": "Monat 9",
    "answer": "September",
-   "x": 695,
-   "y": 418,
+   "x": 702,
+   "y": 409,
    "w": 175,
-   "h": 22
+   "h": 30
   },
   {
    "id": "t1-m10",
@@ -1897,10 +1897,10 @@
    "kind": "text",
    "label": "Monat 10",
    "answer": "Oktober",
-   "x": 935,
-   "y": 358,
+   "x": 947,
+   "y": 347,
    "w": 175,
-   "h": 22
+   "h": 30
   },
   {
    "id": "t1-m11",
@@ -1908,10 +1908,10 @@
    "kind": "text",
    "label": "Monat 11",
    "answer": "November",
-   "x": 935,
-   "y": 388,
+   "x": 947,
+   "y": 377,
    "w": 175,
-   "h": 22
+   "h": 30
   },
   {
    "id": "t1-m12",
@@ -1919,54 +1919,58 @@
    "kind": "text",
    "label": "Monat 12",
    "answer": "Dezember",
-   "x": 935,
-   "y": 418,
+   "x": 947,
+   "y": 406,
    "w": 175,
-   "h": 22
+   "h": 30
   },
   {
-   "id": "t1-j1",
+   "id": "t1-j-1",
    "group": "t1",
    "kind": "text",
    "label": "Jahreszeit 1",
-   "answer": "Frühling",
-   "x": 232,
-   "y": 524,
-   "w": 186,
-   "h": 24
+   "answer": "Frühling|Sommer|Herbst|Winter",
+   "x": 231,
+   "y": 515,
+   "w": 184,
+   "h": 32,
+   "unordered": true
   },
   {
-   "id": "t1-j2",
+   "id": "t1-j-2",
    "group": "t1",
    "kind": "text",
    "label": "Jahreszeit 2",
-   "answer": "Sommer",
-   "x": 436,
-   "y": 524,
-   "w": 186,
-   "h": 24
+   "answer": "Frühling|Sommer|Herbst|Winter",
+   "x": 446,
+   "y": 511,
+   "w": 184,
+   "h": 32,
+   "unordered": true
   },
   {
-   "id": "t1-j3",
+   "id": "t1-j-3",
    "group": "t1",
    "kind": "text",
    "label": "Jahreszeit 3",
-   "answer": "Herbst",
-   "x": 640,
-   "y": 524,
-   "w": 192,
-   "h": 24
+   "answer": "Frühling|Sommer|Herbst|Winter",
+   "x": 644,
+   "y": 507,
+   "w": 184,
+   "h": 32,
+   "unordered": true
   },
   {
-   "id": "t1-j4",
+   "id": "t1-j-4",
    "group": "t1",
    "kind": "text",
    "label": "Jahreszeit 4",
-   "answer": "Winter",
-   "x": 868,
-   "y": 524,
-   "w": 192,
-   "h": 24
+   "answer": "Frühling|Sommer|Herbst|Winter",
+   "x": 859,
+   "y": 502,
+   "w": 184,
+   "h": 32,
+   "unordered": true
   },
   {
    "id": "t2-b-hat",
@@ -1975,11 +1979,11 @@
    "label": "b: hat",
    "name": "t2-b",
    "value": "hat",
-   "answer": "true",
-   "x": 499,
-   "y": 641,
-   "w": 52,
-   "h": 24
+   "answer": "false",
+   "x": 505,
+   "y": 648,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "t2-b-ist",
@@ -1988,11 +1992,11 @@
    "label": "b: ist",
    "name": "t2-b",
    "value": "ist",
-   "answer": "false",
+   "answer": "true",
    "x": 581,
-   "y": 641,
-   "w": 52,
-   "h": 24
+   "y": 648,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "t2-c-haben",
@@ -2002,10 +2006,10 @@
    "name": "t2-c",
    "value": "haben",
    "answer": "false",
-   "x": 328,
-   "y": 670,
-   "w": 64,
-   "h": 24
+   "x": 351,
+   "y": 680,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "t2-c-sind",
@@ -2015,10 +2019,10 @@
    "name": "t2-c",
    "value": "sind",
    "answer": "true",
-   "x": 459,
-   "y": 670,
-   "w": 62,
-   "h": 24
+   "x": 456,
+   "y": 680,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "t2-d-haben",
@@ -2028,10 +2032,10 @@
    "name": "t2-d",
    "value": "haben",
    "answer": "true",
-   "x": 264,
-   "y": 703,
-   "w": 64,
-   "h": 24
+   "x": 285,
+   "y": 710,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "t2-d-sind",
@@ -2041,10 +2045,10 @@
    "name": "t2-d",
    "value": "sind",
    "answer": "false",
-   "x": 368,
-   "y": 703,
-   "w": 62,
-   "h": 24
+   "x": 389,
+   "y": 710,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "t2-e-haben",
@@ -2054,10 +2058,10 @@
    "name": "t2-e",
    "value": "haben",
    "answer": "true",
-   "x": 448,
-   "y": 729,
-   "w": 64,
-   "h": 24
+   "x": 446,
+   "y": 736,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "t2-e-sind",
@@ -2067,10 +2071,10 @@
    "name": "t2-e",
    "value": "sind",
    "answer": "false",
-   "x": 536,
-   "y": 729,
-   "w": 62,
-   "h": 24
+   "x": 548,
+   "y": 736,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "t2-f-hat",
@@ -2080,10 +2084,10 @@
    "name": "t2-f",
    "value": "hat",
    "answer": "false",
-   "x": 306,
-   "y": 759,
-   "w": 55,
-   "h": 24
+   "x": 310,
+   "y": 768,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "t2-f-ist",
@@ -2094,9 +2098,9 @@
    "value": "ist",
    "answer": "true",
    "x": 385,
-   "y": 759,
-   "w": 55,
-   "h": 24
+   "y": 768,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "t3-b",
@@ -2104,10 +2108,10 @@
    "kind": "text",
    "label": "b: Im Juli …",
    "answer": "sind wir nach Hamburg gefahren",
-   "x": 700,
-   "y": 890,
-   "w": 420,
-   "h": 24
+   "x": 691,
+   "y": 885,
+   "w": 435,
+   "h": 33
   },
   {
    "id": "t3-c",
@@ -2115,10 +2119,10 @@
    "kind": "text",
    "label": "c: Der Zug …",
    "answer": "ist um 12.30 Uhr abgefahren",
-   "x": 702,
-   "y": 922,
-   "w": 418,
-   "h": 24
+   "x": 694,
+   "y": 915,
+   "w": 432,
+   "h": 33
   },
   {
    "id": "t3-d",
@@ -2126,10 +2130,10 @@
    "kind": "text",
    "label": "d",
    "answer": "Marcel ist nach Amsterdam geflogen",
-   "x": 615,
-   "y": 952,
-   "w": 505,
-   "h": 24
+   "x": 614,
+   "y": 944,
+   "w": 512,
+   "h": 33
   },
   {
    "id": "t3-e",
@@ -2137,21 +2141,21 @@
    "kind": "text",
    "label": "e",
    "answer": "Ich bin mit Carla ins Kino gegangen",
-   "x": 615,
-   "y": 982,
-   "w": 505,
-   "h": 24
+   "x": 614,
+   "y": 973,
+   "w": 512,
+   "h": 33
   },
   {
    "id": "t4-1",
    "group": "t4",
    "kind": "text",
    "label": "es … 30.000 Besucher",
-   "answer": "besuchen|kommen",
-   "x": 415,
-   "y": 1251,
-   "w": 100,
-   "h": 22
+   "answer": "kommen",
+   "x": 385,
+   "y": 1239,
+   "w": 122,
+   "h": 30
   },
   {
    "id": "t4-2",
@@ -2159,10 +2163,10 @@
    "kind": "text",
    "label": "Das Festival … es seit 15 Jahren",
    "answer": "gibt",
-   "x": 395,
-   "y": 1270,
-   "w": 125,
-   "h": 22
+   "x": 333,
+   "y": 1264,
+   "w": 113,
+   "h": 30
   },
   {
    "id": "t4-3",
@@ -2170,10 +2174,10 @@
    "kind": "text",
    "label": "und es … 3 Tage",
    "answer": "dauert",
-   "x": 658,
-   "y": 1265,
-   "w": 150,
-   "h": 22
+   "x": 636,
+   "y": 1258,
+   "w": 165,
+   "h": 30
   },
   {
    "id": "t4-4",
@@ -2181,10 +2185,10 @@
    "kind": "text",
    "label": "und es … im August",
    "answer": "ist",
-   "x": 408,
-   "y": 1292,
-   "w": 130,
-   "h": 22
+   "x": 350,
+   "y": 1290,
+   "w": 110,
+   "h": 30
   },
   {
    "id": "t4-5",
@@ -2192,10 +2196,10 @@
    "kind": "text",
    "label": "nette Leute …",
    "answer": "getroffen",
-   "x": 275,
-   "y": 1398,
-   "w": 135,
-   "h": 22
+   "x": 289,
+   "y": 1390,
+   "w": 150,
+   "h": 30
   },
   {
    "id": "t4-6",
@@ -2203,10 +2207,10 @@
    "kind": "text",
    "label": "gute Musik …",
    "answer": "gehört",
-   "x": 585,
-   "y": 1398,
-   "w": 120,
-   "h": 22
+   "x": 574,
+   "y": 1386,
+   "w": 125,
+   "h": 30
   }
  ],
  "audio": [],
@@ -2234,7 +2238,8 @@
   "totalWords": 255,
   "notes": [
    "TEST L12 (Ü1-Ü4 + Punkte-Übersicht). No key coverage for AB TEST pages: all answers derived from exercise logic (months/seasons; Perfekt haben/sein choice; sentence transformation; forum-text gaps).",
-   "Ü2a is a printed example (X on 'habe'), no fields. Ü3a 'Lucia ist nach Lübeck gekommen.' and Ü4 'heißt' are printed blue examples. Ü4 blank 1 'besuchen|kommen' is the least certain derivation (both fit 'es … 30.000 Besucher'). Left Modul tab cut, omitted."
+   "Ü2a is a printed example (X on 'habe'), no fields. Ü3a 'Lucia ist nach Lübeck gekommen.' and Ü4 'heißt' are printed blue examples. Ü4 blank 1 'besuchen|kommen' is the least certain derivation (both fit 'es … 30.000 Besucher'). Left Modul tab cut, omitted.",
+   "2026-11-16: Scanalignedtest,scores8/5/4/6andtrafficlights. Correct2bistgekommen;1bseasonsanyorderwithoutduplicates;4.1kommen(noobjectforbesuchen)."
   ]
  }
 }
