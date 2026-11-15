@@ -1117,99 +1117,560 @@
    "id": "l9-9-b",
    "group": "l9-9",
    "kind": "text",
-   "x": 184,
-   "y": 672,
+   "x": 183,
+   "y": 659,
    "w": 214,
-   "h": 22,
-   "answer": "der Obstsalat"
+   "h": 26,
+   "answer": "der Obstsalat",
+   "label": "l9-9-b"
   },
   {
    "id": "l9-9-c",
    "group": "l9-9",
    "kind": "text",
-   "x": 435,
-   "y": 470,
-   "w": 214,
-   "h": 22,
-   "answer": "der Terminkalender"
+   "x": 434,
+   "y": 468,
+   "w": 215,
+   "h": 26,
+   "answer": "der Terminkalender",
+   "label": "l9-9-c"
   },
   {
    "id": "l9-9-d",
    "group": "l9-9",
    "kind": "text",
-   "x": 438,
-   "y": 667,
-   "w": 214,
-   "h": 22,
-   "answer": "das Käsebrötchen"
+   "x": 437,
+   "y": 656,
+   "w": 215,
+   "h": 26,
+   "answer": "das Käsebrötchen",
+   "label": "l9-9-d"
   },
   {
    "id": "l9-9-e",
    "group": "l9-9",
    "kind": "text",
    "x": 713,
-   "y": 465,
+   "y": 462,
    "w": 209,
-   "h": 22,
-   "answer": "das Wurstbrot"
+   "h": 26,
+   "answer": "das Wurstbrot",
+   "label": "l9-9-e"
   },
   {
    "id": "l9-9-f",
    "group": "l9-9",
    "kind": "text",
    "x": 716,
-   "y": 657,
+   "y": 652,
    "w": 209,
-   "h": 22,
-   "answer": "der Bürostuhl"
+   "h": 26,
+   "answer": "der Bürostuhl",
+   "label": "l9-9-f"
   },
   {
    "id": "l9-10a-1",
    "group": "l9-10a",
    "kind": "select",
    "options": [
-    "Hauptgerichte",
-    "Desserts",
-    "Vorspeisen",
-    "Getränke"
+    {
+     "value": "Hauptgerichte",
+     "label": "Hauptgerichte"
+    },
+    {
+     "value": "Desserts",
+     "label": "Desserts"
+    },
+    {
+     "value": "Vorspeisen",
+     "label": "Vorspeisen"
+    },
+    {
+     "value": "Getränke",
+     "label": "Getränke"
+    }
    ],
    "x": 615,
-   "y": 898,
-   "w": 195,
-   "h": 24,
-   "answer": "Vorspeisen"
+   "y": 891,
+   "w": 189,
+   "h": 26,
+   "answer": "Vorspeisen",
+   "label": "l9-10a-1"
   },
   {
    "id": "l9-10a-2",
    "group": "l9-10a",
    "kind": "select",
    "options": [
-    "Hauptgerichte",
-    "Desserts",
-    "Vorspeisen",
-    "Getränke"
+    {
+     "value": "Hauptgerichte",
+     "label": "Hauptgerichte"
+    },
+    {
+     "value": "Desserts",
+     "label": "Desserts"
+    },
+    {
+     "value": "Vorspeisen",
+     "label": "Vorspeisen"
+    },
+    {
+     "value": "Getränke",
+     "label": "Getränke"
+    }
    ],
-   "x": 622,
-   "y": 998,
-   "w": 186,
-   "h": 24,
-   "answer": "Hauptgerichte"
+   "x": 616,
+   "y": 991,
+   "w": 189,
+   "h": 26,
+   "answer": "Hauptgerichte",
+   "label": "l9-10a-2"
   },
   {
    "id": "l9-10a-3",
    "group": "l9-10a",
    "kind": "select",
    "options": [
-    "Hauptgerichte",
-    "Desserts",
-    "Vorspeisen",
-    "Getränke"
+    {
+     "value": "Hauptgerichte",
+     "label": "Hauptgerichte"
+    },
+    {
+     "value": "Desserts",
+     "label": "Desserts"
+    },
+    {
+     "value": "Vorspeisen",
+     "label": "Vorspeisen"
+    },
+    {
+     "value": "Getränke",
+     "label": "Getränke"
+    }
    ],
-   "x": 619,
-   "y": 1125,
-   "w": 193,
-   "h": 24,
-   "answer": "Desserts"
+   "x": 618,
+   "y": 1112,
+   "w": 189,
+   "h": 26,
+   "answer": "Desserts",
+   "label": "l9-10a-3"
+  },
+  {
+   "id": "menu-0",
+   "group": "l9-10b",
+   "kind": "checkbox",
+   "label": "10b Kartoffelsuppe mit Brot",
+   "x": 615,
+   "y": 924,
+   "w": 292,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "menu-1",
+   "group": "l9-10b",
+   "kind": "checkbox",
+   "label": "10b Zwiebelsuppe mit Käse überbacken",
+   "x": 615,
+   "y": 947,
+   "w": 292,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "menu-2",
+   "group": "l9-10b",
+   "kind": "checkbox",
+   "label": "10b Tomatensuppe mit Sahnehäubchen",
+   "x": 615,
+   "y": 968,
+   "w": 292,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "menu-3",
+   "group": "l9-10b",
+   "kind": "checkbox",
+   "label": "10b Schweinebraten mit Knödel",
+   "x": 615,
+   "y": 1024,
+   "w": 292,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "menu-4",
+   "group": "l9-10b",
+   "kind": "checkbox",
+   "label": "10b Wiener Schnitzel mit Kartoffelsalat",
+   "x": 615,
+   "y": 1067,
+   "w": 292,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "menu-5",
+   "group": "l9-10b",
+   "kind": "checkbox",
+   "label": "10b Großer Salat mit Schinken",
+   "x": 615,
+   "y": 1090,
+   "w": 292,
+   "h": 20,
+   "answer": "true"
+  },
+  {
+   "id": "menu-6",
+   "group": "l9-10b",
+   "kind": "checkbox",
+   "label": "10b Warmer Apfelstrudel mit Vanilleeis",
+   "x": 615,
+   "y": 1147,
+   "w": 292,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "menu-7",
+   "group": "l9-10b",
+   "kind": "checkbox",
+   "label": "10b Obstsalat",
+   "x": 615,
+   "y": 1172,
+   "w": 292,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "menu-8",
+   "group": "l9-10b",
+   "kind": "checkbox",
+   "label": "10b gemischtes Eis",
+   "x": 615,
+   "y": 1193,
+   "w": 292,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "menu-9",
+   "group": "l9-10b",
+   "kind": "checkbox",
+   "label": "10b Schokoladenkuchen hausgemacht",
+   "x": 615,
+   "y": 1214,
+   "w": 292,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "menu-10",
+   "group": "l9-10b",
+   "kind": "checkbox",
+   "label": "10b Bier",
+   "x": 615,
+   "y": 1271,
+   "w": 292,
+   "h": 20,
+   "answer": "true"
+  },
+  {
+   "id": "menu-11",
+   "group": "l9-10b",
+   "kind": "checkbox",
+   "label": "10b Mineralwasser",
+   "x": 615,
+   "y": 1293,
+   "w": 292,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "menu-12",
+   "group": "l9-10b",
+   "kind": "checkbox",
+   "label": "10b Apfelsaft",
+   "x": 615,
+   "y": 1315,
+   "w": 292,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "menu-13",
+   "group": "l9-10b",
+   "kind": "checkbox",
+   "label": "10b Orangensaft",
+   "x": 615,
+   "y": 1338,
+   "w": 292,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "menu-14",
+   "group": "l9-10b",
+   "kind": "checkbox",
+   "label": "10b Cola",
+   "x": 615,
+   "y": 1359,
+   "w": 292,
+   "h": 20,
+   "answer": "true"
+  },
+  {
+   "id": "bill-0-name",
+   "group": "l9-10b",
+   "kind": "select",
+   "label": "Rechnung Speise/Getränk 1",
+   "x": 223,
+   "y": 1363,
+   "w": 201,
+   "h": 20,
+   "answer": "Großer Salat mit Schinken",
+   "options": [
+    {
+     "value": "Kartoffelsuppe mit Brot",
+     "label": "Kartoffelsuppe mit Brot"
+    },
+    {
+     "value": "Zwiebelsuppe mit Käse überbacken",
+     "label": "Zwiebelsuppe mit Käse überbacken"
+    },
+    {
+     "value": "Tomatensuppe mit Sahnehäubchen",
+     "label": "Tomatensuppe mit Sahnehäubchen"
+    },
+    {
+     "value": "Schweinebraten mit Knödel",
+     "label": "Schweinebraten mit Knödel"
+    },
+    {
+     "value": "Wiener Schnitzel mit Kartoffelsalat",
+     "label": "Wiener Schnitzel mit Kartoffelsalat"
+    },
+    {
+     "value": "Großer Salat mit Schinken",
+     "label": "Großer Salat mit Schinken"
+    },
+    {
+     "value": "Warmer Apfelstrudel mit Vanilleeis",
+     "label": "Warmer Apfelstrudel mit Vanilleeis"
+    },
+    {
+     "value": "Obstsalat",
+     "label": "Obstsalat"
+    },
+    {
+     "value": "gemischtes Eis",
+     "label": "gemischtes Eis"
+    },
+    {
+     "value": "Schokoladenkuchen hausgemacht",
+     "label": "Schokoladenkuchen hausgemacht"
+    },
+    {
+     "value": "Bier",
+     "label": "Bier"
+    },
+    {
+     "value": "Mineralwasser",
+     "label": "Mineralwasser"
+    },
+    {
+     "value": "Apfelsaft",
+     "label": "Apfelsaft"
+    },
+    {
+     "value": "Orangensaft",
+     "label": "Orangensaft"
+    },
+    {
+     "value": "Cola",
+     "label": "Cola"
+    }
+   ]
+  },
+  {
+   "id": "bill-0-price",
+   "group": "l9-10b",
+   "kind": "text",
+   "label": "Rechnung Preis 1",
+   "x": 430,
+   "y": 1363,
+   "w": 63,
+   "h": 20,
+   "answer": "7,90|7.90"
+  },
+  {
+   "id": "bill-1-name",
+   "group": "l9-10b",
+   "kind": "select",
+   "label": "Rechnung Speise/Getränk 2",
+   "x": 223,
+   "y": 1383,
+   "w": 201,
+   "h": 20,
+   "answer": "Bier",
+   "options": [
+    {
+     "value": "Kartoffelsuppe mit Brot",
+     "label": "Kartoffelsuppe mit Brot"
+    },
+    {
+     "value": "Zwiebelsuppe mit Käse überbacken",
+     "label": "Zwiebelsuppe mit Käse überbacken"
+    },
+    {
+     "value": "Tomatensuppe mit Sahnehäubchen",
+     "label": "Tomatensuppe mit Sahnehäubchen"
+    },
+    {
+     "value": "Schweinebraten mit Knödel",
+     "label": "Schweinebraten mit Knödel"
+    },
+    {
+     "value": "Wiener Schnitzel mit Kartoffelsalat",
+     "label": "Wiener Schnitzel mit Kartoffelsalat"
+    },
+    {
+     "value": "Großer Salat mit Schinken",
+     "label": "Großer Salat mit Schinken"
+    },
+    {
+     "value": "Warmer Apfelstrudel mit Vanilleeis",
+     "label": "Warmer Apfelstrudel mit Vanilleeis"
+    },
+    {
+     "value": "Obstsalat",
+     "label": "Obstsalat"
+    },
+    {
+     "value": "gemischtes Eis",
+     "label": "gemischtes Eis"
+    },
+    {
+     "value": "Schokoladenkuchen hausgemacht",
+     "label": "Schokoladenkuchen hausgemacht"
+    },
+    {
+     "value": "Bier",
+     "label": "Bier"
+    },
+    {
+     "value": "Mineralwasser",
+     "label": "Mineralwasser"
+    },
+    {
+     "value": "Apfelsaft",
+     "label": "Apfelsaft"
+    },
+    {
+     "value": "Orangensaft",
+     "label": "Orangensaft"
+    },
+    {
+     "value": "Cola",
+     "label": "Cola"
+    }
+   ]
+  },
+  {
+   "id": "bill-1-price",
+   "group": "l9-10b",
+   "kind": "text",
+   "label": "Rechnung Preis 2",
+   "x": 430,
+   "y": 1383,
+   "w": 63,
+   "h": 20,
+   "answer": "2,80|2.80"
+  },
+  {
+   "id": "bill-2-name",
+   "group": "l9-10b",
+   "kind": "select",
+   "label": "Rechnung Speise/Getränk 3",
+   "x": 223,
+   "y": 1403,
+   "w": 201,
+   "h": 20,
+   "answer": "Cola",
+   "options": [
+    {
+     "value": "Kartoffelsuppe mit Brot",
+     "label": "Kartoffelsuppe mit Brot"
+    },
+    {
+     "value": "Zwiebelsuppe mit Käse überbacken",
+     "label": "Zwiebelsuppe mit Käse überbacken"
+    },
+    {
+     "value": "Tomatensuppe mit Sahnehäubchen",
+     "label": "Tomatensuppe mit Sahnehäubchen"
+    },
+    {
+     "value": "Schweinebraten mit Knödel",
+     "label": "Schweinebraten mit Knödel"
+    },
+    {
+     "value": "Wiener Schnitzel mit Kartoffelsalat",
+     "label": "Wiener Schnitzel mit Kartoffelsalat"
+    },
+    {
+     "value": "Großer Salat mit Schinken",
+     "label": "Großer Salat mit Schinken"
+    },
+    {
+     "value": "Warmer Apfelstrudel mit Vanilleeis",
+     "label": "Warmer Apfelstrudel mit Vanilleeis"
+    },
+    {
+     "value": "Obstsalat",
+     "label": "Obstsalat"
+    },
+    {
+     "value": "gemischtes Eis",
+     "label": "gemischtes Eis"
+    },
+    {
+     "value": "Schokoladenkuchen hausgemacht",
+     "label": "Schokoladenkuchen hausgemacht"
+    },
+    {
+     "value": "Bier",
+     "label": "Bier"
+    },
+    {
+     "value": "Mineralwasser",
+     "label": "Mineralwasser"
+    },
+    {
+     "value": "Apfelsaft",
+     "label": "Apfelsaft"
+    },
+    {
+     "value": "Orangensaft",
+     "label": "Orangensaft"
+    },
+    {
+     "value": "Cola",
+     "label": "Cola"
+    }
+   ]
+  },
+  {
+   "id": "bill-2-price",
+   "group": "l9-10b",
+   "kind": "text",
+   "label": "Rechnung Preis 3",
+   "x": 430,
+   "y": 1403,
+   "w": 63,
+   "h": 20,
+   "answer": "2,80|2.80"
   }
  ],
  "audio": [],
@@ -1221,6 +1682,10 @@
   {
    "id": "l9-10a",
    "label": "Ü10a Speisekarte ordnen"
+  },
+  {
+   "id": "l9-10b",
+   "label": "10b Speisen und Rechnung"
   }
  ],
  "review": {
@@ -1230,7 +1695,7 @@
   "notes": [
    "Ü9 a die Tischlampe printed cursive example; LAMPE and TISCH struck in bank because used by the example (kept as words)",
    "Ü10a Getränke printed cursive example for the drinks section; other three headers are select fields",
-   "Ü10b marking/Rechnung is open-ended (no fields); owner invoice writing and Fisch-mit-Reis highlight excluded"
+   "2026-11-15: restored source scan/fonts;five compound words,three heading selects fixedoption schema. Added15menu marks and3bill item/price pairs (firstfish bill stays printed),paired bill order flexible. Key confirms salad7.90,bier2.80,cola2.80."
   ]
  }
 }
