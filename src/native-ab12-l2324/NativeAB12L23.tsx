@@ -1,6 +1,52 @@
+import './native-ab12-p90.css';
 import {useNativeCanvas,Canvas,Words} from './shared';
-import {LineMatching} from '../exercises/LineMatching';
+import './native-ab12-p92.css';
+import {useLayoutEffect,useRef,useState} from 'react';
+import './native-ab12-p93.css';
 
+type TapZone93={gap:number;left:number;width:number;top:number;height:number;tick:number};
+/* p93 ex3: the printed letter strings become tap-to-separate. The raw string renders
+   exactly as printed (one text node per printed line, same face); invisible tap zones
+   tile every inter-letter gap (each zone spans from one glyph's midpoint to the next,
+   i.e. one full glyph pitch per gap); a thin navy tick below the baseline marks each
+   chosen separation. The segmented text is stored as the field value, so the house
+   check grades it against the key with the normal normalisation and the marking reads
+   it back from data-value. Line breaks inside a string (b) are logical, not gaps. */
+function TapSplit93({id,x,y,w,pitch,lines,values,set}:{id:string;x:number;y:number;w:number;pitch:number;lines:string[];values:Record<string,string>;set:(id:string,v:string)=>void}){
+ const ref=useRef<HTMLDivElement>(null);
+ const raw=lines.join('');
+ const seg=values[id]??raw;
+ const gaps=new Set<number>();{let li=0;for(const ch of seg){if(ch===' '){if(li>0)gaps.add(li-1)}else li++}}
+ const [zones,setZones]=useState<TapZone93[]>([]);
+ useLayoutEffect(()=>{
+  const el=ref.current;if(!el)return;
+  const measure=()=>{
+   const box=el.getBoundingClientRect(),factor=box.width/el.offsetWidth||1;
+   const z:TapZone93[]=[];let base=0;
+   [...el.querySelectorAll<HTMLElement>('[data-line]')].forEach((lineEl,ln)=>{
+    const node=lineEl.firstChild;if(!node||node.nodeType!==Node.TEXT_NODE)return;
+    const lrect=lineEl.getBoundingClientRect();
+    const ltop=(lrect.top-box.top)/factor,lh=lrect.height/factor;
+    const n=lines[ln].length,rs:DOMRect[]=[];
+    for(let i=0;i<n;i++){const r=document.createRange();r.setStart(node,i);r.setEnd(node,i+1);rs.push(r.getBoundingClientRect());r.detach()}
+    const cx=(v:number)=>(v-box.left)/factor;
+    for(let i=0;i<n-1;i++){const left=cx((rs[i].left+rs[i].right)/2),right=cx((rs[i+1].left+rs[i+1].right)/2);z.push({gap:base+i,left,width:right-left,top:ltop,height:lh,tick:cx((rs[i].right+rs[i+1].left)/2)})}
+    if(ln<lines.length-1&&n){const last=rs[n-1],half=(last.right-last.left)/2/factor;z.push({gap:base+n-1,left:cx((last.left+last.right)/2),width:half+3,top:ltop,height:lh,tick:cx(last.right)+1})}
+    base+=n;
+   });
+   setZones(z);
+  };
+  measure();document.fonts?.ready.then(()=>measure());
+ },[id]);
+ const toggle=(gi:number)=>{const g=new Set(gaps);if(g.has(gi))g.delete(gi);else g.add(gi);let out='';for(let i=0;i<raw.length;i++){out+=raw[i];if(g.has(i))out+=' '}set(id,out);ref.current?.removeAttribute('data-check-mark')};
+ return <div ref={ref} className="naTap93" data-native-field={id} data-value={seg} role="group" style={{left:x,top:y,width:w,height:lines.length*pitch,['--p93' as string]:pitch+'px'}}>
+  {lines.map((ln,i)=><div key={i} data-line={i} className="naTapLine93" style={{top:i*pitch}}>{ln}</div>)}
+  {zones.map(z=><button key={z.gap} type="button" tabIndex={-1} aria-hidden className="naGap93" data-gap={id+':'+z.gap} style={{left:z.left,top:z.top+0.5,width:z.width,height:z.height-1}} onClick={()=>toggle(z.gap)}/>)}
+  {zones.filter(z=>gaps.has(z.gap)).map(z=><div key={'t'+z.gap} className="naTick93" style={{left:z.tick-0.75,top:z.top+z.height*.58,height:z.height*.55}}/>)}
+ </div>;
+}
+
+import {LineMatching} from '../exercises/LineMatching';
 export function NativeAB12L23({page}:{page:string}){
  const c=useNativeCanvas(page);
  const {text,art,field,rule,ruleT,dot,check,title,kb,hand,audio}=c;const set=c.set;
@@ -59,6 +105,7 @@ export function NativeAB12L23({page}:{page:string}){
   {art('hand-n2',124,678,62,18)}
   {art('hand-a2',320,678,48,20)}
   {text(522,677,20,'/','naPencil')}
+  {field('84-3-a1',322,655,186,'3 Adjektive Zeile 1','naFieldBlank')}
   {kb(58,724,'KB 3')}
   {title('4',88,719,640,'Ergänzen Sie die Gespräche.','naRB naNw')}
   <div className="naSide naSideB" style={{left:64,top:795}}>KOMMUNIKATION</div>
@@ -81,8 +128,8 @@ export function NativeAB12L23({page}:{page:string}){
   {text(70.3,1053,30,'84','naFootL23B naNw',11)}{text(92.0,1053,6,'|','naFootL23 naNw',12.3)}{text(110,1053,110,'vierundachtzig','naFootL23 naNw',12.3)}
  </>}
  {page==='85'&&<>
-  <div className="naBasis" style={{left:60,top:48}}>BASISTRAINING</div>
-  <div className="naRuleP" style={{left:390,top:84,width:324}}/>
+  <div className="naBasis" style={{left:72,top:64}}>BASISTRAINING</div>
+  <div className="naRuleP" style={{left:205,top:84,width:534}}/>
   <div className="naRedL" style={{left:728,top:28,width:71,height:58}}>23</div>
   {kb(32,112,'KB 4')}
   {title('5',55,107,640,'Ergänzen und vergleichen Sie.','naRB naNw')}
@@ -96,13 +143,13 @@ export function NativeAB12L23({page}:{page:string}){
   <div className="naTblCell naTblCellS" style={{left:109,top:147}}>Deutsch</div>
   <div className="naTblCell naTblCellS" style={{left:293,top:147}}>Englisch</div>
   <div className="naTblCell naTblCellS" style={{left:465,top:147}}>Meine Sprache oder andere Sprachen</div>
-  {text(108,167,40,'der ','naS14 naNw')}{art('orden',134,165,42,19)}
+  {text(108,167,40,'der ','naS14 naNw')}{art('orden',130,165,41,20)}
   {text(292,167,100,'the north','naS14 naNw')}
-  {text(108,189,60,'der O','naS14 naNw')}{field('85-5-1',136,184,66,'Osten')}
+  {text(108,189,60,'der O','naS14 naNw')}{field('85-5-1',143,184,58,'Osten')}
   {text(292,189,100,'the east','naS14 naNw')}
-  {text(108,211,60,'der S','naS14 naNw')}{field('85-5-2',136,209,66,'Süden')}
+  {text(108,211,60,'der S','naS14 naNw')}{field('85-5-2',141,209,60,'Süden')}
   {text(292,211,100,'the south','naS14 naNw')}
-  {text(108,234,60,'der W','naS14 naNw')}{field('85-5-3',136,234,66,'Westen')}
+  {text(108,234,60,'der W','naS14 naNw')}{field('85-5-3',147,234,54,'Westen')}
   {text(292,234,100,'the west','naS14 naNw')}
   {text(108,256,160,'Norddeutschland','naS14 naNw')}
   {text(292,256,160,'Northern Germany','naS14 naNw')}
@@ -114,7 +161,7 @@ export function NativeAB12L23({page}:{page:string}){
   {field('85-5-n4',465,230,240,'Meine Sprache Zeile 4','naFieldBlank')}
   {field('85-5-n5',465,252,240,'Meine Sprache Zeile 5','naFieldBlank')}
   {field('85-5-n6',465,273,240,'Meine Sprache Zeile 6','naFieldBlank')}
-  {check('85-5',620,300,{'85-5-1':'osten|Osten','85-5-2':'süden|Süden','85-5-3':'westen|Westen'})}
+  {check('85-5',620,306,{'85-5-1':'osten|Osten','85-5-2':'süden|Süden','85-5-3':'westen|Westen'})}
   {kb(30,313,'KB 4')}
   <div className="naTitle naRB naNw" style={{left:55,top:311,width:680}}><b>6</b><Words text="Wie ist das Wetter in "/><span className="naBlue">…?</span><Words text=" Hören Sie und ordnen Sie zu."/></div>
   {audio('assets/ab-cd2-track36.mp3',28,336,'2 36','5')}
@@ -150,8 +197,8 @@ export function NativeAB12L23({page}:{page:string}){
   {text(717.3,1046,30,'85','naFootL23B naNw',11)}{text(700.0,1046,6,'|','naFootL23 naNw',12.3)}{text(598.7,1046,110,'fünfundachtzig','naFootL23 naNw',12.3)}
  </>}
  {page==='86'&&<>
-  <div className="naBasisL" style={{left:90,top:51}}>BASISTRAINING</div>
-  <div className="naRuleP" style={{left:277,top:72,width:451}}/>
+  <div className="naBasisL" style={{left:92,top:66}}>BASISTRAINING</div>
+  <div className="naRuleP" style={{left:277,top:85,width:451}}/>
   {kb(59,136,'KB 5')}
   {title('9',88,124,620,'Ordnen Sie zu.','naRB naNw')}
   <div className="naSide naSideB naSideC" style={{left:60,top:155}}>STRUKTUREN</div>
@@ -166,11 +213,11 @@ export function NativeAB12L23({page}:{page:string}){
   {art('ex9a',138,344,230,20)}
   {text(119,375,16,'B','naNw naBookSerif')}{text(140,375,240,'Herr Brunner muss noch','naNw naBookSerif')}
   {text(140,393,300,'ein paar Stunden in München bleiben,','naNw naBookSerif')}
-  {text(139,414,33,'denn','naNw naBookSerif')}{field('86-9-b',175,411,240,'9 B')}{text(419,414,10,'.')}
+  {text(139,414,33,'denn','naNw naBookSerif')}{field('86-9-b',177,411,238,'9 B')}{text(419,414,10,'.')}
   {text(451,326,14,'C','naNw naBookSerif')}{text(469,326,170,'Urs ist heute sehr müde,','naNw naBookSerif')}
-  {text(468,346,33,'denn','naNw naBookSerif')}{field('86-9-c',500,343,220,'9 C')}{text(724,346,10,'.')}
+  {text(468,346,33,'denn','naNw naBookSerif')}{field('86-9-c',506,343,214,'9 C')}{text(724,346,10,'.')}
   {text(451,393,14,'D','naNw naBookSerif')}{text(468,393,260,'Sandra kommt heute nicht pünktlich,','naNw naBookSerif')}
-  {text(468,415,33,'denn','naNw naBookSerif')}{field('86-9-d',500,411,227,'9 D')}{text(731,415,10,'.')}
+  {text(468,415,33,'denn','naNw naBookSerif')}{field('86-9-d',506,411,221,'9 D')}{text(731,415,10,'.')}
   {check('86-9',640,442,{'86-9-b':'es schneit zu viel','86-9-c':'er hat gestern lange gefeiert','86-9-d':'ihr Fahrrad ist kaputt'})}
   {kb(59,470,'KB 5')}
   <div className="naTitle naRB naNw" style={{left:88,top:466,width:640}}><b>10</b><Words text="Ergänzen Sie die Sätze aus "/><span className="naBlue">9</span><Words text="."/></div>
@@ -201,26 +248,26 @@ export function NativeAB12L23({page}:{page:string}){
   {text(121,657,16,'a','naNw naBookSerif')}{text(140,657,480,'Ich kann leider nicht kommen. Ich habe einen Termin beim Zahnarzt.','naNw naBookSerif')}
   {art('ex11a',130,684,480,13)}
   {text(121,697,16,'b','naNw naBookSerif')}{text(140,697,560,'In dem Haus kann man nicht mehr wohnen. Nach dem Sturm war das Dach kaputt.','naNw naBookSerif')}
-  {art('ex11b',128,714,87,18)}{rule(137,733,591)}{text(728,718,10,'.')}
+  {art('ex11b',128,714,87,18)}{field('86-11-b',223,719,505,'11 b','naF86b')}{text(728,718,10,'.')}
   {text(121,735,16,'c','naNw naBookSerif')}{text(139,735,480,'Ella kommt heute nicht mit in die Disco. Sie hat morgen eine Prüfung.','naNw naBookSerif')}
-  {field('86-11-c',130,751,598,'11 c')}{text(729,753,10,'.')}
+  {field('86-11-c',130,757,598,'11 c','naF86cd')}{text(729,753,10,'.')}
   {text(121,775,16,'d','naNw naBookSerif')}{text(139,775,560,'Mit dem Urlaub hatten wir wirklich Glück. Das Wetter war ein Traum.','naNw naBookSerif')}
-  {field('86-11-d',130,790,598,'11 d')}{text(729,793,10,'.')}
-  {check('86-11',620,816,{'86-11-c':'Ella kommt heute nicht in die Disco, denn sie hat morgen eine Prüfung|Ella kommt heute nicht mit in die Disco, denn sie hat morgen eine Prüfung','86-11-d':'Mit dem Urlaub hatten wir wirklich Glück, denn das Wetter war ein Traum'})}
+  {field('86-11-d',130,796,598,'11 d','naF86cd')}{text(729,793,10,'.')}
+  {check('86-11',620,816,{'86-11-b':'In dem Haus kann man nicht mehr wohnen, denn nach dem Sturm war das Dach kaputt|In dem Haus kann man nicht mehr wohnen denn nach dem Sturm war das Dach kaputt','86-11-c':'Ella kommt heute nicht in die Disco, denn sie hat morgen eine Prüfung|Ella kommt heute nicht mit in die Disco, denn sie hat morgen eine Prüfung','86-11-d':'Mit dem Urlaub hatten wir wirklich Glück, denn das Wetter war ein Traum'})}
   {kb(59,851,'KB 5')}
   {title('12',88,843,640,'Verbinden Sie.','naRB naNw')}
   <div className="naSide naSideB naSideC" style={{left:60,top:884}}>STRUKTUREN</div>
   {text(121,870,16,'a','naNw naBookSerif')}{text(121,890,16,'b','naNw naBookSerif')}{text(121,911,16,'c','naNw naBookSerif')}{text(121,931,16,'d','naNw naBookSerif')}
   <svg className="naEx12Ex" viewBox="0 0 807 1094" aria-hidden="true"><path d="M330 883 C372 883 380 923 390 923" fill="none" stroke="#5b84bd" strokeWidth="2"/><path d="M423 923 L463 923" fill="none" stroke="#5b84bd" strokeWidth="2"/></svg>
-  <LineMatching id="86-12" left={['Soll ich das Kleid nehmen','Am See darf man nicht grillen','Ich mache gern Urlaub am Meer,','Der Techniker muss kommen,']} right={['denn','aber','oder','und']} values={c.values} onMatch={set} leftX={138} rightX={352} leftWidth={220} rightWidth={75} ys={[870,890,911,931]} width={807} height={1094} fontSize={13.5} multiple={true}/>
-  <LineMatching id="86-12r" left={['denn','aber','oder','und']} right={['die Spülmaschine funktioniert nicht.','am liebsten bin ich in den Bergen.','findest du den Rock schöner?','Baden ist auch verboten.']} values={c.values} onMatch={set} leftX={433} rightX={430} leftWidth={6} rightWidth={280} ys={[870,890,911,931]} width={807} height={1094} fontSize={13.5} multiple={true}/>
+  <LineMatching id="86-12" left={['Soll ich das Kleid nehmen','Am See darf man nicht grillen','Ich mache gern Urlaub am Meer,','Der Techniker muss kommen,']} right={['denn','aber','oder','und']} values={c.values} onMatch={set} leftX={138} rightX={352} leftWidth={220} rightWidth={75} ys={[870,890,911,931]} rightDotXs={[385,385,385,385]} width={807} height={1094} fontSize={13.5} multiple={true}/>
+  <LineMatching id="86-12r" left={['denn','aber','oder','und']} right={['die Spülmaschine funktioniert nicht.','am liebsten bin ich in den Bergen.','findest du den Rock schöner?','Baden ist auch verboten.']} values={c.values} onMatch={set} leftX={433} rightX={430} leftWidth={6} rightWidth={280} ys={[870,890,911,931]} leftDotXs={[441,441,441,441]} rightDotXs={[463,463,463,463]} width={807} height={1094} fontSize={13.5} multiple={true}/>
   {check('86-12',620,960,{'86-12-0':'2|','86-12-1':'3','86-12-2':'1','86-12-3':'0','86-12r-0':'0','86-12r-1':'1','86-12r-2':'2|','86-12r-3':'3'})}
   {art('modul-tab',8,1049,60,16)}
   {text(69.3,1051,30,'86','naFootL23B naNw',11)}{text(92.0,1051,6,'|','naFootL23 naNw',12.3)}{text(109.5,1051,110,'sechsundachtzig','naFootL23 naNw',12.3)}
  </>}
  {page==='87'&&<>
-  <div className="naTrainHead" style={{left:71,top:62}}>TRAINING: HÖREN</div>
-  <div className="naRuleP" style={{left:287,top:82,width:440}}/>
+  <div className="naTrainHead" style={{left:71,top:63}}>TRAINING: HÖREN</div>
+  <div className="naRuleP" style={{left:287,top:83,width:440}}/>
   <div className="naRedL" style={{left:727,top:26,width:69,height:59}}>23</div>
   <div className="naOrangeTab" style={{left:796,top:27,width:5,height:62}}/>
   {title('1',68,124,620,'Gespräch in der Kantine.','naRB naNw naS15')}
@@ -259,9 +306,9 @@ export function NativeAB12L23({page}:{page:string}){
   {field('87-2-e',497,556,151,'2 e')}
   {field('87-2-f',497,575,151,'2 f')}
   {check('87-2',620,604,{'87-2-b':'schmutzig','87-2-c':'kalt','87-2-d':'nicht wieder','87-2-e':'schön','87-2-f':'Portugal'})}
-  <div className="naTrainHead" style={{left:71,top:668}}>TRAINING: AUSSPRACHE</div>
+  <div className="naTrainHead naTrain87s" style={{left:71,top:667}}>TRAINING: AUSSPRACHE</div>
   {text(365,675,105,'Vokal „ö“','naVokal naNw')}
-  <div className="naRuleP" style={{left:434,top:687,width:281}}/>
+  <div className="naRuleP" style={{left:434,top:686,width:281}}/>
   {audio('assets/ab-cd2-track38.mp3',26,723,'2 38','1')}
   {title('1',68,726,330,'Wann hören Sie „ö“? Kreuzen Sie an.','naRB naNw naS15')}
   {text(124,760,40,'1. Wort','naColH naNw')}{text(179,760,40,'2. Wort','naColH naNw')}
@@ -281,7 +328,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(716.6,1046,30,'87','naFootL23B naNw',11)}{text(699.9,1046,6,'|','naFootL23 naNw',12.3)}{text(586.5,1046,110,'siebenundachtzig','naFootL23 naNw',12.3)}
  </>}
  {page==='88'&&<>
-  <div className="naTestHead" style={{left:80,top:64}}>TEST</div>
+  <div className="naTestHead" style={{left:81,top:65}}>TEST</div>
   <div className="naTestRule" style={{left:140,top:85,width:590}}/>
   <div className="naSideT" style={{left:52,top:157}}>WÖRTER</div>
   {title('1',68,124,640,'Das Wetter in Deutschland. Ordnen Sie zu.','naRB naNw naS15')}
@@ -319,7 +366,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(111,641,16,'d','naBookSerif naBk88')}{text(130,640,175,'Niko macht ein Fest, denn','naBookSerif naBk88 naNw',14.1)}{field('88-3d',308,636,412,'3 d')}{text(720,639,10,'.','naBookSerif naBk88 naNw naPrd')}
   {text(130,661,195,'(er / Wohnung gefunden haben)','naCue88',13.4)}
   <div className="naPts" style={{left:640,top:662}}>_ / 3 Punkte</div>
-  {check('88-3',640,682,{'88-3b':'denn unsere Oma ist krank|unsere Oma ist krank','88-3c':'denn der Aufzug funktioniert nicht|der Aufzug funktioniert nicht','88-3d':'denn er hat eine neue Wohnung gefunden|er hat eine neue Wohnung gefunden'})}
+  {check('88-3',640,682,{'88-3b':'denn unsere Oma ist krank|unsere Oma ist krank','88-3c':'denn der Aufzug funktioniert nicht|der Aufzug funktioniert nicht','88-3d':'denn er hat eine Wohnung gefunden|er hat eine Wohnung gefunden|denn er hat eine neue Wohnung gefunden|er hat eine neue Wohnung gefunden'})}
   <div className="naSideT" style={{left:52,top:741}}>KOMMUNIKATION</div>
   {title('4',68,707,640,'Ordnen Sie zu.','naRB naNw naS15')}
   <div className="naBank" style={{left:111,top:737,width:596,height:42}}/>
@@ -365,23 +412,23 @@ export function NativeAB12L23({page}:{page:string}){
   {text(146,234,60,'Ist es nicht','naBk90 naNw')}
   {art('hand-1a',200,236,72,12)}
   {text(265,234,266,'(a)? Für die Wochenenden haben wir ein Haus im','naBk90 naNw')}
-  {field('90-1b',533,225,105,'1 b')}{text(648,232,24,'(b)','naBk90 naNw')}
+  {field('90-1b',533,226,105,'1 b')}{text(648,232,24,'(b)','naBk90 naNw')}
   {text(145,250,236,'gefunden. Was für ein Glück! Wir sind super','naBk90 naNw')}
-  {field('90-1c',384,243,117,'1 c')}{text(504,250,18,'(c).','naBk90 naNw')}
+  {field('90-1c',384,244,117,'1 c')}{text(504,250,18,'(c).','naBk90 naNw')}
   {text(146,265,390,'Am Freitag, den 1. April würden wir das gern mit Euch feiern. Wir wollen','naBk90 naNw')}
-  {field('90-1d',539,258,98,'1 d')}{text(660,264,20,'(d).','naBk90 naNw')}
+  {field('90-1d',539,259,98,'1 d')}{text(660,264,20,'(d).','naBk90 naNw')}
   {text(146,278,115,'Hoffentlich spielt das','naBk90 naNw')}
-  {field('90-1e',264,276,115,'1 e')}{text(384,278,38,'(e) mit.','naBk90 naNw')}
-  {field('90-1f',424,274,114,'1 f')}{text(544,278,100,'(f) und Grillfleisch','naBk90 naNw')}
+  {field('90-1e',264,277,115,'1 e')}{text(384,278,38,'(e) mit.','naBk90 naNw')}
+  {field('90-1f',424,275,114,'1 f')}{text(544,278,100,'(f) und Grillfleisch','naBk90 naNw')}
   {text(146,298,246,'kaufen wir. Aber bringt doch bitte Salate mit!','naBk90 naNw',11.9)}
   {text(147,312,175,'Und Zelte und Schlafsäcke nicht','naBk90 naNw')}
-  {field('90-1g',325,306,118,'1 g','naFieldNL')}{ruleT(323,326,118)}
+  {field('90-1g',325,307,118,'1 g','naFieldNL')}{ruleT(323,326,118)}
   {text(444,312,240,'(g)! Ihr könnt auch Badesachen mitbringen.','naBk90 naNw',12.0)}
   {text(147,330,95,'Es gibt dort einen','naBk90 naNw')}
-  {field('90-1h',247,324,115,'1 h')}{text(366,330,84,'(h) in der Nähe.','naBk90 naNw')}
+  {field('90-1h',247,325,115,'1 h')}{text(366,330,84,'(h) in der Nähe.','naBk90 naNw')}
   {text(147,361,91,'Kommt Ihr? Bitte','naBk90 naNw')}
-  {field('90-1i',242,355,112,'1 i')}{text(361,361,160,'(i) uns doch bis zum 15. März','naBk90 naNw')}
-  {field('90-1j',521,353,105,'1 j')}{text(634,361,20,'(j).','naBk90 naNw',11.5)}
+  {field('90-1i',242,356,112,'1 i')}{text(361,361,160,'(i) uns doch bis zum 15. März','naBk90 naNw')}
+  {field('90-1j',521,354,105,'1 j')}{text(634,361,20,'(j).','naBk90 naNw',11.5)}
   {text(147,378,82,'Alisa und Leon','naBk90 naNw')}
   {text(147,410,352,'P.S.„Wohin soll ich denn kommen?“, werdet Ihr Euch jetzt fragen.','naBk90 naNw',12.1)}
   {text(147,426,320,'Ganz einfach: Die Wegbeschreibung findet Ihr im Anhang.','naBk90 naNw',12.2)}
@@ -422,11 +469,11 @@ export function NativeAB12L23({page}:{page:string}){
   {text(104,985,14,'d','naBookSerif naBk88',14)}{text(124,985,320,'Wann feiert man in Deutschland Weihnachten?','naBookSerif naBk88 naNw',14)}
   {field('90-3d',123,999,591,'3 d','naFieldNL')}{ruleS(123,1018.6,714,1033.3)}{text(715,1024,10,'.','naBookSerif naBk88 naNw naPrd')}
   {check('90-3',648,996,{'90-3b':'Am sechsundzwanzigsten Oktober','90-3c':'Am dritten Oktober','90-3d':'Vom vierundzwanzigsten bis zum sechsundzwanzigsten Dezember'})}
-  {art('modul8-tab',0,1047,48,20)}
+  {art('modul8-tab',0,1043,41,14)}
   {text(52.3,1045,30,'90','naFootL23B naNw',11)}{text(74.9,1045,6,'|','naFootL23 naNw',12.3)}{text(92.7,1045,110,'neunzig','naFootL23 naNw',12.3)}
  </>}
  {page==='91'&&<>
-  <div className="naBasis" style={{left:78,top:50}}>BASISTRAINING</div>
+  <div className="naBasis" style={{left:79,top:61}}>BASISTRAINING</div>
   <div className="naRuleP" style={{left:263,top:80,width:455,background:'#e6742a'}}/>
   <div className="naRedL" style={{left:728,top:28,width:71,height:58,background:'#f55e02'}}>24</div>
   {kb(32,124,'KB 3')}
@@ -520,7 +567,7 @@ export function NativeAB12L23({page}:{page:string}){
   {field('91-6b-n2',459,685,250,'Meine Sprache Zeile 2','naFieldBlank')}
   {field('91-6b-n3',459,707,250,'Meine Sprache Zeile 3','naFieldBlank')}
   {field('91-6b-n4',459,730,250,'Meine Sprache Zeile 4','naFieldBlank')}
-  {check('91-6b',738,724,{'91-6b-r1':'Weihnachten','91-6b-r2':'Geburtstag','91-6b-r3':'Ostern','91-6b-r4':'Silvester'})}
+  {check('91-6b',545,762,{'91-6b-r1':'Weihnachten','91-6b-r2':'Geburtstag','91-6b-r3':'Ostern','91-6b-r4':'Silvester'},'stack')}
   {kb(32,796,'KB 4')}
   {title('7',55,790,640,'Was ist das? Ergänzen Sie.','naRB naNw')}
   <div className="naSide naSideB" style={{left:56,top:831}}>WÖRTER</div>
@@ -549,18 +596,18 @@ export function NativeAB12L23({page}:{page:string}){
   {text(433,958,230,'Am Wochenende machen sie eine','naBookSerif naNw')}
   {field('91-7d',436,972,259,'7 d Einweihungsparty')}
   {text(699,984,10,'.','naBookSerif')}
-  {check('91-7',714,1008,{'91-7a':'Neujahr','91-7b':'Hochzeit','91-7c':'Prüfungen','91-7d':'Einweihungsparty'})}
+  {check('91-7',320,768,{'91-7a':'Neujahr','91-7b':'Hochzeit','91-7c':'Prüfungen','91-7d':'Einweihungsparty'})}
   {art('modul8-tab',742,1043,65,25)}
   {text(723.6,1044,30,'91','naFootL23B naNw',11)}{text(706.9,1044,6,'|','naFootL23 naNw',12.3)}{text(606.3,1044,110,'einundneunzig','naFootL23 naNw',12.3)}
  </>}
  {page==='92'&&<>
-  <div className="naBasisL" style={{left:88,top:59}}>BASISTRAINING</div>
+  <div className="naBasisL" style={{left:88,top:61}}>BASISTRAINING</div>
   <div className="naRuleP" style={{left:274,top:82,width:454,background:'#e6742a'}}/>
   {kb(55,124,'KB 4')}
   <div className="naSide naSideB" style={{left:60,top:160}}>KOMMUNIKATION</div>
   {title('8',84,119,640,'Notieren Sie die passenden Glückwünsche.','naRB naNw')}
   {text(117,155,16,'a','naBookSerif')}{text(135,152,260,'Max wird morgen endlich 18 Jahre alt.','naBookSerif naEx4t naNw')}
-  {rule(558,168,168)}{art('ex8a',555,148,137,24)}
+  {rule(558,168,168)}{art('ex8a',559,156,138,12)}
   {text(117,173,16,'b','naBookSerif')}{text(135,171,385,'Sie treffen einen Bekannten am 2. Januar auf der Straße.','naBookSerif naEx4t naNw')}
   {field('92-8b',558,167,168,'8 b Frohes neues Jahr')}
   {text(117,193,16,'c','naBookSerif')}{text(135,191,365,'Ihr Bruder hat seine Führerscheinprüfung bestanden.','naBookSerif naEx4t naNw')}
@@ -569,7 +616,7 @@ export function NativeAB12L23({page}:{page:string}){
   {field('92-8d',558,206,168,'8 d Alles Gute')}
   {text(117,233,16,'e','naBookSerif')}{text(135,230,410,'Sie treffen eine Nachbarin am 26. Dezember im Treppenhaus.','naBookSerif naEx4t naNw')}
   {field('92-8e',558,225,168,'8 e Frohe Weihnachten')}
-  {check('92-8',736,236,{'92-8b':'Frohes neues Jahr.|Frohes neues Jahr','92-8c':'Gut gemacht.|Gut gemacht','92-8d':'Alles Gute|Alles Gute.','92-8e':'Frohe Weihnachten.|Frohe Weihnachten'})}
+  {check('92-8',675,250,{'92-8b':'Frohes neues Jahr.|Frohes neues Jahr','92-8c':'Gut gemacht.|Gut gemacht','92-8d':'Alles Gute|Alles Gute.','92-8e':'Frohe Weihnachten.|Frohe Weihnachten'})}
   {kb(55,279,'KB 4')}
   <div className="naText naTitle naRB" style={{left:83,top:275}}><b>9</b></div>
   <div className="naText naTitle naRB naNw" style={{left:117,top:275,width:540}}><Words text="Schreiben Sie eigene Aufgaben wie in "/><span className="naBlue">8</span><Words text=" und tauschen Sie mit Ihrer"/></div>
@@ -579,15 +626,9 @@ export function NativeAB12L23({page}:{page:string}){
   {kb(55,347,'KB 5')}
   <div className="naSide naSideB" style={{left:60,top:385}}>STRUKTUREN</div>
   {title('10',83,343,640,'Was passt? Ordnen Sie zu.','naRB naNw')}
-  <div id="ex10-left-a">{text(116,377,16,'a','naBookSerif')}{text(135,376,270,'Natascha und Ella singen und schreiben','naBookSerif naEx4t naNw')}{text(135,393,50,'Lieder.','naBookSerif naEx4t naNw')}</div>
-  <div id="ex10-left-b">{text(116,414,16,'b','naBookSerif')}{text(135,413,140,'Klaus hat kein Geld.','naBookSerif naEx4t naNw')}</div>
-  <div id="ex10-left-c">{text(116,437,16,'c','naBookSerif')}{text(135,435,230,'Meine Tochter fährt gern Motorrad.','naBookSerif naEx4t naNw')}</div>
-  <div id="ex10-left-d">{text(116,456,16,'d','naBookSerif')}{text(135,454,280,'Am Freitag spielt unsere Lieblingsband in','naBookSerif naEx4t naNw')}{text(134,473,250,'Berlin und es gibt keine Tickets mehr.','naBookSerif naEx4t naNw')}</div>
-  <div id="ex10-right-1">{text(485,366,220,'Ich würde ihr gern ein Motorrad','naBookSerif naEx10r naNw')}{text(493,385,70,'schenken.','naBookSerif naEx10r naNw')}</div>
-  <div id="ex10-right-2">{text(485,405,95,'Wie schade!','naBookSerif naEx10r naNw')}</div>
-  <div id="ex10-right-3">{text(567,405,160,'Wir würden gern zum','naBookSerif naEx10r naNw')}{text(493,424,100,'Konzert gehen.','naBookSerif naEx10r naNw')}</div>
-  <div id="ex10-right-4">{text(485,444,215,'Aber er würde gern den Führer-','naBookSerif naEx10r naNw')}{text(493,463,110,'schein machen.','naBookSerif naEx10r naNw')}</div>
-  <div id="ex10-right-5">{text(485,483,225,'Sie würden gern eine CD machen.','naBookSerif naEx10r naNw')}</div>
+  {text(116,377,16,'a','naBookSerif')}{text(116,414,16,'b','naBookSerif')}{text(116,437,16,'c','naBookSerif')}{text(116,456,16,'d','naBookSerif')}
+  <LineMatching id="92-10" left={['Natascha und Ella singen und schreiben\nLieder.','Klaus hat kein Geld.','Meine Tochter fährt gern Motorrad.','Am Freitag spielt unsere Lieblingsband in\nBerlin und es gibt keine Tickets mehr.']} right={['Ich würde ihr gern ein Motorrad\nschenken.','Wie schade! Wir würden gern zum\nKonzert gehen.','Aber er würde gern den Führer-\nschein machen.','Sie würden gern eine CD machen.']} values={c.values} onMatch={set} leftX={135} rightX={445} leftWidth={280} rightWidth={270} ys={[376,413,435,454]} itemHeights={[36,19,19,36]} rightYs={[366,405,444,483]} rightHeights={[36,38,36,19]} rightXs={[485,485,485,485]} rightWidths={[240,240,240,240]} leftWidths={[295,200,255,315]} width={807} height={1094} fontSize={13.7} rightFontSizes={[13.1,13.1,13.1,13.1]} multiline={true} lineHeight={18} example={[0,3]} className="lmScanFont"/>
+  {check('92-10',640,325,{'92-10-0':'3|','92-10-1':'2','92-10-2':'0','92-10-3':'1'})}
   {kb(55,523,'KB 5')}
   <div className="naSide naSideB" style={{left:48,top:560}}>STRUKTUREN</div>
   <div className="naSide naSideB" style={{left:62,top:560}}>ENTDECKEN</div>
@@ -609,7 +650,7 @@ export function NativeAB12L23({page}:{page:string}){
   {text(449,593,150,'gern eine CD machen.','naBookSerif naEx4t naNw')}
   {text(449,612,220,'ihr gern ein Motorrad schenken.','naBookSerif naEx4t naNw')}
   {text(449,633,170,'gern zum Konzert gehen.','naBookSerif naEx4t naNw')}
-  {check('92-11',700,644,{'92-11ich':'würde','92-11er':'würde','92-11wir':'würden','92-11sie':'würden'})}
+  {check('92-11',677,642,{'92-11ich':'würde','92-11er':'würde','92-11wir':'würden','92-11sie':'würden'})}
   {kb(55,697,'KB 5')}
   <div className="naSide naSideB" style={{left:60,top:718}}>STRUKTUREN</div>
   {title('12',81,693,640,'Was sagen die Personen? Schreiben Sie.','naRB naNw')}
@@ -623,6 +664,8 @@ export function NativeAB12L23({page}:{page:string}){
   {text(114,854,16,'b','naLet92')}{rule(113,885,130)}{rule(113,905,130)}
   {text(439,755,16,'c','naLet92')}{rule(440,790,130)}{rule(440,810,130)}
   {text(438,854,16,'d','naLet92')}{rule(439,887,130)}{rule(439,907,130)}
+  {([['92-12b',113,869,'12 b Wunsch'],['92-12c',440,774,'12 c Wunsch'],['92-12d',439,871,'12 d Wunsch']] as const).map(([id,x,y,l])=><textarea key={id} className="naField naLined" aria-label={l} data-native-field={id} style={{left:x,top:y,width:132,['--la-h' as string]:'40px',['--la-lh' as string]:'20px'}} value={c.values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>)}
+  {check('92-12',439,918,{'92-12b':'Ich würde gern jeden Tag grillen','92-12c':'Ich würde gern viel Geld verdienen','92-12d':'Ich würde gern im Wald wohnen'})}
   {art('modul8-tab',0,1044,52,20)}
   {text(61.3,1047,30,'92','naFootL23B naNw',11)}{text(83.9,1047,6,'|','naFootL23 naNw',12.3)}{text(100.5,1047,110,'zweiundneunzig','naFootL23 naNw',12.3)}
  </>}
@@ -635,46 +678,46 @@ export function NativeAB12L23({page}:{page:string}){
   {field('p93-s1a',285,185,168,'1 Ort und Datum')}
   {field('p93-s1b',117,205,272,'1 Anrede')}
   {text(391,220,14,',','naBookSerif naIt93')}
-  {text(114,239,290,'am 28. Juli wollen wir das Semesterende feiern.','naBookSerif naIt93 naItL1 naNw')}
-  {text(113,277,320,'Wie jedes Jahr wollen wir ein Picknick machen und na-','naBookSerif naIt93 naItL2 naNw')}
-  {text(115,297,330,'türlich viel Spaß haben. Dieses Jahr haben wir auch ein','naBookSerif naIt93 naItL3 naNw')}
-  {text(115,316,300,'Programm vorbereitet. Wir freuen uns schon sehr!','naBookSerif naIt93 naItL4 naNw')}
-  {text(113,346,320,'Wir treffen uns um 10.00 Uhr am Hauptbahnhof und','naBookSerif naIt93 naItL5 naNw')}
-  {text(114,367,340,'fahren mit Bussen an den Kalmbacher See. Macht Ihr auch','naBookSerif naIt93 naItL6 naNw')}
-  {text(114,385,330,'dieses Jahr mit? Bitte gebt uns bis zum 30. Juni Bescheid.','naBookSerif naIt93 naItL7 naNw')}
+  {text(116,239,290,'am 28. Juli wollen wir das Semesterende feiern.','naBookSerif naIt93 naItL1 naNw')}
+  {text(116,278,320,'Wie jedes Jahr wollen wir ein Picknick machen und na-','naBookSerif naIt93 naItL2 naNw')}
+  {text(116,297,330,'türlich viel Spaß haben. Dieses Jahr haben wir auch ein','naBookSerif naIt93 naItL3 naNw')}
+  {text(116,317,300,'Programm vorbereitet. Wir freuen uns schon sehr!','naBookSerif naIt93 naItL4 naNw')}
+  {text(116,346,320,'Wir treffen uns um 10.00 Uhr am Hauptbahnhof und','naBookSerif naIt93 naItL5 naNw')}
+  {text(116,365,340,'fahren mit Bussen an den Kalmbacher See. Macht Ihr auch','naBookSerif naIt93 naItL6 naNw')}
+  {text(116,385,330,'dieses Jahr mit? Bitte gebt uns bis zum 30. Juni Bescheid.','naBookSerif naIt93 naItL7 naNw')}
   {field('p93-s1c',117,409,252,'1 Gruss')}
-  {text(114,433,100,'Josh Weller','naBookSerif naIt93 naItL8 naNw')}
-  {text(114,454,220,'Fachschaftsrat – Germanistik','naBookSerif naIt93 naItL9 naNw')}
+  {text(115,434,100,'Josh Weller','naBookSerif naIt93 naItL8 naNw')}
+  {text(115,453,220,'Fachschaftsrat – Germanistik','naBookSerif naIt93 naItL9 naNw')}
   <div className="naTipBox" style={{left:487,top:232,width:257,height:151}}/>
   <div className="naTipTop naTipGold93" style={{left:487,top:232,width:257,height:3}}/>
   <div className="naTipBar naTipGold93" style={{left:487,top:232,width:10,height:151}}/>
   <div className="naTipp" style={{left:483,top:346,width:14,height:37}}>Tipp</div>
-  {text(511,237,225,'Sie möchten einen Brief schreiben.','naBookSerif naTippT93 naTpL1 naNw')}
-  {text(511,254,225,'Was ist besonders wichtig?','naBookSerif naTippT93 naTpL2 naNw')}
-  {text(511,272,225,'Vergessen Sie nicht das Datum, die','naBookSerif naTippT93 naTpL3 naNw')}
-  {text(511,287,225,'Anrede und den Gruß.','naBookSerif naTippT93 naTpL4 naNw')}
-  {text(511,304,225,'Vor dem Schreiben: Wie gut kennen','naBookSerif naTippT93 naTpL5 naNw')}
-  {text(511,320,225,'Sie den Adressaten? Wollen Sie du','naBookSerif naTippT93 naTpL6 naNw')}
-  {text(511,339,225,'oder Sie sagen?','naBookSerif naTippT93 naTpL7 naNw')}
-  {text(511,354,225,'Schreiben Sie zu jedem Punkt ein bis','naBookSerif naTippT93 naTpL8 naNw')}
-  {text(511,371,225,'zwei Sätze.','naBookSerif naTippT93 naTpL9 naNw')}
+  {text(509,237,225,'Sie möchten einen Brief schreiben.','naBookSerif naTippT93 naTpL1 naNw')}
+  {text(509,254,225,'Was ist besonders wichtig?','naBookSerif naTippT93 naTpL2 naNw')}
+  {text(509,271,225,'Vergessen Sie nicht das Datum, die','naBookSerif naTippT93 naTpL3 naNw')}
+  {text(509,288,225,'Anrede und den Gruß.','naBookSerif naTippT93 naTpL4 naNw')}
+  {text(509,305,225,'Vor dem Schreiben: Wie gut kennen','naBookSerif naTippT93 naTpL5 naNw')}
+  <div className="naText naBookSerif naTippT93 naTpL6 naNw" style={{left:509,top:321,width:225}}><Words text="Sie den Adressaten? Wollen Sie "/><i><span className="tapWord" role="button" tabIndex={0} data-word="du" data-phrase="Sie den Adressaten? Wollen Sie du">du</span></i></div>
+  <div className="naText naBookSerif naTippT93 naTpL7 naNw" style={{left:509,top:338,width:225}}><Words text="oder "/><i><span className="tapWord" role="button" tabIndex={0} data-word="Sie" data-phrase="oder Sie sagen?">Sie</span></i><Words text=" sagen?"/></div>
+  {text(509,355,225,'Schreiben Sie zu jedem Punkt ein bis','naBookSerif naTippT93 naTpL8 naNw')}
+  {text(509,372,225,'zwei Sätze.','naBookSerif naTippT93 naTpL9 naNw')}
   {check('93-1',672,436,{'p93-s1a':'Bielefeld, 15 Juni 20..|Bielefeld, 15. Juni 20..|Bielefeld, 15. Juni 20...','p93-s1b':'Liebe Studentinnen und Studenten','p93-s1c':'Viele Grüße'})}
   {title('2',72,509,660,'Antworten Sie auf die Einladung in 1. Schreiben Sie etwas zu den drei Punkten.','naRB naNw')}
-  <div className="naDashRule93" style={{left:106,top:549}}/>{text(118,539,600,'Danken Sie für die Einladung.','naDash93 naNw')}
-  <div className="naDashRule93" style={{left:106,top:569}}/>{text(118,559,600,'Sagen Sie: Sie kommen gern zu dem Fest.','naDash93 naNw')}
-  <div className="naDashRule93" style={{left:106,top:589}}/>{text(118,579,600,'Fragen Sie: Sollen Sie etwas mitbringen?','naDash93 naNw')}
+  <div className="naDashRule93" style={{left:106,top:551}}/>{text(118,541,600,'Danken Sie für die Einladung.','naDash93 naNw')}
+  <div className="naDashRule93" style={{left:106,top:566}}/>{text(118,556,600,'Sagen Sie: Sie kommen gern zu dem Fest.','naDash93 naNw')}
+  <div className="naDashRule93" style={{left:106,top:590}}/>{text(118,580,600,'Fragen Sie: Sollen Sie etwas mitbringen?','naDash93 naNw')}
   <div className="naTrainHead naTrainHead93" style={{left:74,top:634}}>TRAINING: AUSSPRACHE</div>
   {text(367,640,110,'Neueinsatz','naNeu93 naNw')}
   <div className="naRuleP" style={{left:449,top:655,width:268,background:'#ec7724'}}/>
-  {audio('assets/ab-cd2-track45.mp3',26,681,'2 45','1')}
+  {audio('assets/ab-cd2-track45.mp3',26,684,'2 45','1')}
   {title('1',72,685,330,'Hören Sie und sprechen Sie nach.','naRB naNw')}
   {text(105,707,220,'Achten Sie auf die Pause!','naInst93 naNw')}
-  {text(105,737,14,'a','naBookSerif')}{text(123,737,330,'April – im | April','naBookSerif naNw')}
-  {text(105,756,14,'b','naBookSerif')}{text(123,756,330,'Ostern – zu | Ostern','naBookSerif naNw')}
-  {text(105,775,14,'c','naBookSerif')}{text(123,775,330,'Abend – heute | Abend','naBookSerif naNw')}
-  {text(105,795,14,'d','naBookSerif')}{text(123,795,340,'Abschlussprüfung – meine | Abschlussprüfung','naBookSerif naNw')}
-  {text(105,814,14,'e','naBookSerif')}{text(123,814,330,'Uhr – acht | Uhr','naBookSerif naNw')}
-  {text(105,834,14,'f','naBookSerif')}{text(123,834,330,'Ulm – in | Ulm','naBookSerif naNw')}
+  {text(104,735,14,'a','naBookSerif naAF93')}{text(122,735,330,'April – im | April','naBookSerif naAF93 naNw')}
+  {text(104,754,14,'b','naBookSerif naAF93')}{text(122,754,330,'Ostern – zu | Ostern','naBookSerif naAF93 naNw')}
+  {text(104,773,14,'c','naBookSerif naAF93')}{text(122,773,330,'Abend – heute | Abend','naBookSerif naAF93 naNw')}
+  {text(104,793,14,'d','naBookSerif naAF93')}{text(122,793,340,'Abschlussprüfung – meine | Abschlussprüfung','naBookSerif naAF93 naNw')}
+  {text(104,812,14,'e','naBookSerif naAF93')}{text(122,812,330,'Uhr – acht | Uhr','naBookSerif naAF93 naNw')}
+  {text(104,832,14,'f','naBookSerif naAF93')}{text(122,832,330,'Ulm – in | Ulm','naBookSerif naAF93 naNw')}
   {title('2',74,880,300,'Ergänzen Sie die Regel.','naRB naNw')}
   <div className="naRegelBox93" style={{left:105,top:909,width:287,height:55}}/>
   <div className="naRegelTab93" style={{left:105,top:909,width:14,height:55}}/>
@@ -688,24 +731,27 @@ export function NativeAB12L23({page}:{page:string}){
   {title('3',455,685,260,'Schreiben Sie zuerst die Sätze.','naRB naNw')}
   {text(487,707,240,'Flüstern Sie die Sätze und','naInst93 naNw')}
   {text(487,726,240,'sprechen Sie sie dann laut.','naInst93 naNw')}
-  {text(487,755,14,'a','naBookSerif')}{text(505,755,240,'amerstenaugustwillichmiteuch','naBookSerif naNw')}
-  {text(505,774,240,'meineabschlussprüfungfeiern','naBookSerif naNw')}
-  {text(487,794,14,'b','naBookSerif')}{text(505,794,240,'kommtalleumachtuhrzumeinerein','naBookSerif naNw')}
-  {text(505,814,140,'weihungsparty','naBookSerif naNw')}
-  {text(487,833,14,'c','naBookSerif')}{text(505,833,260,'zuosternbekommtihrkleinegeschenke','naBookSerif naNw')}
-  {text(487,852,14,'d','naBookSerif')}{text(505,852,260,'meinefreundinhateinenfreundinulm','naBookSerif naNw')}
+  {text(487,755,14,'a','naBookSerif')}
+  {<TapSplit93 id="93-3a" x={505} y={755} w={240} pitch={19} lines={['amerstenaugustwillichmiteuch','meineabschlussprüfungfeiern']} values={c.values} set={set}/>}
+  {text(487,794,14,'b','naBookSerif')}
+  {<TapSplit93 id="93-3b" x={505} y={794} w={240} pitch={20} lines={['kommtalleumachtuhrzumeinerein','weihungsparty']} values={c.values} set={set}/>}
+  {text(487,833,14,'c','naBookSerif')}
+  {<TapSplit93 id="93-3c" x={505} y={833} w={260} pitch={19} lines={['zuosternbekommtihrkleinegeschenke']} values={c.values} set={set}/>}
+  {text(487,852,14,'d','naBookSerif')}
+  {<TapSplit93 id="93-3d" x={505} y={852} w={260} pitch={19} lines={['meinefreundinhateinenfreundinulm']} values={c.values} set={set}/>}
+  {check('93-3',678,715,{'93-3a':'Am ersten August will ich mit Euch meine Abschlussprüfung feiern','93-3b':'Kommt alle um acht Uhr zu meiner Einweihungsparty','93-3c':'Zu Ostern bekommt ihr kleine Geschenke','93-3d':'Meine Freundin hat einen Freund in Ulm'})}
   {audio('assets/ab-cd2-track46.mp3',444,888,'2 46','2')}
   {text(488,892,250,'Hören Sie und vergleichen Sie.','naInst93 naNw')}
-  {audio('assets/ab-cd2-track47.mp3',414,933,'2 47','4')}
+  {audio('assets/ab-cd2-track47.mp3',409,937,'2 47','4')}
   {title('4',454,937,270,'Zungenbrecher: Hören Sie.','naRB naNw')}
-  {text(488,970,280,'In Ulm und um Ulm und um Ulm herum.','naBookSerif naZung93 naNw')}
+  {text(485,968,280,'In Ulm und um Ulm und um Ulm herum.','naBookSerif naZung93 naNw')}
   {text(487,998,270,'Sprechen Sie: zuerst langsam und dann','naInst93b naNw')}
   {text(488,1016,200,'immer schneller.','naInst93b naNw')}
   {art('modul-tab',743,1046,56,20)}
   {text(718.6,1045,30,'93','naFootL23B naNw',11)}{text(701.0,1045,6,'|','naFootL23 naNw',12.3)}{text(597.3,1045,110,'dreiundneunzig','naFootL23 naNw',12.3)}
  </>}
  {page==='94'&&<>
-  <div className="naTestHead naTestHead94" style={{left:84,top:62}}>TEST</div>
+  <div className="naTestHead naTestHead94" style={{left:84,top:63}}>TEST</div>
   <div className="naTestRule94" style={{left:152,top:83,width:586}}/>
   <div className="naSideT" style={{left:52,top:147}}>WÖRTER</div>
   {title('1',81,120,640,'Feste und Feiern. Ergänzen Sie die Nomen oder Verben in der richtigen Form.','naRB naNw naS15')}
@@ -759,7 +805,7 @@ export function NativeAB12L23({page}:{page:string}){
   {field('94-4d',131,848,191,'4 d')}{text(328,854.5,10,'!','naBookSerif naBk88 naNw')}
   {text(113,873.5,16,'e','naBookSerif naBk88')}{text(131,873.5,181,'Ihr habt 5:1 gewonnen? Gut','naBookSerif naBk88 naNw',14)}{field('94-4e',318,868,192,'4 e')}{text(514,873.5,10,'!','naBookSerif naBk88 naNw')}
   <div className="naPts" style={{left:660,top:879}}>_ / 5 Punkte</div>
-  {check('94-4',660,899,{'94-4a':'herzlichen','94-4b':'neues Jahr','94-4c':'Gute Besserung','94-4d':'Weihnachten','94-4e':'gemacht'})}
+  {check('94-4',660,899,{'94-4a':'herzlichen','94-4b':'neues Jahr','94-4c':'Gute','94-4d':'Weihnachten','94-4e':'gemacht'})}
   <div style={{position:'absolute',left:110,top:906,width:383,height:26,background:'#f6f3d5'}}/>
   {text(114,913,120,'Wörter','naScoreH94 naNw')}{text(238,913,120,'Strukturen','naScoreH94 naNw')}{text(364,913,130,'Kommunikation','naScoreH94 naNw')}
   <div style={{position:'absolute',left:109,top:906,width:1.5,height:103,background:'#f5f3ee'}}/>{[232,358].map(x=><div key={x} style={{position:'absolute',left:x,top:906,width:1.5,height:103,background:'#f5f3ee'}}/>)}<div style={{position:'absolute',left:492,top:906,width:1.5,height:103,background:'#f5f3ee'}}/>{[957,982].map(y=><div key={y} style={{position:'absolute',left:109,top:y,width:384,height:1.5,background:'#f5f3ee'}}/>)}<div style={{position:'absolute',left:109,top:1008,width:384,height:1.5,background:'#f5f3ee'}}/>

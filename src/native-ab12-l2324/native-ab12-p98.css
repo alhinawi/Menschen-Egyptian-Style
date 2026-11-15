@@ -1,0 +1,7 @@
+/* p98 section 10: the single Himmelsrichtungen field overlaps the section header's
+   descenders (pre-existing layout), so the mark is underline-only paint - house
+   standard for fields over printed content: transparent background, text colour
+   stays, only the field's rule turns red or green. */
+[data-native-ab12="98"] .naField[data-native-field="98-10"][data-check-mark]{background-color:transparent!important;box-shadow:none!important;color:#224777!important}
+[data-native-ab12="98"] .naField[data-native-field="98-10"][data-check-mark="ok"]{border-bottom-color:#2f7d4f!important}
+[data-native-ab12="98"] .naField[data-native-field="98-10"][data-check-mark="bad"]{border-bottom-color:#c62f2f!important}

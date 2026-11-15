@@ -12,6 +12,9 @@
 .nkbCanvas input[type=radio].nkbField:checked,.nkbCanvas input[type=checkbox].nkbField:checked{background:radial-gradient(circle closest-side,#26764c 0 42%,transparent 48%)!important}
 .nkbCanvas .nkbField:focus-visible{outline:2px solid #26764c}
 .nkbCanvas .nkbField.ok{outline:2px solid #268250}.nkbCanvas .nkbField.bad{outline:2px solid #bd3838}
+/* Unanswered rows must show the red cross too: paint it on graded-but-unchecked radios/checkboxes (wrong or empty = red). */
+.page .nkbCanvas input:is([type=radio],[type=checkbox]).nkbField.bad:not(:checked){background-color:transparent!important;background-image:linear-gradient(54deg,transparent 40%,var(--answer-mark) 43% 53%,transparent 56%),linear-gradient(-48deg,transparent 41%,var(--answer-mark) 44% 53%,transparent 56%)!important;background-size:var(--answer-cross-size,60%) var(--answer-cross-size,60%)!important;background-position:50% 50%!important;background-repeat:no-repeat!important}
+.nkbCanvas input[type=radio].nkbCircleOption.bad:not(:checked){border-color:#bd3838!important}
 .nkbCanvas .nkbListen{position:absolute;background:transparent;border:0;padding:0;margin:0;cursor:pointer;z-index:4;min-width:0;min-height:0}
 .nkbCanvas .nkbListen:focus-visible{outline:3px solid #2e91be}
 .nkbCanvas .nkbCheck{position:absolute;display:flex;gap:8px;align-items:center;z-index:6;font-size:1.9cqw}
@@ -22,6 +25,7 @@
 .nkbCanvas .nkbWord.nkbB{font-family:Arial,'Liberation Sans',Helvetica,sans-serif}
 .nkbCanvas .nkbLine{position:absolute;white-space:nowrap;width:max-content;font-family:'Palatino Linotype',Palatino,'Book Antiqua','Liberation Serif',Georgia,serif;margin:0;padding:0}.nkbCanvas .nkbLine.nkbB{font-family:Arial,'Liberation Sans',Helvetica,sans-serif;font-weight:700}.nkbCanvas .nkbLine .tapWord{cursor:pointer;touch-action:manipulation}
 .nkbCanvas .nkbLine.nkbSans:not(.nkbB){font-family:Arial,'Liberation Sans',Helvetica,sans-serif}
+.nkbCanvas .nkbLine.nkbHand{font-family:'Caveat',cursive;font-weight:600}
 .nkbCanvas input[type=text].nkbField,.nkbCanvas select.nkbField{border:1.5px solid #6f7b72!important;border-radius:3px!important;background:#fffef7b3!important}
 .nkbCanvas .nkbCompact{font-size:1.45cqw}
 
@@ -43,14 +47,15 @@
 @font-face{font-family:KbFira;src:url('/assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
 @font-face{font-family:KbFira;src:url('/assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700;font-display:swap}
 @font-face{font-family:KbDroid;src:url('/assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:KbDroid;src:url('/assets/fonts/droid-serif-400-italic.ttf') format('truetype');font-weight:400;font-style:italic;font-display:swap}
 .nkb:is([data-native-page="38"],[data-native-page="87"],[data-native-page="88"],[data-native-page="89"],[data-native-page="90"],[data-native-page="91"]) .nkbLine{font-family:KbDroid,serif}
 .nkb:is([data-native-page="38"],[data-native-page="87"],[data-native-page="88"],[data-native-page="89"],[data-native-page="90"],[data-native-page="91"]) .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
 @font-face{font-family:KbFira;src:url('/assets/fonts/firasans-latin-500.ttf') format('truetype');font-weight:500;font-display:swap}
 .nkb:is([data-native-page="87"],[data-native-page="88"],[data-native-page="89"],[data-native-page="90"],[data-native-page="91"]) .nkbLine.nkbB{font-weight:500}
 
-.nkb:is([data-native-page="66"],[data-native-page="67"],[data-native-page="68"],[data-native-page="69"],[data-native-page="70"],[data-native-page="71"],[data-native-page="72"],[data-native-page="73"],[data-native-page="74"],[data-native-page="75"],[data-native-page="76"],[data-native-page="77"],[data-native-page="78"],[data-native-page="79"],[data-native-page="80"]) .nkbLine{font-family:KbDroid,serif}
-.nkb:is([data-native-page="66"],[data-native-page="67"],[data-native-page="68"],[data-native-page="69"],[data-native-page="70"],[data-native-page="71"],[data-native-page="72"],[data-native-page="73"],[data-native-page="74"],[data-native-page="75"],[data-native-page="76"],[data-native-page="77"],[data-native-page="78"],[data-native-page="79"],[data-native-page="80"]) .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
-.nkb:is([data-native-page="66"],[data-native-page="67"],[data-native-page="68"],[data-native-page="69"],[data-native-page="70"],[data-native-page="71"],[data-native-page="72"],[data-native-page="73"],[data-native-page="74"],[data-native-page="75"],[data-native-page="76"],[data-native-page="77"],[data-native-page="78"],[data-native-page="79"],[data-native-page="80"]) .nkbLine.nkbB{font-weight:500}
+.nkb:is([data-native-page="66"],[data-native-page="67"],[data-native-page="68"],[data-native-page="69"],[data-native-page="70"],[data-native-page="71"],[data-native-page="72"],[data-native-page="73"],[data-native-page="74"],[data-native-page="75"],[data-native-page="76"],[data-native-page="77"],[data-native-page="78"],[data-native-page="79"],[data-native-page="80"],[data-native-page="82"],[data-native-page="83"],[data-native-page="84"],[data-native-page="85"],[data-native-page="86"]) .nkbLine{font-family:KbDroid,serif}
+.nkb:is([data-native-page="66"],[data-native-page="67"],[data-native-page="68"],[data-native-page="69"],[data-native-page="70"],[data-native-page="71"],[data-native-page="72"],[data-native-page="73"],[data-native-page="74"],[data-native-page="75"],[data-native-page="76"],[data-native-page="77"],[data-native-page="78"],[data-native-page="79"],[data-native-page="80"],[data-native-page="82"],[data-native-page="83"],[data-native-page="84"],[data-native-page="85"],[data-native-page="86"]) .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
+.nkb:is([data-native-page="66"],[data-native-page="67"],[data-native-page="68"],[data-native-page="69"],[data-native-page="70"],[data-native-page="71"],[data-native-page="72"],[data-native-page="73"],[data-native-page="74"],[data-native-page="75"],[data-native-page="76"],[data-native-page="77"],[data-native-page="78"],[data-native-page="79"],[data-native-page="80"],[data-native-page="82"],[data-native-page="83"],[data-native-page="84"],[data-native-page="85"],[data-native-page="86"]) .nkbLine.nkbB{font-weight:500}
 .nkb:is([data-native-page="92"],[data-native-page="93"],[data-native-page="94"],[data-native-page="95"],[data-native-page="96"]) .nkbLine{font-family:KbDroid,serif}
 
 .nkb:is([data-native-page="92"],[data-native-page="93"],[data-native-page="94"],[data-native-page="95"],[data-native-page="96"]) .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
@@ -62,7 +67,8 @@
 .nkb:is([data-native-page="57"],[data-native-page="58"],[data-native-page="59"],[data-native-page="60"],[data-native-page="61"],[data-native-page="62"],[data-native-page="63"],[data-native-page="64"],[data-native-page="65"]) .nkbLine.nkbB{font-weight:500}
 .nkb[data-native-page="58"] .nkbCanvas input[type=text].nkbField[data-native-field^="f4a-"]{border-radius:50%!important;border:1.6px solid #d8c68c!important;background:transparent!important;text-align:center;padding:0!important}
 .nkb[data-native-page="59"] .nkbCanvas input[type=text].nkbField[data-native-field^="f7b-"]{border-radius:50%!important;border:1.6px solid #d8c68c!important;background:transparent!important;text-align:center;padding:0!important}
-.nkb[data-native-page="50"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="51"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="52"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="53"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="55"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="56"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="57"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="58"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="59"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="60"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="61"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="62"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="63"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="64"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="65"] .nkbCanvas input[type=text].nkbField{font-family:KbDroid,serif}
+.nkb[data-native-page="66"] .nkbCanvas input[type=text].nkbField[data-native-field^="f3a-"]{border:1px solid transparent!important;border-radius:50%!important;background:transparent!important;text-align:center;padding:0!important}
+.nkb[data-native-page="10"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="11"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="13"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="15"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="16"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="18"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="19"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="21"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="23"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="24"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="26"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="27"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="28"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="30"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="31"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="32"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="34"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="35"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="37"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="38"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="39"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="40"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="42"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="43"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="46"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="47"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="48"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="49"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="50"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="51"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="53"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="54"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="58"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="59"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="66"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="67"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="69"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="70"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="72"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="74"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="75"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="76"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="77"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="79"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="81"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="83"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="84"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="86"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="87"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="88"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="89"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="90"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="91"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="92"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="93"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="94"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="95"] .nkbCanvas input[type=text].nkbField,.nkb[data-native-page="96"] .nkbCanvas input[type=text].nkbField{font-family:KbDroid,serif}
 .nkb[data-native-page="55"] .nkbCanvas input[type=radio].nkbField{--answer-cross-size:56%!important;outline-offset:-2px}
 .nkb[data-native-page="56"] .nkbCanvas select.nkbField[data-native-field^="st"]{appearance:none;-webkit-appearance:none;border:0!important;border-radius:50%!important;background:transparent!important;text-align:center;text-align-last:center;padding:0!important;cursor:pointer;color:#173c62!important}
 
@@ -143,8 +149,25 @@
 .kb42Answers h3{font:500 17px/1.4 KbFira,sans-serif;margin:18px 0 6px}.kb42Answers p{margin:0 0 12px}.kb42Answers label{display:block;font-size:14px}
 .kb42Answers textarea{display:block;box-sizing:border-box;width:100%;min-height:80px;margin:5px 0 0;resize:vertical}
 .kb42Answers input,.kb42Answers textarea{border:1px solid #899383;border-radius:3px;background:#fffefb;color:#173c62;font:16px/1.3 KbDroid,serif;padding:5px;min-width:0}
-.kb42Table{width:100%;display:grid;gap:7px}.kb42Head,.kb42Row{display:grid;grid-template-columns:16px minmax(0,1fr) minmax(0,1.1fr) minmax(0,2.4fr) minmax(0,1.15fr);gap:5px;align-items:center}.kb42Head{font-size:13px;color:#4b5143}.kb42Row input{width:100%;box-sizing:border-box}.kb42Row input.ok{outline:2px solid #268250}.kb42Row input.bad{outline:2px solid #bd3838}.kb42Check{display:flex;align-items:center;gap:12px;margin:12px 0 0}.kb42Check output{font:14px KbFira,sans-serif;color:#28553c}
-@media(max-width:500px){.kb42Answers{padding:12px}.kb42Row{grid-template-columns:16px minmax(0,1fr) minmax(0,1fr);gap:5px}.kb42Row>input:nth-child(4){grid-column:2 / 4}.kb42Row>input:nth-child(5){grid-column:2 / 4}.kb42Row{padding-bottom:10px;border-bottom:1px solid #e4dfc9}.kb42Head{display:none}.kb42Row input{min-height:36px}.kb42Answers h3{font-size:16px}}
+.kb42Table{width:100%;display:grid;gap:7px}.kb42Head,.kb42Row{display:grid;grid-template-columns:16px minmax(0,1fr) minmax(0,1.1fr) minmax(0,2.4fr) minmax(0,1.15fr);gap:5px;align-items:center}.kb42Head{font-size:13px;color:#4b5143}.kb42Row input{width:100%;box-sizing:border-box}.kb42Row input.ok{outline:2px solid #268250}.kb42Row input.bad{outline:2px solid #bd3838}.kb42Acts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:0 0 4px}.kb42Acts label{display:flex;align-items:center;gap:6px}.kb42Acts label>span{font:500 14px KbFira,sans-serif;color:#4b5143;min-width:12px}.kb42Acts input{width:100%;box-sizing:border-box}.kb42Acts input.ok{outline:2px solid #268250}.kb42Acts input.bad{outline:2px solid #bd3838}
+.kb42Check{display:flex;align-items:center;gap:12px;margin:12px 0 0}.kb42Check output{font:14px KbFira,sans-serif;color:#28553c}
+/* Generic JSON-driven writing panel (NativeWritingPanel), same look as the p42 panel. */
+.nkbWritePanel{box-sizing:border-box;max-width:100%;margin:12px auto 20px;padding:14px 18px;background:#fffef7;color:#201f1d;border:1px solid #d6d0b7;font:16px/1.4 KbDroid,serif}
+.nkbWritePanel[hidden]{display:none}
+.nkbWritePanel .nkbPanelHead{display:flex;align-items:center;gap:10px;padding:0 0 10px;border-bottom:3px solid #e7df58;font:500 17px KbFira,sans-serif}
+.nkbWritePanel .nkbPanelHead>span,.nkbWritePanel h3 b{display:inline-block;background:#286296;color:white;padding:1px 7px;font:500 16px KbFira,sans-serif}
+.nkbWritePanel h3{font:500 17px/1.4 KbFira,sans-serif;margin:18px 0 6px}.nkbWritePanel p{margin:0 0 12px}
+.nkbWritePanel label{display:flex;align-items:center;gap:8px;font-size:14px;margin:7px 0}
+.nkbWritePanel label>span{flex:0 0 auto;min-width:64px}
+.nkbWritePanel input,.nkbWritePanel textarea{border:1px solid #899383;border-radius:3px;background:#fffefb;color:#173c62;font:16px/1.3 KbDroid,serif;padding:5px;min-width:0;flex:1 1 auto}
+.nkbWritePanel textarea{display:block;box-sizing:border-box;width:100%;min-height:80px;margin:5px 0 0;resize:vertical;white-space:pre-wrap}
+.nkbWritePanel textarea.nkbLine1{min-height:34px;field-sizing:content;resize:none;overflow:hidden}
+.nkbWritePanel input.ok,.nkbWritePanel textarea.ok{outline:2px solid #268250}
+.nkbWritePanel input.bad,.nkbWritePanel textarea.bad{outline:2px solid #bd3838}
+.nkbWritePanel .nkbPanelCheck{display:flex;align-items:center;gap:12px;margin:12px 0 0}
+.nkbWritePanel .nkbPanelCheck output{font:14px KbFira,sans-serif;color:#28553c}
+@media(max-width:500px){.nkbWritePanel{padding:12px}.nkbWritePanel h3{font-size:16px}.nkbWritePanel label{flex-direction:column;align-items:stretch;gap:3px}}
+@media(max-width:500px){.kb42Answers{padding:12px}.kb42Acts{grid-template-columns:repeat(2,minmax(0,1fr))}.kb42Acts input{min-height:36px}.kb42Row{grid-template-columns:16px minmax(0,1fr) minmax(0,1fr);gap:5px}.kb42Row>input:nth-child(4){grid-column:2 / 4}.kb42Row>input:nth-child(5){grid-column:2 / 4}.kb42Row{padding-bottom:10px;border-bottom:1px solid #e4dfc9}.kb42Head{display:none}.kb42Row input{min-height:36px}.kb42Answers h3{font-size:16px}}
 .nkb[data-native-page="42"] input[data-native-field^="t4a"].nkbField{border-radius:50%!important;border:1px solid #c5bd8d!important;background:#fffef7!important;padding:0!important;text-align:center}
 
 .kb42Answers input::placeholder{font:12px KbFira,sans-serif;color:#72796e;opacity:1}
@@ -187,3 +210,50 @@
 .nkb[data-native-page="41"] .nkbLine{font-family:KbDroid,serif}
 .nkb[data-native-page="41"] .nkbLine:is(.nkbB,.nkbSans){font-family:KbFira,sans-serif}
 .nkb[data-native-page="41"] .nkbLine.nkbB{font-weight:500}
+.nkb[data-native-page="75"] .nkbCanvas input[type=text].nkbField.nkbUl:not(.ok):not(.bad){border-bottom:1.5px solid #a39d85!important}
+.nkb[data-native-page="77"] .nkbCanvas input[type=text].nkbField.nkbUl:not(.ok):not(.bad){border-bottom:1.5px solid #a39d85!important}
+.nkb[data-native-page="27"] input.nkbField[data-native-field^="p6-"]{font-size:1.5cqw!important}
+/* tap-to-mark spots over printed words (data.marks) */
+.nkbMark{position:absolute;z-index:9;background:transparent;border:0;border-radius:8%;cursor:pointer;padding:0;margin:0!important;min-width:0!important;min-height:0!important}
+.nkbMark.on{background:rgba(255,245,56,.5)}
+.nkbMark.good{background:rgba(46,160,67,.45)}
+.nkbMark.bad{background:rgba(208,58,58,.45)}
+.nkbMark.miss{outline:2px dashed rgba(208,58,58,.75);outline-offset:1px}
+/* p27: X marks centred on the printed rings (boxes carry invisible hit padding); no tap-focus ring from the enlarged boxes. */
+.nkb[data-native-page="27"] .nkbCanvas input:is([type=radio],[type=checkbox]).nkbField:focus:not(:focus-visible){outline:0}
+.nkb[data-native-page="27"] .nkbCanvas input[type=radio][data-native-field="pron-er"].nkbField{--answer-cross-size:15px!important;background-position:68% 81%!important}
+.nkb[data-native-page="27"] .nkbCanvas input[type=radio][data-native-field="pron-es"].nkbField{--answer-cross-size:15px!important;background-position:68% 81%!important}
+.nkb[data-native-page="27"] .nkbCanvas input[type=radio][data-native-field="pron-sie"].nkbField{--answer-cross-size:15px!important;background-position:68% 54%!important}
+
+.nkbPaint{position:absolute;touch-action:none;opacity:.45;cursor:crosshair;z-index:5}.nkbPaintTools{position:absolute;display:flex;flex-wrap:wrap;gap:0.5cqw;z-index:5;align-items:center}.nkbPaintTools button{font-size:1.1cqw;font-family:Arial,sans-serif;line-height:1;padding:0.35cqw 0.6cqw;margin:0;min-width:0;min-height:0;border:1px solid #b9b2a0;background:#fffdf5;color:#35402f;border-radius:2px;cursor:pointer}
+
+.nkb29Ring{position:absolute;z-index:4;border:2px solid #335b98;border-radius:50%;pointer-events:none;box-sizing:border-box;transform:rotate(3deg)}.nkb29Mark{position:absolute;z-index:5;background:transparent;border:0;padding:0;margin:0;min-width:0;min-height:0;cursor:pointer;border-radius:50%}.nkb29Mark.on::after{content:'';position:absolute;inset:1px;border:2px solid #335b98;border-radius:50%;transform:rotate(-4deg)}
+.nkbPaintPen{opacity:1}
+.nkb36Open{position:absolute;right:7.08%;bottom:61.58%;z-index:6;font-family:Arial,sans-serif;font-size:13px;line-height:1;padding:4px 10px;min-height:36px;border:1.5px solid #8a7a58;border-radius:6px;background:#fffdf5;color:#4a3f28;cursor:pointer;box-shadow:0 1px 3px #0002}
+@media (max-width:900px){.nkb36Open{min-height:47px;font-size:17px}}
+@media (max-width:700px){.nkb36Open{min-height:60px;font-size:22px}}
+@media (max-width:500px){.nkb36Open{min-height:84px;font-size:30px;padding:8px 18px}}
+@media (max-width:380px){.nkb36Open{min-height:102px}}
+.nkb36BackdropF{position:fixed;inset:0;z-index:999;background:rgba(30,25,15,.18)}
+.nkb36PanelF{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:min(560px,92vw);max-height:85vh;overflow-y:auto;z-index:1000;display:flex;flex-wrap:wrap;gap:12px;background:#fffef9;border:1.5px solid #b9a77e;border-radius:10px;box-shadow:0 8px 30px #0004;padding:34px 14px 14px;font-family:Arial,sans-serif}
+.nkb36Close{position:absolute;top:2px;right:6px;min-width:36px;min-height:36px;border:0;background:transparent;font-size:24px;line-height:1;color:#6b5b3e;cursor:pointer;padding:0}
+.nkb36Group{flex:1 1 160px;min-width:160px}
+.nkb36GroupLabel{font-size:13px;font-weight:700;color:#4a3f28;margin:0 0 5px}
+.nkb36PanelF select.nkb36Cell{display:block;width:100%;min-height:40px;font-size:15px;margin:0 0 8px;border:1.5px solid #7aa7c7;border-radius:4px;background:#fff;padding:0 6px;color:#1d1c1a}
+.nkb36Check{position:static;display:flex;align-items:center;gap:8px;flex-basis:100%;font-size:15px}
+.nkbPaintToolsPen{align-items:flex-start}
+@media (max-width:900px){.nkbPaintToolsPen button{min-height:47px;font-size:16px}}
+@media (max-width:700px){.nkbPaintToolsPen button{min-height:60px;font-size:20px}}
+@media (max-width:500px){.nkbPaintToolsPen button{min-height:84px;font-size:26px;padding:6px 14px}}
+@media (max-width:380px){.nkbPaintToolsPen button{min-height:102px}}
+.nkbPaintFab{display:none}
+@media (max-width:500px){
+ .nkbPaintToolsMap{display:none}
+ .nkbPaintFab{display:block;position:fixed;right:10px;bottom:70px;z-index:998;min-height:44px;padding:0 16px;font:600 15px Arial,sans-serif;border-radius:22px;border:1.5px solid #8a7a58;background:#fffdf5;color:#4a3f28;box-shadow:0 2px 8px #0003;cursor:pointer}
+}
+.nkbPaintBackdrop{position:fixed;inset:0;z-index:999;background:transparent}
+.nkbPaintMenu{position:fixed;right:10px;bottom:126px;z-index:1000;display:flex;flex-direction:column;gap:8px;min-width:200px;background:#fffef9;border:1.5px solid #b9a77e;border-radius:10px;padding:10px;box-shadow:0 8px 30px #0004;font-family:Arial,sans-serif}
+.nkbPaintMenu button{min-height:44px;font-size:15px;text-align:left;padding:0 12px;border:1px solid #d8cfb8;border-radius:6px;background:#fffdf5;color:#35402f;cursor:pointer}
+.nkbPaintFab{display:none;align-items:center;gap:8px}
+.nkbPaintFabDot{display:inline-block;width:16px;height:16px;border-radius:50%;border:1px solid #0003}
+@media (max-width:500px){.nkbPaintFab{display:inline-flex}}

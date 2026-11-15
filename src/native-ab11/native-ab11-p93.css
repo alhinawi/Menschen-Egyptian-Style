@@ -1,0 +1,40 @@
+@font-face{font-family:P93Serif;src:url('/assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:P93Sans;src:url('/assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:P93Sans;src:url('/assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700;font-display:swap}
+.ab11p93{position:relative;width:100%;height:100%;background:white}
+.page:has(.ab11p93){padding:0!important}
+.ab11p93Canvas{position:absolute;left:50%;top:50%;width:901px;height:1275px;transform-origin:center;background:#fff;color:#242420;font-family:P93Serif,Georgia,serif}
+.ab11p93Canvas .p93Text{position:absolute;white-space:pre;line-height:1.32;margin:0;padding:0}
+.ab11p93Canvas .p93Sans{font-family:P93Sans,sans-serif}
+.ab11p93Canvas .tapWord{padding:0!important;margin:0!important}
+.ab11p93Canvas .p93Art{position:absolute;max-width:none!important;max-height:none!important;object-fit:fill!important;margin:0!important}
+.ab11p93Canvas .p93Line{position:absolute;height:1px}
+.ab11p93Canvas .p93Highlight{position:absolute;background:#fffdd1}
+.ab11p93Canvas .p93Badge{position:absolute;box-sizing:border-box;background:#e94d12;color:white;border:1px solid #c85627;font:700 21px/19px P93Serif,serif;text-align:center}
+.ab11p93Canvas .p93Side{position:absolute;writing-mode:vertical-rl;transform:rotate(180deg);font:700 10px P93Sans,sans-serif;color:#263f61}
+.ab11p93Canvas .p93Speaker{position:absolute;width:8px;height:8px;background:#080b83}
+.ab11p93Canvas .p93Speaker.green{width:0;height:0;background:transparent;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:9px solid #159e2e}
+.ab11p93Canvas .p93Field{position:absolute;box-sizing:border-box;min-width:0!important;min-height:0!important;max-width:none!important;margin:0!important;border:0!important;border-bottom:1px solid #a5aaa7!important;border-radius:0!important;padding:0 2px!important;font:var(--p93-answer-size,15px)/1.2 P93Serif,serif!important;color:#28496f;background:transparent!important;outline-offset:1px}
+.ab11p93Canvas .p93Field.correct{color:#18773c!important;border-bottom-color:#18773c!important}
+.ab11p93Canvas .p93Field.wrong{color:#b62626!important;border-bottom-color:#b62626!important}
+.ab11p93Canvas .p93Check{position:absolute;display:flex;gap:7px;align-items:center;white-space:nowrap}
+.ab11p93Canvas .p93Check button{min-height:20px!important;font:11px P93Sans,sans-serif;padding:2px 7px!important;margin:0!important;border:1px solid #8b9586;border-radius:3px;background:#fff;color:#31532c}
+.ab11p93Canvas .p93Check output{font:11px P93Sans,sans-serif;color:#555}
+
+.ab11p93Canvas .p93Title [data-word="sein"],.ab11p93Canvas .p93Title [data-word="haben"]{font-style:italic}
+.ab11p93Canvas .p93Text:has([data-word="KB"]){color:#33849c}
+
+.ab11p93Canvas .p93Title [data-word="war"],.ab11p93Canvas .p93Title [data-word="hatte"],.ab11p93Canvas .p93Title [data-word="aus"],.ab11p93Canvas .p93Title [data-word="in"],.ab11p93Canvas .p93Title [data-word="nach"]{font-style:italic}
+.ab11p93Canvas .p93Text:has([data-word="KB"]){color:#33849c}
+.ab11p93Canvas .p93Radio{position:absolute;appearance:none!important;box-sizing:border-box;min-height:0!important;min-width:0!important;max-width:none!important;border:1.5px solid #dedec7!important;border-radius:50%!important;background:transparent!important;padding:0!important;margin:0!important;color:#35549c;cursor:pointer}
+.ab11p93Canvas .p93Radio:checked:after{content:'×';position:absolute;inset:-2px 0 0;font:16px/14px P93Sans;text-align:center;color:currentColor}
+.ab11p93Canvas .p93Radio.correct{color:#18773c!important;border-color:#18773c!important}
+.ab11p93Canvas .p93Radio.wrong{color:#b62626!important;border-color:#b62626!important}
+.ab11p93Canvas .p93Open{resize:none;line-height:18px!important;border-bottom:0!important}
+
+.ab11p93Canvas .p93NotebookField{border:0!important;transform:rotate(-1.2deg);transform-origin:left bottom}
+
+
+.ab11p93Canvas .p93card{position:absolute;background:#f8fcfb;border-bottom:1px dotted #deded6}.ab11p93Canvas .p93tip{position:absolute;border-top:5px solid #bd940b;border-left:12px solid #bd940b}.ab11p93Canvas .p93bubble{position:absolute;border-bottom:3px solid #fafbe8;border-radius:50%}.ab11p93Canvas .p93Audio{position:absolute;font:10px P93Sans;color:#299cc3}.ab11p93Canvas .p93Open{font:13px/18px P93Serif!important}
+@font-face{font-family:P93Serif;src:url('/assets/fonts/droid-serif-400-italic.ttf') format('truetype');font-style:italic;font-weight:400;font-display:swap}@font-face{font-family:P93Serif;src:url('/assets/fonts/droid-serif-700.woff2') format('woff2');font-weight:700;font-display:swap}
+.ab11p93Canvas .p93Audio{border:0!important;background:transparent!important;min-height:0!important;padding:0!important;margin:0!important;border-radius:0!important;font:10px P93Sans!important;color:#299cc3!important}

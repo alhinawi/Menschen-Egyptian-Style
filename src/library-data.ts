@@ -43,7 +43,7 @@ export const MODULES: Record<string, ModuleInfo> = {
   'ab1': {slug: 'ab1', book: 'ab', level: 'A1.1', lessons: [lesson(1, range(6, 11))], extras: []},
   'ab2': {slug: 'ab2', book: 'ab', level: 'A1.1', lessons: [lesson(2, range(12, 17))], extras: []},
   'ab3': {slug: 'ab3', book: 'ab', level: 'A1.1', lessons: [lesson(3, range(18, 23))], extras: []},
-  'abm1': {slug: 'abm1', book: 'ab', level: 'A1.1', lessons: [lesson('Modul-Plus 1', range(24, 28))], extras: []},
+  'abm1': {slug: 'abm1', book: 'ab', level: 'A1.1', lessons: [lesson('Modul-Plus 1', range(24, 29))], extras: []},
   'ab4-6': {slug: 'ab4-6', book: 'ab', level: 'A1.1', lessons: [lesson(4, range(30, 35)), lesson(5, range(36, 41)), lesson(6, range(42, 47)), lesson('Modul-Plus', range(48, 53))], extras: []},
   'ab-l7-9': {slug: 'ab-l7-9', book: 'ab', level: 'A1.1', lessons: [lesson(7, range(54, 59)), lesson(8, range(60, 65)), lesson(9, range(66, 71)), lesson('Modul-Plus', range(72, 77))], extras: []},
   'ab-l10-12': {slug: 'ab-l10-12', book: 'ab', level: 'A1.1', lessons: [lesson(10, range(78, 83)), lesson(11, range(84, 89)), lesson(12, range(90, 95)), lesson('Modul-Plus', range(96, 101))], extras: []},

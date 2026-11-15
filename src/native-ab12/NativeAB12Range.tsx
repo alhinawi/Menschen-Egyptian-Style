@@ -8,7 +8,7 @@ import '../components/native-ab12.css';
 import './native-ab12-range.css';
 
 type Item={k:string;[key:string]:any};
-type Spec={w:number;h:number;items:Item[]};
+type Spec={w:number;h:number;items:Item[];css?:string};
 const specs:Record<string,Spec>=import.meta.glob('./range/p*.json',{eager:true,import:'default'});
 const normalize=(s:string)=>s.normalize('NFC').trim().toLocaleLowerCase('de').replace(/[.!?]+$/,'').replace(/\s+/g,' ');
 function Words({text}:{text:string}){return <>{text.split(/(\s+)/).map((w,i)=>/\p{L}/u.test(w)?<span key={i} className="tapWord" role="button" tabIndex={0} data-word={w.replace(/^[^\p{L}]+|[^\p{L}]+$/gu,'')} data-phrase={text}>{w}</span>:w)}</>}
@@ -27,9 +27,10 @@ export function NativeAB12Range({page}:{page:string}){
  const [scale,ss]=useState(.4);
  const [values,sv]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return {}}});
  const [results,sr]=useState<Record<string,boolean>>({});
+ const [saved,sn]=useState<Record<string,boolean>>({});
  const [epoch,se]=useState(0);
  useLayoutEffect(()=>{const el=root.current!;const obs=new ResizeObserver(()=>ss(Math.min(el.clientWidth/W,(el.clientHeight-38)/H)));obs.observe(el);return ()=>obs.disconnect()},[W,H]);
- usePageReset(page,key,()=>{sv({});sr({});se(e=>e+1)});
+ usePageReset(page,key,()=>{sv({});sr({});sn({});se(e=>e+1)});
  const set=(id:string,v:string)=>sv(o=>{const n={...o,[id]:v};localStorage.setItem(key,JSON.stringify(n));return n});
  const choose=(it:Item,checked:boolean)=>sv(o=>{const n={...o};
   if(!it.cb&&it.name)for(const peer of spec.items.filter(i=>i.k==='d'&&!i.cb&&(i.name||i.id)===(it.name||it.id)))delete n[peer.id];
@@ -38,10 +39,16 @@ export function NativeAB12Range({page}:{page:string}){
  const ok=(i:Item)=>{const v=values[i.id]||'';if(i.k==='f')return String(i.a).split('|').some(a=>normalize(a)===normalize(v));if(i.k==='w')return (v==='1')===!!i.a;if(i.k==='mk')return v===i.a;if(i.k==='d')return i.cb?(v==='true')===(i.a===true):(i.a===true?v===i.v:v!==i.v);return true};
  const radioAnswers=(g:string):Record<string,string>|undefined=>{
   const items=spec.items.filter(i=>i.g===g&&i.a!==undefined);
-  if(!items.some(i=>i.k==='d'))return undefined;
-  return Object.fromEntries(items.flatMap(i=>i.k==='d'?(i.cb?[[i.id,String(i.a)]]:i.a===true?[[i.name||i.id,i.id+'::'+i.v]]:[]):i.k==='f'?[[i.id,String(i.a)]]:[]));
+  return Object.fromEntries(items.flatMap(i=>i.k==='d'?(i.cb?[[i.id,String(i.a)]]:i.a===true?[[i.name||i.id,i.id+'::'+i.v]]:[]):i.k==='f'?[[i.id,String(i.a)]]:i.k==='w'?[[i.id,String(!!i.a)]]:i.k==='mk'?[[i.id,String(i.a)]]:[]));
  };
- const grade=(g:string)=>{const its=spec.items.filter(i=>i.g===g&&i.a!==undefined&&i.a!=='');sr(r=>({...r,[g]:its.length>0&&its.every(ok)}))};
+ const grade=(g:string)=>{const its=spec.items.filter(i=>i.g===g&&i.a!==undefined&&(i.k==='mk'||i.a!==''));
+  let good=its.length>0&&its.filter(i=>!(i.k==='f'&&i.set)).every(ok);
+  const keys=its.filter(i=>i.k==='f'&&i.set).map(i=>String(i.set)).filter((v,n,a)=>a.indexOf(v)===n);
+  for(const key of keys){const fs=its.filter(i=>i.k==='f'&&i.set===key);
+   const words=fs.flatMap(i=>String(values[i.id]||'').split(',')).map(normalize).filter(Boolean).sort();
+   const ans=fs.flatMap(i=>String(i.a).split('|').map(normalize)).filter((v,n,a)=>a.indexOf(v)===n).sort();
+   if(words.join('\n')!==ans.join('\n')){good=false;break}}
+  sr(r=>({...r,[g]:good}))};
  const render=(it:Item,n:number)=>{
   switch(it.k){
    case 't':return <div key={n} className={'naText naR '+(it.c||'')+(it.b?' naRBold':'')+(it.i?' naRIt':'')} style={{left:it.x,top:it.y-.84*(it.s||dfs),fontSize:it.s||dfs,color:it.col,['--naRs' as any]:(it.s||dfs)+'px'}}><Fit it={it}/></div>;
@@ -52,15 +59,15 @@ export function NativeAB12Range({page}:{page:string}){
    case 'a':return <PageImage key={n} className="naArt" src={`assets/book-crops/native-ab12-p${page}-${it.n}.png`} alt={it.alt||('Originalillustration '+it.n)} style={{left:it.x,top:it.y,width:it.w,height:it.h}}/>;
    case 'ti':return <div key={n} className="naRTitle" style={{left:it.x,top:it.y}}><span className="naRBadge" style={{width:it.bw||27,height:it.bh||27,background:it.col,lineHeight:(it.bh||27)+'px'}}>{it.n}</span></div>;
    case 'd':return <input key={n} className={'naDot naRDot'+(it.lt?' naRDotL':'')} type={it.cb?'checkbox':'radio'} aria-label={it.l} data-native-field={it.name?it.id:undefined} data-value={it.name?(it.cb?'true':it.id+'::'+it.v):undefined} name={key+'-'+(it.name||it.id)} checked={it.cb?values[it.id]==='true':values[it.id]===it.v} onChange={e=>choose(it,e.target.checked)} style={{left:it.x,top:it.y,width:it.s||24,height:it.s||24}}/>;
-   case 'chk':return <div key={n} className="naCheck" style={{left:it.x,top:it.y}}><CheckButton answers={radioAnswers(it.g)} onClick={()=>grade(it.g)}></CheckButton><output aria-live="polite">{it.g in results?(results[it.g]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+   case 'chk':return it.neutral?null:<div key={n} className={'naCheck'+(it.stack?' naStack':'')} data-check-layout={it.stack?'stack':undefined} style={{left:it.x,top:it.y}}><CheckButton answers={radioAnswers(it.g)} onClick={()=>grade(it.g)}></CheckButton><output aria-live="polite">{it.g in results?(results[it.g]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
    case 'bx':return <div key={n} className="naRBx" style={{left:it.x,top:it.y,width:it.w,height:it.h,background:it.bg,border:it.bd?('1.5px solid '+it.bd):undefined,boxSizing:'border-box'}}/>;
-   case 'w':return <button key={n} type="button" className={'naRWord'+(values[it.id]==='1'?' on':'')} aria-pressed={values[it.id]==='1'} aria-label={'Durchstreichen: '+it.l} style={{left:it.x-3,top:it.y-21,width:it.w+6,height:27}} onClick={()=>set(it.id,values[it.id]==='1'?'0':'1')}/>;
-   case 'mk':return <button key={n} type="button" className={'naRMk'+(values[it.id]?' '+values[it.id]:'')} aria-label={'Markieren: '+it.l} style={{left:it.x,top:it.y,width:it.w,height:it.h}} onClick={()=>set(it.id,values[it.id]==='b'?'g':values[it.id]==='g'?'':'b')}/>;
+   case 'w':return <button key={n} type="button" data-native-field={it.id} data-value={values[it.id]==='1'?'true':'false'} className={'naRWord'+(values[it.id]==='1'?' on':'')} aria-pressed={values[it.id]==='1'} aria-label={'Durchstreichen: '+it.l} style={{left:it.x-3,top:it.y-21,width:it.w+6,height:27}} onClick={()=>set(it.id,values[it.id]==='1'?'0':'1')}/>;
+   case 'mk':return <button key={n} type="button" data-native-field={it.id} data-value={values[it.id]||''} className={'naRMk'+(values[it.id]?' '+values[it.id]:'')} aria-label={'Markieren: '+it.l} style={{left:it.x,top:it.y,width:it.w,height:it.h}} onClick={()=>set(it.id,values[it.id]==='b'?'g':values[it.id]==='g'?'':'b')}/>;
    case 'au':return <button key={n} className="naAudio naRAudio" style={{left:it.x,top:it.y,width:it.w,height:it.h}} aria-label={'Originalaudio '+it.l+' abspielen'} onClick={()=>{if(player.current){player.current.src=it.src;player.current.play().catch(()=>{})}}}>{it.n?<PageImage src={`assets/book-crops/native-ab12-p${page}-${it.n}.png`} alt="" style={{width:'100%',height:'100%',display:'block'}}/>:'▶ '+it.l}</button>;
    case 'm':return <LineMatching key={n+'-'+epoch} id={it.id} width={W} height={H} {...it.p} values={Object.fromEntries(Object.entries(values).filter(([k])=>k.startsWith(it.id+'-')))} onMatch={(k,v)=>set(k,v)}/>;
    default:return null;
   }
  };
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:FiraSansCond;src:url('assets/fonts/firasanscond-latin-400.woff2') format('woff2');font-weight:400}"}</style><div className="naCanvas naRCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>{spec.items.map(render)}</div><audio ref={player} className="naPlayer"/></div>;
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{"@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:FiraSansCond;src:url('assets/fonts/firasanscond-latin-400.woff2') format('woff2');font-weight:400}"}</style>{spec.css?<style>{spec.css}</style>:null}<div className="naCanvas naRCanvas" style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>{spec.items.map(render)}</div><audio ref={player} className="naPlayer"/></div>;
 }
 export const hasRangePage=(page:string)=>!!specs[`./range/p${page}.json`];

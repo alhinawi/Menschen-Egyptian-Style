@@ -23,6 +23,7 @@ export function NativeAB12P21_24({page}:{page:string}){
  const stext=(x:number,y:number,w:number,t:string,cls='')=><div className={'naSans2 '+cls} style={{left:x,top:y,width:w}}><Words text={t}/></div>;
  const rich=(x:number,y:number,w:number,parts:(string|number)[],cls='')=><div className={'naText '+cls} style={{left:x,top:y,width:w}}>{parts.map((p,i)=>typeof p==='string'?<Words key={i} text={p}/>:<span key={i} className="naULine" style={{width:p}}/>)}</div>;
  const field=(id:string,x:number,y:number,w:number,label:string,cls='')=><input className={'naField '+cls} aria-label={label} data-native-field={id} style={{left:x,top:y,width:w}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
+ const kw=(id:string,x:number,y:number,n:number)=><div className="naKwRow" style={{left:x,top:y}}>{Array.from({length:n},(_,i)=><input key={i} aria-label={id+' Buchstabe '+(i+1)} data-native-field={id+'-'+(i+1)} maxLength={1} value={(values[id]||'')[i]?.trim()||''} onChange={e=>{const a=(values[id]||'').padEnd(n,' ').split('').slice(0,n);a[i]=e.target.value.toLocaleUpperCase('de');set(id,a.join(''));if(e.target.value)(e.currentTarget.nextElementSibling as HTMLInputElement)?.focus()}}/>)}</div>;
  const dot=(id:string,value:string,x:number,y:number,label:string,cls='')=><input type="radio" className={'naDot '+cls} name={key+'-'+id} aria-label={label} data-native-field={id} data-value={value} style={{left:x,top:y}} checked={values[id]===value} onChange={()=>set(id,value)}/>;
  const check=(id:string,x:number,y:number,answers:Record<string,string>,cls='')=><div className={'naCheck '+cls} data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,t:string,cls='')=><div className={'naTitle '+cls} style={{left:x,top:y,width:w}}><b>{n}</b><Words text={t}/></div>;
@@ -61,6 +62,8 @@ export function NativeAB12P21_24({page}:{page:string}){
   {art('row2-ex',170,675,206,31)}
   {text(180,713,20,'3.','naSmall')}
   {text(180,743,20,'…','naSmall')}
+  {field('p21-f3w',205,708,140,'Zeile 3 Was','naFieldBlank')}{field('p21-f3a',357,708,174,'Zeile 3 Ich','naFieldBlank')}{field('p21-f3b',539,708,174,'Zeile 3 Partner A','naFieldBlank')}{field('p21-f3c',721,708,175,'Zeile 3 Partner B','naFieldBlank')}
+  {field('p21-f4w',205,737,140,'Zeile 4 Was','naFieldBlank')}{field('p21-f4a',357,737,174,'Zeile 4 Ich','naFieldBlank')}{field('p21-f4b',539,737,174,'Zeile 4 Partner A','naFieldBlank')}{field('p21-f4c',721,737,175,'Zeile 4 Partner B','naFieldBlank')}
   {art('bubble1',125,782,209,89)}
   {art('bubble2',378,788,483,98)}
   {text(108,931,371,'TRAINING: AUSSPRACHE','naHead2 naH30')}
@@ -279,6 +282,8 @@ export function NativeAB12P21_24({page}:{page:string}){
   {text(394,486,160,'Auto','naF185')}
   {text(394,512,160,'Blumen','naF185')}
   {text(394,537,160,'Bett','naF185')}
+  {field('p24-2-couch',562,380,95,'Couch zuordnen','naFieldBlank naF14')}{field('p24-2-toilette',562,406,95,'Toilette zuordnen','naFieldBlank naF14')}{field('p24-2-computer',562,431,95,'Computer zuordnen','naFieldBlank naF14')}{field('p24-2-kuehlschrank',562,457,95,'Kühlschrank zuordnen','naFieldBlank naF14')}{field('p24-2-auto',562,482,95,'Auto zuordnen','naFieldBlank naF14')}{field('p24-2-bett',562,533,95,'Bett zuordnen','naFieldBlank naF14')}
+  {check('g4',878,540,{'p24-2-couch':'Wohnzimmer|das Wohnzimmer','p24-2-toilette':'Bad|das Bad','p24-2-computer':'Arbeitszimmer|das Arbeitszimmer','p24-2-kuehlschrank':'Küche|Kueche|die Küche|die Kueche','p24-2-auto':'Garage|die Garage','p24-2-bett':'Schlafzimmer|das Schlafzimmer'})}
   {art('ex2-curve',238,490,156,41)}
   {title('3',123,600,900,'Wo wohnt Charlotte? Lösen Sie das Rätsel.','naRB naT18')}
   {rich(160,636,520,['Charlotte wohnt in der Stadtmitte, direkt im ',48,' (1) ',38,'.'])}
@@ -287,6 +292,8 @@ export function NativeAB12P21_24({page}:{page:string}){
   {rich(160,714,520,['Ihr Vermieter ist sehr nett und die ',26,' (3) ',36,' ist günstig.'])}
   {rich(160,740,520,['Neben ihr wohnt Frau Thiele, das ist ihre ',40,' (5) ',36,'.'])}
   {art('kreuzwort',158,780,417,182)}
+  {kw('p24-3w1',285,784,7)}{kw('p24-3w2',253,811,5)}{kw('p24-3w3',253,866,5)}{kw('p24-3w4',189,894,5)}{kw('p24-3w5',189,922,9)}
+  {check('g5',878,855,{'p24-3w1':'Zentrum','p24-3w2':'Küche|Kueche','p24-3w3':'Miete','p24-3w4':'Stock','p24-3w5':'Nachbarin'})}
   {text(591,920,75,'Lösung:')}
   {text(667,920,300,'Charlotte wohnt in der','naF192')}
   {text(663,952,110,'Schweiz, in')}

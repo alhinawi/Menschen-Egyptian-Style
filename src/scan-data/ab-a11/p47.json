@@ -945,16 +945,586 @@
    "phrase": "tab"
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "u1-l1",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Im Büro 1",
+   "x": 373,
+   "y": 289,
+   "w": 178,
+   "h": 23
+  },
+  {
+   "id": "u1-l2",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Im Büro 2",
+   "x": 373,
+   "y": 314,
+   "w": 178,
+   "h": 23
+  },
+  {
+   "id": "u1-l3",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Im Büro 3",
+   "x": 373,
+   "y": 339,
+   "w": 178,
+   "h": 23
+  },
+  {
+   "id": "u1-l4",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Im Büro 4",
+   "x": 373,
+   "y": 364,
+   "w": 178,
+   "h": 23
+  },
+  {
+   "id": "u1-l5",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Im Büro 5",
+   "x": 373,
+   "y": 389,
+   "w": 178,
+   "h": 23
+  },
+  {
+   "id": "u1-l6",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Im Büro 6",
+   "x": 373,
+   "y": 414,
+   "w": 178,
+   "h": 23
+  },
+  {
+   "id": "u1-l7",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Im Büro 7",
+   "x": 373,
+   "y": 439,
+   "w": 178,
+   "h": 23
+  },
+  {
+   "id": "u1-l8",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Im Büro 8",
+   "x": 373,
+   "y": 464,
+   "w": 178,
+   "h": 23
+  },
+  {
+   "id": "u1-l9",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Im Büro 9",
+   "x": 373,
+   "y": 489,
+   "w": 178,
+   "h": 23
+  },
+  {
+   "id": "u1-l10",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Im Büro 10",
+   "x": 373,
+   "y": 514,
+   "w": 178,
+   "h": 23
+  },
+  {
+   "id": "u1-l11",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Im Büro 11",
+   "x": 373,
+   "y": 539,
+   "w": 178,
+   "h": 23
+  },
+  {
+   "id": "u1-l12",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Im Büro 12",
+   "x": 373,
+   "y": 564,
+   "w": 178,
+   "h": 23
+  },
+  {
+   "id": "u1-l13",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Im Büro 13",
+   "x": 373,
+   "y": 589,
+   "w": 178,
+   "h": 23
+  },
+  {
+   "id": "u1-l14",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Im Büro 14",
+   "x": 373,
+   "y": 614,
+   "w": 178,
+   "h": 23
+  },
+  {
+   "id": "u1-l15",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Im Büro 15",
+   "x": 373,
+   "y": 639,
+   "w": 178,
+   "h": 23
+  },
+  {
+   "id": "u1-l16",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Im Büro 16",
+   "x": 373,
+   "y": 664,
+   "w": 178,
+   "h": 23
+  },
+  {
+   "id": "u1-l17",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Im Büro 17",
+   "x": 373,
+   "y": 689,
+   "w": 178,
+   "h": 23
+  },
+  {
+   "id": "u1-l18",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Im Büro 18",
+   "x": 373,
+   "y": 714,
+   "w": 178,
+   "h": 23
+  },
+  {
+   "id": "u1-l19",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Im Büro 19",
+   "x": 373,
+   "y": 739,
+   "w": 178,
+   "h": 23
+  },
+  {
+   "id": "u1-l20",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Im Büro 20",
+   "x": 373,
+   "y": 764,
+   "w": 178,
+   "h": 23
+  },
+  {
+   "id": "u1-r1",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Weitere Wörter 1",
+   "x": 730,
+   "y": 289,
+   "w": 158,
+   "h": 23
+  },
+  {
+   "id": "u1-r2",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Weitere Wörter 2",
+   "x": 730,
+   "y": 314,
+   "w": 158,
+   "h": 23
+  },
+  {
+   "id": "u1-r3",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Weitere Wörter 3",
+   "x": 730,
+   "y": 339,
+   "w": 158,
+   "h": 23
+  },
+  {
+   "id": "u1-r4",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Weitere Wörter 4",
+   "x": 730,
+   "y": 364,
+   "w": 158,
+   "h": 23
+  },
+  {
+   "id": "u1-r5",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Weitere Wörter 5",
+   "x": 730,
+   "y": 389,
+   "w": 158,
+   "h": 23
+  },
+  {
+   "id": "u1-r6",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Weitere Wörter 6",
+   "x": 730,
+   "y": 414,
+   "w": 158,
+   "h": 23
+  },
+  {
+   "id": "u1-r7",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Weitere Wörter 7",
+   "x": 730,
+   "y": 439,
+   "w": 158,
+   "h": 23
+  },
+  {
+   "id": "u1-r8",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Weitere Wörter 8",
+   "x": 730,
+   "y": 464,
+   "w": 158,
+   "h": 23
+  },
+  {
+   "id": "u1-r9",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Weitere Wörter 9",
+   "x": 730,
+   "y": 489,
+   "w": 158,
+   "h": 23
+  },
+  {
+   "id": "u1-r10",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Weitere Wörter 10",
+   "x": 730,
+   "y": 514,
+   "w": 158,
+   "h": 23
+  },
+  {
+   "id": "u1-r11",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Weitere Wörter 11",
+   "x": 730,
+   "y": 539,
+   "w": 158,
+   "h": 23
+  },
+  {
+   "id": "u1-r12",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Weitere Wörter 12",
+   "x": 730,
+   "y": 564,
+   "w": 158,
+   "h": 23
+  },
+  {
+   "id": "u1-r13",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Weitere Wörter 13",
+   "x": 730,
+   "y": 589,
+   "w": 158,
+   "h": 23
+  },
+  {
+   "id": "u1-r14",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Weitere Wörter 14",
+   "x": 730,
+   "y": 614,
+   "w": 158,
+   "h": 23
+  },
+  {
+   "id": "u1-r15",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Weitere Wörter 15",
+   "x": 730,
+   "y": 639,
+   "w": 158,
+   "h": 23
+  },
+  {
+   "id": "u1-r16",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Weitere Wörter 16",
+   "x": 730,
+   "y": 664,
+   "w": 158,
+   "h": 23
+  },
+  {
+   "id": "u1-r17",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Weitere Wörter 17",
+   "x": 730,
+   "y": 689,
+   "w": 158,
+   "h": 23
+  },
+  {
+   "id": "u1-r18",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Weitere Wörter 18",
+   "x": 730,
+   "y": 714,
+   "w": 158,
+   "h": 23
+  },
+  {
+   "id": "u1-r19",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Weitere Wörter 19",
+   "x": 730,
+   "y": 739,
+   "w": 158,
+   "h": 23
+  },
+  {
+   "id": "u1-r20",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Weitere Wörter 20",
+   "x": 730,
+   "y": 764,
+   "w": 158,
+   "h": 23
+  },
+  {
+   "id": "u1-r21",
+   "group": "u1",
+   "kind": "text",
+   "label": "1 Übersetzung Weitere Wörter 21",
+   "x": 730,
+   "y": 789,
+   "w": 158,
+   "h": 23
+  },
+  {
+   "id": "u2-1",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 Notieren Zeile 1",
+   "x": 209,
+   "y": 1009,
+   "w": 660,
+   "h": 23
+  },
+  {
+   "id": "u2-2",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 Notieren Zeile 2",
+   "x": 209,
+   "y": 1034,
+   "w": 660,
+   "h": 23
+  },
+  {
+   "id": "u2-3",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 Notieren Zeile 3",
+   "x": 209,
+   "y": 1059,
+   "w": 660,
+   "h": 23
+  },
+  {
+   "id": "u2-4",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 Notieren Zeile 4",
+   "x": 209,
+   "y": 1084,
+   "w": 660,
+   "h": 23
+  },
+  {
+   "id": "u2-5",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 Notieren Zeile 5",
+   "x": 209,
+   "y": 1109,
+   "w": 660,
+   "h": 23
+  },
+  {
+   "id": "u2-6",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 Notieren Zeile 6",
+   "x": 209,
+   "y": 1134,
+   "w": 660,
+   "h": 23
+  },
+  {
+   "id": "u2-7",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 Notieren Zeile 7",
+   "x": 209,
+   "y": 1159,
+   "w": 660,
+   "h": 23
+  },
+  {
+   "id": "u2-8",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 Notieren Zeile 8",
+   "x": 209,
+   "y": 1184,
+   "w": 660,
+   "h": 23
+  },
+  {
+   "id": "u2-9",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 Notieren Zeile 9",
+   "x": 209,
+   "y": 1209,
+   "w": 660,
+   "h": 23
+  },
+  {
+   "id": "u2-10",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 Notieren Zeile 10",
+   "x": 209,
+   "y": 1234,
+   "w": 660,
+   "h": 23
+  },
+  {
+   "id": "u2-11",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 Notieren Zeile 11",
+   "x": 209,
+   "y": 1259,
+   "w": 660,
+   "h": 23
+  },
+  {
+   "id": "u2-12",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 Notieren Zeile 12",
+   "x": 209,
+   "y": 1284,
+   "w": 660,
+   "h": 23
+  },
+  {
+   "id": "u2-13",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 Notieren Zeile 13",
+   "x": 209,
+   "y": 1309,
+   "w": 660,
+   "h": 23
+  },
+  {
+   "id": "u2-14",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 Notieren Zeile 14",
+   "x": 209,
+   "y": 1334,
+   "w": 660,
+   "h": 23
+  },
+  {
+   "id": "u2-15",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 Notieren Zeile 15",
+   "x": 209,
+   "y": 1359,
+   "w": 660,
+   "h": 23
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "u1",
+   "label": "1 Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie."
+  },
+  {
+   "id": "u2",
+   "label": "2 Welche Wörter möchten Sie noch lernen? Notieren Sie."
+  }
+ ],
  "review": {
   "status": "verified",
   "verifiedWords": 134,
   "totalWords": 134,
   "notes": [
-   "Lernwortschatz page: U1 translation into own language and U2 personal noting are personal-completion exercises, so no fields (Lernwortschatz precedent).",
-   "TIPP box text included; printed blue publisher example \"Stift - die Stifte\" kept as words; photo column and big green 6 tab excluded as graphics."
+   "TIPP box text included; printed blue publisher example \"Stift - die Stifte\" kept as words; photo column and big green 6 tab excluded as graphics.",
+   "Free-text fields added over every printed write-in line (u1: 20 left + 21 right translation lines, u2: 15 Notieren lines); personal-completion, ungraded by design."
   ]
  }
 }

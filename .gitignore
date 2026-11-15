@@ -12,3 +12,8 @@ src/tailwind.gen.css
 scripts/__pycache__/
 __pycache__/
 *.pyc
+src/generated/
+.wrangler/
+desktop-cache/
+build/
+desktop/dist

@@ -3,8 +3,10 @@ import {createRoot} from 'react-dom/client';
 import App from './App';
 import './adapters/page-flip';
 import {installSeekableAudio} from './audio-bootstrap';
+import {installTtsMode} from './tts-audio';
 
 installSeekableAudio();
+installTtsMode();
 import {configs, loadLesson, applyRouteMeta} from './navigate';
 import './tailwind.gen.css';
 import './reader-fonts.css';

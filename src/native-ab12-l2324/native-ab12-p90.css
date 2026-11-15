@@ -1,0 +1,7 @@
+/* p90 clearance: ok/bad paint - plain fields get a 2px underline on the printed rule;
+   naFieldNL fields paint nothing themselves, only their separate printed rule div is recolored. */
+.nativeAB12[data-native-ab12="90"] .naCanvas .naField[data-check-mark="ok"]{background:transparent!important;border-color:transparent!important;box-shadow:none!important;border-bottom:2px solid #2f7d4f!important}
+.nativeAB12[data-native-ab12="90"] .naCanvas .naField[data-check-mark="bad"]{background:transparent!important;border-color:transparent!important;box-shadow:none!important;border-bottom:2px solid #c62f2f!important}
+.nativeAB12[data-native-ab12="90"] .naCanvas .naField.naFieldNL[data-check-mark="ok"],.nativeAB12[data-native-ab12="90"] .naCanvas .naField.naFieldNL[data-check-mark="bad"]{border-bottom:0!important}
+.nativeAB12[data-native-ab12="90"] .naCanvas .naField.naFieldNL[data-check-mark="ok"]+.naRule{border-bottom:2px solid #2f7d4f!important}
+.nativeAB12[data-native-ab12="90"] .naCanvas .naField.naFieldNL[data-check-mark="bad"]+.naRule{border-bottom:2px solid #c62f2f!important}
