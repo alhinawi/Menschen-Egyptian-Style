@@ -26,7 +26,7 @@ export function NativeAB11({page}:{page:string}){
  const save=(id:string,x:number,y:number)=>null;
  const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="nabCheck" style={{left:x,top:y}} data-native-task={id}><CheckButton answers={answers} onClick={()=>G({...graded,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const ink=(x:number,y:number,w:number,s:string)=><div className="nabText nabInk" style={{left:x,top:y,width:w}}><Words text={s}/></div>;
- const title=(n:string,y:number,s:string,kb:string,side='Strukturen')=><>{text(page==='7'?115:page==='8'||page==='9'?110:130,y+7,40,kb,'nabKB')}<div className="nabNumber" style={{left:page==='7'?158:page==='8'||page==='9'?154:page==='10'?148:170,top:y}}>{n}</div>{text(page==='7'?202:page==='8'||page==='9'?198:page==='10'?188:212,y,810,s,'nabTitle')}<div className="nabSide" style={{left:141,top:y+45}}>{side}</div></>;
+ const title=(n:string,y:number,s:string,kb:string,side='Strukturen')=><>{text(page==='7'?115:page==='8'||page==='9'?110:130,y+7,40,kb,'nabKB')}<div className="nabNumber" style={{left:page==='7'?158:page==='8'||page==='9'?154:page==='10'?148:page==='11'?162:170,top:y}}>{n}</div>{text(page==='7'?202:page==='8'||page==='9'?198:page==='10'?188:page==='11'?205:212,y,810,s,'nabTitle')}<div className="nabSide" style={{left:141,top:y+45}}>{side}</div></>;
  const head=(s:string)=><>{text(160,142,750,s,'nabHeader')}<div className="nabHeaderLine"/></>;
  return <div className="nativeAB11" ref={host} data-native-ab11-page={page}><div className="nabCanvas" style={{transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='6'&&<>
@@ -206,22 +206,22 @@ export function NativeAB11({page}:{page:string}){
  </>}
  {page==='11'&&<>
  {head('LERNWORTSCHATZ')}<div className="nabModule">1</div>
- {title('1',235,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','','')}
- {text(202,280,360,'Begrüßung und Abschied','nabBold')}
+ {title('1',234,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','','')}
+ {text(205,274,360,'Begrüßung und Abschied','nabBold')}
  {[
- ['Hallo',315],['Guten Morgen',393],['Guten Tag',419],['Guten Abend',471],['Gute Nacht',497],['Auf Wiedersehen',523],['Tschüs',575],['Ich heiße /',704],['Ich bin ...',730],['Mein Name ist ...',756],['Das ist ...',782],['Wer ...?',820],['Wie ...?',846],['Frau die, -en',920],['Herr der, -en',946],['Name der, -n',972],['Vorname der, -n',998],['Familienname',1024]
- ].map(([s,y],i)=><div key={String(s)}>{text(202,Number(y),250,String(s))}{field('wort-l'+i,371,Number(y)+1,180,'1 Übersetzung '+s)}</div>)}
- {text(215,341,350,'A: auch: Servus / Grüß dich','nabSmall')}{text(215,367,350,'CH: auch: Hoi / Sali / Salü','nabSmall')}{text(215,445,350,'A: Grüß Gott / CH: Grüezi','nabSmall')}{text(215,549,350,'CH: Adieu','nabSmall')}{text(215,601,350,'A: Servus / Baba','nabSmall')}{text(215,627,350,'CH: Adieu / Ade / Adie','nabSmall')}
- {text(202,676,300,'Name','nabBold')}{text(202,892,300,'Personalien','nabBold')}{text(215,1050,250,'der, -n')}
- {text(582,280,300,'Herkunft','nabBold')}{text(582,427,300,'Länder','nabBold')}{text(582,590,300,'Befinden','nabBold')}{text(582,778,350,'Weitere wichtige Wörter','nabBold')}
+ ['Hallo',301],['Guten Morgen',377],['Guten Tag',403],['Guten Abend',453],['Gute Nacht',478],['Auf Wiedersehen',503],['Tschüs',553],['Ich heiße /',679],['Ich bin ...',705],['Mein Name ist ...',731],['Das ist ...',757],['Wer ...?',798],['Wie ...?',824],['Frau die, -en',896],['Herr der, -en',921],['Name der, -n',947],['Vorname der, -n',972],['Familienname',997]
+ ].map(([s,y],i)=><div key={String(s)}>{text(i===8?217:205,Number(y),250,String(s))}{i!==8&&field('wort-l'+i,373,Number(y)+2,178,'1 Übersetzung '+s)}</div>)}
+ {text(216,329,350,'A: auch: Servus / Grüß dich','nabSmall')}{text(216,354,350,'CH: auch: Hoi / Sali / Salü','nabSmall')}{text(216,429,350,'A: Grüß Gott / CH: Grüezi','nabSmall')}{text(216,531,350,'CH: Adieu','nabSmall')}{text(216,582,350,'A: Servus / Baba','nabSmall')}{text(216,607,350,'CH: Adieu / Ade / Adie','nabSmall')}
+ {text(205,655,300,'Name','nabBold')}{text(205,869,300,'Personalien','nabBold')}{text(217,1022,250,'der, -n')}
+ {text(582,274,300,'Herkunft','nabBold')}{text(582,426,300,'Länder','nabBold')}{text(582,578,300,'Befinden','nabBold')}{text(582,769,350,'Weitere wichtige Wörter','nabBold')}
  {[
- ['Woher ...?',315],['kommen aus ...',354],['aus ...',393],['Land das, ¨-er',458],['Deutschland',484],['Österreich',510],['Schweiz die',536],['Wie geht’s?',621],['sehr gut',660],['gut',686],['es geht',712],['nicht so gut',738],['Alphabet das, -e',809],['buchstabieren',848],['auch',887],['danke',913],['ja',939],['nein',965],['sehr',991],['und',1017]
- ].map(([s,y],i)=><div key={String(s)}>{text(582,Number(y),230,String(s))}{field('wort-r'+i,725,Number(y)+1,193,'1 Übersetzung '+s)}</div>)}
- {[['hello',236,110],['greet',415,98],['how',602,102],['evening',750,110],['night',921,121],['bye',1104,119],['shake',1313,91]].map(([name,y,h],i)=><div key={String(name)}>{img('cartoon-'+name,941,Number(y),134,Number(h))}{field('bild-'+i,963,Number(y)+Number(h)+16,108,'1 Bildwort '+(i+1))}</div>)}
- {text(430,1081,185,'Lernen Sie Fragen\nund Antworten\nzusammen.','nabTip')}{text(595,1112,300,'Wie geht es dir? - Danke, gut.\nWie heißen Sie? - Ich bin ...','nabExample')}{save('1',202,1100)}
- {title('2',1180,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','','')}
- {open('eigene-woerter',202,1226,715,170,'2 Weitere Wörter und Notizen')}{save('2',202,1410)}
+ ['Woher ...?',301],['kommen aus ...',339],['aus ...',377],['Land das, ¨-er',452],['Deutschland',477],['Österreich',502],['Schweiz die',528],['Wie geht’s?',603],['sehr gut',642],['gut',668],['es geht',694],['nicht so gut',719],['Alphabet das, -e',794],['buchstabieren',832],['auch',870],['danke',896],['ja',921],['nein',947],['sehr',972],['und',997]
+ ].map(([s,y],i)=><div key={String(s)}>{text(582,Number(y),230,String(s))}{field('wort-r'+i,725,Number(y)+2,193,'1 Übersetzung '+s)}</div>)}
+ {[['hello',232,105],['greet',397,118],['how',589,104],['evening',750,115],['night',921,129],['bye',1104,115],['shake',1278,109]].map(([name,y,h],i)=><div key={String(name)}>{img('cartoon-'+name,941,Number(y),134,Number(h))}{field('bild-'+i,963,[344,519,693,867,1052,1225,1395][i],108,'1 Bildwort '+(i+1))}</div>)}
+ <div className="nabP11Tip"><span>TIPP</span></div>{text(432,1048,180,'Lernen Sie Fragen\nund Antworten\nzusammen.','nabTip')}{img('ink-tip',590,1071,245,53)}{save('1',202,1100)}
+ {title('2',1158,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','','')}
+ {Array.from({length:8},(_,i)=><div key={i} className="nabP11WritingRule" style={{left:205,top:1218+i*25,width:713}}/>)}{open('eigene-woerter',205,1194,713,200,'2 Weitere Wörter und Notizen')}{save('2',202,1410)}
  </>}
- {page==='10'?<>{text(56,1442,70,'Modul 1','nabFooter nabP10Module')}{text(137,1442,170,'10  |  zehn','nabFooter')}</>:page==='9'?<>{text(936,1424,100,'neun  |  9','nabFooter')}{text(1034,1424,70,'Modul 1','nabFooter nabP9Module')}</>:page==='7'?<>{text(929,1440,130,'sieben  |  7','nabFooter')}{text(1030,1440,80,'Modul 1','nabFooter nabP7Module')}</>:<>{text(Number(page)%2?991:page==='6'||page==='8'?64:50,page==='6'?1443:page==='8'?1455:1485,80,'Modul 1','nabFooter')}{text(Number(page)%2?920:page==='6'?143:page==='8'?147:130,page==='6'?1443:page==='8'?1455:1485,500,page+'  |  '+({'6':'sechs','7':'sieben','8':'acht','9':'neun','10':'zehn','11':'elf'} as Record<string,string>)[page],'nabFooter')}</>}
+ {page==='11'?<>{text(958,1441,100,'elf  |  11','nabFooter')}{text(1040,1441,70,'Modul 1','nabFooter nabP11Module')}</>:page==='10'?<>{text(56,1442,70,'Modul 1','nabFooter nabP10Module')}{text(137,1442,170,'10  |  zehn','nabFooter')}</>:page==='9'?<>{text(936,1424,100,'neun  |  9','nabFooter')}{text(1034,1424,70,'Modul 1','nabFooter nabP9Module')}</>:page==='7'?<>{text(929,1440,130,'sieben  |  7','nabFooter')}{text(1030,1440,80,'Modul 1','nabFooter nabP7Module')}</>:<>{text(Number(page)%2?991:page==='6'||page==='8'?64:50,page==='6'?1443:page==='8'?1455:1485,80,'Modul 1','nabFooter')}{text(Number(page)%2?920:page==='6'?143:page==='8'?147:130,page==='6'?1443:page==='8'?1455:1485,500,page+'  |  '+({'6':'sechs','7':'sieben','8':'acht','9':'neun','10':'zehn','11':'elf'} as Record<string,string>)[page],'nabFooter')}</>}
  </div><audio ref={audio} className="nabPlayer" controls hidden aria-label="Originalaudio Arbeitsbuch"/></div>
 }
