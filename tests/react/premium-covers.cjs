@@ -16,6 +16,7 @@ const server=http.createServer((req,res)=>{const url=new URL(req.url,'http://loc
  assert.equal(await page.locator('.premiumCoverLevel').innerText(),level);
  assert.equal(await page.locator('.coverSocials a').count(),4);
  assert.equal(await page.locator('.coverOwner').innerText(),'نسخة تفاعلية مع\nهناوي');
+ assert(await page.locator('.coverOwner').evaluate(el=>el.querySelector('.coverSmall').getBoundingClientRect().left>el.querySelector('h1').getBoundingClientRect().right),'RTL attribution prefix must be right of the name');
  const fit=await page.evaluate(()=>{const frame=document.querySelector('.premiumCover').getBoundingClientRect(),copy=document.querySelector('.coverCopy').getBoundingClientRect();const button=document.querySelector('.fullscreenCover .coverOpen').getBoundingClientRect(),art=document.querySelector('.premiumCoverArt').getBoundingClientRect();return {overflow:document.documentElement.scrollWidth>innerWidth+1,footer:frame.bottom-copy.bottom,buttonBottom:button.bottom,height:innerHeight,artRight:art.right,width:innerWidth};});
  assert(!fit.overflow);assert(fit.buttonBottom<=fit.height);assert(fit.artRight<=fit.width);assert(fit.footer>=6,`Footer clips: ${JSON.stringify(fit)}`);
  await page.screenshot({path:`/downloads/covers-fullscreen-${book.toLowerCase()}-${level}-${width}.png`,fullPage:false});
