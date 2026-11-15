@@ -17,3 +17,5 @@ src/generated/
 desktop-cache/
 build/
 desktop/dist
+
+.dev.vars
