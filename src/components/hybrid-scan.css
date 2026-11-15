@@ -804,3 +804,10 @@ html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='73'] .hybridField
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='98'] input.hybridField:not([type=radio]):not([value='']){background:#fff!important}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='98'] input[type=radio].hybridField{appearance:none!important;border:1px solid #a59a71!important;border-radius:0!important}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='98'] input[type=radio].hybridField:checked{background:linear-gradient(45deg,transparent 43%,#226794 44%,#226794 56%,transparent 57%),linear-gradient(-45deg,transparent 43%,#226794 44%,#226794 56%,transparent 57%)!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='99'] .hybridField{font-size:1.4cqw!important;border:0;outline:0;background:transparent}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='99'] input.hybridField:not([type=radio]):not([value='']){background:#fff!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='99'] input[type=radio].hybridField{appearance:none!important;border:1px solid #a59a71!important;border-radius:0!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='99'] input[type=radio].hybridField:checked{background:linear-gradient(45deg,transparent 43%,#226794 44%,#226794 56%,transparent 57%),linear-gradient(-45deg,transparent 43%,#226794 44%,#226794 56%,transparent 57%)!important}
+
+.hybridOpen99{position:absolute;right:7%;top:63%;font-size:1.3cqw;padding:.6cqw;background:#fff;border:1px solid #637b8b;border-radius:3px;z-index:6}
+@media(max-width:600px){.hybridScan[data-scan-book='ab-a11'][data-scan-page='99'] .hybridWriting75{left:5%;top:12%;width:90%;max-height:82%;font-size:32px!important;padding:16px}.hybridScan[data-scan-book='ab-a11'][data-scan-page='99'] .hybridWriting75 h3{font-size:34px}.hybridScan[data-scan-book='ab-a11'][data-scan-page='99'] .hybridWriting75 button,.hybridScan[data-scan-book='ab-a11'][data-scan-page='99'] .hybridWriting75 select{font-size:30px}.hybridScan[data-scan-book='ab-a11'][data-scan-page='99'] .hybridWriting75 textarea{font-size:32px!important;height:160px!important}}

@@ -1161,7 +1161,456 @@
    "h": 14
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "self-0",
+   "group": "self",
+   "kind": "text",
+   "label": "W-Frage: Wann",
+   "x": 358,
+   "y": 341,
+   "w": 608,
+   "h": 25
+  },
+  {
+   "id": "self-1",
+   "group": "self",
+   "kind": "text",
+   "label": "Ja-Nein-Frage: Holst",
+   "x": 421,
+   "y": 370,
+   "w": 546,
+   "h": 25
+  },
+  {
+   "id": "self-2",
+   "group": "self",
+   "kind": "text",
+   "label": "Auskunft: Ja ich",
+   "x": 373,
+   "y": 398,
+   "w": 597,
+   "h": 25
+  },
+  {
+   "id": "self-3",
+   "group": "self",
+   "kind": "text",
+   "label": "Perfekt Frage: arbeiten",
+   "x": 317,
+   "y": 610,
+   "w": 652,
+   "h": 25
+  },
+  {
+   "id": "self-4",
+   "group": "self",
+   "kind": "text",
+   "label": "Perfekt Antwort: arbeiten",
+   "x": 370,
+   "y": 639,
+   "w": 600,
+   "h": 25
+  },
+  {
+   "id": "self-5",
+   "group": "self",
+   "kind": "text",
+   "label": "Perfekt Frage: fernsehen",
+   "x": 255,
+   "y": 709,
+   "w": 632,
+   "h": 25
+  },
+  {
+   "id": "self-6",
+   "group": "self",
+   "kind": "text",
+   "label": "Perfekt Antwort: fernsehen",
+   "x": 248,
+   "y": 739,
+   "w": 724,
+   "h": 25
+  },
+  {
+   "id": "self-7",
+   "group": "self",
+   "kind": "text",
+   "label": "Perfekt Frage: fliegen",
+   "x": 272,
+   "y": 802,
+   "w": 698,
+   "h": 25
+  },
+  {
+   "id": "self-8",
+   "group": "self",
+   "kind": "text",
+   "label": "Perfekt Antwort: fliegen",
+   "x": 329,
+   "y": 831,
+   "w": 641,
+   "h": 25
+  },
+  {
+   "id": "self-9",
+   "group": "self",
+   "kind": "text",
+   "label": "Üben und Wiederholen",
+   "x": 189,
+   "y": 1010,
+   "w": 764,
+   "h": 25
+  },
+  {
+   "id": "prep-0",
+   "group": "self",
+   "kind": "select",
+   "label": "Temporale Präposition 1",
+   "x": 549,
+   "y": 475,
+   "w": 66,
+   "h": 25,
+   "options": [
+    {
+     "value": "ab",
+     "label": "ab"
+    },
+    {
+     "value": "bis",
+     "label": "bis"
+    },
+    {
+     "value": "im",
+     "label": "im"
+    },
+    {
+     "value": "um",
+     "label": "um"
+    },
+    {
+     "value": "von",
+     "label": "von"
+    }
+   ]
+  },
+  {
+   "id": "prep-1",
+   "group": "self",
+   "kind": "select",
+   "label": "Temporale Präposition 2",
+   "x": 661,
+   "y": 475,
+   "w": 67,
+   "h": 25,
+   "options": [
+    {
+     "value": "ab",
+     "label": "ab"
+    },
+    {
+     "value": "bis",
+     "label": "bis"
+    },
+    {
+     "value": "im",
+     "label": "im"
+    },
+    {
+     "value": "um",
+     "label": "um"
+    },
+    {
+     "value": "von",
+     "label": "von"
+    }
+   ]
+  },
+  {
+   "id": "prep-2",
+   "group": "self",
+   "kind": "select",
+   "label": "Temporale Präposition 3",
+   "x": 450,
+   "y": 502,
+   "w": 59,
+   "h": 25,
+   "options": [
+    {
+     "value": "ab",
+     "label": "ab"
+    },
+    {
+     "value": "bis",
+     "label": "bis"
+    },
+    {
+     "value": "im",
+     "label": "im"
+    },
+    {
+     "value": "um",
+     "label": "um"
+    },
+    {
+     "value": "von",
+     "label": "von"
+    }
+   ]
+  },
+  {
+   "id": "prep-3",
+   "group": "self",
+   "kind": "select",
+   "label": "Temporale Präposition 4",
+   "x": 500,
+   "y": 914,
+   "w": 128,
+   "h": 25,
+   "options": [
+    {
+     "value": "ab",
+     "label": "ab"
+    },
+    {
+     "value": "bis",
+     "label": "bis"
+    },
+    {
+     "value": "im",
+     "label": "im"
+    },
+    {
+     "value": "um",
+     "label": "um"
+    },
+    {
+     "value": "von",
+     "label": "von"
+    }
+   ]
+  },
+  {
+   "id": "prep-4",
+   "group": "self",
+   "kind": "select",
+   "label": "Temporale Präposition 5",
+   "x": 732,
+   "y": 914,
+   "w": 111,
+   "h": 25,
+   "options": [
+    {
+     "value": "ab",
+     "label": "ab"
+    },
+    {
+     "value": "bis",
+     "label": "bis"
+    },
+    {
+     "value": "im",
+     "label": "im"
+    },
+    {
+     "value": "um",
+     "label": "um"
+    },
+    {
+     "value": "von",
+     "label": "von"
+    }
+   ]
+  },
+  {
+   "id": "rate-0-0",
+   "group": "self",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 1: gut",
+   "x": 1042,
+   "y": 290,
+   "w": 19,
+   "h": 19,
+   "name": "rate-0",
+   "value": "0"
+  },
+  {
+   "id": "rate-0-1",
+   "group": "self",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 1: teilweise",
+   "x": 1086,
+   "y": 290,
+   "w": 19,
+   "h": 19,
+   "name": "rate-0",
+   "value": "1"
+  },
+  {
+   "id": "rate-0-2",
+   "group": "self",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 1: üben",
+   "x": 1130,
+   "y": 290,
+   "w": 19,
+   "h": 19,
+   "name": "rate-0",
+   "value": "2"
+  },
+  {
+   "id": "rate-1-0",
+   "group": "self",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 2: gut",
+   "x": 1042,
+   "y": 438,
+   "w": 19,
+   "h": 19,
+   "name": "rate-1",
+   "value": "0"
+  },
+  {
+   "id": "rate-1-1",
+   "group": "self",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 2: teilweise",
+   "x": 1086,
+   "y": 438,
+   "w": 19,
+   "h": 19,
+   "name": "rate-1",
+   "value": "1"
+  },
+  {
+   "id": "rate-1-2",
+   "group": "self",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 2: üben",
+   "x": 1130,
+   "y": 438,
+   "w": 19,
+   "h": 19,
+   "name": "rate-1",
+   "value": "2"
+  },
+  {
+   "id": "rate-2-0",
+   "group": "self",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 3: gut",
+   "x": 1042,
+   "y": 549,
+   "w": 19,
+   "h": 19,
+   "name": "rate-2",
+   "value": "0"
+  },
+  {
+   "id": "rate-2-1",
+   "group": "self",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 3: teilweise",
+   "x": 1086,
+   "y": 549,
+   "w": 19,
+   "h": 19,
+   "name": "rate-2",
+   "value": "1"
+  },
+  {
+   "id": "rate-2-2",
+   "group": "self",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 3: üben",
+   "x": 1130,
+   "y": 549,
+   "w": 19,
+   "h": 19,
+   "name": "rate-2",
+   "value": "2"
+  },
+  {
+   "id": "rate-3-0",
+   "group": "self",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 4: gut",
+   "x": 1042,
+   "y": 870,
+   "w": 19,
+   "h": 19,
+   "name": "rate-3",
+   "value": "0"
+  },
+  {
+   "id": "rate-3-1",
+   "group": "self",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 4: teilweise",
+   "x": 1086,
+   "y": 870,
+   "w": 19,
+   "h": 19,
+   "name": "rate-3",
+   "value": "1"
+  },
+  {
+   "id": "rate-3-2",
+   "group": "self",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 4: üben",
+   "x": 1130,
+   "y": 870,
+   "w": 19,
+   "h": 19,
+   "name": "rate-3",
+   "value": "2"
+  },
+  {
+   "id": "own-modal-1",
+   "group": "self",
+   "kind": "text",
+   "label": "1 Gespräche zu Kursbuch Seite 59",
+   "x": 0,
+   "y": 0,
+   "w": 1,
+   "h": 1
+  },
+  {
+   "id": "own-modal-2",
+   "group": "self",
+   "kind": "text",
+   "label": "2 Gespräch zu einem Foto",
+   "x": 0,
+   "y": 0,
+   "w": 1,
+   "h": 1
+  },
+  {
+   "id": "own-photo",
+   "group": "self",
+   "kind": "select",
+   "label": "2 Foto wählen",
+   "x": 0,
+   "y": 0,
+   "w": 1,
+   "h": 1,
+   "options": [
+    {
+     "value": "Taxi",
+     "label": "Taxi"
+    },
+    {
+     "value": "Flughafen",
+     "label": "Flughafen"
+    },
+    {
+     "value": "Bahnhof",
+     "label": "Bahnhof"
+    }
+   ]
+  }
+ ],
  "audio": [],
  "groups": [],
  "review": {
@@ -1170,7 +1619,8 @@
   "totalWords": 165,
   "notes": [
    "Selbsteinschaetzung Modul 4 (Ich kann auch...) + Rueckblick L10: all blanks are personal completions / free writing tasks - no fields.",
-   "Blue cursive 'Das kann ich!' printed; rating circles, icons, list markers excluded."
+   "Blue cursive 'Das kann ich!' printed; rating circles, icons, list markers excluded.",
+   "2026-11-16 original scan/fonts preserved;10 self-assessment fields,5 preposition selects,4 ratings,2 saved writing tasks with photo selection."
   ]
  }
 }
