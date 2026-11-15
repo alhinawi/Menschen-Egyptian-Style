@@ -1304,6 +1304,48 @@
         "die"
       ],
       "source": "3: explicit der/das/die"
+    },
+    {
+      "ids": [
+        "u2a-l1",
+        "u2a-l2",
+        "u2a-l3",
+        "u2a-l4",
+        "u2a-l5",
+        "u2a-r1",
+        "u2a-r2",
+        "u2a-r4"
+      ],
+      "options": [
+        "der Bett",
+        "das Bett",
+        "die Bett",
+        "der Bild",
+        "das Bild",
+        "die Bild",
+        "der Lampe",
+        "das Lampe",
+        "die Lampe",
+        "der Sessel",
+        "das Sessel",
+        "die Sessel",
+        "der Stuhl",
+        "das Stuhl",
+        "die Stuhl",
+        "der Sofa",
+        "das Sofa",
+        "die Sofa",
+        "der Tisch",
+        "das Tisch",
+        "die Tisch",
+        "der Schrank",
+        "das Schrank",
+        "die Schrank",
+        "der Teppich",
+        "das Teppich",
+        "die Teppich"
+      ],
+      "source": "2a: printed nine-noun bank, with all three article possibilities (no answer-key filtering)"
     }
   ],
   "ab-a11:33": [
