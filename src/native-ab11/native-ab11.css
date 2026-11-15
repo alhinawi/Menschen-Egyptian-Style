@@ -264,3 +264,38 @@
 
 .nativeAB11[data-native-ab11-page='11'] .nabP11WritingRule{position:absolute;border-bottom:1px solid #929792;pointer-events:none}
 .nativeAB11[data-native-ab11-page='11'] .nabCanvas .nabOpen{background:transparent!important}
+
+/* Page 12 source roles and rules. */
+.nativeAB11[data-native-ab11-page='12'] .nabText{font:19px/25px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='12'] .nabTitle{font:700 20px/26px ABScanSans,Arial,sans-serif}
+.nativeAB11[data-native-ab11-page='12'] .nabCoverTitle{font:39px/44px KbDroid,Georgia,serif;top:128px!important}
+.nativeAB11[data-native-ab11-page='12'] .nabNumber{left:162px!important}
+.nativeAB11[data-native-ab11-page='12'] .nabTitle{left:205px!important}
+.nativeAB11[data-native-ab11-page='12'] .nabTitle[style*='171px']{left:171px!important}
+.nativeAB11[data-native-ab11-page='12'] .nabKB{font:11px ABScanSans,Arial,sans-serif;left:115px!important}
+.nativeAB11[data-native-ab11-page='12'] .nabSide{left:139px!important;font-size:9px}
+.nativeAB11[data-native-ab11-page='12'] .nabBank{font:18px/25px ABScanSans,Arial,sans-serif;background:#ffffdf;color:#27427f;letter-spacing:-.25px}
+.nativeAB11[data-native-ab11-page='12'] .nabCanvas .nabInput{border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;height:21px!important}
+.nativeAB11[data-native-ab11-page='12'] .nabSelect{appearance:auto!important;font:17px/19px KbDroid,Georgia,serif!important;padding:0!important}
+.nativeAB11[data-native-ab11-page='12'] .nabForeignTable{font:18px/25px KbDroid,Georgia,serif;grid-template-columns:200px 206px 1fr}
+.nativeAB11[data-native-ab11-page='12'] .nabForeignTable b{font-size:17px;background:#fffbd5;padding:3px 7px;height:32px;box-sizing:border-box}
+.nativeAB11[data-native-ab11-page='12'] .nabForeignRow>*{font:18px/27px KbDroid,Georgia,serif;border-bottom:1px dotted #dedec9;height:33px;background:transparent;padding:2px 7px}
+.nativeAB11[data-native-ab11-page='12'] .nabP12IT{width:100px;height:21px;object-fit:contain}
+.nativeAB11[data-native-ab11-page='12'] .sharedMatchItem{font-family:KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='12'] .sharedMatchLines path{stroke-width:1.5}
+.nativeAB11[data-native-ab11-page='12'] .nabFooter{font:16px KbDroid,Georgia,serif;top:1440px!important}
+
+.nativeAB11[data-native-ab11-page='12'] .nabCanvas .nabForeignRow>input{border:0!important;border-bottom:1px dotted #d6d6be!important;border-radius:0!important;background:transparent!important}
+.nativeAB11[data-native-ab11-page='12'] .nabTitle[style*='top: 484.53px']{transform:scaleX(.91);transform-origin:left top}
+.nativeAB11[data-native-ab11-page='12'] .nabBank[style*='319.92px']{transform:scaleX(.948);transform-origin:left top}
+.nativeAB11[data-native-ab11-page='12'] .nabBank .tapWord[data-word='Architektin']{text-decoration:line-through;text-decoration-color:#315f9e}
+.nativeAB11[data-native-ab11-page='12'] .nabBank[style*='998.82px'] .tapWord:nth-of-type(7){text-decoration:line-through;text-decoration-color:#315f9e}
+.nativeAB11[data-native-ab11-page='12'] .nabFooter[style*='50px']{left:65px!important;top:1441px!important;background:#e5dda6;color:white;font:italic 13px/18px Georgia,serif;width:65px!important;text-align:center}
+.nativeAB11[data-native-ab11-page='12'] .nabFooter[style*='130px']{left:147px!important;top:1440px!important}
+.nativeAB11[data-native-ab11-page='12'] .nabCheck{left:1008px!important;translate:none!important}
+.nativeAB11[data-native-ab11-page='12'] .nabForeignRow>*{border-right:1px dotted #eeeeda}
+.nativeAB11[data-native-ab11-page='12'] .nabCheck[data-native-task='u4']{top:1428px!important}
+.nativeAB11[data-native-ab11-page='12'] .nabBank[style*='1243.41px']{transform:scaleX(.93);transform-origin:left top}
+.nativeAB11[data-native-ab11-page='12'] .nabBank[style*='998.82px']{transform:scaleX(.966);transform-origin:left top}
+
+.nativeAB11[data-native-ab11-page='12'] .nabBank[style*='1243.41px'] .tapWord:nth-of-type(7){text-decoration:line-through;text-decoration-color:#315f9e}
