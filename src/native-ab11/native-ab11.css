@@ -125,3 +125,49 @@
 .nativeAB11[data-native-ab11-page='7'] .nabP7Module{background:#e5dda6;color:white;font:italic 13px/18px Georgia,serif;text-align:left}
 
 .nativeAB11[data-native-ab11-page='7'] .nabTitle .tapWord:is([data-word='a'],[data-word='b']),.nativeAB11[data-native-ab11-page='7'] .nabSmallTitle .tapWord[data-word='b']{color:#204892}
+
+/* Page 8 source-specific text, controls and handwritten examples. */
+@font-face{font-family:ABP8DroidBold;src:url('/assets/fonts/droid-serif-700.woff2') format('woff2');font-weight:700;font-display:swap}
+.nativeAB11[data-native-ab11-page='8'] .nabText{font-family:KbDroid,Georgia,serif;font-size:19px;line-height:25px}
+.nativeAB11[data-native-ab11-page='8'] .nabTitle{font:700 20px/26px ABScanSans,Arial,sans-serif}
+.nativeAB11[data-native-ab11-page='8'] .nabHeader{font-size:29px;letter-spacing:.5px;top:176px!important}
+.nativeAB11[data-native-ab11-page='8'] .nabHeaderLine{top:195px;left:400px}
+.nativeAB11[data-native-ab11-page='8'] .nabKB{font:11px Arial,sans-serif;color:#2995c1}
+.nativeAB11[data-native-ab11-page='8'] .nabNumber{font:bold 20px/24px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='8'] .nabCanvas .nabInput{border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;height:19px!important}
+.nativeAB11[data-native-ab11-page='8'] .nabCanvas .nabInput[data-native-field^='10-']{border:0!important;width:180px!important;left:auto}
+.nativeAB11[data-native-ab11-page='8'] .nabGrid{background:repeating-linear-gradient(0deg,transparent 0 30px,#e4e0c8 30px 31px),repeating-linear-gradient(90deg,transparent 0 197px,#e4e0c8 197px 198px);border-top-color:#f8f6d0}
+.nativeAB11[data-native-ab11-page='8'] .nabBold{font-weight:700;font-size:18px}
+.nativeAB11[data-native-ab11-page='8'] .nabCanvas .nabOption{font:19px/25px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='8'] .nabBank{font:18px/25px ABScanSans,Arial,sans-serif;background:#ffffdf;color:#27427f}
+.nativeAB11[data-native-ab11-page='8'] .nabBank:not(.nabP8Bank13){width:530px!important}
+.nativeAB11[data-native-ab11-page='8'] .nabBank:not(.nabP8Bank13) .tapWord:is(:nth-of-type(9),:nth-of-type(10)),.nativeAB11[data-native-ab11-page='8'] .nabP8Bank13 .tapWord:is(:nth-of-type(10),:nth-of-type(11),:nth-of-type(12),:nth-of-type(13)){text-decoration:line-through;text-decoration-color:#315f9e}
+.nativeAB11[data-native-ab11-page='8'] .tapWord[data-word='▲']{color:#2aae47}
+.nativeAB11[data-native-ab11-page='8'] .tapWord[data-word='■']{color:#204892}
+.nativeAB11[data-native-ab11-page='8'] .tapWord[data-word='●']{color:#ac0057}
+.nativeAB11[data-native-ab11-page='8'] .nabYellow{position:absolute;background:#fff039}
+.nativeAB11[data-native-ab11-page='8'] .nabRibbon{font:18px/26px ABScanSans,Arial,sans-serif;background:transparent;transform:none;white-space:nowrap}
+.nativeAB11[data-native-ab11-page='8'] .nabFooter{font:14px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='8'] .nabFooter[style*='64px']{width:67px!important;background:#e5dda6;color:white;font:italic 13px/18px Georgia,serif;text-align:center}
+
+.nativeAB11[data-native-ab11-page='8'] .nabGrid{border:0;background:linear-gradient(#f8f6d0,#f8f6d0) 0 0/100% 31px no-repeat,repeating-linear-gradient(0deg,transparent 0 30px,#e4e0c8 30px 31px),repeating-linear-gradient(90deg,transparent 0 197px,#e4e0c8 197px 198px)}
+.nativeAB11[data-native-ab11-page='8'] .nabSide{font-size:9px;white-space:pre;line-height:12px;left:114px!important}
+.nativeAB11[data-native-ab11-page='8'] .nabCheck[data-native-task='10']{left:1008px!important;top:442px!important}
+.nativeAB11[data-native-ab11-page='8'] .nabCheck[data-native-task='11']{left:1008px!important;top:593px!important}
+.nativeAB11[data-native-ab11-page='8'] .nabCheck[data-native-task='12']{left:1008px!important;top:770px!important}
+.nativeAB11[data-native-ab11-page='8'] .nabCheck[data-native-task='13']{left:1008px!important;top:964px!important}
+.nativeAB11[data-native-ab11-page='8'] .nabCheck[data-native-task='14']{left:1008px!important;top:1095px!important}
+.nativeAB11[data-native-ab11-page='8'] .nabCheck[data-native-task='15']{left:1008px!important;top:1424px!important}
+.nativeAB11[data-native-ab11-page='8'] .nabP8Rule{position:absolute;border-bottom:1px solid #929792}
+.nativeAB11[data-native-ab11-page='8'] .nabRibbon>*{background:#edf9fb}
+.nativeAB11[data-native-ab11-page='8'] .nabRibbon button:not(.marked){background:#edf9fb}
+.nativeAB11[data-native-ab11-page='8'] .nabListen{font:11px Arial;min-height:16px}
+
+.nativeAB11[data-native-ab11-page='8'] .nabText:not(.nabTitle):not(.nabHeader):not(.nabBank):not(.nabKB):not(.nabFooter):not(.nabBold){font-size:18px}
+.nativeAB11[data-native-ab11-page='8'] .nabCanvas .nabOption{font-size:18px}
+.nativeAB11[data-native-ab11-page='8'] .nabGrid{background:linear-gradient(#f8f6d0,#f8f6d0) 0 0/100% 31px no-repeat,repeating-linear-gradient(0deg,transparent 0 30px,#d4cfb8 30px 31px),repeating-linear-gradient(90deg,transparent 0 197px,#ddd8bf 197px 198px)}
+.nativeAB11[data-native-ab11-page='8'] .nabRibbon button.marked{background:#fff039}
+.nativeAB11[data-native-ab11-page='8'] .nabTitle{transform:scaleX(1.025);transform-origin:left top}
+
+.nativeAB11[data-native-ab11-page='8'] .nabBold,.nativeAB11[data-native-ab11-page='8'] .nabNumber{font-family:ABP8DroidBold,Georgia,serif}
+.nativeAB11[data-native-ab11-page='8'] .nabP8GridRule{border-bottom:1px dotted #d2cdb4;pointer-events:none}
