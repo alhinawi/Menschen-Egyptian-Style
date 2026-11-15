@@ -1429,10 +1429,10 @@
    "name": "a1-strasse",
    "value": "r",
    "answer": "true",
-   "x": 350,
-   "y": 1180,
-   "w": 26,
-   "h": 26
+   "x": 348,
+   "y": 1182,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "a1-strasse-a",
@@ -1442,10 +1442,10 @@
    "name": "a1-strasse",
    "value": "a",
    "answer": "false",
-   "x": 540,
-   "y": 1180,
-   "w": 26,
-   "h": 26
+   "x": 539,
+   "y": 1182,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "a1-silvester-r",
@@ -1455,10 +1455,10 @@
    "name": "a1-silvester",
    "value": "r",
    "answer": "false",
-   "x": 350,
-   "y": 1209,
-   "w": 26,
-   "h": 26
+   "x": 348,
+   "y": 1211,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "a1-silvester-a",
@@ -1468,10 +1468,10 @@
    "name": "a1-silvester",
    "value": "a",
    "answer": "true",
-   "x": 540,
-   "y": 1209,
-   "w": 26,
-   "h": 26
+   "x": 539,
+   "y": 1211,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "a1-freund-r",
@@ -1481,10 +1481,10 @@
    "name": "a1-freund",
    "value": "r",
    "answer": "true",
-   "x": 350,
-   "y": 1239,
-   "w": 26,
-   "h": 26
+   "x": 348,
+   "y": 1240,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "a1-freund-a",
@@ -1494,10 +1494,10 @@
    "name": "a1-freund",
    "value": "a",
    "answer": "false",
-   "x": 540,
-   "y": 1239,
-   "w": 26,
-   "h": 26
+   "x": 539,
+   "y": 1240,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "a1-reise-r",
@@ -1507,10 +1507,10 @@
    "name": "a1-reise",
    "value": "r",
    "answer": "true",
-   "x": 350,
-   "y": 1269,
-   "w": 26,
-   "h": 26
+   "x": 348,
+   "y": 1270,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "a1-reise-a",
@@ -1520,10 +1520,10 @@
    "name": "a1-reise",
    "value": "a",
    "answer": "false",
-   "x": 540,
-   "y": 1269,
-   "w": 26,
-   "h": 26
+   "x": 539,
+   "y": 1270,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "a1-erlebnis-r",
@@ -1533,10 +1533,10 @@
    "name": "a1-erlebnis",
    "value": "r",
    "answer": "true",
-   "x": 350,
-   "y": 1297,
-   "w": 26,
-   "h": 26
+   "x": 348,
+   "y": 1299,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "a1-erlebnis-a",
@@ -1546,10 +1546,10 @@
    "name": "a1-erlebnis",
    "value": "a",
    "answer": "false",
-   "x": 540,
-   "y": 1297,
-   "w": 26,
-   "h": 26
+   "x": 539,
+   "y": 1299,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "a1-besucher-r",
@@ -1559,10 +1559,10 @@
    "name": "a1-besucher",
    "value": "r",
    "answer": "false",
-   "x": 350,
-   "y": 1323,
-   "w": 26,
-   "h": 26
+   "x": 348,
+   "y": 1328,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "a1-besucher-a",
@@ -1572,10 +1572,10 @@
    "name": "a1-besucher",
    "value": "a",
    "answer": "true",
-   "x": 540,
-   "y": 1323,
-   "w": 26,
-   "h": 26
+   "x": 539,
+   "y": 1328,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "a1-ring-r",
@@ -1585,10 +1585,10 @@
    "name": "a1-ring",
    "value": "r",
    "answer": "true",
-   "x": 350,
-   "y": 1354,
-   "w": 26,
-   "h": 26
+   "x": 348,
+   "y": 1359,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "a1-ring-a",
@@ -1598,10 +1598,10 @@
    "name": "a1-ring",
    "value": "a",
    "answer": "false",
-   "x": 540,
-   "y": 1354,
-   "w": 26,
-   "h": 26
+   "x": 539,
+   "y": 1359,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "a1-bier-r",
@@ -1611,10 +1611,10 @@
    "name": "a1-bier",
    "value": "r",
    "answer": "false",
-   "x": 350,
-   "y": 1386,
-   "w": 26,
-   "h": 26
+   "x": 348,
+   "y": 1387,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "a1-bier-a",
@@ -1624,10 +1624,10 @@
    "name": "a1-bier",
    "value": "a",
    "answer": "true",
-   "x": 540,
-   "y": 1386,
-   "w": 26,
-   "h": 26
+   "x": 539,
+   "y": 1387,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "a1-restaurant-r",
@@ -1637,10 +1637,10 @@
    "name": "a1-restaurant",
    "value": "r",
    "answer": "true",
-   "x": 350,
-   "y": 1411,
-   "w": 26,
-   "h": 26
+   "x": 348,
+   "y": 1416,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "a1-restaurant-a",
@@ -1650,10 +1650,70 @@
    "name": "a1-restaurant",
    "value": "a",
    "answer": "false",
-   "x": 540,
-   "y": 1411,
-   "w": 26,
-   "h": 26
+   "x": 539,
+   "y": 1416,
+   "w": 19,
+   "h": 19
+  },
+  {
+   "id": "own-0",
+   "group": "own",
+   "kind": "text",
+   "label": "Sprechen: Wann und wo?",
+   "x": 255,
+   "y": 461,
+   "w": 208,
+   "h": 29
+  },
+  {
+   "id": "own-1",
+   "group": "own",
+   "kind": "text",
+   "label": "Sprechen: Wer hat eingeladen?",
+   "x": 553,
+   "y": 438,
+   "w": 239,
+   "h": 48
+  },
+  {
+   "id": "own-2",
+   "group": "own",
+   "kind": "text",
+   "label": "Sprechen: Wer war dort?",
+   "x": 866,
+   "y": 440,
+   "w": 233,
+   "h": 45
+  },
+  {
+   "id": "own-3",
+   "group": "own",
+   "kind": "text",
+   "label": "Sprechen: Was haben Sie gegessen/getrunken?",
+   "x": 256,
+   "y": 622,
+   "w": 233,
+   "h": 34
+  },
+  {
+   "id": "own-4",
+   "group": "own",
+   "kind": "text",
+   "label": "Sprechen: Was hat Ihnen gut gefallen?",
+   "x": 574,
+   "y": 615,
+   "w": 234,
+   "h": 40
+  },
+  {
+   "id": "own-5",
+   "group": "own",
+   "kind": "text",
+   "label": "Sprechen: Über meine Party erzählen",
+   "x": 226,
+   "y": 918,
+   "w": 882,
+   "h": 54
   }
  ],
  "audio": [
@@ -1661,42 +1721,34 @@
    "id": "au-cd1-53",
    "src": "assets/ab-cd1-track53.mp3",
    "label": "CD 1 Track 53",
-   "x": 103,
+   "x": 111,
    "y": 1078,
-   "w": 55,
-   "h": 26
+   "w": 39,
+   "h": 32
   },
   {
    "id": "au-cd1-55",
    "src": "assets/ab-cd1-track55.mp3",
    "label": "CD 1 Track 55",
-   "x": 668,
-   "y": 1080,
-   "w": 55,
-   "h": 26
+   "x": 673,
+   "y": 1079,
+   "w": 39,
+   "h": 32
   },
   {
    "id": "au-cd1-54",
    "src": "assets/ab-cd1-track54.mp3",
    "label": "CD 1 Track 54",
-   "x": 103,
-   "y": 1472,
-   "w": 55,
-   "h": 26
+   "x": 110,
+   "y": 1471,
+   "w": 39,
+   "h": 32
   }
  ],
  "groups": [
   {
-   "id": "sp1",
-   "label": "Ü1 Über eine Party erzählen"
-  },
-  {
    "id": "au1",
    "label": "Ü1 Was hören Sie? Kreuzen Sie an. (CD 1 Track 53-54)"
-  },
-  {
-   "id": "au2",
-   "label": "Ü2 Hören Sie und sprechen Sie dann. Das deutsche Jahr (CD 1 Track 55)"
   }
  ],
  "review": {
@@ -1706,7 +1758,8 @@
   "notes": [
    "TRAINING: SPRECHEN Ü1 (speaking, sentence frames with '…' - no fields; 'letztes Jahr' blue example; right yellow example box kept as words) + TRAINING: AUSSPRACHE vokalisches r.",
    "Ü1 answers from AB Lösungsschlüssel L12 Training Aussprache 1 (r wie r: Freund, Reise, Erlebnis, Ring, Restaurant; r wie a: Besucher, Bier). Straße/Silvester rows not in the key: answers derived from the group names themselves (Straße = r wie r, Silvester = r wie a).",
-   "Ü2 listen-and-repeat: no fields. Audio: CD 1 Tracks 53 (Ü1), 54 (noch einmal/nachsprechen), 55 (Ü2). Lektion corner '12' cut, omitted; right Modul tab cut, omitted."
+   "Ü2 listen-and-repeat: no fields. Audio: CD 1 Tracks 53 (Ü1), 54 (noch einmal/nachsprechen), 55 (Ü2). Lektion corner '12' cut, omitted; right Modul tab cut, omitted.",
+   "2026-11-16: Originalscan/fonts,9alignedX-radiogroups,5notecards+partywriting,CD53/54/55."
   ]
  }
 }
