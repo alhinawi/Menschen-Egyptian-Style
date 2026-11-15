@@ -1704,102 +1704,268 @@
   {
    "id": "l9-5-2",
    "group": "l9-5",
-   "kind": "text",
-   "x": 319,
-   "y": 352,
-   "w": 253,
-   "h": 22,
-   "answer": "isst du gern"
+   "kind": "select",
+   "x": 320,
+   "y": 351,
+   "w": 252,
+   "h": 24,
+   "answer": "isst du gern",
+   "label": "l9-5-2",
+   "options": [
+    {
+     "value": "mag ich auch gern",
+     "label": "mag ich auch gern"
+    },
+    {
+     "value": "Isst du auch gern",
+     "label": "Isst du auch gern"
+    },
+    {
+     "value": "isst du gern",
+     "label": "isst du gern"
+    },
+    {
+     "value": "esse ich sehr gern",
+     "label": "esse ich sehr gern"
+    }
+   ]
   },
   {
    "id": "l9-5-3",
    "group": "l9-5",
-   "kind": "text",
-   "x": 441,
+   "kind": "select",
+   "x": 440,
    "y": 378,
-   "w": 252,
-   "h": 22,
-   "answer": "esse ich sehr gern"
+   "w": 251,
+   "h": 24,
+   "answer": "esse ich sehr gern",
+   "label": "l9-5-3",
+   "options": [
+    {
+     "value": "mag ich auch gern",
+     "label": "mag ich auch gern"
+    },
+    {
+     "value": "Isst du auch gern",
+     "label": "Isst du auch gern"
+    },
+    {
+     "value": "isst du gern",
+     "label": "isst du gern"
+    },
+    {
+     "value": "esse ich sehr gern",
+     "label": "esse ich sehr gern"
+    }
+   ]
   },
   {
    "id": "l9-5-4",
    "group": "l9-5",
-   "kind": "text",
-   "x": 405,
-   "y": 406,
-   "w": 250,
-   "h": 22,
-   "answer": "mag ich auch gern"
+   "kind": "select",
+   "x": 402,
+   "y": 404,
+   "w": 252,
+   "h": 24,
+   "answer": "mag ich auch gern",
+   "label": "l9-5-4",
+   "options": [
+    {
+     "value": "mag ich auch gern",
+     "label": "mag ich auch gern"
+    },
+    {
+     "value": "Isst du auch gern",
+     "label": "Isst du auch gern"
+    },
+    {
+     "value": "isst du gern",
+     "label": "isst du gern"
+    },
+    {
+     "value": "esse ich sehr gern",
+     "label": "esse ich sehr gern"
+    }
+   ]
   },
   {
    "id": "l9-5-5",
    "group": "l9-5",
-   "kind": "text",
-   "x": 230,
-   "y": 452,
+   "kind": "select",
+   "x": 229,
+   "y": 454,
    "w": 252,
-   "h": 22,
-   "answer": "Isst du auch gern"
+   "h": 24,
+   "answer": "Isst du auch gern",
+   "label": "l9-5-5",
+   "options": [
+    {
+     "value": "mag ich auch gern",
+     "label": "mag ich auch gern"
+    },
+    {
+     "value": "Isst du auch gern",
+     "label": "Isst du auch gern"
+    },
+    {
+     "value": "isst du gern",
+     "label": "isst du gern"
+    },
+    {
+     "value": "esse ich sehr gern",
+     "label": "esse ich sehr gern"
+    }
+   ]
   },
   {
    "id": "l9-6-b",
    "group": "l9-6",
-   "kind": "text",
+   "kind": "select",
    "x": 390,
-   "y": 772,
-   "w": 104,
-   "h": 22,
-   "answer": "erst"
+   "y": 768,
+   "w": 101,
+   "h": 24,
+   "answer": "erst",
+   "label": "l9-6-b",
+   "options": [
+    {
+     "value": "schon",
+     "label": "schon"
+    },
+    {
+     "value": "erst",
+     "label": "erst"
+    }
+   ]
   },
   {
    "id": "l9-6-c1",
    "group": "l9-6",
-   "kind": "text",
+   "kind": "select",
    "x": 372,
-   "y": 806,
-   "w": 100,
-   "h": 20,
-   "answer": "schon"
+   "y": 804,
+   "w": 101,
+   "h": 24,
+   "answer": "schon",
+   "label": "l9-6-c1",
+   "options": [
+    {
+     "value": "schon",
+     "label": "schon"
+    },
+    {
+     "value": "erst",
+     "label": "erst"
+    }
+   ]
   },
   {
    "id": "l9-6-c2",
    "group": "l9-6",
-   "kind": "text",
-   "x": 688,
+   "kind": "select",
+   "x": 687,
    "y": 806,
-   "w": 98,
-   "h": 20,
-   "answer": "erst"
+   "w": 101,
+   "h": 24,
+   "answer": "erst",
+   "label": "l9-6-c2",
+   "options": [
+    {
+     "value": "schon",
+     "label": "schon"
+    },
+    {
+     "value": "erst",
+     "label": "erst"
+    }
+   ]
   },
   {
    "id": "l9-7-b",
    "group": "l9-7",
-   "kind": "text",
-   "x": 272,
-   "y": 984,
-   "w": 122,
-   "h": 22,
-   "answer": "möchten"
+   "kind": "select",
+   "x": 267,
+   "y": 980,
+   "w": 126,
+   "h": 24,
+   "answer": "möchten",
+   "label": "l9-7-b",
+   "options": [
+    {
+     "value": "möchte",
+     "label": "möchte"
+    },
+    {
+     "value": "möchtest",
+     "label": "möchtest"
+    },
+    {
+     "value": "möchten",
+     "label": "möchten"
+    },
+    {
+     "value": "möchtet",
+     "label": "möchtet"
+    }
+   ]
   },
   {
    "id": "l9-7-c",
    "group": "l9-7",
-   "kind": "text",
-   "x": 260,
-   "y": 1030,
-   "w": 124,
-   "h": 22,
-   "answer": "möchte"
+   "kind": "select",
+   "x": 262,
+   "y": 1031,
+   "w": 118,
+   "h": 24,
+   "answer": "möchte",
+   "label": "l9-7-c",
+   "options": [
+    {
+     "value": "möchte",
+     "label": "möchte"
+    },
+    {
+     "value": "möchtest",
+     "label": "möchtest"
+    },
+    {
+     "value": "möchten",
+     "label": "möchten"
+    },
+    {
+     "value": "möchtet",
+     "label": "möchtet"
+    }
+   ]
   },
   {
    "id": "l9-7-d",
    "group": "l9-7",
-   "kind": "text",
-   "x": 390,
-   "y": 1058,
-   "w": 140,
-   "h": 22,
-   "answer": "möchtest"
+   "kind": "select",
+   "x": 393,
+   "y": 1056,
+   "w": 126,
+   "h": 24,
+   "answer": "möchtest",
+   "label": "l9-7-d",
+   "options": [
+    {
+     "value": "möchte",
+     "label": "möchte"
+    },
+    {
+     "value": "möchtest",
+     "label": "möchtest"
+    },
+    {
+     "value": "möchten",
+     "label": "möchten"
+    },
+    {
+     "value": "möchtet",
+     "label": "möchtet"
+    }
+   ]
   },
   {
    "id": "l9-8-a1",
@@ -1807,11 +1973,12 @@
    "kind": "radio",
    "name": "l9-8-a",
    "value": "Nein, danke.",
-   "x": 205,
-   "y": 1208,
-   "w": 24,
-   "h": 24,
-   "answer": "false"
+   "x": 209,
+   "y": 1212,
+   "w": 18,
+   "h": 18,
+   "answer": "false",
+   "label": "l9-8-a1"
   },
   {
    "id": "l9-8-a2",
@@ -1819,11 +1986,12 @@
    "kind": "radio",
    "name": "l9-8-a",
    "value": "Danke, gleichfalls.",
-   "x": 205,
-   "y": 1233,
-   "w": 24,
-   "h": 24,
-   "answer": "true"
+   "x": 209,
+   "y": 1237,
+   "w": 18,
+   "h": 18,
+   "answer": "true",
+   "label": "l9-8-a2"
   },
   {
    "id": "l9-8-b1",
@@ -1831,11 +1999,12 @@
    "kind": "radio",
    "name": "l9-8-b",
    "value": "Bitte nein.",
-   "x": 205,
-   "y": 1297,
-   "w": 24,
-   "h": 24,
-   "answer": "false"
+   "x": 209,
+   "y": 1299,
+   "w": 18,
+   "h": 18,
+   "answer": "false",
+   "label": "l9-8-b1"
   },
   {
    "id": "l9-8-b2",
@@ -1843,11 +2012,12 @@
    "kind": "radio",
    "name": "l9-8-b",
    "value": "Nein, nicht so gern.",
-   "x": 205,
-   "y": 1322,
-   "w": 24,
-   "h": 24,
-   "answer": "true"
+   "x": 209,
+   "y": 1325,
+   "w": 18,
+   "h": 18,
+   "answer": "true",
+   "label": "l9-8-b2"
   },
   {
    "id": "l9-8-c1",
@@ -1855,11 +2025,12 @@
    "kind": "radio",
    "name": "l9-8-c",
    "value": "Ja, ebenfalls.",
-   "x": 468,
-   "y": 1210,
-   "w": 24,
-   "h": 24,
-   "answer": "false"
+   "x": 470,
+   "y": 1212,
+   "w": 18,
+   "h": 18,
+   "answer": "false",
+   "label": "l9-8-c1"
   },
   {
    "id": "l9-8-c2",
@@ -1867,11 +2038,12 @@
    "kind": "radio",
    "name": "l9-8-c",
    "value": "Ja, gern.",
-   "x": 468,
-   "y": 1235,
-   "w": 24,
-   "h": 24,
-   "answer": "true"
+   "x": 470,
+   "y": 1237,
+   "w": 18,
+   "h": 18,
+   "answer": "true",
+   "label": "l9-8-c2"
   },
   {
    "id": "l9-8-d1",
@@ -1879,11 +2051,12 @@
    "kind": "radio",
    "name": "l9-8-d",
    "value": "Sehr gut, danke.",
-   "x": 468,
-   "y": 1296,
-   "w": 24,
-   "h": 24,
-   "answer": "true"
+   "x": 470,
+   "y": 1299,
+   "w": 18,
+   "h": 18,
+   "answer": "true",
+   "label": "l9-8-d1"
   },
   {
    "id": "l9-8-d2",
@@ -1891,11 +2064,12 @@
    "kind": "radio",
    "name": "l9-8-d",
    "value": "Gut. Bitte sehr.",
-   "x": 468,
-   "y": 1322,
-   "w": 24,
-   "h": 24,
-   "answer": "false"
+   "x": 470,
+   "y": 1325,
+   "w": 18,
+   "h": 18,
+   "answer": "false",
+   "label": "l9-8-d2"
   }
  ],
  "audio": [],
@@ -1923,7 +2097,8 @@
   "totalWords": 242,
   "notes": [
    "Ü5 first blank (mögt ihr) printed cursive example; Ü6 a (schon) and Ü7 a (möchtet) printed examples",
-   "Ü8 radios: correct option per answer key (a Danke gleichfalls, b Nein nicht so gern, c Ja gern, d Sehr gut danke)"
+   "Ü8 radios: correct option per answer key (a Danke gleichfalls, b Nein nicht so gern, c Ja gern, d Sehr gut danke)",
+   "2026-11-15: restored source scan/fonts;all18controls pixel-aligned,phrase bank/schon-erst/möchte are selects,printedexamples untouched,eight answer radios source-aligned."
   ]
  }
 }
