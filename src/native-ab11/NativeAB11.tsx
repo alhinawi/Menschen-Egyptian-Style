@@ -30,30 +30,30 @@ export function NativeAB11({page}:{page:string}){
  return <div className="nativeAB11" ref={host} data-native-ab11-page={page}><div className="nabCanvas" style={{transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='6'&&<>
  {img('cover',70,115,330,78)}<div className="nabBanner" style={{left:400,top:115,width:613,height:78}}/>{text(488,135,520,'Hallo! Ich bin Nicole ...','nabCoverTitle')}
- {title('1',250,'Ordnen Sie zu.','KB 2')}{text(218,291,620,'heiße | du | Hallo | heißt | ich | ich | wer | wie','nabBank')}
- {text(213,331,390,'■  Hallo! Ich bin Wiebke. Und')}{field('1-wer',486,332,64,'1a Und wer')}{text(238,357,55,'bist')}{field('1-du',275,358,110,'1a bist du')}{text(386,357,25,'?')}
+ {title('1',250,'Ordnen Sie zu.','KB 2')}{text(218,291,357,'heiße | du | Hallo | heißt | ich | ich | wer | wie','nabBank')}
+ {text(213,331,28,'■')}{text(238,331,62,'Hallo!')}{img('hand1',291,327,36,28)}{text(328,331,200,'bin Wiebke. Und')}{field('1-wer',486,332,64,'1a Und wer')}{text(238,357,55,'bist')}{field('1-du',275,358,110,'1a bist du')}{text(386,357,25,'?')}
  {text(213,383,28,'▲','nabGreen')}{field('1-hallo',240,383,95,'1a Hallo')}{text(336,383,15,',')}{field('1-ich',348,383,75,'1a ich')}{text(423,383,200,'bin Stefan.')}
  {text(600,332,235,'■  Ich heiße René. Und')}{field('1-wie',806,333,80,'1b wie')}{field('1-heisst',624,357,112,'1b heißt')}{text(740,357,70,'du?')}{text(600,383,66,'▲  Ich')}{field('1-heisse',660,383,128,'1b heiße')}{text(793,383,110,'Alfred.')}
  {check('1',215,416,{'1-wer':'wer','1-du':'du','1-hallo':'Hallo','1-ich':'ich','1-wie':'wie','1-heisst':'heißt','1-heisse':'heiße'})}
  {title('2',447,'Sortieren Sie.','KB 3','Kommunikation')}{img('dialogue',689,442,331,222)}
  {['Ja, ich komme aus Deutschland.\nUnd woher kommst du, Roberto? Aus Portugal?','Aus Brasilien? Wow!','Ich heiße Melanie.','Nein, ich komme aus Brasilien.','Hallo! Ich heiße Roberto, und wer bist du?','Und woher kommst du? Aus Deutschland?'].map((s,i)=>{const y=[485,537,562,587,613,639][i];return <div key={i}>{field('2-'+i,214,y-3,28,'2 Satz '+(i+1),'nabCircle')}{text(247,y,450,s)}</div>})}
- {check('2',215,671,{'2-0':'4','2-1':'6','2-2':'2','2-3':'5','2-4':'1','2-5':'3'})}
- {title('3',708,'Ordnen Sie zu.','KB 3')}
- <LineMatching id="3" left={['a  Wie','b  Ich heiße','c  Woher','d  Ich komme','e  Wer','f  Ich']} right={['bin Pedro.','kommst du?','aus der Schweiz.','heißt du?','bist du?','Sandra.']} values={v} onMatch={set} leftX={237} rightX={449} leftWidth={156} rightWidth={210} ys={Array.from({length:6},(_,i)=>737+i*26)} example={[0,3]}/>
- {check('3',215,900,{'3-1':'5','3-2':'1','3-3':'2','3-4':'4','3-5':'0'})}
- {title('4',935,'Ergänzen Sie.','KB 3')}
- {text(214,979,330,'a  ■  Hallo! Ich bin Simon.')}{field('4-wie',473,979,95,'4a Wie')}{text(258,1005,160,'heißt du?')}
- {text(235,1031,65,'▲  Ich','nabGreen')}{field('4-heisse',295,1031,126,'4a heiße')}{text(431,1031,75,'Steffi.')}
- {text(235,1057,65,'■  Und')}{field('4-woher',300,1057,137,'4a woher')}{text(442,1057,95,'kommst')}{field('4-du',258,1083,132,'4a du')}{text(394,1083,176,'? Aus Österreich?')}
- {text(235,1109,100,'▲  Nein, ich')}{field('4-komme',357,1109,110,'4a komme')}{text(475,1109,70,'aus')}{text(259,1135,250,'Deutschland.')}
- {text(607,979,260,'b  ■  Hallo! Ich bin Sofia,')}{field('4-und',869,979,95,'4b und')}{text(661,1005,40,'wer')}{field('4-bist',705,1005,121,'4b bist')}{text(831,1005,55,'du?')}
- {text(635,1031,24,'▲','nabGreen')}{field('4-ich',661,1031,128,'4b Ich')}{text(793,1031,170,'heiße Philipp.')}
- {text(635,1057,121,'■  Und woher')}{field('4-kommst',783,1057,102,'4b kommst')}{text(889,1057,55,'du?')}
- {text(635,1083,120,'▲  Ich komme')}{field('4-aus',783,1083,102,'4b aus')}{text(889,1083,150,'der Schweiz.')}
- {check('4',215,1147,{'4-wie':'Wie','4-heisse':'heiße','4-woher':'woher','4-du':'du','4-komme':'komme','4-und':'und','4-bist':'bist','4-ich':'Ich','4-kommst':'kommst','4-aus':'aus'})}
+ {img('hand2',214,612,19,23)}{check('2',215,671,{'2-0':'4','2-1':'6','2-2':'2','2-3':'5','2-4':'1','2-5':'3'})}
+ {title('3',692,'Ordnen Sie zu.','KB 3')}
+ <LineMatching id="3" left={['a  Wie','b  Ich heiße','c  Woher','d  Ich komme','e  Wer','f  Ich']} right={['bin Pedro.','kommst du?','aus der Schweiz.','heißt du?','bist du?','Sandra.']} values={v} onMatch={set} leftX={214} rightX={409} leftWidth={158} rightWidth={250} leftDotXs={[277,335,310,350,292,279]} rightDotXs={[443,443,443,443,443,443]} ys={Array.from({length:6},(_,i)=>721+i*26)} example={[0,3]}/>
+ {check('3',215,884,{'3-1':'5','3-2':'1','3-3':'2','3-4':'4','3-5':'0'})}
+ {title('4',919,'Ergänzen Sie.','KB 3')}
+ {text(214,963,25,'a')}{text(239,963,25,'■')}{text(258,963,62,'Hallo!')}{img('hand4',308,957,35,26)}{text(345,963,180,'bin Simon.')}{field('4-wie',442,963,128,'4a Wie')}{text(258,989,160,'heißt du?')}
+ {text(235,1015,65,'▲  Ich')}{field('4-heisse',295,1015,126,'4a heiße')}{text(431,1015,75,'Steffi.')}
+ {text(235,1041,65,'■  Und')}{field('4-woher',300,1041,137,'4a woher')}{text(442,1041,95,'kommst')}{field('4-du',258,1067,132,'4a du')}{text(394,1067,176,'? Aus Österreich?')}
+ {text(235,1093,100,'▲  Nein, ich')}{field('4-komme',357,1093,110,'4a komme')}{text(475,1093,70,'aus')}{text(259,1119,250,'Deutschland.')}
+ {text(607,963,260,'b  ■  Hallo! Ich bin Sofia,')}{field('4-und',838,963,125,'4b und')}{text(661,989,40,'wer')}{field('4-bist',700,989,121,'4b bist')}{text(831,989,55,'du?')}
+ {text(635,1015,24,'▲','nabGreen')}{field('4-ich',661,1015,128,'4b Ich')}{text(793,1015,170,'heiße Philipp.')}
+ {text(635,1041,121,'■  Und woher')}{field('4-kommst',760,1041,125,'4b kommst')}{text(889,1041,55,'du?')}
+ {text(635,1067,120,'▲  Ich komme')}{field('4-aus',760,1067,125,'4b aus')}{text(889,1067,150,'der Schweiz.')}
+ {check('4',215,1131,{'4-wie':'Wie','4-heisse':'heiße','4-woher':'woher','4-du':'du','4-komme':'komme','4-und':'und','4-bist':'bist','4-ich':'Ich','4-kommst':'kommst','4-aus':'aus'})}
  {title('5',1178,'Länder','KB 4','Wörter')}{text(211,1216,310,'a  Welches Land passt? Ordnen Sie zu.','nabSmallTitle')}{text(530,1216,490,'Deutschland | Frankreich | Österreich | die Schweiz | die Türkei','nabBank nabLanderBank')}
  {img('landmarks',215,1250,811,111)}
- {['Brandenburger Tor','Eiffelturm','Stephansdom','Matterhorn','Hagia Sophia'].map((s,i)=><div key={s}>{text([230,415,534,705,908][i],1369,[155,100,145,150,150][i],s,'nabCaption')}{i===2?text(545,1394,110,'Österreich','nabExample'):field('5-'+i,[224,397,545,685,888][i],1394,[125,105,110,140,140][i],'5 '+s)}</div>)}
+ {['Brandenburger Tor','Eiffelturm','Stephansdom','Matterhorn','Hagia Sophia'].map((s,i)=><div key={s}>{text([230,415,534,705,908][i],1369,[155,100,145,150,150][i],s,'nabCaption')}{i===2?img('hand5',540,1390,123,26):field('5-'+i,[224,397,545,685,888][i],1394,[125,105,110,140,140][i],'5 '+s)}</div>)}
  {check('5',215,1433,{'5-0':'Deutschland','5-1':'Frankreich','5-3':'die Schweiz|Schweiz','5-4':'die Türkei|Türkei'})}
  </>}
  {page==='7'&&<>
@@ -217,6 +217,6 @@ export function NativeAB11({page}:{page:string}){
  {title('2',1180,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','','')}
  {open('eigene-woerter',202,1226,715,170,'2 Weitere Wörter und Notizen')}{save('2',202,1410)}
  </>}
- {text(Number(page)%2?991:50,1485,80,'Modul 1','nabFooter')}{text(Number(page)%2?920:130,1485,500,page+'  |  '+({'6':'sechs','7':'sieben','8':'acht','9':'neun','10':'zehn','11':'elf'} as Record<string,string>)[page],'nabFooter')}
+ {text(Number(page)%2?991:page==='6'?64:50,page==='6'?1443:1485,80,'Modul 1','nabFooter')}{text(Number(page)%2?920:page==='6'?143:130,page==='6'?1443:1485,500,page+'  |  '+({'6':'sechs','7':'sieben','8':'acht','9':'neun','10':'zehn','11':'elf'} as Record<string,string>)[page],'nabFooter')}
  </div><audio ref={audio} className="nabPlayer" controls hidden aria-label="Originalaudio Arbeitsbuch"/></div>
 }
