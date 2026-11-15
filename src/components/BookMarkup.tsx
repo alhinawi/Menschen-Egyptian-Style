@@ -7,6 +7,7 @@ import {TaskControl, TaskFeedback, TaskMode} from '../exercises/CustomTasks';
 import {createElement, memo, useLayoutEffect} from 'react';
 import type {ReactNode} from 'react';
 import {CoverSocials} from './CoverSocials';
+import {PremiumCover} from './PremiumCover';
 import {navigateHref} from '../navigate';
 import {SelectionControls} from '../meanings/SelectionControls';
 import {PersistentField} from '../persistence/PersistentFields';
@@ -36,6 +37,10 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   const path = String(key);
   if (typeof node === 'string') return node;
   const [tag, attrs, children] = node;
+  if (attrs.class?.split(' ').includes('coverFrame')) {
+    const artwork = children.find((n): n is [string, MarkupAttrs, MarkupNode[]] => Array.isArray(n) && n[0] === 'img' && n[1].class === 'coverArtwork');
+    if (artwork) return <PremiumCover key={key} src={artwork[1].src} alt={artwork[1].alt}/>;
+  }
   if(attrs.class?.split(' ').includes('helpBanner'))return <div key={key} className="helpBanner" dir="rtl" lang="ar-EG">{READER_HELP}</div>;
   if(attrs.id==='palette')return <button key={key} id="palette" hidden aria-hidden="true" tabIndex={-1} style={{display:'none'}}/>;
   if('data-react-theme-slot' in attrs)return createElement(ReaderProfile, {key});
