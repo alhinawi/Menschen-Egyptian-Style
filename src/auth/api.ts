@@ -89,6 +89,13 @@ export async function updateMe(patch: { name?: string; avatar?: string | null })
   return d.user;
 }
 
+// ---------- leaderboard ----------
+
+export interface LeaderboardRow { rank: number; name: string; points: number }
+export function getLeaderboard(): Promise<{ top: LeaderboardRow[]; me: { rank: number; points: number } | null }> {
+  return req('/leaderboard', { auth: true });
+}
+
 // ---------- progress sync ----------
 
 export function getProgress(): Promise<{ progress: Record<string, unknown> | null; updated_at: string | null }> {
