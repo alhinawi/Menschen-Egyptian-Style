@@ -1917,9 +1917,9 @@
     }
    ],
    "x": 252,
-   "y": 419,
+   "y": 422,
    "w": 123,
-   "h": 16
+   "h": 23
   },
   {
    "id": "t1-c",
@@ -1954,9 +1954,9 @@
     }
    ],
    "x": 407,
-   "y": 490,
+   "y": 493,
    "w": 120,
-   "h": 16
+   "h": 23
   },
   {
    "id": "t1-d",
@@ -1991,9 +1991,9 @@
     }
    ],
    "x": 680,
-   "y": 335,
+   "y": 338,
    "w": 125,
-   "h": 16
+   "h": 23
   },
   {
    "id": "t1-e",
@@ -2028,9 +2028,9 @@
     }
    ],
    "x": 840,
-   "y": 398,
+   "y": 401,
    "w": 122,
-   "h": 16
+   "h": 23
   },
   {
    "id": "t1-f",
@@ -2065,86 +2065,184 @@
     }
    ],
    "x": 705,
-   "y": 512,
+   "y": 515,
    "w": 130,
-   "h": 16
+   "h": 23
   },
   {
    "id": "t2-b-sg",
    "group": "t2",
-   "kind": "text",
+   "kind": "select",
    "label": "2b Artikel Singular",
    "answer": "die",
    "x": 247,
-   "y": 667,
+   "y": 670,
    "w": 61,
-   "h": 16
+   "h": 22,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    }
+   ]
   },
   {
    "id": "t2-c-sg",
    "group": "t2",
-   "kind": "text",
+   "kind": "select",
    "label": "2c Artikel Singular",
    "answer": "der",
    "x": 248,
-   "y": 696,
+   "y": 699,
    "w": 60,
-   "h": 16
+   "h": 22,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    }
+   ]
   },
   {
    "id": "t2-d-sg",
    "group": "t2",
-   "kind": "text",
+   "kind": "select",
    "label": "2d Artikel Singular",
    "answer": "das",
    "x": 248,
-   "y": 725,
+   "y": 728,
    "w": 60,
-   "h": 16
+   "h": 22,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    }
+   ]
   },
   {
    "id": "t2-e-sg",
    "group": "t2",
-   "kind": "text",
+   "kind": "select",
    "label": "2e Artikel Singular",
    "answer": "das",
    "x": 664,
-   "y": 634,
+   "y": 637,
    "w": 61,
-   "h": 16
+   "h": 22,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    }
+   ]
   },
   {
    "id": "t2-f-sg",
    "group": "t2",
-   "kind": "text",
+   "kind": "select",
    "label": "2f Artikel Singular",
    "answer": "der",
    "x": 664,
-   "y": 663,
+   "y": 666,
    "w": 61,
-   "h": 16
+   "h": 22,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    }
+   ]
   },
   {
    "id": "t2-g-sg",
    "group": "t2",
-   "kind": "text",
+   "kind": "select",
    "label": "2g Artikel Singular",
    "answer": "der",
    "x": 665,
-   "y": 692,
+   "y": 695,
    "w": 60,
-   "h": 16
+   "h": 22,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    }
+   ]
   },
   {
    "id": "t2-h-sg",
    "group": "t2",
-   "kind": "text",
+   "kind": "select",
    "label": "2h Artikel Singular",
    "answer": "der",
    "x": 665,
-   "y": 720,
+   "y": 723,
    "w": 60,
-   "h": 16
+   "h": 22,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    }
+   ]
   },
   {
    "id": "t2-b-pl",
@@ -2153,9 +2251,9 @@
    "label": "2b Plural",
    "answer": "die Briefmarken",
    "x": 448,
-   "y": 669,
+   "y": 672,
    "w": 135,
-   "h": 16
+   "h": 22
   },
   {
    "id": "t2-c-pl",
@@ -2164,9 +2262,9 @@
    "label": "2c Plural",
    "answer": "die Stifte",
    "x": 448,
-   "y": 698,
+   "y": 701,
    "w": 135,
-   "h": 16
+   "h": 22
   },
   {
    "id": "t2-d-pl",
@@ -2175,9 +2273,9 @@
    "label": "2d Plural",
    "answer": "die Handys",
    "x": 448,
-   "y": 728,
+   "y": 731,
    "w": 135,
-   "h": 16
+   "h": 22
   },
   {
    "id": "t2-e-pl",
@@ -2186,9 +2284,9 @@
    "label": "2e Plural",
    "answer": "die Formulare",
    "x": 868,
-   "y": 634,
-   "w": 105,
-   "h": 16
+   "y": 637,
+   "w": 134,
+   "h": 22
   },
   {
    "id": "t2-f-pl",
@@ -2197,9 +2295,9 @@
    "label": "2f Plural",
    "answer": "die Drucker",
    "x": 868,
-   "y": 664,
-   "w": 105,
-   "h": 16
+   "y": 667,
+   "w": 134,
+   "h": 22
   },
   {
    "id": "t2-g-pl",
@@ -2208,9 +2306,9 @@
    "label": "2g Plural",
    "answer": "die Termine",
    "x": 868,
-   "y": 694,
-   "w": 105,
-   "h": 16
+   "y": 697,
+   "w": 134,
+   "h": 22
   },
   {
    "id": "t2-h-pl",
@@ -2219,9 +2317,9 @@
    "label": "2h Plural",
    "answer": "die Kalender",
    "x": 868,
-   "y": 723,
-   "w": 105,
-   "h": 16
+   "y": 726,
+   "w": 134,
+   "h": 22
   },
   {
    "id": "t3-aA-der",
@@ -2434,9 +2532,9 @@
     }
    ],
    "x": 245,
-   "y": 1110,
+   "y": 1113,
    "w": 155,
-   "h": 16
+   "h": 23
   },
   {
    "id": "t4-b",
@@ -2467,9 +2565,9 @@
     }
    ],
    "x": 570,
-   "y": 1103,
+   "y": 1106,
    "w": 160,
-   "h": 16
+   "h": 23
   },
   {
    "id": "t4-c",
@@ -2500,9 +2598,9 @@
     }
    ],
    "x": 570,
-   "y": 1160,
+   "y": 1163,
    "w": 140,
-   "h": 16
+   "h": 23
   },
   {
    "id": "t4-d",
@@ -2533,9 +2631,9 @@
     }
    ],
    "x": 380,
-   "y": 1199,
+   "y": 1202,
    "w": 160,
-   "h": 16
+   "h": 23
   },
   {
    "id": "t4-e",
@@ -2566,9 +2664,9 @@
     }
    ],
    "x": 577,
-   "y": 1200,
+   "y": 1203,
    "w": 160,
-   "h": 16
+   "h": 23
   }
  ],
  "audio": [],
@@ -2599,7 +2697,8 @@
    "1a and the 3a question are printed publisher examples (Telefonnummer printed blue in the word bank and question; den pre-marked in 3a question), so they have no fields.",
    "2: plural answers include the article, following the printed example die Rechnungen; faint dotted rules in the right-block Plural column verified visually on zoomed crop.",
    "3 answers: Der (Nom.), einen Termin, einen Bleistift, einen Kugelschreiber, keinen Schlüssel, einen Schlüssel, der Computer (Nom.).",
-   "4 answers: a Guten Tag, b Hier ist, c Wo ist denn, d Vielen Dank, e Auf Wiederhören."
+   "4 answers: a Guten Tag, b Hier ist, c Wo ist denn, d Vielen Dank, e Auf Wiederhören.",
+   "2026-11-15: source scan retained; singular articles are selects; right plural fields widened within column; choice markings highlight printed words; group and category scores follow printed paired-item scoring (5/7/7/5)."
   ]
  }
 }
