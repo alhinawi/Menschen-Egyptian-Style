@@ -1,3 +1,4 @@
+import {ChoiceInput} from '../exercises/ChoiceInput';
 import type {CSSProperties} from 'react';
 import {useLayoutEffect,useRef,useState} from 'react';
 import {PageImage} from '../components/PageImage';
@@ -28,11 +29,11 @@ export function NativeAB11P93(){
  if(it.k==='side')return <div key={i} className="p93Side" style={pos}>{it.t}</div>;
  if(it.k==='speaker')return <div key={i} className={'p93Speaker '+it.color} style={pos}/>;
  if(it.k==='open')return <textarea key={i} className="p93Field p93Open" aria-label={it.id} data-native-field={`ab11-p93-${it.id}`} style={pos} value={values[it.id]||''} onChange={e=>set(it.id,e.target.value)}/>;
- if(it.k==='radio')return <input key={i} type="radio" className={'p93Radio'+(checked[it.group]&&(!values[it.name]||values[it.name]===it.value)?(values[it.name]===it.answer?' correct':' wrong'):'')} data-native-radio={`ab11-p93-${it.id}`} name={`ab11-p93-${it.name}`} value={it.value} aria-label={it.name+': '+it.value} style={pos} checked={values[it.name]===it.value} onChange={()=>{set(it.name,it.value);C(c=>({...c,u9:false}))}}/>;
+ if(it.k==='radio')return <ChoiceInput key={i} type="radio" className={'p93Radio'+(checked[it.group]&&(!values[it.name]||values[it.name]===it.value)?(values[it.name]===it.answer?' correct':' wrong'):'')} data-native-radio={`ab11-p93-${it.id}`} name={`ab11-p93-${it.name}`} value={it.value} aria-label={it.name+': '+it.value} style={pos} checked={values[it.name]===it.value} onChange={()=>{set(it.name,it.value);C(c=>({...c,u9:false}))}}/>;
  if(it.k==='field'){
  const graded=checked[it.group]&&values[it.id]?.trim()&&it.answer;
  const status=graded?(it.answer.split('|').some((a:string)=>normalize(values[it.id])===normalize(a))?' correct':' wrong'):'';
- return <input key={i} data-native-field={`ab11-p93-${it.id}`} className={'p93Field'+status+(it.group==='u8a'?' p93NotebookField':'')} aria-label={it.id} style={{...pos,'--p93-answer-size':answerSize(values[it.id]||'',it.w)+'px'} as CSSProperties} value={values[it.id]||''} onChange={e=>set(it.id,e.target.value)}/>;
+ return <ChoiceInput key={i} data-native-field={`ab11-p93-${it.id}`} className={'p93Field'+status+(it.group==='u8a'?' p93NotebookField':'')} aria-label={it.id} style={{...pos,'--p93-answer-size':answerSize(values[it.id]||'',it.w)+'px'} as CSSProperties} value={values[it.id]||''} onChange={e=>set(it.id,e.target.value)}/>;
  }
  if(it.k==='check')return it.neutral?null:<div key={i} className="p93Check" data-native-task={it.group} style={pos}><CheckButton onClick={()=>C(c=>({...c,[it.group]:true}))}/><output aria-live="polite">{checked[it.group]?(groupCorrect(it.group)?'Richtig!':'Noch einmal'):''}</output></div>;
  return null;

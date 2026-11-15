@@ -1,3 +1,4 @@
+import {ChoiceInput} from '../exercises/ChoiceInput';
 import {CheckButton} from './CheckButton';
 import {PageImage} from './PageImage';
 import {usePageReset} from '../exercises/usePageReset';
@@ -38,9 +39,9 @@ export function HybridScan({data}:{data:ScanData}){
     const className='hybridField '+(status===undefined?'':status?'hybridCorrect':'hybridWrong');
     const props={key:f.id,className,style:box(f),'aria-label':f.label,'data-field-id':f.id};
     if(f.kind==='select')return <select {...props} value={values[f.id]||''} onChange={e=>update(f.id,e.target.value)}><option value=""/>{f.options?.map(o=><option key={o.value} value={o.value}>{o.label}</option>)}</select>;
-    if(f.kind==='radio')return <input {...props} type="radio" name={`${key}-${f.name||f.id}`} value={f.value} checked={values[f.name||f.id]===f.value} onChange={()=>update(f.name||f.id,f.value||'')}/>;
-    if(f.kind==='checkbox')return <input {...props} type="checkbox" checked={values[f.id]==='true'} onChange={e=>update(f.id,String(e.target.checked))}/>;
-    return <input {...props} type="text" value={values[f.id]||''} onChange={e=>update(f.id,e.target.value)} autoComplete="off" spellCheck={false}/>;
+    if(f.kind==='radio')return <ChoiceInput {...props} type="radio" name={`${key}-${f.name||f.id}`} value={f.value} checked={values[f.name||f.id]===f.value} onChange={()=>update(f.name||f.id,f.value||'')}/>;
+    if(f.kind==='checkbox')return <ChoiceInput {...props} type="checkbox" checked={values[f.id]==='true'} onChange={e=>update(f.id,String(e.target.checked))}/>;
+    return <ChoiceInput {...props} type="text" value={values[f.id]||''} onChange={e=>update(f.id,e.target.value)} autoComplete="off" spellCheck={false}/>;
    })}</div>
    {matchings.map(m=><span key={m.id} style={{display:'contents'}}>{m.masks?.map((b,i)=><span key={i} className="hybridMask" style={box(b)}/>)}<LineMatching id={m.id} answers={m.answers} left={m.left} right={m.right} values={values} onMatch={update} leftX={m.leftX} rightX={m.rightX} leftWidth={m.leftWidth} rightWidth={m.rightWidth} ys={m.ys} rightYs={m.rightYs} itemHeights={m.itemHeights} rightHeights={m.rightHeights} multiline={m.multiline} lineHeight={m.lineHeight} fontSize={m.fontSize} example={m.example} multiple={m.multiple} leftWidths={m.leftWidths} rightWidths={m.rightWidths} leftXs={m.leftXs} rightXs={m.rightXs} leftDotXs={m.leftDotXs} leftDotYs={m.leftDotYs} rightDotXs={m.rightDotXs} rightDotYs={m.rightDotYs} className={m.className} width={data.width} height={data.height}/></span>)}
    <ClipMarkers book={data.book} page={data.page}/>

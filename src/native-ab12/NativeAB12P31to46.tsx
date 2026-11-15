@@ -1,3 +1,4 @@
+import {ChoiceInput} from '../exercises/ChoiceInput';
 import {usePageReset} from '../exercises/usePageReset';
 import {LinedArea} from '../components/LinedArea';
 import {useLayoutEffect,useRef,useState} from 'react';
@@ -32,9 +33,9 @@ export function NativeAB12P31to46({page}:{page:string}){
  const rect=(x:number,y:number,w:number,h:number,c:string)=><div style={{position:'absolute',left:x,top:y,width:w,height:h,background:c}}/>;
  const lin=(x:number,y:number,w:number,h:number,c:string)=><div style={{position:'absolute',left:x,top:y,width:w,height:h,background:c}}/>;
  const art=(name:string,x:number,y:number,w:number,h:number)=><PageImage className="naArt" src={`assets/book-crops/native-ab12-p${page}-${name}.png`} alt={'Originalillustration '+name} style={{left:x,top:y,width:w,height:h}}/>;
- const field=(id:string,x:number,y:number,w:number,label:string,cls='')=><input className={'naField '+cls} aria-label={label} data-native-field={id} style={{left:x,top:y,width:w}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
+ const field=(id:string,x:number,y:number,w:number,label:string,cls='')=><ChoiceInput className={'naField '+cls} aria-label={label} data-native-field={id} style={{left:x,top:y,width:w}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
  const rule=(x:number,y:number,w:number)=><div className="naRule" style={{left:x,top:y,width:w}}/>;
- const dot=(id:string,value:string,x:number,y:number,label:string,checkbox=false)=><input className="naDot" type={checkbox?'checkbox':'radio'} aria-label={label} data-value={value} name={key+'-'+id} checked={checkbox?values[id]==='true':values[id]===value} onChange={e=>set(id,checkbox?String(e.target.checked):value)} style={{left:x,top:y}}/>;
+ const dot=(id:string,value:string,x:number,y:number,label:string,checkbox=false)=><ChoiceInput className="naDot" type={checkbox?'checkbox':'radio'} aria-label={label} data-value={value} name={key+'-'+id} checked={checkbox?values[id]==='true':values[id]===value} onChange={e=>set(id,checkbox?String(e.target.checked):value)} style={{left:x,top:y}}/>;
  const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}/><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const save=(id:string,x:number,y:number)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton onClick={()=>sn(s=>({...s,[id]:true}))}/><output aria-live="polite">{saved[id]?'Gespeichert':''}</output></div>;
  const arrow=(id:string,x:number,y:number,label:string)=><button className="naArrow" aria-label={label} data-native-arrow={id} style={{left:x,top:y}} onClick={()=>set(id,values[id]==='\u2197'?'\u2198':'\u2197')}>{values[id]||''}</button>;
