@@ -91,28 +91,42 @@ export function NativeAB11Next45({page}:{page:string}){
  {['b  Das ist eine Uhr.','c  Sie ist aus Plastik.','d  Ist das eine Seife?','e  Das ist keine Seife, das ist eine Brille.'].map((s,i)=><div key={s} className="mP39Stress" style={{left:560,top:1002+i*21}}>{s.split(' ').map((w,j)=> <span key={j}><button className={norm(v['au2-'+String.fromCharCode(98+i)]||'')===norm(w)?'stressed':''} aria-label={'au2-'+String.fromCharCode(98+i)+' '+w} onClick={()=>set('au2-'+String.fromCharCode(98+i),w)}>{w}</button>{' '}</span>)}</div>)}{c('au2',560,1141,()=>['Uhr','Plastik','Seife','Brille'].every((a,i)=>norm(v['au2-'+String.fromCharCode(98+i)]||'')===norm(a)))}
  {listen('25',523,1104)}{t(560,1097,310,'Hören Sie noch einmal und sprechen\nSie nach.','mP39Instruction')}{art('footer',705,1200,196,25)}
  </>})()}
- {page==='40'&&<>
- {head('TEST')}{title('1',210,'Markieren Sie und ordnen Sie zu.')}
- <div className="mSnake" style={{left:168,top:Y(253),width:670}}>{snake.split('').map((s,i)=>{const marked=(i>=4&&i<=7)||Object.keys(v).some(k=>{if(!k.startsWith('snake-')||v[k]!=='1')return false;const [,a,b]=k.split('-').map(Number);return i>=a&&i<=b});return <button key={i} className={(marked?'marked ':'')+(snakeStart===i?'active':'')} aria-label={'Buchstabenschlange '+i+' '+s} onClick={()=>snakeClick(i)}>{s}</button>})}</div>
- {txt(168,322,100,'Farben:')}{txt(274,322,115,'blau','mExample')}{f('t1-farben',398,320,120)}{txt(168,357,100,'Formen:')}{f('t1-formen-1',274,355,115)}{f('t1-formen-2',398,355,120)}
- {txt(540,322,145,'Gegenstände:')}{f('t1-gegenstaende-1',685,320,90)}{f('t1-gegenstaende-2',786,320,90)}{txt(540,357,140,'Materialien:')}{f('t1-materialien-1',685,355,90)}{f('t1-materialien-2',786,355,90)}
- {rule('t1',168,397,()=>norm(v['t1-farben']||'')==='orange'&&[['formen',['eckig','rund']],['gegenstaende',['Feuerzeug','Seife']],['materialien',['Kunststoff','Metall']]].every(([key,words])=>(words as string[]).every(a=>[v['t1-'+key+'-1'],v['t1-'+key+'-2']].map(s=>norm(s||'')).includes(norm(a))))&&Object.keys(v).filter(k=>k.startsWith('snake-')&&v[k]==='1').length===7&&['FEUERZEUG','ECKIG','SEIFE','KUNSTSTOFF','ORANGE','RUND','METALL'].every(word=>{const i=snake.indexOf(word);return v['snake-'+i+'-'+(i+word.length-1)]==='1'}))}
- {title('2',443,'Kreuzen Sie an.')}{txt(650,480,180,'richtig      falsch','mSmall')}
- {['Familienname:|Maria','Postleitzahl:|6003','Wohnort:|Luzern','Straße:|Bahnhofstr.','Geburtsdatum:|3066','E-Mail:|eva111@t-on.ch'].map((s,i)=>{const y=515+i*32,a=s.split('|');return <span key={s}>{txt(168,y,25,String.fromCharCode(97+i),'mSmall')}{txt(198,y,175,a[0],'mBank')}{txt(380,y,230,a[1])}{['richtig','falsch'].map((val,j)=>i===0?<i className={'mPrintedRadio '+(j===1?'selected':'')} style={{left:662+j*79,top:Y(y)}}/>:radio('t2-'+String.fromCharCode(97+i),val,662+j*79,y,val))}</span>})}{rule('t2',168,720,()=>['richtig','richtig','richtig','falsch','richtig'].every((a,i)=>v['t2-'+String.fromCharCode(98+i)]===a))}
- {title('3',766,'Ergänzen Sie ein/eine/kein/keine.')}
- {txt(168,810,330,'a  ▪ Danke für die Hilfe.\n   ▴ Bitte, das ist kein Problem.','mSmall mExample')}
- {txt(168,877,300,'b  ▪ Wer ist Amelie?','mSmall')}{txt(188,906,65,'▴ Sie ist','mSmall')}{f('t3-b',257,904,95)}{txt(358,906,150,'Freundin von','mSmall')}{txt(188,935,160,'Sarah.','mSmall')}
- {txt(168,977,300,'c  ▪ Hier ist der Bleistift.','mSmall')}{txt(188,1006,150,'▴ Das ist doch','mSmall')}{f('t3-c1',343,1004,85)}{txt(433,1006,95,'Bleistift, das','mSmall')}{txt(188,1035,21,'ist','mSmall')}{f('t3-c2',215,1033,85)}{txt(306,1035,195,'Kugelschreiber!','mSmall')}{txt(168,1064,300,'▪ Oh, Entschuldigung.','mSmall')}
- {txt(545,810,310,'d  ▪ Wie heißt das Wort? „Doch“ oder\n   „noch“?','mSmall')}{txt(565,868,120,'▴ „Noch“. Das ist','mSmall')}{f('t3-d',690,866,72)}{txt(768,868,65,'„n“.','mSmall')}
- {txt(545,922,310,'e  ▪ Was kostet die Tasche?','mSmall')}{txt(565,951,80,'▴ Das ist','mSmall')}{f('t3-e1',651,949,87)}{txt(744,951,105,'Tasche, das ist','mSmall')}{f('t3-e2',565,978,87)}{txt(658,980,175,'Geldbörse.','mSmall')}
- {txt(545,1035,310,'f  ▪ Wie heißt das auf Deutsch?','mSmall')}{txt(565,1064,80,'▴ Das ist','mSmall')}{f('t3-f',651,1062,87)}{txt(744,1064,110,'Fotoapparat.','mSmall')}{check('t3',168,1108)}
- {title('4',1156,'Was sagen die Personen? Ergänzen Sie.')}
- {txt(168,1200,280,'▪ Entschuldigung, „a biro“,','mSmall')}{f('t4-a',451,1198,240)}{txt(697,1200,160,'auf Deutsch? (a)','mSmall')}
- {txt(168,1230,42,'▴ Ah,','mSmall')}{f('t4-b',216,1228,105)}{txt(326,1230,230,'ein Kugelschreiber. (b)','mSmall')}{txt(168,1260,20,'▪','mSmall')}{f('t4-c',192,1258,165)}{txt(364,1260,65,'? (c)','mSmall')}{txt(168,1290,400,'▴ Ein Kugelschreiber.','mSmall')}
- {txt(168,1320,330,'▪ Ah, danke. Und noch eine Frage,','mSmall')}{f('t4-d',505,1318,240)}{txt(751,1320,95,'das? (d)','mSmall')}{txt(168,1350,600,'▴ K-U-G-E-L-S-C-H-R-E-I-B-E-R','mSmall')}
- {txt(168,1380,90,'▪ Vielen','mSmall')}{f('t4-e',262,1378,109)}{txt(377,1380,100,'! (e)','mSmall')}{txt(168,1410,131,'▴ Bitte, kein','mSmall')}{f('t4-f',305,1408,153)}{txt(464,1410,100,'! (f)','mSmall')}{check('t4',168,1448)}
- {score(1490,[['0-6','0-3','0-3'],['7-9','4-5','4'],['10-12','6-7','5-6']])}
- </>}
+ {page==='40'&&(()=>{
+ const t=(x:number,y:number,w:number,s:string,c='')=><div className={'mText '+c} style={{left:x,top:y,width:w}}><Words s={s}/></div>;
+ const f=(id:string,x:number,y:number,w:number)=><ChoiceInput placeholder={hints[id]} className="mField" data-native-field={id} aria-label={id} style={{left:x,top:y,width:w}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
+ const offsets:Record<string,number>={"blau": 0, "kein": 17, "red": 35, "yellow": 57, "green": 78, "footer": 99, "web": 128};
+ const art=(n:string,x:number,y:number,w:number,h:number)=><div className="mP40Art" style={{left:x,top:y,width:w,height:h}}><PageImage className="mP40Sprite" alt={'Originalabbildung '+n} src="assets/native-ab11/p40-source-sprite.png" style={{left:0,top:-offsets[n],width:198,height:147}}/></div>;
+ const title=(n:string,x:number,y:number,s:string,rail:string)=> <><div className="mP40Number" style={{left:x,top:y}}>{n}</div>{t(x+37,y-2,700,s,'mTitle')}{t(x-21,y+33,15,rail,'mP40Rail')}</>;
+ const c=(id:string,x:number,y:number,test:()=>boolean)=><div className="mCheck" data-native-task={id} style={{left:x,top:y}}><CheckButton onClick={()=>G({...graded,[id]:test()})}/><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const group=(id:string)=>Object.entries(answers(id)).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')));
+ const radio=(id:string,val:string,x:number,y:number)=><ChoiceInput className="mRadio" type="radio" data-value={val} name={'native-ab11-40-'+id} aria-label={id+' '+val} style={{left:x,top:y}} checked={v[id]===val} onChange={()=>set(id,val)}/>;
+ const square=(x:number,y:number)=><i className="mP40Square" style={{left:x,top:y}}/>;const tri=(x:number,y:number)=><i className="mP40Triangle" style={{left:x,top:y}}/>;
+ return <>{t(125,135,200,'TEST','mHeader')}<div className="mP40Rule"/>
+ {title('1',124,199,'Markieren Sie und ordnen Sie zu.','WÖRTER')}
+ <div className="mP40Snake" style={{left:161,top:232}}>{[snake.slice(0,55),snake.slice(55)].map((line,row)=><div key={row}>{line.split('').map((s,i)=>{const index=i+(row?55:0),marked=(index>=4&&index<=7)||Object.keys(v).some(k=>{if(!k.startsWith('snake-')||v[k]!=='1')return false;const [,a,b]=k.split('-').map(Number);return index>=a&&index<=b});return <button key={index} className={(marked?'marked ':'')+(snakeStart===index?'active':'')} aria-label={'Buchstabenschlange '+index+' '+s} onClick={()=>snakeClick(index)}>{s}</button>})}</div>)}</div>
+ {t(162,285,120,'Farben:')}{art('blau',237,284,35,17)}<i className="mP40Line" style={{left:240,top:300,width:104}}/>{f('t1-farben',364,280,101)}{t(162,307,120,'Formen:')}{f('t1-formen-1',240,302,104)}{f('t1-formen-2',364,302,101)}
+ {t(487,280,180,'Gegenstände:')}{f('t1-gegenstaende-1',597,277,105)}{f('t1-gegenstaende-2',724,277,100)}{t(487,302,180,'Materialien:')}{f('t1-materialien-1',597,299,105)}{f('t1-materialien-2',724,299,100)}
+ {t(761,334,100,'_ / 7 PUNKTE','mP40Points')}{c('t1',840,323,()=>norm(v['t1-farben']||'')==='orange'&&[['formen',['eckig','rund']],['gegenstaende',['Feuerzeug','Seife']],['materialien',['Kunststoff','Metall']]].every(([key,words])=>(words as string[]).every(a=>[v['t1-'+key+'-1'],v['t1-'+key+'-2']].map(s=>norm(s||'')).includes(norm(a))))&&Object.keys(v).filter(k=>k.startsWith('snake-')&&v[k]==='1').length===7&&['FEUERZEUG','ECKIG','SEIFE','KUNSTSTOFF','ORANGE','RUND','METALL'].every(word=>{const i=snake.indexOf(word);return v['snake-'+i+'-'+(i+word.length-1)]==='1'}))}
+ {title('2',127,347,'Kreuzen Sie an.','WÖRTER')}<div className="mP40Table"/>{t(468,370,80,'richtig')}{t(550,368,80,'falsch')}
+ {['Familienname:|Maria','Postleitzahl:|6003','Wohnort:|Luzern','Straße:|Bahnhofstr.','Geburtsdatum:|3066','E-Mail:|eva111@t-on.ch'].map((s,i)=>{const y=399+i*27,a=s.split('|');return <span key={s}>{t(170,y,25,String.fromCharCode(97+i))}{t(204,y,140,a[0],'mP40Label')}{t(331,y-1,160,a[1])}{['richtig','falsch'].map((val,j)=>i===0?<i key={val} className={'mP40PrintedRadio '+(j===1?'selected':'')} style={{left:471+j*83,top:y}}/>:radio('t2-'+String.fromCharCode(97+i),val,471+j*83,y))}</span>})}
+ {t(762,525,100,'_ / 5 PUNKTE','mP40Points')}{c('t2',840,514,()=>['richtig','richtig','richtig','falsch','richtig'].every((a,i)=>v['t2-'+String.fromCharCode(98+i)]===a))}
+ {title('3',131,592,'Ergänzen Sie ein/eine/kein/keine.','STRUKTUREN')}
+ {t(168,624,25,'a')}{square(185,630)}{t(204,623,300,'Danke für die Hilfe.')}{tri(186,652)}{t(205,645,250,'Bitte, das ist')}{art('kein',296,644,29,18)}{t(327,645,170,'Problem.')}
+ {t(168,678,25,'b')}{square(185,683)}{t(204,677,300,'Wer ist Amelie?')}{tri(187,705)}{t(204,699,100,'Sie ist')}{f('t3-b',251,694,85)}{t(341,699,170,'Freundin von')}{t(204,720,250,'Sarah.')}
+ {t(169,752,25,'c')}{square(186,757)}{t(204,751,300,'Hier ist der Bleistift!')}{tri(187,779)}{t(205,773,150,'Das ist doch')}{f('t3-c1',296,768,84)}{t(385,773,170,'Bleistift, das')}{t(205,795,35,'ist')}{f('t3-c2',228,790,84)}{t(317,795,210,'Kugelschreiber!')}{square(187,822)}{t(205,817,300,'Oh, Entschuldigung.')}
+ {t(524,619,25,'d')}{square(541,624)}{t(560,618,340,'Wie heißt das Wort? „Doch“ oder\n„noch“?')}{tri(542,670)}{t(561,661,160,'„Noch“. Das ist')}{f('t3-d',674,656,84)}{t(763,661,100,'„n“.')}
+ {t(525,705,25,'e')}{square(542,711)}{t(561,704,300,'Was kostet die Tasche?')}{tri(543,733)}{t(561,726,100,'Das ist')}{f('t3-e1',614,721,84)}{t(703,726,190,'Tasche, das ist')}{f('t3-e2',561,743,84)}{t(650,748,190,'Geldbörse.')}
+ {t(526,782,25,'f')}{square(543,787)}{t(561,781,300,'Wie heißt das auf Deutsch?')}{tri(544,809)}{t(561,803,100,'Das ist')}{f('t3-f',614,798,84)}{t(703,803,190,'Fotoapparat.')}{t(768,842,100,'_ / 7 PUNKTE','mP40Points')}{c('t3',840,831,()=>group('t3'))}
+ {title('4',135,878,'Was sagen die Personen? Ergänzen Sie.','KOMMUNIKATION')}
+ {square(172,917)}{t(192,911,350,'Entschuldigung, „a biro“,')}{f('t4-a',378,906,166)}{t(545,911,210,'auf Deutsch? (a)')}
+ {tri(173,940)}{t(192,933,90,'Ah,')}{f('t4-b',220,928,83)}{t(307,933,250,'ein Kugelschreiber. (b)')}
+ {square(173,960)}{f('t4-c',192,950,119)}{t(312,955,70,'? (c)')}{tri(174,984)}{t(192,977,400,'Ein Kugelschreiber.')}
+ {square(174,1003)}{t(192,999,330,'Ah, danke. Und noch eine Frage,')}{f('t4-d',435,994,180)}{t(619,999,130,'das? (d)')}
+ {tri(175,1027)}{t(192,1021,500,'K-U-G-E-L-S-C-H-R-E-I-B-E-R.')}
+ {square(175,1048)}{t(192,1043,90,'Vielen')}{f('t4-e',246,1038,55)}{t(303,1043,100,'! (e)')}
+ {tri(176,1070)}{t(192,1065,140,'Bitte, kein')}{f('t4-f',272,1060,101)}{t(376,1065,100,'! (f)')}{t(771,1057,100,'_ / 6 PUNKTE','mP40Points')}{c('t4',840,1046,()=>group('t4'))}
+ <div className="mP40Score">{['Wörter','Strukturen','Kommunikation'].map(s=><b key={s}>{s}</b>)}{[['0–6','0–3','0–3'],['7–9','4–5','4'],['10–12','6–7','5–6']].map((row,i)=>row.map((s,j)=><div key={i+'-'+j}>{art(['red','yellow','green'][i],5,5,21,22)}<span>{s} Punkte</span></div>))}</div>{art('footer',34,1206,198,29)}{art('web',653,1204,189,19)}
+ </>})()}
  {txt(Number(page)%2?704:48,1254,Number(page)%2?190:400,(Number(page)%2?'':'Modul 2   ')+page+' | '+({'38':'achtunddreißig','39':'neununddreißig','40':'vierzig'} as Record<string,string>)[page]+(Number(page)%2?'  Modul 2':''),'mFooter')}
  </div><audio className="nabPlayer" ref={audio} controls hidden aria-label="Originalaudio Arbeitsbuch"/></div>;
 }
