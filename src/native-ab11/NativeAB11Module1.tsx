@@ -284,24 +284,26 @@ export function NativeAB11Module1({page}:{page:string}){
  {area('r2-left',307,1141,143,22,-7)}{area('r2-personen',558,1117,133,65)}
  <div className="mP27Footer">siebenundzwanzig&nbsp; | &nbsp;27 <em>Modul 1</em></div>
  </>})()}
- {page==='28'&&<>
- {head('RÜCKBLICK')}{txt(135,212,680,'Wählen Sie eine Aufgabe zu Lektion 2','mBlue')}
- {title('1',252,'Was ist richtig? Kreuzen Sie an und vergleichen Sie mit dem Kursbuch auf Seite 78.','',135,710)}
- {txt(461,289,130,'Helga Stiemer','mTableHead mSmall')}{txt(586,289,65,'Carlos','mTableHead mSmall')}{txt(654,289,65,'Sonja','mTableHead mSmall')}{txt(716,289,120,'Bo Martinson','mTableHead mSmall')}
- {['Sie arbeiten nicht.','Sie sind nicht verheiratet.','Sie kommen nicht aus Deutschland.','Er hat keine Kinder.','Er wohnt in Essen.','Sie wohnt in Leipzig.'].map((s,r)=><span key={s}>{txt(176,321+r*29,278,String.fromCharCode(97+r)+'  '+s,'mSmall')}{['helga','carlos','sonja','bo'].map((person,c)=>{const id='t-'+String.fromCharCode(97+r)+'-'+person;return <ChoiceInput key={id} type="checkbox" className="mCheckbox" data-native-field={id} aria-label={s+' '+person} style={{left:[467,588,658,763][c],top:Y(319+r*29)}} checked={r===0&&c<2||v[id]==='true'} disabled={r===0&&c<2} onChange={e=>set(id,''+e.target.checked)}/>})}</span>)}
- {rule('t1',168,507,()=>data.fields.filter(f=>f.group==='t1').every(f=>(f.id==='t-a-helga'||f.id==='t-a-carlos'?'true':v[f.id]||'false')===f.answer))}
- {title('2',549,'Wählen Sie eine Kursteilnehmerin / einen Kursteilnehmer oder einen\nProminenten. Ergänzen Sie den Steckbrief und schreiben Sie einen Text.','',135,710)}
- {txt(171,602,223,'STECKBRIEF','mBank')}
- {['Vorname','Familienname','Herkunft','Wohnort','Beruf','Alter','Familienstand','Kinder'].map((s,i)=><span key={s}>{txt(182,637+i*23,114,s+':','mSmall')}{f('r22-'+i,300,635+i*23,150,'Steckbrief '+s)}</span>)}
- {txt(485,623,300,'Das ist …\n… kommt aus …\n…','mExample')}{open('r22-text',485,693,333,120,'2 eigener Personentext')}
- {txt(143,859,680,'Wählen Sie eine Aufgabe zu Lektion 3','mBlue')}
- {title('1',900,'Lesen Sie den Stammbaum im Kursbuch auf Seite 19. Was sagt Olga?','',143,690)}{art('olga',750,936,93,135)}
- {txt(177,938,400,'„Ich bin Olga. Das ist mein Mann. Er heißt')}{f('o-1',578,936,142)}
- {txt(177,972,130,'Ich habe zwei')}{f('o-2',312,970,120)}
- {txt(177,1006,130,'Meine Tochter')}{f('o-3',312,1004,216)}{txt(535,1006,100,'und mein')}{f('o-4',177,1038,353)}{txt(535,1040,20,'“')}{check('r31',177,1076)}
- {title('2',1120,'Ihre Familie. Was sagt Ihre Mutter / Ihr Bruder …? Schreiben Sie.','',143,690)}
- {txt(193,1163,270,'Ich heiße …\nDas ist mein/meine …\nSie/Er …','mExample')}{open('r32-text',470,1163,340,76,'2 eigener Familientext')}
- </>}
+ {page==='28'&&(()=>{
+ const txt=(x:number,y:number,w:number,s:string,c='')=><div className={'mText '+c} style={{left:x,top:y,width:w}}><Words s={s}/></div>;
+ const f=(id:string,x:number,y:number,w:number)=><ChoiceInput className="mField" data-native-field={id} aria-label={id} style={{left:x,top:y,width:w}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
+ const art=(n:string,x:number,y:number,w:number,h:number)=><PageImage className="mArt" alt={'Originalabbildung '+n} src={'assets/native-ab11/p28-'+n+'.png'} style={{left:x,top:y,width:w,height:h}}/>;
+ const title=(n:string,y:number,s:string,photo=false)=><>{art(photo?'photo-icon':'find-icon',104,y,24,26)}<div className="mP28Number" style={{top:y+2}}>{n}</div>{txt(170,y,700,s,'mTitle')}</>;
+ const banner=(y:number,n:string)=><div className={'mP28Banner lesson'+n} style={{top:y}}>Wählen Sie eine Aufgabe zu Lektion <mark>{n}</mark><i/></div>;
+ const area=(id:string,x:number,y:number,w:number,h:number)=><textarea className="mP28Area" data-native-field={id} aria-label={id} style={{left:x,top:y,width:w,height:h}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
+ const c=(id:string,x:number,y:number,test=()=>Object.entries(answers(id)).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||''))))=><div className="mCheck" data-native-task={id} style={{left:x,top:y}}><CheckButton onClick={()=>G({...graded,[id]:test()})}/><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ return <>{txt(133,134,650,'RÜCKBLICK','mHeader')}{banner(205,'2')}{title('1',247,'Was ist richtig? Kreuzen Sie an und vergleichen Sie mit dem Kursbuch auf Seite 78.')}
+ <div className="mP28Table"><div/>{['Helga Stiemer','Carlos','Sonja','Bo Martinson'].map(n=><div key={n}>{n}</div>)}{['Sie arbeiten nicht.','Sie sind nicht verheiratet.','Sie kommen nicht aus Deutschland.','Er hat keine Kinder.','Er wohnt in Essen.','Sie wohnt in Leipzig.'].map((s,r)=><span className="mP28TableRow" key={s}><div>{String.fromCharCode(97+r)}&nbsp; {s}</div>{['helga','carlos','sonja','bo'].map((person,c)=>{const id='t-'+String.fromCharCode(97+r)+'-'+person;return <div key={id}><ChoiceInput type="checkbox" className="mP28Pick" data-native-field={id} aria-label={s+' '+person} checked={r===0&&c<2||v[id]==='true'} disabled={r===0&&c<2} onChange={e=>set(id,''+e.target.checked)}/>{(r===0&&c<2||v[id]==='true')&&<i className="mP28X">X</i>}</div>})}</span>)}</div>
+ {c('t1',841,431,()=>data.fields.filter(f=>f.group==='t1').every(f=>(f.id==='t-a-helga'||f.id==='t-a-carlos'?'true':v[f.id]||'false')===f.answer))}
+ {title('2',480,'Wählen Sie eine Kursteilnehmerin / einen Kursteilnehmer oder einen\nProminenten. Ergänzen Sie den Steckbrief und schreiben Sie einen Text.',true)}
+ {art('steckbrief',170,538,191,209)}{['Vorname','Familienname','Herkunft','Wohnort','Beruf','Alter','Familienstand','Kinder'].map((s,i)=>f('r22-'+i,284,575+i*21,116))}{art('text-ink',416,554,151,94)}{area('r22-text',415,620,391,151)}
+ {banner(802,'3')}{title('1',840,'Lesen Sie den Stammbaum im Kursbuch auf Seite 19. Was sagt Olga?')}{art('olga',750,850,93,136)}
+ {txt(177,874,400,'„Ich bin Olga. Das ist mein Mann. Er heißt')}{f('o-1',489,867,149)}{txt(639,874,12,'.')}
+ {txt(177,905,135,'Ich habe zwei')}{f('o-2',281,898,106)}{txt(388,905,12,'.')}
+ {txt(177,937,135,'Meine Tochter')}{f('o-3',285,930,244)}{txt(534,937,110,'und mein')}{f('o-4',177,954,256)}{txt(436,960,20,'“')}{c('r31',696,957)}
+ {title('2',1011,'Ihre Familie. Was sagt Ihre Mutter / Ihr Bruder …? Schreiben Sie.',true)}{art('family-ink',190,1077,234,97)}{area('r32-text',370,1067,350,122)}
+ <div className="mP28Footer"><em>Modul 1</em>28&nbsp; | &nbsp;achtundzwanzig</div>
+ </>})()}
  {txt(Number(page)%2?704:48,1254,Number(page)%2?190:400,Number(page)%2?({'21':'einundzwanzig','23':'dreiundzwanzig','25':'fünfundzwanzig','27':'siebenundzwanzig'} as Record<string,string>)[page]+' | '+page+'  Modul 1':'Modul 1   '+page+' | '+({'20':'zwanzig','22':'zweiundzwanzig','24':'vierundzwanzig','26':'sechsundzwanzig','28':'achtundzwanzig'} as Record<string,string>)[page],'mFooter')}
  </div><audio className="nabPlayer" ref={audio} controls hidden aria-label="Originalaudio Arbeitsbuch"/></div>;
 }
