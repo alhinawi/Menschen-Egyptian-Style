@@ -14,6 +14,7 @@ const loaders = {
   NativeAB11P91: () => import('../native-ab11/NativeAB11P91').then(m => m.NativeAB11P91),
   NativeAB11P97: () => import('../native-ab11/NativeAB11P97').then(m => m.NativeAB11P97),
   NativeAB11P98: () => import('../native-ab11/NativeAB11P98').then(m => m.NativeAB11P98),
+  NativeAB11P99: () => import('../native-ab11/NativeAB11P99').then(m => m.NativeAB11P99),
   NativeAB11P92: () => import('../native-ab11/NativeAB11P92').then(m => m.NativeAB11P92),
   NativeAB12P31to46: () => import('../native-ab12/NativeAB12P31to46').then(m => m.NativeAB12P31to46),
   NativeAB12P80: () => import('../native-ab12/NativeAB12P80').then(m => m.NativeAB12P80),
@@ -85,11 +86,13 @@ function select(tag: string, attrs: MarkupAttrs) {
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && String(attrs.page)==='91')return pick('NativeAB11P91',{});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && String(attrs.page)==='97')return pick('NativeAB11P97',{});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && String(attrs.page)==='98')return pick('NativeAB11P98',{});
+  if(tag === 'HybridScan' && attrs.book==='ab-a11' && String(attrs.page)==='99')return pick('NativeAB11P99',{});
   if(tag === 'NativeAB11P95')return pick('NativeAB11P95',{});
   if(tag === 'NativeAB11P91')return pick('NativeAB11P91',{});
   if(tag === 'NativeAB11P92')return pick('NativeAB11P92',{});
   if(tag === 'NativeAB11P97')return pick('NativeAB11P97',{});
   if(tag === 'NativeAB11P98')return pick('NativeAB11P98',{});
+  if(tag === 'NativeAB11P99')return pick('NativeAB11P99',{});
   if(tag === 'ClipButton')return pick('ClipMarkers',{book:'kb-a11',page:'',number:Number(attrs.number)});
   if(tag === 'NativePage')return pick('NativePage',{book:attrs.book,page:attrs.page});
   if(tag === 'NativePilot')return pick('NativePilot',{page:attrs.page});
