@@ -1256,57 +1256,427 @@
   {
    "id": "b1",
    "group": "artikel",
-   "kind": "text",
+   "kind": "select",
    "label": "Das ist ___ Bett.",
    "answer": "ein",
-   "x": 245,
-   "y": 564,
-   "w": 95,
-   "h": 13
+   "x": 247,
+   "y": 550,
+   "w": 96,
+   "h": 24,
+   "options": [
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "kein",
+     "label": "kein"
+    },
+    {
+     "value": "keine",
+     "label": "keine"
+    },
+    {
+     "value": "keinen",
+     "label": "keinen"
+    },
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "Der",
+     "label": "Der"
+    },
+    {
+     "value": "Die",
+     "label": "Die"
+    },
+    {
+     "value": "Das",
+     "label": "Das"
+    },
+    {
+     "value": "er",
+     "label": "er"
+    },
+    {
+     "value": "sie",
+     "label": "sie"
+    },
+    {
+     "value": "es",
+     "label": "es"
+    },
+    {
+     "value": "Er",
+     "label": "Er"
+    },
+    {
+     "value": "Sie",
+     "label": "Sie"
+    },
+    {
+     "value": "Es",
+     "label": "Es"
+    }
+   ]
   },
   {
    "id": "b2",
    "group": "artikel",
-   "kind": "text",
+   "kind": "select",
    "label": "___ Bett kostet 359,- €.",
    "answer": "Das",
-   "x": 395,
-   "y": 564,
-   "w": 90,
-   "h": 13
+   "x": 393,
+   "y": 550,
+   "w": 98,
+   "h": 24,
+   "options": [
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "kein",
+     "label": "kein"
+    },
+    {
+     "value": "keine",
+     "label": "keine"
+    },
+    {
+     "value": "keinen",
+     "label": "keinen"
+    },
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "Der",
+     "label": "Der"
+    },
+    {
+     "value": "Die",
+     "label": "Die"
+    },
+    {
+     "value": "Das",
+     "label": "Das"
+    },
+    {
+     "value": "er",
+     "label": "er"
+    },
+    {
+     "value": "sie",
+     "label": "sie"
+    },
+    {
+     "value": "es",
+     "label": "es"
+    },
+    {
+     "value": "Er",
+     "label": "Er"
+    },
+    {
+     "value": "Sie",
+     "label": "Sie"
+    },
+    {
+     "value": "Es",
+     "label": "Es"
+    }
+   ]
   },
   {
    "id": "b3",
    "group": "negation",
-   "kind": "text",
+   "kind": "select",
    "label": "Ist das ___ Kugelschreiber?",
    "answer": "ein",
-   "x": 262,
-   "y": 641,
-   "w": 60,
-   "h": 13
+   "x": 263,
+   "y": 621,
+   "w": 61,
+   "h": 24,
+   "options": [
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "kein",
+     "label": "kein"
+    },
+    {
+     "value": "keine",
+     "label": "keine"
+    },
+    {
+     "value": "keinen",
+     "label": "keinen"
+    },
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "Der",
+     "label": "Der"
+    },
+    {
+     "value": "Die",
+     "label": "Die"
+    },
+    {
+     "value": "Das",
+     "label": "Das"
+    },
+    {
+     "value": "er",
+     "label": "er"
+    },
+    {
+     "value": "sie",
+     "label": "sie"
+    },
+    {
+     "value": "es",
+     "label": "es"
+    },
+    {
+     "value": "Er",
+     "label": "Er"
+    },
+    {
+     "value": "Sie",
+     "label": "Sie"
+    },
+    {
+     "value": "Es",
+     "label": "Es"
+    }
+   ]
   },
   {
    "id": "b4",
    "group": "negation",
-   "kind": "text",
+   "kind": "select",
    "label": "Nein, das ist ___ Kugelschreiber.",
    "answer": "kein",
-   "x": 615,
-   "y": 641,
-   "w": 75,
-   "h": 13
+   "x": 590,
+   "y": 621,
+   "w": 62,
+   "h": 24,
+   "options": [
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "kein",
+     "label": "kein"
+    },
+    {
+     "value": "keine",
+     "label": "keine"
+    },
+    {
+     "value": "keinen",
+     "label": "keinen"
+    },
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "Der",
+     "label": "Der"
+    },
+    {
+     "value": "Die",
+     "label": "Die"
+    },
+    {
+     "value": "Das",
+     "label": "Das"
+    },
+    {
+     "value": "er",
+     "label": "er"
+    },
+    {
+     "value": "sie",
+     "label": "sie"
+    },
+    {
+     "value": "es",
+     "label": "es"
+    },
+    {
+     "value": "Er",
+     "label": "Er"
+    },
+    {
+     "value": "Sie",
+     "label": "Sie"
+    },
+    {
+     "value": "Es",
+     "label": "Es"
+    }
+   ]
   },
   {
    "id": "b5",
    "group": "pronomen",
-   "kind": "text",
+   "kind": "select",
    "label": "___ kostet 1.379,- €.",
    "answer": "Sie",
-   "x": 412,
-   "y": 707,
-   "w": 55,
-   "h": 13
+   "x": 413,
+   "y": 692,
+   "w": 46,
+   "h": 24,
+   "options": [
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "kein",
+     "label": "kein"
+    },
+    {
+     "value": "keine",
+     "label": "keine"
+    },
+    {
+     "value": "keinen",
+     "label": "keinen"
+    },
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "Der",
+     "label": "Der"
+    },
+    {
+     "value": "Die",
+     "label": "Die"
+    },
+    {
+     "value": "Das",
+     "label": "Das"
+    },
+    {
+     "value": "er",
+     "label": "er"
+    },
+    {
+     "value": "sie",
+     "label": "sie"
+    },
+    {
+     "value": "es",
+     "label": "es"
+    },
+    {
+     "value": "Er",
+     "label": "Er"
+    },
+    {
+     "value": "Sie",
+     "label": "Sie"
+    },
+    {
+     "value": "Es",
+     "label": "Es"
+    }
+   ]
   },
   {
    "id": "b6",
@@ -1314,10 +1684,10 @@
    "kind": "text",
    "label": "Wo sind ___?",
    "answer": "die Schlüssel",
-   "x": 257,
-   "y": 783,
-   "w": 325,
-   "h": 13
+   "x": 255,
+   "y": 765,
+   "w": 326,
+   "h": 24
   },
   {
    "id": "b7",
@@ -1325,10 +1695,10 @@
    "kind": "text",
    "label": "Wo sind ___?",
    "answer": "die Handys",
-   "x": 257,
-   "y": 810,
-   "w": 325,
-   "h": 13
+   "x": 255,
+   "y": 789,
+   "w": 326,
+   "h": 24
   },
   {
    "id": "b8",
@@ -1336,10 +1706,10 @@
    "kind": "text",
    "label": "Ich brauche ___.",
    "answer": "ein Handy",
-   "x": 290,
-   "y": 898,
-   "w": 120,
-   "h": 13
+   "x": 286,
+   "y": 883,
+   "w": 124,
+   "h": 24
   },
   {
    "id": "b9",
@@ -1347,10 +1717,10 @@
    "kind": "text",
    "label": "Ich suche ___.",
    "answer": "die Schlüssel",
-   "x": 252,
-   "y": 921,
-   "w": 195,
-   "h": 13
+   "x": 267,
+   "y": 905,
+   "w": 188,
+   "h": 24
   },
   {
    "id": "b10",
@@ -1358,10 +1728,10 @@
    "kind": "text",
    "label": "Hast du ___?",
    "answer": "Briefmarken",
-   "x": 255,
-   "y": 945,
-   "w": 205,
-   "h": 13
+   "x": 251,
+   "y": 929,
+   "w": 213,
+   "h": 24
   },
   {
    "id": "b11",
@@ -1369,10 +1739,10 @@
    "kind": "text",
    "label": "Ich habe ___.",
    "answer": "keinen Drucker",
-   "x": 252,
-   "y": 968,
-   "w": 203,
-   "h": 13
+   "x": 258,
+   "y": 952,
+   "w": 225,
+   "h": 24
   },
   {
    "id": "b12",
@@ -1380,10 +1750,10 @@
    "kind": "text",
    "label": "Auf dem Foto ist ___.",
    "answer": "ein Tisch, ein Bett, eine Lampe, ein Bild",
-   "x": 357,
-   "y": 1334,
-   "w": 208,
-   "h": 13
+   "x": 352,
+   "y": 1319,
+   "w": 221,
+   "h": 24
   },
   {
    "id": "b13",
@@ -1391,10 +1761,10 @@
    "kind": "text",
    "label": "Artur sagt, ___.",
    "answer": "der Tisch ist zu groß. Das Bett ist nicht schlecht",
-   "x": 715,
-   "y": 1334,
-   "w": 290,
-   "h": 13
+   "x": 701,
+   "y": 1319,
+   "w": 296,
+   "h": 24
   },
   {
    "id": "b14",
@@ -1402,21 +1772,21 @@
    "kind": "text",
    "label": "Sybille sagt, der Tisch ___.",
    "answer": "ist schön, modern und praktisch",
-   "x": 420,
-   "y": 1359,
-   "w": 145,
-   "h": 13
+   "x": 399,
+   "y": 1346,
+   "w": 175,
+   "h": 24
   },
   {
    "id": "b15",
    "group": "rb-l4-1",
    "kind": "text",
    "label": "Die Lampe kostet ___.",
-   "answer": "119 Euro",
-   "x": 755,
-   "y": 1359,
-   "w": 250,
-   "h": 13
+   "answer": "119 Euro|119 €|einhundertneunzehn Euro|hundertneunzehn Euro",
+   "x": 756,
+   "y": 1346,
+   "w": 240,
+   "h": 24
   },
   {
    "id": "confidence-1-0",
@@ -1705,6 +2075,56 @@
    "y": 838,
    "w": 16,
    "h": 16
+  },
+  {
+   "id": "forms",
+   "group": "own",
+   "kind": "text",
+   "label": "4 Formen und Materialien",
+   "x": 189,
+   "y": 255,
+   "w": 645,
+   "h": 24
+  },
+  {
+   "id": "colors-yes",
+   "group": "own",
+   "kind": "text",
+   "label": "Diese Farben finde ich schön",
+   "x": 422,
+   "y": 325,
+   "w": 412,
+   "h": 24
+  },
+  {
+   "id": "colors-no",
+   "group": "own",
+   "kind": "text",
+   "label": "Diese Farben finde ich nicht schön",
+   "x": 334,
+   "y": 350,
+   "w": 500,
+   "h": 24
+  },
+  {
+   "id": "office",
+   "group": "own",
+   "kind": "text",
+   "label": "5 Gegenstände im Büro",
+   "x": 190,
+   "y": 418,
+   "w": 642,
+   "h": 24
+  },
+  {
+   "id": "practice",
+   "group": "own",
+   "kind": "text",
+   "label": "Üben und wiederholen möchte ich noch",
+   "x": 164,
+   "y": 1038,
+   "w": 666,
+   "h": 24
   }
  ],
  "audio": [],
@@ -1764,6 +2184,10 @@
   {
    "id": "confidence-8",
    "label": "Selbsteinschätzung 8"
+  },
+  {
+   "id": "own",
+   "label": "Eigene Wörter und Lernziele"
   }
  ],
  "review": {
@@ -1773,7 +2197,8 @@
   "notes": [
    "Personal z.B. sections ('4 Formen und Materialien', '4 Farben', '5 Gegenstände im Büro', 'Üben/Wiederholen möchte ich noch') have no fields per key (z.B./individual answers).",
    "Ampel circles, ▲/■ markers, photos and the yellow Lektion-number box excluded from words.",
-   "Rückblick Ü1 answers per AB Lösungsschlüssel (KB S. 25 cross-ref)."
+   "Rückblick Ü1 answers per AB Lösungsschlüssel (KB S. 25 cross-ref).",
+   "2026-11-15: precise writing/select geometry;5 missing ungraded vocabulary/reflection lines;article/pronoun selects;confidence X;6 local checks;long recap answers fit full source blanks."
   ]
  }
 }
