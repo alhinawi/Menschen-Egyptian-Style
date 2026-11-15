@@ -12,7 +12,7 @@ const server=http.createServer((req,res)=>{const url=new URL(req.url,'http://loc
  await page.waitForFunction(()=>window.menschenBook&&document.querySelector('.fullscreenCover .coverArtwork')?.naturalWidth>0);
  await page.evaluate(()=>document.fonts.ready);
  await page.waitForFunction(()=>getComputedStyle(document.querySelector('.coverArtwork')).opacity==='1');
- assert.equal(await page.locator('.premiumCoverEdition').innerText(),`${book}\n◆\nInteractive Edition`);
+ assert.equal(await page.locator('.premiumCoverEdition').innerText(),`${book}\n◆\nالنسخة التفاعلية`);
  assert.equal(await page.locator('.premiumCoverLevel').innerText(),level);
  assert.equal(await page.locator('.coverSocials a').count(),4);
  assert(await page.locator('.coverSocials').evaluate(el=>{const a=getComputedStyle(el.children[0]),b=getComputedStyle(el.children[1]);return a.backgroundColor===b.backgroundColor&&a.color===b.color&&a.borderColor===b.borderColor;}),'WhatsApp must match other outlined social icons');
@@ -23,7 +23,7 @@ const server=http.createServer((req,res)=>{const url=new URL(req.url,'http://loc
  const fit=await page.evaluate(()=>{const frame=document.querySelector('.premiumCover').getBoundingClientRect(),copy=document.querySelector('.coverCopy').getBoundingClientRect();const button=document.querySelector('.fullscreenCover .coverOpen').getBoundingClientRect(),art=document.querySelector('.premiumCoverArt').getBoundingClientRect();return {overflow:document.documentElement.scrollWidth>innerWidth+1,footer:frame.bottom-copy.bottom,buttonBottom:button.bottom,height:innerHeight,artRight:art.right,width:innerWidth};});
  assert(!fit.overflow);assert(fit.buttonBottom<=fit.height);assert(fit.artRight<=fit.width);assert(fit.footer>=6,`Footer clips: ${JSON.stringify(fit)}`);
  await page.screenshot({path:`/downloads/covers-fullscreen-${book.toLowerCase()}-${level}-${width}.png`,fullPage:false});
- await page.locator('.coverLibrary').click();await page.getByRole('dialog',{name:'Library',exact:true}).waitFor();await page.getByRole('button',{name:'Close menu',exact:true}).click();
+ await page.locator('.coverLibrary').click();await page.getByRole('dialog',{name:/^(Library|المكتبة)$/,exact:true}).waitFor();await page.getByRole('button',{name:/^(Close menu|اقفل القائمة)$/,exact:true}).click();
  const before=await page.evaluate(()=>location.hash);await page.locator('.fullscreenCover .coverOpen').click();await page.waitForFunction(token=>location.hash!==`#${token}`,token);assert.notEqual(await page.evaluate(()=>location.hash),before);
  await page.locator('.fullscreenCover').waitFor({state:'detached'});assert.equal(await page.locator('.premiumCover').count(),0);
  // The separate account/settings panel must still open over the reader.

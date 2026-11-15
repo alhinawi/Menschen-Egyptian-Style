@@ -1,8 +1,9 @@
+import {openLessonDoor} from './readerTransitions';
 import {ReaderPageReset} from './components/ReaderPageReset';
 import {ReaderAudioPlayers} from './components/ReaderAudioPlayers';
 import {AudioMarkerButtons} from './components/AudioMarkerButtons';
 import {useEffect, useLayoutEffect, useMemo, useRef, useState} from 'react';
-import {createPortal} from 'react-dom';
+import {createPortal, flushSync} from 'react-dom';
 import {ScanDialogs} from './scan/ScanDialogs';
 import {PersistenceContext, usePersistenceController} from './persistence/PersistentFields';
 import {MeaningDialog} from './meanings/MeaningDialog';
@@ -34,19 +35,26 @@ export default function App({initial}: {initial: LoadedLesson}) {
   // In-app lesson switching: fetch the target lesson, push its URL, swap the
   // mounted lesson. Resolves once the new lesson's adapters are live.
   useEffect(() => {
+    let navigationId = 0;
     registerNavigator(async (slug, token, opts) => {
+      const requestId = ++navigationId;
       if (slug === lessonRef.current.config.slug) {
         if (token) {
           const idx = (window as any).menschenPages?.findIndex?.((p: HTMLElement) => p?.dataset?.page === token) ?? -1;
-          if (idx >= 0) (window as any).menschenBook?.turnToPage?.(idx);
-          history.pushState({}, '', lessonUrl(slug, token));
+          if (idx >= 0) await openLessonDoor(() => {
+            (window as any).menschenBook?.turnToPage?.(idx);
+            history.pushState({}, '', lessonUrl(slug, token));
+          });
         }
         return;
       }
       setSwitching(true);
       try {
         const next = await loadLesson(slug);
+        if (requestId !== navigationId) return;
         applyRouteMeta(slugToFile[next.config.slug] ?? 'index.html');
+        flushSync(() => setSwitching(false));
+        await openLessonDoor(async () => {
         // Tear the old lesson down before the DOM swap: adapters restore the
         // page elements they moved, so React can cleanly unmount the old tree.
         cleanupRef.current?.();
@@ -60,6 +68,7 @@ export default function App({initial}: {initial: LoadedLesson}) {
         // The lesson markup swapped under the same window: land at the top of
         // the new lesson instead of keeping the old lesson's scroll offset.
         scrollTo(0, 0);
+        });
       } catch (err) {
         // A failed lazy load (offline, deploy mid-switch) must not look like a
         // dead tap: fall back to a full document load with browser progress.
