@@ -132,3 +132,17 @@
 .nativeAB11Module1[data-native-ab11-page='25'] .mP25Footer{font-size:13px}
 .nativeAB11Module1[data-native-ab11-page='25'] .mGridCell{border-style:dotted;border-width:0 1px 1px 0}
 .nativeAB11Module1[data-native-ab11-page='25'] .mTitle.mP25TaskTitle{transform:translateY(-4px) scaleX(1.04)}
+/* Page 26: self-assessment source lines and compact section rhythm. */
+.nativeAB11Module1[data-native-ab11-page='26'] .mText{font:15px/21px KbDroid,Georgia,serif}
+.nativeAB11Module1[data-native-ab11-page='26'] .mHeader{font:29px/35px KbDroid,Georgia,serif;letter-spacing:.1px;transform:scaleX(1.067);transform-origin:left top}
+.nativeAB11Module1[data-native-ab11-page='26'] .mBlue{font:700 16px/21px ABScanSans,Arial,sans-serif}
+.nativeAB11Module1[data-native-ab11-page='26'] .mP26Title{font-weight:bold;z-index:1;background:white;width:max-content!important}
+.nativeAB11Module1[data-native-ab11-page='26'] .mP26Lesson{color:#222}
+.nativeAB11Module1[data-native-ab11-page='26'] .mCanvas .mField{border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;font:15px/20px KbDroid,Georgia,serif!important;height:22px!important}
+.nativeAB11Module1[data-native-ab11-page='26'] .mCanvas .mRadio{width:14px!important;height:14px!important;border-color:#c1b77b!important}
+.mP26Area{position:absolute;resize:none;border:0!important;border-radius:0!important;background:repeating-linear-gradient(transparent 0 19px,#999 19px 20px,transparent 20px 21px)!important;padding:0!important;margin:0!important;font:15px/21px KbDroid,Georgia,serif;color:#174770;min-height:0!important}
+.nativeAB11Module1[data-native-ab11-page='26'] .mFooter{display:none}
+.mP26Footer{position:absolute;left:56px;top:1210px;font:14px KbDroid,Georgia,serif}.mP26Footer em{display:inline-block;margin-right:12px;background:#e5dda6;color:white;font:italic 12px/16px Georgia;padding:0 5px}
+.nativeAB11Module1[data-native-ab11-page='26'] .mText:not(.mHeader):not(.mBlue){transform:translateY(-4px)}
+.nativeAB11Module1[data-native-ab11-page='26'] .mField{transform:translateY(-4px)}
+.nativeAB11Module1[data-native-ab11-page='26'] .mP26Sie .tapWord:last-child{color:#a00062}
