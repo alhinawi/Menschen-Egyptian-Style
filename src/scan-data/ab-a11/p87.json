@@ -1647,113 +1647,233 @@
  "fields": [
   {
    "id": "u1-b2",
-   "group": "u1",
-   "kind": "text",
+   "group": "u1b",
+   "kind": "select",
    "label": "b Bild 2",
    "answer": "Wohnung aufräumen",
-   "x": 385,
-   "y": 612,
-   "w": 148,
-   "h": 24
+   "x": 383,
+   "y": 595,
+   "w": 142,
+   "h": 30,
+   "options": [
+    {
+     "value": "Wohnung aufräumen",
+     "label": "Wohnung aufräumen"
+    },
+    {
+     "value": "schlafen",
+     "label": "schlafen"
+    },
+    {
+     "value": "im Supermarkt einkaufen",
+     "label": "im Supermarkt einkaufen"
+    },
+    {
+     "value": "mit Freunden kochen",
+     "label": "mit Freunden kochen"
+    },
+    {
+     "value": "zusammen essen",
+     "label": "zusammen essen"
+    }
+   ]
   },
   {
    "id": "u1-b3",
-   "group": "u1",
-   "kind": "text",
+   "group": "u1b",
+   "kind": "select",
    "label": "b Bild 3",
    "answer": "schlafen",
-   "x": 540,
-   "y": 612,
-   "w": 148,
-   "h": 24
+   "x": 537,
+   "y": 595,
+   "w": 142,
+   "h": 30,
+   "options": [
+    {
+     "value": "Wohnung aufräumen",
+     "label": "Wohnung aufräumen"
+    },
+    {
+     "value": "schlafen",
+     "label": "schlafen"
+    },
+    {
+     "value": "im Supermarkt einkaufen",
+     "label": "im Supermarkt einkaufen"
+    },
+    {
+     "value": "mit Freunden kochen",
+     "label": "mit Freunden kochen"
+    },
+    {
+     "value": "zusammen essen",
+     "label": "zusammen essen"
+    }
+   ]
   },
   {
    "id": "u1-b4",
-   "group": "u1",
-   "kind": "text",
+   "group": "u1b",
+   "kind": "select",
    "label": "b Bild 4",
    "answer": "im Supermarkt einkaufen",
-   "x": 695,
-   "y": 612,
-   "w": 148,
-   "h": 24
+   "x": 691,
+   "y": 595,
+   "w": 142,
+   "h": 30,
+   "options": [
+    {
+     "value": "Wohnung aufräumen",
+     "label": "Wohnung aufräumen"
+    },
+    {
+     "value": "schlafen",
+     "label": "schlafen"
+    },
+    {
+     "value": "im Supermarkt einkaufen",
+     "label": "im Supermarkt einkaufen"
+    },
+    {
+     "value": "mit Freunden kochen",
+     "label": "mit Freunden kochen"
+    },
+    {
+     "value": "zusammen essen",
+     "label": "zusammen essen"
+    }
+   ]
   },
   {
    "id": "u1-b5",
-   "group": "u1",
-   "kind": "text",
+   "group": "u1b",
+   "kind": "select",
    "label": "b Bild 5",
    "answer": "mit Freunden kochen",
-   "x": 850,
-   "y": 612,
-   "w": 148,
-   "h": 24
+   "x": 845,
+   "y": 595,
+   "w": 142,
+   "h": 30,
+   "options": [
+    {
+     "value": "Wohnung aufräumen",
+     "label": "Wohnung aufräumen"
+    },
+    {
+     "value": "schlafen",
+     "label": "schlafen"
+    },
+    {
+     "value": "im Supermarkt einkaufen",
+     "label": "im Supermarkt einkaufen"
+    },
+    {
+     "value": "mit Freunden kochen",
+     "label": "mit Freunden kochen"
+    },
+    {
+     "value": "zusammen essen",
+     "label": "zusammen essen"
+    }
+   ]
   },
   {
    "id": "u1-b6",
-   "group": "u1",
-   "kind": "text",
+   "group": "u1b",
+   "kind": "select",
    "label": "b Bild 6",
    "answer": "zusammen essen",
-   "x": 1004,
-   "y": 612,
-   "w": 148,
-   "h": 24
+   "x": 999,
+   "y": 595,
+   "w": 142,
+   "h": 30,
+   "options": [
+    {
+     "value": "Wohnung aufräumen",
+     "label": "Wohnung aufräumen"
+    },
+    {
+     "value": "schlafen",
+     "label": "schlafen"
+    },
+    {
+     "value": "im Supermarkt einkaufen",
+     "label": "im Supermarkt einkaufen"
+    },
+    {
+     "value": "mit Freunden kochen",
+     "label": "mit Freunden kochen"
+    },
+    {
+     "value": "zusammen essen",
+     "label": "zusammen essen"
+    }
+   ]
   },
   {
    "id": "u1-c2",
-   "group": "u1",
+   "group": "u1c",
    "kind": "text",
    "label": "c Zeile (2)",
    "answer": "habe ich die Wohnung aufgeräumt",
-   "x": 360,
-   "y": 868,
-   "w": 735,
-   "h": 24
+   "x": 351,
+   "y": 859,
+   "w": 750,
+   "h": 30
   },
   {
    "id": "u1-c3",
-   "group": "u1",
+   "group": "u1c",
    "kind": "text",
    "label": "c Zeile (3)",
    "answer": "habe ich geschlafen",
-   "x": 360,
-   "y": 895,
-   "w": 735,
-   "h": 24
+   "x": 329,
+   "y": 886,
+   "w": 772,
+   "h": 30
   },
   {
    "id": "u1-c4",
-   "group": "u1",
+   "group": "u1c",
    "kind": "text",
    "label": "c Zeile (4)",
    "answer": "habe ich im Supermarkt eingekauft",
-   "x": 360,
-   "y": 922,
-   "w": 735,
-   "h": 24
+   "x": 373,
+   "y": 914,
+   "w": 728,
+   "h": 30
   },
   {
    "id": "u1-c5",
-   "group": "u1",
+   "group": "u1c",
    "kind": "text",
    "label": "c Zeile (5)",
    "answer": "habe ich mit Freunden gekocht",
-   "x": 360,
-   "y": 949,
-   "w": 735,
-   "h": 24
+   "x": 322,
+   "y": 942,
+   "w": 779,
+   "h": 30
   },
   {
    "id": "u1-c6",
-   "group": "u1",
+   "group": "u1c",
    "kind": "text",
    "label": "c Zeile (6)",
-   "answer": "haben wir zusammen gegessen",
-   "x": 360,
-   "y": 976,
-   "w": 735,
-   "h": 24
+   "answer": "haben zusammen gegessen",
+   "x": 300,
+   "y": 969,
+   "w": 801,
+   "h": 30
+  },
+  {
+   "id": "own-dialogue",
+   "group": "own",
+   "kind": "text",
+   "label": "2 Eigene Gespräche im Perfekt",
+   "x": 768,
+   "y": 1492,
+   "w": 362,
+   "h": 154
   }
  ],
  "audio": [
@@ -1761,16 +1881,20 @@
    "id": "au-cd1-50",
    "src": "assets/ab-cd1-track50.mp3",
    "label": "CD 1 Track 50",
-   "x": 125,
-   "y": 1255,
-   "w": 50,
-   "h": 22
+   "x": 132,
+   "y": 1254,
+   "w": 40,
+   "h": 30
   }
  ],
  "groups": [
   {
-   "id": "u1",
-   "label": "Ü1 Einen Tagesablauf beschreiben"
+   "id": "u1b",
+   "label": "1b Verben den Bildern zuordnen"
+  },
+  {
+   "id": "u1c",
+   "label": "1c Christinas E-Mail schreiben"
   }
  ],
  "review": {
@@ -1780,7 +1904,8 @@
   "notes": [
    "TRAINING: SCHREIBEN Ü1 + TRAINING: AUSSPRACHE Ü1-Ü2. Answers from AB Lösungsschlüssel Training:Schreiben 1b (picture order 2-6) and 1c (sample sentences split across lines (2)-(6): 'und dann' in the key merges lines (5)/(6); (6) answer is 'haben wir zusammen gegessen').",
    "Ü1b: 'Frühstück machen' under picture 1 is a printed blue example (word, no field). Ü1c line (1): 'habe' and 'gemacht.' printed blue (words, no field).",
-   "Aussprache Ü1 dialogue: speaker squares/triangles and intonation arrows excluded. Ü2 own dialogues: no fields. Right-edge Modul tab cut off, omitted; top-right Lektion corner number cut, omitted."
+   "Aussprache Ü1 dialogue: speaker squares/triangles and intonation arrows excluded. Ü2 own dialogues: no fields. Right-edge Modul tab cut off, omitted; top-right Lektion corner number cut, omitted.",
+   "2026-11-16: Sourcefonts/layout and handwritten examples;5picturebankselects,5sentenceanswers,ownPerfektdialogue;line6 correctly excludes printed wir."
   ]
  }
 }
