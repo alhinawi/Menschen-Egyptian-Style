@@ -1,0 +1,17 @@
+@font-face{font-family:P99Serif;src:url('/assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:P99Sans;src:url('/assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:P99Sans;src:url('/assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700;font-display:swap}
+.ab11p99{position:relative;width:100%;height:100%;background:white}
+.page:has(.ab11p99){padding:0!important}
+.ab11p99Canvas{position:absolute;left:50%;top:50%;width:901px;height:1275px;transform-origin:center;background:#fff;color:#242420;font-family:P99Serif,Georgia,serif}
+.ab11p99Canvas .p99Text{position:absolute;white-space:pre;line-height:1.25;margin:0;padding:0}
+.ab11p99Canvas .p99Sans{font-family:P99Sans,sans-serif}
+.ab11p99Canvas .p99Bold{font-weight:700}
+.ab11p99Canvas .p99Italic{font-style:italic}
+.ab11p99Canvas .tapWord{padding:0!important;margin:0!important}
+.ab11p99Canvas .p99Art{position:absolute;max-width:none!important;max-height:none!important;object-fit:fill!important;margin:0!important}
+.ab11p99Canvas .p99Line{position:absolute}
+.ab11p99Canvas .p99Dot{position:absolute;box-sizing:border-box;border:1.5px solid;border-radius:50%}
+.ab11p99Canvas .p99MarkerTri{position:absolute;width:0;height:0;border-left-style:solid;border-left-color:transparent;border-right-style:solid;border-right-color:transparent;border-bottom-style:solid}
+.ab11p99Canvas .p99MarkerSq{position:absolute}
+.ab11p99Canvas .p99Chip{position:absolute;box-sizing:border-box;background:#d8d0a4;color:#fff;font:700 10px/13px P99Sans,sans-serif;text-align:center;padding-top:5px}
