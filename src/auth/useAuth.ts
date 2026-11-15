@@ -36,6 +36,11 @@ export async function signUp(name: string, email: string, password: string) {
   void startProgressSync();
 }
 
+/** Replace the cached account after a profile update (e.g. a new avatar). */
+export function applyUser(user: api.ApiUser) {
+  set({ status: 'authed', user });
+}
+
 export async function signOut() {
   stopProgressSync();
   await api.logout();

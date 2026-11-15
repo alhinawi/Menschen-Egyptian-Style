@@ -132,6 +132,9 @@ export async function finishGoogleLogin(request: Request, env: GoogleEnv, openSe
   let user = await env.DB.prepare('SELECT id, name, email, created_at, avatar FROM users WHERE google_sub = ?')
     .bind(info.sub)
     .first<UserRow>()
+  if (user && info.picture) {
+    await env.DB.prepare('UPDATE users SET google_avatar = ? WHERE id = ?').bind(info.picture, user.id).run()
+  }
 
   // 2) Same email already registered with a password -> link Google to that account.
   if (!user) {
@@ -139,15 +142,15 @@ export async function finishGoogleLogin(request: Request, env: GoogleEnv, openSe
       .bind(mail)
       .first<UserRow>()
     if (byEmail) {
-      await env.DB.prepare('UPDATE users SET google_sub = ? WHERE id = ?').bind(info.sub, byEmail.id).run()
+      await env.DB.prepare('UPDATE users SET google_sub = ?, google_avatar = COALESCE(?, google_avatar) WHERE id = ?').bind(info.sub, info.picture ?? null, byEmail.id).run()
       user = byEmail
     }
   }
 
   // 3) Brand new learner -> create the account (no password; Google-only).
   if (!user) {
-    const res = await env.DB.prepare('INSERT INTO users (name, email, password_hash, google_sub, avatar) VALUES (?, ?, ?, ?, ?)')
-      .bind(displayName, mail, '', info.sub, info.picture ?? null)
+    const res = await env.DB.prepare('INSERT INTO users (name, email, password_hash, google_sub, avatar, google_avatar) VALUES (?, ?, ?, ?, ?, ?)')
+      .bind(displayName, mail, '', info.sub, info.picture ?? null, info.picture ?? null)
       .run()
     user = (await env.DB.prepare('SELECT id, name, email, created_at, avatar FROM users WHERE id = ?')
       .bind(Number(res.meta.last_row_id))
