@@ -65,3 +65,32 @@
 .nabCanvas .nabInk{font-family:'Caveat',cursive!important;font-style:normal!important;font-weight:600;color:#2b3490;font-size:29px}
 .nabCanvas .nabRegelBox{position:absolute;background:#ececec;border:1px solid #d8d8d8;box-sizing:border-box}
 .nabCanvas .nabRegelLabel{position:absolute;left:6px;top:50%;transform:translateY(-50%) rotate(180deg);writing-mode:vertical-rl;font:700 9px Arial,sans-serif;letter-spacing:1px;color:#8a8a8a}
+
+/* Page 6 scan-specific typography and ruled fields. */
+.nativeAB11[data-native-ab11-page='6'] .nabText{font-family:KbDroid,Georgia,serif;font-size:19px;line-height:26px}
+.nativeAB11[data-native-ab11-page='6'] .nabTitle{font-family:KbFira,Arial,sans-serif;font-size:20px;font-weight:700}
+.nativeAB11[data-native-ab11-page='6'] .nabKB{font:11px Arial,sans-serif}
+.nativeAB11[data-native-ab11-page='6'] .nabCoverTitle{font-size:39px;line-height:48px}
+.nativeAB11[data-native-ab11-page='6'] .nabBank{font:18px/25px KbFira,Arial,sans-serif;background:#fffbd0}
+.nativeAB11[data-native-ab11-page='6'] .nabSmallTitle{font:700 18px/25px KbFira,Arial,sans-serif}
+.nativeAB11[data-native-ab11-page='6'] .nabLanderBank{font:16px/25px KbFira,Arial,sans-serif}
+.nativeAB11[data-native-ab11-page='6'] .nabCaption{font-size:15px;line-height:22px}
+.nativeAB11[data-native-ab11-page='6'] .nabCanvas .nabInput:not(.nabCircle){border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;height:19px!important}
+.nativeAB11[data-native-ab11-page='6'] .nabCanvas .nabCircle{width:18px!important;height:18px!important;left:217px!important;top:auto;border:1px solid #c7bb81!important;background:transparent!important;font-size:16px!important}
+.nativeAB11[data-native-ab11-page='6'] .nabCanvas .nabFooter{font:14px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='6'] .nabNumber{font:bold 20px/24px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='6'] .sharedMatchItem{font-family:KbDroid,Georgia,serif!important;font-size:19px!important}
+.nativeAB11[data-native-ab11-page='6'] .sharedMatchLines path{stroke-width:1.3}
+
+.nativeAB11[data-native-ab11-page='6'] .nabCheck[data-native-task='4']{left:975px!important;top:1139px!important}
+
+.nativeAB11[data-native-ab11-page='6'] .tapWord[data-word='▲']{color:#2aae47}
+.nativeAB11[data-native-ab11-page='6'] .tapWord[data-word='■']{color:#204892}
+.nativeAB11[data-native-ab11-page='6'] .nabKB{color:#2995c1}
+.nativeAB11[data-native-ab11-page='6'] .nabBank:not(.nabLanderBank){font-size:15px;line-height:24px;width:357px!important}
+
+.nativeAB11[data-native-ab11-page='6'] .nabBank{color:#244a87}
+.nativeAB11[data-native-ab11-page='6'] .nabBank:not(.nabLanderBank) .tapWord:nth-of-type(9){text-decoration:line-through;text-decoration-color:#315f9e;text-decoration-thickness:1.5px}
+.nativeAB11[data-native-ab11-page='6'] .nabFooter[style*='64px']{width:67px!important;background:#e5dda6;color:white;font:italic 13px/18px Georgia,serif;text-align:center}
+
+.nativeAB11[data-native-ab11-page='6'] .nabText:not(.nabTitle):not(.nabKB):not(.nabBank):not(.nabCaption):not(.nabFooter):not(.nabCoverTitle):not(.nabSmallTitle){margin-top:-4px}
