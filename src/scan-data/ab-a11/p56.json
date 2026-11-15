@@ -2134,10 +2134,10 @@
    "kind": "checkbox",
    "label": "Peter – Musik",
    "answer": "true",
-   "x": 289,
+   "x": 286,
    "y": 374,
-   "w": 16,
-   "h": 16
+   "w": 19,
+   "h": 19
   },
   {
    "id": "c2",
@@ -2145,10 +2145,10 @@
    "kind": "checkbox",
    "label": "Peter – Natur",
    "answer": "false",
-   "x": 355,
+   "x": 352,
    "y": 374,
-   "w": 16,
-   "h": 16
+   "w": 19,
+   "h": 19
   },
   {
    "id": "c3",
@@ -2156,10 +2156,10 @@
    "kind": "checkbox",
    "label": "Peter – Sport",
    "answer": "false",
-   "x": 417,
+   "x": 415,
    "y": 374,
-   "w": 16,
-   "h": 16
+   "w": 19,
+   "h": 19
   },
   {
    "id": "c4",
@@ -2167,10 +2167,10 @@
    "kind": "checkbox",
    "label": "Peter – Filme",
    "answer": "true",
-   "x": 479,
+   "x": 478,
    "y": 374,
-   "w": 16,
-   "h": 16
+   "w": 19,
+   "h": 19
   },
   {
    "id": "c5",
@@ -2178,10 +2178,10 @@
    "kind": "checkbox",
    "label": "Lisa – Musik",
    "answer": "true",
-   "x": 711,
-   "y": 336,
-   "w": 16,
-   "h": 16
+   "x": 707,
+   "y": 332,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "c6",
@@ -2189,10 +2189,10 @@
    "kind": "checkbox",
    "label": "Lisa – Natur",
    "answer": "false",
-   "x": 776,
-   "y": 336,
-   "w": 16,
-   "h": 16
+   "x": 773,
+   "y": 332,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "c7",
@@ -2200,10 +2200,10 @@
    "kind": "checkbox",
    "label": "Lisa – Sport",
    "answer": "false",
-   "x": 839,
-   "y": 336,
-   "w": 16,
-   "h": 16
+   "x": 836,
+   "y": 332,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "c8",
@@ -2211,10 +2211,10 @@
    "kind": "checkbox",
    "label": "Lisa – Filme",
    "answer": "false",
-   "x": 901,
-   "y": 336,
-   "w": 16,
-   "h": 16
+   "x": 899,
+   "y": 332,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "c9",
@@ -2222,10 +2222,10 @@
    "kind": "checkbox",
    "label": "Leon – Musik",
    "answer": "false",
-   "x": 711,
-   "y": 366,
-   "w": 16,
-   "h": 16
+   "x": 707,
+   "y": 360,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "c10",
@@ -2233,10 +2233,10 @@
    "kind": "checkbox",
    "label": "Leon – Natur",
    "answer": "false",
-   "x": 776,
-   "y": 366,
-   "w": 16,
-   "h": 16
+   "x": 773,
+   "y": 360,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "c11",
@@ -2244,10 +2244,10 @@
    "kind": "checkbox",
    "label": "Leon – Sport",
    "answer": "true",
-   "x": 839,
-   "y": 366,
-   "w": 16,
-   "h": 16
+   "x": 836,
+   "y": 360,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "c12",
@@ -2255,10 +2255,10 @@
    "kind": "checkbox",
    "label": "Leon – Filme",
    "answer": "false",
-   "x": 901,
-   "y": 366,
-   "w": 16,
-   "h": 16
+   "x": 899,
+   "y": 360,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "r1a",
@@ -2268,10 +2268,10 @@
    "name": "bt9b1",
    "value": "richtig",
    "answer": "true",
-   "x": 690,
-   "y": 995,
-   "w": 17,
-   "h": 15
+   "x": 686,
+   "y": 992,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "r1b",
@@ -2282,9 +2282,9 @@
    "value": "falsch",
    "answer": "false",
    "x": 769,
-   "y": 995,
-   "w": 17,
-   "h": 15
+   "y": 992,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "r2a",
@@ -2294,10 +2294,10 @@
    "name": "bt9b2",
    "value": "richtig",
    "answer": "false",
-   "x": 690,
-   "y": 1023,
-   "w": 17,
-   "h": 15
+   "x": 686,
+   "y": 1018,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "r2b",
@@ -2308,9 +2308,9 @@
    "value": "falsch",
    "answer": "true",
    "x": 769,
-   "y": 1023,
-   "w": 17,
-   "h": 15
+   "y": 1018,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "r3a",
@@ -2320,10 +2320,10 @@
    "name": "bt9b3",
    "value": "richtig",
    "answer": "false",
-   "x": 690,
-   "y": 1049,
-   "w": 17,
-   "h": 15
+   "x": 686,
+   "y": 1043,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "r3b",
@@ -2334,9 +2334,9 @@
    "value": "falsch",
    "answer": "true",
    "x": 769,
-   "y": 1049,
-   "w": 17,
-   "h": 15
+   "y": 1043,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "r4a",
@@ -2346,10 +2346,10 @@
    "name": "bt9b4",
    "value": "richtig",
    "answer": "false",
-   "x": 690,
-   "y": 1073,
-   "w": 17,
-   "h": 15
+   "x": 686,
+   "y": 1068,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "r4b",
@@ -2360,64 +2360,179 @@
    "value": "falsch",
    "answer": "true",
    "x": 769,
-   "y": 1073,
-   "w": 17,
-   "h": 15
+   "y": 1068,
+   "w": 18,
+   "h": 18
   },
   {
-   "id": "b1",
+   "id": "e10-pos-1",
    "group": "bt-10",
-   "kind": "text",
+   "kind": "select",
    "label": "positiv 2",
    "answer": "Ja, klar.|Ja, gern.",
-   "x": 225,
-   "y": 1333,
-   "w": 355,
-   "h": 13
+   "x": 226,
+   "y": 1324,
+   "w": 352,
+   "h": 24,
+   "unordered": true,
+   "options": [
+    {
+     "value": "Ja, klar.",
+     "label": "Ja, klar."
+    },
+    {
+     "value": "Ja, gern.",
+     "label": "Ja, gern."
+    },
+    {
+     "value": "Nicht so gern.",
+     "label": "Nicht so gern."
+    },
+    {
+     "value": "Nein, das geht leider nicht.",
+     "label": "Nein, das geht leider nicht."
+    },
+    {
+     "value": "Nein, tut mir leid.",
+     "label": "Nein, tut mir leid."
+    }
+   ]
   },
   {
-   "id": "b2",
+   "id": "e10-pos-2",
    "group": "bt-10",
-   "kind": "text",
+   "kind": "select",
    "label": "positiv 3",
    "answer": "Ja, klar.|Ja, gern.",
-   "x": 225,
-   "y": 1354,
-   "w": 355,
-   "h": 13
+   "x": 226,
+   "y": 1350,
+   "w": 352,
+   "h": 24,
+   "unordered": true,
+   "options": [
+    {
+     "value": "Ja, klar.",
+     "label": "Ja, klar."
+    },
+    {
+     "value": "Ja, gern.",
+     "label": "Ja, gern."
+    },
+    {
+     "value": "Nicht so gern.",
+     "label": "Nicht so gern."
+    },
+    {
+     "value": "Nein, das geht leider nicht.",
+     "label": "Nein, das geht leider nicht."
+    },
+    {
+     "value": "Nein, tut mir leid.",
+     "label": "Nein, tut mir leid."
+    }
+   ]
   },
   {
-   "id": "b3",
+   "id": "e10-neg-1",
    "group": "bt-10",
-   "kind": "text",
+   "kind": "select",
    "label": "negativ 1",
    "answer": "Nicht so gern.|Nein, das geht leider nicht.|Nein, tut mir leid.",
    "x": 632,
-   "y": 1304,
-   "w": 337,
-   "h": 13
+   "y": 1295,
+   "w": 336,
+   "h": 24,
+   "unordered": true,
+   "options": [
+    {
+     "value": "Ja, klar.",
+     "label": "Ja, klar."
+    },
+    {
+     "value": "Ja, gern.",
+     "label": "Ja, gern."
+    },
+    {
+     "value": "Nicht so gern.",
+     "label": "Nicht so gern."
+    },
+    {
+     "value": "Nein, das geht leider nicht.",
+     "label": "Nein, das geht leider nicht."
+    },
+    {
+     "value": "Nein, tut mir leid.",
+     "label": "Nein, tut mir leid."
+    }
+   ]
   },
   {
-   "id": "b4",
+   "id": "e10-neg-2",
    "group": "bt-10",
-   "kind": "text",
+   "kind": "select",
    "label": "negativ 2",
    "answer": "Nicht so gern.|Nein, das geht leider nicht.|Nein, tut mir leid.",
    "x": 632,
-   "y": 1329,
-   "w": 337,
-   "h": 13
+   "y": 1321,
+   "w": 336,
+   "h": 24,
+   "unordered": true,
+   "options": [
+    {
+     "value": "Ja, klar.",
+     "label": "Ja, klar."
+    },
+    {
+     "value": "Ja, gern.",
+     "label": "Ja, gern."
+    },
+    {
+     "value": "Nicht so gern.",
+     "label": "Nicht so gern."
+    },
+    {
+     "value": "Nein, das geht leider nicht.",
+     "label": "Nein, das geht leider nicht."
+    },
+    {
+     "value": "Nein, tut mir leid.",
+     "label": "Nein, tut mir leid."
+    }
+   ]
   },
   {
-   "id": "b5",
+   "id": "e10-neg-3",
    "group": "bt-10",
-   "kind": "text",
+   "kind": "select",
    "label": "negativ 3",
    "answer": "Nicht so gern.|Nein, das geht leider nicht.|Nein, tut mir leid.",
    "x": 632,
-   "y": 1354,
-   "w": 337,
-   "h": 13
+   "y": 1347,
+   "w": 336,
+   "h": 24,
+   "unordered": true,
+   "options": [
+    {
+     "value": "Ja, klar.",
+     "label": "Ja, klar."
+    },
+    {
+     "value": "Ja, gern.",
+     "label": "Ja, gern."
+    },
+    {
+     "value": "Nicht so gern.",
+     "label": "Nicht so gern."
+    },
+    {
+     "value": "Nein, das geht leider nicht.",
+     "label": "Nein, das geht leider nicht."
+    },
+    {
+     "value": "Nein, tut mir leid.",
+     "label": "Nein, tut mir leid."
+    }
+   ]
   }
  ],
  "audio": [],
@@ -2443,7 +2558,8 @@
    "Ü9a: Jule row (X on Natur + Sport) is the printed example; X marks excluded from words.",
    "Ü9a cells have no printed markers; checkbox fields sit at cell centers.",
    "Ü10: 'Ja, natürlich.' in the bank is struck as the printed example and the cursive answer under the happy smiley is printed; no field for that row. Positive/negative blanks are unordered, so each carries all alternatives.",
-   "Side labels, icons, smileys and photos excluded from words."
+   "Side labels, icons, smileys and photos excluded from words.",
+   "2026-11-15: measured table cell centers and all radio circles;source-aligned phrase selects;positive/negative order-independent groups reject repeated choices."
   ]
  }
 }
