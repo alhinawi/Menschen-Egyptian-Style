@@ -801,3 +801,13 @@ body[data-audio="tts"] .howtoTtsNote{display:block}
 .authInput:focus{border-color:#713c46}
 .authError{font-size:11px;font-weight:700;color:#a13030;background:#fbeaea;border:1px solid #eec6c6;border-radius:8px;padding:6px 9px}
 .authSwitch{background:none;border:0;padding:4px;font-size:11px;font-weight:700;color:#713c46;cursor:pointer;text-decoration:underline}
+
+/* Optional voice feedback: plain SFX stay the default across the whole library. */
+.profileVoiceLabel{display:flex;flex-direction:column;gap:2px}
+.profileVoiceLabel small{font-size:11px;line-height:1.5;color:#6b655c;font-weight:400}
+.profileVoiceSwitch{display:inline-flex;align-items:center;width:38px;height:23px;flex:none;padding:3px;box-sizing:border-box;border-radius:99px;background:#c6c3b9;direction:ltr;transition:background .15s}
+.profileVoiceSwitch>span{display:block;width:17px;height:17px;border-radius:50%;background:#fff;box-shadow:0 1px 3px #0003;transition:transform .15s}
+.profileVoiceSwitch[data-on="true"]{background:#35634e}
+.profileVoiceSwitch[data-on="true"]>span{transform:translateX(15px)}
+.profileVoiceChoice:focus-visible{outline:2px solid #35634e;outline-offset:2px}
+.profilePanel{max-height:calc(100dvh - 120px);overflow-y:auto}
