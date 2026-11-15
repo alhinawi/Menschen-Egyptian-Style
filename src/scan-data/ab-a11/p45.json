@@ -1284,35 +1284,77 @@
   {
    "id": "h1-1",
    "group": "h1",
-   "kind": "text",
+   "kind": "select",
    "label": "Gespräch 1",
    "answer": "C",
    "x": 320,
    "y": 472,
    "w": 85,
-   "h": 22
+   "h": 22,
+   "options": [
+    {
+     "value": "A",
+     "label": "A"
+    },
+    {
+     "value": "B",
+     "label": "B"
+    },
+    {
+     "value": "C",
+     "label": "C"
+    }
+   ]
   },
   {
    "id": "h1-2",
    "group": "h1",
-   "kind": "text",
+   "kind": "select",
    "label": "Gespräch 2",
    "answer": "B",
    "x": 415,
    "y": 472,
    "w": 80,
-   "h": 22
+   "h": 22,
+   "options": [
+    {
+     "value": "A",
+     "label": "A"
+    },
+    {
+     "value": "B",
+     "label": "B"
+    },
+    {
+     "value": "C",
+     "label": "C"
+    }
+   ]
   },
   {
    "id": "h1-3",
    "group": "h1",
-   "kind": "text",
+   "kind": "select",
    "label": "Gespräch 3",
    "answer": "A",
    "x": 500,
    "y": 472,
    "w": 75,
-   "h": 22
+   "h": 22,
+   "options": [
+    {
+     "value": "A",
+     "label": "A"
+    },
+    {
+     "value": "B",
+     "label": "B"
+    },
+    {
+     "value": "C",
+     "label": "C"
+    }
+   ]
   },
   {
    "id": "h2-a-richtig",
@@ -1478,8 +1520,8 @@
    "value": "i",
    "name": "au1-1",
    "answer": "true",
-   "x": 255,
-   "y": 976,
+   "x": 260,
+   "y": 971,
    "w": 13,
    "h": 13
   },
@@ -1491,8 +1533,8 @@
    "value": "u",
    "name": "au1-1",
    "answer": "false",
-   "x": 310,
-   "y": 976,
+   "x": 315,
+   "y": 971,
    "w": 13,
    "h": 13
   },
@@ -1504,8 +1546,8 @@
    "value": "ü",
    "name": "au1-1",
    "answer": "false",
-   "x": 370,
-   "y": 976,
+   "x": 374,
+   "y": 971,
    "w": 13,
    "h": 13
   },
@@ -1517,8 +1559,8 @@
    "value": "i",
    "name": "au1-2",
    "answer": "false",
-   "x": 255,
-   "y": 1002,
+   "x": 260,
+   "y": 996,
    "w": 13,
    "h": 13
   },
@@ -1530,8 +1572,8 @@
    "value": "u",
    "name": "au1-2",
    "answer": "false",
-   "x": 310,
-   "y": 1002,
+   "x": 315,
+   "y": 996,
    "w": 13,
    "h": 13
   },
@@ -1543,8 +1585,8 @@
    "value": "ü",
    "name": "au1-2",
    "answer": "true",
-   "x": 370,
-   "y": 1002,
+   "x": 374,
+   "y": 996,
    "w": 13,
    "h": 13
   },
@@ -1556,8 +1598,8 @@
    "value": "i",
    "name": "au1-3",
    "answer": "false",
-   "x": 255,
-   "y": 1028,
+   "x": 260,
+   "y": 1021,
    "w": 13,
    "h": 13
   },
@@ -1569,8 +1611,8 @@
    "value": "u",
    "name": "au1-3",
    "answer": "true",
-   "x": 310,
-   "y": 1028,
+   "x": 315,
+   "y": 1021,
    "w": 13,
    "h": 13
   },
@@ -1582,8 +1624,8 @@
    "value": "ü",
    "name": "au1-3",
    "answer": "false",
-   "x": 370,
-   "y": 1028,
+   "x": 374,
+   "y": 1021,
    "w": 13,
    "h": 13
   },
@@ -1595,8 +1637,8 @@
    "value": "i",
    "name": "au1-4",
    "answer": "false",
-   "x": 255,
-   "y": 1054,
+   "x": 260,
+   "y": 1047,
    "w": 13,
    "h": 13
   },
@@ -1608,8 +1650,8 @@
    "value": "u",
    "name": "au1-4",
    "answer": "false",
-   "x": 310,
-   "y": 1054,
+   "x": 315,
+   "y": 1047,
    "w": 13,
    "h": 13
   },
@@ -1621,8 +1663,8 @@
    "value": "ü",
    "name": "au1-4",
    "answer": "true",
-   "x": 370,
-   "y": 1054,
+   "x": 374,
+   "y": 1047,
    "w": 13,
    "h": 13
   },
@@ -1634,8 +1676,8 @@
    "value": "i",
    "name": "au1-5",
    "answer": "true",
-   "x": 255,
-   "y": 1080,
+   "x": 260,
+   "y": 1073,
    "w": 13,
    "h": 13
   },
@@ -1647,8 +1689,8 @@
    "value": "u",
    "name": "au1-5",
    "answer": "false",
-   "x": 310,
-   "y": 1080,
+   "x": 315,
+   "y": 1073,
    "w": 13,
    "h": 13
   },
@@ -1660,8 +1702,8 @@
    "value": "ü",
    "name": "au1-5",
    "answer": "false",
-   "x": 370,
-   "y": 1080,
+   "x": 374,
+   "y": 1073,
    "w": 13,
    "h": 13
   },
@@ -1673,8 +1715,8 @@
    "value": "i",
    "name": "au1-6",
    "answer": "false",
-   "x": 255,
-   "y": 1106,
+   "x": 260,
+   "y": 1097,
    "w": 13,
    "h": 13
   },
@@ -1686,8 +1728,8 @@
    "value": "u",
    "name": "au1-6",
    "answer": "true",
-   "x": 310,
-   "y": 1106,
+   "x": 315,
+   "y": 1097,
    "w": 13,
    "h": 13
   },
@@ -1699,8 +1741,8 @@
    "value": "ü",
    "name": "au1-6",
    "answer": "false",
-   "x": 370,
-   "y": 1106,
+   "x": 374,
+   "y": 1097,
    "w": 13,
    "h": 13
   },
@@ -1712,8 +1754,8 @@
    "value": "i",
    "name": "au1-7",
    "answer": "true",
-   "x": 255,
-   "y": 1132,
+   "x": 260,
+   "y": 1122,
    "w": 13,
    "h": 13
   },
@@ -1725,8 +1767,8 @@
    "value": "u",
    "name": "au1-7",
    "answer": "false",
-   "x": 310,
-   "y": 1132,
+   "x": 315,
+   "y": 1122,
    "w": 13,
    "h": 13
   },
@@ -1738,8 +1780,8 @@
    "value": "ü",
    "name": "au1-7",
    "answer": "false",
-   "x": 370,
-   "y": 1132,
+   "x": 374,
+   "y": 1122,
    "w": 13,
    "h": 13
   },
@@ -1751,8 +1793,8 @@
    "value": "i",
    "name": "au1-8",
    "answer": "false",
-   "x": 255,
-   "y": 1158,
+   "x": 260,
+   "y": 1147,
    "w": 13,
    "h": 13
   },
@@ -1764,8 +1806,8 @@
    "value": "u",
    "name": "au1-8",
    "answer": "false",
-   "x": 310,
-   "y": 1158,
+   "x": 315,
+   "y": 1147,
    "w": 13,
    "h": 13
   },
@@ -1777,8 +1819,8 @@
    "value": "ü",
    "name": "au1-8",
    "answer": "true",
-   "x": 370,
-   "y": 1158,
+   "x": 374,
+   "y": 1147,
    "w": 13,
    "h": 13
   },
@@ -1790,8 +1832,8 @@
    "value": "i",
    "name": "au1-9",
    "answer": "false",
-   "x": 255,
-   "y": 1184,
+   "x": 260,
+   "y": 1173,
    "w": 13,
    "h": 13
   },
@@ -1803,8 +1845,8 @@
    "value": "u",
    "name": "au1-9",
    "answer": "true",
-   "x": 310,
-   "y": 1184,
+   "x": 315,
+   "y": 1173,
    "w": 13,
    "h": 13
   },
@@ -1816,8 +1858,8 @@
    "value": "ü",
    "name": "au1-9",
    "answer": "false",
-   "x": 370,
-   "y": 1184,
+   "x": 374,
+   "y": 1173,
    "w": 13,
    "h": 13
   },
@@ -1829,8 +1871,8 @@
    "value": "i",
    "name": "au1-10",
    "answer": "false",
-   "x": 255,
-   "y": 1210,
+   "x": 260,
+   "y": 1198,
    "w": 13,
    "h": 13
   },
@@ -1842,8 +1884,8 @@
    "value": "u",
    "name": "au1-10",
    "answer": "false",
-   "x": 310,
-   "y": 1210,
+   "x": 315,
+   "y": 1198,
    "w": 13,
    "h": 13
   },
@@ -1855,164 +1897,733 @@
    "value": "ü",
    "name": "au1-10",
    "answer": "true",
-   "x": 370,
-   "y": 1210,
+   "x": 374,
+   "y": 1198,
    "w": 13,
    "h": 13
   },
   {
    "id": "au2-1",
    "group": "au2",
-   "kind": "text",
+   "kind": "select",
    "label": "Grüße",
-   "answer": "lang",
-   "x": 285,
-   "y": 1322,
-   "w": 45,
-   "h": 18
+   "answer": "32:lang",
+   "x": 231,
+   "y": 1323,
+   "w": 50,
+   "h": 23,
+   "options": [
+    {
+     "value": "32:lang",
+     "label": "lang (Strich)"
+    },
+    {
+     "value": "32:kurz",
+     "label": "kurz (Punkt)"
+    }
+   ]
   },
   {
    "id": "au2-2",
    "group": "au2",
-   "kind": "text",
+   "kind": "select",
    "label": "Schlüssel",
-   "answer": "kurz",
-   "x": 388,
+   "answer": "47:kurz",
+   "x": 303,
    "y": 1321,
-   "w": 45,
-   "h": 18
+   "w": 76,
+   "h": 23,
+   "options": [
+    {
+     "value": "47:lang",
+     "label": "lang (Strich)"
+    },
+    {
+     "value": "47:kurz",
+     "label": "kurz (Punkt)"
+    }
+   ]
   },
   {
    "id": "au2-3",
    "group": "au2",
-   "kind": "text",
+   "kind": "select",
    "label": "Stühle",
-   "answer": "lang",
-   "x": 460,
+   "answer": "46:lang",
+   "x": 403,
    "y": 1320,
-   "w": 45,
-   "h": 18
+   "w": 54,
+   "h": 23,
+   "options": [
+    {
+     "value": "46:lang",
+     "label": "lang (Strich)"
+    },
+    {
+     "value": "46:kurz",
+     "label": "kurz (Punkt)"
+    }
+   ]
   },
   {
    "id": "au2-4",
    "group": "au2",
-   "kind": "text",
+   "kind": "select",
    "label": "fünf",
-   "answer": "kurz",
-   "x": 528,
+   "answer": "35:kurz",
+   "x": 479,
    "y": 1319,
-   "w": 45,
-   "h": 18
+   "w": 38,
+   "h": 23,
+   "options": [
+    {
+     "value": "35:lang",
+     "label": "lang (Strich)"
+    },
+    {
+     "value": "35:kurz",
+     "label": "kurz (Punkt)"
+    }
+   ]
   },
   {
    "id": "au2-5",
    "group": "au2",
-   "kind": "text",
+   "kind": "select",
    "label": "grün",
-   "answer": "lang",
-   "x": 278,
+   "answer": "60:lang",
+   "x": 230,
    "y": 1349,
-   "w": 45,
-   "h": 18
+   "w": 41,
+   "h": 23,
+   "options": [
+    {
+     "value": "60:lang",
+     "label": "lang (Strich)"
+    },
+    {
+     "value": "60:kurz",
+     "label": "kurz (Punkt)"
+    }
+   ]
   },
   {
    "id": "au2-6",
    "group": "au2",
-   "kind": "text",
+   "kind": "select",
    "label": "tschüs",
-   "answer": "kurz",
-   "x": 358,
-   "y": 1348,
-   "w": 45,
-   "h": 18
+   "answer": "72:kurz",
+   "x": 293,
+   "y": 1347,
+   "w": 53,
+   "h": 23,
+   "options": [
+    {
+     "value": "72:lang",
+     "label": "lang (Strich)"
+    },
+    {
+     "value": "72:kurz",
+     "label": "kurz (Punkt)"
+    }
+   ]
   },
   {
    "id": "au2-7",
    "group": "au2",
-   "kind": "text",
+   "kind": "select",
    "label": "Büro",
-   "answer": "lang",
-   "x": 425,
-   "y": 1348,
-   "w": 45,
-   "h": 18
+   "answer": "40:lang",
+   "x": 369,
+   "y": 1347,
+   "w": 39,
+   "h": 23,
+   "options": [
+    {
+     "value": "40:lang",
+     "label": "lang (Strich)"
+    },
+    {
+     "value": "40:kurz",
+     "label": "kurz (Punkt)"
+    }
+   ]
   },
   {
    "id": "au3-1",
    "group": "au3",
-   "kind": "text",
-   "label": "Termine",
-   "answer": "Termine",
-   "x": 700,
-   "y": 1026,
-   "w": 70,
-   "h": 18
+   "kind": "select",
+   "label": "Termine Vokal markieren",
+   "answer": "62:lang",
+   "x": 618,
+   "y": 1028,
+   "w": 73,
+   "h": 24,
+   "options": [
+    {
+     "value": "20:lang",
+     "label": "Termine: Vokal links lang"
+    },
+    {
+     "value": "20:kurz",
+     "label": "Termine: Vokal links kurz"
+    },
+    {
+     "value": "62:lang",
+     "label": "Termine: Vokal rechts lang"
+    },
+    {
+     "value": "62:kurz",
+     "label": "Termine: Vokal rechts kurz"
+    }
+   ]
   },
   {
    "id": "au3-2",
    "group": "au3",
-   "kind": "text",
-   "label": "Um vier Uhr im Büro.",
-   "answer": "vier Uhr Büro",
-   "x": 800,
-   "y": 1050,
-   "w": 70,
-   "h": 18
+   "kind": "select",
+   "label": "Um Vokal markieren",
+   "answer": "20:kurz",
+   "x": 620,
+   "y": 1053,
+   "w": 29,
+   "h": 24,
+   "options": [
+    {
+     "value": "20:lang",
+     "label": "Um: Vokal links lang"
+    },
+    {
+     "value": "20:kurz",
+     "label": "Um: Vokal links kurz"
+    }
+   ]
   },
   {
    "id": "au3-3",
    "group": "au3",
-   "kind": "text",
-   "label": "Nicht um fünf?",
-   "answer": "Nicht fünf",
-   "x": 745,
-   "y": 1074,
-   "w": 70,
-   "h": 18
+   "kind": "select",
+   "label": "vier Vokal markieren",
+   "answer": "44:lang",
+   "x": 653,
+   "y": 1052,
+   "w": 34,
+   "h": 24,
+   "options": [
+    {
+     "value": "44:lang",
+     "label": "vier: Vokal links lang"
+    },
+    {
+     "value": "44:kurz",
+     "label": "vier: Vokal links kurz"
+    }
+   ]
   },
   {
    "id": "au3-4",
    "group": "au3",
-   "kind": "text",
-   "label": "Nein, um sieben.",
-   "answer": "Nein sieben",
-   "x": 750,
-   "y": 1100,
-   "w": 70,
-   "h": 18
+   "kind": "select",
+   "label": "Uhr Vokal markieren",
+   "answer": "14:lang",
+   "x": 694,
+   "y": 1051,
+   "w": 32,
+   "h": 24,
+   "options": [
+    {
+     "value": "14:lang",
+     "label": "Uhr: Vokal links lang"
+    },
+    {
+     "value": "14:kurz",
+     "label": "Uhr: Vokal links kurz"
+    }
+   ]
   },
   {
    "id": "au3-5",
    "group": "au3",
-   "kind": "text",
-   "label": "Viele Grüße und tschüs!",
-   "answer": "Viele Grüße tschüs",
-   "x": 805,
-   "y": 1162,
-   "w": 70,
-   "h": 18
+   "kind": "select",
+   "label": "im Vokal markieren",
+   "answer": "10:kurz",
+   "x": 732,
+   "y": 1051,
+   "w": 22,
+   "h": 24,
+   "options": [
+    {
+     "value": "10:lang",
+     "label": "im: Vokal links lang"
+    },
+    {
+     "value": "10:kurz",
+     "label": "im: Vokal links kurz"
+    }
+   ]
   },
   {
    "id": "au3-6",
    "group": "au3",
-   "kind": "text",
-   "label": "Fünf Stühle, grün und günstig,",
-   "answer": "Fünf Stühle grün günstig",
-   "x": 875,
-   "y": 1225,
-   "w": 70,
-   "h": 18
+   "kind": "select",
+   "label": "Büro Vokal markieren",
+   "answer": "34:lang",
+   "x": 761,
+   "y": 1051,
+   "w": 44,
+   "h": 24,
+   "options": [
+    {
+     "value": "34:lang",
+     "label": "Büro: Vokal links lang"
+    },
+    {
+     "value": "34:kurz",
+     "label": "Büro: Vokal links kurz"
+    }
+   ]
   },
   {
    "id": "au3-7",
    "group": "au3",
-   "kind": "text",
-   "label": "für Sie zum Sonderpreis!",
-   "answer": "für Sie Sonderpreis",
-   "x": 815,
-   "y": 1251,
-   "w": 70,
-   "h": 18
+   "kind": "select",
+   "label": "Nicht Vokal markieren",
+   "answer": "35:kurz",
+   "x": 620,
+   "y": 1077,
+   "w": 46,
+   "h": 24,
+   "options": [
+    {
+     "value": "35:lang",
+     "label": "Nicht: Vokal links lang"
+    },
+    {
+     "value": "35:kurz",
+     "label": "Nicht: Vokal links kurz"
+    },
+    {
+     "value": "80:lang",
+     "label": "Nicht: Vokal rechts lang"
+    },
+    {
+     "value": "80:kurz",
+     "label": "Nicht: Vokal rechts kurz"
+    }
+   ]
+  },
+  {
+   "id": "au3-8",
+   "group": "au3",
+   "kind": "select",
+   "label": "um Vokal markieren",
+   "answer": "20:kurz",
+   "x": 673,
+   "y": 1080,
+   "w": 27,
+   "h": 24,
+   "options": [
+    {
+     "value": "20:lang",
+     "label": "um: Vokal links lang"
+    },
+    {
+     "value": "20:kurz",
+     "label": "um: Vokal links kurz"
+    }
+   ]
+  },
+  {
+   "id": "au3-9",
+   "group": "au3",
+   "kind": "select",
+   "label": "fünf Vokal markieren",
+   "answer": "30:kurz",
+   "x": 706,
+   "y": 1075,
+   "w": 45,
+   "h": 24,
+   "options": [
+    {
+     "value": "30:lang",
+     "label": "fünf: Vokal links lang"
+    },
+    {
+     "value": "30:kurz",
+     "label": "fünf: Vokal links kurz"
+    }
+   ]
+  },
+  {
+   "id": "au3-10",
+   "group": "au3",
+   "kind": "select",
+   "label": "Nein Vokal markieren",
+   "answer": "46:lang",
+   "x": 620,
+   "y": 1103,
+   "w": 45,
+   "h": 24,
+   "options": [
+    {
+     "value": "46:lang",
+     "label": "Nein: Vokal links lang"
+    },
+    {
+     "value": "46:kurz",
+     "label": "Nein: Vokal links kurz"
+    }
+   ]
+  },
+  {
+   "id": "au3-11",
+   "group": "au3",
+   "kind": "select",
+   "label": "um Vokal markieren",
+   "answer": "20:kurz",
+   "x": 673,
+   "y": 1105,
+   "w": 27,
+   "h": 24,
+   "options": [
+    {
+     "value": "20:lang",
+     "label": "um: Vokal links lang"
+    },
+    {
+     "value": "20:kurz",
+     "label": "um: Vokal links kurz"
+    }
+   ]
+  },
+  {
+   "id": "au3-12",
+   "group": "au3",
+   "kind": "select",
+   "label": "sieben Vokal markieren",
+   "answer": "28:lang",
+   "x": 706,
+   "y": 1100,
+   "w": 58,
+   "h": 24,
+   "options": [
+    {
+     "value": "28:lang",
+     "label": "sieben: Vokal links lang"
+    },
+    {
+     "value": "28:kurz",
+     "label": "sieben: Vokal links kurz"
+    },
+    {
+     "value": "80:lang",
+     "label": "sieben: Vokal rechts lang"
+    },
+    {
+     "value": "80:kurz",
+     "label": "sieben: Vokal rechts kurz"
+    }
+   ]
+  },
+  {
+   "id": "au3-13",
+   "group": "au3",
+   "kind": "select",
+   "label": "Viele Vokal markieren",
+   "answer": "37:lang",
+   "x": 620,
+   "y": 1165,
+   "w": 43,
+   "h": 24,
+   "options": [
+    {
+     "value": "37:lang",
+     "label": "Viele: Vokal links lang"
+    },
+    {
+     "value": "37:kurz",
+     "label": "Viele: Vokal links kurz"
+    },
+    {
+     "value": "80:lang",
+     "label": "Viele: Vokal rechts lang"
+    },
+    {
+     "value": "80:kurz",
+     "label": "Viele: Vokal rechts kurz"
+    }
+   ]
+  },
+  {
+   "id": "au3-14",
+   "group": "au3",
+   "kind": "select",
+   "label": "Grüße Vokal markieren",
+   "answer": "37:lang",
+   "x": 669,
+   "y": 1164,
+   "w": 50,
+   "h": 24,
+   "options": [
+    {
+     "value": "37:lang",
+     "label": "Grüße: Vokal links lang"
+    },
+    {
+     "value": "37:kurz",
+     "label": "Grüße: Vokal links kurz"
+    },
+    {
+     "value": "80:lang",
+     "label": "Grüße: Vokal rechts lang"
+    },
+    {
+     "value": "80:kurz",
+     "label": "Grüße: Vokal rechts kurz"
+    }
+   ]
+  },
+  {
+   "id": "au3-15",
+   "group": "au3",
+   "kind": "select",
+   "label": "und Vokal markieren",
+   "answer": "20:kurz",
+   "x": 725,
+   "y": 1163,
+   "w": 33,
+   "h": 24,
+   "options": [
+    {
+     "value": "20:lang",
+     "label": "und: Vokal links lang"
+    },
+    {
+     "value": "20:kurz",
+     "label": "und: Vokal links kurz"
+    }
+   ]
+  },
+  {
+   "id": "au3-16",
+   "group": "au3",
+   "kind": "select",
+   "label": "tschüs Vokal markieren",
+   "answer": "70:kurz",
+   "x": 764,
+   "y": 1163,
+   "w": 58,
+   "h": 24,
+   "options": [
+    {
+     "value": "20:lang",
+     "label": "tschüs: Vokal links lang"
+    },
+    {
+     "value": "20:kurz",
+     "label": "tschüs: Vokal links kurz"
+    },
+    {
+     "value": "70:lang",
+     "label": "tschüs: Vokal rechts lang"
+    },
+    {
+     "value": "70:kurz",
+     "label": "tschüs: Vokal rechts kurz"
+    }
+   ]
+  },
+  {
+   "id": "au3-17",
+   "group": "au3",
+   "kind": "select",
+   "label": "Fünf Vokal markieren",
+   "answer": "34:kurz",
+   "x": 622,
+   "y": 1228,
+   "w": 40,
+   "h": 24,
+   "options": [
+    {
+     "value": "34:lang",
+     "label": "Fünf: Vokal links lang"
+    },
+    {
+     "value": "34:kurz",
+     "label": "Fünf: Vokal links kurz"
+    }
+   ]
+  },
+  {
+   "id": "au3-18",
+   "group": "au3",
+   "kind": "select",
+   "label": "Stühle Vokal markieren",
+   "answer": "46:lang",
+   "x": 669,
+   "y": 1227,
+   "w": 58,
+   "h": 24,
+   "options": [
+    {
+     "value": "46:lang",
+     "label": "Stühle: Vokal links lang"
+    },
+    {
+     "value": "46:kurz",
+     "label": "Stühle: Vokal links kurz"
+    },
+    {
+     "value": "80:lang",
+     "label": "Stühle: Vokal rechts lang"
+    },
+    {
+     "value": "80:kurz",
+     "label": "Stühle: Vokal rechts kurz"
+    }
+   ]
+  },
+  {
+   "id": "au3-19",
+   "group": "au3",
+   "kind": "select",
+   "label": "grün Vokal markieren",
+   "answer": "60:lang",
+   "x": 733,
+   "y": 1228,
+   "w": 41,
+   "h": 24,
+   "options": [
+    {
+     "value": "60:lang",
+     "label": "grün: Vokal rechts lang"
+    },
+    {
+     "value": "60:kurz",
+     "label": "grün: Vokal rechts kurz"
+    }
+   ]
+  },
+  {
+   "id": "au3-20",
+   "group": "au3",
+   "kind": "select",
+   "label": "günstig Vokal markieren",
+   "answer": "24:kurz",
+   "x": 819,
+   "y": 1226,
+   "w": 68,
+   "h": 24,
+   "options": [
+    {
+     "value": "24:lang",
+     "label": "günstig: Vokal links lang"
+    },
+    {
+     "value": "24:kurz",
+     "label": "günstig: Vokal links kurz"
+    },
+    {
+     "value": "80:lang",
+     "label": "günstig: Vokal rechts lang"
+    },
+    {
+     "value": "80:kurz",
+     "label": "günstig: Vokal rechts kurz"
+    }
+   ]
+  },
+  {
+   "id": "au3-21",
+   "group": "au3",
+   "kind": "select",
+   "label": "für Vokal markieren",
+   "answer": "45:lang",
+   "x": 622,
+   "y": 1253,
+   "w": 26,
+   "h": 24,
+   "options": [
+    {
+     "value": "45:lang",
+     "label": "für: Vokal links lang"
+    },
+    {
+     "value": "45:kurz",
+     "label": "für: Vokal links kurz"
+    }
+   ]
+  },
+  {
+   "id": "au3-22",
+   "group": "au3",
+   "kind": "select",
+   "label": "Sie Vokal markieren",
+   "answer": "55:lang",
+   "x": 655,
+   "y": 1254,
+   "w": 24,
+   "h": 24,
+   "options": [
+    {
+     "value": "55:lang",
+     "label": "Sie: Vokal rechts lang"
+    },
+    {
+     "value": "55:kurz",
+     "label": "Sie: Vokal rechts kurz"
+    }
+   ]
+  },
+  {
+   "id": "au3-23",
+   "group": "au3",
+   "kind": "select",
+   "label": "zum Vokal markieren",
+   "answer": "44:kurz",
+   "x": 685,
+   "y": 1255,
+   "w": 36,
+   "h": 24,
+   "options": [
+    {
+     "value": "44:lang",
+     "label": "zum: Vokal links lang"
+    },
+    {
+     "value": "44:kurz",
+     "label": "zum: Vokal links kurz"
+    }
+   ]
+  },
+  {
+   "id": "au3-24",
+   "group": "au3",
+   "kind": "select",
+   "label": "Sonderpreis Vokal markieren",
+   "answer": "18:kurz",
+   "x": 727,
+   "y": 1252,
+   "w": 106,
+   "h": 24,
+   "options": [
+    {
+     "value": "18:lang",
+     "label": "Sonderpreis: Vokal links lang"
+    },
+    {
+     "value": "18:kurz",
+     "label": "Sonderpreis: Vokal links kurz"
+    },
+    {
+     "value": "80:lang",
+     "label": "Sonderpreis: Vokal rechts lang"
+    },
+    {
+     "value": "80:kurz",
+     "label": "Sonderpreis: Vokal rechts kurz"
+    }
+   ]
   }
  ],
  "audio": [
@@ -2020,55 +2631,55 @@
    "id": "au-cd1-26-234",
    "src": "assets/ab-cd1-track26.mp3",
    "label": "CD 1 Track 26",
-   "x": 95,
-   "y": 234,
-   "w": 40,
-   "h": 16
+   "x": 215,
+   "y": 505,
+   "w": 48,
+   "h": 23
   },
   {
    "id": "au-cd1-27-234",
    "src": "assets/ab-cd1-track27.mp3",
    "label": "CD 1 Track 27",
-   "x": 95,
-   "y": 234,
-   "w": 40,
-   "h": 16
+   "x": 268,
+   "y": 505,
+   "w": 48,
+   "h": 23
   },
   {
    "id": "au-cd1-28-234",
    "src": "assets/ab-cd1-track28.mp3",
    "label": "CD 1 Track 28",
-   "x": 95,
-   "y": 234,
-   "w": 40,
-   "h": 16
+   "x": 321,
+   "y": 505,
+   "w": 48,
+   "h": 23
   },
   {
    "id": "au-cd1-26-562",
    "src": "assets/ab-cd1-track26.mp3",
    "label": "CD 1 Track 26",
-   "x": 95,
-   "y": 562,
-   "w": 40,
-   "h": 16
+   "x": 215,
+   "y": 754,
+   "w": 48,
+   "h": 23
   },
   {
    "id": "au-cd1-27-562",
    "src": "assets/ab-cd1-track27.mp3",
    "label": "CD 1 Track 27",
-   "x": 95,
-   "y": 562,
-   "w": 40,
-   "h": 16
+   "x": 268,
+   "y": 754,
+   "w": 48,
+   "h": 23
   },
   {
    "id": "au-cd1-28-562",
    "src": "assets/ab-cd1-track28.mp3",
    "label": "CD 1 Track 28",
-   "x": 95,
-   "y": 562,
-   "w": 40,
-   "h": 16
+   "x": 321,
+   "y": 754,
+   "w": 48,
+   "h": 23
   },
   {
    "id": "au-cd1-29-884",
@@ -2138,7 +2749,8 @@
    "Aussprache 1: i/u/ue per key (i:1,5,7 u:3,6,9 ü:2,4,8,10).",
    "Aussprache 2: lang/kurz per key (lang, kurz, lang, kurz, lang, kurz, lang); modeled as text fields after each word.",
    "Aussprache 3: Wortakzent marking modeled as text fields per line; answers = stressed words per key (dots in key mark stressed syllables).",
-   "Row numbers 1-10 and item letters a-f added manually (OCR misses)."
+   "Row numbers 1-10 and item letters a-f added manually (OCR misses).",
+   "2026-11-15: verified against publisher key https://legacy.hueber.de/media/36/Loesungsschluessel_Menschen_AB_A1-1.pdf . Replace line transcription with 24 source-vowel marks, seven vowel-length marks, explicit A/B/C selects, X radio marks, separate track26-28 targets. Publisher-specific Büro/tschüs length answers retained."
   ]
  }
 }
