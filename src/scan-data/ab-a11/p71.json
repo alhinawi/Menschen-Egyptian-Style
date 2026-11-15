@@ -1469,7 +1469,658 @@
    "h": 12
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "own-0-0",
+   "group": "own",
+   "kind": "text",
+   "label": "Apfel in meiner Sprache",
+   "x": 357,
+   "y": 293,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-1",
+   "group": "own",
+   "kind": "text",
+   "label": "Braten in meiner Sprache",
+   "x": 357,
+   "y": 318,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-2",
+   "group": "own",
+   "kind": "text",
+   "label": "Brötchen in meiner Sprache",
+   "x": 357,
+   "y": 343,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-3",
+   "group": "own",
+   "kind": "text",
+   "label": "Brot in meiner Sprache",
+   "x": 357,
+   "y": 393,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-4",
+   "group": "own",
+   "kind": "text",
+   "label": "Butter in meiner Sprache",
+   "x": 357,
+   "y": 419,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-5",
+   "group": "own",
+   "kind": "text",
+   "label": "Ei in meiner Sprache",
+   "x": 357,
+   "y": 444,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-6",
+   "group": "own",
+   "kind": "text",
+   "label": "Eis in meiner Sprache",
+   "x": 357,
+   "y": 469,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-7",
+   "group": "own",
+   "kind": "text",
+   "label": "Fisch in meiner Sprache",
+   "x": 357,
+   "y": 495,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-8",
+   "group": "own",
+   "kind": "text",
+   "label": "Fleisch in meiner Sprache",
+   "x": 357,
+   "y": 520,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-9",
+   "group": "own",
+   "kind": "text",
+   "label": "Käse in meiner Sprache",
+   "x": 357,
+   "y": 545,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-10",
+   "group": "own",
+   "kind": "text",
+   "label": "Kartoffel in meiner Sprache",
+   "x": 357,
+   "y": 570,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-11",
+   "group": "own",
+   "kind": "text",
+   "label": "Kuchen in meiner Sprache",
+   "x": 357,
+   "y": 620,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-12",
+   "group": "own",
+   "kind": "text",
+   "label": "Stück Kuchen in meiner Sprache",
+   "x": 357,
+   "y": 646,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-13",
+   "group": "own",
+   "kind": "text",
+   "label": "Milch in meiner Sprache",
+   "x": 357,
+   "y": 671,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-14",
+   "group": "own",
+   "kind": "text",
+   "label": "Obst in meiner Sprache",
+   "x": 357,
+   "y": 696,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-15",
+   "group": "own",
+   "kind": "text",
+   "label": "Orange in meiner Sprache",
+   "x": 357,
+   "y": 746,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-16",
+   "group": "own",
+   "kind": "text",
+   "label": "Reis in meiner Sprache",
+   "x": 357,
+   "y": 772,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-17",
+   "group": "own",
+   "kind": "text",
+   "label": "Sahne in meiner Sprache",
+   "x": 357,
+   "y": 797,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-18",
+   "group": "own",
+   "kind": "text",
+   "label": "Salat in meiner Sprache",
+   "x": 357,
+   "y": 872,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-19",
+   "group": "own",
+   "kind": "text",
+   "label": "Schinken in meiner Sprache",
+   "x": 357,
+   "y": 898,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-20",
+   "group": "own",
+   "kind": "text",
+   "label": "Schokolade in meiner Sprache",
+   "x": 357,
+   "y": 923,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-21",
+   "group": "own",
+   "kind": "text",
+   "label": "Suppe in meiner Sprache",
+   "x": 357,
+   "y": 948,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-22",
+   "group": "own",
+   "kind": "text",
+   "label": "Tee in meiner Sprache",
+   "x": 357,
+   "y": 973,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-23",
+   "group": "own",
+   "kind": "text",
+   "label": "Tomate in meiner Sprache",
+   "x": 357,
+   "y": 998,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-24",
+   "group": "own",
+   "kind": "text",
+   "label": "Wurst in meiner Sprache",
+   "x": 357,
+   "y": 1049,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-25",
+   "group": "own",
+   "kind": "text",
+   "label": "Zitrone in meiner Sprache",
+   "x": 357,
+   "y": 1074,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-0-26",
+   "group": "own",
+   "kind": "text",
+   "label": "Zwiebel in meiner Sprache",
+   "x": 357,
+   "y": 1099,
+   "w": 181,
+   "h": 25
+  },
+  {
+   "id": "own-1-0",
+   "group": "own",
+   "kind": "text",
+   "label": "Durst in meiner Sprache",
+   "x": 716,
+   "y": 288,
+   "w": 190,
+   "h": 25
+  },
+  {
+   "id": "own-1-1",
+   "group": "own",
+   "kind": "text",
+   "label": "Durst haben in meiner Sprache",
+   "x": 716,
+   "y": 314,
+   "w": 190,
+   "h": 25
+  },
+  {
+   "id": "own-1-2",
+   "group": "own",
+   "kind": "text",
+   "label": "Frühstück in meiner Sprache",
+   "x": 716,
+   "y": 339,
+   "w": 190,
+   "h": 25
+  },
+  {
+   "id": "own-1-3",
+   "group": "own",
+   "kind": "text",
+   "label": "Hunger in meiner Sprache",
+   "x": 716,
+   "y": 415,
+   "w": 190,
+   "h": 25
+  },
+  {
+   "id": "own-1-4",
+   "group": "own",
+   "kind": "text",
+   "label": "Hunger haben in meiner Sprache",
+   "x": 716,
+   "y": 440,
+   "w": 190,
+   "h": 25
+  },
+  {
+   "id": "own-1-5",
+   "group": "own",
+   "kind": "text",
+   "label": "Kühlschrank in meiner Sprache",
+   "x": 716,
+   "y": 490,
+   "w": 190,
+   "h": 25
+  },
+  {
+   "id": "own-1-6",
+   "group": "own",
+   "kind": "text",
+   "label": "essen in meiner Sprache",
+   "x": 716,
+   "y": 577,
+   "w": 190,
+   "h": 25
+  },
+  {
+   "id": "own-1-7",
+   "group": "own",
+   "kind": "text",
+   "label": "frühstücken in meiner Sprache",
+   "x": 716,
+   "y": 602,
+   "w": 190,
+   "h": 25
+  },
+  {
+   "id": "own-1-8",
+   "group": "own",
+   "kind": "text",
+   "label": "mögen in meiner Sprache",
+   "x": 716,
+   "y": 654,
+   "w": 190,
+   "h": 25
+  },
+  {
+   "id": "own-1-9",
+   "group": "own",
+   "kind": "text",
+   "label": "schmecken in meiner Sprache",
+   "x": 716,
+   "y": 678,
+   "w": 190,
+   "h": 25
+  },
+  {
+   "id": "own-1-10",
+   "group": "own",
+   "kind": "text",
+   "label": "trinken in meiner Sprache",
+   "x": 716,
+   "y": 730,
+   "w": 190,
+   "h": 25
+  },
+  {
+   "id": "own-1-11",
+   "group": "own",
+   "kind": "text",
+   "label": "Gleichfalls/Ebenfalls in meiner Sprache",
+   "x": 716,
+   "y": 831,
+   "w": 190,
+   "h": 25
+  },
+  {
+   "id": "own-1-12",
+   "group": "own",
+   "kind": "text",
+   "label": "Einladung in meiner Sprache",
+   "x": 716,
+   "y": 930,
+   "w": 190,
+   "h": 25
+  },
+  {
+   "id": "own-1-13",
+   "group": "own",
+   "kind": "text",
+   "label": "Speisekarte in meiner Sprache",
+   "x": 716,
+   "y": 981,
+   "w": 190,
+   "h": 25
+  },
+  {
+   "id": "own-1-14",
+   "group": "own",
+   "kind": "text",
+   "label": "Wochenende in meiner Sprache",
+   "x": 716,
+   "y": 1031,
+   "w": 190,
+   "h": 25
+  },
+  {
+   "id": "own-1-15",
+   "group": "own",
+   "kind": "text",
+   "label": "möchten in meiner Sprache",
+   "x": 716,
+   "y": 1068,
+   "w": 190,
+   "h": 25
+  },
+  {
+   "id": "own-1-16",
+   "group": "own",
+   "kind": "text",
+   "label": "kennen in meiner Sprache",
+   "x": 716,
+   "y": 1094,
+   "w": 190,
+   "h": 25
+  },
+  {
+   "id": "own-1-17",
+   "group": "own",
+   "kind": "text",
+   "label": "etwas in meiner Sprache",
+   "x": 716,
+   "y": 1131,
+   "w": 190,
+   "h": 25
+  },
+  {
+   "id": "own-1-18",
+   "group": "own",
+   "kind": "text",
+   "label": "erst in meiner Sprache",
+   "x": 716,
+   "y": 1157,
+   "w": 190,
+   "h": 25
+  },
+  {
+   "id": "own-1-19",
+   "group": "own",
+   "kind": "text",
+   "label": "schon in meiner Sprache",
+   "x": 716,
+   "y": 1182,
+   "w": 190,
+   "h": 25
+  },
+  {
+   "id": "own-1-20",
+   "group": "own",
+   "kind": "text",
+   "label": "ja gern/ja bitte/nein danke in meiner Sprache",
+   "x": 716,
+   "y": 1232,
+   "w": 190,
+   "h": 25
+  },
+  {
+   "id": "picture-0",
+   "group": "own",
+   "kind": "text",
+   "label": "Bild 1 Wort",
+   "x": 944,
+   "y": 247,
+   "w": 116,
+   "h": 25
+  },
+  {
+   "id": "picture-1",
+   "group": "own",
+   "kind": "text",
+   "label": "Bild 2 Wort",
+   "x": 944,
+   "y": 322,
+   "w": 116,
+   "h": 25
+  },
+  {
+   "id": "picture-2",
+   "group": "own",
+   "kind": "text",
+   "label": "Bild 3 Wort",
+   "x": 944,
+   "y": 400,
+   "w": 116,
+   "h": 25
+  },
+  {
+   "id": "picture-3",
+   "group": "own",
+   "kind": "text",
+   "label": "Bild 4 Wort",
+   "x": 944,
+   "y": 476,
+   "w": 116,
+   "h": 25
+  },
+  {
+   "id": "picture-4",
+   "group": "own",
+   "kind": "text",
+   "label": "Bild 5 Wort",
+   "x": 944,
+   "y": 554,
+   "w": 116,
+   "h": 25
+  },
+  {
+   "id": "picture-5",
+   "group": "own",
+   "kind": "text",
+   "label": "Bild 6 Wort",
+   "x": 944,
+   "y": 637,
+   "w": 116,
+   "h": 25
+  },
+  {
+   "id": "picture-6",
+   "group": "own",
+   "kind": "text",
+   "label": "Bild 7 Wort",
+   "x": 944,
+   "y": 713,
+   "w": 116,
+   "h": 25
+  },
+  {
+   "id": "picture-7",
+   "group": "own",
+   "kind": "text",
+   "label": "Bild 8 Wort",
+   "x": 944,
+   "y": 794,
+   "w": 116,
+   "h": 25
+  },
+  {
+   "id": "picture-8",
+   "group": "own",
+   "kind": "text",
+   "label": "Bild 9 Wort",
+   "x": 944,
+   "y": 871,
+   "w": 116,
+   "h": 25
+  },
+  {
+   "id": "picture-9",
+   "group": "own",
+   "kind": "text",
+   "label": "Bild 10 Wort",
+   "x": 944,
+   "y": 962,
+   "w": 116,
+   "h": 25
+  },
+  {
+   "id": "picture-10",
+   "group": "own",
+   "kind": "text",
+   "label": "Bild 11 Wort",
+   "x": 944,
+   "y": 1030,
+   "w": 116,
+   "h": 25
+  },
+  {
+   "id": "picture-11",
+   "group": "own",
+   "kind": "text",
+   "label": "Bild 12 Wort",
+   "x": 944,
+   "y": 1093,
+   "w": 116,
+   "h": 25
+  },
+  {
+   "id": "picture-12",
+   "group": "own",
+   "kind": "text",
+   "label": "Bild 13 Wort",
+   "x": 944,
+   "y": 1156,
+   "w": 116,
+   "h": 25
+  },
+  {
+   "id": "picture-13",
+   "group": "own",
+   "kind": "text",
+   "label": "Bild 14 Wort",
+   "x": 944,
+   "y": 1232,
+   "w": 116,
+   "h": 25
+  },
+  {
+   "id": "picture-14",
+   "group": "own",
+   "kind": "text",
+   "label": "Bild 15 Wort",
+   "x": 944,
+   "y": 1302,
+   "w": 116,
+   "h": 25
+  },
+  {
+   "id": "picture-15",
+   "group": "own",
+   "kind": "text",
+   "label": "Bild 16 Wort",
+   "x": 944,
+   "y": 1374,
+   "w": 116,
+   "h": 25
+  },
+  {
+   "id": "own-vocabulary",
+   "group": "own",
+   "kind": "text",
+   "label": "2 Weitere Wörter",
+   "x": 200,
+   "y": 1363,
+   "w": 708,
+   "h": 51
+  }
+ ],
  "audio": [],
  "groups": [],
  "review": {
@@ -1477,9 +2128,7 @@
   "verifiedWords": 209,
   "totalWords": 209,
   "notes": [
-   "Lernwortschatz L9: translation rules are personal (Wie heissen die Woerter in Ihrer Sprache?) - no fields, same as p59/p65.",
-   "TIPP 'Lernen Sie Woerter in Gruppen.' body included; blue cursive word-map example (die Orange / Obst / der Apfel / die Zitrone) is a printed publisher example, kept as words.",
-   "U2 'Welche Woerter moechten Sie noch lernen? Notieren Sie.' personal completion - no fields. Food photos on the right edge, vertical TIPP tab and the big Lektion number 9 excluded."
+   "2026-11-16: original scan/fonts restored;48 own-translation lines,16 picture-word fields,one own-vocabulary textarea. Ungraded,saved and resettable. Printed word-map example intact."
   ]
  }
 }
