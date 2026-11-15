@@ -4,6 +4,7 @@ import {CheckButton} from '../components/CheckButton';
 import {PageImage} from '../components/PageImage';
 import {usePageReset} from '../exercises/usePageReset';
 import '../native-ab11/native-ab11.css';
+import '../native-ab11/native-ab11-lessons45.css';
 import './native-ab11-faithful.css';
 
 type Item={k:string;[key:string]:any};
@@ -26,7 +27,9 @@ export function NativeAB11Faithful({page}:{page:string}){
  const set=(id:string,v:string)=>setValues(o=>{const n={...o,[id]:v};localStorage.setItem(key,JSON.stringify(n));return n});
  const render=(it:Item,n:number)=>{
   switch(it.k){
-   case 't':{const [asc,lh]=METRIC[it.f||'r'];return <div key={n} className={'nafText naf-'+(it.f||'r')+(it.cls?' '+it.cls:'')} style={{left:it.x,top:it.b-asc*it.s,fontSize:it.s,lineHeight:lh,color:it.col}}><Words text={it.t}/></div>}
+   case 't':{const [asc,lh]=page==='41'?[1,1.2]:METRIC[it.f||'r'];return <div key={n} className={'nafText naf-'+(it.f||'r')+(it.cls?' '+it.cls:'')} style={{left:it.x,top:it.b-asc*it.s,fontSize:it.s,lineHeight:lh,color:it.col,transform:it.sx?`scaleX(${it.sx})`:undefined,transformOrigin:'left top'}}><Words text={it.t}/></div>}
+   case 'sprite':return <div key={n} className="nafSpriteBox" style={{left:it.x,top:it.y,width:it.w,height:it.h}}><PageImage alt="Originalabbildung" className="nafSprite" src={it.src} style={{left:0,top:-it.offset,width:it.sw,height:it.sh}}/></div>;
+   case 'notes':return <textarea key={n} className="nafNotes" data-native-field={it.id} aria-label={it.lab} style={{left:it.x,top:it.y,width:it.w,height:it.h}} value={values[it.id]||''} onChange={e=>set(it.id,e.target.value)}/>;
    case 'bx':return <div key={n} className="nafBox" style={{left:it.x,top:it.y,width:it.w,height:it.h,background:it.bg}}/>;
    case 'ln':return <svg key={n} className="nafLine" width={spec.w} height={spec.h}><line x1={it.x1} y1={it.y1} x2={it.x2} y2={it.y2} stroke={it.col} strokeWidth={it.w}/></svg>;
    case 'a':return <PageImage key={n} className="nafArt" alt="" src={it.src} style={{left:it.x,top:it.y,width:it.w,height:it.h}}/>;
