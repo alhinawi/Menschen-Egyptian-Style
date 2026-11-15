@@ -1569,6 +1569,19 @@
   ],
   "ab-a11:40": [
     {
+      "prefix": "t1-",
+      "options": [
+        "blau",
+        "orange",
+        "eckig",
+        "rund",
+        "Feuerzeug",
+        "Seife",
+        "Kunststoff",
+        "Metall"
+      ]
+    },
+    {
       "ids": [
         "t3-b",
         "t3-c1",
