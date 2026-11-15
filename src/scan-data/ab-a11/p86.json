@@ -2022,10 +2022,10 @@
    "kind": "text",
    "label": "a: ich … Paula schon",
    "answer": "habe",
-   "x": 492,
-   "y": 438,
-   "w": 75,
-   "h": 22
+   "x": 478,
+   "y": 416,
+   "w": 58,
+   "h": 30
   },
   {
    "id": "u8-a2",
@@ -2033,10 +2033,10 @@
    "kind": "text",
    "label": "a: ich habe Paula schon …",
    "answer": "abgeholt",
-   "x": 450,
-   "y": 458,
-   "w": 120,
-   "h": 22
+   "x": 451,
+   "y": 445,
+   "w": 116,
+   "h": 30
   },
   {
    "id": "u8-a3",
@@ -2044,10 +2044,10 @@
    "kind": "text",
    "label": "a: Sie … super Wein",
    "answer": "hat",
-   "x": 450,
-   "y": 480,
+   "x": 451,
+   "y": 472,
    "w": 66,
-   "h": 22
+   "h": 30
   },
   {
    "id": "u8-a4",
@@ -2055,10 +2055,10 @@
    "kind": "text",
    "label": "a: Sie hat super Wein …",
    "answer": "mitgebracht",
-   "x": 450,
-   "y": 502,
-   "w": 106,
-   "h": 22
+   "x": 451,
+   "y": 500,
+   "w": 117,
+   "h": 30
   },
   {
    "id": "u8-b1",
@@ -2066,10 +2066,10 @@
    "kind": "text",
    "label": "b: Wir … auch Susanne zum Essen",
    "answer": "laden",
-   "x": 965,
-   "y": 486,
-   "w": 90,
-   "h": 22
+   "x": 959,
+   "y": 474,
+   "w": 67,
+   "h": 30
   },
   {
    "id": "u8-b2",
@@ -2077,166 +2077,166 @@
    "kind": "text",
    "label": "b: Wir laden auch Susanne zum Essen …",
    "answer": "ein",
-   "x": 925,
-   "y": 542,
-   "w": 130,
-   "h": 22
+   "x": 929,
+   "y": 530,
+   "w": 117,
+   "h": 30
   },
   {
    "id": "u9-a-r",
    "group": "u9",
    "kind": "radio",
-   "label": "",
+   "label": "9 a richtig",
    "name": "u9-a",
    "value": "richtig",
    "answer": "true",
    "x": 830,
-   "y": 1420,
-   "w": 20,
-   "h": 20
+   "y": 1415,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u9-a-f",
    "group": "u9",
    "kind": "radio",
-   "label": "",
+   "label": "9 a falsch",
    "name": "u9-a",
    "value": "falsch",
    "answer": "false",
-   "x": 902,
-   "y": 1420,
-   "w": 20,
-   "h": 20
+   "x": 900,
+   "y": 1415,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u9-b-r",
    "group": "u9",
    "kind": "radio",
-   "label": "",
+   "label": "9 b richtig",
    "name": "u9-b",
    "value": "richtig",
    "answer": "true",
    "x": 830,
-   "y": 1450,
-   "w": 20,
-   "h": 20
+   "y": 1444,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u9-b-f",
    "group": "u9",
    "kind": "radio",
-   "label": "",
+   "label": "9 b falsch",
    "name": "u9-b",
    "value": "falsch",
    "answer": "false",
-   "x": 902,
-   "y": 1450,
-   "w": 20,
-   "h": 20
+   "x": 900,
+   "y": 1444,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u9-c-r",
    "group": "u9",
    "kind": "radio",
-   "label": "",
+   "label": "9 c richtig",
    "name": "u9-c",
    "value": "richtig",
    "answer": "false",
    "x": 830,
-   "y": 1480,
-   "w": 20,
-   "h": 20
+   "y": 1473,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u9-c-f",
    "group": "u9",
    "kind": "radio",
-   "label": "",
+   "label": "9 c falsch",
    "name": "u9-c",
    "value": "falsch",
    "answer": "true",
-   "x": 902,
-   "y": 1480,
-   "w": 20,
-   "h": 20
+   "x": 900,
+   "y": 1473,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u9-d-r",
    "group": "u9",
    "kind": "radio",
-   "label": "",
+   "label": "9 d richtig",
    "name": "u9-d",
    "value": "richtig",
    "answer": "false",
    "x": 830,
-   "y": 1508,
-   "w": 20,
-   "h": 20
+   "y": 1503,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u9-d-f",
    "group": "u9",
    "kind": "radio",
-   "label": "",
+   "label": "9 d falsch",
    "name": "u9-d",
    "value": "falsch",
    "answer": "true",
-   "x": 902,
-   "y": 1508,
-   "w": 20,
-   "h": 20
+   "x": 900,
+   "y": 1503,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u9-e-r",
    "group": "u9",
    "kind": "radio",
-   "label": "",
+   "label": "9 e richtig",
    "name": "u9-e",
    "value": "richtig",
    "answer": "true",
    "x": 830,
-   "y": 1538,
-   "w": 20,
-   "h": 20
+   "y": 1532,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u9-e-f",
    "group": "u9",
    "kind": "radio",
-   "label": "",
+   "label": "9 e falsch",
    "name": "u9-e",
    "value": "falsch",
    "answer": "false",
-   "x": 902,
-   "y": 1538,
-   "w": 20,
-   "h": 20
+   "x": 900,
+   "y": 1532,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u9-f-r",
    "group": "u9",
    "kind": "radio",
-   "label": "",
+   "label": "9 f richtig",
    "name": "u9-f",
    "value": "richtig",
    "answer": "true",
    "x": 830,
-   "y": 1568,
-   "w": 20,
-   "h": 20
+   "y": 1561,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u9-f-f",
    "group": "u9",
    "kind": "radio",
-   "label": "",
+   "label": "9 f falsch",
    "name": "u9-f",
    "value": "falsch",
    "answer": "false",
-   "x": 902,
-   "y": 1568,
-   "w": 20,
-   "h": 20
+   "x": 900,
+   "y": 1561,
+   "w": 19,
+   "h": 19
   }
  ],
  "audio": [],
@@ -2256,7 +2256,8 @@
   "totalWords": 287,
   "notes": [
    "BASISTRAINING L11 Ü8-Ü9. Answers from AB Lösungsschlüssel (8a habe/abgeholt/hat/mitgebracht; 8b laden/ein; 9 a richtig b richtig c falsch d falsch e richtig f richtig).",
-   "Ü8b: 'haben' and 'eingekauft' are printed blue examples (words, no fields; 'einkaufen' struck in the bank). Phone mockup text ('Hi Claudia, ho_') excluded as photo content. 'Modul 4' footer tab kept."
+   "Ü8b: 'haben' and 'eingekauft' are printed blue examples (words, no fields; 'einkaufen' struck in the bank). Phone mockup text ('Hi Claudia, ho_') excluded as photo content. 'Modul 4' footer tab kept.",
+   "2026-11-16: Source scan/fonts and blueexamples preserved;6genuine conjugation/participle fields and6richtig/falsch circlechoices pixelaligned. Sourcecontext supports present laden…ein because invitation is not yet done,despite overall Perfekt instruction."
   ]
  }
 }
