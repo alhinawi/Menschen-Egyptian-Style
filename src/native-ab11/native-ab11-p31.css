@@ -24,7 +24,7 @@
 .ab11p31Canvas .p31Rail{position:absolute;writing-mode:vertical-rl;transform:rotate(180deg);font:700 10px P31Sans,sans-serif;color:#2a3372;letter-spacing:0;white-space:nowrap;overflow:visible}
 .ab11p31Canvas .p31Chip{position:absolute;box-sizing:border-box;background:#e6dd9f;color:#7a6a28;font:9px/1 P31Sans,sans-serif;display:flex;align-items:center;justify-content:center;white-space:nowrap;overflow:visible}
 .ab11p31Canvas .p31Audio{position:absolute;border:0!important;background:transparent!important;min-height:0!important;padding:0!important;margin:0!important;border-radius:0!important;white-space:pre;cursor:pointer}
-.ab11p31Canvas .p31Tri{color:#42a6e1;font-family:P31Sans,sans-serif;margin-right:2px}
+.ab11p31Canvas .p31Tri{color:#42a6e1;font-family:P31Sans,sans-serif;margin-right:4px}
 .ab11p31Canvas .p31AudioLabel{font-family:P31Serif,Georgia,serif;color:#242420}
 .ab11p31Canvas .p31Field{position:absolute;box-sizing:border-box;min-width:0!important;min-height:0!important;max-width:none!important;margin:0!important;border:0!important;border-bottom:1px solid #a5aaa7!important;border-radius:0!important;padding:0 2px!important;font:var(--p31-answer-size,13px)/1.2 P31Serif,serif!important;color:#28496f;background:transparent!important;outline-offset:1px}
 .ab11p31Canvas .p31FieldNB{border-bottom:0!important}
