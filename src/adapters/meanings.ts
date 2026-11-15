@@ -1,3 +1,4 @@
+import {getTranslationLanguage, subscribeTranslationLanguage} from '../meanings/translation-language';
 import {automaticArabic,hasCuratedTranslation,recordMissingTranslation} from '../meanings/automaticTranslation';
 import {serviceLifecycle} from './lifecycle';
 import {flushSync} from 'react-dom';
@@ -43,6 +44,7 @@ function refresh(autoplay=false){
  let view: Partial<MeaningSnapshot>;
  if(current?.selectionParts){const parts=current.selectionParts;audioPath=parts.flatMap((p: any)=>p.audio||[])[0];view={mode:'sentence',german:parts.map((p: any)=>p.text).join('\n\n'),arabic:parts.map((p:any,index:number)=>{if(hasCuratedTranslation(p.arabic))return p.arabic;missing.push({text:p.text,index});return 'جاري الترجمة الآلية…'}).join('\n\n'),wordDisabled:true,sentenceDisabled:true,audioDisabled:!audioPath&&!ttsAvailable(),pendingHidden:parts.every((p: any)=>p.audio?.length)||ttsAvailable(),pending:'بعض أجزاء التحديد لسه ناقصها تسجيل. هنشغّل الأجزاء الجاهزة.'};}
  else{const text=mode==='sentence'?current.phrase:current.word;const translated=mode==='sentence'?(phrases.get(norm(text))??words[norm(text)]):words[norm(text)];const record=records.find((r: any)=>r.type===mode&&norm(r.text)===norm(text))||(mode==='sentence'?records.find((r: any)=>r.type==='word'&&norm(r.text)===norm(text)):undefined);audioPath=recordPronunciationUrl(record);if(!hasCuratedTranslation(translated))missing.push({text,index:0});view={german:text,arabic:hasCuratedTranslation(translated)?translated:'جاري الترجمة الآلية…',sentenceDisabled:!current.phrase,wordDisabled:!current.word,mode,audioDisabled:!audioPath&&!ttsAvailable(),pendingHidden:!!audioPath||ttsAvailable(),pending:mode==='sentence'?'نطق الجملة دي لسه بيتجهّز. التسجيلات الأصلية شغّالة جوّه التمارين.':'نطق الكلمة دي لسه بيتجهّز. تقدر تختار الجملة لو نطقها جاهز.'};}
+ if(getTranslationLanguage()==='en'){missing.length=0;view.arabic='';}
  view.machine=missing.length>0;view.machineState=missing.length?'loading':'idle';
  flushSync(()=>meaningStore.update(view));if(autoplay)play();
  if(missing.length){
@@ -56,6 +58,7 @@ function refresh(autoplay=false){
  }
 }
 
+const unsubscribeTranslationLanguage=subscribeTranslationLanguage(()=>{if(current)refresh();});
 function open(word: string|undefined, phrase: string, wanted: 'word'|'sentence'){activeAudio.pause();ttsStop();current={word:word||'',phrase};mode=wanted;refresh();if(!dialog.open)dialog.showModal();play()}
 window.openBookMeaning=open;
 meaningStore.connect({retryTranslation(){refresh()},word(){mode='word';refresh(true)},sentence(){mode='sentence';refresh(true)},play,pause:()=>{activeAudio.pause();ttsStop()}});
@@ -105,7 +108,7 @@ const translateSelection=()=>{const text=chosen;selectionStore.update({actionHid
 selectionStore.connect({toggleMode,toggleSelection,translate:translateSelection});
 const stage=document.querySelector<HTMLElement>('#pageStage')!;stage.addEventListener('click',(e: any)=>{if(selecting)return;const word=e.target.closest('.tapWord'),sentence=e.target.closest('.tapSentence');if(!word&&!sentence)return;e.stopPropagation();if(tapMode==='sentence'||!word)open(word?.dataset.word,sentence?.dataset.phrase||word.dataset.phrase,'sentence');else open(word.dataset.word,sentence?.dataset.phrase||word.dataset.phrase,'word')});stage.addEventListener('keydown',(e: any)=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('.tapWord,.tapSentence')){e.preventDefault();e.stopPropagation();e.target.click()}});for(const span of document.querySelectorAll<HTMLElement>('.tapWord,.tapSentence'))for(const type of ['mousedown','touchstart'])span.addEventListener(type,(e: any)=>e.stopPropagation());
 };
-return()=>{translationVersion++;lifecycle.dispose();activeAudio.onended=null;activeAudio.pause();ttsStop();activeAudio.removeAttribute('src');meaningStore.connect({});selectionStore.connect({});delete window.openBookMeaning;delete window.initMeanings};
+return()=>{unsubscribeTranslationLanguage();translationVersion++;lifecycle.dispose();activeAudio.onended=null;activeAudio.pause();ttsStop();activeAudio.removeAttribute('src');meaningStore.connect({});selectionStore.connect({});delete window.openBookMeaning;delete window.initMeanings};
 })();
 
 }
