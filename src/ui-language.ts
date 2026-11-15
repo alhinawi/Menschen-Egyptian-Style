@@ -41,6 +41,8 @@ export const UI_COPY: [string, string][] = [
  ['Connection problem. Please try again.','حصلت مشكلة في الاتصال. جرّب تاني.'],
  ['Progress saved & synced','تقدمك محفوظ ومتزامن'], ['Syncing your progress…','بيزامن تقدمك…'], ['Sync failed - will retry','المزامنة فشلت - هنحاول تاني'],
  ['Leaderboard','المتصدرين'], ['points','نقطة'], ['You','انت'], ['No scores yet - be the first!','لسه مفيش نتايج - كون أول واحد!'],
+ ['Please verify your email address','أكّد بريدك الإلكتروني لو سمحت'], ['Resend verification email','ابعت إيميل التأكيد تاني'], ['Verification email sent','إيميل التأكيد اتبعت'],
+ ['Email verified','تم تأكيد بريدك الإلكتروني'], ['Verification link expired or invalid','لينك التأكيد منتهي أو غلط'],
  ['Profile photo','الصورة الشخصية'], ['Change profile photo','غيّر صورتك'], ['Upload photo','ارفع صورة'], ['Use Google photo','استخدم صورة جوجل'], ['Remove photo','امسح الصورة'], ['Choose avatar','اختار صورة رمزية'], ['Crop photo','قص الصورة'], ['Zoom','تكبير'], ['Save photo','احفظ الصورة'], ['Back','رجوع'],
  ['Library','المكتبة'], ['☰ Library','☰ المكتبة'], ['CHOOSE YOUR BOOK','اختار كتابك'], ['Close menu','اقفل القائمة'],
  ['Cover','الغلاف'], ['Guide','الدليل'], ['Imprint','بيانات النشر'], ['Inside back cover','داخل الغلاف الخلفي'], ['Inside cover','داخل الغلاف'], ['Back cover','الغلاف الخلفي'],
