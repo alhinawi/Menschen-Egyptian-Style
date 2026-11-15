@@ -35,7 +35,7 @@ export const UI_COPY: [string, string][] = [
  ['Check your details: a name of at least 2 characters, a valid email and a password of at least 8 characters','راجع البيانات: اسم من حرفين، بريد صحيح، وكلمة سر 8 أحرف على الأقل'],
  ['Connection problem. Please try again.','حصلت مشكلة في الاتصال. جرّب تاني.'],
  ['Library','المكتبة'], ['☰ Library','☰ المكتبة'], ['CHOOSE YOUR BOOK','اختار كتابك'], ['Close menu','اقفل القائمة'],
- ['Cover','الغلاف'], ['Guide','دليل الاستخدام'], ['Imprint','بيانات النشر'], ['Inside back cover','داخل الغلاف الخلفي'], ['Inside cover','داخل الغلاف'], ['Back cover','الغلاف الخلفي'],
+ ['Cover','الغلاف'], ['Guide','الدليل'], ['Imprint','بيانات النشر'], ['Inside back cover','داخل الغلاف الخلفي'], ['Inside cover','داخل الغلاف'], ['Back cover','الغلاف الخلفي'],
  ['pp.','ص'], ['All pages','كل الصفحات'], ['EXTRAS','صفحات إضافية'], ['Page navigation','التنقل بين الصفحات'],
  ['Coursebook · 24 lessons','كتاب الدروس · 24 درس'], ['Workbook · 24 lessons','كتاب التمارين · 24 درس'],
  ['Previous page','الصفحة اللي قبلها'], ['Next page','الصفحة اللي بعدها'], ['Zoom in','تكبير'], ['Zoom out','تصغير'], ['Fit page','الصفحة كاملة'], ['Fit','ملاءمة'], ['Original ↗','الأصل ↗'],
