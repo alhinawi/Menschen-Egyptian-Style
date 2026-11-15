@@ -15,6 +15,7 @@ const server=http.createServer((req,res)=>{const url=new URL(req.url,'http://loc
  assert.equal(await page.locator('.premiumCoverEdition').innerText(),`${book}\n◆\nInteractive Edition`);
  assert.equal(await page.locator('.premiumCoverLevel').innerText(),level);
  assert.equal(await page.locator('.coverSocials a').count(),4);
+ assert(await page.locator('.coverSocials').evaluate(el=>{const a=getComputedStyle(el.children[0]),b=getComputedStyle(el.children[1]);return a.backgroundColor===b.backgroundColor&&a.color===b.color&&a.borderColor===b.borderColor;}),'WhatsApp must match other outlined social icons');
  assert.equal(await page.locator('.coverOwner').innerText(),'نسخة تفاعلية مع\nهناوي');
  assert(await page.locator('.coverOwner').evaluate(el=>el.querySelector('.coverSmall').getBoundingClientRect().left>el.querySelector('h1').getBoundingClientRect().right),'RTL attribution prefix must be right of the name');
  const fit=await page.evaluate(()=>{const frame=document.querySelector('.premiumCover').getBoundingClientRect(),copy=document.querySelector('.coverCopy').getBoundingClientRect();const button=document.querySelector('.fullscreenCover .coverOpen').getBoundingClientRect(),art=document.querySelector('.premiumCoverArt').getBoundingClientRect();return {overflow:document.documentElement.scrollWidth>innerWidth+1,footer:frame.bottom-copy.bottom,buttonBottom:button.bottom,height:innerHeight,artRight:art.right,width:innerWidth};});
