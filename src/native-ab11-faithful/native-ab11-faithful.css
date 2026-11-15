@@ -17,3 +17,13 @@
 .nativeAB11F .nafField:focus-visible{outline:2px solid #3566b5;outline-offset:1px}
 .nativeAB11F .nafCheck{position:absolute;display:flex;align-items:center;gap:10px;z-index:5}
 .nativeAB11F .nafCheck output{font:14px NafFira,Arial,sans-serif;color:#31532c}
+
+/* p41 uses the full source page, including original margins. */
+.nativeAB11F[data-native-ab11f='41'] .nafCanvas{background:white}
+.nativeAB11F[data-native-ab11f='41'] .naf-r,.nativeAB11F[data-native-ab11f='41'] .naf-b{font-family:KbDroid,Georgia,serif}
+.nativeAB11F[data-native-ab11f='41'] .naf-sans{font-family:ABScanSans,Arial,sans-serif;font-weight:700}
+.nativeAB11F[data-native-ab11f='41'] .nafField{font:14px/20px KbDroid,Georgia,serif!important;border-bottom-width:1px!important}
+.nafSpriteBox{position:absolute;overflow:hidden}.nafSpriteBox .nafSprite{position:absolute!important;max-width:none!important;max-height:none!important;margin:0!important;object-fit:fill!important}
+.nafNotes{position:absolute;resize:none;border:0;background:repeating-linear-gradient(transparent 0 19px,#ddd 19px 20px);padding:0;margin:0;color:#174770;font:14px/20px KbDroid,Georgia,serif;outline-color:#5379a8}
+.nativeAB11F[data-native-ab11f='41'] .nafTipp span{font-family:ABScanSans,Arial}
+.nativeAB11F[data-native-ab11f='41'] .nafField[data-native-field^='image-']{border-bottom:0!important}
