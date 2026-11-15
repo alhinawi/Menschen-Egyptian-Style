@@ -99,3 +99,18 @@
 .mP34Art{position:absolute;overflow:hidden}.mP34Art .mP34Sprite{position:absolute!important;max-width:none!important;max-height:none!important;object-fit:fill!important;margin:0!important}
 .mP34Square{position:absolute;width:9px;height:9px;background:#153c85}.mP34Triangle{position:absolute;width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:9px solid #0bb529}
 .nativeAB11Lessons45[data-native-ab11-page='34'] .mCanvas .mBank{font-size:16px}
+
+/* Page 35: vocabulary columns and original furniture strip. */
+.nativeAB11.nativeAB11Lessons45[data-native-ab11-page='35'] .mCanvas{width:901px;height:1275px}
+.nativeAB11Lessons45[data-native-ab11-page='35'] .mCanvas .mText{font:16px/21px KbDroid,Georgia,serif;transform:scaleX(.97);transform-origin:left top}
+.nativeAB11Lessons45[data-native-ab11-page='35'] .mCanvas .mHeader{font:26px/33px KbDroid,Georgia,serif;letter-spacing:0;transform:scaleX(.95)}
+.nativeAB11Lessons45[data-native-ab11-page='35'] .mCanvas .mTitle{font:700 18px/22px ABScanSans,Arial,sans-serif;transform:translateY(-3px) scaleX(.95)}
+.nativeAB11Lessons45[data-native-ab11-page='35'] .mCanvas .mBold{font-weight:bold}
+.nativeAB11Lessons45[data-native-ab11-page='35'] .mCanvas .mVariant{font-size:14px;color:#6c6b60}
+.nativeAB11Lessons45[data-native-ab11-page='35'] .mCanvas .mField{border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;font:14px/20px KbDroid,Georgia,serif!important;height:20px!important}
+.nativeAB11Lessons45[data-native-ab11-page='35'] .mFooter{display:none}
+.mP35Rule{position:absolute;left:371px;top:143px;width:396px;height:1px;background:#97ce00}
+.mP35Tab{position:absolute;left:853px;top:85px;width:48px;height:64px;background:#97ce00;color:white;font:72px/65px 'Times New Roman',serif;text-align:right}
+.mP35Number{position:absolute;min-width:26px;height:18px;font:700 17px/18px Georgia,serif;background:#97ce00;border-top:1px solid #dc321e;border-left:1px solid #dc321e;text-align:center;color:white}
+.mP35Art{position:absolute;overflow:hidden}.mP35Art .mP35Sprite{position:absolute!important;max-width:none!important;max-height:none!important;object-fit:fill!important;margin:0!important}
+.mP35Own{position:absolute;resize:none;border:0!important;background:repeating-linear-gradient(transparent 0 18px,#a3a59b 18px 19px,transparent 19px 21px)!important;font:15px/21px KbDroid,Georgia,serif!important;color:#174770;padding:0!important;margin:0!important}
