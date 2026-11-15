@@ -776,3 +776,28 @@ body.readerSplitControls .controls .lnv-pageSlot{display:contents}
 .nativeAB12[data-native-ab12="99"] .naCanvas input.naDot:checked{border-color:#246e45!important;background:radial-gradient(circle,#246e45 0 45%,#fff 53%)!important}
 .howtoNote{display:none;max-width:660px;width:100%;text-align:right;font:22px/1.6 'Cairo',sans-serif;color:#6a6f75;border-top:1px solid #d8cdb4;padding-top:14px;margin-top:6px}
 body[data-audio="tts"] .howtoTtsNote{display:block}
+
+/* Account sign-in inside the reader profile panel (Cairo Arabic, paper theme). */
+.profilePanel{font-family:'Cairo',system-ui,sans-serif}
+.profileAvatarImg{width:22px;height:22px;border-radius:50%;object-fit:cover;display:block}
+.authUserRow{justify-content:flex-start;gap:10px}
+.authUserAvatar{width:38px;height:38px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.authUserInitial{display:inline-flex;align-items:center;justify-content:center;background:#713c46;color:#fffefa;font-weight:800;font-size:17px}
+.authUserText{display:flex;flex-direction:column;gap:1px;min-width:0}
+.authUserText b{font-size:14px;color:#26382e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.authUserText small{font-size:11px;color:#7a6f5d;direction:ltr;text-align:end}
+.authBtn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:9px 12px;border-radius:10px;font-weight:800;font-size:13px;cursor:pointer;text-decoration:none;border:1px solid transparent;transition:background .15s,border-color .15s;margin-top:6px}
+.authBtnGoogle{background:#fff;color:#1f1f1f;border-color:#d8d2c2}
+.authBtnGoogle:hover{background:#f6f3ea}
+.authBtnPrimary{background:#713c46;color:#fffefa}
+.authBtnPrimary:hover{background:#5d3039}
+.authBtnPrimary:disabled{opacity:.55;cursor:default}
+.authBtnGhost{background:none;color:#713c46;border-color:#d8c8a6}
+.authBtnGhost:hover{background:#f1e9d8}
+.authOr{display:flex;align-items:center;gap:8px;margin:10px 0 2px;font-size:11px;font-weight:700;color:#8b7f6a}
+.authOr::before,.authOr::after{content:"";flex:1;height:1px;background:#e2d8c2}
+.authForm{display:flex;flex-direction:column;gap:7px;margin-top:6px}
+.authInput{padding:9px 11px;border:1px solid #d8d2c2;border-radius:10px;background:#fffdf7;font-family:inherit;font-size:13px;color:#26382e;outline:none}
+.authInput:focus{border-color:#713c46}
+.authError{font-size:11px;font-weight:700;color:#a13030;background:#fbeaea;border:1px solid #eec6c6;border-radius:8px;padding:6px 9px}
+.authSwitch{background:none;border:0;padding:4px;font-size:11px;font-weight:700;color:#713c46;cursor:pointer;text-decoration:underline}

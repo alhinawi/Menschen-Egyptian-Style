@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "menscheny-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-01",
+  "vars": {
+    // Comma separated. The site address(es) allowed to call the API from a browser.
+    // germani.pages.dev is the student-facing URL; menscheny.pages.dev is the
+    // repo-connected deployment of the same app.
+    "ALLOWED_ORIGINS": "https://menscheny.pages.dev,https://germani.pages.dev,http://localhost:5173,http://localhost:4177"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "menscheny",
+      "database_id": "23b928e7-87bb-48da-8e88-889a79c7c073",
+      "migrations_dir": "migrations"
+    }
+  ]
+}
