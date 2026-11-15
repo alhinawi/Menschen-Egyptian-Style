@@ -229,27 +229,32 @@ export function NativeAB11Module1({page}:{page:string}){
  {check('u4',842,1178,Object.fromEntries(['Kollege','Journalist','arbeiten','bei','wohnt','hat','meine','Chefin','heißt','aus','lebt','in','spricht'].map((a,i)=>['u4-'+(i+2),a])))}
  <div className="mP25Footer">fünfundzwanzig&nbsp;&nbsp; | &nbsp;&nbsp;25 <em>Modul 1</em></div>
  </>})()}
- {page==='26'&&<>
- {head('SELBSTEINSCHÄTZUNG')}{inkC('dkich',508,129,200,37,'Das kann ich!')}{txt(138,205,320,'Ich kann jetzt …','mBlue')}{lights(188)}
- {txt(138,234,603,'… andere begrüßen und mich verabschieden:  L01','mTitle')}{confidence('s1',224)}{txt(159,261,90,'Hallo/Guten')}{f('s1-1',252,259,447,'1 eigene Begrüßung')}
- {txt(138,306,603,'… mich und andere vorstellen:  L01/L02/L03','mTitle')}{confidence('s2',296)}{txt(159,334,70,'Ich heiße')}{f('s2-name',233,332,106)}{txt(345,334,92,'Ich komme')}{f('s2-herkunft',441,332,142)}{txt(588,334,120,'und ich wohne')}{f('s2-wohnort',159,359,135)}{txt(301,361,92,'Ich spreche')}{f('s2-sprache',398,359,142)}
- {txt(138,407,603,'… nach dem Befinden fragen und über mein Befinden sprechen:  L01','mTitle')}{confidence('s3',397)}
- {txt(159,435,78,'du: ▪ Wie')}{f('s3-1',242,433,189)}{txt(438,435,78,'? ▴ Danke,')}{f('s3-2',521,433,69)}{txt(596,435,68,'☺ Und')}{f('s3-3',670,433,45)}
- {txt(159,462,50,'Sie: ▪')}{f('s3-4',213,460,240)}{txt(458,462,20,'?')}{txt(194,489,18,'▪')}{f('s3-5',213,487,240)}{txt(460,489,67,'☹ Und')}{f('s3-6',532,487,128)}{txt(664,489,16,'?')}{check('s3',580,520)}
- {txt(138,562,603,'… nachfragen und buchstabieren:  L01','mTitle')}{confidence('s4',552)}{txt(159,590,430,'▪ Mein Name ist Chanya Ndiaye.')}{txt(159,617,18,'▴')}{f('s4-1',181,615,243)}{txt(429,617,16,'?')}
- {txt(159,644,45,'▪ Ich')}{f('s4-2',209,642,165)}{txt(379,644,170,': C-H-A-N- …')}{check('s4',580,644)}
- {txt(138,688,603,'… nach dem Beruf fragen und über meinen Beruf sprechen:  L02','mTitle')}{confidence('s5',678)}{txt(159,716,146,'▪ Was bist du von')}{f('s5-1',310,714,117)}{txt(432,716,52,'? ▴ Ich')}{f('s5-antwort',489,714,213,'5 eigener Beruf')}{check('s5',580,745)}
- {txt(138,789,603,'… über Persönliches sprechen:  L02','mTitle')}{confidence('s6',779)}
- {['Familienstand: Ich bin','Kinder: Ich','Alter: Ich'].map((s,i)=><span key={s}>{txt(165,817+i*26,170,s)}{f('s6-'+i,340,815+i*26,274,'6 eigene Angabe '+s)}</span>)}
- {txt(138,906,603,'… meine Familie beschreiben:  L03','mTitle')}{confidence('s7',896)}{txt(165,934,90,'Das ist/sind')}{f('s7-person',259,932,354)}
- {f('s7-name',165,959,115)}{txt(286,961,90,'kommt aus')}{f('s7-herkunft',381,959,157)}{txt(545,961,100,'und wohnt in')}{f('s7-ort',165,986,200)}
- {txt(138,1036,320,'Ich kenne …','mBlue')}
- {txt(138,1064,603,'… 5 Länder und Sprachen:  L01/L03','mTitle')}{confidence('k1',1054)}{open('k1-eigen',168,1090,542,49,'5 Länder und Sprachen')}
- {txt(138,1172,603,'… 5 Berufe:  L02','mTitle')}{confidence('k2',1162)}{open('k2-eigen',168,1198,542,49,'5 eigene Berufe')}
- {txt(138,1290,603,'… die Zahlen bis 100:  L02','mTitle')}{confidence('k3',1280)}
- {['10 zehn','17 siebzehn','23','38','40','50','60','70','80','90','100'].map((s,i)=>{const x=168+(i%4)*148,y=1320+Math.floor(i/4)*29;return <span key={s}>{txt(x,y,32,s.split(' ')[0],'mSmall')}{i<2?inkC(i===0?'zehn':'siebzehn',i===0?196:340,Y(y)+3,i===0?52:72,i===0?19:20,s.split(' ')[1]):f('z-'+s,x+26,y-2,115)}</span>})}{check('k3',690,1376)}
- {txt(138,1425,603,'… 10 Familienmitglieder:  L03','mTitle')}{confidence('k4',1415)}{open('k4-eigen',168,1451,542,49,'10 eigene Familienmitglieder')}
- </>}
+ {page==='26'&&(()=>{
+ const txt=(x:number,y:number,w:number,s:string,c='')=><div className={'mText '+c} style={{left:x,top:y,width:w}}><Words s={s}/></div>;
+ const f=(id:string,x:number,y:number,w:number)=><ChoiceInput className="mField" data-native-field={id} aria-label={id} style={{left:x,top:y,width:w}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
+ const rate=(id:string,y:number)=><>{[0,1,2].map(i=><ChoiceInput key={i} className="mRadio" type="radio" name={'p26-'+id} aria-label={'Selbsteinschätzung '+id+' '+['grün','gelb','rot'][i]} style={{left:762+i*32,top:y-7}} checked={v['confidence-'+id]===''+i} onChange={()=>set('confidence-'+id,''+i)}/>)}</>;
+ const heading=(id:string,y:number,s:string,lesson:string)=><><div className="mText mP26Heading" style={{left:140,top:y,width:610}}><b><Words s={'… '+s}/></b>{'  '+lesson}</div>{rate(id,y+2)}</>;
+ const area=(id:string,y:number)=><textarea className="mP26Area" data-native-field={id} aria-label={id} style={{left:168,top:y,width:544,height:42}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
+ const c=(id:string,x:number,y:number)=><div className="mCheck" data-native-task={id} style={{left:x,top:y}}><CheckButton onClick={()=>G({...graded,[id]:Object.entries(answers(id)).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}/><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ return <>{txt(138,123,600,'SELBSTEINSCHÄTZUNG','mHeader')}{inkC('dkich',509,121,200,37,'Das kann ich!')}{txt(139,198,320,'Ich kann jetzt …','mBlue')}
+ <PageImage className="mArt" alt="grün gelb rot" src="assets/native-ab11/p26-lights.png" style={{left:755,top:183,width:90,height:27}}/>
+ {heading('s1',224,'andere begrüßen und mich verabschieden:','L01')}{txt(159,244,90,'Hallo/Guten')}{f('s1-1',244,236,458)}
+ {heading('s2',282,'mich und andere vorstellen:','L01/L02/L03')}{txt(159,303,70,'Ich heiße')}{f('s2-name',225,296,106)}{txt(337,303,92,'Ich komme')}{f('s2-herkunft',416,296,158)}{txt(578,303,120,'und ich wohne')}{f('s2-wohnort',159,317,116)}{txt(282,324,92,'Ich spreche')}{f('s2-sprache',364,317,139)}
+ {heading('s3',360,'nach dem Befinden fragen und über mein Befinden sprechen:','L01')}
+ {txt(160,381,80,'du:  ▪ Wie')}{f('s3-1',237,374,190)}{txt(430,381,76,'? ▴ Danke,')}{f('s3-2',505,374,77)}{txt(586,381,65,'☺ Und')}{f('s3-3',638,374,52)}{txt(691,381,12,'?')}
+ {txt(160,402,48,'Sie:  ●','mP26Sie')}{f('s3-4',208,395,244)}{txt(454,402,12,'?')}{txt(195,423,18,'▪')}{f('s3-5',209,416,233)}{txt(444,423,65,'☹ Und')}{f('s3-6',501,416,138)}{txt(644,423,12,'?')}{c('s3',720,421)}
+ {heading('s4',460,'nachfragen und buchstabieren:','L01')}{txt(160,481,430,'▪ Mein Name ist Chanya Ndiaye.')}{txt(160,502,18,'▴')}{f('s4-1',176,495,199)}{txt(378,502,14,'?')}{txt(160,523,45,'▪ Ich')}{f('s4-2',201,516,146)}{txt(351,523,170,': C-H-A-N- …')}{c('s4',720,521)}
+ {heading('s5',556,'nach dem Beruf fragen und über meinen Beruf sprechen:','L02')}{txt(162,577,130,'▪ Was bist du von')}{f('s5-1',282,570,125)}{txt(409,577,54,'? ▴ Ich')}{f('s5-antwort',464,570,244)}{c('s5',720,579)}
+ {heading('s6',618,'über Persönliches sprechen:','L02')}
+ {['Familienstand: Ich bin','Kinder: Ich','Alter: Ich'].map((s,i)=><span key={s}>{txt(165,638+i*21,170,s)}{f('s6-'+i,[317,240,231][i],631+i*21,[298,375,384][i])}</span>)}
+ {heading('s7',716,'meine Familie beschreiben:','L03')}{txt(165,737,90,'Das ist/sind')}{f('s7-person',243,730,318)}{f('s7-name',165,751,115)}{txt(285,758,90,'kommt aus')}{f('s7-herkunft',360,751,180)}{txt(544,758,110,'und wohnt in')}{f('s7-ort',165,772,193)}
+ {txt(146,823,320,'Ich kenne …','mBlue')}{heading('k1',847,'5 Länder und Sprachen:','L01/L03')}{area('k1-eigen',864)}
+ {heading('k2',928,'5 Berufe:','L02')}{area('k2-eigen',944)}
+ {heading('k3',1008,'die Zahlen bis 100:','L02')}
+ {['10','17','23','38','40','50','60','70','80','90','100'].map((s,i)=>{const x=[168,297,431,566][i%4],y=1027+Math.floor(i/4)*21;return <span key={s}>{txt(x,y,32,s)}{i<2?inkC(i===0?'zehn':'siebzehn',i===0?185:311,y+1,i===0?52:72,i===0?23:25,i===0?'zehn':'siebzehn'):f('z-'+s,x+(s==='100'?29:20),y-7,i===10?101:109)}</span>})}{c('k3',720,1068)}
+ {heading('k4',1107,'10 Familienmitglieder:','L03')}{area('k4-eigen',1126)}
+ <div className="mP26Footer"><em>Modul 1</em>26&nbsp; | &nbsp;sechsundzwanzig</div>
+ </>})()}
  {page==='27'&&<>
  {head('SELBSTEINSCHÄTZUNG')}{ink('dkich-ink',590,129,210,48,'Das kann ich!')}{txt(135,206,320,'Ich kann auch …','mBlue')}{lights(190)}
  {txt(135,233,603,'… W-Fragen stellen und auf Fragen antworten:  L01/L02/L03','mTitle')}{confidence('s8',225)}
