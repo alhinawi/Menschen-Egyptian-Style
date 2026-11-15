@@ -93,7 +93,12 @@ export function ReaderProfile() {
           <>
           <button type="button" className="profileRow profileChoice profileBoardLink" onClick={() => setBoard(true)}>
             <span>{t('Leaderboard')}</span>
-            <span className="profileState" aria-hidden="true">🏆</span>
+            <span className="profileState" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4Z" />
+                <path d="M7 6H4a3 3 0 0 0 3 5M17 6h3a3 3 0 0 1-3 5" />
+              </svg>
+            </span>
           </button>
           <div className="profileSection">{t('الإعدادات')}</div>
           <button
