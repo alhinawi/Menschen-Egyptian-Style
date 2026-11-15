@@ -1,3 +1,4 @@
+import {ChoiceInput} from '../exercises/ChoiceInput';
 import type {CSSProperties} from 'react';
 import {useLayoutEffect,useRef,useState} from 'react';
 import {PageImage} from '../components/PageImage';
@@ -26,7 +27,7 @@ export function NativeAB11P97(){
  if(it.k==='field'){
  const graded=checked[it.group]&&values[it.id]?.trim()&&it.answer;
  const status=graded?(it.answer.split('|').some((a:string)=>normalize(values[it.id])===normalize(a))?' correct':' wrong'):'';
- return <input key={i} data-native-field={it.id} className={'p97Field'+status} aria-label={it.id} style={{...pos,'--p97-answer-size':answerSize(values[it.id]||'',it.w)+'px'} as CSSProperties} value={values[it.id]||''} onChange={e=>set(it.id,e.target.value)}/>;
+ return <ChoiceInput key={i} data-native-field={it.id} className={'p97Field'+status} aria-label={it.id} style={{...pos,'--p97-answer-size':answerSize(values[it.id]||'',it.w)+'px'} as CSSProperties} value={values[it.id]||''} onChange={e=>set(it.id,e.target.value)}/>;
  }
  if(it.k==='check')return <div key={i} className="p97Check" data-native-task={it.group} style={{left:it.x,top:it.y}}><CheckButton onClick={()=>C(c=>({...c,[it.group]:true}))}/><output aria-live="polite">{checked[it.group]?'Geprüft':''}</output></div>;
  return null;

@@ -1,0 +1,13 @@
+/* Keep each printed answer box's dimensions, typography and result colors. */
+select[data-fixed-choice]{appearance:none;-webkit-appearance:none;cursor:pointer;text-align:start}
+select[data-fixed-choice] option{color:#17251b;background:#fff}
+/* These controls were text inputs and retain their original page-specific look. */
+.nkbCanvas select[data-fixed-choice].nkbField{padding:0 2px!important}
+.nkb[data-native-page="42"] .nkbCanvas select[data-fixed-choice][data-native-field^="t4a-"]{border:1.5px solid #c5bd8d!important;border-radius:50%!important;background:#fffef7!important}
+.nativeKB12[data-native-kb12="44"] select[data-fixed-choice]{background:transparent!important}
+.hybridScan select[data-fixed-choice].hybridField{font-family:Georgia}
+.nativeAB12 select[data-fixed-choice].naCNum{font:17px Georgia!important}
+.nativeAB12[data-native-ab12="82"] .naCanvas select[data-fixed-choice].naField82{padding:0 2px!important}
+.hybridScan[data-scan-book="ab-a11"][data-scan-page="45"] select[data-fixed-choice].hybridField{font-family:Arial}
+.nkCanvas .nkSigns select[data-fixed-choice]{padding:0!important;background:#fffef4!important}
+.nkb[data-native-page="42"] .nkbCanvas select[data-fixed-choice][data-native-field^="t4a-"]{padding:0!important}

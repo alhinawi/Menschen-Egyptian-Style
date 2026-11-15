@@ -1,3 +1,4 @@
+import {ChoiceInput} from '../exercises/ChoiceInput';
 import {usePageReset} from '../exercises/usePageReset';
 import {useLayoutEffect,useRef,useState} from 'react';
 import {PageImage} from '../components/PageImage';
@@ -32,10 +33,10 @@ export function NativeAB12P78({page}:{page:string}){
  const kb=(x:number,y:number,t:string)=><div className="naKB78" style={{left:x,top:y}}>{t}</div>;
  const rail=(x:number,y:number,t:string)=><div className="naRail78" style={{left:x,top:y}}>{t}</div>;
  const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>{sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||'')))});paintRadios(answers)}}/><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
- const dot=(id:string,value:string,x:number,y:number,label:string)=><input type="radio" className="naDot naDot78" name={key+'-'+id} aria-label={label} data-native-field={id} value={value} style={{left:x,top:y}} checked={values[id]===value} onChange={()=>{set(id,value);document.querySelectorAll('[data-native-ab12="78"] input[data-native-field="'+id+'"]').forEach(i=>i.removeAttribute('data-check-mark'))}}/>;
+ const dot=(id:string,value:string,x:number,y:number,label:string)=><ChoiceInput type="radio" className="naDot naDot78" name={key+'-'+id} aria-label={label} data-native-field={id} value={value} style={{left:x,top:y}} checked={values[id]===value} onChange={()=>{set(id,value);document.querySelectorAll('[data-native-ab12="78"] input[data-native-field="'+id+'"]').forEach(i=>i.removeAttribute('data-check-mark'))}}/>;
  // ex1: one letter cell = either a printed letter or a single-letter gap field
  const L=(x:number,base:number,t:string)=><div className="naText naLet78" style={{left:x,top:base-15,width:13}}>{t}</div>;
- const G=(id:string,x:number,base:number,label:string)=><input className="naField78" aria-label={label} data-native-field={id} style={{left:x,top:base-16}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false} maxLength={2}/>;
+ const G=(id:string,x:number,base:number,label:string)=><ChoiceInput className="naField78" aria-label={label} data-native-field={id} style={{left:x,top:base-16}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false} maxLength={2}/>;
  // ex3: clickable besser/lieber pair
  const pick=(id:string)=><span className="naPick78" data-native-field={id} data-value={values[id]||''} data-empty={values[id]?'0':'1'}>
   <span className={'naOpt78'+(values[id]==='besser'?' on78':'')} onClick={e=>{set(id,values[id]==='besser'?'':'besser');(e.currentTarget.closest('[data-native-field]') as HTMLElement)?.removeAttribute('data-check-mark')}}>besser</span>
@@ -162,27 +163,27 @@ export function NativeAB12P78({page}:{page:string}){
   {art('besser',458,734,49,22)}
   {text(500,737,40,'. (gut)')}
   {bul(143,761,'●','#a30864')}{text(160,756,192,'Und mir gefällt die Jeans am')}
-  <input className="naField5" aria-label="5a Jeans" data-native-field="p78-5a" style={{left:356,top:754,width:114}} value={values['p78-5a']||''} onChange={e=>set('p78-5a',e.target.value)} autoComplete="off" spellCheck={false}/>
+  <ChoiceInput className="naField5" aria-label="5a Jeans" data-native-field="p78-5a" style={{left:356,top:754,width:114}} value={values['p78-5a']||''} onChange={e=>set('p78-5a',e.target.value)} autoComplete="off" spellCheck={false}/>
   {text(473,756,45,'. (gut)')}
   {text(117,794,15,'b')}
   {bul(143,800,'■','#3b5da0')}{text(160,795,175,'Wie findest du die Jacke?')}
   {bul(143,820,'▲','#3eb371')}{text(160,814,128,'Die blaue finde ich')}
-  <input className="naField5" aria-label="5b blaue" data-native-field="p78-5b1" style={{left:288,top:812,width:117}} value={values['p78-5b1']||''} onChange={e=>set('p78-5b1',e.target.value)} autoComplete="off" spellCheck={false}/>
+  <ChoiceInput className="naField5" aria-label="5b blaue" data-native-field="p78-5b1" style={{left:288,top:812,width:117}} value={values['p78-5b1']||''} onChange={e=>set('p78-5b1',e.target.value)} autoComplete="off" spellCheck={false}/>
   {text(410,814,150,'als die schwarze. (gut)')}
   {bul(143,839,'●','#a30864')}{text(160,834,336,'Also, ich mag Blau nicht so gern. Schwarz mag ich')}
-  <input className="naField5" aria-label="5b Schwarz" data-native-field="p78-5b2" style={{left:515,top:832,width:85}} value={values['p78-5b2']||''} onChange={e=>set('p78-5b2',e.target.value)} autoComplete="off" spellCheck={false}/>
+  <ChoiceInput className="naField5" aria-label="5b Schwarz" data-native-field="p78-5b2" style={{left:515,top:832,width:85}} value={values['p78-5b2']||''} onChange={e=>set('p78-5b2',e.target.value)} autoComplete="off" spellCheck={false}/>
   {text(160,854,110,'als Blau. (gern)')}
   {text(117,892,15,'c')}
   {bul(143,898,'■','#3b5da0')}{text(160,893,300,'Wir müssen noch Obst kaufen. Was magst du')}
-  <input className="naField5" aria-label="5c Obst" data-native-field="p78-5c1" style={{left:462,top:897,width:115}} value={values['p78-5c1']||''} onChange={e=>set('p78-5c1',e.target.value)} autoComplete="off" spellCheck={false}/>
+  <ChoiceInput className="naField5" aria-label="5c Obst" data-native-field="p78-5c1" style={{left:462,top:897,width:115}} value={values['p78-5c1']||''} onChange={e=>set('p78-5c1',e.target.value)} autoComplete="off" spellCheck={false}/>
   {text(577,893,60,'? (gern)')}
   {text(160,913,140,'Orangen oder Äpfel?')}
   {bul(143,937,'▲','#3eb371')}{text(160,932,170,'Ich mag Orangen genauso')}
-  <input className="naField5" aria-label="5c Orangen" data-native-field="p78-5c2" style={{left:350,top:930,width:100}} value={values['p78-5c2']||''} onChange={e=>set('p78-5c2',e.target.value)} autoComplete="off" spellCheck={false}/>
+  <ChoiceInput className="naField5" aria-label="5c Orangen" data-native-field="p78-5c2" style={{left:350,top:930,width:100}} value={values['p78-5c2']||''} onChange={e=>set('p78-5c2',e.target.value)} autoComplete="off" spellCheck={false}/>
   {text(455,932,120,'wie Äpfel. (gern)')}
   {bul(143,957,'■','#3b5da0')}{text(160,951,370,'Gut, dann kaufen wir beides. Und was trinkst du gern?')}
   {bul(143,976,'▲','#3eb371')}{text(160,970,228,'Das weißt du doch. … Ich mag am')}
-  <input className="naField5" aria-label="5c Cola" data-native-field="p78-5c3" style={{left:395,top:968,width:111}} value={values['p78-5c3']||''} onChange={e=>set('p78-5c3',e.target.value)} autoComplete="off" spellCheck={false}/>
+  <ChoiceInput className="naField5" aria-label="5c Cola" data-native-field="p78-5c3" style={{left:395,top:968,width:111}} value={values['p78-5c3']||''} onChange={e=>set('p78-5c3',e.target.value)} autoComplete="off" spellCheck={false}/>
   {text(510,970,85,'Cola. (gern)')}
   {check('78-5',612,963,{'p78-5a':'besten','p78-5b1':'besser','p78-5b2':'lieber','p78-5c1':'lieber','p78-5c2':'gern','p78-5c3':'liebsten'})}
 
