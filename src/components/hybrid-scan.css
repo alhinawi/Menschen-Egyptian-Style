@@ -752,3 +752,7 @@ html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='73'] .hybridField
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='94'] .hybridCheck:nth-child(3) output{top:-1.8cqw}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='94'] .hybridCheck output,.hybridScan[data-scan-book='ab-a11'][data-scan-page='94'] .hybridCheck:nth-child(3) output{top:3.5cqw}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='94'] .hybridField[type=radio]:checked{background:linear-gradient(45deg,transparent 43%,#26764c 44% 56%,transparent 57%),linear-gradient(-45deg,transparent 43%,#26764c 44% 56%,transparent 57%)!important}
+
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='95'] .hybridField{font-size:1.5cqw!important;outline:0;resize:none;line-height:1.5!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='95'] .hybridField:focus{outline:1px solid #26764c}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='95'] [data-field-id='own-vocabulary']{line-height:2.3cqw!important}
