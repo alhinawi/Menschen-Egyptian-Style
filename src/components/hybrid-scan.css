@@ -182,3 +182,14 @@ html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .hybridField
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='51'] .hybridCheck:nth-child(4){top:54%}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='51'] .hybridCheck:nth-child(5){top:65%}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='51'] .hybridCheck:nth-child(6){top:91%}
+
+/* AB p52: full table answers wrap;personal work remains independent. */
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='52'] .hybridField{font:1.13cqw/1.12 ABScanSans,Arial!important;outline:0;resize:none;overflow:auto;white-space:normal}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='52'] .hybridField:focus{outline:1px solid #26764c}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='52'] .hybridField.hybridCorrect{outline:1px solid #268250}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='52'] .hybridField.hybridWrong{outline:1px solid #bd3838}
+.hybridWriting52{position:absolute;display:flex;flex-direction:column;pointer-events:auto;color:#174770;font:1.05cqw/1.1 ABScanSans,Arial}
+.hybridWriting52 textarea{width:100%;flex:1;min-height:0!important;padding:.3cqw!important;border:1px solid #8d7d5266;border-radius:0;background:#fffef555;color:#174770;font:1.3cqw/1.2 ABScanSans,Arial;resize:none}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='52'] .hybridTools{display:contents}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='52'] .hybridCheck{position:absolute;left:82%;top:51%;font-size:1.3cqw}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='52'] .hybridCheck output{font-size:1.2cqw;position:absolute;left:110%;top:0;width:7cqw;background:white}
