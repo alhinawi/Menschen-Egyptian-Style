@@ -853,7 +853,88 @@
    "h": 18
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "own-modal-0",
+   "group": "own",
+   "kind": "text",
+   "label": "Lektion 8 / 1: Ein Tag im Kalender",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "own-modal-1",
+   "group": "own",
+   "kind": "text",
+   "label": "Lektion 8 / 2: Samstag",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "own-modal-2",
+   "group": "own",
+   "kind": "text",
+   "label": "Lektion 8 / 2: Sonntag",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "own-modal-3",
+   "group": "own",
+   "kind": "text",
+   "label": "Lektion 8 / 2: Mein perfektes Wochenende",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "own-modal-4",
+   "group": "own",
+   "kind": "text",
+   "label": "Lektion 9 / 1: Einkaufszettel für vier Personen",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "own-menu-0",
+   "group": "own",
+   "kind": "text",
+   "label": "Vorspeise",
+   "x": 231,
+   "y": 1058,
+   "w": 587,
+   "h": 77
+  },
+  {
+   "id": "own-menu-1",
+   "group": "own",
+   "kind": "text",
+   "label": "Hauptspeise",
+   "x": 231,
+   "y": 1182,
+   "w": 587,
+   "h": 77
+  },
+  {
+   "id": "own-menu-2",
+   "group": "own",
+   "kind": "text",
+   "label": "Nachspeise",
+   "x": 231,
+   "y": 1303,
+   "w": 587,
+   "h": 77
+  }
+ ],
  "audio": [],
  "groups": [
   {
@@ -872,7 +953,8 @@
   "notes": [
    "Rückblick (Aufgaben zu Lektion 8 und 9). Key: all tasks Individuelle Lösung - no fields.",
    "Blue handwritten texts are printed publisher examples (words only): 8/1 'Sie/Er geht am Mittwoch … Um … Uhr …', 8/2 calendar entries ('lange schlafen!', '17 Uhr: schwimmen mit Lena', 'Am Samstag schlafe ich lange. Am Vormittag'), 9/1 '4 Eier Butter …'.",
-   "☺ smiley, magnifier/people icons and the menu card box are graphics - excluded. 'Vorspeise/Hauptspeise/Nachspeise' are printed underlined menu labels (words)."
+   "☺ smiley, magnifier/people icons and the menu card box are graphics - excluded. 'Vorspeise/Hauptspeise/Nachspeise' are printed underlined menu labels (words).",
+   "2026-11-16: Original scan/fonts;three saved menu textareas in blank card space and five own-writing textareas in Rückblick dialog,ungraded individual answers. All publisher examples preserved."
   ]
  }
 }
