@@ -179,23 +179,33 @@ export function NativeAB11Lessons45({page}:{page:string}){
  {title('2',137,952,'Welche Wörter möchten Sie noch lernen? Notieren Sie.')}
  <textarea className="mP35Own" data-native-field="eigene-woerter" aria-label="2 weiterer eigener Wortschatz" style={{left:173,top:974,width:598,height:210}} value={v['eigene-woerter']||''} onChange={e=>set('eigene-woerter',e.target.value)}/>{art('footer',716,1191,185,24)}
  </>})()}
- {page==='36'&&<>
- <div className="mLessonBanner" style={{left:385,top:Y(91),width:460,height:74*sy}}/>{art('hero',224,91,130,74)}{txt(419,112,435,'Was ist das? - Das ist ein F.','mHeader')}
- {title('1',214,'Ergänzen Sie.','KB 2')}{art('objects',168,253,680,55)}
- {[4,8,6,7,5,2,10,1,3,9].map((n,i)=>i===4?<span className="mObjectNumber" style={{left:168+i*68,top:Y(310)}}>5</span>:<ChoiceInput className="mObjectNumber" inputMode="numeric" aria-label={'u1 Bild '+(i+1)} data-native-field={'u1-picture-'+i} style={{left:168+i*68,top:Y(310)}} value={v['u1-picture-'+i]||''} onChange={e=>set('u1-picture-'+i,e.target.value)}/>)}
- {['der','das','die'].map((s,i)=>txt(168+i*228,334,226,'● '+s,'mBank'))}
- {['Kugelschreiber','Fotoapparat','Schlüssel','Bleistift','Feuerzeug','Buch','Flasche','Brille','Tasche','Kette'].map((word,i)=>{const col=i<4?0:i<6?1:2,r=i<4?i:i<6?i-4:i-6,x=168+col*228,y=373+r*29;return <span key={word}>{txt(x,y,24,''+(i+1))}{i===4?txt(x+28,y,186,'Feuerzeug','mExample'):f('u1-'+(i+1),x+28,y-2,186)}</span>})}{rule('u1',168,503,()=>Object.entries(answers('u1')).every(([id,a])=>norm(v[id]||'')===norm(a))&&[4,8,6,7,5,2,10,1,3,9].every((n,i)=>i===4||v['u1-picture-'+i]===''+n))}
- {title('2',549,'Ergänzen Sie ein/eine und der/das/die.','KB 2')}{txt(168,591,650,'a  Hier ist ein Feuerzeug. Das Feuerzeug ist praktisch.','mExample')}
- {['Das ist|Kinderbrille.|Brille ist sehr leicht.','Hier ist|Fotoapparat.|Fotoapparat kostet 299 Euro.','Hier ist|Kette.|Kette ist modern.','Das ist|Buch.|Buch ist interessant.'].map((s,i)=>{const a=s.split('|'),y=624+i*30;return <span key={s}>{txt(168,y,109,String.fromCharCode(98+i)+'  '+a[0])}{f('u2-'+String.fromCharCode(98+i)+'1',282,y-2,74)}{txt(362,y,151,a[1])}{f('u2-'+String.fromCharCode(98+i)+'2',519,y-2,73)}{txt(598,y,248,a[2],'mSmall')}</span>})}{check('u2',168,763)}
- {title('3',810,'Was ist richtig? Markieren Sie.','KB 2')}
- {txt(168,852,199,'a  ▪ Guten Tag.','mSmall')}{txt(188,879,200,'▴ Guten Tag. Ich brauche','mSmall')}{txt(207,906,190,'eine / die Brille.','mExample')}{art('glasses',397,856,118,81)}
- {txt(168,968,360,'b  ▪ Was kostet','mSmall')}{highlight('u3-b1',278,968,['eine','die'])}{txt(375,968,88,'Couch?','mSmall')}{highlight('u3-b2',188,995,['Eine','Die'])}{txt(291,995,179,'Couch kostet','mSmall')}{txt(188,1022,113,'299 Euro.','mSmall')}{art('couch',393,1018,120,75)}
- {txt(550,852,74,'c  ▪ Wo ist','mSmall')}{highlight('u3-c',627,852,['ein','der'])}{txt(717,852,123,'Schlüssel?','mSmall')}{txt(570,879,175,'▴ Hier ist er!','mSmall')}{art('keys',754,885,88,78)}
- {txt(550,970,74,'d  ▪ Ist','mSmall')}{highlight('u3-d',627,970,['ein','das'])}{txt(723,970,121,'Buch gut?','mSmall')}{txt(570,997,190,'▴ Ja, sehr gut.','mSmall')}{art('book',690,1028,118,75)}
- {rule('u3',168,1117,()=>['die','Die','der','das'].every((a,i)=>v[['u3-b1','u3-b2','u3-c','u3-d'][i]]===a))}
- {title('4',1160,'Ergänzen Sie ein - eine - kein - keine.','KB 2')}
- {['Frau.','Sofa.','Sonderangebot.','Stadt.'].map((s,i)=>{const y=1204+i*79;return <span key={s}>{txt(168,y,27,String.fromCharCode(97+i),'mSmall')}{[0,1].map(c=><span key={c}>{txt(204+c*335,y+13,55,'Das ist','mSmall')}{i===0?txt(265+c*335,y+13,85,c===0?'keine':'eine','mExample'):f('u4-'+String.fromCharCode(97+i)+(c===0?'-l':'-r'),265+c*335,y+11,81)}{txt(352+c*335,y+13,140,s,'mSmall')}</span>)}{i===0?<>{art('woman-no',444,y,58,64)}{art('woman-yes',782,y,60,65)}</>:i===1?<>{art('armchair',450,y,65,55)}{art('sofa',781,y,71,55)}</>:i===2?<>{txt(452,y+15,74,'159 €','mBank')}{txt(789,y+15,65,'79 €','mBank')}</>:<>{art('city',447,y,76,52)}{art('austria',780,y,75,55)}</>}</span>})}{check('u4',168,1525)}
- </>}
+ {page==='36'&&(()=>{
+ const t=(x:number,y:number,w:number,s:string,c='')=><div className={'mText '+c} style={{left:x,top:y,width:w}}><Words s={s}/></div>;
+ const f=(id:string,x:number,y:number,w:number,placeholder?:string)=><ChoiceInput className="mField" data-native-field={id} aria-label={id} placeholder={placeholder} style={{left:x,top:y,width:w}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
+ const offsets:Record<string,number>={"hero":0,"objects":67,"feuerzeug":110,"ein":134,"das":152,"glasses":171,"couch":247,"keys":320,"book":389,"man":460,"woman":522,"armchair":587,"sofa":634,"159":678,"79":712,"city":748,"austria":797,"keine":852,"eine":873,"footer":893};
+ const art=(n:string,x:number,y:number,w:number,h:number)=><div className="mP36Art" style={{left:x,top:y,width:w,height:h}}><PageImage className="mP36Sprite" alt={'Originalabbildung '+n} src="assets/native-ab11/p36-source-sprite.png" style={{left:0,top:-offsets[n],width:683,height:923}}/></div>;
+ const title=(n:string,y:number,s:string,kb:string)=> <>{t(128,y+5,29,kb,'mKB')}<div className="mP36Number" style={{top:y}}>{n}</div>{t(197,y,680,s,'mTitle')}</>;
+ const c=(id:string,x:number,y:number,test?:()=>boolean)=><div className="mCheck" data-native-task={id} style={{left:x,top:y}}><CheckButton onClick={()=>G({...graded,[id]:test?test():Object.entries(answers(id)).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}/><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const hl=(id:string,x:number,y:number,words:string[])=><div className="mP36Choice" style={{left:x,top:y}}>{words.map((w,i)=><span key={w}><button className={v[id]===w?'marked':''} aria-label={id+' '+w} onClick={()=>set(id,w)}>{w}</button>{i===0?' / ':''}</span>)}</div>;
+ return <>{art('hero',226,90,124,67)}<div className="mP36Banner"/>{t(436,105,450,'Was ist das? - Das ist ein F.','mHeader')}
+ {title('1',207,'Ergänzen Sie.','KB 2')}{t(137,245,15,'WÖRTER','mP36Rail')}{art('objects',185,228,683,43)}
+ {[4,8,6,7,5,2,10,1,3,9].map((n,i)=>i===4?t(472,265,20,'5','mInk'):f('u1-picture-'+i,[198,272,349,408,0,541,628,690,743,806][i],265,20))}
+ <div className="mP36NounTable"><b>● der</b><b>● das</b><b>● die</b></div>
+ {['Kugelschreiber','Fotoapparat','Schlüssel','Bleistift','Feuerzeug','Buch','Flasche','Brille','Tasche','Kette'].map((s,i)=>{const col=i<4?0:i<6?1:2,r=i<4?i:i<6?i-4:i-6,x=[202,449,646][col],y=[319,318,316][col]+r*25;return <span key={s}>{t(x,y,20,''+(i+1))}{i===4?art('feuerzeug',460,319,100,24):f('u1-'+(i+1),x+14,y-2,[219,166,170][col],({'u1-1':'___e__________','u1-2':'____a______','u1-3':'_______e_','u1-4':'____i___','u1-6':'__c_','u1-7':'_l_____','u1-8':'___l_','u1-9':'__s___','u1-10':'__tt_'} as Record<string,string>)['u1-'+(i+1)])}</span>})}
+ {c('u1',861,402,()=>Object.entries(answers('u1')).every(([id,a])=>norm(v[id]||'')===norm(a))&&[4,8,6,7,5,2,10,1,3,9].every((n,i)=>i===4||v['u1-picture-'+i]===''+n))}
+ {title('2',451,'Ergänzen Sie ein/eine und der/das/die.','KB 2')}{t(140,490,15,'STRUKTUREN','mP36Rail')}
+ {t(197,483,100,'a  Hier ist')}{t(294,483,87,'Feuerzeug.')}{t(403,483,340,'Feuerzeug ist praktisch.')}{art('ein',274,484,19,18)}{art('das',377,483,25,19)}
+ {['Das ist','Hier ist','Hier ist','Das ist'].map((s,i)=>{const y=504+i*21;return <span key={s+i}>{t(197,y,150,String.fromCharCode(98+i)+'  '+s)}{f('u2-'+String.fromCharCode(98+i)+'1',[269,275,275,269][i],y-3,70)}{t([337,354,354,347][i],y,160,['Kinderbrille.','Fotoapparat.','Kette.','Buch.'][i])}{f('u2-'+String.fromCharCode(98+i)+'2',[435,449,400,392][i],y-3,65)}{t([504,518,470,462][i],y,350,['Brille ist sehr leicht.','Fotoapparat kostet 299 Euro.','Kette ist modern.','Buch ist interessant.'][i])}</span>})}{c('u2',860,582)}
+ {title('3',622,'Was ist richtig? Markieren Sie.','KB 2')}{t(142,660,15,'STRUKTUREN','mP36Rail')}
+ {t(199,650,235,'a  ▪ Guten Tag.')}{t(218,671,250,'▴ Guten Tag. Ich brauche')}{t(239,692,200,'eine / die  Brille.','mExampleChoice')}{art('glasses',417,647,125,76)}
+ {t(199,736,120,'b  ▪ Was kostet')}{hl('u3-b1',324,736,['eine','die'])}{t(404,736,90,'Couch?')}{t(218,757,15,'▴')}{hl('u3-b2',239,757,['Eine','Die'])}{t(320,757,180,'Couch kostet')}{t(239,778,110,'299 Euro.')}{art('couch',439,760,122,73)}
+ {t(572,646,100,'c  ▪ Wo ist')}{hl('u3-c',664,646,['ein','der'])}{t(735,646,110,'Schlüssel?')}{t(591,667,220,'▴ Hier ist er!')}{art('keys',821,635,80,69)}
+ {t(572,712,74,'d  ▪ Ist')}{hl('u3-d',637,712,['ein','das'])}{t(713,712,150,'Buch gut?')}{t(591,733,190,'▴ Ja, sehr gut.')}{art('book',730,743,121,71)}{c('u3',861,815,()=>['die','Die','der','das'].every((a,i)=>v[['u3-b1','u3-b2','u3-c','u3-d'][i]]===a))}
+ {title('4',856,'Ergänzen Sie ein - eine - kein - keine.','KB 2')}{t(143,893,15,'STRUKTUREN','mP36Rail')}
+ <div className="mP36Grid"/>
+ {['Frau.','Sofa.','Sonderangebot.','Stadt.'].map((s,i)=>{const y=910+i*73;return <span key={s}>{t(207,892+i*73,20,String.fromCharCode(97+i))}{[0,1].map(j=><span key={j}>{t(242+j*331,y,63,'Das ist')}{i===0?art(j===0?'keine':'eine',288+j*331,913-j*2,j===0?34:31,21):f('u4-'+String.fromCharCode(97+i)+(j===0?'-l':'-r'),289+j*331,y-2,80)}{t((i===0?325:373)+j*331,y,180,s)}</span>)}</span>})}
+ {art('man',376,890,51,62)}{art('woman',699,886,55,65)}{art('armchair',420,975,68,47)}{art('sofa',751,971,90,44)}{art('159',486,1047,70,34)}{art('79',814,1044,74,36)}{art('city',427,1117,85,49)}{art('austria',763,1109,80,55)}{c('u4',862,1174)}{art('footer',61,1202,242,30)}
+ </>})()}
  {page==='37'&&<>
  {head('BASISTRAINING')}<div className="nabModule">5</div>{title('5',206,'Was ist das? Was glauben Sie?','KB 2')}{txt(143,245,420,'a  Ergänzen Sie.','mTitle')}{art('sketches',593,290,119,223)}
  {['Ein Stift? Ein Buch?','Eine Kette? Eine Flasche?','Ein Schrank? Ein Tisch?','Eine Brille? Eine Lampe?'].map((s,i)=>{const y=289+i*72;return <span key={s}>{txt(168,y,395,(i+1)+'  ▪ Was ist das? '+s,'mSmall')}{txt(188,y+28,66,'▴ Das ist','mSmall')}{i===0?txt(258,y+28,323,'kein Buch, das ist ein Stift.','mExample'):f('u5-'+(i+1),258,y+26,320)}</span>})}{check('u5',168,576)}
