@@ -91,20 +91,20 @@ export function NativeAB11Next({page}:{page:string}){
  </>}
  {page==='14'&&<>
  {head('BASISTRAINING')}
- {title('10',238,'Markieren Sie und notieren Sie die Zahlen.','KB 4','Wörter')}
- <div className="nabNumberSnake" style={{left:202,top:282,width:780}}>{['neunzehn','fünfundachtzig','zwanzig','sechsunddreißig','acht','drei','siebenundsiebzig','sechzehn','neun','dreiundzwanzig'].map((s,i)=><span key={s}><button className={i===0||v['number-'+i]?'marked':''} onClick={()=>set('number-'+i,v['number-'+i]?'':'true')} aria-label={'10 Zahl markieren '+s}>{s}</button>{i===5?<br/>:null}</span>)}</div>
- {text(202,340,50,'19,','nabExample')}{field('u10-zahlen',252,337,600,'10 Zahlen notieren')}{checkGroup('u10',202,381)}
- {title('11',422,'Wie ist die Telefonnummer? Hören Sie und kreuzen Sie an.','KB 4','Wörter')}{listen('08',112,460,'11')}
- {['030 / 52 79 91 36','0171 / 85 67 03 25','06391 / 32 44 67','08233 / 25 38 57'].map((s,i)=><div key={s}>{text(202,470+i*31,24,String.fromCharCode(97+i))}{choice('u11-'+i,'l',231,466+i*31,'11'+String.fromCharCode(97+i)+' links')}{text(266,470+i*31,210,s)}{choice('u11-'+i,'r',495,466+i*31,'11'+String.fromCharCode(97+i)+' rechts')}{text(530,470+i*31,250,['030 / 52 79 91 63','0171 / 58 67 02 25','06391 / 32 44 57','08233 / 52 36 59'][i])}</div>)}
- {check('u11',202,604,{'u11-0':'r','u11-1':'l','u11-2':'r','u11-3':'r'})}
- {title('12',655,'Rechenaufgaben','KB 5','Wörter')}{text(171,694,790,'a  Lesen Sie laut und ergänzen Sie.','nabTitle')}{text(737,649,230,'Fünfzehn und\nsiebenunddreißig\nist ...','nabSpeech')}
- {['fünfzehn + siebenunddreißig','sechsundfünfzig + acht','dreiunddreißig + neun','fünfundzwanzig + siebenundsechzig'].map((s,i)=><div key={s}>{text(202,739+i*31,420,String.fromCharCode(97+i)+'  '+s+' =')}{field('u12-'+String.fromCharCode(97+i),635,736+i*31,282,'12'+String.fromCharCode(97+i)+' Ergebnis')}</div>)}
- {checkGroup('u12',202,875)}
- {text(171,917,835,'b  Schreiben Sie eigene Aufgaben wie in a und tauschen Sie mit Ihrer Partnerin /\nIhrem Partner.','nabTitle')}{multi('eigene-aufgaben',202,973,715,54,'12b eigene Rechenaufgaben')}
- {title('13',1070,'Lesen Sie das Porträt und beantworten Sie die Fragen.','KB 7','Lesen')}
- {text(214,1114,580,'Ich heiße Marie Durant und komme aus Luxemburg. Momentan lebe ich in Heidelberg. Ich arbeite hier als Journalistin. Ich bin nicht verheiratet, aber ich lebe mit meinem Partner zusammen. Er heißt Steven und ist zurzeit arbeitslos. Wir haben ein Kind. Julie ist jetzt schon 3 Jahre alt.','nabWrap nabReading')}{img('marie',814,1098,176,156)}
- {['Was ist Marie Durant von Beruf?','Was macht Steven beruflich?','Sind Marie und Steven verheiratet?','Marie und Steven haben zwei Kinder.','Wo wohnen Marie und Steven?','Wie alt ist Julie?'].map((s,i)=>{const x=[554,517,585,600,545,393][i],y=1280+i*29;return <div key={s}>{text(209,y,420,String.fromCharCode(97+i)+'  '+s)}{i===2||i===3?text(x,y,55,'Nein,','nabExample'):null}{field('u13-'+String.fromCharCode(97+i),x+(i===2||i===3?60:0),y-3,995-x-(i===2||i===3?60:0),'13'+String.fromCharCode(97+i)+' Antwort')}</div>})}
- {checkGroup('u13',202,1460)}
+ {title('10',230,'Markieren Sie und notieren Sie die Zahlen.','KB 4','Wörter')}
+ <div className="nabNumberSnake" style={{left:202,top:273,width:780}}>{['neunzehn','fünfundachtzig','zwanzig','sechsunddreißig','acht','drei','siebenundsiebzig','sechzehn','neun','dreiundzwanzig'].map((s,i)=><span key={s}><button className={i===0||v['number-'+i]?'marked':''} onClick={()=>set('number-'+i,v['number-'+i]?'':'true')} aria-label={'10 Zahl markieren '+s}>{s}</button>{i===5?<br/>:null}</span>)}</div>
+ {img('ink-19',201,327,31,20)}{field('u10-zahlen',232,321,483,'10 Zahlen notieren')}{checkGroup('u10',1008,320)}
+ {title('11',410,'Wie ist die Telefonnummer? Hören Sie und kreuzen Sie an.','KB 4','Wörter')}{listen('08',112,449,'11')}
+ {['030 / 52 79 91 36','0171 / 85 67 03 25','06391 / 32 44 67','08233 / 25 38 57'].map((s,i)=><div key={s}>{text(202,449+i*25,24,String.fromCharCode(97+i))}{choice('u11-'+i,'l',227,448+i*25,'11'+String.fromCharCode(97+i)+' links')}{text(252,449+i*25,210,s)}{choice('u11-'+i,'r',424,448+i*25,'11'+String.fromCharCode(97+i)+' rechts')}{text(448,449+i*25,250,['030 / 52 79 91 63','0171 / 58 67 02 25','06391 / 32 44 57','08233 / 52 36 59'][i])}</div>)}
+ {check('u11',1008,525,{'u11-0':'r','u11-1':'l','u11-2':'r','u11-3':'r'})}
+ {title('12',612,'Rechenaufgaben','KB 5','Wörter')}{text(171,650,790,'a  Lesen Sie laut und ergänzen Sie.','nabTitle')}{text(705,599,211,'Fünfzehn und\nsiebenunddreißig\nist ...','nabSpeech')}
+ {['fünfzehn + siebenunddreißig','sechsundfünfzig + acht','dreiunddreißig + neun','fünfundzwanzig + siebenundsechzig'].map((s,i)=><div key={s}>{text(202,689+i*25,420,String.fromCharCode(97+i)+'  '+s+' =')}{field('u12-'+String.fromCharCode(97+i),[503,444,447,565][i],689+i*25,[270,329,326,208][i],'12'+String.fromCharCode(97+i)+' Ergebnis')}</div>)}
+ {checkGroup('u12',1008,764)}
+ {text(171,813,835,'b  Schreiben Sie eigene Aufgaben wie in a und tauschen Sie mit Ihrer Partnerin /\nIhrem Partner.','nabTitle')}{img('partner',109,813,42,31)}{multi('eigene-aufgaben',202,872,715,36,'12b eigene Rechenaufgaben')}
+ {title('13',927,'Lesen Sie das Porträt und beantworten Sie die Fragen.','KB 7','Lesen')}
+ {text(210,970,584,'Ich heiße Marie Durant und komme aus Luxemburg. Momentan lebe ich\nin Heidelberg. Ich arbeite hier als Journalistin. Ich bin nicht verheiratet,\naber ich lebe mit meinem Partner zusammen. Er heißt Steven und ist\nzurzeit arbeitslos. Wir haben ein Kind. Julie ist jetzt schon 3 Jahre alt.','nabWrap nabReading')}{img('marie',810,947,176,156)}
+ {['Was ist Marie Durant von Beruf?','Was macht Steven beruflich?','Sind Marie und Steven verheiratet?','Marie und Steven haben zwei Kinder.','Wo wohnen Marie und Steven?','Wie alt ist Julie?'].map((s,i)=>{const x=[522,501,548,563,514,389][i],y=1120+i*25;return <div key={s}>{text(209,y,420,String.fromCharCode(97+i)+'  '+s,'nabP14Question')}{i===2||i===3?img('ink-nein'+(i===2?'1':'2'),x,y+4,36,21):null}{field('u13-'+String.fromCharCode(97+i),x+(i===2||i===3?43:0),y-3,939-x-(i===2||i===3?43:0),'13'+String.fromCharCode(97+i)+' Antwort')}</div>})}
+ {checkGroup('u13',1008,1242)}
  </>}
  {page==='15'&&<>
  {head('TRAINING: LESEN')}<div className="nabModule">2</div>

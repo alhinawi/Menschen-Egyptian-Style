@@ -332,3 +332,32 @@
 .nativeAB11[data-native-ab11-page='13'] .nabCanvas .nabRadio:checked{background:linear-gradient(45deg,transparent 43%,#315f9e 44%,#315f9e 53%,transparent 54%),linear-gradient(-45deg,transparent 43%,#315f9e 44%,#315f9e 53%,transparent 54%)!important}
 .nativeAB11[data-native-ab11-page='13'] .nabP13ExampleA{transform:scaleX(.97);transform-origin:left top}
 .nativeAB11[data-native-ab11-page='13'] .nabTitle[style*='894.88px']{transform:scaleX(.96);transform-origin:left top}
+
+/* Page 14 source rules and reading roles. */
+.nativeAB11[data-native-ab11-page='14'] .nabText{font:19px/25px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='14'] .nabTitle{font:700 20px/26px ABScanSans,Arial,sans-serif;left:202px!important}
+.nativeAB11[data-native-ab11-page='14'] .nabTitle[style*='171px']{left:171px!important}
+.nativeAB11[data-native-ab11-page='14'] .nabNumber{left:160px!important}
+.nativeAB11[data-native-ab11-page='14'] .nabHeader{font:29px/32px KbDroid,Georgia,serif;top:158px!important;left:162px!important;letter-spacing:2px;transform:scaleX(.94);transform-origin:left top}
+.nativeAB11[data-native-ab11-page='14'] .nabHeaderLine{left:403px;top:181px;width:592px;height:1px}
+.nativeAB11[data-native-ab11-page='14'] .nabKB{font:11px ABScanSans,Arial,sans-serif;left:118px!important}
+.nativeAB11[data-native-ab11-page='14'] .nabSide{left:137px!important;font-size:9px}
+.nativeAB11[data-native-ab11-page='14'] .nabNumberSnake{font:19px/26px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='14'] .nabNumberSnake button{font:inherit;line-height:26px}
+.nativeAB11[data-native-ab11-page='14'] .nabCanvas .nabInput{border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;height:21px!important}
+.nativeAB11[data-native-ab11-page='14'] .nabCanvas .nabOpen{height:36px!important;border:0!important;background:transparent!important}
+.nativeAB11[data-native-ab11-page='14'] .nabCanvas .nabRadio{width:17px!important;height:17px!important;border-width:1px!important}
+.nativeAB11[data-native-ab11-page='14'] .nabCanvas .nabRadio:checked{background:linear-gradient(45deg,transparent 43%,#315f9e 44%,#315f9e 53%,transparent 54%),linear-gradient(-45deg,transparent 43%,#315f9e 44%,#315f9e 53%,transparent 54%)!important}
+.nativeAB11[data-native-ab11-page='14'] .nabCheck{left:1008px!important;translate:none!important}
+.nativeAB11[data-native-ab11-page='14'] .nabReading{font:18px/25px ABScanSans,Arial,sans-serif;background:#f4fcfb;padding:6px}
+.nativeAB11[data-native-ab11-page='14'] .nabSpeech{font:16px/23px KbDroid,Georgia,serif!important;border-color:#ffffd0}
+.nativeAB11[data-native-ab11-page='14'] .nabFooter{font:16px KbDroid,Georgia,serif;top:1440px!important}
+.nativeAB11[data-native-ab11-page='14'] .nabFooter[style*='50px']{left:59px!important;background:#e5dda6;color:white;font:italic 13px/18px Georgia,serif;width:67px!important;text-align:center}
+.nativeAB11[data-native-ab11-page='14'] .nabFooter[style*='130px']{left:140px!important}
+
+.nativeAB11[data-native-ab11-page='14'] .nabReading{font-size:18px;white-space:pre!important;transform:scaleX(.96);transform-origin:left top;width:610px!important}
+.nativeAB11[data-native-ab11-page='14'] .nabP14Question{transform:scaleX(.97);transform-origin:left top}
+.nativeAB11[data-native-ab11-page='14'] .nabNumberSnake{font-size:18px}
+.nativeAB11[data-native-ab11-page='14'] .nabTitle[style*='813px']{transform:scaleX(.93);transform-origin:left top}
+.nativeAB11[data-native-ab11-page='14'] .nabTitle[style*='927px']{transform:scaleX(1.015);transform-origin:left top}
+.nativeAB11[data-native-ab11-page='14'] .nabCanvas .nabRadio{z-index:2}
