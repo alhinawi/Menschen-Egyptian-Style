@@ -1,3 +1,4 @@
+import {ChoiceInput} from '../exercises/ChoiceInput';
 import {useLayoutEffect,useRef,useState} from 'react';
 import {PageImage} from '../components/PageImage';
 import {usePageReset} from '../exercises/usePageReset';
@@ -15,7 +16,7 @@ export function NativeAB11P95(){
  if(it.k==='art')return <PageImage key={i} className="p95Art" src={it.src} alt="Originalillustration" style={pos}/>;
  if(it.k==='line')return <div key={i} className="p95Line" style={{...pos,background:it.color}}/>;
  if(it.k==='badge')return <div key={i} className="p95Badge" style={{...pos,...(it.large?{fontSize:60,lineHeight:'60px'}:{})}}>{it.t}</div>;
- if(it.k==='field')return <input key={i} data-native-field={`ab11-p95-${it.id}`} className="p95Field" aria-label={it.id} dir="auto" style={pos} value={values[it.id]||''} onChange={e=>set(it.id,e.target.value,it.group)}/>;
+ if(it.k==='field')return <ChoiceInput key={i} data-native-field={`ab11-p95-${it.id}`} className="p95Field" aria-label={it.id} dir="auto" style={pos} value={values[it.id]||''} onChange={e=>set(it.id,e.target.value,it.group)}/>;
  if(it.k==='check')return null;
  return null;
  })}</div></div>

@@ -1,3 +1,4 @@
+import {ChoiceInput} from '../exercises/ChoiceInput';
 import {useLayoutEffect,useRef,useState} from 'react';
 import {CheckButton} from '../components/CheckButton';
 import {PageImage} from '../components/PageImage';
@@ -31,7 +32,7 @@ export function NativeAB11Faithful({page}:{page:string}){
    case 'a':return <PageImage key={n} className="nafArt" alt="" src={it.src} style={{left:it.x,top:it.y,width:it.w,height:it.h}}/>;
    case 'badge':return <div key={n} className="nafBadge" style={{left:it.ox,top:it.oy,width:it.x+it.w-it.ox,height:it.y+it.h-it.oy}}><i className="nafBadgeFill" style={{left:it.x-it.ox,top:it.y-it.oy,width:it.w,height:it.h}}/></div>;
    case 'tipp':return <div key={n} className="nafTipp" style={{left:it.x,top:it.y,width:it.w,height:it.h}}><span>TIPP</span></div>;
-   case 'f':return <input key={n} className="nafField" data-native-field={it.id} aria-label={it.lab} style={{left:it.x,top:it.y-it.h+.75,width:it.w,height:it.h,borderBottomColor:it.col}} value={values[it.id]||''} onChange={e=>{set(it.id,e.target.value);setSaved({})}} autoComplete="off" spellCheck={false}/>;
+   case 'f':return <ChoiceInput key={n} className="nafField" data-native-field={it.id} aria-label={it.lab} style={{left:it.x,top:it.y-it.h+.75,width:it.w,height:it.h,borderBottomColor:it.col}} value={values[it.id]||''} onChange={e=>{set(it.id,e.target.value);setSaved({})}} autoComplete="off" spellCheck={false}/>;
    default:return null;
   }
  };
