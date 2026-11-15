@@ -1588,10 +1588,10 @@
    "kind": "text",
    "label": "b: Ich …",
    "answer": "bin",
-   "x": 305,
-   "y": 340,
-   "w": 118,
-   "h": 22
+   "x": 303,
+   "y": 341,
+   "w": 100,
+   "h": 30
   },
   {
    "id": "u3-c",
@@ -1599,10 +1599,10 @@
    "kind": "text",
    "label": "c: … ihr",
    "answer": "Seid",
-   "x": 243,
-   "y": 375,
-   "w": 105,
-   "h": 22
+   "x": 263,
+   "y": 372,
+   "w": 91,
+   "h": 30
   },
   {
    "id": "u3-d",
@@ -1610,10 +1610,10 @@
    "kind": "text",
    "label": "d: Oksana und Marijana …",
    "answer": "sind",
-   "x": 482,
-   "y": 404,
-   "w": 122,
-   "h": 22
+   "x": 483,
+   "y": 402,
+   "w": 132,
+   "h": 30
   },
   {
    "id": "u3-e",
@@ -1621,10 +1621,10 @@
    "kind": "text",
    "label": "e: … du",
    "answer": "Bist",
-   "x": 243,
-   "y": 434,
-   "w": 105,
-   "h": 22
+   "x": 261,
+   "y": 431,
+   "w": 92,
+   "h": 30
   },
   {
    "id": "u4-1",
@@ -1632,10 +1632,10 @@
    "kind": "text",
    "label": "Infinitiv zu gefahren",
    "answer": "fahren",
-   "x": 1079,
-   "y": 672,
-   "w": 138,
-   "h": 22
+   "x": 866,
+   "y": 695,
+   "w": 249,
+   "h": 30
   },
   {
    "id": "u4-2",
@@ -1643,10 +1643,10 @@
    "kind": "text",
    "label": "Infinitiv zu abgefahren",
    "answer": "abfahren",
-   "x": 1079,
-   "y": 700,
-   "w": 138,
-   "h": 22
+   "x": 866,
+   "y": 725,
+   "w": 249,
+   "h": 30
   },
   {
    "id": "u4-3",
@@ -1654,10 +1654,10 @@
    "kind": "text",
    "label": "Infinitiv zu angekommen",
    "answer": "ankommen",
-   "x": 1079,
-   "y": 728,
-   "w": 138,
-   "h": 22
+   "x": 866,
+   "y": 753,
+   "w": 132,
+   "h": 30
   },
   {
    "id": "u4-4",
@@ -1665,32 +1665,32 @@
    "kind": "text",
    "label": "Infinitiv zu umgestiegen",
    "answer": "umsteigen",
-   "x": 1079,
-   "y": 756,
-   "w": 138,
-   "h": 22
+   "x": 1002,
+   "y": 753,
+   "w": 135,
+   "h": 30
   },
   {
    "id": "u5-l",
    "group": "u5",
    "kind": "text",
-   "label": "sein + ge…en",
-   "answer": "fahren – gefahren|fliegen – geflogen|gehen – gegangen|schwimmen – geschwommen",
+   "label": "5 sein + ge…en: alle vier Paare, mit Semikolon trennen",
+   "answer": "fahren - gefahren; fliegen - geflogen; gehen - gegangen; schwimmen - geschwommen",
    "x": 742,
-   "y": 1022,
-   "w": 180,
-   "h": 24
+   "y": 1008,
+   "w": 191,
+   "h": 39
   },
   {
    "id": "u5-r",
    "group": "u5",
    "kind": "text",
-   "label": "sein + ( )ge…en",
-   "answer": "abfahren – abgefahren|umsteigen – umgestiegen",
-   "x": 960,
-   "y": 1022,
-   "w": 200,
-   "h": 24
+   "label": "5 sein + (…)ge…en: beide Paare, mit Semikolon trennen",
+   "answer": "abfahren - abgefahren; umsteigen - umgestiegen",
+   "x": 958,
+   "y": 1008,
+   "w": 209,
+   "h": 39
   },
   {
    "id": "u6-a1",
@@ -1698,10 +1698,10 @@
    "kind": "text",
    "label": "a: Wir … zusammen",
    "answer": "haben",
-   "x": 702,
-   "y": 1180,
-   "w": 150,
-   "h": 22
+   "x": 709,
+   "y": 1177,
+   "w": 160,
+   "h": 32
   },
   {
    "id": "u6-a2",
@@ -1709,10 +1709,10 @@
    "kind": "text",
    "label": "a: … eine Fischsuppe",
    "answer": "gekocht",
-   "x": 260,
-   "y": 1212,
-   "w": 170,
-   "h": 22
+   "x": 261,
+   "y": 1209,
+   "w": 158,
+   "h": 30
   },
   {
    "id": "u6-a3",
@@ -1720,10 +1720,10 @@
    "kind": "text",
    "label": "a: Später … wir",
    "answer": "sind",
-   "x": 503,
-   "y": 1212,
-   "w": 155,
-   "h": 22
+   "x": 502,
+   "y": 1209,
+   "w": 160,
+   "h": 30
   },
   {
    "id": "u6-a4",
@@ -1731,10 +1731,10 @@
    "kind": "text",
    "label": "a: in die Disco …",
    "answer": "gegangen",
-   "x": 888,
-   "y": 1212,
-   "w": 165,
-   "h": 22
+   "x": 885,
+   "y": 1209,
+   "w": 160,
+   "h": 30
   },
   {
    "id": "u6-b1",
@@ -1742,10 +1742,10 @@
    "kind": "text",
    "label": "b: Und was … ihr",
    "answer": "habt",
-   "x": 342,
-   "y": 1282,
-   "w": 172,
-   "h": 22
+   "x": 351,
+   "y": 1281,
+   "w": 160,
+   "h": 30
   },
   {
    "id": "u6-b2",
@@ -1753,10 +1753,10 @@
    "kind": "text",
    "label": "b: gestern …?",
    "answer": "gemacht",
-   "x": 631,
-   "y": 1282,
-   "w": 165,
-   "h": 22
+   "x": 633,
+   "y": 1281,
+   "w": 157,
+   "h": 30
   },
   {
    "id": "u6-b3",
@@ -1764,10 +1764,10 @@
    "kind": "text",
    "label": "b: Wir … in die Stadt",
    "answer": "sind",
-   "x": 299,
-   "y": 1314,
-   "w": 145,
-   "h": 22
+   "x": 303,
+   "y": 1310,
+   "w": 160,
+   "h": 30
   },
   {
    "id": "u6-b4",
@@ -1775,10 +1775,10 @@
    "kind": "text",
    "label": "b: in die Stadt …",
    "answer": "gefahren",
-   "x": 588,
-   "y": 1314,
-   "w": 170,
-   "h": 22
+   "x": 592,
+   "y": 1310,
+   "w": 160,
+   "h": 30
   },
   {
    "id": "u6-b5",
@@ -1786,10 +1786,10 @@
    "kind": "text",
    "label": "b: und …",
    "answer": "haben eingekauft",
-   "x": 803,
-   "y": 1314,
-   "w": 325,
-   "h": 22
+   "x": 811,
+   "y": 1310,
+   "w": 307,
+   "h": 30
   },
   {
    "id": "u6-c1",
@@ -1797,10 +1797,10 @@
    "kind": "text",
    "label": "c: Letztes Jahr … wir",
    "answer": "sind",
-   "x": 381,
-   "y": 1378,
-   "w": 170,
-   "h": 22
+   "x": 385,
+   "y": 1379,
+   "w": 204,
+   "h": 30
   },
   {
    "id": "u6-c2",
@@ -1808,10 +1808,10 @@
    "kind": "text",
    "label": "c: zum Edinburgh Festival …",
    "answer": "geflogen",
-   "x": 763,
-   "y": 1378,
-   "w": 165,
-   "h": 22
+   "x": 833,
+   "y": 1379,
+   "w": 160,
+   "h": 30
   },
   {
    "id": "u6-c3",
@@ -1819,10 +1819,10 @@
    "kind": "text",
    "label": "c: Wir … gute Musik",
    "answer": "haben",
-   "x": 638,
-   "y": 1439,
-   "w": 95,
-   "h": 22
+   "x": 440,
+   "y": 1441,
+   "w": 85,
+   "h": 30
   },
   {
    "id": "u6-c4",
@@ -1830,10 +1830,10 @@
    "kind": "text",
    "label": "c: gute Musik …",
    "answer": "gehört",
-   "x": 785,
-   "y": 1439,
-   "w": 180,
-   "h": 22
+   "x": 645,
+   "y": 1441,
+   "w": 161,
+   "h": 30
   },
   {
    "id": "u6-c5",
@@ -1841,10 +1841,10 @@
    "kind": "text",
    "label": "c: und Freunde …",
    "answer": "getroffen",
-   "x": 1045,
-   "y": 1439,
-   "w": 165,
-   "h": 22
+   "x": 945,
+   "y": 1441,
+   "w": 160,
+   "h": 30
   },
   {
    "id": "u6-d1",
@@ -1852,10 +1852,10 @@
    "kind": "text",
    "label": "d: Ich … mit dem Zug",
    "answer": "bin",
-   "x": 320,
+   "x": 297,
    "y": 1510,
-   "w": 145,
-   "h": 22
+   "w": 161,
+   "h": 30
   },
   {
    "id": "u6-d2",
@@ -1863,10 +1863,10 @@
    "kind": "text",
    "label": "d: nach Flensburg …",
    "answer": "gefahren",
-   "x": 892,
+   "x": 897,
    "y": 1510,
-   "w": 172,
-   "h": 22
+   "w": 160,
+   "h": 30
   },
   {
    "id": "u6-d3",
@@ -1874,10 +1874,10 @@
    "kind": "text",
    "label": "d: Wie oft … du",
    "answer": "bist",
-   "x": 331,
-   "y": 1542,
-   "w": 165,
-   "h": 22
+   "x": 340,
+   "y": 1539,
+   "w": 157,
+   "h": 30
   },
   {
    "id": "u6-d4",
@@ -1885,10 +1885,10 @@
    "kind": "text",
    "label": "d: du …?",
    "answer": "umgestiegen",
-   "x": 531,
-   "y": 1542,
-   "w": 162,
-   "h": 22
+   "x": 534,
+   "y": 1539,
+   "w": 160,
+   "h": 30
   }
  ],
  "audio": [],
@@ -1917,7 +1917,8 @@
   "notes": [
    "BASISTRAINING L12 Ü3-Ü6. Answers from AB Lösungsschlüssel L12 (3 b-e; 4; 5; 6).",
    "KEY CONFLICT 6c: the key says 'sind…gefahren' but the printed verb bank on the page is 'treffen/hören/fliegen' - page wins, answer is 'geflogen' (page followed per rule; key likely has a copy error).",
-   "Ü3a 'ist', Ü4 'schwimmen', Ü5 'kommen – gekommen'/'ankommen – angekommen', Ü6a 'sind gekommen' are printed blue examples (words, no fields). Ü5 has one blank rule per column: each accepts any pair of its column (|-separated). Speaker squares/triangles dropped. Right-edge Modul tab cut, omitted."
+   "Ü3a 'ist', Ü4 'schwimmen', Ü5 'kommen – gekommen'/'ankommen – angekommen', Ü6a 'sind gekommen' are printed blue examples (words, no fields). Ü5 has one blank rule per column: each accepts any pair of its column (|-separated). Speaker squares/triangles dropped. Right-edge Modul tab cut, omitted.",
+   "2026-11-16: Scan preserved,all six required u5 pairs not just one;columns scroll independently;own full pairs any order."
   ]
  }
 }
