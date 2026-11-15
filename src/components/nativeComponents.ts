@@ -1,4 +1,5 @@
 import {createElement} from 'react';
+import {ChoiceScope} from '../exercises/ChoiceInput';
 import type {ComponentType, ReactNode} from 'react';
 import type {MarkupAttrs, MarkupNode} from '../types/book';
 import {loadKB11Pages} from '../native-kb11/registry';
@@ -195,9 +196,12 @@ export function renderNative(tag: string, attrs: MarkupAttrs, key: string | numb
   if (!entry) return undefined;
   const component = components.get(entry.name);
   if (!component) throw new Error('Native component was not prepared: ' + entry.name);
+  const book=String(attrs.book||(/AB11/.test(entry.name)?'ab-a11':/AB12/.test(entry.name)?'ab-a12':/KB12/.test(entry.name)?'kb-a12':'kb-a11'));
+  const page=String(entry.props.page??attrs.page??entry.name.match(/(?:P|Test)(\d+)$/)?.[1]??'');
+  const scoped=(child:ReactNode)=>createElement(ChoiceScope.Provider,{key,value:{book,page}},child);
   if (entry.name === 'HybridScan') {
     const data = scanData[attrs.book + ':' + attrs.page];
-    return data ? createElement(component, {key, data}) : null;
+    return data ? scoped(createElement(component, {data})) : null;
   }
-  return createElement(component, {key, ...entry.props});
+  return scoped(createElement(component, {...entry.props}));
 }

@@ -1,3 +1,4 @@
+import {ChoiceInput} from '../exercises/ChoiceInput';
 import {CheckButton} from '../components/CheckButton';
 import {PageImage} from '../components/PageImage';
 import {useLayoutEffect,useRef,useState} from 'react';
@@ -22,7 +23,7 @@ export function NativeAB11Test88(){
  const set=(id:string,value:string)=>{const next={...v,[id]:value};S(next);localStorage.setItem(key,JSON.stringify(next));G({})};
  const Y=(y:number)=>y<423?y*.88:y<=840?y-50.76:y*.88+50.4;
  const txt=(x:number,y:number,w:number,s:string,cls='')=><div className={'mText '+cls} style={{left:x,top:cls==='mFooter'?y:Y(y),width:w}}><Words s={s}/></div>;
- const f=(id:string,x:number,y:number,w:number)=>{const ctx=document.createElement('canvas').getContext('2d');if(ctx)ctx.font="16px 'Times New Roman'";const size=Math.max(10,Math.min(16,16*(w-8)/(ctx?.measureText(v[id]||'').width||1)));return <input className="mField" data-native-field={id} aria-label={id} style={{left:x,top:Y(y),width:w,fontSize:size}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>};
+ const f=(id:string,x:number,y:number,w:number)=>{const ctx=document.createElement('canvas').getContext('2d');if(ctx)ctx.font="16px 'Times New Roman'";const size=Math.max(10,Math.min(16,16*(w-8)/(ctx?.measureText(v[id]||'').width||1)));return <ChoiceInput className="mField" data-native-field={id} aria-label={id} style={{left:x,top:Y(y),width:w,fontSize:size}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>};
  const title=(n:string,y:number,s:string)=><><div className="mNumber red" style={{left:112,top:Y(y)}}>{n}</div>{txt(148,y,690,s,'mTitle')}</>;
  const ink=(name:string,x:number,y:number,w:number,h:number,alt='')=><PageImage className="mHelp" alt={alt} src={`assets/native-ab11/p88-${name}.png`} style={{left:x,top:Y(y),width:w,height:h}}/>;
  const expected=[4,2,5,0,6,3,1];

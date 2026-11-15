@@ -12,7 +12,7 @@ const scan=p.locator('.hybridScan[data-scan-book='+JSON.stringify(meta.book)+'][
   const loc=scan.locator('[data-field-id='+JSON.stringify(f.id)+']');
   if(f.kind==='radio'){if(f.answer.split('|').includes('true'))radios[f.name||f.id]=f.id}
   else if(f.kind==='checkbox'){await loc.evaluate((e,want)=>{if(e.checked!==want)e.click()},f.answer.split('|').includes('true'))}
-  else if(f.kind==='select')await loc.selectOption(f.answer.split('|')[0]);
+  else if(await loc.evaluate(e=>e.tagName==='SELECT'))await loc.selectOption(f.answer.split('|')[0]);
   else await loc.fill(f.answer.split('|')[0]);
  }
  for(const id of Object.values(radios))await scan.locator('[data-field-id='+JSON.stringify(id)+']').evaluate(e=>e.click());

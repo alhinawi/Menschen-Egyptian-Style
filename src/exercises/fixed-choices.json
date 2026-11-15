@@ -1,0 +1,2904 @@
+{
+  "kb-a11:13": [
+    {
+      "ids": [
+        "vk1",
+        "vk2",
+        "vk3",
+        "vk4"
+      ],
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "source": "1b: match four audio tracks to business cards A-D"
+    }
+  ],
+  "kb-a11:26": [
+    {
+      "ids": [
+        "s1-d",
+        "s2-b",
+        "s2-c"
+      ],
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "source": "3a: choose the printed reply labels A-D"
+    },
+    {
+      "ids": [
+        "t3c-a",
+        "t3c-c",
+        "t3c-d",
+        "t3c-e",
+        "t3c-f",
+        "t3c-g",
+        "t3c-h",
+        "t3c-i",
+        "t3c-j"
+      ],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "source": "3c: order ten dialogue lines; printed example remains on paper"
+    }
+  ],
+  "kb-a11:30": [
+    {
+      "ids": [
+        "t3a-1",
+        "t3a-2",
+        "t3a-3"
+      ],
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "source": "3a: three numbered glasses"
+    }
+  ],
+  "kb-a11:34": [
+    {
+      "ids": [
+        "t4b",
+        "t4c",
+        "t4d",
+        "t4e",
+        "t4f",
+        "t4g"
+      ],
+      "options": [
+        "C",
+        "F",
+        "E",
+        "B"
+      ],
+      "source": "4: printed legend C=Christian, F=Feser, E=Eva, B=Brenner"
+    }
+  ],
+  "kb-a11:37": [
+    {
+      "ids": [
+        "t1-1",
+        "t1-2",
+        "t1-3",
+        "t1-4"
+      ],
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "source": "1: match four photos to texts A-D"
+    }
+  ],
+  "kb-a11:42": [
+    {
+      "ids": [
+        "t4a-gitarre",
+        "t4a-tanzen",
+        "t4a-tennis"
+      ],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "source": "4a: compliments to ten numbered pictures"
+    },
+    {
+      "ids": [
+        "t6a-1",
+        "t6a-2",
+        "t6a-3",
+        "t6a-4",
+        "t6a-5"
+      ],
+      "options": [
+        "toll",
+        "sehr gut",
+        "super",
+        "gut",
+        "nicht so gut",
+        "nicht",
+        "gar nicht",
+        "ein bisschen"
+      ],
+      "source": "6a: printed ability-scale expressions"
+    }
+  ],
+  "kb-a11:43": [
+    {
+      "ids": [
+        "t8a-foto1",
+        "t8a-foto2",
+        "t8a-foto3",
+        "t8b-spazieren",
+        "t8b-hoere-musik",
+        "t8b-natur",
+        "t8b-liebe-musik",
+        "t8b-ausfluege",
+        "t8b-fussball",
+        "t8b-komponist"
+      ],
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "source": "8a/8b: match photos and sentences to audio texts 1-3"
+    }
+  ],
+  "kb-a11:45": [
+    {
+      "ids": [
+        "p45-t2-schwimmbad",
+        "p45-t2-kino",
+        "p45-t2-zeit"
+      ],
+      "options": [
+        "Manuel",
+        "Jonas"
+      ],
+      "source": "2a: speaker choices printed in the task"
+    }
+  ],
+  "kb-a11:48": [
+    {
+      "ids": [
+        "b-gruesse",
+        "b-leider",
+        "b-vielleicht",
+        "b-zeit"
+      ],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "source": "8b: order the five email lines"
+    }
+  ],
+  "kb-a11:53": [
+    {
+      "ids": [
+        "t1-heute",
+        "t2-morgen",
+        "t3-juni"
+      ],
+      "options": [
+        "Frühstück mit Musik",
+        "Nur für Frauen",
+        "Endlich wieder Kino"
+      ],
+      "source": "1: printed heading bank"
+    }
+  ],
+  "kb-a11:58": [
+    {
+      "ids": [
+        "f3a-2",
+        "f3a-3",
+        "f3a-4"
+      ],
+      "options": [
+        "A",
+        "B",
+        "C"
+      ],
+      "source": "3a: three photo choices A-C"
+    },
+    {
+      "ids": [
+        "f4a-1",
+        "f4a-2",
+        "f4a-3"
+      ],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "source": "4a: order four utterances"
+    },
+    {
+      "ids": [
+        "f4b-1",
+        "f4b-2",
+        "f4b-3"
+      ],
+      "options": [
+        "Achtung",
+        "Bahnsteig",
+        "Halt",
+        "Vorsicht"
+      ],
+      "source": "4b: printed announcement word bank"
+    },
+    {
+      "ids": [
+        "f4c-1",
+        "f4c-2",
+        "f4c-3"
+      ],
+      "options": [
+        "ein",
+        "an",
+        "fern"
+      ],
+      "source": "4c: printed prefix bank"
+    }
+  ],
+  "kb-a11:59": [
+    {
+      "ids": [
+        "f7b-b",
+        "f7b-c",
+        "f7b-d",
+        "f7b-e"
+      ],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "source": "7b: five numbered photos"
+    }
+  ],
+  "kb-a11:66": [
+    {
+      "ids": [
+        "f3a-A",
+        "f3a-C",
+        "f3a-D"
+      ],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "source": "3a: audio items 1-4"
+    }
+  ],
+  "kb-a11:84": [
+    {
+      "ids": [
+        "material",
+        "farbe",
+        "form"
+      ],
+      "options": [
+        "eckig",
+        "Plastik",
+        "rot"
+      ],
+      "source": "a: printed product-information bank"
+    }
+  ],
+  "kb-a11:70": [
+    {
+      "ids": [
+        "f2-r1",
+        "f2-r3",
+        "f2-r4",
+        "f2-r5",
+        "f2-r6",
+        "f2-r7",
+        "f2-r9",
+        "f2-r10",
+        "f2-r11"
+      ],
+      "options": [
+        "aufräumen und sauber machen",
+        "einen Spaziergang machen",
+        "frühstücken und Zeitung lesen",
+        "zu Abend essen",
+        "kochen",
+        "schlafen",
+        "Silvia anrufen",
+        "Silvia im Rosengarten treffen",
+        "Jenga spielen",
+        "Croissants backen",
+        "Zeitung holen",
+        "Kaffee machen",
+        "reden",
+        "Wasser trinken",
+        "einkaufen"
+      ],
+      "source": "2: exact activity phrases printed in the schedule bank"
+    },
+    {
+      "ids": [
+        "f3-A-fest",
+        "f3-B-fest",
+        "f3-C-fest",
+        "f3-D-fest"
+      ],
+      "options": [
+        "Annas Geburtstagsfeier",
+        "Betriebsfeier",
+        "Faschingsfest",
+        "Führerscheinprüfung geschafft"
+      ],
+      "source": "3: printed category-specific festival bank"
+    },
+    {
+      "ids": [
+        "f3-A-wo",
+        "f3-B-wo",
+        "f3-C-wo"
+      ],
+      "options": [
+        "Leipzig",
+        "Österreich",
+        "in der Firma"
+      ],
+      "source": "3: printed category-specific festival bank"
+    },
+    {
+      "ids": [
+        "f3-B-wann",
+        "f3-C-wann",
+        "f3-D-wann"
+      ],
+      "options": [
+        "am Freitag",
+        "im Winter",
+        "vor 20 Jahren",
+        "letzten Mai",
+        "vor einem Jahr"
+      ],
+      "source": "3: printed category-specific festival bank"
+    },
+    {
+      "ids": [
+        "f3-A-wie",
+        "f3-B-wie",
+        "f3-C-wie"
+      ],
+      "options": [
+        "langweilig",
+        "lustig",
+        "toll"
+      ],
+      "source": "3: printed category-specific festival bank"
+    }
+  ],
+  "kb-a11:31": [
+    {
+      "ids": [
+        "t6c-2",
+        "t6c-3",
+        "t6c-4",
+        "t6c-5",
+        "t6c-6"
+      ],
+      "options": [
+        "Entschuldigung, wie heißt das auf Deutsch?",
+        "Wie schreibt man",
+        "Kein Problem.",
+        "Das ist eine",
+        "Noch einmal, bitte.",
+        "Das ist eine Uhr."
+      ],
+      "source": "6c: printed six-expression bank; the example is not an editable field"
+    }
+  ],
+  "kb-a12:9": [
+    {
+      "ids": [
+        "1b-1",
+        "1b-2",
+        "1b-3",
+        "1b-4"
+      ],
+      "options": [
+        "F",
+        "N",
+        "k"
+      ],
+      "source": "1b: printed speaker legend F / N / k"
+    }
+  ],
+  "kb-a12:10": [
+    {
+      "ids": [
+        "3-l0",
+        "3-l1",
+        "3-l2",
+        "3-l3",
+        "3-l4",
+        "3-r0",
+        "3-r1",
+        "3-r2",
+        "3-r3"
+      ],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "source": "3: ten numbered places in the printed map legend"
+    }
+  ],
+  "kb-a12:14": [
+    {
+      "ids": [
+        "3-W",
+        "3-K",
+        "3-A",
+        "3-S",
+        "3-B",
+        "3-T",
+        "3-F",
+        "3-E",
+        "3-1"
+      ],
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "source": "3: ten lettered rooms/levels in the house drawing"
+    },
+    {
+      "ids": [
+        "5a-1a",
+        "5a-1b",
+        "5a-2",
+        "5a-3a",
+        "5a-3b",
+        "5a-4",
+        "5a-5"
+      ],
+      "options": [
+        "sein",
+        "seine",
+        "seinen"
+      ],
+      "source": "5a: explicitly choose sein, seine or seinen"
+    }
+  ],
+  "kb-a12:15": [
+    {
+      "ids": [
+        "8a-A",
+        "8a-B",
+        "8a-C",
+        "8a-D",
+        "8a-E"
+      ],
+      "options": [
+        "1",
+        "2"
+      ],
+      "source": "8a: asks who is seeking (1) or offering (2)"
+    },
+    {
+      "ids": [
+        "8b-2",
+        "8b-3",
+        "8b-4"
+      ],
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "source": "8b: match terms to definitions a-d"
+    }
+  ],
+  "kb-a12:17": [
+    {
+      "ids": [
+        "1b-1",
+        "1b-2",
+        "1b-3",
+        "1b-4",
+        "1b-5",
+        "1b-6"
+      ],
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "source": "1b: six audio texts matched to six lettered photos"
+    }
+  ],
+  "kb-a12:21": [
+    {
+      "ids": [
+        "1-0",
+        "1-2",
+        "1-3",
+        "1-4"
+      ],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "source": "1: assign five photos to numbered map stops"
+    }
+  ],
+  "kb-a12:22": [
+    {
+      "ids": [
+        "1-0",
+        "1-1",
+        "1-3",
+        "1-4",
+        "1-5",
+        "1-6"
+      ],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "source": "1: sort seven route directions"
+    }
+  ],
+  "kb-a12:27": [
+    {
+      "ids": [
+        "7a-c",
+        "7a-b"
+      ],
+      "options": [
+        "A",
+        "B",
+        "C"
+      ],
+      "source": "7a: classify emails A-C"
+    }
+  ],
+  "kb-a12:34": [
+    {
+      "ids": [
+        "2a-links",
+        "2a-rechts"
+      ],
+      "options": [
+        "1",
+        "2"
+      ],
+      "source": "2a: two audio conversations matched to the photos"
+    }
+  ],
+  "kb-a12:35": [
+    {
+      "ids": [
+        "4-2",
+        "4-3",
+        "4-4",
+        "4-5",
+        "4-6",
+        "4-7",
+        "4-8",
+        "4-9",
+        "4-10",
+        "4-11",
+        "4-12",
+        "4-13",
+        "4-14",
+        "4-15",
+        "4-16"
+      ],
+      "options": [
+        "Kopf",
+        "Hals",
+        "Rücken",
+        "Brust",
+        "Bauch",
+        "Arm",
+        "Hand",
+        "Finger",
+        "Bein",
+        "Fuß",
+        "Knie",
+        "Ohr",
+        "Auge",
+        "Zahn",
+        "Nase",
+        "Mund"
+      ],
+      "source": "4: exact printed body-part bank"
+    }
+  ],
+  "kb-a12:38": [
+    {
+      "ids": [
+        "3-1",
+        "3-2",
+        "3-3",
+        "3-4",
+        "3-5",
+        "3-6"
+      ],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "source": "3: match sentence halves to numbered endings 1-7"
+    }
+  ],
+  "kb-a12:39": [
+    {
+      "ids": [
+        "2-top",
+        "2-bottom"
+      ],
+      "options": [
+        "Karriere machen!",
+        "Ich möchte so gern eine Weltreise machen!",
+        "Ich will Millionär werden!",
+        "Ich wünsche mir ein Haus am Meer in Frankreich."
+      ],
+      "source": "2: choose one of the wishes printed on the tree"
+    }
+  ],
+  "kb-a12:42": [
+    {
+      "ids": [
+        "3a-left",
+        "3a-right"
+      ],
+      "options": [
+        "F",
+        "M"
+      ],
+      "source": "3a: printed speaker legend F / M"
+    },
+    {
+      "ids": [
+        "4b-1",
+        "4b-2",
+        "4b-3",
+        "4b-4",
+        "4b-6",
+        "4b-7",
+        "4b-8",
+        "4b-9",
+        "4b-10",
+        "4b-11",
+        "4b-12",
+        "4b-13"
+      ],
+      "options": [
+        "+",
+        "-"
+      ],
+      "source": "4b: classify adjective as positive + or negative -"
+    }
+  ],
+  "kb-a12:44": [
+    {
+      "ids": [
+        "8a-1",
+        "8a-2",
+        "8a-3",
+        "8a-4",
+        "8a-5"
+      ],
+      "options": [
+        "Ach komm!",
+        "Ach du liebe Zeit!",
+        "Ach was!",
+        "Echt?",
+        "Wahnsinn!"
+      ],
+      "source": "8a: exact printed reaction bank"
+    }
+  ],
+  "kb-a12:47": [
+    {
+      "ids": [
+        "7a-2",
+        "7a-3",
+        "7a-4",
+        "7a-5",
+        "7a-6"
+      ],
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "source": "7a: match note lines to continuations A-F"
+    }
+  ],
+  "kb-a12:50": [
+    {
+      "ids": [
+        "3c-0",
+        "3c-1",
+        "3c-2",
+        "3c-3",
+        "3c-5",
+        "3c-6"
+      ],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "source": "3c: seven numbered signs"
+    }
+  ],
+  "kb-a12:54": [
+    {
+      "ids": [
+        "3a",
+        "3b",
+        "3c",
+        "3d",
+        "3e"
+      ],
+      "options": [
+        "anlehnen",
+        "spazieren gehen",
+        "gehen",
+        "mitnehmen"
+      ],
+      "source": "3: printed verb bank; gehen appears twice"
+    }
+  ],
+  "kb-a12:58": [
+    {
+      "ids": [
+        "3b-vera",
+        "3b-jana",
+        "3b-jasmin",
+        "3b-harry"
+      ],
+      "options": [
+        "Fabian",
+        "Harry",
+        "Jana",
+        "Jasmin",
+        "Vera"
+      ],
+      "source": "3b: printed name bank"
+    },
+    {
+      "ids": [
+        "4a-2",
+        "4a-3",
+        "4a-4",
+        "4a-5",
+        "4a-6"
+      ],
+      "options": [
+        "Am besten",
+        "Am liebsten",
+        "besser",
+        "gern",
+        "gut",
+        "lieber"
+      ],
+      "source": "4a: exact printed comparison bank"
+    }
+  ],
+  "kb-a12:60": [
+    {
+      "ids": [
+        "8a-1",
+        "8a-2",
+        "8a-3"
+      ],
+      "options": [
+        "richtig",
+        "total",
+        "wahnsinnig"
+      ],
+      "source": "8a: printed intensifier bank"
+    }
+  ],
+  "kb-a12:62": [
+    {
+      "ids": [
+        "4a-0",
+        "4a-1",
+        "4a-2"
+      ],
+      "options": [
+        "A",
+        "B",
+        "C"
+      ],
+      "source": "4a: photos matched to blog texts A-C"
+    }
+  ],
+  "kb-a12:66": [
+    {
+      "ids": [
+        "2a-1",
+        "2a-2",
+        "2a-3"
+      ],
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "source": "2a: photos matched to texts A-D"
+    }
+  ],
+  "kb-a12:70": [
+    {
+      "ids": [
+        "1a-0",
+        "1a-1",
+        "1a-2",
+        "1a-3",
+        "1a-4",
+        "1a-6"
+      ],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "source": "1a: statements matched to fashion photos 1-7"
+    }
+  ],
+  "kb-a12:72": [
+    {
+      "ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "options": [
+        "besser",
+        "mehr",
+        "schöner",
+        "traurig",
+        "sehr"
+      ],
+      "source": "1: exact printed song word bank"
+    }
+  ],
+  "ab-a11:6": [
+    {
+      "ids": [
+        "1-wer",
+        "1-du",
+        "1-hallo",
+        "1-ich",
+        "1-wie",
+        "1-heisst",
+        "1-heisse"
+      ],
+      "options": [
+        "heiße",
+        "du",
+        "Hallo",
+        "heißt",
+        "ich",
+        "wer",
+        "wie"
+      ],
+      "source": "1: exact printed word bank"
+    },
+    {
+      "ids": [
+        "2-0",
+        "2-1",
+        "2-2",
+        "2-3",
+        "2-4",
+        "2-5"
+      ],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "source": "2: put seven printed lines in dialogue order"
+    },
+    {
+      "ids": [
+        "5-0",
+        "5-1",
+        "5-3",
+        "5-4"
+      ],
+      "options": [
+        "Deutschland",
+        "Frankreich",
+        "Österreich",
+        "die Schweiz",
+        "die Türkei"
+      ],
+      "source": "5a: printed country bank"
+    }
+  ],
+  "ab-a11:8": [
+    {
+      "ids": [
+        "12-a",
+        "12-c",
+        "12-d"
+      ],
+      "options": [
+        "Nicht so gut.",
+        "Sehr gut, danke.",
+        "Auch gut.",
+        "Es geht.",
+        "Gut, danke."
+      ],
+      "source": "12: printed response bank"
+    },
+    {
+      "ids": [
+        "13-a",
+        "13-b1",
+        "13-b2"
+      ],
+      "options": [
+        "Und wie geht es dir?",
+        "Und Ihnen?",
+        "Wie geht es Ihnen?",
+        "Wie geht’s?"
+      ],
+      "source": "13: exact printed question bank"
+    },
+    {
+      "ids": [
+        "15-a",
+        "15-c",
+        "15-d",
+        "15-f"
+      ],
+      "options": [
+        "Hallo",
+        "Guten Tag",
+        "Auf Wiedersehen",
+        "Gute Nacht",
+        "Tschüs",
+        "Guten Abend"
+      ],
+      "source": "15: identify and assign printed greetings"
+    }
+  ],
+  "ab-a11:9": [
+    {
+      "ids": [
+        "1-q2",
+        "1-q3",
+        "1-q4"
+      ],
+      "options": [
+        "wie",
+        "woher",
+        "wer"
+      ],
+      "source": "1a: explicit wie, woher, wer choices"
+    },
+    {
+      "ids": [
+        "1-answer-1",
+        "1-answer-2a",
+        "1-answer-2b",
+        "1-answer-3a",
+        "1-answer-3b",
+        "1-answer-4a",
+        "1-answer-4b"
+      ],
+      "options": [
+        "Das ist Frau Burgos.",
+        "Gut, danke. Und Ihnen?",
+        "Aus Spanien.",
+        "Das ist Anna Burgos.",
+        "Ich heiße Miguel.",
+        "Ich komme aus Spanien.",
+        "Mein Name ist Miguel Munoz.",
+        "Danke, gut."
+      ],
+      "source": "1b: exact printed answer bank"
+    }
+  ],
+  "ab-a11:12": [
+    {
+      "ids": [
+        "u1a-2",
+        "u1a-3",
+        "u1a-4",
+        "u1a-5",
+        "u1a-6"
+      ],
+      "options": [
+        "Architektin",
+        "Ärztin",
+        "Lehrer",
+        "Schauspieler",
+        "Sekretärin",
+        "Verkäufer"
+      ],
+      "source": "1a: printed profession bank, not photo numbers"
+    },
+    {
+      "ids": [
+        "u3-b",
+        "u3-c",
+        "u3-d",
+        "u3-e",
+        "u3-f"
+      ],
+      "options": [
+        "arbeite",
+        "habe",
+        "mache",
+        "bin"
+      ],
+      "source": "3: exact printed verb-form bank"
+    },
+    {
+      "ids": [
+        "u4-b",
+        "u4-c",
+        "u4-d",
+        "u4-e1",
+        "u4-e2"
+      ],
+      "options": [
+        "geschieden",
+        "leben",
+        "Single",
+        "verheiratet",
+        "nicht verheiratet",
+        "zwei Kinder"
+      ],
+      "source": "4: exact printed expression bank"
+    }
+  ],
+  "ab-a11:13": [
+    {
+      "ids": [
+        "u6-1",
+        "u6-3",
+        "u6-4",
+        "u6-5"
+      ],
+      "options": [
+        "ich",
+        "er",
+        "sie",
+        "wir"
+      ],
+      "source": "6: printed pronoun bank"
+    }
+  ],
+  "ab-a11:16": [
+    {
+      "ids": [
+        "u1-b",
+        "u1-c",
+        "u1-d",
+        "u1-e",
+        "u1-f",
+        "u1-g"
+      ],
+      "options": [
+        "Alter",
+        "Wohnort",
+        "Beruf",
+        "Herkunft",
+        "Name",
+        "Arbeitgeber",
+        "Familienstand"
+      ],
+      "source": "1: exact printed heading bank"
+    }
+  ],
+  "ab-a11:18": [
+    {
+      "ids": [
+        "u6-b",
+        "u6-c",
+        "u6-d",
+        "u6-e"
+      ],
+      "options": [
+        "ja",
+        "nein",
+        "doch"
+      ],
+      "source": "6: explicit ja, nein, doch"
+    }
+  ],
+  "ab-a11:19": [
+    {
+      "ids": [
+        "u7-m1",
+        "u7-w1",
+        "u7-m2a",
+        "u7-m2b",
+        "u7-w2a",
+        "u7-w2b"
+      ],
+      "options": [
+        "Schwester",
+        "Vater",
+        "Sohn",
+        "Opa",
+        "Enkelin",
+        "(Ehe-)Frau",
+        "Großvater"
+      ],
+      "source": "7: printed family-word bank"
+    },
+    {
+      "ids": [
+        "u9-b",
+        "u9-c",
+        "u9-d",
+        "u9-e",
+        "u9-f",
+        "u9-g"
+      ],
+      "options": [
+        "dein",
+        "deine",
+        "mein",
+        "meine"
+      ],
+      "source": "9: exact printed possessive bank"
+    }
+  ],
+  "ab-a11:20": [
+    {
+      "ids": [
+        "u12-r3m",
+        "u12-r5m",
+        "u12-r2w",
+        "u12-r4w"
+      ],
+      "options": [
+        "Freund",
+        "Kollege",
+        "Student",
+        "Partnerin",
+        "Ärztin"
+      ],
+      "source": "12: choose unchanged printed words; own-language translations remain text"
+    }
+  ],
+  "ab-a11:30": [
+    {
+      "ids": [
+        "u1-a",
+        "u1-b",
+        "u1-c",
+        "u1-d"
+      ],
+      "options": [
+        "Er ist wirklich schön, aber sehr teuer.",
+        "Nur 55 Euro! Das ist aber günstig!",
+        "Und wie viel kostet der Stuhl?",
+        "Was kostet denn das Bild?",
+        "Ja, bitte."
+      ],
+      "source": "1: exact printed dialogue bank"
+    },
+    {
+      "ids": [
+        "u3-r1a",
+        "u3-r1b",
+        "u3-r2a",
+        "u3-r2b",
+        "u3-r3a",
+        "u3-r3b"
+      ],
+      "options": [
+        "der",
+        "das",
+        "die"
+      ],
+      "source": "3: explicit der/das/die"
+    }
+  ],
+  "ab-a11:33": [
+    {
+      "ids": [
+        "u1-2",
+        "u1-3",
+        "u1-4"
+      ],
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "source": "1: order emails A-D"
+    },
+    {
+      "ids": [
+        "au2-1",
+        "au2-2",
+        "au2-3",
+        "au2-4",
+        "au2-5"
+      ],
+      "options": [
+        "kurz",
+        "lang"
+      ],
+      "source": "Aussprache 2: explicit kurz/lang bank"
+    }
+  ],
+  "ab-a11:34": [
+    {
+      "ids": [
+        "t6-a",
+        "t6-b",
+        "t6-c",
+        "t6-d",
+        "t6-e",
+        "t6-f",
+        "t6-g"
+      ],
+      "options": [
+        "Vielen Dank",
+        "Sie kostet",
+        "Das ist",
+        "Wie viel kostet",
+        "Kann ich Ihnen helfen",
+        "zu teuer",
+        "Brauchen Sie"
+      ],
+      "source": "6: exact printed dialogue bank"
+    }
+  ],
+  "ab-a11:36": [
+    {
+      "ids": [
+        "u2-b1",
+        "u2-b2",
+        "u2-c1",
+        "u2-c2",
+        "u2-d1",
+        "u2-d2",
+        "u2-e1",
+        "u2-e2"
+      ],
+      "options": [
+        "ein",
+        "eine",
+        "der",
+        "das",
+        "die"
+      ],
+      "source": "2: explicit article choices"
+    },
+    {
+      "ids": [
+        "u4-b-l",
+        "u4-b-r",
+        "u4-c-l",
+        "u4-c-r",
+        "u4-d-l",
+        "u4-d-r"
+      ],
+      "options": [
+        "ein",
+        "eine",
+        "kein",
+        "keine"
+      ],
+      "source": "4: explicit article choices"
+    }
+  ],
+  "ab-a11:37": [
+    {
+      "ids": [
+        "u7-flasche",
+        "u7-schluessel",
+        "u7-verheiratet",
+        "u7-graz"
+      ],
+      "options": [
+        "nicht",
+        "kein",
+        "keine"
+      ],
+      "source": "7: exact printed bank; translations remain text"
+    }
+  ],
+  "ab-a11:38": [
+    {
+      "ids": [
+        "u11b-1",
+        "u11b-2",
+        "u11b-3"
+      ],
+      "options": [
+        "Wie heißt das auf Deutsch?",
+        "Wie schreibt man das?",
+        "Wie bitte?",
+        "Bitteschön, kein Problem."
+      ],
+      "source": "11b: complete expressions from matched halves in 11a"
+    }
+  ],
+  "ab-a11:39": [
+    {
+      "ids": [
+        "f-vorname",
+        "f-beruf",
+        "f-telefon",
+        "f-familienname",
+        "f-strasse",
+        "f-ort",
+        "f-email"
+      ],
+      "options": [
+        "Beruf",
+        "Familienname",
+        "Straße",
+        "Vorname",
+        "E-Mail",
+        "Ort",
+        "PLZ",
+        "Telefon"
+      ],
+      "source": "1: exact printed form-label bank"
+    }
+  ],
+  "ab-a11:40": [
+    {
+      "ids": [
+        "t3-b",
+        "t3-c1",
+        "t3-c2",
+        "t3-d",
+        "t3-e1",
+        "t3-e2",
+        "t3-f"
+      ],
+      "options": [
+        "ein",
+        "eine",
+        "kein",
+        "keine"
+      ],
+      "source": "3: explicit article choices"
+    }
+  ],
+  "ab-a11:45": [
+    {
+      "ids": [
+        "h1-1",
+        "h1-2",
+        "h1-3"
+      ],
+      "options": [
+        "A",
+        "B",
+        "C"
+      ],
+      "source": "1: three conversation situations A-C"
+    },
+    {
+      "ids": [
+        "au2-1",
+        "au2-2",
+        "au2-3",
+        "au2-4",
+        "au2-5",
+        "au2-6",
+        "au2-7"
+      ],
+      "options": [
+        "lang",
+        "kurz"
+      ],
+      "source": "Aussprache 2: explicit short/long classification"
+    }
+  ],
+  "ab-a11:61": [
+    {
+      "ids": [
+        "l8-5-2",
+        "l8-5-1",
+        "l8-5-3",
+        "l8-5-4"
+      ],
+      "options": [
+        "Da kann ich leider nicht.",
+        "Das weiß ich noch nicht.",
+        "Ja, bis dann.",
+        "Zwei Uhr ist okay.",
+        "Hm ... Ja, warum nicht? Wann denn?"
+      ],
+      "source": "5: exact printed reply bank"
+    }
+  ],
+  "ab-a11:62": [
+    {
+      "ids": [
+        "l8-8-kino-l",
+        "l8-8-isst-l",
+        "l8-8-kaffee-l",
+        "l8-8-disco-l",
+        "l8-8-schwimmt-l"
+      ],
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "source": "8: assign picture letters A-F; writing the time remains text"
+    }
+  ],
+  "ab-a11:64": [
+    {
+      "ids": [
+        "l8t-5-b",
+        "l8t-5-c",
+        "l8t-5-d1",
+        "l8t-5-d2"
+      ],
+      "options": [
+        "um",
+        "am",
+        "in"
+      ],
+      "source": "5: explicit um/am/in"
+    },
+    {
+      "ids": [
+        "l8t-6-a",
+        "l8t-6-b",
+        "l8t-6-c",
+        "l8t-6-d",
+        "l8t-6-e"
+      ],
+      "options": [
+        "Wann denn?",
+        "Da habe ich Zeit.",
+        "Hast du am Freitag Zeit?",
+        "Leider kann ich nicht.",
+        "Und am Samstag?"
+      ],
+      "source": "6: exact printed telephone bank"
+    }
+  ],
+  "ab-a11:67": [
+    {
+      "ids": [
+        "l9-5-2",
+        "l9-5-3",
+        "l9-5-4",
+        "l9-5-5"
+      ],
+      "options": [
+        "mag ich auch gern",
+        "Isst du auch gern",
+        "isst du gern",
+        "esse ich sehr gern",
+        "mögt ihr"
+      ],
+      "source": "5: exact printed expression bank"
+    },
+    {
+      "ids": [
+        "l9-6-b",
+        "l9-6-c1",
+        "l9-6-c2"
+      ],
+      "options": [
+        "schon",
+        "erst"
+      ],
+      "source": "6: explicit schon/erst"
+    }
+  ],
+  "ab-a11:68": [
+    {
+      "ids": [
+        "l9-10a-1",
+        "l9-10a-2",
+        "l9-10a-3"
+      ],
+      "options": [
+        "Hauptgerichte",
+        "Desserts",
+        "Vorspeisen",
+        "Getränke"
+      ],
+      "source": "10a: exact printed menu-heading bank"
+    }
+  ],
+  "ab-a11:70": [
+    {
+      "ids": [
+        "t1-a",
+        "t1-b1",
+        "t1-b2",
+        "t1-b3",
+        "t1-c",
+        "t1-d",
+        "t1-e",
+        "t1-f"
+      ],
+      "options": [
+        "Ei",
+        "Orangen",
+        "Suppe",
+        "Braten",
+        "Kuchen",
+        "Tee",
+        "Äpfel",
+        "Zitronen",
+        "Sahne"
+      ],
+      "source": "1: exact printed food bank"
+    }
+  ],
+  "ab-a11:72": [
+    {
+      "ids": [
+        "u2-a1",
+        "u2-a2",
+        "u2-b1",
+        "u2-b2",
+        "u2-b3",
+        "u2-b4",
+        "u2-b5",
+        "u2-c1",
+        "u2-c2",
+        "u2-c3"
+      ],
+      "options": [
+        "Mittag",
+        "halb sieben",
+        "Vormittag",
+        "immer",
+        "Nacht",
+        "Viertel vor sieben",
+        "oft",
+        "Abend",
+        "Viertel nach sieben",
+        "Nachmittag",
+        "manchmal"
+      ],
+      "source": "2: exact printed sequence bank"
+    }
+  ],
+  "ab-a11:73": [
+    {
+      "ids": [
+        "u4-a2",
+        "u4-b1",
+        "u4-b2"
+      ],
+      "options": [
+        "möchte",
+        "magst",
+        "Möchtest"
+      ],
+      "source": "4: exact printed word-form bank"
+    }
+  ],
+  "ab-a11:80": [
+    {
+      "ids": [
+        "u8-b",
+        "u8-c",
+        "u8-d",
+        "u8-e",
+        "u8-f"
+      ],
+      "options": [
+        "das Flugzeug",
+        "das Taxi",
+        "die Straßenbahn",
+        "der Zug",
+        "die U-Bahn",
+        "der Bus"
+      ],
+      "source": "8: printed transport bank with the requested articles; translations remain text"
+    },
+    {
+      "ids": [
+        "u9-q1",
+        "u9-q2",
+        "u9-q3"
+      ],
+      "options": [
+        "Wann kommst du?",
+        "Holst du mich ab?",
+        "Nimmst du den Zug?",
+        "Hast du Zeit?"
+      ],
+      "source": "9: exact printed question bank"
+    }
+  ],
+  "ab-a11:82": [
+    {
+      "ids": [
+        "u2-a",
+        "u2-b",
+        "u2-c1",
+        "u2-c2",
+        "u2-d1",
+        "u2-d2"
+      ],
+      "options": [
+        "Gleis",
+        "Koffer",
+        "U-Bahn",
+        "Gepäck",
+        "Taxi",
+        "Halt",
+        "Zug"
+      ],
+      "source": "2: exact printed transport bank"
+    },
+    {
+      "ids": [
+        "u4-l1",
+        "u4-l2",
+        "u4-l3",
+        "u4-l4",
+        "u4-r1",
+        "u4-r2",
+        "u4-r3",
+        "u4-r4"
+      ],
+      "options": [
+        "Nehmt ihr ein Taxi?",
+        "Wo fährt der Zug nach Köln ab?",
+        "Ich habe leider keine Zeit.",
+        "Am Rathausplatz.",
+        "Um 09:45 Uhr.",
+        "Nein, die U-Bahn.",
+        "Auf Gleis 15.",
+        "Holst du mich ab?",
+        "Wann kommt der Zug an?",
+        "Wo steigst du um?"
+      ],
+      "source": "4: choose unchanged full printed dialogue lines"
+    }
+  ],
+  "ab-a11:84": [
+    {
+      "ids": [
+        "u1-1",
+        "u1-2",
+        "u1-3",
+        "u1-4",
+        "u1-5"
+      ],
+      "options": [
+        "um",
+        "am",
+        "von",
+        "bis",
+        "ab"
+      ],
+      "source": "1: explicit um/am/von...bis/ab"
+    }
+  ],
+  "ab-a11:85": [
+    {
+      "ids": [
+        "u5-b2",
+        "u5-c2",
+        "u5-d2",
+        "u5-e2",
+        "u5-f2",
+        "u5-g2"
+      ],
+      "options": [
+        "gelernt",
+        "eingeladen",
+        "gebacken",
+        "geschlafen",
+        "gekauft",
+        "gelesen",
+        "gegessen"
+      ],
+      "source": "5: printed participle bank; haben conjugation remains writing"
+    }
+  ],
+  "ab-a11:90": [
+    {
+      "ids": [
+        "u1-f2",
+        "u1-f3",
+        "u1-f4"
+      ],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "source": "1a: four season pictures"
+    }
+  ],
+  "ab-a11:92": [
+    {
+      "ids": [
+        "ab11-p92-u7-a",
+        "ab11-p92-u7-b",
+        "ab11-p92-u7-c",
+        "ab11-p92-u7-d1",
+        "ab11-p92-u7-d2"
+      ],
+      "options": [
+        "war",
+        "hatte"
+      ],
+      "source": "7: explicit war/hatte"
+    }
+  ],
+  "ab-a12:8": [
+    {
+      "ids": [
+        "8-8a",
+        "8-8b",
+        "8-8c",
+        "8-8d",
+        "8-8e1",
+        "8-8e2"
+      ],
+      "options": [
+        "ist sehr nett",
+        "sehen Sie schon",
+        "bin fremd hier",
+        "Wenden Sie hier",
+        "Trotzdem: Dankeschön",
+        "bin nicht von hier",
+        "ist ganz in der Nähe"
+      ],
+      "source": "8: exact printed reply bank"
+    }
+  ],
+  "ab-a12:9": [
+    {
+      "ids": [
+        "9-3a1",
+        "9-3a2",
+        "9-3a3",
+        "9-3a4",
+        "9-3b1",
+        "9-3b2",
+        "9-3b3",
+        "9-3c1",
+        "9-3c2",
+        "9-3c3",
+        "9-3c4",
+        "9-3d1",
+        "9-3d2",
+        "9-3d3",
+        "9-3d4",
+        "9-3d5",
+        "9-3d6"
+      ],
+      "options": [
+        "au",
+        "ei",
+        "eu"
+      ],
+      "source": "Aussprache 3: explicit au/ei/eu"
+    },
+    {
+      "ids": [
+        "9-2a",
+        "9-2b",
+        "9-2c"
+      ],
+      "options": [
+        "au",
+        "ei",
+        "eu"
+      ],
+      "source": "Aussprache 2: explicit spelling choices"
+    }
+  ],
+  "ab-a12:10": [
+    {
+      "ids": [
+        "10-1b",
+        "10-1c",
+        "10-1d",
+        "10-1e",
+        "10-1f"
+      ],
+      "options": [
+        "Stadtplan",
+        "Post",
+        "Bahnhof",
+        "Stadtmitte",
+        "Hotel",
+        "Bank"
+      ],
+      "source": "1: exact printed place bank"
+    }
+  ],
+  "ab-a12:12": [
+    {
+      "ids": [
+        "12-1a",
+        "12-1b",
+        "12-1c",
+        "12-1d",
+        "12-1e",
+        "12-1f"
+      ],
+      "options": [
+        "Haus",
+        "Garten",
+        "Garage",
+        "Treppe",
+        "Baum",
+        "Fenster",
+        "Balkon"
+      ],
+      "source": "1: printed house-picture bank"
+    }
+  ],
+  "ab-a12:16": [
+    {
+      "ids": [
+        "16-1b",
+        "16-1c",
+        "16-1d",
+        "16-1e",
+        "16-1f",
+        "16-1g"
+      ],
+      "options": [
+        "Schlafzimmer",
+        "Wohnung",
+        "Toilette",
+        "Kinderzimmer",
+        "Garten",
+        "Erdgeschoss",
+        "Wohnzimmer"
+      ],
+      "source": "1: printed word-search words assigned unchanged"
+    },
+    {
+      "ids": [
+        "16-4a",
+        "16-4b",
+        "16-4c",
+        "16-4d",
+        "16-4e",
+        "16-4f"
+      ],
+      "options": [
+        "es ist sehr schön hier",
+        "mag ich gar nicht",
+        "die Idee ist cool",
+        "sieht wirklich toll aus",
+        "sie sind hässlich",
+        "das ist langweilig"
+      ],
+      "source": "4: exact six expressions in printed image bank"
+    }
+  ],
+  "ab-a12:18": [
+    {
+      "ids": [
+        "p18-nKirche",
+        "p18-nSpielplatz",
+        "p18-nWald",
+        "p18-nMeer",
+        "p18-nCafé",
+        "p18-nHafen"
+      ],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "source": "1a: seven numbered place pictures"
+    }
+  ],
+  "ab-a12:24": [
+    {
+      "ids": [
+        "p24-2-couch",
+        "p24-2-toilette",
+        "p24-2-computer",
+        "p24-2-kuehlschrank",
+        "p24-2-auto",
+        "p24-2-bett"
+      ],
+      "options": [
+        "Garage",
+        "Arbeitszimmer",
+        "Bad",
+        "Schlafzimmer",
+        "Garten",
+        "Wohnzimmer",
+        "Küche"
+      ],
+      "source": "2: printed room bank for matching objects"
+    },
+    {
+      "ids": [
+        "p24-4a",
+        "p24-4b",
+        "p24-4c",
+        "p24-4d",
+        "p24-4e",
+        "p24-4f",
+        "p24-4g"
+      ],
+      "options": [
+        "Urlaub",
+        "Wetter",
+        "Meer",
+        "Dom",
+        "Wochen",
+        "Hause",
+        "Bergen"
+      ],
+      "source": "4: exact printed chat bank"
+    }
+  ],
+  "ab-a12:51": [
+    {
+      "ids": [
+        "p51-o0",
+        "p51-o1",
+        "p51-o2",
+        "p51-o3",
+        "p51-o4",
+        "p51-o6"
+      ],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "source": "1: order seven instructions"
+    }
+  ],
+  "ab-a12:85": [
+    {
+      "ids": [
+        "85-6-1",
+        "85-6-2",
+        "85-6-3",
+        "85-6-4"
+      ],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "source": "6: numbered weather forecasts matched to cities"
+    },
+    {
+      "ids": [
+        "85-8-a",
+        "85-8-b",
+        "85-8-c"
+      ],
+      "options": [
+        "arbeitslos",
+        "wolkenlos",
+        "farblos"
+      ],
+      "source": "8: exact printed adjective bank"
+    }
+  ],
+  "ab-a12:91": [
+    {
+      "ids": [
+        "91-6a-ostern",
+        "91-6a-weihnachten",
+        "91-6a-silvester"
+      ],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "source": "6a: event recordings matched to holidays"
+    },
+    {
+      "ids": [
+        "91-4a",
+        "91-4b1",
+        "91-4b2",
+        "91-4b3",
+        "91-4c1",
+        "91-4c2",
+        "91-4c3",
+        "91-4d",
+        "91-4e",
+        "91-4f1",
+        "91-4f2"
+      ],
+      "options": [
+        "ab",
+        "am",
+        "bis",
+        "für",
+        "nach",
+        "im",
+        "in",
+        "um",
+        "vom",
+        "von"
+      ],
+      "source": "4: exact printed preposition bank"
+    }
+  ],
+  "ab-a12:20": [
+    {
+      "ids": [
+        "p20-11a",
+        "p20-11b",
+        "p20-11c",
+        "p20-11d"
+      ],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "source": "11: match the six numbered advertisements 1-6"
+    }
+  ],
+  "ab-a12:21": [
+    {
+      "ids": [
+        "p21-g1",
+        "p21-g2",
+        "p21-g3",
+        "p21-g4",
+        "p21-g5",
+        "p21-g6",
+        "p21-g7",
+        "p21-g8",
+        "p21-g9"
+      ],
+      "options": [
+        "i",
+        "ih",
+        "ie"
+      ],
+      "source": "Aussprache 3: explicit i/ih/ie"
+    }
+  ],
+  "ab-a12:22": [
+    {
+      "ids": [
+        "p22-3a",
+        "p22-3b",
+        "p22-3c",
+        "p22-3d",
+        "p22-3e"
+      ],
+      "options": [
+        "Hier gibt es viele",
+        "das ist nicht so toll",
+        "gefällt mir gut",
+        "Hier ist",
+        "das ist schon okay"
+      ],
+      "source": "3: exact printed email bank"
+    }
+  ],
+  "ab-a12:30": [
+    {
+      "ids": [
+        "p30-2d",
+        "p30-2g",
+        "p30-2j",
+        "p30-2b",
+        "p30-2e",
+        "p30-2h",
+        "p30-2k",
+        "p30-2c",
+        "p30-2f",
+        "p30-2i",
+        "p30-2l"
+      ],
+      "options": [
+        "der Föhn",
+        "die Internetverbindung",
+        "der Fernseher",
+        "die Dusche",
+        "die Klimaanlage",
+        "der Aufzug",
+        "die Minibar",
+        "das Schwimmbad",
+        "das Restaurant",
+        "das Radio",
+        "der Tennisplatz",
+        "das Telefon"
+      ],
+      "source": "2: printed hotel-picture nouns with the requested articles"
+    }
+  ],
+  "ab-a12:31": [
+    {
+      "ids": [
+        "p31-8b",
+        "p31-8c",
+        "p31-8d",
+        "p31-8e",
+        "p31-8f",
+        "p31-8g",
+        "p31-8h",
+        "p31-8i"
+      ],
+      "options": [
+        "am",
+        "um",
+        "nach",
+        "vor",
+        "von",
+        "bis"
+      ],
+      "source": "8: exact preposition bank with von...bis in separate blanks"
+    }
+  ],
+  "ab-a12:32": [
+    {
+      "ids": [
+        "p32-10-0",
+        "p32-10-1",
+        "p32-10-2",
+        "p32-10-4",
+        "p32-10-5"
+      ],
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "source": "10: match six printed sentence beginnings/endings"
+    }
+  ],
+  "ab-a12:33": [
+    {
+      "ids": [
+        "p33-a2_1",
+        "p33-a2_2",
+        "p33-a2_3",
+        "p33-a2_4",
+        "p33-a2_5",
+        "p33-a2_6",
+        "p33-a2_7",
+        "p33-a2_8",
+        "p33-a2_9",
+        "p33-a2_10",
+        "p33-a2_11",
+        "p33-a2_12"
+      ],
+      "options": [
+        "o",
+        "u"
+      ],
+      "source": "Aussprache 2: explicit o/u"
+    }
+  ],
+  "ab-a12:34": [
+    {
+      "ids": [
+        "p34-3b",
+        "p34-3c",
+        "p34-3d",
+        "p34-3e"
+      ],
+      "options": [
+        "für",
+        "vor",
+        "nach",
+        "in"
+      ],
+      "source": "3: explicit preposition choices"
+    },
+    {
+      "ids": [
+        "p34-5-1",
+        "p34-5-2",
+        "p34-5-3",
+        "p34-5-4",
+        "p34-5-5"
+      ],
+      "options": [
+        "Das ist",
+        "Was kann",
+        "Es gibt",
+        "Ich kümmere",
+        "Das tut"
+      ],
+      "source": "5: exact printed dialogue bank"
+    }
+  ],
+  "ab-a12:36": [
+    {
+      "ids": [
+        "p36-2b0",
+        "p36-2b1",
+        "p36-2c2",
+        "p36-2d3"
+      ],
+      "options": [
+        "Ausbildung",
+        "Studienplatz",
+        "Prüfung",
+        "Sprachenschule",
+        "Anzeige"
+      ],
+      "source": "2: exact printed noun bank"
+    },
+    {
+      "ids": [
+        "p36-50",
+        "p36-51",
+        "p36-52",
+        "p36-53",
+        "p36-54"
+      ],
+      "options": [
+        "e",
+        "i"
+      ],
+      "source": "5: explicit e/i spelling choice"
+    },
+    {
+      "ids": [
+        "p36-3b",
+        "p36-3c",
+        "p36-3d",
+        "p36-3e"
+      ],
+      "options": [
+        "mit",
+        "ohne"
+      ],
+      "source": "3: explicit mit/ohne"
+    }
+  ],
+  "ab-a12:69": [
+    {
+      "ids": [
+        "p69-a1a1",
+        "p69-a1a2",
+        "p69-a1a3",
+        "p69-a1a4",
+        "p69-a1b1",
+        "p69-a1b2",
+        "p69-a1b3",
+        "p69-a1b4"
+      ],
+      "options": [
+        "ä",
+        "e"
+      ],
+      "source": "Aussprache 1: explicit ä/e choice"
+    }
+  ],
+  "ab-a12:40": [
+    {
+      "ids": [
+        "p40-1b",
+        "p40-1c",
+        "p40-1d",
+        "p40-1e",
+        "p40-1f",
+        "p40-1g"
+      ],
+      "options": [
+        "Geld",
+        "Führerschein",
+        "Wunsch",
+        "Fremdsprachen",
+        "Sängerin",
+        "Prüfungen",
+        "Welt"
+      ],
+      "source": "1: exact printed noun bank"
+    },
+    {
+      "ids": [
+        "p40-4a",
+        "p40-4b",
+        "p40-4c",
+        "p40-4d",
+        "p40-4e"
+      ],
+      "options": [
+        "auf keinen Fall",
+        "vielleicht",
+        "unbedingt"
+      ],
+      "source": "4: explicit three-expression bank"
+    }
+  ],
+  "ab-a12:42": [
+    {
+      "ids": [
+        "p42-1-1",
+        "p42-1-2",
+        "p42-1-3",
+        "p42-1-4",
+        "p42-1-5",
+        "p42-1-6",
+        "p42-1-7"
+      ],
+      "options": [
+        "Arme",
+        "bleibe",
+        "Fieber",
+        "hoch",
+        "huste",
+        "schmerzen",
+        "krank",
+        "weh"
+      ],
+      "source": "1: exact printed dialogue bank"
+    },
+    {
+      "ids": [
+        "p42-4a-Aussage",
+        "p42-4a-Frage",
+        "p42-4a-Imperativ"
+      ],
+      "options": [
+        "Holst du das Rezept in der Praxis ab?",
+        "Ich hole das Rezept in der Praxis ab.",
+        "Holen Sie das Rezept bitte in der Praxis ab!"
+      ],
+      "source": "4a: exact printed sentence-classification bank"
+    }
+  ],
+  "ab-a12:44": [
+    {
+      "ids": [
+        "p44-11-1",
+        "p44-11-2",
+        "p44-11-3",
+        "p44-11-4",
+        "p44-11-5",
+        "p44-11-6"
+      ],
+      "options": [
+        "hilft",
+        "viel Sport",
+        "schaffe ich nicht",
+        "einen Kräutertee",
+        "gegen Stress",
+        "einen Tipp"
+      ],
+      "source": "11: exact printed dialogue bank"
+    }
+  ],
+  "ab-a12:45": [
+    {
+      "ids": [
+        "p45-3a",
+        "p45-3b",
+        "p45-3c",
+        "p45-3d",
+        "p45-3e",
+        "p45-3f"
+      ],
+      "options": [
+        "?",
+        "!"
+      ],
+      "source": "Aussprache 3: explicit ? / !"
+    }
+  ],
+  "ab-a12:48": [
+    {
+      "ids": [
+        "p48-4b",
+        "p48-4c",
+        "p48-4d",
+        "p48-4e",
+        "p48-4f",
+        "p48-4g"
+      ],
+      "options": [
+        "Fernseher",
+        "Aufzug",
+        "Dusche",
+        "Frühstück",
+        "Hotel",
+        "Zimmer",
+        "Klimaanlage"
+      ],
+      "source": "4: exact printed hotel bank"
+    }
+  ],
+  "ab-a12:54": [
+    {
+      "ids": [
+        "p54-1f0",
+        "p54-1f1",
+        "p54-1h0",
+        "p54-1f2",
+        "p54-1h1",
+        "p54-1f3",
+        "p54-1h2",
+        "p54-1f4",
+        "p54-1h3"
+      ],
+      "options": [
+        "hatte",
+        "hat",
+        "hatten",
+        "war",
+        "ist",
+        "haben",
+        "waren"
+      ],
+      "source": "1: exact printed verb-form bank"
+    }
+  ],
+  "ab-a12:57": [
+    {
+      "ids": [
+        "p57-2-tren1",
+        "p57-2-nicht1",
+        "p57-2-tren2",
+        "p57-2-nicht2",
+        "p57-2-tren3",
+        "p57-2-nicht3",
+        "p57-2-tren4",
+        "p57-2-nicht4"
+      ],
+      "options": [
+        "aussehen",
+        "bekommen",
+        "entschuldigen",
+        "gefallen",
+        "erkennen",
+        "mitnehmen",
+        "anmelden",
+        "absagen",
+        "vergessen",
+        "einkaufen"
+      ],
+      "source": "Aussprache 2: sort the exact verbs from 1"
+    }
+  ],
+  "ab-a12:63": [
+    {
+      "ids": [
+        "p63-L1b",
+        "p63-L1c"
+      ],
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "source": "1: assign six labeled pictures; some are distractors"
+    }
+  ],
+  "ab-a12:64": [
+    {
+      "ids": [
+        "p64-1-Waesche",
+        "p64-1-Geschirr",
+        "p64-1-Muell",
+        "p64-1-Bett",
+        "p64-1-Boden",
+        "p64-1-Tisch"
+      ],
+      "options": [
+        "ausräumen",
+        "wischen",
+        "decken",
+        "rausbringen",
+        "abtrocknen",
+        "aufhängen",
+        "machen"
+      ],
+      "source": "1: exact printed household verb bank"
+    }
+  ],
+  "ab-a12:66": [
+    {
+      "ids": [
+        "p66-1b",
+        "p66-1c",
+        "p66-1d"
+      ],
+      "options": [
+        "einen Helm tragen",
+        "Hunde nicht mitkommen",
+        "stehen bleiben",
+        "zu Fuß gehen"
+      ],
+      "source": "1: exact printed rule-expression bank"
+    }
+  ],
+  "ab-a12:68": [
+    {
+      "ids": [
+        "p68-9a",
+        "p68-9b",
+        "p68-9c"
+      ],
+      "options": [
+        "Das ist doch gefährlich, oder?",
+        "Das verstehe ich nicht.",
+        "Das weiß ich nicht.",
+        "Ich finde das in Ordnung."
+      ],
+      "source": "9: exact printed reply bank"
+    }
+  ],
+  "ab-a12:70": [
+    {
+      "ids": [
+        "p70-4a",
+        "p70-4b",
+        "p70-4c",
+        "p70-4d"
+      ],
+      "options": [
+        "Diese Regel ist in Ordnung.",
+        "Das finde ich gar nicht gut.",
+        "Das ist falsch.",
+        "Das ist ja wirklich sehr gefährlich, oder?"
+      ],
+      "source": "4: exact printed opinion bank"
+    }
+  ],
+  "ab-a12:72": [
+    {
+      "ids": [
+        "p72-3_0",
+        "p72-3_1",
+        "p72-3_2",
+        "p72-3_3",
+        "p72-3_4",
+        "p72-3_5"
+      ],
+      "options": [
+        "dürfen",
+        "schiebt",
+        "Fahrradfahrer",
+        "stehen bleiben",
+        "Regeln",
+        "trägt",
+        "achten"
+      ],
+      "source": "3: exact printed Ampelmann bank"
+    }
+  ],
+  "ab-a12:81": [
+    {
+      "ids": [
+        "p81-1a0",
+        "p81-1a1",
+        "p81-1a2",
+        "p81-1a3",
+        "p81-1a4",
+        "p81-1a5",
+        "p81-1a6"
+      ],
+      "options": [
+        "morgen",
+        "nach",
+        "Nachmittag",
+        "bis",
+        "ohne",
+        "nie",
+        "keine",
+        "manchmal"
+      ],
+      "source": "1a: exact printed opposite-word bank"
+    }
+  ],
+  "ab-a12:82": [
+    {
+      "ids": [
+        "p82-4a",
+        "p82-4b",
+        "p82-4c",
+        "p82-4d",
+        "p82-4e",
+        "p82-4f"
+      ],
+      "options": [
+        "wie langweilig",
+        "wahnsinnig teuer",
+        "total schön",
+        "am besten",
+        "fast täglich",
+        "viel praktischer"
+      ],
+      "source": "4: exact printed expression bank"
+    }
+  ],
+  "ab-a12:84": [
+    {
+      "ids": [
+        "84-1-a1",
+        "84-1-a2",
+        "84-1-a3",
+        "84-1-b1",
+        "84-1-b2",
+        "84-1-c1",
+        "84-1-c2"
+      ],
+      "options": [
+        "Die Sonne scheint.",
+        "Es wird bald sehr windig.",
+        "Es ist bewölkt.",
+        "Es ist kühl.",
+        "Es ist schön warm.",
+        "Es regnet schon lange.",
+        "Es wird kälter.",
+        "Man sieht nicht viele Wolken.",
+        "Es gibt bald ein Gewitter."
+      ],
+      "source": "1: exact printed weather-sentence bank"
+    }
+  ],
+  "ab-a12:86": [
+    {
+      "ids": [
+        "86-9-b",
+        "86-9-c",
+        "86-9-d"
+      ],
+      "options": [
+        "er hat gestern lange gefeiert",
+        "es schneit zu viel",
+        "ihr Fahrrad ist kaputt",
+        "sie fahren morgen in den Urlaub"
+      ],
+      "source": "9: exact printed reason bank"
+    }
+  ],
+  "ab-a12:88": [
+    {
+      "ids": [
+        "88-1a",
+        "88-1b1",
+        "88-1b2",
+        "88-1c1",
+        "88-1c2",
+        "88-1d",
+        "88-1e1",
+        "88-1e2"
+      ],
+      "options": [
+        "Wolken",
+        "scheint",
+        "Sturm",
+        "neblig",
+        "Grad",
+        "Gewitter",
+        "regnet",
+        "Himmel",
+        "warm"
+      ],
+      "source": "1: exact printed weather-word bank"
+    },
+    {
+      "ids": [
+        "88-4a",
+        "88-4b",
+        "88-4c",
+        "88-4d",
+        "88-4e",
+        "88-4f"
+      ],
+      "options": [
+        "ich arbeite am Wochenende",
+        "der Schnee ist traumhaft",
+        "ich backe gern",
+        "deine Partys sind immer lustig",
+        "ich schreibe am Montag eine Prüfung",
+        "ich habe Geburtstag"
+      ],
+      "source": "4: exact printed reason bank"
+    }
+  ],
+  "ab-a12:90": [
+    {
+      "ids": [
+        "90-1b",
+        "90-1c",
+        "90-1d",
+        "90-1e",
+        "90-1f",
+        "90-1g",
+        "90-1h",
+        "90-1j"
+      ],
+      "options": [
+        "Bescheid",
+        "Fluss",
+        "geben",
+        "Getränke",
+        "grillen",
+        "vergessen",
+        "Wald",
+        "Wetter",
+        "wunderbar",
+        "zufrieden"
+      ],
+      "source": "1: exact printed invitation bank"
+    }
+  ],
+  "ab-a12:93": [
+    {
+      "ids": [
+        "p93-s1a",
+        "p93-s1b",
+        "p93-s1c"
+      ],
+      "options": [
+        "Viele Grüße",
+        "Liebe Studentinnen und Studenten",
+        "Bielefeld, 15 Juni 20.."
+      ],
+      "source": "1: exact printed invitation-parts bank"
+    }
+  ],
+  "ab-a12:97": [
+    {
+      "ids": [
+        "97-2b",
+        "97-2c",
+        "97-2d",
+        "97-2e",
+        "97-2f1",
+        "97-2f2"
+      ],
+      "options": [
+        "Geburtstag",
+        "Treffen",
+        "Reise",
+        "Feiertag",
+        "Termine",
+        "Zahnarzttermin",
+        "Maiwoche"
+      ],
+      "source": "2: exact printed calendar bank"
+    }
+  ]
+}

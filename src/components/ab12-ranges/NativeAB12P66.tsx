@@ -1,3 +1,4 @@
+import {ChoiceInput} from '../../exercises/ChoiceInput';
 import {AB12Canvas,AB12Helpers} from '../ab12-shared';
 import './native-ab12-p66.css';
 
@@ -54,7 +55,7 @@ function P66(h:AB12Helpers){const {line:ln,runs:rn,wl,art,field,rule,dot,check,t
   {field('p66-1c',327,295,259,'1 c')}
   {field('p66-1d',344,345,230,'1 d')}
   {([['p66-3b','b',138,739,587,15],['p66-3c','c',137,787,585,14],['p66-3d','d',137,835,585,15],['p66-3e','e',137,884,585,15],['p66-3f','f',136,933,587,15],['p66-3g','g',136,982,587,14]] as const).map(([id,lbl,x,y,w,hh])=>
-    <input key={id} className='naField naFieldBlank naP66S' aria-label={'Satz '+lbl} data-native-field={id} style={{left:x,top:y,width:w,['--h' as any]:hh+'px'}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>
+    <ChoiceInput key={id} className='naField naFieldBlank naP66S' aria-label={'Satz '+lbl} data-native-field={id} style={{left:x,top:y,width:w,['--h' as any]:hh+'px'}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>
   )}
   {wl(752,15,[{x:731,w:5,t:'.'}])}
   {wl(801,15,[{x:730,w:7,t:'?'}])}
