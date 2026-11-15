@@ -133,3 +133,22 @@
 .mP36Choice{position:absolute;font:16px/21px KbDroid,Georgia,serif;white-space:nowrap}.mP36Choice button{font:inherit!important;border:0!important;background:transparent!important;color:inherit;margin:0!important;padding:0!important;min-height:0!important}.mP36Choice button.marked{background:#fff900!important}
 .mP36Grid{position:absolute;left:203px;top:883px;width:698px;height:292px;background:linear-gradient(90deg,#fffbd6 0 35px,transparent 35px),repeating-linear-gradient(transparent 0 71px,#e9e5dc 72px,transparent 73px);border-top:1px dotted #e9e5dc;border-bottom:1px dotted #e9e5dc}
 .nativeAB11Lessons45[data-native-ab11-page='36'] .mCanvas [data-native-field^='u1-']:not([data-native-field^='u1-picture-'])::placeholder{letter-spacing:3px;color:#747b70;opacity:1}
+/* Page 37: source-scale grammar, drawing and line matching. */
+.nativeAB11.nativeAB11Lessons45[data-native-ab11-page='37'] .mCanvas{width:901px;height:1275px}
+.nativeAB11Lessons45[data-native-ab11-page='37'] .mCanvas .mText{font:16px/21px KbDroid,Georgia,serif;transform:scaleX(.96);transform-origin:left top}
+.nativeAB11Lessons45[data-native-ab11-page='37'] .mCanvas .mHeader{font:27px/33px KbDroid,Georgia,serif;letter-spacing:0}
+.nativeAB11Lessons45[data-native-ab11-page='37'] .mCanvas .mTitle{font:700 18px/22px ABScanSans,Arial,sans-serif;transform:translateY(-3px) scaleX(.965)}
+.nativeAB11Lessons45[data-native-ab11-page='37'] .mCanvas .mKB{font:10px/14px ABScanSans,Arial,sans-serif;color:#299ac2}
+.nativeAB11Lessons45[data-native-ab11-page='37'] .mCanvas .mBank{font:15px/20px ABScanSans,Arial,sans-serif;color:#203e87;background:#fffdd4;width:max-content!important}
+.nativeAB11Lessons45[data-native-ab11-page='37'] .mCanvas .mP37Rail{font:700 9px/12px ABScanSans,Arial,sans-serif;writing-mode:vertical-rl;transform:rotate(180deg);transform-origin:center center;color:#203e87;letter-spacing:1px}
+.nativeAB11Lessons45[data-native-ab11-page='37'] .mCanvas .mField{border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;font:14px/20px KbDroid,Georgia,serif!important;height:20px!important}
+.nativeAB11Lessons45[data-native-ab11-page='37'] .mFooter{display:none}
+.mP37Rule{position:absolute;left:341px;top:147px;width:496px;height:1px;background:#65bf24}.mP37Tab{position:absolute;left:857px;top:85px;width:44px;height:64px;background:#65bf24;color:white;font:72px/65px 'Times New Roman',serif;text-align:right}
+.mP37Number{position:absolute;left:137px;min-width:26px;height:18px;font:700 17px/18px Georgia,serif;background:#53c33b;border-top:1px solid #dc321e;border-left:1px solid #dc321e;text-align:center;color:white}
+.mP37Art{position:absolute;overflow:hidden}.mP37Art .mP37Sprite{position:absolute!important;max-width:none!important;max-height:none!important;object-fit:fill!important;margin:0!important}
+.mP37Radio,.mP37PrintedRadio{position:absolute;appearance:none;border:1px solid #d9d4ad!important;border-radius:50%!important;width:15px!important;height:15px!important;min-width:0!important;min-height:0!important;margin:0!important;padding:0!important;background:transparent!important}.mP37Radio:checked:after{content:'×';position:absolute;left:0;top:-4px;color:#2458a6;font:22px/18px ABScanSans,Arial,sans-serif}
+.mP37Table{position:absolute;left:175px;top:794px;display:grid;grid-template-columns:248px 176px 270px;grid-auto-rows:24px;font:14px/23px KbDroid,Georgia,serif}.mP37Table>b{background:#fffbd8;padding-left:6px;font-weight:bold;white-space:nowrap}.mP37Table>span{display:contents}.mP37Table>span>div{position:relative;border-bottom:1px dotted #e6e4da;border-right:1px dotted #e6e4da;padding-left:6px;white-space:nowrap}.mP37Table>span>div>span{position:absolute;left:6px;top:0}.mP37Table .mField{position:absolute}.mP37Table>span>div:nth-child(3) .mField{border:0!important}
+.nativeAB11Lessons45[data-native-ab11-page='37'] .sharedMatchItem{font-family:KbDroid,Georgia,serif!important}.nativeAB11Lessons45[data-native-ab11-page='37'] .sharedMatchLines path{stroke-width:1.3}
+.nativeAB11Lessons45[data-native-ab11-page='37'] .mDrawing{border:1px dotted #e3e4de;background:transparent;touch-action:none}
+.nativeAB11Lessons45[data-native-ab11-page='37'] .mCanvas .mTitle[style*='510px']{transform:translateY(-3px) scaleX(.855)}
+.nativeAB11Lessons45[data-native-ab11-page='37'] .mCanvas .mP37Table [data-native-field^='eigene-']{border-bottom:0!important}
