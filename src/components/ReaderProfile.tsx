@@ -99,13 +99,13 @@ export function ReaderProfile() {
             <span className="profileVoiceSwitch" data-on={voicesOn} aria-hidden="true"><span /></span>
           </button>
           <div className="profileSection">{t('Language')}</div>
-          {(['ar', 'en'] as const).map(code => <button key={code} type="button" className="profileRow profileChoice profileLanguageChoice" lang={code} aria-pressed={language === code} onClick={() => setLanguage(code)}>
-            <span>{code === 'ar' ? 'العربية' : 'English'}</span>
+          {(['ar', 'en', 'de'] as const).map(code => <button key={code} type="button" className="profileRow profileChoice profileLanguageChoice" lang={code} aria-pressed={language === code} onClick={() => setLanguage(code)}>
+            <span>{code === 'ar' ? 'العربية' : code === 'de' ? 'Deutsch' : 'English'}</span>
             <span className="profileLanguageCheck" aria-hidden="true">{language === code ? '✓' : ''}</span>
           </button>)}
           <div className="profileSection">{t('Translation language')}</div>
-          {(['auto','ar','en'] as const).map(code => <button key={code} type="button" className="profileRow profileChoice profileTranslationChoice" aria-pressed={choice === code} onClick={() => setTranslationLanguage(code)}>
-            <span>{t(code === 'auto' ? 'Follow interface language' : code === 'ar' ? 'Arabic' : 'English')}</span>
+          {(['auto','ar','en','de'] as const).map(code => <button key={code} type="button" className="profileRow profileChoice profileTranslationChoice" aria-pressed={choice === code} onClick={() => setTranslationLanguage(code)}>
+            <span>{t(code === 'auto' ? 'Follow interface language' : code === 'ar' ? 'Arabic' : code === 'de' ? 'German' : 'English')}</span>
             <span className="profileLanguageCheck" aria-hidden="true">{choice === code ? '✓' : ''}</span>
           </button>)}
         </div>
@@ -130,7 +130,7 @@ function SignedInBlock({name, email, avatar, onSignOut}: {name: string; email: s
         </span>
       </div>
       <button type="button" className="authBtn authBtnGhost" onClick={onSignOut}>
-        تسجيل الخروج
+        {t('Sign out')}
       </button>
     </>
   );
