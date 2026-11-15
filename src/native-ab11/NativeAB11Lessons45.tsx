@@ -161,16 +161,24 @@ export function NativeAB11Lessons45({page}:{page:string}){
  {t(186,1057,18,' ')}{f('t6-f',207,1050,233)}{t(445,1048,138,'(f), aber das ist')}{f('t6-g',558,1048,94)}{t(658,1046,70,'(g).')}{[936,980,1023].map(y=><i key={y} className="mP34Square" style={{left:186,top:y}}/>)}{[957,1000,1064].map(y=><i key={y} className="mP34Triangle" style={{left:186,top:y}}/>)}{points('7',785,1050)}{c('t6',844,1070)}
  {art('score',435,1089,422,135)}{art('footer',49,1217,234,26)}
  </>})()}
- {page==='35'&&<>
- {head('LERNWORTSCHATZ')}<div className="nabModule">4</div>{art('strip',791,179,110,1011)}{title('1',207,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','',132,655)}
- {txt(168,251,260,'Möbel','mTitle')}{txt(483,251,275,'Geld','mTitle')}
- {['Möbel (Pl.)','Bett das, -en','Bild das, -er','Lampe die, -n','Schrank der, ¨e','  A: Kasten der, ¨','Sessel der, -','  A/CH: Fauteuil der, -s','Sofa das, -s /\n  Couch die, -(e)s / -en','Stuhl der, ¨e','  A: auch: Sessel der, -','Teppich der, -e','Tisch der, -e'].map((s,i)=>{const y=279+i*26+(i>8?23:0);return <span key={s}>{txt(168,y,170,s)}{!s.startsWith('  ')&&f('vocab-moebel-'+i,342,y-2,122,'Übersetzung '+s)}</span>})}
- {txt(168,655,270,'Etwas beschreiben','mTitle')}{['groß','hässlich','klein','kurz','lang','leicht','modern','praktisch','(nicht) schlecht','schön','schwer','sehr (groß/\n  klein/…)','zu (groß/klein/…)'].map((s,i)=>{const y=685+i*25+(i>11?23:0);return <span key={s}>{txt(168,y,170,s)}{f('vocab-adj-'+i,342,y-2,122,'Übersetzung '+s)}</span>})}
- {['Euro der, -s','100 Euro','Cent der, -s','Preis der, -e','Angebot das, -e','Sonderangebot','kosten','machen','  das macht …','günstig/billig','teuer'].map((s,i)=>{const y=279+i*26+(i>5?12:0)+(i>8?12:0);return <span key={s}>{txt(483,y,140,s)}{f('vocab-geld-'+i,628,y-2,135,'Übersetzung '+s)}</span>})}
- {txt(483,626,280,'Weitere wichtige Wörter','mTitle')}{['Hilfe die, -n','Zimmer das, -','brauchen','finden','sagen','nur','wirklich'].map((s,i)=><span key={s}>{txt(483,656+i*26,140,s)}{f('vocab-weiter-'+i,628,654+i*26,135,'Übersetzung '+s)}</span>)}
- {txt(499,866,260,'Notieren Sie Nomen immer mit\ndem Artikel und mit Farbe.','mSmall mTip')}{txt(495,949,130,'● der Tisch','mExample')}{txt(638,975,130,'● die Lampe','mExample')}{txt(545,1013,130,'● das Sofa','mExample')}
- {title('2',1080,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','',132,642)}{open('eigene-woerter',168,1118,595,190,'2 weiterer eigener Wortschatz')}
- </>}
+ {page==='35'&&(()=>{
+ const t=(x:number,y:number,w:number,s:string,c='')=><div className={'mText '+c} style={{left:x,top:y,width:w}}><Words s={s}/></div>;
+ const f=(id:string,x:number,y:number,w:number,label:string)=><ChoiceInput className="mField" data-native-field={id} aria-label={label} style={{left:x,top:y,width:w}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
+ const offsets:Record<string,number>={"strip":0,"tip":992,"ink":1048,"footer":1128};
+ const art=(n:string,x:number,y:number,w:number,h:number)=><div className="mP35Art" style={{left:x,top:y,width:w,height:h}}><PageImage className="mP35Sprite" alt={'Originalabbildung '+n} src="assets/native-ab11/p35-source-sprite.png" style={{left:0,top:-offsets[n],width:245,height:1152}}/></div>;
+ const title=(n:string,x:number,y:number,s:string)=><><div className="mP35Number" style={{left:x,top:y}}>{n}</div>{t(x+36,y,680,s,'mTitle')}</>;
+ const row=(id:string,x:number,y:number,text:string,fieldX:number,w:number)=> <span key={id}>{t(x,y,205,text)}{f(id,fieldX,y-3,w,'Übersetzung '+text)}</span>;
+ return <>{t(133,124,600,'LERNWORTSCHATZ','mHeader')}<div className="mP35Rule"/><div className="mP35Tab">4</div>{art('strip',797,183,104,992)}
+ {title('1',131,189,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.')}
+ {t(168,221,260,'Möbel','mBold')}{t(489,219,260,'Geld','mBold')}
+ {['Möbel (Pl.)','Bett das, -en','Bild das, -er','Lampe die, -n','Schrank der, ¨e','  A: Kasten der, ¨','Sessel der, -','  A/CH: Fauteuil der, -s','Sofa das, -s /\n  Couch die, -(e)s / -en','Stuhl der, ¨e','  A: auch: Sessel der, -','Teppich der, -e','Tisch der, -e'].map((s,i)=>{const ys=[242,263,284,305,326,349,369,392,422,466,489,508,529];return s.startsWith('  ')?t(177,ys[i],250,s.trim(),'mVariant'):row('vocab-moebel-'+i,168,ys[i],s,309,161)})}
+ {t(170,571,280,'Etwas beschreiben','mBold')}{['groß','hässlich','klein','kurz','lang','leicht','modern','praktisch','(nicht) schlecht','schön','schwer','sehr (groß/\n  klein/…)','zu (groß/klein/…)'].map((s,i)=>row('vocab-adj-'+i,170,[593,614,635,656,677,698,719,740,761,782,803,839,882][i],s,311,161))}
+ {['Euro der, -s','100 Euro','Cent der, -s','Preis der, -e','Angebot das, -e','Sonderangebot','kosten','machen','  das macht …','günstig/billig','teuer'].map((s,i)=>row('vocab-geld-'+i,s.startsWith('  ')?499:489,[241,262,283,304,325,346,379,400,421,453,475][i],s.trim(),609,158))}
+ {t(491,517,280,'Weitere wichtige Wörter','mBold')}{['Hilfe die, -n','Zimmer das, -','brauchen','finden','sagen','nur','wirklich'].map((s,i)=>row('vocab-weiter-'+i,491,[538,559,591,612,633,665,686][i],s,611,156))}
+ {art('tip',517,739,245,56)}{art('ink',525,820,195,80)}
+ {title('2',137,952,'Welche Wörter möchten Sie noch lernen? Notieren Sie.')}
+ <textarea className="mP35Own" data-native-field="eigene-woerter" aria-label="2 weiterer eigener Wortschatz" style={{left:173,top:974,width:598,height:210}} value={v['eigene-woerter']||''} onChange={e=>set('eigene-woerter',e.target.value)}/>{art('footer',716,1191,185,24)}
+ </>})()}
  {page==='36'&&<>
  <div className="mLessonBanner" style={{left:385,top:Y(91),width:460,height:74*sy}}/>{art('hero',224,91,130,74)}{txt(419,112,435,'Was ist das? - Das ist ein F.','mHeader')}
  {title('1',214,'Ergänzen Sie.','KB 2')}{art('objects',168,253,680,55)}
