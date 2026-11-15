@@ -650,3 +650,7 @@ html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='73'] .hybridField
 .hybridScores88 i{position:absolute;width:2.2cqw;height:2.2cqw;border:2px solid #236b38;border-radius:50%;transform:translate(-50%,-50%)}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='88'] .hybridCheck:nth-child(3){top:83%}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='88'] .hybridCheck:nth-child(3) output{transform:translateY(-2.8cqw)}
+
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='89'] .hybridField{font-size:1.5cqw!important;outline:0;resize:none;line-height:1.5!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='89'] .hybridField:focus{outline:1px solid #26764c}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='89'] [data-field-id='own-vocabulary']{line-height:2.3cqw!important}
