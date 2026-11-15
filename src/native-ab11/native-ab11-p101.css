@@ -1,0 +1,9 @@
+@font-face{font-family:P101Serif;src:url('/assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:P101Serif;src:url('/assets/fonts/droid-serif-700.woff2') format('woff2');font-weight:700;font-display:swap}
+.ab11p101{position:relative;width:100%;height:100%;background:white}
+.page:has(.ab11p101){padding:0!important}
+.ab11p101Canvas{position:absolute;left:50%;top:50%;width:901px;height:1275px;transform-origin:center;background:#fff;color:#242420;font-family:P101Serif,Georgia,serif}
+.ab11p101Canvas .p101Text{position:absolute;white-space:pre;line-height:1.25;margin:0;padding:0}
+.ab11p101Canvas .p101Bold{font-weight:700}
+.ab11p101Canvas .tapWord{padding:0!important;margin:0!important}
+.ab11p101Canvas .p101Art{position:absolute;max-width:none!important;max-height:none!important;object-fit:fill!important;margin:0!important}
