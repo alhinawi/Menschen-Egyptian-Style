@@ -1284,90 +1284,274 @@
   {
    "id": "u8-b",
    "group": "u8",
-   "kind": "text",
+   "kind": "select",
    "label": "b: plane",
    "answer": "das Flugzeug",
-   "x": 400,
-   "y": 494,
-   "w": 155,
-   "h": 22
+   "x": 399,
+   "y": 479,
+   "w": 154,
+   "h": 32,
+   "options": [
+    {
+     "value": "das Flugzeug",
+     "label": "das Flugzeug"
+    },
+    {
+     "value": "das Taxi",
+     "label": "das Taxi"
+    },
+    {
+     "value": "die Straßenbahn",
+     "label": "die Straßenbahn"
+    },
+    {
+     "value": "der Bus",
+     "label": "der Bus"
+    },
+    {
+     "value": "die U-Bahn",
+     "label": "die U-Bahn"
+    },
+    {
+     "value": "der Zug",
+     "label": "der Zug"
+    }
+   ]
   },
   {
    "id": "u8-c",
    "group": "u8",
-   "kind": "text",
+   "kind": "select",
    "label": "c: taxi",
    "answer": "das Taxi",
-   "x": 400,
-   "y": 562,
-   "w": 155,
-   "h": 22
+   "x": 399,
+   "y": 551,
+   "w": 154,
+   "h": 32,
+   "options": [
+    {
+     "value": "das Flugzeug",
+     "label": "das Flugzeug"
+    },
+    {
+     "value": "das Taxi",
+     "label": "das Taxi"
+    },
+    {
+     "value": "die Straßenbahn",
+     "label": "die Straßenbahn"
+    },
+    {
+     "value": "der Bus",
+     "label": "der Bus"
+    },
+    {
+     "value": "die U-Bahn",
+     "label": "die U-Bahn"
+    },
+    {
+     "value": "der Zug",
+     "label": "der Zug"
+    }
+   ]
   },
   {
    "id": "u8-d",
    "group": "u8",
-   "kind": "text",
+   "kind": "select",
    "label": "d: tram, streetcar",
    "answer": "die Straßenbahn",
-   "x": 400,
-   "y": 634,
-   "w": 155,
-   "h": 22
+   "x": 399,
+   "y": 622,
+   "w": 154,
+   "h": 32,
+   "options": [
+    {
+     "value": "das Flugzeug",
+     "label": "das Flugzeug"
+    },
+    {
+     "value": "das Taxi",
+     "label": "das Taxi"
+    },
+    {
+     "value": "die Straßenbahn",
+     "label": "die Straßenbahn"
+    },
+    {
+     "value": "der Bus",
+     "label": "der Bus"
+    },
+    {
+     "value": "die U-Bahn",
+     "label": "die U-Bahn"
+    },
+    {
+     "value": "der Zug",
+     "label": "der Zug"
+    }
+   ]
   },
   {
    "id": "u8-e",
    "group": "u8",
-   "kind": "text",
+   "kind": "select",
    "label": "e: bus",
    "answer": "der Bus",
-   "x": 400,
-   "y": 704,
-   "w": 155,
-   "h": 22
+   "x": 399,
+   "y": 694,
+   "w": 154,
+   "h": 32,
+   "options": [
+    {
+     "value": "das Flugzeug",
+     "label": "das Flugzeug"
+    },
+    {
+     "value": "das Taxi",
+     "label": "das Taxi"
+    },
+    {
+     "value": "die Straßenbahn",
+     "label": "die Straßenbahn"
+    },
+    {
+     "value": "der Bus",
+     "label": "der Bus"
+    },
+    {
+     "value": "die U-Bahn",
+     "label": "die U-Bahn"
+    },
+    {
+     "value": "der Zug",
+     "label": "der Zug"
+    }
+   ]
   },
   {
    "id": "u8-f",
    "group": "u8",
-   "kind": "text",
+   "kind": "select",
    "label": "f: underground",
    "answer": "die U-Bahn",
-   "x": 400,
-   "y": 776,
-   "w": 155,
-   "h": 22
+   "x": 399,
+   "y": 764,
+   "w": 154,
+   "h": 32,
+   "options": [
+    {
+     "value": "das Flugzeug",
+     "label": "das Flugzeug"
+    },
+    {
+     "value": "das Taxi",
+     "label": "das Taxi"
+    },
+    {
+     "value": "die Straßenbahn",
+     "label": "die Straßenbahn"
+    },
+    {
+     "value": "der Bus",
+     "label": "der Bus"
+    },
+    {
+     "value": "die U-Bahn",
+     "label": "die U-Bahn"
+    },
+    {
+     "value": "der Zug",
+     "label": "der Zug"
+    }
+   ]
   },
   {
    "id": "u9-q1",
    "group": "u9",
-   "kind": "text",
+   "kind": "select",
    "label": "Frage 2",
    "answer": "Wann kommst du?",
-   "x": 379,
-   "y": 1130,
-   "w": 573,
-   "h": 24
+   "x": 383,
+   "y": 1122,
+   "w": 568,
+   "h": 32,
+   "options": [
+    {
+     "value": "Wann kommst du?",
+     "label": "Wann kommst du?"
+    },
+    {
+     "value": "Holst du mich ab?",
+     "label": "Holst du mich ab?"
+    },
+    {
+     "value": "Nimmst du den Zug?",
+     "label": "Nimmst du den Zug?"
+    },
+    {
+     "value": "Hast du Zeit?",
+     "label": "Hast du Zeit?"
+    }
+   ]
   },
   {
    "id": "u9-q2",
    "group": "u9",
-   "kind": "text",
+   "kind": "select",
    "label": "Frage 3",
    "answer": "Nimmst du den Zug?",
-   "x": 230,
-   "y": 1195,
-   "w": 722,
-   "h": 24
+   "x": 250,
+   "y": 1189,
+   "w": 701,
+   "h": 26,
+   "options": [
+    {
+     "value": "Wann kommst du?",
+     "label": "Wann kommst du?"
+    },
+    {
+     "value": "Holst du mich ab?",
+     "label": "Holst du mich ab?"
+    },
+    {
+     "value": "Nimmst du den Zug?",
+     "label": "Nimmst du den Zug?"
+    },
+    {
+     "value": "Hast du Zeit?",
+     "label": "Hast du Zeit?"
+    }
+   ]
   },
   {
    "id": "u9-q3",
    "group": "u9",
-   "kind": "text",
+   "kind": "select",
    "label": "Frage 4",
    "answer": "Holst du mich ab?",
-   "x": 603,
-   "y": 1224,
-   "w": 349,
-   "h": 24
+   "x": 595,
+   "y": 1210,
+   "w": 358,
+   "h": 32,
+   "options": [
+    {
+     "value": "Wann kommst du?",
+     "label": "Wann kommst du?"
+    },
+    {
+     "value": "Holst du mich ab?",
+     "label": "Holst du mich ab?"
+    },
+    {
+     "value": "Nimmst du den Zug?",
+     "label": "Nimmst du den Zug?"
+    },
+    {
+     "value": "Hast du Zeit?",
+     "label": "Hast du Zeit?"
+    }
+   ]
   },
   {
    "id": "u10-a1",
@@ -1377,10 +1561,10 @@
    "name": "u10-a",
    "value": "Um 18:30 Uhr.",
    "answer": "true",
-   "x": 582,
+   "x": 579,
    "y": 1452,
-   "w": 18,
-   "h": 18
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u10-a2",
@@ -1390,10 +1574,10 @@
    "name": "u10-a",
    "value": "Um 19:00 Uhr.",
    "answer": "false",
-   "x": 800,
+   "x": 801,
    "y": 1452,
-   "w": 18,
-   "h": 18
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u10-b1",
@@ -1403,10 +1587,10 @@
    "name": "u10-b",
    "value": "zum Flughafen.",
    "answer": "false",
-   "x": 582,
-   "y": 1486,
-   "w": 18,
-   "h": 18
+   "x": 579,
+   "y": 1484,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u10-b2",
@@ -1416,10 +1600,10 @@
    "name": "u10-b",
    "value": "nach Daglfing.",
    "answer": "true",
-   "x": 800,
-   "y": 1486,
-   "w": 18,
-   "h": 18
+   "x": 801,
+   "y": 1484,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u10-c1",
@@ -1429,10 +1613,10 @@
    "name": "u10-c",
    "value": "die S-Bahn.",
    "answer": "true",
-   "x": 582,
-   "y": 1514,
-   "w": 18,
-   "h": 18
+   "x": 579,
+   "y": 1511,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u10-c2",
@@ -1442,10 +1626,10 @@
    "name": "u10-c",
    "value": "die U-Bahn.",
    "answer": "false",
-   "x": 800,
-   "y": 1514,
-   "w": 18,
-   "h": 18
+   "x": 801,
+   "y": 1511,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u10-d1",
@@ -1455,10 +1639,10 @@
    "name": "u10-d",
    "value": "20 Minuten",
    "answer": "false",
-   "x": 582,
-   "y": 1542,
-   "w": 18,
-   "h": 18
+   "x": 579,
+   "y": 1540,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u10-d2",
@@ -1468,10 +1652,10 @@
    "name": "u10-d",
    "value": "7 Minuten",
    "answer": "true",
-   "x": 800,
-   "y": 1542,
-   "w": 18,
-   "h": 18
+   "x": 801,
+   "y": 1540,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u10-e1",
@@ -1481,10 +1665,10 @@
    "name": "u10-e",
    "value": "Wurst",
    "answer": "false",
-   "x": 582,
-   "y": 1568,
-   "w": 18,
-   "h": 18
+   "x": 579,
+   "y": 1569,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u10-e2",
@@ -1494,10 +1678,70 @@
    "name": "u10-e",
    "value": "Brot",
    "answer": "true",
-   "x": 800,
-   "y": 1568,
-   "w": 18,
-   "h": 18
+   "x": 801,
+   "y": 1569,
+   "w": 19,
+   "h": 19
+  },
+  {
+   "id": "own-0",
+   "group": "own",
+   "kind": "text",
+   "label": "8 Meine Sprache 1",
+   "x": 823,
+   "y": 402,
+   "w": 343,
+   "h": 48
+  },
+  {
+   "id": "own-1",
+   "group": "own",
+   "kind": "text",
+   "label": "8 Meine Sprache 2",
+   "x": 823,
+   "y": 472,
+   "w": 343,
+   "h": 48
+  },
+  {
+   "id": "own-2",
+   "group": "own",
+   "kind": "text",
+   "label": "8 Meine Sprache 3",
+   "x": 823,
+   "y": 544,
+   "w": 343,
+   "h": 48
+  },
+  {
+   "id": "own-3",
+   "group": "own",
+   "kind": "text",
+   "label": "8 Meine Sprache 4",
+   "x": 823,
+   "y": 614,
+   "w": 343,
+   "h": 48
+  },
+  {
+   "id": "own-4",
+   "group": "own",
+   "kind": "text",
+   "label": "8 Meine Sprache 5",
+   "x": 823,
+   "y": 685,
+   "w": 343,
+   "h": 48
+  },
+  {
+   "id": "own-5",
+   "group": "own",
+   "kind": "text",
+   "label": "8 Meine Sprache 6",
+   "x": 823,
+   "y": 756,
+   "w": 343,
+   "h": 48
   }
  ],
  "audio": [
@@ -1505,10 +1749,10 @@
    "id": "au-cd1-43",
    "src": "assets/ab-cd1-track43.mp3",
    "label": "CD 1 Track 43",
-   "x": 128,
-   "y": 1444,
-   "w": 60,
-   "h": 22
+   "x": 122,
+   "y": 1418,
+   "w": 39,
+   "h": 25
   }
  ],
  "groups": [
@@ -1532,7 +1776,8 @@
   "notes": [
    "BASISTRAINING L10 Ü8-Ü10. Answers from AB Lösungsschlüssel (8 b-f, 9, 10 a-e).",
    "Ü8 row a 'der Zug' is a printed blue example (word, no field); third column 'Meine Sprache oder andere Sprachen' is own-language (Individuell), no fields.",
-   "Ü9: 'Hast du Zeit?' is the printed blue example; the three blank rules take the remaining key questions in dialogue order. Ü10 = CD 1 Track 43."
+   "Ü9: 'Hast du Zeit?' is the printed blue example; the three blank rules take the remaining key questions in dialogue order. Ü10 = CD 1 Track 43.",
+   "2026-11-16: Original scan/fonts;5transport bank selects,3question bank selects,6owntranslation fields,5radio groups,andCD1track43on source play marker."
   ]
  }
 }
