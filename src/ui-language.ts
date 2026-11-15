@@ -15,15 +15,17 @@ export function setUiLanguage(next: UiLanguage) {
   document.documentElement.dataset.uiLanguage = next;
   listeners.forEach(fn => fn());
 }
-function subscribe(fn: () => void) {listeners.add(fn); return () => {listeners.delete(fn);};}
+export function subscribeUiLanguage(fn: () => void) {listeners.add(fn); return () => {listeners.delete(fn);};}
 export function useUiLanguage() {
-  const current = useSyncExternalStore(subscribe, getUiLanguage, getUiLanguage);
+  const current = useSyncExternalStore(subscribeUiLanguage, getUiLanguage, getUiLanguage);
   return {language: current, t: (text: string) => uiText(text, current), setLanguage: setUiLanguage};
 }
 
 // UI copy only. Book exercises, German words and their Egyptian translations
 // are learning content and must never pass through this dictionary.
 export const UI_COPY: [string, string][] = [
+ ['Translation language','لغة الترجمة'], ['Follow interface language','نفس لغة الواجهة'], ['Arabic','العربية'], ['English','الإنجليزية'],
+ ['English translation is not available for this text yet.','الترجمة الإنجليزية للنص ده لسه مش جاهزة.'],
  ['Account & settings','الحساب والإعدادات'], ['Settings','الإعدادات'], ['Account','الحساب'],
  ['Sound','الصوت'], ['On','شغال'], ['Off','مقفول'], ['Feedback voices','أصوات الناس'],
  ['Voice comments on your answers','تعليقات صوتية مع نتيجة الحل'], ['Language','اللغة'],
@@ -129,7 +131,7 @@ export function installUiLanguage() {
       return !!el && (!!el.closest(roots) || (r.type === 'childList' && [...r.addedNodes].some(n => n instanceof Element && (n.matches(roots) || n.querySelector(roots)))));
     })) queue();
   }).observe(document.body, {subtree:true, childList:true, characterData:true, attributes:true, attributeFilter:['aria-label','title','placeholder']});
-  subscribe(queue);
+  subscribeUiLanguage(queue);
   window.addEventListener('storage', event => {if (event.key === KEY || event.key === null) setUiLanguage(saved());});
   localize();
 }
