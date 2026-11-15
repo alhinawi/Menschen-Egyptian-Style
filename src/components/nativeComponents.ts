@@ -87,7 +87,6 @@ function select(tag: string, attrs: MarkupAttrs) {
   if(tag === 'NativeAB11P93')return pick('NativeAB11P93',{});
   if(tag === 'NativeAB11P94')return pick('NativeAB11P94',{});
   if(tag === 'NativeAB11P96')return pick('NativeAB11P96',{});
-  if(tag === 'HybridScan' && attrs.book==='ab-a11' && String(attrs.page)==='97')return pick('NativeAB11P97',{});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && String(attrs.page)==='98')return pick('NativeAB11P98',{});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && String(attrs.page)==='99')return pick('NativeAB11P99',{});
   if(tag === 'HybridScan' && attrs.book==='ab-a11' && String(attrs.page)==='100')return pick('NativeAB11P100',{});
