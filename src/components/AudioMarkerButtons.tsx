@@ -57,8 +57,8 @@ export function AudioMarkerButtons(){
    const out:Marker[]=[];
    for(const t of tracks){
     const last=out[out.length-1];
-    // One margin button for nearby tracks. Never push a button onto another task.
-    if(last&&t.y-last.tracks[last.tracks.length-1].y<46){last.tracks.push(t);continue}
+    // Combine stacked tracks in the same column, never tracks across columns.
+    if(last&&t.y-last.tracks[last.tracks.length-1].y<46&&Math.abs(t.cx-last.tracks[last.tracks.length-1].cx)<80){last.tracks.push(t);continue}
     // Pin the circle to its printed play marker (source button centre), so it
     // keeps the same anchor at every zoom level instead of the page margin.
     out.push({x:t.cx,y:t.y,tracks:[t]});
