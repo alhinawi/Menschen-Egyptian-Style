@@ -49,3 +49,22 @@
 .mP20Footer{position:absolute;left:43px;top:1207px;display:flex;align-items:center;gap:13px;font:14px KbDroid,Georgia,serif}.mP20Footer em{background:#e5dda6;color:white;font:italic 12px/16px Georgia,serif;padding:0 7px}
 .nativeAB11Module1[data-native-ab11-page='20'] .mP20Panel textarea{position:absolute;left:20px;top:40px;width:370px;border:0;resize:none;font:16px/23px KbDroid,Georgia,serif;color:#174770}
 .nativeAB11Module1[data-native-ab11-page='20'] .mCanvas .mP20Tree{height:29px!important;background:#fffbd0!important;border:0!important}
+/* Page 21: speaking and sentence melody, at source scale. */
+.nativeAB11Module1[data-native-ab11-page='21'] .mText,.nativeAB11Module1[data-native-ab11-page='21'] .mPhrase{font:16px/21px KbDroid,Georgia,serif}
+.nativeAB11Module1[data-native-ab11-page='21'] .mHeader{font:25px/30px KbDroid,Georgia,serif;letter-spacing:1px;transform:scaleX(.95);transform-origin:left top}
+.nativeAB11Module1[data-native-ab11-page='21'] .mTitle{font:700 16px/21px ABScanSans,Arial,sans-serif}
+.nativeAB11Module1[data-native-ab11-page='21'] .mSmall{font:14px/19px KbDroid,Georgia,serif}
+.nativeAB11Module1[data-native-ab11-page='21'] .mLetter{font:700 16px/21px ABScanSans,Arial,sans-serif;color:#1c3673}
+.nativeAB11Module1[data-native-ab11-page='21'] .mNumber{width:26px;height:19px;background:#ffb400;font:700 17px/19px Georgia,serif}
+.nativeAB11Module1[data-native-ab11-page='21'] .mCanvas .mArrow{border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;height:19px;line-height:18px;color:#234773}
+.nativeAB11Module1[data-native-ab11-page='21'] .mBank{font:15px/20px KbDroid,Georgia,serif;width:42px!important;background:#fffbd0}
+.nativeAB11Module1[data-native-ab11-page='21'] .mP21Subtitle{font:italic 16px/21px KbDroid,Georgia,serif}
+.nativeAB11Module1[data-native-ab11-page='21'] .mP21PrintedArrow{color:#222;text-decoration:underline}
+.nativeAB11Module1[data-native-ab11-page='21'] .mPhrase.marked{background:#fff600}
+.nativeAB11Module1[data-native-ab11-page='21'] .mFooter{display:none}
+.nativeAB11Module1[data-native-ab11-page='21'] .nabModule{top:89px;left:857px;background:#ffb300;font:70px/64px Georgia;height:64px;width:53px}
+.mP21TopRule,.mP21BottomRule{position:absolute;height:1px;background:#ef9900}.mP21TopRule{left:414px;top:149px;width:422px}.mP21BottomRule{left:622px;top:758px;width:213px}
+.mP21Writing{position:absolute;left:185px;top:667px;width:332px;height:55px;border:0;resize:none;background:transparent;font:16px/21px KbDroid,Georgia,serif;color:#174770;padding:0}.mP21Writing:focus-visible{outline:1px dotted #929792;background:#fffdf3}
+.mP21Tip{position:absolute;left:541px;top:577px;width:330px;height:50px;border-top:4px solid #b38a05;box-sizing:border-box;border-left:11px solid #b38a05}.mP21Tip i{position:absolute;left:-12px;top:20px;font:700 8px ABScanSans,Arial;writing-mode:vertical-rl;transform:rotate(180deg)}
+.mP21RuleBox{position:absolute;left:167px;top:1026px;width:285px;height:107px;border-left:11px solid #e4e4df;border-top:5px solid #e9e9e5;box-sizing:border-box}.mP21RuleBox i{position:absolute;left:-10px;top:77px;writing-mode:vertical-rl;transform:rotate(180deg);font:700 7px ABScanSans,Arial}
+.mP21Footer{position:absolute;left:711px;top:1203px;white-space:pre;font:14px KbDroid,Georgia,serif}.mP21Footer em{display:inline-block;margin-left:8px;background:#e5dda6;color:white;font:italic 12px/16px Georgia;padding:0 5px}
