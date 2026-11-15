@@ -58,3 +58,28 @@
 .nativeAB11Lessons45[data-native-ab11-page='32'] .mCanvas .mBank{transform:scaleX(.895)}
 .nativeAB11Lessons45[data-native-ab11-page='32'] .mCanvas .mP32Rail{transform:rotate(180deg)}
 .nativeAB11Lessons45[data-native-ab11-page='32'] .mCanvas .mP32Rail{transform-origin:center center}
+/* Page 33 reading and pronunciation at source scale. */
+.nativeAB11.nativeAB11Lessons45[data-native-ab11-page='33'] .mCanvas{width:901px;height:1275px}
+.nativeAB11Lessons45[data-native-ab11-page='33'] .mCanvas .mText{font:16px/21px KbDroid,Georgia,serif;transform-origin:left top}
+.nativeAB11Lessons45[data-native-ab11-page='33'] .mCanvas .mHeader{font:26px/32px KbDroid,Georgia,serif;letter-spacing:0;transform:scaleX(.94)}
+.nativeAB11Lessons45[data-native-ab11-page='33'] .mCanvas .mTitle{font:700 18px/22px ABScanSans,Arial,sans-serif;transform:translateY(-3px) scaleX(.96)}
+.nativeAB11Lessons45[data-native-ab11-page='33'] .mCanvas .mMail{font:15px/21px ABScanSans,Arial,sans-serif;transform:rotate(-.5deg) scaleX(.94)}
+.nativeAB11Lessons45[data-native-ab11-page='33'] .mCanvas .mSansBold{font:700 16px/21px ABScanSans,Arial,sans-serif}
+.nativeAB11Lessons45[data-native-ab11-page='33'] .mCanvas .mCircle{border:1px solid #d9d4ad;border-radius:50%;font-size:13px;line-height:15px;width:15px!important;height:15px;text-align:center}
+.nativeAB11Lessons45[data-native-ab11-page='33'] .mCanvas .mTipText{font:15px/18px KbDroid,Georgia,serif;transform:scaleX(.95)}
+.nativeAB11Lessons45[data-native-ab11-page='33'] .mCanvas .mSmall{font:14px/18px KbDroid,Georgia,serif}
+.nativeAB11Lessons45[data-native-ab11-page='33'] .mCanvas .mItalic{font:italic 17px/22px KbDroid,Georgia,serif;transform:scaleX(.94)}
+.nativeAB11Lessons45[data-native-ab11-page='33'] .mCanvas .mSpeech{font:16px/21px KbDroid,Georgia,serif;transform:scaleX(.96)}
+.nativeAB11Lessons45[data-native-ab11-page='33'] .mCanvas .mRuleText{font:14px/18px KbDroid,Georgia,serif}
+.nativeAB11Lessons45[data-native-ab11-page='33'] .mCanvas .mBank{font:15px/20px ABScanSans,Arial,sans-serif;color:#203e87;background:#fffdd4;width:max-content!important}
+.nativeAB11Lessons45[data-native-ab11-page='33'] .mCanvas .mField{border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;font:14px/19px KbDroid,Georgia,serif!important;height:20px!important}
+.nativeAB11Lessons45[data-native-ab11-page='33'] .mFooter{display:none}
+.mP33Rule{position:absolute;height:1px;background:#97ce00}.mP33Tab{position:absolute;left:851px;top:93px;width:50px;height:64px;background:#97ce00;color:white;font:72px/65px 'Times New Roman',serif;text-align:right}
+.mP33Number{position:absolute;min-width:26px;height:18px;font:700 17px/18px Georgia,serif;background:#97ce00;border-top:1px solid #dc321e;border-left:1px solid #dc321e;text-align:center;color:white}
+.mP33TableCell{position:absolute;width:35px;height:50px;border-right:1px dotted #d4cdb7}.mP33TableCell:after{content:'';position:absolute;top:26px;width:35px;border-top:1px dotted #d4cdb7}
+.mP33TipTop{position:absolute;left:533px;top:527px;width:284px;height:5px;background:#ba8c13}.mP33RuleTop{position:absolute;left:184px;top:1081px;width:578px;height:4px;background:#d7d7d5}
+.mP33Audio{position:absolute;border:0!important;background:transparent!important;color:#222;font:10px/14px Georgia!important;padding:0!important;margin:0!important;min-height:0!important}.mP33Audio i{color:#299ac2;font-size:10px;font-style:normal}
+.mP33Vowels{position:absolute;left:172px;top:919px;font:15px/21px KbDroid,Georgia,serif;white-space:pre}.mP33Vowels .long{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}.mP33Vowels .short{text-emphasis:dot;text-emphasis-position:under}
+.mP33Radio{position:absolute;appearance:none;border:1px solid #d9d4ad!important;border-radius:50%!important;width:15px!important;height:15px!important;min-width:0!important;min-height:0!important;margin:0!important;padding:0!important;background:transparent!important}.mP33Radio:checked:after{content:'×';position:absolute;left:0;top:-4px;color:#2458a6;font:22px/18px ABScanSans,Arial,sans-serif}
+.mP33Vowels>div{height:21px;line-height:21px}
+.mP33Art{position:absolute;overflow:hidden}.mP33Art .mP33Sprite{position:absolute!important;max-width:none!important;max-height:none!important;object-fit:fill!important;margin:0!important}

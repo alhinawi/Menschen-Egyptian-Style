@@ -100,26 +100,36 @@ export function NativeAB11Lessons45({page}:{page:string}){
  {t(488,1104,150,'Lösung:')}{['a','b','c','d','e'].map((s,i)=><span key={s}>{t(488+i*39,1125,25,s)}{i===0?art('s-ink',486,1148,17,20):f('u11-los-'+s,488+i*39,1146,22)}</span>)}
  {c('u11',744,1140,()=>['1','0','0','1'].every((a,i)=>v['u11-'+['b','c','d','e'][i]]===a)&&['U','P','E','R'].every((a,i)=>norm(v['u11-los-'+['b','c','d','e'][i]]||'')===norm(a)))}{art('footer-source',29,1212,230,25)}
  </>})()}
- {page==='33'&&<>
- {head('TRAINING: LESEN')}<div className="nabModule">4</div>{title('1',211,'Bringen Sie die E-Mails in die richtige Reihenfolge.')}
- {txt(168,258,220,'E-Mail:     1     2     3     4')}{txt(275,288,30,'C','mExample')}{['2','3','4'].map((id,i)=>f('u1-'+id,321+i*46,286,33))}{check('u1',490,286)}
- {txt(164,353,330,'A  Hallo Susi,\n   danke für den Tipp. Bei Möbel Amra\n   kostet ein Sofa 199 € und ein Bett 149 €.\n   Das finde ich nicht teuer und die Möbel\n   sind wirklich schön.\n   Gruß Johannes','mEmail')}
- {txt(516,353,320,'B  Hallo Johannes,\n   bei MÖBEL AMRA in der Blücherstraße gibt es\n   günstige Möbel. Und sie sind wirklich schön.\n   Susi','mEmail')}
- {txt(164,548,330,'C  Hallo Susi,\n   ich brauche ein Sofa und ein Bett für mein\n   Zimmer. Wo finde ich günstige Möbel in\n   Berlin? Weißt du das? Ich habe wirklich\n   nicht viel Geld. ☹\n   Gruß Johannes','mEmail')}
- {txt(516,527,320,'D  Hallo Johannes, super! ☺\n   Bis bald\n   Susi','mEmail')}
- {txt(546,632,278,'Markieren Sie in Texten die Antworten\nauf die W-Fragen: Wer schreibt? Was\nbraucht er/sie? Wo findet er/sie …?\nWie viel kostet …? Wie findet er/sie\n…? So verstehen Sie den Text besser.','mSmall mTip')}
- {title('2',774,'Kreuzen Sie an.')}{txt(648,809,160,'richtig     falsch','mSmall')}
- {['Susi braucht Möbel.','MÖBEL AMRA hat billige Möbel.','Ein Sofa kostet 149 Euro.','Johannes findet die Möbel hässlich.'].map((s,i)=><span key={s}>{txt(168,839+i*28,450,String.fromCharCode(97+i)+'  '+s)}{radio('u2-'+String.fromCharCode(97+i),'r',658,837+i*28,s+' richtig')}{radio('u2-'+String.fromCharCode(97+i),'f',727,837+i*28,s+' falsch')}</span>)}{rule('u2',168,965,()=>['f','r','f','f'].every((a,i)=>v['u2-'+String.fromCharCode(97+i)]===a))}
- {txt(132,1017,710,'TRAINING: AUSSPRACHE','mHeader')}{txt(527,1029,300,'lange und kurze Vokale','mSmall')}
- {title('1',1070,'Hören Sie und sprechen Sie nach.','',132,380)}{listen('21',96,1070,'1')}
- <div className="mVowels" style={{left:170,top:Y(1113),width:361}}>{[['a',[['a','ber',1],['L','a','mpe',0],['l','a','ng',0],['It','a','lien',1],['pr','a','ktisch',0]]],['e',[['B','e','tt',0],['schw','e','r',1],['s','e','hr',1],['S','e','ssel',0],['schl','e','cht',0]]],['i',[['w','ie','',1],['v','ie','l',1],['T','i','sch',0],['b','i','llig',0],['n','i','cht',0]]],['o',[['S','o','fa',1],['gr','o','ß',1],['k','o','sten',0],['S','o','nderangebot',0]]],['u',[['St','u','hl',1],['k','u','rz',0],['z','u','',1],['g','u','t',1],['h','u','ndert',0]]]].map(([vowel,words])=><div key={vowel as string}>{vowel as string}　{(words as (string|number)[][]).map((parts,i)=>{const a=parts.length===3?['',...parts]:parts;return <span key={i}>{i>0?' – ':''}<span className="tapWord" data-word={a.slice(0,3).join('')} data-phrase={(words as (string|number)[][]).map(p=>p.slice(0,-1).join('')).join(' – ')} role="button" tabIndex={0}>{a[0]}<span className={a[3]?'long':'short'}>{a[1]}</span>{a[2]}</span></span>})}</div>)}</div>
- {title('3',1070,'Hören Sie und sprechen Sie nach.','',532,360)}{listen('22',495,1070,'1')}
- {txt(568,1113,285,'a  Aber die Lampe aus Italien ist\n   praktisch.\nb  Das Bett ist sehr schwer.\nc  Wie viel? Der Tisch ist nicht billig.\nd  Oh! So groß! Das Sofa ist im\n   Sonderangebot.\ne  Der Stuhl ist gut. Nur hundert Euro.','mSmall')}
- {title('2',1288,'Ergänzen Sie die Regel.')}{txt(168,1323,650,'kurz | lang','mBank')}
- {txt(168,1363,286,'Vokale spricht man im Deutschen','mSmall')}{f('au2-1',458,1361,145)}{txt(609,1363,195,'(a, e …) oder','mSmall')}{f('au2-2',168,1388,140)}{txt(314,1390,520,'(a, e …). Vokal vor Doppel-Konsonant (ll, ss, tt …) ist immer','mSmall')}
- {f('au2-3',168,1415,140)}{txt(314,1417,242,'. Die Kombination „ie“ ist','mSmall')}{f('au2-4',560,1415,139)}{txt(704,1417,140,'. Man spricht i.','mSmall')}
- {txt(168,1444,490,'Der Buchstabe „h“ vor Konsonant (hl …) macht den Vokal','mSmall')}{f('au2-5',665,1442,140)}{check('au2',168,1483)}
- </>}
+ {page==='33'&&(()=>{
+ const t=(x:number,y:number,w:number,s:string,c='')=><div className={'mText '+c} style={{left:x,top:y,width:w}}><Words s={s}/></div>;
+ const f=(id:string,x:number,y:number,w:number)=><ChoiceInput className="mField" data-native-field={id} aria-label={id} style={{left:x,top:y,width:w}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
+ const spriteOffsets:Record<string,number>={"c-ink":0,"footer":17,"paper-a":39,"paper-b":74,"paper-c":116,"paper-d":154,"question-ink":195,"rule-rail":224,"tip-rail":329};
+ const art=(n:string,x:number,y:number,w:number,h:number)=><div className="mP33Art" style={{left:x,top:y,width:w,height:h}}><PageImage className="mP33Sprite" alt={'Originalabbildung '+n} src="assets/native-ab11/p33-source-sprite.png" style={{left:0,top:-spriteOffsets[n],width:332,height:428}}/></div>;
+ const title=(n:string,x:number,y:number,s:string,w=700)=><><div className="mP33Number" style={{left:x,top:y}}>{n}</div>{t(x+38,y,w,s,'mTitle')}</>;
+ const c=(id:string,x:number,y:number,test?:()=>boolean)=><div className="mCheck" data-native-task={id} style={{left:x,top:y}}><CheckButton onClick={()=>G({...graded,[id]:test?test():Object.entries(answers(id)).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}/><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const audioButton=(n:string,x:number,y:number)=><button className="mP33Audio" style={{left:x,top:y}} data-track={n} aria-label={'Audio 1 '+n} onClick={()=>{if(audio.current){audio.current.src='assets/ab-cd1-track'+n+'.mp3';void audio.current.play().catch(()=>{})}}}><i>▶</i> 1 {n}</button>;
+ return <>{t(130,133,400,'TRAINING: LESEN','mHeader')}<div className="mP33Rule" style={{left:357,top:153,width:476}}/><div className="mP33Tab">4</div>
+ {title('1',128,198,'Bringen Sie die E-Mails in die richtige Reihenfolge.')}
+ {t(165,250,95,'E-Mail:','mSansBold')}{[1,2,3,4].map((n,i)=><span key={n}>{t(242+i*35,229,25,''+n)}<i className="mP33TableCell" style={{left:229+i*35,top:224}}/>{n===1?art('c-ink',239,254,16,17):f('u1-'+n,231+i*35,251,29)}</span>)}{c('u1',389,248)}
+ {art('paper-a',133,278,321,35)}{art('paper-b',453,274,332,42)}{art('paper-c',157,450,316,38)}{art('paper-d',475,418,325,41)}
+ {t(153,317,22,'A','mCircle')}{t(176,318,300,'Hallo Susi,\ndanke für den Tipp. Bei Möbel Amra\nkostet ein Sofa 199 € und ein Bett 149 €.\nDas finde ich nicht teuer und die Möbel\nsind wirklich schön.\nGruß Johannes','mMail')}
+ {t(459,318,22,'B','mCircle')}{t(486,320,310,'Hallo Johannes,\nbei MÖBEL AMRA in der Blücherstraße gibt es\ngünstige Möbel. Und sie sind wirklich schön.\nSusi','mMail')}
+ {t(168,493,22,'C','mCircle')}{t(194,494,300,'Hallo Susi,\nich brauche ein Sofa und ein Bett für mein\nZimmer. Wo finde ich günstige Möbel in\nBerlin? Weißt du das? Ich habe wirklich\nnicht viel Geld. ☹\nGruß Johannes','mMail')}{art('question-ink',224,601,211,29)}
+ {t(487,466,22,'D','mCircle')}{t(515,463,300,'Hallo Johannes, super! ☺\nBis bald\nSusi','mMail')}
+ {art('tip-rail',522,526,18,99)}<div className="mP33TipTop"/>{t(551,532,280,'Markieren Sie in Texten die Antworten\nauf die W-Fragen: Wer schreibt? Was\nbraucht er/sie? Wo findet er/sie …?\nWie viel kostet …? Wie findet er/sie\n…? So verstehen Sie den Text besser.','mTipText')}
+ {title('2',133,675,'Kreuzen Sie an.')}{t(487,685,160,'richtig     falsch','mSmall')}
+ {['Susi braucht Möbel.','MÖBEL AMRA hat billige Möbel.','Ein Sofa kostet 149 Euro.','Johannes findet die Möbel hässlich.'].map((s,i)=><span key={s}>{t(170,705+i*21,450,String.fromCharCode(97+i)+'  '+s)}{['r','f'].map((val,j)=><ChoiceInput key={val} type="radio" className="mP33Radio" data-native-radio={'u2-'+String.fromCharCode(97+i)+'-'+val} name={'native-ab11-33-u2-'+String.fromCharCode(97+i)} aria-label={String.fromCharCode(97+i)+' '+val} style={{left:500+j*57,top:707+i*21}} checked={v['u2-'+String.fromCharCode(97+i)]===val} onChange={()=>set('u2-'+String.fromCharCode(97+i),val)}/>)}</span>)}{c('u2',815,772,()=>['f','r','f','f'].every((a,i)=>v['u2-'+String.fromCharCode(97+i)]===a))}
+ {t(137,835,480,'TRAINING: AUSSPRACHE','mHeader')}{t(458,840,300,'lange und kurze Vokale','mItalic')}
+ <div className="mP33Rule" style={{left:628,top:853,width:212}}/>
+ {title('1',136,886,'Hören Sie und sprechen Sie nach.',360)}{audioButton('21',98,894)}{title('3',543,883,'Hören Sie und sprechen Sie nach.',320)}{audioButton('22',503,891)}
+ <div className="mP33Vowels">{[['a',[['','a','ber',1],['L','a','mpe',0],['l','a','ng',0],['It','a','lien',1],['pr','a','ktisch',0]]],['e',[['B','e','tt',0],['schw','e','r',1],['s','e','hr',1],['S','e','ssel',0],['schl','e','cht',0]]],['i',[['w','ie','',1],['v','ie','l',1],['T','i','sch',0],['b','i','llig',0],['n','i','cht',0]]],['o',[['S','o','fa',1],['gr','o','ß',1],['k','o','sten',0],['S','o','nderangebot',0]]],['u',[['St','u','hl',1],['k','u','rz',0],['z','u','',1],['g','u','t',1],['h','u','ndert',0]]]].map(([vowel,words])=><div key={vowel as string}>{vowel as string}　{(words as (string|number)[][]).map((a,i)=><span key={i}>{i>0?' – ':''}<span className="tapWord" role="button" tabIndex={0} data-word={a.slice(0,3).join('')} data-phrase={(words as (string|number)[][]).map(p=>p.slice(0,3).join('')).join(' – ')}>{a[0]}<span className={a[3]?'long':'short'}>{a[1]}</span>{a[2]}</span></span>)}</div>)}</div>
+ {t(579,914,300,'a  Aber die Lampe aus Italien ist\n    praktisch.\nb  Das Bett ist sehr schwer.\nc  Wie viel? Der Tisch ist nicht billig.\nd  Oh! So groß! Das Sofa ist im\n    Sonderangebot.\ne  Der Stuhl ist gut. Nur hundert Euro.','mSpeech')}
+ {title('2',137,1056,'Ergänzen Sie die Regel.')}{art('rule-rail',172,1083,20,105)}<div className="mP33RuleTop"/>
+ {t(195,1091,150,'kurz • | lang –','mBank')}{t(191,1117,400,'Vokale spricht man im Deutschen','mRuleText')}{f('au2-1',416,1113,133)}{t(553,1117,200,'(a, e …) oder','mRuleText')}
+ {f('au2-2',191,1134,136)}{t(330,1136,530,'(a, e …). Vokal vor Doppel-Konsonant (ll, ss, tt …) ist immer','mRuleText')}
+ {f('au2-3',191,1153,136)}{t(330,1155,260,'. Die Kombination „ie“ ist','mRuleText')}{f('au2-4',498,1151,133)}{t(634,1155,180,'. Man spricht i.','mRuleText')}
+ {t(191,1174,480,'Der Buchstabe „h“ vor Konsonant (hl …) macht den Vokal','mRuleText')}{f('au2-5',574,1170,135)}{t(711,1174,10,'.','mRuleText')}{c('au2',816,1176)}{art('footer',719,1201,182,22)}
+ </>})()}
  {page==='34'&&<>
  {head('TEST')}{title('1',210,'Schreiben Sie die Zahlen.')}{txt(168,252,650,'a  Das kostet fünfhunderttausendfünfundvierzig Euro: 500 045 €','mExample')}
  {['achthundertdreiundzwanzig','dreitausendneunhundertachtundsiebzig','achthundertvierundachtzigtausend'].map((s,i)=><span key={s}>{txt(168,282+i*29,560,String.fromCharCode(98+i)+'  Das kostet '+s+' Euro:','mSmall')}{f('t1-'+String.fromCharCode(98+i),729,280+i*29,109)}</span>)}{check('t1',168,382)}
