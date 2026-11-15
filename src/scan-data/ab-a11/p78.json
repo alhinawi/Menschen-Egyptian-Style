@@ -1207,189 +1207,771 @@
   {
    "id": "u1-b",
    "group": "u1",
-   "kind": "text",
-   "label": "Wie heißt der nächste … ?",
+   "kind": "select",
+   "label": "1 b",
    "answer": "Halt",
-   "x": 480,
-   "y": 402,
-   "w": 151,
-   "h": 22
+   "x": 479,
+   "y": 396,
+   "w": 164,
+   "h": 30,
+   "options": [
+    {
+     "value": "Halt",
+     "label": "Halt"
+    },
+    {
+     "value": "Vorsicht",
+     "label": "Vorsicht"
+    },
+    {
+     "value": "Bahnsteig",
+     "label": "Bahnsteig"
+    },
+    {
+     "value": "Flughafen",
+     "label": "Flughafen"
+    }
+   ]
   },
   {
    "id": "u1-c",
    "group": "u1",
-   "kind": "text",
-   "label": "… an der Bahnsteigkante.",
+   "kind": "select",
+   "label": "1 c",
    "answer": "Vorsicht",
-   "x": 239,
+   "x": 259,
    "y": 431,
-   "w": 185,
-   "h": 22
+   "w": 160,
+   "h": 30,
+   "options": [
+    {
+     "value": "Halt",
+     "label": "Halt"
+    },
+    {
+     "value": "Vorsicht",
+     "label": "Vorsicht"
+    },
+    {
+     "value": "Bahnsteig",
+     "label": "Bahnsteig"
+    },
+    {
+     "value": "Flughafen",
+     "label": "Flughafen"
+    }
+   ]
   },
   {
    "id": "u1-d",
    "group": "u1",
-   "kind": "text",
-   "label": "Die Bahn fährt gerade am … 5 ein.",
+   "kind": "select",
+   "label": "1 d",
    "answer": "Bahnsteig",
-   "x": 747,
-   "y": 506,
-   "w": 292,
-   "h": 22
+   "x": 746,
+   "y": 512,
+   "w": 321,
+   "h": 30,
+   "options": [
+    {
+     "value": "Halt",
+     "label": "Halt"
+    },
+    {
+     "value": "Vorsicht",
+     "label": "Vorsicht"
+    },
+    {
+     "value": "Bahnsteig",
+     "label": "Bahnsteig"
+    },
+    {
+     "value": "Flughafen",
+     "label": "Flughafen"
+    }
+   ]
   },
   {
-   "id": "u2-b",
+   "id": "u2-b-1",
    "group": "u2",
    "kind": "text",
-   "label": "b: a_ ru_ _ _",
-   "answer": "anrufen",
-   "x": 243,
-   "y": 772,
-   "w": 185,
-   "h": 22
+   "label": "2 b: Buchstabe 2",
+   "answer": "n",
+   "x": 269,
+   "y": 837,
+   "w": 22,
+   "h": 32
   },
   {
-   "id": "u2-c",
+   "id": "u2-b-4",
    "group": "u2",
    "kind": "text",
-   "label": "c: e_ _ _ st_ _ _ _",
-   "answer": "einsteigen",
-   "x": 498,
-   "y": 716,
-   "w": 214,
-   "h": 22
+   "label": "2 b: Buchstabe 5",
+   "answer": "f",
+   "x": 344,
+   "y": 837,
+   "w": 22,
+   "h": 32
   },
   {
-   "id": "u2-d",
+   "id": "u2-b-5",
    "group": "u2",
    "kind": "text",
-   "label": "d: _ _ _ s_ h_ _",
-   "answer": "fernsehen",
-   "x": 498,
-   "y": 772,
-   "w": 214,
-   "h": 22
+   "label": "2 b: Buchstabe 6",
+   "answer": "e",
+   "x": 370,
+   "y": 837,
+   "w": 22,
+   "h": 32
   },
   {
-   "id": "u2-e",
+   "id": "u2-b-6",
    "group": "u2",
    "kind": "text",
-   "label": "e: _ _ i_ k_ _ _ f_ _",
-   "answer": "einkaufen",
-   "x": 799,
-   "y": 716,
-   "w": 220,
-   "h": 22
+   "label": "2 b: Buchstabe 7",
+   "answer": "n",
+   "x": 395,
+   "y": 837,
+   "w": 22,
+   "h": 32
   },
   {
-   "id": "u2-f",
+   "id": "u2-c-1",
    "group": "u2",
    "kind": "text",
-   "label": "f: a_ _ s_ _ _ _",
-   "answer": "aussteigen",
-   "x": 799,
-   "y": 772,
-   "w": 220,
-   "h": 22
+   "label": "2 c: Buchstabe 2",
+   "answer": "i",
+   "x": 500,
+   "y": 701,
+   "w": 23,
+   "h": 32
   },
   {
-   "id": "u3-a1",
+   "id": "u2-c-2",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 c: Buchstabe 3",
+   "answer": "n",
+   "x": 526,
+   "y": 701,
+   "w": 23,
+   "h": 32
+  },
+  {
+   "id": "u2-c-5",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 c: Buchstabe 6",
+   "answer": "e",
+   "x": 602,
+   "y": 701,
+   "w": 23,
+   "h": 32
+  },
+  {
+   "id": "u2-c-6",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 c: Buchstabe 7",
+   "answer": "i",
+   "x": 628,
+   "y": 701,
+   "w": 23,
+   "h": 32
+  },
+  {
+   "id": "u2-c-7",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 c: Buchstabe 8",
+   "answer": "g",
+   "x": 653,
+   "y": 701,
+   "w": 23,
+   "h": 32
+  },
+  {
+   "id": "u2-c-8",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 c: Buchstabe 9",
+   "answer": "e",
+   "x": 678,
+   "y": 701,
+   "w": 23,
+   "h": 32
+  },
+  {
+   "id": "u2-c-9",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 c: Buchstabe 10",
+   "answer": "n",
+   "x": 704,
+   "y": 701,
+   "w": 23,
+   "h": 32
+  },
+  {
+   "id": "u2-d-0",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 d: Buchstabe 1",
+   "answer": "f",
+   "x": 476,
+   "y": 837,
+   "w": 22,
+   "h": 32
+  },
+  {
+   "id": "u2-d-1",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 d: Buchstabe 2",
+   "answer": "e",
+   "x": 501,
+   "y": 837,
+   "w": 22,
+   "h": 32
+  },
+  {
+   "id": "u2-d-2",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 d: Buchstabe 3",
+   "answer": "r",
+   "x": 526,
+   "y": 837,
+   "w": 22,
+   "h": 32
+  },
+  {
+   "id": "u2-d-3",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 d: Buchstabe 4",
+   "answer": "n",
+   "x": 550,
+   "y": 837,
+   "w": 22,
+   "h": 32
+  },
+  {
+   "id": "u2-d-5",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 d: Buchstabe 6",
+   "answer": "e",
+   "x": 600,
+   "y": 837,
+   "w": 22,
+   "h": 32
+  },
+  {
+   "id": "u2-d-7",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 d: Buchstabe 8",
+   "answer": "e",
+   "x": 650,
+   "y": 837,
+   "w": 22,
+   "h": 32
+  },
+  {
+   "id": "u2-d-8",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 d: Buchstabe 9",
+   "answer": "n",
+   "x": 674,
+   "y": 837,
+   "w": 22,
+   "h": 32
+  },
+  {
+   "id": "u2-e-0",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 e: Buchstabe 1",
+   "answer": "e",
+   "x": 804,
+   "y": 698,
+   "w": 23,
+   "h": 32
+  },
+  {
+   "id": "u2-e-2",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 e: Buchstabe 3",
+   "answer": "n",
+   "x": 855,
+   "y": 698,
+   "w": 23,
+   "h": 32
+  },
+  {
+   "id": "u2-e-4",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 e: Buchstabe 5",
+   "answer": "a",
+   "x": 906,
+   "y": 698,
+   "w": 23,
+   "h": 32
+  },
+  {
+   "id": "u2-e-5",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 e: Buchstabe 6",
+   "answer": "u",
+   "x": 932,
+   "y": 698,
+   "w": 23,
+   "h": 32
+  },
+  {
+   "id": "u2-e-7",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 e: Buchstabe 8",
+   "answer": "e",
+   "x": 983,
+   "y": 698,
+   "w": 23,
+   "h": 32
+  },
+  {
+   "id": "u2-e-8",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 e: Buchstabe 9",
+   "answer": "n",
+   "x": 1009,
+   "y": 698,
+   "w": 23,
+   "h": 32
+  },
+  {
+   "id": "u2-f-1",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 f: Buchstabe 2",
+   "answer": "u",
+   "x": 832,
+   "y": 833,
+   "w": 23,
+   "h": 32
+  },
+  {
+   "id": "u2-f-3",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 f: Buchstabe 4",
+   "answer": "s",
+   "x": 882,
+   "y": 833,
+   "w": 23,
+   "h": 32
+  },
+  {
+   "id": "u2-f-4",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 f: Buchstabe 5",
+   "answer": "t",
+   "x": 908,
+   "y": 833,
+   "w": 23,
+   "h": 32
+  },
+  {
+   "id": "u2-f-5",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 f: Buchstabe 6",
+   "answer": "e",
+   "x": 933,
+   "y": 833,
+   "w": 23,
+   "h": 32
+  },
+  {
+   "id": "u2-f-6",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 f: Buchstabe 7",
+   "answer": "i",
+   "x": 958,
+   "y": 833,
+   "w": 23,
+   "h": 32
+  },
+  {
+   "id": "u2-f-7",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 f: Buchstabe 8",
+   "answer": "g",
+   "x": 984,
+   "y": 833,
+   "w": 23,
+   "h": 32
+  },
+  {
+   "id": "u2-f-8",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 f: Buchstabe 9",
+   "answer": "e",
+   "x": 1009,
+   "y": 833,
+   "w": 23,
+   "h": 32
+  },
+  {
+   "id": "u2-f-9",
+   "group": "u2",
+   "kind": "text",
+   "label": "2 f: Buchstabe 10",
+   "answer": "n",
+   "x": 1034,
+   "y": 833,
+   "w": 23,
+   "h": 32
+  },
+  {
+   "id": "u3-inf-0",
    "group": "u3",
    "kind": "text",
-   "label": "a: Infinitiv (2)",
+   "label": "3 Infinitiv 1",
    "answer": "kochen",
-   "x": 666,
-   "y": 1033,
-   "w": 179,
-   "h": 22
+   "x": 667,
+   "y": 1021,
+   "w": 162,
+   "h": 30
   },
   {
-   "id": "u3-a2",
+   "id": "u3-inf-1",
    "group": "u3",
    "kind": "text",
-   "label": "a: Infinitiv (3)",
+   "label": "3 Infinitiv 2",
    "answer": "fernsehen",
    "x": 857,
-   "y": 1033,
-   "w": 174,
-   "h": 22
+   "y": 1019,
+   "w": 154,
+   "h": 30
   },
   {
-   "id": "u3-b1",
+   "id": "u3-inf-2",
    "group": "u3",
    "kind": "text",
-   "label": "b: Infinitiv (1)",
+   "label": "3 Infinitiv 3",
    "answer": "ankommen",
-   "x": 666,
-   "y": 1179,
-   "w": 168,
-   "h": 22
+   "x": 673,
+   "y": 1169,
+   "w": 161,
+   "h": 30
   },
   {
-   "id": "u3-b2",
+   "id": "u3-inf-3",
    "group": "u3",
    "kind": "text",
-   "label": "b: Infinitiv (2)",
+   "label": "3 Infinitiv 4",
    "answer": "wohnen",
-   "x": 666,
-   "y": 1220,
-   "w": 168,
-   "h": 22
+   "x": 673,
+   "y": 1213,
+   "w": 161,
+   "h": 30
   },
   {
-   "id": "u3-c1",
+   "id": "u3-inf-4",
    "group": "u3",
    "kind": "text",
-   "label": "c: Infinitiv (1)",
+   "label": "3 Infinitiv 5",
    "answer": "aussteigen",
-   "x": 666,
-   "y": 1370,
-   "w": 168,
-   "h": 22
+   "x": 674,
+   "y": 1359,
+   "w": 161,
+   "h": 30
   },
   {
-   "id": "u3-c2",
+   "id": "u3-inf-5",
    "group": "u3",
    "kind": "text",
-   "label": "c: Infinitiv (2)",
+   "label": "3 Infinitiv 6",
    "answer": "sein",
-   "x": 666,
-   "y": 1411,
-   "w": 168,
-   "h": 22
+   "x": 674,
+   "y": 1401,
+   "w": 161,
+   "h": 30
   },
   {
-   "id": "u3-d1",
+   "id": "u3-inf-6",
    "group": "u3",
    "kind": "text",
-   "label": "d: Infinitiv (1)",
+   "label": "3 Infinitiv 7",
    "answer": "gehen",
-   "x": 666,
-   "y": 1527,
-   "w": 168,
-   "h": 22
+   "x": 676,
+   "y": 1518,
+   "w": 161,
+   "h": 30
   },
   {
-   "id": "u3-d2",
+   "id": "u3-inf-7",
    "group": "u3",
    "kind": "text",
-   "label": "d: Infinitiv (2)",
+   "label": "3 Infinitiv 8",
    "answer": "finden",
-   "x": 666,
-   "y": 1567,
-   "w": 168,
-   "h": 22
+   "x": 677,
+   "y": 1561,
+   "w": 160,
+   "h": 30
   },
   {
-   "id": "u3-d3",
+   "id": "u3-inf-8",
    "group": "u3",
    "kind": "text",
-   "label": "d: Infinitiv (3)",
+   "label": "3 Infinitiv 9",
    "answer": "anrufen",
-   "x": 666,
-   "y": 1608,
-   "w": 168,
-   "h": 22
+   "x": 677,
+   "y": 1605,
+   "w": 161,
+   "h": 30
+  },
+  {
+   "id": "verbmark-0",
+   "group": "u3",
+   "kind": "checkbox",
+   "label": "3 Markieren: kochen",
+   "answer": "true",
+   "x": 299,
+   "y": 1028,
+   "w": 52,
+   "h": 19
+  },
+  {
+   "id": "verbmark-1",
+   "group": "u3",
+   "kind": "checkbox",
+   "label": "3 Markieren: sehen",
+   "answer": "true",
+   "x": 298,
+   "y": 1049,
+   "w": 43,
+   "h": 18
+  },
+  {
+   "id": "verbmark-2",
+   "group": "u3",
+   "kind": "checkbox",
+   "label": "3 Markieren: fern",
+   "answer": "true",
+   "x": 364,
+   "y": 1072,
+   "w": 33,
+   "h": 20
+  },
+  {
+   "id": "verbmark-3",
+   "group": "u3",
+   "kind": "checkbox",
+   "label": "3 Markieren: wir",
+   "answer": "false",
+   "x": 353,
+   "y": 1031,
+   "w": 24,
+   "h": 17
+  },
+  {
+   "id": "verbmark-4",
+   "group": "u3",
+   "kind": "checkbox",
+   "label": "3 Markieren: Dann",
+   "answer": "false",
+   "x": 394,
+   "y": 1010,
+   "w": 39,
+   "h": 18
+  },
+  {
+   "id": "verbmark-5",
+   "group": "u3",
+   "kind": "checkbox",
+   "label": "3 Markieren: kommt",
+   "answer": "true",
+   "x": 391,
+   "y": 1175,
+   "w": 56,
+   "h": 18
+  },
+  {
+   "id": "verbmark-6",
+   "group": "u3",
+   "kind": "checkbox",
+   "label": "3 Markieren: an",
+   "answer": "true",
+   "x": 430,
+   "y": 1197,
+   "w": 23,
+   "h": 18
+  },
+  {
+   "id": "verbmark-7",
+   "group": "u3",
+   "kind": "checkbox",
+   "label": "3 Markieren: wohnt",
+   "answer": "true",
+   "x": 489,
+   "y": 1196,
+   "w": 52,
+   "h": 18
+  },
+  {
+   "id": "verbmark-8",
+   "group": "u3",
+   "kind": "checkbox",
+   "label": "3 Markieren: Frau",
+   "answer": "false",
+   "x": 292,
+   "y": 1177,
+   "w": 33,
+   "h": 18
+  },
+  {
+   "id": "verbmark-9",
+   "group": "u3",
+   "kind": "checkbox",
+   "label": "3 Markieren: Flughafen",
+   "answer": "false",
+   "x": 353,
+   "y": 1198,
+   "w": 74,
+   "h": 21
+  },
+  {
+   "id": "verbmark-10",
+   "group": "u3",
+   "kind": "checkbox",
+   "label": "3 Markieren: steige",
+   "answer": "true",
+   "x": 497,
+   "y": 1355,
+   "w": 47,
+   "h": 20
+  },
+  {
+   "id": "verbmark-11",
+   "group": "u3",
+   "kind": "checkbox",
+   "label": "3 Markieren: aus",
+   "answer": "true",
+   "x": 499,
+   "y": 1380,
+   "w": 30,
+   "h": 14
+  },
+  {
+   "id": "verbmark-12",
+   "group": "u3",
+   "kind": "checkbox",
+   "label": "3 Markieren: sind",
+   "answer": "true",
+   "x": 293,
+   "y": 1404,
+   "w": 33,
+   "h": 18
+  },
+  {
+   "id": "verbmark-13",
+   "group": "u3",
+   "kind": "checkbox",
+   "label": "3 Markieren: Andrea",
+   "answer": "false",
+   "x": 336,
+   "y": 1335,
+   "w": 61,
+   "h": 19
+  },
+  {
+   "id": "verbmark-14",
+   "group": "u3",
+   "kind": "checkbox",
+   "label": "3 Markieren: Min",
+   "answer": "false",
+   "x": 396,
+   "y": 1403,
+   "w": 33,
+   "h": 18
+  },
+  {
+   "id": "verbmark-15",
+   "group": "u3",
+   "kind": "checkbox",
+   "label": "3 Markieren: Gehen",
+   "answer": "true",
+   "x": 314,
+   "y": 1516,
+   "w": 47,
+   "h": 17
+  },
+  {
+   "id": "verbmark-16",
+   "group": "u3",
+   "kind": "checkbox",
+   "label": "3 Markieren: finde",
+   "answer": "true",
+   "x": 410,
+   "y": 1558,
+   "w": 38,
+   "h": 19
+  },
+  {
+   "id": "verbmark-17",
+   "group": "u3",
+   "kind": "checkbox",
+   "label": "3 Markieren: rufe",
+   "answer": "true",
+   "x": 432,
+   "y": 1579,
+   "w": 30,
+   "h": 18
+  },
+  {
+   "id": "verbmark-18",
+   "group": "u3",
+   "kind": "checkbox",
+   "label": "3 Markieren: an",
+   "answer": "true",
+   "x": 349,
+   "y": 1601,
+   "w": 23,
+   "h": 13
+  },
+  {
+   "id": "verbmark-19",
+   "group": "u3",
+   "kind": "checkbox",
+   "label": "3 Markieren: Disco",
+   "answer": "false",
+   "x": 341,
+   "y": 1536,
+   "w": 46,
+   "h": 18
+  },
+  {
+   "id": "verbmark-20",
+   "group": "u3",
+   "kind": "checkbox",
+   "label": "3 Markieren: Dich",
+   "answer": "false",
+   "x": 314,
+   "y": 1597,
+   "w": 32,
+   "h": 18
   }
  ],
  "audio": [],
@@ -1414,7 +1996,8 @@
   "notes": [
    "Lektion 10 start (Ü1-Ü3). Answers from AB Lösungsschlüssel (1 b Halt c Vorsicht d Bahnsteig; 2 b-f; 3 a-d).",
    "Ü1a: 'Flughafen' is a printed blue example (word, no field). Ü2a 'ankommen' is the printed example (blue 'kommen', no field). Ü3a: 'kaufe'/'ein' yellow markings and blue 'einkaufen' are the printed example; the two empty rules take the remaining key answers kochen, fernsehen.",
-   "Ü2 letter-skeleton rows: one field per row (full word); the printed skeleton letters/dashes are covered by the field box. Big corner '10' and vertical side tabs excluded per convention."
+   "Ü2 letter-skeleton rows: one field per row (full word); the printed skeleton letters/dashes are covered by the field box. Big corner '10' and vertical side tabs excluded per convention.",
+   "2026-11-16: Source scan/fonts restored. Three bank word selects;32single missing-letter cells preserve skeleton;9infinitive fields and21verb-marking targets (13correct,8distractors). Original examples preserved."
   ]
  }
 }
