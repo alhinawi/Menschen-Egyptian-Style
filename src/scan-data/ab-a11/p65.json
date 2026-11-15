@@ -1385,7 +1385,558 @@
    "h": 16
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "own-0",
+   "group": "own",
+   "kind": "text",
+   "label": "Ausstellung in meiner Sprache",
+   "x": 360,
+   "y": 307,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-1",
+   "group": "own",
+   "kind": "text",
+   "label": "Bar in meiner Sprache",
+   "x": 360,
+   "y": 332,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-2",
+   "group": "own",
+   "kind": "text",
+   "label": "Café in meiner Sprache",
+   "x": 360,
+   "y": 358,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-3",
+   "group": "own",
+   "kind": "text",
+   "label": "Disco in meiner Sprache",
+   "x": 360,
+   "y": 383,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-4",
+   "group": "own",
+   "kind": "text",
+   "label": "Kneipe in meiner Sprache",
+   "x": 360,
+   "y": 408,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-5",
+   "group": "own",
+   "kind": "text",
+   "label": "Konzert in meiner Sprache",
+   "x": 360,
+   "y": 482,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-6",
+   "group": "own",
+   "kind": "text",
+   "label": "Museum/Museen in meiner Sprache",
+   "x": 360,
+   "y": 534,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-7",
+   "group": "own",
+   "kind": "text",
+   "label": "Restaurant in meiner Sprache",
+   "x": 360,
+   "y": 583,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-8",
+   "group": "own",
+   "kind": "text",
+   "label": "Schwimmbad in meiner Sprache",
+   "x": 360,
+   "y": 633,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-9",
+   "group": "own",
+   "kind": "text",
+   "label": "Theater in meiner Sprache",
+   "x": 360,
+   "y": 659,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-10",
+   "group": "own",
+   "kind": "text",
+   "label": "Uhr in meiner Sprache",
+   "x": 360,
+   "y": 734,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-11",
+   "group": "own",
+   "kind": "text",
+   "label": "um vier in meiner Sprache",
+   "x": 360,
+   "y": 759,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-12",
+   "group": "own",
+   "kind": "text",
+   "label": "um halb sechs in meiner Sprache",
+   "x": 360,
+   "y": 785,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-13",
+   "group": "own",
+   "kind": "text",
+   "label": "Es ist fünf/zehn vor/nach in meiner Sprache",
+   "x": 360,
+   "y": 837,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-14",
+   "group": "own",
+   "kind": "text",
+   "label": "halb in meiner Sprache",
+   "x": 360,
+   "y": 861,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-15",
+   "group": "own",
+   "kind": "text",
+   "label": "Viertel vor/nach in meiner Sprache",
+   "x": 360,
+   "y": 886,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-16",
+   "group": "own",
+   "kind": "text",
+   "label": "Bis vier!/Bis dann! in meiner Sprache",
+   "x": 360,
+   "y": 911,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-17",
+   "group": "own",
+   "kind": "text",
+   "label": "Morgen in meiner Sprache",
+   "x": 360,
+   "y": 987,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-18",
+   "group": "own",
+   "kind": "text",
+   "label": "Vormittag in meiner Sprache",
+   "x": 360,
+   "y": 1012,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-19",
+   "group": "own",
+   "kind": "text",
+   "label": "Mittag in meiner Sprache",
+   "x": 360,
+   "y": 1037,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-20",
+   "group": "own",
+   "kind": "text",
+   "label": "Nachmittag in meiner Sprache",
+   "x": 360,
+   "y": 1062,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-21",
+   "group": "own",
+   "kind": "text",
+   "label": "Abend in meiner Sprache",
+   "x": 360,
+   "y": 1087,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-22",
+   "group": "own",
+   "kind": "text",
+   "label": "Nacht in meiner Sprache",
+   "x": 360,
+   "y": 1112,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-23",
+   "group": "own",
+   "kind": "text",
+   "label": "Liebe/Lieber in meiner Sprache",
+   "x": 360,
+   "y": 1188,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-24",
+   "group": "own",
+   "kind": "text",
+   "label": "Liebe Grüße in meiner Sprache",
+   "x": 360,
+   "y": 1213,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-25",
+   "group": "own",
+   "kind": "text",
+   "label": "Herzliche Grüße in meiner Sprache",
+   "x": 360,
+   "y": 1239,
+   "w": 182,
+   "h": 23
+  },
+  {
+   "id": "own-26",
+   "group": "own",
+   "kind": "text",
+   "label": "Tag in meiner Sprache",
+   "x": 717,
+   "y": 279,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-27",
+   "group": "own",
+   "kind": "text",
+   "label": "Woche in meiner Sprache",
+   "x": 717,
+   "y": 305,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-28",
+   "group": "own",
+   "kind": "text",
+   "label": "Montag in meiner Sprache",
+   "x": 717,
+   "y": 330,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-29",
+   "group": "own",
+   "kind": "text",
+   "label": "Dienstag in meiner Sprache",
+   "x": 717,
+   "y": 356,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-30",
+   "group": "own",
+   "kind": "text",
+   "label": "Mittwoch in meiner Sprache",
+   "x": 717,
+   "y": 381,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-31",
+   "group": "own",
+   "kind": "text",
+   "label": "Donnerstag in meiner Sprache",
+   "x": 717,
+   "y": 431,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-32",
+   "group": "own",
+   "kind": "text",
+   "label": "Freitag in meiner Sprache",
+   "x": 717,
+   "y": 456,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-33",
+   "group": "own",
+   "kind": "text",
+   "label": "Samstag in meiner Sprache",
+   "x": 717,
+   "y": 482,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-34",
+   "group": "own",
+   "kind": "text",
+   "label": "Sonntag in meiner Sprache",
+   "x": 717,
+   "y": 507,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-35",
+   "group": "own",
+   "kind": "text",
+   "label": "Essen in meiner Sprache",
+   "x": 717,
+   "y": 583,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-36",
+   "group": "own",
+   "kind": "text",
+   "label": "Fernsehen in meiner Sprache",
+   "x": 717,
+   "y": 608,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-37",
+   "group": "own",
+   "kind": "text",
+   "label": "Kaffee in meiner Sprache",
+   "x": 717,
+   "y": 633,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-38",
+   "group": "own",
+   "kind": "text",
+   "label": "Radio in meiner Sprache",
+   "x": 717,
+   "y": 659,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-39",
+   "group": "own",
+   "kind": "text",
+   "label": "sehen in meiner Sprache",
+   "x": 717,
+   "y": 696,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-40",
+   "group": "own",
+   "kind": "text",
+   "label": "wissen in meiner Sprache",
+   "x": 717,
+   "y": 722,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-41",
+   "group": "own",
+   "kind": "text",
+   "label": "bald in meiner Sprache",
+   "x": 717,
+   "y": 759,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-42",
+   "group": "own",
+   "kind": "text",
+   "label": "besonders in meiner Sprache",
+   "x": 717,
+   "y": 785,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-43",
+   "group": "own",
+   "kind": "text",
+   "label": "höflich/unhöflich in meiner Sprache",
+   "x": 717,
+   "y": 835,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-44",
+   "group": "own",
+   "kind": "text",
+   "label": "morgen in meiner Sprache",
+   "x": 717,
+   "y": 860,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-45",
+   "group": "own",
+   "kind": "text",
+   "label": "noch in meiner Sprache",
+   "x": 717,
+   "y": 885,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-46",
+   "group": "own",
+   "kind": "text",
+   "label": "noch nicht in meiner Sprache",
+   "x": 717,
+   "y": 910,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-47",
+   "group": "own",
+   "kind": "text",
+   "label": "spät in meiner Sprache",
+   "x": 717,
+   "y": 936,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-48",
+   "group": "own",
+   "kind": "text",
+   "label": "vielleicht in meiner Sprache",
+   "x": 717,
+   "y": 961,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-49",
+   "group": "own",
+   "kind": "text",
+   "label": "Warum nicht? in meiner Sprache",
+   "x": 717,
+   "y": 999,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-50",
+   "group": "own",
+   "kind": "text",
+   "label": "Keine Lust. in meiner Sprache",
+   "x": 717,
+   "y": 1024,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-51",
+   "group": "own",
+   "kind": "text",
+   "label": "Lust auf...? in meiner Sprache",
+   "x": 717,
+   "y": 1049,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-52",
+   "group": "own",
+   "kind": "text",
+   "label": "Gute Idee! in meiner Sprache",
+   "x": 717,
+   "y": 1074,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-53",
+   "group": "own",
+   "kind": "text",
+   "label": "Idee in meiner Sprache",
+   "x": 717,
+   "y": 1100,
+   "w": 188,
+   "h": 23
+  },
+  {
+   "id": "own-vocabulary",
+   "group": "own",
+   "kind": "text",
+   "label": "2 Weitere Wörter",
+   "x": 195,
+   "y": 1339,
+   "w": 711,
+   "h": 51
+  }
+ ],
  "audio": [],
  "groups": [],
  "review": {
@@ -1393,7 +1944,8 @@
   "verifiedWords": 197,
   "totalWords": 197,
   "notes": [
-   "Lernwortschatz L8: translation rules are personal (Wie heissen die Woerter in Ihrer Sprache?) - no fields, same as p59. Owner practice ink under the TIPP box ('Montag - Dienstag - Mittwoch ...', 'Vormittag - Mittag - Nachmittag ...') excluded. U2 'Welche Woerter moechten Sie noch lernen?' personal - no fields. Right-edge film photos are graphics."
+   "Lernwortschatz L8: translation rules are personal (Wie heissen die Woerter in Ihrer Sprache?) - no fields, same as p59. Owner practice ink under the TIPP box ('Montag - Dienstag - Mittwoch ...', 'Vormittag - Mittag - Nachmittag ...') excluded. U2 'Welche Woerter moechten Sie noch lernen?' personal - no fields. Right-edge film photos are graphics.",
+   "2026-11-15: original source scan/fonts and all54 own-translation lines plus own vocabulary textarea,locally saved/resettable,ungraded."
   ]
  }
 }
