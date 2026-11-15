@@ -1,0 +1,29 @@
+/* Cover-only rules. Keep the reader shell, account panel and exercise pages untouched. */
+@font-face{font-family:CoverNaskh;src:url('/assets/fonts/cover-naskh.ttf') format('truetype');font-weight:400 700;font-display:swap}
+.page.bookCover{padding:28px;background:#4c2632!important;isolation:isolate}
+.bookCover .premiumCover{box-sizing:border-box;height:100%;padding:38px 48px 30px;border:1px solid #c6ab70;background:radial-gradient(ellipse at 50% 14%,#fffcf6 25%,#f5eedf 100%);box-shadow:inset 0 0 0 7px #f9f3e6,inset 0 0 0 8px #d9c7a2;overflow:hidden;gap:0}
+.bookCover .premiumCover::before{inset:15px;border-color:#d7c5a3}
+.bookCover .premiumCoverMasthead{display:flex;align-items:center;justify-content:space-between;width:100%;margin:0 0 30px;font:600 21px/1.4 Arial,sans-serif;letter-spacing:5px;color:#6d4e30}
+.bookCover .premiumCoverLevel{font:22px/1 Georgia,serif;letter-spacing:2px;border:1px solid #c9b281;border-radius:30px;padding:12px 22px;color:#683849}
+.bookCover .premiumCoverArt{position:relative;flex:0 0 auto;width:540px;height:720px;margin:0;isolation:isolate;background-size:100% 100%;background-color:#e9dfcf;box-shadow:0 25px 35px -16px #3f20286b,0 4px 8px #34222a26;outline:1px solid #6a44301c}
+.bookCover .premiumCoverArt::after{content:'';position:absolute;inset:0;pointer-events:none;box-shadow:inset 6px 0 8px -6px #fff9,inset 12px 0 9px -9px #291a35aa,inset -1px 0 #ffffff60}
+.bookCover .premiumCoverArt .coverArtwork{display:block;width:100%;height:100%;min-height:0;max-width:none;object-fit:contain;box-shadow:none;opacity:0;transition:opacity .5s ease}
+.bookCover .premiumCoverArt .coverArtwork.isLoaded{opacity:1}
+.bookCover .premiumCoverEdition{display:flex;align-items:center;justify-content:center;gap:20px;margin-top:24px;font:21px/1.5 Georgia,serif;letter-spacing:1.4px;color:#6f4e35}
+.bookCover .premiumCoverDiamond{font-size:10px;color:#ad8b47}
+.bookCover .premiumCover .coverOwner{margin-top:18px;text-align:center}
+.bookCover .premiumCover .coverSmall{font:24px/1.5 CoverNaskh,'Noto Naskh Arabic',serif;color:#735d42!important}
+.bookCover .premiumCover .coverOwner h1{font:700 94px/1.1 CoverNaskh,'Noto Naskh Arabic',serif;color:#4c2632!important;margin:6px 0 0}
+.bookCover .premiumCover .coverOwner h1::after{width:65px;margin:17px auto 0;border-bottom:1px solid #b18d4d}
+.bookCover .premiumCover .coverSocials{margin-top:22px;gap:18px;direction:ltr}
+.bookCover .premiumCover .coverSocial{box-sizing:border-box;width:102px;height:102px;min-height:102px;padding:31px;border-radius:50%;border:1px solid #c6af82!important;background:transparent!important;box-shadow:none;color:#693745!important;transition:background .18s,transform .18s,box-shadow .18s}
+.bookCover .premiumCover .coverSocial svg{display:block;width:36px;height:36px}
+.bookCover .premiumCover .coverSocial:first-child{background:#693745!important;border-color:#693745!important;color:#fff9ed!important}
+.bookCover .premiumCover .coverSocial:hover{transform:translateY(-4px);box-shadow:0 7px 12px #4c26321a;background:#eee2cd!important}
+.bookCover .premiumCover .coverSocial:first-child:hover{background:#4c2632!important}
+.bookCover .premiumCover .coverOpen{box-sizing:border-box;flex:none;min-height:84px;min-width:360px;margin:24px 0 0;padding:16px 42px;border:1px solid #693745;border-radius:10px;background:#693745!important;box-shadow:0 8px 18px #4c263221,inset 0 1px #ffffff25;color:#fff9ed!important;font:500 28px/1.5 Arial,sans-serif;letter-spacing:1px;cursor:pointer;transition:background .18s,transform .18s}
+.bookCover .premiumCover .coverOpen:hover{background:#4c2632!important;transform:translateY(-2px)}
+.bookCover .premiumCover :is(a,button):focus-visible{outline:4px solid #9e6b24;outline-offset:6px}
+.bookCover .premiumCoverAudio{margin:15px 0 0;font:20px/1.5 Georgia,serif;color:#725e48!important;letter-spacing:.5px}
+.bookCover .premiumCover .coverCopy{margin-top:auto;padding-top:20px;font:18px/1.5 Arial,sans-serif;letter-spacing:.5px;color:#74634e!important;text-align:center}
+@media(prefers-reduced-motion:reduce){.bookCover .premiumCover *{transition:none!important;transform:none!important}}
