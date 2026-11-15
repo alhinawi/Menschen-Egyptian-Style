@@ -26,6 +26,7 @@ export function useUiLanguage() {
 // are learning content and must never pass through this dictionary.
 export const UI_COPY: [string, string][] = [
  ['German','الألمانية'], ['German explanation is not available for this text yet.','الشرح الألماني للنص ده لسه مش جاهز.'],
+ ['Follow UI','لغة الواجهة'],
  ['Translation language','لغة الترجمة'], ['Follow interface language','نفس لغة الواجهة'], ['Arabic','العربية'], ['English','الإنجليزية'],
  ['English translation is not available for this text yet.','الترجمة الإنجليزية للنص ده لسه مش جاهزة.'],
  ['Account & settings','الحساب والإعدادات'], ['Settings','الإعدادات'], ['Account','الحساب'],
