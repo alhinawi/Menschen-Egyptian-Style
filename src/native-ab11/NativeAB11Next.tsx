@@ -192,38 +192,36 @@ export function NativeAB11Next({page}:{page:string}){
  {['Leben deine Eltern in Kiel?','Du studierst nicht, oder?','Deine Schwester ist auch Schauspielerin, oder?','Deine Frau heißt nicht Sandra, oder?'].map((s,i)=>{const x=[480,460,650,566][i],y=[1266,1292,1318,1344][i];return <div key={s}>{text(209,y,x-216,String.fromCharCode(98+i)+'  '+s)}{field('u6-'+String.fromCharCode(98+i),x,y-3,88,'6'+String.fromCharCode(98+i))}{text(x+94,y,1040-x-94,[', meine Eltern leben nicht in Kiel.',', ich studiere Physik.',', sie ist auch Schauspielerin.',', sie heißt Sandra.'][i])}</div>})}
  {checkGroup('u6',1007,1358)}
  </>}
- {page==='19'&&<>
+ {page==='19'&&(()=>{const k=1075/900,Y=1/.94;const T=(x:number,y:number,w:number,s:string,c='')=>text(x*k,y*k*Y,w*k,s,c);const F=(id:string,x:number,y:number,w:number,label:string)=>field(id,x*k,y*k*Y,w*k,label);const I=(n:string,x:number,y:number,w:number,h:number)=>img(n,x*k,y*k*Y,w*k,h*k);const H=(n:string,y:number,s:string,kb:string,side:string)=><>{T(91,y+5,40,kb,'nabKB')}<div className="nabNumber" style={{left:124*k,top:y*k}}>{n}</div>{T(160,y,680,s,'nabTitle')}{T(102,y+35,20,side,'nabSideText')}</>;return <>
  {head('BASISTRAINING')}<div className="nabModule">3</div>
- {title('7',235,'Ordnen Sie zu.','KB 6','Wörter')}{text(202,275,820,'Schwester | Vater | Sohn | Opa | Enkelin | (Ehe-)Frau | Großvater','nabBank')}
- {text(202,324,110,'♂','nabGender')}{text(400,324,110,'♀','nabGender')}{text(632,324,110,'♂','nabGender')}{text(835,324,110,'♀','nabGender')}
- {text(202,371,153,'Sohn','nabExample')}{text(202,398,153,'Bruder')}{field('u7-m1',202,425,153,'7 Vater')}
- {text(400,371,153,'Tochter')}{field('u7-w1',400,398,153,'7 Schwester')}{text(400,425,153,'Mutter')}
- {text(632,371,153,'(Ehe-)Mann')}{text(632,398,153,'Enkel')}{field('u7-m2a',632,425,153,'7 Opa')}{field('u7-m2b',632,452,153,'7 Großvater')}
- {field('u7-w2a',835,368,153,'7 Ehefrau')}{field('u7-w2b',835,395,153,'7 Enkelin')}{text(835,425,153,'Oma')}{text(835,452,153,'Großmutter')}
- {checkGroup('u7',202,494)}
- {title('8',534,'Silbenrätsel. Ergänzen Sie.','KB 6','Wörter')}{text(202,574,560,'der | el | el | groß | kin | schwes | tern | tern | tern','nabBank')}
- {img('a',165,620,187,136)}{img('b',385,630,167,124)}{img('c',579,606,190,148)}{img('d',795,568,216,148)}
- {text(202,792,412,'a  Meine Kinder auf Sylt.')}{text(202,823,99,'b  Meine')}{field('u8-b',308,820,153,'8b Eltern')}{text(468,823,170,'in den Alpen.')}
- {text(621,792,99,'c  Meine')}{field('u8-c',727,789,153,'8c Großeltern')}{text(886,792,160,'bei der goldenen\nHochzeit.')}
- {text(621,853,165,'d  Ich und meine')}{field('u8-d',793,850,153,'8d Schwestern')}{text(953,853,100,'in Paris.')}
- {checkGroup('u8',202,891)}
- {title('9',931,'Ordnen Sie zu.','KB 6')}{text(202,971,760,'dein | deine | mein | mein | mein | meine | meine','nabBank')}
- {text(202,1011,700,'▪ Sind das deine (a) Kinder auf dem Bild?')}
- {text(202,1042,131,'▴ Ja, das sind')}{field('u9-b',339,1039,115,'9b meine')}{text(460,1042,253,'(b) Kinder. Das hier ist')}{field('u9-c',720,1039,115,'9c meine')}{text(841,1042,190,'(c) Tochter Leonie und')}
- {text(225,1073,115,'das hier ist')}{field('u9-d',346,1070,115,'9d mein')}{text(467,1073,325,'(d) Sohn Torben. Und hier ist')}{field('u9-e',799,1070,115,'9e mein')}{text(920,1073,120,'(e) Bruder.')}
- {text(202,1104,126,'▪ Was macht')}{field('u9-f',335,1101,115,'9f dein')}{text(456,1104,185,'(f) Bruder?')}
- {text(202,1135,20,'▴')}{field('u9-g',230,1132,115,'9g Mein')}{text(352,1135,675,'(g) Bruder lebt in Berlin und arbeitet als IT-Spezialist.')}
- {checkGroup('u9',202,1174)}
- {title('10',1214,'Familienrätsel. Ergänzen Sie und beantworten Sie die Fragen.','KB 7')}
- {text(202,1254,235,'Meine Schwester heißt')}{field('u10-l1',443,1251,130,'10 Schwester')}{text(580,1254,140,'Sie studiert Physik')}
- {text(202,1284,102,'in Berlin.')}{field('u10-l2',309,1281,69,'10 meine Eltern')}{text(384,1284,310,'Eltern leben in Konstanz.')}{field('u10-l3',698,1281,72,'10 mein Vater')}
- {text(202,1314,352,'Vater Georg arbeitet als Journalist und')}{field('u10-l4',560,1311,104,'10 meine Mutter')}{text(671,1314,88,'Mutter')}
- {text(202,1344,360,'ist Lehrerin, genau wie mein Opa.')}{field('u10-l5',568,1341,85,'10 meine Oma')}{text(660,1344,110,'Oma Karen')}
- {text(202,1374,333,'arbeitet nicht mehr, sie ist Rentnerin.')}{field('u10-l6',541,1371,83,'10 meine Großeltern')}{text(631,1374,140,'Großeltern leben')}
- {text(202,1404,510,'in Österreich. Genau wie ich.')}{img('tree',790,1261,255,199)}
- {['Wie heiße ich?','Wie heißt meine Mutter?','Wie heißt mein Opa?'].map((s,i)=><div key={s}>{text(202,1450+i*30,265,String.fromCharCode(97+i)+'  '+s)}{field('u10-'+String.fromCharCode(97+i),478,1447+i*30,273,'10'+String.fromCharCode(97+i))}</div>)}
- {checkGroup('u10',815,1490)}
- </>}
+ {H('7',193,'Ordnen Sie zu.','KB 6','Wörter')}{T(160,227,510,'Schwester | Vater | Sohn | Opa | Enkelin | (Ehe-)Frau | Großvater','nabBank')}
+ {I('male',157,258,37,40)}{I('female',319,258,35,40)}{I('male',512,258,37,40)}{I('female',672,258,35,40)}
+ {I('sohn',159,302,36,18)}{T(159,323,150,'Bruder')}{F('u7-m1',159,338,127,'7 Vater')}
+ {T(320,302,150,'Tochter')}{F('u7-w1',320,318,123,'7 Schwester')}{T(320,344,150,'Mutter')}
+ {T(514,302,150,'(Ehe-)Mann')}{T(514,323,150,'Enkel')}{F('u7-m2a',514,338,128,'7 Opa')}{F('u7-m2b',514,359,128,'7 Großvater')}
+ {F('u7-w2a',672,296,123,'7 Ehefrau')}{F('u7-w2b',672,317,123,'7 Enkelin')}{T(672,344,150,'Oma')}{T(672,365,150,'Großmutter')}
+ <div className="nabP19Divider"/>{checkGroup('u7',1010,462)}
+ {H('8',405,'Silbenrätsel. Ergänzen Sie.','KB 6','Wörter')}{T(160,441,330,'der | el | el | groß | kin | schwes | tern | tern | tern','nabBank')}
+ {I('a',129,474,160,116)}{I('b',313,485,141,105)}{I('c',476,466,159,123)}{I('d',655,436,185,127)}
+ {T(159,619,75,'a  Meine')}{I('kinder',228,619,46,18)}{T(274,619,160,'auf Sylt.')}{T(159,641,75,'b  Meine')}{F('u8-b',228,636,107,'8b Eltern')}{T(337,641,150,'in den Alpen.')}
+ {T(466,619,75,'c  Meine')}{F('u8-c',534,614,105,'8c Großeltern')}{T(643,619,230,'bei der goldenen Hochzeit.')}
+ {T(466,641,130,'d  Ich und meine')}{F('u8-d',594,636,105,'8d Schwestern')}{T(704,641,140,'in Paris.')}{checkGroup('u8',1010,792)}
+ {H('9',691,'Ordnen Sie zu.','KB 6','Strukturen')}{T(160,725,325,'dein | deine | mein | mein | mein | meine | meine','nabBank')}
+ {T(160,758,20,'▪','nabSquare')}{T(179,758,63,'Sind das')}{I('deine',244,757,34,19)}{T(281,758,360,'(a) Kinder auf dem Bild?')}
+ {T(160,780,20,'▴','nabTriangle')}{T(179,780,87,'Ja, das sind')}{F('u9-b',267,775,85,'9b meine')}{T(356,780,165,'(b) Kinder. Das hier ist')}{F('u9-c',524,775,62,'9c meine')}{T(591,780,245,'(c) Tochter Leonie und')}
+ {T(179,801,85,'das hier ist')}{F('u9-d',264,796,75,'9d mein')}{T(343,801,210,'(d) Sohn Torben. Und hier ist')}{F('u9-e',558,796,73,'9e mein')}{T(635,801,150,'(e) Bruder.')}
+ {T(160,822,20,'▪','nabSquare')}{T(179,822,84,'Was macht')}{F('u9-f',264,817,73,'9f dein')}{T(340,822,130,'(f) Bruder?')}
+ {T(160,844,20,'▴','nabTriangle')}{F('u9-g',179,839,64,'9g Mein')}{T(247,844,580,'(g) Bruder lebt in Berlin und arbeitet als IT-Spezialist.')}{checkGroup('u9',1010,1024)}
+ {H('10',915,'Familienrätsel. Ergänzen Sie und beantworten Sie die Fragen.','KB 7','Strukturen')}
+ {I('meine',159,947,40,21)}{T(200,948,130,'Schwester heißt')}{F('u10-l1',320,943,99,'10 Schwester')}{T(423,948,200,'. Sie studiert Physik')}
+ {T(160,969,73,'in Berlin.')}{F('u10-l2',235,964,53,'10 meine Eltern')}{T(292,969,186,'Eltern leben in Konstanz.')}{F('u10-l3',481,964,69,'10 mein Vater')}
+ {T(160,990,280,'Vater Georg arbeitet als Journalist und')}{F('u10-l4',443,985,76,'10 meine Mutter')}{T(522,990,80,'Mutter')}
+ {T(160,1011,247,'ist Lehrerin, genau wie mein Opa.')}{F('u10-l5',409,1006,77,'10 meine Oma')}{T(489,1011,110,'Oma Karen')}
+ {T(160,1032,274,'arbeitet nicht mehr, sie ist Rentnerin.')}{F('u10-l6',437,1027,75,'10 meine Großeltern')}{T(515,1032,100,'Groß-')}{T(160,1053,410,'eltern leben in Österreich. Genau wie ich.')}
+ {I('tree',600,963,232,171)}
+ {['Wie heiße ich?','Wie heißt meine Mutter?','Wie heißt mein Opa?'].map((t,i)=><div key={t}>{T(160,1087+i*21,240,String.fromCharCode(97+i)+'  '+t)}{F('u10-'+String.fromCharCode(97+i),[291,365,335][i],1082+i*21,[216,195,216][i],'10'+String.fromCharCode(97+i))}</div>)}{checkGroup('u10',1010,1340)}
+ </>})()}
+
  {text(Number(page)%2?991:50,1485,80,'Modul 1','nabFooter')}{text(Number(page)%2?810:130,1485,175,Number(page)%2?({'13':'dreizehn','15':'fünfzehn','17':'siebzehn','19':'neunzehn'} as Record<string,string>)[page]+' | '+page:page+' | '+({'12':'zwölf','14':'vierzehn','16':'sechzehn','18':'achtzehn'} as Record<string,string>)[page],'nabFooter')}
  </div><audio ref={audio} className="nabPlayer" controls hidden aria-label="Originalaudio Arbeitsbuch"/></div>;
 }

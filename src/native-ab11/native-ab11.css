@@ -482,3 +482,24 @@
 .nativeAB11[data-native-ab11-page='18'] .nabP18WritingPanel .nabOpen{height:100px!important;background:repeating-linear-gradient(transparent 0 24px,#929792 24px 25px)!important}
 .nativeAB11[data-native-ab11-page='18'] .nabP18Category>div{display:none}
 .nativeAB11[data-native-ab11-page='18'] .nabP18Category:hover>div,.nativeAB11[data-native-ab11-page='18'] .nabP18Category:focus-within>div{display:block;box-shadow:0 3px 10px #7775}
+/* Page 19: family vocabulary, photograph captions and family puzzle. */
+.nativeAB11[data-native-ab11-page='19'] .nabText{font:19px/25px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='19'] .nabTitle{font:700 20px/26px ABScanSans,Arial,sans-serif}
+.nativeAB11[data-native-ab11-page='19'] .nabHeader{font:29px/32px KbDroid,Georgia,serif;left:149px!important;top:154px!important;letter-spacing:1px;transform:scaleX(.94);transform-origin:left top}
+.nativeAB11[data-native-ab11-page='19'] .nabHeaderLine{left:392px;top:178px;width:592px;height:1px;background:#ed9300}
+.nativeAB11[data-native-ab11-page='19'] .nabModule{font:76px/76px KbDroid,Georgia,serif;left:1007px;background:#f9a900}
+.nativeAB11[data-native-ab11-page='19'] .nabNumber{background:#ffb500}
+.nativeAB11[data-native-ab11-page='19'] .nabBank{font:18px/23px ABScanSans,Arial,sans-serif;background:#fffbd5;color:#20346d}
+.nativeAB11[data-native-ab11-page='19'] .nabKB{font:11px/15px ABScanSans,Arial,sans-serif;color:#269ac1}
+.nativeAB11[data-native-ab11-page='19'] .nabSideText{font:700 10px/13px ABScanSans,Arial,sans-serif;color:#233b72;writing-mode:vertical-rl;transform:rotate(180deg);text-transform:uppercase;letter-spacing:1px}
+.nativeAB11[data-native-ab11-page='19'] .nabCanvas .nabInput{border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;height:21px!important}
+.nativeAB11[data-native-ab11-page='19'] .nabCanvas select.nabInput{font-size:16px!important}
+.nativeAB11[data-native-ab11-page='19'] .nabP19Divider{position:absolute;left:572px;top:306px;width:1px;height:151px;background:#cdc8a3}
+.nativeAB11[data-native-ab11-page='19'] .nabSquare{color:#042475}
+.nativeAB11[data-native-ab11-page='19'] .nabTriangle{color:#1bb334}
+.nativeAB11[data-native-ab11-page='19'] .nabCheck{left:1008px!important;translate:none!important}
+.nativeAB11[data-native-ab11-page='19'] .nabFooter{font:16px KbDroid,Georgia,serif;top:1437px!important}
+.nativeAB11[data-native-ab11-page='19'] .nabFooter[style*='991px']{left:1025px!important;background:#e5dda6;color:white;font:italic 13px/18px Georgia,serif;text-align:center}
+.nativeAB11[data-native-ab11-page='19'] .nabFooter[style*='810px']{left:884px!important}
+.nativeAB11[data-native-ab11-page='19'] .nabHeader{transform:scaleX(1.02)}
+.nativeAB11[data-native-ab11-page='19'] .nabCanvas:after{content:'';position:absolute;left:190px;top:377px;width:151px;border-bottom:1px solid #929792}
