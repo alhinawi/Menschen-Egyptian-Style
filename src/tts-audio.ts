@@ -31,8 +31,14 @@ export function installTtsMode() {
  document.body.dataset.audio = 'tts';
  // Original coursebook tracks (dialogue CDs) have no transcripts, so they
  // cannot be synthesized; hide their play buttons instead of dead-ends.
+ // Narrow exception: original-CD tracks this build actually packaged (e.g.
+ // the AB CD1 tracks the Arbeitsbuch Lektion 5 pages need) keep their
+ // controls - the files ship, so those buttons are not dead ends.
+ const packagedTracks = (cfAudioManifest as string[])
+  .filter(f => /^assets\/[^/]*-(cd\d-)?track\d+\.(mp3|wav|ogg)$/i.test(f));
+ const exempt = packagedTracks.map(f => `:not([data-audio-src="${f}"])`).join('');
  const style = document.createElement('style');
- style.textContent = 'body[data-audio="tts"] .listen,body[data-audio="tts"] .naAudio,'
-  + 'body[data-audio="tts"] .nativeAudioMarker,body[data-audio="tts"] .hybridAudio{display:none!important}';
+ style.textContent = 'body[data-audio="tts"] '
+  + `:is(.listen,.naAudio,.nativeAudioMarker,.hybridAudio)${exempt}{display:none!important}`;
  document.head.append(style);
 }
