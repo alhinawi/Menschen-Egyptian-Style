@@ -269,3 +269,8 @@ html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .hybridField
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='58'] .hybridCheck:nth-child(3){top:56%}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='58'] .hybridCheck:nth-child(4){top:70.5%}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='58'] .hybridCheck:nth-child(5){top:83%}
+
+/* AB p59: save every own-language translation on the source rules. */
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='59'] .hybridField{font-size:1.5cqw!important;outline:0;resize:none}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='59'] .hybridField:focus{outline:1px solid #26764c}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='59'] textarea.hybridField{line-height:2.36cqw!important}
