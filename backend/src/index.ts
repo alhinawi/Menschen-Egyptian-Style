@@ -58,8 +58,8 @@ async function saveProgress(db: D1Database, userId: number, data: string, now: s
   ).bind(userId, data, now).run()
 }
 
-type UserRow = { id: number; name: string; email: string; created_at: string; avatar: string | null }
-const publicUser = (u: UserRow) => ({ id: u.id, name: u.name, email: u.email, created_at: u.created_at, avatar: u.avatar ?? null })
+type UserRow = { id: number; name: string; email: string; created_at: string; avatar: string | null; google_avatar: string | null }
+const publicUser = (u: UserRow) => ({ id: u.id, name: u.name, email: u.email, created_at: u.created_at, avatar: u.avatar ?? null, google_avatar: u.google_avatar ?? null })
 
 app.get('/api/ping', (c) => c.json({ ok: true, app: 'menscheny-api' }))
 
@@ -86,7 +86,7 @@ app.post('/api/auth/register', async (c) => {
     .bind(name, mail, await hashPassword(password))
     .run()
   const userId = Number(res.meta.last_row_id)
-  const user = (await c.env.DB.prepare('SELECT id, name, email, created_at, avatar FROM users WHERE id = ?').bind(userId).first<UserRow>())!
+  const user = (await c.env.DB.prepare('SELECT id, name, email, created_at, avatar, google_avatar FROM users WHERE id = ?').bind(userId).first<UserRow>())!
 
   // Optional one-time migration: the visitor's localStorage progress blob moves into the account.
   const local = b.progress
@@ -103,7 +103,7 @@ app.post('/api/auth/login', async (c) => {
   const b = await json(c)
   const mail = email(b)
   const password = str(b, 'password', { max: 200, required: true })!
-  const row = await c.env.DB.prepare('SELECT id, name, email, created_at, password_hash FROM users WHERE email = ?')
+  const row = await c.env.DB.prepare('SELECT id, name, email, created_at, avatar, google_avatar, password_hash FROM users WHERE email = ?')
     .bind(mail)
     .first<UserRow & { password_hash: string }>()
   // Run a hash even for unknown emails so timing does not reveal which emails exist.
@@ -122,7 +122,7 @@ app.post('/api/auth/logout', async (c) => {
 // ---------- me ----------
 app.use('/api/me', auth)
 app.get('/api/me', async (c) => {
-  const u = (await c.env.DB.prepare('SELECT id, name, email, created_at, avatar FROM users WHERE id = ?').bind(c.get('userId')).first<UserRow>())!
+  const u = (await c.env.DB.prepare('SELECT id, name, email, created_at, avatar, google_avatar FROM users WHERE id = ?').bind(c.get('userId')).first<UserRow>())!
   return c.json({ user: publicUser(u) })
 })
 const AVATAR_RE = /^(https:\/\/lh3\.googleusercontent\.com\/[\w=\-]+|data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+)$/
@@ -136,13 +136,18 @@ app.patch('/api/me', async (c) => {
     const a = b.avatar
     if (a === null || a === '') {
       await c.env.DB.prepare('UPDATE users SET avatar = NULL WHERE id = ?').bind(c.get('userId')).run()
+    } else if (a === 'google') {
+      // Switch back to the Google profile photo captured at sign-in.
+      const row = await c.env.DB.prepare('SELECT google_avatar FROM users WHERE id = ?').bind(c.get('userId')).first<{ google_avatar: string | null }>()
+      if (!row?.google_avatar) throw new ValidationError({ avatar: 'no Google photo on this account' })
+      await c.env.DB.prepare('UPDATE users SET avatar = google_avatar WHERE id = ?').bind(c.get('userId')).run()
     } else if (typeof a === 'string' && a.length <= AVATAR_MAX && AVATAR_RE.test(a)) {
       await c.env.DB.prepare('UPDATE users SET avatar = ? WHERE id = ?').bind(a, c.get('userId')).run()
     } else {
       throw new ValidationError({ avatar: 'image must be a jpeg/png/webp data URL under 30KB' })
     }
   }
-  const u = (await c.env.DB.prepare('SELECT id, name, email, created_at, avatar FROM users WHERE id = ?').bind(c.get('userId')).first<UserRow>())!
+  const u = (await c.env.DB.prepare('SELECT id, name, email, created_at, avatar, google_avatar FROM users WHERE id = ?').bind(c.get('userId')).first<UserRow>())!
   return c.json({ user: publicUser(u) })
 })
 
