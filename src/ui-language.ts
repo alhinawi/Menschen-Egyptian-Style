@@ -1,16 +1,17 @@
+import germanUi from './german-ui.json';
 import {useSyncExternalStore} from 'react';
 
-export type UiLanguage = 'ar' | 'en';
+export type UiLanguage = 'ar' | 'en' | 'de';
 const KEY = 'menschen-ui-language';
 const listeners = new Set<() => void>();
-function saved(): UiLanguage {try {return localStorage.getItem(KEY) === 'en' ? 'en' : 'ar';} catch {return 'ar';}}
+function saved(): UiLanguage {try {const value=localStorage.getItem(KEY);return value==='en'||value==='de'?value:'ar';} catch {return 'ar';}}
 let language: UiLanguage = saved();
 export const getUiLanguage = () => language;
 export function setUiLanguage(next: UiLanguage) {
-  if (next !== 'ar' && next !== 'en') return;
+  if (!['ar','en','de'].includes(next)) return;
   language = next;
   try {localStorage.setItem(KEY, next);} catch { /* usable even in private mode */ }
-  document.documentElement.lang = next === 'ar' ? 'ar-EG' : 'en';
+  document.documentElement.lang = next === 'ar' ? 'ar-EG' : next;
   document.documentElement.dir = next === 'ar' ? 'rtl' : 'ltr';
   document.documentElement.dataset.uiLanguage = next;
   listeners.forEach(fn => fn());
@@ -24,6 +25,7 @@ export function useUiLanguage() {
 // UI copy only. Book exercises, German words and their Egyptian translations
 // are learning content and must never pass through this dictionary.
 export const UI_COPY: [string, string][] = [
+ ['German','الألمانية'], ['German explanation is not available for this text yet.','الشرح الألماني للنص ده لسه مش جاهز.'],
  ['Translation language','لغة الترجمة'], ['Follow interface language','نفس لغة الواجهة'], ['Arabic','العربية'], ['English','الإنجليزية'],
  ['English translation is not available for this text yet.','الترجمة الإنجليزية للنص ده لسه مش جاهزة.'],
  ['Account & settings','الحساب والإعدادات'], ['Settings','الإعدادات'], ['Account','الحساب'],
@@ -68,8 +70,9 @@ const toArabic = new Map(UI_COPY), toEnglish = new Map(UI_COPY.map(([en, ar]) =>
 export function uiText(text: string, lang: UiLanguage = language): string {
   const trimmed = text.trim();
   const aliases: Record<string,string> = {'Coursebook · 24 Lektionen':'Coursebook · 24 lessons','Workbook · 24 Lektionen':'Workbook · 24 lessons'};
-  const en = aliases[trimmed] ?? toEnglish.get(trimmed) ?? trimmed;
-  let translated = lang === 'ar' ? toArabic.get(en) ?? en : en;
+  const fromGerman=new Map(Object.entries(germanUi).map(([en,de])=>[de,en]));
+  const en = aliases[trimmed] ?? toEnglish.get(trimmed) ?? fromGerman.get(trimmed) ?? trimmed;
+  let translated = lang === 'ar' ? toArabic.get(en) ?? en : lang === 'de' ? (germanUi as Record<string,string>)[en] ?? en : en;
   // Dynamic UI labels, never book content.
   const patterns: [RegExp, (m: RegExpMatchArray) => string][] = lang === 'ar' ? [
     [/^Choose page, current page (.+)$/, m => `اختار صفحة، الصفحة الحالية ${uiText(m[1], lang)}`],
@@ -77,11 +80,17 @@ export function uiText(text: string, lang: UiLanguage = language): string {
     [/^(.+) - jump to any page$/, m => `${m[1]} - اختار أي صفحة`],
     [/^(.+) \(unnumbered\)$/, m => `${uiText(m[1], lang)} (من غير رقم)`],
     [/^(Play|Pause|Seek) (.+)$/, m => `${({Play:'تشغيل',Pause:'إيقاف مؤقت',Seek:'تقديم وتأخير'} as Record<string,string>)[m[1]]} ${m[2]}`],
+  ] : lang === 'de' ? [
+    [/^Choose page, current page (.+)$/,m=>`Seite wählen, aktuelle Seite ${uiText(m[1],lang)}`],
+    [/^Reset page (.+)\?$/,m=>`Seite ${m[1]} zurücksetzen?`],
+    [/^(.+) - jump to any page$/,m=>`${m[1]} - zu einer Seite springen`],
+    [/^(.+) \(unnumbered\)$/,m=>`${uiText(m[1],lang)} (ohne Seitenzahl)`],
+    [/^(Play|Pause|Seek) (.+)$/,m=>`${({Play:'Abspielen',Pause:'Pausieren',Seek:'Spulen'} as Record<string,string>)[m[1]]} ${m[2]}`],
   ] : [];
   for (const [pattern, render] of (toArabic.has(en) ? [] : patterns)) {const match = en.match(pattern); if (match) {translated = render(match); break;}}
-  if (/^Lektion \d+$/.test(en)) translated = en.replace('Lektion', lang === 'ar' ? 'الدرس' : 'Lesson');
-  if (/^pp\. /.test(en)) translated = en.replace('pp.', lang === 'ar' ? 'ص' : 'pp.');
-  if (translated === en && lang === 'ar') {
+  if (/^Lektion \d+$/.test(en)) translated = en.replace('Lektion', lang === 'ar' ? 'الدرس' : lang === 'de' ? 'Lektion' : 'Lesson');
+  if (/^pp\. /.test(en)) translated = en.replace('pp.', lang === 'ar' ? 'ص' : lang === 'de' ? 'S.' : 'pp.');
+  if (translated === en && lang !== 'en') {
     translated = en.replace(/(KB|AB) (A1\.[12]) · (Cover|Guide)/g, (_, book, level, label) => `${book} ${level} · ${uiText(label, lang)}`);
   }
   return text.replace(trimmed, translated);
@@ -103,7 +112,7 @@ export function installUiLanguage() {
       let node: Node | null;
       while ((node = walker.nextNode())) {
         const parent = node.parentElement;
-        if (!parent || parent.closest('.profilePanel,.fullscreenCover,script,style,[lang="de"]')) continue;
+        if (!parent || parent.closest('.profilePanel,.fullscreenCover,script,style')) continue;
         const value = node.nodeValue || '';
         const old = originals.get(node);
         const source = old && value === old.output ? old.source : value;
