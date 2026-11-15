@@ -972,10 +972,10 @@
    "kind": "text",
    "label": "Ü4 b Im Gespräch",
    "answer": "halb drei",
-   "x": 306,
-   "y": 356,
+   "x": 305,
+   "y": 346,
    "w": 302,
-   "h": 12
+   "h": 23
   },
   {
    "id": "l8-4-br",
@@ -983,10 +983,10 @@
    "kind": "text",
    "label": "Ü4 b Im Radio/Fernsehen",
    "answer": "vierzehn Uhr dreißig",
-   "x": 632,
-   "y": 356,
-   "w": 348,
-   "h": 12
+   "x": 634,
+   "y": 346,
+   "w": 346,
+   "h": 23
   },
   {
    "id": "l8-4-cg",
@@ -994,10 +994,10 @@
    "kind": "text",
    "label": "Ü4 c Im Gespräch",
    "answer": "zehn nach fünf",
-   "x": 306,
-   "y": 386,
+   "x": 305,
+   "y": 376,
    "w": 302,
-   "h": 12
+   "h": 23
   },
   {
    "id": "l8-4-cr",
@@ -1005,10 +1005,10 @@
    "kind": "text",
    "label": "Ü4 c Im Radio/Fernsehen",
    "answer": "siebzehn Uhr zehn",
-   "x": 632,
-   "y": 386,
-   "w": 348,
-   "h": 12
+   "x": 634,
+   "y": 376,
+   "w": 346,
+   "h": 23
   },
   {
    "id": "l8-4-dg",
@@ -1016,10 +1016,10 @@
    "kind": "text",
    "label": "Ü4 d Im Gespräch",
    "answer": "Viertel nach acht",
-   "x": 306,
-   "y": 416,
+   "x": 305,
+   "y": 406,
    "w": 302,
-   "h": 12
+   "h": 23
   },
   {
    "id": "l8-4-dr",
@@ -1027,10 +1027,10 @@
    "kind": "text",
    "label": "Ü4 d Im Radio/Fernsehen",
    "answer": "zwanzig Uhr fünfzehn",
-   "x": 632,
-   "y": 416,
-   "w": 348,
-   "h": 12
+   "x": 634,
+   "y": 406,
+   "w": 346,
+   "h": 23
   },
   {
    "id": "l8-4-eg",
@@ -1038,10 +1038,10 @@
    "kind": "text",
    "label": "Ü4 e Im Gespräch",
    "answer": "Viertel vor zwölf",
-   "x": 306,
-   "y": 447,
+   "x": 305,
+   "y": 437,
    "w": 302,
-   "h": 12
+   "h": 23
   },
   {
    "id": "l8-4-er",
@@ -1049,10 +1049,10 @@
    "kind": "text",
    "label": "Ü4 e Im Radio/Fernsehen",
    "answer": "elf Uhr fünfundvierzig",
-   "x": 632,
-   "y": 447,
-   "w": 348,
-   "h": 12
+   "x": 634,
+   "y": 437,
+   "w": 346,
+   "h": 23
   },
   {
    "id": "l8-4-fg",
@@ -1060,10 +1060,10 @@
    "kind": "text",
    "label": "Ü4 f Im Gespräch",
    "answer": "fünf nach sieben",
-   "x": 306,
-   "y": 477,
+   "x": 305,
+   "y": 467,
    "w": 302,
-   "h": 12
+   "h": 23
   },
   {
    "id": "l8-4-fr",
@@ -1071,10 +1071,10 @@
    "kind": "text",
    "label": "Ü4 f Im Radio/Fernsehen",
    "answer": "sieben Uhr fünf",
-   "x": 632,
-   "y": 477,
-   "w": 348,
-   "h": 12
+   "x": 634,
+   "y": 467,
+   "w": 346,
+   "h": 23
   },
   {
    "id": "l8-4-gg",
@@ -1082,10 +1082,10 @@
    "kind": "text",
    "label": "Ü4 g Im Gespräch",
    "answer": "zehn vor vier",
-   "x": 306,
-   "y": 507,
+   "x": 305,
+   "y": 497,
    "w": 302,
-   "h": 12
+   "h": 23
   },
   {
    "id": "l8-4-gr",
@@ -1093,10 +1093,10 @@
    "kind": "text",
    "label": "Ü4 g Im Radio/Fernsehen",
    "answer": "fünfzehn Uhr fünfzig",
-   "x": 632,
-   "y": 507,
-   "w": 348,
-   "h": 12
+   "x": 634,
+   "y": 497,
+   "w": 346,
+   "h": 23
   },
   {
    "id": "l8-4-hg",
@@ -1104,10 +1104,10 @@
    "kind": "text",
    "label": "Ü4 h Im Gespräch",
    "answer": "fünf nach halb fünf",
-   "x": 306,
-   "y": 537,
+   "x": 305,
+   "y": 528,
    "w": 302,
-   "h": 12
+   "h": 23
   },
   {
    "id": "l8-4-hr",
@@ -1115,10 +1115,10 @@
    "kind": "text",
    "label": "Ü4 h Im Radio/Fernsehen",
    "answer": "sechzehn Uhr fünfunddreißig",
-   "x": 632,
-   "y": 537,
-   "w": 348,
-   "h": 12
+   "x": 634,
+   "y": 528,
+   "w": 346,
+   "h": 23
   },
   {
    "id": "l8-4-ig",
@@ -1126,10 +1126,10 @@
    "kind": "text",
    "label": "Ü4 i Im Gespräch",
    "answer": "fünf vor halb zehn",
-   "x": 306,
-   "y": 567,
+   "x": 305,
+   "y": 558,
    "w": 302,
-   "h": 12
+   "h": 23
   },
   {
    "id": "l8-4-ir",
@@ -1137,54 +1137,126 @@
    "kind": "text",
    "label": "Ü4 i Im Radio/Fernsehen",
    "answer": "neun Uhr fünfundzwanzig",
-   "x": 632,
-   "y": 567,
-   "w": 348,
-   "h": 12
+   "x": 634,
+   "y": 558,
+   "w": 346,
+   "h": 23
   },
   {
    "id": "l8-5-1",
    "group": "l8-5",
-   "kind": "text",
+   "kind": "select",
    "label": "Ü5 Antwort 1",
-   "answer": "Da kann ich leider nicht.",
+   "answer": "Hm ... Ja, warum nicht? Wann denn?",
    "x": 226,
-   "y": 818,
-   "w": 461,
-   "h": 12
+   "y": 812,
+   "w": 459,
+   "h": 24,
+   "options": [
+    {
+     "value": "Da kann ich leider nicht.",
+     "label": "Da kann ich leider nicht."
+    },
+    {
+     "value": "Hm ... Ja, warum nicht? Wann denn?",
+     "label": "Hm ... Ja, warum nicht? Wann denn?"
+    },
+    {
+     "value": "Zwei Uhr ist okay.",
+     "label": "Zwei Uhr ist okay."
+    },
+    {
+     "value": "Ja, bis dann.",
+     "label": "Ja, bis dann."
+    }
+   ]
   },
   {
    "id": "l8-5-2",
    "group": "l8-5",
-   "kind": "text",
+   "kind": "select",
    "label": "Ü5 Antwort 2",
-   "answer": "Hm ... Ja, warum nicht? Wann denn?",
+   "answer": "Da kann ich leider nicht.",
    "x": 226,
-   "y": 870,
-   "w": 461,
-   "h": 12
+   "y": 864,
+   "w": 409,
+   "h": 24,
+   "options": [
+    {
+     "value": "Da kann ich leider nicht.",
+     "label": "Da kann ich leider nicht."
+    },
+    {
+     "value": "Hm ... Ja, warum nicht? Wann denn?",
+     "label": "Hm ... Ja, warum nicht? Wann denn?"
+    },
+    {
+     "value": "Zwei Uhr ist okay.",
+     "label": "Zwei Uhr ist okay."
+    },
+    {
+     "value": "Ja, bis dann.",
+     "label": "Ja, bis dann."
+    }
+   ]
   },
   {
    "id": "l8-5-3",
    "group": "l8-5",
-   "kind": "text",
+   "kind": "select",
    "label": "Ü5 Antwort 3",
    "answer": "Zwei Uhr ist okay.",
    "x": 226,
-   "y": 972,
-   "w": 461,
-   "h": 12
+   "y": 965,
+   "w": 373,
+   "h": 24,
+   "options": [
+    {
+     "value": "Da kann ich leider nicht.",
+     "label": "Da kann ich leider nicht."
+    },
+    {
+     "value": "Hm ... Ja, warum nicht? Wann denn?",
+     "label": "Hm ... Ja, warum nicht? Wann denn?"
+    },
+    {
+     "value": "Zwei Uhr ist okay.",
+     "label": "Zwei Uhr ist okay."
+    },
+    {
+     "value": "Ja, bis dann.",
+     "label": "Ja, bis dann."
+    }
+   ]
   },
   {
    "id": "l8-5-4",
    "group": "l8-5",
-   "kind": "text",
+   "kind": "select",
    "label": "Ü5 Antwort 4",
    "answer": "Ja, bis dann.",
    "x": 226,
-   "y": 1024,
+   "y": 1016,
    "w": 290,
-   "h": 12
+   "h": 24,
+   "options": [
+    {
+     "value": "Da kann ich leider nicht.",
+     "label": "Da kann ich leider nicht."
+    },
+    {
+     "value": "Hm ... Ja, warum nicht? Wann denn?",
+     "label": "Hm ... Ja, warum nicht? Wann denn?"
+    },
+    {
+     "value": "Zwei Uhr ist okay.",
+     "label": "Zwei Uhr ist okay."
+    },
+    {
+     "value": "Ja, bis dann.",
+     "label": "Ja, bis dann."
+    }
+   ]
   },
   {
    "id": "l8-6-1",
@@ -1193,9 +1265,9 @@
    "label": "Ü6 Tuesday",
    "answer": "Dienstag",
    "x": 213,
-   "y": 1200,
-   "w": 160,
-   "h": 12
+   "y": 1191,
+   "w": 159,
+   "h": 24
   },
   {
    "id": "l8-6-2",
@@ -1204,9 +1276,9 @@
    "label": "Ü6 Wednesday",
    "answer": "Mittwoch",
    "x": 213,
-   "y": 1228,
-   "w": 160,
-   "h": 12
+   "y": 1219,
+   "w": 159,
+   "h": 24
   },
   {
    "id": "l8-6-3",
@@ -1215,9 +1287,9 @@
    "label": "Ü6 Thursday",
    "answer": "Donnerstag",
    "x": 213,
-   "y": 1258,
-   "w": 160,
-   "h": 12
+   "y": 1248,
+   "w": 159,
+   "h": 24
   },
   {
    "id": "l8-6-4",
@@ -1226,9 +1298,9 @@
    "label": "Ü6 Friday",
    "answer": "Freitag",
    "x": 213,
-   "y": 1286,
-   "w": 160,
-   "h": 12
+   "y": 1276,
+   "w": 159,
+   "h": 24
   },
   {
    "id": "l8-6-5",
@@ -1237,9 +1309,9 @@
    "label": "Ü6 Saturday",
    "answer": "Samstag",
    "x": 213,
-   "y": 1316,
-   "w": 160,
-   "h": 12
+   "y": 1305,
+   "w": 159,
+   "h": 24
   },
   {
    "id": "l8-6-6",
@@ -1248,9 +1320,79 @@
    "label": "Ü6 Sunday",
    "answer": "Sonntag",
    "x": 213,
-   "y": 1345,
-   "w": 160,
-   "h": 12
+   "y": 1333,
+   "w": 159,
+   "h": 24
+  },
+  {
+   "id": "own-day-0",
+   "group": "own",
+   "kind": "text",
+   "label": "Montag in meiner Sprache",
+   "x": 544,
+   "y": 1162,
+   "w": 437,
+   "h": 24
+  },
+  {
+   "id": "own-day-1",
+   "group": "own",
+   "kind": "text",
+   "label": "Dienstag in meiner Sprache",
+   "x": 544,
+   "y": 1191,
+   "w": 437,
+   "h": 24
+  },
+  {
+   "id": "own-day-2",
+   "group": "own",
+   "kind": "text",
+   "label": "Mittwoch in meiner Sprache",
+   "x": 544,
+   "y": 1219,
+   "w": 437,
+   "h": 24
+  },
+  {
+   "id": "own-day-3",
+   "group": "own",
+   "kind": "text",
+   "label": "Donnerstag in meiner Sprache",
+   "x": 544,
+   "y": 1248,
+   "w": 437,
+   "h": 24
+  },
+  {
+   "id": "own-day-4",
+   "group": "own",
+   "kind": "text",
+   "label": "Freitag in meiner Sprache",
+   "x": 544,
+   "y": 1276,
+   "w": 437,
+   "h": 24
+  },
+  {
+   "id": "own-day-5",
+   "group": "own",
+   "kind": "text",
+   "label": "Samstag in meiner Sprache",
+   "x": 544,
+   "y": 1305,
+   "w": 437,
+   "h": 24
+  },
+  {
+   "id": "own-day-6",
+   "group": "own",
+   "kind": "text",
+   "label": "Sonntag in meiner Sprache",
+   "x": 544,
+   "y": 1333,
+   "w": 437,
+   "h": 24
   }
  ],
  "audio": [],
@@ -1273,7 +1415,8 @@
   "verifiedWords": 137,
   "totalWords": 137,
   "notes": [
-   "U4 row a (funf vor zehn / neun Uhr funfundfunfzig) printed example. U5 bank item 'Das weiss ich noch nicht.' struck = printed example, kept as words. U6 'Montag' printed example; 'Mittwoch' on the Wednesday row is owner ink over a printed blank - excluded from words, field kept with answer Mittwoch. Digital clock displays are graphics, not words. 'Meine Sprache' column personal - no fields."
+   "U4 row a (funf vor zehn / neun Uhr funfundfunfzig) printed example. U5 bank item 'Das weiss ich noch nicht.' struck = printed example, kept as words. U6 'Montag' printed example; 'Mittwoch' on the Wednesday row is owner ink over a printed blank - excluded from words, field kept with answer Mittwoch. Digital clock displays are graphics, not words. 'Meine Sprache' column personal - no fields.",
+   "2026-11-15: restored original scan/fonts/layout;all fields remeasured;dialogue first2 answers corrected to match conversation;phrase assignment selects;7 own-language weekday rows. Source Mittwoch ink retained as printed-in-scan guidance,editable field stays blank."
   ]
  }
 }
