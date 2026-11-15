@@ -1170,9 +1170,9 @@
    "label": "1 Mein Zimmer: das Bild",
    "answer": "das Bild",
    "x": 195,
-   "y": 316,
-   "w": 195,
-   "h": 16
+   "y": 320,
+   "w": 178,
+   "h": 23
   },
   {
    "id": "w1-l2",
@@ -1181,9 +1181,9 @@
    "label": "1 Mein Zimmer: die Uhr",
    "answer": "die Uhr",
    "x": 195,
-   "y": 345,
-   "w": 195,
-   "h": 16
+   "y": 349,
+   "w": 178,
+   "h": 23
   },
   {
    "id": "w1-l3",
@@ -1192,9 +1192,9 @@
    "label": "1 Mein Zimmer: das Bett",
    "answer": "das Bett",
    "x": 195,
-   "y": 374,
-   "w": 195,
-   "h": 16
+   "y": 378,
+   "w": 178,
+   "h": 23
   },
   {
    "id": "w1-l4",
@@ -1203,9 +1203,9 @@
    "label": "1 Mein Zimmer: das Handy",
    "answer": "das Handy",
    "x": 195,
-   "y": 403,
-   "w": 195,
-   "h": 16
+   "y": 407,
+   "w": 178,
+   "h": 23
   },
   {
    "id": "w1-l5",
@@ -1214,9 +1214,9 @@
    "label": "1 Mein Zimmer: der Teppich",
    "answer": "der Teppich",
    "x": 195,
-   "y": 431,
-   "w": 195,
-   "h": 16
+   "y": 435,
+   "w": 178,
+   "h": 23
   },
   {
    "id": "w1-r1",
@@ -1225,9 +1225,9 @@
    "label": "1 Mein Zimmer: der Bildschirm",
    "answer": "der Bildschirm",
    "x": 815,
-   "y": 229,
+   "y": 233,
    "w": 180,
-   "h": 16
+   "h": 23
   },
   {
    "id": "w1-r2",
@@ -1236,9 +1236,9 @@
    "label": "1 Mein Zimmer: der Drucker",
    "answer": "der Drucker",
    "x": 815,
-   "y": 261,
+   "y": 265,
    "w": 180,
-   "h": 16
+   "h": 23
   },
   {
    "id": "w1-r3",
@@ -1247,9 +1247,9 @@
    "label": "1 Mein Zimmer: der Tisch",
    "answer": "der Tisch",
    "x": 815,
-   "y": 307,
+   "y": 311,
    "w": 180,
-   "h": 16
+   "h": 23
   },
   {
    "id": "w1-r4",
@@ -1258,9 +1258,9 @@
    "label": "1 Mein Zimmer: der Schrank",
    "answer": "der Schrank",
    "x": 815,
-   "y": 340,
+   "y": 344,
    "w": 180,
-   "h": 16
+   "h": 23
   },
   {
    "id": "w1-r5",
@@ -1269,9 +1269,9 @@
    "label": "1 Mein Zimmer: die Tasche",
    "answer": "die Tasche",
    "x": 815,
-   "y": 385,
+   "y": 389,
    "w": 180,
-   "h": 16
+   "h": 23
   },
   {
    "id": "w1-r6",
@@ -1280,9 +1280,9 @@
    "label": "1 Mein Zimmer: der Stuhl",
    "answer": "der Stuhl",
    "x": 815,
-   "y": 412,
+   "y": 416,
    "w": 180,
-   "h": 16
+   "h": 23
   },
   {
    "id": "w2-briefmarke",
@@ -1291,9 +1291,9 @@
    "label": "2 Briefmarke",
    "answer": "Briefmarke",
    "x": 737,
-   "y": 582,
+   "y": 586,
    "w": 181,
-   "h": 16
+   "h": 23
   },
   {
    "id": "w2-strasse",
@@ -1302,9 +1302,9 @@
    "label": "2 Straße",
    "answer": "Straße",
    "x": 210,
-   "y": 689,
+   "y": 693,
    "w": 182,
-   "h": 16
+   "h": 23
   },
   {
    "id": "w2-hausnummer",
@@ -1312,10 +1312,10 @@
    "kind": "text",
    "label": "2 Hausnummer",
    "answer": "Hausnummer",
-   "x": 733,
-   "y": 695,
-   "w": 176,
-   "h": 16
+   "x": 738,
+   "y": 699,
+   "w": 178,
+   "h": 23
   },
   {
    "id": "w2-plz",
@@ -1324,9 +1324,9 @@
    "label": "2 Postleitzahl",
    "answer": "Postleitzahl",
    "x": 210,
-   "y": 720,
+   "y": 724,
    "w": 183,
-   "h": 16
+   "h": 23
   },
   {
    "id": "w2-ort",
@@ -1334,10 +1334,10 @@
    "kind": "text",
    "label": "2 Ort",
    "answer": "Ort",
-   "x": 733,
-   "y": 734,
-   "w": 167,
-   "h": 16
+   "x": 738,
+   "y": 738,
+   "w": 178,
+   "h": 23
   },
   {
    "id": "w3-b-computer",
@@ -1554,9 +1554,9 @@
    "label": "4b: Farbe",
    "answer": "rot",
    "x": 370,
-   "y": 1031,
+   "y": 1035,
    "w": 125,
-   "h": 16
+   "h": 23
   },
   {
    "id": "w4-c",
@@ -1565,9 +1565,9 @@
    "label": "4c: Farbe",
    "answer": "schwarz",
    "x": 370,
-   "y": 1056,
+   "y": 1060,
    "w": 125,
-   "h": 16
+   "h": 23
   },
   {
    "id": "w4-d",
@@ -1576,9 +1576,9 @@
    "label": "4d: Farbe",
    "answer": "blau",
    "x": 370,
-   "y": 1082,
+   "y": 1086,
    "w": 125,
-   "h": 16
+   "h": 23
   },
   {
    "id": "w4-e",
@@ -1587,9 +1587,9 @@
    "label": "4e: Farbe",
    "answer": "gelb",
    "x": 370,
-   "y": 1107,
+   "y": 1111,
    "w": 125,
-   "h": 16
+   "h": 23
   },
   {
    "id": "w4-f",
@@ -1598,9 +1598,9 @@
    "label": "4f: nicht billig",
    "answer": "teuer",
    "x": 790,
-   "y": 1000,
+   "y": 1004,
    "w": 128,
-   "h": 16
+   "h": 23
   },
   {
    "id": "w4-g",
@@ -1609,9 +1609,9 @@
    "label": "4g: nicht rund",
    "answer": "eckig",
    "x": 790,
-   "y": 1025,
+   "y": 1029,
    "w": 128,
-   "h": 16
+   "h": 23
   },
   {
    "id": "w4-h",
@@ -1620,9 +1620,9 @@
    "label": "4h: nicht lang",
    "answer": "kurz",
    "x": 790,
-   "y": 1050,
+   "y": 1054,
    "w": 128,
-   "h": 16
+   "h": 23
   },
   {
    "id": "w4-i",
@@ -1631,9 +1631,9 @@
    "label": "4i: nicht teuer",
    "answer": "billig",
    "x": 790,
-   "y": 1076,
+   "y": 1080,
    "w": 128,
-   "h": 16
+   "h": 23
   },
   {
    "id": "w4-j",
@@ -1642,9 +1642,9 @@
    "label": "4j: nicht schön",
    "answer": "hässlich",
    "x": 790,
-   "y": 1101,
+   "y": 1105,
    "w": 128,
-   "h": 16
+   "h": 23
   },
   {
    "id": "w4-k",
@@ -1653,9 +1653,9 @@
    "label": "4k: nicht schwer",
    "answer": "leicht",
    "x": 790,
-   "y": 1126,
+   "y": 1130,
    "w": 128,
-   "h": 16
+   "h": 23
   },
   {
    "id": "w5a-H",
@@ -1774,9 +1774,9 @@
    "label": "5b: Lösungswort",
    "answer": "HANDY",
    "x": 208,
-   "y": 1389,
+   "y": 1393,
    "w": 125,
-   "h": 16
+   "h": 23
   }
  ],
  "audio": [
@@ -1822,7 +1822,8 @@
    "2: Name is a printed blue example (no field); Strasse/Hausnummer and Postleitzahl/Ort share address lines - left line = first part, right line = second part.",
    "3a is a printed struck-through example (Feuerzeug), no fields; 3b-e modeled as one radio per word, odd word = true.",
    "4a is a printed blue example (braun), no field.",
-   "5a: heard numbers per Loesungswort HANDY (890777, 68678, 4567, 120712, 333910 marked); 5b one text field over the dash row, answer HANDY."
+   "5a: heard numbers per Loesungswort HANDY (890777, 68678, 4567, 120712, 333910 marked); 5b one text field over the dash row, answer HANDY.",
+   "2026-11-15: source-line baselines corrected,wordwriting kept as text,strike-through selections on full odd-word targets,X number choices,5 in-page checks. Original scan and printed examples retained."
   ]
  }
 }
