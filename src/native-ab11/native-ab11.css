@@ -404,3 +404,32 @@
 .nativeAB11[data-native-ab11-page='15'] .nabStressSelected{display:flex;align-content:flex-start;flex-wrap:wrap;gap:0 5px;padding:0 5px;min-height:37px;max-height:81px;overflow:auto}
 .nativeAB11[data-native-ab11-page='15'] .nabStressSelected button{border:0;background:transparent;padding:0;color:#285e98;font:14px/18px KbDroid,Georgia,serif;cursor:pointer}
 .nativeAB11[data-native-ab11-page='15'] .nabStressTable select{height:22px;font:13px/20px ABScanSans,Arial,sans-serif;color:#507491;padding:0 3px}
+/* Page 16: the printed module test. */
+.nativeAB11[data-native-ab11-page='16'] .nabText{font:19px/25px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='16'] .nabTitle{font:700 20px/26px ABScanSans,Arial,sans-serif;left:190px!important}
+.nativeAB11[data-native-ab11-page='16'] .nabNumber{left:147px!important}
+.nativeAB11[data-native-ab11-page='16'] .nabHeader{font:29px/32px KbDroid,Georgia,serif;left:149px!important;top:157px!important;letter-spacing:1px}
+.nativeAB11[data-native-ab11-page='16'] .nabHeaderLine{left:224px;top:179px;width:760px;height:1px}
+.nativeAB11[data-native-ab11-page='16'] .nabSide{left:121px!important;font:700 10px/13px ABScanSans,Arial,sans-serif;color:#222970}
+.nativeAB11[data-native-ab11-page='16'] .nabBank{font:18px/23px ABScanSans,Arial,sans-serif;background:#fffbd5;color:#20296a}
+.nativeAB11[data-native-ab11-page='16'] .nabSmall{font:19px/25px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='16'] .nabCanvas .nabInput{border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;height:21px!important}
+.nativeAB11[data-native-ab11-page='16'] .nabCanvas .nabOpen{height:50px!important;background:repeating-linear-gradient(transparent 0 24px,#929792 24px 25px)!important}
+.nativeAB11[data-native-ab11-page='16'] .nabCanvas .nabSelect{font-size:17px!important}
+.nativeAB11[data-native-ab11-page='16'] .nabCanvas .nabRadio{width:17px!important;height:17px!important;border-width:1px!important;z-index:2}
+.nativeAB11[data-native-ab11-page='16'] .nabCanvas .nabRadio:checked{background:linear-gradient(45deg,transparent 43%,#315f9e 44%,#315f9e 53%,transparent 54%),linear-gradient(-45deg,transparent 43%,#315f9e 44%,#315f9e 53%,transparent 54%)!important}
+.nativeAB11[data-native-ab11-page='16'] .nabCheck{left:1008px!important;translate:none!important}
+.nativeAB11[data-native-ab11-page='16'] .nabScore{width:497px;grid-template-rows:34px repeat(3,33px);font:15px/25px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='16'] .nabScore>b{font:700 16px/25px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='16'] .nabScore>div{border-bottom:1px dotted #ddd}
+.nativeAB11[data-native-ab11-page='16'] .nabScore i{width:18px;height:18px;border:2px outset #eee;border-radius:6px;box-sizing:border-box;display:inline-block;margin:0 10px 0 2px;vertical-align:middle}
+.nativeAB11[data-native-ab11-page='16'] .nabScore:after{content:'www.hueber.de/menschen/lernen';position:absolute;right:0;top:145px;font:14px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='16'] .nabFooter{font:16px KbDroid,Georgia,serif;top:1438px!important}
+.nativeAB11[data-native-ab11-page='16'] .nabFooter[style*='50px']{left:44px!important;background:#e5dda6;color:white;font:italic 13px/18px Georgia,serif;width:67px!important;text-align:center}
+.nativeAB11[data-native-ab11-page='16'] .nabFooter[style*='130px']{left:124px!important}
+.nativeAB11[data-native-ab11-page='16'] .nabBank{font-size:17px}
+.nativeAB11[data-native-ab11-page='16'] .nabBank[style*='615.5px']{font-size:16px;letter-spacing:-.35px}
+.nativeAB11[data-native-ab11-page='16'] .nabQuestionSquare{color:#001b70;font-size:20px}
+.nativeAB11[data-native-ab11-page='16'] .nabAnswerTriangle{color:#00b120;font-size:20px}
+.nativeAB11[data-native-ab11-page='16'] .nabBank[style*='775px']{font-size:16px;letter-spacing:-.35px}
+.nativeAB11[data-native-ab11-page='16'] .nabTestPoints{position:absolute;left:902px;width:100px;text-align:right;font:14px/20px ABScanSans,Arial,sans-serif;font-variant:small-caps;letter-spacing:.5px}
