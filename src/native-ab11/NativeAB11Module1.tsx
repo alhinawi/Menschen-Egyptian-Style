@@ -116,28 +116,39 @@ export function NativeAB11Module1({page}:{page:string}){
  {listen('13',500,1131,'2')}{T(543,1129,300,'Hören Sie noch einmal und sprechen\nSie nach.','mTitle')}
  <div className="mP21Footer">einundzwanzig&nbsp;&nbsp; | &nbsp;&nbsp;21 <em>Modul 1</em></div>
  </>})()}
- {page==='22'&&<>
- {head('TEST')}{title('1',200,'Familie. Ergänzen Sie.')}
- {txt(161,235,150,'Eltern:')}{txt(328,235,73,'Vater und')}{f('u1-mutter',405,233,162)}
- {f('u1-geschwister',161,261,140)}{f('u1-bruder',328,261,138)}{txt(471,263,160,'und Schwester')}
- {txt(161,291,150,'Kinder:')}{txt(328,291,73,'Sohn und')}{f('u1-tochter',405,289,162)}
- {f('u1-grosseltern',161,317,140)}{txt(328,319,235,'Oma / Opa und Großmutter /')}{f('u1-grossvater',570,317,160)}
- {txt(161,347,150,'Enkelkinder:')}{txt(328,347,73,'Enkel und')}{f('u1-enkelin',405,345,162)}{check('u1',168,380)}
- {title('2',425,'Schreiben Sie die Fragen.')}{txt(163,462,660,'a  Thea / ist / deine Tochter   Ist Thea deine Tochter?','mExample')}
- {txt(163,489,560,'b  sprechen / welche Sprachen / deine Kinder')}{f('u2-b',185,510,545)}{txt(735,512,20,'?')}
- {['ist / dein / Vater / das','verheiratet / bist / du','wo / du / wohnst'].map((s,i)=><span key={s}>{txt(163,542+i*27,198,String.fromCharCode(99+i)+'  '+s)}{f('u2-'+String.fromCharCode(99+i),365,540+i*27,365)}{txt(735,542+i*27,20,'?')}</span>)}{check('u2',168,625)}
- {title('3',666,'Beantworten Sie die Fragen aus Aufgabe 2.')}{txt(163,700,666,'a  Ja, Thea ist meine Tochter.','mExample')}
- {txt(163,730,16,'b')}{f('u3-b',185,728,287)}{txt(477,730,330,'Französisch, Englisch und Deutsch.')}
- {txt(163,758,68,'c  Ja, das')}{f('u3-c',236,756,317)}{txt(163,786,78,'d  Nein, ich')}{f('u3-d',246,784,307)}
- {txt(163,814,16,'e')}{f('u3-e',185,812,270)}{txt(461,814,170,'in Stuttgart.')}{check('u3',168,835)}
- {title('4',877,'Ergänzen Sie mein-/dein-.')}{txt(174,915,650,'Hallo Eduardo,','mExample')}{txt(174,943,405,"wie geht's? Ich bin jetzt in Deutschland, in Bremen. Hier wohnt",'mSmall mExample')}{f('u4-bruder',590,941,100)}{txt(697,943,80,'Bruder.','mSmall')}
- {txt(174,972,202,'Ich mache hier ein Praktikum.','mSmall mExample')}{f('u4-kollegen',384,970,110)}{txt(502,972,250,'Kollegen sind super. Wie geht es Dir?','mSmall mExample')}
- {txt(174,1001,83,'Was machen','mSmall mExample')}{f('u4-frau',262,999,105)}{txt(375,1001,60,'Frau und','mSmall')}{f('u4-sohn',442,999,86)}{txt(534,1001,50,'Sohn?','mSmall')}{txt(174,1028,250,'Tschüs, Anna','mExample')}{check('u4',168,1058)}
- {title('5',1101,'Ja, nein oder doch? Schreiben Sie die Antworten.')}
- {txt(168,1135,450,'a  Hannah ist nicht deine Tochter, oder?    +','mSmall')}{txt(550,1135,295,'Doch, Hannah ist meine Tochter.','mExample mSmall')}
- {['Sprichst du Spanisch?','Du bist nicht verheiratet, oder?','Ist Frau Duate deine Lehrerin?','Du arbeitest nicht in Österreich, oder?'].map((s,i)=><span key={s}>{txt(168,1164+i*26,378,String.fromCharCode(98+i)+'  '+s+'  '+(i===0||i===3?'+':'−'),'mSmall')}{f('u5-'+String.fromCharCode(98+i),550,1162+i*26,285)}</span>)}
- {check('u5',168,1275)}{score(1310,[['0-3','0-6','0-2'],['4-5','7-9','3'],['6-7','10-12','4']])}
- </>}
+ {page==='22'&&(()=>{
+ const T=(x:number,y:number,w:number,s:string,c='')=><div className={'mText '+c} style={{left:x,top:y,width:w}}><Words s={s}/></div>;
+ const F=(id:string,x:number,y:number,w:number)=>{const ctx=document.createElement('canvas').getContext('2d');if(ctx)ctx.font='16px KbDroid';const size=Math.max(10,Math.min(16,16*(w-5)/(ctx?.measureText(v[id]||'').width||1)));return <ChoiceInput className="mField" data-native-field={id} aria-label={id} style={{left:x,top:y,width:w,fontSize:size}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>};
+ const A=(n:string,x:number,y:number,w:number,h:number)=><PageImage className="mArt" alt={'Originalabbildung '+n} src={'assets/native-ab11/p22-'+n+'.png'} style={{left:x,top:y,width:w,height:h}}/>;
+ const H=(n:string,y:number,s:string)=><><div className="mNumber" style={{top:y}}>{n}</div>{T(162,y+1,700,s,'mTitle')}</>;
+ const C=(g:string,y:number,points:string)=><>{T(759,y,80,'_ / '+points+' Punkte','mP22Points')}<div className="mCheck" data-native-task={g} style={{left:840,top:y-5}}><CheckButton onClick={()=>G({...graded,[g]:Object.entries(answers(g)).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}/><output aria-live="polite">{g in graded?(graded[g]?'✓ Richtig!':'Noch einmal'):''}</output></div></>;
+ return <>{T(126,130,130,'TEST','mHeader')}<div className="mP22Rule"/>
+ {H('1',194,'Familie. Ergänzen Sie.')}
+ {T(161,227,150,'Eltern:')}{T(327,227,80,'Vater und')}{F('u1-mutter',403,222,163)}
+ {F('u1-geschwister',161,245,137)}{F('u1-bruder',327,244,137)}{T(469,247,160,'und Schwester')}
+ {T(161,270,150,'Kinder:')}{T(327,269,80,'Sohn und')}{F('u1-tochter',402,264,142)}
+ {F('u1-grosseltern',161,288,116)}{A('ink-oma',327,290,30,16)}{T(355,290,178,'/ Opa und Großmutter /')}{F('u1-grossvater',535,286,120)}
+ {T(161,311,150,'Enkelkinder:')}{T(327,311,80,'Enkel und')}{F('u1-enkelin',406,306,164)}{C('u1',311,'7')}
+ {H('2',364,'Schreiben Sie die Fragen.')}
+ {T(163,398,210,'a  Thea / ist / deine Tochter')}{A('ink-question',382,396,157,18)}
+ {T(163,419,360,'b  sprechen / welche Sprachen / deine Kinder')}{F('u2-b',518,412,212)}{T(735,415,20,'?')}
+ {['ist / dein / Vater / das','verheiratet / bist / du','wo / du / wohnst'].map((s,i)=><span key={s}>{T(163,441+i*21,198,String.fromCharCode(99+i)+'  '+s)}{F('u2-'+String.fromCharCode(99+i),360,434+i*21,370)}{T(735,437+i*21,20,'?')}</span>)}{C('u2',480,'4')}
+ {H('3',534,'Beantworten Sie die Fragen aus Aufgabe 2.')}
+ {T(164,567,16,'a')}{A('ink-answer',183,566,174,19)}
+ {T(164,588,16,'b')}{F('u3-b',184,582,285)}{T(473,586,330,'Französisch, Englisch und Deutsch.')}
+ {T(164,610,75,'c  Ja, das')}{F('u3-c',236,604,317)}{T(553,610,8,'.')}
+ {T(164,631,90,'d  Nein, ich')}{F('u3-d',251,625,300)}{T(551,631,8,'.')}
+ {T(164,652,16,'e')}{F('u3-e',188,647,264)}{T(457,650,170,'in Stuttgart.')}{C('u3',650,'4')}
+ {H('4',702,'Ergänzen Sie mein-/dein-.')}{A('ink-email',172,747,569,100)}
+ {F('u4-bruder',574,760,107)}{F('u4-kollegen',363,783,141)}{F('u4-frau',251,806,96)}{F('u4-sohn',406,804,81)}{C('u4',840,'4')}
+ {H('5',893,'Ja, nein oder doch? Schreiben Sie die Antworten.')}
+ {T(168,927,370,'a  Hannah ist nicht deine Tochter, oder?')}{A('ink-doch',548,923,202,19)}
+ {['Sprichst du Spanisch?','Du bist nicht verheiratet, oder?','Ist Frau Duate deine Lehrerin?','Du arbeitest nicht in Österreich, oder?'].map((s,i)=><span key={s}>{T(168,949+i*21,378,String.fromCharCode(98+i)+'  '+s)}{F('u5-'+String.fromCharCode(98+i),550,940+i*21,268)}</span>)}
+ {['+','+','−','−','+'].map((s,i)=>T(527,926+i*21.4,20,s,'mP22Plus'))}<div className="mP22ExampleRule"/>{C('u5',1032,'4')}
+ {A('score',163,1050,422,133)}
+ {[[105,231,'WÖRTER'],[107,400,'STRUKTUREN'],[109,571,'STRUKTUREN'],[111,740,'STRUKTUREN'],[112,931,'KOMMUNIKATION']].map(([x,y,s])=><div className="mP20Rail" key={String(y)} style={{left:Number(x),top:Number(y)}}>{s}</div>)}
+ <div className="mP22Footer"><em>Modul 1</em><span>22&nbsp;&nbsp; | &nbsp;&nbsp;zweiundzwanzig</span></div>
+ </>})()}
  {page==='23'&&<>
  {head('LERNWORTSCHATZ')}<div className="nabModule">3</div>{art('strip',783,181,118,1004)}
  {title('1',208,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','',132,645)}
