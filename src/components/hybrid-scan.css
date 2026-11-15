@@ -356,3 +356,7 @@ html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='64'] .hybridField
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='64'] .hybridCheck:nth-child(6){top:83%}
 
 .hybridScores64 output{position:absolute;color:#245b3c;background:#fffef7;font:bold 1.4cqw Arial}.hybridScores64 i{position:absolute;width:2.7cqw;height:2.7cqw;border:2px solid #174d36;border-radius:50%;transform:translate(-50%,-50%);pointer-events:none}
+
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='65'] .hybridField{font-size:1.5cqw!important;outline:0;resize:none}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='65'] .hybridField:focus{outline:1px solid #26764c}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='65'] textarea.hybridField{line-height:2.36cqw!important}
