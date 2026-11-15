@@ -1725,182 +1725,559 @@
   {
    "id": "t1-a",
    "group": "l9t-1",
-   "kind": "text",
-   "x": 390,
-   "y": 341,
-   "w": 120,
-   "h": 20,
-   "answer": "Sahne"
+   "kind": "select",
+   "x": 398,
+   "y": 335,
+   "w": 125,
+   "h": 26,
+   "answer": "Sahne",
+   "label": "t1-a",
+   "options": [
+    {
+     "value": "Ei",
+     "label": "Ei"
+    },
+    {
+     "value": "Orangen",
+     "label": "Orangen"
+    },
+    {
+     "value": "Suppe",
+     "label": "Suppe"
+    },
+    {
+     "value": "Braten",
+     "label": "Braten"
+    },
+    {
+     "value": "Tee",
+     "label": "Tee"
+    },
+    {
+     "value": "Äpfel",
+     "label": "Äpfel"
+    },
+    {
+     "value": "Zitronen",
+     "label": "Zitronen"
+    },
+    {
+     "value": "Sahne",
+     "label": "Sahne"
+    }
+   ]
   },
   {
-   "id": "t1-b1",
+   "id": "t1-b-1",
    "group": "l9t-1",
-   "kind": "text",
+   "kind": "select",
    "x": 436,
-   "y": 392,
-   "w": 131,
-   "h": 20,
-   "answer": "Äpfel|Orangen|Zitronen"
+   "y": 386,
+   "w": 126,
+   "h": 26,
+   "answer": "Äpfel|Orangen|Zitronen",
+   "label": "t1-b1",
+   "options": [
+    {
+     "value": "Ei",
+     "label": "Ei"
+    },
+    {
+     "value": "Orangen",
+     "label": "Orangen"
+    },
+    {
+     "value": "Suppe",
+     "label": "Suppe"
+    },
+    {
+     "value": "Braten",
+     "label": "Braten"
+    },
+    {
+     "value": "Tee",
+     "label": "Tee"
+    },
+    {
+     "value": "Äpfel",
+     "label": "Äpfel"
+    },
+    {
+     "value": "Zitronen",
+     "label": "Zitronen"
+    },
+    {
+     "value": "Sahne",
+     "label": "Sahne"
+    }
+   ],
+   "unordered": true
   },
   {
-   "id": "t1-b2",
+   "id": "t1-b-2",
    "group": "l9t-1",
-   "kind": "text",
+   "kind": "select",
    "x": 572,
-   "y": 392,
-   "w": 127,
-   "h": 20,
-   "answer": "Äpfel|Orangen|Zitronen"
+   "y": 386,
+   "w": 125,
+   "h": 26,
+   "answer": "Äpfel|Orangen|Zitronen",
+   "label": "t1-b2",
+   "options": [
+    {
+     "value": "Ei",
+     "label": "Ei"
+    },
+    {
+     "value": "Orangen",
+     "label": "Orangen"
+    },
+    {
+     "value": "Suppe",
+     "label": "Suppe"
+    },
+    {
+     "value": "Braten",
+     "label": "Braten"
+    },
+    {
+     "value": "Tee",
+     "label": "Tee"
+    },
+    {
+     "value": "Äpfel",
+     "label": "Äpfel"
+    },
+    {
+     "value": "Zitronen",
+     "label": "Zitronen"
+    },
+    {
+     "value": "Sahne",
+     "label": "Sahne"
+    }
+   ],
+   "unordered": true
   },
   {
-   "id": "t1-b3",
+   "id": "t1-b-3",
    "group": "l9t-1",
-   "kind": "text",
-   "x": 753,
-   "y": 392,
-   "w": 116,
-   "h": 20,
-   "answer": "Äpfel|Orangen|Zitronen"
+   "kind": "select",
+   "x": 743,
+   "y": 386,
+   "w": 125,
+   "h": 26,
+   "answer": "Äpfel|Orangen|Zitronen",
+   "label": "t1-b3",
+   "options": [
+    {
+     "value": "Ei",
+     "label": "Ei"
+    },
+    {
+     "value": "Orangen",
+     "label": "Orangen"
+    },
+    {
+     "value": "Suppe",
+     "label": "Suppe"
+    },
+    {
+     "value": "Braten",
+     "label": "Braten"
+    },
+    {
+     "value": "Tee",
+     "label": "Tee"
+    },
+    {
+     "value": "Äpfel",
+     "label": "Äpfel"
+    },
+    {
+     "value": "Zitronen",
+     "label": "Zitronen"
+    },
+    {
+     "value": "Sahne",
+     "label": "Sahne"
+    }
+   ],
+   "unordered": true
   },
   {
    "id": "t1-c",
    "group": "l9t-1",
-   "kind": "text",
-   "x": 791,
-   "y": 435,
-   "w": 124,
-   "h": 20,
-   "answer": "Ei"
+   "kind": "select",
+   "x": 792,
+   "y": 434,
+   "w": 122,
+   "h": 26,
+   "answer": "Ei",
+   "label": "t1-c",
+   "options": [
+    {
+     "value": "Ei",
+     "label": "Ei"
+    },
+    {
+     "value": "Orangen",
+     "label": "Orangen"
+    },
+    {
+     "value": "Suppe",
+     "label": "Suppe"
+    },
+    {
+     "value": "Braten",
+     "label": "Braten"
+    },
+    {
+     "value": "Tee",
+     "label": "Tee"
+    },
+    {
+     "value": "Äpfel",
+     "label": "Äpfel"
+    },
+    {
+     "value": "Zitronen",
+     "label": "Zitronen"
+    },
+    {
+     "value": "Sahne",
+     "label": "Sahne"
+    }
+   ]
   },
   {
    "id": "t1-d",
    "group": "l9t-1",
-   "kind": "text",
-   "x": 334,
-   "y": 466,
-   "w": 135,
-   "h": 20,
-   "answer": "Braten"
+   "kind": "select",
+   "x": 326,
+   "y": 461,
+   "w": 124,
+   "h": 26,
+   "answer": "Braten",
+   "label": "t1-d",
+   "options": [
+    {
+     "value": "Ei",
+     "label": "Ei"
+    },
+    {
+     "value": "Orangen",
+     "label": "Orangen"
+    },
+    {
+     "value": "Suppe",
+     "label": "Suppe"
+    },
+    {
+     "value": "Braten",
+     "label": "Braten"
+    },
+    {
+     "value": "Tee",
+     "label": "Tee"
+    },
+    {
+     "value": "Äpfel",
+     "label": "Äpfel"
+    },
+    {
+     "value": "Zitronen",
+     "label": "Zitronen"
+    },
+    {
+     "value": "Sahne",
+     "label": "Sahne"
+    }
+   ]
   },
   {
    "id": "t1-e",
    "group": "l9t-1",
-   "kind": "text",
-   "x": 384,
-   "y": 489,
-   "w": 160,
-   "h": 20,
-   "answer": "Suppe"
+   "kind": "select",
+   "x": 357,
+   "y": 487,
+   "w": 124,
+   "h": 26,
+   "answer": "Suppe",
+   "label": "t1-e",
+   "options": [
+    {
+     "value": "Ei",
+     "label": "Ei"
+    },
+    {
+     "value": "Orangen",
+     "label": "Orangen"
+    },
+    {
+     "value": "Suppe",
+     "label": "Suppe"
+    },
+    {
+     "value": "Braten",
+     "label": "Braten"
+    },
+    {
+     "value": "Tee",
+     "label": "Tee"
+    },
+    {
+     "value": "Äpfel",
+     "label": "Äpfel"
+    },
+    {
+     "value": "Zitronen",
+     "label": "Zitronen"
+    },
+    {
+     "value": "Sahne",
+     "label": "Sahne"
+    }
+   ]
   },
   {
    "id": "t1-f",
    "group": "l9t-1",
-   "kind": "text",
-   "x": 560,
-   "y": 514,
-   "w": 160,
-   "h": 20,
-   "answer": "Tee"
+   "kind": "select",
+   "x": 606,
+   "y": 511,
+   "w": 126,
+   "h": 26,
+   "answer": "Tee",
+   "label": "t1-f",
+   "options": [
+    {
+     "value": "Ei",
+     "label": "Ei"
+    },
+    {
+     "value": "Orangen",
+     "label": "Orangen"
+    },
+    {
+     "value": "Suppe",
+     "label": "Suppe"
+    },
+    {
+     "value": "Braten",
+     "label": "Braten"
+    },
+    {
+     "value": "Tee",
+     "label": "Tee"
+    },
+    {
+     "value": "Äpfel",
+     "label": "Äpfel"
+    },
+    {
+     "value": "Zitronen",
+     "label": "Zitronen"
+    },
+    {
+     "value": "Sahne",
+     "label": "Sahne"
+    }
+   ]
   },
   {
    "id": "t2-b",
    "group": "l9t-2",
-   "kind": "text",
-   "x": 205,
-   "y": 634,
-   "w": 38,
-   "h": 20,
-   "answer": "die"
+   "kind": "select",
+   "x": 209,
+   "y": 636,
+   "w": 40,
+   "h": 25,
+   "answer": "die",
+   "label": "t2-b",
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    }
+   ]
   },
   {
    "id": "t2-c",
    "group": "l9t-2",
-   "kind": "text",
-   "x": 205,
-   "y": 664,
-   "w": 38,
-   "h": 20,
-   "answer": "der"
+   "kind": "select",
+   "x": 209,
+   "y": 667,
+   "w": 40,
+   "h": 25,
+   "answer": "der",
+   "label": "t2-c",
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    }
+   ]
   },
   {
    "id": "t2-d",
    "group": "l9t-2",
-   "kind": "text",
-   "x": 205,
-   "y": 698,
-   "w": 42,
-   "h": 20,
-   "answer": "der"
+   "kind": "select",
+   "x": 209,
+   "y": 697,
+   "w": 40,
+   "h": 25,
+   "answer": "der",
+   "label": "t2-d",
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    }
+   ]
   },
   {
    "id": "t2-k",
    "group": "l9t-2",
-   "kind": "text",
-   "x": 425,
-   "y": 607,
-   "w": 40,
-   "h": 20,
-   "answer": "der"
+   "kind": "select",
+   "x": 468,
+   "y": 604,
+   "w": 39,
+   "h": 25,
+   "answer": "der",
+   "label": "t2-k",
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    }
+   ]
   },
   {
    "id": "t2-br",
    "group": "l9t-2",
-   "kind": "text",
-   "x": 425,
-   "y": 641,
-   "w": 40,
-   "h": 20,
-   "answer": "das"
+   "kind": "select",
+   "x": 468,
+   "y": 635,
+   "w": 39,
+   "h": 25,
+   "answer": "das",
+   "label": "t2-br",
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    }
+   ]
   },
   {
    "id": "t2-s",
    "group": "l9t-2",
-   "kind": "text",
-   "x": 425,
-   "y": 673,
-   "w": 40,
-   "h": 20,
-   "answer": "die"
+   "kind": "select",
+   "x": 468,
+   "y": 665,
+   "w": 39,
+   "h": 25,
+   "answer": "die",
+   "label": "t2-s",
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    }
+   ]
   },
   {
    "id": "t3-b",
    "group": "l9t-3",
    "kind": "text",
-   "x": 234,
-   "y": 822,
-   "w": 88,
-   "h": 20,
-   "answer": "chtet"
+   "x": 231,
+   "y": 815,
+   "w": 89,
+   "h": 26,
+   "answer": "chtet",
+   "label": "t3-b"
   },
   {
    "id": "t3-c",
    "group": "l9t-3",
    "kind": "text",
-   "x": 308,
-   "y": 846,
-   "w": 86,
-   "h": 20,
-   "answer": "g"
+   "x": 301,
+   "y": 840,
+   "w": 93,
+   "h": 26,
+   "answer": "g",
+   "label": "t3-c"
   },
   {
    "id": "t3-d",
    "group": "l9t-3",
    "kind": "text",
-   "x": 256,
-   "y": 872,
-   "w": 88,
-   "h": 20,
-   "answer": "se"
+   "x": 253,
+   "y": 867,
+   "w": 92,
+   "h": 26,
+   "answer": "se",
+   "label": "t3-d"
   },
   {
    "id": "t3-e",
    "group": "l9t-3",
    "kind": "text",
-   "x": 240,
-   "y": 890,
-   "w": 82,
-   "h": 18,
-   "answer": "chten"
+   "x": 231,
+   "y": 891,
+   "w": 89,
+   "h": 26,
+   "answer": "chten",
+   "label": "t3-e"
   },
   {
    "id": "t4-a1",
@@ -1908,11 +2285,12 @@
    "kind": "radio",
    "name": "t4-a",
    "value": "Ja, gleichfalls!",
-   "x": 206,
+   "x": 209,
    "y": 1009,
-   "w": 22,
-   "h": 22,
-   "answer": "false"
+   "w": 18,
+   "h": 18,
+   "answer": "false",
+   "label": "t4-a1"
   },
   {
    "id": "t4-a2",
@@ -1920,11 +2298,12 @@
    "kind": "radio",
    "name": "t4-a",
    "value": "Oh ja, bitte!",
-   "x": 463,
+   "x": 461,
    "y": 1009,
-   "w": 22,
-   "h": 22,
-   "answer": "true"
+   "w": 18,
+   "h": 18,
+   "answer": "true",
+   "label": "t4-a2"
   },
   {
    "id": "t4-a3",
@@ -1932,11 +2311,12 @@
    "kind": "radio",
    "name": "t4-a",
    "value": "Nein, bitte!",
-   "x": 730,
+   "x": 726,
    "y": 1009,
-   "w": 22,
-   "h": 22,
-   "answer": "false"
+   "w": 18,
+   "h": 18,
+   "answer": "false",
+   "label": "t4-a3"
   },
   {
    "id": "t4-b1",
@@ -1944,11 +2324,12 @@
    "kind": "radio",
    "name": "t4-b",
    "value": "Nein, gleichfalls!",
-   "x": 206,
-   "y": 1071,
-   "w": 22,
-   "h": 22,
-   "answer": "false"
+   "x": 209,
+   "y": 1072,
+   "w": 18,
+   "h": 18,
+   "answer": "false",
+   "label": "t4-b1"
   },
   {
    "id": "t4-b2",
@@ -1956,11 +2337,12 @@
    "kind": "radio",
    "name": "t4-b",
    "value": "Danke, ebenfalls!",
-   "x": 463,
-   "y": 1071,
-   "w": 22,
-   "h": 22,
-   "answer": "true"
+   "x": 461,
+   "y": 1072,
+   "w": 18,
+   "h": 18,
+   "answer": "true",
+   "label": "t4-b2"
   },
   {
    "id": "t4-b3",
@@ -1968,11 +2350,12 @@
    "kind": "radio",
    "name": "t4-b",
    "value": "Ja, gleichfalls!",
-   "x": 730,
-   "y": 1071,
-   "w": 22,
-   "h": 22,
-   "answer": "false"
+   "x": 726,
+   "y": 1072,
+   "w": 18,
+   "h": 18,
+   "answer": "false",
+   "label": "t4-b3"
   },
   {
    "id": "t4-c1",
@@ -1980,11 +2363,12 @@
    "kind": "radio",
    "name": "t4-c",
    "value": "Nein, bitte!",
-   "x": 206,
-   "y": 1136,
-   "w": 22,
-   "h": 22,
-   "answer": "false"
+   "x": 209,
+   "y": 1137,
+   "w": 18,
+   "h": 18,
+   "answer": "false",
+   "label": "t4-c1"
   },
   {
    "id": "t4-c2",
@@ -1992,11 +2376,12 @@
    "kind": "radio",
    "name": "t4-c",
    "value": "Danke, bitte!",
-   "x": 463,
-   "y": 1136,
-   "w": 22,
-   "h": 22,
-   "answer": "false"
+   "x": 461,
+   "y": 1137,
+   "w": 18,
+   "h": 18,
+   "answer": "false",
+   "label": "t4-c2"
   },
   {
    "id": "t4-c3",
@@ -2004,11 +2389,12 @@
    "kind": "radio",
    "name": "t4-c",
    "value": "Nein, danke!",
-   "x": 730,
-   "y": 1136,
-   "w": 22,
-   "h": 22,
-   "answer": "true"
+   "x": 726,
+   "y": 1137,
+   "w": 18,
+   "h": 18,
+   "answer": "true",
+   "label": "t4-c3"
   },
   {
    "id": "t4-d1",
@@ -2016,11 +2402,12 @@
    "kind": "radio",
    "name": "t4-d",
    "value": "Ja, gern!",
-   "x": 206,
-   "y": 1195,
-   "w": 22,
-   "h": 22,
-   "answer": "true"
+   "x": 209,
+   "y": 1200,
+   "w": 18,
+   "h": 18,
+   "answer": "true",
+   "label": "t4-d1"
   },
   {
    "id": "t4-d2",
@@ -2028,11 +2415,12 @@
    "kind": "radio",
    "name": "t4-d",
    "value": "Ja, gleichfalls!",
-   "x": 463,
-   "y": 1195,
-   "w": 22,
-   "h": 22,
-   "answer": "false"
+   "x": 461,
+   "y": 1200,
+   "w": 18,
+   "h": 18,
+   "answer": "false",
+   "label": "t4-d2"
   },
   {
    "id": "t4-d3",
@@ -2040,11 +2428,12 @@
    "kind": "radio",
    "name": "t4-d",
    "value": "Ja, danke!",
-   "x": 730,
-   "y": 1195,
-   "w": 22,
-   "h": 22,
-   "answer": "false"
+   "x": 726,
+   "y": 1200,
+   "w": 18,
+   "h": 18,
+   "answer": "false",
+   "label": "t4-d3"
   },
   {
    "id": "t4-e1",
@@ -2052,11 +2441,12 @@
    "kind": "radio",
    "name": "t4-e",
    "value": "Bitte, nein!",
-   "x": 206,
-   "y": 1260,
-   "w": 22,
-   "h": 22,
-   "answer": "false"
+   "x": 209,
+   "y": 1264,
+   "w": 18,
+   "h": 18,
+   "answer": "false",
+   "label": "t4-e1"
   },
   {
    "id": "t4-e2",
@@ -2064,11 +2454,12 @@
    "kind": "radio",
    "name": "t4-e",
    "value": "Nein, gern.",
-   "x": 463,
-   "y": 1260,
-   "w": 22,
-   "h": 22,
-   "answer": "false"
+   "x": 461,
+   "y": 1264,
+   "w": 18,
+   "h": 18,
+   "answer": "false",
+   "label": "t4-e2"
   },
   {
    "id": "t4-e3",
@@ -2076,11 +2467,48 @@
    "kind": "radio",
    "name": "t4-e",
    "value": "Nein, nicht so gern.",
-   "x": 730,
-   "y": 1260,
-   "w": 22,
-   "h": 22,
-   "answer": "true"
+   "x": 726,
+   "y": 1264,
+   "w": 18,
+   "h": 18,
+   "answer": "true",
+   "label": "t4-e3"
+  },
+  {
+   "id": "compound-0",
+   "group": "l9t-2",
+   "kind": "text",
+   "label": "2 Neues Wort 1",
+   "x": 751,
+   "y": 600,
+   "w": 209,
+   "h": 26,
+   "answer": "die Kartoffelsuppe|der Apfelkuchen|das Schinkenbrötchen",
+   "unordered": true
+  },
+  {
+   "id": "compound-1",
+   "group": "l9t-2",
+   "kind": "text",
+   "label": "2 Neues Wort 2",
+   "x": 751,
+   "y": 631,
+   "w": 209,
+   "h": 26,
+   "answer": "die Kartoffelsuppe|der Apfelkuchen|das Schinkenbrötchen",
+   "unordered": true
+  },
+  {
+   "id": "compound-2",
+   "group": "l9t-2",
+   "kind": "text",
+   "label": "2 Neues Wort 3",
+   "x": 751,
+   "y": 662,
+   "w": 209,
+   "h": 26,
+   "answer": "die Kartoffelsuppe|der Apfelkuchen|das Schinkenbrötchen",
+   "unordered": true
   }
  ],
  "audio": [],
@@ -2103,14 +2531,78 @@
   }
  ],
  "review": {
-  "status": "partial",
+  "status": "verified",
   "verifiedWords": 245,
   "totalWords": 245,
   "notes": [
-   "TEST page: no answer-key coverage, answers derived from exercise logic",
-   "Ü1 a Kuchen printed cursive example (struck in bank); b three blanks unordered, each accepts Äpfel/Orangen/Zitronen",
-   "Ü2 das Obst and der Salat + der Obstsalat printed examples; new-word compounds are free combinations (no fields)",
-   "Ü3 a isst printed example; answers are completion fragments only"
+   "2026-11-16: original scan restored. Eight bank selects(unique fruits),six article selects,three unique compound writing fields,four verb fragments,15reply radios. Three source line connections added,printed Obstsalat example retained. Four scores and traffic-light rings."
   ]
- }
+ },
+ "matchings": [
+  {
+   "id": "compound-lines",
+   "group": "own",
+   "left": [
+    "Kartoffel",
+    "Apfel",
+    "Schinken"
+   ],
+   "right": [
+    "Kuchen",
+    "Brötchen",
+    "Suppe"
+   ],
+   "leftX": 252,
+   "rightX": 421,
+   "leftWidth": 105,
+   "rightWidth": 178,
+   "ys": [
+    636,
+    667,
+    697
+   ],
+   "rightYs": [
+    604,
+    635,
+    665
+   ],
+   "fontSize": 16,
+   "itemHeights": [
+    24,
+    24,
+    24
+   ],
+   "rightHeights": [
+    24,
+    24,
+    24
+   ],
+   "leftDotXs": [
+    363,
+    363,
+    363
+   ],
+   "rightDotXs": [
+    459,
+    459,
+    459
+   ],
+   "leftDotYs": [
+    651,
+    682,
+    713
+   ],
+   "rightDotYs": [
+    618,
+    649,
+    680
+   ],
+   "className": "compoundLines70",
+   "answers": [
+    "2",
+    "0",
+    "1"
+   ]
+  }
+ ]
 }

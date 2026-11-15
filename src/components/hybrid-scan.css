@@ -407,3 +407,19 @@ html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='68'] .hybridField
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='69'] .hybridTools{display:contents}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='69'] .hybridCheck{position:absolute;left:48%;top:88%;font-size:1.3cqw}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='69'] .hybridCheck output{font-size:1.2cqw;position:absolute;right:110%;top:0;width:7cqw;background:white}
+
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='70'] .hybridField{font-size:1.45cqw!important;outline:0}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='70'] .hybridField:focus{outline:1px solid #26764c}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='70'] .hybridField.hybridCorrect{outline:1px solid #268250}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='70'] .hybridField.hybridWrong{outline:1px solid #bd3838}
+html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='70'] select.hybridField{appearance:none!important;background-image:none!important;padding:0!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='70'] .compoundLines70 .sharedMatchItem{color:transparent!important;background:transparent!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='70'] .hybridTools{display:contents}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='70'] .hybridCheck{position:absolute;left:94%;font-size:1.3cqw}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='70'] .hybridCheck output{font-size:1.2cqw;position:absolute;right:110%;top:0;width:7cqw;background:white}
+.hybridScores70 output{position:absolute;color:#315e9f;font:1.7cqw sans-serif;z-index:8}
+.hybridScores70 i{position:absolute;width:3.3%;height:2.1%;border:2px solid #315e9f;border-radius:50%;z-index:8;pointer-events:none}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='70'] .hybridCheck:nth-child(1){top:35%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='70'] .hybridCheck:nth-child(2){top:48%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='70'] .hybridCheck:nth-child(3){top:59%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='70'] .hybridCheck:nth-child(4){top:86%}
