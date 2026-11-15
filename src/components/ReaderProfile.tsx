@@ -1,3 +1,4 @@
+import {useTranslationLanguage} from '../meanings/translation-language';
 import {useUiLanguage} from '../ui-language';
 import {useContext, useEffect, useRef, useState, useSyncExternalStore} from 'react';
 import {getFeedbackVoices, setFeedbackVoices, subscribeFeedbackVoices} from './check-sound-preference';
@@ -11,6 +12,7 @@ import {getAuthConfig, googleLoginUrl} from '../auth/api';
 // Cairo (see tailwind.css) to match the site's typography standard.
 export function ReaderProfile() {
   const {language, t, setLanguage} = useUiLanguage();
+  const {choice, setTranslationLanguage} = useTranslationLanguage();
   const store = useContext(ReaderContext)!;
   const snapshot = useSyncExternalStore(store.subscribe, store.getSnapshot, store.getSnapshot);
   const voicesOn = useSyncExternalStore(subscribeFeedbackVoices, getFeedbackVoices, () => false);
@@ -100,6 +102,11 @@ export function ReaderProfile() {
           {(['ar', 'en'] as const).map(code => <button key={code} type="button" className="profileRow profileChoice profileLanguageChoice" lang={code} aria-pressed={language === code} onClick={() => setLanguage(code)}>
             <span>{code === 'ar' ? 'العربية' : 'English'}</span>
             <span className="profileLanguageCheck" aria-hidden="true">{language === code ? '✓' : ''}</span>
+          </button>)}
+          <div className="profileSection">{t('Translation language')}</div>
+          {(['auto','ar','en'] as const).map(code => <button key={code} type="button" className="profileRow profileChoice profileTranslationChoice" aria-pressed={choice === code} onClick={() => setTranslationLanguage(code)}>
+            <span>{t(code === 'auto' ? 'Follow interface language' : code === 'ar' ? 'Arabic' : 'English')}</span>
+            <span className="profileLanguageCheck" aria-hidden="true">{choice === code ? '✓' : ''}</span>
           </button>)}
         </div>
       )}
