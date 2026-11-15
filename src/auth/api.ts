@@ -21,6 +21,8 @@ export interface ApiUser {
   created_at?: string;
   /** profile photo as a data URL or Google picture URL, null when unset */
   avatar?: string | null;
+  /** Google profile picture URL captured at sign-in, for switching back */
+  google_avatar?: string | null;
 }
 
 export function getToken(): string | null {
@@ -80,6 +82,11 @@ export async function logout(): Promise<void> {
 
 export function me(): Promise<{ user: ApiUser }> {
   return req<{ user: ApiUser }>('/me', { auth: true });
+}
+
+export async function updateMe(patch: { name?: string; avatar?: string | null }): Promise<ApiUser> {
+  const d = await req<{ user: ApiUser }>('/me', { method: 'PATCH', auth: true, body: patch });
+  return d.user;
 }
 
 // ---------- progress sync ----------

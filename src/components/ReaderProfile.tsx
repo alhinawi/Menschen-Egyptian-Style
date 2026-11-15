@@ -3,8 +3,10 @@ import {useUiLanguage} from '../ui-language';
 import {useContext, useEffect, useRef, useState, useSyncExternalStore} from 'react';
 import {getFeedbackVoices, setFeedbackVoices, subscribeFeedbackVoices} from './check-sound-preference';
 import {ReaderContext} from './ReaderControls';
-import {useAuth, signIn, signUp, signOut} from '../auth/useAuth';
+import {useAuth, signIn, signUp, signOut, applyUser} from '../auth/useAuth';
+import {AvatarPicker} from './AvatarPicker';
 import {getAuthConfig, googleLoginUrl} from '../auth/api';
+import type {ApiUser} from '../auth/api';
 import {getSyncStatus, subscribeSyncStatus} from '../auth/progress-sync';
 
 // Profile avatar in the reader toolbar. The panel holds the live account
@@ -30,6 +32,10 @@ export function ReaderProfile() {
     });
     const away = (e: MouseEvent) => {
       const target = e.target as Element | null;
+      // A click that unmounted its own target (e.g. saving inside the avatar
+      // crop overlay) bubbles from a detached node - it was a panel action,
+      // not an outside click.
+      if (target && !target.isConnected) return;
       if (!anchor.current?.contains(target) && !target?.closest?.('.soundToggle')) setOpen(false);
     };
     const escape = (e: KeyboardEvent) => {
@@ -70,7 +76,7 @@ export function ReaderProfile() {
       {open && (
         <div className="profilePanel" dir={language === 'ar' ? 'rtl' : 'ltr'} role="dialog" aria-label={t('الحساب والإعدادات')}>
           {auth.status === 'authed' && auth.user ? (
-            <SignedInBlock name={auth.user.name} email={auth.user.email} avatar={avatar} onSignOut={() => void signOut()} />
+            <SignedInBlock user={auth.user} avatar={avatar} onSignOut={() => void signOut()} />
           ) : (
             <SignInBlock googleOn={googleOn} />
           )}
@@ -115,17 +121,25 @@ export function ReaderProfile() {
   );
 }
 
-function SignedInBlock({name, email, avatar, onSignOut}: {name: string; email: string; avatar: string | null; onSignOut: () => void}) {
+function SignedInBlock({user, avatar, onSignOut}: {user: ApiUser; avatar: string | null; onSignOut: () => void}) {
   const {t} = useUiLanguage();
   const sync = useSyncExternalStore(subscribeSyncStatus, getSyncStatus, getSyncStatus);
+  const [picking, setPicking] = useState(false);
+  const {name, email} = user;
+  if (picking) {
+    return <AvatarPicker user={user} onSaved={(u) => {applyUser(u); setPicking(false);}} onClose={() => setPicking(false)} />;
+  }
   return (
     <>
       <div className="profileRow authUserRow">
-        {avatar ? (
-          <img className="authUserAvatar" src={avatar} alt="" referrerPolicy="no-referrer" />
-        ) : (
-          <span className="authUserAvatar authUserInitial" aria-hidden="true">{name.trim().charAt(0) || t('؟')}</span>
-        )}
+        <button type="button" className="authUserAvatarBtn" aria-label={t('Change profile photo')} title={t('Change profile photo')} onClick={() => setPicking(true)}>
+          {avatar ? (
+            <img className="authUserAvatar" src={avatar} alt="" referrerPolicy="no-referrer" />
+          ) : (
+            <span className="authUserAvatar authUserInitial" aria-hidden="true">{name.trim().charAt(0) || t('؟')}</span>
+          )}
+          <span className="authUserAvatarEdit" aria-hidden="true">✎</span>
+        </button>
         <span className="authUserText">
           <b>{name}</b>
           <small dir="ltr">{email}</small>
