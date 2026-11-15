@@ -427,3 +427,24 @@ html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='70'] select.hybri
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='71'] .hybridField{font-size:1.5cqw!important;outline:0;resize:none}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='71'] .hybridField:focus{outline:1px solid #26764c}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='71'] textarea.hybridField{line-height:2.36cqw!important}
+
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='72'] .hybridField{font-size:1.45cqw!important;outline:0}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='72'] .hybridField:focus{outline:1px solid #26764c}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='72'] .hybridField.hybridCorrect{outline:1px solid #268250}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='72'] .hybridField.hybridWrong{outline:1px solid #bd3838}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='72'] [data-ink-covered='true']{background:white!important}
+html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='72'] select.hybridField{appearance:none!important;background-image:none!important;padding:0!important;font-size:1.25cqw!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='72'] [data-field-id^='cell-']{text-align:center;padding:0!important;font-size:1.9cqw!important;text-transform:uppercase}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='72'] [data-field-id^='odd-']{border:0!important;box-shadow:none!important;border-radius:0!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='72'] [data-field-id^='odd-']:checked{background:linear-gradient(transparent 48%,#315e9f 48%,#315e9f 56%,transparent 56%)!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='72'] .places72 .sharedMatchItem{color:transparent!important;background:transparent!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='72'] .hybridTools{display:contents}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='72'] .hybridCheck{position:absolute;left:94%;font-size:1.3cqw}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='72'] .hybridCheck output{font-size:1.2cqw;position:absolute;right:110%;top:0;width:7cqw;background:white}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='72'] .hybridCheck:nth-child(1){top:23%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='72'] .hybridCheck:nth-child(2){top:37%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='72'] .hybridCheck:nth-child(3){top:53%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='72'] .hybridCheck:nth-child(4){top:63%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='72'] .hybridCheck:nth-child(5){top:89%}
+
+html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='72'] select[data-field-id='order-8'],html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='72'] select[data-field-id='order-9']{font-size:.9cqw!important}
