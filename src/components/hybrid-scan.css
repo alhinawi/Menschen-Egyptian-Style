@@ -321,3 +321,18 @@ html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .hybridField
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='62'] .hybridCheck:nth-child(3){top:82%}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='62'] .hybridCheck:nth-child(4){top:94%}
 html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='62'] .hybridFields select.hybridField[data-field-id$='-l']{appearance:none!important;background-image:none!important;padding:0!important;text-align:center!important}
+
+/* AB p63: independent sound checkboxes,source lettering and own text marks. */
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='63'] .hybridField{font-size:1.5cqw!important;outline:0}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='63'] .hybridField:focus{outline:1px solid #26764c}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='63'] .hybridField.hybridCorrect{outline:1px solid #268250}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='63'] .hybridField.hybridWrong{outline:1px solid #bd3838}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='63'] [data-field-id^='mark-'],.hybridScan[data-scan-book='ab-a11'][data-scan-page='63'] [data-field-id^='accent-']{border:0!important;border-radius:0!important;outline:0!important;box-shadow:none!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='63'] [data-field-id^='mark-']:checked{background:#e5c42a66!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='63'] [data-field-id^='accent-']:checked{background:linear-gradient(transparent calc(100% - 2px),#9b4d16 calc(100% - 2px))!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='63'] .hybridTools{display:contents}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='63'] .hybridCheck{position:absolute;left:93%;font-size:1.3cqw}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='63'] .hybridCheck output{font-size:1.2cqw;position:absolute;right:110%;top:0;width:7cqw;background:white}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='63'] .hybridCheck:nth-child(1){top:55%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='63'] .hybridCheck:nth-child(2){top:76%;left:54%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='63'] .hybridCheck:nth-child(3){top:91%;left:54%}
