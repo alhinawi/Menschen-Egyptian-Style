@@ -1,3 +1,4 @@
+import {isFeedbackAudio,noteLessonAudio} from './audio-feedback-coordination';
 import {useEffect,useRef,useState} from 'react';
 import {createPortal} from 'react-dom';
 import './reader-audio-players.css';
@@ -63,13 +64,13 @@ export function ReaderAudioPlayers(){
  const hostApi=useRef<{ensure?:()=>void}>({});
  useEffect(()=>{
   // A play request must resurrect a wiped panel immediately, not one tick later.
-  const reveal=(audio:HTMLAudioElement)=>{hostApi.current.ensure?.();setActive(audio)};
+  const reveal=(audio:HTMLAudioElement)=>{if(isFeedbackAudio(audio))return;noteLessonAudio(audio);hostApi.current.ensure?.();setActive(audio)};
   const show=(event:Event)=>{if(event.target instanceof HTMLAudioElement)reveal(event.target)};
   // Observe playback requests so the permanent player follows every source.
   const original=HTMLMediaElement.prototype.play;
   const note=(event:MouseEvent)=>{const btn=(event.target as Element|null)?.closest?.(listenSelector);if(btn)lastListen={task:exerciseOf(btn),ts:Date.now()}};
   const play=function(this:HTMLMediaElement){
-   if(this instanceof HTMLAudioElement){
+   if(this instanceof HTMLAudioElement&&!isFeedbackAudio(this)){
     if(lastListen&&Date.now()-lastListen.ts<2000){if(lastListen.task)this.dataset.aufgabe=lastListen.task;else delete this.dataset.aufgabe;lastListen=null}
     reveal(this);
    }
@@ -96,7 +97,7 @@ export function ReaderAudioPlayers(){
   };
   hostApi.current.ensure=ensure;
   const update=()=>{
-   setActive(old=>old&&!old.isConnected?null:old);
+   setActive(old=>old&&!old.isConnected&&old.paused?null:old);
    document.querySelectorAll<HTMLElement>('button').forEach(el=>{el.toggleAttribute('data-reader-reset',/^Noch einmal$/i.test(el.textContent?.trim()||''))});
    ensure();
    const jump=document.querySelector<HTMLSelectElement>('#pageJump');const page=jump?document.querySelectorAll('.page')[Number(jump.value)]:null;
