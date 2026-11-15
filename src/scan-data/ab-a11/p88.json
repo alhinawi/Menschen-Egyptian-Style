@@ -1387,81 +1387,15 @@
  ],
  "fields": [
   {
-   "id": "u1-b",
-   "group": "u1",
-   "kind": "text",
-   "label": "b",
-   "answer": "machen",
-   "x": 225,
-   "y": 349,
-   "w": 180,
-   "h": 24
-  },
-  {
-   "id": "u1-c",
-   "group": "u1",
-   "kind": "text",
-   "label": "c",
-   "answer": "fahren",
-   "x": 225,
-   "y": 373,
-   "w": 180,
-   "h": 24
-  },
-  {
-   "id": "u1-d",
-   "group": "u1",
-   "kind": "text",
-   "label": "d",
-   "answer": "lernen",
-   "x": 225,
-   "y": 402,
-   "w": 180,
-   "h": 24
-  },
-  {
-   "id": "u1-e",
-   "group": "u1",
-   "kind": "text",
-   "label": "e",
-   "answer": "lesen",
-   "x": 225,
-   "y": 436,
-   "w": 180,
-   "h": 24
-  },
-  {
-   "id": "u1-f",
-   "group": "u1",
-   "kind": "text",
-   "label": "f",
-   "answer": "einladen",
-   "x": 225,
-   "y": 460,
-   "w": 180,
-   "h": 24
-  },
-  {
-   "id": "u1-g",
-   "group": "u1",
-   "kind": "text",
-   "label": "g",
-   "answer": "aufräumen",
-   "x": 225,
-   "y": 494,
-   "w": 180,
-   "h": 24
-  },
-  {
    "id": "u2-a",
    "group": "u2",
    "kind": "text",
    "label": "a: Ja, aber nur bis 14 Uhr. …",
    "answer": "Ich habe am Nachmittag Fußball gespielt",
-   "x": 498,
-   "y": 628,
-   "w": 630,
-   "h": 24
+   "x": 495,
+   "y": 615,
+   "w": 625,
+   "h": 30
   },
   {
    "id": "u2-b1",
@@ -1469,10 +1403,10 @@
    "kind": "text",
    "label": "b Frage (sehen/Monika/du)",
    "answer": "Hast du Monika gesehen",
-   "x": 307,
-   "y": 682,
-   "w": 614,
-   "h": 24
+   "x": 263,
+   "y": 674,
+   "w": 654,
+   "h": 30
   },
   {
    "id": "u2-b2",
@@ -1480,10 +1414,10 @@
    "kind": "text",
    "label": "b: Ja, letzte Woche. …",
    "answer": "Wir haben viel gelacht",
-   "x": 443,
-   "y": 712,
-   "w": 478,
-   "h": 24
+   "x": 435,
+   "y": 703,
+   "w": 508,
+   "h": 30
   },
   {
    "id": "u2-c1",
@@ -1491,10 +1425,10 @@
    "kind": "text",
    "label": "c Frage (einkaufen/heute Nachmittag/ihr)",
    "answer": "Habt ihr heute Nachmittag eingekauft",
-   "x": 307,
-   "y": 740,
-   "w": 472,
-   "h": 24
+   "x": 263,
+   "y": 734,
+   "w": 504,
+   "h": 30
   },
   {
    "id": "u2-c2",
@@ -1502,10 +1436,10 @@
    "kind": "text",
    "label": "c: Nein, …",
    "answer": "Anna hat Englisch gelernt",
-   "x": 350,
-   "y": 769,
-   "w": 532,
-   "h": 24
+   "x": 321,
+   "y": 763,
+   "w": 566,
+   "h": 30
   },
   {
    "id": "u2-c3",
@@ -1514,9 +1448,9 @@
    "label": "c: und …",
    "answer": "ich habe Hausaufgaben gemacht",
    "x": 307,
-   "y": 799,
-   "w": 546,
-   "h": 24
+   "y": 791,
+   "w": 534,
+   "h": 30
   },
   {
    "id": "u2-d1",
@@ -1524,21 +1458,21 @@
    "kind": "text",
    "label": "d: Was …? (zum Frühstück/essen/du)",
    "answer": "hast du zum Frühstück gegessen",
-   "x": 354,
-   "y": 827,
-   "w": 514,
-   "h": 24
+   "x": 312,
+   "y": 822,
+   "w": 542,
+   "h": 30
   },
   {
    "id": "u2-d2",
    "group": "u2",
    "kind": "text",
    "label": "d: Müsli. Und ich …",
-   "answer": "habe einen Kaffee getrunken",
+   "answer": "habe einen Kaffee getrunken|habe einen Kaffee getrunken.",
    "x": 418,
-   "y": 857,
-   "w": 485,
-   "h": 24
+   "y": 851,
+   "w": 475,
+   "h": 30
   },
   {
    "id": "u2-e1",
@@ -1546,10 +1480,10 @@
    "kind": "text",
    "label": "e: Was …? (heute/machen/du)",
    "answer": "hast du heute gemacht",
-   "x": 354,
-   "y": 885,
-   "w": 582,
-   "h": 24
+   "x": 312,
+   "y": 880,
+   "w": 607,
+   "h": 30
   },
   {
    "id": "u2-e2",
@@ -1557,10 +1491,10 @@
    "kind": "text",
    "label": "e: Nicht viel. Ich …",
    "answer": "habe bis 12 Uhr geschlafen",
-   "x": 414,
-   "y": 914,
-   "w": 500,
-   "h": 24
+   "x": 420,
+   "y": 910,
+   "w": 493,
+   "h": 30
   },
   {
    "id": "u2-e3",
@@ -1568,10 +1502,10 @@
    "kind": "text",
    "label": "e: Gestern …",
    "answer": "haben meine Freunde und ich lange gefeiert",
-   "x": 327,
-   "y": 945,
-   "w": 800,
-   "h": 24
+   "x": 350,
+   "y": 939,
+   "w": 779,
+   "h": 30
   },
   {
    "id": "u3-a",
@@ -1579,10 +1513,10 @@
    "kind": "text",
    "label": "(a) Dann …",
    "answer": "habe ich eingekauft",
-   "x": 657,
-   "y": 1248,
-   "w": 471,
-   "h": 24
+   "x": 659,
+   "y": 1240,
+   "w": 436,
+   "h": 30
   },
   {
    "id": "u3-b",
@@ -1590,10 +1524,10 @@
    "kind": "text",
    "label": "(b) Von …",
    "answer": "15 bis 17 Uhr habe ich Tennis gespielt",
-   "x": 271,
-   "y": 1277,
-   "w": 857,
-   "h": 24
+   "x": 380,
+   "y": 1269,
+   "w": 713,
+   "h": 30
   },
   {
    "id": "u3-c",
@@ -1601,10 +1535,10 @@
    "kind": "text",
    "label": "(c) Und Du? Was …?",
    "answer": "hast du gemacht",
-   "x": 470,
-   "y": 1305,
-   "w": 640,
-   "h": 24
+   "x": 475,
+   "y": 1298,
+   "w": 615,
+   "h": 30
   },
   {
    "id": "u3-d",
@@ -1612,10 +1546,10 @@
    "kind": "text",
    "label": "(d) Am Vormittag habe ich …",
    "answer": "mit Anna Deutsch gelernt",
-   "x": 515,
-   "y": 1338,
-   "w": 600,
-   "h": 24
+   "x": 550,
+   "y": 1327,
+   "w": 542,
+   "h": 30
   },
   {
    "id": "u3-e",
@@ -1623,10 +1557,10 @@
    "kind": "text",
    "label": "(e) …",
    "answer": "Am Nachmittag habe ich gearbeitet",
-   "x": 344,
-   "y": 1370,
-   "w": 775,
-   "h": 24
+   "x": 343,
+   "y": 1356,
+   "w": 751,
+   "h": 39
   }
  ],
  "audio": [],
@@ -1652,7 +1586,92 @@
    "TEST Lektion 11: the AB answer key has no TEST section - all answers derived from exercise logic and the blue printed notes.",
    "Ü1: 7 items but '_ / 6 Punkte' and a printed connection line runs from 'a Wein' to 'trinken' - treated as a printed example, so a has no field; fields b-g carry the matched verb.",
    "Ü2a: 'Hast du heute gearbeitet?' printed blue example (words, no field). Ü3: 'ich habe lange geschlafen.' printed blue example (words, no field); blue cursive notes for Kelubia/Neyla are printed hints (words).",
-   "Speaker squares/triangles dropped. Derived Ü2/Ü3 answers follow Perfekt + prompt order exactly."
+   "Speaker squares/triangles dropped. Derived Ü2/Ü3 answers follow Perfekt + prompt order exactly.",
+   "2026-11-16: Original scan/fonts and handwritten hints;real6line matching preserving printed wineexample,16sentencewritinganswers,threepointtotals and trafficlights. Empty/wrong/correct,sourcegrammar reviewed."
   ]
- }
+ },
+ "matchings": [
+  {
+   "id": "p88-match",
+   "group": "u1",
+   "left": [
+    "b die Hausaufgaben",
+    "c Fahrrad",
+    "d Spanisch",
+    "e die Zeitung",
+    "f Freunde",
+    "g das Zimmer"
+   ],
+   "right": [
+    "lernen",
+    "aufräumen",
+    "machen",
+    "einladen",
+    "fahren",
+    "lesen"
+   ],
+   "leftX": 204,
+   "rightX": 483,
+   "leftWidth": 206,
+   "rightWidth": 171,
+   "ys": [
+    345,
+    376,
+    405,
+    434,
+    464,
+    493
+   ],
+   "rightYs": [
+    310,
+    340,
+    370,
+    399,
+    458,
+    487
+   ],
+   "leftDotXs": [
+    421,
+    421,
+    421,
+    421,
+    421,
+    421
+   ],
+   "rightDotXs": [
+    508,
+    508,
+    508,
+    508,
+    508,
+    508
+   ],
+   "leftDotYs": [
+    359,
+    390,
+    418,
+    447,
+    478,
+    507
+   ],
+   "rightDotYs": [
+    323,
+    354,
+    384,
+    413,
+    472,
+    501
+   ],
+   "answers": [
+    "2",
+    "4",
+    "0",
+    "5",
+    "3",
+    "1"
+   ],
+   "className": "p88Match",
+   "fontSize": 20
+  }
+ ]
 }
