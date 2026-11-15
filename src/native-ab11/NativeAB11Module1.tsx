@@ -86,28 +86,36 @@ export function NativeAB11Module1({page}:{page:string}){
  {[[111,235,'SCHREIBEN'],[111,367,'WÖRTER'],[112,606,'WÖRTER'],[114,786,'STRUKTUREN'],[114,1029,'STRUKTUREN']].map(([x,y,s])=><div className="mP20Rail" key={String(y)} style={{left:Number(x),top:Number(y)}}>{s}</div>)}
  <div className="mP20Footer"><em>Modul 1</em><span>20&nbsp;&nbsp; | &nbsp;&nbsp;zwanzig</span></div>
  </>})()}
- {page==='21'&&<>
- {head('TRAINING: SPRECHEN')}<div className="nabModule">3</div>
- {title('1',191,'Sich vorstellen')}{txt(145,228,250,'a  Welche Sätze passen zu den\n   Fragen an der Tafel?\n   Markieren Sie.','mTitle')}{art('class',405,187,415,271)}
- {['Ich heiße …','Ich arbeite bei …','Meine Telefonnummer ist …','Ich spreche …','Ich bin … Jahre alt.','Ich bin verheiratet.','Ich bin … von Beruf.','Ich studiere in …','Ich habe zwei Kinder.','Ich wohne in …','Ich komme aus …'].map((s,i)=>{const x=i<4?169:i<8?405:588,y=472+(i<4?i:i<8?i-4:i-8)*22;return <button className={'mPhrase '+(i===0||v['mark-'+i]?'marked':'')} key={s} disabled={i===0} data-native-field={'mark-'+i} data-value={v['mark-'+i]?'1':''} style={{left:x,top:Y(y)}} aria-label={'1a Satz markieren '+s} onClick={()=>set('mark-'+i,v['mark-'+i]?'':'1')}>{s}</button>})}
- {(()=>{const a:Record<string,string>={'mark-1':'1','mark-3':'1','mark-6':'1','mark-9':'1','mark-10':'1','mark-2':'','mark-4':'','mark-5':'','mark-7':'','mark-8':''};return <div className="mCheck" data-native-task="sr1a" style={{left:169,top:Y(548)}}><CheckButton answers={a} onClick={()=>G({...graded,sr1a:Object.entries(a).every(([k,x])=>norm(v[k]||'')===norm(x))})}></CheckButton><output aria-live="polite">{'sr1a' in graded?(graded.sr1a?'✓ Richtig!':'Noch einmal'):''}</output></div>})()}
- {txt(145,581,650,'b  Das bin ich! Notieren Sie mindestens fünf Sätze.','mTitle')}{txt(185,624,340,'Ich heiße Julia.\nIch komme aus … und ich wohne in …','mExample')}{open('eigene-saetze',185,671,340,52,'1b mindestens fünf eigene Sätze')}
- {txt(548,581,290,'Lernen Sie Sätze zu Ihrer Person auswendig.\nSie helfen beim Small Talk.','mSmall mTip')}
- {txt(132,751,720,'TRAINING: AUSSPRACHE','mHeader')}{txt(508,763,280,'Satzmelodie bei Fragen','mSmall')}
- {title('1',804,'Was hören Sie? Ergänzen Sie die\nSatzmelodie: ↘ oder ↗.','',132,365)}{listen('11',96,807,'1')}
- {['Wer ist das?','Ist das deine Frau?','Bist du verheiratet?','Wie heißt deine Frau?','Heißt deine Frau Steffi?','Was ist sie von Beruf?'].map((s,i)=><span key={s}>{txt(168,852+i*24,240,s)}{i<2?txt(i===0?260:307,852+i*24,30,i===0?'↘':'↗','mExample'):arrow('ap1-'+(i+1),[0,0,328,347,366,347][i],850+i*24)}</span>)}{check('ap1',168,1001)}
- {title('2',1043,'Ergänzen Sie die Regel.','',132,365)}{txt(179,1082,250,'↗ | ↘','mBank')}{txt(179,1115,270,'Bei W-Fragen (Wer? Wie? Was? …)\ngeht die Satzmelodie nach unten:','mSmall')}{arrow('ap2-1',407,1133)}{txt(179,1164,270,'Bei Ja-/Nein-Fragen geht die Satz-\nmelodie nach oben:','mSmall')}{arrow('ap2-2',320,1182)}{check('ap2',168,1218)}
- {title('3',804,'Ergänzen Sie die Satzmelodie (↘, ↗).\nHören Sie dann und vergleichen Sie.','',509,342)}{listen('12',470,807,'1')}
- {txt(545,862,300,'▪ Das ist deine Freundin, ↘ oder? ↗','mSmall')}
- {txt(545,889,40,'▴ Nein.','mSmall')}{arrow('ap3-1',590,887)}{txt(626,889,200,'Das ist nicht meine','mSmall')}{txt(563,914,76,'Freundin.','mSmall')}{arrow('ap3-2',640,912)}{txt(676,914,150,'Das ist meine','mSmall')}{txt(563,939,76,'Schwester.','mSmall')}{arrow('ap3-3',640,937)}
- {txt(545,965,255,'▪ Wohnt sie auch in Deutschland?','mSmall')}{arrow('ap3-4',800,963)}
- {txt(545,991,40,'▴ Nein.','mSmall')}{arrow('ap3-5',590,989)}{txt(626,991,160,'Sie wohnt in Polen.','mSmall')}{arrow('ap3-6',785,989)}
- {txt(545,1017,40,'▪ Aha.','mSmall')}{arrow('ap3-7',587,1015)}{txt(623,1017,210,'Aber sie spricht Deutsch,','mSmall')}{txt(563,1042,40,'oder?','mSmall')}{arrow('ap3-8',610,1040)}
- {txt(545,1068,286,'▴ Sie spricht Polnisch, Deutsch und','mSmall')}{txt(563,1093,72,'Englisch.','mSmall')}{arrow('ap3-9',638,1091)}
- {txt(545,1119,160,'▪ Ist sie verheiratet?','mSmall')}{arrow('ap3-10',708,1117)}
- {txt(545,1145,40,'▴ Nein.','mSmall')}{arrow('ap3-11',590,1143)}{txt(625,1145,220,'Sie ist nicht verheiratet.','mSmall')}{check('ap3',545,1182)}
- {listen('13',505,1223,'2')}{txt(545,1223,300,'Hören Sie noch einmal und sprechen Sie nach.','mSmall')}
- </>}
+ {page==='21'&&(()=>{
+ const T=(x:number,y:number,w:number,s:string,c='')=><div className={'mText '+c} style={{left:x,top:y,width:w}}><Words s={s}/></div>;
+ const H=(n:string,x:number,y:number,w:number,s:string)=><><div className="mNumber" style={{left:x,top:y}}>{n}</div>{T(x+36,y+1,w,s,'mTitle')}</>;
+ const arrowAt=(id:string,x:number,y:number)=><button className="mArrow" data-native-field={id} aria-label={'Satzmelodie '+id} style={{left:x,top:y}} onClick={()=>set(id,v[id]==='↗'?'↘':'↗')}>{v[id]||' '}</button>;
+ const C=(g:string,x:number,y:number)=><div className="mCheck" data-native-task={g} style={{left:x,top:y}}><CheckButton onClick={()=>G({...graded,[g]:Object.entries(answers(g)).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}/><output aria-live="polite">{g in graded?(graded[g]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ return <>{T(136,126,540,'TRAINING: SPRECHEN','mHeader')}<div className="mP21TopRule"/><div className="nabModule">3</div>
+ {H('1',135,188,270,'Sich vorstellen')}{T(143,225,20,'a','mLetter')}{T(171,225,237,'Welche Sätze passen zu den\nFragen an der Tafel?\nMarkieren Sie.','mTitle')}{art('class',405,186,415,269)}
+ {['Ich heiße …','Ich arbeite bei …','Meine Telefonnummer ist …','Ich spreche …','Ich bin … Jahre alt.','Ich bin verheiratet.','Ich bin … von Beruf.','Ich studiere in …','Ich habe zwei Kinder.','Ich wohne in …','Ich komme aus …'].map((s,i)=>{const x=i<4?169:i<8?404:588,y=467+(i<4?i:i<8?i-4:i-8)*21.4;return <button className={'mPhrase '+(i===0||v['mark-'+i]?'marked':'')} key={s} disabled={i===0} data-native-field={'mark-'+i} style={{left:x,top:y}} aria-label={'1a Satz markieren '+s} onClick={()=>set('mark-'+i,v['mark-'+i]?'':'1')}>{s}</button>})}
+ <div className="mCheck" data-native-task="sr1a" style={{left:833,top:516}}><CheckButton onClick={()=>{const a:Record<string,string>={'mark-1':'1','mark-3':'1','mark-6':'1','mark-9':'1','mark-10':'1','mark-2':'','mark-4':'','mark-5':'','mark-7':'','mark-8':''};G({...graded,sr1a:Object.entries(a).every(([k,x])=>norm(v[k]||'')===norm(x))})}}/><output aria-live="polite">{'sr1a' in graded?(graded.sr1a?'✓ Richtig!':'Noch einmal'):''}</output></div>
+ {T(143,574,20,'b','mLetter')}{T(169,574,370,'Das bin ich! Notieren Sie mindestens fünf Sätze.','mTitle')}
+ <PageImage className="mArt" alt="Ich heiße Julia. Ich komme aus … und ich wohne in …" src="assets/native-ab11/p21-ink-profile.png" style={{left:185,top:626,width:228,height:36}}/>
+ <textarea className="mP21Writing" data-native-field="eigene-saetze" aria-label="1b mindestens fünf eigene Sätze" value={v['eigene-saetze']||''} onChange={e=>set('eigene-saetze',e.target.value)}/>
+ <div className="mP21Tip"><i>TIPP</i>{T(16,10,299,'Lernen Sie Sätze zu Ihrer Person auswendig.\nSie helfen beim Small Talk.','mSmall')}</div>
+ {T(136,735,325,'TRAINING: AUSSPRACHE','mHeader')}{T(455,744,205,'Satzmelodie bei Fragen','mP21Subtitle')}<div className="mP21BottomRule"/>
+ {H('1',132,791,310,'Was hören Sie? Ergänzen Sie die\nSatzmelodie: ↘ oder ↗.')}{listen('11',96,797,'1')}
+ {['Wer ist das?','Ist das deine Frau?','Bist du verheiratet?','Wie heißt deine Frau?','Heißt deine Frau Steffi?','Was ist sie von Beruf?'].map((s,i)=><span key={s}>{T(168,838+i*21.4,280,s)}{i<2?T(i===0?257:308,838+i*21.4,25,i===0?'↘':'↗','mP21PrintedArrow'):arrowAt('ap1-'+(i+1),[0,0,312,330,344,329][i],836+i*21.4)}</span>)}{C('ap1',463,944)}
+ {H('2',132,993,310,'Ergänzen Sie die Regel.')}
+ <div className="mP21RuleBox"><i>REGEL</i></div>{T(185,1034,60,'↗ | ↘','mBank')}{T(185,1063,260,'Bei W-Fragen (Wer? Wie? Was? …)\ngeht die Satzmelodie nach unten:','mSmall')}{arrowAt('ap2-1',407,1080)}{T(185,1102,260,'Bei Ja-/Nein-Fragen geht die Satz-\nmelodie nach oben:','mSmall')}{arrowAt('ap2-2',315,1120)}{C('ap2',463,1119)}
+ {H('3',509,794,319,'Ergänzen Sie die Satzmelodie (↘, ↗).\nHören Sie dann und vergleichen Sie.')}{listen('12',470,798,'1')}
+ {T(545,851,293,'▪ Das ist deine Freundin, ↘ oder? ↗')}
+ {T(545,873,60,'▴ Nein.')}{arrowAt('ap3-1',606,871)}{T(642,873,210,'Das ist nicht meine')}{T(563,894,75,'Freundin.')}{arrowAt('ap3-2',638,892)}{T(674,894,155,'Das ist meine')}{T(563,915,79,'Schwester.')}{arrowAt('ap3-3',642,913)}
+ {T(545,937,258,'▪ Wohnt sie auch in Deutschland?')}{arrowAt('ap3-4',800,935)}
+ {T(545,958,60,'▴ Nein.')}{arrowAt('ap3-5',606,956)}{T(641,958,145,'Sie wohnt in Polen.')}{arrowAt('ap3-6',784,956)}
+ {T(545,979,56,'▪ Aha.')}{arrowAt('ap3-7',599,977)}{T(634,979,216,'Aber sie spricht Deutsch,')}{arrowAt('ap3-8',562,998)}{T(597,1000,80,'oder?')}
+ {T(545,1022,305,'▴ Sie spricht Polnisch, Deutsch und')}{T(563,1043,68,'Englisch.')}{arrowAt('ap3-9',632,1041)}
+ {T(545,1065,150,'▪ Ist sie verheiratet?')}{arrowAt('ap3-10',700,1063)}
+ {T(545,1086,60,'▴ Nein.')}{arrowAt('ap3-11',606,1084)}{T(641,1086,210,'Sie ist nicht verheiratet.')}{C('ap3',845,1086)}
+ {listen('13',500,1131,'2')}{T(543,1129,300,'Hören Sie noch einmal und sprechen\nSie nach.','mTitle')}
+ <div className="mP21Footer">einundzwanzig&nbsp;&nbsp; | &nbsp;&nbsp;21 <em>Modul 1</em></div>
+ </>})()}
  {page==='22'&&<>
  {head('TEST')}{title('1',200,'Familie. Ergänzen Sie.')}
  {txt(161,235,150,'Eltern:')}{txt(328,235,73,'Vater und')}{f('u1-mutter',405,233,162)}
