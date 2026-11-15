@@ -246,14 +246,15 @@
 @media (max-width:700px){.nkbPaintToolsPen button{min-height:60px;font-size:20px}}
 @media (max-width:500px){.nkbPaintToolsPen button{min-height:84px;font-size:26px;padding:6px 14px}}
 @media (max-width:380px){.nkbPaintToolsPen button{min-height:102px}}
-.nkbPaintFab{display:none}
-@media (max-width:500px){
- .nkbPaintToolsMap{display:none}
- .nkbPaintFab{display:block;position:fixed;right:10px;bottom:70px;z-index:998;min-height:44px;padding:0 16px;font:600 15px Arial,sans-serif;border-radius:22px;border:1.5px solid #8a7a58;background:#fffdf5;color:#4a3f28;box-shadow:0 2px 8px #0003;cursor:pointer}
-}
-.nkbPaintBackdrop{position:fixed;inset:0;z-index:999;background:transparent}
-.nkbPaintMenu{position:fixed;right:10px;bottom:126px;z-index:1000;display:flex;flex-direction:column;gap:8px;min-width:200px;background:#fffef9;border:1.5px solid #b9a77e;border-radius:10px;padding:10px;box-shadow:0 8px 30px #0004;font-family:Arial,sans-serif}
-.nkbPaintMenu button{min-height:44px;font-size:15px;text-align:left;padding:0 12px;border:1px solid #d8cfb8;border-radius:6px;background:#fffdf5;color:#35402f;cursor:pointer}
-.nkbPaintFab{display:none;align-items:center;gap:8px}
-.nkbPaintFabDot{display:inline-block;width:16px;height:16px;border-radius:50%;border:1px solid #0003}
-@media (max-width:500px){.nkbPaintFab{display:inline-flex}}
+
+/* Below-page writing space is UI, not a magnified printed book heading. */
+.nkbWritePanel{direction:ltr;width:min(720px,calc(100% - 24px))!important;max-width:720px!important;margin:14px auto 20px;padding:16px 18px;border:1px solid #d9c9a5;border-radius:12px;background:#fbf8f0;box-shadow:0 3px 12px #4c26320a;color:#514235;font:14px/1.55 Georgia,serif;text-align:left;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+.nkbWritePanel .nkbPanelHead{font:600 13px/1.4 Arial,sans-serif;color:#74515b;border-bottom:1px solid #d9c9a5;padding-bottom:10px}
+.nkbWritePanel .nkbPanelHead>span,.nkbWritePanel h3 b{background:#f0e7d5;color:#735b2d;border:1px solid #d9c9a5;border-radius:4px;padding:2px 6px;font:600 12px/1.2 Arial,sans-serif}
+.nkbWritePanel h3{font:600 14px/1.5 Arial,sans-serif;margin:14px 0 6px;color:#693745}
+.nkbWritePanel p{font:14px/1.6 Georgia,serif;margin:0 0 10px}
+.nkbWritePanel label{font:12px/1.4 Arial,sans-serif;color:#7c6c54}
+.nkbWritePanel input,.nkbWritePanel textarea{box-sizing:border-box;border:1px solid #cbbd9f;border-radius:6px;background:#fffefb;color:#4c2632;font:16px/1.4 Georgia,serif;padding:8px;box-shadow:none;outline:0}
+.nkbWritePanel textarea.nkbLine1{min-height:42px;max-height:220px;overflow:auto}
+.nkbWritePanel :is(input,textarea):focus-visible{border-color:#a98b49;outline:2px solid #b99a5440;outline-offset:1px}
+@media(max-width:500px){.nkbWritePanel{width:calc(100% - 24px)!important;padding:12px}.nkbWritePanel h3{font-size:14px}}
