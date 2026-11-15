@@ -2265,27 +2265,443 @@
    "id": "r1",
    "group": "ta-2",
    "kind": "radio",
-   "label": "Der Satzakzent ist immer auf dem letzten Wort",
-   "name": "ta2",
-   "value": "immer auf dem letzten Wort",
-   "answer": "false",
+   "label": "Der Satzakzent: letztes Wort",
    "x": 240,
-   "y": 1282,
-   "w": 16,
-   "h": 15
+   "y": 1280,
+   "w": 18,
+   "h": 18,
+   "name": "ta2",
+   "value": "letztes",
+   "answer": "false"
   },
   {
    "id": "r2",
    "group": "ta-2",
    "kind": "radio",
-   "label": "Der Satzakzent ist auf der wichtigen Information",
-   "name": "ta2",
-   "value": "auf der wichtigen Information",
-   "answer": "true",
+   "label": "Der Satzakzent: wichtige Information",
    "x": 240,
-   "y": 1319,
-   "w": 16,
+   "y": 1323,
+   "w": 18,
+   "h": 18,
+   "name": "ta2",
+   "value": "wichtig",
+   "answer": "true"
+  },
+  {
+   "id": "question-0",
+   "group": "writing-1a",
+   "kind": "checkbox",
+   "label": "Woher kommt Ihr und welche Sprachen sprecht Ihr?",
+   "x": 315,
+   "y": 473,
+   "w": 313,
+   "h": 20,
+   "answer": "true"
+  },
+  {
+   "id": "question-1",
+   "group": "writing-1a",
+   "kind": "checkbox",
+   "label": "Was macht Ihr gern in der Freizeit?",
+   "x": 629,
+   "y": 473,
+   "w": 203,
+   "h": 20,
+   "answer": "true"
+  },
+  {
+   "id": "question-2",
+   "group": "writing-1a",
+   "kind": "checkbox",
+   "label": "Welche",
+   "x": 834,
+   "y": 473,
+   "w": 48,
+   "h": 20,
+   "answer": "true"
+  },
+  {
+   "id": "question-3",
+   "group": "writing-1a",
+   "kind": "checkbox",
+   "label": "Hobbys habt Ihr?",
+   "x": 222,
+   "y": 494,
+   "w": 103,
+   "h": 20,
+   "answer": "true"
+  },
+  {
+   "id": "question-4",
+   "group": "writing-1a",
+   "kind": "checkbox",
+   "label": "Bitte schreibt mir kurz eine E-Mail.",
+   "x": 222,
+   "y": 513,
+   "w": 208,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "question-5",
+   "group": "writing-1a",
+   "kind": "checkbox",
+   "label": "Ich freue mich auf das Sommercamp mit Euch!",
+   "x": 222,
+   "y": 541,
+   "w": 610,
+   "h": 20,
+   "answer": "false"
+  },
+  {
+   "id": "own-name",
+   "group": "own",
+   "kind": "text",
+   "label": "Mein Name",
+   "x": 701,
+   "y": 722,
+   "w": 74,
+   "h": 19
+  },
+  {
+   "id": "own-alter",
+   "group": "own",
+   "kind": "text",
+   "label": "Mein Alter",
+   "x": 861,
+   "y": 722,
+   "w": 74,
+   "h": 19
+  },
+  {
+   "id": "own-herkunft",
+   "group": "own",
+   "kind": "text",
+   "label": "Ich komme",
+   "x": 682,
+   "y": 745,
+   "w": 310,
+   "h": 19
+  },
+  {
+   "id": "own-sprachen",
+   "group": "own",
+   "kind": "text",
+   "label": "Ich spreche",
+   "x": 685,
+   "y": 766,
+   "w": 309,
+   "h": 19
+  },
+  {
+   "id": "own-freizeit",
+   "group": "own",
+   "kind": "text",
+   "label": "In der Freizeit",
+   "x": 698,
+   "y": 788,
+   "w": 295,
+   "h": 19
+  },
+  {
+   "id": "own-gruss",
+   "group": "own",
+   "kind": "text",
+   "label": "Viele Grüße",
+   "x": 601,
+   "y": 864,
+   "w": 390,
+   "h": 19
+  },
+  {
+   "id": "own-notes",
+   "group": "own",
+   "kind": "text",
+   "label": "1b Eigene Notizen",
+   "x": 227,
+   "y": 841,
+   "w": 279,
+   "h": 50
+  },
+  {
+   "id": "accent-220",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent Musik?",
+   "x": 818,
+   "y": 1110,
+   "w": 59,
+   "h": 16
+  },
+  {
+   "id": "accent-222",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent du",
+   "x": 746,
+   "y": 1112,
+   "w": 21,
+   "h": 14
+  },
+  {
+   "id": "accent-223",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent Hörst",
+   "x": 695,
+   "y": 1113,
+   "w": 45,
+   "h": 14
+  },
+  {
+   "id": "accent-225",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent gern",
+   "x": 772,
+   "y": 1116,
+   "w": 39,
    "h": 15
+  },
+  {
+   "id": "accent-232",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent Ich",
+   "x": 768,
+   "y": 1136,
+   "w": 27,
+   "h": 15
+  },
+  {
+   "id": "accent-233",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent liebe",
+   "x": 801,
+   "y": 1136,
+   "w": 40,
+   "h": 15
+  },
+  {
+   "id": "accent-234",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent Musik.",
+   "x": 848,
+   "y": 1136,
+   "w": 56,
+   "h": 15
+  },
+  {
+   "id": "accent-235",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent Oh",
+   "x": 696,
+   "y": 1137,
+   "w": 22,
+   "h": 15
+  },
+  {
+   "id": "accent-236",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent ja.",
+   "x": 724,
+   "y": 1138,
+   "w": 20,
+   "h": 19
+  },
+  {
+   "id": "accent-239",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent du",
+   "x": 753,
+   "y": 1174,
+   "w": 20,
+   "h": 14
+  },
+  {
+   "id": "accent-240",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent gern?",
+   "x": 779,
+   "y": 1175,
+   "w": 47,
+   "h": 19
+  },
+  {
+   "id": "accent-241",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent Singst",
+   "x": 695,
+   "y": 1176,
+   "w": 51,
+   "h": 19
+  },
+  {
+   "id": "accent-251",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent Spaß!",
+   "x": 892,
+   "y": 1197,
+   "w": 44,
+   "h": 20
+  },
+  {
+   "id": "accent-252",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent macht",
+   "x": 833,
+   "y": 1198,
+   "w": 53,
+   "h": 15
+  },
+  {
+   "id": "accent-253",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent Oh",
+   "x": 697,
+   "y": 1200,
+   "w": 22,
+   "h": 15
+  },
+  {
+   "id": "accent-254",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent ja.",
+   "x": 725,
+   "y": 1200,
+   "w": 20,
+   "h": 19
+  },
+  {
+   "id": "accent-255",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent Singen",
+   "x": 769,
+   "y": 1200,
+   "w": 57,
+   "h": 20
+  },
+  {
+   "id": "accent-264",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent auch",
+   "x": 828,
+   "y": 1223,
+   "w": 40,
+   "h": 15
+  },
+  {
+   "id": "accent-265",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent du",
+   "x": 801,
+   "y": 1224,
+   "w": 21,
+   "h": 15
+  },
+  {
+   "id": "accent-266",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent singen?",
+   "x": 875,
+   "y": 1224,
+   "w": 63,
+   "h": 19
+  },
+  {
+   "id": "accent-267",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent Und",
+   "x": 695,
+   "y": 1225,
+   "w": 35,
+   "h": 15
+  },
+  {
+   "id": "accent-268",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent kannst",
+   "x": 736,
+   "y": 1225,
+   "w": 59,
+   "h": 14
+  },
+  {
+   "id": "accent-270",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent kann",
+   "x": 787,
+   "y": 1249,
+   "w": 43,
+   "h": 15
+  },
+  {
+   "id": "accent-271",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent ich",
+   "x": 836,
+   "y": 1249,
+   "w": 25,
+   "h": 15
+  },
+  {
+   "id": "accent-272",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent singen!",
+   "x": 869,
+   "y": 1249,
+   "w": 60,
+   "h": 19
+  },
+  {
+   "id": "accent-273",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent Natürlich",
+   "x": 698,
+   "y": 1250,
+   "w": 83,
+   "h": 15
+  },
+  {
+   "id": "accent-274",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent Hör",
+   "x": 948,
+   "y": 1250,
+   "w": 28,
+   "h": 14
+  },
+  {
+   "id": "accent-277",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Satzakzent zu:",
+   "x": 990,
+   "y": 1252,
+   "w": 24,
+   "h": 9
   }
  ],
  "audio": [
@@ -2293,34 +2709,42 @@
    "id": "a1",
    "src": "assets/ab-cd1-track34.mp3",
    "label": "CD 1 Track 34",
-   "x": 117,
-   "y": 988,
+   "x": 113,
+   "y": 992,
    "w": 42,
-   "h": 14
+   "h": 20
   },
   {
    "id": "a2",
    "src": "assets/ab-cd1-track35.mp3",
    "label": "CD 1 Track 35",
-   "x": 562,
+   "x": 563,
    "y": 990,
-   "w": 38,
-   "h": 14
+   "w": 42,
+   "h": 20
   },
   {
    "id": "a3",
    "src": "assets/ab-cd1-track36.mp3",
    "label": "CD 1 Track 36",
-   "x": 603,
+   "x": 604,
    "y": 1305,
-   "w": 38,
-   "h": 14
+   "w": 42,
+   "h": 20
   }
  ],
  "groups": [
   {
+   "id": "writing-1a",
+   "label": "1a Fragen von Lisa"
+  },
+  {
    "id": "ta-2",
-   "label": "Aussprache Ü2: Was ist richtig? (1 von 2)"
+   "label": "2 Satzakzent"
+  },
+  {
+   "id": "own",
+   "label": "Eigene Notizen,E-Mail und Satzakzent"
   }
  ],
  "review": {
@@ -2328,10 +2752,7 @@
   "verifiedWords": 322,
   "totalWords": 322,
   "notes": [
-   "Schreiben Ü1a (mark questions), Ü1b notes and Ü1c e-mail template are marking/personal-completion exercises: no fields; b answers are 'Individuelle Lösung' per key.",
-   "The cursive notes in Ü1b (Alter/Herkunft/Sprachen/Freizeit) are printed example notes.",
-   "Aussprache Ü1 (nachsprechen) and Ü3 (mark Satzakzent, printed underlines + arrows) have no fields; only Ü2 has radio fields (answer: auf der wichtigen Information, per key).",
-   "Printed underline marks and arrow symbols (Satzakzent/Satzmelodie) kept as words where they are glyphs; side labels, icons, photos excluded."
+   "2026-11-15: restored full source scan/fonts,printed examples,original spacing and footer. Added all question marking,7 genuine own-writing fields,own stress marking and3 original audio tracks. Only explicit question/rule answers graded;own writing/stress stays ungraded."
   ]
  }
 }
