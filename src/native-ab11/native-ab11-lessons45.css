@@ -114,3 +114,22 @@
 .mP35Number{position:absolute;min-width:26px;height:18px;font:700 17px/18px Georgia,serif;background:#97ce00;border-top:1px solid #dc321e;border-left:1px solid #dc321e;text-align:center;color:white}
 .mP35Art{position:absolute;overflow:hidden}.mP35Art .mP35Sprite{position:absolute!important;max-width:none!important;max-height:none!important;object-fit:fill!important;margin:0!important}
 .mP35Own{position:absolute;resize:none;border:0!important;background:repeating-linear-gradient(transparent 0 18px,#a3a59b 18px 19px,transparent 19px 21px)!important;font:15px/21px KbDroid,Georgia,serif!important;color:#174770;padding:0!important;margin:0!important}
+/* Page 36: source opener, noun clues and article exercises. */
+.nativeAB11.nativeAB11Lessons45[data-native-ab11-page='36'] .mCanvas{width:901px;height:1275px}
+.nativeAB11Lessons45[data-native-ab11-page='36'] .mCanvas .mText{font:16px/21px KbDroid,Georgia,serif;transform:scaleX(.96);transform-origin:left top}
+.nativeAB11Lessons45[data-native-ab11-page='36'] .mCanvas .mHeader{font:32px/38px KbDroid,Georgia,serif;letter-spacing:0}
+.nativeAB11Lessons45[data-native-ab11-page='36'] .mCanvas .mTitle{font:700 18px/22px ABScanSans,Arial,sans-serif;transform:translateY(-3px) scaleX(.965)}
+.nativeAB11Lessons45[data-native-ab11-page='36'] .mCanvas .mKB{font:10px/14px ABScanSans,Arial,sans-serif;color:#299ac2}
+.nativeAB11Lessons45[data-native-ab11-page='36'] .mCanvas .mInk{color:#315b91;font-style:italic}
+.nativeAB11Lessons45[data-native-ab11-page='36'] .mCanvas .mExampleChoice{background:linear-gradient(90deg,#fff900 0 31px,transparent 31px);width:max-content!important}
+.nativeAB11Lessons45[data-native-ab11-page='36'] .mCanvas .mP36Rail{font:700 9px/12px ABScanSans,Arial,sans-serif;writing-mode:vertical-rl;transform:rotate(180deg);transform-origin:center center;color:#203e87;letter-spacing:1px}
+.nativeAB11Lessons45[data-native-ab11-page='36'] .mCanvas .mField{border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;font:14px/20px KbDroid,Georgia,serif!important;height:20px!important}
+.nativeAB11Lessons45[data-native-ab11-page='36'] .mCanvas [data-native-field^='u1-picture-']{border:1px solid #d4d4b0!important;border-radius:50%!important;padding:0!important;width:17px!important;height:17px!important;font-size:11px!important;line-height:15px!important}
+.nativeAB11Lessons45[data-native-ab11-page='36'] .mFooter{display:none}
+.mP36Banner{position:absolute;left:373px;top:90px;width:489px;height:66px;background:linear-gradient(90deg,#78bf19 0 22px,white 22px 25px,#b4d986 25px 47px,white 47px 50px,#daf2be 50px)}
+.mP36Number{position:absolute;left:160px;min-width:26px;height:18px;font:700 17px/18px Georgia,serif;background:#53c33b;border-top:1px solid #dc321e;border-left:1px solid #dc321e;text-align:center;color:white}
+.mP36Art{position:absolute;overflow:hidden}.mP36Art .mP36Sprite{position:absolute!important;max-width:none!important;max-height:none!important;object-fit:fill!important;margin:0!important}
+.mP36NounTable{position:absolute;left:196px;top:292px;width:661px;height:124px;background:repeating-linear-gradient(transparent 0 23px,#f2f0d7 23px 24px,transparent 24px 25px);display:grid;grid-template-columns:248px 196px 217px;grid-template-rows:24px;font:14px/24px KbDroid,Georgia,serif}.mP36NounTable b{background:#f9f6cc;padding-left:6px;font-weight:normal}.mP36NounTable b:nth-child(1){color:#1373ad}.mP36NounTable b:nth-child(2){color:#6abe00}.mP36NounTable b:nth-child(3){color:#cc2f0d}
+.mP36Choice{position:absolute;font:16px/21px KbDroid,Georgia,serif;white-space:nowrap}.mP36Choice button{font:inherit!important;border:0!important;background:transparent!important;color:inherit;margin:0!important;padding:0!important;min-height:0!important}.mP36Choice button.marked{background:#fff900!important}
+.mP36Grid{position:absolute;left:203px;top:883px;width:698px;height:292px;background:linear-gradient(90deg,#fffbd6 0 35px,transparent 35px),repeating-linear-gradient(transparent 0 71px,#e9e5dc 72px,transparent 73px);border-top:1px dotted #e9e5dc;border-bottom:1px dotted #e9e5dc}
+.nativeAB11Lessons45[data-native-ab11-page='36'] .mCanvas [data-native-field^='u1-']:not([data-native-field^='u1-picture-'])::placeholder{letter-spacing:3px;color:#747b70;opacity:1}

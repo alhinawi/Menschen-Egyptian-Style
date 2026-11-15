@@ -1442,23 +1442,56 @@
   "ab-a11:36": [
     {
       "ids": [
+        "u1-picture-0",
+        "u1-picture-1",
+        "u1-picture-2",
+        "u1-picture-3",
+        "u1-picture-5",
+        "u1-picture-6",
+        "u1-picture-7",
+        "u1-picture-8",
+        "u1-picture-9"
+      ],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "source": "1: assign printed noun numbers to objects"
+    },
+    {
+      "ids": [
         "u2-b1",
-        "u2-b2",
         "u2-c1",
-        "u2-c2",
         "u2-d1",
-        "u2-d2",
-        "u2-e1",
-        "u2-e2"
+        "u2-e1"
       ],
       "options": [
         "ein",
-        "eine",
-        "der",
-        "das",
-        "die"
+        "eine"
       ],
-      "source": "2: explicit article choices"
+      "source": "2: indefinite articles"
+    },
+    {
+      "ids": [
+        "u2-b2",
+        "u2-c2",
+        "u2-d2",
+        "u2-e2"
+      ],
+      "options": [
+        "Der",
+        "Das",
+        "Die"
+      ],
+      "source": "2: definite articles at sentence start"
     },
     {
       "ids": [
@@ -1475,7 +1508,7 @@
         "kein",
         "keine"
       ],
-      "source": "4: explicit article choices"
+      "source": "4: printed article choices"
     }
   ],
   "ab-a11:37": [
