@@ -779,3 +779,23 @@ html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='73'] .hybridField
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='96'] .hybridField:not([type=checkbox]){font-size:1.35cqw!important}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='96'] input.hybridField[data-field-id^='mark-']{border-radius:0!important;outline:0!important;border:0!important;box-shadow:none!important}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='96'] input.hybridField[data-field-id^='mark-']:checked{background:#ffe34970!important;border:0!important;border-radius:0!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='97'] .hybridField{font-size:1.4cqw!important;outline:0;resize:none;line-height:1.5!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='97'] .hybridField:focus{outline:1px solid #26764c}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='97'] .hybridField.hybridCorrect{outline:1px solid #268250}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='97'] .hybridField.hybridWrong{outline:1px solid #bd3838}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='97'] [data-ink-covered=true]{background:#fff!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='97'] .hybridField[type=radio]:checked{background:linear-gradient(45deg,transparent 43%,#26764c 44% 56%,transparent 57%),linear-gradient(-45deg,transparent 43%,#26764c 44% 56%,transparent 57%)!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='97'] .hybridTools{display:contents}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='97'] .hybridCheck{position:absolute;left:94%;font-size:1.2cqw}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='97'] .hybridCheck output{font-size:1.2cqw;position:absolute;right:110%;top:0;width:10cqw;background:white}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='97'] .hybridCheck:nth-child(1){top:30%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='97'] .hybridCheck:nth-child(2){top:49%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='97'] .hybridCheck:nth-child(3){top:77%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='97'] .hybridCheck:nth-child(4){top:94%}
+
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='97'] input.hybridField[value]:not([value='']){background:#fff!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='97'] .hybridCheck output{right:0;top:-1.8cqw;width:max-content}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='97'] textarea.hybridField{background:#fff!important;font-size:1.15cqw!important;line-height:1.4!important;overflow:auto;resize:none;border:1px dotted #87969f}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='97'] .hybridCheck:nth-child(3) output{top:3.5cqw}
+
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='97'] .hybridField{font-size:1.3cqw!important}
