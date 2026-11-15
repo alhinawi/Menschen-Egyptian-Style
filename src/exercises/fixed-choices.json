@@ -2917,5 +2917,30 @@
       ],
       "source": "4: Ergänzen Sie mein-/dein-. Four nominative possessive forms for Bruder, Kollegen, Frau and Sohn."
     }
+  ],
+  "ab-a11:24": [
+    {
+      "ids": [
+        "u2b-a",
+        "u2b-b",
+        "u2b-c",
+        "u2b-d",
+        "u2b-e",
+        "u2b-f",
+        "u2b-g",
+        "u2b-h"
+      ],
+      "options": [
+        "geschieden",
+        "Geschwister",
+        "Jahre alt",
+        "wohne",
+        "Ausbildung",
+        "arbeite",
+        "habe",
+        "von Beruf"
+      ],
+      "source": "2b: choose and place words from the printed word bank."
+    }
   ]
 }
