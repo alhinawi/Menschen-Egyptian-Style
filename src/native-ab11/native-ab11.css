@@ -94,3 +94,34 @@
 .nativeAB11[data-native-ab11-page='6'] .nabFooter[style*='64px']{width:67px!important;background:#e5dda6;color:white;font:italic 13px/18px Georgia,serif;text-align:center}
 
 .nativeAB11[data-native-ab11-page='6'] .nabText:not(.nabTitle):not(.nabKB):not(.nabBank):not(.nabCaption):not(.nabFooter):not(.nabCoverTitle):not(.nabSmallTitle){margin-top:-4px}
+
+/* Page 7 remains native while reproducing the source's ruled exercises. */
+@font-face{font-family:ABScanSans;src:url('/assets/fonts/droid-sans-400.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:ABScanSans;src:url('/assets/fonts/droid-sans-700.woff2') format('woff2');font-weight:700;font-display:swap}
+.nativeAB11[data-native-ab11-page='7'] .nabText{font-family:KbDroid,Georgia,serif;font-size:19px;line-height:25px}
+.nativeAB11[data-native-ab11-page='7'] .nabTitle{font-family:ABScanSans,Arial,sans-serif;font-size:20px;font-weight:700;line-height:26px}
+.nativeAB11[data-native-ab11-page='7'] .nabHeader{font-size:28px;letter-spacing:.3px}
+.nativeAB11[data-native-ab11-page='7'] .nabKB{font:11px Arial,sans-serif;color:#2995c1}
+.nativeAB11[data-native-ab11-page='7'] .nabNumber{font:bold 20px/24px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='7'] .nabModule{font:normal 75px/76px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='7'] .nabCanvas .nabInput{border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;height:19px!important}
+.nativeAB11[data-native-ab11-page='7'] .nabCanvas .nabRadio{width:17px!important;height:17px!important;border-width:1px!important}
+.nativeAB11[data-native-ab11-page='7'] .nabTable{font:19px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='7'] .nabTable input{border:0!important;border-bottom:1px dotted #c9c6b8!important;background:transparent!important}
+.nativeAB11[data-native-ab11-page='7'] .nabTable>div{border-color:#ddd7bb}
+.nativeAB11[data-native-ab11-page='7'] .nabCanvas .nabOpen{height:44px!important;border:0!important;background:transparent!important;line-height:22px!important}
+.nativeAB11[data-native-ab11-page='7'] .nabCaption{font-size:15px;line-height:20px}
+.nativeAB11[data-native-ab11-page='7'] .tapWord[data-word='▲']{color:#2aae47}
+.nativeAB11[data-native-ab11-page='7'] .tapWord[data-word='■']{color:#204892}
+.nativeAB11[data-native-ab11-page='7'] .nabCheck[data-native-task='8']{top:1091px!important}
+.nativeAB11[data-native-ab11-page='7'] .nabFooter{font:14px KbDroid,Georgia,serif}
+
+.nativeAB11[data-native-ab11-page='7'] .nabSmallTitle{font:700 18px/26px ABScanSans,Arial,sans-serif}
+.nativeAB11[data-native-ab11-page='7'] .nabHeader{font-size:29px;letter-spacing:.5px;transform:translateY(5px) scaleX(1.06);transform-origin:left top}
+.nativeAB11[data-native-ab11-page='7'] .nabHeaderLine{top:172px}
+.nativeAB11[data-native-ab11-page='7'] .nabCanvas .nabRadio:disabled:checked{background-image:none!important;background-color:transparent!important}
+.nativeAB11[data-native-ab11-page='7'] .nabTable>div{border-right:1px dotted #ddd7bb}
+.nativeAB11[data-native-ab11-page='7'] .nabTable>div:nth-child(3n){border-right:0}
+.nativeAB11[data-native-ab11-page='7'] .nabP7Module{background:#e5dda6;color:white;font:italic 13px/18px Georgia,serif;text-align:left}
+
+.nativeAB11[data-native-ab11-page='7'] .nabTitle .tapWord:is([data-word='a'],[data-word='b']),.nativeAB11[data-native-ab11-page='7'] .nabSmallTitle .tapWord[data-word='b']{color:#204892}
