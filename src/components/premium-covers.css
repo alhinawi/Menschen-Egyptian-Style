@@ -78,3 +78,12 @@ body.fullscreenCoverActive{overflow:hidden!important}
 /* Attribution is one sentence: same size, with only the name bold/burgundy. */
 .fullscreenCover .premiumCover .coverSmall{font-weight:400}
 @media(max-height:620px) and (max-width:799px){.fullscreenCover .premiumCover .coverOwner h1{font-size:12px}}
+
+/* A quiet signature lockup: fine antique-gold rules, balanced type, no motion. */
+.fullscreenCover .premiumCover .coverByline{display:flex;align-items:baseline;justify-content:center;gap:9px;direction:inherit;width:100%}
+.fullscreenCover .premiumCover .coverByline::before,.fullscreenCover .premiumCover .coverByline::after{content:'';width:30px;height:1px;background:linear-gradient(90deg,transparent,#b3965a);align-self:center;flex:none}
+.fullscreenCover .premiumCover .coverByline::before{order:-1}
+.fullscreenCover .premiumCover .coverByline::after{order:2;transform:rotate(180deg)}
+.fullscreenCover .premiumCover .coverSmall{font-family:CoverNaskh,Georgia,serif;color:#8a7048!important}
+html[data-ui-language=en] .fullscreenCover .premiumCover .coverSmall{font-family:Georgia,serif;font-style:italic;letter-spacing:.8px}
+.fullscreenCover .premiumCover .coverOwner h1{color:#693745!important;font-weight:700}

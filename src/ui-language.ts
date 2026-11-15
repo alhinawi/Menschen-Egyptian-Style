@@ -44,7 +44,7 @@ export const UI_COPY: [string, string][] = [
  ['Translate selection and listen','ترجم التحديد واسمعه'], ['Translate again','ترجم تاني'], ['♫ Listen','♫ اسمع'], ['Close','اقفل'],
  ['Reset all answers on this page','امسح كل إجابات الصفحة دي'], ['Reset page','مسح إجابات الصفحة'], ['Reset page answers','مسح إجابات الصفحة'],
  ['Clear all answers and results on this page only?','تمسح كل الإجابات والنتايج في الصفحة دي بس؟'], ['Cancel','إلغاء'], ['Reset','امسح'],
- ['Interactive Edition','النسخة التفاعلية'], ['An interactive edition with','نسخة تفاعلية مع'], ['Open book ←','افتح الكتاب ←'],
+ ['with','مع'], ['Interactive Edition','النسخة التفاعلية'], ['An interactive edition with','نسخة تفاعلية مع'], ['Open book ←','افتح الكتاب ←'],
  ['Tap any word to listen & explore','اضغط على أي كلمة عشان تسمعها وتعرف معناها'],
  ['Original book © Hueber Verlag','الكتاب الأصلي © Hueber Verlag'], ['All rights belong to the original owners.','كل الحقوق لأصحاب الكتاب الأصلي.'],
  ['Contact and social links','التواصل وحسابات هناوي'], ['Audio player','مشغّل الصوت'], ['Playback time','وقت التشغيل'],
