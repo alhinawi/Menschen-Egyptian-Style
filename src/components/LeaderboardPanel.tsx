@@ -6,7 +6,17 @@ import {useEffect, useState} from 'react';
 import {useUiLanguage} from '../ui-language';
 import {getLeaderboard, type LeaderboardRow} from '../auth/api';
 
-const MEDALS = ['🥇', '🥈', '🥉'];
+// Inline SVG medals (gold/silver/bronze): no emoji font needed on any device.
+const MEDAL_COLORS = ['#c9a227', '#9aa0a6', '#b0773a'];
+
+function MedalIcon({rank}: {rank: number}) {
+  return (
+    <svg className="lbMedal" viewBox="0 0 20 20" width="18" height="18" aria-hidden="true">
+      <circle cx="10" cy="10" r="9" fill={MEDAL_COLORS[rank - 1]} />
+      <text x="10" y="14" textAnchor="middle" fontSize="10.5" fontWeight="700" fill="#fff">{rank}</text>
+    </svg>
+  );
+}
 
 export function LeaderboardPanel({onClose}: {onClose: () => void}) {
   const {t} = useUiLanguage();
@@ -30,7 +40,7 @@ export function LeaderboardPanel({onClose}: {onClose: () => void}) {
 
   const row = (r: LeaderboardRow, highlight = false) => (
     <div className={`lbRow${highlight ? ' lbRowMe' : ''}`} key={`${r.rank}-${r.name}`}>
-      <span className="lbRank">{r.rank <= 3 ? MEDALS[r.rank - 1] : r.rank}</span>
+      <span className="lbRank">{r.rank <= 3 ? <MedalIcon rank={r.rank} /> : r.rank}</span>
       <span className="lbName">{r.name}</span>
       <span className="lbPoints">{r.points} {t('points')}</span>
     </div>
