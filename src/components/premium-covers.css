@@ -67,3 +67,9 @@ body.fullscreenCoverActive{overflow:hidden!important}
 .fullscreenCover .premiumCoverArt{background-size:contain;background-repeat:no-repeat;background-position:center;background-color:transparent;outline:0}
 .fullscreenCover .premiumCoverArt:has(.isLoaded){background-image:none!important}
 @media(max-width:799px){.fullscreenCover .premiumCover .premiumCoverArt{width:min(100%,calc((100dvh - 310px)*.75));height:auto;max-height:100%;align-self:center}}
+
+/* Arabic attribution is one RTL phrase: prefix at the right, name at the left. */
+.fullscreenCover .premiumCover .coverOwner{direction:rtl}
+.fullscreenCover .premiumCover .coverSmall{order:0;unicode-bidi:isolate}
+.fullscreenCover .premiumCover .coverOwner h1{order:1;unicode-bidi:isolate}
+.fullscreenCover .premiumCover .coverSocials{order:2;direction:ltr}
