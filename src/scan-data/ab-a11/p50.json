@@ -1394,20 +1394,20 @@
    "label": "Das ___ nur ... Euro (149,90)",
    "answer": "kostet",
    "x": 375,
-   "y": 289,
-   "w": 140,
-   "h": 16
+   "y": 282,
+   "w": 142,
+   "h": 24
   },
   {
    "id": "s1-b2",
    "group": "s1",
    "kind": "text",
    "label": "Das kostet nur ___ Euro (149,90)",
-   "answer": "einhundertneunundvierzig",
+   "answer": "einhundertneunundvierzig, neunzig|einhundertneunundvierzig neunzig|hundertneunundvierzig, neunzig|hundertneunundvierzig neunzig",
    "x": 558,
-   "y": 289,
+   "y": 282,
    "w": 152,
-   "h": 16
+   "h": 24
   },
   {
    "id": "s1-b3",
@@ -1416,9 +1416,9 @@
    "label": "Der Tisch kostet nur 129,- €. Das ist ___.",
    "answer": "billig",
    "x": 450,
-   "y": 335,
-   "w": 230,
-   "h": 16
+   "y": 331,
+   "w": 226,
+   "h": 24
   },
   {
    "id": "s1-b4",
@@ -1426,10 +1426,10 @@
    "kind": "text",
    "label": "Der Tisch kostet 1.479,- €. Das ist sehr ___.",
    "answer": "teuer",
-   "x": 462,
-   "y": 356,
-   "w": 218,
-   "h": 16
+   "x": 463,
+   "y": 353,
+   "w": 214,
+   "h": 24
   },
   {
    "id": "s2-b5",
@@ -1437,10 +1437,10 @@
    "kind": "text",
    "label": "Der Stuhl ist nicht ___.",
    "answer": "groß",
-   "x": 330,
-   "y": 432,
-   "w": 160,
-   "h": 16
+   "x": 325,
+   "y": 427,
+   "w": 165,
+   "h": 24
   },
   {
    "id": "s2-b6",
@@ -1448,10 +1448,10 @@
    "kind": "text",
    "label": "Er ist zu ___.",
    "answer": "klein",
-   "x": 570,
-   "y": 432,
-   "w": 205,
-   "h": 16
+   "x": 569,
+   "y": 427,
+   "w": 202,
+   "h": 24
   },
   {
    "id": "s2-b7",
@@ -1459,10 +1459,10 @@
    "kind": "text",
    "label": "Ich finde die Lampe sehr ___.",
    "answer": "schön",
-   "x": 410,
-   "y": 449,
-   "w": 195,
-   "h": 16
+   "x": 412,
+   "y": 450,
+   "w": 187,
+   "h": 24
   },
   {
    "id": "s2-b8",
@@ -1470,10 +1470,10 @@
    "kind": "text",
    "label": "Ich finde die Lampe ___.",
    "answer": "hässlich",
-   "x": 468,
-   "y": 473,
-   "w": 207,
-   "h": 16
+   "x": 466,
+   "y": 471,
+   "w": 206,
+   "h": 24
   },
   {
    "id": "s3-b9",
@@ -1481,10 +1481,10 @@
    "kind": "text",
    "label": "Ja, ___",
    "answer": "bitte",
-   "x": 410,
-   "y": 545,
-   "w": 150,
-   "h": 16
+   "x": 408,
+   "y": 543,
+   "w": 152,
+   "h": 24
   },
   {
    "id": "s3-b10",
@@ -1492,10 +1492,10 @@
    "kind": "text",
    "label": "Nein, ___.",
    "answer": "danke",
-   "x": 625,
-   "y": 542,
-   "w": 180,
-   "h": 16
+   "x": 626,
+   "y": 540,
+   "w": 176,
+   "h": 24
   },
   {
    "id": "s4-b11",
@@ -1503,10 +1503,10 @@
    "kind": "text",
    "label": "Was ___ das?",
    "answer": "ist",
-   "x": 228,
+   "x": 231,
    "y": 618,
-   "w": 72,
-   "h": 16
+   "w": 102,
+   "h": 24
   },
   {
    "id": "s4-b12",
@@ -1514,10 +1514,10 @@
    "kind": "text",
    "label": "Das ___.",
    "answer": "ist eine Brille",
-   "x": 460,
-   "y": 618,
-   "w": 190,
-   "h": 16
+   "x": 441,
+   "y": 614,
+   "w": 207,
+   "h": 24
   },
   {
    "id": "s4-b13",
@@ -1525,10 +1525,10 @@
    "kind": "text",
    "label": "Entschuldigung, ___ auf Deutsch?",
    "answer": "wie heißt das",
-   "x": 330,
+   "x": 328,
    "y": 640,
-   "w": 300,
-   "h": 16
+   "w": 301,
+   "h": 24
   },
   {
    "id": "s4-b14",
@@ -1536,10 +1536,10 @@
    "kind": "text",
    "label": "Antwort",
    "answer": "Das ist ein Bleistift.",
-   "x": 185,
+   "x": 199,
    "y": 664,
-   "w": 375,
-   "h": 16
+   "w": 361,
+   "h": 24
   },
   {
    "id": "s4-b15",
@@ -1547,10 +1547,10 @@
    "kind": "text",
    "label": "Frage",
    "answer": "Wie schreibt man das?",
-   "x": 185,
-   "y": 686,
-   "w": 455,
-   "h": 16
+   "x": 200,
+   "y": 687,
+   "w": 443,
+   "h": 24
   },
   {
    "id": "s5-b16",
@@ -1558,10 +1558,10 @@
    "kind": "text",
    "label": "Wie ___?",
    "answer": "bitte",
-   "x": 455,
-   "y": 755,
-   "w": 245,
-   "h": 16
+   "x": 452,
+   "y": 753,
+   "w": 233,
+   "h": 24
   },
   {
    "id": "s5-b17",
@@ -1570,9 +1570,9 @@
    "label": "Noch ___.",
    "answer": "einmal, bitte",
    "x": 232,
-   "y": 788,
-   "w": 250,
-   "h": 16
+   "y": 781,
+   "w": 244,
+   "h": 24
   },
   {
    "id": "s6-b18",
@@ -1580,10 +1580,10 @@
    "kind": "text",
    "label": "Das ist ___.",
    "answer": "ein Stuhl",
-   "x": 245,
-   "y": 858,
-   "w": 135,
-   "h": 16
+   "x": 239,
+   "y": 850,
+   "w": 137,
+   "h": 24
   },
   {
    "id": "s6-b19",
@@ -1591,10 +1591,10 @@
    "kind": "text",
    "label": "___ ist aus ...",
    "answer": "Er",
-   "x": 388,
-   "y": 856,
-   "w": 28,
-   "h": 16
+   "x": 387,
+   "y": 848,
+   "w": 37,
+   "h": 24
   },
   {
    "id": "s6-b20",
@@ -1603,9 +1603,9 @@
    "label": "... ist aus ___.",
    "answer": "Holz",
    "x": 484,
-   "y": 850,
-   "w": 130,
-   "h": 16
+   "y": 847,
+   "w": 125,
+   "h": 24
   },
   {
    "id": "s6-b21",
@@ -1614,42 +1614,42 @@
    "label": "Ich finde ihn ___.",
    "answer": "schön|hässlich",
    "x": 726,
-   "y": 836,
-   "w": 105,
-   "h": 16
+   "y": 842,
+   "w": 99,
+   "h": 24
   },
   {
    "id": "s7-b22",
    "group": "s7",
    "kind": "text",
    "label": "▲ ___ / ...",
-   "answer": "Guten Tag.",
-   "x": 190,
-   "y": 933,
-   "w": 175,
-   "h": 16
+   "answer": "Guten Tag|Hallo",
+   "x": 203,
+   "y": 945,
+   "w": 161,
+   "h": 24
   },
   {
    "id": "s7-b23",
    "group": "s7",
    "kind": "text",
    "label": "▲ ... / ___ hier ist Ines Anton.",
-   "answer": "Hallo,",
-   "x": 380,
-   "y": 931,
-   "w": 175,
-   "h": 16
+   "answer": "Hallo|Guten Tag",
+   "x": 385,
+   "y": 942,
+   "w": 173,
+   "h": 24
   },
   {
    "id": "s7-b24",
    "group": "s7",
    "kind": "text",
    "label": "■ ___, Frau Anton.",
-   "answer": "Guten Tag",
-   "x": 185,
-   "y": 960,
-   "w": 230,
-   "h": 16
+   "answer": "Guten Tag|Hallo",
+   "x": 203,
+   "y": 969,
+   "w": 211,
+   "h": 24
   },
   {
    "id": "s7-b25",
@@ -1657,10 +1657,10 @@
    "kind": "text",
    "label": "■ ___ / ...",
    "answer": "Auf Wiederhören",
-   "x": 190,
+   "x": 205,
    "y": 1041,
-   "w": 180,
-   "h": 16
+   "w": 358,
+   "h": 24
   },
   {
    "id": "s7-b26",
@@ -1668,10 +1668,10 @@
    "kind": "text",
    "label": "■ ... / ___.",
    "answer": "Tschüs",
-   "x": 380,
-   "y": 1039,
-   "w": 175,
-   "h": 16
+   "x": 584,
+   "y": 1040,
+   "w": 249,
+   "h": 24
   },
   {
    "id": "s8-b27",
@@ -1680,20 +1680,20 @@
    "label": "670",
    "answer": "sechshundertsiebzig",
    "x": 520,
-   "y": 1236,
-   "w": 275,
-   "h": 16
+   "y": 1231,
+   "w": 271,
+   "h": 24
   },
   {
    "id": "s8-b28",
    "group": "s8",
    "kind": "text",
    "label": "1000",
-   "answer": "tausend",
-   "x": 232,
-   "y": 1265,
-   "w": 220,
-   "h": 16
+   "answer": "tausend|eintausend",
+   "x": 227,
+   "y": 1264,
+   "w": 234,
+   "h": 24
   },
   {
    "id": "s8-b29",
@@ -1701,21 +1701,21 @@
    "kind": "text",
    "label": "10 000",
    "answer": "zehntausend",
-   "x": 545,
-   "y": 1260,
-   "w": 250,
-   "h": 16
+   "x": 543,
+   "y": 1256,
+   "w": 251,
+   "h": 24
   },
   {
    "id": "s8-b30",
    "group": "s8",
    "kind": "text",
    "label": "100 000",
-   "answer": "hunderttausend",
-   "x": 267,
+   "answer": "hunderttausend|einhunderttausend",
+   "x": 251,
    "y": 1289,
-   "w": 185,
-   "h": 16
+   "w": 212,
+   "h": 24
   },
   {
    "id": "s8-b31",
@@ -1723,10 +1723,10 @@
    "kind": "text",
    "label": "1 000 000",
    "answer": "eine Million",
-   "x": 567,
-   "y": 1283,
+   "x": 564,
+   "y": 1281,
    "w": 230,
-   "h": 16
+   "h": 24
   },
   {
    "id": "confidence-1-0",
@@ -2087,6 +2087,46 @@
    "y": 1322,
    "w": 16,
    "h": 16
+  },
+  {
+   "id": "furniture-1",
+   "group": "own",
+   "kind": "text",
+   "label": "5 Möbelstücke,Zeile1",
+   "x": 188,
+   "y": 1148,
+   "w": 641,
+   "h": 24
+  },
+  {
+   "id": "furniture-2",
+   "group": "own",
+   "kind": "text",
+   "label": "5 Möbelstücke,Zeile2",
+   "x": 188,
+   "y": 1173,
+   "w": 641,
+   "h": 24
+  },
+  {
+   "id": "objects-yes",
+   "group": "own",
+   "kind": "text",
+   "label": "Diese Gegenstände brauche ich",
+   "x": 508,
+   "y": 1352,
+   "w": 326,
+   "h": 24
+  },
+  {
+   "id": "objects-no",
+   "group": "own",
+   "kind": "text",
+   "label": "Diese Gegenstände brauche ich nicht",
+   "x": 484,
+   "y": 1377,
+   "w": 350,
+   "h": 24
   }
  ],
  "audio": [],
@@ -2162,6 +2202,10 @@
   {
    "id": "confidence-10",
    "label": "Selbsteinschätzung 10"
+  },
+  {
+   "id": "own",
+   "label": "Eigene Möbel und Gegenstände"
   }
  ],
  "review": {
@@ -2172,7 +2216,8 @@
    "Answers per key (Selbsteinschaetzung Modul 2).",
    "Printed blue examples (words, no fields): Was kostet das? + Das, zweihundert, Schluessel,; the header Das kann ich! is printed handwritten-style design text.",
    "Ich kenne 5 Moebelstuecke and 8 Gegenstaende are z.B./personal-completion per key, so no fields.",
-   "s6 last blank: key gives schoen / haesslich, modeled as alternatives."
+   "s6 last blank: key gives schoen / haesslich, modeled as alternatives.",
+   "2026-11-15: precise source-line geometry;full149,90 price words;all4 freewriting lines saved but ungraded;X confidence circles;8 local checks. Original print and examples retained."
   ]
  }
 }
