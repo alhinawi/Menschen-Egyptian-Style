@@ -140,3 +140,27 @@ html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .hybridField
 
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='49'] [data-field-id^='g4-end-'].hybridField{outline:0!important}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='49'] [data-field-id^='g4-end-'].hybridWrong:checked{background:linear-gradient(90deg,transparent 35%,#bd3838 36% 64%,transparent 65%)!important}
+
+/* AB p50: writing is open recall,self assessment is an ungraded X. */
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='50'] .hybridField{font-size:1.55cqw!important;outline:0}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='50'] [data-field-id='s1-b2']{font-size:1.04cqw!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='50'] .hybridField:focus{outline:1px solid #26764c}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='50'] .hybridField.hybridCorrect{outline:1px solid #268250}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='50'] .hybridField.hybridWrong{outline:1px solid #bd3838}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='50'] .hybridField[type=radio]:checked{background:linear-gradient(45deg,transparent 43%,#26764c 44% 56%,transparent 57%),linear-gradient(-45deg,transparent 43%,#26764c 44% 56%,transparent 57%)!important;border-radius:0!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='50'] .hybridTools{display:contents}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='50'] .hybridCheck{position:absolute;left:94%;font-size:1.3cqw}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='50'] .hybridCheck output{font-size:1.2cqw;position:absolute;right:100%;top:0;width:8cqw;text-align:right;margin-right:1cqw;background:white}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='50'] .hybridCheck:nth-child(1){top:25%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='50'] .hybridCheck:nth-child(2){top:33%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='50'] .hybridCheck:nth-child(3){top:38%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='50'] .hybridCheck:nth-child(4){top:47%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='50'] .hybridCheck:nth-child(5){top:54%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='50'] .hybridCheck:nth-child(6){top:59%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='50'] .hybridCheck:nth-child(7){top:70%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='50'] .hybridCheck:nth-child(8){top:87%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='50'] [data-field-id='s1-b2']{font-size:.85cqw!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='50'] .hybridCheck:nth-child(6){top:61.4%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='50'] .hybridCheck:nth-child(6) output{top:150%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='50'] .hybridCheck:nth-child(6) output{top:0;right:auto;left:110%;width:7cqw;text-align:left}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='50'] .hybridCheck output{top:0;right:auto;left:110%;width:7cqw;text-align:left}
