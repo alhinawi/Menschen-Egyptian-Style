@@ -433,3 +433,20 @@
 .nativeAB11[data-native-ab11-page='16'] .nabAnswerTriangle{color:#00b120;font-size:20px}
 .nativeAB11[data-native-ab11-page='16'] .nabBank[style*='775px']{font-size:16px;letter-spacing:-.35px}
 .nativeAB11[data-native-ab11-page='16'] .nabTestPoints{position:absolute;left:902px;width:100px;text-align:right;font:14px/20px ABScanSans,Arial,sans-serif;font-variant:small-caps;letter-spacing:.5px}
+/* Page 17: source vocabulary rows and handwritten study cards. */
+.nativeAB11[data-native-ab11-page='17'] .nabText{font:19px/25px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='17'] .nabVocab{font:19px/25px KbDroid,Georgia,serif!important}
+.nativeAB11[data-native-ab11-page='17'] .nabBold{font:700 19px/25px KbDroid,Georgia,serif}
+.nativeAB11[data-native-ab11-page='17'] .nabSmall{font:16px/22px KbDroid,Georgia,serif;color:#5b5b5b}
+.nativeAB11[data-native-ab11-page='17'] .nabTitle{font:700 20px/26px ABScanSans,Arial,sans-serif;left:200px!important}
+.nativeAB11[data-native-ab11-page='17'] .nabNumber{left:158px!important}
+.nativeAB11[data-native-ab11-page='17'] .nabHeader{font:29px/32px KbDroid,Georgia,serif;left:160px!important;top:154px!important;letter-spacing:1px;transform:scaleX(.94);transform-origin:left top}
+.nativeAB11[data-native-ab11-page='17'] .nabHeaderLine{left:444px;top:177px;width:470px;height:1px}
+.nativeAB11[data-native-ab11-page='17'] .nabModule{font:76px/76px KbDroid,Georgia,serif;left:1017px}
+.nativeAB11[data-native-ab11-page='17'] .nabCanvas .nabInput{border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;height:21px!important}
+.nativeAB11[data-native-ab11-page='17'] .nabCanvas .nabOpen{height:126px!important;line-height:25px!important;background:repeating-linear-gradient(transparent 0 24px,#929792 24px 25px)!important}
+.nativeAB11[data-native-ab11-page='17'] .nabTip{font:17px/22px KbDroid,Georgia,serif;border-left:14px solid #b38517;border-top:5px solid #b38517;padding-left:20px}
+.nativeAB11[data-native-ab11-page='17'] .nabTip:after{content:'TIPP';position:absolute;left:-13px;bottom:0;writing-mode:vertical-rl;font:9px Arial;color:#222;transform:rotate(180deg)}
+.nativeAB11[data-native-ab11-page='17'] .nabFooter{font:16px KbDroid,Georgia,serif;top:1438px!important}
+.nativeAB11[data-native-ab11-page='17'] .nabFooter[style*='991px']{left:1036px!important;background:#e5dda6;color:white;font:italic 13px/18px Georgia,serif;text-align:center}
+.nativeAB11[data-native-ab11-page='17'] .nabFooter[style*='810px']{left:906px!important}
