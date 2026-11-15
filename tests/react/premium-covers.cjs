@@ -7,20 +7,21 @@ const server=http.createServer((req,res)=>{const url=new URL(req.url,'http://loc
 (async()=>{await new Promise(r=>server.listen(5192,'127.0.0.1',r));const browser=await chromium.launch({args:['--no-sandbox']});try{
  const routes=[['index.html','cover','Kursbuch','A1.1'],['kb-a12-l13-16.html','cover','Kursbuch','A1.2'],['ab1.html','abcover','Arbeitsbuch','A1.1'],['ab-a12-l13-16.html','abcover','Arbeitsbuch','A1.2']];
  for(const width of [1280,390])for(const [route,token,book,level] of routes){
- const page=await browser.newPage({viewport:{width,height:width===390?844:1800},isMobile:width===390,hasTouch:width===390});const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ const page=await browser.newPage({viewport:{width,height:width===390?844:900},isMobile:width===390,hasTouch:width===390});const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto(`http://127.0.0.1:5192/${route}#${token}`);
- await page.waitForFunction(()=>window.menschenBook&&document.querySelector('.coverArtwork')?.naturalWidth>0);
+ await page.waitForFunction(()=>window.menschenBook&&document.querySelector('.fullscreenCover .coverArtwork')?.naturalWidth>0);
  await page.evaluate(()=>document.fonts.ready);
  await page.waitForFunction(()=>getComputedStyle(document.querySelector('.coverArtwork')).opacity==='1');
  assert.equal(await page.locator('.premiumCoverEdition').innerText(),`${book}\n◆\nInteractive Edition`);
  assert.equal(await page.locator('.premiumCoverLevel').innerText(),level);
  assert.equal(await page.locator('.coverSocials a').count(),4);
  assert.equal(await page.locator('.coverOwner').innerText(),'نسخة تفاعلية مع\nهناوي');
- const fit=await page.evaluate(()=>{const frame=document.querySelector('.premiumCover').getBoundingClientRect(),copy=document.querySelector('.coverCopy').getBoundingClientRect();return {overflow:document.documentElement.scrollWidth>innerWidth+1,footer:frame.bottom-copy.bottom};});
- assert(!fit.overflow);assert(fit.footer>=6,`Footer clips: ${JSON.stringify(fit)}`);
- await page.screenshot({path:`/downloads/covers-after-${book.toLowerCase()}-${level}-${width}.png`,fullPage:true});
- const before=await page.evaluate(()=>location.hash);await page.locator('.coverOpen').click();await page.waitForFunction(token=>location.hash!==`#${token}`,token);assert.notEqual(await page.evaluate(()=>location.hash),before);
- assert.equal(await page.locator('.premiumCover').count(),1);
+ const fit=await page.evaluate(()=>{const frame=document.querySelector('.premiumCover').getBoundingClientRect(),copy=document.querySelector('.coverCopy').getBoundingClientRect();const button=document.querySelector('.fullscreenCover .coverOpen').getBoundingClientRect(),art=document.querySelector('.premiumCoverArt').getBoundingClientRect();return {overflow:document.documentElement.scrollWidth>innerWidth+1,footer:frame.bottom-copy.bottom,buttonBottom:button.bottom,height:innerHeight,artRight:art.right,width:innerWidth};});
+ assert(!fit.overflow);assert(fit.buttonBottom<=fit.height);assert(fit.artRight<=fit.width);assert(fit.footer>=6,`Footer clips: ${JSON.stringify(fit)}`);
+ await page.screenshot({path:`/downloads/covers-fullscreen-${book.toLowerCase()}-${level}-${width}.png`,fullPage:false});
+ await page.locator('.coverLibrary').click();await page.getByRole('dialog',{name:'Library',exact:true}).waitFor();await page.getByRole('button',{name:'Close menu',exact:true}).click();
+ const before=await page.evaluate(()=>location.hash);await page.locator('.fullscreenCover .coverOpen').click();await page.waitForFunction(token=>location.hash!==`#${token}`,token);assert.notEqual(await page.evaluate(()=>location.hash),before);
+ await page.locator('.fullscreenCover').waitFor({state:'detached'});assert.equal(await page.locator('.premiumCover').count(),0);
  // The separate account/settings panel must still open over the reader.
  const account=page.getByRole('button',{name:'الحساب والإعدادات'});
  if(await account.count()){await account.click();await page.getByRole('dialog').waitFor();assert((await page.getByRole('dialog').innerText()).length>20);}
