@@ -448,3 +448,17 @@ html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='72'] select.hybri
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='72'] .hybridCheck:nth-child(5){top:89%}
 
 html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='72'] select[data-field-id='order-8'],html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='72'] select[data-field-id='order-9']{font-size:.9cqw!important}
+
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='73'] .hybridField{font-size:1.45cqw!important;outline:0;resize:none}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='73'] .hybridField:focus{outline:1px solid #26764c}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='73'] .hybridField.hybridCorrect{outline:1px solid #268250}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='73'] .hybridField.hybridWrong{outline:1px solid #bd3838}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='73'] [data-ink-covered='true']{background:white!important}
+html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='73'] select.hybridField{appearance:none!important;background-image:none!important;padding:0!important;font-size:1.3cqw!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='73'] .hybridTools{display:contents}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='73'] .hybridCheck{position:absolute;left:95%;font-size:1.3cqw}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='73'] .hybridCheck output{font-size:1.2cqw;position:absolute;right:110%;top:0;width:7cqw;background:white}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='73'] .hybridCheck:nth-child(1){top:59%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='73'] .hybridCheck:nth-child(2){top:73%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='73'] .hybridCheck:nth-child(3){top:92%}
+html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='73'] .hybridFields select.hybridField{appearance:none!important;background-image:none!important;padding:0!important;font-size:1.3cqw!important}
