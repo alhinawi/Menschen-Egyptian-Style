@@ -1,3 +1,5 @@
+import {installUiLanguage} from './ui-language';
+import './ui-language.css';
 import './answer-cross';
 import {createRoot} from 'react-dom/client';
 import App from './App';
@@ -5,6 +7,7 @@ import './adapters/page-flip';
 import {installSeekableAudio} from './audio-bootstrap';
 import {installTtsMode} from './tts-audio';
 
+installUiLanguage();
 installSeekableAudio();
 installTtsMode();
 import {configs, loadLesson, applyRouteMeta} from './navigate';
