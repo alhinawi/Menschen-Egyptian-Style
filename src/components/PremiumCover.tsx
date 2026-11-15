@@ -21,7 +21,7 @@ export function PremiumCover({src, alt}: {src: string; alt: string}) {
       <img className={`coverArtwork${loaded ? ' isLoaded' : ''}`} src={src} alt={alt} loading="eager" decoding="async" fetchPriority="high" onLoad={() => setLoaded(true)} ref={image => {if (image?.complete && image.naturalWidth) setLoaded(true);}}/>
     </figure>
     <div className="premiumCoverEdition" lang="de"><span>{book}</span><span className="premiumCoverDiamond" aria-hidden="true">◆</span><span>Interactive Edition</span></div>
-    <div className="coverOwner">
+    <div className="coverOwner" dir="rtl">
       <span className="coverSmall" lang="ar" dir="rtl">نسخة تفاعلية مع</span>
       <h1 lang="ar" dir="rtl">هناوي</h1>
       <div className="coverSocials" aria-label="Contact and social links"><CoverSocials/></div>
