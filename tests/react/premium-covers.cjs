@@ -12,12 +12,12 @@ const server=http.createServer((req,res)=>{const url=new URL(req.url,'http://loc
  await page.waitForFunction(()=>window.menschenBook&&document.querySelector('.fullscreenCover .coverArtwork')?.naturalWidth>0);
  await page.evaluate(()=>document.fonts.ready);
  await page.waitForFunction(()=>getComputedStyle(document.querySelector('.coverArtwork')).opacity==='1');
- assert.equal(await page.locator('.premiumCoverEdition').innerText(),`${book}\n◆\nالنسخة التفاعلية`);
+ assert.equal(await page.locator('.premiumCoverEdition').innerText(),book);
  assert.equal(await page.locator('.premiumCoverLevel').innerText(),level);
  assert.equal(await page.locator('.coverSocials a').count(),4);
  assert(await page.locator('.coverSocials').evaluate(el=>{const a=getComputedStyle(el.children[0]),b=getComputedStyle(el.children[1]);return a.backgroundColor===b.backgroundColor&&a.color===b.color&&a.borderColor===b.borderColor;}),'WhatsApp must match other outlined social icons');
  assert(await page.locator('.coverOwner').evaluate(el=>getComputedStyle(el.querySelector('h1')).fontSize===getComputedStyle(el.querySelector('.coverSmall')).fontSize),'Attribution must use equal font sizes');
- assert.equal(await page.locator('.coverOwner').innerText(),'نسخة تفاعلية مع\nهناوي');
+ assert.equal(await page.locator('.coverOwner').innerText(),'مع\nهناوي');
  assert(await page.locator('.coverOwner').evaluate(el=>el.querySelector('.coverSmall').getBoundingClientRect().left>el.querySelector('h1').getBoundingClientRect().right),'RTL attribution prefix must be right of the name');
  const spacing=await page.locator('.coverOwner').evaluate(el=>{const name=el.querySelector('h1').getBoundingClientRect(),icons=el.querySelector('.coverSocials').getBoundingClientRect(),button=document.querySelector('.fullscreenCover .coverOpen').getBoundingClientRect();return {above:icons.top-name.bottom,below:button.top-icons.bottom};});
  assert(spacing.above>=5,`Socials too close to Arabic: ${JSON.stringify(spacing)}`);assert(spacing.below>=4,`Open book too close to socials: ${JSON.stringify(spacing)}`);
