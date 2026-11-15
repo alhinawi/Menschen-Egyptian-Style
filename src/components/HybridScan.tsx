@@ -38,6 +38,7 @@ export function HybridScan({data}:{data:ScanData}){
      :results[f.id];
     const className='hybridField '+(status===undefined?'':status?'hybridCorrect':'hybridWrong')+(data.book==='ab-a11'&&String(data.page)==='43'&&f.id.startsWith('u5-mark-')?' hybridCaseMark case-'+(values[f.id]||'empty'):'');
     const props={key:f.id,className,style:box(f),'aria-label':f.label,'data-field-id':f.id};
+    if(data.book==='ab-a11'&&String(data.page)==='44'&&f.id==='u7-writing')return <label key={f.id} className="hybridWriting44" style={box(f)}><span>7 Eigene Sätze</span><textarea aria-label={f.label} data-field-id={f.id} value={values[f.id]||''} onChange={e=>update(f.id,e.target.value)} spellCheck={false}/></label>;
     if(f.kind==='select')return <select {...props} value={values[f.id]||''} onChange={e=>update(f.id,e.target.value)}><option value=""/>{f.options?.map(o=><option key={o.value} value={o.value}>{o.label}</option>)}</select>;
     if(f.kind==='radio')return <ChoiceInput {...props} type="radio" name={`${key}-${f.name||f.id}`} value={f.value} checked={values[f.name||f.id]===f.value} onChange={()=>update(f.name||f.id,f.value||'')}/>;
     if(f.kind==='checkbox')return <ChoiceInput {...props} type="checkbox" checked={values[f.id]==='true'} onChange={e=>update(f.id,String(e.target.checked))}/>;

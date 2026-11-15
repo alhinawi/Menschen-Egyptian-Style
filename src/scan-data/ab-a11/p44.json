@@ -1676,112 +1676,532 @@
   {
    "id": "u8-a",
    "group": "u8",
-   "kind": "text",
-   "label": "a",
+   "kind": "select",
+   "label": "8 a Artikel oder kein Artikel",
    "answer": "der",
-   "x": 217,
-   "y": 545,
-   "w": 70,
-   "h": 18
+   "x": 213,
+   "y": 546,
+   "w": 76,
+   "h": 22,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "kein",
+     "label": "kein"
+    },
+    {
+     "value": "keine",
+     "label": "keine"
+    },
+    {
+     "value": "keinen",
+     "label": "keinen"
+    },
+    {
+     "value": "/",
+     "label": "/"
+    }
+   ]
   },
   {
    "id": "u8-b1",
    "group": "u8",
-   "kind": "text",
-   "label": "b 1",
+   "kind": "select",
+   "label": "8 b 1 Artikel oder kein Artikel",
    "answer": "keine",
-   "x": 295,
-   "y": 699,
-   "w": 110,
-   "h": 18
+   "x": 290,
+   "y": 697,
+   "w": 69,
+   "h": 22,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "kein",
+     "label": "kein"
+    },
+    {
+     "value": "keine",
+     "label": "keine"
+    },
+    {
+     "value": "keinen",
+     "label": "keinen"
+    },
+    {
+     "value": "/",
+     "label": "/"
+    }
+   ]
   },
   {
    "id": "u8-b2",
    "group": "u8",
-   "kind": "text",
-   "label": "b 2",
+   "kind": "select",
+   "label": "8 b 2 Artikel oder kein Artikel",
    "answer": "/",
-   "x": 217,
+   "x": 218,
    "y": 761,
-   "w": 80,
-   "h": 18
+   "w": 77,
+   "h": 22,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "kein",
+     "label": "kein"
+    },
+    {
+     "value": "keine",
+     "label": "keine"
+    },
+    {
+     "value": "keinen",
+     "label": "keinen"
+    },
+    {
+     "value": "/",
+     "label": "/"
+    }
+   ]
   },
   {
    "id": "u8-c1",
    "group": "u8",
-   "kind": "text",
-   "label": "c 1",
+   "kind": "select",
+   "label": "8 c 1 Artikel oder kein Artikel",
    "answer": "einen",
-   "x": 556,
-   "y": 562,
-   "w": 58,
-   "h": 18
+   "x": 557,
+   "y": 568,
+   "w": 62,
+   "h": 22,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "kein",
+     "label": "kein"
+    },
+    {
+     "value": "keine",
+     "label": "keine"
+    },
+    {
+     "value": "keinen",
+     "label": "keinen"
+    },
+    {
+     "value": "/",
+     "label": "/"
+    }
+   ]
   },
   {
    "id": "u8-c2",
    "group": "u8",
-   "kind": "text",
-   "label": "c 2",
+   "kind": "select",
+   "label": "8 c 2 Artikel oder kein Artikel",
    "answer": "keinen",
-   "x": 552,
-   "y": 582,
-   "w": 80,
-   "h": 18
+   "x": 546,
+   "y": 591,
+   "w": 87,
+   "h": 22,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "kein",
+     "label": "kein"
+    },
+    {
+     "value": "keine",
+     "label": "keine"
+    },
+    {
+     "value": "keinen",
+     "label": "keinen"
+    },
+    {
+     "value": "/",
+     "label": "/"
+    }
+   ]
   },
   {
    "id": "u8-c3",
    "group": "u8",
-   "kind": "text",
-   "label": "c 3",
+   "kind": "select",
+   "label": "8 c 3 Artikel oder kein Artikel",
    "answer": "einen",
-   "x": 514,
-   "y": 611,
-   "w": 64,
-   "h": 18
+   "x": 515,
+   "y": 614,
+   "w": 73,
+   "h": 22,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "kein",
+     "label": "kein"
+    },
+    {
+     "value": "keine",
+     "label": "keine"
+    },
+    {
+     "value": "keinen",
+     "label": "keinen"
+    },
+    {
+     "value": "/",
+     "label": "/"
+    }
+   ]
   },
   {
    "id": "u8-d",
    "group": "u8",
-   "kind": "text",
-   "label": "d",
+   "kind": "select",
+   "label": "8 d Artikel oder kein Artikel",
    "answer": "einen",
-   "x": 562,
-   "y": 711,
-   "w": 72,
-   "h": 18
+   "x": 564,
+   "y": 714,
+   "w": 74,
+   "h": 22,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "kein",
+     "label": "kein"
+    },
+    {
+     "value": "keine",
+     "label": "keine"
+    },
+    {
+     "value": "keinen",
+     "label": "keinen"
+    },
+    {
+     "value": "/",
+     "label": "/"
+    }
+   ]
   },
   {
    "id": "u8-e1",
    "group": "u8",
-   "kind": "text",
-   "label": "e 1",
+   "kind": "select",
+   "label": "8 e 1 Artikel oder kein Artikel",
    "answer": "die",
-   "x": 772,
-   "y": 532,
-   "w": 95,
-   "h": 18
+   "x": 805,
+   "y": 529,
+   "w": 62,
+   "h": 22,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "kein",
+     "label": "kein"
+    },
+    {
+     "value": "keine",
+     "label": "keine"
+    },
+    {
+     "value": "keinen",
+     "label": "keinen"
+    },
+    {
+     "value": "/",
+     "label": "/"
+    }
+   ]
   },
   {
    "id": "u8-e2",
    "group": "u8",
-   "kind": "text",
-   "label": "e 2",
+   "kind": "select",
+   "label": "8 e 2 Artikel oder kein Artikel",
    "answer": "die",
    "x": 736,
-   "y": 557,
-   "w": 78,
-   "h": 18
+   "y": 554,
+   "w": 76,
+   "h": 22,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "kein",
+     "label": "kein"
+    },
+    {
+     "value": "keine",
+     "label": "keine"
+    },
+    {
+     "value": "keinen",
+     "label": "keinen"
+    },
+    {
+     "value": "/",
+     "label": "/"
+    }
+   ]
   },
   {
    "id": "u8-f",
    "group": "u8",
-   "kind": "text",
-   "label": "f",
+   "kind": "select",
+   "label": "8 f Artikel oder kein Artikel",
    "answer": "keine",
-   "x": 888,
-   "y": 689,
-   "w": 70,
-   "h": 18
+   "x": 882,
+   "y": 688,
+   "w": 74,
+   "h": 22,
+   "options": [
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "einen",
+     "label": "einen"
+    },
+    {
+     "value": "kein",
+     "label": "kein"
+    },
+    {
+     "value": "keine",
+     "label": "keine"
+    },
+    {
+     "value": "keinen",
+     "label": "keinen"
+    },
+    {
+     "value": "/",
+     "label": "/"
+    }
+   ]
   },
   {
    "id": "u9-a-richtig",
@@ -1886,10 +2306,24 @@
    "y": 1341,
    "w": 13,
    "h": 13
+  },
+  {
+   "id": "u7-writing",
+   "group": "u7",
+   "kind": "text",
+   "label": "7 Eigene Sätze: Jutta hat …, aber …",
+   "x": 222,
+   "y": 1373,
+   "w": 713,
+   "h": 64
   }
  ],
  "audio": [],
  "groups": [
+  {
+   "id": "u7",
+   "label": "Im Büro. Schreiben Sie."
+  },
   {
    "id": "u8",
    "label": "Ergänzen Sie den Artikel (der/das/die – ein/eine/einen – kein/keine/keinen) oder /."
@@ -1904,7 +2338,7 @@
   "verifiedWords": 238,
   "totalWords": 238,
   "notes": [
-   "U7 is free sentence writing with printed blue examples (Jutta hat einen Computer... / Sie hat Bleistifte...) - no fields.",
+   "U7: printed handwritten examples retained, plus a saved ungraded own-sentences writing box in lower margin. U8 article/zero-article selects aligned to source. U9 original circles use X marks.",
    "U8 b: key lists \"keine\" once; second blank (\"Kaufen Sie bitte _ Briefmarken?\") answered \"/\" (no article) per exercise instruction \"oder /\".",
    "U8 c: \"einen\" after \"hat\" is printed blue example.",
    "U9 answers per key (a richtig, b falsch, c richtig, d falsch)."
