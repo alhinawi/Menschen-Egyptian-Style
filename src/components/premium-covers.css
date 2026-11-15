@@ -27,3 +27,43 @@
 .bookCover .premiumCoverAudio{margin:15px 0 0;font:20px/1.5 Georgia,serif;color:#725e48!important;letter-spacing:.5px}
 .bookCover .premiumCover .coverCopy{margin-top:auto;padding-top:20px;font:18px/1.5 Arial,sans-serif;letter-spacing:.5px;color:#74634e!important;text-align:center}
 @media(prefers-reduced-motion:reduce){.bookCover .premiumCover *{transition:none!important;transform:none!important}}
+/* Covers are a viewport, not a shrunken 900 × 1515 reader page. */
+body.fullscreenCoverActive{overflow:hidden!important}
+.fullscreenCover.bookCover{position:fixed;inset:0;z-index:80;width:100%;height:100vh;height:100dvh;min-height:0;margin:0;padding:0;box-sizing:border-box;background:#fbf7ef!important}
+.fullscreenCover .premiumCover{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr) auto auto auto auto auto;height:100%;width:100%;border:0;box-shadow:none;padding:max(10px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) max(10px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));gap:8px;justify-items:center;background:radial-gradient(ellipse at 50% 20%,#fffcf6,#f5eedf)}
+.fullscreenCover .premiumCover::before{display:none}
+.fullscreenCover .premiumCover .premiumCoverMasthead{margin:0;letter-spacing:2px;font-size:12px}
+.fullscreenCover .premiumCover .premiumCoverLevel{font-size:14px;padding:8px 15px}
+.fullscreenCover .coverLibrary{border:1px solid #c9b281;border-radius:30px;padding:8px 15px;background:transparent;color:#693745;font:13px/1.2 Arial,sans-serif;cursor:pointer}
+.fullscreenCover .premiumCover .premiumCoverArt{height:100%;width:auto;max-width:100%;aspect-ratio:3/4;min-height:0;justify-self:center;box-shadow:0 12px 22px -10px #3f20266b}
+.fullscreenCover .premiumCover .premiumCoverEdition{font-size:12px;gap:10px;letter-spacing:.6px;margin:0;line-height:1.2}
+.fullscreenCover .premiumCover .premiumCoverDiamond{font-size:7px}
+.fullscreenCover .premiumCover .coverOwner{margin:0;display:flex;flex-wrap:wrap;justify-content:center;align-items:baseline;gap:0 10px;width:100%}
+.fullscreenCover .premiumCover .coverSmall{font-size:15px;line-height:1.2}
+.fullscreenCover .premiumCover .coverOwner h1{font-size:45px;line-height:1.2;margin:0}
+.fullscreenCover .premiumCover .coverOwner h1::after{display:none}
+.fullscreenCover .premiumCover .coverSocials{width:100%;margin:5px 0 0;gap:12px}
+.fullscreenCover .premiumCover .coverSocial{width:44px;height:44px;min-height:44px;padding:12px}
+.fullscreenCover .premiumCover .coverSocial svg{width:20px;height:20px}
+.fullscreenCover .premiumCover .coverOpen{margin:0;min-height:46px;min-width:0;width:min(100%,320px);padding:10px 24px;font:16px/1.4 Arial,sans-serif;letter-spacing:.5px;border-radius:8px}
+.fullscreenCover .premiumCover .premiumCoverAudio{font-size:11px;line-height:1.2;margin:0}
+.fullscreenCover .premiumCover .coverCopy{font-size:10px;line-height:1.3;padding:0;margin:0;letter-spacing:0}
+@media(min-width:800px) and (min-height:500px){
+ .fullscreenCover .premiumCover{grid-template-columns:minmax(0,1.2fr) minmax(280px,1fr);grid-template-rows:auto 1fr auto auto auto auto 1fr;padding:24px max(40px,calc((100vw - 1440px)/2));column-gap:60px;row-gap:18px}
+ .fullscreenCover .premiumCoverMasthead{grid-column:1/-1}
+ .fullscreenCover .premiumCover .premiumCoverArt{grid-column:1;grid-row:2/8;max-height:100%;max-width:100%}
+ .fullscreenCover .premiumCover .premiumCoverEdition{grid-column:2;grid-row:2;align-self:end;font-size:18px}
+ .fullscreenCover .premiumCover .coverOwner{grid-column:2;grid-row:3}
+ .fullscreenCover .premiumCover .coverOwner h1{font-size:92px}
+ .fullscreenCover .premiumCover .coverSmall{font-size:24px}
+ .fullscreenCover .premiumCover .coverSocials{margin-top:20px;gap:18px}
+ .fullscreenCover .premiumCover .coverSocial{width:52px;height:52px;min-height:52px;padding:14px}
+ .fullscreenCover .premiumCover .coverSocial svg{width:24px;height:24px}
+ .fullscreenCover .premiumCover .coverOpen{grid-column:2;grid-row:4;min-height:56px;font-size:20px}
+ .fullscreenCover .premiumCover .premiumCoverAudio{grid-column:2;grid-row:5;font-size:14px}
+ .fullscreenCover .premiumCover .coverCopy{grid-column:2;grid-row:6;font-size:12px}
+}
+@media(max-height:620px) and (max-width:799px){.fullscreenCover .premiumCover{gap:4px}.fullscreenCover .premiumCover .coverSmall{font-size:12px}.fullscreenCover .premiumCover .coverOwner h1{font-size:30px}.fullscreenCover .premiumCover .premiumCoverAudio{display:none}}
+.fullscreenCover .premiumCoverArt{background-size:contain;background-repeat:no-repeat;background-position:center;background-color:transparent;outline:0}
+.fullscreenCover .premiumCoverArt:has(.isLoaded){background-image:none!important}
+@media(max-width:799px){.fullscreenCover .premiumCover .premiumCoverArt{width:min(100%,calc((100dvh - 310px)*.75));height:auto;max-height:100%;align-self:center}}
