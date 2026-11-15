@@ -94,3 +94,4 @@ html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .hybridField
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='46'] .hybridCheck output{font-size:1.3cqw;position:absolute;right:0;top:100%;background:white}
 .hybridScores46>output{position:absolute;font:1.3cqw ABScanSans,Arial;color:#174770}
 .hybridScores46>i{position:absolute;width:2.5%;height:1.8%;border:2px solid #174770;border-radius:100%;pointer-events:none}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='46'] .hybridCheck output{right:100%;top:0;width:8cqw;text-align:right;margin-right:1cqw}
