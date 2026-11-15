@@ -28,13 +28,12 @@ html[data-ui-language="ar"] .profilePanel{left:auto;right:0}
 html[data-ui-language] .controls{direction:ltr}
 html[data-ui-language="ar"] .controls .profilePanel{direction:rtl}
 html[data-ui-language="en"] .controls .profilePanel{direction:ltr}
-/* Reserve the exact middle grid cell for the page number. A chevron adds
-   visual weight on one side and makes the numeral look off-centre. */
+/* Keep the numeral in the exact middle while showing a jump-menu chevron. */
 html[data-ui-language] .controls .lnv-pagePill{direction:ltr;display:flex;align-items:center;justify-content:center;gap:0;text-align:center;font-variant-numeric:tabular-nums}
-html[data-ui-language] .controls .lnv-pagePill .lnv-chev{display:none}
+html[data-ui-language] .controls .lnv-pagePill .lnv-chev{display:block;position:absolute;right:5px;top:50%;transform:translateY(-50%);margin:0;width:7px;font-size:8px;line-height:1;pointer-events:none}
 
-html[data-ui-language] .controls .lnv-pageLabel{display:block;min-width:0;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:center;font-size:inherit;line-height:1.3}
-html[data-ui-language] .controls .lnv-pagePill{overflow:hidden;min-width:0;white-space:nowrap}
+html[data-ui-language] .controls .lnv-pageLabel{display:block;min-width:0;max-width:calc(100% - 16px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:center;font-size:inherit;line-height:1.3}
+html[data-ui-language] .controls .lnv-pagePill{position:relative;overflow:hidden;min-width:0;white-space:nowrap}
 
 /* Fixed-choice exercises are real selects, even where native page styles
    reset their background. Paint a small chevron without changing field
@@ -88,3 +87,13 @@ html[data-ui-language="de"] .howtoList{direction:ltr;text-align:left}
 html[data-ui-language="de"] .howtoList li{padding-inline:0 78px}
 html[data-ui-language="de"] .howtoList li::before{left:auto;right:0}
 .meaningTranslation[lang="de"]{font-family:system-ui,sans-serif;font-size:19px;line-height:1.55;text-align:left}
+
+/* Keep language choices together without making the settings panel taller.
+   Direction follows the panel; each language name keeps its own bidi context. */
+.profileLanguageOptions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;min-width:0}
+.profileTranslationOptions{grid-template-columns:repeat(4,minmax(0,1fr))}
+.profilePanel .profileLanguageOptions .profileRow{display:flex;align-items:center;justify-content:center;gap:4px;width:100%;min-width:44px;min-height:44px;margin:0;padding:8px 3px;border:1px solid #e3dece;border-radius:9px;text-align:center;font-size:12px;line-height:1.35;white-space:normal;box-sizing:border-box}
+.profileLanguageOptions .profileRow>span:first-child{min-width:0;unicode-bidi:plaintext}
+.profileLanguageOptions .profileLanguageCheck{display:none}
+.profileLanguageOptions .profileRow[aria-pressed="true"]{border-color:#713c46;box-shadow:inset 0 0 0 1px #713c46}
+.profileLanguageOptions .profileRow:focus-visible{outline:2px solid #713c46;outline-offset:2px}
