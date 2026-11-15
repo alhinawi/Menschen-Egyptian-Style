@@ -13,9 +13,9 @@ const gridWords:Record<string,number[]>={SEIN:[1,4,4,4],MACHEN:[2,0,7,0],HABEN:[
 export function NativeAB11Module1({page}:{page:string}){
  const host=useRef<HTMLDivElement>(null),audio=useRef<HTMLAudioElement>(null),[scale,SS]=useState(1),[,T]=useState(''),[v,S]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem('native-ab11-'+page)||'{}')}catch{return {}}}),[graded,G]=useState<Record<string,boolean>>({}),[start,ST]=useState<number[]|null>(null);
  useLayoutEffect(()=>{const el=host.current;if(!el)return;const measure=()=>SS(Math.min(el.clientWidth/901,el.clientHeight/1275));measure();const ro=new ResizeObserver(measure);ro.observe(el);return()=>ro.disconnect()},[]);
- usePageReset(page,'native-ab11-'+page,()=>{S({});G({})});
+ usePageReset(page,'native-ab11-'+page,()=>{S({});G({});ST(null)});
  const set=(id:string,value:string)=>{const next={...v,[id]:value};S(next);localStorage.setItem('native-ab11-'+page,JSON.stringify(next));G({})};
- const sy=page==='20'||page==='22'?.87:page==='24'?.86:page==='25'?.76:page==='26'?.8:page==='27'?.78:1;const Y=(y:number)=>page==='27'&&y>940?130+810*sy+(y-940):130+(y-130)*sy;const K=.838;
+ const sy=page==='20'||page==='22'?.87:page==='24'?.86:page==='25'?.76:page==='26'?.8:page==='27'?.78:1;const Y=(y:number)=>page==='20'?(()=>{const a=[[0,0],[200,200],[251,251],[354,305],[421,365],[474,415],[620,548],[659,570],[692,602],[724,634],[752,655],[832,728],[873,750],[906,778],[935,806],[961,832],[1091,958],[1110,995],[1330,1200],[1500,1370]];let i=1;while(i<a.length-1&&y>a[i][0])i++;const [x0,y0]=a[i-1],[x1,y1]=a[i];return y0+(y-x0)*(y1-y0)/(x1-x0)})():page==='27'&&y>940?130+810*sy+(y-940):130+(y-130)*sy;const K=.838;
  const txt=(x:number,y:number,w:number,s:string,cls='')=><div className={'mText '+cls} style={{left:x,top:cls==='mFooter'?y:Y(y),width:w}}><Words s={s}/></div>;
  const f=(id:string,x:number,y:number,w:number,label=id)=>{const ctx=document.createElement('canvas').getContext('2d');if(ctx)ctx.font="18px 'Times New Roman'";const size=Math.max(10,Math.min(18,18*(w-5)/(ctx?.measureText(v[id]||'').width||1)));return <ChoiceInput className="mField" data-native-field={id} aria-label={label} style={{left:x,top:Y(y),width:w,height:22*sy,fontSize:size}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>};
  const open=(id:string,x:number,y:number,w:number,h:number,label=id)=><textarea className="mField mOpen" data-native-field={id} aria-label={label} style={{left:x,top:Y(y),width:w,height:h*sy,'--mopen-height':h*sy+'px'} as React.CSSProperties} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
@@ -42,35 +42,50 @@ export function NativeAB11Module1({page}:{page:string}){
  const inlineChoice=(n:number,words:string[])=> <span className="mInlineChoice">{words.map((w,i)=><span key={w}><button aria-label={'u4-'+n+' '+w} className={v['u4-'+n]===w?'marked':''} onClick={()=>set('u4-'+n,w)}>{w}</button>{i===0?'/':''}</span>)}</span>;
  const cell=(id:string,x:number,y:number,length:number,offset:number)=> <div className="mCrossRow" style={{left:x,top:Y(y)}}>{Array.from({length},(_,i)=><ChoiceInput key={i} aria-label={id+' Buchstabe '+(i+1)} data-crossword={id+'-'+i} maxLength={1} className={i===offset?'solution':''} value={(v[id]||'')[i]?.trim()||''} onChange={e=>{const a=(v[id]||' '.repeat(length)).padEnd(length,' ').split('');a[i]=e.target.value.toLocaleUpperCase('de');set(id,a.join(''));if(e.target.value)(e.currentTarget.nextElementSibling as HTMLInputElement)?.focus()}}/>)}</div>;
  return <div className="nativeAB11 nativeAB11Module1" ref={host} data-native-ab11-page={page}><div className="nabCanvas mCanvas" style={{transform:`translate(-50%,-50%) scale(${scale})`}}>
- {page==='20'&&<>
- {head('BASISTRAINING')}{title('11',200,'Meine Familie. Ergänzen Sie den Stammbaum\nund schreiben Sie einen Text wie in 10.','KB 7',132,425)}
- {txt(164,251,390,'Mein Bruder heißt Alfred. Er arbeitet bei …','mExample')}{open('familie-text',164,278,370,55,'11 eigener Familientext')}
- <svg style={{position:'absolute',left:560,top:Y(180)}} width="280" height={140*sy} viewBox="0 0 280 140" preserveAspectRatio="none"><g fill="none" stroke="#e4c70b" strokeWidth="3"><circle cx="109" cy="4" r="7"/><circle cx="119" cy="4" r="7"/><circle cx="176" cy="68" r="7"/><circle cx="186" cy="68" r="7"/></g><path d="M35 15V45H170V15 M100 45V70 M100 80V102H240V80 M170 102V125H115 M170 125H230" fill="none" stroke="#999"/></svg>
- {[['oma',560,174],['opa',714,174],['mutter',615,238],['vater',755,238],['kind1',627,302],['kind2',750,302]].map(([id,x,y])=><span key={String(id)} className="mTreeField">{f('tree-'+id,Number(x),Number(y),82,'11 Stammbaum '+id)}</span>)}
- {title('12',354,'Ordnen Sie zu, ergänzen und vergleichen Sie.','KB 7')}{txt(168,389,660,'Freund | Kollege | Student | Partnerin | Ärztin','mBank')}
- <div style={{position:'absolute',left:168,top:Y(421),width:690,height:190*sy,background:'repeating-linear-gradient(white 0 28px,#ddd 28px 29px)',borderTop:(48*sy)+'px solid #fff8ce',boxSizing:'border-box'}}/>
- {['Deutsch ♂','Deutsch ♀','Englisch ♂ und ♀','Meine Sprache oder\nandere Sprachen ♂','Meine Sprache oder\nandere Sprachen ♀'].map((s,i)=>txt(172+i*137,424,136,s,'mSmall'))}
- {['Kollege','Partner','','Arzt',''].map((s,i)=>s?txt(173,474+i*28,127,s,i===0?'mExample':''):f(i===2?'u12-r3m':'u12-r5m',173,472+i*28,126))}
- {['Kollegin','','Freundin','','Studentin'].map((s,i)=>s?txt(310,474+i*28,127,s):f(i===1?'u12-r2w':'u12-r4w',310,472+i*28,126))}
- {['colleague','partner','friend','doctor','student'].map((s,i)=><span key={s}>{txt(447,474+i*28,130,s)}{f('sprache-m-'+i,585,472+i*28,125,'12 eigene Sprache männlich '+s)}{f('sprache-w-'+i,722,472+i*28,125,'12 eigene Sprache weiblich '+s)}</span>)}
- {check('u12',168,620)}
- {title('13',659,'Was spricht man wo? Notieren Sie.','KB 9')}{txt(168,692,670,'deutsch | eng | fran | ita | lie | lisch | nisch | nisch | rus | sisch | sisch | spa | zö','mBank')}
- {txt(184,724,200,'Land                   Sprache','mTitle')}{txt(545,724,275,'Land                   Sprache','mTitle')}
- {['Österreich','England','Spanien','Frankreich','Italien','Russland'].map((s,i)=>{const x=i<3?168:525,y=752+i%3*25;return <span key={s}>{txt(x,y,127,String.fromCharCode(97+i)+'  '+s)}{i===0?txt(x+128,y,145,'Deutsch','mExample'):f('u13-'+String.fromCharCode(97+i),x+128,y-2,145)}</span>})}{check('u13',168,832)}
- {title('14',873,'Ergänzen Sie.','KB 9')}
- <div style={{position:'absolute',left:168,top:Y(906),width:320,height:190*sy,background:'repeating-linear-gradient(white 0 26px,#eee 26px 27px)',borderTop:(26*sy)+'px solid #fff8ce',boxSizing:'border-box'}}/>
- {txt(255,908,110,'kommen','mTitle')}{txt(368,908,130,'sprechen (e→i)','mTitle')}
- {['ich','du','er/sie','wir','ihr','sie/Sie'].map((s,i)=><span key={s}>{txt(174,935+i*26,70,s)}{i===1?<>{txt(255,961,105,'kommst','mExample')}{txt(368,961,105,'sprichst','mExample')}</>:<>{f('u14-'+['ich','du','er','wir','ihr','sie'][i]+'-kommen',255,933+i*26,106)}{f('u14-'+['ich','du','er','wir','ihr','sie'][i]+'-sprechen',368,933+i*26,108)}</>}</span>)}
- {check('u14',520,1057)}
- {title('15',1110,'Ergänzen Sie die Verben.','KB 9')}
- {txt(169,1141,330,'a  ▪ Welche Sprachen sprichst du?','mSmall')}{txt(189,1162,36,'▴ Ich','mSmall')}{f('u15-a2',228,1160,72)}{txt(305,1162,185,'Deutsch und Englisch.','mSmall')}
- {txt(169,1185,164,'b  ▪ Wie viele Sprachen','mSmall')}{f('u15-b1',335,1183,82)}{txt(422,1185,45,'Sie?','mSmall')}{txt(189,1208,300,'▴ Drei: Englisch, Französisch und Spanisch.','mSmall')}
- {txt(169,1231,84,'c  ▪ Woher','mSmall')}{f('u15-c1',256,1229,85)}{txt(346,1231,42,'ihr?','mSmall')}{txt(189,1254,41,'▴ Wir','mSmall')}{f('u15-c2',233,1252,85)}{txt(323,1254,145,'aus der Schweiz.','mSmall')}
- {f('u15-d1',547,1139,79)}{txt(631,1141,188,'ihr Französisch?','mSmall')}{txt(527,1162,205,'d  ▴ Ja, und Deutsch.','mSmall')}
- {txt(527,1185,43,'e  ▪ Wo','mSmall')}{f('u15-e1',575,1183,82)}{txt(662,1185,33,'Sie?','mSmall')}{txt(547,1208,31,'▴ Wir','mSmall')}{f('u15-e2',580,1206,82)}{txt(667,1208,83,'in Graz.','mSmall')}
- {txt(527,1231,17,'f  ▪','mSmall')}{f('u15-f1',549,1229,75)}{txt(629,1231,80,'Sie Kinder?','mSmall')}{txt(547,1254,41,'▴ Ja, wir','mSmall')}{f('u15-f2',607,1252,80)}{txt(692,1254,112,'zwei Kinder.','mSmall')}
- {txt(527,1281,67,'g  ▪ Das','mSmall')}{f('u15-g1',598,1279,80)}{txt(683,1281,140,'meine Kinder.','mSmall')}{txt(547,1308,22,'Sie','mSmall')}{f('u15-g2',574,1306,110)}{txt(689,1308,140,'Tim und Tomma.','mSmall')}{check('u15',168,1348)}
- </>}
+ {page==='20'&&(()=>{
+ const T=(x:number,y:number,w:number,s:string,c='')=><div className={'mText '+c} style={{left:x,top:y,width:w}}><Words s={s}/></div>;
+ const F=(id:string,x:number,y:number,w:number,label=id,c='')=><ChoiceInput className={'mField '+c} data-native-field={id} aria-label={label} style={{left:x,top:y,width:w}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
+ const A=(n:string,x:number,y:number,w:number,h:number)=><PageImage className="mArt" alt={'Originalabbildung '+n} src={'assets/native-ab11/p20-'+n+'.png'} style={{left:x,top:y,width:w,height:h}}/>;
+ const H=(n:string,y:number,s:string,k='KB 9',w=700)=><>{T(98,y+6,32,k,'mKB')}<div className="mNumber" style={{top:y}}>{n}</div>{T(167,y+1,w,s,'mTitle')}</>;
+ const C=(g:string,y:number)=><div className="mCheck" data-native-task={g} style={{top:y}}><CheckButton onClick={()=>G({...graded,[g]:Object.entries(answers(g)).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}/><output aria-live="polite">{g in graded?(graded[g]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const bank=(x:number,y:number,w:number,s:string,scale=1)=><div className="mText mBank" style={{left:x,top:y,width:w,transform:`scaleX(${scale})`,transformOrigin:'0 0'}}><Words s={s}/></div>;
+ return <>{head('BASISTRAINING')}{H('11',197,'Meine Familie. Ergänzen Sie den Stammbaum\nund schreiben Sie einen Text wie in 10.','KB 7',420)}
+ {A('ink-brother',162,252,281,19)}<button className="mP20Write" onClick={()=>ST(start?null:[])} aria-label="11 Familientext schreiben">✎</button>{start&&<div className="mP20Panel"><button onClick={()=>ST(null)}>Schließen</button><textarea data-native-field="familie-text" aria-label="11 eigener Familientext" value={v['familie-text']||''} onChange={e=>set('familie-text',e.target.value)}/></div>}
+ <svg style={{position:'absolute',left:559,top:171}} width="284" height="157"><g fill="none" stroke="#e4c70b" strokeWidth="3"><circle cx="100" cy="16" r="9"/><circle cx="112" cy="16" r="9"/><circle cx="169" cy="80" r="9"/><circle cx="181" cy="80" r="9"/></g><path d="M38 27V48H175V27 M107 48V69 M107 91V108H244V91 M244 108L237 134 M131 108L129 134" fill="none" stroke="#999"/></svg>
+ {[['oma',559,172],['opa',695,172],['mutter',626,237],['vater',764,237],['kind1',646,300],['kind2',760,300]].map(([id,x,y])=>F('tree-'+id,Number(x),Number(y),77,'11 Stammbaum '+id,'mP20Tree'))}
+ {H('12',303,'Ordnen Sie zu, ergänzen und vergleichen Sie.','KB 7')}{bank(167,337,300,'Freund | Kollege | Student | Partnerin | Ärztin')}{T(227,337,55,'Kollege','mP20Strike')}
+ <div className="mP20Table" style={{left:167,top:365,width:699,height:175}}><div className="mP20TableHead" style={{height:44}}/>{[110,231,375,533].map(x=><i key={x} style={{left:x,height:175}}/>)}{[44,70,96,122,148,174].map(y=><b key={y} style={{top:y}}/>)}</div>
+ {T(173,370,80,'Deutsch','mSmall')}{T(284,370,80,'Deutsch','mSmall')}{T(404,370,80,'Englisch','mSmall')}{T(490,370,40,'und','mSmall')}{[548,707].map(x=>T(x,370,159,'Meine Sprache oder\nandere Sprachen','mSmall'))}
+ {A('male',234,365,25,28)}{A('female',345,365,23,29)}{A('male',467,365,25,28)}{A('female',519,365,23,29)}{A('male',668,380,25,28)}{A('female',827,380,23,29)}
+ {['Kollege','Partner','','Arzt',''].map((s,i)=>s?(i===0?A('ink-kollege',173,416,44,17):T(173,416+i*26,100,s)):F(i===2?'u12-r3m':'u12-r5m',173,414+i*26,99,'12 männliche Form','mP20Cell'))}
+ {['Kollegin','','Freundin','','Studentin'].map((s,i)=>s?T(284,416+i*26,110,s):F(i===1?'u12-r2w':'u12-r4w',284,414+i*26,108,'12 weibliche Form','mP20Cell'))}
+ {['colleague','partner','friend','doctor','student'].map((s,i)=><span key={s}>{T(404,416+i*26,125,s)}{F('sprache-m-'+i,547,414+i*26,147,'12 eigene Sprache männlich '+s,'mP20Cell')}{F('sprache-w-'+i,706,414+i*26,153,'12 eigene Sprache weiblich '+s,'mP20Cell')}</span>)}{C('u12',548)}
+ {H('13',570,'Was spricht man wo? Notieren Sie.')}{bank(172,601,555,'deutsch | eng | fran | ita | lie | lisch | nisch | nisch | rus | sisch | sisch | spa | zö',.89)}{T(172,601,52,'deutsch','mP20Strike')}
+ {T(187,634,100,'Land','mTableLabel')}{T(296,634,145,'Sprache','mTableLabel')}{T(543,632,100,'Land','mTableLabel')}{T(651,632,145,'Sprache','mTableLabel')}
+ {['Österreich','England','Spanien','Frankreich','Italien','Russland'].map((s,i)=>{const x=i<3?168:525,y=655+i%3*22;return <span key={s}>{T(x,y,129,String.fromCharCode(97+i)+'  '+s)}{i===0?<>{A('ink-deutsch',296,656,53,18)}<div className="mP20ExampleRule" style={{left:296,top:668,width:145}}/></>:F('u13-'+String.fromCharCode(97+i),i<3?296:652,y-1,143)}</span>})}{C('u13',728)}
+ {H('14',750,'Ergänzen Sie.')}
+ <div className="mP20Table" style={{left:170,top:778,width:319,height:180}}><div className="mP20TableHead" style={{height:27}}/>{[85,197].map(x=><i key={x} style={{left:x,height:180}}/>)}{[27,52,78,104,130,155,180].map(y=><b key={y} style={{top:y}}/>)}</div>
+ {T(263,784,110,'kommen','mTableLabel')}{T(373,784,115,'sprechen (e→i)','mTableLabel')}
+ {['ich','du','er/sie','wir','ihr','sie/Sie'].map((s,i)=><span key={s}>{T(176,810+i*25.5,70,s)}{i===1?<>{A('ink-kommst',262,835,47,18)}{A('ink-sprichst',373,835,49,20)}</>:<>{F('u14-'+['ich','du','er','wir','ihr','sie'][i]+'-kommen',260,807+i*25.5,102,'14 '+s+' kommen','mP20Cell')}{F('u14-'+['ich','du','er','wir','ihr','sie'][i]+'-sprechen',372,807+i*25.5,110,'14 '+s+' sprechen','mP20Cell')}</>}</span>)}{C('u14',944)}
+ {H('15',994,'Ergänzen Sie die Verben.')}
+ {(()=>{const D=(x:number,y:number,w:number,s:string)=>T(x,y,w,s,'mP20Dialogue');return <>
+ {D(171,1027,165,'a  ▪ Welche Sprachen')}{A('ink-sprichst2',336,1025,49,20)}{D(387,1027,60,'du?')}
+ {D(192,1048,43,'▴ Ich')}{F('u15-a2',239,1045,73)}{D(316,1048,210,'Deutsch und Englisch.')}
+ {D(171,1070,177,'b  ▪ Wie viele Sprachen')}{F('u15-b1',351,1067,95)}{D(449,1070,50,'Sie?')}
+ {D(192,1092,270,'▴ Drei: Englisch, Französisch und')}{D(209,1113,200,'Spanisch.')}
+ {D(171,1135,85,'c  ▪ Woher')}{F('u15-c1',261,1132,104)}{D(370,1135,60,'ihr?')}
+ {D(192,1157,43,'▴ Wir')}{F('u15-c2',242,1154,105)}{D(352,1157,160,'aus der Schweiz.')}
+ {D(528,1027,29,'d  ▪')}{F('u15-d1',562,1024,95)}{D(662,1027,210,'ihr Französisch?')}{D(548,1048,220,'▴ Ja, und Deutsch.')}
+ {D(528,1070,59,'e  ▪ Wo')}{F('u15-e1',590,1067,105)}{D(699,1070,65,'Sie?')}
+ {D(548,1092,43,'▴ Wir')}{F('u15-e2',596,1089,105)}{D(706,1092,120,'in Graz.')}
+ {D(528,1113,29,'f  ▪')}{F('u15-f1',563,1110,104)}{D(673,1113,145,'Sie Kinder?')}
+ {D(548,1135,64,'▴ Ja, wir')}{F('u15-f2',619,1132,105)}{D(729,1135,145,'zwei Kinder.')}
+ {D(528,1157,59,'g  ▪ Das')}{F('u15-g1',594,1154,94)}{D(694,1157,145,'meine Kinder.')}
+ {D(565,1178,23,'Sie')}{F('u15-g2',592,1175,104)}{D(701,1178,155,'Tim und Tomma.')}
+ </>})()}{C('u15',1174)}
+ {[[111,235,'SCHREIBEN'],[111,367,'WÖRTER'],[112,606,'WÖRTER'],[114,786,'STRUKTUREN'],[114,1029,'STRUKTUREN']].map(([x,y,s])=><div className="mP20Rail" key={String(y)} style={{left:Number(x),top:Number(y)}}>{s}</div>)}
+ <div className="mP20Footer"><em>Modul 1</em><span>20&nbsp;&nbsp; | &nbsp;&nbsp;zwanzig</span></div>
+ </>})()}
  {page==='21'&&<>
  {head('TRAINING: SPRECHEN')}<div className="nabModule">3</div>
  {title('1',191,'Sich vorstellen')}{txt(145,228,250,'a  Welche Sätze passen zu den\n   Fragen an der Tafel?\n   Markieren Sie.','mTitle')}{art('class',405,187,415,271)}

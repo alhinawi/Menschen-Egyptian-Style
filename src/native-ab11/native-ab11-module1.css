@@ -14,3 +14,38 @@
 .nativeAB11Module1 .mCanvas .mInk{position:absolute;background:transparent!important;border:0!important;outline:0!important;box-shadow:none!important;resize:none;padding:0!important;margin:0;font:13px/21.4px 'Caveat','Segoe Script','Comic Sans MS',cursive;color:#1f3f94;overflow-y:auto;overflow-x:hidden;scrollbar-width:none;box-sizing:content-box}.nativeAB11Module1 .mCanvas .mInk:focus-visible{background:rgba(255,246,170,.35)!important}.mCanvas .mHelp{position:absolute;pointer-events:none;max-width:none;mix-blend-mode:multiply}
 .mCanvas .mSq,.mCanvas .mTri{display:inline-block;vertical-align:baseline}.mCanvas .mSq{width:.5em;height:.5em;background:#1f3f94;margin-right:.1em}.mCanvas .mTri{width:0;height:0;border-left:.3em solid transparent;border-right:.3em solid transparent;border-bottom:.55em solid #3a9a2a;margin-right:.1em}
 .mCanvas .mHelpI{display:inline-block;pointer-events:none;mix-blend-mode:multiply;vertical-align:-0.15em;max-width:none;margin:0}.mCrossRow>span{position:relative}.mCanvas .mCrossInk{position:absolute;pointer-events:none;mix-blend-mode:multiply;max-width:none}
+/* Page 20: source family-writing and language tables. */
+.nativeAB11Module1[data-native-ab11-page='20'] .mText{font:16px/21px KbDroid,Georgia,serif}
+.nativeAB11Module1[data-native-ab11-page='20'] .mTitle{font:700 16px/21px ABScanSans,Arial,sans-serif}
+.nativeAB11Module1[data-native-ab11-page='20'] .mHeader{font:25px/30px KbDroid,Georgia,serif;left:131px!important;top:133px!important;letter-spacing:1px;transform:scaleX(.95);transform-origin:left top}
+.nativeAB11Module1[data-native-ab11-page='20'] .mRule{left:334px;top:153px;width:494px;height:1px;background:#ef9900}
+.nativeAB11Module1[data-native-ab11-page='20'] .mNumber{left:129px!important;width:26px;height:19px;background:#ffb400;font:700 17px/19px Georgia,serif}
+.nativeAB11Module1[data-native-ab11-page='20'] .mKB{font:10px/13px ABScanSans,Arial,sans-serif}
+.nativeAB11Module1[data-native-ab11-page='20'] .mBank{font:15px/20px ABScanSans,Arial,sans-serif;color:#26376d;background:#fffbd8}
+.nativeAB11Module1[data-native-ab11-page='20'] .mSmall{font:700 14px/18px KbDroid,Georgia,serif}
+.nativeAB11Module1[data-native-ab11-page='20'] .mCanvas .mField{border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;font-family:KbDroid,Georgia,serif!important;font-size:16px!important}
+.nativeAB11Module1[data-native-ab11-page='20'] .mCanvas select.mField{font-size:14px!important}
+.nativeAB11Module1[data-native-ab11-page='20'] .mTreeField .mField{background:#fffbd0!important;border:0!important;box-shadow:0 0 0 6px #fffbd0}
+.nativeAB11Module1[data-native-ab11-page='20'] .mP20Dialogue{font:16px/21px KbDroid,Georgia,serif}
+.nativeAB11Module1[data-native-ab11-page='20'] .mCheck{left:845px!important;translate:none!important}
+.nativeAB11Module1[data-native-ab11-page='20'] .mP20Write{position:absolute;left:500px;top:260px;border:1px solid #b3bca5;background:#fffef7;color:#406847;border-radius:50%;width:27px;height:27px;padding:0;font:18px/26px Arial;cursor:pointer}
+.nativeAB11Module1[data-native-ab11-page='20'] .mP20Panel{position:absolute;left:160px;top:265px;width:410px;height:170px;background:#fffdf1;border:1px solid #b9b184;box-shadow:0 4px 20px #7775;z-index:12;padding:10px;box-sizing:border-box}
+.nativeAB11Module1[data-native-ab11-page='20'] .mP20Panel>button{float:right}
+.nativeAB11Module1[data-native-ab11-page='20'] .mP20Panel textarea{height:100px!important;background:repeating-linear-gradient(transparent 0 22px,#929792 22px 23px)!important}
+.nativeAB11Module1[data-native-ab11-page='20'] .mFooter{top:1206px!important;font:14px KbDroid,Georgia,serif}
+.nativeAB11Module1[data-native-ab11-page='20'] .mFooter[style*='48px']{background:#e5dda6;color:white;font:italic 12px/16px Georgia,serif;width:60px!important}
+.nativeAB11Module1[data-native-ab11-page='20'] .mFooter[style*='98px']{left:117px!important}
+.nativeAB11Module1[data-native-ab11-page='20'] .mTableLabel{font:700 15px/20px KbDroid,Georgia,serif}
+.nativeAB11Module1[data-native-ab11-page='20'] .mP20ColumnRule{position:absolute;width:1px;border-left:1px dotted #e5dfae;pointer-events:none}
+.nativeAB11Module1[data-native-ab11-page='20'] .mP20Lexicon{border-bottom:1px dotted #e5dfae}
+.nativeAB11Module1[data-native-ab11-page='20'] .mP20Conj{background:repeating-linear-gradient(transparent 0 24px,#ebe8cf 24px 25px)!important}
+.nativeAB11Module1[data-native-ab11-page='20'] .mFooter{display:none}
+.nativeAB11Module1[data-native-ab11-page='20'] .mP20Tree{height:29px!important;background:#fffbd0!important;border:0!important}
+.mP20Table{position:absolute;border:1px dotted #ede8c6;box-sizing:border-box;pointer-events:none}
+.mP20TableHead{background:#fff9d0;width:100%}.mP20Table i{position:absolute;top:0;border-left:1px dotted #ede8c6;width:1px}.mP20Table b{position:absolute;left:0;width:100%;height:1px;border-top:1px dotted #ede8c6}
+.nativeAB11Module1[data-native-ab11-page='20'] .mCanvas .mP20Cell{border:0!important}
+.nativeAB11Module1[data-native-ab11-page='20'] .mP20Strike{font:15px/20px ABScanSans,Arial,sans-serif;color:transparent;text-decoration:line-through;text-decoration-color:#26376d;pointer-events:none}
+.mP20ExampleRule{position:absolute;border-bottom:1px solid #929792}.mP20Rail{position:absolute;writing-mode:vertical-rl;transform:rotate(180deg);font:700 9px/11px ABScanSans,Arial,sans-serif;letter-spacing:.5px;color:#29346e}
+.mP20Footer{position:absolute;left:43px;top:1207px;display:flex;align-items:center;gap:13px;font:14px KbDroid,Georgia,serif}.mP20Footer em{background:#e5dda6;color:white;font:italic 12px/16px Georgia,serif;padding:0 7px}
+.nativeAB11Module1[data-native-ab11-page='20'] .mP20Panel textarea{position:absolute;left:20px;top:40px;width:370px;border:0;resize:none;font:16px/23px KbDroid,Georgia,serif;color:#174770}
+.nativeAB11Module1[data-native-ab11-page='20'] .mCanvas .mP20Tree{height:29px!important;background:#fffbd0!important;border:0!important}
