@@ -1371,10 +1371,10 @@
    "kind": "text",
    "label": "… ? (Schach – können – ihr – spielen)",
    "answer": "Könnt ihr Schach spielen",
-   "x": 180,
-   "y": 460,
-   "w": 440,
-   "h": 19
+   "x": 199,
+   "y": 452,
+   "w": 363,
+   "h": 26
   },
   {
    "id": "s10-2",
@@ -1382,32 +1382,52 @@
    "kind": "text",
    "label": "Nein, wir … . (gar nicht)",
    "answer": "können gar nicht Schach spielen",
-   "x": 270,
-   "y": 486,
-   "w": 495,
-   "h": 19
+   "x": 276,
+   "y": 476,
+   "w": 349,
+   "h": 26
   },
   {
    "id": "s11-1",
    "group": "s11",
-   "kind": "text",
+   "kind": "select",
    "label": "… Samstag … 19.00 Uhr. (1)",
    "answer": "Am",
-   "x": 335,
+   "x": 315,
    "y": 548,
-   "w": 105,
-   "h": 19
+   "w": 101,
+   "h": 26,
+   "options": [
+    {
+     "value": "Am",
+     "label": "Am"
+    },
+    {
+     "value": "um",
+     "label": "um"
+    }
+   ]
   },
   {
    "id": "s11-2",
    "group": "s11",
-   "kind": "text",
+   "kind": "select",
    "label": "… Samstag … 19.00 Uhr. (2)",
    "answer": "um",
-   "x": 533,
+   "x": 487,
    "y": 548,
-   "w": 72,
-   "h": 19
+   "w": 103,
+   "h": 26,
+   "options": [
+    {
+     "value": "Am",
+     "label": "Am"
+    },
+    {
+     "value": "um",
+     "label": "um"
+    }
+   ]
   },
   {
    "id": "s12-1",
@@ -1415,10 +1435,10 @@
    "kind": "text",
    "label": "Am Sonntag … .",
    "answer": "kann ich nicht kommen",
-   "x": 295,
-   "y": 644,
-   "w": 530,
-   "h": 19
+   "x": 278,
+   "y": 642,
+   "w": 550,
+   "h": 26
   },
   {
    "id": "s13-1",
@@ -1426,10 +1446,316 @@
    "kind": "text",
    "label": "Schokolade + Kuchen = …",
    "answer": "der Schokoladenkuchen",
-   "x": 397,
-   "y": 730,
-   "w": 333,
-   "h": 19
+   "x": 415,
+   "y": 737,
+   "w": 411,
+   "h": 26
+  },
+  {
+   "id": "own-0",
+   "group": "own",
+   "kind": "text",
+   "label": "Tageszeiten",
+   "x": 283,
+   "y": 244,
+   "w": 544,
+   "h": 26
+  },
+  {
+   "id": "own-1",
+   "group": "own",
+   "kind": "text",
+   "label": "Wochentage",
+   "x": 251,
+   "y": 269,
+   "w": 578,
+   "h": 26
+  },
+  {
+   "id": "own-2",
+   "group": "own",
+   "kind": "text",
+   "label": "Das esse/trinke ich gern",
+   "x": 389,
+   "y": 329,
+   "w": 439,
+   "h": 26
+  },
+  {
+   "id": "own-3",
+   "group": "own",
+   "kind": "text",
+   "label": "Das esse/trinke ich nicht so gern",
+   "x": 456,
+   "y": 353,
+   "w": 371,
+   "h": 26
+  },
+  {
+   "id": "own-4",
+   "group": "own",
+   "kind": "text",
+   "label": "Üben/Wiederholen möchte ich noch",
+   "x": 179,
+   "y": 822,
+   "w": 645,
+   "h": 26
+  },
+  {
+   "id": "rating-0-0",
+   "group": "own",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 1: gut",
+   "x": 896,
+   "y": 257,
+   "w": 18,
+   "h": 18,
+   "name": "rating-0",
+   "value": "0"
+  },
+  {
+   "id": "rating-0-1",
+   "group": "own",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 1: teilweise",
+   "x": 934,
+   "y": 257,
+   "w": 18,
+   "h": 18,
+   "name": "rating-0",
+   "value": "1"
+  },
+  {
+   "id": "rating-0-2",
+   "group": "own",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 1: noch üben",
+   "x": 974,
+   "y": 257,
+   "w": 18,
+   "h": 18,
+   "name": "rating-0",
+   "value": "2"
+  },
+  {
+   "id": "rating-1-0",
+   "group": "own",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 2: gut",
+   "x": 896,
+   "y": 311,
+   "w": 18,
+   "h": 18,
+   "name": "rating-1",
+   "value": "0"
+  },
+  {
+   "id": "rating-1-1",
+   "group": "own",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 2: teilweise",
+   "x": 934,
+   "y": 311,
+   "w": 18,
+   "h": 18,
+   "name": "rating-1",
+   "value": "1"
+  },
+  {
+   "id": "rating-1-2",
+   "group": "own",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 2: noch üben",
+   "x": 974,
+   "y": 311,
+   "w": 18,
+   "h": 18,
+   "name": "rating-1",
+   "value": "2"
+  },
+  {
+   "id": "rating-2-0",
+   "group": "own",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 3: gut",
+   "x": 896,
+   "y": 438,
+   "w": 18,
+   "h": 18,
+   "name": "rating-2",
+   "value": "0"
+  },
+  {
+   "id": "rating-2-1",
+   "group": "own",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 3: teilweise",
+   "x": 934,
+   "y": 438,
+   "w": 18,
+   "h": 18,
+   "name": "rating-2",
+   "value": "1"
+  },
+  {
+   "id": "rating-2-2",
+   "group": "own",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 3: noch üben",
+   "x": 974,
+   "y": 438,
+   "w": 18,
+   "h": 18,
+   "name": "rating-2",
+   "value": "2"
+  },
+  {
+   "id": "rating-3-0",
+   "group": "own",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 4: gut",
+   "x": 896,
+   "y": 532,
+   "w": 18,
+   "h": 18,
+   "name": "rating-3",
+   "value": "0"
+  },
+  {
+   "id": "rating-3-1",
+   "group": "own",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 4: teilweise",
+   "x": 934,
+   "y": 532,
+   "w": 18,
+   "h": 18,
+   "name": "rating-3",
+   "value": "1"
+  },
+  {
+   "id": "rating-3-2",
+   "group": "own",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 4: noch üben",
+   "x": 974,
+   "y": 532,
+   "w": 18,
+   "h": 18,
+   "name": "rating-3",
+   "value": "2"
+  },
+  {
+   "id": "rating-4-0",
+   "group": "own",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 5: gut",
+   "x": 896,
+   "y": 602,
+   "w": 18,
+   "h": 18,
+   "name": "rating-4",
+   "value": "0"
+  },
+  {
+   "id": "rating-4-1",
+   "group": "own",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 5: teilweise",
+   "x": 934,
+   "y": 602,
+   "w": 18,
+   "h": 18,
+   "name": "rating-4",
+   "value": "1"
+  },
+  {
+   "id": "rating-4-2",
+   "group": "own",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 5: noch üben",
+   "x": 974,
+   "y": 602,
+   "w": 18,
+   "h": 18,
+   "name": "rating-4",
+   "value": "2"
+  },
+  {
+   "id": "rating-5-0",
+   "group": "own",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 6: gut",
+   "x": 896,
+   "y": 694,
+   "w": 18,
+   "h": 18,
+   "name": "rating-5",
+   "value": "0"
+  },
+  {
+   "id": "rating-5-1",
+   "group": "own",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 6: teilweise",
+   "x": 934,
+   "y": 694,
+   "w": 18,
+   "h": 18,
+   "name": "rating-5",
+   "value": "1"
+  },
+  {
+   "id": "rating-5-2",
+   "group": "own",
+   "kind": "radio",
+   "label": "Selbsteinschätzung 6: noch üben",
+   "x": 974,
+   "y": 694,
+   "w": 18,
+   "h": 18,
+   "name": "rating-5",
+   "value": "2"
+  },
+  {
+   "id": "own-modal-0",
+   "group": "own",
+   "kind": "text",
+   "label": "1a Aktivitäten",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "own-modal-1",
+   "group": "own",
+   "kind": "text",
+   "label": "1b Das kann ich gut",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "own-modal-2",
+   "group": "own",
+   "kind": "text",
+   "label": "1b Das kann ich nicht so gut",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
+  },
+  {
+   "id": "own-modal-3",
+   "group": "own",
+   "kind": "text",
+   "label": "2 Eine Person: kleiner Text",
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0
   }
  ],
  "audio": [],
@@ -1471,7 +1797,8 @@
    "Selbsteinschätzung Modul 3 (page 2 of 2) + Rückblick (Aufgaben zu Lektion 7). Answers from AB Lösungsschlüssel.",
    "No fields: k2/k3 continuation lists (personal/z.B.), 'Üben / Wiederholen möchte ich noch …' rule (personal), all Rückblick tasks (key: Individuelle Lösung).",
    "Blue handwritten texts are printed publisher examples (words only): 1a 'singen backen …', 1b 'Ich kann sehr gut singen.', 2 'Heidi Klum kann gut singen. …'.",
-   "s10-1: words in brackets are given out of order; answer is the corrected question per key. 'Das kann ich!' is printed design text (word). Right-margin self-rating circles excluded (no correct answer)."
+   "s10-1: words in brackets are given out of order; answer is the corrected question per key. 'Das kann ich!' is printed design text (word). Right-margin self-rating circles excluded (no correct answer).",
+   "2026-11-16: source scan/fonts restored;sixgraded fields,fivepersonal writing fields,sixindependent selfrating groups,andRückblick ownwriting dialogwithfour savedtextareas."
   ]
  }
 }
