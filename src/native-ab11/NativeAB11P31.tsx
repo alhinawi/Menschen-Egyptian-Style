@@ -29,6 +29,7 @@ export function NativeAB11P31(){
  if(it.k==='dot')return <div key={i} className="p31Dot" style={{...pos,background:it.c}}/>;
  if(it.k==='marker')return <div key={i} className={'p31Marker '+it.shape} style={it.shape==='sq'?{...pos,background:it.c}:{...pos,borderBottomWidth:it.h,borderBottomColor:it.c,borderLeftWidth:it.w/2,borderRightWidth:it.w/2}}/>;
  if(it.k==='arrow')return <div key={i} className="p31Arrow" style={{left:it.x,top:it.y+5,width:it.w}}/>;
+ if(it.k==='numchip'&&it.plain)return <svg key={i} className="p31Tab" viewBox="0 0 53 77" style={{...pos,position:'absolute',background:'#a1cd15'}}><path d="M54 12 L17 57 H60 M54 12 V69 M40 69 H60" fill="none" stroke="white" strokeWidth="1.6"/></svg>;
  if(it.k==='numchip')return <div key={i} className={'p31Numchip'+(it.plain?' p31NumchipPlain':'')} style={pos}>{it.t}</div>;
  if(it.k==='rail')return <div key={i} className="p31Rail" style={{...pos,fontSize:it.s}}>{it.t}</div>;
  if(it.k==='chip')return <div key={i} className="p31Chip" style={pos}>{it.t}</div>;

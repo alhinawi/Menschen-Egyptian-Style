@@ -17,10 +17,10 @@
 .ab11p31Canvas .p31Marker{position:absolute}
 .ab11p31Canvas .p31Marker.sq{box-sizing:border-box}
 .ab11p31Canvas .p31Marker.tri{width:0;height:0;background:transparent;border-left-style:solid;border-left-color:transparent;border-right-style:solid;border-right-color:transparent;border-bottom-style:solid}
-.ab11p31Canvas .p31Arrow{position:absolute;height:2px;background:#4a4a4a}
-.ab11p31Canvas .p31Arrow:after{content:'';position:absolute;right:-1px;top:-2.5px;border-left:6px solid #4a4a4a;border-top:3.5px solid transparent;border-bottom:3.5px solid transparent}
+.ab11p31Canvas .p31Arrow{position:absolute;height:.85px;background:#4a4a4a}
+.ab11p31Canvas .p31Arrow:after{content:'';position:absolute;right:-1px;top:-2.1px;border-left:4px solid #4a4a4a;border-top:2.5px solid transparent;border-bottom:2.5px solid transparent}
 .ab11p31Canvas .p31Numchip{position:absolute;box-sizing:border-box;background:#a1cd15;border:2px solid #c0605e;color:#fff;font:700 13px/1 P31Sans,sans-serif;display:flex;align-items:center;justify-content:center}
-.ab11p31Canvas .p31NumchipPlain{border:0;font-size:17px}
+.ab11p31Canvas .p31NumchipPlain{border:0;font:normal 75px/1 "Times New Roman",serif;justify-content:flex-start;padding-left:10px;overflow:hidden}
 .ab11p31Canvas .p31Rail{position:absolute;writing-mode:vertical-rl;transform:rotate(180deg);font:700 10px P31Sans,sans-serif;color:#2a3372;letter-spacing:0;white-space:nowrap;overflow:visible}
 .ab11p31Canvas .p31Chip{position:absolute;box-sizing:border-box;background:#e6dd9f;color:#7a6a28;font:9px/1 P31Sans,sans-serif;display:flex;align-items:center;justify-content:center;white-space:nowrap;overflow:visible}
 .ab11p31Canvas .p31Audio{position:absolute;border:0!important;background:transparent!important;min-height:0!important;padding:0!important;margin:0!important;border-radius:0!important;white-space:pre;cursor:pointer}
@@ -37,3 +37,5 @@
 .ab11p31Canvas .p31Check{position:absolute;display:flex;gap:7px;align-items:center;white-space:nowrap}
 .ab11p31Canvas .p31Check button{min-height:20px!important;font:11px P31Sans,sans-serif;padding:2px 7px!important;margin:0!important;border:1px solid #8b9586;border-radius:3px;background:#fff;color:#31532c}
 .ab11p31Canvas .p31Check output{font:11px P31Sans,sans-serif;color:#555}
+
+.ab11p31Canvas .p31Chip{justify-content:flex-start;overflow:hidden;font:italic 11px/1 P31Serif,serif;color:white}
