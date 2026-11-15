@@ -1693,10 +1693,10 @@
    "kind": "text",
    "label": "a (zannte)",
    "answer": "tanzen",
-   "x": 192,
-   "y": 315,
-   "w": 129,
-   "h": 13
+   "x": 194,
+   "y": 309,
+   "w": 125,
+   "h": 23
   },
   {
    "id": "b2",
@@ -1704,10 +1704,10 @@
    "kind": "text",
    "label": "a (rendeuf refften) 1",
    "answer": "Freunde",
-   "x": 443,
-   "y": 315,
+   "x": 441,
+   "y": 302,
    "w": 125,
-   "h": 13
+   "h": 23
   },
   {
    "id": "b3",
@@ -1715,10 +1715,10 @@
    "kind": "text",
    "label": "a (rendeuf refften) 2",
    "answer": "treffen",
-   "x": 576,
-   "y": 315,
-   "w": 128,
-   "h": 13
+   "x": 577,
+   "y": 298,
+   "w": 125,
+   "h": 23
   },
   {
    "id": "b4",
@@ -1727,9 +1727,9 @@
    "label": "b (luaßfbl elisnep) 1",
    "answer": "Fußball",
    "x": 523,
-   "y": 345,
-   "w": 130,
-   "h": 13
+   "y": 333,
+   "w": 125,
+   "h": 23
   },
   {
    "id": "b5",
@@ -1737,10 +1737,10 @@
    "kind": "text",
    "label": "b (luaßfbl elisnep) 2",
    "answer": "spielen",
-   "x": 659,
-   "y": 345,
-   "w": 121,
-   "h": 13
+   "x": 656,
+   "y": 329,
+   "w": 124,
+   "h": 23
   },
   {
    "id": "b6",
@@ -1748,10 +1748,10 @@
    "kind": "text",
    "label": "b (ard earnfh) 1",
    "answer": "Rad",
-   "x": 234,
+   "x": 235,
    "y": 371,
-   "w": 126,
-   "h": 13
+   "w": 124,
+   "h": 23
   },
   {
    "id": "b7",
@@ -1759,10 +1759,10 @@
    "kind": "text",
    "label": "b (ard earnfh) 2",
    "answer": "fahren",
-   "x": 368,
-   "y": 371,
-   "w": 123,
-   "h": 13
+   "x": 365,
+   "y": 367,
+   "w": 124,
+   "h": 23
   },
   {
    "id": "b8",
@@ -1770,10 +1770,10 @@
    "kind": "text",
    "label": "c (senle)",
    "answer": "lesen",
-   "x": 504,
-   "y": 397,
-   "w": 132,
-   "h": 13
+   "x": 502,
+   "y": 402,
+   "w": 124,
+   "h": 23
   },
   {
    "id": "b9",
@@ -1781,10 +1781,10 @@
    "kind": "text",
    "label": "c (trorognieeaff)",
    "answer": "fotografieren",
-   "x": 708,
-   "y": 397,
-   "w": 125,
-   "h": 13
+   "x": 706,
+   "y": 394,
+   "w": 124,
+   "h": 23
   },
   {
    "id": "b10",
@@ -1792,43 +1792,97 @@
    "kind": "text",
    "label": "c (ckaben)",
    "answer": "backen",
-   "x": 241,
-   "y": 427,
+   "x": 246,
+   "y": 431,
    "w": 115,
-   "h": 13
+   "h": 23
   },
   {
    "id": "b11",
    "group": "test-2",
-   "kind": "text",
+   "kind": "select",
    "label": "(b) surft er im Internet",
    "answer": "oft",
    "x": 553,
-   "y": 587,
-   "w": 100,
-   "h": 13
+   "y": 586,
+   "w": 101,
+   "h": 23,
+   "options": [
+    {
+     "value": "sehr oft",
+     "label": "sehr oft"
+    },
+    {
+     "value": "nie",
+     "label": "nie"
+    },
+    {
+     "value": "oft",
+     "label": "oft"
+    },
+    {
+     "value": "manchmal",
+     "label": "manchmal"
+    }
+   ]
   },
   {
    "id": "b12",
    "group": "test-2",
-   "kind": "text",
+   "kind": "select",
    "label": "(c) Schach",
    "answer": "nie",
-   "x": 627,
-   "y": 609,
+   "x": 626,
+   "y": 610,
    "w": 100,
-   "h": 13
+   "h": 23,
+   "options": [
+    {
+     "value": "sehr oft",
+     "label": "sehr oft"
+    },
+    {
+     "value": "nie",
+     "label": "nie"
+    },
+    {
+     "value": "oft",
+     "label": "oft"
+    },
+    {
+     "value": "manchmal",
+     "label": "manchmal"
+    }
+   ]
   },
   {
    "id": "b13",
    "group": "test-2",
-   "kind": "text",
+   "kind": "select",
    "label": "(d) Fußball",
    "answer": "sehr oft",
-   "x": 610,
-   "y": 633,
-   "w": 95,
-   "h": 13
+   "x": 607,
+   "y": 637,
+   "w": 86,
+   "h": 23,
+   "options": [
+    {
+     "value": "sehr oft",
+     "label": "sehr oft"
+    },
+    {
+     "value": "nie",
+     "label": "nie"
+    },
+    {
+     "value": "oft",
+     "label": "oft"
+    },
+    {
+     "value": "manchmal",
+     "label": "manchmal"
+    }
+   ]
   },
   {
    "id": "b14",
@@ -1836,10 +1890,10 @@
    "kind": "text",
    "label": "b Mein Sohn … (lesen)",
    "answer": "liest",
-   "x": 285,
-   "y": 795,
-   "w": 95,
-   "h": 13
+   "x": 307,
+   "y": 796,
+   "w": 76,
+   "h": 23
   },
   {
    "id": "b15",
@@ -1848,9 +1902,9 @@
    "label": "c … du gern Auto? (fahren)",
    "answer": "Fährst",
    "x": 210,
-   "y": 827,
-   "w": 62,
-   "h": 13
+   "y": 825,
+   "w": 61,
+   "h": 23
   },
   {
    "id": "b16",
@@ -1858,10 +1912,10 @@
    "kind": "text",
    "label": "d … wir Fußball spielen? (können)",
    "answer": "Können",
-   "x": 632,
-   "y": 758,
-   "w": 70,
-   "h": 13
+   "x": 630,
+   "y": 763,
+   "w": 75,
+   "h": 23
   },
   {
    "id": "b17",
@@ -1869,10 +1923,10 @@
    "kind": "text",
    "label": "e … du heute deine Freunde? (treffen)",
    "answer": "Triffst",
-   "x": 632,
-   "y": 796,
-   "w": 70,
-   "h": 13
+   "x": 631,
+   "y": 788,
+   "w": 74,
+   "h": 23
   },
   {
    "id": "b18",
@@ -1880,21 +1934,21 @@
    "kind": "text",
    "label": "b (hören/Musik/ein/bisschen/wir/können)?",
    "answer": "Können wir ein bisschen Musik hören?",
-   "x": 225,
-   "y": 956,
-   "w": 315,
-   "h": 13
+   "x": 233,
+   "y": 951,
+   "w": 300,
+   "h": 23
   },
   {
    "id": "b19",
    "group": "test-4",
    "kind": "text",
    "label": "c (toll/wirklich/er/kochen/kann).",
-   "answer": "Er kann wirklich toll kochen.",
-   "x": 225,
-   "y": 981,
-   "w": 315,
-   "h": 13
+   "answer": "Er kann wirklich toll kochen.|Wirklich toll kann er kochen.|Kochen kann er wirklich toll.",
+   "x": 233,
+   "y": 978,
+   "w": 300,
+   "h": 23
   },
   {
    "id": "b20",
@@ -1902,87 +1956,87 @@
    "kind": "text",
    "label": "d (Tennis/könnt/ihr/spielen)?",
    "answer": "Könnt ihr Tennis spielen?",
-   "x": 225,
-   "y": 1006,
-   "w": 315,
-   "h": 13
+   "x": 233,
+   "y": 1004,
+   "w": 300,
+   "h": 23
   },
   {
    "id": "b21",
    "group": "test-4",
    "kind": "text",
    "label": "e (nicht/leider/kann/mein Freund/Ski fahren).",
-   "answer": "Mein Freund kann leider nicht Ski fahren.",
-   "x": 225,
-   "y": 1031,
-   "w": 315,
-   "h": 13
+   "answer": "Mein Freund kann leider nicht Ski fahren.|Leider kann mein Freund nicht Ski fahren.|Ski fahren kann mein Freund leider nicht.",
+   "x": 233,
+   "y": 1030,
+   "w": 302,
+   "h": 23
   },
   {
    "id": "b22",
    "group": "test-5",
    "kind": "text",
-   "label": "a H___ Dank!",
-   "answer": "Herzlichen",
-   "x": 258,
-   "y": 1186,
-   "w": 85,
-   "h": 13
+   "label": "a H___ Dank! (ohne gedruckten Anfangsbuchstaben)",
+   "answer": "erzlichen",
+   "x": 257,
+   "y": 1176,
+   "w": 88,
+   "h": 23
   },
   {
    "id": "b23",
    "group": "test-5",
    "kind": "text",
-   "label": "b Oh, d___.",
-   "answer": "danke",
-   "x": 270,
-   "y": 1242,
-   "w": 52,
-   "h": 13
+   "label": "b Oh, d___. (ohne gedruckten Anfangsbuchstaben)",
+   "answer": "anke",
+   "x": 290,
+   "y": 1238,
+   "w": 86,
+   "h": 23
   },
   {
    "id": "b24",
    "group": "test-5",
    "kind": "text",
-   "label": "c Du kannst t___ backen.",
-   "answer": "toll",
-   "x": 778,
-   "y": 1118,
-   "w": 75,
-   "h": 13
+   "label": "c Du kannst t___ backen. (ohne gedruckten Anfangsbuchstaben)",
+   "answer": "oll",
+   "x": 774,
+   "y": 1109,
+   "w": 84,
+   "h": 23
   },
   {
    "id": "b25",
    "group": "test-5",
    "kind": "text",
-   "label": "c V___ Dank.",
-   "answer": "Vielen",
-   "x": 616,
-   "y": 1142,
-   "w": 100,
-   "h": 13
+   "label": "c V___ Dank. (ohne gedruckten Anfangsbuchstaben)",
+   "answer": "ielen",
+   "x": 636,
+   "y": 1138,
+   "w": 86,
+   "h": 23
   },
   {
    "id": "b26",
    "group": "test-5",
    "kind": "text",
-   "label": "d Du kannst sehr g___ tanzen.",
-   "answer": "gut",
-   "x": 765,
-   "y": 1184,
-   "w": 45,
-   "h": 13
+   "label": "d Du kannst sehr g___ tanzen. (ohne gedruckten Anfangsbuchstaben)",
+   "answer": "ut",
+   "x": 771,
+   "y": 1174,
+   "w": 32,
+   "h": 23
   },
   {
    "id": "b27",
    "group": "test-5",
    "kind": "text",
-   "label": "d Danke s___!",
-   "answer": "schön",
-   "x": 663,
-   "y": 1208,
-   "w": 55,
-   "h": 13
+   "label": "d Danke s___! (ohne gedruckten Anfangsbuchstaben)",
+   "answer": "chön",
+   "x": 693,
+   "y": 1200,
+   "w": 73,
+   "h": 23
   }
  ],
  "audio": [],
@@ -2017,7 +2071,8 @@
    "Test 1: 'Musik hören' is the printed example; 10 blank rules for 7 anagram points (two-word anagrams have two rules).",
    "Test 2: 'manchmal' (bank, struck) and the answer in (a) are the printed example; scale used: 1x=manchmal (printed example), 2x=oft, 3x=sehr oft, 0x=nie.",
    "Test 3a 'kannst' and Test 4a 'Ich kann nicht kommen.' and Test 5a 'super' are printed examples.",
-   "Cursive calendar entries in Test 2 are printed exercise data. Side labels, icons and the score-table apples excluded from words."
+   "Cursive calendar entries in Test 2 are printed exercise data. Side labels, icons and the score-table apples excluded from words.",
+   "2026-11-15: original scan layout/fonts restored;27 baselines remeasured;frequency-choice selects;partial-word fields accept only missing suffixes;valid sentence inversions accepted."
   ]
  }
 }
