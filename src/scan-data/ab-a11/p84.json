@@ -1676,57 +1676,167 @@
   {
    "id": "u1-1",
    "group": "u1",
-   "kind": "text",
+   "kind": "select",
    "label": "… Montag frühstückt Lisa … 7 Uhr.",
    "answer": "Am",
-   "x": 648,
-   "y": 446,
-   "w": 98,
-   "h": 24
+   "x": 655,
+   "y": 449,
+   "w": 85,
+   "h": 30,
+   "options": [
+    {
+     "value": "Am",
+     "label": "Am"
+    },
+    {
+     "value": "um",
+     "label": "um"
+    },
+    {
+     "value": "Von",
+     "label": "Von"
+    },
+    {
+     "value": "bis",
+     "label": "bis"
+    },
+    {
+     "value": "ab",
+     "label": "ab"
+    }
+   ]
   },
   {
    "id": "u1-2",
    "group": "u1",
-   "kind": "text",
+   "kind": "select",
    "label": "… Montag frühstückt Lisa … 7 Uhr.",
    "answer": "um",
-   "x": 985,
-   "y": 446,
-   "w": 88,
-   "h": 24
+   "x": 988,
+   "y": 438,
+   "w": 84,
+   "h": 30,
+   "options": [
+    {
+     "value": "Am",
+     "label": "Am"
+    },
+    {
+     "value": "um",
+     "label": "um"
+    },
+    {
+     "value": "Von",
+     "label": "Von"
+    },
+    {
+     "value": "bis",
+     "label": "bis"
+    },
+    {
+     "value": "ab",
+     "label": "ab"
+    }
+   ]
   },
   {
    "id": "u1-3",
    "group": "u1",
-   "kind": "text",
+   "kind": "select",
    "label": "… 18 … 19 Uhr kauft sie ein und kocht.",
    "answer": "Von",
-   "x": 648,
-   "y": 500,
-   "w": 98,
-   "h": 24
+   "x": 656,
+   "y": 508,
+   "w": 84,
+   "h": 30,
+   "options": [
+    {
+     "value": "Am",
+     "label": "Am"
+    },
+    {
+     "value": "um",
+     "label": "um"
+    },
+    {
+     "value": "Von",
+     "label": "Von"
+    },
+    {
+     "value": "bis",
+     "label": "bis"
+    },
+    {
+     "value": "ab",
+     "label": "ab"
+    }
+   ]
   },
   {
    "id": "u1-4",
    "group": "u1",
-   "kind": "text",
+   "kind": "select",
    "label": "… 18 … 19 Uhr kauft sie ein und kocht.",
    "answer": "bis",
-   "x": 775,
-   "y": 500,
-   "w": 88,
-   "h": 24
+   "x": 778,
+   "y": 502,
+   "w": 83,
+   "h": 30,
+   "options": [
+    {
+     "value": "Am",
+     "label": "Am"
+    },
+    {
+     "value": "um",
+     "label": "um"
+    },
+    {
+     "value": "Von",
+     "label": "Von"
+    },
+    {
+     "value": "bis",
+     "label": "bis"
+    },
+    {
+     "value": "ab",
+     "label": "ab"
+    }
+   ]
   },
   {
    "id": "u1-5",
    "group": "u1",
-   "kind": "text",
+   "kind": "select",
    "label": "… Abend geht sie mit Klaus ins Kino.",
    "answer": "Am",
-   "x": 648,
-   "y": 558,
-   "w": 130,
-   "h": 24
+   "x": 661,
+   "y": 566,
+   "w": 84,
+   "h": 30,
+   "options": [
+    {
+     "value": "Am",
+     "label": "Am"
+    },
+    {
+     "value": "um",
+     "label": "um"
+    },
+    {
+     "value": "Von",
+     "label": "Von"
+    },
+    {
+     "value": "bis",
+     "label": "bis"
+    },
+    {
+     "value": "ab",
+     "label": "ab"
+    }
+   ]
   },
   {
    "id": "u3a-1",
@@ -1734,10 +1844,10 @@
    "kind": "text",
    "label": "NACHEM",
    "answer": "machen",
-   "x": 362,
-   "y": 922,
-   "w": 315,
-   "h": 24
+   "x": 365,
+   "y": 915,
+   "w": 226,
+   "h": 30
   },
   {
    "id": "u3a-2",
@@ -1745,10 +1855,10 @@
    "kind": "text",
    "label": "FAHLESCN",
    "answer": "schlafen",
-   "x": 362,
-   "y": 948,
-   "w": 315,
-   "h": 24
+   "x": 365,
+   "y": 944,
+   "w": 226,
+   "h": 30
   },
   {
    "id": "u3a-4",
@@ -1756,10 +1866,10 @@
    "kind": "text",
    "label": "RAFEHN",
    "answer": "fahren",
-   "x": 362,
-   "y": 1006,
-   "w": 315,
-   "h": 24
+   "x": 365,
+   "y": 1002,
+   "w": 226,
+   "h": 30
   },
   {
    "id": "u3a-5",
@@ -1767,10 +1877,10 @@
    "kind": "text",
    "label": "RUMAFUÄNE",
    "answer": "aufräumen",
-   "x": 975,
-   "y": 938,
-   "w": 255,
-   "h": 24
+   "x": 856,
+   "y": 939,
+   "w": 223,
+   "h": 30
   },
   {
    "id": "u3a-6",
@@ -1778,10 +1888,10 @@
    "kind": "text",
    "label": "NESEL",
    "answer": "lesen",
-   "x": 975,
-   "y": 972,
-   "w": 255,
-   "h": 24
+   "x": 856,
+   "y": 968,
+   "w": 223,
+   "h": 30
   },
   {
    "id": "u3a-7",
@@ -1789,10 +1899,10 @@
    "kind": "text",
    "label": "NELREN",
    "answer": "lernen",
-   "x": 975,
-   "y": 1001,
-   "w": 255,
-   "h": 24
+   "x": 856,
+   "y": 998,
+   "w": 223,
+   "h": 30
   },
   {
    "id": "u3b-2a",
@@ -1800,10 +1910,10 @@
    "kind": "text",
    "label": "2: … du gern deine Wohnung … ?",
    "answer": "Räumst",
-   "x": 230,
-   "y": 1138,
-   "w": 130,
-   "h": 24
+   "x": 234,
+   "y": 1137,
+   "w": 118,
+   "h": 30
   },
   {
    "id": "u3b-2b",
@@ -1811,10 +1921,10 @@
    "kind": "text",
    "label": "2: … du gern deine Wohnung … ?",
    "answer": "auf",
-   "x": 230,
-   "y": 1170,
-   "w": 70,
-   "h": 24
+   "x": 234,
+   "y": 1167,
+   "w": 118,
+   "h": 30
   },
   {
    "id": "u3b-3",
@@ -1822,10 +1932,10 @@
    "kind": "text",
    "label": "3: … du am Wochenende lange?",
    "answer": "Schläfst",
-   "x": 235,
+   "x": 234,
    "y": 1196,
-   "w": 115,
-   "h": 24
+   "w": 118,
+   "h": 30
   },
   {
    "id": "u3b-4",
@@ -1833,10 +1943,10 @@
    "kind": "text",
    "label": "4: … du gern Zeitung?",
    "answer": "Liest",
-   "x": 715,
-   "y": 1100,
-   "w": 125,
-   "h": 24
+   "x": 727,
+   "y": 1104,
+   "w": 116,
+   "h": 30
   },
   {
    "id": "u3b-5",
@@ -1844,10 +1954,10 @@
    "kind": "text",
    "label": "5: … du gern Fahrrad?",
    "answer": "Fährst",
-   "x": 715,
-   "y": 1129,
-   "w": 125,
-   "h": 24
+   "x": 727,
+   "y": 1133,
+   "w": 116,
+   "h": 30
   },
   {
    "id": "u3b-6",
@@ -1855,10 +1965,10 @@
    "kind": "text",
    "label": "6: … du gern Deutsch?",
    "answer": "Lernst",
-   "x": 715,
-   "y": 1158,
-   "w": 125,
-   "h": 24
+   "x": 727,
+   "y": 1163,
+   "w": 116,
+   "h": 30
   },
   {
    "id": "u3b-7",
@@ -1866,10 +1976,10 @@
    "kind": "text",
    "label": "7: … du gern Hausaufgaben?",
    "answer": "Machst",
-   "x": 715,
-   "y": 1183,
-   "w": 125,
-   "h": 24
+   "x": 727,
+   "y": 1191,
+   "w": 116,
+   "h": 30
   },
   {
    "id": "u4-b",
@@ -1877,10 +1987,10 @@
    "kind": "text",
    "label": "b: … du auch Brot gekauft?",
    "answer": "Hast",
-   "x": 232,
-   "y": 1368,
-   "w": 105,
-   "h": 24
+   "x": 238,
+   "y": 1371,
+   "w": 99,
+   "h": 30
   },
   {
    "id": "u4-c",
@@ -1888,10 +1998,10 @@
    "kind": "text",
    "label": "c: Das … ich doch heute Morgen schon gekauft.",
    "answer": "habe",
-   "x": 355,
-   "y": 1402,
-   "w": 85,
-   "h": 24
+   "x": 356,
+   "y": 1401,
+   "w": 116,
+   "h": 30
   },
   {
    "id": "u4-d",
@@ -1899,10 +2009,10 @@
    "kind": "text",
    "label": "d: Den Kuchen … Julia gebacken.",
    "answer": "hat",
-   "x": 365,
-   "y": 1458,
-   "w": 85,
-   "h": 24
+   "x": 366,
+   "y": 1459,
+   "w": 102,
+   "h": 30
   },
   {
    "id": "u4-e",
@@ -1910,10 +2020,10 @@
    "kind": "text",
    "label": "e: Und was … wir zu trinken?",
    "answer": "haben",
-   "x": 425,
-   "y": 1486,
-   "w": 145,
-   "h": 24
+   "x": 427,
+   "y": 1487,
+   "w": 146,
+   "h": 30
   },
   {
    "id": "u4-f",
@@ -1921,10 +2031,10 @@
    "kind": "text",
    "label": "f: Und wo … ihr das Geschenk für Julia?",
    "answer": "habt",
-   "x": 392,
-   "y": 1544,
-   "w": 130,
-   "h": 24
+   "x": 395,
+   "y": 1546,
+   "w": 127,
+   "h": 30
   },
   {
    "id": "u4-g",
@@ -1932,10 +2042,30 @@
    "kind": "text",
    "label": "g: jetzt … wir wirklich alles.",
    "answer": "haben",
-   "x": 400,
-   "y": 1600,
-   "w": 200,
-   "h": 24
+   "x": 456,
+   "y": 1604,
+   "w": 143,
+   "h": 30
+  },
+  {
+   "id": "own-calendar",
+   "group": "own",
+   "kind": "text",
+   "label": "2 Mein Kalender: Uhrzeiten und Aktivitäten",
+   "x": 756,
+   "y": 687,
+   "w": 317,
+   "h": 195
+  },
+  {
+   "id": "own-partner",
+   "group": "own",
+   "kind": "text",
+   "label": "2 Partnertext zum Kalender",
+   "x": 217,
+   "y": 782,
+   "w": 454,
+   "h": 44
   }
  ],
  "audio": [],
@@ -1963,7 +2093,8 @@
   "totalWords": 238,
   "notes": [
    "Lektion 11 start (Ü1-Ü4). Answers from AB Lösungsschlüssel (1 Am/um/Von…bis/Am; 3a machen…lernen; 3b Räumst…auf…Machst; 4 b-g).",
-   "Ü1: blue 'Ab' in 'Ab 8 Uhr arbeitet sie.' is the printed example; calendar entries are printed blue cursive (words). Ü2 = Individuelle Lösung, no fields. Ü3a: blue 'fernsehen' is the printed example (HENFENERS has no field). Ü3b item 1 'Siehst…fern' is the printed example. Ü4a 'Haben' printed blue example."
+   "Ü1: blue 'Ab' in 'Ab 8 Uhr arbeitet sie.' is the printed example; calendar entries are printed blue cursive (words). Ü2 = Individuelle Lösung, no fields. Ü3a: blue 'fernsehen' is the printed example (HENFENERS has no field). Ü3b item 1 'Siehst…fern' is the printed example. Ü4a 'Haben' printed blue example.",
+   "2026-11-16: Original scan/fonts and handwritten examples preserved;5prepositionselects,19writinganswers,notebook andpartnertext saved without false grading. Source pixel-aligned."
   ]
  }
 }
