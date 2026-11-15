@@ -1197,9 +1197,9 @@
    "label": "Stelle 1",
    "answer": "Bildschirm",
    "x": 400,
-   "y": 300,
-   "w": 140,
-   "h": 22
+   "y": 296,
+   "w": 302.0,
+   "h": 27
   },
   {
    "id": "u1-2",
@@ -1208,9 +1208,9 @@
    "label": "Stelle 2",
    "answer": "Kalender",
    "x": 279,
-   "y": 331,
-   "w": 140,
-   "h": 22
+   "y": 327,
+   "w": 241.6,
+   "h": 27
   },
   {
    "id": "u1-3",
@@ -1219,9 +1219,9 @@
    "label": "Stelle 3",
    "answer": "Maus",
    "x": 432,
-   "y": 361,
-   "w": 140,
-   "h": 22
+   "y": 357,
+   "w": 120.8,
+   "h": 27
   },
   {
    "id": "u1-4",
@@ -1230,9 +1230,9 @@
    "label": "Stelle 4",
    "answer": "Notizbuch",
    "x": 280,
-   "y": 392,
-   "w": 140,
-   "h": 22
+   "y": 388,
+   "w": 271.8,
+   "h": 27
   },
   {
    "id": "u1-5",
@@ -1241,9 +1241,9 @@
    "label": "Stelle 5",
    "answer": "Briefmarke",
    "x": 249,
-   "y": 422,
-   "w": 140,
-   "h": 22
+   "y": 418,
+   "w": 302.0,
+   "h": 27
   },
   {
    "id": "u1-6",
@@ -1252,75 +1252,303 @@
    "label": "Stelle 6",
    "answer": "Bleistift",
    "x": 432,
-   "y": 452,
-   "w": 140,
-   "h": 22
+   "y": 448,
+   "w": 271.8,
+   "h": 27
   },
   {
    "id": "u2-maus",
    "group": "u2",
-   "kind": "text",
+   "kind": "select",
    "label": "Das ist ... Maus",
    "answer": "eine",
    "x": 280,
-   "y": 798,
+   "y": 803,
    "w": 58,
-   "h": 18
+   "h": 18,
+   "options": [
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "–",
+     "label": "–"
+    },
+    {
+     "value": "Der",
+     "label": "Der"
+    },
+    {
+     "value": "Die",
+     "label": "Die"
+    },
+    {
+     "value": "Das",
+     "label": "Das"
+    }
+   ]
   },
   {
    "id": "u2-maus2",
    "group": "u2",
-   "kind": "text",
+   "kind": "select",
    "label": "... Maus ist klein",
    "answer": "Die",
    "x": 222,
-   "y": 825,
+   "y": 830,
    "w": 60,
-   "h": 18
+   "h": 18,
+   "options": [
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "–",
+     "label": "–"
+    },
+    {
+     "value": "Der",
+     "label": "Der"
+    },
+    {
+     "value": "Die",
+     "label": "Die"
+    },
+    {
+     "value": "Das",
+     "label": "Das"
+    }
+   ]
   },
   {
    "id": "u2-feuerzeug",
    "group": "u2",
-   "kind": "text",
+   "kind": "select",
    "label": "Das ist ... Feuerzeug",
    "answer": "ein",
    "x": 280,
-   "y": 853,
+   "y": 858,
    "w": 58,
-   "h": 18
+   "h": 18,
+   "options": [
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "–",
+     "label": "–"
+    },
+    {
+     "value": "Der",
+     "label": "Der"
+    },
+    {
+     "value": "Die",
+     "label": "Die"
+    },
+    {
+     "value": "Das",
+     "label": "Das"
+    }
+   ]
   },
   {
    "id": "u2-feuerzeug2",
    "group": "u2",
-   "kind": "text",
+   "kind": "select",
    "label": "... Feuerzeug kostet zwei Euro",
    "answer": "Das",
    "x": 222,
-   "y": 883,
+   "y": 888,
    "w": 60,
-   "h": 18
+   "h": 18,
+   "options": [
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "–",
+     "label": "–"
+    },
+    {
+     "value": "Der",
+     "label": "Der"
+    },
+    {
+     "value": "Die",
+     "label": "Die"
+    },
+    {
+     "value": "Das",
+     "label": "Das"
+    }
+   ]
   },
   {
    "id": "u2-briefmarken",
    "group": "u2",
-   "kind": "text",
+   "kind": "select",
    "label": "Das sind ... Briefmarken",
-   "answer": "die",
+   "answer": "–",
    "x": 284,
-   "y": 910,
+   "y": 915,
    "w": 68,
-   "h": 18
+   "h": 18,
+   "options": [
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "–",
+     "label": "–"
+    },
+    {
+     "value": "Der",
+     "label": "Der"
+    },
+    {
+     "value": "Die",
+     "label": "Die"
+    },
+    {
+     "value": "Das",
+     "label": "Das"
+    }
+   ]
   },
   {
    "id": "u2-briefmarken2",
    "group": "u2",
-   "kind": "text",
+   "kind": "select",
    "label": "... Briefmarken sind schön",
    "answer": "Die",
    "x": 222,
-   "y": 939,
+   "y": 944,
    "w": 60,
-   "h": 18
+   "h": 18,
+   "options": [
+    {
+     "value": "ein",
+     "label": "ein"
+    },
+    {
+     "value": "eine",
+     "label": "eine"
+    },
+    {
+     "value": "der",
+     "label": "der"
+    },
+    {
+     "value": "die",
+     "label": "die"
+    },
+    {
+     "value": "das",
+     "label": "das"
+    },
+    {
+     "value": "–",
+     "label": "–"
+    },
+    {
+     "value": "Der",
+     "label": "Der"
+    },
+    {
+     "value": "Die",
+     "label": "Die"
+    },
+    {
+     "value": "Das",
+     "label": "Das"
+    }
+   ]
   },
   {
    "id": "u3a-handy",
@@ -1686,37 +1914,205 @@
    "h": 15
   },
   {
-   "id": "u3a-laptop",
+   "id": "u3p-handy",
    "group": "u3a",
-   "kind": "select",
-   "label": "u3a-laptop",
-   "answer": "-s",
-   "options": [
-    {
-     "value": "-(e)n",
-     "label": "-(e)n"
-    },
-    {
-     "value": "-s",
-     "label": "-s"
-    },
-    {
-     "value": "-e/¨e",
-     "label": "-e/¨e"
-    },
-    {
-     "value": "-er/¨er",
-     "label": "-er/¨er"
-    },
-    {
-     "value": "-/¨",
-     "label": "-/¨"
-    }
-   ],
-   "x": 707,
-   "y": 1131,
-   "w": 55,
-   "h": 15
+   "kind": "text",
+   "label": "handy Plural",
+   "answer": "Handys|die Handys",
+   "x": 0,
+   "y": 0,
+   "w": 100,
+   "h": 20
+  },
+  {
+   "id": "u3p-briefmarke",
+   "group": "u3a",
+   "kind": "text",
+   "label": "briefmarke Plural",
+   "answer": "Briefmarken|die Briefmarken",
+   "x": 0,
+   "y": 0,
+   "w": 100,
+   "h": 20
+  },
+  {
+   "id": "u3p-e-mail",
+   "group": "u3a",
+   "kind": "text",
+   "label": "e-mail Plural",
+   "answer": "E-Mails|die E-Mails",
+   "x": 0,
+   "y": 0,
+   "w": 100,
+   "h": 20
+  },
+  {
+   "id": "u3p-telefon",
+   "group": "u3a",
+   "kind": "text",
+   "label": "telefon Plural",
+   "answer": "Telefone|die Telefone",
+   "x": 0,
+   "y": 0,
+   "w": 100,
+   "h": 20
+  },
+  {
+   "id": "u3p-drucker",
+   "group": "u3a",
+   "kind": "text",
+   "label": "drucker Plural",
+   "answer": "Drucker|die Drucker",
+   "x": 0,
+   "y": 0,
+   "w": 100,
+   "h": 20
+  },
+  {
+   "id": "u3p-computer",
+   "group": "u3a",
+   "kind": "text",
+   "label": "computer Plural",
+   "answer": "Computer|die Computer",
+   "x": 0,
+   "y": 0,
+   "w": 100,
+   "h": 20
+  },
+  {
+   "id": "u3p-notizbuch",
+   "group": "u3a",
+   "kind": "text",
+   "label": "notizbuch Plural",
+   "answer": "Notizbücher|die Notizbücher",
+   "x": 0,
+   "y": 0,
+   "w": 100,
+   "h": 20
+  },
+  {
+   "id": "u3p-kalender",
+   "group": "u3a",
+   "kind": "text",
+   "label": "kalender Plural",
+   "answer": "Kalender|die Kalender",
+   "x": 0,
+   "y": 0,
+   "w": 100,
+   "h": 20
+  },
+  {
+   "id": "u3p-bildschirm",
+   "group": "u3a",
+   "kind": "text",
+   "label": "bildschirm Plural",
+   "answer": "Bildschirme|die Bildschirme",
+   "x": 0,
+   "y": 0,
+   "w": 100,
+   "h": 20
+  },
+  {
+   "id": "u3p-stift",
+   "group": "u3a",
+   "kind": "text",
+   "label": "stift Plural",
+   "answer": "Stifte|die Stifte",
+   "x": 0,
+   "y": 0,
+   "w": 100,
+   "h": 20
+  },
+  {
+   "id": "u3p-rechnung",
+   "group": "u3a",
+   "kind": "text",
+   "label": "rechnung Plural",
+   "answer": "Rechnungen|die Rechnungen",
+   "x": 0,
+   "y": 0,
+   "w": 100,
+   "h": 20
+  },
+  {
+   "id": "sprache-1",
+   "group": "own-language",
+   "kind": "text",
+   "label": "Meine Sprache Zeile 1",
+   "x": 743,
+   "y": 742,
+   "w": 303,
+   "h": 23
+  },
+  {
+   "id": "sprache-2",
+   "group": "own-language",
+   "kind": "text",
+   "label": "Meine Sprache Zeile 2",
+   "x": 743,
+   "y": 771,
+   "w": 303,
+   "h": 23
+  },
+  {
+   "id": "sprache-3",
+   "group": "own-language",
+   "kind": "text",
+   "label": "Meine Sprache Zeile 3",
+   "x": 743,
+   "y": 800,
+   "w": 303,
+   "h": 23
+  },
+  {
+   "id": "sprache-4",
+   "group": "own-language",
+   "kind": "text",
+   "label": "Meine Sprache Zeile 4",
+   "x": 743,
+   "y": 829,
+   "w": 303,
+   "h": 23
+  },
+  {
+   "id": "sprache-5",
+   "group": "own-language",
+   "kind": "text",
+   "label": "Meine Sprache Zeile 5",
+   "x": 743,
+   "y": 858,
+   "w": 303,
+   "h": 23
+  },
+  {
+   "id": "sprache-6",
+   "group": "own-language",
+   "kind": "text",
+   "label": "Meine Sprache Zeile 6",
+   "x": 743,
+   "y": 887,
+   "w": 303,
+   "h": 23
+  },
+  {
+   "id": "sprache-7",
+   "group": "own-language",
+   "kind": "text",
+   "label": "Meine Sprache Zeile 7",
+   "x": 743,
+   "y": 916,
+   "w": 303,
+   "h": 23
+  },
+  {
+   "id": "sprache-8",
+   "group": "own-language",
+   "kind": "text",
+   "label": "Meine Sprache Zeile 8",
+   "x": 743,
+   "y": 945,
+   "w": 303,
+   "h": 23
   }
  ],
  "audio": [],
@@ -1742,7 +2138,9 @@
    "U1: 6 colored dots anchor write-in boxes; answers per key \"von oben nach unten\" mapped to dot y-order (Bildschirm, Kalender, Maus, Notizbuch, Briefmarke, Bleistift).",
    "Conflict noted: photo of an invoice has handwritten blue \"RECHNUNG\" (owner ink, excluded from words) but key lists only 6 answers without Rechnung - followed the page (6 dotted boxes).",
    "U3a modeled as selects anchored on the printed words (options = plural classes); Laptop is struck through by owner and absent from key - answered -s per dictionary logic and owner entry (owner cursive excluded).",
-   "Banner title \"Ich brauche kein Bueo.\" and U1 instruction added manually (OCR misses)."
+   "Banner title \"Ich brauche kein Bueo.\" and U1 instruction added manually (OCR misses).",
+   "2026-11-15: Source-faithful overlay audit. Plural class choices retain word bank; typed plural forms appear in selected table columns. Laptop is printed example, not required. Own-language rows added. U2 indefinite plural uses explicit zero article –. Dictionary plural sources: https://www.duden.de/rechtschreibung/Handy, https://www.duden.de/rechtschreibung/Briefmarke, https://www.duden.de/rechtschreibung/E_Mail, https://www.duden.de/rechtschreibung/Telefon, https://www.duden.de/rechtschreibung/Drucker, https://www.duden.de/rechtschreibung/Computer, https://www.duden.de/rechtschreibung/Notizbuch, https://www.duden.de/rechtschreibung/Kalender, https://www.duden.de/rechtschreibung/Bildschirm, https://www.duden.de/rechtschreibung/Stift_Schreibgeraet, https://www.duden.de/rechtschreibung/Rechnung",
+   "Zero article: https://www.duden.de/rechtschreibung/Nullartikel and https://grammis.ids-mannheim.de/kontrastive-grammatik/3760"
   ]
  }
 }
