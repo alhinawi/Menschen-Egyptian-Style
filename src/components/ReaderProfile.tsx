@@ -142,8 +142,8 @@ export function ReaderProfile() {
           </div>
           <div className="profileSection" id="translationLanguageLabel">{t('Translation language')}</div>
           <div className="profileLanguageOptions profileTranslationOptions" role="group" aria-labelledby="translationLanguageLabel">
-          {(['auto','ar','en','de'] as const).map(code => <button key={code} type="button" className="profileRow profileChoice profileTranslationChoice" title={code === 'auto' ? t('Follow interface language') : undefined} aria-label={code === 'auto' ? t('Follow interface language') : undefined} aria-pressed={choice === code} onClick={() => setTranslationLanguage(code)}>
-            <span>{t(code === 'auto' ? 'Follow UI' : code === 'ar' ? 'Arabic' : code === 'de' ? 'German' : 'English')}</span>
+          {(['ar','en','de'] as const).map(code => <button key={code} type="button" className="profileRow profileChoice profileTranslationChoice" aria-pressed={choice === code} onClick={() => setTranslationLanguage(code)}>
+            <span>{t(code === 'ar' ? 'Arabic' : code === 'de' ? 'German' : 'English')}</span>
             <span className="profileLanguageCheck" aria-hidden="true">{choice === code ? '✓' : ''}</span>
           </button>)}
           </div>
