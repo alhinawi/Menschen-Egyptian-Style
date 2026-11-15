@@ -146,3 +146,20 @@
 .nativeAB11Module1[data-native-ab11-page='26'] .mText:not(.mHeader):not(.mBlue){transform:translateY(-4px)}
 .nativeAB11Module1[data-native-ab11-page='26'] .mField{transform:translateY(-4px)}
 .nativeAB11Module1[data-native-ab11-page='26'] .mP26Sie .tapWord:last-child{color:#a00062}
+/* Page 27: compact self-assessment followed by the source photo review. */
+.nativeAB11Module1[data-native-ab11-page='27'] .mText{font:15px/20px KbDroid,Georgia,serif}
+.nativeAB11Module1[data-native-ab11-page='27'] .mHeader{font:29px/35px KbDroid,Georgia,serif;letter-spacing:.1px;transform:scaleX(1.067);transform-origin:left top}
+.nativeAB11Module1[data-native-ab11-page='27'] .mBlue{font:700 16px/21px ABScanSans,Arial,sans-serif}
+.nativeAB11Module1[data-native-ab11-page='27'] .mTitle{font:700 16px/21px ABScanSans,Arial,sans-serif;transform:scaleX(1.02);transform-origin:left top}
+.nativeAB11Module1[data-native-ab11-page='27'] .mP27Back{font:23px/30px KbDroid,Georgia,serif;letter-spacing:.6px}
+.nativeAB11Module1[data-native-ab11-page='27'] .mCanvas .mField{border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;font:15px/20px KbDroid,Georgia,serif!important;height:22px!important}
+.nativeAB11Module1[data-native-ab11-page='27'] .mCanvas .mRadio{width:14px!important;height:14px!important;border-color:#c1b77b!important}
+.nativeAB11Module1[data-native-ab11-page='27'] .mRule,.nativeAB11Module1[data-native-ab11-page='27'] .mFooter{display:none}
+.mP27Area{position:absolute;resize:none;border:0!important;border-radius:0!important;background:transparent!important;padding:0!important;margin:0!important;font:15px/21px KbDroid,Georgia,serif;color:#174770;min-height:0!important;transform-origin:left top}.mP27Area[data-native-field='ueben']{border-bottom:1px solid #999!important}
+.mP27Module{position:absolute;left:854px;top:94px;width:54px;height:64px;background:linear-gradient(90deg,#fff100 0 23px,white 23px 26px,#fff100 26px)}
+.mP27Banner{position:absolute;left:136px;top:768px;width:702px;display:flex;gap:5px;align-items:center;font:700 18px/23px KbDroid,Georgia,serif;color:#182d67}.mP27Banner mark{background:#fff100;color:white}.mP27Banner i{height:1px;background:#ebd738;flex:1;align-self:end}
+.mP27Number{position:absolute;left:136px;width:26px;height:18px;font:700 17px/18px Georgia,serif;background:#cc0900;text-align:center;color:white}
+.mP27Footer{position:absolute;left:697px;top:1206px;white-space:pre;font:13px KbDroid,Georgia,serif}.mP27Footer em{display:inline-block;margin-left:8px;background:#e5dda6;color:white;font:italic 12px/16px Georgia;padding:0 5px}
+.nativeAB11Module1[data-native-ab11-page='27'] .mText:not(.mHeader):not(.mBlue):not(.mTitle):not(.mP27Back){transform:translateY(-4px);font-size:14.5px}
+.nativeAB11Module1[data-native-ab11-page='27'] .mField{transform:translateY(-4px)}
+.nativeAB11Module1[data-native-ab11-page='27'] .mCanvas .mField[data-native-field^='r1-']{border:0!important;font-size:11px!important}
