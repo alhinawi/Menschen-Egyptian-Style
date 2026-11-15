@@ -78,3 +78,19 @@ html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .hybridField
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='45'] .hybridCheck:nth-child(4){top:89%;left:53%}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='45'] .hybridCheck:nth-child(5){top:84%}
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='45'] .hybridCheck output{font-size:1.3cqw;position:absolute;right:0;top:100%;background:white}
+
+/* AB p46: source-word highlights, paired grammar scoring and printed score rails. */
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='46'] .hybridField{font-size:1.58cqw!important;outline:0}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='46'] .hybridField:focus{outline:1px solid #26764c}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='46'] .hybridField.hybridCorrect{outline:1px solid #268250}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='46'] .hybridField.hybridWrong{outline:1px solid #bd3838}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='46'] .hybridField[type=radio]:checked{background:#f6eb3566!important;border-bottom:2px solid #887f00!important;border-radius:0!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='46'] .hybridTools{display:contents}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='46'] .hybridCheck{position:absolute;left:93%;font-size:1.3cqw}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='46'] .hybridCheck:nth-child(1){top:34%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='46'] .hybridCheck:nth-child(2){top:49%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='46'] .hybridCheck:nth-child(3){top:64%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='46'] .hybridCheck:nth-child(4){top:81%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='46'] .hybridCheck output{font-size:1.3cqw;position:absolute;right:0;top:100%;background:white}
+.hybridScores46>output{position:absolute;font:1.3cqw ABScanSans,Arial;color:#174770}
+.hybridScores46>i{position:absolute;width:2.5%;height:1.8%;border:2px solid #174770;border-radius:100%;pointer-events:none}
