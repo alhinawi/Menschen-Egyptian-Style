@@ -920,90 +920,394 @@
   {
    "id": "b1",
    "group": "l8-1b",
-   "kind": "text",
+   "kind": "select",
    "label": "1",
    "answer": "das Café",
    "x": 204,
-   "y": 539,
-   "w": 216,
-   "h": 13
+   "y": 528,
+   "w": 213,
+   "h": 24,
+   "options": [
+    {
+     "value": "das Café",
+     "label": "das Café"
+    },
+    {
+     "value": "das Restaurant",
+     "label": "das Restaurant"
+    },
+    {
+     "value": "das Konzert",
+     "label": "das Konzert"
+    },
+    {
+     "value": "das Schwimmbad",
+     "label": "das Schwimmbad"
+    },
+    {
+     "value": "das Kino",
+     "label": "das Kino"
+    },
+    {
+     "value": "das Theater",
+     "label": "das Theater"
+    },
+    {
+     "value": "das Museum",
+     "label": "das Museum"
+    },
+    {
+     "value": "die Disco",
+     "label": "die Disco"
+    },
+    {
+     "value": "die Bar",
+     "label": "die Bar"
+    }
+   ]
   },
   {
    "id": "b2",
    "group": "l8-1b",
-   "kind": "text",
+   "kind": "select",
    "label": "2",
    "answer": "das Restaurant",
-   "x": 204,
-   "y": 635,
-   "w": 216,
-   "h": 13
+   "x": 206,
+   "y": 629,
+   "w": 213,
+   "h": 24,
+   "options": [
+    {
+     "value": "das Café",
+     "label": "das Café"
+    },
+    {
+     "value": "das Restaurant",
+     "label": "das Restaurant"
+    },
+    {
+     "value": "das Konzert",
+     "label": "das Konzert"
+    },
+    {
+     "value": "das Schwimmbad",
+     "label": "das Schwimmbad"
+    },
+    {
+     "value": "das Kino",
+     "label": "das Kino"
+    },
+    {
+     "value": "das Theater",
+     "label": "das Theater"
+    },
+    {
+     "value": "das Museum",
+     "label": "das Museum"
+    },
+    {
+     "value": "die Disco",
+     "label": "die Disco"
+    },
+    {
+     "value": "die Bar",
+     "label": "die Bar"
+    }
+   ]
   },
   {
    "id": "b3",
    "group": "l8-1b",
-   "kind": "text",
+   "kind": "select",
    "label": "3",
    "answer": "das Konzert",
-   "x": 204,
-   "y": 731,
-   "w": 216,
-   "h": 13
+   "x": 208,
+   "y": 730,
+   "w": 213,
+   "h": 24,
+   "options": [
+    {
+     "value": "das Café",
+     "label": "das Café"
+    },
+    {
+     "value": "das Restaurant",
+     "label": "das Restaurant"
+    },
+    {
+     "value": "das Konzert",
+     "label": "das Konzert"
+    },
+    {
+     "value": "das Schwimmbad",
+     "label": "das Schwimmbad"
+    },
+    {
+     "value": "das Kino",
+     "label": "das Kino"
+    },
+    {
+     "value": "das Theater",
+     "label": "das Theater"
+    },
+    {
+     "value": "das Museum",
+     "label": "das Museum"
+    },
+    {
+     "value": "die Disco",
+     "label": "die Disco"
+    },
+    {
+     "value": "die Bar",
+     "label": "die Bar"
+    }
+   ]
   },
   {
    "id": "b5",
    "group": "l8-1b",
-   "kind": "text",
+   "kind": "select",
    "label": "5",
    "answer": "das Kino",
-   "x": 460,
-   "y": 635,
-   "w": 216,
-   "h": 13
+   "x": 464,
+   "y": 624,
+   "w": 213,
+   "h": 24,
+   "options": [
+    {
+     "value": "das Café",
+     "label": "das Café"
+    },
+    {
+     "value": "das Restaurant",
+     "label": "das Restaurant"
+    },
+    {
+     "value": "das Konzert",
+     "label": "das Konzert"
+    },
+    {
+     "value": "das Schwimmbad",
+     "label": "das Schwimmbad"
+    },
+    {
+     "value": "das Kino",
+     "label": "das Kino"
+    },
+    {
+     "value": "das Theater",
+     "label": "das Theater"
+    },
+    {
+     "value": "das Museum",
+     "label": "das Museum"
+    },
+    {
+     "value": "die Disco",
+     "label": "die Disco"
+    },
+    {
+     "value": "die Bar",
+     "label": "die Bar"
+    }
+   ]
   },
   {
    "id": "b6",
    "group": "l8-1b",
-   "kind": "text",
+   "kind": "select",
    "label": "6",
    "answer": "das Theater",
-   "x": 460,
-   "y": 731,
-   "w": 216,
-   "h": 13
+   "x": 465,
+   "y": 726,
+   "w": 213,
+   "h": 24,
+   "options": [
+    {
+     "value": "das Café",
+     "label": "das Café"
+    },
+    {
+     "value": "das Restaurant",
+     "label": "das Restaurant"
+    },
+    {
+     "value": "das Konzert",
+     "label": "das Konzert"
+    },
+    {
+     "value": "das Schwimmbad",
+     "label": "das Schwimmbad"
+    },
+    {
+     "value": "das Kino",
+     "label": "das Kino"
+    },
+    {
+     "value": "das Theater",
+     "label": "das Theater"
+    },
+    {
+     "value": "das Museum",
+     "label": "das Museum"
+    },
+    {
+     "value": "die Disco",
+     "label": "die Disco"
+    },
+    {
+     "value": "die Bar",
+     "label": "die Bar"
+    }
+   ]
   },
   {
    "id": "b7",
    "group": "l8-1b",
-   "kind": "text",
+   "kind": "select",
    "label": "7",
    "answer": "das Museum",
-   "x": 722,
-   "y": 539,
-   "w": 216,
-   "h": 13
+   "x": 719,
+   "y": 518,
+   "w": 208,
+   "h": 24,
+   "options": [
+    {
+     "value": "das Café",
+     "label": "das Café"
+    },
+    {
+     "value": "das Restaurant",
+     "label": "das Restaurant"
+    },
+    {
+     "value": "das Konzert",
+     "label": "das Konzert"
+    },
+    {
+     "value": "das Schwimmbad",
+     "label": "das Schwimmbad"
+    },
+    {
+     "value": "das Kino",
+     "label": "das Kino"
+    },
+    {
+     "value": "das Theater",
+     "label": "das Theater"
+    },
+    {
+     "value": "das Museum",
+     "label": "das Museum"
+    },
+    {
+     "value": "die Disco",
+     "label": "die Disco"
+    },
+    {
+     "value": "die Bar",
+     "label": "die Bar"
+    }
+   ]
   },
   {
    "id": "b8",
    "group": "l8-1b",
-   "kind": "text",
+   "kind": "select",
    "label": "8",
    "answer": "die Disco",
-   "x": 722,
-   "y": 635,
-   "w": 216,
-   "h": 13
+   "x": 720,
+   "y": 618,
+   "w": 208,
+   "h": 24,
+   "options": [
+    {
+     "value": "das Café",
+     "label": "das Café"
+    },
+    {
+     "value": "das Restaurant",
+     "label": "das Restaurant"
+    },
+    {
+     "value": "das Konzert",
+     "label": "das Konzert"
+    },
+    {
+     "value": "das Schwimmbad",
+     "label": "das Schwimmbad"
+    },
+    {
+     "value": "das Kino",
+     "label": "das Kino"
+    },
+    {
+     "value": "das Theater",
+     "label": "das Theater"
+    },
+    {
+     "value": "das Museum",
+     "label": "das Museum"
+    },
+    {
+     "value": "die Disco",
+     "label": "die Disco"
+    },
+    {
+     "value": "die Bar",
+     "label": "die Bar"
+    }
+   ]
   },
   {
    "id": "b9",
    "group": "l8-1b",
-   "kind": "text",
+   "kind": "select",
    "label": "9",
    "answer": "die Bar",
-   "x": 722,
-   "y": 731,
-   "w": 216,
-   "h": 13
+   "x": 724,
+   "y": 719,
+   "w": 208,
+   "h": 24,
+   "options": [
+    {
+     "value": "das Café",
+     "label": "das Café"
+    },
+    {
+     "value": "das Restaurant",
+     "label": "das Restaurant"
+    },
+    {
+     "value": "das Konzert",
+     "label": "das Konzert"
+    },
+    {
+     "value": "das Schwimmbad",
+     "label": "das Schwimmbad"
+    },
+    {
+     "value": "das Kino",
+     "label": "das Kino"
+    },
+    {
+     "value": "das Theater",
+     "label": "das Theater"
+    },
+    {
+     "value": "das Museum",
+     "label": "das Museum"
+    },
+    {
+     "value": "die Disco",
+     "label": "die Disco"
+    },
+    {
+     "value": "die Bar",
+     "label": "die Bar"
+    }
+   ]
   },
   {
    "id": "b10",
@@ -1011,10 +1315,10 @@
    "kind": "text",
    "label": "SMS 1: MITCHANGTA",
    "answer": "Nachmittag",
-   "x": 425,
-   "y": 883,
-   "w": 146,
-   "h": 13
+   "x": 424,
+   "y": 878,
+   "w": 145,
+   "h": 24
   },
   {
    "id": "b11",
@@ -1022,10 +1326,10 @@
    "kind": "text",
    "label": "SMS 1: NOKI",
    "answer": "Kino",
-   "x": 425,
-   "y": 908,
-   "w": 146,
-   "h": 13
+   "x": 426,
+   "y": 904,
+   "w": 145,
+   "h": 24
   },
   {
    "id": "b12",
@@ -1033,10 +1337,10 @@
    "kind": "text",
    "label": "SMS 2: LOHAL",
    "answer": "Hallo",
-   "x": 820,
-   "y": 849,
-   "w": 148,
-   "h": 13
+   "x": 823,
+   "y": 845,
+   "w": 144,
+   "h": 24
   },
   {
    "id": "b13",
@@ -1044,10 +1348,10 @@
    "kind": "text",
    "label": "SMS 2: DIELER",
    "answer": "leider",
-   "x": 820,
-   "y": 874,
-   "w": 148,
-   "h": 13
+   "x": 823,
+   "y": 871,
+   "w": 144,
+   "h": 24
   },
   {
    "id": "b14",
@@ -1055,10 +1359,10 @@
    "kind": "text",
    "label": "SMS 2: TIZE",
    "answer": "Zeit",
-   "x": 820,
-   "y": 899,
-   "w": 148,
-   "h": 13
+   "x": 823,
+   "y": 897,
+   "w": 144,
+   "h": 24
   },
   {
    "id": "b15",
@@ -1066,10 +1370,10 @@
    "kind": "text",
    "label": "heute … (Satz 1)",
    "answer": "kann ich nicht in die Aurora-Bar kommen.",
-   "x": 690,
-   "y": 1116,
-   "w": 305,
-   "h": 13
+   "x": 685,
+   "y": 1115,
+   "w": 323,
+   "h": 45
   },
   {
    "id": "b16",
@@ -1077,10 +1381,10 @@
    "kind": "text",
    "label": "leider … (Satz 2)",
    "answer": "Leider habe ich noch einen Termin mit meiner Chefin.",
-   "x": 640,
-   "y": 1168,
-   "w": 360,
-   "h": 13
+   "x": 641,
+   "y": 1166,
+   "w": 368,
+   "h": 45
   },
   {
    "id": "b17",
@@ -1088,10 +1392,10 @@
    "kind": "text",
    "label": "am Wochenende … (Satz 3)",
    "answer": "Am Wochenende habe ich Zeit.",
-   "x": 640,
-   "y": 1219,
-   "w": 360,
-   "h": 13
+   "x": 641,
+   "y": 1217,
+   "w": 368,
+   "h": 45
   },
   {
    "id": "b18",
@@ -1099,14 +1403,216 @@
    "kind": "text",
    "label": "heute Nachmittag … (Satz 4)",
    "answer": "Heute Nachmittag gehe ich ins Schwimmbad.",
-   "x": 640,
-   "y": 1296,
-   "w": 360,
-   "h": 13
+   "x": 643,
+   "y": 1293,
+   "w": 368,
+   "h": 45
+  },
+  {
+   "id": "word-0-0",
+   "group": "l8-1a",
+   "kind": "checkbox",
+   "label": "1a LFEMP",
+   "answer": "false",
+   "x": 201,
+   "y": 320,
+   "w": 60,
+   "h": 24
+  },
+  {
+   "id": "word-0-2",
+   "group": "l8-1a",
+   "kind": "checkbox",
+   "label": "1a LDHTPCBS",
+   "answer": "false",
+   "x": 391,
+   "y": 320,
+   "w": 92,
+   "h": 24
+  },
+  {
+   "id": "word-0-3",
+   "group": "l8-1a",
+   "kind": "checkbox",
+   "label": "1a MUSEUM",
+   "answer": "true",
+   "x": 483,
+   "y": 320,
+   "w": 80,
+   "h": 24
+  },
+  {
+   "id": "word-0-4",
+   "group": "l8-1a",
+   "kind": "checkbox",
+   "label": "1a VÜWBFRC",
+   "answer": "false",
+   "x": 563,
+   "y": 320,
+   "w": 88,
+   "h": 24
+  },
+  {
+   "id": "word-0-5",
+   "group": "l8-1a",
+   "kind": "checkbox",
+   "label": "1a CAFÉ",
+   "answer": "true",
+   "x": 651,
+   "y": 320,
+   "w": 45,
+   "h": 24
+  },
+  {
+   "id": "word-0-6",
+   "group": "l8-1a",
+   "kind": "checkbox",
+   "label": "1a LZMSGWBO",
+   "answer": "false",
+   "x": 696,
+   "y": 320,
+   "w": 104,
+   "h": 24
+  },
+  {
+   "id": "word-0-7",
+   "group": "l8-1a",
+   "kind": "checkbox",
+   "label": "1a RESTAURANT",
+   "answer": "true",
+   "x": 800,
+   "y": 320,
+   "w": 116,
+   "h": 24
+  },
+  {
+   "id": "word-1-0",
+   "group": "l8-1a",
+   "kind": "checkbox",
+   "label": "1a LCGWVT",
+   "answer": "false",
+   "x": 201,
+   "y": 346,
+   "w": 76,
+   "h": 24
+  },
+  {
+   "id": "word-1-1",
+   "group": "l8-1a",
+   "kind": "checkbox",
+   "label": "1a KINO",
+   "answer": "true",
+   "x": 277,
+   "y": 346,
+   "w": 46,
+   "h": 24
+  },
+  {
+   "id": "word-1-2",
+   "group": "l8-1a",
+   "kind": "checkbox",
+   "label": "1a NFAKFUE",
+   "answer": "false",
+   "x": 323,
+   "y": 346,
+   "w": 82,
+   "h": 24
+  },
+  {
+   "id": "word-1-3",
+   "group": "l8-1a",
+   "kind": "checkbox",
+   "label": "1a DISCO",
+   "answer": "true",
+   "x": 405,
+   "y": 346,
+   "w": 53,
+   "h": 24
+  },
+  {
+   "id": "word-1-4",
+   "group": "l8-1a",
+   "kind": "checkbox",
+   "label": "1a KTJWG",
+   "answer": "false",
+   "x": 458,
+   "y": 346,
+   "w": 61,
+   "h": 24
+  },
+  {
+   "id": "word-1-5",
+   "group": "l8-1a",
+   "kind": "checkbox",
+   "label": "1a KONZERT",
+   "answer": "true",
+   "x": 519,
+   "y": 346,
+   "w": 83,
+   "h": 24
+  },
+  {
+   "id": "word-1-6",
+   "group": "l8-1a",
+   "kind": "checkbox",
+   "label": "1a BWOVP",
+   "answer": "false",
+   "x": 602,
+   "y": 346,
+   "w": 65,
+   "h": 24
+  },
+  {
+   "id": "word-1-7",
+   "group": "l8-1a",
+   "kind": "checkbox",
+   "label": "1a THEATER",
+   "answer": "true",
+   "x": 667,
+   "y": 346,
+   "w": 81,
+   "h": 24
+  },
+  {
+   "id": "word-1-8",
+   "group": "l8-1a",
+   "kind": "checkbox",
+   "label": "1a MKVJES",
+   "answer": "false",
+   "x": 748,
+   "y": 346,
+   "w": 68,
+   "h": 24
+  },
+  {
+   "id": "word-1-9",
+   "group": "l8-1a",
+   "kind": "checkbox",
+   "label": "1a BAR",
+   "answer": "true",
+   "x": 816,
+   "y": 346,
+   "w": 36,
+   "h": 24
+  },
+  {
+   "id": "word-1-10",
+   "group": "l8-1a",
+   "kind": "checkbox",
+   "label": "1a LFJRBN",
+   "answer": "false",
+   "x": 852,
+   "y": 346,
+   "w": 65,
+   "h": 24
   }
  ],
  "audio": [],
  "groups": [
+  {
+   "id": "l8-1a",
+   "label": "1a Wörter markieren"
+  },
   {
    "id": "l8-1b",
    "label": "Ü1b Ergänzen Sie die Wörter aus a (8 Bilder)"
@@ -1128,7 +1634,8 @@
    "Ü1a is a marking exercise (letter grid, SCHWIMMBAD highlighted as printed example): no fields; grid kept as two word strings.",
    "Ü1b picture 4 'das Schwimmbad' is the printed example; Ü2 'Liebe' (SMS 1) is the printed example.",
    "Ü3: each sentence has two writing lines; field sits on the first line. Satz 1 starts with the printed cursive 'Heute' - the field answer is the completion after it (same convention as printed fragments).",
-   "Photos and picture icons excluded; circled item numbers kept as words."
+   "Photos and picture icons excluded; circled item numbers kept as words.",
+   "2026-11-15: restored original scan/fonts/layout;complete word-search targets+decoys;picture assignment selects;source-baseline SMS fields;multiline sentence writing on original rules."
   ]
  }
 }
