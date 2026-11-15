@@ -58,6 +58,7 @@ export function HybridScan({data}:{data:ScanData}){
     if(data.book==='ab-a11'&&String(data.page)==='76'&&f.id.startsWith('own-menu-'))return <textarea {...props} value={values[f.id]||''} onChange={e=>update(f.id,e.target.value)}/>;
     if(data.book==='ab-a11'&&String(data.page)==='73'&&f.id==='own-week')return <textarea {...props} placeholder="1 Pauls Woche: Sätze schreiben" value={values[f.id]||''} onChange={e=>update(f.id,e.target.value)}/>;
     if(data.book==='ab-a11'&&String(data.page)==='73'&&f.id==='u4-a1')return <select {...props} data-ink-covered={!!values[f.id]} value={values[f.id]||''} onChange={e=>update(f.id,e.target.value)}><option value=""/>{f.options?.map(o=><option key={o.value} value={o.value}>{o.label}</option>)}</select>;
+    if(data.book==='ab-a11'&&String(data.page)==='78'&&f.id.startsWith('u2-'))return <input {...props} maxLength={1} autoComplete="off" value={values[f.id]||''} onChange={e=>update(f.id,e.target.value)}/>;
     if(f.kind==='select')return <select {...props} value={values[f.id]||''} onChange={e=>update(f.id,e.target.value)}><option value=""/>{f.options?.map(o=><option key={o.value} value={o.value}>{o.label}</option>)}</select>;
     if(f.kind==='radio')return <ChoiceInput {...props} type="radio" name={`${key}-${f.name||f.id}`} value={f.value} checked={values[f.name||f.id]===f.value} onChange={()=>update(f.name||f.id,f.value||'')}/>;
     if(f.kind==='checkbox')return <ChoiceInput {...props} type="checkbox" checked={values[f.id]==='true'} onChange={e=>update(f.id,String(e.target.checked))}/>;
