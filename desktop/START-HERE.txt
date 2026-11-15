@@ -1,0 +1,14 @@
+Menschen. - The Interactive German Coursebook (offline desktop app)
+===================================================================
+
+EN: No installation and no internet needed.
+  1. Extract this whole folder anywhere (Desktop, USB stick, ...).
+  2. Double-click Menschen.exe.
+  3. Keep all files together in this folder - Menschen.exe needs them.
+Your answers and progress are saved on this computer automatically.
+
+AR: البرنامج شغال بدون تسطيب وبدون انترنت.
+  1. فك ضغط الفولدر كله في أي مكان (سطح المكتب أو فلاشة USB).
+  2. افتح Menschen.exe
+  3. سيب كل الملفات مع بعض في الفولدر - البرنامج محتاجها.
+إجاباتك وتقدمك بيتحفظوا على الجهاز ده تلقائيا.

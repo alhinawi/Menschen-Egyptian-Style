@@ -1,0 +1,6 @@
+/* p92 ex12: marks paint the rule under each typed line only; text colour and the
+   printed rules stay visible in every state. Lines sit exactly on the printed
+   rules (offsets 16/36px from each textarea's top). */
+[data-native-ab12="92"] textarea.naField.naLined[data-check-mark]{background-color:transparent!important;box-shadow:none!important;color:#224777!important;background-repeat:no-repeat!important;background-size:100% 1.5px,100% 1.5px!important;background-position:0 16px,0 36px!important}
+[data-native-ab12="92"] textarea.naField.naLined[data-check-mark="ok"]{background-image:linear-gradient(#2f7d4f,#2f7d4f),linear-gradient(#2f7d4f,#2f7d4f)!important}
+[data-native-ab12="92"] textarea.naField.naLined[data-check-mark="bad"]{background-image:linear-gradient(#c62f2f,#c62f2f),linear-gradient(#c62f2f,#c62f2f)!important}

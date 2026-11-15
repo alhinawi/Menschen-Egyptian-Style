@@ -1,1 +1,141 @@
-{"keep": [[0, 0, 1072, 195], [119, 274, 583, 650], [571, 214, 1059, 482], [678, 518, 1035, 893], [167, 667, 619, 890], [190, 988, 1059, 1130], [506, 910, 881, 978], [190, 1150, 524, 1268], [559, 1160, 738, 1220], [119, 935, 149, 990], [0, 1405, 120, 1455]], "paper0": [253, 254, 250], "erase": [[183, 309, 207, 333], [185, 665, 209, 689], [707, 516, 731, 540]], "fieldadj": {"f3a-A": {"x": 183, "y": 309, "w": 25, "h": 24}, "f3a-C": {"x": 185, "y": 665, "w": 25, "h": 24}, "f3a-D": {"x": 707, "y": 516, "w": 25, "h": 24}}, "checks": {"task3a": [175, 893]}, "compact": ["task3a"], "adj": [{"cy": 940.5, "x": 202, "tol": 3, "set": {"b": 1, "sa": 1}}]}
+{
+ "keep": [
+  [
+   0,
+   0,
+   1072,
+   195
+  ],
+  [
+   119,
+   274,
+   583,
+   650
+  ],
+  [
+   571,
+   214,
+   1059,
+   482
+  ],
+  [
+   678,
+   518,
+   1035,
+   893
+  ],
+  [
+   167,
+   667,
+   619,
+   890
+  ],
+  [
+   190,
+   988,
+   1059,
+   1130
+  ],
+  [
+   506,
+   910,
+   881,
+   978
+  ],
+  [
+   190,
+   1150,
+   524,
+   1268
+  ],
+  [
+   559,
+   1160,
+   738,
+   1220
+  ],
+  [
+   119,
+   935,
+   149,
+   990
+  ],
+  [
+   0,
+   1405,
+   120,
+   1455
+  ]
+ ],
+ "paper0": [
+  253,
+  254,
+  250
+ ],
+ "erase": [
+  [
+   100,
+   281,
+   144,
+   303
+  ]
+ ],
+ "fieldadj": {
+  "f3a-A": {
+   "x": 182,
+   "y": 315,
+   "w": 18,
+   "h": 16,
+   "maxlen": 1
+  },
+  "f3a-C": {
+   "x": 186,
+   "y": 674,
+   "w": 18,
+   "h": 16,
+   "maxlen": 1
+  },
+  "f3a-D": {
+   "x": 708,
+   "y": 523,
+   "w": 18,
+   "h": 16,
+   "maxlen": 1
+  }
+ },
+ "checks": {
+  "task3a": [
+   175,
+   893
+  ]
+ },
+ "compact": [
+  "task3a"
+ ],
+ "adj": [
+  {
+   "cy": 940.5,
+   "x": 202,
+   "tol": 3,
+   "set": {
+    "b": 1,
+    "sa": 1
+   }
+  }
+ ],
+ "notes": [
+  "3a circle fields: measured printed ring bboxes (x/y/w/h), transparent round border via page CSS, digit centered in ring; ok/bad outline follows border-radius so grading ring overlays the printed ring (no double ring)",
+  "ring erases reverted: printed rings restored into kb11-p66-0.webp from the raw scan (they are printed ink, kept)",
+  "r2: fields inset 2px inside rings so the ok/bad outline lands exactly on the printed ring (never touches A/C/D letters); kb11-p66-4.webp re-cropped from raw scan (ring bottom no longer clipped); audio button moved to left margin (center ~62,295) so the 44px marker clears the AB tag and orange 3 badge at 390",
+  "r2b: printed play tag erased from bg (audio-page convention; art-3 crisp crop removed, file deleted); listen button center (66.5,294) keeps the 44px marker fully on-canvas at 390 (left edge 2.2px, no pan), visually clear of the AB tag by ~12px (circle half-width at that row) and of the orange 3 badge by ~23px"
+ ],
+ "audio": [
+  {
+   "id": "cd2-19",
+   "x": 50,
+   "y": 289,
+   "w": 33,
+   "h": 10
+  }
+ ]
+}

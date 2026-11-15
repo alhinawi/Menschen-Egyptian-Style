@@ -1,39 +1,30 @@
-import successSound from '../assets/feedback/ok06_sparkle.mp3?url';
-import errorSound from '../assets/feedback/err04_double.mp3?url';
+import {wrongVoices,incompleteVoices,correctVoices} from './check-voices';
 import {scanData} from '../scan-data/registry';
 import type {ScanField} from '../scan-data/schema';
 // User-triggered grading feedback, shared by every compact check control.
-let audio: AudioContext | undefined;
 let stopEffect: (() => void) | undefined;
-function readyAudio() {
+const soundOn = () => document.querySelector<HTMLElement>('.soundToggle')?.dataset.soundOn!=='false';
+// Every finished check plays one clip from its voice pool: filled-but-wrong picks from the
+// wrong pool, empty or partly solved from the incomplete pool, fully correct from the
+// correct pool. One shared element keeps rapid checks from overlapping, the same pick never
+// repeats twice in a row within a pool, and the mp3 only downloads on the first played
+// check (lazy). Extra clips join the pool lists in check-voices.ts.
+const voicePools: Record<'wrong' | 'incomplete' | 'correct', string[]> = {wrong: wrongVoices, incomplete: incompleteVoices, correct: correctVoices};
+let voice: HTMLAudioElement | undefined;
+const lastVoice: Record<string,number> = {};
+function checkVoice(kind: 'wrong' | 'incomplete' | 'correct') {
+ if(!soundOn())return;
+ const pool=voicePools[kind];
+ if(!pool.length)return;
+ let pick=Math.floor(Math.random()*pool.length);
+ if(pool.length>1&&pick===lastVoice[kind])pick=(pick+1)%pool.length;
+ lastVoice[kind]=pick;
  try {
-  const Audio = window.AudioContext || (window as typeof window & {webkitAudioContext?: typeof AudioContext}).webkitAudioContext;
-  if (!Audio) return;
-  audio ??= new Audio();
-  if (audio.state === 'suspended') void audio.resume().catch(() => {});
- } catch { /* Grading and visual feedback never depend on sound permission. */ }
-}
-const soundBytes = [errorSound,successSound].map(url=>fetch(url).then(response=>{
- if(!response.ok)throw new Error('Feedback sound unavailable');
- return response.arrayBuffer();
-}).catch(()=>null));
-const soundBuffers = new Map<boolean,Promise<AudioBuffer | null>>();
-async function sound(correct: boolean) {
- if(document.querySelector<HTMLElement>('.soundToggle')?.dataset.soundOn==='false')return;
- try {
-  const context=audio;
-  if(!context)return;
-  if(context.state==='suspended')await context.resume().catch(()=>{});
-  if(context.state!=='running')return;
-  let decoded=soundBuffers.get(correct);
-  if(!decoded){
-   decoded=soundBytes[correct?1:0].then(bytes=>bytes?context.decodeAudioData(bytes.slice(0)).catch(()=>null):null);
-   soundBuffers.set(correct,decoded);
-  }
-  const buffer=await decoded;
-  if(!buffer||context.state!=='running')return;
-  const source=context.createBufferSource();source.buffer=buffer;
-  source.connect(context.destination);source.onended=()=>source.disconnect();source.start();
+  voice??=new Audio();
+  voice.pause();
+  voice.src=pool[pick];
+  voice.currentTime=0;
+  void voice.play().catch(()=>{});
  } catch { /* A muted or blocked device still gets normal exercise feedback. */ }
 }
 function fireworks() {
@@ -79,6 +70,50 @@ type KeyedPage={book:string;page:number;fields:ScanField[]};
 const nativeFiles=import.meta.glob('../native-data/*/*.json',{eager:true,import:'default'}) as Record<string,KeyedPage>;
 const normText=(x:string)=>x.normalize('NFC').toLocaleLowerCase('de').replace(/[„“”"’'‚‘]/g,'').trim().replace(/[.!?…]+$/,'').replace(/\s+/g,' ').trim();
 const normSet=(x:string)=>x.split(/[\n;]+/).map(normText).filter(Boolean).sort().join('\n');
+// Fixed-list answer mode for exercises whose official key is a closed set of items.
+// "set:a;;b;;c" = the value, split on commas, semicolons or line breaks, must contain exactly
+// the key items, in any order ("|" still separates accepted spellings inside one item, a
+// leading "?" marks an optional item such as a printed example, and a two-sentence item may
+// be written as two segments). Comparison is normText-based (trim, whitespace, case, trailing
+// punctuation lenient) and "..." = "…". An empty value never matches. Answers without the
+// prefix return null and callers keep the exact-match logic.
+export function answerMatchMode(answer:string,rawValue:string):boolean|null{
+ if(!answer.startsWith('set:'))return null;
+ const ell=(x:string)=>x.replace(/\.{3,}/g,'…');
+ // Key items split by ';;'. '|' separates accepted spellings inside one item. A leading '?'
+ // marks an optional item (e.g. a printed example the learner may or may not retype). An item
+ // containing a sentence boundary ('. ') may alternatively be written as two separate segments.
+ const key=answer.slice(4).split(';;').filter(a=>a.length).map(a=>{
+  const optional=a.startsWith('?');
+  const alts=(optional?a.slice(1):a).split('|').map(v=>normText(ell(v))).filter(Boolean);
+  const forms:string[][]=alts.map(a=>[a]);
+  for(const a of alts){const i=a.indexOf('. ');if(i>0)forms.push([normText(a.slice(0,i+1)),normText(a.slice(i+2))]);}
+  return {optional,forms};
+ });
+ const got=rawValue.split(/[,;\n]+/).map(v=>normText(ell(v))).filter(Boolean);
+ if(!got.length)return false;
+ const used=new Array<boolean>(got.length).fill(false);
+ const dfs=(ki:number,remaining:number):boolean=>{
+  if(ki===key.length)return remaining===0;
+  const item=key[ki];
+  if(item.optional&&dfs(ki+1,remaining))return true;
+  for(const form of item.forms){
+   const pick:number[]=[];
+   for(const part of form){
+    const j=got.findIndex((g,gi)=>!used[gi]&&!pick.includes(gi)&&g===part);
+    if(j<0){pick.length=0;break}
+    pick.push(j);
+   }
+   if(pick.length){
+    for(const j of pick)used[j]=true;
+    if(dfs(ki+1,remaining-pick.length))return true;
+    for(const j of pick)used[j]=false;
+   }
+  }
+  return false;
+ };
+ return dfs(0,got.length);
+}
 const pageSources=(page:string)=>[...Object.entries(scanData).filter(([k])=>k.endsWith(':'+page)).map(([,d])=>d as KeyedPage),...Object.values(nativeFiles).filter(d=>String(d.page)===page)];
 const fieldEls=(root:ParentNode,id:string)=>[...root.querySelectorAll<HTMLElement>('[data-native-field]')].filter(e=>e.dataset.nativeField===id);
 const registry=new WeakMap<HTMLButtonElement,Record<string,string>>();
@@ -118,9 +153,37 @@ function isRight(f:ScanField,el:HTMLElement){
  if(el instanceof HTMLSelectElement){const picked=[el.value,el.selectedOptions[0]?.textContent||''].map(normText);return answer.split('|').some(a=>picked.includes(normText(a)))}
  const value=el.dataset.value??(el instanceof HTMLButtonElement?(el.textContent||''):((el as HTMLInputElement).value||''));
  if(f.unordered)return normSet(answer)===normSet(value);
+ const mode=answerMatchMode(answer,value);
+ if(mode!==null)return mode;
  return answer.split('|').some(a=>normText(a)===normText(value));
 }
 function isToggle(el:HTMLElement){return el instanceof HTMLInputElement&&(el.type==='radio'||el.type==='checkbox')}
+function elAnswered(el:HTMLElement){
+ if(isToggle(el))return (el as HTMLInputElement).checked;
+ const value=el.dataset.value??(el instanceof HTMLButtonElement?(el.textContent||''):((el as HTMLInputElement).value||''));
+ return value.trim().length>0;
+}
+// Pages whose checks carry no shared answer keys (older native KB A1.1 pages) get no field
+// marks, so judge the attempt by the page itself: wrong when any answer control holds a
+// value, incomplete when everything is still empty. Answer controls only - seek sliders,
+// hidden inputs and option buttons don't count.
+function pageHasAnswers(root:ParentNode){
+ for(const el of root.querySelectorAll<HTMLElement>('input,textarea,select')){
+  if(isToggle(el)){if((el as HTMLInputElement).checked)return true;continue}
+  if(el instanceof HTMLInputElement&&!['text','search','email','number','tel','url','password'].includes(el.type))continue;
+  if(el instanceof HTMLInputElement||el instanceof HTMLTextAreaElement||el instanceof HTMLSelectElement){if((el.value||'').trim())return true}
+ }
+ return false;
+}
+// Failed checks split into "wrong" (at least one answered field graded bad) and "incomplete"
+// (nothing wrong yet: fields empty or the filled part correct so far). Runs after
+// markCheckFields so it can read the fresh data-check-mark results.
+function classifyFailure(button:HTMLButtonElement): 'wrong' | 'incomplete' {
+ const {root,items}=keyedFields(button);
+ if(!items.length)return pageHasAnswers(root)?'wrong':'incomplete';
+ for(const it of items)for(const el of [...it.els,...(it.radios||[])])if(el.getAttribute('data-check-mark')==='bad'&&elAnswered(el))return 'wrong';
+ return 'incomplete';
+}
 export function clearCheckMarks(root:ParentNode=document){root.querySelectorAll('[data-check-mark]').forEach(e=>e.removeAttribute('data-check-mark'))}
 export function clearGroupMarks(button:HTMLButtonElement){for(const it of keyedFields(button).items)for(const el of [...it.els,...(it.radios||[])])el.removeAttribute('data-check-mark')}
 export function markCheckFields(button:HTMLButtonElement,_correct:boolean){
@@ -191,9 +254,18 @@ export function syncCheckStatus(button:HTMLButtonElement): () => void {
  observer.observe(scope,{childList:true,subtree:true,characterData:true});
  return()=>observer.disconnect();
 }
+// Wrong or unsolved check: the page gives one short horizontal shake. Transform-only (no
+// layout shift, no rotation); the CSS block skips the animation under prefers-reduced-motion.
+function shakePage(button:HTMLButtonElement){
+ const page=button.closest<HTMLElement>('.page');
+ if(!page)return;
+ page.classList.remove('checkShake');
+ void page.offsetWidth; // Restart the animation when the previous shake is still running.
+ page.addEventListener('animationend',()=>page.classList.remove('checkShake'),{once:true});
+ page.classList.add('checkShake');
+}
 export function beginCheckFeedback(button:HTMLButtonElement): () => void {
  // Called inside the click gesture, before the grading handler and React commit.
- readyAudio();
  const scope=feedbackScope(button);
  if(!scope)return () => {};
  let finished=false,frame=0,timer=0;
@@ -206,7 +278,7 @@ export function beginCheckFeedback(button:HTMLButtonElement): () => void {
   if(!wrong&&!correct)return;
   finish();button.dataset.checkFeedback=correct?'success':'error';
   markCheckFields(button,correct);
-  sound(correct);if(correct)fireworks();
+  if(correct){checkVoice('correct');fireworks()}else{shakePage(button);checkVoice(classifyFailure(button))}
   button.dispatchEvent(new CustomEvent('check-feedback',{bubbles:true,detail:{correct,answers:registry.get(button)??Object.fromEntries(keyedFields(button).items.map(i=>[i.field.id,i.field.answer]))}}));
  };
  const observer=new MutationObserver(()=>{cancelAnimationFrame(frame);frame=requestAnimationFrame(evaluate)});

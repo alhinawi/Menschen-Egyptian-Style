@@ -1,1 +1,1328 @@
-{"blocks":[{"x":134,"w":144,"cy":287.0,"f":18.9,"b":1,"sa":0,"ws":[{"t":"Wer","c":"#201f1d","ph":"Wer kann was?"},{"t":"kann","c":"#201f1d","ph":"Wer kann was?"},{"t":"was?","c":"#201f1d","ph":"Wer kann was?"}]},{"x":135,"w":520,"cy":335.2,"f":17.2,"b":1,"sa":0,"ws":[{"t":"Verstehen","c":"#201f1d","ph":"Verstehen Sie ein Wort nicht? Sehen Sie im Bildlexikon nach."},{"t":"Sie","c":"#201f1d","ph":"Verstehen Sie ein Wort nicht? Sehen Sie im Bildlexikon nach."},{"t":"ein","c":"#201f1d","ph":"Verstehen Sie ein Wort nicht? Sehen Sie im Bildlexikon nach."},{"t":"Wort","c":"#201f1d","ph":"Verstehen Sie ein Wort nicht? Sehen Sie im Bildlexikon nach."},{"t":"nicht?","c":"#201f1d","ph":"Verstehen Sie ein Wort nicht? Sehen Sie im Bildlexikon nach."},{"t":"Sehen","c":"#201f1d","ph":"Verstehen Sie ein Wort nicht? Sehen Sie im Bildlexikon nach."},{"t":"Sie","c":"#201f1d","ph":"Verstehen Sie ein Wort nicht? Sehen Sie im Bildlexikon nach."},{"t":"im","c":"#201f1d","ph":"Verstehen Sie ein Wort nicht? Sehen Sie im Bildlexikon nach."},{"t":"Bildlexikon","c":"#201f1d","ph":"Verstehen Sie ein Wort nicht? Sehen Sie im Bildlexikon nach."},{"t":"nach.","c":"#201f1d","ph":"Verstehen Sie ein Wort nicht? Sehen Sie im Bildlexikon nach."}]},{"x":136,"w":211,"cy":311.2,"f":19.3,"b":1,"sa":1,"ws":[{"t":"Fragen","c":"#201f1d","ph":"Fragen Sie Ihre Partnerin / Ihren Partner und ergänzen Sie."},{"t":"Sie","c":"#201f1d","ph":"Fragen Sie Ihre Partnerin / Ihren Partner und ergänzen Sie."},{"t":"Ihre","c":"#201f1d","ph":"Fragen Sie Ihre Partnerin / Ihren Partner und ergänzen Sie."},{"t":"Partnerin","c":"#201f1d","ph":"Fragen Sie Ihre Partnerin / Ihren Partner und ergänzen Sie."}]},{"x":371,"w":269,"cy":311.2,"f":19.3,"b":1,"sa":1,"ws":[{"t":"Ihren","c":"#201f1d","ph":"Fragen Sie Ihre Partnerin / Ihren Partner und ergänzen Sie."},{"t":"Partner","c":"#201f1d","ph":"Fragen Sie Ihre Partnerin / Ihren Partner und ergänzen Sie."},{"t":"und","c":"#201f1d","ph":"Fragen Sie Ihre Partnerin / Ihren Partner und ergänzen Sie."},{"t":"ergänzen","c":"#201f1d","ph":"Fragen Sie Ihre Partnerin / Ihren Partner und ergänzen Sie."},{"t":"Sie.","c":"#201f1d","ph":"Fragen Sie Ihre Partnerin / Ihren Partner und ergänzen Sie."}]},{"x":139,"w":61,"cy":690.0,"f":18,"b":0,"sa":0,"ws":[{"t":"malen","c":"#201f1d"}],"sb":1},{"x":140,"w":69,"cy":897.0,"f":18,"b":0,"sa":0,"ws":[{"t":"backen","c":"#201f1d"}],"sb":1},{"x":147,"w":59,"cy":591.0,"f":18,"b":0,"sa":0,"ws":[{"t":"kochen","c":"#201f1d"}],"sb":1},{"x":148,"w":54,"cy":647.0,"f":18,"b":0,"sa":0,"ws":[{"t":"singen","c":"#201f1d"}],"sb":1},{"x":150,"w":58,"cy":735.5,"f":18,"b":0,"sa":0,"ws":[{"t":"Schach","c":"#201f1d"}],"sb":1},{"x":150,"w":59,"cy":757.0,"f":18,"b":0,"sa":0,"ws":[{"t":"spielen","c":"#201f1d"}],"sb":1},{"x":151,"w":86,"cy":795.0,"f":18,"b":0,"sa":0,"ws":[{"t":"Ski","c":"#201f1d","ph":"Ski fahren toll"},{"t":"fahren","c":"#201f1d","ph":"Ski fahren toll"}],"sb":1},{"x":259,"w":27.3,"cy":795.0,"f":18,"b":0,"sa":0,"ws":[{"t":"toll","c":"#201f1d","ph":"Ski fahren toll"}],"sb":0},{"x":153,"w":58,"cy":942.5,"f":18,"b":0,"sa":0,"ws":[{"t":"Gitarre","c":"#201f1d"}],"sb":1},{"x":154,"w":58,"cy":962.0,"f":18,"b":0,"sa":0,"ws":[{"t":"spielen","c":"#201f1d"}],"sb":1},{"x":156,"w":127,"cy":1462.0,"f":19.4,"b":0,"sa":0,"ws":[{"t":"sechsundachtzig","c":"#201f1d"}]},{"x":201,"w":155,"cy":375.5,"f":19.5,"b":0,"sa":0,"ws":[{"t":"Kann","c":"#201f1d","ph":"Kann Leo kochen?"},{"t":"Leo","c":"#201f1d","ph":"Kann Leo kochen?"},{"t":"kochen?","c":"#201f1d","ph":"Kann Leo kochen?"}]},{"x":201,"w":309,"cy":401.0,"f":21.0,"b":0,"sa":0,"ws":[{"t":"Nein,","c":"#201f1d","ph":"Nein, Leo kann nicht so gut kochen."},{"t":"Leo","c":"#201f1d","ph":"Nein, Leo kann nicht so gut kochen."},{"t":"kann","c":"#201f1d","ph":"Nein, Leo kann nicht so gut kochen."},{"t":"nicht","c":"#201f1d","ph":"Nein, Leo kann nicht so gut kochen."},{"t":"so","c":"#201f1d","ph":"Nein, Leo kann nicht so gut kochen."},{"t":"gut","c":"#201f1d","ph":"Nein, Leo kann nicht so gut kochen."},{"t":"kochen.","c":"#201f1d","ph":"Nein, Leo kann nicht so gut kochen."}]},{"x":253,"w":30,"cy":534.5,"f":18,"b":0,"sa":0,"ws":[{"t":"Leo","c":"#201f1d"}],"sb":1},{"x":256,"w":44.4,"cy":645.5,"f":18,"b":0,"sa":0,"ws":[{"t":"super","c":"#201f1d"}],"sb":0},{"x":258,"w":100.8,"cy":742.2,"f":18,"b":0,"sa":0,"ws":[{"t":"ein","c":"#201f1d","ph":"ein bisschen"},{"t":"bisschen","c":"#201f1d","ph":"ein bisschen"}],"sb":0},{"x":261,"w":41.0,"cy":896.0,"f":18,"b":0,"sa":0,"ws":[{"t":"nicht","c":"#201f1d"}],"sb":0},{"x":367,"w":52,"cy":551.0,"f":18,"b":0,"sa":0,"ws":[{"t":"Katja","c":"#201f1d"}],"sb":1},{"x":376,"w":78,"cy":527.5,"f":18,"b":0,"sa":0,"ws":[{"t":"Felix","c":"#201f1d","ph":"Felix und Josefine"},{"t":"und","c":"#201f1d","ph":"Felix und Josefine"}],"sb":1},{"x":497,"w":66,"cy":527.5,"f":18,"b":0,"sa":0,"ws":[{"t":"Josefine","c":"#201f1d","ph":"Felix und Josefine"}],"sb":1},{"x":377,"w":44.4,"cy":592.5,"f":18,"b":0,"sa":0,"ws":[{"t":"super","c":"#201f1d"}],"sb":0},{"x":378,"w":72.3,"cy":698.2,"f":18,"b":0,"sa":0,"ws":[{"t":"gar","c":"#201f1d","ph":"gar nicht"},{"t":"nicht","c":"#201f1d","ph":"gar nicht"}],"sb":0},{"x":384,"w":95.7,"cy":948.0,"f":18,"b":0,"sa":0,"ws":[{"t":"nicht","c":"#201f1d","ph":"nicht so gut gar nicht"},{"t":"so","c":"#201f1d","ph":"nicht so gut gar nicht"},{"t":"gut","c":"#201f1d","ph":"nicht so gut gar nicht"}],"sb":0},{"x":505,"w":72.3,"cy":948.0,"f":18,"b":0,"sa":0,"ws":[{"t":"gar","c":"#201f1d","ph":"nicht so gut gar nicht"},{"t":"nicht","c":"#201f1d","ph":"nicht so gut gar nicht"}],"sb":0},{"x":381,"w":26.2,"cy":745.5,"f":18,"b":0,"sa":0,"ws":[{"t":"gut","c":"#201f1d"}],"sb":0},{"x":492,"w":44.4,"cy":689.5,"f":18,"b":0,"sa":0,"ws":[{"t":"super","c":"#201f1d"}],"sb":0},{"x":495,"w":41.0,"cy":840.0,"f":18,"b":0,"sa":0,"ws":[{"t":"nicht","c":"#201f1d"}],"sb":0},{"x":501,"w":65.5,"cy":639.0,"f":18,"b":0,"sa":0,"ws":[{"t":"sehr","c":"#201f1d","ph":"sehr gut"},{"t":"gut","c":"#201f1d","ph":"sehr gut"}],"sb":0},{"x":624,"w":100.8,"cy":685.8,"f":18,"b":0,"sa":0,"ws":[{"t":"ein","c":"#201f1d","ph":"ein bisschen"},{"t":"bisschen","c":"#201f1d","ph":"ein bisschen"}],"sb":0},{"x":625,"w":44.4,"cy":742.5,"f":18,"b":0,"sa":0,"ws":[{"t":"super","c":"#201f1d"}],"sb":0},{"x":626,"w":41.0,"cy":788.5,"f":18,"b":0,"sa":0,"ws":[{"t":"nicht","c":"#201f1d"}],"sb":0},{"x":627,"w":27.3,"cy":839.5,"f":18,"b":0,"sa":0,"ws":[{"t":"toll","c":"#201f1d"}],"sb":0},{"x":865,"w":50,"cy":433.0,"f":18,"b":0,"sa":0,"ws":[{"t":"Meine","c":"#201f1d"}],"sb":1},{"x":865,"w":80,"cy":453.2,"f":18,"b":0,"sa":0,"ws":[{"t":"Partnerin","c":"#201f1d","ph":"Partnerin /"}],"sb":1},{"x":865,"w":42,"cy":473.0,"f":18,"b":0,"sa":0,"ws":[{"t":"Mein","c":"#201f1d"}],"sb":1},{"x":866,"w":62,"cy":493.0,"f":18,"b":0,"sa":0,"ws":[{"t":"Partner","c":"#201f1d"}],"sb":1}],"checks":{},"book":"kb-a11","page":86,"w":1072,"h":1517,"words":[{"t":"/","x":355,"y":304,"w":8,"h":17,"ph":"Fragen Sie Ihre Partnerin / Ihren Partner und ergänzen Sie.","l":2},{"t":"Ich","x":741,"y":428,"w":26,"h":14,"l":36},{"t":"/","x":950,"y":446,"w":9,"h":15,"ph":"Partnerin /","l":38},{"t":"Frau","x":621,"y":519,"w":37,"h":12,"l":30},{"t":"Lehmann","x":621,"y":537,"w":77,"h":14,"l":31},{"t":"Fußball","x":152,"y":820,"w":64,"h":15,"l":11},{"t":"spielen","x":142,"y":845,"w":68,"h":14,"l":5},{"t":"Partner","x":880,"y":269,"w":50,"h":14,"r":0,"ph":"Partner B","l":41},{"t":"B","x":936,"y":269,"w":10,"h":14,"ph":"Partner B","l":41}],"art":[{"src":"assets/book-crops/kb11-p86-0.webp","x":0,"y":0,"w":1072,"h":1517},{"src":"assets/book-crops/kb11-p86-1.webp","x":65,"y":232,"w":212,"h":30},{"src":"assets/book-crops/kb11-p86-2.webp","x":878,"y":264,"w":85,"h":23},{"src":"assets/book-crops/kb11-p86-3.webp","x":176,"y":372,"w":13,"h":37},{"src":"assets/book-crops/kb11-p86-4.webp","x":135,"y":415,"w":854,"h":559},{"src":"assets/book-crops/kb11-p86-5.webp","x":104,"y":1454,"w":36,"h":16}],"paper":"#ffffff","fields":[{"id":"ability-0-2","group":"abilities","kind":"text","label":"Antwort Reihe 1, Person 3","x":500,"y":579,"w":102,"h":29,"ul":true},{"id":"ability-0-3","group":"abilities","kind":"text","label":"Antwort Reihe 1, Person 4","x":624,"y":579,"w":102,"h":29,"ul":true},{"id":"ability-0-4","group":"abilities","kind":"text","label":"Antwort Reihe 1, Person 5","x":744,"y":579,"w":102,"h":29,"ul":true},{"id":"ability-0-5","group":"abilities","kind":"text","label":"Antwort Reihe 1, Person 6","x":865,"y":579,"w":102,"h":29,"ul":true},{"id":"ability-1-1","group":"abilities","kind":"text","label":"Antwort Reihe 2, Person 2","x":380,"y":631,"w":102,"h":29,"ul":true},{"id":"ability-1-3","group":"abilities","kind":"text","label":"Antwort Reihe 2, Person 4","x":624,"y":631,"w":102,"h":29,"ul":true},{"id":"ability-1-4","group":"abilities","kind":"text","label":"Antwort Reihe 2, Person 5","x":744,"y":631,"w":102,"h":29,"ul":true},{"id":"ability-1-5","group":"abilities","kind":"text","label":"Antwort Reihe 2, Person 6","x":865,"y":631,"w":102,"h":29,"ul":true},{"id":"ability-2-0","group":"abilities","kind":"text","label":"Antwort Reihe 3, Person 1","x":257,"y":682,"w":102,"h":29,"ul":true},{"id":"ability-2-4","group":"abilities","kind":"text","label":"Antwort Reihe 3, Person 5","x":744,"y":682,"w":102,"h":29,"ul":true},{"id":"ability-2-5","group":"abilities","kind":"text","label":"Antwort Reihe 3, Person 6","x":865,"y":682,"w":102,"h":29,"ul":true},{"id":"ability-3-2","group":"abilities","kind":"text","label":"Antwort Reihe 4, Person 3","x":500,"y":733,"w":102,"h":29,"ul":true},{"id":"ability-3-4","group":"abilities","kind":"text","label":"Antwort Reihe 4, Person 5","x":744,"y":733,"w":102,"h":29,"ul":true},{"id":"ability-3-5","group":"abilities","kind":"text","label":"Antwort Reihe 4, Person 6","x":865,"y":733,"w":102,"h":29,"ul":true},{"id":"ability-4-1","group":"abilities","kind":"text","label":"Antwort Reihe 5, Person 2","x":380,"y":785,"w":102,"h":29,"ul":true},{"id":"ability-4-2","group":"abilities","kind":"text","label":"Antwort Reihe 5, Person 3","x":500,"y":785,"w":102,"h":29,"ul":true},{"id":"ability-4-4","group":"abilities","kind":"text","label":"Antwort Reihe 5, Person 5","x":744,"y":785,"w":102,"h":29,"ul":true},{"id":"ability-4-5","group":"abilities","kind":"text","label":"Antwort Reihe 5, Person 6","x":865,"y":785,"w":102,"h":29,"ul":true},{"id":"ability-5-0","group":"abilities","kind":"text","label":"Antwort Reihe 6, Person 1","x":257,"y":836,"w":102,"h":29,"ul":true},{"id":"ability-5-1","group":"abilities","kind":"text","label":"Antwort Reihe 6, Person 2","x":380,"y":836,"w":102,"h":29,"ul":true},{"id":"ability-5-4","group":"abilities","kind":"text","label":"Antwort Reihe 6, Person 5","x":744,"y":836,"w":102,"h":29,"ul":true},{"id":"ability-5-5","group":"abilities","kind":"text","label":"Antwort Reihe 6, Person 6","x":865,"y":836,"w":102,"h":29,"ul":true},{"id":"ability-6-1","group":"abilities","kind":"text","label":"Antwort Reihe 7, Person 2","x":380,"y":887,"w":102,"h":29,"ul":true},{"id":"ability-6-2","group":"abilities","kind":"text","label":"Antwort Reihe 7, Person 3","x":500,"y":887,"w":102,"h":29,"ul":true},{"id":"ability-6-3","group":"abilities","kind":"text","label":"Antwort Reihe 7, Person 4","x":624,"y":887,"w":102,"h":29,"ul":true},{"id":"ability-6-4","group":"abilities","kind":"text","label":"Antwort Reihe 7, Person 5","x":744,"y":887,"w":102,"h":29,"ul":true},{"id":"ability-6-5","group":"abilities","kind":"text","label":"Antwort Reihe 7, Person 6","x":865,"y":887,"w":102,"h":29,"ul":true},{"id":"ability-7-0","group":"abilities","kind":"text","label":"Antwort Reihe 8, Person 1","x":257,"y":939,"w":102,"h":29,"ul":true},{"id":"ability-7-3","group":"abilities","kind":"text","label":"Antwort Reihe 8, Person 4","x":624,"y":939,"w":102,"h":29,"ul":true},{"id":"ability-7-4","group":"abilities","kind":"text","label":"Antwort Reihe 8, Person 5","x":744,"y":939,"w":102,"h":29,"ul":true},{"id":"ability-7-5","group":"abilities","kind":"text","label":"Antwort Reihe 8, Person 6","x":865,"y":939,"w":102,"h":29,"ul":true}],"audio":[],"review":{"status":"verified","notes":["All printed words reviewed against the scan; merged cells (ein bisschen, Ski fahren, nicht so gut) split and verified manually.","Handwritten pen entry 'nicht so gut' in the kochen/Leo cell excluded (learner annotation).","No fields: info-gap table with open partner answers. No audio marker printed."],"verifiedWords":84}}
+{
+ "blocks": [
+  {
+   "x": 134,
+   "w": 144,
+   "cy": 287.0,
+   "f": 18.9,
+   "b": 1,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Wer",
+     "c": "#201f1d",
+     "ph": "Wer kann was?"
+    },
+    {
+     "t": "kann",
+     "c": "#201f1d",
+     "ph": "Wer kann was?"
+    },
+    {
+     "t": "was?",
+     "c": "#201f1d",
+     "ph": "Wer kann was?"
+    }
+   ]
+  },
+  {
+   "x": 135,
+   "w": 520,
+   "cy": 335.2,
+   "f": 17.2,
+   "b": 1,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Verstehen",
+     "c": "#201f1d",
+     "ph": "Verstehen Sie ein Wort nicht? Sehen Sie im Bildlexikon nach."
+    },
+    {
+     "t": "Sie",
+     "c": "#201f1d",
+     "ph": "Verstehen Sie ein Wort nicht? Sehen Sie im Bildlexikon nach."
+    },
+    {
+     "t": "ein",
+     "c": "#201f1d",
+     "ph": "Verstehen Sie ein Wort nicht? Sehen Sie im Bildlexikon nach."
+    },
+    {
+     "t": "Wort",
+     "c": "#201f1d",
+     "ph": "Verstehen Sie ein Wort nicht? Sehen Sie im Bildlexikon nach."
+    },
+    {
+     "t": "nicht?",
+     "c": "#201f1d",
+     "ph": "Verstehen Sie ein Wort nicht? Sehen Sie im Bildlexikon nach."
+    },
+    {
+     "t": "Sehen",
+     "c": "#201f1d",
+     "ph": "Verstehen Sie ein Wort nicht? Sehen Sie im Bildlexikon nach."
+    },
+    {
+     "t": "Sie",
+     "c": "#201f1d",
+     "ph": "Verstehen Sie ein Wort nicht? Sehen Sie im Bildlexikon nach."
+    },
+    {
+     "t": "im",
+     "c": "#201f1d",
+     "ph": "Verstehen Sie ein Wort nicht? Sehen Sie im Bildlexikon nach."
+    },
+    {
+     "t": "Bildlexikon",
+     "c": "#201f1d",
+     "ph": "Verstehen Sie ein Wort nicht? Sehen Sie im Bildlexikon nach."
+    },
+    {
+     "t": "nach.",
+     "c": "#201f1d",
+     "ph": "Verstehen Sie ein Wort nicht? Sehen Sie im Bildlexikon nach."
+    }
+   ]
+  },
+  {
+   "x": 136,
+   "w": 211,
+   "cy": 311.2,
+   "f": 19.3,
+   "b": 1,
+   "sa": 1,
+   "ws": [
+    {
+     "t": "Fragen",
+     "c": "#201f1d",
+     "ph": "Fragen Sie Ihre Partnerin / Ihren Partner und ergänzen Sie."
+    },
+    {
+     "t": "Sie",
+     "c": "#201f1d",
+     "ph": "Fragen Sie Ihre Partnerin / Ihren Partner und ergänzen Sie."
+    },
+    {
+     "t": "Ihre",
+     "c": "#201f1d",
+     "ph": "Fragen Sie Ihre Partnerin / Ihren Partner und ergänzen Sie."
+    },
+    {
+     "t": "Partnerin",
+     "c": "#201f1d",
+     "ph": "Fragen Sie Ihre Partnerin / Ihren Partner und ergänzen Sie."
+    }
+   ]
+  },
+  {
+   "x": 371,
+   "w": 269,
+   "cy": 311.2,
+   "f": 19.3,
+   "b": 1,
+   "sa": 1,
+   "ws": [
+    {
+     "t": "Ihren",
+     "c": "#201f1d",
+     "ph": "Fragen Sie Ihre Partnerin / Ihren Partner und ergänzen Sie."
+    },
+    {
+     "t": "Partner",
+     "c": "#201f1d",
+     "ph": "Fragen Sie Ihre Partnerin / Ihren Partner und ergänzen Sie."
+    },
+    {
+     "t": "und",
+     "c": "#201f1d",
+     "ph": "Fragen Sie Ihre Partnerin / Ihren Partner und ergänzen Sie."
+    },
+    {
+     "t": "ergänzen",
+     "c": "#201f1d",
+     "ph": "Fragen Sie Ihre Partnerin / Ihren Partner und ergänzen Sie."
+    },
+    {
+     "t": "Sie.",
+     "c": "#201f1d",
+     "ph": "Fragen Sie Ihre Partnerin / Ihren Partner und ergänzen Sie."
+    }
+   ]
+  },
+  {
+   "x": 149,
+   "w": 51,
+   "cy": 693.6,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "malen",
+     "c": "#201f1d"
+    }
+   ],
+   "sb": 1
+  },
+  {
+   "x": 152,
+   "w": 57,
+   "cy": 897.6,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "backen",
+     "c": "#201f1d"
+    }
+   ],
+   "sb": 1
+  },
+  {
+   "x": 147,
+   "w": 59,
+   "cy": 591.6,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "kochen",
+     "c": "#201f1d"
+    }
+   ],
+   "sb": 1
+  },
+  {
+   "x": 149,
+   "w": 53,
+   "cy": 642.6,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "singen",
+     "c": "#201f1d"
+    }
+   ],
+   "sb": 1
+  },
+  {
+   "x": 150,
+   "w": 57,
+   "cy": 733.6,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Schach",
+     "c": "#201f1d"
+    }
+   ],
+   "sb": 1
+  },
+  {
+   "x": 151,
+   "w": 58,
+   "cy": 755.6,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "spielen",
+     "c": "#201f1d"
+    }
+   ],
+   "sb": 1
+  },
+  {
+   "x": 151,
+   "w": 87,
+   "cy": 795.6,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Ski",
+     "c": "#201f1d",
+     "ph": "Ski fahren toll"
+    },
+    {
+     "t": "fahren",
+     "c": "#201f1d",
+     "ph": "Ski fahren toll"
+    }
+   ],
+   "sb": 1
+  },
+  {
+   "x": 259,
+   "w": 27.3,
+   "cy": 795.0,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "toll",
+     "c": "#201f1d",
+     "ph": "Ski fahren toll"
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 153,
+   "w": 58,
+   "cy": 937.6,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Gitarre",
+     "c": "#201f1d"
+    }
+   ],
+   "sb": 1
+  },
+  {
+   "x": 154,
+   "w": 58,
+   "cy": 959.6,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "spielen",
+     "c": "#201f1d"
+    }
+   ],
+   "sb": 1
+  },
+  {
+   "x": 156,
+   "w": 127,
+   "cy": 1462.0,
+   "f": 19.4,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "sechsundachtzig",
+     "c": "#201f1d"
+    }
+   ]
+  },
+  {
+   "x": 201,
+   "w": 155,
+   "cy": 375.5,
+   "f": 19.5,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Kann",
+     "c": "#201f1d",
+     "ph": "Kann Leo kochen?"
+    },
+    {
+     "t": "Leo",
+     "c": "#201f1d",
+     "ph": "Kann Leo kochen?"
+    },
+    {
+     "t": "kochen?",
+     "c": "#201f1d",
+     "ph": "Kann Leo kochen?"
+    }
+   ]
+  },
+  {
+   "x": 201,
+   "w": 309,
+   "cy": 401.0,
+   "f": 21.0,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Nein,",
+     "c": "#201f1d",
+     "ph": "Nein, Leo kann nicht so gut kochen."
+    },
+    {
+     "t": "Leo",
+     "c": "#201f1d",
+     "ph": "Nein, Leo kann nicht so gut kochen."
+    },
+    {
+     "t": "kann",
+     "c": "#201f1d",
+     "ph": "Nein, Leo kann nicht so gut kochen."
+    },
+    {
+     "t": "nicht",
+     "c": "#201f1d",
+     "ph": "Nein, Leo kann nicht so gut kochen."
+    },
+    {
+     "t": "so",
+     "c": "#201f1d",
+     "ph": "Nein, Leo kann nicht so gut kochen."
+    },
+    {
+     "t": "gut",
+     "c": "#201f1d",
+     "ph": "Nein, Leo kann nicht so gut kochen."
+    },
+    {
+     "t": "kochen.",
+     "c": "#201f1d",
+     "ph": "Nein, Leo kann nicht so gut kochen."
+    }
+   ]
+  },
+  {
+   "x": 254,
+   "w": 26,
+   "cy": 531.6,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Leo",
+     "c": "#201f1d"
+    }
+   ],
+   "sb": 1
+  },
+  {
+   "x": 256,
+   "w": 44.4,
+   "cy": 645.5,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "super",
+     "c": "#201f1d"
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 258,
+   "w": 100.8,
+   "cy": 742.2,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "ein",
+     "c": "#201f1d",
+     "ph": "ein bisschen"
+    },
+    {
+     "t": "bisschen",
+     "c": "#201f1d",
+     "ph": "ein bisschen"
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 261,
+   "w": 41.0,
+   "cy": 896.0,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "nicht",
+     "c": "#201f1d"
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 377,
+   "w": 42,
+   "cy": 547.6,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Katja",
+     "c": "#201f1d"
+    }
+   ],
+   "sb": 1
+  },
+  {
+   "x": 376,
+   "w": 78,
+   "cy": 527.6,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Felix",
+     "c": "#201f1d",
+     "ph": "Felix und Josefine"
+    },
+    {
+     "t": "und",
+     "c": "#201f1d",
+     "ph": "Felix und Josefine"
+    }
+   ],
+   "sb": 1
+  },
+  {
+   "x": 498,
+   "w": 65,
+   "cy": 527.6,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Josefine",
+     "c": "#201f1d",
+     "ph": "Felix und Josefine"
+    }
+   ],
+   "sb": 1
+  },
+  {
+   "x": 377,
+   "w": 44.4,
+   "cy": 592.5,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "super",
+     "c": "#201f1d"
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 378,
+   "w": 72.3,
+   "cy": 698.2,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "gar",
+     "c": "#201f1d",
+     "ph": "gar nicht"
+    },
+    {
+     "t": "nicht",
+     "c": "#201f1d",
+     "ph": "gar nicht"
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 384,
+   "w": 95.7,
+   "cy": 948.0,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "nicht",
+     "c": "#201f1d",
+     "ph": "nicht so gut gar nicht"
+    },
+    {
+     "t": "so",
+     "c": "#201f1d",
+     "ph": "nicht so gut gar nicht"
+    },
+    {
+     "t": "gut",
+     "c": "#201f1d",
+     "ph": "nicht so gut gar nicht"
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 505,
+   "w": 72.3,
+   "cy": 948.0,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "gar",
+     "c": "#201f1d",
+     "ph": "nicht so gut gar nicht"
+    },
+    {
+     "t": "nicht",
+     "c": "#201f1d",
+     "ph": "nicht so gut gar nicht"
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 379,
+   "w": 25,
+   "cy": 742.1,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "gut",
+     "c": "#201f1d"
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 502,
+   "w": 41,
+   "cy": 689.1,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "super",
+     "c": "#201f1d"
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 495,
+   "w": 41.0,
+   "cy": 840.0,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "nicht",
+     "c": "#201f1d"
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 501,
+   "w": 65.5,
+   "cy": 639.0,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "sehr",
+     "c": "#201f1d",
+     "ph": "sehr gut"
+    },
+    {
+     "t": "gut",
+     "c": "#201f1d",
+     "ph": "sehr gut"
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 624,
+   "w": 95,
+   "cy": 686.4,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "ein",
+     "c": "#201f1d",
+     "ph": "ein bisschen"
+    },
+    {
+     "t": "bisschen",
+     "c": "#201f1d",
+     "ph": "ein bisschen"
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 625,
+   "w": 44.4,
+   "cy": 742.5,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "super",
+     "c": "#201f1d"
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 626,
+   "w": 41.0,
+   "cy": 788.5,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "nicht",
+     "c": "#201f1d"
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 627,
+   "w": 27.3,
+   "cy": 839.5,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "toll",
+     "c": "#201f1d"
+    }
+   ],
+   "sb": 0
+  },
+  {
+   "x": 865,
+   "w": 49,
+   "cy": 432.6,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Meine",
+     "c": "#201f1d"
+    }
+   ],
+   "sb": 1
+  },
+  {
+   "x": 865,
+   "w": 80,
+   "cy": 452.6,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Partnerin",
+     "c": "#201f1d",
+     "ph": "Partnerin /"
+    }
+   ],
+   "sb": 1
+  },
+  {
+   "x": 865,
+   "w": 43,
+   "cy": 472.6,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Mein",
+     "c": "#201f1d"
+    }
+   ],
+   "sb": 1
+  },
+  {
+   "x": 865,
+   "w": 63,
+   "cy": 491.6,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Partner",
+     "c": "#201f1d"
+    }
+   ],
+   "sb": 1
+  },
+  {
+   "x": 152,
+   "w": 63,
+   "cy": 835.8,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "Fußball",
+     "c": "#201f1d"
+    }
+   ],
+   "sb": 1
+  },
+  {
+   "x": 152,
+   "w": 58,
+   "cy": 857.8,
+   "f": 18,
+   "b": 0,
+   "sa": 0,
+   "ws": [
+    {
+     "t": "spielen",
+     "c": "#201f1d"
+    }
+   ],
+   "sb": 1
+  }
+ ],
+ "checks": {
+  "abilities": [
+   460,
+   985
+  ]
+ },
+ "book": "kb-a11",
+ "page": 86,
+ "w": 1072,
+ "h": 1517,
+ "words": [
+  {
+   "t": "/",
+   "x": 355,
+   "y": 304,
+   "w": 8,
+   "h": 17,
+   "ph": "Fragen Sie Ihre Partnerin / Ihren Partner und ergänzen Sie.",
+   "l": 2
+  },
+  {
+   "t": "Ich",
+   "x": 741,
+   "y": 428,
+   "w": 26,
+   "h": 14,
+   "l": 36
+  },
+  {
+   "t": "/",
+   "x": 950,
+   "y": 446,
+   "w": 9,
+   "h": 15,
+   "ph": "Partnerin /",
+   "l": 38
+  },
+  {
+   "t": "Frau",
+   "x": 621,
+   "y": 519,
+   "w": 37,
+   "h": 12,
+   "l": 30
+  },
+  {
+   "t": "Lehmann",
+   "x": 621,
+   "y": 537,
+   "w": 77,
+   "h": 14,
+   "l": 31
+  },
+  {
+   "t": "Fußball",
+   "x": 152,
+   "y": 820,
+   "w": 64,
+   "h": 15,
+   "l": 11
+  },
+  {
+   "t": "spielen",
+   "x": 142,
+   "y": 845,
+   "w": 68,
+   "h": 14,
+   "l": 5
+  },
+  {
+   "t": "Partner",
+   "x": 880,
+   "y": 269,
+   "w": 50,
+   "h": 14,
+   "r": 0,
+   "ph": "Partner B",
+   "l": 41
+  },
+  {
+   "t": "B",
+   "x": 936,
+   "y": 269,
+   "w": 10,
+   "h": 14,
+   "ph": "Partner B",
+   "l": 41
+  }
+ ],
+ "art": [
+  {
+   "src": "assets/book-crops/kb11-p86-0.webp",
+   "x": 0,
+   "y": 0,
+   "w": 1072,
+   "h": 1517
+  },
+  {
+   "src": "assets/book-crops/kb11-p86-1.webp",
+   "x": 65,
+   "y": 232,
+   "w": 212,
+   "h": 30
+  },
+  {
+   "src": "assets/book-crops/kb11-p86-2.webp",
+   "x": 878,
+   "y": 264,
+   "w": 85,
+   "h": 23
+  },
+  {
+   "src": "assets/book-crops/kb11-p86-3.webp",
+   "x": 176,
+   "y": 372,
+   "w": 13,
+   "h": 37
+  },
+  {
+   "src": "assets/book-crops/kb11-p86-4.webp",
+   "x": 135,
+   "y": 415,
+   "w": 854,
+   "h": 559
+  },
+  {
+   "src": "assets/book-crops/kb11-p86-5.webp",
+   "x": 104,
+   "y": 1454,
+   "w": 36,
+   "h": 16
+  }
+ ],
+ "paper": "#ffffff",
+ "fields": [
+  {
+   "id": "ability-0-2",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 1, Person 3",
+   "x": 500,
+   "y": 579,
+   "w": 102,
+   "h": 29,
+   "ul": true,
+   "answer": "toll"
+  },
+  {
+   "id": "ability-0-3",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 1, Person 4",
+   "x": 624,
+   "y": 579,
+   "w": 102,
+   "h": 29,
+   "ul": true,
+   "answer": "gar nicht"
+  },
+  {
+   "id": "ability-0-4",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 1, Person 5",
+   "x": 744,
+   "y": 579,
+   "w": 102,
+   "h": 29,
+   "ul": true
+  },
+  {
+   "id": "ability-0-5",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 1, Person 6",
+   "x": 865,
+   "y": 579,
+   "w": 102,
+   "h": 29,
+   "ul": true
+  },
+  {
+   "id": "ability-1-1",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 2, Person 2",
+   "x": 380,
+   "y": 631,
+   "w": 102,
+   "h": 29,
+   "ul": true,
+   "answer": "nicht"
+  },
+  {
+   "id": "ability-1-3",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 2, Person 4",
+   "x": 624,
+   "y": 631,
+   "w": 102,
+   "h": 29,
+   "ul": true,
+   "answer": "sehr gut"
+  },
+  {
+   "id": "ability-1-4",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 2, Person 5",
+   "x": 744,
+   "y": 631,
+   "w": 102,
+   "h": 29,
+   "ul": true
+  },
+  {
+   "id": "ability-1-5",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 2, Person 6",
+   "x": 865,
+   "y": 631,
+   "w": 102,
+   "h": 29,
+   "ul": true
+  },
+  {
+   "id": "ability-2-0",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 3, Person 1",
+   "x": 257,
+   "y": 682,
+   "w": 102,
+   "h": 29,
+   "ul": true,
+   "answer": "gar nicht"
+  },
+  {
+   "id": "ability-2-4",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 3, Person 5",
+   "x": 744,
+   "y": 682,
+   "w": 102,
+   "h": 29,
+   "ul": true
+  },
+  {
+   "id": "ability-2-5",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 3, Person 6",
+   "x": 865,
+   "y": 682,
+   "w": 102,
+   "h": 29,
+   "ul": true
+  },
+  {
+   "id": "ability-3-2",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 4, Person 3",
+   "x": 500,
+   "y": 733,
+   "w": 102,
+   "h": 29,
+   "ul": true,
+   "answer": "gar nicht"
+  },
+  {
+   "id": "ability-3-4",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 4, Person 5",
+   "x": 744,
+   "y": 733,
+   "w": 102,
+   "h": 29,
+   "ul": true
+  },
+  {
+   "id": "ability-3-5",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 4, Person 6",
+   "x": 865,
+   "y": 733,
+   "w": 102,
+   "h": 29,
+   "ul": true
+  },
+  {
+   "id": "ability-4-1",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 5, Person 2",
+   "x": 380,
+   "y": 785,
+   "w": 102,
+   "h": 29,
+   "ul": true,
+   "answer": "nicht"
+  },
+  {
+   "id": "ability-4-2",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 5, Person 3",
+   "x": 500,
+   "y": 785,
+   "w": 102,
+   "h": 29,
+   "ul": true,
+   "answer": "super"
+  },
+  {
+   "id": "ability-4-4",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 5, Person 5",
+   "x": 744,
+   "y": 785,
+   "w": 102,
+   "h": 29,
+   "ul": true
+  },
+  {
+   "id": "ability-4-5",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 5, Person 6",
+   "x": 865,
+   "y": 785,
+   "w": 102,
+   "h": 29,
+   "ul": true
+  },
+  {
+   "id": "ability-5-0",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 6, Person 1",
+   "x": 257,
+   "y": 836,
+   "w": 102,
+   "h": 29,
+   "ul": true,
+   "answer": "sehr gut"
+  },
+  {
+   "id": "ability-5-1",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 6, Person 2",
+   "x": 380,
+   "y": 836,
+   "w": 102,
+   "h": 29,
+   "ul": true,
+   "answer": "toll"
+  },
+  {
+   "id": "ability-5-4",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 6, Person 5",
+   "x": 744,
+   "y": 836,
+   "w": 102,
+   "h": 29,
+   "ul": true
+  },
+  {
+   "id": "ability-5-5",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 6, Person 6",
+   "x": 865,
+   "y": 836,
+   "w": 102,
+   "h": 29,
+   "ul": true
+  },
+  {
+   "id": "ability-6-1",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 7, Person 2",
+   "x": 380,
+   "y": 887,
+   "w": 102,
+   "h": 29,
+   "ul": true,
+   "answer": "gut"
+  },
+  {
+   "id": "ability-6-2",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 7, Person 3",
+   "x": 500,
+   "y": 887,
+   "w": 102,
+   "h": 29,
+   "ul": true,
+   "answer": "ein bisschen"
+  },
+  {
+   "id": "ability-6-3",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 7, Person 4",
+   "x": 624,
+   "y": 887,
+   "w": 102,
+   "h": 29,
+   "ul": true,
+   "answer": "nicht"
+  },
+  {
+   "id": "ability-6-4",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 7, Person 5",
+   "x": 744,
+   "y": 887,
+   "w": 102,
+   "h": 29,
+   "ul": true
+  },
+  {
+   "id": "ability-6-5",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 7, Person 6",
+   "x": 865,
+   "y": 887,
+   "w": 102,
+   "h": 29,
+   "ul": true
+  },
+  {
+   "id": "ability-7-0",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 8, Person 1",
+   "x": 257,
+   "y": 939,
+   "w": 102,
+   "h": 29,
+   "ul": true,
+   "answer": "gut"
+  },
+  {
+   "id": "ability-7-3",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 8, Person 4",
+   "x": 624,
+   "y": 939,
+   "w": 102,
+   "h": 29,
+   "ul": true,
+   "answer": "gut"
+  },
+  {
+   "id": "ability-7-4",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 8, Person 5",
+   "x": 744,
+   "y": 939,
+   "w": 102,
+   "h": 29,
+   "ul": true
+  },
+  {
+   "id": "ability-7-5",
+   "group": "abilities",
+   "kind": "text",
+   "label": "Antwort Reihe 8, Person 6",
+   "x": 865,
+   "y": 939,
+   "w": 102,
+   "h": 29,
+   "ul": true
+  }
+ ],
+ "audio": [],
+ "review": {
+  "status": "verified",
+  "notes": [
+   "All printed words reviewed against the scan; merged cells (ein bisschen, Ski fahren, nicht so gut) split and verified manually.",
+   "Handwritten pen entry 'nicht so gut' in the kochen/Leo cell excluded (learner annotation).",
+   "No fields: info-gap table with open partner answers. No audio marker printed."
+  ],
+  "verifiedWords": 84
+ },
+ "neutral": [
+  [
+   "t6bown",
+   770,
+   985
+  ]
+ ]
+}

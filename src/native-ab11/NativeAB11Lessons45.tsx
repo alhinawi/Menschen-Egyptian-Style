@@ -59,8 +59,8 @@ export function NativeAB11Lessons45({page}:{page:string}){
  {title('6',756,'Wie sagt man das? Ergänzen Sie. Hören Sie dann.','KB 6')}{listen('20',96,756,'6')}
  {['0,99 €','0,59 €','9,99 €','69,00 €','77,77 €','178,95 €'].map((s,i)=>{const x=i<3?168:520,y=801+(i%3)*39;return <span key={s}>{txt(x,y,21,String.fromCharCode(97+i))}{txt(x+30,y,82,s,'mBank')}{i===0?txt(x+116,y,224,'neunundneunzig Cent','mExample'):i===5?open('u6-f',x+116,y-2,220,42,'6f Preis in Worten'):f('u6-'+String.fromCharCode(97+i),x+116,y-2,i<3?214:220)}</span>})}{check('u6',168,929)}
  {title('7',975,'Was passt zusammen? Ordnen Sie zu und ergänzen Sie.','KB 7')}
- {match('u7match',['Der Sessel ist modern.','Die Lampe ist schön.','Das Bett ist auch nicht schlecht.'],['Sie kommt aus Italien.','Es ist aber sehr klein.','Und er ist praktisch.'],[2,0,1],168,1018,660,28)}
- {txt(168,1160,88,'● der → er','mExample')}{f('u7-sie',365,1158,42)}{txt(411,1160,72,'→ sie')}{f('u7-es',572,1158,42)}{txt(619,1160,72,'→ es')}{check('u7',168,1196)}
+ {match('u7match',['Der Sessel ist modern.','Die Lampe ist schön.','Das Bett ist auch nicht schlecht.'],['Sie kommt aus Italien.','Es ist aber sehr klein.','Und er ist praktisch.'],[2,0,1],168,1018,550,28)}
+ {txt(168,1160,88,'● der → er','mExample')}{txt(346,1158,16,'●','p31DotR')}{f('u7-sie',362,1158,42)}{txt(408,1160,72,'→ sie')}{txt(493,1158,16,'●','p31DotG')}{f('u7-es',509,1158,42)}{txt(555,1160,72,'→ es')}{check('u7',168,1196)}
  {title('8',1240,'Ergänzen Sie.','KB 7')}
  {txt(168,1278,310,'a  ▪ Was kostet denn der Schrank?\n   ▴ Er kostet 799 Euro.','mSmall mExample')}
  {txt(168,1336,35,'b  ▪','mSmall')}{f('u8-b1',206,1334,65)}{txt(278,1336,180,'Sofa ist schön!','mSmall')}{txt(187,1363,25,'▴ Ja,','mSmall')}{f('u8-b2',218,1361,70)}{txt(293,1363,175,'ist nicht schlecht.','mSmall')}
@@ -70,7 +70,7 @@ export function NativeAB11Lessons45({page}:{page:string}){
  </>}
  {page==='32'&&<>
  {head('BASISTRAINING')}{title('9',210,'Schreiben Sie die SMS fertig.','KB 7')}{txt(168,253,405,'praktisch | sehr günstig | 199 Euro | Sonderangebot','mBank')}{art('phone',588,223,229,210)}
- {txt(185,299,392,'Hallo Barbara,\nbin im Möbelhaus. Die Couch hier ist schön, oder?','mSmall')}{['l1','l2','l3'].map((id,i)=>f('u9-'+id,185,350+i*28,370))}{txt(185,443,350,'Kommst Du auch? Brauche Deine Hilfe!\nMarlene','mSmall')}{txt(168,500,370,'Eigene Lösung - keine automatische Bewertung.','mSmall')}
+ {txt(185,299,392,'Hallo Barbara,\nbin im Möbelhaus. Die Couch hier ist schön, oder?','mSmall')}{['l1','l2','l3'].map((id,i)=>f('u9-'+id,185,350+i*28,370))}{txt(185,443,350,'Kommst Du auch? Brauche Deine Hilfe!\nMarlene','mSmall')}{check('u9',168,498,{'u9-l1':'Sie ist praktisch und sehr günstig','u9-l2':'Sie kostet 199 Euro','u9-l3':'Das ist ein Sonderangebot'})}
  {title('10',546,'Schön oder hässlich?','KB 9')}{txt(143,584,380,'a  Notieren Sie die Wörter.','mTitle')}
  {['wersch','hichsäls','galn','nösch','nielk','zurk','orßg','etlich'].map((s,i)=>{const col=i<3?0:i<6?1:2,r=i<3?i:i<6?i-3:i-6,x=168+col*234,y=622+r*28;return <span key={s}>{txt(x,y,110,(i+1)+'  '+s)}{i===0?txt(x+115,y,105,'schwer','mExample'):f('u10a-'+(i+1),x+115,y-2,100)}</span>})}{check('u10a',168,719)}
  {txt(143,766,650,'b  Ergänzen Sie die Wörter aus a.','mTitle')}

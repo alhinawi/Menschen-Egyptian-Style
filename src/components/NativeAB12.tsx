@@ -16,91 +16,102 @@ export function NativeAB12({page}:{page:string}){
  const [scale,ss]=useState(.6);const key='native-ab12-'+page;
  const [values,sv]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return {}}});
  const [results,sr]=useState<Record<string,boolean>>({});
+ const [saved,sn]=useState<Record<string,boolean>>({});
  useLayoutEffect(()=>{const el=root.current!;const obs=new ResizeObserver(()=>ss(Math.min(el.clientWidth/W,(el.clientHeight-38)/H)));obs.observe(el);return ()=>obs.disconnect()},[W,H]);
  usePageReset(page,key,()=>{sv({});sr({})});
  const set=(id:string,v:string)=>{const n={...values,[id]:v};sv(n);localStorage.setItem(key,JSON.stringify(n))};
  const text=(x:number,y:number,w:number,t:string,cls='')=><div className={'naText '+cls} style={{left:x,top:y,width:w}}><Words text={t}/></div>;
+const bank=(x:number,y:number,w:number,parts:[string,boolean][])=><div className={'naText naOpt naNw naBank'} style={{left:x,top:y,width:w}}>{parts.map(([t,strike],i)=><span key={i}>{i>0&&' | '}{strike?<span className="naStrike"><Words text={t}/></span>:<Words text={t}/>}</span>)}</div>;
  const art=(name:string,x:number,y:number,w:number,h:number)=><PageImage className="naArt" src={`assets/book-crops/native-ab12-p${page}-${name}.png`} alt={'Originalillustration '+name} style={{left:x,top:y,width:w,height:h}}/>;
  const field=(id:string,x:number,y:number,w:number,label:string,cls='')=><input className={'naField '+cls} aria-label={label} data-native-field={id} style={{left:x,top:y,width:w}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
  const rule=(x:number,y:number,w:number)=><div className="naRule" style={{left:x,top:y,width:w}}/>;
  const dot=(id:string,value:string,x:number,y:number,label:string,checkbox=false)=><input className="naDot" type={checkbox?'checkbox':'radio'} aria-label={label} data-value={value} name={key+'-'+id} checked={checkbox?values[id]==='true':values[id]===value} onChange={e=>set(id,checkbox?String(e.target.checked):value)} style={{left:x,top:y}}/>;
  const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,t:string,cls='')=><div className={'naTitle '+cls} style={{left:x,top:y,width:w}}><b>{n}</b><Words text={t}/></div>;
+ // p52 Rückblick L18/1: comma/'und' lists graded as exact sets against the official key (order- and article-tolerant).
+ const setList=(s:string)=>s.split(/,|\s+und\s+/i).map(t=>t.normalize('NFC').trim().replace(/^(der|die|das)\s+/i,'').toLocaleLowerCase('de').replace(/[.!?]+$/,'').trim()).filter(Boolean).sort().join(' ');
+ const mark52=(id:string,ok:boolean)=>{root.current?.querySelectorAll(`[data-native-field="${id}"]`).forEach(e=>e.setAttribute('data-check-mark',ok?'ok':'bad'))};
+ const check52t3=(x:number,y:number)=><div className="naCheck naStack" data-check="52-t3" data-check-layout="stack" style={{left:x,top:y}}><CheckButton onClick={()=>{const c1=setList(values['52-t3-c1']||'')===setList('Kopf, Arme, Beine, Hals, Bauch'),c2=setList(values['52-t3-c2']||'')===setList('Rücken, Brust, Hand, Finger, Fuß, Knie, Ohr, Auge, Zahn, Nase, Mund');mark52('52-t3-c1',c1);mark52('52-t3-c2',c2);sr({...results,'52-t3':c1&&c2})}}></CheckButton><output aria-live="polite">{'52-t3' in results?(results['52-t3']?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const save52=(id:string,x:number,y:number)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton onClick={()=>sn(s=>({...s,[id]:true}))}/><output aria-live="polite">{saved[id]?'Gespeichert':''}</output></div>;
  const gl=(x:number,y:number,t:string,bg?:string)=><div className="naGL" style={{left:x,top:y,...(bg?{background:bg}:{})}}>{t}</div>;
  const kb=(x:number,y:number,t:string)=><div className="naKB" style={{left:x,top:y}}>{t}</div>;
  const hand=(x:number,y:number,w:number,t:string)=><div className="naText naHand" style={{left:x,top:y,width:w}}><Words text={t}/></div>;
  const audio=(src:string,x:number,y:number,label:string)=><button className="naAudio" style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
 
- return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}${SCP('.naTitle')}{font-family:FiraSans,sans-serif!important;letter-spacing:0!important;font-size:21px!important}${SCP('.naText')},${SCP('.naBold')},${SCP('.naLet')},${SCP('.naDlg')}{font-family:DroidSerif,Georgia,serif!important;font-size:20px!important;letter-spacing:-0.65px}${SCP('.naField')}{font-family:DroidSerif,Georgia,serif!important;font-size:19px!important;letter-spacing:-0.65px}${SCP('.naText.naS20')}{font-size:18px!important}${SCP('.naSmall')}{font-size:16.5px!important}${SCP('.naD19')}{font-size:17.5px!important}${SCP('.naUrl')}{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='52'] .naText,[data-native-ab12='52'] .naBold,[data-native-ab12='52'] .naLet,[data-native-ab12='52'] .naDlg,[data-native-ab12='52'] .naField{letter-spacing:0!important}[data-native-ab12='52'] .naTitle{font-size:22px!important}[data-native-ab12='52'] .naFoot52{font-size:17px!important;color:#202020!important}[data-native-ab12='52'] .naTitle.naRB b{top:-3px}`}</style><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
+ return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400}@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}${SCP('.naTitle')}{font-family:FiraSans,sans-serif!important;letter-spacing:0!important;font-size:21px!important}${SCP('.naText')},${SCP('.naBold')},${SCP('.naLet')},${SCP('.naDlg')}{font-family:DroidSerif,Georgia,serif!important;font-size:20px!important;letter-spacing:-0.65px}${SCP('.naField')}{font-family:DroidSerif,Georgia,serif!important;font-size:19px!important;letter-spacing:-0.65px}${SCP('.naText.naS20')}{font-size:18px!important}${SCP('.naSmall')}{font-size:16.5px!important}${SCP('.naD19')}{font-size:17.5px!important}${SCP('.naUrl')}{font-size:11.5px!important;font-family:Georgia,serif;color:#333;line-height:13px}[data-native-ab12='52'] .naText,[data-native-ab12='52'] .naBold,[data-native-ab12='52'] .naLet,[data-native-ab12='52'] .naDlg,[data-native-ab12='52'] .naField{letter-spacing:0!important}[data-native-ab12='52'] .naTitle{font-size:22px!important}[data-native-ab12='52'] .naFoot52{font-size:17px!important;color:#202020!important}[data-native-ab12='89'] .naHeadline{font-size:23px!important;letter-spacing:0!important}[data-native-ab12='89'] .naWHead{font-family:FiraSans,sans-serif!important;font-weight:700!important}[data-native-ab12='52'] .naTitle.naRB b{top:-3px}[data-native-ab12='52'] .naField.naList52{font-size:12px!important}[data-native-ab12='52'] .naCheck.naStack{flex-direction:column;align-items:center;gap:4px;width:108px}[data-native-ab12='52'] .naCheck.naStack output{white-space:nowrap;text-align:center}`}</style><div className={'naCanvas'+(W<1000?' naNarrow':'')} style={{width:W,height:H,transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='89'&&<>
   {art('lesson-tab',738,18,62,75)}
-  {text(75,63,300,'LERNWORTSCHATZ','naHeadline')}
-  <div className="naHeadRule" style={{left:388,top:78,width:270}}/>
-  {title('1',78,116,540,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naRB naNw')}
-  {text(96,145,160,'Wetter','naWHead')}
-  {text(396,145,240,'Himmelsrichtungen','naWHead')}
-  {text(396,303,240,'Weitere wichtige Wörter','naWHead')}
-  {text(105,168,150,'Wetter das')}
-  {text(105,187,150,'Gewitter das, -')}
-  {field('89-1-l1',234,187,144,'Gewitter das, - übersetzen')}
-  {text(105,206,150,'Grad das, -e')}
-  {field('89-1-l2',234,206,144,'Grad das, -e übersetzen')}
-  {text(105,226,150,'Nebel der')}
-  {field('89-1-l3',234,226,144,'Nebel der übersetzen')}
-  {text(105,245,150,'Regen der')}
-  {field('89-1-l4',234,245,144,'Regen der übersetzen')}
-  {text(105,265,150,'Schnee der')}
-  {field('89-1-l5',234,265,144,'Schnee der übersetzen')}
-  {text(105,284,150,'Sonne die, -n')}
-  {field('89-1-l6',234,284,144,'Sonne die, -n übersetzen')}
-  {text(105,304,150,'Sturm der, ¨e')}
-  {field('89-1-l7',234,304,144,'Sturm der, ¨e übersetzen')}
-  {text(105,324,150,'Wind der, -e')}
-  {field('89-1-l8',234,324,144,'Wind der, -e übersetzen')}
-  {text(105,343,150,'Wolke die, -n')}
-  {field('89-1-l9',234,343,144,'Wolke die, -n übersetzen')}
-  {text(105,373,150,'regnen, hat')}
-  {text(114,392,150,'geregnet')}
-  {field('89-1-l11',234,392,144,'geregnet übersetzen')}
-  {text(105,412,150,'schneien, hat')}
-  {text(114,431,150,'geschneit')}
-  {field('89-1-l13',234,431,144,'geschneit übersetzen')}
-  {text(105,451,150,'scheinen, hat')}
-  {text(114,470,150,'geschienen')}
-  {field('89-1-l15',234,470,144,'geschienen übersetzen')}
-  {text(105,500,150,'kühl')}
-  {field('89-1-l16',234,500,144,'kühl übersetzen')}
+  {text(75,61,300,'LERNWORTSCHATZ','naHeadline')}
+  <div className="naHeadRule" style={{left:292,top:83,width:364,borderBottom:'2px solid #4a4a45'}}/>
+  {title('1',78,123,540,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','naRB naNw')}
+  {text(96,151,160,'Wetter','naWHead')}
+  {text(396,151,240,'Himmelsrichtungen','naWHead')}
+  {text(396,309,240,'Weitere wichtige Wörter','naWHead')}
+  {text(105,171,150,'Wetter das')}
+  {text(105,190,150,'Gewitter das, -')}
+  {field('89-1-l1',234,190,144,'Gewitter das, - übersetzen')}
+  {text(105,209,150,'Grad das, -e')}
+  {field('89-1-l2',234,209,144,'Grad das, -e übersetzen')}
+  {text(105,229,150,'Nebel der')}
+  {field('89-1-l3',234,229,144,'Nebel der übersetzen')}
+  {text(105,249,150,'Regen der')}
+  {field('89-1-l4',234,249,144,'Regen der übersetzen')}
+  {text(105,268,150,'Schnee der')}
+  {field('89-1-l5',234,268,144,'Schnee der übersetzen')}
+  {text(105,287,150,'Sonne die, -n')}
+  {field('89-1-l6',234,287,144,'Sonne die, -n übersetzen')}
+  {text(105,307,150,'Sturm der, ¨e')}
+  {field('89-1-l7',234,307,144,'Sturm der, ¨e übersetzen')}
+  {text(105,326,150,'Wind der, -e')}
+  {field('89-1-l8',234,326,144,'Wind der, -e übersetzen')}
+  {text(105,345,150,'Wolke die, -n')}
+  {field('89-1-l9',234,345,144,'Wolke die, -n übersetzen')}
+  {text(105,376,150,'regnen, hat')}
+  {text(114,395,150,'geregnet')}
+  {field('89-1-l11',234,395,144,'geregnet übersetzen')}
+  {text(105,415,150,'schneien, hat')}
+  {text(114,434,150,'geschneit')}
+  {field('89-1-l13',234,434,144,'geschneit übersetzen')}
+  {text(105,454,150,'scheinen, hat')}
+  {text(114,473,150,'geschienen')}
+  {field('89-1-l15',234,473,144,'geschienen übersetzen')}
+  {text(105,503,150,'kühl')}
+  {field('89-1-l16',234,503,144,'kühl übersetzen')}
   {text(105,519,150,'neblig')}
   {field('89-1-l17',234,519,144,'neblig übersetzen')}
   {text(105,538,150,'sonnig')}
   {field('89-1-l18',234,538,144,'sonnig übersetzen')}
-  {text(397,168,150,'Himmelsrichtung')}
-  {text(406,187,150,'die, -en')}
-  {field('89-1-r1',505,187,148,'die, -en übersetzen')}
-  {text(396,207,150,'Norden der')}
+  {text(105,557,150,'warm')}
+  {field('89-1-l19',234,557,144,'warm übersetzen')}
+  {text(105,576,150,'windig')}
+  {field('89-1-l20',234,576,144,'windig übersetzen')}
+  {text(397,171,150,'Himmelsrichtung')}
+  {text(406,191,150,'die, -en')}
+  {field('89-1-r1',505,188,148,'die, -en übersetzen')}
+  {text(396,210,150,'Norden der')}
   {field('89-1-r2',505,207,148,'Norden der übersetzen')}
-  {text(396,227,150,'Süden der')}
+  {text(396,230,150,'Süden der')}
   {field('89-1-r3',505,227,148,'Süden der übersetzen')}
-  {text(396,246,150,'Osten der')}
+  {text(396,250,150,'Osten der')}
   {field('89-1-r4',505,246,148,'Osten der übersetzen')}
-  {text(396,265,150,'Westen der')}
-  {field('89-1-r5',505,265,148,'Westen der übersetzen')}
-  {text(396,324,150,'Dach das, ¨er')}
+  {text(396,270,150,'Westen der')}
+  {field('89-1-r5',505,266,148,'Westen der übersetzen')}
+  {text(396,328,150,'Dach das, ¨er')}
   {field('89-1-r6',505,324,148,'Dach das, ¨er übersetzen')}
-  {text(396,344,150,'Frühjahr das, -e')}
+  {text(396,347,150,'Frühjahr das, -e')}
   {field('89-1-r7',505,344,148,'Frühjahr das, -e übersetzen')}
-  {text(396,363,150,'Glas das, ¨er')}
+  {text(396,367,150,'Glas das, ¨er')}
   {field('89-1-r8',505,363,148,'Glas das, ¨er übersetzen')}
-  {text(396,383,150,'Glück das')}
+  {text(396,386,150,'Glück das')}
   {field('89-1-r9',505,383,148,'Glück das übersetzen')}
-  {text(396,402,150,'Himmel der')}
+  {text(396,405,150,'Himmel der')}
   {field('89-1-r10',505,402,148,'Himmel der übersetzen')}
-  {text(396,422,150,'Laune die, -n')}
+  {text(396,421,150,'Laune die, -n')}
   {field('89-1-r11',505,422,148,'Laune die, -n übersetzen')}
-  {text(396,441,150,'Reiseführer')}
-  {text(405,461,150,'der, -')}
+  {text(396,444,150,'Reiseführer')}
+  {text(405,460,150,'der, -')}
   {field('89-1-r13',505,461,148,'der, - übersetzen')}
-  {text(396,480,150,'Traum der, ¨e')}
+  {text(396,484,150,'Traum der, ¨e')}
   {field('89-1-r14',505,480,148,'Traum der, ¨e übersetzen')}
   {art('tipp',433,545,136,42)}
   {text(461,550,110,'Suchen Sie','naSmall')}
@@ -108,9 +119,11 @@ export function NativeAB12({page}:{page:string}){
   {art('handwriting',360,605,265,60)}
   {art('strip',665,95,140,915)}
   {title('2',78,686,540,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naRB naNw')}
-  <LinedArea id="89-2-text" values={values} set={set} x={102} tops={[713, 732, 752, 772, 791, 811, 830, 849, 869, 888, 908, 927, 947, 966, 986, 1005]} w={525} boxH={20} label="Notizen" legacyIds={["89-2-0", "89-2-1", "89-2-2", "89-2-3", "89-2-4", "89-2-5", "89-2-6", "89-2-7", "89-2-8", "89-2-9", "89-2-10", "89-2-11", "89-2-12", "89-2-13", "89-2-14", "89-2-15"]}/>
+  <LinedArea id="89-2-text" values={values} set={set} x={106} tops={[713, 732, 752, 772, 791, 811, 830, 849, 869, 888, 908, 927, 947, 966, 986, 1005]} w={546} boxH={20} label="Notizen" legacyIds={["89-2-0", "89-2-1", "89-2-2", "89-2-3", "89-2-4", "89-2-5", "89-2-6", "89-2-7", "89-2-8", "89-2-9", "89-2-10", "89-2-11", "89-2-12", "89-2-13", "89-2-14", "89-2-15"]}/>
   {text(598,1046,150,'neunundachtzig  |  89','naFooter')}
-  {art('modul-tab',722,1038,50,24)}
+  {art('modul-tab',746,1051,54,14)}
+  {save52('89-1',234,620)}
+  {save52('89-2',234,1034)}
  </>}
  {page==='52'&&<>
   <div className="naBand52"/>
@@ -120,7 +133,7 @@ export function NativeAB12({page}:{page:string}){
   <div className="naGRule" style={{left:540,top:186,width:438,height:3,background:'#b5d8b2'}}/>
   {art('mag1',70,216,54,52)}
   {title('1',125,225,780,'Lesen Sie noch einmal Ihre Pläne im Kursbuch auf Seite 31 (Aufgabe 6).','naRB naNw')}
-  {text(165,254,430,'Wann wollen Sie was machen? Schreiben Sie.','naD20')}
+  {text(165,254,600,'Wann wollen Sie was machen? Schreiben Sie.','naD20 naNw')}
   {text(167,291,340,'Im August / Im Sommer ...','naD20')}
   {text(167,316,250,'In zwei Jahren ...','naD20')}
   {text(167,341,250,'In zehn Jahren ...','naD20')}
@@ -129,6 +142,7 @@ export function NativeAB12({page}:{page:string}){
   {field('52-t1-a1',230,371,770,'Eigener Satz 1','naFieldBlank')}
   {field('52-t1-a2',167,404,833,'Eigener Satz 2','naFieldBlank')}
   {field('52-t1-a3',167,429,820,'Eigener Satz 3','naFieldBlank')}
+  {save52('52-t1',880,256)}
   {art('pen1',72,448,49,50)}
   {title('2',122,459,830,'Sie haben 100 000 € gewonnen. Was machen Sie? Schreiben Sie.','naRB naNw')}
   {text(166,498,140,'Reisen?','naD20')}
@@ -140,15 +154,17 @@ export function NativeAB12({page}:{page:string}){
   {field('52-t2-b2',230,574,770,'Eigene Idee 2','naFieldBlank')}
   {field('52-t2-b3',167,606,833,'Eigene Idee 3','naFieldBlank')}
   {field('52-t2-b4',167,634,833,'Eigene Idee 4','naFieldBlank')}
+  {save52('52-t2',880,530)}
   {text(120,689,480,'Wählen Sie eine Aufgabe zu Lektion','naSec naNw')}
   {gl(502,692,'18','#5a9d97')}
   <div className="naGRule" style={{left:534,top:717,width:432,height:3,background:'#a0c4ca'}}/>
   {art('mag2',70,744,48,52)}
   {title('1',119,756,850,'Lesen Sie noch einmal den Ratgeber im Kursbuch auf Seite 35 und notieren Sie.','naRB naNw')}
   {text(162,795,295,'Diese Körperteile stehen im Text:','naD20 naNw')}
-  {field('52-t3-c1',490,793,476,'Körperteile im Text')}
+  {field('52-t3-c1',495,793,467,'Körperteile im Text','naList52')}
   {text(161,821,350,'Diese Körperteile stehen nicht im Text:','naD20 naNw')}
-  {field('52-t3-c2',545,820,421,'Körperteile nicht im Text')}
+  {field('52-t3-c2',550,820,412,'Körperteile nicht im Text','naList52')}
+  {check52t3(968,791)}
   {art('pen2',70,872,46,52)}
   {title('2',117,884,830,'Was machen Sie gegen Stress? Machen Sie Notizen und schreiben\nSie dann einen Ratgeber.','naRB naPre')}
   {text(159,949,170,'Gegen Stress hilft:','naD19 naNw')}
@@ -157,6 +173,7 @@ export function NativeAB12({page}:{page:string}){
   {field('52-t4-d2',167,1100,833,'Eigener Ratgeber 1','naFieldBlank')}
   {field('52-t4-d3',167,1132,833,'Eigener Ratgeber 2','naFieldBlank')}
   {field('52-t4-d4',167,1164,833,'Eigener Ratgeber 3','naFieldBlank')}
+  {save52('52-t4',880,1010)}
   {art('modul',0,1388,72,24)}
   {text(96,1388,220,'52 \u00a0|\u00a0 zweiundfünfzig','naFooter naFoot52')}
  </>}
@@ -216,9 +233,7 @@ export function NativeAB12({page}:{page:string}){
   {kb(78,178,'KB 4')}
   {title('1',130,172,760,'Ergänzen Sie das Gespräch. Schreiben Sie Sätze.','naGB')}
   <div className="naSide" style={{left:75,top:200}}>KOMMUNIKATION</div>
-  {([['sehr nett sein',172,113],['nicht funktionieren',299,158],['sofort kümmern',637,131],['Ihre Hilfe brauchen',783,130]] as [string,number,number][]).map(([t,x,w])=>text(x,215,w,t,'naOpt naNw'))}
-  {text(471,215,160,'für Sie tun können','naOpt naStrike naNw')}
-  {[289,462,635,773].map(x=>text(x,215,12,'|','naOpt'))}
+  {bank(172,215,800,[['sehr nett sein',false],['nicht funktionieren',false],['für Sie tun können',true],['sofort kümmern',false],['Ihre Hilfe brauchen',false]])}
   {text(167,250,22,'■','naSq')}
   {text(189,252,40,'Was','naDlg naNw')}
   {art('hand1',225,246,240,40)}
@@ -246,11 +261,8 @@ export function NativeAB12({page}:{page:string}){
   {kb(78,490,'KB 5')}
   {title('2',130,482,760,'Was bedeuten die Bilder im Hotel? Ordnen Sie zu.','naGB')}
   <div className="naSide" style={{left:75,top:520}}>WÖRTER</div>
-  {([['Föhn',171,42],['Internetverbindung',226,158],['Dusche',491,50],['Klimaanlage',563,97],['Aufzug',673,58],['Minibar',744,52]] as [string,number,number][]).map(([t,x,w])=>text(x,524,w,t,'naOpt naNw'))}
-  {text(397,524,80,'Fernseher','naOpt naStrike naNw')}
-  {[216,389,476,545,665,735,800].map(x=>text(x,524,10,'|','naOpt'))}
-  {([['Schwimmbad',170,109],['Restaurant',293,88],['Radio',395,45],['Tennisplatz',452,92],['Telefon',556,60]] as [string,number,number][]).map(([t,x,w])=>text(x,550,w,t,'naOpt naNw'))}
-  {[283,385,444,548].map(x=>text(x,550,10,'|','naOpt'))}
+  {bank(172,524,800,[['Föhn',false],['Internetverbindung',false],['Fernseher',true],['Dusche',false],['Klimaanlage',false],['Aufzug',false],['Minibar',false]])}
+  {bank(172,550,800,[['Schwimmbad',false],['Restaurant',false],['Radio',false],['Tennisplatz',false],['Telefon',false]])}
   {([['a',0,189],['d',0,409],['g',0,629],['j',0,844],['b',1,189],['e',1,409],['h',1,629],['k',1,844],['c',2,189],['f',2,409],['i',2,629],['l',2,844]] as [string,number,number][]).map(([l,r,x])=>
    <div key={l}>{text(x-26,[585,726,877][r]+4,20,l)}{art('icon-'+l,x,[585,726,877][r],92,92)}</div>)}
   {art('fernseher-hand',175,668,150,34)}
@@ -373,31 +385,33 @@ export function NativeAB12({page}:{page:string}){
   {text(144,639,250,'Weitere wichtige Wörter','naBold')}
   {text(144,663,170,'Ausländer der, -','naS21')}{field('23-1-l13',316,661,189,'Ausländer der, - übersetzen')}
   {text(144,689,160,'Blick der, -e','naS21')}{field('23-1-l14',316,687,189,'Blick der, -e übersetzen')}
-  {text(534,201,170,'Mensch der, -en','naS21')}{field('23-1-r1',635,201,235,'Mensch der, -en übersetzen')}
+  {text(534,201,170,'Mensch der, -en','naS21')}{field('23-1-r1',706,201,164,'Mensch der, -en übersetzen')}
   {text(534,227,150,'Reisebüro','naS21')}
-  {text(545,258,80,'das, -s','naS21')}{field('23-1-r2',635,249,235,'Reisebüro das, -s übersetzen')}
-  {text(534,279,160,'Rezept das, -e','naS21')}{field('23-1-r3',635,278,235,'Rezept das, -e übersetzen')}
-  {text(534,304,150,'Urlaub der','naS21')}{field('23-1-r3b',635,300,235,'Urlaub der übersetzen')}
+  {text(545,258,80,'das, -s','naS21')}{field('23-1-r2',675,249,195,'Reisebüro das, -s übersetzen')}
+  {text(534,279,160,'Rezept das, -e','naS21')}{field('23-1-r3',675,278,195,'Rezept das, -e übersetzen')}
+  {text(534,304,150,'Urlaub der','naS21')}{field('23-1-r3b',675,300,195,'Urlaub der übersetzen')}
   {text(545,333,200,'CH: Ferien die (Pl.)','naGray naS20')}
-  {text(534,356,150,'Wetter das','naS21')}{field('23-1-r4',635,351,235,'Wetter das übersetzen')}
+  {text(534,356,150,'Wetter das','naS21')}{field('23-1-r4',675,351,195,'Wetter das übersetzen')}
   {text(534,394,160,'danken, hat','naS21')}
-  {text(545,420,120,'gedankt','naS21')}{field('23-1-r5',635,416,235,'danken übersetzen')}
+  {text(545,420,120,'gedankt','naS21')}{field('23-1-r5',675,416,195,'danken übersetzen')}
   {text(534,446,160,'fehlen, hat','naS21')}
-  {text(545,472,120,'gefehlt','naS21')}{field('23-1-r6',635,468,235,'fehlen übersetzen')}
+  {text(545,472,120,'gefehlt','naS21')}{field('23-1-r6',675,468,195,'fehlen übersetzen')}
   {text(534,498,160,'gehören, hat','naS21')}
-  {text(545,524,120,'gehört','naS21')}{field('23-1-r7',635,519,235,'gehören übersetzen')}
-  {text(534,562,120,'wichtig','naS21')}{field('23-1-r8',635,557,235,'wichtig übersetzen')}
-  {text(534,601,120,'alle','naS21')}{field('23-1-r9',635,596,235,'alle übersetzen')}
-  {text(534,632,120,'wenig','naS21')}{field('23-1-r10',635,621,235,'wenig übersetzen')}
-  {text(534,654,120,'zu Hause','naS21')}{field('23-1-r11',635,647,235,'zu Hause übersetzen')}
+  {text(545,524,120,'gehört','naS21')}{field('23-1-r7',675,519,195,'gehören übersetzen')}
+  {text(534,562,120,'wichtig','naS21')}{field('23-1-r8',675,557,195,'wichtig übersetzen')}
+  {text(534,601,120,'alle','naS21')}{field('23-1-r9',675,596,195,'alle übersetzen')}
+  {text(534,632,120,'wenig','naS21')}{field('23-1-r10',675,621,195,'wenig übersetzen')}
+  {text(534,654,120,'zu Hause','naS21')}{field('23-1-r11',675,647,195,'zu Hause übersetzen')}
   {art('tipp',146,744,440,104)}
   {text(172,751,400,'Sehen Sie den Lernwortschatz „In der Stadt“ an.','naSmall')}
   {text(172,775,400,'Schließen Sie das Buch.','naSmall')}
   {text(172,799,400,'Schreiben Sie jetzt die Wörter mit Artikel auf.','naSmall')}
   {text(172,823,400,'Wie viele Wörter kennen Sie?','naSmall')}
   {art('handwriting',600,743,125,52)}
+  <div className="naCheck" data-check="23-save" style={{left:740,top:161}}><CheckButton onClick={()=>sn(s=>({...s,['23-save']:true}))}/><output aria-live="polite">{saved['23-save']?'Gespeichert':''}</output></div>
   {title('2',98,895,760,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naOB')}
   <LinedArea id="23-2-text" values={values} set={set} x={150} tops={[931, 957, 983, 1009, 1034, 1060, 1086, 1111, 1137, 1163, 1189, 1215, 1240, 1266, 1292, 1317]} w={545} boxH={27} label="Notizen" legacyIds={["23-2-1", "23-2-2", "23-2-3", "23-2-4", "23-2-5", "23-2-6", "23-2-7", "23-2-8", "23-2-9", "23-2-10", "23-2-11", "23-2-12", "23-2-13", "23-2-14", "23-2-15", "23-2-16"]}/>
+  <div className="naCheck" data-check="23-n-save" style={{left:600,top:900}}><CheckButton onClick={()=>sn(s=>({...s,['23-n-save']:true}))}/><output aria-live="polite">{saved['23-n-save']?'Gespeichert':''}</output></div>
   {art('strip',910,132,145,1218)}
   {text(793,1384,195,'dreiundzwanzig \u00a0|\u00a0 23','naFooter')}
   {art('modul-tab',999,1379,67,27)}

@@ -284,7 +284,7 @@ label.answerCorrect{outline:1px solid #6ca47b;border-radius:4px}
 .meaningHeader button{font-size:13px}
 .meaningPopup h3{font:24px Georgia;margin:20px 0 8px}
 .meaningArabic{font:25px/1.7 'Cairo';margin:8px 0 18px}
-.meaningPopup .selected{background:var(--accent);color:white}
+.meaningPopup .selected{background:var(--accent,#713c46);color:white}
 .meaningPopup small{display:block;color:#717971;font-size:12px;margin-top:10px}
 .tapWord{cursor:pointer}
 .tapWord:hover{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}
@@ -652,6 +652,16 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 /* Keep the related translation controls together on narrow readers. */
 .controls .translationControls{display:inline-flex;align-items:center;justify-content:center;gap:8px;flex-wrap:nowrap}
+/* The old theme slot now holds the profile avatar; it must not leave a gap in the toolbar. */
+.controls [data-react-theme-slot]{display:contents}
+.profileAnchor{position:relative}
+.profilePanel{position:absolute;bottom:calc(100% + 10px);left:0;z-index:60;width:max-content;min-width:230px;max-width:calc(100vw - 24px);box-sizing:border-box;padding:12px 14px;border:1px solid #d8c8a6;border-radius:14px;background:var(--paper,#fffef8);color:var(--ink,#26382e);box-shadow:0 14px 40px #0003;font-family:Georgia,'Times New Roman',serif;font-size:16px;line-height:1.5;text-align:start}
+.profileSection{margin:10px 0 4px;font-size:12px;font-weight:700;letter-spacing:.04em;color:#713c46}
+.profileRow{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:6px 2px;font:inherit;color:inherit;text-align:start}
+button.profileRow{width:100%;border:0;background:none;cursor:pointer;border-radius:8px}
+button.profileRow:hover{background:#f1e9d8}
+.profileSoon{font-size:12px;color:#fffefa;background:#713c46;border-radius:999px;padding:2px 10px;white-space:nowrap}
+.profileState{font-weight:700;white-space:nowrap}
 @media(max-width:550px){
   .controls{gap:6px;padding:6px 5px}
   .controls button,.controls select{min-height:44px;box-sizing:border-box}
@@ -732,6 +742,8 @@ body.readerSplitControls .controls{grid-template-columns:repeat(7,minmax(0,1fr))
 body.readerSplitControls .controls button{min-width:0!important;height:44px;min-height:44px}
 body.readerSplitControls .controls [data-react-theme-slot]{display:contents}
 body.readerSplitControls .controls .themesTrigger{grid-column:1;grid-row:1}
+body.readerSplitControls .controls .profileAnchor{grid-column:1;grid-row:1;display:block;min-width:0;height:44px}
+body.readerSplitControls .controls .profileTrigger{width:100%}
 body.readerSplitControls .controls .soundToggle{grid-column:2;grid-row:1}
 body.readerSplitControls .controls #prev{grid-column:3;grid-row:1}
 body.readerSplitControls .controls .lnv-pagePill{grid-column:4;grid-row:1}
@@ -762,3 +774,5 @@ body.readerSplitControls .controls .lnv-pageSlot{display:contents}
 .nativeAB12[data-native-ab12="27"] .naCanvas input.naDot:checked,
 .nativeAB12[data-native-ab12="98"] .naCanvas input.naDot:checked,
 .nativeAB12[data-native-ab12="99"] .naCanvas input.naDot:checked{border-color:#246e45!important;background:radial-gradient(circle,#246e45 0 45%,#fff 53%)!important}
+.howtoNote{display:none;max-width:660px;width:100%;text-align:right;font:22px/1.6 'Cairo',sans-serif;color:#6a6f75;border-top:1px solid #d8cdb4;padding-top:14px;margin-top:6px}
+body[data-audio="tts"] .howtoTtsNote{display:block}

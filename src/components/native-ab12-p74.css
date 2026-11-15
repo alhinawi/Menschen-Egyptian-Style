@@ -1,0 +1,4 @@
+/* p74 clearance: 14px field boxes sitting on the printed rule, underline-only ok/bad paint */
+.nativeAB12[data-native-ab12="74"] .naCanvas .naField.naClr74{height:14px!important;font-size:12px!important}
+.nativeAB12[data-native-ab12="74"] .naCanvas .naField.naClr74[data-check-mark="ok"]{background:transparent!important;border-color:transparent!important;box-shadow:none!important;border-bottom:2px solid #2f7d4f!important;color:#224777!important}
+.nativeAB12[data-native-ab12="74"] .naCanvas .naField.naClr74[data-check-mark="bad"]{background:transparent!important;border-color:transparent!important;box-shadow:none!important;border-bottom:2px solid #c62f2f!important;color:#224777!important}

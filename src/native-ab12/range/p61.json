@@ -506,6 +506,305 @@
    "g": "g1",
    "x": 580,
    "y": 1280
+  },
+  {
+   "k": "mk",
+   "id": "p61-5a-sie",
+   "x": 295,
+   "y": 533,
+   "w": 32,
+   "h": 28,
+   "g": "s5",
+   "a": "b",
+   "l": "Markieren: 5a sie (Akk.)"
+  },
+  {
+   "k": "mk",
+   "id": "p61-5b-uns",
+   "x": 536,
+   "y": 573,
+   "w": 38,
+   "h": 28,
+   "g": "s5",
+   "a": "b",
+   "l": "Markieren: 5b uns (Akk.)"
+  },
+  {
+   "k": "mk",
+   "id": "p61-5b-euch",
+   "x": 344,
+   "y": 597,
+   "w": 49,
+   "h": 28,
+   "g": "s5",
+   "a": "b",
+   "l": "Markieren: 5b euch (Akk.)"
+  },
+  {
+   "k": "mk",
+   "id": "p61-5c-dir",
+   "x": 275,
+   "y": 636,
+   "w": 33,
+   "h": 28,
+   "g": "s5",
+   "a": "g",
+   "l": "Markieren: 5c dir (Dat.)"
+  },
+  {
+   "k": "mk",
+   "id": "p61-5c-ihn",
+   "x": 270,
+   "y": 661,
+   "w": 37,
+   "h": 28,
+   "g": "s5",
+   "a": "b",
+   "l": "Markieren: 5c ihn (Akk.)"
+  },
+  {
+   "k": "mk",
+   "id": "p61-5d-dich",
+   "x": 379,
+   "y": 701,
+   "w": 45,
+   "h": 28,
+   "g": "s5",
+   "a": "b",
+   "l": "Markieren: 5d dich (Akk.)"
+  },
+  {
+   "k": "mk",
+   "id": "p61-5d-sie",
+   "x": 454,
+   "y": 752,
+   "w": 32,
+   "h": 28,
+   "g": "s5",
+   "a": "b",
+   "l": "Markieren: 5d sie (Akk.)"
+  },
+  {
+   "k": "mk",
+   "id": "p61-5e-Ihnen",
+   "x": 346,
+   "y": 789,
+   "w": 68,
+   "h": 28,
+   "g": "s5",
+   "a": "g",
+   "l": "Markieren: 5e Ihnen (Dat.)"
+  },
+  {
+   "k": "mk",
+   "id": "p61-5e-mir",
+   "x": 328,
+   "y": 818,
+   "w": 44,
+   "h": 28,
+   "g": "s5",
+   "a": "g",
+   "l": "Markieren: 5e mir (Dat.)"
+  },
+  {
+   "k": "mk",
+   "id": "p61-5f-ihr",
+   "x": 595,
+   "y": 855,
+   "w": 34,
+   "h": 28,
+   "g": "s5",
+   "a": "g",
+   "l": "Markieren: 5f ihr (Dat.)"
+  },
+  {
+   "k": "chk",
+   "g": "s5",
+   "x": 30,
+   "y": 880,
+   "stack": true
+  },
+  {
+   "k": "bx",
+   "x": 56,
+   "y": 1481,
+   "w": 960,
+   "h": 372,
+   "bg": "#fdfdfb",
+   "bd": "#b9c0c3"
+  },
+  {
+   "k": "r",
+   "x": 536,
+   "y": 1497,
+   "w": 2,
+   "h": 340,
+   "col": "#e2ddcf"
+  },
+  {
+   "k": "t",
+   "x": 120,
+   "y": 1512,
+   "s": 24,
+   "b": 1,
+   "col": "#2b2b2b",
+   "t": "Problem"
+  },
+  {
+   "k": "t",
+   "x": 590,
+   "y": 1512,
+   "s": 24,
+   "b": 1,
+   "col": "#2b2b2b",
+   "t": "Lösung (Imperativ)"
+  },
+  {
+   "k": "t",
+   "x": 120,
+   "y": 1556,
+   "s": 22,
+   "i": 1,
+   "col": "#3566b5",
+   "t": "Ich habe Hunger."
+  },
+  {
+   "k": "t",
+   "x": 590,
+   "y": 1556,
+   "s": 22,
+   "i": 1,
+   "col": "#3566b5",
+   "t": "Iss etwas!"
+  },
+  {
+   "k": "f",
+   "id": "p61-4-p1",
+   "x": 120,
+   "y": 1626,
+   "w": 380,
+   "hh": 30,
+   "g": "s4",
+   "max": 48,
+   "l": "Problem Kärtchen 1",
+   "c": "p61s4"
+  },
+  {
+   "k": "f",
+   "id": "p61-4-l1",
+   "x": 590,
+   "y": 1626,
+   "w": 380,
+   "hh": 30,
+   "g": "s4",
+   "max": 48,
+   "l": "Lösung Kärtchen 1",
+   "c": "p61s4"
+  },
+  {
+   "k": "f",
+   "id": "p61-4-p2",
+   "x": 120,
+   "y": 1666,
+   "w": 380,
+   "hh": 30,
+   "g": "s4",
+   "max": 48,
+   "l": "Problem Kärtchen 2",
+   "c": "p61s4"
+  },
+  {
+   "k": "f",
+   "id": "p61-4-l2",
+   "x": 590,
+   "y": 1666,
+   "w": 380,
+   "hh": 30,
+   "g": "s4",
+   "max": 48,
+   "l": "Lösung Kärtchen 2",
+   "c": "p61s4"
+  },
+  {
+   "k": "f",
+   "id": "p61-4-p3",
+   "x": 120,
+   "y": 1706,
+   "w": 380,
+   "hh": 30,
+   "g": "s4",
+   "max": 48,
+   "l": "Problem Kärtchen 3",
+   "c": "p61s4"
+  },
+  {
+   "k": "f",
+   "id": "p61-4-l3",
+   "x": 590,
+   "y": 1706,
+   "w": 380,
+   "hh": 30,
+   "g": "s4",
+   "max": 48,
+   "l": "Lösung Kärtchen 3",
+   "c": "p61s4"
+  },
+  {
+   "k": "f",
+   "id": "p61-4-p4",
+   "x": 120,
+   "y": 1746,
+   "w": 380,
+   "hh": 30,
+   "g": "s4",
+   "max": 48,
+   "l": "Problem Kärtchen 4",
+   "c": "p61s4"
+  },
+  {
+   "k": "f",
+   "id": "p61-4-l4",
+   "x": 590,
+   "y": 1746,
+   "w": 380,
+   "hh": 30,
+   "g": "s4",
+   "max": 48,
+   "l": "Lösung Kärtchen 4",
+   "c": "p61s4"
+  },
+  {
+   "k": "f",
+   "id": "p61-4-p5",
+   "x": 120,
+   "y": 1786,
+   "w": 380,
+   "hh": 30,
+   "g": "s4",
+   "max": 48,
+   "l": "Problem Kärtchen 5",
+   "c": "p61s4"
+  },
+  {
+   "k": "f",
+   "id": "p61-4-l5",
+   "x": 590,
+   "y": 1786,
+   "w": 380,
+   "hh": 30,
+   "g": "s4",
+   "max": 48,
+   "l": "Lösung Kärtchen 5",
+   "c": "p61s4"
+  },
+  {
+   "k": "chk",
+   "g": "s4",
+   "x": 856,
+   "y": 1784,
+   "stack": true,
+   "neutral": true
   }
- ]
+ ],
+ "css": "[data-native-ab12='61'] .naCheck.naStack{width:96px}\n.nativeAB12[data-native-ab12='61'] .naRCanvas .naRField.p61s4{font-size:19px!important;background:#fff!important;border:1.5px solid #b9c0c3!important;border-radius:4px;color:#2a4b9c;padding:0 8px}\n.nativeAB12[data-native-ab12='61'] .naRCanvas .naRMk.b{border-bottom-color:#c62f2f}\n\n[data-native-ab12='61'] .naRMk[data-check-mark]{background-color:transparent!important;outline:none!important;box-shadow:none!important}\n[data-native-ab12='61'] .naRMk[data-check-mark='ok']{border-bottom-color:#69bb58!important}\n[data-native-ab12='61'] .naRMk[data-check-mark='bad']{border-bottom-color:#c62f2f!important}"
 }

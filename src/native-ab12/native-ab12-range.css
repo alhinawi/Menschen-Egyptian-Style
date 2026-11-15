@@ -34,8 +34,8 @@
 [data-native-ab12="79"] .naRCanvas,[data-native-ab12="79"] .naRCanvas .naText{font-family:ABRangeDroid,DroidSerif,Georgia,serif}
 [data-native-ab12="79"] .naRField{font-family:ABRangeDroid,DroidSerif,Georgia,serif!important}
 [data-native-ab12="79"] .naRCanvas .naText.naRSans,[data-native-ab12="79"] .naRCanvas .naText.naRSansR{font-family:FiraSans,'Trebuchet MS',sans-serif}
-[data-native-ab12="79"] .naRCanvas .naRS{text-decoration-thickness:3px}
-[data-native-ab12="79"] .naRCanvas .naRS .tapWord{text-decoration:line-through;text-decoration-color:#3566b5;text-decoration-thickness:3px}
+[data-native-ab12="79"] .naRCanvas .naRS{text-decoration-thickness:2px}
+[data-native-ab12="79"] .naRCanvas .naRS .tapWord{text-decoration:line-through;text-decoration-color:#3566b5;text-decoration-thickness:2px}
 [data-native-ab12="79"] .naRCanvas .naHand.naRS .tapWord{text-decoration-color:currentColor;text-decoration-thickness:1.5px}
 
 [data-native-ab12="79"] .naRCanvas .naText:not(.naRSans):not(.naRSansR){-webkit-text-stroke:.22px currentColor}
@@ -156,4 +156,16 @@
 .nativeAB12[data-native-ab12="65"] .naRCanvas .naLined{background:transparent!important;border:0!important;box-shadow:none!important}
 .nativeAB12[data-native-ab12="50"] .naRCanvas .naRField,
 .nativeAB12[data-native-ab12="51"] .naRCanvas .naRField{height:24px!important}
-.nativeAB12[data-native-ab12="49"] .naRCanvas .naRField.naMini{height:22px!important;font-size:16px!important}
+.nativeAB12[data-native-ab12="50"] .naRCanvas .naRField.sl50{height:22px!important}
+.nativeAB12[data-native-ab12="49"] .naRCanvas .naRField.naMini{height:22px!important;font-size:14px!important}
+.nativeAB12[data-native-ab12="79"] .naRCanvas .naRField.sl{border-bottom-color:transparent!important;height:18px!important;font-size:15px!important}
+.nativeAB12[data-native-ab12="79"] .naRCanvas .naRField.sl.lo{height:14px!important;font-size:13px!important}
+/* Check marks on transparent overlay word/mark buttons: keep the printed word readable. */
+.naRCanvas .naRWord[data-check-mark="ok"],.naRCanvas .naRMk[data-check-mark="ok"]{background-color:rgba(47,125,79,.16)!important;outline:1.5px solid #2f7d4f!important;outline-offset:0}
+.naRCanvas .naRWord[data-check-mark="bad"],.naRCanvas .naRMk[data-check-mark="bad"]{background-color:rgba(198,47,47,.14)!important;outline:1.5px solid #c62f2f!important;outline-offset:0}
+/* Stacked check label (data-check-layout="stack"): label below the button for tight white space; placer reserves 26px below. */
+.naRCanvas .naCheck.naStack{flex-direction:column;align-items:center;gap:4px;width:108px}
+.naRCanvas .naCheck.naStack output{white-space:nowrap;text-align:center}
+[data-native-ab12="56"] .naRCanvas .naText.naR.naHand56:not(.naRSans):not(.naRSansR){font-family:'Caveat',cursive!important;font-style:normal;font-weight:600;letter-spacing:.2px}
+@font-face{font-family:'Caveat';src:url('/assets/fonts/caveat-latin.woff2') format('woff2');font-style:normal;font-weight:400 700;font-display:swap}
+.nativeAB12[data-native-ab12="59"] .naRCanvas .naRField{border-bottom-color:transparent!important;background:transparent!important;box-shadow:none!important}

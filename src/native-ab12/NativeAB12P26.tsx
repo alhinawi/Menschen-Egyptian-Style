@@ -37,7 +37,7 @@ export function NativeAB12P26({page}:{page:string}){
   {field('p26-1b',150,238,400,'1b')}{stext(556,243,80,'helfen?')}
   {stext(152,263,135,'Entschuldigung!')}{field('p26-1c',286,262,283,'1c')}{stext(575,263,115,'etwas fragen?')}
   {field('p26-1d',150,286,348,'1d')}{stext(504,291,185,'einen Moment Zeit?')}
-  {check('g1',980,286,{'p26-1a':'Können','p26-1b':'Können Sie mir|Können Sie mir bitte','p26-1c':'Kann ich Sie','p26-1d':'Haben Sie'})}
+  {check('g1',980,286,{'p26-1a':'Entschuldigen','p26-1b':'Können Sie mir|Können Sie mir bitte','p26-1c':'Kann ich Sie','p26-1d':'Haben Sie'})}
   {sect(338,'… nach dem Weg fragen:','L13')}{conf('s2',341)}
   {stext(152,363,65,'Kennen')}{field('p26-2a',217,358,400,'2a')}{stext(621,363,20,'?')}
   {stext(151,387,28,'Wo')}{field('p26-2b',180,382,437,'2b')}{stext(621,387,20,'?')}
@@ -53,7 +53,7 @@ export function NativeAB12P26({page}:{page:string}){
   {sect(603,'… sagen: Ich kenne den Weg nicht:','L13')}{conf('s4',606)}
   {stext(152,627,75,'Nein, tut')}{field('p26-4a',228,622,193,'4a')}{stext(423,627,10,'.')}{field('p26-4b',431,622,246,'4b')}{stext(683,627,55,'fremd')}
   {field('p26-4c',150,646,179,'4c')}{stext(336,651,15,'/')}{field('p26-4d',345,646,339,'4d')}{stext(749,651,80,'von hier.')}
-  {check('g4',980,646,{'p26-4a':'mir leid','p26-4b':'Ich bin|bin','p26-4c':'hier','p26-4d':'Ich bin nicht|bin nicht'})}
+  {check('g4',980,646,{'p26-4a':'mir leid','p26-4b':'Ich bin auch|bin auch|Ich bin|bin','p26-4c':'hier','p26-4d':'Ich bin nicht|bin nicht'})}
   {sect(695,'… Häuser und Wohnungen beschreiben:','L14')}{conf('s5',698)}
   {stext(151,723,115,'Mein Haus ist')}{field('p26-5a',265,718,150,'5a')}{stext(421,723,10,'.')}{stext(431,723,108,'Es hat sieben')}{field('p26-5b',539,718,195,'5b')}{stext(740,723,10,'.')}
   {stext(151,747,25,'Im')}{field('p26-5c',177,742,232,'5c')}{stext(415,747,260,'sind drei Zimmer und im ersten')}

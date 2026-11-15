@@ -1,0 +1,36 @@
+@font-face{font-family:P92Serif;src:url('/assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:P92Sans;src:url('/assets/fonts/firasans-latin-400.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:P92Sans;src:url('/assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700;font-display:swap}
+.ab11p92{position:relative;width:100%;height:100%;background:white}
+.page:has(.ab11p92){padding:0!important}
+.ab11p92Canvas{position:absolute;left:50%;top:50%;width:901px;height:1275px;transform-origin:center;background:#fff;color:#242420;font-family:P92Serif,Georgia,serif}
+.ab11p92Canvas .p92Text{position:absolute;white-space:pre;line-height:1.32;margin:0;padding:0}
+.ab11p92Canvas .p92Sans{font-family:P92Sans,sans-serif}
+.ab11p92Canvas .tapWord{padding:0!important;margin:0!important}
+.ab11p92Canvas .p92Art{position:absolute;max-width:none!important;max-height:none!important;object-fit:fill!important;margin:0!important}
+.ab11p92Canvas .p92Line{position:absolute;height:1px}
+.ab11p92Canvas .p92Highlight{position:absolute;background:#fffdd1}
+.ab11p92Canvas .p92Badge{position:absolute;box-sizing:border-box;background:#e94d12;color:white;border:1px solid #c85627;font:700 21px/19px P92Serif,serif;text-align:center}
+.ab11p92Canvas .p92Side{position:absolute;writing-mode:vertical-rl;transform:rotate(180deg);font:700 10px P92Sans,sans-serif;color:#263f61}
+.ab11p92Canvas .p92Speaker{position:absolute;width:8px;height:8px;background:#080b83}
+.ab11p92Canvas .p92Speaker.green{width:0;height:0;background:transparent;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:9px solid #159e2e}
+.ab11p92Canvas .p92Field{position:absolute;box-sizing:border-box;min-width:0!important;min-height:0!important;max-width:none!important;margin:0!important;border:0!important;border-bottom:1px solid #a5aaa7!important;border-radius:0!important;padding:0 2px!important;font:var(--p92-answer-size,15px)/1.2 P92Serif,serif!important;color:#28496f;background:transparent!important;outline-offset:1px}
+.ab11p92Canvas .p92Field.correct{color:#18773c!important;border-bottom-color:#18773c!important}
+.ab11p92Canvas .p92Field.wrong{color:#b62626!important;border-bottom-color:#b62626!important}
+.ab11p92Canvas .p92Check{position:absolute;display:flex;gap:7px;align-items:center;white-space:nowrap}
+.ab11p92Canvas .p92Check button{min-height:20px!important;font:11px P92Sans,sans-serif;padding:2px 7px!important;margin:0!important;border:1px solid #8b9586;border-radius:3px;background:#fff;color:#31532c}
+.ab11p92Canvas .p92Check output{font:11px P92Sans,sans-serif;color:#555}
+
+.ab11p92Canvas .p92Title [data-word="sein"],.ab11p92Canvas .p92Title [data-word="haben"]{font-style:italic}
+.ab11p92Canvas .p92Text:has([data-word="KB"]){color:#33849c}
+
+.ab11p92Canvas .p92Title [data-word="war"],.ab11p92Canvas .p92Title [data-word="hatte"],.ab11p92Canvas .p92Title [data-word="aus"],.ab11p92Canvas .p92Title [data-word="in"],.ab11p92Canvas .p92Title [data-word="nach"]{font-style:italic}
+.ab11p92Canvas .p92Text:has([data-word="KB"]){color:#33849c}
+.ab11p92Canvas .p92Radio{position:absolute;appearance:none!important;box-sizing:border-box;min-height:0!important;min-width:0!important;max-width:none!important;border:1.5px solid #dedec7!important;border-radius:50%!important;background:transparent!important;padding:0!important;margin:0!important;color:#35549c;cursor:pointer}
+.ab11p92Canvas .p92Radio:checked:after{content:'×';position:absolute;inset:-2px 0 0;font:16px/14px P92Sans;text-align:center;color:currentColor}
+.ab11p92Canvas .p92Radio.correct{color:#18773c!important;border-color:#18773c!important}
+.ab11p92Canvas .p92Radio.wrong{color:#b62626!important;border-color:#b62626!important}
+.ab11p92Canvas .p92Open{resize:none;line-height:18px!important;border-bottom:0!important}
+
+.ab11p92Canvas .p92NotebookField{border:0!important;transform:rotate(-1.2deg);transform-origin:left bottom}
+

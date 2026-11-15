@@ -2,6 +2,7 @@ import {CheckButton} from '../components/CheckButton';
 import {PageImage} from '../components/PageImage';
 import {useLayoutEffect,useRef,useState} from 'react';
 import {usePageReset} from '../exercises/usePageReset';
+import {LinedArea} from '../components/LinedArea';
 import '../components/native-ab12.css';
 import './native-ab12-l13.css';
 
@@ -15,8 +16,9 @@ export function NativeAB12Lesson13({page}:{page:string}){
  const [scale,ss]=useState(.6);const key='native-ab12-'+page;
  const [values,sv]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return {}}});
  const [results,sr]=useState<Record<string,boolean>>({});
+ const [saved,sn]=useState<Record<string,boolean>>({});
  useLayoutEffect(()=>{const el=root.current!;const obs=new ResizeObserver(()=>ss(Math.min(el.clientWidth/W,(el.clientHeight-38)/H)));obs.observe(el);return ()=>obs.disconnect()},[W,H]);
- usePageReset(page,key,()=>{sv({});sr({})});
+ usePageReset(page,key,()=>{sv({});sr({});sn({})});
  const set=(id:string,v:string)=>{const n={...values,[id]:v};sv(n);localStorage.setItem(key,JSON.stringify(n))};
  const text=(x:number,y:number,w:number,t:string,cls='')=><div className={'naText '+cls} style={{left:x,top:y,width:w}}><Words text={t}/></div>;
  const art=(name:string,x:number,y:number,w:number,h:number)=><PageImage className="naArt" src={`assets/book-crops/native-ab12-p${page}-${name}.png`} alt={'Originalillustration '+name} style={{left:x,top:y,width:w,height:h}}/>;
@@ -30,7 +32,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
  const kb=(x:number,y:number,t:string)=><div className="naKB naKBL" style={{left:x,top:y}}>{t}</div>;
  const side=(x:number,y:number,t:string)=><div className="naSide naSideL" style={{left:x,top:y}}>{t}</div>;
  const hand=(x:number,y:number,w:number,t:string)=><div className="naText naHand" style={{left:x,top:y,width:w}}><Words text={t}/></div>;
- const mw=(id:string,t:string)=><button className={'naW9i'+(values[id]==='true'?' on':'')} aria-pressed={values[id]==='true'} aria-label={'Markieren: '+t} onClick={()=>set(id,values[id]==='true'?'false':'true')}>{t}</button>;
+ const mw=(id:string,t:string)=><button className={'naW9i'+(values[id]==='true'?' on':'')} data-native-field={id} data-value={values[id]||'false'} aria-pressed={values[id]==='true'} aria-label={'Markieren: '+t} onClick={()=>set(id,values[id]==='true'?'false':'true')}>{t}</button>;
  const audio=(src:string,x:number,y:number,label:string,task?:string)=><button className="naAudio" data-task={task} style={{left:x,top:y}} aria-label={'Originalaudio '+label+' abspielen'} onClick={()=>{if(player.current){player.current.src=src;player.current.play().catch(()=>{})}}}>▶ {label}</button>;
  const dash=(x:number,y:number,w:number,parts:(string|[string])[])=><div className="naText naS20 naDash naNw" style={{left:x,top:y,width:w}}>{parts.map((p,i)=>Array.isArray(p)?<b key={i}>{p[0]}</b>:<span key={i}>{p}</span>)}</div>;
  const footerL=(n:string,word:string,y:number)=><><div className="naText naFooter" style={{left:76,top:y,width:220}}><b>{n}</b>{'  |  '+word}</div></>;
@@ -50,7 +52,8 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(148,271,20,'c','naLet13')}{text(173,271,420,'Wenden Sie hier.','naS20')}
   {text(148,297,20,'d','naLet13')}{text(173,297,420,'Fahren Sie nach rechts.','naS20')}
   {art('arrow',590,183,75,40)}
-  {rule(594,237,140)}{rule(594,263,140)}{rule(594,290,140)}{rule(594,316,140)}
+  <LinedArea id="6-draw" values={values} set={set} x={594} ruleYs={[237,263,290,316]} w={140} label="Zeichnen Sie"/>
+  <div className="naCheck" data-check="6-draw-save" style={{left:594,top:330}}><CheckButton onClick={()=>sn(s=>({...s,'6-draw-save':true}))}/><output aria-live="polite">{saved['6-draw-save']?'Gespeichert':''}</output></div>
   {kb(56,365,'KB 2')}
   {title('2',106,358,620,'Wo sind die Bälle? Ergänzen Sie.','naYB')}
   {side(68,403,'Wörter')}
@@ -84,7 +87,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {field('6-r5',655,957,105,'Rätsel 5','naFieldBlank')}
   {field('6-r6',655,983,130,'Rätsel 6','naFieldBlank')}
   {art('cafe',655,1010,72,30)}
-  {check('6-3a',660,1050,{'6-r1':'Restaurant','6-r2':'Zentrum','6-r3':'Bahnhof','6-r4':'Bank','6-r5':'Post','6-r6':'Ampel'})}
+  {check('6-3a',912,1010,{'6-r1':'Restaurant','6-r2':'Zentrum','6-r3':'Bahnhof','6-r4':'Bank','6-r5':'Post','6-r6':'Ampel'})}
   {art('globe',52,1052,50,46)}
   {text(115,1066,20,'b','naLet13')}{text(146,1066,460,'Ergänzen Sie die Wörter aus a und vergleichen Sie.','naS20')}
   <div className="na13Band2" style={{left:145,top:1098,width:923,height:34}}/>
@@ -98,6 +101,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(153,1289,20,'6','naS20')}{field('6-d6',178,1285,177,'Deutsch 6','naFieldBlank')}{text(453,1289,170,'traffic light','naS19 naEng')}{field('6-m6',640,1285,415,'Meine Sprache 6','naFieldBlank')}
   {text(143,1316,20,'7','naS20')}{field('6-d7',178,1312,177,'Deutsch 7','naFieldBlank')}{text(453,1316,170,'coffee bar','naS19 naEng')}{field('6-m7',640,1312,415,'Meine Sprache 7','naFieldBlank')}
   {check('6-3b',178,1352,{'6-d2':'Zentrum','6-d3':'Bahnhof','6-d4':'Bank','6-d5':'Post','6-d6':'Ampel','6-d7':'Café'})}
+  <div className="naCheck" data-check="6-ms-save" style={{left:640,top:1352}}><CheckButton onClick={()=>sn(s=>({...s,'6-ms-save':true}))}/><output aria-live="polite">{saved['6-ms-save']?'Gespeichert':''}</output></div>
   {art('modul-tab',0,1403,80,21)}
   {footerL('6','sechs',1404)}
  </>}
@@ -165,6 +169,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   <div className="naRule" style={{left:388,top:520,width:252}}/>
   <div className="naRule" style={{left:388,top:545,width:252}}/>
   <div className="naRule" style={{left:388,top:570,width:252}}/>
+  <LinedArea id="8-7" values={values} set={set} x={388} ruleYs={[520,545,570]} w={252} label="E-Mail: Wegbeschreibung" rules={false}/>
   {text(391,586,300,'Bis Samstag! Viele Grüße, Marina','naS16 naNw')}
   {art('map',745,285,285,320)}
   {kb(56,648,'KB 7')}
@@ -207,6 +212,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   <div className="naBand9w" style={{left:153,top:204,width:649,height:54}}/>
   <div className="naBankRow9" style={{left:159,top:208}}>{mw('9-m-restaurant','Restaurant')}<span className="naPipe9i"/><span className="naW9mi">Bahnhof</span><span className="naPipe9i"/>{mw('9-m-kino','Kino')}<span className="naPipe9i"/>{mw('9-m-dom','Dom')}<span className="naPipe9i"/>{mw('9-m-schwimmbad','Schwimmbad')}<span className="naPipe9i"/>{mw('9-m-post','Post')}<span className="naPipe9i"/>{mw('9-m-bruecke','Brücke')}<span className="naPipe9i"/>{mw('9-m-bank','Bank')}<span className="naPipe9i"/>{mw('9-m-polizei','Polizei')}<span className="naPipe9i"/></div>
   <div className="naBankRow9" style={{left:157,top:235}}>{mw('9-m-ampel','Ampel')}<span className="naPipe9i"/>{mw('9-m-hotel','Hotel')}<span className="naPipe9i"/>{mw('9-m-theater','Theater')}</div>
+  {check('9-1',160,268,{'9-m-dom':'true','9-m-bruecke':'true','9-m-ampel':'true','9-m-restaurant':'false','9-m-kino':'false','9-m-schwimmbad':'false','9-m-post':'false','9-m-bank':'false','9-m-polizei':'false','9-m-hotel':'false','9-m-theater':'false'})}
   <div className="naTipBar" style={{left:454,top:249,width:473,height:4}}/>
   <div className="naTipTab" style={{left:454,top:249,width:13,height:111}}><span>TIPP</span></div>
   {text(487,256,430,'Sie finden das Hören schwer? Achten Sie beim Hören','naTipT naNw')}
@@ -402,8 +408,11 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(542,1133,50,'beide','naVoc naNw')}
   {text(553,1161,95,'die beiden','naVoc naNw')}
   {rl(327,251,190)}{rl(327,303,190)}{rl(327,328,190)}{rl(327,354,190)}{rl(327,380,190)}{rl(327,406,190)}{rl(327,431,190)}{rl(327,457,190)}{rl(327,483,190)}{rl(327,509,190)}{rl(327,535,190)}{rl(327,586,190)}{rl(327,663,190)}{rl(327,689,190)}{rl(327,715,190)}{rl(327,741,190)}{rl(327,766,190)}{rl(327,830,190)}{rl(327,882,190)}{rl(327,933,190)}{rl(327,985,190)}{rl(327,1036,190)}{rl(327,1075,190)}{rl(327,1101,190)}{rl(327,1127,190)}{rl(327,1153,190)}{rl(327,1178,190)}
+  {field('11-a1',327,224,190,'Uebersetzen 1','naFieldBlank')}{field('11-a2',327,276,190,'Uebersetzen 2','naFieldBlank')}{field('11-a3',327,301,190,'Uebersetzen 3','naFieldBlank')}{field('11-a4',327,327,190,'Uebersetzen 4','naFieldBlank')}{field('11-a5',327,353,190,'Uebersetzen 5','naFieldBlank')}{field('11-a6',327,379,190,'Uebersetzen 6','naFieldBlank')}{field('11-a7',327,404,190,'Uebersetzen 7','naFieldBlank')}{field('11-a8',327,430,190,'Uebersetzen 8','naFieldBlank')}{field('11-a9',327,456,190,'Uebersetzen 9','naFieldBlank')}{field('11-a10',327,482,190,'Uebersetzen 10','naFieldBlank')}{field('11-a11',327,508,190,'Uebersetzen 11','naFieldBlank')}{field('11-a12',327,559,190,'Uebersetzen 12','naFieldBlank')}{field('11-a13',327,636,190,'Uebersetzen 13','naFieldBlank')}{field('11-a14',327,662,190,'Uebersetzen 14','naFieldBlank')}{field('11-a15',327,688,190,'Uebersetzen 15','naFieldBlank')}{field('11-a16',327,714,190,'Uebersetzen 16','naFieldBlank')}{field('11-a17',327,739,190,'Uebersetzen 17','naFieldBlank')}{field('11-a18',327,803,190,'Uebersetzen 18','naFieldBlank')}{field('11-a19',327,855,190,'Uebersetzen 19','naFieldBlank')}{field('11-a20',327,906,190,'Uebersetzen 20','naFieldBlank')}{field('11-a21',327,958,190,'Uebersetzen 21','naFieldBlank')}{field('11-a22',327,1009,190,'Uebersetzen 22','naFieldBlank')}{field('11-a23',327,1048,190,'Uebersetzen 23','naFieldBlank')}{field('11-a24',327,1074,190,'Uebersetzen 24','naFieldBlank')}{field('11-a25',327,1100,190,'Uebersetzen 25','naFieldBlank')}{field('11-a26',327,1126,190,'Uebersetzen 26','naFieldBlank')}{field('11-a27',327,1151,190,'Uebersetzen 27','naFieldBlank')}
   {rl(686,251,196)}{rl(686,278,196)}{rl(686,304,196)}{rl(686,354,196)}{rl(686,380,196)}{rl(686,406,196)}{rl(686,432,196)}{rl(686,458,196)}{rl(686,535,196)}{rl(686,561,196)}{rl(686,587,196)}{rl(686,612,196)}{rl(686,638,196)}{rl(686,663,196)}{rl(686,689,196)}{rl(686,715,196)}{rl(686,741,196)}{rl(686,818,196)}{rl(686,844,196)}{rl(686,870,196)}{rl(686,933,196)}{rl(739,985,143)}{rl(739,1010,142)}{rl(686,1063,196)}{rl(686,1114,196)}{rl(686,1153,196)}{rl(686,1178,196)}
+  {field('11-b1',686,224,196,'Uebersetzen 1','naFieldBlank')}{field('11-b2',686,251,196,'Uebersetzen 2','naFieldBlank')}{field('11-b3',686,277,196,'Uebersetzen 3','naFieldBlank')}{field('11-b4',686,327,196,'Uebersetzen 4','naFieldBlank')}{field('11-b5',686,353,196,'Uebersetzen 5','naFieldBlank')}{field('11-b6',686,379,196,'Uebersetzen 6','naFieldBlank')}{field('11-b7',686,405,196,'Uebersetzen 7','naFieldBlank')}{field('11-b8',686,431,196,'Uebersetzen 8','naFieldBlank')}{field('11-b9',686,508,196,'Uebersetzen 9','naFieldBlank')}{field('11-b10',686,534,196,'Uebersetzen 10','naFieldBlank')}{field('11-b11',686,560,196,'Uebersetzen 11','naFieldBlank')}{field('11-b12',686,585,196,'Uebersetzen 12','naFieldBlank')}{field('11-b13',686,611,196,'Uebersetzen 13','naFieldBlank')}{field('11-b14',686,636,196,'Uebersetzen 14','naFieldBlank')}{field('11-b15',686,662,196,'Uebersetzen 15','naFieldBlank')}{field('11-b16',686,688,196,'Uebersetzen 16','naFieldBlank')}{field('11-b17',686,714,196,'Uebersetzen 17','naFieldBlank')}{field('11-b18',686,791,196,'Uebersetzen 18','naFieldBlank')}{field('11-b19',686,817,196,'Uebersetzen 19','naFieldBlank')}{field('11-b20',686,843,196,'Uebersetzen 20','naFieldBlank')}{field('11-b21',686,906,196,'Uebersetzen 21','naFieldBlank')}{field('11-b22',739,958,143,'Uebersetzen 22','naFieldBlank')}{field('11-b23',739,983,142,'Uebersetzen 23','naFieldBlank')}{field('11-b24',686,1036,196,'Uebersetzen 24','naFieldBlank')}{field('11-b25',686,1087,196,'Uebersetzen 25','naFieldBlank')}{field('11-b26',686,1126,196,'Uebersetzen 26','naFieldBlank')}{field('11-b27',686,1151,196,'Uebersetzen 27','naFieldBlank')}
   {rl(928,267,124)}{rl(928,396,124)}{rl(928,519,124)}{rl(928,662,124)}{rl(928,795,124)}{rl(928,922,124)}{rl(928,1069,124)}{rl(928,1211,124)}
+  {field('11-c1',928,240,124,'Bildwort 1','naFieldBlank')}{field('11-c2',928,369,124,'Bildwort 2','naFieldBlank')}{field('11-c3',928,492,124,'Bildwort 3','naFieldBlank')}{field('11-c4',928,635,124,'Bildwort 4','naFieldBlank')}{field('11-c5',928,768,124,'Bildwort 5','naFieldBlank')}{field('11-c6',928,895,124,'Bildwort 6','naFieldBlank')}{field('11-c7',928,1042,124,'Bildwort 7','naFieldBlank')}{field('11-c8',928,1184,124,'Bildwort 8','naFieldBlank')}
   {art('art1',958,160,74,81)}{art('art2',961,304,79,64)}{art('art3',943,434,112,59)}
   {art('art4',964,557,66,78)}{art('art5',959,694,67,82)}{art('art6',929,832,129,66)}
   {art('art7',959,957,79,85)}{art('art8',951,1105,94,98)}{art('art9',954,1244,71,59)}
@@ -414,6 +423,9 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {art('handtext',618,1213,162,77)}{art('hand',742,1215,78,133)}
   {badge9('2',112,1323)}
   {text(155,1320,545,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','naInstr11 naNw')}
+  {field('11-n1',155,1347,430,'Notieren','naFieldBlank')}
+  <div className="naCheck" data-check="11-save" style={{left:725,top:158}}><CheckButton onClick={()=>sn(s=>({...s,'11-save':true}))}/><output aria-live="polite">{saved['11-save']?'Gespeichert':''}</output></div>
+  <div className="naCheck" data-check="11-n-save" style={{left:600,top:1350}}><CheckButton onClick={()=>sn(s=>({...s,'11-n-save':true}))}/><output aria-live="polite">{saved['11-n-save']?'Gespeichert':''}</output></div>
   <div className="naModul9b" style={{left:1003,top:1393,width:68,height:19}}>Modul 5</div>
   <div className="naText naFooter naNw" style={{left:921,top:1388,width:80,whiteSpace:'pre'}}>elf{'  |  '}11</div>
  </>}
@@ -680,6 +692,15 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(362,810,240,'Wohnung 1 (Notizzettel)','naTh15 naNw')}{text(609,810,190,'Wohnung 2 (SMS)','naTh15 naNw')}{text(804,810,208,'Wohnung 3 (E-Mail)','naTh15 naNw')}
   {text(171,840,180,'Größe?','naTd15 naNw')}{text(171,870,180,'Miete pro Monat?','naTd15 naNw')}{text(171,900,180,'Ab wann?','naTd15 naNw')}
   {art('slash',464,869,16,26)}
+  {field('15-2a-w1g',370,838,215,'Wohnung 1 Größe')}
+  {field('15-2a-w1a',370,897,215,'Wohnung 1 Ab wann')}
+  {field('15-2a-w2g',616,838,165,'Wohnung 2 Größe')}
+  {field('15-2a-w2m',604,867,188,'Wohnung 2 Miete','naFld15s')}
+  {field('15-2a-w2a',616,897,165,'Wohnung 2 Ab wann')}
+  {field('15-2a-w3g',811,838,185,'Wohnung 3 Größe')}
+  {field('15-2a-w3m',807,867,192,'Wohnung 3 Miete','naFld15s')}
+  {field('15-2a-w3a',811,897,185,'Wohnung 3 Ab wann')}
+  {check('15-2a',850,940,{'15-2a-w1g':'3,5 Zimmer|3,5','15-2a-w1a':'1. Mai|1.5.|1.5','15-2a-w2g':'4 Zimmer|4','15-2a-w2m':'1000,– € + Nebenkosten|1000,- € + Nebenkosten|1000 € + Nebenkosten|1000 + Nebenkosten','15-2a-w2a':'1. April|1.4.|1.4','15-2a-w3g':'4 Zimmer|4','15-2a-w3m':'700,– € + Nebenkosten|700,- € + Nebenkosten|700 € + Nebenkosten|700 + Nebenkosten','15-2a-w3a':'1. April|1.4.|1.4'})}
   {text(131,946,16,'b','naLet15')}
   {text(163,947,450,'Welche Wohnung passt am besten? Kreuzen Sie an.','naInstrB15 naNw')}
   {text(163,986,95,'Wohnung','naMail15 naNw')}
@@ -776,6 +797,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
   {text(153,1155,15,'f','naMail16 naNw')}<div className="naSq16" style={{left:176,top:1165}}/>{text(191,1155,457,'Mein Traumhaus steht im Wald, ich liebe die Natur.','naMail16 naNw')}
   {art('frown',175,1186,17,17)}<div className="naTri16" style={{left:198,top:1191}}/>{text(217,1182,105,'Nur Natur –','naMail16 naNw')}{field('16-4f',328,1179,627,'Lücke 4f')}{text(958,1182,10,'!','naMail16 naNw')}
   {text(883,1233,92,'_ / 6 PUNKTE','naPkt10 naNw')}
+  {check('16-4',660,793,{'16-4a':'es ist sehr schön hier','16-4b':'mag ich gar nicht','16-4c':'die Idee ist cool','16-4d':'sieht wirklich toll aus','16-4e':'sie sind hässlich','16-4f':'das ist langweilig'})}
   {art('punkte',228,1240,524,135)}
   <div className="naModul10" style={{left:0,top:1390,width:72,height:23,lineHeight:'23px',background:'#ded6b0',fontWeight:400}}>Modul 5</div>
   <div className="naText naFooter naNw" style={{left:85,top:1394,width:220,whiteSpace:'pre'}}>{'16  |  sechzehn'}</div>

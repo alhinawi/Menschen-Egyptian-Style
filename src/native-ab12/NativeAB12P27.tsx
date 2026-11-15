@@ -48,7 +48,7 @@ export function NativeAB12P27({page}:{page:string}){
   {stext(102,477,300,'Vanilla wohnt neben Otto. Vanilla ist')}{field('p27-3a',403,472,156,'3a')}{stext(576,477,90,'Nachbarin.')}
   {stext(100,496,20,'■','naMark')}{stext(117,499,238,'Wie findest du Vanillas Haus?')}{stext(364,505,20,'▲','naTri')}{field('p27-3b',381,496,115,'3b')}{stext(504,499,180,'Haus finde ich super,')}
   {stext(102,523,40,'aber')}{field('p27-3c',141,519,102,'3c')}{stext(249,525,240,'Garten mag ich nicht so gern.')}
-  {check('g3',980,519,{'p27-3a':'seine','p27-3b':'ihr','p27-3c':'ihr'})}
+  {check('g3',980,519,{'p27-3a':'Ottos|seine','p27-3b':'Vanillas|Ihr','p27-3c':'Vanillas|Ihren'})}
   {sect(102,571,'… sagen, wem etwas gefällt/gehört und wem ich helfe/danke','')}{conf('s4',575)}
   {sect(130,594,'(Personalpronomen im Dativ):','L15')}
   {stext(103,619,240,'Das finde ich gut.')}{art('arrow',345,626,18,13)}{stext(401,619,30,'Das')}{field('p27-4a1',433,615,205,'4a1')}{field('p27-4a2',644,615,127,'4a2')}{stext(773,619,10,'.')}

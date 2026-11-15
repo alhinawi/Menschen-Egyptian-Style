@@ -1,10 +1,22 @@
 import {useNativeCanvas,Canvas,Words} from './shared';
+import {CheckButton} from '../components/CheckButton';
+import {useEffect,useState} from 'react';
+import './native-ab12-p98.css';
 import {LinedArea} from '../components/LinedArea';
 import {LineMatching} from '../exercises/LineMatching';
 
 export function NativeAB12L24({page}:{page:string}){
  const c=useNativeCanvas(page);
  const {text,art,field,check,title,rule}=c;const set=c.set;
+ // p98 section 10 (4 Himmelsrichtungen): the key answer is an order-free set, so the
+ // house exact-match check() cannot grade it. Own result state + set match; marking
+ // uses the same data-check-mark attribute the other p98 checks paint from.
+ const [ok98,setOk98]=useState<boolean|null>(null);
+ useEffect(()=>{if(page==='98'&&!('98-10' in c.values)){setOk98(null);c.root.current?.querySelector('[data-native-field="98-10"]')?.removeAttribute('data-check-mark')}},[page,c.values,c.root]);
+ const grade98=()=>{const t=(c.values['98-10']||'').normalize('NFC').trim().toLocaleLowerCase('de').replace(/[.!?]+$/,'').replace(/\s+/g,' ');
+  const ws=t?t.split(/[\s,;]+/).filter(w=>w&&w!=='der').sort():[];
+  const ok=ws.join('|')==='norden|osten|süden|westen';
+  setOk98(ok);c.root.current?.querySelector('[data-native-field="98-10"]')?.setAttribute('data-check-mark',ok?'ok':'bad')};
  const conf98=(id:string,y:number)=><>{[0,1,2].map(cc=>c.dot(id,''+cc,650+cc*29.5,y,'Selbsteinschätzung '+id+' '+['gut','mittel','noch nicht'][cc],false,'naDot98'))}</>;
  const sect98=(y:number,t:string,tag:string)=><div className="naText naSect98" style={{left:78,top:y}}><Words text={t}/> <span className="naTag98">{tag}</span></div>;
  const conf99=(id:string,y:number)=><>{[0,1,2].map(cc=>c.dot(id,''+cc,646.6+cc*28.9,y,'Selbsteinschätzung '+id+' '+['gut','mittel','noch nicht'][cc],false,'naDot99'))}</>;
@@ -64,8 +76,8 @@ export function NativeAB12L24({page}:{page:string}){
   {text(465,856.5,70,'Nein, aber','naBookSerif naBk88 naNw',14)}{text(558,856.5,35,'es ist','naBookSerif naBk88 naNw',14)}
   <svg style={{position:'absolute',left:0,top:0,width:807,height:1094,pointerEvents:'none'}} viewBox="0 0 807 1094" aria-hidden="true"><path d="M168 776.5 H196.5 M216 777.5 H229 C240 776,241 767,249 760 C253 757,258 756.5,277 756.5" fill="none" stroke="#5b84bd" strokeWidth="2"/></svg>
   {art('snow',350,730,50,37)}{art('sun',686,734,54,40)}{art('thermo',341,836,54,46)}{art('scribble',711,816,59,39)}
-  <LineMatching id="96-3l" left={['','','','']} right={['schneit.','sonnig.','windig und neblig.','warm.']} values={c.values} onMatch={set} leftX={131} rightX={239} leftWidth={117} rightWidth={185} ys={[748.5,768.5,816.5,837.5]} rightYs={[743.5,764.5,812.5,835.5]} rightXs={[276,276,276,276]} leftDotYs={[756.5,776.5,824.5,845.5]} rightDotXs={[264,264,264,264]} rightDotYs={[757,778.5,827,850]} dotR={4} width={807} height={1094} fontSize={14} itemHeights={[19,19,19,19]} lineHeight={19} className="lmScanFont lm96"/>
-  <LineMatching id="96-3r" left={['','','','']} right={['27 Grad.','Wolken.','neblig und\nbewölkt.','donnert und blitzt.']} values={c.values} onMatch={set} leftX={464} rightX={586} leftWidth={140} rightWidth={190} ys={[748.5,770.5,818.5,856.5]} rightYs={[752.5,770.5,815,854.5]} rightXs={[621,621,621,621]} leftDotYs={[756.5,778.5,826.5,864.5]} rightDotXs={[618,618,618,618]} rightDotYs={[757.5,776,839.5,864]} dotR={3} rightFontSizes={[13,13.5,13,14.3]} width={807} height={1094} fontSize={13} itemHeights={[19,19,19,19]} rightHeights={[19,19,37,19]} multiline={true} lineHeight={18.5} className="lmScanFont lm96"/>
+  <LineMatching id="96-3lb" left={['','']} right={['schneit.','sonnig.','windig und neblig.','warm.']} values={c.values} onMatch={set} leftX={131} rightX={232} leftWidth={117} rightWidth={185} ys={[816.5,837.5]} rightYs={[743.5,764.5,812.5,835.5]} rightXs={[276,276,276,276]} leftDotXs={[256,256]} leftDotYs={[824.5,845.5]} rightDotYs={[757,778.5,827,850]} rightDots={false} dotR={4} width={807} height={1094} fontSize={14} itemHeights={[19,19]} lineHeight={19} className="lmScanFont lm96"/>
+  <LineMatching id="96-3r" left={['','','','']} right={['27 Grad.','Wolken.','neblig und\nbewölkt.','donnert und blitzt.']} values={c.values} onMatch={set} leftX={464} rightX={590} leftWidth={140} rightWidth={190} ys={[748.5,770.5,818.5,856.5]} rightYs={[752.5,770.5,815,854.5]} rightXs={[621,621,621,621]} leftDotXs={[610,610,610,610]} leftDotYs={[756.5,778.5,826.5,864.5]} rightDotYs={[757.5,776,839.5,864]} rightDots={false} dotR={3} rightFontSizes={[13,13.5,13,14.3]} width={807} height={1094} fontSize={13} itemHeights={[19,19,19,19]} rightHeights={[19,19,37,19]} multiline={true} lineHeight={18.5} className="lmScanFont lm96"/>
   {title('4',80,883,300,'Ergänzen Sie die SMS.','naRB naNw naT96')}
   <div className="naCard96" style={{left:112,top:910,width:146,height:122}}/><div className="naCard96" style={{left:268,top:910,width:148,height:122}}/><div className="naCard96" style={{left:428,top:910,width:148,height:122}}/><div className="naCard96" style={{left:588,top:910,width:151,height:122}}/>
   {text(120,915,16,'a','naBookSerif naBk88 naLab4b96',13.5)}{text(277,915,16,'b','naBookSerif naBk88 naLab4b96',13.5)}{text(440,915,16,'c','naBookSerif naBk88 naLab4b96',13.5)}{text(600,915,16,'d','naBookSerif naBk88 naLab4b96',13.5)}
@@ -110,7 +122,7 @@ export function NativeAB12L24({page}:{page:string}){
   {text(111,355.95,200,'Was? Das gefällt dir? Das ist doch','naBookSerif naBody98 naNw',12.5)}{text(314,355.95,9,'w','naBookSerif naBody98 naNw',12.5)}{field('98-3b',324,347.9,97,'3 wirklich')}{text(425,355.95,68,'langweilig.','naBookSerif naBody98 naNw',12.5)}
   <div className="naCi98" style={{left:96,top:378.5,width:7.5,height:7.5}}/>
   {text(110,373.95,160,'Aber seht mal, das hier ist','naBookSerif naBody98 naNw',12.5)}{text(271,373.95,5,'r','naBookSerif naBody98 naNw',12.5)}{field('98-3c',276,367.9,98,'3 richtig')}{text(378,373.95,25,'toll.','naBookSerif naBody98 naNw',12.5)}
-  {check('98-3',745,311,{'98-3a':'otal|Total','98-3b':'irklich|wirklich','98-3c':'ichtig|richtig'})}
+  {check('98-3',745,311,{'98-3a':'otal|Total','98-3b':'ahnsinnig|wahnsinnig','98-3c':'ichtig|richtig'})}
   {sect98(410,'… Gründe angeben:','L23')}{conf98('s4',414)}
   {text(96,428.95,145,'Unser Ziel war Südtirol,','naBookSerif naBody98 naNw',12.5)}{field('98-4',243,421.9,78,'4 denn')}{text(325,428.95,245,'dort ist es im März schon oft sehr warm.','naBookSerif naBody98 naNw',12.5)}
   {check('98-4',745,405,{'98-4':'denn'})}
@@ -122,10 +134,10 @@ export function NativeAB12L24({page}:{page:string}){
   {art('thermo',546,455,64,63)}
   {check('98-5',745,459,{'98-5a':'ie|Wie','98-5b1':'die Sonne','98-5b2':'warm|heiß|sonnig|schön'})}
   {sect98(539,'… über Wünsche sprechen:','L24')}{conf98('s6',543)}
-  {field('98-6a1',96,551.9,58,'6 Was')}{text(157,557.95,205,'würdest du am liebsten jeden Tag','naBookSerif naBody98 naNw',12.5)}{text(362,557.95,10,'m','naBookSerif naBody98 naNw',12.5)}{field('98-6a2',373,551.9,88,'6 machen')}{text(461,557.95,6,'?','naBookSerif naBody98 naNw',12.5)}
-  {text(97,576.95,18,'Ich','naBookSerif naBody98 naNw',12.5)}{field('98-6b',133,569.9,463,'6 Ich würde')}{text(602,576.95,5,'.','naBookSerif naBody98 naNw',12.5)}
+  {field('98-6a1',96,557.9,58,'6 Was','naF98s6')}{text(157,557.95,205,'würdest du am liebsten jeden Tag','naBookSerif naBody98 naNw',12.5)}{text(362,557.95,10,'m','naBookSerif naBody98 naNw',12.5)}{field('98-6a2',373,557.9,88,'6 machen','naF98s6')}{text(461,557.95,6,'?','naBookSerif naBody98 naNw',12.5)}
+  {text(97,576.95,18,'Ich','naBookSerif naBody98 naNw',12.5)}{field('98-6b',133,575.9,463,'6 Ich würde','naF98s6')}{text(602,576.95,5,'.','naBookSerif naBody98 naNw',12.5)}
   {text(97,595.05,195,'(gern meinen Geburtstag feiern)','naBookSerif naBody98 naNw',12.4)}
-  {check('98-6',745,534,{'98-6a1':'Was','98-6a2':'machen|achen','98-6b':'würde gern meinen Geburtstag feiern|würde meinen Geburtstag feiern'})}
+  {check('98-6',745,534,{'98-6a1':'Was','98-6a2':'machen|achen','98-6b':'würde gern jeden Tag meinen Geburtstag feiern|möchte gern jeden Tag meinen Geburtstag feiern|würde gern meinen Geburtstag feiern|möchte gern meinen Geburtstag feiern|würde meinen Geburtstag feiern'})}
   {sect98(631,'… gratulieren:','L24')}{conf98('s7',634)}
   {text(96,649.95,7,'F','naBookSerif naBody98 naNw',12.5)}{field('98-7a1',103,641.9,78,'7 Frohe')}{text(184,649.95,10,'W','naBookSerif naBody98 naNw',12.5)}{field('98-7a2',196,641.9,176,'7 Weihnachten')}{text(373,649.95,6,'!','naBookSerif naBody98 naNw',12.5)}{text(382,649.95,7,'/','naBookSerif naBody98 naNw',12.5)}{text(390,649.95,7,'H','naBookSerif naBody98 naNw',12.5)}{field('98-7a3',398,641.9,94,'7 Herzlichen')}
   {text(96,667.95,7,'G','naBookSerif naBody98 naNw',12.5)}{field('98-7b1',104,659.9,107,'7 Glückwunsch')}{text(214,667.95,6,'!','naBookSerif naBody98 naNw',12.5)}{text(223,667.95,7,'/','naBookSerif naBody98 naNw',12.5)}{text(231,667.95,8,'A','naBookSerif naBody98 naNw',12.5)}{field('98-7b2',236,659.9,69,'7 Alles')}{text(308,667.95,7,'G','naBookSerif naBody98 naNw',12.5)}{field('98-7b3',316,659.9,68,'7 Gute')}{text(385,667.95,6,'!','naBookSerif naBody98 naNw',12.5)}
@@ -143,6 +155,7 @@ export function NativeAB12L24({page}:{page:string}){
   {field('98-9b',270,871.9,326,'9 mag Wetter nicht')}
   {sect98(914,'… die 4 Himmelsrichtungen:','L23')}{conf98('s10',918)}
   {field('98-10',96,925.9,500,'10 Himmelsrichtungen')}
+  {<div className="naCheck" data-check="98-10" style={{left:745,top:918}}><CheckButton onClick={grade98}/><output aria-live="polite">{ok98===null?'':ok98?'✓ Richtig!':'Noch einmal'}</output></div>}
   {sect98(968,'… 5 Wörter zum Thema Feste und Feiern:','L24')}{conf98('s11',972)}
   {text(97,987.6,34,'Feste:','naBookSerif naBody98 naNw',11.8)}{field('98-11f',133,979.9,463,'11 Feste')}
   {text(97,1006.05,47,'Verben:','naBookSerif naBody98 naNw',12.4)}{text(147,1006.05,18,'gra','naBookSerif naBody98 naNw',12.4)}{field('98-11v1',165,997.9,126,'11 gratulieren')}{text(294,1006.05,7,',','naBookSerif naBody98 naNw',12.4)}{text(302,1006.05,20,'sch','naBookSerif naBody98 naNw',12.4)}{field('98-11v2',322,997.9,138,'11 schenken')}{text(460,1006.05,6,',','naBookSerif naBody98 naNw',12.4)}{text(466,1006.05,12,'fei','naBookSerif naBody98 naNw',12.4)}{field('98-11v3',481,997.9,115,'11 feiern')}

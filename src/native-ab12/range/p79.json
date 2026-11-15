@@ -174,7 +174,8 @@
    "a": "kleiner",
    "l": "Lücke 1: Peters Haus ist ... als Pauls Haus",
    "g": "g1",
-   "max": 22
+   "max": 22,
+   "hh": 14
   },
   {
    "k": "t",
@@ -193,7 +194,8 @@
    "a": "kleinsten",
    "l": "Lücke 2: Am ... ist Kais Haus",
    "g": "g1",
-   "max": 22
+   "max": 22,
+   "hh": 14
   },
   {
    "k": "t",
@@ -226,7 +228,8 @@
    "a": "ältesten",
    "l": "Lücke 3: Kais Haus ist am ...",
    "g": "g1",
-   "max": 22
+   "max": 22,
+   "hh": 14
   },
   {
    "k": "t",
@@ -245,7 +248,8 @@
    "a": "modernsten",
    "l": "Lücke 4: Pauls Haus ist am ...",
    "g": "g1",
-   "max": 22
+   "max": 22,
+   "hh": 14
   },
   {
    "k": "t",
@@ -278,7 +282,8 @@
    "a": "am meisten",
    "l": "Lücke 5: Pauls Haus kostet ...",
    "g": "g1",
-   "max": 22
+   "max": 22,
+   "hh": 14
   },
   {
    "k": "t",
@@ -297,7 +302,8 @@
    "a": "billigsten",
    "l": "Lücke 6: Am ... ist Kais Haus",
    "g": "g1",
-   "max": 22
+   "max": 22,
+   "hh": 14
   },
   {
    "k": "t",
@@ -331,7 +337,8 @@
    "a": "mehr",
    "l": "Lücke 7: In Kais Garten gibt es ... Bäume",
    "g": "g1",
-   "max": 22
+   "max": 22,
+   "hh": 14
   },
   {
    "k": "t",
@@ -357,7 +364,8 @@
    "a": "schöner",
    "l": "Lücke 8: Kais Garten ist viel ...",
    "g": "g1",
-   "max": 22
+   "max": 22,
+   "hh": 14
   },
   {
    "k": "t",
@@ -1075,6 +1083,336 @@
    "col": "#cecfcb"
   },
   {
+   "k": "f",
+   "x": 103,
+   "y": 781,
+   "w": 155,
+   "id": "p79-68",
+   "a": "klein|lustig|billig",
+   "l": "Aufgabe 7, Gruppe 1, Komparativ +",
+   "g": "g2",
+   "max": 22,
+   "c": "sl",
+   "hh": 14
+  },
+  {
+   "k": "f",
+   "x": 103,
+   "y": 801,
+   "w": 155,
+   "id": "p79-69",
+   "a": "klein|lustig|billig",
+   "l": "Aufgabe 7, Gruppe 1, Komparativ +",
+   "g": "g2",
+   "max": 22,
+   "c": "sl",
+   "hh": 14
+  },
+  {
+   "k": "f",
+   "x": 103,
+   "y": 820,
+   "w": 155,
+   "id": "p79-70",
+   "a": "klein|lustig|billig",
+   "l": "Aufgabe 7, Gruppe 1, Komparativ +",
+   "g": "g2",
+   "max": 22,
+   "c": "sl",
+   "hh": 14
+  },
+  {
+   "k": "f",
+   "x": 319,
+   "y": 762,
+   "w": 156,
+   "id": "p79-71",
+   "a": "schneller|kleiner|lustiger|billiger",
+   "l": "Aufgabe 7, Gruppe 1, Komparativ ++",
+   "g": "g2",
+   "max": 22,
+   "c": "sl",
+   "hh": 14
+  },
+  {
+   "k": "f",
+   "x": 319,
+   "y": 781,
+   "w": 156,
+   "id": "p79-72",
+   "a": "schneller|kleiner|lustiger|billiger",
+   "l": "Aufgabe 7, Gruppe 1, Komparativ ++",
+   "g": "g2",
+   "max": 22,
+   "c": "sl",
+   "hh": 14
+  },
+  {
+   "k": "f",
+   "x": 319,
+   "y": 801,
+   "w": 156,
+   "id": "p79-73",
+   "a": "schneller|kleiner|lustiger|billiger",
+   "l": "Aufgabe 7, Gruppe 1, Komparativ ++",
+   "g": "g2",
+   "max": 22,
+   "c": "sl",
+   "hh": 14
+  },
+  {
+   "k": "f",
+   "x": 319,
+   "y": 820,
+   "w": 156,
+   "id": "p79-74",
+   "a": "schneller|kleiner|lustiger|billiger",
+   "l": "Aufgabe 7, Gruppe 1, Komparativ ++",
+   "g": "g2",
+   "max": 22,
+   "c": "sl",
+   "hh": 14
+  },
+  {
+   "k": "f",
+   "x": 532,
+   "y": 762,
+   "w": 151,
+   "id": "p79-75",
+   "a": "am schnellsten|am kleinsten|am lustigsten|am billigsten",
+   "l": "Aufgabe 7, Gruppe 1, Superlativ +++",
+   "g": "g2",
+   "max": 22,
+   "c": "sl",
+   "hh": 14
+  },
+  {
+   "k": "f",
+   "x": 532,
+   "y": 781,
+   "w": 151,
+   "id": "p79-76",
+   "a": "am schnellsten|am kleinsten|am lustigsten|am billigsten",
+   "l": "Aufgabe 7, Gruppe 1, Superlativ +++",
+   "g": "g2",
+   "max": 22,
+   "c": "sl",
+   "hh": 14
+  },
+  {
+   "k": "f",
+   "x": 532,
+   "y": 801,
+   "w": 151,
+   "id": "p79-77",
+   "a": "am schnellsten|am kleinsten|am lustigsten|am billigsten",
+   "l": "Aufgabe 7, Gruppe 1, Superlativ +++",
+   "g": "g2",
+   "max": 22,
+   "c": "sl",
+   "hh": 14
+  },
+  {
+   "k": "f",
+   "x": 532,
+   "y": 820,
+   "w": 151,
+   "id": "p79-78",
+   "a": "am schnellsten|am kleinsten|am lustigsten|am billigsten",
+   "l": "Aufgabe 7, Gruppe 1, Superlativ +++",
+   "g": "g2",
+   "max": 22,
+   "c": "sl",
+   "hh": 14
+  },
+  {
+   "k": "f",
+   "x": 103,
+   "y": 869,
+   "w": 155,
+   "id": "p79-79",
+   "a": "klug|jung",
+   "l": "Aufgabe 7, Gruppe 2, Komparativ +",
+   "g": "g2",
+   "max": 22,
+   "c": "sl",
+   "hh": 14
+  },
+  {
+   "k": "f",
+   "x": 103,
+   "y": 889,
+   "w": 155,
+   "id": "p79-80",
+   "a": "klug|jung",
+   "l": "Aufgabe 7, Gruppe 2, Komparativ +",
+   "g": "g2",
+   "max": 22,
+   "c": "sl",
+   "hh": 14
+  },
+  {
+   "k": "f",
+   "x": 319,
+   "y": 869,
+   "w": 156,
+   "id": "p79-81",
+   "a": "klüger|jünger",
+   "l": "Aufgabe 7, Gruppe 2, Komparativ ++",
+   "g": "g2",
+   "max": 22,
+   "c": "sl",
+   "hh": 14
+  },
+  {
+   "k": "f",
+   "x": 319,
+   "y": 889,
+   "w": 156,
+   "id": "p79-82",
+   "a": "klüger|jünger",
+   "l": "Aufgabe 7, Gruppe 2, Komparativ ++",
+   "g": "g2",
+   "max": 22,
+   "c": "sl",
+   "hh": 14
+  },
+  {
+   "k": "f",
+   "x": 532,
+   "y": 869,
+   "w": 151,
+   "id": "p79-83",
+   "a": "am klügsten|am jüngsten",
+   "l": "Aufgabe 7, Gruppe 2, Superlativ +++",
+   "g": "g2",
+   "max": 22,
+   "c": "sl",
+   "hh": 14
+  },
+  {
+   "k": "f",
+   "x": 532,
+   "y": 889,
+   "w": 151,
+   "id": "p79-84",
+   "a": "am klügsten|am jüngsten",
+   "l": "Aufgabe 7, Gruppe 2, Superlativ +++",
+   "g": "g2",
+   "max": 22,
+   "c": "sl",
+   "hh": 14
+  },
+  {
+   "k": "f",
+   "x": 103,
+   "y": 937,
+   "w": 155,
+   "id": "p79-85",
+   "a": "leicht",
+   "l": "Aufgabe 7, Gruppe 3, Komparativ +",
+   "g": "g2",
+   "max": 22,
+   "c": "sl",
+   "hh": 14
+  },
+  {
+   "k": "f",
+   "x": 319,
+   "y": 937,
+   "w": 156,
+   "id": "p79-86",
+   "a": "leichter",
+   "l": "Aufgabe 7, Gruppe 3, Komparativ ++",
+   "g": "g2",
+   "max": 22,
+   "c": "sl",
+   "hh": 14
+  },
+  {
+   "k": "f",
+   "x": 532,
+   "y": 937,
+   "w": 151,
+   "id": "p79-87",
+   "a": "am leichtesten",
+   "l": "Aufgabe 7, Gruppe 3, Superlativ +++",
+   "g": "g2",
+   "max": 22,
+   "c": "sl",
+   "hh": 14
+  },
+  {
+   "k": "f",
+   "x": 103,
+   "y": 986,
+   "w": 155,
+   "id": "p79-88",
+   "a": "viel|gern",
+   "l": "Aufgabe 7, Gruppe 4, Komparativ +",
+   "g": "g2",
+   "max": 22,
+   "c": "sl lo",
+   "hh": 14
+  },
+  {
+   "k": "f",
+   "x": 103,
+   "y": 1005,
+   "w": 155,
+   "id": "p79-89",
+   "a": "viel|gern",
+   "l": "Aufgabe 7, Gruppe 4, Komparativ +",
+   "g": "g2",
+   "max": 22,
+   "c": "sl",
+   "hh": 14
+  },
+  {
+   "k": "f",
+   "x": 319,
+   "y": 1005,
+   "w": 156,
+   "id": "p79-90",
+   "a": "lieber",
+   "l": "Aufgabe 7, Gruppe 4, Komparativ ++",
+   "g": "g2",
+   "max": 22,
+   "c": "sl",
+   "hh": 14
+  },
+  {
+   "k": "f",
+   "x": 532,
+   "y": 966,
+   "w": 151,
+   "id": "p79-91",
+   "l": "Aufgabe 7, Gruppe 4, Superlativ +++",
+   "g": "g2",
+   "max": 22,
+   "c": "sl",
+   "hh": 14
+  },
+  {
+   "k": "f",
+   "x": 532,
+   "y": 986,
+   "w": 151,
+   "id": "p79-92",
+   "a": "am besten|am meisten",
+   "l": "Aufgabe 7, Gruppe 4, Superlativ +++",
+   "g": "g2",
+   "max": 22,
+   "c": "sl",
+   "hh": 14
+  },
+  {
+   "k": "chk",
+   "x": 310,
+   "y": 1010,
+   "g": "g2"
+  },
+  {
    "k": "t",
    "x": 602,
    "y": 1062,
@@ -1151,5 +1489,6 @@
    "h": 1,
    "col": "#5b7cb5"
   }
- ]
+ ],
+ "css": ".nativeAB12[data-native-ab12=\"79\"] .naRCanvas .naRField{height:14px!important;font-size:12px!important}\n.nativeAB12[data-native-ab12=\"79\"] .naRCanvas .naRField[data-check-mark=\"ok\"]{background:transparent!important;border-color:transparent!important;box-shadow:none!important;border-bottom:2px solid #2f7d4f!important}\n.nativeAB12[data-native-ab12=\"79\"] .naRCanvas .naRField[data-check-mark=\"bad\"]{background:transparent!important;border-color:transparent!important;box-shadow:none!important;border-bottom:2px solid #c62f2f!important}"
 }
