@@ -1583,10 +1583,10 @@
    "name": "u1-d1",
    "value": "Foto A",
    "answer": "false",
-   "x": 400,
+   "x": 396,
    "y": 330,
-   "w": 18,
-   "h": 18
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u1-d1b",
@@ -1596,10 +1596,10 @@
    "name": "u1-d1",
    "value": "Foto B",
    "answer": "true",
-   "x": 505,
+   "x": 504,
    "y": 330,
-   "w": 18,
-   "h": 18
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u1-d1c",
@@ -1609,10 +1609,10 @@
    "name": "u1-d1",
    "value": "Foto C",
    "answer": "false",
-   "x": 612,
+   "x": 611,
    "y": 330,
-   "w": 18,
-   "h": 18
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u1-d2a",
@@ -1622,10 +1622,10 @@
    "name": "u1-d2",
    "value": "Foto A",
    "answer": "false",
-   "x": 400,
-   "y": 361,
-   "w": 18,
-   "h": 18
+   "x": 396,
+   "y": 359,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u1-d2b",
@@ -1635,10 +1635,10 @@
    "name": "u1-d2",
    "value": "Foto B",
    "answer": "false",
-   "x": 505,
-   "y": 361,
-   "w": 18,
-   "h": 18
+   "x": 504,
+   "y": 359,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u1-d2c",
@@ -1648,10 +1648,10 @@
    "name": "u1-d2",
    "value": "Foto C",
    "answer": "true",
-   "x": 612,
-   "y": 361,
-   "w": 18,
-   "h": 18
+   "x": 611,
+   "y": 359,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u1-d3a",
@@ -1661,10 +1661,10 @@
    "name": "u1-d3",
    "value": "Foto A",
    "answer": "true",
-   "x": 400,
-   "y": 392,
-   "w": 18,
-   "h": 18
+   "x": 396,
+   "y": 388,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u1-d3b",
@@ -1674,10 +1674,10 @@
    "name": "u1-d3",
    "value": "Foto B",
    "answer": "false",
-   "x": 505,
-   "y": 392,
-   "w": 18,
-   "h": 18
+   "x": 504,
+   "y": 388,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u1-d3c",
@@ -1687,10 +1687,10 @@
    "name": "u1-d3",
    "value": "Foto C",
    "answer": "false",
-   "x": 612,
-   "y": 392,
-   "w": 18,
-   "h": 18
+   "x": 611,
+   "y": 388,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u2-1a",
@@ -1700,10 +1700,10 @@
    "name": "u2-1",
    "value": "Die Passagiere von Flug 134 können jetzt einsteigen.",
    "answer": "false",
-   "x": 855,
-   "y": 766,
-   "w": 18,
-   "h": 18
+   "x": 853,
+   "y": 765,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u2-1b",
@@ -1713,10 +1713,10 @@
    "name": "u2-1",
    "value": "Die Passagiere von Flug 243 können jetzt einsteigen.",
    "answer": "true",
-   "x": 855,
-   "y": 796,
-   "w": 18,
-   "h": 18
+   "x": 853,
+   "y": 794,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u2-2a",
@@ -1726,10 +1726,10 @@
    "name": "u2-2",
    "value": "Die U5 fährt am Montag nur bis zum Ostbahnhof.",
    "answer": "false",
-   "x": 855,
+   "x": 853,
    "y": 867,
-   "w": 18,
-   "h": 18
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u2-2b",
@@ -1739,10 +1739,10 @@
    "name": "u2-2",
    "value": "Der Bus Nr. 58 fährt am Montag nur bis zum Ostbahnhof.",
    "answer": "true",
-   "x": 855,
-   "y": 897,
-   "w": 18,
-   "h": 18
+   "x": 853,
+   "y": 895,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u2-3a",
@@ -1752,10 +1752,10 @@
    "name": "u2-3",
    "value": "Der ICE 756 aus Hamburg kommt heute um 13:27 Uhr an.",
    "answer": "false",
-   "x": 855,
+   "x": 853,
    "y": 969,
-   "w": 18,
-   "h": 18
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u2-3b",
@@ -1765,10 +1765,10 @@
    "name": "u2-3",
    "value": "Der ICE 756 aus Hamburg kommt heute um 13:50 Uhr an.",
    "answer": "true",
-   "x": 855,
-   "y": 999,
-   "w": 18,
-   "h": 18
+   "x": 853,
+   "y": 998,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u4-r",
@@ -1778,10 +1778,10 @@
    "name": "u4",
    "value": "richtig",
    "answer": "true",
-   "x": 285,
-   "y": 1568,
-   "w": 18,
-   "h": 18
+   "x": 290,
+   "y": 1569,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u4-f",
@@ -1791,57 +1791,485 @@
    "name": "u4",
    "value": "falsch",
    "answer": "false",
-   "x": 408,
-   "y": 1570,
-   "w": 18,
+   "x": 405,
+   "y": 1569,
+   "w": 19,
+   "h": 19
+  },
+  {
+   "id": "numbermark-0",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "2a Markieren: 134",
+   "answer": "true",
+   "x": 481,
+   "y": 770,
+   "w": 31,
    "h": 18
+  },
+  {
+   "id": "numbermark-1",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "2a Markieren: 243",
+   "answer": "true",
+   "x": 482,
+   "y": 799,
+   "w": 33,
+   "h": 18
+  },
+  {
+   "id": "numbermark-2",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "2a Markieren: U5",
+   "answer": "true",
+   "x": 284,
+   "y": 874,
+   "w": 26,
+   "h": 18
+  },
+  {
+   "id": "numbermark-3",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "2a Markieren: 58",
+   "answer": "true",
+   "x": 365,
+   "y": 903,
+   "w": 20,
+   "h": 18
+  },
+  {
+   "id": "numbermark-4",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "2a Markieren: 756",
+   "answer": "true",
+   "x": 326,
+   "y": 976,
+   "w": 32,
+   "h": 18
+  },
+  {
+   "id": "numbermark-5",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "2a Markieren: 13:27",
+   "answer": "true",
+   "x": 677,
+   "y": 974,
+   "w": 48,
+   "h": 18
+  },
+  {
+   "id": "numbermark-6",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "2a Markieren: 756",
+   "answer": "true",
+   "x": 327,
+   "y": 1005,
+   "w": 31,
+   "h": 18
+  },
+  {
+   "id": "numbermark-7",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "2a Markieren: 13:50",
+   "answer": "true",
+   "x": 677,
+   "y": 1002,
+   "w": 48,
+   "h": 18
+  },
+  {
+   "id": "numbermark-8",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "2a Markieren: Flug",
+   "answer": "false",
+   "x": 434,
+   "y": 769,
+   "w": 43,
+   "h": 25
+  },
+  {
+   "id": "numbermark-9",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "2a Markieren: Montag",
+   "answer": "false",
+   "x": 410,
+   "y": 874,
+   "w": 76,
+   "h": 24
+  },
+  {
+   "id": "numbermark-10",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "2a Markieren: Hamburg",
+   "answer": "false",
+   "x": 402,
+   "y": 974,
+   "w": 93,
+   "h": 25
+  },
+  {
+   "id": "numbermark-11",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "2a Markieren: heute",
+   "answer": "false",
+   "x": 577,
+   "y": 1002,
+   "w": 57,
+   "h": 20
+  },
+  {
+   "id": "accent-0-0",
+   "group": "g3",
+   "kind": "radio",
+   "label": "1 Wortakzent kommen: Silbe 1",
+   "name": "accent-0",
+   "value": "0",
+   "answer": "true",
+   "x": 447,
+   "y": 1280,
+   "w": 47,
+   "h": 24
+  },
+  {
+   "id": "accent-0-1",
+   "group": "g3",
+   "kind": "radio",
+   "label": "1 Wortakzent kommen: Silbe 2",
+   "name": "accent-0",
+   "value": "1",
+   "answer": "false",
+   "x": 494,
+   "y": 1280,
+   "w": 39,
+   "h": 24
+  },
+  {
+   "id": "accent-1-0",
+   "group": "g3",
+   "kind": "radio",
+   "label": "1 Wortakzent ankommen: Silbe 1",
+   "name": "accent-1",
+   "value": "0",
+   "answer": "true",
+   "x": 251,
+   "y": 1311,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "accent-1-1",
+   "group": "g3",
+   "kind": "radio",
+   "label": "1 Wortakzent ankommen: Silbe 2",
+   "name": "accent-1",
+   "value": "1",
+   "answer": "false",
+   "x": 275,
+   "y": 1311,
+   "w": 49,
+   "h": 24
+  },
+  {
+   "id": "accent-1-2",
+   "group": "g3",
+   "kind": "radio",
+   "label": "1 Wortakzent ankommen: Silbe 3",
+   "name": "accent-1",
+   "value": "2",
+   "answer": "false",
+   "x": 324,
+   "y": 1311,
+   "w": 38,
+   "h": 24
+  },
+  {
+   "id": "accent-2-0",
+   "group": "g3",
+   "kind": "radio",
+   "label": "1 Wortakzent kaufen: Silbe 1",
+   "name": "accent-2",
+   "value": "0",
+   "answer": "true",
+   "x": 378,
+   "y": 1310,
+   "w": 39,
+   "h": 24
+  },
+  {
+   "id": "accent-2-1",
+   "group": "g3",
+   "kind": "radio",
+   "label": "1 Wortakzent kaufen: Silbe 2",
+   "name": "accent-2",
+   "value": "1",
+   "answer": "false",
+   "x": 417,
+   "y": 1310,
+   "w": 29,
+   "h": 24
+  },
+  {
+   "id": "accent-3-0",
+   "group": "g3",
+   "kind": "radio",
+   "label": "1 Wortakzent einkaufen: Silbe 1",
+   "name": "accent-3",
+   "value": "0",
+   "answer": "true",
+   "x": 472,
+   "y": 1309,
+   "w": 28,
+   "h": 24
+  },
+  {
+   "id": "accent-3-1",
+   "group": "g3",
+   "kind": "radio",
+   "label": "1 Wortakzent einkaufen: Silbe 2",
+   "name": "accent-3",
+   "value": "1",
+   "answer": "false",
+   "x": 500,
+   "y": 1309,
+   "w": 40,
+   "h": 24
+  },
+  {
+   "id": "accent-3-2",
+   "group": "g3",
+   "kind": "radio",
+   "label": "1 Wortakzent einkaufen: Silbe 3",
+   "name": "accent-3",
+   "value": "2",
+   "answer": "false",
+   "x": 540,
+   "y": 1309,
+   "w": 32,
+   "h": 24
+  },
+  {
+   "id": "accent-4-0",
+   "group": "g3",
+   "kind": "radio",
+   "label": "1 Wortakzent sehen: Silbe 1",
+   "name": "accent-4",
+   "value": "0",
+   "answer": "true",
+   "x": 251,
+   "y": 1340,
+   "w": 30,
+   "h": 24
+  },
+  {
+   "id": "accent-4-1",
+   "group": "g3",
+   "kind": "radio",
+   "label": "1 Wortakzent sehen: Silbe 2",
+   "name": "accent-4",
+   "value": "1",
+   "answer": "false",
+   "x": 281,
+   "y": 1340,
+   "w": 27,
+   "h": 24
+  },
+  {
+   "id": "accent-5-0",
+   "group": "g3",
+   "kind": "radio",
+   "label": "1 Wortakzent fernsehen: Silbe 1",
+   "name": "accent-5",
+   "value": "0",
+   "answer": "true",
+   "x": 333,
+   "y": 1340,
+   "w": 43,
+   "h": 24
+  },
+  {
+   "id": "accent-5-1",
+   "group": "g3",
+   "kind": "radio",
+   "label": "1 Wortakzent fernsehen: Silbe 2",
+   "name": "accent-5",
+   "value": "1",
+   "answer": "false",
+   "x": 376,
+   "y": 1340,
+   "w": 30,
+   "h": 24
+  },
+  {
+   "id": "accent-5-2",
+   "group": "g3",
+   "kind": "radio",
+   "label": "1 Wortakzent fernsehen: Silbe 3",
+   "name": "accent-5",
+   "value": "2",
+   "answer": "false",
+   "x": 405,
+   "y": 1340,
+   "w": 27,
+   "h": 24
+  },
+  {
+   "id": "accent-6-0",
+   "group": "g3",
+   "kind": "radio",
+   "label": "1 Wortakzent bringen: Silbe 1",
+   "name": "accent-6",
+   "value": "0",
+   "answer": "true",
+   "x": 448,
+   "y": 1339,
+   "w": 44,
+   "h": 24
+  },
+  {
+   "id": "accent-6-1",
+   "group": "g3",
+   "kind": "radio",
+   "label": "1 Wortakzent bringen: Silbe 2",
+   "name": "accent-6",
+   "value": "1",
+   "answer": "false",
+   "x": 492,
+   "y": 1339,
+   "w": 34,
+   "h": 24
+  },
+  {
+   "id": "accent-7-0",
+   "group": "g3",
+   "kind": "radio",
+   "label": "1 Wortakzent mitbringen: Silbe 1",
+   "name": "accent-7",
+   "value": "0",
+   "answer": "true",
+   "x": 252,
+   "y": 1370,
+   "w": 31,
+   "h": 24
+  },
+  {
+   "id": "accent-7-1",
+   "group": "g3",
+   "kind": "radio",
+   "label": "1 Wortakzent mitbringen: Silbe 2",
+   "name": "accent-7",
+   "value": "1",
+   "answer": "false",
+   "x": 283,
+   "y": 1370,
+   "w": 45,
+   "h": 24
+  },
+  {
+   "id": "accent-7-2",
+   "group": "g3",
+   "kind": "radio",
+   "label": "1 Wortakzent mitbringen: Silbe 3",
+   "name": "accent-7",
+   "value": "2",
+   "answer": "false",
+   "x": 328,
+   "y": 1370,
+   "w": 36,
+   "h": 24
   }
  ],
  "audio": [
   {
-   "id": "au-cd1-44-46",
+   "id": "au-0-44",
    "src": "assets/ab-cd1-track44.mp3",
-   "label": "CD 1 Track 44-46",
-   "x": 128,
+   "label": "CD 1 Track 44",
+   "x": 116,
    "y": 262,
-   "w": 55,
-   "h": 22
+   "w": 33,
+   "h": 26
   },
   {
-   "id": "au-cd1-44-46b",
+   "id": "au-0-45",
+   "src": "assets/ab-cd1-track45.mp3",
+   "label": "CD 1 Track 45",
+   "x": 153,
+   "y": 262,
+   "w": 33,
+   "h": 26
+  },
+  {
+   "id": "au-0-46",
+   "src": "assets/ab-cd1-track46.mp3",
+   "label": "CD 1 Track 46",
+   "x": 190,
+   "y": 262,
+   "w": 33,
+   "h": 26
+  },
+  {
+   "id": "au-1-44",
    "src": "assets/ab-cd1-track44.mp3",
-   "label": "CD 1 Track 44-46",
-   "x": 128,
+   "label": "CD 1 Track 44",
+   "x": 116,
    "y": 1064,
-   "w": 55,
-   "h": 22
+   "w": 33,
+   "h": 26
   },
   {
-   "id": "au-cd1-47",
+   "id": "au-1-45",
+   "src": "assets/ab-cd1-track45.mp3",
+   "label": "CD 1 Track 45",
+   "x": 153,
+   "y": 1064,
+   "w": 33,
+   "h": 26
+  },
+  {
+   "id": "au-1-46",
+   "src": "assets/ab-cd1-track46.mp3",
+   "label": "CD 1 Track 46",
+   "x": 190,
+   "y": 1064,
+   "w": 33,
+   "h": 26
+  },
+  {
+   "id": "au-47",
    "src": "assets/ab-cd1-track47.mp3",
    "label": "CD 1 Track 47",
-   "x": 128,
-   "y": 1213,
-   "w": 50,
-   "h": 22
+   "x": 146,
+   "y": 1209,
+   "w": 40,
+   "h": 25
   },
   {
-   "id": "au-cd1-48",
+   "id": "au-48",
    "src": "assets/ab-cd1-track48.mp3",
    "label": "CD 1 Track 48",
-   "x": 190,
-   "y": 1412,
-   "w": 60,
-   "h": 22
+   "x": 193,
+   "y": 1414,
+   "w": 40,
+   "h": 25
   },
   {
-   "id": "au-cd1-49",
+   "id": "au-49",
    "src": "assets/ab-cd1-track49.mp3",
    "label": "CD 1 Track 49",
-   "x": 738,
-   "y": 1204,
-   "w": 50,
-   "h": 22
+   "x": 740,
+   "y": 1206,
+   "w": 40,
+   "h": 25
   }
  ],
  "groups": [
@@ -1852,6 +2280,10 @@
   {
    "id": "g2",
    "label": "Ü2 Durchsagen: Welche Sätze sind richtig? Kreuzen Sie in a an. (CD 1 Track 44-46)"
+  },
+  {
+   "id": "g3",
+   "label": "Aussprache 1 Wortakzent markieren"
   },
   {
    "id": "g4",
@@ -1865,7 +2297,8 @@
   "notes": [
    "TRAINING: HÖREN Ü1-Ü2 + TRAINING: AUSSPRACHE Ü1-Ü3. Answers from AB Lösungsschlüssel (Hören 1: D1=B D2=C D3=A; Hören 2b: 1 Flug 243, 2 Bus Nr. 58, 3 13:50; Aussprache 2: richtig).",
    "Hören Ü2a (Zahlen/Uhrzeiten markieren) and Aussprache Ü1 (Wortakzent markieren, underlines printed) and Ü3 (nachsprechen) have no blanks: no fields.",
-   "Range icon '1 44-46' appears twice (Ü1 and Ü2b): one audio entry per icon, src = first track of range. Right-edge Modul tab cut off by scan, omitted."
+   "Range icon '1 44-46' appears twice (Ü1 and Ü2b): one audio entry per icon, src = first track of range. Right-edge Modul tab cut off by scan, omitted.",
+   "2026-11-16: Source scan/fonts;all6CDtracks44-49accessible (range icons split into actual44/45/46 controls),8number/time highlights+4distractors,20syllable targets in8accent groups,plus sourcealigned listening/rule choices."
   ]
  }
 }
