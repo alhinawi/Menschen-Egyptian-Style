@@ -1183,10 +1183,10 @@
    "kind": "text",
    "label": "Er arbeitet am Montag",
    "answer": "VON",
-   "x": 438,
-   "y": 346,
-   "w": 110,
-   "h": 30
+   "x": 442,
+   "y": 341,
+   "w": 116,
+   "h": 33
   },
   {
    "id": "f-1-02",
@@ -1194,10 +1194,10 @@
    "kind": "text",
    "label": "An einer Universität kann man",
    "answer": "STUDIEREN",
-   "x": 527,
+   "x": 530,
    "y": 385,
-   "w": 352,
-   "h": 30
+   "w": 344,
+   "h": 33
   },
   {
    "id": "f-1-03",
@@ -1205,10 +1205,10 @@
    "kind": "text",
    "label": "Hier kommt der Zug an:",
    "answer": "BAHNHOF",
-   "x": 452,
-   "y": 428,
-   "w": 276,
-   "h": 30
+   "x": 457,
+   "y": 429,
+   "w": 270,
+   "h": 33
   },
   {
    "id": "f-1-04",
@@ -1216,10 +1216,10 @@
    "kind": "text",
    "label": "Nach dem Winter kommt der",
    "answer": "FRUEHLING",
-   "x": 506,
-   "y": 467,
-   "w": 366,
-   "h": 30
+   "x": 513,
+   "y": 472,
+   "w": 344,
+   "h": 33
   },
   {
    "id": "f-1-05",
@@ -1227,10 +1227,10 @@
    "kind": "text",
    "label": "Juli, , September.",
    "answer": "AUGUST",
-   "x": 259,
-   "y": 517,
-   "w": 197,
-   "h": 30
+   "x": 263,
+   "y": 518,
+   "w": 228,
+   "h": 33
   },
   {
    "id": "f-1-06",
@@ -1238,10 +1238,10 @@
    "kind": "text",
    "label": "Die S-Bahn fährt jeden Tag. Sie fährt",
    "answer": "TAEGLICH",
-   "x": 577,
-   "y": 563,
-   "w": 334,
-   "h": 30
+   "x": 592,
+   "y": 557,
+   "w": 306,
+   "h": 33
   },
   {
    "id": "f-1-07",
@@ -1249,10 +1249,10 @@
    "kind": "text",
    "label": "Der 1. Monat im Jahr heißt",
    "answer": "JANUAR",
-   "x": 488,
-   "y": 610,
-   "w": 236,
-   "h": 30
+   "x": 491,
+   "y": 599,
+   "w": 228,
+   "h": 33
   },
   {
    "id": "f-1-08",
@@ -1260,10 +1260,10 @@
    "kind": "text",
    "label": "Die Zeitung ist nicht interessant, sie ist",
    "answer": "LANGWEILIG",
-   "x": 617,
-   "y": 645,
-   "w": 390,
-   "h": 30
+   "x": 621,
+   "y": 643,
+   "w": 383,
+   "h": 33
   },
   {
    "id": "f-1-09",
@@ -1271,10 +1271,10 @@
    "kind": "text",
    "label": "Kai ist erst zwei Monate alt. Er ist noch ein",
    "answer": "BABY",
-   "x": 656,
-   "y": 684,
-   "w": 160,
-   "h": 30
+   "x": 661,
+   "y": 688,
+   "w": 151,
+   "h": 33
   },
   {
    "id": "f-1-10",
@@ -1282,10 +1282,10 @@
    "kind": "text",
    "label": "Bitte an der Bahnsteigkante!",
    "answer": "VORSICHT",
-   "x": 270,
+   "x": 277,
    "y": 734,
-   "w": 310,
-   "h": 30
+   "w": 306,
+   "h": 33
   },
   {
    "id": "f-1-11",
@@ -1293,10 +1293,10 @@
    "kind": "text",
    "label": "Das Jahr hat 12",
    "answer": "MONATE",
-   "x": 377,
-   "y": 784,
-   "w": 236,
-   "h": 30
+   "x": 380,
+   "y": 783,
+   "w": 228,
+   "h": 33
   },
   {
    "id": "f-1-12",
@@ -1304,10 +1304,10 @@
    "kind": "text",
    "label": "Peter hat viel gearbeitet. Jetzt macht er eine",
    "answer": "PAUSE",
-   "x": 663,
-   "y": 820,
-   "w": 197,
-   "h": 30
+   "x": 669,
+   "y": 825,
+   "w": 191,
+   "h": 33
   },
   {
    "id": "f-1-13",
@@ -1315,10 +1315,10 @@
    "kind": "text",
    "label": "Heute ist Sonntag, war Samstag.",
    "answer": "GESTERN",
-   "x": 406,
-   "y": 870,
-   "w": 272,
-   "h": 30
+   "x": 410,
+   "y": 869,
+   "w": 267,
+   "h": 33
   },
   {
    "id": "f-1-14",
@@ -1326,10 +1326,10 @@
    "kind": "text",
    "label": "Silvi hat Geburtstag. Ich muss noch ein kaufen.",
    "answer": "GESCHENK",
-   "x": 617,
-   "y": 913,
-   "w": 310,
-   "h": 30
+   "x": 622,
+   "y": 911,
+   "w": 308,
+   "h": 33
   },
   {
    "id": "f-2b-der-1",
@@ -1337,10 +1337,11 @@
    "kind": "text",
    "label": "der-Spalte",
    "answer": "Bahnsteig|Bus|Flughafen|Koffer",
-   "x": 222,
+   "x": 233,
    "y": 1243,
-   "w": 306,
-   "h": 22
+   "w": 296,
+   "h": 30,
+   "unordered": true
   },
   {
    "id": "f-2b-der-2",
@@ -1348,10 +1349,11 @@
    "kind": "text",
    "label": "der-Spalte",
    "answer": "Bahnsteig|Bus|Flughafen|Koffer",
-   "x": 222,
-   "y": 1267,
-   "w": 306,
-   "h": 22
+   "x": 233,
+   "y": 1275,
+   "w": 296,
+   "h": 30,
+   "unordered": true
   },
   {
    "id": "f-2b-der-3",
@@ -1359,10 +1361,11 @@
    "kind": "text",
    "label": "der-Spalte",
    "answer": "Bahnsteig|Bus|Flughafen|Koffer",
-   "x": 222,
-   "y": 1291,
-   "w": 306,
-   "h": 22
+   "x": 233,
+   "y": 1306,
+   "w": 296,
+   "h": 30,
+   "unordered": true
   },
   {
    "id": "f-2b-der-4",
@@ -1370,10 +1373,11 @@
    "kind": "text",
    "label": "der-Spalte",
    "answer": "Bahnsteig|Bus|Flughafen|Koffer",
-   "x": 222,
-   "y": 1315,
-   "w": 306,
-   "h": 22
+   "x": 233,
+   "y": 1338,
+   "w": 296,
+   "h": 30,
+   "unordered": true
   },
   {
    "id": "f-2b-das-1",
@@ -1381,10 +1385,11 @@
    "kind": "text",
    "label": "das-Spalte",
    "answer": "Gepäck|Gleis|Taxi",
-   "x": 542,
-   "y": 1267,
+   "x": 538,
+   "y": 1275,
    "w": 296,
-   "h": 22
+   "h": 30,
+   "unordered": true
   },
   {
    "id": "f-2b-das-2",
@@ -1392,10 +1397,11 @@
    "kind": "text",
    "label": "das-Spalte",
    "answer": "Gepäck|Gleis|Taxi",
-   "x": 542,
-   "y": 1291,
+   "x": 538,
+   "y": 1306,
    "w": 296,
-   "h": 22
+   "h": 30,
+   "unordered": true
   },
   {
    "id": "f-2b-das-3",
@@ -1403,10 +1409,11 @@
    "kind": "text",
    "label": "das-Spalte",
    "answer": "Gepäck|Gleis|Taxi",
-   "x": 542,
-   "y": 1315,
+   "x": 538,
+   "y": 1338,
    "w": 296,
-   "h": 22
+   "h": 30,
+   "unordered": true
   },
   {
    "id": "f-2b-die-1",
@@ -1414,10 +1421,11 @@
    "kind": "text",
    "label": "die-Spalte",
    "answer": "Straßenbahn|Haltestelle|U-Bahn",
-   "x": 848,
+   "x": 841,
    "y": 1243,
    "w": 296,
-   "h": 22
+   "h": 30,
+   "unordered": true
   },
   {
    "id": "f-2b-die-2",
@@ -1425,10 +1433,11 @@
    "kind": "text",
    "label": "die-Spalte",
    "answer": "Straßenbahn|Haltestelle|U-Bahn",
-   "x": 848,
-   "y": 1267,
+   "x": 841,
+   "y": 1275,
    "w": 296,
-   "h": 22
+   "h": 30,
+   "unordered": true
   },
   {
    "id": "f-2b-die-3",
@@ -1436,32 +1445,349 @@
    "kind": "text",
    "label": "die-Spalte",
    "answer": "Straßenbahn|Haltestelle|U-Bahn",
-   "x": 848,
-   "y": 1291,
+   "x": 841,
+   "y": 1306,
    "w": 296,
-   "h": 22
+   "h": 30,
+   "unordered": true
   },
   {
-   "id": "f-3-1",
+   "id": "pair-0",
    "group": "g3",
-   "kind": "text",
-   "label": "Was passt? (Regel 1)",
+   "kind": "select",
+   "label": "3 Wortpaar 1",
    "answer": "die Zeitung lesen|Deutsch lernen|das Zimmer aufräumen|ein Bier trinken|nach Madrid fliegen|ein Fest feiern",
-   "x": 560,
-   "y": 1538,
-   "w": 600,
+   "unordered": true,
+   "options": [
+    {
+     "value": "die Zeitung lesen",
+     "label": "die Zeitung lesen"
+    },
+    {
+     "value": "Deutsch lernen",
+     "label": "Deutsch lernen"
+    },
+    {
+     "value": "das Zimmer aufräumen",
+     "label": "das Zimmer aufräumen"
+    },
+    {
+     "value": "ein Bier trinken",
+     "label": "ein Bier trinken"
+    },
+    {
+     "value": "nach Madrid fliegen",
+     "label": "nach Madrid fliegen"
+    },
+    {
+     "value": "ein Fest feiern",
+     "label": "ein Fest feiern"
+    }
+   ],
+   "x": 562,
+   "y": 1539,
+   "w": 289,
    "h": 30
   },
   {
-   "id": "f-3-2",
+   "id": "pair-1",
    "group": "g3",
-   "kind": "text",
-   "label": "Was passt? (Regel 2)",
+   "kind": "select",
+   "label": "3 Wortpaar 2",
    "answer": "die Zeitung lesen|Deutsch lernen|das Zimmer aufräumen|ein Bier trinken|nach Madrid fliegen|ein Fest feiern",
-   "x": 240,
-   "y": 1575,
-   "w": 920,
+   "unordered": true,
+   "options": [
+    {
+     "value": "die Zeitung lesen",
+     "label": "die Zeitung lesen"
+    },
+    {
+     "value": "Deutsch lernen",
+     "label": "Deutsch lernen"
+    },
+    {
+     "value": "das Zimmer aufräumen",
+     "label": "das Zimmer aufräumen"
+    },
+    {
+     "value": "ein Bier trinken",
+     "label": "ein Bier trinken"
+    },
+    {
+     "value": "nach Madrid fliegen",
+     "label": "nach Madrid fliegen"
+    },
+    {
+     "value": "ein Fest feiern",
+     "label": "ein Fest feiern"
+    }
+   ],
+   "x": 856,
+   "y": 1539,
+   "w": 296,
    "h": 30
+  },
+  {
+   "id": "pair-2",
+   "group": "g3",
+   "kind": "select",
+   "label": "3 Wortpaar 3",
+   "answer": "die Zeitung lesen|Deutsch lernen|das Zimmer aufräumen|ein Bier trinken|nach Madrid fliegen|ein Fest feiern",
+   "unordered": true,
+   "options": [
+    {
+     "value": "die Zeitung lesen",
+     "label": "die Zeitung lesen"
+    },
+    {
+     "value": "Deutsch lernen",
+     "label": "Deutsch lernen"
+    },
+    {
+     "value": "das Zimmer aufräumen",
+     "label": "das Zimmer aufräumen"
+    },
+    {
+     "value": "ein Bier trinken",
+     "label": "ein Bier trinken"
+    },
+    {
+     "value": "nach Madrid fliegen",
+     "label": "nach Madrid fliegen"
+    },
+    {
+     "value": "ein Fest feiern",
+     "label": "ein Fest feiern"
+    }
+   ],
+   "x": 238,
+   "y": 1571,
+   "w": 226,
+   "h": 30
+  },
+  {
+   "id": "pair-3",
+   "group": "g3",
+   "kind": "select",
+   "label": "3 Wortpaar 4",
+   "answer": "die Zeitung lesen|Deutsch lernen|das Zimmer aufräumen|ein Bier trinken|nach Madrid fliegen|ein Fest feiern",
+   "unordered": true,
+   "options": [
+    {
+     "value": "die Zeitung lesen",
+     "label": "die Zeitung lesen"
+    },
+    {
+     "value": "Deutsch lernen",
+     "label": "Deutsch lernen"
+    },
+    {
+     "value": "das Zimmer aufräumen",
+     "label": "das Zimmer aufräumen"
+    },
+    {
+     "value": "ein Bier trinken",
+     "label": "ein Bier trinken"
+    },
+    {
+     "value": "nach Madrid fliegen",
+     "label": "nach Madrid fliegen"
+    },
+    {
+     "value": "ein Fest feiern",
+     "label": "ein Fest feiern"
+    }
+   ],
+   "x": 467,
+   "y": 1571,
+   "w": 226,
+   "h": 30
+  },
+  {
+   "id": "pair-4",
+   "group": "g3",
+   "kind": "select",
+   "label": "3 Wortpaar 5",
+   "answer": "die Zeitung lesen|Deutsch lernen|das Zimmer aufräumen|ein Bier trinken|nach Madrid fliegen|ein Fest feiern",
+   "unordered": true,
+   "options": [
+    {
+     "value": "die Zeitung lesen",
+     "label": "die Zeitung lesen"
+    },
+    {
+     "value": "Deutsch lernen",
+     "label": "Deutsch lernen"
+    },
+    {
+     "value": "das Zimmer aufräumen",
+     "label": "das Zimmer aufräumen"
+    },
+    {
+     "value": "ein Bier trinken",
+     "label": "ein Bier trinken"
+    },
+    {
+     "value": "nach Madrid fliegen",
+     "label": "nach Madrid fliegen"
+    },
+    {
+     "value": "ein Fest feiern",
+     "label": "ein Fest feiern"
+    }
+   ],
+   "x": 695,
+   "y": 1571,
+   "w": 226,
+   "h": 30
+  },
+  {
+   "id": "pair-5",
+   "group": "g3",
+   "kind": "select",
+   "label": "3 Wortpaar 6",
+   "answer": "die Zeitung lesen|Deutsch lernen|das Zimmer aufräumen|ein Bier trinken|nach Madrid fliegen|ein Fest feiern",
+   "unordered": true,
+   "options": [
+    {
+     "value": "die Zeitung lesen",
+     "label": "die Zeitung lesen"
+    },
+    {
+     "value": "Deutsch lernen",
+     "label": "Deutsch lernen"
+    },
+    {
+     "value": "das Zimmer aufräumen",
+     "label": "das Zimmer aufräumen"
+    },
+    {
+     "value": "ein Bier trinken",
+     "label": "ein Bier trinken"
+    },
+    {
+     "value": "nach Madrid fliegen",
+     "label": "nach Madrid fliegen"
+    },
+    {
+     "value": "ein Fest feiern",
+     "label": "ein Fest feiern"
+    }
+   ],
+   "x": 923,
+   "y": 1571,
+   "w": 228,
+   "h": 30
+  },
+  {
+   "id": "mark-straßenbahn",
+   "group": "g2a",
+   "kind": "checkbox",
+   "label": "2a straßenbahn",
+   "answer": "true",
+   "x": 405,
+   "y": 1074,
+   "w": 126,
+   "h": 29
+  },
+  {
+   "id": "mark-haltestelle",
+   "group": "g2a",
+   "kind": "checkbox",
+   "label": "2a haltestelle",
+   "answer": "true",
+   "x": 563,
+   "y": 1074,
+   "w": 102,
+   "h": 29
+  },
+  {
+   "id": "mark-bahnsteig",
+   "group": "g2a",
+   "kind": "checkbox",
+   "label": "2a bahnsteig",
+   "answer": "true",
+   "x": 688,
+   "y": 1074,
+   "w": 96,
+   "h": 29
+  },
+  {
+   "id": "mark-ubahn",
+   "group": "g2a",
+   "kind": "checkbox",
+   "label": "2a ubahn",
+   "answer": "true",
+   "x": 818,
+   "y": 1074,
+   "w": 64,
+   "h": 29
+  },
+  {
+   "id": "mark-gepäck",
+   "group": "g2a",
+   "kind": "checkbox",
+   "label": "2a gepäck",
+   "answer": "true",
+   "x": 928,
+   "y": 1074,
+   "w": 69,
+   "h": 29
+  },
+  {
+   "id": "mark-bus",
+   "group": "g2a",
+   "kind": "checkbox",
+   "label": "2a bus",
+   "answer": "true",
+   "x": 1050,
+   "y": 1074,
+   "w": 35,
+   "h": 29
+  },
+  {
+   "id": "mark-gleis",
+   "group": "g2a",
+   "kind": "checkbox",
+   "label": "2a gleis",
+   "answer": "true",
+   "x": 273,
+   "y": 1107,
+   "w": 45,
+   "h": 29
+  },
+  {
+   "id": "mark-flughafen",
+   "group": "g2a",
+   "kind": "checkbox",
+   "label": "2a flughafen",
+   "answer": "true",
+   "x": 372,
+   "y": 1107,
+   "w": 96,
+   "h": 29
+  },
+  {
+   "id": "mark-koffer",
+   "group": "g2a",
+   "kind": "checkbox",
+   "label": "2a koffer",
+   "answer": "true",
+   "x": 498,
+   "y": 1107,
+   "w": 60,
+   "h": 29
+  },
+  {
+   "id": "mark-taxi",
+   "group": "g2a",
+   "kind": "checkbox",
+   "label": "2a taxi",
+   "answer": "true",
+   "x": 590,
+   "y": 1107,
+   "w": 38,
+   "h": 29
   }
  ],
  "audio": [],
@@ -1469,6 +1795,10 @@
   {
    "id": "g1",
    "label": "Wiederholungsstation Wortschatz U1: Ergaenzen Sie"
+  },
+  {
+   "id": "g2a",
+   "label": "2a Zehn Wörter markieren"
   },
   {
    "id": "g2",
@@ -1488,7 +1818,8 @@
    "U2a word-snake: marking exercise, no fields; flugzeug yellow highlight is the printed example.",
    "U2b: key words per column (der 4, das 3+printed Flugzeug example, die 3); extra free-space boxes at the table bottom left without fields.",
    "U3: blue cursive 'ein Geschenk bekommen,' is the printed example; both blank rules accept any of the 6 remaining pairs.",
-   "OCR missed the cursive 'Geschenk' and the Modul 4 tab; boxes measured from hi-res render."
+   "OCR missed the cursive 'Geschenk' and the Modul 4 tab; boxes measured from hi-res render.",
+   "2026-11-16: Originalscan.14letterwords,10tapmarks,10articlewriting,6wordpairselects. Duplicatesrejectedpercolumnandpairs."
   ]
  }
 }
