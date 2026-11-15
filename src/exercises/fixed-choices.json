@@ -2984,5 +2984,49 @@
       ],
       "source": "2b: choose and place words from the printed word bank."
     }
+  ],
+  "ab-a11:32": [
+    {
+      "ids": [
+        "u10b-1a",
+        "u10b-1b",
+        "u10b-2a",
+        "u10b-2b",
+        "u10b-3a",
+        "u10b-3b",
+        "u10b-4b"
+      ],
+      "options": [
+        "schwer",
+        "hässlich",
+        "lang",
+        "schön",
+        "klein",
+        "kurz",
+        "groß",
+        "leicht"
+      ],
+      "source": "10b: select among the eight adjectives reconstructed in 10a"
+    },
+    {
+      "ids": [
+        "u11-los-b",
+        "u11-los-c",
+        "u11-los-d",
+        "u11-los-e"
+      ],
+      "options": [
+        "L",
+        "S",
+        "E",
+        "U",
+        "P",
+        "O",
+        "T",
+        "A",
+        "R"
+      ],
+      "source": "11: select printed answer code letters to form solution"
+    }
   ]
 }
