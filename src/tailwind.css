@@ -794,6 +794,12 @@ body[data-audio="tts"] .howtoTtsNote{display:block}
 .authBtnPrimary:disabled{opacity:.55;cursor:default}
 .authBtnGhost{background:none;color:#713c46;border-color:#d8c8a6}
 .authBtnGhost:hover{background:#f1e9d8}
+.profileSyncRow{display:flex;align-items:center;gap:7px;margin:-2px 0 8px;font-size:11.5px;color:#6d7a6f}
+.profileSyncDot{width:8px;height:8px;border-radius:50%;background:#b9b2a0;flex-shrink:0}
+.profileSyncRow[data-state="syncing"] .profileSyncDot{background:#d9a62e;animation:profileSyncPulse 1.1s ease-in-out infinite}
+.profileSyncRow[data-state="synced"] .profileSyncDot{background:#3f8f4f}
+.profileSyncRow[data-state="error"] .profileSyncDot{background:#bc4242}
+@keyframes profileSyncPulse{50%{opacity:.35}}
 .authOr{display:flex;align-items:center;gap:8px;margin:10px 0 2px;font-size:11px;font-weight:700;color:#8b7f6a}
 .authOr::before,.authOr::after{content:"";flex:1;height:1px;background:#e2d8c2}
 .authForm{display:flex;flex-direction:column;gap:7px;margin-top:6px}
