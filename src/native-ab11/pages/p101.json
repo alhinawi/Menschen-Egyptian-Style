@@ -1,0 +1,563 @@
+{
+ "items": [
+  {
+   "k": "art",
+   "src": "assets/native-ab11/ab-a11-p101-bg.jpg",
+   "x": 0,
+   "y": 0,
+   "w": 901,
+   "h": 1275
+  },
+  {
+   "k": "text",
+   "t": "Teil 4: Bis bald, Paul!",
+   "x": 178.75,
+   "y": 257.42,
+   "s": 21.9,
+   "f": "s",
+   "b": 1,
+   "ls": -0.46,
+   "c": 1
+  },
+  {
+   "k": "text",
+   "t": "Paul und Anja sind in einem Café am Münchner Haupt-",
+   "x": 179.47,
+   "y": 290.89,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.345
+  },
+  {
+   "k": "text",
+   "t": "bahnhof. Paul trinkt einen Cappuccino und Anja einen",
+   "x": 187.47,
+   "y": 311.96,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.233
+  },
+  {
+   "k": "text",
+   "t": "Espresso.",
+   "x": 188.19,
+   "y": 333.75,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.79
+  },
+  {
+   "k": "text",
+   "t": "Zwei Wochen war Paul in München. Jetzt fährt er",
+   "x": 178.75,
+   "y": 354.1,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.072
+  },
+  {
+   "k": "text",
+   "t": "wieder nach Wien.",
+   "x": 187.47,
+   "y": 375.89,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.315
+  },
+  {
+   "k": "text",
+   "t": "„Wie spät ist es?“, fragt Anja.",
+   "x": 178.75,
+   "y": 396.96,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.072
+  },
+  {
+   "k": "text",
+   "t": "„13:35 Uhr“, sagt Paul.",
+   "x": 178.75,
+   "y": 415.85,
+   "s": 13.7,
+   "f": "s",
+   "ls": 0.114
+  },
+  {
+   "k": "text",
+   "t": "„Und wann fährt dein Zug?“",
+   "x": 178.75,
+   "y": 436.92,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.093
+  },
+  {
+   "k": "text",
+   "t": "„Um 14:02 Uhr.“",
+   "x": 178.75,
+   "y": 457.99,
+   "s": 13.7,
+   "f": "s",
+   "ls": 0.26
+  },
+  {
+   "k": "text",
+   "t": "„Oh je, wir haben nicht mehr viel Zeit.“",
+   "x": 178.75,
+   "y": 481.23,
+   "s": 13.7,
+   "f": "s",
+   "ls": 0.006
+  },
+  {
+   "k": "text",
+   "t": "„Ich finde, wir hatten zwei sehr schöne Wochen",
+   "x": 178.75,
+   "y": 502.3,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.157
+  },
+  {
+   "k": "text",
+   "t": "zusammen“, sagt Paul.",
+   "x": 187.47,
+   "y": 524.1,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.221
+  },
+  {
+   "k": "text",
+   "t": "„Ja, das finde ich auch. Was hat dir besonders gut",
+   "x": 179.47,
+   "y": 545.17,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.205
+  },
+  {
+   "k": "text",
+   "t": "gefallen in München, Paul?“",
+   "x": 185.29,
+   "y": 564.05,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.128
+  },
+  {
+   "k": "text",
+   "t": "„Hmm … ich weiß nicht … Mir haben viele Dinge",
+   "x": 179.47,
+   "y": 587.3,
+   "s": 13.7,
+   "f": "s",
+   "ls": 0.143
+  },
+  {
+   "k": "text",
+   "t": "gefallen: das Rathaus, die Frauenkirche, das Olympia-",
+   "x": 187.47,
+   "y": 608.37,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.244
+  },
+  {
+   "k": "text",
+   "t": "stadion, der Englische Garten … Und in der Disco hat",
+   "x": 187.47,
+   "y": 629.44,
+   "s": 13.7,
+   "f": "s",
+   "ls": 0.006
+  },
+  {
+   "k": "text",
+   "t": "es mir sehr gut gefallen. Du tanzt wirklich super …“",
+   "x": 188.19,
+   "y": 651.23,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.015
+  },
+  {
+   "k": "text",
+   "t": "„Oh, danke! Du tanzt aber auch nicht schlecht“,",
+   "x": 541.33,
+   "y": 249.48,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.154
+  },
+  {
+   "k": "text",
+   "t": "sagt Anja.",
+   "x": 550.05,
+   "y": 271.28,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.336
+  },
+  {
+   "k": "text",
+   "t": "„Auch das Oktoberfest war toll.“",
+   "x": 541.33,
+   "y": 292.34,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.149
+  },
+  {
+   "k": "text",
+   "t": "„Das hat dir wirklich so gut gefallen?“",
+   "x": 541.33,
+   "y": 313.41,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.191
+  },
+  {
+   "k": "text",
+   "t": "„Ja, wirklich. Ich mag Brezen und Bier.“",
+   "x": 541.33,
+   "y": 334.48,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.02
+  },
+  {
+   "k": "text",
+   "t": "Herr Rossmann bellt.",
+   "x": 541.33,
+   "y": 355.55,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.136
+  },
+  {
+   "k": "text",
+   "t": "„Ich weiß, dir hat das Oktoberfest keinen Spaß",
+   "x": 541.33,
+   "y": 376.62,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.214
+  },
+  {
+   "k": "text",
+   "t": "gemacht“, sagt Anja. „Zu viele Leute, zu viel Bier,",
+   "x": 549.32,
+   "y": 398.41,
+   "s": 13.7,
+   "f": "s",
+   "ls": 0.001
+  },
+  {
+   "k": "text",
+   "t": "zu laute Musik.“",
+   "x": 549.32,
+   "y": 419.48,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.01
+  },
+  {
+   "k": "text",
+   "t": "„Und was hat dir besonders gut gefallen, Anja?“",
+   "x": 541.33,
+   "y": 441.28,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.222
+  },
+  {
+   "k": "text",
+   "t": "„Der lange Spaziergang gestern … Wir haben viel",
+   "x": 541.33,
+   "y": 462.34,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.152
+  },
+  {
+   "k": "text",
+   "t": "geredet. Das war sehr schön.“",
+   "x": 549.32,
+   "y": 483.41,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.179
+  },
+  {
+   "k": "text",
+   "t": "„Ja, das war wirklich schön.“",
+   "x": 541.33,
+   "y": 504.48,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.077
+  },
+  {
+   "k": "text",
+   "t": "Paul und Anja sehen sich lange an.",
+   "x": 564.58,
+   "y": 533.54,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.336
+  },
+  {
+   "k": "text",
+   "t": "Paul nimmt Anjas Hand¹ und …",
+   "x": 564.58,
+   "y": 554.61,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.221
+  },
+  {
+   "k": "text",
+   "t": "„VORSICHT AUF GLEIS ZWEI! IN FÜNF MINUTEN",
+   "x": 563.85,
+   "y": 572.77,
+   "s": 13.7,
+   "f": "s",
+   "ls": 0.2
+  },
+  {
+   "k": "text",
+   "t": "FÄHRT DER ZUG NACH WIEN AB!“",
+   "x": 573.3,
+   "y": 593.84,
+   "s": 13.7,
+   "f": "s",
+   "ls": 0.25
+  },
+  {
+   "k": "text",
+   "t": "„Ach, warum gerade jetzt?“, denkt Paul.",
+   "x": 563.85,
+   "y": 617.81,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.081
+  },
+  {
+   "k": "text",
+   "t": "Herr Rossmann bellt.",
+   "x": 563.85,
+   "y": 639.61,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.213
+  },
+  {
+   "k": "text",
+   "t": "„Ja, ich weiß, Herr Rossmann, unser Zug ist da.",
+   "x": 563.85,
+   "y": 660.68,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.081
+  },
+  {
+   "k": "text",
+   "t": "Ich komme ja schon“, sagt Paul.",
+   "x": 573.3,
+   "y": 681.75,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.212
+  },
+  {
+   "k": "text",
+   "t": "Sie gehen gemeinsam zum Bahnsteig.",
+   "x": 563.85,
+   "y": 703.54,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.302
+  },
+  {
+   "k": "text",
+   "t": "„Möchtest du nicht noch in München bleiben?“,",
+   "x": 563.85,
+   "y": 723.88,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.161
+  },
+  {
+   "k": "text",
+   "t": "fragt Anja. „Eine Woche oder zwei …?“",
+   "x": 573.3,
+   "y": 745.68,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.0
+  },
+  {
+   "k": "text",
+   "t": "„Ich möchte gern, aber ich habe morgen einen",
+   "x": 563.85,
+   "y": 766.75,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.252
+  },
+  {
+   "k": "text",
+   "t": "Termin in Wien.“",
+   "x": 572.57,
+   "y": 784.91,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.126
+  },
+  {
+   "k": "text",
+   "t": "„Rufst du mich an?“",
+   "x": 563.85,
+   "y": 806.7,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.267
+  },
+  {
+   "k": "text",
+   "t": "„Ja, ich rufe dich an. Schreibst du mir mal eine",
+   "x": 563.85,
+   "y": 830.68,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.166
+  },
+  {
+   "k": "text",
+   "t": "E-Mail?“",
+   "x": 568.94,
+   "y": 848.11,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.109
+  },
+  {
+   "k": "text",
+   "t": "„Ich schreibe dir viele E-Mails.“",
+   "x": 563.85,
+   "y": 869.91,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.215
+  },
+  {
+   "k": "text",
+   "t": "„Besuchst du mich einmal in Wien?“ fragt Paul.",
+   "x": 563.85,
+   "y": 890.98,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.195
+  },
+  {
+   "k": "text",
+   "t": "„Oh ja, das ist eine gute Idee. Ich komme gern",
+   "x": 563.85,
+   "y": 914.95,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.166
+  },
+  {
+   "k": "text",
+   "t": "nach Wien.“",
+   "x": 572.57,
+   "y": 936.02,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.204
+  },
+  {
+   "k": "text",
+   "t": "„VORSICHT AUF GLEIS ZWEI! IHR ZUG FÄHRT",
+   "x": 563.12,
+   "y": 954.91,
+   "s": 13.7,
+   "f": "s",
+   "ls": 0.153
+  },
+  {
+   "k": "text",
+   "t": "JETZT AB!“",
+   "x": 571.12,
+   "y": 975.98,
+   "s": 13.7,
+   "f": "s",
+   "ls": 0.152
+  },
+  {
+   "k": "text",
+   "t": "Paul und Herr Rossmann steigen ein.",
+   "x": 563.85,
+   "y": 999.95,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.309
+  },
+  {
+   "k": "text",
+   "t": "„Also, mach's gut, Paul.“",
+   "x": 563.12,
+   "y": 1021.02,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.066
+  },
+  {
+   "k": "text",
+   "t": "„Du auch, pass auf dich auf! Bis bald.“",
+   "x": 563.12,
+   "y": 1042.09,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.188
+  },
+  {
+   "k": "text",
+   "t": "„Ja, bis bald.“",
+   "x": 563.12,
+   "y": 1063.88,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.08
+  },
+  {
+   "k": "text",
+   "t": "Herr Rossmann bellt.",
+   "x": 563.12,
+   "y": 1084.95,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.404
+  },
+  {
+   "k": "text",
+   "t": "„Tschüs, Herr Rossmann. Bis bald!“",
+   "x": 563.12,
+   "y": 1103.84,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.312
+  },
+  {
+   "k": "text",
+   "t": "Der Zug fährt ab.",
+   "x": 563.85,
+   "y": 1124.18,
+   "s": 13.7,
+   "f": "s",
+   "ls": -0.181
+  }
+ ]
+}
