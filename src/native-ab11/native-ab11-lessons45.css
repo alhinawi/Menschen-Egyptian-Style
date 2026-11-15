@@ -83,3 +83,19 @@
 .mP33Radio{position:absolute;appearance:none;border:1px solid #d9d4ad!important;border-radius:50%!important;width:15px!important;height:15px!important;min-width:0!important;min-height:0!important;margin:0!important;padding:0!important;background:transparent!important}.mP33Radio:checked:after{content:'×';position:absolute;left:0;top:-4px;color:#2458a6;font:22px/18px ABScanSans,Arial,sans-serif}
 .mP33Vowels>div{height:21px;line-height:21px}
 .mP33Art{position:absolute;overflow:hidden}.mP33Art .mP33Sprite{position:absolute!important;max-width:none!important;max-height:none!important;object-fit:fill!important;margin:0!important}
+
+/* Page 34 test, retaining genuine writing and printed examples. */
+.nativeAB11.nativeAB11Lessons45[data-native-ab11-page='34'] .mCanvas{width:901px;height:1275px}
+.nativeAB11Lessons45[data-native-ab11-page='34'] .mCanvas .mText{font:16px/21px KbDroid,Georgia,serif;transform:scaleX(.96);transform-origin:left top}
+.nativeAB11Lessons45[data-native-ab11-page='34'] .mCanvas .mHeader{font:27px/33px KbDroid,Georgia,serif;letter-spacing:0}
+.nativeAB11Lessons45[data-native-ab11-page='34'] .mCanvas .mTitle{font:700 18px/22px ABScanSans,Arial,sans-serif;transform:translateY(-3px) scaleX(.965)}
+.nativeAB11Lessons45[data-native-ab11-page='34'] .mCanvas .mPoints{font:12px/15px ABScanSans,Arial,sans-serif;font-variant:small-caps;letter-spacing:1px}
+.nativeAB11Lessons45[data-native-ab11-page='34'] .mCanvas .mBank{font:15px/20px ABScanSans,Arial,sans-serif;color:#203e87;background:#fffdd4;width:max-content!important;transform:scaleX(.91)}
+.nativeAB11Lessons45[data-native-ab11-page='34'] .mCanvas .mP34Rail{font:700 9px/12px ABScanSans,Arial,sans-serif;writing-mode:vertical-rl;transform:rotate(180deg);transform-origin:center center;color:#203e87;letter-spacing:1px}
+.nativeAB11Lessons45[data-native-ab11-page='34'] .mCanvas .mField{border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;font:14px/20px KbDroid,Georgia,serif!important;height:20px!important}
+.nativeAB11Lessons45[data-native-ab11-page='34'] .mFooter{display:none}
+.mP34Rule{position:absolute;left:201px;top:160px;width:636px;height:1px;background:#97ce00}
+.mP34Number{position:absolute;min-width:26px;height:18px;font:700 17px/18px Georgia,serif;background:#97ce00;border-top:1px solid #dc321e;border-left:1px solid #dc321e;text-align:center;color:white}
+.mP34Art{position:absolute;overflow:hidden}.mP34Art .mP34Sprite{position:absolute!important;max-width:none!important;max-height:none!important;object-fit:fill!important;margin:0!important}
+.mP34Square{position:absolute;width:9px;height:9px;background:#153c85}.mP34Triangle{position:absolute;width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:9px solid #0bb529}
+.nativeAB11Lessons45[data-native-ab11-page='34'] .mCanvas .mBank{font-size:16px}

@@ -1381,6 +1381,44 @@
   "ab-a11:34": [
     {
       "ids": [
+        "t4-b",
+        "t4-c",
+        "t4-d",
+        "t4-e"
+      ],
+      "options": [
+        "Der",
+        "Das",
+        "Die"
+      ],
+      "source": "4: select definite articles"
+    },
+    {
+      "ids": [
+        "t5-b"
+      ],
+      "options": [
+        "er",
+        "es",
+        "sie"
+      ],
+      "source": "5b: personal pronoun within a sentence"
+    },
+    {
+      "ids": [
+        "t5-c",
+        "t5-d",
+        "t5-e"
+      ],
+      "options": [
+        "Er",
+        "Es",
+        "Sie"
+      ],
+      "source": "5c-e: personal pronouns starting sentences"
+    },
+    {
+      "ids": [
         "t6-a",
         "t6-b",
         "t6-c",
@@ -1398,7 +1436,7 @@
         "zu teuer",
         "Brauchen Sie"
       ],
-      "source": "6: exact printed dialogue bank"
+      "source": "6: match printed conversation phrases"
     }
   ],
   "ab-a11:36": [
