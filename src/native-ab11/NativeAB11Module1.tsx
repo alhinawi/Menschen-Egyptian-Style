@@ -255,25 +255,35 @@ export function NativeAB11Module1({page}:{page:string}){
  {heading('k4',1107,'10 Familienmitglieder:','L03')}{area('k4-eigen',1126)}
  <div className="mP26Footer"><em>Modul 1</em>26&nbsp; | &nbsp;sechsundzwanzig</div>
  </>})()}
- {page==='27'&&<>
- {head('SELBSTEINSCHÄTZUNG')}{ink('dkich-ink',590,129,210,48,'Das kann ich!')}{txt(135,206,320,'Ich kann auch …','mBlue')}{lights(190)}
- {txt(135,233,603,'… W-Fragen stellen und auf Fragen antworten:  L01/L02/L03','mTitle')}{confidence('s8',225)}
- {['heißt ihr?','kommen Madita und Mia?','sprichst du?','wohnen Sie?','ist das?'].map((s,i)=>{const y=263+i*28,x=[357,465,370,380,376][i],w=[173,137,170,228,240][i];return <span key={s}>{txt(154,y,16,'▪')}{f('s8-'+(i+1)+'q',173,y-2,98)}{txt(277,y,x-281,s,'mSmall')}{txt(x-15,y,15,'▴','mSmall')}{f('s8-'+(i+1)+'a',x,y-2,w)}{txt(x+w+4,y,200,['Sandra und Simone.','aus Schweden.','Spanisch und Englisch.','in Madrid.','ist Pedro.'][i],'mSmall')}</span>})}
- {check('s8',580,409,{...answers('s8'),'s8-3q':'Was|Welche Sprachen'})}
- {txt(135,449,603,'… Aussagen verneinen (Negation):  L02','mTitle')}{confidence('s9',441)}{txt(154,478,105,'Markus wohnt')}{f('s9-1',264,476,108)}{txt(378,478,85,'in Köln und')}{txt(154,505,20,'ist')}{f('s9-2',180,503,108)}{txt(294,505,130,'verheiratet.')}{ink('markus-ink',580,461.5,165,65,'Markus: Stuttgart, Familienstand: Single')}{check('s9',580,532)}
- {txt(135,574,603,'… nach Familienmitgliedern fragen und sie benennen (Possessivartikel):  L03','mTitle')}{confidence('s10',566)}
- {txt(154,603,80,'▴ Sind das','mSmall')}{ink('deine-ink',276,603.5,68,29,'deine')}{txt(293,603,70,'Eltern?','mSmall')}{txt(366,603,100,'▪ Ja, das sind','mSmall')}{f('s10-1',472,601,86)}{txt(564,603,70,'Eltern. Das','mSmall')}{txt(366,630,66,'ist','mSmall')}{f('s10-2',436,628,83,'meine Mutter')}{txt(523,630,100,'Mutter und das','mSmall')}{txt(366,657,36,'ist','mSmall')}{f('s10-3',406,655,87)}{txt(498,657,100,'Vater.','mSmall')}{check('s10',636,657)}
- {txt(135,704,603,'… Ja-/Nein-Fragen stellen und mit ja/nein/doch antworten:  L03','mTitle')}{confidence('s11',696)}
- {txt(154,733,17,'▪')}{f('s11-1q',174,731,80)}{txt(260,733,230,'das deine Eltern?')}
- {txt(154,761,22,'☺ ▴','mSmall')}{f('s11-1a',181,759,199)}{txt(391,761,22,'☹ ▴','mSmall')}{f('s11-1b',418,759,228)}
- {txt(154,789,17,'▪')}{f('s11-2q',174,787,80)}{txt(260,789,330,'dein Bruder nicht verheiratet?')}
- {txt(154,817,22,'☺ ▴','mSmall')}{f('s11-2a',181,815,199)}{txt(391,817,22,'☹ ▴','mSmall')}{f('s11-2b',418,815,228)}{check('s11',658,815)}
- {txt(135,867,640,'Üben / Wiederholen möchte ich noch …','mBlue')}{open('ueben',135,892,557,28,'Üben und Wiederholen eigene Notiz')}
- {txt(135,951,650,'RÜCKBLICK','mHeader')}{txt(135,996,650,'Wählen Sie eine Aufgabe zu Lektion 1','mBlue')}
- {title('1',1034,'Wer ist das? Sehen Sie im Kursbuch auf den Seiten 9 und 10 nach und schreiben Sie.','',135,710)}
- {['nicole','paco','wachter'].map((s,i)=><span key={s}>{art(s,172+i*194,1065,102,98)}{lined('r1-person-'+i,[189,441,690][i]*K,[163,166,162][i]*K,rt([1167,1146,1134][i]),3,[2,2,0][i],'Rückblick Person '+(i+1),[-6,-.5,-.5][i])}</span>)}{ink('ex1-ink',175,rt(1116),685,119)}{save('r1',135,rt(1246))}
- {title('2',1284,'Suchen Sie Fotos. Wer ist das? Stellen Sie die Personen vor.','',135,710)}{art('mesut',172,1304,102,118)}{ink('ex2-ink',340,rt(1305),500,107)}{lined('r2-left',360*K,170*K,rt(1401),1,0,'Rückblick eigene Person links',-7)}{lined('r2-personen',644*K,158*K,rt(1356),3,0,'Rückblick eigene Personen vorstellen')}
- </>}
+ {page==='27'&&(()=>{
+ const txt=(x:number,y:number,w:number,s:string,c='')=><div className={'mText '+c} style={{left:x,top:y,width:w}}><Words s={s}/></div>;
+ const f=(id:string,x:number,y:number,w:number)=><ChoiceInput className="mField" data-native-field={id} aria-label={id} style={{left:x,top:y,width:w}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
+ const art=(n:string,x:number,y:number,w:number,h:number)=><PageImage className="mArt" alt={'Originalabbildung '+n} src={'assets/native-ab11/p27-'+n+'.png'} style={{left:x,top:y,width:w,height:h}}/>;
+ const rate=(id:string,y:number)=><>{[0,1,2].map(i=><ChoiceInput key={i} className="mRadio" type="radio" name={'p27-'+id} aria-label={'Selbsteinschätzung '+id+' '+['grün','gelb','rot'][i]} style={{left:755+i*32,top:y}} checked={v['confidence-'+id]===''+i} onChange={()=>set('confidence-'+id,''+i)}/>)}</>;
+ const heading=(id:string,y:number,s:string,l:string)=><><div className="mText" style={{left:135,top:y,width:680}}><b><Words s={'… '+s}/></b>{'  '+l}</div>{rate(id,y+1)}</>;
+ const c=(id:string,x:number,y:number,expected=answers(id))=><div className="mCheck" data-native-task={id} style={{left:x,top:y}}><CheckButton onClick={()=>G({...graded,[id]:Object.entries(expected).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}/><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const area=(id:string,x:number,y:number,w:number,h:number,deg=0)=><textarea className="mP27Area" data-native-field={id} aria-label={id} style={{left:x,top:y,width:w,height:h,transform:`rotate(${deg}deg)`}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
+ return <>{txt(132,123,600,'SELBSTEINSCHÄTZUNG','mHeader')}{art('dkich-ink',502,120,176,40)}<div className="mP27Module"/>{txt(134,198,320,'Ich kann auch …','mBlue')}
+ <PageImage className="mArt" alt="grün gelb rot" src="assets/native-ab11/p26-lights.png" style={{left:749,top:185,width:90,height:27}}/>
+ {heading('s8',223,'W-Fragen stellen und auf Fragen antworten:','L01/L02/L03')}
+ {['heißt ihr?','kommen Madita und Mia?','sprichst du?','wohnen Sie?','ist das?'].map((s,i)=>{const y=243+i*20,x=[361,467,375,377,379][i],w=[199,133,165,250,265][i];return <span key={s}>{txt(154,y,16,'▪')}{f('s8-'+(i+1)+'q',168,y-7,[100,100,100,100,133][i])}{txt(i===4?305:272,y,220,s)}{txt(x-15,y,15,'▴')}{f('s8-'+(i+1)+'a',x,y-7,w)}{txt(x+w+4,y,220,['Sandra und Simone.','aus Schweden.','Spanisch und Englisch.','in Madrid.','ist Pedro.'][i])}</span>})}
+ {c('s8',704,329,{...answers('s8'),'s8-3q':'Was|Welche Sprachen'})}
+ {heading('s9',361,'Aussagen verneinen (Negation):','L02')}{txt(154,382,110,'Markus wohnt')}{f('s9-1',252,375,118)}{txt(374,382,95,'in Köln und')}{txt(154,403,25,'ist')}{f('s9-2',176,396,104)}{txt(284,403,130,'verheiratet.')}{art('markus-ink',485,365,139,55)}{c('s9',704,403)}
+ {heading('s10',440,'nach Familienmitgliedern fragen und sie benennen (Possessivartikel):','L03')}
+ {txt(154,460,85,'▴ Sind das')}{art('deine-ink',231,450,57,25)}{txt(288,460,70,'Eltern?')}{txt(353,460,96,'▪ Ja, das sind')}{f('s10-1',446,453,82)}{txt(533,460,93,'Eltern. Das ist')}{f('s10-2',628,453,69)}{txt(366,480,125,'Mutter und das ist')}{f('s10-3',490,473,73)}{txt(568,480,90,'Vater.')}{c('s10',704,477)}
+ {heading('s11',519,'Ja-/Nein-Fragen stellen und mit ja/nein/doch antworten:','L03')}
+ {txt(154,540,17,'▪')}{f('s11-1q',169,533,72)}{txt(245,540,210,'das deine Eltern?')}{txt(154,560,43,'☺ ▴')}{f('s11-1a',195,553,161)}{txt(366,560,38,'☹ ▴')}{f('s11-1b',403,553,158)}
+ {txt(154,580,17,'▪')}{f('s11-2q',169,573,62)}{txt(235,580,330,'dein Bruder nicht verheiratet?')}{txt(154,600,43,'☺ ▴')}{f('s11-2a',195,593,161)}{txt(366,600,38,'☹ ▴')}{f('s11-2b',403,593,158)}{c('s11',704,599)}
+ {txt(135,643,640,'Üben / Wiederholen möchte ich noch …','mBlue')}{area('ueben',135,662,557,22)}
+ {txt(136,716,650,'RÜCKBLICK','mP27Back')}
+ <div className="mP27Banner">Wählen Sie eine Aufgabe zu Lektion <mark>1</mark><i/></div>
+ {art('find-icon',106,810,20,21)}<div className="mP27Number" style={{top:811}}>1</div>{txt(170,808,700,'Wer ist das? Sehen Sie im Kursbuch auf den Seiten 9 und 10 nach und schreiben Sie.','mTitle')}
+ {art('nicole-source',171,840,102,100)}{art('paco-source',364,837,98,91)}{art('wachter-source',564,834,105,89)}{art('ex1-ink',146,935,575,100)}
+ {f('r1-1a',202,951,94)}{f('r1-1b',261,972,38)}{f('r1-2a',397,937,110)}{f('r1-2b',388,958,119)}{f('r1-3a',578,933,136)}{f('r1-3b',578,954,136)}{c('r1',748,988)}{area('r1-person-0',162,988,137,22,-6)}{area('r1-person-1',369,982,139,22)}{area('r1-person-2',578,933,136,65)}
+ {art('photo-icon',103,1052,24,28)}<div className="mP27Number" style={{top:1055}}>2</div>{txt(170,1052,700,'Suchen Sie Fotos. Wer ist das? Stellen Sie die Personen vor.','mTitle')}{art('mesut',172,1083,102,119)}{art('ex2-ink',294,1094,420,90)}
+ {area('r2-left',307,1141,143,22,-7)}{area('r2-personen',558,1117,133,65)}
+ <div className="mP27Footer">siebenundzwanzig&nbsp; | &nbsp;27 <em>Modul 1</em></div>
+ </>})()}
  {page==='28'&&<>
  {head('RÜCKBLICK')}{txt(135,212,680,'Wählen Sie eine Aufgabe zu Lektion 2','mBlue')}
  {title('1',252,'Was ist richtig? Kreuzen Sie an und vergleichen Sie mit dem Kursbuch auf Seite 78.','',135,710)}
