@@ -2667,7 +2667,8 @@
   "notes": [
    "Literatur page (story Teil 3: Oh, ein Hut …!) - continuous two-column story text, no exercises, no fields.",
    "Hyphenation kept as printed: 'Spei-' + 'sekarte.'. German quote marks preserved.",
-   "The right-edge 'Modul' footer tab is cut off by the scan (only 'Mo' visible) - omitted rather than guessed."
+   "The right-edge 'Modul' footer tab is cut off by the scan (only 'Mo' visible) - omitted rather than guessed.",
+   "2026-11-16: Restored original full-page literature scan,exact source fonts,tilted two-column story,purple heading and illustration. No invented exercise fields. Existing word-tap layer retained."
   ]
  }
 }
