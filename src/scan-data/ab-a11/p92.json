@@ -1508,57 +1508,107 @@
   {
    "id": "u7-a",
    "group": "u7",
-   "kind": "text",
+   "kind": "select",
    "label": "a: Und wie … der Film?",
    "answer": "war",
-   "x": 338,
-   "y": 332,
-   "w": 95,
-   "h": 24
+   "x": 347,
+   "y": 333,
+   "w": 88,
+   "h": 30,
+   "options": [
+    {
+     "value": "war",
+     "label": "war"
+    },
+    {
+     "value": "hatte",
+     "label": "hatte"
+    }
+   ]
   },
   {
    "id": "u7-b",
    "group": "u7",
-   "kind": "text",
+   "kind": "select",
    "label": "b: Nein, ich … kein Geld.",
    "answer": "hatte",
-   "x": 362,
-   "y": 438,
-   "w": 112,
-   "h": 24
+   "x": 358,
+   "y": 435,
+   "w": 116,
+   "h": 30,
+   "options": [
+    {
+     "value": "war",
+     "label": "war"
+    },
+    {
+     "value": "hatte",
+     "label": "hatte"
+    }
+   ]
   },
   {
    "id": "u7-c",
    "group": "u7",
-   "kind": "text",
+   "kind": "select",
    "label": "c: Doch, gestern … ich noch",
    "answer": "hatte",
-   "x": 840,
-   "y": 332,
-   "w": 100,
-   "h": 24
+   "x": 889,
+   "y": 329,
+   "w": 113,
+   "h": 30,
+   "options": [
+    {
+     "value": "war",
+     "label": "war"
+    },
+    {
+     "value": "hatte",
+     "label": "hatte"
+    }
+   ]
   },
   {
    "id": "u7-d1",
    "group": "u7",
-   "kind": "text",
+   "kind": "select",
    "label": "d: Wie … die Party?",
    "answer": "war",
-   "x": 772,
-   "y": 405,
-   "w": 55,
-   "h": 24
+   "x": 793,
+   "y": 403,
+   "w": 67,
+   "h": 30,
+   "options": [
+    {
+     "value": "war",
+     "label": "war"
+    },
+    {
+     "value": "hatte",
+     "label": "hatte"
+    }
+   ]
   },
   {
    "id": "u7-d2",
    "group": "u7",
-   "kind": "text",
+   "kind": "select",
    "label": "d: Ich … viel Spaß.",
    "answer": "hatte",
-   "x": 848,
-   "y": 437,
-   "w": 80,
-   "h": 24
+   "x": 862,
+   "y": 434,
+   "w": 96,
+   "h": 30,
+   "options": [
+    {
+     "value": "war",
+     "label": "war"
+    },
+    {
+     "value": "hatte",
+     "label": "hatte"
+    }
+   ]
   },
   {
    "id": "u9-b-aus",
@@ -1568,10 +1618,10 @@
    "name": "u9-b",
    "value": "aus",
    "answer": "true",
-   "x": 256,
-   "y": 1298,
-   "w": 55,
-   "h": 24
+   "x": 250,
+   "y": 1302,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u9-b-in",
@@ -1581,10 +1631,10 @@
    "name": "u9-b",
    "value": "in",
    "answer": "false",
-   "x": 337,
-   "y": 1298,
-   "w": 42,
-   "h": 24
+   "x": 330,
+   "y": 1302,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u9-b-nach",
@@ -1594,10 +1644,10 @@
    "name": "u9-b",
    "value": "nach",
    "answer": "false",
-   "x": 407,
-   "y": 1298,
-   "w": 66,
-   "h": 24
+   "x": 400,
+   "y": 1302,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u9-c-aus",
@@ -1607,10 +1657,10 @@
    "name": "u9-c",
    "value": "aus",
    "answer": "false",
-   "x": 480,
-   "y": 1326,
-   "w": 60,
-   "h": 24
+   "x": 476,
+   "y": 1330,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u9-c-in",
@@ -1620,10 +1670,10 @@
    "name": "u9-c",
    "value": "in",
    "answer": "false",
-   "x": 561,
-   "y": 1326,
-   "w": 50,
-   "h": 24
+   "x": 557,
+   "y": 1330,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u9-c-nach",
@@ -1633,10 +1683,10 @@
    "name": "u9-c",
    "value": "nach",
    "answer": "true",
-   "x": 632,
-   "y": 1326,
-   "w": 85,
-   "h": 24
+   "x": 626,
+   "y": 1330,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u9-d-aus",
@@ -1646,10 +1696,10 @@
    "name": "u9-d",
    "value": "aus",
    "answer": "false",
-   "x": 530,
-   "y": 1388,
-   "w": 60,
-   "h": 24
+   "x": 523,
+   "y": 1387,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u9-d-in",
@@ -1659,10 +1709,10 @@
    "name": "u9-d",
    "value": "in",
    "answer": "false",
-   "x": 601,
-   "y": 1388,
-   "w": 50,
-   "h": 24
+   "x": 604,
+   "y": 1387,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u9-d-nach",
@@ -1673,9 +1723,9 @@
    "value": "nach",
    "answer": "true",
    "x": 673,
-   "y": 1388,
-   "w": 80,
-   "h": 24
+   "y": 1387,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u9-e-aus",
@@ -1685,10 +1735,10 @@
    "name": "u9-e",
    "value": "aus",
    "answer": "true",
-   "x": 373,
-   "y": 1418,
-   "w": 60,
-   "h": 24
+   "x": 367,
+   "y": 1416,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u9-e-in",
@@ -1698,10 +1748,10 @@
    "name": "u9-e",
    "value": "in",
    "answer": "false",
-   "x": 455,
-   "y": 1418,
-   "w": 48,
-   "h": 24
+   "x": 450,
+   "y": 1416,
+   "w": 19,
+   "h": 19
   },
   {
    "id": "u9-e-nach",
@@ -1711,10 +1761,60 @@
    "name": "u9-e",
    "value": "nach",
    "answer": "false",
-   "x": 525,
-   "y": 1418,
-   "w": 72,
-   "h": 24
+   "x": 519,
+   "y": 1416,
+   "w": 19,
+   "h": 19
+  },
+  {
+   "id": "own-8a-0",
+   "group": "own",
+   "kind": "text",
+   "label": "8a Samstag: Tagebuch im Perfekt",
+   "x": 300,
+   "y": 896,
+   "w": 517,
+   "h": 28
+  },
+  {
+   "id": "own-8a-1",
+   "group": "own",
+   "kind": "text",
+   "label": "8a Sonntag: Tagebuch im Perfekt",
+   "x": 300,
+   "y": 922,
+   "w": 517,
+   "h": 28
+  },
+  {
+   "id": "own-8a-2",
+   "group": "own",
+   "kind": "text",
+   "label": "8a Montag: Tagebuch im Perfekt",
+   "x": 300,
+   "y": 948,
+   "w": 517,
+   "h": 28
+  },
+  {
+   "id": "own-8a-3",
+   "group": "own",
+   "kind": "text",
+   "label": "8a Dienstag: Tagebuch im Perfekt",
+   "x": 300,
+   "y": 975,
+   "w": 517,
+   "h": 28
+  },
+  {
+   "id": "own-8b",
+   "group": "own",
+   "kind": "text",
+   "label": "8b Was haben Sie die letzten Tage gemacht?",
+   "x": 217,
+   "y": 1126,
+   "w": 718,
+   "h": 55
   }
  ],
  "audio": [],
@@ -1722,10 +1822,6 @@
   {
    "id": "u7",
    "label": "Ü7 Ergänzen Sie war oder hatte. (KB 6)"
-  },
-  {
-   "id": "u8",
-   "label": "Ü8 Ein Tagebuch (KB 6)"
   },
   {
    "id": "u9",
@@ -1738,7 +1834,8 @@
   "totalWords": 214,
   "notes": [
    "BASISTRAINING L12 Ü7-Ü9. Answers from AB Lösungsschlüssel L12 (7 a-d; 9 b-e).",
-   "Ü7a 'war' (first line) is a printed blue example. Ü8a Tagebuch: free writing, no fields; the diary-page entry 'Ich war auf Monas Geburtstagsfeier, wir haben lange gefeiert.' and Ü8b 'Mittwoch: Ich war im Deutschkurs,' are printed blue examples (words, no fields). Ü9a is a printed example (X on 'in'), no fields; key answers 9b-e. Speaker squares/triangles dropped; couple photo excluded."
+   "Ü7a 'war' (first line) is a printed blue example. Ü8a Tagebuch: free writing, no fields; the diary-page entry 'Ich war auf Monas Geburtstagsfeier, wir haben lange gefeiert.' and Ü8b 'Mittwoch: Ich war im Deutschkurs,' are printed blue examples (words, no fields). Ü9a is a printed example (X on 'in'), no fields; key answers 9b-e. Speaker squares/triangles dropped; couple photo excluded.",
+   "2026-11-16: Originalscan,war/hatteselects,fourprepositionX-radiogroups,4diarydaysandownnotesallpersist/reset."
   ]
  }
 }
