@@ -304,3 +304,20 @@ html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .hybridField
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='61'] .hybridCheck:nth-child(3){top:91%}
 
 .hybridScan[data-scan-book='ab-a11'][data-scan-page='61'] [data-field-id='l8-6-2'][data-ink-covered='true']{background:#fffefb!important}
+
+/* AB p62: source daytimes,choice circles and saved activity drawing cards. */
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='62'] .hybridField{font-size:1.5cqw!important;outline:0}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='62'] .hybridField:focus{outline:1px solid #26764c}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='62'] .hybridField.hybridCorrect{outline:1px solid #268250}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='62'] .hybridField.hybridWrong{outline:1px solid #bd3838}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='62'] select[data-field-id$='-l']{appearance:none!important;background-image:none!important;padding:0!important;text-align:center}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='62'] .hybridTools{display:contents}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='62'] .hybridCheck{position:absolute;left:94%;font-size:1.3cqw}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='62'] .hybridCheck output{font-size:1.2cqw;position:absolute;right:110%;top:0;width:7cqw;background:white}
+.hybridOpen62{position:absolute;left:20%;top:72.2%;font:1.15cqw Arial!important;padding:.2cqw!important;min-height:0!important;color:#174770;background:#fffdef;border:1px solid #bbaa77}
+.hybridDrawing62{position:absolute;z-index:80;left:15%;top:26%;width:75%;max-height:65%;overflow:auto;padding:2cqw;background:#fffef6;border:1px solid #ad9c76;box-shadow:0 0 0 100vmax #0009;pointer-events:auto;font:1.8cqw Arial;color:#173c62}.hybridDrawing62>button{float:right}.hybridDrawing62 h3{font-size:1.8cqw}.hybridDrawing62 section{margin:1cqw 0;border-top:1px solid #acacac}.hybridDrawing62 svg{display:block;width:100%;background:white;border:1px solid #c0bda9;touch-action:none}.hybridDrawing62 button{font-size:1.6cqw;padding:.5cqw;min-height:0!important}.hybridDrawing62 input{width:100%;font-size:1.8cqw;min-height:0!important;padding:.5cqw!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='62'] .hybridCheck:nth-child(1){top:32%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='62'] .hybridCheck:nth-child(2){top:63%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='62'] .hybridCheck:nth-child(3){top:82%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='62'] .hybridCheck:nth-child(4){top:94%}
+html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='62'] .hybridFields select.hybridField[data-field-id$='-l']{appearance:none!important;background-image:none!important;padding:0!important;text-align:center!important}
