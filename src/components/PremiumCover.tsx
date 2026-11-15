@@ -26,8 +26,8 @@ export function PremiumCover({src, alt}: {src: string; alt: string}) {
     <div className="premiumCoverEdition" lang="de"><span>{book}</span></div>
     <div className="coverOwner" dir={language === 'ar' ? 'rtl' : 'ltr'}>
       <div className="coverByline" style={{direction: language === 'ar' ? 'rtl' : 'ltr'}}>
-      <span className="coverSmall" lang={language} dir={language === 'ar' ? 'rtl' : 'ltr'}>{t('with')}</span>
-      <h1 lang="ar" dir="rtl">هناوي</h1>
+      <span className="coverSmall" lang={language} dir={language === 'ar' ? 'rtl' : 'ltr'}>{language === 'ar' ? 'مع' : 'By'}</span>
+      <h1 lang={language} dir={language === 'ar' ? 'rtl' : 'ltr'}>{language === 'ar' ? 'هناوي' : 'Hinawi'}</h1>
       </div>
       <div className="coverSocials" aria-label={t('Contact and social links')}><CoverSocials/></div>
     </div>
