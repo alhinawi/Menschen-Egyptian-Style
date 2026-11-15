@@ -57,3 +57,24 @@ html body .hybridScan[data-scan-book='ab-a11'][data-scan-page='43'] .hybridField
 .hybridWriting44{position:absolute;pointer-events:auto;display:flex;gap:.5cqw;font:1.2cqw/1.2 ABScanSans,Arial;color:#174770}
 .hybridWriting44>span{width:8%;padding-top:.4cqw}
 .hybridWriting44>textarea{width:92%;height:100%;min-height:0!important;resize:none;border:1px solid #8d7d5266;border-radius:0;background:#ffffffa0;font:1.4cqw/1.4 ABScanSans,Arial;color:#174770;padding:.3cqw}
+
+/* AB p45: vowel marking stays on source words; radio alternatives use X. */
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='45'] .hybridField{font-size:1.58cqw!important;outline:0}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='45'] .hybridField.hybridCorrect{outline:1px solid #268250}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='45'] .hybridField.hybridWrong{outline:1px solid #bd3838}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='45'] .hybridField[type=radio]:checked{background:linear-gradient(45deg,transparent 43%,#26764c 44% 56%,transparent 57%),linear-gradient(-45deg,transparent 43%,#26764c 44% 56%,transparent 57%)!important;border-radius:0!important}
+.hybridVowel45{pointer-events:none!important}
+.hybridVowel45>select{position:absolute;inset:0;width:100%;height:100%;pointer-events:auto;opacity:0;cursor:pointer}
+.hybridVowel45:focus-within{outline:1px solid #26764c!important}
+.hybridVowel45>i{position:absolute;bottom:-.1cqw;transform:translateX(-50%);pointer-events:none}
+.hybridVowel45>.lang{width:.85cqw;height:0;border-bottom:2px solid #d17f32}
+.hybridVowel45>.kurz{width:.4cqw;height:.4cqw;border-radius:100%;background:#78ae30}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='45'] .hybridAudio{font-size:1.2cqw!important}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='45'] .hybridTools{display:contents}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='45'] .hybridCheck{position:absolute;left:91%;font-size:1.3cqw}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='45'] .hybridCheck:nth-child(1){top:31%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='45'] .hybridCheck:nth-child(2){top:49%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='45'] .hybridCheck:nth-child(3){top:79%;left:41%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='45'] .hybridCheck:nth-child(4){top:89%;left:53%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='45'] .hybridCheck:nth-child(5){top:84%}
+.hybridScan[data-scan-book='ab-a11'][data-scan-page='45'] .hybridCheck output{font-size:1.3cqw;position:absolute;right:0;top:100%;background:white}
