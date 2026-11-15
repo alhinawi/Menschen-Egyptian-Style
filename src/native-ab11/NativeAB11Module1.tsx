@@ -153,12 +153,13 @@ export function NativeAB11Module1({page}:{page:string}){
  {head('LERNWORTSCHATZ')}<div className="nabModule">3</div>{art('strip',783,181,118,1004)}
  {title('1',208,'Wie heißen die Wörter in Ihrer Sprache? Übersetzen Sie.','',132,645)}
  {txt(165,244,280,'Familie','mTitle')}{txt(486,244,276,'Sprachen','mTitle')}
- {['Familie die, -n','Vater der, ¨','Mutter die, ¨','Eltern (Pl)','Sohn der, ¨e','Tochter die, ¨','Großvater der, ¨ /\n  Opa der, -s','Großmutter die, ¨ /\n  Oma die, -s','Großeltern (Pl)','Enkelin die, -nen','Enkel der, -','Bruder der, ¨','Schwester die, -n','Geschwister (Pl)','(Ehe)Mann der, ¨er','(Ehe)Frau die, -en'].map((s,i)=>{const y=267+i*23+(i>6?23:0)+(i>7?23:0);return <span key={s}>{txt(165,y,140,s)}{f('vocab-familie-'+i,309,y-2+(i===6||i===7?20:0),147,'Übersetzung '+s)}</span>})}
- {['Sprache die, -n','sprechen,\n  du sprichst, er spricht','Deutsch','Welche …?','Wie viele …?'].map((s,i)=>{const y=[267,299,351,385,409][i];return <span key={s}>{txt(486,y,150,s)}{f('vocab-sprache-'+i,608,y-2,151,'Übersetzung '+s)}</span>})}
- {txt(486,448,280,'Weitere wichtige Wörter','mTitle')}
- {['Bild das, -er','Freund der, -e','Kollege der, -n','Partner der, -','ja','nein','doch','ein bisschen','bitte','genau','mein','dein'].map((s,i)=>{const y=473+i*23+(i>3?12:0)+(i>9?8:0);return <span key={s}>{txt(486,y,140,s)}{f('vocab-wichtig-'+i,608,y-2,151,'Übersetzung '+s)}</span>})}
- {txt(176,674,270,'Notieren Sie Verben\nmit Vokalwechsel so:','mSmall mTip')}{txt(340,722,130,'ich spreche\ndu sprichst\nsie/er spricht','mExample')}
- {title('2',826,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','',132,642)}{open('eigener-wortschatz',168,859,595,300,'2 weiterer eigener Wortschatz')}
+ {['Familie die, -n','Vater der, ¨','Mutter die, ¨','Eltern (Pl)','Sohn der, ¨e','Tochter die, ¨','Großvater der, ¨ /\n  Opa der, -s','Großmutter die, ¨ /\n  Oma die, -s','Großeltern (Pl)','Enkelin die, -nen','Enkel der, -','Bruder der, ¨','Schwester die, -n','Geschwister (Pl)','(Ehe)Mann der, ¨er','(Ehe)Frau die, -en'].map((s,i)=>{const y=262+i*21.4+(i>6?21.4:0)+(i>7?21.4:0);return <span key={s}>{txt(165,y,140,s)}{f('vocab-familie-'+i,305,y-2+(i===6||i===7?21.4:0),152,'Übersetzung '+s)}</span>})}
+ {['Sprache die, -n','sprechen,\n  du sprichst, er spricht','Deutsch','Welche …?','Wie viele …?'].map((s,i)=>{const y=[262,294,347,379,400][i];return <span key={s}>{txt(486,y,150,s)}{f('vocab-sprache-'+i,605,y-2,157,'Übersetzung '+s)}</span>})}
+ {txt(486,440,280,'Weitere wichtige Wörter','mTitle')}
+ {['Bild das, -er','Freund der, -e','Kollege der, -n','Partner der, -','ja','nein','doch','ein bisschen','bitte','genau','mein','dein'].map((s,i)=>{const y=462+i*21.4+(i>3?10:0)+(i>9?10:0);return <span key={s}>{txt(486,y,140,s)}{f('vocab-wichtig-'+i,605,y-2,157,'Übersetzung '+s)}</span>})}
+ <div className="mP23Tip"><i>TIPP</i><div>Notieren Sie Verben<br/>mit Vokalwechsel so:</div></div>{art('ink-sprechen',338,716,100,64)}
+ {title('2',826,'Welche Wörter möchten Sie noch lernen? Notieren Sie.','',132,642)}<div className="mP23WritingRules"/>{open('eigener-wortschatz',168,840,595,320,'2 weiterer eigener Wortschatz')}
+ <div className="mP23Footer">dreiundzwanzig&nbsp;&nbsp; | &nbsp;&nbsp;23 <em>Modul 1</em></div>
  </>}
  {page==='24'&&<>
  {head('WIEDERHOLUNGSSTATION: WORTSCHATZ')}
