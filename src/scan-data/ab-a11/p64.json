@@ -1965,44 +1965,44 @@
    "group": "l8t-1",
    "kind": "text",
    "label": "Ü1 (b)",
-   "answer": "das Café",
+   "answer": "Café",
    "x": 528,
-   "y": 291,
-   "w": 167,
-   "h": 12
+   "y": 288,
+   "w": 165,
+   "h": 23
   },
   {
    "id": "l8t-1-c",
    "group": "l8t-1",
    "kind": "text",
    "label": "Ü1 (c)",
-   "answer": "das Kino",
+   "answer": "Kino",
    "x": 560,
-   "y": 316,
+   "y": 315,
    "w": 165,
-   "h": 12
+   "h": 23
   },
   {
    "id": "l8t-1-d",
    "group": "l8t-1",
    "kind": "text",
    "label": "Ü1 (d)",
-   "answer": "die Ausstellung",
-   "x": 505,
+   "answer": "Ausstellung",
+   "x": 504,
    "y": 341,
    "w": 165,
-   "h": 12
+   "h": 23
   },
   {
    "id": "l8t-1-e",
    "group": "l8t-1",
    "kind": "text",
    "label": "Ü1 (e)",
-   "answer": "die Disco",
-   "x": 762,
-   "y": 361,
-   "w": 163,
-   "h": 12
+   "answer": "Disco",
+   "x": 763,
+   "y": 356,
+   "w": 164,
+   "h": 23
   },
   {
    "id": "l8t-2-1",
@@ -2010,10 +2010,10 @@
    "kind": "text",
    "label": "Ü2 Blank 1",
    "answer": "Woche",
-   "x": 197,
-   "y": 470,
-   "w": 148,
-   "h": 12
+   "x": 219,
+   "y": 457,
+   "w": 128,
+   "h": 23
   },
   {
    "id": "l8t-2-2",
@@ -2021,10 +2021,10 @@
    "kind": "text",
    "label": "Ü2 Blank 2",
    "answer": "Tage",
-   "x": 405,
-   "y": 470,
-   "w": 117,
-   "h": 12
+   "x": 396,
+   "y": 453,
+   "w": 130,
+   "h": 23
   },
   {
    "id": "l8t-2-3",
@@ -2032,10 +2032,10 @@
    "kind": "text",
    "label": "Ü2 Blank 3",
    "answer": "Dienstag",
-   "x": 688,
-   "y": 470,
-   "w": 133,
-   "h": 12
+   "x": 692,
+   "y": 446,
+   "w": 130,
+   "h": 23
   },
   {
    "id": "l8t-2-4",
@@ -2043,10 +2043,10 @@
    "kind": "text",
    "label": "Ü2 Blank 4",
    "answer": "Mittwoch",
-   "x": 838,
-   "y": 470,
-   "w": 132,
-   "h": 12
+   "x": 829,
+   "y": 444,
+   "w": 130,
+   "h": 23
   },
   {
    "id": "l8t-2-5",
@@ -2054,10 +2054,10 @@
    "kind": "text",
    "label": "Ü2 Blank 5",
    "answer": "Donnerstag",
-   "x": 178,
-   "y": 498,
-   "w": 150,
-   "h": 12
+   "x": 187,
+   "y": 485,
+   "w": 130,
+   "h": 23
   },
   {
    "id": "l8t-2-6",
@@ -2065,10 +2065,10 @@
    "kind": "text",
    "label": "Ü2 Blank 6",
    "answer": "Freitag",
-   "x": 339,
-   "y": 498,
-   "w": 142,
-   "h": 12
+   "x": 325,
+   "y": 482,
+   "w": 130,
+   "h": 23
   },
   {
    "id": "l8t-2-7",
@@ -2076,10 +2076,10 @@
    "kind": "text",
    "label": "Ü2 Blank 7",
    "answer": "Samstag",
-   "x": 492,
-   "y": 498,
-   "w": 142,
-   "h": 12
+   "x": 460,
+   "y": 478,
+   "w": 130,
+   "h": 23
   },
   {
    "id": "l8t-2-8",
@@ -2087,21 +2087,10 @@
    "kind": "text",
    "label": "Ü2 Blank 8",
    "answer": "Sonntag",
-   "x": 645,
-   "y": 498,
-   "w": 87,
-   "h": 12
-  },
-  {
-   "id": "l8t-3-ag",
-   "group": "l8t-3",
-   "kind": "text",
-   "label": "Ü3 a Im Gespräch",
-   "answer": "Viertel vor acht",
-   "x": 310,
-   "y": 628,
-   "w": 136,
-   "h": 12
+   "x": 597,
+   "y": 474,
+   "w": 130,
+   "h": 23
   },
   {
    "id": "l8t-3-ar",
@@ -2109,10 +2098,10 @@
    "kind": "text",
    "label": "Ü3 a Im Radio/Fernsehen",
    "answer": "sieben Uhr fünfundvierzig",
-   "x": 310,
-   "y": 681,
-   "w": 136,
-   "h": 12
+   "x": 308,
+   "y": 632,
+   "w": 134,
+   "h": 52
   },
   {
    "id": "l8t-3-at",
@@ -2120,10 +2109,10 @@
    "kind": "text",
    "label": "Ü3 a Tageszeit",
    "answer": "Morgen",
-   "x": 310,
-   "y": 713,
-   "w": 136,
-   "h": 12
+   "x": 308,
+   "y": 688,
+   "w": 134,
+   "h": 27
   },
   {
    "id": "l8t-3-bg",
@@ -2131,10 +2120,10 @@
    "kind": "text",
    "label": "Ü3 b Im Gespräch",
    "answer": "zehn vor elf",
-   "x": 455,
-   "y": 628,
-   "w": 136,
-   "h": 12
+   "x": 449,
+   "y": 603,
+   "w": 134,
+   "h": 26
   },
   {
    "id": "l8t-3-br",
@@ -2142,21 +2131,10 @@
    "kind": "text",
    "label": "Ü3 b Im Radio/Fernsehen",
    "answer": "zehn Uhr fünfzig",
-   "x": 455,
-   "y": 681,
-   "w": 136,
-   "h": 12
-  },
-  {
-   "id": "l8t-3-bt",
-   "group": "l8t-3",
-   "kind": "text",
-   "label": "Ü3 b Tageszeit",
-   "answer": "Vormittag",
-   "x": 455,
-   "y": 713,
-   "w": 136,
-   "h": 12
+   "x": 449,
+   "y": 629,
+   "w": 134,
+   "h": 52
   },
   {
    "id": "l8t-3-cg",
@@ -2164,10 +2142,10 @@
    "kind": "text",
    "label": "Ü3 c Im Gespräch",
    "answer": "Viertel nach drei",
-   "x": 595,
-   "y": 628,
-   "w": 136,
-   "h": 12
+   "x": 590,
+   "y": 600,
+   "w": 134,
+   "h": 26
   },
   {
    "id": "l8t-3-cr",
@@ -2175,10 +2153,10 @@
    "kind": "text",
    "label": "Ü3 c Im Radio/Fernsehen",
    "answer": "fünfzehn Uhr fünfzehn",
-   "x": 595,
-   "y": 681,
-   "w": 136,
-   "h": 12
+   "x": 590,
+   "y": 626,
+   "w": 134,
+   "h": 52
   },
   {
    "id": "l8t-3-ct",
@@ -2186,10 +2164,10 @@
    "kind": "text",
    "label": "Ü3 c Tageszeit",
    "answer": "Nachmittag",
-   "x": 595,
-   "y": 713,
-   "w": 136,
-   "h": 12
+   "x": 590,
+   "y": 682,
+   "w": 134,
+   "h": 27
   },
   {
    "id": "l8t-3-dg",
@@ -2197,10 +2175,10 @@
    "kind": "text",
    "label": "Ü3 d Im Gespräch",
    "answer": "fünf vor halb acht",
-   "x": 740,
-   "y": 628,
-   "w": 136,
-   "h": 12
+   "x": 733,
+   "y": 597,
+   "w": 134,
+   "h": 26
   },
   {
    "id": "l8t-3-dr",
@@ -2208,10 +2186,10 @@
    "kind": "text",
    "label": "Ü3 d Im Radio/Fernsehen",
    "answer": "neunzehn Uhr fünfundzwanzig",
-   "x": 740,
-   "y": 681,
-   "w": 136,
-   "h": 12
+   "x": 733,
+   "y": 624,
+   "w": 134,
+   "h": 52
   },
   {
    "id": "l8t-3-dt",
@@ -2219,10 +2197,10 @@
    "kind": "text",
    "label": "Ü3 d Tageszeit",
    "answer": "Abend",
-   "x": 740,
-   "y": 713,
-   "w": 136,
-   "h": 12
+   "x": 733,
+   "y": 679,
+   "w": 134,
+   "h": 27
   },
   {
    "id": "l8t-3-eg",
@@ -2230,21 +2208,10 @@
    "kind": "text",
    "label": "Ü3 e Im Gespräch",
    "answer": "halb zwölf",
-   "x": 885,
-   "y": 628,
-   "w": 136,
-   "h": 12
-  },
-  {
-   "id": "l8t-3-er",
-   "group": "l8t-3",
-   "kind": "text",
-   "label": "Ü3 e Im Radio/Fernsehen",
-   "answer": "dreiundzwanzig Uhr dreißig",
-   "x": 885,
-   "y": 681,
-   "w": 136,
-   "h": 12
+   "x": 876,
+   "y": 595,
+   "w": 134,
+   "h": 26
   },
   {
    "id": "l8t-3-et",
@@ -2252,21 +2219,10 @@
    "kind": "text",
    "label": "Ü3 e Tageszeit",
    "answer": "Nacht",
-   "x": 885,
-   "y": 713,
-   "w": 136,
-   "h": 12
-  },
-  {
-   "id": "l8t-4-1",
-   "group": "l8t-4",
-   "kind": "text",
-   "label": "Ü4 Leider",
-   "answer": "haben wir keine Zeit.",
-   "x": 655,
-   "y": 786,
-   "w": 320,
-   "h": 12
+   "x": 876,
+   "y": 677,
+   "w": 134,
+   "h": 27
   },
   {
    "id": "l8t-4-2",
@@ -2274,10 +2230,10 @@
    "kind": "text",
    "label": "Ü4 Heute",
    "answer": "Vormittag spielt Thomas Tennis.",
-   "x": 650,
-   "y": 813,
-   "w": 325,
-   "h": 12
+   "x": 651,
+   "y": 800,
+   "w": 338,
+   "h": 23
   },
   {
    "id": "l8t-4-3",
@@ -2285,10 +2241,10 @@
    "kind": "text",
    "label": "Ü4 Um 14 Uhr",
    "answer": "treffe ich Anna.",
-   "x": 693,
-   "y": 839,
-   "w": 283,
-   "h": 12
+   "x": 691,
+   "y": 825,
+   "w": 298,
+   "h": 23
   },
   {
    "id": "l8t-4-4",
@@ -2296,10 +2252,10 @@
    "kind": "text",
    "label": "Ü4 Am Abend",
    "answer": "gehen wir ins Kino.",
-   "x": 688,
-   "y": 863,
-   "w": 288,
-   "h": 12
+   "x": 691,
+   "y": 850,
+   "w": 298,
+   "h": 23
   },
   {
    "id": "l8t-4-5",
@@ -2307,109 +2263,275 @@
    "kind": "text",
    "label": "Ü4 Vielleicht",
    "answer": "können wir am Sonntag fahren?",
-   "x": 686,
-   "y": 887,
-   "w": 290,
-   "h": 12
+   "x": 683,
+   "y": 875,
+   "w": 305,
+   "h": 23
   },
   {
    "id": "l8t-5-b",
    "group": "l8t-5",
-   "kind": "text",
+   "kind": "select",
    "label": "Ü5 b",
    "answer": "in",
-   "x": 542,
-   "y": 997,
-   "w": 63,
-   "h": 12
+   "x": 541,
+   "y": 992,
+   "w": 64,
+   "h": 24,
+   "options": [
+    {
+     "value": "um",
+     "label": "um"
+    },
+    {
+     "value": "am",
+     "label": "am"
+    },
+    {
+     "value": "in",
+     "label": "in"
+    }
+   ]
   },
   {
    "id": "l8t-5-c",
    "group": "l8t-5",
-   "kind": "text",
+   "kind": "select",
    "label": "Ü5 c",
    "answer": "am",
-   "x": 332,
-   "y": 1029,
+   "x": 333,
+   "y": 1022,
    "w": 76,
-   "h": 12
+   "h": 24,
+   "options": [
+    {
+     "value": "um",
+     "label": "um"
+    },
+    {
+     "value": "am",
+     "label": "am"
+    },
+    {
+     "value": "in",
+     "label": "in"
+    }
+   ]
   },
   {
    "id": "l8t-5-d1",
    "group": "l8t-5",
-   "kind": "text",
+   "kind": "select",
    "label": "Ü5 d (1)",
    "answer": "am",
    "x": 420,
-   "y": 1051,
-   "w": 68,
-   "h": 12
+   "y": 1047,
+   "w": 69,
+   "h": 24,
+   "options": [
+    {
+     "value": "um",
+     "label": "um"
+    },
+    {
+     "value": "am",
+     "label": "am"
+    },
+    {
+     "value": "in",
+     "label": "in"
+    }
+   ]
   },
   {
    "id": "l8t-5-d2",
    "group": "l8t-5",
-   "kind": "text",
+   "kind": "select",
    "label": "Ü5 d (2)",
    "answer": "um",
    "x": 585,
-   "y": 1054,
-   "w": 83,
-   "h": 12
+   "y": 1042,
+   "w": 82,
+   "h": 24,
+   "options": [
+    {
+     "value": "um",
+     "label": "um"
+    },
+    {
+     "value": "am",
+     "label": "am"
+    },
+    {
+     "value": "in",
+     "label": "in"
+    }
+   ]
   },
   {
    "id": "l8t-6-a",
    "group": "l8t-6",
-   "kind": "text",
+   "kind": "select",
    "label": "Ü6 (a)",
    "answer": "Hast du am Freitag Zeit?",
-   "x": 490,
-   "y": 1176,
-   "w": 145,
-   "h": 12
+   "x": 486,
+   "y": 1169,
+   "w": 151,
+   "h": 24,
+   "options": [
+    {
+     "value": "Wann denn?",
+     "label": "Wann denn?"
+    },
+    {
+     "value": "Da habe ich Zeit.",
+     "label": "Da habe ich Zeit."
+    },
+    {
+     "value": "Hast du am Freitag Zeit?",
+     "label": "Hast du am Freitag Zeit?"
+    },
+    {
+     "value": "Leider kann ich nicht.",
+     "label": "Leider kann ich nicht."
+    },
+    {
+     "value": "Und am Samstag?",
+     "label": "Und am Samstag?"
+    }
+   ]
   },
   {
    "id": "l8t-6-b",
    "group": "l8t-6",
-   "kind": "text",
+   "kind": "select",
    "label": "Ü6 (b)",
    "answer": "Leider kann ich nicht.",
-   "x": 225,
-   "y": 1201,
-   "w": 420,
-   "h": 12
+   "x": 223,
+   "y": 1198,
+   "w": 430,
+   "h": 24,
+   "options": [
+    {
+     "value": "Wann denn?",
+     "label": "Wann denn?"
+    },
+    {
+     "value": "Da habe ich Zeit.",
+     "label": "Da habe ich Zeit."
+    },
+    {
+     "value": "Hast du am Freitag Zeit?",
+     "label": "Hast du am Freitag Zeit?"
+    },
+    {
+     "value": "Leider kann ich nicht.",
+     "label": "Leider kann ich nicht."
+    },
+    {
+     "value": "Und am Samstag?",
+     "label": "Und am Samstag?"
+    }
+   ]
   },
   {
    "id": "l8t-6-c",
    "group": "l8t-6",
-   "kind": "text",
+   "kind": "select",
    "label": "Ü6 (c)",
    "answer": "Und am Samstag?",
-   "x": 225,
-   "y": 1226,
-   "w": 420,
-   "h": 12
+   "x": 223,
+   "y": 1223,
+   "w": 430,
+   "h": 24,
+   "options": [
+    {
+     "value": "Wann denn?",
+     "label": "Wann denn?"
+    },
+    {
+     "value": "Da habe ich Zeit.",
+     "label": "Da habe ich Zeit."
+    },
+    {
+     "value": "Hast du am Freitag Zeit?",
+     "label": "Hast du am Freitag Zeit?"
+    },
+    {
+     "value": "Leider kann ich nicht.",
+     "label": "Leider kann ich nicht."
+    },
+    {
+     "value": "Und am Samstag?",
+     "label": "Und am Samstag?"
+    }
+   ]
   },
   {
    "id": "l8t-6-d",
    "group": "l8t-6",
-   "kind": "text",
+   "kind": "select",
    "label": "Ü6 (d)",
    "answer": "Da habe ich Zeit.",
-   "x": 375,
-   "y": 1256,
-   "w": 265,
-   "h": 12
+   "x": 371,
+   "y": 1246,
+   "w": 223,
+   "h": 24,
+   "options": [
+    {
+     "value": "Wann denn?",
+     "label": "Wann denn?"
+    },
+    {
+     "value": "Da habe ich Zeit.",
+     "label": "Da habe ich Zeit."
+    },
+    {
+     "value": "Hast du am Freitag Zeit?",
+     "label": "Hast du am Freitag Zeit?"
+    },
+    {
+     "value": "Leider kann ich nicht.",
+     "label": "Leider kann ich nicht."
+    },
+    {
+     "value": "Und am Samstag?",
+     "label": "Und am Samstag?"
+    }
+   ]
   },
   {
    "id": "l8t-6-e",
    "group": "l8t-6",
-   "kind": "text",
+   "kind": "select",
    "label": "Ü6 (e)",
    "answer": "Wann denn?",
-   "x": 700,
-   "y": 1247,
-   "w": 140,
-   "h": 12
+   "x": 629,
+   "y": 1241,
+   "w": 227,
+   "h": 24,
+   "options": [
+    {
+     "value": "Wann denn?",
+     "label": "Wann denn?"
+    },
+    {
+     "value": "Da habe ich Zeit.",
+     "label": "Da habe ich Zeit."
+    },
+    {
+     "value": "Hast du am Freitag Zeit?",
+     "label": "Hast du am Freitag Zeit?"
+    },
+    {
+     "value": "Leider kann ich nicht.",
+     "label": "Leider kann ich nicht."
+    },
+    {
+     "value": "Und am Samstag?",
+     "label": "Und am Samstag?"
+    }
+   ]
   }
  ],
  "audio": [],
@@ -2440,11 +2562,12 @@
   }
  ],
  "review": {
-  "status": "partial",
+  "status": "verified",
   "verifiedWords": 279,
   "totalWords": 279,
   "notes": [
-   "TEST page - no Lsg section; answers derived from exercise logic (same as p58). U1 (a) 'Schwimmbad' printed cursive example; (d) 'die Ausstellung' inferred from 'die Bilder sind sehr schoen und modern' (feminine, only fitting L8 place). U2 'Montag,' printed cursive example. U3 clock displays are graphics; owner ink (Viertel vor acht / dreiundzwanzig Uhr dreissig / Vormittag) excluded from words and matches derived answers. U4 'haben wir keine Zeit.' after printed 'Leider' is owner ink; field kept. U5 (a) 'Am Donnerstagabend.' printed example. U6 answers follow dialogue logic; bank highlight is printed."
+   "TEST page - no Lsg section; answers derived from exercise logic (same as p58). U1 (a) 'Schwimmbad' printed cursive example; (d) 'die Ausstellung' inferred from 'die Bilder sind sehr schoen und modern' (feminine, only fitting L8 place). U2 'Montag,' printed cursive example. U3 clock displays are graphics; owner ink (Viertel vor acht / dreiundzwanzig Uhr dreissig / Vormittag) excluded from words and matches derived answers. U4 'haben wir keine Zeit.' after printed 'Leider' is owner ink; field kept. U5 (a) 'Am Donnerstagabend.' printed example. U6 answers follow dialogue logic; bank highlight is printed.",
+   "2026-11-15: restored source scan/fonts/layout. Corrected place answers to omit already printed articles,retained four handwriting examples without duplicate entry. Twelve writable clock table cells,four sentence inversions,four preposition selects,five dialogue selects. Source geometry measured."
   ]
  }
 }
