@@ -1434,10 +1434,10 @@
    "kind": "text",
    "label": "1 Farbe(n)",
    "answer": "rot, schwarz, weiß",
-   "x": 478,
-   "y": 687,
-   "w": 105,
-   "h": 14
+   "x": 477,
+   "y": 667,
+   "w": 112,
+   "h": 33
   },
   {
    "id": "b2",
@@ -1445,10 +1445,10 @@
    "kind": "text",
    "label": "2 Produkt",
    "answer": "Designer-Modell 1-4-you",
-   "x": 233,
-   "y": 726,
-   "w": 102,
-   "h": 14
+   "x": 234,
+   "y": 704,
+   "w": 104,
+   "h": 36
   },
   {
    "id": "b3",
@@ -1456,10 +1456,10 @@
    "kind": "text",
    "label": "2 Material",
    "answer": "Kunststoff",
-   "x": 358,
-   "y": 726,
-   "w": 102,
-   "h": 14
+   "x": 357,
+   "y": 703,
+   "w": 106,
+   "h": 36
   },
   {
    "id": "b4",
@@ -1468,20 +1468,20 @@
    "label": "2 Farbe(n)",
    "answer": "schwarz, weiß, blau, rot, orange, grün",
    "x": 478,
-   "y": 726,
-   "w": 105,
-   "h": 14
+   "y": 703,
+   "w": 113,
+   "h": 36
   },
   {
    "id": "b5",
    "group": "rb-l5-1",
    "kind": "text",
    "label": "2 Preis",
-   "answer": "179 Euro",
+   "answer": "179 Euro|179 €|179|179,- €",
    "x": 613,
-   "y": 726,
-   "w": 99,
-   "h": 14
+   "y": 703,
+   "w": 105,
+   "h": 36
   },
   {
    "id": "b6",
@@ -1489,10 +1489,10 @@
    "kind": "text",
    "label": "3 Produkt",
    "answer": "Designer-Brille Pamela O",
-   "x": 233,
-   "y": 763,
-   "w": 102,
-   "h": 14
+   "x": 234,
+   "y": 742,
+   "w": 104,
+   "h": 30
   },
   {
    "id": "b7",
@@ -1500,10 +1500,10 @@
    "kind": "text",
    "label": "3 Material",
    "answer": "Kunststoff",
-   "x": 358,
-   "y": 763,
-   "w": 102,
-   "h": 14
+   "x": 357,
+   "y": 741,
+   "w": 106,
+   "h": 30
   },
   {
    "id": "b8",
@@ -1512,20 +1512,60 @@
    "label": "3 Farbe(n)",
    "answer": "braun-orange, dunkelgrün-gelb",
    "x": 478,
-   "y": 763,
-   "w": 105,
-   "h": 14
+   "y": 741,
+   "w": 113,
+   "h": 30
   },
   {
    "id": "b9",
    "group": "rb-l5-1",
    "kind": "text",
    "label": "3 Preis",
-   "answer": "99 Euro",
+   "answer": "99 Euro|99 €|99|99,- €",
    "x": 613,
-   "y": 763,
-   "w": 99,
-   "h": 14
+   "y": 741,
+   "w": 105,
+   "h": 30
+  },
+  {
+   "id": "own-furniture",
+   "group": "own",
+   "kind": "text",
+   "label": "Lektion4: eigener Möbeltext",
+   "x": 491,
+   "y": 419,
+   "w": 484,
+   "h": 74
+  },
+  {
+   "id": "own-product",
+   "group": "own",
+   "kind": "text",
+   "label": "Lektion5: eigene Produktinformation",
+   "x": 218,
+   "y": 1004,
+   "w": 761,
+   "h": 39
+  },
+  {
+   "id": "own-words",
+   "group": "own",
+   "kind": "text",
+   "label": "Lektion6: Wörter mit Plural",
+   "x": 219,
+   "y": 1261,
+   "w": 344,
+   "h": 62
+  },
+  {
+   "id": "own-glossary",
+   "group": "own",
+   "kind": "text",
+   "label": "Lektion6: eigenes Glossar",
+   "x": 219,
+   "y": 1337,
+   "w": 344,
+   "h": 65
   }
  ],
  "audio": [],
@@ -1533,6 +1573,10 @@
   {
    "id": "rb-l5-1",
    "label": "Rückblick Lektion 5, Ü1: Produktinformationen-Tabelle ergänzen (KB S. 30)"
+  },
+  {
+   "id": "own",
+   "label": "Eigene Texte,Wörter und Glossar"
   }
  ],
  "review": {
@@ -1542,7 +1586,8 @@
   "notes": [
    "Rückblick L4 Ü2, L5 Ü2, L6 Ü1-2 are 'Individuelle Lösung' per key: no fields; printed blue examples kept as words.",
    "L5 Ü1 row 1 has printed blue example entries (Brille EC 07 / Metall / 129 Euro); only its Farbe(n) cell is a field.",
-   "Icons, red exercise-number boxes and yellow Lektion-number boxes excluded from words."
+   "Icons, red exercise-number boxes and yellow Lektion-number boxes excluded from words.",
+   "2026-11-15: multiline table cells fit full product/color lists and source rows;colors graded without order dependence;all4 personal-writing tasks saved but ungraded in source whitespace. One local table check."
   ]
  }
 }
