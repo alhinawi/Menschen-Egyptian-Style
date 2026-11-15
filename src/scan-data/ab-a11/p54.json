@@ -1364,10 +1364,10 @@
    "kind": "text",
    "label": "2 NEGINS",
    "answer": "singen",
-   "x": 432,
-   "y": 374,
-   "w": 153,
-   "h": 14
+   "x": 438,
+   "y": 358,
+   "w": 145,
+   "h": 24
   },
   {
    "id": "b2",
@@ -1375,10 +1375,10 @@
    "kind": "text",
    "label": "3 KNECBA",
    "answer": "backen",
-   "x": 432,
-   "y": 400,
-   "w": 153,
-   "h": 14
+   "x": 438,
+   "y": 384,
+   "w": 145,
+   "h": 24
   },
   {
    "id": "b3",
@@ -1386,10 +1386,10 @@
    "kind": "text",
    "label": "4 NESINT PELIESN",
    "answer": "Tennis spielen",
-   "x": 432,
-   "y": 428,
-   "w": 153,
-   "h": 14
+   "x": 438,
+   "y": 409,
+   "w": 145,
+   "h": 24
   },
   {
    "id": "b4",
@@ -1397,10 +1397,10 @@
    "kind": "text",
    "label": "5 MESCHINMW",
    "answer": "schwimmen",
-   "x": 856,
-   "y": 347,
-   "w": 150,
-   "h": 14
+   "x": 861,
+   "y": 326,
+   "w": 143,
+   "h": 24
   },
   {
    "id": "b5",
@@ -1408,10 +1408,10 @@
    "kind": "text",
    "label": "6 KIS NEHFAR",
    "answer": "Ski fahren",
-   "x": 856,
-   "y": 374,
-   "w": 150,
-   "h": 14
+   "x": 861,
+   "y": 352,
+   "w": 143,
+   "h": 24
   },
   {
    "id": "b6",
@@ -1419,131 +1419,844 @@
    "kind": "text",
    "label": "7 NOCHEK",
    "answer": "kochen",
-   "x": 856,
-   "y": 400,
-   "w": 150,
-   "h": 14
+   "x": 861,
+   "y": 377,
+   "w": 143,
+   "h": 24
   },
   {
    "id": "b7",
    "group": "l7-1b",
-   "kind": "text",
+   "kind": "select",
    "label": "to cook",
    "answer": "kochen",
-   "x": 240,
-   "y": 531,
-   "w": 190,
-   "h": 14
+   "x": 238,
+   "y": 524,
+   "w": 187,
+   "h": 24,
+   "options": [
+    {
+     "value": "Gitarre spielen",
+     "label": "Gitarre spielen"
+    },
+    {
+     "value": "kochen",
+     "label": "kochen"
+    },
+    {
+     "value": "Ski fahren",
+     "label": "Ski fahren"
+    },
+    {
+     "value": "schwimmen",
+     "label": "schwimmen"
+    },
+    {
+     "value": "backen",
+     "label": "backen"
+    },
+    {
+     "value": "Tennis spielen",
+     "label": "Tennis spielen"
+    },
+    {
+     "value": "singen",
+     "label": "singen"
+    }
+   ]
   },
   {
    "id": "b8",
    "group": "l7-1b",
-   "kind": "text",
+   "kind": "select",
    "label": "to ski",
    "answer": "Ski fahren",
-   "x": 240,
-   "y": 561,
-   "w": 190,
-   "h": 14
+   "x": 238,
+   "y": 553,
+   "w": 187,
+   "h": 24,
+   "options": [
+    {
+     "value": "Gitarre spielen",
+     "label": "Gitarre spielen"
+    },
+    {
+     "value": "kochen",
+     "label": "kochen"
+    },
+    {
+     "value": "Ski fahren",
+     "label": "Ski fahren"
+    },
+    {
+     "value": "schwimmen",
+     "label": "schwimmen"
+    },
+    {
+     "value": "backen",
+     "label": "backen"
+    },
+    {
+     "value": "Tennis spielen",
+     "label": "Tennis spielen"
+    },
+    {
+     "value": "singen",
+     "label": "singen"
+    }
+   ]
   },
   {
    "id": "b9",
    "group": "l7-1b",
-   "kind": "text",
+   "kind": "select",
    "label": "to swim",
    "answer": "schwimmen",
-   "x": 240,
-   "y": 619,
-   "w": 190,
-   "h": 14
+   "x": 238,
+   "y": 610,
+   "w": 187,
+   "h": 24,
+   "options": [
+    {
+     "value": "Gitarre spielen",
+     "label": "Gitarre spielen"
+    },
+    {
+     "value": "kochen",
+     "label": "kochen"
+    },
+    {
+     "value": "Ski fahren",
+     "label": "Ski fahren"
+    },
+    {
+     "value": "schwimmen",
+     "label": "schwimmen"
+    },
+    {
+     "value": "backen",
+     "label": "backen"
+    },
+    {
+     "value": "Tennis spielen",
+     "label": "Tennis spielen"
+    },
+    {
+     "value": "singen",
+     "label": "singen"
+    }
+   ]
   },
   {
    "id": "b10",
    "group": "l7-1b",
-   "kind": "text",
+   "kind": "select",
    "label": "to bake",
    "answer": "backen",
-   "x": 240,
-   "y": 649,
-   "w": 190,
-   "h": 14
+   "x": 238,
+   "y": 639,
+   "w": 187,
+   "h": 24,
+   "options": [
+    {
+     "value": "Gitarre spielen",
+     "label": "Gitarre spielen"
+    },
+    {
+     "value": "kochen",
+     "label": "kochen"
+    },
+    {
+     "value": "Ski fahren",
+     "label": "Ski fahren"
+    },
+    {
+     "value": "schwimmen",
+     "label": "schwimmen"
+    },
+    {
+     "value": "backen",
+     "label": "backen"
+    },
+    {
+     "value": "Tennis spielen",
+     "label": "Tennis spielen"
+    },
+    {
+     "value": "singen",
+     "label": "singen"
+    }
+   ]
   },
   {
    "id": "b11",
    "group": "l7-1b",
-   "kind": "text",
+   "kind": "select",
    "label": "to play tennis",
    "answer": "Tennis spielen",
-   "x": 240,
-   "y": 676,
-   "w": 190,
-   "h": 14
+   "x": 238,
+   "y": 669,
+   "w": 187,
+   "h": 24,
+   "options": [
+    {
+     "value": "Gitarre spielen",
+     "label": "Gitarre spielen"
+    },
+    {
+     "value": "kochen",
+     "label": "kochen"
+    },
+    {
+     "value": "Ski fahren",
+     "label": "Ski fahren"
+    },
+    {
+     "value": "schwimmen",
+     "label": "schwimmen"
+    },
+    {
+     "value": "backen",
+     "label": "backen"
+    },
+    {
+     "value": "Tennis spielen",
+     "label": "Tennis spielen"
+    },
+    {
+     "value": "singen",
+     "label": "singen"
+    }
+   ]
   },
   {
    "id": "b12",
    "group": "l7-1b",
-   "kind": "text",
+   "kind": "select",
    "label": "to sing",
    "answer": "singen",
-   "x": 240,
-   "y": 704,
-   "w": 190,
-   "h": 14
+   "x": 238,
+   "y": 697,
+   "w": 187,
+   "h": 24,
+   "options": [
+    {
+     "value": "Gitarre spielen",
+     "label": "Gitarre spielen"
+    },
+    {
+     "value": "kochen",
+     "label": "kochen"
+    },
+    {
+     "value": "Ski fahren",
+     "label": "Ski fahren"
+    },
+    {
+     "value": "schwimmen",
+     "label": "schwimmen"
+    },
+    {
+     "value": "backen",
+     "label": "backen"
+    },
+    {
+     "value": "Tennis spielen",
+     "label": "Tennis spielen"
+    },
+    {
+     "value": "singen",
+     "label": "singen"
+    }
+   ]
   },
   {
    "id": "b13",
    "group": "l7-2",
-   "kind": "text",
+   "kind": "select",
    "label": "b Mama und Papa ___ gut tanzen.",
    "answer": "können",
-   "x": 410,
-   "y": 844,
-   "w": 130,
-   "h": 14
+   "x": 402,
+   "y": 822,
+   "w": 137,
+   "h": 24,
+   "options": [
+    {
+     "value": "kann",
+     "label": "kann"
+    },
+    {
+     "value": "kannst",
+     "label": "kannst"
+    },
+    {
+     "value": "können",
+     "label": "können"
+    },
+    {
+     "value": "könnt",
+     "label": "könnt"
+    }
+   ]
   },
   {
    "id": "b14",
    "group": "l7-2",
-   "kind": "text",
+   "kind": "select",
    "label": "c Mein Bruder Tobias ___ super Fußball spielen.",
    "answer": "kann",
-   "x": 435,
-   "y": 868,
-   "w": 112,
-   "h": 14
+   "x": 433,
+   "y": 848,
+   "w": 99,
+   "h": 24,
+   "options": [
+    {
+     "value": "kann",
+     "label": "kann"
+    },
+    {
+     "value": "kannst",
+     "label": "kannst"
+    },
+    {
+     "value": "können",
+     "label": "können"
+    },
+    {
+     "value": "könnt",
+     "label": "könnt"
+    }
+   ]
   },
   {
    "id": "b15",
    "group": "l7-2",
-   "kind": "text",
+   "kind": "select",
    "label": "d Oma und Opa ___ sehr gut Schach spielen.",
    "answer": "können",
    "x": 382,
-   "y": 894,
-   "w": 113,
-   "h": 14
+   "y": 873,
+   "w": 112,
+   "h": 24,
+   "options": [
+    {
+     "value": "kann",
+     "label": "kann"
+    },
+    {
+     "value": "kannst",
+     "label": "kannst"
+    },
+    {
+     "value": "können",
+     "label": "können"
+    },
+    {
+     "value": "könnt",
+     "label": "könnt"
+    }
+   ]
   },
   {
    "id": "b16",
    "group": "l7-2",
-   "kind": "text",
+   "kind": "select",
    "label": "e Und wir ___ alle gut schwimmen.",
    "answer": "können",
    "x": 337,
-   "y": 921,
-   "w": 120,
-   "h": 14
+   "y": 899,
+   "w": 126,
+   "h": 24,
+   "options": [
+    {
+     "value": "kann",
+     "label": "kann"
+    },
+    {
+     "value": "kannst",
+     "label": "kannst"
+    },
+    {
+     "value": "können",
+     "label": "können"
+    },
+    {
+     "value": "könnt",
+     "label": "könnt"
+    }
+   ]
   },
   {
    "id": "b17",
    "group": "l7-2",
-   "kind": "text",
+   "kind": "select",
    "label": "f Und ich? Ich ___ nicht gut malen, …",
    "answer": "kann",
    "x": 377,
-   "y": 939,
-   "w": 120,
-   "h": 14
+   "y": 924,
+   "w": 124,
+   "h": 24,
+   "options": [
+    {
+     "value": "kann",
+     "label": "kann"
+    },
+    {
+     "value": "kannst",
+     "label": "kannst"
+    },
+    {
+     "value": "können",
+     "label": "können"
+    },
+    {
+     "value": "könnt",
+     "label": "könnt"
+    }
+   ]
+  },
+  {
+   "id": "own-translation-0",
+   "group": "own",
+   "kind": "text",
+   "label": "kochen in meiner Sprache",
+   "x": 642,
+   "y": 518,
+   "w": 337,
+   "h": 24
+  },
+  {
+   "id": "own-translation-1",
+   "group": "own",
+   "kind": "text",
+   "label": "Ski fahren in meiner Sprache",
+   "x": 642,
+   "y": 546,
+   "w": 337,
+   "h": 24
+  },
+  {
+   "id": "own-translation-2",
+   "group": "own",
+   "kind": "text",
+   "label": "Gitarre spielen in meiner Sprache",
+   "x": 642,
+   "y": 575,
+   "w": 337,
+   "h": 24
+  },
+  {
+   "id": "own-translation-3",
+   "group": "own",
+   "kind": "text",
+   "label": "schwimmen in meiner Sprache",
+   "x": 642,
+   "y": 603,
+   "w": 337,
+   "h": 24
+  },
+  {
+   "id": "own-translation-4",
+   "group": "own",
+   "kind": "text",
+   "label": "backen in meiner Sprache",
+   "x": 642,
+   "y": 632,
+   "w": 337,
+   "h": 24
+  },
+  {
+   "id": "own-translation-5",
+   "group": "own",
+   "kind": "text",
+   "label": "Tennis spielen in meiner Sprache",
+   "x": 642,
+   "y": 660,
+   "w": 337,
+   "h": 24
+  },
+  {
+   "id": "own-translation-6",
+   "group": "own",
+   "kind": "text",
+   "label": "singen in meiner Sprache",
+   "x": 642,
+   "y": 689,
+   "w": 337,
+   "h": 24
+  },
+  {
+   "id": "l7-3-sentence-0",
+   "group": "l7-3",
+   "kind": "text",
+   "label": "3 Satz b",
+   "answer": "Könnt ihr schwimmen?",
+   "x": 0,
+   "y": 0,
+   "w": 1,
+   "h": 1
+  },
+  {
+   "id": "l7-3-sentence-1",
+   "group": "l7-3",
+   "kind": "text",
+   "label": "3 Satz c",
+   "answer": "Ich kann nicht Tennis spielen.",
+   "x": 0,
+   "y": 0,
+   "w": 1,
+   "h": 1
+  },
+  {
+   "id": "l7-3-sentence-2",
+   "group": "l7-3",
+   "kind": "text",
+   "label": "3 Satz d",
+   "answer": "Können deine Kinder Schach spielen?",
+   "x": 0,
+   "y": 0,
+   "w": 1,
+   "h": 1
+  },
+  {
+   "id": "l7-3-sentence-3",
+   "group": "l7-3",
+   "kind": "text",
+   "label": "3 Satz e",
+   "answer": "Du kannst super Fußball spielen.",
+   "x": 0,
+   "y": 0,
+   "w": 1,
+   "h": 1
+  },
+  {
+   "id": "l7-3-sentence-4",
+   "group": "l7-3",
+   "kind": "text",
+   "label": "3 Satz f",
+   "answer": "Kann Maria gut kochen?",
+   "x": 0,
+   "y": 0,
+   "w": 1,
+   "h": 1
+  },
+  {
+   "id": "l7-3-sentence-5",
+   "group": "l7-3",
+   "kind": "text",
+   "label": "3 Satz g",
+   "answer": "Sie kann sehr gut singen.",
+   "x": 0,
+   "y": 0,
+   "w": 1,
+   "h": 1
+  },
+  {
+   "id": "own-cards",
+   "group": "own",
+   "kind": "text",
+   "label": "4 Eigene Sätze mit können",
+   "x": 250,
+   "y": 1365,
+   "w": 735,
+   "h": 50
+  },
+  {
+   "id": "l7-3-cut-0-0",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach könnt (1)",
+   "answer": "false",
+   "x": 522,
+   "y": 1048,
+   "w": 50,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-0-1",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach ihr (1)",
+   "answer": "false",
+   "x": 572,
+   "y": 1048,
+   "w": 26,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-0-2",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach schwimmen (1)",
+   "answer": "true",
+   "x": 598,
+   "y": 1048,
+   "w": 105,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-1-0",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach ich (2)",
+   "answer": "false",
+   "x": 703,
+   "y": 1048,
+   "w": 27,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-1-1",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach kann (2)",
+   "answer": "false",
+   "x": 730,
+   "y": 1048,
+   "w": 45,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-1-2",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach nicht (2)",
+   "answer": "false",
+   "x": 775,
+   "y": 1048,
+   "w": 45,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-1-3",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach tennis (2)",
+   "answer": "false",
+   "x": 821,
+   "y": 1048,
+   "w": 55,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-2-0",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach spielen (3)",
+   "answer": "true",
+   "x": 242,
+   "y": 1076,
+   "w": 61,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-3-0",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach können (4)",
+   "answer": "false",
+   "x": 302,
+   "y": 1076,
+   "w": 65,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-3-1",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach deine (4)",
+   "answer": "false",
+   "x": 367,
+   "y": 1076,
+   "w": 48,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-3-2",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach kinder (4)",
+   "answer": "false",
+   "x": 415,
+   "y": 1076,
+   "w": 57,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-3-3",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach schach (4)",
+   "answer": "false",
+   "x": 472,
+   "y": 1076,
+   "w": 59,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-3-4",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach spielen (4)",
+   "answer": "true",
+   "x": 531,
+   "y": 1076,
+   "w": 61,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-4-0",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach du (5)",
+   "answer": "false",
+   "x": 593,
+   "y": 1076,
+   "w": 23,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-4-1",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach kannst (5)",
+   "answer": "false",
+   "x": 615,
+   "y": 1076,
+   "w": 60,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-4-2",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach super (5)",
+   "answer": "false",
+   "x": 675,
+   "y": 1076,
+   "w": 50,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-4-3",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach fußball (5)",
+   "answer": "false",
+   "x": 725,
+   "y": 1076,
+   "w": 63,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-4-4",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach spielen (5)",
+   "answer": "true",
+   "x": 788,
+   "y": 1076,
+   "w": 63,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-5-0",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach kann (6)",
+   "answer": "false",
+   "x": 851,
+   "y": 1076,
+   "w": 43,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-6-0",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach maria (7)",
+   "answer": "false",
+   "x": 242,
+   "y": 1101,
+   "w": 52,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-6-1",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach gut (7)",
+   "answer": "false",
+   "x": 294,
+   "y": 1101,
+   "w": 28,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-6-2",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach kochen (7)",
+   "answer": "true",
+   "x": 321,
+   "y": 1101,
+   "w": 63,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-7-0",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach sie (8)",
+   "answer": "false",
+   "x": 384,
+   "y": 1101,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-7-1",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach kann (8)",
+   "answer": "false",
+   "x": 408,
+   "y": 1101,
+   "w": 44,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-7-2",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach sehr (8)",
+   "answer": "false",
+   "x": 452,
+   "y": 1101,
+   "w": 38,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-7-3",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach gut (8)",
+   "answer": "false",
+   "x": 490,
+   "y": 1101,
+   "w": 27,
+   "h": 24
+  },
+  {
+   "id": "l7-3-cut-7-4",
+   "group": "l7-3",
+   "kind": "checkbox",
+   "label": "3 Satzende nach singen (8)",
+   "answer": "true",
+   "x": 517,
+   "y": 1101,
+   "w": 56,
+   "h": 24
   }
  ],
  "audio": [],
@@ -1559,6 +2272,14 @@
   {
    "id": "l7-2",
    "label": "Ü2: können in der richtigen Form (b-f)"
+  },
+  {
+   "id": "l7-3",
+   "label": "3 Satzende und vollständige Sätze"
+  },
+  {
+   "id": "own",
+   "label": "Eigene Übersetzungen und Sätze"
   }
  ],
  "review": {
@@ -1568,7 +2289,8 @@
   "notes": [
    "Ü1a row 1 (Gitarre spielen) and Ü1b guitar row are printed blue examples; 'Meine Sprache oder andere Sprachen' column is personal: no fields.",
    "Ü3 (Satzende markieren + Sätze schreiben) and Ü4 (Kärtchen/Partner) have no fixed-blank fields; Ü3 key sentences: Du kannst wirklich sehr gut tanzen. / Könnt ihr schwimmen? / Ich kann nicht Tennis spielen. / Können deine Kinder Schach spielen? / Du kannst super Fußball spielen. / Kann Maria gut kochen? / Sie kann sehr gut singen.",
-   "Letter-run text kept as printed (concatenated words); blue Kärtchen examples kept as words; photos/icons/side labels excluded."
+   "Letter-run text kept as printed (concatenated words); blue Kärtchen examples kept as words; photos/icons/side labels excluded.",
+   "2026-11-15: source-baseline writing;activities and können forms selects;7 own-language rows;complete exercise3 sentence cuts and6 punctuated sentences;own card-sentence textarea. Source scan/printed examples preserved."
   ]
  }
 }
