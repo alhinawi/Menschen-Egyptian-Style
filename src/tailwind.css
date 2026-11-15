@@ -823,6 +823,10 @@ body[data-audio="tts"] .howtoTtsNote{display:block}
 .lbPoints{color:#6d7a6f;font-size:12px;white-space:nowrap}
 .lbEmpty{padding:14px 4px;font-size:12.5px;color:#6d7a6f;text-align:center}
 .lbDivider{text-align:center;color:#b9b2a0;letter-spacing:3px;line-height:1}
+.verifyNotice{display:flex;flex-direction:column;gap:6px;margin:2px 0 8px;padding:9px 11px;background:#fdf6e3;border:1px solid #e8dcc0;border-radius:10px;font-size:12.5px}
+.verifyNoticeText{color:#6d5a2e;font-weight:600}
+.verifyResend{align-self:flex-start}
+.verifyOk{margin:2px 0 8px;padding:9px 11px;background:#eef5e9;border:1px solid #cfe0c2;border-radius:10px;font-size:12.5px;color:#3f6335;font-weight:600}
 .authOr{display:flex;align-items:center;gap:8px;margin:10px 0 2px;font-size:11px;font-weight:700;color:#8b7f6a}
 .authOr::before,.authOr::after{content:"";flex:1;height:1px;background:#e2d8c2}
 .authForm{display:flex;flex-direction:column;gap:7px;margin-top:6px}

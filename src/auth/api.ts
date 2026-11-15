@@ -14,6 +14,11 @@ const BASE = (() => {
 })();
 const TOKEN_KEY = 'menscheny-token';
 
+// Capture an auth-related URL hash the moment this module evaluates: the book
+// router rewrites location.hash to page anchors (#cover, #18, ...) on boot,
+// which would eat #auth-callback / #email-verified before React mounts.
+const EARLY_HASH = typeof window !== 'undefined' ? window.location.hash : '';
+
 export interface ApiUser {
   id: number;
   name: string;
@@ -23,6 +28,8 @@ export interface ApiUser {
   avatar?: string | null;
   /** Google profile picture URL captured at sign-in, for switching back */
   google_avatar?: string | null;
+  /** false until an email/password sign-up confirms the inbox via the link */
+  email_verified?: boolean;
 }
 
 export function getToken(): string | null {
@@ -110,17 +117,19 @@ export function putProgress(progress: Record<string, string>, keepalive = false)
 
 export interface AuthConfig {
   google: boolean;
+  /** true only when a real mail sender is configured on the worker */
+  emailVerification: boolean;
 }
 
 /** which sign-in providers the backend is configured for; defaults to hidden */
 export async function getAuthConfig(): Promise<AuthConfig> {
   try {
     const r = await fetch(`${BASE}/api/auth/config`);
-    if (!r.ok) return { google: false };
+    if (!r.ok) return { google: false, emailVerification: false };
     const body = await r.json();
-    return { google: Boolean(body && body.google) };
+    return { google: Boolean(body && body.google), emailVerification: Boolean(body && body.emailVerification) };
   } catch {
-    return { google: false };
+    return { google: false, emailVerification: false };
   }
 }
 
@@ -129,14 +138,29 @@ export function googleLoginUrl(): string {
   return `${BASE}/api/auth/google/start?origin=${encodeURIComponent(window.location.origin)}`;
 }
 
+export function resendVerification(): Promise<{ message: string }> {
+  return req('/auth/resend-verification', { method: 'POST', auth: true });
+}
+
+/**
+ * The verification link in the email lands on the worker, which redirects to
+ * <origin>/#email-verified?status=ok|expired|invalid. Reads and clears it.
+ */
+export function consumeEmailVerifiedCallback(): string | null {
+  const m = /^#email-verified\?(.*)$/.exec(EARLY_HASH);
+  if (!m) return null;
+  const status = new URLSearchParams(m[1]).get('status');
+  window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}`);
+  return status;
+}
+
 /**
  * The worker redirects back to <origin>/#auth-callback?token=...&provider=google
  * after Google sign-in. Reads and clears that hash, saving the API token.
  * Returns the token (or "error:<code>") when a callback was consumed.
  */
 export function consumeGoogleAuthCallback(): string | null {
-  if (typeof window === 'undefined') return null;
-  const m = /^#auth-callback\?(.*)$/.exec(window.location.hash);
+  const m = /^#auth-callback\?(.*)$/.exec(EARLY_HASH);
   if (!m) return null;
   const params = new URLSearchParams(m[1]);
   const token = params.get('token');

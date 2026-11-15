@@ -6,7 +6,7 @@ import {ReaderContext} from './ReaderControls';
 import {useAuth, signIn, signUp, signOut, applyUser} from '../auth/useAuth';
 import {AvatarPicker} from './AvatarPicker';
 import {LeaderboardPanel} from './LeaderboardPanel';
-import {getAuthConfig, googleLoginUrl} from '../auth/api';
+import {getAuthConfig, googleLoginUrl, resendVerification} from '../auth/api';
 import type {ApiUser} from '../auth/api';
 import {getSyncStatus, subscribeSyncStatus} from '../auth/progress-sync';
 
@@ -23,6 +23,7 @@ export function ReaderProfile() {
   const auth = useAuth();
   const [open, setOpen] = useState(false);
   const [googleOn, setGoogleOn] = useState(false);
+  const [verifyOn, setVerifyOn] = useState(false);
   const [board, setBoard] = useState(false);
   const anchor = useRef<HTMLSpanElement>(null);
 
@@ -30,7 +31,9 @@ export function ReaderProfile() {
     if (!open) return;
     let live = true;
     getAuthConfig().then((c) => {
-      if (live) setGoogleOn(c.google);
+      if (!live) return;
+      setGoogleOn(c.google);
+      setVerifyOn(c.emailVerification);
     });
     const away = (e: MouseEvent) => {
       const target = e.target as Element | null;
@@ -87,6 +90,11 @@ export function ReaderProfile() {
           ) : (
             <SignInBlock googleOn={googleOn} />
           )}
+          {auth.emailNotice === 'ok' && <div className="verifyOk" role="status">{t('Email verified')}</div>}
+          {(auth.emailNotice === 'expired' || auth.emailNotice === 'invalid') && (
+            <div className="authError" role="alert">{t('Verification link expired or invalid')}</div>
+          )}
+          {auth.user && auth.user.email_verified === false && verifyOn && <VerifyEmailBlock />}
           {board ? (
             <LeaderboardPanel onClose={() => setBoard(false)} />
           ) : (
@@ -279,5 +287,31 @@ function SignInBlock({googleOn}: {googleOn: boolean}) {
         </button>
       </form>
     </>
+  );
+}
+
+// Shown to email/password accounts until they confirm the inbox. Hidden when
+// the worker has no mail sender configured (config.emailVerification), so the
+// panel never claims an email was sent when none can be.
+function VerifyEmailBlock() {
+  const {t} = useUiLanguage();
+  const [sent, setSent] = useState(false);
+  const [failed, setFailed] = useState(false);
+  return (
+    <div className="verifyNotice" role="status">
+      <span className="verifyNoticeText">{t('Please verify your email address')}</span>
+      {failed ? (
+        <span className="authError" role="alert">{t('Connection problem. Please try again.')}</span>
+      ) : (
+        <button
+          type="button"
+          className="authSwitch verifyResend"
+          disabled={sent}
+          onClick={() => void resendVerification().then(() => setSent(true)).catch(() => setFailed(true))}
+        >
+          {sent ? t('Verification email sent') : t('Resend verification email')}
+        </button>
+      )}
+    </div>
   );
 }
