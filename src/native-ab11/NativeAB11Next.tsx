@@ -11,13 +11,13 @@ export function NativeAB11Next({page}:{page:string}){
  const key='native-ab11-'+page, host=useRef<HTMLDivElement>(null);
  const audio=useRef<HTMLAudioElement>(null);const [,T]=useState('');
  const [scale,SS]=useState(1),[v,S]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return {}}}),[graded,G]=useState<Record<string,boolean>>({}),[active,A]=useState('');
- useLayoutEffect(()=>{const el=host.current;if(!el)return;const measure=()=>SS(Math.min(el.clientWidth/1075,el.clientHeight/1521));measure();const ro=new ResizeObserver(measure);ro.observe(el);return ()=>ro.disconnect()},[]);
+ useLayoutEffect(()=>{const el=host.current;if(!el)return;const measure=()=>SS(Math.min(el.clientWidth/1075,el.clientHeight/1521));measure();document.fonts.ready.then(()=>T('fonts-ready'));const ro=new ResizeObserver(measure);ro.observe(el);return ()=>ro.disconnect()},[]);
  usePageReset(page,'native-ab11-'+page,()=>{S({});G({});A('')});
  const set=(id:string,value:string)=>{const n={...v,[id]:value};S(n);localStorage.setItem(key,JSON.stringify(n));const group=id.startsWith('stress-')?'ua1':id.startsWith('ua2')?'ua2':page==='7'&&id.startsWith('6-')?'6a':page==='9'&&id.startsWith('1-')?(id.startsWith('1-q')?'1a':'1b'):id.startsWith('mark-')?id.split('-')[1]:id.split('-')[0];G(prev=>{const next={...prev};delete next[group];return next})};
  const py=(y:number)=>page==='18'?y:page==='12'?y*.93:page==='13'?y*.94:page==='15'?y*.94:page==='19'?y*.94:y;
  const text=(x:number,y:number,w:number,s:string,cls='')=><div className={'nabText '+cls} style={{left:x,top:cls==='nabFooter'?y:py(y),width:w}}><Words text={s}/></div>;
  const img=(name:string,x:number,y:number,w:number,h:number)=><PageImage className={'nabArt '+(page==='13'&&name==='pronouns'?'nabPronouns':'')} src={`assets/native-ab11/p${page}-${name}.png`} alt={'Originalabbildung '+name} style={{left:x,top:py(y),width:w,height:h}}/>;
- const field=(id:string,x:number,y:number,w:number,label:string,cls='')=>{const measure=document.createElement('canvas').getContext('2d');if(measure)measure.font="22px 'Times New Roman'";const measured=measure?.measureText(v[id]||'').width||0;const fontSize=measured>w-6?Math.max(12,22*(w-6)/measured):22;const mark=(v['mark-'+id]||'').split(':').map(Number);let gradient='none';if(mark.length===2){const ctx=document.createElement('canvas').getContext('2d');if(ctx){ctx.font="22px 'Times New Roman'";const start=3+ctx.measureText((v[id]||'').slice(0,mark[0])).width,end=3+ctx.measureText((v[id]||'').slice(0,mark[1])).width;gradient=`linear-gradient(to right, transparent ${start}px, #ffea54 ${start}px, #ffea54 ${end}px, transparent ${end}px)`}}return <input className={'nabInput '+cls+(' nabEnding')} style={{left:x,top:py(y),width:w,'--ending-mark':gradient,'--native-input-size':fontSize+'px'} as React.CSSProperties} aria-label={label} title={id.startsWith('10-')?'Endung markieren: Buchstaben im Eingabefeld auswählen':undefined} data-native-field={id} value={v[id]||''} onChange={e=>set(id,e.target.value)} onSelect={e=>{{const t=e.currentTarget;if(t.selectionStart!==t.selectionEnd)set('mark-'+id,t.selectionStart+':'+t.selectionEnd)}}}/>};
+ const field=(id:string,x:number,y:number,w:number,label:string,cls='')=>{const options=page==='12'&&id.startsWith('u1a-')?['Architektin','Ärztin','Lehrer','Schauspieler','Sekretärin','Verkäufer']:page==='12'&&id.startsWith('u3-')?['arbeite','habe','mache','bin']:page==='12'&&id.startsWith('u4-')?['geschieden','leben','Single','verheiratet','nicht verheiratet','zwei Kinder']:null;if(options)return <select className="nabInput nabSelect" style={{left:x,top:py(y),width:w}} aria-label={label} data-native-field={id} value={v[id]||''} onChange={e=>set(id,e.target.value)}><option value=""></option>{options.map(o=><option key={o} value={o}>{o}</option>)}</select>;const measure=document.createElement('canvas').getContext('2d');if(measure)measure.font="22px 'Times New Roman'";const measured=measure?.measureText(v[id]||'').width||0;const fontSize=measured>w-6?Math.max(12,22*(w-6)/measured):22;const mark=(v['mark-'+id]||'').split(':').map(Number);let gradient='none';if(mark.length===2){const ctx=document.createElement('canvas').getContext('2d');if(ctx){ctx.font="22px 'Times New Roman'";const start=3+ctx.measureText((v[id]||'').slice(0,mark[0])).width,end=3+ctx.measureText((v[id]||'').slice(0,mark[1])).width;gradient=`linear-gradient(to right, transparent ${start}px, #ffea54 ${start}px, #ffea54 ${end}px, transparent ${end}px)`}}return <input className={'nabInput '+cls+(' nabEnding')} style={{left:x,top:py(y),width:w,'--ending-mark':gradient,'--native-input-size':fontSize+'px'} as React.CSSProperties} aria-label={label} title={id.startsWith('10-')?'Endung markieren: Buchstaben im Eingabefeld auswählen':undefined} data-native-field={id} value={v[id]||''} onChange={e=>set(id,e.target.value)} onSelect={e=>{{const t=e.currentTarget;if(t.selectionStart!==t.selectionEnd)set('mark-'+id,t.selectionStart+':'+t.selectionEnd)}}}/>};
  const open=(id:string,x:number,y:number,w:number,h:number,label:string)=><textarea className="nabInput nabOpen" style={{left:x,top:py(y),width:w,height:h,'--native-open-height':h+'px'} as React.CSSProperties} aria-label={label} data-native-field={id} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
  const choice=(id:string,value:string,x:number,y:number,label:string)=><input type="radio" data-value={value} data-native-radio={page==='15'&&id==='ua2'?(value==='fixed'?'ua2-r1':'ua2-r2'):undefined} className="nabRadio" style={{left:x,top:py(y)}} name={key+'-'+id} aria-label={label} checked={v[id]===value} onChange={()=>set(id,value)}/>;
  const listen=(n:string,x:number,y:number,t?:string)=><button className="nabListen" data-task={t} style={{left:x,top:py(y)}} aria-label={'Originalaudio 1 '+n} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+n.padStart(2,'0')+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
@@ -29,35 +29,35 @@ export function NativeAB11Next({page}:{page:string}){
  const endingStyle=(id:string)=>{const m=(v['mark-'+id]||'').split(':').map(Number),ctx=document.createElement('canvas').getContext('2d');if(m.length!==2||!ctx)return {};ctx.font="20px 'Times New Roman'";const a=4+ctx.measureText((v[id]||'').slice(0,m[0])).width,b=4+ctx.measureText((v[id]||'').slice(0,m[1])).width;return {backgroundImage:`linear-gradient(to right,transparent ${a}px,#fff066 ${a}px,#fff066 ${b}px,transparent ${b}px)`}};
  const keyAnswers=(group:string)=>Object.fromEntries(data.fields.filter(f=>f.group===group&&f.answer!==undefined&&f.kind!=='radio').map(f=>[f.id,f.answer!]));
  const checkGroup=(group:string,x:number,y:number)=>check(group,x,y,keyAnswers(group));
- const match=(id:string,left:string[],right:string[],x:number,y:number,rx:number,gap:number,example?:[number,number])=><LineMatching id={id} left={left} right={right} values={v} onMatch={set} leftX={x} rightX={rx} leftWidth={id==='lesen1'?260:230} rightWidth={440} ys={left.map((_,i)=>py(y+i*gap))} rightYs={right.map((_,i)=>py(y+i*gap))} example={example}/>;
+ const match=(id:string,left:string[],right:string[],x:number,y:number,rx:number,gap:number,example?:[number,number])=><LineMatching id={id} left={left} right={right} values={v} onMatch={set} leftX={x} rightX={page==='12'&&id==='u2'?550:rx} leftWidth={page==='12'&&id==='u2'?255:id==='lesen1'?260:230} rightWidth={440} {...(page==='12'&&id==='u2'?{fontSize:19,leftDotXs:[365,443,390,386,412],rightDotXs:[585,585,585,585,585]}:{})} ys={left.map((_,i)=>py(y+i*gap))} rightYs={right.map((_,i)=>py(y+i*gap))} example={example}/>;
  const multi=(id:string,x:number,y:number,w:number,h:number,label:string)=>open(id,x,y,w,h,label);
  return <div className="nativeAB11 nativeAB11Next" ref={host} data-native-ab11-page={page}><div className="nabCanvas" style={{transform:`translate(-50%,-50%) scale(${scale})`}}>
  {page==='12'&&<>
  {img('banner',55,107,330,79)}<div className="nabBanner" style={{left:385,top:107,width:613,height:79}}/>{text(473,128,520,'Ich bin Journalistin.','nabCoverTitle')}
- {title('1',248,'Berufe','KB 2b','Wörter')}{text(171,288,600,'a  Ordnen Sie zu.','nabTitle')}{text(209,328,760,'Architektin | Ärztin | Lehrer | Schauspieler | Sekretärin | Verkäufer','nabBank')}
- {[['architect',202,94],['teacher',342,94],['actor',482,94],['seller',622,94],['secretary',762,87],['doctor',902,94]].map(([name,x,w],i)=><div key={String(name)}>{img(String(name),Number(x),365,Number(w),80)}{i===0?text(Number(x),452,130,'Architektin','nabExample'):field('u1a-'+(i+1),Number(x),452,105,'1a Foto '+(i+1))}</div>)}
- {checkGroup('u1a',202,489)}
- {text(171,527,850,'b  Wie heißen die Berufe auf Deutsch und in Ihrer Sprache? Ergänzen und vergleichen Sie.','nabTitle')}
- <div className="nabForeignTable" style={{left:208,top:py(568),width:795}}><b>Deutsch</b><b>Englisch</b><b>Meine Sprache oder andere Sprachen</b>{['IT specialist','journalist','architect','student','secretary',''].map((label,i)=><div className="nabForeignRow" key={i}>{i===0?<span className="nabExample">IT-Spezialist</span>:<input aria-label={'1b Deutsch '+(label||'eigener Beruf')} data-native-field={i<5?'u1b-'+label:'u1b-own'} value={v[i<5?'u1b-'+label:'u1b-own']||''} onChange={e=>set(i<5?'u1b-'+label:'u1b-own',e.target.value)}/>}<span>{label}</span><input aria-label={'1b meine Sprache '+i} value={v['own-language-'+i]||''} onChange={e=>set('own-language-'+i,e.target.value)}/></div>)}</div>
- {checkGroup('u1b',202,777)}
+ {title('1',264,'Berufe','KB 2b','Wörter')}{text(171,304,600,'a  Ordnen Sie zu.','nabTitle')}{text(209,344,504,'Architektin | Ärztin | Lehrer | Schauspieler | Sekretärin | Verkäufer','nabBank')}
+ {[['architect',202,94],['teacher',342,94],['actor',482,94],['seller',622,94],['secretary',762,87],['doctor',902,94]].map(([name,x,w],i)=><div key={String(name)}>{img(String(name),Number(x),387,Number(w),80)}{i===0?img('ink-architect',202,475,97,23):field('u1a-'+(i+1),Number(x),476,105,'1a Foto '+(i+1))}</div>)}
+ {checkGroup('u1a',1045,476)}
+ {img('globe',121,525,33,34)}{text(171,521,850,'b  Wie heißen die Berufe auf Deutsch und in Ihrer Sprache? Ergänzen und vergleichen Sie.','nabTitle')}
+ <div className="nabForeignTable" style={{left:208,top:py(562),width:795}}><b>Deutsch</b><b>Englisch</b><b>Meine Sprache oder andere Sprachen</b>{['IT specialist','journalist','architect','student','secretary'].map((label,i)=><div className="nabForeignRow" key={i}>{i===0?<span><PageImage className="nabP12IT" src="assets/native-ab11/p12-ink-it.png" alt="IT-Spezialist"/></span>:<input aria-label={'1b Deutsch '+(label||'eigener Beruf')} data-native-field={i<5?'u1b-'+label:'u1b-own'} value={v[i<5?'u1b-'+label:'u1b-own']||''} onChange={e=>set(i<5?'u1b-'+label:'u1b-own',e.target.value)}/>}<span>{label}</span><input aria-label={'1b meine Sprache '+i} value={v['own-language-'+i]||''} onChange={e=>set('own-language-'+i,e.target.value)}/></div>)}</div>
+ {checkGroup('u1b',1045,750)}
  {title('2',817,'Ordnen Sie zu.','KB 2c')}
- {match('u2',['a  Ich arbeite als','b  Frau Stern arbeitet bei','c  Katharina hat','d  Peter macht','e  Herr Wagner ist'],['Siemens.','eine Ausbildung als Mechatroniker bei Airbus.','einen Job als Kellnerin.','Ingenieur von Beruf.','Friseurin.'],209,858,590,26,[0,4])}
- {check('u2',202,995,{'u2-1':'0','u2-2':'2','u2-3':'1','u2-4':'3'})}
- {title('3',1034,'Ordnen Sie zu.','KB 2c','Wörter')}{text(209,1074,730,'arbeite | habe | mache | mache | bin | bin','nabBank')}{text(209,1112,450,'Was machst du beruflich?')}
- {text(209,1142,370,'a  Ich mache eine Ausbildung als')}{text(232,1168,300,'Krankenschwester.')}
- {text(209,1197,56,'b  Ich')}{field('u3-b',270,1194,104,'3b bin')}{text(380,1197,170,'Schülerin.')}
- {text(209,1227,56,'c  Ich')}{field('u3-c',270,1224,104,'3c bin')}{text(380,1227,230,'Historikerin von Beruf.')}
- {text(607,1142,56,'d  Ich')}{field('u3-d',669,1139,104,'3d mache')}{text(779,1142,260,'ein Praktikum bei Vestas.')}
- {text(607,1172,56,'e  Ich')}{field('u3-e',669,1169,104,'3e arbeite')}{text(779,1172,230,'als Journalistin.')}
- {text(607,1202,56,'f  Ich')}{field('u3-f',669,1199,104,'3f habe')}{text(779,1202,260,'einen Job als Verkäufer.')}
- {checkGroup('u3',202,1260)}
- {title('4',1300,'Ordnen Sie zu.','KB 3a','Wörter')}{text(209,1337,825,'geschieden | leben | Single | verheiratet | nicht verheiratet | zwei Kinder','nabBank')}
- {img('status',650,1371,425,82)}
- {text(209,1376,345,'a  Stefan und Tanja sind verheiratet.')}{text(209,1405,123,'b  Sie haben')}{field('u4-b',339,1402,280,'4b Kinder')}
- {text(209,1435,230,'c  Maike und Martin sind')}{field('u4-c',445,1432,175,'4c Familienstand')}
- {text(209,1465,133,'d  Maria ist')}{field('u4-d',347,1462,190,'4d Familienstand')}
- {text(209,1494,226,'e  Tom und Klara sind')}{field('u4-e1',438,1490,225,'4e Familienstand')}{text(670,1494,90,', aber sie')}{field('u4-e2',767,1490,136,'4e leben')}{text(909,1494,155,'zusammen.')}
- {checkGroup('u4',202,1525)}
+ {match('u2',['a  Ich arbeite als','b  Frau Stern arbeitet bei','c  Katharina hat','d  Peter macht','e  Herr Wagner ist'],['Siemens.','eine Ausbildung als Mechatroniker bei Airbus.','einen Job als Kellnerin.','Ingenieur von Beruf.','Friseurin.'],209,864,590,27.5,[0,4])}
+ {check('u2',1045,980,{'u2-1':'0','u2-2':'2','u2-3':'1','u2-4':'3'})}
+ {title('3',1034,'Ordnen Sie zu.','KB 2c','Wörter')}{text(209,1074,326,'arbeite | habe | mache | mache | bin | bin','nabBank')}{text(209,1122,450,'Was machst du beruflich?')}
+ {text(209,1152,75,'a  Ich')}{img('ink-mache',265,1159,49,21)}{text(316,1152,260,'eine Ausbildung als')}{text(232,1178,300,'Krankenschwester.')}
+ {text(209,1207,56,'b  Ich')}{field('u3-b',270,1204,104,'3b bin')}{text(380,1207,170,'Schülerin.')}
+ {text(209,1237,56,'c  Ich')}{field('u3-c',270,1234,104,'3c bin')}{text(380,1237,230,'Historikerin von Beruf.')}
+ {text(607,1152,56,'d  Ich')}{field('u3-d',669,1149,104,'3d mache')}{text(779,1152,260,'ein Praktikum bei Vestas.')}
+ {text(607,1182,56,'e  Ich')}{field('u3-e',669,1179,104,'3e arbeite')}{text(779,1182,230,'als Journalistin.')}
+ {text(607,1212,56,'f  Ich')}{field('u3-f',669,1209,104,'3f habe')}{text(779,1212,260,'einen Job als Verkäufer.')}
+ {checkGroup('u3',1045,1210)}
+ {title('4',1300,'Ordnen Sie zu.','KB 3a','Wörter')}{text(209,1337,616,'geschieden | leben | Single | verheiratet | nicht verheiratet | zwei Kinder','nabBank')}
+ {img('status',644,1355,455,96)}
+ {text(209,1376,220,'a  Stefan und Tanja sind')}{img('ink-status',429,1381,88,22)}{text(209,1405,123,'b  Sie haben')}{field('u4-b',327,1402,266,'4b Kinder')}
+ {text(209,1435,230,'c  Maike und Martin sind')}{field('u4-c',442,1432,192,'4c Familienstand')}
+ {text(209,1465,133,'d  Maria ist')}{field('u4-d',323,1462,112,'4d Familienstand')}
+ {text(209,1494,226,'e  Tom und Klara sind')}{field('u4-e1',434,1490,230,'4e Familienstand')}{text(670,1494,90,', aber sie')}{field('u4-e2',746,1490,150,'4e leben')}{text(909,1494,155,'zusammen.')}
+ {checkGroup('u4',1045,1490)}
  </>}
  {page==='13'&&<>
  {head('BASISTRAINING')}<div className="nabModule">2</div>
