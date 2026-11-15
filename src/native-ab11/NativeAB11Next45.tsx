@@ -59,28 +59,38 @@ export function NativeAB11Next45({page}:{page:string}){
  {t(165,953,180,'▪  Entschuldigung.')}{f('u11b-1',308,949,410)}{t(165,974,650,'▴  Das ist eine Zeitung!')}{t(165,995,18,'▪')}{art('wie',184,996,130,21)}{t(317,995,20,'?')}{t(165,1016,650,'▴  Z-E-I-T-U-N-G')}
  {t(165,1037,120,'▪  Z-E-I- …')}{f('u11b-2',254,1033,466)}{t(721,1037,20,'?')}{t(165,1058,650,'▴  Z-E-I-T-U-N-G …')}{t(165,1079,650,'▪  Vielen Dank.')}{t(165,1100,20,'▴')}{f('u11b-3',185,1096,535)}{c('u11b',817,1117,()=>data.fields.filter(f=>f.id.startsWith('u11b-')).every(f=>(f.answer||'').split('|').some(a=>norm(v[f.id]||'')===norm(a))))}{art('footer',28,1206,232,31)}
  </>})()}
- {page==='39'&&<>
- {head('TRAINING: SCHREIBEN')}<div className="nabModule">5</div>{title('1',210,'Formulare. Ordnen Sie zu.')}
- {txt(168,253,660,'Beruf | Familienname | Straße | Vorname | E-Mail | Ort | PLZ | Telefon','mBank')}
- {txt(429,321,210,'Paul Paulsen','mExample')}{txt(429,352,240,'Diplom-Ingenieur\nResselstr.15\n6020 Innsbruck\n0043 / 676 - 37 20 207\npaul@paul.at')}
- {f('f-vorname',168,316,190)}{f('f-beruf',168,347,190)}{txt(168,393,190,'PLZ','mExample')}{f('f-telefon',168,424,190)}
- {['familienname','strasse','ort','email'].map((id,i)=>f('f-'+id,706,[280,311,342,456][i],150))}
- <svg className="mFormLines" style={{position:'absolute',left:358,top:Y(280),width:350,height:210*sy,pointerEvents:'none'}} viewBox="0 0 350 210"><path d="M0 39 L65 44 M0 70 L65 75 M0 116 L65 106 M0 147 L65 137 M200 44 L345 0 M205 75 L345 31 M230 106 L345 62 M187 168 L345 176" stroke="#999" fill="none"/></svg>
- {check('f1',168,500)}{txt(188,549,615,'Sie müssen oft Ihre Adresse sagen oder die Adresse von anderen\nverstehen. Achten Sie besonders auf Wörter wie Ort, Postleitzahl …\nSo verstehen Sie wichtige Informationen.','mSmall mTip')}
- {title('2',657,'Lesen Sie die Informationen über Jurj Kulintsev und ergänzen Sie die Kundenkarte.')}{art('portrait',168,703,95,104)}
- {txt(281,706,558,'Jurj Kulintsev kommt aus Russland. Jetzt wohnt er zusammen mit seiner\nFrau in der Schweiz, in der Helvetiastraße 18 in 3005 Bern. Er hat eine\nAusbildung als Informatiker und arbeitet jetzt als Programmierer bei\nDATNET. Er findet Bern sehr schön.','mSmall')}
- {txt(180,838,634,'KAUFHAUS KAUFGUT','mCardHeader')}{txt(180,873,600,'Antrag auf eine Kundenkarte:','mSmall')}{radio('k-anrede','Herr',180,902,'Herr')}{txt(205,900,62,'Herr','mSmall')}{radio('k-anrede','Frau',270,902,'Frau')}{txt(295,900,62,'Frau','mSmall')}
- {txt(180,932,75,'Name:','mSmall')}{txt(261,932,180,'Kulintsev','mExample')}{txt(180,963,75,'Vorname:','mSmall')}{f('k-vorname',261,961,174)}{txt(180,994,75,'Straße:','mSmall')}{f('k-strasse',261,992,174)}
- {txt(470,932,85,'PLZ, Ort:','mSmall')}{f('k-plzort',560,930,252)}{txt(470,963,85,'Beruf:','mSmall')}{f('k-beruf',560,961,252)}{txt(470,994,85,'E-Mail:','mSmall')}{txt(560,994,252,'jurj.kulintsev@web.ch','mExample')}
- {rule('f2',180,1037,()=>v['k-anrede']==='Herr'&&Object.entries(answers('f2')).every(([id,a])=>norm(v[id]||'')===norm(a)))}
- {txt(132,1090,710,'TRAINING: AUSSPRACHE','mHeader')}{txt(555,1101,270,'Satzakzent','mSmall')}
- {title('1',1145,'Hören Sie und kreuzen Sie in der\nRegel an.','',132,345)}{listen('23',96,1145,'1')}
- <div className="mPrintedStress" style={{left:168,top:Y(1210)}}>{[['a  ▪ Was ','ist',' das? ↘'],['   ▴ Das ist eine ','Kette','. ↘'],['   ▪ Wie ','schreibt',' man das? ↘'],['   ▴ Mit zwei ','Te','. ↘'],['','',''],['b  ▪ Und was ist ','das','? ↗ Ist das eine ','Kette','? ↗'],['   ▴ ','Nein','. ↘ Das ist keine ','Kette',', →'],['     das ist ein ','Ring','. ↘']].map((row,i)=><div key={i}>{row.map((s,j)=><span key={j} className={(j%2===1?'marked ':'')+'tapWord'} data-word={s.trim()} data-phrase={row.join('')} role="button" tabIndex={0}>{s}</span>)||' '}</div>)}</div>
- {txt(168,1450,330,'Der Satzakzent ist','mTitle')}{radio('regel','letztes-wort',168,1482,'immer auf dem letzten Wort.')}{txt(194,1480,300,'immer auf dem letzten Wort.','mSmall')}{radio('regel','wichtige-info',168,1510,'auf der wichtigen oder neuen Information.')}{txt(194,1508,340,'auf der wichtigen oder neuen Information.','mSmall')}{rule('au1',168,1541,()=>v.regel==='wichtige-info')}
- {title('2',1145,'Markieren Sie den Satzakzent.','',532,325)}{listen('24',494,1145,'1')}{txt(567,1180,290,'Hören Sie dann und vergleichen Sie.','mSmall')}{txt(567,1210,282,'a  Wie heißt das auf Deutsch?','mExample')}
- {['b  Das ist eine Uhr.','c  Sie ist aus Plastik.','d  Ist das eine Seife?','e  Das ist keine Seife, das ist eine Brille.'].map((s,i)=>stress('au2-'+String.fromCharCode(98+i),567,1242+i*34,s))}{rule('au2',567,1390,()=>['Uhr','Plastik','Seife','Brille'].every((a,i)=>norm(v['au2-'+String.fromCharCode(98+i)]||'')===norm(a)))}
- {listen('25',494,1435,'1')}{txt(567,1435,285,'Hören Sie noch einmal und sprechen\nSie nach.','mSmall')}
- </>}
+ {page==='39'&&(()=>{
+ const t=(x:number,y:number,w:number,s:string,c='')=><div className={'mText '+c} style={{left:x,top:y,width:w}}><Words s={s}/></div>;
+ const f=(id:string,x:number,y:number,w:number)=><ChoiceInput className="mField" data-native-field={id} aria-label={id} style={{left:x,top:y,width:w}} value={v[id]||''} onChange={e=>set(id,e.target.value)}/>;
+ const offsets:Record<string,number>={"portrait": 0, "plz": 104, "name": 121, "email": 141, "stress": 163, "footer": 322};
+ const art=(n:string,x:number,y:number,w:number,h:number)=><div className="mP39Art" style={{left:x,top:y,width:w,height:h}}><PageImage className="mP39Sprite" alt={'Originalabbildung '+n} src="assets/native-ab11/p39-source-sprite.png" style={{left:0,top:-offsets[n],width:338,height:347}}/></div>;
+ const title=(n:string,x:number,y:number,w:number,s:string)=> <><div className="mP39Number" style={{left:x,top:y}}>{n}</div>{t(x+37,y-1,w-37,s,'mTitle')}</>;
+ const c=(id:string,x:number,y:number,test:()=>boolean)=><div className="mCheck" data-native-task={id} style={{left:x,top:y}}><CheckButton onClick={()=>G({...graded,[id]:test()})}/><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const group=(id:string)=>Object.entries(answers(id)).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')));
+ const radio=(id:string,val:string,x:number,y:number,label:string)=><ChoiceInput className="mRadio" type="radio" data-value={val} name={'native-ab11-39-'+id} aria-label={label} style={{left:x,top:y}} checked={v[id]===val} onChange={()=>set(id,val)}/>;
+ const listen=(n:string,x:number,y:number)=><button className="mListen" aria-label={'Originalaudio 1 '+n} style={{left:x,top:y}} onClick={()=>{T(n);if(audio.current){audio.current.src='assets/ab-cd1-track'+n+'.mp3';audio.current.play().catch(()=>{})}}}>▶ 1 {n}</button>;
+ return <>{t(140,129,400,'TRAINING: SCHREIBEN','mHeader')}<div className="mP39Rule" style={{left:430,top:152,width:411}}/><div className="mP39Module">5</div>
+ {title('1',138,193,700,'Formulare. Ordnen Sie zu.')}
+ {t(175,227,450,'Beruf | Familienname | Straße | Vorname | E-Mail | Ort | PLZ | Telefon','mP39Bank')}
+ {t(434,280,200,'Paul Paulsen','mP39Name')}{['Diplom-Ingenieur','Resseltstr.15','6020 Innsbruck','0043 / 676 - 37 20 207','paul@paul.at'].map((s,i)=>t(434,[301,324,341,362,379][i],220,s))}
+ {f('f-vorname',174,264,170)}{f('f-beruf',174,292,170)}{art('plz',174,336,39,17)}<i className="mP39Line" style={{left:174,top:350,width:170}}/>{f('f-telefon',174,354,170)}
+ {['familienname','strasse','ort','email'].map((id,i)=>f('f-'+id,660,[224,249,279,380][i],174))}
+ <svg className="mP39FormLines" viewBox="0 0 901 1275"><path d="M354 284 L426 289 M354 312 L427 313 M351 350 L427 352 M351 374 L427 374 M528 288 L650 245 M555 313 L651 270 M522 335 L650 298 M540 352 L580 319 M542 387 L652 399"/></svg>
+ {c('f1',842,402,()=>group('f1'))}<div className="mP39Tip"/><span className="mP39TipRail">TIPP</span>{t(202,443,600,'Sie müssen oft Ihre Adresse sagen oder die Adresse von anderen\nverstehen. Achten Sie besonders auf Wörter wie Ort, Postleitzahl …\nSo verstehen Sie wichtige Informationen.','mP39TipText')}
+ {title('2',138,533,720,'Lesen Sie die Informationen über Jurj Kulintsev und ergänzen Sie die Kundenkarte.')}{art('portrait',169,568,99,104)}
+ {t(283,575,595,'Jurj Kulintsev kommt aus Russland. Jetzt wohnt er zusammen mit seiner\nFrau in der Schweiz, in der Helvetiastraße 18 in 3005 Bern. Er hat eine\nAusbildung als Informatiker und arbeitet jetzt als Programmierer bei\nDATNET. Er findet Bern sehr schön.','mP39Bio')}
+ <div className="mP39Card"/><div className="mP39CardBand"/>{t(183,690,130,'KAUFHAUS','mP39CardTitle')}{t(302,690,320,'KAUFGUT','mP39CardTitle mP39CardWhite')}
+ {t(183,726,400,'Antrag auf eine Kundenkarte:')}{radio('k-anrede','Herr',184,747,'Herr')}{t(203,747,50,'Herr')}{radio('k-anrede','Frau',243,747,'Frau')}{t(262,747,50,'Frau')}
+ {['Name:','Vorname:','Straße:'].map((s,i)=>t(183,768+i*21,80,s))}{art('name',247,769,55,20)}{f('k-vorname',248,786,174)}{f('k-strasse',248,807,174)}
+ {['PLZ, Ort:','Beruf:','E-Mail:'].map((s,i)=>t(452,768+i*21,110,s))}{f('k-plzort',518,765,165)}{f('k-beruf',518,786,165)}{art('email',512,810,134,22)}{c('f2',712,802,()=>v['k-anrede']==='Herr'&&group('f2'))}
+ {t(140,876,400,'TRAINING: AUSSPRACHE','mHeader')}{t(462,886,130,'Satzakzent','mP39Subtitle')}<div className="mP39Rule" style={{left:546,top:899,width:295}}/>
+ {title('1',138,925,370,'Hören Sie und kreuzen Sie in der\nRegel an.')}{listen('23',99,931)}{art('stress',172,980,338,159)}
+ <div className="mP39Regel"/><span className="mP39RuleRail">REGEL</span>{t(201,1151,300,'Der Satzakzent ist','mP39Bold')}{radio('regel','letztes-wort',202,1168,'immer auf dem letzten Wort.')}{t(220,1168,350,'immer auf dem letzten Wort.')}{radio('regel','wichtige-info',202,1187,'auf der wichtigen oder neuen Information.')}{t(220,1187,370,'auf der wichtigen oder neuen Information.')}{c('au1',137,1210,()=>v.regel==='wichtige-info')}
+ {title('2',523,925,355,'Markieren Sie den Satzakzent.')}{listen('24',483,931)}{t(560,949,330,'Hören Sie dann und vergleichen Sie.','mP39Instruction')}
+ <div className="mP39Stress" style={{left:560,top:981}}>a&nbsp;&nbsp; Wie <u>heißt</u> das auf Deutsch?</div>
+ {['b  Das ist eine Uhr.','c  Sie ist aus Plastik.','d  Ist das eine Seife?','e  Das ist keine Seife, das ist eine Brille.'].map((s,i)=><div key={s} className="mP39Stress" style={{left:560,top:1002+i*21}}>{s.split(' ').map((w,j)=> <span key={j}><button className={norm(v['au2-'+String.fromCharCode(98+i)]||'')===norm(w)?'stressed':''} aria-label={'au2-'+String.fromCharCode(98+i)+' '+w} onClick={()=>set('au2-'+String.fromCharCode(98+i),w)}>{w}</button>{' '}</span>)}</div>)}{c('au2',560,1141,()=>['Uhr','Plastik','Seife','Brille'].every((a,i)=>norm(v['au2-'+String.fromCharCode(98+i)]||'')===norm(a)))}
+ {listen('25',523,1104)}{t(560,1097,310,'Hören Sie noch einmal und sprechen\nSie nach.','mP39Instruction')}{art('footer',705,1200,196,25)}
+ </>})()}
  {page==='40'&&<>
  {head('TEST')}{title('1',210,'Markieren Sie und ordnen Sie zu.')}
  <div className="mSnake" style={{left:168,top:Y(253),width:670}}>{snake.split('').map((s,i)=>{const marked=(i>=4&&i<=7)||Object.keys(v).some(k=>{if(!k.startsWith('snake-')||v[k]!=='1')return false;const [,a,b]=k.split('-').map(Number);return i>=a&&i<=b});return <button key={i} className={(marked?'marked ':'')+(snakeStart===i?'active':'')} aria-label={'Buchstabenschlange '+i+' '+s} onClick={()=>snakeClick(i)}>{s}</button>})}</div>

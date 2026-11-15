@@ -166,3 +166,26 @@
 .mP38ColorTable{position:absolute;left:158px;top:230px;width:668px;height:126px;background:repeating-linear-gradient(transparent 0 24px,#f4f2dd 24px 25px);border:1px dotted #e6e2d1}.mP38Color{position:absolute;width:17px;height:17px;border:1px solid #777;box-sizing:border-box;margin:0!important;padding:0!important;min-height:0!important}.mP38Color.round{border-radius:50%}
 .mP38Writing{position:absolute;resize:none;border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;font:14px/20px KbDroid,Georgia,serif!important;color:#174770;padding:0!important;margin:0!important}
 .nativeAB11Next45[data-native-ab11-page='38'] .sharedMatchItem{font-family:KbDroid,Georgia,serif!important}.nativeAB11Next45[data-native-ab11-page='38'] .sharedMatchLines path{stroke-width:1.3}
+
+/* Page 39: form matching, customer card and sentence stress at source coordinates. */
+.nativeAB11.nativeAB11Next45[data-native-ab11-page='39'] .mCanvas{width:901px;height:1275px}
+.nativeAB11Next45[data-native-ab11-page='39'] .mCanvas .mText{font:15px/20px KbDroid,Georgia,serif;transform:scaleX(.98);transform-origin:left top}
+.nativeAB11Next45[data-native-ab11-page='39'] .mCanvas .mHeader{font:27px/33px KbDroid,Georgia,serif;letter-spacing:0;transform:scaleX(.94)}
+.nativeAB11Next45[data-native-ab11-page='39'] .mCanvas .mTitle{font:700 18px/21px ABScanSans,Arial,sans-serif;transform:translateY(-2px) scaleX(.93)}
+.nativeAB11Next45[data-native-ab11-page='39'] .mCanvas .mP39Bank{font:16px/17px ABScanSans,Arial,sans-serif;background:#fffce0;color:#264a91;transform:scaleX(.87)}
+.nativeAB11Next45[data-native-ab11-page='39'] .mCanvas .mP39Name{font-weight:bold;color:#154c8e}
+.nativeAB11Next45[data-native-ab11-page='39'] .mCanvas .mP39Bio{font-size:16px;line-height:21px;transform:scaleX(.99)}
+.nativeAB11Next45[data-native-ab11-page='39'] .mCanvas .mP39TipText{font-size:15px;line-height:18px;transform:scaleX(.91)}
+.nativeAB11Next45[data-native-ab11-page='39'] .mCanvas .mP39CardTitle{font-size:21px;color:#064b9e;line-height:26px}
+.nativeAB11Next45[data-native-ab11-page='39'] .mCanvas .mP39CardWhite{color:white}
+.nativeAB11Next45[data-native-ab11-page='39'] .mCanvas .mP39Subtitle{font:italic 17px/22px KbDroid,Georgia,serif}
+.nativeAB11Next45[data-native-ab11-page='39'] .mCanvas .mP39Instruction{font:17px/21px ABScanSans,Arial,sans-serif;transform:scaleX(.95)}
+.nativeAB11Next45[data-native-ab11-page='39'] .mCanvas .mP39Bold{font-weight:bold;font-size:14px}
+.nativeAB11Next45[data-native-ab11-page='39'] .mCanvas .mField{border:0!important;border-bottom:1px solid #929792!important;border-radius:0!important;background:transparent!important;font:14px/20px KbDroid,Georgia,serif!important;height:20px!important}
+.nativeAB11Next45[data-native-ab11-page='39'] .mCanvas .mRadio{border-radius:50%!important;width:14px!important;height:14px!important;border-color:#999!important}
+.nativeAB11Next45[data-native-ab11-page='39'] .mFooter{display:none}
+.mP39Rule,.mP39Line{position:absolute;height:1px;background:#6bc52f}.mP39Line{background:#999}.mP39Module{position:absolute;left:860px;top:90px;width:60px;height:64px;background:#7ad520;color:white;font:64px/64px KbDroid,Georgia,serif;text-align:center}.mP39Number{position:absolute;width:27px;height:18px;font:700 17px/18px Georgia,serif;background:#53c33b;border-top:1px solid #dc321e;border-left:1px solid #dc321e;text-align:center;color:white}
+.mP39Art{position:absolute;overflow:hidden}.mP39Art .mP39Sprite{position:absolute!important;max-width:none!important;max-height:none!important;object-fit:fill!important;margin:0!important}
+.mP39FormLines{position:absolute;inset:0;width:901px;height:1275px;pointer-events:none;fill:none;stroke:#999;stroke-width:1}
+.mP39Tip{position:absolute;left:175px;top:435px;width:462px;height:57px;border-top:5px solid #d3ad12;border-left:12px solid #d3ad12;box-sizing:border-box}.mP39TipRail,.mP39RuleRail{position:absolute;left:176px;top:467px;writing-mode:vertical-rl;transform:rotate(180deg);font:700 9px/10px ABScanSans,Arial}.mP39Card{position:absolute;left:174px;top:683px;width:533px;height:152px;background:#f7fcfc}.mP39CardBand{position:absolute;left:298px;top:685px;width:407px;height:34px;background:#0053b0}.mP39Regel{position:absolute;left:173px;top:1143px;width:338px;height:58px;border-top:5px solid #eaeae6;border-left:13px solid #eaeae6;box-sizing:border-box}.mP39RuleRail{top:1172px;left:175px;font-size:7px}
+.mP39Stress{position:absolute;white-space:pre;font:16px/21px KbDroid,Georgia,serif;transform:scaleX(.96);transform-origin:left top}.mP39Stress button{border:0;background:transparent;color:inherit;font:inherit;min-height:0;padding:0;margin:0}.mP39Stress .stressed{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px;color:#315e9f}.mP39Stress u{text-decoration-color:#b25718;text-underline-offset:3px}
