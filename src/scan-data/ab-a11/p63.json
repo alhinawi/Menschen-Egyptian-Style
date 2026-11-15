@@ -1870,10 +1870,10 @@
    "name": "l8-les1-a",
    "value": "1",
    "answer": "false",
-   "x": 266,
-   "y": 396,
-   "w": 14,
-   "h": 14
+   "x": 263,
+   "y": 393,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-les1-a2",
@@ -1883,10 +1883,10 @@
    "name": "l8-les1-a",
    "value": "2",
    "answer": "true",
-   "x": 613,
-   "y": 394,
-   "w": 14,
-   "h": 14
+   "x": 611,
+   "y": 391,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-les1-b1",
@@ -1896,10 +1896,10 @@
    "name": "l8-les1-b",
    "value": "1",
    "answer": "false",
-   "x": 284,
-   "y": 638,
-   "w": 14,
-   "h": 14
+   "x": 281,
+   "y": 636,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-les1-b2",
@@ -1909,101 +1909,76 @@
    "name": "l8-les1-b",
    "value": "2",
    "answer": "true",
-   "x": 678,
-   "y": 636,
-   "w": 14,
-   "h": 14
+   "x": 674,
+   "y": 633,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-aus1-morgen",
    "group": "l8-aus1",
-   "kind": "radio",
+   "kind": "checkbox",
    "label": "AU Ü1 Morgen",
-   "name": "l8-aus1",
-   "value": "morgen",
    "answer": "false",
    "x": 283,
-   "y": 1054,
-   "w": 14,
-   "h": 14
+   "y": 1053,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-aus1-abend",
    "group": "l8-aus1",
-   "kind": "radio",
+   "kind": "checkbox",
    "label": "AU Ü1 Abend",
-   "name": "l8-aus1",
-   "value": "abend",
    "answer": "false",
-   "x": 390,
+   "x": 385,
    "y": 1052,
-   "w": 14,
-   "h": 14
-  },
-  {
-   "id": "l8-aus1-essen",
-   "group": "l8-aus1",
-   "kind": "radio",
-   "label": "AU Ü1 Essen",
-   "name": "l8-aus1",
-   "value": "essen",
-   "answer": "true",
-   "x": 465,
-   "y": 1052,
-   "w": 14,
-   "h": 14
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-aus1-viertel",
    "group": "l8-aus1",
-   "kind": "radio",
+   "kind": "checkbox",
    "label": "AU Ü1 Viertel",
-   "name": "l8-aus1",
-   "value": "viertel",
    "answer": "false",
-   "x": 558,
+   "x": 585,
    "y": 1052,
-   "w": 14,
-   "h": 14
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-aus1-sieben",
    "group": "l8-aus1",
-   "kind": "radio",
+   "kind": "checkbox",
    "label": "AU Ü1 sieben",
-   "name": "l8-aus1",
-   "value": "sieben",
    "answer": "false",
-   "x": 272,
-   "y": 1078,
-   "w": 14,
-   "h": 14
+   "x": 273,
+   "y": 1079,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-aus1-museum",
    "group": "l8-aus1",
-   "kind": "radio",
+   "kind": "checkbox",
    "label": "AU Ü1 Museum",
-   "name": "l8-aus1",
-   "value": "museum",
    "answer": "true",
-   "x": 396,
+   "x": 392,
    "y": 1078,
-   "w": 14,
-   "h": 14
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-aus1-gehen",
    "group": "l8-aus1",
-   "kind": "radio",
+   "kind": "checkbox",
    "label": "AU Ü1 gehen",
-   "name": "l8-aus1",
-   "value": "gehen",
    "answer": "true",
-   "x": 494,
-   "y": 1078,
-   "w": 14,
-   "h": 14
+   "x": 490,
+   "y": 1077,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-aus2-1ja",
@@ -2013,10 +1988,10 @@
    "name": "l8-aus2-1",
    "value": "ja",
    "answer": "true",
-   "x": 250,
-   "y": 1295,
-   "w": 14,
-   "h": 14
+   "x": 245,
+   "y": 1290,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-aus2-1nein",
@@ -2026,10 +2001,10 @@
    "name": "l8-aus2-1",
    "value": "nein",
    "answer": "false",
-   "x": 308,
-   "y": 1295,
-   "w": 14,
-   "h": 14
+   "x": 301,
+   "y": 1290,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-aus2-2ja",
@@ -2039,10 +2014,10 @@
    "name": "l8-aus2-2",
    "value": "ja",
    "answer": "false",
-   "x": 250,
-   "y": 1365,
-   "w": 14,
-   "h": 14
+   "x": 246,
+   "y": 1361,
+   "w": 18,
+   "h": 18
   },
   {
    "id": "l8-aus2-2nein",
@@ -2052,10 +2027,360 @@
    "name": "l8-aus2-2",
    "value": "nein",
    "answer": "true",
-   "x": 308,
-   "y": 1365,
+   "x": 301,
+   "y": 1361,
+   "w": 18,
+   "h": 18
+  },
+  {
+   "id": "mark-0",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Was? Wann? Ich spiele gern",
+   "x": 596,
+   "y": 415,
+   "w": 95,
+   "h": 20
+  },
+  {
+   "id": "mark-1",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Was? Wann? Tennis",
+   "x": 693,
+   "y": 415,
+   "w": 51,
+   "h": 20
+  },
+  {
+   "id": "mark-2",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Was? Wann? aber leider",
+   "x": 746,
+   "y": 415,
+   "w": 87,
+   "h": 20
+  },
+  {
+   "id": "mark-3",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Was? Wann? nicht so gut",
+   "x": 594,
+   "y": 442,
+   "w": 90,
+   "h": 20
+  },
+  {
+   "id": "mark-4",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Was? Wann? Wer spielt mit mir",
+   "x": 691,
+   "y": 441,
+   "w": 136,
+   "h": 20
+  },
+  {
+   "id": "mark-5",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Was? Wann? Nur",
+   "x": 596,
+   "y": 467,
+   "w": 30,
+   "h": 20
+  },
+  {
+   "id": "mark-6",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Was? Wann? Samstag",
+   "x": 629,
+   "y": 467,
+   "w": 61,
+   "h": 20
+  },
+  {
+   "id": "mark-7",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Was? Wann? oder",
+   "x": 694,
+   "y": 467,
+   "w": 36,
+   "h": 20
+  },
+  {
+   "id": "mark-8",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Was? Wann? Sonntag",
+   "x": 731,
+   "y": 467,
+   "w": 68,
+   "h": 20
+  },
+  {
+   "id": "mark-9",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Was? Wann? Sie lieben die Alpen",
+   "x": 264,
+   "y": 657,
+   "w": 174,
+   "h": 20
+  },
+  {
+   "id": "mark-10",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Was? Wann? Dann sind Sie bei uns richtig",
+   "x": 264,
+   "y": 684,
+   "w": 251,
+   "h": 20
+  },
+  {
+   "id": "mark-11",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Was? Wann? Hotel Bergblick",
+   "x": 264,
+   "y": 709,
+   "w": 141,
+   "h": 20
+  },
+  {
+   "id": "mark-12",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Was? Wann? sucht",
+   "x": 264,
+   "y": 734,
+   "w": 44,
+   "h": 20
+  },
+  {
+   "id": "mark-13",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Was? Wann? Kellner/Kellnerin",
+   "x": 309,
+   "y": 734,
+   "w": 145,
+   "h": 20
+  },
+  {
+   "id": "mark-14",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Was? Wann? für Hotelbar",
+   "x": 455,
+   "y": 734,
+   "w": 112,
+   "h": 20
+  },
+  {
+   "id": "mark-15",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Was? Wann? Di-So 19-24 Uhr",
+   "x": 264,
+   "y": 760,
+   "w": 155,
+   "h": 20
+  },
+  {
+   "id": "mark-16",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Was? Wann? Hotel Augusta in Innsbruck",
+   "x": 657,
+   "y": 655,
+   "w": 237,
+   "h": 20
+  },
+  {
+   "id": "mark-17",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Was? Wann? sucht für das",
+   "x": 657,
+   "y": 681,
+   "w": 101,
+   "h": 20
+  },
+  {
+   "id": "mark-18",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Was? Wann? Sekretariat Aushilfe",
+   "x": 761,
+   "y": 681,
+   "w": 178,
+   "h": 20
+  },
+  {
+   "id": "mark-19",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Was? Wann? für 10-15 Stunden pro Woche",
+   "x": 657,
+   "y": 707,
+   "w": 264,
+   "h": 20
+  },
+  {
+   "id": "mark-20",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Was? Wann? am Vormittag",
+   "x": 657,
+   "y": 733,
+   "w": 134,
+   "h": 20
+  },
+  {
+   "id": "accent-0",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Wortakzent gen",
+   "x": 247,
+   "y": 1052,
+   "w": 29,
+   "h": 20
+  },
+  {
+   "id": "accent-1",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Wortakzent A",
+   "x": 322,
+   "y": 1052,
    "w": 14,
-   "h": 14
+   "h": 20
+  },
+  {
+   "id": "accent-2",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Wortakzent bend",
+   "x": 338,
+   "y": 1052,
+   "w": 42,
+   "h": 20
+  },
+  {
+   "id": "accent-3",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Wortakzent Es",
+   "x": 421,
+   "y": 1052,
+   "w": 21,
+   "h": 20
+  },
+  {
+   "id": "accent-4",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Wortakzent sen",
+   "x": 442,
+   "y": 1052,
+   "w": 31,
+   "h": 20
+  },
+  {
+   "id": "accent-5",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Wortakzent Vier",
+   "x": 519,
+   "y": 1052,
+   "w": 36,
+   "h": 20
+  },
+  {
+   "id": "accent-6",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Wortakzent tel",
+   "x": 557,
+   "y": 1052,
+   "w": 19,
+   "h": 20
+  },
+  {
+   "id": "accent-7",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Wortakzent sie",
+   "x": 213,
+   "y": 1078,
+   "w": 21,
+   "h": 20
+  },
+  {
+   "id": "accent-8",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Wortakzent ben",
+   "x": 235,
+   "y": 1078,
+   "w": 31,
+   "h": 20
+  },
+  {
+   "id": "accent-9",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Wortakzent Mu",
+   "x": 314,
+   "y": 1078,
+   "w": 27,
+   "h": 20
+  },
+  {
+   "id": "accent-10",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Wortakzent se",
+   "x": 344,
+   "y": 1078,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "id": "accent-11",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Wortakzent um",
+   "x": 366,
+   "y": 1078,
+   "w": 24,
+   "h": 20
+  },
+  {
+   "id": "accent-12",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Wortakzent ge",
+   "x": 433,
+   "y": 1078,
+   "w": 24,
+   "h": 20
+  },
+  {
+   "id": "accent-13",
+   "group": "own",
+   "kind": "checkbox",
+   "label": "Wortakzent hen",
+   "x": 456,
+   "y": 1078,
+   "w": 27,
+   "h": 20
   }
  ],
  "audio": [
@@ -2063,37 +2388,37 @@
    "id": "au-cd1-38a",
    "src": "assets/ab-cd1-track38.mp3",
    "label": "CD 1 Track 38",
-   "x": 125,
-   "y": 991,
-   "w": 32,
-   "h": 13
+   "x": 121,
+   "y": 990,
+   "w": 38,
+   "h": 18
   },
   {
    "id": "au-cd1-38b",
    "src": "assets/ab-cd1-track38.mp3",
    "label": "CD 1 Track 38",
-   "x": 125,
-   "y": 1137,
-   "w": 32,
-   "h": 13
+   "x": 121,
+   "y": 1117,
+   "w": 38,
+   "h": 18
   },
   {
    "id": "au-cd1-39",
    "src": "assets/ab-cd1-track39.mp3",
    "label": "CD 1 Track 39",
    "x": 648,
-   "y": 992,
-   "w": 34,
-   "h": 13
+   "y": 987,
+   "w": 38,
+   "h": 18
   },
   {
    "id": "au-cd1-40",
    "src": "assets/ab-cd1-track40.mp3",
    "label": "CD 1 Track 40",
-   "x": 690,
-   "y": 1320,
-   "w": 34,
-   "h": 13
+   "x": 692,
+   "y": 1315,
+   "w": 38,
+   "h": 18
   }
  ],
  "groups": [
@@ -2115,7 +2440,8 @@
   "verifiedWords": 265,
   "totalWords": 265,
   "notes": [
-   "Lesen U1a is a marking exercise (Was?/Wann?) - no fields; ad texts are printed handwrite-style ads, kept as words; yellow highlight in A1 and circle-cross on Essen are printed-example/owner marks, not words. U1b answers from Lsg: A2, B2. Aussprache U1: circles sit after each word; Lsg gives two lists (words with unbetontes e: Abend, Essen, Viertel, sieben, Museum, gehen; 'e hoeren Sie bei': Essen, Museum, gehen) - circles modeled as one radio group for the Kreuzen question with true = Essen, Museum, gehen; Wortakzent marking = no field. U2 answers: Satz 1 Ja, Satz 2 Nein. U3 listening/speaking - no fields."
+   "Lesen U1a is a marking exercise (Was?/Wann?) - no fields; ad texts are printed handwrite-style ads, kept as words; yellow highlight in A1 and circle-cross on Essen are printed-example/owner marks, not words. U1b answers from Lsg: A2, B2. Aussprache U1: circles sit after each word; Lsg gives two lists (words with unbetontes e: Abend, Essen, Viertel, sieben, Museum, gehen; 'e hoeren Sie bei': Essen, Museum, gehen) - circles modeled as one radio group for the Kreuzen question with true = Essen, Museum, gehen; Wortakzent marking = no field. U2 answers: Satz 1 Ja, Satz 2 Nein. U3 listening/speaking - no fields.",
+   "2026-11-15: source scan restored. Four reading choices,seven independently toggled e-sound checkboxes (not one shared radio),four rule choices measured. Added21 own Was/Wann phrase marks and14 own syllable accent marks. Original Morgen example retained. Tracks38-40. Publisher key confirms Essen/Museum/gehen;Ja/Nein."
   ]
  }
 }
