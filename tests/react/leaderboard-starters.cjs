@@ -23,3 +23,6 @@ assert.equal(rows([{rank:1,name:'No photo',points:1000}],null)[0].avatar,'data:a
 assert.equal(rows([{rank:1,name:'Photo',points:1000,avatar:'https://example.test/photo.webp'}],null)[0].avatar,'https://example.test/photo.webp');
 
 const anonPositions=rows([],null).flatMap((r,i)=>r.avatar==='data:anonymous'?[i+1]:[]);assert.deepEqual(anonPositions,[2,6,9]);
+const pinned=rows([{rank:1,name:'Mohamed Alhinawi',points:0,pinned:true,avatar:'owner-photo'}],{rank:1,points:0});
+assert.equal(pinned[0].name,'Mohamed Alhinawi');assert.equal(pinned[0].points,0);assert.equal(pinned[0].avatar,'owner-photo');assert(pinned[0].own);
+assert(rows([],null).every(r=>/^[A-Za-z ]+$/.test(r.name)));

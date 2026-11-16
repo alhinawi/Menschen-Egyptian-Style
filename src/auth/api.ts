@@ -98,7 +98,7 @@ export async function updateMe(patch: { name?: string; avatar?: string | null })
 
 // ---------- leaderboard ----------
 
-export interface LeaderboardRow { rank: number; name: string; points: number; avatar?: string | null }
+export interface LeaderboardRow { rank: number; name: string; points: number; avatar?: string | null; pinned?: boolean }
 export function getLeaderboard(): Promise<{ top: LeaderboardRow[]; me: { rank: number; points: number } | null }> {
   return req('/leaderboard', { auth: true });
 }
