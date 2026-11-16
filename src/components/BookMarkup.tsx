@@ -1,3 +1,4 @@
+import {useUiLanguage} from '../ui-language';
 import {CheckButton} from './CheckButton';
 import {PageImage} from './PageImage';
 import {renderNative} from './nativeComponents';
@@ -33,10 +34,17 @@ function style(value: string): Record<string, string> {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type Props = Record<string, any>;
 
+function GuideCheckInstruction(){
+ const {t}=useUiLanguage();
+ const [before,after]=t('After answering, tap ✓ to check the exercise').split('✓');
+ return <p className="howtoCheckInstruction">{before}<span className="guideCheckIcon" dir="ltr">✓</span>{after}</p>;
+}
+
 function render(node: MarkupNode, key: string | number, formKey: string | null = null, quizEnabled = false, taskKey: string | null = null, standalone = false): ReactNode {
   const path = String(key);
   if (typeof node === 'string') return node;
   const [tag, attrs, children] = node;
+  if(tag==='p' && children.length===1 && children[0]==='بعد ما تحل، دوس على ✓ والتمرين هيصححلك على طول') return <GuideCheckInstruction key={key}/>;
   if (attrs.class?.split(' ').includes('coverFrame')) {
     const artwork = children.find((n): n is [string, MarkupAttrs, MarkupNode[]] => Array.isArray(n) && n[0] === 'img' && n[1].class === 'coverArtwork');
     if (artwork) return <PremiumCover key={key} src={artwork[1].src} alt={artwork[1].alt}/>;
