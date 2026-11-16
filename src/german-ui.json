@@ -125,5 +125,7 @@
   "Switch lessons and books from the menu above": "Wechsle oben im Menü zwischen Lektionen und Büchern",
   "Audio uses the original recording when available, and a generated voice otherwise.": "Wenn verfügbar, hörst du die Originalaufnahme, sonst eine erzeugte Stimme.",
   "Could not open the lesson. Please refresh the page.": "Die Lektion konnte nicht geöffnet werden. Bitte lade die Seite neu.",
-  "Follow UI": "Wie UI"
+  "Follow UI": "Wie UI",
+  "Sign in and save your progress": "Melde dich an und speichere deinen Fortschritt",
+  "Create an account or sign in to save your progress. The more you solve, the higher your name climbs on the leaderboard.": "Erstelle ein Konto oder melde dich an, um deinen Fortschritt zu speichern. Je mehr du löst, desto höher steigt dein Name in der Rangliste."
 }

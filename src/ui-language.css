@@ -121,3 +121,19 @@ html[data-ui-language="de"] .howtoList li::before{left:auto;right:0}
  html[data-ui-language] .controls .profilePanel .profileLanguageOptions button{min-height:36px!important}
  html[data-ui-language] .controls .profilePanel .authInput{box-sizing:border-box}
 }
+/* Account photos must not inherit the toolbar's generic button sizing. */
+html[data-ui-language] .controls button.profileTrigger{display:flex!important;align-items:center!important;justify-content:center!important;padding:0!important}
+html[data-ui-language] .controls .profileTrigger .profileAvatarImg{display:block;margin:0!important;flex:0 0 22px}
+html[data-ui-language] .controls .profilePanel .authUserRow{display:flex;flex-direction:column;align-items:center;gap:5px;padding:3px 0 5px!important;text-align:center}
+html[data-ui-language] .controls .profilePanel button.authUserAvatarBtn{display:flex;align-items:center;justify-content:center;width:42px!important;min-width:42px!important;height:42px!important;min-height:42px!important;flex:0 0 42px;padding:0!important;margin:0!important;border:0}
+html[data-ui-language] .profilePanel .authUserAvatar{display:block;width:38px;height:38px;margin:0}
+html[data-ui-language] .profilePanel .authUserText{width:100%;max-width:100%;gap:2px;align-items:center}
+html[data-ui-language] .profilePanel .authUserText b,html[data-ui-language] .profilePanel .authUserText small{max-width:100%;white-space:normal;overflow:visible;text-overflow:clip;overflow-wrap:anywhere;text-align:center;line-height:1.4;unicode-bidi:plaintext}
+html[data-ui-language] .profilePanel .profileSyncRow{justify-content:center;margin:2px 0 5px;text-align:center}
+/* Keep all nine guide items readable in the book page in every UI language. */
+html[data-ui-language] .howtoFrame{padding:38px 60px}
+html[data-ui-language] .howtoRule{margin-bottom:22px}
+html[data-ui-language] .howtoList{gap:14px}
+html[data-ui-language] .howtoList b{font-size:29px;line-height:1.2}
+html[data-ui-language] .howtoList p{font-size:23px;line-height:1.35}
+html[data-ui-language] .howtoNote{font-size:20px;line-height:1.4;margin-top:10px;padding-top:10px;flex-shrink:0}
