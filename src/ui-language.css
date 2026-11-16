@@ -150,3 +150,9 @@ html[data-ui-language] .controls .profilePanel button.profileBoardLink{min-heigh
 }
 html[data-ui-language] .profilePanel .authUserAvatarEdit{width:14px;height:14px;display:flex;align-items:center;justify-content:center;background:#713c46!important;color:#fffefa!important;border:1.5px solid #fffefa;box-sizing:border-box}
 html[data-ui-language] .profilePanel .authUserAvatarEdit svg{width:9px;height:9px;display:block;stroke:#fffefa!important;flex-shrink:0}
+
+/* Named pages need more room than numerals. Keep the middle item centered
+   with equal space on each side, without shrinking other touch targets. */
+body.readerSplitControls .controls:has(.lnv-wordPage){grid-template-columns:repeat(3,minmax(0,1fr)) 70px repeat(3,minmax(0,1fr))}
+html[data-ui-language] .controls .lnv-wordPage .lnv-pageLabel{max-width:calc(100% - 10px);font-size:10px}
+html[data-ui-language] .controls .lnv-wordPage .lnv-chev{right:3px;width:5px;font-size:7px}

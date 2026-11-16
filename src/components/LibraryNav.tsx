@@ -145,8 +145,8 @@ export function LibraryNav({slug}: {slug: string}) {
         <span className="lnv-dot size-[7px] rounded-full bg-[var(--accent,#713c46)] flex-none max-[480px]:hidden"/><span className="lnv-pillText overflow-hidden text-ellipsis">{pillText}</span><span className="lnv-chev ml-auto text-[#75623a] dark:text-[#c9b489] text-[10px]">▾</span>
       </button>, headerSlot)}
     {pageSlot && createPortal(
-      <button type="button" className="lnv-pagePill flex items-center gap-1.5 h-9 min-w-16 justify-center px-[11px] py-0 border border-[#d3d4cd] rounded-md bg-transparent text-[#344137] font-semibold text-[12px] font-[Arial,sans-serif] cursor-pointer" aria-haspopup="dialog" aria-label={`Choose page, current page ${pagePillText === 'Cover' ? 'Cover' : 'Seite ' + pagePillText}`} onClick={() => setPanel('pages')}>
-        <span className="lnv-pageLabel">{pagePillText}</span><span className="lnv-chev ml-[2px] text-[#75623a] dark:text-[#c9b489] text-[9px]!">▾</span>
+      <button type="button" className={(isNaN(Number(pagePillText)) ? 'lnv-wordPage ' : '')+"lnv-pagePill flex items-center gap-1.5 h-9 min-w-16 justify-center px-[11px] py-0 border border-[#d3d4cd] rounded-md bg-transparent text-[#344137] font-semibold text-[12px] font-[Arial,sans-serif] cursor-pointer"} aria-haspopup="dialog" aria-label={`Choose page, current page ${pagePillText === 'Cover' ? 'Cover' : 'Seite ' + pagePillText}`} onClick={() => setPanel('pages')}>
+        <span className="lnv-pageLabel">{pagePillText}</span><span className="lnv-chev ml-[2px] text-[#75623a] dark:text-[#c9b489] text-[9px]!">▴</span>
       </button>, pageSlot)}
     {panel === 'nav' && createPortal(
       <div className={noAnim ? 'lnv-overlay lnv-noanim fixed inset-0 z-[90]' : 'lnv-overlay fixed inset-0 z-[90]'} role="dialog" aria-label="Library">
