@@ -1,4 +1,6 @@
 import manifest from './lessons/manifest.json';
+import {kb11Pages} from './native-kb11/registry';
+import {scanData} from './scan-data/registry';
 import {prepareNativeComponents} from './components/nativeComponents';
 import type {LessonConfig, MarkupNode} from './types/book';
 import type {LessonInitializer} from './types/runtime';
@@ -58,18 +60,56 @@ function applyBodyAttrs(config: LessonConfig) {
   }
 }
 
+// Preparation is route-neutral: no history, body attributes, or style activation.
+const prepared = new Map<string, Promise<LoadedLesson>>();
+function prepareLesson(slug: string): Promise<LoadedLesson> {
+  const config = configs[slugToFile[slug]] ?? configs['index.html'];
+  let request = prepared.get(config.slug);
+  if (!request) {
+    request = Promise.all([
+      pages['./lessons/' + config.slug + '.json']!().then(async data => {
+        await prepareNativeComponents(data.default);
+        return data;
+      }),
+      ...config.initializers.map(name => adapterModules['./adapters/' + name + '.ts']!()),
+    ]).then(([data, ...modules]) => ({nodes: data.default as MarkupNode[], initializers: modules.map(m => m.default as LessonInitializer), config}));
+    prepared.set(config.slug, request);
+    void request.catch(() => prepared.delete(config.slug));
+  }
+  return request;
+}
+const warmedStyles = new Set<string>();
+const warmedImages = new Map<string, HTMLImageElement>();
+function warmImages(nodes: MarkupNode[], token?: string) {
+  const sections: MarkupNode[][] = [];
+  const collect = (items: MarkupNode[]) => {for (const n of items) {if(typeof n==='string')continue;if(n[0]==='section'&&n[1]['data-page'])sections.push([n]);else collect(n[2]);}};
+  collect(nodes);
+  let index = sections.findIndex(s => typeof s[0]!=='string' && s[0][1]['data-page']===token);
+  if(index<0) index=sections.findIndex(s => typeof s[0]!=='string' && /^\d+$/.test(s[0][1]['data-page']));
+  const urls = new Set<string>();
+  const walk = (items: MarkupNode[]) => {for(const n of items){if(typeof n==='string')continue;const [tag,attrs,children]=n;
+    if(tag==='img'&&attrs.src)urls.add(attrs.src);
+    const data=tag==='NativeKb11'?kb11Pages[attrs.page]:tag==='HybridScan'?scanData[attrs.book+':'+attrs.page]:undefined;
+    if(data){for(const art of ('art' in data ? data.art : []) as {src:string}[])urls.add(art.src);if('image' in data&&typeof data.image==='string')urls.add(data.image);}
+    walk(children);
+  }};
+  for(const section of sections.slice(Math.max(0,index),Math.max(0,index)+2))walk(section);
+  for(const url of [...urls].slice(0,48)){if(warmedImages.has(url))continue;const image=new Image();image.decoding='async';image.src=url;warmedImages.set(url,image);void image.decode().catch(()=>{});}
+  // Bound retained decoded images during a long study session.
+  while(warmedImages.size>96)warmedImages.delete(warmedImages.keys().next().value!);
+}
+export function prefetchLesson(slug: string, token?: string): Promise<void> {
+  const connection=(navigator as Navigator & {connection?:{saveData?:boolean;effectiveType?:string}}).connection;
+  if(connection?.saveData||connection?.effectiveType==='2g'||connection?.effectiveType==='slow-2g')return Promise.resolve();
+  const config=configs[slugToFile[slug]];
+  for(const href of config?.styles??[]){if(warmedStyles.has(href))continue;const link=document.createElement('link');link.rel='preload';link.as='style';link.href=href;document.head.append(link);warmedStyles.add(href);}
+  return prepareLesson(slug).then(lesson => {warmImages(lesson.nodes, token);}).catch(()=>{});
+}
 export async function loadLesson(slug: string): Promise<LoadedLesson> {
   const config = configs[slugToFile[slug]] ?? configs['index.html'];
-  await ensureStyles(config);
-  const [data, ...modules] = await Promise.all([
-    pages['./lessons/' + config.slug + '.json']!().then(async data => {
-      await prepareNativeComponents(data.default);
-      return data;
-    }),
-    ...config.initializers.map(name => adapterModules['./adapters/' + name + '.ts']!()),
-  ]);
+  const [lesson] = await Promise.all([prepareLesson(slug), ensureStyles(config)]);
   applyBodyAttrs(config);
-  return {nodes: data.default, initializers: modules.map(m => m.default), config};
+  return lesson;
 }
 
 export function lessonUrl(slug: string, token?: string): string {
