@@ -297,7 +297,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(505,1247,300,'hat Stefan keine Zeit.','naNw')}
   {text(505,1272,320,'muss Nina einen Kollegen anrufen.','naNw')}
   {text(505,1297,340,'hat Nina nach dem Mittagessen Zeit.','naNw')}
-  <LineMatching id="p32-10" width={W} height={H} leftX={140} leftWidth={210} rightX={465} rightWidth={440} ys={[1170,1195,1220,1247,1272,1297]} fontSize={20} left={['Heute um elf','In zwei Stunden','Am Donnerstag um drei','Nach der Sitzung','Am Freitag','Stefan hat']} right={['muss Stefan Kollegen am Flughafen abholen.','hat Nina eine Sitzung.','am Freitag um 14.30 Uhr Zeit.','hat Stefan keine Zeit.','muss Nina einen Kollegen anrufen.','hat Nina nach dem Mittagessen Zeit.']} example={[0,3]} values={values} onMatch={set} leftDotXs={[360,360,360,360,360,360]} className="lmHideLeft lmHideRight"/>
+  <LineMatching id="p32-10" width={W} height={H} leftX={140} leftWidth={210} rightX={465} rightWidth={440} ys={[1170,1195,1220,1247,1272,1297]} fontSize={20} left={['Heute um elf','In zwei Stunden','Am Donnerstag um drei','Nach der Sitzung','Am Freitag','Stefan hat']} right={['muss Stefan Kollegen am Flughafen abholen.','hat Nina eine Sitzung.','am Freitag um 14.30 Uhr Zeit.','hat Stefan keine Zeit.','muss Nina einen Kollegen anrufen.','hat Nina nach dem Mittagessen Zeit.']} example={[0,3]} values={values} onMatch={set} className="lmHideLeft lmHideRight"/>
   {art('modul-tab',0,1384,82,32)}
   {text(97,1392,176,'32 | zweiunddreißig','naFooter')}
   {field('p32-9a1',245,393,660,'9a1')}
