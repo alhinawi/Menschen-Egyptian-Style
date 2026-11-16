@@ -156,3 +156,7 @@ html[data-ui-language] .profilePanel .authUserAvatarEdit svg{width:9px;height:9p
 body.readerSplitControls .controls:has(.lnv-wordPage){grid-template-columns:repeat(3,minmax(0,1fr)) 70px repeat(3,minmax(0,1fr))}
 html[data-ui-language] .controls .lnv-wordPage .lnv-pageLabel{max-width:calc(100% - 10px);font-size:10px}
 html[data-ui-language] .controls .lnv-wordPage .lnv-chev{right:3px;width:5px;font-size:7px}
+
+/* Label and chevron have independent anchors: the arrow must never alter
+   the numeral/text's geometric centre, even when fonts or flex rules change. */
+html[data-ui-language] .controls .lnv-pageLabel{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:max-content;margin:0;padding:0;flex:none}
