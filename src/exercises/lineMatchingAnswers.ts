@@ -71,6 +71,12 @@ export const lineMatchingAnswers: Record<string, (string | null)[]> = {
   // 2 -> "denn dann ist das Unwetter gekommen." (2); 3 -> "denn wir hatten ein Traumwetter." (0);
   // 4 -> "denn dort ist es auch im Herbst noch schön warm." (1); 1 -> Beispiel (3).
   'kb-a12:63:5a-lines': ['3', '2', '0', '1'],
+  // p38, L18 Film-Stationen 3 (Das tut mir gut). Key: L18 Kursbuch, Film-Stationen 3:
+  // b Ich laufe -> nicht sehr schnell. (1); c Ich arbeite -> in einer Elektronikfirma (4); d sitze ich -> am Computer. (2);
+  // e Man soll -> viel Sport machen. (6); f Joggen ist -> auch Meditation. (3); g Es ist -> für mich nicht nur Sport. (0);
+  // a Ich gehe = Beispiel (zwei oder drei Mal pro Woche joggen., 5). Native twin (NativeKB12) and HybridScan matching task3.
+  'kb-a12:38:38-3': ['5', '1', '4', '2', '6', '3', '0'],
+  'kb-a12:38:task3': ['5', '1', '4', '2', '6', '3', '0'],
 
   // ---- Arbeitsbuch A1.1 ----
   // p6, L1 3. WIP (NativeAB11, not routed). Key: AB L1 3.
@@ -97,10 +103,14 @@ export const lineMatchingAnswers: Record<string, (string | null)[]> = {
   // p24, L16 2. Key: AB A1.2 L16 2:
   // Garage-Auto, Arbeitszimmer-Computer, Bad-Toilette, Schlafzimmer-Bett, Wohnzimmer-Couch, Küche-Kühlschrank; Garten-Blumen = Beispiel.
   'ab-a12:24:task2': ['4', '2', '1', '6', '5', '0', '3'],
+  // p24 native twin (NativeAB12P21_24): same exercise, same key.
+  'ab-a12:24:p24-2': ['4', '2', '1', '6', '5', '0', '3'],
   // p32, L16 10. Key: AB A1.2 L16 10:
   // b In zwei Stunden -> abholen (0); c Am Donnerstag um drei -> Sitzung (1); d Nach der Sitzung -> anrufen (4);
   // e Am Freitag -> nach dem Mittagessen (5); f Stefan hat -> 14.30 Uhr (2); a Heute um elf = Beispiel (3).
   'ab-a12:32:task10': ['3', '0', '1', '4', '5', '2'],
+  // p32 native twin (NativeAB12P31to46): same exercise, same key.
+  'ab-a12:32:p32-10': ['3', '0', '1', '4', '5', '2'],
   // p68, L21 12 (Hören). Key: AB A1.2 L21 12:
   // Person 2 -> "zu viele Regeln" (2); Person 3 -> "Warum muss es immer Regeln geben?" (0);
   // Person 4 -> "Handy nicht ausmachen" (1); Person 1 = Beispiel (3).

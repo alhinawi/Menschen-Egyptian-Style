@@ -1,5 +1,6 @@
 import {ChoiceInput} from '../exercises/ChoiceInput';
 import {CheckButton} from '../components/CheckButton';
+import {LineMatching} from '../exercises/LineMatching';
 import {PageImage} from '../components/PageImage';
 import {usePageReset} from '../exercises/usePageReset';
 import {useLayoutEffect,useRef,useState} from 'react';
@@ -276,16 +277,15 @@ export function NativeAB12P21_24({page}:{page:string}){
   {text(165,482,140,'Garten','naF185')}
   {text(164,508,140,'Wohnzimmer','naF185')}
   {text(165,534,140,'Küche','naF185')}
-  {text(396,384,160,'Couch','naF185')}
-  {text(395,410,160,'Toilette','naF185')}
-  {text(395,435,160,'Computer','naF185')}
-  {text(395,461,160,'Kühlschrank','naF185')}
-  {text(394,486,160,'Auto','naF185')}
-  {text(394,512,160,'Blumen','naF185')}
-  {text(394,537,160,'Bett','naF185')}
-  {field('p24-2-couch',562,380,95,'Couch zuordnen','naFieldBlank naF14')}{field('p24-2-toilette',562,406,95,'Toilette zuordnen','naFieldBlank naF14')}{field('p24-2-computer',562,431,95,'Computer zuordnen','naFieldBlank naF14')}{field('p24-2-kuehlschrank',562,457,95,'Kühlschrank zuordnen','naFieldBlank naF14')}{field('p24-2-auto',562,482,95,'Auto zuordnen','naFieldBlank naF14')}{field('p24-2-bett',562,533,95,'Bett zuordnen','naFieldBlank naF14')}
-  {check('g4',878,540,{'p24-2-couch':'Wohnzimmer|das Wohnzimmer','p24-2-toilette':'Bad|das Bad','p24-2-computer':'Arbeitszimmer|das Arbeitszimmer','p24-2-kuehlschrank':'Küche|Kueche|die Küche|die Kueche','p24-2-auto':'Garage|die Garage','p24-2-bett':'Schlafzimmer|das Schlafzimmer'})}
-  {art('ex2-curve',238,490,156,41)}
+  {text(500,384,160,'Couch','naF185')}
+  {text(500,410,160,'Toilette','naF185')}
+  {text(500,435,160,'Computer','naF185')}
+  {text(500,461,160,'Kühlschrank','naF185')}
+  {text(500,486,160,'Auto','naF185')}
+  {text(500,512,160,'Blumen','naF185')}
+  {text(500,537,160,'Bett','naF185')}
+  <LineMatching id="p24-2" width={W} height={H} leftX={165} leftWidth={140} rightX={460} rightWidth={200} ys={[380,406,431,457,482,508,534]} rightYs={[384,410,435,461,486,512,537]} fontSize={18} left={['Garage','Arbeitszimmer','Bad','Schlafzimmer','Garten','Wohnzimmer','Küche']} right={['Couch','Toilette','Computer','Kühlschrank','Auto','Blumen','Bett']} example={[4,5]} values={values} onMatch={set} leftDotXs={[312,312,312,312,312,312,312]} className="lmHideLeft lmHideRight"/>
+  {check('g4',878,540,{'p24-2-0':'4','p24-2-1':'2','p24-2-2':'1','p24-2-3':'6','p24-2-5':'0','p24-2-6':'3'})}
   {title('3',123,600,900,'Wo wohnt Charlotte? Lösen Sie das Rätsel.','naRB naT18')}
   {rich(160,636,520,['Charlotte wohnt in der Stadtmitte, direkt im ',48,' (1) ',38,'.'])}
   {rich(160,662,520,['Ihre Wohnung ist im 3. ',22,' (4) ',34,' und hat 45 m².'])}

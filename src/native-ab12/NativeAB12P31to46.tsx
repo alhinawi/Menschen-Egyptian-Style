@@ -4,6 +4,7 @@ import {LinedArea} from '../components/LinedArea';
 import {useLayoutEffect,useRef,useState} from 'react';
 import {PageImage} from '../components/PageImage';
 import {CheckButton} from '../components/CheckButton';
+import {LineMatching} from '../exercises/LineMatching';
 import '../components/native-ab12.css';
 
 function Words({text}:{text:string}){return <>{text.split(/(\s+)/).map((w,i)=>/\p{L}/u.test(w)?<span key={i} className="tapWord" role="button" tabIndex={0} data-word={w.replace(/^[^\p{L}]+|[^\p{L}]+$/gu,'')} data-phrase={text}>{w}</span>:w)}</>}
@@ -284,7 +285,6 @@ export function NativeAB12P31to46({page}:{page:string}){
   {title('10',126,1140,780,'Hören Sie das Telefongespräch und ordnen Sie zu.','naGB')}
   <div className="naSide" style={{left:92,top:1196,color:'#879cbb'}}>HÖREN</div>
   {audio('assets/ab-a12-cd2-track15.mp3',64,1170,'2 15','10')}
-  <svg style={{position:'absolute',left:0,top:0,pointerEvents:'none'}} width="1072" height="1452"><path d="M283 1179 C 360 1182, 412 1240, 500 1253" stroke="#8ba3c7" strokeWidth="1.6" fill="none"/></svg>
   {text(110,1170,14,'a','naBold naNw')}{text(140,1170,150,'Heute um elf','naNw')}
   {text(110,1195,14,'b','naBold naNw')}{text(140,1195,150,'In zwei Stunden','naNw')}
   {text(110,1220,14,'c','naBold naNw')}{text(140,1220,210,'Am Donnerstag um drei','naNw')}
@@ -297,6 +297,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {text(505,1247,300,'hat Stefan keine Zeit.','naNw')}
   {text(505,1272,320,'muss Nina einen Kollegen anrufen.','naNw')}
   {text(505,1297,340,'hat Nina nach dem Mittagessen Zeit.','naNw')}
+  <LineMatching id="p32-10" width={W} height={H} leftX={140} leftWidth={210} rightX={465} rightWidth={440} ys={[1170,1195,1220,1247,1272,1297]} fontSize={20} left={['Heute um elf','In zwei Stunden','Am Donnerstag um drei','Nach der Sitzung','Am Freitag','Stefan hat']} right={['muss Stefan Kollegen am Flughafen abholen.','hat Nina eine Sitzung.','am Freitag um 14.30 Uhr Zeit.','hat Stefan keine Zeit.','muss Nina einen Kollegen anrufen.','hat Nina nach dem Mittagessen Zeit.']} example={[0,3]} values={values} onMatch={set} leftDotXs={[360,360,360,360,360,360]} className="lmHideLeft lmHideRight"/>
   {art('modul-tab',0,1384,82,32)}
   {text(97,1392,176,'32 | zweiunddreißig','naFooter')}
   {field('p32-9a1',245,393,660,'9a1')}
@@ -315,12 +316,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {field('p32-9b5',192,1045,665,'Antwort Zeile 5','naFieldBlank')}
   {save('32-9b-save',190,1110)}
   {check('32-1',700,1110,{'p32-9a1':'kann ich heute um 16 Uhr nicht kommen','p32-9a2':'Können wir den Termin verschieben','p32-9a3':'Haben Sie am Mittwoch Zeit','p32-9a4':'Ab Freitag bin ich für eine Woche im Urlaub','p32-9b':'geehrter Herr Frei'})}
-  {field('p32-10-0',468,1167,28,'Lösung zu: muss Stefan Kollegen am Flughafen abholen','naLC')}
-  {field('p32-10-1',468,1192,28,'Lösung zu: hat Nina eine Sitzung','naLC')}
-  {field('p32-10-2',468,1217,28,'Lösung zu: am Freitag um 14.30 Uhr Zeit','naLC')}
-  {field('p32-10-4',468,1269,28,'Lösung zu: muss Nina einen Kollegen anrufen','naLC')}
-  {field('p32-10-5',468,1294,28,'Lösung zu: hat Nina nach dem Mittagessen Zeit','naLC')}
-  {check('32-2',700,1328,{'p32-10-0':'b','p32-10-1':'c','p32-10-2':'f','p32-10-4':'d','p32-10-5':'e'})}
+  {check('32-2',700,1328,{'p32-10-1':'0','p32-10-2':'1','p32-10-3':'4','p32-10-4':'5','p32-10-5':'2'})}
  </>}
  {page==='33'&&<>
   {art('0',982,44,85,78)}

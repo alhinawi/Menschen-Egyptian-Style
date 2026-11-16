@@ -26,11 +26,16 @@ const server=http.createServer((req,res)=>{
    await h.locator('[data-native-field="p24-3l"]').fill('Zürich');
    const dlg={'p24-4a':'Urlaub','p24-4b':'Bergen','p24-4c':'Wetter','p24-4d':'Meer','p24-4e':'Dom','p24-4f':'Wochen','p24-4g':'Hause'};
    for(const [id,v] of Object.entries(dlg))await h.locator('[data-native-field="'+id+'"]').fill(v);
+   // Ex 2 is a real draw-a-line matching: tap a left room, then its right object. Garten-Blumen is the printed example.
+   const match=h.locator('[data-matching="p24-2"]');
+   for(const [l,r] of [[0,4],[1,2],[2,1],[3,6],[5,0],[6,3]]){await match.locator('button').nth(l).click();await match.locator('button').nth(7+r).click();}
    for(const b of await h.locator('.naCheck button').all()){await b.scrollIntoViewIfNeeded();await b.click();}
    for(const t of await h.locator('.naCheck output').allTextContents())assert.equal(t,'✓ Richtig!','24: grading failed');
    await p.reload();await p.waitForFunction(()=>document.documentElement.bookReady==='true'||document.documentElement.dataset.bookReady==='true');
    assert.equal(await h.locator('[data-native-field="p24-1h"]').inputValue(),'ein Spielplatz','24: noun answer not saved');
    assert.equal(await h.locator('[data-native-field="p24-4g"]').inputValue(),'Hause','24: dialogue answer not saved');
+   assert.equal(await p.evaluate(()=>JSON.parse(localStorage.getItem('native-ab12-24'))['p24-2-0']),'4','24: matching line not saved');
+   assert(await h.locator('[data-matching="p24-2"] path').count()>=7,'24: matching lines not redrawn after reload');
    assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'24: horizontal overflow');
    assert.deepEqual(errors,[],'24: page errors');
    await p.close();console.log('p24',width,'PASS');
