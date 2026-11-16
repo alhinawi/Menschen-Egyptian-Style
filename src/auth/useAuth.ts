@@ -73,6 +73,7 @@ function init() {
   api
     .me()
     .then((d) => {
+      if (cb || d.user.google_avatar) api.rememberGoogleAccount(d.user.email);
       set({ status: 'authed', user: d.user, emailNotice });
       void startProgressSync();
     })
