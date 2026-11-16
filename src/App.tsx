@@ -4,7 +4,6 @@ import {ReaderPageReset} from './components/ReaderPageReset';
 import {ReaderAudioPlayers} from './components/ReaderAudioPlayers';
 import {AudioMarkerButtons} from './components/AudioMarkerButtons';
 import {useEffect, useLayoutEffect, useMemo, useRef, useState} from 'react';
-import {createPortal, flushSync} from 'react-dom';
 import {ScanDialogs} from './scan/ScanDialogs';
 import {PersistenceContext, usePersistenceController} from './persistence/PersistentFields';
 import {MeaningDialog} from './meanings/MeaningDialog';
@@ -18,11 +17,18 @@ import {ReaderThemes, CrossBookNavigation} from './components/ReaderThemes';
 import {LibraryNav} from './components/LibraryNav';
 import {LessonHop} from './components/LessonHop';
 import type {LoadedLesson} from './navigate';
-import {lessonUrl, loadLesson, navigateLesson, registerNavigator, resolveHref, slugFromLocation, slugToFile, applyRouteMeta} from './navigate';
+import {lessonUrl, loadLesson, prepareDestination, navigateLesson, registerNavigator, resolveHref, slugFromLocation, slugToFile, applyRouteMeta} from './navigate';
+
+// Adapters have mounted the destination. Decode its visible artwork before
+// revealing the new snapshot; do not wait on off-page images or audio.
+async function waitForPageArtwork() {
+  await new Promise<void>(resolve=>setTimeout(resolve,0));
+  const images=[...document.querySelectorAll<HTMLImageElement>('#pageStage .page img[src]')].filter(image=>{const r=image.getBoundingClientRect();return r.width>0&&r.height>0&&r.bottom>0&&r.top<innerHeight&&r.right>0&&r.left<innerWidth;});
+  await Promise.race([Promise.all(images.map(image=>image.decode().catch(()=>{}))),new Promise(resolve=>setTimeout(resolve,1500))]);
+}
 
 export default function App({initial}: {initial: LoadedLesson}) {
   const [lesson, setLesson] = useState(initial);
-  const [switching, setSwitching] = useState(false);
   const lessonRef = useRef(lesson);
   lessonRef.current = lesson;
   const mountedResolvers = useRef<Array<() => void>>([]);
@@ -54,6 +60,8 @@ export default function App({initial}: {initial: LoadedLesson}) {
         return;
       }
       try {
+        await prepareDestination(slug,token);
+        if(requestId!==navigationId)return;
         await openLessonDoor(async () => {
         const next = await loadLesson(slug);
         if (requestId !== navigationId) return;
@@ -72,14 +80,12 @@ export default function App({initial}: {initial: LoadedLesson}) {
         // The lesson markup swapped under the same window: land at the top of
         // the new lesson instead of keeping the old lesson's scroll offset.
         scrollTo(0, 0);
-        flushSync(() => setSwitching(false));
-        },direction,()=>flushSync(()=>setSwitching(true)));
+        await waitForPageArtwork();
+        },direction);
       } catch (err) {
         // A failed lazy load (offline, deploy mid-switch) must not look like a
         // dead tap: fall back to a full document load with browser progress.
         location.assign(opts.rawUrl ?? lessonUrl(slug, token));
-      } finally {
-        setSwitching(false);
       }
     });
     const onPop = () => {
@@ -134,5 +140,5 @@ export default function App({initial}: {initial: LoadedLesson}) {
     cleanupRef.current = cleanup;
     return cleanup;
   }, [initializers]);
-  return <ReaderContext.Provider value={reader}><AudioMarkerButtons/><ReaderAudioPlayers/>{config.reader&&<ReaderPageReset key={config.slug} onReset={page=>{persistence.resetPage(page);quizzes.resetPage(page)}}/>}{config.slug === 'ab-a12-l17-20' && <ScanDialogs/>}{config.initializers.includes('meanings') && <MeaningDialog key={'m' + config.slug}/>}<PersistenceContext.Provider value={persistence}><QuizContext.Provider value={quizzes}><div key={config.slug} style={{display: 'contents'}} onInputCapture={e => persistence.input(e.target as HTMLInputElement)}>{!config.reader ? <OriginalViewer><BookMarkup nodes={film.nodes} quizEnabled={config.reactExercises}/></OriginalViewer> : <BookMarkup nodes={film.nodes} quizEnabled={config.reactExercises}/>}</div></QuizContext.Provider></PersistenceContext.Provider><FilmMedia key={config.slug} media={film.media}/>{config.themes && <><ReaderThemes key={'t' + config.slug}/><CrossBookNavigation key={'c' + config.slug}/></>}{config.reader && <><LibraryNav slug={config.slug}/><LessonHop slug={config.slug}/></>}{switching && createPortal(<div className="fixed inset-0 z-[95] flex items-center justify-center bg-[#e8e8e4]" role="status" aria-label="Loading"><div className="size-11 rounded-full border-4 border-[#e8dfc8] border-t-[#c9a45a] animate-spin"/></div>, document.body)}</ReaderContext.Provider>;
+  return <ReaderContext.Provider value={reader}><AudioMarkerButtons/><ReaderAudioPlayers/>{config.reader&&<ReaderPageReset key={config.slug} onReset={page=>{persistence.resetPage(page);quizzes.resetPage(page)}}/>}{config.slug === 'ab-a12-l17-20' && <ScanDialogs/>}{config.initializers.includes('meanings') && <MeaningDialog key={'m' + config.slug}/>}<PersistenceContext.Provider value={persistence}><QuizContext.Provider value={quizzes}><div key={config.slug} style={{display: 'contents'}} onInputCapture={e => persistence.input(e.target as HTMLInputElement)}>{!config.reader ? <OriginalViewer><BookMarkup nodes={film.nodes} quizEnabled={config.reactExercises}/></OriginalViewer> : <BookMarkup nodes={film.nodes} quizEnabled={config.reactExercises}/>}</div></QuizContext.Provider></PersistenceContext.Provider><FilmMedia key={config.slug} media={film.media}/>{config.themes && <><ReaderThemes key={'t' + config.slug}/><CrossBookNavigation key={'c' + config.slug}/></>}{config.reader && <><LibraryNav slug={config.slug}/><LessonHop slug={config.slug}/></>}</ReaderContext.Provider>;
 }
