@@ -5,9 +5,9 @@ import {ANONYMOUS_AVATAR} from './anonymous-avatar';
 // Every real row reserves a slot, including zero-point newcomers at the end.
 // Turn off at launch without deleting or changing any learner data.
 export const STARTER_ENTRIES_ENABLED = true;
-const NAMES = ['Ahmed Hassan','Maryam Adel','Omar Mahmoud','Nour Ahmed','Youssef Ibrahim','Sara Khaled','Karim Mostafa','Aya Mohamed','Hassan Ali','Fatma Samy'];
+const NAMES = ['Maryam Adel','Ahmed Hassan','Omar Mahmoud','Nour Ahmed','Youssef Ibrahim','Sara Khaled','Karim Mostafa','Aya Mohamed','Hassan Ali','Fatma Samy'];
 // Keep anonymous starters scattered without changing names, scores or ranking.
-const STARTER_PHOTOS = [1,null,3,4,5,null,7,2,null,6];
+const STARTER_PHOTOS = [null,1,3,4,5,null,7,2,null,6];
 const SCORES = [96,84,73,65,57,48,39,28,19,12];
 export type DisplayLeaderboardRow = LeaderboardRow & {avatar: string; own: boolean};
 export function leaderboardRows(top: LeaderboardRow[], me: {rank: number; points: number}|null, realCount = top.length, enabled = STARTER_ENTRIES_ENABLED): DisplayLeaderboardRow[] {
