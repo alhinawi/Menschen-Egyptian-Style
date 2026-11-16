@@ -1,3 +1,4 @@
+import {MODULE_ORDER} from './library-data';
 import {openLessonDoor} from './readerTransitions';
 import {ReaderPageReset} from './components/ReaderPageReset';
 import {ReaderAudioPlayers} from './components/ReaderAudioPlayers';
@@ -38,23 +39,26 @@ export default function App({initial}: {initial: LoadedLesson}) {
     let navigationId = 0;
     registerNavigator(async (slug, token, opts) => {
       const requestId = ++navigationId;
+      const current=lessonRef.current.config.slug;
+      const direction:1|-1=slug===current
+        ? Number(token)<Number(location.hash.slice(1))?-1:1
+        : MODULE_ORDER.indexOf(slug)<MODULE_ORDER.indexOf(current)?-1:1;
       if (slug === lessonRef.current.config.slug) {
         if (token) {
           const idx = (window as any).menschenPages?.findIndex?.((p: HTMLElement) => p?.dataset?.page === token) ?? -1;
           if (idx >= 0) await openLessonDoor(() => {
             (window as any).menschenBook?.turnToPage?.(idx);
             history.pushState({}, '', lessonUrl(slug, token));
-          });
+          },direction);
         }
         return;
       }
-      setSwitching(true);
       try {
+        await openLessonDoor(async () => {
         const next = await loadLesson(slug);
         if (requestId !== navigationId) return;
         applyRouteMeta(slugToFile[next.config.slug] ?? 'index.html');
-        flushSync(() => setSwitching(false));
-        await openLessonDoor(async () => {
+
         // Tear the old lesson down before the DOM swap: adapters restore the
         // page elements they moved, so React can cleanly unmount the old tree.
         cleanupRef.current?.();
@@ -68,7 +72,8 @@ export default function App({initial}: {initial: LoadedLesson}) {
         // The lesson markup swapped under the same window: land at the top of
         // the new lesson instead of keeping the old lesson's scroll offset.
         scrollTo(0, 0);
-        });
+        flushSync(() => setSwitching(false));
+        },direction,()=>flushSync(()=>setSwitching(true)));
       } catch (err) {
         // A failed lazy load (offline, deploy mid-switch) must not look like a
         // dead tap: fall back to a full document load with browser progress.
@@ -129,5 +134,5 @@ export default function App({initial}: {initial: LoadedLesson}) {
     cleanupRef.current = cleanup;
     return cleanup;
   }, [initializers]);
-  return <ReaderContext.Provider value={reader}><AudioMarkerButtons/><ReaderAudioPlayers/>{config.reader&&<ReaderPageReset key={config.slug} onReset={page=>{persistence.resetPage(page);quizzes.resetPage(page)}}/>}{config.slug === 'ab-a12-l17-20' && <ScanDialogs/>}{config.initializers.includes('meanings') && <MeaningDialog key={'m' + config.slug}/>}<PersistenceContext.Provider value={persistence}><QuizContext.Provider value={quizzes}><div key={config.slug} style={{display: 'contents'}} onInputCapture={e => persistence.input(e.target as HTMLInputElement)}>{!config.reader ? <OriginalViewer><BookMarkup nodes={film.nodes} quizEnabled={config.reactExercises}/></OriginalViewer> : <BookMarkup nodes={film.nodes} quizEnabled={config.reactExercises}/>}</div></QuizContext.Provider></PersistenceContext.Provider><FilmMedia key={config.slug} media={film.media}/>{config.themes && <><ReaderThemes key={'t' + config.slug}/><CrossBookNavigation key={'c' + config.slug}/></>}{config.reader && <><LibraryNav slug={config.slug}/><LessonHop slug={config.slug}/></>}{switching && createPortal(<div className="fixed inset-0 z-[95] flex items-center justify-center bg-[rgba(24,16,10,.45)]" role="status" aria-label="Loading"><div className="size-11 rounded-full border-4 border-[#e8dfc8] border-t-[#c9a45a] animate-spin"/></div>, document.body)}</ReaderContext.Provider>;
+  return <ReaderContext.Provider value={reader}><AudioMarkerButtons/><ReaderAudioPlayers/>{config.reader&&<ReaderPageReset key={config.slug} onReset={page=>{persistence.resetPage(page);quizzes.resetPage(page)}}/>}{config.slug === 'ab-a12-l17-20' && <ScanDialogs/>}{config.initializers.includes('meanings') && <MeaningDialog key={'m' + config.slug}/>}<PersistenceContext.Provider value={persistence}><QuizContext.Provider value={quizzes}><div key={config.slug} style={{display: 'contents'}} onInputCapture={e => persistence.input(e.target as HTMLInputElement)}>{!config.reader ? <OriginalViewer><BookMarkup nodes={film.nodes} quizEnabled={config.reactExercises}/></OriginalViewer> : <BookMarkup nodes={film.nodes} quizEnabled={config.reactExercises}/>}</div></QuizContext.Provider></PersistenceContext.Provider><FilmMedia key={config.slug} media={film.media}/>{config.themes && <><ReaderThemes key={'t' + config.slug}/><CrossBookNavigation key={'c' + config.slug}/></>}{config.reader && <><LibraryNav slug={config.slug}/><LessonHop slug={config.slug}/></>}{switching && createPortal(<div className="fixed inset-0 z-[95] flex items-center justify-center bg-[#e8e8e4]" role="status" aria-label="Loading"><div className="size-11 rounded-full border-4 border-[#e8dfc8] border-t-[#c9a45a] animate-spin"/></div>, document.body)}</ReaderContext.Provider>;
 }
