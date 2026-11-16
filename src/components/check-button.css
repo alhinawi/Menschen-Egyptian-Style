@@ -1,4 +1,4 @@
-button.compactCheckButton{display:inline-flex!important;align-items:center;justify-content:center;flex:none;width:32px!important;min-width:32px!important;height:32px!important;min-height:32px!important;padding:0!important;border:1.5px solid #6c9679!important;border-radius:50%!important;background:#fffefa!important;color:#315a4a!important;font:700 21px/1 Arial,sans-serif!important;box-sizing:border-box;vertical-align:middle;cursor:pointer}
+:is(button.compactCheckButton,.guideCheckIcon){display:inline-flex!important;align-items:center;justify-content:center;flex:none;width:32px!important;min-width:32px!important;height:32px!important;min-height:32px!important;padding:0!important;border:1.5px solid #6c9679!important;border-radius:50%!important;background:#fffefa!important;color:#315a4a!important;font:700 21px/1 Arial,sans-serif!important;box-sizing:border-box;vertical-align:middle;cursor:pointer}
 button.compactCheckButton:focus-visible{outline:3px solid #1769e0;outline-offset:3px}
 html[data-theme=dark] button.compactCheckButton:not(.naCanvas *):not(.naRCanvas *):not([class*=nativeAB] *):not([class*=nativeKB] *){background:var(--night-paper,#202a25)!important;color:var(--night-ink,#f9fbff)!important;border-color:var(--night-detail,#a8d4f1)!important}
 button.compactCheckButton{position:relative;overflow:visible!important}
@@ -29,3 +29,6 @@ html[data-theme=dark] :is(input,select,textarea)[data-check-mark="bad"]:not([typ
 /* Checked glyphs must use the result color, not the default green selection color. */
 .page input:is([type=radio],[type=checkbox])[data-check-mark="bad"]:checked:not(.nabOption input){--answer-mark:#bd3838!important;border-color:#bd3838!important;outline-color:#bd3838!important}
 .page input:is([type=radio],[type=checkbox])[data-check-mark="ok"]:checked:not(.nabOption input){--answer-mark:#286e50!important;border-color:#286e50!important;outline-color:#286e50!important}
+
+/* Same mark, font and circle as the real control, isolated from Arabic shaping. */
+.guideCheckIcon{direction:ltr;unicode-bidi:isolate;cursor:default!important;margin-inline:3px;transform:none!important}
