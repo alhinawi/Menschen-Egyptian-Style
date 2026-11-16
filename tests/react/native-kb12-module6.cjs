@@ -3,7 +3,7 @@ const{chromium}=require('playwright'),fs=require('fs'),path=require('path'),http
 
 
 if(pg===37){for(const name of ['a  Die Firma verspricht: MigaFlex Ultra 1.02 können die Kunden ohne Probleme nutzen.','b  Alina Kanzler hat Probleme mit der Software.'])await h.getByRole('checkbox',{name,exact:true}).check()}
-if(pg===38){for(const[id,a]of Object.entries({'1-a':'48','1-b':'gelernt','1-c':'16','1-d':'Heizung','1-e':'Fenster','1-f':'Bäume','1-g1':'Montag','1-g2':'Freitag','1-g3':'8','1-g4':'16 Uhr','1-g5':'12','1-g6':'12.30 Uhr','1-h':'Spaß','3-1':'2','3-2':'5','3-3':'3','3-4':'7','3-5':'4','3-6':'1','2-wunsch':'Deutsch lernen'}))await set(id,a);await h.getByRole('radio',{name:'Gut: Karriere machen',exact:true}).check()}
+if(pg===38){for(const[id,a]of Object.entries({'1-a':'48','1-b':'gelernt','1-c':'16','1-d':'Heizung','1-e':'Fenster','1-f':'Bäume','1-g1':'Montag','1-g2':'Freitag','1-g3':'8','1-g4':'16 Uhr','1-g5':'12','1-g6':'12.30 Uhr','1-h':'Spaß','2-wunsch':'Deutsch lernen'}))await set(id,a);await h.getByRole('radio',{name:'Gut: Karriere machen',exact:true}).check();const m=h.locator('[data-matching="38-3"]');for(const[l,r]of[[1,1],[2,4],[3,2],[4,6],[5,3],[6,0]]){await m.locator('button').nth(l).click();await m.locator('button').nth(7+r).click()}}
 if(pg===39){await set('2-top','Karriere machen');await set('2-bottom','Ich will Millionär werden');await h.getByRole('textbox',{name:'Meine Wünsche',exact:true}).fill('Ich will reisen')}
 if(pg===40)await h.getByRole('textbox',{name:'Unsere neue Strophe',exact:true}).fill('Ich brauche Ihren Rat.');
 for(const button of await h.locator('.nkCheck button').all()){await button.click();assert.equal(await button.locator('..').locator('output').textContent(),'✓ Richtig!');}

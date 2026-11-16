@@ -9,9 +9,9 @@ assert.equal(seen.size,Object.keys(rules).length,'Every audited page resolves');
 // Existing checker remains authoritative. Empty/wrong choices must fail, and good picks persist.
 for(const sample of [
  {file:'l4-6.html',n:'26',id:'t3c-a',good:'2',bad:'3',check:'.nkbCheck',key:'native-kb11-26'},
- {file:'kb-a12-l17-20.html',n:'38',check:'.nkCheck[data-check="3"]',id:'3-1',good:'2',bad:'4',key:'native-kb12-38'},
+ {file:'kb-a12-l13-16.html',n:'14',check:'.nkCheck[data-check="3"]',id:'3-W',good:'G',bad:'F',key:'native-kb12-14'},
  {file:'ab2.html',n:'12',check:'.nabCheck[data-native-task="u1a"]',id:'u1a-2',good:'Lehrer',bad:'Verkäufer',key:'native-ab11-12'},
- {file:'ab-a12-l13-16.html',n:'24',check:'.naCheck[data-check="g4"]',id:'p24-2-couch',good:'Wohnzimmer',bad:'Garage',key:'native-ab12-24'}]){
+ {file:'ab-a12-l13-16.html',n:'24',check:'.naCheck[data-check="g3"]',id:'p24-4a',good:'Urlaub',bad:'Wetter',key:'native-ab12-24'}]){
  console.log('Sample',sample.id);await page.goto('http://127.0.0.1:5196/'+sample.file+'#'+sample.n);await page.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');const holder=page.locator('.page[data-page="'+sample.n+'"]');const el=holder.locator('[data-native-field="'+sample.id+'"],[data-field-id="'+sample.id+'"]');
  // Select any correct option named in this sample only after confirming the live field bank.
  if(!await el.count())throw Error('Missing sample '+sample.id);

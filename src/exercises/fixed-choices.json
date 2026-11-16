@@ -681,28 +681,6 @@
       "source": "4: exact printed body-part bank"
     }
   ],
-  "kb-a12:38": [
-    {
-      "ids": [
-        "3-1",
-        "3-2",
-        "3-3",
-        "3-4",
-        "3-5",
-        "3-6"
-      ],
-      "options": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7"
-      ],
-      "source": "3: match sentence halves to numbered endings 1-7"
-    }
-  ],
   "kb-a12:39": [
     {
       "ids": [
@@ -2145,26 +2123,6 @@
   "ab-a12:24": [
     {
       "ids": [
-        "p24-2-couch",
-        "p24-2-toilette",
-        "p24-2-computer",
-        "p24-2-kuehlschrank",
-        "p24-2-auto",
-        "p24-2-bett"
-      ],
-      "options": [
-        "Garage",
-        "Arbeitszimmer",
-        "Bad",
-        "Schlafzimmer",
-        "Garten",
-        "Wohnzimmer",
-        "Küche"
-      ],
-      "source": "2: printed room bank for matching objects"
-    },
-    {
-      "ids": [
         "p24-4a",
         "p24-4b",
         "p24-4c",
@@ -2393,26 +2351,6 @@
         "bis"
       ],
       "source": "8: exact preposition bank with von...bis in separate blanks"
-    }
-  ],
-  "ab-a12:32": [
-    {
-      "ids": [
-        "p32-10-0",
-        "p32-10-1",
-        "p32-10-2",
-        "p32-10-4",
-        "p32-10-5"
-      ],
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f"
-      ],
-      "source": "10: match six printed sentence beginnings/endings"
     }
   ],
   "ab-a12:33": [
