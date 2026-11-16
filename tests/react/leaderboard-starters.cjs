@@ -1,5 +1,5 @@
 const ts=require('typescript'),fs=require('fs'),assert=require('assert');
-const source=fs.readFileSync('src/auth/leaderboard-starters.ts','utf8').replace("import {presetSvg} from './avatar-presets';","const presetSvg = (i:number)=>'<svg/>';");
+const source=fs.readFileSync('src/auth/leaderboard-starters.ts','utf8').replace("import {ANONYMOUS_AVATAR} from './anonymous-avatar';","const ANONYMOUS_AVATAR = 'data:anonymous';");
 const js=ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.CommonJS}}).outputText,m={exports:{}};
 new Function('exports','require','module',js)(m.exports,require,m);
 const rows=m.exports.leaderboardRows;
@@ -18,3 +18,8 @@ const low=rows([{rank:1,name:'Real learner',points:1}],{rank:1,points:1});
 assert(low.find(r=>r.name==='Real learner').own);
 assert.equal(low.filter(r=>r.name==='Real learner').length,1);
 console.log('PASS: 0-12 scorers, one-for-one replacement, own highlight and launch switch');
+
+assert.equal(rows([{rank:1,name:'No photo',points:1000}],null)[0].avatar,'data:anonymous');
+assert.equal(rows([{rank:1,name:'Photo',points:1000,avatar:'https://example.test/photo.webp'}],null)[0].avatar,'https://example.test/photo.webp');
+
+const anonPositions=rows([],null).flatMap((r,i)=>r.avatar==='data:anonymous'?[i+1]:[]);assert.deepEqual(anonPositions,[2,6,9]);

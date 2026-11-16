@@ -1,3 +1,4 @@
+import {ANONYMOUS_AVATAR} from '../auth/anonymous-avatar';
 // Leaderboard view inside the account panel: top 10 learners by points
 // (checked-off exercises from the real D1 progress rows) plus the signed-in
 // learner's own rank when they are outside the top 10.
@@ -42,7 +43,7 @@ export function LeaderboardPanel({onClose}: {onClose: () => void}) {
   const row = (r: LeaderboardRow & {avatar?:string}, highlight = false) => (
     <div className={`lbRow${highlight ? ' lbRowMe' : ''}`} key={`${r.rank}-${r.name}`}>
       <span className="lbRank">{r.rank <= 3 ? <MedalIcon rank={r.rank} /> : r.rank}</span>
-      <img className="lbAvatar" src={r.avatar || 'data:image/svg+xml;charset=utf-8,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#713c46"/></svg>')} alt="" />
+      <img className="lbAvatar" src={r.avatar || ANONYMOUS_AVATAR} onError={event=>{if(event.currentTarget.src!==ANONYMOUS_AVATAR)event.currentTarget.src=ANONYMOUS_AVATAR}} alt="" />
       <span className="lbName">{r.name}</span>
       <span className="lbPoints">{r.points} {t('points')}</span>
     </div>
