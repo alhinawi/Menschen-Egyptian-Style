@@ -6,7 +6,7 @@ import {ReaderContext} from './ReaderControls';
 import {useAuth, signIn, signUp, signOut, applyUser} from '../auth/useAuth';
 import {AvatarPicker} from './AvatarPicker';
 import {LeaderboardPanel} from './LeaderboardPanel';
-import {getAuthConfig, googleLoginUrl, resendVerification} from '../auth/api';
+import {getAuthConfig, googleLoginUrl, lastGoogleAccount, resendVerification} from '../auth/api';
 import type {ApiUser} from '../auth/api';
 import {getSyncStatus, subscribeSyncStatus} from '../auth/progress-sync';
 
@@ -226,6 +226,7 @@ function SignInBlock({googleOn}: {googleOn: boolean}) {
     <>
       <div className="profileSection">{t('الحساب')}</div>
       {googleOn && (
+        <>
         <a className="authBtn authBtnGoogle" href={googleLoginUrl()}>
           <svg viewBox="0 0 24 24" width={16} height={16} aria-hidden="true">
             <path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.7 2.9c2.3-2.1 3.7-5.2 3.7-8.6z"/>
@@ -235,8 +236,9 @@ function SignInBlock({googleOn}: {googleOn: boolean}) {
           </svg>
           {t('الدخول بحساب Google')}
         </a>
+        </>
       )}
-      {googleOn && <div className="authOr">{t('أو بالبريد')}</div>}
+      {googleOn && <div className="authOr">{lastGoogleAccount() && <a className="authAnotherGoogle" href={googleLoginUrl(true)}>{t('Use another Google account')}</a>}<span>{t('أو بالبريد')}</span></div>}
       <form
         className="authForm"
         onSubmit={(e) => {

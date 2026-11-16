@@ -62,8 +62,11 @@ export async function startGoogleLogin(request: Request, env: GoogleEnv): Promis
     response_type: 'code',
     scope: 'openid email profile',
     state,
-    prompt: 'select_account',
   })
+  const incoming = new URL(request.url).searchParams
+  const hint = incoming.get('login_hint')?.trim()
+  if (incoming.get('choose_account') === '1' || !hint) params.set('prompt', 'select_account')
+  else if (hint.length <= 254 && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(hint)) params.set('login_hint', hint)
   return Response.redirect(`${GOOGLE_AUTH_URL}?${params.toString()}`, 302)
 }
 

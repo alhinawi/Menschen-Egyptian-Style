@@ -61,6 +61,7 @@ export const UI_COPY: [string, string][] = [
  ['Contact and social links','التواصل وحسابات هناوي'], ['Audio player','مشغّل الصوت'], ['Playback time','وقت التشغيل'],
  ['Tap a word for its Egyptian Arabic meaning · Zoom in to read · Swipe to turn the page','اضغط على الكلمة لمعناها بالمصري · كبّر للقراءة · اسحب يمين أو شمال للتقليب'],
  ['MENSCHEN · INTERACTIVE EDITION','MENSCHEN · النسخة التفاعلية'],
+ ['Use another Google account','استخدم حساب Google تاني'],
  ['How to use the book','إزاي تستخدم الكتاب'], ['Turn the pages','اقلب الصفحات'],
  ['Swipe anywhere: the page follows your finger and turns like paper','اسحب من أي حتة، الصفحة هتتبع صوابعك وتتقلب زي الورق'],
  ['Hear the pronunciation','اسمع النطق'], ['Tap a sentence to hear it straight away','دوس على أي جملة تسمع نطقها على طول'],
