@@ -174,7 +174,7 @@ function SignedInBlock({user, avatar, onSignOut, onAvatarError}: {user: ApiUser;
           ) : (
             <span className="authUserAvatar authUserInitial" aria-hidden="true">{name.trim().charAt(0) || t('؟')}</span>
           )}
-          <span className="authUserAvatarEdit" aria-hidden="true">✎</span>
+          <span className="authUserAvatarEdit" aria-hidden="true"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#fffefa" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="m15 5 4 4M4 16l-1 5 5-1L20 8a2.8 2.8 0 0 0-4-4L4 16Z" /></svg></span>
         </button>
         <span className="authUserText">
           <b>{name}</b>
