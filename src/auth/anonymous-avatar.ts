@@ -1,0 +1,2 @@
+// Shared, neutral anonymous-person silhouette. No emoji or external image.
+export const ANONYMOUS_AVATAR = 'data:image/svg+xml;charset=utf-8,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#e8ecea"/><stop offset="1" stop-color="#cdd6d1"/></linearGradient></defs><circle cx="64" cy="64" r="64" fill="url(#bg)"/><circle cx="64" cy="46" r="21" fill="#74847c"/><path d="M22 117c0-25 17-42 42-42s42 17 42 42" fill="#74847c"/></svg>');

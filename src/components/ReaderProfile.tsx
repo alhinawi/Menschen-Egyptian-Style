@@ -1,3 +1,4 @@
+import {ANONYMOUS_AVATAR} from '../auth/anonymous-avatar';
 import {useTranslationLanguage} from '../meanings/translation-language';
 import {useUiLanguage} from '../ui-language';
 import {useContext, useEffect, useRef, useState, useSyncExternalStore} from 'react';
@@ -58,7 +59,7 @@ export function ReaderProfile() {
   const soundOn = snapshot.soundOn !== false;
   const avatar = auth.user?.avatar ?? null;
   // A stored photo URL that stops loading (e.g. a changed Google picture)
-  // falls back to the initial placeholder instead of a broken image.
+  // falls back to the anonymous silhouette instead of a broken image.
   const [avatarBroken, setAvatarBroken] = useState(false);
   useEffect(() => setAvatarBroken(false), [avatar]);
   const showAvatar = avatar && !avatarBroken ? avatar : null;
@@ -77,10 +78,7 @@ export function ReaderProfile() {
         {showAvatar ? (
           <img className="profileAvatarImg" src={showAvatar} alt="" referrerPolicy="no-referrer" onError={() => setAvatarBroken(true)} />
         ) : (
-          <svg viewBox="0 0 24 24" width={22} height={22} aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
-            <circle cx="12" cy="8" r="3.6" />
-            <path d="M4.8 20a7.2 7.2 0 0 1 14.4 0" />
-          </svg>
+          <img className="profileAvatarImg" src={ANONYMOUS_AVATAR} alt="" />
         )}
       </button>
       {open && (
@@ -172,7 +170,7 @@ function SignedInBlock({user, avatar, onSignOut, onAvatarError}: {user: ApiUser;
           {avatar ? (
             <img className="authUserAvatar" src={avatar} alt="" referrerPolicy="no-referrer" onError={onAvatarError} />
           ) : (
-            <span className="authUserAvatar authUserInitial" aria-hidden="true">{name.trim().charAt(0) || t('؟')}</span>
+            <img className="authUserAvatar" src={ANONYMOUS_AVATAR} alt="" />
           )}
           <span className="authUserAvatarEdit" aria-hidden="true"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#fffefa" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="m15 5 4 4M4 16l-1 5 5-1L20 8a2.8 2.8 0 0 0-4-4L4 16Z" /></svg></span>
         </button>
