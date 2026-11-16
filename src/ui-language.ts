@@ -4,7 +4,7 @@ import {useSyncExternalStore} from 'react';
 export type UiLanguage = 'ar' | 'en' | 'de';
 const KEY = 'menschen-ui-language';
 const listeners = new Set<() => void>();
-function saved(): UiLanguage {try {const value=localStorage.getItem(KEY);return value==='en'||value==='de'?value:'ar';} catch {return 'ar';}}
+function saved(): UiLanguage {try {const value=localStorage.getItem(KEY);return value==='ar'||value==='de'||value==='en'?value:'en';} catch {return 'en';}}
 let language: UiLanguage = saved();
 export const getUiLanguage = () => language;
 export function setUiLanguage(next: UiLanguage) {
