@@ -1,9 +1,25 @@
-# Menschen. — the interactive German coursebook
+<div align="center">
+
+# Menschen.
+
+### The interactive German coursebook —بالعامية المصرية
 
 The Hueber **Menschen A1** books, alive in the browser: flip the real pages, hear the
 original audio, and tap any word or sentence for its meaning in Egyptian Arabic.
 
-**Live:** https://menscheny.pages.dev
+[![Live site](https://img.shields.io/badge/live-menscheny.pages.dev-7a1f2b?style=for-the-badge)](https://menscheny.pages.dev)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
+[![Cloudflare](https://img.shields.io/badge/Cloudflare-Pages%20%2B%20Workers-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://pages.cloudflare.com)
+
+[![Menschen cover](docs/screenshots/hero.webp)](https://menscheny.pages.dev)
+
+**[Open the book →](https://menscheny.pages.dev)**
+
+</div>
+
+---
 
 ## What's inside
 
@@ -13,18 +29,24 @@ original audio, and tap any word or sentence for its meaning in Egyptian Arabic.
   follows your finger (powered by `page-flip`), with smooth SPA navigation between
   lessons, books, cover and guide.
 - **Original audio** — the book's own CD tracks for every listening task, plus
-  per-word and per-sentence pronunciation.
+  per-word and per-sentence pronunciation. Clips beyond the bundle resolve through a
+  speech endpoint, so every word on every page can be heard.
 - **Tap-to-translate, Egyptian Arabic** — tap any word for its meaning بالمصري, or
   switch the translation mode from word to full sentence. A selection-lock button
   (تحديد النص) lets you select any passage and translate + hear it.
 - **Self-checking exercises** — answer, press **Prüfen ✓**, and get instant feedback;
-  correct answers turn green.
+  correct answers turn green. Connect-the-line matching is drawn by hand, right on the page.
+- **Accounts and leaderboard** — sign in with Google, pick an avatar, collect points
+  and climb the class leaderboard.
+- **Two UI languages** — full interface in Arabic (RTL) or English (LTR), remembered
+  per visitor.
 - **Ten reader themes** — light and dark palettes (Light, Paper, Sand, Dark, Forest,
   Burgundy, Ocean, Midnight, Slate, Plum), tuned for contrast in every theme.
 - **Library sidebar** — jump between books, lessons, covers and the guide from one sheet.
 - **Original viewer** — leaf through the printed pages as scanned, per book.
 - **دليل الاستخدام** — an Egyptian-Arabic guide page (إزاي تستخدم الكتاب) built into every book.
-- Answers, notes and reading progress are saved on the current device only.
+- Answers, notes and reading progress are saved on the current device; points sync
+  to the leaderboard once signed in.
 
 ## Screenshots
 
@@ -36,10 +58,26 @@ original audio, and tap any word or sentence for its meaning in Egyptian Arabic.
 | --- | --- | --- |
 | ![Translation popup](docs/screenshots/popup.webp) | ![Prüfen feedback](docs/screenshots/pruefen.webp) | ![Library sidebar](docs/screenshots/library.webp) |
 
-## Stack
+## Architecture
 
-React 19 · TypeScript · Vite 8 · `page-flip` · hand-tuned CSS (per-lesson stylesheets
-+ a theme layer) · Playwright for visual checks. No backend, no accounts, no tracking.
+```
+Browser (React 19 + TypeScript + Vite 8)
+  ├─ Reader: page-flip engine, per-lesson stylesheets, theme layer
+  ├─ Exercises: instant-feedback renderer, hand-drawn line matching
+  ├─ Audio: bundled clips + manifest, speech fallback over HTTPS
+  └─ API ──► Cloudflare Worker (Hono) ──► D1 (accounts, points, leaderboard)
+```
+
+- **Frontend** — one Vite entry per book/lesson route (26 routes); `src/components/`
+  (book markup renderer, cover, reader themes, library nav), `src/lessons/*.json`
+  (lesson markup as JSON node tuples), `src/meanings/` (tap-to-translate, selection
+  controls), `src/adapters/` (per-book routing/persistence), `src/exercises/`.
+- **Backend** — `backend/`, a Cloudflare Worker (Hono) exposing the auth, points and
+  leaderboard API on `menscheny-api`, backed by a D1 database (`migrations/` in `backend/`).
+- **Audio pipeline** — the Cloudflare build ships a prioritized clip bundle plus a
+  manifest (`src/generated/cf-audio-manifest.json`); anything outside the bundle is
+  served on demand so the site stays fast and under the platform file cap.
+- **Assets** — fonts, images, cover art, OG cards and the original audio under `assets/`.
 
 ## Develop
 
@@ -47,28 +85,21 @@ React 19 · TypeScript · Vite 8 · `page-flip` · hand-tuned CSS (per-lesson st
 npm install
 npm run dev        # http://127.0.0.1:5173
 npm run build      # -> dist/
+CF_PAGES=1 npm run build   # Cloudflare bundle (prioritized audio + manifest)
 npm run preview    # serve the build locally
 npm test           # content checks
 npm run test:react # component foundation checks
 npm run typecheck  # tsc --noEmit
 ```
 
-## Project structure
+Backend:
 
-- `*.html` (repo root) — one Vite entry per book/lesson route (26 routes).
-- `src/` — the app: `components/` (book markup renderer, cover socials, reader themes,
-  library nav), `lessons/*.json` (lesson markup as JSON node tuples), `meanings/`
-  (tap-to-translate, selection controls), `adapters/` (per-book routing/persistence),
-  `scan/` (original viewer + vocabulary), `exercises/`, `persistence/`.
-- `assets/` — fonts, images, cover art, OG cards and the original audio.
-- `themes.css`, `book.css`, per-lesson `*.css` — the visual layer.
-- `tests/` — content and answer-key checks.
-
-## Rights
-
-All rights to the original book, audio and artwork belong to their owners
-(**Hueber Verlag**). This is a personal, educational study companion: the site is
-`noindex,nofollow,noarchive`, unlisted, and carries no ads, accounts or payments.
+```bash
+cd backend
+npm install
+npx wrangler deploy                 # deploy the worker
+npx wrangler d1 migrations list menscheny
+```
 
 ## Offline desktop app (Windows, portable)
 
@@ -94,6 +125,16 @@ track is the original. The Electron runtime and the video clips are cached under
 `desktop-cache/`, so rebuilding after a site update only redoes the site build and
 repacks - run the same command again after pulling the latest `main`.
 
-## Author
+## Rights
 
-Made by **Mohamed Alhinawi** · https://menscheny.pages.dev
+All rights to the original book, audio and artwork belong to their owners
+(**Hueber Verlag**). This is a personal, educational study companion: the site is
+`noindex,nofollow,noarchive`, unlisted, and carries no ads or payments.
+
+---
+
+<div align="center">
+
+Made with care by **Mohamed Alhinawi** · [menscheny.pages.dev](https://menscheny.pages.dev)
+
+</div>
