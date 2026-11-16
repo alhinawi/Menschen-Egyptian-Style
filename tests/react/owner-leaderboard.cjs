@@ -13,3 +13,11 @@ assert.equal(build([account(1,'ALHINAAWI@GMAIL.COM',0)],1).top[0].pinned,true);
 assert.equal(build([account(2,'3asfuur@gmail.com',0)],null).top[0].pinned,true);
 assert.equal(build([],null).top.length,0);
 console.log('PASS server exact verified owner allowlist, single row, viewer selection, avatar, privacy, zero points and no data mutation');
+
+assert.equal(build(rows,1).top[0].points,120);
+assert.equal(build([account(1,'alhinaawi@gmail.com',121)],1).top[0].points,121);
+assert.equal(build([account(1,'alhinaawi@gmail.com',119)],1).top[0].points,120);
+const newcomers=build([account(8,'new@example.test',0),account(3,'scorer@example.test',5),account(7,'older@example.test',0)],8);
+assert.equal(newcomers.top[0].points,5);assert.equal(newcomers.top[1].name,'Test L.');assert.equal(newcomers.me.rank,3);assert.equal(newcomers.me.points,0);
+const noProgress=account(9,'fresh@example.test',0);noProgress.data=null;assert.equal(build([noProgress],9).top[0].points,0);
+console.log('PASS owner display floor120, real121 wins, zero-point newcomers and absent progress');
