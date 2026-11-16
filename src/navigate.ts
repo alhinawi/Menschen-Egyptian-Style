@@ -94,16 +94,24 @@ function warmImages(nodes: MarkupNode[], token?: string) {
     walk(children);
   }};
   for(const section of sections.slice(Math.max(0,index),Math.max(0,index)+2))walk(section);
-  for(const url of [...urls].slice(0,48)){if(warmedImages.has(url))continue;const image=new Image();image.decoding='async';image.src=url;warmedImages.set(url,image);void image.decode().catch(()=>{});}
+  const decodes:Promise<unknown>[]=[];
+  for(const url of [...urls].slice(0,48)){if(warmedImages.has(url)){decodes.push(warmedImages.get(url)!.decode().catch(()=>{}));continue;}const image=new Image();image.decoding='async';image.src=url;warmedImages.set(url,image);decodes.push(image.decode().catch(()=>{}));}
   // Bound retained decoded images during a long study session.
   while(warmedImages.size>96)warmedImages.delete(warmedImages.keys().next().value!);
+  return Promise.all(decodes).then(()=>{});
 }
 export function prefetchLesson(slug: string, token?: string): Promise<void> {
   const connection=(navigator as Navigator & {connection?:{saveData?:boolean;effectiveType?:string}}).connection;
   if(connection?.saveData||connection?.effectiveType==='2g'||connection?.effectiveType==='slow-2g')return Promise.resolve();
   const config=configs[slugToFile[slug]];
   for(const href of config?.styles??[]){if(warmedStyles.has(href))continue;const link=document.createElement('link');link.rel='preload';link.as='style';link.href=href;document.head.append(link);warmedStyles.add(href);}
-  return prepareLesson(slug).then(lesson => {warmImages(lesson.nodes, token);}).catch(()=>{});
+  return prepareLesson(slug).then(lesson => warmImages(lesson.nodes, token)).catch(()=>{});
+}
+// Chosen destinations prepare even with Save Data enabled: this is demand,
+// not speculation. Keep the outgoing live page while cold chunks/art arrive.
+export async function prepareDestination(slug:string,token?:string):Promise<void>{
+  const lesson=await prepareLesson(slug);
+  await warmImages(lesson.nodes,token);
 }
 export async function loadLesson(slug: string): Promise<LoadedLesson> {
   const config = configs[slugToFile[slug]] ?? configs['index.html'];

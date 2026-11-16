@@ -40,32 +40,31 @@ export function openBookCover(cover: HTMLElement, open: () => void): void {
   leaf.addEventListener('animationend', event => {if (event.target === leaf) clear();});
 }
 
-/** For cold routes, snapshot the loading surface synchronously, start the
- * outgoing door, then fetch/mount behind it. Network never gates animation. */
-export async function openLessonDoor(update: () => void | Promise<void>, direction:1|-1=1, begin?:()=>void): Promise<void> {
+/** Keep the outgoing browser snapshot covering cold routes until the target
+ * is mounted. Only then swing the one door onto the ready destination. */
+export async function openLessonDoor(update: () => void | Promise<void>, direction:1|-1=1): Promise<void> {
   cancelActive?.();
-  if (reduced() || !document.startViewTransition) {begin?.();await update();return;}
+  if (reduced() || !document.startViewTransition) {await update();return;}
   document.documentElement.dataset.readerTransition = 'door';
   document.documentElement.dataset.readerDirection = direction===-1?'backward':'forward';
-  const transition = document.startViewTransition(async () => {if(begin)begin();else await update();});
+  let work:Promise<void>|undefined;
+  const transition = document.startViewTransition(() => {work=Promise.resolve().then(update);return work;});
   let unwatch = () => {};
   const clear = () => {
-    transition.skipTransition();
-    unwatch(); clearTimeout(timeout);
+    transition.skipTransition();unwatch();
     if (cancelActive === clear) {
       cancelActive = undefined;
       delete document.documentElement.dataset.readerTransition;
       delete document.documentElement.dataset.readerDirection;
     }
   };
-  const timeout = window.setTimeout(clear, 1400);
   cancelActive = clear;
+  // A click may skip decoration, but never cancels route loading.
   unwatch = watchSkip(clear);
   void transition.ready.then(() => {document.dispatchEvent(new Event('menschen:paper'));}).catch(() => {});
   void transition.finished.catch(() => {}).finally(clear);
-  if(begin){
-    // Even if skipped, navigation still runs. No callback waits on a fetch.
-    await transition.ready.catch(()=>{});
-    await update();
-  }else await transition.updateCallbackDone;
+  // Browsers may drop a snapshot on a very slow connection. That is not a
+  // failed route: keep its original DOM until the real update finishes.
+  await transition.updateCallbackDone.catch(error=>{if(!work)throw error;});
+  await work;
 }
