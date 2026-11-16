@@ -842,5 +842,8 @@ body[data-audio="tts"] .howtoTtsNote{display:block}
 .profileVoiceSwitch>span{display:block;width:17px;height:17px;border-radius:50%;background:#fff;box-shadow:0 1px 3px #0003;transition:transform .15s}
 .profileVoiceSwitch[data-on="true"]{background:#35634e}
 .profileVoiceSwitch[data-on="true"]>span{transform:translateX(15px)}
-.profileVoiceChoice:focus-visible{outline:2px solid #35634e;outline-offset:2px}
+/* Touch hover can remain latched after a tap. Only the switch shows state. */
+button.profileVoiceChoice,button.profileVoiceChoice:is(:hover,:active,:focus,:focus-visible){background:none;outline:none;box-shadow:none;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none}
+/* Preserve a keyboard-only focus cue on the control, never the whole row. */
+.profileVoiceChoice:focus-visible .profileVoiceSwitch{outline:2px solid #35634e;outline-offset:2px}
 .profilePanel{max-height:calc(100dvh - 120px);overflow-y:auto}
