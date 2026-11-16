@@ -47,18 +47,53 @@ export function LineMatching({id,left,right,values,onMatch,leftX,rightX:baseRigh
  // inside the book), so re-measure on page-container resize and on two
  // delayed retries to correct any transient misread.
  const itemRefs=useRef<(HTMLButtonElement|null)[]>([]);
+ const rightRefs=useRef<(HTMLButtonElement|null)[]>([]);
  const [measuredStart,setMeasuredStart]=useState<number|null>(null);
+ const [measuredEnd,setMeasuredEnd]=useState<number|null>(null);
+ const inkL=useRef<(number|null)[]>([]);
+ const inkR=useRef<(number|null)[]>([]);
+ const [,forceInk]=useState(0);
  const start0=useRef<number>(leftX+leftWidth+6);
  const end=rightX-9;
- const dotLx=(i:number)=>leftDotXs?.[i]??start0.current;
+ // Explicit dot overrides win, but never onto measured ink: an override tuned
+ // against one font drifts onto the words on other devices/zooms, so clamp it
+ // to stay clear of the item's real rendered text.
+ const dotLx=(i:number)=>{const o=leftDotXs?.[i];if(o===undefined)return start0.current;const k=inkL.current[i];return k?Math.max(o,k+6.5+dotR):o};
  const dotLy=(i:number)=>leftDotYs?.[i]??ys[i]+12;
- const dotRx=(j:number)=>rightDotXs?.[j]??end;
+ const dotRx=(j:number)=>{const o=rightDotXs?.[j];if(o===undefined)return measuredEnd??end;const k=inkR.current[j];return k?Math.min(o,k-6.5-dotR):o};
  const dotRy=(j:number)=>rightDotYs?.[j]??rightYs[j]+12;
  useLayoutEffect(()=>{
   let retries=0;
   const timers:number[]=[];
   const later=(ms:number)=>timers.push(window.setTimeout(measure,ms));
-  const measure=()=>{const el0=root.current;if(!el0)return;const box=el0.getBoundingClientRect();if(box.width<2)return;const scale=width/box.width;let maxText=0;for(const btn of itemRefs.current){if(!btn)continue;const rng=document.createRange();rng.selectNodeContents(btn);for(const r of Array.from(rng.getClientRects()))maxText=Math.max(maxText,(r.right-box.left)*scale);rng.detach()};if(maxText>0&&(!document.fonts||document.fonts.status==='loaded')){const v=Math.min(Math.max(leftX+6,maxText+6.5+dotR),end-16);setMeasuredStart(v);if(v>=end-16&&retries<6){retries++;later(500)}}else setMeasuredStart(null)};
+  // On pages where the item buttons are transparent (lmHideLeft/lmHideRight/
+  // lmHideAll) the visible ink is a separately printed text twin (e.g. .naText)
+  // whose font need not match the button's fontSize, so button measurement
+  // alone underestimates the ink and the dots land on the words. Find each
+  // item's printed twin on the page - same normalized text, sitting on the
+  // item's row and in its column - and measure that ink too.
+  const norm=(s:string)=>s.normalize('NFC').replace(/\s+/g,' ').trim();
+  const twinInk=(txt:string,y:number,xHint:number,side:'l'|'r',box:DOMRect,scale:number):number=>{
+   const want=norm(txt);if(!want)return 0;
+   const el0=root.current;if(!el0)return 0;
+   const holder=el0.closest('.page')??el0.parentElement;if(!holder)return 0;
+   let best=0;
+   for(const el of Array.from(holder.querySelectorAll<HTMLElement>('div,span,p,td,li'))){
+    if(el0.contains(el)||el.closest('.sharedMatching'))continue;
+    if(norm(el.textContent||'')!==want)continue;
+    const b=el.getBoundingClientRect();if(b.width<1)continue;
+    const top=(b.top-box.top)*scale,lft=(b.left-box.left)*scale;
+    if(Math.abs(top-y)>18||Math.abs(lft-xHint)>60)continue;
+    const rng=document.createRange();rng.selectNodeContents(el);
+    for(const r of Array.from(rng.getClientRects())){
+     const v=side==='l'?(r.right-box.left)*scale:(r.left-box.left)*scale;
+     best=side==='l'?Math.max(best,v):(best===0?v:Math.min(best,v));
+    }
+    rng.detach();
+   }
+   return best;
+  };
+  const measure=()=>{const el0=root.current;if(!el0)return;const box=el0.getBoundingClientRect();if(box.width<2)return;const scale=width/box.width;let maxText=0;const perL:(number|null)[]=[],perR:(number|null)[]=[];itemRefs.current.forEach((btn,i)=>{if(!btn)return;const hidden=getComputedStyle(btn).color==='rgba(0, 0, 0, 0)';const rng=document.createRange();rng.selectNodeContents(btn);for(const r of Array.from(rng.getClientRects())){const v=(r.right-box.left)*scale;maxText=Math.max(maxText,v);if(!hidden)perL[i]=Math.max(perL[i]??0,v)}rng.detach()});for(let i=0;i<left.length;i++){const t=twinInk(left[i],ys[i],leftXs?.[i]??leftX,'l',box,scale);perL[i]=Math.max(perL[i]??0,t)||null;maxText=Math.max(maxText,perL[i]??0)}inkL.current=perL;let minRight=0;rightRefs.current.forEach((btn,j)=>{if(!btn)return;const hidden=getComputedStyle(btn).color==='rgba(0, 0, 0, 0)';if(hidden)return;const rng=document.createRange();rng.selectNodeContents(btn);for(const r of Array.from(rng.getClientRects())){const v=(r.left-box.left)*scale;perR[j]=perR[j]===null||perR[j]===undefined?v:Math.min(perR[j]!,v)}rng.detach()});for(let j=0;j<right.length;j++){const v=twinInk(right[j],rightYs[j],rightXs?.[j]??rightX,'r',box,scale);perR[j]=perR[j]?(v>0?Math.min(perR[j]!,v):perR[j]!):(v||null);if(v>0)minRight=minRight===0?v:Math.min(minRight,v)}inkR.current=perR;forceInk(n=>n+1);const endM=Math.max(leftX+60,minRight>0?Math.min(end,minRight-6.5-dotR):end);setMeasuredEnd(endM);if(maxText>0&&(!document.fonts||document.fonts.status==='loaded')){const v=Math.min(Math.max(leftX+6,maxText+6.5+dotR),endM-16);setMeasuredStart(v);if(v>=endM-16&&retries<6){retries++;later(500)}}else setMeasuredStart(null)};
   measure();document.fonts?.ready.then(measure);
   const onHash=()=>{retries=0;measure();later(300);later(900)};
   window.addEventListener('hashchange',onHash);
@@ -70,7 +105,7 @@ export function LineMatching({id,left,right,values,onMatch,leftX,rightX:baseRigh
  start0.current=start;
  return <div ref={root} className={'sharedMatching'+(className?' '+className:'')} data-matching={id}>
   {left.map((text,i)=><button key={'l'+i} ref={el=>{itemRefs.current[i]=el}} type="button" className={'sharedMatchItem'+(active===i?' selected':'')} style={{left:(leftXs?.[i]??leftX)/width*100+'%',top:ys[i]/height*100+'%',width:(leftWidths?.[i]??leftWidth)/width*100+'%',height:(itemHeights[i]??24)/height*100+'%',whiteSpace:multiline?'pre-line':'nowrap',fontSize:fontSize/width*100+'cqw',lineHeight:lineHeight/width*100+'cqw',paddingRight:12/width*100+'cqw'}} aria-label={id+' links '+i+' '+text} aria-pressed={active===i} disabled={example?.[0]===i&&!multiple} onPointerDown={e=>{if(example?.[0]===i&&!multiple)return;e.currentTarget.setPointerCapture(e.pointerId);drag.current={index:i,x:e.clientX,y:e.clientY,moved:false};setActive(i)}} onPointerMove={e=>{const d=drag.current;if(!d)return;if(Math.hypot(e.clientX-d.x,e.clientY-d.y)>4)d.moved=true;const box=e.currentTarget.closest('.sharedMatching')!.getBoundingClientRect();if(d.moved)setPointer({x:(e.clientX-box.left)/box.width*width,y:(e.clientY-box.top)/box.height*height})}} onPointerUp={e=>{const d=drag.current;if(!d)return;if(d.moved){const target=document.elementFromPoint(e.clientX,e.clientY)?.closest<HTMLButtonElement>('[data-match-right]');if(target?.closest('.sharedMatching')===e.currentTarget.closest('.sharedMatching')){pair(d.index,Number(target.dataset.matchRight));setActive(null)}}drag.current=null;setPointer(null)}} onPointerCancel={()=>{drag.current=null;setPointer(null)}} onClick={()=>{if(active!==i)setActive(i)}}>{text}</button>)}
-  {right.map((text,i)=><button key={'r'+i} type="button" className="sharedMatchItem" data-match-right={i} style={{left:(rightXs?.[i]??rightX)/width*100+'%',top:rightYs[i]/height*100+'%',width:(rightWidths?.[i]??rightWidth)/width*100+'%',height:(rightHeights[i]??24)/height*100+'%',whiteSpace:multiline?'pre-line':'nowrap',fontSize:(rightFontSizes?.[i]??fontSize)/width*100+'cqw',lineHeight:lineHeight/width*100+'cqw',paddingLeft:5/width*100+'cqw'}} aria-label={id+' rechts '+i+' '+text} onClick={()=>{if(active!==null){pair(active,i);setActive(null)}}}>{text}</button>)}
+  {right.map((text,i)=><button key={'r'+i} ref={el=>{rightRefs.current[i]=el}} type="button" className="sharedMatchItem" data-match-right={i} style={{left:(rightXs?.[i]??rightX)/width*100+'%',top:rightYs[i]/height*100+'%',width:(rightWidths?.[i]??rightWidth)/width*100+'%',height:(rightHeights[i]??24)/height*100+'%',whiteSpace:multiline?'pre-line':'nowrap',fontSize:(rightFontSizes?.[i]??fontSize)/width*100+'cqw',lineHeight:lineHeight/width*100+'cqw',paddingLeft:5/width*100+'cqw'}} aria-label={id+' rechts '+i+' '+text} onClick={()=>{if(active!==null){pair(active,i);setActive(null)}}}>{text}</button>)}
   <svg className="sharedMatchLines" viewBox={`0 0 ${width} ${height}`} preserveAspectRatio="none" aria-hidden="true">
    {left.flatMap((_,i)=>{const raw=values[id+'-'+i];const targets=raw===undefined?[]:(multiple?raw.split(',').filter(Boolean).map(Number):[Number(raw)]);if(example?.[0]===i&&!targets.includes(example[1]))targets.push(example[1]);return [...new Set(targets)].filter(j=>Number.isInteger(j)&&rightYs[j]!==undefined).map(j=>{const y=dotLy(i),y2=dotRy(j),x1=dotLx(i),x2=dotRx(j),m=(x1+x2)/2,key=expected(i),fixed=example?.[0]===i&&example?.[1]===j,status=fixed?'correct':key===undefined?'ungraded':key.includes(j)?'correct':'wrong';return <path key={i+'-'+j} d={`M${x1} ${y} C${m} ${y},${m} ${y2},${x2} ${y2}`} data-line-result={status} data-line-left={i} data-line-right={j} stroke={status==='wrong'?'#c62f2f':color(i)} strokeWidth="3" fill="none"/>})})}
    {pointer&&active!==null&&<path d={`M${dotLx(active)} ${dotLy(active)} Q${(dotLx(active)+pointer.x)/2} ${dotLy(active)},${pointer.x} ${pointer.y}`} stroke={color(active)} strokeWidth="3" fill="none" strokeDasharray="5 4"/>}
