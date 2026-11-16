@@ -165,3 +165,9 @@ html[data-ui-language] .controls .lnv-wordPage .lnv-chev{right:3px;width:5px;fon
 /* Label and chevron have independent anchors: the arrow must never alter
    the numeral/text's geometric centre, even when fonts or flex rules change. */
 html[data-ui-language] .controls .lnv-pageLabel{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:max-content;margin:0;padding:0;flex:none}
+
+/* Trial only on KB A1.1 p10: pointer-selected crosses have no focus oval.
+   Printed answer rings and keyboard focus stay unchanged. */
+html[data-ui-language] body .page .nkb[data-native-book="kb-a11"][data-native-page="10"] input:is([type="radio"],[type="checkbox"]):focus:not(:focus-visible){
+ outline:none!important;box-shadow:none!important;-webkit-tap-highlight-color:transparent;
+}
