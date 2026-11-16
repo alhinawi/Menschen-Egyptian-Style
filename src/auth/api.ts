@@ -134,8 +134,15 @@ export async function getAuthConfig(): Promise<AuthConfig> {
 }
 
 /** where the site sends the browser to start Google sign-in */
-export function googleLoginUrl(): string {
-  return `${BASE}/api/auth/google/start?origin=${encodeURIComponent(window.location.origin)}`;
+const GOOGLE_HINT_KEY = 'menscheny-last-google-email';
+export function lastGoogleAccount(): string {try{return localStorage.getItem(GOOGLE_HINT_KEY)||'';}catch{return '';}}
+export function rememberGoogleAccount(email: string) {try{localStorage.setItem(GOOGLE_HINT_KEY,email);}catch{}}
+export function googleLoginUrl(useAnotherAccount = false): string {
+  const params = new URLSearchParams({origin:window.location.origin});
+  const hint = lastGoogleAccount();
+  if(useAnotherAccount)params.set('choose_account','1');
+  else if(hint)params.set('login_hint',hint);
+  return `${BASE}/api/auth/google/start?${params}`;
 }
 
 export function resendVerification(): Promise<{ message: string }> {
