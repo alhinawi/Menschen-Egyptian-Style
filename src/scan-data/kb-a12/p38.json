@@ -1752,252 +1752,6 @@
    "y": 571,
    "w": 162,
    "h": 22
-  },
-  {
-   "id": "t3-b",
-   "group": "task3",
-   "kind": "select",
-   "label": "3 b",
-   "answer": "nicht sehr schnell.",
-   "options": [
-    {
-     "value": "für mich nicht nur Sport.",
-     "label": "für mich nicht nur Sport."
-    },
-    {
-     "value": "nicht sehr schnell.",
-     "label": "nicht sehr schnell."
-    },
-    {
-     "value": "am Computer.",
-     "label": "am Computer."
-    },
-    {
-     "value": "auch Meditation.",
-     "label": "auch Meditation."
-    },
-    {
-     "value": "in einer Elektronikfirma hier in Wien.",
-     "label": "in einer Elektronikfirma hier in Wien."
-    },
-    {
-     "value": "zwei oder drei Mal pro Woche joggen.",
-     "label": "zwei oder drei Mal pro Woche joggen."
-    },
-    {
-     "value": "viel Sport machen.",
-     "label": "viel Sport machen."
-    }
-   ],
-   "x": 415,
-   "y": 1195,
-   "w": 24,
-   "h": 24
-  },
-  {
-   "id": "t3-c",
-   "group": "task3",
-   "kind": "select",
-   "label": "3 c",
-   "answer": "in einer Elektronikfirma hier in Wien.",
-   "options": [
-    {
-     "value": "für mich nicht nur Sport.",
-     "label": "für mich nicht nur Sport."
-    },
-    {
-     "value": "nicht sehr schnell.",
-     "label": "nicht sehr schnell."
-    },
-    {
-     "value": "am Computer.",
-     "label": "am Computer."
-    },
-    {
-     "value": "auch Meditation.",
-     "label": "auch Meditation."
-    },
-    {
-     "value": "in einer Elektronikfirma hier in Wien.",
-     "label": "in einer Elektronikfirma hier in Wien."
-    },
-    {
-     "value": "zwei oder drei Mal pro Woche joggen.",
-     "label": "zwei oder drei Mal pro Woche joggen."
-    },
-    {
-     "value": "viel Sport machen.",
-     "label": "viel Sport machen."
-    }
-   ],
-   "x": 415,
-   "y": 1239,
-   "w": 24,
-   "h": 24
-  },
-  {
-   "id": "t3-d",
-   "group": "task3",
-   "kind": "select",
-   "label": "3 d",
-   "answer": "am Computer.",
-   "options": [
-    {
-     "value": "für mich nicht nur Sport.",
-     "label": "für mich nicht nur Sport."
-    },
-    {
-     "value": "nicht sehr schnell.",
-     "label": "nicht sehr schnell."
-    },
-    {
-     "value": "am Computer.",
-     "label": "am Computer."
-    },
-    {
-     "value": "auch Meditation.",
-     "label": "auch Meditation."
-    },
-    {
-     "value": "in einer Elektronikfirma hier in Wien.",
-     "label": "in einer Elektronikfirma hier in Wien."
-    },
-    {
-     "value": "zwei oder drei Mal pro Woche joggen.",
-     "label": "zwei oder drei Mal pro Woche joggen."
-    },
-    {
-     "value": "viel Sport machen.",
-     "label": "viel Sport machen."
-    }
-   ],
-   "x": 415,
-   "y": 1285,
-   "w": 24,
-   "h": 24
-  },
-  {
-   "id": "t3-e",
-   "group": "task3",
-   "kind": "select",
-   "label": "3 e",
-   "answer": "viel Sport machen.",
-   "options": [
-    {
-     "value": "für mich nicht nur Sport.",
-     "label": "für mich nicht nur Sport."
-    },
-    {
-     "value": "nicht sehr schnell.",
-     "label": "nicht sehr schnell."
-    },
-    {
-     "value": "am Computer.",
-     "label": "am Computer."
-    },
-    {
-     "value": "auch Meditation.",
-     "label": "auch Meditation."
-    },
-    {
-     "value": "in einer Elektronikfirma hier in Wien.",
-     "label": "in einer Elektronikfirma hier in Wien."
-    },
-    {
-     "value": "zwei oder drei Mal pro Woche joggen.",
-     "label": "zwei oder drei Mal pro Woche joggen."
-    },
-    {
-     "value": "viel Sport machen.",
-     "label": "viel Sport machen."
-    }
-   ],
-   "x": 415,
-   "y": 1347,
-   "w": 24,
-   "h": 24
-  },
-  {
-   "id": "t3-f",
-   "group": "task3",
-   "kind": "select",
-   "label": "3 f",
-   "answer": "auch Meditation.",
-   "options": [
-    {
-     "value": "für mich nicht nur Sport.",
-     "label": "für mich nicht nur Sport."
-    },
-    {
-     "value": "nicht sehr schnell.",
-     "label": "nicht sehr schnell."
-    },
-    {
-     "value": "am Computer.",
-     "label": "am Computer."
-    },
-    {
-     "value": "auch Meditation.",
-     "label": "auch Meditation."
-    },
-    {
-     "value": "in einer Elektronikfirma hier in Wien.",
-     "label": "in einer Elektronikfirma hier in Wien."
-    },
-    {
-     "value": "zwei oder drei Mal pro Woche joggen.",
-     "label": "zwei oder drei Mal pro Woche joggen."
-    },
-    {
-     "value": "viel Sport machen.",
-     "label": "viel Sport machen."
-    }
-   ],
-   "x": 415,
-   "y": 1402,
-   "w": 24,
-   "h": 24
-  },
-  {
-   "id": "t3-g",
-   "group": "task3",
-   "kind": "select",
-   "label": "3 g",
-   "answer": "für mich nicht nur Sport.",
-   "options": [
-    {
-     "value": "für mich nicht nur Sport.",
-     "label": "für mich nicht nur Sport."
-    },
-    {
-     "value": "nicht sehr schnell.",
-     "label": "nicht sehr schnell."
-    },
-    {
-     "value": "am Computer.",
-     "label": "am Computer."
-    },
-    {
-     "value": "auch Meditation.",
-     "label": "auch Meditation."
-    },
-    {
-     "value": "in einer Elektronikfirma hier in Wien.",
-     "label": "in einer Elektronikfirma hier in Wien."
-    },
-    {
-     "value": "zwei oder drei Mal pro Woche joggen.",
-     "label": "zwei oder drei Mal pro Woche joggen."
-    },
-    {
-     "value": "viel Sport machen.",
-     "label": "viel Sport machen."
-    }
-   ],
-   "x": 415,
-   "y": 1445,
-   "w": 24,
-   "h": 24
   }
  ],
  "audio": [],
@@ -2016,10 +1770,98 @@
   "notes": [
    "Aufgabe 1 answers from official Hueber key (L18 Film-Stationen 1).",
    "Aufgabe 2: opinion task (welchen Wunsch finden Sie gut?), no correct answers, no fields; circles are graphics.",
-   "Aufgabe 3: a is the printed example (line drawn to „zwei oder drei Mal pro Woche joggen.“), no control; b-g selects with key answers (Film-Stationen 3).",
+   "Aufgabe 3: real draw-a-line matching; a -> zwei oder drei Mal pro Woche joggen. is the printed example (masked, drawn by the component); b-g graded via matching answers (Film-Stationen 3 key).",
    "Clip markers are DVD/film references, no audio entries."
   ],
   "verifiedWords": 229,
   "totalWords": 229
- }
+ },
+ "matchings": [
+  {
+   "id": "task3",
+   "group": "task3",
+   "left": [
+    "a  Ich gehe",
+    "b  Ich laufe",
+    "c  Ich arbeite",
+    "d  Von morgens bis\n   abends sitze ich",
+    "e  Man soll",
+    "f  Joggen ist",
+    "g  Es ist"
+   ],
+   "right": [
+    "für mich nicht nur\nSport.",
+    "nicht sehr schnell.",
+    "am Computer.",
+    "auch Meditation.",
+    "in einer Elektronikfirma\nhier in Wien.",
+    "zwei oder drei Mal pro\nWoche joggen.",
+    "viel Sport machen."
+   ],
+   "leftX": 168,
+   "leftWidth": 200,
+   "rightX": 402,
+   "rightWidth": 300,
+   "ys": [
+    1152,
+    1196,
+    1240,
+    1284,
+    1346,
+    1401,
+    1446
+   ],
+   "rightYs": [
+    1146,
+    1212,
+    1257,
+    1300,
+    1343,
+    1416,
+    1489
+   ],
+   "itemHeights": [
+    22,
+    22,
+    22,
+    50,
+    22,
+    22,
+    22
+   ],
+   "rightHeights": [
+    48,
+    22,
+    22,
+    22,
+    48,
+    48,
+    22
+   ],
+   "multiline": true,
+   "lineHeight": 24,
+   "fontSize": 18,
+   "example": [
+    0,
+    5
+   ],
+   "answers": [
+    "5",
+    "1",
+    "4",
+    "2",
+    "6",
+    "3",
+    "0"
+   ],
+   "masks": [
+    {
+     "x": 150,
+     "y": 1140,
+     "w": 560,
+     "h": 385
+    }
+   ]
+  }
+ ]
 }
