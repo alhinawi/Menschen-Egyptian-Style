@@ -148,3 +148,5 @@ html[data-ui-language] .controls .profilePanel button.profileBoardLink{min-heigh
  html[data-ui-language] .profilePanel .authForm:has(input[autocomplete="name"]){gap:1px}
  html[data-ui-language] .profilePanel .authForm:has(input[autocomplete="name"]) .authInput{min-height:32px!important;height:32px!important}
 }
+html[data-ui-language] .profilePanel .authUserAvatarEdit{width:19px;height:19px;display:flex;align-items:center;justify-content:center;background:#713c46!important;color:#fffefa!important;border:2px solid #fffefa;box-sizing:border-box}
+html[data-ui-language] .profilePanel .authUserAvatarEdit svg{display:block;stroke:#fffefa!important;flex-shrink:0}
