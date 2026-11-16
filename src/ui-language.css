@@ -44,6 +44,11 @@ html[data-ui-language][data-bookcss] body .page select:not([multiple]):not([size
  background-repeat:no-repeat!important;background-position:right 2px center!important;background-size:10px 7px!important;
  padding-right:14px!important;box-sizing:border-box!important;direction:ltr;
 }
+/* Printed number rings have no room for a chevron or a14px gutter.
+   Keep the native option picker, but give the selected digit the whole box. */
+html[data-ui-language][data-bookcss] body .page select[data-compact-choice="true"]:not([multiple]):not([size]){
+ background-image:none!important;padding:0!important;text-indent:0!important;text-align:center!important;text-align-last:center!important;
+}
 /* Toolbar positions are intentionally LTR in both languages, so the account
    button is always at the left. Anchor its panel inward, not off-screen. */
 html[data-ui-language] .controls .profilePanel{left:0;right:auto;max-width:calc(100vw - 12px)}
