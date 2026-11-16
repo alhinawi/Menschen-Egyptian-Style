@@ -40,12 +40,14 @@ export function openBookCover(cover: HTMLElement, open: () => void): void {
   leaf.addEventListener('animationend', event => {if (event.target === leaf) clear();});
 }
 
-/** Browser snapshots keep exercise state intact and animate on the compositor. */
-export async function openLessonDoor(update: () => void | Promise<void>): Promise<void> {
+/** For cold routes, snapshot the loading surface synchronously, start the
+ * outgoing door, then fetch/mount behind it. Network never gates animation. */
+export async function openLessonDoor(update: () => void | Promise<void>, direction:1|-1=1, begin?:()=>void): Promise<void> {
   cancelActive?.();
-  if (reduced() || !document.startViewTransition) {await update(); return;}
+  if (reduced() || !document.startViewTransition) {begin?.();await update();return;}
   document.documentElement.dataset.readerTransition = 'door';
-  const transition = document.startViewTransition(async () => {await update();});
+  document.documentElement.dataset.readerDirection = direction===-1?'backward':'forward';
+  const transition = document.startViewTransition(async () => {if(begin)begin();else await update();});
   let unwatch = () => {};
   const clear = () => {
     transition.skipTransition();
@@ -53,6 +55,7 @@ export async function openLessonDoor(update: () => void | Promise<void>): Promis
     if (cancelActive === clear) {
       cancelActive = undefined;
       delete document.documentElement.dataset.readerTransition;
+      delete document.documentElement.dataset.readerDirection;
     }
   };
   const timeout = window.setTimeout(clear, 1400);
@@ -60,6 +63,9 @@ export async function openLessonDoor(update: () => void | Promise<void>): Promis
   unwatch = watchSkip(clear);
   void transition.ready.then(() => {document.dispatchEvent(new Event('menschen:paper'));}).catch(() => {});
   void transition.finished.catch(() => {}).finally(clear);
-  // Callers await mounting, never the decorative effect.
-  await transition.updateCallbackDone;
+  if(begin){
+    // Even if skipped, navigation still runs. No callback waits on a fetch.
+    await transition.ready.catch(()=>{});
+    await update();
+  }else await transition.updateCallbackDone;
 }
