@@ -319,8 +319,7 @@ app.put('/api/progress', async (c) => {
 app.get('/api/leaderboard', async (c) => {
   const rows = await c.env.DB.prepare(
     `SELECT u.id, u.name, u.email, u.email_verified, u.avatar, p.data
-     FROM users u LEFT JOIN progress p ON u.id = p.user_id
-     WHERE p.data IS NOT NULL OR lower(u.email) IN ('alhinaawi@gmail.com','3asfuur@gmail.com')`,
+     FROM users u LEFT JOIN progress p ON u.id = p.user_id`,
   ).all<{id:number;name:string;email:string;email_verified:number;avatar:string|null;data:string|null}>()
   let viewerId:number|null=null
   const m = /^Bearer (.+)$/.exec(c.req.header('Authorization') ?? '')

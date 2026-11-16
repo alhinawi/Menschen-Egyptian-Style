@@ -1,6 +1,8 @@
 // Display-only owner pin. Never writes scores, progress or account data.
 // Email identity is checked on the server and must already be verified.
 const OWNER_EMAILS = ['alhinaawi@gmail.com','3asfuur@gmail.com'];
+// A presentation floor only. Stored exercise totals are never modified.
+export const OWNER_DISPLAY_BASE = 120;
 export type LeaderboardAccount={id:number;name:string;email:string;email_verified:number;avatar:string|null;data:string|null};
 function displayName(full: string): string {
   const parts = full.trim().split(/\s+/).filter(Boolean)
@@ -41,8 +43,8 @@ export function buildLeaderboard(rows:LeaderboardAccount[],viewerId:number|null)
  const owners=rows.filter(r=>r.email_verified===1&&OWNER_EMAILS.includes(r.email.toLowerCase()));
  const owner=owners.find(r=>r.id===viewerId)||owners.find(r=>r.email.toLowerCase()===OWNER_EMAILS[0])||owners[0];
  // One owner row, not two. Prefer the caller's verified owner account.
- const board=rows.filter(r=>!owners.includes(r)||r===owner).map(r=>({id:r.id,name:r===owner?r.name:displayName(r.name),points:pointsOf(r.data||'{}'),avatar:r===owner?r.avatar:null,pinned:r===owner}))
-  .filter(r=>r.pinned||r.points>0).sort((a,b)=>Number(b.pinned)-Number(a.pinned)||b.points-a.points||a.name.localeCompare(b.name));
+ const board=rows.filter(r=>!owners.includes(r)||r===owner).map(r=>({id:r.id,name:r===owner?r.name:displayName(r.name),points:r===owner?Math.max(OWNER_DISPLAY_BASE,pointsOf(r.data||'{}')):pointsOf(r.data||'{}'),avatar:r===owner?r.avatar:null,pinned:r===owner}))
+  .sort((a,b)=>Number(b.pinned)-Number(a.pinned)||b.points-a.points||(a.points===0?a.id-b.id:a.name.localeCompare(b.name)||a.id-b.id));
  const mine=board.findIndex(r=>r.id===viewerId);
  return {top:board.slice(0,10).map(({id,...r},i)=>({...r,rank:i+1})),me:viewerId===null?null:{rank:mine>=0?mine+1:board.length+1,points:mine>=0?board[mine].points:0}};
 }

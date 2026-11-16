@@ -26,3 +26,10 @@ const anonPositions=rows([],null).flatMap((r,i)=>r.avatar==='data:anonymous'?[i+
 const pinned=rows([{rank:1,name:'Mohamed Alhinawi',points:0,pinned:true,avatar:'owner-photo'}],{rank:1,points:0});
 assert.equal(pinned[0].name,'Mohamed Alhinawi');assert.equal(pinned[0].points,0);assert.equal(pinned[0].avatar,'owner-photo');assert(pinned[0].own);
 assert(rows([],null).every(r=>/^[A-Za-z ]+$/.test(r.name)));
+
+for(let n=1;n<=10;n++){
+ const zeroes=Array.from({length:n},(_,i)=>({rank:i+1,name:'New '+i,points:0}));
+ const board=rows(zeroes,{rank:n,points:0});assert.equal(board.length,10);assert.equal(board.filter(r=>r.points===0).length,n);assert.equal(board[9].name,'New '+(n-1));assert(board[9].own);
+}
+const mixed=rows([{rank:1,name:'Owner',points:120,pinned:true},{rank:2,name:'Learner',points:10},{rank:3,name:'New',points:0}],{rank:3,points:0});assert.equal(mixed[0].name,'Owner');assert.equal(mixed[9].name,'New');assert(mixed[9].own);
+console.log('PASS newcomers last at0, 10 rows, demos fade1:1 and disappear at10 real rows');
