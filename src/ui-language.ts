@@ -69,6 +69,7 @@ export const UI_COPY: [string, string][] = [
  ['Translate a whole sentence','ترجم جملة كاملة'], ['Use the translation button below to switch between words and sentences','من زرار «ترجمة» اللي تحت، بدّل بين كلمة أو جملة كاملة'],
  ['Practise','اتمرن'], ['Exercises check your answers: green means correct','التمارين بتصحح نفسها، والأخضر معناه صح'],
  ['Check your answers','صحّح بنفسك'], ['After answering, tap ✓ to check the exercise','بعد ما تحل، دوس على ✓ والتمرين هيصححلك على طول'],
+ ['Sign in and save your progress','سجّل واحفظ تقدمك'], ['Create an account or sign in to save your progress. The more you solve, the higher your name climbs on the leaderboard.','اعمل حساب أو سجّل دخولك عشان تقدمك يفضل محفوظ، وكل ما تحل أكتر اسمك يطلع في قايمة المتصدرين'],
  ['Go to any lesson','روح لأي درس'], ['Switch lessons and books from the menu above','بدّل بين الدروس والكتب من القايمة اللي فوق'],
  ['Audio uses the original recording when available, and a generated voice otherwise.','الصوت في النسخة دي: النطق بيتشغّل بالتسجيل الأصلي لما يكون موجود، وبصوت مولّد تلقائيًا لما يكونش.'],
  ['Could not open the lesson. Please refresh the page.','تعذّر فتح الدرس. جرّب تحديث الصفحة.'],
