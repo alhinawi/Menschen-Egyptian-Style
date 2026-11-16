@@ -5,6 +5,7 @@
 import {useEffect, useState} from 'react';
 import {useUiLanguage} from '../ui-language';
 import {getLeaderboard, type LeaderboardRow} from '../auth/api';
+import {leaderboardRows, type DisplayLeaderboardRow} from '../auth/leaderboard-starters';
 
 // Inline SVG medals (gold/silver/bronze): no emoji font needed on any device.
 const MEDAL_COLORS = ['#c9a227', '#9aa0a6', '#b0773a'];
@@ -20,7 +21,7 @@ function MedalIcon({rank}: {rank: number}) {
 
 export function LeaderboardPanel({onClose}: {onClose: () => void}) {
   const {t} = useUiLanguage();
-  const [top, setTop] = useState<LeaderboardRow[] | null>(null);
+  const [top, setTop] = useState<DisplayLeaderboardRow[] | null>(null);
   const [me, setMe] = useState<{rank: number; points: number} | null>(null);
   const [error, setError] = useState(false);
 
@@ -29,7 +30,7 @@ export function LeaderboardPanel({onClose}: {onClose: () => void}) {
     getLeaderboard()
       .then((d) => {
         if (!live) return;
-        setTop(d.top);
+        setTop(leaderboardRows(d.top,d.me));
         setMe(d.me);
       })
       .catch(() => live && setError(true));
@@ -38,9 +39,10 @@ export function LeaderboardPanel({onClose}: {onClose: () => void}) {
     };
   }, []);
 
-  const row = (r: LeaderboardRow, highlight = false) => (
+  const row = (r: LeaderboardRow & {avatar?:string}, highlight = false) => (
     <div className={`lbRow${highlight ? ' lbRowMe' : ''}`} key={`${r.rank}-${r.name}`}>
       <span className="lbRank">{r.rank <= 3 ? <MedalIcon rank={r.rank} /> : r.rank}</span>
+      <img className="lbAvatar" src={r.avatar || 'data:image/svg+xml;charset=utf-8,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#713c46"/></svg>')} alt="" />
       <span className="lbName">{r.name}</span>
       <span className="lbPoints">{r.points} {t('points')}</span>
     </div>
@@ -52,7 +54,7 @@ export function LeaderboardPanel({onClose}: {onClose: () => void}) {
       {error && <div className="authError" role="alert">{t('Connection problem. Please try again.')}</div>}
       {!error && top === null && <div className="lbEmpty">{t('Loading')}</div>}
       {!error && top !== null && top.length === 0 && <div className="lbEmpty">{t('No scores yet - be the first!')}</div>}
-      {top?.map((r) => row(r, me?.rank === r.rank))}
+      {top?.map((r) => row(r, r.own))}
       {me && me.rank > 10 && (
         <>
           <div className="lbDivider" aria-hidden="true">···</div>

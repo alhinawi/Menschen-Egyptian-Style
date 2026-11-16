@@ -85,6 +85,7 @@ export function ReaderProfile() {
       </button>
       {open && (
         <div className="profilePanel" dir={language === 'ar' ? 'rtl' : 'ltr'} role="dialog" aria-label={t('الحساب والإعدادات')}>
+          {!board && <>
           {auth.status === 'authed' && auth.user ? (
             <SignedInBlock user={auth.user} avatar={showAvatar} onSignOut={() => void signOut()} onAvatarError={() => setAvatarBroken(true)} />
           ) : (
@@ -95,6 +96,7 @@ export function ReaderProfile() {
             <div className="authError" role="alert">{t('Verification link expired or invalid')}</div>
           )}
           {auth.user && auth.user.email_verified === false && verifyOn && <VerifyEmailBlock />}
+          </>}
           {board ? (
             <LeaderboardPanel onClose={() => setBoard(false)} />
           ) : (
