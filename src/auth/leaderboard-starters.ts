@@ -2,6 +2,7 @@ import type {LeaderboardRow} from './api';
 import {ANONYMOUS_AVATAR} from './anonymous-avatar';
 
 // Presentation-only launch content. Never written into accounts or progress.
+// Every real row reserves a slot, including zero-point newcomers at the end.
 // Turn off at launch without deleting or changing any learner data.
 export const STARTER_ENTRIES_ENABLED = true;
 const NAMES = ['Ahmed Hassan','Maryam Adel','Omar Mahmoud','Nour Ahmed','Youssef Ibrahim','Sara Khaled','Karim Mostafa','Aya Mohamed','Hassan Ali','Fatma Samy'];
