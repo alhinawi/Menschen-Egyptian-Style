@@ -18,7 +18,7 @@ export function AvatarPicker({user, onSaved, onClose}: {user: ApiUser; onSaved: 
   const [cropFile, setCropFile] = useState<File | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
 
-  const save = async (avatar: string | null | 'google') => {
+  const save = async (avatar: string) => {
     if (busy) return;
     setBusy(true);
     setError(null);
@@ -67,11 +67,6 @@ export function AvatarPicker({user, onSaved, onClose}: {user: ApiUser; onSaved: 
         {hasGoogle && (
           <button type="button" className="authBtn authBtnGhost" disabled={busy} onClick={() => void save('google')}>
             {t('Use Google photo')}
-          </button>
-        )}
-        {user.avatar && (
-          <button type="button" className="authBtn authBtnGhost" disabled={busy} onClick={() => void save(null)}>
-            {t('Remove photo')}
           </button>
         )}
       </div>
