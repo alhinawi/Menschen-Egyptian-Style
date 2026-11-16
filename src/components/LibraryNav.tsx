@@ -107,8 +107,13 @@ export function LibraryNav({slug}: {slug: string}) {
 
   // Warm only nearby modules at idle; no whole-library download on a phone.
   useEffect(() => {
-    const index=MODULE_ORDER.indexOf(slug);
-    const timer=window.setTimeout(()=>{for(const next of [MODULE_ORDER[index-1],MODULE_ORDER[index+1]])if(next&&MODULES[next]?.book===mod?.book)void prefetchLesson(next);},panel?0:900);
+    const timer=window.setTimeout(()=>{
+      const sameBook=MODULE_ORDER.filter(s=>MODULES[s]?.book===mod?.book),i=sameBook.indexOf(slug);
+      const targets=new Set([sameBook[i-1],sameBook[i+1]]);
+      // Book/level entry cards are as likely as the next lesson on menu open.
+      if(panel)for(const book of ['kb','ab'] as const)for(const level of ['A1.1','A1.2'] as const)targets.add(levelCover(book,level).slug);
+      for(const next of targets)if(next&&next!==slug)void prefetchLesson(next);
+    },panel?0:500);
     return ()=>clearTimeout(timer);
   },[slug,panel]);
   useEffect(() => {
