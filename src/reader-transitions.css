@@ -9,7 +9,6 @@ html[data-reader-transition=door]::view-transition{pointer-events:none}
 html[data-reader-transition=door]::view-transition-group(root){animation:none;perspective:1800px}
 html[data-reader-transition=door]::view-transition-image-pair(root){isolation:isolate}
 html[data-reader-transition=door]::view-transition-old(root){animation:lessonDoorOpen 720ms cubic-bezier(.4,0,.2,1) both;transform-origin:left center;backface-visibility:hidden;z-index:2}
-html[data-reader-transition=door]::view-transition-new(root){animation:lessonDoorReveal 720ms ease-out both;z-index:1}
+html[data-reader-transition=door]::view-transition-new(root){animation:none;opacity:1;z-index:1}
 @keyframes lessonDoorOpen{from{transform:perspective(1800px) rotateY(0);opacity:1}85%{opacity:1}to{transform:perspective(1800px) rotateY(-105deg);opacity:0}}
-@keyframes lessonDoorReveal{from{transform:translateX(10px);opacity:.7}to{transform:translateX(0);opacity:1}}
 @media(prefers-reduced-motion:reduce){.bookOpeningScene{display:none}html[data-reader-transition=door]::view-transition-old(root),html[data-reader-transition=door]::view-transition-new(root){animation:none}}
