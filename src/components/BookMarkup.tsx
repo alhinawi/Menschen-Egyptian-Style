@@ -56,6 +56,9 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
   if(attrs.class?.split(' ').includes('controls')) {
     const navigation=children.filter(child=>Array.isArray(child)&&['prev','pageJump','next'].includes(child[1].id));
     const tools=children.filter(child=>!navigation.includes(child));
+    // Older lesson JSON omitted this slot. Account access is shared reader
+    // chrome, never optional per book or dependent on serialized markup.
+    if(!tools.some(child=>Array.isArray(child)&&'data-react-theme-slot' in child[1]))tools.unshift(['span',{'data-react-theme-slot':''},[]]);
     return <nav key={key} className="controls"><div className="readerPageNavigation" aria-label="Page navigation">{navigation.map((child,n)=>render(child,`page-nav-${key}-${n}`,null,quizEnabled,null,standalone))}</div><div className="readerToolRow">{tools.map((child,n)=>render(child,`bottom-tool-${key}-${n}`,null,quizEnabled,null,standalone))}</div></nav>;
   }
 

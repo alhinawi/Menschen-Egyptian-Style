@@ -171,3 +171,13 @@ html[data-ui-language] .controls .lnv-pageLabel{position:absolute;left:50%;top:5
 html[data-ui-language] body .page .nkb[data-native-book="kb-a11"][data-native-page="10"] input:is([type="radio"],[type="checkbox"]):focus:not(:focus-visible){
  outline:none!important;box-shadow:none!important;-webkit-tap-highlight-color:transparent;
 }
+
+/* Shared toolbar geometry must beat separately loaded A1.2 stylesheet rules. */
+html[data-ui-language] body.readerSplitControls .controls{display:grid!important;grid-template-columns:repeat(7,minmax(0,1fr))!important;gap:6px!important;padding:6px!important;min-height:56px!important;box-sizing:border-box;direction:ltr!important}
+html[data-ui-language] body.readerSplitControls .controls:has(.lnv-wordPage){grid-template-columns:repeat(3,minmax(0,1fr)) 70px repeat(3,minmax(0,1fr))!important}
+html[data-ui-language] body.readerSplitControls .controls .lnv-pagePill{position:relative!important;display:flex!important;justify-content:center!important;align-items:center!important;padding:0!important}
+html[data-ui-language] body.readerSplitControls .controls .lnv-pageLabel{position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;margin:0!important;padding:0!important;width:max-content!important;text-align:center!important}
+html[data-ui-language] body.readerSplitControls .controls .lnv-pagePill .lnv-chev{position:absolute!important;left:auto!important;right:5px!important;top:50%!important;transform:translateY(-50%)!important;margin:0!important}
+html[data-ui-language] body.readerSplitControls .controls{background:#fffefa!important;border-top:1px solid #d3d4cd!important;color:#344137!important;bottom:0!important;left:0!important;right:0!important}
+html[data-ui-language] body.readerSplitControls .controls :is(.profileTrigger,.soundToggle,#prev,#next,.lnv-pagePill,.meaningModeToggle,.pageResetTrigger){height:44px!important;min-height:44px!important;min-width:0!important;margin:0!important;box-sizing:border-box!important;border:1px solid #d3d4cd!important;border-radius:7px!important;background:transparent!important;color:#344137!important}
+html[data-ui-language] body.readerSplitControls .controls :is(#prev,#next){font:16px Arial,sans-serif!important;padding:0!important}
