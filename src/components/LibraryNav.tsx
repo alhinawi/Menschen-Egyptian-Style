@@ -5,10 +5,10 @@ import {createPortal} from 'react-dom';
 import {ReaderContext} from './ReaderControls';
 import type {ReaderStore} from './ReaderControls';
 import {
-  BOOKS, MODULES, findModuleForPage, lessonForPage, lessonUrl,
+  BOOKS, MODULES, MODULE_ORDER, findModuleForPage, lessonForPage, lessonUrl,
   levelExtras, levelLessons, modulePages, levelCover,
 } from '../library-data';
-import {navigateLesson, lessonUrl as spaLessonUrl} from '../navigate';
+import {navigateLesson, prefetchLesson, resolveHref, lessonUrl as spaLessonUrl} from '../navigate';
 // Styles: Tailwind utilities (see classNames) + authored shell rules in ../tailwind.css
 
 type Panel = 'nav' | 'pages' | null;
@@ -104,6 +104,19 @@ export function LibraryNav({slug}: {slug: string}) {
       overlay?.removeEventListener('touchmove', stop);
     };
   }, [panel]);
+
+  // Warm only nearby modules at idle; no whole-library download on a phone.
+  useEffect(() => {
+    const index=MODULE_ORDER.indexOf(slug);
+    const timer=window.setTimeout(()=>{for(const next of [MODULE_ORDER[index-1],MODULE_ORDER[index+1]])if(next&&MODULES[next]?.book===mod?.book)void prefetchLesson(next);},panel?0:900);
+    return ()=>clearTimeout(timer);
+  },[slug,panel]);
+  useEffect(() => {
+    if(!panel)return;
+    const warm=(event:Event)=>{const anchor=(event.target as Element).closest?.('a[href]');const target=anchor&&resolveHref(anchor.getAttribute('href')||'');if(target)void prefetchLesson(target.slug,target.token);};
+    document.addEventListener('pointerover',warm,{passive:true});document.addEventListener('pointerdown',warm,{passive:true});document.addEventListener('focusin',warm);
+    return()=>{document.removeEventListener('pointerover',warm);document.removeEventListener('pointerdown',warm);document.removeEventListener('focusin',warm);};
+  },[panel]);
 
   if (!mod) return null;
 
