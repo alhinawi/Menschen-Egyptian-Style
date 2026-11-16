@@ -137,3 +137,7 @@ html[data-ui-language] .howtoList{gap:14px}
 html[data-ui-language] .howtoList b{font-size:29px;line-height:1.2}
 html[data-ui-language] .howtoList p{font-size:23px;line-height:1.35}
 html[data-ui-language] .howtoNote{font-size:20px;line-height:1.4;margin-top:10px;padding-top:10px;flex-shrink:0}
+html[data-ui-language] .leaderboardPanel .lbRow{gap:7px;padding:4px 1px;font-size:12px;min-height:29px}
+.lbAvatar{display:block;width:25px;height:25px;flex:0 0 25px;border-radius:50%;object-fit:cover}
+html[data-ui-language] .leaderboardPanel .lbRank{width:21px;flex:0 0 21px;display:flex;justify-content:center}
+html[data-ui-language] .leaderboardPanel .lbPoints{font-size:10.5px}
