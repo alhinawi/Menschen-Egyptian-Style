@@ -1,34 +1,15 @@
 import {useEffect} from 'react';
 import {MODULE_ORDER, MODULES, modulePages, lessonForPage} from '../library-data';
-import {navigateLesson} from '../navigate';
+import {navigateLesson, prefetchLesson} from '../navigate';
 
-const HOP_FLAG = 'menschen-hop';
 const HOP_ZOOM = 'menschen-hop-zoom';
-const HOP_DIR = 'menschen-hop-dir';
-const VEIL_BG = '#e8e8e4'; // book.css body background on every module
-const FLIP_MAX_DEG = 105; // past 90 the turning page is invisible (backface hidden)
-const FLIP_COMPLETE_PROGRESS = .3; // release past this completes the turn
-const FLIP_FLICK_VELOCITY = .35; // px/ms in the turning direction completes it too
-
-const lessonJson = import.meta.glob<{default: unknown[]}>('../lessons/*.json');
-
-function makeVeil(opacity: string, pointerEvents: string): HTMLDivElement {
-  const veil = document.createElement('div');
-  veil.style.cssText = `position:fixed;inset:0;z-index:200;background:${VEIL_BG};opacity:${opacity};transition:opacity .16s ease;pointer-events:${pointerEvents}`;
-  return veil;
-}
+const FLIP_COMPLETE_PROGRESS = .3;
+const FLIP_FLICK_VELOCITY = .35;
 
 /**
- * Cross-module page turning. Each module's flip stops at its own first/last
- * page; this lets the arrows and swipe/drag gestures continue into the
- * neighbouring module of the same book (A1.1 into A1.2 included): next at
- * the last page opens the next module's first page, prev at the first page
- * opens the previous module's last page. Boundary swipes turn the page with
- * the finger, exactly like an in-module flip: the page follows the drag,
- * settles back when released early, and completes the turn into the next
- * lesson otherwise. The hop is seamless: the neighbour is prefetched ahead
- * of time, a veil in the page's own background colour covers the document
- * swap, and the zoom level carries over.
+ * Cross-lesson navigation shares one door transition with the library picker.
+ * Boundary swipes detect intent only. Do not rotate the live viewport with
+ * the finger, reset it, then start a second snapshot animation on release.
  */
 export function LessonHop({slug}: {slug: string}) {
   useEffect(() => {
@@ -54,80 +35,11 @@ export function LessonHop({slug}: {slug: string}) {
         ? nextUrl && pageIndex() === pageCount() - 1 ? nextUrl : null
         : prevUrl && pageIndex() === 0 ? prevUrl : null;
 
-    // Turn the on-screen page by an angle around the spine, like a real flip.
-    // Forward (next lesson) turns around the left edge, backward around the
-    // right edge. Past 90deg the page is hidden by backface-visibility, which
-    // reads as the page having settled onto the other side.
-    const setFlipAngle = (deg: number, dir: 1 | -1, animate: 'none' | 'settle' | 'complete') => {
-      const vp = viewport();
-      if (!vp) return;
-      const parent = vp.parentElement as HTMLElement | null;
-      if (parent) parent.style.perspective = deg ? '1600px' : '';
-      vp.style.backfaceVisibility = 'hidden';
-      vp.style.willChange = deg ? 'transform' : '';
-      vp.style.transition =
-        animate === 'settle' ? 'transform .18s ease-out'
-        : animate === 'complete' ? 'transform .22s ease-in'
-        : 'none';
-      vp.style.transformOrigin = dir > 0 ? 'left center' : 'right center';
-      vp.style.transform = deg ? `rotateY(${dir > 0 ? -deg : deg}deg)` : '';
-    };
-    const clearFlip = () => setFlipAngle(0, 1, 'none');
-
-    // Arrival from a hop: cover the load with a veil, settle the new page in
-    // from the side the turn came from, and restore the zoom level.
-    if (sessionStorage.getItem(HOP_FLAG)) {
-      sessionStorage.removeItem(HOP_FLAG);
-      const zoom = Number(sessionStorage.getItem(HOP_ZOOM));
-      sessionStorage.removeItem(HOP_ZOOM);
-      const dir = Number(sessionStorage.getItem(HOP_DIR)) === -1 ? -1 : 1;
-      sessionStorage.removeItem(HOP_DIR);
-      const veil = makeVeil('1', 'auto');
-      veil.style.transitionDuration = '.18s';
-      document.body.append(veil);
-      requestAnimationFrame(() => requestAnimationFrame(() => {
-        if (zoom > 0) (window as any).bookZoom?.(zoom);
-        // The new page starts slightly raised on the arrival side and settles
-        // flat, finishing the turn the departing page began.
-        setFlipAngle(28, dir, 'none');
-        veil.style.opacity = '0';
-        requestAnimationFrame(() => {
-          setFlipAngle(0, dir, 'settle');
-          setTimeout(() => { veil.remove(); clearFlip(); }, 320);
-        });
-      }));
-    }
-
+    // The common route-neutral loader also warms boundary destinations.
     const prefetchTimer = window.setTimeout(() => {
-      for (const url of [nextUrl, prevUrl]) {
-        if (!url) continue;
-        const link = document.createElement('link');
-        link.rel = 'prefetch';
-        link.href = url;
-        link.as = 'document';
-        document.head.append(link);
-      }
-      for (const [s, token] of [[nextSlug, modulePages(nextSlug ?? '')[0]], [prevSlug, prevTokens[prevTokens.length - 1]]] as const) {
-        if (!s || !token) continue;
-        const nodes = lessonJson[`../lessons/${s}.json`];
-        if (!nodes) continue;
-        nodes().then(mod => {
-          const srcs: string[] = [];
-          const walk = (n: unknown, collect: boolean) => {
-            if (!Array.isArray(n) || typeof n[0] !== 'string') return;
-            const attrs = n[1];
-            const mine = collect || (attrs != null && typeof attrs === 'object' && !Array.isArray(attrs) && (attrs as Record<string, unknown>)['data-page'] === token);
-            if (mine && n[0] === 'img' && attrs != null && typeof attrs === 'object' && !Array.isArray(attrs) && typeof (attrs as Record<string, unknown>).src === 'string') {
-              srcs.push((attrs as Record<string, unknown>).src as string);
-            }
-            const children = Array.isArray(n[2]) ? n[2] : [];
-            children.forEach((c: unknown) => walk(c, mine));
-          };
-          mod.default.forEach(n => walk(n, false));
-          srcs.slice(0, 6).forEach(src => { const img = new Image(); img.src = src; });
-        }).catch(() => { /* prefetch is best-effort */ });
-      }
-    }, 1500);
+      if(nextSlug)void prefetchLesson(nextSlug,modulePages(nextSlug)[0]);
+      if(prevSlug)void prefetchLesson(prevSlug,prevTokens[prevTokens.length-1]);
+    },1500);
 
     const depart = (target: {slug: string; token: string} | null, dir: 1 | -1) => {
       if (!target) return;
@@ -135,7 +47,6 @@ export function LessonHop({slug}: {slug: string}) {
       if (spread?.style.zoom) sessionStorage.setItem(HOP_ZOOM, spread.style.zoom);
       // The common navigator owns the door animation. Never hold navigation
       // behind a timeout or a pointer-blocking veil.
-      clearFlip();
       void navigateLesson(target.slug, target.token).then(() => {
         const zoom = Number(sessionStorage.getItem(HOP_ZOOM));
         sessionStorage.removeItem(HOP_ZOOM);
@@ -185,12 +96,9 @@ export function LessonHop({slug}: {slug: string}) {
       if (btn.disabled && hopUrl(id === 'next' ? 1 : -1)) btn.disabled = false;
     }
 
-    // Boundary swipe/drag with finger tracking. The adapters refuse to start
-    // a flip at their first/last page, so an in-page swipe there does
-    // nothing; here the page turns with the finger like a normal flip and,
-    // on release, either settles back or completes into the neighbour
-    // module. Boundary state is captured at gesture start so a swipe INTO
-    // the boundary page never triggers a navigation.
+    // Boundary swipes detect intent without moving the live page. A release
+    // past the threshold starts the single shared door; early release does
+    // nothing. Capture boundary state at start to avoid hopping twice.
     const zoomed = () => document.body.dataset.bookZoomed === 'true';
     const isControl = (t: EventTarget | null) =>
       !!(t as Element | null)?.closest?.('input,select,textarea,button,a,audio,label:has(input),[contenteditable]');
@@ -209,7 +117,6 @@ export function LessonHop({slug}: {slug: string}) {
         gesture = null;
         return;
       }
-      const last = pageCount() - 1;
       gesture = {
         x, y, axis: null, dir: 0,
         canNext: !!hopTarget(1),
@@ -235,10 +142,8 @@ export function LessonHop({slug}: {slug: string}) {
       }
       if (gesture.axis !== 'horizontal' || !gesture.dir) return;
       if (gesture.dir > 0 ? !gesture.canNext : !gesture.canPrev) return;
-      // The page turns with the finger.
-      const progress = Math.min(Math.max((gesture.dir > 0 ? gesture.x - x : x - gesture.x) / viewportWidth(), 0), 1);
+      // Claim this cross-lesson swipe without painting a preliminary flip.
       gesture.flipping = true;
-      setFlipAngle(progress * FLIP_MAX_DEG, gesture.dir, 'none');
     };
     const gestureEnd = (x: number) => {
       const g = gesture;
@@ -246,14 +151,13 @@ export function LessonHop({slug}: {slug: string}) {
       if (!g || g.axis !== 'horizontal' || !g.dir || zoomed()) return;
       const target = g.dir > 0 ? (g.canNext ? hopTarget(1) : null) : (g.canPrev ? hopTarget(-1) : null);
       if (!g.flipping) return;
-      if (!target) { setFlipAngle(0, g.dir, 'settle'); return; }
+      if (!target) return;
       const progress = Math.max((g.dir > 0 ? g.x - x : x - g.x) / viewportWidth(), 0);
       const flick = (g.dir > 0 ? -g.velocity : g.velocity) > FLIP_FLICK_VELOCITY;
       if (progress > FLIP_COMPLETE_PROGRESS || flick) depart(target, g.dir);
-      else setFlipAngle(0, g.dir, 'settle');
+
     };
     const gestureCancel = () => {
-      if (gesture?.flipping && gesture.dir) setFlipAngle(0, gesture.dir, 'settle');
       gesture = null;
     };
 
@@ -276,7 +180,7 @@ export function LessonHop({slug}: {slug: string}) {
     };
     const onTouchCancel = () => gestureCancel();
     const onMouseDown = (e: MouseEvent) => gestureStart(e.clientX, e.clientY, e.target);
-    const onMouseMove = (e: MouseEvent) => gestureMove(e.clientX, e.clientY);
+    const onMouseMove = (e: MouseEvent) => {gestureMove(e.clientX,e.clientY);if(gesture?.flipping)e.stopImmediatePropagation();};
     const onMouseUp = (e: MouseEvent) => gestureEnd(e.clientX);
 
     document.addEventListener('touchstart', onTouchStart, {passive: true, capture: true});
@@ -284,7 +188,7 @@ export function LessonHop({slug}: {slug: string}) {
     document.addEventListener('touchend', onTouchEnd, {passive: true, capture: true});
     document.addEventListener('touchcancel', onTouchCancel, {passive: true, capture: true});
     document.addEventListener('mousedown', onMouseDown, true);
-    window.addEventListener('mousemove', onMouseMove);
+    window.addEventListener('mousemove', onMouseMove, true);
     window.addEventListener('mouseup', onMouseUp);
 
     return () => {
@@ -297,7 +201,7 @@ export function LessonHop({slug}: {slug: string}) {
       document.removeEventListener('touchend', onTouchEnd, true);
       document.removeEventListener('touchcancel', onTouchCancel, true);
       document.removeEventListener('mousedown', onMouseDown, true);
-      window.removeEventListener('mousemove', onMouseMove);
+      window.removeEventListener('mousemove', onMouseMove, true);
       window.removeEventListener('mouseup', onMouseUp);
     };
   }, [slug]);
