@@ -12,6 +12,8 @@ for(let n=0;n<=12;n++){
  if(n)assert(shown[0].own);
  assert.equal(rows(top,null,undefined,false).length,top.length);
 }
+assert.equal(rows([],null).filter(r=>r.avatar.endsWith('.webp')).length,7);
+assert.equal(rows([],null).filter(r=>r.avatar.startsWith('data:')).length,3);
 const low=rows([{rank:1,name:'Real learner',points:1}],{rank:1,points:1});
 assert(low.find(r=>r.name==='Real learner').own);
 assert.equal(low.filter(r=>r.name==='Real learner').length,1);
