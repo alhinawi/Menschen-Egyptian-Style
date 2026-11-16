@@ -121,7 +121,7 @@ export function installUiLanguage() {
       let node: Node | null;
       while ((node = walker.nextNode())) {
         const parent = node.parentElement;
-        if (!parent || parent.closest('.profilePanel,.fullscreenCover,script,style')) continue;
+        if (!parent || parent.closest('.profilePanel,.fullscreenCover,.howtoCheckInstruction,script,style')) continue;
         const value = node.nodeValue || '';
         const old = originals.get(node);
         const source = old && value === old.output ? old.source : value;
