@@ -13,14 +13,27 @@ src = open(os.path.join(ROOT, 'src', 'components', 'ClipMarkers.tsx'), encoding=
 ids = re.findall(r"'([A-Za-z0-9_-]{11})'", re.search(r"const videos=\[([^\]]+)\]", src).group(1))
 PAGES = [('http://matifmarin.blogspot.com/p/menschen-film-stationen-clips.html', 1),
          ('http://matifmarin.blogspot.com/p/menschen-film-stationen-clips-ii.html', 13)]
+import time
+
+def fetch(opener, url):
+    # The mirror answers 429 to datacenter IPs when hit fast: back off and retry.
+    for wait in (0, 15, 45, 90, 180):
+        time.sleep(wait)
+        try:
+            return opener.open(url, timeout=60).read().decode('utf-8', 'replace')
+        except Exception as e:
+            print('retry after', wait, url[:60], e, flush=True)
+    return ''
+
 cj = http.cookiejar.CookieJar()
 op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj))
 op.addheaders = [('User-Agent', 'Mozilla/5.0')]
 urls = {}
 for page, first in PAGES:
-    h = op.open(page, timeout=60).read().decode('utf-8', 'replace')
+    h = fetch(op, page)
     for i, tok in enumerate(re.findall(r'https://www\.blogger\.com/video\.g\?token=([^"&]+)', h)):
-        v = op.open('https://www.blogger.com/video.g?token=' + tok, timeout=60).read().decode('utf-8', 'replace')
+        v = fetch(op, 'https://www.blogger.com/video.g?token=' + tok)
+        time.sleep(2)
         j = v.find('https://rr'); k = v.find('&quot;', j)
         if j >= 0 and k > j:
             urls[first + i] = v[j:k].replace('\\u0026', '&').replace('\\u003d', '=')

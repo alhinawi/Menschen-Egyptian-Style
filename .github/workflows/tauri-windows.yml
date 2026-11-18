@@ -2,6 +2,11 @@ name: Tauri Windows offline app
 
 on:
   workflow_dispatch:
+    inputs:
+      clips:
+        description: 'Fetch the 24 film clips (the Blogger mirror throttles CI, so this can fail)'
+        type: boolean
+        default: false
   pull_request:
     paths:
       - 'desktop/tauri/**'
@@ -33,12 +38,14 @@ jobs:
           npm ci
           MENSCHEN_DESKTOP=1 CF_PAGES= npm run build
 
-      - name: Film-Stationen clips (1080p)
+      - name: Film-Stationen clips (1080p, optional)
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.clips }}
+        continue-on-error: true
         run: |
           command -v ffmpeg >/dev/null || choco install ffmpeg -y --no-progress
-          python desktop/tauri/scripts/fetch-clips.py
+          python desktop/tauri/scripts/fetch-clips.py || true
           mkdir -p dist/assets/clips
-          cp desktop-cache/clips-1080/*.mp4 dist/assets/clips/
+          cp desktop-cache/clips-1080/*.mp4 dist/assets/clips/ || echo "clips missing, building without them"
 
       - name: Build the Tauri shell
         working-directory: desktop/tauri
