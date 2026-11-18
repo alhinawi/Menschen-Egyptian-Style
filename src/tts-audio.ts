@@ -2,11 +2,15 @@
 // (the full 21,687 clips blew past the 20,000-file free-plan cap). The build
 // writes the list of shipped clips into src/generated/cf-audio-manifest.json
 // (see vite.config.js). Here, a pronunciation resolves to its real recording
-// when the manifest lists it, and to /api/tts (Microsoft Edge neural voices,
-// edge-cached) otherwise. Everywhere else the local recordings are used
+// when the build manifest lists it, then to the dedicated static audio CDN.
+// Only texts with no static mapping use /api/tts (Edge neural voices). Everywhere else the local recordings are used
 // exactly as before. __MENSCHEN_TTS__ is a build-time constant from
 // vite.config.js.
 import cfAudioManifest from './generated/cf-audio-manifest.json';
+import audioCdnManifest from './audio-cdn-manifest.json';
+
+const AUDIO_CDN_ORIGIN = 'https://menschen-audio.pages.dev';
+const CDN_FILES: Readonly<Record<string, string>> = audioCdnManifest;
 
 declare const __MENSCHEN_TTS__: boolean | undefined;
 export const TTS_MODE = typeof __MENSCHEN_TTS__ !== 'undefined' && __MENSCHEN_TTS__;
@@ -22,7 +26,8 @@ export function recordPronunciationUrl(record: {id?: string; text?: string} | un
  if (!record) return undefined;
  const file = record.id ? window.PRONUNCIATION_FILES?.[record.id as string] : undefined;
  if (!TTS_MODE) return file;
- if (file && INCLUDED!.has(file)) return file; // real recording shipped in this build
+ if (file && INCLUDED!.has(file)) return file; // static recording shipped in this build
+ if (file && CDN_FILES[file]) return AUDIO_CDN_ORIGIN + CDN_FILES[file];
  return record.text ? ttsUrl(record.text) : undefined; // synthesized fallback
 }
 
