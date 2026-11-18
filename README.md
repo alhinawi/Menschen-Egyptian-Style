@@ -21,6 +21,20 @@ original audio, and tap any word or sentence for its meaning in Egyptian Arabic.
 
 ---
 
+## Live preview
+
+Captured from the current live site on 18 November 2026. The short GIF cycles through the book cover, library and first lesson. These are actual navigation captures, not generated screens.
+
+[![Menschen cover, library and reader tour](docs/media/demo.gif)](https://menscheny.pages.dev/)
+
+| Desktop | Mobile |
+| --- | --- |
+| ![Menschen book cover on desktop](docs/media/desktop.webp) | ![Menschen book cover on mobile](docs/media/mobile.webp) |
+
+[Open lesson 1](https://menscheny.pages.dev/index.html#9) · [Open the book](https://menscheny.pages.dev/)
+
+The screenshots show this project's interface. Rights to the underlying book artwork remain with Hueber Verlag; see [Rights](#rights).
+
 ## What's inside
 
 - **Both books, both levels** — Kursbuch A1.1 + A1.2 and Arbeitsbuch A1.1 + A1.2,
