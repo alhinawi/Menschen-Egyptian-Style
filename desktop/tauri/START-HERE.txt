@@ -1,15 +1,20 @@
-Menschen. - The Interactive German Coursebook (offline desktop app, Tauri)
-========================================================================
+Menschen. - The Interactive German Coursebook (offline desktop app)
+===================================================================
 
-EN: No installation and no internet needed.
+EN: No installation, no internet, nothing is installed on the PC.
   1. Extract this whole folder anywhere (Desktop, USB stick, ...).
   2. Double-click Menschen.exe.
-  3. Keep Menschen.exe and the "site" folder together.
-If Windows says WebView2 is missing, run WebView2-Offline-Installer.exe once
-(works offline), then open Menschen.exe again.
+  3. Keep Menschen.exe and the folders "site", "webview2" and "data" together.
+The app uses the browser engine already on the PC if there is one, otherwise the
+copy in the "webview2" folder. Your answers and progress are saved in the "data"
+folder, so they move with the folder.
+Windows 10 on an exFAT/FAT USB stick: if the app does not open, copy the folder
+to the PC's hard drive (NTFS) and open it from there.
 
-AR: البرنامج شغال بدون تسطيب وبدون انترنت.
+AR: مفيش تسطيب ومفيش انترنت ومفيش حاجة بتتسطّب على الجهاز.
   1. فك ضغط الفولدر كله في أي مكان (سطح المكتب أو فلاشة USB).
   2. افتح Menschen.exe
-  3. سيب Menschen.exe وفولدر site مع بعض.
-لو ويندوز قال WebView2 ناقص، شغّل WebView2-Offline-Installer.exe مرة واحدة (بيشتغل من غير نت) وبعدين افتح Menschen.exe.
+  3. سيب Menschen.exe مع فولدرات site و webview2 و data مع بعض.
+البرنامج بيستخدم محرك المتصفح الموجود على الجهاز لو موجود، ولو مش موجود بيستخدم النسخة اللي في فولدر webview2.
+إجاباتك وتقدمك بيتحفظوا في فولدر data فبيتنقلوا مع الفولدر.
+لو ويندوز 10 والفلاشة exFAT/FAT ومفتحش، انسخ الفولدر على هارد الجهاز وافتحه من هناك.
