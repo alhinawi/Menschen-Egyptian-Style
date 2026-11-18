@@ -1,0 +1,283 @@
+[
+  {
+    "id": "k1720w189",
+    "text": "hallo",
+    "voice": "Erinome",
+    "files": [
+      "assets/pronunciation-a12/k1720w189.mp3",
+      "assets/pronunciation/w001.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "a11l1012w036",
+    "text": "auf Wiedersehen",
+    "voice": "Iapetus",
+    "files": [
+      "assets/pronunciation/a11l1012w036.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "w041",
+    "text": "danke",
+    "voice": "Erinome",
+    "files": [
+      "assets/pronunciation/w041.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "w063",
+    "text": "bitte",
+    "voice": "Iapetus",
+    "files": [
+      "assets/pronunciation/w063.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "w026",
+    "text": "ja",
+    "voice": "Erinome",
+    "files": [
+      "assets/pronunciation/w026.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "k1720w443",
+    "text": "nein",
+    "voice": "Iapetus",
+    "files": [
+      "assets/pronunciation-a12/k1720w443.mp3",
+      "assets/pronunciation/w025.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "w002",
+    "text": "ich",
+    "voice": "Erinome",
+    "files": [
+      "assets/pronunciation/w002.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "w010",
+    "text": "du",
+    "voice": "Iapetus",
+    "files": [
+      "assets/pronunciation/w010.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "w057",
+    "text": "er",
+    "voice": "Erinome",
+    "files": [
+      "assets/pronunciation/w057.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "w011",
+    "text": "sie",
+    "voice": "Iapetus",
+    "files": [
+      "assets/pronunciation/w011.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "xw0746",
+    "text": "wir",
+    "voice": "Erinome",
+    "files": [
+      "assets/pronunciation/xw0746.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "xw0305",
+    "text": "ihr",
+    "voice": "Iapetus",
+    "files": [
+      "assets/pronunciation/xw0305.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "w023",
+    "text": "kommen",
+    "voice": "Erinome",
+    "files": [
+      "assets/pronunciation/w023.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "w006",
+    "text": "heißen",
+    "voice": "Iapetus",
+    "files": [
+      "assets/pronunciation/w006.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "xw0751",
+    "text": "wohnen",
+    "voice": "Erinome",
+    "files": [
+      "assets/pronunciation/xw0751.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "ab79w239",
+    "text": "lernen",
+    "voice": "Iapetus",
+    "files": [
+      "assets/pronunciation-a12/k1720w078.mp3",
+      "assets/pronunciation/a11l46w246.mp3",
+      "assets/pronunciation/ab79w239.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "a11l1012w085",
+    "text": "sprechen",
+    "voice": "Erinome",
+    "files": [
+      "assets/pronunciation-a12/k1720w043.mp3",
+      "assets/pronunciation/a11l1012w085.mp3",
+      "assets/pronunciation/w061.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "ab79w248",
+    "text": "deutsch",
+    "voice": "Iapetus",
+    "files": [
+      "assets/pronunciation-a12/k1720w105.mp3",
+      "assets/pronunciation/ab79w248.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "ab79w272",
+    "text": "name",
+    "voice": "Erinome",
+    "files": [
+      "assets/pronunciation/ab79w272.mp3",
+      "assets/pronunciation/w051.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "k1720w064",
+    "text": "familie",
+    "voice": "Iapetus",
+    "files": [
+      "assets/pronunciation-a12/k1720w064.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "k1720w371",
+    "text": "mutter",
+    "voice": "Erinome",
+    "files": [
+      "assets/pronunciation-a12/k1720w371.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "k1720w369",
+    "text": "vater",
+    "voice": "Iapetus",
+    "files": [
+      "assets/pronunciation-a12/k1720w369.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "xw0105",
+    "text": "bruder",
+    "voice": "Erinome",
+    "files": [
+      "assets/pronunciation/xw0105.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "k1720w188",
+    "text": "schwester",
+    "voice": "Iapetus",
+    "files": [
+      "assets/pronunciation-a12/k1720w188.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "xw0353",
+    "text": "kind",
+    "voice": "Erinome",
+    "files": [
+      "assets/pronunciation/xw0353.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "k1720w441",
+    "text": "mann",
+    "voice": "Iapetus",
+    "files": [
+      "assets/pronunciation-a12/k1720w441.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "w050",
+    "text": "Frau",
+    "voice": "Erinome",
+    "files": [
+      "assets/pronunciation/w050.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "a12ab1316w020",
+    "text": "Haus",
+    "voice": "Iapetus",
+    "files": [
+      "assets/pronunciation/a12l1316w018.mp3",
+      "assets/tts/a12ab1316w020.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "a12ab1316w021",
+    "text": "Wohnung",
+    "voice": "Erinome",
+    "files": [
+      "assets/pronunciation/a12l1316w037.mp3",
+      "assets/tts/a12ab1316w021.mp3"
+    ],
+    "provider": "Gemini TTS"
+  },
+  {
+    "id": "a12ab1316w040",
+    "text": "Zimmer",
+    "voice": "Iapetus",
+    "files": [
+      "assets/pronunciation-a12/k1720w110.mp3",
+      "assets/tts/a12ab1316w040.mp3"
+    ],
+    "provider": "Gemini TTS"
+  }
+]
