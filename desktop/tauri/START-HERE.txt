@@ -1,0 +1,15 @@
+Menschen. - The Interactive German Coursebook (offline desktop app, Tauri)
+========================================================================
+
+EN: No installation and no internet needed.
+  1. Extract this whole folder anywhere (Desktop, USB stick, ...).
+  2. Double-click Menschen.exe.
+  3. Keep Menschen.exe and the "site" folder together.
+If Windows says WebView2 is missing, run WebView2-Offline-Installer.exe once
+(works offline), then open Menschen.exe again.
+
+AR: البرنامج شغال بدون تسطيب وبدون انترنت.
+  1. فك ضغط الفولدر كله في أي مكان (سطح المكتب أو فلاشة USB).
+  2. افتح Menschen.exe
+  3. سيب Menschen.exe وفولدر site مع بعض.
+لو ويندوز قال WebView2 ناقص، شغّل WebView2-Offline-Installer.exe مرة واحدة (بيشتغل من غير نت) وبعدين افتح Menschen.exe.
