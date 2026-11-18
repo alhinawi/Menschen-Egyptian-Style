@@ -50,6 +50,8 @@ function stamp(html, file, m) {
 // no transcripts for TTS to cover and their buttons are hidden in TTS mode.
 const ON_CLOUDFLARE_PAGES = !!process.env.CF_PAGES;
 const AUDIO_FILE = /\.(mp3|wav|ogg|m4a|flac)$/i;
+// Words are always static before sentence recordings use the remaining budget.
+const WORD_AUDIO_FILES = new Set(JSON.parse(fs.readFileSync('src/word-audio-paths.json', 'utf8')));
 // The audio budget adapts to the rest of the build: count the files the
 // asset copy and the Vite bundle produce regardless of audio, and give audio
 // whatever room is left under the hard limit, minus a safety margin. Content
@@ -88,6 +90,7 @@ function audioPriority(rel) {
     return [8, 0, 0, rel];
   }
   const dir = m[1], base = m[2].toLowerCase();
+  if (WORD_AUDIO_FILES.has(rel)) return [0, 2, 0, rel];
   if (dir === 'ab11') return null; // CD album tracks: excluded (see above)
   if (dir === 'selection-audio') return [0, 0, 0, rel];
   let mm;
