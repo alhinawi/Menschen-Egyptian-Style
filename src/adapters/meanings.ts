@@ -3,7 +3,7 @@ import {automaticArabic,hasCuratedTranslation,recordMissingTranslation} from '..
 import {serviceLifecycle} from './lifecycle';
 import {flushSync} from 'react-dom';
 import {selectionStore} from '../meanings/selectionStore';
-import {recordPronunciationUrl} from '../tts-audio';
+import {recordPronunciationUrl,ttsUrl} from '../tts-audio';
 import {meaningStore} from '../meanings/meaningStore';
 import type {MeaningSnapshot} from '../meanings/meaningStore';
 export default function mount(){
@@ -33,7 +33,16 @@ let playGen=0;
 // really failed - an AbortError means a newer press superseded this one (the
 // new playback is already in charge), and NotAllowedError means the browser
 // blocked autoplay (ask the user to press the button, don't stack voices).
-function playFailed(err: any,gen: number){if(gen!==playGen)return;if(err&&(err.name==='AbortError'||err.name==='NotAllowedError'))return;if(!speakCurrent())meaningStore.update({pendingHidden:false,pending:'التسجيل مشتغلش. اضغط اسمع النطق عشان تجرّب تاني.'})}
+function playFailed(err: any,gen: number){
+ if(gen!==playGen)return;if(err&&(err.name==='AbortError'||err.name==='NotAllowedError'))return;
+ const browserFallback=()=>{if(gen===playGen&&!speakCurrent())meaningStore.update({pendingHidden:false,pending:'التسجيل مشتغلش. اضغط اسمع النطق عشان تجرّب تاني.'})};
+ // Keep the free server voice available during a CDN outage or first deployment.
+ if(!current?.selectionParts&&audioPath?.startsWith('https://menschen-audio.pages.dev/')){
+  const text=mode==='sentence'?current?.phrase:current?.word;
+  if(text){activeAudio.src=ttsUrl(text);activeAudio.play().catch((error: any)=>{if(error?.name!=='AbortError'&&error?.name!=='NotAllowedError')browserFallback()});return}
+ }
+ browserFallback();
+}
 function play(){activeAudio.pause();ttsStop();const gen=++playGen;
  if(current?.selectionParts){const parts=current.selectionParts;if(parts.every((p: any)=>p.audio?.length)){audioQueue=parts.flatMap((p: any)=>p.audio||[]);queueAt=0;activeAudio.src=audioQueue[0];activeAudio.play().catch((e: any)=>playFailed(e,gen));return}if(speak(parts.map((p: any)=>p.text).join(' ')))return;audioQueue=parts.flatMap((p: any)=>p.audio||[]);if(!audioQueue.length)return;queueAt=0;activeAudio.src=audioQueue[0];activeAudio.play().catch((e: any)=>playFailed(e,gen));return}
  if(!audioPath){speakCurrent();return}
