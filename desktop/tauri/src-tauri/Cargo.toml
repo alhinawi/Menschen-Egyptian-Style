@@ -1,0 +1,25 @@
+[package]
+name = "menschen"
+version = "1.0.0"
+description = "Menschen. The Interactive German Coursebook - offline desktop app (Tauri)"
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-single-instance = "2"
+tiny_http = "0.12"
+open = "5"
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
