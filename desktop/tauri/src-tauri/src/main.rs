@@ -195,15 +195,29 @@ fn start_server(root: PathBuf) -> bool {
     true
 }
 
-// Windows 10/11 normally ship WebView2. If it is missing and the offline
-// runtime installer sits next to the exe, install it silently; otherwise tell
-// the user what to do. Nothing is downloaded.
+fn exe_dir() -> PathBuf {
+    std::env::current_exe()
+        .ok()
+        .and_then(|p| p.parent().map(|d| d.to_path_buf()))
+        .unwrap_or_else(|| PathBuf::from("."))
+}
+
+// WebView2 runtime choice. Nothing is installed and nothing is downloaded.
+//  1. If the PC already has the WebView2 runtime (Windows 11 and updated
+//     Windows 10 do), use it.
+//  2. Otherwise use the Fixed Version runtime shipped in the `webview2` folder
+//     next to Menschen.exe, by setting WEBVIEW2_BROWSER_EXECUTABLE_FOLDER before
+//     the window is created (the documented way to point WebView2 at a fixed
+//     runtime). On Windows 10 a fixed runtime of version 120 or newer also needs
+//     read access for ALL APPLICATION PACKAGES on its folder, so we grant it on
+//     first run (works for a folder you own on NTFS, no admin needed; it cannot
+//     work on exFAT/FAT USB sticks, which have no permissions).
 #[cfg(windows)]
-fn ensure_webview2() {
+fn setup_webview2() {
     use std::os::windows::process::CommandExt;
     const NO_WINDOW: u32 = 0x0800_0000;
     let guid = "{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}";
-    let present = [
+    let system_has_it = [
         format!(r"HKLM\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{guid}"),
         format!(r"HKLM\SOFTWARE\Microsoft\EdgeUpdate\Clients\{guid}"),
         format!(r"HKCU\Software\Microsoft\EdgeUpdate\Clients\{guid}"),
@@ -217,37 +231,72 @@ fn ensure_webview2() {
             .map(|o| o.status.success())
             .unwrap_or(false)
     });
-    if present {
+    if system_has_it {
         return;
     }
-    let dir = std::env::current_exe().unwrap_or_default().parent().map(|p| p.to_path_buf()).unwrap_or_default();
-    let installer = dir.join("WebView2-Offline-Installer.exe");
-    if installer.is_file() {
-        let _ = std::process::Command::new(&installer)
-            .args(["/silent", "/install"])
-            .creation_flags(NO_WINDOW)
-            .status();
+    let base = exe_dir().join("webview2");
+    let fixed = if base.join("msedgewebview2.exe").is_file() {
+        Some(base.clone())
     } else {
-        let _ = std::process::Command::new("powershell")
-            .args([
-                "-NoProfile",
-                "-Command",
-                "Add-Type -AssemblyName PresentationFramework; [System.Windows.MessageBox]::Show('Menschen needs Microsoft WebView2. Run WebView2-Offline-Installer.exe from the Menschen folder once, then open Menschen again.','Menschen')",
-            ])
-            .creation_flags(NO_WINDOW)
-            .status();
-        std::process::exit(1);
+        std::fs::read_dir(&base).ok().and_then(|rd| {
+            rd.flatten()
+                .map(|e| e.path())
+                .find(|p| p.join("msedgewebview2.exe").is_file())
+        })
+    };
+    match fixed {
+        Some(dir) => {
+            let marker = dir.join(".menschen-acl-ok");
+            if !marker.exists() {
+                let ok = ["*S-1-15-2-2", "*S-1-15-2-1"].iter().all(|sid| {
+                    std::process::Command::new("icacls")
+                        .arg(&dir)
+                        .args(["/grant", &format!("{sid}:(OI)(CI)(RX)")])
+                        .creation_flags(NO_WINDOW)
+                        .output()
+                        .map(|o| o.status.success())
+                        .unwrap_or(false)
+                });
+                if ok {
+                    let _ = std::fs::write(&marker, b"ok");
+                }
+            }
+            std::env::set_var("WEBVIEW2_BROWSER_EXECUTABLE_FOLDER", &dir);
+        }
+        None => {
+            let _ = std::process::Command::new("powershell")
+                .args([
+                    "-NoProfile",
+                    "-Command",
+                    "Add-Type -AssemblyName PresentationFramework; [System.Windows.MessageBox]::Show('The webview2 folder next to Menschen.exe is missing. Extract the whole Menschen zip and keep the webview2 and site folders next to Menschen.exe.','Menschen')",
+                ])
+                .creation_flags(NO_WINDOW)
+                .status();
+            std::process::exit(1);
+        }
     }
 }
 #[cfg(not(windows))]
-fn ensure_webview2() {}
+fn setup_webview2() {}
+
+// Keep the browser profile (saved answers) in a `data` folder next to the exe so
+// the progress travels with the folder or USB stick. Falls back to the default
+// per-user location if that folder is not writable.
+fn data_dir() -> Option<PathBuf> {
+    let d = exe_dir().join("data");
+    std::fs::create_dir_all(&d).ok()?;
+    let probe = d.join(".w");
+    std::fs::write(&probe, b"1").ok()?;
+    let _ = std::fs::remove_file(probe);
+    Some(d)
+}
 
 fn is_local(url: &str) -> bool {
     url.starts_with(&format!("http://127.0.0.1:{PORT}/")) || url.starts_with("about:") || url.starts_with("blob:")
 }
 
 fn main() {
-    ensure_webview2();
+    setup_webview2();
     let root = site_dir();
     start_server(root);
     tauri::Builder::default()
@@ -259,8 +308,11 @@ fn main() {
         }))
         .setup(|app| {
             let url: tauri::Url = format!("http://127.0.0.1:{PORT}/index.html").parse().unwrap();
-            WebviewWindowBuilder::new(app, "main", WebviewUrl::External(url))
-                .title("Menschen. - The Interactive German Coursebook")
+            let mut wb = WebviewWindowBuilder::new(app, "main", WebviewUrl::External(url));
+            if let Some(d) = data_dir() {
+                wb = wb.data_directory(d);
+            }
+            wb.title("Menschen. - The Interactive German Coursebook")
                 .inner_size(1366.0, 900.0)
                 .min_inner_size(900.0, 600.0)
                 .on_navigation(|u| {
