@@ -1,0 +1,87 @@
+name: Tauri Windows offline app
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'desktop/tauri/**'
+      - '.github/workflows/tauri-windows.yml'
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 90
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: desktop/tauri/src-tauri
+
+      - name: Build the site (desktop flag, full audio set)
+        run: |
+          npm ci
+          MENSCHEN_DESKTOP=1 CF_PAGES= npm run build
+
+      - name: Film-Stationen clips (1080p)
+        run: |
+          command -v ffmpeg >/dev/null || choco install ffmpeg -y --no-progress
+          python desktop/tauri/scripts/fetch-clips.py
+          mkdir -p dist/assets/clips
+          cp desktop-cache/clips-1080/*.mp4 dist/assets/clips/
+
+      - name: Build the Tauri shell
+        working-directory: desktop/tauri
+        run: |
+          npx --yes @tauri-apps/cli@2 icon app-icon.png
+          cd src-tauri
+          cargo build --release
+
+      - name: Assemble the portable folder
+        run: |
+          out=build/Menschen-tauri
+          mkdir -p "$out"
+          cp desktop/tauri/src-tauri/target/release/menschen.exe "$out/Menschen.exe"
+          cp -r dist "$out/site"
+          cp desktop/tauri/START-HERE.txt "$out/"
+
+      - name: Benchmark and screenshot
+        shell: pwsh
+        run: ./desktop/tauri/scripts/bench.ps1 -Exe "$PWD/build/Menschen-tauri/Menschen.exe" -OutDir "$PWD/build/bench"
+
+      - name: Offline WebView2 runtime installer (separate, optional)
+        run: |
+          curl -sL --retry 3 -o build/WebView2-Offline-Installer.exe "https://go.microsoft.com/fwlink/?linkid=2124701"
+          ls -la build/WebView2-Offline-Installer.exe
+
+      - name: Zip (store, no compression)
+        run: |
+          cd build
+          7z a -tzip -mx0 menschen-tauri-portable.zip Menschen-tauri
+          ls -la menschen-tauri-portable.zip
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: menschen-tauri-portable
+          path: build/menschen-tauri-portable.zip
+          compression-level: 0
+          retention-days: 14
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: menschen-tauri-small-files
+          path: |
+            build/bench/*
+            build/WebView2-Offline-Installer.exe
+            build/Menschen-tauri/Menschen.exe
+          retention-days: 14
