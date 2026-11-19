@@ -12,7 +12,7 @@ export function PremiumCover({src, alt}: {src: string; alt: string}) {
   const {language, t} = useUiLanguage();
   const reader = useContext(ReaderContext)!;
   const snapshot = useSyncExternalStore(reader.subscribe, reader.getSnapshot, reader.getSnapshot);
-  const active = snapshot.ready && snapshot.page === '0';
+  const active = snapshot.ready && snapshot.page === '0' && !snapshot.grid;
   useLayoutEffect(() => {document.body.classList.toggle('fullscreenCoverActive', active); return () => document.body.classList.remove('fullscreenCoverActive');}, [active]);
   const [loaded, setLoaded] = useState(false);
   const level = src.includes('a12') ? 'A1.2' : 'A1.1';
