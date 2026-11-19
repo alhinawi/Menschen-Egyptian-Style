@@ -8,6 +8,7 @@ export interface ReaderSnapshot {
   page: string;
   previousDisabled: boolean;
   nextDisabled: boolean;
+  grid: boolean;
 }
 
 type DomHandler = (this: Element, event: {target: Element; currentTarget: Element; preventDefault(): void}) => void;
@@ -23,7 +24,7 @@ export const ReaderContext = createContext<ReaderStore | null>(null);
 
 export function createReaderStore(): ReaderStore {
   let listeners = new Set<() => void>(),
-    snapshot: ReaderSnapshot = {ready: false, zoom: '', page: '', previousDisabled: true, nextDisabled: false},
+    snapshot: ReaderSnapshot = {ready: false, zoom: '', page: '', previousDisabled: true, nextDisabled: false, grid: false},
     handlers = new Map<string, DomHandler>(),
     restore: Array<[Element, string, DomHandler | null]> = [];
   function publish(): void {
@@ -39,7 +40,8 @@ export function createReaderStore(): ReaderStore {
       soundOn: (document.querySelector('.soundToggle') as HTMLElement | null)?.dataset.soundOn !== 'false',
       page: (document.querySelector('#pageJump') as HTMLInputElement | null)?.value || '',
       previousDisabled: (document.querySelector('#prev') as HTMLButtonElement | null)?.disabled || false,
-      nextDisabled: (document.querySelector('#next') as HTMLButtonElement | null)?.disabled || false
+      nextDisabled: (document.querySelector('#next') as HTMLButtonElement | null)?.disabled || false,
+      grid: document.body.dataset.readerGrid === 'true'
     };
     if (JSON.stringify(next) !== JSON.stringify(snapshot)) {
       snapshot = next;

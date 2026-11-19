@@ -1,6 +1,7 @@
 // Lifecycle boundary for fold, geometry, audio and canvas services.
 // Native React components own content, controls and exercise state.
 import type {ExerciseRuntime, LessonDispose, LessonInitializer, PersistenceRuntime} from '../types/runtime';
+import {initReaderLayout} from './reader-layout';
 
 type ListenerRecord = [EventTarget, string, EventListenerOrEventListenerObject | null, boolean | AddEventListenerOptions | undefined];
 
@@ -33,6 +34,10 @@ export function mountLesson(initializers: LessonInitializer[]): LessonDispose {
         if (typeof result.dispose === 'function') disposers.push(() => result.dispose!());
       } else if (typeof result === 'function') disposers.push(result);
     });
+    // Laptop page layouts (one/two/four pages) attach once the book adapter
+    // has published its flip globals; no-ops on standalone viewers.
+    const layoutDispose = initReaderLayout();
+    if (layoutDispose) disposers.push(layoutDispose);
   } finally {
     EventTarget.prototype.addEventListener = originalAdd;
     window.setTimeout = originalTimeout;
