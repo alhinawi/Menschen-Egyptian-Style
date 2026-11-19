@@ -24,9 +24,11 @@ export function audioTextObstacles(page:HTMLElement):Obstacle[]{
  return out;
 }
 const intersects=(x:number,y:number,r:Obstacle)=>x<r.right&&x+44>r.left&&y<r.bottom&&y+44>r.top;
-/** Screen-space targets stay 44px even when the book canvas is fit to a phone. */
+/** Screen-space targets stay 44px when the book canvas is fit to a phone, and
+    grow with the reader zoom so they keep pace with the enlarged printed art. */
 export function AudioMarkerButtons(){
  const [markers,setMarkers]=useState<Marker[]>([]);
+ const [scale,setScale]=useState(1);
  const [choices,setChoices]=useState<Track[]>([]);
  const dialog=useRef<HTMLDialogElement>(null);
  useEffect(()=>{
@@ -72,6 +74,10 @@ export function AudioMarkerButtons(){
    // circle on its own row.
    const obstacles=(currentPage?audioTextObstacles(currentPage):[]).map(o=>({left:o.left+sx,right:o.right+sx,top:o.top+sy,bottom:o.bottom+sy}));
    const spread=currentPage?.closest<HTMLElement>('[style*="zoom"]')||currentPage?.parentElement||null;
+   const zoomFactor=spread?parseFloat(spread.style.zoom)||1:1;
+   // Above 100% the printed art grows, so the circle grows with it and never
+   // shrinks relative to the page; at or below 100% it stays a 44px target.
+   const markerScale=Math.max(1,zoomFactor);
    const pan0=spread&&spread.style.marginLeft.endsWith('px')?parseFloat(spread.style.marginLeft)||0:0;
    const blocked=(x:number,y:number,extra:Obstacle[])=>[...obstacles,...extra].some(r=>intersects(x,y,r));
    const placed:Obstacle[]=[];
@@ -79,7 +85,10 @@ export function AudioMarkerButtons(){
    for(const m of out){
     // Edge-clamped markers keep the 24px face flush to the screen edge (the
     // 44px wrapper may hang offscreen), so tight-margin printed tags keep their gap.
-    const minX=sx-10,maxX=sx+window.innerWidth-46;
+    // A scaled circle extends 22*(scale-1)px past its box on every side
+    // (transform-origin is the centre), so narrow the band to keep it inside.
+    const grow=22*(markerScale-1);
+    const minX=sx-10+grow,maxX=sx+window.innerWidth-46-grow;
     // An anchor is an edge case when it could not be centred on screen without
     // the pan currently applied (pan0 keeps earlier edge decisions stable).
     const unpanned=m.x-pan0;
@@ -137,8 +146,8 @@ export function AudioMarkerButtons(){
     if(panNeed!==0)spread.style.marginLeft=panNeed+'px';
     else spread.style.marginLeft='';
    }
-   const sig=out.map(m=>[m.x.toFixed(1),m.y.toFixed(1),...m.tracks.map(t=>t.page+t.label+t.track)]).join('|');
-   if(sig!==previous){previous=sig;setMarkers(out)}
+   const sig=markerScale.toFixed(3)+'|'+out.map(m=>[m.x.toFixed(1),m.y.toFixed(1),...m.tracks.map(t=>t.page+t.label+t.track)]).join('|');
+   if(sig!==previous){previous=sig;setMarkers(out);setScale(markerScale)}
   };
   const queue=()=>{if(!frame)frame=requestAnimationFrame(update)};
   const observer=new MutationObserver(queue);
@@ -150,7 +159,7 @@ export function AudioMarkerButtons(){
  const play=(t:Track)=>{if(t.el.isConnected)t.el.click()};
  const choose=(m:Marker)=>{if(m.tracks.length===1){play(m.tracks[0]);return}setChoices(m.tracks);dialog.current?.showModal()};
  return createPortal(<>
-  <div className="audioMarkerLayer">{markers.map((m,i)=><button key={i} type="button" className="largeAudioMarker" data-large-audio aria-label={m.tracks.length===1?m.tracks[0].label:`${m.tracks.length} Audios auswählen`} title={m.tracks.map(t=>t.label).join(' · ')} style={{left:m.x,top:m.y}} onClick={()=>choose(m)}><span className="largeAudioFace"><Play/></span></button>)}</div>
+  <div className="audioMarkerLayer">{markers.map((m,i)=><button key={i} type="button" className="largeAudioMarker" data-large-audio aria-label={m.tracks.length===1?m.tracks[0].label:`${m.tracks.length} Audios auswählen`} title={m.tracks.map(t=>t.label).join(' · ')} style={{left:m.x,top:m.y,transform:scale>1?`scale(${scale})`:undefined}} onClick={()=>choose(m)}><span className="largeAudioFace"><Play/></span></button>)}</div>
   <dialog className="audioTrackChooser" ref={dialog} onClose={()=>setChoices([])} aria-label="Originalaudio auswählen">
    <div className="audioTrackChooserHead"><strong>Originalaudio</strong><button type="button" aria-label="Schließen" onClick={()=>dialog.current?.close()}>✕</button></div>
    <p>Audio auswählen</p>
