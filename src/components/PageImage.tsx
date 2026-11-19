@@ -10,14 +10,18 @@ function schedule() {
   if (frame) return;
   frame = requestAnimationFrame(() => {
     frame = 0;
-    const pages = [...document.querySelectorAll<HTMLElement>('#pageStage .page')];
+    // While the four-page overview grid owns the pages, the flip's "current
+    // page" is only one of the visible cells: every page shown in a grid
+    // cell must activate its images, not just that one.
+    const gridPages = new Set(document.querySelectorAll<HTMLElement>('#pageGrid .page'));
+    const pages = gridPages.size ? [] : [...document.querySelectorAll<HTMLElement>('#pageStage .page')];
     const book = window.menschenBook;
     const index = book?.getCurrentPageIndex?.();
     const initial = location.hash.slice(1);
     const current = pages[index ?? -1] || pages.find(p => p.dataset.page === initial) || pages[0];
     for (const [image, activate] of pending) {
       const page = image.closest<HTMLElement>('.page');
-      if (!page || page === current) {
+      if (!page || gridPages.has(page) || (!gridPages.size && page === current)) {
         pending.delete(image);
         activate();
       }
@@ -30,7 +34,10 @@ function watch(image: HTMLImageElement, activate: () => void) {
     observer = new MutationObserver(records => {
       if (records.some(r => r.type === 'childList' || (r.target instanceof Element && r.target.matches('.page, #pageStage')))) schedule();
     });
-    const stage = document.querySelector('#pageStage') || document.body;
+    // The grid moves pages into #pageGrid under #spread (a #pageStage
+    // sibling), so watch #viewport to catch grid navigation and layout
+    // switches as well as flip-book mutations.
+    const stage = document.querySelector('#viewport') || document.querySelector('#pageStage') || document.body;
     observer.observe(stage, {subtree: true, childList: true, attributes: true, attributeFilter: ['class', 'style', 'hidden']});
     window.addEventListener('hashchange', schedule);
   }
