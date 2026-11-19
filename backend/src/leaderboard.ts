@@ -1,9 +1,36 @@
+// Leaderboard assembly + scoring.
+//
+// Scores are denormalized: `users.score` holds the count of checked-off
+// exercises (done-* flags) in the learner's synced progress blob. It is
+// written on every progress save (see saveProgress in index.ts) and was
+// backfilled once from existing blobs (scripts/backfill-scores.mjs). The
+// public board therefore reads a bounded, indexed top-N instead of joining
+// and parsing every progress blob on every view.
+//
 // Display-only owner pin. Never writes scores, progress or account data.
 // Email identity is checked on the server and must already be verified.
-const OWNER_EMAILS = ['alhinaawi@gmail.com','3asfuur@gmail.com'];
+export const OWNER_EMAILS = ['alhinaawi@gmail.com', '3asfuur@gmail.com'];
 // A presentation floor only. Stored exercise totals are never modified.
 export const OWNER_DISPLAY_BASE = 120;
-export type LeaderboardAccount={id:number;name:string;email:string;email_verified:number;avatar:string|null;data:string|null};
+
+export type LeaderboardAccount = {
+  id: number
+  name: string
+  email: string
+  email_verified: number
+  avatar: string | null
+  score: number
+}
+
+export type BoardEntry = {
+  id: number
+  name: string
+  points: number
+  avatar: string | null
+  pinned: boolean
+  rank: number
+}
+
 function displayName(full: string): string {
   const parts = full.trim().split(/\s+/).filter(Boolean)
   if (parts.length === 0) return 'Learner'
@@ -11,12 +38,14 @@ function displayName(full: string): string {
   return `${parts[0]} ${[...parts[parts.length - 1]][0]}.`
 }
 
-function pointsOf(data: string): number {
+// Points = checked-off exercises (done-* flags) across the learner's synced
+// progress blob. The sync blob's top-level values are JSON strings (one per
+// localStorage key); exercise states live inside those. The backfill script
+// carries the same walker; keep the two in sync.
+export function pointsOf(data: string): number {
   try {
     let n = 0
     const walk = (v: unknown) => {
-      // The sync blob's top-level values are JSON strings (one per
-      // localStorage key); exercise states live inside those.
       if (typeof v === 'string') {
         try {
           const inner: unknown = JSON.parse(v)
@@ -39,12 +68,36 @@ function pointsOf(data: string): number {
   }
 }
 
-export function buildLeaderboard(rows:LeaderboardAccount[],viewerId:number|null){
- const owners=rows.filter(r=>r.email_verified===1&&OWNER_EMAILS.includes(r.email.toLowerCase()));
- const owner=owners.find(r=>r.id===viewerId)||owners.find(r=>r.email.toLowerCase()===OWNER_EMAILS[0])||owners[0];
- // One owner row, not two. Prefer the caller's verified owner account.
- const board=rows.filter(r=>!owners.includes(r)||r===owner).map(r=>({id:r.id,name:r===owner?r.name:displayName(r.name),points:r===owner?Math.max(OWNER_DISPLAY_BASE,pointsOf(r.data||'{}')):pointsOf(r.data||'{}'),avatar:r===owner?r.avatar:null,pinned:r===owner}))
-  .sort((a,b)=>Number(b.pinned)-Number(a.pinned)||b.points-a.points||(a.points===0?a.id-b.id:a.name.localeCompare(b.name)||a.id-b.id));
- const mine=board.findIndex(r=>r.id===viewerId);
- return {top:board.slice(0,10).map(({id,...r},i)=>({...r,rank:i+1})),me:viewerId===null?null:{rank:mine>=0?mine+1:board.length+1,points:mine>=0?board[mine].points:0}};
+export const isVerifiedOwner = (r: { email: string; email_verified: number }) =>
+  r.email_verified === 1 && OWNER_EMAILS.includes(r.email.toLowerCase())
+
+// One owner row, not two. Prefer the caller's verified owner account.
+export function pickOwner(rows: LeaderboardAccount[], viewerId: number | null): LeaderboardAccount | null {
+  const owners = rows.filter(isVerifiedOwner)
+  return owners.find((r) => r.id === viewerId) ?? owners.find((r) => r.email.toLowerCase() === OWNER_EMAILS[0]) ?? owners[0] ?? null
 }
+
+// Assemble the public top slice from a bounded row set: the verified owner
+// accounts (2 by construction) plus the indexed top-N-by-score query result.
+// The sort mirrors the SQL ORDER BY (score DESC, id ASC) exactly so a
+// viewer's displayed rank matches the rank the count query computes. Tie
+// order for equal scores is now id ASC for everyone (previously name order
+// for non-zero scores): deterministic, index-backed, and consistent between
+// the top slice and the rank count.
+export function buildTop(rows: LeaderboardAccount[], viewerId: number | null, limit = 10): BoardEntry[] {
+  const owner = pickOwner(rows, viewerId)
+  const rest = rows.filter((r) => r !== owner).sort((a, b) => b.score - a.score || a.id - b.id)
+  const board = [...(owner ? [owner] : []), ...rest].slice(0, limit)
+  return board.map((r, i) => ({
+    id: r.id,
+    name: r === owner ? r.name : displayName(r.name),
+    points: r === owner ? Math.max(OWNER_DISPLAY_BASE, r.score) : r.score,
+    avatar: r === owner ? r.avatar : null,
+    pinned: r === owner,
+    rank: i + 1,
+  }))
+}
+
+// Strip internal ids before the payload leaves the worker (the public board
+// never exposed them).
+export const publicTop = (top: BoardEntry[]) => top.map(({ id, ...entry }) => entry)

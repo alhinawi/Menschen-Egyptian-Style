@@ -1,4 +1,4 @@
-import {buildLeaderboard} from './leaderboard';
+import { OWNER_DISPLAY_BASE, OWNER_EMAILS, buildTop, isVerifiedOwner, pickOwner, pointsOf, publicTop, type BoardEntry, type LeaderboardAccount } from './leaderboard';
 import { Hono, type MiddlewareHandler } from 'hono'
 import { cors } from 'hono/cors'
 import { hashPassword, newToken, sha256Hex, verifyPassword } from './crypto'
@@ -58,9 +58,14 @@ async function openSession(db: D1Database, userId: number) {
 }
 
 async function saveProgress(db: D1Database, userId: number, data: string, now: string) {
-  await db.prepare(
-    'INSERT INTO progress (user_id, data, updated_at) VALUES (?, ?, ?) ON CONFLICT(user_id) DO UPDATE SET data = excluded.data, updated_at = excluded.updated_at',
-  ).bind(userId, data, now).run()
+  // Keep the denormalized leaderboard score in the same batch as the blob
+  // write, so the public board never has to parse progress JSON to rank.
+  await db.batch([
+    db.prepare(
+      'INSERT INTO progress (user_id, data, updated_at) VALUES (?, ?, ?) ON CONFLICT(user_id) DO UPDATE SET data = excluded.data, updated_at = excluded.updated_at',
+    ).bind(userId, data, now),
+    db.prepare('UPDATE users SET score = ?, score_updated_at = ? WHERE id = ?').bind(pointsOf(data), now, userId),
+  ])
 }
 
 type UserRow = { id: number; name: string; email: string; created_at: string; avatar: string | null; google_avatar: string | null; email_verified: number }
@@ -160,6 +165,8 @@ app.post('/api/auth/register', async (c) => {
     if (data.length > MAX_PROGRESS_BYTES) throw new ValidationError({ progress: 'too large' })
     await saveProgress(c.env.DB, userId, data, new Date().toISOString())
   }
+  // A new learner joins the board (zero-score rows fill it below 10 users).
+  dropLeaderboardCache(c)
 
   // Password sign-ups start unverified: send the confirmation link without
   // blocking (or failing) the registration on a mail-provider error.
@@ -222,6 +229,8 @@ app.patch('/api/me', async (c) => {
     }
   }
   const u = (await c.env.DB.prepare(`SELECT ${USER_COLS} FROM users WHERE id = ?`).bind(c.get('userId')).first<UserRow>())!
+  // Name/avatar show up on the public board.
+  dropLeaderboardCache(c)
   return c.json({ user: publicUser(u) })
 })
 
@@ -307,28 +316,118 @@ app.put('/api/progress', async (c) => {
   if (data.length > MAX_PROGRESS_BYTES) throw new ValidationError({ progress: 'too large' })
   const now = new Date().toISOString()
   await saveProgress(c.env.DB, c.get('userId'), data, now)
+  dropLeaderboardCache(c)
   return c.json({ progress: merged, updated_at: now })
 })
 
 // ---------- leaderboard ----------
-// Points = checked-off exercises (done-* flags) across the learner's synced
-// progress blob. Public top 10; the signed-in learner also gets their own
-// rank, even outside the top 10. Names are privacy-safe: first name plus the
-// first letter of the last name part.
+// Points = checked-off exercises (done-* flags), denormalized onto
+// users.score at every progress write (migration 0006 + one-time backfill).
+// Public top 10 from a bounded, indexed read; the signed-in learner also
+// gets their own rank, even outside the top 10. Names are privacy-safe:
+// first name plus the first letter of the last name part.
+const TOP_LIMIT = 10
+// Extra row so the pinned owner can be lifted out of the slice without
+// dropping the 10th place.
+const TOP_QUERY_LIMIT = TOP_LIMIT + 1
+const LEADERBOARD_CACHE_KEY = 'https://menscheny-api.internal/__leaderboard_top10'
+const LEADERBOARD_CACHE_TTL_S = 60
+
+type TopPayload = { top: BoardEntry[]; ownerId: number | null }
+
+function dropLeaderboardCache(c: { executionCtx: { waitUntil(p: Promise<unknown>): void } }) {
+  c.executionCtx.waitUntil(caches.default.delete(LEADERBOARD_CACHE_KEY).catch(() => false))
+}
+
+// Bounded reads only: the verified owner rows (2 by construction) and the
+// indexed top slice. Never joins or parses progress blobs.
+async function fetchTopRows(db: D1Database): Promise<LeaderboardAccount[]> {
+  const COLS = 'id, name, email, email_verified, avatar, score'
+  const [owners, top] = await db.batch([
+    db.prepare(`SELECT ${COLS} FROM users WHERE email_verified = 1 AND lower(email) IN (?, ?)`).bind(...OWNER_EMAILS),
+    db.prepare(`SELECT ${COLS} FROM users ORDER BY score DESC, id ASC LIMIT ?`).bind(TOP_QUERY_LIMIT),
+  ])
+  const byId = new Map<number, LeaderboardAccount>()
+  for (const r of [...(owners.results ?? []), ...(top.results ?? [])] as unknown as LeaderboardAccount[]) byId.set(r.id, r)
+  return [...byId.values()]
+}
+
+async function buildTopPayload(db: D1Database, viewerId: number | null): Promise<TopPayload> {
+  const rows = await fetchTopRows(db)
+  return { top: buildTop(rows, viewerId, TOP_LIMIT), ownerId: pickOwner(rows, viewerId)?.id ?? null }
+}
 
 app.get('/api/leaderboard', async (c) => {
-  const rows = await c.env.DB.prepare(
-    `SELECT u.id, u.name, u.email, u.email_verified, u.avatar, p.data
-     FROM users u LEFT JOIN progress p ON u.id = p.user_id`,
-  ).all<{id:number;name:string;email:string;email_verified:number;avatar:string|null;data:string|null}>()
-  let viewerId:number|null=null
+  let viewerId: number | null = null
   const m = /^Bearer (.+)$/.exec(c.req.header('Authorization') ?? '')
   if (m) {
     const session = await c.env.DB.prepare('SELECT user_id FROM sessions WHERE token_hash = ? AND expires_at > ?')
-      .bind(await sha256Hex(m[1]), new Date().toISOString()).first<{user_id:number}>()
-    viewerId=session?.user_id??null
+      .bind(await sha256Hex(m[1]), new Date().toISOString())
+      .first<{ user_id: number }>()
+    viewerId = session?.user_id ?? null
   }
-  return c.json(buildLeaderboard(rows.results??[],viewerId))
+
+  // The public top slice is the same for everyone except a signed-in owner
+  // (who pins their own account), so it is cached at the edge for 60s and
+  // dropped on every score/profile write.
+  let payload: TopPayload | null = null
+  const hit = await caches.default.match(LEADERBOARD_CACHE_KEY)
+  if (hit) {
+    try {
+      payload = (await hit.json()) as TopPayload
+    } catch {
+      payload = null
+    }
+  }
+
+  let viewer: LeaderboardAccount | null = null
+  if (viewerId !== null) {
+    viewer =
+      (await c.env.DB.prepare('SELECT id, name, email, email_verified, avatar, score FROM users WHERE id = ?')
+        .bind(viewerId)
+        .first<LeaderboardAccount>()) ?? null
+  }
+  const viewerIsOwner = viewer !== null && isVerifiedOwner(viewer)
+
+  if (payload !== null && viewerIsOwner && payload.ownerId !== viewerId) payload = null
+  if (payload === null) {
+    payload = await buildTopPayload(c.env.DB, viewerIsOwner ? viewerId : null)
+    if (!viewerIsOwner) {
+      c.executionCtx.waitUntil(
+        caches.default.put(
+          LEADERBOARD_CACHE_KEY,
+          new Response(JSON.stringify(payload), {
+            headers: { 'content-type': 'application/json', 'cache-control': `public, max-age=${LEADERBOARD_CACHE_TTL_S}` },
+          }),
+        ),
+      )
+    }
+  }
+
+  let me: { rank: number; points: number } | null = null
+  if (viewer !== null) {
+    if (viewerIsOwner) {
+      me = { rank: 1, points: Math.max(OWNER_DISPLAY_BASE, viewer.score) }
+    } else {
+      const onBoard = payload.top.find((r) => r.id === viewer.id)
+      if (onBoard) {
+        me = { rank: onBoard.rank, points: onBoard.points }
+      } else {
+        // Exact rank from the score index: count learners ahead in the same
+        // (score DESC, id ASC) order, excluding owner accounts (the pinned
+        // owner sits ahead of everyone and is added as the +1 below).
+        const { above } = (await c.env.DB.prepare(
+          `SELECT COUNT(*) AS above FROM users
+           WHERE (score > ? OR (score = ? AND id < ?)) AND lower(email) NOT IN (?, ?)`,
+        )
+          .bind(viewer.score, viewer.score, viewer.id, ...OWNER_EMAILS)
+          .first<{ above: number }>()) ?? { above: 0 }
+        me = { rank: above + (payload.ownerId !== null ? 2 : 1), points: viewer.score }
+      }
+    }
+  }
+
+  return c.json({ top: publicTop(payload.top), me })
 })
 
 export default app
