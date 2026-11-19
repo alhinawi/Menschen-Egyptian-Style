@@ -41,6 +41,7 @@ export const UI_COPY: [string, string][] = [
  ['Connection problem. Please try again.','حصلت مشكلة في الاتصال. جرّب تاني.'],
  ['Progress saved & synced','تقدمك محفوظ ومتزامن'], ['Syncing your progress…','بيزامن تقدمك…'], ['Sync failed - will retry','المزامنة فشلت - هنحاول تاني'],
  ['Leaderboard','المتصدرين'], ['points','نقطة'], ['You','انت'], ['No scores yet - be the first!','لسه مفيش نتايج - كون أول واحد!'],
+ ['The leaderboard is taking a short break. It will be back soon.','المتصدرين في بريك صغير دلوقتي. هيرجعوا عن قريب.'],
  ['Please verify your email address','أكّد بريدك الإلكتروني لو سمحت'], ['Resend verification email','ابعت إيميل التأكيد تاني'], ['Verification email sent','إيميل التأكيد اتبعت'],
  ['Email verified','تم تأكيد بريدك الإلكتروني'], ['Verification link expired or invalid','لينك التأكيد منتهي أو غلط'],
  ['Profile photo','الصورة الشخصية'], ['Change profile photo','غيّر صورتك'], ['Upload photo','ارفع صورة'], ['Use Google photo','استخدم صورة جوجل'], ['Choose avatar','اختار صورة رمزية'], ['Crop photo','قص الصورة'], ['Zoom','تكبير'], ['Save photo','احفظ الصورة'], ['Back','رجوع'],
