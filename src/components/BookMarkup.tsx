@@ -5,7 +5,7 @@ import {renderNative} from './nativeComponents';
 import {WordBank} from '../exercises/WordBank';
 import {RatingDot} from '../persistence/RatingDot';
 import {TaskControl, TaskFeedback, TaskMode} from '../exercises/CustomTasks';
-import {createElement, memo, useLayoutEffect} from 'react';
+import {createElement, Fragment, memo, useLayoutEffect} from 'react';
 import type {ReactNode} from 'react';
 import {CoverSocials} from './CoverSocials';
 import {PremiumCover} from './PremiumCover';
@@ -14,6 +14,7 @@ import {SelectionControls} from '../meanings/SelectionControls';
 import {PersistentField} from '../persistence/PersistentFields';
 import {QuizForm, QuizFeedback, AnswerField} from '../exercises/QuizState';
 import {ReaderControl, ZoomValue} from './ReaderControls';
+import {LayoutSwitch} from './LayoutSwitch';
 import {ReaderProfile} from './ReaderProfile';
 import type {MarkupAttrs, MarkupNode} from '../types/book';
 
@@ -112,6 +113,9 @@ function render(node: MarkupNode, key: string | number, formKey: string | null =
     if (attrs.class?.split(' ').includes('feedback')) return createElement(QuizFeedback, {key, tag, attrs: props, formKey, children: rendered});
     if ('data-answer' in attrs) return createElement(AnswerField, {key, tag, attrs: props, answerId: formKey + ':' + path, children: rendered});
   }
+  // The laptop page-layout switcher (one/two/four pages) ships with the
+  // zoom controls; the layout module hides it off-laptop.
+  if (!standalone && attrs.id === 'fit') return createElement(Fragment, {key}, createElement(ReaderControl, {key: 'fit', tag, attrs: {...props, 'data-react-control-id': path}, children: rendered}), createElement(LayoutSwitch, {key: 'layout'}));
   if (!standalone && (['prev', 'next', 'plus', 'minus', 'fit', 'pageJump', 'lessonNav', 'closeAudio', 'palette', 'audioToggle', 'clearMap'].includes(attrs.id) || attrs.class?.split(' ').some(c => ['soundToggle', 'listen', 'coverOpen'].includes(c)) || 'data-jump' in attrs || 'data-color' in attrs)) return createElement(ReaderControl, {key, tag, attrs: {...props, 'data-react-control-id': path}, children: rendered});
   if (attrs.id === 'zoomValue') return createElement(ZoomValue, {key, tag, attrs: props, children: rendered});
   if (['input', 'select'].includes(tag)) return createElement(PersistentField, {key, tag, attrs: props, children: rendered});
