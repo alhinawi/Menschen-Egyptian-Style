@@ -96,15 +96,43 @@ export function initReaderLayout(): (() => void) | undefined {
     publish();
   }
 
+  // The vendored flip book keeps repainting its own pages (inline position,
+  // size and display:none for pages it does not show) even while the grid
+  // owns them, so the grid re-applies its cell style whenever that happens.
+  let cellScaleNow = 1;
+  function applyCellStyle(page: HTMLElement, s: number) {
+    page.style.cssText = '';
+    page.style.display = 'block';
+    page.style.position = 'relative';
+    page.style.zoom = String(s);
+    page.hidden = false;
+  }
+  const guard = new MutationObserver(records => {
+    guard.disconnect();
+    for (const r of records) {
+      const page = r.target as HTMLElement;
+      if (grid && page.parentElement?.classList.contains('pageGridCell')) applyCellStyle(page, cellScaleNow);
+    }
+    if (grid) grid.querySelectorAll<HTMLElement>('.page').forEach(pg => guard.observe(pg, {attributes: true, attributeFilter: ['style']}));
+  });
+
   function renderGridWindow() {
     if (!grid) return;
+    guard.disconnect();
     grid.innerHTML = '';
     const s = cellScale();
+    cellScaleNow = s;
+    // Pin to two columns so four cells always form a 2x2 block, never a 1x4 row.
+    grid.style.width = Math.ceil(baseWidth * s * 2 + 16 + 24) + 'px';
+    grid.style.marginInline = 'auto';
+    // Per-lesson stylesheets restyle #pageGrid as a block, so set the flex layout inline.
+    Object.assign(grid.style, {display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignContent: 'flex-start', gap: '16px', padding: '12px', boxSizing: 'border-box'});
     for (let i = gridStart; i < Math.min(gridStart + 4, pages!.length); i++) {
       const page = pages![i];
       page.hidden = false;
       clearFlipInline(page);
-      page.style.zoom = String(s);
+      applyCellStyle(page, s);
+      guard.observe(page, {attributes: true, attributeFilter: ['style']});
       const cell = document.createElement('div');
       cell.className = 'pageGridCell';
       cell.style.width = baseWidth * s + 'px';
@@ -249,6 +277,7 @@ export function initReaderLayout(): (() => void) | undefined {
 
   function teardownGrid(nextMode: LayoutMode) {
     const current = gridStart;
+    guard.disconnect();
     detachShield();
     zoomMirror?.disconnect();
     zoomMirror = null;
