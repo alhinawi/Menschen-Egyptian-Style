@@ -2,7 +2,7 @@ export default function mount(){
 /* Egyptian Arabic fill chunk 11: curated meanings for Arbeitsbuch A1.2 text that had no reviewed translation. */
 Object.assign(window.MENSCHEN_WORDS,{
 "iss":"كُل (أمر من essen)",
-"paula.patent@t-online.de":"paula.patent@t-online.de (إيميل)",
+"paula.patent@t-online.de":'إيميل',
 "ab·trocknen":"ينشّف",
 "ab·waschen":"يغسل المواعين",
 "zu·machen":"يقفل"

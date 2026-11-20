@@ -5,7 +5,7 @@ Object.assign(window.MENSCHEN_WORDS,{
 "ab·biegen":"يعطّف (فعل انفصالي)",
 "an·machen":"يشغّل / يولّع (فعل انفصالي)",
 "ein·schalten":"يشغّل (جهاز) (فعل انفصالي)",
-"gestimmt":"كان صح (Partizip II من stimmen)",
+"gestimmt":'كان صح',
 "weiter·fahren":"يكمل سايق (فعل انفصالي)",
 "zurück·fahren":"يرجع بالعربية (فعل انفصالي)",
 "she":"هي (إنجليزي)"
