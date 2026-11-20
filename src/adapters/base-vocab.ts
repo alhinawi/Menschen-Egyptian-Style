@@ -705,6 +705,9 @@ const sharedMore: Record<string,string> = {
 "☹":"علامة",
 "☺":"علامة",
 "⸚er":"جمع مع أوملاوت",
+"KB 3":"مراجعة كتاب الطالب: الدرس 3",
+"KB 4":"مراجعة كتاب الطالب: الدرس 4",
+
 "(hl ...)":"مثال للنطق",
 "Amadeus":"أماديوس (اسم)",
 "EFAMBLAUETUGINFEUERZEUGALVIECKIGUNTSEIFELUGEKUNSTSTOFFA":"حروف مبعثرة - لعبة البحث عن الكلمات",
