@@ -4,14 +4,14 @@ Object.assign(window.MENSCHEN_WORDS,{
 "fußballspielen":"لعب الكورة",
 "grill":"يشوي (جزء كلمة)",
 "radfahren":"ركوب العجلة",
-"blnd":"blond = أشقر (حروف علة ناقصة)",
-"dck":"dick = تخين (حروف علة ناقصة)",
-"frndlch":"freundlich = ودود/لطيف (حروف علة ناقصة)",
-"glcklch":"glücklich = مبسوط/سعيد (حروف علة ناقصة)",
-"hbsch":"hübsch = جميل/ظريف (حروف علة ناقصة)",
-"kmsch":"komisch = غريب (حروف علة ناقصة)",
-"schlnk":"schlank = رشيق (حروف علة ناقصة)",
-"trrg":"traurig = زعلان (حروف علة ناقصة)"
+"blnd":'أشقر (كلمة ناقصها حروف)',
+"dck":'تخين (كلمة ناقصها حروف)',
+"frndlch":'ودود / لطيف (كلمة ناقصها حروف)',
+"glcklch":'مبسوط / سعيد (كلمة ناقصها حروف)',
+"hbsch":'جميل / ظريف (كلمة ناقصها حروف)',
+"kmsch":'غريب (كلمة ناقصها حروف)',
+"schlnk":'رشيق (كلمة ناقصها حروف)',
+"trrg":'زعلان (كلمة ناقصها حروف)'
 });
 Object.assign(window.MENSCHEN_PHRASES,{
 "Schilder im Internet und schreiben":"...لافتات على النت واكتب",
