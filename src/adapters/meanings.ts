@@ -17,7 +17,8 @@ const selectionNorm=(s: string)=>s.normalize('NFC').replace(/[’]/g,"'").replac
 const norm=(s: string)=>s.normalize('NFC').trim().replace(/[’]/g,"'").replace(/\s+/g,' ').replace(/^[.,:;!?"'„“”‚‘()\[\]{}<>|/\\–—-]+|[.,:;!?"'„“”‚‘()\[\]{}<>|/\\–—-]+$/g,'').replace(/[.!?…]+$/g,'').toLocaleLowerCase('de');
 const phrases=new Map(Object.entries(window.MENSCHEN_PHRASES).map(([k,v])=>[norm(k),v]));
 // Separable verbs print with a middle dot (ab·stimmen); dictionary keys use a hyphen or the closed form. Try those fallbacks after the exact lookup.
-const lookupWord=(t: string)=>{const n=norm(t);return words[n]??words[n.replace(/·/g,'-')]??words[n.replace(/·/g,'')]};
+const stripWordAccents=(s: string)=>s.normalize('NFD').replace(/[\u0323\u0332]/g,'').normalize('NFC');
+const lookupWord=(t: string)=>{const n=norm(t),s=stripWordAccents(n);return words[n]??words[s]??words[s.replace(/·/g,'-')]??words[s.replace(/·/g,'')]??words[n.replace(/·/g,'-')]??words[n.replace(/·/g,'')]};
 const words=window.MENSCHEN_WORDS,records=window.PRONUNCIATION_INDEX||[];
 const dialog=document.querySelector<HTMLDialogElement>('.meaningPopup')!;
 let current: any,mode: 'word'|'sentence'='word',tapMode: 'word'|'sentence'='word';try{tapMode=(localStorage.getItem('menschen-translation-mode') as 'word'|'sentence')||'word'}catch{}
