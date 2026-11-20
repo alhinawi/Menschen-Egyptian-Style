@@ -395,9 +395,10 @@ body[data-text-selection="true"] .tapWord{cursor:text}
 .selectionMeaningAction[hidden]{display:none!important}
 .meaningGerman,.meaningArabic{white-space:pre-line}
 .meaningPopup{max-height:85dvh;overflow:auto}
-.artText{display:none;position:absolute;z-index:8;color:transparent!important;line-height:1.15;white-space:nowrap;overflow:visible;cursor:text;user-select:text!important;-webkit-user-select:text!important;pointer-events:none;font-family:Georgia,serif}
+.artText{display:block;position:absolute;z-index:8;color:transparent!important;line-height:1.15;white-space:nowrap;overflow:visible;cursor:pointer;pointer-events:auto;font-family:Georgia,serif}
+.artText .tapWord{color:transparent!important}
 .artText::selection{background:#b7d7fa;color:#111}
-body[data-text-selection="true"] .artText{display:block;pointer-events:auto}
+body[data-text-selection="true"] .artText{cursor:text;user-select:text!important;-webkit-user-select:text!important}
 :where(html[data-bookcss]) .page.fidelityScan{padding:0!important}
 :where(html[data-bookcss]) .page.fidelityScan>.scanPage{width:100%;height:100%;padding:0}
 :where(html[data-bookcss]) .page.fidelityScan>.scanPage img{display:block;width:100%;height:100%;object-fit:contain;margin:0}
