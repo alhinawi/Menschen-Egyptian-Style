@@ -1,8 +1,8 @@
 export default function mount(){
 /* Egyptian Arabic fill chunk 14: curated meanings for Arbeitsbuch A1.2 text that had no reviewed translation. */
 Object.assign(window.MENSCHEN_WORDS,{
-"geregnet":"مطر (Partizip من regnen)",
-"geschienen":"أشرقت (Partizip من scheinen)",
+"geregnet":'نزّل مطر',
+"geschienen":'أشرقت',
 "year's":"جزء من New Year's Eve (ليلة رأس السنة)"
 });
 Object.assign(window.MENSCHEN_PHRASES,{
