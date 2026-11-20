@@ -1,3 +1,6 @@
 export default function mount(){
-window.ARTWORK_TEXT={"header.png": [{"id": "ab11l1u0167", "text": "Hallo! Ich bin Nicole ...", "box": [0.435, 0.17, 0.55, 0.7]}], "famous.png": [{"id": "ab11l1u0168", "text": "Philipp Lahm, Deutschland", "box": [0, 0.79, 0.22, 0.2]}, {"id": "ab11l1u0169", "text": "Wolfgang Amadeus Mozart, Österreich", "box": [0.37, 0.79, 0.245, 0.2]}, {"id": "ab11l1u0170", "text": "Prinz Felipe, Spanien", "box": [0.615, 0.79, 0.17, 0.2]}, {"id": "ab11l1u0171", "text": "Martina Hingis, Schweiz", "box": [0.79, 0.79, 0.21, 0.2]}, {"id": "ab11l1u0046", "text": "A Das ist Philipp Lahm. Er kommt aus Deutschland.", "box": [0.19, 0.1, 0.18, 0.58]}]};
+// The old slice images (header.png, famous.png) no longer exist: AB Lektion 1
+// pages render the Nicole header and the famous-people captions as native
+// tappable text. Keep ARTWORK_TEXT empty so no stale regions linger.
+window.ARTWORK_TEXT={};
 }
