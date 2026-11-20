@@ -705,6 +705,11 @@ const sharedMore: Record<string,string> = {
 "☹":"علامة",
 "☺":"علامة",
 "⸚er":"جمع مع أوملاوت",
+"evalll@t-on.ch":"إيميل",
+"franzi.redder@rts.de":"إيميل",
+"gittiweiß@polizei-glückstadt.org":"إيميل",
+"jurj.kulintsev@web.ch":"إيميل",
+
 "4b":"تمرين 4 ب",
 "al":"جزء من كلمة",
 
