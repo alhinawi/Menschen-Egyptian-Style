@@ -69,7 +69,7 @@ function refresh(autoplay=false){
 }
 
 const unsubscribeTranslationLanguage=subscribeTranslationLanguage(()=>{if(current)refresh();});
-function open(word: string|undefined, phrase: string, wanted: 'word'|'sentence'){activeAudio.pause();ttsStop();current={word:word||'',phrase};mode=wanted;refresh();if(!dialog.open)dialog.showModal();play()}
+function open(word: string|undefined, phrase: string, wanted: 'word'|'sentence'){activeAudio.pause();ttsStop();current={word:(word||'').replace(/^[.,:;!?…]+|[.,:;!?…]+$/g,''),phrase};mode=wanted;refresh();if(!dialog.open)dialog.showModal();play()}
 window.openBookMeaning=open;
 meaningStore.connect({retryTranslation(){refresh()},word(){mode='word';refresh(true)},sentence(){mode='sentence';refresh(true)},play,pause:()=>{activeAudio.pause();ttsStop()}});
 window.initMeanings=()=>{
