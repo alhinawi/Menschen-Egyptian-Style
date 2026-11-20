@@ -32,8 +32,7 @@
       "ab-a12-fill-15",
       "ab-a12-fill-16",
       "meanings",
-      "batch-ab12",
-      "translation-cleanup"
+      "batch-ab12"
     ],
     "bodyAttrs": {},
     "reactExercises": true,
@@ -77,8 +76,7 @@
       "meanings",
       "ab-a12-l17-20-data",
       "ab-a12-l17-20-vocab",
-      "ab-a12-l17-20",
-      "translation-cleanup"
+      "ab-a12-l17-20"
     ],
     "bodyAttrs": {},
     "reactExercises": false
@@ -118,8 +116,7 @@
       "ab-a12-fill-15",
       "ab-a12-fill-16",
       "meanings",
-      "ab-a12-l21-24",
-      "translation-cleanup"
+      "ab-a12-l21-24"
     ],
     "bodyAttrs": {},
     "reactExercises": true,
@@ -156,8 +153,7 @@
       "ab-a11-fill-glossary",
       "ab-a11-fill-unit-arabic",
       "meanings",
-      "ab-batch",
-      "translation-cleanup"
+      "ab-batch"
     ],
     "bodyAttrs": {},
     "reactExercises": true,
@@ -194,8 +190,7 @@
       "ab-a11-fill-glossary",
       "ab-a11-fill-unit-arabic",
       "meanings",
-      "ab-l7-9",
-      "translation-cleanup"
+      "ab-l7-9"
     ],
     "bodyAttrs": {},
     "reactExercises": true,
@@ -232,8 +227,7 @@
       "ab-a11-fill-glossary",
       "ab-a11-fill-unit-arabic",
       "meanings",
-      "ab1",
-      "translation-cleanup"
+      "ab1"
     ],
     "bodyAttrs": {},
     "reactExercises": true,
@@ -259,8 +253,7 @@
       "ab-a11-fill-glossary",
       "ab-a11-fill-unit-arabic",
       "meanings",
-      "ab2",
-      "translation-cleanup"
+      "ab2"
     ],
     "bodyAttrs": {},
     "reactExercises": true,
@@ -286,8 +279,7 @@
       "ab-a11-fill-glossary",
       "ab-a11-fill-unit-arabic",
       "meanings",
-      "ab3",
-      "translation-cleanup"
+      "ab3"
     ],
     "bodyAttrs": {},
     "reactExercises": true,
@@ -315,8 +307,7 @@
       "ab-a11-fill-glossary",
       "ab-a11-fill-unit-arabic",
       "meanings",
-      "ab46",
-      "translation-cleanup"
+      "ab46"
     ],
     "bodyAttrs": {},
     "reactExercises": true,
@@ -341,8 +332,7 @@
       "ab-a11-fill-glossary",
       "ab-a11-fill-unit-arabic",
       "meanings",
-      "abm1",
-      "translation-cleanup"
+      "abm1"
     ],
     "bodyAttrs": {},
     "reactExercises": true,
@@ -373,8 +363,7 @@
       "kb-a11-audio-4-pronunciation-index",
       "kb-a11-audio-5-pronunciation-index",
       "meanings",
-      "book",
-      "translation-cleanup"
+      "book"
     ],
     "bodyAttrs": {},
     "reactExercises": true,
@@ -405,8 +394,7 @@
       "gapfill-pronunciation-index",
       "base-vocab",
       "meanings",
-      "kb-a12-l13-16",
-      "translation-cleanup"
+      "kb-a12-l13-16"
     ],
     "bodyAttrs": {},
     "reactExercises": true,
@@ -436,8 +424,7 @@
       "gapfill-pronunciation-index",
       "base-vocab",
       "meanings",
-      "kb-a12-l17-20",
-      "translation-cleanup"
+      "kb-a12-l17-20"
     ],
     "bodyAttrs": {},
     "reactExercises": true,
@@ -482,8 +469,7 @@
       "kb-a11-audio-4-pronunciation-index",
       "kb-a11-audio-5-pronunciation-index",
       "meanings",
-      "batch-l10-12",
-      "translation-cleanup"
+      "batch-l10-12"
     ],
     "bodyAttrs": {},
     "reactExercises": true,
@@ -518,8 +504,7 @@
       "kb-a11-audio-4-pronunciation-index",
       "kb-a11-audio-5-pronunciation-index",
       "meanings",
-      "batch",
-      "translation-cleanup"
+      "batch"
     ],
     "bodyAttrs": {},
     "reactExercises": true,
@@ -553,8 +538,7 @@
       "gapfill-pronunciation-index",
       "base-vocab",
       "meanings",
-      "batch-l21-24",
-      "translation-cleanup"
+      "batch-l21-24"
     ],
     "bodyAttrs": {},
     "reactExercises": true,
@@ -583,8 +567,7 @@
       "kb-a11-audio-4-pronunciation-index",
       "kb-a11-audio-5-pronunciation-index",
       "meanings",
-      "batch-l46",
-      "translation-cleanup"
+      "batch-l46"
     ],
     "bodyAttrs": {},
     "reactExercises": true,
@@ -618,8 +601,7 @@
       "kb-a11-audio-4-pronunciation-index",
       "kb-a11-audio-5-pronunciation-index",
       "meanings",
-      "batch79",
-      "translation-cleanup"
+      "batch79"
     ],
     "bodyAttrs": {},
     "reactExercises": true,
