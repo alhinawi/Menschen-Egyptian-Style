@@ -76,17 +76,73 @@
    "h": 9
   },
   {
-   "text": "neunzehnfünfundachtzigzwanzigsechsunddreißigachtdrei",
+   "text": "neunzehn",
    "x": 202,
    "y": 275,
-   "w": 506,
+   "w": 83.9,
    "h": 22
   },
   {
-   "text": "siebenundsiebzigsechzehnneundreiundzwanzig",
+   "text": "fünfundachtzig",
+   "x": 285.9,
+   "y": 275,
+   "w": 127.9,
+   "h": 22
+  },
+  {
+   "text": "zwanzig",
+   "x": 413.8,
+   "y": 275,
+   "w": 75.0,
+   "h": 22
+  },
+  {
+   "text": "sechsunddreißig",
+   "x": 488.8,
+   "y": 275,
+   "w": 149.4,
+   "h": 22
+  },
+  {
+   "text": "acht",
+   "x": 638.3,
+   "y": 275,
+   "w": 37.2,
+   "h": 22
+  },
+  {
+   "text": "drei",
+   "x": 675.5,
+   "y": 275,
+   "w": 32.5,
+   "h": 22
+  },
+  {
+   "text": "siebenundsiebzig",
    "x": 203,
    "y": 301,
-   "w": 410,
+   "w": 150.5,
+   "h": 22
+  },
+  {
+   "text": "sechzehn",
+   "x": 353.5,
+   "y": 301,
+   "w": 82.2,
+   "h": 22
+  },
+  {
+   "text": "neun",
+   "x": 435.7,
+   "y": 301,
+   "w": 41.1,
+   "h": 22
+  },
+  {
+   "text": "dreiundzwanzig",
+   "x": 476.8,
+   "y": 301,
+   "w": 136.2,
    "h": 22
   },
   {
