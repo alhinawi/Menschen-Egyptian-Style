@@ -38,7 +38,12 @@ function Inner({data}:{data:NativePage}){
  const W=data.w,H=data.h;
  const pos=(x:number,y:number,w:number,h:number):CSSProperties=>({left:x/W*100+'%',top:y/H*100+'%',width:w/W*100+'%',height:h/H*100+'%'});
  usePageReset(data.page,key,()=>{setV({});setRes({})});
- const set=(id:string,val:string)=>{const n={...v,[id]:val};setV(n);try{localStorage.setItem(key,JSON.stringify(n))}catch{}};
+ const set=(id:string,val:string)=>{const n={...v,[id]:val};setV(n);try{localStorage.setItem(key,JSON.stringify(n))}catch{}
+  // Keep the numbers exercise's feedback in sync after its first check.
+  // Do not grade untouched exercises or discard the other fields' results.
+  const field=String(data.page)==='15'?data.fields.find(f=>f.id===id&&f.group==='task4a'):undefined;
+  if(field?.answer!==undefined)setRes(r=>r[id]===undefined?r:{...r,[id]:field.answer!.split('|').some(a=>norm(a)===norm(val))});
+ };
  const groups=[...new Set(data.fields.filter(f=>f.answer!==undefined).map(f=>f.group))];
  const grade=(g:string)=>{const n:Record<string,boolean>={};for(const f of data.fields.filter(f=>f.group===g&&f.answer!==undefined)){const cur=f.kind==='radio'?String(v[f.name||f.id]===f.value):f.kind==='checkbox'?String(v[f.id]==='true'):norm(v[f.id]??(f as any).pre??'');n[f.id]=f.answer!.split('|').some(a=>norm(a)===cur)||(f.kind==='text'&&!!(f as any).kw&&(cur.length>0)&&((f as any).kw as string[]).every(k=>k.split('|').some(x=>cur.includes(norm(x)))))}setRes(r=>({...r,...n}))};
  const play=(id:string)=>{const a=players.current[id];if(a){Object.values(players.current).forEach(o=>{if(o&&o!==a)o.pause()});a.currentTime=0;void a.play()}};
@@ -108,7 +113,7 @@ function Inner({data}:{data:NativePage}){
     <div className="nkbCheck nkbCheckLm" style={{left:m.check[0]/W*100+'%',top:m.check[1]/H*100+'%'}}><CheckButton onClick={()=>setRes(r=>({...r,[m.id]:m.correct.every(id=>v[m.id+'-'+id]==='1')&&m.spots.every(s=>(v[m.id+'-'+s.id]==='1')===m.correct.includes(s.id))}))}></CheckButton><output>{res[m.id]===undefined?'':res[m.id]?'✓ Richtig!':'Noch einmal'}</output></div>
    </div>)}
    {String(data.page)==='48'&&<div style={{...pos(296,223,150,34),position:'absolute',zIndex:9,pointerEvents:'none'}}><div className="nkbCheck" style={{position:'relative',pointerEvents:'auto'}}><CheckButton onClick={()=>grade('task8a')}></CheckButton><output>{data.fields.filter(f=>f.group==='task8a'&&f.answer!==undefined).every(f=>res[f.id]!==undefined)?(data.fields.filter(f=>f.group==='task8a'&&f.answer!==undefined).every(f=>res[f.id])?'\u2713 Richtig!':'Noch einmal'):''}</output></div></div>}
-   {groups.filter(g=>!(String(data.page)==='48'&&g==='task8a')).map(g=><div key={g} className={"nkbCheck"+(data.compact?.includes(g)?" nkbCompact":"")} style={checkPos(g)}><CheckButton onClick={()=>grade(g)}></CheckButton><output>{data.fields.filter(f=>f.group===g&&f.answer!==undefined).every(f=>res[f.id]!==undefined)?(data.fields.filter(f=>f.group===g&&f.answer!==undefined).every(f=>res[f.id])?'✓ Richtig!':'Noch einmal'):''}</output></div>)}
+   {groups.filter(g=>!(String(data.page)==='48'&&g==='task8a')).map(g=>{const fields=data.fields.filter(f=>f.group===g&&f.answer!==undefined);const checked=fields.every(f=>res[f.id]!==undefined);const passed=fields.filter(f=>res[f.id]).length;const numbers=String(data.page)==='15'&&g==='task4a';return <div key={g} className={"nkbCheck"+(data.compact?.includes(g)?" nkbCompact":"")+(numbers?" nkbNumberCheck":"")} style={checkPos(g)}><CheckButton onClick={()=>grade(g)}></CheckButton><output aria-live={numbers?'polite':undefined}>{checked?(numbers?(passed===fields.length?'✓ 7 / 7 richtig':passed+' / '+fields.length+' richtig · Noch einmal'):(passed===fields.length?'✓ Richtig!':'Noch einmal')):''}</output></div>})}
   </div>
   {data.audio.length>0&&<div className="nkbAudio">{data.audio.map(a=><label key={a.id}><span>{a.label||a.id}</span><audio ref={el=>{players.current[a.id]=el}} controls preload="none" src={a.src}/></label>)}</div>}
  </div>;
