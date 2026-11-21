@@ -9,6 +9,10 @@
     // repo-connected deployment of the same app.
     "ALLOWED_ORIGINS": "https://menscheny.pages.dev,https://germani.pages.dev,http://localhost:5173,http://localhost:4177"
   },
+  "durable_objects": {
+    "bindings": [{ "name": "PRESENCE", "class_name": "PagePresence" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["PagePresence"] }],
   "d1_databases": [
     {
       "binding": "DB",

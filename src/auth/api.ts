@@ -34,6 +34,8 @@ export interface ApiUser {
   owner?: boolean;
 }
 
+export function apiBase(): string { return BASE }
+
 export function getToken(): string | null {
   try {
     return localStorage.getItem(TOKEN_KEY);
