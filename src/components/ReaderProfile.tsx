@@ -109,8 +109,8 @@ export function ReaderProfile() {
             </span>
           </button>
           {auth.user?.owner && (
-            <a className="profileRow profileChoice profileBoardLink" href="teacher.html">
-              <span>{t('لوحة الطلاب')}</span>
+            <a className="profileRow profileChoice profileBoardLink" href="/teacher">
+              <span>{t('لوحة التحكم')}</span>
               <span className="profileState" aria-hidden="true">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M3 13h4v8H3zM10 9h4v12h-4zM17 5h4v16h-4z" />
