@@ -11,6 +11,7 @@ import {QuizContext, createQuizStore} from './exercises/QuizState';
 import {ReaderContext, createReaderStore} from './components/ReaderControls';
 import {OriginalViewer} from './components/OriginalViewer';
 import {BookMarkup} from './components/BookMarkup';
+import {PresenceCursors} from './presence/PresenceCursors';
 import {FilmMedia, prepareFilmMedia} from './components/FilmMedia';
 import {mountLesson} from './adapters/mountLesson';
 import {ReaderThemes, CrossBookNavigation} from './components/ReaderThemes';
@@ -140,5 +141,5 @@ export default function App({initial}: {initial: LoadedLesson}) {
     cleanupRef.current = cleanup;
     return cleanup;
   }, [initializers]);
-  return <ReaderContext.Provider value={reader}><AudioMarkerButtons/><ReaderAudioPlayers/>{config.reader&&<ReaderPageReset key={config.slug} onReset={page=>{persistence.resetPage(page);quizzes.resetPage(page)}}/>}{config.slug === 'ab-a12-l17-20' && <ScanDialogs/>}{config.initializers.includes('meanings') && <MeaningDialog key={'m' + config.slug}/>}<PersistenceContext.Provider value={persistence}><QuizContext.Provider value={quizzes}><div key={config.slug} style={{display: 'contents'}} onInputCapture={e => persistence.input(e.target as HTMLInputElement)}>{!config.reader ? <OriginalViewer><BookMarkup nodes={film.nodes} quizEnabled={config.reactExercises}/></OriginalViewer> : <BookMarkup nodes={film.nodes} quizEnabled={config.reactExercises}/>}</div></QuizContext.Provider></PersistenceContext.Provider><FilmMedia key={config.slug} media={film.media}/>{config.themes && <><ReaderThemes key={'t' + config.slug}/><CrossBookNavigation key={'c' + config.slug}/></>}{config.reader && <><LibraryNav slug={config.slug}/><LessonHop slug={config.slug}/></>}</ReaderContext.Provider>;
+  return <ReaderContext.Provider value={reader}><PresenceCursors key={'presence-' + config.slug}/><AudioMarkerButtons/><ReaderAudioPlayers/>{config.reader&&<ReaderPageReset key={config.slug} onReset={page=>{persistence.resetPage(page);quizzes.resetPage(page)}}/>}{config.slug === 'ab-a12-l17-20' && <ScanDialogs/>}{config.initializers.includes('meanings') && <MeaningDialog key={'m' + config.slug}/>}<PersistenceContext.Provider value={persistence}><QuizContext.Provider value={quizzes}><div key={config.slug} style={{display: 'contents'}} onInputCapture={e => persistence.input(e.target as HTMLInputElement)}>{!config.reader ? <OriginalViewer><BookMarkup nodes={film.nodes} quizEnabled={config.reactExercises}/></OriginalViewer> : <BookMarkup nodes={film.nodes} quizEnabled={config.reactExercises}/>}</div></QuizContext.Provider></PersistenceContext.Provider><FilmMedia key={config.slug} media={film.media}/>{config.themes && <><ReaderThemes key={'t' + config.slug}/><CrossBookNavigation key={'c' + config.slug}/></>}{config.reader && <><LibraryNav slug={config.slug}/><LessonHop slug={config.slug}/></>}</ReaderContext.Provider>;
 }
