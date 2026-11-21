@@ -325,8 +325,8 @@ app.put('/api/progress', async (c) => {
 // Points = checked-off exercises (done-* flags), denormalized onto
 // users.score at every progress write (migration 0006 + one-time backfill).
 // Public top 10 from a bounded, indexed read; the signed-in learner also
-// gets their own rank, even outside the top 10. Names are privacy-safe:
-// first name plus the first letter of the last name part.
+// gets their own rank, even outside the top 10. Names show in full (owner's
+// choice, 2026-11-21; was first name + last initial).
 const TOP_LIMIT = 10
 // Extra row so the pinned owner can be lifted out of the slice without
 // dropping the 10th place.
