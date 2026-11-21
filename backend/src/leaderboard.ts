@@ -92,7 +92,10 @@ export function buildTop(rows: LeaderboardAccount[], viewerId: number | null, li
     id: r.id,
     name: r === owner ? r.name : displayName(r.name),
     points: r === owner ? Math.max(OWNER_DISPLAY_BASE, r.score) : r.score,
-    avatar: r === owner ? r.avatar : null,
+    // Every learner's chosen photo shows on the board (demo starters always
+    // had photos, and the owner wants real students' photos visible too);
+    // anonymous students keep the grey silhouette on the client.
+    avatar: r.avatar ?? null,
     pinned: r === owner,
     rank: i + 1,
   }))
