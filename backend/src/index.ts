@@ -6,6 +6,7 @@ import { hashPassword, newToken, sha256Hex, verifyPassword } from './crypto'
 import { asBody, email, str, ValidationError } from './validate'
 import { finishGoogleLogin, googleConfigured, startGoogleLogin } from './google'
 import { debugOutboxOn, sendVerificationEmail } from './email'
+import { PagePresence } from './presence'
 
 type Env = {
   Bindings: Cloudflare.Env & { RESEND_API_KEY?: string; EMAIL_FROM?: string; EMAIL_DEBUG_OUTBOX?: string }
@@ -522,4 +523,17 @@ app.get('/api/admin/students/:id', async (c) => {
   return c.json({ user: publicUser(u), last_activity: p?.updated_at ?? null, summary })
 })
 
+// Live presence: one in-memory Durable Object per book page. WebSocket only,
+// no D1, no storage; the client sends the name/avatar already public on the
+// honor list and the room relays cursors. Offline builds never call this.
+app.get('/api/presence', (c) => {
+  const origin = siteOrigin(c.env, c.req.header('origin'))
+  if (!origin) return c.json({ error: 'forbidden_origin' }, 403)
+  const room = c.req.query('room') ?? ''
+  if (!/^[a-z0-9][a-z0-9#._-]{0,79}$/i.test(room)) return c.json({ error: 'bad_room' }, 400)
+  const id = c.env.PRESENCE.idFromName(room.toLowerCase())
+  return c.env.PRESENCE.get(id).fetch(c.req.raw)
+})
+
 export default app
+export { PagePresence }
