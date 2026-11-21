@@ -30,6 +30,8 @@ export interface ApiUser {
   google_avatar?: string | null;
   /** false until an email/password sign-up confirms the inbox via the link */
   email_verified?: boolean;
+  /** true for the site owner accounts (server-side OWNER_EMAILS check) */
+  owner?: boolean;
 }
 
 export function getToken(): string | null {
@@ -147,6 +149,56 @@ export function googleLoginUrl(useAnotherAccount = false): string {
 
 export function resendVerification(): Promise<{ message: string }> {
   return req('/auth/resend-verification', { method: 'POST', auth: true });
+}
+
+// ---------- teacher dashboard (owner only) ----------
+
+export interface AdminOverview {
+  students: number;
+  verified: number;
+  total_points: number;
+  active_7d: number;
+}
+
+export interface AdminStudent {
+  id: number;
+  name: string;
+  email: string;
+  created_at: string;
+  email_verified: number;
+  avatar: string | null;
+  score: number;
+  last_activity: string | null;
+}
+
+export interface AdminLessonSummary {
+  lesson: string;
+  page: number | null;
+  exercises_done: number;
+  answered_fields: number;
+}
+
+export interface AdminStudentDetail {
+  user: ApiUser;
+  last_activity: string | null;
+  summary: {
+    lessons_touched: number;
+    exercises_done: number;
+    answered_fields: number;
+    lessons: AdminLessonSummary[];
+  } | null;
+}
+
+export function getAdminOverview(): Promise<AdminOverview> {
+  return req('/admin/overview', { auth: true });
+}
+
+export function getAdminStudents(after = 0, limit = 50): Promise<{ students: AdminStudent[] }> {
+  return req(`/admin/students?after=${after}&limit=${limit}`, { auth: true });
+}
+
+export function getAdminStudent(id: number): Promise<AdminStudentDetail> {
+  return req(`/admin/students/${id}`, { auth: true });
 }
 
 /**
