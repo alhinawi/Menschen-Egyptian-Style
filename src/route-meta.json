@@ -154,5 +154,11 @@
   "ogTitle": "Menschen · Originalbuch · Kursbuch A1.1",
   "description": "The printed Menschen pages, scanned - leaf through every page of the original book.",
   "ogImage": "assets/og-original.png"
+ },
+ "teacher.html": {
+  "title": "Menschen · لوحة تحكم الطلاب",
+  "ogTitle": "Menschen · Teacher Dashboard",
+  "description": "Owner-only dashboard: registered students and their progress in the interactive Menschen book.",
+  "ogImage": "assets/og.png"
  }
 }

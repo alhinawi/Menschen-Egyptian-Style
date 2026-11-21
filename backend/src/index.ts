@@ -1,4 +1,5 @@
 import { OWNER_DISPLAY_BASE, OWNER_EMAILS, buildTop, isVerifiedOwner, pickOwner, pointsOf, publicTop, type BoardEntry, type LeaderboardAccount } from './leaderboard';
+import { summarizeProgress } from './admin';
 import { Hono, type MiddlewareHandler } from 'hono'
 import { cors } from 'hono/cors'
 import { hashPassword, newToken, sha256Hex, verifyPassword } from './crypto'
@@ -69,7 +70,7 @@ async function saveProgress(db: D1Database, userId: number, data: string, now: s
 }
 
 type UserRow = { id: number; name: string; email: string; created_at: string; avatar: string | null; google_avatar: string | null; email_verified: number }
-const publicUser = (u: UserRow) => ({ id: u.id, name: u.name, email: u.email, created_at: u.created_at, avatar: u.avatar ?? null, google_avatar: u.google_avatar ?? null, email_verified: !!u.email_verified })
+const publicUser = (u: UserRow) => ({ id: u.id, name: u.name, email: u.email, created_at: u.created_at, avatar: u.avatar ?? null, google_avatar: u.google_avatar ?? null, email_verified: !!u.email_verified, owner: isVerifiedOwner(u) })
 const USER_COLS = 'id, name, email, created_at, avatar, google_avatar, email_verified'
 
 app.get('/api/ping', (c) => c.json({ ok: true, app: 'menscheny-api' }))
@@ -342,7 +343,9 @@ function dropLeaderboardCache(c: { executionCtx: { waitUntil(p: Promise<unknown>
 // Bounded reads only: the verified owner rows (2 by construction) and the
 // indexed top slice. Never joins or parses progress blobs.
 async function fetchTopRows(db: D1Database): Promise<LeaderboardAccount[]> {
-  const COLS = 'id, name, email, email_verified, avatar, score'
+  // COALESCE: a Google sign-in who never picked a photo still has
+  // google_avatar; the board shows whichever photo the account holds.
+  const COLS = 'id, name, email, email_verified, COALESCE(avatar, google_avatar) AS avatar, score'
   const [owners, top] = await db.batch([
     db.prepare(`SELECT ${COLS} FROM users WHERE email_verified = 1 AND lower(email) IN (?, ?)`).bind(...OWNER_EMAILS),
     db.prepare(`SELECT ${COLS} FROM users ORDER BY score DESC, id ASC LIMIT ?`).bind(TOP_QUERY_LIMIT),
@@ -383,7 +386,7 @@ app.get('/api/leaderboard', async (c) => {
   let viewer: LeaderboardAccount | null = null
   if (viewerId !== null) {
     viewer =
-      (await c.env.DB.prepare('SELECT id, name, email, email_verified, avatar, score FROM users WHERE id = ?')
+      (await c.env.DB.prepare('SELECT id, name, email, email_verified, COALESCE(avatar, google_avatar) AS avatar, score FROM users WHERE id = ?')
         .bind(viewerId)
         .first<LeaderboardAccount>()) ?? null
   }
@@ -428,6 +431,95 @@ app.get('/api/leaderboard', async (c) => {
   }
 
   return c.json({ top: publicTop(payload.top), me })
+})
+
+// ---------- teacher dashboard (owner only) ----------
+// Owner-only views over the accounts/progress the site already stores.
+// Nothing here writes; the dashboard is read-only. Queries stay bounded
+// (indexed top-ups, PK-ordered pages, one progress blob per detail view),
+// and the students list is edge-cached for a few seconds per owner token so
+// re-opening the panel does not burn D1 reads.
+app.use('/api/admin/*', auth)
+app.use('/api/admin/*', async (c, next) => {
+  const u = await c.env.DB.prepare('SELECT email, email_verified FROM users WHERE id = ?')
+    .bind(c.get('userId'))
+    .first<{ email: string; email_verified: number }>()
+  if (!u || !isVerifiedOwner(u)) return c.json({ error: 'owner_only' }, 403)
+  await next()
+})
+
+const ADMIN_CACHE_TTL_S = 30
+const adminCacheKey = async (token: string, what: string) =>
+  `https://menscheny-api.internal/__admin_${await sha256Hex(token)}_${what}`
+
+app.get('/api/admin/overview', async (c) => {
+  const weekAgo = new Date(Date.now() - 7 * 86_400_000).toISOString()
+  const [totals, active] = await c.env.DB.batch([
+    c.env.DB.prepare(
+      'SELECT COUNT(*) AS students, SUM(CASE WHEN email_verified = 1 THEN 1 ELSE 0 END) AS verified, COALESCE(SUM(score), 0) AS total_points FROM users',
+    ),
+    c.env.DB.prepare('SELECT COUNT(*) AS active FROM progress WHERE updated_at >= ?').bind(weekAgo),
+  ])
+  const t = (totals.results?.[0] ?? {}) as { students?: number; verified?: number; total_points?: number }
+  const a = (active.results?.[0] ?? {}) as { active?: number }
+  return c.json({ students: t.students ?? 0, verified: t.verified ?? 0, total_points: t.total_points ?? 0, active_7d: a.active ?? 0 })
+})
+
+type AdminStudentRow = {
+  id: number
+  name: string
+  email: string
+  created_at: string
+  email_verified: number
+  avatar: string | null
+  score: number
+  last_activity: string | null
+}
+
+app.get('/api/admin/students', async (c) => {
+  const url = new URL(c.req.url)
+  const after = Math.max(0, Number(url.searchParams.get('after') ?? '0') || 0)
+  const limit = Math.min(100, Math.max(1, Number(url.searchParams.get('limit') ?? '50') || 50))
+  const token = /^Bearer (.+)$/.exec(c.req.header('Authorization') ?? '')![1]
+  const cacheKey = await adminCacheKey(token, `students_${after}_${limit}`)
+  const hit = await caches.default.match(cacheKey)
+  if (hit) {
+    return new Response(hit.body, { headers: { 'content-type': 'application/json', 'cache-control': `private, max-age=${ADMIN_CACHE_TTL_S}` } })
+  }
+  // PK-ordered keyset pagination: reads at most `limit` rows per call.
+  const rows = await c.env.DB.prepare(
+    `SELECT u.id, u.name, u.email, u.created_at, u.email_verified,
+            COALESCE(u.avatar, u.google_avatar) AS avatar, u.score, p.updated_at AS last_activity
+     FROM users u LEFT JOIN progress p ON p.user_id = u.id
+     WHERE u.id > ? ORDER BY u.id ASC LIMIT ?`,
+  )
+    .bind(after, limit)
+    .all<AdminStudentRow>()
+  const payload = JSON.stringify({ students: rows.results ?? [] })
+  c.executionCtx.waitUntil(
+    caches.default.put(
+      cacheKey,
+      new Response(payload, {
+        headers: { 'content-type': 'application/json', 'cache-control': `private, max-age=${ADMIN_CACHE_TTL_S}` },
+      }),
+    ),
+  )
+  return c.json({ students: rows.results ?? [] })
+})
+
+app.get('/api/admin/students/:id', async (c) => {
+  const id = Number(c.req.param('id'))
+  if (!Number.isInteger(id) || id <= 0) return c.json({ error: 'not_found' }, 404)
+  const [user, prog] = await c.env.DB.batch([
+    c.env.DB.prepare(`SELECT ${USER_COLS} FROM users WHERE id = ?`).bind(id),
+    c.env.DB.prepare('SELECT data, updated_at FROM progress WHERE user_id = ?').bind(id),
+  ])
+  const u = (user.results?.[0] as unknown as UserRow | undefined) ?? undefined
+  if (!u) return c.json({ error: 'not_found' }, 404)
+  const p = (prog.results?.[0] as unknown as { data: string; updated_at: string } | undefined) ?? undefined
+  // Counts and current pages only; written answers stay in the blob.
+  const summary = p ? summarizeProgress(p.data) : null
+  return c.json({ user: publicUser(u), last_activity: p?.updated_at ?? null, summary })
 })
 
 export default app

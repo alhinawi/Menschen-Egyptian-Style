@@ -16,6 +16,13 @@ import './reader-fonts.css';
 
 async function start() {
   const file = location.pathname.split('/').pop() || 'index.html';
+  // The teacher dashboard is its own page: no lesson loads here.
+  if (file === 'teacher.html') {
+    applyRouteMeta('teacher.html');
+    const {default: TeacherDashboard} = await import('./teacher/TeacherDashboard');
+    createRoot(document.getElementById('react-book-root')!).render(<TeacherDashboard/>);
+    return;
+  }
   const normalizedFile = configs[file] ? file : configs[file + '.html'] ? file + '.html' : 'index.html';
   applyRouteMeta(normalizedFile);
   // A coordinate canvas must not paint once with a wider device fallback.
