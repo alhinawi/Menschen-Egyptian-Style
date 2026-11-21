@@ -72,7 +72,17 @@ export function LibraryNav({slug}: {slug: string}) {
     const jump = document.querySelector<HTMLSelectElement>('#pageJump');
     if (!jump) return;
     setPageIndex(Number(jump.value) || 0);
-    const sync = () => setPageIndex(Number(jump.value) || 0);
+    const sync = () => {
+      const index=Number(jump.value)||0;
+      setPageIndex(index);
+      if(!mod)return;
+      const token=document.querySelectorAll<HTMLElement>('.page')[index]?.dataset.page||'';
+      const lesson=lessonForPage(mod,Number(token));
+      const book=`${mod.book==='kb'?'Kursbuch':'Arbeitsbuch'} ${mod.level}`;
+      // The home route names the book, never the entire site as lesson 1.
+      document.title=slug==='index'?'Menschen Egyptian Style · Kursbuch A1.1':
+        `${lesson?.label ?? book} · Menschen Egyptian Style${lesson?' · '+book:''}`;
+    };
     sync();
     window.menschenBook?.on?.('flip', sync);
     jump.addEventListener('change', sync);
