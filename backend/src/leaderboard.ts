@@ -85,7 +85,9 @@ export function pickOwner(rows: LeaderboardAccount[], viewerId: number | null): 
 // the top slice and the rank count.
 export function buildTop(rows: LeaderboardAccount[], viewerId: number | null, limit = 10): BoardEntry[] {
   const owner = pickOwner(rows, viewerId)
-  const rest = rows.filter((r) => r !== owner).sort((a, b) => b.score - a.score || a.id - b.id)
+  // Only the pinned owner row shows: a second verified owner account (the
+  // owner's other login) must not appear again at its real score.
+  const rest = rows.filter((r) => r !== owner && !isVerifiedOwner(r)).sort((a, b) => b.score - a.score || a.id - b.id)
   const board = [...(owner ? [owner] : []), ...rest].slice(0, limit)
   return board.map((r, i) => ({
     id: r.id,
