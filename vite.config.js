@@ -7,8 +7,8 @@ import path from 'node:path';
 // legacy URL with its own title/OG meta stamped in, so crawlers that run no
 // JS still get the right preview and old links keep working.
 const ROOT = {
-  title: 'Menschen · Lektion 1',
-  ogTitle: 'Menschen. - The Interactive German Coursebook',
+  title: 'Menschen Egyptian Style · Kursbuch A1.1',
+  ogTitle: 'Menschen Egyptian Style · Kursbuch A1.1',
   description: 'Flip real pages, hear the original audio, and tap any word for its meaning in Egyptian Arabic. A1.1 + A1.2 · 24 lessons.',
   ogImage: 'assets/og.png',
   url: 'https://menscheny.pages.dev/',
