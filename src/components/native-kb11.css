@@ -258,3 +258,9 @@
 .nkbWritePanel textarea.nkbLine1{min-height:42px;max-height:220px;overflow:auto}
 .nkbWritePanel :is(input,textarea):focus-visible{border-color:#a98b49;outline:2px solid #b99a5440;outline-offset:1px}
 @media(max-width:500px){.nkbWritePanel{width:calc(100% - 24px)!important;padding:12px}.nkbWritePanel h3{font-size:14px}}
+
+/* Equal-weight feedback for page 15 number blanks, readable at fit-to-phone size. */
+.nkb[data-native-page="15"] .nkbCanvas .nkbUl[data-native-field^="zahl"].ok{border-bottom:2px solid #26764c!important;background:#e4f4e8cc!important;color:#175c36!important}
+.nkb[data-native-page="15"] .nkbCanvas .nkbUl[data-native-field^="zahl"].bad{background:#fff0edcc!important;color:#94291e!important}
+.nkb[data-native-page="15"] .nkbCanvas .nkbNumberCheck{flex-direction:column;align-items:flex-start;gap:2px;max-width:17%;font-size:1.5cqw}
+.nkb[data-native-page="15"] .nkbNumberCheck output{padding:0;white-space:normal}
