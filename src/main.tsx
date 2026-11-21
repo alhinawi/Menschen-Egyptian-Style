@@ -16,8 +16,9 @@ import './reader-fonts.css';
 
 async function start() {
   const file = location.pathname.split('/').pop() || 'index.html';
-  // The teacher dashboard is its own page: no lesson loads here.
-  if (file === 'teacher.html') {
+  // The teacher dashboard is its own page: no lesson loads here. Cloudflare
+  // Pages 308-redirects /teacher.html to the pretty /teacher URL, so match both.
+  if (file === 'teacher.html' || file === 'teacher') {
     applyRouteMeta('teacher.html');
     const {default: TeacherDashboard} = await import('./teacher/TeacherDashboard');
     createRoot(document.getElementById('react-book-root')!).render(<TeacherDashboard/>);
