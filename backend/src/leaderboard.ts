@@ -31,11 +31,10 @@ export type BoardEntry = {
   rank: number
 }
 
+// Full names on the board: the owner asked for them (2026-11-21), replacing
+// the earlier privacy abbreviation ("Mohamed S.").
 function displayName(full: string): string {
-  const parts = full.trim().split(/\s+/).filter(Boolean)
-  if (parts.length === 0) return 'Learner'
-  if (parts.length === 1) return parts[0]
-  return `${parts[0]} ${[...parts[parts.length - 1]][0]}.`
+  return full.trim() || 'Learner'
 }
 
 // Points = checked-off exercises (done-* flags) across the learner's synced
