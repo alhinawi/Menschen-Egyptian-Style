@@ -38,12 +38,24 @@ to_secs() {
 }
 
 # Install the APK (over 1 GB, takes a few minutes)
-adb install app.apk | tee evidence/install.txt
+adb install --no-incremental app.apk | tee evidence/install.txt
+adb shell dumpsys package com.alhinawi.menschen | grep -iE "incremental|isLoading" | tee evidence/incremental-state.txt || true
+sleep 10
 adb shell dumpsys package com.alhinawi.menschen | grep -E 'versionName|versionCode|firstInstallTime' | tee evidence/package.txt
 
 # Launch, let the WebView load the bundled site
 adb shell monkey -p com.alhinawi.menschen -c android.intent.category.LAUNCHER 1
 sleep 25
+adb root >/dev/null 2>&1 || true
+adb shell uiautomator dump /sdcard/uih.xml >/dev/null 2>&1
+adb shell cat /sdcard/uih.xml > evidence/ui-first.xml
+if grep -q 'Not found' evidence/ui-first.xml || ! grep -q 'Open book' evidence/ui-first.xml; then
+  echo "FIRST LOAD NOT CLEAN (Not found or no cover); relaunching once" | tee -a evidence/first-load.txt
+  adb exec-out screencap -p > evidence/01a-first-load-bad.png
+  adb shell am force-stop com.alhinawi.menschen
+  adb shell monkey -p com.alhinawi.menschen -c android.intent.category.LAUNCHER 1
+  sleep 20
+fi
 adb exec-out screencap -p > evidence/01-home.png
 adb shell uiautomator dump /sdcard/ui.xml
 adb shell cat /sdcard/ui.xml > evidence/ui-home.xml
@@ -141,3 +153,4 @@ adb shell ping -c1 -W2 8.8.8.8 | tee evidence/offline-ping.txt || true
 # WebView / media errors
 adb logcat -d > evidence/logcat.txt
 grep -iE 'menschen|chromium|WebView|MediaPlayer|AudioTrack|AudioFlinger|cr_|FATAL' evidence/logcat.txt | tail -100 > evidence/logcat-filtered.txt || true
+adb shell "ls /data/anr 2>/dev/null; cat /data/anr/anr_* 2>/dev/null | head -400" > evidence/anr-traces.txt 2>&1 || true
