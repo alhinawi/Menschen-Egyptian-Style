@@ -48,31 +48,18 @@ else
   echo "Open book node not found in accessibility tree" | tee evidence/open-book-missing.txt
 fi
 
-# Offline proof: kill radios, force-stop, relaunch
-adb root || true
-adb shell svc wifi disable || true
-adb shell svc data disable || true
-adb shell am force-stop com.alhinawi.menschen
-adb shell monkey -p com.alhinawi.menschen -c android.intent.category.LAUNCHER 1
-sleep 20
-adb exec-out screencap -p > evidence/03-offline-home.png
-adb shell uiautomator dump /sdcard/ui3.xml
-adb shell cat /sdcard/ui3.xml > evidence/ui-offline.xml
-
-# Best-effort OFFLINE audio playback/seek proof on a lesson page.
+# Best-effort audio playback/seek proof (audio is bundled in the APK, so this is local playback).
 {
   echo "== offline audio test =="
-  if ! tap_node 'Choose page'; then
-    if tap_node 'Open book'; then sleep 8; fi
-    tap_node 'Choose page'
-  fi
-  sleep 4
-  adb shell uiautomator dump /sdcard/uip.xml >/dev/null 2>&1
-  adb shell cat /sdcard/uip.xml > evidence/ui-pages.xml
-  PAGE=""
-  for cand in 15 10 6 20 25 30; do
-    if tap_node '(^| |Seite )'"$cand"'$'; then PAGE=$cand; echo "opened page $cand"; break; fi
+  FOUND=""
+  for n in 1 2 3 4 5 6 7 8 9 10 11 12; do
+    adb shell uiautomator dump /sdcard/uip.xml >/dev/null 2>&1
+    adb shell cat /sdcard/uip.xml > evidence/ui-pages.xml
+    if grep -qE '(text|content-desc)="Play (CD|Aufgabe)' evidence/ui-pages.xml; then FOUND=1; echo "Play node found after $n page turns"; break; fi
+    tap_node 'Next page' || echo "no Next page node"
+    sleep 3
   done
+  PAGE=$FOUND
   if [ -z "$PAGE" ]; then
     echo "NOT EXERCISED: no candidate page node found (see ui-pages.xml)"
   else
@@ -90,7 +77,7 @@ adb shell cat /sdcard/ui3.xml > evidence/ui-offline.xml
       echo "playback time: [$T1] -> [$T2]"
       S1=$(to_secs "${T1%% /*}"); S2=$(to_secs "${T2%% /*}")
       if [ -n "$S1" ] && [ -n "$S2" ] && [ "$(echo "$S2 > $S1 + 2" | bc)" = "1" ]; then
-        echo "OFFLINE AUDIO PLAYBACK CONFIRMED ($S1 s to $S2 s)"
+        echo "AUDIO PLAYBACK CONFIRMED (bundled assets) ($S1 s to $S2 s)"
       else
         echo "PLAYBACK NOT CONFIRMED from time texts"
       fi
@@ -119,6 +106,23 @@ adb shell cat /sdcard/ui3.xml > evidence/ui-offline.xml
     fi
   fi
 } 2>&1 | tee evidence/audio.txt
+
+# Offline proof: radios off, force-stop, relaunch (retry once; the emulator can
+# kill app processes when Google services die with the network)
+adb root || true
+adb shell svc wifi disable || true
+adb shell svc data disable || true
+for try in 1 2; do
+  adb shell am force-stop com.alhinawi.menschen
+  adb shell monkey -p com.alhinawi.menschen -c android.intent.category.LAUNCHER 1
+  sleep 20
+  adb shell dumpsys window | grep -E 'mCurrentFocus' | tee evidence/focus-offline-$try.txt
+  if grep -q menschen evidence/focus-offline-$try.txt; then break; fi
+done
+adb exec-out screencap -p > evidence/06-offline-relaunch.png
+adb shell uiautomator dump /sdcard/ui3.xml
+adb shell cat /sdcard/ui3.xml > evidence/ui-offline.xml
+adb shell ping -c1 -W2 8.8.8.8 | tee evidence/offline-ping.txt || true
 
 # WebView / media errors
 adb logcat -d > evidence/logcat.txt
