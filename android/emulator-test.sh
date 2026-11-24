@@ -12,6 +12,16 @@ adb shell input keyevent 82
 tap_node() {
   adb shell uiautomator dump /sdcard/uiw.xml >/dev/null 2>&1
   adb shell cat /sdcard/uiw.xml > evidence/ui-work.xml
+  # The software-rendered emulator can show "Menschen isn't responding" while the
+  # WebView loads; record it, press Wait and re-dump (an ANR is a finding too).
+  if grep -q "isn't responding" evidence/ui-work.xml; then
+    echo "ANR dialog seen; pressing Wait" | tee -a evidence/anr.txt
+    adb exec-out screencap -p > evidence/anr-$(date +%s).png
+    adb shell input tap 320 1360
+    sleep 8
+    adb shell uiautomator dump /sdcard/uiw.xml >/dev/null 2>&1
+    adb shell cat /sdcard/uiw.xml > evidence/ui-work.xml
+  fi
   B=$(grep -oE '(text|content-desc)="[^"]*'"$1"'[^"]*"[^>]*bounds="\[[0-9]+,[0-9]+\]\[[0-9]+,[0-9]+\]"' evidence/ui-work.xml | grep -oE '\[[0-9]+,[0-9]+\]\[[0-9]+,[0-9]+\]' | head -1)
   if [ -z "$B" ]; then return 1; fi
   X1=$(echo "$B" | sed -E 's/\[([0-9]+),([0-9]+)\]\[([0-9]+),([0-9]+)\]/\1/'); Y1=$(echo "$B" | sed -E 's/\[([0-9]+),([0-9]+)\]\[([0-9]+),([0-9]+)\]/\2/')
