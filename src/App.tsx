@@ -122,7 +122,7 @@ export default function App({initial}: {initial: LoadedLesson}) {
   useLayoutEffect(() => {
     const dispose = mountLesson(initializers);
     const disconnect = reader.connect();
-    const disconnectQuiz = quizzes.connect(dispose.exercise);
+    const disconnectQuiz = quizzes.connect(dispose.exercise, dispose.persistence);
     const disconnectPersistence = persistence.connect(dispose.persistence);
     document.documentElement.dataset.bookReady = 'true';
     const resolvers = mountedResolvers.current;

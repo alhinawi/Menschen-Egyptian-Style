@@ -189,6 +189,15 @@ function classifyFailure(button:HTMLButtonElement): 'wrong' | 'incomplete' {
  for(const it of items)for(const el of [...it.els,...(it.radios||[])])if(el.getAttribute('data-check-mark')==='bad'&&elAnswered(el))return 'wrong';
  return 'incomplete';
 }
+// Field ids the last check graded right, one per sub-answer (a radio row or tick box counts once).
+export function okFieldIds(button:HTMLButtonElement):string[]{
+ const out:string[]=[];
+ for(const it of keyedFields(button).items){
+  const marks=[...it.els,...(it.radios||[])].map(e=>e.getAttribute('data-check-mark'));
+  if(marks.includes('ok')&&!marks.includes('bad'))out.push(it.field.id);
+ }
+ return out;
+}
 export function clearCheckMarks(root:ParentNode=document){root.querySelectorAll('[data-check-mark]').forEach(e=>e.removeAttribute('data-check-mark'))}
 export function clearGroupMarks(button:HTMLButtonElement){for(const it of keyedFields(button).items)for(const el of [...it.els,...(it.radios||[])])el.removeAttribute('data-check-mark')}
 export function markCheckFields(button:HTMLButtonElement,_correct:boolean){
@@ -284,7 +293,7 @@ export function beginCheckFeedback(button:HTMLButtonElement): () => void {
   finish();button.dataset.checkFeedback=correct?'success':'error';
   markCheckFields(button,correct);
   if(correct){checkVoice('correct');fireworks()}else{shakePage(button);checkVoice(classifyFailure(button))}
-  button.dispatchEvent(new CustomEvent('check-feedback',{bubbles:true,detail:{correct,answers:registry.get(button)??Object.fromEntries(keyedFields(button).items.map(i=>[i.field.id,i.field.answer]))}}));
+  button.dispatchEvent(new CustomEvent('check-feedback',{bubbles:true,detail:{correct,okFields:okFieldIds(button),answers:registry.get(button)??Object.fromEntries(keyedFields(button).items.map(i=>[i.field.id,i.field.answer]))}}));
  };
  const observer=new MutationObserver(()=>{cancelAnimationFrame(frame);frame=requestAnimationFrame(evaluate)});
  observer.observe(scope,{childList:true,subtree:true,characterData:true});

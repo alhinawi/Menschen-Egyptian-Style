@@ -3,7 +3,7 @@ import type {ReactNode} from 'react';
 import {flushSync} from 'react-dom';
 import {PersistentField} from '../persistence/PersistentFields';
 import {sectionTasks} from './CustomTasks';
-import type {ExerciseRuntime, QuizOptions} from '../types/runtime';
+import type {ExerciseRuntime, PersistenceRuntime, QuizOptions} from '../types/runtime';
 
 export const QuizContext = createContext<QuizStore | null>(null);
 
@@ -12,6 +12,21 @@ const normalize = (s: unknown): string => String(s).normalize('NFC').toLocaleLow
 export interface QuizStatus {
   el: HTMLElement;
   ok: boolean;
+  /** Stable sub-answer id for per-answer scoring (not set when the status is not a countable answer). */
+  id?: string;
+}
+
+// A status earns its own point only when the learner really answered it: a blank field,
+// an untouched radio group or an unticked box whose key is "false" are "right" by default
+// and never count.
+function earned(s: QuizStatus): boolean {
+  if (!s.ok || !s.id) return false;
+  const el = s.el;
+  if (el instanceof HTMLInputElement && el.type === 'checkbox') return el.dataset.answer === 'true' && el.checked;
+  if (el instanceof HTMLInputElement && el.type === 'radio') return el.checked;
+  if (el instanceof HTMLInputElement || el instanceof HTMLSelectElement || el instanceof HTMLTextAreaElement) return el.value.trim() !== '';
+  if (el.classList.contains('radioGroup')) return !!el.querySelector('input:checked');
+  return true;
 }
 
 export interface QuizResult {
@@ -23,17 +38,17 @@ export function evaluateQuiz(form: HTMLFormElement, {rejectBlank = false, radioT
   if (lessonOne && form.id === 'names') {
     const statuses = ['paco', 'nicole'].map(name => {
       const el = form.querySelector<HTMLInputElement>('input[name=' + name + ']:checked');
-      return {el: (el?.closest('label') || form) as HTMLElement, ok: el?.value === (name === 'paco' ? 'Paco' : 'Nicole')};
+      return {el: (el?.closest('label') || form) as HTMLElement, ok: el?.value === (name === 'paco' ? 'Paco' : 'Nicole') && !!el, id: name};
     });
     return {ok: statuses.every(s => s.ok), statuses};
   }
   if (lessonOne && form.id === 'speakers') {
     const data = new FormData(form);
-    const statuses = speakerAnswers.map((answer, i) => ({el: form.querySelectorAll('tbody tr')[i] as HTMLElement, ok: data.get('s' + i) === String(answer)}));
+    const statuses = speakerAnswers.map((answer, i) => ({el: form.querySelectorAll('tbody tr')[i] as HTMLElement, ok: data.get('s' + i) === String(answer) && data.get('s' + i) !== null, id: 's' + i}));
     return {ok: statuses.every(s => s.ok), statuses};
   }
   const fields = [...form.querySelectorAll<HTMLInputElement>('[data-answer]')].filter(el => !radioTargets || el.type !== 'radio');
-  const statuses: QuizStatus[] = fields.map(el => {
+  const statuses: QuizStatus[] = fields.map((el, fi) => {
     let ok: boolean;
     if (el.type === 'checkbox') ok = el.checked === (el.dataset.answer === 'true');
     else if (lessonOne) ok = el.value.trim() === el.dataset.answer;
@@ -41,7 +56,7 @@ export function evaluateQuiz(form: HTMLFormElement, {rejectBlank = false, radioT
       const value = normalize(el.classList.contains('radioGroup') ? el.querySelector<HTMLInputElement>('input:checked')?.value || '' : el.value);
       ok = (!rejectBlank || value !== '') && el.dataset.answer!.split('|').some(a => normalize(a) === value);
     }
-    return {el, ok};
+    return {el, ok, id: el.dataset.reactAnswerId || el.dataset.key || 'a' + fi};
   });
   if (radioTargets) {
     const groups: Record<string, HTMLInputElement[]> = {};
@@ -51,7 +66,7 @@ export function evaluateQuiz(form: HTMLFormElement, {rejectBlank = false, radioT
       const ok = !!target?.checked;
       for (const el of group) {
         const host = (el.closest('label,td') || el) as HTMLElement;
-        if (el === target || el.checked) statuses.push({el: host, ok: el === target && ok});
+        if (el === target || el.checked) statuses.push({el: host, ok: el === target && ok, id: 'r:' + el.name});
         else host.classList.remove('answerCorrect', 'answerWrong');
       }
     }
@@ -70,8 +85,8 @@ interface QuizSnapshot {
 export interface QuizStore {
   subscribe(fn: () => void): () => void;
   getSnapshot(): QuizSnapshot;
-  connect(value?: ExerciseRuntime): () => void;
-  completeTask(key: string, ok: boolean): void;
+  connect(value?: ExerciseRuntime, persistence?: PersistenceRuntime): () => void;
+  completeTask(key: string, ok: boolean, okFields?: string[]): void;
   toggleTask(el: HTMLElement): void;
   checkTask(button: HTMLElement): void;
   submit(form: HTMLFormElement): void;
@@ -80,26 +95,35 @@ export interface QuizStore {
 
 export function createQuizStore(): QuizStore {
   let runtime: ExerciseRuntime | null = null,
+    persist: PersistenceRuntime | null = null,
     snapshot: QuizSnapshot = {results: {}, fields: {}, selections: {}, taskResults: {}},
     listeners = new Set<() => void>();
+  // One sticky flag per correct sub-answer, saved in the lesson state next to the group's
+  // done flag. pointsOf counts the sub-flags and ignores the group flag once any exist.
+  const award = (key: string | undefined, ids?: string[]) => {
+    if (!persist || !key || !ids?.length) return;
+    persist.update(Object.fromEntries([...new Set(ids)].map(id => ['done-' + key + ':f-' + id, true])));
+  };
   return {
     subscribe(fn) {
       listeners.add(fn);
       return () => {listeners.delete(fn);};
     },
     getSnapshot: () => snapshot,
-    connect(value) {
+    connect(value, persistence) {
       runtime = value ?? null;
+      persist = persistence ?? null;
       if (runtime?.options.verbState) {
         const selections: Record<string, boolean> = {};
         document.querySelectorAll<HTMLElement>('.verbWord').forEach((el, i) => {selections[el.dataset.reactTaskId!] = runtime!.options.verbState!['verb-' + i] ?? i === 1;});
         snapshot = {...snapshot, selections};
         listeners.forEach(fn => fn());
       }
-      return () => {runtime = null; listeners.clear();};
+      return () => {runtime = null; persist = null; listeners.clear();};
     },
-    completeTask(key, ok) {
+    completeTask(key, ok, okFields) {
       runtime?.commitResult({dataset: {key}}, ok);
+      award(key, okFields);
     },
     toggleTask(el) {
       if (!runtime) return;
@@ -128,7 +152,9 @@ export function createQuizStore(): QuizStore {
       if (!runtime) return;
       const fields = {...snapshot.fields}, taskResults = {...snapshot.taskResults};
       let ok = true;
+      const credit: string[] = [];
       let host: {dataset: {key?: string}};
+      let wrongPick = false;
       let key: string;
       const section = sectionTasks[button.id];
       if (section) {
@@ -137,6 +163,7 @@ export function createQuizStore(): QuizStore {
         document.querySelectorAll<HTMLInputElement | HTMLSelectElement>(section.selector).forEach((el, i) => {
           const correct = el.value.trim() === section.answers[i];
           fields[el.dataset.reactAnswerId!] = correct;
+          if (correct && el.value.trim() !== '') credit.push(el.dataset.reactAnswerId!);
           ok &&= correct;
         });
       } else if (button.closest('[data-answer-group]')) {
@@ -151,6 +178,7 @@ export function createQuizStore(): QuizStore {
             any = true;
             const correct = el.dataset.correct === 'true';
             fields[el.dataset.reactTaskId!] = correct;
+            if (correct) credit.push(el.dataset.reactTaskId!);
             ok &&= correct;
           } else if (el.dataset.correct === 'true' && el.dataset.required === 'true') {
             fields[el.dataset.reactTaskId!] = false;
@@ -167,12 +195,17 @@ export function createQuizStore(): QuizStore {
           const target = (button.dataset.checkMarks ? el.dataset.target : el.dataset.verb) === 'true';
           const correct = selected === target;
           fields[el.dataset.reactTaskId!] = selected || target ? correct : undefined;
+          if (selected && target) credit.push(el.dataset.reactTaskId!);
+          else if (selected && !target) wrongPick = true;
           ok &&= correct;
         }
       }
       taskResults[key!] = ok;
       snapshot = {...snapshot, fields, taskResults};
       runtime.commitResult(host!, ok);
+      // Select-all-that-apply tasks: no credit for the right picks while a wrong one is picked,
+      // so ticking everything cannot earn points.
+      award(host!.dataset.key || (host! as {id?: string}).id, wrongPick ? [] : credit);
       listeners.forEach(fn => fn());
     },
     resetPage(page) {
@@ -201,6 +234,7 @@ export function createQuizStore(): QuizStore {
       }
       snapshot = {...snapshot, results: {...snapshot.results, [key]: result.ok}, fields};
       runtime.commitResult(form, result.ok);
+      award(key, result.statuses.filter(earned).map(x => x.id!));
       listeners.forEach(fn => fn());
     }
   };

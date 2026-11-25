@@ -58,31 +58,56 @@ export function exerciseIdentity(button: HTMLButtonElement): { book: string; fla
   return { book: bookOf(button, pageEl, page), flag: 'done-' + page + ':' + (task ? 't-' + task : 'n' + index) };
 }
 
-export function recordCompletion(button: HTMLButtonElement): boolean {
-  const identity = exerciseIdentity(button);
-  if (!identity) return false;
-  const {flag} = identity;
-  const key = PREFIX + identity.book;
+function writeFlags(book: string, flags: string[]): boolean {
+  if (!flags.length) return false;
+  const key = PREFIX + book;
   try {
     let state: Record<string, unknown> = {};
     try {
       const parsed: unknown = JSON.parse(localStorage.getItem(key) || '{}');
       if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) state = parsed as Record<string, unknown>;
     } catch { /* unreadable value: start a fresh record, never throw into the page */ }
-    if (state[flag] === true) return false;
-    localStorage.setItem(key, JSON.stringify({ ...state, [flag]: true }));
+    const fresh = flags.filter(f => state[f] !== true);
+    if (!fresh.length) return false;
+    const next = { ...state };
+    for (const f of fresh) next[f] = true;
+    localStorage.setItem(key, JSON.stringify(next));
     return true;
   } catch {
     return false; // private mode or full storage: the check itself still works
   }
 }
 
+/** Sub-answer flag: the group's flag plus ':f-<field>'. */
+export const subFlag = (group: string, field: string) => group + ':f-' + field;
+
+/** One sticky flag per correct sub-answer (a field, a radio row, a matching line) of a check. */
+export function recordSubAnswers(button: HTMLButtonElement, fields: string[]): boolean {
+  const identity = exerciseIdentity(button);
+  if (!identity) return false;
+  return writeFlags(identity.book, [...new Set(fields.filter(Boolean))].map(f => subFlag(identity.flag, f)));
+}
+
+export function recordCompletion(button: HTMLButtonElement): boolean {
+  const identity = exerciseIdentity(button);
+  if (!identity) return false;
+  return writeFlags(identity.book, [identity.flag]);
+}
+
+/** Field ids a custom grader published on the exercise holder (comma separated). */
+function publishedFields(button: HTMLButtonElement): string[] {
+  const holder = button.closest<HTMLElement>('[data-ok-fields]');
+  return (holder?.dataset.okFields || '').split(',').filter(Boolean);
+}
+
 if (typeof document !== 'undefined' && !(window as typeof window & { __exerciseCompletion?: boolean }).__exerciseCompletion) {
   (window as typeof window & { __exerciseCompletion?: boolean }).__exerciseCompletion = true;
   document.addEventListener('check-feedback', event => {
-    const detail = (event as CustomEvent<{ correct?: boolean }>).detail;
-    if (detail?.correct !== true) return;
+    const detail = (event as CustomEvent<{ correct?: boolean; okFields?: string[] }>).detail;
     const button = event.target;
-    if (button instanceof HTMLButtonElement) recordCompletion(button);
+    if (!(button instanceof HTMLButtonElement)) return;
+    // Every correct sub-answer earns its own point, right or wrong overall.
+    recordSubAnswers(button, [...(detail?.okFields || []), ...publishedFields(button)]);
+    if (detail?.correct === true) recordCompletion(button);
   });
 }
