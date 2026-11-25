@@ -49,7 +49,7 @@ export function NativeWritingPanel({page,storageKey,sections,values,onChange}:{p
      const common={key:f.id,'data-native-field':f.id,'aria-label':`Aufgabe ${s.id}: ${f.label}`,value:values[f.id]??f.pre??'',onChange:(e:React.ChangeEvent<HTMLInputElement|HTMLTextAreaElement>)=>onChange(f.id,e.target.value),className:state};
      return <label key={f.id}><span>{f.label}</span>{f.textarea?<textarea {...common} className={'nkbLine1'+(state?' '+state:'')} rows={1} placeholder={f.placeholder}/>:<input {...common} type="text" autoComplete="off" placeholder={f.placeholder}/>}</label>;
     })}
-    {!s.neutral&&<div className="nkbPanelCheck"><CheckButton {...(Object.keys(exact).length?{answers:exact}:{})} onClick={()=>setChecked(x=>({...x,[s.id]:true}))}/><output aria-live="polite">{checked[s.id]?(allOk?'✓ Richtig!':'Noch einmal'):''}</output></div>}
+    {!s.neutral&&<div className="nkbPanelCheck" data-completion-page={page} data-exercise-id={'panel-'+s.id}><CheckButton {...(Object.keys(exact).length?{answers:exact}:{})} onClick={()=>setChecked(x=>({...x,[s.id]:true}))}/><output aria-live="polite">{checked[s.id]?(allOk?'✓ Richtig!':'Noch einmal'):''}</output></div>}
    </section>;
   })}
  </>,host);
