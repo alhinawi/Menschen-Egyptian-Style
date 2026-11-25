@@ -264,3 +264,8 @@
 .nkb[data-native-page="15"] .nkbCanvas .nkbUl[data-native-field^="zahl"].bad{background:#fff0edcc!important;color:#94291e!important}
 .nkb[data-native-page="15"] .nkbCanvas .nkbNumberCheck{flex-direction:column;align-items:flex-start;gap:2px;max-width:17%;font-size:1.5cqw}
 .nkb[data-native-page="15"] .nkbNumberCheck output{padding:0;white-space:normal}
+
+.nkbWritePanel .nkbAr,.kb42Answers .nkbAr{font:500 15px/1.5 'Noto Naskh Arabic','Segoe UI',Tahoma,sans-serif;color:#7a3b00;margin:0 0 8px}
+.nkbWritePanel label>span small.nkbAr{display:block;margin:2px 0 0}
+.kb42Answers .kb42Head small.nkbAr{display:block;margin:2px 0 0;font-size:12px}
+.nkbPanelHead small.nkbAr,.kb42Heading small.nkbAr{margin:0 0 0 auto;font-size:14px}

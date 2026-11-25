@@ -36,18 +36,20 @@ export function NativeWritingPanel({page,storageKey,sections,values,onChange}:{p
   };update();const timer=setInterval(update,250);return()=>{clearInterval(timer);slot?.remove()};
  },[page]);
  return host&&createPortal(<>
-  <div className="nkbPanelHead"><span>{page}</span><strong>Schreibaufgaben zur Buchseite</strong></div>
+  <div className="nkbPanelHead"><span>{page}</span><strong>Schreibaufgaben zur Buchseite</strong><small className="nkbAr" lang="ar" dir="rtl">تمارين الكتابة الخاصة بصفحة الكتاب</small></div>
   {sections.map(s=>{
    const graded=s.fields.filter(f=>f.answer!==undefined);
    const exact=Object.fromEntries(graded.map(f=>[f.id,f.answer!]));
    const allOk=graded.length>0&&graded.every(f=>panelFieldOk(f,values[f.id]));
    return <section key={s.id} aria-labelledby={`nkbp-${page}-${s.id}`}>
     <h3 id={`nkbp-${page}-${s.id}`}><b>{s.id}</b> {s.title}</h3>
+    {s.titleAr&&<p className="nkbAr" lang="ar" dir="rtl">{s.titleAr}</p>}
     {s.hint&&<p>{s.hint}</p>}
+    {s.hintAr&&<p className="nkbAr" lang="ar" dir="rtl">{s.hintAr}</p>}
     {s.fields.map(f=>{
      const state=s.neutral?'':checked[s.id]?(panelFieldOk(f,values[f.id])?'ok':'bad'):'';
      const common={key:f.id,'data-native-field':f.id,'aria-label':`Aufgabe ${s.id}: ${f.label}`,value:values[f.id]??f.pre??'',onChange:(e:React.ChangeEvent<HTMLInputElement|HTMLTextAreaElement>)=>onChange(f.id,e.target.value),className:state};
-     return <label key={f.id}><span>{f.label}</span>{f.textarea?<textarea {...common} className={'nkbLine1'+(state?' '+state:'')} rows={1} placeholder={f.placeholder}/>:<input {...common} type="text" autoComplete="off" placeholder={f.placeholder}/>}</label>;
+     return <label key={f.id}><span>{f.label}{f.labelAr&&<small className="nkbAr" lang="ar" dir="rtl">{f.labelAr}</small>}</span>{f.textarea?<textarea {...common} className={'nkbLine1'+(state?' '+state:'')} rows={1} placeholder={f.placeholder}/>:<input {...common} type="text" autoComplete="off" placeholder={f.placeholder}/>}</label>;
     })}
     {!s.neutral&&<div className="nkbPanelCheck" data-completion-page={page} data-exercise-id={'panel-'+s.id}><CheckButton {...(Object.keys(exact).length?{answers:exact}:{})} onClick={()=>setChecked(x=>({...x,[s.id]:true}))}/><output aria-live="polite">{checked[s.id]?(allOk?'✓ Richtig!':'Noch einmal'):''}</output></div>}
    </section>;
