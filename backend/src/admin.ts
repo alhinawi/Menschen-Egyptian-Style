@@ -51,9 +51,13 @@ export function summarizeProgress(data: string): ProgressSummary {
       let fields = 0
       let page: number | null = null
       const walk = (v: Record<string, unknown>) => {
+        // Sub-answer flags count one each; an exercise's group flag is ignored once it has any.
+        const flags = Object.keys(v).filter((k) => k.startsWith('done-') && v[k] === true)
+        const parents = new Set(flags.filter((k) => k.includes(':f-')).map((k) => k.slice(0, k.indexOf(':f-'))))
+        done += flags.filter((k) => !parents.has(k)).length
         for (const [k, val] of Object.entries(v)) {
           if (k === 'page' && typeof val === 'number') page = val
-          else if (k.startsWith('done-') && val === true) done++
+          else if (k.startsWith('done-') && val === true) continue
           else if (k.startsWith('field-') && typeof val === 'string' && val.trim()) fields++
           else if (isPlainObject(val)) walk(val)
         }

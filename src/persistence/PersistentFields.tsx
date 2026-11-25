@@ -31,6 +31,8 @@ export function usePersistenceController(): PersistenceController {
         for(const el of page.querySelectorAll<HTMLElement>('[data-rating-key]')){const ratingKey='rate-'+el.dataset.ratingKey;updates[ratingKey]=undefined;document.dispatchEvent(new CustomEvent('reader-rating',{detail:{key:ratingKey,value:''}}))}
         for(const form of page.querySelectorAll<HTMLFormElement>('form'))updates['done-'+(form.dataset.key||form.id)]=undefined;
         for(const el of page.querySelectorAll<HTMLElement>('[data-key]'))updates['done-'+el.dataset.key]=undefined;
+        // Sub-answer flags of the reset exercises go with their group flag.
+        for(const k of Object.keys(runtime?.getState()||{})){const i=k.indexOf(':f-');if(i>0&&k.startsWith('done-')&&updates[k.slice(0,i)]===undefined&&k.slice(0,i) in updates)updates[k]=undefined}
         runtime?.update(updates);dispatch(updates);const progress=document.querySelector('#progress');if(progress&&/^\d+ ✓$/.test(progress.textContent||''))progress.textContent=Object.entries(runtime?.getState()||{}).filter(([k,v])=>k.startsWith('done-')&&v===true).length+' ✓';
       },
       read(key) {

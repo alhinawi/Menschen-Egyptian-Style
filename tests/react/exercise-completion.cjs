@@ -4,7 +4,7 @@
 const{chromium}=require('playwright'),assert=require('node:assert/strict'),fs=require('fs'),http=require('http'),path=require('path');
 const root=path.resolve(__dirname,'../..');
 const server=http.createServer((q,r)=>{try{let u=q.url.split('?')[0];if(!path.extname(u)&&!fs.existsSync(path.join(root,'dist',u)))u='/index.html';const f=path.join(root,'dist',u);r.setHeader('content-type',({'.html':'text/html','.js':'text/javascript','.css':'text/css','.png':'image/png','.webp':'image/webp','.mp3':'audio/mpeg','.json':'application/json'})[path.extname(f)]||'application/octet-stream');r.end(fs.readFileSync(f))}catch{r.writeHead(404);r.end()}});
-const pointsOf=data=>{let n=0;const walk=v=>{if(typeof v==='string'){try{const i=JSON.parse(v);if(i&&typeof i==='object')walk(i)}catch{}return}if(!v||typeof v!=='object')return;for(const[k,x]of Object.entries(v)){if(k.startsWith('done-')&&x===true)n++;else walk(x)}};walk(JSON.parse(data));return n};
+const pointsOf=data=>{let n=0;const walk=v=>{if(typeof v==='string'){try{const i=JSON.parse(v);if(i&&typeof i==='object')walk(i)}catch{}return}if(!v||typeof v!=='object')return;const ent=Object.entries(v),done=ent.filter(([k,x])=>k.startsWith('done-')&&x===true).map(([k])=>k),par=new Set(done.filter(k=>k.includes(':f-')).map(k=>k.slice(0,k.indexOf(':f-'))));n+=done.filter(k=>!par.has(k)).length;for(const[k,x]of ent){if(!(k.startsWith('done-')&&x===true))walk(x)}};walk(JSON.parse(data));return n};
 const collect=p=>p.evaluate(()=>{const b={};for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(/^(native-|menschen-book-)/.test(k))b[k]=localStorage.getItem(k)}return b});
 (async()=>{await new Promise(r=>server.listen(5297,r));
 const b=await chromium.launch({executablePath:'/usr/bin/google-chrome-stable',args:['--no-sandbox']});
@@ -23,25 +23,25 @@ try{
  assert.equal(await done(),null,'wrong check records nothing');
  for(const[id,v]of[['meine','meine'],['deine','deine']])await pg.locator('[data-native-field="'+id+'"]').fill(v);
  await btn.click();await p.waitForFunction(()=>document.querySelector('.page[data-page="18"] .nkbCheck button').dataset.checkFeedback==='success');
- const first=JSON.parse(await done());assert.equal(Object.keys(first).length,1);assert.equal(Object.values(first)[0],true);assert(Object.keys(first)[0].startsWith('done-18:'));
+ const first=JSON.parse(await done());assert.equal(Object.keys(first).length,3,'group flag plus one sub-flag per field');assert(Object.values(first).every(x=>x===true));assert(Object.keys(first).every(k=>k.startsWith('done-18:')));assert.equal(Object.keys(first).filter(k=>k.includes(':f-')).length,2);
  await btn.click();await p.waitForTimeout(600);assert.deepEqual(JSON.parse(await done()),first,'repeat correct check: no second award');
  await pg.locator('[data-native-field="meine"]').fill('xxx');await btn.click();await p.waitForTimeout(600);
  assert.deepEqual(JSON.parse(await done()),first,'later wrong check keeps the flag');
  // The answers key keeps saving as before, and the flag sits in its own key.
- const blob=await collect(p);assert.equal(pointsOf(JSON.stringify(blob)),1,'leaderboard walker counts exactly one point');
+ const blob=await collect(p);assert.equal(pointsOf(JSON.stringify(blob)),2,'two correct fields = two points, group flag not counted again');
  assert(blob['native-done-kb-a11']);
  // Reset page answers: flag stays, and re-solving does not add a second point.
  await p.evaluate(()=>document.dispatchEvent(new CustomEvent('menschen:reset-current-page',{detail:{page:'18'}})));await p.waitForTimeout(300);
  assert.deepEqual(JSON.parse(await done()),first,'page reset keeps the flag');
  for(const[id,v]of[['meine','meine'],['deine','deine']])await pg.locator('[data-native-field="'+id+'"]').fill(v);
- await btn.click();await p.waitForTimeout(600);assert.equal(pointsOf(JSON.stringify(await collect(p))),1,'re-solving after reset does not re-award');
+ await btn.click();await p.waitForTimeout(600);assert.equal(pointsOf(JSON.stringify(await collect(p))),2,'re-solving after reset does not re-award');
  console.log('PASS native check -> sticky flag',JSON.stringify(first));
  // Original report: KB11 page 9 (Paco / Nicole radios), then the page 15 numbers exercise ("7 / 7 richtig").
  const r=await b.newPage({viewport:{width:390,height:1000}});
  await r.route('**/menscheny-api*/**',x=>x.fulfill({status:503,body:'{}'}));
  await r.goto('http://localhost:5297/index.html#9');await r.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
  const p9=r.locator('.page[data-page="9"]'),c9=p9.locator('.nkbCheck button.compactCheckButton').first();
- const flags=()=>r.evaluate(()=>JSON.parse(localStorage.getItem('native-done-kb-a11')||'{}'));
+ const flags=()=>r.evaluate(()=>Object.fromEntries(Object.entries(JSON.parse(localStorage.getItem('native-done-kb-a11')||'{}')).filter(([k])=>!k.includes(':f-'))));
  await p9.locator('[data-native-field="a1"]').click({force:true});await p9.locator('[data-native-field="b2"]').click({force:true});
  await c9.click();await r.waitForTimeout(600);assert.deepEqual(await flags(),{},'page 9 wrong radios: no flag');
  await p9.locator('[data-native-field="a2"]').click({force:true});await p9.locator('[data-native-field="b1"]').click({force:true});
@@ -63,7 +63,7 @@ try{
  for(const alias of ['l1','kb-a11-2-3']){await r.goto('http://localhost:5297/'+alias+'#9');await r.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');await r.waitForTimeout(800);
   const a9=r.locator('.page[data-page="9"]');await a9.locator('[data-native-field="a2"]').click({force:true});await a9.locator('[data-native-field="b1"]').click({force:true});
   await a9.locator('.nkbCheck button.compactCheckButton').first().click();await r.waitForTimeout(700);}
- const all=await r.evaluate(()=>Object.fromEntries(Object.keys(localStorage).filter(k=>k.startsWith('native-done-')).map(k=>[k,Object.keys(JSON.parse(localStorage[k]))])));
+ const all=await r.evaluate(()=>Object.fromEntries(Object.keys(localStorage).filter(k=>k.startsWith('native-done-')).map(k=>[k,Object.keys(JSON.parse(localStorage[k])).filter(x=>!x.includes(':f-'))])));
  assert.deepEqual(Object.keys(all),['native-done-kb-a11'],'aliases share one done entry');
  assert.equal(Object.values(all)[0].filter(x=>x==='done-9:t-task2a').length,1);
  console.log('PASS route aliases collapse to one flag',JSON.stringify(all));
