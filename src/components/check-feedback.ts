@@ -249,7 +249,7 @@ export function syncCheckStatus(button:HTMLButtonElement): () => void {
   scope.querySelectorAll<HTMLElement>(feedbackSelector).forEach(output=>{
    const text=output.textContent?.trim()||'';
    const wrong=/noch\s*(?:ein\s*mal|einmal|nicht)|versuchen\s+sie|try again/i.test(text);
-   const correct=!wrong&&/(?:✓\s*)?richtig\s*!|all correct|alles richtig/i.test(text);
+   const correct=!wrong&&/(?:✓\s*)?richtig\s*!|all correct|alles richtig|\b(\d+)\s*\/\s*\1\s*richtig/i.test(text);
    if(wrong||correct)output.dataset.checkResult=correct?'success':'error';
    else delete output.dataset.checkResult;
   });
@@ -279,7 +279,7 @@ export function beginCheckFeedback(button:HTMLButtonElement): () => void {
   if(finished||!button.isConnected)return;
   const text=[...scope.querySelectorAll(feedbackSelector)].map(x=>x.textContent||'').join(' ').trim();
   const wrong=/noch\s*(?:ein\s*mal|einmal|nicht)|versuchen\s+sie|try again/i.test(text);
-  const correct=!wrong&&/(?:✓\s*)?richtig\s*!|all correct|alles richtig/i.test(text);
+  const correct=!wrong&&/(?:✓\s*)?richtig\s*!|all correct|alles richtig|\b(\d+)\s*\/\s*\1\s*richtig/i.test(text);
   if(!wrong&&!correct)return;
   finish();button.dataset.checkFeedback=correct?'success':'error';
   markCheckFields(button,correct);
