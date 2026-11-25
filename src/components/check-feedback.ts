@@ -5,6 +5,7 @@ import {getFeedbackVoices, subscribeFeedbackVoices} from './check-sound-preferen
 import {wrongVoices,incompleteVoices,correctVoices} from './check-voices';
 import {scanData} from '../scan-data/registry';
 import type {ScanField} from '../scan-data/schema';
+import './exercise-completion';
 // User-triggered grading feedback, shared by every compact check control.
 let stopEffect: (() => void) | undefined;
 const soundOn = () => document.querySelector<HTMLElement>('.soundToggle')?.dataset.soundOn!=='false';
