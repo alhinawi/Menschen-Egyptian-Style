@@ -13,7 +13,9 @@
 //   answers neither erases nor re-awards a point (the same exercise id is reused).
 // - Only a correct check writes. A later wrong check never removes a flag, and a
 //   repeated correct check changes nothing (idempotent, no double awards).
-// - The flag is keyed lesson + page + exercise, so each exercise counts once.
+// - The flag is keyed book + page + exercise (book = the page's data-native-book), not the URL,
+//   so the same exercise reached through two routes or aliases counts once. Only pages that
+//   name no book fall back to the route's lesson slug.
 // - Legacy exercises (ScanDialogs forms and the markBank word banks, whose buttons carry
 //   the "check" class) already write their own done flags through the lesson state;
 //   they are skipped so nothing is counted twice.
@@ -28,25 +30,39 @@ export function lessonSlug(pathname = location.pathname): string {
   return file.replace(/\.html$/, '') || 'index';
 }
 
+/** Canonical book of the page a check button sits on; falls back to the route slug. */
+export function bookOf(button: HTMLElement, pageEl: HTMLElement | null, page: string | undefined): string {
+  const scope = button.closest<HTMLElement>('.page') || pageEl;
+  let el: HTMLElement | null = null;
+  if (scope) el = scope.matches('[data-native-book]') ? scope : scope.querySelector<HTMLElement>('[data-native-book]') || scope.closest<HTMLElement>('[data-native-book]');
+  if (!el && page) el = [...document.querySelectorAll<HTMLElement>('.page[data-page] [data-native-book]')].find(e => e.closest<HTMLElement>('.page')?.dataset.page === page) || null;
+  return el?.dataset.nativeBook || lessonSlug();
+}
+
 /** Stable id of the exercise a check button grades, or null when it cannot be identified. */
 export function exerciseFlag(button: HTMLButtonElement): string | null {
+  return exerciseIdentity(button)?.flag ?? null;
+}
+
+export function exerciseIdentity(button: HTMLButtonElement): { book: string; flag: string } | null {
   if (isLegacy(button)) return null;
   // Dialogs portalled out of their page name their page with data-completion-page.
   const pageEl = button.closest<HTMLElement>('.page[data-page]') || button.closest<HTMLElement>('[data-native-page]') || button.closest<HTMLElement>('[data-completion-page]');
   const page = pageEl?.dataset.page || pageEl?.dataset.nativePage || pageEl?.dataset.completionPage;
   if (!pageEl || !page) return null;
-  const holder = button.closest<HTMLElement>('[data-native-task],[data-native-check]');
-  const task = holder?.dataset.nativeTask || holder?.dataset.nativeCheck;
+  const holder = button.closest<HTMLElement>('[data-exercise-id],[data-native-task],[data-native-check]');
+  const task = holder?.dataset.exerciseId || holder?.dataset.nativeTask || holder?.dataset.nativeCheck;
   const root = button.closest<HTMLElement>('.page') || pageEl;
   const index = checkButtons(root).indexOf(button);
   if (!task && index < 0) return null;
-  return 'done-' + page + ':' + (task ? 't-' + task : 'n' + index);
+  return { book: bookOf(button, pageEl, page), flag: 'done-' + page + ':' + (task ? 't-' + task : 'n' + index) };
 }
 
 export function recordCompletion(button: HTMLButtonElement): boolean {
-  const flag = exerciseFlag(button);
-  if (!flag) return false;
-  const key = PREFIX + lessonSlug();
+  const identity = exerciseIdentity(button);
+  if (!identity) return false;
+  const {flag} = identity;
+  const key = PREFIX + identity.book;
   try {
     let state: Record<string, unknown> = {};
     try {
