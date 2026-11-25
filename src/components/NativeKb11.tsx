@@ -91,7 +91,7 @@ function Inner({data}:{data:NativePage}){
     return <>
      <button type="button" className="nkb36Open" onClick={()=>setOpen36(true)}>Eintragen ✎</button>
      {open36&&createPortal(<><div className="nkb36BackdropF" onClick={()=>setOpen36(false)}/>
-      <div className="nkb36PanelF" role="dialog" aria-label="9a Eintragen">
+      <div className="nkb36PanelF" role="dialog" aria-label="9a Eintragen" data-completion-page={data.page} data-native-check="task9a">
        <button type="button" className="nkb36Close" aria-label="Schließen" onClick={()=>setOpen36(false)}>×</button>
        {grp('sich melden (Person A)',['t9a-a1','t9a-a2','t9a-a3'],optA)}
        {grp('sich melden (Person B)',['t9a-b1','t9a-b2'],optB)}
