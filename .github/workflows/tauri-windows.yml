@@ -66,9 +66,20 @@ jobs:
         shell: pwsh
         run: ./desktop/tauri/scripts/bench.ps1 -Exe "$PWD/build/Menschen-tauri/Menschen.exe" -OutDir "$PWD/build/bench"
 
+      - uses: actions/upload-artifact@v4
+        with:
+          name: menschen-tauri-small-files
+          path: |
+            build/bench/*
+            build/Menschen-tauri/Menschen.exe
+          retention-days: 14
+
       - name: Zip (store, no compression)
         run: |
           cd build
+          # The benchmark leaves WebView2 runtime state (data/EBWebView, with a locked file)
+          # next to the exe. It is not part of the app, and 7z exits 1 on the locked file.
+          rm -rf Menschen-tauri/data
           7z a -tzip -mx0 menschen-tauri-portable.zip Menschen-tauri
           ls -la menschen-tauri-portable.zip
 
@@ -77,12 +88,4 @@ jobs:
           name: menschen-tauri-portable
           path: build/menschen-tauri-portable.zip
           compression-level: 0
-          retention-days: 14
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: menschen-tauri-small-files
-          path: |
-            build/bench/*
-            build/Menschen-tauri/Menschen.exe
           retention-days: 14
