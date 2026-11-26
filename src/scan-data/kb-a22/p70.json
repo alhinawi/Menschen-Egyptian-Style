@@ -1581,13 +1581,72 @@
    "h": 17
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p70-11-Versicherung",
+   "group": "g1",
+   "kind": "radio",
+   "label": "Versicherung",
+   "name": "p70-11",
+   "value": "Versicherung",
+   "answer": "true",
+   "x": 236,
+   "y": 765,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p70-11-Kredit",
+   "group": "g1",
+   "kind": "radio",
+   "label": "Kredit",
+   "name": "p70-11",
+   "value": "Kredit",
+   "answer": "false",
+   "x": 499,
+   "y": 765,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p70-12-verschiedenen",
+   "group": "g1",
+   "kind": "radio",
+   "label": "verschiedenen",
+   "name": "p70-12",
+   "value": "verschiedenen",
+   "answer": "false",
+   "x": 236,
+   "y": 819,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p70-12-gleichen",
+   "group": "g1",
+   "kind": "radio",
+   "label": "gleichen",
+   "name": "p70-12",
+   "value": "gleichen",
+   "answer": "true",
+   "x": 533,
+   "y": 819,
+   "w": 24,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "2 a Was ist richtig?"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "1 a, 1 b (corrections without printed lines), 2 b (free notes) and 2 c are left ungraded."
   ]
  }
 }
