@@ -2127,11 +2127,203 @@
    "h": 16
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p82-1a",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 a",
+   "answer": "Löffel",
+   "x": 328,
+   "y": 241,
+   "w": 159,
+   "h": 26
+  },
+  {
+   "id": "p82-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "Kanne",
+   "x": 401,
+   "y": 305,
+   "w": 160,
+   "h": 26
+  },
+  {
+   "id": "p82-1c1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c1",
+   "answer": "Öl",
+   "x": 792,
+   "y": 349,
+   "w": 155,
+   "h": 26
+  },
+  {
+   "id": "p82-1c2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c2",
+   "answer": "Pfeffer",
+   "x": 502,
+   "y": 375,
+   "w": 162,
+   "h": 26
+  },
+  {
+   "id": "p82-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d",
+   "answer": "Zucker",
+   "x": 516,
+   "y": 438,
+   "w": 162,
+   "h": 26
+  },
+  {
+   "id": "p82-1e1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e1",
+   "answer": "Rechnung",
+   "x": 440,
+   "y": 478,
+   "w": 164,
+   "h": 26
+  },
+  {
+   "id": "p82-1e2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e2",
+   "answer": "getrennt",
+   "x": 461,
+   "y": 505,
+   "w": 161,
+   "h": 26
+  },
+  {
+   "id": "p82-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "die Suppe kalt ist",
+   "x": 706,
+   "y": 625,
+   "w": 272,
+   "h": 26
+  },
+  {
+   "id": "p82-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c",
+   "answer": "es einen Obstsalat gibt",
+   "x": 622,
+   "y": 653,
+   "w": 356,
+   "h": 26
+  },
+  {
+   "id": "p82-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d",
+   "answer": "sie Apfelkuchen haben",
+   "x": 675,
+   "y": 678,
+   "w": 308,
+   "h": 26
+  },
+  {
+   "id": "p82-41",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 1",
+   "answer": "Ich möchte bitte",
+   "x": 204,
+   "y": 1045,
+   "w": 265,
+   "h": 26
+  },
+  {
+   "id": "p82-42",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 2",
+   "answer": "Was kann ich Ihnen",
+   "x": 204,
+   "y": 1072,
+   "w": 265,
+   "h": 26
+  },
+  {
+   "id": "p82-43",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 3",
+   "answer": "Ich hätte",
+   "x": 204,
+   "y": 1098,
+   "w": 265,
+   "h": 26
+  },
+  {
+   "id": "p82-44",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 4",
+   "answer": "Verzeihen Sie",
+   "x": 204,
+   "y": 1138,
+   "w": 265,
+   "h": 26
+  },
+  {
+   "id": "p82-45",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 5",
+   "answer": "Das tut mir",
+   "x": 241,
+   "y": 1163,
+   "w": 264,
+   "h": 26
+  },
+  {
+   "id": "p82-46",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 6",
+   "answer": "Ich gebe es",
+   "x": 204,
+   "y": 1218,
+   "w": 265,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Wörter"
+  },
+  {
+   "id": "g2",
+   "label": "Sätze mit dass"
+  },
+  {
+   "id": "g4",
+   "label": "Ordnen Sie zu"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel (p107), Lektion 10 Test 1, 2 and 4. Test 3 (own sentences, no printed lines) is ungraded."
+  ]
  }
 }

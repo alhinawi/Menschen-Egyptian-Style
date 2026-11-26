@@ -2337,7 +2337,63 @@
    "h": 13
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p81-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "Franz",
+   "x": 179,
+   "y": 677,
+   "w": 105,
+   "h": 26
+  },
+  {
+   "id": "p81-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c",
+   "answer": "Ela",
+   "x": 179,
+   "y": 717,
+   "w": 105,
+   "h": 26
+  },
+  {
+   "id": "p81-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d",
+   "answer": "Lola",
+   "x": 179,
+   "y": 757,
+   "w": 105,
+   "h": 26
+  },
+  {
+   "id": "p81-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 e",
+   "answer": "Ela",
+   "x": 179,
+   "y": 797,
+   "w": 105,
+   "h": 26
+  },
+  {
+   "id": "p81-2f",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 f",
+   "answer": "Franz",
+   "x": 179,
+   "y": 836,
+   "w": 105,
+   "h": 26
+  }
+ ],
  "audio": [
   {
    "id": "ab-cd1-34-81",
@@ -2358,9 +2414,16 @@
    "h": 26
   }
  ],
- "groups": [],
+ "groups": [
+  {
+   "id": "g2",
+   "label": "Wer schreibt was?"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel, L10 Training Lesen 2 b-f. Lesen 1 (marking), Aussprache 1 and 2 (partial letters) are ungraded."
+  ]
  }
 }
