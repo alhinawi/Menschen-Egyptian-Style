@@ -1805,11 +1805,133 @@
    "h": 21
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p62-82",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 2",
+   "answer": "ich aber traurig",
+   "x": 375,
+   "y": 363,
+   "w": 292,
+   "h": 26
+  },
+  {
+   "id": "p62-83",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 3",
+   "answer": "ist los",
+   "x": 252,
+   "y": 403,
+   "w": 335,
+   "h": 26
+  },
+  {
+   "id": "p62-84",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 4",
+   "answer": "tut mir leid",
+   "x": 274,
+   "y": 484,
+   "w": 342,
+   "h": 26
+  },
+  {
+   "id": "p62-85",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 5",
+   "answer": "hast du nichts Schlimmes",
+   "x": 200,
+   "y": 522,
+   "w": 280,
+   "h": 26
+  },
+  {
+   "id": "p62-86",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 6",
+   "answer": "hoffe ich auch",
+   "x": 241,
+   "y": 562,
+   "w": 334,
+   "h": 26
+  },
+  {
+   "id": "p62-87",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 7",
+   "answer": "habe total Angst",
+   "x": 662,
+   "y": 562,
+   "w": 282,
+   "h": 26
+  },
+  {
+   "id": "p62-88",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 8",
+   "answer": "wieder alles in Ordnung",
+   "x": 450,
+   "y": 632,
+   "w": 343,
+   "h": 26
+  },
+  {
+   "id": "p62-9B",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 B",
+   "answer": "4",
+   "x": 955,
+   "y": 1061,
+   "w": 29,
+   "h": 29
+  },
+  {
+   "id": "p62-9C",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 C",
+   "answer": "2",
+   "x": 955,
+   "y": 1101,
+   "w": 29,
+   "h": 29
+  },
+  {
+   "id": "p62-9E",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 E",
+   "answer": "5",
+   "x": 955,
+   "y": 1206,
+   "w": 29,
+   "h": 29
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g8",
+   "label": "Ordnen Sie zu"
+  },
+  {
+   "id": "g9",
+   "label": "Ein Unfall: Bilder den Sätzen zuordnen"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel, Lektion 8 Basistraining ex8-9a. Ex8 (5): write the whole phrase on the second line. Ex9b (write the story) is open and ungraded."
+  ]
  }
 }

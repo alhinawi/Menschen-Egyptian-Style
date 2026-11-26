@@ -1420,11 +1420,133 @@
    "h": 17
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p60-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "Krankheiten",
+   "x": 508,
+   "y": 759,
+   "w": 310,
+   "h": 26
+  },
+  {
+   "id": "p60-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c",
+   "answer": "Sorgen",
+   "x": 639,
+   "y": 786,
+   "w": 309,
+   "h": 26
+  },
+  {
+   "id": "p60-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d",
+   "answer": "vertrauen",
+   "x": 461,
+   "y": 813,
+   "w": 312,
+   "h": 26
+  },
+  {
+   "id": "p60-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 e",
+   "answer": "Notfall",
+   "x": 332,
+   "y": 867,
+   "w": 313,
+   "h": 26
+  },
+  {
+   "id": "p60-2f",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 f",
+   "answer": "Sprechstunde",
+   "x": 309,
+   "y": 892,
+   "w": 310,
+   "h": 26
+  },
+  {
+   "id": "p60-2g",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 g",
+   "answer": "sterben",
+   "x": 229,
+   "y": 958,
+   "w": 310,
+   "h": 26
+  },
+  {
+   "id": "p60-2h",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 h",
+   "answer": "Wahrheit",
+   "x": 199,
+   "y": 1025,
+   "w": 313,
+   "h": 26
+  },
+  {
+   "id": "p60-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "er mir immer die Wahrheit sagt",
+   "x": 541,
+   "y": 1211,
+   "w": 455,
+   "h": 26
+  },
+  {
+   "id": "p60-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "ihr Hund gestorben ist",
+   "x": 541,
+   "y": 1277,
+   "w": 455,
+   "h": 26
+  },
+  {
+   "id": "p60-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "sie abnehmen möchte",
+   "x": 541,
+   "y": 1343,
+   "w": 455,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g2",
+   "label": "Ordnen Sie zu"
+  },
+  {
+   "id": "g3",
+   "label": "Ergänzen Sie die Sätze"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel, Lektion 8 Basistraining ex2-3. Ex1 (picture crossword with Lösungswort) left ungraded."
+  ]
  }
 }
