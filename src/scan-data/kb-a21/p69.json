@@ -2904,13 +2904,75 @@
    "h": 14
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p69-141a",
+   "group": "g141",
+   "kind": "checkbox",
+   "label": "141 a",
+   "answer": "false",
+   "x": 909,
+   "y": 1171,
+   "w": 29,
+   "h": 29
+  },
+  {
+   "id": "p69-141b",
+   "group": "g141",
+   "kind": "checkbox",
+   "label": "141 b",
+   "answer": "true",
+   "x": 909,
+   "y": 1197,
+   "w": 29,
+   "h": 29
+  },
+  {
+   "id": "p69-141c",
+   "group": "g141",
+   "kind": "checkbox",
+   "label": "141 c",
+   "answer": "true",
+   "x": 909,
+   "y": 1250,
+   "w": 29,
+   "h": 29
+  },
+  {
+   "id": "p69-141d",
+   "group": "g141",
+   "kind": "checkbox",
+   "label": "141 d",
+   "answer": "false",
+   "x": 909,
+   "y": 1277,
+   "w": 29,
+   "h": 29
+  },
+  {
+   "id": "p69-141e",
+   "group": "g141",
+   "kind": "checkbox",
+   "label": "141 e",
+   "answer": "true",
+   "x": 909,
+   "y": 1303,
+   "w": 29,
+   "h": 29
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g141",
+   "label": "1 Was ist richtig?"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "1 from the official Hueber Lösungen (A2): richtig b, c, e. 2 is a personal question."
   ],
   "verifiedWords": 0,
   "totalWords": 414

@@ -1959,13 +1959,153 @@
    "h": 18
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p70-1421-das Essen ist verbrannt",
+   "group": "g142",
+   "kind": "radio",
+   "label": "das Essen ist verbrannt",
+   "name": "p70-1421",
+   "value": "das Essen ist verbrannt",
+   "answer": "false",
+   "x": 184,
+   "y": 315,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p70-1421-der Herd funktioniert nicht",
+   "group": "g142",
+   "kind": "radio",
+   "label": "der Herd funktioniert nicht",
+   "name": "p70-1421",
+   "value": "der Herd funktioniert nicht",
+   "answer": "true",
+   "x": 184,
+   "y": 343,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p70-1422-Lieblingsrestaurant zeigen",
+   "group": "g142",
+   "kind": "radio",
+   "label": "Lieblingsrestaurant zeigen",
+   "name": "p70-1422",
+   "value": "Lieblingsrestaurant zeigen",
+   "answer": "true",
+   "x": 184,
+   "y": 424,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p70-1422-Lieblingsrestaurant kennenlernen",
+   "group": "g142",
+   "kind": "radio",
+   "label": "Lieblingsrestaurant kennenlernen",
+   "name": "p70-1422",
+   "value": "Lieblingsrestaurant kennenlernen",
+   "answer": "false",
+   "x": 184,
+   "y": 450,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p70-1431",
+   "group": "g143",
+   "kind": "text",
+   "label": "143 1",
+   "answer": "Reis|reis",
+   "x": 497,
+   "y": 538,
+   "w": 199,
+   "h": 26
+  },
+  {
+   "id": "p70-1432",
+   "group": "g143",
+   "kind": "text",
+   "label": "143 2",
+   "answer": "Lammfleisch|lammfleisch",
+   "x": 383,
+   "y": 564,
+   "w": 201,
+   "h": 26
+  },
+  {
+   "id": "p70-1433",
+   "group": "g143",
+   "kind": "text",
+   "label": "143 3",
+   "answer": "Reis|reis",
+   "x": 184,
+   "y": 592,
+   "w": 205,
+   "h": 26
+  },
+  {
+   "id": "p70-1434",
+   "group": "g143",
+   "kind": "text",
+   "label": "143 4",
+   "answer": "Suppe|suppe",
+   "x": 495,
+   "y": 619,
+   "w": 183,
+   "h": 26
+  },
+  {
+   "id": "p70-1435",
+   "group": "g143",
+   "kind": "text",
+   "label": "143 5",
+   "answer": "Fisch|fisch",
+   "x": 413,
+   "y": 646,
+   "w": 201,
+   "h": 26
+  },
+  {
+   "id": "p70-1436",
+   "group": "g143",
+   "kind": "text",
+   "label": "143 6",
+   "answer": "Tomaten|tomaten",
+   "x": 511,
+   "y": 674,
+   "w": 205,
+   "h": 26
+  },
+  {
+   "id": "p70-1437",
+   "group": "g143",
+   "kind": "text",
+   "label": "143 7",
+   "answer": "Fisch|fisch",
+   "x": 184,
+   "y": 727,
+   "w": 201,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g142",
+   "label": "1 a Was ist richtig?"
+  },
+  {
+   "id": "g143",
+   "label": "1 b Was bestellen die Personen?"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "1a and 1b from the official Hueber Lösungen (A2). 1c is speaking and 2 (matching with a curve, no boxes) are not graded."
   ],
   "verifiedWords": 0,
   "totalWords": 279
