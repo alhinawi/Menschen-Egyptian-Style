@@ -1945,11 +1945,232 @@
    "h": 10
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p19-3v0",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b Verb",
+   "answer": "geben",
+   "x": 135,
+   "y": 339,
+   "w": 140,
+   "h": 26
+  },
+  {
+   "id": "p19-3n0",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b Nominativ",
+   "answer": "Du",
+   "x": 290,
+   "y": 339,
+   "w": 215,
+   "h": 26
+  },
+  {
+   "id": "p19-3d0",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b Dativ",
+   "answer": "deinem Bruder",
+   "x": 525,
+   "y": 339,
+   "w": 215,
+   "h": 26
+  },
+  {
+   "id": "p19-3a0",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b Akkusativ",
+   "answer": "die Fernbedienung",
+   "x": 758,
+   "y": 339,
+   "w": 215,
+   "h": 26
+  },
+  {
+   "id": "p19-3v1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b Verb",
+   "answer": "schicken",
+   "x": 135,
+   "y": 373,
+   "w": 140,
+   "h": 26
+  },
+  {
+   "id": "p19-3n1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b Nominativ",
+   "answer": "Heike",
+   "x": 290,
+   "y": 373,
+   "w": 215,
+   "h": 26
+  },
+  {
+   "id": "p19-3d1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b Dativ",
+   "answer": "ihrer Oma",
+   "x": 525,
+   "y": 373,
+   "w": 215,
+   "h": 26
+  },
+  {
+   "id": "p19-3a1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b Akkusativ",
+   "answer": "eine Postkarte",
+   "x": 758,
+   "y": 373,
+   "w": 215,
+   "h": 26
+  },
+  {
+   "id": "p19-3v2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b Verb",
+   "answer": "leihen",
+   "x": 135,
+   "y": 406,
+   "w": 140,
+   "h": 26
+  },
+  {
+   "id": "p19-3n2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b Nominativ",
+   "answer": "Hans",
+   "x": 290,
+   "y": 406,
+   "w": 215,
+   "h": 26
+  },
+  {
+   "id": "p19-3d2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b Dativ",
+   "answer": "seiner Schwester",
+   "x": 525,
+   "y": 406,
+   "w": 215,
+   "h": 26
+  },
+  {
+   "id": "p19-3a2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b Akkusativ",
+   "answer": "keine Bücher",
+   "x": 758,
+   "y": 406,
+   "w": 215,
+   "h": 26
+  },
+  {
+   "id": "p19-3v-kaufen-n",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b Nominativ",
+   "answer": "Meine Freundin",
+   "x": 290,
+   "y": 306,
+   "w": 215,
+   "h": 26
+  },
+  {
+   "id": "p19-3k-d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b Dativ",
+   "answer": "ihren Kindern",
+   "x": 525,
+   "y": 306,
+   "w": 215,
+   "h": 26
+  },
+  {
+   "id": "p19-3k-a",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b Akkusativ",
+   "answer": "viele DVDs",
+   "x": 758,
+   "y": 306,
+   "w": 215,
+   "h": 26
+  },
+  {
+   "id": "p19-6b",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 b",
+   "answer": "sie",
+   "x": 202,
+   "y": 1191,
+   "w": 160,
+   "h": 26
+  },
+  {
+   "id": "p19-6d",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 d",
+   "answer": "sie",
+   "x": 285,
+   "y": 1298,
+   "w": 165,
+   "h": 26
+  },
+  {
+   "id": "p19-6e",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 e",
+   "answer": "es",
+   "x": 202,
+   "y": 1343,
+   "w": 160,
+   "h": 26
+  },
+  {
+   "id": "p19-6f",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 f",
+   "answer": "sie",
+   "x": 250,
+   "y": 1404,
+   "w": 163,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g3",
+   "label": "3 b Ergänzen Sie aus a"
+  },
+  {
+   "id": "g6",
+   "label": "6 Personalpronomen"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "4 (write sentences) is left ungraded. 6 c is left ungraded: the key answer does not fit the printed blank."
+  ]
  }
 }

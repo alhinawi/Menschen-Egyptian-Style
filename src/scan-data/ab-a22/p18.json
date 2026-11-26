@@ -2358,11 +2358,177 @@
    "h": 8
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p18-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "Rundfunk",
+   "x": 515,
+   "y": 376,
+   "w": 150,
+   "h": 26
+  },
+  {
+   "id": "p18-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "Spielfilm",
+   "x": 451,
+   "y": 432,
+   "w": 105,
+   "h": 26
+  },
+  {
+   "id": "p18-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d",
+   "answer": "Sendung",
+   "x": 603,
+   "y": 463,
+   "w": 103,
+   "h": 26
+  },
+  {
+   "id": "p18-1e1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e1",
+   "answer": "Programm",
+   "x": 250,
+   "y": 515,
+   "w": 108,
+   "h": 26
+  },
+  {
+   "id": "p18-1e2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e2",
+   "answer": "Sender",
+   "x": 367,
+   "y": 543,
+   "w": 105,
+   "h": 26
+  },
+  {
+   "id": "p18-1f1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 f1",
+   "answer": "Serie",
+   "x": 324,
+   "y": 569,
+   "w": 109,
+   "h": 26
+  },
+  {
+   "id": "p18-1f2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 f2",
+   "answer": "Folge",
+   "x": 513,
+   "y": 594,
+   "w": 108,
+   "h": 26
+  },
+  {
+   "id": "p18-1f3",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 f3",
+   "answer": "DVD",
+   "x": 364,
+   "y": 622,
+   "w": 108,
+   "h": 26
+  },
+  {
+   "id": "p18-32",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a 2",
+   "answer": "ihren",
+   "x": 398,
+   "y": 1202,
+   "w": 166,
+   "h": 26
+  },
+  {
+   "id": "p18-33",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a 3",
+   "answer": "deinem",
+   "x": 339,
+   "y": 1230,
+   "w": 167,
+   "h": 26
+  },
+  {
+   "id": "p18-34",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a 4",
+   "answer": "ihrer",
+   "x": 324,
+   "y": 1257,
+   "w": 154,
+   "h": 26
+  },
+  {
+   "id": "p18-35",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a 5",
+   "answer": "seiner",
+   "x": 302,
+   "y": 1285,
+   "w": 151,
+   "h": 26
+  },
+  {
+   "id": "p18-37",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a 7",
+   "answer": "euren",
+   "x": 298,
+   "y": 1341,
+   "w": 163,
+   "h": 26
+  },
+  {
+   "id": "p18-38",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a 8",
+   "answer": "seinem",
+   "x": 342,
+   "y": 1366,
+   "w": 158,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "1 Unterhaltung. Ordnen Sie zu."
+  },
+  {
+   "id": "g3",
+   "label": "3 a Possessivartikel"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "2 (letters missing inside words) is left ungraded."
+  ]
  }
 }

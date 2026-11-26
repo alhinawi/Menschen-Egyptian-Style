@@ -1719,6 +1719,8 @@
  "groups": [],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Training Hören 2 (richtig/falsch): the official key lists different answers than this printed exercise, so it is left ungraded. Hören 1 is open; Aussprache has no key."
+  ]
  }
 }

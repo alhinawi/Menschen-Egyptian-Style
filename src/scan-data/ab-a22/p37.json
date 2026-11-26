@@ -2330,11 +2330,341 @@
    "h": 10
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p37-3a",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a",
+   "answer": "See",
+   "x": 400,
+   "y": 330,
+   "w": 150,
+   "h": 26
+  },
+  {
+   "id": "p37-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "Meer",
+   "x": 400,
+   "y": 356,
+   "w": 150,
+   "h": 26
+  },
+  {
+   "id": "p37-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "Küste",
+   "x": 400,
+   "y": 383,
+   "w": 150,
+   "h": 26
+  },
+  {
+   "id": "p37-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "See",
+   "x": 628,
+   "y": 330,
+   "w": 170,
+   "h": 26
+  },
+  {
+   "id": "p37-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e",
+   "answer": "Meer",
+   "x": 628,
+   "y": 356,
+   "w": 170,
+   "h": 26
+  },
+  {
+   "id": "p37-3f",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 f",
+   "answer": "Küste",
+   "x": 645,
+   "y": 383,
+   "w": 150,
+   "h": 26
+  },
+  {
+   "id": "p37-3g",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 g",
+   "answer": "Rumänien",
+   "x": 400,
+   "y": 476,
+   "w": 150,
+   "h": 26
+  },
+  {
+   "id": "p37-3h",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 h",
+   "answer": "Rumänien",
+   "x": 628,
+   "y": 476,
+   "w": 170,
+   "h": 26
+  },
+  {
+   "id": "p37-3i",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 i",
+   "answer": "Schweiz",
+   "x": 440,
+   "y": 497,
+   "w": 110,
+   "h": 26
+  },
+  {
+   "id": "p37-3j",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 j",
+   "answer": "Schweiz",
+   "x": 650,
+   "y": 497,
+   "w": 150,
+   "h": 26
+  },
+  {
+   "id": "p37-52-wohin",
+   "group": "g5",
+   "kind": "radio",
+   "label": "wohin",
+   "name": "p37-52",
+   "value": "wohin",
+   "answer": "false",
+   "x": 382,
+   "y": 1068,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p37-52-wof",
+   "group": "g5",
+   "kind": "radio",
+   "label": "wof",
+   "name": "p37-52",
+   "value": "wof",
+   "answer": "true",
+   "x": 585,
+   "y": 1068,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p37-53-wohin",
+   "group": "g5",
+   "kind": "radio",
+   "label": "wohin",
+   "name": "p37-53",
+   "value": "wohin",
+   "answer": "true",
+   "x": 382,
+   "y": 1095,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p37-53-wof",
+   "group": "g5",
+   "kind": "radio",
+   "label": "wof",
+   "name": "p37-53",
+   "value": "wof",
+   "answer": "false",
+   "x": 585,
+   "y": 1095,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p37-54-wohin",
+   "group": "g5",
+   "kind": "radio",
+   "label": "wohin",
+   "name": "p37-54",
+   "value": "wohin",
+   "answer": "false",
+   "x": 382,
+   "y": 1122,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p37-54-wof",
+   "group": "g5",
+   "kind": "radio",
+   "label": "wof",
+   "name": "p37-54",
+   "value": "wof",
+   "answer": "true",
+   "x": 585,
+   "y": 1122,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p37-55-wohin",
+   "group": "g5",
+   "kind": "radio",
+   "label": "wohin",
+   "name": "p37-55",
+   "value": "wohin",
+   "answer": "true",
+   "x": 382,
+   "y": 1148,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p37-55-wof",
+   "group": "g5",
+   "kind": "radio",
+   "label": "wof",
+   "name": "p37-55",
+   "value": "wof",
+   "answer": "false",
+   "x": 585,
+   "y": 1148,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p37-56-wohin",
+   "group": "g5",
+   "kind": "radio",
+   "label": "wohin",
+   "name": "p37-56",
+   "value": "wohin",
+   "answer": "false",
+   "x": 382,
+   "y": 1175,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p37-56-wof",
+   "group": "g5",
+   "kind": "radio",
+   "label": "wof",
+   "name": "p37-56",
+   "value": "wof",
+   "answer": "true",
+   "x": 585,
+   "y": 1175,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p37-57-wohin",
+   "group": "g5",
+   "kind": "radio",
+   "label": "wohin",
+   "name": "p37-57",
+   "value": "wohin",
+   "answer": "true",
+   "x": 382,
+   "y": 1202,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p37-57-wof",
+   "group": "g5",
+   "kind": "radio",
+   "label": "wof",
+   "name": "p37-57",
+   "value": "wof",
+   "answer": "false",
+   "x": 585,
+   "y": 1202,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p37-58-wohin",
+   "group": "g5",
+   "kind": "radio",
+   "label": "wohin",
+   "name": "p37-58",
+   "value": "wohin",
+   "answer": "true",
+   "x": 382,
+   "y": 1229,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p37-58-wof",
+   "group": "g5",
+   "kind": "radio",
+   "label": "wof",
+   "name": "p37-58",
+   "value": "wof",
+   "answer": "false",
+   "x": 585,
+   "y": 1229,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p37-59-wohin",
+   "group": "g5",
+   "kind": "radio",
+   "label": "wohin",
+   "name": "p37-59",
+   "value": "wohin",
+   "answer": "true",
+   "x": 382,
+   "y": 1255,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p37-59-wof",
+   "group": "g5",
+   "kind": "radio",
+   "label": "wof",
+   "name": "p37-59",
+   "value": "wof",
+   "answer": "false",
+   "x": 585,
+   "y": 1255,
+   "w": 24,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g3",
+   "label": "3 Wohin? Wo?"
+  },
+  {
+   "id": "g5",
+   "label": "5 Freizeit und Urlaub"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "4 (articles split across blanks) and 5b (nouns from a) are left ungraded."
+  ]
  }
 }

@@ -1749,11 +1749,74 @@
    "h": 8
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p32-8b",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 b",
+   "answer": "der Parkplatz",
+   "x": 250,
+   "y": 613,
+   "w": 200,
+   "h": 26
+  },
+  {
+   "id": "p32-8c",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 c",
+   "answer": "der Nichtraucher",
+   "x": 250,
+   "y": 652,
+   "w": 200,
+   "h": 26
+  },
+  {
+   "id": "p32-8d",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 d",
+   "answer": "die Konferenz",
+   "x": 250,
+   "y": 690,
+   "w": 200,
+   "h": 26
+  },
+  {
+   "id": "p32-8e",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 e",
+   "answer": "der Kiosk",
+   "x": 250,
+   "y": 729,
+   "w": 200,
+   "h": 26
+  },
+  {
+   "id": "p32-8f",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 f",
+   "answer": "die Rezeption",
+   "x": 250,
+   "y": 767,
+   "w": 200,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g8",
+   "label": "8 Im Hotel: Wörter bilden"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "7 (write an e-mail) is free writing. 9 (route blanks with several parts) is left ungraded. Column \"Meine Sprache\" is personal."
+  ]
  }
 }

@@ -2741,6 +2741,8 @@
  "groups": [],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Training Lesen: the official key does not match the printed items here, so it is left ungraded. Aussprache is listening and speaking practice."
+  ]
  }
 }

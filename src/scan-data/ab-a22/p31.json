@@ -2120,11 +2120,118 @@
    "h": 9
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p31-6b",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 b",
+   "answer": "noch ein Zimmer frei",
+   "x": 340,
+   "y": 1004,
+   "w": 588,
+   "h": 26
+  },
+  {
+   "id": "p31-6c",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 c",
+   "answer": "bleiben möchten",
+   "x": 558,
+   "y": 1035,
+   "w": 370,
+   "h": 26
+  },
+  {
+   "id": "p31-6d",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 d",
+   "answer": "brauche ein Zimmer für drei Nächte",
+   "x": 183,
+   "y": 1065,
+   "w": 745,
+   "h": 26
+  },
+  {
+   "id": "p31-6e",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 e",
+   "answer": "es buchen",
+   "x": 589,
+   "y": 1091,
+   "w": 340,
+   "h": 26
+  },
+  {
+   "id": "p31-6f",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 f",
+   "answer": "oder mit Halbpension",
+   "x": 513,
+   "y": 1141,
+   "w": 415,
+   "h": 26
+  },
+  {
+   "id": "p31-6g",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 g",
+   "answer": "würde gern noch wissen",
+   "x": 175,
+   "y": 1191,
+   "w": 752,
+   "h": 26
+  },
+  {
+   "id": "p31-6h",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 h",
+   "answer": "ist Ihr Schlüssel",
+   "x": 613,
+   "y": 1248,
+   "w": 315,
+   "h": 26
+  },
+  {
+   "id": "p31-6i",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 i",
+   "answer": "wecken",
+   "x": 721,
+   "y": 1274,
+   "w": 206,
+   "h": 26
+  },
+  {
+   "id": "p31-6j",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 j",
+   "answer": "Ihnen einen angenehmen Aufenthalt",
+   "x": 400,
+   "y": 1302,
+   "w": 528,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g6",
+   "label": "6 Im Hotel ein Zimmer buchen"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "4 (complete indirect questions) and 5 (write questions) are free writing; left ungraded."
+  ]
  }
 }
