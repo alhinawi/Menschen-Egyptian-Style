@@ -831,7 +831,8 @@
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "Aktionsseiten: partner, role-play or free-writing activity with no single correct answer. Left ungraded."
   ]
  }
 }
