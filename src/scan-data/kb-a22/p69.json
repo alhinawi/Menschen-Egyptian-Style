@@ -3540,7 +3540,8 @@
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "1 asks for corrected sentences with no printed answer lines, and 2 is a free task. Both are left ungraded."
   ]
  }
 }

@@ -3835,13 +3835,112 @@
    "h": 17
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p66-11",
+   "group": "g1",
+   "kind": "text",
+   "label": "3b",
+   "answer": "die Grenze",
+   "x": 790,
+   "y": 288,
+   "w": 130,
+   "h": 26
+  },
+  {
+   "id": "p66-12",
+   "group": "g1",
+   "kind": "text",
+   "label": "3c",
+   "answer": "der Pass",
+   "x": 770,
+   "y": 316,
+   "w": 130,
+   "h": 26
+  },
+  {
+   "id": "p66-21",
+   "group": "g2",
+   "kind": "text",
+   "label": "4a Zeile 1",
+   "answer": "Hast du schon mal ein ähnliches Projekt gemacht?",
+   "x": 198,
+   "y": 742,
+   "w": 375,
+   "h": 26
+  },
+  {
+   "id": "p66-22",
+   "group": "g2",
+   "kind": "text",
+   "label": "4a Zeile 2",
+   "answer": "Waren die Vorbereitungen kompliziert?",
+   "x": 198,
+   "y": 812,
+   "w": 345,
+   "h": 26
+  },
+  {
+   "id": "p66-23",
+   "group": "g2",
+   "kind": "text",
+   "label": "4a Zeile 3",
+   "answer": "Wie sah dein Alltag aus?",
+   "x": 198,
+   "y": 958,
+   "w": 345,
+   "h": 26
+  },
+  {
+   "id": "p66-24",
+   "group": "g2",
+   "kind": "text",
+   "label": "4a Zeile 4",
+   "answer": "Was hast du vermisst?",
+   "x": 625,
+   "y": 862,
+   "w": 370,
+   "h": 26
+  },
+  {
+   "id": "p66-25",
+   "group": "g2",
+   "kind": "text",
+   "label": "4a Zeile 5",
+   "answer": "Welche Pläne hast du für die Zukunft?",
+   "x": 625,
+   "y": 1030,
+   "w": 370,
+   "h": 26
+  },
+  {
+   "id": "p66-26",
+   "group": "g2",
+   "kind": "text",
+   "label": "4a Zeile 6",
+   "answer": "Was ist die schönste Erinnerung an deine Arbeit?",
+   "x": 625,
+   "y": 1140,
+   "w": 370,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "3 Was passt? (b, c)"
+  },
+  {
+   "id": "g2",
+   "label": "4 a Was passt? Ergänzen Sie die Fragen."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "3 a is printed as an example; 3 also asks for two own riddles (not graded). The question on the struck-through line is not a blank."
   ]
  }
 }

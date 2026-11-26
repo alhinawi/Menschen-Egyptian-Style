@@ -2687,13 +2687,167 @@
    "h": 16
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p67-11-richtig",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "richtig",
+   "answer": "false",
+   "x": 948,
+   "y": 265,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p67-12-richtig",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "richtig",
+   "answer": "true",
+   "x": 948,
+   "y": 291,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p67-13-richtig",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "richtig",
+   "answer": "true",
+   "x": 948,
+   "y": 319,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p67-14-richtig",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "richtig",
+   "answer": "false",
+   "x": 948,
+   "y": 347,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p67-15-richtig",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "richtig",
+   "answer": "false",
+   "x": 948,
+   "y": 375,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p67-21",
+   "group": "g2",
+   "kind": "text",
+   "label": "5a 1",
+   "answer": "konnte",
+   "x": 293,
+   "y": 617,
+   "w": 205,
+   "h": 24
+  },
+  {
+   "id": "p67-22",
+   "group": "g2",
+   "kind": "text",
+   "label": "5a 2",
+   "answer": "sollte",
+   "x": 293,
+   "y": 647,
+   "w": 205,
+   "h": 24
+  },
+  {
+   "id": "p67-23",
+   "group": "g2",
+   "kind": "text",
+   "label": "5a 3",
+   "answer": "war",
+   "x": 293,
+   "y": 740,
+   "w": 205,
+   "h": 24
+  },
+  {
+   "id": "p67-24",
+   "group": "g2",
+   "kind": "text",
+   "label": "5a 4",
+   "answer": "sah",
+   "x": 660,
+   "y": 587,
+   "w": 210,
+   "h": 24
+  },
+  {
+   "id": "p67-25",
+   "group": "g2",
+   "kind": "text",
+   "label": "5a 5",
+   "answer": "kam",
+   "x": 660,
+   "y": 619,
+   "w": 210,
+   "h": 24
+  },
+  {
+   "id": "p67-26",
+   "group": "g2",
+   "kind": "text",
+   "label": "5a 6",
+   "answer": "gab",
+   "x": 660,
+   "y": 650,
+   "w": 210,
+   "h": 24
+  },
+  {
+   "id": "p67-27",
+   "group": "g2",
+   "kind": "text",
+   "label": "5a 7",
+   "answer": "fand",
+   "x": 660,
+   "y": 680,
+   "w": 210,
+   "h": 24
+  },
+  {
+   "id": "p67-28",
+   "group": "g2",
+   "kind": "text",
+   "label": "5a 8",
+   "answer": "sagte",
+   "x": 660,
+   "y": 712,
+   "w": 210,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "4 b Sind die Sätze richtig? Kreuzen Sie an."
+  },
+  {
+   "id": "g2",
+   "label": "5 a Ergänzen Sie die Tabelle mit den Präteritumformen."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "4 b: the four own statements, 5 b and 6 are free tasks and are not graded."
   ]
  }
 }

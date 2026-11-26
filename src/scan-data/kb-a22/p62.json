@@ -2694,13 +2694,232 @@
    "h": 17
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p62-11-empfiehlt",
+   "group": "g1",
+   "kind": "radio",
+   "label": "empfiehlt",
+   "name": "p62-11",
+   "value": "empfiehlt",
+   "answer": "false",
+   "x": 364,
+   "y": 276,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p62-11-Autor",
+   "group": "g1",
+   "kind": "radio",
+   "label": "Autor",
+   "name": "p62-11",
+   "value": "Autor",
+   "answer": "true",
+   "x": 593,
+   "y": 276,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p62-12-finde",
+   "group": "g1",
+   "kind": "radio",
+   "label": "finde",
+   "name": "p62-12",
+   "value": "finde",
+   "answer": "true",
+   "x": 224,
+   "y": 334,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p62-12-bewerbe",
+   "group": "g1",
+   "kind": "radio",
+   "label": "bewerbe",
+   "name": "p62-12",
+   "value": "bewerbe",
+   "answer": "false",
+   "x": 679,
+   "y": 334,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p62-21-richtig",
+   "group": "g2",
+   "kind": "radio",
+   "label": "richtig",
+   "name": "p62-21",
+   "value": "richtig",
+   "answer": "true",
+   "x": 863,
+   "y": 1127,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p62-21-falsch",
+   "group": "g2",
+   "kind": "radio",
+   "label": "falsch",
+   "name": "p62-21",
+   "value": "falsch",
+   "answer": "false",
+   "x": 950,
+   "y": 1127,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p62-22-richtig",
+   "group": "g2",
+   "kind": "radio",
+   "label": "richtig",
+   "name": "p62-22",
+   "value": "richtig",
+   "answer": "false",
+   "x": 863,
+   "y": 1154,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p62-22-falsch",
+   "group": "g2",
+   "kind": "radio",
+   "label": "falsch",
+   "name": "p62-22",
+   "value": "falsch",
+   "answer": "true",
+   "x": 950,
+   "y": 1154,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p62-23-richtig",
+   "group": "g2",
+   "kind": "radio",
+   "label": "richtig",
+   "name": "p62-23",
+   "value": "richtig",
+   "answer": "false",
+   "x": 863,
+   "y": 1182,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p62-23-falsch",
+   "group": "g2",
+   "kind": "radio",
+   "label": "falsch",
+   "name": "p62-23",
+   "value": "falsch",
+   "answer": "true",
+   "x": 950,
+   "y": 1182,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p62-24-richtig",
+   "group": "g2",
+   "kind": "radio",
+   "label": "richtig",
+   "name": "p62-24",
+   "value": "richtig",
+   "answer": "false",
+   "x": 863,
+   "y": 1209,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p62-24-falsch",
+   "group": "g2",
+   "kind": "radio",
+   "label": "falsch",
+   "name": "p62-24",
+   "value": "falsch",
+   "answer": "true",
+   "x": 950,
+   "y": 1209,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p62-25-richtig",
+   "group": "g2",
+   "kind": "radio",
+   "label": "richtig",
+   "name": "p62-25",
+   "value": "richtig",
+   "answer": "true",
+   "x": 863,
+   "y": 1235,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p62-25-falsch",
+   "group": "g2",
+   "kind": "radio",
+   "label": "falsch",
+   "name": "p62-25",
+   "value": "falsch",
+   "answer": "false",
+   "x": 950,
+   "y": 1235,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p62-26-richtig",
+   "group": "g2",
+   "kind": "radio",
+   "label": "richtig",
+   "name": "p62-26",
+   "value": "richtig",
+   "answer": "true",
+   "x": 863,
+   "y": 1261,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p62-26-falsch",
+   "group": "g2",
+   "kind": "radio",
+   "label": "falsch",
+   "name": "p62-26",
+   "value": "falsch",
+   "answer": "false",
+   "x": 950,
+   "y": 1261,
+   "w": 24,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "3 a Was ist richtig? Kreuzen Sie an."
+  },
+  {
+   "id": "g2",
+   "label": "3 b Richtig oder falsch?"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "3 c is a free opinion task. Nothing to grade."
   ]
  }
 }

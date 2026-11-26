@@ -1882,13 +1882,284 @@
    "h": 67
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p68-11-D",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "D",
+   "answer": "false",
+   "x": 278,
+   "y": 281,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-11-A",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "A",
+   "answer": "false",
+   "x": 451,
+   "y": 281,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-11-CH",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "CH",
+   "answer": "true",
+   "x": 597,
+   "y": 281,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-12-D",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "D",
+   "answer": "true",
+   "x": 278,
+   "y": 343,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-12-A",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "A",
+   "answer": "false",
+   "x": 451,
+   "y": 343,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-12-CH",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "CH",
+   "answer": "false",
+   "x": 597,
+   "y": 343,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-13-D",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "D",
+   "answer": "true",
+   "x": 276,
+   "y": 404,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-13-A",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "A",
+   "answer": "true",
+   "x": 473,
+   "y": 404,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-13-CH",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "CH",
+   "answer": "true",
+   "x": 651,
+   "y": 404,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-14-D",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "D",
+   "answer": "false",
+   "x": 278,
+   "y": 467,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-14-A",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "A",
+   "answer": "false",
+   "x": 451,
+   "y": 467,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-14-CH",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "CH",
+   "answer": "true",
+   "x": 597,
+   "y": 467,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-15-Gulasch",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Gulasch",
+   "answer": "false",
+   "x": 276,
+   "y": 529,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-15-Käsefondue",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Käsefondue",
+   "answer": "true",
+   "x": 402,
+   "y": 529,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-15-Labskaus",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Labskaus",
+   "answer": "false",
+   "x": 569,
+   "y": 529,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-16-Graz",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Graz",
+   "answer": "false",
+   "x": 276,
+   "y": 593,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-16-Linz",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Linz",
+   "answer": "false",
+   "x": 376,
+   "y": 593,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-16-Wien",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Wien",
+   "answer": "true",
+   "x": 478,
+   "y": 593,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-17-D",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "D",
+   "answer": "false",
+   "x": 278,
+   "y": 654,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-17-A",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "A",
+   "answer": "true",
+   "x": 451,
+   "y": 654,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-17-CH",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "CH",
+   "answer": "false",
+   "x": 597,
+   "y": 654,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-18-D",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "D",
+   "answer": "false",
+   "x": 278,
+   "y": 717,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-18-A",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "A",
+   "answer": "false",
+   "x": 451,
+   "y": 717,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-18-CH",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "CH",
+   "answer": "true",
+   "x": 597,
+   "y": 717,
+   "w": 24,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "7 a Machen Sie das Quiz."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "7 a is graded with the solution printed on the page (Lösung: 1 CH, 2 D, 3 D/A/CH, 4 CH, 5 Käsefondue, 6 Wien, 7 A, 8 CH). 7 b is a group task."
   ]
  }
 }
