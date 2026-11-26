@@ -78,6 +78,8 @@ function writeFlags(book: string, flags: string[]): boolean {
   }
 }
 
+export const recordFlags = writeFlags;
+
 /** Sub-answer flag: the group's flag plus ':f-<field>'. */
 export const subFlag = (group: string, field: string) => group + ':f-' + field;
 
@@ -85,7 +87,10 @@ export const subFlag = (group: string, field: string) => group + ':f-' + field;
 export function recordSubAnswers(button: HTMLButtonElement, fields: string[]): boolean {
   const identity = exerciseIdentity(button);
   if (!identity) return false;
-  return writeFlags(identity.book, [...new Set(fields.filter(Boolean))].map(f => subFlag(identity.flag, f)));
+  // Book-given examples are pre-filled, so they are never the student's answer.
+  const examples: Record<string, string[]> = { 'done-28:t-t1': ['t-a-helga', 't-a-carlos'], 'done-34:n3': ['r4a'] };
+  const skip = examples[identity.flag] || [];
+  return writeFlags(identity.book, [...new Set(fields.filter(f => f && !skip.includes(f)))].map(f => subFlag(identity.flag, f)));
 }
 
 export function recordCompletion(button: HTMLButtonElement): boolean {

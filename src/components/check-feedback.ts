@@ -194,7 +194,9 @@ export function okFieldIds(button:HTMLButtonElement):string[]{
  const out:string[]=[];
  for(const it of keyedFields(button).items){
   const marks=[...it.els,...(it.radios||[])].map(e=>e.getAttribute('data-check-mark'));
-  if(marks.includes('ok')&&!marks.includes('bad'))out.push(it.field.id);
+  // A blank control whose key is empty reads as "right"; only an answered field with a real key earns.
+  const answered=[...it.els,...(it.radios||[])].some(e=>isToggle(e)?(e as HTMLInputElement).checked:e instanceof HTMLButtonElement?e.getAttribute('aria-pressed')==='true':elAnswered(e));
+  if(marks.includes('ok')&&!marks.includes('bad')&&answered&&String(it.field.answer??'').trim()!=='')out.push(it.field.id);
  }
  return out;
 }
