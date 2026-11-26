@@ -166,5 +166,23 @@
   "ogTitle": "Menschen A2.1 · Kursbuch Lektion 1",
   "description": "Kursbuch A2.1 interactive, with Egyptian Arabic meanings on tap.",
   "ogImage": "assets/og-ab-a12.png"
+ },
+ "kb-a21-m2.html": {
+  "title": "Menschen A2.1 · Kursbuch Lektion 4-6",
+  "ogTitle": "Menschen A2.1 · Kursbuch Lektion 4-6",
+  "description": "Kursbuch A2.1 interactive, with Egyptian Arabic meanings on tap.",
+  "ogImage": "assets/og-ab-a12.png"
+ },
+ "kb-a21-m3.html": {
+  "title": "Menschen A2.1 · Kursbuch Lektion 7-9",
+  "ogTitle": "Menschen A2.1 · Kursbuch Lektion 7-9",
+  "description": "Kursbuch A2.1 interactive, with Egyptian Arabic meanings on tap.",
+  "ogImage": "assets/og-ab-a12.png"
+ },
+ "kb-a21-m4.html": {
+  "title": "Menschen A2.1 · Kursbuch Lektion 10-12",
+  "ogTitle": "Menschen A2.1 · Kursbuch Lektion 10-12",
+  "description": "Kursbuch A2.1 interactive, with Egyptian Arabic meanings on tap.",
+  "ogImage": "assets/og-ab-a12.png"
  }
 }

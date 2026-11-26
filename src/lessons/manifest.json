@@ -685,5 +685,62 @@
     "reactExercises": true,
     "batchcss": true,
     "bookcss": true
+  },
+  "kb-a21-m2.html": {
+    "slug": "kb-a21-m2",
+    "title": "Menschen A2.1 · Kursbuch · Lektion 4-6",
+    "reader": true,
+    "themes": true,
+    "styles": [],
+    "initializers": [
+      "glossary",
+      "pronunciation-index",
+      "base-vocab",
+      "meanings",
+      "kb-a21-words",
+      "kb-a21-m2"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true,
+    "batchcss": true,
+    "bookcss": true
+  },
+  "kb-a21-m3.html": {
+    "slug": "kb-a21-m3",
+    "title": "Menschen A2.1 · Kursbuch · Lektion 7-9",
+    "reader": true,
+    "themes": true,
+    "styles": [],
+    "initializers": [
+      "glossary",
+      "pronunciation-index",
+      "base-vocab",
+      "meanings",
+      "kb-a21-words",
+      "kb-a21-m3"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true,
+    "batchcss": true,
+    "bookcss": true
+  },
+  "kb-a21-m4.html": {
+    "slug": "kb-a21-m4",
+    "title": "Menschen A2.1 · Kursbuch · Lektion 10-12",
+    "reader": true,
+    "themes": true,
+    "styles": [],
+    "initializers": [
+      "glossary",
+      "pronunciation-index",
+      "base-vocab",
+      "meanings",
+      "kb-a21-words",
+      "kb-a21-m4"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true,
+    "batchcss": true,
+    "bookcss": true
   }
 }
