@@ -1700,7 +1700,287 @@
    "h": 17
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p92-7b",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 b",
+   "answer": "unsere Mitbewohnerin Geburtstag hat",
+   "x": 233,
+   "y": 322,
+   "w": 744,
+   "h": 26
+  },
+  {
+   "id": "p92-7c",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 c",
+   "answer": "wir einkaufen gehen",
+   "x": 233,
+   "y": 440,
+   "w": 744,
+   "h": 26
+  },
+  {
+   "id": "p92-8b",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 b",
+   "answer": "mein Mann eine Diät macht, hat er schlechte Laune",
+   "x": 233,
+   "y": 639,
+   "w": 744,
+   "h": 26
+  },
+  {
+   "id": "p92-8d",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 d",
+   "answer": "Kolja sparen möchte, isst er kaum Fleisch und kocht häufiger Nudeln",
+   "x": 233,
+   "y": 768,
+   "w": 744,
+   "h": 26
+  },
+  {
+   "id": "p92-8c",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 c",
+   "answer": "wenn er scharf und vegetarisch essen möchte",
+   "x": 407,
+   "y": 705,
+   "w": 570,
+   "h": 26
+  },
+  {
+   "id": "p92-9a-1",
+   "group": "g9",
+   "kind": "radio",
+   "label": "1",
+   "name": "p92-9a",
+   "value": "1",
+   "answer": "true",
+   "x": 163,
+   "y": 925,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p92-9a-2",
+   "group": "g9",
+   "kind": "radio",
+   "label": "2",
+   "name": "p92-9a",
+   "value": "2",
+   "answer": "false",
+   "x": 580,
+   "y": 925,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p92-9b1-Bah",
+   "group": "g9",
+   "kind": "checkbox",
+   "label": "1 Bah",
+   "answer": "false",
+   "x": 758,
+   "y": 1138,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p92-9b1-Meißner",
+   "group": "g9",
+   "kind": "checkbox",
+   "label": "1 Meißner",
+   "answer": "true",
+   "x": 833,
+   "y": 1138,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p92-9b1-Bielenberg",
+   "group": "g9",
+   "kind": "checkbox",
+   "label": "1 Bielenberg",
+   "answer": "false",
+   "x": 931,
+   "y": 1138,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p92-9b2-Bah",
+   "group": "g9",
+   "kind": "checkbox",
+   "label": "2 Bah",
+   "answer": "true",
+   "x": 758,
+   "y": 1164,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p92-9b2-Meißner",
+   "group": "g9",
+   "kind": "checkbox",
+   "label": "2 Meißner",
+   "answer": "false",
+   "x": 833,
+   "y": 1164,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p92-9b2-Bielenberg",
+   "group": "g9",
+   "kind": "checkbox",
+   "label": "2 Bielenberg",
+   "answer": "false",
+   "x": 931,
+   "y": 1164,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p92-9b3-Bah",
+   "group": "g9",
+   "kind": "checkbox",
+   "label": "3 Bah",
+   "answer": "false",
+   "x": 758,
+   "y": 1191,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p92-9b3-Meißner",
+   "group": "g9",
+   "kind": "checkbox",
+   "label": "3 Meißner",
+   "answer": "true",
+   "x": 833,
+   "y": 1191,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p92-9b3-Bielenberg",
+   "group": "g9",
+   "kind": "checkbox",
+   "label": "3 Bielenberg",
+   "answer": "false",
+   "x": 931,
+   "y": 1191,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p92-9b4-Bah",
+   "group": "g9",
+   "kind": "checkbox",
+   "label": "4 Bah",
+   "answer": "true",
+   "x": 758,
+   "y": 1243,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p92-9b4-Meißner",
+   "group": "g9",
+   "kind": "checkbox",
+   "label": "4 Meißner",
+   "answer": "false",
+   "x": 833,
+   "y": 1243,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p92-9b4-Bielenberg",
+   "group": "g9",
+   "kind": "checkbox",
+   "label": "4 Bielenberg",
+   "answer": "true",
+   "x": 931,
+   "y": 1243,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p92-9b5-Bah",
+   "group": "g9",
+   "kind": "checkbox",
+   "label": "5 Bah",
+   "answer": "true",
+   "x": 758,
+   "y": 1296,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p92-9b5-Meißner",
+   "group": "g9",
+   "kind": "checkbox",
+   "label": "5 Meißner",
+   "answer": "false",
+   "x": 833,
+   "y": 1296,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p92-9b5-Bielenberg",
+   "group": "g9",
+   "kind": "checkbox",
+   "label": "5 Bielenberg",
+   "answer": "false",
+   "x": 931,
+   "y": 1296,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p92-9b6-Bah",
+   "group": "g9",
+   "kind": "checkbox",
+   "label": "6 Bah",
+   "answer": "false",
+   "x": 758,
+   "y": 1323,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p92-9b6-Meißner",
+   "group": "g9",
+   "kind": "checkbox",
+   "label": "6 Meißner",
+   "answer": "false",
+   "x": 833,
+   "y": 1323,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p92-9b6-Bielenberg",
+   "group": "g9",
+   "kind": "checkbox",
+   "label": "6 Bielenberg",
+   "answer": "true",
+   "x": 931,
+   "y": 1323,
+   "w": 22,
+   "h": 22
+  }
+ ],
  "audio": [
   {
    "id": "ab-cd1-40-92",
@@ -1721,9 +2001,24 @@
    "h": 26
   }
  ],
- "groups": [],
+ "groups": [
+  {
+   "id": "g7",
+   "label": "Sortieren Sie die wenn-Sätze"
+  },
+  {
+   "id": "g8",
+   "label": "Schreiben Sie Sätze mit wenn"
+  },
+  {
+   "id": "g9",
+   "label": "Hörer-Umfrage"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Ex 7a, 8a are printed examples. Key: official Hueber Lösungsschlüssel, L12 Basistraining 7, 8, 9. Sentences in 8c-8d have alternatives only as in the key."
+  ]
  }
 }

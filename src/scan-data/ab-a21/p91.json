@@ -1756,11 +1756,126 @@
    "h": 30
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p91-4a2",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 a2",
+   "answer": "kaum",
+   "x": 208,
+   "y": 253,
+   "w": 116,
+   "h": 26
+  },
+  {
+   "id": "p91-4a3",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 a3",
+   "answer": "gedacht",
+   "x": 604,
+   "y": 253,
+   "w": 129,
+   "h": 26
+  },
+  {
+   "id": "p91-4b1",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 b1",
+   "answer": "überrascht",
+   "x": 290,
+   "y": 314,
+   "w": 133,
+   "h": 26
+  },
+  {
+   "id": "p91-4b2",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 b2",
+   "answer": "genauso",
+   "x": 426,
+   "y": 341,
+   "w": 120,
+   "h": 26
+  },
+  {
+   "id": "p91-4c1",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 c1",
+   "answer": "klar",
+   "x": 262,
+   "y": 409,
+   "w": 108,
+   "h": 26
+  },
+  {
+   "id": "p91-4c2",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 c2",
+   "answer": "anders",
+   "x": 626,
+   "y": 409,
+   "w": 126,
+   "h": 26
+  },
+  {
+   "id": "p91-4d",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 d",
+   "answer": "komisch",
+   "x": 366,
+   "y": 446,
+   "w": 129,
+   "h": 26
+  },
+  {
+   "id": "p91-6b2-Am Ende",
+   "group": "g6",
+   "kind": "radio",
+   "label": "Am Ende",
+   "name": "p91-6b2",
+   "value": "Am Ende",
+   "answer": "true",
+   "x": 496,
+   "y": 1335,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p91-6b2-An Position 2",
+   "group": "g6",
+   "kind": "radio",
+   "label": "An Position 2",
+   "name": "p91-6b2",
+   "value": "An Position 2",
+   "answer": "false",
+   "x": 732,
+   "y": 1335,
+   "w": 22,
+   "h": 22
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g4",
+   "label": "Was hat Sie überrascht"
+  },
+  {
+   "id": "g6",
+   "label": "Wenn es regnet"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Ex 5 (own sentences), ex 6a (write the matched sentences, long lines) and ex 6b first question (two answers) are not graded. Key: official Hueber Lösungsschlüssel, L12 Basistraining 4 and 6b."
+  ]
  }
 }

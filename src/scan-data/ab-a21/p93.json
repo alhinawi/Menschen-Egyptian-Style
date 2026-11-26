@@ -1906,6 +1906,8 @@
  "groups": [],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Training Schreiben (mark expressions in the forum post, write a reply) and Aussprache (listen and repeat) are open or audio tasks, so nothing is graded here."
+  ]
  }
 }

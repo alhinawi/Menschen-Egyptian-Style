@@ -2190,11 +2190,192 @@
    "h": 13
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p94-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "genug",
+   "x": 157,
+   "y": 295,
+   "w": 207,
+   "h": 26
+  },
+  {
+   "id": "p94-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "durchschnittlich",
+   "x": 157,
+   "y": 321,
+   "w": 207,
+   "h": 26
+  },
+  {
+   "id": "p94-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d",
+   "answer": "Hälfte",
+   "x": 363,
+   "y": 374,
+   "w": 210,
+   "h": 26
+  },
+  {
+   "id": "p94-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e",
+   "answer": "Prozent",
+   "x": 688,
+   "y": 373,
+   "w": 208,
+   "h": 26
+  },
+  {
+   "id": "p94-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "beschwere ich mich",
+   "x": 653,
+   "y": 540,
+   "w": 328,
+   "h": 26
+  },
+  {
+   "id": "p94-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c",
+   "answer": "sie Geburtstag hat",
+   "x": 665,
+   "y": 612,
+   "w": 315,
+   "h": 26
+  },
+  {
+   "id": "p94-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d",
+   "answer": "Jugendliche zu viel Alkohol trinken",
+   "x": 438,
+   "y": 676,
+   "w": 542,
+   "h": 26
+  },
+  {
+   "id": "p94-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 e",
+   "answer": "hat er schlechte Laune",
+   "x": 539,
+   "y": 738,
+   "w": 441,
+   "h": 26
+  },
+  {
+   "id": "p94-2f",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 f",
+   "answer": "es mager ist",
+   "x": 509,
+   "y": 806,
+   "w": 472,
+   "h": 26
+  },
+  {
+   "id": "p94-3a",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a",
+   "answer": "ich nicht gedacht",
+   "x": 708,
+   "y": 1009,
+   "w": 244,
+   "h": 26
+  },
+  {
+   "id": "p94-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "wirklich",
+   "x": 246,
+   "y": 1029,
+   "w": 244,
+   "h": 26
+  },
+  {
+   "id": "p94-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "mir nicht klar",
+   "x": 244,
+   "y": 1062,
+   "w": 276,
+   "h": 26
+  },
+  {
+   "id": "p94-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "bei uns",
+   "x": 181,
+   "y": 1139,
+   "w": 274,
+   "h": 26
+  },
+  {
+   "id": "p94-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e",
+   "answer": "ich komisch",
+   "x": 594,
+   "y": 1139,
+   "w": 271,
+   "h": 26
+  },
+  {
+   "id": "p94-3f",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 f",
+   "answer": "seiner Heimat",
+   "x": 206,
+   "y": 1192,
+   "w": 278,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Was essen die Deutschen"
+  },
+  {
+   "id": "g2",
+   "label": "Ergänzen Sie die Sätze"
+  },
+  {
+   "id": "g3",
+   "label": "Ordnen Sie zu"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel, L12 Test (Lektion 12 column). The points boxes are self-scored by the learner and not graded."
+  ]
  }
 }

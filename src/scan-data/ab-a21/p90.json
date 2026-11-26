@@ -1371,11 +1371,122 @@
    "h": 17
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p90-2fisch",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 fisch",
+   "answer": "Fisch",
+   "x": 371,
+   "y": 495,
+   "w": 192,
+   "h": 29
+  },
+  {
+   "id": "p90-2limo",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 limo",
+   "answer": "Limonade",
+   "x": 371,
+   "y": 561,
+   "w": 192,
+   "h": 29
+  },
+  {
+   "id": "p90-2wasser",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 wasser",
+   "answer": "Mineralwasser",
+   "x": 371,
+   "y": 627,
+   "w": 192,
+   "h": 29
+  },
+  {
+   "id": "p90-2brot",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 brot",
+   "answer": "Brot",
+   "x": 371,
+   "y": 692,
+   "w": 192,
+   "h": 29
+  },
+  {
+   "id": "p90-2tee",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 tee",
+   "answer": "Tee",
+   "x": 371,
+   "y": 758,
+   "w": 192,
+   "h": 29
+  },
+  {
+   "id": "p90-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "doppelt",
+   "x": 227,
+   "y": 1060,
+   "w": 159,
+   "h": 26
+  },
+  {
+   "id": "p90-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "die Hälfte",
+   "x": 242,
+   "y": 1129,
+   "w": 156,
+   "h": 26
+  },
+  {
+   "id": "p90-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "Prozent",
+   "x": 204,
+   "y": 1273,
+   "w": 158,
+   "h": 26
+  },
+  {
+   "id": "p90-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e",
+   "answer": "häufiger",
+   "x": 186,
+   "y": 1366,
+   "w": 156,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g2",
+   "label": "Ergänzen und vergleichen"
+  },
+  {
+   "id": "g3",
+   "label": "Freizeitaktivitäten"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel, L12 Basistraining 2 (Deutsch column) and 3 b-e. Ex1 (cross out the odd word) and the \"Meine Sprache\" column are ungraded."
+  ]
  }
 }
