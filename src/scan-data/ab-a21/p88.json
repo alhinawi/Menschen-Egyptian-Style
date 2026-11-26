@@ -2099,11 +2099,203 @@
    "h": 17
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p88-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "Mitarbeiterinnen",
+   "x": 184,
+   "y": 298,
+   "w": 282,
+   "h": 24
+  },
+  {
+   "id": "p88-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "Rucksäcke",
+   "x": 483,
+   "y": 323,
+   "w": 242,
+   "h": 24
+  },
+  {
+   "id": "p88-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d",
+   "answer": "Schmuck",
+   "x": 234,
+   "y": 350,
+   "w": 247,
+   "h": 24
+  },
+  {
+   "id": "p88-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e",
+   "answer": "Briefpapier",
+   "x": 645,
+   "y": 455,
+   "w": 260,
+   "h": 24
+  },
+  {
+   "id": "p88-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 f",
+   "answer": "Meinung",
+   "x": 254,
+   "y": 482,
+   "w": 257,
+   "h": 24
+  },
+  {
+   "id": "p88-1g",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 g",
+   "answer": "Artikel",
+   "x": 184,
+   "y": 508,
+   "w": 256,
+   "h": 24
+  },
+  {
+   "id": "p88-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "Erinnerst du dich an den letzten Urlaub",
+   "x": 184,
+   "y": 640,
+   "w": 384,
+   "h": 24
+  },
+  {
+   "id": "p88-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c",
+   "answer": "Meine Kinder streiten sich schon wieder",
+   "x": 184,
+   "y": 667,
+   "w": 369,
+   "h": 24
+  },
+  {
+   "id": "p88-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d",
+   "answer": "Tobias ärgert sich sehr",
+   "x": 184,
+   "y": 694,
+   "w": 538,
+   "h": 24
+  },
+  {
+   "id": "p88-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 e",
+   "answer": "Wie fühlen Sie sich",
+   "x": 360,
+   "y": 720,
+   "w": 385,
+   "h": 24
+  },
+  {
+   "id": "p88-3a",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a",
+   "answer": "Herzlichen Glückwunsch",
+   "x": 159,
+   "y": 944,
+   "w": 475,
+   "h": 24
+  },
+  {
+   "id": "p88-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "finde es schön",
+   "x": 193,
+   "y": 970,
+   "w": 477,
+   "h": 24
+  },
+  {
+   "id": "p88-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "freue ich mich auch",
+   "x": 252,
+   "y": 1023,
+   "w": 480,
+   "h": 24
+  },
+  {
+   "id": "p88-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "für die gute Zusammenarbeit",
+   "x": 329,
+   "y": 1077,
+   "w": 485,
+   "h": 24
+  },
+  {
+   "id": "p88-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e",
+   "answer": "wünschen für die Zukunft",
+   "x": 195,
+   "y": 1103,
+   "w": 486,
+   "h": 24
+  },
+  {
+   "id": "p88-3f",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 f",
+   "answer": "viel Erfolg",
+   "x": 159,
+   "y": 1129,
+   "w": 475,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Wörter"
+  },
+  {
+   "id": "g2",
+   "label": "Sätze schreiben"
+  },
+  {
+   "id": "g3",
+   "label": "Alles Gute zum Jubiläum"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel (p107), Lektion 11 Test 1, 2 and 3."
+  ]
  }
 }

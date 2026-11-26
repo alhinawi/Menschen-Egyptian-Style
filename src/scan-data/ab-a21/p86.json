@@ -1973,11 +1973,85 @@
    "h": 16
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p86-7b",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 b",
+   "answer": "hat sich die ganze Zeit mit einer anderen Kollegin unterhalten",
+   "x": 212,
+   "y": 313,
+   "w": 455,
+   "h": 24
+  },
+  {
+   "id": "p86-7c",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 c",
+   "answer": "hat sich eine Kundin beschwert",
+   "x": 445,
+   "y": 340,
+   "w": 493,
+   "h": 24
+  },
+  {
+   "id": "p86-7d",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 d",
+   "answer": "haben wir uns gestritten",
+   "x": 220,
+   "y": 386,
+   "w": 520,
+   "h": 24
+  },
+  {
+   "id": "p86-7e",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 e",
+   "answer": "Verstehst du dich",
+   "x": 181,
+   "y": 412,
+   "w": 428,
+   "h": 24
+  },
+  {
+   "id": "p86-7f",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 f",
+   "answer": "freue mich schon",
+   "x": 598,
+   "y": 438,
+   "w": 333,
+   "h": 24
+  },
+  {
+   "id": "p86-7g",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 g",
+   "answer": "können wir uns treffen",
+   "x": 402,
+   "y": 464,
+   "w": 360,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g7",
+   "label": "Ergänzen Sie die Sätze"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel, L11 Basistraining 7 b-g. Ex8 (blanks are single letters between printed text), ex9 (sorting phrases into a table, no boxes) and ex9b (own card) are ungraded."
+  ]
  }
 }

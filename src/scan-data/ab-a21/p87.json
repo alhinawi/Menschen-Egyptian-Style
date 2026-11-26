@@ -2358,6 +2358,8 @@
  "groups": [],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Training Sprechen (notes, sorting phrases without boxes, speaking) and Aussprache (intonation arrows, listening) have no typed answers, so nothing is graded on this page."
+  ]
  }
 }

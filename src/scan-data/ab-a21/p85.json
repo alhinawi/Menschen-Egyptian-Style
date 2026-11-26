@@ -1693,11 +1693,122 @@
    "h": 13
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p85-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "Stoff",
+   "x": 522,
+   "y": 281,
+   "w": 210,
+   "h": 26
+  },
+  {
+   "id": "p85-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "Schmuck",
+   "x": 244,
+   "y": 320,
+   "w": 207,
+   "h": 26
+  },
+  {
+   "id": "p85-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "Briefumschläge",
+   "x": 495,
+   "y": 358,
+   "w": 211,
+   "h": 26
+  },
+  {
+   "id": "p85-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e",
+   "answer": "Glas",
+   "x": 172,
+   "y": 437,
+   "w": 215,
+   "h": 26
+  },
+  {
+   "id": "p85-4ich",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 ich",
+   "answer": "mich",
+   "x": 479,
+   "y": 847,
+   "w": 142,
+   "h": 26
+  },
+  {
+   "id": "p85-4er",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 er",
+   "answer": "sich",
+   "x": 479,
+   "y": 909,
+   "w": 142,
+   "h": 26
+  },
+  {
+   "id": "p85-4wir",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 wir",
+   "answer": "uns",
+   "x": 479,
+   "y": 941,
+   "w": 142,
+   "h": 26
+  },
+  {
+   "id": "p85-4ihr",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 ihr",
+   "answer": "euch",
+   "x": 479,
+   "y": 972,
+   "w": 142,
+   "h": 26
+  },
+  {
+   "id": "p85-4sie",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 sie",
+   "answer": "sich",
+   "x": 479,
+   "y": 1003,
+   "w": 142,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g3",
+   "label": "Ordnen Sie zu"
+  },
+  {
+   "id": "g4",
+   "label": "Pronomen in der Tabelle"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel, L11 Basistraining 3 and 4b (pronoun column). Ex4a (matching without boxes), the last table column, ex5 and ex6 (own sentences) are ungraded."
+  ]
  }
 }
