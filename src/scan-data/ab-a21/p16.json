@@ -2468,9 +2468,9 @@
    "kind": "text",
    "label": "3 a",
    "answer": "eine Lampe auf den Tisch",
-   "x": 364,
-   "y": 907,
-   "w": 375,
+   "x": 365,
+   "y": 909,
+   "w": 379,
    "h": 26
   },
   {
@@ -2479,9 +2479,9 @@
    "kind": "text",
    "label": "3 b",
    "answer": "helle Kissen auf das Sofa",
-   "x": 358,
-   "y": 961,
-   "w": 384,
+   "x": 362,
+   "y": 963,
+   "w": 379,
    "h": 26
   },
   {
@@ -2490,9 +2490,9 @@
    "kind": "text",
    "label": "3 c",
    "answer": "einen Spiegel an die Wand",
-   "x": 438,
-   "y": 988,
-   "w": 375,
+   "x": 439,
+   "y": 990,
+   "w": 378,
    "h": 26
   },
   {
@@ -2501,9 +2501,9 @@
    "kind": "text",
    "label": "3 d",
    "answer": "viele Bücher",
-   "x": 666,
-   "y": 1015,
-   "w": 269,
+   "x": 713,
+   "y": 1017,
+   "w": 224,
    "h": 26
   }
  ],

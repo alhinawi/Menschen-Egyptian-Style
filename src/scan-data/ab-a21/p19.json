@@ -1721,7 +1721,86 @@
    "h": 13
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p19-5a1-wandern",
+   "group": "g5a",
+   "kind": "radio",
+   "label": "wandern",
+   "name": "p19-5a1",
+   "value": "wandern",
+   "answer": "false",
+   "x": 154,
+   "y": 1270,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p19-5a1-erholung",
+   "group": "g5a",
+   "kind": "radio",
+   "label": "erholung",
+   "name": "p19-5a1",
+   "value": "erholung",
+   "answer": "false",
+   "x": 439,
+   "y": 1270,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p19-5a1-bauernhof",
+   "group": "g5a",
+   "kind": "radio",
+   "label": "bauernhof",
+   "name": "p19-5a1",
+   "value": "bauernhof",
+   "answer": "true",
+   "x": 704,
+   "y": 1270,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p19-5a2-radtour",
+   "group": "g5a",
+   "kind": "radio",
+   "label": "radtour",
+   "name": "p19-5a2",
+   "value": "radtour",
+   "answer": "true",
+   "x": 154,
+   "y": 1334,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p19-5a2-verona",
+   "group": "g5a",
+   "kind": "radio",
+   "label": "verona",
+   "name": "p19-5a2",
+   "value": "verona",
+   "answer": "false",
+   "x": 394,
+   "y": 1334,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p19-5a2-strand",
+   "group": "g5a",
+   "kind": "radio",
+   "label": "strand",
+   "name": "p19-5a2",
+   "value": "strand",
+   "answer": "false",
+   "x": 661,
+   "y": 1334,
+   "w": 22,
+   "h": 22
+  }
+ ],
  "audio": [
   {
    "id": "ab-cd1-10-19",
@@ -1742,9 +1821,16 @@
    "h": 26
   }
  ],
- "groups": [],
+ "groups": [
+  {
+   "id": "g5a",
+   "label": "5a Was passt am besten?"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungen (L3 Basistraining 5a). Ex 4 (Kleinanzeigen letter gaps) and the 4b table are not graded."
+  ]
  }
 }

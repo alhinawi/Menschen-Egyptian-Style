@@ -2127,11 +2127,297 @@
    "h": 16
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p20-5b1-r",
+   "group": "g5b",
+   "kind": "radio",
+   "label": "r",
+   "name": "p20-5b1",
+   "value": "r",
+   "answer": "true",
+   "x": 796,
+   "y": 247,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-5b1-f",
+   "group": "g5b",
+   "kind": "radio",
+   "label": "f",
+   "name": "p20-5b1",
+   "value": "f",
+   "answer": "false",
+   "x": 878,
+   "y": 247,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-5b2-r",
+   "group": "g5b",
+   "kind": "radio",
+   "label": "r",
+   "name": "p20-5b2",
+   "value": "r",
+   "answer": "false",
+   "x": 796,
+   "y": 274,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-5b2-f",
+   "group": "g5b",
+   "kind": "radio",
+   "label": "f",
+   "name": "p20-5b2",
+   "value": "f",
+   "answer": "true",
+   "x": 878,
+   "y": 274,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-5b3-r",
+   "group": "g5b",
+   "kind": "radio",
+   "label": "r",
+   "name": "p20-5b3",
+   "value": "r",
+   "answer": "false",
+   "x": 796,
+   "y": 302,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-5b3-f",
+   "group": "g5b",
+   "kind": "radio",
+   "label": "f",
+   "name": "p20-5b3",
+   "value": "f",
+   "answer": "true",
+   "x": 878,
+   "y": 302,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-5b4-r",
+   "group": "g5b",
+   "kind": "radio",
+   "label": "r",
+   "name": "p20-5b4",
+   "value": "r",
+   "answer": "true",
+   "x": 796,
+   "y": 330,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-5b4-f",
+   "group": "g5b",
+   "kind": "radio",
+   "label": "f",
+   "name": "p20-5b4",
+   "value": "f",
+   "answer": "false",
+   "x": 878,
+   "y": 330,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-5b5-r",
+   "group": "g5b",
+   "kind": "radio",
+   "label": "r",
+   "name": "p20-5b5",
+   "value": "r",
+   "answer": "true",
+   "x": 796,
+   "y": 408,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-5b5-f",
+   "group": "g5b",
+   "kind": "radio",
+   "label": "f",
+   "name": "p20-5b5",
+   "value": "f",
+   "answer": "false",
+   "x": 878,
+   "y": 408,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-5b6-r",
+   "group": "g5b",
+   "kind": "radio",
+   "label": "r",
+   "name": "p20-5b6",
+   "value": "r",
+   "answer": "false",
+   "x": 796,
+   "y": 436,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-5b6-f",
+   "group": "g5b",
+   "kind": "radio",
+   "label": "f",
+   "name": "p20-5b6",
+   "value": "f",
+   "answer": "true",
+   "x": 878,
+   "y": 436,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-5b7-r",
+   "group": "g5b",
+   "kind": "radio",
+   "label": "r",
+   "name": "p20-5b7",
+   "value": "r",
+   "answer": "false",
+   "x": 796,
+   "y": 463,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-5b7-f",
+   "group": "g5b",
+   "kind": "radio",
+   "label": "f",
+   "name": "p20-5b7",
+   "value": "f",
+   "answer": "true",
+   "x": 878,
+   "y": 463,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-5b8-r",
+   "group": "g5b",
+   "kind": "radio",
+   "label": "r",
+   "name": "p20-5b8",
+   "value": "r",
+   "answer": "false",
+   "x": 796,
+   "y": 488,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-5b8-f",
+   "group": "g5b",
+   "kind": "radio",
+   "label": "f",
+   "name": "p20-5b8",
+   "value": "f",
+   "answer": "true",
+   "x": 878,
+   "y": 488,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p20-8b",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 b",
+   "answer": "ich fahre lieber",
+   "x": 287,
+   "y": 1145,
+   "w": 434,
+   "h": 26
+  },
+  {
+   "id": "p20-8c",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 c",
+   "answer": "gefällt mir überhaupt nicht",
+   "x": 511,
+   "y": 1170,
+   "w": 400,
+   "h": 26
+  },
+  {
+   "id": "p20-8d",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 d",
+   "answer": "liegen E-Bikes gerade im Trend",
+   "x": 452,
+   "y": 1224,
+   "w": 430,
+   "h": 26
+  },
+  {
+   "id": "p20-8e",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 e",
+   "answer": "sind gerade in",
+   "x": 403,
+   "y": 1248,
+   "w": 318,
+   "h": 26
+  },
+  {
+   "id": "p20-8f",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 f",
+   "answer": "die Idee funktioniert",
+   "x": 156,
+   "y": 1277,
+   "w": 469,
+   "h": 26
+  },
+  {
+   "id": "p20-8g",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 g",
+   "answer": "ich glaube schon",
+   "x": 235,
+   "y": 1307,
+   "w": 413,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g5b",
+   "label": "5b Richtig oder falsch?"
+  },
+  {
+   "id": "g8",
+   "label": "8 Ordnen Sie zu"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungen (L3 Basistraining 5b, 8). Ex 6 (write sentences) and ex 7 (partner task) are not graded."
+  ]
  }
 }

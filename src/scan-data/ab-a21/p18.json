@@ -1385,11 +1385,122 @@
    "h": 18
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p18-1b2",
+   "group": "g1b",
+   "kind": "text",
+   "label": "1b 2",
+   "answer": "Beratung",
+   "x": 218,
+   "y": 446,
+   "w": 198,
+   "h": 26
+  },
+  {
+   "id": "p18-1b3",
+   "group": "g1b",
+   "kind": "text",
+   "label": "1b 3",
+   "answer": "Erfahrung",
+   "x": 770,
+   "y": 471,
+   "w": 202,
+   "h": 26
+  },
+  {
+   "id": "p18-1b4",
+   "group": "g1b",
+   "kind": "text",
+   "label": "1b 4",
+   "answer": "Anstrengung",
+   "x": 186,
+   "y": 525,
+   "w": 196,
+   "h": 26
+  },
+  {
+   "id": "p18-1b5",
+   "group": "g1b",
+   "kind": "text",
+   "label": "1b 5",
+   "answer": "Wanderung",
+   "x": 562,
+   "y": 578,
+   "w": 196,
+   "h": 26
+  },
+  {
+   "id": "p18-1b6",
+   "group": "g1b",
+   "kind": "text",
+   "label": "1b 6",
+   "answer": "Anmeldung",
+   "x": 291,
+   "y": 603,
+   "w": 192,
+   "h": 26
+  },
+  {
+   "id": "p18-2v1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 v1",
+   "answer": "wandern",
+   "x": 161,
+   "y": 774,
+   "w": 181,
+   "h": 26
+  },
+  {
+   "id": "p18-2v2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 v2",
+   "answer": "verkaufen",
+   "x": 161,
+   "y": 806,
+   "w": 181,
+   "h": 26
+  },
+  {
+   "id": "p18-2v3",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 v3",
+   "answer": "beraten",
+   "x": 161,
+   "y": 837,
+   "w": 181,
+   "h": 26
+  },
+  {
+   "id": "p18-2p4",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 p4",
+   "answer": "der Vermieter",
+   "x": 356,
+   "y": 872,
+   "w": 170,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1b",
+   "label": "1b Ordnen Sie die Wörter aus a zu"
+  },
+  {
+   "id": "g2",
+   "label": "2 Verben oder Nomen"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungen (L3 Basistraining 1b, 2). Ex 1a and the word search (ex 3) are not graded."
+  ]
  }
 }

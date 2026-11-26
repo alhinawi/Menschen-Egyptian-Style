@@ -2281,11 +2281,203 @@
    "h": 17
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p22-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "Tiere",
+   "x": 661,
+   "y": 309,
+   "w": 174,
+   "h": 26
+  },
+  {
+   "id": "p22-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "Pflanzen",
+   "x": 235,
+   "y": 339,
+   "w": 163,
+   "h": 26
+  },
+  {
+   "id": "p22-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d",
+   "answer": "Gruppe",
+   "x": 700,
+   "y": 339,
+   "w": 174,
+   "h": 26
+  },
+  {
+   "id": "p22-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e",
+   "answer": "wandern",
+   "x": 319,
+   "y": 368,
+   "w": 174,
+   "h": 26
+  },
+  {
+   "id": "p22-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 f",
+   "answer": "aktiv",
+   "x": 224,
+   "y": 400,
+   "w": 171,
+   "h": 26
+  },
+  {
+   "id": "p22-1g",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 g",
+   "answer": "beraten",
+   "x": 581,
+   "y": 400,
+   "w": 171,
+   "h": 26
+  },
+  {
+   "id": "p22-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "Wanderung",
+   "x": 467,
+   "y": 578,
+   "w": 154,
+   "h": 26
+  },
+  {
+   "id": "p22-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c",
+   "answer": "Anmeldung",
+   "x": 249,
+   "y": 632,
+   "w": 163,
+   "h": 26
+  },
+  {
+   "id": "p22-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d",
+   "answer": "Vermieter",
+   "x": 670,
+   "y": 686,
+   "w": 161,
+   "h": 26
+  },
+  {
+   "id": "p22-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 e",
+   "answer": "Erholung",
+   "x": 524,
+   "y": 740,
+   "w": 158,
+   "h": 26
+  },
+  {
+   "id": "p22-3a",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a",
+   "answer": "überhaupt nicht",
+   "x": 521,
+   "y": 911,
+   "w": 317,
+   "h": 26
+  },
+  {
+   "id": "p22-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "am liebsten",
+   "x": 198,
+   "y": 935,
+   "w": 315,
+   "h": 26
+  },
+  {
+   "id": "p22-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "finde die Idee",
+   "x": 402,
+   "y": 964,
+   "w": 319,
+   "h": 26
+  },
+  {
+   "id": "p22-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "würde gern",
+   "x": 576,
+   "y": 989,
+   "w": 317,
+   "h": 26
+  },
+  {
+   "id": "p22-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e",
+   "answer": "nehme ich lieber",
+   "x": 617,
+   "y": 1092,
+   "w": 312,
+   "h": 26
+  },
+  {
+   "id": "p22-3f",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 f",
+   "answer": "gefällt mir am besten",
+   "x": 490,
+   "y": 1145,
+   "w": 317,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Test 1 Wörter"
+  },
+  {
+   "id": "g2",
+   "label": "Test 2 Strukturen"
+  },
+  {
+   "id": "g3",
+   "label": "Test 3 Kommunikation"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel Tests, Lektion 3 (printed p106)."
+  ]
  }
 }
