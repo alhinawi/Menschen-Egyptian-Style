@@ -1637,13 +1637,197 @@
    "h": 17
   }
  ],
- "fields": [],
- "audio": [],
- "groups": [],
+ "fields": [
+  {
+   "id": "p72-1511",
+   "group": "g151",
+   "kind": "text",
+   "label": "151 1",
+   "answer": "dass",
+   "x": 187,
+   "y": 243,
+   "w": 100,
+   "h": 26
+  },
+  {
+   "id": "p72-1512",
+   "group": "g151",
+   "kind": "text",
+   "label": "151 2",
+   "answer": "und",
+   "x": 111,
+   "y": 272,
+   "w": 100,
+   "h": 26
+  },
+  {
+   "id": "p72-1513",
+   "group": "g151",
+   "kind": "text",
+   "label": "151 3",
+   "answer": "dass",
+   "x": 187,
+   "y": 298,
+   "w": 100,
+   "h": 26
+  },
+  {
+   "id": "p72-1514",
+   "group": "g151",
+   "kind": "text",
+   "label": "151 4",
+   "answer": "und",
+   "x": 111,
+   "y": 330,
+   "w": 100,
+   "h": 26
+  },
+  {
+   "id": "p72-1515",
+   "group": "g151",
+   "kind": "text",
+   "label": "151 5",
+   "answer": "wenn",
+   "x": 154,
+   "y": 356,
+   "w": 100,
+   "h": 26
+  },
+  {
+   "id": "p72-1516",
+   "group": "g151",
+   "kind": "text",
+   "label": "151 6",
+   "answer": "wenn",
+   "x": 147,
+   "y": 415,
+   "w": 100,
+   "h": 26
+  },
+  {
+   "id": "p72-1521",
+   "group": "g152",
+   "kind": "text",
+   "label": "152 1",
+   "answer": "dass",
+   "x": 292,
+   "y": 850,
+   "w": 100,
+   "h": 26
+  },
+  {
+   "id": "p72-1522",
+   "group": "g152",
+   "kind": "text",
+   "label": "152 2",
+   "answer": "dass",
+   "x": 235,
+   "y": 879,
+   "w": 100,
+   "h": 26
+  },
+  {
+   "id": "p72-1523",
+   "group": "g152",
+   "kind": "text",
+   "label": "152 3",
+   "answer": "wenn",
+   "x": 481,
+   "y": 879,
+   "w": 100,
+   "h": 26
+  },
+  {
+   "id": "p72-1524",
+   "group": "g152",
+   "kind": "text",
+   "label": "152 4",
+   "answer": "dass",
+   "x": 286,
+   "y": 907,
+   "w": 100,
+   "h": 26
+  },
+  {
+   "id": "p72-1525",
+   "group": "g152",
+   "kind": "text",
+   "label": "152 5",
+   "answer": "dass",
+   "x": 235,
+   "y": 936,
+   "w": 100,
+   "h": 26
+  },
+  {
+   "id": "p72-1526",
+   "group": "g152",
+   "kind": "text",
+   "label": "152 6",
+   "answer": "wenn",
+   "x": 235,
+   "y": 994,
+   "w": 100,
+   "h": 26
+  },
+  {
+   "id": "p72-1527",
+   "group": "g152",
+   "kind": "text",
+   "label": "152 7",
+   "answer": "denn",
+   "x": 199,
+   "y": 1023,
+   "w": 96,
+   "h": 26
+  },
+  {
+   "id": "p72-1528",
+   "group": "g152",
+   "kind": "text",
+   "label": "152 8",
+   "answer": "wenn",
+   "x": 235,
+   "y": 1052,
+   "w": 100,
+   "h": 26
+  }
+ ],
+ "audio": [
+  {
+   "id": "cd1-35-1",
+   "src": "assets/kb-a21-cd1-track35.mp3",
+   "label": "CD1 · Track 35",
+   "x": 38,
+   "y": 1249,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "cd1-35-2",
+   "src": "assets/kb-a21-cd1-track35.mp3",
+   "label": "CD1 · Track 35",
+   "x": 38,
+   "y": 1339,
+   "w": 78,
+   "h": 26
+  }
+ ],
+ "groups": [
+  {
+   "id": "g151",
+   "label": "1 Ergänzen Sie: dass, denn, und, wenn"
+  },
+  {
+   "id": "g152",
+   "label": "1 Ergänzen Sie (2. Strophe)"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "Song text blanks from the official Hueber Lösungen (A2, Ausklang): dass, und, dass, und, wenn, wenn / dass, dass, wenn, dass, dass, wenn, denn, wenn. Audio: CD1 track 35 (both icons)."
   ],
   "verifiedWords": 0,
   "totalWords": 233
