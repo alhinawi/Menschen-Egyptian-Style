@@ -2176,11 +2176,356 @@
    "h": 17
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p16-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "Kissen",
+   "x": 416,
+   "y": 313,
+   "w": 112,
+   "h": 26
+  },
+  {
+   "id": "p16-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "Spiegel",
+   "x": 450,
+   "y": 340,
+   "w": 103,
+   "h": 26
+  },
+  {
+   "id": "p16-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d",
+   "answer": "Souvenir",
+   "x": 189,
+   "y": 391,
+   "w": 116,
+   "h": 26
+  },
+  {
+   "id": "p16-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e",
+   "answer": "Vorhang",
+   "x": 880,
+   "y": 286,
+   "w": 104,
+   "h": 26
+  },
+  {
+   "id": "p16-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 f",
+   "answer": "Herd",
+   "x": 847,
+   "y": 313,
+   "w": 106,
+   "h": 26
+  },
+  {
+   "id": "p16-1g",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 g",
+   "answer": "Regal",
+   "x": 878,
+   "y": 340,
+   "w": 88,
+   "h": 26
+  },
+  {
+   "id": "p16-1h",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 h",
+   "answer": "Werkzeug",
+   "x": 629,
+   "y": 391,
+   "w": 104,
+   "h": 26
+  },
+  {
+   "id": "p16-2c-stellt",
+   "group": "g2",
+   "kind": "radio",
+   "label": "stellt",
+   "name": "p16-2c",
+   "value": "stellt",
+   "answer": "true",
+   "x": 208,
+   "y": 523,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p16-2c-steht",
+   "group": "g2",
+   "kind": "radio",
+   "label": "steht",
+   "name": "p16-2c",
+   "value": "steht",
+   "answer": "false",
+   "x": 304,
+   "y": 523,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p16-2d-den",
+   "group": "g2",
+   "kind": "radio",
+   "label": "den",
+   "name": "p16-2d",
+   "value": "den",
+   "answer": "true",
+   "x": 610,
+   "y": 523,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p16-2d-dem",
+   "group": "g2",
+   "kind": "radio",
+   "label": "dem",
+   "name": "p16-2d",
+   "value": "dem",
+   "answer": "false",
+   "x": 694,
+   "y": 523,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p16-2e-steht",
+   "group": "g2",
+   "kind": "radio",
+   "label": "steht",
+   "name": "p16-2e",
+   "value": "steht",
+   "answer": "true",
+   "x": 361,
+   "y": 550,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p16-2e-stellt",
+   "group": "g2",
+   "kind": "radio",
+   "label": "stellt",
+   "name": "p16-2e",
+   "value": "stellt",
+   "answer": "false",
+   "x": 457,
+   "y": 550,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p16-2f-dem",
+   "group": "g2",
+   "kind": "radio",
+   "label": "dem",
+   "name": "p16-2f",
+   "value": "dem",
+   "answer": "true",
+   "x": 687,
+   "y": 550,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p16-2f-der",
+   "group": "g2",
+   "kind": "radio",
+   "label": "der",
+   "name": "p16-2f",
+   "value": "der",
+   "answer": "false",
+   "x": 775,
+   "y": 550,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p16-2g-liegen",
+   "group": "g2",
+   "kind": "radio",
+   "label": "liegen",
+   "name": "p16-2g",
+   "value": "liegen",
+   "answer": "true",
+   "x": 390,
+   "y": 577,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p16-2g-legen",
+   "group": "g2",
+   "kind": "radio",
+   "label": "legen",
+   "name": "p16-2g",
+   "value": "legen",
+   "answer": "false",
+   "x": 496,
+   "y": 577,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p16-2h-dem",
+   "group": "g2",
+   "kind": "radio",
+   "label": "dem",
+   "name": "p16-2h",
+   "value": "dem",
+   "answer": "true",
+   "x": 704,
+   "y": 577,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p16-2h-den",
+   "group": "g2",
+   "kind": "radio",
+   "label": "den",
+   "name": "p16-2h",
+   "value": "den",
+   "answer": "false",
+   "x": 795,
+   "y": 577,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p16-2i-stellt",
+   "group": "g2",
+   "kind": "radio",
+   "label": "stellt",
+   "name": "p16-2i",
+   "value": "stellt",
+   "answer": "true",
+   "x": 301,
+   "y": 603,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p16-2i-steht",
+   "group": "g2",
+   "kind": "radio",
+   "label": "steht",
+   "name": "p16-2i",
+   "value": "steht",
+   "answer": "false",
+   "x": 397,
+   "y": 603,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p16-2j-ins",
+   "group": "g2",
+   "kind": "radio",
+   "label": "ins",
+   "name": "p16-2j",
+   "value": "ins",
+   "answer": "true",
+   "x": 660,
+   "y": 603,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p16-2j-in dem",
+   "group": "g2",
+   "kind": "radio",
+   "label": "in dem",
+   "name": "p16-2j",
+   "value": "in dem",
+   "answer": "false",
+   "x": 733,
+   "y": 603,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p16-3a",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a",
+   "answer": "eine Lampe auf den Tisch",
+   "x": 364,
+   "y": 907,
+   "w": 375,
+   "h": 26
+  },
+  {
+   "id": "p16-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "helle Kissen auf das Sofa",
+   "x": 358,
+   "y": 961,
+   "w": 384,
+   "h": 26
+  },
+  {
+   "id": "p16-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "einen Spiegel an die Wand",
+   "x": 438,
+   "y": 988,
+   "w": 375,
+   "h": 26
+  },
+  {
+   "id": "p16-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "viele Bücher",
+   "x": 666,
+   "y": 1015,
+   "w": 269,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Test 1 Wörter"
+  },
+  {
+   "id": "g2",
+   "label": "Test 2 Strukturen"
+  },
+  {
+   "id": "g3",
+   "label": "Test 3 Kommunikation"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel Tests, Lektion 2 (printed p106). Test 3 e and f are not graded because their answers span two printed blanks."
+  ]
  }
 }

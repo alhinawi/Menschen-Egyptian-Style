@@ -2554,11 +2554,299 @@
    "h": 16
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p10-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "Neffe",
+   "x": 181,
+   "y": 246,
+   "w": 216,
+   "h": 26
+  },
+  {
+   "id": "p10-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "Onkel",
+   "x": 590,
+   "y": 217,
+   "w": 210,
+   "h": 26
+  },
+  {
+   "id": "p10-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d",
+   "answer": "Schwiegermutter",
+   "x": 776,
+   "y": 246,
+   "w": 202,
+   "h": 26
+  },
+  {
+   "id": "p10-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "erzählt",
+   "x": 545,
+   "y": 417,
+   "w": 154,
+   "h": 26
+  },
+  {
+   "id": "p10-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c",
+   "answer": "gestritten",
+   "x": 299,
+   "y": 441,
+   "w": 138,
+   "h": 26
+  },
+  {
+   "id": "p10-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d",
+   "answer": "gezeichnet",
+   "x": 471,
+   "y": 471,
+   "w": 155,
+   "h": 26
+  },
+  {
+   "id": "p10-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 e",
+   "answer": "gespielt",
+   "x": 181,
+   "y": 500,
+   "w": 159,
+   "h": 26
+  },
+  {
+   "id": "p10-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "gefeiert",
+   "x": 210,
+   "y": 642,
+   "w": 156,
+   "h": 26
+  },
+  {
+   "id": "p10-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "gegessen",
+   "x": 716,
+   "y": 642,
+   "w": 161,
+   "h": 26
+  },
+  {
+   "id": "p10-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "gelacht",
+   "x": 306,
+   "y": 671,
+   "w": 149,
+   "h": 26
+  },
+  {
+   "id": "p10-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e",
+   "answer": "telefoniert",
+   "x": 208,
+   "y": 696,
+   "w": 159,
+   "h": 26
+  },
+  {
+   "id": "p10-3f",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 f",
+   "answer": "hatte",
+   "x": 610,
+   "y": 696,
+   "w": 160,
+   "h": 26
+  },
+  {
+   "id": "p10-3g",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 g",
+   "answer": "verstanden",
+   "x": 430,
+   "y": 720,
+   "w": 178,
+   "h": 26
+  },
+  {
+   "id": "p10-3h",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 h",
+   "answer": "hatte",
+   "x": 306,
+   "y": 749,
+   "w": 153,
+   "h": 26
+  },
+  {
+   "id": "p10-4b",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 b",
+   "answer": "Unsere",
+   "x": 422,
+   "y": 867,
+   "w": 120,
+   "h": 26
+  },
+  {
+   "id": "p10-4c",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 c",
+   "answer": "ihre",
+   "x": 504,
+   "y": 896,
+   "w": 104,
+   "h": 26
+  },
+  {
+   "id": "p10-4d",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 d",
+   "answer": "Ihre",
+   "x": 458,
+   "y": 920,
+   "w": 122,
+   "h": 26
+  },
+  {
+   "id": "p10-5a",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 a",
+   "answer": "Habe ich",
+   "x": 156,
+   "y": 1052,
+   "w": 210,
+   "h": 26
+  },
+  {
+   "id": "p10-5b",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 b",
+   "answer": "Also passt",
+   "x": 159,
+   "y": 1082,
+   "w": 218,
+   "h": 26
+  },
+  {
+   "id": "p10-5c",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 c",
+   "answer": "Sie war",
+   "x": 232,
+   "y": 1106,
+   "w": 222,
+   "h": 26
+  },
+  {
+   "id": "p10-5d",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 d",
+   "answer": "Ich hatte",
+   "x": 159,
+   "y": 1131,
+   "w": 218,
+   "h": 26
+  },
+  {
+   "id": "p10-5e",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 e",
+   "answer": "Dann habe",
+   "x": 782,
+   "y": 1136,
+   "w": 205,
+   "h": 26
+  },
+  {
+   "id": "p10-5f",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 f",
+   "answer": "Und wisst",
+   "x": 593,
+   "y": 1160,
+   "w": 199,
+   "h": 26
+  },
+  {
+   "id": "p10-5g",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 g",
+   "answer": "Später bin",
+   "x": 271,
+   "y": 1189,
+   "w": 211,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Test 1 Familie"
+  },
+  {
+   "id": "g2",
+   "label": "Test 2 Ordnen Sie zu"
+  },
+  {
+   "id": "g3",
+   "label": "Test 3 Perfekt/Präteritum"
+  },
+  {
+   "id": "g4",
+   "label": "Test 4 Possessivartikel"
+  },
+  {
+   "id": "g5",
+   "label": "Test 5 Ordnen Sie zu"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel Tests, Lektion 1 (printed p106)."
+  ]
  }
 }
