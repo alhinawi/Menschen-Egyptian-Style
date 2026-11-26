@@ -58,9 +58,14 @@ function pointsOf(data) {
         return
       }
       if (typeof v !== 'object' || v === null) return
-      for (const [k, val] of Object.entries(v)) {
-        if (k.startsWith('done-') && val === true) n++
-        else walk(val)
+      const entries = Object.entries(v)
+      // Sub-answer flags ('done-<exercise>:f-<field>') count one each; once an exercise has
+      // any, its group flag stops counting. Same rule as pointsOf in src/leaderboard.ts.
+      const done = entries.filter(([k, val]) => k.startsWith('done-') && val === true).map(([k]) => k)
+      const parents = new Set(done.filter((k) => k.includes(':f-')).map((k) => k.slice(0, k.indexOf(':f-'))))
+      n += done.filter((k) => !parents.has(k)).length
+      for (const [k, val] of entries) {
+        if (!(k.startsWith('done-') && val === true)) walk(val)
       }
     }
     walk(JSON.parse(data))

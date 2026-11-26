@@ -1,3 +1,4 @@
+import {okf} from '../components/ok-fields';
 import {ChoiceInput} from '../exercises/ChoiceInput';
 import {usePageReset} from '../exercises/usePageReset';
 import {LinedArea} from '../components/LinedArea';
@@ -37,7 +38,7 @@ export function NativeAB12P31to46({page}:{page:string}){
  const field=(id:string,x:number,y:number,w:number,label:string,cls='')=><ChoiceInput className={'naField '+cls} aria-label={label} data-native-field={id} style={{left:x,top:y,width:w}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
  const rule=(x:number,y:number,w:number)=><div className="naRule" style={{left:x,top:y,width:w}}/>;
  const dot=(id:string,value:string,x:number,y:number,label:string,checkbox=false)=><ChoiceInput className="naDot" type={checkbox?'checkbox':'radio'} aria-label={label} data-value={value} name={key+'-'+id} checked={checkbox?values[id]==='true':values[id]===value} onChange={e=>set(id,checkbox?String(e.target.checked):value)} style={{left:x,top:y}}/>;
- const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}/><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} data-ok-fields={okf(id in results,answers,values,normalize)} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}/><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const save=(id:string,x:number,y:number)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton onClick={()=>sn(s=>({...s,[id]:true}))}/><output aria-live="polite">{saved[id]?'Gespeichert':''}</output></div>;
  const arrow=(id:string,x:number,y:number,label:string)=><button className="naArrow" aria-label={label} data-native-arrow={id} style={{left:x,top:y}} onClick={()=>set(id,values[id]==='\u2197'?'\u2198':'\u2197')}>{values[id]||''}</button>;
  const checkRaw=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>v===(values[k]||'').trim()))})}/><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
@@ -1602,7 +1603,7 @@ export function NativeAB12P31to46({page}:{page:string}){
   {lin(699,1001,200,1,'#d8d8bc')}
   {art('kopf',726,1016,47,22)}
   {art('koepfe',799,1004,73,36)}
-  {(()=>{const words=['Köpfe','Hälse','Finger','Rücken','Bäuche','Beine','Füße','Ohren','Augen','Arme','Hände','Zähne','Knie'];return <div className="naCheck" data-check="43-5" style={{left:608,top:1026}}><CheckButton answers={Object.fromEntries(words.map(w=>['p43-soup-'+w,'1']))} onClick={()=>sr({...results,'43-5':words.every(w=>values['p43-soup-'+w]==='1')})}/><output aria-live="polite">{'43-5' in results?(results['43-5']?'✓ Richtig!':'Noch einmal'):''}</output></div>})()}
+  {(()=>{const words=['Köpfe','Hälse','Finger','Rücken','Bäuche','Beine','Füße','Ohren','Augen','Arme','Hände','Zähne','Knie'];return <div className="naCheck" data-check="43-5" data-ok-fields={'43-5' in results?words.filter(w=>values['p43-soup-'+w]==='1').map(w=>'p43-soup-'+w).join(','):undefined} style={{left:608,top:1026}}><CheckButton answers={Object.fromEntries(words.map(w=>['p43-soup-'+w,'1']))} onClick={()=>sr({...results,'43-5':words.every(w=>values['p43-soup-'+w]==='1')})}/><output aria-live="polite">{'43-5' in results?(results['43-5']?'✓ Richtig!':'Noch einmal'):''}</output></div>})()}
   {art('face',815,926,154,110)}
   {kb(59,1073,'KB 4')}
   <div className='naTitle naGB naTt9' style={{left:99,top:1066,width:520}}><b>9</b><Words text='Ergänzen Sie aus '/><span style={{color:'#223b8d'}}>8</span><Words text=' und vergleichen Sie.'/></div>

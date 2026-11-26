@@ -1,3 +1,4 @@
+import {okf} from '../components/ok-fields';
 import {ChoiceInput} from '../exercises/ChoiceInput';
 import {usePageReset} from '../exercises/usePageReset';
 import {useLayoutEffect,useRef,useState} from 'react';
@@ -32,7 +33,7 @@ export function NativeAB12P78({page}:{page:string}){
  const num=(x:number,y:number,n:string)=><div className="naNum78" style={{left:x,top:y}}>{n}</div>;
  const kb=(x:number,y:number,t:string)=><div className="naKB78" style={{left:x,top:y}}>{t}</div>;
  const rail=(x:number,y:number,t:string)=><div className="naRail78" style={{left:x,top:y}}>{t}</div>;
- const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>{sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||'')))});paintRadios(answers)}}/><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} data-ok-fields={okf(id in results,answers,values,normalize)} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>{sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||'')))});paintRadios(answers)}}/><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const dot=(id:string,value:string,x:number,y:number,label:string)=><ChoiceInput type="radio" className="naDot naDot78" name={key+'-'+id} aria-label={label} data-native-field={id} value={value} style={{left:x,top:y}} checked={values[id]===value} onChange={()=>{set(id,value);document.querySelectorAll('[data-native-ab12="78"] input[data-native-field="'+id+'"]').forEach(i=>i.removeAttribute('data-check-mark'))}}/>;
  // ex1: one letter cell = either a printed letter or a single-letter gap field
  const L=(x:number,base:number,t:string)=><div className="naText naLet78" style={{left:x,top:base-15,width:13}}>{t}</div>;

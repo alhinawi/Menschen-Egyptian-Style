@@ -42,6 +42,16 @@ export function NativeAB12Range({page}:{page:string}){
   const items=spec.items.filter(i=>i.g===g&&i.a!==undefined);
   return Object.fromEntries(items.flatMap(i=>i.k==='d'?(i.cb?[[i.id,String(i.a)]]:i.a===true?[[i.name||i.id,i.id+'::'+i.v]]:[]):i.k==='f'?[[i.id,String(i.a)]]:i.k==='w'?[[i.id,String(!!i.a)]]:i.k==='mk'?[[i.id,String(i.a)]]:[]));
  };
+ const okIds=(g:string):string=>{const its=spec.items.filter(i=>i.g===g&&i.a!==undefined);const out:string[]=[];
+  for(const i of its){const v=values[i.id]||'';
+   if(i.k==='mk'){if(String(i.a)!==''&&v===i.a)out.push(i.id)}
+   else if(i.k==='w'){if(i.a&&v==='1')out.push(i.id)}
+   else if(i.k==='d'){if(i.a===true&&(i.cb?v==='true':v===i.v))out.push(i.cb?i.id:(i.name||i.id))}
+   else if(i.k==='f'&&!i.set){if(String(i.a)!==''&&normalize(v)!==''&&String(i.a).split('|').some(a=>normalize(a)===normalize(v)))out.push(i.id)}}
+  const keys=its.filter(i=>i.k==='f'&&i.set).map(i=>String(i.set)).filter((v,n,a)=>a.indexOf(v)===n);
+  for(const key of keys){const fs=its.filter(i=>i.k==='f'&&i.set===key);const ans=fs.flatMap(i=>String(i.a).split('|').map(normalize)).filter(Boolean);const seen=new Set<string>();
+   for(const w of fs.flatMap(i=>String(values[i.id]||'').split(',')).map(normalize))if(w&&ans.includes(w)&&!seen.has(w)){seen.add(w);out.push(g+'-'+key+'-'+w)}}
+  return [...new Set(out)].join(',')};
  const grade=(g:string)=>{const its=spec.items.filter(i=>i.g===g&&i.a!==undefined&&(i.k==='mk'||i.a!==''));
   let good=its.length>0&&its.filter(i=>!(i.k==='f'&&i.set)).every(ok);
   const keys=its.filter(i=>i.k==='f'&&i.set).map(i=>String(i.set)).filter((v,n,a)=>a.indexOf(v)===n);
@@ -60,7 +70,7 @@ export function NativeAB12Range({page}:{page:string}){
    case 'a':return <PageImage key={n} className="naArt" src={`assets/book-crops/native-ab12-p${page}-${it.n}.png`} alt={it.alt||('Originalillustration '+it.n)} style={{left:it.x,top:it.y,width:it.w,height:it.h}}/>;
    case 'ti':return <div key={n} className="naRTitle" style={{left:it.x,top:it.y}}><span className="naRBadge" style={{width:it.bw||27,height:it.bh||27,background:it.col,lineHeight:(it.bh||27)+'px'}}>{it.n}</span></div>;
    case 'd':return <ChoiceInput key={n} className={'naDot naRDot'+(it.lt?' naRDotL':'')} type={it.cb?'checkbox':'radio'} aria-label={it.l} data-native-field={it.name?it.id:undefined} data-value={it.name?(it.cb?'true':it.id+'::'+it.v):undefined} name={key+'-'+(it.name||it.id)} checked={it.cb?values[it.id]==='true':values[it.id]===it.v} onChange={e=>choose(it,e.target.checked)} style={{left:it.x,top:it.y,width:it.s||24,height:it.s||24}}/>;
-   case 'chk':return it.neutral?null:<div key={n} className={'naCheck'+(it.stack?' naStack':'')} data-check-layout={it.stack?'stack':undefined} style={{left:it.x,top:it.y}}><CheckButton answers={radioAnswers(it.g)} onClick={()=>grade(it.g)}></CheckButton><output aria-live="polite">{it.g in results?(results[it.g]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+   case 'chk':return it.neutral?null:<div key={n} data-ok-fields={it.g in results?okIds(it.g):undefined} className={'naCheck'+(it.stack?' naStack':'')} data-check-layout={it.stack?'stack':undefined} style={{left:it.x,top:it.y}}><CheckButton answers={radioAnswers(it.g)} onClick={()=>grade(it.g)}></CheckButton><output aria-live="polite">{it.g in results?(results[it.g]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
    case 'bx':return <div key={n} className="naRBx" style={{left:it.x,top:it.y,width:it.w,height:it.h,background:it.bg,border:it.bd?('1.5px solid '+it.bd):undefined,boxSizing:'border-box'}}/>;
    case 'w':return <button key={n} type="button" data-native-field={it.id} data-value={values[it.id]==='1'?'true':'false'} className={'naRWord'+(values[it.id]==='1'?' on':'')} aria-pressed={values[it.id]==='1'} aria-label={'Durchstreichen: '+it.l} style={{left:it.x-3,top:it.y-21,width:it.w+6,height:27}} onClick={()=>set(it.id,values[it.id]==='1'?'0':'1')}/>;
    case 'mk':return <button key={n} type="button" data-native-field={it.id} data-value={values[it.id]||''} className={'naRMk'+(values[it.id]?' '+values[it.id]:'')} aria-label={'Markieren: '+it.l} style={{left:it.x,top:it.y,width:it.w,height:it.h}} onClick={()=>set(it.id,values[it.id]==='b'?'g':values[it.id]==='g'?'':'b')}/>;
