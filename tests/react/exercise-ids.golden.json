@@ -1048,9 +1048,23 @@
   "kb-a22|done-44:n0",
   "kb-a22|done-46:n0",
   "kb-a22|done-47:n0",
-  "kb-a22|done-47:n1"
+  "kb-a22|done-47:n1",
+  "kb-a22|done-50:n0",
+  "kb-a22|done-51:n0",
+  "kb-a22|done-51:n1",
+  "kb-a22|done-53:n0",
+  "kb-a22|done-54:n0",
+  "kb-a22|done-54:n1",
+  "kb-a22|done-54:n2",
+  "kb-a22|done-55:n0",
+  "kb-a22|done-56:n0"
  ],
- "kb-a22-m4.html": [],
+ "kb-a22-m4.html": [
+  "kb-a22|done-58:n0",
+  "kb-a22|done-58:n1",
+  "kb-a22|done-58:n2",
+  "kb-a22|done-59:n0"
+ ],
  "kb-a22-m5.html": [],
  "l10-12.html": [
   "kb-a11|done-57:t-task2",

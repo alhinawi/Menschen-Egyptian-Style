@@ -1524,7 +1524,8 @@
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "6 is an interview task with free answers. Nothing to grade."
   ]
  }
 }

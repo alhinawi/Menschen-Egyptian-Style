@@ -2225,13 +2225,120 @@
    "h": 57
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p51-11",
+   "group": "g1",
+   "kind": "text",
+   "label": "6a 1",
+   "answer": "1",
+   "x": 380,
+   "y": 304,
+   "w": 102,
+   "h": 26
+  },
+  {
+   "id": "p51-12",
+   "group": "g1",
+   "kind": "text",
+   "label": "6a 2",
+   "answer": "6",
+   "x": 555,
+   "y": 304,
+   "w": 90,
+   "h": 26
+  },
+  {
+   "id": "p51-13",
+   "group": "g1",
+   "kind": "text",
+   "label": "6a 3",
+   "answer": "7",
+   "x": 399,
+   "y": 329,
+   "w": 95,
+   "h": 26
+  },
+  {
+   "id": "p51-14",
+   "group": "g1",
+   "kind": "text",
+   "label": "6a 4",
+   "answer": "10",
+   "x": 573,
+   "y": 329,
+   "w": 92,
+   "h": 26
+  },
+  {
+   "id": "p51-21-selbst",
+   "group": "g2",
+   "kind": "radio",
+   "label": "selbst",
+   "name": "p51-21",
+   "value": "selbst",
+   "answer": "true",
+   "x": 541,
+   "y": 1251,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p51-21-andere",
+   "group": "g2",
+   "kind": "radio",
+   "label": "andere",
+   "name": "p51-21",
+   "value": "andere",
+   "answer": "false",
+   "x": 703,
+   "y": 1251,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p51-22-selbst",
+   "group": "g2",
+   "kind": "radio",
+   "label": "selbst",
+   "name": "p51-22",
+   "value": "selbst",
+   "answer": "false",
+   "x": 541,
+   "y": 1285,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p51-22-andere",
+   "group": "g2",
+   "kind": "radio",
+   "label": "andere",
+   "name": "p51-22",
+   "value": "andere",
+   "answer": "true",
+   "x": 703,
+   "y": 1285,
+   "w": 24,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "6 a Notieren Sie die Nummern."
+  },
+  {
+   "id": "g2",
+   "label": "6 c Was ist richtig? Kreuzen Sie an."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "6b and 7 are open or speaking tasks and stay ungraded."
   ]
  }
 }

@@ -2239,13 +2239,75 @@
    "h": 13
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p59-12",
+   "group": "g1",
+   "kind": "text",
+   "label": "5a 2",
+   "answer": "anklicken",
+   "x": 379,
+   "y": 934,
+   "w": 165,
+   "h": 26
+  },
+  {
+   "id": "p59-13",
+   "group": "g1",
+   "kind": "text",
+   "label": "5a 3",
+   "answer": "wählen",
+   "x": 271,
+   "y": 981,
+   "w": 175,
+   "h": 26
+  },
+  {
+   "id": "p59-14",
+   "group": "g1",
+   "kind": "text",
+   "label": "5a 4",
+   "answer": "bestätigen",
+   "x": 354,
+   "y": 1016,
+   "w": 167,
+   "h": 26
+  },
+  {
+   "id": "p59-15",
+   "group": "g1",
+   "kind": "text",
+   "label": "5a 5",
+   "answer": "eingeben",
+   "x": 428,
+   "y": 1070,
+   "w": 165,
+   "h": 26
+  },
+  {
+   "id": "p59-16",
+   "group": "g1",
+   "kind": "text",
+   "label": "5a 6",
+   "answer": "heruntergeladen",
+   "x": 443,
+   "y": 1123,
+   "w": 132,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "5 a Ergänzen Sie die Verben."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "4 a (official key gives only a Lösungsvorschlag for the order), 5 b and 5 c are left ungraded."
   ]
  }
 }

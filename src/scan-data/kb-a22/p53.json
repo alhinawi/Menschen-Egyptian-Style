@@ -3163,13 +3163,284 @@
    "h": 21
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p53-1a-Christian",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Christian",
+   "answer": "false",
+   "x": 715,
+   "y": 1176,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p53-1a-Nina",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Nina",
+   "answer": "false",
+   "x": 808,
+   "y": 1176,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p53-1a-Rike",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Rike",
+   "answer": "true",
+   "x": 893,
+   "y": 1176,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p53-1a-Jörg",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Jörg",
+   "answer": "false",
+   "x": 956,
+   "y": 1176,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p53-1b-Christian",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Christian",
+   "answer": "true",
+   "x": 715,
+   "y": 1202,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p53-1b-Nina",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Nina",
+   "answer": "false",
+   "x": 808,
+   "y": 1202,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p53-1b-Rike",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Rike",
+   "answer": "false",
+   "x": 893,
+   "y": 1202,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p53-1b-Jörg",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Jörg",
+   "answer": "false",
+   "x": 956,
+   "y": 1202,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p53-1c-Christian",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Christian",
+   "answer": "false",
+   "x": 715,
+   "y": 1230,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p53-1c-Nina",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Nina",
+   "answer": "false",
+   "x": 808,
+   "y": 1230,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p53-1c-Rike",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Rike",
+   "answer": "false",
+   "x": 893,
+   "y": 1230,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p53-1c-Jörg",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Jörg",
+   "answer": "true",
+   "x": 956,
+   "y": 1230,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p53-1d-Christian",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Christian",
+   "answer": "false",
+   "x": 715,
+   "y": 1284,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p53-1d-Nina",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Nina",
+   "answer": "true",
+   "x": 808,
+   "y": 1284,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p53-1d-Rike",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Rike",
+   "answer": "false",
+   "x": 893,
+   "y": 1284,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p53-1d-Jörg",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Jörg",
+   "answer": "false",
+   "x": 956,
+   "y": 1284,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p53-1e-Christian",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Christian",
+   "answer": "true",
+   "x": 715,
+   "y": 1312,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p53-1e-Nina",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Nina",
+   "answer": "false",
+   "x": 808,
+   "y": 1312,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p53-1e-Rike",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Rike",
+   "answer": "false",
+   "x": 893,
+   "y": 1312,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p53-1e-Jörg",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Jörg",
+   "answer": "false",
+   "x": 956,
+   "y": 1312,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p53-1f-Christian",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Christian",
+   "answer": "false",
+   "x": 715,
+   "y": 1340,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p53-1f-Nina",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Nina",
+   "answer": "false",
+   "x": 808,
+   "y": 1340,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p53-1f-Rike",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Rike",
+   "answer": "false",
+   "x": 893,
+   "y": 1340,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p53-1f-Jörg",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "Jörg",
+   "answer": "true",
+   "x": 956,
+   "y": 1340,
+   "w": 24,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "1 Wer sagt was? Lesen Sie und kreuzen Sie an."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "2 is a speaking task and stays ungraded."
   ]
  }
 }

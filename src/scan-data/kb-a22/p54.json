@@ -1798,13 +1798,242 @@
    "h": 16
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p54-21-ja",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "ja",
+   "answer": "false",
+   "x": 761,
+   "y": 461,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p54-22-ja",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "ja",
+   "answer": "true",
+   "x": 761,
+   "y": 488,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p54-23-ja",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "ja",
+   "answer": "true",
+   "x": 761,
+   "y": 515,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p54-31",
+   "group": "g3",
+   "kind": "text",
+   "label": "2b 1",
+   "answer": "alte",
+   "x": 504,
+   "y": 700,
+   "w": 181,
+   "h": 26
+  },
+  {
+   "id": "p54-32",
+   "group": "g3",
+   "kind": "text",
+   "label": "2b 2",
+   "answer": "schnelle",
+   "x": 354,
+   "y": 727,
+   "w": 174,
+   "h": 26
+  },
+  {
+   "id": "p54-33",
+   "group": "g3",
+   "kind": "text",
+   "label": "2b 3",
+   "answer": "Hobby",
+   "x": 513,
+   "y": 754,
+   "w": 174,
+   "h": 26
+  },
+  {
+   "id": "p54-34",
+   "group": "g3",
+   "kind": "text",
+   "label": "2b 4",
+   "answer": "Beruf",
+   "x": 589,
+   "y": 782,
+   "w": 178,
+   "h": 26
+  },
+  {
+   "id": "p54-35",
+   "group": "g3",
+   "kind": "text",
+   "label": "2b 5",
+   "answer": "Schreiner",
+   "x": 297,
+   "y": 809,
+   "w": 182,
+   "h": 26
+  },
+  {
+   "id": "p54-36",
+   "group": "g3",
+   "kind": "text",
+   "label": "2b 6",
+   "answer": "Werkstatt",
+   "x": 394,
+   "y": 836,
+   "w": 183,
+   "h": 26
+  },
+  {
+   "id": "p54-37",
+   "group": "g3",
+   "kind": "text",
+   "label": "2b 7",
+   "answer": "Kleiderschrank",
+   "x": 505,
+   "y": 863,
+   "w": 182,
+   "h": 26
+  },
+  {
+   "id": "p54-41-Autofahrt",
+   "group": "g4",
+   "kind": "radio",
+   "label": "Autofahrt",
+   "name": "p54-41",
+   "value": "Autofahrt",
+   "answer": "true",
+   "x": 644,
+   "y": 1055,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p54-41-Radtour",
+   "group": "g4",
+   "kind": "radio",
+   "label": "Radtour",
+   "name": "p54-41",
+   "value": "Radtour",
+   "answer": "false",
+   "x": 779,
+   "y": 1055,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p54-42-Schweiz",
+   "group": "g4",
+   "kind": "radio",
+   "label": "Schweiz",
+   "name": "p54-42",
+   "value": "Schweiz",
+   "answer": "false",
+   "x": 224,
+   "y": 1082,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p54-42-Österreich",
+   "group": "g4",
+   "kind": "radio",
+   "label": "Österreich",
+   "name": "p54-42",
+   "value": "Österreich",
+   "answer": "true",
+   "x": 404,
+   "y": 1082,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p54-43-Hamburg",
+   "group": "g4",
+   "kind": "radio",
+   "label": "Hamburg",
+   "name": "p54-43",
+   "value": "Hamburg",
+   "answer": "true",
+   "x": 435,
+   "y": 1109,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p54-43-München",
+   "group": "g4",
+   "kind": "radio",
+   "label": "München",
+   "name": "p54-43",
+   "value": "München",
+   "answer": "false",
+   "x": 575,
+   "y": 1109,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p54-44-leider",
+   "group": "g4",
+   "kind": "radio",
+   "label": "leider",
+   "name": "p54-44",
+   "value": "leider",
+   "answer": "false",
+   "x": 223,
+   "y": 1163,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p54-44-Glück",
+   "group": "g4",
+   "kind": "radio",
+   "label": "Glück",
+   "name": "p54-44",
+   "value": "Glück",
+   "answer": "true",
+   "x": 548,
+   "y": 1163,
+   "w": 24,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g2",
+   "label": "2 a Was ist richtig? Kreuzen Sie an."
+  },
+  {
+   "id": "g3",
+   "label": "2 b Ordnen Sie zu."
+  },
+  {
+   "id": "g4",
+   "label": "3 a Was ist richtig? Kreuzen Sie an."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "1, 3 b are open or speaking tasks and stay ungraded."
   ]
  }
 }
