@@ -2330,13 +2330,156 @@
    "h": 13
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p31-21-Aussage 1",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "Aussage 1",
+   "answer": "true",
+   "x": 913,
+   "y": 250,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p31-22-Aussage 2",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "Aussage 2",
+   "answer": "false",
+   "x": 913,
+   "y": 276,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p31-23-Aussage 3",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "Aussage 3",
+   "answer": "false",
+   "x": 913,
+   "y": 302,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p31-24-Aussage 4",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "Aussage 4",
+   "answer": "true",
+   "x": 913,
+   "y": 328,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p31-25-Aussage 5",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "Aussage 5",
+   "answer": "true",
+   "x": 913,
+   "y": 354,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p31-26-Aussage 6",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "Aussage 6",
+   "answer": "false",
+   "x": 913,
+   "y": 380,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p31-27-Aussage 7",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "Aussage 7",
+   "answer": "true",
+   "x": 913,
+   "y": 408,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p31-31",
+   "group": "g3",
+   "kind": "text",
+   "label": "4d Wohin? ___ Meer",
+   "answer": "ans",
+   "x": 165,
+   "y": 660,
+   "w": 75,
+   "h": 26
+  },
+  {
+   "id": "p31-32",
+   "group": "g3",
+   "kind": "text",
+   "label": "4d Wohin? ___ Rumänien/Deutschland",
+   "answer": "nach",
+   "x": 165,
+   "y": 841,
+   "w": 75,
+   "h": 26
+  },
+  {
+   "id": "p31-33",
+   "group": "g3",
+   "kind": "text",
+   "label": "4d Wo? ___ Meer",
+   "answer": "am",
+   "x": 618,
+   "y": 660,
+   "w": 75,
+   "h": 26
+  },
+  {
+   "id": "p31-34",
+   "group": "g3",
+   "kind": "text",
+   "label": "4d Wo? ___ Săpânţa/Berlin",
+   "answer": "in",
+   "x": 618,
+   "y": 833,
+   "w": 75,
+   "h": 26
+  },
+  {
+   "id": "p31-35",
+   "group": "g3",
+   "kind": "text",
+   "label": "4d Wo? ___ Rumänien/Deutschland",
+   "answer": "in",
+   "x": 618,
+   "y": 841,
+   "w": 75,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g2",
+   "label": "4 b Was ist richtig? Lesen Sie noch einmal und kreuzen Sie an."
+  },
+  {
+   "id": "g3",
+   "label": "4 d Wohin und Wo. Ergänzen Sie die Präpositionen."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "4b and 4d keys confirmed against the official Hueber Lösungen (A2): 4b richtig 1, 4, 5, 7. 4c, 4e and 5 are open or speaking tasks and stay ungraded."
   ]
  }
 }

@@ -2246,13 +2246,42 @@
    "h": 13
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p35-21",
+   "group": "g2",
+   "kind": "text",
+   "label": "5a linke Karte: aus dem ___",
+   "answer": "Westen",
+   "x": 202,
+   "y": 912,
+   "w": 112,
+   "h": 26
+  },
+  {
+   "id": "p35-22",
+   "group": "g2",
+   "kind": "text",
+   "label": "5a rechte Karte",
+   "answer": "aus dem Osten",
+   "x": 728,
+   "y": 912,
+   "w": 190,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g2",
+   "label": "5 a Aus welcher Himmelsrichtung kommt das Wetter? Notieren Sie."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "5a key confirmed against the official Hueber Lösungen (A2): links Westen, rechts aus dem Osten. 5b has no printed answer lines, so it stays ungraded. 6 is speaking."
   ]
  }
 }

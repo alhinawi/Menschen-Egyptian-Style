@@ -1923,7 +1923,8 @@
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "Projekt Landeskunde 1 (Sätze korrigieren) has no printed answer lines, so it stays ungraded. Official key: a kühler, b Wintersaison, c Süden, d in den Berner Alpen / in der Mitte, e auf dem Säntis."
   ]
  }
 }

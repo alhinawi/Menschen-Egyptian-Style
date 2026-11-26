@@ -1784,13 +1784,75 @@
    "h": 17
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p38-21",
+   "group": "g2",
+   "kind": "text",
+   "label": "2a 1 erste Lücke",
+   "answer": "Melanie",
+   "x": 231,
+   "y": 1006,
+   "w": 158,
+   "h": 26
+  },
+  {
+   "id": "p38-22",
+   "group": "g2",
+   "kind": "text",
+   "label": "2a 1 zweite Lücke",
+   "answer": "Max",
+   "x": 470,
+   "y": 1006,
+   "w": 162,
+   "h": 26
+  },
+  {
+   "id": "p38-23",
+   "group": "g2",
+   "kind": "text",
+   "label": "2a 2",
+   "answer": "Lena",
+   "x": 231,
+   "y": 1032,
+   "w": 158,
+   "h": 26
+  },
+  {
+   "id": "p38-24",
+   "group": "g2",
+   "kind": "text",
+   "label": "2a 3 erste Lücke",
+   "answer": "Melanie",
+   "x": 508,
+   "y": 1060,
+   "w": 159,
+   "h": 26
+  },
+  {
+   "id": "p38-25",
+   "group": "g2",
+   "kind": "text",
+   "label": "2a 3 zweite Lücke",
+   "answer": "Max",
+   "x": 714,
+   "y": 1060,
+   "w": 160,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g2",
+   "label": "2 a Was passt? Sehen Sie den zweiten Teil des Films (ab 2:01) und ergänzen Sie die Namen."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "2a key confirmed against the official Hueber Lösungen (A2). 1a/1b/1c and 2b have no printed answer lines and stay ungraded."
   ]
  }
 }

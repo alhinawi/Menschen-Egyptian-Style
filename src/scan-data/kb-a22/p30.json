@@ -3548,13 +3548,64 @@
    "h": 17
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p30-21",
+   "group": "g2",
+   "kind": "text",
+   "label": "4a Foto 1",
+   "answer": "D",
+   "x": 157,
+   "y": 468,
+   "w": 44,
+   "h": 28
+  },
+  {
+   "id": "p30-22",
+   "group": "g2",
+   "kind": "text",
+   "label": "4a Foto 2",
+   "answer": "B",
+   "x": 330,
+   "y": 468,
+   "w": 44,
+   "h": 28
+  },
+  {
+   "id": "p30-23",
+   "group": "g2",
+   "kind": "text",
+   "label": "4a Foto 3",
+   "answer": "E",
+   "x": 499,
+   "y": 468,
+   "w": 44,
+   "h": 28
+  },
+  {
+   "id": "p30-24",
+   "group": "g2",
+   "kind": "text",
+   "label": "4a Foto 4",
+   "answer": "C",
+   "x": 840,
+   "y": 468,
+   "w": 44,
+   "h": 28
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g2",
+   "label": "4 a Welches Foto passt? Überfliegen Sie das Reisetagebuch und ordnen Sie zu."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "4a key confirmed against the official Hueber Lösungen (A2): photos left to right D, B, E, A (example), C. 3 is free speaking."
   ]
  }
 }
