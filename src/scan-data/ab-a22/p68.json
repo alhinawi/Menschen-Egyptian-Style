@@ -2092,7 +2092,277 @@
    "h": 8
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p68-8a",
+   "group": "g8",
+   "kind": "text",
+   "label": "8a",
+   "answer": "sichern",
+   "x": 797,
+   "y": 257,
+   "w": 173,
+   "h": 26
+  },
+  {
+   "id": "p68-8b1",
+   "group": "g8",
+   "kind": "text",
+   "label": "8b1",
+   "answer": "lässt",
+   "x": 317,
+   "y": 281,
+   "w": 177,
+   "h": 26
+  },
+  {
+   "id": "p68-8b2",
+   "group": "g8",
+   "kind": "text",
+   "label": "8b2",
+   "answer": "wechseln",
+   "x": 803,
+   "y": 281,
+   "w": 210,
+   "h": 26
+  },
+  {
+   "id": "p68-8c1",
+   "group": "g8",
+   "kind": "text",
+   "label": "8c1",
+   "answer": "lassen",
+   "x": 238,
+   "y": 311,
+   "w": 177,
+   "h": 26
+  },
+  {
+   "id": "p68-8c2",
+   "group": "g8",
+   "kind": "text",
+   "label": "8c2",
+   "answer": "putzen",
+   "x": 787,
+   "y": 311,
+   "w": 147,
+   "h": 26
+  },
+  {
+   "id": "p68-8d1",
+   "group": "g8",
+   "kind": "text",
+   "label": "8d1",
+   "answer": "lässt",
+   "x": 409,
+   "y": 339,
+   "w": 177,
+   "h": 26
+  },
+  {
+   "id": "p68-8d2",
+   "group": "g8",
+   "kind": "text",
+   "label": "8d2",
+   "answer": "helfen",
+   "x": 708,
+   "y": 339,
+   "w": 171,
+   "h": 26
+  },
+  {
+   "id": "p68-8e1",
+   "group": "g8",
+   "kind": "text",
+   "label": "8e1",
+   "answer": "lassen",
+   "x": 357,
+   "y": 367,
+   "w": 175,
+   "h": 26
+  },
+  {
+   "id": "p68-8e2",
+   "group": "g8",
+   "kind": "text",
+   "label": "8e2",
+   "answer": "renovieren",
+   "x": 812,
+   "y": 367,
+   "w": 183,
+   "h": 26
+  },
+  {
+   "id": "p68-8f1",
+   "group": "g8",
+   "kind": "text",
+   "label": "8f1",
+   "answer": "Lasst",
+   "x": 201,
+   "y": 394,
+   "w": 171,
+   "h": 26
+  },
+  {
+   "id": "p68-8f2",
+   "group": "g8",
+   "kind": "text",
+   "label": "8f2",
+   "answer": "reparieren",
+   "x": 674,
+   "y": 394,
+   "w": 168,
+   "h": 26
+  },
+  {
+   "id": "p68-9b",
+   "group": "g9",
+   "kind": "text",
+   "label": "9b",
+   "answer": "lassen es putzen",
+   "x": 604,
+   "y": 510,
+   "w": 409,
+   "h": 26
+  },
+  {
+   "id": "p68-9c",
+   "group": "g9",
+   "kind": "text",
+   "label": "9c",
+   "answer": "lassen sie uns bringen",
+   "x": 610,
+   "y": 536,
+   "w": 403,
+   "h": 26
+  },
+  {
+   "id": "p68-9d",
+   "group": "g9",
+   "kind": "text",
+   "label": "9d",
+   "answer": "lässt sie installieren",
+   "x": 728,
+   "y": 564,
+   "w": 286,
+   "h": 26
+  },
+  {
+   "id": "p68-9e",
+   "group": "g9",
+   "kind": "text",
+   "label": "9e",
+   "answer": "lasse es reparieren",
+   "x": 564,
+   "y": 590,
+   "w": 449,
+   "h": 26
+  },
+  {
+   "id": "p68-12a1-viele",
+   "group": "g12",
+   "kind": "radio",
+   "label": "viele",
+   "name": "p68-12a1",
+   "value": "viele",
+   "answer": "true",
+   "x": 272,
+   "y": 1112,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-12a1-nur_wenige",
+   "group": "g12",
+   "kind": "radio",
+   "label": "nur wenige",
+   "name": "p68-12a1",
+   "value": "nur wenige",
+   "answer": "false",
+   "x": 357,
+   "y": 1112,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-12a2-Nachbarn",
+   "group": "g12",
+   "kind": "radio",
+   "label": "Nachbarn",
+   "name": "p68-12a2",
+   "value": "Nachbarn",
+   "answer": "true",
+   "x": 511,
+   "y": 1141,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-12a2-Freunde",
+   "group": "g12",
+   "kind": "radio",
+   "label": "Freunde",
+   "name": "p68-12a2",
+   "value": "Freunde",
+   "answer": "false",
+   "x": 644,
+   "y": 1141,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-12a3-Geld",
+   "group": "g12",
+   "kind": "radio",
+   "label": "Geld",
+   "name": "p68-12a3",
+   "value": "Geld",
+   "answer": "false",
+   "x": 452,
+   "y": 1167,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-12a3-Arbeitszeit",
+   "group": "g12",
+   "kind": "radio",
+   "label": "Arbeitszeit",
+   "name": "p68-12a3",
+   "value": "Arbeitszeit",
+   "answer": "true",
+   "x": 534,
+   "y": 1167,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-12a4-ist_nicht_so_teuer",
+   "group": "g12",
+   "kind": "radio",
+   "label": "ist nicht so teuer",
+   "name": "p68-12a4",
+   "value": "ist nicht so teuer",
+   "answer": "false",
+   "x": 261,
+   "y": 1194,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p68-12a4-kostet_nichts",
+   "group": "g12",
+   "kind": "radio",
+   "label": "kostet nichts",
+   "name": "p68-12a4",
+   "value": "kostet nichts",
+   "answer": "true",
+   "x": 456,
+   "y": 1194,
+   "w": 24,
+   "h": 24
+  }
+ ],
  "audio": [
   {
    "id": "ab-cd2-27-68",
@@ -2113,9 +2383,24 @@
    "h": 26
   }
  ],
- "groups": [],
+ "groups": [
+  {
+   "id": "g8",
+   "label": "8 lassen"
+  },
+  {
+   "id": "g9",
+   "label": "9 Notieren Sie"
+  },
+  {
+   "id": "g12",
+   "label": "12a Radio"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Items 8, 9 and 12a graded from the official key (key for 9: 'lassen es putzen', 'lassen sie uns bringen', 'lässt sie installieren', 'lasse es reparieren'). Items 10, 11, 12b ungraded (free or drawn)."
+  ]
  }
 }

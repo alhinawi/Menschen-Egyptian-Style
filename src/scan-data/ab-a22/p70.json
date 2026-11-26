@@ -2372,11 +2372,229 @@
    "h": 8
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p70-1a1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1a1",
+   "answer": "Bargeld",
+   "x": 488,
+   "y": 264,
+   "w": 201,
+   "h": 26
+  },
+  {
+   "id": "p70-1a2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1a2",
+   "answer": "EC-Karte",
+   "x": 421,
+   "y": 314,
+   "w": 214,
+   "h": 26
+  },
+  {
+   "id": "p70-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1b",
+   "answer": "Gesundheitskarte",
+   "x": 464,
+   "y": 369,
+   "w": 210,
+   "h": 26
+  },
+  {
+   "id": "p70-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1c",
+   "answer": "Ausweis",
+   "x": 693,
+   "y": 397,
+   "w": 198,
+   "h": 26
+  },
+  {
+   "id": "p70-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2b",
+   "answer": "Welche",
+   "x": 195,
+   "y": 541,
+   "w": 83,
+   "h": 26
+  },
+  {
+   "id": "p70-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2c",
+   "answer": "diesem",
+   "x": 454,
+   "y": 571,
+   "w": 83,
+   "h": 26
+  },
+  {
+   "id": "p70-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2d",
+   "answer": "Welchen",
+   "x": 195,
+   "y": 597,
+   "w": 83,
+   "h": 26
+  },
+  {
+   "id": "p70-3b1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3b1",
+   "answer": "lasse",
+   "x": 659,
+   "y": 783,
+   "w": 153,
+   "h": 26
+  },
+  {
+   "id": "p70-3b2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3b2",
+   "answer": "schneiden",
+   "x": 320,
+   "y": 814,
+   "w": 142,
+   "h": 26
+  },
+  {
+   "id": "p70-3c1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3c1",
+   "answer": "lässt",
+   "x": 610,
+   "y": 842,
+   "w": 147,
+   "h": 26
+  },
+  {
+   "id": "p70-3c2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3c2",
+   "answer": "wechseln",
+   "x": 867,
+   "y": 842,
+   "w": 147,
+   "h": 26
+  },
+  {
+   "id": "p70-3d1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3d1",
+   "answer": "Lasst",
+   "x": 214,
+   "y": 868,
+   "w": 153,
+   "h": 26
+  },
+  {
+   "id": "p70-3d2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3d2",
+   "answer": "sichern",
+   "x": 519,
+   "y": 868,
+   "w": 140,
+   "h": 26
+  },
+  {
+   "id": "p70-4a",
+   "group": "g4",
+   "kind": "text",
+   "label": "4a",
+   "answer": "Unfall näher beschreiben",
+   "x": 354,
+   "y": 1033,
+   "w": 250,
+   "h": 26
+  },
+  {
+   "id": "p70-4b",
+   "group": "g4",
+   "kind": "text",
+   "label": "4b",
+   "answer": "Erzählen Sie doch",
+   "x": 663,
+   "y": 1033,
+   "w": 265,
+   "h": 26
+  },
+  {
+   "id": "p70-4c",
+   "group": "g4",
+   "kind": "text",
+   "label": "4c",
+   "answer": "Ich war im",
+   "x": 195,
+   "y": 1064,
+   "w": 269,
+   "h": 26
+  },
+  {
+   "id": "p70-4d",
+   "group": "g4",
+   "kind": "text",
+   "label": "4d",
+   "answer": "Daran kann ich mich",
+   "x": 195,
+   "y": 1166,
+   "w": 269,
+   "h": 26
+  },
+  {
+   "id": "p70-4e",
+   "group": "g4",
+   "kind": "text",
+   "label": "4e",
+   "answer": "Ich kann nur sagen",
+   "x": 653,
+   "y": 1166,
+   "w": 262,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Test 1"
+  },
+  {
+   "id": "g2",
+   "label": "Test 2"
+  },
+  {
+   "id": "g3",
+   "label": "Test 3"
+  },
+  {
+   "id": "g4",
+   "label": "Test 4"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "L21 Test graded from the book's Lösungsschlüssel Tests (AB p107)."
+  ]
  }
 }

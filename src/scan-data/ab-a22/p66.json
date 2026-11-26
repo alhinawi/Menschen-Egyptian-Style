@@ -2638,11 +2638,177 @@
    "h": 8
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p66-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2b",
+   "answer": "Hammer",
+   "x": 201,
+   "y": 669,
+   "w": 118,
+   "h": 26
+  },
+  {
+   "id": "p66-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2c",
+   "answer": "Täter",
+   "x": 523,
+   "y": 669,
+   "w": 122,
+   "h": 26
+  },
+  {
+   "id": "p66-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2d",
+   "answer": "stiehlt",
+   "x": 205,
+   "y": 696,
+   "w": 155,
+   "h": 26
+  },
+  {
+   "id": "p66-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2e",
+   "answer": "ungefähr",
+   "x": 366,
+   "y": 728,
+   "w": 110,
+   "h": 26
+  },
+  {
+   "id": "p66-2f",
+   "group": "g2",
+   "kind": "text",
+   "label": "2f",
+   "answer": "schmalen",
+   "x": 796,
+   "y": 728,
+   "w": 114,
+   "h": 26
+  },
+  {
+   "id": "p66-2g",
+   "group": "g2",
+   "kind": "text",
+   "label": "2g",
+   "answer": "langen",
+   "x": 320,
+   "y": 756,
+   "w": 114,
+   "h": 26
+  },
+  {
+   "id": "p66-2h",
+   "group": "g2",
+   "kind": "text",
+   "label": "2h",
+   "answer": "trägt",
+   "x": 494,
+   "y": 784,
+   "w": 114,
+   "h": 26
+  },
+  {
+   "id": "p66-2i",
+   "group": "g2",
+   "kind": "text",
+   "label": "2i",
+   "answer": "sperren",
+   "x": 816,
+   "y": 815,
+   "w": 118,
+   "h": 26
+  },
+  {
+   "id": "p66-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3b",
+   "answer": "Welchen",
+   "x": 195,
+   "y": 1063,
+   "w": 125,
+   "h": 26
+  },
+  {
+   "id": "p66-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3c",
+   "answer": "Den",
+   "x": 470,
+   "y": 1063,
+   "w": 114,
+   "h": 26
+  },
+  {
+   "id": "p66-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3d",
+   "answer": "Den",
+   "x": 262,
+   "y": 1089,
+   "w": 104,
+   "h": 26
+  },
+  {
+   "id": "p66-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3e",
+   "answer": "Den",
+   "x": 195,
+   "y": 1118,
+   "w": 125,
+   "h": 26
+  },
+  {
+   "id": "p66-3f",
+   "group": "g3",
+   "kind": "text",
+   "label": "3f",
+   "answer": "Den",
+   "x": 299,
+   "y": 1144,
+   "w": 116,
+   "h": 26
+  },
+  {
+   "id": "p66-3g",
+   "group": "g3",
+   "kind": "text",
+   "label": "3g",
+   "answer": "Der",
+   "x": 553,
+   "y": 1144,
+   "w": 112,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g2",
+   "label": "2 Ordnen Sie zu"
+  },
+  {
+   "id": "g3",
+   "label": "3 Zeugenaussage"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Items 2 and 3 graded from the official key. Item 1 (letter-gap words) and item 4 (line matching) ungraded."
+  ]
  }
 }

@@ -1917,11 +1917,313 @@
    "h": 10
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p67-5r1d",
+   "group": "g5",
+   "kind": "text",
+   "label": "5r1d",
+   "answer": "dem",
+   "x": 436,
+   "y": 284,
+   "w": 52,
+   "h": 26
+  },
+  {
+   "id": "p67-5r2a",
+   "group": "g5",
+   "kind": "text",
+   "label": "5r2a",
+   "answer": "welchem",
+   "x": 177,
+   "y": 318,
+   "w": 171,
+   "h": 26
+  },
+  {
+   "id": "p67-5r2d",
+   "group": "g5",
+   "kind": "text",
+   "label": "5r2d",
+   "answer": "diesem",
+   "x": 363,
+   "y": 319,
+   "w": 59,
+   "h": 26
+  },
+  {
+   "id": "p67-5r3a",
+   "group": "g5",
+   "kind": "text",
+   "label": "5r3a",
+   "answer": "welcher",
+   "x": 177,
+   "y": 350,
+   "w": 171,
+   "h": 26
+  },
+  {
+   "id": "p67-5r3d",
+   "group": "g5",
+   "kind": "text",
+   "label": "5r3d",
+   "answer": "der",
+   "x": 436,
+   "y": 350,
+   "w": 52,
+   "h": 26
+  },
+  {
+   "id": "p67-5r4a",
+   "group": "g5",
+   "kind": "text",
+   "label": "5r4a",
+   "answer": "welchen",
+   "x": 177,
+   "y": 383,
+   "w": 171,
+   "h": 26
+  },
+  {
+   "id": "p67-5r4d",
+   "group": "g5",
+   "kind": "text",
+   "label": "5r4d",
+   "answer": "denen",
+   "x": 436,
+   "y": 386,
+   "w": 52,
+   "h": 26
+  },
+  {
+   "id": "p67-6b",
+   "group": "g6",
+   "kind": "text",
+   "label": "6b",
+   "answer": "er",
+   "x": 216,
+   "y": 538,
+   "w": 40,
+   "h": 26
+  },
+  {
+   "id": "p67-6c",
+   "group": "g6",
+   "kind": "text",
+   "label": "6c",
+   "answer": "en",
+   "x": 339,
+   "y": 538,
+   "w": 29,
+   "h": 26
+  },
+  {
+   "id": "p67-6d",
+   "group": "g6",
+   "kind": "text",
+   "label": "6d",
+   "answer": "em",
+   "x": 199,
+   "y": 566,
+   "w": 33,
+   "h": 26
+  },
+  {
+   "id": "p67-6e",
+   "group": "g6",
+   "kind": "text",
+   "label": "6e",
+   "answer": "ie",
+   "x": 175,
+   "y": 595,
+   "w": 33,
+   "h": 26
+  },
+  {
+   "id": "p67-6f",
+   "group": "g6",
+   "kind": "text",
+   "label": "6f",
+   "answer": "er",
+   "x": 320,
+   "y": 622,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p67-6g",
+   "group": "g6",
+   "kind": "text",
+   "label": "6g",
+   "answer": "as",
+   "x": 244,
+   "y": 674,
+   "w": 37,
+   "h": 26
+  },
+  {
+   "id": "p67-6h",
+   "group": "g6",
+   "kind": "text",
+   "label": "6h",
+   "answer": "es",
+   "x": 208,
+   "y": 701,
+   "w": 37,
+   "h": 26
+  },
+  {
+   "id": "p67-6i",
+   "group": "g6",
+   "kind": "text",
+   "label": "6i",
+   "answer": "as",
+   "x": 315,
+   "y": 701,
+   "w": 33,
+   "h": 26
+  },
+  {
+   "id": "p67-6j",
+   "group": "g6",
+   "kind": "text",
+   "label": "6j",
+   "answer": "as",
+   "x": 192,
+   "y": 728,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p67-6k",
+   "group": "g6",
+   "kind": "text",
+   "label": "6k",
+   "answer": "as",
+   "x": 183,
+   "y": 755,
+   "w": 37,
+   "h": 26
+  },
+  {
+   "id": "p67-6l",
+   "group": "g6",
+   "kind": "text",
+   "label": "6l",
+   "answer": "ie",
+   "x": 838,
+   "y": 755,
+   "w": 39,
+   "h": 26
+  },
+  {
+   "id": "p67-6m",
+   "group": "g6",
+   "kind": "text",
+   "label": "6m",
+   "answer": "ie",
+   "x": 173,
+   "y": 809,
+   "w": 40,
+   "h": 26
+  },
+  {
+   "id": "p67-6n",
+   "group": "g6",
+   "kind": "text",
+   "label": "6n",
+   "answer": "en",
+   "x": 690,
+   "y": 809,
+   "w": 33,
+   "h": 26
+  },
+  {
+   "id": "p67-6o",
+   "group": "g6",
+   "kind": "text",
+   "label": "6o",
+   "answer": "ie",
+   "x": 159,
+   "y": 834,
+   "w": 33,
+   "h": 26
+  },
+  {
+   "id": "p67-7b",
+   "group": "g7",
+   "kind": "text",
+   "label": "7b",
+   "answer": "Gibt es dafür Zeugen",
+   "x": 159,
+   "y": 1111,
+   "w": 781,
+   "h": 26
+  },
+  {
+   "id": "p67-7c",
+   "group": "g7",
+   "kind": "text",
+   "label": "7c",
+   "answer": "Was haben Sie gemacht",
+   "x": 159,
+   "y": 1151,
+   "w": 781,
+   "h": 26
+  },
+  {
+   "id": "p67-7d",
+   "group": "g7",
+   "kind": "text",
+   "label": "7d",
+   "answer": "kann ich mich nicht mehr erinnern",
+   "x": 761,
+   "y": 1193,
+   "w": 204,
+   "h": 26
+  },
+  {
+   "id": "p67-7e",
+   "group": "g7",
+   "kind": "text",
+   "label": "7e",
+   "answer": "Können Sie ihn näher beschreiben",
+   "x": 159,
+   "y": 1276,
+   "w": 781,
+   "h": 26
+  },
+  {
+   "id": "p67-7f",
+   "group": "g7",
+   "kind": "text",
+   "label": "7f",
+   "answer": "Ich kann nur sagen, dass",
+   "x": 336,
+   "y": 1304,
+   "w": 604,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g5",
+   "label": "5 Dativ-Tabelle"
+  },
+  {
+   "id": "g6",
+   "label": "6 Ergänzen Sie"
+  },
+  {
+   "id": "g7",
+   "label": "7 Ordnen Sie zu"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Item 5 table, item 6 (ending fields: each blank holds only the missing letters after the printed first letters, e.g. Dies__ = er; answers are the endings of the keyed full words) and item 7 graded from the official key. Item 6 tiny blanks are placed from the overlay, check placement when clicking."
+  ]
  }
 }
