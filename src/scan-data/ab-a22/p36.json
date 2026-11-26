@@ -2484,13 +2484,129 @@
    "h": 8
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p36-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "Mitten",
+   "x": 730,
+   "y": 1045,
+   "w": 225,
+   "h": 26
+  },
+  {
+   "id": "p36-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c",
+   "answer": "plötzlich",
+   "x": 470,
+   "y": 1075,
+   "w": 270,
+   "h": 26
+  },
+  {
+   "id": "p36-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d",
+   "answer": "jemand",
+   "x": 382,
+   "y": 1106,
+   "w": 196,
+   "h": 26
+  },
+  {
+   "id": "p36-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 e",
+   "answer": "niemand",
+   "x": 508,
+   "y": 1136,
+   "w": 217,
+   "h": 26
+  },
+  {
+   "id": "p36-2f",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 f",
+   "answer": "Feld",
+   "x": 210,
+   "y": 1198,
+   "w": 193,
+   "h": 26
+  },
+  {
+   "id": "p36-2g",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 g",
+   "answer": "Region",
+   "x": 270,
+   "y": 1230,
+   "w": 235,
+   "h": 26
+  },
+  {
+   "id": "p36-2h",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 h",
+   "answer": "Bauer",
+   "x": 210,
+   "y": 1261,
+   "w": 225,
+   "h": 26
+  },
+  {
+   "id": "p36-2i",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 i",
+   "answer": "duschen",
+   "x": 410,
+   "y": 1292,
+   "w": 295,
+   "h": 26
+  },
+  {
+   "id": "p36-2j",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 j",
+   "answer": "insgesamt",
+   "x": 466,
+   "y": 1333,
+   "w": 312,
+   "h": 26
+  },
+  {
+   "id": "p36-2k",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 k",
+   "answer": "bekannt",
+   "x": 210,
+   "y": 1385,
+   "w": 225,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g2",
+   "label": "2 Bilden Sie Wörter und ergänzen Sie."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "Item 1 (crossword) and 2 (word-building gap text) have key answers but many blanks run across lines; left ungraded for now."
+   "Item 2 (word-building gap text) graded from the official key, letters b-k; a is the printed example. Item 1 (crossword) is left ungraded: the printed letters and pencil marks share the grid."
   ]
  }
 }

@@ -3030,11 +3030,419 @@
    "h": 15
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p40-1-2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 (2)",
+   "answer": "Fähre",
+   "x": 408,
+   "y": 352,
+   "w": 150,
+   "h": 26
+  },
+  {
+   "id": "p40-1-3",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 (3)",
+   "answer": "Ankunft",
+   "x": 255,
+   "y": 378,
+   "w": 135,
+   "h": 26
+  },
+  {
+   "id": "p40-1-4",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 (4)",
+   "answer": "Reifen",
+   "x": 395,
+   "y": 406,
+   "w": 133,
+   "h": 26
+  },
+  {
+   "id": "p40-1-5",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 (5)",
+   "answer": "Wagen",
+   "x": 480,
+   "y": 433,
+   "w": 118,
+   "h": 26
+  },
+  {
+   "id": "p40-1-6",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 (6)",
+   "answer": "Werkstatt",
+   "x": 828,
+   "y": 433,
+   "w": 79,
+   "h": 26
+  },
+  {
+   "id": "p40-1-7",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 (7)",
+   "answer": "Panne",
+   "x": 395,
+   "y": 489,
+   "w": 117,
+   "h": 26
+  },
+  {
+   "id": "p40-1-8",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 (8)",
+   "answer": "Motor",
+   "x": 745,
+   "y": 489,
+   "w": 135,
+   "h": 26
+  },
+  {
+   "id": "p40-2b-auf_einen",
+   "group": "g2",
+   "kind": "radio",
+   "label": "auf einen",
+   "name": "p40-2b",
+   "value": "auf einen",
+   "answer": "false",
+   "x": 759,
+   "y": 628,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p40-2b-auf_einem",
+   "group": "g2",
+   "kind": "radio",
+   "label": "auf einem",
+   "name": "p40-2b",
+   "value": "auf einem",
+   "answer": "true",
+   "x": 867,
+   "y": 628,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p40-2c-ans",
+   "group": "g2",
+   "kind": "radio",
+   "label": "ans",
+   "name": "p40-2c",
+   "value": "ans",
+   "answer": "false",
+   "x": 301,
+   "y": 655,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p40-2c-am",
+   "group": "g2",
+   "kind": "radio",
+   "label": "am",
+   "name": "p40-2c",
+   "value": "am",
+   "answer": "true",
+   "x": 361,
+   "y": 655,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p40-2d-in_die",
+   "group": "g2",
+   "kind": "radio",
+   "label": "in die",
+   "name": "p40-2d",
+   "value": "in die",
+   "answer": "false",
+   "x": 388,
+   "y": 694,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p40-2d-in_der",
+   "group": "g2",
+   "kind": "radio",
+   "label": "in der",
+   "name": "p40-2d",
+   "value": "in der",
+   "answer": "true",
+   "x": 465,
+   "y": 694,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p40-2e-auf_dem",
+   "group": "g2",
+   "kind": "radio",
+   "label": "auf dem",
+   "name": "p40-2e",
+   "value": "auf dem",
+   "answer": "true",
+   "x": 782,
+   "y": 694,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p40-2e-auf_den",
+   "group": "g2",
+   "kind": "radio",
+   "label": "auf den",
+   "name": "p40-2e",
+   "value": "auf den",
+   "answer": "false",
+   "x": 192,
+   "y": 719,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p40-2f-ins",
+   "group": "g2",
+   "kind": "radio",
+   "label": "ins",
+   "name": "p40-2f",
+   "value": "ins",
+   "answer": "true",
+   "x": 768,
+   "y": 719,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p40-2f-im",
+   "group": "g2",
+   "kind": "radio",
+   "label": "im",
+   "name": "p40-2f",
+   "value": "im",
+   "answer": "false",
+   "x": 825,
+   "y": 719,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p40-2g-auf_einen",
+   "group": "g2",
+   "kind": "radio",
+   "label": "auf einen",
+   "name": "p40-2g",
+   "value": "auf einen",
+   "answer": "true",
+   "x": 430,
+   "y": 746,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p40-2g-auf_einem",
+   "group": "g2",
+   "kind": "radio",
+   "label": "auf einem",
+   "name": "p40-2g",
+   "value": "auf einem",
+   "answer": "false",
+   "x": 534,
+   "y": 746,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p40-2h-in",
+   "group": "g2",
+   "kind": "radio",
+   "label": "in",
+   "name": "p40-2h",
+   "value": "in",
+   "answer": "true",
+   "x": 439,
+   "y": 785,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p40-2h-nach",
+   "group": "g2",
+   "kind": "radio",
+   "label": "nach",
+   "name": "p40-2h",
+   "value": "nach",
+   "answer": "false",
+   "x": 489,
+   "y": 785,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p40-2i-in_die",
+   "group": "g2",
+   "kind": "radio",
+   "label": "in die",
+   "name": "p40-2i",
+   "value": "in die",
+   "answer": "true",
+   "x": 258,
+   "y": 826,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p40-2i-in_der",
+   "group": "g2",
+   "kind": "radio",
+   "label": "in der",
+   "name": "p40-2i",
+   "value": "in der",
+   "answer": "false",
+   "x": 338,
+   "y": 826,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p40-2j-in_den",
+   "group": "g2",
+   "kind": "radio",
+   "label": "in den",
+   "name": "p40-2j",
+   "value": "in den",
+   "answer": "false",
+   "x": 699,
+   "y": 826,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p40-2j-im",
+   "group": "g2",
+   "kind": "radio",
+   "label": "im",
+   "name": "p40-2j",
+   "value": "im",
+   "answer": "true",
+   "x": 782,
+   "y": 826,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p40-2k-in_den",
+   "group": "g2",
+   "kind": "radio",
+   "label": "in den",
+   "name": "p40-2k",
+   "value": "in den",
+   "answer": "true",
+   "x": 259,
+   "y": 853,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p40-2k-im",
+   "group": "g2",
+   "kind": "radio",
+   "label": "im",
+   "name": "p40-2k",
+   "value": "im",
+   "answer": "false",
+   "x": 343,
+   "y": 853,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p40-3a",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a",
+   "answer": "nicht langweilig",
+   "x": 305,
+   "y": 1018,
+   "w": 375,
+   "h": 26
+  },
+  {
+   "id": "p40-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "so ein Pech",
+   "x": 528,
+   "y": 1074,
+   "w": 377,
+   "h": 26
+  },
+  {
+   "id": "p40-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "bestimmt anstrengend",
+   "x": 305,
+   "y": 1126,
+   "w": 380,
+   "h": 26
+  },
+  {
+   "id": "p40-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "sicher schrecklich",
+   "x": 318,
+   "y": 1178,
+   "w": 380,
+   "h": 26
+  },
+  {
+   "id": "p40-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e",
+   "answer": "für ein Zufall",
+   "x": 275,
+   "y": 1233,
+   "w": 375,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "1 Ordnen Sie zu."
+  },
+  {
+   "id": "g2",
+   "label": "2 Ferienende! Was ist richtig?"
+  },
+  {
+   "id": "g3",
+   "label": "3 Ordnen Sie zu."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Test items 1 to 3 are graded from the book's own Lösungsschlüssel Tests (printed p106 Lektion 17)."
+  ]
  }
 }

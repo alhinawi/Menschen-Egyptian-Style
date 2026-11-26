@@ -2407,11 +2407,263 @@
    "h": 10
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p43-6b",
+   "group": "g6",
+   "kind": "text",
+   "label": "6b",
+   "answer": "über seine Kollegen",
+   "x": 332,
+   "y": 705,
+   "w": 291,
+   "h": 26
+  },
+  {
+   "id": "p43-6c",
+   "group": "g6",
+   "kind": "text",
+   "label": "6c",
+   "answer": "von einem Urlaub",
+   "x": 287,
+   "y": 731,
+   "w": 269,
+   "h": 26
+  },
+  {
+   "id": "p43-6d",
+   "group": "g6",
+   "kind": "text",
+   "label": "6d",
+   "answer": "mit ihm",
+   "x": 364,
+   "y": 756,
+   "w": 137,
+   "h": 26
+  },
+  {
+   "id": "p43-6e",
+   "group": "g6",
+   "kind": "text",
+   "label": "6e",
+   "answer": "für unseren Garten",
+   "x": 574,
+   "y": 783,
+   "w": 262,
+   "h": 26
+  },
+  {
+   "id": "p43-8b1",
+   "group": "g8",
+   "kind": "text",
+   "label": "8b1",
+   "answer": "Worauf",
+   "x": 179,
+   "y": 1227,
+   "w": 133,
+   "h": 26
+  },
+  {
+   "id": "p43-8b2",
+   "group": "g8",
+   "kind": "text",
+   "label": "8b2",
+   "answer": "Darauf",
+   "x": 809,
+   "y": 1245,
+   "w": 128,
+   "h": 26
+  },
+  {
+   "id": "p43-8c1",
+   "group": "g8",
+   "kind": "text",
+   "label": "8c1",
+   "answer": "Woran",
+   "x": 179,
+   "y": 1282,
+   "w": 133,
+   "h": 26
+  },
+  {
+   "id": "p43-8c2",
+   "group": "g8",
+   "kind": "text",
+   "label": "8c2",
+   "answer": "Daran",
+   "x": 724,
+   "y": 1280,
+   "w": 137,
+   "h": 26
+  },
+  {
+   "id": "p43-8d",
+   "group": "g8",
+   "kind": "text",
+   "label": "8d",
+   "answer": "An wen",
+   "x": 179,
+   "y": 1335,
+   "w": 133,
+   "h": 26
+  },
+  {
+   "id": "p43-8e",
+   "group": "g8",
+   "kind": "text",
+   "label": "8e",
+   "answer": "Von wem",
+   "x": 179,
+   "y": 1364,
+   "w": 133,
+   "h": 26
+  },
+  {
+   "id": "p43-8f1",
+   "group": "g8",
+   "kind": "text",
+   "label": "8f1",
+   "answer": "Wovon",
+   "x": 179,
+   "y": 1390,
+   "w": 133,
+   "h": 26
+  },
+  {
+   "id": "p43-8f2",
+   "group": "g8",
+   "kind": "text",
+   "label": "8f2",
+   "answer": "Davon",
+   "x": 763,
+   "y": 1393,
+   "w": 134,
+   "h": 26
+  },
+  {
+   "id": "p43-5b-die_Gäste",
+   "group": "g5",
+   "kind": "radio",
+   "label": "die Gäste",
+   "name": "p43-5b",
+   "value": "die Gäste",
+   "answer": "false",
+   "x": 334,
+   "y": 406,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p43-5b-den_Gästen",
+   "group": "g5",
+   "kind": "radio",
+   "label": "den Gästen",
+   "name": "p43-5b",
+   "value": "den Gästen",
+   "answer": "true",
+   "x": 468,
+   "y": 406,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p43-5c-das_Problem",
+   "group": "g5",
+   "kind": "radio",
+   "label": "das Problem",
+   "name": "p43-5c",
+   "value": "das Problem",
+   "answer": "true",
+   "x": 229,
+   "y": 432,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p43-5c-dem_Problem",
+   "group": "g5",
+   "kind": "radio",
+   "label": "dem Problem",
+   "name": "p43-5c",
+   "value": "dem Problem",
+   "answer": "false",
+   "x": 399,
+   "y": 432,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p43-5d-eine_ruhige_Woche",
+   "group": "g5",
+   "kind": "radio",
+   "label": "eine ruhige Woche",
+   "name": "p43-5d",
+   "value": "eine ruhige Woche",
+   "answer": "true",
+   "x": 607,
+   "y": 462,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p43-5d-einer_ruhigen_Woche",
+   "group": "g5",
+   "kind": "radio",
+   "label": "einer ruhigen Woche",
+   "name": "p43-5d",
+   "value": "einer ruhigen Woche",
+   "answer": "false",
+   "x": 827,
+   "y": 462,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p43-5e-den_Zimmer",
+   "group": "g5",
+   "kind": "radio",
+   "label": "den Zimmer",
+   "name": "p43-5e",
+   "value": "den Zimmer",
+   "answer": "false",
+   "x": 636,
+   "y": 545,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p43-5e-dem_Zimmer",
+   "group": "g5",
+   "kind": "radio",
+   "label": "dem Zimmer",
+   "name": "p43-5e",
+   "value": "dem Zimmer",
+   "answer": "true",
+   "x": 805,
+   "y": 545,
+   "w": 24,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g5",
+   "label": "5 Akkusativ oder Dativ? Kreuzen Sie an."
+  },
+  {
+   "id": "g6",
+   "label": "6 Ergänzen Sie."
+  },
+  {
+   "id": "g8",
+   "label": "8 Ordnen Sie zu."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Items 5, 6 and 8 graded from the official key (5 a and 8 a are the printed examples). Item 7 is free writing."
+  ]
  }
 }

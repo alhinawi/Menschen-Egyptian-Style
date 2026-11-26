@@ -2890,11 +2890,177 @@
    "h": 8
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p42-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2b",
+   "answer": "träume",
+   "x": 250,
+   "y": 593,
+   "w": 153,
+   "h": 26
+  },
+  {
+   "id": "p42-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2c",
+   "answer": "zufrieden",
+   "x": 643,
+   "y": 622,
+   "w": 165,
+   "h": 26
+  },
+  {
+   "id": "p42-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2d",
+   "answer": "ärgern",
+   "x": 250,
+   "y": 654,
+   "w": 161,
+   "h": 26
+  },
+  {
+   "id": "p42-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2e",
+   "answer": "Lust",
+   "x": 369,
+   "y": 680,
+   "w": 168,
+   "h": 26
+  },
+  {
+   "id": "p42-2f",
+   "group": "g2",
+   "kind": "text",
+   "label": "2f",
+   "answer": "interessierst",
+   "x": 452,
+   "y": 707,
+   "w": 156,
+   "h": 26
+  },
+  {
+   "id": "p42-2g",
+   "group": "g2",
+   "kind": "text",
+   "label": "2g",
+   "answer": "gefreut",
+   "x": 419,
+   "y": 785,
+   "w": 149,
+   "h": 26
+  },
+  {
+   "id": "p42-2h",
+   "group": "g2",
+   "kind": "text",
+   "label": "2h",
+   "answer": "spreche",
+   "x": 565,
+   "y": 866,
+   "w": 165,
+   "h": 26
+  },
+  {
+   "id": "p42-4b",
+   "group": "g4",
+   "kind": "text",
+   "label": "4b",
+   "answer": "auf",
+   "x": 556,
+   "y": 1144,
+   "w": 51,
+   "h": 26
+  },
+  {
+   "id": "p42-4c",
+   "group": "g4",
+   "kind": "text",
+   "label": "4c",
+   "answer": "von",
+   "x": 773,
+   "y": 1144,
+   "w": 55,
+   "h": 26
+  },
+  {
+   "id": "p42-4d",
+   "group": "g4",
+   "kind": "text",
+   "label": "4d",
+   "answer": "Vom",
+   "x": 320,
+   "y": 1198,
+   "w": 46,
+   "h": 26
+  },
+  {
+   "id": "p42-4e",
+   "group": "g4",
+   "kind": "text",
+   "label": "4e",
+   "answer": "auf",
+   "x": 645,
+   "y": 1223,
+   "w": 54,
+   "h": 26
+  },
+  {
+   "id": "p42-4f",
+   "group": "g4",
+   "kind": "text",
+   "label": "4f",
+   "answer": "für",
+   "x": 531,
+   "y": 1306,
+   "w": 49,
+   "h": 26
+  },
+  {
+   "id": "p42-4g",
+   "group": "g4",
+   "kind": "text",
+   "label": "4g",
+   "answer": "mit",
+   "x": 747,
+   "y": 1306,
+   "w": 81,
+   "h": 26
+  },
+  {
+   "id": "p42-4h",
+   "group": "g4",
+   "kind": "text",
+   "label": "4h",
+   "answer": "über",
+   "x": 248,
+   "y": 1359,
+   "w": 51,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g2",
+   "label": "2 Ein Anruf aus dem Urlaub. Ordnen Sie zu."
+  },
+  {
+   "id": "g4",
+   "label": "4 In der Kantine. Ergänzen Sie die Präpositionen."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Items 2 and 4 graded from the official key. Item 1 (several valid words per picture) and the item 3 table (free cell layout) are left ungraded."
+  ]
  }
 }

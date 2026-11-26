@@ -2610,11 +2610,203 @@
    "h": 10
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p46-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1b",
+   "answer": "Niederschläge",
+   "x": 232,
+   "y": 286,
+   "w": 217,
+   "h": 26
+  },
+  {
+   "id": "p46-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1c",
+   "answer": "Hagel",
+   "x": 665,
+   "y": 286,
+   "w": 204,
+   "h": 26
+  },
+  {
+   "id": "p46-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1d",
+   "answer": "Temperaturen",
+   "x": 177,
+   "y": 313,
+   "w": 211,
+   "h": 26
+  },
+  {
+   "id": "p46-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1e",
+   "answer": "Frost",
+   "x": 317,
+   "y": 341,
+   "w": 205,
+   "h": 26
+  },
+  {
+   "id": "p46-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1f",
+   "answer": "Hauptstadt",
+   "x": 794,
+   "y": 341,
+   "w": 193,
+   "h": 26
+  },
+  {
+   "id": "p46-1g",
+   "group": "g1",
+   "kind": "text",
+   "label": "1g",
+   "answer": "Jahreszeit",
+   "x": 595,
+   "y": 369,
+   "w": 205,
+   "h": 26
+  },
+  {
+   "id": "p46-3a",
+   "group": "g3",
+   "kind": "text",
+   "label": "3a",
+   "answer": "Darüber",
+   "x": 549,
+   "y": 750,
+   "w": 107,
+   "h": 26
+  },
+  {
+   "id": "p46-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3b",
+   "answer": "Wofür",
+   "x": 214,
+   "y": 778,
+   "w": 106,
+   "h": 26
+  },
+  {
+   "id": "p46-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3c",
+   "answer": "Worauf",
+   "x": 214,
+   "y": 805,
+   "w": 106,
+   "h": 26
+  },
+  {
+   "id": "p46-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3d",
+   "answer": "Von wem",
+   "x": 214,
+   "y": 832,
+   "w": 106,
+   "h": 26
+  },
+  {
+   "id": "p46-4a",
+   "group": "g4",
+   "kind": "text",
+   "label": "4a",
+   "answer": "es wieder Frost",
+   "x": 198,
+   "y": 1033,
+   "w": 492,
+   "h": 26
+  },
+  {
+   "id": "p46-4b",
+   "group": "g4",
+   "kind": "text",
+   "label": "4b",
+   "answer": "das typisch",
+   "x": 232,
+   "y": 1061,
+   "w": 250,
+   "h": 26
+  },
+  {
+   "id": "p46-4c",
+   "group": "g4",
+   "kind": "text",
+   "label": "4c",
+   "answer": "ganz normal",
+   "x": 299,
+   "y": 1086,
+   "w": 472,
+   "h": 26
+  },
+  {
+   "id": "p46-4d",
+   "group": "g4",
+   "kind": "text",
+   "label": "4d",
+   "answer": "nicht höher und nicht niedriger",
+   "x": 244,
+   "y": 1114,
+   "w": 488,
+   "h": 26
+  },
+  {
+   "id": "p46-4e",
+   "group": "g4",
+   "kind": "text",
+   "label": "4e",
+   "answer": "es ist feucht",
+   "x": 250,
+   "y": 1192,
+   "w": 488,
+   "h": 26
+  },
+  {
+   "id": "p46-4f",
+   "group": "g4",
+   "kind": "text",
+   "label": "4f",
+   "answer": "bald wärmer",
+   "x": 415,
+   "y": 1226,
+   "w": 488,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "1 Das Wetter in Norddeutschland. Ordnen Sie zu."
+  },
+  {
+   "id": "g3",
+   "label": "3 Ergänzen Sie."
+  },
+  {
+   "id": "g4",
+   "label": "4 Ordnen Sie zu."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Test items 1, 3 and 4 graded from the book's own Lösungsschlüssel Tests (p106). Item 2 (preposition plus ending, tiny blanks) is left ungraded. In item 4 b the answer runs over two blanks (after Ist and before (b)); it is checked in the second blank only."
+  ]
  }
 }

@@ -2246,13 +2246,250 @@
    "h": 10
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p38-6b1",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 b",
+   "answer": "in",
+   "x": 453,
+   "y": 279,
+   "w": 104,
+   "h": 24
+  },
+  {
+   "id": "p38-6b2",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 b",
+   "answer": "den",
+   "x": 565,
+   "y": 279,
+   "w": 105,
+   "h": 24
+  },
+  {
+   "id": "p38-6c1",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 c",
+   "answer": "nach",
+   "x": 558,
+   "y": 306,
+   "w": 97,
+   "h": 24
+  },
+  {
+   "id": "p38-6d1",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 d",
+   "answer": "an",
+   "x": 762,
+   "y": 306,
+   "w": 106,
+   "h": 24
+  },
+  {
+   "id": "p38-6d2",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 d",
+   "answer": "die",
+   "x": 875,
+   "y": 306,
+   "w": 90,
+   "h": 24
+  },
+  {
+   "id": "p38-6e1",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 e",
+   "answer": "am",
+   "x": 525,
+   "y": 331,
+   "w": 103,
+   "h": 24
+  },
+  {
+   "id": "p38-6f1",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 f",
+   "answer": "im",
+   "x": 830,
+   "y": 331,
+   "w": 95,
+   "h": 24
+  },
+  {
+   "id": "p38-6g1",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 g",
+   "answer": "am",
+   "x": 492,
+   "y": 356,
+   "w": 93,
+   "h": 24
+  },
+  {
+   "id": "p38-6h1",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 h",
+   "answer": "in",
+   "x": 873,
+   "y": 356,
+   "w": 85,
+   "h": 24
+  },
+  {
+   "id": "p38-6h2",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 h",
+   "answer": "die",
+   "x": 198,
+   "y": 382,
+   "w": 107,
+   "h": 24
+  },
+  {
+   "id": "p38-6i1",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 i",
+   "answer": "nach",
+   "x": 748,
+   "y": 382,
+   "w": 92,
+   "h": 24
+  },
+  {
+   "id": "p38-6j1",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 j",
+   "answer": "Auf",
+   "x": 370,
+   "y": 408,
+   "w": 102,
+   "h": 24
+  },
+  {
+   "id": "p38-6j2",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 j",
+   "answer": "der",
+   "x": 482,
+   "y": 408,
+   "w": 98,
+   "h": 24
+  },
+  {
+   "id": "p38-6k1",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 k",
+   "answer": "in",
+   "x": 315,
+   "y": 434,
+   "w": 105,
+   "h": 24
+  },
+  {
+   "id": "p38-6k2",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 k",
+   "answer": "den",
+   "x": 427,
+   "y": 434,
+   "w": 93,
+   "h": 24
+  },
+  {
+   "id": "p38-6l1",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 l",
+   "answer": "in",
+   "x": 695,
+   "y": 434,
+   "w": 93,
+   "h": 24
+  },
+  {
+   "id": "p38-6l2",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 l",
+   "answer": "der",
+   "x": 800,
+   "y": 434,
+   "w": 95,
+   "h": 24
+  },
+  {
+   "id": "p38-6m1",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 m",
+   "answer": "in",
+   "x": 298,
+   "y": 459,
+   "w": 87,
+   "h": 24
+  },
+  {
+   "id": "p38-6m2",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 m",
+   "answer": "em",
+   "x": 417,
+   "y": 459,
+   "w": 103,
+   "h": 24
+  },
+  {
+   "id": "p38-6n1",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 n",
+   "answer": "in",
+   "x": 748,
+   "y": 459,
+   "w": 87,
+   "h": 24
+  },
+  {
+   "id": "p38-6n2",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 n",
+   "answer": "em",
+   "x": 868,
+   "y": 459,
+   "w": 92,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g6",
+   "label": "6 Ergänzen Sie die Präpositionen und die Artikel, wo nötig."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "Item 6 (gap text, several blanks per line) is left ungraded for now; items 7 (letter gaps), 8 and 9 are free or in-word gaps."
+   "Item 6 (prepositions and articles) graded blank by blank from the official key; for m and n the second blank holds the ending 'em'. Items 7 (letter gaps), 8 and 9 are in-word gaps or free writing and stay ungraded."
   ]
  }
 }

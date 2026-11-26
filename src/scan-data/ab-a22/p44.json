@@ -2911,11 +2911,188 @@
    "h": 68
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p44-9a",
+   "group": "g9",
+   "kind": "text",
+   "label": "9a",
+   "answer": "darüber",
+   "x": 504,
+   "y": 245,
+   "w": 99,
+   "h": 26
+  },
+  {
+   "id": "p44-9b1",
+   "group": "g9",
+   "kind": "text",
+   "label": "9b1",
+   "answer": "Worauf",
+   "x": 617,
+   "y": 296,
+   "w": 98,
+   "h": 26
+  },
+  {
+   "id": "p44-9b2",
+   "group": "g9",
+   "kind": "text",
+   "label": "9b2",
+   "answer": "Auf",
+   "x": 230,
+   "y": 323,
+   "w": 94,
+   "h": 26
+  },
+  {
+   "id": "p44-9b3",
+   "group": "g9",
+   "kind": "text",
+   "label": "9b3",
+   "answer": "Darauf",
+   "x": 454,
+   "y": 350,
+   "w": 107,
+   "h": 26
+  },
+  {
+   "id": "p44-9c1",
+   "group": "g9",
+   "kind": "text",
+   "label": "9c1",
+   "answer": "Mit wem",
+   "x": 230,
+   "y": 380,
+   "w": 100,
+   "h": 26
+  },
+  {
+   "id": "p44-9c2",
+   "group": "g9",
+   "kind": "text",
+   "label": "9c2",
+   "answer": "Mit",
+   "x": 230,
+   "y": 407,
+   "w": 100,
+   "h": 26
+  },
+  {
+   "id": "p44-9c3",
+   "group": "g9",
+   "kind": "text",
+   "label": "9c3",
+   "answer": "über",
+   "x": 574,
+   "y": 407,
+   "w": 112,
+   "h": 26
+  },
+  {
+   "id": "p44-9c4",
+   "group": "g9",
+   "kind": "text",
+   "label": "9c4",
+   "answer": "mit",
+   "x": 433,
+   "y": 434,
+   "w": 110,
+   "h": 26
+  },
+  {
+   "id": "p44-10b",
+   "group": "g10",
+   "kind": "text",
+   "label": "10b",
+   "answer": "niedrige",
+   "x": 778,
+   "y": 637,
+   "w": 193,
+   "h": 26
+  },
+  {
+   "id": "p44-10c",
+   "group": "g10",
+   "kind": "text",
+   "label": "10c",
+   "answer": "Temperaturen",
+   "x": 195,
+   "y": 663,
+   "w": 244,
+   "h": 26
+  },
+  {
+   "id": "p44-10d",
+   "group": "g10",
+   "kind": "text",
+   "label": "10d",
+   "answer": "Hauptstadt",
+   "x": 747,
+   "y": 663,
+   "w": 221,
+   "h": 26
+  },
+  {
+   "id": "p44-10e",
+   "group": "g10",
+   "kind": "text",
+   "label": "10e",
+   "answer": "trocken",
+   "x": 595,
+   "y": 712,
+   "w": 177,
+   "h": 26
+  },
+  {
+   "id": "p44-10f",
+   "group": "g10",
+   "kind": "text",
+   "label": "10f",
+   "answer": "Wüstengebieten",
+   "x": 513,
+   "y": 740,
+   "w": 259,
+   "h": 26
+  },
+  {
+   "id": "p44-10g",
+   "group": "g10",
+   "kind": "text",
+   "label": "10g",
+   "answer": "Regen",
+   "x": 195,
+   "y": 776,
+   "w": 238,
+   "h": 26
+  },
+  {
+   "id": "p44-10h",
+   "group": "g10",
+   "kind": "text",
+   "label": "10h",
+   "answer": "feuchter",
+   "x": 195,
+   "y": 800,
+   "w": 238,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g9",
+   "label": "9 Ergänzen Sie."
+  },
+  {
+   "id": "g10",
+   "label": "10 Ordnen Sie zu."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Items 9 and 10 graded from the official key (10 a is the printed example). Item 11 a is left ungraded: the key numbering does not line up with the printed blanks."
+  ]
  }
 }
