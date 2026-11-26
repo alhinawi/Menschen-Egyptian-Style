@@ -3345,13 +3345,79 @@
    "h": 15
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p18-21",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 Wort 5",
+   "answer": "Darsteller",
+   "x": 600,
+   "y": 466,
+   "w": 168,
+   "h": 26
+  },
+  {
+   "id": "p18-22",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 Wort 6",
+   "answer": "Regisseur",
+   "x": 780,
+   "y": 466,
+   "w": 116,
+   "h": 26
+  },
+  {
+   "id": "p18-31",
+   "group": "g3",
+   "kind": "text",
+   "label": "3a Frage 1: Abschnitt",
+   "answer": "C",
+   "x": 593,
+   "y": 593,
+   "w": 28,
+   "h": 28
+  },
+  {
+   "id": "p18-32",
+   "group": "g3",
+   "kind": "text",
+   "label": "3a Frage 2: Abschnitt",
+   "answer": "B",
+   "x": 593,
+   "y": 618,
+   "w": 28,
+   "h": 28
+  },
+  {
+   "id": "p18-33",
+   "group": "g3",
+   "kind": "text",
+   "label": "3a Frage 3: Abschnitt",
+   "answer": "A",
+   "x": 593,
+   "y": 646,
+   "w": 28,
+   "h": 28
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g2",
+   "label": "2 Was passt? Lesen Sie das Fernsehprogramm, sehen Sie ins Bildlexikon und ergänzen Sie."
+  },
+  {
+   "id": "g3",
+   "label": "3 a Welcher Textabschnitt passt? Überfliegen Sie den Text und ordnen Sie zu."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "Aufgabe 2 and 3a keys confirmed against the official Hueber Lösungen (A2): 2 Darsteller, Regisseur; 3a 1 C, 2 B, 3 A. 3b (corrections without blanks) stays ungraded."
   ]
  }
 }

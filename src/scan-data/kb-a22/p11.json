@@ -2526,13 +2526,53 @@
    "h": 13
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p11-6A",
+   "group": "g6",
+   "kind": "text",
+   "label": "6a A Bild",
+   "answer": "3",
+   "x": 172,
+   "y": 956,
+   "w": 28,
+   "h": 28
+  },
+  {
+   "id": "p11-6B",
+   "group": "g6",
+   "kind": "text",
+   "label": "6a B Bild",
+   "answer": "2",
+   "x": 172,
+   "y": 1051,
+   "w": 28,
+   "h": 28
+  },
+  {
+   "id": "p11-6C",
+   "group": "g6",
+   "kind": "text",
+   "label": "6a C Bild",
+   "answer": "1",
+   "x": 172,
+   "y": 1146,
+   "w": 28,
+   "h": 28
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g6",
+   "label": "6 a Lesen Sie und ordnen Sie die Bilder zu."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "6a key confirmed against the official Hueber Lösungen (A2): A 3, B 2, C 1. 5a-c (Lerntipps) and 6b are open and stay ungraded."
   ]
  }
 }
