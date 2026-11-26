@@ -1,3 +1,4 @@
+import {okf} from '../components/ok-fields';
 import {ChoiceInput} from '../exercises/ChoiceInput';
 import {CheckButton} from '../components/CheckButton';
 import {PageImage} from '../components/PageImage';
@@ -25,7 +26,7 @@ export function NativeAB12P27({page}:{page:string}){
  const field=(id:string,x:number,y:number,w:number,label:string)=><ChoiceInput className="naField" aria-label={label} data-native-field={id} style={{left:x,top:y,width:w}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
  const dot=(id:string,value:string,x:number,y:number,label:string)=><ChoiceInput type="radio" className="naDot" name={key+'-'+id} aria-label={label} data-native-field={id} value={value} style={{left:x,top:y}} checked={values[id]===value} onChange={()=>set(id,value)}/>;
  const conf=(id:string,y:number)=><>{[0,1,2].map(c=>dot(id,''+c,858+c*39,y,'Selbsteinschätzung '+id+' '+['gut','mittel','noch nicht'][c]))}</>;
- const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||'')))})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} data-ok-fields={okf(id in results,answers,values,normalize)} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||'')))})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const sect=(x:number,y:number,t:string,tag:string)=><div className="naSect" style={{left:x,top:y}}><Words text={t}/>{tag&&<> <span className="naTag">{tag}</span></>}</div>;
 
  return <div className="nativeAB12" ref={root} data-native-ab12={page}><style>{`@font-face{font-family:FiraSans;src:url('assets/fonts/firasans-latin-700.woff2') format('woff2');font-weight:700}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-400.ttf') format('truetype');font-weight:400;font-display:swap}@font-face{font-family:DroidSerif;src:url('assets/fonts/droid-serif-700.woff2') format('woff2');font-weight:700;font-display:swap}`}</style><div className="naCanvas" style={{width:W,height:H,marginLeft:-W/2,marginTop:-H/2,transform:`scale(${scale})`}}>

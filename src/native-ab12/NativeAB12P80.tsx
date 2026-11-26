@@ -1,3 +1,4 @@
+import {okf} from '../components/ok-fields';
 import {ChoiceInput} from '../exercises/ChoiceInput';
 import {usePageReset} from '../exercises/usePageReset';
 import {useLayoutEffect,useRef,useState} from 'react';
@@ -23,7 +24,7 @@ export function NativeAB12P80({page}:{page:string}){
  const art=(name:string,x:number,y:number,w:number,h:number)=><PageImage className="naArt" src={`assets/book-crops/native-ab12-p${page}-${name}.png`} alt={'Originalillustration '+name} style={{left:x,top:y,width:w,height:h}}/>;
  const field=(id:string,x:number,y:number,w:number,label:string,cls='')=><ChoiceInput className={'naField '+cls} aria-label={label} data-native-field={id} style={{left:x,top:y,width:w}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
  const area=(id:string,x:number,y:number,w:number,h:number,label:string)=><textarea className="naField naLined naArea80" aria-label={label} data-native-field={id} style={{left:x,top:y,width:w,['--la-h' as string]:h+'px',['--la-lh' as string]:'18px'}} value={values[id]||''} onChange={e=>set(id,e.target.value)} autoComplete="off" spellCheck={false}/>;
- const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}/><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} data-ok-fields={okf(id in results,answers,values,normalize)} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}/><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const kb=(x:number,y:number,t:string)=><div className="naKB80" style={{left:x,top:y}}>{t}</div>;
  const num=(x:number,y:number,n:string)=><div className="naNum80" style={{left:x,top:y}}>{n}</div>;
  const rail=(x:number,y:number,t:string)=><div className="naRail80" style={{left:x,top:y}}>{t}</div>;
