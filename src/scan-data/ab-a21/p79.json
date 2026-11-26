@@ -1413,11 +1413,198 @@
    "h": 13
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p79-7b",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 b",
+   "answer": "das",
+   "x": 283,
+   "y": 868,
+   "w": 76,
+   "h": 24
+  },
+  {
+   "id": "p79-7c",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 c",
+   "answer": "das",
+   "x": 465,
+   "y": 868,
+   "w": 76,
+   "h": 24
+  },
+  {
+   "id": "p79-7d",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 d",
+   "answer": "die",
+   "x": 625,
+   "y": 868,
+   "w": 76,
+   "h": 24
+  },
+  {
+   "id": "p79-7e",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 e",
+   "answer": "der",
+   "x": 754,
+   "y": 868,
+   "w": 76,
+   "h": 24
+  },
+  {
+   "id": "p79-7f",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 f",
+   "answer": "das",
+   "x": 871,
+   "y": 868,
+   "w": 76,
+   "h": 24
+  },
+  {
+   "id": "p79-8b0",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 b0",
+   "answer": "der Löffel|das Messer|die Gabel",
+   "x": 156,
+   "y": 1105,
+   "w": 210,
+   "h": 26,
+   "unordered": true
+  },
+  {
+   "id": "p79-8b1",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 b1",
+   "answer": "der Löffel|das Messer|die Gabel",
+   "x": 156,
+   "y": 1144,
+   "w": 210,
+   "h": 26,
+   "unordered": true
+  },
+  {
+   "id": "p79-8b2",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 b2",
+   "answer": "der Löffel|das Messer|die Gabel",
+   "x": 156,
+   "y": 1183,
+   "w": 210,
+   "h": 26,
+   "unordered": true
+  },
+  {
+   "id": "p79-8g0",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 g0",
+   "answer": "die Tasse|die Kanne|der Teller",
+   "x": 409,
+   "y": 1105,
+   "w": 202,
+   "h": 26,
+   "unordered": true
+  },
+  {
+   "id": "p79-8g1",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 g1",
+   "answer": "die Tasse|die Kanne|der Teller",
+   "x": 409,
+   "y": 1144,
+   "w": 202,
+   "h": 26,
+   "unordered": true
+  },
+  {
+   "id": "p79-8g2",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 g2",
+   "answer": "die Tasse|die Kanne|der Teller",
+   "x": 409,
+   "y": 1183,
+   "w": 202,
+   "h": 26,
+   "unordered": true
+  },
+  {
+   "id": "p79-8w0",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 w0",
+   "answer": "das Salz|der Zucker|der Pfeffer|das Öl",
+   "x": 721,
+   "y": 1141,
+   "w": 244,
+   "h": 26,
+   "unordered": true
+  },
+  {
+   "id": "p79-8w1",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 w1",
+   "answer": "das Salz|der Zucker|der Pfeffer|das Öl",
+   "x": 721,
+   "y": 1181,
+   "w": 244,
+   "h": 26,
+   "unordered": true
+  },
+  {
+   "id": "p79-8w2",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 w2",
+   "answer": "das Salz|der Zucker|der Pfeffer|das Öl",
+   "x": 721,
+   "y": 1220,
+   "w": 244,
+   "h": 26,
+   "unordered": true
+  },
+  {
+   "id": "p79-8w3",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 w3",
+   "answer": "das Salz|der Zucker|der Pfeffer|das Öl",
+   "x": 721,
+   "y": 1259,
+   "w": 244,
+   "h": 26,
+   "unordered": true
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g7",
+   "label": "Ergänzen Sie (Artikel)"
+  },
+  {
+   "id": "g8",
+   "label": "Nomen mit Artikel zuordnen"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel, L10 Basistraining 7 (articles b-f) and 8 (three columns, any order). Ex5 and ex6 (own sentences) and the noun stems in ex7 are ungraded."
+  ]
  }
 }
