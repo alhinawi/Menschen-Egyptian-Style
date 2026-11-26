@@ -121,7 +121,7 @@ export function LibraryNav({slug}: {slug: string}) {
       const sameBook=MODULE_ORDER.filter(s=>MODULES[s]?.book===mod?.book),i=sameBook.indexOf(slug);
       const targets=new Set([sameBook[i-1],sameBook[i+1]]);
       // Book/level entry cards are as likely as the next lesson on menu open.
-      if(panel)for(const book of ['kb','ab'] as const)for(const level of ['A1.1','A1.2'] as const)targets.add(levelCover(book,level).slug);
+      if(panel)for(const book of ['kb','ab'] as const)for(const level of ['A1.1','A1.2','A2.1'] as const)targets.add(levelCover(book,level).slug);
       for(const next of targets)if(next&&next!==slug)void prefetchLesson(next);
     },panel?0:500);
     return ()=>clearTimeout(timer);
@@ -165,7 +165,7 @@ export function LibraryNav({slug}: {slug: string}) {
     }
   };
 
-  const levels: Array<'A1.1' | 'A1.2'> = ['A1.1', 'A1.2'];
+  const levels: Array<'A1.1' | 'A1.2' | 'A2.1'> = ['A1.1', 'A1.2', 'A2.1'];
 
   return <>
     {headerSlot && createPortal(
@@ -186,13 +186,13 @@ export function LibraryNav({slug}: {slug: string}) {
           </div>
           <div className="lnv-label font-bold text-[10.5px] font-[Arial,sans-serif] tracking-[.16em] text-[#a08c5f] px-4 pt-0.5 pb-2.5">CHOOSE YOUR BOOK</div>
           <div className="lnv-bookgrid grid grid-cols-2 gap-2 mx-3.5 mb-3">
-            {levels.flatMap(level => BOOKS.map(b => {
+            {levels.flatMap(level => BOOKS.filter(b => level !== 'A2.1' || b.id === 'kb').map(b => {
               const target = levelCover(b.id, level);
               const selected = b.id === mod.book && level === mod.level;
               return <a key={b.id + level} className={'lnv-bookcard flex items-center gap-2 p-2 rounded-xl border bg-white text-inherit no-underline dark:bg-[#2c342f] dark:text-[#e8e2d4]' + (selected ? ' sel border-[#c9a45a] ring-1 ring-[#c9a45a]' : ' border-[#e4d9bd] dark:border-[#43504a]')}
                 aria-label={`${t(b.title)} ${level}`} aria-current={selected ? 'true' : undefined}
                 href={spaLessonUrl(target.slug, target.token)} onClick={e => {e.preventDefault();close();void navigateLesson(target.slug, target.token);}}>
-                <PageImage loading="eager" src={level === 'A1.2' ? `assets/${b.id}-a12-cover.webp` : b.cover} alt="" className="w-8 h-[44px] object-contain rounded-sm shadow-sm flex-none"/>
+                <PageImage loading="eager" src={level === 'A2.1' ? 'assets/kb-a21-cover.webp' : level === 'A1.2' ? `assets/${b.id}-a12-cover.webp` : b.cover} alt="" className="w-8 h-[44px] object-contain rounded-sm shadow-sm flex-none"/>
                 <span className="lnv-bt font-bold text-[12px] font-[Georgia,serif] flex flex-col gap-1 min-w-0">{t(b.title)}<small className="font-normal text-[11px] font-[Arial,sans-serif] text-[#8a7d63] dark:text-[#9aa396]">{level}</small></span>
               </a>;
             }))}

@@ -160,5 +160,11 @@
   "ogTitle": "Menschen · Teacher Dashboard",
   "description": "Owner-only dashboard: registered students and their progress in the interactive Menschen book.",
   "ogImage": "assets/og.png"
+ },
+ "kb-a21-m1.html": {
+  "title": "Menschen A2.1 · Kursbuch Lektion 1",
+  "ogTitle": "Menschen A2.1 · Kursbuch Lektion 1",
+  "description": "Kursbuch A2.1 interactive, with Egyptian Arabic meanings on tap.",
+  "ogImage": "assets/og-ab-a12.png"
  }
 }
