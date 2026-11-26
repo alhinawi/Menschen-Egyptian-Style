@@ -76,7 +76,7 @@ function countNonAudioFiles() {
 function audioBudget() {
   return Math.max(1000, HARD_FILE_LIMIT - countNonAudioFiles() - VITE_OUTPUT_ALLOWANCE - BUDGET_SAFETY);
 }
-const HARD_FILE_LIMIT = 19300; // abort the build rather than deploy over the cap
+const HARD_FILE_LIMIT = 19350; // abort the build rather than deploy over the cap
 const MANIFEST_FILE = path.join('src', 'generated', 'cf-audio-manifest.json');
 
 function audioPriority(rel) {
@@ -173,4 +173,4 @@ export default defineConfig({define:{__MENSCHEN_TTS__:JSON.stringify(ON_CLOUDFLA
  const total = countFiles('dist');
  console.log(`[cf-audio] dist holds ${total} files (cap 20,000)`);
  if(ON_CLOUDFLARE_PAGES && total > HARD_FILE_LIMIT)throw new Error(`dist has ${total} files, over the safety limit of ${HARD_FILE_LIMIT} (Cloudflare cap 20,000) - the adaptive audio budget already shrank to fit; raise VITE_OUTPUT_ALLOWANCE or move content off Pages`);
-}}],build:{outDir:'dist',emptyOutDir:true,rolldownOptions:{input:{main:'index.html'}}},server:{host:'127.0.0.1'}});
+}}],build:{outDir:'dist',emptyOutDir:true,rolldownOptions:{input:{main:'index.html'},output:{manualChunks(id){const m=/scan-data\/(kb-a2\d|ab-a2\d|kb-b1\d|ab-b1\d)\/p(\d+)\.json/.exec(id.replace(/\\/g,'/'));return m?'scan-'+m[1]+'-'+Math.floor(Number(m[2])/25):undefined}}}},server:{host:'127.0.0.1'}});
