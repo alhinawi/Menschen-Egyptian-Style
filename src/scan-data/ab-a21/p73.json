@@ -2582,11 +2582,280 @@
    "h": 13
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p73-1a1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 a1",
+   "answer": "2",
+   "x": 908,
+   "y": 255,
+   "w": 23,
+   "h": 26
+  },
+  {
+   "id": "p73-1a2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 a2",
+   "answer": "5",
+   "x": 712,
+   "y": 309,
+   "w": 23,
+   "h": 26
+  },
+  {
+   "id": "p73-1a4",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 a4",
+   "answer": "4",
+   "x": 930,
+   "y": 362,
+   "w": 23,
+   "h": 26
+  },
+  {
+   "id": "p73-1a5",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 a5",
+   "answer": "3",
+   "x": 920,
+   "y": 388,
+   "w": 23,
+   "h": 26
+  },
+  {
+   "id": "p73-1b2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b2",
+   "answer": "sollten mehr Lohn bekommen",
+   "x": 297,
+   "y": 585,
+   "w": 676,
+   "h": 26
+  },
+  {
+   "id": "p73-1b3",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b3",
+   "answer": "sollte neue Maschinen kaufen",
+   "x": 274,
+   "y": 624,
+   "w": 698,
+   "h": 26
+  },
+  {
+   "id": "p73-1b4",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b4",
+   "answer": "könnten regelmäßig Teamsitzungen machen",
+   "x": 219,
+   "y": 664,
+   "w": 753,
+   "h": 26
+  },
+  {
+   "id": "p73-1b5",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b5",
+   "answer": "könnten an Englischkursen teilnehmen",
+   "x": 338,
+   "y": 703,
+   "w": 635,
+   "h": 26
+  },
+  {
+   "id": "p73-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "deshalb",
+   "x": 788,
+   "y": 869,
+   "w": 128,
+   "h": 26
+  },
+  {
+   "id": "p73-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c",
+   "answer": "denn",
+   "x": 809,
+   "y": 896,
+   "w": 128,
+   "h": 26
+  },
+  {
+   "id": "p73-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d",
+   "answer": "weil",
+   "x": 739,
+   "y": 948,
+   "w": 129,
+   "h": 26
+  },
+  {
+   "id": "p73-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 e",
+   "answer": "weil",
+   "x": 151,
+   "y": 1029,
+   "w": 133,
+   "h": 26
+  },
+  {
+   "id": "p73-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "en",
+   "x": 631,
+   "y": 1229,
+   "w": 36,
+   "h": 24
+  },
+  {
+   "id": "p73-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "es",
+   "x": 216,
+   "y": 1253,
+   "w": 36,
+   "h": 24
+  },
+  {
+   "id": "p73-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "em",
+   "x": 441,
+   "y": 1253,
+   "w": 36,
+   "h": 24
+  },
+  {
+   "id": "p73-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e",
+   "answer": "en",
+   "x": 834,
+   "y": 1253,
+   "w": 36,
+   "h": 24
+  },
+  {
+   "id": "p73-3f",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 f",
+   "answer": "er",
+   "x": 287,
+   "y": 1276,
+   "w": 37,
+   "h": 24
+  },
+  {
+   "id": "p73-3g",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 g",
+   "answer": "er",
+   "x": 565,
+   "y": 1276,
+   "w": 37,
+   "h": 24
+  },
+  {
+   "id": "p73-3h",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 h",
+   "answer": "en",
+   "x": 409,
+   "y": 1299,
+   "w": 37,
+   "h": 24
+  },
+  {
+   "id": "p73-3i",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 i",
+   "answer": "es",
+   "x": 578,
+   "y": 1299,
+   "w": 34,
+   "h": 24
+  },
+  {
+   "id": "p73-3j",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 j",
+   "answer": "em",
+   "x": 792,
+   "y": 1299,
+   "w": 34,
+   "h": 24
+  },
+  {
+   "id": "p73-3k",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 k",
+   "answer": "en",
+   "x": 216,
+   "y": 1323,
+   "w": 36,
+   "h": 24
+  },
+  {
+   "id": "p73-3l",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 l",
+   "answer": "e",
+   "x": 765,
+   "y": 1343,
+   "w": 36,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Zuordnen und Vorschläge"
+  },
+  {
+   "id": "g2",
+   "label": "denn, deshalb oder weil"
+  },
+  {
+   "id": "g3",
+   "label": "Endungen der Adjektive"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel, Wiederholungsstation Grammatik ex1-3. Ex1a numbers 2,5,4,3 as in the key."
+  ]
  }
 }
