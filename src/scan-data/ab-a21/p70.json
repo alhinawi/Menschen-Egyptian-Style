@@ -2246,11 +2246,326 @@
    "h": 17
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p70-1b1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b1",
+   "answer": "Export|Lager",
+   "x": 534,
+   "y": 296,
+   "w": 165,
+   "h": 26,
+   "unordered": true
+  },
+  {
+   "id": "p70-1b2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b2",
+   "answer": "Lager|Export",
+   "x": 220,
+   "y": 322,
+   "w": 184,
+   "h": 26,
+   "unordered": true
+  },
+  {
+   "id": "p70-1c1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c1",
+   "answer": "Angestellter",
+   "x": 292,
+   "y": 361,
+   "w": 179,
+   "h": 26
+  },
+  {
+   "id": "p70-1c2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c2",
+   "answer": "Arbeitszeit",
+   "x": 670,
+   "y": 361,
+   "w": 181,
+   "h": 26
+  },
+  {
+   "id": "p70-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d",
+   "answer": "Lohn",
+   "x": 680,
+   "y": 428,
+   "w": 185,
+   "h": 26
+  },
+  {
+   "id": "p70-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e",
+   "answer": "Prozent",
+   "x": 297,
+   "y": 468,
+   "w": 182,
+   "h": 26
+  },
+  {
+   "id": "p70-1f1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 f1",
+   "answer": "Betrieb",
+   "x": 237,
+   "y": 507,
+   "w": 170,
+   "h": 26
+  },
+  {
+   "id": "p70-1f2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 f2",
+   "answer": "Erfolg",
+   "x": 185,
+   "y": 533,
+   "w": 186,
+   "h": 26
+  },
+  {
+   "id": "p70-2a2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 a2",
+   "answer": "er",
+   "x": 242,
+   "y": 665,
+   "w": 40,
+   "h": 26
+  },
+  {
+   "id": "p70-2a3",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 a3",
+   "answer": "en",
+   "x": 328,
+   "y": 692,
+   "w": 42,
+   "h": 26
+  },
+  {
+   "id": "p70-2b4",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b4",
+   "answer": "es",
+   "x": 237,
+   "y": 731,
+   "w": 59,
+   "h": 26
+  },
+  {
+   "id": "p70-2b5",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b5",
+   "answer": "em",
+   "x": 289,
+   "y": 757,
+   "w": 64,
+   "h": 26
+  },
+  {
+   "id": "p70-2b6",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b6",
+   "answer": "e",
+   "x": 308,
+   "y": 783,
+   "w": 54,
+   "h": 26
+  },
+  {
+   "id": "p70-2c7",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c7",
+   "answer": "e",
+   "x": 291,
+   "y": 823,
+   "w": 56,
+   "h": 26
+  },
+  {
+   "id": "p70-2c8",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c8",
+   "answer": "em",
+   "x": 262,
+   "y": 850,
+   "w": 51,
+   "h": 26
+  },
+  {
+   "id": "p70-2d9",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d9",
+   "answer": "em",
+   "x": 684,
+   "y": 666,
+   "w": 52,
+   "h": 26
+  },
+  {
+   "id": "p70-2d10",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d10",
+   "answer": "en",
+   "x": 909,
+   "y": 666,
+   "w": 42,
+   "h": 26
+  },
+  {
+   "id": "p70-2d11",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d11",
+   "answer": "en",
+   "x": 815,
+   "y": 693,
+   "w": 54,
+   "h": 26
+  },
+  {
+   "id": "p70-2e12",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 e12",
+   "answer": "e",
+   "x": 669,
+   "y": 731,
+   "w": 42,
+   "h": 26
+  },
+  {
+   "id": "p70-2e13",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 e13",
+   "answer": "e",
+   "x": 696,
+   "y": 784,
+   "w": 45,
+   "h": 26
+  },
+  {
+   "id": "p70-2f14",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 f14",
+   "answer": "es",
+   "x": 907,
+   "y": 823,
+   "w": 54,
+   "h": 26
+  },
+  {
+   "id": "p70-2f15",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 f15",
+   "answer": "er",
+   "x": 788,
+   "y": 850,
+   "w": 50,
+   "h": 26
+  },
+  {
+   "id": "p70-3a",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a",
+   "answer": "möchte so gern",
+   "x": 220,
+   "y": 997,
+   "w": 394,
+   "h": 26
+  },
+  {
+   "id": "p70-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "ist dir das wichtig",
+   "x": 256,
+   "y": 1022,
+   "w": 399,
+   "h": 26
+  },
+  {
+   "id": "p70-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "wäre das wichtiger",
+   "x": 220,
+   "y": 1101,
+   "w": 406,
+   "h": 26
+  },
+  {
+   "id": "p70-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "ist eine gute Idee",
+   "x": 220,
+   "y": 1153,
+   "w": 404,
+   "h": 26
+  },
+  {
+   "id": "p70-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e",
+   "answer": "das machen wir",
+   "x": 269,
+   "y": 1212,
+   "w": 397,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Ordnen Sie zu"
+  },
+  {
+   "id": "g2",
+   "label": "Ergänzen Sie die Endungen"
+  },
+  {
+   "id": "g3",
+   "label": "Ordnen Sie zu"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: Hueber Lösungsschlüssel, Lernstation-Test Lektion 9 (printed p107). Ex1 b and c use unordered or fixed order per the key."
+  ]
  }
 }
