@@ -2561,11 +2561,280 @@
    "h": 16
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p38-8c",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 c",
+   "answer": "en|ersten",
+   "x": 403,
+   "y": 289,
+   "w": 37,
+   "h": 22
+  },
+  {
+   "id": "p38-8d",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 d",
+   "answer": "en|langen",
+   "x": 669,
+   "y": 289,
+   "w": 42,
+   "h": 22
+  },
+  {
+   "id": "p38-8e1",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 e1",
+   "answer": "er|lustiger",
+   "x": 559,
+   "y": 313,
+   "w": 48,
+   "h": 22
+  },
+  {
+   "id": "p38-8e2",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 e2",
+   "answer": "er|junger",
+   "x": 665,
+   "y": 313,
+   "w": 38,
+   "h": 22
+  },
+  {
+   "id": "p38-8f",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 f",
+   "answer": "en|alten",
+   "x": 842,
+   "y": 313,
+   "w": 42,
+   "h": 22
+  },
+  {
+   "id": "p38-8g",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 g",
+   "answer": "e|nette",
+   "x": 656,
+   "y": 345,
+   "w": 39,
+   "h": 22
+  },
+  {
+   "id": "p38-8h1",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 h1",
+   "answer": "en|schönen",
+   "x": 935,
+   "y": 345,
+   "w": 26,
+   "h": 22
+  },
+  {
+   "id": "p38-8h2",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 h2",
+   "answer": "en|blauen",
+   "x": 235,
+   "y": 371,
+   "w": 39,
+   "h": 22
+  },
+  {
+   "id": "p38-8i",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 i",
+   "answer": "en|berühmten",
+   "x": 747,
+   "y": 371,
+   "w": 37,
+   "h": 22
+  },
+  {
+   "id": "p38-8j",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 j",
+   "answer": "e|billige",
+   "x": 694,
+   "y": 396,
+   "w": 34,
+   "h": 22
+  },
+  {
+   "id": "p38-8k",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 k",
+   "answer": "en|langweiligen",
+   "x": 621,
+   "y": 423,
+   "w": 35,
+   "h": 22
+  },
+  {
+   "id": "p38-8l",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 l",
+   "answer": "e|schöne",
+   "x": 478,
+   "y": 449,
+   "w": 35,
+   "h": 22
+  },
+  {
+   "id": "p38-9a",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 a",
+   "answer": "wollen wir nicht zuerst",
+   "x": 462,
+   "y": 659,
+   "w": 368,
+   "h": 23
+  },
+  {
+   "id": "p38-9c",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 c",
+   "answer": "machen wir es",
+   "x": 277,
+   "y": 710,
+   "w": 362,
+   "h": 23
+  },
+  {
+   "id": "p38-9d",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 d",
+   "answer": "gefällt dir bestimmt",
+   "x": 429,
+   "y": 738,
+   "w": 369,
+   "h": 23
+  },
+  {
+   "id": "p38-9e",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 e",
+   "answer": "einverstanden",
+   "x": 274,
+   "y": 764,
+   "w": 362,
+   "h": 23
+  },
+  {
+   "id": "p38-9f",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 f",
+   "answer": "zeigst du ihr nicht",
+   "x": 286,
+   "y": 845,
+   "w": 367,
+   "h": 23
+  },
+  {
+   "id": "p38-9g",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 g",
+   "answer": "meistens mit meinem Besuch",
+   "x": 213,
+   "y": 870,
+   "w": 370,
+   "h": 23
+  },
+  {
+   "id": "p38-9h",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 h",
+   "answer": "ist wirklich beeindruckend",
+   "x": 660,
+   "y": 897,
+   "w": 301,
+   "h": 23
+  },
+  {
+   "id": "p38-10a",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 a",
+   "answer": "a",
+   "x": 758,
+   "y": 1187,
+   "w": 24,
+   "h": 23
+  },
+  {
+   "id": "p38-10b",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 b",
+   "answer": "b",
+   "x": 770,
+   "y": 1213,
+   "w": 22,
+   "h": 23
+  },
+  {
+   "id": "p38-10e",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 e",
+   "answer": "e",
+   "x": 846,
+   "y": 1239,
+   "w": 21,
+   "h": 23
+  },
+  {
+   "id": "p38-10d",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 d",
+   "answer": "d",
+   "x": 794,
+   "y": 1266,
+   "w": 24,
+   "h": 23
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g8",
+   "label": "8 Ergänzen Sie"
+  },
+  {
+   "id": "g9",
+   "label": "9 Ergänzen Sie die Gespräche"
+  },
+  {
+   "id": "g10",
+   "label": "10a Ordnen Sie zu"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungen, Lektion 5 Ex 8-10a. Stem-letter blanks accept the ending or the full word. Ex 10b is a free writing task and is not graded."
+  ]
  }
 }

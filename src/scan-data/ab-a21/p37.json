@@ -1882,11 +1882,306 @@
    "h": 13
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p37-4b",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 b",
+   "answer": "hässlichen",
+   "x": 307,
+   "y": 246,
+   "w": 314,
+   "h": 24
+  },
+  {
+   "id": "p37-4c",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 c",
+   "answer": "geöffnete",
+   "x": 346,
+   "y": 276,
+   "w": 320,
+   "h": 24
+  },
+  {
+   "id": "p37-4d",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 d",
+   "answer": "lustige",
+   "x": 336,
+   "y": 301,
+   "w": 317,
+   "h": 24
+  },
+  {
+   "id": "p37-4e",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 e",
+   "answer": "kurze",
+   "x": 281,
+   "y": 327,
+   "w": 317,
+   "h": 24
+  },
+  {
+   "id": "p37-4f",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 f",
+   "answer": "schlechte",
+   "x": 273,
+   "y": 353,
+   "w": 315,
+   "h": 24
+  },
+  {
+   "id": "p37-4g",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 g",
+   "answer": "neue",
+   "x": 274,
+   "y": 380,
+   "w": 308,
+   "h": 24
+  },
+  {
+   "id": "p37-4h",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 h",
+   "answer": "lange",
+   "x": 282,
+   "y": 407,
+   "w": 319,
+   "h": 24
+  },
+  {
+   "id": "p37-51",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 1",
+   "answer": "en|alten",
+   "x": 218,
+   "y": 658,
+   "w": 37,
+   "h": 22
+  },
+  {
+   "id": "p37-52",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 2",
+   "answer": "e|langweilige",
+   "x": 600,
+   "y": 658,
+   "w": 37,
+   "h": 22
+  },
+  {
+   "id": "p37-6Aa",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 Aa",
+   "answer": "das bunte",
+   "x": 174,
+   "y": 927,
+   "w": 296,
+   "h": 24
+  },
+  {
+   "id": "p37-6Da",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 Da",
+   "answer": "dem bunten",
+   "x": 577,
+   "y": 927,
+   "w": 299,
+   "h": 24
+  },
+  {
+   "id": "p37-6Ab",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 Ab",
+   "answer": "die kleine",
+   "x": 174,
+   "y": 957,
+   "w": 296,
+   "h": 24
+  },
+  {
+   "id": "p37-6Db",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 Db",
+   "answer": "der kleinen",
+   "x": 577,
+   "y": 957,
+   "w": 299,
+   "h": 24
+  },
+  {
+   "id": "p37-6Ac",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 Ac",
+   "answer": "die schicken",
+   "x": 174,
+   "y": 986,
+   "w": 296,
+   "h": 24
+  },
+  {
+   "id": "p37-6Dc",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 Dc",
+   "answer": "den schicken",
+   "x": 577,
+   "y": 986,
+   "w": 299,
+   "h": 24
+  },
+  {
+   "id": "p37-7a",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 a",
+   "answer": "e|moderne",
+   "x": 644,
+   "y": 1103,
+   "w": 42,
+   "h": 22
+  },
+  {
+   "id": "p37-7b",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 b",
+   "answer": "en|bunten",
+   "x": 285,
+   "y": 1128,
+   "w": 43,
+   "h": 22
+  },
+  {
+   "id": "p37-7c1",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 c1",
+   "answer": "e|alte",
+   "x": 236,
+   "y": 1154,
+   "w": 28,
+   "h": 22
+  },
+  {
+   "id": "p37-7c2",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 c2",
+   "answer": "e|neue",
+   "x": 813,
+   "y": 1154,
+   "w": 28,
+   "h": 22
+  },
+  {
+   "id": "p37-7d",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 d",
+   "answer": "en|schicken",
+   "x": 304,
+   "y": 1178,
+   "w": 40,
+   "h": 22
+  },
+  {
+   "id": "p37-7e",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 e",
+   "answer": "e|nette",
+   "x": 326,
+   "y": 1204,
+   "w": 40,
+   "h": 22
+  },
+  {
+   "id": "p37-7f",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 f",
+   "answer": "en|teuren",
+   "x": 444,
+   "y": 1230,
+   "w": 39,
+   "h": 22
+  },
+  {
+   "id": "p37-7g1",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 g1",
+   "answer": "e|grüne",
+   "x": 444,
+   "y": 1255,
+   "w": 39,
+   "h": 22
+  },
+  {
+   "id": "p37-7g2",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 g2",
+   "answer": "en|kleinen",
+   "x": 667,
+   "y": 1255,
+   "w": 39,
+   "h": 22
+  },
+  {
+   "id": "p37-7h",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 h",
+   "answer": "en|kleinen",
+   "x": 286,
+   "y": 1281,
+   "w": 38,
+   "h": 22
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g4",
+   "label": "4 Gegenteil"
+  },
+  {
+   "id": "g5",
+   "label": "5 Ihr Kursort"
+  },
+  {
+   "id": "g6",
+   "label": "6 Ordnen Sie zu"
+  },
+  {
+   "id": "g7",
+   "label": "7 Auf dem Stadtrundgang"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungen, Lektion 5 Ex 4-7. Ex 5 asks for a partner-written text and is checked only for the two printed blanks. Stem-letter blanks accept the ending or the full word."
+  ]
  }
 }

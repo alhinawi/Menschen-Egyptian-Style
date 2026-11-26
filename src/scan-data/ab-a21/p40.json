@@ -2372,11 +2372,188 @@
    "h": 15
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p40-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "Ferien",
+   "x": 309,
+   "y": 352,
+   "w": 207,
+   "h": 23
+  },
+  {
+   "id": "p40-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "Touristen",
+   "x": 167,
+   "y": 380,
+   "w": 215,
+   "h": 23
+  },
+  {
+   "id": "p40-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d",
+   "answer": "Stadtrundgang",
+   "x": 450,
+   "y": 380,
+   "w": 208,
+   "h": 23
+  },
+  {
+   "id": "p40-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e",
+   "answer": "Reiseführerin",
+   "x": 167,
+   "y": 410,
+   "w": 138,
+   "h": 23
+  },
+  {
+   "id": "p40-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 f",
+   "answer": "Sehenswürdigkeiten",
+   "x": 692,
+   "y": 410,
+   "w": 172,
+   "h": 23
+  },
+  {
+   "id": "p40-1g",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 g",
+   "answer": "Geld",
+   "x": 510,
+   "y": 454,
+   "w": 204,
+   "h": 23
+  },
+  {
+   "id": "p40-1h",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 h",
+   "answer": "Postkarte",
+   "x": 380,
+   "y": 483,
+   "w": 207,
+   "h": 23
+  },
+  {
+   "id": "p40-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "en|bunten",
+   "x": 653,
+   "y": 687,
+   "w": 27,
+   "h": 22
+  },
+  {
+   "id": "p40-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c",
+   "answer": "e|rote",
+   "x": 501,
+   "y": 716,
+   "w": 24,
+   "h": 22
+  },
+  {
+   "id": "p40-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d",
+   "answer": "en|modernen",
+   "x": 423,
+   "y": 770,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p40-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 e",
+   "answer": "en|wunderbaren",
+   "x": 214,
+   "y": 799,
+   "w": 21,
+   "h": 22
+  },
+  {
+   "id": "p40-2f",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 f",
+   "answer": "e|alte",
+   "x": 424,
+   "y": 799,
+   "w": 21,
+   "h": 22
+  },
+  {
+   "id": "p40-2g",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 g",
+   "answer": "en|grünen",
+   "x": 477,
+   "y": 829,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p40-2h",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 h",
+   "answer": "en|jungen",
+   "x": 660,
+   "y": 829,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p40-2i",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 i",
+   "answer": "en|beliebten",
+   "x": 444,
+   "y": 858,
+   "w": 22,
+   "h": 22
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Test 1 Wörter"
+  },
+  {
+   "id": "g2",
+   "label": "Test 2 Strukturen"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel Tests, Lektion 5 (printed p106). Test 1 and 2 are graded. Test 3 uses letter-by-letter gap fragments and is not graded."
+  ]
  }
 }

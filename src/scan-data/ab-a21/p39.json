@@ -1791,7 +1791,228 @@
    "h": 14
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p39-11",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "1",
+   "answer": "true",
+   "x": 571,
+   "y": 318,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p39-12",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "2",
+   "answer": "true",
+   "x": 571,
+   "y": 344,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p39-13",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "3",
+   "answer": "false",
+   "x": 571,
+   "y": 369,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p39-14",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "4",
+   "answer": "false",
+   "x": 571,
+   "y": 396,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p39-15",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "5",
+   "answer": "true",
+   "x": 571,
+   "y": 422,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p39-16",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "6",
+   "answer": "false",
+   "x": 571,
+   "y": 449,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p39-18",
+   "group": "g1",
+   "kind": "checkbox",
+   "label": "8",
+   "answer": "true",
+   "x": 571,
+   "y": 501,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p39-2mo",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 mo",
+   "answer": "1",
+   "x": 293,
+   "y": 680,
+   "w": 64,
+   "h": 24
+  },
+  {
+   "id": "p39-2di",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 di",
+   "answer": "2",
+   "x": 460,
+   "y": 680,
+   "w": 64,
+   "h": 24
+  },
+  {
+   "id": "p39-2abend",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 abend",
+   "answer": "5",
+   "x": 607,
+   "y": 680,
+   "w": 64,
+   "h": 24
+  },
+  {
+   "id": "p39-2mi",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 mi",
+   "answer": "8",
+   "x": 758,
+   "y": 680,
+   "w": 64,
+   "h": 24
+  },
+  {
+   "id": "p39-3prospekt",
+   "group": "g3",
+   "kind": "checkbox",
+   "label": "prospekt",
+   "answer": "false",
+   "x": 269,
+   "y": 1205,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p39-3spass",
+   "group": "g3",
+   "kind": "checkbox",
+   "label": "spass",
+   "answer": "true",
+   "x": 383,
+   "y": 1205,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p39-3spaeter",
+   "group": "g3",
+   "kind": "checkbox",
+   "label": "spaeter",
+   "answer": "true",
+   "x": 474,
+   "y": 1205,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p39-3spielen",
+   "group": "g3",
+   "kind": "checkbox",
+   "label": "spielen",
+   "answer": "true",
+   "x": 213,
+   "y": 1231,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p39-3stadt",
+   "group": "g3",
+   "kind": "checkbox",
+   "label": "stadt",
+   "answer": "true",
+   "x": 330,
+   "y": 1231,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p39-3kloster",
+   "group": "g3",
+   "kind": "checkbox",
+   "label": "kloster",
+   "answer": "false",
+   "x": 467,
+   "y": 1231,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p39-3tourist",
+   "group": "g3",
+   "kind": "checkbox",
+   "label": "tourist",
+   "answer": "false",
+   "x": 253,
+   "y": 1258,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p39-3ausstellung",
+   "group": "g3",
+   "kind": "checkbox",
+   "label": "ausstellung",
+   "answer": "true",
+   "x": 422,
+   "y": 1258,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p39-4regel",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 regel",
+   "answer": "sch, st oder sp|sch st oder sp|sch, st, sp|sch/st/sp|„sch“, „st“ oder „sp“|sch, st und sp",
+   "x": 258,
+   "y": 1353,
+   "w": 156,
+   "h": 22
+  }
+ ],
  "audio": [
   {
    "id": "ab-cd1-18-39",
@@ -1821,9 +2042,28 @@
    "h": 26
   }
  ],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Hören 1a Kreuzen Sie an"
+  },
+  {
+   "id": "g2",
+   "label": "Hören 1b Ordnen Sie zu"
+  },
+  {
+   "id": "g3",
+   "label": "Aussprache 2 Wo hören Sie \"sch\"?"
+  },
+  {
+   "id": "g4",
+   "label": "Aussprache 2 Regel"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungen, Training Hören 1 and Aussprache 2. Aussprache 1 and 3 (listen and repeat, read aloud, s/sch gaps) are not graded."
+  ]
  }
 }
