@@ -190,5 +190,35 @@
   "ogTitle": "Menschen A2.1 · Kursbuch Aktionsseiten + Wortliste",
   "description": "Kursbuch A2.1 interactive, with Egyptian Arabic meanings on tap.",
   "ogImage": "assets/og-ab-a12.png"
+ },
+ "ab-a21-m1.html": {
+  "title": "Menschen A2.1 · Arbeitsbuch Lektion 1-3",
+  "ogTitle": "Menschen A2.1 · Arbeitsbuch Lektion 1-3",
+  "description": "Kursbuch A2.1 interactive, with Egyptian Arabic meanings on tap.",
+  "ogImage": "assets/og-ab-a12.png"
+ },
+ "ab-a21-m2.html": {
+  "title": "Menschen A2.1 · Arbeitsbuch Lektion 4-6",
+  "ogTitle": "Menschen A2.1 · Arbeitsbuch Lektion 4-6",
+  "description": "Kursbuch A2.1 interactive, with Egyptian Arabic meanings on tap.",
+  "ogImage": "assets/og-ab-a12.png"
+ },
+ "ab-a21-m3.html": {
+  "title": "Menschen A2.1 · Arbeitsbuch Lektion 7-9",
+  "ogTitle": "Menschen A2.1 · Arbeitsbuch Lektion 7-9",
+  "description": "Kursbuch A2.1 interactive, with Egyptian Arabic meanings on tap.",
+  "ogImage": "assets/og-ab-a12.png"
+ },
+ "ab-a21-m4.html": {
+  "title": "Menschen A2.1 · Arbeitsbuch Lektion 10-12",
+  "ogTitle": "Menschen A2.1 · Arbeitsbuch Lektion 10-12",
+  "description": "Kursbuch A2.1 interactive, with Egyptian Arabic meanings on tap.",
+  "ogImage": "assets/og-ab-a12.png"
+ },
+ "ab-a21-m5.html": {
+  "title": "Menschen A2.1 · Arbeitsbuch Anhang: Grammatik + Lösungen",
+  "ogTitle": "Menschen A2.1 · Arbeitsbuch Anhang: Grammatik + Lösungen",
+  "description": "Kursbuch A2.1 interactive, with Egyptian Arabic meanings on tap.",
+  "ogImage": "assets/og-ab-a12.png"
  }
 }
