@@ -1910,11 +1910,362 @@
    "h": 16
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p78-2b-schade",
+   "group": "g2",
+   "kind": "radio",
+   "label": "schade",
+   "name": "p78-2b",
+   "value": "schade",
+   "answer": "true",
+   "x": 202,
+   "y": 520,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p78-2b-gut",
+   "group": "g2",
+   "kind": "radio",
+   "label": "gut",
+   "name": "p78-2b",
+   "value": "gut",
+   "answer": "false",
+   "x": 320,
+   "y": 520,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p78-2c-denke",
+   "group": "g2",
+   "kind": "radio",
+   "label": "denke",
+   "name": "p78-2c",
+   "value": "denke",
+   "answer": "true",
+   "x": 419,
+   "y": 588,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p78-2c-hoffe",
+   "group": "g2",
+   "kind": "radio",
+   "label": "hoffe",
+   "name": "p78-2c",
+   "value": "hoffe",
+   "answer": "false",
+   "x": 566,
+   "y": 588,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p78-2d-kann",
+   "group": "g2",
+   "kind": "radio",
+   "label": "kann",
+   "name": "p78-2d",
+   "value": "kann",
+   "answer": "true",
+   "x": 178,
+   "y": 653,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p78-2d-findest",
+   "group": "g2",
+   "kind": "radio",
+   "label": "findest",
+   "name": "p78-2d",
+   "value": "findest",
+   "answer": "false",
+   "x": 349,
+   "y": 653,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p78-2e-gut",
+   "group": "g2",
+   "kind": "radio",
+   "label": "gut",
+   "name": "p78-2e",
+   "value": "gut",
+   "answer": "true",
+   "x": 178,
+   "y": 695,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p78-2e-glaube",
+   "group": "g2",
+   "kind": "radio",
+   "label": "glaube",
+   "name": "p78-2e",
+   "value": "glaube",
+   "answer": "false",
+   "x": 266,
+   "y": 695,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p78-3b1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b1",
+   "answer": "Schade,|Schade",
+   "x": 193,
+   "y": 851,
+   "w": 210,
+   "h": 29
+  },
+  {
+   "id": "p78-3b2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b2",
+   "answer": "dass",
+   "x": 409,
+   "y": 851,
+   "w": 159,
+   "h": 29
+  },
+  {
+   "id": "p78-3b3",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b3",
+   "answer": "du keine Zeit",
+   "x": 575,
+   "y": 851,
+   "w": 247,
+   "h": 29
+  },
+  {
+   "id": "p78-3b4",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b4",
+   "answer": "hast.|hast",
+   "x": 830,
+   "y": 851,
+   "w": 155,
+   "h": 29
+  },
+  {
+   "id": "p78-3c1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c1",
+   "answer": "Ich denke,|Ich denke",
+   "x": 193,
+   "y": 882,
+   "w": 210,
+   "h": 29
+  },
+  {
+   "id": "p78-3c2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c2",
+   "answer": "dass",
+   "x": 409,
+   "y": 882,
+   "w": 159,
+   "h": 29
+  },
+  {
+   "id": "p78-3c3",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c3",
+   "answer": "dir der Fisch nicht",
+   "x": 575,
+   "y": 882,
+   "w": 247,
+   "h": 29
+  },
+  {
+   "id": "p78-3c4",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c4",
+   "answer": "schmeckt.|schmeckt",
+   "x": 830,
+   "y": 882,
+   "w": 155,
+   "h": 29
+  },
+  {
+   "id": "p78-3d1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d1",
+   "answer": "Kann es sein,|Kann es sein",
+   "x": 193,
+   "y": 913,
+   "w": 210,
+   "h": 29
+  },
+  {
+   "id": "p78-3d2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d2",
+   "answer": "dass",
+   "x": 409,
+   "y": 913,
+   "w": 159,
+   "h": 29
+  },
+  {
+   "id": "p78-3d3",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d3",
+   "answer": "es hier keine Pommes frites",
+   "x": 575,
+   "y": 913,
+   "w": 247,
+   "h": 29
+  },
+  {
+   "id": "p78-3d4",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d4",
+   "answer": "gibt?|gibt",
+   "x": 830,
+   "y": 913,
+   "w": 155,
+   "h": 29
+  },
+  {
+   "id": "p78-3e1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e1",
+   "answer": "Gut,|Gut",
+   "x": 193,
+   "y": 945,
+   "w": 210,
+   "h": 29
+  },
+  {
+   "id": "p78-3e2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e2",
+   "answer": "dass",
+   "x": 409,
+   "y": 945,
+   "w": 159,
+   "h": 29
+  },
+  {
+   "id": "p78-3e3",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e3",
+   "answer": "du",
+   "x": 575,
+   "y": 945,
+   "w": 247,
+   "h": 29
+  },
+  {
+   "id": "p78-3e4",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e4",
+   "answer": "gekommen bist.|gekommen bist",
+   "x": 830,
+   "y": 945,
+   "w": 155,
+   "h": 29
+  },
+  {
+   "id": "p78-4b",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 b",
+   "answer": "das Essen immer so gut schmeckt",
+   "x": 314,
+   "y": 1085,
+   "w": 665,
+   "h": 26
+  },
+  {
+   "id": "p78-4c",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 c",
+   "answer": "der Koch aus Italien kommt",
+   "x": 314,
+   "y": 1155,
+   "w": 335,
+   "h": 26
+  },
+  {
+   "id": "p78-4d",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 d",
+   "answer": "man so tolle Nudelgerichte essen kann",
+   "x": 314,
+   "y": 1220,
+   "w": 665,
+   "h": 26
+  },
+  {
+   "id": "p78-4e",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 e",
+   "answer": "das Essen im Rialto besser ist|das Essen im „Rialto“ besser ist",
+   "x": 324,
+   "y": 1285,
+   "w": 654,
+   "h": 26
+  },
+  {
+   "id": "p78-4f",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 f",
+   "answer": "es eigentlich schon genug italienische Lokale gibt",
+   "x": 325,
+   "y": 1349,
+   "w": 656,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g2",
+   "label": "Was passt? Kreuzen Sie an"
+  },
+  {
+   "id": "g3",
+   "label": "dass-Sätze in die Tabelle"
+  },
+  {
+   "id": "g4",
+   "label": "Wie finden Sie das Restaurant?"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel, L10 Basistraining 2-4. Ex1 (matching with a drawn line) is ungraded."
+  ]
  }
 }
