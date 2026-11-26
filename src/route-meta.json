@@ -250,5 +250,35 @@
   "ogTitle": "Menschen A2.2 · Kursbuch Aktionsseiten + Wortliste",
   "description": "Kursbuch A2.2 interactive, with Egyptian Arabic meanings on tap.",
   "ogImage": "assets/og-ab-a12.png"
+ },
+ "ab-a22-m1.html": {
+  "title": "Menschen A2.2 · Arbeitsbuch Lektion 13-15",
+  "ogTitle": "Menschen A2.2 · Arbeitsbuch Lektion 13-15",
+  "description": "Arbeitsbuch A2.2 interactive, with Egyptian Arabic meanings on tap.",
+  "ogImage": "assets/og-ab-a12.png"
+ },
+ "ab-a22-m2.html": {
+  "title": "Menschen A2.2 · Arbeitsbuch Lektion 16-18",
+  "ogTitle": "Menschen A2.2 · Arbeitsbuch Lektion 16-18",
+  "description": "Arbeitsbuch A2.2 interactive, with Egyptian Arabic meanings on tap.",
+  "ogImage": "assets/og-ab-a12.png"
+ },
+ "ab-a22-m3.html": {
+  "title": "Menschen A2.2 · Arbeitsbuch Lektion 19-21",
+  "ogTitle": "Menschen A2.2 · Arbeitsbuch Lektion 19-21",
+  "description": "Arbeitsbuch A2.2 interactive, with Egyptian Arabic meanings on tap.",
+  "ogImage": "assets/og-ab-a12.png"
+ },
+ "ab-a22-m4.html": {
+  "title": "Menschen A2.2 · Arbeitsbuch Lektion 22-24",
+  "ogTitle": "Menschen A2.2 · Arbeitsbuch Lektion 22-24",
+  "description": "Arbeitsbuch A2.2 interactive, with Egyptian Arabic meanings on tap.",
+  "ogImage": "assets/og-ab-a12.png"
+ },
+ "ab-a22-m5.html": {
+  "title": "Menschen A2.2 · Arbeitsbuch Anhang: Grammatik + Lösungen",
+  "ogTitle": "Menschen A2.2 · Arbeitsbuch Anhang: Grammatik + Lösungen",
+  "description": "Arbeitsbuch A2.2 interactive, with Egyptian Arabic meanings on tap.",
+  "ogImage": "assets/og-ab-a12.png"
  }
 }

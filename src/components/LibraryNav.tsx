@@ -186,7 +186,7 @@ export function LibraryNav({slug}: {slug: string}) {
           </div>
           <div className="lnv-label font-bold text-[10.5px] font-[Arial,sans-serif] tracking-[.16em] text-[#a08c5f] px-4 pt-0.5 pb-2.5">CHOOSE YOUR BOOK</div>
           <div className="lnv-bookgrid grid grid-cols-2 gap-2 mx-3.5 mb-3">
-            {levels.flatMap(level => BOOKS.filter(b => level !== 'A2.2' || b.id === 'kb').map(b => {
+            {levels.flatMap(level => BOOKS.map(b => {
               const target = levelCover(b.id, level);
               const selected = b.id === mod.book && level === mod.level;
               return <a key={b.id + level} className={'lnv-bookcard flex items-center gap-2 p-2 rounded-xl border bg-white text-inherit no-underline dark:bg-[#2c342f] dark:text-[#e8e2d4]' + (selected ? ' sel border-[#c9a45a] ring-1 ring-[#c9a45a]' : ' border-[#e4d9bd] dark:border-[#43504a]')}

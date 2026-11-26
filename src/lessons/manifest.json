@@ -951,5 +951,100 @@
     "reactExercises": true,
     "batchcss": true,
     "bookcss": true
+  },
+  "ab-a22-m1.html": {
+    "slug": "ab-a22-m1",
+    "title": "Menschen A2.2 · Arbeitsbuch · Lektion 13-15",
+    "reader": true,
+    "themes": true,
+    "styles": [],
+    "initializers": [
+      "glossary",
+      "pronunciation-index",
+      "base-vocab",
+      "meanings",
+      "kb-a22-words",
+      "ab-a22-m1"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true,
+    "batchcss": true,
+    "bookcss": true
+  },
+  "ab-a22-m2.html": {
+    "slug": "ab-a22-m2",
+    "title": "Menschen A2.2 · Arbeitsbuch · Lektion 16-18",
+    "reader": true,
+    "themes": true,
+    "styles": [],
+    "initializers": [
+      "glossary",
+      "pronunciation-index",
+      "base-vocab",
+      "meanings",
+      "kb-a22-words",
+      "ab-a22-m2"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true,
+    "batchcss": true,
+    "bookcss": true
+  },
+  "ab-a22-m3.html": {
+    "slug": "ab-a22-m3",
+    "title": "Menschen A2.2 · Arbeitsbuch · Lektion 19-21",
+    "reader": true,
+    "themes": true,
+    "styles": [],
+    "initializers": [
+      "glossary",
+      "pronunciation-index",
+      "base-vocab",
+      "meanings",
+      "kb-a22-words",
+      "ab-a22-m3"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true,
+    "batchcss": true,
+    "bookcss": true
+  },
+  "ab-a22-m4.html": {
+    "slug": "ab-a22-m4",
+    "title": "Menschen A2.2 · Arbeitsbuch · Lektion 22-24",
+    "reader": true,
+    "themes": true,
+    "styles": [],
+    "initializers": [
+      "glossary",
+      "pronunciation-index",
+      "base-vocab",
+      "meanings",
+      "kb-a22-words",
+      "ab-a22-m4"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true,
+    "batchcss": true,
+    "bookcss": true
+  },
+  "ab-a22-m5.html": {
+    "slug": "ab-a22-m5",
+    "title": "Menschen A2.2 · Arbeitsbuch · Anhang: Grammatik + Lösungen",
+    "reader": true,
+    "themes": true,
+    "styles": [],
+    "initializers": [
+      "glossary",
+      "pronunciation-index",
+      "base-vocab",
+      "meanings",
+      "kb-a22-words",
+      "ab-a22-m5"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true,
+    "batchcss": true,
+    "bookcss": true
   }
 }
