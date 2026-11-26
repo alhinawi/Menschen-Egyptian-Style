@@ -2043,11 +2043,353 @@
    "h": 13
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p49-1b1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b1",
+   "answer": "e",
+   "x": 493,
+   "y": 284,
+   "w": 27,
+   "h": 26
+  },
+  {
+   "id": "p49-1b2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b2",
+   "answer": "en",
+   "x": 812,
+   "y": 284,
+   "w": 30,
+   "h": 26
+  },
+  {
+   "id": "p49-1bA",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 bA",
+   "answer": "Zürich",
+   "x": 179,
+   "y": 311,
+   "w": 271,
+   "h": 26
+  },
+  {
+   "id": "p49-1c1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c1",
+   "answer": "e",
+   "x": 401,
+   "y": 337,
+   "w": 41,
+   "h": 26
+  },
+  {
+   "id": "p49-1cA",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 cA",
+   "answer": "Schloss Neuschwanstein|Neuschwanstein",
+   "x": 179,
+   "y": 365,
+   "w": 271,
+   "h": 26
+  },
+  {
+   "id": "p49-1d1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d1",
+   "answer": "e",
+   "x": 341,
+   "y": 387,
+   "w": 42,
+   "h": 26
+  },
+  {
+   "id": "p49-1dA",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 dA",
+   "answer": "Wien",
+   "x": 179,
+   "y": 415,
+   "w": 271,
+   "h": 26
+  },
+  {
+   "id": "p49-1d2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d2",
+   "answer": "e",
+   "x": 609,
+   "y": 441,
+   "w": 40,
+   "h": 26
+  },
+  {
+   "id": "p49-1e1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e1",
+   "answer": "en",
+   "x": 520,
+   "y": 464,
+   "w": 40,
+   "h": 26
+  },
+  {
+   "id": "p49-1eA",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 eA",
+   "answer": "Zürich|ETH Zürich|Zürich (ETH)",
+   "x": 179,
+   "y": 495,
+   "w": 271,
+   "h": 26
+  },
+  {
+   "id": "p49-1f1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 f1",
+   "answer": "en",
+   "x": 614,
+   "y": 518,
+   "w": 41,
+   "h": 26
+  },
+  {
+   "id": "p49-1f2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 f2",
+   "answer": "en",
+   "x": 719,
+   "y": 518,
+   "w": 41,
+   "h": 26
+  },
+  {
+   "id": "p49-1fA",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 fA",
+   "answer": "Hotel Adlon|Adlon",
+   "x": 711,
+   "y": 548,
+   "w": 273,
+   "h": 26
+  },
+  {
+   "id": "p49-1g1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 g1",
+   "answer": "en",
+   "x": 640,
+   "y": 571,
+   "w": 32,
+   "h": 26
+  },
+  {
+   "id": "p49-1gA",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 gA",
+   "answer": "Berlin",
+   "x": 179,
+   "y": 597,
+   "w": 271,
+   "h": 26
+  },
+  {
+   "id": "p49-1h1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 h1",
+   "answer": "e",
+   "x": 711,
+   "y": 625,
+   "w": 38,
+   "h": 26
+  },
+  {
+   "id": "p49-1h2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 h2",
+   "answer": "e",
+   "x": 220,
+   "y": 651,
+   "w": 40,
+   "h": 26
+  },
+  {
+   "id": "p49-1hA",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 hA",
+   "answer": "Hamburg",
+   "x": 437,
+   "y": 651,
+   "w": 287,
+   "h": 26
+  },
+  {
+   "id": "p49-1i1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 i1",
+   "answer": "en",
+   "x": 473,
+   "y": 679,
+   "w": 26,
+   "h": 26
+  },
+  {
+   "id": "p49-1i2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 i2",
+   "answer": "e",
+   "x": 684,
+   "y": 679,
+   "w": 25,
+   "h": 26
+  },
+  {
+   "id": "p49-1iA",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 iA",
+   "answer": "Wien",
+   "x": 179,
+   "y": 707,
+   "w": 271,
+   "h": 26
+  },
+  {
+   "id": "p49-1j1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 j1",
+   "answer": "en",
+   "x": 578,
+   "y": 729,
+   "w": 56,
+   "h": 26
+  },
+  {
+   "id": "p49-1jA",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 jA",
+   "answer": "Bodensee",
+   "x": 452,
+   "y": 758,
+   "w": 274,
+   "h": 26
+  },
+  {
+   "id": "p49-2a1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 a1",
+   "answer": "Vom|vom",
+   "x": 220,
+   "y": 1043,
+   "w": 89,
+   "h": 26
+  },
+  {
+   "id": "p49-2a2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 a2",
+   "answer": "an",
+   "x": 249,
+   "y": 1069,
+   "w": 86,
+   "h": 26
+  },
+  {
+   "id": "p49-2a3",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 a3",
+   "answer": "von",
+   "x": 423,
+   "y": 1094,
+   "w": 71,
+   "h": 26
+  },
+  {
+   "id": "p49-2a4",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 a4",
+   "answer": "bis",
+   "x": 258,
+   "y": 1119,
+   "w": 74,
+   "h": 26
+  },
+  {
+   "id": "p49-2b1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b1",
+   "answer": "Seit|seit",
+   "x": 678,
+   "y": 992,
+   "w": 200,
+   "h": 26
+  },
+  {
+   "id": "p49-2b2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b2",
+   "answer": "am",
+   "x": 793,
+   "y": 1073,
+   "w": 115,
+   "h": 26
+  },
+  {
+   "id": "p49-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c",
+   "answer": "Über|über",
+   "x": 447,
+   "y": 1252,
+   "w": 119,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Quiz Adjektivendungen"
+  },
+  {
+   "id": "g2",
+   "label": "Ordnen Sie zu"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel, Wiederholungsstation Grammatik; ex1 answers also printed upside down on the page."
+  ]
  }
 }

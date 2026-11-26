@@ -2155,11 +2155,247 @@
    "h": 21
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p48-1a",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 a",
+   "answer": "fettarm",
+   "x": 683,
+   "y": 220,
+   "w": 171,
+   "h": 26
+  },
+  {
+   "id": "p48-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "Einkaufszettel",
+   "x": 683,
+   "y": 262,
+   "w": 346,
+   "h": 26
+  },
+  {
+   "id": "p48-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "Pfund",
+   "x": 683,
+   "y": 300,
+   "w": 122,
+   "h": 26
+  },
+  {
+   "id": "p48-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d",
+   "answer": "Quark",
+   "x": 683,
+   "y": 340,
+   "w": 122,
+   "h": 26
+  },
+  {
+   "id": "p48-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e",
+   "answer": "Marmelade",
+   "x": 683,
+   "y": 380,
+   "w": 222,
+   "h": 26
+  },
+  {
+   "id": "p48-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 f",
+   "answer": "hungrig",
+   "x": 683,
+   "y": 420,
+   "w": 171,
+   "h": 26
+  },
+  {
+   "id": "p48-1g",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 g",
+   "answer": "Dose",
+   "x": 683,
+   "y": 461,
+   "w": 95,
+   "h": 26
+  },
+  {
+   "id": "p48-1h",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 h",
+   "answer": "Saft",
+   "x": 683,
+   "y": 499,
+   "w": 95,
+   "h": 26
+  },
+  {
+   "id": "p48-1i",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 i",
+   "answer": "Mehl",
+   "x": 683,
+   "y": 538,
+   "w": 95,
+   "h": 26
+  },
+  {
+   "id": "p48-1j",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 j",
+   "answer": "Gemüse",
+   "x": 683,
+   "y": 578,
+   "w": 145,
+   "h": 26
+  },
+  {
+   "id": "p48-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "fettes",
+   "x": 361,
+   "y": 823,
+   "w": 166,
+   "h": 26
+  },
+  {
+   "id": "p48-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c",
+   "answer": "frisch",
+   "x": 552,
+   "y": 852,
+   "w": 149,
+   "h": 26
+  },
+  {
+   "id": "p48-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d",
+   "answer": "weich",
+   "x": 389,
+   "y": 874,
+   "w": 159,
+   "h": 26
+  },
+  {
+   "id": "p48-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 e",
+   "answer": "spannend",
+   "x": 768,
+   "y": 902,
+   "w": 158,
+   "h": 26
+  },
+  {
+   "id": "p48-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "Unterkunft",
+   "x": 385,
+   "y": 1154,
+   "w": 277,
+   "h": 26
+  },
+  {
+   "id": "p48-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "Trinkgeld",
+   "x": 301,
+   "y": 1180,
+   "w": 276,
+   "h": 26
+  },
+  {
+   "id": "p48-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "Reiseführer",
+   "x": 766,
+   "y": 1238,
+   "w": 185,
+   "h": 26
+  },
+  {
+   "id": "p48-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e",
+   "answer": "Kunst",
+   "x": 306,
+   "y": 1260,
+   "w": 276,
+   "h": 26
+  },
+  {
+   "id": "p48-3f",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 f",
+   "answer": "Touristen",
+   "x": 225,
+   "y": 1290,
+   "w": 248,
+   "h": 26
+  },
+  {
+   "id": "p48-3g",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 g",
+   "answer": "Sehenswürdigkeiten",
+   "x": 540,
+   "y": 1290,
+   "w": 249,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Rätsel"
+  },
+  {
+   "id": "g2",
+   "label": "Gegenteil"
+  },
+  {
+   "id": "g3",
+   "label": "Pläne für die Ferien"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel, Wiederholungsstation Wortschatz (L5-6). Lösungswort (ex1) left ungraded."
+  ]
  }
 }
