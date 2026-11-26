@@ -2161,7 +2161,8 @@
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "Ex 1 (rating table) and 2 (group work) have only a model answer or free answers; not graded."
   ],
   "verifiedWords": 0,
   "totalWords": 307
