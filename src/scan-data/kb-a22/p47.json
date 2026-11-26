@@ -2610,13 +2610,134 @@
    "h": 9
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p47-21",
+   "group": "g2",
+   "kind": "text",
+   "label": "3b 1",
+   "answer": "Julius",
+   "x": 520,
+   "y": 240,
+   "w": 160,
+   "h": 26
+  },
+  {
+   "id": "p47-22",
+   "group": "g2",
+   "kind": "text",
+   "label": "3b 2",
+   "answer": "Anton",
+   "x": 550,
+   "y": 266,
+   "w": 185,
+   "h": 26
+  },
+  {
+   "id": "p47-23",
+   "group": "g2",
+   "kind": "text",
+   "label": "3b 3",
+   "answer": "Anita",
+   "x": 747,
+   "y": 292,
+   "w": 168,
+   "h": 26
+  },
+  {
+   "id": "p47-25",
+   "group": "g2",
+   "kind": "text",
+   "label": "3b 5",
+   "answer": "Anton",
+   "x": 810,
+   "y": 344,
+   "w": 170,
+   "h": 26
+  },
+  {
+   "id": "p47-26",
+   "group": "g2",
+   "kind": "text",
+   "label": "3b 6",
+   "answer": "Lucy",
+   "x": 760,
+   "y": 370,
+   "w": 168,
+   "h": 26
+  },
+  {
+   "id": "p47-27",
+   "group": "g2",
+   "kind": "text",
+   "label": "3b 7",
+   "answer": "Anita",
+   "x": 785,
+   "y": 396,
+   "w": 180,
+   "h": 26
+  },
+  {
+   "id": "p47-28",
+   "group": "g2",
+   "kind": "text",
+   "label": "3b 8",
+   "answer": "Lucy",
+   "x": 705,
+   "y": 422,
+   "w": 167,
+   "h": 26
+  },
+  {
+   "id": "p47-32",
+   "group": "g3",
+   "kind": "text",
+   "label": "4a 2",
+   "answer": "musste",
+   "x": 297,
+   "y": 736,
+   "w": 115,
+   "h": 26
+  },
+  {
+   "id": "p47-33",
+   "group": "g3",
+   "kind": "text",
+   "label": "4a 3",
+   "answer": "wollte",
+   "x": 230,
+   "y": 762,
+   "w": 115,
+   "h": 26
+  },
+  {
+   "id": "p47-34",
+   "group": "g3",
+   "kind": "text",
+   "label": "4a 4",
+   "answer": "musste",
+   "x": 758,
+   "y": 789,
+   "w": 112,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g2",
+   "label": "3 b Zu wem passen die Aussagen? Lesen Sie die Texte noch einmal und notieren Sie die Namen."
+  },
+  {
+   "id": "g3",
+   "label": "4 a Ergänzen Sie die passenden Modalverben im Präteritum."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "3b (item 4 is the printed example) and 4a keys confirmed against the official Hueber Lösungen (A2). 5 and 6 are open and stay ungraded."
   ]
  }
 }

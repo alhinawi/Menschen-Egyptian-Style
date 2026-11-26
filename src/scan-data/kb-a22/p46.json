@@ -3527,13 +3527,53 @@
    "h": 17
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p46-21",
+   "group": "g2",
+   "kind": "text",
+   "label": "3a A",
+   "answer": "Comic",
+   "x": 226,
+   "y": 506,
+   "w": 140,
+   "h": 26
+  },
+  {
+   "id": "p46-22",
+   "group": "g2",
+   "kind": "text",
+   "label": "3a B",
+   "answer": "Bilderbuch",
+   "x": 397,
+   "y": 506,
+   "w": 141,
+   "h": 26
+  },
+  {
+   "id": "p46-23",
+   "group": "g2",
+   "kind": "text",
+   "label": "3a D",
+   "answer": "Roman",
+   "x": 761,
+   "y": 506,
+   "w": 125,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g2",
+   "label": "3 a Was war das Lieblingsbuch der Personen? Notieren Sie den passenden Begriff aus dem Bildlexikon."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "3a key confirmed against the official Hueber Lösungen (A2); C (Kinderbuch) is the printed example. 3b is not graded here."
   ]
  }
 }
