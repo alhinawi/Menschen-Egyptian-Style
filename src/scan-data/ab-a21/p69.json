@@ -2323,7 +2323,280 @@
    "h": 14
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p69-1a",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 a",
+   "answer": "internationale Computerfirma",
+   "x": 505,
+   "y": 256,
+   "w": 322,
+   "h": 26
+  },
+  {
+   "id": "p69-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "Computer verkaufen",
+   "x": 505,
+   "y": 281,
+   "w": 322,
+   "h": 26
+  },
+  {
+   "id": "p69-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "keine festen|keine festen Arbeitszeiten",
+   "x": 505,
+   "y": 309,
+   "w": 322,
+   "h": 26
+  },
+  {
+   "id": "p69-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e",
+   "answer": "Firmenwagen|gut|selbstständige Arbeit|Arbeit im Team",
+   "x": 505,
+   "y": 360,
+   "w": 322,
+   "h": 26
+  },
+  {
+   "id": "p69-2a-e+i",
+   "group": "g2",
+   "kind": "radio",
+   "label": "e+i",
+   "name": "p69-2a",
+   "value": "e+i",
+   "answer": "false",
+   "x": 181,
+   "y": 1297,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p69-2a-a+i",
+   "group": "g2",
+   "kind": "radio",
+   "label": "a+i",
+   "name": "p69-2a",
+   "value": "a+i",
+   "answer": "true",
+   "x": 300,
+   "y": 1297,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p69-2b-lang",
+   "group": "g2",
+   "kind": "radio",
+   "label": "lang",
+   "name": "p69-2b",
+   "value": "lang",
+   "answer": "true",
+   "x": 181,
+   "y": 1343,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p69-2b-kurz",
+   "group": "g2",
+   "kind": "radio",
+   "label": "kurz",
+   "name": "p69-2b",
+   "value": "kurz",
+   "answer": "false",
+   "x": 300,
+   "y": 1343,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p69-3a1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a1",
+   "answer": "ie",
+   "x": 653,
+   "y": 1134,
+   "w": 28,
+   "h": 24
+  },
+  {
+   "id": "p69-3a2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a2",
+   "answer": "ei",
+   "x": 709,
+   "y": 1134,
+   "w": 34,
+   "h": 24
+  },
+  {
+   "id": "p69-3a3",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a3",
+   "answer": "ei",
+   "x": 787,
+   "y": 1134,
+   "w": 37,
+   "h": 24
+  },
+  {
+   "id": "p69-3a4",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a4",
+   "answer": "ei",
+   "x": 644,
+   "y": 1156,
+   "w": 34,
+   "h": 24
+  },
+  {
+   "id": "p69-3b1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b1",
+   "answer": "ei",
+   "x": 690,
+   "y": 1186,
+   "w": 28,
+   "h": 24
+  },
+  {
+   "id": "p69-3b2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b2",
+   "answer": "ei",
+   "x": 912,
+   "y": 1186,
+   "w": 34,
+   "h": 24
+  },
+  {
+   "id": "p69-3c1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c1",
+   "answer": "ei",
+   "x": 694,
+   "y": 1237,
+   "w": 37,
+   "h": 24
+  },
+  {
+   "id": "p69-3c2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c2",
+   "answer": "ie",
+   "x": 847,
+   "y": 1237,
+   "w": 25,
+   "h": 24
+  },
+  {
+   "id": "p69-3c3",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c3",
+   "answer": "ie",
+   "x": 912,
+   "y": 1237,
+   "w": 34,
+   "h": 24
+  },
+  {
+   "id": "p69-3c4",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c4",
+   "answer": "ie",
+   "x": 644,
+   "y": 1264,
+   "w": 34,
+   "h": 24
+  },
+  {
+   "id": "p69-3c5",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c5",
+   "answer": "ei",
+   "x": 815,
+   "y": 1264,
+   "w": 37,
+   "h": 24
+  },
+  {
+   "id": "p69-3c6",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c6",
+   "answer": "ei",
+   "x": 881,
+   "y": 1264,
+   "w": 37,
+   "h": 24
+  },
+  {
+   "id": "p69-3d1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d1",
+   "answer": "ei",
+   "x": 650,
+   "y": 1290,
+   "w": 37,
+   "h": 24
+  },
+  {
+   "id": "p69-3d2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d2",
+   "answer": "ei",
+   "x": 797,
+   "y": 1290,
+   "w": 28,
+   "h": 24
+  },
+  {
+   "id": "p69-3d3",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d3",
+   "answer": "ie",
+   "x": 697,
+   "y": 1317,
+   "w": 37,
+   "h": 24
+  },
+  {
+   "id": "p69-3d4",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d4",
+   "answer": "ei",
+   "x": 915,
+   "y": 1317,
+   "w": 34,
+   "h": 24
+  }
+ ],
  "audio": [
   {
    "id": "ab-cd1-31-69",
@@ -2344,9 +2617,25 @@
    "h": 26
   }
  ],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Mein Traumjob: Informationen suchen"
+  },
+  {
+   "id": "g2",
+   "label": "Was ist richtig? Kreuzen Sie an"
+  },
+  {
+   "id": "g3",
+   "label": "Ergänzen Sie ei oder ie"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel, Training Schreiben ex1 (a, b, c, e). Ex2 (own text) is ungraded.",
+   "Key: official Hueber Lösungsschlüssel, Training Aussprache ex2 and ex3. Training Schreiben ex2 is ungraded."
+  ]
  }
 }
