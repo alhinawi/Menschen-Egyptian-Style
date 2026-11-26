@@ -2449,7 +2449,164 @@
    "h": 10
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p45-2a-Die_Sonne_scheint.",
+   "group": "g2",
+   "kind": "radio",
+   "label": "Die Sonne scheint.",
+   "name": "p45-2a",
+   "value": "Die Sonne scheint.",
+   "answer": "false",
+   "x": 155,
+   "y": 623,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-2a-Es_regnet.",
+   "group": "g2",
+   "kind": "radio",
+   "label": "Es regnet.",
+   "name": "p45-2a",
+   "value": "Es regnet.",
+   "answer": "true",
+   "x": 155,
+   "y": 655,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-2a-Es_gibt_Hagelschauer.",
+   "group": "g2",
+   "kind": "radio",
+   "label": "Es gibt Hagelschauer.",
+   "name": "p45-2a",
+   "value": "Es gibt Hagelschauer.",
+   "answer": "false",
+   "x": 155,
+   "y": 685,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-2b-später_statt",
+   "group": "g2",
+   "kind": "radio",
+   "label": "später statt",
+   "name": "p45-2b",
+   "value": "später statt",
+   "answer": "false",
+   "x": 154,
+   "y": 818,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-2b-findet_nicht_statt",
+   "group": "g2",
+   "kind": "radio",
+   "label": "findet nicht statt",
+   "name": "p45-2b",
+   "value": "findet nicht statt",
+   "answer": "true",
+   "x": 154,
+   "y": 873,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-2b-keine_Karten",
+   "group": "g2",
+   "kind": "radio",
+   "label": "keine Karten",
+   "name": "p45-2b",
+   "value": "keine Karten",
+   "answer": "false",
+   "x": 154,
+   "y": 924,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-2c-Ein_Krimi",
+   "group": "g2",
+   "kind": "radio",
+   "label": "Ein Krimi",
+   "name": "p45-2c",
+   "value": "Ein Krimi",
+   "answer": "true",
+   "x": 554,
+   "y": 656,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-2c-Lieblingssongs",
+   "group": "g2",
+   "kind": "radio",
+   "label": "Lieblingssongs",
+   "name": "p45-2c",
+   "value": "Lieblingssongs",
+   "answer": "false",
+   "x": 554,
+   "y": 688,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-2c-Ein_Konzert",
+   "group": "g2",
+   "kind": "radio",
+   "label": "Ein Konzert",
+   "name": "p45-2c",
+   "value": "Ein Konzert",
+   "answer": "false",
+   "x": 554,
+   "y": 716,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-2d-Bus_S-Bahn_U-Bahn",
+   "group": "g2",
+   "kind": "radio",
+   "label": "Bus S-Bahn U-Bahn",
+   "name": "p45-2d",
+   "value": "Bus S-Bahn U-Bahn",
+   "answer": "true",
+   "x": 557,
+   "y": 818,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-2d-Mit_dem_Auto",
+   "group": "g2",
+   "kind": "radio",
+   "label": "Mit dem Auto",
+   "name": "p45-2d",
+   "value": "Mit dem Auto",
+   "answer": "false",
+   "x": 557,
+   "y": 868,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p45-2d-Gar_nicht",
+   "group": "g2",
+   "kind": "radio",
+   "label": "Gar nicht",
+   "name": "p45-2d",
+   "value": "Gar nicht",
+   "answer": "false",
+   "x": 557,
+   "y": 899,
+   "w": 24,
+   "h": 24
+  }
+ ],
  "audio": [
   {
    "id": "ab-cd2-16-45",
@@ -2515,9 +2672,16 @@
    "h": 26
   }
  ],
- "groups": [],
+ "groups": [
+  {
+   "id": "g2",
+   "label": "2 Informationen aus dem Radio: Was ist richtig?"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Training Hören 2 a-d graded from the official key. Item 1 (line matching) and the Aussprache rule gap stay ungraded."
+  ]
  }
 }

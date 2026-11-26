@@ -2603,7 +2603,239 @@
    "h": 8
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p56-10b",
+   "group": "g10",
+   "kind": "text",
+   "label": "10b",
+   "answer": "Ausstellung",
+   "x": 253,
+   "y": 473,
+   "w": 291,
+   "h": 26
+  },
+  {
+   "id": "p56-10c",
+   "group": "g10",
+   "kind": "text",
+   "label": "10c",
+   "answer": "Fotos",
+   "x": 488,
+   "y": 501,
+   "w": 283,
+   "h": 26
+  },
+  {
+   "id": "p56-10d1",
+   "group": "g10",
+   "kind": "text",
+   "label": "10d1",
+   "answer": "Musiknacht",
+   "x": 592,
+   "y": 525,
+   "w": 305,
+   "h": 26
+  },
+  {
+   "id": "p56-10d2",
+   "group": "g10",
+   "kind": "text",
+   "label": "10d2",
+   "answer": "Konzert",
+   "x": 556,
+   "y": 551,
+   "w": 183,
+   "h": 26
+  },
+  {
+   "id": "p56-10d3",
+   "group": "g10",
+   "kind": "text",
+   "label": "10d3",
+   "answer": "Workshops",
+   "x": 778,
+   "y": 551,
+   "w": 189,
+   "h": 26
+  },
+  {
+   "id": "p56-10e",
+   "group": "g10",
+   "kind": "text",
+   "label": "10e",
+   "answer": "Stadtspaziergang",
+   "x": 623,
+   "y": 583,
+   "w": 302,
+   "h": 26
+  },
+  {
+   "id": "p56-11r1",
+   "group": "g11",
+   "kind": "text",
+   "label": "11r1",
+   "answer": "2",
+   "x": 171,
+   "y": 677,
+   "w": 31,
+   "h": 26
+  },
+  {
+   "id": "p56-11r2",
+   "group": "g11",
+   "kind": "text",
+   "label": "11r2",
+   "answer": "7",
+   "x": 171,
+   "y": 706,
+   "w": 31,
+   "h": 26
+  },
+  {
+   "id": "p56-11r3",
+   "group": "g11",
+   "kind": "text",
+   "label": "11r3",
+   "answer": "6",
+   "x": 171,
+   "y": 735,
+   "w": 31,
+   "h": 26
+  },
+  {
+   "id": "p56-11r4",
+   "group": "g11",
+   "kind": "text",
+   "label": "11r4",
+   "answer": "3",
+   "x": 171,
+   "y": 765,
+   "w": 31,
+   "h": 26
+  },
+  {
+   "id": "p56-11r5",
+   "group": "g11",
+   "kind": "text",
+   "label": "11r5",
+   "answer": "8",
+   "x": 171,
+   "y": 794,
+   "w": 31,
+   "h": 26
+  },
+  {
+   "id": "p56-11r6",
+   "group": "g11",
+   "kind": "text",
+   "label": "11r6",
+   "answer": "5",
+   "x": 171,
+   "y": 823,
+   "w": 31,
+   "h": 26
+  },
+  {
+   "id": "p56-11r8",
+   "group": "g11",
+   "kind": "text",
+   "label": "11r8",
+   "answer": "4",
+   "x": 171,
+   "y": 882,
+   "w": 31,
+   "h": 26
+  },
+  {
+   "id": "p56-12b",
+   "group": "g12",
+   "kind": "text",
+   "label": "12b",
+   "answer": "Also",
+   "x": 195,
+   "y": 1054,
+   "w": 324,
+   "h": 26
+  },
+  {
+   "id": "p56-12c",
+   "group": "g12",
+   "kind": "text",
+   "label": "12c",
+   "answer": "bestimmt Spaß",
+   "x": 486,
+   "y": 1107,
+   "w": 330,
+   "h": 26
+  },
+  {
+   "id": "p56-12d",
+   "group": "g12",
+   "kind": "text",
+   "label": "12d",
+   "answer": "gar nicht neugierig",
+   "x": 254,
+   "y": 1135,
+   "w": 314,
+   "h": 26
+  },
+  {
+   "id": "p56-12e",
+   "group": "g12",
+   "kind": "text",
+   "label": "12e",
+   "answer": "probier das",
+   "x": 260,
+   "y": 1185,
+   "w": 324,
+   "h": 26
+  },
+  {
+   "id": "p56-12f",
+   "group": "g12",
+   "kind": "text",
+   "label": "12f",
+   "answer": "so negativ",
+   "x": 388,
+   "y": 1241,
+   "w": 317,
+   "h": 26
+  },
+  {
+   "id": "p56-12g",
+   "group": "g12",
+   "kind": "text",
+   "label": "12g",
+   "answer": "du recht",
+   "x": 400,
+   "y": 1296,
+   "w": 324,
+   "h": 26
+  },
+  {
+   "id": "p56-12h",
+   "group": "g12",
+   "kind": "text",
+   "label": "12h",
+   "answer": "kostenlos",
+   "x": 454,
+   "y": 1324,
+   "w": 306,
+   "h": 26
+  },
+  {
+   "id": "p56-12i",
+   "group": "g12",
+   "kind": "text",
+   "label": "12i",
+   "answer": "Schon gut",
+   "x": 195,
+   "y": 1352,
+   "w": 317,
+   "h": 26
+  }
+ ],
  "audio": [
   {
    "id": "ab-cd2-23-56",
@@ -2615,9 +2847,24 @@
    "h": 26
   }
  ],
- "groups": [],
+ "groups": [
+  {
+   "id": "g10",
+   "label": "10 Hören Sie fünf Veranstaltungstipps."
+  },
+  {
+   "id": "g11",
+   "label": "11 Ordnen Sie das Gespräch."
+  },
+  {
+   "id": "g12",
+   "label": "12 Ordnen Sie zu."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Items 10, 11 and 12 graded from the official key (11: number order top to bottom, row 7 holds the printed example 1). Item 9 (strike-through) stays ungraded."
+  ]
  }
 }

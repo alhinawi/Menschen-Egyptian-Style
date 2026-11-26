@@ -1917,11 +1917,210 @@
    "h": 10
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p55-6b1",
+   "group": "g6",
+   "kind": "text",
+   "label": "6b1",
+   "answer": "aus",
+   "x": 662,
+   "y": 534,
+   "w": 77,
+   "h": 26
+  },
+  {
+   "id": "p55-6b2",
+   "group": "g6",
+   "kind": "text",
+   "label": "6b2",
+   "answer": "der",
+   "x": 745,
+   "y": 534,
+   "w": 88,
+   "h": 26
+  },
+  {
+   "id": "p55-6c",
+   "group": "g6",
+   "kind": "text",
+   "label": "6c",
+   "answer": "vom",
+   "x": 250,
+   "y": 563,
+   "w": 70,
+   "h": 26
+  },
+  {
+   "id": "p55-6d",
+   "group": "g6",
+   "kind": "text",
+   "label": "6d",
+   "answer": "Zu",
+   "x": 474,
+   "y": 563,
+   "w": 98,
+   "h": 26
+  },
+  {
+   "id": "p55-6e",
+   "group": "g6",
+   "kind": "text",
+   "label": "6e",
+   "answer": "zum",
+   "x": 665,
+   "y": 590,
+   "w": 98,
+   "h": 26
+  },
+  {
+   "id": "p55-6f",
+   "group": "g6",
+   "kind": "text",
+   "label": "6f",
+   "answer": "im",
+   "x": 834,
+   "y": 621,
+   "w": 104,
+   "h": 26
+  },
+  {
+   "id": "p55-6g",
+   "group": "g6",
+   "kind": "text",
+   "label": "6g",
+   "answer": "in",
+   "x": 217,
+   "y": 676,
+   "w": 70,
+   "h": 26
+  },
+  {
+   "id": "p55-6h",
+   "group": "g6",
+   "kind": "text",
+   "label": "6h",
+   "answer": "ins",
+   "x": 645,
+   "y": 704,
+   "w": 88,
+   "h": 26
+  },
+  {
+   "id": "p55-6i",
+   "group": "g6",
+   "kind": "text",
+   "label": "6i",
+   "answer": "zum",
+   "x": 336,
+   "y": 732,
+   "w": 85,
+   "h": 26
+  },
+  {
+   "id": "p55-6j",
+   "group": "g6",
+   "kind": "text",
+   "label": "6j",
+   "answer": "Beim",
+   "x": 162,
+   "y": 759,
+   "w": 94,
+   "h": 26
+  },
+  {
+   "id": "p55-6k",
+   "group": "g6",
+   "kind": "text",
+   "label": "6k",
+   "answer": "im",
+   "x": 696,
+   "y": 759,
+   "w": 76,
+   "h": 26
+  },
+  {
+   "id": "p55-6l",
+   "group": "g6",
+   "kind": "text",
+   "label": "6l",
+   "answer": "ins",
+   "x": 370,
+   "y": 785,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "p55-8b",
+   "group": "g8",
+   "kind": "text",
+   "label": "8b",
+   "answer": "das Ballett",
+   "x": 159,
+   "y": 1258,
+   "w": 250,
+   "h": 26
+  },
+  {
+   "id": "p55-8c",
+   "group": "g8",
+   "kind": "text",
+   "label": "8c",
+   "answer": "die Oper",
+   "x": 159,
+   "y": 1290,
+   "w": 250,
+   "h": 26
+  },
+  {
+   "id": "p55-8d",
+   "group": "g8",
+   "kind": "text",
+   "label": "8d",
+   "answer": "das Musical",
+   "x": 159,
+   "y": 1320,
+   "w": 250,
+   "h": 26
+  },
+  {
+   "id": "p55-8e",
+   "group": "g8",
+   "kind": "text",
+   "label": "8e",
+   "answer": "der Zirkus",
+   "x": 159,
+   "y": 1351,
+   "w": 250,
+   "h": 26
+  },
+  {
+   "id": "p55-8f",
+   "group": "g8",
+   "kind": "text",
+   "label": "8f",
+   "answer": "der Club",
+   "x": 159,
+   "y": 1382,
+   "w": 250,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g6",
+   "label": "6 Wo, woher oder wohin?"
+  },
+  {
+   "id": "g8",
+   "label": "8 Markieren Sie die Nomen."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Items 6 and 8 graded from the official key. Item 5 (several tiny blanks per line) and 7 (free) stay ungraded."
+  ]
  }
 }
