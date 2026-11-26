@@ -1700,11 +1700,632 @@
    "h": 16
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p66-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "Lkws",
+   "x": 469,
+   "y": 355,
+   "w": 141,
+   "h": 26
+  },
+  {
+   "id": "p66-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "Lager",
+   "x": 596,
+   "y": 386,
+   "w": 149,
+   "h": 26
+  },
+  {
+   "id": "p66-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d",
+   "answer": "Hallen",
+   "x": 366,
+   "y": 416,
+   "w": 142,
+   "h": 26
+  },
+  {
+   "id": "p66-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e",
+   "answer": "Produktion",
+   "x": 667,
+   "y": 413,
+   "w": 155,
+   "h": 26
+  },
+  {
+   "id": "p66-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 f",
+   "answer": "Werke",
+   "x": 486,
+   "y": 442,
+   "w": 141,
+   "h": 26
+  },
+  {
+   "id": "p66-1g",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 g",
+   "answer": "Arbeiter",
+   "x": 381,
+   "y": 474,
+   "w": 148,
+   "h": 26
+  },
+  {
+   "id": "p66-1h",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 h",
+   "answer": "Maschinen",
+   "x": 208,
+   "y": 527,
+   "w": 156,
+   "h": 26
+  },
+  {
+   "id": "p66-21",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 1",
+   "answer": "Maschine|die Maschine",
+   "x": 166,
+   "y": 745,
+   "w": 244,
+   "h": 26
+  },
+  {
+   "id": "p66-22",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 2",
+   "answer": "Export|der Export",
+   "x": 166,
+   "y": 776,
+   "w": 244,
+   "h": 26
+  },
+  {
+   "id": "p66-23",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 3",
+   "answer": "Import|der Import",
+   "x": 166,
+   "y": 807,
+   "w": 244,
+   "h": 26
+  },
+  {
+   "id": "p66-24",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 4",
+   "answer": "international",
+   "x": 166,
+   "y": 836,
+   "w": 244,
+   "h": 26
+  },
+  {
+   "id": "p66-3a1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a1",
+   "answer": "p",
+   "x": 807,
+   "y": 959,
+   "w": 23,
+   "h": 26
+  },
+  {
+   "id": "p66-3a2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a2",
+   "answer": "r",
+   "x": 854,
+   "y": 959,
+   "w": 24,
+   "h": 26
+  },
+  {
+   "id": "p66-3a3",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a3",
+   "answer": "r",
+   "x": 359,
+   "y": 989,
+   "w": 18,
+   "h": 26
+  },
+  {
+   "id": "p66-3a4",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a4",
+   "answer": "ä",
+   "x": 412,
+   "y": 989,
+   "w": 22,
+   "h": 26
+  },
+  {
+   "id": "p66-3a5",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a5",
+   "answer": "r",
+   "x": 439,
+   "y": 989,
+   "w": 21,
+   "h": 26
+  },
+  {
+   "id": "p66-3a6",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a6",
+   "answer": "n",
+   "x": 480,
+   "y": 989,
+   "w": 22,
+   "h": 26
+  },
+  {
+   "id": "p66-3b1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b1",
+   "answer": "i",
+   "x": 539,
+   "y": 1063,
+   "w": 21,
+   "h": 26
+  },
+  {
+   "id": "p66-3b2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b2",
+   "answer": "k",
+   "x": 585,
+   "y": 1063,
+   "w": 22,
+   "h": 26
+  },
+  {
+   "id": "p66-3b3",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b3",
+   "answer": "e",
+   "x": 612,
+   "y": 1063,
+   "w": 18,
+   "h": 26
+  },
+  {
+   "id": "p66-3c1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c1",
+   "answer": "t",
+   "x": 743,
+   "y": 1118,
+   "w": 17,
+   "h": 26
+  },
+  {
+   "id": "p66-3c2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c2",
+   "answer": "g",
+   "x": 783,
+   "y": 1118,
+   "w": 16,
+   "h": 26
+  },
+  {
+   "id": "p66-3c3",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c3",
+   "answer": "i",
+   "x": 265,
+   "y": 1155,
+   "w": 16,
+   "h": 26
+  },
+  {
+   "id": "p66-3c4",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c4",
+   "answer": "t",
+   "x": 299,
+   "y": 1155,
+   "w": 15,
+   "h": 26
+  },
+  {
+   "id": "p66-3c5",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c5",
+   "answer": "c",
+   "x": 334,
+   "y": 1155,
+   "w": 17,
+   "h": 26
+  },
+  {
+   "id": "p66-3c6",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c6",
+   "answer": "a",
+   "x": 369,
+   "y": 1155,
+   "w": 15,
+   "h": 26
+  },
+  {
+   "id": "p66-3c7",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c7",
+   "answer": "t",
+   "x": 401,
+   "y": 1155,
+   "w": 18,
+   "h": 26
+  },
+  {
+   "id": "p66-3c8",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c8",
+   "answer": "e",
+   "x": 818,
+   "y": 1155,
+   "w": 18,
+   "h": 26
+  },
+  {
+   "id": "p66-3c9",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c9",
+   "answer": "c",
+   "x": 862,
+   "y": 1155,
+   "w": 17,
+   "h": 26
+  },
+  {
+   "id": "p66-3d1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d1",
+   "answer": "n",
+   "x": 662,
+   "y": 1242,
+   "w": 15,
+   "h": 26
+  },
+  {
+   "id": "p66-3d2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d2",
+   "answer": "e",
+   "x": 700,
+   "y": 1244,
+   "w": 16,
+   "h": 26
+  },
+  {
+   "id": "p66-3d3",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d3",
+   "answer": "t",
+   "x": 735,
+   "y": 1247,
+   "w": 16,
+   "h": 26
+  },
+  {
+   "id": "p66-3d4",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d4",
+   "answer": "l",
+   "x": 771,
+   "y": 1248,
+   "w": 17,
+   "h": 26
+  },
+  {
+   "id": "p66-3d5",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d5",
+   "answer": "t",
+   "x": 804,
+   "y": 1250,
+   "w": 13,
+   "h": 26
+  },
+  {
+   "id": "p66-3e1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e1",
+   "answer": "a",
+   "x": 259,
+   "y": 1311,
+   "w": 17,
+   "h": 26
+  },
+  {
+   "id": "p66-3e2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e2",
+   "answer": "r",
+   "x": 296,
+   "y": 1311,
+   "w": 17,
+   "h": 26
+  },
+  {
+   "id": "p66-3e3",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e3",
+   "answer": "e",
+   "x": 334,
+   "y": 1311,
+   "w": 17,
+   "h": 26
+  },
+  {
+   "id": "p66-3e4",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e4",
+   "answer": "n",
+   "x": 370,
+   "y": 1311,
+   "w": 16,
+   "h": 26
+  },
+  {
+   "id": "p66-3e5",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e5",
+   "answer": "e",
+   "x": 403,
+   "y": 1311,
+   "w": 18,
+   "h": 26
+  },
+  {
+   "id": "p66-3e6",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e6",
+   "answer": "r",
+   "x": 651,
+   "y": 1311,
+   "w": 17,
+   "h": 26
+  },
+  {
+   "id": "p66-3e7",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e7",
+   "answer": "o",
+   "x": 691,
+   "y": 1311,
+   "w": 16,
+   "h": 26
+  },
+  {
+   "id": "p66-3e8",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e8",
+   "answer": "g",
+   "x": 716,
+   "y": 1311,
+   "w": 16,
+   "h": 26
+  },
+  {
+   "id": "p66-3e9",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e9",
+   "answer": "i",
+   "x": 494,
+   "y": 1341,
+   "w": 17,
+   "h": 26
+  },
+  {
+   "id": "p66-3e10",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e10",
+   "answer": "a",
+   "x": 529,
+   "y": 1341,
+   "w": 16,
+   "h": 26
+  },
+  {
+   "id": "p66-3e11",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e11",
+   "answer": "b",
+   "x": 562,
+   "y": 1341,
+   "w": 16,
+   "h": 26
+  },
+  {
+   "id": "p66-3e12",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e12",
+   "answer": "e",
+   "x": 623,
+   "y": 1341,
+   "w": 16,
+   "h": 26
+  },
+  {
+   "id": "p66-3e13",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e13",
+   "answer": "r",
+   "x": 643,
+   "y": 1341,
+   "w": 16,
+   "h": 26
+  },
+  {
+   "id": "p66-3e14",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e14",
+   "answer": "r",
+   "x": 192,
+   "y": 1369,
+   "w": 16,
+   "h": 26
+  },
+  {
+   "id": "p66-3e15",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e15",
+   "answer": "i",
+   "x": 242,
+   "y": 1369,
+   "w": 17,
+   "h": 26
+  },
+  {
+   "id": "p66-3e16",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e16",
+   "answer": "t",
+   "x": 262,
+   "y": 1369,
+   "w": 18,
+   "h": 26
+  },
+  {
+   "id": "p66-3e17",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e17",
+   "answer": "d",
+   "x": 323,
+   "y": 1369,
+   "w": 16,
+   "h": 26
+  },
+  {
+   "id": "p66-3e18",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e18",
+   "answer": "g",
+   "x": 369,
+   "y": 1369,
+   "w": 16,
+   "h": 26
+  },
+  {
+   "id": "p66-3e19",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e19",
+   "answer": "n",
+   "x": 406,
+   "y": 1369,
+   "w": 16,
+   "h": 26
+  },
+  {
+   "id": "p66-3e20",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e20",
+   "answer": "e",
+   "x": 435,
+   "y": 1369,
+   "w": 16,
+   "h": 26
+  },
+  {
+   "id": "p66-3e21",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e21",
+   "answer": "n",
+   "x": 453,
+   "y": 1369,
+   "w": 26,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Eine Führung durch eine Autofabrik"
+  },
+  {
+   "id": "g2",
+   "label": "Ergänzen und vergleichen"
+  },
+  {
+   "id": "g3",
+   "label": "Aus der Zeitung"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel, Lektion 9 Basistraining ex1-3. Ex2 column \"Meine Sprache\" is ungraded."
+  ]
  }
 }

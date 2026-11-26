@@ -2260,11 +2260,181 @@
    "h": 17
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p64-1a1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 a1",
+   "answer": "Krankenwagen",
+   "x": 362,
+   "y": 312,
+   "w": 136,
+   "h": 26
+  },
+  {
+   "id": "p64-1a2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 a2",
+   "answer": "Notaufnahme",
+   "x": 805,
+   "y": 312,
+   "w": 90,
+   "h": 26
+  },
+  {
+   "id": "p64-1a3",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 a3",
+   "answer": "Notfall",
+   "x": 348,
+   "y": 340,
+   "w": 282,
+   "h": 26
+  },
+  {
+   "id": "p64-1b1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b1",
+   "answer": "Verband",
+   "x": 180,
+   "y": 407,
+   "w": 187,
+   "h": 26
+  },
+  {
+   "id": "p64-1b2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b2",
+   "answer": "Sprechstunde",
+   "x": 535,
+   "y": 434,
+   "w": 163,
+   "h": 26
+  },
+  {
+   "id": "p64-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "Verletzung",
+   "x": 406,
+   "y": 471,
+   "w": 138,
+   "h": 26
+  },
+  {
+   "id": "p64-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "er zu schnell gefahren ist",
+   "x": 508,
+   "y": 710,
+   "w": 480,
+   "h": 26
+  },
+  {
+   "id": "p64-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c",
+   "answer": "ich Kopfschmerzen habe",
+   "x": 563,
+   "y": 752,
+   "w": 425,
+   "h": 26
+  },
+  {
+   "id": "p64-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d",
+   "answer": "sie keine Zahnschmerzen mehr hat",
+   "x": 394,
+   "y": 791,
+   "w": 595,
+   "h": 26
+  },
+  {
+   "id": "p64-4a",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 a",
+   "answer": "los",
+   "x": 633,
+   "y": 992,
+   "w": 155,
+   "h": 26
+  },
+  {
+   "id": "p64-4b",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 b",
+   "answer": "Hoffentlich",
+   "x": 180,
+   "y": 1049,
+   "w": 160,
+   "h": 26
+  },
+  {
+   "id": "p64-4c",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 c",
+   "answer": "leid",
+   "x": 412,
+   "y": 1085,
+   "w": 160,
+   "h": 26
+  },
+  {
+   "id": "p64-4d",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 d",
+   "answer": "Angst",
+   "x": 270,
+   "y": 1113,
+   "w": 156,
+   "h": 26
+  },
+  {
+   "id": "p64-4e",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 e",
+   "answer": "Ordnung",
+   "x": 517,
+   "y": 1193,
+   "w": 159,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Bilden Sie Wörter und ordnen Sie zu"
+  },
+  {
+   "id": "g2",
+   "label": "Ordnen Sie zu und schreiben Sie Sätze mit weil"
+  },
+  {
+   "id": "g4",
+   "label": "Ergänzen Sie das Gespräch"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel Tests, Lektion 8 (printed p106). Ex3 (own sentences with deshalb) and the point tables are ungraded."
+  ]
  }
 }

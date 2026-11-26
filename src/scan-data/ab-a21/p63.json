@@ -1315,7 +1315,96 @@
    "h": 13
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p63-2a",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "a",
+   "answer": "false",
+   "x": 940,
+   "y": 670,
+   "w": 26,
+   "h": 26
+  },
+  {
+   "id": "p63-2b",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "b",
+   "answer": "true",
+   "x": 940,
+   "y": 708,
+   "w": 26,
+   "h": 26
+  },
+  {
+   "id": "p63-2c",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "c",
+   "answer": "true",
+   "x": 940,
+   "y": 749,
+   "w": 26,
+   "h": 26
+  },
+  {
+   "id": "p63-2d",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "d",
+   "answer": "false",
+   "x": 940,
+   "y": 789,
+   "w": 26,
+   "h": 26
+  },
+  {
+   "id": "p63-2e",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "e",
+   "answer": "false",
+   "x": 940,
+   "y": 828,
+   "w": 26,
+   "h": 26
+  },
+  {
+   "id": "p63-2f",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "f",
+   "answer": "true",
+   "x": 940,
+   "y": 867,
+   "w": 26,
+   "h": 26
+  },
+  {
+   "id": "p63-2g",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "g",
+   "answer": "false",
+   "x": 940,
+   "y": 908,
+   "w": 26,
+   "h": 26
+  },
+  {
+   "id": "p63-2h",
+   "group": "g2",
+   "kind": "checkbox",
+   "label": "h",
+   "answer": "true",
+   "x": 940,
+   "y": 948,
+   "w": 26,
+   "h": 26
+  }
+ ],
  "audio": [
   {
    "id": "ab-cd1-28-63",
@@ -1345,9 +1434,16 @@
    "h": 26
   }
  ],
- "groups": [],
+ "groups": [
+  {
+   "id": "g2",
+   "label": "Was ist richtig? Hören und ankreuzen"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel, Training Hören ex2 (b, c, f, h). Aussprache (marking sentence stress) and speaking are ungraded."
+  ]
  }
 }

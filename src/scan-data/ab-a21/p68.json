@@ -1959,11 +1959,122 @@
    "h": 16
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p68-9a1",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 a1",
+   "answer": "das ist mir nicht so wichtig",
+   "x": 189,
+   "y": 634,
+   "w": 371,
+   "h": 26
+  },
+  {
+   "id": "p68-9a2",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 a2",
+   "answer": "ich gern selbstständig",
+   "x": 291,
+   "y": 656,
+   "w": 269,
+   "h": 26
+  },
+  {
+   "id": "p68-9b1",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 b1",
+   "answer": "im Team",
+   "x": 663,
+   "y": 527,
+   "w": 278,
+   "h": 26
+  },
+  {
+   "id": "p68-9b2",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 b2",
+   "answer": "ist mir sehr wichtig",
+   "x": 699,
+   "y": 548,
+   "w": 278,
+   "h": 26
+  },
+  {
+   "id": "p68-9b3",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 b3",
+   "answer": "ich möchte gern",
+   "x": 699,
+   "y": 571,
+   "w": 263,
+   "h": 26
+  },
+  {
+   "id": "p68-9c",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 c",
+   "answer": "nicht gern nur drinnen",
+   "x": 706,
+   "y": 691,
+   "w": 276,
+   "h": 26
+  },
+  {
+   "id": "p68-10b",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 b",
+   "answer": "drei Jahrzehnte|30 Jahre|seit drei Jahrzehnten",
+   "x": 498,
+   "y": 840,
+   "w": 484,
+   "h": 26
+  },
+  {
+   "id": "p68-10c",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 c",
+   "answer": "Kleinwagen|moderne Kleinwagen",
+   "x": 578,
+   "y": 879,
+   "w": 404,
+   "h": 26
+  },
+  {
+   "id": "p68-10f",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 f",
+   "answer": "Frau Willner",
+   "x": 566,
+   "y": 998,
+   "w": 417,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g9",
+   "label": "Ordnen Sie zu"
+  },
+  {
+   "id": "g10",
+   "label": "Lesen Sie die Anzeige"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel, Lektion 9 Basistraining ex9-10. Ex8 (own ads) and ex10 d and e (several valid answers) are ungraded."
+  ]
  }
 }
