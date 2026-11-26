@@ -1861,11 +1861,361 @@
    "h": 13
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p13-4a2",
+   "group": "g4a",
+   "kind": "text",
+   "label": "4a 2",
+   "answer": "stellen",
+   "x": 218,
+   "y": 320,
+   "w": 106,
+   "h": 26
+  },
+  {
+   "id": "p13-4a3",
+   "group": "g4a",
+   "kind": "text",
+   "label": "4a 3",
+   "answer": "legst",
+   "x": 181,
+   "y": 349,
+   "w": 112,
+   "h": 26
+  },
+  {
+   "id": "p13-4a4",
+   "group": "g4a",
+   "kind": "text",
+   "label": "4a 4",
+   "answer": "hängt",
+   "x": 229,
+   "y": 377,
+   "w": 95,
+   "h": 26
+  },
+  {
+   "id": "p13-4b1",
+   "group": "g4b",
+   "kind": "text",
+   "label": "4b 1",
+   "answer": "über den Tisch",
+   "x": 807,
+   "y": 284,
+   "w": 159,
+   "h": 26
+  },
+  {
+   "id": "p13-4b2",
+   "group": "g4b",
+   "kind": "text",
+   "label": "4b 2",
+   "answer": "neben das Papier",
+   "x": 807,
+   "y": 314,
+   "w": 159,
+   "h": 26
+  },
+  {
+   "id": "p13-4b4",
+   "group": "g4b",
+   "kind": "text",
+   "label": "4b 4",
+   "answer": "in die Küchenschränke",
+   "x": 807,
+   "y": 377,
+   "w": 159,
+   "h": 26
+  },
+  {
+   "id": "p13-5a0",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 a0",
+   "answer": "zwischen",
+   "x": 587,
+   "y": 482,
+   "w": 79,
+   "h": 26
+  },
+  {
+   "id": "p13-5a1",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 a1",
+   "answer": "die",
+   "x": 670,
+   "y": 482,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "p13-5b0",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 b0",
+   "answer": "neben",
+   "x": 385,
+   "y": 521,
+   "w": 104,
+   "h": 26
+  },
+  {
+   "id": "p13-5b1",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 b1",
+   "answer": "das",
+   "x": 491,
+   "y": 521,
+   "w": 53,
+   "h": 26
+  },
+  {
+   "id": "p13-5c0",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 c0",
+   "answer": "unter",
+   "x": 422,
+   "y": 561,
+   "w": 104,
+   "h": 26
+  },
+  {
+   "id": "p13-5c1",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 c1",
+   "answer": "das",
+   "x": 528,
+   "y": 561,
+   "w": 61,
+   "h": 26
+  },
+  {
+   "id": "p13-5e0",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 e0",
+   "answer": "über",
+   "x": 251,
+   "y": 669,
+   "w": 104,
+   "h": 26
+  },
+  {
+   "id": "p13-5e1",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 e1",
+   "answer": "den",
+   "x": 357,
+   "y": 669,
+   "w": 40,
+   "h": 26
+  },
+  {
+   "id": "p13-5f0",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 f0",
+   "answer": "vor",
+   "x": 458,
+   "y": 708,
+   "w": 104,
+   "h": 26
+  },
+  {
+   "id": "p13-5f1",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 f1",
+   "answer": "die",
+   "x": 565,
+   "y": 708,
+   "w": 59,
+   "h": 26
+  },
+  {
+   "id": "p13-5g0",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 g0",
+   "answer": "hinter",
+   "x": 373,
+   "y": 747,
+   "w": 104,
+   "h": 26
+  },
+  {
+   "id": "p13-5g1",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 g1",
+   "answer": "den",
+   "x": 480,
+   "y": 747,
+   "w": 54,
+   "h": 26
+  },
+  {
+   "id": "p13-5d",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 d",
+   "answer": "ans",
+   "x": 385,
+   "y": 602,
+   "w": 101,
+   "h": 26
+  },
+  {
+   "id": "p13-5h",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 h",
+   "answer": "ins",
+   "x": 428,
+   "y": 787,
+   "w": 104,
+   "h": 26
+  },
+  {
+   "id": "p13-6a0",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 a0",
+   "answer": "hängen",
+   "x": 318,
+   "y": 986,
+   "w": 141,
+   "h": 26
+  },
+  {
+   "id": "p13-6a1",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 a1",
+   "answer": "em|dem",
+   "x": 409,
+   "y": 1013,
+   "w": 45,
+   "h": 26
+  },
+  {
+   "id": "p13-6b0",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 b0",
+   "answer": "legen",
+   "x": 299,
+   "y": 1066,
+   "w": 141,
+   "h": 26
+  },
+  {
+   "id": "p13-6b1",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 b1",
+   "answer": "s|ins",
+   "x": 232,
+   "y": 1095,
+   "w": 39,
+   "h": 26
+  },
+  {
+   "id": "p13-6b2",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 b2",
+   "answer": "em|dem",
+   "x": 279,
+   "y": 1120,
+   "w": 46,
+   "h": 26
+  },
+  {
+   "id": "p13-6b3",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 b3",
+   "answer": "liegt",
+   "x": 391,
+   "y": 1120,
+   "w": 141,
+   "h": 26
+  },
+  {
+   "id": "p13-6c0",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 c0",
+   "answer": "steht",
+   "x": 232,
+   "y": 1172,
+   "w": 116,
+   "h": 26
+  },
+  {
+   "id": "p13-6c1",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 c1",
+   "answer": "er|unserer",
+   "x": 471,
+   "y": 1224,
+   "w": 55,
+   "h": 26
+  },
+  {
+   "id": "p13-6c2",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 c2",
+   "answer": "ie|die",
+   "x": 312,
+   "y": 1252,
+   "w": 43,
+   "h": 26
+  },
+  {
+   "id": "p13-6c3",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 c3",
+   "answer": "stellen",
+   "x": 452,
+   "y": 1252,
+   "w": 128,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g4a",
+   "label": "4a Ordnen Sie zu"
+  },
+  {
+   "id": "g4b",
+   "label": "4b Wohin?"
+  },
+  {
+   "id": "g5",
+   "label": "5 Präpositionen und Artikel"
+  },
+  {
+   "id": "g6",
+   "label": "6 Im Möbelhaus"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungen. Blanks printed after a stem letter accept the ending or the whole word."
+  ]
  }
 }
