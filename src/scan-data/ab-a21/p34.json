@@ -1945,11 +1945,280 @@
    "h": 16
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p34-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "ose|Dose",
+   "x": 248,
+   "y": 284,
+   "w": 50,
+   "h": 22
+  },
+  {
+   "id": "p34-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "ilo|Kilo",
+   "x": 251,
+   "y": 309,
+   "w": 51,
+   "h": 22
+  },
+  {
+   "id": "p34-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d",
+   "answer": "und|Pfund",
+   "x": 242,
+   "y": 338,
+   "w": 54,
+   "h": 22
+  },
+  {
+   "id": "p34-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e",
+   "answer": "Packung",
+   "x": 244,
+   "y": 366,
+   "w": 101,
+   "h": 22
+  },
+  {
+   "id": "p34-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 f",
+   "answer": "Knoblauch",
+   "x": 271,
+   "y": 390,
+   "w": 117,
+   "h": 22
+  },
+  {
+   "id": "p34-1g",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 g",
+   "answer": "Liter",
+   "x": 610,
+   "y": 270,
+   "w": 70,
+   "h": 22
+  },
+  {
+   "id": "p34-1h",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 h",
+   "answer": "Birnen",
+   "x": 612,
+   "y": 296,
+   "w": 62,
+   "h": 22
+  },
+  {
+   "id": "p34-1i",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 i",
+   "answer": "Bananen",
+   "x": 793,
+   "y": 296,
+   "w": 101,
+   "h": 22
+  },
+  {
+   "id": "p34-1j",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 j",
+   "answer": "uark|Quark",
+   "x": 660,
+   "y": 325,
+   "w": 70,
+   "h": 22
+  },
+  {
+   "id": "p34-1k",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 k",
+   "answer": "saft|Orangensaft",
+   "x": 749,
+   "y": 389,
+   "w": 49,
+   "h": 22
+  },
+  {
+   "id": "p34-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "es|helles",
+   "x": 414,
+   "y": 573,
+   "w": 45,
+   "h": 22
+  },
+  {
+   "id": "p34-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c",
+   "answer": "en|rohen",
+   "x": 521,
+   "y": 654,
+   "w": 38,
+   "h": 22
+  },
+  {
+   "id": "p34-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d",
+   "answer": "e|fettarme",
+   "x": 879,
+   "y": 654,
+   "w": 33,
+   "h": 22
+  },
+  {
+   "id": "p34-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 e",
+   "answer": "e|weiche",
+   "x": 546,
+   "y": 707,
+   "w": 35,
+   "h": 22
+  },
+  {
+   "id": "p34-2f",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 f",
+   "answer": "en|milden",
+   "x": 842,
+   "y": 707,
+   "w": 37,
+   "h": 22
+  },
+  {
+   "id": "p34-2g",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 g",
+   "answer": "en|leckeren",
+   "x": 510,
+   "y": 733,
+   "w": 39,
+   "h": 22
+  },
+  {
+   "id": "p34-2h",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 h",
+   "answer": "en|frischen",
+   "x": 460,
+   "y": 760,
+   "w": 39,
+   "h": 22
+  },
+  {
+   "id": "p34-3a",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a",
+   "answer": "Was darf es sein",
+   "x": 364,
+   "y": 961,
+   "w": 436,
+   "h": 24
+  },
+  {
+   "id": "p34-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "Ich hätte gern",
+   "x": 188,
+   "y": 991,
+   "w": 368,
+   "h": 24
+  },
+  {
+   "id": "p34-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "Möchten Sie lieber",
+   "x": 188,
+   "y": 1016,
+   "w": 276,
+   "h": 24
+  },
+  {
+   "id": "p34-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "Wie viel darf es sein",
+   "x": 188,
+   "y": 1066,
+   "w": 422,
+   "h": 24
+  },
+  {
+   "id": "p34-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e",
+   "answer": "Möchten Sie sonst noch",
+   "x": 242,
+   "y": 1121,
+   "w": 463,
+   "h": 24
+  },
+  {
+   "id": "p34-3f",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 f",
+   "answer": "Das ist alles",
+   "x": 303,
+   "y": 1148,
+   "w": 331,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Test 1 Wörter"
+  },
+  {
+   "id": "g2",
+   "label": "Test 2 Strukturen"
+  },
+  {
+   "id": "g3",
+   "label": "Test 3 Kommunikation"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel Tests, Lektion 4 (printed p106). Test 1 blanks are partly printed: type the missing ending or the full word."
+  ]
  }
 }

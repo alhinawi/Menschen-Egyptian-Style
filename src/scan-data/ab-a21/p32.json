@@ -1819,11 +1819,313 @@
    "h": 21
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p32-10b",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 b",
+   "answer": "en|normalen",
+   "x": 279,
+   "y": 241,
+   "w": 39,
+   "h": 22
+  },
+  {
+   "id": "p32-10c1",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 c1",
+   "answer": "em|einem",
+   "x": 246,
+   "y": 269,
+   "w": 39,
+   "h": 22
+  },
+  {
+   "id": "p32-10c2",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 c2",
+   "answer": "en|kleinen",
+   "x": 331,
+   "y": 269,
+   "w": 53,
+   "h": 22
+  },
+  {
+   "id": "p32-10c3",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 c3",
+   "answer": "er|einer",
+   "x": 551,
+   "y": 269,
+   "w": 46,
+   "h": 22
+  },
+  {
+   "id": "p32-10c4",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 c4",
+   "answer": "en|netten",
+   "x": 642,
+   "y": 269,
+   "w": 43,
+   "h": 22
+  },
+  {
+   "id": "p32-10d1",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 d1",
+   "answer": "em|einem",
+   "x": 246,
+   "y": 295,
+   "w": 39,
+   "h": 22
+  },
+  {
+   "id": "p32-10d2",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 d2",
+   "answer": "en|modernen",
+   "x": 361,
+   "y": 295,
+   "w": 44,
+   "h": 22
+  },
+  {
+   "id": "p32-10e1",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 e1",
+   "answer": "em|einem",
+   "x": 246,
+   "y": 325,
+   "w": 39,
+   "h": 22
+  },
+  {
+   "id": "p32-10e2",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 e2",
+   "answer": "en|schönen",
+   "x": 343,
+   "y": 325,
+   "w": 46,
+   "h": 22
+  },
+  {
+   "id": "p32-11a",
+   "group": "g11",
+   "kind": "text",
+   "label": "11 a",
+   "answer": "e|kleine",
+   "x": 493,
+   "y": 454,
+   "w": 45,
+   "h": 22
+  },
+  {
+   "id": "p32-11b1",
+   "group": "g11",
+   "kind": "text",
+   "label": "11 b1",
+   "answer": "es|nettes",
+   "x": 373,
+   "y": 494,
+   "w": 46,
+   "h": 22
+  },
+  {
+   "id": "p32-11b2",
+   "group": "g11",
+   "kind": "text",
+   "label": "11 b2",
+   "answer": "e|schöne",
+   "x": 439,
+   "y": 520,
+   "w": 44,
+   "h": 22
+  },
+  {
+   "id": "p32-11c1",
+   "group": "g11",
+   "kind": "text",
+   "label": "11 c1",
+   "answer": "en|kleinen",
+   "x": 473,
+   "y": 560,
+   "w": 46,
+   "h": 22
+  },
+  {
+   "id": "p32-11c2",
+   "group": "g11",
+   "kind": "text",
+   "label": "11 c2",
+   "answer": "en|lustigen",
+   "x": 519,
+   "y": 588,
+   "w": 45,
+   "h": 22
+  },
+  {
+   "id": "p32-11d1",
+   "group": "g11",
+   "kind": "text",
+   "label": "11 d1",
+   "answer": "en|alten",
+   "x": 450,
+   "y": 627,
+   "w": 46,
+   "h": 22
+  },
+  {
+   "id": "p32-11d2",
+   "group": "g11",
+   "kind": "text",
+   "label": "11 d2",
+   "answer": "en|alten",
+   "x": 473,
+   "y": 653,
+   "w": 45,
+   "h": 22
+  },
+  {
+   "id": "p32-11e1",
+   "group": "g11",
+   "kind": "text",
+   "label": "11 e1",
+   "answer": "er|toller",
+   "x": 375,
+   "y": 693,
+   "w": 45,
+   "h": 22
+  },
+  {
+   "id": "p32-11e2",
+   "group": "g11",
+   "kind": "text",
+   "label": "11 e2",
+   "answer": "en|kleinen",
+   "x": 590,
+   "y": 720,
+   "w": 39,
+   "h": 22
+  },
+  {
+   "id": "p32-12b",
+   "group": "g12",
+   "kind": "text",
+   "label": "12 b",
+   "answer": "Ich hätte gern",
+   "x": 185,
+   "y": 919,
+   "w": 291,
+   "h": 24
+  },
+  {
+   "id": "p32-12c",
+   "group": "g12",
+   "kind": "text",
+   "label": "12 c",
+   "answer": "sind heute im Angebot",
+   "x": 373,
+   "y": 972,
+   "w": 293,
+   "h": 24
+  },
+  {
+   "id": "p32-12d",
+   "group": "g12",
+   "kind": "text",
+   "label": "12 d",
+   "answer": "Dann geben Sie",
+   "x": 185,
+   "y": 1026,
+   "w": 291,
+   "h": 24
+  },
+  {
+   "id": "p32-12e",
+   "group": "g12",
+   "kind": "text",
+   "label": "12 e",
+   "answer": "Wie viel darf",
+   "x": 185,
+   "y": 1052,
+   "w": 291,
+   "h": 24
+  },
+  {
+   "id": "p32-12f",
+   "group": "g12",
+   "kind": "text",
+   "label": "12 f",
+   "answer": "sonst noch etwas",
+   "x": 303,
+   "y": 1105,
+   "w": 291,
+   "h": 24
+  },
+  {
+   "id": "p32-12g",
+   "group": "g12",
+   "kind": "text",
+   "label": "12 g",
+   "answer": "Gemüse brauche ich",
+   "x": 185,
+   "y": 1133,
+   "w": 291,
+   "h": 24
+  },
+  {
+   "id": "p32-12h",
+   "group": "g12",
+   "kind": "text",
+   "label": "12 h",
+   "answer": "Meinen Sie",
+   "x": 185,
+   "y": 1184,
+   "w": 291,
+   "h": 24
+  },
+  {
+   "id": "p32-12i",
+   "group": "g12",
+   "kind": "text",
+   "label": "12 i",
+   "answer": "Das ist alles",
+   "x": 307,
+   "y": 1264,
+   "w": 293,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g10",
+   "label": "10 Endungen"
+  },
+  {
+   "id": "g11",
+   "label": "11 Auf dem Flohmarkt"
+  },
+  {
+   "id": "g12",
+   "label": "12 Ergänzen Sie das Gespräch"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungen (L4 Basistraining 10, 11, 12). Stem-letter blanks accept the ending or the full word."
+  ]
  }
 }

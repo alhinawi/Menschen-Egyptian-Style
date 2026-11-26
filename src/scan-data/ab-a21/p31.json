@@ -2134,11 +2134,225 @@
    "h": 1
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p31-5b1",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 b1",
+   "answer": "harter",
+   "x": 328,
+   "y": 312,
+   "w": 167,
+   "h": 26
+  },
+  {
+   "id": "p31-5b2",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 b2",
+   "answer": "weicher",
+   "x": 592,
+   "y": 312,
+   "w": 167,
+   "h": 26
+  },
+  {
+   "id": "p31-5c1",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 c1",
+   "answer": "italienischer",
+   "x": 328,
+   "y": 338,
+   "w": 167,
+   "h": 26
+  },
+  {
+   "id": "p31-5c2",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 c2",
+   "answer": "spanischer",
+   "x": 592,
+   "y": 338,
+   "w": 167,
+   "h": 26
+  },
+  {
+   "id": "p31-5d1",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 d1",
+   "answer": "grünen",
+   "x": 313,
+   "y": 363,
+   "w": 167,
+   "h": 26
+  },
+  {
+   "id": "p31-5d2",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 d2",
+   "answer": "gelben",
+   "x": 582,
+   "y": 363,
+   "w": 167,
+   "h": 26
+  },
+  {
+   "id": "p31-5e1",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 e1",
+   "answer": "teures",
+   "x": 328,
+   "y": 388,
+   "w": 167,
+   "h": 26
+  },
+  {
+   "id": "p31-5e2",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 e2",
+   "answer": "billiges",
+   "x": 592,
+   "y": 388,
+   "w": 167,
+   "h": 26
+  },
+  {
+   "id": "p31-6a",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 a",
+   "answer": "gekochte",
+   "x": 471,
+   "y": 582,
+   "w": 120,
+   "h": 26
+  },
+  {
+   "id": "p31-6b",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 b",
+   "answer": "kleiner",
+   "x": 483,
+   "y": 609,
+   "w": 132,
+   "h": 26
+  },
+  {
+   "id": "p31-9b",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 b",
+   "answer": "er|magerer",
+   "x": 649,
+   "y": 1250,
+   "w": 42,
+   "h": 22
+  },
+  {
+   "id": "p31-9c",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 c",
+   "answer": "e|alte",
+   "x": 343,
+   "y": 1277,
+   "w": 37,
+   "h": 22
+  },
+  {
+   "id": "p31-9d1",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 d1",
+   "answer": "e|kleine",
+   "x": 649,
+   "y": 1277,
+   "w": 42,
+   "h": 22
+  },
+  {
+   "id": "p31-9d2",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 d2",
+   "answer": "e|grüne",
+   "x": 741,
+   "y": 1277,
+   "w": 42,
+   "h": 22
+  },
+  {
+   "id": "p31-9e",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 e",
+   "answer": "es|kleines",
+   "x": 358,
+   "y": 1304,
+   "w": 46,
+   "h": 22
+  },
+  {
+   "id": "p31-9f",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 f",
+   "answer": "es|gekochtes",
+   "x": 848,
+   "y": 1304,
+   "w": 40,
+   "h": 22
+  },
+  {
+   "id": "p31-9g",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 g",
+   "answer": "en|rohen",
+   "x": 330,
+   "y": 1330,
+   "w": 38,
+   "h": 22
+  },
+  {
+   "id": "p31-9h",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 h",
+   "answer": "e|große",
+   "x": 880,
+   "y": 1330,
+   "w": 49,
+   "h": 22
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g5",
+   "label": "5 Adjektive ergänzen"
+  },
+  {
+   "id": "g6",
+   "label": "6 Gegenteil"
+  },
+  {
+   "id": "g9",
+   "label": "9 Endungen"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungen (L4 Basistraining 5, 6, 9). Ex 7 (matching lines) and ex 8 (table) are not graded."
+  ]
  }
 }
