@@ -2470,11 +2470,308 @@
    "h": 13
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p43-6a",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 a",
+   "answer": "seit",
+   "x": 406,
+   "y": 273,
+   "w": 72,
+   "h": 24
+  },
+  {
+   "id": "p43-6b",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 b",
+   "answer": "seit",
+   "x": 406,
+   "y": 328,
+   "w": 72,
+   "h": 24
+  },
+  {
+   "id": "p43-7b-seit",
+   "group": "g7",
+   "kind": "radio",
+   "label": "seit",
+   "name": "p43-7b",
+   "value": "seit",
+   "answer": "true",
+   "x": 293,
+   "y": 551,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p43-7b-fuer",
+   "group": "g7",
+   "kind": "radio",
+   "label": "fuer",
+   "name": "p43-7b",
+   "value": "fuer",
+   "answer": "false",
+   "x": 374,
+   "y": 551,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p43-7c-im",
+   "group": "g7",
+   "kind": "radio",
+   "label": "im",
+   "name": "p43-7c",
+   "value": "im",
+   "answer": "true",
+   "x": 419,
+   "y": 578,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p43-7c-am",
+   "group": "g7",
+   "kind": "radio",
+   "label": "am",
+   "name": "p43-7c",
+   "value": "am",
+   "answer": "false",
+   "x": 490,
+   "y": 578,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p43-7d-vor",
+   "group": "g7",
+   "kind": "radio",
+   "label": "vor",
+   "name": "p43-7d",
+   "value": "vor",
+   "answer": "false",
+   "x": 414,
+   "y": 605,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p43-7d-seit",
+   "group": "g7",
+   "kind": "radio",
+   "label": "seit",
+   "name": "p43-7d",
+   "value": "seit",
+   "answer": "true",
+   "x": 494,
+   "y": 605,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p43-7e-ueber",
+   "group": "g7",
+   "kind": "radio",
+   "label": "ueber",
+   "name": "p43-7e",
+   "value": "ueber",
+   "answer": "false",
+   "x": 176,
+   "y": 656,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p43-7e-nach",
+   "group": "g7",
+   "kind": "radio",
+   "label": "nach",
+   "name": "p43-7e",
+   "value": "nach",
+   "answer": "true",
+   "x": 262,
+   "y": 656,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p43-7f-vor",
+   "group": "g7",
+   "kind": "radio",
+   "label": "vor",
+   "name": "p43-7f",
+   "value": "vor",
+   "answer": "true",
+   "x": 224,
+   "y": 792,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p43-7f-seit",
+   "group": "g7",
+   "kind": "radio",
+   "label": "seit",
+   "name": "p43-7f",
+   "value": "seit",
+   "answer": "false",
+   "x": 307,
+   "y": 792,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p43-7g-in",
+   "group": "g7",
+   "kind": "radio",
+   "label": "in",
+   "name": "p43-7g",
+   "value": "in",
+   "answer": "false",
+   "x": 612,
+   "y": 843,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p43-7g-ueber",
+   "group": "g7",
+   "kind": "radio",
+   "label": "ueber",
+   "name": "p43-7g",
+   "value": "ueber",
+   "answer": "true",
+   "x": 685,
+   "y": 843,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p43-8a",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 a",
+   "answer": "nach, seit, vor|nach, vor, seit|seit, nach, vor|seit, vor, nach|vor, nach, seit|vor, seit, nach",
+   "x": 214,
+   "y": 1018,
+   "w": 240,
+   "h": 23
+  },
+  {
+   "id": "p43-8b",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 b",
+   "answer": "über, für|für, über",
+   "x": 181,
+   "y": 1082,
+   "w": 273,
+   "h": 23
+  },
+  {
+   "id": "p43-9b",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 b",
+   "answer": "ein Jahr",
+   "x": 692,
+   "y": 1213,
+   "w": 156,
+   "h": 23
+  },
+  {
+   "id": "p43-9c",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 c",
+   "answer": "einem Monat",
+   "x": 576,
+   "y": 1242,
+   "w": 144,
+   "h": 23
+  },
+  {
+   "id": "p43-9d",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 d",
+   "answer": "zehn Jahren",
+   "x": 515,
+   "y": 1266,
+   "w": 152,
+   "h": 23
+  },
+  {
+   "id": "p43-9e",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 e",
+   "answer": "eine Stunde",
+   "x": 677,
+   "y": 1296,
+   "w": 145,
+   "h": 23
+  },
+  {
+   "id": "p43-9f1",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 f1",
+   "answer": "ersten",
+   "x": 244,
+   "y": 1346,
+   "w": 166,
+   "h": 23
+  },
+  {
+   "id": "p43-9f2",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 f2",
+   "answer": "zum einunddreißigsten Juli|einunddreißigsten",
+   "x": 442,
+   "y": 1346,
+   "w": 318,
+   "h": 23
+  },
+  {
+   "id": "p43-9g",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 g",
+   "answer": "ersten September",
+   "x": 677,
+   "y": 1375,
+   "w": 292,
+   "h": 23
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g6",
+   "label": "6 Ergänzen und vergleichen Sie"
+  },
+  {
+   "id": "g7",
+   "label": "7 Was ist richtig?"
+  },
+  {
+   "id": "g8",
+   "label": "8 Ordnen Sie zu"
+  },
+  {
+   "id": "g9",
+   "label": "9 Ergänzen Sie"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungen, Lektion 6 Basistraining 6-9. Ex 8 accepts the words in any order separated by a comma. Ex 6 other columns are for the learner and are not graded."
+  ]
  }
 }

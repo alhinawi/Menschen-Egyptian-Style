@@ -1602,7 +1602,204 @@
    "h": 18
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p44-10a",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 a",
+   "answer": "Ich bin dagegen",
+   "x": 552,
+   "y": 643,
+   "w": 320,
+   "h": 23
+  },
+  {
+   "id": "p44-10b",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 b",
+   "answer": "ich etwas vorschlagen",
+   "x": 235,
+   "y": 668,
+   "w": 519,
+   "h": 23
+  },
+  {
+   "id": "p44-10c",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 c",
+   "answer": "Wie wäre es mit morgen",
+   "x": 332,
+   "y": 751,
+   "w": 467,
+   "h": 23
+  },
+  {
+   "id": "p44-10d",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 d",
+   "answer": "Was haltet ihr davon",
+   "x": 301,
+   "y": 801,
+   "w": 499,
+   "h": 23
+  },
+  {
+   "id": "p44-10e",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 e",
+   "answer": "Das machen wir",
+   "x": 270,
+   "y": 829,
+   "w": 529,
+   "h": 23
+  },
+  {
+   "id": "p44-10f",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 f",
+   "answer": "treffen wir uns morgen",
+   "x": 295,
+   "y": 906,
+   "w": 406,
+   "h": 23
+  },
+  {
+   "id": "p44-11b-1",
+   "group": "g11",
+   "kind": "radio",
+   "label": "1",
+   "name": "p44-11b",
+   "value": "1",
+   "answer": "true",
+   "x": 291,
+   "y": 1070,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p44-11b-2",
+   "group": "g11",
+   "kind": "radio",
+   "label": "2",
+   "name": "p44-11b",
+   "value": "2",
+   "answer": "false",
+   "x": 400,
+   "y": 1070,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p44-11c-1",
+   "group": "g11",
+   "kind": "radio",
+   "label": "1",
+   "name": "p44-11c",
+   "value": "1",
+   "answer": "false",
+   "x": 182,
+   "y": 1121,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p44-11c-2",
+   "group": "g11",
+   "kind": "radio",
+   "label": "2",
+   "name": "p44-11c",
+   "value": "2",
+   "answer": "true",
+   "x": 331,
+   "y": 1121,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p44-11d-1",
+   "group": "g11",
+   "kind": "radio",
+   "label": "1",
+   "name": "p44-11d",
+   "value": "1",
+   "answer": "true",
+   "x": 311,
+   "y": 1147,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p44-11d-2",
+   "group": "g11",
+   "kind": "radio",
+   "label": "2",
+   "name": "p44-11d",
+   "value": "2",
+   "answer": "false",
+   "x": 466,
+   "y": 1147,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p44-11e-1",
+   "group": "g11",
+   "kind": "radio",
+   "label": "1",
+   "name": "p44-11e",
+   "value": "1",
+   "answer": "true",
+   "x": 520,
+   "y": 1173,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p44-11e-2",
+   "group": "g11",
+   "kind": "radio",
+   "label": "2",
+   "name": "p44-11e",
+   "value": "2",
+   "answer": "false",
+   "x": 687,
+   "y": 1173,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p44-11f-1",
+   "group": "g11",
+   "kind": "radio",
+   "label": "1",
+   "name": "p44-11f",
+   "value": "1",
+   "answer": "true",
+   "x": 339,
+   "y": 1199,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p44-11f-2",
+   "group": "g11",
+   "kind": "radio",
+   "label": "2",
+   "name": "p44-11f",
+   "value": "2",
+   "answer": "false",
+   "x": 479,
+   "y": 1199,
+   "w": 22,
+   "h": 22
+  }
+ ],
  "audio": [
   {
    "id": "ab-cd1-22-44",
@@ -1614,9 +1811,20 @@
    "h": 26
   }
  ],
- "groups": [],
+ "groups": [
+  {
+   "id": "g10",
+   "label": "10 Ergänzen Sie"
+  },
+  {
+   "id": "g11",
+   "label": "11 Was ist richtig?"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungen, Lektion 6 Basistraining 10 and 11 (11a is the printed example)."
+  ]
  }
 }

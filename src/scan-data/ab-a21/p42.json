@@ -2001,7 +2001,129 @@
    "h": 21
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p42-1fest",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 fest",
+   "answer": "3",
+   "x": 156,
+   "y": 351,
+   "w": 27,
+   "h": 24
+  },
+  {
+   "id": "p42-1vortrag",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 vortrag",
+   "answer": "4",
+   "x": 379,
+   "y": 351,
+   "w": 27,
+   "h": 24
+  },
+  {
+   "id": "p42-1theater",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 theater",
+   "answer": "2",
+   "x": 827,
+   "y": 351,
+   "w": 27,
+   "h": 24
+  },
+  {
+   "id": "p42-3a",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a",
+   "answer": "am",
+   "x": 275,
+   "y": 729,
+   "w": 62,
+   "h": 23
+  },
+  {
+   "id": "p42-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "nach",
+   "x": 709,
+   "y": 757,
+   "w": 65,
+   "h": 23
+  },
+  {
+   "id": "p42-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "am",
+   "x": 340,
+   "y": 785,
+   "w": 71,
+   "h": 23
+  },
+  {
+   "id": "p42-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e",
+   "answer": "für",
+   "x": 581,
+   "y": 785,
+   "w": 60,
+   "h": 23
+  },
+  {
+   "id": "p42-3f",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 f",
+   "answer": "nach",
+   "x": 170,
+   "y": 812,
+   "w": 71,
+   "h": 23
+  },
+  {
+   "id": "p42-3g",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 g",
+   "answer": "in",
+   "x": 851,
+   "y": 812,
+   "w": 66,
+   "h": 23
+  },
+  {
+   "id": "p42-3h",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 h",
+   "answer": "am",
+   "x": 340,
+   "y": 839,
+   "w": 62,
+   "h": 23
+  },
+  {
+   "id": "p42-3i",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 i",
+   "answer": "ab",
+   "x": 535,
+   "y": 839,
+   "w": 64,
+   "h": 23
+  }
+ ],
  "audio": [
   {
    "id": "ab-cd1-21-42",
@@ -2013,9 +2135,20 @@
    "h": 26
   }
  ],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "1 Welcher Begriff passt?"
+  },
+  {
+   "id": "g3",
+   "label": "3 Ordnen Sie zu"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungen, Lektion 6 Basistraining 1 and 3. Ex 2 (strike out), Ex 4 (matching by line) and Ex 5 (partner questions) are not graded because they have no answer boxes or are open."
+  ]
  }
 }

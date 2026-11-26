@@ -2127,7 +2127,104 @@
    "h": 19
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p45-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "X",
+   "x": 433,
+   "y": 566,
+   "w": 32,
+   "h": 24
+  },
+  {
+   "id": "p45-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "1",
+   "x": 572,
+   "y": 566,
+   "w": 32,
+   "h": 24
+  },
+  {
+   "id": "p45-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d",
+   "answer": "5",
+   "x": 711,
+   "y": 566,
+   "w": 32,
+   "h": 24
+  },
+  {
+   "id": "p45-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e",
+   "answer": "3",
+   "x": 849,
+   "y": 566,
+   "w": 32,
+   "h": 24
+  },
+  {
+   "id": "p45-21-f",
+   "group": "g2",
+   "kind": "radio",
+   "label": "f",
+   "name": "p45-21",
+   "value": "f",
+   "answer": "true",
+   "x": 361,
+   "y": 1326,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p45-21-w",
+   "group": "g2",
+   "kind": "radio",
+   "label": "w",
+   "name": "p45-21",
+   "value": "w",
+   "answer": "false",
+   "x": 423,
+   "y": 1326,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p45-22-f",
+   "group": "g2",
+   "kind": "radio",
+   "label": "f",
+   "name": "p45-22",
+   "value": "f",
+   "answer": "false",
+   "x": 368,
+   "y": 1396,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p45-22-w",
+   "group": "g2",
+   "kind": "radio",
+   "label": "w",
+   "name": "p45-22",
+   "value": "w",
+   "answer": "true",
+   "x": 433,
+   "y": 1396,
+   "w": 22,
+   "h": 22
+  }
+ ],
  "audio": [
   {
    "id": "ab-cd1-23-45",
@@ -2148,9 +2245,20 @@
    "h": 26
   }
  ],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Lesen 1 Veranstaltungen"
+  },
+  {
+   "id": "g2",
+   "label": "Aussprache 2 Kreuzen Sie an"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungen, Training Lesen 1 and Aussprache 2. Aussprache 1 and 3 (listen and repeat) are not graded."
+  ]
  }
 }
