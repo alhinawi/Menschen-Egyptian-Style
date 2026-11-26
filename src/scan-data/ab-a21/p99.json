@@ -1658,11 +1658,74 @@
    "h": 13
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p99-1a",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 a",
+   "answer": "Sie Pommes haben",
+   "x": 227,
+   "y": 269,
+   "w": 592,
+   "h": 26
+  },
+  {
+   "id": "p99-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "dass es keine Pizza gibt",
+   "x": 197,
+   "y": 318,
+   "w": 622,
+   "h": 26
+  },
+  {
+   "id": "p99-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "Ich fühle mich gut",
+   "x": 281,
+   "y": 391,
+   "w": 320,
+   "h": 26
+  },
+  {
+   "id": "p99-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d",
+   "answer": "Er freut sich",
+   "x": 243,
+   "y": 416,
+   "w": 331,
+   "h": 26
+  },
+  {
+   "id": "p99-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e",
+   "answer": "auch mal eine Pizza, wenn es schnell gehen muss",
+   "x": 189,
+   "y": 514,
+   "w": 630,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Ich kann auch"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Ich kann auch: graded from the official Hueber Lösungsschlüssel. Üben/Wiederholen, Rückblick Lektion 10 ex 1 (table with sample answers) and ex 2 (write an invitation) are open and not graded."
+  ]
  }
 }

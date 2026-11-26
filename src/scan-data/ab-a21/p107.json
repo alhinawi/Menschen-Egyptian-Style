@@ -2027,6 +2027,8 @@
  "groups": [],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Answer key pages: reference only, no exercise."
+  ]
  }
 }

@@ -1644,11 +1644,155 @@
    "h": 14
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p96-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "doppelt",
+   "x": 259,
+   "y": 670,
+   "w": 232,
+   "h": 26
+  },
+  {
+   "id": "p96-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c",
+   "answer": "rund",
+   "x": 381,
+   "y": 695,
+   "w": 238,
+   "h": 26
+  },
+  {
+   "id": "p96-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d",
+   "answer": "Prozent",
+   "x": 264,
+   "y": 723,
+   "w": 245,
+   "h": 26
+  },
+  {
+   "id": "p96-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 e",
+   "answer": "Hälfte",
+   "x": 268,
+   "y": 779,
+   "w": 264,
+   "h": 26
+  },
+  {
+   "id": "p96-2f",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 f",
+   "answer": "häufiger",
+   "x": 259,
+   "y": 832,
+   "w": 248,
+   "h": 26
+  },
+  {
+   "id": "p96-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "Mitarbeiter",
+   "x": 235,
+   "y": 1138,
+   "w": 198,
+   "h": 26
+  },
+  {
+   "id": "p96-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "gratulieren",
+   "x": 524,
+   "y": 1138,
+   "w": 187,
+   "h": 26
+  },
+  {
+   "id": "p96-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "Jubiläum",
+   "x": 268,
+   "y": 1176,
+   "w": 198,
+   "h": 26
+  },
+  {
+   "id": "p96-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e",
+   "answer": "bedanken",
+   "x": 546,
+   "y": 1176,
+   "w": 193,
+   "h": 26
+  },
+  {
+   "id": "p96-3f",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 f",
+   "answer": "Arbeit",
+   "x": 199,
+   "y": 1219,
+   "w": 197,
+   "h": 26
+  },
+  {
+   "id": "p96-3g",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 g",
+   "answer": "wünschen",
+   "x": 199,
+   "y": 1297,
+   "w": 197,
+   "h": 26
+  },
+  {
+   "id": "p96-3h",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 h",
+   "answer": "Erfolg",
+   "x": 627,
+   "y": 1297,
+   "w": 198,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g2",
+   "label": "Schokolade"
+  },
+  {
+   "id": "g3",
+   "label": "Brief zum Jubiläum"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Ex 1 (sort words into the table) has no writing lines and is not graded. Key: official Hueber Lösungsschlüssel, Wiederholungsstation Wortschatz 2 and 3."
+  ]
  }
 }

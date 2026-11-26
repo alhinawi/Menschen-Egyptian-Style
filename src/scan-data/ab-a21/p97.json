@@ -2295,11 +2295,181 @@
    "h": 15
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p97-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "für unser Essen Tiere sterben müssen",
+   "x": 438,
+   "y": 319,
+   "w": 534,
+   "h": 26
+  },
+  {
+   "id": "p97-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "so viele Leute kein Fleisch mehr essen",
+   "x": 381,
+   "y": 385,
+   "w": 592,
+   "h": 26
+  },
+  {
+   "id": "p97-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d",
+   "answer": "vegetarische Lebensmittel gesünder sind",
+   "x": 317,
+   "y": 452,
+   "w": 655,
+   "h": 26
+  },
+  {
+   "id": "p97-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "sich",
+   "x": 358,
+   "y": 622,
+   "w": 56,
+   "h": 26
+  },
+  {
+   "id": "p97-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c",
+   "answer": "X|x|-",
+   "x": 281,
+   "y": 648,
+   "w": 61,
+   "h": 26
+  },
+  {
+   "id": "p97-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d",
+   "answer": "sich",
+   "x": 740,
+   "y": 648,
+   "w": 61,
+   "h": 26
+  },
+  {
+   "id": "p97-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 e",
+   "answer": "X|x|-",
+   "x": 276,
+   "y": 702,
+   "w": 58,
+   "h": 26
+  },
+  {
+   "id": "p97-2f",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 f",
+   "answer": "sich",
+   "x": 241,
+   "y": 728,
+   "w": 58,
+   "h": 26
+  },
+  {
+   "id": "p97-2g",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 g",
+   "answer": "sich",
+   "x": 592,
+   "y": 728,
+   "w": 58,
+   "h": 26
+  },
+  {
+   "id": "p97-2h",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 h",
+   "answer": "X|x|-",
+   "x": 860,
+   "y": 728,
+   "w": 59,
+   "h": 26
+  },
+  {
+   "id": "p97-4b",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 b",
+   "answer": "deshalb",
+   "x": 632,
+   "y": 1260,
+   "w": 105,
+   "h": 26
+  },
+  {
+   "id": "p97-4c",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 c",
+   "answer": "weil",
+   "x": 605,
+   "y": 1287,
+   "w": 56,
+   "h": 26
+  },
+  {
+   "id": "p97-4d",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 d",
+   "answer": "Wenn|wenn",
+   "x": 264,
+   "y": 1314,
+   "w": 105,
+   "h": 26
+  },
+  {
+   "id": "p97-4e",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 e",
+   "answer": "denn",
+   "x": 516,
+   "y": 1341,
+   "w": 145,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "dass-Sätze"
+  },
+  {
+   "id": "g2",
+   "label": "Reflexivpronomen sich"
+  },
+  {
+   "id": "g4",
+   "label": "wenn, dass, weil, denn, deshalb"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Ex 2: write X where no sich is needed (the key shows X). Ex 3 (match and write sentences) has no printed writing lines and is not graded. Key: official Hueber Lösungsschlüssel, Wiederholungsstation Grammatik 1, 2, 4."
+  ]
  }
 }

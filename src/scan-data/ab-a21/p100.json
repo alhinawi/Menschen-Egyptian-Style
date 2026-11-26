@@ -1817,6 +1817,8 @@
  "groups": [],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Rückblick tasks: take your own notes from the book texts, or write about your own experience. The answers are free text, so nothing is graded."
+  ]
  }
 }
