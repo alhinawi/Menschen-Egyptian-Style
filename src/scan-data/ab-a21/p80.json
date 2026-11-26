@@ -1728,7 +1728,217 @@
    "h": 9
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p80-9b",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 b",
+   "answer": "Moment, bitte|Moment bitte",
+   "x": 246,
+   "y": 305,
+   "w": 304,
+   "h": 26
+  },
+  {
+   "id": "p80-9c",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 c",
+   "answer": "kann ich Ihnen bringen",
+   "x": 312,
+   "y": 335,
+   "w": 295,
+   "h": 26
+  },
+  {
+   "id": "p80-9d",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 d",
+   "answer": "hätte gern",
+   "x": 220,
+   "y": 359,
+   "w": 317,
+   "h": 26
+  },
+  {
+   "id": "p80-9e",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 e",
+   "answer": "nicht mit",
+   "x": 237,
+   "y": 385,
+   "w": 312,
+   "h": 26
+  },
+  {
+   "id": "p80-9f",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 f",
+   "answer": "sondern",
+   "x": 184,
+   "y": 412,
+   "w": 307,
+   "h": 26
+  },
+  {
+   "id": "p80-9g",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 g",
+   "answer": "bringen Sie mir lieber",
+   "x": 510,
+   "y": 466,
+   "w": 314,
+   "h": 26
+  },
+  {
+   "id": "p80-11a",
+   "group": "g11",
+   "kind": "text",
+   "label": "11 a",
+   "answer": "6",
+   "x": 157,
+   "y": 900,
+   "w": 27,
+   "h": 26
+  },
+  {
+   "id": "p80-11b",
+   "group": "g11",
+   "kind": "text",
+   "label": "11 b",
+   "answer": "2",
+   "x": 157,
+   "y": 941,
+   "w": 27,
+   "h": 26
+  },
+  {
+   "id": "p80-11c",
+   "group": "g11",
+   "kind": "text",
+   "label": "11 c",
+   "answer": "4",
+   "x": 460,
+   "y": 902,
+   "w": 27,
+   "h": 26
+  },
+  {
+   "id": "p80-11d",
+   "group": "g11",
+   "kind": "text",
+   "label": "11 d",
+   "answer": "5",
+   "x": 723,
+   "y": 902,
+   "w": 27,
+   "h": 26
+  },
+  {
+   "id": "p80-11e",
+   "group": "g11",
+   "kind": "text",
+   "label": "11 e",
+   "answer": "3",
+   "x": 723,
+   "y": 943,
+   "w": 27,
+   "h": 26
+  },
+  {
+   "id": "p80-12a",
+   "group": "g12",
+   "kind": "text",
+   "label": "12 a",
+   "answer": "4,80|4.80",
+   "x": 754,
+   "y": 1192,
+   "w": 106,
+   "h": 26
+  },
+  {
+   "id": "p80-12b",
+   "group": "g12",
+   "kind": "text",
+   "label": "12 b",
+   "answer": "Steak",
+   "x": 213,
+   "y": 1218,
+   "w": 186,
+   "h": 26
+  },
+  {
+   "id": "p80-12c",
+   "group": "g12",
+   "kind": "text",
+   "label": "12 c",
+   "answer": "Pommes frites",
+   "x": 436,
+   "y": 1218,
+   "w": 185,
+   "h": 26
+  },
+  {
+   "id": "p80-12d",
+   "group": "g12",
+   "kind": "text",
+   "label": "12 d",
+   "answer": "14,50|14.50",
+   "x": 754,
+   "y": 1220,
+   "w": 106,
+   "h": 26
+  },
+  {
+   "id": "p80-12e",
+   "group": "g12",
+   "kind": "text",
+   "label": "12 e",
+   "answer": "Orangensaft",
+   "x": 213,
+   "y": 1245,
+   "w": 186,
+   "h": 26
+  },
+  {
+   "id": "p80-12f",
+   "group": "g12",
+   "kind": "text",
+   "label": "12 f",
+   "answer": "Eis",
+   "x": 274,
+   "y": 1275,
+   "w": 185,
+   "h": 26
+  },
+  {
+   "id": "p80-12g",
+   "group": "g12",
+   "kind": "text",
+   "label": "12 g",
+   "answer": "Kaffee",
+   "x": 295,
+   "y": 1304,
+   "w": 184,
+   "h": 26
+  },
+  {
+   "id": "p80-12h",
+   "group": "g12",
+   "kind": "text",
+   "label": "12 h",
+   "answer": "31,50|31.50",
+   "x": 754,
+   "y": 1339,
+   "w": 106,
+   "h": 22
+  }
+ ],
  "audio": [
   {
    "id": "ab-cd1-33-80",
@@ -1740,9 +1950,24 @@
    "h": 26
   }
  ],
- "groups": [],
+ "groups": [
+  {
+   "id": "g9",
+   "label": "Im Restaurant bestellen"
+  },
+  {
+   "id": "g11",
+   "label": "Gespräch sortieren"
+  },
+  {
+   "id": "g12",
+   "label": "Rechnung ergänzen"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel, L10 Basistraining 9, 11 and 12. Ex10 (matching without boxes) is ungraded."
+  ]
  }
 }
