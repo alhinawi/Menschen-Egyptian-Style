@@ -2071,11 +2071,96 @@
    "h": 8
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p62-9b",
+   "group": "g9",
+   "kind": "text",
+   "label": "9b",
+   "answer": "ehrlich gesagt langweilig",
+   "x": 698,
+   "y": 632,
+   "w": 266,
+   "h": 26
+  },
+  {
+   "id": "p62-9c",
+   "group": "g9",
+   "kind": "text",
+   "label": "9c",
+   "answer": "Na ja",
+   "x": 419,
+   "y": 663,
+   "w": 479,
+   "h": 26
+  },
+  {
+   "id": "p62-9d",
+   "group": "g9",
+   "kind": "text",
+   "label": "9d",
+   "answer": "interessiert mich sehr",
+   "x": 842,
+   "y": 702,
+   "w": 144,
+   "h": 26
+  },
+  {
+   "id": "p62-9e",
+   "group": "g9",
+   "kind": "text",
+   "label": "9e",
+   "answer": "ich furchtbar",
+   "x": 604,
+   "y": 761,
+   "w": 360,
+   "h": 26
+  },
+  {
+   "id": "p62-9f",
+   "group": "g9",
+   "kind": "text",
+   "label": "9f",
+   "answer": "mich überhaupt nicht",
+   "x": 598,
+   "y": 788,
+   "w": 366,
+   "h": 26
+  },
+  {
+   "id": "p62-9g",
+   "group": "g9",
+   "kind": "text",
+   "label": "9g",
+   "answer": "ich lese lieber",
+   "x": 470,
+   "y": 820,
+   "w": 302,
+   "h": 26
+  },
+  {
+   "id": "p62-9h",
+   "group": "g9",
+   "kind": "text",
+   "label": "9h",
+   "answer": "großes Interesse daran",
+   "x": 592,
+   "y": 882,
+   "w": 378,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g9",
+   "label": "9 Ordnen Sie zu"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Item 9 b-h graded from the official key. The key prints 'ehrlich gesagt total langweilig' for b but the word box says 'ehrlich gesagt langweilig'; the box wording is used. Item 9d blank starts at the end of one line, field placed there."
+  ]
  }
 }

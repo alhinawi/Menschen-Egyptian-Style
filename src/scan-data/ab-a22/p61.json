@@ -2330,11 +2330,203 @@
    "h": 10
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p61-5du",
+   "group": "g5",
+   "kind": "text",
+   "label": "5du",
+   "answer": "st",
+   "x": 291,
+   "y": 560,
+   "w": 29,
+   "h": 26
+  },
+  {
+   "id": "p61-5er",
+   "group": "g5",
+   "kind": "text",
+   "label": "5er",
+   "answer": "e",
+   "x": 293,
+   "y": 599,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p61-5wir",
+   "group": "g5",
+   "kind": "text",
+   "label": "5wir",
+   "answer": "en",
+   "x": 557,
+   "y": 536,
+   "w": 42,
+   "h": 26
+  },
+  {
+   "id": "p61-5ihr",
+   "group": "g5",
+   "kind": "text",
+   "label": "5ihr",
+   "answer": "et",
+   "x": 559,
+   "y": 564,
+   "w": 42,
+   "h": 26
+  },
+  {
+   "id": "p61-5sie",
+   "group": "g5",
+   "kind": "text",
+   "label": "5sie",
+   "answer": "en",
+   "x": 559,
+   "y": 597,
+   "w": 42,
+   "h": 26
+  },
+  {
+   "id": "p61-6b",
+   "group": "g6",
+   "kind": "text",
+   "label": "6b",
+   "answer": "konnte",
+   "x": 131,
+   "y": 816,
+   "w": 110,
+   "h": 26
+  },
+  {
+   "id": "p61-6c",
+   "group": "g6",
+   "kind": "text",
+   "label": "6c",
+   "answer": "wollte",
+   "x": 363,
+   "y": 816,
+   "w": 116,
+   "h": 26
+  },
+  {
+   "id": "p61-6d",
+   "group": "g6",
+   "kind": "text",
+   "label": "6d",
+   "answer": "mochte",
+   "x": 201,
+   "y": 868,
+   "w": 116,
+   "h": 26
+  },
+  {
+   "id": "p61-6e",
+   "group": "g6",
+   "kind": "text",
+   "label": "6e",
+   "answer": "musste",
+   "x": 201,
+   "y": 894,
+   "w": 116,
+   "h": 26
+  },
+  {
+   "id": "p61-6f",
+   "group": "g6",
+   "kind": "text",
+   "label": "6f",
+   "answer": "sollten",
+   "x": 131,
+   "y": 921,
+   "w": 110,
+   "h": 26
+  },
+  {
+   "id": "p61-6g",
+   "group": "g6",
+   "kind": "text",
+   "label": "6g",
+   "answer": "durften",
+   "x": 250,
+   "y": 947,
+   "w": 104,
+   "h": 26
+  },
+  {
+   "id": "p61-6h",
+   "group": "g6",
+   "kind": "text",
+   "label": "6h",
+   "answer": "wollte",
+   "x": 421,
+   "y": 973,
+   "w": 92,
+   "h": 26
+  },
+  {
+   "id": "p61-7b",
+   "group": "g7",
+   "kind": "text",
+   "label": "7b",
+   "answer": "Mochtet",
+   "x": 159,
+   "y": 1124,
+   "w": 100,
+   "h": 26
+  },
+  {
+   "id": "p61-7c",
+   "group": "g7",
+   "kind": "text",
+   "label": "7c",
+   "answer": "sollten",
+   "x": 193,
+   "y": 1152,
+   "w": 110,
+   "h": 26
+  },
+  {
+   "id": "p61-7d",
+   "group": "g7",
+   "kind": "text",
+   "label": "7d",
+   "answer": "durfte",
+   "x": 214,
+   "y": 1201,
+   "w": 101,
+   "h": 26
+  },
+  {
+   "id": "p61-7f",
+   "group": "g7",
+   "kind": "text",
+   "label": "7f",
+   "answer": "konnte",
+   "x": 494,
+   "y": 1313,
+   "w": 110,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g5",
+   "label": "5 Endungen"
+  },
+  {
+   "id": "g6",
+   "label": "6 Präteritum"
+  },
+  {
+   "id": "g7",
+   "label": "7 Modalverb im Präteritum"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Items 5, 6, 7b-d,f graded from the official key. Item 4 (mark words) ungraded. Item 7e: the key lists only 'wollten' although the item has two blanks; left ungraded, please do not derive."
+  ]
  }
 }

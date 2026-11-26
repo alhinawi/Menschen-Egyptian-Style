@@ -2925,11 +2925,271 @@
    "h": 10
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p64-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1b",
+   "answer": "Bilderbuch",
+   "x": 464,
+   "y": 339,
+   "w": 165,
+   "h": 26
+  },
+  {
+   "id": "p64-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1c",
+   "answer": "Gedicht",
+   "x": 419,
+   "y": 376,
+   "w": 165,
+   "h": 26
+  },
+  {
+   "id": "p64-1d1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1d1",
+   "answer": "Krimi",
+   "x": 421,
+   "y": 448,
+   "w": 140,
+   "h": 26
+  },
+  {
+   "id": "p64-1d2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1d2",
+   "answer": "Hörbuch",
+   "x": 812,
+   "y": 448,
+   "w": 159,
+   "h": 26
+  },
+  {
+   "id": "p64-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1e",
+   "answer": "Comics",
+   "x": 315,
+   "y": 505,
+   "w": 173,
+   "h": 26
+  },
+  {
+   "id": "p64-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1f",
+   "answer": "Zeitung",
+   "x": 458,
+   "y": 562,
+   "w": 165,
+   "h": 26
+  },
+  {
+   "id": "p64-2b-muss",
+   "group": "g2",
+   "kind": "radio",
+   "label": "muss",
+   "name": "p64-2b",
+   "value": "muss",
+   "answer": "true",
+   "x": 534,
+   "y": 728,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p64-2b-durf",
+   "group": "g2",
+   "kind": "radio",
+   "label": "durf",
+   "name": "p64-2b",
+   "value": "durf",
+   "answer": "false",
+   "x": 644,
+   "y": 728,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p64-2c-soll",
+   "group": "g2",
+   "kind": "radio",
+   "label": "soll",
+   "name": "p64-2c",
+   "value": "soll",
+   "answer": "false",
+   "x": 651,
+   "y": 783,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p64-2c-moch",
+   "group": "g2",
+   "kind": "radio",
+   "label": "moch",
+   "name": "p64-2c",
+   "value": "moch",
+   "answer": "true",
+   "x": 730,
+   "y": 783,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p64-2d-Moch",
+   "group": "g2",
+   "kind": "radio",
+   "label": "Moch",
+   "name": "p64-2d",
+   "value": "Moch",
+   "answer": "false",
+   "x": 216,
+   "y": 812,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p64-2d-Konn",
+   "group": "g2",
+   "kind": "radio",
+   "label": "Konn",
+   "name": "p64-2d",
+   "value": "Konn",
+   "answer": "true",
+   "x": 321,
+   "y": 812,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p64-2e-woll",
+   "group": "g2",
+   "kind": "radio",
+   "label": "woll",
+   "name": "p64-2e",
+   "value": "woll",
+   "answer": "true",
+   "x": 254,
+   "y": 839,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p64-2e-konn",
+   "group": "g2",
+   "kind": "radio",
+   "label": "konn",
+   "name": "p64-2e",
+   "value": "konn",
+   "answer": "false",
+   "x": 358,
+   "y": 839,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p64-2f-durf",
+   "group": "g2",
+   "kind": "radio",
+   "label": "durf",
+   "name": "p64-2f",
+   "value": "durf",
+   "answer": "false",
+   "x": 248,
+   "y": 865,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p64-2f-soll",
+   "group": "g2",
+   "kind": "radio",
+   "label": "soll",
+   "name": "p64-2f",
+   "value": "soll",
+   "answer": "true",
+   "x": 349,
+   "y": 865,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p64-2g-woll",
+   "group": "g2",
+   "kind": "radio",
+   "label": "woll",
+   "name": "p64-2g",
+   "value": "woll",
+   "answer": "false",
+   "x": 672,
+   "y": 891,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p64-2g-konn",
+   "group": "g2",
+   "kind": "radio",
+   "label": "konn",
+   "name": "p64-2g",
+   "value": "konn",
+   "answer": "true",
+   "x": 775,
+   "y": 891,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p64-2h-durf",
+   "group": "g2",
+   "kind": "radio",
+   "label": "durf",
+   "name": "p64-2h",
+   "value": "durf",
+   "answer": "true",
+   "x": 351,
+   "y": 944,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p64-2h-konn",
+   "group": "g2",
+   "kind": "radio",
+   "label": "konn",
+   "name": "p64-2h",
+   "value": "konn",
+   "answer": "false",
+   "x": 453,
+   "y": 944,
+   "w": 24,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Test 1 Wörter"
+  },
+  {
+   "id": "g2",
+   "label": "Test 2 Modalverben"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Test L20, graded from the book's Lösungsschlüssel Tests (AB p107). Item 1 b-f text. Item 2 radios only (which verb is right); the Präteritum endings are not graded (derivable but not keyed separately, key gives the full forms: mussten, mochte, Konntest, wollten, solltet, konnte, durfte). Item 3 (letter-gap blanks) ungraded."
+  ]
  }
 }

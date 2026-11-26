@@ -2666,11 +2666,247 @@
    "h": 8
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p58-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1b",
+   "answer": "beliebte",
+   "x": 543,
+   "y": 291,
+   "w": 275,
+   "h": 26
+  },
+  {
+   "id": "p58-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1c",
+   "answer": "Beginn",
+   "x": 403,
+   "y": 319,
+   "w": 262,
+   "h": 26
+  },
+  {
+   "id": "p58-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1d",
+   "answer": "kostenlos",
+   "x": 354,
+   "y": 346,
+   "w": 262,
+   "h": 26
+  },
+  {
+   "id": "p58-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1e",
+   "answer": "klassische",
+   "x": 183,
+   "y": 402,
+   "w": 324,
+   "h": 26
+  },
+  {
+   "id": "p58-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1f",
+   "answer": "Club",
+   "x": 403,
+   "y": 429,
+   "w": 244,
+   "h": 26
+  },
+  {
+   "id": "p58-1g",
+   "group": "g1",
+   "kind": "text",
+   "label": "1g",
+   "answer": "Publikum",
+   "x": 726,
+   "y": 429,
+   "w": 244,
+   "h": 26
+  },
+  {
+   "id": "p58-1h",
+   "group": "g1",
+   "kind": "text",
+   "label": "1h",
+   "answer": "Spaziergang",
+   "x": 372,
+   "y": 480,
+   "w": 275,
+   "h": 26
+  },
+  {
+   "id": "p58-2-2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2-2",
+   "answer": "beim",
+   "x": 403,
+   "y": 655,
+   "w": 61,
+   "h": 26
+  },
+  {
+   "id": "p58-2-3",
+   "group": "g2",
+   "kind": "text",
+   "label": "2-3",
+   "answer": "in",
+   "x": 781,
+   "y": 649,
+   "w": 92,
+   "h": 26
+  },
+  {
+   "id": "p58-2-4",
+   "group": "g2",
+   "kind": "text",
+   "label": "2-4",
+   "answer": "im",
+   "x": 523,
+   "y": 706,
+   "w": 63,
+   "h": 26
+  },
+  {
+   "id": "p58-2-5",
+   "group": "g2",
+   "kind": "text",
+   "label": "2-5",
+   "answer": "ins",
+   "x": 525,
+   "y": 733,
+   "w": 79,
+   "h": 26
+  },
+  {
+   "id": "p58-2-6",
+   "group": "g2",
+   "kind": "text",
+   "label": "2-6",
+   "answer": "aus",
+   "x": 586,
+   "y": 759,
+   "w": 46,
+   "h": 26
+  },
+  {
+   "id": "p58-2-7",
+   "group": "g2",
+   "kind": "text",
+   "label": "2-7",
+   "answer": "vom",
+   "x": 266,
+   "y": 785,
+   "w": 63,
+   "h": 26
+  },
+  {
+   "id": "p58-2-8",
+   "group": "g2",
+   "kind": "text",
+   "label": "2-8",
+   "answer": "bei",
+   "x": 470,
+   "y": 815,
+   "w": 61,
+   "h": 26
+  },
+  {
+   "id": "p58-2-9",
+   "group": "g2",
+   "kind": "text",
+   "label": "2-9",
+   "answer": "zum",
+   "x": 623,
+   "y": 840,
+   "w": 92,
+   "h": 26
+  },
+  {
+   "id": "p58-3a",
+   "group": "g3",
+   "kind": "text",
+   "label": "3a",
+   "answer": "ich weiß nicht",
+   "x": 250,
+   "y": 1028,
+   "w": 470,
+   "h": 26
+  },
+  {
+   "id": "p58-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3b",
+   "answer": "mal etwas Besonderes",
+   "x": 305,
+   "y": 1081,
+   "w": 458,
+   "h": 26
+  },
+  {
+   "id": "p58-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3c",
+   "answer": "ist doch Unsinn",
+   "x": 232,
+   "y": 1160,
+   "w": 464,
+   "h": 26
+  },
+  {
+   "id": "p58-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3d",
+   "answer": "hört sich wirklich interessant",
+   "x": 332,
+   "y": 1218,
+   "w": 462,
+   "h": 26
+  },
+  {
+   "id": "p58-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3e",
+   "answer": "probieren wir es",
+   "x": 250,
+   "y": 1248,
+   "w": 480,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Test 1 Ordnen Sie zu"
+  },
+  {
+   "id": "g2",
+   "label": "Test 2 Präpositionen"
+  },
+  {
+   "id": "g3",
+   "label": "Test 3 Ordnen Sie zu"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Test L19, graded from the book's own Lösungsschlüssel Tests (AB p107). Test 2 numbers (2) to (9): beim, in, im, ins, aus, vom, bei, zum."
+  ]
  }
 }

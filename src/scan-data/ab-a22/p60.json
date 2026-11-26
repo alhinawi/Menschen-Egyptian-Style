@@ -2036,11 +2036,210 @@
    "h": 10
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p60-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1b",
+   "answer": "Kinderbücher",
+   "x": 208,
+   "y": 363,
+   "w": 201,
+   "h": 26
+  },
+  {
+   "id": "p60-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1c",
+   "answer": "Märchen",
+   "x": 208,
+   "y": 389,
+   "w": 201,
+   "h": 26
+  },
+  {
+   "id": "p60-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1d",
+   "answer": "Comics",
+   "x": 208,
+   "y": 416,
+   "w": 201,
+   "h": 26
+  },
+  {
+   "id": "p60-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1e",
+   "answer": "Ratgeber",
+   "x": 574,
+   "y": 307,
+   "w": 220,
+   "h": 26
+  },
+  {
+   "id": "p60-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1f",
+   "answer": "Zeitungen",
+   "x": 590,
+   "y": 414,
+   "w": 204,
+   "h": 26
+  },
+  {
+   "id": "p60-1g",
+   "group": "g1",
+   "kind": "text",
+   "label": "1g",
+   "answer": "Zeitschriften",
+   "x": 590,
+   "y": 441,
+   "w": 204,
+   "h": 26
+  },
+  {
+   "id": "p60-1h",
+   "group": "g1",
+   "kind": "text",
+   "label": "1h",
+   "answer": "Hörbücher",
+   "x": 590,
+   "y": 469,
+   "w": 204,
+   "h": 26
+  },
+  {
+   "id": "p60-1i",
+   "group": "g1",
+   "kind": "text",
+   "label": "1i",
+   "answer": "Sachbücher",
+   "x": 208,
+   "y": 502,
+   "w": 201,
+   "h": 26
+  },
+  {
+   "id": "p60-1j",
+   "group": "g1",
+   "kind": "text",
+   "label": "1j",
+   "answer": "Literatur",
+   "x": 590,
+   "y": 550,
+   "w": 204,
+   "h": 26
+  },
+  {
+   "id": "p60-1k",
+   "group": "g1",
+   "kind": "text",
+   "label": "1k",
+   "answer": "Gedichte",
+   "x": 590,
+   "y": 577,
+   "w": 204,
+   "h": 26
+  },
+  {
+   "id": "p60-1l",
+   "group": "g1",
+   "kind": "text",
+   "label": "1l",
+   "answer": "Romane",
+   "x": 590,
+   "y": 604,
+   "w": 204,
+   "h": 26
+  },
+  {
+   "id": "p60-1m",
+   "group": "g1",
+   "kind": "text",
+   "label": "1m",
+   "answer": "Krimis",
+   "x": 590,
+   "y": 632,
+   "w": 204,
+   "h": 26
+  },
+  {
+   "id": "p60-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3b",
+   "answer": "mag",
+   "x": 226,
+   "y": 1175,
+   "w": 106,
+   "h": 26
+  },
+  {
+   "id": "p60-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3c",
+   "answer": "darfst",
+   "x": 452,
+   "y": 1207,
+   "w": 110,
+   "h": 26
+  },
+  {
+   "id": "p60-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3d",
+   "answer": "soll",
+   "x": 421,
+   "y": 1260,
+   "w": 110,
+   "h": 26
+  },
+  {
+   "id": "p60-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3e",
+   "answer": "können",
+   "x": 657,
+   "y": 1319,
+   "w": 106,
+   "h": 26
+  },
+  {
+   "id": "p60-3f",
+   "group": "g3",
+   "kind": "text",
+   "label": "3f",
+   "answer": "müssen",
+   "x": 442,
+   "y": 1365,
+   "w": 114,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "1 In der Buchhandlung"
+  },
+  {
+   "id": "g3",
+   "label": "3 Modalverb"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Item 1 (anagram bookshop sections) and item 3 graded from the official key. Item 2 (letters inside words) ungraded."
+  ]
  }
 }
