@@ -2309,7 +2309,177 @@
    "h": 12
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p15-12-a",
+   "group": "g1",
+   "kind": "radio",
+   "label": "a",
+   "name": "p15-12",
+   "value": "a",
+   "answer": "false",
+   "x": 138,
+   "y": 524,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p15-12-b",
+   "group": "g1",
+   "kind": "radio",
+   "label": "b",
+   "name": "p15-12",
+   "value": "b",
+   "answer": "false",
+   "x": 138,
+   "y": 551,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p15-12-c",
+   "group": "g1",
+   "kind": "radio",
+   "label": "c",
+   "name": "p15-12",
+   "value": "c",
+   "answer": "true",
+   "x": 138,
+   "y": 578,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p15-13-a",
+   "group": "g1",
+   "kind": "radio",
+   "label": "a",
+   "name": "p15-13",
+   "value": "a",
+   "answer": "false",
+   "x": 138,
+   "y": 671,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p15-13-b",
+   "group": "g1",
+   "kind": "radio",
+   "label": "b",
+   "name": "p15-13",
+   "value": "b",
+   "answer": "false",
+   "x": 138,
+   "y": 698,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p15-13-c",
+   "group": "g1",
+   "kind": "radio",
+   "label": "c",
+   "name": "p15-13",
+   "value": "c",
+   "answer": "true",
+   "x": 138,
+   "y": 725,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p15-14-a",
+   "group": "g1",
+   "kind": "radio",
+   "label": "a",
+   "name": "p15-14",
+   "value": "a",
+   "answer": "true",
+   "x": 138,
+   "y": 817,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p15-14-b",
+   "group": "g1",
+   "kind": "radio",
+   "label": "b",
+   "name": "p15-14",
+   "value": "b",
+   "answer": "false",
+   "x": 138,
+   "y": 843,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p15-14-c",
+   "group": "g1",
+   "kind": "radio",
+   "label": "c",
+   "name": "p15-14",
+   "value": "c",
+   "answer": "false",
+   "x": 138,
+   "y": 870,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p15-ra-hoert",
+   "group": "gr",
+   "kind": "radio",
+   "label": "hoert",
+   "name": "p15-ra",
+   "value": "hoert",
+   "answer": "true",
+   "x": 187,
+   "y": 1270,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p15-ra-nicht",
+   "group": "gr",
+   "kind": "radio",
+   "label": "nicht",
+   "name": "p15-ra",
+   "value": "nicht",
+   "answer": "false",
+   "x": 187,
+   "y": 1294,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p15-rb-hoert",
+   "group": "gr",
+   "kind": "radio",
+   "label": "hoert",
+   "name": "p15-rb",
+   "value": "hoert",
+   "answer": "false",
+   "x": 187,
+   "y": 1337,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p15-rb-nicht",
+   "group": "gr",
+   "kind": "radio",
+   "label": "nicht",
+   "name": "p15-rb",
+   "value": "nicht",
+   "answer": "true",
+   "x": 187,
+   "y": 1363,
+   "w": 22,
+   "h": 22
+  }
+ ],
  "audio": [
   {
    "id": "ab-cd1-07-15",
@@ -2339,9 +2509,20 @@
    "h": 26
   }
  ],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "1 Im Baumarkt"
+  },
+  {
+   "id": "gr",
+   "label": "Regel: Laut \"r\""
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungen (Ex 1 Lesen, Regel zum Laut r). Aussprache Ex 1 word marking and Ex 2 are not graded."
+  ]
  }
 }
