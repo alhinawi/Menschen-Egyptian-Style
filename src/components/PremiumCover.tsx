@@ -15,7 +15,7 @@ export function PremiumCover({src, alt}: {src: string; alt: string}) {
   const active = snapshot.ready && snapshot.page === '0' && !snapshot.grid;
   useLayoutEffect(() => {document.body.classList.toggle('fullscreenCoverActive', active); return () => document.body.classList.remove('fullscreenCoverActive');}, [active]);
   const [loaded, setLoaded] = useState(false);
-  const level = src.includes('a12') ? 'A1.2' : 'A1.1';
+  const level = src.includes('a21') ? 'A2.1' : src.includes('a12') ? 'A1.2' : 'A1.1';
   const book = src.includes('/ab-') ? 'Arbeitsbuch' : 'Kursbuch';
   const preview = previews[src as keyof typeof previews];
   const cover = <section className="bookCover fullscreenCover" aria-label={`${book} ${level} cover`}><div className="coverFrame premiumCover">
