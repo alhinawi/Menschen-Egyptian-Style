@@ -2099,11 +2099,284 @@
    "h": 17
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p54-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "zwischen",
+   "x": 509,
+   "y": 314,
+   "w": 133,
+   "h": 26
+  },
+  {
+   "id": "p54-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "über|Über",
+   "x": 539,
+   "y": 355,
+   "w": 133,
+   "h": 26
+  },
+  {
+   "id": "p54-1d1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d1",
+   "answer": "vom",
+   "x": 660,
+   "y": 394,
+   "w": 133,
+   "h": 26
+  },
+  {
+   "id": "p54-1d2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d2",
+   "answer": "an",
+   "x": 212,
+   "y": 424,
+   "w": 133,
+   "h": 26
+  },
+  {
+   "id": "p54-1e1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e1",
+   "answer": "vom",
+   "x": 653,
+   "y": 460,
+   "w": 129,
+   "h": 26
+  },
+  {
+   "id": "p54-1e2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e2",
+   "answer": "bis",
+   "x": 235,
+   "y": 487,
+   "w": 133,
+   "h": 26
+  },
+  {
+   "id": "p54-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 f",
+   "answer": "zwischen",
+   "x": 609,
+   "y": 526,
+   "w": 130,
+   "h": 26
+  },
+  {
+   "id": "p54-2a",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 a",
+   "answer": "morgens",
+   "x": 187,
+   "y": 659,
+   "w": 161,
+   "h": 26
+  },
+  {
+   "id": "p54-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "nachmittags",
+   "x": 837,
+   "y": 699,
+   "w": 149,
+   "h": 26
+  },
+  {
+   "id": "p54-2c1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c1",
+   "answer": "dienstags",
+   "x": 522,
+   "y": 763,
+   "w": 158,
+   "h": 26
+  },
+  {
+   "id": "p54-2c2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c2",
+   "answer": "donnerstags",
+   "x": 187,
+   "y": 790,
+   "w": 161,
+   "h": 26
+  },
+  {
+   "id": "p54-32",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 2",
+   "answer": "B|b",
+   "x": 928,
+   "y": 973,
+   "w": 32,
+   "h": 29
+  },
+  {
+   "id": "p54-33",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 3",
+   "answer": "A|a",
+   "x": 928,
+   "y": 1000,
+   "w": 32,
+   "h": 29
+  },
+  {
+   "id": "p54-34",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 4",
+   "answer": "B|b",
+   "x": 928,
+   "y": 1026,
+   "w": 32,
+   "h": 29
+  },
+  {
+   "id": "p54-35",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 5",
+   "answer": "C|c",
+   "x": 928,
+   "y": 1049,
+   "w": 32,
+   "h": 29
+  },
+  {
+   "id": "p54-36",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 6",
+   "answer": "A|a",
+   "x": 928,
+   "y": 1102,
+   "w": 32,
+   "h": 29
+  },
+  {
+   "id": "p54-4k-ich",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 k-ich",
+   "answer": "könnte",
+   "x": 735,
+   "y": 1206,
+   "w": 132,
+   "h": 26
+  },
+  {
+   "id": "p54-4k-du",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 k-du",
+   "answer": "könntest",
+   "x": 735,
+   "y": 1237,
+   "w": 132,
+   "h": 26
+  },
+  {
+   "id": "p54-4k-wir",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 k-wir",
+   "answer": "könnten",
+   "x": 735,
+   "y": 1298,
+   "w": 132,
+   "h": 26
+  },
+  {
+   "id": "p54-4k-ihr",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 k-ihr",
+   "answer": "könntet",
+   "x": 735,
+   "y": 1328,
+   "w": 132,
+   "h": 26
+  },
+  {
+   "id": "p54-4k-sie",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 k-sie",
+   "answer": "könnten",
+   "x": 735,
+   "y": 1359,
+   "w": 132,
+   "h": 26
+  },
+  {
+   "id": "p54-4s-du",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 s-du",
+   "answer": "solltest",
+   "x": 867,
+   "y": 1237,
+   "w": 131,
+   "h": 26
+  },
+  {
+   "id": "p54-4s-sie",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 s-sie",
+   "answer": "sollten",
+   "x": 867,
+   "y": 1359,
+   "w": 131,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Ordnen Sie zu"
+  },
+  {
+   "id": "g2",
+   "label": "Wie kann man noch sagen"
+  },
+  {
+   "id": "g3",
+   "label": "Welches Bild passt"
+  },
+  {
+   "id": "g4",
+   "label": "Tabelle"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel, Lektion 7 Basistraining ex1-4."
+  ]
  }
 }

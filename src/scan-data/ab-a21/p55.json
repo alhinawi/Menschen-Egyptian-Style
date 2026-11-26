@@ -1819,11 +1819,111 @@
    "h": 12
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p55-5b",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 b",
+   "answer": "wir könnten auch einen Tauchkurs machen|wir könnten auch einen Tauchkurs machen.",
+   "x": 284,
+   "y": 285,
+   "w": 579,
+   "h": 26
+  },
+  {
+   "id": "p55-5c",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 c",
+   "answer": "sollten Sie keine Nudeln mehr essen|sollten Sie keine Nudeln mehr essen.",
+   "x": 243,
+   "y": 350,
+   "w": 724,
+   "h": 26
+  },
+  {
+   "id": "p55-5d",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 d",
+   "answer": "könntet ihr freitags auch zum Lauftraining kommen|könntet ihr freitags auch zum Lauftraining kommen.",
+   "x": 369,
+   "y": 416,
+   "w": 598,
+   "h": 26
+  },
+  {
+   "id": "p55-5e",
+   "group": "g5",
+   "kind": "text",
+   "label": "5 e",
+   "answer": "sollten regelmäßig Sport machen|sollten regelmäßig Sport machen.",
+   "x": 214,
+   "y": 483,
+   "w": 753,
+   "h": 26
+  },
+  {
+   "id": "p55-7b",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 b",
+   "answer": "An deiner Stelle würde",
+   "x": 193,
+   "y": 1132,
+   "w": 317,
+   "h": 26
+  },
+  {
+   "id": "p55-7c",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 c",
+   "answer": "Wie wäre es mit",
+   "x": 473,
+   "y": 1211,
+   "w": 318,
+   "h": 26
+  },
+  {
+   "id": "p55-7d",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 d",
+   "answer": "Sie sollten",
+   "x": 193,
+   "y": 1291,
+   "w": 317,
+   "h": 26
+  },
+  {
+   "id": "p55-7e",
+   "group": "g7",
+   "kind": "text",
+   "label": "7 e",
+   "answer": "Du könntest",
+   "x": 346,
+   "y": 1371,
+   "w": 318,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g5",
+   "label": "Sortieren Sie die Sätze"
+  },
+  {
+   "id": "g7",
+   "label": "Ordnen Sie zu"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel, Lektion 7 Basistraining ex5 and ex7. Ex6 (sort the sports into lists) left ungraded."
+  ]
  }
 }

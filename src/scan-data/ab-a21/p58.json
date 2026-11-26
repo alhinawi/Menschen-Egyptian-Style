@@ -2400,11 +2400,273 @@
    "h": 16
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p58-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "hebe",
+   "x": 472,
+   "y": 259,
+   "w": 132,
+   "h": 26
+  },
+  {
+   "id": "p58-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 c",
+   "answer": "abnehme|abnehmen",
+   "x": 374,
+   "y": 285,
+   "w": 138,
+   "h": 26
+  },
+  {
+   "id": "p58-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 d",
+   "answer": "wiege",
+   "x": 583,
+   "y": 285,
+   "w": 144,
+   "h": 26
+  },
+  {
+   "id": "p58-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e",
+   "answer": "empfehle|empfehlen",
+   "x": 697,
+   "y": 339,
+   "w": 138,
+   "h": 26
+  },
+  {
+   "id": "p58-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 f",
+   "answer": "öffnen",
+   "x": 496,
+   "y": 363,
+   "w": 143,
+   "h": 26
+  },
+  {
+   "id": "p58-1g",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 g",
+   "answer": "teilnehmen",
+   "x": 409,
+   "y": 416,
+   "w": 136,
+   "h": 26
+  },
+  {
+   "id": "p58-2b1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b1",
+   "answer": "Von|von",
+   "x": 185,
+   "y": 546,
+   "w": 104,
+   "h": 26
+  },
+  {
+   "id": "p58-2b2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b2",
+   "answer": "an",
+   "x": 336,
+   "y": 546,
+   "w": 104,
+   "h": 26
+  },
+  {
+   "id": "p58-2c1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c1",
+   "answer": "Von|von",
+   "x": 185,
+   "y": 574,
+   "w": 104,
+   "h": 26
+  },
+  {
+   "id": "p58-2c2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c2",
+   "answer": "bis",
+   "x": 384,
+   "y": 574,
+   "w": 105,
+   "h": 26
+  },
+  {
+   "id": "p58-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d",
+   "answer": "zwischen",
+   "x": 353,
+   "y": 603,
+   "w": 103,
+   "h": 26
+  },
+  {
+   "id": "p58-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 e",
+   "answer": "seit",
+   "x": 304,
+   "y": 628,
+   "w": 103,
+   "h": 26
+  },
+  {
+   "id": "p58-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b",
+   "answer": "ten|sollten",
+   "x": 612,
+   "y": 774,
+   "w": 32,
+   "h": 26
+  },
+  {
+   "id": "p58-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 c",
+   "answer": "te|sollte",
+   "x": 438,
+   "y": 799,
+   "w": 32,
+   "h": 26
+  },
+  {
+   "id": "p58-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 d",
+   "answer": "te|könnte",
+   "x": 381,
+   "y": 825,
+   "w": 32,
+   "h": 26
+  },
+  {
+   "id": "p58-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 e",
+   "answer": "test|solltest",
+   "x": 362,
+   "y": 876,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p58-3f",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 f",
+   "answer": "tet|könntet",
+   "x": 727,
+   "y": 876,
+   "w": 32,
+   "h": 26
+  },
+  {
+   "id": "p58-4a",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 a",
+   "answer": "möchte gern",
+   "x": 295,
+   "y": 1063,
+   "w": 253,
+   "h": 26
+  },
+  {
+   "id": "p58-4b",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 b",
+   "answer": "würden Sie uns",
+   "x": 297,
+   "y": 1091,
+   "w": 260,
+   "h": 26
+  },
+  {
+   "id": "p58-4c",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 c",
+   "answer": "wie wäre",
+   "x": 268,
+   "y": 1143,
+   "w": 263,
+   "h": 26
+  },
+  {
+   "id": "p58-4d",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 d",
+   "answer": "könnte er",
+   "x": 180,
+   "y": 1168,
+   "w": 255,
+   "h": 26
+  },
+  {
+   "id": "p58-4e",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 e",
+   "answer": "Sie könnten",
+   "x": 180,
+   "y": 1195,
+   "w": 255,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Fit und gesund"
+  },
+  {
+   "id": "g2",
+   "label": "seit, über, von an, von bis, zwischen"
+  },
+  {
+   "id": "g3",
+   "label": "Endungen"
+  },
+  {
+   "id": "g4",
+   "label": "Gespräch"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel Tests, Lektion 7 (printed p106)."
+  ]
  }
 }

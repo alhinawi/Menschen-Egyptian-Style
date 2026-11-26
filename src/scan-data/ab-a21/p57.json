@@ -1938,7 +1938,30 @@
    "h": 13
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p57-2a",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 a",
+   "answer": "ach",
+   "x": 821,
+   "y": 1132,
+   "w": 56,
+   "h": 26
+  },
+  {
+   "id": "p57-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "ich",
+   "x": 915,
+   "y": 1159,
+   "w": 56,
+   "h": 26
+  }
+ ],
  "audio": [
   {
    "id": "ab-cd1-25-57",
@@ -1968,9 +1991,16 @@
    "h": 26
   }
  ],
- "groups": [],
+ "groups": [
+  {
+   "id": "g2",
+   "label": "Aussprache Regel"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel, Lektion 7 Aussprache ex2. Sprechen exercises and Aussprache 1 (colour marking) left ungraded."
+  ]
  }
 }

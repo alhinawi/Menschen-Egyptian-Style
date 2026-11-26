@@ -2442,11 +2442,52 @@
    "h": 17
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p56-82",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 2",
+   "answer": "Yoga",
+   "x": 192,
+   "y": 975,
+   "w": 269,
+   "h": 26
+  },
+  {
+   "id": "p56-83",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 3",
+   "answer": "Laufen",
+   "x": 358,
+   "y": 1069,
+   "w": 269,
+   "h": 26
+  },
+  {
+   "id": "p56-84",
+   "group": "g8",
+   "kind": "text",
+   "label": "8 4",
+   "answer": "Handball",
+   "x": 491,
+   "y": 1135,
+   "w": 271,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g8",
+   "label": "Alster Turn- und Sportverein"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel, Lektion 7 Basistraining ex8a. Ex8b and ex9 are open and left ungraded."
+  ]
  }
 }
