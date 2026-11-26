@@ -666,5 +666,24 @@
     ],
     "bodyAttrs": {},
     "reactExercises": false
+  },
+  "kb-a21-m1.html": {
+    "slug": "kb-a21-m1",
+    "title": "Menschen A2.1 · Kursbuch · Lektion 1",
+    "reader": true,
+    "themes": true,
+    "styles": [],
+    "initializers": [
+      "glossary",
+      "pronunciation-index",
+      "base-vocab",
+      "meanings",
+      "kb-a21-words",
+      "kb-a21"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true,
+    "batchcss": true,
+    "bookcss": true
   }
 }
