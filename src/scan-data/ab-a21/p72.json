@@ -1896,11 +1896,41 @@
    "h": 17
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p72-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 b",
+   "answer": "Krankenhaus|rankenhaus",
+   "x": 203,
+   "y": 355,
+   "w": 178,
+   "h": 26
+  },
+  {
+   "id": "p72-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1 e",
+   "answer": "Verband|erband",
+   "x": 811,
+   "y": 434,
+   "w": 100,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Ergänzen Sie das Gespräch"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungsschlüssel, Wiederholungsstation Wortschatz ex1 (b, e). Ex1 c and d have interleaved printed letters and are ungraded. Ex2 riddle table: key wording varies per cell, ungraded."
+  ]
  }
 }
