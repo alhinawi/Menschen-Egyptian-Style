@@ -1817,6 +1817,8 @@
  "groups": [],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Schreiben, Fehler-Liste and Aussprache have no official key (individual or no solution); left ungraded."
+  ]
  }
 }

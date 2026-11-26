@@ -1812,11 +1812,188 @@
    "h": 8
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p12-2a",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 a",
+   "answer": "Empfänger",
+   "x": 190,
+   "y": 517,
+   "w": 220,
+   "h": 26
+  },
+  {
+   "id": "p12-2b1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b Nummer",
+   "answer": "3",
+   "x": 280,
+   "y": 549,
+   "w": 36,
+   "h": 26
+  },
+  {
+   "id": "p12-2b2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b verschiedene",
+   "answer": "verschiedene",
+   "x": 190,
+   "y": 574,
+   "w": 220,
+   "h": 26
+  },
+  {
+   "id": "p12-2b3",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b ankreuzen",
+   "answer": "ankreuzen",
+   "x": 190,
+   "y": 601,
+   "w": 220,
+   "h": 26
+  },
+  {
+   "id": "p12-2c1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c Nummer",
+   "answer": "1",
+   "x": 280,
+   "y": 626,
+   "w": 36,
+   "h": 26
+  },
+  {
+   "id": "p12-2c2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c Gebrauchsanweisung",
+   "answer": "Gebrauchsanweisung",
+   "x": 400,
+   "y": 626,
+   "w": 200,
+   "h": 26
+  },
+  {
+   "id": "p12-2c3",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c Schritt",
+   "answer": "Schritt",
+   "x": 190,
+   "y": 679,
+   "w": 220,
+   "h": 26
+  },
+  {
+   "id": "p12-2c4",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c schließlich",
+   "answer": "schließlich",
+   "x": 540,
+   "y": 739,
+   "w": 200,
+   "h": 26
+  },
+  {
+   "id": "p12-2d1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d Nummer",
+   "answer": "4",
+   "x": 280,
+   "y": 791,
+   "w": 36,
+   "h": 26
+  },
+  {
+   "id": "p12-2d2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d Unterschrift",
+   "answer": "Unterschrift",
+   "x": 475,
+   "y": 791,
+   "w": 205,
+   "h": 26
+  },
+  {
+   "id": "p12-31",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a sentence 1",
+   "answer": "6",
+   "x": 161,
+   "y": 997,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "id": "p12-32",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a sentence 2",
+   "answer": "4",
+   "x": 161,
+   "y": 1023,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "id": "p12-33",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a sentence 3",
+   "answer": "3",
+   "x": 161,
+   "y": 1050,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "id": "p12-34",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a sentence 4",
+   "answer": "1",
+   "x": 161,
+   "y": 1077,
+   "w": 30,
+   "h": 30
+  },
+  {
+   "id": "p12-35",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 a sentence 5",
+   "answer": "2",
+   "x": 161,
+   "y": 1105,
+   "w": 30,
+   "h": 30
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g2",
+   "label": "2 Welches Bild passt?"
+  },
+  {
+   "id": "g3",
+   "label": "3 a Ordnen Sie zu"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "1 (cross out the wrong word) has no field type on the page and is left ungraded."
+  ]
  }
 }

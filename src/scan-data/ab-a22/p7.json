@@ -2645,11 +2645,227 @@
    "h": 10
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p7-31",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b einmal",
+   "answer": "als",
+   "x": 725,
+   "y": 207,
+   "w": 60,
+   "h": 24
+  },
+  {
+   "id": "p7-32",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b häufig",
+   "answer": "wenn",
+   "x": 725,
+   "y": 240,
+   "w": 60,
+   "h": 24
+  },
+  {
+   "id": "p7-4a",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 a",
+   "answer": "als",
+   "x": 420,
+   "y": 423,
+   "w": 55,
+   "h": 26
+  },
+  {
+   "id": "p7-4b",
+   "group": "g4",
+   "kind": "text",
+   "label": "4 b",
+   "answer": "Wenn",
+   "x": 305,
+   "y": 504,
+   "w": 60,
+   "h": 26
+  },
+  {
+   "id": "p7-5b-Wenn",
+   "group": "g5",
+   "kind": "radio",
+   "label": "Wenn",
+   "name": "p7-5b",
+   "value": "Wenn",
+   "answer": "false",
+   "x": 156,
+   "y": 726,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p7-5b-Als",
+   "group": "g5",
+   "kind": "radio",
+   "label": "Als",
+   "name": "p7-5b",
+   "value": "Als",
+   "answer": "true",
+   "x": 260,
+   "y": 726,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p7-5c-wenn",
+   "group": "g5",
+   "kind": "radio",
+   "label": "wenn",
+   "name": "p7-5c",
+   "value": "wenn",
+   "answer": "true",
+   "x": 243,
+   "y": 754,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p7-5c-als",
+   "group": "g5",
+   "kind": "radio",
+   "label": "als",
+   "name": "p7-5c",
+   "value": "als",
+   "answer": "false",
+   "x": 345,
+   "y": 754,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p7-5d-wenn",
+   "group": "g5",
+   "kind": "radio",
+   "label": "wenn",
+   "name": "p7-5d",
+   "value": "wenn",
+   "answer": "true",
+   "x": 453,
+   "y": 780,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p7-5d-als",
+   "group": "g5",
+   "kind": "radio",
+   "label": "als",
+   "name": "p7-5d",
+   "value": "als",
+   "answer": "false",
+   "x": 555,
+   "y": 780,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p7-5e-wenn",
+   "group": "g5",
+   "kind": "radio",
+   "label": "wenn",
+   "name": "p7-5e",
+   "value": "wenn",
+   "answer": "false",
+   "x": 373,
+   "y": 808,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p7-5e-als",
+   "group": "g5",
+   "kind": "radio",
+   "label": "als",
+   "name": "p7-5e",
+   "value": "als",
+   "answer": "true",
+   "x": 475,
+   "y": 808,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p7-5f-wenn",
+   "group": "g5",
+   "kind": "radio",
+   "label": "wenn",
+   "name": "p7-5f",
+   "value": "wenn",
+   "answer": "true",
+   "x": 623,
+   "y": 835,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p7-5f-als",
+   "group": "g5",
+   "kind": "radio",
+   "label": "als",
+   "name": "p7-5f",
+   "value": "als",
+   "answer": "false",
+   "x": 725,
+   "y": 835,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p7-5g-Wenn",
+   "group": "g5",
+   "kind": "radio",
+   "label": "Wenn",
+   "name": "p7-5g",
+   "value": "Wenn",
+   "answer": "true",
+   "x": 156,
+   "y": 890,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p7-5g-Als",
+   "group": "g5",
+   "kind": "radio",
+   "label": "Als",
+   "name": "p7-5g",
+   "value": "Als",
+   "answer": "false",
+   "x": 260,
+   "y": 890,
+   "w": 24,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g3",
+   "label": "3 b Regel"
+  },
+  {
+   "id": "g4",
+   "label": "4 Ergänzen"
+  },
+  {
+   "id": "g5",
+   "label": "5 als oder wenn"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "6 is sentence writing (several correct word orders); left ungraded. 5 a is the printed example."
+  ]
  }
 }

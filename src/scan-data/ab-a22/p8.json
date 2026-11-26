@@ -3030,11 +3030,171 @@
    "h": 10
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p8-7a-richtig",
+   "group": "g7",
+   "kind": "radio",
+   "label": "richtig",
+   "name": "p8-7a",
+   "value": "richtig",
+   "answer": "true",
+   "x": 801,
+   "y": 520,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p8-7a-falsch",
+   "group": "g7",
+   "kind": "radio",
+   "label": "falsch",
+   "name": "p8-7a",
+   "value": "falsch",
+   "answer": "false",
+   "x": 881,
+   "y": 520,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p8-7b-richtig",
+   "group": "g7",
+   "kind": "radio",
+   "label": "richtig",
+   "name": "p8-7b",
+   "value": "richtig",
+   "answer": "false",
+   "x": 801,
+   "y": 548,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p8-7b-falsch",
+   "group": "g7",
+   "kind": "radio",
+   "label": "falsch",
+   "name": "p8-7b",
+   "value": "falsch",
+   "answer": "true",
+   "x": 881,
+   "y": 548,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p8-7c-richtig",
+   "group": "g7",
+   "kind": "radio",
+   "label": "richtig",
+   "name": "p8-7c",
+   "value": "richtig",
+   "answer": "true",
+   "x": 801,
+   "y": 576,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p8-7c-falsch",
+   "group": "g7",
+   "kind": "radio",
+   "label": "falsch",
+   "name": "p8-7c",
+   "value": "falsch",
+   "answer": "false",
+   "x": 881,
+   "y": 576,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p8-7d-richtig",
+   "group": "g7",
+   "kind": "radio",
+   "label": "richtig",
+   "name": "p8-7d",
+   "value": "richtig",
+   "answer": "false",
+   "x": 801,
+   "y": 604,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p8-7d-falsch",
+   "group": "g7",
+   "kind": "radio",
+   "label": "falsch",
+   "name": "p8-7d",
+   "value": "falsch",
+   "answer": "true",
+   "x": 881,
+   "y": 604,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p8-10a1",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 a Tests ...",
+   "answer": "helfen mir gar nicht",
+   "x": 340,
+   "y": 1261,
+   "w": 330,
+   "h": 26
+  },
+  {
+   "id": "p8-10a2",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 a vieles wieder. ...",
+   "answer": "Ich finde es wichtig",
+   "x": 338,
+   "y": 1292,
+   "w": 330,
+   "h": 26
+  },
+  {
+   "id": "p8-10b1",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 b",
+   "answer": "Ich muss",
+   "x": 200,
+   "y": 1347,
+   "w": 330,
+   "h": 26
+  },
+  {
+   "id": "p8-10b2",
+   "group": "g10",
+   "kind": "text",
+   "label": "10 b Für mich ...",
+   "answer": "gibt es nur einen Weg",
+   "x": 298,
+   "y": 1397,
+   "w": 322,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g7",
+   "label": "7 Richtig oder falsch?"
+  },
+  {
+   "id": "g10",
+   "label": "10 Ordnen Sie zu"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "8 is a gap-fill with many single letters inside words; left ungraded. 9 is free writing."
+  ]
  }
 }

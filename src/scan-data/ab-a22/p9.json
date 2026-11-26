@@ -2253,11 +2253,115 @@
    "h": 10
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p9-11",
+   "group": "g1",
+   "kind": "text",
+   "label": "ending 1",
+   "answer": "lich",
+   "x": 177,
+   "y": 872,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "p9-12",
+   "group": "g1",
+   "kind": "text",
+   "label": "ending 2",
+   "answer": "ig",
+   "x": 177,
+   "y": 902,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "p9-13",
+   "group": "g1",
+   "kind": "text",
+   "label": "ending 3",
+   "answer": "lich",
+   "x": 177,
+   "y": 931,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "p9-14",
+   "group": "g1",
+   "kind": "text",
+   "label": "ending 4",
+   "answer": "lich",
+   "x": 352,
+   "y": 872,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "p9-15",
+   "group": "g1",
+   "kind": "text",
+   "label": "ending 5",
+   "answer": "ig",
+   "x": 352,
+   "y": 902,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "p9-16",
+   "group": "g1",
+   "kind": "text",
+   "label": "ending 6",
+   "answer": "ig",
+   "x": 352,
+   "y": 931,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "p9-2x--ig",
+   "group": "g2",
+   "kind": "radio",
+   "label": "-ig",
+   "name": "p9-2x",
+   "value": "-ig",
+   "answer": "false",
+   "x": 243,
+   "y": 1086,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p9-2x--ich",
+   "group": "g2",
+   "kind": "radio",
+   "label": "-ich",
+   "name": "p9-2x",
+   "value": "-ich",
+   "answer": "true",
+   "x": 301,
+   "y": 1086,
+   "w": 24,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Aussprache 1 a -ig oder -lich"
+  },
+  {
+   "id": "g2",
+   "label": "Aussprache 1 b Regel"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Training Sprechen 1 a/b and Aussprache 2, 3 are free speaking, listening or marking tasks; left ungraded."
+  ]
  }
 }

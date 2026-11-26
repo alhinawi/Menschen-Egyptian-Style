@@ -1609,11 +1609,434 @@
    "h": 10
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p13-33-0",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b row 3",
+   "answer": "Pro Tag",
+   "x": 165,
+   "y": 293,
+   "w": 205,
+   "h": 26
+  },
+  {
+   "id": "p13-33-1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b row 3",
+   "answer": "werden",
+   "x": 395,
+   "y": 293,
+   "w": 155,
+   "h": 26
+  },
+  {
+   "id": "p13-33-2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b row 3",
+   "answer": "ungefähr 7,2 Millionen Pakete",
+   "x": 560,
+   "y": 293,
+   "w": 250,
+   "h": 26
+  },
+  {
+   "id": "p13-33-3",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b row 3",
+   "answer": "verschickt",
+   "x": 820,
+   "y": 293,
+   "w": 160,
+   "h": 26
+  },
+  {
+   "id": "p13-35-0",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b row 5",
+   "answer": "Die Lebkuchen",
+   "x": 165,
+   "y": 358,
+   "w": 205,
+   "h": 26
+  },
+  {
+   "id": "p13-35-1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b row 5",
+   "answer": "werden",
+   "x": 395,
+   "y": 358,
+   "w": 155,
+   "h": 26
+  },
+  {
+   "id": "p13-35-2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b row 5",
+   "answer": "20 Minuten",
+   "x": 560,
+   "y": 358,
+   "w": 250,
+   "h": 26
+  },
+  {
+   "id": "p13-35-3",
+   "group": "g3",
+   "kind": "text",
+   "label": "3 b row 5",
+   "answer": "gebacken",
+   "x": 820,
+   "y": 358,
+   "w": 160,
+   "h": 26
+  },
+  {
+   "id": "p13-5L0i",
+   "group": "g5",
+   "kind": "text",
+   "label": "Infinitiv",
+   "answer": "ankreuzen",
+   "x": 145,
+   "y": 1032,
+   "w": 195,
+   "h": 26
+  },
+  {
+   "id": "p13-5L0p",
+   "group": "g5",
+   "kind": "text",
+   "label": "Partizip",
+   "answer": "angekreuzt",
+   "x": 355,
+   "y": 1032,
+   "w": 195,
+   "h": 26
+  },
+  {
+   "id": "p13-5L1i",
+   "group": "g5",
+   "kind": "text",
+   "label": "Infinitiv",
+   "answer": "verstehen",
+   "x": 145,
+   "y": 1062,
+   "w": 195,
+   "h": 26
+  },
+  {
+   "id": "p13-5L1p",
+   "group": "g5",
+   "kind": "text",
+   "label": "Partizip",
+   "answer": "verstanden",
+   "x": 355,
+   "y": 1062,
+   "w": 195,
+   "h": 26
+  },
+  {
+   "id": "p13-5L2i",
+   "group": "g5",
+   "kind": "text",
+   "label": "Infinitiv",
+   "answer": "unterschreiben",
+   "x": 145,
+   "y": 1092,
+   "w": 195,
+   "h": 26
+  },
+  {
+   "id": "p13-5L2p",
+   "group": "g5",
+   "kind": "text",
+   "label": "Partizip",
+   "answer": "unterschrieben",
+   "x": 355,
+   "y": 1092,
+   "w": 195,
+   "h": 26
+  },
+  {
+   "id": "p13-5L3i",
+   "group": "g5",
+   "kind": "text",
+   "label": "Infinitiv",
+   "answer": "öffnen",
+   "x": 145,
+   "y": 1122,
+   "w": 195,
+   "h": 26
+  },
+  {
+   "id": "p13-5L3p",
+   "group": "g5",
+   "kind": "text",
+   "label": "Partizip",
+   "answer": "geöffnet",
+   "x": 355,
+   "y": 1122,
+   "w": 195,
+   "h": 26
+  },
+  {
+   "id": "p13-5R0i",
+   "group": "g5",
+   "kind": "text",
+   "label": "Infinitiv",
+   "answer": "kleben",
+   "x": 565,
+   "y": 1002,
+   "w": 195,
+   "h": 26
+  },
+  {
+   "id": "p13-5R0p",
+   "group": "g5",
+   "kind": "text",
+   "label": "Partizip",
+   "answer": "geklebt",
+   "x": 775,
+   "y": 1002,
+   "w": 195,
+   "h": 26
+  },
+  {
+   "id": "p13-5R1i",
+   "group": "g5",
+   "kind": "text",
+   "label": "Infinitiv",
+   "answer": "bringen",
+   "x": 565,
+   "y": 1032,
+   "w": 195,
+   "h": 26
+  },
+  {
+   "id": "p13-5R1p",
+   "group": "g5",
+   "kind": "text",
+   "label": "Partizip",
+   "answer": "gebracht",
+   "x": 775,
+   "y": 1032,
+   "w": 195,
+   "h": 26
+  },
+  {
+   "id": "p13-5R2i",
+   "group": "g5",
+   "kind": "text",
+   "label": "Infinitiv",
+   "answer": "ausfüllen",
+   "x": 565,
+   "y": 1062,
+   "w": 195,
+   "h": 26
+  },
+  {
+   "id": "p13-5R2p",
+   "group": "g5",
+   "kind": "text",
+   "label": "Partizip",
+   "answer": "ausgefüllt",
+   "x": 775,
+   "y": 1062,
+   "w": 195,
+   "h": 26
+  },
+  {
+   "id": "p13-5R3i",
+   "group": "g5",
+   "kind": "text",
+   "label": "Infinitiv",
+   "answer": "wiegen",
+   "x": 565,
+   "y": 1092,
+   "w": 195,
+   "h": 26
+  },
+  {
+   "id": "p13-5R3p",
+   "group": "g5",
+   "kind": "text",
+   "label": "Partizip",
+   "answer": "gewogen",
+   "x": 775,
+   "y": 1092,
+   "w": 195,
+   "h": 26
+  },
+  {
+   "id": "p13-5R4i",
+   "group": "g5",
+   "kind": "text",
+   "label": "Infinitiv",
+   "answer": "korrigieren",
+   "x": 565,
+   "y": 1122,
+   "w": 195,
+   "h": 26
+  },
+  {
+   "id": "p13-5R4p",
+   "group": "g5",
+   "kind": "text",
+   "label": "Partizip",
+   "answer": "korrigiert",
+   "x": 775,
+   "y": 1122,
+   "w": 195,
+   "h": 26
+  },
+  {
+   "id": "p13-6a2",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 a2",
+   "answer": "geschrieben",
+   "x": 340,
+   "y": 1275,
+   "w": 140,
+   "h": 26
+  },
+  {
+   "id": "p13-6b1",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 b1",
+   "answer": "wird",
+   "x": 208,
+   "y": 1303,
+   "w": 162,
+   "h": 26
+  },
+  {
+   "id": "p13-6c1",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 c1",
+   "answer": "wird",
+   "x": 248,
+   "y": 1330,
+   "w": 77,
+   "h": 26
+  },
+  {
+   "id": "p13-6c2",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 c2",
+   "answer": "gewogen",
+   "x": 445,
+   "y": 1330,
+   "w": 145,
+   "h": 26
+  },
+  {
+   "id": "p13-6d1",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 d1",
+   "answer": "wird",
+   "x": 225,
+   "y": 1357,
+   "w": 75,
+   "h": 26
+  },
+  {
+   "id": "p13-6d2",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 d2",
+   "answer": "geklebt",
+   "x": 485,
+   "y": 1357,
+   "w": 190,
+   "h": 26
+  },
+  {
+   "id": "p13-6e1",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 e1",
+   "answer": "wird",
+   "x": 225,
+   "y": 1385,
+   "w": 75,
+   "h": 26
+  },
+  {
+   "id": "p13-6e2",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 e2",
+   "answer": "gebracht",
+   "x": 485,
+   "y": 1385,
+   "w": 190,
+   "h": 26
+  },
+  {
+   "id": "p13-6f1",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 f1",
+   "answer": "wird",
+   "x": 245,
+   "y": 1412,
+   "w": 100,
+   "h": 26
+  },
+  {
+   "id": "p13-6f2",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 f2",
+   "answer": "geöffnet",
+   "x": 445,
+   "y": 1412,
+   "w": 135,
+   "h": 26
+  },
+  {
+   "id": "p13-6f3",
+   "group": "g6",
+   "kind": "text",
+   "label": "6 f3",
+   "answer": "gelesen",
+   "x": 620,
+   "y": 1412,
+   "w": 135,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g3",
+   "label": "3 b Sätze"
+  },
+  {
+   "id": "g5",
+   "label": "5 Verben"
+  },
+  {
+   "id": "g6",
+   "label": "6 werden + Partizip"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "4 is a gap-fill with single letters inside words; left ungraded. 3 b rows 1, 2, 4, 6 are printed."
+  ]
  }
 }

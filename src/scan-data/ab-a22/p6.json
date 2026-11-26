@@ -2127,11 +2127,149 @@
    "h": 8
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p6-32-einmal",
+   "group": "g3",
+   "kind": "radio",
+   "label": "einmal",
+   "name": "p6-32",
+   "value": "einmal",
+   "answer": "true",
+   "x": 801,
+   "y": 1143,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p6-32-häufig",
+   "group": "g3",
+   "kind": "radio",
+   "label": "häufig",
+   "name": "p6-32",
+   "value": "häufig",
+   "answer": "false",
+   "x": 883,
+   "y": 1143,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p6-33-einmal",
+   "group": "g3",
+   "kind": "radio",
+   "label": "einmal",
+   "name": "p6-33",
+   "value": "einmal",
+   "answer": "true",
+   "x": 801,
+   "y": 1198,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p6-33-häufig",
+   "group": "g3",
+   "kind": "radio",
+   "label": "häufig",
+   "name": "p6-33",
+   "value": "häufig",
+   "answer": "false",
+   "x": 883,
+   "y": 1198,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p6-34-einmal",
+   "group": "g3",
+   "kind": "radio",
+   "label": "einmal",
+   "name": "p6-34",
+   "value": "einmal",
+   "answer": "true",
+   "x": 801,
+   "y": 1253,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p6-34-häufig",
+   "group": "g3",
+   "kind": "radio",
+   "label": "häufig",
+   "name": "p6-34",
+   "value": "häufig",
+   "answer": "false",
+   "x": 883,
+   "y": 1253,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p6-35-einmal",
+   "group": "g3",
+   "kind": "radio",
+   "label": "einmal",
+   "name": "p6-35",
+   "value": "einmal",
+   "answer": "false",
+   "x": 801,
+   "y": 1306,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p6-35-häufig",
+   "group": "g3",
+   "kind": "radio",
+   "label": "häufig",
+   "name": "p6-35",
+   "value": "häufig",
+   "answer": "true",
+   "x": 883,
+   "y": 1306,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p6-36-einmal",
+   "group": "g3",
+   "kind": "radio",
+   "label": "einmal",
+   "name": "p6-36",
+   "value": "einmal",
+   "answer": "false",
+   "x": 801,
+   "y": 1360,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p6-36-häufig",
+   "group": "g3",
+   "kind": "radio",
+   "label": "häufig",
+   "name": "p6-36",
+   "value": "häufig",
+   "answer": "true",
+   "x": 883,
+   "y": 1360,
+   "w": 24,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g3",
+   "label": "3 a Einmal oder häufig?"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "1 and 2 are sentence writing (several correct word orders); left ungraded. 3 a items 2-6 graded from the official key; item 1 is the printed example."
+  ]
  }
 }

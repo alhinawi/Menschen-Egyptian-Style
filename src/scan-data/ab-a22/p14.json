@@ -2239,11 +2239,96 @@
    "h": 8
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p14-9b",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 b",
+   "answer": "mich sehr gefreut",
+   "x": 590,
+   "y": 844,
+   "w": 300,
+   "h": 26
+  },
+  {
+   "id": "p14-9c",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 c",
+   "answer": "mag ich besonders gern",
+   "x": 575,
+   "y": 875,
+   "w": 335,
+   "h": 26
+  },
+  {
+   "id": "p14-9d",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 d",
+   "answer": "für Eure tollen Geschenke",
+   "x": 296,
+   "y": 974,
+   "w": 443,
+   "h": 26
+  },
+  {
+   "id": "p14-9e",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 e",
+   "answer": "ist eine super Idee",
+   "x": 190,
+   "y": 995,
+   "w": 325,
+   "h": 26
+  },
+  {
+   "id": "p14-9f",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 f",
+   "answer": "freue mich schon auf",
+   "x": 595,
+   "y": 995,
+   "w": 288,
+   "h": 26
+  },
+  {
+   "id": "p14-9g",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 g",
+   "answer": "gut gebrauchen",
+   "x": 190,
+   "y": 1048,
+   "w": 310,
+   "h": 26
+  },
+  {
+   "id": "p14-9h",
+   "group": "g9",
+   "kind": "text",
+   "label": "9 h",
+   "answer": "benutze ich",
+   "x": 623,
+   "y": 1048,
+   "w": 306,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g9",
+   "label": "9 Ergänzen Sie die E-Mails"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "7 (write sentences), 8 (open speaking) and 10 (listen and correct, written sentences) are left ungraded."
+  ]
  }
 }
