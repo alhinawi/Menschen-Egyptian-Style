@@ -1,3 +1,4 @@
+import {okf} from '../components/ok-fields';
 import {ChoiceInput} from '../exercises/ChoiceInput';
 import {CheckButton} from '../components/CheckButton';
 import {PageImage} from '../components/PageImage';
@@ -28,7 +29,7 @@ export function NativeAB12Lesson13({page}:{page:string}){
  const rule=(x:number,y:number,w:number)=><div className="naRule" style={{left:x,top:y,width:w}}/>;
  const rl=(x:number,y:number,w:number)=><div className="naRule11" style={{left:x,top:y,width:w}}/>;
  const dot=(id:string,value:string,x:number,y:number,label:string,checkbox=false,cls='')=><ChoiceInput className={"naDot"+(cls?' '+cls:'')} type={checkbox?'checkbox':'radio'} aria-label={label} data-value={value} name={key+'-'+id} checked={checkbox?values[id]==='true':values[id]===value} onChange={e=>set(id,checkbox?String(e.target.checked):value)} style={{left:x,top:y}}/>;
- const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const check=(id:string,x:number,y:number,answers:Record<string,string>)=><div className="naCheck" data-check={id} data-ok-fields={okf(id in results,answers,values,normalize)} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:Object.entries(answers).every(([k,a])=>a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))))})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,t:string,cls='')=><div className={'naTitle '+cls} style={{left:x,top:y,width:w}}><b>{n}</b><Words text={t}/></div>;
  const kb=(x:number,y:number,t:string)=><div className="naKB naKBL" style={{left:x,top:y}}>{t}</div>;
  const side=(x:number,y:number,t:string)=><div className="naSide naSideL" style={{left:x,top:y}}>{t}</div>;

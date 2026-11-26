@@ -31,12 +31,14 @@ export function NativeKB12({page}:{page:string}){
  const NOBOX=new Set(["oft","p11:den Weg beschreiben","p11:den Weg nicht kennen","Wie ist das Wetter? Hörbeispiel 1", "Wie ist das Wetter? Hörbeispiel 2", "Was machen Sie gerade? Hörbeispiel 2", "Was machen Sie gerade? Hörbeispiel 3", "Was machen Sie gerade? Hörbeispiel 4", "Mein Urlaub: Ort?", "Hannes: Wetter?", "Mein Urlaub: Aktivitäten?", "Hannes: Aktivitäten?", "Fest zu Gutes/Frohes neues Jahr!", "Fest zu Frohe Weihnachten!"]);
  const open=(id:string,x:number,y:number,w:number,h:number,label:string,placeholder='')=>NOBOX.has(label)?null:<textarea className="nkOpen" aria-label={label} style={{left:x,top:y,width:w,height:h}} value={values[id]||''} placeholder={placeholder} onChange={e=>set(id,e.target.value)}/>;
  const check=(id:string,x:number,y:number,answers:Record<string,string>)=>{
-  const graded=Object.entries(answers).every(([k,a])=>{
+  const one=(k:string,a:string)=>{
    const mode=answerMatchMode(a,values[k]||'');
    if(mode!==null)return mode;
    return a.split('|').some(v=>normalize(v)===normalize(values[k]||(a==='false'?'false':''))||(((page==='64'&&k==='7a-2')||(page==='67'&&k.startsWith('4a-')))&&normalize(v).split(/\s*[,;]\s*/).sort().join('|')===normalize(values[k]||'').split(/\s*[,;]\s*/).sort().join('|')));
-  });
-  return <div className="nkCheck" data-check={id} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:graded})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+  };
+  const graded=Object.entries(answers).every(([k,a])=>one(k,a));
+  const okIds=id in results?Object.entries(answers).filter(([k,a])=>a.trim()!==''&&a!=='false'&&(values[k]||'').trim()!==''&&one(k,a)).map(([k])=>k).join(','):undefined;
+  return <div className="nkCheck" data-check={id} data-ok-fields={okIds} style={{left:x,top:y}}><CheckButton answers={answers} onClick={()=>sr({...results,[id]:graded})}></CheckButton><output aria-live="polite">{id in results?(results[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  };
  const save=(id:string,x:number,y:number)=><div className="nkCheck nkSave" data-check={'save-'+id} style={{left:x,top:y}}><CheckButton onClick={()=>set('save-'+id,'1')}/><output aria-live="polite">{values['save-'+id]==='1'?'Gespeichert':''}</output></div>;
  const title=(n:string,x:number,y:number,w:number,t:string)=><div className="nkTitle" style={{left:x,top:y,width:w}}><b>{n}</b><Words text={t}/></div>;

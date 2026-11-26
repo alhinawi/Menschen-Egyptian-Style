@@ -3,6 +3,7 @@ import {PageImage} from '../components/PageImage';
 import {useRef, useState, useSyncExternalStore, useEffect} from 'react';
 import {createPortal, flushSync} from 'react-dom';
 import {scanStore} from './scanStore';
+import {creditPractice} from './practice-credit';
 import type {ScanExercise, VocabItem} from './scanStore';
 
 const norm = (s: unknown): string => {
@@ -34,6 +35,8 @@ function Exercise({exercise: e, values}: {exercise: ScanExercise; values: Record
     event.preventDefault();
     const statuses = [...event.currentTarget.querySelectorAll<HTMLInputElement | HTMLSelectElement>('[data-field]')].map(el => el.dataset.answer!.split('|').some(a => norm(a) === norm(el.value)));
     const passed = statuses.filter(Boolean).length;
+    const given = [...event.currentTarget.querySelectorAll<HTMLInputElement | HTMLSelectElement>('[data-field]')].map(el => el.value);
+    void creditPractice(e.id, e.rows, statuses, given);
     flushSync(() => {
       setResult({statuses, passed, ok: passed === statuses.length});
       scanStore.save({['done-' + e.id]: passed === statuses.length});

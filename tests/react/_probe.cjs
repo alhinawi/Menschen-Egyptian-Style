@@ -1,15 +1,15 @@
-const {chromium}=require('playwright');const{spawn}=require('child_process');
-(async()=>{const v=spawn('npx',['vite','--port','5223','--strictPort'],{cwd:__dirname+'/../..',stdio:'pipe'});
-await new Promise(r=>{v.stdout.on('data',d=>{if(String(d).includes('Local:'))r()})});
-const b=await chromium.launch({executablePath:'/usr/bin/google-chrome-stable',args:['--no-sandbox']});
-const p=await b.newPage({viewport:{width:901,height:1300}});
-await p.goto('http://127.0.0.1:5223/ab-l10-12.html#79');
-await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
-const r=await p.evaluate(()=>{const el=document.querySelector('[data-native-field="u4-c1"]');const cs=getComputedStyle(el);return{border:cs.border,borderBottom:cs.borderBottomWidth+' '+cs.borderBottomStyle+' '+cs.borderBottomColor,bg:cs.backgroundColor,cls:el.className}});
-console.log(JSON.stringify(r,null,1));
-// compare with a passed page field if any on 76
-await p.goto('http://127.0.0.1:5223/ab-l10-12.html#76');
-await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true');
-const r2=await p.evaluate(()=>{const el=document.querySelector('.mField');if(!el)return null;const cs=getComputedStyle(el);return{border:cs.border,bg:cs.backgroundColor,cls:el.className}});
-console.log('p76:',JSON.stringify(r2));
-await b.close();v.kill();process.exit(0)})().catch(e=>{console.error(e);process.exit(1)});
+const {chromium}=require('/usr/share/code/resources/app/node_modules/playwright-core');const fs=require('fs'),http=require('http'),path=require('path');const root='/tmp/repo';
+const server=http.createServer((q,r)=>{try{let u=q.url.split('?')[0];if(!path.extname(u)&&!fs.existsSync(path.join(root,'dist',u)))u='/index.html';const f=path.join(root,'dist',u);r.setHeader('content-type',({'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json'})[path.extname(f)]||'application/octet-stream');r.end(fs.readFileSync(f))}catch{r.writeHead(404);r.end()}});
+const L=fs.readFileSync('/tmp/graded-unmapped.txt','utf8').trim().split('\n').map(l=>l.split(' '));
+(async()=>{await new Promise(r=>server.listen(5298,r));const b=await chromium.launch({executablePath:'/usr/bin/google-chrome-stable',args:['--no-sandbox']});
+const ctx=await b.newContext({viewport:{width:390,height:1000}});await ctx.route('**/api/**',r=>r.fulfill({status:503,body:'{}'}));
+const out=[];const routes=[...new Set(L.map(l=>l[0]))];
+for(const route of routes){const p=await ctx.newPage();await p.goto('http://localhost:5298/'+route);await p.waitForFunction(()=>document.documentElement.dataset.bookReady==='true',null,{timeout:20000});await p.waitForTimeout(1500);
+ for(const [r,,pg,id] of L.filter(l=>l[0]===route)){
+  const o=await p.evaluate(({pg,id})=>{const pages=[...document.querySelectorAll('.page')].filter(x=>x.dataset.page===pg);const pgEl=pages[0];if(!pgEl)return {err:'nopage'};
+   const hs=[...pgEl.querySelectorAll('[data-exercise-id],[data-native-task],[data-native-check]')].filter(h=>(h.dataset.exerciseId||h.dataset.nativeTask||h.dataset.nativeCheck)===id||id==='?');
+   const h=hs[0];const q=s=>pgEl.querySelectorAll(s).length;
+   return {holder:h?h.outerHTML.slice(0,140):null,cls:h?.className,fields:q('[data-native-field]'),arrows:q('[data-native-arrow]'),radios:q('input[type=radio]'),checks:q('input[type=checkbox]'),sel:q('select'),txt:q('input[type=text],textarea'),btnP:q('button[aria-pressed]'),svg:q('svg'),dv:q('[data-value]'),checkBtns:q('button.compactCheckButton'),hs:hs.length,names:[...new Set([...pgEl.querySelectorAll('[data-native-field]')].map(e=>e.dataset.nativeField))].slice(0,12)}},{pg,id});
+  out.push([route,pg,id,o]);}
+ await p.close()}
+for(const o of out)console.log(o[0],o[1],o[2],JSON.stringify(o[3]));await b.close();server.close()})();

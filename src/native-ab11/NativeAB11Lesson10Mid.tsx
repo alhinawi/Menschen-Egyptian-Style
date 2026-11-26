@@ -1,3 +1,4 @@
+import {okf} from '../components/ok-fields';
 import {ChoiceInput} from '../exercises/ChoiceInput';
 import {CheckButton} from '../components/CheckButton';
 import {PageImage} from '../components/PageImage';
@@ -24,7 +25,7 @@ export function NativeAB11Lesson10Mid({page}:{page:string}){
  const data=scanData['ab-a11:'+page];
  const answers=(group:string)=>Object.fromEntries(data.fields.filter(fl=>fl.group===group&&fl.kind!=='radio'&&fl.kind!=='checkbox'&&fl.answer!==undefined).map(fl=>[fl.id,fl.answer!]));
  const save=(id:string,x:number,y:number)=>null;
- const check=(id:string,x:number,y:number,expected=answers(id))=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:Object.entries(expected).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
+ const check=(id:string,x:number,y:number,expected=answers(id))=><div className="mCheck" data-native-task={id} data-ok-fields={okf(id in graded,expected,v,norm)} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:Object.entries(expected).every(([k,a])=>a.split('|').some(s=>norm(s)===norm(v[k]||'')))})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const rule=(id:string,x:number,y:number,test:()=>boolean)=><div className="mCheck" data-native-task={id} style={{left:x,top:Y(y)}}><CheckButton onClick={()=>G({...graded,[id]:test()})}></CheckButton><output aria-live="polite">{id in graded?(graded[id]?'✓ Richtig!':'Noch einmal'):''}</output></div>;
  const markS=(x:number,y:number)=><div className="mText mMark" style={{left:x,top:Y(y),width:16}}><span className="mSq">■</span></div>;
  const markT=(x:number,y:number)=><div className="mText mMark" style={{left:x,top:Y(y),width:16}}><span className="mTr">▲</span></div>;
