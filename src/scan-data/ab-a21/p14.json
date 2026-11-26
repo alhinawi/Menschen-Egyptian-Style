@@ -1609,7 +1609,242 @@
    "h": 21
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p14-9aMaria-kaufen",
+   "group": "g9a",
+   "kind": "radio",
+   "label": "kaufen",
+   "name": "p14-9aMaria",
+   "value": "kaufen",
+   "answer": "false",
+   "x": 199,
+   "y": 894,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p14-9aMaria-vergessen",
+   "group": "g9a",
+   "kind": "radio",
+   "label": "vergessen",
+   "name": "p14-9aMaria",
+   "value": "vergessen",
+   "answer": "false",
+   "x": 199,
+   "y": 923,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p14-9aMaria-umziehen",
+   "group": "g9a",
+   "kind": "radio",
+   "label": "umziehen",
+   "name": "p14-9aMaria",
+   "value": "umziehen",
+   "answer": "true",
+   "x": 199,
+   "y": 952,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p14-9aPeter-kaufen",
+   "group": "g9a",
+   "kind": "radio",
+   "label": "kaufen",
+   "name": "p14-9aPeter",
+   "value": "kaufen",
+   "answer": "false",
+   "x": 296,
+   "y": 894,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p14-9aPeter-vergessen",
+   "group": "g9a",
+   "kind": "radio",
+   "label": "vergessen",
+   "name": "p14-9aPeter",
+   "value": "vergessen",
+   "answer": "true",
+   "x": 296,
+   "y": 923,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p14-9aPeter-umziehen",
+   "group": "g9a",
+   "kind": "radio",
+   "label": "umziehen",
+   "name": "p14-9aPeter",
+   "value": "umziehen",
+   "answer": "false",
+   "x": 296,
+   "y": 952,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p14-9aTina-kaufen",
+   "group": "g9a",
+   "kind": "radio",
+   "label": "kaufen",
+   "name": "p14-9aTina",
+   "value": "kaufen",
+   "answer": "true",
+   "x": 397,
+   "y": 894,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p14-9aTina-vergessen",
+   "group": "g9a",
+   "kind": "radio",
+   "label": "vergessen",
+   "name": "p14-9aTina",
+   "value": "vergessen",
+   "answer": "false",
+   "x": 397,
+   "y": 923,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p14-9aTina-umziehen",
+   "group": "g9a",
+   "kind": "radio",
+   "label": "umziehen",
+   "name": "p14-9aTina",
+   "value": "umziehen",
+   "answer": "false",
+   "x": 397,
+   "y": 952,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p14-9b1-anrufen",
+   "group": "g9b",
+   "kind": "radio",
+   "label": "anrufen",
+   "name": "p14-9b1",
+   "value": "anrufen",
+   "answer": "false",
+   "x": 194,
+   "y": 1120,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p14-9b1-renovieren",
+   "group": "g9b",
+   "kind": "radio",
+   "label": "renovieren",
+   "name": "p14-9b1",
+   "value": "renovieren",
+   "answer": "true",
+   "x": 295,
+   "y": 1120,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p14-9b1-umziehen",
+   "group": "g9b",
+   "kind": "radio",
+   "label": "umziehen",
+   "name": "p14-9b1",
+   "value": "umziehen",
+   "answer": "false",
+   "x": 451,
+   "y": 1120,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p14-9b2-regal",
+   "group": "g9b",
+   "kind": "radio",
+   "label": "regal",
+   "name": "p14-9b2",
+   "value": "regal",
+   "answer": "true",
+   "x": 331,
+   "y": 1186,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p14-9b2-flur",
+   "group": "g9b",
+   "kind": "radio",
+   "label": "flur",
+   "name": "p14-9b2",
+   "value": "flur",
+   "answer": "false",
+   "x": 791,
+   "y": 1186,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p14-9b2-morgen",
+   "group": "g9b",
+   "kind": "radio",
+   "label": "morgen",
+   "name": "p14-9b2",
+   "value": "morgen",
+   "answer": "false",
+   "x": 331,
+   "y": 1211,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p14-9b3-treppe",
+   "group": "g9b",
+   "kind": "radio",
+   "label": "treppe",
+   "name": "p14-9b3",
+   "value": "treppe",
+   "answer": "false",
+   "x": 287,
+   "y": 1277,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p14-9b3-hinten",
+   "group": "g9b",
+   "kind": "radio",
+   "label": "hinten",
+   "name": "p14-9b3",
+   "value": "hinten",
+   "answer": "true",
+   "x": 589,
+   "y": 1277,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p14-9b3-sofas",
+   "group": "g9b",
+   "kind": "radio",
+   "label": "sofas",
+   "name": "p14-9b3",
+   "value": "sofas",
+   "answer": "false",
+   "x": 168,
+   "y": 1305,
+   "w": 22,
+   "h": 22
+  }
+ ],
  "audio": [
   {
    "id": "ab-cd1-04-14",
@@ -1639,9 +1874,20 @@
    "h": 26
   }
  ],
- "groups": [],
+ "groups": [
+  {
+   "id": "g9a",
+   "label": "9a Hören: Was passt zu wem?"
+  },
+  {
+   "id": "g9b",
+   "label": "9b Hören: Was soll der Freund/Kollege tun?"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungen (Arbeitsbuch Basistraining 9a/9b). Other exercises on this page are not graded yet."
+  ]
  }
 }
