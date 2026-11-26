@@ -2093,7 +2093,26 @@
   }
  ],
  "fields": [],
- "audio": [],
+ "audio": [
+  {
+   "id": "ab-cd2-27-68",
+   "src": "assets/ab-a22-cd2-track27.mp3",
+   "label": "CD2 · Track 27",
+   "x": 74,
+   "y": 1075,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd2-28-68",
+   "src": "assets/ab-a22-cd2-track28.mp3",
+   "label": "CD2 · Track 28",
+   "x": 74,
+   "y": 1246,
+   "w": 78,
+   "h": 26
+  }
+ ],
  "groups": [],
  "review": {
   "status": "raw-ocr",

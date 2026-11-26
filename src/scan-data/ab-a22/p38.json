@@ -2251,6 +2251,8 @@
  "groups": [],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Item 6 (gap text, several blanks per line) is left ungraded for now; items 7 (letter gaps), 8 and 9 are free or in-word gaps."
+  ]
  }
 }

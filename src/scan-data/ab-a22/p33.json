@@ -2737,7 +2737,26 @@
   }
  ],
  "fields": [],
- "audio": [],
+ "audio": [
+  {
+   "id": "ab-cd2-12-33",
+   "src": "assets/ab-a22-cd2-track12.mp3",
+   "label": "CD2 · Track 12",
+   "x": 22,
+   "y": 1120,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd2-13-33",
+   "src": "assets/ab-a22-cd2-track13.mp3",
+   "label": "CD2 · Track 13",
+   "x": 513,
+   "y": 1123,
+   "w": 78,
+   "h": 26
+  }
+ ],
  "groups": [],
  "review": {
   "status": "raw-ocr",

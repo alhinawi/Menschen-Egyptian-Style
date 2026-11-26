@@ -2347,7 +2347,44 @@
    "h": 24
   }
  ],
- "audio": [],
+ "audio": [
+  {
+   "id": "ab-cd2-02-9",
+   "src": "assets/ab-a22-cd2-track02.mp3",
+   "label": "CD2 · Track 02",
+   "x": 29,
+   "y": 991,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd2-03-9",
+   "src": "assets/ab-a22-cd2-track03.mp3",
+   "label": "CD2 · Track 03",
+   "x": 29,
+   "y": 1156,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd2-04-9",
+   "src": "assets/ab-a22-cd2-track04.mp3",
+   "label": "CD2 · Track 04",
+   "x": 507,
+   "y": 793,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd2-05-9",
+   "src": "assets/ab-a22-cd2-track05.mp3",
+   "label": "CD2 · Track 05",
+   "x": 551,
+   "y": 1100,
+   "w": 78,
+   "h": 26
+  }
+ ],
  "groups": [
   {
    "id": "g1",

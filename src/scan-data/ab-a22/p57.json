@@ -1960,7 +1960,26 @@
   }
  ],
  "fields": [],
- "audio": [],
+ "audio": [
+  {
+   "id": "ab-cd2-24-57",
+   "src": "assets/ab-a22-cd2-track24.mp3",
+   "label": "CD2 · Track 24",
+   "x": 37,
+   "y": 870,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd2-25-57",
+   "src": "assets/ab-a22-cd2-track25.mp3",
+   "label": "CD2 · Track 25",
+   "x": 37,
+   "y": 1394,
+   "w": 78,
+   "h": 26
+  }
+ ],
  "groups": [],
  "review": {
   "status": "raw-ocr",

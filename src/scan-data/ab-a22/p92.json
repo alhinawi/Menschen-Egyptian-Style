@@ -2317,7 +2317,17 @@
   }
  ],
  "fields": [],
- "audio": [],
+ "audio": [
+  {
+   "id": "ab-cd2-42-92",
+   "src": "assets/ab-a22-cd2-track42.mp3",
+   "label": "CD2 · Track 42",
+   "x": 72,
+   "y": 1128,
+   "w": 78,
+   "h": 26
+  }
+ ],
  "groups": [],
  "review": {
   "status": "raw-ocr",

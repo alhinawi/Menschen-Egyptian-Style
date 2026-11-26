@@ -2489,6 +2489,8 @@
  "groups": [],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Item 1 (crossword) and 2 (word-building gap text) have key answers but many blanks run across lines; left ungraded for now."
+  ]
  }
 }

@@ -2422,7 +2422,26 @@
   }
  ],
  "fields": [],
- "audio": [],
+ "audio": [
+  {
+   "id": "ab-cd2-14-39",
+   "src": "assets/ab-a22-cd2-track14.mp3",
+   "label": "CD2 · Track 14",
+   "x": 37,
+   "y": 1065,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd2-15-39",
+   "src": "assets/ab-a22-cd2-track15.mp3",
+   "label": "CD2 · Track 15",
+   "x": 521,
+   "y": 1068,
+   "w": 78,
+   "h": 26
+  }
+ ],
  "groups": [],
  "review": {
   "status": "raw-ocr",

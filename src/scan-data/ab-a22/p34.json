@@ -2328,6 +2328,8 @@
  "groups": [],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Test page: the official key has no answers for the Test, so it is left ungraded."
+  ]
  }
 }

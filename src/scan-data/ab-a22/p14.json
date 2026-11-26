@@ -2318,7 +2318,17 @@
    "h": 26
   }
  ],
- "audio": [],
+ "audio": [
+  {
+   "id": "ab-cd2-06-14",
+   "src": "assets/ab-a22-cd2-track06.mp3",
+   "label": "CD2 · Track 06",
+   "x": 58,
+   "y": 1191,
+   "w": 78,
+   "h": 26
+  }
+ ],
  "groups": [
   {
    "id": "g9",

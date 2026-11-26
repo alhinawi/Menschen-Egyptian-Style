@@ -2821,7 +2821,26 @@
   }
  ],
  "fields": [],
- "audio": [],
+ "audio": [
+  {
+   "id": "ab-cd2-26-63",
+   "src": "assets/ab-a22-cd2-track26.mp3",
+   "label": "CD2 · Track 26",
+   "x": 37,
+   "y": 1020,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd2-26-63b",
+   "src": "assets/ab-a22-cd2-track26.mp3",
+   "label": "CD2 · Track 26",
+   "x": 37,
+   "y": 1256,
+   "w": 78,
+   "h": 26
+  }
+ ],
  "groups": [],
  "review": {
   "status": "raw-ocr",

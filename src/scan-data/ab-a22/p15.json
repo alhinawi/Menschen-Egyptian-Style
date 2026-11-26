@@ -1813,7 +1813,26 @@
   }
  ],
  "fields": [],
- "audio": [],
+ "audio": [
+  {
+   "id": "ab-cd2-07-15",
+   "src": "assets/ab-a22-cd2-track07.mp3",
+   "label": "CD2 · Track 07",
+   "x": 36,
+   "y": 1119,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd2-08-15",
+   "src": "assets/ab-a22-cd2-track08.mp3",
+   "label": "CD2 · Track 08",
+   "x": 35,
+   "y": 1295,
+   "w": 78,
+   "h": 26
+  }
+ ],
  "groups": [],
  "review": {
   "status": "raw-ocr",

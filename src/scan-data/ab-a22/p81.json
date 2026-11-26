@@ -1372,7 +1372,71 @@
   }
  ],
  "fields": [],
- "audio": [],
+ "audio": [
+  {
+   "id": "ab-cd2-32-81",
+   "src": "assets/ab-a22-cd2-track32.mp3",
+   "label": "CD2 · Track 32",
+   "x": 17,
+   "y": 183,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd2-33-81",
+   "src": "assets/ab-a22-cd2-track33.mp3",
+   "label": "CD2 · Track 33",
+   "x": 17,
+   "y": 213,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd2-34-81",
+   "src": "assets/ab-a22-cd2-track34.mp3",
+   "label": "CD2 · Track 34",
+   "x": 17,
+   "y": 243,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd2-35-81",
+   "src": "assets/ab-a22-cd2-track35.mp3",
+   "label": "CD2 · Track 35",
+   "x": 17,
+   "y": 273,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd2-36-81",
+   "src": "assets/ab-a22-cd2-track36.mp3",
+   "label": "CD2 · Track 36",
+   "x": 32,
+   "y": 969,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd2-37-81",
+   "src": "assets/ab-a22-cd2-track37.mp3",
+   "label": "CD2 · Track 37",
+   "x": 74,
+   "y": 1137,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd2-38-81",
+   "src": "assets/ab-a22-cd2-track38.mp3",
+   "label": "CD2 · Track 38",
+   "x": 499,
+   "y": 966,
+   "w": 78,
+   "h": 26
+  }
+ ],
  "groups": [],
  "review": {
   "status": "raw-ocr",

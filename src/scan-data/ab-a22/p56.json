@@ -2604,7 +2604,17 @@
   }
  ],
  "fields": [],
- "audio": [],
+ "audio": [
+  {
+   "id": "ab-cd2-23-56",
+   "src": "assets/ab-a22-cd2-track23.mp3",
+   "label": "CD2 · Track 23",
+   "x": 52,
+   "y": 438,
+   "w": 78,
+   "h": 26
+  }
+ ],
  "groups": [],
  "review": {
   "status": "raw-ocr",

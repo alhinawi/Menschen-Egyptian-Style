@@ -3066,7 +3066,35 @@
   }
  ],
  "fields": [],
- "audio": [],
+ "audio": [
+  {
+   "id": "ab-cd2-39-87",
+   "src": "assets/ab-a22-cd2-track39.mp3",
+   "label": "CD2 · Track 39",
+   "x": 41,
+   "y": 1135,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd2-40-87",
+   "src": "assets/ab-a22-cd2-track40.mp3",
+   "label": "CD2 · Track 40",
+   "x": 52,
+   "y": 1259,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd2-41-87",
+   "src": "assets/ab-a22-cd2-track41.mp3",
+   "label": "CD2 · Track 41",
+   "x": 52,
+   "y": 1289,
+   "w": 78,
+   "h": 26
+  }
+ ],
  "groups": [],
  "review": {
   "status": "raw-ocr",
