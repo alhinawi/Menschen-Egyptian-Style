@@ -2338,7 +2338,26 @@
   }
  ],
  "fields": [],
- "audio": [],
+ "audio": [
+  {
+   "id": "ab-cd1-34-81",
+   "src": "assets/ab-a21-cd1-track34.mp3",
+   "label": "CD1 · Track 34",
+   "x": 57,
+   "y": 992,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd1-35-81",
+   "src": "assets/ab-a21-cd1-track35.mp3",
+   "label": "CD1 · Track 35",
+   "x": 58,
+   "y": 1151,
+   "w": 78,
+   "h": 26
+  }
+ ],
  "groups": [],
  "review": {
   "status": "raw-ocr",

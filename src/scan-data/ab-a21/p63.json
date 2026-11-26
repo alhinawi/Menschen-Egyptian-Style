@@ -1316,7 +1316,35 @@
   }
  ],
  "fields": [],
- "audio": [],
+ "audio": [
+  {
+   "id": "ab-cd1-28-63",
+   "src": "assets/ab-a21-cd1-track28.mp3",
+   "label": "CD1 · Track 28",
+   "x": 45,
+   "y": 605,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd1-29-63",
+   "src": "assets/ab-a21-cd1-track29.mp3",
+   "label": "CD1 · Track 29",
+   "x": 45,
+   "y": 1096,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd1-30-63",
+   "src": "assets/ab-a21-cd1-track30.mp3",
+   "label": "CD1 · Track 30",
+   "x": 88,
+   "y": 1374,
+   "w": 78,
+   "h": 26
+  }
+ ],
  "groups": [],
  "review": {
   "status": "raw-ocr",

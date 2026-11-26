@@ -2002,7 +2002,17 @@
   }
  ],
  "fields": [],
- "audio": [],
+ "audio": [
+  {
+   "id": "ab-cd1-21-42",
+   "src": "assets/ab-a21-cd1-track21.mp3",
+   "label": "CD1 · Track 21",
+   "x": 58,
+   "y": 203,
+   "w": 78,
+   "h": 26
+  }
+ ],
  "groups": [],
  "review": {
   "status": "raw-ocr",

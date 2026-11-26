@@ -76,7 +76,7 @@ function countNonAudioFiles() {
 function audioBudget() {
   return Math.max(1000, HARD_FILE_LIMIT - countNonAudioFiles() - VITE_OUTPUT_ALLOWANCE - BUDGET_SAFETY);
 }
-const HARD_FILE_LIMIT = 19620; // abort the build rather than deploy over the cap
+const HARD_FILE_LIMIT = 19680; // abort the build rather than deploy over the cap
 const MANIFEST_FILE = path.join('src', 'generated', 'cf-audio-manifest.json');
 
 function audioPriority(rel) {

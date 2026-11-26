@@ -1729,7 +1729,17 @@
   }
  ],
  "fields": [],
- "audio": [],
+ "audio": [
+  {
+   "id": "ab-cd1-33-80",
+   "src": "assets/ab-a21-cd1-track33.mp3",
+   "label": "CD1 · Track 33",
+   "x": 59,
+   "y": 1065,
+   "w": 78,
+   "h": 26
+  }
+ ],
  "groups": [],
  "review": {
   "status": "raw-ocr",

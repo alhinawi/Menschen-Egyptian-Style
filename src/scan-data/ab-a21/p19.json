@@ -1722,7 +1722,26 @@
   }
  ],
  "fields": [],
- "audio": [],
+ "audio": [
+  {
+   "id": "ab-cd1-10-19",
+   "src": "assets/ab-a21-cd1-track10.mp3",
+   "label": "CD1 · Track 10",
+   "x": 41,
+   "y": 1188,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd1-11-19",
+   "src": "assets/ab-a21-cd1-track11.mp3",
+   "label": "CD1 · Track 11",
+   "x": 41,
+   "y": 1218,
+   "w": 78,
+   "h": 26
+  }
+ ],
  "groups": [],
  "review": {
   "status": "raw-ocr",

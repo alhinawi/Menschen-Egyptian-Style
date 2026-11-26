@@ -2317,7 +2317,44 @@
   }
  ],
  "fields": [],
- "audio": [],
+ "audio": [
+  {
+   "id": "ab-cd1-36-87",
+   "src": "assets/ab-a21-cd1-track36.mp3",
+   "label": "CD1 · Track 36",
+   "x": 54,
+   "y": 1046,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd1-38-87",
+   "src": "assets/ab-a21-cd1-track38.mp3",
+   "label": "CD1 · Track 38",
+   "x": 516,
+   "y": 1047,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd1-37-87",
+   "src": "assets/ab-a21-cd1-track37.mp3",
+   "label": "CD1 · Track 37",
+   "x": 96,
+   "y": 1326,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd1-39-87",
+   "src": "assets/ab-a21-cd1-track39.mp3",
+   "label": "CD1 · Track 39",
+   "x": 557,
+   "y": 1326,
+   "w": 78,
+   "h": 26
+  }
+ ],
  "groups": [],
  "review": {
   "status": "raw-ocr",

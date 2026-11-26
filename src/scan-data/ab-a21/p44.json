@@ -1603,7 +1603,17 @@
   }
  ],
  "fields": [],
- "audio": [],
+ "audio": [
+  {
+   "id": "ab-cd1-22-44",
+   "src": "assets/ab-a21-cd1-track22.mp3",
+   "label": "CD1 · Track 22",
+   "x": 57,
+   "y": 1030,
+   "w": 78,
+   "h": 26
+  }
+ ],
  "groups": [],
  "review": {
   "status": "raw-ocr",

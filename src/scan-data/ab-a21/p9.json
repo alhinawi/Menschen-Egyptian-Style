@@ -2618,7 +2618,26 @@
   }
  ],
  "fields": [],
- "audio": [],
+ "audio": [
+  {
+   "id": "ab-cd1-02-9",
+   "src": "assets/ab-a21-cd1-track02.mp3",
+   "label": "CD1 · Track 02",
+   "x": 51,
+   "y": 1084,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "ab-cd1-03-9",
+   "src": "assets/ab-a21-cd1-track03.mp3",
+   "label": "CD1 · Track 03",
+   "x": 548,
+   "y": 1084,
+   "w": 78,
+   "h": 26
+  }
+ ],
  "groups": [],
  "review": {
   "status": "raw-ocr",
