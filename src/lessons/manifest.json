@@ -742,5 +742,24 @@
     "reactExercises": true,
     "batchcss": true,
     "bookcss": true
+  },
+  "kb-a21-m5.html": {
+    "slug": "kb-a21-m5",
+    "title": "Menschen A2.1 · Kursbuch · Aktionsseiten + Wortliste",
+    "reader": true,
+    "themes": true,
+    "styles": [],
+    "initializers": [
+      "glossary",
+      "pronunciation-index",
+      "base-vocab",
+      "meanings",
+      "kb-a21-words",
+      "kb-a21-m5"
+    ],
+    "bodyAttrs": {},
+    "reactExercises": true,
+    "batchcss": true,
+    "bookcss": true
   }
 }

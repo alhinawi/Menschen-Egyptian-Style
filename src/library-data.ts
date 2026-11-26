@@ -29,7 +29,7 @@ export const MODULE_ORDER: string[] = [
   'kb-a12-l13-16', 'kb-a12-l17-20', 'l21-24',
   'ab1', 'ab2', 'ab3', 'abm1', 'ab4-6', 'ab-l7-9', 'ab-l10-12',
   'ab-a12-l13-16', 'ab-a12-l17-20', 'ab-a12-l21-24',
-  'kb-a21-m1', 'kb-a21-m2', 'kb-a21-m3', 'kb-a21-m4',
+  'kb-a21-m1', 'kb-a21-m2', 'kb-a21-m3', 'kb-a21-m4', 'kb-a21-m5',
 ];
 
 export const MODULES: Record<string, ModuleInfo> = {
@@ -54,6 +54,7 @@ export const MODULES: Record<string, ModuleInfo> = {
   'kb-a21-m2': {slug: 'kb-a21-m2', book: 'kb', level: 'A2.1', lessons: [lesson(4, range(25, 28)), lesson(5, range(29, 32)), lesson(6, range(33, 36)), lesson('Modul-Plus', range(37, 40))], extras: []},
   'kb-a21-m3': {slug: 'kb-a21-m3', book: 'kb', level: 'A2.1', lessons: [lesson(7, range(41, 44)), lesson(8, range(45, 48)), lesson(9, range(49, 52)), lesson('Modul-Plus', range(53, 56))], extras: []},
   'kb-a21-m4': {slug: 'kb-a21-m4', book: 'kb', level: 'A2.1', lessons: [lesson(10, range(57, 60)), lesson(11, range(61, 64)), lesson(12, range(65, 68)), lesson('Modul-Plus', range(69, 72))], extras: []},
+  'kb-a21-m5': {slug: 'kb-a21-m5', book: 'kb', level: 'A2.1', lessons: [lesson('Aktionsseiten', range(73, 92)), lesson('Wortliste', range(93, 101))], extras: []},
   'ab-a12-l21-24': {slug: 'ab-a12-l21-24', book: 'ab', level: 'A1.2', lessons: [lesson(21, range(66, 71)), lesson(22, range(72, 77)), lesson(23, range(78, 83)), lesson(24, range(84, 89)), lesson('Modul-Plus', range(90, 95))], extras: range(96, 105)},
 };
 
@@ -101,7 +102,7 @@ export function modulePages(slug: string): string[] {
   if (slug === 'ab1') return ['abcover', ...pages];
   if (slug === 'kb-a12-l13-16') return ['cover', ...pages];
   if (slug === 'ab-a12-l13-16') return ['abcover', ...pages];
-  if (slug === 'kb-a21-m1' || slug === 'kb-a21-m2' || slug === 'kb-a21-m3' || slug === 'kb-a21-m4') return ['cover', ...pages];
+  if (slug === 'kb-a21-m1' || slug === 'kb-a21-m2' || slug === 'kb-a21-m3' || slug === 'kb-a21-m4' || slug === 'kb-a21-m5') return ['cover', ...pages];
   return pages;
 }
 
