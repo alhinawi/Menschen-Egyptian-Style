@@ -1987,7 +1987,34 @@
    "h": 12
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p21-1a-einen",
+   "group": "g1",
+   "kind": "radio",
+   "label": "einen",
+   "name": "p21-1a",
+   "value": "einen",
+   "answer": "true",
+   "x": 181,
+   "y": 1158,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "p21-1a-zwei",
+   "group": "g1",
+   "kind": "radio",
+   "label": "zwei",
+   "name": "p21-1a",
+   "value": "zwei",
+   "answer": "false",
+   "x": 361,
+   "y": 1158,
+   "w": 22,
+   "h": 22
+  }
+ ],
  "audio": [
   {
    "id": "ab-cd1-12-21",
@@ -2008,9 +2035,16 @@
    "h": 26
   }
  ],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "1 Hören Sie und kreuzen Sie an."
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungen (L3 Aussprache 1). Sprechen ex 1 (partner task) and Aussprache ex 2 (mark and repeat) are not graded."
+  ]
  }
 }

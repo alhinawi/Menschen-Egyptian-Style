@@ -2092,11 +2092,155 @@
    "h": 16
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p24-1b1b",
+   "group": "g1b",
+   "kind": "text",
+   "label": "1b 1b",
+   "answer": "Cousin",
+   "x": 292,
+   "y": 483,
+   "w": 108,
+   "h": 26
+  },
+  {
+   "id": "p24-1b1c",
+   "group": "g1b",
+   "kind": "text",
+   "label": "1b 1c",
+   "answer": "Tante",
+   "x": 610,
+   "y": 512,
+   "w": 109,
+   "h": 26
+  },
+  {
+   "id": "p24-1b1d",
+   "group": "g1b",
+   "kind": "text",
+   "label": "1b 1d",
+   "answer": "Onkel",
+   "x": 339,
+   "y": 539,
+   "w": 103,
+   "h": 26
+  },
+  {
+   "id": "p24-1b2a",
+   "group": "g1b",
+   "kind": "text",
+   "label": "1b 2a",
+   "answer": "Nichte",
+   "x": 216,
+   "y": 615,
+   "w": 131,
+   "h": 26
+  },
+  {
+   "id": "p24-1b2b",
+   "group": "g1b",
+   "kind": "text",
+   "label": "1b 2b",
+   "answer": "Schwiegereltern",
+   "x": 447,
+   "y": 671,
+   "w": 127,
+   "h": 26
+  },
+  {
+   "id": "p24-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 b",
+   "answer": "Puppen",
+   "x": 400,
+   "y": 868,
+   "w": 148,
+   "h": 26
+  },
+  {
+   "id": "p24-2c1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c1",
+   "answer": "Dorf",
+   "x": 299,
+   "y": 920,
+   "w": 155,
+   "h": 26
+  },
+  {
+   "id": "p24-2c2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 c2",
+   "answer": "Luft",
+   "x": 538,
+   "y": 920,
+   "w": 153,
+   "h": 26
+  },
+  {
+   "id": "p24-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 d",
+   "answer": "Bauernhof",
+   "x": 512,
+   "y": 975,
+   "w": 156,
+   "h": 26
+  },
+  {
+   "id": "p24-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 e",
+   "answer": "Fernsehgerät",
+   "x": 568,
+   "y": 1005,
+   "w": 156,
+   "h": 26
+  },
+  {
+   "id": "p24-2f",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 f",
+   "answer": "Herd",
+   "x": 847,
+   "y": 1028,
+   "w": 138,
+   "h": 26
+  },
+  {
+   "id": "p24-2g",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 g",
+   "answer": "Unterricht",
+   "x": 231,
+   "y": 1052,
+   "w": 154,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1b",
+   "label": "1b Ordnen Sie die Wörter aus a zu"
+  },
+  {
+   "id": "g2",
+   "label": "2 Was war früher anders als heute?"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Key: official Hueber Lösungen (Wiederholungsstation Wortschatz 1b, 2). Ex 1a (word building) and ex 3 (crossword) are not graded."
+  ]
  }
 }
