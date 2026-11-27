@@ -80,7 +80,7 @@ export function LibraryNav({slug}: {slug: string}) {
       const lesson=lessonForPage(mod,Number(token));
       const book=`${mod.book==='kb'?'Kursbuch':'Arbeitsbuch'} ${mod.level}`;
       // The home route names the book, never the entire site as lesson 1.
-      document.title=slug==='index'?'Menschen Egyptian Style · Deutsch A1':
+      document.title=slug==='index'?'Menschen Egyptian Style · Deutsch':
         `${lesson?.label ?? book} · Menschen Egyptian Style${lesson?' · '+book:''}`;
     };
     sync();
