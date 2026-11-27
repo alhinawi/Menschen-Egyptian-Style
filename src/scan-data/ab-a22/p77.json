@@ -2552,27 +2552,6 @@
    "y": 1229,
    "w": 27,
    "h": 13
-  },
-  {
-   "text": "siebenundsiebzig",
-   "x": 794,
-   "y": 1468,
-   "w": 142,
-   "h": 19
-  },
-  {
-   "text": "|",
-   "x": 952,
-   "y": 1467,
-   "w": 2,
-   "h": 16
-  },
-  {
-   "text": "77",
-   "x": 970,
-   "y": 1469,
-   "w": 16,
-   "h": 12
   }
  ],
  "fields": [],
@@ -2580,6 +2559,9 @@
  "groups": [],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Word layer cleaned: 3 OCR tokens removed (0 top-watermark, 0 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
+   "Pending: not yet graded."
+  ]
  }
 }

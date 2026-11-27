@@ -6,132 +6,6 @@
  "height": 1556,
  "words": [
   {
-   "text": "Du",
-   "x": 485,
-   "y": 16,
-   "w": 13,
-   "h": 8
-  },
-  {
-   "text": "hoc",
-   "x": 503,
-   "y": 16,
-   "w": 17,
-   "h": 10
-  },
-  {
-   "text": "ngh",
-   "x": 523,
-   "y": 16,
-   "w": 17,
-   "h": 11
-  },
-  {
-   "text": "Dürc",
-   "x": 551,
-   "y": 16,
-   "w": 21,
-   "h": 8
-  },
-  {
-   "text": "Vogel,",
-   "x": 575,
-   "y": 16,
-   "w": 31,
-   "h": 11
-  },
-  {
-   "text": "noilam",
-   "x": 610,
-   "y": 16,
-   "w": 36,
-   "h": 9
-  },
-  {
-   "text": "hö",
-   "x": 650,
-   "y": 16,
-   "w": 5,
-   "h": 8
-  },
-  {
-   "text": "so",
-   "x": 665,
-   "y": 18,
-   "w": 12,
-   "h": 6
-  },
-  {
-   "text": "du",
-   "x": 681,
-   "y": 16,
-   "w": 11,
-   "h": 8
-  },
-  {
-   "text": "hoc",
-   "x": 696,
-   "y": 16,
-   "w": 17,
-   "h": 10
-  },
-  {
-   "text": "ngh&",
-   "x": 718,
-   "y": 16,
-   "w": 17,
-   "h": 11
-  },
-  {
-   "text": "va",
-   "x": 745,
-   "y": 16,
-   "w": 11,
-   "h": 8
-  },
-  {
-   "text": "däo",
-   "x": 759,
-   "y": 16,
-   "w": 18,
-   "h": 8
-  },
-  {
-   "text": "1ao",
-   "x": 781,
-   "y": 16,
-   "w": 15,
-   "h": 10
-  },
-  {
-   "text": "Düc",
-   "x": 827,
-   "y": 16,
-   "w": 21,
-   "h": 8
-  },
-  {
-   "text": "uy",
-   "x": 851,
-   "y": 18,
-   "w": 11,
-   "h": 9
-  },
-  {
-   "text": "In",
-   "x": 865,
-   "y": 16,
-   "w": 12,
-   "h": 8
-  },
-  {
-   "text": "cho",
-   "x": 881,
-   "y": 18,
-   "w": 17,
-   "h": 6
-  },
-  {
    "text": "BASISTRAINING",
    "x": 102,
    "y": 96,
@@ -2293,118 +2167,6 @@
    "y": 1424,
    "w": 55,
    "h": 23
-  },
-  {
-   "text": "dreiundvierzig",
-   "x": 813,
-   "y": 1467,
-   "w": 122,
-   "h": 21
-  },
-  {
-   "text": "|",
-   "x": 953,
-   "y": 1467,
-   "w": 2,
-   "h": 17
-  },
-  {
-   "text": "43",
-   "x": 971,
-   "y": 1470,
-   "w": 18,
-   "h": 13
-  },
-  {
-   "text": "Du",
-   "x": 134,
-   "y": 1532,
-   "w": 13,
-   "h": 9
-  },
-  {
-   "text": "hoc.",
-   "x": 151,
-   "y": 1532,
-   "w": 17,
-   "h": 9
-  },
-  {
-   "text": "Dur",
-   "x": 199,
-   "y": 1532,
-   "w": 21,
-   "h": 8
-  },
-  {
-   "text": "Vogel",
-   "x": 223,
-   "y": 1532,
-   "w": 28,
-   "h": 9
-  },
-  {
-   "text": "0387569513",
-   "x": 255,
-   "y": 1532,
-   "w": 61,
-   "h": 8
-  },
-  {
-   "text": "11",
-   "x": 791,
-   "y": 1532,
-   "w": 9,
-   "h": 8
-  },
-  {
-   "text": "Vü",
-   "x": 805,
-   "y": 1532,
-   "w": 13,
-   "h": 8
-  },
-  {
-   "text": "Ngoc",
-   "x": 823,
-   "y": 1532,
-   "w": 25,
-   "h": 11
-  },
-  {
-   "text": "Phan,",
-   "x": 851,
-   "y": 1532,
-   "w": 27,
-   "h": 9
-  },
-  {
-   "text": "Döng",
-   "x": 883,
-   "y": 1530,
-   "w": 26,
-   "h": 13
-  },
-  {
-   "text": "Da,",
-   "x": 912,
-   "y": 1532,
-   "w": 16,
-   "h": 9
-  },
-  {
-   "text": "Ha",
-   "x": 933,
-   "y": 1532,
-   "w": 13,
-   "h": 8
-  },
-  {
-   "text": "Nöi",
-   "x": 950,
-   "y": 1532,
-   "w": 15,
-   "h": 10
   }
  ],
  "fields": [
@@ -2661,9 +2423,12 @@
   }
  ],
  "review": {
-  "status": "raw-ocr",
+  "status": "partial",
   "notes": [
-   "Items 5, 6 and 8 graded from the official key (5 a and 8 a are the printed examples). Item 7 is free writing."
-  ]
+   "Items 5, 6 and 8 graded from the official key (5 a and 8 a are the printed examples). Item 7 is free writing.",
+   "Word layer cleaned: 34 OCR tokens removed (18 top-watermark, 13 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
+  ],
+  "verifiedWords": 309,
+  "totalWords": 343
  }
 }

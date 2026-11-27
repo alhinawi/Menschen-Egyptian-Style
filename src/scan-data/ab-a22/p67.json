@@ -13,97 +13,6 @@
    "h": 25
   },
   {
-   "text": "Due",
-   "x": 559,
-   "y": 18,
-   "w": 13,
-   "h": 6
-  },
-  {
-   "text": "Vogel,",
-   "x": 572,
-   "y": 10,
-   "w": 33,
-   "h": 21
-  },
-  {
-   "text": "no",
-   "x": 646,
-   "y": 10,
-   "w": 16,
-   "h": 21
-  },
-  {
-   "text": "so",
-   "x": 665,
-   "y": 18,
-   "w": 12,
-   "h": 6
-  },
-  {
-   "text": "dunoe",
-   "x": 687,
-   "y": 18,
-   "w": 27,
-   "h": 6
-  },
-  {
-   "text": "ngne",
-   "x": 718,
-   "y": 10,
-   "w": 23,
-   "h": 21
-  },
-  {
-   "text": "va",
-   "x": 745,
-   "y": 18,
-   "w": 11,
-   "h": 6
-  },
-  {
-   "text": "dao",
-   "x": 757,
-   "y": 10,
-   "w": 19,
-   "h": 21
-  },
-  {
-   "text": "Tao",
-   "x": 776,
-   "y": 10,
-   "w": 20,
-   "h": 21
-  },
-  {
-   "text": "Durc",
-   "x": 825,
-   "y": 10,
-   "w": 19,
-   "h": 21
-  },
-  {
-   "text": "uy",
-   "x": 851,
-   "y": 18,
-   "w": 11,
-   "h": 9
-  },
-  {
-   "text": "in",
-   "x": 862,
-   "y": 10,
-   "w": 15,
-   "h": 21
-  },
-  {
-   "text": "cho",
-   "x": 881,
-   "y": 18,
-   "w": 17,
-   "h": 6
-  },
-  {
    "text": "Markieren",
    "x": 136,
    "y": 184,
@@ -466,13 +375,6 @@
    "y": 577,
    "w": 76,
    "h": 17
-  },
-  {
-   "text": "D___(e)",
-   "x": 160,
-   "y": 603,
-   "w": 68,
-   "h": 19
   },
   {
    "text": "im",
@@ -1789,132 +1691,6 @@
    "y": 1333,
    "w": 52,
    "h": 16
-  },
-  {
-   "text": "siebenundsechzig",
-   "x": 791,
-   "y": 1470,
-   "w": 146,
-   "h": 21
-  },
-  {
-   "text": "|",
-   "x": 954,
-   "y": 1469,
-   "w": 2,
-   "h": 17
-  },
-  {
-   "text": "67",
-   "x": 973,
-   "y": 1471,
-   "w": 16,
-   "h": 13
-  },
-  {
-   "text": "Du",
-   "x": 134,
-   "y": 1532,
-   "w": 13,
-   "h": 8
-  },
-  {
-   "text": "hoc",
-   "x": 151,
-   "y": 1532,
-   "w": 17,
-   "h": 10
-  },
-  {
-   "text": "nghö",
-   "x": 172,
-   "y": 1530,
-   "w": 24,
-   "h": 13
-  },
-  {
-   "text": "Dirc",
-   "x": 199,
-   "y": 1532,
-   "w": 21,
-   "h": 8
-  },
-  {
-   "text": "Vogel",
-   "x": 223,
-   "y": 1532,
-   "w": 28,
-   "h": 11
-  },
-  {
-   "text": "0387569513",
-   "x": 255,
-   "y": 1532,
-   "w": 61,
-   "h": 8
-  },
-  {
-   "text": "http:/Iduhocngheduc.edu.vn/",
-   "x": 474,
-   "y": 1524,
-   "w": 146,
-   "h": 21
-  },
-  {
-   "text": "11",
-   "x": 791,
-   "y": 1532,
-   "w": 9,
-   "h": 8
-  },
-  {
-   "text": "Vü",
-   "x": 805,
-   "y": 1532,
-   "w": 13,
-   "h": 8
-  },
-  {
-   "text": "Ngoc",
-   "x": 823,
-   "y": 1532,
-   "w": 25,
-   "h": 11
-  },
-  {
-   "text": "Phan,",
-   "x": 851,
-   "y": 1532,
-   "w": 27,
-   "h": 9
-  },
-  {
-   "text": "Döng",
-   "x": 883,
-   "y": 1530,
-   "w": 26,
-   "h": 13
-  },
-  {
-   "text": "Da,",
-   "x": 912,
-   "y": 1532,
-   "w": 16,
-   "h": 9
-  },
-  {
-   "text": "Ha",
-   "x": 933,
-   "y": 1532,
-   "w": 13,
-   "h": 8
-  },
-  {
-   "text": "Nöi",
-   "x": 950,
-   "y": 1532,
-   "w": 15,
-   "h": 10
   }
  ],
  "fields": [
@@ -2221,9 +1997,12 @@
   }
  ],
  "review": {
-  "status": "raw-ocr",
+  "status": "partial",
   "notes": [
-   "Item 5 table, item 6 (ending fields: each blank holds only the missing letters after the printed first letters, e.g. Dies__ = er; answers are the endings of the keyed full words) and item 7 graded from the official key. Item 6 tiny blanks are placed from the overlay, check placement when clicking."
-  ]
+   "Item 5 table, item 6 (ending fields: each blank holds only the missing letters after the printed first letters, e.g. Dies__ = er; answers are the endings of the keyed full words) and item 7 graded from the official key. Item 6 tiny blanks are placed from the overlay, check placement when clicking.",
+   "Word layer cleaned: 32 OCR tokens removed (13 top-watermark, 15 bottom-watermark, 1 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
+  ],
+  "verifiedWords": 241,
+  "totalWords": 273
  }
 }

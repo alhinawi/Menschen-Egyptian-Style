@@ -2335,20 +2335,6 @@
    "y": 1468,
    "w": 100,
    "h": 14
-  },
-  {
-   "text": "|",
-   "x": 949,
-   "y": 1467,
-   "w": 2,
-   "h": 16
-  },
-  {
-   "text": "101",
-   "x": 968,
-   "y": 1469,
-   "w": 22,
-   "h": 13
   }
  ],
  "fields": [],
@@ -2356,6 +2342,9 @@
  "groups": [],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Word layer cleaned: 2 OCR tokens removed (0 top-watermark, 0 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 2 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
+   "Pending: not yet graded."
+  ]
  }
 }

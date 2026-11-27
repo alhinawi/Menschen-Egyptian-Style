@@ -6,160 +6,6 @@
  "height": 1556,
  "words": [
   {
-   "text": "Du",
-   "x": 485,
-   "y": 16,
-   "w": 13,
-   "h": 8
-  },
-  {
-   "text": "hoc",
-   "x": 503,
-   "y": 16,
-   "w": 17,
-   "h": 10
-  },
-  {
-   "text": "nghd",
-   "x": 523,
-   "y": 14,
-   "w": 24,
-   "h": 13
-  },
-  {
-   "text": "Dürc",
-   "x": 551,
-   "y": 16,
-   "w": 21,
-   "h": 8
-  },
-  {
-   "text": "Vogel,",
-   "x": 575,
-   "y": 16,
-   "w": 31,
-   "h": 11
-  },
-  {
-   "text": "noi",
-   "x": 610,
-   "y": 16,
-   "w": 15,
-   "h": 8
-  },
-  {
-   "text": "lam",
-   "x": 629,
-   "y": 16,
-   "w": 17,
-   "h": 8
-  },
-  {
-   "text": "hö",
-   "x": 650,
-   "y": 14,
-   "w": 11,
-   "h": 10
-  },
-  {
-   "text": "so",
-   "x": 665,
-   "y": 18,
-   "w": 12,
-   "h": 6
-  },
-  {
-   "text": "du",
-   "x": 681,
-   "y": 16,
-   "w": 11,
-   "h": 8
-  },
-  {
-   "text": "hoc",
-   "x": 696,
-   "y": 16,
-   "w": 17,
-   "h": 10
-  },
-  {
-   "text": "ngh&",
-   "x": 718,
-   "y": 14,
-   "w": 24,
-   "h": 13
-  },
-  {
-   "text": "däo",
-   "x": 759,
-   "y": 16,
-   "w": 18,
-   "h": 8
-  },
-  {
-   "text": "tao",
-   "x": 781,
-   "y": 16,
-   "w": 15,
-   "h": 10
-  },
-  {
-   "text": "tiöng",
-   "x": 799,
-   "y": 14,
-   "w": 23,
-   "h": 13
-  },
-  {
-   "text": "Düc",
-   "x": 827,
-   "y": 16,
-   "w": 21,
-   "h": 8
-  },
-  {
-   "text": "uy",
-   "x": 851,
-   "y": 18,
-   "w": 11,
-   "h": 9
-  },
-  {
-   "text": "tin",
-   "x": 865,
-   "y": 16,
-   "w": 12,
-   "h": 8
-  },
-  {
-   "text": "cho",
-   "x": 881,
-   "y": 16,
-   "w": 17,
-   "h": 8
-  },
-  {
-   "text": "ban",
-   "x": 902,
-   "y": 16,
-   "w": 17,
-   "h": 10
-  },
-  {
-   "text": "Iya",
-   "x": 924,
-   "y": 16,
-   "w": 15,
-   "h": 10
-  },
-  {
-   "text": "chon",
-   "x": 942,
-   "y": 16,
-   "w": 23,
-   "h": 10
-  },
-  {
    "text": "«ws",
    "x": 81,
    "y": 201,
@@ -1719,97 +1565,6 @@
    "y": 1112,
    "w": 164,
    "h": 16
-  },
-  {
-   "text": "12",
-   "x": 114,
-   "y": 1466,
-   "w": 15,
-   "h": 13
-  },
-  {
-   "text": "|",
-   "x": 146,
-   "y": 1464,
-   "w": 2,
-   "h": 17
-  },
-  {
-   "text": "zwölf",
-   "x": 166,
-   "y": 1464,
-   "w": 45,
-   "h": 15
-  },
-  {
-   "text": "13",
-   "x": 305,
-   "y": 1532,
-   "w": 9,
-   "h": 8
-  },
-  {
-   "text": "‚http://duhocngheduc.edu.vn/",
-   "x": 478,
-   "y": 1528,
-   "w": 142,
-   "h": 16
-  },
-  {
-   "text": "11",
-   "x": 791,
-   "y": 1532,
-   "w": 9,
-   "h": 8
-  },
-  {
-   "text": "Vü",
-   "x": 805,
-   "y": 1532,
-   "w": 13,
-   "h": 8
-  },
-  {
-   "text": "Ngoc",
-   "x": 823,
-   "y": 1532,
-   "w": 25,
-   "h": 9
-  },
-  {
-   "text": "Phan,",
-   "x": 851,
-   "y": 1532,
-   "w": 25,
-   "h": 8
-  },
-  {
-   "text": "Döng",
-   "x": 883,
-   "y": 1530,
-   "w": 26,
-   "h": 11
-  },
-  {
-   "text": "Da,",
-   "x": 912,
-   "y": 1532,
-   "w": 13,
-   "h": 8
-  },
-  {
-   "text": "Hä",
-   "x": 933,
-   "y": 1532,
-   "w": 13,
-   "h": 8
-  },
-  {
-   "text": "Nöi",
-   "x": 950,
-   "y": 1532,
-   "w": 15,
-   "h": 8
   }
  ],
  "fields": [
@@ -1991,9 +1746,13 @@
   }
  ],
  "review": {
-  "status": "raw-ocr",
+  "status": "partial",
   "notes": [
-   "1 (cross out the wrong word) has no field type on the page and is left ungraded."
-  ]
+   "1 (cross out the wrong word) has no field type on the page and is left ungraded.",
+   "Word layer cleaned: 35 OCR tokens removed (22 top-watermark, 10 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
+   "Answers graded from the official key; status advanced from raw-ocr to partial."
+  ],
+  "verifiedWords": 223,
+  "totalWords": 258
  }
 }
