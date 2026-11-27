@@ -6,125 +6,6 @@
  "height": 1556,
  "words": [
   {
-   "text": "Du",
-   "x": 485,
-   "y": 16,
-   "w": 13,
-   "h": 8
-  },
-  {
-   "text": "hoc",
-   "x": 503,
-   "y": 16,
-   "w": 17,
-   "h": 10
-  },
-  {
-   "text": "ngh@",
-   "x": 523,
-   "y": 15,
-   "w": 24,
-   "h": 11
-  },
-  {
-   "text": "Vogel,",
-   "x": 575,
-   "y": 16,
-   "w": 31,
-   "h": 11
-  },
-  {
-   "text": "hö",
-   "x": 650,
-   "y": 15,
-   "w": 11,
-   "h": 9
-  },
-  {
-   "text": "so",
-   "x": 665,
-   "y": 18,
-   "w": 12,
-   "h": 6
-  },
-  {
-   "text": "du",
-   "x": 681,
-   "y": 16,
-   "w": 11,
-   "h": 8
-  },
-  {
-   "text": "hoc",
-   "x": 696,
-   "y": 16,
-   "w": 17,
-   "h": 10
-  },
-  {
-   "text": "ngh&",
-   "x": 718,
-   "y": 15,
-   "w": 24,
-   "h": 11
-  },
-  {
-   "text": "va",
-   "x": 745,
-   "y": 16,
-   "w": 11,
-   "h": 8
-  },
-  {
-   "text": "däo",
-   "x": 759,
-   "y": 16,
-   "w": 18,
-   "h": 8
-  },
-  {
-   "text": "Tao",
-   "x": 781,
-   "y": 16,
-   "w": 15,
-   "h": 10
-  },
-  {
-   "text": "tleng",
-   "x": 799,
-   "y": 15,
-   "w": 23,
-   "h": 11
-  },
-  {
-   "text": "Düc",
-   "x": 827,
-   "y": 16,
-   "w": 21,
-   "h": 8
-  },
-  {
-   "text": "uy",
-   "x": 851,
-   "y": 18,
-   "w": 11,
-   "h": 9
-  },
-  {
-   "text": "iin",
-   "x": 865,
-   "y": 16,
-   "w": 12,
-   "h": 8
-  },
-  {
-   "text": "cho",
-   "x": 881,
-   "y": 16,
-   "w": 17,
-   "h": 8
-  },
-  {
    "text": "TRAINING:",
    "x": 90,
    "y": 107,
@@ -2316,137 +2197,11 @@
    "h": 17
   },
   {
-   "text": "fünfundvierzig",
-   "x": 806,
-   "y": 1471,
-   "w": 126,
-   "h": 21
-  },
-  {
-   "text": "|",
-   "x": 948,
-   "y": 1470,
-   "w": 2,
-   "h": 17
-  },
-  {
-   "text": "45",
-   "x": 967,
-   "y": 1473,
-   "w": 18,
-   "h": 13
-  },
-  {
    "text": "ITEM)",
    "x": 1002,
    "y": 1467,
    "w": 98,
    "h": 27
-  },
-  {
-   "text": "Du",
-   "x": 134,
-   "y": 1532,
-   "w": 13,
-   "h": 8
-  },
-  {
-   "text": "hoc",
-   "x": 151,
-   "y": 1532,
-   "w": 17,
-   "h": 10
-  },
-  {
-   "text": "nghd",
-   "x": 172,
-   "y": 1530,
-   "w": 24,
-   "h": 14
-  },
-  {
-   "text": "Dürc",
-   "x": 199,
-   "y": 1532,
-   "w": 21,
-   "h": 8
-  },
-  {
-   "text": "Vogel",
-   "x": 223,
-   "y": 1532,
-   "w": 28,
-   "h": 12
-  },
-  {
-   "text": "0387569513",
-   "x": 255,
-   "y": 1532,
-   "w": 61,
-   "h": 8
-  },
-  {
-   "text": "http:/Iduhocngheduc.edu.vn/",
-   "x": 474,
-   "y": 1524,
-   "w": 146,
-   "h": 21
-  },
-  {
-   "text": "11",
-   "x": 791,
-   "y": 1532,
-   "w": 9,
-   "h": 8
-  },
-  {
-   "text": "Vü",
-   "x": 805,
-   "y": 1532,
-   "w": 13,
-   "h": 8
-  },
-  {
-   "text": "Ngoc",
-   "x": 823,
-   "y": 1532,
-   "w": 25,
-   "h": 11
-  },
-  {
-   "text": "Phan,",
-   "x": 851,
-   "y": 1532,
-   "w": 27,
-   "h": 9
-  },
-  {
-   "text": "Döng",
-   "x": 883,
-   "y": 1530,
-   "w": 26,
-   "h": 13
-  },
-  {
-   "text": "Da,",
-   "x": 912,
-   "y": 1532,
-   "w": 16,
-   "h": 9
-  },
-  {
-   "text": "Ha",
-   "x": 933,
-   "y": 1532,
-   "w": 13,
-   "h": 8
-  },
-  {
-   "text": "Nöi",
-   "x": 950,
-   "y": 1532,
-   "w": 15,
-   "h": 10
   }
  ],
  "fields": [
@@ -2679,9 +2434,12 @@
   }
  ],
  "review": {
-  "status": "raw-ocr",
+  "status": "partial",
   "notes": [
-   "Training Hören 2 a-d graded from the official key. Item 1 (line matching) and the Aussprache rule gap stay ungraded."
-  ]
+   "Training Hören 2 a-d graded from the official key. Item 1 (line matching) and the Aussprache rule gap stay ungraded.",
+   "Word layer cleaned: 35 OCR tokens removed (17 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
+  ],
+  "verifiedWords": 314,
+  "totalWords": 349
  }
 }

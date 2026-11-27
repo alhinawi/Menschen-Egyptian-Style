@@ -2476,7 +2476,8 @@
  "review": {
   "status": "raw-ocr",
   "notes": [
-   "Modul-Plus: the official key does not cover this page; left ungraded."
+   "Modul-Plus: the official key does not cover this page; left ungraded.",
+   "Pending: not yet graded."
   ]
  }
 }
