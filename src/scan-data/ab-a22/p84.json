@@ -2421,11 +2421,203 @@
    "h": 8
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p84-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1b",
+   "answer": "Zeugnissen",
+   "x": 665,
+   "y": 318,
+   "w": 165,
+   "h": 26
+  },
+  {
+   "id": "p84-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1c",
+   "answer": "schriftlichen",
+   "x": 344,
+   "y": 369,
+   "w": 162,
+   "h": 26
+  },
+  {
+   "id": "p84-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1d",
+   "answer": "mündlichen",
+   "x": 630,
+   "y": 369,
+   "w": 163,
+   "h": 26
+  },
+  {
+   "id": "p84-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1e",
+   "answer": "Studium",
+   "x": 243,
+   "y": 438,
+   "w": 157,
+   "h": 26
+  },
+  {
+   "id": "p84-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1f",
+   "answer": "Abitur",
+   "x": 713,
+   "y": 439,
+   "w": 166,
+   "h": 26
+  },
+  {
+   "id": "p84-1g",
+   "group": "g1",
+   "kind": "text",
+   "label": "1g",
+   "answer": "Ausbildung",
+   "x": 343,
+   "y": 474,
+   "w": 161,
+   "h": 26
+  },
+  {
+   "id": "p84-1h",
+   "group": "g1",
+   "kind": "text",
+   "label": "1h",
+   "answer": "Lehre",
+   "x": 580,
+   "y": 474,
+   "w": 171,
+   "h": 26
+  },
+  {
+   "id": "p84-3r1",
+   "group": "g3",
+   "kind": "text",
+   "label": "3r1",
+   "answer": "den",
+   "x": 500,
+   "y": 1008,
+   "w": 260,
+   "h": 26
+  },
+  {
+   "id": "p84-3r2",
+   "group": "g3",
+   "kind": "text",
+   "label": "3r2",
+   "answer": "das",
+   "x": 500,
+   "y": 1034,
+   "w": 260,
+   "h": 26
+  },
+  {
+   "id": "p84-3r3",
+   "group": "g3",
+   "kind": "text",
+   "label": "3r3",
+   "answer": "die",
+   "x": 500,
+   "y": 1061,
+   "w": 260,
+   "h": 26
+  },
+  {
+   "id": "p84-3r4",
+   "group": "g3",
+   "kind": "text",
+   "label": "3r4",
+   "answer": "die",
+   "x": 500,
+   "y": 1091,
+   "w": 260,
+   "h": 26
+  },
+  {
+   "id": "p84-4b",
+   "group": "g4",
+   "kind": "text",
+   "label": "4b",
+   "answer": "den",
+   "x": 505,
+   "y": 1265,
+   "w": 50,
+   "h": 26
+  },
+  {
+   "id": "p84-4c",
+   "group": "g4",
+   "kind": "text",
+   "label": "4c",
+   "answer": "die",
+   "x": 380,
+   "y": 1296,
+   "w": 135,
+   "h": 26
+  },
+  {
+   "id": "p84-4d",
+   "group": "g4",
+   "kind": "text",
+   "label": "4d",
+   "answer": "das",
+   "x": 435,
+   "y": 1320,
+   "w": 47,
+   "h": 26
+  },
+  {
+   "id": "p84-4e",
+   "group": "g4",
+   "kind": "text",
+   "label": "4e",
+   "answer": "die",
+   "x": 448,
+   "y": 1346,
+   "w": 50,
+   "h": 26
+  },
+  {
+   "id": "p84-4f",
+   "group": "g4",
+   "kind": "text",
+   "label": "4f",
+   "answer": "der",
+   "x": 485,
+   "y": 1373,
+   "w": 50,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "1 Ordnen Sie zu (Schule Winterfeld)"
+  },
+  {
+   "id": "g3",
+   "label": "3 Relativpronomen Tabelle (Akkusativ)"
+  },
+  {
+   "id": "g4",
+   "label": "4 Reisevorbereitungen. Ergänzen Sie"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Lektion 23 graded from the Loesungsschluessel: ex1 b-h (a = handwritten example Noten, skipped), ex3 Akkusativ column of the Relativpronomen table (4 cells; Nominativ pre-printed, der = example), ex4 b-f (a = handwritten example den, skipped). Ex2 draw-line matching and the ex3 mark-the-pronoun part stay ungraded. All keyed, nothing derived."
+  ]
  }
 }
