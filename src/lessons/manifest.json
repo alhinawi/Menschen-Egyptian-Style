@@ -964,6 +964,7 @@
       "base-vocab",
       "meanings",
       "kb-a22-words",
+      "ab-a22-words",
       "ab-a22-m1"
     ],
     "bodyAttrs": {},
@@ -983,6 +984,7 @@
       "base-vocab",
       "meanings",
       "kb-a22-words",
+      "ab-a22-words",
       "ab-a22-m2"
     ],
     "bodyAttrs": {},
@@ -1002,6 +1004,7 @@
       "base-vocab",
       "meanings",
       "kb-a22-words",
+      "ab-a22-words",
       "ab-a22-m3"
     ],
     "bodyAttrs": {},
@@ -1021,6 +1024,7 @@
       "base-vocab",
       "meanings",
       "kb-a22-words",
+      "ab-a22-words",
       "ab-a22-m4"
     ],
     "bodyAttrs": {},
@@ -1040,6 +1044,7 @@
       "base-vocab",
       "meanings",
       "kb-a22-words",
+      "ab-a22-words",
       "ab-a22-m5"
     ],
     "bodyAttrs": {},
