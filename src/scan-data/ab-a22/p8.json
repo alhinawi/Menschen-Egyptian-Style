@@ -1343,7 +1343,7 @@
    "h": 17
   },
   {
-   "text": "_ambestenlernen,",
+   "text": "ambestenlernen,",
    "x": 441,
    "y": 742,
    "w": 177,
@@ -1602,7 +1602,7 @@
    "h": 17
   },
   {
-   "text": "rr__ie__",
+   "text": "rrie",
    "x": 743,
    "y": 879,
    "w": 138,
@@ -1644,7 +1644,7 @@
    "h": 19
   },
   {
-   "text": "Grammatika_",
+   "text": "Grammatika",
    "x": 186,
    "y": 930,
    "w": 135,
@@ -1679,7 +1679,7 @@
    "h": 15
   },
   {
-   "text": "__c_n__ichoftB",
+   "text": "cnichoftB",
    "x": 374,
    "y": 957,
    "w": 198,
@@ -2895,7 +2895,8 @@
   "notes": [
    "8 is a gap-fill with many single letters inside words; left ungraded. 9 is free writing.",
    "Word layer cleaned: 43 OCR tokens removed (22 top-watermark, 14 bottom-watermark, 4 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Answers graded from the official key; status advanced from raw-ocr to partial."
+   "Answers graded from the official key; status advanced from raw-ocr to partial.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
   "verifiedWords": 389,
   "totalWords": 432

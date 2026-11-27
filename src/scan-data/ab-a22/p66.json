@@ -545,7 +545,7 @@
    "h": 17
   },
   {
-   "text": "DiealteT__ef",
+   "text": "DiealteTef",
    "x": 480,
    "y": 400,
    "w": 146,
@@ -1168,13 +1168,6 @@
    "h": 15
   },
   {
-   "text": "_",
-   "x": 365,
-   "y": 757,
-   "w": 15,
-   "h": 1
-  },
-  {
    "text": "(e)",
    "x": 485,
    "y": 738,
@@ -1238,7 +1231,7 @@
    "h": 17
   },
   {
-   "text": "__(g)",
+   "text": "(g)",
    "x": 418,
    "y": 765,
    "w": 42,
@@ -2529,9 +2522,10 @@
   "status": "partial",
   "notes": [
    "Items 2 and 3 graded from the official key. Item 1 (letter-gap words) and item 4 (line matching) ungraded.",
-   "Word layer cleaned: 40 OCR tokens removed (22 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
+   "Word layer cleaned: 40 OCR tokens removed (22 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 336,
+  "verifiedWords": 335,
   "totalWords": 376
  }
 }

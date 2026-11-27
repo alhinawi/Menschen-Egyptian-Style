@@ -594,13 +594,6 @@
    "h": 18
   },
   {
-   "text": "_",
-   "x": 482,
-   "y": 420,
-   "w": 11,
-   "h": 1
-  },
-  {
    "text": "(ich",
    "x": 451,
    "y": 431,
@@ -1981,9 +1974,10 @@
   "status": "partial",
   "notes": [
    "Items 4, 6 and 7 (Deutsch column only) graded from the official key. Item 5 is partner work (key: individuelle Loesung) and item 7's 'Meine Sprache' column is personal; both ungraded.",
-   "Word layer cleaned: 28 OCR tokens removed (10 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
+   "Word layer cleaned: 28 OCR tokens removed (10 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 254,
+  "verifiedWords": 253,
   "totalWords": 282
  }
 }

@@ -475,13 +475,6 @@
    "h": 16
   },
   {
-   "text": "_",
-   "x": 526,
-   "y": 390,
-   "w": 2,
-   "h": 1
-  },
-  {
    "text": "nächste",
    "x": 539,
    "y": 372,
@@ -692,13 +685,6 @@
    "h": 15
   },
   {
-   "text": "_",
-   "x": 632,
-   "y": 538,
-   "w": 4,
-   "h": 1
-  },
-  {
    "text": "c",
    "x": 177,
    "y": 555,
@@ -753,13 +739,6 @@
    "y": 549,
    "w": 33,
    "h": 15
-  },
-  {
-   "text": "__",
-   "x": 613,
-   "y": 565,
-   "w": 19,
-   "h": 1
   },
   {
    "text": "d",
@@ -825,13 +804,6 @@
    "h": 15
   },
   {
-   "text": "_",
-   "x": 727,
-   "y": 592,
-   "w": 5,
-   "h": 1
-  },
-  {
    "text": "Ich",
    "x": 202,
    "y": 604,
@@ -874,7 +846,7 @@
    "h": 16
   },
   {
-   "text": "Ich__",
+   "text": "Ich",
    "x": 528,
    "y": 602,
    "w": 62,
@@ -2128,9 +2100,10 @@
   "status": "partial",
   "notes": [
    "Items 8, 9 and 12a graded from the official key (key for 9: 'lassen es putzen', 'lassen sie uns bringen', 'lässt sie installieren', 'lasse es reparieren'). Items 10, 11, 12b ungraded (free or drawn).",
-   "Word layer cleaned: 39 OCR tokens removed (23 top-watermark, 13 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
+   "Word layer cleaned: 39 OCR tokens removed (23 top-watermark, 13 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 259,
+  "verifiedWords": 255,
   "totalWords": 298
  }
 }

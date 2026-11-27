@@ -251,7 +251,7 @@
    "h": 15
   },
   {
-   "text": "8_",
+   "text": "8",
    "x": 623,
    "y": 352,
    "w": 7,
@@ -286,25 +286,11 @@
    "h": 9
   },
   {
-   "text": "__",
-   "x": 611,
-   "y": 390,
-   "w": 7,
-   "h": 1
-  },
-  {
    "text": "kostenlose",
    "x": 663,
    "y": 374,
    "w": 80,
    "h": 14
-  },
-  {
-   "text": "_",
-   "x": 787,
-   "y": 390,
-   "w": 15,
-   "h": 1
   },
   {
    "text": "in",
@@ -454,7 +440,7 @@
    "h": 13
   },
   {
-   "text": "Ander_",
+   "text": "Ander",
    "x": 202,
    "y": 468,
    "w": 63,
@@ -466,13 +452,6 @@
    "y": 496,
    "w": 97,
    "h": 19
-  },
-  {
-   "text": "_",
-   "x": 305,
-   "y": 511,
-   "w": 2,
-   "h": 1
   },
   {
    "text": "(h)",
@@ -566,7 +545,7 @@
    "h": 16
   },
   {
-   "text": "_/8",
+   "text": "/8",
    "x": 943,
    "y": 547,
    "w": 30,
@@ -1014,7 +993,7 @@
    "h": 3
   },
   {
-   "text": "_/4",
+   "text": "/4",
    "x": 945,
    "y": 736,
    "w": 31,
@@ -1159,13 +1138,6 @@
    "y": 839,
    "w": 29,
    "h": 17
-  },
-  {
-   "text": "_",
-   "x": 896,
-   "y": 835,
-   "w": 20,
-   "h": 29
   },
   {
    "text": "dem",
@@ -1343,7 +1315,7 @@
    "h": 17
   },
   {
-   "text": "_/3",
+   "text": "/3",
    "x": 944,
    "y": 926,
    "w": 29,
@@ -1637,13 +1609,6 @@
    "h": 17
   },
   {
-   "text": "_",
-   "x": 359,
-   "y": 1142,
-   "w": 7,
-   "h": 1
-  },
-  {
    "text": "(b)?",
    "x": 746,
    "y": 1122,
@@ -1735,13 +1700,6 @@
    "h": 15
   },
   {
-   "text": "_",
-   "x": 679,
-   "y": 1168,
-   "w": 11,
-   "h": 1
-  },
-  {
    "text": "4",
    "x": 188,
    "y": 1184,
@@ -1761,13 +1719,6 @@
    "y": 1178,
    "w": 27,
    "h": 17
-  },
-  {
-   "text": "_",
-   "x": 359,
-   "y": 1195,
-   "w": 21,
-   "h": 1
   },
   {
    "text": "(d).",
@@ -1803,20 +1754,6 @@
    "y": 1206,
    "w": 40,
    "h": 15
-  },
-  {
-   "text": "_",
-   "x": 339,
-   "y": 1222,
-   "w": 6,
-   "h": 1
-  },
-  {
-   "text": "_",
-   "x": 656,
-   "y": 1222,
-   "w": 7,
-   "h": 1
   },
   {
    "text": "Der",
@@ -1861,7 +1798,7 @@
    "h": 16
   },
   {
-   "text": "_/6",
+   "text": "/6",
    "x": 946,
    "y": 1262,
    "w": 30,
@@ -2030,7 +1967,8 @@
   "notes": [
    "Test page: the official key has no answers for the Test, so it is left ungraded.",
    "Word layer cleaned: 43 OCR tokens removed (22 top-watermark, 14 bottom-watermark, 0 underscore-gap merges, 3 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
+   "Pending: not yet graded.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }
 }

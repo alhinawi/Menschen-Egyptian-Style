@@ -1287,7 +1287,7 @@
    "h": 16
   },
   {
-   "text": "De_",
+   "text": "De",
    "x": 589,
    "y": 1063,
    "w": 25,
@@ -2074,7 +2074,8 @@
   "notes": [
    "7 (write sentences), 8 (open speaking) and 10 (listen and correct, written sentences) are left ungraded.",
    "Word layer cleaned: 38 OCR tokens removed (22 top-watermark, 13 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Answers graded from the official key; status advanced from raw-ocr to partial."
+   "Answers graded from the official key; status advanced from raw-ocr to partial.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
   "verifiedWords": 281,
   "totalWords": 319

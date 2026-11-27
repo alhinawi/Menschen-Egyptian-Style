@@ -223,7 +223,7 @@
    "h": 16
   },
   {
-   "text": "_Nebel,.",
+   "text": "Nebel,.",
    "x": 431,
    "y": 384,
    "w": 66,
@@ -909,7 +909,7 @@
    "h": 15
   },
   {
-   "text": "_(e)",
+   "text": "(e)",
    "x": 536,
    "y": 678,
    "w": 32,
@@ -1861,14 +1861,14 @@
    "h": 16
   },
   {
-   "text": "besonders__",
+   "text": "besonders",
    "x": 458,
    "y": 1151,
    "w": 127,
    "h": 16
   },
   {
-   "text": "__(b)dasMeerund",
+   "text": "(b)dasMeerund",
    "x": 585,
    "y": 1150,
    "w": 185,
@@ -2435,7 +2435,7 @@
    "h": 16
   },
   {
-   "text": "_(h)",
+   "text": "(h)",
    "x": 306,
    "y": 1366,
    "w": 25,
@@ -2732,7 +2732,8 @@
   "status": "partial",
   "notes": [
    "Items 2 and 4 graded from the official key. Item 1 (several valid words per picture) and the item 3 table (free cell layout) are left ungraded.",
-   "Word layer cleaned: 47 OCR tokens removed (22 top-watermark, 14 bottom-watermark, 4 underscore-gap merges, 4 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
+   "Word layer cleaned: 47 OCR tokens removed (22 top-watermark, 14 bottom-watermark, 4 underscore-gap merges, 4 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
   "verifiedWords": 365,
   "totalWords": 412

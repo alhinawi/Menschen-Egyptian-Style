@@ -195,7 +195,7 @@
    "h": 22
   },
   {
-   "text": "b_",
+   "text": "b",
    "x": 136,
    "y": 276,
    "w": 27,
@@ -321,7 +321,7 @@
    "h": 15
   },
   {
-   "text": "g_",
+   "text": "g",
    "x": 136,
    "y": 416,
    "w": 40,
@@ -1841,7 +1841,8 @@
   "status": "partial",
   "notes": [
    "Items 6 and 8 graded from the official key. Item 5 (several tiny blanks per line) and 7 (free) stay ungraded.",
-   "Word layer cleaned: 40 OCR tokens removed (19 top-watermark, 15 bottom-watermark, 3 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
+   "Word layer cleaned: 40 OCR tokens removed (19 top-watermark, 15 bottom-watermark, 3 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
   "verifiedWords": 233,
   "totalWords": 273

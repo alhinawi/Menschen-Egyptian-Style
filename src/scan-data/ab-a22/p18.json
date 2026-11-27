@@ -363,13 +363,6 @@
    "h": 16
   },
   {
-   "text": "_",
-   "x": 555,
-   "y": 405,
-   "w": 7,
-   "h": 1
-  },
-  {
    "text": "ungefähr",
    "x": 668,
    "y": 387,
@@ -1231,13 +1224,6 @@
    "h": 17
   },
   {
-   "text": "_",
-   "x": 581,
-   "y": 891,
-   "w": 25,
-   "h": 1
-  },
-  {
    "text": "die",
    "x": 756,
    "y": 873,
@@ -1350,14 +1336,14 @@
    "h": 19
   },
   {
-   "text": "hatsconk_",
+   "text": "hatsconk",
    "x": 676,
    "y": 927,
    "w": 126,
    "h": 19
   },
   {
-   "text": "ap__f}",
+   "text": "apf}",
    "x": 808,
    "y": 927,
    "w": 81,
@@ -1420,7 +1406,7 @@
    "h": 15
   },
   {
-   "text": "b_d__u__et(h),",
+   "text": "bduet(h),",
    "x": 178,
    "y": 980,
    "w": 188,
@@ -2250,9 +2236,10 @@
   "notes": [
    "2 (letters missing inside words) is left ungraded.",
    "Word layer cleaned: 40 OCR tokens removed (22 top-watermark, 13 bottom-watermark, 2 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Answers graded from the official key; status advanced from raw-ocr to partial."
+   "Answers graded from the official key; status advanced from raw-ocr to partial.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 296,
+  "verifiedWords": 294,
   "totalWords": 336
  }
 }

@@ -286,7 +286,7 @@
    "h": 14
   },
   {
-   "text": "_zehen,",
+   "text": "zehen,",
    "x": 274,
    "y": 313,
    "w": 23,
@@ -853,21 +853,7 @@
    "h": 18
   },
   {
-   "text": "_",
-   "x": 262,
-   "y": 704,
-   "w": 9,
-   "h": 1
-  },
-  {
-   "text": "__",
-   "x": 271,
-   "y": 684,
-   "w": 25,
-   "h": 26
-  },
-  {
-   "text": "_ineinem",
+   "text": "ineinem",
    "x": 295,
    "y": 688,
    "w": 96,
@@ -1147,7 +1133,7 @@
    "h": 22
   },
   {
-   "text": "zeigt,istR_",
+   "text": "zeigt,istR",
    "x": 649,
    "y": 904,
    "w": 100,
@@ -1460,13 +1446,6 @@
    "y": 1119,
    "w": 29,
    "h": 20
-  },
-  {
-   "text": "__",
-   "x": 178,
-   "y": 1163,
-   "w": 23,
-   "h": 1
   },
   {
    "text": "(finden)",
@@ -1938,13 +1917,6 @@
    "h": 14
   },
   {
-   "text": "_",
-   "x": 589,
-   "y": 1327,
-   "w": 9,
-   "h": 1
-  },
-  {
    "text": "(kommen)",
    "x": 607,
    "y": 1308,
@@ -2027,13 +1999,6 @@
    "y": 1337,
    "w": 19,
    "h": 14
-  },
-  {
-   "text": "_",
-   "x": 555,
-   "y": 1353,
-   "w": 5,
-   "h": 1
   },
   {
    "text": "(sagen)",
@@ -2134,7 +2099,8 @@
   "status": "raw-ocr",
   "notes": [
    "Word layer cleaned: 27 OCR tokens removed (2 top-watermark, 15 bottom-watermark, 7 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
+   "Pending: not yet graded.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }
 }

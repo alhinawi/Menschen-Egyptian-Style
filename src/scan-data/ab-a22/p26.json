@@ -188,18 +188,11 @@
    "h": 15
   },
   {
-   "text": "ist_",
+   "text": "ist",
    "x": 617,
    "y": 297,
    "w": 39,
    "h": 17
-  },
-  {
-   "text": "__",
-   "x": 670,
-   "y": 313,
-   "w": 7,
-   "h": 1
   },
   {
    "text": "mich",
@@ -370,7 +363,7 @@
    "h": 14
   },
   {
-   "text": "einetolleI__",
+   "text": "einetolleI",
    "x": 496,
    "y": 498,
    "w": 106,
@@ -459,13 +452,6 @@
    "y": 603,
    "w": 23,
    "h": 9
-  },
-  {
-   "text": "__",
-   "x": 368,
-   "y": 615,
-   "w": 34,
-   "h": 1
   },
   {
    "text": "den",
@@ -613,13 +599,6 @@
    "y": 674,
    "w": 65,
    "h": 13
-  },
-  {
-   "text": "_",
-   "x": 351,
-   "y": 690,
-   "w": 15,
-   "h": 1
   },
   {
    "text": "ist",
@@ -1399,7 +1378,7 @@
    "h": 13
   },
   {
-   "text": "Sie__",
+   "text": "Sie",
    "x": 487,
    "y": 1323,
    "w": 89,
@@ -1448,7 +1427,7 @@
    "h": 13
   },
   {
-   "text": "Sie__",
+   "text": "Sie",
    "x": 403,
    "y": 1347,
    "w": 48,
@@ -1505,7 +1484,8 @@
   "notes": [
    "Modul-Plus: the official key does not cover this page; left ungraded.",
    "Word layer cleaned: 38 OCR tokens removed (22 top-watermark, 12 bottom-watermark, 1 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
+   "Pending: not yet graded.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }
 }

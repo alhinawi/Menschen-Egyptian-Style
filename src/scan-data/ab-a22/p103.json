@@ -482,13 +482,6 @@
    "h": 9
   },
   {
-   "text": "_",
-   "x": 126,
-   "y": 1067,
-   "w": 17,
-   "h": 25
-  },
-  {
    "text": "gegenüber",
    "x": 156,
    "y": 1069,
@@ -1168,7 +1161,8 @@
   "status": "raw-ocr",
   "notes": [
    "Word layer cleaned: 40 OCR tokens removed (22 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
+   "Pending: not yet graded.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }
 }

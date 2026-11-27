@@ -153,14 +153,14 @@
    "h": 23
   },
   {
-   "text": "darfdasP_",
+   "text": "darfdasP",
    "x": 299,
    "y": 303,
    "w": 104,
    "h": 17
   },
   {
-   "text": "b_ik_m",
+   "text": "bikm",
    "x": 419,
    "y": 303,
    "w": 98,
@@ -174,14 +174,7 @@
    "h": 21
   },
   {
-   "text": "_",
-   "x": 668,
-   "y": 320,
-   "w": 5,
-   "h": 1
-  },
-  {
-   "text": "i__",
+   "text": "i",
    "x": 672,
    "y": 303,
    "w": 48,
@@ -1532,7 +1525,8 @@
   "status": "raw-ocr",
   "notes": [
    "Word layer cleaned: 43 OCR tokens removed (23 top-watermark, 16 bottom-watermark, 1 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
+   "Pending: not yet graded.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }
 }

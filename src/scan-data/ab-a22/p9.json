@@ -1455,7 +1455,7 @@
    "h": 27
   },
   {
-   "text": "wicht__",
+   "text": "wicht",
    "x": 289,
    "y": 910,
    "w": 77,
@@ -2141,7 +2141,8 @@
   "notes": [
    "Training Sprechen 1 a/b and Aussprache 2, 3 are free speaking, listening or marking tasks; left ungraded.",
    "Word layer cleaned: 37 OCR tokens removed (22 top-watermark, 12 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Answers graded from the official key; status advanced from raw-ocr to partial."
+   "Answers graded from the official key; status advanced from raw-ocr to partial.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
   "verifiedWords": 284,
   "totalWords": 321

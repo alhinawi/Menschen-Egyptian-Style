@@ -1875,13 +1875,6 @@
    "h": 1
   },
   {
-   "text": "_",
-   "x": 388,
-   "y": 1285,
-   "w": 7,
-   "h": 1
-  },
-  {
    "text": "(ERBAU)",
    "x": 445,
    "y": 1270,
@@ -2334,9 +2327,10 @@
   "status": "partial",
   "notes": [
    "Item 2 (word-building gap text) graded from the official key, letters b-k; a is the printed example. Item 1 (crossword) is left ungraded: the printed letters and pencil marks share the grid.",
-   "Word layer cleaned: 39 OCR tokens removed (23 top-watermark, 13 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
+   "Word layer cleaned: 39 OCR tokens removed (23 top-watermark, 13 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 315,
+  "verifiedWords": 314,
   "totalWords": 354
  }
 }

@@ -153,13 +153,6 @@
    "h": 13
   },
   {
-   "text": "_",
-   "x": 411,
-   "y": 224,
-   "w": 5,
-   "h": 1
-  },
-  {
    "text": "Meer",
    "x": 423,
    "y": 210,
@@ -370,7 +363,7 @@
    "h": 15
   },
   {
-   "text": "Ichträume_",
+   "text": "Ichträume",
    "x": 120,
    "y": 333,
    "w": 103,
@@ -482,13 +475,6 @@
    "h": 9
   },
   {
-   "text": "_",
-   "x": 213,
-   "y": 455,
-   "w": 10,
-   "h": 1
-  },
-  {
    "text": "interessierst",
    "x": 263,
    "y": 440,
@@ -522,13 +508,6 @@
    "y": 461,
    "w": 65,
    "h": 24
-  },
-  {
-   "text": "__",
-   "x": 414,
-   "y": 480,
-   "w": 13,
-   "h": 1
   },
   {
    "text": "interessiere",
@@ -1581,7 +1560,8 @@
   "status": "raw-ocr",
   "notes": [
    "Word layer cleaned: 33 OCR tokens removed (16 top-watermark, 14 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
+   "Pending: not yet graded.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }
 }

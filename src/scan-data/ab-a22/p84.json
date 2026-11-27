@@ -1791,13 +1791,6 @@
    "h": 19
   },
   {
-   "text": "__",
-   "x": 437,
-   "y": 1342,
-   "w": 39,
-   "h": 1
-  },
-  {
    "text": "wir",
    "x": 482,
    "y": 1325,
@@ -1971,13 +1964,6 @@
    "y": 1379,
    "w": 79,
    "h": 23
-  },
-  {
-   "text": "__",
-   "x": 491,
-   "y": 1396,
-   "w": 39,
-   "h": 1
   },
   {
    "text": "gestern",
@@ -2226,9 +2212,10 @@
   "status": "partial",
   "notes": [
    "Lektion 23 graded from the Loesungsschluessel: ex1 b-h (a = handwritten example Noten, skipped), ex3 Akkusativ column of the Relativpronomen table (4 cells; Nominativ pre-printed, der = example), ex4 b-f (a = handwritten example den, skipped). Ex2 draw-line matching and the ex3 mark-the-pronoun part stay ungraded. All keyed, nothing derived.",
-   "Word layer cleaned: 56 OCR tokens removed (21 top-watermark, 16 bottom-watermark, 0 underscore-gap merges, 16 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
+   "Word layer cleaned: 56 OCR tokens removed (21 top-watermark, 16 bottom-watermark, 0 underscore-gap merges, 16 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 289,
+  "verifiedWords": 287,
   "totalWords": 345
  }
 }

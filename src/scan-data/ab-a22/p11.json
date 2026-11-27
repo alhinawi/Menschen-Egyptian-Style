@@ -265,13 +265,6 @@
    "h": 28
   },
   {
-   "text": "_",
-   "x": 771,
-   "y": 404,
-   "w": 7,
-   "h": 1
-  },
-  {
    "text": "Semester",
    "x": 138,
    "y": 412,
@@ -938,7 +931,8 @@
   "notes": [
    "Lernwortschatz: translate into your own language and free notes. Left ungraded.",
    "Word layer cleaned: 33 OCR tokens removed (19 top-watermark, 14 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 0 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
+   "Pending: not yet graded.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }
 }

@@ -307,13 +307,6 @@
    "h": 17
   },
   {
-   "text": "_",
-   "x": 363,
-   "y": 384,
-   "w": 13,
-   "h": 1
-  },
-  {
    "text": "STRUKTUREN",
    "x": 45,
    "y": 233,
@@ -1084,7 +1077,7 @@
    "h": 21
   },
   {
-   "text": "HabenSie_",
+   "text": "HabenSie",
    "x": 248,
    "y": 1014,
    "w": 128,
@@ -1147,7 +1140,7 @@
    "h": 15
   },
   {
-   "text": "Jaich_",
+   "text": "Jaich",
    "x": 144,
    "y": 1068,
    "w": 59,
@@ -1497,7 +1490,7 @@
    "h": 15
   },
   {
-   "text": "Uhr_",
+   "text": "Uhr",
    "x": 683,
    "y": 1284,
    "w": 35,
@@ -1840,7 +1833,7 @@
    "h": 19
   },
   {
-   "text": "_(g),",
+   "text": "(g),",
    "x": 898,
    "y": 1200,
    "w": 63,
@@ -1967,9 +1960,10 @@
   "notes": [
    "4 (complete indirect questions) and 5 (write questions) are free writing; left ungraded.",
    "Word layer cleaned: 38 OCR tokens removed (19 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Answers graded from the official key; status advanced from raw-ocr to partial."
+   "Answers graded from the official key; status advanced from raw-ocr to partial.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 264,
+  "verifiedWords": 263,
   "totalWords": 302
  }
 }

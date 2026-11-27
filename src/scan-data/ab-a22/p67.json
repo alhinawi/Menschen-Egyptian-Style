@@ -293,7 +293,7 @@
    "h": 16
   },
   {
-   "text": "Dies__(b)",
+   "text": "Dies(b)",
    "x": 160,
    "y": 549,
    "w": 94,
@@ -307,7 +307,7 @@
    "h": 16
   },
   {
-   "text": "D__(c)",
+   "text": "D(c)",
    "x": 309,
    "y": 549,
    "w": 67,
@@ -321,7 +321,7 @@
    "h": 17
   },
   {
-   "text": "Vond__(d)",
+   "text": "Vond(d)",
    "x": 159,
    "y": 576,
    "w": 109,
@@ -440,7 +440,7 @@
    "h": 10
   },
   {
-   "text": "beid__(f)",
+   "text": "beid(f)",
    "x": 289,
    "y": 630,
    "w": 98,
@@ -566,7 +566,7 @@
    "h": 16
   },
   {
-   "text": "D__(g)",
+   "text": "D(g)",
    "x": 240,
    "y": 684,
    "w": 65,
@@ -622,14 +622,14 @@
    "h": 23
   },
   {
-   "text": "Welch__",
+   "text": "Welch",
    "x": 159,
    "y": 711,
    "w": 82,
    "h": 19
   },
   {
-   "text": "(h)?D__",
+   "text": "(h)?D",
    "x": 249,
    "y": 711,
    "w": 78,
@@ -671,7 +671,7 @@
    "h": 18
   },
   {
-   "text": "d__(j)",
+   "text": "d(j)",
    "x": 215,
    "y": 738,
    "w": 62,
@@ -769,7 +769,7 @@
    "h": 15
   },
   {
-   "text": "dud__",
+   "text": "dud",
    "x": 816,
    "y": 766,
    "w": 65,
@@ -804,7 +804,7 @@
    "h": 22
   },
   {
-   "text": "Ja,d__",
+   "text": "Ja,d",
    "x": 158,
    "y": 819,
    "w": 68,
@@ -874,7 +874,7 @@
    "h": 10
   },
   {
-   "text": "dies__(n)",
+   "text": "dies(n)",
    "x": 652,
    "y": 819,
    "w": 94,
@@ -1392,7 +1392,7 @@
    "h": 1
   },
   {
-   "text": "_(b)?",
+   "text": "(b)?",
    "x": 933,
    "y": 1117,
    "w": 47,
@@ -2000,7 +2000,8 @@
   "status": "partial",
   "notes": [
    "Item 5 table, item 6 (ending fields: each blank holds only the missing letters after the printed first letters, e.g. Dies__ = er; answers are the endings of the keyed full words) and item 7 graded from the official key. Item 6 tiny blanks are placed from the overlay, check placement when clicking.",
-   "Word layer cleaned: 32 OCR tokens removed (13 top-watermark, 15 bottom-watermark, 1 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
+   "Word layer cleaned: 32 OCR tokens removed (13 top-watermark, 15 bottom-watermark, 1 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
   "verifiedWords": 241,
   "totalWords": 273

@@ -580,13 +580,6 @@
    "h": 16
   },
   {
-   "text": "_",
-   "x": 533,
-   "y": 456,
-   "w": 10,
-   "h": 1
-  },
-  {
    "text": "ihr.",
    "x": 550,
    "y": 438,
@@ -2421,7 +2414,7 @@
    "h": 13
   },
   {
-   "text": "b_",
+   "text": "b",
    "x": 149,
    "y": 1371,
    "w": 11,
@@ -2806,9 +2799,10 @@
   "status": "partial",
   "notes": [
    "Items 9 and 10 graded from the official key (10 a is the printed example). Item 11 a is left ungraded: the key numbering does not line up with the printed blanks.",
-   "Word layer cleaned: 41 OCR tokens removed (23 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
+   "Word layer cleaned: 41 OCR tokens removed (23 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 374,
+  "verifiedWords": 373,
   "totalWords": 415
  }
 }

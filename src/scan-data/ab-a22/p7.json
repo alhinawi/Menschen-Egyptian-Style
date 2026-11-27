@@ -496,13 +496,6 @@
    "h": 9
   },
   {
-   "text": "_",
-   "x": 515,
-   "y": 433,
-   "w": 9,
-   "h": 25
-  },
-  {
    "text": "Germany,",
    "x": 535,
    "y": 438,
@@ -2587,9 +2580,10 @@
   "notes": [
    "6 is sentence writing (several correct word orders); left ungraded. 5 a is the printed example.",
    "Word layer cleaned: 40 OCR tokens removed (22 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Answers graded from the official key; status advanced from raw-ocr to partial."
+   "Answers graded from the official key; status advanced from raw-ocr to partial.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 337,
+  "verifiedWords": 336,
   "totalWords": 377
  }
 }

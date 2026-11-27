@@ -916,7 +916,7 @@
    "h": 18
   },
   {
-   "text": "_/",
+   "text": "/",
    "x": 926,
    "y": 583,
    "w": 9,
@@ -1399,7 +1399,7 @@
    "h": 16
   },
   {
-   "text": "Job,_",
+   "text": "Job,",
    "x": 391,
    "y": 798,
    "w": 86,
@@ -1490,7 +1490,7 @@
    "h": 11
   },
   {
-   "text": "_/6",
+   "text": "/6",
    "x": 927,
    "y": 829,
    "w": 31,
@@ -2022,7 +2022,7 @@
    "h": 10
   },
   {
-   "text": "_/T",
+   "text": "/T",
    "x": 930,
    "y": 1288,
    "w": 30,
@@ -2211,7 +2211,8 @@
   "status": "raw-ocr",
   "notes": [
    "Word layer cleaned: 69 OCR tokens removed (22 top-watermark, 15 bottom-watermark, 3 underscore-gap merges, 25 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
+   "Pending: not yet graded.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }
 }
