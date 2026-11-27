@@ -1,0 +1,764 @@
+{
+ "book": "kb-a22",
+ "page": 29,
+ "image": "assets/kb-a22-p29.webp",
+ "width": 1100,
+ "height": 1556,
+ "words": [
+  {
+   "text": "Wir",
+   "x": 429,
+   "y": 108,
+   "w": 69,
+   "h": 30
+  },
+  {
+   "text": "wollen",
+   "x": 511,
+   "y": 107,
+   "w": 129,
+   "h": 33
+  },
+  {
+   "text": "nach",
+   "x": 655,
+   "y": 108,
+   "w": 91,
+   "h": 32
+  },
+  {
+   "text": "Rumänien.",
+   "x": 762,
+   "y": 110,
+   "w": 206,
+   "h": 31
+  },
+  {
+   "text": "Was",
+   "x": 128,
+   "y": 1087,
+   "w": 40,
+   "h": 16
+  },
+  {
+   "text": "ist",
+   "x": 177,
+   "y": 1086,
+   "w": 25,
+   "h": 17
+  },
+  {
+   "text": "richtig?",
+   "x": 210,
+   "y": 1086,
+   "w": 78,
+   "h": 24
+  },
+  {
+   "text": "Sehen",
+   "x": 295,
+   "y": 1086,
+   "w": 60,
+   "h": 18
+  },
+  {
+   "text": "Sie",
+   "x": 363,
+   "y": 1087,
+   "w": 29,
+   "h": 17
+  },
+  {
+   "text": "das",
+   "x": 400,
+   "y": 1087,
+   "w": 33,
+   "h": 17
+  },
+  {
+   "text": "Foto",
+   "x": 442,
+   "y": 1089,
+   "w": 45,
+   "h": 16
+  },
+  {
+   "text": "an,",
+   "x": 494,
+   "y": 1094,
+   "w": 30,
+   "h": 14
+  },
+  {
+   "text": "hören",
+   "x": 534,
+   "y": 1088,
+   "w": 57,
+   "h": 17
+  },
+  {
+   "text": "Sie",
+   "x": 599,
+   "y": 1089,
+   "w": 29,
+   "h": 17
+  },
+  {
+   "text": "und",
+   "x": 636,
+   "y": 1089,
+   "w": 37,
+   "h": 17
+  },
+  {
+   "text": "kreuzen",
+   "x": 130,
+   "y": 1112,
+   "w": 79,
+   "h": 17
+  },
+  {
+   "text": "Sie",
+   "x": 217,
+   "y": 1113,
+   "w": 30,
+   "h": 17
+  },
+  {
+   "text": "an.",
+   "x": 254,
+   "y": 1119,
+   "w": 30,
+   "h": 11
+  },
+  {
+   "text": "a",
+   "x": 130,
+   "y": 1160,
+   "w": 8,
+   "h": 10
+  },
+  {
+   "text": "Simone",
+   "x": 154,
+   "y": 1155,
+   "w": 67,
+   "h": 15
+  },
+  {
+   "text": "und",
+   "x": 227,
+   "y": 1155,
+   "w": 35,
+   "h": 15
+  },
+  {
+   "text": "Felix",
+   "x": 270,
+   "y": 1155,
+   "w": 42,
+   "h": 15
+  },
+  {
+   "text": "fahren",
+   "x": 181,
+   "y": 1181,
+   "w": 61,
+   "h": 16
+  },
+  {
+   "text": "in",
+   "x": 249,
+   "y": 1182,
+   "w": 18,
+   "h": 15
+  },
+  {
+   "text": "den",
+   "x": 273,
+   "y": 1182,
+   "w": 33,
+   "h": 16
+  },
+  {
+   "text": "Urlaub.",
+   "x": 313,
+   "y": 1182,
+   "w": 67,
+   "h": 17
+  },
+  {
+   "text": "kommen",
+   "x": 432,
+   "y": 1183,
+   "w": 79,
+   "h": 16
+  },
+  {
+   "text": "aus",
+   "x": 518,
+   "y": 1189,
+   "w": 29,
+   "h": 11
+  },
+  {
+   "text": "dem",
+   "x": 554,
+   "y": 1184,
+   "w": 37,
+   "h": 16
+  },
+  {
+   "text": "Urlaub",
+   "x": 599,
+   "y": 1184,
+   "w": 61,
+   "h": 16
+  },
+  {
+   "text": "zurück.",
+   "x": 667,
+   "y": 1184,
+   "w": 67,
+   "h": 16
+  },
+  {
+   "text": "b",
+   "x": 128,
+   "y": 1208,
+   "w": 10,
+   "h": 16
+  },
+  {
+   "text": "Die",
+   "x": 154,
+   "y": 1209,
+   "w": 28,
+   "h": 15
+  },
+  {
+   "text": "Nachbarin",
+   "x": 190,
+   "y": 1208,
+   "w": 94,
+   "h": 16
+  },
+  {
+   "text": "soll",
+   "x": 291,
+   "y": 1209,
+   "w": 30,
+   "h": 16
+  },
+  {
+   "text": "auf",
+   "x": 374,
+   "y": 1210,
+   "w": 31,
+   "h": 16
+  },
+  {
+   "text": "sich",
+   "x": 410,
+   "y": 1210,
+   "w": 35,
+   "h": 16
+  },
+  {
+   "text": "auf",
+   "x": 497,
+   "y": 1210,
+   "w": 30,
+   "h": 16
+  },
+  {
+   "text": "das",
+   "x": 533,
+   "y": 1210,
+   "w": 28,
+   "h": 16
+  },
+  {
+   "text": "Haus",
+   "x": 570,
+   "y": 1212,
+   "w": 43,
+   "h": 14
+  },
+  {
+   "text": "c",
+   "x": 129,
+   "y": 1240,
+   "w": 7,
+   "h": 10
+  },
+  {
+   "text": "Simone",
+   "x": 153,
+   "y": 1236,
+   "w": 67,
+   "h": 15
+  },
+  {
+   "text": "und",
+   "x": 227,
+   "y": 1236,
+   "w": 35,
+   "h": 16
+  },
+  {
+   "text": "Felix",
+   "x": 269,
+   "y": 1236,
+   "w": 43,
+   "h": 16
+  },
+  {
+   "text": "wollen",
+   "x": 318,
+   "y": 1236,
+   "w": 62,
+   "h": 16
+  },
+  {
+   "text": "eine",
+   "x": 180,
+   "y": 1263,
+   "w": 37,
+   "h": 15
+  },
+  {
+   "text": "Postkarte",
+   "x": 225,
+   "y": 1263,
+   "w": 84,
+   "h": 16
+  },
+  {
+   "text": "aufpassen.",
+   "x": 638,
+   "y": 1211,
+   "w": 95,
+   "h": 21
+  },
+  {
+   "text": "ein",
+   "x": 362,
+   "y": 1264,
+   "w": 28,
+   "h": 15
+  },
+  {
+   "text": "Tagebuch",
+   "x": 396,
+   "y": 1264,
+   "w": 84,
+   "h": 21
+  },
+  {
+   "text": "im",
+   "x": 488,
+   "y": 1266,
+   "w": 22,
+   "h": 15
+  },
+  {
+   "text": "Internet",
+   "x": 517,
+   "y": 1266,
+   "w": 77,
+   "h": 15
+  },
+  {
+   "text": "schreiben.",
+   "x": 619,
+   "y": 1266,
+   "w": 93,
+   "h": 16
+  },
+  {
+   "text": "Beruf",
+   "x": 51,
+   "y": 1335,
+   "w": 10,
+   "h": 29
+  },
+  {
+   "text": "Mit",
+   "x": 129,
+   "y": 1328,
+   "w": 35,
+   "h": 17
+  },
+  {
+   "text": "welchen",
+   "x": 171,
+   "y": 1328,
+   "w": 84,
+   "h": 17
+  },
+  {
+   "text": "Verkehrsmitteln",
+   "x": 261,
+   "y": 1329,
+   "w": 165,
+   "h": 18
+  },
+  {
+   "text": "verreisen",
+   "x": 434,
+   "y": 1331,
+   "w": 94,
+   "h": 17
+  },
+  {
+   "text": "Sie",
+   "x": 536,
+   "y": 1331,
+   "w": 29,
+   "h": 17
+  },
+  {
+   "text": "gern?",
+   "x": 572,
+   "y": 1332,
+   "w": 57,
+   "h": 23
+  },
+  {
+   "text": "Erzählen",
+   "x": 639,
+   "y": 1331,
+   "w": 86,
+   "h": 17
+  },
+  {
+   "text": "Sie.",
+   "x": 733,
+   "y": 1332,
+   "w": 36,
+   "h": 17
+  },
+  {
+   "text": "m",
+   "x": 128,
+   "y": 1375,
+   "w": 10,
+   "h": 11
+  },
+  {
+   "text": "Ich",
+   "x": 153,
+   "y": 1370,
+   "w": 28,
+   "h": 16
+  },
+  {
+   "text": "verreise",
+   "x": 187,
+   "y": 1371,
+   "w": 72,
+   "h": 15
+  },
+  {
+   "text": "gern",
+   "x": 266,
+   "y": 1377,
+   "w": 41,
+   "h": 16
+  },
+  {
+   "text": "mit",
+   "x": 314,
+   "y": 1372,
+   "w": 31,
+   "h": 15
+  },
+  {
+   "text": "dem",
+   "x": 352,
+   "y": 1371,
+   "w": 37,
+   "h": 16
+  },
+  {
+   "text": "Flugzeug,",
+   "x": 397,
+   "y": 1372,
+   "w": 84,
+   "h": 22
+  },
+  {
+   "text": "weil",
+   "x": 489,
+   "y": 1373,
+   "w": 37,
+   "h": 15
+  },
+  {
+   "text": "ich",
+   "x": 533,
+   "y": 1373,
+   "w": 27,
+   "h": 16
+  },
+  {
+   "text": "dann",
+   "x": 567,
+   "y": 1373,
+   "w": 46,
+   "h": 16
+  },
+  {
+   "text": "schnell",
+   "x": 620,
+   "y": 1373,
+   "w": 65,
+   "h": 16
+  },
+  {
+   "text": "am",
+   "x": 152,
+   "y": 1403,
+   "w": 27,
+   "h": 10
+  },
+  {
+   "text": "Urlaubsort",
+   "x": 186,
+   "y": 1397,
+   "w": 98,
+   "h": 16
+  },
+  {
+   "text": "bin.",
+   "x": 290,
+   "y": 1398,
+   "w": 35,
+   "h": 16
+  },
+  {
+   "text": "Ich",
+   "x": 152,
+   "y": 1424,
+   "w": 28,
+   "h": 16
+  },
+  {
+   "text": "fahre",
+   "x": 188,
+   "y": 1424,
+   "w": 48,
+   "h": 17
+  },
+  {
+   "text": "am",
+   "x": 243,
+   "y": 1430,
+   "w": 27,
+   "h": 11
+  },
+  {
+   "text": "liebsten",
+   "x": 275,
+   "y": 1425,
+   "w": 72,
+   "h": 16
+  },
+  {
+   "text": "...",
+   "x": 355,
+   "y": 1439,
+   "w": 15,
+   "h": 2
+  },
+  {
+   "text": "The",
+   "x": 328,
+   "y": 1481,
+   "w": 29,
+   "h": 13
+  },
+  {
+   "text": "German",
+   "x": 363,
+   "y": 1481,
+   "w": 61,
+   "h": 13
+  },
+  {
+   "text": "Bookshop",
+   "x": 429,
+   "y": 1481,
+   "w": 77,
+   "h": 17
+  },
+  {
+   "text": "(0120",
+   "x": 513,
+   "y": 1480,
+   "w": 46,
+   "h": 16
+  },
+  {
+   "text": "36",
+   "x": 565,
+   "y": 1481,
+   "w": 18,
+   "h": 13
+  },
+  {
+   "text": "036",
+   "x": 589,
+   "y": 1481,
+   "w": 29,
+   "h": 13
+  },
+  {
+   "text": "38)",
+   "x": 624,
+   "y": 1480,
+   "w": 25,
+   "h": 16
+  },
+  {
+   "text": "äsloJVl",
+   "x": 654,
+   "y": 1476,
+   "w": 58,
+   "h": 21
+  },
+  {
+   "text": "soll",
+   "x": 718,
+   "y": 1480,
+   "w": 53,
+   "h": 17
+  },
+  {
+   "text": "neunundzwanzig",
+   "x": 785,
+   "y": 1484,
+   "w": 143,
+   "h": 20
+  },
+  {
+   "text": "|",
+   "x": 945,
+   "y": 1483,
+   "w": 2,
+   "h": 17
+  },
+  {
+   "text": "29",
+   "x": 965,
+   "y": 1485,
+   "w": 16,
+   "h": 13
+  }
+ ],
+ "fields": [
+  {
+   "id": "p29-2a-fahren in den Urlaub",
+   "group": "g2",
+   "kind": "radio",
+   "label": "fahren in den Urlaub",
+   "name": "p29-2a",
+   "value": "fahren in den Urlaub",
+   "answer": "true",
+   "x": 155,
+   "y": 1178,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p29-2a-kommen aus dem Urlaub zurück",
+   "group": "g2",
+   "kind": "radio",
+   "label": "kommen aus dem Urlaub zurück",
+   "name": "p29-2a",
+   "value": "kommen aus dem Urlaub zurück",
+   "answer": "false",
+   "x": 406,
+   "y": 1178,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p29-2b-auf sich",
+   "group": "g2",
+   "kind": "radio",
+   "label": "auf sich",
+   "name": "p29-2b",
+   "value": "auf sich",
+   "answer": "false",
+   "x": 348,
+   "y": 1206,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p29-2b-auf das Haus",
+   "group": "g2",
+   "kind": "radio",
+   "label": "auf das Haus",
+   "name": "p29-2b",
+   "value": "auf das Haus",
+   "answer": "true",
+   "x": 471,
+   "y": 1206,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p29-2c-eine Postkarte",
+   "group": "g2",
+   "kind": "radio",
+   "label": "eine Postkarte",
+   "name": "p29-2c",
+   "value": "eine Postkarte",
+   "answer": "false",
+   "x": 154,
+   "y": 1260,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p29-2c-ein Tagebuch im Internet",
+   "group": "g2",
+   "kind": "radio",
+   "label": "ein Tagebuch im Internet",
+   "name": "p29-2c",
+   "value": "ein Tagebuch im Internet",
+   "answer": "true",
+   "x": 336,
+   "y": 1260,
+   "w": 24,
+   "h": 24
+  }
+ ],
+ "audio": [
+  {
+   "id": "cd2-13-1",
+   "src": "assets/kb-a22-cd2-track13.mp3",
+   "label": "CD2 · Track 13",
+   "x": 25,
+   "y": 1086,
+   "w": 78,
+   "h": 26
+  }
+ ],
+ "groups": [
+  {
+   "id": "g2",
+   "label": "1 Was ist richtig? Sehen Sie das Foto an, hören Sie und kreuzen Sie an."
+  }
+ ],
+ "review": {
+  "status": "raw-ocr",
+  "notes": [
+   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
+   "1 a-c keys confirmed against the official Hueber Lösungen (A2): a fahren in den Urlaub; b auf das Haus; c ein Tagebuch im Internet. 2 is free speaking."
+  ]
+ }
+}

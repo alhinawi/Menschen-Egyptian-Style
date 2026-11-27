@@ -10,7 +10,7 @@ export interface LessonInfo {
 export interface ModuleInfo {
   slug: string;
   book: 'kb' | 'ab';
-  level: 'A1.1' | 'A1.2' | 'A2.1';
+  level: 'A1.1' | 'A1.2' | 'A2.1' | 'A2.2';
   lessons: LessonInfo[];
   extras: number[];
 }
@@ -29,7 +29,7 @@ export const MODULE_ORDER: string[] = [
   'kb-a12-l13-16', 'kb-a12-l17-20', 'l21-24',
   'ab1', 'ab2', 'ab3', 'abm1', 'ab4-6', 'ab-l7-9', 'ab-l10-12',
   'ab-a12-l13-16', 'ab-a12-l17-20', 'ab-a12-l21-24',
-  'kb-a21-m1', 'kb-a21-m2', 'kb-a21-m3', 'kb-a21-m4', 'kb-a21-m5', 'ab-a21-m1', 'ab-a21-m2', 'ab-a21-m3', 'ab-a21-m4', 'ab-a21-m5',
+  'kb-a21-m1', 'kb-a21-m2', 'kb-a21-m3', 'kb-a21-m4', 'kb-a21-m5', 'ab-a21-m1', 'ab-a21-m2', 'ab-a21-m3', 'ab-a21-m4', 'ab-a21-m5', 'kb-a22-m1', 'kb-a22-m2', 'kb-a22-m3', 'kb-a22-m4', 'kb-a22-m5', 'ab-a22-m1', 'ab-a22-m2', 'ab-a22-m3', 'ab-a22-m4', 'ab-a22-m5',
 ];
 
 export const MODULES: Record<string, ModuleInfo> = {
@@ -60,6 +60,16 @@ export const MODULES: Record<string, ModuleInfo> = {
   'ab-a21-m3': {slug: 'ab-a21-m3', book: 'ab', level: 'A2.1', lessons: [lesson(7, range(54, 59)), lesson(8, range(60, 65)), lesson(9, range(66, 71)), lesson('Modul-Plus', range(72, 77))], extras: []},
   'ab-a21-m4': {slug: 'ab-a21-m4', book: 'ab', level: 'A2.1', lessons: [lesson(10, range(78, 83)), lesson(11, range(84, 89)), lesson(12, range(90, 95)), lesson('Modul-Plus', range(96, 101))], extras: []},
   'ab-a21-m5': {slug: 'ab-a21-m5', book: 'ab', level: 'A2.1', lessons: [lesson('Anhang', range(102, 108))], extras: []},
+  'kb-a22-m1': {slug: 'kb-a22-m1', book: 'kb', level: 'A2.2', lessons: [lesson('Die erste Stunde im Kurs', [8], 'S8'), lesson(13, range(9, 12)), lesson(14, range(13, 16)), lesson(15, range(17, 24))], extras: []},
+  'kb-a22-m2': {slug: 'kb-a22-m2', book: 'kb', level: 'A2.2', lessons: [lesson(16, range(25, 28)), lesson(17, range(29, 32)), lesson(18, range(33, 36)), lesson('Modul-Plus', range(37, 40))], extras: []},
+  'kb-a22-m3': {slug: 'kb-a22-m3', book: 'kb', level: 'A2.2', lessons: [lesson(19, range(41, 44)), lesson(20, range(45, 48)), lesson(21, range(49, 52)), lesson('Modul-Plus', range(53, 56))], extras: []},
+  'kb-a22-m4': {slug: 'kb-a22-m4', book: 'kb', level: 'A2.2', lessons: [lesson(22, range(57, 60)), lesson(23, range(61, 64)), lesson(24, range(65, 68)), lesson('Modul-Plus', range(69, 72))], extras: []},
+  'kb-a22-m5': {slug: 'kb-a22-m5', book: 'kb', level: 'A2.2', lessons: [lesson('Aktionsseiten', range(73, 92)), lesson('Wortliste', range(93, 103))], extras: []},
+  'ab-a22-m1': {slug: 'ab-a22-m1', book: 'ab', level: 'A2.2', lessons: [lesson(13, range(6, 11)), lesson(14, range(12, 17)), lesson(15, range(18, 23)), lesson('Modul-Plus', range(24, 29))], extras: []},
+  'ab-a22-m2': {slug: 'ab-a22-m2', book: 'ab', level: 'A2.2', lessons: [lesson(16, range(30, 35)), lesson(17, range(36, 41)), lesson(18, range(42, 47)), lesson('Modul-Plus', range(48, 53))], extras: []},
+  'ab-a22-m3': {slug: 'ab-a22-m3', book: 'ab', level: 'A2.2', lessons: [lesson(19, range(54, 59)), lesson(20, range(60, 65)), lesson(21, range(66, 71)), lesson('Modul-Plus', range(72, 77))], extras: []},
+  'ab-a22-m4': {slug: 'ab-a22-m4', book: 'ab', level: 'A2.2', lessons: [lesson(22, range(78, 83)), lesson(23, range(84, 89)), lesson(24, range(90, 95)), lesson('Modul-Plus', range(96, 101))], extras: []},
+  'ab-a22-m5': {slug: 'ab-a22-m5', book: 'ab', level: 'A2.2', lessons: [lesson('Anhang', range(102, 110))], extras: []},
   'ab-a12-l21-24': {slug: 'ab-a12-l21-24', book: 'ab', level: 'A1.2', lessons: [lesson(21, range(66, 71)), lesson(22, range(72, 77)), lesson(23, range(78, 83)), lesson(24, range(84, 89)), lesson('Modul-Plus', range(90, 95))], extras: range(96, 105)},
 };
 
@@ -80,7 +90,7 @@ export interface LessonEntry extends LessonInfo {
 }
 
 /** Every lesson of one book level, across its modules, in reading order. */
-export function levelLessons(book: 'kb' | 'ab', level: 'A1.1' | 'A1.2' | 'A2.1'): LessonEntry[] {
+export function levelLessons(book: 'kb' | 'ab', level: 'A1.1' | 'A1.2' | 'A2.1' | 'A2.2'): LessonEntry[] {
   const out: LessonEntry[] = [];
   for (const slug of MODULE_ORDER) {
     const mod = MODULES[slug];
@@ -91,7 +101,7 @@ export function levelLessons(book: 'kb' | 'ab', level: 'A1.1' | 'A1.2' | 'A2.1')
 }
 
 /** Modules that carry extra (Anhang) pages for one book level. */
-export function levelExtras(book: 'kb' | 'ab', level: 'A1.1' | 'A1.2' | 'A2.1'): LessonEntry[] {
+export function levelExtras(book: 'kb' | 'ab', level: 'A1.1' | 'A1.2' | 'A2.1' | 'A2.2'): LessonEntry[] {
   return MODULE_ORDER.filter(slug => {
     const mod = MODULES[slug];
     return mod && mod.book === book && mod.level === level && mod.extras.length > 0;
@@ -107,7 +117,7 @@ export function modulePages(slug: string): string[] {
   if (slug === 'ab1') return ['abcover', ...pages];
   if (slug === 'kb-a12-l13-16') return ['cover', ...pages];
   if (slug === 'ab-a12-l13-16') return ['abcover', ...pages];
-  if (slug === 'kb-a21-m1' || slug === 'kb-a21-m2' || slug === 'kb-a21-m3' || slug === 'kb-a21-m4' || slug === 'kb-a21-m5' || slug.startsWith('ab-a21-')) return ['cover', ...pages];
+  if (slug === 'kb-a21-m1' || slug === 'kb-a21-m2' || slug === 'kb-a21-m3' || slug === 'kb-a21-m4' || slug === 'kb-a21-m5' || slug.startsWith('ab-a21-') || slug.startsWith('kb-a22-') || slug.startsWith('ab-a22-')) return ['cover', ...pages];
   return pages;
 }
 
@@ -116,7 +126,7 @@ export function lessonUrl(entry: LessonEntry): string {
 }
 
 /** The module that renders a given printed page of a book level. */
-export function findModuleForPage(book: 'kb' | 'ab', level: 'A1.1' | 'A1.2' | 'A2.1', page: number): ModuleInfo | null {
+export function findModuleForPage(book: 'kb' | 'ab', level: 'A1.1' | 'A1.2' | 'A2.1' | 'A2.2', page: number): ModuleInfo | null {
   for (const slug of MODULE_ORDER) {
     const mod = MODULES[slug];
     if (!mod || mod.book !== book || mod.level !== level) continue;
@@ -131,7 +141,8 @@ export function lessonForPage(mod: ModuleInfo, page: number): LessonInfo | null 
 }
 
 /** Cover destination follows the selected level, never the other volume. */
-export function levelCover(book: 'kb' | 'ab', level: 'A1.1' | 'A1.2' | 'A2.1') {
+export function levelCover(book: 'kb' | 'ab', level: 'A1.1' | 'A1.2' | 'A2.1' | 'A2.2') {
   if (level === 'A2.1') return {slug: `${book}-a21-m1`, token: 'cover'};
+  if (level === 'A2.2') return {slug: `${book}-a22-m1`, token: 'cover'};
   return {slug: level === 'A1.2' ? `${book}-a12-l13-16` : book === 'kb' ? 'index' : 'ab1', token: book === 'kb' ? 'cover' : 'abcover'};
 }
