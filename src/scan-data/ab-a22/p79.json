@@ -1980,11 +1980,203 @@
    "h": 10
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p79-4b",
+   "group": "g4",
+   "kind": "text",
+   "label": "4b",
+   "answer": "bis ich endlich bei Dir bin",
+   "x": 153,
+   "y": 314,
+   "w": 525,
+   "h": 26
+  },
+  {
+   "id": "p79-4c",
+   "group": "g4",
+   "kind": "text",
+   "label": "4c",
+   "answer": "seit ich mein Auto verkauft habe",
+   "x": 259,
+   "y": 337,
+   "w": 480,
+   "h": 26
+  },
+  {
+   "id": "p79-4d",
+   "group": "g4",
+   "kind": "text",
+   "label": "4d",
+   "answer": "bis ich das alte Auto von meinem Bruder bekomme",
+   "x": 479,
+   "y": 392,
+   "w": 481,
+   "h": 26
+  },
+  {
+   "id": "p79-6b",
+   "group": "g6",
+   "kind": "text",
+   "label": "6b",
+   "answer": "1",
+   "x": 548,
+   "y": 761,
+   "w": 32,
+   "h": 26
+  },
+  {
+   "id": "p79-6c",
+   "group": "g6",
+   "kind": "text",
+   "label": "6c",
+   "answer": "7",
+   "x": 463,
+   "y": 788,
+   "w": 32,
+   "h": 26
+  },
+  {
+   "id": "p79-6d",
+   "group": "g6",
+   "kind": "text",
+   "label": "6d",
+   "answer": "8",
+   "x": 645,
+   "y": 816,
+   "w": 32,
+   "h": 26
+  },
+  {
+   "id": "p79-6e",
+   "group": "g6",
+   "kind": "text",
+   "label": "6e",
+   "answer": "3",
+   "x": 497,
+   "y": 843,
+   "w": 32,
+   "h": 26
+  },
+  {
+   "id": "p79-6f",
+   "group": "g6",
+   "kind": "text",
+   "label": "6f",
+   "answer": "6",
+   "x": 469,
+   "y": 870,
+   "w": 32,
+   "h": 26
+  },
+  {
+   "id": "p79-6g",
+   "group": "g6",
+   "kind": "text",
+   "label": "6g",
+   "answer": "4",
+   "x": 316,
+   "y": 923,
+   "w": 32,
+   "h": 26
+  },
+  {
+   "id": "p79-6h",
+   "group": "g6",
+   "kind": "text",
+   "label": "6h",
+   "answer": "2",
+   "x": 571,
+   "y": 951,
+   "w": 32,
+   "h": 26
+  },
+  {
+   "id": "p79-7b",
+   "group": "g7",
+   "kind": "text",
+   "label": "7b",
+   "answer": "das Passwort",
+   "x": 147,
+   "y": 1180,
+   "w": 201,
+   "h": 26
+  },
+  {
+   "id": "p79-7c",
+   "group": "g7",
+   "kind": "text",
+   "label": "7c",
+   "answer": "die Daten",
+   "x": 147,
+   "y": 1212,
+   "w": 201,
+   "h": 26
+  },
+  {
+   "id": "p79-7d",
+   "group": "g7",
+   "kind": "text",
+   "label": "7d",
+   "answer": "das Ticket",
+   "x": 147,
+   "y": 1243,
+   "w": 201,
+   "h": 26
+  },
+  {
+   "id": "p79-7e",
+   "group": "g7",
+   "kind": "text",
+   "label": "7e",
+   "answer": "einloggen",
+   "x": 147,
+   "y": 1275,
+   "w": 201,
+   "h": 26
+  },
+  {
+   "id": "p79-7f",
+   "group": "g7",
+   "kind": "text",
+   "label": "7f",
+   "answer": "ausfüllen",
+   "x": 147,
+   "y": 1307,
+   "w": 201,
+   "h": 26
+  },
+  {
+   "id": "p79-7g",
+   "group": "g7",
+   "kind": "text",
+   "label": "7g",
+   "answer": "anklicken",
+   "x": 147,
+   "y": 1337,
+   "w": 201,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g4",
+   "label": "4 Nebensätze mit bis oder seit(dem)"
+  },
+  {
+   "id": "g6",
+   "label": "6 Ordnen Sie zu"
+  },
+  {
+   "id": "g7",
+   "label": "7 Ergänzen und vergleichen"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Items 4, 6 and 7 (Deutsch column only) graded from the official key. Item 5 is partner work (key: individuelle Loesung) and item 7's 'Meine Sprache' column is personal; both ungraded."
+  ]
  }
 }

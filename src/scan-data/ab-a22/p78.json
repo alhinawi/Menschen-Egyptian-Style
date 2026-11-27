@@ -2421,11 +2421,144 @@
    "h": 8
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p78-2b1",
+   "group": "g2b",
+   "kind": "text",
+   "label": "2b1",
+   "answer": "ich ein Haus auf dem Land finde",
+   "x": 720,
+   "y": 938,
+   "w": 195,
+   "h": 26
+  },
+  {
+   "id": "p78-2b2a",
+   "group": "g2b",
+   "kind": "text",
+   "label": "2b2a",
+   "answer": "seit(dem)",
+   "x": 718,
+   "y": 999,
+   "w": 73,
+   "h": 26
+  },
+  {
+   "id": "p78-2b2b",
+   "group": "g2b",
+   "kind": "text",
+   "label": "2b2b",
+   "answer": "ich kein Auto mehr habe",
+   "x": 794,
+   "y": 999,
+   "w": 122,
+   "h": 26
+  },
+  {
+   "id": "p78-2b3",
+   "group": "g2b",
+   "kind": "text",
+   "label": "2b3",
+   "answer": "wohnt sie bei ihren Eltern",
+   "x": 769,
+   "y": 1069,
+   "w": 244,
+   "h": 26
+  },
+  {
+   "id": "p78-2b4a",
+   "group": "g2b",
+   "kind": "text",
+   "label": "2b4a",
+   "answer": "ich außerhalb wohne",
+   "x": 287,
+   "y": 1126,
+   "w": 262,
+   "h": 26
+  },
+  {
+   "id": "p78-2b4b",
+   "group": "g2b",
+   "kind": "text",
+   "label": "2b4b",
+   "answer": "gehe ich weniger weg",
+   "x": 769,
+   "y": 1126,
+   "w": 244,
+   "h": 26
+  },
+  {
+   "id": "p78-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3b",
+   "answer": "bis",
+   "x": 668,
+   "y": 1268,
+   "w": 83,
+   "h": 26
+  },
+  {
+   "id": "p78-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3c",
+   "answer": "Seit(dem)",
+   "x": 195,
+   "y": 1297,
+   "w": 88,
+   "h": 26
+  },
+  {
+   "id": "p78-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3d",
+   "answer": "Seit(dem)",
+   "x": 195,
+   "y": 1324,
+   "w": 88,
+   "h": 26
+  },
+  {
+   "id": "p78-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3e",
+   "answer": "bis",
+   "x": 704,
+   "y": 1353,
+   "w": 85,
+   "h": 26
+  },
+  {
+   "id": "p78-3f",
+   "group": "g3",
+   "kind": "text",
+   "label": "3f",
+   "answer": "Bis",
+   "x": 195,
+   "y": 1380,
+   "w": 88,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g2b",
+   "label": "2b Tabelle"
+  },
+  {
+   "id": "g3",
+   "label": "3 bis oder seit(dem)"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Items 2b and 3 graded from the official key. Item 1 (letters inside words) and 2a (draw-line matching) stay ungraded, same as on p60 and p66."
+  ]
  }
 }
