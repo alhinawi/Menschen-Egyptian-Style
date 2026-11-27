@@ -573,7 +573,7 @@
    "h": 17
   },
   {
-   "text": "_/T7",
+   "text": "/T7",
    "x": 923,
    "y": 456,
    "w": 30,
@@ -830,13 +830,6 @@
    "y": 561,
    "w": 59,
    "h": 15
-  },
-  {
-   "text": "_",
-   "x": 988,
-   "y": 577,
-   "w": 7,
-   "h": 1
   },
   {
    "text": "2",
@@ -1126,7 +1119,7 @@
    "h": 25
   },
   {
-   "text": "_/3",
+   "text": "/3",
    "x": 922,
    "y": 754,
    "w": 30,
@@ -1504,7 +1497,7 @@
    "h": 22
   },
   {
-   "text": "__(d)",
+   "text": "(d)",
    "x": 326,
    "y": 907,
    "w": 74,
@@ -1588,7 +1581,7 @@
    "h": 27
   },
   {
-   "text": "_/",
+   "text": "/",
    "x": 921,
    "y": 949,
    "w": 20,
@@ -1966,7 +1959,7 @@
    "h": 23
   },
   {
-   "text": "Dashatmir_",
+   "text": "Dashatmir",
    "x": 362,
    "y": 1164,
    "w": 166,
@@ -2211,7 +2204,7 @@
    "h": 22
   },
   {
-   "text": "_/5",
+   "text": "/5",
    "x": 920,
    "y": 1253,
    "w": 30,
@@ -2415,7 +2408,8 @@
   "notes": [
    "Test page: the official key PDF has no solutions for the Test, so it is left ungraded.",
    "Word layer cleaned: 47 OCR tokens removed (22 top-watermark, 14 bottom-watermark, 0 underscore-gap merges, 7 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
+   "Pending: not yet graded.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }
 }

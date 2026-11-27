@@ -118,7 +118,7 @@
    "h": 18
   },
   {
-   "text": "H_l_p_n_i_n(b)",
+   "text": "Hlpnin(b)",
    "x": 243,
    "y": 336,
    "w": 192,
@@ -174,7 +174,7 @@
    "h": 23
   },
   {
-   "text": "f_e_(e)ab1.",
+   "text": "fe(e)ab1.",
    "x": 651,
    "y": 363,
    "w": 133,
@@ -195,7 +195,7 @@
    "h": 15
   },
   {
-   "text": ".r_plä__eff)",
+   "text": ".rpläeff)",
    "x": 870,
    "y": 377,
    "w": 144,
@@ -293,7 +293,7 @@
    "h": 20
   },
   {
-   "text": "Ä__er",
+   "text": "Äer",
    "x": 231,
    "y": 537,
    "w": 87,
@@ -503,14 +503,14 @@
    "h": 17
   },
   {
-   "text": "fastü_e",
+   "text": "fastüe",
    "x": 779,
    "y": 686,
    "w": 100,
    "h": 21
   },
   {
-   "text": "__a__|(h)",
+   "text": "a|(h)",
    "x": 887,
    "y": 687,
    "w": 115,
@@ -867,13 +867,6 @@
    "h": 17
   },
   {
-   "text": "_",
-   "x": 442,
-   "y": 973,
-   "w": 3,
-   "h": 1
-  },
-  {
    "text": "die",
    "x": 451,
    "y": 956,
@@ -942,13 +935,6 @@
    "y": 988,
    "w": 55,
    "h": 17
-  },
-  {
-   "text": "_",
-   "x": 414,
-   "y": 1000,
-   "w": 3,
-   "h": 1
   },
   {
    "text": "man",
@@ -1678,9 +1664,10 @@
   "notes": [
    "1 (letters missing inside words) and 3 (write direct questions) are left ungraded.",
    "Word layer cleaned: 41 OCR tokens removed (22 top-watermark, 15 bottom-watermark, 1 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Answers graded from the official key; status advanced from raw-ocr to partial."
+   "Answers graded from the official key; status advanced from raw-ocr to partial.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 229,
+  "verifiedWords": 227,
   "totalWords": 270
  }
 }

@@ -1000,7 +1000,7 @@
    "h": 24
   },
   {
-   "text": "(__)",
+   "text": "()",
    "x": 493,
    "y": 1093,
    "w": 46,
@@ -1728,7 +1728,8 @@
   "status": "raw-ocr",
   "notes": [
    "Word layer cleaned: 28 OCR tokens removed (10 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
+   "Pending: not yet graded.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }
 }

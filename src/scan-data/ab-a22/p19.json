@@ -538,13 +538,6 @@
    "h": 16
   },
   {
-   "text": "_",
-   "x": 265,
-   "y": 702,
-   "w": 7,
-   "h": 1
-  },
-  {
    "text": "(eine",
    "x": 164,
    "y": 711,
@@ -1308,13 +1301,6 @@
    "h": 26
   },
   {
-   "text": "__",
-   "x": 344,
-   "y": 1216,
-   "w": 15,
-   "h": 1
-  },
-  {
    "text": "mir",
    "x": 367,
    "y": 1200,
@@ -1898,9 +1884,10 @@
   "status": "partial",
   "notes": [
    "4 (write sentences) is left ungraded. 6 c is left ungraded: the key answer does not fit the printed blank.",
-   "Word layer cleaned: 39 OCR tokens removed (22 top-watermark, 14 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
+   "Word layer cleaned: 39 OCR tokens removed (22 top-watermark, 14 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 238,
+  "verifiedWords": 236,
   "totalWords": 277
  }
 }

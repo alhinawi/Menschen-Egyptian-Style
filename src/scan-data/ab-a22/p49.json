@@ -384,13 +384,6 @@
    "h": 14
   },
   {
-   "text": "_",
-   "x": 228,
-   "y": 478,
-   "w": 41,
-   "h": 35
-  },
-  {
    "text": "Abfahrt:",
    "x": 355,
    "y": 478,
@@ -1224,13 +1217,6 @@
    "h": 13
   },
   {
-   "text": "_",
-   "x": 823,
-   "y": 1022,
-   "w": 3,
-   "h": 1
-  },
-  {
    "text": "DI)",
    "x": 900,
    "y": 1006,
@@ -1679,13 +1665,6 @@
    "h": 16
   },
   {
-   "text": "_",
-   "x": 634,
-   "y": 1286,
-   "w": 7,
-   "h": 1
-  },
-  {
    "text": "möchten",
    "x": 166,
    "y": 1295,
@@ -2043,7 +2022,8 @@
   "status": "raw-ocr",
   "notes": [
    "Word layer cleaned: 32 OCR tokens removed (12 top-watermark, 15 bottom-watermark, 2 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
+   "Pending: not yet graded.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }
 }

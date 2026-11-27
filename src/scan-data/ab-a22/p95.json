@@ -496,13 +496,6 @@
    "h": 23
   },
   {
-   "text": "__",
-   "x": 495,
-   "y": 611,
-   "w": 19,
-   "h": 1
-  },
-  {
    "text": "sich",
    "x": 540,
    "y": 593,
@@ -552,13 +545,6 @@
    "h": 27
   },
   {
-   "text": "_",
-   "x": 474,
-   "y": 705,
-   "w": 39,
-   "h": 1
-  },
-  {
    "text": "sinnvoll",
    "x": 539,
    "y": 688,
@@ -571,13 +557,6 @@
    "y": 712,
    "w": 47,
    "h": 26
-  },
-  {
-   "text": "_",
-   "x": 720,
-   "y": 733,
-   "w": 27,
-   "h": 1
   },
   {
    "text": "Welche",
@@ -958,7 +937,8 @@
   "status": "raw-ocr",
   "notes": [
    "Word layer cleaned: 28 OCR tokens removed (11 top-watermark, 14 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
+   "Pending: not yet graded.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }
 }

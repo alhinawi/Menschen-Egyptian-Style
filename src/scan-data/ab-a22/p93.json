@@ -1399,7 +1399,7 @@
    "h": 16
   },
   {
-   "text": "__andrahatein_",
+   "text": "andrahatein",
    "x": 677,
    "y": 1012,
    "w": 151,
@@ -1420,7 +1420,7 @@
    "h": 14
   },
   {
-   "text": "imAu_",
+   "text": "imAu",
    "x": 676,
    "y": 1040,
    "w": 61,
@@ -1441,7 +1441,7 @@
    "h": 16
   },
   {
-   "text": "Da__",
+   "text": "Da",
    "x": 891,
    "y": 1042,
    "w": 49,
@@ -1462,7 +1462,7 @@
    "h": 19
   },
   {
-   "text": "Erlebnii_",
+   "text": "Erlebnii",
    "x": 785,
    "y": 1067,
    "w": 93,
@@ -1476,7 +1476,7 @@
    "h": 17
   },
   {
-   "text": "_ie",
+   "text": "ie",
    "x": 927,
    "y": 1068,
    "w": 41,
@@ -1497,25 +1497,18 @@
    "h": 16
   },
   {
-   "text": "Englischkenntni__e",
+   "text": "Englischkenntnie",
    "x": 791,
    "y": 1094,
    "w": 187,
    "h": 22
   },
   {
-   "text": "_onder",
+   "text": "onder",
    "x": 870,
    "y": 1118,
    "w": 64,
    "h": 27
-  },
-  {
-   "text": "_",
-   "x": 938,
-   "y": 1139,
-   "w": 16,
-   "h": 1
   },
   {
    "text": "gefallen",
@@ -1539,13 +1532,6 @@
    "h": 19
   },
   {
-   "text": "_",
-   "x": 875,
-   "y": 1145,
-   "w": 19,
-   "h": 28
-  },
-  {
    "text": "ie",
    "x": 885,
    "y": 1149,
@@ -1553,7 +1539,7 @@
    "h": 17
   },
   {
-   "text": "__o",
+   "text": "o",
    "x": 934,
    "y": 1154,
    "w": 35,
@@ -1609,7 +1595,7 @@
    "h": 11
   },
   {
-   "text": "da__",
+   "text": "da",
    "x": 676,
    "y": 1228,
    "w": 47,
@@ -1637,7 +1623,7 @@
    "h": 10
   },
   {
-   "text": "andramu__te",
+   "text": "andramute",
    "x": 805,
    "y": 1256,
    "w": 160,
@@ -1649,13 +1635,6 @@
    "y": 1283,
    "w": 126,
    "h": 19
-  },
-  {
-   "text": "_",
-   "x": 786,
-   "y": 1280,
-   "w": 5,
-   "h": 27
   },
   {
    "text": "allein",
@@ -1672,7 +1651,7 @@
    "h": 17
   },
   {
-   "text": "Au_",
+   "text": "Au",
    "x": 675,
    "y": 1311,
    "w": 41,
@@ -1686,7 +1665,7 @@
    "h": 11
   },
   {
-   "text": "_Wohn-",
+   "text": "Wohn-",
    "x": 861,
    "y": 1310,
    "w": 84,
@@ -1721,7 +1700,7 @@
    "h": 17
   },
   {
-   "text": "Stra_e.",
+   "text": "Strae.",
    "x": 876,
    "y": 1339,
    "w": 78,
@@ -1735,7 +1714,7 @@
    "h": 17
   },
   {
-   "text": "hatte_",
+   "text": "hatte",
    "x": 767,
    "y": 1364,
    "w": 47,
@@ -1798,7 +1777,8 @@
   "status": "raw-ocr",
   "notes": [
    "Word layer cleaned: 26 OCR tokens removed (9 top-watermark, 14 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
+   "Pending: not yet graded.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }
 }

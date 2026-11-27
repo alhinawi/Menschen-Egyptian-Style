@@ -867,7 +867,7 @@
    "h": 15
   },
   {
-   "text": "_/6",
+   "text": "/6",
    "x": 926,
    "y": 501,
    "w": 31,
@@ -1602,7 +1602,7 @@
    "h": 19
   },
   {
-   "text": "_(i)",
+   "text": "(i)",
    "x": 893,
    "y": 778,
    "w": 61,
@@ -1665,7 +1665,7 @@
    "h": 16
   },
   {
-   "text": "_/8",
+   "text": "/8",
    "x": 928,
    "y": 811,
    "w": 31,
@@ -2610,7 +2610,7 @@
    "h": 1
   },
   {
-   "text": "_/6",
+   "text": "/6",
    "x": 918,
    "y": 1283,
    "w": 31,
@@ -2785,7 +2785,8 @@
   "status": "raw-ocr",
   "notes": [
    "Word layer cleaned: 43 OCR tokens removed (23 top-watermark, 13 bottom-watermark, 0 underscore-gap merges, 3 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
+   "Pending: not yet graded.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }
 }

@@ -251,13 +251,6 @@
    "h": 17
   },
   {
-   "text": "_",
-   "x": 387,
-   "y": 432,
-   "w": 3,
-   "h": 1
-  },
-  {
    "text": "ut",
    "x": 495,
    "y": 416,
@@ -335,7 +328,7 @@
    "h": 21
   },
   {
-   "text": "Naj__",
+   "text": "Naj",
    "x": 154,
    "y": 519,
    "w": 77,
@@ -1308,7 +1301,8 @@
   "status": "raw-ocr",
   "notes": [
    "Word layer cleaned: 40 OCR tokens removed (22 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
+   "Pending: not yet graded.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }
 }

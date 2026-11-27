@@ -160,13 +160,6 @@
    "h": 23
   },
   {
-   "text": "_",
-   "x": 485,
-   "y": 289,
-   "w": 3,
-   "h": 1
-  },
-  {
    "text": "000000000,",
    "x": 545,
    "y": 283,
@@ -475,7 +468,7 @@
    "h": 16
   },
   {
-   "text": "_/4",
+   "text": "/4",
    "x": 927,
    "y": 437,
    "w": 31,
@@ -762,7 +755,7 @@
    "h": 11
   },
   {
-   "text": "__(d)",
+   "text": "(d)",
    "x": 260,
    "y": 609,
    "w": 43,
@@ -818,7 +811,7 @@
    "h": 15
   },
   {
-   "text": "_/3",
+   "text": "/3",
    "x": 928,
    "y": 612,
    "w": 29,
@@ -1210,13 +1203,6 @@
    "h": 17
   },
   {
-   "text": "__",
-   "x": 313,
-   "y": 843,
-   "w": 17,
-   "h": 1
-  },
-  {
    "text": ".",
    "x": 462,
    "y": 837,
@@ -1343,7 +1329,7 @@
    "h": 37
   },
   {
-   "text": "_/6",
+   "text": "/6",
    "x": 930,
    "y": 908,
    "w": 30,
@@ -1889,7 +1875,7 @@
    "h": 11
   },
   {
-   "text": "_/5",
+   "text": "/5",
    "x": 931,
    "y": 1206,
    "w": 30,
@@ -2315,9 +2301,10 @@
   "status": "partial",
   "notes": [
    "L21 Test graded from the book's Lösungsschlüssel Tests (AB p107).",
-   "Word layer cleaned: 40 OCR tokens removed (23 top-watermark, 13 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
+   "Word layer cleaned: 40 OCR tokens removed (23 top-watermark, 13 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 298,
+  "verifiedWords": 296,
   "totalWords": 338
  }
 }

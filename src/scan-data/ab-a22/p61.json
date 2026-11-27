@@ -1126,13 +1126,6 @@
    "h": 25
   },
   {
-   "text": "_",
-   "x": 310,
-   "y": 897,
-   "w": 2,
-   "h": 1
-  },
-  {
    "text": "(mögen)",
    "x": 327,
    "y": 879,
@@ -1173,13 +1166,6 @@
    "y": 906,
    "w": 57,
    "h": 16
-  },
-  {
-   "text": "_",
-   "x": 196,
-   "y": 924,
-   "w": 2,
-   "h": 1
   },
   {
    "text": "(müssen)",
@@ -1243,13 +1229,6 @@
    "y": 905,
    "w": 65,
    "h": 17
-  },
-  {
-   "text": "_",
-   "x": 231,
-   "y": 951,
-   "w": 5,
-   "h": 1
   },
   {
    "text": "(sollen)",
@@ -1336,7 +1315,7 @@
    "h": 23
   },
   {
-   "text": "AlleSchüler_",
+   "text": "AlleSchüler",
    "x": 132,
    "y": 960,
    "w": 126,
@@ -1441,7 +1420,7 @@
    "h": 23
   },
   {
-   "text": "Vondaan_",
+   "text": "Vondaan",
    "x": 315,
    "y": 987,
    "w": 90,
@@ -1721,13 +1700,6 @@
    "h": 15
   },
   {
-   "text": "__",
-   "x": 286,
-   "y": 1180,
-   "w": 16,
-   "h": 1
-  },
-  {
    "text": "als",
    "x": 309,
    "y": 1163,
@@ -1959,13 +1931,6 @@
    "h": 15
   },
   {
-   "text": "_",
-   "x": 293,
-   "y": 1315,
-   "w": 2,
-   "h": 1
-  },
-  {
    "text": "lieber",
    "x": 303,
    "y": 1298,
@@ -2041,13 +2006,6 @@
    "y": 1325,
    "w": 71,
    "h": 16
-  },
-  {
-   "text": "__",
-   "x": 495,
-   "y": 1343,
-   "w": 15,
-   "h": 1
   },
   {
    "text": "er",
@@ -2275,9 +2233,10 @@
   "status": "partial",
   "notes": [
    "Items 5, 6, 7b-d,f graded from the official key. Item 4 (mark words) ungraded. Item 7e: the key lists only 'wollten' although the item has two blanks; left ungraded, please do not derive.",
-   "Word layer cleaned: 36 OCR tokens removed (18 top-watermark, 14 bottom-watermark, 1 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
+   "Word layer cleaned: 36 OCR tokens removed (18 top-watermark, 14 bottom-watermark, 1 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 296,
+  "verifiedWords": 290,
   "totalWords": 332
  }
 }

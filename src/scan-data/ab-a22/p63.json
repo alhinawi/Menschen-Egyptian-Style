@@ -2043,18 +2043,11 @@
    "h": 20
   },
   {
-   "text": "_Ichglaube,",
+   "text": "Ichglaube,",
    "x": 384,
    "y": 1163,
    "w": 130,
    "h": 23
-  },
-  {
-   "text": "_",
-   "x": 533,
-   "y": 1181,
-   "w": 12,
-   "h": 1
   },
   {
    "text": "du",
@@ -2141,7 +2134,7 @@
    "h": 23
   },
   {
-   "text": "__Ich",
+   "text": "Ich",
    "x": 632,
    "y": 1190,
    "w": 61,
@@ -2435,13 +2428,6 @@
    "h": 11
   },
   {
-   "text": "_",
-   "x": 803,
-   "y": 1383,
-   "w": 27,
-   "h": 1
-  },
-  {
    "text": "In",
    "x": 273,
    "y": 1396,
@@ -2587,7 +2573,8 @@
   "status": "raw-ocr",
   "notes": [
    "Word layer cleaned: 37 OCR tokens removed (19 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
+   "Pending: not yet graded.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }
 }

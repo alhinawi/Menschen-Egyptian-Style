@@ -811,13 +811,6 @@
    "h": 17
   },
   {
-   "text": "_",
-   "x": 811,
-   "y": 478,
-   "w": 17,
-   "h": 1
-  },
-  {
    "text": "weil",
    "x": 233,
    "y": 489,
@@ -881,7 +874,7 @@
    "h": 22
   },
   {
-   "text": "__.",
+   "text": ".",
    "x": 446,
    "y": 528,
    "w": 27,
@@ -1161,7 +1154,7 @@
    "h": 21
   },
   {
-   "text": "_/6",
+   "text": "/6",
    "x": 943,
    "y": 601,
    "w": 30,
@@ -1322,7 +1315,7 @@
    "h": 19
   },
   {
-   "text": "konn__",
+   "text": "konn",
    "x": 549,
    "y": 704,
    "w": 73,
@@ -1371,14 +1364,7 @@
    "h": 15
   },
   {
-   "text": "_",
-   "x": 537,
-   "y": 728,
-   "w": 19,
-   "h": 27
-  },
-  {
-   "text": "durf__",
+   "text": "durf",
    "x": 678,
    "y": 730,
    "w": 62,
@@ -1476,7 +1462,7 @@
    "h": 16
   },
   {
-   "text": "moch__",
+   "text": "moch",
    "x": 771,
    "y": 785,
    "w": 76,
@@ -1509,13 +1495,6 @@
    "y": 814,
    "w": 47,
    "h": 15
-  },
-  {
-   "text": "__",
-   "x": 408,
-   "y": 809,
-   "w": 22,
-   "h": 26
   },
   {
    "text": "du",
@@ -1574,7 +1553,7 @@
    "h": 15
   },
   {
-   "text": "woll_",
+   "text": "woll",
    "x": 286,
    "y": 837,
    "w": 51,
@@ -1586,13 +1565,6 @@
    "y": 839,
    "w": 53,
    "h": 19
-  },
-  {
-   "text": "__",
-   "x": 453,
-   "y": 857,
-   "w": 14,
-   "h": 1
   },
   {
    "text": "Sie",
@@ -1651,7 +1623,7 @@
    "h": 16
   },
   {
-   "text": "soll__",
+   "text": "soll",
    "x": 388,
    "y": 867,
    "w": 57,
@@ -1749,7 +1721,7 @@
    "h": 16
   },
   {
-   "text": "woll__",
+   "text": "woll",
    "x": 701,
    "y": 891,
    "w": 66,
@@ -1761,13 +1733,6 @@
    "y": 893,
    "w": 47,
    "h": 15
-  },
-  {
-   "text": "__",
-   "x": 860,
-   "y": 910,
-   "w": 21,
-   "h": 1
   },
   {
    "text": "drei",
@@ -1833,13 +1798,6 @@
    "h": 17
   },
   {
-   "text": "_",
-   "x": 543,
-   "y": 964,
-   "w": 21,
-   "h": 1
-  },
-  {
    "text": "als",
    "x": 577,
    "y": 946,
@@ -1889,7 +1847,7 @@
    "h": 16
   },
   {
-   "text": "_/7",
+   "text": "/7",
    "x": 944,
    "y": 978,
    "w": 29,
@@ -2001,7 +1959,7 @@
    "h": 2
   },
   {
-   "text": "®_",
+   "text": "®",
    "x": 539,
    "y": 1048,
    "w": 57,
@@ -2099,7 +2057,7 @@
    "h": 18
   },
   {
-   "text": "Wandernf_n__",
+   "text": "Wandernfn",
    "x": 787,
    "y": 1081,
    "w": 168,
@@ -2204,7 +2162,7 @@
    "h": 19
   },
   {
-   "text": "mich_eh",
+   "text": "micheh",
    "x": 883,
    "y": 1135,
    "w": 96,
@@ -2358,13 +2316,6 @@
    "h": 15
   },
   {
-   "text": "_",
-   "x": 562,
-   "y": 1236,
-   "w": 14,
-   "h": 3
-  },
-  {
    "text": "f",
    "x": 188,
    "y": 1245,
@@ -2407,14 +2358,14 @@
    "h": 27
   },
   {
-   "text": "_a,undw__|!",
+   "text": "a,undw|!",
    "x": 597,
    "y": 1244,
    "w": 132,
    "h": 19
   },
   {
-   "text": "_/6",
+   "text": "/6",
    "x": 945,
    "y": 1248,
    "w": 30,
@@ -2798,9 +2749,10 @@
   "status": "partial",
   "notes": [
    "Test L20, graded from the book's Lösungsschlüssel Tests (AB p107). Item 1 b-f text. Item 2 radios only (which verb is right); the Präteritum endings are not graded (derivable but not keyed separately, key gives the full forms: mussten, mochte, Konntest, wollten, solltet, konnte, durfte). Item 3 (letter-gap blanks) ungraded.",
-   "Word layer cleaned: 56 OCR tokens removed (23 top-watermark, 15 bottom-watermark, 2 underscore-gap merges, 12 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
+   "Word layer cleaned: 56 OCR tokens removed (23 top-watermark, 15 bottom-watermark, 2 underscore-gap merges, 12 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 361,
+  "verifiedWords": 354,
   "totalWords": 417
  }
 }

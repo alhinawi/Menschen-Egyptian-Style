@@ -328,7 +328,7 @@
    "h": 15
   },
   {
-   "text": "__(d)",
+   "text": "(d)",
    "x": 373,
    "y": 322,
    "w": 46,
@@ -440,14 +440,7 @@
    "h": 17
   },
   {
-   "text": "_",
-   "x": 319,
-   "y": 367,
-   "w": 2,
-   "h": 1
-  },
-  {
-   "text": "_(e)",
+   "text": "(e)",
    "x": 495,
    "y": 348,
    "w": 55,
@@ -545,13 +538,6 @@
    "h": 17
   },
   {
-   "text": "_",
-   "x": 592,
-   "y": 393,
-   "w": 4,
-   "h": 1
-  },
-  {
    "text": "(8).",
    "x": 815,
    "y": 372,
@@ -559,7 +545,7 @@
    "h": 29
   },
   {
-   "text": "_/6",
+   "text": "/6",
    "x": 931,
    "y": 380,
    "w": 31,
@@ -762,7 +748,7 @@
    "h": 15
   },
   {
-   "text": "_ein__",
+   "text": "ein",
    "x": 495,
    "y": 511,
    "w": 45,
@@ -825,7 +811,7 @@
    "h": 16
   },
   {
-   "text": "__Job?",
+   "text": "Job?",
    "x": 504,
    "y": 538,
    "w": 47,
@@ -902,13 +888,6 @@
    "h": 18
   },
   {
-   "text": "_",
-   "x": 754,
-   "y": 582,
-   "w": 13,
-   "h": 1
-  },
-  {
    "text": "Chef",
    "x": 773,
    "y": 564,
@@ -965,7 +944,7 @@
    "h": 27
   },
   {
-   "text": "d__",
+   "text": "d",
    "x": 584,
    "y": 592,
    "w": 36,
@@ -1049,7 +1028,7 @@
    "h": 25
   },
   {
-   "text": "_/5",
+   "text": "/5",
    "x": 932,
    "y": 623,
    "w": 30,
@@ -1434,7 +1413,7 @@
    "h": 17
   },
   {
-   "text": "_/4",
+   "text": "/4",
    "x": 932,
    "y": 867,
    "w": 31,
@@ -1805,20 +1784,6 @@
    "h": 15
   },
   {
-   "text": "_",
-   "x": 360,
-   "y": 1109,
-   "w": 24,
-   "h": 1
-  },
-  {
-   "text": "_",
-   "x": 597,
-   "y": 1109,
-   "w": 7,
-   "h": 1
-  },
-  {
    "text": "(c).",
    "x": 789,
    "y": 1090,
@@ -2120,7 +2085,7 @@
    "h": 16
   },
   {
-   "text": "_/",
+   "text": "/",
    "x": 934,
    "y": 1258,
    "w": 20,
@@ -2527,9 +2492,10 @@
   "status": "partial",
   "notes": [
    "Test items 1, 3 and 4 graded from the book's own Lösungsschlüssel Tests (p106). Item 2 (preposition plus ending, tiny blanks) is left ungraded. In item 4 b the answer runs over two blanks (after Ist and before (b)); it is checked in the second blank only.",
-   "Word layer cleaned: 40 OCR tokens removed (21 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
+   "Word layer cleaned: 40 OCR tokens removed (21 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 332,
+  "verifiedWords": 327,
   "totalWords": 372
  }
 }

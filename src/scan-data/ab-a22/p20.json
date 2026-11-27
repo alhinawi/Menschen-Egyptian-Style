@@ -538,13 +538,6 @@
    "h": 16
   },
   {
-   "text": "_",
-   "x": 465,
-   "y": 404,
-   "w": 7,
-   "h": 1
-  },
-  {
    "text": "doch",
    "x": 630,
    "y": 387,
@@ -2789,9 +2782,10 @@
   "notes": [
    "8 (matching without boxes) is left ungraded.",
    "Word layer cleaned: 39 OCR tokens removed (22 top-watermark, 14 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Answers graded from the official key; status advanced from raw-ocr to partial."
+   "Answers graded from the official key; status advanced from raw-ocr to partial.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 384,
+  "verifiedWords": 383,
   "totalWords": 423
  }
 }

@@ -412,13 +412,6 @@
    "h": 16
   },
   {
-   "text": "_",
-   "x": 620,
-   "y": 355,
-   "w": 5,
-   "h": 29
-  },
-  {
    "text": "(d)",
    "x": 795,
    "y": 358,
@@ -503,7 +496,7 @@
    "h": 17
   },
   {
-   "text": "Tageinder_",
+   "text": "Tageinder",
    "x": 649,
    "y": 386,
    "w": 122,
@@ -720,7 +713,7 @@
    "h": 16
   },
   {
-   "text": "_/",
+   "text": "/",
    "x": 932,
    "y": 510,
    "w": 20,
@@ -1070,7 +1063,7 @@
    "h": 80
   },
   {
-   "text": "_/3",
+   "text": "/3",
    "x": 934,
    "y": 686,
    "w": 30,
@@ -1266,7 +1259,7 @@
    "h": 22
   },
   {
-   "text": "ichhabe_",
+   "text": "ichhabe",
    "x": 756,
    "y": 789,
    "w": 86,
@@ -1364,7 +1357,7 @@
    "h": 16
   },
   {
-   "text": "gesehen?-Ichzeige__",
+   "text": "gesehen?-Ichzeige",
    "x": 526,
    "y": 869,
    "w": 235,
@@ -1385,7 +1378,7 @@
    "h": 80
   },
   {
-   "text": "_/6",
+   "text": "/6",
    "x": 932,
    "y": 902,
    "w": 31,
@@ -1686,20 +1679,6 @@
    "h": 17
   },
   {
-   "text": "_",
-   "x": 213,
-   "y": 1089,
-   "w": 3,
-   "h": 1
-  },
-  {
-   "text": "_",
-   "x": 524,
-   "y": 1089,
-   "w": 9,
-   "h": 1
-  },
-  {
    "text": "(a)",
    "x": 596,
    "y": 1071,
@@ -1903,7 +1882,7 @@
    "h": 28
   },
   {
-   "text": "_(e)in",
+   "text": "(e)in",
    "x": 879,
    "y": 1207,
    "w": 116,
@@ -1924,7 +1903,7 @@
    "h": 17
   },
   {
-   "text": "_/5",
+   "text": "/5",
    "x": 933,
    "y": 1240,
    "w": 31,
@@ -2135,7 +2114,8 @@
   "notes": [
    "Test page: the official key has no Test solutions; left ungraded.",
    "Word layer cleaned: 43 OCR tokens removed (22 top-watermark, 14 bottom-watermark, 2 underscore-gap merges, 1 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
+   "Pending: not yet graded.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }
 }

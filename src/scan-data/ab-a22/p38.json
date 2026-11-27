@@ -13,13 +13,6 @@
    "h": 24
   },
   {
-   "text": "_",
-   "x": 393,
-   "y": 134,
-   "w": 19,
-   "h": 1
-  },
-  {
    "text": "6",
    "x": 132,
    "y": 188,
@@ -321,7 +314,7 @@
    "h": 78
   },
   {
-   "text": "_(h)",
+   "text": "(h)",
    "x": 293,
    "y": 388,
    "w": 29,
@@ -384,7 +377,7 @@
    "h": 13
   },
   {
-   "text": "Fahrtt_",
+   "text": "Fahrtt",
    "x": 672,
    "y": 388,
    "w": 68,
@@ -755,7 +748,7 @@
    "h": 21
   },
   {
-   "text": "_ein",
+   "text": "ein",
    "x": 390,
    "y": 462,
    "w": 30,
@@ -916,21 +909,14 @@
    "h": 11
   },
   {
-   "text": "I__s",
+   "text": "Is",
    "x": 454,
    "y": 656,
    "w": 31,
    "h": 14
   },
   {
-   "text": "_",
-   "x": 513,
-   "y": 669,
-   "w": 4,
-   "h": 1
-  },
-  {
-   "text": "s__ht",
+   "text": "sht",
    "x": 336,
    "y": 677,
    "w": 60,
@@ -1000,7 +986,7 @@
    "h": 9
   },
   {
-   "text": "b_s_im_t",
+   "text": "bsimt",
    "x": 337,
    "y": 832,
    "w": 104,
@@ -1140,14 +1126,14 @@
    "h": 11
   },
   {
-   "text": "s_",
+   "text": "s",
    "x": 831,
    "y": 702,
    "w": 35,
    "h": 15
   },
   {
-   "text": "h_n",
+   "text": "hn",
    "x": 871,
    "y": 705,
    "w": 25,
@@ -1217,7 +1203,7 @@
    "h": 11
   },
   {
-   "text": "s_ch__S__Bß",
+   "text": "schSBß",
    "x": 725,
    "y": 831,
    "w": 137,
@@ -1315,7 +1301,7 @@
    "h": 11
   },
   {
-   "text": "P__c__!",
+   "text": "Pc!",
    "x": 337,
    "y": 1012,
    "w": 61,
@@ -1336,7 +1322,7 @@
    "h": 21
   },
   {
-   "text": "Ihf_",
+   "text": "Ihf",
    "x": 726,
    "y": 1010,
    "w": 44,
@@ -2182,9 +2168,10 @@
   "status": "partial",
   "notes": [
    "Item 6 (prepositions and articles) graded blank by blank from the official key; for m and n the second blank holds the ending 'em'. Items 7 (letter gaps), 8 and 9 are in-word gaps or free writing and stay ungraded.",
-   "Word layer cleaned: 44 OCR tokens removed (23 top-watermark, 13 bottom-watermark, 5 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
+   "Word layer cleaned: 44 OCR tokens removed (23 top-watermark, 13 bottom-watermark, 5 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 276,
+  "verifiedWords": 274,
   "totalWords": 320
  }
 }

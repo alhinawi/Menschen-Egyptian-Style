@@ -447,7 +447,7 @@
    "h": 17
   },
   {
-   "text": "ichmuss__",
+   "text": "ichmuss",
    "x": 464,
    "y": 395,
    "w": 138,
@@ -886,13 +886,6 @@
    "y": 669,
    "w": 21,
    "h": 15
-  },
-  {
-   "text": "_",
-   "x": 287,
-   "y": 712,
-   "w": 6,
-   "h": 1
   },
   {
    "text": "(c)",
@@ -1518,13 +1511,6 @@
    "h": 17
   },
   {
-   "text": "_",
-   "x": 344,
-   "y": 1087,
-   "w": 8,
-   "h": 1
-  },
-  {
    "text": "(d)",
    "x": 525,
    "y": 1069,
@@ -2036,7 +2022,8 @@
   "status": "raw-ocr",
   "notes": [
    "Word layer cleaned: 45 OCR tokens removed (16 top-watermark, 14 bottom-watermark, 2 underscore-gap merges, 10 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
+   "Pending: not yet graded.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }
 }

@@ -76,7 +76,7 @@
    "h": 15
   },
   {
-   "text": "U_w_|",
+   "text": "Uw|",
    "x": 404,
    "y": 244,
    "w": 87,
@@ -265,7 +265,7 @@
    "h": 11
   },
   {
-   "text": "__en(a)",
+   "text": "en(a)",
    "x": 475,
    "y": 402,
    "w": 42,
@@ -279,7 +279,7 @@
    "h": 14
   },
   {
-   "text": "v_rg__ste",
+   "text": "vrgste",
    "x": 246,
    "y": 428,
    "w": 106,
@@ -377,14 +377,14 @@
    "h": 2
   },
   {
-   "text": "h__c__s",
+   "text": "hcs",
    "x": 168,
    "y": 579,
    "w": 78,
    "h": 16
   },
   {
-   "text": "__ens",
+   "text": "ens",
    "x": 255,
    "y": 582,
    "w": 41,
@@ -1077,14 +1077,14 @@
    "h": 14
   },
   {
-   "text": "__ue",
+   "text": "ue",
    "x": 778,
    "y": 230,
    "w": 42,
    "h": 13
   },
   {
-   "text": "__n[b}",
+   "text": "n[b}",
    "x": 832,
    "y": 225,
    "w": 55,
@@ -1238,21 +1238,21 @@
    "h": 13
   },
   {
-   "text": "_ß",
+   "text": "ß",
    "x": 726,
    "y": 398,
    "w": 10,
    "h": 15
   },
   {
-   "text": "__r",
+   "text": "r",
    "x": 744,
    "y": 403,
    "w": 29,
    "h": 12
   },
   {
-   "text": "__alb",
+   "text": "alb",
    "x": 789,
    "y": 399,
    "w": 38,
@@ -1371,14 +1371,14 @@
    "h": 15
   },
   {
-   "text": "_ei",
+   "text": "ei",
    "x": 684,
    "y": 573,
    "w": 14,
    "h": 15
   },
   {
-   "text": "h_.n(a)",
+   "text": "h.n(a)",
    "x": 728,
    "y": 573,
    "w": 72,
@@ -1749,13 +1749,6 @@
    "h": 18
   },
   {
-   "text": "_",
-   "x": 672,
-   "y": 1292,
-   "w": 10,
-   "h": 1
-  },
-  {
    "text": "wir",
    "x": 761,
    "y": 1276,
@@ -1796,13 +1789,6 @@
    "y": 1308,
    "w": 8,
    "h": 10
-  },
-  {
-   "text": "__",
-   "x": 237,
-   "y": 1319,
-   "w": 36,
-   "h": 1
   },
   {
    "text": "ich",
@@ -2022,13 +2008,6 @@
    "h": 21
   },
   {
-   "text": "_",
-   "x": 710,
-   "y": 1373,
-   "w": 15,
-   "h": 1
-  },
-  {
    "text": "wir",
    "x": 797,
    "y": 1357,
@@ -2151,7 +2130,7 @@
    "group": "g2b",
    "kind": "text",
    "label": "2b2a",
-   "answer": "seit|seitdem",
+   "answer": "seit|seitdem|seit dem|seit(dem)",
    "x": 718,
    "y": 999,
    "w": 73,
@@ -2217,7 +2196,7 @@
    "group": "g3",
    "kind": "text",
    "label": "3c",
-   "answer": "Seit|Seitdem",
+   "answer": "Seit|Seitdem|seit dem|seit(dem)",
    "x": 195,
    "y": 1297,
    "w": 88,
@@ -2228,7 +2207,7 @@
    "group": "g3",
    "kind": "text",
    "label": "3d",
-   "answer": "Seit|Seitdem",
+   "answer": "Seit|Seitdem|seit dem|seit(dem)",
    "x": 195,
    "y": 1324,
    "w": 88,
@@ -2273,9 +2252,10 @@
   "notes": [
    "Items 2b and 3 graded from the official key. Item 1 (letters inside words) and 2a (draw-line matching) stay ungraded, same as on p60 and p66.",
    "Word layer cleaned: 41 OCR tokens removed (23 top-watermark, 14 bottom-watermark, 1 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "3 bracketed-optional answers converted to pipe alternatives (seit(dem) -> seit|seitdem)."
+   "3 bracketed-optional answers converted to pipe alternatives (seit(dem) -> seit|seitdem).",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 304,
+  "verifiedWords": 301,
   "totalWords": 345
  }
 }

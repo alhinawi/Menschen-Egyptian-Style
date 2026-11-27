@@ -32,7 +32,8 @@ export function HybridScan({data}:{data:ScanData}){
  const checked46=(g:string)=>data.fields.some(f=>f.group===g&&results[f.id]!==undefined);
  return <div className="hybridScan" data-scan-book={data.book} data-scan-page={data.page} data-review-status={data.review.status}>
 
-  <div className="hybridCanvas" style={{aspectRatio:`${data.width}/${data.height}`,'--scan-ratio':data.width/data.height,'--hybrid-tool-space':data.audio.length||data.fields.some(f=>f.answer!==undefined)||matchings.some(m=>m.answers)?toolSpace+'px':'0px'} as CSSProperties}>
+  {data.review.status==='raw-ocr'&&<div className="hybridPending" role="note">Noch nicht geprüft · لسه تحت المراجعة</div>}
+   <div className="hybridCanvas" style={{aspectRatio:`${data.width}/${data.height}`,'--scan-ratio':data.width/data.height,'--hybrid-tool-space':data.audio.length||data.fields.some(f=>f.answer!==undefined)||matchings.some(m=>m.answers)?toolSpace+'px':'0px'} as CSSProperties}>
    <PageImage className="hybridImage" src={data.image} alt={`Originalbuch Seite ${data.page}`} draggable={false}/>
 
    <div className="hybridWords">{data.words.map((w,i)=>/[A-Za-zÄÖÜäöüß]/.test(w.text)?<span key={i} className="hybridWord tapWord" data-word={w.text} data-phrase={w.phrase||w.text} role="button" tabIndex={0} aria-label={`${w.text} · Bedeutung`} style={box(w)}>{w.text}</span>:<span key={i} className="hybridWord" style={box(w)}>{w.text}</span>)}</div>

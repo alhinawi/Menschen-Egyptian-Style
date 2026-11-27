@@ -825,7 +825,7 @@
    "h": 21
   },
   {
-   "text": "e_",
+   "text": "e",
    "x": 178,
    "y": 567,
    "w": 11,
@@ -2647,7 +2647,8 @@
   "status": "partial",
   "notes": [
    "Items 8 and 9 graded from the official key. Ex8: (b) is the printed example 'Kannst du mir'; the key's 'a Wie geht das' matches blank (a). Ex9 modeled as one single-option radio (mark X) per statement b-f: richtig = b, e, f; a is the printed example.",
-   "Word layer cleaned: 40 OCR tokens removed (22 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
+   "Word layer cleaned: 40 OCR tokens removed (22 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
   "verifiedWords": 353,
   "totalWords": 393

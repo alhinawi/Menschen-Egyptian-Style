@@ -2085,7 +2085,7 @@
    "h": 16
   },
   {
-   "text": "__(f).",
+   "text": "(f).",
    "x": 502,
    "y": 1367,
    "w": 52,
@@ -2155,7 +2155,8 @@
   "status": "raw-ocr",
   "notes": [
    "Word layer cleaned: 26 OCR tokens removed (9 top-watermark, 14 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
+   "Pending: not yet graded.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }
 }

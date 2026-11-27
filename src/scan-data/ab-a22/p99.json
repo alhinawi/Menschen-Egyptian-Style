@@ -251,13 +251,6 @@
    "h": 16
   },
   {
-   "text": "__",
-   "x": 403,
-   "y": 285,
-   "w": 19,
-   "h": 1
-  },
-  {
    "text": "ich",
    "x": 428,
    "y": 270,
@@ -382,13 +375,6 @@
    "y": 344,
    "w": 49,
    "h": 17
-  },
-  {
-   "text": "_",
-   "x": 267,
-   "y": 360,
-   "w": 5,
-   "h": 1
   },
   {
    "text": "ich",
@@ -587,7 +573,7 @@
    "h": 13
   },
   {
-   "text": "Ich_",
+   "text": "Ich",
    "x": 120,
    "y": 495,
    "w": 25,
@@ -1952,7 +1938,8 @@
   "status": "raw-ocr",
   "notes": [
    "Word layer cleaned: 31 OCR tokens removed (12 top-watermark, 15 bottom-watermark, 1 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
+   "Pending: not yet graded.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }
 }

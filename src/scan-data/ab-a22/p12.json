@@ -846,13 +846,6 @@
    "h": 15
   },
   {
-   "text": "__",
-   "x": 278,
-   "y": 576,
-   "w": 39,
-   "h": 1
-  },
-  {
    "text": "istein",
    "x": 323,
    "y": 559,
@@ -914,13 +907,6 @@
    "y": 641,
    "w": 80,
    "h": 15
-  },
-  {
-   "text": "_",
-   "x": 287,
-   "y": 657,
-   "w": 18,
-   "h": 1
   },
   {
    "text": "isteine",
@@ -1750,9 +1736,10 @@
   "notes": [
    "1 (cross out the wrong word) has no field type on the page and is left ungraded.",
    "Word layer cleaned: 35 OCR tokens removed (22 top-watermark, 10 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Answers graded from the official key; status advanced from raw-ocr to partial."
+   "Answers graded from the official key; status advanced from raw-ocr to partial.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 223,
+  "verifiedWords": 221,
   "totalWords": 258
  }
 }

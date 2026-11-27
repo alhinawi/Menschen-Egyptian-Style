@@ -636,7 +636,7 @@
    "h": 14
   },
   {
-   "text": "A_t_re__",
+   "text": "Atre",
    "x": 279,
    "y": 854,
    "w": 101,
@@ -783,18 +783,11 @@
    "h": 16
   },
   {
-   "text": "G_s",
+   "text": "Gs",
    "x": 654,
    "y": 894,
    "w": 43,
    "h": 18
-  },
-  {
-   "text": "_",
-   "x": 704,
-   "y": 910,
-   "w": 11,
-   "h": 1
   },
   {
    "text": "sollten.",
@@ -804,7 +797,7 @@
    "h": 16
   },
   {
-   "text": "i_ht_n",
+   "text": "ihtn",
    "x": 728,
    "y": 893,
    "w": 96,
@@ -881,7 +874,7 @@
    "h": 15
   },
   {
-   "text": "Al_t__g",
+   "text": "Altg",
    "x": 720,
    "y": 960,
    "w": 80,
@@ -902,7 +895,7 @@
    "h": 16
   },
   {
-   "text": "Dasallese_f_h__en",
+   "text": "Dasallesefhen",
    "x": 188,
    "y": 1000,
    "w": 208,
@@ -1967,9 +1960,10 @@
   "status": "partial",
   "notes": [
    "Item 1 (anagram bookshop sections) and item 3 graded from the official key. Item 2 (letters inside words) ungraded.",
-   "Word layer cleaned: 39 OCR tokens removed (21 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
+   "Word layer cleaned: 39 OCR tokens removed (21 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 251,
+  "verifiedWords": 250,
   "totalWords": 290
  }
 }

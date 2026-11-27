@@ -1245,18 +1245,11 @@
    "h": 17
   },
   {
-   "text": "sichsehr_",
+   "text": "sichsehr",
    "x": 489,
    "y": 788,
    "w": 108,
    "h": 19
-  },
-  {
-   "text": "_",
-   "x": 593,
-   "y": 783,
-   "w": 5,
-   "h": 27
   },
   {
    "text": ".",
@@ -2071,7 +2064,7 @@
    "h": 16
   },
   {
-   "text": "em_",
+   "text": "em",
    "x": 136,
    "y": 1371,
    "w": 49,
@@ -2426,9 +2419,10 @@
   "status": "partial",
   "notes": [
    "Items 5, 6 and 8 graded from the official key (5 a and 8 a are the printed examples). Item 7 is free writing.",
-   "Word layer cleaned: 34 OCR tokens removed (18 top-watermark, 13 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
+   "Word layer cleaned: 34 OCR tokens removed (18 top-watermark, 13 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 309,
+  "verifiedWords": 308,
   "totalWords": 343
  }
 }

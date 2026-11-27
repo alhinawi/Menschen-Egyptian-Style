@@ -244,7 +244,7 @@
    "h": 1
   },
   {
-   "text": "<_Schauspieler/",
+   "text": "<Schauspieler/",
    "x": 664,
    "y": 404,
    "w": 141,
@@ -1477,7 +1477,8 @@
   "notes": [
    "Training Hören 2 (richtig/falsch): the official key lists different answers than this printed exercise, so it is left ungraded. Hören 1 is open; Aussprache has no key.",
    "Word layer cleaned: 39 OCR tokens removed (21 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
+   "Pending: not yet graded.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }
 }

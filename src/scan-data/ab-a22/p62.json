@@ -1091,7 +1091,7 @@
    "h": 18
   },
   {
-   "text": "ichhabeauch_",
+   "text": "ichhabeauch",
    "x": 473,
    "y": 894,
    "w": 152,
@@ -1874,7 +1874,8 @@
   "status": "partial",
   "notes": [
    "Item 9 b-h graded from the official key. The key prints 'ehrlich gesagt total langweilig' for b but the word box says 'ehrlich gesagt langweilig'; the box wording is used. Item 9d blank starts at the end of one line, field placed there.",
-   "Word layer cleaned: 41 OCR tokens removed (22 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
+   "Word layer cleaned: 41 OCR tokens removed (22 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
   "verifiedWords": 254,
   "totalWords": 295

@@ -769,7 +769,7 @@
    "h": 22
   },
   {
-   "text": "_/T",
+   "text": "/T",
    "x": 938,
    "y": 519,
    "w": 29,
@@ -1014,7 +1014,7 @@
    "h": 20
   },
   {
-   "text": "_)",
+   "text": ")",
    "x": 305,
    "y": 654,
    "w": 19,
@@ -1448,7 +1448,7 @@
    "h": 15
   },
   {
-   "text": "_/",
+   "text": "/",
    "x": 932,
    "y": 897,
    "w": 20,
@@ -1698,13 +1698,6 @@
    "y": 1029,
    "w": 28,
    "h": 17
-  },
-  {
-   "text": "_",
-   "x": 535,
-   "y": 1046,
-   "w": 13,
-   "h": 1
   },
   {
    "text": "?",
@@ -2190,7 +2183,7 @@
    "h": 14
   },
   {
-   "text": "_/5",
+   "text": "/5",
    "x": 941,
    "y": 1248,
    "w": 29,
@@ -2883,9 +2876,10 @@
   "status": "partial",
   "notes": [
    "Test items 1 to 3 are graded from the book's own Lösungsschlüssel Tests (printed p106 Lektion 17).",
-   "Word layer cleaned: 80 OCR tokens removed (22 top-watermark, 16 bottom-watermark, 0 underscore-gap merges, 38 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
+   "Word layer cleaned: 80 OCR tokens removed (22 top-watermark, 16 bottom-watermark, 0 underscore-gap merges, 38 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 352,
+  "verifiedWords": 351,
   "totalWords": 432
  }
 }

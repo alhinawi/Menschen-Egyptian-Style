@@ -1826,7 +1826,7 @@
    "h": 17
   },
   {
-   "text": "E__K",
+   "text": "EK",
    "x": 744,
    "y": 1110,
    "w": 67,
@@ -2386,7 +2386,8 @@
   "status": "raw-ocr",
   "notes": [
    "Word layer cleaned: 40 OCR tokens removed (23 top-watermark, 13 bottom-watermark, 1 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
+   "Pending: not yet graded.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }
 }

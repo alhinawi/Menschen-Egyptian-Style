@@ -307,14 +307,7 @@
    "h": 9
   },
   {
-   "text": "_",
-   "x": 400,
-   "y": 346,
-   "w": 12,
-   "h": 1
-  },
-  {
-   "text": "_(b)",
+   "text": "(b)",
    "x": 808,
    "y": 304,
    "w": 33,
@@ -706,7 +699,7 @@
    "h": 15
   },
   {
-   "text": "_/T7",
+   "text": "/T7",
    "x": 926,
    "y": 573,
    "w": 29,
@@ -1140,7 +1133,7 @@
    "h": 16
   },
   {
-   "text": "jetzterst_",
+   "text": "jetzterst",
    "x": 482,
    "y": 771,
    "w": 81,
@@ -1420,7 +1413,7 @@
    "h": 16
   },
   {
-   "text": "_/8",
+   "text": "/8",
    "x": 926,
    "y": 883,
    "w": 31,
@@ -2169,7 +2162,7 @@
    "h": 17
   },
   {
-   "text": "_/5",
+   "text": "/5",
    "x": 927,
    "y": 1262,
    "w": 30,
@@ -2606,9 +2599,10 @@
   "status": "partial",
   "notes": [
    "Test L19, graded from the book's own Lösungsschlüssel Tests (AB p107). Test 2 numbers (2) to (9): beim, in, im, ins, aus, vom, bei, zum.",
-   "Word layer cleaned: 43 OCR tokens removed (23 top-watermark, 15 bottom-watermark, 1 underscore-gap merges, 0 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
+   "Word layer cleaned: 43 OCR tokens removed (23 top-watermark, 15 bottom-watermark, 1 underscore-gap merges, 0 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
+   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 337,
+  "verifiedWords": 336,
   "totalWords": 380
  }
 }
