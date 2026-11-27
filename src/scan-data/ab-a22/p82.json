@@ -2813,11 +2813,247 @@
    "h": 8
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p82-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1b",
+   "answer": "wählen",
+   "x": 190,
+   "y": 331,
+   "w": 280,
+   "h": 26
+  },
+  {
+   "id": "p82-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1c",
+   "answer": "klicken",
+   "x": 800,
+   "y": 331,
+   "w": 160,
+   "h": 26
+  },
+  {
+   "id": "p82-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1d",
+   "answer": "Zugangsdaten",
+   "x": 715,
+   "y": 357,
+   "w": 105,
+   "h": 26
+  },
+  {
+   "id": "p82-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1e",
+   "answer": "füllen",
+   "x": 445,
+   "y": 383,
+   "w": 145,
+   "h": 26
+  },
+  {
+   "id": "p82-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1f",
+   "answer": "Passwort",
+   "x": 740,
+   "y": 409,
+   "w": 123,
+   "h": 26
+  },
+  {
+   "id": "p82-1g",
+   "group": "g1",
+   "kind": "text",
+   "label": "1g",
+   "answer": "Zahlen",
+   "x": 140,
+   "y": 434,
+   "w": 150,
+   "h": 26
+  },
+  {
+   "id": "p82-1h",
+   "group": "g1",
+   "kind": "text",
+   "label": "1h",
+   "answer": "bestätigen",
+   "x": 655,
+   "y": 434,
+   "w": 160,
+   "h": 26
+  },
+  {
+   "id": "p82-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2b",
+   "answer": "seit",
+   "x": 770,
+   "y": 644,
+   "w": 50,
+   "h": 26
+  },
+  {
+   "id": "p82-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2c",
+   "answer": "seit",
+   "x": 870,
+   "y": 670,
+   "w": 35,
+   "h": 26
+  },
+  {
+   "id": "p82-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2d",
+   "answer": "bis",
+   "x": 318,
+   "y": 696,
+   "w": 37,
+   "h": 26
+  },
+  {
+   "id": "p82-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2e",
+   "answer": "Bis",
+   "x": 505,
+   "y": 723,
+   "w": 35,
+   "h": 26
+  },
+  {
+   "id": "p82-2f",
+   "group": "g2",
+   "kind": "text",
+   "label": "2f",
+   "answer": "bis",
+   "x": 770,
+   "y": 776,
+   "w": 35,
+   "h": 26
+  },
+  {
+   "id": "p82-2g",
+   "group": "g2",
+   "kind": "text",
+   "label": "2g",
+   "answer": "seit",
+   "x": 505,
+   "y": 802,
+   "w": 35,
+   "h": 26
+  },
+  {
+   "id": "p82-3a",
+   "group": "g3",
+   "kind": "text",
+   "label": "3a",
+   "answer": "Kannst du mir sagen",
+   "x": 150,
+   "y": 1061,
+   "w": 395,
+   "h": 26
+  },
+  {
+   "id": "p82-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3b",
+   "answer": "Na klar",
+   "x": 150,
+   "y": 1083,
+   "w": 395,
+   "h": 26
+  },
+  {
+   "id": "p82-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3c",
+   "answer": "Zuerst gehst du",
+   "x": 150,
+   "y": 1104,
+   "w": 395,
+   "h": 26
+  },
+  {
+   "id": "p82-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3d",
+   "answer": "Dann klickst du",
+   "x": 455,
+   "y": 1126,
+   "w": 290,
+   "h": 26
+  },
+  {
+   "id": "p82-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3e",
+   "answer": "Danach loggst du dich",
+   "x": 330,
+   "y": 1149,
+   "w": 330,
+   "h": 26
+  },
+  {
+   "id": "p82-3f",
+   "group": "g3",
+   "kind": "text",
+   "label": "3f",
+   "answer": "Zuletzt kannst du wählen",
+   "x": 330,
+   "y": 1171,
+   "w": 325,
+   "h": 26
+  },
+  {
+   "id": "p82-3g",
+   "group": "g3",
+   "kind": "text",
+   "label": "3g",
+   "answer": "Das ist ja wirklich",
+   "x": 330,
+   "y": 1231,
+   "w": 330,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Test 1 Ergänzen Sie (Anmeldung)"
+  },
+  {
+   "id": "g2",
+   "label": "Test 2 Ergänzen Sie bis und seit(dem)"
+  },
+  {
+   "id": "g3",
+   "label": "Test 3 Ordnen Sie zu (Telefon-Dialog)"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Modul-8-Test graded from the official Tests key (AB p107, L22 column): ex1 b-h (a = handwritten example Anmeldung, skipped), ex2 b-g (a = handwritten example bis, skipped), ex3 a-g. All keyed, nothing derived."
+  ]
  }
 }

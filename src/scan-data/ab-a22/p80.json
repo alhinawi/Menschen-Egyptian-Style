@@ -2757,11 +2757,176 @@
    "h": 8
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p80-8a",
+   "group": "g8",
+   "kind": "text",
+   "label": "8a",
+   "answer": "Wie geht das",
+   "x": 198,
+   "y": 309,
+   "w": 175,
+   "h": 26
+  },
+  {
+   "id": "p80-8c",
+   "group": "g8",
+   "kind": "text",
+   "label": "8c",
+   "answer": "Das ist ganz",
+   "x": 413,
+   "y": 339,
+   "w": 122,
+   "h": 26
+  },
+  {
+   "id": "p80-8d",
+   "group": "g8",
+   "kind": "text",
+   "label": "8d",
+   "answer": "Zuerst musst du",
+   "x": 198,
+   "y": 369,
+   "w": 178,
+   "h": 26
+  },
+  {
+   "id": "p80-8e",
+   "group": "g8",
+   "kind": "text",
+   "label": "8e",
+   "answer": "Dann klickst du",
+   "x": 198,
+   "y": 398,
+   "w": 178,
+   "h": 26
+  },
+  {
+   "id": "p80-8f",
+   "group": "g8",
+   "kind": "text",
+   "label": "8f",
+   "answer": "Danach wählst du",
+   "x": 741,
+   "y": 398,
+   "w": 142,
+   "h": 26
+  },
+  {
+   "id": "p80-8g",
+   "group": "g8",
+   "kind": "text",
+   "label": "8g",
+   "answer": "Und dann gibst du",
+   "x": 472,
+   "y": 427,
+   "w": 62,
+   "h": 26
+  },
+  {
+   "id": "p80-8h",
+   "group": "g8",
+   "kind": "text",
+   "label": "8h",
+   "answer": "Zuletzt musst du",
+   "x": 515,
+   "y": 468,
+   "w": 87,
+   "h": 26
+  },
+  {
+   "id": "p80-8i",
+   "group": "g8",
+   "kind": "text",
+   "label": "8i",
+   "answer": "Kein Problem",
+   "x": 198,
+   "y": 558,
+   "w": 172,
+   "h": 26
+  },
+  {
+   "id": "p80-9b-X",
+   "group": "g9",
+   "kind": "radio",
+   "label": "X",
+   "name": "p80-9b",
+   "value": "X",
+   "answer": "true",
+   "x": 996,
+   "y": 700,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p80-9c-X",
+   "group": "g9",
+   "kind": "radio",
+   "label": "X",
+   "name": "p80-9c",
+   "value": "X",
+   "answer": "false",
+   "x": 996,
+   "y": 730,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p80-9d-X",
+   "group": "g9",
+   "kind": "radio",
+   "label": "X",
+   "name": "p80-9d",
+   "value": "X",
+   "answer": "false",
+   "x": 996,
+   "y": 761,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p80-9e-X",
+   "group": "g9",
+   "kind": "radio",
+   "label": "X",
+   "name": "p80-9e",
+   "value": "X",
+   "answer": "true",
+   "x": 996,
+   "y": 791,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "id": "p80-9f-X",
+   "group": "g9",
+   "kind": "radio",
+   "label": "X",
+   "name": "p80-9f",
+   "value": "X",
+   "answer": "true",
+   "x": 996,
+   "y": 822,
+   "w": 24,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g8",
+   "label": "8 Ordnen Sie zu"
+  },
+  {
+   "id": "g9",
+   "label": "9 Was ist richtig?"
+  }
+ ],
  "review": {
   "status": "raw-ocr",
-  "notes": []
+  "notes": [
+   "Items 8 and 9 graded from the official key. Ex8: (b) is the printed example 'Kannst du mir'; the key's 'a Wie geht das' matches blank (a). Ex9 modeled as one single-option radio (mark X) per statement b-f: richtig = b, e, f; a is the printed example."
+  ]
  }
 }
