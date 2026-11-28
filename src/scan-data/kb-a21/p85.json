@@ -1403,9 +1403,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [],
-  "verifiedWords": 0,
-  "totalWords": 233
+  "status": "reviewed-no-gradeable",
+  "note": "L6/6b Sich verabreden: Telefon-Rollenspiel mit offenen Redemitteln. Nothing mechanically gradeable."
  }
 }

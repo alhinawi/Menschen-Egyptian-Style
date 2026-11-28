@@ -1284,9 +1284,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [],
-  "verifiedWords": 0,
-  "totalWords": 233
+  "status": "reviewed-no-gradeable",
+  "note": "L9/6 Fragebogen Wie soll Ihre Arbeit sein: eigene/Partner-Umfrage. Nothing mechanically gradeable."
  }
 }

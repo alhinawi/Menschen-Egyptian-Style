@@ -1844,9 +1844,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [],
-  "verifiedWords": 0,
-  "totalWords": 233
+  "status": "reviewed-no-gradeable",
+  "note": "L6/4b Nach Zeitraeumen fragen (Paar B): eigene Fragen, offene Formulierungen. Nothing mechanically gradeable."
  }
 }

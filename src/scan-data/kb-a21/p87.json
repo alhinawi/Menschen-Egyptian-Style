@@ -1886,9 +1886,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [],
-  "verifiedWords": 0,
-  "totalWords": 233
+  "status": "reviewed-no-gradeable",
+  "note": "L7/7 Forum Abnehmen: a Wer raet was? Ankreuzen (durch Forumstexte eindeutig: 1+3 Naschkatze, 2+4 Elke42), aber Kreuzformat ohne Luecken; b eigene Antwort schreiben. Nicht benotet."
  }
 }

@@ -1924,13 +1924,83 @@
    "h": 17
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p88-1",
+   "group": "g1",
+   "kind": "text",
+   "label": "Produkt 1",
+   "answer": "Dosenclips|aus Dosenclips",
+   "x": 95,
+   "y": 1208,
+   "w": 110,
+   "h": 24
+  },
+  {
+   "id": "p88-2",
+   "group": "g1",
+   "kind": "text",
+   "label": "Produkt 2",
+   "answer": "Papier|aus Papier",
+   "x": 220,
+   "y": 1208,
+   "w": 110,
+   "h": 24
+  },
+  {
+   "id": "p88-3",
+   "group": "g1",
+   "kind": "text",
+   "label": "Produkt 3",
+   "answer": "Schallplatten|aus Schallplatten",
+   "x": 375,
+   "y": 1208,
+   "w": 110,
+   "h": 24
+  },
+  {
+   "id": "p88-4",
+   "group": "g1",
+   "kind": "text",
+   "label": "Produkt 4",
+   "answer": "Plastiktüten|aus Plastiktüten",
+   "x": 455,
+   "y": 1208,
+   "w": 110,
+   "h": 24
+  },
+  {
+   "id": "p88-5",
+   "group": "g1",
+   "kind": "text",
+   "label": "Produkt 5",
+   "answer": "Papier|aus Papier",
+   "x": 665,
+   "y": 1142,
+   "w": 110,
+   "h": 24
+  },
+  {
+   "id": "p88-6",
+   "group": "g1",
+   "kind": "text",
+   "label": "Produkt 6",
+   "answer": "Autoreifen|aus Autoreifen",
+   "x": 895,
+   "y": 1200,
+   "w": 110,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "L11/5 Aus Alt mach Neu: Woraus sind diese Produkte? (Lösung auf S. 92)"
+  }
+ ],
  "review": {
-  "status": "raw-ocr",
-  "notes": [],
-  "verifiedWords": 0,
-  "totalWords": 233
+  "status": "reviewed",
+  "note": "Graded L11/5 Aus Alt mach Neu: 6 Produkte, Material aus geschlossenem Kasten; Lösung gedruckt auf S. 92 (1 Dosenclips, 2+5 Papier, 3 Schallplatten, 4 Plastiktüten, 6 Autoreifen). L8/5 Würfelspiel oben offen, nicht benotet."
  }
 }

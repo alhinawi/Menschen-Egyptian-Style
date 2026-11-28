@@ -1508,9 +1508,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [],
-  "verifiedWords": 0,
-  "totalWords": 233
+  "status": "reviewed-no-gradeable",
+  "note": "L11/7 Aktivitaeten-Bingo: Pantomime + Partner-Bingo. Nothing mechanically gradeable."
  }
 }

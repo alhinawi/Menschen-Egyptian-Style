@@ -1543,9 +1543,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [],
-  "verifiedWords": 0,
-  "totalWords": 233
+  "status": "reviewed-no-gradeable",
+  "note": "L3/4 Woerter im Text verstehen (Teil A/B): 15 von 20 markierten Woertern sind falsch, aus Kasten korrigieren; Fehlersuche ist interpretativ, nicht maschinell benotet."
  }
 }

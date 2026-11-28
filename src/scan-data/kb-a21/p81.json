@@ -1287,13 +1287,61 @@
    "h": 13
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p81-a1",
+   "group": "g1",
+   "kind": "text",
+   "label": "a Lücke 1",
+   "answer": "Kann ich Ihnen helfen?",
+   "x": 195,
+   "y": 403,
+   "w": 290,
+   "h": 30
+  },
+  {
+   "id": "p81-a2",
+   "group": "g1",
+   "kind": "text",
+   "label": "a Lücke 2",
+   "answer": "Ich brauche|Ich brauche ...",
+   "x": 585,
+   "y": 482,
+   "w": 250,
+   "h": 30
+  },
+  {
+   "id": "p81-a3",
+   "group": "g1",
+   "kind": "text",
+   "label": "a Lücke 3",
+   "answer": "Wie viel darf es sein?",
+   "x": 195,
+   "y": 595,
+   "w": 260,
+   "h": 30
+  },
+  {
+   "id": "p81-a4",
+   "group": "g1",
+   "kind": "text",
+   "label": "a Lücke 4",
+   "answer": "Möchten Sie sonst noch etwas?",
+   "x": 240,
+   "y": 698,
+   "w": 260,
+   "h": 28
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "L4/7b a Einkaufsgespräche üben: Ergänzen Sie. (Partner A)"
+  }
+ ],
  "review": {
-  "status": "raw-ocr",
-  "notes": [],
-  "verifiedWords": 0,
-  "totalWords": 233
+  "status": "reviewed",
+  "note": "Graded a: Einkaufsdialog, 4 Lücken aus geschlossenem Kasten (Kann ich Ihnen helfen? / Ich brauche … / Wie viel darf es sein? / Möchten Sie sonst noch etwas?). b Rollenspiel offen, nicht benotet."
  }
 }
