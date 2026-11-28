@@ -706,14 +706,47 @@
    "h": 16
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p74-a-s2",
+   "group": "ga",
+   "kind": "text",
+   "answer": "Der Absender und der Empfänger werden ergänzt|Absender und Empfänger werden ergänzt",
+   "x": 330,
+   "y": 405,
+   "w": 720,
+   "h": 36
+  },
+  {
+   "id": "p74-a-s3",
+   "group": "ga",
+   "kind": "text",
+   "answer": "Das Paket wird zur Post gebracht",
+   "x": 330,
+   "y": 515,
+   "w": 720,
+   "h": 36
+  },
+  {
+   "id": "p74-a-s4",
+   "group": "ga",
+   "kind": "text",
+   "answer": "Das Paket wird am Schalter gewogen",
+   "x": 330,
+   "y": 650,
+   "w": 720,
+   "h": 36
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "ga",
+   "label": "L14/5a Auf der Post: Was wird hier gemacht? Schritte 2-4 notieren (Passiv; keyed by Partner-B prompts: Absender und Empfänger – ergänzen / Paket – zur Post – bringen / Paket – am Schalter – wiegen)"
+  }
+ ],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "Aktionsseiten: partner, role-play or free-writing activity with no single correct answer. Left ungraded."
-  ]
+  "status": "reviewed",
+  "note": "Graded 3 Passiv notieren lines (Schritt 2-4); answers keyed by the printed Partner-B verb prompts (p76) following the printed example 'Das Paket wird gepackt'."
  }
 }
