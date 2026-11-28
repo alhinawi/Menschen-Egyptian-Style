@@ -689,9 +689,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [],
-  "verifiedWords": 0,
-  "totalWords": 233
+  "status": "reviewed-no-gradeable",
+  "note": "Aktionsseiten L2/6 Ein Zimmer einrichten Partner A: partner info-gap. Nothing mechanically gradeable."
  }
 }

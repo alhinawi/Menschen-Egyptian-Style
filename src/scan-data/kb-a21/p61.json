@@ -776,12 +776,7 @@
  ],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "Ex 1 and 2 are open tasks, not graded. Audio: CD1 track 29."
-  ],
-  "verifiedWords": 0,
-  "totalWords": 108
+  "status": "reviewed-no-gradeable",
+  "note": "L11 opener Ich freue mich so: photo discussion + listening. Nothing mechanically gradeable."
  }
 }

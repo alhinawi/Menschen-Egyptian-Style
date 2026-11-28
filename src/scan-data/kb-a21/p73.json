@@ -920,9 +920,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [],
-  "verifiedWords": 0,
-  "totalWords": 233
+  "status": "reviewed-no-gradeable",
+  "note": "Aktionsseiten L1/4 Würfelspiel Sind das eure Schlüssel?: dice game, own sentences. Nothing mechanically gradeable."
  }
 }

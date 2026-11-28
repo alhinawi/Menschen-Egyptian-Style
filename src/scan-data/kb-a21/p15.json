@@ -2026,11 +2026,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
-  ],
-  "verifiedWords": 0,
-  "totalWords": 288
+  "status": "reviewed-no-gradeable",
+  "note": "L2 reading (Ist Einrichten Geschmackssache?) + group poster work + word strip reference. Nothing mechanically gradeable."
  }
 }

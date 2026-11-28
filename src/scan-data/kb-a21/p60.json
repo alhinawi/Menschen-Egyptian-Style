@@ -1816,12 +1816,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "Ex 9 (dice game) has no key; not graded."
-  ],
-  "verifiedWords": 0,
-  "totalWords": 258
+  "status": "reviewed-no-gradeable",
+  "note": "L10 Sprechtraining Würfelspiel Im Restaurant: board game speaking + Konjunktion dass reference. Nothing mechanically gradeable."
  }
 }

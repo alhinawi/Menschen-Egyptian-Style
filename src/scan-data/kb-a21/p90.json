@@ -955,9 +955,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [],
-  "verifiedWords": 0,
-  "totalWords": 233
+  "status": "reviewed-no-gradeable",
+  "note": "L10/4 Im Restaurant: Speisekarte lesen und sprechen. Nothing mechanically gradeable."
  }
 }

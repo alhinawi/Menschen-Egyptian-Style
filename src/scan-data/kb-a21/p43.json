@@ -1893,11 +1893,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
-  ],
-  "verifiedWords": 0,
-  "totalWords": 269
+  "status": "reviewed-no-gradeable",
+  "note": "L7 Sport: pantomime guessing game, own sport profile questionnaire, partner advice. Nothing mechanically gradeable."
  }
 }

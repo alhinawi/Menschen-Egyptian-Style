@@ -1277,11 +1277,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
-  ],
-  "verifiedWords": 0,
-  "totalWords": 181
+  "status": "reviewed-no-gradeable",
+  "note": "L9 Spiel Berufe-Raten: guessing game + Adjektivdeklination (Nullartikel) reference. Nothing mechanically gradeable."
  }
 }

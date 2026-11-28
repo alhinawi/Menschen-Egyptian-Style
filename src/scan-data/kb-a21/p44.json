@@ -1592,11 +1592,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
-  ],
-  "verifiedWords": 0,
-  "totalWords": 226
+  "status": "reviewed-no-gradeable",
+  "note": "L7 Der innere Schweinehund: own notes, group comparison, Konjunktiv II reference table. Nothing mechanically gradeable."
  }
 }

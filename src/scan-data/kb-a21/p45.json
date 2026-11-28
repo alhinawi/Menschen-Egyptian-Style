@@ -720,12 +720,7 @@
  ],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "1a (match the statements to Dr. Watzek / Frau Brudler) has no input boxes on the page, so it is not graded. Audio: CD1 track 22."
-  ],
-  "verifiedWords": 0,
-  "totalWords": 100
+  "status": "reviewed-no-gradeable",
+  "note": "L8 opener Hoffentlich ist es nicht das Herz!: photo discussion + listening. Nothing mechanically gradeable."
  }
 }

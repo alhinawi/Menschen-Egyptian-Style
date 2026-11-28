@@ -2187,11 +2187,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
-  ],
-  "verifiedWords": 0,
-  "totalWords": 311
+  "status": "reviewed-no-gradeable",
+  "note": "L6 Mini-Projekt Meine Lieblingsveranstaltung: own notes/text + temp. Präpositionen reference. Nothing mechanically gradeable."
  }
 }

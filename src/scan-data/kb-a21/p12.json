@@ -2190,12 +2190,7 @@
  ],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "Open speaking tasks only (ex. 7, 8); no graded fields."
-  ],
-  "verifiedWords": 0,
-  "totalWords": 310
+  "status": "reviewed-no-gradeable",
+  "note": "Modul 1 Sprechtraining: listening retell (Onkel Willi), group story work, Possessivartikel reference tables. Nothing mechanically gradeable."
  }
 }

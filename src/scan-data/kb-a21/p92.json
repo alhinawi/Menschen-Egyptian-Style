@@ -542,9 +542,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [],
-  "verifiedWords": 0,
-  "totalWords": 233
+  "status": "reviewed-no-gradeable",
+  "note": "L12/6 Ess- und Kochgewohnheiten: eigene/Partner-Umfrage; druckt ausserdem den Loesungsschluessel zu S. 88 (dort benotet). Nothing mechanically gradeable."
  }
 }

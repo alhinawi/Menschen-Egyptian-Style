@@ -1487,9 +1487,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [],
-  "verifiedWords": 0,
-  "totalWords": 233
+  "status": "reviewed-no-gradeable",
+  "note": "L3/4 Woerter im Text verstehen (Teil C/D + Variante ohne Kasten): Fehlersuche interpretativ, nicht maschinell benotet."
  }
 }

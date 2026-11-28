@@ -577,9 +577,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [],
-  "verifiedWords": 0,
-  "totalWords": 233
+  "status": "reviewed-no-gradeable",
+  "note": "Im Deutschkurs: Bildwoerterbuch Kursraum/Kursleiter-Redemittel (Referenz). Nothing mechanically gradeable."
  }
 }

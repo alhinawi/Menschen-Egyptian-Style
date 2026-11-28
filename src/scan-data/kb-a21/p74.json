@@ -843,9 +843,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [],
-  "verifiedWords": 0,
-  "totalWords": 233
+  "status": "reviewed-no-gradeable",
+  "note": "Aktionsseiten L1/6c Wahrheitsspiel: team speaking game. Nothing mechanically gradeable."
  }
 }
