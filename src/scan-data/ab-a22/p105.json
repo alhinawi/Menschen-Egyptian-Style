@@ -934,10 +934,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "Word layer cleaned: 31 OCR tokens removed (14 top-watermark, 14 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "Grammatikübersicht: Stellung der Objekte, indirekte Fragen, Präpositionaladverbien - reference tables, no exercises."
  }
 }
