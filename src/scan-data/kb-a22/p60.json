@@ -1508,10 +1508,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "6 is an interview task with free answers. Nothing to grade."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "L22 Sprechtraining: partner interview about transport; grammar box reference only. Nothing mechanically gradeable."
  }
 }

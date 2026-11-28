@@ -1900,10 +1900,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "Tausch-Börse 8 is open (notes, speaking). Nothing to grade."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "L21 Spiel: Tausch-Börse speaking game; grammar tables reference only. Nothing mechanically gradeable."
  }
 }

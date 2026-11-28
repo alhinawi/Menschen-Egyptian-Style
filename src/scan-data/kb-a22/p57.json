@@ -594,10 +594,7 @@
  ],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "1 is a listening and speaking opener with free answers. Nothing to grade."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "L22 opener: photo + listening + opinion questions. Nothing mechanically gradeable."
  }
 }
