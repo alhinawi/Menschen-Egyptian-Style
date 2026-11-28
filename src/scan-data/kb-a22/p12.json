@@ -1224,10 +1224,7 @@
  ],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "7a (Notizen) and 7b are open: no key, stay ungraded."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "L13 Sprechtraining: ex1a listening + opinion notes, 1b own speaking; grammar box is reference only (no exercise). Nothing mechanically gradeable."
  }
 }

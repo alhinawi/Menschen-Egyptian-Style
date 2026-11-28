@@ -1557,9 +1557,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "L13 course opener: partner/map speaking activities and class discussion only. Nothing mechanically gradeable."
  }
 }

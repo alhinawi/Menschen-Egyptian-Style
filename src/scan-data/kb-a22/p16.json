@@ -1634,9 +1634,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "L14 Schreibtraining: 7a marking sentences expressing joy in a letter is reading comprehension (derived); 7b own letter writing; grammar box reference only. Nothing mechanically gradeable."
  }
 }

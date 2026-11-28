@@ -4245,9 +4245,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "Lesemagazin 'Eine Woche ohne Internet': reading + color-marking statements + own opinion. Nothing mechanically gradeable."
  }
 }
