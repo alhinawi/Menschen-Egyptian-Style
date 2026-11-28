@@ -3524,10 +3524,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "1 asks for corrected sentences with no printed answer lines, and 2 is a free task. Both are left ungraded."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "Lesemagazin 'Arzt - ein Traumberuf?': ex1 correction task is reading comprehension (derived), ex2 own experience. Nothing mechanically gradeable."
  }
 }
