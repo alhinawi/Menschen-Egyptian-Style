@@ -226,7 +226,7 @@ html[data-theme="dark"] .lnv-pg.cur {
 :where(html[data-bookcss]) body{background:var(--ground);padding:62px 0 90px}
 :where(html[data-bookcss]) header:not(.page header){height:58px}
 .headerBrand{display:flex;align-items:center;gap:7px}
-:where(html[data-bookcss]) header:not(.page header) button{min-width:34px;padding:7px}
+:where(html[data-bookcss]) header:not(.page header) button{min-width:44px;padding:7px}
 :where(html[data-bookcss]) .page{height:1515px!important;min-height:1515px!important;margin:0!important;background:#fffefa}
 .p11body{padding:38px 55px 65px 112px}
 .sixGrid{display:grid;grid-template-columns:480px 215px;gap:20px}
