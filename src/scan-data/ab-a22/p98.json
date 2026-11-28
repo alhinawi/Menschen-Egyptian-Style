@@ -1294,15 +1294,409 @@
    "h": 13
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p98-1a",
+   "group": "g1",
+   "kind": "text",
+   "answer": "geht",
+   "x": 233,
+   "y": 241,
+   "w": 72,
+   "h": 24
+  },
+  {
+   "id": "p98-1b",
+   "group": "g1",
+   "kind": "text",
+   "answer": "erklären",
+   "x": 530,
+   "y": 240,
+   "w": 100,
+   "h": 24
+  },
+  {
+   "id": "p98-1c",
+   "group": "g1",
+   "kind": "text",
+   "answer": "Problem",
+   "x": 240,
+   "y": 265,
+   "w": 125,
+   "h": 24
+  },
+  {
+   "id": "p98-2a",
+   "group": "g1",
+   "kind": "text",
+   "answer": "sagen",
+   "x": 322,
+   "y": 308,
+   "w": 62,
+   "h": 24
+  },
+  {
+   "id": "p98-2b",
+   "group": "g1",
+   "kind": "text",
+   "answer": "wie",
+   "x": 420,
+   "y": 308,
+   "w": 70,
+   "h": 24
+  },
+  {
+   "id": "p98-2c",
+   "group": "g1",
+   "kind": "text",
+   "answer": "funktioniert",
+   "x": 585,
+   "y": 308,
+   "w": 100,
+   "h": 24
+  },
+  {
+   "id": "p98-3a",
+   "group": "g1",
+   "kind": "text",
+   "answer": "klar",
+   "x": 225,
+   "y": 331,
+   "w": 45,
+   "h": 24
+  },
+  {
+   "id": "p98-3b",
+   "group": "g1",
+   "kind": "text",
+   "answer": "ganz",
+   "x": 357,
+   "y": 331,
+   "w": 76,
+   "h": 24
+  },
+  {
+   "id": "p98-3c",
+   "group": "g1",
+   "kind": "text",
+   "answer": "einfach",
+   "x": 448,
+   "y": 331,
+   "w": 85,
+   "h": 24
+  },
+  {
+   "id": "p98-4",
+   "group": "g2",
+   "kind": "text",
+   "answer": "zufrieden",
+   "x": 350,
+   "y": 410,
+   "w": 140,
+   "h": 24
+  },
+  {
+   "id": "p98-5a",
+   "group": "g2",
+   "kind": "text",
+   "answer": "zufrieden",
+   "x": 285,
+   "y": 447,
+   "w": 170,
+   "h": 24
+  },
+  {
+   "id": "p98-5b",
+   "group": "g2",
+   "kind": "text",
+   "answer": "damit",
+   "x": 478,
+   "y": 447,
+   "w": 95,
+   "h": 24
+  },
+  {
+   "id": "p98-6a",
+   "group": "g2",
+   "kind": "text",
+   "answer": "macht",
+   "x": 232,
+   "y": 472,
+   "w": 148,
+   "h": 24
+  },
+  {
+   "id": "p98-6b",
+   "group": "g2",
+   "kind": "text",
+   "answer": "Spaß",
+   "x": 496,
+   "y": 472,
+   "w": 100,
+   "h": 24
+  },
+  {
+   "id": "p98-7a",
+   "group": "g2",
+   "kind": "text",
+   "answer": "ja",
+   "x": 228,
+   "y": 512,
+   "w": 32,
+   "h": 24
+  },
+  {
+   "id": "p98-7b",
+   "group": "g2",
+   "kind": "text",
+   "answer": "geht",
+   "x": 258,
+   "y": 512,
+   "w": 75,
+   "h": 24
+  },
+  {
+   "id": "p98-8a",
+   "group": "g2",
+   "kind": "text",
+   "answer": "überhaupt",
+   "x": 218,
+   "y": 552,
+   "w": 140,
+   "h": 24
+  },
+  {
+   "id": "p98-8b",
+   "group": "g2",
+   "kind": "text",
+   "answer": "nicht",
+   "x": 372,
+   "y": 552,
+   "w": 100,
+   "h": 24
+  },
+  {
+   "id": "p98-9a",
+   "group": "g2",
+   "kind": "text",
+   "answer": "stört",
+   "x": 420,
+   "y": 579,
+   "w": 105,
+   "h": 24
+  },
+  {
+   "id": "p98-9b",
+   "group": "g2",
+   "kind": "text",
+   "answer": "mich",
+   "x": 535,
+   "y": 579,
+   "w": 70,
+   "h": 24
+  },
+  {
+   "id": "p98-10a",
+   "group": "g3",
+   "kind": "text",
+   "answer": "Zeit",
+   "x": 320,
+   "y": 651,
+   "w": 75,
+   "h": 24
+  },
+  {
+   "id": "p98-10b",
+   "group": "g3",
+   "kind": "text",
+   "answer": "vielen",
+   "x": 448,
+   "y": 650,
+   "w": 90,
+   "h": 24
+  },
+  {
+   "id": "p98-10c",
+   "group": "g3",
+   "kind": "text",
+   "answer": "Erlebnissen",
+   "x": 648,
+   "y": 649,
+   "w": 190,
+   "h": 24
+  },
+  {
+   "id": "p98-11a",
+   "group": "g3",
+   "kind": "text",
+   "answer": "Erfahrungen",
+   "x": 342,
+   "y": 676,
+   "w": 115,
+   "h": 24
+  },
+  {
+   "id": "p98-11b",
+   "group": "g3",
+   "kind": "text",
+   "answer": "gebracht",
+   "x": 468,
+   "y": 678,
+   "w": 120,
+   "h": 24
+  },
+  {
+   "id": "p98-12a",
+   "group": "g3",
+   "kind": "text",
+   "answer": "würde",
+   "x": 205,
+   "y": 700,
+   "w": 77,
+   "h": 24
+  },
+  {
+   "id": "p98-12b",
+   "group": "g3",
+   "kind": "text",
+   "answer": "empfehlen",
+   "x": 420,
+   "y": 699,
+   "w": 110,
+   "h": 24
+  },
+  {
+   "id": "p98-13a",
+   "group": "g3",
+   "kind": "text",
+   "answer": "wieder",
+   "x": 346,
+   "y": 726,
+   "w": 80,
+   "h": 24
+  },
+  {
+   "id": "p98-13b",
+   "group": "g3",
+   "kind": "text",
+   "answer": "machen",
+   "x": 448,
+   "y": 726,
+   "w": 100,
+   "h": 24
+  },
+  {
+   "id": "p98-14a",
+   "group": "g4",
+   "kind": "text",
+   "answer": "Schade",
+   "x": 168,
+   "y": 801,
+   "w": 105,
+   "h": 24
+  },
+  {
+   "id": "p98-14b",
+   "group": "g4",
+   "kind": "text",
+   "answer": "vorbei",
+   "x": 490,
+   "y": 803,
+   "w": 90,
+   "h": 24
+  },
+  {
+   "id": "p98-15a",
+   "group": "g4",
+   "kind": "text",
+   "answer": "fand",
+   "x": 198,
+   "y": 827,
+   "w": 77,
+   "h": 24
+  },
+  {
+   "id": "p98-15b",
+   "group": "g4",
+   "kind": "text",
+   "answer": "traurig",
+   "x": 318,
+   "y": 827,
+   "w": 85,
+   "h": 24
+  },
+  {
+   "id": "p98-16a",
+   "group": "g4",
+   "kind": "text",
+   "answer": "Leider",
+   "x": 168,
+   "y": 854,
+   "w": 77,
+   "h": 24
+  },
+  {
+   "id": "p98-16b",
+   "group": "g4",
+   "kind": "text",
+   "answer": "nicht",
+   "x": 584,
+   "y": 853,
+   "w": 76,
+   "h": 24
+  },
+  {
+   "id": "p98-16c",
+   "group": "g4",
+   "kind": "text",
+   "answer": "gefallen",
+   "x": 732,
+   "y": 853,
+   "w": 115,
+   "h": 24
+  },
+  {
+   "id": "p98-17a",
+   "group": "g4",
+   "kind": "text",
+   "answer": "niemals",
+   "x": 322,
+   "y": 877,
+   "w": 108,
+   "h": 24
+  },
+  {
+   "id": "p98-17b",
+   "group": "g4",
+   "kind": "text",
+   "answer": "wieder machen",
+   "x": 440,
+   "y": 877,
+   "w": 130,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "L22: etwas erklären (Wie geht das? / Können Sie mir das erklären? / Kein Problem! / Na klar! Das ist ganz einfach.)"
+  },
+  {
+   "id": "g2",
+   "label": "L23: Zufriedenheit/Unzufriedenheit ausdrücken"
+  },
+  {
+   "id": "g3",
+   "label": "L24: Begeisterung ausdrücken"
+  },
+  {
+   "id": "g4",
+   "label": "L24: Enttäuschung ausdrücken"
+  }
+ ],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "Word layer cleaned: 40 OCR tokens removed (22 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded.",
-   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
-  ]
+  "status": "partial",
+  "note": "Selbsteinschätzung phrase completion. Answers are the fixed Redemittel of L22-24 (the phrases themselves are printed in the lesson boxes; e.g. L23 test key on p107 confirms 'sehr zufrieden', L24 key confirms 'würde ich jedem empfehlen', 'fand es ... anstrengend/traurig' pattern, 'dass die Zeit so schnell vorbei war'). Objectively determined from the phrase inventory; no separate printed key exists. Excluded: 'Ich kenne ...' vocabulary lists (own words) and the self-rating circles."
  }
 }
