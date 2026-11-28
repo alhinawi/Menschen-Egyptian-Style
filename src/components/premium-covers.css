@@ -27,7 +27,7 @@
 @media(prefers-reduced-motion:reduce){.bookCover .premiumCover *{transition:none!important;transform:none!important}}
 /* Covers are a viewport, not a shrunken 900 × 1515 reader page. */
 body.fullscreenCoverActive{overflow:hidden!important}
-.fullscreenCover.bookCover{position:fixed;inset:0;z-index:80;width:100%;height:100vh;height:100dvh;min-height:0;margin:0;padding:0;box-sizing:border-box;background:#fbf7ef!important}
+.fullscreenCover.bookCover{position:fixed;top:0;left:0;right:0;bottom:var(--reader-controls-height,57px);z-index:80;width:100%;min-height:0;margin:0;padding:0;box-sizing:border-box;background:#fbf7ef!important}
 .fullscreenCover .premiumCover{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr) auto auto auto auto auto;height:100%;width:100%;border:0;box-shadow:none;padding:max(10px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) max(10px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));gap:8px;justify-items:center;background:radial-gradient(ellipse at 50% 20%,#fffcf6,#f5eedf)}
 .fullscreenCover .premiumCover::before{display:none}
 .fullscreenCover .premiumCover .premiumCoverMasthead{margin:0;letter-spacing:2px;font-size:12px}
