@@ -117,8 +117,14 @@ function listAllAudio() {
   return out;
 }
 
+// All audio lives on the menscheny-audio CDN (every clip at its original
+// /assets/... path); CF builds ship none of it locally. The _redirects rule
+// written in closeBundle catches direct asset URLs (track players, docks).
+const AUDIO_ON_CDN = true;
+
 // Audio files a Cloudflare build ships, in priority order, capped to budget.
 function cfAudioSelection() {
+  if (AUDIO_ON_CDN) return [];
   const ranked = [];
   for (const rel of listAllAudio()) {
     const key = audioPriority(rel);
@@ -171,6 +177,7 @@ export default defineConfig({define:{__MENSCHEN_TTS__:JSON.stringify(ON_CLOUDFLA
   fs.writeFileSync(path.join('dist',file), stamp(spa,file,m));
  }
  const total = countFiles('dist');
+ if(ON_CLOUDFLARE_PAGES)fs.writeFileSync(path.join('dist','_redirects'),'/assets/* https://menscheny-audio.pages.dev/assets/:splat 302\n');
  console.log(`[cf-audio] dist holds ${total} files (cap 20,000)`);
  if(ON_CLOUDFLARE_PAGES && total > HARD_FILE_LIMIT)throw new Error(`dist has ${total} files, over the safety limit of ${HARD_FILE_LIMIT} (Cloudflare cap 20,000) - the adaptive audio budget already shrank to fit; raise VITE_OUTPUT_ALLOWANCE or move content off Pages`);
 }}],build:{outDir:'dist',emptyOutDir:true,rolldownOptions:{input:{main:'index.html'},output:{manualChunks(id){const m=/scan-data\/(kb-a2\d|ab-a2\d|kb-b1\d|ab-b1\d)\/p(\d+)\.json/.exec(id.replace(/\\/g,'/'));return m?'scan-'+m[1]+'-'+Math.floor(Number(m[2])/25):undefined}}}},server:{host:'127.0.0.1'}});
