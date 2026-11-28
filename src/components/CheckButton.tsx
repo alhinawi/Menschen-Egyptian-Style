@@ -14,7 +14,7 @@ export function CheckButton({className='',onClickCapture,answers,...props}:Butto
   const update=()=>{const r=el.getBoundingClientRect();if(!r.width)return;const scale=r.width/el.offsetWidth,page=el.closest('.page')||document.body;
    const obstacles=[...page.querySelectorAll('input,select,textarea,button,output,.tapWord,.nativeWord,.hybridWord,.mDrawing')].filter(e=>e!==el&&!e.hasAttribute('hidden')&&getComputedStyle(e).visibility!=='hidden').map(e=>e.getBoundingClientRect()).filter(r=>r.width&&r.height);
    const pick=(s:number)=>{const c=[[r.left,r.top],[r.right-s,r.top],[r.left,r.bottom-s],[r.right-s,r.bottom-s],[r.left+(r.width-s)/2,r.top+(r.height-s)/2]];return c.find(([x,y])=>obstacles.every(o=>x+s<=o.left||x>=o.right||y+s<=o.top||y>=o.bottom))};
-   let size=Math.max(40,r.width),chosen=pick(size);
+   let size=Math.max(44,r.width),chosen=pick(size);
    if(!chosen&&size>r.width){size=r.width;chosen=pick(size)}
    const [x,y]=chosen||[r.left,r.top];el.dataset.checkHitClear=String(!!chosen);el.style.setProperty('--check-hit-size',size/scale+'px');el.style.setProperty('--check-hit-left',(x-r.left)/scale+'px');el.style.setProperty('--check-hit-top',(y-r.top)/scale+'px');
   };const queue=()=>{cancelAnimationFrame(frame);frame=requestAnimationFrame(update)};const ro=new ResizeObserver(queue);ro.observe(el);const page=el.closest('.page');if(page)ro.observe(page);window.addEventListener('resize',queue);const timer=setInterval(queue,300);queue();return()=>{cancelAnimationFrame(frame);clearInterval(timer);ro.disconnect();window.removeEventListener('resize',queue)};
