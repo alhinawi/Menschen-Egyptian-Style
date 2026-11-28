@@ -31,6 +31,17 @@ export function recordPronunciationUrl(record: {id?: string; text?: string} | un
  return record.text ? ttsUrl(record.text) : undefined; // synthesized fallback
 }
 
+
+// Original coursebook/CD track: on Cloudflare builds the file is not packaged
+// (audio split, #1150), so play it straight from the static audio CDN, which
+// serves every clip at its original /assets/ path with CORS *.
+export function trackAudioUrl(src: string): string {
+ if (!TTS_MODE) return src;
+ if (INCLUDED!.has(src)) return src;
+ const cdn = CDN_FILES[src];
+ return cdn ? AUDIO_CDN_ORIGIN + cdn : src;
+}
+
 export function installTtsMode() {
  if (!TTS_MODE) return;
  document.body.dataset.audio = 'tts';
