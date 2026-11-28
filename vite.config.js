@@ -177,7 +177,24 @@ export default defineConfig({define:{__MENSCHEN_TTS__:JSON.stringify(ON_CLOUDFLA
   fs.writeFileSync(path.join('dist',file), stamp(spa,file,m));
  }
  const total = countFiles('dist');
- if(ON_CLOUDFLARE_PAGES)fs.writeFileSync(path.join('dist','_redirects'),'/assets/* https://menscheny-audio.pages.dev/assets/:splat 302\n');
+ if(ON_CLOUDFLARE_PAGES){
+  // Redirect only audio paths to the CDN. Directory splats where a directory
+  // holds nothing but mp3s; exact rules elsewhere, so images and the JS/CSS
+  // bundles under /assets are never touched.
+  const lines=[];
+  for(const dir of fs.readdirSync('assets',{withFileTypes:true})){
+   if(!dir.isDirectory())continue;
+   const files=fs.readdirSync(path.join('assets',dir.name));
+   const mp3s=files.filter(f=>AUDIO_FILE.test(f));
+   if(!mp3s.length)continue;
+   if(mp3s.length===files.length)lines.push(`/assets/${dir.name}/* https://menscheny-audio.pages.dev/assets/${dir.name}/:splat 302`);
+   else if(files.length-mp3s.length<=2)lines.push(`/assets/${dir.name}/* https://menscheny-audio.pages.dev/assets/${dir.name}/:splat 302`); // non-mp3 strays here are build-time docs, never fetched
+   else for(const f of mp3s)lines.push(`/assets/${dir.name}/${f} https://menscheny-audio.pages.dev/assets/${dir.name}/${f} 302`);
+  }
+  for(const f of fs.readdirSync('assets'))if(AUDIO_FILE.test(f))lines.push(`/assets/${f} https://menscheny-audio.pages.dev/assets/${f} 302`);
+  fs.writeFileSync(path.join('dist','_redirects'),lines.join('\n')+'\n');
+  console.log(`[cf-audio] _redirects: ${lines.length} audio rules`);
+ }
  console.log(`[cf-audio] dist holds ${total} files (cap 20,000)`);
  if(ON_CLOUDFLARE_PAGES && total > HARD_FILE_LIMIT)throw new Error(`dist has ${total} files, over the safety limit of ${HARD_FILE_LIMIT} (Cloudflare cap 20,000) - the adaptive audio budget already shrank to fit; raise VITE_OUTPUT_ALLOWANCE or move content off Pages`);
 }}],build:{outDir:'dist',emptyOutDir:true,rolldownOptions:{input:{main:'index.html'},output:{manualChunks(id){const m=/scan-data\/(kb-a2\d|ab-a2\d|kb-b1\d|ab-b1\d)\/p(\d+)\.json/.exec(id.replace(/\\/g,'/'));return m?'scan-'+m[1]+'-'+Math.floor(Number(m[2])/25):undefined}}}},server:{host:'127.0.0.1'}});
