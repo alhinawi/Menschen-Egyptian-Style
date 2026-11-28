@@ -2092,7 +2092,74 @@
    "h": 22
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p86-9a",
+   "group": "g9",
+   "kind": "text",
+   "label": "9a",
+   "answer": "Gesamtschule",
+   "x": 270,
+   "y": 1094,
+   "w": 690,
+   "h": 28
+  },
+  {
+   "id": "p86-9b1",
+   "group": "g9",
+   "kind": "text",
+   "label": "9b1",
+   "answer": "Hauptschule/Mittelschule|Realschule",
+   "x": 745,
+   "y": 1146,
+   "w": 155,
+   "h": 28
+  },
+  {
+   "id": "p86-9b2",
+   "group": "g9",
+   "kind": "text",
+   "label": "9b2",
+   "answer": "Hauptschule/Mittelschule|Realschule",
+   "x": 245,
+   "y": 1173,
+   "w": 155,
+   "h": 28
+  },
+  {
+   "id": "p86-9c",
+   "group": "g9",
+   "kind": "text",
+   "label": "9c",
+   "answer": "Berufsschule",
+   "x": 245,
+   "y": 1226,
+   "w": 250,
+   "h": 28
+  },
+  {
+   "id": "p86-9d",
+   "group": "g9",
+   "kind": "text",
+   "label": "9d",
+   "answer": "Fachhochschule",
+   "x": 265,
+   "y": 1282,
+   "w": 155,
+   "h": 28
+  },
+  {
+   "id": "p86-9e",
+   "group": "g9",
+   "kind": "text",
+   "label": "9e",
+   "answer": "Grundschule",
+   "x": 750,
+   "y": 1307,
+   "w": 155,
+   "h": 28
+  }
+ ],
  "audio": [],
  "groups": [],
  "review": {
