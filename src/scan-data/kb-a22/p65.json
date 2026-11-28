@@ -678,10 +678,7 @@
  ],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "1 and 2 are speaking tasks with free answers. Nothing to grade."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "L24 opener photo page: listening + discussion questions only."
  }
 }

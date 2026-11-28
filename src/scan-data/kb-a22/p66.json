@@ -3746,110 +3746,89 @@
  ],
  "fields": [
   {
-   "id": "p66-11",
-   "group": "g1",
+   "id": "p66-3b",
+   "group": "g3",
    "kind": "text",
-   "label": "3b",
-   "answer": "die Grenze",
-   "x": 790,
-   "y": 288,
-   "w": 130,
-   "h": 26
+   "answer": "die Grenze|Grenze",
+   "x": 792,
+   "y": 289,
+   "w": 180,
+   "h": 24
   },
   {
-   "id": "p66-12",
-   "group": "g1",
+   "id": "p66-3c",
+   "group": "g3",
    "kind": "text",
-   "label": "3c",
-   "answer": "der Pass",
-   "x": 770,
-   "y": 316,
-   "w": 130,
-   "h": 26
+   "answer": "der Pass|Pass",
+   "x": 774,
+   "y": 317,
+   "w": 180,
+   "h": 24
   },
   {
-   "id": "p66-21",
-   "group": "g2",
+   "id": "p66-4a-1",
+   "group": "g4a",
    "kind": "text",
-   "label": "4a Zeile 1",
    "answer": "Hast du schon mal ein ähnliches Projekt gemacht?",
-   "x": 198,
-   "y": 742,
-   "w": 375,
+   "x": 193,
+   "y": 744,
+   "w": 385,
    "h": 26
   },
   {
-   "id": "p66-22",
-   "group": "g2",
+   "id": "p66-4a-2",
+   "group": "g4a",
    "kind": "text",
-   "label": "4a Zeile 2",
    "answer": "Waren die Vorbereitungen kompliziert?",
-   "x": 198,
-   "y": 812,
-   "w": 345,
+   "x": 193,
+   "y": 814,
+   "w": 385,
    "h": 26
   },
   {
-   "id": "p66-23",
-   "group": "g2",
+   "id": "p66-4a-3",
+   "group": "g4a",
    "kind": "text",
-   "label": "4a Zeile 3",
-   "answer": "Wie sah dein Alltag aus?",
-   "x": 198,
-   "y": 958,
-   "w": 345,
-   "h": 26
-  },
-  {
-   "id": "p66-24",
-   "group": "g2",
-   "kind": "text",
-   "label": "4a Zeile 4",
    "answer": "Was hast du vermisst?",
-   "x": 625,
-   "y": 862,
-   "w": 370,
+   "x": 626,
+   "y": 860,
+   "w": 384,
    "h": 26
   },
   {
-   "id": "p66-25",
-   "group": "g2",
+   "id": "p66-4a-4",
+   "group": "g4a",
    "kind": "text",
-   "label": "4a Zeile 5",
    "answer": "Welche Pläne hast du für die Zukunft?",
-   "x": 625,
-   "y": 1030,
-   "w": 370,
+   "x": 626,
+   "y": 1032,
+   "w": 384,
    "h": 26
   },
   {
-   "id": "p66-26",
-   "group": "g2",
+   "id": "p66-4a-5",
+   "group": "g4a",
    "kind": "text",
-   "label": "4a Zeile 6",
    "answer": "Was ist die schönste Erinnerung an deine Arbeit?",
-   "x": 625,
-   "y": 1140,
-   "w": 370,
+   "x": 626,
+   "y": 1148,
+   "w": 384,
    "h": 26
   }
  ],
  "audio": [],
  "groups": [
   {
-   "id": "g1",
-   "label": "3 Was passt? (b, c)"
+   "id": "g3",
+   "label": "Exercise 3: Was passt? (Bildlexikon-Wörter: Zoll, Grenze, Konsulat, Visum, Impfung; a Visum is the example)"
   },
   {
-   "id": "g2",
-   "label": "4 a Was passt? Ergänzen Sie die Fragen."
+   "id": "g4a",
+   "label": "Exercise 4a: Fragen zum Mitarbeiterporträt ergänzen (question bank above; 'Was war deine letzte Arbeitsstelle in Deutschland?' is the struck example)"
   }
  ],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "3 a is printed as an example; 3 also asks for two own riddles (not graded). The question on the struck-through line is not a blank."
-  ]
+  "status": "partial",
+  "note": "Exercise 3 from the closed Bildlexikon word bank (b Grenze: between two countries with checks; c Pass: verlängern). Exercise 4a matched from the printed question bank to the interview answers: 'zweites Projekt' -> ähnliches Projekt; Visum/Impfungen/Pass -> Vorbereitungen; Eltern/Geschwister/Freunde -> vermisst; Weihnachten/Januar Nigeria -> Pläne Zukunft; 'Jede Geburt ein tolles Erlebnis' -> schönste Erinnerung. 'Wie sah dein Alltag aus?' is the unused distractor. Excluded: own riddles (3), free discussion."
  }
 }
