@@ -114,11 +114,11 @@ export function modulePages(slug: string): string[] {
   if (!mod) return [];
   const pages = mod.lessons.flatMap(l => l.pages).concat(mod.extras).map(String);
   if (slug === 'index') return ['cover', 'howto', ...pages];
-  if (slug === 'ab1') return ['abcover', ...pages];
-  if (slug === 'kb-a12-l13-16') return ['cover', ...pages];
-  if (slug === 'ab-a12-l13-16') return ['abcover', ...pages];
-  if (slug === 'kb-a21-m1' || slug === 'kb-a21-m2' || slug === 'kb-a21-m3' || slug === 'kb-a21-m4' || slug === 'kb-a21-m5' || slug.startsWith('kb-a22-')) return ['cover', ...pages];
-  if (slug.startsWith('ab-a21-') || slug.startsWith('ab-a22-')) return ['abcover', ...pages];
+  if (slug === 'ab1') return ['abcover', 'howto', ...pages];
+  if (slug === 'kb-a12-l13-16') return ['cover', 'howto', ...pages];
+  if (slug === 'ab-a12-l13-16') return ['abcover', 'howto', ...pages];
+  if (slug === 'kb-a21-m1' || slug === 'kb-a21-m2' || slug === 'kb-a21-m3' || slug === 'kb-a21-m4' || slug === 'kb-a21-m5' || slug.startsWith('kb-a22-')) return ['cover', 'howto', ...pages];
+  if (slug.startsWith('ab-a21-') || slug.startsWith('ab-a22-')) return ['abcover', 'howto', ...pages];
   return pages;
 }
 
