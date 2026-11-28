@@ -9,7 +9,7 @@
 import cfAudioManifest from './generated/cf-audio-manifest.json';
 import audioCdnManifest from './audio-cdn-manifest.json';
 
-const AUDIO_CDN_ORIGIN = 'https://menschen-audio.pages.dev';
+const AUDIO_CDN_ORIGIN = 'https://menscheny-audio.pages.dev';
 const CDN_FILES: Readonly<Record<string, string>> = audioCdnManifest;
 
 declare const __MENSCHEN_TTS__: boolean | undefined;

@@ -41,7 +41,7 @@ function playFailed(err: any,gen: number){
  if(gen!==playGen)return;if(err&&(err.name==='AbortError'||err.name==='NotAllowedError'))return;
  const browserFallback=()=>{if(gen===playGen&&!speakCurrent())meaningStore.update({pendingHidden:false,pending:'التسجيل مشتغلش. اضغط اسمع النطق عشان تجرّب تاني.'})};
  // Keep the free server voice available during a CDN outage or first deployment.
- if(!current?.selectionParts&&audioPath?.startsWith('https://menschen-audio.pages.dev/')){
+ if(!current?.selectionParts&&audioPath?.startsWith('https://menscheny-audio.pages.dev/')){
   const text=mode==='sentence'?current?.phrase:current?.word;
   if(text){activeAudio.src=ttsUrl(text);activeAudio.play().catch((error: any)=>{if(error?.name!=='AbortError'&&error?.name!=='NotAllowedError')browserFallback()});return}
  }
