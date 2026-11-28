@@ -2092,7 +2092,63 @@
    "h": 16
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p85-7b",
+   "group": "g7",
+   "kind": "text",
+   "label": "7b",
+   "answer": "ist in Ordnung",
+   "x": 340,
+   "y": 1145,
+   "w": 290,
+   "h": 28
+  },
+  {
+   "id": "p85-7c",
+   "group": "g7",
+   "kind": "text",
+   "label": "7c",
+   "answer": "bin total unzufrieden",
+   "x": 200,
+   "y": 1200,
+   "w": 275,
+   "h": 28
+  },
+  {
+   "id": "p85-7d",
+   "group": "g7",
+   "kind": "text",
+   "label": "7d",
+   "answer": "stört mich sehr",
+   "x": 675,
+   "y": 1226,
+   "w": 260,
+   "h": 28
+  },
+  {
+   "id": "p85-7e",
+   "group": "g7",
+   "kind": "text",
+   "label": "7e",
+   "answer": "Ich habe genug",
+   "x": 165,
+   "y": 1306,
+   "w": 260,
+   "h": 28
+  },
+  {
+   "id": "p85-7f",
+   "group": "g7",
+   "kind": "text",
+   "label": "7f",
+   "answer": "habe ich fest vor",
+   "x": 230,
+   "y": 1360,
+   "w": 265,
+   "h": 28
+  }
+ ],
  "audio": [],
  "groups": [],
  "review": {

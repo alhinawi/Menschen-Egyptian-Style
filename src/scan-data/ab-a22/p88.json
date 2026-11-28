@@ -2113,7 +2113,217 @@
    "h": 14
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p88-1b",
+   "group": "g1",
+   "kind": "text",
+   "label": "1b",
+   "answer": "Prüfungen",
+   "x": 350,
+   "y": 320,
+   "w": 160,
+   "h": 28
+  },
+  {
+   "id": "p88-1c",
+   "group": "g1",
+   "kind": "text",
+   "label": "1c",
+   "answer": "Lehre",
+   "x": 350,
+   "y": 374,
+   "w": 155,
+   "h": 28
+  },
+  {
+   "id": "p88-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1d",
+   "answer": "Praktikant",
+   "x": 600,
+   "y": 399,
+   "w": 155,
+   "h": 28
+  },
+  {
+   "id": "p88-1e",
+   "group": "g1",
+   "kind": "text",
+   "label": "1e",
+   "answer": "Berufsschule",
+   "x": 460,
+   "y": 483,
+   "w": 155,
+   "h": 28
+  },
+  {
+   "id": "p88-1f",
+   "group": "g1",
+   "kind": "text",
+   "label": "1f",
+   "answer": "Noten",
+   "x": 855,
+   "y": 508,
+   "w": 118,
+   "h": 28
+  },
+  {
+   "id": "p88-1g",
+   "group": "g1",
+   "kind": "text",
+   "label": "1g",
+   "answer": "Zeugnis",
+   "x": 390,
+   "y": 562,
+   "w": 155,
+   "h": 28
+  },
+  {
+   "id": "p88-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2b",
+   "answer": "die",
+   "x": 668,
+   "y": 684,
+   "w": 46,
+   "h": 26
+  },
+  {
+   "id": "p88-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2c",
+   "answer": "das",
+   "x": 520,
+   "y": 711,
+   "w": 52,
+   "h": 26
+  },
+  {
+   "id": "p88-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2d",
+   "answer": "die",
+   "x": 400,
+   "y": 741,
+   "w": 40,
+   "h": 26
+  },
+  {
+   "id": "p88-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2e",
+   "answer": "die",
+   "x": 402,
+   "y": 766,
+   "w": 48,
+   "h": 26
+  },
+  {
+   "id": "p88-2f",
+   "group": "g2",
+   "kind": "text",
+   "label": "2f",
+   "answer": "den",
+   "x": 430,
+   "y": 793,
+   "w": 45,
+   "h": 26
+  },
+  {
+   "id": "p88-2g",
+   "group": "g2",
+   "kind": "text",
+   "label": "2g",
+   "answer": "die",
+   "x": 455,
+   "y": 820,
+   "w": 42,
+   "h": 26
+  },
+  {
+   "id": "p88-3a",
+   "group": "g3",
+   "kind": "text",
+   "label": "3a",
+   "answer": "großen Spaß",
+   "x": 445,
+   "y": 1056,
+   "w": 220,
+   "h": 24
+  },
+  {
+   "id": "p88-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3b",
+   "answer": "ist prima",
+   "x": 715,
+   "y": 1084,
+   "w": 235,
+   "h": 24
+  },
+  {
+   "id": "p88-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3c",
+   "answer": "muss ich alles",
+   "x": 560,
+   "y": 1122,
+   "w": 250,
+   "h": 24
+  },
+  {
+   "id": "p88-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3d",
+   "answer": "habe keine Lust",
+   "x": 215,
+   "y": 1148,
+   "w": 255,
+   "h": 24
+  },
+  {
+   "id": "p88-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3e",
+   "answer": "möchte ich so bald",
+   "x": 640,
+   "y": 1148,
+   "w": 255,
+   "h": 24
+  },
+  {
+   "id": "p88-3f",
+   "group": "g3",
+   "kind": "text",
+   "label": "3f",
+   "answer": "habe ich fest",
+   "x": 495,
+   "y": 1173,
+   "w": 253,
+   "h": 24
+  },
+  {
+   "id": "p88-3g",
+   "group": "g3",
+   "kind": "text",
+   "label": "3g",
+   "answer": "sehr zufrieden",
+   "x": 265,
+   "y": 1215,
+   "w": 315,
+   "h": 24
+  }
+ ],
  "audio": [],
  "groups": [],
  "review": {
