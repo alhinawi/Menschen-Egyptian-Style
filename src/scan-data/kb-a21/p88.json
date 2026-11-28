@@ -1953,9 +1953,9 @@
    "kind": "text",
    "label": "Produkt 3",
    "answer": "Schallplatten|aus Schallplatten",
-   "x": 375,
+   "x": 360,
    "y": 1208,
-   "w": 110,
+   "w": 95,
    "h": 24
   },
   {
@@ -1964,9 +1964,9 @@
    "kind": "text",
    "label": "Produkt 4",
    "answer": "Plastiktüten|aus Plastiktüten",
-   "x": 455,
+   "x": 465,
    "y": 1208,
-   "w": 110,
+   "w": 95,
    "h": 24
   },
   {
