@@ -218,7 +218,7 @@ html[data-theme="dark"] .lnv-pg.cur {
 .localnote{font:11px Arial;color:#6a7467;text-align:center;padding:10px}
 :where(html[data-bookcss]) #zoomValue{min-width:34px;text-align:center;display:inline-flex;align-items:center;justify-content:center}
 :where(html[data-bookcss]) header:not(.page header) button,:where(html[data-bookcss]) header:not(.page header) .actionLink{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;line-height:1.2;text-align:center}
-:where(html[data-bookcss]) header:not(.page header) #zoomValue,:where(html[data-bookcss]) header:not(.page header) .actionLink{min-height:44px;box-sizing:border-box}
+:where(html[data-bookcss]) header:not(.page header) #zoomValue,:where(html[data-bookcss]) header:not(.page header) .actionLink{min-height:44px;box-sizing:border-box}::where(html[data-bookcss]) header:not(.page header) button{min-height:44px}
 :where(html[data-bookcss]) .zoomed{margin-left:0!important}
 :where(html[data-bookcss]){--accent:#713c46;--ground:#eeece7}
 :where(html[data-bookcss]) body[data-palette="2"]{--accent:#315a4a;--ground:#e9eee8}
