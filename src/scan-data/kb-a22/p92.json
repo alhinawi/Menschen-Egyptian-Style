@@ -1242,9 +1242,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "Aktionsseite L23/4b Partner B (printed 90): partner info-gap Relativsätze. Nothing mechanically gradeable."
  }
 }

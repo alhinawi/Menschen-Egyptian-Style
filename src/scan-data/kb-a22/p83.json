@@ -1396,10 +1396,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "Aktionsseiten: partner, role-play or free-writing activity with no single correct answer. Left ungraded."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "Aktionsseite L20/4b: Aktivitäten-Bingo speaking game. Nothing mechanically gradeable."
  }
 }

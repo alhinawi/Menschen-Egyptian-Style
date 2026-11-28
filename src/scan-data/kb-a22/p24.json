@@ -1541,9 +1541,7 @@
  ],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "Ausklang song 'So?... Oder so?': strophe ordering depends on the song audio, then sing along. Not gradeable from the page."
  }
 }

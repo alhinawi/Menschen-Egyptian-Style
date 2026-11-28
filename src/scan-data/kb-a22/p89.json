@@ -1207,10 +1207,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "Aktionsseiten: partner, role-play or free-writing activity with no single correct answer. Left ungraded."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "Aktionsseite L23/4b Partner A (printed 87): partner info-gap Relativsätze. Nothing mechanically gradeable."
  }
 }

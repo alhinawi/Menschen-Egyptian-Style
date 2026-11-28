@@ -2995,10 +2995,7 @@
  ],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "4a/4b (marking, arrows), 5a (marking) and 5b (several solutions possible) have no single graded key, so they stay ungraded."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "L15: 4a marking Dativ/Akkusativ in printed sentences has no input affordance (marking task), 4b arrow-drawing, 5a listening, 5b sorting with 'Mehrere Lösungen sind möglich' (not objectively determined). Nothing mechanically gradeable."
  }
 }

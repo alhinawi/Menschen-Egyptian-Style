@@ -720,9 +720,7 @@
  ],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "L21 opener: photo speculation + listening comparison + own story. Nothing mechanically gradeable."
  }
 }

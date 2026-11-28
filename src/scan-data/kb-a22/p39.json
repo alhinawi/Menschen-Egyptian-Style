@@ -1837,10 +1837,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "Projekt Landeskunde 1 (Sätze korrigieren) has no printed answer lines, so it stays ungraded. Official key: a kühler, b Wintersaison, c Süden, d in den Berner Alpen / in der Mitte, e auf dem Säntis."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "Projekt Landeskunde 'Das Wetter in der Schweiz': ex1 correction of sentences is reading comprehension (derived); ex2 own research poster. Nothing mechanically gradeable."
  }
 }

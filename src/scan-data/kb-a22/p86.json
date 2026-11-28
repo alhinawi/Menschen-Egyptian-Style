@@ -1868,14 +1868,67 @@
    "h": 17
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p86-a-1",
+   "group": "ga",
+   "kind": "text",
+   "answer": "Wo waren Sie|Wo waren Sie am Samstagnachmittag um 16 Uhr",
+   "x": 210,
+   "y": 431,
+   "w": 270,
+   "h": 34
+  },
+  {
+   "id": "p86-a-2",
+   "group": "ga",
+   "kind": "text",
+   "answer": "Gibt es dafür Zeugen?|Gibt es dafür Zeugen",
+   "x": 210,
+   "y": 518,
+   "w": 700,
+   "h": 34
+  },
+  {
+   "id": "p86-a-3",
+   "group": "ga",
+   "kind": "text",
+   "answer": "Was haben Sie gemacht?|Was haben Sie gemacht",
+   "x": 210,
+   "y": 600,
+   "w": 700,
+   "h": 34
+  },
+  {
+   "id": "p86-a-4",
+   "group": "ga",
+   "kind": "text",
+   "answer": "Worüber haben Sie gesprochen?|Worüber haben Sie gesprochen",
+   "x": 210,
+   "y": 682,
+   "w": 700,
+   "h": 34
+  },
+  {
+   "id": "p86-a-5",
+   "group": "ga",
+   "kind": "text",
+   "answer": "Wann und wie sind Sie|Wann und wie sind Sie ins Kino gegangen",
+   "x": 210,
+   "y": 756,
+   "w": 280,
+   "h": 34
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "ga",
+   "label": "L21/5a Alibi-Spiel: Befragung ergänzen (closed bank: Erzählen Sie doch mal! / Gibt es dafür Zeugen? / Wann und wie sind Sie / Was haben Sie gemacht? / Wo waren Sie / Worüber haben Sie gesprochen?)"
+  }
+ ],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "Aktionsseiten: partner, role-play or free-writing activity with no single correct answer. Left ungraded."
-  ]
+  "status": "reviewed",
+  "note": "Graded 5 closed-bank dialogue gaps; each bank item fits exactly one gap given the printed answers. Parts b/c are role-play, not graded."
  }
 }

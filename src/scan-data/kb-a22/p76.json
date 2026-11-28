@@ -741,14 +741,47 @@
    "h": 17
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p76-b-s6",
+   "group": "gb",
+   "kind": "text",
+   "answer": "Das Paket wird transportiert",
+   "x": 330,
+   "y": 985,
+   "w": 720,
+   "h": 36
+  },
+  {
+   "id": "p76-b-s7",
+   "group": "gb",
+   "kind": "text",
+   "answer": "Das Paket wird zum Empfänger gebracht",
+   "x": 330,
+   "y": 1095,
+   "w": 720,
+   "h": 36
+  },
+  {
+   "id": "p76-b-s8",
+   "group": "gb",
+   "kind": "text",
+   "answer": "Das Paket wird geöffnet",
+   "x": 330,
+   "y": 1205,
+   "w": 720,
+   "h": 36
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "gb",
+   "label": "L14/5b Auf der Post: Was wird hier gemacht? Schritte 6-8 notieren (Passiv; keyed by Partner-A prompts: Paket – transportieren / Paket – zum Empfänger – bringen / Paket – öffnen)"
+  }
+ ],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "Aktionsseiten: partner, role-play or free-writing activity with no single correct answer. Left ungraded."
-  ]
+  "status": "reviewed",
+  "note": "Graded 3 Passiv notieren lines (Schritt 6-8); answers keyed by the printed Partner-A verb prompts (p74) following the printed example 'Das Porto wird bezahlt'."
  }
 }

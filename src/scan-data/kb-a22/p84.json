@@ -808,10 +808,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "Aktionsseiten: partner, role-play or free-writing activity with no single correct answer. Left ungraded."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "Duplicate scan of printed page 82 (data offset +2 begins in the Aktionsseiten). Same content as p82: reviewed-no-gradeable."
  }
 }

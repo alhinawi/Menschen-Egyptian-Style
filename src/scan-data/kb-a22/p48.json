@@ -1928,9 +1928,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "L20 Schreibtraining: own book recommendation notes/writing/exhibition; grammar table reference only. Nothing mechanically gradeable."
  }
 }

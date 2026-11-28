@@ -2152,9 +2152,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "L14: instructions text + retell (b), partner work on pages 74/76 (5), own gift cards (6). Nothing mechanically gradeable."
  }
 }
