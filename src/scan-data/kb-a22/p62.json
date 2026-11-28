@@ -2902,7 +2902,7 @@
   }
  ],
  "review": {
-  "status": "reviewed-no-gradeable",
-  "note": "L23 'Liebe die Arbeit, die du machst': 3a/3b are reading-comprehension judgment items (derived answers, same class as the AB skip list), 3c is own opinion. Nothing mechanically gradeable."
+  "status": "reviewed",
+  "note": "Partial: 16 pre-existing fields retained and live (predate this sweep). Sweep finding: L23 3a/3b are reading-comprehension judgment items (derived answers, same class as the AB skip list), 3c is own opinion - nothing further mechanically gradeable."
  }
 }
