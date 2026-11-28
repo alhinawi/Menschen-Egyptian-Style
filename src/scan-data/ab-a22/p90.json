@@ -2558,12 +2558,21 @@
   }
  ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "1 Was passt? Kreuzen Sie an"
+  },
+  {
+   "id": "g2",
+   "label": "2 Bilden Sie Woerter und ordnen Sie zu"
+  }
+ ],
  "review": {
-  "status": "raw-ocr",
+  "status": "partial",
   "notes": [
+   "Lektion 24 graded: ex1 Reise-Ratgeber single-choice groups a-h (b and e have two gaps each), ex2 closed word-building b-g (a = handwritten example). Ex3 Worttreppen stays ungraded. Keyed only.",
    "Word layer cleaned: 46 OCR tokens removed (21 top-watermark, 13 bottom-watermark, 0 underscore-gap merges, 9 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }

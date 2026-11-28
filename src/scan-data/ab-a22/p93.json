@@ -1785,12 +1785,17 @@
    "h": 26
   }
  ],
- "groups": [],
+ "groups": [
+  {
+   "id": "g2",
+   "label": "2 Aussprache Regel (hart/weich)"
+  }
+ ],
  "review": {
-  "status": "raw-ocr",
+  "status": "partial",
   "notes": [
+   "Lektion 24 graded: ex2 pronunciation rule gaps (weich/hart/hart, rule-determined). Ex1 listening pairs and ex3 letter fills stay ungraded for now. Keyed only.",
    "Word layer cleaned: 26 OCR tokens removed (9 top-watermark, 14 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }

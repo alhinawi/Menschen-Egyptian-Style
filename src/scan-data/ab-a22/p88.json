@@ -2325,12 +2325,25 @@
   }
  ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "1 Ordnen Sie zu (Woerter)"
+  },
+  {
+   "id": "g2",
+   "label": "2 Ergaenzen Sie die Relativpronomen"
+  },
+  {
+   "id": "g3",
+   "label": "3 Ordnen Sie zu (Kommunikation)"
+  }
+ ],
  "review": {
-  "status": "raw-ocr",
+  "status": "partial",
   "notes": [
+   "Lektion 23 TEST graded from the printed Loesungsschluessel (p106): ex1 b-g, ex2 b-g, ex3 a-g (examples 1a and 2a skipped). Keyed only.",
    "Word layer cleaned: 69 OCR tokens removed (22 top-watermark, 15 bottom-watermark, 3 underscore-gap merges, 25 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }

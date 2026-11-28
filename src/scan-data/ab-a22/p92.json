@@ -1973,7 +1973,410 @@
    "h": 16
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p92-8a-haben",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8a haben",
+   "answer": "false",
+   "name": "p92-8a",
+   "value": "haben",
+   "x": 399,
+   "y": 245,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-8a-sein",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8a sein",
+   "answer": "false",
+   "name": "p92-8a",
+   "value": "sein",
+   "x": 523,
+   "y": 245,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-8a-verabreden",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8a verabreden",
+   "answer": "false",
+   "name": "p92-8a",
+   "value": "verabreden",
+   "x": 647,
+   "y": 245,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-8a-verbessern",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8a verbessern",
+   "answer": "false",
+   "name": "p92-8a",
+   "value": "verbessern",
+   "x": 771,
+   "y": 245,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-8a-wohnen",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8a wohnen",
+   "answer": "true",
+   "name": "p92-8a",
+   "value": "wohnen",
+   "x": 895,
+   "y": 245,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-8b-haben",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8b haben",
+   "answer": "false",
+   "name": "p92-8b",
+   "value": "haben",
+   "x": 399,
+   "y": 271,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-8b-sein",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8b sein",
+   "answer": "false",
+   "name": "p92-8b",
+   "value": "sein",
+   "x": 523,
+   "y": 271,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-8b-verabreden",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8b verabreden",
+   "answer": "false",
+   "name": "p92-8b",
+   "value": "verabreden",
+   "x": 647,
+   "y": 271,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-8b-verbessern",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8b verbessern",
+   "answer": "true",
+   "name": "p92-8b",
+   "value": "verbessern",
+   "x": 771,
+   "y": 271,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-8b-wohnen",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8b wohnen",
+   "answer": "false",
+   "name": "p92-8b",
+   "value": "wohnen",
+   "x": 895,
+   "y": 271,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-8c-haben",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8c haben",
+   "answer": "true",
+   "name": "p92-8c",
+   "value": "haben",
+   "x": 399,
+   "y": 299,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-8c-sein",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8c sein",
+   "answer": "false",
+   "name": "p92-8c",
+   "value": "sein",
+   "x": 523,
+   "y": 299,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-8c-verabreden",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8c verabreden",
+   "answer": "false",
+   "name": "p92-8c",
+   "value": "verabreden",
+   "x": 647,
+   "y": 299,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-8c-verbessern",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8c verbessern",
+   "answer": "false",
+   "name": "p92-8c",
+   "value": "verbessern",
+   "x": 771,
+   "y": 299,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-8c-wohnen",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8c wohnen",
+   "answer": "false",
+   "name": "p92-8c",
+   "value": "wohnen",
+   "x": 895,
+   "y": 299,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-8d-haben",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8d haben",
+   "answer": "false",
+   "name": "p92-8d",
+   "value": "haben",
+   "x": 399,
+   "y": 325,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-8d-sein",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8d sein",
+   "answer": "false",
+   "name": "p92-8d",
+   "value": "sein",
+   "x": 523,
+   "y": 325,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-8d-verabreden",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8d verabreden",
+   "answer": "true",
+   "name": "p92-8d",
+   "value": "verabreden",
+   "x": 647,
+   "y": 325,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-8d-verbessern",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8d verbessern",
+   "answer": "false",
+   "name": "p92-8d",
+   "value": "verbessern",
+   "x": 771,
+   "y": 325,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-8d-wohnen",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8d wohnen",
+   "answer": "false",
+   "name": "p92-8d",
+   "value": "wohnen",
+   "x": 895,
+   "y": 325,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-8e-haben",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8e haben",
+   "answer": "false",
+   "name": "p92-8e",
+   "value": "haben",
+   "x": 399,
+   "y": 351,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-8e-sein",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8e sein",
+   "answer": "true",
+   "name": "p92-8e",
+   "value": "sein",
+   "x": 523,
+   "y": 351,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-8e-verabreden",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8e verabreden",
+   "answer": "false",
+   "name": "p92-8e",
+   "value": "verabreden",
+   "x": 647,
+   "y": 351,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-8e-verbessern",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8e verbessern",
+   "answer": "false",
+   "name": "p92-8e",
+   "value": "verbessern",
+   "x": 771,
+   "y": 351,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-8e-wohnen",
+   "group": "g8",
+   "kind": "radio",
+   "label": "8e wohnen",
+   "answer": "false",
+   "name": "p92-8e",
+   "value": "wohnen",
+   "x": 895,
+   "y": 351,
+   "w": 34,
+   "h": 26
+  },
+  {
+   "id": "p92-9b",
+   "group": "g9",
+   "kind": "text",
+   "label": "9b",
+   "answer": "vielen schönen Erlebnissen",
+   "x": 815,
+   "y": 750,
+   "w": 168,
+   "h": 26
+  },
+  {
+   "id": "p92-9c",
+   "group": "g9",
+   "kind": "text",
+   "label": "9c",
+   "answer": "interessante Erlebnisse gebracht",
+   "x": 178,
+   "y": 828,
+   "w": 670,
+   "h": 26
+  },
+  {
+   "id": "p92-9d",
+   "group": "g9",
+   "kind": "text",
+   "label": "9d",
+   "answer": "so schnell vorbei waren",
+   "x": 425,
+   "y": 850,
+   "w": 505,
+   "h": 26
+  },
+  {
+   "id": "p92-9e",
+   "group": "g9",
+   "kind": "text",
+   "label": "9e",
+   "answer": "nicht so gut geklappt",
+   "x": 345,
+   "y": 916,
+   "w": 583,
+   "h": 26
+  },
+  {
+   "id": "p92-9f",
+   "group": "g9",
+   "kind": "text",
+   "label": "9f",
+   "answer": "fand ich es",
+   "x": 860,
+   "y": 940,
+   "w": 123,
+   "h": 26
+  },
+  {
+   "id": "p92-9g",
+   "group": "g9",
+   "kind": "text",
+   "label": "9g",
+   "answer": "nicht so gut gefallen",
+   "x": 513,
+   "y": 991,
+   "w": 412,
+   "h": 26
+  },
+  {
+   "id": "p92-9h",
+   "group": "g9",
+   "kind": "text",
+   "label": "9h",
+   "answer": "niemandem empfehlen",
+   "x": 440,
+   "y": 1016,
+   "w": 487,
+   "h": 26
+  }
+ ],
  "audio": [
   {
    "id": "ab-cd2-42-92",
@@ -1985,12 +2388,21 @@
    "h": 26
   }
  ],
- "groups": [],
+ "groups": [
+  {
+   "id": "g8",
+   "label": "8 Welches Verb passt? Kreuzen Sie an"
+  },
+  {
+   "id": "g9",
+   "label": "9 Ordnen Sie zu (Couchsurfing)"
+  }
+ ],
  "review": {
-  "status": "raw-ocr",
+  "status": "partial",
   "notes": [
-   "Word layer cleaned: 42 OCR tokens removed (24 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
+   "Lektion 24 graded: ex8 verb collocation matrix a-e, ex9 word bank b-h (a = struck example). Ex10 listening stays ungraded (answers only in audio). Keyed only.",
+   "Word layer cleaned: 42 OCR tokens removed (24 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
   ]
  }
 }

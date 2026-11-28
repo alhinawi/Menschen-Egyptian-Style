@@ -2161,12 +2161,17 @@
   }
  ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g9",
+   "label": "9 Welcher Schultyp passt? Ordnen Sie zu"
+  }
+ ],
  "review": {
-  "status": "raw-ocr",
+  "status": "partial",
   "notes": [
-   "Word layer cleaned: 39 OCR tokens removed (21 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded."
+   "Lektion 23 graded: ex9 Schultyp word bank a-e; 9b accepts either order (alternatives). Ex8 Feedback-Forum reading/writing stays ungraded. Keyed only.",
+   "Word layer cleaned: 39 OCR tokens removed (21 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
   ]
  }
 }
