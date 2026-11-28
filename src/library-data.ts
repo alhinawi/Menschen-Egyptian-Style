@@ -117,7 +117,8 @@ export function modulePages(slug: string): string[] {
   if (slug === 'ab1') return ['abcover', ...pages];
   if (slug === 'kb-a12-l13-16') return ['cover', ...pages];
   if (slug === 'ab-a12-l13-16') return ['abcover', ...pages];
-  if (slug === 'kb-a21-m1' || slug === 'kb-a21-m2' || slug === 'kb-a21-m3' || slug === 'kb-a21-m4' || slug === 'kb-a21-m5' || slug.startsWith('ab-a21-') || slug.startsWith('kb-a22-') || slug.startsWith('ab-a22-')) return ['cover', ...pages];
+  if (slug === 'kb-a21-m1' || slug === 'kb-a21-m2' || slug === 'kb-a21-m3' || slug === 'kb-a21-m4' || slug === 'kb-a21-m5' || slug.startsWith('kb-a22-')) return ['cover', ...pages];
+  if (slug.startsWith('ab-a21-') || slug.startsWith('ab-a22-')) return ['abcover', ...pages];
   return pages;
 }
 
@@ -142,7 +143,7 @@ export function lessonForPage(mod: ModuleInfo, page: number): LessonInfo | null 
 
 /** Cover destination follows the selected level, never the other volume. */
 export function levelCover(book: 'kb' | 'ab', level: 'A1.1' | 'A1.2' | 'A2.1' | 'A2.2') {
-  if (level === 'A2.1') return {slug: `${book}-a21-m1`, token: 'cover'};
-  if (level === 'A2.2') return {slug: `${book}-a22-m1`, token: 'cover'};
+  if (level === 'A2.1') return {slug: `${book}-a21-m1`, token: book === 'kb' ? 'cover' : 'abcover'};
+  if (level === 'A2.2') return {slug: `${book}-a22-m1`, token: book === 'kb' ? 'cover' : 'abcover'};
   return {slug: level === 'A1.2' ? `${book}-a12-l13-16` : book === 'kb' ? 'index' : 'ab1', token: book === 'kb' ? 'cover' : 'abcover'};
 }
