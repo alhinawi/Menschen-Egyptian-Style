@@ -2668,165 +2668,95 @@
  ],
  "fields": [
   {
-   "id": "p67-11-richtig",
-   "group": "g1",
-   "kind": "checkbox",
-   "label": "richtig",
-   "answer": "false",
-   "x": 948,
-   "y": 265,
-   "w": 24,
-   "h": 24
-  },
-  {
-   "id": "p67-12-richtig",
-   "group": "g1",
-   "kind": "checkbox",
-   "label": "richtig",
-   "answer": "true",
-   "x": 948,
-   "y": 291,
-   "w": 24,
-   "h": 24
-  },
-  {
-   "id": "p67-13-richtig",
-   "group": "g1",
-   "kind": "checkbox",
-   "label": "richtig",
-   "answer": "true",
-   "x": 948,
-   "y": 319,
-   "w": 24,
-   "h": 24
-  },
-  {
-   "id": "p67-14-richtig",
-   "group": "g1",
-   "kind": "checkbox",
-   "label": "richtig",
-   "answer": "false",
-   "x": 948,
-   "y": 347,
-   "w": 24,
-   "h": 24
-  },
-  {
-   "id": "p67-15-richtig",
-   "group": "g1",
-   "kind": "checkbox",
-   "label": "richtig",
-   "answer": "false",
-   "x": 948,
-   "y": 375,
-   "w": 24,
-   "h": 24
-  },
-  {
-   "id": "p67-21",
-   "group": "g2",
+   "id": "p67-5a-kann",
+   "group": "g5a",
    "kind": "text",
-   "label": "5a 1",
    "answer": "konnte",
-   "x": 293,
-   "y": 617,
-   "w": 205,
+   "x": 290,
+   "y": 613,
+   "w": 150,
    "h": 24
   },
   {
-   "id": "p67-22",
-   "group": "g2",
+   "id": "p67-5a-soll",
+   "group": "g5a",
    "kind": "text",
-   "label": "5a 2",
    "answer": "sollte",
-   "x": 293,
-   "y": 647,
-   "w": 205,
+   "x": 290,
+   "y": 644,
+   "w": 150,
    "h": 24
   },
   {
-   "id": "p67-23",
-   "group": "g2",
+   "id": "p67-5a-ist",
+   "group": "g5a",
    "kind": "text",
-   "label": "5a 3",
    "answer": "war",
-   "x": 293,
-   "y": 740,
-   "w": 205,
+   "x": 290,
+   "y": 739,
+   "w": 150,
    "h": 24
   },
   {
-   "id": "p67-24",
-   "group": "g2",
+   "id": "p67-5a-sieht",
+   "group": "g5a",
    "kind": "text",
-   "label": "5a 4",
    "answer": "sah",
-   "x": 660,
-   "y": 587,
-   "w": 210,
+   "x": 667,
+   "y": 583,
+   "w": 150,
    "h": 24
   },
   {
-   "id": "p67-25",
-   "group": "g2",
+   "id": "p67-5a-kommt",
+   "group": "g5a",
    "kind": "text",
-   "label": "5a 5",
    "answer": "kam",
-   "x": 660,
-   "y": 619,
-   "w": 210,
+   "x": 667,
+   "y": 614,
+   "w": 150,
    "h": 24
   },
   {
-   "id": "p67-26",
-   "group": "g2",
+   "id": "p67-5a-gibt",
+   "group": "g5a",
    "kind": "text",
-   "label": "5a 6",
    "answer": "gab",
-   "x": 660,
-   "y": 650,
-   "w": 210,
+   "x": 667,
+   "y": 646,
+   "w": 150,
    "h": 24
   },
   {
-   "id": "p67-27",
-   "group": "g2",
+   "id": "p67-5a-findet",
+   "group": "g5a",
    "kind": "text",
-   "label": "5a 7",
    "answer": "fand",
-   "x": 660,
-   "y": 680,
-   "w": 210,
+   "x": 667,
+   "y": 677,
+   "w": 150,
    "h": 24
   },
   {
-   "id": "p67-28",
-   "group": "g2",
+   "id": "p67-5a-sagt",
+   "group": "g5a",
    "kind": "text",
-   "label": "5a 8",
    "answer": "sagte",
-   "x": 660,
-   "y": 712,
-   "w": 210,
+   "x": 667,
+   "y": 708,
+   "w": 150,
    "h": 24
   }
  ],
  "audio": [],
  "groups": [
   {
-   "id": "g1",
-   "label": "4 b Sind die Sätze richtig? Kreuzen Sie an."
-  },
-  {
-   "id": "g2",
-   "label": "5 a Ergänzen Sie die Tabelle mit den Präteritumformen."
+   "id": "g5a",
+   "label": "Exercise 5a: Tabelle mit den Präteritumformen ergänzen (musste/wollte/durfte/hatte are given)"
   }
  ],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "4 b: the four own statements, 5 b and 6 are free tasks and are not graded."
-  ]
+  "status": "partial",
+  "note": "5a is mechanical Präteritum conjugation of the modal/common verbs (konnte, sollte, war, sah, kam, gab, fand, sagte). Excluded: 4b (richtig/falsch reading comprehension of the 4a portrait - derived judgment), 5b (partner work), 6a/6b (own Erfahrungsbericht writing)."
  }
 }

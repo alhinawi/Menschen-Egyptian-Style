@@ -1580,10 +1580,7 @@
   }
  ],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "1 a, 1 b (corrections without printed lines), 2 b (free notes) and 2 c are left ungraded."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "Film-Stationen Clip 8: all tasks depend on the video. Not gradeable from the page."
  }
 }

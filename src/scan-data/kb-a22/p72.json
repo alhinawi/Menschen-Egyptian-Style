@@ -1364,7 +1364,198 @@
    "h": 14
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p72-1-1",
+   "group": "g1",
+   "kind": "text",
+   "answer": "Freunde",
+   "x": 712,
+   "y": 238,
+   "w": 86,
+   "h": 24
+  },
+  {
+   "id": "p72-1-2",
+   "group": "g1",
+   "kind": "text",
+   "answer": "Länder",
+   "x": 708,
+   "y": 257,
+   "w": 70,
+   "h": 24
+  },
+  {
+   "id": "p72-1-3",
+   "group": "g1",
+   "kind": "text",
+   "answer": "Hilfe",
+   "x": 710,
+   "y": 280,
+   "w": 74,
+   "h": 24
+  },
+  {
+   "id": "p72-1-4",
+   "group": "g1",
+   "kind": "text",
+   "answer": "Sonne",
+   "x": 749,
+   "y": 335,
+   "w": 65,
+   "h": 24
+  },
+  {
+   "id": "p72-1-5",
+   "group": "g1",
+   "kind": "text",
+   "answer": "Tag",
+   "x": 741,
+   "y": 361,
+   "w": 40,
+   "h": 24
+  },
+  {
+   "id": "p72-1-6",
+   "group": "g1",
+   "kind": "text",
+   "answer": "Spiel",
+   "x": 749,
+   "y": 388,
+   "w": 60,
+   "h": 24
+  },
+  {
+   "id": "p72-2-1",
+   "group": "g2",
+   "kind": "text",
+   "answer": "Blumen",
+   "x": 739,
+   "y": 583,
+   "w": 62,
+   "h": 24
+  },
+  {
+   "id": "p72-2-2",
+   "group": "g2",
+   "kind": "text",
+   "answer": "Brot",
+   "x": 741,
+   "y": 610,
+   "w": 45,
+   "h": 24
+  },
+  {
+   "id": "p72-2-3",
+   "group": "g2",
+   "kind": "text",
+   "answer": "Spaß",
+   "x": 725,
+   "y": 636,
+   "w": 55,
+   "h": 24
+  },
+  {
+   "id": "p72-2-4",
+   "group": "g2",
+   "kind": "text",
+   "answer": "Schmerz",
+   "x": 737,
+   "y": 664,
+   "w": 54,
+   "h": 24
+  },
+  {
+   "id": "p72-2-5",
+   "group": "g2",
+   "kind": "text",
+   "answer": "Bild",
+   "x": 746,
+   "y": 690,
+   "w": 45,
+   "h": 24
+  },
+  {
+   "id": "p72-2-6",
+   "group": "g2",
+   "kind": "text",
+   "answer": "Musik",
+   "x": 713,
+   "y": 718,
+   "w": 60,
+   "h": 24
+  },
+  {
+   "id": "p72-2-7",
+   "group": "g2",
+   "kind": "text",
+   "answer": "Tanz",
+   "x": 745,
+   "y": 745,
+   "w": 57,
+   "h": 24
+  },
+  {
+   "id": "p72-3-1",
+   "group": "g3",
+   "kind": "text",
+   "answer": "Worte",
+   "x": 704,
+   "y": 938,
+   "w": 72,
+   "h": 24
+  },
+  {
+   "id": "p72-3-2",
+   "group": "g3",
+   "kind": "text",
+   "answer": "Liebe",
+   "x": 705,
+   "y": 962,
+   "w": 72,
+   "h": 24
+  },
+  {
+   "id": "p72-3-3",
+   "group": "g3",
+   "kind": "text",
+   "answer": "Lied",
+   "x": 726,
+   "y": 989,
+   "w": 79,
+   "h": 24
+  },
+  {
+   "id": "p72-3-4",
+   "group": "g3",
+   "kind": "text",
+   "answer": "Träume",
+   "x": 715,
+   "y": 1043,
+   "w": 66,
+   "h": 24
+  },
+  {
+   "id": "p72-3-5",
+   "group": "g3",
+   "kind": "text",
+   "answer": "Fragen",
+   "x": 704,
+   "y": 1070,
+   "w": 80,
+   "h": 24
+  },
+  {
+   "id": "p72-3-6",
+   "group": "g3",
+   "kind": "text",
+   "answer": "Hände",
+   "x": 758,
+   "y": 1124,
+   "w": 59,
+   "h": 24
+  }
+ ],
  "audio": [
   {
    "id": "cd2-33-1",
@@ -1385,12 +1576,22 @@
    "h": 26
   }
  ],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Lied 'Wir sind mit dabei' Strophe 1"
+  },
+  {
+   "id": "g2",
+   "label": "Strophe 2"
+  },
+  {
+   "id": "g3",
+   "label": "Strophe 3"
+  }
+ ],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "Song gap-fill has many tiny letter gaps inside words; left ungraded for now. 2 is singing."
-  ]
+  "status": "partial",
+  "note": "Song gap-fill: each word is objectively determined by the given letters plus the verb phrase (Freunde findet, Länder sieht, Hilfe gibt, Sonne fühlt, Tag beginnt, Spiel verliert; Blumen riecht, Brot isst, Spaß macht, Schmerz vergisst, Bild malt, Musik liebt, Tanz tanzt; Worte sagt, Liebe schenkt, Lied singt, Träume träumt, Fragen stellt, Hände hält). The song audio confirms, but the answers need no audio. Fields accept the full word."
  }
 }

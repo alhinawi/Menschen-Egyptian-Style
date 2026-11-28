@@ -2250,10 +2250,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "1 a-c are free answers taken from the text, and 2 is a research task. Left ungraded."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "Projekt Landeskunde 'Jobben und Reisen im Ausland': reading + own internet research + brochure. Nothing mechanically gradeable."
  }
 }
