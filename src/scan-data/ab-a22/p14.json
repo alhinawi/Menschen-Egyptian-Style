@@ -321,13 +321,6 @@
    "h": 13
   },
   {
-   "text": "«ss",
-   "x": 78,
-   "y": 421,
-   "w": 25,
-   "h": 9
-  },
-  {
    "text": "1",
    "x": 116,
    "y": 408,
@@ -359,13 +352,6 @@
    "text": "u",
    "x": 163,
    "y": 513,
-   "w": 11,
-   "h": 11
-  },
-  {
-   "text": "=",
-   "x": 163,
-   "y": 568,
    "w": 11,
    "h": 11
   },
@@ -1385,13 +1371,6 @@
    "h": 10
   },
   {
-   "text": "x»",
-   "x": 78,
-   "y": 1177,
-   "w": 24,
-   "h": 9
-  },
-  {
    "text": "1)",
    "x": 116,
    "y": 1164,
@@ -1446,13 +1425,6 @@
    "y": 1169,
    "w": 63,
    "h": 17
-  },
-  {
-   "text": "»206",
-   "x": 66,
-   "y": 1197,
-   "w": 37,
-   "h": 11
   },
   {
    "text": "a",
@@ -2077,7 +2049,7 @@
    "Answers graded from the official key; status advanced from raw-ocr to partial.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 281,
+  "verifiedWords": 277,
   "totalWords": 319
  }
 }

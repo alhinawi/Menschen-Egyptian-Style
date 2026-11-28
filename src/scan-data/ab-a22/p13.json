@@ -741,13 +741,6 @@
    "h": 15
   },
   {
-   "text": "«ss",
-   "x": 47,
-   "y": 869,
-   "w": 25,
-   "h": 9
-  },
-  {
    "text": "|",
    "x": 79,
    "y": 854,
@@ -900,13 +893,6 @@
    "y": 972,
    "w": 71,
    "h": 26
-  },
-  {
-   "text": "=.",
-   "x": 42,
-   "y": 994,
-   "w": 29,
-   "h": 12
   },
   {
    "text": "einpacken",
@@ -1754,7 +1740,7 @@
    "Answers graded from the official key; status advanced from raw-ocr to partial.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 188,
+  "verifiedWords": 186,
   "totalWords": 229
  }
 }

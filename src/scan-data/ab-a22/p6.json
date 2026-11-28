@@ -6,13 +6,6 @@
  "height": 1556,
  "words": [
   {
-   "text": "«ss",
-   "x": 77,
-   "y": 209,
-   "w": 23,
-   "h": 9
-  },
-  {
    "text": "|",
    "x": 108,
    "y": 194,
@@ -223,7 +216,7 @@
    "h": 15
   },
   {
-   "text": "igt",
+   "text": "ist",
    "x": 240,
    "y": 461,
    "w": 17,
@@ -244,7 +237,7 @@
    "h": 14
   },
   {
-   "text": "Kinderzarten",
+   "text": "Kindergarten",
    "x": 310,
    "y": 457,
    "w": 104,
@@ -2006,7 +1999,7 @@
    "1 and 2 are sentence writing (several correct word orders); left ungraded. 3 a items 2-6 graded from the official key; item 1 is the printed example.",
    "Word layer cleaned: 38 OCR tokens removed (23 top-watermark, 12 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
   ],
-  "verifiedWords": 265,
+  "verifiedWords": 264,
   "totalWords": 303
  }
 }

@@ -923,13 +923,6 @@
    "h": 22
   },
   {
-   "text": "«ss",
-   "x": 91,
-   "y": 1214,
-   "w": 25,
-   "h": 9
-  },
-  {
    "text": "[EU",
    "x": 130,
    "y": 1201,
@@ -970,13 +963,6 @@
    "y": 1204,
    "w": 92,
    "h": 22
-  },
-  {
-   "text": "\\",
-   "x": 620,
-   "y": 805,
-   "w": 40,
-   "h": 36
   },
   {
    "text": "ä",
@@ -2255,7 +2241,7 @@
    "3 bracketed-optional answers converted to pipe alternatives (seit(dem) -> seit|seitdem).",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 301,
+  "verifiedWords": 299,
   "totalWords": 345
  }
 }

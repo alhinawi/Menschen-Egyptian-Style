@@ -2225,13 +2225,6 @@
    "h": 11
   },
   {
-   "text": "»E>",
-   "x": 206,
-   "y": 1007,
-   "w": 14,
-   "h": 254
-  },
-  {
    "text": "E>",
    "x": 203,
    "y": 1136,
@@ -2879,7 +2872,7 @@
    "Word layer cleaned: 80 OCR tokens removed (22 top-watermark, 16 bottom-watermark, 0 underscore-gap merges, 38 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 351,
+  "verifiedWords": 350,
   "totalWords": 432
  }
 }

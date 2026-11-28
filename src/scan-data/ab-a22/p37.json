@@ -20,13 +20,6 @@
    "h": 82
   },
   {
-   "text": "x»",
-   "x": 45,
-   "y": 198,
-   "w": 26,
-   "h": 9
-  },
-  {
    "text": "[EN",
    "x": 84,
    "y": 186,
@@ -237,13 +230,6 @@
    "h": 15
   },
   {
-   "text": "»",
-   "x": 319,
-   "y": 420,
-   "w": 9,
-   "h": 8
-  },
-  {
    "text": "an",
    "x": 334,
    "y": 420,
@@ -263,13 +249,6 @@
    "y": 416,
    "w": 61,
    "h": 15
-  },
-  {
-   "text": "»",
-   "x": 580,
-   "y": 421,
-   "w": 8,
-   "h": 9
   },
   {
    "text": "anden",
@@ -2416,7 +2395,7 @@
    "Word layer cleaned: 36 OCR tokens removed (20 top-watermark, 13 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Answers graded from the official key; status advanced from raw-ocr to partial."
   ],
-  "verifiedWords": 296,
+  "verifiedWords": 293,
   "totalWords": 332
  }
 }

@@ -111,13 +111,6 @@
    "h": 17
   },
   {
-   "text": "=",
-   "x": 135,
-   "y": 526,
-   "w": 9,
-   "h": 11
-  },
-  {
    "text": "a",
    "x": 136,
    "y": 555,
@@ -979,13 +972,6 @@
    "h": 6
   },
   {
-   "text": "=",
-   "x": 65,
-   "y": 1007,
-   "w": 7,
-   "h": 10
-  },
-  {
    "text": "z",
    "x": 65,
    "y": 1020,
@@ -1061,13 +1047,6 @@
    "y": 1202,
    "w": 7,
    "h": 10
-  },
-  {
-   "text": "»",
-   "x": 136,
-   "y": 1311,
-   "w": 9,
-   "h": 9
   },
   {
    "text": "Gibt",
@@ -2003,7 +1982,7 @@
    "Word layer cleaned: 32 OCR tokens removed (13 top-watermark, 15 bottom-watermark, 1 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 241,
+  "verifiedWords": 238,
   "totalWords": 273
  }
 }

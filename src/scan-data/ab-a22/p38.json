@@ -1329,13 +1329,6 @@
    "h": 15
   },
   {
-   "text": "«ss",
-   "x": 88,
-   "y": 1131,
-   "w": 24,
-   "h": 9
-  },
-  {
    "text": "Ihre",
    "x": 175,
    "y": 1123,
@@ -2171,7 +2164,7 @@
    "Word layer cleaned: 44 OCR tokens removed (23 top-watermark, 13 bottom-watermark, 5 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 274,
+  "verifiedWords": 273,
   "totalWords": 320
  }
 }

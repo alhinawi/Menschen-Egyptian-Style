@@ -167,13 +167,6 @@
    "h": 14
   },
   {
-   "text": "=",
-   "x": 98,
-   "y": 261,
-   "w": 11,
-   "h": 21
-  },
-  {
    "text": "Nach",
    "x": 173,
    "y": 269,
@@ -1194,13 +1187,6 @@
    "y": 780,
    "w": 7,
    "h": 23
-  },
-  {
-   "text": "=",
-   "x": 198,
-   "y": 787,
-   "w": 11,
-   "h": 11
   },
   {
    "text": "interessiert",
@@ -2495,7 +2481,7 @@
    "Word layer cleaned: 40 OCR tokens removed (21 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 327,
+  "verifiedWords": 325,
   "totalWords": 372
  }
 }
