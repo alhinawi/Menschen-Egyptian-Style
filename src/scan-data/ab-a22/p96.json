@@ -2323,15 +2323,357 @@
    "h": 15
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p96-1b",
+   "group": "g1",
+   "kind": "text",
+   "answer": "mieten",
+   "x": 712,
+   "y": 372,
+   "w": 270,
+   "h": 26
+  },
+  {
+   "id": "p96-1c",
+   "group": "g1",
+   "kind": "text",
+   "answer": "umweltfreundlich",
+   "x": 710,
+   "y": 396,
+   "w": 272,
+   "h": 26
+  },
+  {
+   "id": "p96-1d",
+   "group": "g1",
+   "kind": "text",
+   "answer": "anmelden",
+   "x": 392,
+   "y": 446,
+   "w": 220,
+   "h": 26
+  },
+  {
+   "id": "p96-1e",
+   "group": "g1",
+   "kind": "text",
+   "answer": "rufen",
+   "x": 698,
+   "y": 470,
+   "w": 217,
+   "h": 26
+  },
+  {
+   "id": "p96-1f",
+   "group": "g1",
+   "kind": "text",
+   "answer": "geben",
+   "x": 678,
+   "y": 520,
+   "w": 217,
+   "h": 26
+  },
+  {
+   "id": "p96-1g",
+   "group": "g1",
+   "kind": "text",
+   "answer": "kostenlos",
+   "x": 728,
+   "y": 636,
+   "w": 254,
+   "h": 26
+  },
+  {
+   "id": "p96-1h",
+   "group": "g1",
+   "kind": "text",
+   "answer": "funktioniert",
+   "x": 440,
+   "y": 684,
+   "w": 195,
+   "h": 26
+  },
+  {
+   "id": "p96-1i",
+   "group": "g1",
+   "kind": "text",
+   "answer": "erreichen",
+   "x": 498,
+   "y": 779,
+   "w": 217,
+   "h": 26
+  },
+  {
+   "id": "g3a-a",
+   "group": "g3a",
+   "kind": "radio",
+   "name": "g3a",
+   "value": "arzt",
+   "answer": "false",
+   "x": 188,
+   "y": 1355,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "id": "g3a-b",
+   "group": "g3a",
+   "kind": "radio",
+   "name": "g3a",
+   "value": "grippe",
+   "answer": "false",
+   "x": 251,
+   "y": 1355,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "id": "g3a-c",
+   "group": "g3a",
+   "kind": "radio",
+   "name": "g3a",
+   "value": "impfung",
+   "answer": "false",
+   "x": 335,
+   "y": 1355,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "id": "g3a-d",
+   "group": "g3a",
+   "kind": "radio",
+   "name": "g3a",
+   "value": "laune",
+   "answer": "true",
+   "x": 436,
+   "y": 1355,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "id": "g3b-a",
+   "group": "g3b",
+   "kind": "radio",
+   "name": "g3b",
+   "value": "abflug",
+   "answer": "false",
+   "x": 188,
+   "y": 1382,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "id": "g3b-b",
+   "group": "g3b",
+   "kind": "radio",
+   "name": "g3b",
+   "value": "verspaetung",
+   "answer": "false",
+   "x": 270,
+   "y": 1382,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "id": "g3b-c",
+   "group": "g3b",
+   "kind": "radio",
+   "name": "g3b",
+   "value": "vertrag",
+   "answer": "true",
+   "x": 395,
+   "y": 1382,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "id": "g3b-d",
+   "group": "g3b",
+   "kind": "radio",
+   "name": "g3b",
+   "value": "ankunft",
+   "answer": "false",
+   "x": 487,
+   "y": 1382,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "id": "g3c-a",
+   "group": "g3c",
+   "kind": "radio",
+   "name": "g3c",
+   "value": "lehre",
+   "answer": "true",
+   "x": 189,
+   "y": 1410,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "id": "g3c-b",
+   "group": "g3c",
+   "kind": "radio",
+   "name": "g3c",
+   "value": "konsulat",
+   "answer": "false",
+   "x": 265,
+   "y": 1410,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "id": "g3c-c",
+   "group": "g3c",
+   "kind": "radio",
+   "name": "g3c",
+   "value": "visum",
+   "answer": "false",
+   "x": 367,
+   "y": 1410,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "id": "g3c-d",
+   "group": "g3c",
+   "kind": "radio",
+   "name": "g3c",
+   "value": "pass",
+   "answer": "false",
+   "x": 448,
+   "y": 1410,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "id": "g3d-a",
+   "group": "g3d",
+   "kind": "radio",
+   "name": "g3d",
+   "value": "zoll",
+   "answer": "false",
+   "x": 626,
+   "y": 1354,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "id": "g3d-b",
+   "group": "g3d",
+   "kind": "radio",
+   "name": "g3d",
+   "value": "zahl",
+   "answer": "true",
+   "x": 684,
+   "y": 1354,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "id": "g3d-c",
+   "group": "g3d",
+   "kind": "radio",
+   "name": "g3d",
+   "value": "pass",
+   "answer": "false",
+   "x": 749,
+   "y": 1354,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "id": "g3d-d",
+   "group": "g3d",
+   "kind": "radio",
+   "name": "g3d",
+   "value": "kontrolle",
+   "answer": "false",
+   "x": 809,
+   "y": 1354,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "id": "g3e-a",
+   "group": "g3e",
+   "kind": "radio",
+   "name": "g3e",
+   "value": "bahnhof",
+   "answer": "false",
+   "x": 627,
+   "y": 1382,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "id": "g3e-b",
+   "group": "g3e",
+   "kind": "radio",
+   "name": "g3e",
+   "value": "anschluss",
+   "answer": "false",
+   "x": 728,
+   "y": 1382,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "id": "g3e-c",
+   "group": "g3e",
+   "kind": "radio",
+   "name": "g3e",
+   "value": "kuendigung",
+   "answer": "true",
+   "x": 843,
+   "y": 1382,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "id": "g3e-d",
+   "group": "g3e",
+   "kind": "radio",
+   "name": "g3e",
+   "value": "zug",
+   "answer": "false",
+   "x": 966,
+   "y": 1382,
+   "w": 20,
+   "h": 20
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "Exercise 1: Wortbank anmelden/unterwegs/kostenlos/mieten/geben/umweltfreundlich/rufen/erreichen/funktioniert (Fahrrad mieten in der Stadt; a Unterwegs is the example)"
+  },
+  {
+   "id": "g3a",
+   "label": "Exercise 3a: Welches Wort passt nicht? Streichen Sie das falsche Wort durch"
+  },
+  {
+   "id": "g3b",
+   "label": "Exercise 3b: Welches Wort passt nicht? Streichen Sie das falsche Wort durch"
+  },
+  {
+   "id": "g3c",
+   "label": "Exercise 3c: Welches Wort passt nicht? Streichen Sie das falsche Wort durch"
+  },
+  {
+   "id": "g3d",
+   "label": "Exercise 3d: Welches Wort passt nicht? Streichen Sie das falsche Wort durch"
+  },
+  {
+   "id": "g3e",
+   "label": "Exercise 3e: Welches Wort passt nicht? Streichen Sie das falsche Wort durch"
+  }
+ ],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "Word layer cleaned: 40 OCR tokens removed (23 top-watermark, 13 bottom-watermark, 1 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded.",
-   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
-  ]
+  "status": "partial",
+  "note": "Keyed only. Exercise 1: b-i from the closed word bank (8 items, each used once; grammar confirms placement). Exercise 3: the odd-one-out word is objectively determined in each row (a Laune; b Vertrag; c Lehre; d Zahl; e Kündigung). Excluded: Exercise 2 Rätsel (letter-box puzzle; solutions derivable - GRUNDSCHULE, ZEUGNIS, ABITUR, BEWERBUNG, EINKOMMEN, SEHR GUT - but letter-by-letter entry would need a dedicated UI; deferred). No printed key for the Wiederholungsstation exists in the AB scans (p106-107 cover the Lektionstests only)."
  }
 }
