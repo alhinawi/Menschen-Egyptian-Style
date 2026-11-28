@@ -2092,15 +2092,291 @@
    "h": 22
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p97-2b-rel",
+   "group": "g2",
+   "kind": "text",
+   "answer": "die",
+   "x": 257,
+   "y": 682,
+   "w": 36,
+   "h": 26
+  },
+  {
+   "id": "p97-2b-w",
+   "group": "g2",
+   "kind": "text",
+   "answer": "Touristen",
+   "x": 200,
+   "y": 707,
+   "w": 340,
+   "h": 26
+  },
+  {
+   "id": "p97-2c-rel",
+   "group": "g2",
+   "kind": "text",
+   "answer": "das",
+   "x": 303,
+   "y": 736,
+   "w": 50,
+   "h": 26
+  },
+  {
+   "id": "p97-2c-w",
+   "group": "g2",
+   "kind": "text",
+   "answer": "Pass",
+   "x": 200,
+   "y": 758,
+   "w": 120,
+   "h": 26
+  },
+  {
+   "id": "p97-2d-rel",
+   "group": "g2",
+   "kind": "text",
+   "answer": "den",
+   "x": 252,
+   "y": 791,
+   "w": 46,
+   "h": 26
+  },
+  {
+   "id": "p97-2d-w",
+   "group": "g2",
+   "kind": "text",
+   "answer": "Anschlussflug",
+   "x": 200,
+   "y": 817,
+   "w": 340,
+   "h": 26
+  },
+  {
+   "id": "p97-2e-rel",
+   "group": "g2",
+   "kind": "text",
+   "answer": "die",
+   "x": 410,
+   "y": 844,
+   "w": 44,
+   "h": 26
+  },
+  {
+   "id": "p97-2e-w",
+   "group": "g2",
+   "kind": "text",
+   "answer": "Zoll",
+   "x": 748,
+   "y": 844,
+   "w": 55,
+   "h": 26
+  },
+  {
+   "id": "p97-2f-rel",
+   "group": "g2",
+   "kind": "text",
+   "answer": "den",
+   "x": 240,
+   "y": 871,
+   "w": 44,
+   "h": 26
+  },
+  {
+   "id": "p97-2f-w",
+   "group": "g2",
+   "kind": "text",
+   "answer": "Ziel",
+   "x": 585,
+   "y": 871,
+   "w": 120,
+   "h": 26
+  },
+  {
+   "id": "p97-2g-rel",
+   "group": "g2",
+   "kind": "text",
+   "answer": "die",
+   "x": 268,
+   "y": 898,
+   "w": 50,
+   "h": 26
+  },
+  {
+   "id": "p97-2g-w",
+   "group": "g2",
+   "kind": "text",
+   "answer": "Reiseleiter",
+   "x": 758,
+   "y": 898,
+   "w": 145,
+   "h": 26
+  },
+  {
+   "id": "p97-3a",
+   "group": "g3",
+   "kind": "text",
+   "answer": "wollte",
+   "x": 375,
+   "y": 1059,
+   "w": 83,
+   "h": 26
+  },
+  {
+   "id": "p97-3b",
+   "group": "g3",
+   "kind": "text",
+   "answer": "hatte",
+   "x": 576,
+   "y": 1059,
+   "w": 44,
+   "h": 26
+  },
+  {
+   "id": "p97-3c",
+   "group": "g3",
+   "kind": "text",
+   "answer": "konnte",
+   "x": 331,
+   "y": 1086,
+   "w": 84,
+   "h": 26
+  },
+  {
+   "id": "p97-3d",
+   "group": "g3",
+   "kind": "text",
+   "answer": "war",
+   "x": 559,
+   "y": 1113,
+   "w": 62,
+   "h": 26
+  },
+  {
+   "id": "p97-3e",
+   "group": "g3",
+   "kind": "text",
+   "answer": "fand",
+   "x": 140,
+   "y": 1139,
+   "w": 78,
+   "h": 26
+  },
+  {
+   "id": "p97-3f",
+   "group": "g3",
+   "kind": "text",
+   "answer": "gab",
+   "x": 640,
+   "y": 1140,
+   "w": 28,
+   "h": 26
+  },
+  {
+   "id": "p97-3g",
+   "group": "g3",
+   "kind": "text",
+   "answer": "war",
+   "x": 478,
+   "y": 1167,
+   "w": 50,
+   "h": 26
+  },
+  {
+   "id": "p97-3h",
+   "group": "g3",
+   "kind": "text",
+   "answer": "musste",
+   "x": 141,
+   "y": 1193,
+   "w": 80,
+   "h": 26
+  },
+  {
+   "id": "p97-3i",
+   "group": "g3",
+   "kind": "text",
+   "answer": "kam an",
+   "x": 452,
+   "y": 1221,
+   "w": 84,
+   "h": 26
+  },
+  {
+   "id": "p97-3j",
+   "group": "g3",
+   "kind": "text",
+   "answer": "fand",
+   "x": 694,
+   "y": 1221,
+   "w": 84,
+   "h": 26
+  },
+  {
+   "id": "p97-3k",
+   "group": "g3",
+   "kind": "text",
+   "answer": "musste",
+   "x": 716,
+   "y": 1248,
+   "w": 82,
+   "h": 26
+  },
+  {
+   "id": "p97-3l",
+   "group": "g3",
+   "kind": "text",
+   "answer": "hatte",
+   "x": 830,
+   "y": 1278,
+   "w": 75,
+   "h": 26
+  },
+  {
+   "id": "p97-3m",
+   "group": "g3",
+   "kind": "text",
+   "answer": "kam",
+   "x": 518,
+   "y": 1302,
+   "w": 84,
+   "h": 26
+  },
+  {
+   "id": "p97-3n",
+   "group": "g3",
+   "kind": "text",
+   "answer": "sah",
+   "x": 747,
+   "y": 1302,
+   "w": 79,
+   "h": 26
+  },
+  {
+   "id": "p97-3o",
+   "group": "g3",
+   "kind": "text",
+   "answer": "sagte",
+   "x": 553,
+   "y": 1329,
+   "w": 84,
+   "h": 26
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g2",
+   "label": "Exercise 2: Reisequiz - Relativpronomen und Wörter (a Visum is the example)"
+  },
+  {
+   "id": "g3",
+   "label": "Exercise 3: Carsharing - Verben im Präteritum (a-o)"
+  }
+ ],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "Word layer cleaned: 27 OCR tokens removed (2 top-watermark, 15 bottom-watermark, 7 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded.",
-   "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
-  ]
+  "status": "partial",
+  "note": "No printed key for the Wiederholungsstation exists in the AB scans (p106-107 cover the Lektionstests only; p108-109 are credits). Answers are objectively determined: Exercise 2 relative pronouns follow from gender/case of the noun and the answer words are forced by the given first letters plus the definitions (b Touristen, c Pass, d Anschlussflug, e Zoll, f Ziel, g Reiseleiter). Exercise 3 is mechanical Präteritum conjugation (i kam an as separable verb). Excluded: Exercise 1 (free sentence combining with seit(dem)/bis - multiple valid phrasings, needs teacher judgment)."
  }
 }
