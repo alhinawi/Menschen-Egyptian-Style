@@ -1543,12 +1543,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "Ex 7 is a personal questionnaire; not graded."
-  ],
-  "verifiedWords": 0,
-  "totalWords": 219
+  "status": "reviewed-no-gradeable",
+  "note": "L12 Mini-Projekt Lebensmittelkonsum: own questionnaire + Konjunktion wenn reference. Nothing mechanically gradeable."
  }
 }

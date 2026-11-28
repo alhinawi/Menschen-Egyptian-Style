@@ -2159,12 +2159,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "Ex 1 (rating table) and 2 (group work) have only a model answer or free answers; not graded."
-  ],
-  "verifiedWords": 0,
-  "totalWords": 307
+  "status": "reviewed-no-gradeable",
+  "note": "Projekt Landeskunde: restaurant review reading, own ratings table, group restaurant guide. Nothing mechanically gradeable."
  }
 }

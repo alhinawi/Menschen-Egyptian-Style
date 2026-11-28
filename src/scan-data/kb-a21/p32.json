@@ -1718,11 +1718,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
-  ],
-  "verifiedWords": 0,
-  "totalWords": 244
+  "status": "reviewed-no-gradeable",
+  "note": "L5 Schreibtraining: own postcard/email writing + Adjektivdeklination (def. Artikel) reference. Nothing mechanically gradeable."
  }
 }

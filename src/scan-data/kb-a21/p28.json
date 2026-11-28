@@ -2215,11 +2215,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
-  ],
-  "verifiedWords": 0,
-  "totalWords": 315
+  "status": "reviewed-no-gradeable",
+  "note": "L4 Mini-Projekt Im Frühstücks-Café: partner ordering + Adjektivdeklination reference. Nothing mechanically gradeable."
  }
 }

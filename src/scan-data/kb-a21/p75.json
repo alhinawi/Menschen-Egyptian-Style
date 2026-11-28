@@ -1571,9 +1571,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [],
-  "verifiedWords": 0,
-  "totalWords": 233
+  "status": "reviewed-no-gradeable",
+  "note": "Aktionsseiten L2/4 Zimmer beschreiben Partner A + L3/5 Landschaften beschreiben: partner info-gap/drawing. Nothing mechanically gradeable."
  }
 }

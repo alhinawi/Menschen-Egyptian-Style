@@ -815,9 +815,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [],
-  "verifiedWords": 0,
-  "totalWords": 233
+  "status": "reviewed-no-gradeable",
+  "note": "Aktionsseiten L2/4 Zimmer beschreiben Partner B: partner info-gap. Nothing mechanically gradeable."
  }
 }

@@ -678,12 +678,7 @@
  ],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "Ex 1 and 2 are open or listening tasks with no key, not graded. Audio: CD1 track 25."
-  ],
-  "verifiedWords": 0,
-  "totalWords": 94
+  "status": "reviewed-no-gradeable",
+  "note": "L10 opener Gut, dass du reserviert hast: photo discussion + listening. Nothing mechanically gradeable."
  }
 }

@@ -622,12 +622,7 @@
  ],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "Ex.1 is open (no key). Audio: CD1 track 10."
-  ],
-  "verifiedWords": 0,
-  "totalWords": 86
+  "status": "reviewed-no-gradeable",
+  "note": "L4 opener Was darf es sein?: photo discussion + listening (Einkaufszettel). Listening-based; nothing mechanically gradeable."
  }
 }

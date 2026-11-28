@@ -1690,12 +1690,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "Mini-Projekt and grammar boxes are open or reference content; no graded fields."
-  ],
-  "verifiedWords": 0,
-  "totalWords": 240
+  "status": "reviewed-no-gradeable",
+  "note": "Modul 3 Mini-Projekt Reiseveranstalter: group project, Wortbildung reference. Nothing mechanically gradeable."
  }
 }

@@ -976,11 +976,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
-  ],
-  "verifiedWords": 0,
-  "totalWords": 138
+  "status": "reviewed-no-gradeable",
+  "note": "Die erste Stunde im Kurs: intro speaking activities, own info, guessing. Nothing mechanically gradeable."
  }
 }
