@@ -1721,7 +1721,41 @@
    "h": 20
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p93-2r1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 (1)",
+   "answer": "weich",
+   "x": 142,
+   "y": 1320,
+   "w": 130,
+   "h": 26
+  },
+  {
+   "id": "p93-2r2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 (2)",
+   "answer": "hart",
+   "x": 375,
+   "y": 1344,
+   "w": 175,
+   "h": 26
+  },
+  {
+   "id": "p93-2r3",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 (3)",
+   "answer": "hart",
+   "x": 400,
+   "y": 1361,
+   "w": 130,
+   "h": 26
+  }
+ ],
  "audio": [
   {
    "id": "ab-cd2-43-93",
@@ -1751,12 +1785,17 @@
    "h": 26
   }
  ],
- "groups": [],
+ "groups": [
+  {
+   "id": "g2",
+   "label": "2 Aussprache Regel (hart/weich)"
+  }
+ ],
  "review": {
-  "status": "raw-ocr",
+  "status": "partial",
   "notes": [
+   "Lektion 24 graded: ex2 pronunciation rule gaps (weich/hart/hart, rule-determined). Ex1 listening pairs and ex3 letter fills stay ungraded for now. Keyed only.",
    "Word layer cleaned: 26 OCR tokens removed (9 top-watermark, 14 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }
