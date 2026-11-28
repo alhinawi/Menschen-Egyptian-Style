@@ -2902,10 +2902,7 @@
   }
  ],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "3 c is a free opinion task. Nothing to grade."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "L23 'Liebe die Arbeit, die du machst': 3a/3b are reading-comprehension judgment items (derived answers, same class as the AB skip list), 3c is own opinion. Nothing mechanically gradeable."
  }
 }

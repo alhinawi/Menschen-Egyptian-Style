@@ -2458,103 +2458,24 @@
  ],
  "fields": [
   {
-   "id": "p63-11",
-   "group": "g1",
+   "id": "p63-4a-1",
+   "group": "g4a",
    "kind": "text",
-   "label": "4a 1",
    "answer": "der",
-   "x": 512,
-   "y": 312,
-   "w": 87,
-   "h": 26
+   "x": 513,
+   "y": 313,
+   "w": 85,
+   "h": 24
   },
   {
-   "id": "p63-12",
-   "group": "g1",
+   "id": "p63-4a-2",
+   "group": "g4a",
    "kind": "text",
-   "label": "4a 2",
    "answer": "die",
-   "x": 512,
+   "x": 513,
    "y": 405,
-   "w": 87,
-   "h": 26
-  },
-  {
-   "id": "p63-22-zufrieden",
-   "group": "g2",
-   "kind": "checkbox",
-   "label": "zufrieden",
-   "answer": "true",
-   "x": 106,
-   "y": 782,
-   "w": 24,
+   "w": 85,
    "h": 24
-  },
-  {
-   "id": "p63-23-neutral",
-   "group": "g2",
-   "kind": "checkbox",
-   "label": "neutral",
-   "answer": "true",
-   "x": 106,
-   "y": 877,
-   "w": 24,
-   "h": 24
-  },
-  {
-   "id": "p63-31",
-   "group": "g3",
-   "kind": "text",
-   "label": "5b 1",
-   "answer": "das ärgert mich",
-   "x": 765,
-   "y": 664,
-   "w": 195,
-   "h": 26
-  },
-  {
-   "id": "p63-32",
-   "group": "g3",
-   "kind": "text",
-   "label": "5b 2",
-   "answer": "Ich habe wirklich genug",
-   "x": 285,
-   "y": 688,
-   "w": 320,
-   "h": 26
-  },
-  {
-   "id": "p63-33",
-   "group": "g3",
-   "kind": "text",
-   "label": "5b 3",
-   "answer": "Damit bin ich super zufrieden",
-   "x": 575,
-   "y": 733,
-   "w": 355,
-   "h": 26
-  },
-  {
-   "id": "p63-34",
-   "group": "g3",
-   "kind": "text",
-   "label": "5b 4",
-   "answer": "So macht Arbeiten Spaß",
-   "x": 380,
-   "y": 786,
-   "w": 325,
-   "h": 26
-  },
-  {
-   "id": "p63-35",
-   "group": "g3",
-   "kind": "text",
-   "label": "5b 5",
-   "answer": "Der Job ist nicht toll, aber okay",
-   "x": 287,
-   "y": 853,
-   "w": 333,
-   "h": 26
   }
  ],
  "audio": [
@@ -2588,23 +2509,12 @@
  ],
  "groups": [
   {
-   "id": "g1",
-   "label": "4 a Ergänzen Sie."
-  },
-  {
-   "id": "g2",
-   "label": "5 a zufrieden, neutral oder unzufrieden?"
-  },
-  {
-   "id": "g3",
-   "label": "5 b Hören Sie noch einmal und ergänzen Sie."
+   "id": "g4a",
+   "label": "Exercise 4a: Relativpronomen im Nominativ ergänzen (Hilfe im Text 3a)"
   }
  ],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "4 b and 5 c are partner/interview tasks with free answers. 5 a item 1 is printed as an example."
-  ]
+  "status": "partial",
+  "note": "4a objectively determined (der Mensch nom. sg.; die Jugendlichen nom. pl.). Excluded: 4b (partner work on p87/90), 5a/5b (listening + free completion), 5c (interview)."
  }
 }
