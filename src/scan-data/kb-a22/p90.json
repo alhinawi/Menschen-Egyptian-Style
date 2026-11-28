@@ -969,10 +969,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "Aktionsseiten: partner, role-play or free-writing activity with no single correct answer. Left ungraded."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "Aktionsseite L24/5b Partner A (printed 88): partner info-gap about stays abroad. Nothing mechanically gradeable."
  }
 }

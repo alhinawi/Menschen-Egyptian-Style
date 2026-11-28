@@ -3818,9 +3818,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "Quellenverzeichnis photo credits (printed 96). Nothing gradeable."
  }
 }
