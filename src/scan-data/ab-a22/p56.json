@@ -13,13 +13,6 @@
    "h": 25
   },
   {
-   "text": "«ss",
-   "x": 90,
-   "y": 190,
-   "w": 25,
-   "h": 9
-  },
-  {
    "text": "EM",
    "x": 129,
    "y": 177,
@@ -2595,7 +2588,7 @@
    "Word layer cleaned: 39 OCR tokens removed (22 top-watermark, 14 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 332,
+  "verifiedWords": 331,
   "totalWords": 371
  }
 }

@@ -19,9 +19,13 @@ function schedule() {
     const index = book?.getCurrentPageIndex?.();
     const initial = location.hash.slice(1);
     const current = pages[index ?? -1] || pages.find(p => p.dataset.page === initial) || pages[0];
+    // Prefetch the two neighbours on either side of the current page so a
+    // page turn never waits on the network (no blank or spinner flash).
+    const currentIndex = pages.indexOf(current);
+    const near = new Set([-2, -1, 0, 1, 2].map(d => pages[currentIndex + d]).filter(Boolean));
     for (const [image, activate] of pending) {
       const page = image.closest<HTMLElement>('.page');
-      if (!page || gridPages.has(page) || (!gridPages.size && page === current)) {
+      if (!page || gridPages.has(page) || (!gridPages.size && near.has(page))) {
         pending.delete(image);
         activate();
       }

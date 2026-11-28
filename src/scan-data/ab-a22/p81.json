@@ -20,13 +20,6 @@
    "h": 29
   },
   {
-   "text": "»232-35",
-   "x": 19,
-   "y": 189,
-   "w": 59,
-   "h": 27
-  },
-  {
    "text": "Sie",
    "x": 136,
    "y": 192,
@@ -643,13 +636,6 @@
    "h": 16
   },
   {
-   "text": "»238",
-   "x": 507,
-   "y": 972,
-   "w": 36,
-   "h": 29
-  },
-  {
    "text": "Hören",
    "x": 603,
    "y": 977,
@@ -986,13 +972,6 @@
    "h": 15
   },
   {
-   "text": "»237",
-   "x": 82,
-   "y": 1143,
-   "w": 35,
-   "h": 11
-  },
-  {
    "text": "Hören",
    "x": 136,
    "y": 1138,
@@ -1119,23 +1098,9 @@
    "h": 15
   },
   {
-   "text": "=",
-   "x": 139,
-   "y": 1270,
-   "w": 7,
-   "h": 5
-  },
-  {
    "text": "a",
    "x": 139,
    "y": 1288,
-   "w": 7,
-   "h": 5
-  },
-  {
-   "text": "=",
-   "x": 139,
-   "y": 1294,
    "w": 7,
    "h": 5
   }
@@ -1300,7 +1265,7 @@
    "Hoeren 1 notes graded from the official key (item 2: 689 76 54 / In zwei Tagen / 19 Uhr / 254 Euro); the key's Hoeren item 1 (1b 2a 3b 4b) has no matching exercise on this page. Aussprache 2 graded (z, tz, t). Aussprache 1 (mark the ts-words: Zahl, Organisation, funktionieren, besitzen, Benutzername) stays ungraded as a mark-type item, like p61 item 4. Aussprache 3 is read-aloud.",
    "Word layer cleaned: 33 OCR tokens removed (16 top-watermark, 14 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
   ],
-  "verifiedWords": 162,
+  "verifiedWords": 157,
   "totalWords": 195
  }
 }

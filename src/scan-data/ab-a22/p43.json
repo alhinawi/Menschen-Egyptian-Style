@@ -20,13 +20,6 @@
    "h": 57
   },
   {
-   "text": "x»:",
-   "x": 59,
-   "y": 185,
-   "w": 24,
-   "h": 9
-  },
-  {
    "text": "[EB",
    "x": 96,
    "y": 172,
@@ -389,13 +382,6 @@
    "y": 356,
    "w": 66,
    "h": 23
-  },
-  {
-   "text": "=",
-   "x": 143,
-   "y": 385,
-   "w": 10,
-   "h": 11
   },
   {
    "text": "Oh,",
@@ -953,13 +939,6 @@
   {
    "text": "x",
    "x": 56,
-   "y": 643,
-   "w": 6,
-   "h": 9
-  },
-  {
-   "text": "=",
-   "x": 64,
    "y": 643,
    "w": 6,
    "h": 9
@@ -2422,7 +2401,7 @@
    "Word layer cleaned: 34 OCR tokens removed (18 top-watermark, 13 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 308,
+  "verifiedWords": 305,
   "totalWords": 343
  }
 }

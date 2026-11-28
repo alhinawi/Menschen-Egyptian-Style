@@ -1616,13 +1616,6 @@
    "h": 7
   },
   {
-   "text": "=",
-   "x": 177,
-   "y": 1029,
-   "w": 11,
-   "h": 11
-  },
-  {
    "text": "Können",
    "x": 202,
    "y": 1026,
@@ -1735,13 +1728,6 @@
    "h": 16
   },
   {
-   "text": "=",
-   "x": 178,
-   "y": 1083,
-   "w": 11,
-   "h": 11
-  },
-  {
    "text": "(b)",
    "x": 323,
    "y": 1077,
@@ -1796,13 +1782,6 @@
    "y": 1104,
    "w": 25,
    "h": 16
-  },
-  {
-   "text": "=",
-   "x": 178,
-   "y": 1137,
-   "w": 11,
-   "h": 11
   },
   {
    "text": "(e)",
@@ -2525,7 +2504,7 @@
    "Word layer cleaned: 40 OCR tokens removed (22 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 335,
+  "verifiedWords": 332,
   "totalWords": 376
  }
 }

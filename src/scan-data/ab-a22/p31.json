@@ -1539,13 +1539,6 @@
    "h": 106
   },
   {
-   "text": "»",
-   "x": 122,
-   "y": 1182,
-   "w": 10,
-   "h": 9
-  },
-  {
    "text": "EBE>",
    "x": 117,
    "y": 1127,
@@ -1963,7 +1956,7 @@
    "Answers graded from the official key; status advanced from raw-ocr to partial.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 263,
+  "verifiedWords": 262,
   "totalWords": 302
  }
 }

@@ -1630,13 +1630,6 @@
    "h": 20
   },
   {
-   "text": "=",
-   "x": 60,
-   "y": 1145,
-   "w": 11,
-   "h": 12
-  },
-  {
    "text": "a",
    "x": 142,
    "y": 1156,
@@ -1977,7 +1970,7 @@
    "Word layer cleaned: 28 OCR tokens removed (10 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 253,
+  "verifiedWords": 252,
   "totalWords": 282
  }
 }

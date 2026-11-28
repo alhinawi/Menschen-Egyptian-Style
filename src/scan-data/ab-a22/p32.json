@@ -195,13 +195,6 @@
    "h": 7
   },
   {
-   "text": "=",
-   "x": 213,
-   "y": 299,
-   "w": 9,
-   "h": 3
-  },
-  {
    "text": "wel!",
    "x": 311,
    "y": 293,
@@ -592,13 +585,6 @@
    "y": 521,
    "w": 69,
    "h": 21
-  },
-  {
-   "text": "=",
-   "x": 111,
-   "y": 545,
-   "w": 11,
-   "h": 13
   },
   {
    "text": "oder",
@@ -1540,7 +1526,7 @@
    "Word layer cleaned: 40 OCR tokens removed (22 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Answers graded from the official key; status advanced from raw-ocr to partial."
   ],
-  "verifiedWords": 209,
+  "verifiedWords": 207,
   "totalWords": 249
  }
 }

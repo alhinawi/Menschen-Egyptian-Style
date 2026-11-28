@@ -111,20 +111,6 @@
    "h": 78
   },
   {
-   "text": "=",
-   "x": 48,
-   "y": 967,
-   "w": 6,
-   "h": 9
-  },
-  {
-   "text": "=",
-   "x": 57,
-   "y": 967,
-   "w": 5,
-   "h": 9
-  },
-  {
    "text": "STRUKTUREN",
    "x": 63,
    "y": 1003,
@@ -2583,7 +2569,7 @@
    "Answers graded from the official key; status advanced from raw-ocr to partial.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 336,
+  "verifiedWords": 334,
   "totalWords": 377
  }
 }

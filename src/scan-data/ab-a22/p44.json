@@ -503,13 +503,6 @@
    "h": 16
   },
   {
-   "text": "=",
-   "x": 200,
-   "y": 418,
-   "w": 11,
-   "h": 11
-  },
-  {
    "text": "meiner",
    "x": 333,
    "y": 413,
@@ -627,13 +620,6 @@
    "y": 436,
    "w": 69,
    "h": 17
-  },
-  {
-   "text": "x»;",
-   "x": 91,
-   "y": 515,
-   "w": 25,
-   "h": 9
   },
   {
    "text": "Ordnen",
@@ -1343,20 +1329,6 @@
    "h": 9
   },
   {
-   "text": "=",
-   "x": 93,
-   "y": 893,
-   "w": 5,
-   "h": 9
-  },
-  {
-   "text": "=",
-   "x": 101,
-   "y": 893,
-   "w": 5,
-   "h": 9
-  },
-  {
    "text": "a",
    "x": 112,
    "y": 893,
@@ -1859,13 +1831,6 @@
    "y": 1088,
    "w": 29,
    "h": 13
-  },
-  {
-   "text": "«<",
-   "x": 957,
-   "y": 1085,
-   "w": 17,
-   "h": 23
   },
   {
    "text": "hat",
@@ -2802,7 +2767,7 @@
    "Word layer cleaned: 41 OCR tokens removed (23 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 373,
+  "verifiedWords": 368,
   "totalWords": 415
  }
 }

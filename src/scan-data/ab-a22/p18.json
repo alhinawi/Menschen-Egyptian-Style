@@ -1049,13 +1049,6 @@
    "h": 14
   },
   {
-   "text": "=",
-   "x": 93,
-   "y": 778,
-   "w": 11,
-   "h": 12
-  },
-  {
    "text": "Früher",
    "x": 178,
    "y": 792,
@@ -2239,7 +2232,7 @@
    "Answers graded from the official key; status advanced from raw-ocr to partial.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 294,
+  "verifiedWords": 293,
   "totalWords": 336
  }
 }

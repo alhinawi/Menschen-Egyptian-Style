@@ -139,13 +139,6 @@
    "h": 16
   },
   {
-   "text": "«",
-   "x": 194,
-   "y": 359,
-   "w": 4,
-   "h": 4
-  },
-  {
    "text": "(ERERBILDBÜCH)",
    "x": 309,
    "y": 350,
@@ -629,13 +622,6 @@
    "h": 12
   },
   {
-   "text": "«Warum",
-   "x": 188,
-   "y": 854,
-   "w": 79,
-   "h": 14
-  },
-  {
    "text": "Atre",
    "x": 279,
    "y": 854,
@@ -956,13 +942,6 @@
    "y": 1003,
    "w": 23,
    "h": 15
-  },
-  {
-   "text": "=",
-   "x": 88,
-   "y": 1102,
-   "w": 5,
-   "h": 9
   },
   {
    "text": ">",
@@ -1963,7 +1942,7 @@
    "Word layer cleaned: 39 OCR tokens removed (21 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 250,
+  "verifiedWords": 247,
   "totalWords": 290
  }
 }

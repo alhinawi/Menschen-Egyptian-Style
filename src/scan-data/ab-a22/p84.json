@@ -48,13 +48,6 @@
    "h": 37
   },
   {
-   "text": "MM",
-   "x": 119,
-   "y": 201,
-   "w": 37,
-   "h": 24
-  },
-  {
    "text": "Ordnen",
    "x": 166,
    "y": 205,
@@ -181,25 +174,11 @@
    "h": 21
   },
   {
-   "text": "=",
-   "x": 93,
-   "y": 278,
-   "w": 11,
-   "h": 21
-  },
-  {
    "text": "e00",
    "x": 174,
    "y": 285,
    "w": 70,
    "h": 19
-  },
-  {
-   "text": "iss",
-   "x": 698,
-   "y": 304,
-   "w": 102,
-   "h": 1
   },
   {
    "text": "Sie",
@@ -447,13 +426,6 @@
    "h": 16
   },
   {
-   "text": "=",
-   "x": 183,
-   "y": 430,
-   "w": 24,
-   "h": 24
-  },
-  {
    "text": "Gespräche.",
    "x": 231,
    "y": 430,
@@ -529,13 +501,6 @@
    "y": 428,
    "w": 24,
    "h": 15
-  },
-  {
-   "text": "=",
-   "x": 184,
-   "y": 458,
-   "w": 23,
-   "h": 27
   },
   {
    "text": "ein",
@@ -655,13 +620,6 @@
    "y": 480,
    "w": 59,
    "h": 16
-  },
-  {
-   "text": "=",
-   "x": 182,
-   "y": 516,
-   "w": 26,
-   "h": 22
   },
   {
    "text": "unsere",
@@ -2215,7 +2173,7 @@
    "Word layer cleaned: 56 OCR tokens removed (21 top-watermark, 16 bottom-watermark, 0 underscore-gap merges, 16 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 287,
+  "verifiedWords": 281,
   "totalWords": 345
  }
 }

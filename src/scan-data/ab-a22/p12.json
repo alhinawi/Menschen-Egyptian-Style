@@ -6,13 +6,6 @@
  "height": 1556,
  "words": [
   {
-   "text": "«ws",
-   "x": 81,
-   "y": 201,
-   "w": 24,
-   "h": 9
-  },
-  {
    "text": "DM",
    "x": 122,
    "y": 186,
@@ -811,25 +804,11 @@
    "h": 33
   },
   {
-   "text": "\\",
-   "x": 982,
-   "y": 497,
-   "w": 7,
-   "h": 26
-  },
-  {
    "text": "(erfängEmp).",
    "x": 419,
    "y": 527,
    "w": 118,
    "h": 30
-  },
-  {
-   "text": "\\",
-   "x": 865,
-   "y": 529,
-   "w": 5,
-   "h": 9
   },
   {
    "text": "b",
@@ -1194,13 +1173,6 @@
    "y": 894,
    "w": 134,
    "h": 18
-  },
-  {
-   "text": "=",
-   "x": 819,
-   "y": 888,
-   "w": 19,
-   "h": 37
   },
   {
    "text": "a",
@@ -1739,7 +1711,7 @@
    "Answers graded from the official key; status advanced from raw-ocr to partial.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 221,
+  "verifiedWords": 217,
   "totalWords": 258
  }
 }

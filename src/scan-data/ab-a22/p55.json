@@ -349,13 +349,6 @@
    "h": 18
   },
   {
-   "text": "x»:",
-   "x": 51,
-   "y": 485,
-   "w": 25,
-   "h": 9
-  },
-  {
    "text": "Wo,",
    "x": 137,
    "y": 478,
@@ -648,13 +641,6 @@
    "y": 573,
    "w": 31,
    "h": 16
-  },
-  {
-   "text": "=",
-   "x": 65,
-   "y": 593,
-   "w": 11,
-   "h": 6
   },
   {
    "text": "ich",
@@ -1413,13 +1399,6 @@
    "h": 15
   },
   {
-   "text": "x»:",
-   "x": 52,
-   "y": 1093,
-   "w": 22,
-   "h": 8
-  },
-  {
    "text": "Markieren",
    "x": 138,
    "y": 1084,
@@ -1844,7 +1823,7 @@
    "Word layer cleaned: 40 OCR tokens removed (19 top-watermark, 15 bottom-watermark, 3 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 233,
+  "verifiedWords": 230,
   "totalWords": 273
  }
 }

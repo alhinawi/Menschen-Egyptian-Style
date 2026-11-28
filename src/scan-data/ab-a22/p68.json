@@ -13,13 +13,6 @@
    "h": 25
   },
   {
-   "text": "«ss",
-   "x": 89,
-   "y": 192,
-   "w": 25,
-   "h": 10
-  },
-  {
    "text": "EU",
    "x": 128,
    "y": 180,
@@ -1343,13 +1336,6 @@
    "h": 29
   },
   {
-   "text": "»227",
-   "x": 82,
-   "y": 1081,
-   "w": 37,
-   "h": 11
-  },
-  {
    "text": "a",
    "x": 147,
    "y": 1081,
@@ -1749,13 +1735,6 @@
    "h": 15
   },
   {
-   "text": "=",
-   "x": 479,
-   "y": 1305,
-   "w": 10,
-   "h": 5
-  },
-  {
    "text": "Die",
    "x": 188,
    "y": 1321,
@@ -2103,7 +2082,7 @@
    "Word layer cleaned: 39 OCR tokens removed (23 top-watermark, 13 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 255,
+  "verifiedWords": 252,
   "totalWords": 298
  }
 }

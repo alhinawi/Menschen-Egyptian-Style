@@ -1259,13 +1259,6 @@
    "h": 18
   },
   {
-   "text": "»204",
-   "x": 515,
-   "y": 799,
-   "w": 38,
-   "h": 26
-  },
-  {
    "text": "Hören",
    "x": 616,
    "y": 803,
@@ -1546,13 +1539,6 @@
    "h": 10
   },
   {
-   "text": "»202",
-   "x": 37,
-   "y": 997,
-   "w": 38,
-   "h": 10
-  },
-  {
    "text": "b",
    "x": 103,
    "y": 991,
@@ -1756,13 +1742,6 @@
    "h": 19
   },
   {
-   "text": "\\",
-   "x": 295,
-   "y": 1086,
-   "w": 17,
-   "h": 25
-  },
-  {
    "text": "-ich.",
    "x": 328,
    "y": 1089,
@@ -1775,13 +1754,6 @@
    "y": 1070,
    "w": 7,
    "h": 29
-  },
-  {
-   "text": "»205",
-   "x": 559,
-   "y": 1106,
-   "w": 37,
-   "h": 10
   },
   {
    "text": "Hören",
@@ -1838,13 +1810,6 @@
    "y": 1127,
    "w": 47,
    "h": 17
-  },
-  {
-   "text": "»203",
-   "x": 37,
-   "y": 1162,
-   "w": 38,
-   "h": 27
   },
   {
    "text": "Hören",
@@ -2144,7 +2109,7 @@
    "Answers graded from the official key; status advanced from raw-ocr to partial.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 284,
+  "verifiedWords": 279,
   "totalWords": 321
  }
 }

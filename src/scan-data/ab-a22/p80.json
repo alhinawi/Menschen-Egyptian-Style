@@ -832,13 +832,6 @@
    "h": 11
   },
   {
-   "text": "«os",
-   "x": 91,
-   "y": 650,
-   "w": 25,
-   "h": 9
-  },
-  {
    "text": "EM",
    "x": 131,
    "y": 637,
@@ -2650,7 +2643,7 @@
    "Word layer cleaned: 40 OCR tokens removed (22 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 353,
+  "verifiedWords": 352,
   "totalWords": 393
  }
 }
