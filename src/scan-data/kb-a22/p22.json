@@ -1704,9 +1704,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "Film-Stationen Clip 5: all tasks depend on the video. Not gradeable from the page."
  }
 }

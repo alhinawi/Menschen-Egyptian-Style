@@ -699,10 +699,7 @@
  ],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet.",
-   "Aufgabe 2 is matching without boxes (no printed blanks or circles), so it stays ungraded. Aufgabe 1 is free answers."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "L16 opener: photo discussion (opinion) + ex2 listening matching. Nothing mechanically gradeable."
  }
 }

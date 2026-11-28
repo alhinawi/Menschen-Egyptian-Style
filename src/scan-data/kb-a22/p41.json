@@ -713,9 +713,7 @@
  ],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "L19 opener: photo + listening + speaking about events. Nothing mechanically gradeable."
  }
 }

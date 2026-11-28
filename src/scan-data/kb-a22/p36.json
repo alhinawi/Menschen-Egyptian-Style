@@ -2075,9 +2075,7 @@
  "audio": [],
  "groups": [],
  "review": {
-  "status": "raw-ocr",
-  "notes": [
-   "OCR of the scan, not yet proofread against the printed page; no answer fields yet."
-  ]
+  "status": "reviewed-no-gradeable",
+  "note": "L18 Spiel: Ratespiel 'Wo bin ich?' speaking game; grammar box reference only. Nothing mechanically gradeable."
  }
 }
