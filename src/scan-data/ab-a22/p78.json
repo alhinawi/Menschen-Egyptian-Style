@@ -76,13 +76,6 @@
    "h": 15
   },
   {
-   "text": "Uw|",
-   "x": 404,
-   "y": 244,
-   "w": 87,
-   "h": 15
-  },
-  {
    "text": "Werden",
    "x": 170,
    "y": 269,
@@ -2241,7 +2234,7 @@
    "3 bracketed-optional answers converted to pipe alternatives (seit(dem) -> seit|seitdem).",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 299,
+  "verifiedWords": 298,
   "totalWords": 345
  }
 }

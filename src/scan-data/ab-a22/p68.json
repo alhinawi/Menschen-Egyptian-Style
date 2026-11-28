@@ -111,13 +111,6 @@
    "h": 18
   },
   {
-   "text": "|",
-   "x": 254,
-   "y": 221,
-   "w": 15,
-   "h": 28
-  },
-  {
    "text": "helfen",
    "x": 273,
    "y": 225,
@@ -125,24 +118,10 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 330,
-   "y": 225,
-   "w": 2,
-   "h": 17
-  },
-  {
    "text": "putzen",
    "x": 340,
    "y": 229,
    "w": 55,
-   "h": 17
-  },
-  {
-   "text": "|",
-   "x": 403,
-   "y": 225,
-   "w": 1,
    "h": 17
   },
   {
@@ -153,13 +132,6 @@
    "h": 15
   },
   {
-   "text": "|",
-   "x": 507,
-   "y": 224,
-   "w": 2,
-   "h": 17
-  },
-  {
    "text": "reparieren",
    "x": 517,
    "y": 225,
@@ -167,25 +139,11 @@
    "h": 21
   },
   {
-   "text": "|",
-   "x": 607,
-   "y": 223,
-   "w": 2,
-   "h": 17
-  },
-  {
    "text": "sichern",
    "x": 617,
    "y": 223,
    "w": 58,
    "h": 16
-  },
-  {
-   "text": "|",
-   "x": 682,
-   "y": 223,
-   "w": 2,
-   "h": 18
   },
   {
    "text": "wechseln",
@@ -2082,7 +2040,7 @@
    "Word layer cleaned: 39 OCR tokens removed (23 top-watermark, 13 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 252,
+  "verifiedWords": 246,
   "totalWords": 298
  }
 }

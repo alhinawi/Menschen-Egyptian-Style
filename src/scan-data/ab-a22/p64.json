@@ -69,25 +69,11 @@
    "h": 15
   },
   {
-   "text": "|",
-   "x": 221,
-   "y": 232,
-   "w": 2,
-   "h": 18
-  },
-  {
    "text": "Kri",
    "x": 231,
    "y": 233,
    "w": 21,
    "h": 15
-  },
-  {
-   "text": "|",
-   "x": 261,
-   "y": 232,
-   "w": 2,
-   "h": 18
   },
   {
    "text": "buch",
@@ -97,25 +83,11 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 315,
-   "y": 232,
-   "w": 2,
-   "h": 18
-  },
-  {
    "text": "Co",
    "x": 325,
    "y": 233,
    "w": 20,
    "h": 15
-  },
-  {
-   "text": "|",
-   "x": 352,
-   "y": 232,
-   "w": 2,
-   "h": 17
   },
   {
    "text": "mi",
@@ -125,25 +97,11 @@
    "h": 15
   },
   {
-   "text": "|",
-   "x": 388,
-   "y": 232,
-   "w": 2,
-   "h": 17
-  },
-  {
    "text": "Ge",
    "x": 396,
    "y": 233,
    "w": 21,
    "h": 15
-  },
-  {
-   "text": "|",
-   "x": 424,
-   "y": 232,
-   "w": 1,
-   "h": 17
   },
   {
    "text": "chen",
@@ -153,25 +111,11 @@
    "h": 15
   },
   {
-   "text": "|",
-   "x": 479,
-   "y": 231,
-   "w": 2,
-   "h": 17
-  },
-  {
    "text": "tung",
    "x": 487,
    "y": 236,
    "w": 38,
    "h": 17
-  },
-  {
-   "text": "|",
-   "x": 533,
-   "y": 231,
-   "w": 1,
-   "h": 18
   },
   {
    "text": "buch",
@@ -181,25 +125,11 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 589,
-   "y": 231,
-   "w": 1,
-   "h": 17
-  },
-  {
    "text": "dicht",
    "x": 597,
    "y": 231,
    "w": 43,
    "h": 15
-  },
-  {
-   "text": "|",
-   "x": 646,
-   "y": 231,
-   "w": 1,
-   "h": 17
   },
   {
    "text": "Bil",
@@ -209,25 +139,11 @@
    "h": 15
   },
   {
-   "text": "|",
-   "x": 682,
-   "y": 231,
-   "w": 2,
-   "h": 17
-  },
-  {
    "text": "Mär",
    "x": 690,
    "y": 231,
    "w": 33,
    "h": 17
-  },
-  {
-   "text": "|",
-   "x": 730,
-   "y": 231,
-   "w": 2,
-   "h": 18
   },
   {
    "text": "mics",
@@ -237,25 +153,11 @@
    "h": 15
   },
   {
-   "text": "|",
-   "x": 782,
-   "y": 231,
-   "w": 2,
-   "h": 18
-  },
-  {
    "text": "Hör",
    "x": 791,
    "y": 232,
    "w": 29,
    "h": 15
-  },
-  {
-   "text": "|",
-   "x": 827,
-   "y": 231,
-   "w": 2,
-   "h": 17
   },
   {
    "text": "der",
@@ -2358,13 +2260,6 @@
    "h": 27
   },
   {
-   "text": "a,undw|!",
-   "x": 597,
-   "y": 1244,
-   "w": 132,
-   "h": 19
-  },
-  {
    "text": "/6",
    "x": 945,
    "y": 1248,
@@ -2752,7 +2647,7 @@
    "Word layer cleaned: 56 OCR tokens removed (23 top-watermark, 15 bottom-watermark, 2 underscore-gap merges, 12 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 354,
+  "verifiedWords": 339,
   "totalWords": 417
  }
 }

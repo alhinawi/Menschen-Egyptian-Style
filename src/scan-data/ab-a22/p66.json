@@ -41,13 +41,6 @@
    "h": 33
   },
   {
-   "text": "|",
-   "x": 1,
-   "y": 45,
-   "w": 12,
-   "h": 93
-  },
-  {
    "text": "x:",
    "x": 87,
    "y": 207,
@@ -853,25 +846,11 @@
    "h": 14
   },
   {
-   "text": "|",
-   "x": 257,
-   "y": 565,
-   "w": 2,
-   "h": 17
-  },
-  {
    "text": "lang",
    "x": 267,
    "y": 565,
    "w": 33,
    "h": 21
-  },
-  {
-   "text": "|",
-   "x": 307,
-   "y": 565,
-   "w": 1,
-   "h": 17
   },
   {
    "text": "Potizei",
@@ -881,25 +860,11 @@
    "h": 17
   },
   {
-   "text": "|",
-   "x": 372,
-   "y": 560,
-   "w": 11,
-   "h": 29
-  },
-  {
    "text": "schmal",
    "x": 386,
    "y": 564,
    "w": 55,
    "h": 16
-  },
-  {
-   "text": "|",
-   "x": 448,
-   "y": 564,
-   "w": 2,
-   "h": 17
   },
   {
    "text": "sperren",
@@ -909,25 +874,11 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 525,
-   "y": 564,
-   "w": 1,
-   "h": 17
-  },
-  {
    "text": "stehlen",
    "x": 535,
    "y": 563,
    "w": 59,
    "h": 16
-  },
-  {
-   "text": "|",
-   "x": 601,
-   "y": 563,
-   "w": 2,
-   "h": 17
   },
   {
    "text": "Täter",
@@ -937,25 +888,11 @@
    "h": 17
   },
   {
-   "text": "|",
-   "x": 648,
-   "y": 560,
-   "w": 15,
-   "h": 29
-  },
-  {
    "text": "tragen",
    "x": 666,
    "y": 567,
    "w": 53,
    "h": 17
-  },
-  {
-   "text": "|",
-   "x": 726,
-   "y": 563,
-   "w": 2,
-   "h": 18
   },
   {
    "text": "ungefähr",
@@ -1525,25 +1462,11 @@
    "h": 14
   },
   {
-   "text": "|",
-   "x": 221,
-   "y": 984,
-   "w": 2,
-   "h": 17
-  },
-  {
    "text": "Den",
    "x": 231,
    "y": 985,
    "w": 30,
    "h": 14
-  },
-  {
-   "text": "|",
-   "x": 269,
-   "y": 983,
-   "w": 2,
-   "h": 18
   },
   {
    "text": "Den",
@@ -1553,25 +1476,11 @@
    "h": 15
   },
   {
-   "text": "|",
-   "x": 315,
-   "y": 983,
-   "w": 2,
-   "h": 17
-  },
-  {
    "text": "Den",
    "x": 325,
    "y": 984,
    "w": 30,
    "h": 14
-  },
-  {
-   "text": "|",
-   "x": 362,
-   "y": 983,
-   "w": 2,
-   "h": 17
   },
   {
    "text": "Ber",
@@ -1581,25 +1490,11 @@
    "h": 17
   },
   {
-   "text": "|",
-   "x": 396,
-   "y": 980,
-   "w": 13,
-   "h": 25
-  },
-  {
    "text": "Der",
    "x": 416,
    "y": 984,
    "w": 26,
    "h": 15
-  },
-  {
-   "text": "|",
-   "x": 448,
-   "y": 982,
-   "w": 2,
-   "h": 17
   },
   {
    "text": "Welchen",
@@ -2504,7 +2399,7 @@
    "Word layer cleaned: 40 OCR tokens removed (22 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 332,
+  "verifiedWords": 317,
   "totalWords": 376
  }
 }

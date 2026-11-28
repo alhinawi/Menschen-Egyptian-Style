@@ -6,13 +6,6 @@
  "height": 1556,
  "words": [
   {
-   "text": "|",
-   "x": 108,
-   "y": 194,
-   "w": 20,
-   "h": 29
-  },
-  {
    "text": "Brittas",
    "x": 163,
    "y": 202,
@@ -104,13 +97,6 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 341,
-   "y": 243,
-   "w": 2,
-   "h": 18
-  },
-  {
    "text": "ein",
    "x": 350,
    "y": 243,
@@ -132,20 +118,6 @@
    "h": 22
   },
   {
-   "text": "|",
-   "x": 562,
-   "y": 243,
-   "w": 2,
-   "h": 18
-  },
-  {
-   "text": "|",
-   "x": 843,
-   "y": 243,
-   "w": 1,
-   "h": 17
-  },
-  {
    "text": "im",
    "x": 168,
    "y": 271,
@@ -165,13 +137,6 @@
    "y": 270,
    "w": 51,
    "h": 22
-  },
-  {
-   "text": "|",
-   "x": 323,
-   "y": 270,
-   "w": 2,
-   "h": 17
   },
   {
    "text": "in",
@@ -664,7 +629,7 @@
    "h": 15
   },
   {
-   "text": "wır",
+   "text": "wir",
    "x": 216,
    "y": 704,
    "w": 25,
@@ -692,7 +657,7 @@
    "h": 9
   },
   {
-   "text": "wır",
+   "text": "wir",
    "x": 401,
    "y": 704,
    "w": 25,
@@ -720,7 +685,7 @@
    "h": 15
   },
   {
-   "text": "Giroßeltem.",
+   "text": "Großeltern.",
    "x": 549,
    "y": 704,
    "w": 86,
@@ -1999,7 +1964,7 @@
    "1 and 2 are sentence writing (several correct word orders); left ungraded. 3 a items 2-6 graded from the official key; item 1 is the printed example.",
    "Word layer cleaned: 38 OCR tokens removed (23 top-watermark, 12 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
   ],
-  "verifiedWords": 264,
+  "verifiedWords": 259,
   "totalWords": 303
  }
 }

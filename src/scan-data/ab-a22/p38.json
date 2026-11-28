@@ -20,13 +20,6 @@
    "h": 24
   },
   {
-   "text": "|",
-   "x": 146,
-   "y": 185,
-   "w": 15,
-   "h": 29
-  },
-  {
    "text": "Ergänzen",
    "x": 174,
    "y": 194,
@@ -830,13 +823,6 @@
    "y": 551,
    "w": 37,
    "h": 25
-  },
-  {
-   "text": "|",
-   "x": 149,
-   "y": 549,
-   "w": 16,
-   "h": 32
   },
   {
    "text": "Ergänzen",
@@ -2164,7 +2150,7 @@
    "Word layer cleaned: 44 OCR tokens removed (23 top-watermark, 13 bottom-watermark, 5 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 273,
+  "verifiedWords": 271,
   "totalWords": 320
  }
 }

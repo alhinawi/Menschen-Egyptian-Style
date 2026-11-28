@@ -2050,13 +2050,6 @@
    "h": 13
   },
   {
-   "text": "|",
-   "x": 267,
-   "y": 1172,
-   "w": 1,
-   "h": 2
-  },
-  {
    "text": "passe",
    "x": 283,
    "y": 1176,
@@ -2638,13 +2631,6 @@
    "h": 13
   },
   {
-   "text": "|",
-   "x": 692,
-   "y": 1384,
-   "w": 3,
-   "h": 18
-  },
-  {
    "text": "Netzwerk.",
    "x": 710,
    "y": 1375,
@@ -2785,7 +2771,7 @@
    "Answers graded from the official key; status advanced from raw-ocr to partial.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 383,
+  "verifiedWords": 381,
   "totalWords": 423
  }
 }

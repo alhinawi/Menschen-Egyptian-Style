@@ -41,24 +41,10 @@
    "h": 14
   },
   {
-   "text": "|",
-   "x": 241,
-   "y": 232,
-   "w": 3,
-   "h": 18
-  },
-  {
    "text": "Autobahn",
    "x": 245,
    "y": 232,
    "w": 84,
-   "h": 18
-  },
-  {
-   "text": "|",
-   "x": 336,
-   "y": 232,
-   "w": 2,
    "h": 18
   },
   {
@@ -69,25 +55,11 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 419,
-   "y": 232,
-   "w": 2,
-   "h": 17
-  },
-  {
    "text": "Fähre",
    "x": 428,
    "y": 232,
    "w": 45,
    "h": 15
-  },
-  {
-   "text": "|",
-   "x": 480,
-   "y": 232,
-   "w": 2,
-   "h": 17
   },
   {
    "text": "Reifen",
@@ -97,13 +69,6 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 547,
-   "y": 231,
-   "w": 2,
-   "h": 17
-  },
-  {
    "text": "Motor",
    "x": 557,
    "y": 233,
@@ -111,25 +76,11 @@
    "h": 14
   },
   {
-   "text": "|",
-   "x": 613,
-   "y": 231,
-   "w": 3,
-   "h": 18
-  },
-  {
    "text": "Wagen",
    "x": 621,
    "y": 232,
    "w": 55,
    "h": 21
-  },
-  {
-   "text": "|",
-   "x": 684,
-   "y": 231,
-   "w": 2,
-   "h": 18
   },
   {
    "text": "Werkstatt",
@@ -1511,13 +1462,6 @@
    "h": 21
   },
   {
-   "text": "|",
-   "x": 384,
-   "y": 961,
-   "w": 2,
-   "h": 17
-  },
-  {
    "text": "für",
    "x": 392,
    "y": 961,
@@ -1539,13 +1483,6 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 507,
-   "y": 960,
-   "w": 2,
-   "h": 18
-  },
-  {
    "text": "sicher",
    "x": 517,
    "y": 961,
@@ -1560,13 +1497,6 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 670,
-   "y": 960,
-   "w": 2,
-   "h": 19
-  },
-  {
    "text": "nicht",
    "x": 680,
    "y": 960,
@@ -1579,13 +1509,6 @@
    "y": 960,
    "w": 93,
    "h": 23
-  },
-  {
-   "text": "|",
-   "x": 812,
-   "y": 957,
-   "w": 15,
-   "h": 29
   },
   {
    "text": "so",
@@ -2414,13 +2337,6 @@
    "h": 28
   },
   {
-   "text": "|",
-   "x": 376,
-   "y": 1411,
-   "w": 10,
-   "h": 28
-  },
-  {
    "text": "8-10",
    "x": 398,
    "y": 1420,
@@ -2872,7 +2788,7 @@
    "Word layer cleaned: 80 OCR tokens removed (22 top-watermark, 16 bottom-watermark, 0 underscore-gap merges, 38 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 350,
+  "verifiedWords": 338,
   "totalWords": 432
  }
 }

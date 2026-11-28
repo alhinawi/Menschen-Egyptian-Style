@@ -76,25 +76,11 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 229,
-   "y": 246,
-   "w": 2,
-   "h": 17
-  },
-  {
    "text": "Ausbildung",
    "x": 237,
    "y": 245,
    "w": 101,
    "h": 22
-  },
-  {
-   "text": "|",
-   "x": 327,
-   "y": 241,
-   "w": 15,
-   "h": 29
   },
   {
    "text": "Lehre",
@@ -104,25 +90,11 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 397,
-   "y": 245,
-   "w": 2,
-   "h": 17
-  },
-  {
    "text": "mündlichen",
    "x": 407,
    "y": 245,
    "w": 96,
    "h": 15
-  },
-  {
-   "text": "|",
-   "x": 511,
-   "y": 245,
-   "w": 1,
-   "h": 18
   },
   {
    "text": "Noten",
@@ -132,13 +104,6 @@
    "h": 17
   },
   {
-   "text": "|",
-   "x": 570,
-   "y": 241,
-   "w": 10,
-   "h": 29
-  },
-  {
    "text": "schriftlichen",
    "x": 588,
    "y": 244,
@@ -146,25 +111,11 @@
    "h": 17
   },
   {
-   "text": "|",
-   "x": 698,
-   "y": 244,
-   "w": 3,
-   "h": 18
-  },
-  {
    "text": "Studium",
    "x": 707,
    "y": 244,
    "w": 69,
    "h": 16
-  },
-  {
-   "text": "|",
-   "x": 783,
-   "y": 244,
-   "w": 2,
-   "h": 17
   },
   {
    "text": "Zeugnissen",
@@ -277,13 +228,6 @@
    "y": 324,
    "w": 25,
    "h": 16
-  },
-  {
-   "text": "|",
-   "x": 996,
-   "y": 316,
-   "w": 1,
-   "h": 1
   },
   {
    "text": "—",
@@ -1448,13 +1392,6 @@
    "h": 14
   },
   {
-   "text": "|",
-   "x": 144,
-   "y": 1196,
-   "w": 11,
-   "h": 31
-  },
-  {
    "text": "Reisevorbereitungen.",
    "x": 172,
    "y": 1203,
@@ -2173,7 +2110,7 @@
    "Word layer cleaned: 56 OCR tokens removed (21 top-watermark, 16 bottom-watermark, 0 underscore-gap merges, 16 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 281,
+  "verifiedWords": 272,
   "totalWords": 345
  }
 }

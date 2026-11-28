@@ -419,13 +419,6 @@
    "h": 21
   },
   {
-   "text": "|",
-   "x": 234,
-   "y": 499,
-   "w": 2,
-   "h": 17
-  },
-  {
    "text": "ich",
    "x": 244,
    "y": 499,
@@ -438,13 +431,6 @@
    "y": 499,
    "w": 77,
    "h": 15
-  },
-  {
-   "text": "|",
-   "x": 358,
-   "y": 499,
-   "w": 2,
-   "h": 17
   },
   {
    "text": "ehrlich",
@@ -468,13 +454,6 @@
    "h": 22
   },
   {
-   "text": "|",
-   "x": 583,
-   "y": 499,
-   "w": 2,
-   "h": 18
-  },
-  {
    "text": "mich",
    "x": 592,
    "y": 499,
@@ -496,13 +475,6 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 780,
-   "y": 499,
-   "w": 2,
-   "h": 18
-  },
-  {
    "text": "großes",
    "x": 788,
    "y": 499,
@@ -522,13 +494,6 @@
    "y": 499,
    "w": 45,
    "h": 16
-  },
-  {
-   "text": "|",
-   "x": 985,
-   "y": 499,
-   "w": 1,
-   "h": 17
   },
   {
    "text": "5",
@@ -559,13 +524,6 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 305,
-   "y": 526,
-   "w": 2,
-   "h": 18
-  },
-  {
    "text": "interessiert",
    "x": 315,
    "y": 527,
@@ -585,13 +543,6 @@
    "y": 526,
    "w": 34,
    "h": 16
-  },
-  {
-   "text": "|",
-   "x": 503,
-   "y": 526,
-   "w": 2,
-   "h": 18
   },
   {
    "text": "und-wie",
@@ -1863,7 +1814,7 @@
    "Word layer cleaned: 41 OCR tokens removed (22 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 252,
+  "verifiedWords": 245,
   "totalWords": 295
  }
 }

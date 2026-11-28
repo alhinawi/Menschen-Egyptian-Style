@@ -503,13 +503,6 @@
    "h": 21
   },
   {
-   "text": "a|(h)",
-   "x": 887,
-   "y": 687,
-   "w": 115,
-   "h": 22
-  },
-  {
    "text": "auf",
    "x": 410,
    "y": 715,
@@ -629,25 +622,11 @@
    "h": 17
   },
   {
-   "text": "|",
-   "x": 243,
-   "y": 833,
-   "w": 2,
-   "h": 18
-  },
-  {
    "text": "wie",
    "x": 251,
    "y": 835,
    "w": 29,
    "h": 15
-  },
-  {
-   "text": "|",
-   "x": 287,
-   "y": 833,
-   "w": 2,
-   "h": 19
   },
   {
    "text": "wie-viet",
@@ -657,13 +636,6 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 366,
-   "y": 834,
-   "w": 2,
-   "h": 18
-  },
-  {
    "text": "wo",
    "x": 375,
    "y": 840,
@@ -671,25 +643,11 @@
    "h": 10
   },
   {
-   "text": "|",
-   "x": 406,
-   "y": 834,
-   "w": 2,
-   "h": 18
-  },
-  {
    "text": "warum",
    "x": 415,
    "y": 840,
    "w": 56,
    "h": 11
-  },
-  {
-   "text": "|",
-   "x": 478,
-   "y": 834,
-   "w": 2,
-   "h": 19
   },
   {
    "text": "wie",
@@ -1660,7 +1618,7 @@
    "Answers graded from the official key; status advanced from raw-ocr to partial.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 226,
+  "verifiedWords": 220,
   "totalWords": 270
  }
 }

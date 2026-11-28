@@ -741,13 +741,6 @@
    "h": 15
   },
   {
-   "text": "|",
-   "x": 79,
-   "y": 854,
-   "w": 21,
-   "h": 31
-  },
-  {
    "text": "Finden",
    "x": 134,
    "y": 861,
@@ -1000,25 +993,11 @@
    "h": 21
   },
   {
-   "text": "|",
-   "x": 204,
-   "y": 1240,
-   "w": 2,
-   "h": 18
-  },
-  {
    "text": "schreiben",
    "x": 213,
    "y": 1241,
    "w": 78,
    "h": 16
-  },
-  {
-   "text": "|",
-   "x": 299,
-   "y": 1241,
-   "w": 2,
-   "h": 17
   },
   {
    "text": "kleben",
@@ -1028,25 +1007,11 @@
    "h": 17
   },
   {
-   "text": "|",
-   "x": 368,
-   "y": 1241,
-   "w": 2,
-   "h": 18
-  },
-  {
    "text": "bringen",
    "x": 373,
    "y": 1241,
    "w": 67,
    "h": 23
-  },
-  {
-   "text": "|",
-   "x": 447,
-   "y": 1241,
-   "w": 2,
-   "h": 18
   },
   {
    "text": "lesen",
@@ -1056,25 +1021,11 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 504,
-   "y": 1241,
-   "w": 2,
-   "h": 19
-  },
-  {
    "text": "bringen",
    "x": 513,
    "y": 1242,
    "w": 63,
    "h": 22
-  },
-  {
-   "text": "|",
-   "x": 584,
-   "y": 1241,
-   "w": 2,
-   "h": 19
   },
   {
    "text": "öffnen",
@@ -1740,7 +1691,7 @@
    "Answers graded from the official key; status advanced from raw-ocr to partial.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 186,
+  "verifiedWords": 179,
   "totalWords": 229
  }
 }
