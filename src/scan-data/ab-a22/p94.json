@@ -2694,14 +2694,248 @@
    "h": 13
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p94-1a",
+   "group": "g1",
+   "kind": "text",
+   "label": "1a",
+   "answer": "Konsulat",
+   "x": 418,
+   "y": 274,
+   "w": 112,
+   "h": 28
+  },
+  {
+   "id": "p94-1b1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1b1",
+   "answer": "Anschluss",
+   "x": 628,
+   "y": 300,
+   "w": 130,
+   "h": 28
+  },
+  {
+   "id": "p94-1b2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1b2",
+   "answer": "Verspätung",
+   "x": 810,
+   "y": 327,
+   "w": 175,
+   "h": 28
+  },
+  {
+   "id": "p94-1c1",
+   "group": "g1",
+   "kind": "text",
+   "label": "1c1",
+   "answer": "Passkontrolle",
+   "x": 615,
+   "y": 355,
+   "w": 172,
+   "h": 28
+  },
+  {
+   "id": "p94-1c2",
+   "group": "g1",
+   "kind": "text",
+   "label": "1c2",
+   "answer": "Abflug",
+   "x": 710,
+   "y": 412,
+   "w": 115,
+   "h": 28
+  },
+  {
+   "id": "p94-1d",
+   "group": "g1",
+   "kind": "text",
+   "label": "1d",
+   "answer": "Impfungen",
+   "x": 288,
+   "y": 462,
+   "w": 130,
+   "h": 28
+  },
+  {
+   "id": "p94-2b",
+   "group": "g2",
+   "kind": "text",
+   "label": "2b",
+   "answer": "lebten",
+   "x": 168,
+   "y": 637,
+   "w": 82,
+   "h": 28
+  },
+  {
+   "id": "p94-2c",
+   "group": "g2",
+   "kind": "text",
+   "label": "2c",
+   "answer": "hatten",
+   "x": 678,
+   "y": 636,
+   "w": 80,
+   "h": 28
+  },
+  {
+   "id": "p94-2d",
+   "group": "g2",
+   "kind": "text",
+   "label": "2d",
+   "answer": "fand",
+   "x": 668,
+   "y": 663,
+   "w": 78,
+   "h": 28
+  },
+  {
+   "id": "p94-2e",
+   "group": "g2",
+   "kind": "text",
+   "label": "2e",
+   "answer": "arbeitete",
+   "x": 480,
+   "y": 717,
+   "w": 106,
+   "h": 28
+  },
+  {
+   "id": "p94-2f",
+   "group": "g2",
+   "kind": "text",
+   "label": "2f",
+   "answer": "kam",
+   "x": 235,
+   "y": 744,
+   "w": 76,
+   "h": 28
+  },
+  {
+   "id": "p94-2g",
+   "group": "g2",
+   "kind": "text",
+   "label": "2g",
+   "answer": "spielten",
+   "x": 644,
+   "y": 745,
+   "w": 76,
+   "h": 28
+  },
+  {
+   "id": "p94-2h",
+   "group": "g2",
+   "kind": "text",
+   "label": "2h",
+   "answer": "sagte",
+   "x": 280,
+   "y": 772,
+   "w": 76,
+   "h": 28
+  },
+  {
+   "id": "p94-2i",
+   "group": "g2",
+   "kind": "text",
+   "label": "2i",
+   "answer": "gab",
+   "x": 860,
+   "y": 771,
+   "w": 78,
+   "h": 28
+  },
+  {
+   "id": "p94-3a",
+   "group": "g3",
+   "kind": "text",
+   "label": "3a",
+   "answer": "mit vielen schönen Erfahrungen",
+   "x": 395,
+   "y": 1016,
+   "w": 330,
+   "h": 24
+  },
+  {
+   "id": "p94-3b",
+   "group": "g3",
+   "kind": "text",
+   "label": "3b",
+   "answer": "hat mir gefallen",
+   "x": 878,
+   "y": 1070,
+   "w": 105,
+   "h": 24
+  },
+  {
+   "id": "p94-3c",
+   "group": "g3",
+   "kind": "text",
+   "label": "3c",
+   "answer": "fand es manchmal anstrengend",
+   "x": 545,
+   "y": 1123,
+   "w": 333,
+   "h": 24
+  },
+  {
+   "id": "p94-3d",
+   "group": "g3",
+   "kind": "text",
+   "label": "3d",
+   "answer": "einmal machen",
+   "x": 432,
+   "y": 1177,
+   "w": 333,
+   "h": 24
+  },
+  {
+   "id": "p94-3e",
+   "group": "g3",
+   "kind": "text",
+   "label": "3e",
+   "answer": "auch jedem empfehlen",
+   "x": 482,
+   "y": 1203,
+   "w": 303,
+   "h": 24
+  },
+  {
+   "id": "p94-3f",
+   "group": "g3",
+   "kind": "text",
+   "label": "3f",
+   "answer": "dass die Zeit",
+   "x": 616,
+   "y": 1230,
+   "w": 158,
+   "h": 24
+  }
+ ],
  "audio": [],
- "groups": [],
+ "groups": [
+  {
+   "id": "g1",
+   "label": "1 Ordnen Sie zu (Woerter)"
+  },
+  {
+   "id": "g2",
+   "label": "2 Verben im Praeteritum"
+  },
+  {
+   "id": "g3",
+   "label": "3 Ordnen Sie zu (Kommunikation)"
+  }
+ ],
  "review": {
-  "status": "raw-ocr",
+  "status": "partial",
   "notes": [
+   "Lektion 24 TEST graded from the printed Loesungsschluessel (p107): ex1 a-d (6 gaps), ex2 b-i (a = handwritten example machte), ex3 a-f. Keyed only.",
    "Word layer cleaned: 43 OCR tokens removed (23 top-watermark, 13 bottom-watermark, 0 underscore-gap merges, 3 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
-   "Pending: not yet graded.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ]
  }
