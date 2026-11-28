@@ -1077,13 +1077,6 @@
    "h": 26
   },
   {
-   "text": "|",
-   "x": 1096,
-   "y": 801,
-   "w": 1,
-   "h": 14
-  },
-  {
    "text": "Das",
    "x": 185,
    "y": 822,
@@ -1168,13 +1161,6 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 1095,
-   "y": 824,
-   "w": 1,
-   "h": 13
-  },
-  {
    "text": "etwas",
    "x": 184,
    "y": 851,
@@ -1201,13 +1187,6 @@
    "y": 846,
    "w": 78,
    "h": 27
-  },
-  {
-   "text": "|",
-   "x": 1095,
-   "y": 859,
-   "w": 1,
-   "h": 5
   },
   {
    "text": "Das",
@@ -1266,13 +1245,6 @@
    "h": 15
   },
   {
-   "text": "|",
-   "x": 1095,
-   "y": 871,
-   "w": 1,
-   "h": 22
-  },
-  {
    "text": "nicht",
    "x": 184,
    "y": 901,
@@ -1299,20 +1271,6 @@
    "y": 902,
    "w": 54,
    "h": 17
-  },
-  {
-   "text": "|",
-   "x": 1095,
-   "y": 908,
-   "w": 1,
-   "h": 8
-  },
-  {
-   "text": "|",
-   "x": 1095,
-   "y": 927,
-   "w": 1,
-   "h": 9
   },
   {
    "text": "Es",
@@ -1644,13 +1602,6 @@
    "h": 18
   },
   {
-   "text": "|",
-   "x": 253,
-   "y": 1184,
-   "w": 2,
-   "h": 23
-  },
-  {
    "text": "ach",
    "x": 263,
    "y": 1184,
@@ -1670,13 +1621,6 @@
    "y": 1185,
    "w": 44,
    "h": 16
-  },
-  {
-   "text": "|",
-   "x": 368,
-   "y": 1184,
-   "w": 2,
-   "h": 23
   },
   {
    "text": "aus",
@@ -1770,13 +1714,6 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 251,
-   "y": 1210,
-   "w": 2,
-   "h": 23
-  },
-  {
    "text": "Jahreszeit",
    "x": 260,
    "y": 1212,
@@ -1784,25 +1721,11 @@
    "h": 19
   },
   {
-   "text": "|",
-   "x": 360,
-   "y": 1211,
-   "w": 2,
-   "h": 23
-  },
-  {
    "text": "fahren",
    "x": 370,
    "y": 1212,
    "w": 61,
    "h": 17
-  },
-  {
-   "text": "|",
-   "x": 438,
-   "y": 1211,
-   "w": 2,
-   "h": 23
   },
   {
    "text": "Oh!",
@@ -1840,25 +1763,11 @@
    "h": 21
   },
   {
-   "text": "|",
-   "x": 213,
-   "y": 1280,
-   "w": 2,
-   "h": 17
-  },
-  {
    "text": "darf",
    "x": 221,
    "y": 1280,
    "w": 35,
    "h": 15
-  },
-  {
-   "text": "|",
-   "x": 261,
-   "y": 1280,
-   "w": 2,
-   "h": 17
   },
   {
    "text": "gesprochen",
@@ -2418,7 +2327,7 @@
    "Training Hören 2 a-d graded from the official key. Item 1 (line matching) and the Aussprache rule gap stay ungraded.",
    "Word layer cleaned: 35 OCR tokens removed (17 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified."
   ],
-  "verifiedWords": 311,
+  "verifiedWords": 298,
   "totalWords": 349
  }
 }

@@ -1077,13 +1077,6 @@
    "h": 20
   },
   {
-   "text": "|",
-   "x": 322,
-   "y": 968,
-   "w": 2,
-   "h": 17
-  },
-  {
    "text": "Ich",
    "x": 333,
    "y": 968,
@@ -1117,13 +1110,6 @@
    "y": 969,
    "w": 34,
    "h": 15
-  },
-  {
-   "text": "|",
-   "x": 545,
-   "y": 969,
-   "w": 1,
-   "h": 17
   },
   {
    "text": "kann",
@@ -1168,13 +1154,6 @@
    "h": 15
   },
   {
-   "text": "|",
-   "x": 854,
-   "y": 969,
-   "w": 1,
-   "h": 17
-  },
-  {
    "text": "Können",
    "x": 142,
    "y": 996,
@@ -1210,13 +1189,6 @@
    "h": 15
   },
   {
-   "text": "|",
-   "x": 432,
-   "y": 995,
-   "w": 1,
-   "h": 18
-  },
-  {
    "text": "Was",
    "x": 440,
    "y": 997,
@@ -1243,13 +1215,6 @@
    "y": 996,
    "w": 201,
    "h": 22
-  },
-  {
-   "text": "|",
-   "x": 637,
-   "y": 992,
-   "w": 19,
-   "h": 28
   },
   {
    "text": "Bei",
@@ -1982,7 +1947,7 @@
    "Word layer cleaned: 32 OCR tokens removed (13 top-watermark, 15 bottom-watermark, 1 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 238,
+  "verifiedWords": 233,
   "totalWords": 273
  }
 }

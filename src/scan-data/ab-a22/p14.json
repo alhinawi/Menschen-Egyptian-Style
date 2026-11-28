@@ -769,13 +769,6 @@
    "h": 17
   },
   {
-   "text": "|",
-   "x": 374,
-   "y": 711,
-   "w": 2,
-   "h": 18
-  },
-  {
    "text": "gut",
    "x": 382,
    "y": 716,
@@ -788,13 +781,6 @@
    "y": 712,
    "w": 96,
    "h": 22
-  },
-  {
-   "text": "|",
-   "x": 507,
-   "y": 708,
-   "w": 14,
-   "h": 28
   },
   {
    "text": "ist",
@@ -825,13 +811,6 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 688,
-   "y": 711,
-   "w": 3,
-   "h": 18
-  },
-  {
    "text": "freue",
    "x": 698,
    "y": 711,
@@ -860,13 +839,6 @@
    "h": 18
   },
   {
-   "text": "|",
-   "x": 872,
-   "y": 708,
-   "w": 15,
-   "h": 28
-  },
-  {
    "text": "benutze",
    "x": 891,
    "y": 712,
@@ -881,25 +853,11 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 994,
-   "y": 711,
-   "w": 2,
-   "h": 18
-  },
-  {
    "text": "gedacht-hast",
    "x": 168,
    "y": 738,
    "w": 117,
    "h": 23
-  },
-  {
-   "text": "|",
-   "x": 275,
-   "y": 735,
-   "w": 15,
-   "h": 29
   },
   {
    "text": "mich",
@@ -921,13 +879,6 @@
    "y": 738,
    "w": 61,
    "h": 22
-  },
-  {
-   "text": "|",
-   "x": 447,
-   "y": 738,
-   "w": 2,
-   "h": 18
   },
   {
    "text": "für",
@@ -2049,7 +2000,7 @@
    "Answers graded from the official key; status advanced from raw-ocr to partial.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 277,
+  "verifiedWords": 270,
   "totalWords": 319
  }
 }

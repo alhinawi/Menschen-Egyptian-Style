@@ -902,13 +902,6 @@
    "h": 24
   },
   {
-   "text": "|",
-   "x": 756,
-   "y": 635,
-   "w": 16,
-   "h": 31
-  },
-  {
    "text": "we",
    "x": 778,
    "y": 640,
@@ -1711,7 +1704,7 @@
    "Answers graded from the official key; status advanced from raw-ocr to partial.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 217,
+  "verifiedWords": 216,
   "totalWords": 258
  }
 }

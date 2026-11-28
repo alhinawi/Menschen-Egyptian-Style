@@ -1490,25 +1490,11 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 219,
-   "y": 1076,
-   "w": 1,
-   "h": 17
-  },
-  {
    "text": "einloggen",
    "x": 228,
    "y": 1076,
    "w": 80,
    "h": 21
-  },
-  {
-   "text": "|",
-   "x": 316,
-   "y": 1076,
-   "w": 2,
-   "h": 17
   },
   {
    "text": "anklicken",
@@ -1518,25 +1504,11 @@
    "h": 15
   },
   {
-   "text": "|",
-   "x": 410,
-   "y": 1076,
-   "w": 2,
-   "h": 17
-  },
-  {
    "text": "Passwort",
    "x": 420,
    "y": 1077,
    "w": 72,
    "h": 15
-  },
-  {
-   "text": "|",
-   "x": 499,
-   "y": 1076,
-   "w": 2,
-   "h": 18
   },
   {
    "text": "Fahrkarte/Ticket",
@@ -1546,25 +1518,11 @@
    "h": 19
   },
   {
-   "text": "|",
-   "x": 658,
-   "y": 1076,
-   "w": 2,
-   "h": 17
-  },
-  {
    "text": "Ehipkarte",
    "x": 666,
    "y": 1076,
    "w": 89,
    "h": 21
-  },
-  {
-   "text": "|",
-   "x": 748,
-   "y": 1073,
-   "w": 15,
-   "h": 28
   },
   {
    "text": "Daten",
@@ -1970,7 +1928,7 @@
    "Word layer cleaned: 28 OCR tokens removed (10 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 252,
+  "verifiedWords": 246,
   "totalWords": 282
  }
 }

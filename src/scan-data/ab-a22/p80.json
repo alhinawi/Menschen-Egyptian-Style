@@ -55,13 +55,6 @@
    "h": 18
   },
   {
-   "text": "|",
-   "x": 299,
-   "y": 221,
-   "w": 14,
-   "h": 27
-  },
-  {
    "text": "Kein",
    "x": 317,
    "y": 225,
@@ -74,13 +67,6 @@
    "y": 225,
    "w": 64,
    "h": 15
-  },
-  {
-   "text": "|",
-   "x": 433,
-   "y": 224,
-   "w": 2,
-   "h": 18
   },
   {
    "text": "Zuerst",
@@ -104,13 +90,6 @@
    "h": 15
   },
   {
-   "text": "|",
-   "x": 585,
-   "y": 224,
-   "w": 2,
-   "h": 17
-  },
-  {
    "text": "Danach",
    "x": 595,
    "y": 224,
@@ -132,13 +111,6 @@
    "h": 15
   },
   {
-   "text": "|",
-   "x": 750,
-   "y": 224,
-   "w": 2,
-   "h": 17
-  },
-  {
    "text": "Wie",
    "x": 758,
    "y": 225,
@@ -158,13 +130,6 @@
    "y": 224,
    "w": 27,
    "h": 15
-  },
-  {
-   "text": "|",
-   "x": 873,
-   "y": 224,
-   "w": 2,
-   "h": 17
   },
   {
    "text": "5",
@@ -195,13 +160,6 @@
    "h": 23
   },
   {
-   "text": "|",
-   "x": 278,
-   "y": 248,
-   "w": 15,
-   "h": 29
-  },
-  {
    "text": "Dann",
    "x": 299,
    "y": 253,
@@ -223,13 +181,6 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 434,
-   "y": 251,
-   "w": 2,
-   "h": 18
-  },
-  {
    "text": "Zuletzt",
    "x": 443,
    "y": 251,
@@ -249,13 +200,6 @@
    "y": 251,
    "w": 20,
    "h": 15
-  },
-  {
-   "text": "|",
-   "x": 593,
-   "y": 251,
-   "w": 2,
-   "h": 17
   },
   {
    "text": "Und",
@@ -2643,7 +2587,7 @@
    "Word layer cleaned: 40 OCR tokens removed (22 top-watermark, 15 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 352,
+  "verifiedWords": 344,
   "totalWords": 393
  }
 }

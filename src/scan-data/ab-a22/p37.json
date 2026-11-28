@@ -90,25 +90,11 @@
    "h": 17
   },
   {
-   "text": "|",
-   "x": 215,
-   "y": 232,
-   "w": 2,
-   "h": 18
-  },
-  {
    "text": "Strändefm}",
    "x": 222,
    "y": 232,
    "w": 174,
    "h": 21
-  },
-  {
-   "text": "|",
-   "x": 313,
-   "y": 229,
-   "w": 15,
-   "h": 27
   },
   {
    "text": "Schweiz",
@@ -118,13 +104,6 @@
    "h": 21
   },
   {
-   "text": "|",
-   "x": 402,
-   "y": 233,
-   "w": 3,
-   "h": 19
-  },
-  {
    "text": "Meer",
    "x": 412,
    "y": 235,
@@ -132,25 +111,11 @@
    "h": 15
   },
   {
-   "text": "|",
-   "x": 458,
-   "y": 233,
-   "w": 3,
-   "h": 19
-  },
-  {
    "text": "Küste",
    "x": 468,
    "y": 235,
    "w": 45,
    "h": 15
-  },
-  {
-   "text": "|",
-   "x": 519,
-   "y": 233,
-   "w": 3,
-   "h": 19
   },
   {
    "text": "Rumänien",
@@ -193,13 +158,6 @@
    "y": 339,
    "w": 40,
    "h": 11
-  },
-  {
-   "text": "|",
-   "x": 308,
-   "y": 366,
-   "w": 1,
-   "h": 9
   },
   {
    "text": "sans",
@@ -2395,7 +2353,7 @@
    "Word layer cleaned: 36 OCR tokens removed (20 top-watermark, 13 bottom-watermark, 0 underscore-gap merges, 0 photo-credit fragments, 3 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Answers graded from the official key; status advanced from raw-ocr to partial."
   ],
-  "verifiedWords": 293,
+  "verifiedWords": 287,
   "totalWords": 332
  }
 }

@@ -202,25 +202,11 @@
    "h": 14
   },
   {
-   "text": "|",
-   "x": 204,
-   "y": 289,
-   "w": 2,
-   "h": 17
-  },
-  {
    "text": "Alter?",
    "x": 208,
    "y": 289,
    "w": 51,
    "h": 17
-  },
-  {
-   "text": "|",
-   "x": 266,
-   "y": 289,
-   "w": 2,
-   "h": 18
   },
   {
    "text": "Land?",
@@ -230,24 +216,10 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 327,
-   "y": 289,
-   "w": 2,
-   "h": 18
-  },
-  {
    "text": "Wohnort?",
    "x": 335,
    "y": 289,
    "w": 82,
-   "h": 17
-  },
-  {
-   "text": "|",
-   "x": 423,
-   "y": 290,
-   "w": 2,
    "h": 17
   },
   {
@@ -258,13 +230,6 @@
    "h": 21
   },
   {
-   "text": "|",
-   "x": 521,
-   "y": 290,
-   "w": 2,
-   "h": 18
-  },
-  {
    "text": "Schule?",
    "x": 529,
    "y": 290,
@@ -272,25 +237,11 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 598,
-   "y": 290,
-   "w": 2,
-   "h": 18
-  },
-  {
    "text": "Beruf?",
    "x": 608,
    "y": 290,
    "w": 50,
    "h": 16
-  },
-  {
-   "text": "|",
-   "x": 664,
-   "y": 290,
-   "w": 2,
-   "h": 18
   },
   {
    "text": "Hobby?",
@@ -2109,7 +2060,7 @@
    "Answers graded from the official key; status advanced from raw-ocr to partial.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 279,
+  "verifiedWords": 272,
   "totalWords": 321
  }
 }

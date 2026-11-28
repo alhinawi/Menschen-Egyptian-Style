@@ -41,25 +41,11 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 246,
-   "y": 231,
-   "w": 2,
-   "h": 17
-  },
-  {
    "text": "Club",
    "x": 255,
    "y": 231,
    "w": 35,
    "h": 16
-  },
-  {
-   "text": "|",
-   "x": 297,
-   "y": 231,
-   "w": 2,
-   "h": 17
   },
   {
    "text": "kostenlos",
@@ -69,25 +55,11 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 390,
-   "y": 230,
-   "w": 2,
-   "h": 18
-  },
-  {
    "text": "Spaziergang",
    "x": 399,
    "y": 231,
    "w": 100,
    "h": 21
-  },
-  {
-   "text": "|",
-   "x": 505,
-   "y": 230,
-   "w": 2,
-   "h": 18
   },
   {
    "text": "Kutttrette",
@@ -97,13 +69,6 @@
    "h": 16
   },
   {
-   "text": "|",
-   "x": 602,
-   "y": 230,
-   "w": 1,
-   "h": 17
-  },
-  {
    "text": "Beginn",
    "x": 612,
    "y": 231,
@@ -111,25 +76,11 @@
    "h": 21
   },
   {
-   "text": "|",
-   "x": 674,
-   "y": 230,
-   "w": 2,
-   "h": 18
-  },
-  {
    "text": "Publikum",
    "x": 684,
    "y": 230,
    "w": 76,
    "h": 16
-  },
-  {
-   "text": "|",
-   "x": 768,
-   "y": 230,
-   "w": 1,
-   "h": 18
   },
   {
    "text": "klassische",
@@ -1469,13 +1420,6 @@
    "h": 15
   },
   {
-   "text": "|",
-   "x": 312,
-   "y": 946,
-   "w": 3,
-   "h": 19
-  },
-  {
    "text": "ich",
    "x": 322,
    "y": 946,
@@ -1495,13 +1439,6 @@
    "y": 946,
    "w": 51,
    "h": 19
-  },
-  {
-   "text": "|",
-   "x": 440,
-   "y": 943,
-   "w": 14,
-   "h": 27
   },
   {
    "text": "hört",
@@ -1532,13 +1469,6 @@
    "h": 18
   },
   {
-   "text": "|",
-   "x": 702,
-   "y": 943,
-   "w": 14,
-   "h": 27
-  },
-  {
    "text": "probieren",
    "x": 721,
    "y": 946,
@@ -1558,13 +1488,6 @@
    "y": 952,
    "w": 16,
    "h": 10
-  },
-  {
-   "text": "|",
-   "x": 862,
-   "y": 946,
-   "w": 2,
-   "h": 18
   },
   {
    "text": "3",
@@ -2602,7 +2525,7 @@
    "Word layer cleaned: 43 OCR tokens removed (23 top-watermark, 15 bottom-watermark, 1 underscore-gap merges, 0 photo-credit fragments, 4 page-number/footer-URL). Rule-based pass; not yet word-by-word verified.",
    "Underscore remnants inside words stripped; pure-placeholder tokens removed (pass 2)."
   ],
-  "verifiedWords": 336,
+  "verifiedWords": 325,
   "totalWords": 380
  }
 }
