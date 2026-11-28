@@ -1721,7 +1721,41 @@
    "h": 20
   }
  ],
- "fields": [],
+ "fields": [
+  {
+   "id": "p93-2r1",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 (1)",
+   "answer": "weich",
+   "x": 142,
+   "y": 1320,
+   "w": 130,
+   "h": 26
+  },
+  {
+   "id": "p93-2r2",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 (2)",
+   "answer": "hart",
+   "x": 375,
+   "y": 1344,
+   "w": 175,
+   "h": 26
+  },
+  {
+   "id": "p93-2r3",
+   "group": "g2",
+   "kind": "text",
+   "label": "2 (3)",
+   "answer": "hart",
+   "x": 400,
+   "y": 1361,
+   "w": 130,
+   "h": 26
+  }
+ ],
  "audio": [
   {
    "id": "ab-cd2-43-93",
