@@ -857,7 +857,7 @@ button.profileVoiceChoice,button.profileVoiceChoice:is(:hover,:active,:focus,:fo
 @media (hover:hover) and (pointer:fine) and (min-width:1100px){
   :where(html[data-bookcss]) header:not(.page header) .layoutSwitch{display:inline-flex;align-items:center;gap:2px}
 }
-:where(html[data-bookcss]) header:not(.page header) .layoutSwitch button{min-width:34px;min-height:38px;padding:7px;border-radius:8px;color:#234d70}
+:where(html[data-bookcss]) header:not(.page header) .layoutSwitch button{min-width:44px;min-height:44px;padding:9px;border-radius:8px;color:#234d70}
 :where(html[data-bookcss]) header:not(.page header) .layoutSwitch button[data-active]{background:#e8f0ea;outline:2px solid #527087;outline-offset:-2px}
 :where(html[data-bookcss]) #pageGrid{display:flex;flex-wrap:wrap;justify-content:center;align-content:flex-start;gap:16px;padding:12px;box-sizing:border-box;width:100%}
 :where(html[data-bookcss]) #pageGrid .pageGridCell{position:relative;overflow:hidden;background:#fffefa;box-shadow:0 6px 22px #0001}
